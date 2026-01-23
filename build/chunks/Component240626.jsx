@@ -39,7 +39,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,7 +64,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -110,7 +110,7 @@ function D(e) {
         "aria-label": m.toString(),
         children: e => (0, r.jsx)("div", {
           className: C.LB,
-          children: (0, r.jsx)(c.QWc, P(R({}, e), {
+          children: (0, r.jsx)(c.QWc, P(w({}, e), {
             variant: "primary",
             text: T.intl.string(T.t.twFU3R),
             onClick: () => a(t),
@@ -124,7 +124,7 @@ function D(e) {
         "aria-label": m.toString(),
         children: e => (0, r.jsx)("div", {
           className: C.LB,
-          children: (0, r.jsx)(c.QWc, P(R({}, e), {
+          children: (0, r.jsx)(c.QWc, P(w({}, e), {
             variant: "primary",
             text: T.intl.string(T.t["2glQNp"]),
             onClick: () => s(t),
@@ -138,20 +138,20 @@ function D(e) {
 }
 
 function x(e) {
-  (0, u.mMO)(async () => t => (0, r.jsx)(p.default, P(R({}, t), {
+  (0, u.mMO)(async () => t => (0, r.jsx)(p.default, P(w({}, t), {
     guildBoostSlots: [e],
     locationSection: I.JJy.SETTINGS_PREMIUM
   })))
 }
 
 function L(e) {
-  (0, u.mMO)(async () => t => (0, r.jsx)(_.default, P(R({}, t), {
+  (0, u.mMO)(async () => t => (0, r.jsx)(_.default, P(w({}, t), {
     guildBoostSlot: e
   })))
 }
 
 function j(e) {
-  (0, u.mMO)(async () => t => (0, r.jsx)(h.default, P(R({}, t), {
+  (0, u.mMO)(async () => t => (0, r.jsx)(h.default, P(w({}, t), {
     guildBoostSlotId: e.id
   })))
 }
@@ -169,7 +169,7 @@ let M = function(e) {
     I = h === S.xc.FP_SUB_PAUSED,
     N = _ && !I,
     {
-      appliedGuildBoostSlots: w,
+      appliedGuildBoostSlots: R,
       unappliedGuildBoostSlots: M,
       numActiveGuildBoostSlots: k,
       hasCooldownBoosts: U,
@@ -191,7 +191,7 @@ let M = function(e) {
       }
     }, [c]),
     V = null != p ? b.Ay.getNumIncludedPremiumGuildSubscriptionSlots(p.planId) : 0,
-    F = Math.max(0, V - w.length),
+    F = Math.max(0, V - R.length),
     B = k > V,
     H = V === c.length,
     Y = H ? F : 1,
@@ -258,7 +258,7 @@ let M = function(e) {
             shouldShow: null == K || N,
             text: a,
             "aria-label": a.toString(),
-            children: e => (0, r.jsx)(u.Button, P(R({
+            children: e => (0, r.jsx)(u.Button, P(w({
               variant: "primary",
               text: T.intl.string(T.t.BMx1iy)
             }, e), {

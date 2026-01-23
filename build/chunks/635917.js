@@ -33,7 +33,7 @@ var Chunk350972 = require("./350972.js"),
   Chunk629078 = require("./629078.js");
 let N = 60;
 
-function R() {
+function w() {
   return {
     id: r.LW.DEFAULT,
     iconSource: s,
@@ -42,7 +42,7 @@ function R() {
   }
 }
 
-function w() {
+function R() {
   return [{
     id: r.Ic.BRAND_DARK,
     iconSource: u,
@@ -157,10 +157,10 @@ function w() {
 }
 
 function P() {
-  return [R(), ...w()]
+  return [w(), ...R()]
 }
 
 function D(e) {
   let t = P().find(t => t.id === e);
-  return null != t ? t : R()
+  return null != t ? t : w()
 }

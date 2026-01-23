@@ -14,10 +14,10 @@ require.d(exports, {
   SA: () => C,
   SD: () => v,
   Sq: () => x,
-  Uh: () => R,
+  Uh: () => w,
   a5: () => T,
   fs: () => _,
-  hv: () => w,
+  hv: () => R,
   iD: () => p,
   kq: () => u,
   n4: () => M,
@@ -163,7 +163,7 @@ function N(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   var t, n, r, i;
   return {
     prompts: e.prompts.map(N),
@@ -178,7 +178,7 @@ function R(e) {
   }
 }
 
-function w(e) {
+function R(e) {
   return null == e || null == e.id && null == e.name
 }
 let P = new Set([Chunk652215.fg2.PLAYSTATION_STAGING, Chunk652215.fg2.CONTACTS, Chunk652215.fg2.DOMAIN, Chunk652215.fg2.TWITTER_LEGACY, Chunk652215.fg2.MASTODON, Chunk652215.fg2.INSTAGRAM, Chunk652215.fg2.LEAGUE_OF_LEGENDS, Chunk652215.fg2.SKYPE]),

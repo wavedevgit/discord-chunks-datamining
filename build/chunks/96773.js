@@ -32,8 +32,8 @@ module.exports = function(e, t, n, m, g, E) {
       C = I && h.call(t, "__wrapped__");
     if (T || C) {
       var N = T ? e.value() : e,
-        R = C ? t.value() : t;
-      return E || (E = new r), g(N, R, n, m, E)
+        w = C ? t.value() : t;
+      return E || (E = new r), g(N, w, n, m, E)
     }
   }
   return !!S && (E || (E = new r), s(e, t, n, m, g, E))

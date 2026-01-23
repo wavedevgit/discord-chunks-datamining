@@ -118,7 +118,7 @@ function N(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   var t;
   let {
     nonce: n,
@@ -137,7 +137,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
@@ -236,9 +236,9 @@ let G = new U(Chunk73153.h, {
   INTERACTION_QUEUE: S,
   INTERACTION_CREATE: T,
   INTERACTION_SUCCESS: C,
-  INTERACTION_FAILURE: R,
+  INTERACTION_FAILURE: w,
   MESSAGE_CREATE: N,
-  CHANNEL_SELECT: w,
+  CHANNEL_SELECT: R,
   INTERACTION_IFRAME_MODAL_CREATE: D,
   INTERACTION_IFRAME_MODAL_CLOSE: x,
   INTERACTION_IFRAME_MODAL_KEY_CREATE: L,

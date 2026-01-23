@@ -2,7 +2,7 @@
 /** chunk id: 194871, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => J
+  A: () => $
 }), require("./896048.js"), require("./65821.js"), require("./142703.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -64,8 +64,8 @@ let I = 200,
   T = +Chunk927813.A.Millis.MINUTE,
   C = {},
   N = "content",
-  R = "file://",
-  w = false,
+  w = "file://",
+  R = false,
   P = 0,
   D = 0,
   x = 0,
@@ -75,7 +75,7 @@ let I = 200,
   k = false;
 
 function U() {
-  w = false
+  R = false
 }
 
 function G(e, t) {
@@ -119,7 +119,7 @@ function V(e) {
                 } = n,
                 s = i,
                 o = l.A.fileManager.join(e, r);
-              (0, h.isMac)() && !o.startsWith(R) && (o = "".concat(R).concat(o)), t = null != a ? l.A.fileManager.join(e, a) : l.A.fileManager.dirname(o), E[s] = A(O({}, n), {
+              (0, h.isMac)() && !o.startsWith(w) && (o = "".concat(w).concat(o)), t = null != a ? l.A.fileManager.join(e, a) : l.A.fileManager.dirname(o), E[s] = A(O({}, n), {
                 id: s,
                 fullExecutablePath: o,
                 fullWorkingDir: t
@@ -234,9 +234,9 @@ function K(e) {
 }
 let z = a().throttle(Y, I),
   q = a().throttle(W, I),
-  X = a().throttle(K, I);
+  Z = a().throttle(K, I);
 
-function Z(e, t, n) {
+function X(e, t, n) {
   let r = n(C[t]),
     i = n(e[t]);
   return null != r && null != i && 0 !== r ? Math.max(i - r, 0) : 0
@@ -246,7 +246,7 @@ function Q(e) {
   let {
     state: t
   } = e;
-  w = true;
+  R = true;
   let n = {},
     r = t.applications,
     i = null != t.currentTask ? t.currentTask.branchId : null,
@@ -255,11 +255,11 @@ function Q(e) {
     for (let t in r[e]) {
       let s = (0, _.gW)(e, t);
       if (n[s] = V(r[e][t]), null != C[s]) {
-        let e = Z(n, s, F);
+        let e = X(n, s, F);
         e > 0 && z(P += e);
-        let r = Z(n, s, B);
-        r > 0 && X(D += r);
-        let o = Z(n, s, H);
+        let r = X(n, s, B);
+        r > 0 && Z(D += r);
+        let o = X(n, s, H);
         if (o > 0 && q(x += o), i === t) {
           let e = n[s];
           if (true !== e.paused && (e.type === y.WTw.UNINSTALLING || e.type === y.WTw.INSTALLING || e.type === y.WTw.UPDATING)) switch (e.stage) {
@@ -293,7 +293,7 @@ function Q(e) {
     }
   a || "dispatch_application_progress" !== c.A.taskID || c.A.clearProgress("dispatch_application_progress"), C = n, k = true
 }
-class $ extends(r = Chunk311907.Ay.Store) {
+class J extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(u.default)
   }
@@ -346,12 +346,12 @@ class $ extends(r = Chunk311907.Ay.Store) {
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {
-      if (w) return setImmediate(e), false
+      if (R) return setImmediate(e), false
     })
   }
 }
-b($, "displayName", "DispatchApplicationStore");
-let J = new $(Chunk73153.h, {
+b(J, "displayName", "DispatchApplicationStore");
+let $ = new J(Chunk73153.h, {
   CONNECTION_OPEN: U,
   DISPATCH_APPLICATION_STATE_UPDATE: Q
 })

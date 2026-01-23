@@ -2,8 +2,8 @@
 /** chunk id: 105713, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => w,
-  Gq: () => R,
+  Ay: () => R,
+  Gq: () => w,
   WE: () => N,
   qn: () => T
 }), require("./896048.js");
@@ -152,7 +152,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     renderPopout: t,
     position: n,
@@ -208,14 +208,14 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     sound: t,
     channel: n,
     setTooltipShowing: i
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(R, {
+    children: [(0, r.jsx)(w, {
       setTooltipShowing: i,
       renderPopout: () => (0, r.jsx)(T, {}),
       tooltipText: y.intl.string(y.t["19lt24"]),
@@ -225,7 +225,7 @@ function w(e) {
         color: "currentColor",
         className: O.Wo
       })
-    }), (0, r.jsx)(R, {
+    }), (0, r.jsx)(w, {
       setTooltipShowing: i,
       renderPopout: e => (0, r.jsx)(g.A, A({
         sound: t,

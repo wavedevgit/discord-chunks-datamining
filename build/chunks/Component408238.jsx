@@ -26,13 +26,13 @@ let f = 200,
       tabIndex: false
     })), [t]), [v, A] = i.useState(false), [I, S] = i.useState(false), [T, C] = i.useState(true), N = () => {
       A(g.current > m.current)
-    }, R = i.useCallback(() => {
+    }, w = i.useCallback(() => {
       let e = D.current;
       null == e || (b.current = Math.floor((E.current + e.clientWidth / 2) / (e.scrollWidth / e.childElementCount)))
-    }, []), w = i.useCallback(() => {
+    }, []), R = i.useCallback(() => {
       let e = D.current;
-      null != e && (S(E.current > 0), C(E.current + e.clientWidth < e.scrollWidth), R())
-    }, [R]), P = (0, c.w)(e => {
+      null != e && (S(E.current > 0), C(E.current + e.clientWidth < e.scrollWidth), w())
+    }, [w]), P = (0, c.w)(e => {
       let {
         contentRect: t
       } = e;
@@ -40,13 +40,13 @@ let f = 200,
         var n;
         E.current = null == (n = D.current) ? true : n.scrollLeft
       }
-      N(), w()
+      N(), R()
     }), D = i.useRef(null);
     i.useEffect(() => {
       let e = D.current;
       if (null == e) return;
       let t = new ResizeObserver(() => {
-        g.current = e.scrollWidth, N(), w()
+        g.current = e.scrollWidth, N(), R()
       });
       Array.from(e.children).forEach(e => {
         t.observe(e)
@@ -58,10 +58,10 @@ let f = 200,
       });
       return n.observe(e, {
         childList: true
-      }), e.addEventListener("scrollend", w), () => {
-        t.disconnect(), n.disconnect(), e.removeEventListener("scrollend", w)
+      }), e.addEventListener("scrollend", R), () => {
+        t.disconnect(), n.disconnect(), e.removeEventListener("scrollend", R)
       }
-    }, [w]);
+    }, [R]);
     let x = i.useMemo(() => (0, o.throttle)(() => {
         let e = D.current;
         if (null == e) return;
@@ -73,8 +73,8 @@ let f = 200,
           behavior: "smooth"
         }), e.addEventListener("scrollend", () => y.current = false, {
           once: true
-        }), w()
-      }, f), [m, w]),
+        }), R()
+      }, f), [m, R]),
       L = i.useMemo(() => (0, o.throttle)(() => {
         let e = D.current;
         if (null == e) return;
@@ -86,8 +86,8 @@ let f = 200,
           behavior: "smooth"
         }), e.addEventListener("scrollend", () => y.current = false, {
           once: true
-        }), w()
-      }, f), [m, w]),
+        }), R()
+      }, f), [m, R]),
       j = i.useCallback(() => {
         let e = D.current;
         if (null == e) returnfalse;
@@ -174,10 +174,10 @@ let f = 200,
           null != a && a.setAttribute("tabIndex", "-1");
           let s = ["ArrowLeft"],
             o = ["ArrowRight"];
-          [...s, ...o].includes(e.key) && (e.preventDefault(), s.includes(e.key) && (i = Math.max(0, i - 1)), o.includes(e.key) && (i = Math.min(n.childElementCount - 1, i + 1)), null != (a = r[i]) ? (a.setAttribute("tabIndex", "0"), n.setAttribute("tabIndex", "-1"), a.focus(), b.current = i) : (n.setAttribute("tabIndex", "0"), R()))
+          [...s, ...o].includes(e.key) && (e.preventDefault(), s.includes(e.key) && (i = Math.max(0, i - 1)), o.includes(e.key) && (i = Math.min(n.childElementCount - 1, i + 1)), null != (a = r[i]) ? (a.setAttribute("tabIndex", "0"), n.setAttribute("tabIndex", "-1"), a.focus(), b.current = i) : (n.setAttribute("tabIndex", "0"), w()))
         },
         onScroll: e => {
-          y.current || (E.current = e.target.scrollLeft, w())
+          y.current || (E.current = e.target.scrollLeft, R())
         },
         children: O
       })]

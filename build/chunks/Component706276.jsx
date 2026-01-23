@@ -59,7 +59,7 @@ let y = () => {
     let [e, t] = i.useState(p.PremiumTypes.TIER_0), [n, h] = i.useState(o.g.WHAT_YOU_LOSE), [g, y] = i.useState(null), [O, v] = i.useState(p.gD.PREMIUM_MONTH_TIER_0), [A, I] = i.useState([]), [S, T] = i.useState(() => {
       let e = new Date;
       return e.setMonth(e.getMonth() + 1), e
-    }), [C, N] = i.useState(null), [R, w] = i.useState(false), [P, D] = i.useState(false), [x, L] = i.useState(false);
+    }), [C, N] = i.useState(null), [w, R] = i.useState(false), [P, D] = i.useState(false), [x, L] = i.useState(false);
     (0, i.useEffect)(() => {
       (0, s.zS)()
     }, []), (0, i.useEffect)(() => {
@@ -145,7 +145,7 @@ let y = () => {
           intervalType: p.WT.MONTH,
           intervalCount: 1
         },
-        errorOnCancel: R,
+        errorOnCancel: w,
         errorOnRedeem: P,
         setActiveStep: e => {
           h(e), t.onClose()
@@ -174,7 +174,7 @@ let y = () => {
           pauseReason: f.qf.UNKNOWN
         }
       })))
-    }, [e, g, O, C, R, P, n, S]);
+    }, [e, g, O, C, w, P, n, S]);
     return (0, i.useEffect)(() => {
       x && j()
     }, [n, x, j]), (0, r.jsxs)(l.LB, {
@@ -269,9 +269,9 @@ let y = () => {
         })
       }), (0, r.jsx)(l.MG, {
         children: (0, r.jsx)(a.Checkbox, {
-          checked: R,
+          checked: w,
           onChange: () => {
-            w(!R)
+            R(!w)
           },
           label: "Error on Cancel"
         })

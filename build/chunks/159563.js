@@ -25,7 +25,7 @@ function a(e) {
 }
 
 function s(e, t, n) {
-  true === n && (n = false), 0 === o(e) ? (n ? Object.keys : X)(e).forEach(function(r) {
+  true === n && (n = false), 0 === o(e) ? (n ? Object.keys : Z)(e).forEach(function(r) {
     n && "symbol" == typeof r || t(r, e[r], e)
   }) : e.forEach(function(n, r) {
     return t(r, n, e)
@@ -68,9 +68,9 @@ function _(e) {
 
 function h(e) {
   if (Array.isArray(e)) return Array.prototype.slice.call(e);
-  var t = Z(e);
+  var t = X(e);
   delete t[K];
-  for (var n = X(t), r = 0; r < n.length; r++) {
+  for (var n = Z(t), r = 0; r < n.length; r++) {
     var i = n[r],
       a = t[i];
     false === a.writable && (a.writable = true, a.configurable = true), (a.get || a.set) && (t[i] = {
@@ -141,30 +141,30 @@ function C(e, t) {
   t._ = t.p.length;
   var n = t.p[0],
     i = true !== e && e !== n;
-  return t.h.O || y("ES5").S(t, e, i), i ? (n[K].P && (A(t), r(4)), a(e) && (e = N(t, e), t.l || w(t, e)), t.u && y("Patches").M(n[K].t, e, t.u, t.s)) : e = N(t, n, []), A(t), t.u && t.v(t.u, t.s), e !== Y ? e : true
+  return t.h.O || y("ES5").S(t, e, i), i ? (n[K].P && (A(t), r(4)), a(e) && (e = N(t, e), t.l || R(t, e)), t.u && y("Patches").M(n[K].t, e, t.u, t.s)) : e = N(t, n, []), A(t), t.u && t.v(t.u, t.s), e !== Y ? e : true
 }
 
 function N(e, t, n) {
   if (E(t)) return t;
   var r = t[K];
   if (!r) return s(t, function(i, a) {
-    return R(e, r, t, i, a, n)
+    return w(e, r, t, i, a, n)
   }, true), t;
   if (r.A !== e) return t;
-  if (!r.P) return w(e, r.t, true), r.t;
+  if (!r.P) return R(e, r.t, true), r.t;
   if (!r.I) {
     r.I = true, r.A._--;
     var i = 4 === r.i || 5 === r.i ? r.o = h(r.k) : r.o,
       a = i,
       o = false;
     3 === r.i && (a = new Set(i), i.clear(), o = true), s(a, function(t, a) {
-      return R(e, r, i, t, a, n, o)
-    }), w(e, i, false), n && e.u && y("Patches").N(r, n, e.u, e.s)
+      return w(e, r, i, t, a, n, o)
+    }), R(e, i, false), n && e.u && y("Patches").N(r, n, e.u, e.s)
   }
   return r.o
 }
 
-function R(e, t, n, r, s, o, c) {
+function w(e, t, n, r, s, o, c) {
   if (i(s)) {
     var d = N(e, s, o && t && 3 !== t.i && !l(t.R, r) ? o.concat(r) : true);
     if (u(n, r, d), !i(d)) return;
@@ -172,11 +172,11 @@ function R(e, t, n, r, s, o, c) {
   } else c && n.add(s);
   if (a(s) && !E(s)) {
     if (!e.h.D && e._ < 1) return;
-    N(e, s), t && t.A.l || w(e, s)
+    N(e, s), t && t.A.l || R(e, s)
   }
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   true === n && (n = false), !e.l && e.h.D && e.m && m(t, n)
 }
 
@@ -219,8 +219,8 @@ function j(e, t, n) {
         C: false
       },
       i = r,
-      a = $;
-    n && (i = [r], a = J);
+      a = J;
+    n && (i = [r], a = $);
     var s = Proxy.revocable(i, a),
       o = s.revoke,
       l = s.proxy;
@@ -269,17 +269,17 @@ var U, G, V = "u" > typeof Symbol && "symbol" == typeof Symbol("x"),
   K = V ? Symbol.for("immer-state") : "__$immer_state",
   z = "u" > typeof Symbol && Symbol.iterator || "@@iterator",
   q = "" + Object.prototype.constructor,
-  X = "u" > typeof Reflect && Reflect.ownKeys ? Reflect.ownKeys : true !== Object.getOwnPropertySymbols ? function(e) {
+  Z = "u" > typeof Reflect && Reflect.ownKeys ? Reflect.ownKeys : true !== Object.getOwnPropertySymbols ? function(e) {
     return Object.getOwnPropertyNames(e).concat(Object.getOwnPropertySymbols(e))
   } : Object.getOwnPropertyNames,
-  Z = Object.getOwnPropertyDescriptors || function(e) {
+  X = Object.getOwnPropertyDescriptors || function(e) {
     var t = {};
-    return X(e).forEach(function(n) {
+    return Z(e).forEach(function(n) {
       t[n] = Object.getOwnPropertyDescriptor(e, n)
     }), t
   },
   Q = {},
-  $ = {
+  J = {
     get: function(e, t) {
       if (t === K) return e;
       var n = _(e);
@@ -331,15 +331,15 @@ var U, G, V = "u" > typeof Symbol && "symbol" == typeof Symbol("x"),
       r(12)
     }
   },
-  J = {};
-s($, function(e, t) {
-  J[e] = function() {
+  $ = {};
+s(J, function(e, t) {
+  $[e] = function() {
     return arguments[0] = arguments[0][0], t.apply(this, arguments)
   }
-}), J.deleteProperty = function(e, t) {
-  return J.set.call(this, e, t, true)
-}, J.set = function(e, t, n) {
-  return $.set.call(this, e[0], t, n, e[0])
+}), $.deleteProperty = function(e, t) {
+  return $.set.call(this, e, t, true)
+}, $.set = function(e, t, n) {
+  return J.set.call(this, e[0], t, n, e[0])
 };
 var ee = new(function() {
     function e(e) {

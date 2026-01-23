@@ -104,7 +104,7 @@ function B(e) {
       color: D ? "text-strong" : "always-white",
       className: L.cardTitle,
       children: M
-    }), (0, r.jsx)(w.A, {
+    }), (0, r.jsx)(R.A, {
       isGift: f,
       premiumTier: P.PremiumTypes.TIER_0,
       offerType: P.Vk.PREMIUM_TRIAL,
@@ -117,7 +117,7 @@ function B(e) {
       headerClassName: L.priceHeader
     }), (0, r.jsx)("hr", {
       className: L.divider
-    }), (0, r.jsx)(R.nH, {
+    }), (0, r.jsx)(w.nH, {
       enablePremiumBrandRefresh: true,
       isApplicationHome: _
     }), n]
@@ -141,7 +141,7 @@ function H(e) {
   let {
     ctaButton: n,
     showYearlyPrice: i,
-    featureSet: l = R.Nz.DEFAULT,
+    featureSet: l = w.Nz.DEFAULT,
     className: f,
     isGift: p = false,
     isModal: _ = false,
@@ -179,7 +179,7 @@ function H(e) {
       color: K ? "text-strong" : "always-white",
       className: L.cardTitle,
       children: x.intl.string(x.t.lG6a5x)
-    }), (0, r.jsx)(w.A, {
+    }), (0, r.jsx)(R.A, {
       isGift: p,
       premiumTier: P.PremiumTypes.TIER_2,
       offerType: W,
@@ -192,7 +192,7 @@ function H(e) {
       headerClassName: L.priceHeader
     }), (0, r.jsx)("hr", {
       className: L.divider
-    }), (0, r.jsx)(R.ZP, {
+    }), (0, r.jsx)(w.ZP, {
       featureSet: l,
       isModal: _,
       isGift: p,
@@ -231,7 +231,7 @@ function Y(e) {
       children: x.intl.string(D.default["R+dzZw"])
     }), (0, r.jsx)("hr", {
       className: L.divider
-    }), (0, r.jsx)(R.Lg, {
+    }), (0, r.jsx)(w.Lg, {
       isApplicationHome: i
     }), n]
   })
@@ -341,7 +341,7 @@ function z(e) {
     className: n
   } = e, {
     analyticsLocations: i
-  } = (0, _.Ay)(p.A.PREMIUM_MARKETING_TIER_CARD), l = (0, R.pw)(t), c = (0, o.bG)([f.A], () => f.A.useReducedMotion), u = (0, v.PA)();
+  } = (0, _.Ay)(p.A.PREMIUM_MARKETING_TIER_CARD), l = (0, w.pw)(t), c = (0, o.bG)([f.A], () => f.A.useReducedMotion), u = (0, v.PA)();
   return (0, r.jsx)(_.f5, {
     value: i,
     children: (0, r.jsxs)("div", {

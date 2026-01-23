@@ -41,7 +41,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,7 +66,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -232,7 +232,7 @@ let D = {
                     promotionId: e.id,
                     analyticsLocations: []
                   }).then(n => {
-                    c([...l.slice(0, t), P(R({}, e), {
+                    c([...l.slice(0, t), P(w({}, e), {
                       code: n.code
                     }), ...l.slice(t + 1)])
                   }).catch(t => {
@@ -314,7 +314,7 @@ let D = {
         });
       if (null == i || null == a) return;
       i in r || (r[i] = []);
-      let s = R({
+      let s = w({
         id: e.id,
         partnerId: i,
         startDate: e.startDate,
@@ -403,6 +403,6 @@ let D = {
       let {
         Recurring3PModal: e
       } = await Promise.resolve().then(n.bind(n, 161319));
-      return t => (0, r.jsx)(e, R({}, t))
+      return t => (0, r.jsx)(e, w({}, t))
     })
   }

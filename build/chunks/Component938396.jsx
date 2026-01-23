@@ -2,7 +2,7 @@
 /** chunk id: 938396, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R
+  A: () => w
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -53,14 +53,14 @@ let C = () => {
   },
   N = 4100;
 
-function R(e) {
+function w(e) {
   let {
     targetElementRef: t,
     shouldShow: n,
     onRequestClose: I,
     ctaText: S,
-    ctaOnClick: R
-  } = e, w = (0, s.bG)([u.A], () => u.A.useReducedMotion), P = (0, s.bG)([f.A], () => f.A.getRewardForProgram(p.W.NITRO)), D = (0, s.bG)([h.default], () => h.default.getCurrentUser()), {
+    ctaOnClick: w
+  } = e, R = (0, s.bG)([u.A], () => u.A.useReducedMotion), P = (0, s.bG)([f.A], () => f.A.getRewardForProgram(p.W.NITRO)), D = (0, s.bG)([h.default], () => h.default.getCurrentUser()), {
     balance: x
   } = (0, _.W)(), L = i.useMemo(() => {
     let e = (0, g.YE)(D, y.PremiumTypes.TIER_2),
@@ -97,8 +97,8 @@ function R(e) {
     modal: true,
     closeOnClickOutside: true,
     children: [(null != x ? x : 0) >= N && (0, r.jsx)(d.A, {
-      autoPlay: !w,
-      loop: !w,
+      autoPlay: !R,
+      loop: !R,
       muted: true,
       playsInline: true,
       tabIndex: false,
@@ -128,7 +128,7 @@ function R(e) {
           text: S,
           variant: "primary",
           size: "sm",
-          onClick: R,
+          onClick: w,
           fullWidth: true
         }), (0, r.jsx)(c.EYj, {
           variant: "text-xs/normal",

@@ -156,13 +156,13 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   e.ids.forEach(t => {
     g(t).handleSearchFailure(e.error)
   })
 }
 
-function w(e) {
+function R(e) {
   let t = p.get(e.id);
   if (null == t) returnfalse;
   t.messageIds.forEach(e => {
@@ -221,8 +221,8 @@ let x = new D(Chunk73153.h, {
   SEARCH_MESSAGES_START: O,
   SEARCH_MESSAGES_SUCCESS: v,
   SEARCH_MESSAGES_INDEXING: N,
-  SEARCH_MESSAGES_FAILURE: R,
-  SEARCH_MESSAGES_CLEAR: w,
+  SEARCH_MESSAGES_FAILURE: w,
+  SEARCH_MESSAGES_CLEAR: R,
   SEARCH_MESSAGES_CLEAR_ALL: P,
   MESSAGE_UPDATE: A,
   MESSAGE_REACTION_ADD: I,

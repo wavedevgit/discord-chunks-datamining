@@ -202,7 +202,7 @@ function Y(e, t, n, i, a) {
     onTargetUserContextMenu: p,
     onPopoutRequestClose: _
   } = e;
-  return (0, r.jsx)(R.A, {
+  return (0, r.jsx)(w.A, {
     className: 1 === n ? L.iu : "",
     compact: true,
     author: i,
@@ -301,7 +301,7 @@ function z(e) {
     } = (0, g.Ay)(m.A.EXECUTED_COMMAND),
     S = (0, d.bG)([I.default], () => I.default.getCurrentUser()),
     T = i.useRef(null),
-    R = i.useRef(null),
+    w = i.useRef(null),
     D = i.useMemo(() => (e, t, n) => (l()(null != t, "ExecutedCommand: user cannot be undefined"), l()(null != S, "ExecutedCommand: currentUser cannot be undefined"), l()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(v.A, U(M({}, e), {
       user: t,
       currentUser: S,
@@ -310,7 +310,7 @@ function z(e) {
       messageId: a.id,
       newAnalyticsLocations: n
     }))), [S, o, a.id]),
-    j = i.useMemo(() => e => (l()(null != o, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(w.A, U(M({}, e), {
+    j = i.useMemo(() => e => (l()(null != o, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(R.A, U(M({}, e), {
       channel: o,
       messageId: a.id,
       interactionData: a.interactionData
@@ -322,11 +322,11 @@ function z(e) {
     B = (0, N.d8)(G, o),
     z = i.useMemo(() => e.compact ? (0, P.A)((0, C.i$)(u()(), "LT")) : null, [e.compact]),
     q = (0, _.Gp)(o.id),
-    X = a.interaction;
-  if (null == X || null == F) return null;
-  let Z = () => {
-      let t = H(e, X.user, 0, F, e => D(e, X.user, [m.A.AVATAR]), T),
-        n = Y(e, X.user, 0, F, e => D(e, X.user));
+    Z = a.interaction;
+  if (null == Z || null == F) return null;
+  let X = () => {
+      let t = H(e, Z.user, 0, F, e => D(e, Z.user, [m.A.AVATAR]), T),
+        n = Y(e, Z.user, 0, F, e => D(e, Z.user));
       return (0, r.jsxs)(i.Fragment, {
         children: [t, n]
       }, "user")
@@ -341,13 +341,13 @@ function z(e) {
     };
   if ((null == a ? true : a.activityInstance) === null || (0, O.V)(a)) {
     let t = () => {
-      let t = W(e, j, R);
+      let t = W(e, j, w);
       return (0, r.jsx)(i.Fragment, {
         children: t
       }, "command")
     };
     n = x.intl.format(x.t["rg7U+C"], {
-      userHook: Z,
+      userHook: X,
       commandHook: t
     }), V && null != e.renderTargetMessage ? n = (0, r.jsxs)(r.Fragment, {
       children: [n, (0, r.jsx)(K, {}), e.renderTargetMessage()]
@@ -378,10 +378,10 @@ function z(e) {
         })
       });
     n = q ? x.intl.format(x.t.kfV8WM, {
-      userHook: Z,
+      userHook: X,
       activityHook: t
     }) : x.intl.format(x.t["6FeSyT"], {
-      userHook: Z
+      userHook: X
     })
   }
   return (0, r.jsx)(g.f5, {

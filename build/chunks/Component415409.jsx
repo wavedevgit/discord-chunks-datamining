@@ -205,7 +205,7 @@ class k extends Chunk64700.Component {
       isPreviewing: n,
       showValueWhenDisabled: r
     } = this.props;
-    return e && !n ? r ? "" : R.intl.string(R.t.IYKTTc) : t
+    return e && !n ? r ? "" : w.intl.string(w.t.IYKTTc) : t
   }
   render() {
     var e, t, n, i, a, o;
@@ -224,7 +224,7 @@ class k extends Chunk64700.Component {
       spellcheckEnabled: A,
       useNewSlashCommands: I,
       canOnlyUseTextCommands: C,
-      className: R,
+      className: w,
       id: P,
       required: x,
       maxCharacterCount: j,
@@ -240,9 +240,9 @@ class k extends Chunk64700.Component {
       popup: Y
     } = this.state, W = {
       channel: g,
-      className: s()(R, w.Tg, {
-        [w.w5]: b,
-        [w.Rr]: d || H
+      className: s()(w, R.Tg, {
+        [R.w5]: b,
+        [R.Rr]: d || H
       }),
       id: P,
       placeholder: this.getPlaceholder(),
@@ -265,10 +265,10 @@ class k extends Chunk64700.Component {
       onKeyDown: p,
       onSubmit: h,
       textAreaPaddingClassName: s()({
-        [w.H$]: y === O.oU.CREATE_FORUM_POST,
-        [w.g_]: y === O.oU.CUSTOM_GIFT,
-        [w.Yg]: y === O.oU.USER_PROFILE,
-        [w.$$]: y === O.oU.OVERLAY_INLINE_REPLY
+        [R.H$]: y === O.oU.CREATE_FORUM_POST,
+        [R.g_]: y === O.oU.CUSTOM_GIFT,
+        [R.Yg]: y === O.oU.USER_PROFILE,
+        [R.$$]: y === O.oU.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: A,
       useNewSlashCommands: I,
@@ -440,8 +440,8 @@ class k extends Chunk64700.Component {
         } = e;
         return "is_directory" === t
       })) && (0, f.openUploadError)({
-        title: R.intl.string(R.t.azO1Pe),
-        help: R.intl.string(R.t["Koklr/"])
+        title: w.intl.string(w.t.azO1Pe),
+        help: w.intl.string(w.t["Koklr/"])
       }), false) : (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), O(A), this.focus(), true)
     }), this._unsubscribe = A.Y0.subscribe(e => {
       requestAnimationFrame(() => {

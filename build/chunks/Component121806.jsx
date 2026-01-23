@@ -62,7 +62,7 @@ function N(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,8 +73,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -444,7 +444,7 @@ function G() {
       } = e;
       n(e => {
         let n = [...e];
-        return n[r] = w(N({}, n[r]), {
+        return n[r] = R(N({}, n[r]), {
           query: t
         }), n
       })
@@ -456,7 +456,7 @@ function G() {
       } = e;
       n(e => {
         let n = [...e];
-        return n[r] = w(N({}, n[r]), {
+        return n[r] = R(N({}, n[r]), {
           date: t
         }), n
       })

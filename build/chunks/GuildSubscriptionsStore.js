@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  A: () => X
+  A: () => Z
 }), require("./896048.js");
 var i, Chunk735438 = require("./735438.js"),
   s = require.n(Chunk735438),
@@ -64,7 +64,7 @@ function N(e, t, n) {
   return (i !== e && e === A.YYv && S.subscribeToGuild(i), null != r && r.isThread()) ? r.type === A.rbe.ANNOUNCEMENT_THREAD ? S.subscribeChannel(i, r.parent_id, n) : !!r.isActiveThread() && S.subscribeThreadMemberList(i, t, O.A.getChannelId()) : S.subscribeChannel(i, t, n)
 }
 
-function R(e) {
+function w(e) {
   let {
     type: t
   } = e;
@@ -80,7 +80,7 @@ function R(e) {
   })
 }
 
-function w() {
+function R() {
   T(false, false)
 }
 
@@ -242,10 +242,10 @@ class q extends(i = Chunk311907.Ay.Store) {
   }
 }
 I(q, "displayName", "GuildSubscriptionsStore");
-let X = new q(Chunk73153.h, {
-  CONNECTION_OPEN: R,
-  CONNECTION_RESUMED: R,
-  CONNECTION_CLOSED: w,
+let Z = new q(Chunk73153.h, {
+  CONNECTION_OPEN: w,
+  CONNECTION_RESUMED: w,
+  CONNECTION_CLOSED: R,
   IDLE: P,
   LOGOUT: D,
   VOICE_CHANNEL_SELECT: B,

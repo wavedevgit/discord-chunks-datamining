@@ -92,8 +92,8 @@ function C(e) {
     onComplete: T,
     onSubscriptionConfirmation: C,
     analyticsLocations: N,
-    analyticsObject: R,
-    analyticsLocation: w,
+    analyticsObject: w,
+    analyticsLocation: R,
     analyticsSourceLocation: P,
     confirmationFooter: D,
     isGift: x = false,
@@ -110,11 +110,11 @@ function C(e) {
     returnRef: Y,
     subscription: W,
     skipConfirm: K
-  } = null != e ? e : {}, z = false, q = null != (t = (0, g.A)()) ? t : (0, s.A)(), X = p.default.getCurrentUser(), Z = (0, m.YE)(X, b.PremiumTypes.TIER_2), Q = a()("payment-modal"), $ = (0, m.mH)(k), J = false;
+  } = null != e ? e : {}, z = false, q = null != (t = (0, g.A)()) ? t : (0, s.A)(), Z = p.default.getCurrentUser(), X = (0, m.YE)(Z, b.PremiumTypes.TIER_2), Q = a()("payment-modal"), J = (0, m.mH)(k), $ = false;
   return (0, o.mMO)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("14704"), n.e("29716"), n.e("2824"), n.e("58846")]).then(n.bind(n, 674619));
+    } = await Promise.all([n.e("14704"), n.e("29716"), n.e("2824"), n.e("15050")]).then(n.bind(n, 674619));
     return t => {
       let {
         onClose: n
@@ -122,7 +122,7 @@ function C(e) {
       return (0, r.jsx)(e, I(v({}, a), {
         loadId: q,
         subscriptionTier: k,
-        skuId: $,
+        skuId: J,
         isGift: x,
         giftMessage: L,
         giftStyle: j,
@@ -131,8 +131,8 @@ function C(e) {
         initialPlanId: i,
         followupSKUInfo: O,
         onClose: e => {
-          if (J) return;
-          J = true, h._.dispatch(y.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED);
+          if ($) return;
+          $ = true, h._.dispatch(y.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED);
           let t = () => {
             n(), null == A || A(e), e && (null == C || C()), l.h.dispatch({
               type: "PREMIUM_PAYMENT_MODAL_CLOSE",
@@ -148,8 +148,8 @@ function C(e) {
         },
         onSubscriptionConfirmation: C,
         analyticsLocations: N,
-        analyticsObject: R,
-        analyticsLocation: w,
+        analyticsObject: w,
+        analyticsLocation: R,
         analyticsSourceLocation: P,
         confirmationFooter: D,
         trialId: U,
@@ -161,12 +161,12 @@ function C(e) {
         returnRef: Y,
         subscription: W,
         skipConfirm: !!K,
-        wasTier2PremiumBeforePurchase: Z
+        wasTier2PremiumBeforePurchase: X
       }))
     }
   }, {
     onCloseRequest: () => {
-      J || (J = true, h._.dispatch(y.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), f.A.isDisplayingWowMomentConfirmation && f.A.isAnimated ? setTimeout(() => {
+      $ || ($ = true, h._.dispatch(y.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), f.A.isDisplayingWowMomentConfirmation && f.A.isAnimated ? setTimeout(() => {
         (0, o.OoC)(Q)
       }, E.K) : (0, o.OoC)(Q))
     },
@@ -175,11 +175,11 @@ function C(e) {
       z || _.default.track(y.HAw.PAYMENT_FLOW_CANCELED, {
         load_id: q,
         payment_type: y.frM[y.VVm.SUBSCRIPTION],
-        location: null != w ? w : R,
+        location: null != R ? R : w,
         source: P,
         subscription_type: y.rzx.PREMIUM,
         is_gift: x,
-        sku_id: $,
+        sku_id: J,
         eligible_for_trial: null != U,
         application_id: F,
         location_stack: N

@@ -92,14 +92,14 @@ function H(e) {
     openedAt: K,
     closePopout: z,
     setPopoutRef: q,
-    disableUserProfileLink: X = __OVERLAY__,
-    newAnalyticsLocations: Z = [],
+    disableUserProfileLink: Z = __OVERLAY__,
+    newAnalyticsLocations: X = [],
     appContext: Q,
-    disableAutoFocus: $ = false,
-    onClickContainer: J
+    disableAutoFocus: J = false,
+    onClickContainer: $
   } = e, {
     analyticsLocations: ee
-  } = (0, u.Ay)([...Z, c.A.USER_PROFILE_POPOUT]), et = (0, h.aL)(), en = (0, y.pb)({
+  } = (0, u.Ay)([...X, c.A.USER_PROFILE_POPOUT]), et = (0, h.aL)(), en = (0, y.pb)({
     layout: "POPOUT",
     userId: n.id,
     guildId: F,
@@ -141,7 +141,7 @@ function H(e) {
         appContext: Q
       }))
     },
-    em = () => X ? null : (0, r.jsx)(o.Drp, {
+    em = () => Z ? null : (0, r.jsx)(o.Drp, {
       id: "view-profile",
       label: k.intl.string(k.t["+Xp3hq"]),
       action: () => {
@@ -151,7 +151,7 @@ function H(e) {
         }, en))
       }
     }),
-    eg = $ ? "div" : o.lGe,
+    eg = J ? "div" : o.lGe,
     eE = (0, d.GV)(),
     ey = E.Ay.useName(null == er ? true : er.id, H, n);
   return (0, r.jsx)(u.f5, {
@@ -167,7 +167,7 @@ function H(e) {
         children: (0, r.jsxs)(eg, {
           ref: ea,
           "aria-labelledby": eE,
-          onClick: J,
+          onClick: $,
           children: [(0, r.jsx)(o.AC4, {
             children: (0, r.jsx)(o.H, {
               id: eE,
@@ -183,14 +183,14 @@ function H(e) {
               style: eu,
               className: U.tB
             }), (0, r.jsxs)(N.A, {
-              children: [(0, r.jsx)(w.A, {
+              children: [(0, r.jsx)(R.A, {
                 shouldShowTooltip: null === ec.interactionType,
                 user: n,
                 guildId: F,
                 channelId: H,
                 onClose: z,
                 appContext: Q
-              }), (0, r.jsx)(R.A, {
+              }), (0, r.jsx)(w.A, {
                 themeType: M.d.POPOUT,
                 user: n
               }), !ef && (0, r.jsx)(P.yo, {
@@ -216,7 +216,7 @@ function H(e) {
                 guildId: F,
                 channelId: H,
                 themeType: M.d.POPOUT,
-                onOpenProfile: X ? true : eh
+                onOpenProfile: Z ? true : eh
               }), (0, r.jsx)(D.A, {
                 ref: ed,
                 user: n,
@@ -232,7 +232,7 @@ function H(e) {
               displayProfile: es,
               guild: er,
               isHoveringOrFocusing: null == ec.interactionType && eo,
-              onOpenProfile: X ? true : eh,
+              onOpenProfile: Z ? true : eh,
               channelId: H,
               onClose: z
             }), (0, r.jsx)(L.A, {
@@ -241,7 +241,7 @@ function H(e) {
               channelId: H,
               onClose: z,
               appContext: Q,
-              disableAutoFocus: $
+              disableAutoFocus: J
             }), (null == es ? true : es.profileEffect) != null && (0, r.jsx)(m.A, {
               skuId: null == es || null == (t = es.profileEffect) ? true : t.skuId,
               isHovering: el

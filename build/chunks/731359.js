@@ -56,7 +56,7 @@ function d(e, t, n) {
     focusableProps: N
   } = (0, c.Wc)((0, i.v)(e, {
     onFocus: () => t.setLastFocusedValue(d)
-  }), n), R = (0, i.v)(I, N), w = (0, a.$)(e, {
+  }), n), w = (0, i.v)(I, N), R = (0, a.$)(e, {
     labelable: true
   }), P = false;
   null != t.selectedValue ? t.selectedValue === d && (P = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (P = 0), O && (P = true);
@@ -74,8 +74,8 @@ function d(e, t, n) {
       onClick: e => e.preventDefault(),
       onMouseDown: e => e.preventDefault()
     }), [])),
-    inputProps: (0, i.v)(w, {
-      ...R,
+    inputProps: (0, i.v)(R, {
+      ...w,
       type: "radio",
       name: D,
       form: x,

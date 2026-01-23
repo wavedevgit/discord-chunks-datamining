@@ -31,9 +31,9 @@ var Chunk503698 = require("./503698.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk242243 = require("./242243.js");
-let R = (e, t, n) => (0, I.a3)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
+let w = (e, t, n) => (0, I.a3)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
-function w(e) {
+function R(e) {
   let {
     containerSize: t,
     onClick: n,
@@ -207,7 +207,7 @@ let x = e => {
       }), (0, r.jsxs)("div", {
         className: N.oW,
         children: [!q && (0, r.jsx)(c.Text, {
-          variant: R(i, d, M),
+          variant: w(i, d, M),
           className: N.$p,
           children: E ? C.intl.formatToPlainString(C.t["ge+AJp"], {
             questName: n.config.messages.questName
@@ -241,7 +241,7 @@ let x = e => {
         align: "center",
         justify: "end",
         fullWidth: "lg" !== d,
-        children: [(0, r.jsx)(w, {
+        children: [(0, r.jsx)(R, {
           containerSize: d,
           onClick: W,
           text: C.intl.string(C.t.LLLLPD)

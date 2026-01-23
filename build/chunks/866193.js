@@ -27,13 +27,13 @@ Chunk557939({
   replaceAll: function(e, t) {
     var n, r, a, _, v, A, I, S, T, C = s(this),
       N = 0,
-      R = "";
+      w = "";
     if (!l(e)) {
       if ((n = c(e)) && !~E(u(s(f(e))), "g")) throw new g("`.replaceAll` does not allow non-global regexes");
       if (r = d(e, m)) return i(r, e, C, t);
       if (h && n) return y(u(C), e, t)
     }
-    for (a = u(C), _ = u(e), (v = o(t)) || (t = u(t)), I = O(1, A = _.length), S = E(a, _); false !== S;) T = v ? u(t(_, S, a)) : p(_, a, S, [], true, t), R += b(a, N, S) + T, N = S + A, S = S + I > a.length ? false : E(a, _, S + I);
-    return N < a.length && (R += b(a, N)), R
+    for (a = u(C), _ = u(e), (v = o(t)) || (t = u(t)), I = O(1, A = _.length), S = E(a, _); false !== S;) T = v ? u(t(_, S, a)) : p(_, a, S, [], true, t), w += b(a, N, S) + T, N = S + A, S = S + I > a.length ? false : E(a, _, S + I);
+    return N < a.length && (w += b(a, N)), w
   }
 })

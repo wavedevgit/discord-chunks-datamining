@@ -97,7 +97,7 @@ function E(e) {
   }, [n, I, S]);
   let C = i.useCallback(e => _[e], [_]),
     N = (0, s.D)("MenuSubmenuListItem"),
-    R = () => _.length > 0 && (0, r.jsx)("div", {
+    w = () => _.length > 0 && (0, r.jsx)("div", {
       className: d.submenuPaddingContainer,
       children: (0, r.jsx)("div", h(p({
         className: d.submenu
@@ -121,7 +121,7 @@ function E(e) {
     portal: false,
     viewportPadding: u.FD,
     maxHeight: u.H0,
-    renderLayer: R,
+    renderLayer: w,
     children: e => {
       let {
         ref: n,
@@ -134,7 +134,7 @@ function E(e) {
       }))
     }
   });
-  let w = (0, r.jsx)(l.QCO, {
+  let R = (0, r.jsx)(l.QCO, {
     targetRef: O,
     autoInvert: true,
     nudgeAlignIntoViewport: true,
@@ -142,12 +142,12 @@ function E(e) {
     spacing: 4,
     position: "right",
     align: "top",
-    children: R
+    children: w
   });
   return (0, r.jsxs)("div", {
     ref: b,
     children: [(0, r.jsx)("div", {
       ref: O
-    }), t, n ? w : null]
+    }), t, n ? R : null]
   })
 }

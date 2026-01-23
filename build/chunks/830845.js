@@ -165,13 +165,13 @@ function T(e) {
     return C && (a = u(a, C)), _(a, r, n)
   }
 
-  function R() {
+  function w() {
     return Math.random().toString(36).substr(2, T)
   }
-  var w = m();
+  var R = m();
 
   function P(e) {
-    (0, r.A)(Z, e), Z.length = t.length, w.notifyListeners(Z.location, Z.action)
+    (0, r.A)(X, e), X.length = t.length, R.notifyListeners(X.location, X.action)
   }
 
   function D(e) {
@@ -187,7 +187,7 @@ function T(e) {
     if (L) L = false, P();
     else {
       var t = "POP";
-      w.confirmTransitionTo(e, t, h, function(n) {
+      R.confirmTransitionTo(e, t, h, function(n) {
         n ? P({
           action: t,
           location: e
@@ -197,7 +197,7 @@ function T(e) {
   }
 
   function M(e) {
-    var t = Z.location,
+    var t = X.location,
       n = U.indexOf(t.key);
     false === n && (n = 0);
     var r = U.indexOf(e.key);
@@ -214,8 +214,8 @@ function T(e) {
 
   function V(e, r) {
     var i = "PUSH",
-      a = _(e, r, R(), Z.location);
-    w.confirmTransitionTo(a, i, h, function(e) {
+      a = _(e, r, w(), X.location);
+    R.confirmTransitionTo(a, i, h, function(e) {
       if (e) {
         var r = G(a),
           s = a.key,
@@ -226,7 +226,7 @@ function T(e) {
               state: o
             }, null, r), c) window.location.href = r;
           else {
-            var l = U.indexOf(Z.location.key),
+            var l = U.indexOf(X.location.key),
               u = U.slice(0, l + 1);
             u.push(a.key), U = u, P({
               action: i,
@@ -240,8 +240,8 @@ function T(e) {
 
   function F(e, r) {
     var i = "REPLACE",
-      a = _(e, r, R(), Z.location);
-    w.confirmTransitionTo(a, i, h, function(e) {
+      a = _(e, r, w(), X.location);
+    R.confirmTransitionTo(a, i, h, function(e) {
       if (e) {
         var r = G(a),
           s = a.key,
@@ -252,7 +252,7 @@ function T(e) {
               state: o
             }, null, r), c) window.location.replace(r);
           else {
-            var l = U.indexOf(Z.location.key);
+            var l = U.indexOf(X.location.key);
             false !== l && (U[l] = a.key), P({
               action: i,
               location: a
@@ -283,21 +283,21 @@ function T(e) {
 
   function q(e) {
     true === e && (e = false);
-    var t = w.setPrompt(e);
+    var t = R.setPrompt(e);
     return z || (K(1), z = true),
       function() {
         return z && (z = false, K(false)), t()
       }
   }
 
-  function X(e) {
-    var t = w.appendListener(e);
+  function Z(e) {
+    var t = R.appendListener(e);
     return K(1),
       function() {
         K(false), t()
       }
   }
-  var Z = {
+  var X = {
     length: t.length,
     action: "POP",
     location: k,
@@ -308,9 +308,9 @@ function T(e) {
     goBack: H,
     goForward: Y,
     block: q,
-    listen: X
+    listen: Z
   };
-  return Z
+  return X
 }
 var C = "hashchange",
   N = {
@@ -332,12 +332,12 @@ var C = "hashchange",
     }
   };
 
-function R(e) {
+function w(e) {
   var t = e.indexOf("#");
   return false === t ? e : e.slice(0, t)
 }
 
-function w() {
+function R() {
   var e = window.location.href,
     t = e.indexOf("#");
   return false === t ? "" : e.substring(t + 1)
@@ -348,7 +348,7 @@ function P(e) {
 }
 
 function D(e) {
-  window.location.replace(R(window.location.href) + "#" + e)
+  window.location.replace(w(window.location.href) + "#" + e)
 }
 
 function x(e) {
@@ -366,13 +366,13 @@ function x(e) {
     b = h.decodePath;
 
   function v() {
-    var e = b(w());
+    var e = b(R());
     return f && (e = u(e, f)), _(e)
   }
   var A = m();
 
   function I(e) {
-    (0, r.A)($, e), $.length = t.length, A.notifyListeners($.location, $.action)
+    (0, r.A)(J, e), J.length = t.length, A.notifyListeners(J.location, J.action)
   }
   var S = false,
     T = null;
@@ -382,12 +382,12 @@ function x(e) {
   }
 
   function L() {
-    var e = w(),
+    var e = R(),
       t = y(e);
     if (e !== t) D(t);
     else {
       var n = v(),
-        r = $.location;
+        r = J.location;
       if (!S && x(r, n) || T === p(n)) return;
       T = null, j(n)
     }
@@ -407,7 +407,7 @@ function x(e) {
   }
 
   function M(e) {
-    var t = $.location,
+    var t = J.location,
       n = V.lastIndexOf(p(t));
     false === n && (n = 0);
     var r = V.lastIndexOf(p(e));
@@ -415,7 +415,7 @@ function x(e) {
     var i = n - r;
     i && (S = true, Y(i))
   }
-  var k = w(),
+  var k = R(),
     U = y(k);
   k !== U && D(U);
   var G = v(),
@@ -424,20 +424,20 @@ function x(e) {
   function F(e) {
     var t = document.querySelector("base"),
       n = "";
-    return t && t.getAttribute("href") && (n = R(window.location.href)), n + "#" + y(f + p(e))
+    return t && t.getAttribute("href") && (n = w(window.location.href)), n + "#" + y(f + p(e))
   }
 
   function B(e, t) {
     var n = "PUSH",
-      r = _(e, true, true, $.location);
+      r = _(e, true, true, J.location);
     A.confirmTransitionTo(r, n, a, function(e) {
       if (e) {
         var t = p(r),
           i = y(f + t),
-          a = w() !== i;
+          a = R() !== i;
         if (a) {
           T = t, P(i);
-          var s = V.lastIndexOf(p($.location)),
+          var s = V.lastIndexOf(p(J.location)),
             o = V.slice(0, s + 1);
           o.push(t), V = o, I({
             action: n,
@@ -450,14 +450,14 @@ function x(e) {
 
   function H(e, t) {
     var n = "REPLACE",
-      r = _(e, true, true, $.location);
+      r = _(e, true, true, J.location);
     A.confirmTransitionTo(r, n, a, function(e) {
       if (e) {
         var t = p(r),
           i = y(f + t),
-          a = w() !== i;
+          a = R() !== i;
         a && (T = t, D(i));
-        var s = V.indexOf(p($.location));
+        var s = V.indexOf(p(J.location));
         false !== s && (V[s] = t), I({
           action: n,
           location: r
@@ -482,14 +482,14 @@ function x(e) {
   function q(e) {
     1 === (z += e) && 1 === e ? window.addEventListener(C, L) : 0 === z && window.removeEventListener(C, L)
   }
-  var X = false;
+  var Z = false;
 
-  function Z(e) {
+  function X(e) {
     true === e && (e = false);
     var t = A.setPrompt(e);
-    return X || (q(1), X = true),
+    return Z || (q(1), Z = true),
       function() {
-        return X && (X = false, q(false)), t()
+        return Z && (Z = false, q(false)), t()
       }
   }
 
@@ -500,7 +500,7 @@ function x(e) {
         q(false), t()
       }
   }
-  var $ = {
+  var J = {
     length: t.length,
     action: "POP",
     location: G,
@@ -510,10 +510,10 @@ function x(e) {
     go: Y,
     goBack: W,
     goForward: K,
-    block: Z,
+    block: X,
     listen: Q
   };
-  return $
+  return J
 }
 
 function L(e, t, n) {

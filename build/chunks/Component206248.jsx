@@ -89,10 +89,10 @@ function S(e) {
     previewUrl: T = S,
     disableMediaViewer: C = false,
     action: N,
-    caretConfig: R = {
+    caretConfig: w = {
       align: "center"
     },
-    badge: w,
+    badge: R,
     textLink: P,
     onWatchVideo: D,
     onRequestClose: x,
@@ -161,7 +161,7 @@ function S(e) {
       position: j,
       onRequestClose: H,
       hasVideo: true,
-      caretConfig: R
+      caretConfig: w
     }, "edge" === M.alignmentStrategy ? {
       alignmentStrategy: "edge",
       align: M.align
@@ -179,7 +179,7 @@ function S(e) {
       }), (0, r.jsx)(p.D, {
         title: O,
         body: I,
-        badge: w,
+        badge: R,
         textLink: P
       }), null != N ? (0, r.jsx)(d.Z, {
         actions: [N]

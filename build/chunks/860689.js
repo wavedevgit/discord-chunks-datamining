@@ -70,7 +70,7 @@ function p(e) {
 }
 
 function _(e, t, n) {
-  var r, i, l, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S, T, C, N, R, P, x, L;
+  var r, i, l, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S, T, C, N, w, P, x, L;
   return (0, s.e)(o.vI, n, {
     id: e.id,
     joinedAt: t.joinedAt,
@@ -104,11 +104,11 @@ function _(e, t, n) {
     maxVideoChannelUsers: null != (T = e.max_video_channel_users) ? T : o.do.maxVideoChannelUsers,
     maxMembers: null != (C = e.max_members) ? C : o.do.maxMembers,
     nsfwLevel: null != (N = e.nsfw_level) ? N : o.do.nsfwLevel,
-    ownerConfiguredContentLevel: null != (R = e.owner_configured_content_level) ? R : null,
+    ownerConfiguredContentLevel: null != (w = e.owner_configured_content_level) ? w : null,
     hubType: null != (P = e.hub_type) ? P : null,
     latestOnboardingQuestionId: null != (x = e.latest_onboarding_question_id) ? x : null,
     profile: null != (L = e.profile) ? L : null,
-    premiumFeatures: null != e.premium_features ? w(e.premium_features) : null,
+    premiumFeatures: null != e.premium_features ? R(e.premium_features) : null,
     moderatorReporting: null != e.moderator_reporting ? D(e.moderator_reporting) : null
   })
 }
@@ -233,7 +233,7 @@ function I(e) {
 
 function S(e) {
   var t, n, r, i, s, l;
-  return R({
+  return w({
     id: e.id,
     name: e.name || "",
     description: e.description || null,
@@ -324,18 +324,18 @@ function C(e) {
     features: (0, a.y)(e.features),
     joinedAt: null != e.joinedAt ? new Date(e.joinedAt) : null
   });
-  return delete t.roles, delete t.member, R(t)
+  return delete t.roles, delete t.member, w(t)
 }
 
 function N(e) {
-  return R(u({}, o.do, e))
-}
-
-function R(e) {
-  return (0, s.yE)(o.vI, e)
+  return w(u({}, o.do, e))
 }
 
 function w(e) {
+  return (0, s.yE)(o.vI, e)
+}
+
+function R(e) {
   return {
     features: e.features,
     additionalEmojiSlots: e.additional_emoji_slots,

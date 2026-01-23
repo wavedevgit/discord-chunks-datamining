@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a, s;
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js");
 var o, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -169,7 +169,7 @@ function C(e) {
 function N() {
   r = null, i = null, a = null, s = null, m = new Map
 }
-class R extends(o = Chunk311907.Ay.PersistedStore) {
+class w extends(o = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null == e) {
       var t;
@@ -223,7 +223,7 @@ class R extends(o = Chunk311907.Ay.PersistedStore) {
     }
   }
 }
-f(R, "displayName", "PictureInPictureStore"), f(R, "persistKey", "PictureInPictureStore"), f(R, "migrations", [e => {
+f(w, "displayName", "PictureInPictureStore"), f(w, "persistKey", "PictureInPictureStore"), f(w, "migrations", [e => {
   var t, n, r;
   return {
     pipWidths: {
@@ -234,7 +234,7 @@ f(R, "displayName", "PictureInPictureStore"), f(R, "persistKey", "PictureInPictu
     openPosition: null != (r = e.openPosition) ? r : u.CUs.BOTTOM_RIGHT
   }
 }]);
-let w = new R(Chunk73153.h, {
+let R = new w(Chunk73153.h, {
   PICTURE_IN_PICTURE_OPEN: b,
   PICTURE_IN_PICTURE_CLOSE: O,
   PICTURE_IN_PICTURE_MOVE: v,

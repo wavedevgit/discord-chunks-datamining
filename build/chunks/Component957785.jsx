@@ -32,7 +32,7 @@ let p = Chunk64700.forwardRef(function(e, t) {
     skuProductLine: I
   } = b, {
     trackUserProfileWishlistAction: S
-  } = (0, u.NJ)(), T = h ? f.ho : f.C8, C = E ? f.pr : f.Nr, N = null != g && g > 0, R = (0, r.jsxs)(l.DUT, {
+  } = (0, u.NJ)(), T = h ? f.ho : f.C8, C = E ? f.pr : f.Nr, N = null != g && g > 0, w = (0, r.jsxs)(l.DUT, {
     onClick: () => {
       p(), S({
         action: N ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
@@ -57,12 +57,12 @@ let p = Chunk64700.forwardRef(function(e, t) {
         children: ["+", g]
       })
     })]
-  }), w = !N && null != v;
+  }), R = !N && null != v;
   return (0, r.jsxs)("div", {
     className: s()({
-      [f.r4]: w
+      [f.r4]: R
     }),
-    children: [w && (0, r.jsx)("div", {
+    children: [R && (0, r.jsx)("div", {
       className: f.RL,
       children: v === c.uS.POPULAR ? (0, r.jsx)(l.Y3C, {
         className: s()(f.fd, f.I$),
@@ -79,7 +79,7 @@ let p = Chunk64700.forwardRef(function(e, t) {
       assetSize: c.Q8,
       title: _.title,
       body: null != (i = _.body) ? i : "",
-      children: R
+      children: w
     })]
   })
 })

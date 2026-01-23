@@ -187,7 +187,7 @@ let V = function(e) {
   }).enabled && V;
 
   function B() {
-    (0, w.openUserSettings)(C.X.NITRO_PANEL, {
+    (0, R.openUserSettings)(C.X.NITRO_PANEL, {
       section: P.nc_.PREMIUM
     })
   }
@@ -217,7 +217,7 @@ let V = function(e) {
           className: L.Qw,
           children: x.intl.format(x.t.G4fwxK, {
             onClick: () => {
-              (0, R.default)(), (0, v.pX)(P.BVt.APPLICATION_STORE)
+              (0, w.default)(), (0, v.pX)(P.BVt.APPLICATION_STORE)
             }
           })
         }), (0, r.jsx)(b.A, {

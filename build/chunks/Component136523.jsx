@@ -33,7 +33,7 @@ function I(e) {
     transitionState: n,
     sourceAnalyticsLocations: I,
     onClose: S
-  } = e, T = (0, s.bG)([u.A], () => u.A.getChannelStatus(t)), C = (0, s.bG)([h.A], () => h.A.getMediaSessionId()), [N, R] = i.useState(null != T ? T : ""), [w, P] = i.useState(false), [D, x] = i.useState(null), L = (0, s.bG)([m.default], () => m.default.getCurrentUser()), j = N.length > A;
+  } = e, T = (0, s.bG)([u.A], () => u.A.getChannelStatus(t)), C = (0, s.bG)([h.A], () => h.A.getMediaSessionId()), [N, w] = i.useState(null != T ? T : ""), [R, P] = i.useState(false), [D, x] = i.useState(null), L = (0, s.bG)([m.default], () => m.default.getCurrentUser()), j = N.length > A;
   i.useEffect(() => {
     g.default.track(E.HAw.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -85,8 +85,8 @@ function I(e) {
         P(false)
       }
     }, [G, V] = i.useState((0, f.x7)(N)), F = (e, t, n) => {
-      R(t), V(n)
-    }, B = async () => (j || w || await U(), Promise.resolve({
+      w(t), V(n)
+    }, B = async () => (j || R || await U(), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
     })), H = (0, r.jsx)(a.D0$, {
@@ -128,7 +128,7 @@ function I(e) {
       onClick: S
     }, {
       variant: "primary",
-      loading: w,
+      loading: R,
       disabled: j,
       text: y.intl.string(y.t.XqK2I2),
       onClick: U

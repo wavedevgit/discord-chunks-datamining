@@ -61,12 +61,12 @@ function N(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = e => {
+let R = e => {
     let {
       userRecord: t,
       placement: n
@@ -118,19 +118,19 @@ let w = e => {
     } = e, n = t.length, i = n < 1 ? null : t[0], a = n < 2 ? null : t[1], s = n < 3 ? null : t[2];
     return (0, r.jsxs)("div", {
       className: I.ZM,
-      children: [(0, r.jsx)(w, {
+      children: [(0, r.jsx)(R, {
         userRecord: i,
         placement: 1
       }), (0, r.jsx)(P, {
         numSentReferrals: n,
         placement: 1
-      }), (0, r.jsx)(w, {
+      }), (0, r.jsx)(R, {
         userRecord: a,
         placement: 2
       }), (0, r.jsx)(P, {
         numSentReferrals: n,
         placement: 2
-      }), (0, r.jsx)(w, {
+      }), (0, r.jsx)(R, {
         userRecord: s,
         placement: 3
       })]
@@ -146,7 +146,7 @@ let w = e => {
       let {
         default: e
       } = await n.e("26489").then(n.bind(n, 477088));
-      return n => (0, r.jsx)(e, R(C({}, n), {
+      return n => (0, r.jsx)(e, w(C({}, n), {
         sourceAnalyticsLocations: t
       }))
     })
@@ -170,11 +170,11 @@ let w = e => {
         analyticsLocations: C
       } = (0, f.Ay)(d.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       N = i.useRef(null),
-      R = p.sent / y.Z * 100,
-      w = (0, r.jsxs)("div", {
+      w = p.sent / y.Z * 100,
+      R = (0, r.jsxs)("div", {
         className: I.hE,
         children: [(0, r.jsx)(b.Ay, {
-          percentage: R,
+          percentage: w,
           progressCircleVariation: b.BN.NITRO_LOGO,
           iconClassName: s()({
             [I.VC]: !t,
@@ -237,7 +237,7 @@ let w = e => {
             [I.d_]: t,
             [I.kS]: P
           }),
-          children: w
+          children: R
         })
       })
     })

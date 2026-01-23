@@ -1,7 +1,7 @@
 /** Chunk was on 2824 **/
 /** chunk id: 877156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => P
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,57 +23,57 @@ var Chunk627968 = require("./627968.js"),
   Chunk758836 = require("./758836.js"),
   Chunk401506 = require("./401506.js");
 
-function x(e) {
+function P(e) {
   let {
     reward: t,
     purchase: n,
-    onClose: x
-  } = e, P = (0, s.bG)([h.default], () => h.default.getCurrentUser()), S = (0, s.bG)([u.A], () => u.A.useReducedMotion), {
-    analyticsLocations: E
-  } = (0, c.Ay)(), T = o._3J.SIZE_32, I = (0, d.A)(t.assetId, T, !S), A = (0, y.A)(), k = null == A ? true : A.giftPurchaseConfirmation, {
+    onClose: P
+  } = e, x = (0, s.bG)([b.default], () => b.default.getCurrentUser()), E = (0, s.bG)([u.A], () => u.A.useReducedMotion), {
+    analyticsLocations: S
+  } = (0, c.Ay)(), T = o._3J.SIZE_32, I = (0, d.A)(t.assetId, T, !E), A = (0, j.A)(), k = null == A ? true : A.giftPurchaseConfirmation, {
     product: w,
-    isFetching: _
-  } = (0, p.q)(n.skuId), C = t.type === i.R.NAMEPLATE, [M, N] = r.useState(false), R = r.useMemo(() => {
+    isFetching: C
+  } = (0, p.q)(n.skuId), M = t.type === i.R.NAMEPLATE, [_, N] = l.useState(false), R = l.useMemo(() => {
     var e, n;
-    return C && null != t.assetId ? {
+    return M && null != t.assetId ? {
       src: t.assetId,
-      palette: (0, g.H6)(null != (e = t.palette) ? e : "sky"),
+      palette: (0, f.H6)(null != (e = t.palette) ? e : "sky"),
       imgAlt: null == (n = t.a11yLabel) ? true : n.call(t)
     } : null
-  }, [C, t]);
-  return null == k ? null : (0, l.jsx)(v.UX, {
-    children: (0, l.jsx)(o.jlY, {
-      align: f.A.Align.CENTER,
+  }, [M, t]);
+  return null == k ? null : (0, r.jsx)(h.UX, {
+    children: (0, r.jsx)(o.jlY, {
+      align: g.A.Align.CENTER,
       "data-migration-pending": true,
-      children: (0, l.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: O.W,
-        children: [C && null != R ? (0, l.jsx)("div", {
+        children: [M && null != R ? (0, r.jsx)("div", {
           className: O.D,
           onMouseEnter: () => N(true),
           onMouseLeave: () => N(false),
-          children: (0, l.jsx)(j.a, {
-            user: P,
+          children: (0, r.jsx)(y.a, {
+            user: x,
             nameplate: null,
             nameplateData: R,
             showPlaceholderUser: true,
             nameplatePreviewSize: "xsmall",
-            isHighlighted: M
+            isHighlighted: _
           })
-        }) : (0, l.jsx)(o.JsQ, {
-          "aria-label": null == P ? true : P.username,
+        }) : (0, r.jsx)(o.JsQ, {
+          "aria-label": null == x ? true : x.username,
           size: T,
-          src: null == P ? true : P.getAvatarURL(true, (0, o.FT9)(T), !S),
+          src: null == x ? true : x.getAvatarURL(true, (0, o.FT9)(T), !E),
           avatarDecoration: I
-        }), (0, l.jsx)(a.$nd, {
+        }), (0, r.jsx)(a.$nd, {
           variant: "primary",
           text: k.collectRewardButtonText(),
-          loading: _,
+          loading: C,
           onClick: () => {
-            null != w && (x(), (0, m.A)({
+            null != w && (P(), (0, m.A)({
               product: w,
               shouldShowPromotionalExperience: true,
-              analyticsLocations: E,
-              purchaseType: b.gs.PROMOTIONAL
+              analyticsLocations: S,
+              purchaseType: v.gs.PROMOTIONAL
             }))
           }
         })]

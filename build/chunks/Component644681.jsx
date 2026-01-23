@@ -43,15 +43,15 @@ function O(e) {
     iconURL: O,
     scrollerRef: v,
     sectionName: A
-  } = e, I = (0, l.qB)((0, u.Ay)()), S = i.useRef(null), T = i.useRef(null), C = i.useRef(null), N = i.useRef(null), R = (0, c.rdh)(c.LU0.colors.BACKGROUND_BASE_LOW).hex(), w = (0, d.Ay)("number" == typeof O ? "" : O, null != R ? R : ""), P = i.useMemo(() => {
+  } = e, I = (0, l.qB)((0, u.Ay)()), S = i.useRef(null), T = i.useRef(null), C = i.useRef(null), N = i.useRef(null), w = (0, c.rdh)(c.LU0.colors.BACKGROUND_BASE_LOW).hex(), R = (0, d.Ay)("number" == typeof O ? "" : O, null != w ? w : ""), P = i.useMemo(() => {
     var e, t;
     return null != (e = null == (t = (0, f.lZ)({
-      foreground: s()(w),
+      foreground: s()(R),
       background: s()(I ? "#000000" : "#ffffff"),
       ratio: 5,
       saturationFactor: .6
-    })) ? true : t.hex()) ? e : w
-  }, [w, I]), D = b(S), x = b(T), L = i.useCallback(() => {
+    })) ? true : t.hex()) ? e : R
+  }, [R, I]), D = b(S), x = b(T), L = i.useCallback(() => {
     var e, t, n;
     let r = v.current,
       i = S.current,
@@ -66,9 +66,9 @@ function O(e) {
         d = c - l,
         f = (0, o.clamp)(t - u, d + 1, c + g),
         p = E(e, d, f);
-      i.style.filter = "brightness(".concat(y(1, I ? 1.4 : .6, p), ")"), i.style.backgroundColor = "color-mix(in oklab,".concat(w, " ").concat((1 - p) * 100, "%, ").concat(P, ")"), a.style.opacity = "".concat(y(0, 1, p)), a.style.transform = "translateY(".concat(y(l / 4, 0, p), "px)"), null != s && (s.style.opacity = "".concat(y(1, 0, p)))
+      i.style.filter = "brightness(".concat(y(1, I ? 1.4 : .6, p), ")"), i.style.backgroundColor = "color-mix(in oklab,".concat(R, " ").concat((1 - p) * 100, "%, ").concat(P, ")"), a.style.opacity = "".concat(y(0, 1, p)), a.style.transform = "translateY(".concat(y(l / 4, 0, p), "px)"), null != s && (s.style.opacity = "".concat(y(1, 0, p)))
     }
-  }, [P, w, null == x ? true : x.height, I, v, null == D ? true : D.height]);
+  }, [P, R, null == x ? true : x.height, I, v, null == D ? true : D.height]);
   return i.useEffect(() => {
     L()
   }, [L, I]), i.useEffect(() => {
@@ -115,7 +115,7 @@ function O(e) {
       ref: T,
       className: m.b8,
       style: {
-        backgroundColor: w
+        backgroundColor: R
       }
     })]
   })

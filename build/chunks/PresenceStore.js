@@ -42,7 +42,7 @@ function N(e, t) {
   let n = O[e];
   return null != n ? n[t] : null
 }
-let R = e => {
+let w = e => {
   switch (e.type) {
     case E.$pd.CUSTOM_STATUS:
       return 4;
@@ -57,8 +57,8 @@ let R = e => {
   }
 };
 
-function w(e, t) {
-  return R(t) - R(e)
+function R(e, t) {
+  return w(t) - w(e)
 }
 let P = e => +!!(0, u.A)(e);
 
@@ -72,7 +72,7 @@ function x(e, t) {
 }
 
 function L(e, t) {
-  return w(e, t) || D(e, t) || x(e, t)
+  return R(e, t) || D(e, t) || x(e, t)
 }
 
 function j(e) {
@@ -319,7 +319,7 @@ function q(e) {
   O = t.presencesForGuilds, v = t.statuses, A = t.activities, S = t.hiddenActivities, C = t.activityMetadata
 }
 
-function X(e) {
+function Z(e) {
   let {
     presences: t
   } = e;
@@ -344,7 +344,7 @@ function X(e) {
   })
 }
 
-function Z(e) {
+function X(e) {
   let {
     guild: t
   } = e;
@@ -376,7 +376,7 @@ function Q(e) {
   W(t.id)
 }
 
-function $(e) {
+function J(e) {
   let {
     guildId: t,
     user: n
@@ -384,7 +384,7 @@ function $(e) {
   return Y(t, n.id)
 }
 
-function J(e) {
+function $(e) {
   let {
     updates: t
   } = e;
@@ -556,11 +556,11 @@ let ea = new ei(Chunk73153.h, {
   CONNECTION_OPEN: K,
   CONNECTION_OPEN_SUPPLEMENTAL: z,
   OVERLAY_INITIALIZE: q,
-  GUILD_CREATE: Z,
+  GUILD_CREATE: X,
   GUILD_DELETE: Q,
-  GUILD_MEMBER_REMOVE: $,
-  PRESENCE_UPDATES: J,
-  PRESENCES_REPLACE: X,
+  GUILD_MEMBER_REMOVE: J,
+  PRESENCE_UPDATES: $,
+  PRESENCES_REPLACE: Z,
   ACTIVITY_METADATA_UPDATE: er,
   THREAD_MEMBER_LIST_UPDATE: ee,
   THREAD_MEMBERS_UPDATE: et,

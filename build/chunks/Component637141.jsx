@@ -157,7 +157,7 @@ function C(e) {
     optionClassName: O,
     dropdownLoading: C,
     paymentGatewayRestrictions: N
-  } = e, R = 0 === a.length, w = e => {
+  } = e, w = 0 === a.length, R = e => {
     if (e === v) null != h && h();
     else {
       let t = a.find(t => t.id === e);
@@ -185,7 +185,7 @@ function C(e) {
     n = 0 === e.length ? v : e[0].id
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [R ? (0, r.jsx)(c.$nd, {
+    children: [w ? (0, r.jsx)(c.$nd, {
       variant: "primary",
       fullWidth: true,
       onClick: h,
@@ -194,7 +194,7 @@ function C(e) {
       options: P,
       value: n,
       label: t,
-      onChange: w,
+      onChange: R,
       isDisabled: y,
       className: s()({
         [E.uQ]: null != x

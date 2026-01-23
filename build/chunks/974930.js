@@ -14,12 +14,12 @@ require.d(exports, {
   Xy: () => h,
   Ze: () => y,
   er: () => B,
-  j: () => $,
-  jd: () => R,
-  nG: () => X,
+  j: () => J,
+  jd: () => w,
+  nG: () => Z,
   p$: () => W,
   sv: () => V,
-  z7: () => Z,
+  z7: () => X,
   zD: () => G
 }), require("./896048.js"), require("./321073.js");
 var Chunk735438 = require("./735438.js"),
@@ -96,15 +96,15 @@ function N(e) {
     label: p.intl.string(p.t["jYR/MY"])
   }), a
 }
-let R = () => {
+let w = () => {
     let e = a()().add(1, "hour"),
       t = e.hour();
     return e.minutes() >= 30 && (t += 1), e.hour(t).minutes(0).seconds(0)
   },
-  w = (e, t) => (0, l.i$)(e, e.get("years") === t.get("years") ? m : g),
+  R = (e, t) => (0, l.i$)(e, e.get("years") === t.get("years") ? m : g),
   P = (e, t) => {
     let n = (0, l.m_)(e.toDate(), t.toDate());
-    return n > 1 || n < 0 ? w(e, t) : (0, l.i$)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
+    return n > 1 || n < 0 ? R(e, t) : (0, l.i$)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
   };
 
 function D(e, t, n) {
@@ -114,7 +114,7 @@ function D(e, t, n) {
     s = null != t && r.isSame(i, "day");
   return {
     startDateTimeString: P(r, n),
-    endDateTimeString: null != i ? s ? i.format(E) : w(i, n) : true,
+    endDateTimeString: null != i ? s ? i.format(E) : R(i, n) : true,
     currentOrPastEvent: r <= n,
     upcomingEvent: r <= a()().add(1, "hour"),
     withinStartWindow: r <= a()().add(15, "minute"),
@@ -280,7 +280,7 @@ function q(e, t) {
   }
 }
 
-function X(e, t) {
+function Z(e, t) {
   let n = q(e, t);
   if (null == n) return null;
   let {
@@ -312,7 +312,7 @@ function X(e, t) {
   }
 }
 
-function Z(e, t) {
+function X(e, t) {
   if (null == t) return d.z.NONE;
   let n = F(t);
   switch (n.options.freq) {
@@ -336,6 +336,6 @@ function Q(e, t) {
   return (null == e ? true : e.scheduled_start_time) !== t.scheduledStartTime || e.scheduled_end_time !== t.scheduledEndTime || !(0, r.isEqual)(e.recurrence_rule, t.recurrenceRule)
 }
 
-function $(e, t, n) {
+function J(e, t, n) {
   return (null == e ? true : e.is_canceled) ? f.XG.CANCELED : t < n ? f.XG.COMPLETED : null != e ? f.XG.SCHEDULED : null
 }

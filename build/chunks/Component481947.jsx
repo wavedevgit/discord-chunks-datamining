@@ -41,7 +41,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,7 +66,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -148,8 +148,8 @@ function k(e) {
     isWatching: y,
     iconClassName: v,
     embeddedApplication: N,
-    otherClientSessionType: R,
-    voicePlatform: w,
+    otherClientSessionType: w,
+    voicePlatform: R,
     application: P,
     guildId: D,
     channelId: x,
@@ -200,9 +200,9 @@ function k(e) {
       color: "currentColor",
       className: s()(C.Kk, v)
     })
-  }, "activity")), R === S.f$.XBOX || w === I.J7.XBOX ? W.push((0, r.jsx)(O.A, {
+  }, "activity")), w === S.f$.XBOX || R === I.J7.XBOX ? W.push((0, r.jsx)(O.A, {
     className: s()(C.Kk, v)
-  }, "xbox")) : (R === S.f$.PLAYSTATION || w === I.J7.PLAYSTATION) && W.push((0, r.jsx)(b.A, {
+  }, "xbox")) : (w === S.f$.PLAYSTATION || R === I.J7.PLAYSTATION) && W.push((0, r.jsx)(b.A, {
     className: s()(C.Kk, v)
   }, "playstation")), y && W.push((0, r.jsx)(c.m, {
     text: T.intl.string(T.t["JH1SJ+"]),
@@ -261,7 +261,7 @@ let U = function(e) {
     onMouseLeave: I,
     onMouseDown: S,
     priority: N,
-    speaking: w = false,
+    speaking: R = false,
     voiceDb: x = false / 0,
     latched: L,
     collapsed: j,
@@ -279,17 +279,17 @@ let U = function(e) {
   } = _, q = (0, h.A)({
     userId: z.id,
     guildId: G
-  }), X = (0, m.a)({
+  }), Z = (0, m.a)({
     displayNameStyles: q
-  }), Z = (0, p.v)({
-    isSpeaking: w,
+  }), X = (0, p.v)({
+    isSpeaking: R,
     isLatched: L,
     voiceDb: x
   }), Q = e => {
     null == g || g(e, z)
-  }, $ = e => {
-    null == b || b(e, z)
   }, J = e => {
+    null == b || b(e, z)
+  }, $ = e => {
     null == O || O(e, z)
   }, ee = e => {
     null == I || I(e, z)
@@ -302,7 +302,7 @@ let U = function(e) {
       text: T.intl.string(T.t.BVK71i),
       children: (0, r.jsx)("div", {
         className: s()(C.G, {
-          [C.g4]: !M && !U && w
+          [C.g4]: !M && !U && R
         })
       })
     }) : null
@@ -314,16 +314,16 @@ let U = function(e) {
         [C.Jb]: a === A.OSZ.LARGE,
         [C.dT]: a === A.OSZ.SMALL
       }),
-      style: R({
+      style: w({
         backgroundImage: "url(".concat(z.getAvatarURL(G, a === A.OSZ.LARGE ? 38 : 24), ")")
-      }, Z)
+      }, X)
     })
   }
 
   function ei() {
     let e = (0, r.jsxs)("div", {
-        className: s()(i, C.Xh, X, {
-          [C.Pi]: !M && !U && w
+        className: s()(i, C.Xh, Z, {
+          [C.Pi]: !M && !U && R
         }),
         children: [null != V ? V : v.Ay.getName(z), F ? (0, r.jsxs)("span", {
           className: C.IW,
@@ -341,13 +341,13 @@ let U = function(e) {
           source: d ? A.JJy.OVERLAY : A.ThZ.VOICE_PANEL
         }
       };
-    return !j || d ? (0, r.jsx)(E.A, P(R({}, t), {
+    return !j || d ? (0, r.jsx)(E.A, P(w({}, t), {
       children: e
     })) : null
   }
 
   function ea() {
-    return (0, r.jsx)(k, R({
+    return (0, r.jsx)(k, w({
       disabled: l
     }, _))
   }
@@ -364,8 +364,8 @@ let U = function(e) {
       [C.DF]: K
     }),
     onClick: Q,
-    onDoubleClick: $,
-    onContextMenu: J,
+    onDoubleClick: J,
+    onContextMenu: $,
     onMouseLeave: ee,
     onMouseDown: et,
     onKeyDown: y,

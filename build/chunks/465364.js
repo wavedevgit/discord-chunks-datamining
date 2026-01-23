@@ -121,7 +121,7 @@ function E(e, t, n) {
       index: 0,
       0: d
     }
-  }]), a && (e = w(e, (null != l ? l : t).embeds)), s || (e = S(e, n)), e = y(e), t.embeds.length > 0 && (c = C(e, n)), s && (e = P(e)), null != o && (e = o(e, n)), e));
+  }]), a && (e = R(e, (null != l ? l : t).embeds)), s || (e = S(e, n)), e = y(e), t.embeds.length > 0 && (c = C(e, n)), s && (e = P(e)), null != o && (e = o(e, n)), e));
   return {
     hasSpoilerEmbeds: c,
     content: f,
@@ -217,7 +217,7 @@ function T(e) {
 }
 
 function C(e, t) {
-  return t ? R(e) : "paragraph" === e[0].type && e[0].content instanceof Array && R(e[0].content)
+  return t ? w(e) : "paragraph" === e[0].type && e[0].content instanceof Array && w(e[0].content)
 }
 
 function N(e, t) {
@@ -226,11 +226,11 @@ function N(e, t) {
   return null != n ? n : e.content instanceof Array ? N(e.content, t) : e.items instanceof Array && e.items.some(e => N(e, t))
 }
 
-function R(e) {
+function w(e) {
   return N(e, e => "spoiler" === e.type ? N(e, e => "link" === e.type || "attachmentLink" === e.type || null) : null)
 }
 
-function w(e, t) {
+function R(e, t) {
   if (1 !== e.length || 1 !== t.length) return e;
   let n = e[0],
     r = t[0];

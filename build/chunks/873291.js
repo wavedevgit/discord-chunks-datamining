@@ -41,7 +41,7 @@ function h(e, t, n) {
       direction: C
     } = (0, f.Y)(),
     N = t.selectionManager.disabledBehavior,
-    R = (0, u.useMemo)(() => g || new(0, r.J)({
+    w = (0, u.useMemo)(() => g || new(0, r.J)({
       collection: t.collection,
       disabledKeys: t.disabledKeys,
       disabledBehavior: N,
@@ -51,11 +51,11 @@ function h(e, t, n) {
       focusMode: E
     }), [g, t.collection, t.disabledKeys, N, n, C, T, E]),
     {
-      collectionProps: w
+      collectionProps: R
     } = (0, _.y)({
       ref: n,
       selectionManager: S,
-      keyboardDelegate: R,
+      keyboardDelegate: w,
       isVirtualized: h,
       scrollRef: y,
       disallowTypeAhead: m,
@@ -63,7 +63,7 @@ function h(e, t, n) {
     }),
     P = (0, o.Bi)(e.id);
   i.B.set(t, {
-    keyboardDelegate: R,
+    keyboardDelegate: w,
     actions: {
       onRowAction: O,
       onCellAction: v
@@ -85,9 +85,9 @@ function h(e, t, n) {
       e.currentTarget.contains(e.target) && S.setFocused(true)
     }, [S]),
     j = (0, u.useMemo)(() => ({
-      onBlur: w.onBlur,
+      onBlur: R.onBlur,
       onFocus: L
-    }), [L, w.onBlur]),
+    }), [L, R.onBlur]),
     M = (0, p.$)(n, {
       isDisabled: 0 !== t.collection.size
     }),
@@ -95,7 +95,7 @@ function h(e, t, n) {
       role: "grid",
       id: P,
       "aria-multiselectable": "multiple" === S.selectionMode ? "true" : true
-    }, t.isKeyboardNavigationDisabled ? j : w, 0 === t.collection.size && {
+    }, t.isKeyboardNavigationDisabled ? j : R, 0 === t.collection.size && {
       tabIndex: M ? false : 0
     } || true, D);
   return h && (k["aria-rowcount"] = t.collection.size, k["aria-colcount"] = t.collection.columnCount), (0, a.H)({

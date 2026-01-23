@@ -108,7 +108,7 @@ function Y(e) {
   } = (0, d.Ay)(u.A.BADGE), {
     context: z,
     trackUserProfileAction: q
-  } = (0, N.NJ)(), X = I.default.getCurrentUser(), Z = (0, T.CC)(null == X ? true : X.premiumType, j.PremiumTypes.TIER_2), Q = (0, P.AP)(null != (t = null == X ? true : X.id) ? t : null), $ = (0, w.A)(Q).some(e => e.id === v.A.ORB_PROFILE_BADGE), J = (0, h.C)(X, "UserProfileBadgeList"), ee = (0, _.X)("UserProfileBadgeList");
+  } = (0, N.NJ)(), Z = I.default.getCurrentUser(), X = (0, T.CC)(null == Z ? true : Z.premiumType, j.PremiumTypes.TIER_2), Q = (0, P.AP)(null != (t = null == Z ? true : Z.id) ? t : null), J = (0, R.A)(Q).some(e => e.id === v.A.ORB_PROFILE_BADGE), $ = (0, h.C)(Z, "UserProfileBadgeList"), ee = (0, _.X)("UserProfileBadgeList");
   return (0, r.jsx)("div", {
     className: s()(U.k, a),
     "aria-label": k.intl.string(k.t.VWV0y5),
@@ -118,11 +118,11 @@ function Y(e) {
       let i = e.id === v.A.ORB_PROFILE_BADGE,
         a = (0, C.e0)(e.id),
         d = null != a || e.id === M.K,
-        _ = (null == A ? true : A.userId) === (null == X ? true : X.id),
+        _ = (null == A ? true : A.userId) === (null == Z ? true : Z.id),
         I = t => {
           if (q({
               action: "PRESS_BADGE"
-            }), (0, R.R9)(V({
+            }), (0, w.R9)(V({
               badge: e.id,
               analyticsLocations: K
             }, z)), i) return void(0, f.Cz)({
@@ -133,9 +133,9 @@ function Y(e) {
           if (d) {
             if (t.preventDefault(), S.default.track(x.HAw.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
-                premium_type: Z,
+                premium_type: X,
                 viewed_user_id: null == A ? true : A.userId
-              }), Z) {
+              }), X) {
               _ ? (0, O.pX)(x.BVt.NITRO_HOME) : (0, E.D)({
                 analyticsLocations: K,
                 displayProfile: A
@@ -160,17 +160,17 @@ function Y(e) {
           if (null != n) return null == G || G(), n(t)
         },
         T = () => {
-          e.id === w.h && S.default.track(x.HAw.QUEST_CONTENT_VIEWED, B(V({}, (0, y.fF)(b.uF.QUEST_BADGE)), {
+          e.id === R.h && S.default.track(x.HAw.QUEST_CONTENT_VIEWED, B(V({}, (0, y.fF)(b.uF.QUEST_BADGE)), {
             is_targeted: false
           })), q({
             action: "HOVER_BADGE"
-          }), (0, R.sQ)(V({
+          }), (0, w.sQ)(V({
             badge: e.id,
             analyticsLocations: K
           }, z))
         },
         N = true !== a && e.id !== M.K,
-        P = _ && J && N,
+        P = _ && $ && N,
         Q = (0, r.jsx)("img", {
           alt: " ",
           "aria-hidden": true,
@@ -212,7 +212,7 @@ function Y(e) {
               analyticsLocations: K
             })
           },
-          a = ee && !Z,
+          a = ee && !X,
           s = a ? [{
             text: k.intl.string(k.t.pj0XBN),
             variant: "expressive",
@@ -245,7 +245,7 @@ function Y(e) {
         er = H({
           badge: e,
           tieredTenureBadge: d && e.id !== M.K ? a : true,
-          currentUserOwnsOrbBadge: $
+          currentUserOwnsOrbBadge: J
         });
       return (0, r.jsx)(o.m, {
         __unsupportedReactNodeAsText: er,

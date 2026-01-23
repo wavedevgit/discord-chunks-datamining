@@ -337,9 +337,9 @@ let C = e => {
       return (0, i.jsx)(n, m({
         width: r
       }, e.props), e.id)
-    }), [n, t, r, h]), R = a.useCallback(() => {
+    }), [n, t, r, h]), w = a.useCallback(() => {
       C(true)
-    }, []), w = a.useCallback(() => {
+    }, []), R = a.useCallback(() => {
       C(false)
     }, []), P = a.useMemo(() => n.some(e => e.component === f.o1q.ACTIVITY), [n]), D = a.useMemo(() => n.some(e => e.component === f.o1q.FRAME), [n]);
     return null == t ? (0, i.jsx)(d.Ay, {
@@ -358,8 +358,8 @@ let C = e => {
           hidden: t.hidden,
           onMove: c,
           onResize: u,
-          onDragStart: R,
-          onDragEnd: w,
+          onDragStart: w,
+          onDragEnd: R,
           maxX: s,
           maxY: l,
           width: r,

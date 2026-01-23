@@ -40,12 +40,12 @@ function _() {
   return o.isPlatformEmbedded
 }
 async function h() {
-  var e, t, n, r, a, s, o, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S, T, C, N, R, w, P, D, x, L, j, M, k;
+  var e, t, n, r, a, s, o, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S, T, C, N, w, R, P, D, x, L, j, M, k;
   let U = l.A.getMemoryUsageElectronProcessTypeDetails();
   if (null == U) return null;
   let G = {
       electron_process_memory_private: [null != (e = null == (b = U.unknown) ? true : b.wss_priv_kb) ? e : false, null != (t = null == (O = U.main) ? true : O.wss_priv_kb) ? t : false, null != (n = null == (v = U.renderer) ? true : v.wss_priv_kb) ? n : false, null != (r = null == (A = U.gpu) ? true : A.wss_priv_kb) ? r : false, null != (a = null == (I = U.crashpad) ? true : I.wss_priv_kb) ? a : false, null != (s = null == (S = U.utility) ? true : S.wss_priv_kb) ? s : false],
-      electron_process_memory_private_and_shared: [null != (o = null == (T = U.unknown) ? true : T.wss_kb) ? o : false, null != (c = null == (C = U.main) ? true : C.wss_kb) ? c : false, null != (u = null == (N = U.renderer) ? true : N.wss_kb) ? u : false, null != (d = null == (R = U.gpu) ? true : R.wss_kb) ? d : false, null != (f = null == (w = U.crashpad) ? true : w.wss_kb) ? f : false, null != (p = null == (P = U.utility) ? true : P.wss_kb) ? p : false],
+      electron_process_memory_private_and_shared: [null != (o = null == (T = U.unknown) ? true : T.wss_kb) ? o : false, null != (c = null == (C = U.main) ? true : C.wss_kb) ? c : false, null != (u = null == (N = U.renderer) ? true : N.wss_kb) ? u : false, null != (d = null == (w = U.gpu) ? true : w.wss_kb) ? d : false, null != (f = null == (R = U.crashpad) ? true : R.wss_kb) ? f : false, null != (p = null == (P = U.utility) ? true : P.wss_kb) ? p : false],
       electron_process_type_count: [null != (_ = null == (D = U.unknown) ? true : D.proc_count) ? _ : 0, null != (h = null == (x = U.main) ? true : x.proc_count) ? h : 0, null != (m = null == (L = U.renderer) ? true : L.proc_count) ? m : 0, null != (g = null == (j = U.gpu) ? true : j.proc_count) ? g : 0, null != (E = null == (M = U.crashpad) ? true : M.proc_count) ? E : 0, null != (y = null == (k = U.utility) ? true : k.proc_count) ? y : 0]
     },
     V = await (0, i.w)();

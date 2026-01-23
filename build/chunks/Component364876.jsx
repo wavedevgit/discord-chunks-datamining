@@ -1,7 +1,7 @@
 /** Chunk was on 2824 **/
 /** chunk id: 364876, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _: () => f
+  _: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -15,46 +15,46 @@ var Chunk627968 = require("./627968.js"),
   Chunk298305 = require("./298305.jsx"),
   Chunk686046 = require("./686046.js");
 
-function f() {
+function g() {
   var e, t;
-  let n = (0, r.bG)([o.A], () => o.A.useReducedMotion),
-    f = (0, a.Ay)(),
-    g = (0, i.Mw)(f),
-    j = (0, c.A)(),
-    y = null == j ? true : j.planSelectionBanner,
+  let n = (0, l.bG)([o.A], () => o.A.useReducedMotion),
+    g = (0, a.Ay)(),
+    f = (0, i.Mw)(g),
+    y = (0, c.A)(),
+    j = null == y ? true : y.planSelectionBanner,
     {
-      claimableRewards: h
+      claimableRewards: b
     } = (0, u.Pv)();
-  if (null == y || null == h) return null;
-  let v = null == (e = y.getBackgroundImageUrl) ? true : e.call(y, g),
-    b = (0, d.gc)(v),
-    O = null == (t = y.gradientConfig) ? true : t.call(y, {
-      isDarkMode: g,
+  if (null == j || null == b) return null;
+  let h = null == (e = j.getBackgroundImageUrl) ? true : e.call(j, f),
+    v = (0, d.gc)(h),
+    O = null == (t = j.gradientConfig) ? true : t.call(j, {
+      isDarkMode: f,
       isAndroid: false
     }),
-    x = (0, d.K5)(O, {
+    P = (0, d.K5)(O, {
       colorStops: [0, 12, 100]
     }),
-    P = (0, d.x)(b, x, {
+    x = (0, d.x)(v, P, {
       backgroundSize: "cover, auto",
       backgroundPosition: "right center, 0% 0%"
     });
-  return (0, l.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: m.qD,
-    style: P,
-    children: [(0, l.jsx)("div", {
+    style: x,
+    children: [(0, r.jsx)("div", {
       className: m.my,
-      children: (0, l.jsx)(p.A, {
-        claimableRewards: h,
-        maxRewardImageSrc: y.getImageUrl(g, n),
+      children: (0, r.jsx)(p.A, {
+        claimableRewards: b,
+        maxRewardImageSrc: j.getImageUrl(f, n),
         size: s._3J.SIZE_40,
         imageScaling: 1.25
       })
-    }), (0, l.jsx)(s.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       className: m._M,
       color: "always-white",
-      children: y.desktopBannerText(h.length)
+      children: j.desktopBannerText(b.length)
     })]
   })
 }

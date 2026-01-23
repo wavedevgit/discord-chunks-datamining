@@ -64,8 +64,8 @@ function C(e, t) {
   }), e
 }
 let N = "https://www.paypal.com",
-  R = "isDefault";
-class w extends(r = Chunk64700.PureComponent) {
+  w = "isDefault";
+class R extends(r = Chunk64700.PureComponent) {
   componentWillUnmount() {
     p.h.wait(() => {
       (0, _.ey)(), (0, _.tc)()
@@ -221,9 +221,9 @@ class w extends(r = Chunk64700.PureComponent) {
         }), this.renderCardExpirationSection(), this.renderBillingAddressSection(), (0, i.jsx)("div", {
           className: A.D5,
           children: (0, i.jsx)(f.Checkbox, {
-            value: R,
+            value: w,
             checked: s,
-            onChange: e => this.handleFieldChange(e, R),
+            onChange: e => this.handleFieldChange(e, w),
             label: v.intl.string(v.t.nag9Og),
             labelType: "secondary"
           })
@@ -305,7 +305,7 @@ class w extends(r = Chunk64700.PureComponent) {
     }
   }
 }
-I(w, "defaultProps", {
+I(R, "defaultProps", {
   onDelete: () => {},
   onSubmit: () => {},
   onCancel: () => {}
@@ -313,4 +313,4 @@ I(w, "defaultProps", {
 let P = Chunk311907.Ay.connectStores([Chunk615405.A], () => ({
   updateError: g.A.editSourceError,
   removeError: g.A.removeSourceError
-}))(w)
+}))(R)

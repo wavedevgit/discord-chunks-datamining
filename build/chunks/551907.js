@@ -99,8 +99,8 @@
           T = n(7106),
           C = n(3766),
           N = n(6822),
-          R = n(3036),
-          w = n(78),
+          w = n(3036),
+          R = n(78),
           P = {},
           D = "u" > typeof Uint8Array && T ? T(Uint8Array) : r,
           x = {
@@ -172,8 +172,8 @@
             "%WeakMap%": "u" < typeof WeakMap ? r : WeakMap,
             "%WeakRef%": "u" < typeof WeakRef ? r : WeakRef,
             "%WeakSet%": "u" < typeof WeakSet ? r : WeakSet,
-            "%Function.prototype.call%": w,
-            "%Function.prototype.apply%": R,
+            "%Function.prototype.call%": R,
+            "%Function.prototype.apply%": w,
             "%Object.defineProperty%": v,
             "%Object.getPrototypeOf%": C,
             "%Math.abs%": f,
@@ -261,11 +261,11 @@
           },
           k = n(5049),
           U = n(5215),
-          G = k.call(w, Array.prototype.concat),
-          V = k.call(R, Array.prototype.splice),
-          F = k.call(w, String.prototype.replace),
-          B = k.call(w, String.prototype.slice),
-          H = k.call(w, RegExp.prototype.exec),
+          G = k.call(R, Array.prototype.concat),
+          V = k.call(w, Array.prototype.splice),
+          F = k.call(R, String.prototype.replace),
+          B = k.call(R, String.prototype.slice),
+          H = k.call(R, RegExp.prototype.exec),
           Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           W = /\\(\\)?/g,
           K = function(e, t) {
@@ -517,11 +517,11 @@
           T = "(?:['’](?:D|LL|M|RE|S|T|VE))?",
           C = "(?:" + h + "|\\ud83c[\\udffb-\\udfff])?",
           N = "[\\ufe0e\\ufe0f]?",
-          R = N + C + "(?:\\u200d(?:" + ["[^" + c + "]", b, O].join("|") + ")" + N + C + ")*",
-          w = "(?:" + [g, b, O].join("|") + ")" + R,
+          w = N + C + "(?:\\u200d(?:" + ["[^" + c + "]", b, O].join("|") + ")" + N + C + ")*",
+          R = "(?:" + [g, b, O].join("|") + ")" + w,
           P = RegExp("['’]", "g"),
           D = RegExp(h, "g"),
-          x = RegExp([v + "?" + E + "+" + S + "(?=" + [_, v, "$"].join("|") + ")", I + "+" + T + "(?=" + [_, v + A, "$"].join("|") + ")", v + "?" + A + "+" + S, v + "+" + T, m, w].join("|"), "g"),
+          x = RegExp([v + "?" + E + "+" + S + "(?=" + [_, v, "$"].join("|") + ")", I + "+" + T + "(?=" + [_, v + A, "$"].join("|") + ")", v + "?" + A + "+" + S, v + "+" + T, m, R].join("|"), "g"),
           L = /[a-z][A-Z]|[A-Z]{2,}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
           j = "object" == typeof n.g && n.g && n.g.Object === Object && n.g,
           M = "object" == typeof self && self && self.Object === Object && self,
@@ -820,8 +820,8 @@
           T = Math.floor,
           C = "function" == typeof BigInt ? BigInt.prototype.valueOf : null,
           N = Object.getOwnPropertySymbols,
-          R = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Symbol.prototype.toString : null,
-          w = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
+          w = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Symbol.prototype.toString : null,
+          R = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
           P = "function" == typeof Symbol && Symbol.toStringTag && (Symbol.toStringTag, 1) ? Symbol.toStringTag : null,
           D = Object.prototype.propertyIsEnumerable,
           x = ("function" == typeof Reflect ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(e) {
@@ -877,11 +877,11 @@
         }
 
         function W(e) {
-          if (w) return e && "object" == typeof e && e instanceof Symbol;
+          if (R) return e && "object" == typeof e && e instanceof Symbol;
           if ("symbol" == typeof e) returntrue;
-          if (!e || "object" != typeof e || !R) returnfalse;
+          if (!e || "object" != typeof e || !w) returnfalse;
           try {
-            return R.call(e), true
+            return w.call(e), true
           } catch (e) {}
           returnfalse
         }
@@ -897,7 +897,7 @@
           if (true === t) return "undefined";
           if (null === t) return "null";
           if ("boolean" == typeof t) return t ? "true" : "false";
-          if ("string" == typeof t) return Z(t, l);
+          if ("string" == typeof t) return X(t, l);
           if ("number" == typeof t) {
             if (0 === t) return 1 / 0 / t > 0 ? "0" : "-0";
             var v = String(t);
@@ -922,7 +922,7 @@
             }
           }(l, i);
           if (true === o) o = [];
-          else if (X(o, t) >= 0) return "[Circular]";
+          else if (Z(o, t) >= 0) return "[Circular]";
 
           function K(t, n, r) {
             if (n && (o = S.call(o)).push(n), r) {
@@ -943,8 +943,8 @@
             return "[Function" + (Q ? ": " + Q : " (anonymous)") + "]" + (er.length > 0 ? " { " + I.call(er, ", ") + " }" : "")
           }
           if (W(t)) {
-            var ei = w ? y.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : R.call(t);
-            return "object" != typeof t || w ? ei : $(ei)
+            var ei = R ? y.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : w.call(t);
+            return "object" != typeof t || R ? ei : J(ei)
           }
           if ((M = t) && "object" == typeof M && ("u" > typeof HTMLElement && M instanceof HTMLElement || "string" == typeof M.nodeName && "function" == typeof M.getAttribute)) {
             for (var ea = "<" + O.call(String(t.nodeName)), es = t.attributes || [], eo = 0; eo < es.length; eo++) ea += " " + es[eo].name + "=" + V(F(es[eo].value), "double", l);
@@ -955,7 +955,7 @@
             var el = en(t, K);
             return G && ! function(e) {
               for (var t = 0; t < e.length; t++)
-                if (X(e[t], "\n") >= 0) returnfalse;
+                if (Z(e[t], "\n") >= 0) returnfalse;
               returntrue
             }(el) ? "[" + et(el, G) + "]" : "[ " + I.call(el, ", ") + " ]"
           }
@@ -1019,7 +1019,7 @@
                 return e instanceof WeakMap
               } catch (e) {}
               returnfalse
-            }(t)) return J("WeakMap");
+            }(t)) return $("WeakMap");
           if (function(e) {
               if (!f || !e || "object" != typeof e) returnfalse;
               try {
@@ -1032,30 +1032,30 @@
                 return e instanceof WeakSet
               } catch (e) {}
               returnfalse
-            }(t)) return J("WeakSet");
+            }(t)) return $("WeakSet");
           if (function(e) {
               if (!p || !e || "object" != typeof e) returnfalse;
               try {
                 return p.call(e), true
               } catch (e) {}
               returnfalse
-            }(t)) return J("WeakRef");
+            }(t)) return $("WeakRef");
           if (function(e) {
               return "[object Number]" === q(e) && B(e)
-            }(t)) return $(K(Number(t)));
+            }(t)) return J(K(Number(t)));
           if (function(e) {
               if (!e || "object" != typeof e || !C) returnfalse;
               try {
                 return C.call(e), true
               } catch (e) {}
               returnfalse
-            }(t)) return $(K(C.call(t)));
+            }(t)) return J(K(C.call(t)));
           if (function(e) {
               return "[object Boolean]" === q(e) && B(e)
-            }(t)) return $(_.call(t));
+            }(t)) return J(_.call(t));
           if (function(e) {
               return "[object String]" === q(e) && B(e)
-            }(t)) return $(K(String(t)));
+            }(t)) return J(K(String(t)));
           if ("u" > typeof window && t === window) return "{ [object Window] }";
           if ("u" > typeof globalThis && t === globalThis || true !== n.g && t === n.g) return "{ [object globalThis] }";
           if (! function(e) {
@@ -1082,18 +1082,18 @@
           return h.call(e)
         }
 
-        function X(e, t) {
+        function Z(e, t) {
           if (e.indexOf) return e.indexOf(t);
           for (var n = 0, r = e.length; n < r; n++)
             if (e[n] === t) return n;
           return false
         }
 
-        function Z(e, t) {
+        function X(e, t) {
           if (e.length > t.maxStringLength) {
             var n = e.length - t.maxStringLength,
               r = "... " + n + " more character" + (n > 1 ? "s" : "");
-            return Z(E.call(e, 0, t.maxStringLength), t) + r
+            return X(E.call(e, 0, t.maxStringLength), t) + r
           }
           var i = G[t.quoteStyle || "single"];
           return i.lastIndex = 0, V(y.call(y.call(e, i, "\\$1"), /[\x00-\x1f]/g, Q), "single", t)
@@ -1111,11 +1111,11 @@
           return n ? "\\" + n : "\\x" + (t < 16 ? "0" : "") + b.call(t.toString(16))
         }
 
-        function $(e) {
+        function J(e) {
           return "Object(" + e + ")"
         }
 
-        function J(e) {
+        function $(e) {
           return e + " { ? }"
         }
 
@@ -1137,11 +1137,11 @@
             for (var i = 0; i < e.length; i++) r[i] = z(e, i) ? t(e[i], e) : ""
           }
           var a, s = "function" == typeof N ? N(e) : [];
-          if (w) {
+          if (R) {
             a = {};
             for (var o = 0; o < s.length; o++) a["$" + s[o]] = s[o]
           }
-          for (var l in e) z(e, l) && (n && String(Number(l)) === l && l < e.length || w && a["$" + l] instanceof Symbol || (v.call(/[^\w$]/, l) ? r.push(t(l, e) + ": " + t(e[l], e)) : r.push(l + ": " + t(e[l], e))));
+          for (var l in e) z(e, l) && (n && String(Number(l)) === l && l < e.length || R && a["$" + l] instanceof Symbol || (v.call(/[^\w$]/, l) ? r.push(t(l, e) + ": " + t(e[l], e)) : r.push(l + ": " + t(e[l], e))));
           if ("function" == typeof N)
             for (var c = 0; c < s.length; c++) D.call(e, s[c]) && r.push("[" + t(s[c]) + "]: " + t(e[s[c]], e));
           return r
@@ -1216,11 +1216,11 @@
           },
           _ = {},
           h = function e(t, n, a, s, o, c, d, f, h, m, g, E, y, b, O, v, A, I) {
-            for (var S, T = t, C = I, N = 0, R = false; true !== (C = C.get(_)) && !R;) {
-              var w = C.get(t);
-              if (N += 1, true !== w) {
-                if (w === N) throw RangeError("Cyclic object value");
-                R = true
+            for (var S, T = t, C = I, N = 0, w = false; true !== (C = C.get(_)) && !w;) {
+              var R = C.get(t);
+              if (N += 1, true !== R) {
+                if (R === N) throw RangeError("Cyclic object value");
+                w = true
               }
               true === C.get(_) && (N = 0)
             }
@@ -1596,8 +1596,8 @@
           T = n(7106),
           C = n(3766),
           N = n(6822),
-          R = n(3036),
-          w = n(78),
+          w = n(3036),
+          R = n(78),
           P = {},
           D = "u" > typeof Uint8Array && T ? T(Uint8Array) : r,
           x = {
@@ -1669,8 +1669,8 @@
             "%WeakMap%": "u" < typeof WeakMap ? r : WeakMap,
             "%WeakRef%": "u" < typeof WeakRef ? r : WeakRef,
             "%WeakSet%": "u" < typeof WeakSet ? r : WeakSet,
-            "%Function.prototype.call%": w,
-            "%Function.prototype.apply%": R,
+            "%Function.prototype.call%": R,
+            "%Function.prototype.apply%": w,
             "%Object.defineProperty%": v,
             "%Object.getPrototypeOf%": C,
             "%Math.abs%": f,
@@ -1758,11 +1758,11 @@
           },
           k = n(5049),
           U = n(5215),
-          G = k.call(w, Array.prototype.concat),
-          V = k.call(R, Array.prototype.splice),
-          F = k.call(w, String.prototype.replace),
-          B = k.call(w, String.prototype.slice),
-          H = k.call(w, RegExp.prototype.exec),
+          G = k.call(R, Array.prototype.concat),
+          V = k.call(w, Array.prototype.splice),
+          F = k.call(R, String.prototype.replace),
+          B = k.call(R, String.prototype.slice),
+          H = k.call(R, RegExp.prototype.exec),
           Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           W = /\\(\\)?/g,
           K = function(e, t) {
@@ -1953,8 +1953,8 @@
           T = n(7106),
           C = n(3766),
           N = n(6822),
-          R = n(3036),
-          w = n(78),
+          w = n(3036),
+          R = n(78),
           P = {},
           D = "u" > typeof Uint8Array && T ? T(Uint8Array) : r,
           x = {
@@ -2026,8 +2026,8 @@
             "%WeakMap%": "u" < typeof WeakMap ? r : WeakMap,
             "%WeakRef%": "u" < typeof WeakRef ? r : WeakRef,
             "%WeakSet%": "u" < typeof WeakSet ? r : WeakSet,
-            "%Function.prototype.call%": w,
-            "%Function.prototype.apply%": R,
+            "%Function.prototype.call%": R,
+            "%Function.prototype.apply%": w,
             "%Object.defineProperty%": v,
             "%Object.getPrototypeOf%": C,
             "%Math.abs%": f,
@@ -2115,11 +2115,11 @@
           },
           k = n(5049),
           U = n(5215),
-          G = k.call(w, Array.prototype.concat),
-          V = k.call(R, Array.prototype.splice),
-          F = k.call(w, String.prototype.replace),
-          B = k.call(w, String.prototype.slice),
-          H = k.call(w, RegExp.prototype.exec),
+          G = k.call(R, Array.prototype.concat),
+          V = k.call(w, Array.prototype.splice),
+          F = k.call(R, String.prototype.replace),
+          B = k.call(R, String.prototype.slice),
+          H = k.call(R, RegExp.prototype.exec),
           Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           W = /\\(\\)?/g,
           K = function(e, t) {
@@ -2480,12 +2480,12 @@
         T = true === S ? b : S,
         C = r.sessionToken,
         N = r.styleVariant,
-        R = r.templateId,
-        w = r.templateVersionId,
+        w = r.templateId,
+        R = r.templateVersionId,
         P = r.themeSetId,
         D = r.widgetPadding,
-        x = !(!R && !w),
-        L = null == R ? true : R.startsWith("itmpl_");
+        x = !(!w && !R),
+        L = null == w ? true : w.startsWith("itmpl_");
       if (!x && !g) throw Error("Either templateId/templateVersionId or inquiryId must be specified to start a flow");
       if (x && g) throw Error("Only one of templateId/templateVersionId or inquiryId should be specified to start a flow");
       if (i) {
@@ -2498,9 +2498,9 @@
           "container-id": t,
           "flow-type": n,
           "routing-country": I,
-          "template-id": (L ? null : R) || null,
-          "inquiry-template-id": (L ? R : null) || null,
-          "inquiry-template-version-id": w || null,
+          "template-id": (L ? null : w) || null,
+          "inquiry-template-id": (L ? w : null) || null,
+          "inquiry-template-version-id": R || null,
           environment: o,
           "environment-id": c,
           "iframe-origin": window.location.origin,

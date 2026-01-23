@@ -53,11 +53,11 @@ function I(e) {
   } = e, {
     analyticsLocations: N
   } = (0, c.Ay)(), {
-    id: R
-  } = (0, d.x5)(b.oh.VIDEO_INPUT), w = (0, a.bG)([h.A], () => h.A.isVideoAvailable()), P = p.bm.useSetting();
+    id: w
+  } = (0, d.x5)(b.oh.VIDEO_INPUT), R = (0, a.bG)([h.A], () => h.A.isVideoAvailable()), P = p.bm.useSetting();
   return (0, r.jsxs)(o.BJc, {
     gap: 20,
-    children: [S(R), h.A.isEnabled() ? null : (0, r.jsx)(o.Text, {
+    children: [S(w), h.A.isEnabled() ? null : (0, r.jsx)(o.Text, {
       className: v.u5,
       color: "interactive-text-default",
       variant: "text-sm/normal",
@@ -79,14 +79,14 @@ function I(e) {
         label: n ? true : O.intl.string(O.t.FsQ3OR),
         helperText: !i && (0, g.p)() ? O.intl.format(O.t.aJYgRt, {
           onCameraSettingsClick: () => {
-            null == C || C(), window.open((0, g.i)(R)), m.default.track(E.HAw.SYSTEM_CAMERA_SETTINGS_OPENED, {
+            null == C || C(), window.open((0, g.i)(w)), m.default.track(E.HAw.SYSTEM_CAMERA_SETTINGS_OPENED, {
               location_stack: N
             })
           }
         }) : true,
         deviceType: b.oh.VIDEO_INPUT,
         location: "CameraSettings",
-        isDisabled: !w,
+        isDisabled: !R,
         showAllDevices: true
       })
     }), (0, r.jsx)(f.x, {
@@ -96,7 +96,7 @@ function I(e) {
         onLearnMore: s,
         selectedBackgroundOption: A,
         onSelectBackgroundOption: I,
-        currentDeviceId: R
+        currentDeviceId: w
       })
     })]
   })

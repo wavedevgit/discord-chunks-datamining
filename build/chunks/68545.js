@@ -5,35 +5,35 @@ require.d(exports, {
   PN: () => s,
   Sm: () => i
 }), require("./896048.js"), require("./321073.js");
-var l, Chunk64700 = require("./64700.js"),
-  i = ((l = {})[l.Trick = 0] = "Trick", l[l.Treat = 1] = "Treat", l);
+var r, Chunk64700 = require("./64700.js"),
+  i = ((r = {})[r.Trick = 0] = "Trick", r[r.Treat = 1] = "Treat", r);
 let s = 2;
 
 function a(e, t, n) {
-  let l = r.useRef(Math.random());
-  return r.useMemo(() => {
+  let r = l.useRef(Math.random());
+  return l.useMemo(() => {
     if (null == e || 0 === e.length) return null;
     if (null == t || 0 === t.length) {
       let t = null != n && e.some(e => e.skuId === n.skuId) ? n : e[0];
       return {
-        defaultCategory: Math.floor(l.current * s),
+        defaultCategory: Math.floor(r.current * s),
         defaultHighlightedReward: t
       }
     }
-    let r = [],
+    let l = [],
       i = new Map,
       a = new Map;
     for (let n of t)
       if (n.variants.length >= s)
         for (let t = 0; t < s; t++) {
-          let l = t,
+          let r = t,
             s = n.variants[t];
-          e.some(e => e.skuId === s.skuId) && (a.set(s.skuId, l), i.has(l) || (r.push(l), i.set(l, function(e, t) {
+          e.some(e => e.skuId === s.skuId) && (a.set(s.skuId, r), i.has(r) || (l.push(r), i.set(r, function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
-                var l = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, l)
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
               }
               return n
             })(Object(t)).forEach(function(n) {
@@ -42,17 +42,17 @@ function a(e, t, n) {
           }(function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
-                l = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), l.forEach(function(t) {
-                var l;
-                l = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: l,
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = l
+                }) : e[t] = r
               })
             }
             return e
@@ -60,7 +60,7 @@ function a(e, t, n) {
             name: n.name
           }))))
         }
-    if (0 === r.length) return null;
+    if (0 === l.length) return null;
     if (null != n) {
       let e = a.get(n.skuId);
       if (null != e) return {
@@ -68,7 +68,7 @@ function a(e, t, n) {
         defaultHighlightedReward: n
       }
     }
-    let o = r[Math.floor(l.current * r.length)];
+    let o = l[Math.floor(r.current * l.length)];
     return {
       defaultCategory: o,
       defaultHighlightedReward: i.get(o)

@@ -87,11 +87,11 @@ function m(e, t, n) {
       gap: T,
       experimental_useStack: C,
       disableFocusRingScope: N = false
-    } = h, R = _(h, ["children", "className", "dir", "orientation", "overflow", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack", "disableFocusRingScope"]), [w] = m, {
+    } = h, w = _(h, ["children", "className", "dir", "orientation", "overflow", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack", "disableFocusRingScope"]), [R] = m, {
       scrollerRef: P,
       getScrollerState: D
     } = (0, c.s$)(), x = (0, c.kR)(P, b);
-    i.useImperativeHandle(w, () => d({
+    i.useImperativeHandle(R, () => d({
       getScrollerNode: () => P.current,
       getScrollerState: D
     }, (0, c.cJ)(P, D, x, b)), [P, D, b, x]);
@@ -114,7 +114,7 @@ function m(e, t, n) {
       }),
       style: (0, c.Ze)(S, b, O),
       dir: y
-    }, R), {
+    }, w), {
       children: (0, r.jsxs)(L, {
         containerRef: P,
         children: [g, j]
@@ -128,7 +128,7 @@ function m(e, t, n) {
       }),
       style: (0, c.Ze)(S, b, O),
       dir: y
-    }, R), {
+    }, w), {
       children: (0, r.jsxs)(L, {
         containerRef: P,
         children: [g, j]

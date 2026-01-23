@@ -2,7 +2,7 @@
 /** chunk id: 883600, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk506774 = require("./506774.js"),
@@ -95,7 +95,7 @@ function C(e) {
 function N() {
   E = l.pK.getSetting()
 }
-class R extends(r = Chunk311907.Ay.Store) {
+class w extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(o.default, c.A), this.syncWith([o.default], () => true), this.syncWith([c.A], N);
     let e = a.w.get(g);
@@ -143,8 +143,8 @@ class R extends(r = Chunk311907.Ay.Store) {
     return b.size > 0
   }
 }
-d(R, "displayName", "ChangelogStore");
-let w = new R(Chunk73153.h, {
+d(w, "displayName", "ChangelogStore");
+let R = new w(Chunk73153.h, {
   CHANGE_LOG_LOCK: O,
   CHANGE_LOG_UNLOCK: v,
   CHANGE_LOG_SET_CONFIG: A,

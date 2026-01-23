@@ -68,11 +68,11 @@ let g = e => {
     actions: A,
     onShow: I,
     estimatedTooltipHeight: S = 300
-  } = e, T = u.VD[t].nameUnformattedNitro, C = f.intl.string(T).toLocaleUpperCase(), N = (0, s.A)(t), R = (0, o.I)(t);
+  } = e, T = u.VD[t].nameUnformattedNitro, C = f.intl.string(T).toLocaleUpperCase(), N = (0, s.A)(t), w = (0, o.I)(t);
   (0, i.useEffect)(() => {
-    a.m[a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE](), new Image().src = R
-  }, [R]);
-  let w = (0, i.useCallback)(() => {
+    a.m[a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE](), new Image().src = w
+  }, [w]);
+  let R = (0, i.useCallback)(() => {
       null == n || n(d.i.USER_DISMISS)
     }, [n]),
     P = {
@@ -83,7 +83,7 @@ let g = e => {
         component: a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
         aspectRatio: "6/4",
         props: {
-          src: R,
+          src: w,
           alt: C,
           progressCircleText: b,
           progressCirclePercent: O,
@@ -105,7 +105,7 @@ let g = e => {
     children: [p, (0, r.jsx)(l.A, _({
       targetElementRef: E,
       shouldShow: true,
-      onRequestClose: w,
+      onRequestClose: R,
       align: "right",
       position: "top",
       caretConfig: {

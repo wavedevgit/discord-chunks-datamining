@@ -70,11 +70,11 @@ let k = {
       activity: z,
       embeddedActivity: q
     } = (0, L.u)(b), {
-      primaryColor: X,
-      secondaryColor: Z
-    } = (0, R.A)(null == H ? true : H.src), Q = (0, s.bG)([E.default], () => E.default.locale), {
-      streamPreviewUrl: $,
-      stream: J
+      primaryColor: Z,
+      secondaryColor: X
+    } = (0, w.A)(null == H ? true : H.src), Q = (0, s.bG)([E.default], () => E.default.locale), {
+      streamPreviewUrl: J,
+      stream: $
     } = (0, I.A)(b), {
       displayParticipants: ee,
       participant1: et,
@@ -96,18 +96,18 @@ let k = {
         avatarSrcs: ee.map(e => e.getAvatarURL(y.guild_id, 128)),
         description: t,
         timestamp: (0, S.As)(b, Q),
-        colors: [X, Z],
+        colors: [Z, X],
         channelId: e
       })
-    }, [null == H ? true : H.src, y, ee, b, Q, er, et, en, X, Z, Y]);
+    }, [null == H ? true : H.src, y, ee, b, Q, er, et, en, Z, X, Y]);
     if (null == Y) return null;
     let ef = (0, r.jsx)(P.mG, {
-        location: null == $ ? P.N5.POPOUT : P.N5.STREAMING_POPOUT,
-        children: w.n.map((e, t) => (0, r.jsx)(e, {
+        location: null == J ? P.N5.POPOUT : P.N5.STREAMING_POPOUT,
+        children: R.n.map((e, t) => (0, r.jsx)(e, {
           entry: b
         }, t))
       }),
-      ep = null == J ? (0, r.jsx)(D.BC, {
+      ep = null == $ ? (0, r.jsx)(D.BC, {
         channel: y,
         headerIcons: null == ea ? null : (0, r.jsx)(x.A, {
           onClick: eo,
@@ -129,7 +129,7 @@ let k = {
         badges: ef,
         userDescription: M.t["6oWFUN"],
         entry: b,
-        stream: J,
+        stream: $,
         onUserPopoutClosed: F,
         trackRankingItemInteraction: B
       }),

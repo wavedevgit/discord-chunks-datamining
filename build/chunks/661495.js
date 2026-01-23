@@ -28,7 +28,7 @@ var Chunk557939 = require("./557939.js"),
   };
 module.exports = function(e, t, n, s, _, m, T) {
   l(n, t, s);
-  var C, N, R, w = function(e) {
+  var C, N, w, R = function(e) {
       if (e === _ && j) return j;
       if (!b && e && e in x) return x[e];
       switch (e) {
@@ -47,17 +47,17 @@ module.exports = function(e, t, n, s, _, m, T) {
     D = false,
     x = e.prototype,
     L = x[O] || x["@@iterator"] || _ && x[_],
-    j = !b && L || w(_),
+    j = !b && L || R(_),
     M = "Array" === t && x.entries || L;
   if (M && (C = c(M.call(new e))) !== Object.prototype && C.next && (!a && c(C) !== y && (u ? u(C, y) : o(C[O]) || p(C, O, S)), d(C, P, true, true), a && (h[P] = S)), g && _ === A && L && L.name !== A && (!a && E ? f(x, "name", A) : (D = true, j = function() {
       return i(L, this)
     })), _)
     if (N = {
-        values: w(A),
-        keys: m ? j : w(v),
-        entries: w(I)
+        values: R(A),
+        keys: m ? j : R(v),
+        entries: R(I)
       }, T)
-      for (R in N) !b && !D && R in x || p(x, R, N[R]);
+      for (w in N) !b && !D && w in x || p(x, w, N[w]);
     else r({
       target: t,
       proto: true,

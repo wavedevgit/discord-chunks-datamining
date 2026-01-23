@@ -95,20 +95,20 @@ let v = Chunk64700.memo(function(e) {
       emojiSize: C
     } = e,
     N = T === f.v.BURST,
-    R = (0, p.IN)(E, y, T),
-    w = (0, d.g)(N && null != O ? O : []),
+    w = (0, p.IN)(E, y, T),
+    R = (0, d.g)(N && null != O ? O : []),
     P = i ? h : _,
     D = N ? b : g,
     x = (0, u.x)(D, p.$Z),
     L = {};
-  if (N && null != w) {
+  if (N && null != R) {
     var j;
     let {
       accentColor: e,
       backgroundColor: r,
       opacity: i
-    } = w, a = null != (j = (0, l.xp)(null != r ? r : "", i)) ? j : "";
-    R && (L.borderColor = r), L.background = a, t = e, n = e
+    } = R, a = null != (j = (0, l.xp)(null != r ? r : "", i)) ? j : "";
+    w && (L.borderColor = r), L.background = a, t = e, n = e
   }
   let M = {
     minWidth: x,
@@ -117,7 +117,7 @@ let v = Chunk64700.memo(function(e) {
   };
   return (0, r.jsxs)("div", {
     className: s()(P.reaction, P.reactionInner, m, {
-      [P.reactionMe]: R,
+      [P.reactionMe]: w,
       [P.reactionReadOnly]: v && !A && !S && !I
     }),
     style: L,

@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 439075, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => j
@@ -30,7 +30,7 @@ function v(e) {
     rowIndex: j,
     impressionRef: _,
     sourceQuestContent: y
-  } = e, [A, C] = l.useState(false), [S, O] = l.useState([]), E = (0, c.aC)(r), T = l.useMemo(() => (0, d.vv)(r), [r]), N = (0, s.u0)(), w = l.useCallback(() => {
+  } = e, [A, C] = l.useState(false), [S, O] = l.useState([]), T = (0, c.aC)(r), E = l.useMemo(() => (0, d.vv)(r), [r]), N = (0, s.u0)(), w = l.useCallback(() => {
     C(true), N({
       questId: r.id,
       event: f.HAw.QUEST_HOVER,
@@ -40,8 +40,8 @@ function v(e) {
         content_position: v
       },
       sourceQuestContent: y
-    }), T && (0, m.l9)()
-  }, [N, r.id, u, T, y, v]), I = l.useCallback(() => {
+    }), E && (0, m.l9)()
+  }, [N, r.id, u, E, y, v]), I = l.useCallback(() => {
     C(false), N({
       questId: r.id,
       event: f.HAw.QUEST_HOVER_OFF,
@@ -82,7 +82,7 @@ function v(e) {
       quest: r,
       isHovering: A,
       errorHints: S,
-      warningHints: E,
+      warningHints: T,
       isVisibleInViewport: R,
       sourceQuestContent: y
     }), (0, a.jsx)(g.A, {

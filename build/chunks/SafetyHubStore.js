@@ -39,8 +39,8 @@ let d = {},
   T = "",
   C = 0,
   N = null,
-  R = false,
-  w = Chunk239093.qN.NONE,
+  w = false,
+  R = Chunk239093.qN.NONE,
   P = null;
 
 function D(e) {
@@ -137,57 +137,57 @@ function Y(e) {
 
 function W(e) {
   let {} = e;
-  T = "", N = null, R = true
+  T = "", N = null, w = true
 }
 
 function K(e) {
   let {
     verificationWebviewUrl: t
   } = e;
-  T = t, N = null, R = false
+  T = t, N = null, w = false
 }
 
 function z(e) {
   let {
     error: t
   } = e;
-  T = "", N = t, R = false
+  T = "", N = t, w = false
 }
 
 function q(e) {
   let {} = e;
-  T = "", N = null, R = false
-}
-
-function X(e) {
-  let {} = e;
-  for (let e in w = c.qN.LOADING, d) d[e].is_coppa && (d[e].appeal_status = {
-    status: l.Wi.REVIEW_PENDING
-  })
+  T = "", N = null, w = false
 }
 
 function Z(e) {
   let {} = e;
-  w = c.qN.LOADING, P = null
+  for (let e in R = c.qN.LOADING, d) d[e].is_coppa && (d[e].appeal_status = {
+    status: l.Wi.REVIEW_PENDING
+  })
+}
+
+function X(e) {
+  let {} = e;
+  R = c.qN.LOADING, P = null
 }
 
 function Q(e) {
   let {} = e;
-  w = c.qN.LOADING, P = null, C += 1
-}
-
-function $(e) {
-  let {
-    success: t
-  } = e;
-  w = t ? c.qN.SUCCESS : C < c.ti ? c.qN.LOADING : c.qN.FAILURE, P = null
+  R = c.qN.LOADING, P = null, C += 1
 }
 
 function J(e) {
   let {
+    success: t
+  } = e;
+  R = t ? c.qN.SUCCESS : C < c.ti ? c.qN.LOADING : c.qN.FAILURE, P = null
+}
+
+function $(e) {
+  let {
     error: t
   } = e;
-  w = c.qN.ERROR, P = t
+  R = c.qN.ERROR, P = t
 }
 
 function ee() {
@@ -251,10 +251,10 @@ class et extends(r = Chunk311907.Ay.Store) {
     return N
   }
   getIsLoadingAgeVerification() {
-    return R
+    return w
   }
   getAgeCheckStatus() {
-    return w
+    return R
   }
   getAgeCheckError() {
     return P
@@ -283,10 +283,10 @@ let en = new et(Chunk73153.h, {
   SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE: z,
   SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN: q,
   SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE: q,
-  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS: X,
-  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL: Z,
+  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS: Z,
+  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL: X,
   SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START: Q,
-  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: $,
-  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE: J,
+  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: J,
+  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE: $,
   LOGOUT: ee
 })

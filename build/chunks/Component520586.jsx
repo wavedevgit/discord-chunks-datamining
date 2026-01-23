@@ -119,11 +119,11 @@ function U(e, t) {
     case o.I5.CONTENT_INVENTORY_ENTRY:
       return (0, r.jsx)(C.A, L({}, e), t);
     case o.I5.CONTAINER:
-      return (0, r.jsx)(R.A, M(L({}, e), {
+      return (0, r.jsx)(w.A, M(L({}, e), {
         renderComponents: k
       }), t);
     case o.I5.LABEL:
-      return (0, r.jsx)(w.A, M(L({}, e), {
+      return (0, r.jsx)(R.A, M(L({}, e), {
         renderComponent: U
       }), t);
     case o.I5.FILE_UPLOAD:

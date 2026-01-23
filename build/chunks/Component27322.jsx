@@ -42,7 +42,7 @@ let b = (0, Chunk353640.v)(e => ({
     }), I = (0, h.JZ)(o.M.CLOUD_PLAY_NEW_BADGE), S = null != A && !I && n, {
       activeEntryId: T,
       setActiveEntryId: C
-    } = b(), N = T === t.id, R = S && N ? [o.M.CLOUD_PLAY_POPOVER] : [], [w, P] = (0, m.kn)(R), D = w === o.M.CLOUD_PLAY_POPOVER;
+    } = b(), N = T === t.id, w = S && N ? [o.M.CLOUD_PLAY_POPOVER] : [], [R, P] = (0, m.kn)(w), D = R === o.M.CLOUD_PLAY_POPOVER;
     i.useEffect(() => {
       S && null === T && C(t.id)
     }, [T, S, t.id, C]);

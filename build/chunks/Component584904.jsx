@@ -89,11 +89,11 @@ let A = Chunk64700.forwardRef(function(e, t) {
   } = n, T = O(n, ["children", "className", "profileModalScrollTarget", "onAction", "onClose", "aria-label", "aria-labelledby"]), [C] = i, {
     themeType: N
   } = (0, f.E)(), {
-    analyticsLocations: R
+    analyticsLocations: w
   } = (0, l.Ay)(), {
-    context: w
+    context: R
   } = (0, c.NJ)();
-  return N === _.d.MODAL || N === _.d.MODAL_V2 || (null == w ? true : w.userId) == null ? (0, r.jsx)("article", {
+  return N === _.d.MODAL || N === _.d.MODAL_V2 || (null == R ? true : R.userId) == null ? (0, r.jsx)("article", {
     "aria-label": I,
     "aria-labelledby": S,
     children: (0, r.jsx)(d.A.Overlay, b(E({
@@ -115,9 +115,9 @@ let A = Chunk64700.forwardRef(function(e, t) {
           action: "PRESS_CARD"
         }), (0, u.openUserProfileModal)(E({
           tabSection: p.RP.ACTIVITY,
-          sourceAnalyticsLocations: R,
+          sourceAnalyticsLocations: w,
           scrollTarget: y
-        }, w)), null == A || A()
+        }, R)), null == A || A()
       },
       children: (0, r.jsx)(d.A.Overlay, b(E({
         ref: C,

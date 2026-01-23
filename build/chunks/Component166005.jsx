@@ -2,7 +2,7 @@
 /** chunk id: 166005, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => $,
+  Q: () => J,
   Y: () => K
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
@@ -159,11 +159,11 @@ function V(e) {
   } = c, d = M(c, ["tabIndex"]), _ = (0, g.GV)(), h = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), null == a || a(t)
   }, [a, t]), m = n ? (0, r.jsx)(f.m_, {
-    text: w.intl.string(w.t["T+3Adg"]),
+    text: R.intl.string(R.t["T+3Adg"]),
     spacing: 4,
     ariaHidden: true,
     children: (0, r.jsx)(p.DUT, {
-      "aria-label": w.intl.formatToPlainString(w.t.QrxwhY, {
+      "aria-label": R.intl.formatToPlainString(R.t.QrxwhY, {
         roleName: t.name
       }),
       onClick: h,
@@ -198,10 +198,10 @@ function F(e) {
   } = e, a = i.useMemo(() => "roles-".concat((0, o.A)()), []), s = (0, c.Ay)({
     id: a,
     isEnabled: true,
-    scrollToStart: R.js$,
-    scrollToEnd: R.js$,
+    scrollToStart: w.js$,
+    scrollToEnd: w.js$,
     wrap: true
-  }), u = w.intl.formatToPlainString(w.t.PCs0oo, {
+  }), u = R.intl.formatToPlainString(R.t.PCs0oo, {
     numRoles: t
   });
   return (0, r.jsx)(l.hD, {
@@ -236,7 +236,7 @@ function B(e) {
     let r = I.Ay.getMember(a.id, n),
       i = null != (t = null == r ? true : r.roles) ? t : [];
     i.includes(e) || (i = [...i, e]), y.A.updateMemberRoles(a.id, n, i, [e], [])
-  }, [a.id, n, l]), R = e => !(0, A.Oy)(e) && !e.managed && S.A.isRoleHigher(a, _, e) && false === g.indexOf(e.id);
+  }, [a.id, n, l]), w = e => !(0, A.Oy)(e) && !e.managed && S.A.isRoleHigher(a, _, e) && false === g.indexOf(e.id);
   return (0, r.jsx)(p.YNO, {
     targetElementRef: O,
     position: "bottom",
@@ -248,18 +248,18 @@ function B(e) {
       return (0, r.jsx)(N.A, {
         guild: a,
         roleStyle: E,
-        roleFilter: R,
+        roleFilter: w,
         onSelect: v,
         onClose: t
       })
     },
     children: e => (0, r.jsx)(f.m_, {
-      text: w.intl.string(w.t.e3Wlyw),
+      text: R.intl.string(R.t.e3Wlyw),
       shouldShow: !o,
       ariaHidden: true,
       children: (0, r.jsxs)(p.DUT, j(x({
         innerRef: O,
-        "aria-label": w.intl.string(w.t.e3Wlyw),
+        "aria-label": R.intl.string(R.t.e3Wlyw),
         className: s()(P.c9, {
           [P.MS]: o
         })
@@ -270,7 +270,7 @@ function B(e) {
         }), o && (0, r.jsx)(p.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: w.intl.string(w.t.e3Wlyw)
+          children: R.intl.string(R.t.e3Wlyw)
         })]
       }))
     })
@@ -284,7 +284,7 @@ function H(e) {
     roles: r,
     allowEditing: a,
     readOnly: s
-  } = e, o = (0, u.bG)([T.default], () => T.default.getCurrentUser()), l = v.Q_.useSetting(), [c] = (0, u.yK)([S.A], () => [S.A.can(R.xBc.MANAGE_ROLES, n), S.A.getGuildVersion(n.id)]), d = null != o ? C.HJ(n, o.id) : null, f = i.useMemo(() => {
+  } = e, o = (0, u.bG)([T.default], () => T.default.getCurrentUser()), l = v.Q_.useSetting(), [c] = (0, u.yK)([S.A], () => [S.A.can(w.xBc.MANAGE_ROLES, n), S.A.getGuildVersion(n.id)]), d = null != o ? C.HJ(n, o.id) : null, f = i.useMemo(() => {
     let e = new Set;
     return s || !a || r.forEach(r => {
       var i;
@@ -317,7 +317,7 @@ function W() {
       } = await n.e("15687").then(n.bind(n, 646938));
       return n => (0, r.jsx)(e, j(x({}, n), {
         id: t,
-        label: w.intl.string(w.t.sMsaLg)
+        label: R.intl.string(R.t.sMsaLg)
       }))
     })
   }, [])
@@ -366,7 +366,7 @@ function K(e) {
       }, e.id)), d ? E() : null]
     }) : (0, r.jsx)("ul", {
       className: P.nt,
-      "aria-label": w.intl.string(w.t["LPJmL/"]),
+      "aria-label": R.intl.string(R.t["LPJmL/"]),
       children: i.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(G, {
           role: e,
@@ -383,7 +383,7 @@ function z(e) {
     overflowCount: n,
     onClick: i,
     buttonRef: a
-  } = e, o = t ? w.intl.string(w.t.XnXtCt) : w.intl.string(w.t.DY6n4q), l = t ? w.intl.string(w.t.XnXtCt) : w.intl.formatToPlainString(w.t.zr0Y5R, {
+  } = e, o = t ? R.intl.string(R.t.XnXtCt) : R.intl.string(R.t.DY6n4q), l = t ? R.intl.string(R.t.XnXtCt) : R.intl.formatToPlainString(R.t.zr0Y5R, {
     numberOfItems: n
   });
   return (0, r.jsx)(f.m_, {
@@ -408,8 +408,8 @@ function z(e) {
   })
 }
 let q = 4,
-  X = 268,
-  Z = 2,
+  Z = 268,
+  X = 2,
   Q = e => {
     if (null == e) return 0;
     let {
@@ -418,7 +418,7 @@ let q = 4,
     return t > 0 ? t + q : 0
   };
 
-function $(e) {
+function J(e) {
   let {
     userId: t,
     guild: n,
@@ -443,17 +443,17 @@ function $(e) {
     readOnly: p
   }), E = _ || h || m, y = Y(t, n.id, c), b = W(), O = i.useRef({}), v = (e, t) => {
     null != t ? O.current[e] = t : delete O.current[e]
-  }, [A, I] = i.useState(a), [S, T] = i.useState(X), [C, N] = i.useState(false), R = i.useRef(null), D = i.useRef(null), x = i.useRef(0);
+  }, [A, I] = i.useState(a), [S, T] = i.useState(Z), [C, N] = i.useState(false), w = i.useRef(null), D = i.useRef(null), x = i.useRef(0);
   i.useLayoutEffect(() => {
     x.current = 0
   }, [a]), i.useLayoutEffect(() => {
     if (C) return;
-    let e = Q(R.current),
+    let e = Q(w.current),
       t = Q(D.current),
       n = [],
-      r = X - e - t;
-    for (let e = 0; e < Z; e++) {
-      let t = e === Z - 1 ? r : X;
+      r = Z - e - t;
+    for (let e = 0; e < X; e++) {
+      let t = e === X - 1 ? r : Z;
       for (let e = 0, r = n.length; r < a.length; r++) {
         let i = a[r],
           s = O.current[i.id];
@@ -476,7 +476,7 @@ function $(e) {
       isExpanded: C,
       overflowCount: a.length - A.length,
       onClick: j,
-      buttonRef: R
+      buttonRef: w
     }) : null,
     k = () => (0, r.jsx)(B, {
       buttonRef: D,
@@ -500,20 +500,20 @@ function $(e) {
         itemRef: t => v(e.id, t),
         onContextMenu: m ? t => b(t, e.id) : true,
         style: {
-          maxWidth: C || t !== A.length - 1 ? X : S
+          maxWidth: C || t !== A.length - 1 ? Z : S
         }
       }, e.id)), M(), _ ? k() : null]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("ul", {
         className: P.nt,
-        "aria-label": w.intl.string(w.t["LPJmL/"]),
+        "aria-label": R.intl.string(R.t["LPJmL/"]),
         children: L.map((e, t) => (0, r.jsx)("li", {
           children: (0, r.jsx)(G, {
             itemRef: t => v(e.id, t),
             role: e,
             guildId: n.id,
             style: {
-              maxWidth: C || t !== A.length - 1 ? X : S
+              maxWidth: C || t !== A.length - 1 ? Z : S
             }
           })
         }, e.id))

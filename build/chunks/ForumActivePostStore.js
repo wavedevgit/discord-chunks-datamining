@@ -38,8 +38,8 @@ let O = [],
   T = Chunk392421.n.MATCH_SOME,
   C = 0,
   N = [],
-  R = false,
-  w = [],
+  w = false,
+  R = [],
   P = s().chain(O),
   D = s().chain(O),
   x = new Set,
@@ -74,7 +74,7 @@ function U(e, t) {
 }
 
 function G() {
-  N = [], r = null, A = null, I = new Set, S = l.T.LATEST_ACTIVITY, T = o.n.MATCH_SOME, C = 0, w = [], P = s().chain(O), D = s().chain(O), L.clear(), x.clear()
+  N = [], r = null, A = null, I = new Set, S = l.T.LATEST_ACTIVITY, T = o.n.MATCH_SOME, C = 0, R = [], P = s().chain(O), D = s().chain(O), L.clear(), x.clear()
 }
 
 function V() {
@@ -99,12 +99,12 @@ function F(e) {
 function B(e) {
   let t = h.A.getChannel(A);
   if (null == t) return;
-  (null == e ? true : e.refreshThreadIds) && (w = Object.values(f.A.getThreadsForParent(t.guild_id, t.id)).map(e => {
+  (null == e ? true : e.refreshThreadIds) && (R = Object.values(f.A.getThreadsForParent(t.guild_id, t.id)).map(e => {
     let {
       id: t
     } = e;
     return t
-  }), C = 0, R = true), 0 !== x.size && (w = w.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (w = Array.from(new Set([...w, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = s().chain(w).sort(k(l.T.LATEST_ACTIVITY)), P = s().chain(w).sort(k(l.T.CREATION_DATE)));
+  }), C = 0, w = true), 0 !== x.size && (R = R.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (R = Array.from(new Set([...R, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = s().chain(R).sort(k(l.T.LATEST_ACTIVITY)), P = s().chain(R).sort(k(l.T.CREATION_DATE)));
   let n = (S === l.T.LATEST_ACTIVITY ? D : P).value(),
     i = (N = 0 === I.size ? n : n.filter(U(I, T))).find(e => M(e));
   r = null == i ? null : i
@@ -176,14 +176,14 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Z(e) {
   let {
     channelId: t
   } = e;
   if (null == t || t !== A) returnfalse;
-  R = false
+  w = false
 }
-class Z extends(i = Chunk311907.Ay.Store) {
+class X extends(i = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(f.A, _.default, h.A, m.Ay, g.A, p.A)
   }
@@ -191,7 +191,7 @@ class Z extends(i = Chunk311907.Ay.Store) {
     return C
   }
   getCanAckThreads() {
-    return R
+    return w
   }
   getThreadIds(e, t, n, r) {
     let i = e !== A,
@@ -215,8 +215,8 @@ class Z extends(i = Chunk311907.Ay.Store) {
     return r
   }
 }
-b(Z, "displayName", "ForumActivePostStore");
-let Q = new Z(Chunk73153.h, {
+b(X, "displayName", "ForumActivePostStore");
+let Q = new X(Chunk73153.h, {
   CONNECTION_OPEN: V,
   OVERLAY_INITIALIZE: V,
   GUILD_CREATE: V,
@@ -227,5 +227,5 @@ let Q = new Z(Chunk73153.h, {
   THREAD_UPDATE: Y,
   THREAD_DELETE: K,
   RESORT_THREADS: q,
-  CHANNEL_ACK: X
+  CHANNEL_ACK: Z
 })

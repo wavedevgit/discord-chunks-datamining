@@ -1,6 +1,5 @@
-/** Chunk was on 59275 **/
+/** Chunk was on 77313 **/
 /** chunk id: 933122, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   q: "badge_dd79c2"
 }

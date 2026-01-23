@@ -128,7 +128,7 @@ function T(e) {
 function C(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : I(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.zY.KEYBOARD_KEY,
-    r = R(e, t, n);
+    r = w(e, t, n);
   if (null != r) return r;
   let i = (0, u.Q_)(e);
   return null != i ? i.keyCode : null
@@ -139,7 +139,7 @@ function N(e) {
   return "pause" === t || "break" === t ? "pause/break" : t
 }
 
-function R(e) {
+function w(e) {
   let t, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : I(),
     r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.zY.KEYBOARD_KEY;
   if (null == e) return null;
@@ -171,7 +171,7 @@ function R(e) {
   }
   return null != t ? t : null
 }(0, Chunk723702.isMac)() || (b["223"] = "`"), Object.freeze(b);
-let w = [
+let R = [
     ["META", "⌘"],
     ["CMD", "⌘"],
     ["RIGHT META", "RIGHT ⌘"],
@@ -198,12 +198,12 @@ let w = [
     ["SPACE", "␣"]
   ],
   P = e => {
-    for (let [t, n] of w)
+    for (let [t, n] of R)
       if (t === e.toUpperCase()) return n;
     return e
   },
   D = e => {
-    for (let [t, n] of w)
+    for (let [t, n] of R)
       if (n === e.toUpperCase()) return t.toLowerCase();
     return e
   },

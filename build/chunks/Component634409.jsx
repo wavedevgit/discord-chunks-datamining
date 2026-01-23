@@ -32,7 +32,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk183959 = require("./183959.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,7 +48,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -58,7 +58,7 @@ function D(e) {
   var t;
   let {
     user: n,
-    guildId: w,
+    guildId: R,
     channelId: D,
     messageId: x,
     roleId: L,
@@ -69,12 +69,12 @@ function D(e) {
     newAnalyticsLocations: G = [],
     disableAutoFocus: V = false,
     onClickContainer: F
-  } = e, B = (0, m.Ay)(n.id, w), H = (0, d.aL)(), {
+  } = e, B = (0, m.Ay)(n.id, R), H = (0, d.aL)(), {
     analyticsLocations: Y
   } = (0, o.Ay)([...G, s.A.USER_PROFILE_POPOUT]), W = (0, _.pb)({
     layout: "POPOUT",
     userId: n.id,
-    guildId: w,
+    guildId: R,
     channelId: D,
     messageId: x,
     roleId: L
@@ -88,8 +88,8 @@ function D(e) {
         hideRestrictedProfile: true
       }, W))
     },
-    X = !U && (0, l.A)(n.id),
-    Z = () => X ? (0, r.jsx)(a.Drp, {
+    Z = !U && (0, l.A)(n.id),
+    X = () => Z ? (0, r.jsx)(a.Drp, {
       id: "view-profile",
       label: N.intl.string(N.t["+Xp3hq"]),
       action: () => {
@@ -100,8 +100,8 @@ function D(e) {
       }
     }) : null,
     Q = V ? "div" : a.lGe,
-    $ = (0, c.GV)(),
-    J = p.Ay.useName(w, D, n);
+    J = (0, c.GV)(),
+    $ = p.Ay.useName(R, D, n);
   return (0, r.jsx)(o.f5, {
     value: Y,
     children: (0, r.jsx)(_.of, {
@@ -112,13 +112,13 @@ function D(e) {
       isLoaded: null == B ? true : B.isLoaded,
       children: (0, r.jsxs)(Q, {
         ref: K,
-        "aria-labelledby": $,
+        "aria-labelledby": J,
         onClick: F,
         children: [(0, r.jsx)(a.AC4, {
           children: (0, r.jsx)(a.H, {
-            id: $,
+            id: J,
             children: N.intl.format(N.t.KRe1Fk, {
-              name: J
+              name: $
             })
           })
         }), (0, r.jsxs)(v.A, {
@@ -128,31 +128,31 @@ function D(e) {
           children: [(0, r.jsx)(S.A, {
             children: (0, r.jsx)(I.A, {
               user: n,
-              viewProfileItem: Z()
+              viewProfileItem: X()
             })
           }), (0, r.jsxs)("div", {
-            className: R.wx,
+            className: w.wx,
             children: [(0, r.jsx)(b.A, {
               user: n,
               displayProfile: B,
-              guildId: w,
+              guildId: R,
               themeType: C.d.POPOUT
             }), (0, r.jsx)(E.A, {
               user: n,
               displayProfile: B,
-              guildId: w,
+              guildId: R,
               channelId: D,
               themeType: C.d.POPOUT,
-              onOpenProfile: X ? q : true
+              onOpenProfile: Z ? q : true
             })]
           }), (0, r.jsxs)(a.HOs, {
             fade: true,
-            className: R.rf,
+            className: w.rf,
             children: [(0, r.jsx)(A.A, {
               user: n,
-              guildId: w,
-              nickname: p.Ay.getName(w, D, n),
-              onOpenProfile: X ? q : true,
+              guildId: R,
+              nickname: p.Ay.getName(R, D, n),
+              onOpenProfile: Z ? q : true,
               tags: (0, r.jsx)(y.A, {
                 displayProfile: B,
                 themeType: C.d.POPOUT,
@@ -165,7 +165,7 @@ function D(e) {
               textColor: "text-strong"
             })]
           }), (0, r.jsx)("div", {
-            className: R.qr
+            className: w.qr
           })]
         }), (null == B ? true : B.profileEffect) != null && (0, r.jsx)(f.A, {
           skuId: null == B || null == (t = B.profileEffect) ? true : t.skuId,

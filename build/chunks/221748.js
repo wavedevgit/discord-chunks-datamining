@@ -33,11 +33,11 @@ var Chunk446474 = require("./446474.js"),
   if (T) return T.lastIndex = A.lastIndex, t = r(h, T, S), A.lastIndex = T.lastIndex, t;
   var C = I.groups,
     N = O && A.sticky,
-    R = r(s, A),
-    w = A.source,
+    w = r(s, A),
+    R = A.source,
     P = 0,
     D = S;
-  if (N && (false === g(R = E(R, "y", ""), "g") && (R += "g"), D = y(S, A.lastIndex), A.lastIndex > 0 && (!A.multiline || A.multiline && "\n" !== m(S, A.lastIndex - 1)) && (w = "(?: " + w + ")", D = " " + D, P++), n = RegExp("^(?:" + w + ")", R)), v && (n = RegExp("^" + w + "$(?!\\s)", R)), b && (i = A.lastIndex), o = r(_, N ? n : A, D), N ? o ? (o.input = y(o.input, P), o[0] = y(o[0], P), o.index = A.lastIndex, A.lastIndex += o[0].length) : A.lastIndex = 0 : b && o && (A.lastIndex = A.global ? o.index + o[0].length : i), v && o && o.length > 1 && r(p, o[0], n, function() {
+  if (N && (false === g(w = E(w, "y", ""), "g") && (w += "g"), D = y(S, A.lastIndex), A.lastIndex > 0 && (!A.multiline || A.multiline && "\n" !== m(S, A.lastIndex - 1)) && (R = "(?: " + R + ")", D = " " + D, P++), n = RegExp("^(?:" + R + ")", w)), v && (n = RegExp("^" + R + "$(?!\\s)", w)), b && (i = A.lastIndex), o = r(_, N ? n : A, D), N ? o ? (o.input = y(o.input, P), o[0] = y(o[0], P), o.index = A.lastIndex, A.lastIndex += o[0].length) : A.lastIndex = 0 : b && o && (A.lastIndex = A.global ? o.index + o[0].length : i), v && o && o.length > 1 && r(p, o[0], n, function() {
       for (l = 1; l < arguments.length - 2; l++) true === arguments[l] && (o[l] = true)
     }), o && C)
     for (l = 0, o.groups = d = c(null); l < C.length; l++) d[(f = C[l])[0]] = o[f[1]];

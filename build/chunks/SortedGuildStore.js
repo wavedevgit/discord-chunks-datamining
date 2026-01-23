@@ -95,13 +95,13 @@ function N() {
   return C(null != (e = d.A.getGuildFolders()) ? e : [], null != (t = null == (n = d.A.settings.guildFolders) ? true : n.guildPositions) ? t : [])
 }
 
-function R() {
+function w() {
   var e, t;
   let n = d.A.getGuildFolders();
   return !(null != r && a()(r, n)) && C(null != (r = n) ? r : [], null != (e = null == (t = d.A.settings.guildFolders) ? true : t.guildPositions) ? e : [])
 }
 
-function w(e) {
+function R(e) {
   let {
     sourceId: t,
     targetId: n,
@@ -260,8 +260,8 @@ class H extends Chunk536802.A {
       GUILD_CREATE: N,
       GUILD_DELETE: N,
       GUILD_MEMBER_ADD: L,
-      USER_SETTINGS_PROTO_UPDATE: R,
-      GUILD_MOVE_BY_ID: w,
+      USER_SETTINGS_PROTO_UPDATE: w,
+      GUILD_MOVE_BY_ID: R,
       GUILD_FOLDER_CREATE_LOCAL: P,
       GUILD_FOLDER_EDIT_LOCAL: D,
       GUILD_FOLDER_DELETE_LOCAL: x,

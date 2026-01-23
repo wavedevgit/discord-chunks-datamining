@@ -4,9 +4,9 @@
 require.d(exports, {
   AZ: () => et,
   Ay: () => er,
-  Fd: () => $,
+  Fd: () => J,
   W$: () => ee,
-  d6: () => J,
+  d6: () => $,
   ej: () => g
 }), require("./321073.js"), require("./896048.js");
 var r, Chunk735438 = require("./735438.js"),
@@ -73,7 +73,7 @@ function E(e) {
   let {
     id: t,
     scheduled_start_time: n
-  } = e, r = $(e) ? "\0" : "\x01";
+  } = e, r = J(e) ? "\0" : "\x01";
   return "".concat(r, "-").concat(new Date(n).getTime(), "-").concat(t)
 }
 let y = e => {
@@ -82,7 +82,7 @@ let y = e => {
       entity_id: n,
       channel_id: r
     } = e, i = [t];
-    return null != n && i.push(n), i.push(g.GUILD_EVENT(t)), null != r && i.push(g.CHANNEL_EVENT(r)), $(e) && (i.push(g.EVENT_ACTIVE), i.push(g.GUILD_EVENT_ACTIVE(t)), null != r && i.push(g.CHANNEL_EVENT_ACTIVE(r))), J(e) && (i.push(g.EVENT_UPCOMING), i.push(g.GUILD_EVENT_UPCOMING(t)), null != r && i.push(g.CHANNEL_EVENT_UPCOMING(r))), i
+    return null != n && i.push(n), i.push(g.GUILD_EVENT(t)), null != r && i.push(g.CHANNEL_EVENT(r)), J(e) && (i.push(g.EVENT_ACTIVE), i.push(g.GUILD_EVENT_ACTIVE(t)), null != r && i.push(g.CHANNEL_EVENT_ACTIVE(r))), $(e) && (i.push(g.EVENT_UPCOMING), i.push(g.GUILD_EVENT_UPCOMING(t)), null != r && i.push(g.CHANNEL_EVENT_UPCOMING(r))), i
   },
   b = new Chunk713402.J(y, E),
   O = 0,
@@ -104,7 +104,7 @@ function N(e) {
   return null != e ? e : A
 }
 
-function R(e) {
+function w(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     r = e.guild_scheduled_event_id;
@@ -113,7 +113,7 @@ function R(e) {
   null == I[r][i] && (I[r][i] = {}), I[r][i][e.user_id] = e, t && D(e), n && (O += 1)
 }
 
-function w(e) {
+function R(e) {
   var t, n, r, i;
   let a = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     s = N(e.guild_scheduled_event_exception_id),
@@ -234,14 +234,14 @@ function W(e) {
   let {
     guildScheduledEventUsers: t
   } = e;
-  return t.forEach(e => R(e, false, false)), O += 1, true
+  return t.forEach(e => w(e, false, false)), O += 1, true
 }
 
 function K(e) {
   let {
     guildScheduledEventUsers: t
   } = e;
-  return t.forEach(e => R(e, false, false)), O += 1, true
+  return t.forEach(e => w(e, false, false)), O += 1, true
 }
 
 function z(e) {
@@ -253,9 +253,9 @@ function z(e) {
     guildEventExceptionId: s,
     response: o
   } = e, l = N(s), c = null == (n = I[i]) || null == (t = n[l]) ? true : t[r];
-  null != c && w(c, false);
+  null != c && R(c, false);
   let d = u.Ay.getMember(a, r);
-  return R({
+  return w({
     user_id: r,
     guild_scheduled_event_id: i,
     member: null != d ? d : true,
@@ -271,7 +271,7 @@ function q(e) {
     guildEventExceptionId: r,
     response: i
   } = e;
-  w({
+  R({
     user_id: t,
     guild_scheduled_event_id: n,
     guild_scheduled_event_exception_id: r,
@@ -279,7 +279,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Z(e) {
   let {
     eventId: t,
     counts: n
@@ -289,7 +289,7 @@ function X(e) {
   })
 }
 
-function Z() {
+function X() {
   return b.clear(), true
 }
 
@@ -300,11 +300,11 @@ function Q(e) {
   return null != n && (T(n), true)
 }
 
-function $(e) {
+function J(e) {
   return null != e && (null == e ? true : e.status) === f.XG.ACTIVE
 }
 
-function J(e) {
+function $(e) {
   return !f.lV.has(e.status)
 }
 
@@ -362,7 +362,7 @@ class en extends(r = Chunk311907.Ay.Store) {
     return (null == (n = S[e]) ? true : n[r]) != null
   }
   isActive(e) {
-    return null != e && $(b.get(e))
+    return null != e && J(b.get(e))
   }
   getActiveEventByChannel(e) {
     if (null != e) return this.getGuildScheduledEventsByIndex(g.CHANNEL_EVENT_ACTIVE(e))[0]
@@ -388,11 +388,11 @@ let er = new en(Chunk73153.h, {
   GUILD_SCHEDULED_EVENT_USER_REMOVE: q,
   GUILD_SCHEDULED_EVENT_RSVPS_FETCH_SUCESS: W,
   GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: K,
-  GUILD_SCHEDULED_EVENT_USER_COUNTS_FETCH_SUCCESS: X,
+  GUILD_SCHEDULED_EVENT_USER_COUNTS_FETCH_SUCCESS: Z,
   INVITE_RESOLVE_SUCCESS: Q,
   GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: B,
   GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: B,
   GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: H,
   GUILD_SCHEDULED_EVENT_EXCEPTIONS_DELETE: Y,
-  LOGOUT: Z
+  LOGOUT: X
 })

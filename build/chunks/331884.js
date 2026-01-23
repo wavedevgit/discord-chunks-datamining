@@ -1,13 +1,14 @@
-/** Chunk was on 65599 **/
-/** chunk id: 331884, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 331884, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  i: () => s
+  i: () => o
 });
 var Chunk284009 = require("./284009.js"),
-  l = require.n(Chunk284009),
+  i = require.n(Chunk284009),
   Chunk311907 = require("./311907.js"),
   Chunk287809 = require("./287809.js");
-let s = () => {
-  let e = (0, r.bG)([i.default], () => i.default.getCurrentUser());
-  return l()(null != e, "user has to be signed in before accessing shop"), e
+let o = () => {
+  let e = (0, a.bG)([s.default], () => s.default.getCurrentUser());
+  return i()(null != e, "user has to be signed in before accessing shop"), e
 }

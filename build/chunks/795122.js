@@ -35,8 +35,8 @@ function E(e, t, n) {
     direction: C
   } = (0, h.Y)(), {
     onAction: N,
-    linkBehavior: R,
-    keyboardNavigationBehavior: w,
+    linkBehavior: w,
+    keyboardNavigationBehavior: R,
     shouldSelectOnPressUp: P
   } = r.nV.get(t), D = (0, i.X1)(), x = (0, f.useRef)(null), L = () => {
     var e;
@@ -69,7 +69,7 @@ function E(e, t, n) {
     shouldSelectOnPressUp: e.shouldSelectOnPressUp || P,
     onAction: N || (null == (E = S.props) ? true : E.onAction) ? (0, a.c)(null == (b = S.props) ? true : b.onAction, N ? () => N(S.key) : true) : true,
     focus: L,
-    linkBehavior: R
+    linkBehavior: w
   }), V = e => {
     if (!e.currentTarget.contains(e.target) || !n.current || !document.activeElement) return;
     let r = (0, d.N$)(n.current);
@@ -84,7 +84,7 @@ function E(e, t, n) {
     }
     switch (e.key) {
       case "ArrowLeft":
-        if ("arrow" === w) {
+        if ("arrow" === R) {
           let t = "rtl" === C ? r.nextNode() : r.previousNode();
           if (t) e.preventDefault(), e.stopPropagation(), (0, u.l)(t), (0, s.o)(t, {
             containingElement: (0, o.m)(n.current)
@@ -102,7 +102,7 @@ function E(e, t, n) {
         }
         break;
       case "ArrowRight":
-        if ("arrow" === w) {
+        if ("arrow" === R) {
           let t = "rtl" === C ? r.previousNode() : r.nextNode();
           if (t) e.preventDefault(), e.stopPropagation(), (0, u.l)(t), (0, s.o)(t, {
             containingElement: (0, o.m)(n.current)
@@ -132,7 +132,7 @@ function E(e, t, n) {
       return
     }
   }, B = e => {
-    if (e.currentTarget.contains(e.target) && n.current && document.activeElement && "Tab" === e.key && "tab" === w) {
+    if (e.currentTarget.contains(e.target) && n.current && document.activeElement && "Tab" === e.key && "tab" === R) {
       let t = (0, d.N$)(n.current, {
         tabbable: true
       });

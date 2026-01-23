@@ -43,7 +43,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,7 +68,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,16 +85,16 @@ let x = [Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.DISALLOW_CUSTOM],
       pickerIntention: f,
       emojiSearchResults: p,
       gridWidth: N,
-      emojiPaddingHorizontal: w,
+      emojiPaddingHorizontal: R,
       emojiSpriteSize: D,
       shouldShowSoundmojiInEmojiPicker: L,
       showOnlyUnicode: j
     } = e, M = (0, o.bG)([c.Ay], () => c.Ay.categories), k = r.useMemo(() => j ? d.Ay.getCategories() : M, [M, j]), U = (0, o.bG)([g.A], () => g.A.getGuild(null == n ? true : n.getGuildId()), [n]), G = null != (t = null == n ? true : n.getGuildId()) ? t : i, V = (0, o.bG)([c.Ay], () => c.Ay.getDisambiguatedEmojiContext(G), [G]), F = (0, v.XI)(G), B = (0, v.Fj)(G), H = (0, v.QZ)(G), {
       topEmojis: Y,
       newlyAddedEmojis: W
-    } = (0, I.A)(G, f), K = (0, o.yK)([E.Ay], () => E.Ay.getFlattenedGuildIds(), []), z = (0, o.bG)([c.Ay], () => c.Ay.expandedSectionsByGuildIds), q = (0, o.bG)([y.default], () => y.default.getCurrentUser()), X = (0, O.ki)(q), Z = (0, _.k0)(), Q = V.getCustomEmoji(), $ = e => {
+    } = (0, I.A)(G, f), K = (0, o.yK)([E.Ay], () => E.Ay.getFlattenedGuildIds(), []), z = (0, o.bG)([c.Ay], () => c.Ay.expandedSectionsByGuildIds), q = (0, o.bG)([y.default], () => y.default.getCurrentUser()), Z = (0, O.ki)(q), X = (0, _.k0)(), Q = V.getCustomEmoji(), J = e => {
       if (e.type === u.i.GUILD) return e.guildId
-    }, J = r.useMemo(() => a().groupBy(Q, $), [Q]), ee = (0, h.Ym)({
+    }, $ = r.useMemo(() => a().groupBy(Q, J), [Q]), ee = (0, h.Ym)({
       location: "useEmojiGrid"
     });
     return r.useMemo(() => {
@@ -105,7 +105,7 @@ let x = [Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.DISALLOW_CUSTOM],
         o = 0,
         c = 0;
       if (null != V && null != N) {
-        let u = Math.floor(N / (D + 2 * w)),
+        let u = Math.floor(N / (D + 2 * R)),
           _ = 3 * u,
           h = (s, d) => {
             let p = new Map,
@@ -161,10 +161,10 @@ let x = [Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.DISALLOW_CUSTOM],
               c++
             }
             let N = h ? 0 : I,
-              w = P(R({}, d), {
+              R = P(w({}, d), {
                 count: s.length
               });
-            t.push(w), e.push(N)
+            t.push(R), e.push(N)
           };
         if (null != p) 0 !== p.unlocked.length && h(p.unlocked, {
           type: S.s.SEARCH_RESULTS,
@@ -176,7 +176,7 @@ let x = [Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.DISALLOW_CUSTOM],
           categoryId: S.R2.PREMIUM_UPSELL,
           sectionId: S.s.PREMIUM_UPSELL,
           count: p.locked.length,
-          isNitroLocked: !X
+          isNitroLocked: !Z
         });
         else {
           if (ee && L) {
@@ -199,7 +199,7 @@ let x = [Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.DISALLOW_CUSTOM],
           for (let e of k)
             if (e === S.R2.CUSTOM) {
               let t = t => {
-                let r = J[t];
+                let r = $[t];
                 if (null == r) return;
                 let i = r.filter(e => !x.includes(b.Ay.getEmojiUnavailableReason({
                   emoji: e,
@@ -208,7 +208,7 @@ let x = [Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.DISALLOW_CUSTOM],
                 })));
                 if (0 === i.length) return;
                 let a = g.A.getGuild(t),
-                  o = Z || !X && b.Ay.isEmojiCategoryNitroLocked({
+                  o = X || !Z && b.Ay.isEmojiCategoryNitroLocked({
                     categoryEmojis: i,
                     channel: n,
                     intention: f
@@ -285,7 +285,7 @@ let x = [Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.DISALLOW_CUSTOM],
         rowCountBySection: e,
         sectionDescriptors: t
       }
-    }, [V, N, D, w, p, l, J, z, n, f, Y, W, X, k, U, K, H, B, F, Z, ee, L])
+    }, [V, N, D, R, p, l, $, z, n, f, Y, W, Z, k, U, K, H, B, F, X, ee, L])
   };
 var j = function(e) {
   return e[e.PREMIUM = 0] = "PREMIUM", e[e.ROLE_SUBSCRIPTION = 1] = "ROLE_SUBSCRIPTION", e

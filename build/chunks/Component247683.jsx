@@ -52,25 +52,25 @@ function S(e) {
 let T = [Chunk827734.A.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, Chunk827734.A.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"],
   C = 220,
   N = 1220,
-  R = Array.from({
+  w = Array.from({
     length: 16
   }).map((e, t) => ({
     id: "".concat(t),
     height: Math.floor(100 * Math.random()) + 120
   }));
 
-function w(e) {
+function R(e) {
   var t;
   return null != (t = e.id) ? t : e.src
 }
 
 function P(e, t) {
-  let n = R[t];
+  let n = w[t];
   return null == n ? 0 : n.height
 }
 
 function D(e, t, n, i) {
-  if (!(e > 0)) return null == R[t] ? null : (0, r.jsx)("div", {
+  if (!(e > 0)) return null == w[t] ? null : (0, r.jsx)("div", {
     className: A.qf,
     style: S({
       animationDelay: "".concat(75 * t, "ms")
@@ -80,7 +80,7 @@ function D(e, t, n, i) {
 
 function x(e, t) {
   var n, r;
-  return e > 0 ? "" : null != (n = null == (r = R[t]) ? true : r.id) ? n : ""
+  return e > 0 ? "" : null != (n = null == (r = w[t]) ? true : r.id) ? n : ""
 }
 
 function L(e) {
@@ -316,7 +316,7 @@ class G extends Chunk64700.PureComponent {
       let t, {
           data: n
         } = this.props,
-        r = n.findIndex(t => w(t) === e);
+        r = n.findIndex(t => R(t) === e);
       false !== r && (t = n[r]), null != t && this.selectItem(t, r)
     }), I(this, "handleClickItem", (e, t) => {
       this.selectItem(e, t)
@@ -340,7 +340,7 @@ class G extends Chunk64700.PureComponent {
         selectedGIF: s
       } = this.props, o = this.props.data[t];
       if (null == o) return null;
-      let l = null != s && w(s) === w(o);
+      let l = null != s && R(s) === R(o);
       return (0, r.jsx)(U, {
         item: o,
         index: t,
@@ -351,7 +351,7 @@ class G extends Chunk64700.PureComponent {
         renderExtras: () => (0, r.jsx)(E.A, S({
           className: A.uJ
         }, o)),
-        focused: w(o) === a,
+        focused: R(o) === a,
         imagePool: this.props.imagePool,
         videoPool: this.props.videoPool,
         selected: l
@@ -401,7 +401,7 @@ class G extends Chunk64700.PureComponent {
       return 0 === a.length && (o !== l || c === O.dD.TRENDING_GIFS) ? (0, r.jsx)(f.a0_, {
         fade: true,
         className: s()(A.Xv, i),
-        sections: [R.length],
+        sections: [w.length],
         columns: e,
         itemGutter: 12,
         getItemKey: x,

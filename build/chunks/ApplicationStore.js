@@ -2,7 +2,7 @@
 /** chunk id: 587895, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => Z
+  A: () => X
 }), require("./896048.js"), require("./638769.js"), require("./321073.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -130,7 +130,7 @@ function N(e) {
   y(s.Ay.createFromServer(e))
 }
 
-function R(e) {
+function w(e) {
   let {
     userId: t,
     applicationId: n
@@ -152,7 +152,7 @@ function R(e) {
     }
 }
 
-function w(e) {
+function R(e) {
   let {
     applicationId: t
   } = e, n = m.get(t);
@@ -191,7 +191,7 @@ function L(e) {
     user: n,
     application: r
   } = t;
-  n.bot && null != r && R({
+  n.bot && null != r && w({
     userId: n.id,
     applicationId: r.id
   })
@@ -308,7 +308,7 @@ function z(e) {
   e.tokens.forEach(e => {
     y(s.Ay.createFromServer(e.application));
     let t = e.application.bot;
-    null != t && R({
+    null != t && w({
       userId: t.id,
       applicationId: e.application.id
     })
@@ -320,7 +320,7 @@ function q(e) {
     null != e.application && y(s.Ay.createFromServer(e.application))
   })
 }
-class X extends(r = Chunk311907.Ay.PersistedStore) {
+class Z extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null != e && "object" == typeof e.botUserIdToAppUsage)
       for (let t in e.botUserIdToAppUsage) {
@@ -374,13 +374,13 @@ class X extends(r = Chunk311907.Ay.PersistedStore) {
     if (null != e) return null == (t = g.botUserIdToAppUsage[e]) ? true : t.applicationId
   }
 }
-o(X, "displayName", "ApplicationStore"), o(X, "persistKey", "ApplicationStore");
-let Z = new X(Chunk73153.h, {
+o(Z, "displayName", "ApplicationStore"), o(Z, "persistKey", "ApplicationStore");
+let X = new Z(Chunk73153.h, {
   LOGOUT: b,
   OVERLAY_INITIALIZE: I,
   APPLICATION_FETCH: S,
   APPLICATION_FETCH_SUCCESS: C,
-  APPLICATION_FETCH_FAIL: w,
+  APPLICATION_FETCH_FAIL: R,
   APPLICATIONS_FETCH: P,
   APPLICATIONS_FETCH_SUCCESS: x,
   APPLICATIONS_FETCH_FAIL: M,

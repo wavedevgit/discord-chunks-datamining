@@ -93,7 +93,7 @@ function m(e, t) {
       fade: v = false,
       customTheme: A = false,
       style: I
-    } = f, S = _(f, ["children", "className", "onResize", "contentClassName", "onScroll", "dir", "fade", "customTheme", "style"]), [T] = h, C = i.useRef(null), N = i.useRef(null), [R, w] = i.useState(false), {
+    } = f, S = _(f, ["children", "className", "onResize", "contentClassName", "onScroll", "dir", "fade", "customTheme", "style"]), [T] = h, C = i.useRef(null), N = i.useRef(null), [w, R] = i.useState(false), {
       scrollerRef: P,
       getScrollerState: D
     } = (0, l.s$)(), x = (0, l.kR)(P);
@@ -103,8 +103,8 @@ function m(e, t) {
       getScrollerState: D
     }, (0, l.cJ)(P, D, x)), [P, D, x]);
     let L = i.useCallback(e => {
-      null == C.current ? w(true) : clearTimeout(C.current), C.current = setTimeout(() => {
-        C.current = null, w(false)
+      null == C.current ? R(true) : clearTimeout(C.current), C.current = setTimeout(() => {
+        C.current = null, R(false)
       }, 200), null != b && b(e)
     }, [b]);
     return i.useEffect(() => () => clearTimeout(C.current), []), (0, l.Bb)({
@@ -126,7 +126,7 @@ function m(e, t) {
         [c.D8]: A,
         [e]: true,
         [c.fs]: true,
-        [c.qw]: R && v
+        [c.qw]: w && v
       }),
       style: I,
       dir: O,
@@ -137,7 +137,7 @@ function m(e, t) {
         children: (0, r.jsxs)("div", {
           ref: N,
           className: s()(y, c.Qs),
-          children: [m, R && (0, r.jsx)("div", {
+          children: [m, w && (0, r.jsx)("div", {
             className: c.X3
           })]
         })

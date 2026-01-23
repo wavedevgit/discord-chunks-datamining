@@ -91,9 +91,9 @@ function b(e) {
     onBlur: A,
     onMouseOver: I,
     onMouseLeave: S
-  } = e, T = E(e, ["section", "channel", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]), [C, N] = i.useState(false), R = i.useCallback(() => {
+  } = e, T = E(e, ["section", "channel", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]), [C, N] = i.useState(false), w = i.useCallback(() => {
     N(true), null == v || v()
-  }, [v]), w = i.useCallback(() => {
+  }, [v]), R = i.useCallback(() => {
     N(false), null == A || A()
   }, [A]), P = i.useCallback(() => {
     N(true), null == I || I()
@@ -118,8 +118,8 @@ function b(e) {
       [f.rb]: b,
       [f.wH]: b && a
     }),
-    onFocus: R,
-    onBlur: w,
+    onFocus: w,
+    onBlur: R,
     onMouseOver: P,
     onMouseLeave: D,
     children: (0, r.jsx)(l.Ay, {

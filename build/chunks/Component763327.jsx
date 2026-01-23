@@ -17,59 +17,59 @@ var Chunk627968 = require("./627968.js"),
 function m(e) {
   var t, n, i, m;
   let {
-    defaultCategory: f,
-    onCategoryChange: g,
-    className: j
-  } = e, [y, h] = r.useState(f), [v, b] = r.useState(null), O = (0, o.A)(), x = r.useMemo(() => [{
+    defaultCategory: g,
+    onCategoryChange: f,
+    className: y
+  } = e, [j, b] = l.useState(g), [h, v] = l.useState(null), O = (0, o.A)(), P = l.useMemo(() => [{
     name: d.intl.string(d.t["6Zuivx"]),
     value: u.Sm.Trick,
     key: "Trick",
-    icon: (0, l.jsx)(a.VPb, {
+    icon: (0, r.jsx)(a.VPb, {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => b(u.Sm.Trick),
-    onMouseLeave: () => b(null)
+    onMouseEnter: () => v(u.Sm.Trick),
+    onMouseLeave: () => v(null)
   }, {
     name: d.intl.string(d.t["2UeOlY"]),
     value: u.Sm.Treat,
     key: "Treat",
-    icon: (0, l.jsx)(a.pZW, {
+    icon: (0, r.jsx)(a.pZW, {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => b(u.Sm.Treat),
-    onMouseLeave: () => b(null)
-  }], []), P = r.useCallback(e => {
-    h(e.value), g(e.value)
-  }, [g]), S = null == O || null == (n = O.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, E = null == O || null == (m = O.segmentedControlAnimations) || null == (i = m.treat) ? true : i.getAnimationData;
-  return (0, l.jsxs)("div", {
-    className: s()(p.kL, j),
-    children: [(0, l.jsx)(c.R, {
-      options: x,
-      value: y,
-      onChange: P
-    }), v === u.Sm.Trick && null != S && (0, l.jsx)("div", {
+    onMouseEnter: () => v(u.Sm.Treat),
+    onMouseLeave: () => v(null)
+  }], []), x = l.useCallback(e => {
+    b(e.value), f(e.value)
+  }, [f]), E = null == O || null == (n = O.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == O || null == (m = O.segmentedControlAnimations) || null == (i = m.treat) ? true : i.getAnimationData;
+  return (0, r.jsxs)("div", {
+    className: s()(p.kL, y),
+    children: [(0, r.jsx)(c.R, {
+      options: P,
+      value: j,
+      onChange: x
+    }), h === u.Sm.Trick && null != E && (0, r.jsx)("div", {
       className: s()(p.Do, p.yf),
-      children: (0, l.jsx)(a.akl, {
-        shouldAnimate: true,
-        loop: true,
-        autoplay: true,
-        className: p.I3,
-        importData: S,
-        renderer: a.akl.Renderers.SVG,
-        versionKey: +(v === u.Sm.Trick)
-      })
-    }), v === u.Sm.Treat && null != E && (0, l.jsx)("div", {
-      className: s()(p.Do, p.vu),
-      children: (0, l.jsx)(a.akl, {
+      children: (0, r.jsx)(a.akl, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
         className: p.I3,
         importData: E,
         renderer: a.akl.Renderers.SVG,
-        versionKey: +(v === u.Sm.Treat)
+        versionKey: +(h === u.Sm.Trick)
+      })
+    }), h === u.Sm.Treat && null != S && (0, r.jsx)("div", {
+      className: s()(p.Do, p.vu),
+      children: (0, r.jsx)(a.akl, {
+        shouldAnimate: true,
+        loop: true,
+        autoplay: true,
+        className: p.I3,
+        importData: S,
+        renderer: a.akl.Renderers.SVG,
+        versionKey: +(h === u.Sm.Treat)
       })
     })]
   })

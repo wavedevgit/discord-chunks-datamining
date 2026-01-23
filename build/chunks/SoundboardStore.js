@@ -2,7 +2,7 @@
 /** chunk id: 209932, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => $
+  A: () => J
 }), require("./896048.js"), require("./321073.js"), require("./446912.js"), require("./864466.js"), require("./443073.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -37,10 +37,10 @@ let y = new Map,
   T = 0,
   C = new Set,
   N = new Map,
-  R = false;
+  w = false;
 
-function w() {
-  y.clear(), b.clear(), T = 0, O.clear(), N.clear(), R = false, I = 0, S = 0, A = 0
+function R() {
+  y.clear(), b.clear(), T = 0, O.clear(), N.clear(), w = false, I = 0, S = 0, A = 0
 }
 
 function P() {
@@ -126,7 +126,7 @@ function H(e) {
     soundId: i,
     userId: a
   } = e, s = (null != (t = O.get(i)) ? t : 0) + 1, o = (null != (n = N.get(a)) ? n : 0) + 1;
-  O.set(i, s), N.set(a, o), a !== (null == (r = u.default.getCurrentUser()) ? true : r.id) && (R = true)
+  O.set(i, s), N.set(a, o), a !== (null == (r = u.default.getCurrentUser()) ? true : r.id) && (w = true)
 }
 
 function Y(e) {
@@ -174,14 +174,14 @@ function q(e) {
   } else n === g.oD.PRELOADED_USER_SETTINGS && z(r)
 }
 
-function X(e) {
+function Z(e) {
   let {
     userId: t
   } = e;
   v.has(t) ? v.delete(t) : v.add(t)
 }
 
-function Z(e) {
+function X(e) {
   let {
     soundboardStoreState: t
   } = e;
@@ -246,7 +246,7 @@ class Q extends(r = Chunk311907.Ay.Store) {
     return v.has(e)
   }
   hasHadOtherUserPlaySoundInSession() {
-    return R
+    return w
   }
   shouldFetchTopSoundsForGuilds() {
     return (0, _.vB)("SoundboardStore") && (0 === S || 2 === S && Date.now() - T > 864e5)
@@ -263,8 +263,8 @@ class Q extends(r = Chunk311907.Ay.Store) {
   }
 }
 E(Q, "displayName", "SoundboardStore");
-let $ = new Q(Chunk73153.h, {
-  LOGOUT: w,
+let J = new Q(Chunk73153.h, {
+  LOGOUT: R,
   GUILD_SOUNDBOARD_FETCH: D,
   GUILD_SOUNDBOARD_SOUND_CREATE: j,
   GUILD_SOUNDBOARD_SOUND_UPDATE: j,
@@ -282,6 +282,6 @@ let $ = new Q(Chunk73153.h, {
   SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FAILURE: B,
   SOUNDBOARD_SOUNDS_RECEIVED: x,
   GUILD_DELETE: L,
-  AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: X,
-  OVERLAY_INITIALIZE: Z
+  AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: Z,
+  OVERLAY_INITIALIZE: X
 })

@@ -16,8 +16,8 @@ require.d(exports, {
   MM: () => ey,
   N: () => eM,
   Ps: () => M,
-  QP: () => ew,
-  TD: () => X,
+  QP: () => eR,
+  TD: () => Z,
   TK: () => ef,
   Tv: () => er,
   YB: () => ee,
@@ -36,7 +36,7 @@ require.d(exports, {
   jV: () => ec,
   jZ: () => eV,
   jf: () => ek,
-  nV: () => eR,
+  nV: () => ew,
   ne: () => Y,
   r6: () => eD,
   re: () => eU,
@@ -84,7 +84,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -97,7 +97,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -109,7 +109,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -169,7 +169,7 @@ async function M(e, t) {
     } = n, s = D(n, ["line1", "line2", "postalCode"]), o = await l.Bo.patch({
       url: A.Rsh.BILLING_PAYMENT_SOURCE(e),
       body: {
-        billing_address: P(R({}, s), {
+        billing_address: P(w({}, s), {
           line_1: r,
           line_2: i,
           postal_code: a
@@ -327,7 +327,7 @@ function W(e) {
         failure_sub_code: e.decline_code,
         payment_source_type: null == (s = e.payment_method) ? true : s.type
       };
-    n = o, "card_error" === e.type && (E.default.track(A.HAw.PAYMENT_SOURCE_CREATION_FAILED, P(R({}, o), {
+    n = o, "card_error" === e.type && (E.default.track(A.HAw.PAYMENT_SOURCE_CREATION_FAILED, P(w({}, o), {
       stacktrace: Error().stack
     })), r = false), t = new u.Ey(a)
   } else n = {
@@ -339,8 +339,8 @@ function W(e) {
     error: t
   });
   let o = Error("string" == typeof e ? e : t.message);
-  return r && (0, y.pM)(o, P(R({}, a), {
-    extra: R({}, n, a.extra)
+  return r && (0, y.pM)(o, P(w({}, a), {
+    extra: w({}, n, a.extra)
   })), o
 }
 async function K(e, t) {
@@ -445,7 +445,7 @@ async function q(e, t, n) {
     analyticsLocation: n
   })
 }
-async function X(e, t, n, r) {
+async function Z(e, t, n, r) {
   if (null == e) throw W("Stripe not loaded");
   let {
     email: i,
@@ -492,7 +492,7 @@ async function X(e, t, n, r) {
     bank: _
   })
 }
-let Z = (e, t, n) => {
+let X = (e, t, n) => {
     if (null != t) throw n(t);
     if (null == e) throw n("SetupIntent not created");
     if (null == e.payment_method) throw n("setupIntent.payment_method not available with successful stripe call");
@@ -502,12 +502,12 @@ let Z = (e, t, n) => {
     }
   },
   Q = e => null != e && "setup_intent_unexpected_state" === e.code && null != e.setup_intent && "succeeded" === e.setup_intent.status,
-  $ = async e => {
+  J = async e => {
     if (null == e) throw Y("Stripe Elements not loaded", true);
     let t = await e.submit();
     if (L.info("Stripe Elements submit response: ", t), null != t.error) throw L.error("Stripe Elements submit error: ", t.error), Y(t.error, true);
     return t
-  }, J = async (e, t) => {
+  }, $ = async (e, t) => {
     let {
       paymentMethod: n,
       error: r
@@ -526,11 +526,11 @@ let Z = (e, t, n) => {
   }, ee = async (e, t) => {
     if (null == e) throw Y("Stripe not loaded", true);
     if (null == t) throw Y("Stripe Elements not loaded", true);
-    await $(t);
+    await J(t);
     let {
       paymentMethod: n,
       error: r
-    } = await J(e, t);
+    } = await $(e, t);
     return {
       paymentMethod: n,
       error: r
@@ -549,7 +549,7 @@ async function et() {
     type: "BILLING_PAYMENT_SOURCE_CREATE_START"
   });
   let d = await G(s);
-  o !== T.he.PAYMENT_REQUEST && await $(a);
+  o !== T.he.PAYMENT_REQUEST && await J(a);
   let p = null;
   if (o === T.he.CARD || o === T.he.PAYMENT_REQUEST) {
     let t = null != (e = l.current) ? e : true,
@@ -564,7 +564,7 @@ async function et() {
       let {
         client_secret: e
       } = await (0, f.w)();
-      await $(a), n = await i.confirmSetup({
+      await J(a), n = await i.confirmSetup({
         redirect: "if_required",
         clientSecret: e,
         elements: a
@@ -572,12 +572,12 @@ async function et() {
     }
     let {
       setupIntent: r
-    } = Z(n.setupIntent, n.error, e => Y(e, true));
+    } = X(n.setupIntent, n.error, e => Y(e, true));
     l.current = r, p = r.payment_method
   } else {
     let {
       paymentMethod: e
-    } = await J(i, a);
+    } = await $(i, a);
     p = e.id
   }
   return F(A.kM_.STRIPE, p, s, {
@@ -611,7 +611,7 @@ async function en(e, t, n, r) {
     }),
     {
       setupIntent: u
-    } = Z(o, l, e => W(e));
+    } = X(o, l, e => W(e));
   return F(A.kM_.STRIPE, u.payment_method, n, {
     billingAddressToken: a,
     analyticsLocation: r
@@ -685,7 +685,7 @@ async function eo(e, t, n, r) {
   var i;
   let a = arguments.length > 4 && true !== arguments[4] && arguments[4],
     s = await G(e),
-    o = R({
+    o = w({
       type: T.Kc.get(t)
     }, null != (i = null == r ? true : r.paymentMethod) ? i : {}),
     f = await ek(t),
@@ -1241,14 +1241,14 @@ async function eC(e, t, n) {
 }
 
 function eN(e, t) {
-  return eR(e, {
+  return ew(e, {
     items: e.items
   }, {
     amount: 0,
     currency: e.currency
   }, (0, b.UC)(e.items, e.currency, e.paymentSourceId), t)
 }
-async function eR(e, t, n, r, i, a, s) {
+async function ew(e, t, n, r, i, a, s) {
   if (null != t.paymentSource && null == t.currency) throw Error("Currency must be specified with payment source");
   c.h.dispatch({
     type: "BILLING_SUBSCRIPTION_UPDATE_START"
@@ -1275,7 +1275,7 @@ async function eR(e, t, n, r, i, a, s) {
       let {
         planId: t
       } = e, n = D(e, ["planId"]);
-      return P(R({}, n), {
+      return P(w({}, n), {
         plan_id: t
       })
     }));
@@ -1307,8 +1307,8 @@ async function eR(e, t, n, r, i, a, s) {
   }
 }
 
-function ew(e, t, n, r, i) {
-  return eR(e, {
+function eR(e, t, n, r, i) {
+  return ew(e, {
     status: A.Dmq.ACTIVE,
     paymentSource: n,
     currency: r
@@ -1320,14 +1320,14 @@ function ew(e, t, n, r, i) {
 
 function eP(e, t, n, r, i, a) {
   let s = (0, b.GX)(e, t);
-  return eR(e, {
+  return ew(e, {
     status: A.Dmq.ACTIVE,
     items: s
   }, n, r, i, a)
 }
 
 function eD(e, t, n, r, i) {
-  return eR(e, {
+  return ew(e, {
     currency: t
   }, {
     amount: 0,
@@ -1336,7 +1336,7 @@ function eD(e, t, n, r, i) {
 }
 
 function ex(e, t, n, r, i, a) {
-  return eR(e, {
+  return ew(e, {
     paymentSource: t,
     currency: n
   }, {

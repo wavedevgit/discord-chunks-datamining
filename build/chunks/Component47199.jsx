@@ -42,7 +42,7 @@ function y(e) {
   i.useEffect(() => {
     c.A.getDetectableGamesSupplemental([t])
   }, [t]);
-  let R = i.useCallback(() => {
+  let w = i.useCallback(() => {
     d.Ay.fetchApplication(t), c.A.getDetectableGamesSupplemental([t])
   }, [t]);
   i.useEffect(() => {
@@ -57,14 +57,14 @@ function y(e) {
       profileType: h.HV.MiniProfile
     })
   });
-  let w = i.useMemo(() => A || S ? (0, r.jsx)("div", {
+  let R = i.useMemo(() => A || S ? (0, r.jsx)("div", {
     className: s()(E.k, E.d),
     children: (0, r.jsx)(l.y$y, {})
   }) : I || T || null == O || null == v ? (0, r.jsx)("div", {
     className: E.k,
     children: (0, r.jsx)(m.A, {
       name: n,
-      onRetry: R
+      onRetry: w
     })
   }) : (0, r.jsx)("div", {
     className: E.k,
@@ -73,10 +73,10 @@ function y(e) {
       detectedGame: v,
       onClose: y
     })
-  }), [A, S, I, T, O, v, n, R, y]);
+  }), [A, S, I, T, O, v, n, w, y]);
   return (0, r.jsx)(l.lGe, {
     ref: C,
     "aria-label": null == O ? true : O.name,
-    children: w
+    children: R
   })
 }

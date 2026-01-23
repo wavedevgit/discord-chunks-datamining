@@ -9,13 +9,13 @@ require.r(exports), require.d(exports, {
   clearAnalyticsEventsRecording: () => er,
   debugLogEvent: () => Q,
   default: () => eu,
-  expandEventProperties: () => Z,
+  expandEventProperties: () => X,
   expandLocation: () => Y,
   getAnalyticsEventsRecording: () => en,
   getNewAnalyticsLoadId: () => ec,
   isGameApplicationType: () => eo,
   launchSignature: () => V,
-  setUTMContext: () => X,
+  setUTMContext: () => Z,
   startRecordingAnalyticsEvents: () => ee,
   stopRecordingAnalyticsEvents: () => et,
   trackNetworkAction: () => el
@@ -101,8 +101,8 @@ let C = {
     location: {}
   },
   N = Chunk64700.createContext(C),
-  R = {},
-  w = 1e3,
+  w = {},
+  R = 1e3,
   P = 1e4,
   D = 6e4,
   x = 12e4,
@@ -319,7 +319,7 @@ let H = {
     deduplicate: true
   },
   [Chunk652215.HAw.MEMBER_LIST_SWIPE_PEEK]: {
-    throttlePeriod: w,
+    throttlePeriod: R,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk652215.HAw.REDACTABLE_MESSAGE_LOADED]: {
@@ -359,7 +359,7 @@ let H = {
     throttleKeys: () => []
   },
   [Chunk652215.HAw.VIDEO_STREAM_ZOOM_CHANGED]: {
-    throttlePeriod: w,
+    throttlePeriod: R,
     throttleKeys: () => []
   },
   [Chunk652215.HAw.CACHE_STATS_RECORDED]: {
@@ -402,11 +402,11 @@ let q = (0, Chunk110259.trackMaker)({
   TRACK_ACTION_NAME: "TRACK"
 });
 
-function X(e) {
-  return R = e
+function Z(e) {
+  return w = e
 }
 
-function Z(e) {
+function X(e) {
   var t, n, r, i;
   let a = null != e ? e : {};
   if (null != a.location) {
@@ -421,7 +421,7 @@ function Z(e) {
     } = a;
     a = v({}, S(a, ["source"]), W(e))
   }
-  a.client_performance_cpu = h.A.getCurrentCPUUsagePercent(), a.client_performance_memory = h.A.getCurrentMemoryUsageKB(), a.cpu_core_count = h.A.getCPUCoreCount(), a.accessibility_features = K(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - G) / w);
+  a.client_performance_cpu = h.A.getCurrentCPUUsagePercent(), a.client_performance_memory = h.A.getCurrentMemoryUsageKB(), a.cpu_core_count = h.A.getCPUCoreCount(), a.accessibility_features = K(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - G) / R);
   let s = h.A.getProcessUptime();
   null != s && (a.uptime_process_renderer = Math.floor(s));
   let {
@@ -429,7 +429,7 @@ function Z(e) {
     utmMedium: l,
     utmCampaign: c,
     utmContent: u
-  } = R;
+  } = w;
   return a.utm_source = null != (t = a.utm_source) ? t : o, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, a.launch_signature = V, F.forEach(e => e(a)), a
 }
 
@@ -437,29 +437,29 @@ function Q(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   p.default.isLoggingAnalyticsEvents && console.info("AnalyticsUtils.track(...):", e, t), n ? d.z8("Analytics", e, t) : d.z8("Analytics", e)
 }
-let $ = false,
-  J = {};
+let J = false,
+  $ = {};
 
 function ee() {
-  $ = true
+  J = true
 }
 
 function et() {
-  $ = false
+  J = false
 }
 
 function en() {
-  return J
+  return $
 }
 
 function er() {
-  Object.keys(J).forEach(e => {
-    delete J[e]
+  Object.keys($).forEach(e => {
+    delete $[e]
   })
 }
 
 function ei(e, t) {
-  return !!$ && (null != t && (Array.isArray(J[e]) ? J[e].push(t) : J[e] = [t]), true)
+  return !!J && (null != t && (Array.isArray($[e]) ? $[e].push(t) : $[e] = [t]), true)
 }
 
 function ea(e, t) {
@@ -469,7 +469,7 @@ function ea(e, t) {
       category: "analytics",
       message: "".concat(r)
     }), ei(e, t), null != n.throttlePercent && Math.random() > n.throttlePercent) return Promise.resolve();
-  let i = Z(t);
+  let i = X(t);
   return Q(r, i, n.logEventProperties), q(e, i, {
     flush: n.flush,
     fingerprint: n.fingerprint
@@ -486,7 +486,7 @@ function eo(e) {
 }
 
 function el(e, t) {
-  let n = Z(v({
+  let n = X(v({
     location: (0, u.g$)()
   }, t));
   (0, u.eE)(e, v({
@@ -500,6 +500,6 @@ function ec() {
 let eu = I(v({}, Chunk110259), {
   getCampaignParams: Chunk110259.getCampaignParams,
   setSystemAccessibilityFeatures: z,
-  expandEventProperties: Z,
+  expandEventProperties: X,
   track: ea
 })

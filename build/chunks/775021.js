@@ -98,7 +98,7 @@ function S(e, t, n, g) {
   var E = String(e),
     O = String(t),
     v = (0, _.q)(),
-    S = null != (R = null != (w = null == g ? true : g.locale) ? w : v.locale) ? R : r.A;
+    S = null != (w = null != (R = null == g ? true : g.locale) ? R : v.locale) ? w : r.A;
   if (!S.match) throw RangeError("locale must contain match property");
   var C = (0, u.A)(null != (P = null != (D = null != (x = null != (L = null == g ? true : g.firstWeekContainsDate) ? L : null == g || null == (j = g.locale) || null == (M = j.options) ? true : M.firstWeekContainsDate) ? x : v.firstWeekContainsDate) ? D : null == (k = v.locale) || null == (U = k.options) ? true : U.firstWeekContainsDate) ? P : 1);
   if (!(C >= 1 && C <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
@@ -107,20 +107,20 @@ function S(e, t, n, g) {
   if ("" === O)
     if ("" === E) return (0, a.default)(n);
     else return new Date(NaN);
-  var R, w, P, D, x, L, j, M, k, U, G, V, F, B, H, Y, W, K, z, q = {
+  var w, R, P, D, x, L, j, M, k, U, G, V, F, B, H, Y, W, K, z, q = {
       firstWeekContainsDate: C,
       weekStartsOn: N,
       locale: S
     },
-    X = [new f.Je],
-    Z = O.match(b).map(function(e) {
+    Z = [new f.Je],
+    X = O.match(b).map(function(e) {
       var t = e[0];
       return t in o.A ? (0, o.A[t])(e, S.formatLong) : e
     }).join("").match(y),
     Q = [],
-    $ = m(Z);
+    J = m(X);
   try {
-    var J = function() {
+    var $ = function() {
       var t = z.value;
       !(null != g && g.useAdditionalWeekYearTokens) && (0, c.xM)(t) && (0, c.lJ)(t, O, e), !(null != g && g.useAdditionalDayOfYearTokens) && (0, c.ef)(t) && (0, c.lJ)(t, O, e);
       var n = t[0],
@@ -141,7 +141,7 @@ function S(e, t, n, g) {
         if (!s) return {
           v: new Date(NaN)
         };
-        X.push(s.setter), E = s.rest
+        Z.push(s.setter), E = s.rest
       } else {
         if (n.match(I)) throw RangeError("Format string contains an unescaped latin alphabet character `" + n + "`");
         if ("''" === t ? t = "'" : "'" === n && (t = T(t)), 0 !== E.indexOf(t)) return {
@@ -150,24 +150,24 @@ function S(e, t, n, g) {
         E = E.slice(t.length)
       }
     };
-    for ($.s(); !(z = $.n()).done;) {
-      var ee = J();
+    for (J.s(); !(z = J.n()).done;) {
+      var ee = $();
       if ("object" === h(ee)) return ee.v
     }
   } catch (e) {
-    $.e(e)
+    J.e(e)
   } finally {
-    $.f()
+    J.f()
   }
   if (E.length > 0 && A.test(E)) return new Date(NaN);
-  var et = X.map(function(e) {
+  var et = Z.map(function(e) {
       return e.priority
     }).sort(function(e, t) {
       return t - e
     }).filter(function(e, t, n) {
       return n.indexOf(e) === t
     }).map(function(e) {
-      return X.filter(function(t) {
+      return Z.filter(function(t) {
         return t.priority === e
       }).sort(function(e, t) {
         return t.subPriority - e.subPriority

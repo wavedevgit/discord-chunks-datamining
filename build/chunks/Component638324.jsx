@@ -33,7 +33,7 @@ function T(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, T = (0, m.q9)(), C = (0, _.K)(), N = h.$s.useSetting().includes(n), R = (0, l.uM)(), w = h.YX.useSetting(), P = h.Zr.useSetting().includes(n), D = i.useCallback(e => {
+  } = e, T = (0, m.q9)(), C = (0, _.K)(), N = h.$s.useSetting().includes(n), w = (0, l.uM)(), R = h.YX.useSetting(), P = h.Zr.useSetting().includes(n), D = i.useCallback(e => {
     let r = (0, f.xo)();
     e ? r.delete(n) : r.add(n), h.Zr.updateSetting(Array.from(r)), u.default.track(A.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: b.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -77,10 +77,10 @@ function T(e) {
     scrollPosition: O.d1.MESSAGE_REQUESTS_V2,
     children: "0" === n ? (0, r.jsx)(E.Ay, {
       title: I.intl.string(I.t["3o2ojh"]),
-      value: !C && !w,
+      value: !C && !R,
       onChange: e => L(e, false),
-      disabled: C || R,
-      tooltipText: R ? I.intl.string(S.default["6Af/cw"]) : true,
+      disabled: C || w,
+      tooltipText: w ? I.intl.string(S.default["6Af/cw"]) : true,
       note: I.intl.format(I.t.wkm9a3, {
         helpdeskArticle: d.A.getArticleURL(A.MVz.MESSAGE_REQUESTS)
       })

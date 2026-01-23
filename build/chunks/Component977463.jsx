@@ -72,7 +72,7 @@ function C(e) {
     guildId: A,
     unread: S,
     onClick: C
-  } = e, [N, R] = i.useState(false), w = (0, u.aK)(h.default.extractTimestamp(t.startId)), P = (0, a.bG)([m.A], () => m.A.summaryFeedback(t)), D = (e, n) => {
+  } = e, [N, w] = i.useState(false), R = (0, u.aK)(h.default.extractTimestamp(t.startId)), P = (0, a.bG)([m.A], () => m.A.summaryFeedback(t)), D = (e, n) => {
     e.stopPropagation(), (0, g.A)({
       summary: t,
       channel: f,
@@ -92,8 +92,8 @@ function C(e) {
     className: v.kL,
     onClick: C,
     onContextMenu: L,
-    onMouseEnter: () => R(true),
-    onMouseLeave: () => R(false),
+    onMouseEnter: () => w(true),
+    onMouseLeave: () => w(false),
     children: [(0, r.jsx)(c.A, {
       hovered: N,
       unread: S,
@@ -106,7 +106,7 @@ function C(e) {
           className: v.vE,
           color: "interactive-text-default",
           variant: "text-xs/normal",
-          children: w
+          children: R
         }), (0, r.jsx)(l.A, {
           height: 4,
           width: 4,

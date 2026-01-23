@@ -46,11 +46,11 @@ function I(e) {
       var t;
       return null == (t = I[e.applicationId]) ? true : t.id
     }
-  }).filter(p.Vq).flat())], [t, I]), C = (0, o.bG)([d.A], () => d.A.canFetchDetectableGames()), [N, R] = (0, i.useState)([]), {
-    themeType: w
-  } = (0, E.E)(), P = w === y.d.SIDEBAR, D = (0, i.useRef)(false);
+  }).filter(p.Vq).flat())], [t, I]), C = (0, o.bG)([d.A], () => d.A.canFetchDetectableGames()), [N, w] = (0, i.useState)([]), {
+    themeType: R
+  } = (0, E.E)(), P = R === y.d.SIDEBAR, D = (0, i.useRef)(false);
   return (0, i.useEffect)(() => {
-    C ? c.A.getDetectableGames() : R(T.map(e => d.A.getDetectableGame(e)).filter(e => null != e).map(e => {
+    C ? c.A.getDetectableGames() : w(T.map(e => d.A.getDetectableGame(e)).filter(e => null != e).map(e => {
       var t;
       return {
         image: null != (t = f.Ay.getApplicationIconURL({

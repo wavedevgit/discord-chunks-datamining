@@ -80,7 +80,7 @@ let S = 16,
   T = 10,
   C = 8,
   N = Object.freeze({}),
-  R = Object.freeze({
+  w = Object.freeze({
     top: Chunk197290.dn,
     bottom: Chunk197290.L_,
     left: Chunk197290.Lf,
@@ -94,7 +94,7 @@ let S = 16,
     red: Chunk197290.Rp
   });
 
-function w(e, t, n) {
+function R(e, t, n) {
   let r = "left" === e || "right" === e,
     i = r ? "top" : "left",
     a = r ? "top" : "left",
@@ -140,17 +140,17 @@ let P = e => {
         } = e;
         return (0, i.jsxs)(c.animated.div, {
           onClick: l,
-          className: o()(E.YL, R[null != t ? t : r], R[a], {
+          className: o()(E.YL, w[null != t ? t : r], w[a], {
             [E.Cy]: h
           }, u),
           style: b({}, _, d),
           "data-mtctest-ignore": v,
           children: [(0, i.jsx)("div", {
             className: o()(E.xQ, E.yH, y),
-            style: w(null != t ? t : r, n, p)
+            style: R(null != t ? t : r, n, p)
           }), (0, i.jsx)("div", {
             className: o()(E.xQ, y),
-            style: w(null != t ? t : r, n, p)
+            style: R(null != t ? t : r, n, p)
           }), (0, i.jsx)("div", {
             className: o()(E.rv, {
               [E.u2]: m

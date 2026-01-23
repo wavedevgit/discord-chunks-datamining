@@ -189,12 +189,12 @@ function N(e, t) {
   return new b(e, t).patch
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   return new b(e, n).compare(new b(t, n))
 }
 
-function w(e, t) {
-  return R(e, t, true)
+function R(e, t) {
+  return w(e, t, true)
 }
 
 function P(e, t, n) {
@@ -204,7 +204,7 @@ function P(e, t, n) {
 }
 
 function D(e, t, n) {
-  return R(t, e, n)
+  return w(t, e, n)
 }
 
 function x(e, n) {
@@ -220,27 +220,27 @@ function L(e, n) {
 }
 
 function j(e, t, n) {
-  return R(e, t, n) > 0
+  return w(e, t, n) > 0
 }
 
 function M(e, t, n) {
-  return 0 > R(e, t, n)
+  return 0 > w(e, t, n)
 }
 
 function k(e, t, n) {
-  return 0 === R(e, t, n)
+  return 0 === w(e, t, n)
 }
 
 function U(e, t, n) {
-  return 0 !== R(e, t, n)
+  return 0 !== w(e, t, n)
 }
 
 function G(e, t, n) {
-  return R(e, t, n) >= 0
+  return w(e, t, n) >= 0
 }
 
 function V(e, t, n) {
-  return 0 >= R(e, t, n)
+  return 0 >= w(e, t, n)
 }
 
 function F(e, t, n, r) {
@@ -278,7 +278,7 @@ function B(e, t) {
   if (!(this instanceof B)) return new B(e, t);
   r("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === H ? this.value = "" : this.value = this.operator + this.semver.version, r("comp", this)
 }
-exports.rcompareIdentifiers = S, exports.major = T, exports.minor = C, exports.patch = N, exports.compare = R, exports.compareLoose = w, exports.compareBuild = P, exports.rcompare = D, exports.sort = x, exports.rsort = L, exports.gt = j, exports.lt = M, exports.eq = k, exports.neq = U, exports.gte = G, exports.lte = V, exports.cmp = F, exports.Comparator = B;
+exports.rcompareIdentifiers = S, exports.major = T, exports.minor = C, exports.patch = N, exports.compare = w, exports.compareLoose = R, exports.compareBuild = P, exports.rcompare = D, exports.sort = x, exports.rsort = L, exports.gt = j, exports.lt = M, exports.eq = k, exports.neq = U, exports.gte = G, exports.lte = V, exports.cmp = F, exports.Comparator = B;
 var H = {};
 
 function Y(e, t) {
@@ -314,20 +314,20 @@ function K(e, t) {
 }
 
 function z(e, t) {
-  return r("comp", e, t), r("caret", e = Q(e, t)), r("tildes", e = X(e, t)), r("xrange", e = J(e, t)), r("stars", e = et(e, t)), e
+  return r("comp", e, t), r("caret", e = Q(e, t)), r("tildes", e = Z(e, t)), r("xrange", e = $(e, t)), r("stars", e = et(e, t)), e
 }
 
 function q(e) {
   return !e || "x" === e.toLowerCase() || "*" === e
 }
 
-function X(e, t) {
+function Z(e, t) {
   return e.trim().split(/\s+/).map(function(e) {
-    return Z(e, t)
+    return X(e, t)
   }).join(" ")
 }
 
-function Z(e, t) {
+function X(e, t) {
   var n = t.loose ? l[u.TILDELOOSE] : l[u.TILDE];
   return e.replace(n, function(t, n, i, a, s) {
     var o;
@@ -337,11 +337,11 @@ function Z(e, t) {
 
 function Q(e, t) {
   return e.trim().split(/\s+/).map(function(e) {
-    return $(e, t)
+    return J(e, t)
   }).join(" ")
 }
 
-function $(e, t) {
+function J(e, t) {
   r("caret", e, t);
   var n = t.loose ? l[u.CARETLOOSE] : l[u.CARET];
   return e.replace(n, function(t, n, i, a, s) {
@@ -350,7 +350,7 @@ function $(e, t) {
   })
 }
 
-function J(e, t) {
+function $(e, t) {
   return r("replaceXRanges", e, t), e.split(/\s+/).map(function(e) {
     return ee(e, t)
   }).join(" ")

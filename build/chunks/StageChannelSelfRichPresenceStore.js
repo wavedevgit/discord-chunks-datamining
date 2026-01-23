@@ -47,7 +47,7 @@ function v() {
     T = S.filter(e => e.type === _.wY.STREAM).length,
     C = S.length - T,
     N = p.A.getParticipantCount(o) - T,
-    R = (null == I || null == (a = I.party) ? true : a.size) != null ? I.party.size[1] : 0;
+    w = (null == I || null == (a = I.party) ? true : a.size) != null ? I.party.size[1] : 0;
   return {
     application_id: E.SS,
     name: null != (e = null != (t = u.topic) ? t : b.topic) ? e : b.name,
@@ -61,7 +61,7 @@ function v() {
     },
     party: {
       id: A,
-      size: [C, Math.max(N, R)]
+      size: [C, Math.max(N, w)]
     }
   }
 }

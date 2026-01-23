@@ -32,7 +32,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk333354 = require("./333354.js"),
   Chunk826823 = require("./826823.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,7 +48,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -83,7 +83,7 @@ function L(e) {
     animatedImageUrl: O,
     powerup: I,
     isNew: N,
-    onClose: w
+    onClose: R
   } = e, {
     analyticsLocations: D
   } = (0, p.Ay)(), L = n !== S.b_.INACTIVE, j = (0, m.A)(t), M = (0, c.bG)([d.A], () => d.A.useReducedMotion), [k, U] = i.useState(false), [G, V] = i.useState(false), F = G, B = G && null != O && "" !== O && !M ? O : E, H = i.useCallback(() => {
@@ -98,8 +98,8 @@ function L(e) {
       guild: e
     })
   }, [t, D]), Y = i.useCallback(() => {
-    w(), (0, y.A)(t, f.A.GUILD_POWERUPS_MARKETING, I.skuId)
-  }, [t, I.skuId, w]), W = {
+    R(), (0, y.A)(t, f.A.GUILD_POWERUPS_MARKETING, I.skuId)
+  }, [t, I.skuId, R]), W = {
     tension: 400,
     friction: 30
   }, K = (0, u.zhh)({
@@ -113,22 +113,22 @@ function L(e) {
     opacity: +!!F,
     transform: F ? "translateY(0)" : "translateY(16px)",
     config: W
-  }), X = i.useCallback(e => {
+  }), Z = i.useCallback(e => {
     e && U(true)
-  }, []), Z = (0, l.K)(X);
+  }, []), X = (0, l.K)(Z);
   return (0, r.jsxs)("div", {
-    className: s()(R.Nr, {
-      [R.fM]: k
+    className: s()(w.Nr, {
+      [w.fM]: k
     }),
     onMouseEnter: () => V(true),
     onMouseLeave: () => V(false),
     children: [(0, r.jsx)("div", {
-      className: R.sL,
-      ref: Z
+      className: w.sL,
+      ref: X
     }), (0, r.jsx)("div", {
-      className: R.kQ,
+      className: w.kQ,
       children: (0, r.jsx)(o.animated.img, {
-        className: R.bm,
+        className: w.bm,
         src: B,
         alt: "",
         style: {
@@ -139,39 +139,39 @@ function L(e) {
       style: x(P({}, z), {
         transform: z.y.to(e => "translateY(".concat(e, "px)"))
       }),
-      className: R.Qs,
+      className: w.Qs,
       children: [(0, r.jsxs)("div", {
-        className: R.P_,
+        className: w.P_,
         children: [(0, r.jsx)(u.Heading, {
-          className: R.DD,
+          className: w.DD,
           variant: "heading-lg/semibold",
           children: a
         }), (0, r.jsx)(u.Text, {
-          className: R.h_,
+          className: w.h_,
           variant: "text-md/medium",
           children: _
         })]
       }), (0, r.jsxs)("div", {
-        className: R.jp,
+        className: w.jp,
         children: [(0, r.jsxs)("div", {
-          className: R.qS,
+          className: w.qS,
           children: [(0, r.jsx)(u._Jp, {
             size: "xs",
             color: u.LU0.unsafe_rawColors.ILLO_PINK_40
           }), (0, r.jsx)(u.Text, {
-            className: R.Vv,
+            className: w.Vv,
             variant: "text-sm/semibold",
             children: T.intl.formatToPlainString(null != g ? C.default["G/aTXi"] : C.default.r9pa9K, {
               boostCount: h
             })
           })]
         }), L && (0, r.jsxs)("div", {
-          className: s()(R.qS, R.nt),
+          className: s()(w.qS, w.nt),
           children: [(0, r.jsx)(u.yr3, {
             size: "xs",
             color: "currentColor"
           }), (0, r.jsx)(u.Text, {
-            className: R.nt,
+            className: w.nt,
             variant: "text-sm/semibold",
             children: T.intl.string(T.t.pCMkDb)
           })]
@@ -179,9 +179,9 @@ function L(e) {
       })]
     }), (0, r.jsxs)(o.animated.div, {
       style: q,
-      className: R.NC,
+      className: w.NC,
       children: [(0, r.jsx)("div", {
-        className: R.x6,
+        className: w.x6,
         children: (0, r.jsx)(u.Button, {
           variant: "primary",
           text: T.intl.string(T.t.oPAx73),
@@ -189,7 +189,7 @@ function L(e) {
           fullWidth: true
         })
       }), j && (0, r.jsx)("div", {
-        className: R.x6,
+        className: w.x6,
         children: (0, r.jsx)(u.Button, {
           variant: "secondary",
           text: T.intl.string(T.t.GoCQxU),
@@ -198,7 +198,7 @@ function L(e) {
         })
       })]
     }), N && (0, r.jsx)(u.LpS, {
-      className: R.Ad,
+      className: w.Ad,
       text: T.intl.string(T.t.y2b7CA)
     })]
   })
@@ -243,22 +243,22 @@ let M = 3,
       o = Array.from(null != s ? s : []).reverse().slice(0, M);
     return 0 === o.length ? null : (0, r.jsxs)("div", {
       ref: t,
-      className: R.iE,
+      className: w.iE,
       children: [(0, r.jsxs)("div", {
-        className: R.ND,
+        className: w.ND,
         children: [(0, r.jsx)(u.Heading, {
-          className: R.R_,
+          className: w.R_,
           variant: "heading-xxl/semibold",
           children: T.intl.string(N.default.wjI18Q)
         }), (0, r.jsx)(u.Text, {
-          className: R.fV,
+          className: w.fV,
           variant: "text-md/medium",
           children: T.intl.format(N.default.S562fn, {
             helpDeskArticle: O.A.getArticleURL(A.MVz.GUILD_BOOSTING_FAQ)
           })
         })]
       }), (0, r.jsx)("div", {
-        className: R.vY,
+        className: w.vY,
         children: o.map(e => (0, r.jsx)(j, {
           guildId: n.id,
           powerup: e,

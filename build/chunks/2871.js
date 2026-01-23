@@ -23,11 +23,11 @@ module.exports = function(e, t, n) {
     T = !!(n && n.IS_ITERATOR),
     C = !!(n && n.INTERRUPTED),
     N = r(t, A),
-    R = function(e) {
+    w = function(e) {
       return m && f(m, "normal", e), new _(true, e)
     },
-    w = function(e) {
-      return I ? (a(e), C ? N(e[0], e[1], R) : N(e[0], e[1])) : C ? N(e, R) : N(e)
+    R = function(e) {
+      return I ? (a(e), C ? N(e[0], e[1], w) : N(e[0], e[1])) : C ? N(e, w) : N(e)
     };
   if (S) m = e.iterator;
   else if (T) m = e;
@@ -35,14 +35,14 @@ module.exports = function(e, t, n) {
     if (!(g = d(e))) throw new p(s(e) + " is not iterable");
     if (o(g)) {
       for (E = 0, y = l(e); y > E; E++)
-        if ((b = w(e[E])) && c(h, b)) return b;
+        if ((b = R(e[E])) && c(h, b)) return b;
       return new _(false)
     }
     m = u(e, g)
   }
   for (O = S ? e.next : m.next; !(v = i(O, m)).done;) {
     try {
-      b = w(v.value)
+      b = R(v.value)
     } catch (e) {
       f(m, "throw", e)
     }

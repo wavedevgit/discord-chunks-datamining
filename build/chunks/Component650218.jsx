@@ -56,12 +56,12 @@ function I(e) {
     roleId: T,
     openedAt: C,
     onHide: N,
-    newAnalyticsLocations: R = [],
-    disableAutoFocus: w = false,
+    newAnalyticsLocations: w = [],
+    disableAutoFocus: R = false,
     onClickContainer: P
   } = e, D = (0, a.bG)([c.A], () => c.A.isBlocked(t.id)), {
     analyticsLocations: x
-  } = (0, l.Ay)([...R, D ? o.A.BLOCKED_PROFILE_POPOUT : o.A.IGNORED_PROFILE_POPOUT]), L = (0, d.pb)({
+  } = (0, l.Ay)([...w, D ? o.A.BLOCKED_PROFILE_POPOUT : o.A.IGNORED_PROFILE_POPOUT]), L = (0, d.pb)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
@@ -73,7 +73,7 @@ function I(e) {
     null == v || v(null == j ? true : j.current)
   }, [j, v]);
   let k = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    U = w ? "div" : s.lGe;
+    U = R ? "div" : s.lGe;
   return (0, r.jsx)(l.f5, {
     value: x,
     children: (0, r.jsx)(d.of, {

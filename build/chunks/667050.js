@@ -75,7 +75,7 @@ function V(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 32;
   if (null != e.id) {
     var n;
-    return w.Ay.getEmojiURL({
+    return R.Ay.getEmojiURL({
       id: e.id,
       animated: null != (n = e.animated) && n,
       size: t
@@ -100,15 +100,15 @@ function B(e) {
     l = F(e, "emojiName"),
     c = l.length < 2 ? null != (t = null == l ? true : l[0]) ? t : "" : l.join(", ");
   return o.length < 1 ? "" : 1 === o.length ? x.intl.formatToPlainString(x.t.yZYxzF, {
-    firstUsername: null == (n = R.default.getUser(o[0])) ? true : n.username,
+    firstUsername: null == (n = w.default.getUser(o[0])) ? true : n.username,
     emojiNames: c
   }) : 2 === o.length ? x.intl.formatToPlainString(x.t["8rmtbd"], {
-    firstUsername: null == (r = R.default.getUser(o[0])) ? true : r.username,
-    secondUsername: null == (i = R.default.getUser(o[1])) ? true : i.username,
+    firstUsername: null == (r = w.default.getUser(o[0])) ? true : r.username,
+    secondUsername: null == (i = w.default.getUser(o[1])) ? true : i.username,
     emojiNames: c
   }) : x.intl.formatToPlainString(x.t["/okjv0"], {
-    firstUsername: null == (a = R.default.getUser(o[0])) ? true : a.username,
-    secondUsername: null == (s = R.default.getUser(o[1])) ? true : s.username,
+    firstUsername: null == (a = w.default.getUser(o[0])) ? true : a.username,
+    secondUsername: null == (s = w.default.getUser(o[1])) ? true : s.username,
     count: o.length - 2,
     emojiNames: c
   })

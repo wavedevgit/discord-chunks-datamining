@@ -2,8 +2,8 @@
 /** chunk id: 302959, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w,
-  M: () => R
+  A: () => R,
+  M: () => w
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -119,10 +119,10 @@ function N(e) {
   } = e, A = S(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]), T = (0, a.bG)([m.A, _.A], () => {
     var e;
     return _.A.getChannel(null == (e = m.A.getVoiceStateForUser(n.id)) ? true : e.channelId)
-  }), N = (0, d.v)("UserActivityContainer", T), R = (0, a.bG)([p.A], () => l ? p.A.getAnyStreamForUser(n.id) : null), w = (null == t ? true : t.type) === y.$pd.HANG_STATUS && N ? T : null, P = (0, a.bG)([h.A, m.A, _.A], () => {
+  }), N = (0, d.v)("UserActivityContainer", T), w = (0, a.bG)([p.A], () => l ? p.A.getAnyStreamForUser(n.id) : null), R = (null == t ? true : t.type) === y.$pd.HANG_STATUS && N ? T : null, P = (0, a.bG)([h.A, m.A, _.A], () => {
     var e, r;
-    return (0, s.A)(t, y.jUm.EMBEDDED) ? h.A.getGuild(null == (e = _.A.getChannel(null == (r = m.A.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != w ? h.A.getGuild(w.getGuildId()) : null
-  }), D = (0, a.bG)([h.A], () => null != R ? h.A.getGuild(R.guildId) : null), x = (0, a.bG)([c.A], () => {
+    return (0, s.A)(t, y.jUm.EMBEDDED) ? h.A.getGuild(null == (e = _.A.getChannel(null == (r = m.A.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != R ? h.A.getGuild(R.getGuildId()) : null
+  }), D = (0, a.bG)([h.A], () => null != w ? h.A.getGuild(w.guildId) : null), x = (0, a.bG)([c.A], () => {
     if (null != t)
       if (null != t.application_id) return c.A.getApplication(t.application_id);
       else return c.A.getApplicationByName(t.name);
@@ -132,8 +132,8 @@ function N(e) {
     (null == t ? true : t.type) === y.$pd.HANG_STATUS && N && g.default.track(y.HAw.VIEW_HANG_STATUS, v({
       source: "UserActivity",
       other_user_id: n.id
-    }, (0, u.A)(null == w ? true : w.id)))
-  }, [null == t ? true : t.type, N, w, n.id]), (null == t ? true : t.type) !== y.$pd.HANG_STATUS || N) ? (0, r.jsx)(o.A, I(v({}, A), {
+    }, (0, u.A)(null == R ? true : R.id)))
+  }, [null == t ? true : t.type, N, R, n.id]), (null == t ? true : t.type) !== y.$pd.HANG_STATUS || N) ? (0, r.jsx)(o.A, I(v({}, A), {
     activity: t,
     user: n,
     application: x,
@@ -142,7 +142,7 @@ function N(e) {
     showChannelDetails: O,
     channel: O ? T : true,
     renderActions: E ? () => (0, r.jsx)(C, I(v({}, A), {
-      applicationStream: R,
+      applicationStream: w,
       activity: t,
       user: n
     })) : null,
@@ -151,5 +151,5 @@ function N(e) {
     onOpenSpotifyAlbum: f.QX
   })) : null
 }
-let R = Chunk153331.A.Types,
-  w = N
+let w = Chunk153331.A.Types,
+  R = N

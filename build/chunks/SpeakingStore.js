@@ -120,14 +120,14 @@ function N(e) {
   }, false)
 }
 
-function R(e) {
+function w(e) {
   let {
     isActive: t,
     isLatched: n
   } = e;
   y = n, b = t
 }
-class w extends(r = Chunk311907.Ay.Store) {
+class R extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(l.A, c.A, u.A, d.A)
   }
@@ -188,11 +188,11 @@ class w extends(r = Chunk311907.Ay.Store) {
     }).enabled && null != (t = null == (r = h.get(i)) || null == (n = r.get(e)) ? true : n.voiceDb) ? t : false / 0
   }
 }
-_(w, "displayName", "SpeakingStore");
-let P = new w(Chunk73153.h, {
+_(R, "displayName", "SpeakingStore");
+let P = new R(Chunk73153.h, {
   CONNECTION_OPEN: T,
   OVERLAY_INITIALIZE: T,
   SPEAKING: C,
   VOICE_STATE_UPDATES: N,
-  PUSH_TO_TALK_STATE_CHANGE: R
+  PUSH_TO_TALK_STATE_CHANGE: w
 })

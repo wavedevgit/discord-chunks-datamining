@@ -34,8 +34,8 @@ function v(e) {
       disallowEmptySelection: T = false,
       disallowSelectAll: C = false,
       escapeKeyBehavior: N = "clearSelection",
-      selectOnFocus: R = "replace" === n.selectionBehavior,
-      disallowTypeAhead: w = false,
+      selectOnFocus: w = "replace" === n.selectionBehavior,
+      disallowTypeAhead: R = false,
       shouldUseVirtualFocus: P,
       allowsTabNavigation: D = false,
       isVirtualized: x,
@@ -51,7 +51,7 @@ function v(e) {
       if (e.altKey && "Tab" === e.key && e.preventDefault(), !(null == (t = A.current) ? true : t.contains(e.target))) return;
       let b = (t, i) => {
         if (null != t) {
-          if (n.isLink(t) && "selection" === j && R && !(0, r.N9)(e)) {
+          if (n.isLink(t) && "selection" === j && w && !(0, r.N9)(e)) {
             (0, g.flushSync)(() => {
               n.setFocusedKey(t, i)
             });
@@ -60,7 +60,7 @@ function v(e) {
             a && k.open(a, e, s.href, s.routerOptions);
             return
           }
-          n.setFocusedKey(t, i), n.isLink(t) && "override" === j || (e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : R && !(0, r.N9)(e) && n.replaceSelection(t))
+          n.setFocusedKey(t, i), n.isLink(t) && "override" === j || (e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : w && !(0, r.N9)(e) && n.replaceSelection(t))
         }
       };
       switch (e.key) {
@@ -93,7 +93,7 @@ function v(e) {
             if (null === n.focusedKey && e.shiftKey) return;
             e.preventDefault();
             let t = v.getFirstKey(n.focusedKey, (0, s.B)(e));
-            n.setFocusedKey(t), null != t && ((0, s.B)(e) && e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : R && n.replaceSelection(t))
+            n.setFocusedKey(t), null != t && ((0, s.B)(e) && e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : w && n.replaceSelection(t))
           }
           break;
         case "End":
@@ -101,7 +101,7 @@ function v(e) {
             if (null === n.focusedKey && e.shiftKey) return;
             e.preventDefault();
             let t = v.getLastKey(n.focusedKey, (0, s.B)(e));
-            n.setFocusedKey(t), null != t && ((0, s.B)(e) && e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : R && n.replaceSelection(t))
+            n.setFocusedKey(t), null != t && ((0, s.B)(e) && e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : w && n.replaceSelection(t))
           }
           break;
         case "PageDown":
@@ -154,7 +154,7 @@ function v(e) {
         if (n.setFocused(true), null == n.focusedKey) {
           var t, i, a, s;
           let r = e => {
-              null != e && (n.setFocusedKey(e), R && !n.isSelected(e) && n.replaceSelection(e))
+              null != e && (n.setFocusedKey(e), w && !n.isSelected(e) && n.replaceSelection(e))
             },
             o = e.relatedTarget;
           o && e.currentTarget.compareDocumentPosition(o) & Node.DOCUMENT_POSITION_FOLLOWING ? r(null != (a = n.lastSelectedKey) ? a : null == (t = v.getLastKey) ? true : t.call(v)) : r(null != (s = n.firstSelectedKey) ? s : null == (i = v.getFirstKey) ? true : i.call(v))
@@ -233,7 +233,7 @@ function v(e) {
   }, []), (0, l._)(A, "react-aria-focus-scope-restore", e => {
     e.preventDefault(), n.setFocused(true)
   });
-  let X = {
+  let Z = {
       onKeyDown: U,
       onFocus: V,
       onBlur: F,
@@ -242,15 +242,15 @@ function v(e) {
       }
     },
     {
-      typeSelectProps: Z
+      typeSelectProps: X
     } = (0, i.I)({
       keyboardDelegate: v,
       selectionManager: n
     });
-  w || (X = (0, _.v)(Z, X)), P || (t = null == n.focusedKey ? 0 : false);
+  R || (Z = (0, _.v)(X, Z)), P || (t = null == n.focusedKey ? 0 : false);
   let Q = (0, r.j5)(n.collection);
   return {
-    collectionProps: (0, _.v)(X, {
+    collectionProps: (0, _.v)(Z, {
       tabIndex: t,
       "data-collection": Q
     })

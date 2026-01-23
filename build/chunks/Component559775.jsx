@@ -67,8 +67,8 @@ function O(e, t) {
     (0, d.r$)(_.kx.STICKER, a, g.id)
   }, [a, g.id]), {
     Component: N,
-    events: R,
-    play: w
+    events: w,
+    play: R
   } = (0, l.g)(), P = (0, f.p)(u.w);
   return n ? null : (0, r.jsx)("div", {
     className: s()(_.VQ, m.UD),
@@ -79,9 +79,9 @@ function O(e, t) {
       keyboardShortcut: P,
       children: (0, r.jsx)(p.A, b(E({
         className: s()(m.x6, m.KE)
-      }, R), {
+      }, w), {
         onClick: () => {
-          C(), w()
+          C(), R()
         },
         isActive: S,
         "aria-label": h.intl.string(h.t.rZpidU),

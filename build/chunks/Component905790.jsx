@@ -30,29 +30,29 @@ let O = function(e) {
     metadata: S
   } = (0, g.fy)(), T = [];
   !n && null == I && (v && !O && T.push(a.M.CLIENT_THEMES_COACHMARK), A && O && T.push(a.M.CUSTOM_THEME_COACHMARK));
-  let [C, N] = (0, p.kn)(T, y.m.SIDEBAR, true), R = C === a.M.CLIENT_THEMES_COACHMARK, w = C === a.M.CUSTOM_THEME_COACHMARK;
+  let [C, N] = (0, p.kn)(T, y.m.SIDEBAR, true), w = C === a.M.CLIENT_THEMES_COACHMARK, R = C === a.M.CUSTOM_THEME_COACHMARK;
   if (n) return null;
-  let P = I === g.HP.CLIENT_THEMES || R,
+  let P = I === g.HP.CLIENT_THEMES || w,
     D = I === g.HP.APP_ICON,
-    x = I === g.HP.CUSTOM_THEME || w,
+    x = I === g.HP.CUSTOM_THEME || R,
     L = I === g.HP.APPLICATION_TEST_MODE_DEBUG;
   if (!(P || D || x || L)) return null;
   let j = () => (0, r.jsxs)(r.Fragment, {
     children: [P && (0, r.jsx)(u.A, {
-      markAsDismissed: R ? N : () => {
+      markAsDismissed: w ? N : () => {
         (0, f.Dr)(a.M.CLIENT_THEMES_COACHMARK, {
           dismissAction: y.i.INDIRECT_ACTION,
           forceTrack: true
         })
       },
-      showClientThemesCoachmark: R
+      showClientThemesCoachmark: w
     }), D && (0, r.jsx)(s.A, {
       isCoachmark: false,
       markAsDismissed: N
     }), x && (0, r.jsx)(d.A, {
       metadata: null != S ? S : {},
       markAsDismissed: N,
-      isCoachmark: w,
+      isCoachmark: R,
       isMobile: t
     }), L && (0, r.jsx)(o.A, {})]
   });

@@ -104,7 +104,7 @@ function N() {
   }
 }
 
-function R() {
+function w() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : y.SIZE_24;
   switch (e) {
     case y.SIZE_16:
@@ -119,7 +119,7 @@ function R() {
       return b
   }
 }
-class w extends(r = Chunk64700.PureComponent) {
+class R extends(r = Chunk64700.PureComponent) {
   renderUsers() {
     let {
       users: e,
@@ -246,7 +246,7 @@ class w extends(r = Chunk64700.PureComponent) {
             className: _.my
           })
         } if (e === I) {
-        let e = R(c);
+        let e = w(c);
         r = (0, i.jsx)(l.nys, {
           size: "custom",
           color: "currentColor",
@@ -275,11 +275,11 @@ class w extends(r = Chunk64700.PureComponent) {
     })
   }
 }
-h(w, "defaultProps", {
+h(R, "defaultProps", {
   max: 10,
   renderMoreUsers: T,
   renderIcon: false,
   showDefaultAvatarsForNullUsers: false,
   size: y.SIZE_24
 });
-let P = w
+let P = R

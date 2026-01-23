@@ -65,9 +65,9 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = 150;
+let w = 150;
 
-function w(e, t) {
+function R(e, t) {
   switch (e) {
     case O.lp.ACTIVITY:
       return A.intl.formatToPlainString(A.t.TCM94S, {
@@ -90,7 +90,7 @@ function P(e) {
     participantType: a,
     channelId: o,
     handleUserContextMenu: l
-  } = e, c = w(a, t.length);
+  } = e, c = R(a, t.length);
   return (0, r.jsx)(f.lGe, {
     "aria-label": c,
     className: I.XM,
@@ -126,7 +126,7 @@ function D(e) {
     maxVisibleUsers: a = 3,
     className: o,
     participantType: l
-  } = e, c = w(l, t.length), u = t.length < a ? A.intl.format(A.t["A+bT9O"], {
+  } = e, c = R(l, t.length), u = t.length < a ? A.intl.format(A.t["A+bT9O"], {
     users: t.length,
     user1: b.Ay.getName(n, i, t[0]),
     user2: b.Ay.getName(n, i, t[1]),
@@ -159,7 +159,7 @@ function L(e) {
     compact: m = false,
     disableInteraction: b = false,
     maxVisibleUsers: A = 3
-  } = e, S = i.useRef(null), C = (0, h.A)(), [w, L] = i.useState(false), j = i.useRef(new u.J_(R, () => L(false))), M = (0, c.yK)([g.A, E.default], () => {
+  } = e, S = i.useRef(null), C = (0, h.A)(), [R, L] = i.useState(false), j = i.useRef(new u.J_(w, () => L(false))), M = (0, c.yK)([g.A, E.default], () => {
     if (o.type === O.lp.STREAM) {
       let e = g.A.getViewerIds(o.id);
       return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(y.Vq) : x
@@ -220,7 +220,7 @@ function L(e) {
           users: M,
           disableInteraction: b
         }),
-        shouldShow: w && !C,
+        shouldShow: R && !C,
         position: "top",
         children: () => (0, r.jsx)("div", {
           ref: S,

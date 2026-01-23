@@ -108,8 +108,8 @@ class S extends Chunk536802.A {
     super({
       CACHE_LOADED_LAZY_NO_CACHE: j,
       CACHE_LOADED_LAZY: () => this.loadCache(),
-      CHANNEL_DELETE: w,
-      CHANNEL_UPDATES: R,
+      CHANNEL_DELETE: R,
+      CHANNEL_UPDATES: w,
       CONNECTION_OPEN_SUPPLEMENTAL: C,
       GUILD_DELETE: x,
       LOGIN_SUCCESS: L,
@@ -135,11 +135,11 @@ function N(e) {
   n && t === r && S.recordChannel(t), n || S.deleteChannel(t)
 }
 
-function R(e) {
+function w(e) {
   for (let t of e.channels) N(t)
 }
 
-function w(e) {
+function R(e) {
   S.deleteChannel(e.channel.id)
 }
 

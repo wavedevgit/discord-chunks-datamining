@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   VN: () => D,
-  fy: () => R,
-  nJ: () => w,
+  fy: () => w,
+  nJ: () => R,
   sk: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -155,7 +155,7 @@ function N(e) {
     }))
   })
 }
-class R extends Chunk64700.PureComponent {
+class w extends Chunk64700.PureComponent {
   render() {
     let {
       color: e,
@@ -173,7 +173,7 @@ class R extends Chunk64700.PureComponent {
     })
   }
 }
-class w extends Chunk64700.PureComponent {
+class R extends Chunk64700.PureComponent {
   render() {
     let {
       customColor: e,
@@ -204,13 +204,13 @@ function P(e) {
     showEyeDropper: E,
     wrapperComponentType: b,
     className: v
-  } = e, A = (0, _.A)(), T = C(t), N = null != T ? T : 0, R = (0, c.Hl)(N), w = (0, c.tf)(N), [P, D] = i.useState({
+  } = e, A = (0, _.A)(), T = C(t), N = null != T ? T : 0, w = (0, c.Hl)(N), R = (0, c.tf)(N), [P, D] = i.useState({
     current: N,
     pending: {
-      hex: R,
-      hsl: w
+      hex: w,
+      hsl: R
     },
-    input: R
+    input: w
   });
   i.useEffect(() => {
     if (null == T || T === P.current) return;
@@ -334,14 +334,14 @@ function x(e) {
       disabled: d,
       isGradient: false
     }, e))
-  }), S = a.slice(0, a.length / 2), C = a.slice(a.length / 2, a.length), R = (0, l.Ay)({
+  }), S = a.slice(0, a.length / 2), C = a.slice(a.length / 2, a.length), w = (0, l.Ay)({
     id: "color-picker",
     isEnabled: true,
     scrollToStart: T,
     scrollToEnd: T
   });
   return (0, r.jsx)(o.hD, {
-    navigator: R,
+    navigator: w,
     children: (0, r.jsx)(o.PR, {
       children: e => {
         let {

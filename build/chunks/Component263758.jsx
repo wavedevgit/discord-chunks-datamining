@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 263758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -90,7 +90,7 @@ function y() {
         },
         rejectWithError: false
       }), await C()
-    }, E = async () => {
+    }, T = async () => {
       await o.Bo.del({
         url: "/debug/subscription",
         rejectWithError: false
@@ -145,7 +145,7 @@ function y() {
           variant: "primary",
           size: "sm",
           text: "End All Subscriptions",
-          onClick: E
+          onClick: T
         })
       }), S.length > 0 && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(c.Heading, {

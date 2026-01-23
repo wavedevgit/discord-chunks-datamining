@@ -10,9 +10,9 @@ require.d(exports, {
   LX: () => V,
   Og: () => G,
   Or: () => B,
-  RD: () => w,
+  RD: () => R,
   RE: () => M,
-  Sw: () => R,
+  Sw: () => w,
   gB: () => L,
   gn: () => D,
   h$: () => F,
@@ -94,15 +94,15 @@ let N = e => {
       let {
         default: e
       } = n(12901);
-      R(r), e(), (0, u.pX)(t ? A.BVt.COLLECTIBLES_SHOP_WITH_TAB(t) : A.BVt.COLLECTIBLES_SHOP)
+      w(r), e(), (0, u.pX)(t ? A.BVt.COLLECTIBLES_SHOP_WITH_TAB(t) : A.BVt.COLLECTIBLES_SHOP)
     }
   },
-  R = e => {
+  w = e => {
     o.h.dispatch(S({
       type: "COLLECTIBLES_SHOP_OPEN"
     }, e))
   },
-  w = e => {
+  R = e => {
     o.h.dispatch({
       type: "COLLECTIBLES_PRODUCT_DETAILS_OPEN",
       item: e

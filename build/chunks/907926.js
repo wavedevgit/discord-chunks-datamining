@@ -50,14 +50,14 @@ class S extends Chunk439372.A {
       C = (null != (e = h.analyticsContext.getDuration()) ? e : 30) >= 30 * _.A.Millis.SECOND ? 30 : 15;
     if (null == T || T.numDatapoints < C) return;
     let N = p.default.getCurrentUser(),
-      R = u.A.getGuild(s.guildId),
-      [w, P] = null != (t = (0, g.A)(E.jQ.PRESET_DOCUMENTS, N, null == R ? true : R.premiumTier)) ? t : [E.on.RESOLUTION_SOURCE, E.kn.FPS_5],
-      [D, x] = null != (n = (0, g.A)(E.jQ.PRESET_VIDEO, N, null == R ? true : R.premiumTier)) ? n : [E.on.RESOLUTION_720, E.kn.FPS_30],
+      w = u.A.getGuild(s.guildId),
+      [R, P] = null != (t = (0, g.A)(E.jQ.PRESET_DOCUMENTS, N, null == w ? true : w.premiumTier)) ? t : [E.on.RESOLUTION_SOURCE, E.kn.FPS_5],
+      [D, x] = null != (n = (0, g.A)(E.jQ.PRESET_VIDEO, N, null == w ? true : w.premiumTier)) ? n : [E.on.RESOLUTION_720, E.kn.FPS_30],
       L = null;
-    if (T.entropy < b && (S.resolution !== w || S.fps !== P) ? (A.info("Low entropy average, switching to screenshare preset."), L = {
+    if (T.entropy < b && (S.resolution !== R || S.fps !== P) ? (A.info("Low entropy average, switching to screenshare preset."), L = {
         qualityOptions: {
           preset: E.jQ.PRESET_AUTO,
-          resolution: w,
+          resolution: R,
           frameRate: P
         },
         context: i.x.STREAM

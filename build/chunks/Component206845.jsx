@@ -87,10 +87,10 @@ function A(e) {
     "aria-label": p,
     delay: h = O,
     dataMeticulousIgnore: E
-  } = e, [A, I] = i.useState(0), [S, T] = i.useState(false), [C, N] = i.useState(false), [R] = i.useState(() => new s.Ep), [w] = i.useState(() => new s.Ep);
+  } = e, [A, I] = i.useState(0), [S, T] = i.useState(false), [C, N] = i.useState(false), [w] = i.useState(() => new s.Ep), [R] = i.useState(() => new s.Ep);
   if (i.useEffect(() => () => {
-      R.stop(), w.stop()
-    }, [R, w]), !c.p5) return (0, r.jsx)(r.Fragment, {
+      w.stop(), R.stop()
+    }, [w, R]), !c.p5) return (0, r.jsx)(r.Fragment, {
     children: u({})
   });
   let P = A >= v.length - 1,
@@ -110,7 +110,7 @@ function A(e) {
       !C && S && t.phase === d.lLE.LEAVE && T(false)
     },
     M = () => {
-      null == f || f(), (0, c.C)(n), l.default.track(d.HAw.TEXT_COPIED), C || I(A + 1), N(true), T(true), R.start(y, () => N(false)), w.start(b, () => I(0))
+      null == f || f(), (0, c.C)(n), l.default.track(d.HAw.TEXT_COPIED), C || I(A + 1), N(true), T(true), w.start(y, () => N(false)), R.start(b, () => I(0))
     };
   return (0, r.jsx)(o.STz, {
     text: L(),
@@ -134,7 +134,7 @@ function A(e) {
             null == n || n();
             return
           }
-          R.stop(), N(false)
+          w.stop(), N(false)
         }
       }))
     }

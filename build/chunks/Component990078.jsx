@@ -74,12 +74,12 @@ function g(e) {
     caretConfig: S,
     positionKey: T,
     ariaHidden: C = false
-  } = e, N = h(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "anchorRef", "caretConfig", "positionKey", "ariaHidden"]), [R, w] = i.useState(null);
+  } = e, N = h(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "anchorRef", "caretConfig", "positionKey", "ariaHidden"]), [w, R] = i.useState(null);
   i.useLayoutEffect(() => {
-    null != I && w(I.current)
+    null != I && R(I.current)
   }, [I]);
   let P = i.useCallback(e => {
-      null == I && w(e), (0, c.cZ)(A, e)
+      null == I && R(e), (0, c.cZ)(A, e)
     }, [A, I]),
     {
       tooltipId: D,
@@ -125,7 +125,7 @@ function g(e) {
       isVisible: x,
       isRendered: F,
       targetElementRef: L,
-      targetElement: R,
+      targetElement: w,
       anchorRef: I,
       id: D,
       content: G,

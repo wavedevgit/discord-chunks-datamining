@@ -97,13 +97,13 @@ function V(e) {
     })
   }), {
     preset: q,
-    onShuffle: X
-  } = (0, f.A)(), Z = i.useRef(null);
-  (0, b.A)(Z, x._F.TRY_IT_OUT);
+    onShuffle: Z
+  } = (0, f.A)(), X = i.useRef(null);
+  (0, b.A)(X, x._F.TRY_IT_OUT);
   let {
     analyticsLocations: Q,
-    newestAnalyticsLocation: $,
-    sourceAnalyticsLocations: J
+    newestAnalyticsLocation: J,
+    sourceAnalyticsLocations: $
   } = (0, c.Ay)(l.A.USER_SETTINGS_TRY_OUT_PREMIUM), ee = e => {
     e && ((0, o.zq)(K), (0, y.Zz)(W), (0, y.Dv)(z), v.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
       preset: q
@@ -115,9 +115,9 @@ function V(e) {
       location: {
         page: P.liQ.USER_SETTINGS
       },
-      location_stack: J
+      location_stack: $
     })
-  }, [J, M, U]);
+  }, [$, M, U]);
   let et = (null == (n = (0, d.V)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === D.pe.TIER_2,
     en = (0, u.O)(),
     er = (0, _.U9)(en, D.pe.TIER_2),
@@ -127,7 +127,7 @@ function V(e) {
   return V ? (0, r.jsx)(c.f5, {
     value: Q,
     children: (0, r.jsxs)(C.A, {
-      ref: Z,
+      ref: X,
       className: j.MT,
       type: C.i.PREMIUM,
       isShown: true,
@@ -144,8 +144,8 @@ function V(e) {
         profilePreview: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(p.A, {
             preset: q,
-            onShuffle: X
-          }), (0, r.jsx)(w.A, {
+            onShuffle: Z
+          }), (0, r.jsx)(R.A, {
             user: M
           })]
         }),
@@ -160,7 +160,7 @@ function V(e) {
               variant: "text-sm/normal",
               children: L.intl.string(L.t.xeEC20)
             })]
-          }), (0, r.jsx)(R.A, {
+          }), (0, r.jsx)(w.A, {
             className: j.fz,
             user: M,
             pendingAvatarSrc: (0, E.V7)({
@@ -199,7 +199,7 @@ function V(e) {
         text: L.intl.format(L.t.TmfgI2, {
           onClick: () => {
             (0, g.K)({
-              analyticsSource: $,
+              analyticsSource: J,
               onSubscribeFinish: ee
             })
           }

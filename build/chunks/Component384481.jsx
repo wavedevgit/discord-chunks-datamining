@@ -31,7 +31,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk996988 = require("./996988.js"),
   Chunk380297 = require("./380297.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,14 +40,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -75,7 +75,7 @@ function x(e) {
     user: t,
     currentUser: n,
     activity: a,
-    className: R,
+    className: w,
     onClose: P
   } = e, x = (0, _.GV)(), L = (0, _.GV)(), {
     themeType: j
@@ -144,11 +144,11 @@ function x(e) {
     value: V,
     children: (0, r.jsxs)(O.A, {
       ref: B,
-      className: s()(N.Nr, R),
+      className: s()(N.Nr, w),
       onAction: F,
       onClose: P,
       "aria-labelledby": U ? "".concat(L, " ").concat(x) : x,
-      children: [(0, r.jsx)(v.A, D(w({
+      children: [(0, r.jsx)(v.A, D(R({
         textId: L
       }, k), {
         contextMenu: (0, r.jsx)(T.A, {

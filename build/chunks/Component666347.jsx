@@ -32,7 +32,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk209943 = require("./209943.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -59,12 +59,12 @@ function x(e) {
     onDisable: c,
     onCrashDisabled: u
   } = e, p = i.useMemo(() => new o.SpringValue(1), []), m = i.useRef(null), [g, b] = i.useState(false), [O, v] = i.useState(false), A = (0, d.bG)([E.default], () => E.default.getCurrentUser());
-  (0, h.Ay)(() => (m.current = setTimeout(w, D), _.A.track(C.HAw.NOTIFICATION_VIEWED, {
+  (0, h.Ay)(() => (m.current = setTimeout(R, D), _.A.track(C.HAw.NOTIFICATION_VIEWED, {
     notif_type: T.KS.OverlayCrashed
   }), () => {
     null != m.current && clearTimeout(m.current)
   }));
-  let w = i.useCallback(() => {
+  let R = i.useCallback(() => {
       p.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == s || s(), null == u || u()
     }, [p, s, u]),
     P = i.useCallback(e => {
@@ -86,7 +86,7 @@ function x(e) {
         color: "text-strong",
         children: N.intl.string(N.t.mn4eXC)
       }), (0, r.jsxs)("div", {
-        className: R.Xh,
+        className: w.Xh,
         children: [(0, r.jsx)(f.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
@@ -95,7 +95,7 @@ function x(e) {
           variant: "text-xxs/normal",
           color: "text-subtle",
           children: (0, r.jsx)("code", {
-            className: R.aY,
+            className: w.aY,
             children: (0, r.jsx)("pre", {
               children: a.stack
             })
@@ -114,7 +114,7 @@ function x(e) {
     icon: (0, r.jsx)(y.A, {
       width: 40,
       height: 40,
-      className: R.Lo
+      className: w.Lo
     }),
     onNotificationClick: x,
     onConfirmClick: P,
@@ -127,8 +127,8 @@ function x(e) {
     status: C.yFH.ACTIVE,
     containerRef: null,
     contentOpacity: p,
-    className: R.Pl,
-    wrapperClassName: R.fl
+    className: w.Pl,
+    wrapperClassName: w.fl
   })
 }
 class L extends Chunk64700.PureComponent {
@@ -164,7 +164,7 @@ class L extends Chunk64700.PureComponent {
       showError: i
     } = this.state;
     return null != n ? i ? (0, r.jsx)(A.A, {
-      className: R.wz,
+      className: w.wz,
       children: (0, r.jsx)(x, {
         error: n,
         onLock: () => {
@@ -197,11 +197,11 @@ class L extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), w(this, "state", {
+    super(...e), R(this, "state", {
       error: null,
       showError: true,
       info: null
-    }), w(this, "pid", null)
+    }), R(this, "pid", null)
   }
 }
 let j = L

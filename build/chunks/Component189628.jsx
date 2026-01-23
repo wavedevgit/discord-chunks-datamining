@@ -72,19 +72,19 @@ function N(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = R(e, t), Object.getOwnPropertySymbols)
+  if (a = w(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let w = (e, t) => "".concat(e, ":").concat(t),
+let R = (e, t) => "".concat(e, ":").concat(t),
   P = Chunk64700.forwardRef(function(e, t) {
     let [n, ...i] = [e, t], {
       emoji: a,
@@ -98,8 +98,8 @@ let w = (e, t) => "".concat(e, ":").concat(t),
       rowIndex: b,
       size: I,
       surrogateCodePoint: T,
-      allowAnimatedEmoji: R,
-      selectedItemClassName: w,
+      allowAnimatedEmoji: w,
+      selectedItemClassName: R,
       inNitroLockedSection: P
     } = n, D = N(n, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]), [x] = i, L = (0, o.bG)([E.A], () => a.type === p.i.GUILD ? E.A.getGuild(a.guildId) : true, [a]), j = () => {
       let e = (0, y.N)(a);
@@ -116,7 +116,7 @@ let w = (e, t) => "".concat(e, ":").concat(t),
           [A.lG]: u,
           [A.Lh]: d,
           [A.Bx]: f,
-          [null != w ? w : ""]: f,
+          [null != R ? R : ""]: f,
           [A.TV]: m
         }),
         "data-type": h.g.EMOJI,
@@ -132,7 +132,7 @@ let w = (e, t) => "".concat(e, ":").concat(t),
           emoji: a,
           size: I,
           surrogateCodePoint: T,
-          allowAnimatedEmoji: R,
+          allowAnimatedEmoji: w,
           isLocked: M
         })
       }))
@@ -153,7 +153,7 @@ function D(e) {
     isUsingKeyboardNavigation: A,
     showEmojiFavoriteTooltip: I,
     surrogateCodePoint: T,
-    selectedItemClassName: R,
+    selectedItemClassName: w,
     getEmojiItemProps: D,
     isMediumSize: x,
     isLargeSize: L,
@@ -167,8 +167,8 @@ function D(e) {
   } = e, [B, H] = i.useState(""), Y = (0, o.bG)([d.A], () => d.A.useReducedMotion), W = (0, o.bG)([f.Ay], () => f.Ay.getDisambiguatedEmojiContext(h), [h]), K = i.useRef(null), {
     emoji: z,
     size: q,
-    isDisabled: X,
-    columnIndex: Z
+    isDisabled: Z,
+    columnIndex: X
   } = a, Q = e => {
     if (e.stopPropagation(), O.current || A.current) return;
     let t = e.altKey;
@@ -176,46 +176,46 @@ function D(e) {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: t
     })
-  }, $ = () => {
+  }, J = () => {
     O.current || A.current || E(a)
-  }, J = e => {
+  }, $ = e => {
     (0, u.L3)(e, async () => {
       let {
         default: e
       } = await n.e("46132").then(n.bind(n, 233503));
       return t => (0, r.jsx)(e, S({}, t))
     })
-  }, ee = null != (t = D(Z, p)) ? t : {}, {
+  }, ee = null != (t = D(X, p)) ? t : {}, {
     ref: et,
     tabIndex: en,
     onFocus: er
-  } = ee, ei = N(ee, ["ref", "tabIndex", "onFocus"]), ea = B !== w(Z, p) ? (0, r.jsx)(P, {
+  } = ee, ei = N(ee, ["ref", "tabIndex", "onFocus"]), ea = B !== R(X, p) ? (0, r.jsx)(P, {
     ref: et,
     emoji: z,
     isFavorite: W.isFavoriteEmojiWithoutFetchingLatest(z),
     isLargeSize: L,
     isMediumSize: x,
     isInspected: c,
-    isDisabled: X,
+    isDisabled: Z,
     showPulse: j === s,
     allowAnimatedEmoji: M,
-    onFocus: null != er ? er : $,
-    onMouseMove: $,
+    onFocus: null != er ? er : J,
+    onMouseMove: J,
     onClick: e => {
       if (null != K.current && null != V && null != U && !e.shiftKey && null != z.name && G && !Y && M) {
         let e = null == z.id ? _.Ay.convertNameToSurrogate(z.name) : z.name,
           t = K.current.getBoundingClientRect();
-        t.x = V.x + (Z + 1) * q, H(w(Z, p)), (0, g.h)(U, e, z.id, t)
+        t.x = V.x + (X + 1) * q, H(R(X, p)), (0, g.h)(U, e, z.id, t)
       }
       Q(e)
     },
-    onContextMenu: J,
+    onContextMenu: $,
     tabIndex: en,
-    columnIndex: Z,
+    columnIndex: X,
     rowIndex: p,
     size: q,
     surrogateCodePoint: T,
-    selectedItemClassName: R,
+    selectedItemClassName: w,
     inNitroLockedSection: F
   }) : null;
   return (0, i.createElement)("li", C(S({}, ei), {

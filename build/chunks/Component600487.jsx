@@ -56,11 +56,11 @@ let q = () => {
     n = i.useRef(null),
     a = i.useRef(null),
     q = i.useRef(null),
-    X = i.useRef(null),
-    Z = (0, o.bG)([f.A], () => f.A.useReducedMotion),
+    Z = i.useRef(null),
+    X = (0, o.bG)([f.A], () => f.A.useReducedMotion),
     Q = (0, d.Ay)(),
-    $ = (0, c.Mw)(Q),
-    [J, ee] = i.useState(false),
+    J = (0, c.Mw)(Q),
+    [$, ee] = i.useState(false),
     [et, en] = i.useState(false),
     [er, ei] = i.useState(false),
     [ea, es] = i.useState(false),
@@ -77,7 +77,7 @@ let q = () => {
     em = (0, A.A)({
       location: "PremiumMarketing"
     }),
-    eg = !J && !er && (em || !et);
+    eg = !$ && !er && (em || !et);
   i.useEffect(() => {
     el(true)
   }, []);
@@ -98,19 +98,19 @@ let q = () => {
       variant: eC
     } = (0, v.Ay)("PremiumBrandRefreshMarketingHeroHeading"),
     eN = (0, S.V)(),
-    eR = (0, I.O)(),
-    ew = E.A.getAlmostExpiringTrialOffers([B.pe.TIER_2]).length > 0 && null != eN && null != eN.expires_at && eN.trial_id !== B.Dw,
-    eP = E.A.getAlmostExpiringDiscountOffers([B.pe.TIER_2]).length > 0 && null != eR && null != eR.expires_at,
-    eD = ew ? eN.expires_at : eP ? eR.expires_at : null,
-    ex = eC === v.CJ.HERO_COUNTDOWN && (ew || eP) && null != eD,
+    ew = (0, I.O)(),
+    eR = E.A.getAlmostExpiringTrialOffers([B.pe.TIER_2]).length > 0 && null != eN && null != eN.expires_at && eN.trial_id !== B.Dw,
+    eP = E.A.getAlmostExpiringDiscountOffers([B.pe.TIER_2]).length > 0 && null != ew && null != ew.expires_at,
+    eD = eR ? eN.expires_at : eP ? ew.expires_at : null,
+    ex = eC === v.CJ.HERO_COUNTDOWN && (eR || eP) && null != eD,
     eL = (0, r.jsxs)("div", {
       className: s()(eT.container, eT.responsiveContainer, {
-        [eT.containerBackground]: em || $,
-        [W.fadeInFromTop]: !Z && em
+        [eT.containerBackground]: em || J,
+        [W.fadeInFromTop]: !X && em
       }),
       "data-cy": "tier-0-marketing-page",
       children: [em && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(w.A, {
+        children: [(0, r.jsx)(R.A, {
           className: s()(W.topOfPageGradient, {
             [W.topOfPageGradientWithCountdown]: ex
           })
@@ -144,7 +144,7 @@ let q = () => {
             }) : (0, r.jsx)(U.A, {
               ref: a,
               subscriptionTier: ef,
-              isDarkMode: $,
+              isDarkMode: J,
               isEligibleForBogoPromotion: ep,
               videoRef: t
             })
@@ -157,17 +157,17 @@ let q = () => {
         }), (0, r.jsx)("div", {
           className: eT.whatsNewSectionContainer,
           ref: ev.ref,
-          children: (0, r.jsx)(R.Ct, {
+          children: (0, r.jsx)(w.Ct, {
             shouldLoadVideo: eo,
-            isReducedMotion: Z,
+            isReducedMotion: X,
             enablePremiumBrandRefreshDesign: em
           })
         }), (0, r.jsx)("div", {
           className: eT.bestOfNitroSectionContainer,
           ref: eA.ref,
-          children: (0, r.jsx)(R.oO, {
+          children: (0, r.jsx)(w.oO, {
             shouldLoadVideo: eo,
-            isReducedMotion: Z,
+            isReducedMotion: X,
             enablePremiumBrandRefreshDesign: em
           })
         }), (0, r.jsx)("div", {
@@ -207,17 +207,17 @@ let q = () => {
           className: eT.bottomOfPageVisibilitySensor
         })
       }), (0, r.jsx)(l.L, {
-        innerRef: X,
+        innerRef: Z,
         onChange: e => {
           en(e)
         },
         children: em ? (0, r.jsx)(x.A, {
-          ref: X
+          ref: Z
         }) : (0, r.jsx)(k.A, {
-          ref: X,
+          ref: Z,
           isFooterVisible: et,
-          isDarkMode: $,
-          isReducedMotion: Z,
+          isDarkMode: J,
+          isReducedMotion: X,
           subscriptionTier: ef
         })
       }), em && (0, r.jsxs)(r.Fragment, {
@@ -225,7 +225,7 @@ let q = () => {
           isVisible: eg && eo,
           subscriptionTier: ef,
           isEligibleForBogoPromotion: ep
-        }), (0, r.jsx)(w.A, {
+        }), (0, r.jsx)(R.A, {
           className: W.bottomOfPageGradient
         })]
       })]

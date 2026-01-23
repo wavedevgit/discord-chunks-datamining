@@ -43,8 +43,8 @@ function N() {
       }
     } = (0, l.bG)([p.A], () => p.A.getCheckpointData()),
     N = 0 === a,
-    R = n > 0 || 0 === a,
-    w = () => {
+    w = n > 0 || 0 === a,
+    R = () => {
       (0, u.A)(d.A.getArticleURL(O.MVz.QUESTS_LEARN_MORE))
     };
   return (0, r.jsxs)(g.A, {
@@ -71,12 +71,12 @@ function N() {
         })]
       }), !N && (0, r.jsx)(y.A, {
         end: a
-      }), R && (0, r.jsx)(E.A, {
+      }), w && (0, r.jsx)(E.A, {
         variant: "heading-xxl/medium",
         className: S.VA,
         children: 0 === a ? A.intl.format(v.default.UYTBoT, {
           learnMoreHook: (e, t) => (0, r.jsx)(o.DUT, {
-            onClick: w,
+            onClick: R,
             className: S.C2,
             children: (0, r.jsx)(E.A, {
               variant: "heading-xxl/medium",

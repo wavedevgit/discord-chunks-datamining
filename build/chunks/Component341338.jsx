@@ -412,7 +412,7 @@ class eh extends Chunk64700.PureComponent {
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(N.HI, {
           location: e.name
-        }), this.renderJsonLD(), this.renderHeader(e, t), (0, r.jsx)($.A, {
+        }), this.renderJsonLD(), this.renderHeader(e, t), (0, r.jsx)(J.A, {
           game: e
         }), n]
       })
@@ -556,8 +556,8 @@ class eh extends Chunk64700.PureComponent {
             }),
             children: [null != t ? (0, j.A)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
               children: "deprecated!"
-            }) : null, (0, r.jsx)(J.A, {
-              messageStyle: J.g.SHORT,
+            }) : null, (0, r.jsx)($.A, {
+              messageStyle: $.g.SHORT,
               className: ec.Mb
             })]
           })

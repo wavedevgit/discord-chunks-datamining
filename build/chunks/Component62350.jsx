@@ -216,8 +216,8 @@ function B(e) {
     B = o.state === P.elq.ACCEPTING,
     Y = null != v;
   if (null == v) {
-    if (null == o.guild) return (0, r.jsx)(w.A, {});
-    v = (0, R.DY)(o.guild)
+    if (null == o.guild) return (0, r.jsx)(R.A, {});
+    v = (0, w.DY)(o.guild)
   }
   a = Y ? D ? L.intl.string(L.t.DPfdsq) : j ? L.intl.string(L.t.sqe0hj) : L.intl.string(L.t.RscU7I) : L.intl.string(L.t["2BP08E"]);
   let W = Y && !k || Y && D;
@@ -267,7 +267,7 @@ function H(e) {
     id: t.id,
     icon: I,
     bot: A
-  }), T = (0, b.F)(t), C = (0, y.f)(t), R = n.length, w = i.useMemo(() => [{
+  }), T = (0, b.F)(t), C = (0, y.f)(t), w = n.length, R = i.useMemo(() => [{
     label: p,
     trackingArea: a ? E.kY.PLAY : E.kY.JOIN_SERVER,
     submitting: f,
@@ -288,11 +288,11 @@ function H(e) {
         guild: o,
         hasEnded: !d,
         textColor: "none"
-      }), a ? R > 0 && (0, r.jsx)(g.$, {
+      }), a ? w > 0 && (0, r.jsx)(g.$, {
         activityUsers: n,
         guildId: o.id,
         activityText: L.intl.formatToPlainString(L.t.yJj035, {
-          count: R
+          count: w
         })
       }) : (0, r.jsx)(V, {
         members: c,
@@ -300,7 +300,7 @@ function H(e) {
         textColor: "none"
       })]
     }),
-    actions: w,
+    actions: R,
     onClickContent: T,
     trackingConfig: {
       id: t.id,

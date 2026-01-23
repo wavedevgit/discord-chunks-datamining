@@ -2,7 +2,7 @@
 /** chunk id: 855057, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./747238.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -65,7 +65,7 @@ function C(e, t) {
   }), e
 }
 let N = e => e.stopPropagation();
-class R extends Chunk64700.PureComponent {
+class w extends Chunk64700.PureComponent {
   componentDidMount() {
     u.V$(), document.addEventListener("keydown", this.backToFrontPage), "" !== this.props.query && this.search(this.props.query, y.dD.SEARCH)
   }
@@ -232,7 +232,7 @@ class R extends Chunk64700.PureComponent {
     })
   }
 }
-let w = Chunk64700.forwardRef((e, t) => {
+let R = Chunk64700.forwardRef((e, t) => {
   i.useEffect(() => {
     if (!e.persistSearch) {
       var t;
@@ -250,7 +250,7 @@ let w = Chunk64700.forwardRef((e, t) => {
     resultItems: p.A.getResultItems(),
     suggestions: p.A.getSuggestions()
   })), c = (0, f.RQ)(e => e.searchQuery), u = null != n && "" !== n ? n : c, d = (0, _.IE)(), h = i.useRef(null);
-  return (0, r.jsx)(R, C(S({}, e), {
+  return (0, r.jsx)(w, C(S({}, e), {
     forwardedRef: t,
     query: u,
     resultQuery: a,

@@ -181,12 +181,12 @@ function N() {
   }), h.A.indexDomains(e)
 }
 
-function R(e) {
+function w(e) {
   let t = s.A.getDMChannelFromUserId(e);
-  null != t && w([t])
+  null != t && R([t])
 }
 
-function w(e) {
+function R(e) {
   if (!y()) return;
   let t = [],
     n = [],
@@ -249,7 +249,7 @@ class P extends Chunk439372.A {
     let {
       channels: t
     } = e;
-    w(t)
+    R(t)
   }
   handleGuildCreateOrUpdate(e) {
     let {
@@ -271,19 +271,19 @@ class P extends Chunk439372.A {
     let {
       channel: t
     } = e;
-    w([t])
+    R([t])
   }
   handleUserUpdate(e) {
     let {
       user: t
     } = e;
-    R(t.id)
+    w(t.id)
   }
   handleRelationshipChange(e) {
     let {
       relationship: t
     } = e;
-    R(t.id)
+    w(t.id)
   }
   constructor(...e) {
     super(...e), E(this, "actions", {

@@ -65,7 +65,7 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = Chunk64700.memo(e => {
+let w = Chunk64700.memo(e => {
   let {
     name: t,
     canReveal: n = true,
@@ -129,12 +129,12 @@ let R = Chunk64700.memo(e => {
         }),
         children: [(0, r.jsx)("div", {
           className: I.He,
-          children: (0, r.jsx)(w, N(T({}, e), {
+          children: (0, r.jsx)(R, N(T({}, e), {
             className: I.Du
           }))
         }), (0, r.jsx)("div", {
           className: I.ll,
-          children: (0, r.jsx)(w, N(T({}, e), {
+          children: (0, r.jsx)(R, N(T({}, e), {
             className: I.Du
           }))
         })]
@@ -149,7 +149,7 @@ let R = Chunk64700.memo(e => {
         [I.sT]: h,
         [I.VN]: S
       }),
-      children: (0, r.jsx)(w, T({}, e))
+      children: (0, r.jsx)(R, T({}, e))
     })
   }) : (0, r.jsx)("div", {
     className: I.iQ,
@@ -168,15 +168,15 @@ let R = Chunk64700.memo(e => {
         children: [(0, r.jsx)("div", {
           className: I.UF,
           "aria-hidden": true,
-          children: (0, r.jsx)(w, T({}, e))
+          children: (0, r.jsx)(R, T({}, e))
         }), (0, r.jsx)("div", {
           className: I.He,
-          children: (0, r.jsx)(w, N(T({}, j.upcomingDropUntimed), {
+          children: (0, r.jsx)(R, N(T({}, j.upcomingDropUntimed), {
             pillText: ""
           }))
         }), (0, r.jsx)("div", {
           className: I.ll,
-          children: (0, r.jsx)(w, N(T({}, e), {
+          children: (0, r.jsx)(R, N(T({}, e), {
             description: ""
           }))
         }), (0, r.jsx)("div", {
@@ -189,12 +189,12 @@ let R = Chunk64700.memo(e => {
         })]
       })
     })
-  }) : (0, r.jsx)(R, N(T({}, j.upcomingDropUntimed), {
+  }) : (0, r.jsx)(w, N(T({}, j.upcomingDropUntimed), {
     forceShadow: h
   }))
 });
-R.displayName = "PremiumPerkCard";
-let w = Chunk64700.forwardRef((e, t) => {
+w.displayName = "PremiumPerkCard";
+let R = Chunk64700.forwardRef((e, t) => {
   var n;
   let {
     title: i,
@@ -215,13 +215,13 @@ let w = Chunk64700.forwardRef((e, t) => {
     pillText: T,
     perkImage: C,
     imageOverlayText: N,
-    hasNitroGradientBackground: R
-  } = e, w = v === E.cJ.CARD_CAROUSEL_FIRST_ROW || v === E.cJ.CARD_CAROUSEL_SECOND_ROW || v === E.cJ.CARD_CAROUSEL_THIRD_ROW, P = "" !== l || "" !== c || "" !== o && O === E.PJ.REWARD, D = (0, h.Q)(O);
+    hasNitroGradientBackground: w
+  } = e, R = v === E.cJ.CARD_CAROUSEL_FIRST_ROW || v === E.cJ.CARD_CAROUSEL_SECOND_ROW || v === E.cJ.CARD_CAROUSEL_THIRD_ROW, P = "" !== l || "" !== c || "" !== o && O === E.PJ.REWARD, D = (0, h.Q)(O);
   return (0, r.jsxs)(u.DUT, {
     className: s()(I.Nr, m, null == (n = D.cardContainer) ? true : n.className, {
       [I.vk]: null != A,
-      [I.JP]: w,
-      [I.NT]: R
+      [I.JP]: R,
+      [I.NT]: w
     }),
     onMouseEnter: _,
     style: {
@@ -241,7 +241,7 @@ let w = Chunk64700.forwardRef((e, t) => {
       titleClassName: a,
       subtitle: o,
       perkImage: C,
-      isCarousel: w,
+      isCarousel: R,
       descriptionCta: c,
       customContent: d,
       onCtaClick: p,
@@ -265,5 +265,5 @@ let w = Chunk64700.forwardRef((e, t) => {
     })]
   })
 });
-w.displayName = "PerkCardContent";
-let P = R
+R.displayName = "PerkCardContent";
+let P = w

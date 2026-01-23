@@ -75,14 +75,14 @@ function G(e) {
     selectedSkuId: K,
     isEmbeddedIAP: z,
     purchaseType: q,
-    purchasePreviewError: X,
-    devShelfFetchState: Z,
+    purchasePreviewError: Z,
+    devShelfFetchState: X,
     setPurchasePreviewError: Q,
-    hasPaymentSources: $
-  } = (0, w.P5)(), {
-    isGift: J,
+    hasPaymentSources: J
+  } = (0, R.P5)(), {
+    isGift: $,
     giftRecipient: ee
-  } = (0, R.Pv)(), et = J && (0, N.Ik)(ee), {
+  } = (0, w.Pv)(), et = $ && (0, N.Ik)(ee), {
     fetched: en,
     hasAlreadyLinked: er
   } = (0, g.RD)(G), {
@@ -107,14 +107,14 @@ function G(e) {
     em = null != eh ? eh.type : null;
   i.useEffect(() => {
     ea && B === ei && ei !== S.B && null == eu && (0, d.QX)(es.applicationId, es.id, ei, {
-      isGift: J
+      isGift: $
     }).then(() => {
       Q(null)
     }).catch(e => {
       Q(e)
     })
-  }, [ei, ea, B, es.applicationId, es.id, eu, Q, J]);
-  let eg = null != eo && eo.length > 0 && (B === S.B || null === em) && $ ? b.f.SELECT_PAYMENT_METHOD : true,
+  }, [ei, ea, B, es.applicationId, es.id, eu, Q, $]);
+  let eg = null != eo && eo.length > 0 && (B === S.B || null === em) && J ? b.f.SELECT_PAYMENT_METHOD : true,
     eE = es.productLine === j.EZt.SOCIAL_LAYER_GAME_ITEM,
     ey = et && !eE;
   return (0, r.jsxs)("div", {
@@ -127,7 +127,7 @@ function G(e) {
       color: p.A.Colors.WARNING,
       className: k.QK,
       children: M.intl.string(M.t.OvMyMd)
-    }, "TEST_MODE") : null, (0, l.Lt)(G.flags, j.gfo.EMBEDDED) && Z === m.$.ERROR ? (0, r.jsx)(p.A, {
+    }, "TEST_MODE") : null, (0, l.Lt)(G.flags, j.gfo.EMBEDDED) && X === m.$.ERROR ? (0, r.jsx)(p.A, {
       icon: (0, u.kHD)(C.A),
       iconSize: p.A.Sizes.SMALL,
       color: p.A.Colors.ERROR,
@@ -142,12 +142,12 @@ function G(e) {
     }), null != ee ? (0, r.jsx)(O.Z, {
       giftRecipient: ee
     }) : null, (0, r.jsx)(u.D0$, {
-      label: J ? M.intl.string(M.t.PEjaCx) : M.intl.string(M.t.sail9P),
+      label: $ ? M.intl.string(M.t.PEjaCx) : M.intl.string(M.t.sail9P),
       children: null != eu ? (0, r.jsx)(L.h, {
         sku: es,
         skuPricePreview: eu,
         application: G
-      }) : null == X ? (0, r.jsx)(u.y$y, {
+      }) : null == Z ? (0, r.jsx)(u.y$y, {
         type: u.y$y.Type.WANDERING_CUBES,
         className: k.fx
       }) : (0, r.jsx)(L.U, {
@@ -173,17 +173,17 @@ function G(e) {
         subscriptionPlan: null,
         finePrintClassname: k.im,
         purchaseType: q,
-        isGift: J,
+        isGift: $,
         finePrint: (0, r.jsx)(f.A, {
           paymentSourceType: em,
           isEmbeddedIAP: z,
           purchaseType: q,
           productLine: es.productLine,
-          isGift: J,
+          isGift: $,
           applicationName: G.name,
           hasAlreadyLinked: !en || er
         })
-      }), eE && en && !er && !J && (0, r.jsx)("div", {
+      }), eE && en && !er && !$ && (0, r.jsx)("div", {
         className: k.lm,
         children: (0, r.jsx)(u.wx6, {
           type: "warning",

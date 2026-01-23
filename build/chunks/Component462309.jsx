@@ -40,8 +40,8 @@ function O(e) {
     enablePremiumBrandRefresh: T,
     isDisplayingWowMomentConfirmation: C,
     isPremiumGroupPurchase: N,
-    isEligibleForTrial: R,
-    isEligibleForDiscount: w
+    isEligibleForTrial: w,
+    isEligibleForDiscount: R
   } = (0, _.P5)(), {
     isGift: P,
     selectedGiftStyle: D,
@@ -69,14 +69,14 @@ function O(e) {
       purchaseState: A,
       premiumType: g.WN[a],
       onClose: n,
-      showTrialBadge: R,
-      showDiscountBadge: w,
+      showTrialBadge: w,
+      showDiscountBadge: R,
       isGift: P,
       giftRecipient: x,
-      isEligibleForTrial: R,
+      isEligibleForTrial: w,
       enablePremiumBrandRefresh: T,
       isDisplayingWowMomentConfirmation: C,
       isPremiumGroupPurchase: N
     })), e
-  }, [D, n, A, t, v, a, O, R, w, M, G, k, I, P, x, T, C, N])
+  }, [D, n, A, t, v, a, O, w, R, M, G, k, I, P, x, T, C, N])
 }

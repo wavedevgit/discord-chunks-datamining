@@ -81,14 +81,14 @@ function u(e) {
     S = (0, r.useRef)(s),
     [T, C] = (0, r.useState)(s),
     N = (0, r.useRef)(s),
-    R = () => {
-      if (!w) return;
+    w = () => {
+      if (!R) return;
       P(false);
       let e = g || c || S.current;
       _(e, N.current) || (N.current = e, C(e))
     },
-    [w, P] = (0, r.useState)(false);
-  return (0, r.useEffect)(R), {
+    [R, P] = (0, r.useState)(false);
+  return (0, r.useEffect)(w), {
     realtimeValidation: m || I || g || c || s,
     displayValidation: "native" === h ? m || I || T : m || I || g || c || T,
     updateValidation(e) {

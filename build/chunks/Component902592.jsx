@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 902592, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => w,
@@ -60,7 +60,7 @@ function O() {
   })
 }
 
-function E(e) {
+function T(e) {
   var t;
   let {
     isPopout: n = false
@@ -109,7 +109,7 @@ function E(e) {
   })
 }
 
-function T() {
+function E() {
   let e = l.useRef(null),
     t = (0, o.bG)([f.A], () => f.A.sidebarWidth),
     [n, r] = l.useState(null),
@@ -132,7 +132,7 @@ function T() {
       onResizeEnd: i
     }), (0, a.jsx)("div", {
       className: A.wp,
-      children: (0, a.jsx)(E, {})
+      children: (0, a.jsx)(T, {})
     })]
   })
 }
@@ -142,7 +142,7 @@ function N() {
     className: i()(A.kL, A.PQ),
     children: (0, a.jsx)("div", {
       className: A.wp,
-      children: (0, a.jsx)(E, {})
+      children: (0, a.jsx)(T, {})
     })
   }) : (0, a.jsx)("div", {
     className: A.kL,
@@ -171,8 +171,8 @@ function w(e) {
   } = e;
   return t ? (0, a.jsx)(N, {}) : n ? (0, a.jsx)("div", {
     className: A.jC,
-    children: (0, a.jsx)(E, {
+    children: (0, a.jsx)(T, {
       isPopout: true
     })
-  }) : (0, a.jsx)(T, {})
+  }) : (0, a.jsx)(E, {})
 }

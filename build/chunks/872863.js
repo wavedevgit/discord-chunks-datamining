@@ -76,7 +76,7 @@ function v(e) {
   if (r.A.USE_EXIF || r.A.USE_XMP || r.A.USE_ICC) {
     let t = {},
       n = A(e);
-    return n ? (r.A.USE_EXIF && (t.tiffHeaderOffset = I(e, n)), r.A.USE_XMP && (t.xmpChunks = N(n)), r.A.USE_ICC && (t.iccChunks = w(n)), t.hasAppMarkers = true !== t.tiffHeaderOffset || true !== t.xmpChunks || true !== t.iccChunks, t) : {
+    return n ? (r.A.USE_EXIF && (t.tiffHeaderOffset = I(e, n)), r.A.USE_XMP && (t.xmpChunks = N(n)), r.A.USE_ICC && (t.iccChunks = R(n)), t.hasAppMarkers = true !== t.tiffHeaderOffset || true !== t.xmpChunks || true !== t.iccChunks, t) : {
       hasAppMarkers: false
     }
   }
@@ -120,7 +120,7 @@ function C(e, t) {
 
 function N(e) {
   try {
-    let t = R(e).itemId,
+    let t = w(e).itemId,
       n = T(e, t),
       r = T(e, t).extents[0];
     return [{
@@ -132,11 +132,11 @@ function N(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   return e.subBoxes.find(e => "iinf" === e.type).itemInfos.find(e => e.itemType === h && "application/rdf+xml" === e.contentType)
 }
 
-function w(e) {
+function R(e) {
   try {
     let t = e.subBoxes.find(e => "iprp" === e.type).subBoxes.find(e => "ipco" === e.type).properties.find(e => "colr" === e.type).icc;
     if (t) return [t]

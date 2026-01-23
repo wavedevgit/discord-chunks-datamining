@@ -36,8 +36,8 @@ function C(e) {
     currentUser: n,
     displayProfile: C,
     guild: N,
-    isHoveringOrFocusing: R,
-    onOpenProfile: w,
+    isHoveringOrFocusing: w,
+    onOpenProfile: R,
     channelId: P,
     onClose: D
   } = e, x = c.Ay.getName(null == N ? true : N.id, P, t), L = (0, i.bG)([u.A], () => {
@@ -52,7 +52,7 @@ function C(e) {
     }), (0, r.jsx)(m.A, {
       user: t,
       guildId: null == N ? true : N.id,
-      onOpenProfile: w,
+      onOpenProfile: R,
       nickname: x,
       pronouns: null == C ? true : C.pronouns,
       tags: (0, r.jsx)(f.A, {
@@ -62,12 +62,12 @@ function C(e) {
       }),
       nicknameIcons: M ? null : (0, r.jsx)(y.A, {
         userId: t.id,
-        isVisible: R,
-        onOpenProfile: w
+        isVisible: w,
+        onOpenProfile: R
       })
     }), (0, r.jsx)(v.A, {
       user: t,
-      onOpenProfile: e => null == w ? true : w({
+      onOpenProfile: e => null == R ? true : R({
         tabSection: e
       })
     }), (0, r.jsxs)("div", {
@@ -90,7 +90,7 @@ function C(e) {
       user: t,
       currentUser: n,
       guildId: null == N ? true : N.id,
-      onOpenUserProfileModal: w,
+      onOpenUserProfileModal: R,
       onClose: D
     }), (null == L ? true : L.popularApplicationCommandIds) != null && null != j && (0, r.jsx)(d.A, {
       applicationId: L.id,

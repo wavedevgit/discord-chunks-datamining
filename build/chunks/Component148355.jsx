@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => j,
-  h: () => R
+  h: () => w
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -46,13 +46,13 @@ function N(e, t) {
   })
 }
 
-function R(e) {
+function w(e) {
   let t = "description" in e && null != e.description ? "".concat(e.name, ", ").concat(e.description) : e.name;
   return b.intl.formatToPlainString(b.t.rk6pOw, {
     stickerName: t
   })
 }
-let w = e => {
+let R = e => {
     let {
       children: t,
       hasError: n,
@@ -136,9 +136,9 @@ let w = e => {
     }, [s, t, u]), null == C) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": I ? b.intl.string(b.t.yEvsK9) : R(s),
+      "aria-label": I ? b.intl.string(b.t.yEvsK9) : w(s),
       ref: p,
-      children: (0, r.jsx)(w, {
+      children: (0, r.jsx)(R, {
         hasError: I,
         isLoading: v,
         maskAsset: f,
@@ -188,7 +188,7 @@ let w = e => {
       children: (0, r.jsx)("div", {
         className: s()(l, O.__invalid_pngImageWrapper),
         ref: u,
-        children: (0, r.jsx)(w, {
+        children: (0, r.jsx)(R, {
           hasError: E,
           isLoading: m,
           maskAsset: c,
@@ -196,7 +196,7 @@ let w = e => {
           withLoadingIndicator: f,
           children: N((0, r.jsx)("img", {
             className: O.r3,
-            alt: R(n),
+            alt: w(n),
             src: T,
             draggable: false,
             onError: P,

@@ -94,9 +94,9 @@ class I extends Chunk64700.PureComponent {
       visibleReactionsCount: T
     } = this.props, {
       disableTransitionAppear: C
-    } = this.state, N = v ? m : h, R = T > 0;
-    if (!R && !b) return null;
-    let w = b || R;
+    } = this.state, N = v ? m : h, w = T > 0;
+    if (!w && !b) return null;
+    let R = b || w;
     return (0, r.jsxs)(o.F, {
       component: "div",
       className: s()(N.reactions, y),
@@ -132,13 +132,13 @@ class I extends Chunk64700.PureComponent {
           children: ["+", I]
         })
       }), !t && !A && (0, r.jsx)(u.t, {
-        tabIndex: w || this.state.isHovered ? 0 : false,
+        tabIndex: R || this.state.isHovered ? 0 : false,
         message: e,
         channel: E,
         useChatFontScaling: v,
         isHovered: this.state.isHovered,
         className: s()({
-          [N.forceShow]: w
+          [N.forceShow]: R
         })
       })]
     })

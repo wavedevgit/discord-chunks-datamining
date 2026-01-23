@@ -65,7 +65,7 @@ function C(e, t) {
   }), e
 }
 let N = 50,
-  R = {
+  w = {
     enter: {
       BEG: 0,
       END: 22
@@ -87,7 +87,7 @@ let N = 50,
       END: 200
     }
   };
-var w = function(e) {
+var R = function(e) {
   return e.TOP_LEFT = "TOP_LEFT", e.TOP_RIGHT = "TOP_RIGHT", e.BOTTOM_LEFT = "BOTTOM_LEFT", e.BOTTOM_RIGHT = "BOTTOM_RIGHT", e
 }({});
 let P = ["TOP_LEFT", "TOP_RIGHT"],
@@ -174,7 +174,7 @@ function Y(e) {
 }
 
 function W() {
-  switch (Math.floor(Math.random() * Object.keys(w).length)) {
+  switch (Math.floor(Math.random() * Object.keys(R).length)) {
     case 0:
       return "TOP_LEFT";
     case 2:
@@ -189,7 +189,7 @@ let K = 45,
   z = ["#61D5B2"],
   Chunk80705 = require("./80705.js"),
   Chunk232460 = require("./232460.js"),
-  Z = [Chunk80705, Chunk232460];
+  X = [Chunk80705, Chunk232460];
 
 function Q() {
   return n.e("98150").then(n.t.bind(n, 633343, 19)).then(e => {
@@ -200,7 +200,7 @@ function Q() {
   })
 }
 
-function $(e, t) {
+function J(e, t) {
   if (null == e) return "enter";
   switch (e) {
     case "enter":
@@ -217,7 +217,7 @@ function $(e, t) {
   }
 }
 
-function J(e, t) {
+function $(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : D,
     r = null == e ? true : e.getBoundingClientRect();
   if (null == r) return {
@@ -253,7 +253,7 @@ function et(e) {
   } = e, u = i.useRef(null), [p, _] = i.useState(null), [h] = i.useState(null != a ? a : W()), {
     createMultipleConfettiAt: m,
     confettiCanvas: g
-  } = i.useContext(f.x), [E, y] = i.useState(null), b = (0, o.f9)(g, E), O = $(p, h), v = P.includes(h), I = v && "exit" === p, S = i.useCallback(e => {
+  } = i.useContext(f.x), [E, y] = i.useState(null), b = (0, o.f9)(g, E), O = J(p, h), v = P.includes(h), I = v && "exit" === p, S = i.useCallback(e => {
     _(e)
   }, []), T = i.useCallback(() => {
     "exit" === p && (null == t || t())
@@ -264,7 +264,7 @@ function et(e) {
     if ("confetti" === p) {
       let {
         confettiVelocityDirection: e
-      } = B[h], t = J(u.current, h, c);
+      } = B[h], t = $(u.current, h, c);
       m(t.x, t.y, {
         velocity: {
           type: "static-random",
@@ -316,13 +316,13 @@ function et(e) {
           }
         }
       }, {
-        sprite: "TOP_LEFT" === h ? q : X
+        sprite: "TOP_LEFT" === h ? q : Z
       })
     }
   }, [v, b, h, p]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.K_, {
       ref: y,
-      sprites: Z,
+      sprites: X,
       colors: z,
       spriteWidth: K,
       spriteHeight: K
@@ -340,7 +340,7 @@ function et(e) {
           [A.EG]: I
         }),
         nextScene: O,
-        sceneSegments: R,
+        sceneSegments: w,
         onScenePlay: S,
         onSceneComplete: T,
         importData: Q,
@@ -365,9 +365,9 @@ function en(e) {
       addClickListener: S
     } = i.useContext(f.x),
     [T, C] = i.useState(false),
-    R = i.useRef(null),
+    w = i.useRef(null),
     {
-      reducedMotion: w
+      reducedMotion: R
     } = i.useContext(d.CZY),
     P = (0, y.Ay)(n),
     D = P.nick,
@@ -392,14 +392,14 @@ function en(e) {
     newTierName: (0, E.gb)(c)
   });
   let L = i.useCallback(() => {
-      if (!w.enabled)
+      if (!R.enabled)
         if (T || 0 !== Math.floor(Math.random() * N)) {
           var e;
-          let t = null == (e = R.current) ? true : e.getBoundingClientRect();
+          let t = null == (e = w.current) ? true : e.getBoundingClientRect();
           if (null == t) return;
           I(t.left + t.width / 2, t.top + t.height / 2)
         } else C(true)
-    }, [I, w, T]),
+    }, [I, R, T]),
     j = i.useCallback(() => {
       C(false)
     }, []),
@@ -419,7 +419,7 @@ function en(e) {
     }, [l]),
     G = (0, r.jsx)(d.DUT, {
       className: A.P0,
-      innerRef: R,
+      innerRef: w,
       onClick: l,
       children: (0, r.jsx)(d._Jp, {
         color: d.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,

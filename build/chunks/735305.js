@@ -79,8 +79,8 @@ function b(e) {
     purchaseErrorBlockRef: T,
     paymentAuthenticationState: C,
     selectedSkuId: N,
-    activeSubscription: R,
-    previousStepRef: w,
+    activeSubscription: w,
+    previousStepRef: R,
     setPurchaseState: P,
     paymentElementsEnabled: D,
     isPremiumGroupPurchase: x,
@@ -104,7 +104,7 @@ function b(e) {
   }, U = null != _ ? _ : k;
   i()(b, "Step should be set here");
   let G = (0, a.A)(() => Date.now(), [b]),
-    V = (0, a.A)(() => null != h && null == w.current ? D ? d.pn.PAYMENT_ELEMENT : h : D ? d.pn.PAYMENT_ELEMENT : d.pn.PAYMENT_TYPE, [h, w.current, D]);
+    V = (0, a.A)(() => null != h && null == R.current ? D ? d.pn.PAYMENT_ELEMENT : h : D ? d.pn.PAYMENT_ELEMENT : d.pn.PAYMENT_TYPE, [h, R.current, D]);
   return (0, s.Y)({
     paymentModalArgs: M,
     initialStep: V,
@@ -135,7 +135,7 @@ function b(e) {
       }))
     },
     isEligibleForTrial: L,
-    allowDesktopRedirectPurchase: y(N, j, R),
+    allowDesktopRedirectPurchase: y(N, j, w),
     continueSessionToInitialStep: h
   })
 }

@@ -156,7 +156,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     channel: t
   } = e;
@@ -164,7 +164,7 @@ function R(e) {
   h = f({}, h), delete h[t.id]
 }
 
-function w(e) {
+function R(e) {
   if (u.default.getId() !== e.userId) returnfalse;
   h[e.id] = {
     threadId: e.id,
@@ -251,8 +251,8 @@ let L = new x(Chunk73153.h, {
     MOD_VIEW_SEARCH_MESSAGES_SUCCESS: N,
     LOAD_THREADS_SUCCESS: C,
     LOAD_ARCHIVED_THREADS_SUCCESS: C,
-    THREAD_DELETE: R,
-    THREAD_MEMBER_UPDATE: w,
+    THREAD_DELETE: w,
+    THREAD_MEMBER_UPDATE: R,
     THREAD_MEMBER_LOCAL_UPDATE: P,
     THREAD_MEMBERS_UPDATE: D
   }),

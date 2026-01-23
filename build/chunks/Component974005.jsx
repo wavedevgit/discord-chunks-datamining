@@ -119,7 +119,7 @@ let C = e => {
       })]
     })
   },
-  R = e => {
+  w = e => {
     let {
       title: t,
       rows: n
@@ -138,7 +138,7 @@ let C = e => {
       }), n.map(e => (0, r.jsx)(N, I({}, e), e.id))]
     })
   },
-  w = e => {
+  R = e => {
     let {
       premiumType: t,
       priceString: n
@@ -179,14 +179,14 @@ let C = e => {
         }), (0, r.jsx)("th", {
           scope: "col",
           className: b.Hn,
-          children: (0, r.jsx)(w, {
+          children: (0, r.jsx)(R, {
             premiumType: E.PremiumTypes.TIER_0,
             priceString: (0, f.$g)(t.amount, t.currency)
           })
         }), (0, r.jsx)("th", {
           scope: "col",
           className: b.Hn,
-          children: (0, r.jsx)(w, {
+          children: (0, r.jsx)(R, {
             premiumType: E.PremiumTypes.TIER_2,
             priceString: s
           })
@@ -207,7 +207,7 @@ let C = e => {
       S = (0, _.V)(),
       C = null == S || null == (t = S.subscription_trial) ? true : t.sku_id,
       N = (0, p.O)(),
-      w = null != N && (0, h.U9)(N, E.pe.TIER_2),
+      R = null != N && (0, h.U9)(N, E.pe.TIER_2),
       D = (0, h.N1)(E.gD.PREMIUM_MONTH_TIER_2),
       x = "".concat(D, "/").concat((0, d.FJ)(E.WT.MONTH)),
       L = (0, d.JM)(E.gD.PREMIUM_MONTH_TIER_0),
@@ -257,9 +257,9 @@ let C = e => {
             children: [(0, r.jsx)(P, {
               tier0Price: L,
               tier2Price: j,
-              shouldUseDiscountPrice: w,
+              shouldUseDiscountPrice: R,
               tier2DiscountedPriceString: x
-            }), M.map(e => (0, i.createElement)(R, T(I({}, e), {
+            }), M.map(e => (0, i.createElement)(w, T(I({}, e), {
               key: e.id
             })))]
           })]

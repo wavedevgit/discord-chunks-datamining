@@ -84,7 +84,7 @@ class E extends Chunk324281.G {
           a.avatarDecorationData = O.internalBinaryRead(e, e.uint32(), n, a.avatarDecorationData);
           break;
         case 10:
-          a.primaryGuild = R.internalBinaryRead(e, e.uint32(), n, a.primaryGuild);
+          a.primaryGuild = w.internalBinaryRead(e, e.uint32(), n, a.primaryGuild);
           break;
         case 11:
           a.collectibles = C.internalBinaryRead(e, e.uint32(), n, a.collectibles);
@@ -105,7 +105,7 @@ class E extends Chunk324281.G {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "0" !== e.id && t.tag(1, r.O0.Varint).uint64(e.id), "" !== e.username && t.tag(2, r.O0.LengthDelimited).string(e.username), "" !== e.discriminator && t.tag(3, r.O0.LengthDelimited).string(e.discriminator), e.avatar && o.hU.internalBinaryWrite(e.avatar, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), false !== e.bot && t.tag(5, r.O0.Varint).bool(e.bot), "0" !== e.publicFlags && t.tag(6, r.O0.Varint).uint64(e.publicFlags), e.globalName && o.hU.internalBinaryWrite(e.globalName, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.avatarDecorationData && O.internalBinaryWrite(e.avatarDecorationData, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), e.primaryGuild && R.internalBinaryWrite(e.primaryGuild, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.collectibles && C.internalBinaryWrite(e.collectibles, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(12, r.O0.LengthDelimited).fork(), n).join(), e.displayNameStyles && S.internalBinaryWrite(e.displayNameStyles, t.tag(13, r.O0.LengthDelimited).fork(), n).join();
+    "0" !== e.id && t.tag(1, r.O0.Varint).uint64(e.id), "" !== e.username && t.tag(2, r.O0.LengthDelimited).string(e.username), "" !== e.discriminator && t.tag(3, r.O0.LengthDelimited).string(e.discriminator), e.avatar && o.hU.internalBinaryWrite(e.avatar, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), false !== e.bot && t.tag(5, r.O0.Varint).bool(e.bot), "0" !== e.publicFlags && t.tag(6, r.O0.Varint).uint64(e.publicFlags), e.globalName && o.hU.internalBinaryWrite(e.globalName, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.avatarDecorationData && O.internalBinaryWrite(e.avatarDecorationData, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), e.primaryGuild && w.internalBinaryWrite(e.primaryGuild, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.collectibles && C.internalBinaryWrite(e.collectibles, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(12, r.O0.LengthDelimited).fork(), n).join(), e.displayNameStyles && S.internalBinaryWrite(e.displayNameStyles, t.tag(13, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -154,7 +154,7 @@ class E extends Chunk324281.G {
       no: 10,
       name: "primary_guild",
       kind: "message",
-      T: () => R
+      T: () => w
     }, {
       no: 11,
       name: "collectibles",
@@ -583,8 +583,8 @@ class N extends Chunk324281.G {
     }])
   }
 }
-let R = new N;
-class w extends Chunk324281.G {
+let w = new N;
+class R extends Chunk324281.G {
   create(e) {
     let t = {
       applicationId: "0"
@@ -634,7 +634,7 @@ class w extends Chunk324281.G {
     }])
   }
 }
-let P = new w;
+let P = new R;
 class D extends Chunk324281.G {
   create(e) {
     let t = {
@@ -666,7 +666,7 @@ class D extends Chunk324281.G {
           a.quest = H.internalBinaryRead(e, e.uint32(), n, a.quest);
           break;
         case 5:
-          a.primaryGuild = R.internalBinaryRead(e, e.uint32(), n, a.primaryGuild);
+          a.primaryGuild = w.internalBinaryRead(e, e.uint32(), n, a.primaryGuild);
           break;
         case 6:
           a.crossPlatformRestriction = P.internalBinaryRead(e, e.uint32(), n, a.crossPlatformRestriction);
@@ -756,7 +756,7 @@ class D extends Chunk324281.G {
     for (let i of Object.keys(e.linkedUsers)) t.tag(1, r.O0.LengthDelimited).fork().tag(1, r.O0.Bit64).fixed64(i), t.tag(2, r.O0.LengthDelimited).fork(), L.internalBinaryWrite(e.linkedUsers[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFeatureLimits)) t.tag(2, r.O0.LengthDelimited).fork().tag(1, r.O0.Varint).uint32(parseInt(i)), t.tag(2, r.O0.LengthDelimited).fork(), U.internalBinaryWrite(e.safetyFeatureLimits[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFlags)) t.tag(3, r.O0.LengthDelimited).fork().tag(1, r.O0.Varint).uint32(parseInt(i)), t.tag(2, r.O0.LengthDelimited).fork(), V.internalBinaryWrite(e.safetyFlags[i], t, n), t.join().join();
-    e.quest && H.internalBinaryWrite(e.quest, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), e.primaryGuild && R.internalBinaryWrite(e.primaryGuild, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), e.crossPlatformRestriction && P.internalBinaryWrite(e.crossPlatformRestriction, t.tag(6, r.O0.LengthDelimited).fork(), n).join(), e.collectibles && C.internalBinaryWrite(e.collectibles, t.tag(7, r.O0.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.premiumState && er.internalBinaryWrite(e.premiumState, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), e.displayNameStyles && S.internalBinaryWrite(e.displayNameStyles, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.storeCountry && ea.internalBinaryWrite(e.storeCountry, t.tag(11, r.O0.LengthDelimited).fork(), n).join();
+    e.quest && H.internalBinaryWrite(e.quest, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), e.primaryGuild && w.internalBinaryWrite(e.primaryGuild, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), e.crossPlatformRestriction && P.internalBinaryWrite(e.crossPlatformRestriction, t.tag(6, r.O0.LengthDelimited).fork(), n).join(), e.collectibles && C.internalBinaryWrite(e.collectibles, t.tag(7, r.O0.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.premiumState && er.internalBinaryWrite(e.premiumState, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), e.displayNameStyles && S.internalBinaryWrite(e.displayNameStyles, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.storeCountry && ea.internalBinaryWrite(e.storeCountry, t.tag(11, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -797,7 +797,7 @@ class D extends Chunk324281.G {
       no: 5,
       name: "primary_guild",
       kind: "message",
-      T: () => R
+      T: () => w
     }, {
       no: 6,
       name: "cross_platform_restriction",
@@ -1240,8 +1240,8 @@ class q extends Chunk324281.G {
     }])
   }
 }
-let X = new q;
-class Z extends Chunk324281.G {
+let Z = new q;
+class X extends Chunk324281.G {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.$, {
@@ -1278,8 +1278,8 @@ class Z extends Chunk324281.G {
     }])
   }
 }
-let Q = new Z;
-class $ extends Chunk324281.G {
+let Q = new X;
+class J extends Chunk324281.G {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.$, {
@@ -1298,7 +1298,7 @@ class $ extends Chunk324281.G {
     super("discord_protos.users.v1.BannedState", [])
   }
 }
-let J = new $;
+let $ = new J;
 class ee extends Chunk324281.G {
   create(e) {
     let t = {
@@ -1334,7 +1334,7 @@ class ee extends Chunk324281.G {
         case 103:
           a.state = {
             oneofKind: "deferredAction",
-            deferredAction: X.internalBinaryRead(e, e.uint32(), n, a.state.deferredAction)
+            deferredAction: Z.internalBinaryRead(e, e.uint32(), n, a.state.deferredAction)
           };
           break;
         case 104:
@@ -1346,7 +1346,7 @@ class ee extends Chunk324281.G {
         case 105:
           a.state = {
             oneofKind: "banned",
-            banned: J.internalBinaryRead(e, e.uint32(), n, a.state.banned)
+            banned: $.internalBinaryRead(e, e.uint32(), n, a.state.banned)
           };
           break;
         case 1:
@@ -1370,7 +1370,7 @@ class ee extends Chunk324281.G {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    if ("normal" === e.state.oneofKind && W.internalBinaryWrite(e.state.normal, t.tag(101, r.O0.LengthDelimited).fork(), n).join(), "restricted" === e.state.oneofKind && z.internalBinaryWrite(e.state.restricted, t.tag(102, r.O0.LengthDelimited).fork(), n).join(), "deferredAction" === e.state.oneofKind && X.internalBinaryWrite(e.state.deferredAction, t.tag(103, r.O0.LengthDelimited).fork(), n).join(), "tempBanned" === e.state.oneofKind && Q.internalBinaryWrite(e.state.tempBanned, t.tag(104, r.O0.LengthDelimited).fork(), n).join(), "banned" === e.state.oneofKind && J.internalBinaryWrite(e.state.banned, t.tag(105, r.O0.LengthDelimited).fork(), n).join(), 0 !== e.reason && t.tag(1, r.O0.Varint).int32(e.reason), e.annotations.length) {
+    if ("normal" === e.state.oneofKind && W.internalBinaryWrite(e.state.normal, t.tag(101, r.O0.LengthDelimited).fork(), n).join(), "restricted" === e.state.oneofKind && z.internalBinaryWrite(e.state.restricted, t.tag(102, r.O0.LengthDelimited).fork(), n).join(), "deferredAction" === e.state.oneofKind && Z.internalBinaryWrite(e.state.deferredAction, t.tag(103, r.O0.LengthDelimited).fork(), n).join(), "tempBanned" === e.state.oneofKind && Q.internalBinaryWrite(e.state.tempBanned, t.tag(104, r.O0.LengthDelimited).fork(), n).join(), "banned" === e.state.oneofKind && $.internalBinaryWrite(e.state.banned, t.tag(105, r.O0.LengthDelimited).fork(), n).join(), 0 !== e.reason && t.tag(1, r.O0.Varint).int32(e.reason), e.annotations.length) {
       t.tag(2, r.O0.LengthDelimited).fork();
       for (let n = 0; n < e.annotations.length; n++) t.int32(e.annotations[n]);
       t.join()
@@ -1397,7 +1397,7 @@ class ee extends Chunk324281.G {
       name: "deferred_action",
       kind: "message",
       oneof: "state",
-      T: () => X
+      T: () => Z
     }, {
       no: 104,
       name: "temp_banned",
@@ -1409,7 +1409,7 @@ class ee extends Chunk324281.G {
       name: "banned",
       kind: "message",
       oneof: "state",
-      T: () => J
+      T: () => $
     }, {
       no: 1,
       name: "reason",

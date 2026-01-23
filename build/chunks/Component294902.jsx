@@ -35,7 +35,7 @@ function h(e) {
     isTryItOut: S,
     hideBioSection: T,
     shouldOpenBadgeTooltip: C
-  } = e, N = (0, i.bG)([u.Ay], () => null == h ? null : u.Ay.getMember(h.id, t.id)), R = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), w = null == n ? true : n.getPreviewBio(y), P = null != b ? b : null == n ? true : n.pronouns, D = (0, f.eh)({
+  } = e, N = (0, i.bG)([u.Ay], () => null == h ? null : u.Ay.getMember(h.id, t.id)), w = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), R = null == n ? true : n.getPreviewBio(y), P = null != b ? b : null == n ? true : n.pronouns, D = (0, f.eh)({
     pendingNickname: g,
     pendingGlobalName: E,
     user: t,
@@ -65,10 +65,10 @@ function h(e) {
         pendingBadges: v,
         shouldOpenBadgeTooltip: C
       })
-    }), !T && null != w && "" !== w && (0, r.jsx)(l.A, {
+    }), !T && null != R && "" !== R && (0, r.jsx)(l.A, {
       user: t,
-      bio: w,
-      hidePersonalInformation: R,
+      bio: R,
+      hidePersonalInformation: w,
       viewFullBioDisabled: true
     })]
   })

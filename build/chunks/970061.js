@@ -83,7 +83,7 @@ let G = new Chunk626584.A("NotificationUtils"),
   V = M && U || "Chrome" === o().name && 47 > parseFloat(o().version) || "Firefox" === o().name && 52 > parseFloat(o().version);
 async function F() {
   if (null === c.A || true === c.A ? true : c.A.features.supports("notifications")) try {
-    return await w.Ay.invoke("NOTIFICATIONS_GET_SETTINGS")
+    return await R.Ay.invoke("NOTIFICATIONS_GET_SETTINGS")
   } catch (e) {
     G.warn("Fetching native notification settings failed with error: ", e)
   }
@@ -114,7 +114,7 @@ async function K(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
     n = arguments.length > 2 ? arguments[2] : true;
   if (await Y()) try {
-    await w.Ay.invoke("NOTIFICATIONS_SEND_NOTIFICATION", {
+    await R.Ay.invoke("NOTIFICATIONS_SEND_NOTIFICATION", {
       sound: W(e, n)
     });
     return
@@ -127,10 +127,10 @@ let z = a().throttle(K, 1e3, {
 });
 
 function q() {
-  w.Ay.flashFrame(false)
+  R.Ay.flashFrame(false)
 }
 M && (window.addEventListener("focus", q), Chunk837921.Ay.on("MAIN_WINDOW_FOCUS", q));
-let X = window.Notification;
+let Z = window.Notification;
 if (k) {
   let e = {};
   Chunk837921.Ay.on("NOTIFICATION_CLICK", (t, n) => {
@@ -141,29 +141,29 @@ if (k) {
       e()
     }
     close() {
-      null != e[this.id] && (delete e[this.id], w.Ay.send("NOTIFICATION_CLOSE", this.id), this.onclose())
+      null != e[this.id] && (delete e[this.id], R.Ay.send("NOTIFICATION_CLOSE", this.id), this.onclose())
     }
     constructor(t, {
       body: n,
       icon: r
     }) {
-      D(this, "id", X._id++), D(this, "title", true), D(this, "body", true), D(this, "icon", true), D(this, "onshow", function() {}), D(this, "onclick", function() {}), D(this, "onclose", function() {}), t.includes("\0") ? (G.warn("Notification title contains null character, setting to empty string"), this.title = "") : this.title = t, n.includes("\0") ? (G.warn("Notification body contains null character, setting to empty string"), this.body = "") : this.body = n, this.icon = r, setImmediate(() => this.onshow()), e[this.id] = this, w.Ay.send("NOTIFICATION_SHOW", {
+      D(this, "id", Z._id++), D(this, "title", true), D(this, "body", true), D(this, "icon", true), D(this, "onshow", function() {}), D(this, "onclick", function() {}), D(this, "onclose", function() {}), t.includes("\0") ? (G.warn("Notification title contains null character, setting to empty string"), this.title = "") : this.title = t, n.includes("\0") ? (G.warn("Notification body contains null character, setting to empty string"), this.body = "") : this.body = n, this.icon = r, setImmediate(() => this.onshow()), e[this.id] = this, R.Ay.send("NOTIFICATION_SHOW", {
         id: this.id,
         title: this.title,
         body: this.body,
         icon: this.icon
       })
     }
-  }, D(r, "permission", "granted"), D(r, "_id", 0), X = r
+  }, D(r, "permission", "granted"), D(r, "_id", 0), Z = r
 }
-let Z = {};
+let X = {};
 if (null === Chunk77729.A || true === Chunk77729.A ? true : Chunk77729.A.features.supports("notifications")) {
   try {
     Chunk837921.Ay.on("NOTIFICATIONS_RECEIVED_RESPONSE", (e, t, n, r, i) => {
-      if ("dismiss" === t) return void delete Z[n];
+      if ("dismiss" === t) return void delete X[n];
       {
-        let e = Z[n];
-        if (R.isPlatformEmbedded ? w.Ay.focus() : window.focus(), null != e) {
+        let e = X[n];
+        if (w.isPlatformEmbedded ? R.Ay.focus() : window.focus(), null != e) {
           var a, s, o;
           (null == (a = e.options) ? true : a.omitClickTracking) || (T.default.track(P.HAw.NOTIFICATION_ACTION, x({
             action: "CLICK"
@@ -178,14 +178,14 @@ if (null === Chunk77729.A || true === Chunk77729.A ? true : Chunk77729.A.feature
     }), Chunk837921.Ay.invoke("NOTIFICATIONS_REMOVE_ALL_NOTIFICATIONS")
   } catch (e) {
     G.warn("Native notification setup failed with error: ", module)
-  }(null === Chunk77729.A || true === Chunk77729.A ? true : Chunk77729.A.features.supports("notifications_provisional")) && J().then(e => {
-    e || w.Ay.invoke("NOTIFICATIONS_GET_AUTHORIZATION", true).catch(() => {})
+  }(null === Chunk77729.A || true === Chunk77729.A ? true : Chunk77729.A.features.supports("notifications_provisional")) && $().then(e => {
+    e || R.Ay.invoke("NOTIFICATIONS_GET_AUTHORIZATION", true).catch(() => {})
   })
 }
 
 function Q(e) {
   if (null === c.A || true === c.A ? true : c.A.features.supports("notifications")) try {
-    w.Ay.invoke("NOTIFICATIONS_GET_AUTHORIZATION").then(t => {
+    R.Ay.invoke("NOTIFICATIONS_GET_AUTHORIZATION").then(t => {
       e(t)
     }).catch(() => {
       e(false)
@@ -194,23 +194,23 @@ function Q(e) {
   } catch (e) {
     G.warn("Native notification authorization failed with error: ", e)
   }
-  null != X && X.requestPermission(async () => {
-    null != e && e(await $())
+  null != Z && Z.requestPermission(async () => {
+    null != e && e(await J())
   })
 }
-async function $() {
+async function J() {
   if (null === c.A || true === c.A ? true : c.A.features.supports("notifications")) {
     let e = await F();
     return (null == e ? true : e.authorizationStatus) === "authorized" || (null == e ? true : e.authorizationStatus) === "provisional"
   }
-  return null != X && "granted" === X.permission
+  return null != Z && "granted" === Z.permission
 }
-async function J() {
+async function $() {
   if (null === c.A || true === c.A ? true : c.A.features.supports("notifications")) {
     var e;
     return (null == (e = await F()) ? true : e.authorizationStatus) !== "undetermined"
   }
-  return null != X && "default" !== X.permission
+  return null != Z && "default" !== Z.permission
 }
 
 function ee(e) {
@@ -222,10 +222,10 @@ async function et(e, t, n, r, i) {
   var a, s, o, c, d, f, g;
   let E, y = await F(),
     D = (null == y ? true : y.authorizationStatus) === "authorized" || (null == y ? true : y.authorizationStatus) === "provisional",
-    L = null != y ? D : await $(),
+    L = null != y ? D : await J(),
     k = D,
     B = I.A.disableNotifications && null == i.overrideStreamerMode,
-    H = !R.isPlatformEmbedded || (0, R.isMac)() && k || w.Ay.shouldDisplayNotifications(),
+    H = !w.isPlatformEmbedded || (0, w.isMac)() && k || R.Ay.shouldDisplayNotifications(),
     Y = !B && L && H,
     K = j(x({}, r), {
       action: true,
@@ -243,14 +243,14 @@ async function et(e, t, n, r, i) {
   }
   t.includes("\0") && (G.warn("Notification title contains null character, setting to empty string"), t = ""), n.includes("\0") && (G.warn("Notification body contains null character, setting to empty string"), n = "");
   let Q = null != (a = null == i ? true : i.tag) ? a : null,
-    J = k && (null == y ? true : y.sound) === true && (null == y ? true : y.authorizationStatus) === "authorized",
+    $ = k && (null == y ? true : y.sound) === true && (null == y ? true : y.authorizationStatus) === "authorized",
     et = (e, t) => {
       var n;
       null == (n = i.onShown) || n.call(i), i.omitViewTracking || (T.default.track(P.HAw.NOTIFICATION_ACTION, x({
         action: "VIEW"
       }, t)), T.default.track(P.HAw.NOTIFICATION_VIEWED, q)), V && setTimeout(() => e.close(), 5e3)
     };
-  if (null == i.sound || J || (ee(i.sound, null != (o = i.volume) ? o : 1, i.soundpack), r.ping = true), i.isUserAvatar && null != e && (e = await (0, m.w)(e)), M && v.A.taskbarFlash && w.Ay.flashFrame(true), k) {
+  if (null == i.sound || $ || (ee(i.sound, null != (o = i.volume) ? o : 1, i.soundpack), r.ping = true), i.isUserAvatar && null != e && (e = await (0, m.w)(e)), M && v.A.taskbarFlash && R.Ay.flashFrame(true), k) {
     let a = {
       title: t,
       body: n
@@ -295,8 +295,8 @@ async function et(e, t, n, r, i) {
       }, e)))
     }
     try {
-      let e = await w.Ay.invoke("NOTIFICATIONS_SEND_NOTIFICATION", a);
-      Z[e] = {
+      let e = await R.Ay.invoke("NOTIFICATIONS_SEND_NOTIFICATION", a);
+      X[e] = {
         options: i,
         trackingProps: r,
         clickTrackingProps: z
@@ -304,7 +304,7 @@ async function et(e, t, n, r, i) {
       let t = {
         close() {
           try {
-            w.Ay.invoke("NOTIFICATIONS_REMOVE_NOTIFICATIONS", [e])
+            R.Ay.invoke("NOTIFICATIONS_REMOVE_NOTIFICATIONS", [e])
           } catch (e) {
             G.warn("Native notification removal failed with error: ", e)
           }
@@ -326,13 +326,13 @@ async function et(e, t, n, r, i) {
     silent: true
   };
   try {
-    E = new X(t, en)
+    E = new Z(t, en)
   } catch (e) {
     return
   }
   return (et(E, r), E.onclick = e => {
     var t;
-    R.isPlatformEmbedded ? w.Ay.focus() : (window.focus(), E.close()), i.omitClickTracking || (T.default.track(P.HAw.NOTIFICATION_ACTION, x({
+    w.isPlatformEmbedded ? R.Ay.focus() : (window.focus(), E.close()), i.omitClickTracking || (T.default.track(P.HAw.NOTIFICATION_ACTION, x({
       action: "CLICK"
     }, r)), T.default.track(P.HAw.NOTIFICATION_CLICKED, z));
     let n = "";
@@ -351,7 +351,7 @@ async function et(e, t, n, r, i) {
   }
 }
 let en = {
-  hasPermission: $,
+  hasPermission: J,
   requestPermission: Q,
   showNotification: et,
   playNotificationSound: K

@@ -38,7 +38,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,7 +63,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -105,14 +105,14 @@ function q() {
   return L = e, a
 }
 
-function X(e) {
+function Z(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : L;
   return t.reduce((t, n) => e(K(n)) ? (er(n), en(n), true) : t, false)
 }
 
-function Z(e) {
+function X(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : L;
-  return X(t => t.updateParticipant(e), t)
+  return Z(t => t.updateParticipant(e), t)
 }
 
 function Q(e) {
@@ -122,13 +122,13 @@ function Q(e) {
   return null != (t = M[e]) ? t : [r, T.jd.NONE]
 }
 
-function $(e) {
+function J(e) {
   if (null == M[e]) returnfalse;
   let [t] = M[e];
   return t !== T.jd.NONE
 }
 
-function J(e) {
+function $(e) {
   null == k[e] && (k[e] = {
     gridDurationMs: 0,
     focusDurationMs: 0,
@@ -137,7 +137,7 @@ function J(e) {
   });
   let t = k[e],
     n = performance.now(),
-    r = $(e);
+    r = J(e);
   if (t.lastUpdate > 0) {
     let e = n - t.lastUpdate;
     t[r ? "focusDurationMs" : "gridDurationMs"] += e
@@ -146,9 +146,9 @@ function J(e) {
 }
 
 function ee(e, t) {
-  J(e);
-  let n = $(e);
-  null == t ? delete M[e] : M[e] = t, n !== $(e) && k[e].toggleCount++
+  $(e);
+  let n = J(e);
+  null == t ? delete M[e] : M[e] = t, n !== J(e) && k[e].toggleCount++
 }
 
 function et(e) {
@@ -195,7 +195,7 @@ function ei(e) {
 }
 
 function ea() {
-  return X(e => e.rebuild(), q())
+  return Z(e => e.rebuild(), q())
 }
 
 function es(e) {
@@ -203,7 +203,7 @@ function es(e) {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
-  return null != t ? delete k[t] : null != n && (delete B[n], delete Y[n], J(n)), ea()
+  return null != t ? delete k[t] : null != n && (delete B[n], delete Y[n], $(n)), ea()
 }
 
 function eo(e) {
@@ -232,41 +232,41 @@ function el(e) {
       location: "voice_status_update"
     }, {
       autoTrackExposure: false
-    }).enabled && K(i).updateGuildRingingUsers(r, false), n && null != i && !L.includes(i)) ? e : Z(r) || e
+    }).enabled && K(i).updateGuildRingingUsers(r, false), n && null != i && !L.includes(i)) ? e : X(r) || e
   }, false)
 }
 
 function ec() {
-  return X(e => e.updateEmbeddedActivities())
+  return Z(e => e.updateEmbeddedActivities())
 }
 
 function eu() {
-  y.A.getUserIds().forEach(e => Z(e))
+  y.A.getUserIds().forEach(e => X(e))
 }
 
 function ed(e) {
   let {
     userId: t
   } = e;
-  return X(e => e.updateParticipantSpeaking(t))
+  return Z(e => e.updateParticipantSpeaking(t))
 }
 
 function ef() {
-  return X(e => e.updateParticipantSpeaking(m.default.getId()))
+  return Z(e => e.updateParticipantSpeaking(m.default.getId()))
 }
 
 function ep(e) {
   let {
     user: t
   } = e;
-  return Z(t.id)
+  return X(t.id)
 }
 
 function e_(e) {
   let {
     channelId: t
   } = e;
-  return X(e => e.rebuild(), [t])
+  return Z(e => e.rebuild(), [t])
 }
 
 function eh(e) {
@@ -312,7 +312,7 @@ function ey(e) {
     let [e] = Q(t);
     (0, p.wL)(e) && e.includes(r) && ee(t, null)
   }
-  Z(r, [t])
+  X(r, [t])
 }
 
 function eb(e) {
@@ -361,7 +361,7 @@ function eI(e) {
       let {
         ownerId: e
       } = (0, p.Iy)(n);
-      e === m.default.getId() && Z(e, [t])
+      e === m.default.getId() && X(e, [t])
     } catch (e) {
       D.warn("INVALID STREAM KEY FORMAT ".concat(n), e)
     }
@@ -377,7 +377,7 @@ function eS(e) {
   r === n && ee(t, null);
   let i = K(t),
     a = i.getParticipant(n);
-  null == a || a.type !== T.lp.ACTIVITY && (i.updateParticipantPoppedOut(n, true), Z(a.user.id, [t]))
+  null == a || a.type !== T.lp.ACTIVITY && (i.updateParticipantPoppedOut(n, true), X(a.user.id, [t]))
 }
 
 function eT(e) {
@@ -387,7 +387,7 @@ function eT(e) {
   } = e, r = K(t);
   r.updateParticipantPoppedOut(n, false);
   let i = r.getParticipant(n);
-  null == i || i.type !== T.lp.ACTIVITY && Z(i.user.id, [t])
+  null == i || i.type !== T.lp.ACTIVITY && X(i.user.id, [t])
 }
 
 function eC(e) {
@@ -415,25 +415,25 @@ function eN(e) {
   return delete B[t], delete H[t], delete Y[t], ei(t)
 }
 
-function eR(e) {
+function ew(e) {
   let {
     channelId: t,
     layout: n,
     appContext: r
   } = e;
-  G[t] = P(R({}, G[t]), {
+  G[t] = P(w({}, G[t]), {
     [r]: n
   })
 }
 
-function ew(e) {
+function eR(e) {
   let {
     streamKey: t
   } = e, {
     channelId: n,
     ownerId: r
   } = (0, p.Iy)(t);
-  return Z(r, [n])
+  return X(r, [n])
 }
 
 function eP(e) {
@@ -443,7 +443,7 @@ function eP(e) {
     channelId: n,
     ownerId: r
   } = (0, p.Iy)(t);
-  return Z(r, [n])
+  return X(r, [n])
 }
 
 function eD(e) {
@@ -451,7 +451,7 @@ function eD(e) {
     channelId: t,
     userId: n
   } = e;
-  return Z(n, [t])
+  return X(n, [t])
 }
 
 function ex(e) {
@@ -459,14 +459,14 @@ function ex(e) {
     channelId: t,
     userId: n
   } = e;
-  return Z(n, [t])
+  return X(n, [t])
 }
 
 function eL(e) {
   let {
     userId: t
   } = e;
-  return Z(t)
+  return X(t)
 }
 
 function ej(e) {
@@ -476,7 +476,7 @@ function ej(e) {
     maxResolution: r,
     maxFrameRate: i
   } = e;
-  return X(e => e.updateParticipantQuality(n, r, i), [t])
+  return Z(e => e.updateParticipantQuality(n, r, i), [t])
 }
 
 function eM(e) {
@@ -490,7 +490,7 @@ function eM(e) {
       location: "guild_ring_start"
     }).enabled) returnfalse;
   let i = K(t);
-  return r.forEach(e => i.updateGuildRingingUsers(e, true)), X(e => e.rebuild(), [t])
+  return r.forEach(e => i.updateGuildRingingUsers(e, true)), Z(e => e.rebuild(), [t])
 }
 
 function ek(e) {
@@ -504,7 +504,7 @@ function ek(e) {
       location: "guild_ring_start"
     }).enabled) returnfalse;
   let i = K(t);
-  return r.forEach(e => i.updateGuildRingingUsers(e, false)), X(e => e.rebuild(), [t])
+  return r.forEach(e => i.updateGuildRingingUsers(e, false)), Z(e => e.rebuild(), [t])
 }
 
 function eU(e) {
@@ -649,7 +649,7 @@ let eB = new eF(Chunk73153.h, {
   CHANNEL_RTC_SELECT_PARTICIPANT: eI,
   CHANNEL_RTC_POPOUT_PARTICIPANT: eS,
   CHANNEL_RTC_RETURN_PARTICIPANT: eT,
-  CHANNEL_RTC_UPDATE_LAYOUT: eR,
+  CHANNEL_RTC_UPDATE_LAYOUT: ew,
   CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: eg,
   CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: eE,
   CHANNEL_RTC_UPDATE_STAGE_STREAM_SIZE: eb,
@@ -661,8 +661,8 @@ let eB = new eF(Chunk73153.h, {
   RTC_CONNECTION_PLATFORM: ex,
   AUDIO_SET_LOCAL_VIDEO_DISABLED: eL,
   MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: ej,
-  STREAM_CLOSE: ew,
-  STREAM_DELETE: ew,
+  STREAM_CLOSE: eR,
+  STREAM_DELETE: eR,
   STREAM_WATCH: eP,
   SPEAKING: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: ed,

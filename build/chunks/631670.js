@@ -14,7 +14,7 @@ require.d(exports, {
   WR: () => O,
   _e: () => N,
   dM: () => A,
-  fw: () => R,
+  fw: () => w,
   gt: () => h,
   pZ: () => S,
   x8: () => I,
@@ -214,7 +214,7 @@ function N() {
   })
 }
 
-function R() {
+function w() {
   s.h.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES"
   })

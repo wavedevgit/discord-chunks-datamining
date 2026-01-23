@@ -2,7 +2,7 @@
 /** chunk id: 321090, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -48,7 +48,7 @@ async function O() {
     if (h === n || !d.OX) return;
     let r = await (null === s.A || true === s.A || null == (t = s.A.processUtils) || null == (e = t.getGpuProcessId) ? true : e.call(t));
     if (null == r) return;
-    l.Ay.SetGPUBoostEnabledByPid(r, n) && (h = n), R.emitChange()
+    l.Ay.SetGPUBoostEnabledByPid(r, n) && (h = n), w.emitChange()
   } catch (e) {
     (null == (n = e.message) ? true : n.includes("IPC method called after context was released")) && y(), p.error("Error during GPU boost request flush:", e)
   }
@@ -96,7 +96,7 @@ class N extends(r = Chunk311907.Ay.Store) {
   }
 }
 f(N, "displayName", "Overlay-v3-Native-GPU-Boost-Store");
-let R = new N(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
+let w = new N(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
     OVERLAY_SET_GPU_BOOST_REQUESTED: v,
     OVERLAY_RENDER_DEBUG_MODE: A,
     OVERLAY_CRASHED: I,
@@ -104,4 +104,4 @@ let R = new N(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
     OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: C,
     OVERLAY_SET_INPUT_LOCKED: S
   }),
-  w = R
+  R = w

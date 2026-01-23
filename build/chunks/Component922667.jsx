@@ -114,7 +114,7 @@ function q(e) {
   }
   return t
 }
-let X = e => {
+let Z = e => {
   let {
     current: t,
     duration: n
@@ -133,7 +133,7 @@ let X = e => {
     })]
   })
 };
-class Z extends(r = Chunk64700.Component) {
+class X extends(r = Chunk64700.Component) {
   componentDidMount() {
     this.state.translateY.setValue(+!!this.props.autoPlay)
   }
@@ -234,7 +234,7 @@ class Z extends(r = Chunk64700.Component) {
       onClick: e => e.stopPropagation(),
       onDoubleClick: e => e.stopPropagation(),
       style: this.getAnimatedStyle(),
-      children: [this.renderPlayIcon(), m ? (0, a.jsx)(X, {
+      children: [this.renderPlayIcon(), m ? (0, a.jsx)(Z, {
         current: n,
         duration: r
       }) : null, (0, a.jsx)(T.A, {
@@ -307,10 +307,10 @@ function Q(e) {
     })]
   })
 }
-k(Z, "defaultProps", {
+k(X, "defaultProps", {
   disabled: false
 });
-class $ extends Chunk64700.Component {
+class J extends Chunk64700.Component {
   pop() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     this.setState({
@@ -371,7 +371,7 @@ class $ extends Chunk64700.Component {
     })
   }
 }
-let J = (0, Chunk600975.C)({
+let $ = (0, Chunk600975.C)({
   kind: "user",
   id: "2024-03_media_play_metrics",
   label: "Media play metrics User Experiment",
@@ -536,7 +536,7 @@ class ee {
       null != e && (this.lastPlayingTime = e)
     }), k(this, "onLoadedMetadata", e => {
       this.metadata.fileDurationSec = e.currentTarget.duration
-    }), this.metadata = e, this.analyticsEnabled = J.getCurrentConfig({
+    }), this.metadata = e, this.analyticsEnabled = $.getCurrentConfig({
       location: "media_player"
     }).enabled
   }
@@ -759,7 +759,7 @@ class et extends(i = Chunk64700.PureComponent) {
         dragging: y
       }
     } = this, b = this.getWidth();
-    return f || n || t === W.AUDIO ? (0, a.jsx)(Z, {
+    return f || n || t === W.AUDIO ? (0, a.jsx)(X, {
       buffers: c,
       currentTime: u,
       duration: d,
@@ -815,7 +815,7 @@ class et extends(i = Chunk64700.PureComponent) {
     }) : null
   }
   renderPlayPausePop() {
-    return (0, a.jsx)($, {
+    return (0, a.jsx)(J, {
       ref: this.playPausePopRef
     })
   }
@@ -895,7 +895,7 @@ class et extends(i = Chunk64700.PureComponent) {
           [j.eM]: p || d
         }),
         children: u()
-      }) : null, t === W.VIDEO && this.state.showStats && null != this.state.videoStats ? (0, a.jsx)(w.J, {
+      }) : null, t === W.VIDEO && this.state.showStats && null != this.state.videoStats ? (0, a.jsx)(R.J, {
         stats: this.state.videoStats,
         onClose: this.toggleStats
       }) : null]
@@ -1114,7 +1114,7 @@ class et extends(i = Chunk64700.PureComponent) {
         this._isUpdatingStats = false, this._unmounted || S.Ay.setVideoStats(this.props.src, false)
       });
       else if (null != t && (0, f.vq)(t, HTMLVideoElement)) try {
-        null == this._statsCollector && (this._statsCollector = new R.s(t, this.props.fileSizeBytes)), this._statsCollector.startTracking(this.handleStatsUpdate), this._isUpdatingStats = true, this.setState({
+        null == this._statsCollector && (this._statsCollector = new w.s(t, this.props.fileSizeBytes)), this._statsCollector.startTracking(this.handleStatsUpdate), this._isUpdatingStats = true, this.setState({
           showStats: true,
           videoStats: this._statsCollector.getStats()
         }, () => {

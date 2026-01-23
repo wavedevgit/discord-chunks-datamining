@@ -2,7 +2,7 @@
 /** chunk id: 849258, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => w
+  Ay: () => R
 }), require("./747238.js"), require("./812715.js"), require("./866193.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
       userName: i
     }).replaceAll("*", "")
   },
-  R = e => {
+  w = e => {
     let {
       entry: t,
       channel: n,
@@ -55,12 +55,12 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
       countOthers: i
     }).replaceAll("*", "")
   },
-  w = e => {
+  R = e => {
     let {
       channel: t,
       entry: n,
       onReaction: m,
-      onVoiceChannelPreview: w,
+      onVoiceChannelPreview: R,
       disableActivityProfileLinks: P
     } = e, {
       largeImage: D
@@ -84,7 +84,7 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
       (0, f.hg)(n.extra.application_id)
     }, W = i.useCallback(e => {
       if ((null == D ? true : D.src) == null || null == t || null == x) return;
-      let r = H > 0 ? R({
+      let r = H > 0 ? w({
         entry: n,
         channel: t,
         users: [F, B],
@@ -110,7 +110,7 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
         location: v.N5.POPOUT,
         entry: n
       }),
-      X = (0, r.jsx)(A.BC, {
+      Z = (0, r.jsx)(A.BC, {
         channel: t,
         userDescription: (0, y.JM)(n) ? T.t.vPg1JT : T.t.rPqqts,
         title: n.extra.activity_name,
@@ -122,8 +122,8 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
         onClickSubtitle: P ? true : Y,
         onClickThumbnail: P ? true : Y
       }),
-      Z = (0, o.A)(j, S.jUm.JOIN) || (0, l.A)(j),
-      Q = Z ? (0, r.jsx)(u.A, {
+      X = (0, o.A)(j, S.jUm.JOIN) || (0, l.A)(j),
+      Q = X ? (0, r.jsx)(u.A, {
         embeddedActivity: M,
         activity: j,
         user: x,
@@ -131,7 +131,7 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
         size: "md",
         icon: s.Ihz
       }) : null,
-      $ = null == z ? null : (0, r.jsx)(s.Button, {
+      J = null == z ? null : (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "md",
         fullWidth: true,
@@ -139,7 +139,7 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
         text: T.intl.string(T.t["jaYS/h"]),
         icon: s.hpF
       }),
-      J = null != $ || P ? null : (0, r.jsx)(s.Button, {
+      $ = null != J || P ? null : (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "md",
         fullWidth: true,
@@ -147,12 +147,12 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
         text: T.intl.string(T.t.GDWYR8),
         icon: s.k9F
       }),
-      ee = [$, Z && !P ? Q : J].filter(h.Vq);
+      ee = [J, X && !P ? Q : $].filter(h.Vq);
     return (0, r.jsxs)(A.YN, {
-      children: [X, (0, r.jsx)(A.Eh, {
+      children: [Z, (0, r.jsx)(A.Eh, {
         children: (0, r.jsx)(A.fD, {
           onReaction: m,
-          onVoiceChannelPreview: w,
+          onVoiceChannelPreview: R,
           user: x,
           channel: t,
           generateReactionImage: W,

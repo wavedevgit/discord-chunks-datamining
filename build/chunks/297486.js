@@ -2,9 +2,9 @@
 /** chunk id: 297486, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ch: () => w,
+  Ch: () => R,
   SD: () => N,
-  dn: () => R,
+  dn: () => w,
   hg: () => P
 });
 var Chunk64700 = require("./64700.js"),
@@ -76,7 +76,7 @@ let T = function(e, t) {
   })]), ["commandMention", "customEmoji", "em", "emoji", "emoticon", "highlight", "inlineCode", "looseEm", "s", "strong", "text", "timestamp", "u", "spoiler"]),
   N = Chunk436857.aV(C);
 
-function R(e) {
+function w(e) {
   let {
     context: t,
     application: n,
@@ -92,12 +92,12 @@ function R(e) {
     context: t,
     applicationId: n.id,
     fetchesApplication: g
-  }), C = (0, O.G)(T), N = (0, s.bG)([y.A], () => y.A.entrypoint()), R = r.useMemo(() => {
+  }), C = (0, O.G)(T), N = (0, s.bG)([y.A], () => y.A.entrypoint()), w = r.useMemo(() => {
     var e, r, i;
     if ("channel" !== t.type) return null != (e = null == (r = n.bot) ? true : r.id) ? e : null == (i = (0, f.Sx)(t, n.id).descriptor) ? true : i.botId
-  }, [t, n.id, n.bot]), w = (0, c.wK)({
+  }, [t, n.id, n.bot]), R = (0, c.wK)({
     application: n,
-    botUserIdForAppDM: R,
+    botUserIdForAppDM: w,
     embeddedActivitiesManager: u.A,
     context: t,
     locationObject: S.location,
@@ -121,14 +121,14 @@ function R(e) {
     onConfirmActivityLaunchChecksAlertOpen: I
   }), P = "primary", D = null != o ? o : A.intl.string(A.t.zKX8Nu);
   return C === c.o6.JOIN ? (P = "active", D = A.intl.string(A.t.d9PsMj)) : C !== c.o6.LEAVE || m || (P = "critical-primary", D = A.intl.string(A.t["Hi1/aQ"])), {
-    onActivityItemSelected: w,
+    onActivityItemSelected: R,
     activityAction: C,
     buttonVariant: P,
     buttonText: D
   }
 }
 
-function w(e, t) {
+function R(e, t) {
   let n = y.A.entrypoint(),
     a = r.useMemo(() => (0, i.debounce)((e, t) => {
       (0, d.zV)(v.HAw.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {

@@ -77,12 +77,12 @@ function S(e) {
     config: {
       duration: A
     }
-  })), R = e => {
+  })), w = e => {
     f(), O(1), null != p && d.default.track(h.HAw.QUEST_SURVEY_SUBMITTED, v(b({}, N(p, n)), {
       choice: e.text,
       choice_id: e.key
     }))
-  }, w = async e => {
+  }, R = async e => {
     1 === e && (await C({
       width: "100%"
     }), s())
@@ -98,7 +98,7 @@ function S(e) {
     children: (0, r.jsxs)(l.tN_, {
       activeSlide: y,
       width: I,
-      onSlideReady: w,
+      onSlideReady: R,
       children: [(0, r.jsxs)(l.q7S, {
         id: 0,
         children: [(0, r.jsxs)(l.rQ0, {
@@ -127,7 +127,7 @@ function S(e) {
           className: g.jE,
           children: n.choices.map(e => (0, r.jsx)(T, {
             choice: e,
-            onClick: R
+            onClick: w
           }, e.key))
         })]
       }), (0, r.jsxs)(l.q7S, {

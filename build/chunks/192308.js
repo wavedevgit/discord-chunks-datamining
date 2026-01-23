@@ -2,7 +2,7 @@
 /** chunk id: 192308, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  closeAllModals: () => w,
+  closeAllModals: () => R,
   closeAllModalsInContext: () => P,
   closeModal: () => A,
   closeModalInAllContexts: () => I,
@@ -18,7 +18,7 @@ require.r(exports), require.d(exports, {
   updateModal: () => S,
   useHasAnyModalOpen: () => N,
   useHasModalOpen: () => L,
-  useIsModalAtTop: () => R,
+  useIsModalAtTop: () => w,
   useModalsStore: () => b
 }), require("./65821.js"), require("./134528.js"), require("./947204.js"), require("./896048.js");
 var Chunk296489 = require("./296489.js"),
@@ -261,7 +261,7 @@ function N() {
   return T(b())
 }
 
-function R(e) {
+function w(e) {
   var t, n;
   let {
     default: r,
@@ -270,7 +270,7 @@ function R(e) {
   return i.length > 0 ? (null == (t = i.at(false)) ? true : t.key) === e : (null == (n = r.at(false)) ? true : n.key) === e
 }
 
-function w() {
+function R() {
   let e = b.getState();
   for (let t in e)
     for (let n of e[t]) A(n.key, t)

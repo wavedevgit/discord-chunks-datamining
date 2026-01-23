@@ -2,7 +2,7 @@
 /** chunk id: 167272, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -33,54 +33,54 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk996988 = require("./996988.js");
 
-function w(e) {
+function R(e) {
   var t;
   let {
     user: n,
-    activity: w,
+    activity: R,
     onAction: P,
     onClose: D,
     application: x,
     containerClassName: L
   } = e, {
     themeType: j
-  } = (0, y.E)(), M = (0, i.bG)([m.default], () => m.default.getId() === n.id), k = (0, u.J)(x), U = (0, _.o)(null != (t = null == w ? true : w.application_id) ? t : null == x ? true : x.id), {
+  } = (0, y.E)(), M = (0, i.bG)([m.default], () => m.default.getId() === n.id), k = (0, u.J)(x), U = (0, _.o)(null != (t = null == R ? true : R.application_id) ? t : null == x ? true : x.id), {
     analyticsLocations: G
-  } = (0, p.Ay)(f.A.USER_PROFILE_ACTIVITY_BUTTONS), V = j === R.d.MODAL || j === R.d.MODAL_V2, F = j === R.d.POPOUT, B = (() => M ? F && (null == w ? true : w.type) === N.$pd.PLAYING && (null == x ? true : x.id) != null ? (0, r.jsx)(d.A, {
+  } = (0, p.Ay)(f.A.USER_PROFILE_ACTIVITY_BUTTONS), V = j === w.d.MODAL || j === w.d.MODAL_V2, F = j === w.d.POPOUT, B = (() => M ? F && (null == R ? true : R.type) === N.$pd.PLAYING && (null == x ? true : x.id) != null ? (0, r.jsx)(d.A, {
     applicationId: x.id,
     onAction: P,
     onClose: D
-  }) : null : U || !k || null == x || V ? (0, l.A)(w) ? (0, r.jsx)(I.A, {
+  }) : null : U || !k || null == x || V ? (0, l.A)(R) ? (0, r.jsx)(I.A, {
     platformType: N.fg2.XBOX,
     icon: () => (0, r.jsx)(E.A, {}),
     onAction: P
-  }) : (0, o.A)(w) ? (0, r.jsx)(I.A, {
+  }) : (0, o.A)(R) ? (0, r.jsx)(I.A, {
     platformType: N.fg2.PLAYSTATION,
     icon: () => (0, r.jsx)(g.A, {}),
     onAction: P
-  }) : (0, c.A)(w) ? (0, r.jsx)(T.A, {
-    activity: w,
+  }) : (0, c.A)(R) ? (0, r.jsx)(T.A, {
+    activity: R,
     onAction: P
-  }) : (0, a.A)(w, N.jUm.JOIN) || (0, s.A)(w) ? (0, r.jsx)(v.A, {
+  }) : (0, a.A)(R, N.jUm.JOIN) || (0, s.A)(R) ? (0, r.jsx)(v.A, {
     user: n,
-    activity: w,
+    activity: R,
     onAction: P,
     onClose: D
-  }) : (null == w ? true : w.type) === N.$pd.HANG_STATUS ? (0, r.jsx)(O.A, {
+  }) : (null == R ? true : R.type) === N.$pd.HANG_STATUS ? (0, r.jsx)(O.A, {
     user: n,
-    activity: w,
+    activity: R,
     onAction: P,
     onClose: D
-  }) : (null == w ? true : w.buttons) != null && (null == w ? true : w.buttons.length) >= 1 ? (0, r.jsx)(b.A, {
+  }) : (null == R ? true : R.buttons) != null && (null == R ? true : R.buttons.length) >= 1 ? (0, r.jsx)(b.A, {
     user: n,
-    activity: w,
+    activity: R,
     onAction: P
-  }) : (0, a.A)(w, N.jUm.INSTANCE) ? (0, r.jsx)(A.A, {
+  }) : (0, a.A)(R, N.jUm.INSTANCE) ? (0, r.jsx)(A.A, {
     user: n,
-    activity: w,
+    activity: R,
     onAction: P
-  }) : (0, h.Cy)(w) ? (0, r.jsx)(S.A, {
-    activity: w,
+  }) : (0, h.Cy)(R) ? (0, r.jsx)(S.A, {
+    activity: R,
     onAction: P,
     onClose: D
   }) : null : (0, r.jsx)(C.A, {

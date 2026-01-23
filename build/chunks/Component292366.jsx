@@ -111,23 +111,23 @@ function S(e) {
       isDisabled: C
     } = (0, h.At)(e),
     N = (0, f.Q)(O),
-    R = null != O && i === d.in.PREMIUM,
-    w = R && (null == N ? true : N.disabled),
-    P = R ? null == N ? true : N.label : n,
+    w = null != O && i === d.in.PREMIUM,
+    R = w && (null == N ? true : N.disabled),
+    P = w ? null == N ? true : N.label : n,
     D = null != g,
     x = null != P && P.length > 0,
     L = i === d.in.LINK && null != y && y.length > 0,
-    j = T === m.BB.LOADING || R && null == N;
+    j = T === m.BB.LOADING || w && null == N;
   return t = L ? () => {
     (0, _.h)({
       href: null != y ? y : "",
       shouldConfirm: true
     })
-  } : R ? null != N && false === N.disabled ? N.onClick : s.noop : () => S(), (0, r.jsxs)(o.$n, {
+  } : w ? null != N && false === N.disabled ? N.onClick : s.noop : () => S(), (0, r.jsxs)(o.$n, {
     "data-migration-pending": true,
     color: A(i),
     size: o.$n.Sizes.SMALL,
-    disabled: p || T === m.BB.DISABLED || C || w,
+    disabled: p || T === m.BB.DISABLED || C || R,
     onClick: t,
     onContextMenu: e => {
       L && (0, c.jA)(e, e => (0, r.jsx)(I, v(b({}, e), {
@@ -138,10 +138,10 @@ function S(e) {
     children: [(0, r.jsxs)("div", {
       className: a()(E.Qs, {
         [E.R]: j,
-        [E.M2]: R
+        [E.M2]: w
       }),
       "aria-hidden": j,
-      children: [R ? (0, r.jsx)("div", {
+      children: [w ? (0, r.jsx)("div", {
         className: E.sV,
         children: (0, r.jsx)(l.U1X, {
           size: "xs",

@@ -82,7 +82,7 @@ function A(e) {
     giftRecipient: O
   });
   if (t) return null;
-  let R = () => {
+  let w = () => {
     N && C && null != O ? (0, f.A)({
       giftRecipient: O,
       analyticsLocations: y,
@@ -128,7 +128,7 @@ function A(e) {
       "aria-label": g.intl.string(N ? g.t.TW4JV0 : g.t.Z1RnTk),
       "aria-haspopup": "dialog",
       onClick: () => {
-        R(), S()
+        w(), S()
       }
     }, I), {
       children: (0, r.jsx)(A, {

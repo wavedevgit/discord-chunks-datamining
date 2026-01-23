@@ -52,12 +52,12 @@ function N(e) {
   ])
 }
 
-function R(e) {
+function w(e) {
   let t = [b.LWr.FILTER_HAS];
   return p.A.hidePersonalInformation || (t.push(b.LWr.FILTER_FROM), t.push(b.LWr.FILTER_MENTIONS)), (0, E.Wg)(e) && t.push(b.LWr.FILTER_IN), t
 }
 
-function w(e) {
+function R(e) {
   var t;
   let n = (0, E.bS)(e),
     r = null != (t = S.get(n)) ? t : {
@@ -91,7 +91,7 @@ function D(e) {
     cursorScope: a,
     autocompletes: s
   } = e;
-  return w(t), {
+  return R(t), {
     searchContext: t,
     query: n,
     mode: r,
@@ -181,7 +181,7 @@ function V(e) {
   if (null != l && a === l.query && (null == l.mode || l.mode.filter === s.filter)) t = l.autocompletes, c = false;
   else if (j(s)) {
     var u, d;
-    let e = w(n),
+    let e = R(n),
       i = s.token,
       a = null == i || null == (u = i.getFullMatch()) ? true : u.trim();
     if (null != a && a.length > 0) {
@@ -222,7 +222,7 @@ function F(e) {
   let c = null,
     u = null != (t = null == a || null == (n = a.getFullMatch()) ? true : n.trim()) ? t : "",
     d = 0 === u.length;
-  if ((0, E._B)(s) && L(i) && !d) c = w(s).results;
+  if ((0, E._B)(s) && L(i) && !d) c = R(s).results;
   else {
     let e = null == (r = y.Ay[i]) ? true : r.getAutocompletions;
     c = null != e ? e({
@@ -266,7 +266,7 @@ function H(e, t, n) {
     a = null == i || null == (r = i.getFullMatch()) ? true : r.trim(),
     s = [];
   if (null != a && "" !== a) {
-    R(t).forEach(e => {
+    w(t).forEach(e => {
       if (null == e) return;
       let r = F({
         filter: e,
@@ -385,14 +385,14 @@ function q(e) {
   I.set(e, c)
 }
 
-function X(e) {
+function Z(e) {
   let {
     autocompleteStateId: t
   } = e;
   q(t)
 }
 
-function Z() {
+function X() {
   for (let e of I.keys()) q(e)
 }
 
@@ -416,11 +416,11 @@ function Q(e) {
   I.set(t, o)
 }
 
-function $() {
+function J() {
   return null != A && Q(A)
 }
 
-function J() {
+function $() {
   return null != A && Q(A)
 }
 class ee extends(r = Chunk311907.Ay.Store) {
@@ -443,9 +443,9 @@ let et = new ee(Chunk73153.h, {
     SEARCH_EDITOR_STATE_CLEAR: x,
     CHANNEL_CREATE: z,
     CHANNEL_DELETE: z,
-    STREAMER_MODE_UPDATE: $,
-    CHANNEL_SELECT: J,
-    LOGOUT: Z,
-    SEARCH_HISTORY_WEB_CLEAR_ITEMS: X
+    STREAMER_MODE_UPDATE: J,
+    CHANNEL_SELECT: $,
+    LOGOUT: X,
+    SEARCH_HISTORY_WEB_CLEAR_ITEMS: Z
   }),
   en = et

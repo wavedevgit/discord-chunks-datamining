@@ -56,7 +56,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk506823 = require("./506823.js"),
   Chunk473169 = require("./473169.js");
 
-function J(e, t, n) {
+function $(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -72,7 +72,7 @@ function ee(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      J(e, t, n[t])
+      $(e, t, n[t])
     })
   }
   return e
@@ -119,14 +119,14 @@ class es extends Chunk64700.Component {
     } = this.props, o = "branch" === t ? "Branch Name" : "Commit SHA";
     return (0, r.jsxs)(S.A, {
       direction: S.A.Direction.VERTICAL,
-      className: s()(Z.oS, $.SX, Q.N, Z.nM),
+      className: s()(X.oS, J.SX, Q.N, X.nM),
       children: [(0, r.jsx)(b.A, {
-        className: s()(Z.lL, {
-          [Z.zi]: i
+        className: s()(X.lL, {
+          [X.zi]: i
         }),
         onClick: i ? true : this.handleRemoveBuildOverride
       }), (0, r.jsxs)(S.A, {
-        className: $.QB,
+        className: J.QB,
         children: [(0, r.jsx)(S.A.Child, {
           basis: "50%",
           children: (0, r.jsx)(h.l6P, {
@@ -149,13 +149,13 @@ class es extends Chunk64700.Component {
         })]
       }), (0, r.jsxs)(S.A.Child, {
         children: [null != a && "" !== a && (0, r.jsx)(h.Text, {
-          className: Z.AS,
+          className: X.AS,
           color: "text-feedback-critical",
           variant: "text-sm/normal",
           children: a
         }), (0, r.jsxs)(h.Text, {
           variant: "text-sm/normal",
-          className: Z.AS,
+          className: X.AS,
           children: ["This controls the build that will be served for the ", (0, r.jsx)("code", {
             children: e
           }), " project."]
@@ -164,13 +164,13 @@ class es extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), J(this, "handleRemoveBuildOverride", () => {
+    super(...e), $(this, "handleRemoveBuildOverride", () => {
       this.props.onBuildOverrideRemoved(this.props.project)
-    }), J(this, "handleOverrideIdChanged", e => {
+    }), $(this, "handleOverrideIdChanged", e => {
       this.props.onBuildOverrideUpdated(this.props.project, {
         id: e
       })
-    }), J(this, "handleOverrideTypeChanged", e => {
+    }), $(this, "handleOverrideTypeChanged", e => {
       this.props.onBuildOverrideUpdated(this.props.project, {
         type: e,
         id: ""
@@ -212,7 +212,7 @@ class eo extends Chunk64700.Component {
   renderEmpty() {
     return (0, r.jsx)(h.ppr, {
       theme: F.A.theme,
-      className: s()($.eT, $.SX),
+      className: s()(J.eT, J.SX),
       children: (0, r.jsx)(h.SGT, {
         children: "You have no build overrides configured."
       })
@@ -283,7 +283,7 @@ class eo extends Chunk64700.Component {
       buildOverrides: i
     } = this.state;
     e = t ? (0, r.jsx)(h.y$y, {
-      className: $.QX
+      className: J.QX
     }) : null != i && 0 === Object.keys(i).length ? this.renderEmpty() : this.renderItems();
     let a = !n && !t && this.getAvailableProjects().length > 0,
       s = ea(null != i ? i : {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, r.jsx)(h.Text, {
@@ -319,14 +319,14 @@ class eo extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), J(this, "state", {
+    super(...e), $(this, "state", {
       loading: true,
       buildOverrides: {},
       loadedBuildOverrides: {},
       errors: {},
       saving: false,
       didSave: false
-    }), J(this, "handleAddBuildOverride", e => {
+    }), $(this, "handleAddBuildOverride", e => {
       if (null == e) return;
       let t = en(ee({}, this.state.buildOverrides), {
         [e]: {
@@ -337,7 +337,7 @@ class eo extends Chunk64700.Component {
       this.setState({
         buildOverrides: t
       })
-    }), J(this, "handleBuildOverrideUpdated", (e, t) => {
+    }), $(this, "handleBuildOverrideUpdated", (e, t) => {
       let {
         buildOverrides: n
       } = this.state, r = ee({}, null != n ? n[e] : {}, t), i = en(ee({}, this.state.buildOverrides), {
@@ -346,18 +346,18 @@ class eo extends Chunk64700.Component {
       this.setState({
         buildOverrides: i
       })
-    }), J(this, "handleBuildOverrideRemoved", e => {
+    }), $(this, "handleBuildOverrideRemoved", e => {
       let t = ee({}, this.state.buildOverrides);
       delete t[e], this.setState({
         buildOverrides: t
       })
-    }), J(this, "handleDiscardChanges", () => {
+    }), $(this, "handleDiscardChanges", () => {
       this.setState({
         buildOverrides: l().cloneDeep(this.state.loadedBuildOverrides),
         errors: {},
         didSave: false
       })
-    }), J(this, "handleSaveChanges", async () => {
+    }), $(this, "handleSaveChanges", async () => {
       let {
         buildOverrides: e
       } = this.state;
@@ -386,7 +386,7 @@ class eo extends Chunk64700.Component {
         saving: false,
         didSave: false
       })
-    }), J(this, "handleLinkGeneration", () => {
+    }), $(this, "handleLinkGeneration", () => {
       let {
         buildOverrides: e
       } = this.state;
@@ -413,7 +413,7 @@ class el extends Chunk64700.Component {
       allowLoggedOut: l,
       experiments: c,
       experimentsError: u
-    } = this.state, d = X.fL.find(t => t.value === e), f = a.map(e => ({
+    } = this.state, d = Z.fL.find(t => t.value === e), f = a.map(e => ({
       id: e,
       label: e,
       value: e
@@ -424,13 +424,13 @@ class el extends Chunk64700.Component {
         selectionMode: "single",
         label: "Expire After",
         value: null != d ? d.value : true,
-        options: X.fL,
+        options: Z.fL,
         onSelectionChange: this.handleExpirationChange
       }), this.isMobile() ? null : (0, r.jsx)(h.l6P, {
         selectionMode: "single",
         label: "Release Channel",
         value: t,
-        options: X.VP,
+        options: Z.VP,
         onSelectionChange: this.handleReleaseChannelChange
       }), this.isMobile() ? (0, r.jsxs)(h.BJc, {
         gap: 20,
@@ -521,7 +521,7 @@ class el extends Chunk64700.Component {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, J(this, "state", {
+    super(...e), t = this, $(this, "state", {
       ttlSeconds: 3600,
       releaseChannel: "all",
       userIds: new Set,
@@ -534,34 +534,34 @@ class el extends Chunk64700.Component {
       statusText: null,
       status: 0,
       allowLoggedOut: false
-    }), J(this, "setUserEntryError", e => {
+    }), $(this, "setUserEntryError", e => {
       this.setState({
         userIdEntryError: e
       })
-    }), J(this, "setStatusMessage", function(e) {
+    }), $(this, "setStatusMessage", function(e) {
       let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
       t.setState({
         statusText: e,
         status: n
       })
-    }), J(this, "handleUserIDEntry", e => {
+    }), $(this, "handleUserIDEntry", e => {
       if (!/^[\d\s,]*$/.test(e)) return this.setUserEntryError("User IDs are numbers!");
       let t = new Set(e.split(/[,\s]+/).filter(Boolean));
       this.setState({
         userIdEntry: e,
         userIds: t
       })
-    }), J(this, "setAllowedVersionError", e => {
+    }), $(this, "setAllowedVersionError", e => {
       this.setState({
         allowedVersionEntryError: e
       })
-    }), J(this, "handleAllowedVersionEntry", e => {
+    }), $(this, "handleAllowedVersionEntry", e => {
       this.setState({
         allowedVersionEntry: e
       })
-    }), J(this, "handleAllowedVersionEnter", e => {
+    }), $(this, "handleAllowedVersionEnter", e => {
       e.charCode === q.Ks6.ENTER && this.handleAddAllowedVersion()
-    }), J(this, "handleAddAllowedVersion", () => {
+    }), $(this, "handleAddAllowedVersion", () => {
       let {
         allowedVersions: e,
         allowedVersionEntry: t
@@ -571,26 +571,26 @@ class el extends Chunk64700.Component {
         allowedVersionEntry: "",
         allowedVersionEntryError: ""
       })
-    }), J(this, "handleRemoveAllowedVersion", e => {
+    }), $(this, "handleRemoveAllowedVersion", e => {
       let {
         allowedVersions: t
       } = this.state;
       t = t.filter(t => t !== e), this.setState({
         allowedVersions: t
       })
-    }), J(this, "handleAllowLoggedOut", e => {
+    }), $(this, "handleAllowLoggedOut", e => {
       this.setState({
         allowLoggedOut: e
       })
-    }), J(this, "handleExpirationChange", e => {
+    }), $(this, "handleExpirationChange", e => {
       this.setState({
         ttlSeconds: e
       })
-    }), J(this, "handleReleaseChannelChange", e => {
+    }), $(this, "handleReleaseChannelChange", e => {
       this.setState({
         releaseChannel: e
       })
-    }), J(this, "handleExperiments", e => {
+    }), $(this, "handleExperiments", e => {
       if (0 === e.trim().length) return void this.setState({
         experimentsError: true
       });
@@ -614,7 +614,7 @@ class el extends Chunk64700.Component {
         experiments: e,
         experimentsError: true
       })
-    }), J(this, "generatePayload", () => ({
+    }), $(this, "generatePayload", () => ({
       overrides: this.props.buildOverrides,
       meta: {
         release_channel: "all" === this.state.releaseChannel ? null : this.state.releaseChannel,
@@ -624,7 +624,7 @@ class el extends Chunk64700.Component {
         allow_logged_out: this.state.allowLoggedOut,
         experiments: null == this.state.experiments ? null : JSON.parse(this.state.experiments)
       }
-    })), J(this, "handleGenerateLink", async () => {
+    })), $(this, "handleGenerateLink", async () => {
       if (this.isMobile() && 0 === this.state.allowedVersions.length) return void this.setAllowedVersionError("You must add at least one allowed version for iOS");
       this.setStatusMessage(null);
       let e = this.generatePayload(),
@@ -650,7 +650,7 @@ function ec() {
   } = (0, d.cf)([M.default], () => ({
     cssDebuggingEnabled: M.default.cssDebuggingEnabled,
     layoutDebuggingEnabled: M.default.layoutDebuggingEnabled
-  })), l = (0, w.A)("highlight_void_toggleables"), c = (0, w.A)("highlight_mana_components");
+  })), l = (0, R.A)("highlight_void_toggleables"), c = (0, R.A)("highlight_mana_components");
   return (0, r.jsxs)(h.nVY, {
     label: "Design Tools",
     children: [(0, r.jsx)(j.x, {
@@ -708,7 +708,7 @@ function ec() {
         label: "Highlight Mana Components",
         description: "Highlights all Mana design system components for easier debugging",
         checked: c,
-        onChange: e => (0, R.L)("highlight_mana_components", e)
+        onChange: e => (0, w.L)("highlight_mana_components", e)
       })
     }), (0, r.jsx)(j.x, {
       setting: z.H.DEVELOPER_OPTIONS_HIGHLIGHT_VOID_TOGGLEABLES,
@@ -716,7 +716,7 @@ function ec() {
         label: "Highlight Void Toggleable Components",
         description: "Highlights deprecated toggleable components: VoidCheckbox (green), VoidRadioGroup (yellow), VoidSwitch (blue)",
         checked: l,
-        onChange: e => (0, R.L)("highlight_void_toggleables", e)
+        onChange: e => (0, w.L)("highlight_void_toggleables", e)
       })
     })]
   })
@@ -933,7 +933,7 @@ function e_() {
   };
   return e ? {} : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: [Z.NC, $.SX].join(" "),
+      className: [X.NC, J.SX].join(" "),
       children: [(0, r.jsx)(j.x, {
         setting: z.H.DEVELOPER_OPTIONS_OVERRIDE_OPEN_OVERLAY,
         children: (0, r.jsx)(h.Button, {
@@ -984,7 +984,7 @@ function e_() {
       children: (0, r.jsx)(h.nVY, {
         label: "Crashes",
         children: (0, r.jsxs)("div", {
-          className: Z.NC,
+          className: X.NC,
           children: [(0, r.jsx)(h.l6P, {
             label: "Native libdiscord crash",
             hideLabel: true,
@@ -1063,7 +1063,7 @@ function eh() {
   return (0, r.jsx)(j.x, {
     setting: z.H.DEVELOPER_OPTIONS_SURVEY_OVERRIDE,
     children: (0, r.jsx)("form", {
-      className: Z.Nn,
+      className: X.Nn,
       onSubmit: a,
       children: (0, r.jsx)(h.nVY, {
         label: "Survey Override",

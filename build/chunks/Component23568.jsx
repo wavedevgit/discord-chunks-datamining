@@ -67,10 +67,10 @@ function v(e) {
     setInteractionToast: T
   } = (0, f.Pq)(), {
     theme: C
-  } = (0, _.E)(), N = (0, a.bG)([l.A], () => l.A.theme), R = (0, s.Mw)(N) ? !(0, s.Mw)(C) : (0, s.Mw)(C), w = i.useRef(null);
+  } = (0, _.E)(), N = (0, a.bG)([l.A], () => l.A.theme), w = (0, s.Mw)(N) ? !(0, s.Mw)(C) : (0, s.Mw)(C), R = i.useRef(null);
   i.useEffect(() => {
-    null == v || v(null == w ? true : w.current)
-  }, [w, v]), i.useEffect(() => {
+    null == v || v(null == R ? true : R.current)
+  }, [R, v]), i.useEffect(() => {
     let e = e => {
       e.key === E.dh.ESCAPE && (e.stopPropagation(), S())
     };
@@ -107,7 +107,7 @@ function v(e) {
     T(h.AQ.REACT)
   };
   return (0, r.jsx)(o.A, {
-    headerClassName: R ? b.X : true,
+    headerClassName: w ? b.X : true,
     guildId: null != n ? n : true,
     closePopout: g.tE,
     onSelectEmoji: async e => {

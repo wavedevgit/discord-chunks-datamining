@@ -163,7 +163,7 @@ class em extends(r = Chunk64700.PureComponent) {
         shouldShowTooltip: T,
         tooltipTextAria: C,
         reactionRef: N,
-        tooltipPositionKey: w
+        tooltipPositionKey: R
       } = this.state,
       P = b ? er : en,
       D = {
@@ -195,7 +195,7 @@ class em extends(r = Chunk64700.PureComponent) {
       nudgeAlignIntoViewport: true,
       position: "top",
       align: "center",
-      positionKey: w,
+      positionKey: R,
       children: () => (0, i.jsx)("div", {
         onMouseEnter: this.handleEnter,
         onMouseLeave: this.handleLeave,
@@ -239,7 +239,7 @@ class em extends(r = Chunk64700.PureComponent) {
                     messageId: v.id,
                     useChatFontScaling: b,
                     color: t,
-                    emojiSize: Z.x.NORMAL
+                    emojiSize: X.x.NORMAL
                   })]
                 }) : null, (0, i.jsx)(m.A, {
                   className: o()({
@@ -255,7 +255,7 @@ class em extends(r = Chunk64700.PureComponent) {
                 value: L,
                 color: e,
                 digitWidth: ec
-              }), (0, i.jsx)(R.A, {
+              }), (0, i.jsx)(w.A, {
                 count: L,
                 reactionRef: N
               })]
@@ -297,10 +297,10 @@ class em extends(r = Chunk64700.PureComponent) {
         p = l ? D.qN.FORUM_TOOLBAR : D.qN.MESSAGE_INLINE_BUTTON;
       i && !this.userCanBurstReact() ? (0, P.z)({
         analytics: {
-          type: J.e.BURST_REACTION_UPSELL,
-          page: (null == c ? true : c.getGuildId()) != null ? $.liQ.GUILD_CHANNEL : $.liQ.DM_CHANNEL,
+          type: $.e.BURST_REACTION_UPSELL,
+          page: (null == c ? true : c.getGuildId()) != null ? J.liQ.GUILD_CHANNEL : J.liQ.DM_CHANNEL,
           section: null != c ? (0, x.sn)(c) : true,
-          object: $.ZSU.EMOJI_REACTION_UPSELL
+          object: J.ZSU.EMOJI_REACTION_UPSELL
         }
       }) : a ? this.handleShowVerificationGate() : r || (this.isMe() ? (0, D.et)({
         channelId: f,
@@ -339,7 +339,7 @@ class em extends(r = Chunk64700.PureComponent) {
     }), ea(this, "hideTooltip", () => {
       this.setState({
         shouldShowTooltip: false
-      }), this.hasShownTooltip && B.default.track($.HAw.CLOSE_POPOUT, {
+      }), this.hasShownTooltip && B.default.track(J.HAw.CLOSE_POPOUT, {
         nonce: this.nonce
       })
     }), ea(this, "isMe", () => {
@@ -354,7 +354,7 @@ class em extends(r = Chunk64700.PureComponent) {
         message: e,
         emoji: t,
         type: n
-      } = this.props, r = (0, X.i)(e, t, n), i = this.isKeyboardNavigation ? r : (0, X.i)(e, t, n, $.tEg);
+      } = this.props, r = (0, Z.i)(e, t, n), i = this.isKeyboardNavigation ? r : (0, Z.i)(e, t, n, J.tEg);
       c()("string" == typeof r, "tooltipTextAria is not a string"), this.setState({
         tooltipText: i,
         tooltipTextAria: r,
@@ -438,8 +438,8 @@ class em extends(r = Chunk64700.PureComponent) {
               variant: "text-sm/normal",
               "aria-label": "super reaction tooltip upsell",
               children: ee.intl.string(ee.t.W1bMkq)
-            }), (0, i.jsx)(w.A, {
-              subscriptionTier: J.pe.TIER_2,
+            }), (0, i.jsx)(R.A, {
+              subscriptionTier: $.pe.TIER_2,
               textOptions: {
                 textOverride: ee.intl.string(ee.t.mr4K7D)
               },
@@ -507,20 +507,20 @@ class em extends(r = Chunk64700.PureComponent) {
         emoji: e,
         message: t,
         type: n
-      } = this.props, r = V.default.getCurrentUser(), i = M.A.getChannel(t.getChannelId()), a = n === W.v.BURST, s = (0, H.TW)(r), o = a ? J.e.EMOJI_IN_BURST_REACTION_HOVER : J.e.EMOJI_IN_REACTION_HOVER;
-      !a || this.userCanBurstReact() || s || (o = J.e.EMOJI_IN_BURST_REACTION_HOVER_UPSELL), y.Ay.trackWithMetadata($.HAw.EXPRESSION_TOOLTIP_VIEWED, {
+      } = this.props, r = V.default.getCurrentUser(), i = M.A.getChannel(t.getChannelId()), a = n === W.v.BURST, s = (0, H.TW)(r), o = a ? $.e.EMOJI_IN_BURST_REACTION_HOVER : $.e.EMOJI_IN_REACTION_HOVER;
+      !a || this.userCanBurstReact() || s || (o = $.e.EMOJI_IN_BURST_REACTION_HOVER_UPSELL), y.Ay.trackWithMetadata(J.HAw.EXPRESSION_TOOLTIP_VIEWED, {
         type: o,
         expression_id: e.id,
         expression_name: e.name,
         is_animated: e.animated,
         is_custom: null != e.id,
         nonce: this.nonce
-      }), !a || null == i || s || this.userCanBurstReact() || B.default.track($.HAw.PREMIUM_UPSELL_VIEWED, {
-        type: J.e.BURST_REACTION_UPSELL,
+      }), !a || null == i || s || this.userCanBurstReact() || B.default.track(J.HAw.PREMIUM_UPSELL_VIEWED, {
+        type: $.e.BURST_REACTION_UPSELL,
         location: {
-          page: (null == i ? true : i.getGuildId()) != null ? $.liQ.GUILD_CHANNEL : $.liQ.DM_CHANNEL,
+          page: (null == i ? true : i.getGuildId()) != null ? J.liQ.GUILD_CHANNEL : J.liQ.DM_CHANNEL,
           section: (0, x.sn)(i),
-          object: $.ZSU.EMOJI_REACTION_TOOLTIP_UPSELL
+          object: J.ZSU.EMOJI_REACTION_TOOLTIP_UPSELL
         }
       })
     })
@@ -604,13 +604,13 @@ let eg = Chunk64700.memo(e => {
       return {
         joinedEmojiSourceGuild: (null == e ? true : e.type) === A.i.GUILD ? k.A.getGuild(null == e ? true : e.guildId) : true
       }
-    }), [u, d] = a.useState(true), [f, _] = a.useState(true), [m, g] = a.useState(null), [E, y] = a.useState(false), [b, O] = a.useState(false), [I, T] = a.useState(false), C = null != c, N = null != (t = null == u ? true : u.isDiscoverable()) && t, R = G.A.getGuildId(), w = null != R && (R === (null == u ? true : u.id) || R === (null == c ? true : c.id)), P = V.default.getCurrentUser(), D = (0, K.O)({
+    }), [u, d] = a.useState(true), [f, _] = a.useState(true), [m, g] = a.useState(null), [E, y] = a.useState(false), [b, O] = a.useState(false), [I, T] = a.useState(false), C = null != c, N = null != (t = null == u ? true : u.isDiscoverable()) && t, w = G.A.getGuildId(), R = null != w && (w === (null == u ? true : u.id) || w === (null == c ? true : c.id)), P = V.default.getCurrentUser(), D = (0, K.O)({
       sourceType: m,
       expressionSourceApplication: null != f ? f : null,
       isPremium: H.Ay.isPremium(P),
       hasJoinedEmojiSourceGuild: C,
       isDiscoverable: N,
-      emojiComesFromCurrentGuild: w,
+      emojiComesFromCurrentGuild: R,
       isUnusableRoleSubscriptionEmoji: false,
       userIsRoleSubscriber: false,
       isRoleSubscriptionEmoji: false,
@@ -671,7 +671,7 @@ let eg = Chunk64700.memo(e => {
         hasJoinedExpressionSourceGuild: C,
         onClose: s,
         popoutData: D,
-        currentGuildId: R,
+        currentGuildId: w,
         nonce: l
       })]
     })

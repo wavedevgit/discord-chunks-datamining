@@ -90,28 +90,28 @@ let M = {
     name: "Checkout Test Panel",
     id: "checkout-test-panel",
     component: () => {
-      let [e, t] = i.useState(R.pe.TIER_2), [n, y] = i.useState(null), b = (0, o.yK)([T.A], () => T.A.getGuildsArray()), [P] = (0, o.yK)([C.A], () => [C.A.getPremiumSubscription()]), x = b.map(e => ({
+      let [e, t] = i.useState(w.pe.TIER_2), [n, y] = i.useState(null), b = (0, o.yK)([T.A], () => T.A.getGuildsArray()), [P] = (0, o.yK)([C.A], () => [C.A.getPremiumSubscription()]), x = b.map(e => ({
         id: e.id,
         value: e,
         label: e.name
       })), [M, k] = i.useState(x.length > 0 ? x[0].value : null), [U, G] = i.useState(""), [V, F] = i.useState({
-        plan_id: R.gD.PREMIUM_MONTH_TIER_2,
+        plan_id: w.gD.PREMIUM_MONTH_TIER_2,
         gift: "true"
       }), B = "true" !== V.gift && null != P, [H, Y] = i.useState(x.length > 0 ? x[0].value : null), {
         analyticsLocations: W
-      } = (0, h.Ay)(_.A.PAYMENT_FLOW_TEST_PAGE), [K, z] = i.useState(""), [q, X] = i.useState(N.dJq), {
-        balance: Z,
+      } = (0, h.Ay)(_.A.PAYMENT_FLOW_TEST_PAGE), [K, z] = i.useState(""), [q, Z] = i.useState(N.dJq), {
+        balance: X,
         isFetching: Q,
-        error: $
+        error: J
       } = (0, I.W)(), {
-        isSubmitting: J,
+        isSubmitting: $,
         responseMessage: ee,
         redeemVirtualCurrency: et
       } = (0, I.Q)(), [en, er] = i.useState(N.dJq), [ei, ea] = i.useState(""), [es, eo] = i.useState(N.dJq);
       return (0, r.jsx)(h.f5, {
         value: W,
         children: (0, r.jsx)(u.IpV, {
-          className: w.XG,
+          className: R.XG,
           children: (0, r.jsxs)(u.BJc, {
             direction: "vertical",
             gap: 24,
@@ -124,15 +124,15 @@ let M = {
                 value: e,
                 options: [{
                   id: "tier_2",
-                  value: R.pe.TIER_2,
+                  value: w.pe.TIER_2,
                   label: "Nitro"
                 }, {
                   id: "tier_1",
-                  value: R.pe.TIER_1,
+                  value: w.pe.TIER_1,
                   label: "Nitro Classic"
                 }, {
                   id: "tier_0",
-                  value: R.pe.TIER_0,
+                  value: w.pe.TIER_0,
                   label: "Nitro Basic"
                 }, {
                   id: "none",
@@ -157,15 +157,15 @@ let M = {
                 value: n,
                 options: [{
                   id: "tier_2",
-                  value: R.pe.TIER_2,
+                  value: w.pe.TIER_2,
                   label: "Nitro"
                 }, {
                   id: "tier_1",
-                  value: R.pe.TIER_1,
+                  value: w.pe.TIER_1,
                   label: "Nitro Classic"
                 }, {
                   id: "tier_0",
-                  value: R.pe.TIER_0,
+                  value: w.pe.TIER_0,
                   label: "Nitro Basic"
                 }, {
                   id: "none",
@@ -234,15 +234,15 @@ let M = {
                 value: V.plan_id,
                 options: [{
                   id: "tier_2",
-                  value: R.gD.PREMIUM_MONTH_TIER_2,
+                  value: w.gD.PREMIUM_MONTH_TIER_2,
                   label: "Nitro"
                 }, {
                   id: "tier_1",
-                  value: R.gD.PREMIUM_MONTH_TIER_1,
+                  value: w.gD.PREMIUM_MONTH_TIER_1,
                   label: "Nitro Classic"
                 }, {
                   id: "tier_0",
-                  value: R.gD.PREMIUM_MONTH_TIER_0,
+                  value: w.gD.PREMIUM_MONTH_TIER_0,
                   label: "Nitro Basic"
                 }],
                 onSelectionChange: e => {
@@ -293,17 +293,17 @@ let M = {
                   variant: "text-sm/normal",
                   children: "Virtual Currency Balance:"
                 }), Q ? (0, r.jsx)("div", {
-                  className: w.wG,
+                  className: R.wG,
                   children: (0, r.jsx)(u.y$y, {
                     type: u.tVU.SPINNING_CIRCLE
                   })
                 }) : (0, r.jsxs)("div", {
-                  className: w.dB,
-                  children: [null !== $ && (0, r.jsxs)(u.Text, {
+                  className: R.dB,
+                  children: [null !== J && (0, r.jsxs)(u.Text, {
                     variant: "text-sm/normal",
-                    children: ["Error fetching Virtual Currency Balance: ", $.message]
+                    children: ["Error fetching Virtual Currency Balance: ", J.message]
                   }), (0, r.jsx)(S.Gy, {
-                    balance: null != Z ? Z : 0,
+                    balance: null != X ? X : 0,
                     balanceWidgetMode: S.k7.SELECTED
                   })]
                 })]
@@ -315,7 +315,7 @@ let M = {
               }), (0, r.jsx)(u.Button, {
                 variant: "primary",
                 text: "Redeem Virtual Currency for SKU",
-                loading: J,
+                loading: $,
                 onClick: () => et(en, (0, s.A)())
               }), null != ee && (0, r.jsx)(u.Text, {
                 variant: "text-sm/normal",
@@ -353,7 +353,7 @@ let M = {
                   label: "Sku Id",
                   placeholder: "Sku Id",
                   value: q,
-                  onChange: e => X(e)
+                  onChange: e => Z(e)
                 })]
               }), (0, r.jsx)(u.Button, {
                 variant: "primary",

@@ -70,13 +70,13 @@ function o(e) {
             null != N && (N.value = C);
             break;
           case "boolean":
-            let R = null == (f = t.viewModelInstance) ? true : f.boolean(o);
-            null != R && (R.value = C);
+            let w = null == (f = t.viewModelInstance) ? true : f.boolean(o);
+            null != w && (w.value = C);
             break;
           case "trigger":
-            let w = null != C && ("boolean" == typeof C ? C : 0 !== C),
+            let R = null != C && ("boolean" == typeof C ? C : 0 !== C),
               P = b(E.current, o);
-            w && P !== C && (null == (O = t.viewModelInstance) || null == (_ = O.trigger(o)) || _.trigger());
+            R && P !== C && (null == (O = t.viewModelInstance) || null == (_ = O.trigger(o)) || _.trigger());
             break;
           case "string":
             let D = null == (v = t.viewModelInstance) ? true : v.string(o);

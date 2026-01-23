@@ -68,7 +68,7 @@ let N = (e, t) => (0, r.jsx)(y.XW, {
   columns: e
 }, t);
 
-function R(e) {
+function w(e) {
   var t;
   let n = l().sample(l().values(e));
   return {
@@ -79,7 +79,7 @@ function R(e) {
     format: null != (t = null == n ? true : n.format) ? t : u.TL.IMAGE
   }
 }
-class w extends Chunk64700.PureComponent {
+class R extends Chunk64700.PureComponent {
   componentDidMount() {
     0 === this.props.trendingCategories.length && (0, p.k8)()
   }
@@ -121,7 +121,7 @@ class w extends Chunk64700.PureComponent {
   }
   constructor(...e) {
     super(...e), I(this, "_masonryRef", i.createRef()), I(this, "state", {
-      favoritesTile: R(this.props.favorites),
+      favoritesTile: w(this.props.favorites),
       selectedIndex: {
         column: 0,
         row: 0
@@ -214,7 +214,7 @@ function P(e) {
   let t = (0, c.bG)([h.A], () => h.A.getTrendingCategories()),
     n = (0, g.rM)(),
     i = (0, b.d5)();
-  return (0, r.jsx)(w, C(S({}, e, i), {
+  return (0, r.jsx)(R, C(S({}, e, i), {
     trendingCategories: t,
     favorites: n
   }))

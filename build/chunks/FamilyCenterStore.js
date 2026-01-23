@@ -65,8 +65,8 @@ let h = null,
   T = null,
   C = [],
   N = [],
-  R = null,
   w = null,
+  R = null,
   P = {},
   D = {};
 
@@ -160,7 +160,7 @@ function B(e) {
     totalSpendCurrency: f,
     invoices: p
   } = n;
-  h = s, m = l, U(r), k(a), G(i), M(t), null != p && V(p), C = c, N = u, R = d, w = f, I = false, S = o.default.fromTimestamp(Date.now()), A = true
+  h = s, m = l, U(r), k(a), G(i), M(t), null != p && V(p), C = c, N = u, w = d, R = f, I = false, S = o.default.fromTimestamp(Date.now()), A = true
 }
 
 function H(e) {
@@ -194,7 +194,7 @@ function W(e) {
     totalSpendCurrency: d,
     invoices: f
   } = t;
-  h = a, m = s, U(n), k(r), G(i), null != f && V(f), C = l, N = c, I = false, S = o.default.fromTimestamp(Date.now()), R = u, w = d
+  h = a, m = s, U(n), k(r), G(i), null != f && V(f), C = l, N = c, I = false, S = o.default.fromTimestamp(Date.now()), w = u, R = d
 }
 
 function K(e) {
@@ -221,14 +221,14 @@ function q(e) {
   M(t, true)
 }
 
-function X(e) {
+function Z(e) {
   let {
     linkCode: t
   } = e;
   O = t
 }
 
-function Z(e) {
+function X(e) {
   let {
     tab: t
   } = e;
@@ -249,7 +249,7 @@ function Q(e) {
   }) && t.linked_users.length > Object.keys(g).length ? l.Ay.fetchLinkedUsers() : M(t.linked_users)
 }
 
-function $(e) {
+function J(e) {
   let {
     linkedUsers: t
   } = e;
@@ -257,7 +257,7 @@ function $(e) {
   M(t)
 }
 
-function J(e) {
+function $(e) {
   var t;
   let {
     countryCode: n
@@ -289,7 +289,7 @@ function en(e) {
 }
 
 function er() {
-  h = null, m = null, g = {}, y = L(), b = j(), D = {}, I = false, S = null, v = x(), E = false, C = [], N = [], R = null, w = null, P = {}
+  h = null, m = null, g = {}, y = L(), b = j(), D = {}, I = false, S = null, v = x(), E = false, C = [], N = [], w = null, R = null, P = {}
 }
 class ei extends Chunk536802.A {
   initialize() {
@@ -362,10 +362,10 @@ class ei extends Chunk536802.A {
     return N
   }
   getTotalSpendAmount() {
-    return R
+    return w
   }
   getTotalSpendCurrency() {
-    return w
+    return R
   }
   getPurchaseInfo(e) {
     return P[e]
@@ -375,7 +375,7 @@ class ei extends Chunk536802.A {
   }
   constructor() {
     super({
-      CONNECTION_OPEN: $,
+      CONNECTION_OPEN: J,
       CURRENT_USER_UPDATE: Q,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       FAMILY_CENTER_INITIAL_LOAD: B,
@@ -386,9 +386,9 @@ class ei extends Chunk536802.A {
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: Y,
       FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS: z,
       FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS: q,
-      FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: X,
-      FAMILY_CENTER_HANDLE_TAB_SELECT: Z,
-      SET_LOCATION_METADATA: J,
+      FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: Z,
+      FAMILY_CENTER_HANDLE_TAB_SELECT: X,
+      SET_LOCATION_METADATA: $,
       LOGOUT: er
     })
   }

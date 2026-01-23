@@ -65,8 +65,8 @@ let y = [],
   T = 20,
   C = 12,
   N = 48,
-  R = .01,
-  w = new Set(["jack_o_lantern", "nose"]),
+  w = .01,
+  R = new Set(["jack_o_lantern", "nose"]),
   P = {
     jack_o_lantern: {
       sprites: (0, Chunk531301.A)(["chocolate_bar", "lollipop", "candy"])
@@ -78,7 +78,7 @@ let y = [],
 
 function D(e) {
   if (null == e) return null;
-  for (let t of w)
+  for (let t of R)
     if (null != e.match(new RegExp(":".concat(t, "(_tone[1-9])?")))) return t;
   return null
 }
@@ -151,7 +151,7 @@ let M = Chunk64700.forwardRef(function(e, t) {
         },
         dragCoefficient: {
           type: "static",
-          value: R
+          value: w
         }
       }), T)
     }

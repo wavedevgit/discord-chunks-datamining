@@ -51,9 +51,9 @@ function S(e) {
 let T = Chunk652215.eGj,
   C = {},
   N = new Set,
-  R = 0;
+  w = 0;
 
-function w(e) {
+function R(e) {
   var t;
   let n = C[null != e ? e : T];
   return {
@@ -70,12 +70,12 @@ function w(e) {
 
 function P(e) {
   var t;
-  return C[null != e ? e : T] = null != (t = C[null != e ? e : T]) ? t : w(e)
+  return C[null != e ? e : T] = null != (t = C[null != e ? e : T]) ? t : R(e)
 }
 
 function D(e) {
   let t = P(e);
-  t.sentinel++, R++
+  t.sentinel++, w++
 }
 
 function x(e, t, n) {
@@ -113,7 +113,7 @@ function U(e, t) {
 }
 
 function G(e, t) {
-  let n = w(e);
+  let n = R(e);
   return n.mentionCounts = S({}, t.mentionCounts), n.unreadByType = S({}, t.unreadByType), n
 }
 
@@ -130,7 +130,7 @@ function B(e, t, n) {
       isMentionLowImportance: r
     } = e;
     r ? t.lowImportanceMentionCount += n : t.highImportanceMentionCount += n
-  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : T] = t, null != e && (t.unread ? N.add(e) : N.delete(e)), R++, D(null != e ? e : T), F(t, n), true)
+  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : T] = t, null != e && (t.unread ? N.add(e) : N.delete(e)), w++, D(null != e ? e : T), F(t, n), true)
 }
 
 function H(e, t) {
@@ -164,7 +164,7 @@ function Y(e, t) {
 
 function W(e, t) {
   let n = k(e),
-    r = w(n);
+    r = R(n);
   if (null == n) {
     let e = p.A.getMutablePrivateChannels();
     for (let t in e) {
@@ -213,14 +213,14 @@ function W(e, t) {
   }
   V(r);
   let i = P(n);
-  return (r.unread !== i.unread || r.highImportanceMentionCount !== i.highImportanceMentionCount || r.lowImportanceMentionCount !== i.lowImportanceMentionCount) && (C[null != n ? n : T] = r, null != n && (r.unread ? N.add(n) : N.delete(n)), R++, D(null != n ? n : T), F(r, i), true)
+  return (r.unread !== i.unread || r.highImportanceMentionCount !== i.highImportanceMentionCount || r.lowImportanceMentionCount !== i.lowImportanceMentionCount) && (C[null != n ? n : T] = r, null != n && (r.unread ? N.add(n) : N.delete(n)), w++, D(null != n ? n : T), F(r, i), true)
 }
 
 function K(e) {
   let {
     guilds: t
   } = e;
-  C = {}, R = 0, N = new Set, W(null);
+  C = {}, w = 0, N = new Set, W(null);
   let {
     length: n
   } = t;
@@ -235,7 +235,7 @@ function z(e) {
     guilds: t,
     readState: n
   } = e;
-  C = {}, R = 0, N = new Set;
+  C = {}, w = 0, N = new Set;
   let r = n.entries.length < 500,
     i = new Set;
   for (let e of (r && n.entries.forEach(e => {
@@ -251,18 +251,18 @@ function q() {
   for (let e of (C = {}, N = new Set, W(null), Object.values(_.A.getGuildIds()))) W(e)
 }
 
-function X(e) {
+function Z(e) {
   let {
     guild: t
   } = e;
   return W(t.id)
 }
 
-function Z(e) {
+function X(e) {
   let {
     guild: t
   } = e;
-  return null != C[t.id] && (delete C[t.id], N.delete(t.id), R++, true)
+  return null != C[t.id] && (delete C[t.id], N.delete(t.id), w++, true)
 }
 
 function Q(e) {
@@ -275,12 +275,12 @@ function Q(e) {
   return H(n, [t])
 }
 
-function $() {
+function J() {
   let e = p.A.getChannel(E.A.getChannelId());
   return null != e && H(e.getGuildId(), [e.id])
 }
 
-function J(e) {
+function $(e) {
   let {
     user: t,
     guildId: n
@@ -462,7 +462,7 @@ class eb extends Chunk536802.A {
     return N.size > 0
   }
   getStoreChangeSentinel() {
-    return R
+    return w
   }
   getMutableUnreadGuilds() {
     return N
@@ -526,15 +526,15 @@ class eb extends Chunk536802.A {
       CONNECTION_OPEN: z,
       OVERLAY_INITIALIZE: K,
       CACHE_LOADED_LAZY: () => this.loadCache(),
-      GUILD_CREATE: X,
-      GUILD_DELETE: Z,
+      GUILD_CREATE: Z,
+      GUILD_DELETE: X,
       MESSAGE_CREATE: et,
       MESSAGE_ACK: ee,
       BULK_ACK: ea,
       UPDATE_CHANNEL_DIMENSIONS: ee,
       CHANNEL_SELECT: en,
       CHANNEL_DELETE: Q,
-      WINDOW_FOCUS: $,
+      WINDOW_FOCUS: J,
       GUILD_ACK: e_,
       GUILD_ROLE_CREATE: eh,
       GUILD_ROLE_DELETE: eh,
@@ -548,7 +548,7 @@ class eb extends Chunk536802.A {
       THREAD_MEMBER_UPDATE: eu,
       THREAD_MEMBERS_UPDATE: ed,
       PASSIVE_UPDATE_V2: ep,
-      GUILD_MEMBER_UPDATE: J,
+      GUILD_MEMBER_UPDATE: $,
       USER_GUILD_SETTINGS_FULL_UPDATE: em,
       USER_GUILD_SETTINGS_CHANNEL_UPDATE: eE,
       USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: eE,

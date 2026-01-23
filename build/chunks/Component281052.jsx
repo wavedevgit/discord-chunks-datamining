@@ -78,13 +78,13 @@ function j(e) {
     image: G
   }), q = null != M ? M : K;
   a()(null != q, "guild should not be null");
-  let X = (0, c.EC)(q.id),
-    Z = (0, s.bG)([A.Ay], () => null == q.id ? null : A.Ay.getMember(q.id, k.id)),
+  let Z = (0, c.EC)(q.id),
+    X = (0, s.bG)([A.Ay], () => null == q.id ? null : A.Ay.getMember(q.id, k.id)),
     Q = (0, s.bG)([v.A], () => v.A.getGuildMemberProfile(k.id, q.id)),
-    $ = S.Ay.canUsePremiumProfileCustomization(k),
-    J = (0, d.z5)(G, null == Z ? true : Z.avatar),
+    J = S.Ay.canUsePremiumProfileCustomization(k),
+    $ = (0, d.z5)(G, null == X ? true : X.avatar),
     ee = (0, d.Ac)(F, null == Q ? true : Q.banner),
-    et = (0, R.lS)(Y, null == Q ? true : Q.themeColors),
+    et = (0, w.lS)(Y, null == Q ? true : Q.themeColors),
     en = null != (t = null == Q ? true : Q.bio) ? t : "",
     er = null != (n = null == Q ? true : Q.pronouns) ? n : "",
     ei = (e, t, n) => {
@@ -92,27 +92,27 @@ function j(e) {
       n(null != e ? e : r)
     },
     ea = e => ei(e, null == Q ? true : Q.banner, C.Iz),
-    es = e => ei(e, null == Z ? true : Z.avatar, C.zq);
+    es = e => ei(e, null == X ? true : X.avatar, C.zq);
   return (0, r.jsxs)("div", {
     className: L.Q,
-    children: [(0, r.jsx)(w.A, {
-      errors: null != (i = null == W ? true : W.nick) ? i : null == X ? true : X.nick,
+    children: [(0, r.jsx)(R.A, {
+      errors: null != (i = null == W ? true : W.nick) ? i : null == Z ? true : Z.nick,
       username: T.Ay.getName(k),
       pendingNick: V,
-      currentNick: null == Z ? true : Z.nick,
+      currentNick: null == X ? true : X.nick,
       user: k,
       guild: q
     }, "nick"), (0, r.jsx)(b.A, {
       sectionTitle: x.intl.string(x.t["+T3RI/"]),
       errors: null == W ? true : W.pronouns,
       onPronounsChange: e => {
-        (0, R.d7)(e, er)
+        (0, w.d7)(e, er)
       },
       pendingPronouns: H,
       currentPronouns: er
     }, "pronouns"), (0, r.jsxs)(P.A, {
       user: k,
-      showOverlay: !$,
+      showOverlay: !J,
       children: [(0, r.jsx)(_.A, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
           children: [x.intl.string(x.t.lqaIxI), (0, r.jsx)(o.m, {
@@ -124,11 +124,11 @@ function j(e) {
             })
           })]
         }),
-        showRemoveAvatarButton: J,
+        showRemoveAvatarButton: $,
         onAvatarChange: es,
         errors: null == W ? true : W.avatar,
         guildId: q.id,
-        disabled: !$
+        disabled: !J
       }, "avatar"), (0, r.jsx)(p.A, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
           children: [x.intl.string(x.t["7v0T9P"]), (0, r.jsx)(o.m, {
@@ -174,13 +174,13 @@ function j(e) {
         errors: null == W ? true : W.banner,
         onBannerChange: ea,
         guildId: null == q ? true : q.id,
-        disabled: !$
+        disabled: !J
       }, "banner"), (0, r.jsx)(y.A, {
         user: k,
         pendingAvatarSrc: z,
         pendingColors: Y,
         onThemeColorsChange: e => {
-          (0, R.wx)(e, null == Q ? true : Q.themeColors)
+          (0, w.wx)(e, null == Q ? true : Q.themeColors)
         },
         guildId: null == q ? true : q.id,
         showResetThemeButton: et
@@ -196,11 +196,11 @@ function j(e) {
             })
           })]
         }),
-        onBioChange: e => (0, R.Rn)(e, en),
-        errors: null != (j = null == W ? true : W.bio) ? j : null == X ? true : X.bio,
+        onBioChange: e => (0, w.Rn)(e, en),
+        errors: null != (j = null == W ? true : W.bio) ? j : null == Z ? true : Z.bio,
         pendingBio: B,
         currentBio: en,
-        disabled: !$
+        disabled: !J
       }, "about")]
     })]
   })

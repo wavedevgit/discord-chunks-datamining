@@ -76,7 +76,7 @@ let j = 25,
 
 function k() {
   return [{
-    name: R.intl.string(R.t["Sp2NF+"]),
+    name: w.intl.string(w.t["Sp2NF+"]),
     extensions: ["jpg", "jpeg", "png", "gif", "mp4"]
   }]
 }
@@ -94,27 +94,27 @@ function U(e) {
     onBlur: f
   } = e;
   return (0, r.jsxs)(c.DUT, {
-    className: s()(o, w.gf, {
-      [w.JI]: l,
-      [w.A7]: u
+    className: s()(o, R.gf, {
+      [R.JI]: l,
+      [R.A7]: u
     }),
     onMouseLeave: d,
     onBlur: f,
     onClick: u ? true : n,
     children: [l ? (0, r.jsx)("div", {
-      className: w.SH
+      className: R.SH
     }) : null, (0, r.jsxs)("div", {
-      className: w.kV,
+      className: R.kV,
       children: [a, (0, r.jsxs)("div", {
-        className: w.fP,
+        className: R.fP,
         children: [(0, r.jsx)(t, {
-          className: w.ob,
+          className: R.ob,
           color: "currentColor",
           size: "custom",
           width: 18,
           height: 18
         }), (0, r.jsx)(c.Text, {
-          className: w.V7,
+          className: R.V7,
           color: "none",
           variant: "text-sm/normal",
           children: i
@@ -133,7 +133,7 @@ function G(e) {
   if (i.useEffect(() => {
       new Image().src = n
     }, [n]), !a || null == t) return (0, r.jsx)("div", {
-    className: w.PQ,
+    className: R.PQ,
     style: {
       backgroundImage: "url(".concat(n, ")")
     }
@@ -148,7 +148,7 @@ function G(e) {
   return (0, r.jsx)("img", {
     onMouseMove: () => o(true),
     onMouseLeave: () => o(false),
-    className: w.PQ,
+    className: R.PQ,
     src: s ? n : l,
     alt: t.id
   })
@@ -168,7 +168,7 @@ function V(e) {
   } = (0, _.Ay)(p.A.VIDEO_BACKGROUND_IMAGE_OPTION), C = (0, o.bG)([g.A], () => null != A && g.A.hasHotspot(A)), P = i.useCallback(e => {
     if (!(0, E.u)(e)) throw e
   }, []), x = O ? (0, r.jsx)(h.A, {
-    className: w.PQ,
+    className: R.PQ,
     src: a,
     loop: true,
     playOnHover: true,
@@ -188,8 +188,8 @@ function V(e) {
     }))
   }
   return (0, r.jsxs)(c.DUT, {
-    className: s()(w.gf, {
-      [w.JI]: l
+    className: s()(R.gf, {
+      [R.JI]: l
     }),
     onClick: () => f(t),
     onContextMenu: e => (0, u.L3)(e, async () => {
@@ -202,35 +202,35 @@ function V(e) {
       }))
     }),
     children: [l ? (0, r.jsx)("div", {
-      className: w.SH
+      className: R.SH
     }) : null, (0, r.jsx)("div", {
       onFocus: j,
       onMouseEnter: j,
-      className: w.kV,
+      className: R.kV,
       children: x
     }), O || b ? (0, r.jsx)("div", {
-      className: w.uZ,
+      className: R.uZ,
       children: (0, r.jsx)(c.udU, {
         size: "xxs",
         color: "currentColor"
       })
     }) : null, C && (0, r.jsx)(c.LpS, {
-      text: R.intl.string(R.t.y2b7CA),
-      className: w.$5
+      text: w.intl.string(w.t.y2b7CA),
+      className: R.$5
     })]
   })
 }
 
 function F() {
   return (0, r.jsxs)("div", {
-    className: w.j1,
+    className: R.j1,
     children: [(0, r.jsx)(c.tvc, {
       size: "md",
       color: "currentColor",
-      className: w.eo
+      className: R.eo
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
-      children: R.intl.string(R.t["T+yRY3"])
+      children: w.intl.string(w.t["T+yRY3"])
     })]
   })
 }
@@ -245,37 +245,37 @@ function B(e) {
   function s() {
     m.sF(T._.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
   }
-  let u = a ? R.intl.string(R.t["5TUJOv"]) : n;
+  let u = a ? w.intl.string(w.t["5TUJOv"]) : n;
   return (0, r.jsx)(l.m, {
     text: u,
     children: (0, r.jsxs)("div", {
-      className: w.$g,
+      className: R.$g,
       children: [(0, r.jsxs)(U, {
-        className: w.__invalid_backgroundOptionBlurred,
+        className: R.__invalid_backgroundOptionBlurred,
         disabled: i,
         icon: c.XGR,
         onClick: t,
         onMouseLeave: s,
         onBlur: s,
         text: (0, r.jsxs)("div", {
-          className: w.Us,
+          className: R.Us,
           children: [(0, r.jsx)(c.tvc, {
             size: "md",
             color: "currentColor",
-            className: w.PK
+            className: R.PK
           }), (0, r.jsx)("div", {
-            className: w.kr,
-            children: R.intl.string(R.t["1t7U8W"])
+            className: R.kr,
+            children: w.intl.string(w.t["1t7U8W"])
           })]
         }),
         children: [(0, r.jsx)("div", {
-          className: w.eD
+          className: R.eD
         }), (0, r.jsx)("div", {
-          className: w.G5
+          className: R.G5
         })]
       }), a && (0, r.jsx)(c.LpS, {
-        text: R.intl.string(R.t.y2b7CA),
-        className: w.$5
+        text: w.intl.string(w.t.y2b7CA),
+        className: R.$5
       })]
     })
   })
@@ -295,7 +295,7 @@ function H(e) {
     })
   }), (0, r.jsx)(B, {
     onClick: t,
-    tooltipText: R.intl.string(R.t["IqE0T/"])
+    tooltipText: w.intl.string(w.t["IqE0T/"])
   })
 }
 
@@ -303,9 +303,9 @@ function Y(e) {
   let {
     onAddBackgroundImage: t,
     disabled: i
-  } = e, a = (0, c.k34)(), s = i ? R.intl.formatToPlainString(R.t.ykGFeD, {
+  } = e, a = (0, c.k34)(), s = i ? w.intl.formatToPlainString(w.t.ykGFeD, {
     maxCustomBackgrounds: j
-  }) : R.intl.string(R.t.Qx0tFc), o = k();
+  }) : w.intl.string(w.t.Qx0tFc), o = k();
 
   function l() {
     (0, c.mMO)(async () => {
@@ -324,9 +324,9 @@ function Y(e) {
         },
         uploadType: C.HL.VIDEO_BACKGROUND,
         filters: o,
-        modalTitle: R.intl.string(R.t.yG2pUi),
-        imageSpecifications: R.intl.string(R.t["72OaxN"]),
-        uploadOptionTitle: R.intl.string(R.t.xsW8u6),
+        modalTitle: w.intl.string(w.t.yG2pUi),
+        imageSpecifications: w.intl.string(w.t["72OaxN"]),
+        uploadOptionTitle: w.intl.string(w.t.xsW8u6),
         showUpsellHeader: true
       }, n))
     }, {
@@ -355,19 +355,19 @@ function W(e) {
   return (0, r.jsx)(_.f5, {
     value: g,
     children: (0, r.jsxs)("div", {
-      className: s()(w.to, !f && w.mK),
+      className: s()(R.to, !f && R.mK),
       children: [(0, r.jsx)(U, {
         selected: null == a,
         icon: c.KTN,
         onClick: () => o(null),
-        text: R.intl.string(R.t.fUdMeO)
+        text: w.intl.string(w.t.fUdMeO)
       }), (0, r.jsx)(U, {
         selected: "blur" === a,
         icon: c.fBX,
         onClick: () => o("blur"),
-        text: R.intl.string(R.t.LhSyL8),
+        text: w.intl.string(w.t.LhSyL8),
         children: (0, r.jsx)("div", {
-          className: w.LJ
+          className: R.LJ
         })
       }), t ? (0, r.jsx)(Y, {
         onAddBackgroundImage: d,
@@ -383,7 +383,7 @@ function W(e) {
         });
         return null == t ? null : (0, r.jsx)(l.m, {
           __unsupportedReactNodeAsText: (0, r.jsx)(F, {}),
-          "aria-label": R.intl.string(R.t["T+yRY3"]),
+          "aria-label": w.intl.string(w.t["T+yRY3"]),
           children: (0, r.jsx)(V, {
             option: e,
             source: t,

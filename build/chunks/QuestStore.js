@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 859703, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, s, o, l, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S, T, C, N, R, w, P;
+let r, i, a, s, o, l, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S, T, C, N, w, R, P;
 require.d(exports, {
   A: () => te
 }), require("./896048.js");
@@ -52,15 +52,15 @@ function q(e, t) {
   return n
 }
 
-function X(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = 6 * Chunk927813.A.Millis.HOUR,
+let X = 6 * Chunk927813.A.Millis.HOUR,
   Q = new Map,
-  $ = null,
   J = null,
+  $ = null,
   ee = false,
   et = null,
   en = new Map,
@@ -68,7 +68,7 @@ let Z = 6 * Chunk927813.A.Millis.HOUR,
   ei = 864e6;
 
 function ea() {
-  r = false, i = false, a = new Map, s = false, o = false, l = new Map, c = new Map, u = new Map, d = new Map, f = new Map, p = 0, _ = 0, h = new Set, m = new Set, g = new Set, E = new Set, y = new Set, Q = new Map, O = new Map, v = new Map, A = new Map, I = null, S = new Map, b = new Set, T = new Map, C = new Map, N = new Map, e3(), R = null, P = new Map, en = new Map, w = new Map
+  r = false, i = false, a = new Map, s = false, o = false, l = new Map, c = new Map, u = new Map, d = new Map, f = new Map, p = 0, _ = 0, h = new Set, m = new Set, g = new Set, E = new Set, y = new Set, Q = new Map, O = new Map, v = new Map, A = new Map, I = null, S = new Map, b = new Set, T = new Map, C = new Map, N = new Map, e3(), w = null, P = new Map, en = new Map, R = new Map
 }
 
 function es(e, t) {
@@ -98,7 +98,7 @@ function ec(e, t) {
   let n = u.get(e),
     r = null == n ? true : n.userStatus;
   null != r && null == r.claimedAt && eo(e, {
-    userStatus: X(z({}, r), {
+    userStatus: Z(z({}, r), {
       claimedAt: t.claimedAt
     })
   })
@@ -123,7 +123,7 @@ function ed(e, t) {
       entitlements: t
     });
     null != n && el(e, n), eo(e, {
-      userStatus: X(z({}, i), {
+      userStatus: Z(z({}, i), {
         claimedAt: t.claimedAt,
         claimedTier: null != (a = null == n ? true : n.tier) ? a : null
       })
@@ -156,7 +156,7 @@ function eh(e) {
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (d = new Map, n)) d.set(e.id, e);
   for (let e of null == P ? true : P.values()) u.has(e.id) || (u.set(e.id, e), c.set(e.id, e.config), a.set(e.id, (0, H.Ic)(e)));
-  N = a, e2(), R = null != i ? new Date(i) : null
+  N = a, e2(), w = null != i ? new Date(i) : null
 }
 
 function em() {
@@ -250,7 +250,7 @@ function eN(e) {
   n.add(t), h = n
 }
 
-function eR(e) {
+function ew(e) {
   let {
     enrolledQuestUserStatus: t
   } = e;
@@ -259,7 +259,7 @@ function eR(e) {
   }), eC(t.questId)
 }
 
-function ew(e) {
+function eR(e) {
   let {
     questId: t
   } = e;
@@ -434,7 +434,7 @@ function eq(e) {
     let e = {
       questId: null != (h = null == t ? true : t.id) ? h : null,
       fetchedAt: f,
-      ttlMillis: eX(o),
+      ttlMillis: eZ(o),
       adDecisionData: r,
       adContext: s,
       metadataRaw: l,
@@ -442,7 +442,7 @@ function eq(e) {
       trafficMetadataRaw: u,
       trafficMetadataSealed: d
     };
-    (w = new Map(w)).set(n, e)
+    (R = new Map(R)).set(n, e)
   } else null == t ? T.delete(n) : T.set(n, {
     quest: t,
     adDecisionData: r,
@@ -454,13 +454,13 @@ function eq(e) {
   })
 }
 
-function eX(e) {
-  if (null == e) return Z;
+function eZ(e) {
+  if (null == e) return X;
   let t = 1e3 * e;
-  return t < Z && t > 0 ? t : Z
+  return t < X && t > 0 ? t : X
 }
 
-function eZ(e) {
+function eX(e) {
   let {
     placement: t
   } = e;
@@ -474,7 +474,7 @@ function eQ(e) {
   o = true, (l = new Map(l)).set(t, true)
 }
 
-function e$(e) {
+function eJ(e) {
   let {
     quests: t,
     metadataRaw: n,
@@ -486,7 +486,7 @@ function e$(e) {
   })
 }
 
-function eJ(e) {
+function e$(e) {
   let {
     content: t
   } = e;
@@ -506,7 +506,7 @@ function e1() {
   let e = (0, H.v1)(Array.from(u.values()));
   if (null == e) return;
   let t = Math.max(er, e - Date.now() + 2e3);
-  t > ei || ($ = setTimeout(() => {
+  t > ei || (J = setTimeout(() => {
     e1()
   }, t))
 }
@@ -516,14 +516,14 @@ function e2() {
 }
 
 function e3() {
-  null != $ && (clearTimeout($), $ = null)
+  null != J && (clearTimeout(J), J = null)
 }
 
 function e6(e) {
   let {
     quest_enrollment_blocked_until: t
   } = e;
-  R = null != t ? new Date(t) : null
+  w = null != t ? new Date(t) : null
 }
 
 function e4() {
@@ -531,7 +531,7 @@ function e4() {
 }
 
 function e5(e) {
-  ee = false, J = Date.now(), et = e.takeover
+  ee = false, $ = Date.now(), et = e.takeover
 }
 
 function e7() {
@@ -577,10 +577,10 @@ class e8 extends(D = Chunk311907.Ay.Store) {
     return T
   }
   get questEnrollmentBlockedUntil() {
-    return R
+    return w
   }
   get questAdDecisionByPlacement() {
-    return w
+    return R
   }
   getFetchQuestPreviewError(e) {
     return en.get(e)
@@ -643,7 +643,7 @@ class e8 extends(D = Chunk311907.Ay.Store) {
     return et
   }
   getLastFetchedQuestHomeTakeover() {
-    return J
+    return $
   }
   get isFetchingEarnedQuestToDeliver() {
     return o
@@ -667,18 +667,18 @@ let e9 = new e8(Chunk73153.h, {
     QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: eA,
     QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN: eg,
     QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eq,
-    QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eZ,
+    QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eX,
     QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_BEGIN: eQ,
-    QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_SUCCESS: e$,
-    QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_FAILURE: eJ,
+    QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_SUCCESS: eJ,
+    QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_FAILURE: e$,
     QUESTS_FETCH_PREVIEW_BEGIN: eE,
     QUESTS_FETCH_PREVIEW_SUCCESS: ey,
     QUESTS_FETCH_PREVIEW_FAILURE: eb,
     QUESTS_SEND_HEARTBEAT_SUCCESS: eI,
     QUESTS_SEND_HEARTBEAT_FAILURE: eS,
     QUESTS_ENROLL_BEGIN: eN,
-    QUESTS_ENROLL_SUCCESS: eR,
-    QUESTS_ENROLL_FAILURE: ew,
+    QUESTS_ENROLL_SUCCESS: ew,
+    QUESTS_ENROLL_FAILURE: eR,
     QUESTS_FETCH_REWARD_CODE_BEGIN: eP,
     QUESTS_FETCH_REWARD_CODE_SUCCESS: eD,
     QUESTS_FETCH_REWARD_CODE_FAILURE: ex,

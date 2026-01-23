@@ -2,10 +2,10 @@
 /** chunk id: 963307, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => Z,
-  QP: () => R,
+  Ay: () => X,
+  QP: () => w,
   S9: () => P,
-  sN: () => w
+  sN: () => R
 }), require("./321073.js"), require("./638769.js"), require("./896048.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -67,8 +67,8 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = "everyone",
-  w = 0;
+let w = "everyone",
+  R = 0;
 var P = function(e) {
   return e.GROUP = "GROUP", e.MEMBER = "MEMBER", e.CONTENT_INVENTORY = "CONTENT_INVENTORY", e.CONTENT_INVENTORY_GROUP = "CONTENT_INVENTORY_GROUP", e.HIDDEN_CONTENT_INVENTORY = "HIDDEN_CONTENT_INVENTORY", e.CONTENT_INVENTORY_LEADERBOARD = "CONTENT_INVENTORY_LEADERBOARD", e
 }({});
@@ -122,11 +122,11 @@ function x(e, t, n) {
 
 function L(e) {
   let t = h.A.getChannel(e);
-  return null == t ? R : null == t.memberListId ? j(t) : t.memberListId
+  return null == t ? w : null == t.memberListId ? j(t) : t.memberListId
 }
 
 function j(e) {
-  return f.Ib(A.xBc.VIEW_CHANNEL, e) ? R : o().v3(a()(e.permissionOverwrites).reduce((e, t) => {
+  return f.Ib(A.xBc.VIEW_CHANNEL, e) ? w : o().v3(a()(e.permissionOverwrites).reduce((e, t) => {
     let {
       id: n,
       allow: r,
@@ -322,7 +322,7 @@ function z() {
 function q() {
   returntrue
 }
-class X extends(r = Chunk311907.Ay.Store) {
+class Z extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(v.default, y.A, E.A, h.A, g.Ay, b.A, O.A, _.default, m.A, p.A, d.A), this.syncWith([O.A], z), this.syncWith([p.A], K)
   }
@@ -339,8 +339,8 @@ class X extends(r = Chunk311907.Ay.Store) {
     return U.get(e, L(t)).rows
   }
 }
-S(X, "displayName", "ChannelMemberStore");
-let Z = new X(Chunk73153.h, {
+S(Z, "displayName", "ChannelMemberStore");
+let X = new Z(Chunk73153.h, {
   CONNECTION_OPEN: V,
   OVERLAY_INITIALIZE: V,
   GUILD_MEMBER_LIST_UPDATE: G,

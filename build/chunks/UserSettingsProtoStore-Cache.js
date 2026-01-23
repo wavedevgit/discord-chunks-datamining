@@ -116,7 +116,7 @@ function N(e) {
   i && T(o), r ? (o.proto = (0, _.RK)(o.ProtoClass, o.proto, t), a()("string" != typeof o.proto, "UserSettingsProto cannot be a string")) : (o.proto = t, a()("string" != typeof o.proto, "UserSettingsProto cannot be a string"), o.editInfo.loaded = true, o.editInfo.loading = false)
 }
 
-function R(e) {
+function w(e) {
   let {
     settings: {
       type: t,
@@ -128,7 +128,7 @@ function R(e) {
   return r.editInfo = g({}, r.editInfo, n), false
 }
 
-function w(e) {
+function R(e) {
   let {
     userSettings: t
   } = e;
@@ -216,10 +216,10 @@ class D extends(r = Chunk311907.Ay.PersistedStore) {
 }
 m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");
 let x = new D(Chunk73153.h, {
-  CACHE_LOADED: w,
+  CACHE_LOADED: R,
   USER_SETTINGS_PROTO_UPDATE: N,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: N,
-  USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: R,
+  USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: w,
   CONNECTION_OPEN: v,
   CONNECTION_CLOSED: A,
   CONNECTION_RESUMED: A,

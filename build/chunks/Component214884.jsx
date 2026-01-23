@@ -62,8 +62,8 @@ function M(e) {
     locationIcon: Q,
     canListenIn: X,
     buttonText: Z,
-    users: $,
-    overflowUsers: J,
+    users: J,
+    overflowUsers: $,
     onClose: ee
   } = i.useMemo(() => (function(e) {
     let {
@@ -280,12 +280,12 @@ function M(e) {
         color: "text-feedback-positive",
         children: R.intl.string(R.t.dI3q4h)
       })]
-    }), ($.length > 0 || null != J) && (0, r.jsxs)("div", {
+    }), (J.length > 0 || null != $) && (0, r.jsxs)("div", {
       className: D.lF,
-      children: [$.map(e => (0, r.jsx)(k, {
+      children: [J.map(e => (0, r.jsx)(k, {
         user: e,
         guildId: t.id
-      }, e.id)), J]
+      }, e.id)), $]
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "text-strong",

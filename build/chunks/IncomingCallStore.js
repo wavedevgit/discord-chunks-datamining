@@ -49,7 +49,7 @@ function N(e) {
   I.delete(e), (S = new Set(S)).delete(e)
 }
 
-function R(e) {
+function w(e) {
   let {
     channelId: t,
     ringing: n
@@ -76,7 +76,7 @@ function R(e) {
   return !!S.has(t) && !r && N(t)
 }
 
-function w(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
@@ -142,11 +142,11 @@ class M extends(i = Chunk311907.Ay.Store) {
 }
 g(M, "displayName", "IncomingCallStore");
 let k = new M(Chunk73153.h, {
-  CALL_CREATE: R,
-  CALL_UPDATE: R,
-  CALL_DELETE: w,
-  GUILD_RING_START: R,
-  GUILD_RING_STOP: w,
+  CALL_CREATE: w,
+  CALL_UPDATE: w,
+  CALL_DELETE: R,
+  GUILD_RING_START: w,
+  GUILD_RING_STOP: R,
   VOICE_CHANNEL_SELECT: P,
   INCOMING_CALL_MOVE: D,
   CHANNEL_DELETE: x

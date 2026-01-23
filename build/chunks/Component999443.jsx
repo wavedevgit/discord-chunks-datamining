@@ -383,8 +383,8 @@ function z(e) {
     devLink: (0, P.A)(e),
     emoji: B(e),
     customEmoji: H(e),
-    channelMention: (0, R.A)(e),
-    commandMention: (0, w.Ay)(e),
+    channelMention: (0, w.A)(e),
+    commandMention: (0, R.Ay)(e),
     attachmentLink: (0, N.A)(e),
     gameMention: D.A
   })

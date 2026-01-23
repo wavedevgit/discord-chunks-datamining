@@ -13,7 +13,7 @@ require.d(exports, {
   ji: () => L,
   nT: () => B,
   o_: () => j,
-  wc: () => w,
+  wc: () => R,
   xB: () => V,
   xs: () => G
 }), require("./65821.js"), require("./896048.js"), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js");
@@ -73,7 +73,7 @@ Chunk73153.h.subscribe("CONNECTION_OPEN", () => {
 }), document.addEventListener("keydown", () => {
   C = 0
 }));
-class R {
+class w {
   getEditInfo() {
     return E.A.getFullState()[this.type]
   }
@@ -280,15 +280,15 @@ class R {
     }, this.logger = new d.A(this.ProtoClass.typeName)
   }
 }
-let w = new R(Chunk873298.nT, Chunk355097.oD.PRELOADED_USER_SETTINGS),
-  P = new R(Chunk803805.aw, Chunk355097.oD.FRECENCY_AND_FAVORITES_SETTINGS),
+let R = new w(Chunk873298.nT, Chunk355097.oD.PRELOADED_USER_SETTINGS),
+  P = new w(Chunk803805.aw, Chunk355097.oD.FRECENCY_AND_FAVORITES_SETTINGS),
   D = {
-    [Chunk355097.oD.PRELOADED_USER_SETTINGS]: w,
+    [Chunk355097.oD.PRELOADED_USER_SETTINGS]: R,
     [Chunk355097.oD.FRECENCY_AND_FAVORITES_SETTINGS]: P
   };
 
 function x(e, t, n) {
-  return w.updateAsync("guilds", n => (0, b.$o)(n, e, t), n)
+  return R.updateAsync("guilds", n => (0, b.$o)(n, e, t), n)
 }
 
 function L(e, t, n, r) {
@@ -296,7 +296,7 @@ function L(e, t, n, r) {
 }
 
 function j(e) {
-  return M(e), w.updateAsync("userContent", t => {
+  return M(e), R.updateAsync("userContent", t => {
     if ((0, m.c0)(t.dismissedContents, e)) returnfalse;
     t.dismissedContents = (0, m.Vf)(t.dismissedContents, e)
   }, O.Sb.INFREQUENT_USER_ACTION)
@@ -314,7 +314,7 @@ function k(e) {
   return null != n && (0, m.c0)(n, e)
 }
 async function U(e, t) {
-  return await w.updateAsync("userContent", n => {
+  return await R.updateAsync("userContent", n => {
     n.recurringDismissibleContentStates[e] = I({}, n.recurringDismissibleContentStates[e], t)
   }, O.Sb.INFREQUENT_USER_ACTION)
 }
@@ -325,7 +325,7 @@ async function G(e, t, n) {
 }
 
 function V(e) {
-  return w.updateAsync("userContent", t => {
+  return R.updateAsync("userContent", t => {
     if (!(0, m.c0)(t.dismissedContents, e)) returnfalse;
     t.dismissedContents = (0, m.We)(t.dismissedContents, e)
   }, O.Sb.INFREQUENT_USER_ACTION)
@@ -341,13 +341,13 @@ function F(e) {
 }
 
 function B() {
-  return w.updateAsync("userContent", e => {
+  return R.updateAsync("userContent", e => {
     e.dismissedContents = new Uint8Array, e.recurringDismissibleContentStates = {}
   }, O.Sb.INFREQUENT_USER_ACTION)
 }
 
 function H() {
-  return w.updateAsync("userContent", e => {
+  return R.updateAsync("userContent", e => {
     let t = new Uint8Array;
     for (let n of f.zd)(0, f.Jq)(n) ? t = (0, m.Vf)(t, n) : e.recurringDismissibleContentStates[n] = (0, p.Tg)(n);
     e.dismissedContents = t

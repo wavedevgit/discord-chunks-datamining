@@ -76,8 +76,8 @@ function I(e) {
     live: C,
     stream: N
   } = (0, d.A)(t.id), {
-    voiceChannel: R,
-    voiceActivity: w
+    voiceChannel: w,
+    voiceActivity: R
   } = (0, f.A)({
     userId: t.id,
     guildId: b
@@ -88,7 +88,7 @@ function I(e) {
     voiceActivityStatusEnabled: x
   } = (0, s.G)({
     location: "UserProfileStackedActivity"
-  }), L = x && null == N && null == w && null != R, j = i.useCallback(e => {
+  }), L = x && null == N && null == R && null != w, j = i.useCallback(e => {
     let i = [],
       a = A(O({}, e), {
         user: t,
@@ -102,9 +102,9 @@ function I(e) {
         activity: e
       }, a), "live-".concat(t)))
     }), L && i.push((0, r.jsx)(m.A, O({
-      voiceChannel: R
+      voiceChannel: w
     }, a), "voice")), i
-  }, [n, L, C, I, N, t, R]);
+  }, [n, L, C, I, N, t, w]);
   return D ? null : (0, r.jsx)(p.A, {
     renderCards: j,
     heading: y.intl.string(y.t.J6STd9),

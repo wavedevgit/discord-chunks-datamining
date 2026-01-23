@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 63415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   p: () => y
@@ -133,7 +133,7 @@ let _ = e => {
     })
   },
   y = () => {
-    let [e, t] = l.useState(false), [n, s] = l.useState(false), [y, A] = l.useState(false), [C, S] = l.useState(5e3), [O, E] = l.useState(false), T = l.useRef(null), N = (0, i.bG)([b.default], () => b.default.getCurrentUser()), w = (0, h.L)(), [I] = l.useState(() => (0, x.YQ)({
+    let [e, t] = l.useState(false), [n, s] = l.useState(false), [y, A] = l.useState(false), [C, S] = l.useState(5e3), [O, T] = l.useState(false), E = l.useRef(null), N = (0, i.bG)([b.default], () => b.default.getCurrentUser()), w = (0, h.L)(), [I] = l.useState(() => (0, x.YQ)({
       finishSetup: async () => true,
       perkAvailableToUser: w
     })), {
@@ -367,16 +367,16 @@ let _ = e => {
           }), (0, a.jsx)(o.$nd, {
             text: "Show exit modal",
             onClick: () => {
-              E(true)
+              T(true)
             }
           }), O && (0, a.jsx)(d.default, {
             url: "https://www.discord.com",
             trustUrl: () => false,
-            onCancel: () => E(false),
+            onCancel: () => T(false),
             isProtocol: false,
             onConfirm: () => {},
             onClose: async () => {
-              E(false)
+              T(false)
             },
             transitionState: c.ip4.ENTERED
           })]
@@ -387,7 +387,7 @@ let _ = e => {
           }), (0, a.jsx)(_, {
             onSuccess: () => {
               var e;
-              null == (e = T.current) || e.refresh()
+              null == (e = E.current) || e.refresh()
             }
           })]
         }), (0, a.jsxs)(g.wn, {
@@ -395,7 +395,7 @@ let _ = e => {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk WARP License Info"
           }), (0, a.jsx)(j, {
-            ref: T
+            ref: E
           })]
         })]
       })]

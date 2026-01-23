@@ -43,7 +43,7 @@ function b(e) {
       desktopSourceId: null == t ? true : t.id,
       lastPickedContent: n
     }
-  }), R = (0, a.bG)([d.A], () => d.A.getState().soundshareEnabled), w = f.A.supports(E.O5.DESKTOP_CAPTURE_APPLICATIONS), P = (0, a.bG)([f.A], () => f.A.supports(E.O5.SOUNDSHARE)), D = (0, a.bG)([f.A], () => f.A.supportsScreenSoundshare()), x = (0, h.A)(O, T), L = (0, _.A)(O, T, g.FX), j = null != C && P && (!C.startsWith("screen") || D), M = (0, a.bG)([f.A], () => f.A.getUseSystemScreensharePicker() && (0, p.isLinux)()), k = i.useCallback(() => {
+  }), w = (0, a.bG)([d.A], () => d.A.getState().soundshareEnabled), R = f.A.supports(E.O5.DESKTOP_CAPTURE_APPLICATIONS), P = (0, a.bG)([f.A], () => f.A.supports(E.O5.SOUNDSHARE)), D = (0, a.bG)([f.A], () => f.A.supportsScreenSoundshare()), x = (0, h.A)(O, T), L = (0, _.A)(O, T, g.FX), j = null != C && P && (!C.startsWith("screen") || D), M = (0, a.bG)([f.A], () => f.A.getUseSystemScreensharePicker() && (0, p.isLinux)()), k = i.useCallback(() => {
     (null == C ? true : C.startsWith("prepicked:")) ? f.A.getMediaEngine().eachConnection(e => {
       e.context === E.x.STREAM && e.presentDesktopSourcePicker("window")
     }): v()
@@ -62,14 +62,14 @@ function b(e) {
     };
     null != C && (r.desktopSettings = {
       sourceId: C,
-      sound: !R
+      sound: !w
     }), (0, l.Xd)({
       preset: e,
       resolution: t,
       frameRate: n,
-      soundshareEnabled: !R
+      soundshareEnabled: !w
     }), o.A.setGoLiveSource(r)
-  }, [C, R]);
+  }, [C, w]);
   if (null == O) return (0, r.jsx)(s.Drp, {
     id: "share-your-screen",
     label: y.intl.string(y.t.fjBNo1),
@@ -84,10 +84,10 @@ function b(e) {
     Y = j ? (0, r.jsx)(s.sLh, {
       id: "stream-settings-audio-enable",
       label: S ? y.intl.string(y.t.af2Tw1) : y.intl.string(y.t.ZJEHt7),
-      checked: R,
+      checked: w,
       action: B
     }) : null,
-    W = !w || I || M ? null : (0, r.jsx)(s.Drp, {
+    W = !R || I || M ? null : (0, r.jsx)(s.Drp, {
       id: "change-windows",
       label: F,
       icon: s.Fzq,

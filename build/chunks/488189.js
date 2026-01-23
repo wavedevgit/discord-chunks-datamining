@@ -1,5 +1,6 @@
-/** Chunk was on 66801 **/
-/** chunk id: 488189, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 488189, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   Dz: "nameplatePreviewContainer_f7b5db",
   ur: "nameplatePreviewList_f7b5db",

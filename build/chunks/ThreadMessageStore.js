@@ -72,7 +72,7 @@ function S(e) {
 }
 
 function T(e, t) {
-  c.A_.has(e.type) && C(R(e), t)
+  c.A_.has(e.type) && C(w(e), t)
 }
 
 function C(e, t) {
@@ -83,10 +83,10 @@ function C(e, t) {
 
 function N(e) {
   var t, n;
-  null == (t = e.threads) || t.forEach(P), null == (n = e.threadMessages) || n.forEach(w)
+  null == (t = e.threads) || t.forEach(P), null == (n = e.threadMessages) || n.forEach(R)
 }
 
-function R(e) {
+function w(e) {
   if (!(e.id in v)) {
     var t;
     v[e.id] = {
@@ -100,7 +100,7 @@ function R(e) {
   return v[e.id]
 }
 
-function w(e) {
+function R(e) {
   if (e.type === m.lAJ.THREAD_STARTER_MESSAGE) return;
   let t = f.A.getChannel(e.channel_id);
   null != t && T(t, t => {
@@ -292,7 +292,7 @@ function q(e) {
   })
 }
 
-function X() {
+function Z() {
   for (let e in v) {
     let t = v[e];
     if (null != t && null != t.mostRecentMessage) {
@@ -302,7 +302,7 @@ function X() {
     }
   }
 }
-class Z extends(r = Chunk311907.Ay.Store) {
+class X extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(f.A, p.A)
   }
@@ -322,8 +322,8 @@ class Z extends(r = Chunk311907.Ay.Store) {
     return v
   }
 }
-g(Z, "displayName", "ThreadMessageStore");
-let Q = new Z(Chunk73153.h, {
+g(X, "displayName", "ThreadMessageStore");
+let Q = new X(Chunk73153.h, {
   CONNECTION_OPEN: x,
   OVERLAY_INITIALIZE: L,
   GUILD_CREATE: j,
@@ -333,9 +333,9 @@ let Q = new Z(Chunk73153.h, {
   THREAD_LIST_SYNC: U,
   LOAD_THREADS_SUCCESS: G,
   LOAD_ARCHIVED_THREADS_SUCCESS: G,
-  RELATIONSHIP_ADD: X,
-  RELATIONSHIP_UPDATE: X,
-  RELATIONSHIP_REMOVE: X,
+  RELATIONSHIP_ADD: Z,
+  RELATIONSHIP_UPDATE: Z,
+  RELATIONSHIP_REMOVE: Z,
   SEARCH_MESSAGES_SUCCESS: V,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: V,
   THREAD_DELETE: B,

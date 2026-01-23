@@ -47,14 +47,14 @@ e = require.nmd(module),
       return r
     }
 
-    function R(e) {
+    function w(e) {
       return T(e, function(e) {
         var t = "";
         return e > 65535 && (e -= 65536, t += I(e >>> 10 & 1023 | 55296), e = 56320 | 1023 & e), t += I(e)
       }).join("")
     }
 
-    function w(e) {
+    function R(e) {
       return e - 48 < 10 ? e - 22 : e - 65 < 26 ? e - 65 : e - 97 < 26 ? e - 97 : u
     }
 
@@ -76,10 +76,10 @@ e = require.nmd(module),
         v = h;
       for ((n = e.lastIndexOf(g)) < 0 && (n = 0), r = 0; r < n; ++r) e.charCodeAt(r) >= 128 && S("not-basic"), E.push(e.charCodeAt(r));
       for (i = n > 0 ? n + 1 : 0; i < y;) {
-        for (a = b, s = 1, o = u; i >= y && S("invalid-input"), ((l = w(e.charCodeAt(i++))) >= u || l > A((c - b) / s)) && S("overflow"), b += l * s, !(l < (p = o <= v ? d : o >= v + f ? f : o - v)); o += u) s > A(c / (_ = u - p)) && S("overflow"), s *= _;
+        for (a = b, s = 1, o = u; i >= y && S("invalid-input"), ((l = R(e.charCodeAt(i++))) >= u || l > A((c - b) / s)) && S("overflow"), b += l * s, !(l < (p = o <= v ? d : o >= v + f ? f : o - v)); o += u) s > A(c / (_ = u - p)) && S("overflow"), s *= _;
         v = D(b - a, t = E.length + 1, 0 == a), A(b / t) > c - O && S("overflow"), O += A(b / t), b %= t, E.splice(b++, 0, O)
       }
-      return R(E)
+      return w(E)
     }
 
     function L(e) {
@@ -111,7 +111,7 @@ e = require.nmd(module),
         version: "1.4.1",
         ucs2: {
           decode: N,
-          encode: R
+          encode: w
         },
         decode: x,
         encode: L,

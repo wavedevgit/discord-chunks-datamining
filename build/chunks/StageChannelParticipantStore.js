@@ -35,11 +35,11 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 let T = "NO_GUILD",
-  C = new Chunk713402.J(e => [w(e)], e => e.id),
+  C = new Chunk713402.J(e => [R(e)], e => e.id),
   N = new Set,
-  R = {};
+  w = {};
 
-function w(e) {
+function R(e) {
   var t;
   return null != (t = e.getGuildId()) ? t : T
 }
@@ -60,15 +60,15 @@ function D(e) {
 }
 
 function x(e) {
-  let t = R[e];
+  let t = w[e];
   if (null != t) return t;
   let n = _.A.getChannel(e);
   return null != n && n.isGuildStageVoice() && (D(n.guild_id), j(n)) ? L(e) : null
 }
 
 function L(e) {
-  let t = R[e];
-  return null == t && (t = new v.Ay(e), R[e] = t, t.rebuild()), t
+  let t = w[e];
+  return null == t && (t = new v.Ay(e), w[e] = t, t.rebuild()), t
 }
 
 function j(e) {
@@ -94,22 +94,22 @@ function U(e) {
 }
 
 function G(e) {
-  for (let t of C.values(e)) C.delete(t.id), delete R[t.id];
+  for (let t of C.values(e)) C.delete(t.id), delete w[t.id];
   N.delete(e)
 }
 
 function V(e) {
-  return null != e && (delete R[e], C.delete(e), true)
+  return null != e && (delete w[e], C.delete(e), true)
 }
 
 function F() {
-  N.clear(), C.clear(), R = {}
+  N.clear(), C.clear(), w = {}
 }
 
 function B(e, t, n) {
   if (null == n || e.has(n)) return;
   let r = _.A.getChannel(n);
-  (null == r ? true : r.isGuildStageVoice()) && (t.add(n), null == R[n] && e.add(n))
+  (null == r ? true : r.isGuildStageVoice()) && (t.add(n), null == w[n] && e.add(n))
 }
 
 function H(e) {
@@ -159,7 +159,7 @@ function q(e) {
   G(t.id)
 }
 
-function X(e) {
+function Z(e) {
   let {
     channelId: t,
     guildId: n,
@@ -168,7 +168,7 @@ function X(e) {
   return null != n && !!N.has(n) && U(r, [t])
 }
 
-function Z(e) {
+function X(e) {
   let {
     streamKey: t
   } = e, {
@@ -188,7 +188,7 @@ function Q(e) {
   return V(t)
 }
 
-function $(e) {
+function J(e) {
   let {
     channels: t
   } = e, n = t.reduce((e, t) => {
@@ -199,7 +199,7 @@ function $(e) {
   return k(e => e.rebuild(), n), n.length > 0
 }
 
-function J(e) {
+function $(e) {
   let {
     guildId: t
   } = e;
@@ -251,11 +251,11 @@ let en = new et(Chunk73153.h, {
   USER_UPDATE: K,
   GUILD_MEMBER_REMOVE: K,
   GUILD_MEMBER_UPDATE: K,
-  CHANNEL_UPDATES: $,
-  GUILD_ROLE_UPDATE: J,
-  RTC_CONNECTION_VIDEO: X,
-  STREAM_CLOSE: Z,
-  STREAM_DELETE: Z,
+  CHANNEL_UPDATES: J,
+  GUILD_ROLE_UPDATE: $,
+  RTC_CONNECTION_VIDEO: Z,
+  STREAM_CLOSE: X,
+  STREAM_DELETE: X,
   RELATIONSHIP_ADD: z,
   RELATIONSHIP_REMOVE: z,
   RELATIONSHIP_UPDATE: z,

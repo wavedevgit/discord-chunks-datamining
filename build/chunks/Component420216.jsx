@@ -2,7 +2,7 @@
 /** chunk id: 420216, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => w
+  r: () => R
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -62,12 +62,12 @@ function N(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = e => {
+let R = e => {
   let {
     dismissibleContent: t,
     noticeType: T
@@ -164,7 +164,7 @@ let w = e => {
                     let {
                       RegisterWebAuthnCredentialModal: e
                     } = await Promise.resolve().then(n.bind(n, 359990));
-                    return n => (0, r.jsx)(e, R(C({}, n), {
+                    return n => (0, r.jsx)(e, w(C({}, n), {
                       ticket: t,
                       challenge: i,
                       showAccountSettingsButton: true

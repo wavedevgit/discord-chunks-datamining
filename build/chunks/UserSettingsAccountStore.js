@@ -19,31 +19,31 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 let N = Chunk652215.XlH.CLOSED,
-  R = {};
+  w = {};
 
-function w() {
-  N = T.XlH.OPEN, R = {}
+function R() {
+  N = T.XlH.OPEN, w = {}
 }
 
 function P() {
-  N = T.XlH.CLOSED, R = {}
+  N = T.XlH.CLOSED, w = {}
 }
 
 function D() {
-  N = T.XlH.SUBMITTING, R = {}
+  N = T.XlH.SUBMITTING, w = {}
 }
 
 function x(e) {
   var t;
   if (N !== T.XlH.SUBMITTING) returnfalse;
-  N = T.XlH.OPEN, R = null != (t = e.errors) ? t : {}
+  N = T.XlH.OPEN, w = null != (t = e.errors) ? t : {}
 }
 
 function L(e) {
   let {
     section: t
   } = e;
-  return t === T.nc_.ACCOUNT && w()
+  return t === T.nc_.ACCOUNT && R()
 }
 
 function j(e) {
@@ -144,14 +144,14 @@ function q(e) {
   E = t
 }
 
-function X(e) {
+function Z(e) {
   let {
     profileEffect: t
   } = e;
   y = t
 }
 
-function Z(e) {
+function X(e) {
   let {
     banner: t
   } = e;
@@ -165,7 +165,7 @@ function Q(e) {
   O = t
 }
 
-function $(e) {
+function J(e) {
   let {
     banner: t,
     themeColors: n,
@@ -175,16 +175,16 @@ function $(e) {
   b = t, m = n, E = r, O = i
 }
 
-function J() {
+function $() {
   r = true
 }
 
 function ee() {
-  R = {}
+  w = {}
 }
 
 function et() {
-  en(), er(), ea(), es(), R = {}
+  en(), er(), ea(), es(), w = {}
 }
 
 function en() {
@@ -215,7 +215,7 @@ class el extends(v = Chunk311907.Ay.Store) {
     return N
   }
   getErrors() {
-    return R
+    return w
   }
   showNotice() {
     return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== a || true !== s || true !== i || true !== o || true !== p || true !== _ || true !== h
@@ -304,9 +304,9 @@ class el extends(v = Chunk311907.Ay.Store) {
 }
 C(el, "displayName", "UserSettingsAccountStore");
 let ec = new el(Chunk73153.h, {
-  USER_SETTINGS_ACCOUNT_INIT: w,
-  USER_SETTINGS_MODAL_INIT: w,
-  USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: w,
+  USER_SETTINGS_ACCOUNT_INIT: R,
+  USER_SETTINGS_MODAL_INIT: R,
+  USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: R,
   USER_SETTINGS_MODAL_SET_SECTION: L,
   USER_SETTINGS_ACCOUNT_CLOSE: P,
   USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: eo,
@@ -323,11 +323,11 @@ let ec = new el(Chunk73153.h, {
   USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS: H,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR: z,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION: q,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT: X,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER: Z,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT: Z,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER: X,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS: K,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_DISPLAY_NAME_STYLES: Q,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET: $,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET: J,
   USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID: Y,
   USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES: W,
   USER_SETTINGS_CLEAR_ERRORS: ee,
@@ -337,5 +337,5 @@ let ec = new el(Chunk73153.h, {
   USER_SETTINGS_RESET_ALL_TRY_IT_OUT: ei,
   USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED: ea,
   USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES: es,
-  LOGOUT: J
+  LOGOUT: $
 })

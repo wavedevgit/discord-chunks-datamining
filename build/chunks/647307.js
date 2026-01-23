@@ -249,10 +249,10 @@ function y(e) {
     T = I[1],
     C = d.fitCanvasToArtboardHeight,
     N = d.shouldResizeCanvasToContainer,
-    R = d.useDevicePixelRatio,
-    w = d.customDevicePixelRatio,
+    w = d.useDevicePixelRatio,
+    R = d.customDevicePixelRatio,
     P = m(a, N),
-    D = u(w),
+    D = u(R),
     x = null != c ? c : {},
     L = x.maxX,
     j = x.maxY,
@@ -295,7 +295,7 @@ function y(e) {
       }
       l && (S || s) && l && l(), S && T(false)
     }
-  }, [i, a, P, D, M, S, T, O, v, _, h, l, N, C, R, n]), r.useEffect(function() {
+  }, [i, a, P, D, M, S, T, O, v, _, h, l, N, C, w, n]), r.useEffect(function() {
     A({
       width: 0,
       height: 0
@@ -443,11 +443,11 @@ function T(e, t) {
       null != f.current && f.current.cleanup()
     }
   }, []);
-  var R = null == e ? true : e.animations;
+  var w = null == e ? true : e.animations;
   r.useEffect(function() {
-    _ && R && (_.isPlaying ? (_.stop(_.animationNames), _.play(R)) : _.isPaused && (_.stop(_.animationNames), _.pause(R)))
-  }, [R, _]);
-  var w = r.useCallback(function(e) {
+    _ && w && (_.isPlaying ? (_.stop(_.animationNames), _.play(w)) : _.isPaused && (_.stop(_.animationNames), _.pause(w)))
+  }, [w, _]);
+  var R = r.useCallback(function(e) {
     return a.default.createElement(S, s({
       setContainerRef: A,
       setCanvasRef: v
@@ -459,7 +459,7 @@ function T(e, t) {
     setCanvasRef: v,
     setContainerRef: A,
     rive: _,
-    RiveComponent: w
+    RiveComponent: R
   }
 }
 

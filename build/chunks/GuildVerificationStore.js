@@ -2,7 +2,7 @@
 /** chunk id: 834942, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R
+  A: () => w
 }), require("./896048.js"), require("./938796.js"), require("./321073.js");
 var r, Chunk665260 = require("./665260.js"),
   Chunk311907 = require("./311907.js"),
@@ -136,7 +136,7 @@ class N extends(r = Chunk311907.Ay.Store) {
   }
 }
 h(N, "displayName", "GuildVerificationStore");
-let R = new N(Chunk73153.h, {
+let w = new N(Chunk73153.h, {
   CONNECTION_OPEN: O,
   CONNECTION_CLOSED: v,
   CURRENT_USER_UPDATE: T,

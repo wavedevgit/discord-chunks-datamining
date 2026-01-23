@@ -18,7 +18,7 @@ require.d(exports, {
   aD: () => I,
   bV: () => P,
   jk: () => s,
-  lP: () => w,
+  lP: () => R,
   nI: () => x,
   qE: () => p,
   r_: () => r,
@@ -102,7 +102,7 @@ let S = ["left", "right"],
   C = ["top", "bottom"],
   N = ["bottom", "top"];
 
-function R(e, t, n) {
+function w(e, t, n) {
   switch (e) {
     case "top":
     case "bottom":
@@ -116,9 +116,9 @@ function R(e, t, n) {
   }
 }
 
-function w(e, t, n, r) {
+function R(e, t, n, r) {
   let i = m(e),
-    a = R(h(e), "start" === n, r);
+    a = w(h(e), "start" === n, r);
   return i && (a = a.map(e => e + "-" + i), t && (a = a.concat(a.map(I)))), a
 }
 

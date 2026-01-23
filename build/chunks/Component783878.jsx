@@ -93,8 +93,8 @@ function h(e) {
     refs: T,
     floatingStyles: C,
     getFloatingProps: N,
-    getReferenceProps: R,
-    transitionStyles: w
+    getReferenceProps: w,
+    transitionStyles: R
   } = (0, o.G)();
   return (0, r.jsxs)(a.iS, f(u({}, d), {
     isCollapsible: true,
@@ -109,7 +109,7 @@ function h(e) {
       showChevronButton: true,
       ref: T.setReference,
       placeholder: O
-    }, _, R()), {
+    }, _, w()), {
       onKeyDown: E,
       onBlur: b,
       onQueryChange: g,
@@ -117,7 +117,7 @@ function h(e) {
     })), I && (0, r.jsx)("div", f(u({
       ref: T.setFloating,
       className: l.S_,
-      style: u({}, C, w)
+      style: u({}, C, R)
     }, N()), {
       children: (0, r.jsx)(a.X2, {
         renderListItem: e => (0, r.jsx)(s.c, u({}, e)),

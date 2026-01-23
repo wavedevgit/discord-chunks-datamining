@@ -146,11 +146,11 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   (h = new Map(h)).set(e.code, e.friendMemberIds)
 }
 
-function w(e) {
+function R(e) {
   if (!h.has(e.code)) returnfalse;
   (h = new Map(h)).delete(e.code)
 }
@@ -186,6 +186,6 @@ let D = new P(Chunk73153.h, {
   INVITE_APP_OPENING: T,
   INVITE_APP_OPENED: C,
   INVITE_APP_NOT_OPENED: N,
-  INVITE_FRIEND_MEMBERS_FETCH_SUCCESS: R,
-  INVITE_FRIEND_MEMBERS_FETCH_FAILURE: w
+  INVITE_FRIEND_MEMBERS_FETCH_SUCCESS: w,
+  INVITE_FRIEND_MEMBERS_FETCH_FAILURE: R
 })

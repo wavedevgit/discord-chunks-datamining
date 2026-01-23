@@ -61,12 +61,12 @@ function N(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = 7,
+let R = 7,
   P = false,
   D = new Chunk626584.A("OverlayUsageStatsManager");
 P || (D.verbose = () => {});
@@ -239,7 +239,7 @@ class M {
       screentype_fullscreen_duration: i[s.aI.FULLSCREEN],
       screentype_minimized_duration: i[s.aI.MINIMIZED]
     };
-    return R(C({}, u), {
+    return w(C({}, u), {
       screentype_global_supported_duration: u.screentype_windowed_duration + u.screentype_maximized_duration + u.screentype_borderless_fullscreen_duration,
       screentype_global_unsupported_duration: u.screentype_fullscreen_duration,
       screentype_initial: s.aI[this.game.fullscreenType],
@@ -313,7 +313,7 @@ class U {
       original_method: e
     }, a);
     let o = e !== n.original_method ? e : true;
-    return C(R(C({}, n), {
+    return C(w(C({}, n), {
       any_other_method: null != o ? o : n.any_other_method
     }), a)
   }
@@ -388,9 +388,9 @@ class U {
       v = null != b.current_method ? f.Ue[b.current_method] : null,
       A = E.enabledLegacy || E.enabledOOP;
     return {
-      usage: R(C(R(C({
+      usage: w(C(w(C({
         event_uuid: this.uuid,
-        overlay_usage_stats_version: w
+        overlay_usage_stats_version: R
       }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), h), {
         overlay_status_game_enabled: A,
         overlay_status_game_source: E.source,
@@ -568,12 +568,12 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Z(e) {
   let t = (0, v.A)();
   null != t && t !== b.DEV_PID && t !== b.UNSET_PID && (D.verbose("AUDIO_TOGGLE_SELF_MUTE", e), U.handleMuteToggled())
 }
 
-function Z(e) {
+function X(e) {
   D.verbose("WINDOW_FOCUS", e);
   let t = (0, O.Xg)();
   e.windowId !== t ? D.verbose("WINDOW_FOCUS: Not main window", {
@@ -588,12 +588,12 @@ function Q(e) {
   null == t ? D.error("OVERLAY_SUCCESSFULLY_SHOWN: Game not found", e, U.debug) : t.successfullyShown = true
 }
 
-function $(e) {
+function J(e) {
   let t = U.getByPid(e.pid);
   null == t ? D.error("OVERLAY_UPDATE_OVERLAY_METHOD: Game not found", e, U.debug) : e.overlayMethod !== f.Ue.Disabled && (D.verbose("OVERLAY_UPDATE_OVERLAY_METHOD", e), t.setOverlayMethod(e.overlayMethod))
 }
 
-function J(e) {
+function $(e) {
   let t = U.getByPid(e.pid);
   if (null == t) return void D.error("OVERLAY_TRACK_STATE_CHANGED: Game not found", e, U.debug);
   if (e.newState !== f.AR.OVERLAY_TEARING_DOWN) {
@@ -662,12 +662,12 @@ class en extends Chunk439372.A {
       SOUNDBOARD_SET_OVERLAY_ENABLED: W,
       MESSAGE_ACKED: z,
       MESSAGE_CREATE: q,
-      WINDOW_FOCUS: Z,
+      WINDOW_FOCUS: X,
       RTC_CONNECTION_STATE: ee.handleRTCConnectionState,
-      AUDIO_TOGGLE_SELF_MUTE: X,
+      AUDIO_TOGGLE_SELF_MUTE: Z,
       OVERLAY_SUCCESSFULLY_SHOWN: Q,
-      OVERLAY_UPDATE_OVERLAY_METHOD: $,
-      OVERLAY_TRACK_STATE_CHANGED: J
+      OVERLAY_UPDATE_OVERLAY_METHOD: J,
+      OVERLAY_TRACK_STATE_CHANGED: $
     })
   }
 }

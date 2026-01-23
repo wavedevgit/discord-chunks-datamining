@@ -12,13 +12,13 @@ require.d(exports, {
   Qu: () => N,
   Ry: () => T,
   TP: () => b,
-  Ys: () => R,
+  Ys: () => w,
   aG: () => I,
   ax: () => A,
   fA: () => U,
   fi: () => v,
   gb: () => C,
-  k1: () => w,
+  k1: () => R,
   kN: () => B,
   sN: () => G,
   tO: () => k,
@@ -106,8 +106,8 @@ function N(e) {
       throw Error("Not a valid tier type")
   }
 }
-let R = i().memoize(e => m.TG[_.TVA.TIER_1].features.includes(e) ? _.TVA.TIER_1 : m.TG[_.TVA.TIER_2].features.includes(e) ? _.TVA.TIER_2 : m.TG[_.TVA.TIER_3].features.includes(e) ? _.TVA.TIER_3 : null),
-  w = e => e === _.TVA.NONE ? _.AnalyticsObjectTypes.NONE : e === _.TVA.TIER_1 ? _.AnalyticsObjectTypes.TIER_1 : e === _.TVA.TIER_2 ? _.AnalyticsObjectTypes.TIER_2 : e === _.TVA.TIER_3 ? _.AnalyticsObjectTypes.TIER_3 : null;
+let w = i().memoize(e => m.TG[_.TVA.TIER_1].features.includes(e) ? _.TVA.TIER_1 : m.TG[_.TVA.TIER_2].features.includes(e) ? _.TVA.TIER_2 : m.TG[_.TVA.TIER_3].features.includes(e) ? _.TVA.TIER_3 : null),
+  R = e => e === _.TVA.NONE ? _.AnalyticsObjectTypes.NONE : e === _.TVA.TIER_1 ? _.AnalyticsObjectTypes.TIER_1 : e === _.TVA.TIER_2 ? _.AnalyticsObjectTypes.TIER_2 : e === _.TVA.TIER_3 ? _.AnalyticsObjectTypes.TIER_3 : null;
 
 function P(e) {
   var t;

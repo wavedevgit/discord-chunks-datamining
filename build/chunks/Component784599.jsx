@@ -132,7 +132,7 @@ class A extends(r = Chunk64700.Component) {
       required: T,
       onInvalid: C,
       inputRef: N
-    } = this.props, R = S ? f.y : "textarea", w = this.hasError(), P = null != (e = this.props["aria-labelledby"]) ? e : null == (t = this.context) ? true : t.titleId, D = this.getAriaDescribedBy();
+    } = this.props, w = S ? f.y : "textarea", R = this.hasError(), P = null != (e = this.props["aria-labelledby"]) ? e : null == (t = this.context) ? true : t.titleId, D = this.getAriaDescribedBy();
     return (0, i.jsxs)("div", {
       className: o()(h.I6, {
         [_.Uu]: I
@@ -142,16 +142,16 @@ class A extends(r = Chunk64700.Component) {
           [_.Uu]: I
         }),
         children: [(0, i.jsx)(c.vN3, {
-          children: (0, i.jsx)(R, {
+          children: (0, i.jsx)(w, {
             type: "text",
             className: o()(h.hF, _.Tg, m.qD, O, {
-              [h.z3]: w,
+              [h.z3]: R,
               [h.r9]: n,
               [_.Xl]: E
             }),
             "aria-labelledby": P,
             "aria-describedby": D,
-            "aria-invalid": w,
+            "aria-invalid": R,
             style: {
               paddingRight: this.getPaddingRight()
             },

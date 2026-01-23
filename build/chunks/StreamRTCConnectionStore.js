@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  A: () => $
+  A: () => J
 }), require("./896048.js");
 var i, Chunk284009 = require("./284009.js"),
   s = require.n(Chunk284009),
@@ -37,8 +37,8 @@ let S = {},
   T = {},
   C = {},
   N = {},
-  R = {},
   w = {},
+  R = {},
   P = Chunk652215.SO9.THEATRE,
   D = {};
 
@@ -56,7 +56,7 @@ function x(e, t, n, i) {
 
 function L() {
   l().forEach(D, (e, t) => {
-    e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete D[t], delete w[t]
+    e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete D[t], delete R[t]
   })
 }
 
@@ -107,7 +107,7 @@ function k(e) {
       gameMetadata: e.gameMetadata
     }), null == (t = D[m]) || t.analyticsContext.updateStreamApplication(T[m])
   } else null == (n = D[m]) || n.analyticsContext.updateStreamApplication(null);
-  null != p ? R[m] = p : delete R[m]
+  null != p ? w[m] = p : delete w[m]
 }
 
 function U(e) {
@@ -124,7 +124,7 @@ function U(e) {
       isOwner: r
     } = e;
     n.setActionContext(t), r && n.trackEnd()
-  }), N[n] = null, C[n] = null, delete R[n]
+  }), N[n] = null, C[n] = null, delete w[n]
 }
 
 function G(e) {
@@ -141,15 +141,15 @@ function G(e) {
     let e = new p.t({
       streamRegion: i,
       streamApplication: T[t],
-      streamSourceType: Z(N[t]),
+      streamSourceType: X(N[t]),
       actionContext: null == (l = S[t]) ? true : l.appContext,
       numViewers: null != a ? a.length : 0,
-      goLiveModalDurationMs: R[t],
+      goLiveModalDurationMs: w[t],
       analyticsLocations: null == (c = S[t]) ? true : c.analyticsLocations
     });
     s = x(t, n, r, e), D[t] = s
   }
-  delete w[t], d.h.dispatch({
+  delete R[t], d.h.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
     mediaEngineConnectionId: s.getMediaEngineConnectionId()
   })
@@ -219,7 +219,7 @@ function K(e) {
       let [t, n] = e;
       return "any" !== t && 0 !== n
     })) returnfalse;
-  w[s] = performance.now()
+  R[s] = performance.now()
 }
 
 function z(e) {
@@ -237,7 +237,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Z(e) {
   let {
     streamId: t,
     dimensions: n,
@@ -248,7 +248,7 @@ function X(e) {
   })
 }
 
-function Z(e) {
+function X(e) {
   var t, n, r;
   if (null == e) return "unknown";
   if (g.isPlatformEmbedded || (null == (t = platform) ? true : t.name) === "Chrome") {
@@ -312,7 +312,7 @@ class Q extends(i = Chunk311907.Ay.Store) {
     return N[e]
   }
   getLastNonZeroRemoteVideoSinkWantsTime(e) {
-    return w[e]
+    return R[e]
   }
   getUserIds(e) {
     let t = D[e];
@@ -333,7 +333,7 @@ class Q extends(i = Chunk311907.Ay.Store) {
   }
 }
 I(Q, "displayName", "StreamRTCConnectionStore");
-let $ = new Q(Chunk73153.h, !Chunk430452.A.isSupported() || __OVERLAY__ ? {} : {
+let J = new Q(Chunk73153.h, !Chunk430452.A.isSupported() || __OVERLAY__ ? {} : {
   CONNECTION_OPEN: j,
   CONNECTION_CLOSED: M,
   RTC_CONNECTION_STATE: W,
@@ -351,5 +351,5 @@ let $ = new Q(Chunk73153.h, !Chunk430452.A.isSupported() || __OVERLAY__ ? {} : {
   MEDIA_ENGINE_CONNECTION_STATS: F,
   STREAM_LAYOUT_UPDATE: Y,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: q,
-  VIDEO_SIZE_UPDATE: X
+  VIDEO_SIZE_UPDATE: Z
 })

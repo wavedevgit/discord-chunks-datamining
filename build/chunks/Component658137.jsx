@@ -31,17 +31,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk182514 = require("./182514.js"),
   Chunk619947 = require("./619947.js"),
   Chunk733907 = require("./733907.js");
-let w = (e, t) => {
+let R = (e, t) => {
     let {
       className: n,
       buttonClassName: i,
       subscriptionTier: a,
-      isDarkMode: w,
+      isDarkMode: R,
       isEligibleForBogoPromotion: P,
       videoRef: D
     } = e, {
       analyticsLocations: x
-    } = (0, f.Ay)(d.A.PREMIUM_MARKETING_HERO_CTA), L = (0, g.QQ)(), j = (0, m.ar)(), M = (0, o.bG)([h.A], () => h.A.affinities), k = (0, E.A)(), U = null != k, G = w ? l.XD.WHITE : l.XD.BRAND, V = M.length > 0, F = S.intl.string(S.t.YCZldK), B = (0, _.TM)(), H = (0, o.bG)([u.A], () => u.A.useReducedMotion);
+    } = (0, f.Ay)(d.A.PREMIUM_MARKETING_HERO_CTA), L = (0, g.QQ)(), j = (0, m.ar)(), M = (0, o.bG)([h.A], () => h.A.affinities), k = (0, E.A)(), U = null != k, G = R ? l.XD.WHITE : l.XD.BRAND, V = M.length > 0, F = S.intl.string(S.t.YCZldK), B = (0, _.TM)(), H = (0, o.bG)([u.A], () => u.A.useReducedMotion);
     return (0, r.jsx)(f.f5, {
       value: x,
       children: (0, r.jsxs)("div", {
@@ -82,7 +82,7 @@ let w = (e, t) => {
               }),
               buttonClassName: i,
               isApplicationHome: true,
-              isDarkMode: w,
+              isDarkMode: R,
               isEligibleForBogoPromotion: P
             }), (0, r.jsx)(v.U9, {
               variant: "text-sm/normal",
@@ -101,7 +101,7 @@ let w = (e, t) => {
             className: T.gm,
             ref: D,
             children: (0, r.jsx)("source", {
-              src: B ? C.A : R.A,
+              src: B ? C.A : w.A,
               type: B ? I.a.MP4 : I.a.WEBM
             })
           })
@@ -109,4 +109,4 @@ let w = (e, t) => {
       })
     })
   },
-  P = Chunk64700.forwardRef(w)
+  P = Chunk64700.forwardRef(R)

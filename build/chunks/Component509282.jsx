@@ -32,7 +32,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk435220 = require("./435220.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk159740 = require("./159740.js");
-let w = (0, Chunk311907.UT)([Chunk67480.A, Chunk328968.A, Chunk97352.A], {
+let R = (0, Chunk311907.UT)([Chunk67480.A, Chunk328968.A, Chunk97352.A], {
     getQueryId: Chunk652215.fic.SKU,
     get: e => {
       if (null == e) return;
@@ -65,7 +65,7 @@ function D(e, t) {
   var n, r;
   let {
     data: i
-  } = w(e), a = null == i ? true : i.sku, s = null == i ? true : i.subscriptionPlan, o = null == i ? true : i.storeListing, {
+  } = R(e), a = null == i ? true : i.sku, s = null == i ? true : i.subscriptionPlan, o = null == i ? true : i.storeListing, {
     data: l
   } = P(e, null != (n = null == a || null == (r = a.application) ? true : r.id) ? n : null == a ? true : a.applicationId);
   return {
@@ -103,7 +103,7 @@ function x(e) {
       count: O
     }) : N.intl.string(N.t.rMA98g), [O, y]);
   if (!s || null == u) return null;
-  let w = () => {
+  let R = () => {
       (0, l.mMO)(async () => {
         let {
           default: e
@@ -117,13 +117,13 @@ function x(e) {
       })
     },
     P = () => {
-      w(), b.default.track(T.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+      R(), b.default.track(T.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "app_icon"
       })
     },
     D = () => {
-      w(), b.default.track(T.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+      R(), b.default.track(T.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "open_store_button"
       })
@@ -142,7 +142,7 @@ function x(e) {
     iconSrc: E,
     onIconClick: P,
     children: (0, r.jsx)("div", {
-      className: R.mZ,
+      className: w.mZ,
       children: (0, r.jsx)(l.Button, {
         onClick: D,
         text: N.intl.string(N.t.kRvlKJ)
@@ -167,7 +167,7 @@ function L(e) {
   } = (0, d.YY)(null == m ? true : m.applicationId), O = (0, o.bG)([h.A], () => {
     var e;
     return null == (e = h.A.getBasicChannel(u.channel_id)) ? true : e.guild_id
-  }, [u]), w = i.useMemo(() => null != y ? (0, v.A)(y, 45) : true, [y]), P = (0, I.G)(null != (t = null == y ? true : y.id) ? t : ""), {
+  }, [u]), R = i.useMemo(() => null != y ? (0, v.A)(y, 45) : true, [y]), P = (0, I.G)(null != (t = null == y ? true : y.id) ? t : ""), {
     openModal: x,
     subscriptionPurchaseButtonState: L
   } = (0, _.A)({
@@ -261,10 +261,10 @@ function L(e) {
     description: F,
     link: "".concat(location.protocol, "//").concat(location.host).concat(T.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(y.id, C.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: W,
-    iconSrc: w,
+    iconSrc: R,
     onIconClick: B,
     children: (0, r.jsxs)("div", {
-      className: R.w,
+      className: w.w,
       children: [(0, r.jsx)(l.Button, {
         variant: "secondary",
         onClick: H,
@@ -304,11 +304,11 @@ function j(e) {
     children: u
   } = e;
   return (0, r.jsxs)("div", {
-    className: R.iE,
+    className: w.iE,
     children: [(0, r.jsxs)("div", {
-      className: R.wx,
+      className: w.wx,
       children: [(0, r.jsxs)("div", {
-        className: R.qd,
+        className: w.qd,
         children: [(0, r.jsx)(l.U1X, {
           size: "xxs"
         }), (0, r.jsx)(l.Text, {
@@ -330,18 +330,18 @@ function j(e) {
         variant: "icon-only"
       })]
     }), (0, r.jsxs)("div", {
-      className: R.Qs,
+      className: w.Qs,
       children: [(0, r.jsxs)("div", {
-        className: R.oB,
+        className: w.oB,
         children: [null != s && (0, r.jsx)(l.DUT, {
           onClick: o,
           children: (0, r.jsx)("img", {
             src: s.href,
             alt: "",
-            className: R.Z2
+            className: w.Z2
           })
         }), (0, r.jsxs)("div", {
-          className: R.Tf,
+          className: w.Tf,
           style: null == i ? {
             justifyContent: "space-evenly"
           } : true,
@@ -353,7 +353,7 @@ function j(e) {
             variant: "heading-md/medium",
             color: "text-muted",
             tag: "div",
-            className: R.h_,
+            className: w.h_,
             children: i
           })]
         })]

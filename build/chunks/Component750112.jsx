@@ -41,16 +41,16 @@ let y = [Chunk559949.x.CHERRY_BOMB, Chunk559949.x.CHICLE],
       useReducedMotion: f.A.useReducedMotion
     })), N = (0, _.W)({
       location: "UserNameWithEffects"
-    }), R = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOW).hex(), w = null != (t = null == i ? true : i.effectId) ? t : o.z.SOLID, P = (0, d.Oer)(n), D = (0, u.CR)(P, w === o.z.TOON ? E.Zg : true), x = (0, p.H)({
+    }), w = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOW).hex(), R = null != (t = null == i ? true : i.effectId) ? t : o.z.SOLID, P = (0, d.Oer)(n), D = (0, u.CR)(P, R === o.z.TOON ? E.Zg : true), x = (0, p.H)({
       displayNameStyles: N ? i : null,
-      backgroundColor: R
+      backgroundColor: w
     });
     if (!N || null == i) return n;
-    let L = (0, m.P)(w, x, {
+    let L = (0, m.P)(R, x, {
         shouldWrap: A,
         fontOpacity: y.includes(i.fontId) ? I : 1
       }),
-      j = O(w);
+      j = O(R);
     return (0, r.jsxs)("div", {
       className: s()(E.kL, T, b, {
         [E.rD]: a !== h.G.PLAIN,

@@ -52,28 +52,28 @@ function T(e) {
   let {
     guildId: t
   } = e, n = (0, s.bG)([h.default], () => h.default.getCurrentUser()), I = (0, s.bG)([_.A], () => _.A.getGuild(t)), T = (0, s.bG)([p.A], () => p.A.getRolesSnapshot(t)), N = (0, s.bG)([p.A], () => p.A.getSortedRoles(t)), {
-    impersonateType: R,
-    viewingRoles: w
+    impersonateType: w,
+    viewingRoles: R
   } = (0, s.cf)([y.A], () => ({
     impersonateType: y.A.getImpersonateType(t),
     viewingRoles: y.A.getViewingRoles(t)
-  })), P = R === b._.SERVER_SHOP, D = (0, s.bG)([f.Ay], () => null != n ? f.Ay.getTrueMember(t, n.id) : null), x = null != I ? T[(0, u.af)(I)] : null, [L, j] = i.useState(() => {
-    let e = null == w ? [] : g.default.keys(w);
+  })), P = w === b._.SERVER_SHOP, D = (0, s.bG)([f.Ay], () => null != n ? f.Ay.getTrueMember(t, n.id) : null), x = null != I ? T[(0, u.af)(I)] : null, [L, j] = i.useState(() => {
+    let e = null == R ? [] : g.default.keys(R);
     return null != x && e.push(x.id), e
   }), M = i.useRef(I);
   i.useEffect(() => {
     let e = {},
       t = M.current;
-    if (null != t && null != R) {
+    if (null != t && null != w) {
       for (let t of L) {
         let n = T[t];
         null != n && (e[t] = n)
       }(0, E.IA)(t.id, {
-        type: R,
+        type: w,
         roles: e
       })
     }
-  }, [L, R, T]);
+  }, [L, w, T]);
   let k = null != I && null != n && null != D ? N.find(e => D.roles.includes(e.id)) : true,
     U = i.useMemo(() => null != I && null != n ? N.filter(e => !(0, d.Oy)(e)).filter(e => {
       var t;

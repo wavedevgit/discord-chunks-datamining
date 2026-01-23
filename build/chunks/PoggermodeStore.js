@@ -148,11 +148,11 @@ function N(e) {
   }))
 }
 
-function R(e) {
+function w(e) {
   T.set(e.messageId, e)
 }
 
-function w(e) {
+function R(e) {
   let {
     type: t
   } = e, n = y(e, ["type"]);
@@ -165,7 +165,7 @@ function P(e) {
     comboMessage: t
   } = e;
   if (!d.A.isEnabled()) returnfalse;
-  R(t)
+  w(t)
 }
 
 function D(e, t, n, r) {
@@ -235,7 +235,7 @@ class L extends(r = Chunk311907.Ay.Store) {
 }
 h(L, "displayName", "PoggermodeStore");
 let j = new L(Chunk73153.h, {
-    POGGERMODE_UPDATE_COMBO: w,
+    POGGERMODE_UPDATE_COMBO: R,
     POGGERMODE_UPDATE_MESSAGE_COMBO: P,
     MESSAGE_CREATE: x
   }),

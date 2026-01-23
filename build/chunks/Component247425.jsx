@@ -32,10 +32,10 @@ let I = function(e) {
     onCtaVisibilityChange: a
   } = e, I = i.useRef(null), S = (0, o.bG)([m.default], () => m.default.getCurrentUser()), T = (0, o.bG)([g.A], () => g.A.boostSlots), C = null == S ? true : S.isPremiumGroupMember(), {
     analyticsLocations: N
-  } = (0, d.Ay)(), R = i.useMemo(() => Object.keys(T).filter(e => {
+  } = (0, d.Ay)(), w = i.useMemo(() => Object.keys(T).filter(e => {
     let t = T[e];
     return null != t.premiumGuildSubscription && t.premiumGuildSubscription.guildId === n.id
-  }).length, [T, n.id]), w = (0, _.A)(e.guild.id).total;
+  }).length, [T, n.id]), R = (0, _.A)(e.guild.id).total;
 
   function P() {
     (0, p.A)({
@@ -83,22 +83,22 @@ let I = function(e) {
       children: [(0, r.jsxs)("div", {
         className: A.SJ,
         children: [(0, r.jsx)(u._Jp, {
-          color: w > 0 ? u.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK : "currentColor",
+          color: R > 0 ? u.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK : "currentColor",
           className: s()(A.Me, {
-            [A.S3]: w > 0
+            [A.S3]: R > 0
           })
         }), (0, r.jsx)(u.Text, {
           className: A.n,
           variant: "text-md/bold",
           children: v.intl.format(v.t["pob/cL"], {
-            subscriptions: w
+            subscriptions: R
           })
         })]
-      }), R > 0 ? (0, r.jsx)(u.Text, {
+      }), w > 0 ? (0, r.jsx)(u.Text, {
         className: A.EV,
         variant: "text-sm/normal",
         children: v.intl.format(v.t.Jeto2u, {
-          numSubscriptions: R
+          numSubscriptions: w
         })
       }) : null]
     }), C ? (0, r.jsx)(h.A, {

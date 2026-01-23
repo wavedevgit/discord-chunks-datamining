@@ -42,12 +42,12 @@ let g = e => {
     onDiscountOffer: h.intl.formatToPlainString(h.t.bkQ4bH, {
       percent: null == T ? true : T.discount.amount
     })
-  }), R = (0, f.Q)(A), w = e => (null == e ? true : e.hideOnHoverComponent) !== true;
+  }), w = (0, f.Q)(A), R = e => (null == e ? true : e.hideOnHoverComponent) !== true;
   return (0, r.jsxs)("div", {
-    className: a()(m.L_, null == R || null == (t = R.description) ? true : t.className),
+    className: a()(m.L_, null == w || null == (t = w.description) ? true : t.className),
     children: [(0, r.jsx)(p.A, {
       title: n,
-      cardVariantStyleInfo: R,
+      cardVariantStyleInfo: w,
       titleClassName: i,
       subtitle: E,
       description: y
@@ -60,7 +60,7 @@ let g = e => {
         textOverride: N
       },
       showGradient: true
-    }), 0 !== b.length && w(null == R ? true : R.descriptionCta) && null != v && (0, r.jsx)(s.$n, {
+    }), 0 !== b.length && R(null == w ? true : w.descriptionCta) && null != v && (0, r.jsx)(s.$n, {
       "data-migration-pending": true,
       className: g,
       onClick: v,

@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 56853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -130,14 +130,14 @@ function D(e) {
     day: "numeric"
   }), Q = (null == (r = y.userStatus) ? true : r.enrolledAt) != null, Y = (null == (s = y.userStatus) ? true : s.completedAt) != null, {
     onAssetLoadComplete: J
-  } = l.useContext(E.M), X = H ? "text-muted" : "always-white", Z = l.useCallback(() => {
+  } = l.useContext(T.M), X = H ? "text-muted" : "always-white", $ = l.useCallback(() => {
     V && (0, O.d5)({
       quest: y,
       questContent: f.uF.QUEST_HOME_DESKTOP,
       sourceQuestContent: F,
       sourceQuestContentCTA: x.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })
-  }, [V, y, F]), $ = (0, o.bG)([g.A], () => g.A.getQuestHomeTakeoverConfig()), ee = l.useMemo(() => null != $ && (0, _.f0)($, y.id), [$, y.id]);
+  }, [V, y, F]), Z = (0, o.bG)([g.A], () => g.A.getQuestHomeTakeoverConfig()), ee = l.useMemo(() => null != Z && (0, _.f0)(Z, y.id), [Z, y.id]);
   return (0, a.jsxs)("div", {
     className: k.kL,
     children: [(0, a.jsx)("div", {
@@ -183,7 +183,7 @@ function D(e) {
             children: (0, a.jsx)(u.DUT, {
               className: k.iI,
               "aria-label": I.intl.string(I.t.RscU7I),
-              onClick: Z,
+              onClick: $,
               children: (0, a.jsx)(u.udU, {
                 color: "currentColor",
                 className: k.A9
@@ -238,7 +238,7 @@ function D(e) {
               }), t))
             }
           })]
-        }), (0, a.jsx)(T.A, {
+        }), (0, a.jsx)(E.A, {
           showPlaceholder: !L,
           width: 100,
           height: 30,

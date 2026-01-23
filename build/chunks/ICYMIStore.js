@@ -83,8 +83,8 @@ let M = +Chunk927813.A.Millis.DAY,
   Q = 0,
   X = false,
   Z = false,
-  $ = false,
-  J = null,
+  J = false,
+  $ = null,
   ee = null,
   et = 0,
   en = [],
@@ -302,11 +302,11 @@ function eN(e) {
     channelId: t
   } = e, n = [], r = [];
   en.forEach((e, i) => {
-    (i > ei || !$) && e.type === T.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : r.push(e)
+    (i > ei || !J) && e.type === T.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : r.push(e)
   });
   let i = Z,
     [l, a] = eE(B);
-  if (H = eO(l, t), Z = $ ? i && H.length >= T.$P : i && eg(r, B), 0 === n.length && i === Z) returnfalse;
+  if (H = eO(l, t), Z = J ? i && H.length >= T.$P : i && eg(r, B), 0 === n.length && i === Z) returnfalse;
   0 !== n.length && (en = r, er = [...er, ...n])
 }
 class eT extends(r = Chunk311907.Ay.PersistedStore) {
@@ -374,7 +374,7 @@ class eT extends(r = Chunk311907.Ay.PersistedStore) {
     return Z
   }
   getCurrentStatusAttachments(e) {
-    return null == J || J[0] !== e ? [] : J[1]
+    return null == $ || $[0] !== e ? [] : $[1]
   }
   getLoadId() {
     return G
@@ -383,7 +383,7 @@ class eT extends(r = Chunk311907.Ay.PersistedStore) {
     return 5 === et
   }
   hasOpened() {
-    return $
+    return J
   }
   getDiscoverableGuilds() {
     return el
@@ -430,7 +430,7 @@ class eT extends(r = Chunk311907.Ay.PersistedStore) {
 L(eT, "displayName", "ICYMIStore"), L(eT, "persistKey", "ICYMIStore");
 let ej = new eT(Chunk73153.h, {
   LOGOUT: function() {
-    U = [], B = [], H = [], Y = {}, F = {}, K = {}, W = {}, G = null, q = {}, z = {}, Q = 0, X = false, Z = false, $ = false, en = [], er = [], ei = 0, V = 0, ea = 0, es = true, eo = false, ec = new Set, ee = null, eu = false, ed = false, J = null, ep = 0
+    U = [], B = [], H = [], Y = {}, F = {}, K = {}, W = {}, G = null, q = {}, z = {}, Q = 0, X = false, Z = false, J = false, en = [], er = [], ei = 0, V = 0, ea = 0, es = true, eo = false, ec = new Set, ee = null, eu = false, ed = false, $ = null, ep = 0
   },
   LOAD_ICYMI_FROM_NOTIFICATION: function(e) {
     let {
@@ -487,7 +487,7 @@ let ej = new eT(Chunk73153.h, {
       feed_item_ids: B.map(e => e.id)
     };
     let [a, s] = eE(B);
-    if (H = eO(a), !$ || 0 === Q || i) Q = 0, !eu && eg(a, B) ? (Z = true, X = true) : Z = false, eb({
+    if (H = eO(a), !J || 0 === Q || i) Q = 0, !eu && eg(a, B) ? (Z = true, X = true) : Z = false, eb({
       newUnread: a,
       newRead: s
     });
@@ -608,7 +608,7 @@ let ej = new eT(Chunk73153.h, {
     eb(), Z = false
   },
   ICYMI_TAB_OPENED: function() {
-    $ = true, V = Date.now(), X && (X = false, Z = false), et < 5 && et++
+    J = true, V = Date.now(), X && (X = false, Z = false), et < 5 && et++
   },
   ICYMI_FEEDBACK_GIVEN: function() {
     et = 6
@@ -680,10 +680,10 @@ let ej = new eT(Chunk73153.h, {
       createdAtMs: n
     } = e;
     if (null == t || 0 === t.length) {
-      J = null;
+      $ = null;
       return
     }
-    J = [n, [...t]]
+    $ = [n, [...t]]
   },
   ICYMI_SCROLL_EVENT: function(e) {
     let {

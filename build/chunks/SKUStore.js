@@ -107,20 +107,20 @@ function N(e) {
   T(t)
 }
 
-function R(e) {
+function w(e) {
   let {
     entitlements: t
   } = e;
   for (let e of t) null != e.sku && g(e.sku)
 }
 
-function w() {
+function R() {
   d = new Map, f = new Set, p = new Set, _ = new Map, h = new Map, m = new Map
 }
 
 function P() {
   if (r === o.default.locale) returnfalse;
-  r = o.default.locale, w()
+  r = o.default.locale, R()
 }
 class D extends(i = Chunk311907.il) {
   initialize() {
@@ -158,8 +158,8 @@ let x = new D(Chunk73153.h, {
   SKU_FETCH_SUCCESS: I,
   SKU_FETCH_FAIL: v,
   SKUS_FETCH_SUCCESS: S,
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: R,
-  APPLICATION_STORE_CLEAR_DATA: w,
-  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: R,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: R
+  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: w,
+  APPLICATION_STORE_CLEAR_DATA: R,
+  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: w,
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: w
 })

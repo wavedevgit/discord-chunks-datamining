@@ -52,11 +52,11 @@ function E(e) {
     c.cL(), O(""), S(null)
   }
 
-  function R(e) {
+  function w(e) {
     O(e)
   }
 
-  function w(e) {
+  function R(e) {
     S(e)
   }
 
@@ -110,7 +110,7 @@ function E(e) {
           value: b,
           maxLength: 19,
           error: T ? null : p.intl.string(p.t.gPNgKO),
-          onChange: R,
+          onChange: w,
           disabled: y
         })
       }), (0, r.jsx)("div", {
@@ -129,7 +129,7 @@ function E(e) {
             label: p.intl.string(p.t.uaksyW),
             id: "proxy"
           }],
-          onSelectionChange: w,
+          onSelectionChange: R,
           placeholder: "URL Origin Type"
         })
       }), D()]

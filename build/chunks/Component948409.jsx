@@ -139,11 +139,11 @@ function S(e, t, n, r) {
 }
 
 function T() {
-  let [e, t] = i.useState(false), [n, s] = i.useState(false), [d, _] = i.useState(null), [m, v] = i.useState(null), [T, C] = i.useState(b.defaultValue), [N, R] = i.useState(null), w = (0, a.bG)([p.A], () => p.A.paymentSources), P = (0, a.bG)([p.A], () => p.A.hasFetchedPaymentSources), D = (0, a.bG)([p.A], () => p.A.defaultPaymentSourceId);
+  let [e, t] = i.useState(false), [n, s] = i.useState(false), [d, _] = i.useState(null), [m, v] = i.useState(null), [T, C] = i.useState(b.defaultValue), [N, w] = i.useState(null), R = (0, a.bG)([p.A], () => p.A.paymentSources), P = (0, a.bG)([p.A], () => p.A.hasFetchedPaymentSources), D = (0, a.bG)([p.A], () => p.A.defaultPaymentSourceId);
   i.useEffect(() => {
     P || (0, c.$o)()
   }, [P]), i.useEffect(() => {
-    null != D && null == N && R(D)
+    null != D && null == N && w(D)
   }, [D, N]);
   let x = i.useRef(null);
   i.useEffect(() => {
@@ -164,7 +164,7 @@ function T() {
       }), x.current = N
     }
   }, [m, N]);
-  let L = i.useMemo(() => Object.values(w).map(e => {
+  let L = i.useMemo(() => Object.values(R).map(e => {
       let t = (e => {
         let t = f.w[e];
         return null != t ? t() : String(e)
@@ -180,7 +180,7 @@ function T() {
         value: e.id,
         label: t
       }
-    }), [w]),
+    }), [R]),
     j = async () => {
       if (null == N || "" === N) return void _("Please select a payment source first.");
       if (null == T || "" === T || T === g.dJq) return void _("Please select a SKU ID.");
@@ -267,7 +267,7 @@ function T() {
           children: [(0, r.jsx)(l.l6P, {
             selectionMode: "single",
             value: N,
-            onSelectionChange: R,
+            onSelectionChange: w,
             options: L,
             placeholder: "Select a payment source...",
             disabled: !P,

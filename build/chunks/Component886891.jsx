@@ -46,14 +46,14 @@ function E(e) {
     T(), I({
       action: y ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
     })
-  }, [T, y, I]), R = i.useCallback(() => {
+  }, [T, y, I]), w = i.useCallback(() => {
     C(), I({
       action: y ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [C, y, I]), w = null != E, P = (0, c.h)(E);
-  return w && null == P ? null : (0, r.jsxs)("div", {
+  }, [C, y, I]), R = null != E, P = (0, c.h)(E);
+  return R && null == P ? null : (0, r.jsxs)("div", {
     className: s()(g.kL, b),
-    children: [w ? (0, r.jsx)(o.Text, {
+    children: [R ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       children: m.intl.format(y ? m.t.syHjLL : m.t.V15uUI, {
         username: A,
@@ -79,7 +79,7 @@ function E(e) {
       }), (0, r.jsx)(o.Button, {
         variant: "secondary",
         size: "sm",
-        onClick: R,
+        onClick: w,
         text: m.intl.string(m.t.xuio0C)
       })]
     })]

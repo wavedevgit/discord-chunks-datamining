@@ -159,7 +159,7 @@ function N(e) {
   }), b.notifCenterLocalItems = t
 }
 
-function R(e) {
+function w(e) {
   let {
     items: t,
     hasMore: n,
@@ -168,7 +168,7 @@ function R(e) {
   b.loading && (b.loading = false, b.initialized = true, b.errored = false, b.isDataStale = false, null != r && b.notifCenterIds.has(r) || (b.paginationHasMore = t.length > 0 && n, b.paginationCursor = t.length > 0 ? r : true), b.notifCenterItems = [...b.notifCenterItems, ...t.map(T).filter(e => !b.notifCenterIds.has(e.id))], b.notifCenterItems.sort((e, t) => f.default.compare(t.id, e.id)), t.forEach(e => b.notifCenterIds.add(e.id)))
 }
 
-function w(e) {
+function R(e) {
   let t = "NOTIFICATION_CENTER_ITEM_CREATE" === e.type ? T(e.item) : e.item;
   if (!b.initialized || !O(t) || b.notifCenterIds.has(t.id)) returnfalse;
   b.notifCenterIds.add(t.id), b.notifCenterItems = [t, ...b.notifCenterItems], b.notifCenterItems.sort((e, t) => f.default.compare(t.id, e.id))
@@ -379,12 +379,12 @@ let q = new z(Chunk73153.h, {
   NOTIFICATION_CENTER_ITEMS_ACK: x,
   NOTIFICATION_CENTER_ITEMS_ACK_FAILURE: L,
   GUILD_SCHEDULED_EVENT_UPDATE: Y,
-  NOTIFICATION_CENTER_ITEM_CREATE: w,
+  NOTIFICATION_CENTER_ITEM_CREATE: R,
   NOTIFICATION_CENTER_ITEM_DELETE: P,
-  NOTIFICATION_CENTER_ITEM_DELETE_FAILURE: w,
+  NOTIFICATION_CENTER_ITEM_DELETE_FAILURE: R,
   LOAD_NOTIFICATION_CENTER_ITEMS: I,
   LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: S,
-  LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: R,
+  LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: w,
   RESET_NOTIFICATION_CENTER: () => A(),
   NOTIFICATION_CENTER_SET_ACTIVE: j,
   NOTIFICATION_CENTER_TAB_FOCUSED: M,

@@ -39,7 +39,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,7 +64,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -95,7 +95,7 @@ function L(e) {
     message: i,
     compact: a = false,
     className: N,
-    onContextMenu: w,
+    onContextMenu: R,
     onClick: x,
     hideSimpleEmbedContent: L = true,
     channel: j,
@@ -114,7 +114,7 @@ function L(e) {
     allowHeading: H || Y,
     allowLinks: true,
     previewLinkTarget: true
-  }), q = i.type === T.lAJ.REPLY ? i.messageReference : true, X = (0, l.bG)([d.A], () => d.A.getMessageByReference(q)), Z = (0, o.rm)(i.id), Q = (0, h.Ay)(i), $ = (0, l.bG)([f.A], () => i.hasFlag(T.pr7.HAS_THREAD) && f.A.getChannel(p.default.castMessageIdAsChannelId(i.id))), J = (0, c.$7)({
+  }), q = i.type === T.lAJ.REPLY ? i.messageReference : true, Z = (0, l.bG)([d.A], () => d.A.getMessageByReference(q)), X = (0, o.rm)(i.id), Q = (0, h.Ay)(i), J = (0, l.bG)([f.A], () => i.hasFlag(T.pr7.HAS_THREAD) && f.A.getChannel(p.default.castMessageIdAsChannelId(i.id))), $ = (0, c.$7)({
     guildId: j.guild_id,
     roleId: Q.iconRoleId
   }), ee = (0, y.A)({
@@ -122,33 +122,33 @@ function L(e) {
     channel: j,
     enabled: V
   }), et = (0, g.fF)(i), en = (0, g.ZD)(i);
-  return (0, r.jsx)(m.A, R({
+  return (0, r.jsx)(m.A, w({
     compact: a,
     className: s()(N, {
       [C.M1]: (0, _.ec)(i),
       [C.XN]: B
     }),
     disableInteraction: B,
-    childrenRepliedMessage: (0, S.A)(i, j, q, X, a),
+    childrenRepliedMessage: (0, S.A)(i, j, q, Z, a),
     childrenExecutedCommand: (0, I.A)(i, j, a),
-    childrenHeader: (0, v.A)(P(R({}, e), {
+    childrenHeader: (0, v.A)(P(w({}, e), {
       guildId: j.guild_id,
       author: Q,
-      roleIcon: J
+      roleIcon: $
     })),
     childrenAccessories: e.hideAccessories ? true : (0, b.J)(e, K, z),
     childrenMessageContent: (0, O.A)(e, W),
-    childrenSystemMessage: (0, A.A)(P(R({}, e), {
+    childrenSystemMessage: (0, A.A)(P(w({}, e), {
       disableInteraction: B
     })),
-    onContextMenu: w,
+    onContextMenu: R,
     onClick: x,
-    hasThread: G && null != $ && i.hasFlag(T.pr7.HAS_THREAD),
+    hasThread: G && null != J && i.hasFlag(T.pr7.HAS_THREAD),
     hasReply: i.type === T.lAJ.REPLY,
     "aria-labelledby": et,
     "aria-describedby": en,
     messageRef: ee,
     author: Q
-  }, Z, F))
+  }, X, F))
 }
 let j = Chunk64700.memo(L)

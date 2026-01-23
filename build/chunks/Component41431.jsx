@@ -85,8 +85,8 @@ let N = Chunk64700.memo(function(e) {
       waveform: y,
       durationSecs: b,
       onVolumeShow: N,
-      onVolumeHide: R,
-      onPlay: w,
+      onVolumeHide: w,
+      onPlay: R,
       onPause: P,
       onError: D,
       playbackCacheKey: x
@@ -100,15 +100,15 @@ let N = Chunk64700.memo(function(e) {
     [H, Y] = i.useState(false),
     [W, K] = i.useState(false),
     [z, q] = i.useState(false),
-    [X, Z] = i.useState(false),
-    [Q, $] = i.useState("none"),
-    [J, ee] = i.useState(() => "function" == typeof a ? a() : a),
+    [Z, X] = i.useState(false),
+    [Q, J] = i.useState("none"),
+    [$, ee] = i.useState(() => "function" == typeof a ? a() : a),
     et = i.useRef(true),
     en = i.useCallback(() => {
-      K(e => !e), Z(true)
+      K(e => !e), X(true)
     }, []),
     er = i.useCallback(() => {
-      $("metadata")
+      J("metadata")
     }, []),
     ei = i.useCallback(e => {
       let t = e.currentTarget.duration;
@@ -119,7 +119,7 @@ let N = Chunk64700.memo(function(e) {
     }, [x, b]),
     es = i.useCallback(() => {
       K(false), null == et.current && (et.current = setTimeout(() => {
-        U(false), Z(false), et.current = true
+        U(false), X(false), et.current = true
       }, 500))
     }, []),
     eo = i.useCallback(() => {
@@ -157,10 +157,10 @@ let N = Chunk64700.memo(function(e) {
   }, [W, k]);
   let eh = i.useRef(null),
     em = {
-      played: X,
+      played: Z,
       currentTime: G,
       onPause: P,
-      onPlay: w
+      onPlay: R
     },
     eg = i.useRef(em);
   i.useEffect(() => {
@@ -210,7 +210,7 @@ let N = Chunk64700.memo(function(e) {
       onLoadedMetadata: ei,
       onError: ec,
       muted: H,
-      volume: J,
+      volume: $,
       playbackRate: M
     })
   }) : (0, r.jsx)(f.A, {
@@ -222,7 +222,7 @@ let N = Chunk64700.memo(function(e) {
     onLoadedMetadata: ei,
     onError: ec,
     muted: H,
-    volume: J,
+    volume: $,
     playbackRate: M,
     playing: W && !z,
     children: (0, r.jsx)("source", {
@@ -280,14 +280,14 @@ let N = Chunk64700.memo(function(e) {
       iconColor: "currentColor",
       sliderWrapperClassName: v.MQ,
       muted: H,
-      value: (0, g.M)(J, 1),
+      value: (0, g.M)($, 1),
       minValue: 0,
       maxValue: 1,
       currentWindow: window,
       onValueChange: eu,
       onToggleMute: ed,
       onVolumeShow: N,
-      onVolumeHide: R
+      onVolumeHide: w
     }), t]
   })
 })

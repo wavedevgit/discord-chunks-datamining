@@ -41,7 +41,7 @@ function f(e, t) {
     currentFullWord: C
   } = e, {
     query: N
-  } = t, R = {
+  } = t, w = {
     mentions: {
       channel: u.xS.DENY,
       global: u.VN.DENY,
@@ -85,9 +85,9 @@ function f(e, t) {
   };
   if (null != i) {
     let e = (0, s.XM)(i);
-    e.canMentionChannels && (R.mentions.channel = u.xS.ALLOW_SELECTABLE), e.canMentionEveryone && (R.mentions.global = e.canMentionHere ? u.VN.ALLOW_EVERYONE_OR_HERE : u.VN.ALLOW_EVERYONE), e.canMentionRoles && (R.mentions.role = e.canMentionNonMentionableRoles ? u.eP.ALLOW_ALL : u.eP.ALLOW_MENTIONABLE), e.canMentionUsers && (R.mentions.user = e.canMentionAnyGuildUser ? u.Vf.ALLOW_GUILD : u.Vf.ALLOW_CHANNEL), e.canMentionOtherGlobals && (R.mentions.otherGlobals = true), R.hideMentionDescription = true
-  } else d && (R.mentions.channel = u.xS.ALLOW_SELECTABLE), c && (R.mentions.role = u.eP.ALLOW_MENTIONABLE), l && (R.mentions.user = u.Vf.ALLOW_CHANNEL), f && (R.mentions.global = u.VN.ALLOW_EVERYONE_OR_HERE), p && (R.mentions.otherGlobals = true);
-  return (null == (r = b.commands) ? true : r.enabled) && (_ ? R.commands = h ? u.Ze.NEW_TEXT_ONLY : u.Ze.NEW : R.commands = u.Ze.OLD_BUILT_INS), null != i && null != i.channelTypes && (R.allowedChannelTypes = i.channelTypes), R
+    e.canMentionChannels && (w.mentions.channel = u.xS.ALLOW_SELECTABLE), e.canMentionEveryone && (w.mentions.global = e.canMentionHere ? u.VN.ALLOW_EVERYONE_OR_HERE : u.VN.ALLOW_EVERYONE), e.canMentionRoles && (w.mentions.role = e.canMentionNonMentionableRoles ? u.eP.ALLOW_ALL : u.eP.ALLOW_MENTIONABLE), e.canMentionUsers && (w.mentions.user = e.canMentionAnyGuildUser ? u.Vf.ALLOW_GUILD : u.Vf.ALLOW_CHANNEL), e.canMentionOtherGlobals && (w.mentions.otherGlobals = true), w.hideMentionDescription = true
+  } else d && (w.mentions.channel = u.xS.ALLOW_SELECTABLE), c && (w.mentions.role = u.eP.ALLOW_MENTIONABLE), l && (w.mentions.user = u.Vf.ALLOW_CHANNEL), f && (w.mentions.global = u.VN.ALLOW_EVERYONE_OR_HERE), p && (w.mentions.otherGlobals = true);
+  return (null == (r = b.commands) ? true : r.enabled) && (_ ? w.commands = h ? u.Ze.NEW_TEXT_ONLY : u.Ze.NEW : w.commands = u.Ze.OLD_BUILT_INS), null != i && null != i.channelTypes && (w.allowedChannelTypes = i.channelTypes), w
 }
 
 function p(e) {

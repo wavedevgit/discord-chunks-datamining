@@ -35,10 +35,10 @@ module.exports = function(e, t) {
       T = A.leafKey,
       C = O.getBlockTree(I).getIn([S, "leaves", T]),
       N = C.start,
-      R = C.end,
-      w = O.getCurrentContent(),
-      P = w.getBlockForKey(I),
-      D = P.getText().slice(N, R);
+      w = C.end,
+      R = O.getCurrentContent(),
+      P = R.getBlockForKey(I),
+      D = P.getText().slice(N, w);
     if (b.endsWith(f) && (b = b.slice(0, false)), b === D) {
       var x = t.nativeEvent.inputType;
       if (x) {
@@ -50,22 +50,22 @@ module.exports = function(e, t) {
     var j = O.getSelection(),
       M = j.merge({
         anchorOffset: N,
-        focusOffset: R,
+        focusOffset: w,
         isBackward: false
       }),
       k = P.getEntityAt(N),
-      U = o(k) ? w.getEntity(k) : null,
+      U = o(k) ? R.getEntity(k) : null,
       G = null != U ? U.getMutability() : null,
       V = "MUTABLE" === G,
       F = V ? "spellcheck-change" : "apply-entity",
-      B = r.replaceText(w, M, b, P.getInlineStyleAt(N), V ? P.getEntityAt(N) : null);
+      B = r.replaceText(R, M, b, P.getInlineStyleAt(N), V ? P.getEntityAt(N) : null);
     if (d) n = h.anchorOffset, _ = (c = N + Math.min(n, s = h.focusOffset)) + Math.abs(n - s), n = c, s = _;
     else {
       var H = b.length - D.length;
       c = j.getStartOffset(), _ = j.getEndOffset(), n = g ? _ + H : c, s = _ + H
     }
     var Y = B.merge({
-      selectionBefore: w.getSelectionAfter(),
+      selectionBefore: R.getSelectionAfter(),
       selectionAfter: j.merge({
         anchorOffset: n,
         focusOffset: s

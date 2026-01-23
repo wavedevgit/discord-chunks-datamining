@@ -9,8 +9,8 @@ require.d(exports, {
   Li: () => f,
   Ni: () => m,
   RN: () => d,
-  ds: () => w,
-  eg: () => R,
+  ds: () => R,
+  eg: () => w,
   pd: () => v
 }), require("./896048.js"), require("./321073.js"), require("./864466.js"), require("./443073.js"), require("./638769.js");
 var Chunk64700 = require("./64700.js"),
@@ -139,7 +139,7 @@ let m = e => {
           t.ignoredFilenames.push(...e.map(e => b(n.name, e.name)))
         }
       }
-  }, R = async e => {
+  }, w = async e => {
     let t = {
       collectionFiles: [],
       avatarDecorationFiles: [],
@@ -156,7 +156,7 @@ let m = e => {
       S("", await new Promise(t => e.file(t)), null, t)
     }
     return t.collectionFiles.sort((e, t) => e.name.localeCompare(t.name)), t.avatarDecorationFiles.sort((e, t) => e.name.localeCompare(t.name)), t.ignoredFilenames.sort((e, t) => e.localeCompare(t)), t
-  }, w = () => {
+  }, R = () => {
     let [e, t] = r.useState(() => ({
       collectionFiles: [],
       avatarDecorationFiles: [],
@@ -166,7 +166,7 @@ let m = e => {
       upsertCollectionAsset: n,
       upsertAvatarDecorationAsset: i
     } = (0, s.JE)(), a = r.useCallback(async e => {
-      let r = await R(e);
+      let r = await w(e);
       t(r), (0 !== r.collectionFiles.length || 0 !== r.avatarDecorationFiles.length) && (r.collectionFiles.forEach(e => {
         E(e, e => {
           let t = v(e);

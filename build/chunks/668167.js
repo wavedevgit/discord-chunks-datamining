@@ -44,8 +44,8 @@ function E(e, t, n) {
       isInvalid: v,
       errorMessage: e.errorMessage || A
     }),
-    R = (0, a.P)(t, n),
-    w = T["aria-labelledby"] || T.id,
+    w = (0, a.P)(t, n),
+    R = T["aria-labelledby"] || T.id,
     {
       locale: P
     } = (0, h.Y)(),
@@ -80,10 +80,10 @@ function E(e, t, n) {
       }
     });
   return {
-    groupProps: (0, u.v)(M, R, T, L, G, {
+    groupProps: (0, u.v)(M, w, T, L, G, {
       role: "group",
       "aria-disabled": e.isDisabled || null,
-      "aria-labelledby": w,
+      "aria-labelledby": R,
       "aria-describedby": j,
       onKeyDown(n) {
         !t.isOpen && e.onKeyDown && e.onKeyDown(n)
@@ -127,7 +127,7 @@ function E(e, t, n) {
       id: E,
       "aria-haspopup": "dialog",
       "aria-label": O.format("calendar"),
-      "aria-labelledby": `${E} ${w}`,
+      "aria-labelledby": `${E} ${R}`,
       "aria-describedby": j,
       "aria-expanded": t.isOpen,
       isDisabled: e.isDisabled || e.isReadOnly,
@@ -135,7 +135,7 @@ function E(e, t, n) {
     },
     dialogProps: {
       id: y,
-      "aria-labelledby": `${E} ${w}`
+      "aria-labelledby": `${E} ${R}`
     },
     calendarProps: {
       autoFocus: true,

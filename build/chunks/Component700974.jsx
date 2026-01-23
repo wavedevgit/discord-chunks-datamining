@@ -56,19 +56,19 @@ let D = "MMM DD, YYYY",
       z = null != K,
       q = !!(null == B ? true : B.hasActiveTrial),
       {
-        loading: X,
-        getTrialPurchaseEligibility: Z
+        loading: Z,
+        getTrialPurchaseEligibility: X
       } = (0, T.E)(),
       Q = (0, A.dL)(null == e ? true : e.id),
       {
-        analyticsLocations: $
+        analyticsLocations: J
       } = (0, p.Ay)(),
-      J = null == B ? true : B.isPurchasedViaAppleGeneric,
-      ee = !x && null != F && Y && !M && !z && !q && !J;
+      $ = null == B ? true : B.isPurchasedViaAppleGeneric,
+      ee = !x && null != F && Y && !M && !z && !q && !$;
     M || x && !L ? o = P.intl.string(P.t.pQK5ho) : K === U ? o = P.intl.formatToPlainString(P.t.UlBRTl, {
       changeDate: null != B ? l()(B.currentPeriodEnd).format(D) : ""
-    }) : z ? o = P.intl.string(P.t.ePFYOS) : q ? o = P.intl.string(P.t["0lPoT2"]) : J && (o = P.intl.string(P.t.cEMaCt));
-    let et = (0, f.A)(R.Yl);
+    }) : z ? o = P.intl.string(P.t.ePFYOS) : q ? o = P.intl.string(P.t["0lPoT2"]) : $ && (o = P.intl.string(P.t.cEMaCt));
+    let et = (0, f.A)(w.Yl);
     i.useEffect(() => {
       G && null != V && u.h.wait(() => {
         (0, d.ur)(V)
@@ -77,26 +77,26 @@ let D = "MMM DD, YYYY",
     let en = i.useCallback(async () => {
         let n, i;
         if (s()(null != e, "No subscription listing"), s()(null != k, "No subscription plan"), s()(G, "Cannot purchase this unpublished plan"), (null == Q ? true : Q.active_trial) != null) {
-          let r = await Z(t, e.id, Q.active_trial.id);
+          let r = await X(t, e.id, Q.active_trial.id);
           if ((null == r ? true : r.is_eligible) === true) {
             var o;
             n = null == Q || null == (o = Q.active_trial) ? true : o.id
           } else i = P.intl.string(P.t.vuvsK5)
         }(0, y.A)({
           activeSubscription: B,
-          analyticsSubscriptionType: w.rzx.GUILD,
+          analyticsSubscriptionType: R.rzx.GUILD,
           trialId: n,
           trialFooterMessageOverride: (null == Q ? true : Q.active_trial) != null ? P.intl.format(P.t.zyGyNk, {
             buttonText: P.intl.string(P.t.BEeXib),
             interval: (0, v.Gg)(k),
             days: 1,
-            contactLink: w.X7G.CONTACT,
-            cancelSubscriptionArticle: O.A.getArticleURL(w.MVz.ROLE_SUBSCRIPTION_CANCEL),
-            helpdeskArticle: O.A.getArticleURL(w.MVz.ROLE_SUBSCRIPTION_TRIAL),
-            paidServiceTermsArticle: O.A.getArticleURL(w.MVz.PAID_TERMS),
+            contactLink: R.X7G.CONTACT,
+            cancelSubscriptionArticle: O.A.getArticleURL(R.MVz.ROLE_SUBSCRIPTION_CANCEL),
+            helpdeskArticle: O.A.getArticleURL(R.MVz.ROLE_SUBSCRIPTION_TRIAL),
+            paidServiceTermsArticle: O.A.getArticleURL(R.MVz.PAID_TERMS),
             tierName: k.name
           }) : true,
-          analyticsLocations: $,
+          analyticsLocations: J,
           analyticsLocation: a,
           renderHeader: (n, i, a) => (0, r.jsx)(N.Y, {
             onClose: i,
@@ -118,7 +118,7 @@ let D = "MMM DD, YYYY",
           }),
           reviewWarningMessage: i
         })
-      }, [G, e, k, B, W, t, $, a, Z, Q, et]),
+      }, [G, e, k, B, W, t, J, a, X, Q, et]),
       er = i.useCallback(() => {
         (0, _.Ze)(t)
       }, [t]);
@@ -126,6 +126,6 @@ let D = "MMM DD, YYYY",
       openModal: L ? er : en,
       canOpenModal: ee,
       cannotOpenReason: o,
-      isCheckingTrialEligibility: X
+      isCheckingTrialEligibility: Z
     }
   }

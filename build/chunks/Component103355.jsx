@@ -160,7 +160,7 @@ function I(e) {
     recurrenceRule: T,
     guildEventId: C,
     recurrenceId: N
-  } = e, R = (0, d.rdh)(c.A.colors.TEXT_BRAND).hex(), w = (0, d.rdh)(c.A.colors.TEXT_FEEDBACK_POSITIVE).hex(), P = (0, d.rdh)(c.A.colors.TEXT_FEEDBACK_CRITICAL).hex();
+  } = e, w = (0, d.rdh)(c.A.colors.TEXT_BRAND).hex(), R = (0, d.rdh)(c.A.colors.TEXT_FEEDBACK_POSITIVE).hex(), P = (0, d.rdh)(c.A.colors.TEXT_FEEDBACK_CRITICAL).hex();
   null == _ && (_ = a === h.Ps.EXTERNAL ? m.intl.string(m.t.IyZxjH) : m.intl.string(m.t["X2K3/4"]));
   let D = (0, f.A)(N, C),
     [{
@@ -191,12 +191,12 @@ function I(e) {
       tooltipText: W
     } = i.useMemo(() => O({
       timeStatus: V,
-      textBrand: R,
-      textPositive: w,
+      textBrand: w,
+      textPositive: R,
       textDanger: P,
       endDateTimeString: L,
       startDateTimeString: x
-    }), [V, R, w, P, L, x]),
+    }), [V, w, R, P, L, x]),
     K = null;
   if (null != T) {
     let e = (0, p.X7)(T);

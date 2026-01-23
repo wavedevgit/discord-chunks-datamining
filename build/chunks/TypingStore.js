@@ -56,7 +56,7 @@ function O(e) {
     a = .8 * h;
   if (null != r && (null != r.timeout || r.prevSend + a > i)) returnfalse;
   let c = setTimeout(() => {
-    null == r || r.channelId !== t || n !== u.default.getId() || null == r.timeout || (r.timeout = null, R(t) > g || s.Bo.post({
+    null == r || r.channelId !== t || n !== u.default.getId() || null == r.timeout || (r.timeout = null, w(t) > g || s.Bo.post({
       url: f.Rsh.TYPING(t),
       oldFormErrors: true,
       rejectWithError: true
@@ -150,11 +150,11 @@ function N() {
   E = {}
 }
 
-function R(e) {
+function w(e) {
   let t = b(e);
   return t === y ? 0 : Object.keys(t).length
 }
-class w extends(i = Chunk311907.Ay.Store) {
+class R extends(i = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(u.default)
   }
@@ -165,8 +165,8 @@ class w extends(i = Chunk311907.Ay.Store) {
     return null != b(e)[t]
   }
 }
-p(w, "displayName", "TypingStore");
-let P = new w(Chunk73153.h, {
+p(R, "displayName", "TypingStore");
+let P = new R(Chunk73153.h, {
   TYPING_START: S,
   TYPING_STOP: T,
   TYPING_START_LOCAL: O,

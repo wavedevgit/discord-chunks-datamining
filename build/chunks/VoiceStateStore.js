@@ -44,7 +44,7 @@ function S(e) {
   var t;
   let n = null != (t = m[d.ME]) ? t : {};
   o().each(n, (t, n) => {
-    t.channelId === e && R(d.ME, n, () => null)
+    t.channelId === e && w(d.ME, n, () => null)
   })
 }
 
@@ -63,14 +63,14 @@ function N(e, t) {
   n.has(t) && ((n = new Set(n)).delete(t), 0 === n.size ? E.delete(e) : E.set(e, n))
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   let r = I(m, null != e ? e : d.ME),
     i = r[t],
     a = n(i);
   return i === a ? [false, a, i] : (null != i && (delete r[t], null != i.channelId && (delete I(y, i.channelId)[t], delete I(b, i.channelId)[t]), null != i.sessionId && delete I(O, t)[i.sessionId], N(null != e ? e : d.ME, t)), null != a && (r[t] = a, null != a.channelId && (I(y, a.channelId)[t] = a, a.selfVideo && (I(b, a.channelId)[t] = a, C(null != e ? e : d.ME, t))), null != a.sessionId && (I(O, t)[a.sessionId] = a)), [true, a, i])
 }
 
-function w(e) {
+function R(e) {
   let {
     voiceStates: t
   } = e;
@@ -86,7 +86,7 @@ function P(e) {
     let [r] = x(e.guildId, n);
     t = t || r
   }
-  for (let n of e.removedVoiceStateUsers) R(e.guildId, n, () => null), t = true;
+  for (let n of e.removedVoiceStateUsers) w(e.guildId, n, () => null), t = true;
   return t && h++, t
 }
 
@@ -100,7 +100,7 @@ function D(e) {
 }
 
 function x(e, t) {
-  return R(e, t.userId, e => {
+  return w(e, t.userId, e => {
     if (null == t.channelId) return null;
     {
       let n = {
@@ -126,7 +126,7 @@ function L(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, [i] = R(t, r, e => null == e ? true : e.set("channelId", n));
+  } = e, [i] = w(t, r, e => null == e ? true : e.set("channelId", n));
   return i
 }
 
@@ -149,7 +149,7 @@ function k(e) {
     sessionId: a
   } = e;
   for (let [e, n] of(m = {}, y = {}, O = {}, b = {}, Object.entries(t)))
-    for (let [t, r] of Object.entries(n)) R(e, t, () => new u.A(r));
+    for (let [t, r] of Object.entries(n)) w(e, t, () => new u.A(r));
   r = n.id, i = a
 }
 
@@ -158,7 +158,7 @@ function U(e) {
     guild: t
   } = e;
   o().forEach(m[t.id], e => {
-    R(t.id, e.userId, () => null)
+    w(t.id, e.userId, () => null)
   }), delete m[t.id]
 }
 
@@ -253,7 +253,7 @@ let B = new F(Chunk73153.h, {
   CONNECTION_OPEN_SUPPLEMENTAL: M,
   OVERLAY_INITIALIZE: k,
   VOICE_CHANNEL_SELECT: L,
-  VOICE_STATE_UPDATES: w,
+  VOICE_STATE_UPDATES: R,
   GUILD_DELETE: U,
   GUILD_CREATE: U,
   CHANNEL_DELETE: G,

@@ -169,7 +169,7 @@ class ef extends Chunk64700.PureComponent {
         cameraEncodeError: s
       } = this.props;
     if (null != a && null == s) {
-      if ((null == t ? true : t.type) === ea.lp.STREAM) return (0, r.jsx)(J.A, {
+      if ((null == t ? true : t.type) === ea.lp.STREAM) return (0, r.jsx)($.A, {
         stream: t.stream,
         width: n,
         avError: a
@@ -182,12 +182,12 @@ class ef extends Chunk64700.PureComponent {
     }
     switch (true) {
       case (null == e ? true : e.state) === ei.XYD.ENDED:
-        return (0, r.jsx)($.A, {
+        return (0, r.jsx)(J.A, {
           stream: e,
           width: n
         });
       case (null == e ? true : e.state) === ei.XYD.FAILED:
-        return (0, r.jsx)(J.A, {
+        return (0, r.jsx)($.A, {
           stream: e,
           width: n
         });
@@ -210,7 +210,7 @@ class ef extends Chunk64700.PureComponent {
     } = this.props;
     if ((null == t ? true : t.type) === ea.lp.STREAM || (null == t ? true : t.type) === ea.lp.USER) {
       var n;
-      let i = null != (n = X.Ay.getNickname(e.getGuildId(), e.id, t.user)) ? n : Z.Ay.getName(t.user);
+      let i = null != (n = Z.Ay.getNickname(e.getGuildId(), e.id, t.user)) ? n : X.Ay.getName(t.user);
       return (0, r.jsx)(d.Text, {
         variant: "text-md/normal",
         color: "always-white",
@@ -234,7 +234,7 @@ class ef extends Chunk64700.PureComponent {
       streamId: t,
       component: B.A.getVideoComponent(),
       mirror: o,
-      children: (0, r.jsx)(w.A, {
+      children: (0, r.jsx)(R.A, {
         size: d._3J.SIZE_80,
         src: null == n ? true : n.user.getAvatarURL(e.guild_id, 80),
         "aria-label": null == n ? true : n.user.username,
@@ -287,7 +287,7 @@ class ef extends Chunk64700.PureComponent {
       let {
         participantOnScreen: e
       } = this.props;
-      s()((0, ea.Ay)(e), "cannot stop stream for non streamer"), (0, v.X)(g.A.VIDEO_PIP, v.O.STREAM, false), (0, R.A)(e.stream)
+      s()((0, ea.Ay)(e), "cannot stop stream for non streamer"), (0, v.X)(g.A.VIDEO_PIP, v.O.STREAM, false), (0, w.A)(e.stream)
     }), el(this, "handleHidePIP", () => {
       let {
         channel: e

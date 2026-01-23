@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   IU: () => P,
-  SP: () => w,
+  SP: () => R,
   ec: () => U,
   ei: () => k,
-  rh: () => R
+  rh: () => w
 }), require("./938796.js"), require("./896048.js");
 var Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
@@ -92,7 +92,7 @@ function N(e) {
   }))
 }
 
-function R(e) {
+function w(e) {
   var t, n, r, i, a, s, l, d;
   let _, h, {
       reactions: y,
@@ -100,8 +100,8 @@ function R(e) {
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     A = N(e),
     S = null != (t = null == (s = e.mentions) ? true : s.map(e => e.id)) ? t : [],
-    R = null != (n = e.mention_roles) ? n : [],
-    w = null != (r = e.mention_channels) ? r : [],
+    w = null != (n = e.mention_roles) ? n : [],
+    R = null != (r = e.mention_channels) ? r : [],
     P = null != (i = e.mention_games) ? i : [],
     D = e.message_reference,
     L = T(e),
@@ -125,8 +125,8 @@ function R(e) {
     ignored: p.A.isIgnoredForMessage(e) || null != F && p.A.isIgnored(F),
     mentionEveryone: e.mention_everyone,
     mentions: S,
-    mentionRoles: R,
-    mentionChannels: w,
+    mentionRoles: w,
+    mentionChannels: R,
     mentionGames: P,
     messageReference: D,
     mentioned: (0, E.Uj)({
@@ -134,7 +134,7 @@ function R(e) {
       channelId: e.channel_id,
       mentionEveryone: null != (a = e.mention_everyone) && a,
       mentionUsers: S,
-      mentionRoles: R,
+      mentionRoles: w,
       mentionGames: P.map(e => e.id)
     }),
     giftCodes: (0, m.pF)(e) ? (0, m.e7)(null == e ? true : e.embeds[0].url) : (0, m.e7)(e.content),
@@ -156,7 +156,7 @@ function R(e) {
   }))
 }
 
-function w(e, t) {
+function R(e, t) {
   return null != t.edited_timestamp ? I(v({}, t), {
     reactions: e.reactions,
     interaction_data: e.interaction_data
@@ -164,7 +164,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  if (null != t.edited_timestamp) return R(t, {
+  if (null != t.edited_timestamp) return w(t, {
     reactions: e.reactions,
     interactionData: e.interactionData
   });

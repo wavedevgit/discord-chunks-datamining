@@ -9,7 +9,7 @@ require.d(exports, {
   XZ: () => h,
   dO: () => P,
   g: () => M,
-  qh: () => R,
+  qh: () => w,
   rd: () => A,
   y: () => D,
   zy: () => j
@@ -186,7 +186,7 @@ function N(e, t) {
     }
   }, null)
 }
-var R = function(e) {
+var w = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
@@ -211,7 +211,7 @@ var R = function(e) {
   }, t
 }(Chunk64700.Component);
 
-function w(e) {
+function R(e) {
   return "/" === e.charAt(0) ? e : "/" + e
 }
 Chunk64700.Component;

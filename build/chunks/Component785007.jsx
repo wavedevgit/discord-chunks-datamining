@@ -295,10 +295,10 @@ function C(e) {
     orientation: A,
     isDisabled: g
   }), {
-    ref: R
-  } = N, w = y(N, ["ref"]), P = b.some(e => e.value === c);
-  return (0, r.jsx)("div", E(m({}, w), {
-    ref: R,
+    ref: w
+  } = N, R = y(N, ["ref"]), P = b.some(e => e.value === c);
+  return (0, r.jsx)("div", E(m({}, R), {
+    ref: w,
     className: s()(_.kL, l),
     id: null == C ? true : C.controlId,
     "aria-describedby": null == C ? true : C.describedById,

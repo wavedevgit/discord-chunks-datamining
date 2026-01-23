@@ -32,7 +32,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk183959 = require("./183959.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,7 +48,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -58,7 +58,7 @@ function D(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: w,
+    guildId: R,
     channelId: D,
     messageId: x,
     roleId: L,
@@ -74,35 +74,35 @@ function D(e) {
   } = (0, l.Ay)([...G, o.A.USER_PROFILE_POPOUT]), H = (0, d.aL)(), Y = (0, _.pb)({
     layout: "POPOUT",
     userId: t.id,
-    guildId: w,
+    guildId: R,
     channelId: D,
     messageId: x,
     roleId: L
-  }), W = (0, m.Ay)(t.id, w), K = (0, a.bG)([f.A], () => null != w ? f.A.getGuild(w) : null), z = i.useRef(null), {
+  }), W = (0, m.Ay)(t.id, R), K = (0, a.bG)([f.A], () => null != R ? f.A.getGuild(R) : null), z = i.useRef(null), {
     isHoveringOrFocusing: q
   } = (0, u.A)(z);
   i.useEffect(() => {
     null == k || k(null == z ? true : z.current)
   }, [z, k]);
-  let X = e => {
+  let Z = e => {
       null == M || M(), H.dispatch(T.jej.POPOUT_CLOSE), (0, g.openUserProfileModal)(P({
         sourceAnalyticsLocations: B,
         hideRestrictedProfile: true
       }, Y, e))
     },
-    Z = () => U ? null : (0, r.jsx)(s.Drp, {
+    X = () => U ? null : (0, r.jsx)(s.Drp, {
       id: "view-profile",
       label: N.intl.string(N.t["+Xp3hq"]),
       action: () => {
-        X(), (0, h.Wn)(P({
+        Z(), (0, h.Wn)(P({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: B
         }, Y))
       }
     }),
     Q = V ? "div" : s.lGe,
-    $ = (0, c.GV)(),
-    J = p.Ay.useName(w, D, t);
+    J = (0, c.GV)(),
+    $ = p.Ay.useName(R, D, t);
   return (0, r.jsx)(l.f5, {
     value: B,
     children: (0, r.jsx)(_.of, {
@@ -113,13 +113,13 @@ function D(e) {
       isLoaded: null == W ? true : W.isLoaded,
       children: (0, r.jsxs)(Q, {
         ref: z,
-        "aria-labelledby": $,
+        "aria-labelledby": J,
         onClick: F,
         children: [(0, r.jsx)(s.AC4, {
           children: (0, r.jsx)(s.H, {
-            id: $,
+            id: J,
             children: N.intl.format(N.t.KRe1Fk, {
-              name: J
+              name: $
             })
           })
         }), (0, r.jsxs)(b.A, {
@@ -129,23 +129,23 @@ function D(e) {
           children: [(0, r.jsx)(v.A, {
             children: (0, r.jsx)(O.A, {
               user: t,
-              guildId: w,
-              viewProfileItem: Z()
+              guildId: R,
+              viewProfileItem: X()
             })
           }), (0, r.jsxs)("div", {
-            className: R.wx,
+            className: w.wx,
             children: [(0, r.jsx)(y.A, {
               user: t,
               displayProfile: W,
-              guildId: w,
+              guildId: R,
               themeType: C.d.POPOUT
             }), (0, r.jsx)(E.A, {
               user: t,
               displayProfile: W,
-              guildId: w,
+              guildId: R,
               channelId: D,
               themeType: C.d.POPOUT,
-              onOpenProfile: U ? true : X
+              onOpenProfile: U ? true : Z
             }), (0, r.jsx)(A.A, {
               user: t,
               themeType: C.d.POPOUT,
@@ -158,12 +158,12 @@ function D(e) {
             displayProfile: W,
             guild: K,
             isHoveringOrFocusing: q,
-            onOpenProfile: U ? true : X,
+            onOpenProfile: U ? true : Z,
             channelId: D,
             onClose: M
           }), (0, r.jsx)(S.A, {
             user: t,
-            guildId: w,
+            guildId: R,
             channelId: D,
             onClose: M,
             disableAutoFocus: V

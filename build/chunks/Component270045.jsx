@@ -164,13 +164,13 @@ function k(e) {
       }), (0, O.vy)(e.questContent) && ((0, p.g5)(e.quest.id, e.questContent), P && (0, T.z6)(e.quest))
     },
     q = e => (0, s.showToast)((0, s.createToast)(new l.A(e, e.status).message, s.ToastType.FAILURE)),
-    X = () => (0, p.vD)(e.quest.id, true).catch(q),
-    Z = () => (0, p.CV)(e.quest.id).catch(q),
+    Z = () => (0, p.vD)(e.quest.id, true).catch(q),
+    X = () => (0, p.CV)(e.quest.id).catch(q),
     Q = () => {
-      G(), Z()
+      G(), X()
     },
-    $ = (0, y.nv)(e.quest),
-    J = i.useMemo(() => (0, r.jsx)(s.sLh, {
+    J = (0, y.nv)(e.quest),
+    $ = i.useMemo(() => (0, r.jsx)(s.sLh, {
       id: "delivery",
       label: "Show in Quest Bar",
       checked: (null == n ? true : n.id) === e.quest.id,
@@ -185,8 +185,8 @@ function k(e) {
     variant: "fixed",
     onSelect: K,
     navId: "quests-entry",
-    "aria-label": w.intl.string(w.t.ogxXGq),
-    onClose: null != (t = null == e ? true : e.onClose) ? t : R.tE,
+    "aria-label": R.intl.string(R.t.ogxXGq),
+    onClose: null != (t = null == e ? true : e.onClose) ? t : w.tE,
     children: [(0, r.jsxs)(s.rXV, {
       children: [(0, r.jsx)(s.Drp, {
         id: "play-game",
@@ -195,43 +195,43 @@ function k(e) {
         icon: s.We5
       }), j && (0, r.jsx)(s.Drp, {
         id: "share-link",
-        label: w.intl.string(w.t.RDE0Sc),
+        label: R.intl.string(R.t.RDE0Sc),
         action: H,
         icon: s.TdU
-      }), $ && J]
+      }), J && $]
     }, "major-actions"), (0, r.jsxs)(s.rXV, {
       children: [!e.hideLearnMore && (0, r.jsx)(s.Drp, {
         id: "learn-more",
-        label: w.intl.string(w.t["Ws2Bl+"]),
+        label: R.intl.string(R.t["Ws2Bl+"]),
         action: W,
         icon: s.r2v
       }), et && (0, r.jsx)(s.Drp, {
         id: "display-disclosure",
-        label: w.intl.string(w.t.GcsZKJ),
+        label: R.intl.string(R.t.GcsZKJ),
         action: Y
       }), u && (0, r.jsx)(s.Drp, {
         id: "hide-entrypoint",
-        label: w.intl.string(w.t.NN79E9),
+        label: R.intl.string(R.t.NN79E9),
         action: z,
-        subtext: w.intl.string(w.t.RK9gxo)
+        subtext: R.intl.string(R.t.RK9gxo)
       })]
     }, "minor-actions"), e.quest.preview && (0, r.jsxs)(s.rXV, {
-      label: w.intl.string(w.t["Ape+mm"]),
+      label: R.intl.string(R.t["Ape+mm"]),
       children: [(0, r.jsx)(s.Drp, {
         id: "dismiss",
-        label: w.intl.string(w.t.JF6W66),
+        label: R.intl.string(R.t.JF6W66),
         action: U
       }), (0, r.jsx)(s.Drp, {
         id: "enrollment",
-        label: w.intl.string(w.t.taqkwK),
+        label: R.intl.string(R.t.taqkwK),
         action: Q
       }), (0, r.jsx)(s.Drp, {
         id: "progress",
-        label: w.intl.string(w.t.cKSLr4),
+        label: R.intl.string(R.t.cKSLr4),
         action: F
       }), (0, r.jsx)(s.Drp, {
         id: "complete",
-        label: w.intl.string(w.t.jQEfRT),
+        label: R.intl.string(R.t.jQEfRT),
         action: M
       }), (0, A.g5)(e.quest) && (0, r.jsxs)(s.Drp, {
         id: "console",
@@ -243,15 +243,15 @@ function k(e) {
         }), (0, r.jsx)(s.Drp, {
           id: "start",
           label: "Start heartbeat (cheatmode)",
-          action: X
+          action: Z
         }), (0, r.jsx)(s.Drp, {
           id: "stop",
           label: "Stop heartbeat",
-          action: Z
+          action: X
         })]
       }), (0, r.jsx)(s.Drp, {
         id: "copy-quest-id",
-        label: w.intl.string(w.t.oisrFi),
+        label: R.intl.string(R.t.oisrFi),
         action: () => {
           (0, d.C)(e.quest.id)
         }
@@ -259,7 +259,7 @@ function k(e) {
         location: C.rE.QUEST_PREVIEW_TOOL_2
       }) && (0, r.jsx)(s.Drp, {
         id: "preview",
-        label: w.intl.string(w.t.tx5Ax5),
+        label: R.intl.string(R.t.tx5Ax5),
         action: ee
       })]
     }, "preview-controls")]

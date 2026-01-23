@@ -2,7 +2,7 @@
 /** chunk id: 742077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => J
+  A: () => $
 }), require("./896048.js"), require("./638769.js"), require("./264879.js");
 var r, Chunk91871 = require("./91871.js"),
   a = require.n(Chunk91871),
@@ -92,7 +92,7 @@ function q(e) {
   k = t
 }
 
-function X(e, t, n, r, i) {
+function Z(e, t, n, r, i) {
   if (!i && t.has(e.id)) return null;
   let a = f.A.getApplication(e.id);
   if (null == a) return null;
@@ -106,7 +106,7 @@ function X(e, t, n, r, i) {
     isNew: V(e, s),
     isLaunching: _.A.launchingGames.has(e.id),
     isRunning: r.has(e.id),
-    isLaunchable: (0, w.A)({
+    isLaunchable: (0, R.A)({
       LibraryApplicationStore: E.A,
       LaunchableGameStore: _.A,
       DispatchApplicationStore: v.A,
@@ -120,7 +120,7 @@ function X(e, t, n, r, i) {
   } : null
 }
 
-function Z(e, t, n, r) {
+function X(e, t, n, r) {
   let i = null != e ? f.A.getApplication(e) : null;
   if (null == i || null == e || t.has(e)) return null;
   let a = z(i, n);
@@ -132,7 +132,7 @@ function Z(e, t, n, r) {
     isNew: false,
     isLaunching: _.A.launchingGames.has(e),
     isRunning: r.has(e),
-    isLaunchable: (0, w.A)({
+    isLaunchable: (0, R.A)({
       LibraryApplicationStore: E.A,
       LaunchableGameStore: _.A,
       DispatchApplicationStore: v.A,
@@ -155,11 +155,11 @@ function Q() {
       let n = g.A.getGameByGameData(e);
       return null != n ? (t[n.id] = e.lastFocused * I.A.Millis.SECOND, n.id) : null
     }),
-    i = Object.values(E.A.getAllLibraryApplications()).map(r => X(r, n, t, e, true)).filter(T.Vq),
-    a = [...r.map(r => Z(r, n, t, e)).filter(T.Vq), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
-  return U = null != g.A.lastFetched && E.A.fetched, !o().isEqual(a, M) && (M = a, N.isPlatformEmbedded && R.Ay.setSystemTrayApplications(H(M).map(e => e.application).slice(0, L)), true)
+    i = Object.values(E.A.getAllLibraryApplications()).map(r => Z(r, n, t, e, true)).filter(T.Vq),
+    a = [...r.map(r => X(r, n, t, e)).filter(T.Vq), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
+  return U = null != g.A.lastFetched && E.A.fetched, !o().isEqual(a, M) && (M = a, N.isPlatformEmbedded && w.Ay.setSystemTrayApplications(H(M).map(e => e.application).slice(0, L)), true)
 }
-class $ extends(r = Chunk311907.Ay.Store) {
+class J extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.syncWith([f.A, g.A, _.A, p.Ay, v.A, A.A, E.A, b.A, y.A, m.A], Q, 200), this.syncWith([O.A, h.default], () => true)
   }
@@ -188,7 +188,7 @@ class $ extends(r = Chunk311907.Ay.Store) {
     return U
   }
 }
-x($, "displayName", "ApplicationViewStore");
-let J = new $(Chunk73153.h, {
+x(J, "displayName", "ApplicationViewStore");
+let $ = new J(Chunk73153.h, {
   LIBRARY_APPLICATION_FILTER_UPDATE: q
 })

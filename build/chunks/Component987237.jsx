@@ -68,18 +68,18 @@ let C = e => {
     d.default.track(g.HAw.TOOLTIP_VIEWED, {
       type: "tiered_tenure_badge_churn_reminder"
     })
-  }, []), R = (0, i.useCallback)(() => {
+  }, []), w = (0, i.useCallback)(() => {
     null == n || n(E.i.TAKE_ACTION), (0, c.A)({
       initialPlanId: null,
       subscriptionTier: null,
       analyticsLocations: A
     })
-  }, [n, A]), w = [{
+  }, [n, A]), R = [{
     text: y.intl.string(y.t.iIvF2z),
     variant: "expressive",
     icon: s.tvc,
     iconPosition: "start",
-    onClick: R
+    onClick: w
   }], P = T >= b && T <= O ? Math.max(1, Math.min(100, (O - T) / O * 100)) : 1, D = T <= 10 ? "critical" : "warning";
   return (0, r.jsx)(h.A, {
     badgeId: C,
@@ -91,7 +91,7 @@ let C = e => {
     progressCircleText: "" + T,
     progressCirclePercent: P,
     progressCircleUrgency: D,
-    actions: w,
+    actions: R,
     onShow: "tooltip" === u ? N : true,
     estimatedTooltipHeight: 300,
     children: a

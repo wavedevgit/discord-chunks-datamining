@@ -92,12 +92,12 @@ function V(e) {
     onHover: C
   } = e, {
     analyticsLocations: M
-  } = (0, _.Ay)(), U = n !== R.b_.INACTIVE, V = (0, A.A)(t), F = (0, u.bG)([E.default], () => E.default.getCurrentUser()), [B, H] = i.useState(false), [Y, W] = i.useState(false), K = Y, z = i.useCallback(() => {
+  } = (0, _.Ay)(), U = n !== w.b_.INACTIVE, V = (0, A.A)(t), F = (0, u.bG)([E.default], () => E.default.getCurrentUser()), [B, H] = i.useState(false), [Y, W] = i.useState(false), K = Y, z = i.useCallback(() => {
     let e = g.A.getGuild(t);
     null != e && (0, h.g)({
       analyticsLocation: {
-        page: w.liQ.GUILD_POWERUPS_MARKETING,
-        section: w.JJy.GUILD_POWERUPS_MARKETING_PERKS_SECTION
+        page: R.liQ.GUILD_POWERUPS_MARKETING,
+        section: R.JJy.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
       analyticsLocations: M,
@@ -105,24 +105,24 @@ function V(e) {
     })
   }, [t, M]), q = i.useCallback(() => {
     S(), (0, T.A)(t, p.A.GUILD_POWERUPS_MARKETING, v)
-  }, [t, v, S]), X = {
+  }, [t, v, S]), Z = {
     tension: 400,
     friction: 30
-  }, Z = (0, f.zhh)({
+  }, X = (0, f.zhh)({
     transform: K ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
     borderRadius: "0px",
     transformOrigin: "center 0%",
-    config: X
+    config: Z
   }), Q = (0, f.zhh)({
     y: K ? false : 0,
-    config: X
-  }), $ = (0, f.zhh)({
+    config: Z
+  }), J = (0, f.zhh)({
     opacity: +!!K,
     transform: K ? "translateY(0)" : "translateY(20px)",
-    config: X
-  }), J = i.useCallback(e => {
+    config: Z
+  }), $ = i.useCallback(e => {
     e && H(true)
-  }, []), ee = (0, l.K)(J);
+  }, []), ee = (0, l.K)($);
   return (0, r.jsxs)("div", {
     className: s()(j.p3, j.sc, L.zL, {
       [j.i0]: B
@@ -142,7 +142,7 @@ function V(e) {
         className: s()(j.e_, L.Sl),
         src: O,
         alt: "",
-        style: Z
+        style: X
       })
     }), (0, r.jsxs)(o.animated.div, {
       style: G(k({}, Q), {
@@ -158,7 +158,7 @@ function V(e) {
         }),
         isEnabled: U
       }), (0, r.jsxs)(o.animated.div, {
-        style: $,
+        style: J,
         className: j.NC,
         children: [(0, r.jsx)(d.m, {
           text: x.intl.formatToPlainString(P.default["5xN/C1"], {
@@ -240,7 +240,7 @@ let B = 3,
       }), (0, r.jsx)(c.EYj, {
         variant: "text-lg/medium",
         children: x.intl.format(D.default.OdCzjA, {
-          helpDeskArticle: y.A.getArticleURL(w.MVz.GUILD_BOOSTING_FAQ)
+          helpDeskArticle: y.A.getArticleURL(R.MVz.GUILD_BOOSTING_FAQ)
         })
       }), (0, r.jsx)("div", {
         className: L.DO,

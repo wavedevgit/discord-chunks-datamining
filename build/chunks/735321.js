@@ -15,8 +15,8 @@ require.d(exports, {
   mS: () => v,
   nS: () => F,
   oc: () => D,
-  qA: () => R,
-  s1: () => w,
+  qA: () => w,
+  s1: () => R,
   tg: () => P,
   uA: () => k,
   y9: () => O,
@@ -132,12 +132,12 @@ function N(e) {
   null == t.find(t => t.getUniqueKey() === e.getUniqueKey()) && u.A.setPendingWidgets([e, ...t])
 }
 
-function R(e) {
+function w(e) {
   let t = S().filter(t => t.getUniqueKey() !== e.getUniqueKey());
   u.A.setPendingWidgets(t)
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   let r = Object.values(i.X).length;
   if (n.length > r) return;
   let a = T(e);
@@ -160,7 +160,7 @@ function P(e, t, n) {
   let i = r.games.find(e => e.applicationId === t);
   if (null == i || null == i.tags || 0 === i.tags.length) return;
   let a = i.tags.filter(e => e !== n);
-  w(r.type, t, a.length > 0 ? a : [])
+  R(r.type, t, a.length > 0 ? a : [])
 }
 
 function D(e, t, n) {

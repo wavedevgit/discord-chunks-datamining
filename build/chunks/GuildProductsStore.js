@@ -105,14 +105,14 @@ function N(e) {
   y.set(t.id, t)
 }
 
-function R(e) {
+function w(e) {
   let {
     product: t
   } = e;
   y.set(t.id, t)
 }
 
-function w(e) {
+function R(e) {
   let {
     productId: t
   } = e;
@@ -148,8 +148,8 @@ let D = new P(Chunk73153.h, {
   GUILD_PRODUCTS_FETCH_SUCCESS: A,
   GUILD_PRODUCTS_FETCH_FAILURE: I,
   GUILD_PRODUCT_CREATE: N,
-  GUILD_PRODUCT_UPDATE: R,
-  GUILD_PRODUCT_DELETE: w,
+  GUILD_PRODUCT_UPDATE: w,
+  GUILD_PRODUCT_DELETE: R,
   GUILD_PRODUCT_FETCH: S,
   GUILD_PRODUCT_FETCH_SUCCESS: T,
   GUILD_PRODUCT_FETCH_FAILURE: C

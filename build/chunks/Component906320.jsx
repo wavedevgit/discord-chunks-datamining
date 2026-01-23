@@ -533,7 +533,7 @@ let q = () => (0, r.jsx)(B, {
       })
     }
   }];
-class $ extends Chunk64700.PureComponent {
+class J extends Chunk64700.PureComponent {
   componentDidMount() {
     window.addEventListener("resize", this.throttledUpdateHeight)
   }
@@ -644,7 +644,7 @@ class $ extends Chunk64700.PureComponent {
   }
 }
 
-function J(e, t, n, r) {
+function $(e, t, n, r) {
   return e.reduce((e, i, l) => {
     let {
       applicationId: a,
@@ -663,8 +663,8 @@ function J(e, t, n, r) {
   }, [])
 }
 let ee = (0, Chunk456412.A)(Chunk311907.Ay.connectStores([Chunk587895.A, Chunk194871.A, Chunk966846.A, Chunk544028.A, Chunk531685.A], () => ({
-  applications: [...J(j.A.activeItems, false, O.A, T.A), ...J(j.A.finishedItems, true, O.A, T.A)],
+  applications: [...$(j.A.activeItems, false, O.A, T.A), ...$(j.A.finishedItems, true, O.A, T.A)],
   paused: j.A.paused,
   isFocused: x.A.isFocused(),
   theme: C.A.theme
-}))((0, Chunk707606.A)($)))
+}))((0, Chunk707606.A)(J)))

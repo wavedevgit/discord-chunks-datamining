@@ -58,10 +58,10 @@ function S(e) {
       embeddedActivity: t
     } = e;
     return p.id === t.applicationId
-  }), R = C({
+  }), w = C({
     context: n,
     applicationId: p.id
-  }), w = N({
+  }), R = N({
     application: t.application,
     context: n,
     locationObject: r,
@@ -75,8 +75,8 @@ function S(e) {
     imageBackground: v,
     videoUrl: A,
     joinableEmbeddedApp: S,
-    activityAction: R,
-    onActivityItemSelected: w,
+    activityAction: w,
+    onActivityItemSelected: R,
     labelType: O ? E.label_type : a.Hr.NONE,
     staffReleasePhase: P
   }
@@ -131,7 +131,7 @@ function N(e) {
     fetchesApplication: b
   }), {
     analyticsLocations: T
-  } = (0, s.Ay)(), N = (0, E.A)(), R = (0, c.e)(n);
+  } = (0, s.Ay)(), N = (0, E.A)(), w = (0, c.e)(n);
   if (null == n) return () => {
     null == _ || _({
       applicationId: ""
@@ -140,7 +140,7 @@ function N(e) {
   switch (S) {
     case 0:
       return async () => {
-        if (R) {
+        if (w) {
           try {
             await l.A.launchFrame({
               applicationId: I

@@ -49,13 +49,13 @@ Chunk350445("replace", function(e, t, n) {
     var _ = c(i);
     _ || (i = p(i));
     var m = s.global;
-    m && (w = s.unicode, s.lastIndex = 0);
+    m && (R = s.unicode, s.lastIndex = 0);
     for (var y = []; null !== (D = E(s, o)) && (A(y, D), m);) {
       ;
-      "" === p(D[0]) && (s.lastIndex = h(o, f(s.lastIndex), w))
+      "" === p(D[0]) && (s.lastIndex = h(o, f(s.lastIndex), R))
     }
-    for (var C = "", N = 0, R = 0; R < y.length; R++) {
-      for (var w, P, D = y[R], x = p(D[0]), L = b(O(d(D.index), o.length), 0), j = [], M = 1; M < D.length; M++) A(j, T(D[M]));
+    for (var C = "", N = 0, w = 0; w < y.length; w++) {
+      for (var R, P, D = y[w], x = p(D[0]), L = b(O(d(D.index), o.length), 0), j = [], M = 1; M < D.length; M++) A(j, T(D[M]));
       var k = D.groups;
       if (_) {
         var U = v([x], j, L, o);

@@ -97,7 +97,7 @@ class N {
     }), h(this, "hasNotificationSetting", e => null != this._notificationSettings[e]), h(this, "getNotificationSetting", e => this._notificationSettings[e]), this._widgetSettings = i.w.get(b, {}), this._notificationSettings = i.w.get(y, {}), __OVERLAY__ && (this._widgetSettings = {}, this._notificationSettings = {})
   }
 }
-class R {
+class w {
   constructor() {
     h(this, "_defaultWidgetPinned", {}), h(this, "initializeAllDefaultWidgetConfigs", () => {
       for (let e of Object.keys(_.uss)) {
@@ -129,9 +129,9 @@ class R {
     })
   }
 }
-class w {
+class R {
   constructor() {
-    h(this, "_storage", new N), h(this, "_config", new R), h(this, "updateWidgetPinned", (e, t) => {
+    h(this, "_storage", new N), h(this, "_config", new w), h(this, "updateWidgetPinned", (e, t) => {
       this._storage.setWidgetSetting(e, {
         pinned: t
       })
@@ -183,7 +183,7 @@ let D = new Set([Chunk93465.M.WELCOME_GENERAL, Chunk93465.M.GO_LIVE_NUDGE, Chunk
 class L extends Chunk439372.A {
   constructor() {
     var e, t;
-    super(), e = this, h(this, "_settings", new w), h(this, "_hasInitialized", false), h(this, "_isProcessing", false), h(this, "_appliedExperimentBucket", "control"), h(this, "setAppliedExperimentBucket", e => {
+    super(), e = this, h(this, "_settings", new R), h(this, "_hasInitialized", false), h(this, "_isProcessing", false), h(this, "_appliedExperimentBucket", "control"), h(this, "setAppliedExperimentBucket", e => {
       this._appliedExperimentBucket = e, i.w.set(x, e)
     }), h(this, "getRawAppliedExperimentBucket", () => (0, d.H)("applied-experiment-bucket")), h(this, "getWidgetExperimentSettings", e => {
       let {

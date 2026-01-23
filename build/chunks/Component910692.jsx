@@ -4,7 +4,7 @@
 require.d(exports, {
   BC: () => eN,
   Eh: () => eA,
-  Fl: () => eR,
+  Fl: () => ew,
   YN: () => eO,
   fD: () => eI
 }), require("./896048.js");
@@ -186,15 +186,15 @@ function eI(e) {
     header: f,
     onVoiceChannelPreview: m
   } = e, [g, E] = i.useState(false), [y, b] = i.useState(null), v = i.useRef(null), A = (0, c.bG)([B.A], () => null != t && eu.kvI.CONTENT_ENTRY_EMBEDS.has(t.type) && B.A.can(eu.xBc.SEND_MESSAGES, t)), [S, T] = i.useState(false), [C, N] = i.useState(false), {
-    voiceBar: R,
-    joinVoiceButton: w
+    voiceBar: w,
+    joinVoiceButton: R
   } = eP({
     channel: t,
     entry: s,
     onVoiceChannelPreview: m
   }), {
     embeddedActivity: P
-  } = (0, en.A)(s), D = ew(P), x = null != w && 0 === o.length ? [w] : o, L = x.length > 0, j = x.length >= 2, [M, k] = i.useState(!L), U = Z.Ay.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), G = null != t && g ? ep.intl.formatToPlainString(ep.t["8lzR/R"], {
+  } = (0, en.A)(s), D = eR(P), x = null != R && 0 === o.length ? [R] : o, L = x.length > 0, j = x.length >= 2, [M, k] = i.useState(!L), U = X.Ay.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), G = null != t && g ? ep.intl.formatToPlainString(ep.t["8lzR/R"], {
     channel: "#".concat(t.name)
   }) : ep.intl.formatToPlainString(ep.t["4c+CAx"], {
     channel: "@".concat(U)
@@ -259,9 +259,9 @@ function eI(e) {
       doNotNotifyOnError: false,
       location: ed.Hx.CONTENT_INVENTORY_MEMBERLIST
     }), null == r || r(i, n)
-  }, K = null != f ? f : null != R ? R : null != D ? D : true, z = () => {
+  }, K = null != f ? f : null != w ? w : null != D ? D : true, z = () => {
     E(e => !e), M && (null == y || y.focus())
-  }, X = e => {
+  }, Z = e => {
     k(e), e && (null == y || y.focus())
   };
   return (0, r.jsx)("div", {
@@ -313,7 +313,7 @@ function eI(e) {
               })
             }) : true
           }), L && (0, r.jsx)(_.DUT, {
-            onClick: () => X(false),
+            onClick: () => Z(false),
             className: e_.i3,
             children: (0, r.jsx)(_.PGe, {
               size: "custom",
@@ -327,7 +327,7 @@ function eI(e) {
           children: [!j && (0, r.jsx)(_.Button, {
             fullWidth: true,
             variant: "secondary",
-            onClick: () => X(true),
+            onClick: () => Z(true),
             size: j ? "sm" : "md",
             text: ep.intl.string(ep.t.OAJQlP)
           }, "toggleMessageMode"), x]
@@ -350,7 +350,7 @@ let eS = e => {
       url: e.url
     } : {
       emoji: e,
-      url: (0, X._O)({
+      url: (0, Z._O)({
         id: e.id,
         animated: e.animated,
         size: 58
@@ -420,15 +420,15 @@ function eT(e) {
         variant: "heading-sm/normal",
         className: s()(e_.Xn, e_.zA),
         children: ep.intl.format(n, {
-          user0: Z.Ay.getName(l, null == t ? true : t.id, y[0]),
-          user1: Z.Ay.getName(l, null == t ? true : t.id, y[1]),
+          user0: X.Ay.getName(l, null == t ? true : t.id, y[0]),
+          user1: X.Ay.getName(l, null == t ? true : t.id, y[1]),
           countOthers: h,
           countOthersHook: (e, t) => (0, r.jsx)(_.Text, {
             variant: "text-sm/medium",
             className: s()(e_.Mj, e_.nk),
             children: e
           }, t),
-          name0Hook: (e, n) => (0, r.jsx)(J.A, {
+          name0Hook: (e, n) => (0, r.jsx)($.A, {
             textClassName: s()(e_.Mj, e_.nk),
             text: e,
             user: y[0],
@@ -436,7 +436,7 @@ function eT(e) {
             onPopoutClosed: o,
             enableDisplayNameStyles: true
           }, n),
-          name1Hook: (e, n) => (0, r.jsx)(J.A, {
+          name1Hook: (e, n) => (0, r.jsx)($.A, {
             textClassName: s()(e_.Mj, e_.nk),
             text: e,
             user: y[1],
@@ -487,7 +487,7 @@ function eN(e) {
     trackRankingItemInteraction: E
   } = e, y = ey(e, ["title", "subtitle", "badges", "children", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "headerIcons", "disableGameProfileLinks", "showCoverImage", "onUserPopoutClosed", "trackRankingItemInteraction"]), {
     entry: b
-  } = y, O = (0, $.zD)(b), v = O ? null == (t = b.extra) ? true : t.application_id : true, A = (0, N.A)({
+  } = y, O = (0, J.zD)(b), v = O ? null == (t = b.extra) ? true : t.application_id : true, A = (0, N.A)({
     location: "ContentPopout",
     applicationId: h ? true : v,
     source: C.Ob.ActivityCard,
@@ -503,7 +503,7 @@ function eN(e) {
     showCoverImage: m
   }), T = (0, L.w)({
     location: "content_inventory"
-  }), R = O ? A : true;
+  }), w = O ? A : true;
   return (0, r.jsxs)("div", {
     className: e_.au,
     children: [(0, r.jsx)(eT, eE(em({
@@ -520,13 +520,13 @@ function eN(e) {
             image: I,
             smallImage: S,
             aspectRatio: m ? "none" : true,
-            onClick: null != u ? u : R,
+            onClick: null != u ? u : w,
             size: ee.w.SIZE_72
           })
         }), (0, r.jsxs)("div", {
           className: e_.iC,
           children: [(0, r.jsx)(eC, {
-            onClick: null != d ? d : R,
+            onClick: null != d ? d : w,
             children: (0, r.jsx)(_.Heading, {
               variant: "heading-md/medium",
               className: s()(e_.$2, {
@@ -536,7 +536,7 @@ function eN(e) {
               children: a
             })
           }), null != o ? (0, r.jsx)(eC, {
-            onClick: null != f ? f : R,
+            onClick: null != f ? f : w,
             children: (0, r.jsx)(_.Text, {
               variant: "text-sm/normal",
               className: e_.LG,
@@ -562,7 +562,7 @@ function eN(e) {
   })
 }
 
-function eR(e) {
+function ew(e) {
   var t, n, a;
   let {
     title: s,
@@ -574,9 +574,9 @@ function eR(e) {
     onClickSubtitle: p,
     onUserPopoutClosed: h,
     trackRankingItemInteraction: m
-  } = e, y = ey(e, ["title", "subtitle", "badges", "stream", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "onUserPopoutClosed", "trackRankingItemInteraction"]), b = (0, c.bG)([V.A], () => V.A.getChannel(null == u ? true : u.channelId)), [O] = i.useMemo(() => (0, R.eo)(b, K.A, F.A, B.A, T.default), [b]), {
+  } = e, y = ey(e, ["title", "subtitle", "badges", "stream", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "onUserPopoutClosed", "trackRankingItemInteraction"]), b = (0, c.bG)([V.A], () => V.A.getChannel(null == u ? true : u.channelId)), [O] = i.useMemo(() => (0, w.eo)(b, K.A, F.A, B.A, T.default), [b]), {
     entry: v
-  } = y, A = (0, $.zD)(v), I = A ? null == (t = v.extra) ? true : t.application_id : true, S = (0, N.A)({
+  } = y, A = (0, J.zD)(v), I = A ? null == (t = v.extra) ? true : t.application_id : true, S = (0, N.A)({
     location: "ContentPopout",
     applicationId: I,
     source: C.Ob.ActivityCard,
@@ -611,7 +611,7 @@ function eR(e) {
         } : true,
         children: (0, r.jsxs)("div", {
           className: e_.nh,
-          children: [(0, r.jsx)(w.A, {
+          children: [(0, r.jsx)(R.A, {
             className: e_.j7,
             stream: u
           }), O && (0, r.jsx)("div", {
@@ -667,7 +667,7 @@ function eR(e) {
   })
 }
 
-function ew(e) {
+function eR(e) {
   let t = (0, c.bG)([F.A], () => F.A.getGuild((0, b.D)(null == e ? true : e.location))),
     n = (0, c.bG)([V.A], () => V.A.getChannel((0, b.H)(null == e ? true : e.location))),
     i = (0, c.yK)([W.default], () => {

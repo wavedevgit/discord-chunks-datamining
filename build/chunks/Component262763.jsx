@@ -65,8 +65,8 @@ let A = {
     } = e;
     t.isThread() && (await f.A.unarchiveThreadIfNecessary(t.id), d.A.hasJoined(t.id) || await f.A.joinThread(t, "Join Voice"));
     let N = o.default.getRemoteSessionId(),
-      R = h.A.getVoiceStateForSession(p.default.getId(), N),
-      w = (null == R ? true : R.channelId) === t.id || _.A.getChannelId() === h.A.getCurrentClientVoiceChannelId(t.guild_id),
+      w = h.A.getVoiceStateForSession(p.default.getId(), N),
+      R = (null == w ? true : w.channelId) === t.id || _.A.getChannelId() === h.A.getCurrentClientVoiceChannelId(t.guild_id),
       P = u.A.getBlockedUsersForVoiceChannel(t.id),
       D = u.A.getIgnoredUsersForVoiceChannel(t.id),
       {
@@ -91,7 +91,7 @@ let A = {
           }))
         }, n))
       })
-    }) : (A || l || a.default.selectVoiceChannel(t.id), !__OVERLAY__ && (l || w || b || I || x) && v(t, C), true) : new Promise(e => {
+    }) : (A || l || a.default.selectVoiceChannel(t.id), !__OVERLAY__ && (l || R || b || I || x) && v(t, C), true) : new Promise(e => {
       (0, i.mMO)(async () => {
         let {
           default: i

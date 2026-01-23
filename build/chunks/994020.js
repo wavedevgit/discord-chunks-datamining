@@ -131,7 +131,7 @@ function N() {
       getRows: () => [],
       getRow: () => null
     },
-    R = {
+    w = {
       isEmpty: () => true,
       getRows: () => [],
       getRow: () => null
@@ -159,7 +159,7 @@ function N() {
       }
     },
     getGuildActionSection: () => N,
-    getChannelNoticeSection: () => R,
+    getChannelNoticeSection: () => w,
     getFirstVoiceChannel: () => null,
     getSectionRowsFromChannel(e) {
       let t = [T, ...C];

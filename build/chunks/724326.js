@@ -70,18 +70,18 @@ module.exports = function(e) {
       literal: d
     },
     N = [E, I, T],
-    R = [{
+    w = [{
       match: r(/\./, a(..._)),
       relevance: 0
     }, {
       className: "built_in",
       match: r(/\b/, a(..._), /(?=\()/)
     }],
-    w = {
+    R = {
       match: /->/,
       relevance: 0
     },
-    P = [w, {
+    P = [R, {
       className: "operator",
       relevance: 0,
       variants: [{
@@ -214,14 +214,14 @@ module.exports = function(e) {
         relevance: 0
       }]
     },
-    X = {
+    Z = {
       begin: /</,
       end: />/,
       keywords: C,
-      contains: [...h, ...N, ...z, w, q]
+      contains: [...h, ...N, ...z, R, q]
     };
-  q.contains.push(X);
-  let Z = {
+  q.contains.push(Z);
+  let X = {
       begin: /\(/,
       end: /\)/,
       relevance: 0,
@@ -230,7 +230,7 @@ module.exports = function(e) {
         match: r(b, /\s*:/),
         keywords: "_|0",
         relevance: 0
-      }, ...h, Y, ...N, ...R, ...P, L, V, ...K, ...z, q]
+      }, ...h, Y, ...N, ...w, ...P, L, V, ...K, ...z, q]
     },
     Q = {
       begin: /</,
@@ -238,7 +238,7 @@ module.exports = function(e) {
       keywords: "repeat each",
       contains: [...h, q]
     },
-    $ = {
+    J = {
       begin: /\(/,
       end: /\)/,
       keywords: C,
@@ -253,17 +253,17 @@ module.exports = function(e) {
           className: "params",
           match: b
         }]
-      }, ...h, ...N, ...P, L, V, ...z, q, Z],
+      }, ...h, ...N, ...P, L, V, ...z, q, X],
       endsParent: true,
       illegal: /["']/
     },
-    J = {
+    $ = {
       match: [/(func|macro)/, /\s+/, a(W.match, b, g)],
       className: {
         1: "keyword",
         3: "title.function"
       },
-      contains: [Q, $, t],
+      contains: [Q, J, t],
       illegal: [/\[/, /%/]
     },
     ee = {
@@ -271,7 +271,7 @@ module.exports = function(e) {
       className: {
         1: "keyword"
       },
-      contains: [Q, $, t],
+      contains: [Q, J, t],
       illegal: /\[|%/
     },
     et = {
@@ -327,7 +327,7 @@ module.exports = function(e) {
   for (let e of V.variants) {
     let t = e.contains.find(e => "interpol" === e.label);
     t.keywords = C;
-    let n = [...N, ...R, ...P, L, V, ...K];
+    let n = [...N, ...w, ...P, L, V, ...K];
     t.contains = [...n, {
       begin: /\(/,
       end: /\)/,
@@ -337,11 +337,11 @@ module.exports = function(e) {
   return {
     name: "Swift",
     keywords: C,
-    contains: [...h, J, ee, er, ei, ea, et, en, {
+    contains: [...h, $, ee, er, ei, ea, et, en, {
       beginKeywords: "import",
       end: /$/,
       contains: [...h],
       relevance: 0
-    }, Y, ...N, ...R, ...P, L, V, ...K, ...z, q, Z]
+    }, Y, ...N, ...w, ...P, L, V, ...K, ...z, q, X]
   }
 }

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   cg: () => N,
-  hb: () => w,
-  nq: () => R
+  hb: () => R,
+  nq: () => w
 });
 var Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
@@ -102,18 +102,18 @@ function N() {
       mostRecentSubscription: c,
       previousPremiumSubscription: f
     }),
-    R = T && N && null == _ && null != r && !n && null == O,
+    w = T && N && null == _ && null != r && !n && null == O,
     {
-      enabled: w
+      enabled: R
     } = h.A.useExperiment({
       location: "153d31_2"
     }, {
-      autoTrackExposure: R,
-      disable: !R
+      autoTrackExposure: w,
+      disable: !w
     });
-  return !S && (t ? w : R)
+  return !S && (t ? R : w)
 }
-async function R() {
+async function w() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     n = c.default.getCurrentUser(),
@@ -149,8 +149,8 @@ async function R() {
     previousPremiumSubscription: u.A.getPreviousPremiumTypeSubscription()
   })
 }
-async function w() {
-  if (!await R(false)) return;
+async function R() {
+  if (!await w(false)) return;
   let e = A.A.bogoPromotion;
   null != e && new Date(e.endDate).valueOf() >= Date.now() || await (0, O.hS)()
 }

@@ -2,7 +2,7 @@
 /** chunk id: 302031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => w,
+  Ay: () => R,
   Bs: () => C
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -394,7 +394,7 @@ class N extends Chunk64700.PureComponent {
     })
   }
 }
-let R = e => {
+let w = e => {
   let t = (0, p._R)() && null != e.reason && _.tY.has(e.reason),
     n = (0, f.yM)();
   return (0, r.jsx)(N, O(y({}, e), {
@@ -402,5 +402,5 @@ let R = e => {
     isVerifiedTeen: n
   }))
 };
-R.Types = v, R.Reasons = Chunk338717.Oc;
-let w = R
+w.Types = v, w.Reasons = Chunk338717.Oc;
+let R = w

@@ -5,7 +5,7 @@ require.d(exports, {
   Ay: () => P,
   HG: () => C,
   OH: () => N,
-  ac: () => R
+  ac: () => w
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -73,7 +73,7 @@ function N(e) {
   })
 }
 
-function R() {
+function w() {
   let e = (0, a.bG)([E.default], () => E.default.locale);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.kb, {}), (0, r.jsx)(c.A, {
@@ -82,7 +82,7 @@ function R() {
   })
 }
 
-function w() {
+function R() {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(f.x, {
       setting: O.H.BILLING_PAYMENT_METHODS,
@@ -98,7 +98,7 @@ function w() {
           children: [(0, r.jsx)(s.Heading, {
             variant: "heading-lg/semibold",
             children: A.intl.string(A.t.obLrcK)
-          }), (0, r.jsx)(R, {})]
+          }), (0, r.jsx)(w, {})]
         })
       })
     }), (0, r.jsx)(N, {
@@ -110,5 +110,5 @@ function w() {
 function P() {
   let e = (0, a.bG)([_.default], () => null != _.default.getCurrentUser()),
     t = (0, a.bG)([p.A], () => p.A.enabled);
-  return e ? t ? (0, r.jsx)(l.A, {}) : (0, r.jsx)(w, {}) : (0, r.jsx)(S, {})
+  return e ? t ? (0, r.jsx)(l.A, {}) : (0, r.jsx)(R, {}) : (0, r.jsx)(S, {})
 }

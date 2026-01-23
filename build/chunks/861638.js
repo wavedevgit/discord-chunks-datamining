@@ -52,8 +52,8 @@ let I = 27,
   T = Chunk927813.A.Millis.SECOND,
   C = "LAST_CLIENT_HEARTBEAT_SESSION",
   N = "user",
-  R = new Chunk626584.A("SessionHeartbeatScheduler"),
-  w = null,
+  w = new Chunk626584.A("SessionHeartbeatScheduler"),
+  R = null,
   P = null,
   D = 0,
   x = 0,
@@ -65,14 +65,14 @@ let I = 27,
   k = Chunk961350.default.getToken();
 
 function U() {
-  if (null != w) return;
+  if (null != R) return;
   let e = 0 === x ? 0 : S - (performance.now() - x);
   m.A.addBreadcrumb({
     message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(e / 1e3, " seconds. Scheduling Heartbeat")
-  }), w = {
+  }), R = {
     type: "timeout",
     id: setTimeout(() => {
-      B(), w = {
+      B(), R = {
         type: "interval",
         id: setInterval(() => {
           B()
@@ -83,18 +83,18 @@ function U() {
 }
 
 function G() {
-  if (null == w) returnfalse;
-  switch (w.type) {
+  if (null == R) returnfalse;
+  switch (R.type) {
     case "timeout":
-      clearTimeout(w.id);
+      clearTimeout(R.id);
       break;
     case "interval":
-      clearInterval(w.id);
+      clearInterval(R.id);
       break;
     default:
-      w.type
+      R.type
   }
-  return w = null, true
+  return R = null, true
 }
 
 function V() {
@@ -158,7 +158,7 @@ function K() {
 }
 
 function z() {
-  K() ? U() : V(), $()
+  K() ? U() : V(), J()
 }
 
 function q() {
@@ -170,7 +170,7 @@ function q() {
   })
 }
 
-function X(e) {
+function Z(e) {
   let t = performance.now();
   if (!(t - D < T)) try {
     s.w.set(C, e), D = t
@@ -179,8 +179,8 @@ function X(e) {
   }
 }
 
-function Z(e) {
-  return null == e ? null : e.version !== y.Ir ? (R.warn("Throwing away client session with invalid version: ".concat(e.version, ", expected ").concat(y.Ir)), null) : e
+function X(e) {
+  return null == e ? null : e.version !== y.Ir ? (w.warn("Throwing away client session with invalid version: ".concat(e.version, ", expected ").concat(y.Ir)), null) : e
 }
 
 function Q() {
@@ -190,11 +190,11 @@ function Q() {
   }, V(), x = 0
 }
 
-function $() {
+function J() {
   var e;
   null == (e = u.A.getSocket()) || e.handleActiveStateChange(W())
 }
-async function J() {
+async function $() {
   let e = await es(false);
   if (null != e) {
     var t;
@@ -233,7 +233,7 @@ function ei() {
 function ea() {
   m.A.addBreadcrumb({
     message: "Initializing SessionHeartbeatScheduler"
-  }), p.A.addChangeListener(et), d.default.addChangeListener(ee), o.h.subscribe("WINDOW_FOCUS", en), o.h.subscribe("APP_STATE_UPDATE", er), o.h.subscribe("CONNECTION_OPEN", J), z(), q(), a.Ay.initialized.then(ei)
+  }), p.A.addChangeListener(et), d.default.addChangeListener(ee), o.h.subscribe("WINDOW_FOCUS", en), o.h.subscribe("APP_STATE_UPDATE", er), o.h.subscribe("CONNECTION_OPEN", $), z(), q(), a.Ay.initialized.then(ei)
 }
 async function es() {
   var e;
@@ -241,7 +241,7 @@ async function es() {
     n = null,
     a = "loaded" === L.state ? null == (e = L.session) ? true : e.uuid : null;
   try {
-    n = "uninitialized" === L.state ? Z(await s.w.getAfterRefresh(C)) : L.session
+    n = "uninitialized" === L.state ? X(await s.w.getAfterRefresh(C)) : L.session
   } catch (e) {
     m.A.captureException(e)
   }
@@ -252,7 +252,7 @@ async function es() {
         createdAtTimestamp: e,
         lastUsedTimestamp: e,
         version: y.Ir
-      }, D = 0), n.lastUsedTimestamp = e, X(n)) : null != n && (0, y.aE)(n) && (n = null), L = {
+      }, D = 0), n.lastUsedTimestamp = e, Z(n)) : null != n && (0, y.aE)(n) && (n = null), L = {
         state: "loaded",
         session: n
       }, null != n && a !== n.uuid && t) {
@@ -264,6 +264,6 @@ async function es() {
 }
 
 function eo() {
-  let e = "uninitialized" === L.state ? Z(s.w.get(C)) : L.session;
+  let e = "uninitialized" === L.state ? X(s.w.get(C)) : L.session;
   return null == e || (0, y.aE)(e) ? null : e
 }

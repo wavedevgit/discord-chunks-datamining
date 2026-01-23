@@ -64,8 +64,8 @@ let p = "mp4",
   T = M(S) ? Chunk803805.TL.VIDEO : Chunk803805.TL.IMAGE,
   C = null,
   N = "",
-  R = "",
-  w = [],
+  w = "",
+  R = [],
   P = [],
   D = [],
   x = [];
@@ -75,7 +75,7 @@ function L(e) {
 }
 
 function j(e) {
-  "" === (N = e.query) && (R = "", w = [], D = [])
+  "" === (N = e.query) && (w = "", R = [], D = [])
 }
 
 function M(e) {
@@ -111,8 +111,8 @@ function U(e) {
 }
 
 function G(e) {
-  if (null != e.query && N === R) returnfalse;
-  null != e.query && (R = e.query), w = e.items.map(e => {
+  if (null != e.query && N === w) returnfalse;
+  null != e.query && (w = e.query), R = e.items.map(e => {
     let {
       width: t,
       height: n,
@@ -138,7 +138,7 @@ function V(e) {
     query: t
   } = e;
   if (null == t) returnfalse;
-  R = t, w = []
+  w = t, R = []
 }
 
 function F(e) {
@@ -176,10 +176,10 @@ class Y extends(r = Chunk311907.Ay.Store) {
     return N
   }
   getResultQuery() {
-    return R
+    return w
   }
   getResultItems() {
-    return w
+    return R
   }
   getTrendingCategories() {
     return P

@@ -2,7 +2,7 @@
 /** chunk id: 282108, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $V: () => w,
+  $V: () => R,
   Fg: () => y,
   KM: () => v,
   LE: () => D,
@@ -15,7 +15,7 @@ require.d(exports, {
   ku: () => E,
   mS: () => S,
   nx: () => V,
-  qo: () => R,
+  qo: () => w,
   s9: () => T,
   y5: () => A
 }), require("./896048.js"), require("./114821.js"), require("./339614.js"), require("./938796.js"), require("./321073.js");
@@ -100,13 +100,13 @@ function S(e, t) {
   var n, r;
   let i = null != t ? t : y(e);
   if (i === m.LO.NONE) returnfalse;
-  if ((null == (n = e.attachments) ? true : n.some(e => w({
+  if ((null == (n = e.attachments) ? true : n.some(e => R({
       type: _.D.Attachment,
       media: e
-    }, i))) || (null == (r = e.embeds) ? true : r.some(e => w({
+    }, i))) || (null == (r = e.embeds) ? true : r.some(e => R({
       type: _.D.Embed,
       media: e
-    }, i))) || null != e.components && I(e.components).some(e => w({
+    }, i))) || null != e.components && I(e.components).some(e => R({
       type: _.D.GenericMedia,
       media: e
     }, i))) returntrue;
@@ -128,11 +128,11 @@ function C(e) {
     attachmentIds: [],
     embedIds: []
   };
-  let s = null == (r = e.attachments) ? true : r.filter(e => w({
+  let s = null == (r = e.attachments) ? true : r.filter(e => R({
       type: _.D.Attachment,
       media: e
     }, a)),
-    o = null == (i = e.embeds) ? true : i.filter(e => w({
+    o = null == (i = e.embeds) ? true : i.filter(e => R({
       type: _.D.Embed,
       media: e
     }, a));
@@ -148,13 +148,13 @@ function N(e, t) {
   return 0 === n.length ? [] : n.filter(t => P(t, e)).map(e => m.Jn[e].obscureReason)
 }
 
-function R(e, t) {
+function w(e, t) {
   if (t === m.LO.NONE) returnfalse;
   let n = x(t);
   return 0 !== n.length && n.filter(t => P(t, e)).length > 0
 }
 
-function w(e, t) {
+function R(e, t) {
   if (t === m.LO.NONE || s.Ay.get("explicit_media_redaction_ignore_pending_scan")) returnfalse;
   let n = x(t);
   if (0 === n.length) returnfalse;

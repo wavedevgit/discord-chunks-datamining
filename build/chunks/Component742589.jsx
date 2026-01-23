@@ -92,7 +92,7 @@ async function N(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   let {
     children: t,
     className: n,
@@ -106,8 +106,8 @@ function R(e) {
     mobileToolbar: S,
     "aria-label": T,
     "aria-labelledby": C,
-    scrollable: R,
-    role: w,
+    scrollable: w,
+    role: R,
     hideSearch: P,
     showDivider: D,
     disableDoubleClick: x
@@ -147,13 +147,13 @@ function R(e) {
     onDoubleClick: () => N(x),
     "aria-label": T,
     "aria-labelledby": C,
-    role: w,
-    scrollable: R,
+    role: R,
+    scrollable: w,
     children: t
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     children: t,
     className: n,
@@ -180,9 +180,9 @@ function P(e) {
   } = (0, l.Ay)(o.A.HEADER_BAR);
   return (0, r.jsx)(l.f5, {
     value: i,
-    children: t ? (0, r.jsx)(R, S(A({}, n), {
+    children: t ? (0, r.jsx)(w, S(A({}, n), {
       className: n.className
-    })) : (0, r.jsx)(w, S(A({}, n), {
+    })) : (0, r.jsx)(R, S(A({}, n), {
       className: n.className
     }))
   })

@@ -26,8 +26,8 @@ var Chunk655405 = require("./655405.js"),
   T = 2,
   C = 4,
   N = "[object Arguments]",
-  R = "[object Array]",
-  w = "[object Boolean]",
+  w = "[object Array]",
+  R = "[object Boolean]",
   P = "[object Date]",
   D = "[object Error]",
   x = "[object Function]",
@@ -46,18 +46,18 @@ var Chunk655405 = require("./655405.js"),
   K = "[object Float64Array]",
   z = "[object Int8Array]",
   q = "[object Int16Array]",
-  X = "[object Int32Array]",
-  Z = "[object Uint8Array]",
+  Z = "[object Int32Array]",
+  X = "[object Uint8Array]",
   Q = "[object Uint8ClampedArray]",
-  $ = "[object Uint16Array]",
-  J = "[object Uint32Array]",
+  J = "[object Uint16Array]",
+  $ = "[object Uint32Array]",
   ee = {};
 
-function et(e, t, n, R, w, P) {
+function et(e, t, n, w, R, P) {
   var D, j = t & S,
     M = t & T,
     U = t & C;
-  if (n && (D = w ? n(e, R, w, P) : n(e)), true !== D) return D;
+  if (n && (D = R ? n(e, w, R, P) : n(e)), true !== D) return D;
   if (!O(e)) return e;
   var G = E(e);
   if (G) {
@@ -66,10 +66,10 @@ function et(e, t, n, R, w, P) {
     var V = _(e),
       F = V == x || V == L;
     if (y(e)) return l(e, j);
-    if (V == k || V == N || F && !w) {
+    if (V == k || V == N || F && !R) {
       if (D = M || F ? {} : g(e), !j) return M ? d(e, o(D, e)) : u(e, s(D, e))
     } else {
-      if (!ee[V]) return w ? e : {};
+      if (!ee[V]) return R ? e : {};
       D = m(e, V, j)
     }
   }
@@ -87,4 +87,4 @@ function et(e, t, n, R, w, P) {
     Y && (r = e[i = r]), a(D, i, et(r, t, n, i, e, P))
   }), D
 }
-ee[N] = ee[R] = ee[H] = ee[Y] = ee[w] = ee[P] = ee[W] = ee[K] = ee[z] = ee[q] = ee[X] = ee[j] = ee[M] = ee[k] = ee[U] = ee[G] = ee[V] = ee[F] = ee[Z] = ee[Q] = ee[$] = ee[J] = true, ee[D] = ee[x] = ee[B] = false, module.exports = et
+ee[N] = ee[w] = ee[H] = ee[Y] = ee[R] = ee[P] = ee[W] = ee[K] = ee[z] = ee[q] = ee[Z] = ee[j] = ee[M] = ee[k] = ee[U] = ee[G] = ee[V] = ee[F] = ee[X] = ee[Q] = ee[J] = ee[$] = true, ee[D] = ee[x] = ee[B] = false, module.exports = et

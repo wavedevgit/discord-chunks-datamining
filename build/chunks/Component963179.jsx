@@ -32,9 +32,9 @@ function g(e) {
   if (null == S) return null;
   let C = null != (t = S.name) ? t : "",
     N = null != (n = null == I || null == (E = I.description) ? true : E.trim()) ? n : true,
-    R = (null == I ? true : I.headerBackground) != null && null != (g = u.A.toURLSafe((0, c.YE)(v, I.headerBackground, 256))) ? g : true,
-    w = S.type === h.Puh.DURABLE && T,
-    P = S.type === h.Puh.DURABLE ? w ? m.intl.string(m.t.bm82mm) : m.intl.string(m.t["6gprwf"]) : true,
+    w = (null == I ? true : I.headerBackground) != null && null != (g = u.A.toURLSafe((0, c.YE)(v, I.headerBackground, 256))) ? g : true,
+    R = S.type === h.Puh.DURABLE && T,
+    P = S.type === h.Puh.DURABLE ? R ? m.intl.string(m.t.bm82mm) : m.intl.string(m.t["6gprwf"]) : true,
     {
       price: D
     } = S;
@@ -53,7 +53,7 @@ function g(e) {
       skuId: S.id,
       title: C,
       description: N,
-      imgSrc: R,
+      imgSrc: w,
       tag: null != P ? (0, r.jsx)(i.v, {
         text: P
       }) : true,

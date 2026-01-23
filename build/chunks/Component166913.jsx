@@ -59,11 +59,11 @@ let U = e => {
       [H, Y] = i.useState(false),
       [W, K] = i.useState(false),
       z = !F && !H,
-      [q, X] = i.useState(false),
-      Z = (0, o.bG)([m.A], () => m.A.getPremiumTypeSubscription()),
-      Q = null != Z ? (0, E.EL)(Z) : null,
-      $ = null != Q ? E.Ay.getSkuIdForPlan(Q.planId) : null,
-      J = null !== $ && $ !== D.pe.TIER_2 ? D.pe.TIER_2 : null,
+      [q, Z] = i.useState(false),
+      X = (0, o.bG)([m.A], () => m.A.getPremiumTypeSubscription()),
+      Q = null != X ? (0, E.EL)(X) : null,
+      J = null != Q ? E.Ay.getSkuIdForPlan(Q.planId) : null,
+      $ = null !== J && J !== D.pe.TIER_2 ? D.pe.TIER_2 : null,
       ee = (0, v.V)(),
       et = null == ee || null == (e = ee.subscription_trial) ? true : e.sku_id,
       en = (0, b.ar)(),
@@ -74,7 +74,7 @@ let U = e => {
         analyticsLocations: es
       } = (0, p.Ay)(f.A.PREMIUM_MARKETING);
     i.useEffect(() => {
-      X(true)
+      Z(true)
     }, []);
     let eo = (0, r.jsx)("div", {
       className: M.dY,
@@ -118,7 +118,7 @@ let U = e => {
       className: M.kL,
       "data-cy": "tier-0-marketing-page",
       children: [(0, r.jsx)(T.A, {
-        premiumSubscription: Z,
+        premiumSubscription: X,
         className: s()(M.R3, {
           [M.aZ]: en
         })
@@ -138,17 +138,17 @@ let U = e => {
           active: true,
           children: (0, r.jsx)(N.Ay, {
             ref: a,
-            subscriptionTier: J,
+            subscriptionTier: $,
             className: s()({
               [M.p7]: en,
               [M.Pw]: en,
               [M.AG]: er,
-              [M.Cv]: null != Z
+              [M.Cv]: null != X
             }),
             isDarkMode: V
           })
         })]
-      }), eo, (0, r.jsx)(R.A, {
+      }), eo, (0, r.jsx)(w.A, {
         className: M.B_
       }), (0, r.jsx)("div", {
         className: M.aC,
@@ -158,9 +158,9 @@ let U = e => {
         })
       }), (0, r.jsx)("div", {
         className: M.hz
-      }), (0, r.jsx)(w.A, {
+      }), (0, r.jsx)(R.A, {
         isVisible: z && q,
-        subscriptionTier: J,
+        subscriptionTier: $,
         isApplicationHome: false,
         isEligibleForBogoPromotion: er
       }), (0, r.jsx)(l.L, {

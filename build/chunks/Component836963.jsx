@@ -72,8 +72,8 @@ function _(e) {
     renderEmptySearchState: T,
     renderCategoryList: C,
     renderHeaderAccessories: N,
-    rowHeight: R,
-    sectionHeaderHeight: w,
+    rowHeight: w,
+    sectionHeaderHeight: R,
     sectionFooterHeight: P,
     itemNodeWidth: D,
     listPaddingRight: x,
@@ -90,8 +90,8 @@ function _(e) {
   }), {
     expressionsGrid: z,
     rowCount: q,
-    rowCountBySection: X,
-    columnCounts: Z,
+    rowCountBySection: Z,
+    columnCounts: X,
     gutterWidth: Q
   } = (0, s.se)({
     categories: t,
@@ -101,25 +101,25 @@ function _(e) {
     itemNodeWidth: D,
     itemNodeMargin: L
   }), {
-    getItemProps: $,
-    getRowProps: J,
+    getItemProps: J,
+    getRowProps: $,
     gridContainerProps: ee,
     handleGridContainerKeyDown: et,
     isUsingKeyboardNavigation: en
   } = (0, s.JZ)({
-    columnCounts: Z,
+    columnCounts: X,
     expressionsListRef: F,
     expressionsGrid: z,
     onSelectItem: _,
     store: f,
     gridNavigatorId: M
-  }), er = i.useCallback((e, t) => O(z[e], J(e), {
+  }), er = i.useCallback((e, t) => O(z[e], $(e), {
     isUsingKeyboardNavigation: en.current,
     gutterWidth: Q,
     rowIndex: e,
     totalRowCount: q,
     sectionIndex: t.sectionIndex
-  }, t => $(e, t), t => f.setInspectedExpressionPosition(t, e)), [z, $, J, Q, en, O, f, q]), ei = i.useCallback(e => null == A ? true : A(t[e], e), [t, A]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), es = i.useCallback(() => {
+  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [z, J, $, Q, en, O, f, q]), ei = i.useCallback(e => null == A ? true : A(t[e], e), [t, A]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), es = i.useCallback(() => {
     var e;
     return null == S ? true : S(null == z || null == (e = z[W.rowIndex]) ? true : e[W.columnIndex])
   }, [z, W.columnIndex, W.rowIndex, S]);
@@ -170,9 +170,9 @@ function _(e) {
           renderInspector: null != S ? es : true,
           renderEmptySearchState: T,
           rowCount: q,
-          rowCountBySection: X,
-          rowHeight: R,
-          sectionHeaderHeight: w,
+          rowCountBySection: Z,
+          rowHeight: w,
+          sectionHeaderHeight: R,
           sectionFooterHeight: P,
           renderUpsell: G,
           onScroll: m

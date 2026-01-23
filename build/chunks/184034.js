@@ -246,14 +246,14 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   return {
     type: "autolink",
     content: e[1],
     originalMatch: e
   }
 }
-let w = {
+let R = {
     url: {
       parse: e => null == (0, u.W1)(e[1]) ? {
         type: "text",
@@ -270,13 +270,13 @@ let w = {
         type: "text",
         content: e[0],
         originalMatch: e
-      } : R(e)
+      } : w(e)
     },
     mailto: {
-      parse: R
+      parse: w
     },
     tel: {
-      parse: R
+      parse: w
     },
     codeBlockSyntax: {
       order: Chunk280230.defaultRules.inlineCode.order - .1,
@@ -297,8 +297,8 @@ let w = {
     }
   },
   P = /(-# +)/,
-  D = (0, Chunk551965.A)([T, w]),
-  x = (0, Chunk551965.A)([C, w]),
+  D = (0, Chunk551965.A)([T, R]),
+  x = (0, Chunk551965.A)([C, R]),
   L = Chunk436857.X(D),
   j = Chunk436857.X(x),
   M = {
@@ -395,7 +395,7 @@ function B(e, t, n, r, a) {
     case "emoji":
     case "customEmoji": {
       let i = t.substring(r);
-      if (i.startsWith(l[0]) || (r = X(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return K({
+      if (i.startsWith(l[0]) || (r = Z(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return K({
         result: e,
         sourceText: t,
         text: l[0],
@@ -592,7 +592,7 @@ function K(e) {
   for (;
     "\n" === r.charAt(0) || " " === r.charAt(0);) r = r.substring(1);
   let l = n.indexOf(r, o);
-  if (l !== o ? o = i = X(t, n, o, l) : "\\" === r && "\\" === n.charAt(l + 1) && (l++, i = ++o), l !== o) return q("Slate: Unable to find content in source text at start position ".concat(o, " for text position ").concat(l), r, i);
+  if (l !== o ? o = i = Z(t, n, o, l) : "\\" === r && "\\" === n.charAt(l + 1) && (l++, i = ++o), l !== o) return q("Slate: Unable to find content in source text at start position ".concat(o, " for text position ").concat(l), r, i);
   let c = o + r.length,
     u = n.substring(i, c);
   return t.push({
@@ -614,7 +614,7 @@ function q(e, t, n) {
   throw Error(e)
 }
 
-function X(e, t, n, r) {
+function Z(e, t, n, r) {
   for (; n < r;)
     if (S.has(t[n])) n = W(e, t, t[n], n, "syntaxBefore"), n = z(t, n);
     else break;

@@ -108,8 +108,8 @@ function v(e) {
     return (null == S ? true : S.colorRoleId) != null ? null == (e = f.A.getRole(n, S.colorRoleId)) ? true : e.name : true
   }, [n, S]), N = (0, u.gn)(n, E, null != (t = null == S ? true : S.colorStrings) ? t : null);
   if (null == y) return null;
-  let R = null == S ? true : S.colorString,
-    w = _.Ay.getName(n, i, y);
+  let w = null == S ? true : S.colorString,
+    R = _.Ay.getName(n, i, y);
   return (0, r.jsxs)("div", {
     className: g.dw,
     children: [(0, r.jsx)(O, {
@@ -117,10 +117,10 @@ function v(e) {
       guildId: n,
       "aria-hidden": true
     }), (0, r.jsx)(o.gyj, {
-      colorString: null != R ? R : null,
+      colorString: null != w ? w : null,
       roleName: C,
       colorStrings: N,
-      name: w,
+      name: R,
       className: g.nT,
       displayNameStylesFont: T,
       "aria-hidden": true

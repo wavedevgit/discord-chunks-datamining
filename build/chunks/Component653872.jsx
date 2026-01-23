@@ -96,8 +96,8 @@ function g(e, t, n) {
       getSectionHeight: T,
       chunkSize: C,
       renderSection: N,
-      renderItem: R,
-      getSectionProps: w,
+      renderItem: w,
+      getSectionProps: R,
       itemGutter: P,
       removeEdgeItemGutters: D,
       sectionGutter: x,
@@ -110,20 +110,20 @@ function g(e, t, n) {
       maxContentWidth: V,
       renderAccessory: F,
       onItemVisibilityChange: B
-    } = E, H = h(E, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]), [Y] = y, W = i.useRef(null), K = i.useRef(null), z = i.useRef({}), [q, X] = i.useState(false), {
-      scrollerRef: Z,
+    } = E, H = h(E, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]), [Y] = y, W = i.useRef(null), K = i.useRef(null), z = i.useRef({}), [q, Z] = i.useState(false), {
+      scrollerRef: X,
       scrollerState: Q,
-      getScrollerState: $
+      getScrollerState: J
     } = (0, o.F6)();
     (0, o._I)({
-      scrollerRef: Z,
+      scrollerRef: X,
       className: U,
       specs: a,
       orientation: "vertical",
       dir: O
     });
     let {
-      forceUpdateOnChunkChange: J,
+      forceUpdateOnChunkChange: $,
       coordsMap: ee,
       gridData: et,
       visibleSections: en,
@@ -143,7 +143,7 @@ function g(e, t, n) {
       padding: L,
       paddingVertical: j,
       paddingHorizontal: M,
-      getScrollerState: $,
+      getScrollerState: J,
       dir: O,
       maxBufferWidth: V
     });
@@ -152,33 +152,33 @@ function g(e, t, n) {
     }, [en, B]);
     let es = (0, i.useCallback)(function() {
         let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 2;
-        e > Q.current.dirty && (Q.current.dirty = e), 2 === e ? ei() : J(1)
-      }, [J, Q, ei]),
-      eo = (0, o.kR)(Z),
+        e > Q.current.dirty && (Q.current.dirty = e), 2 === e ? ei() : $(1)
+      }, [$, Q, ei]),
+      eo = (0, o.kR)(X),
       el = (0, i.useCallback)(() => ea.itemGrid, [ea]),
       ec = (0, i.useCallback)(() => ea.coordsMap, [ea]),
       eu = i.useCallback(() => es(), [es]);
     (0, o.Bb)({
-      ref: Z,
+      ref: X,
       key: "container",
       onUpdate: eu,
       resizeObserver: p,
       listenerMap: d
     }), (0, i.useImperativeHandle)(Y, () => f({
-      getScrollerNode: () => Z.current,
+      getScrollerNode: () => X.current,
       getItemGrid: el,
       getCoordsMap: ec,
-      getScrollerState: $
-    }, (0, o.cJ)(Z, $, eo)), [Z, $, el, eo, ec]);
+      getScrollerState: J
+    }, (0, o.cJ)(X, J, eo)), [X, J, el, eo, ec]);
     let ed = (0, i.useCallback)(e => {
-      es(1), null == W.current ? X(true) : clearTimeout(W.current), W.current = setTimeout(() => {
-        W.current = null, X(false)
+      es(1), null == W.current ? Z(true) : clearTimeout(W.current), W.current = setTimeout(() => {
+        W.current = null, Z(false)
       }, 200), null != b && b(e)
     }, [b, es]);
     return i.useLayoutEffect(() => {
       2 !== Q.current.dirty && (Q.current.dirty = 2)
     }, [er, Q]), (0, r.jsxs)("div", _(f({
-      ref: Z,
+      ref: X,
       onScroll: ed,
       className: s()(U, {
         [e]: true,
@@ -201,17 +201,17 @@ function g(e, t, n) {
               i = ee[e],
               a = en[e],
               s = ee[(0, o.tx)(n)],
-              l = null == w ? true : w(n);
+              l = null == R ? true : R(n);
             return null != i && null != a ? (0, r.jsxs)("div", _(f({}, l), {
               style: f({}, i, null != (t = null == l ? true : l.style) ? t : {}),
               children: [null != N && null != s && N(n, s, e), a.map(e => {
                 let [t, n, r] = e, i = ee[t];
-                return null != i ? R(n, r, i, t, et) : null
+                return null != i ? w(n, r, i, t, et) : null
               })]
             }), e) : null
           })
         })
-      }), [en, R, N, ee, er, w, et])]
+      }), [en, w, N, ee, er, R, et])]
     }))
   })
 }

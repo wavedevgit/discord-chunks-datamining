@@ -82,8 +82,8 @@ function B(e, t) {
   }), e
 }
 let H = e => {
-  let t = (null != e ? e : 0) % R.A.DEFAULT_AVATARS.length;
-  return R.A.DEFAULT_AVATARS[t]
+  let t = (null != e ? e : 0) % w.A.DEFAULT_AVATARS.length;
+  return w.A.DEFAULT_AVATARS[t]
 };
 
 function Y(e) {
@@ -142,9 +142,9 @@ let K = Chunk64700.memo(function(e) {
     anchorLeft: g,
     avatarSizeMode: y,
     maxDisplayedVoiceStates: b = 8
-  } = e, O = (0, w.Dk)(() => W(s), [s]), [v, A] = s, I = A.length > 0 && null != n && null != a && (!d || f), S = (0, o.yK)([E.A], () => Array.from(O).map(e => E.A.getStreamForUser(e, p)).filter(C.Vq).map(e => e.ownerId), [p, O]);
+  } = e, O = (0, R.Dk)(() => W(s), [s]), [v, A] = s, I = A.length > 0 && null != n && null != a && (!d || f), S = (0, o.yK)([E.A], () => Array.from(O).map(e => E.A.getStreamForUser(e, p)).filter(C.Vq).map(e => e.ownerId), [p, O]);
   i.useEffect(() => {
-    I && (0, w.Y)(j.uss.VOICE_V3, {
+    I && (0, R.Y)(j.uss.VOICE_V3, {
       locked: T.default.isInstanceLocked(),
       shownUserIds: Array.from(O),
       liveUserIds: S,
@@ -155,13 +155,13 @@ let K = Chunk64700.memo(function(e) {
       emptyText: k.intl.string(k.t.hEh0l1),
       icon: l.HKD
     }),
-    R = false !== b ? A.slice(0, b) : A,
+    w = false !== b ? A.slice(0, b) : A,
     D = false !== b ? A.slice(b) : [],
     x = v.get(D[0]),
     G = u === j.f5z.ALWAYS && false !== b;
   return I ? (0, r.jsxs)("div", {
     className: U.h8,
-    children: [R.map(e => {
+    children: [w.map(e => {
       let i = v.get(e);
       return null == i ? null : (0, r.jsx)(L.Ay, {
         sortedVoiceState: i,

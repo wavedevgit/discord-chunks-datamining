@@ -60,28 +60,28 @@ function F(e) {
     } = e;
     return t
   }) : []), q = (0, s.bG)([A.A], () => A.A.findActivity(t.id, e => (0, f.A)(e) && !(0, p.A)(e))), {
-    analyticsLocations: X
-  } = (0, m.Ay)(h.A.USER_PROFILE_LIVE_ACTIVITY_CARD), Z = (0, S.A)({
+    analyticsLocations: Z
+  } = (0, m.Ay)(h.A.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, S.A)({
     display: "live",
     voiceChannelId: null == K ? true : K.id,
     user: t,
     stream: i,
-    analyticsLocations: X
+    analyticsLocations: Z
   }), Q = (0, T.A)({
     userId: t.id,
-    onAction: Z
+    onAction: X
   }), {
-    previewUrl: $,
-    isLoading: J
-  } = (0, E.A)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, y.zP)(K), en = (0, _.a9)() && (0, _.UK)(null == K ? true : K.id), er = (0, s.bG)([v.A], () => null != K && !en && v.A.canBasicChannel(L.hVb.CONNECT, K)), ei = (0, d.A)(J ? null : $), ea = J || null == $ ? ei : $;
+    previewUrl: J,
+    isLoading: $
+  } = (0, E.A)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, y.zP)(K), en = (0, _.a9)() && (0, _.UK)(null == K ? true : K.id), er = (0, s.bG)([v.A], () => null != K && !en && v.A.canBasicChannel(L.hVb.CONNECT, K)), ei = (0, d.A)($ ? null : J), ea = $ || null == J ? ei : J;
   if (null == W || null == K || false === i.discoverable) return null;
   let es = () => {
       let e = e => {
-        e.stopPropagation(), ee && (Z({
+        e.stopPropagation(), ee && (X({
           action: "PRESS_IMAGE"
         }), c.default.selectVoiceChannel(i.channelId), (0, u.Nl)(i), null == B || B())
       };
-      return null == ea && J ? (0, r.jsx)("div", {
+      return null == ea && $ ? (0, r.jsx)("div", {
         className: U.VH,
         children: (0, r.jsx)(l.y$y, {})
       }) : null == ea || en ? (0, r.jsxs)(l.DUT, {
@@ -128,10 +128,10 @@ function F(e) {
     },
     eo = () => H !== j.d.MODAL && H !== j.d.MODAL_V2 ? null : (0, r.jsxs)("div", {
       className: k.zH,
-      children: [(0, r.jsx)(w.A, {
+      children: [(0, r.jsx)(R.A, {
         channel: K,
         guild: W,
-        onAction: Z,
+        onAction: X,
         onClose: B
       }), (0, r.jsx)(o.A, {
         users: z,
@@ -140,7 +140,7 @@ function F(e) {
         maxUsers: P.k,
         size: l._3J.SIZE_16,
         onClickOverflow: e => {
-          null == e || e.stopPropagation(), null == Z || Z({
+          null == e || e.stopPropagation(), null == X || X({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
           })
         },
@@ -154,14 +154,14 @@ function F(e) {
       user: t,
       guild: W,
       channel: K,
-      onAction: Z,
+      onAction: X,
       onClose: B
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: k.o1,
       children: (0, r.jsx)(D.A, {
         channel: K,
-        onAction: Z,
+        onAction: X,
         onClose: B
       })
     }),
@@ -169,14 +169,14 @@ function F(e) {
       name: q.name
     }) : M.intl.string(M.t["Jpkr/q"]);
   return (0, r.jsx)(m.f5, {
-    value: X,
+    value: Z,
     children: (0, r.jsxs)(N.A, {
       ref: Q,
       className: F,
-      onAction: Z,
+      onAction: X,
       onClose: B,
       "aria-label": eu,
-      children: [(0, r.jsx)(R.A, {
+      children: [(0, r.jsx)(w.A, {
         text: eu,
         tags: (0, r.jsx)(g.Ay, {
           size: g.ed.SMALL

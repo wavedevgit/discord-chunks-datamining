@@ -410,8 +410,8 @@ class b extends Chunk972347.A {
         packetsLost: T,
         nackCount: C,
         pliCount: N,
-        qpSum: R,
-        pauseCount: w,
+        qpSum: w,
+        pauseCount: R,
         freezeCount: P,
         totalPausesDuration: D,
         totalFreezesDuration: x,
@@ -431,7 +431,7 @@ class b extends Chunk972347.A {
         qualitySizeMismatches: z
       } = e.aggregatedProperties,
       q = (null != U ? U : 0) - (null != (t = e.cryptorFailureBeforeSuccessCount) ? t : 0);
-    return e instanceof p.ET ? (y.sender_freeze_count = P, y.sender_total_freezes_duration = x, y.sender_total_frames_duration = L) : (y.receiver_freeze_count = P, y.receiver_total_freezes_duration = x, y.receiver_total_frames_duration = L, y.receiver_pause_count = w, y.receiver_total_pauses_duration = D), g(h({}, y), {
+    return e instanceof p.ET ? (y.sender_freeze_count = P, y.sender_total_freezes_duration = x, y.sender_total_frames_duration = L) : (y.receiver_freeze_count = P, y.receiver_total_freezes_duration = x, y.receiver_total_frames_duration = L, y.receiver_pause_count = R, y.receiver_total_pauses_duration = D), g(h({}, y), {
       avg_bitrate: i > 0 ? Math.round((null != b ? b : 0) * 8 / i) : 0,
       avg_fps: i > 0 ? Math.round((null != A ? A : 0) / i) : 0,
       num_bytes: b,
@@ -443,7 +443,7 @@ class b extends Chunk972347.A {
       num_frames_dropped: O,
       num_nacks: C,
       num_plis: N,
-      qp_sum: R,
+      qp_sum: w,
       num_keyframes: j,
       cryptor_passthrough_count: M,
       cryptor_success_count: k,

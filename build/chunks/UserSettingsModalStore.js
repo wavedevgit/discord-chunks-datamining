@@ -100,9 +100,9 @@ function N() {
   u = o.XlH.SUBMITTING
 }
 
-function R() {
+function w() {
   let e = s.default.getCurrentUser();
-  w(), null != e && (m = c({}, h = {
+  R(), null != e && (m = c({}, h = {
     [o.nc_.ACCOUNT]: {
       userId: e.id,
       username: e.username,
@@ -116,7 +116,7 @@ function R() {
   }))
 }
 
-function w() {
+function R() {
   u = o.XlH.OPEN, _ = {}
 }
 
@@ -172,6 +172,6 @@ let x = new D(Chunk73153.h, {
   USER_SETTINGS_MODAL_CLEAR_SUBSECTION: S,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: T,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: C,
-  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: w,
-  USER_SETTINGS_MODAL_RESET: R
+  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: R,
+  USER_SETTINGS_MODAL_RESET: w
 })

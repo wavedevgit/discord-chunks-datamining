@@ -2,7 +2,7 @@
 /** chunk id: 405680, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R
+  A: () => w
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,12 +30,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk445698 = require("./445698.js");
-let R = function(e) {
+let w = function(e) {
   let {
     analyticsLocation: t,
     guild: n,
-    onClose: R,
-    scrollToPowerupCards: w
+    onClose: w,
+    scrollToPowerupCards: R
   } = e, [P, D] = i.useState(true), x = i.useRef(false), L = (0, c.A)(() => Date.now()), {
     analyticsLocations: j
   } = (0, u.Ay)(), M = i.useRef(null), k = i.useRef(null), U = i.useRef(null), G = i.useCallback(() => {
@@ -46,7 +46,7 @@ let R = function(e) {
   }, []), V = i.useCallback(() => {
     G()
   }, [G]), F = i.useCallback(() => {
-    null == R || R(), g.default.track(T.HAw.MODAL_DISMISSED, {
+    null == w || w(), g.default.track(T.HAw.MODAL_DISMISSED, {
       type: T.liQ.PREMIUM_GUILD_USER_MODAL,
       location_stack: j,
       location_section: t.section,
@@ -54,7 +54,7 @@ let R = function(e) {
       guild_id: n.id,
       duration_open_ms: Date.now() - L
     })
-  }, [R, t, j, L, n.id]), B = i.useCallback(e => {
+  }, [w, t, j, L, n.id]), B = i.useCallback(e => {
     e && !x.current && (g.default.track(T.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: T.liQ.PREMIUM_GUILD_USER_MODAL,
       location_stack: j,
@@ -85,14 +85,14 @@ let R = function(e) {
   return i.useEffect(() => {
     H && !Y && (0, d.z9)(n.id)
   }, [n.id, H, Y]), i.useEffect(() => {
-    if (w && W) {
+    if (R && W) {
       let e = setTimeout(() => {
         G()
       }, 100);
       return () => clearTimeout(e)
     }
-  }, [w, G, W]), (0, r.jsxs)(r.Fragment, {
-    children: [null != R && (0, r.jsx)("div", {
+  }, [R, G, W]), (0, r.jsxs)(r.Fragment, {
+    children: [null != w && (0, r.jsx)("div", {
       className: N.bn,
       children: (0, r.jsx)(l.A, {
         className: N.ut,

@@ -66,7 +66,7 @@ let I = () => {
         onConfirm: () => f.A.removeGuildJoinRequest(v.id)
       })
     },
-    R = () => {
+    w = () => {
       (0, c.mMO)(async () => {
         let {
           default: e
@@ -76,17 +76,17 @@ let I = () => {
         }, t))
       })
     },
-    w = null != (e = null == I ? true : I.applicationStatus) ? e : _.B5.STARTED,
+    R = null != (e = null == I ? true : I.applicationStatus) ? e : _.B5.STARTED,
     P = null,
     D = null,
     x = null,
     L = [b.lm, O.lm];
-  switch (w) {
+  switch (R) {
     case _.B5.SUBMITTED:
       P = y.intl.string(y.t["5iLvSx"]), D = y.intl.string(y.t.mqtdmQ), x = N;
       break;
     case _.B5.REJECTED:
-      P = y.intl.string(y.t.lk30cY), D = y.intl.string(y.t["8RrsHr"]), x = R, L.push(b.z3);
+      P = y.intl.string(y.t.lk30cY), D = y.intl.string(y.t["8RrsHr"]), x = w, L.push(b.z3);
       break;
     default:
       P = y.intl.string(y.t.G5YKXP), D = y.intl.string(y.t["r8/DT+"]), x = C

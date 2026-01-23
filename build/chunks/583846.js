@@ -17,11 +17,11 @@ require.d(exports, {
   W6: () => p,
   aJ: () => h,
   gF: () => N,
-  iy: () => w,
+  iy: () => R,
   kR: () => C,
   ty: () => v,
   us: () => T,
-  uw: () => R
+  uw: () => w
 }), require("./747238.js");
 var Chunk444058 = require("./444058.js"),
   Chunk989349 = require("./989349.js"),
@@ -191,17 +191,17 @@ function N(e, t) {
   })), null != s && null != e ? "".concat(e, " (").concat(s, ")") : null != e ? e : s
 }
 
-function R(e) {
+function w(e) {
   return e.content_type === o.I.TOP_GAME
 }
 
-function w(e) {
+function R(e) {
   var t;
   return null == (t = g(e, s.K.STREAK_DAYS)) ? true : t.streak_count_days
 }
 
 function P(e) {
-  let t = w(e);
+  let t = R(e);
   if (null == t || t < 3) returnfalse;
   let n = c.default.extractTimestamp(e.id);
   return !(Date.now() - n > 48 * l.A.Millis.HOUR)

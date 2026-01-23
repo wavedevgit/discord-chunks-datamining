@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 189244, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -27,12 +27,12 @@ function b() {
     C = p.eh.useSetting(),
     S = (0, l.bG)([m.A], () => m.A.theme),
     O = C.backgroundGradientPresetId,
-    E = (0, l.bG)([c.A], () => c.A.purchases),
-    T = (0, d.x9)(E),
-    N = (0, d.$W)(E),
+    T = (0, l.bG)([c.A], () => c.A.purchases),
+    E = (0, d.x9)(T),
+    N = (0, d.$W)(T),
     w = null == A || null == (v = A.avatarDecoration) ? true : v.skuId,
     I = null == A || null == (_ = A.collectibles) || null == (j = _.nameplate) ? true : j.skuId,
-    k = null != w && null != (e = T.find(e => e.skuId === w)) ? e : null,
+    k = null != w && null != (e = E.find(e => e.skuId === w)) ? e : null,
     P = null != I && null != (t = N.find(e => e.skuId === I)) ? t : null,
     R = (0, l.bG)([o.A], () => o.A.getProduct(null == k ? true : k.skuId)),
     D = (0, l.bG)([o.A], () => o.A.getProduct(null == P ? true : P.skuId)),

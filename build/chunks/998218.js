@@ -49,20 +49,20 @@ function N(e) {
   return null != t && (!!(0, l.iT)() && ("localhost" === t.hostname || "127.0.0.1" === t.hostname) || t.hostname === window.GLOBAL_ENV.CDN_HOST || f.test(t.hostname))
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   if (!I(t, n) || null == e) returnfalse;
   let r = c.A.toURLSafe(e);
   return null != r && (!!(0, l.iT)() && ("localhost" === r.hostname || "127.0.0.1" === r.hostname) && "4000" === r.port || p.test(r.hostname))
 }
 
-function w(e) {
+function R(e) {
   if (null == e) returnfalse;
   let t = c.A.toURLSafe(e);
   return null != t && _.has(t.hostname)
 }
 
 function P(e, t, n) {
-  return !!(N(e) || R(e, t, n) || w(e))
+  return !!(N(e) || w(e, t, n) || R(e))
 }
 
 function D(e) {
@@ -96,8 +96,8 @@ let L = {
     return null != e && o.parse(e).hostname === window.GLOBAL_ENV.CDN_HOST
   },
   isDiscordDirectAssetUrl: N,
-  isDiscordProxiedAssetUrl: R,
-  isAllowedGifProviderUrl: w,
+  isDiscordProxiedAssetUrl: w,
+  isAllowedGifProviderUrl: R,
   isDiscordAssetUrl: P,
   isDiscordUrlOrUri: e => D(e) || x(e),
   isAppRoute: e => {

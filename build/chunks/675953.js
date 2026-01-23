@@ -1,5 +1,6 @@
-/** Chunk was on 66801 **/
-/** chunk id: 675953, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 675953, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   Os: "nameplatePlaceholderUserRow_e75aa6",
   yf: "nameplatePlaceholderAvatar_e75aa6",

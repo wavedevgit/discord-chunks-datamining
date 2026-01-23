@@ -94,11 +94,11 @@ function I(e) {
   } = (0, m.G9)(), {
     fieldProps: N
   } = (0, p.n)(T), {
-    disabled: R,
-    errorMessage: w,
+    disabled: w,
+    errorMessage: R,
     required: P = false
   } = N, D = {
-    hasError: null != w && "" !== w
+    hasError: null != R && "" !== R
   }, {
     refs: x,
     floatingStyles: L,
@@ -144,7 +144,7 @@ function I(e) {
         "aria-errormessage": e.errorMessageId,
         value: t,
         onChange: B,
-        isDisabled: R,
+        isDisabled: w,
         isRequired: P,
         minValue: i,
         maxValue: E,
@@ -182,7 +182,7 @@ function I(e) {
               onChange: B,
               minValue: i,
               maxValue: E,
-              disabled: R
+              disabled: w
             })
           })
         }))]

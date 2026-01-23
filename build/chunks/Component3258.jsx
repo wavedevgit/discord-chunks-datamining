@@ -40,7 +40,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -138,7 +138,7 @@ function L() {
     align: "center",
     animation: f.Y.Animation.SCALE,
     onRequestClose: () => {},
-    children: t => (0, r.jsx)(h.K0, P(R({
+    children: t => (0, r.jsx)(h.K0, P(w({
       size: "sm",
       icon: a.SettingsIcon,
       "aria-label": "Settings",
@@ -181,7 +181,7 @@ function j(e) {
     D.setState({
       selectedStory: e
     })
-  }, N = null != (t = null == E ? true : E.name) ? t : "Design System", R = null == b ? true : b.name, w = () => {
+  }, N = null != (t = null == E ? true : E.name) ? t : "Design System", w = null == b ? true : b.name, R = () => {
     if (null == E) return;
     let e = null != b ? "dev://playground/".concat(E.id, "/").concat(b.id) : "dev://playground/".concat(E.id);
     (0, O.C)(e, () => (0, p.P0)({
@@ -214,11 +214,11 @@ function j(e) {
         className: C.wx,
         children: [null != N ? (0, r.jsx)(g.Ay.Title, {
           children: N
-        }) : null, null != R ? (0, r.jsxs)(r.Fragment, {
+        }) : null, null != w ? (0, r.jsxs)(r.Fragment, {
           children: [null != N ? (0, r.jsx)(g.Ay.Caret, {
             className: C.zN
           }) : null, (0, r.jsx)(g.Ay.Title, {
-            children: R
+            children: w
           })]
         }) : null, (null == b ? true : b.docs) != null ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(g.Ay.Divider, {
@@ -234,7 +234,7 @@ function j(e) {
           "aria-label": "Copy Link",
           variant: "icon-only",
           icon: a.CopyIcon,
-          onClick: w
+          onClick: R
         }) : null, (0, r.jsx)("div", {
           className: C.IE,
           children: (0, r.jsx)(L, {})

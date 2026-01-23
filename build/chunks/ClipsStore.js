@@ -65,8 +65,8 @@ let b = "default",
   T = null,
   C = {},
   N = null,
-  R = [],
-  w = null,
+  w = [],
+  R = null,
   P = {},
   D = new Map,
   x = {
@@ -153,7 +153,7 @@ function G(e) {
   if (I += 1, L.hasTakenDecoupledClip = L.hasTakenDecoupledClip || t === p.Fv.DECOUPLED, null != n && null != r) {
     var i;
     let e = Date.now();
-    w = null != w ? w : e, P[n] = [...null != (i = P[n]) ? i : [], {
+    R = null != R ? R : e, P[n] = [...null != (i = P[n]) ? i : [], {
       timestamp: e,
       thumbnail: r
     }]
@@ -165,7 +165,7 @@ function V(e) {
     streamKey: t,
     timestamp: n
   } = e;
-  w === n && (w = null), null == n ? P[t] = [] : P[t] = P[t].filter(e => e.timestamp !== n)
+  R === n && (R = null), null == n ? P[t] = [] : P[t] = P[t].filter(e => e.timestamp !== n)
 }
 
 function F() {
@@ -244,7 +244,7 @@ function q(e) {
   N = t
 }
 
-function X(e) {
+function Z(e) {
   let {
     sourceName: t,
     pid: n
@@ -264,11 +264,11 @@ function X(e) {
   }
 }
 
-function Z(e) {
+function X(e) {
   let {
     streamKey: t
   } = e;
-  if (w = null, P[t] = [], null == T || (0, c.Iy)(t).ownerId !== u.default.getId()) returnfalse;
+  if (R = null, P[t] = [], null == T || (0, c.Iy)(t).ownerId !== u.default.getId()) returnfalse;
   T = 0 === T.newClipIds.length ? null : y(g({}, T), {
     ended: true
   })
@@ -278,7 +278,7 @@ function Q(e) {
   L.hasClips = e.clips.length > 0, v = e.clips
 }
 
-function $(e) {
+function J(e) {
   0 === (v = v.filter(t => {
     let {
       filepath: n
@@ -287,7 +287,7 @@ function $(e) {
   })).length && (L.hasClips = false)
 }
 
-function J() {
+function $() {
   if (null == T) returnfalse;
   T = null
 }
@@ -329,7 +329,7 @@ function ei(e) {
   let {
     clipIds: t
   } = e;
-  R = null != t ? t : []
+  w = null != t ? t : []
 }
 
 function ea(e, t, n) {
@@ -385,7 +385,7 @@ class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return S === e
   }
   getActiveAnimation() {
-    return w
+    return R
   }
   getStreamClipAnimations(e) {
     var t;
@@ -431,10 +431,10 @@ class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return L.newClipIds
   }
   isClipExporting(e) {
-    return R.includes(e)
+    return w.includes(e)
   }
   getExportingClipIds() {
-    return R
+    return w
   }
   getMatchingGroupClip(e, t) {
     if (null == e && null == t) return null;
@@ -539,12 +539,12 @@ let ec = new el(Chunk73153.h, {
     CLIPS_SAVE_CLIP_START: G,
     CLIPS_SAVE_CLIP_ERROR: F,
     CLIPS_SAVE_ANIMATION_END: V,
-    STREAM_START: X,
-    STREAM_STOP: Z,
-    CLIPS_CLEAR_CLIPS_SESSION: J,
+    STREAM_START: Z,
+    STREAM_STOP: X,
+    CLIPS_CLEAR_CLIPS_SESSION: $,
     CLIPS_CLEAR_NEW_CLIP_IDS: ee,
     CLIPS_LOAD_DIRECTORY_SUCCESS: Q,
-    CLIPS_DELETE_CLIP: $,
+    CLIPS_DELETE_CLIP: J,
     CLIPS_UPDATE_METADATA: k,
     RTC_CONNECTION_FLAGS: et,
     CLIPS_SHOW_CALL_WARNING: W,

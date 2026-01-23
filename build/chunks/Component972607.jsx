@@ -56,7 +56,7 @@ function k(e) {
   } = (0, P.Pv)(), B = null == V ? true : V.giftPurchaseConfirmation, H = (0, m.Mv)(null == F ? true : F.skuId), Y = (0, b.Mq)(o) && null != H && null != B, W = () => null != o ? o.skuId : null != a ? a.id : null, K = () => {
     let e;
     return null != E ? L.intl.string(L.t.qB8aya) : null == o ? null : (e = o.interval === x.WT.MONTH ? k ? Y ? B.monthGiftText : L.t["4ZJ+7Z"] : L.t["P+z55d"] : k ? Y ? B.yearGiftText : L.t.p0pZXP : L.t.bXqk3o, L.intl.format(e, {
-      skuName: (0, R.RH)(o.id),
+      skuName: (0, w.RH)(o.id),
       intervalCount: o.intervalCount
     }))
   }, z = () => null != _ || p && null == E ? L.intl.string(L.t.zOmK9N) : null != E ? L.intl.string(L.t.d1lrmU) : L.intl.string(L.t["/s1xR7"]), q = (e, t) => {
@@ -66,7 +66,7 @@ function k(e) {
     }), a), (0, C.C)(e, () => I(f.e2O.Modes.SUCCESS), () => I(f.e2O.Modes.ERROR)), setTimeout(() => {
       I(f.e2O.Modes.DEFAULT)
     }, M)
-  }, X = () => {
+  }, Z = () => {
     let e;
     if (null == t) return null;
     switch (v) {
@@ -99,7 +99,7 @@ function k(e) {
         children: L.intl.string(L.t.QWKUpn)
       })]
     })
-  }, Z = () => (0, r.jsxs)(r.Fragment, {
+  }, X = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: j.I0,
       children: K()
@@ -108,7 +108,7 @@ function k(e) {
       onClose: u
     }), (0, r.jsx)("div", {
       className: j.yF
-    }), X()]
+    }), Z()]
   }), Q = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: j.jx,
@@ -119,10 +119,10 @@ function k(e) {
         className: j.gn,
         children: [(0, r.jsx)(f.Heading, {
           variant: "heading-md/semibold",
-          children: w.Ay.getName(_)
+          children: R.Ay.getName(_)
         }), (0, r.jsxs)("div", {
           className: j.Ik,
-          children: [" ", w.Ay.getUserTag(_)]
+          children: [" ", R.Ay.getUserTag(_)]
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -156,7 +156,7 @@ function k(e) {
         [j.$A]: null != l && !G
       }),
       children: z()
-    }), p && null != _ && null == E || k ? Q() : Z()]
+    }), p && null != _ && null == E || k ? Q() : X()]
   })
 }
 let U = e => {
@@ -173,9 +173,9 @@ let U = e => {
   } = (0, c.cf)([v.A], () => ({
     userAffinities: v.A.getUserAffinitiesMap(),
     isLoading: v.A.isFetching()
-  })), A = Array.from(y.keys()).sort((e, t) => v.A.compare(e, t)), S = (0, c.bG)([I.A], () => I.A.getFriendIDs()), C = l().difference(S, A), N = [...A, ...C], R = (0, c.bG)([T.default], () => T.default.filter(e => N.includes(e.id) && !e.bot), [N]);
-  if (null == R || 0 === R.length) return null;
-  let P = l().sortBy(R, e => N.indexOf(e.id));
+  })), A = Array.from(y.keys()).sort((e, t) => v.A.compare(e, t)), S = (0, c.bG)([I.A], () => I.A.getFriendIDs()), C = l().difference(S, A), N = [...A, ...C], w = (0, c.bG)([T.default], () => T.default.filter(e => N.includes(e.id) && !e.bot), [N]);
+  if (null == w || 0 === w.length) return null;
+  let P = l().sortBy(w, e => N.indexOf(e.id));
   return (0, r.jsxs)("div", {
     className: j.vt,
     children: [(0, r.jsxs)("div", {
@@ -192,7 +192,7 @@ let U = e => {
         options: P.map(e => ({
           id: e.id,
           value: e,
-          label: "".concat(w.Ay.getUserTag(e)),
+          label: "".concat(R.Ay.getUserTag(e)),
           leading: (0, r.jsx)(h.A, {
             user: e,
             size: f._3J.SIZE_20

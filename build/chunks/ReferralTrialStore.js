@@ -41,12 +41,12 @@ function C() {
 }
 let N = () => true;
 
-function R(e) {
+function w(e) {
   let {} = e;
   T = null, h = true
 }
 
-function w(e) {
+function R(e) {
   let {
     referrals_remaining: t,
     sent_user_ids: n,
@@ -186,8 +186,8 @@ class Y extends(r = Chunk311907.Ay.Store) {
 u(Y, "displayName", "ReferralTrialStore");
 let W = new Y(Chunk73153.h, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: G,
-  BILLING_REFERRALS_REMAINING_FETCH_START: R,
-  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: w,
+  BILLING_REFERRALS_REMAINING_FETCH_START: w,
+  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: R,
   BILLING_REFERRALS_REMAINING_FETCH_FAIL: P,
   BILLING_CREATE_REFERRAL_SUCCESS: D,
   CREATE_REFERRALS_SUCCESS: x,

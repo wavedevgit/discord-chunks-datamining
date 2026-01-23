@@ -52,10 +52,10 @@ var Chunk652215 = require("./652215.js"),
   Chunk73510 = require("./73510.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk244777 = require("./244777.js");
-let Z = [],
+let X = [],
   Q = 4,
-  $ = 4,
-  J = 6,
+  J = 4,
+  $ = 6,
   ee = 8,
   et = [, , , , ].fill(0).map((e, t) => t),
   en = [{
@@ -89,18 +89,18 @@ function ei(e) {
   }, [t]), i.useEffect(() => {
     n === x.s4.VOICE && E.LK()
   }, [n]);
-  let R = a.length > 0;
+  let w = a.length > 0;
   return (0, r.jsxs)("div", {
-    className: X.kL,
+    className: Z.kL,
     children: [N ? (0, r.jsx)(ea, {}) : null, (0, r.jsx)(es, {
       searchQuery: a,
       setSearchQuery: s,
       placeholder: p ? q.intl.string(q.t.ziyFv2) : q.intl.string(q.t["pw+r5b"])
     }), (0, r.jsx)(h.HOs, {
       ref: o,
-      className: X.Ph,
+      className: Z.Ph,
       fade: true,
-      children: R ? (0, r.jsx)(W.A, {
+      children: w ? (0, r.jsx)(W.A, {
         context: t,
         query: a,
         entrypoint: n,
@@ -131,9 +131,9 @@ function ei(e) {
 
 function ea() {
   return (0, r.jsxs)("div", {
-    className: X.G,
+    className: Z.G,
     children: [(0, r.jsx)(h.Text, {
-      className: X.TR,
+      className: Z.TR,
       variant: "text-sm/normal",
       children: q.intl.string(q.t.tZ3FNs)
     }), (0, r.jsx)(O.F, {
@@ -176,7 +176,7 @@ function es(e) {
       e.removeEventListener("click", t)
     }
   }, [l, f]), (0, r.jsx)("div", {
-    className: X.PP,
+    className: Z.PP,
     children: (0, r.jsx)(h.IWV, {
       ref: o,
       placeholder: a,
@@ -253,9 +253,9 @@ function el(e) {
       buttonType: H.A.buttonTypes.VIEW_MORE,
       onClickViewButton: p
     }), (0, r.jsx)("div", {
-      className: X._,
+      className: Z._,
       children: (0, r.jsx)("div", {
-        className: X.Ye,
+        className: Z.Ye,
         children: f.map((e, n) => {
           let {
             application: i
@@ -314,7 +314,7 @@ function ec(e) {
         title: q.intl.string(q.t.shUONg)
       })
     }), (0, r.jsx)("div", {
-      className: X.a2,
+      className: Z.a2,
       children: s.map((e, t) => {
         let {
           application: i
@@ -373,7 +373,7 @@ function eu(e) {
         onClickViewButton: c
       })
     }), (0, r.jsx)("div", {
-      className: X.l2,
+      className: Z.l2,
       children: o ? et.map(e => (0, r.jsx)(V.A, {
         look: G.r0.ROW
       }, e)) : l.map((e, n) => {
@@ -418,7 +418,7 @@ function ed(e) {
     } = e;
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(H.A.Loading, {}), (0, r.jsx)("div", {
-        className: i === G.r0.ROW ? X.l2 : X.a2,
+        className: i === G.r0.ROW ? Z.l2 : Z.a2,
         children: n.map(e => (0, r.jsx)(V.A, {
           look: i
         }, e))
@@ -479,11 +479,11 @@ function ef(e) {
   switch (a.type) {
     case f.Y.BANNER_CARDS:
     case f.Y.SMALL_BANNER_CARDS:
-      n = J;
+      n = $;
       break;
     case f.Y.EXPANDABLE_LIST:
     default:
-      n = $
+      n = J
   }
   let {
     items: E,
@@ -513,7 +513,7 @@ function ef(e) {
         onClickViewButton: y
       })
     }), (0, r.jsx)("div", {
-      className: t === G.r0.ROW ? X.l2 : X.a2,
+      className: t === G.r0.ROW ? Z.l2 : Z.a2,
       children: E.map((e, n) => {
         let i, {
           collectionItemId: a,
@@ -522,7 +522,7 @@ function ef(e) {
           installOnDemand: l,
           showsPromoted: c
         } = e;
-        return null != a && null != s && (i = (0, R.DH)({
+        return null != a && null != s && (i = (0, w.DH)({
           itemId: a,
           hash: s,
           containerWidth: 500
@@ -553,7 +553,7 @@ function ep(e) {
 }
 
 function e_() {
-  let e = (0, _.bG)([w.default], () => w.default.onlyShowPreviewAppCollections),
+  let e = (0, _.bG)([R.default], () => R.default.onlyShowPreviewAppCollections),
     t = T.A.getCurrentConfig({
       location: "App Launcher Home (Web)"
     }, {
@@ -611,7 +611,7 @@ function em(e) {
     guildId: "channel" === n.type ? null == (t = n.channel) ? true : t.getGuildId() : true
   });
   return i.useMemo(() => {
-    if (!r.some(e => (0, p.Lt)(e.flags, l.s.APPENDS_REMAINING_ACTIVITIES))) return Z;
+    if (!r.some(e => (0, p.Lt)(e.flags, l.s.APPENDS_REMAINING_ACTIVITIES))) return X;
     let e = new Set;
     return r.forEach(t => {
       t.application_directory_collection_items.forEach(t => {

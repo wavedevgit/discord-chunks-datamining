@@ -1,5 +1,5 @@
 /** Chunk was on 42944 **/
-/** chunk id: 667049, original params: e,t,n (module,exports,require) **/
+/** chunk id: 667049, original params: e,a,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 });
@@ -9,16 +9,16 @@ var Chunk311907 = require("./311907.js"),
   Chunk61881 = require("./61881.js");
 
 function s(e) {
-  let t = (0, a.bG)([l.default], () => {
-      let t = l.default.getId();
-      return null != e && t === e
+  let a = (0, t.bG)([l.default], () => {
+      let a = l.default.getId();
+      return null != e && a === e
     }, [e]),
-    n = (0, a.bG)([r.A], () => r.A.getPendingWidgets()),
-    s = (0, a.yK)([i.A], () => {
-      var t;
+    n = (0, t.bG)([r.A], () => r.A.getPendingWidgets()),
+    s = (0, t.yK)([i.A], () => {
+      var a;
       if (null == e) return [];
       let n = i.A.getUserProfile(e);
-      return null != (t = null == n ? true : n.widgets) ? t : []
+      return null != (a = null == n ? true : n.widgets) ? a : []
     }, [e]);
-  return t && null !== n ? n : s
+  return a && null !== n ? n : s
 }

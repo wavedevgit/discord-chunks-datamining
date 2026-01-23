@@ -79,18 +79,18 @@ function N(e) {
   }))
 }
 
-function R(e) {
+function w(e) {
   var t, n, a, s, o, u, d;
   let f, {
       option: g,
       channel: O,
       guild: v,
       messageId: I,
-      parentOptionKey: w,
+      parentOptionKey: R,
       commandOptionSpec: P,
       sourceAnalyticsLocations: D
     } = e,
-    x = null != w ? w + " " + g.name : g.name;
+    x = null != R ? R + " " + g.name : g.name;
   if (g.type === c.n4.SUB_COMMAND || g.type === c.n4.SUB_COMMAND_GROUP) {
     let e = [(0, r.jsxs)(i.Fragment, {
         children: [" ", (0, r.jsx)(l.Text, S(A({}, T), {
@@ -98,7 +98,7 @@ function R(e) {
         }))]
       }, x)],
       t = Object.fromEntries(null == (o = null != (a = null == P ? true : P.options) ? a : []) ? true : o.map(e => [e.name, e]));
-    for (let n of null != (s = g.options) ? s : []) e = e.concat(R({
+    for (let n of null != (s = g.options) ? s : []) e = e.concat(w({
       option: n,
       channel: O,
       guild: v,
@@ -182,7 +182,7 @@ function R(e) {
   }, x)]
 }
 
-function w(e) {
+function R(e) {
   var t, n, a, s, p, _;
   let h, {
       channel: m,
@@ -206,7 +206,7 @@ function w(e) {
   else {
     let e = [],
       t = Object.fromEntries((null != (n = null == (p = y.application_command) ? true : p.options) ? n : []).map(e => [e.name, e]));
-    for (let n of null != (a = y.options) ? a : []) e = e.concat(R({
+    for (let n of null != (a = y.options) ? a : []) e = e.concat(w({
       option: n,
       channel: m,
       guild: C,
@@ -238,4 +238,4 @@ function w(e) {
     })]
   })
 }
-let P = Chunk64700.memo(w)
+let P = Chunk64700.memo(R)

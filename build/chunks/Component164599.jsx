@@ -39,8 +39,8 @@ function b(e) {
     guildId: null == n ? true : n.id
   }), {
     pendingProfileEffect: N,
-    errors: R
-  } = (0, p.nZ)(null == n ? true : n.id), w = true === N ? null != C : null != N, P = () => {
+    errors: w
+  } = (0, p.nZ)(null == n ? true : n.id), R = true === N ? null != C : null != N, P = () => {
     (0, u.W)({
       analyticsLocations: S,
       guild: n,
@@ -62,7 +62,7 @@ function b(e) {
     hasBackground: true,
     title: O,
     showBorder: I,
-    errors: R,
+    errors: w,
     className: b,
     children: (0, r.jsxs)("div", {
       className: y.NC,
@@ -73,7 +73,7 @@ function b(e) {
           [y.yj]: A
         }),
         children: E.intl.string(E.t["/dRfCf"])
-      }), w && (0, r.jsx)("div", {
+      }), R && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: y.DT,
         children: (0, r.jsx)(l.Button, {

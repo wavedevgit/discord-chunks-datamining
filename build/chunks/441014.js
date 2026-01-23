@@ -90,7 +90,7 @@ function N() {
   return !!E || !(t.unstable_now() - C < T)
 }
 
-function R() {
+function w() {
   if (E = false, I) {
     var e = t.unstable_now();
     C = e;
@@ -135,16 +135,16 @@ function R() {
   }
 }
 if ("function" == typeof O) s = function() {
-  O(R)
+  O(w)
 };
 else if ("u" > typeof MessageChannel) {
-  var w = new MessageChannel,
-    P = w.port2;
-  w.port1.onmessage = R, s = function() {
+  var R = new MessageChannel,
+    P = R.port2;
+  R.port1.onmessage = w, s = function() {
     P.postMessage(null)
   }
 } else s = function() {
-  y(R, 0)
+  y(w, 0)
 };
 
 function D(e, n) {

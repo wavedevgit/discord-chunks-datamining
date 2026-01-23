@@ -7,7 +7,7 @@ require.d(exports, {
   Ol: () => P,
   e4: () => N,
   hp: () => T,
-  jA: () => R,
+  jA: () => w,
   zk: () => I
 }), require("./896048.js");
 var Chunk735438 = require("./735438.js"),
@@ -94,7 +94,7 @@ function A(e, t, n, r) {
     previous: o,
     label: m.G_.optedIn(n),
     location: r
-  }), w(e), h.default.track(g.HAw.CHANNEL_LIST_UPDATED, v(b({}, (0, l.H$)(e), (0, l.dI)(p.A.getChannel(t))), {
+  }), R(e), h.default.track(g.HAw.CHANNEL_LIST_UPDATED, v(b({}, (0, l.H$)(e), (0, l.dI)(p.A.getChannel(t))), {
     action_type: n ? "add" : "remove",
     location: r
   }))
@@ -137,7 +137,7 @@ function I(e, t, n, r) {
     previous: o,
     label: m.G_.optedIn(n),
     location: r
-  }), w(e), h.default.track(g.HAw.CHANNEL_LIST_UPDATED, v(b({}, (0, l.H$)(e), (0, l.dI)(p.A.getChannel(t))), {
+  }), R(e), h.default.track(g.HAw.CHANNEL_LIST_UPDATED, v(b({}, (0, l.H$)(e), (0, l.dI)(p.A.getChannel(t))), {
     action_type: n ? "add" : "remove",
     location: r
   }))
@@ -201,7 +201,7 @@ function N(e, t, n) {
   }))
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   if (null == e || u.A.isFullServerPreview(e)) return;
   let a = _.Ay.getChannelIdFlags(e, t);
   !(0, i.Lt)(a, E.vv.OPT_IN_ENABLED) && n && (a = (0, i.lA)(a, E.vv.OPT_IN_ENABLED, true)), o.A.updateChannelOverrideSettings(e, t, {
@@ -212,7 +212,7 @@ function R(e, t, n, r) {
   }))
 }
 
-function w(e) {
+function R(e) {
   (0, f.TG)(e, e => (!(0, i.Lt)(e.guildOnboardingProgress, a.eF.GUILD_NOTICE_CLEARED) || !!(0, i.Lt)(e.guildOnboardingProgress, a.eF.GUILD_NOTICE_SHOWN)) && (e.guildOnboardingProgress = (0, i.UI)(e.guildOnboardingProgress, a.eF.GUILD_NOTICE_CLEARED), e.guildOnboardingProgress = (0, i.lA)(e.guildOnboardingProgress, a.eF.GUILD_NOTICE_SHOWN, false), true), f.Sb.INFREQUENT_USER_ACTION)
 }
 

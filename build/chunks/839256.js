@@ -34,9 +34,9 @@ function O(e, t, n) {
       ariaLabel: T,
       ariaLabelledBy: C,
       ariaDescribedBy: N,
-      focusManager: R
+      focusManager: w
     } = r.OX.get(t),
-    w = e.isPlaceholder ? "" : e.text,
+    R = e.isPlaceholder ? "" : e.text,
     P = (0, m.useMemo)(() => t.dateFormatter.resolvedOptions(), [t.dateFormatter]),
     D = (0, E.i)({
       month: "long",
@@ -47,16 +47,16 @@ function O(e, t, n) {
       hour12: P.hour12,
       timeZone: P.timeZone
     });
-  if ("month" !== e.type || e.isPlaceholder) "hour" !== e.type || e.isPlaceholder || (w = x.format(t.dateValue));
+  if ("month" !== e.type || e.isPlaceholder) "hour" !== e.type || e.isPlaceholder || (R = x.format(t.dateValue));
   else {
     let e = D.format(t.dateValue);
-    w = e !== w ? `${w} \u{2013} ${e}` : e
+    R = e !== R ? `${R} \u{2013} ${e}` : e
   }
   let {
     spinButtonProps: L
   } = (0, b.y)({
     value: e.value,
-    textValue: w,
+    textValue: R,
     minValue: e.minValue,
     maxValue: e.maxValue,
     isDisabled: t.isDisabled,
@@ -83,7 +83,7 @@ function O(e, t, n) {
   }), j = (0, m.useMemo)(() => new(0, h.d)(A, {
     maximumFractionDigits: 0
   }), [A]), M = () => {
-    if (e.text === e.placeholder && R.focusPrevious(), !j.isValidPartialNumber(e.text) || t.isReadOnly || e.isPlaceholder) "dayPeriod" === e.type && t.clearSegment(e.type);
+    if (e.text === e.placeholder && w.focusPrevious(), !j.isValidPartialNumber(e.text) || t.isReadOnly || e.isPlaceholder) "dayPeriod" === e.type && t.clearSegment(e.type);
     else {
       let n = e.text.slice(0, false),
         r = j.parse(n);
@@ -139,11 +139,11 @@ function O(e, t, n) {
         if (U(V, n)) t.setSegment("dayPeriod", 0);
         else if (U(F, n)) t.setSegment("dayPeriod", 12);
         else break;
-        R.focusNext();
+        w.focusNext();
         break;
       case "era": {
         let e = H.find(e => U(e.formatted, n));
-        e && (t.setSegment("era", e.era), R.focusNext());
+        e && (t.setSegment("era", e.era), w.focusNext());
         break
       }
       case "day":
@@ -168,7 +168,7 @@ function O(e, t, n) {
         } else true !== e.maxValue && i > e.maxValue && (a = j.parse(n));
         if (isNaN(i)) return;
         let o = 0 !== a || s;
-        o && t.setSegment(e.type, a), true !== e.maxValue && (Number(i + "0") > e.maxValue || r.length >= String(e.maxValue).length) ? (O.current = "", o && R.focusNext()) : O.current = r
+        o && t.setSegment(e.type, a), true !== e.maxValue && (Number(i + "0") > e.maxValue || r.length >= String(e.maxValue).length) ? (O.current = "", o && w.focusNext()) : O.current = r
       }
     }
   }, W = () => {
@@ -205,9 +205,9 @@ function O(e, t, n) {
   }), (0, d.N)(() => {
     let e = n.current;
     return () => {
-      document.activeElement === e && (R.focusPrevious() || R.focusNext())
+      document.activeElement === e && (w.focusPrevious() || w.focusNext())
     }
-  }, [n, R]);
+  }, [n, w]);
   let q = (0, o.un)() || "timeZoneName" === e.type ? {
     role: "textbox",
     "aria-valuemax": null,
@@ -216,10 +216,10 @@ function O(e, t, n) {
     "aria-valuenow": null
   } : {};
   e === (0, m.useMemo)(() => t.segments.find(e => e.isEditable), [t.segments]) || t.isInvalid || (N = true);
-  let X = (0, f.Bi)(),
-    Z = !t.isDisabled && !t.isReadOnly && e.isEditable,
+  let Z = (0, f.Bi)(),
+    X = !t.isDisabled && !t.isReadOnly && e.isEditable,
     Q = "literal" === e.type ? "" : S.of(e.type),
-    $ = (0, p.b)({
+    J = (0, p.b)({
       "aria-label": `${Q}${T?`, ${T}`:""}${C?", ":""}`,
       "aria-labelledby": C
     });
@@ -228,32 +228,32 @@ function O(e, t, n) {
       "aria-hidden": true
     }
   };
-  let J = {
+  let $ = {
     caretColor: "transparent"
   };
   if ("rtl" === I) {
-    J.unicodeBidi = "embed";
+    $.unicodeBidi = "embed";
     let t = P[e.type];
-    ("numeric" === t || "2-digit" === t) && (J.direction = "ltr")
+    ("numeric" === t || "2-digit" === t) && ($.direction = "ltr")
   }
   return {
-    segmentProps: (0, _.v)(L, $, {
-      id: X,
+    segmentProps: (0, _.v)(L, J, {
+      id: Z,
       ...q,
       "aria-invalid": t.isInvalid ? "true" : true,
       "aria-describedby": N,
       "aria-readonly": t.isReadOnly || !e.isEditable ? "true" : true,
       "data-placeholder": e.isPlaceholder || true,
-      contentEditable: Z,
-      suppressContentEditableWarning: Z,
-      spellCheck: Z ? "false" : true,
-      autoCorrect: Z ? "off" : true,
-      [parseInt(m.version, 10) >= 17 ? "enterKeyHint" : "enterkeyhint"]: Z ? "next" : true,
-      inputMode: t.isDisabled || "dayPeriod" === e.type || "era" === e.type || !Z ? true : "numeric",
+      contentEditable: X,
+      suppressContentEditableWarning: X,
+      spellCheck: X ? "false" : true,
+      autoCorrect: X ? "off" : true,
+      [parseInt(m.version, 10) >= 17 ? "enterKeyHint" : "enterkeyhint"]: X ? "next" : true,
+      inputMode: t.isDisabled || "dayPeriod" === e.type || "era" === e.type || !X ? true : "numeric",
       tabIndex: t.isDisabled ? true : 0,
       onKeyDown: k,
       onFocus: W,
-      style: J,
+      style: $,
       onPointerDown(e) {
         e.stopPropagation()
       },

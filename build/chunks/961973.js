@@ -4,7 +4,7 @@
 require.d(exports, {
   $Y: () => v,
   A2: () => b,
-  G4: () => R,
+  G4: () => w,
   H_: () => k,
   L1: () => A,
   Lx: () => T,
@@ -105,7 +105,7 @@ function N(e) {
   return null != e && !!(0, h.S)(e.guild_id, e.id) && (e.isForumChannel() ? p.MJ(g.xBc.SEND_MESSAGES_IN_THREADS, e) : p.MJ(g.xBc.SEND_MESSAGES, e))
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : () => true,
     i = P(e, t, e => e.id, r);
   return n.forEach(t => {
@@ -121,7 +121,7 @@ function R(e, t, n) {
   }), i
 }
 
-function w(e, t) {
+function R(e, t) {
   return e.filter(e => {
     var n;
     return N(null == (n = t[e]) ? true : n.channel)
@@ -148,7 +148,7 @@ function D(e, t) {
     r = c.Ay.getChannels(e)[c.I6],
     i = {};
   for (let e of r) i[e.channel.id] = e;
-  return [w(n.map(e => {
+  return [R(n.map(e => {
     let {
       id: t
     } = e;

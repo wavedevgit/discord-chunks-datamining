@@ -2,7 +2,7 @@
 /** chunk id: 687944, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R
+  A: () => w
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -137,7 +137,7 @@ function N(e) {
     })]
   })
 }
-let R = function(e) {
+let w = function(e) {
   let {
     subscription: t,
     invoicePreview: u,
@@ -147,8 +147,8 @@ let R = function(e) {
     renewalChurnDiscountInfo: v,
     discountOffer: I
   } = e, {
-    analyticsLocations: R
-  } = (0, o.Ay)(s.A.CHURN_DISCOUNT_SUBSCRIPTION_HEADER), w = () => {
+    analyticsLocations: w
+  } = (0, o.Ay)(s.A.CHURN_DISCOUNT_SUBSCRIPTION_HEADER), R = () => {
     t.status !== E.Dmq.CANCELED && P()
   }, P = e => {
     (0, a.mMO)(async () => {
@@ -158,7 +158,7 @@ let R = function(e) {
       return n => (0, r.jsx)(i, S(A({}, n), {
         premiumSubscription: t,
         analyticsLocation: _,
-        analyticsLocations: R,
+        analyticsLocations: w,
         initialStep: e
       }))
     })
@@ -185,7 +185,7 @@ let R = function(e) {
           size: "md",
           onClick: () => {
             (0, l.A)({
-              analyticsLocations: R,
+              analyticsLocations: w,
               analyticsLocation: _,
               analyticsObject: T,
               subscription: t
@@ -197,7 +197,7 @@ let R = function(e) {
         size: "md",
         text: y.intl.string(y.t["ETE/oC"]),
         loading: p,
-        onClick: w
+        onClick: R
       })]
     })
   }, x = f.Ay.getPlanIdFromInvoice(t, u), L = (0, h.ux)(null == I ? true : I.expires_at);

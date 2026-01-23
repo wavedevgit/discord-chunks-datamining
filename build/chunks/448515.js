@@ -2,7 +2,7 @@
 /** chunk id: 448515, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => X
+  A: () => Z
 }), require("./321073.js"), require("./896048.js"), require("./938796.js"), require("./65821.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438);
@@ -163,15 +163,15 @@ function q(e, t, n) {
   }
 }
 
-function X(e) {
+function Z(e) {
   return K[e]
 }
 
-function Z(e) {
+function X(e) {
   let t = [];
   for (let i of e) {
     var n, r;
-    null != i.member && $(i.guild_id, i.member.user, i.member), t.push({
+    null != i.member && J(i.guild_id, i.member.user, i.member), t.push({
       userId: i.user_id,
       guildId: i.guild_id,
       sessionId: i.session_id,
@@ -201,7 +201,7 @@ function Q(e) {
   }))
 }
 
-function $(e, t, n) {
+function J(e, t, n) {
   var r, a, s, o;
   let {
     roles: l,
@@ -236,19 +236,19 @@ function $(e, t, n) {
   })
 }
 
-function J(e) {
+function $(e) {
   let {
     member: t,
     mentions: n,
     author: r,
     guild_id: i
   } = e;
-  null != t && null != i && $(i, r, t), null != n && n.forEach(e => {
+  null != t && null != i && J(i, r, t), null != n && n.forEach(e => {
     if (null != e.member && null != i) {
       let {
         member: t
       } = e;
-      delete e.member, $(i, e, t)
+      delete e.member, J(i, e, t)
     }
   })
 }
@@ -475,7 +475,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id
     type: "CONNECTION_RESUMED"
   })
 }), z(["TYPING_START"], e => {
-  null != e.member && $(e.guild_id, e.member.user, e.member), Q({
+  null != e.member && J(e.guild_id, e.member.user, e.member), Q({
     type: "TYPING_START",
     channelId: e.channel_id,
     userId: e.user_id
@@ -510,7 +510,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id
     messageId: e.message_id
   })
 }), q(["MESSAGE_CREATE"], e => A.D.loadGuildIds([e.guild_id]), e => {
-  J(e), null != e.author && Q({
+  $(e), null != e.author && Q({
     type: "MESSAGE_CREATE",
     guildId: e.guild_id,
     channelId: e.channel_id,
@@ -519,7 +519,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id
     isPushNotification: false
   })
 }), q(["MESSAGE_UPDATE"], e => A.D.loadGuildIds([e.guild_id]), e => {
-  J(e), Q({
+  $(e), Q({
     type: "MESSAGE_UPDATE",
     guildId: e.guild_id,
     message: e
@@ -967,9 +967,9 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id
     sessions: ee(e)
   })
 }), z(["VOICE_STATE_UPDATE"], e => {
-  Z([e])
+  X([e])
 }), z(["VOICE_STATE_UPDATE_BATCH"], e => {
-  Z(e.voice_states)
+  X(e.voice_states)
 }), z(["VOICE_SERVER_UPDATE"], e => {
   Q({
     type: "VOICE_SERVER_UPDATE",
@@ -1150,12 +1150,12 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id
 }), z(["USER_PREMIUM_GUILD_SUBSCRIPTION_SLOT_CREATE"], e => {
   Q({
     type: "GUILD_BOOST_SLOT_CREATE",
-    guildBoostSlot: O.A.createFromServer(e, R.A.getSubscriptionById(e.subscription_id))
+    guildBoostSlot: O.A.createFromServer(e, w.A.getSubscriptionById(e.subscription_id))
   })
 }), z(["USER_PREMIUM_GUILD_SUBSCRIPTION_SLOT_UPDATE"], e => {
   Q({
     type: "GUILD_BOOST_SLOT_UPDATE",
-    guildBoostSlot: O.A.createFromServer(e, R.A.getSubscriptionById(e.subscription_id))
+    guildBoostSlot: O.A.createFromServer(e, w.A.getSubscriptionById(e.subscription_id))
   })
 }), z(["BILLING_POPUP_BRIDGE_CALLBACK"], e => {
   Q({
@@ -1173,7 +1173,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id
     skuSubscriptionPlanId: e.sku_subscription_plan_id
   })
 }), z(["USER_PAYMENT_CLIENT_ADD"], e => {
-  (0, w.D)().then(t => {
+  (0, R.D)().then(t => {
     let n = e.purchase_token_hash;
     n === t && Q({
       type: "USER_PAYMENT_CLIENT_ADD",
@@ -1188,7 +1188,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id
       let {
         member: n
       } = t;
-      if ($(e.guild_id, n.user, n), null == n.presence) return;
+      if (J(e.guild_id, n.user, n), null == n.presence) return;
       let {
         presence: r
       } = n;

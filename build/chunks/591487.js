@@ -27,8 +27,8 @@ var Chunk257943 = require("./257943.js"),
   T = Chunk860511.RegExp,
   C = T.prototype,
   N = Chunk860511.SyntaxError,
-  R = Chunk410323(C.exec),
-  w = Chunk410323("".charAt),
+  w = Chunk410323(C.exec),
+  R = Chunk410323("".charAt),
   P = Chunk410323("".replace),
   D = Chunk410323("".indexOf),
   x = Chunk410323("".slice),
@@ -43,8 +43,8 @@ var Chunk257943 = require("./257943.js"),
   })),
   F = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = false; r <= n; r++) {
-      if ("\\" === (t = w(e, r))) {
-        i += t + w(e, ++r);
+      if ("\\" === (t = R(e, r))) {
+        i += t + R(e, ++r);
         continue
       }
       a || "." !== t ? ("[" === t ? a = true : "]" === t && (a = false), i += t) : i += "[\\s\\S]"
@@ -53,7 +53,7 @@ var Chunk257943 = require("./257943.js"),
   },
   B = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = [], s = c(null), o = false, l = false, u = 0, d = ""; r <= n; r++) {
-      if ("\\" === (t = w(e, r))) t += w(e, ++r);
+      if ("\\" === (t = R(e, r))) t += R(e, ++r);
       else if ("]" === t) o = false;
       else if (!o) switch (true) {
         case "[" === t:
@@ -61,7 +61,7 @@ var Chunk257943 = require("./257943.js"),
           break;
         case "(" === t:
           if (i += t, "?:" === x(e, r + 1, r + 3)) continue;
-          R(L, x(e, r + 1)) && (r += 2, l = true), u++;
+          w(L, x(e, r + 1)) && (r += 2, l = true), u++;
           continue;
         case ">" === t && l:
           if ("" === d || y(s, d)) throw new N("Invalid capture group name");

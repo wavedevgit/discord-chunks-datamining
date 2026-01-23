@@ -4,8 +4,8 @@
 require.d(exports, {
   AZ: () => C,
   Ay: () => x,
-  Qn: () => R,
-  cR: () => w
+  Qn: () => w,
+  cR: () => R
 }), require("./321073.js"), require("./896048.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
@@ -88,8 +88,8 @@ var C = function(e) {
   return e[e.SEND = 0] = "SEND", e[e.EDIT = 1] = "EDIT", e[e.COMMAND = 2] = "COMMAND", e[e.SEND_ANNOUNCEMENT = 3] = "SEND_ANNOUNCEMENT", e
 }({});
 let N = e => 0 === e.type || 3 === e.type,
-  R = e => 1 === e.type,
-  w = e => N(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
+  w = e => 1 === e.type,
+  R = e => N(e) ? e.message.nonce : w(e) ? e.message.messageId : e.message.data.id,
   P = [+Chunk927813.A.Millis.MINUTE, 5 * Chunk927813.A.Millis.MINUTE];
 class D extends Chunk513391.A {
   isFull() {

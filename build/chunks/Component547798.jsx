@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 547798, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => I
@@ -40,20 +40,20 @@ function I() {
     [t, r] = l.useState(false);
   return t ? {} : (0, a.jsxs)(d.HOs, {
     children: [(0, a.jsx)("div", {
-      className: i()(T.N, N.SX),
+      className: i()(E.N, N.SX),
       children: (0, a.jsx)(_.M, {})
     }), (0, a.jsx)("div", {
-      className: i()(T.N, N.QB),
+      className: i()(E.N, N.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
         text: "Launch Vibing Wumpus",
         onClick: () => (0, v.A)({
-          source: E.y.KEYBIND
+          source: T.y.KEYBIND
         })
       })
     }), (0, a.jsx)("div", {
-      className: i()(T.N, N.QB),
+      className: i()(E.N, N.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
@@ -93,7 +93,7 @@ function I() {
         }
       })
     }), (0, a.jsx)("div", {
-      className: i()(T.N, N.QB),
+      className: i()(E.N, N.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
@@ -101,7 +101,7 @@ function I() {
         onClick: () => (0, h.A)("devtools")
       })
     }), (0, a.jsx)("div", {
-      className: i()(T.N, N.QB),
+      className: i()(E.N, N.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
@@ -109,7 +109,7 @@ function I() {
         onClick: () => (0, m.g)()
       })
     }), (0, a.jsx)("div", {
-      className: i()(T.N, N.QB),
+      className: i()(E.N, N.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
@@ -117,7 +117,7 @@ function I() {
         onClick: g.B7
       })
     }), (0, a.jsx)("div", {
-      className: i()(T.N, N.QB),
+      className: i()(E.N, N.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
@@ -125,7 +125,7 @@ function I() {
         onClick: c.Oy
       })
     }), (0, a.jsx)("div", {
-      className: i()(T.N, N.QB),
+      className: i()(E.N, N.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
@@ -133,14 +133,14 @@ function I() {
         onClick: () => (0, p.nX)(true)
       })
     }), (0, a.jsx)("div", {
-      className: i()(T.N, N.QB),
+      className: i()(E.N, N.QB),
       children: (0, a.jsx)(d.dOG, {
         label: "Ignore profile speedbump disabled",
         checked: e,
         onChange: e => j.j0.updateSetting(e)
       })
     }), (0, a.jsxs)("div", {
-      className: i()(T.N, N.QB),
+      className: i()(E.N, N.QB),
       children: [(0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
@@ -182,7 +182,7 @@ function I() {
         }
       })]
     }), (0, a.jsxs)("div", {
-      className: i()(T.N, N.QB),
+      className: i()(E.N, N.QB),
       children: [(0, a.jsx)(d.l6P, {
         label: "Trigger native crash",
         hideLabel: true,

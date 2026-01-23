@@ -385,7 +385,7 @@ h(C, "Scenes", v);
 var N = function(e) {
   return e.ENTRY = "entry", e.IDLE = "idle", e.STARS = "stars", e.ERROR = "error", e.SUCCESS = "success", e
 }(N || {});
-let R = {
+let w = {
     entry: {
       BEG: 0,
       END: 180
@@ -409,34 +409,34 @@ let R = {
       END: 778
     }
   },
-  w = Object.freeze({
+  R = Object.freeze({
     WHITE: "#ebf0f7",
     PINK: "#fa6ef6"
   }),
   P = [{
     left: 29,
     top: 100,
-    color: w.WHITE
+    color: R.WHITE
   }, {
     left: 245,
     top: 11,
-    color: w.PINK
+    color: R.PINK
   }, {
     left: 393,
     top: 22,
-    color: w.WHITE
+    color: R.WHITE
   }, {
     left: 74,
     top: 30,
-    color: w.PINK
+    color: R.PINK
   }, {
     left: 188,
     top: 9,
-    color: w.WHITE
+    color: R.WHITE
   }, {
     left: 379,
     top: 97,
-    color: w.PINK
+    color: R.PINK
   }],
   D = Object.freeze({
     SCALE_INITIAL: 0,
@@ -548,7 +548,7 @@ class L extends(s = Chunk64700.PureComponent) {
         className: _.i_,
         importData: this.importData,
         nextScene: n ? "idle" : t,
-        sceneSegments: R,
+        sceneSegments: w,
         onScenePlay: r,
         onSceneComplete: i,
         pauseWhileUnfocused: a,

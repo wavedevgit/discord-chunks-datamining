@@ -32,7 +32,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk626715 = require("./626715.js"),
   Chunk427401 = require("./427401.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,7 +48,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -59,7 +59,7 @@ function D(e) {
     checkpointData: t
   } = e, {
     cardId: n,
-    numMessagesSent: w = 0,
+    numMessagesSent: R = 0,
     totalVoiceMinutes: D = 0,
     numEmojisSent: x = 0,
     topEmoji: L,
@@ -71,7 +71,7 @@ function D(e) {
     notation: "compact",
     compactDisplay: "short",
     maximumFractionDigits: 2
-  }).format(w), V = new Intl.NumberFormat(I.intl.currentLocale, {
+  }).format(R), V = new Intl.NumberFormat(I.intl.currentLocale, {
     notation: "compact",
     compactDisplay: "short",
     maximumFractionDigits: 2
@@ -81,15 +81,15 @@ function D(e) {
     enabled: q
   } = p.w.useConfig({
     location: "message_component"
-  }), X = new Intl.NumberFormat(I.intl.currentLocale, {
+  }), Z = new Intl.NumberFormat(I.intl.currentLocale, {
     notation: "compact",
     compactDisplay: "short"
-  }), Z = (0, _._V)(null != U ? U : 0), Q = (0, i.useMemo)(() => {
+  }), X = (0, _._V)(null != U ? U : 0), Q = (0, i.useMemo)(() => {
     let e = [];
-    e.push(R);
+    e.push(w);
     for (let t = 0; t < 8; t++) e.push(N);
     return e.push(C), e
-  }, []), $ = () => {
+  }, []), J = () => {
     var e, t;
     let n = E.A.getChannel(null == z || null == (e = z.message) ? true : e.channel_id);
     b.default.track(A.HAw.CHECKPOINT_CARD_CLICKED, P({
@@ -230,7 +230,7 @@ function D(e) {
         "aria-label": false,
         children: (0, r.jsxs)(a.DUT, {
           className: T.lO,
-          onClick: $,
+          onClick: J,
           children: [(0, r.jsx)(a.EYj, {
             variant: "text-sm/bold",
             className: T.Ic,
@@ -254,7 +254,7 @@ function D(e) {
           width: 4,
           alt: "",
           style: {
-            opacity: t >= Z ? .3 : 1
+            opacity: t >= X ? .3 : 1
           }
         }, t))
       }), (0, r.jsxs)("div", {
@@ -266,7 +266,7 @@ function D(e) {
         }), (0, r.jsx)(a.EYj, {
           variant: "text-xs/bold",
           className: T.KA,
-          children: X.format(null != k ? k : 0)
+          children: Z.format(null != k ? k : 0)
         })]
       })]
     })]

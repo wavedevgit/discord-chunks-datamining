@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 680108, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => _
@@ -67,16 +67,16 @@ function _() {
       i = null != (t = null == (a = e.config.title) ? true : a.toLowerCase()) ? t : "",
       s = null != (n = null == (l = e.config.description) ? true : l.toLowerCase()) ? n : "";
     return i.includes(r) || s.includes(r)
-  }), [C, A]), E = l.useCallback((e, n) => {
+  }), [C, A]), T = l.useCallback((e, n) => {
     if (null == n || !e.type.startsWith("text/")) return (0, p.Ni)(v);
     let [a, l] = n.split(",");
     if (!a.includes("text/plain")) return (0, p.Ni)(v);
     let r = JSON.parse(atob(l));
     r.skuId = (0, s.A)(), t(r), (0, p.GF)("Profile Effect (maybe??) imported!")
-  }, [t]), T = l.useCallback(e => {
+  }, [t]), E = l.useCallback(e => {
     var t;
-    (null == (t = e.currentTarget) ? true : t.files) == null ? (0, p.Ni)("Error uploading file. Try again!") : (0, p.KE)(e.currentTarget.files, E, p.Ni)
-  }, [E]);
+    (null == (t = e.currentTarget) ? true : t.files) == null ? (0, p.Ni)("Error uploading file. Try again!") : (0, p.KE)(e.currentTarget.files, T, p.Ni)
+  }, [T]);
   return (0, a.jsxs)("div", {
     className: b.zr,
     children: [null == r && (0, a.jsxs)(a.Fragment, {
@@ -118,7 +118,7 @@ function _() {
             children: "Import Shared Config"
           }), (0, a.jsx)(u.A, {
             ref: y,
-            onChange: T,
+            onChange: E,
             multiple: false
           })]
         }), (0, a.jsx)(c.Button, {

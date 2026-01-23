@@ -2,7 +2,7 @@
 /** chunk id: 494230, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => X,
+  A: () => Z,
   L: () => q
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -87,10 +87,10 @@ let q = e => {
       quantity: 1
     }],
     q = d === b.h.PURCHASING || d === b.h.COMPLETED,
-    X = null != h ? h : "",
-    Z = (0, u.bG)([R.A], () => R.A.get(X), [X]),
-    Q = null == Z ? true : Z.eligiblePaymentGateways,
-    [$, J] = (0, x.Kq)({
+    Z = null != h ? h : "",
+    X = (0, u.bG)([w.A], () => w.A.get(Z), [Z]),
+    Q = null == X ? true : X.eligiblePaymentGateways,
+    [J, $] = (0, x.Kq)({
       items: z,
       renewal: false,
       preventFetch: L || H || q,
@@ -130,8 +130,8 @@ let q = e => {
       preventFetch: !H || q,
       loadId: D.loadId
     }),
-    es = H && (0, w.Ik)(Y),
-    eo = null != (t = null != (n = null != J ? J : et) ? n : er) ? t : ea;
+    es = H && (0, R.Ik)(Y),
+    eo = null != (t = null != (n = null != $ ? $ : et) ? n : er) ? t : ea;
   i.useEffect(() => {
     j(eo)
   }, [eo, j]);
@@ -151,10 +151,10 @@ let q = e => {
       startedPaymentFlowWithPaymentSources: T.current,
       inReverseTrial: L
     }),
-    [em, eg] = i.useState(null == $ ? true : $.subscriptionPeriodEnd);
+    [em, eg] = i.useState(null == J ? true : J.subscriptionPeriodEnd);
   i.useEffect(() => {
-    null == em && eg(null == $ ? true : $.subscriptionPeriodEnd)
-  }, [null == $ ? true : $.subscriptionPeriodEnd, em]);
+    null == em && eg(null == J ? true : J.subscriptionPeriodEnd)
+  }, [null == J ? true : J.subscriptionPeriodEnd, em]);
   let eE = (0, g.A)({
       forceFetch: false,
       excludeReverseTrial: false,
@@ -168,11 +168,11 @@ let q = e => {
       currentSubscription: _,
       defaultPlanId: m
     }), [h, _, m, A]),
-    eO = (0, v.UB)(eh, $, K),
-    ev = i.useMemo(() => f && null != $ ? $ : L && null != ee ? ee : true, [L, f, $, ee]);
+    eO = (0, v.UB)(eh, J, K),
+    ev = i.useMemo(() => f && null != J ? J : L && null != ee ? ee : true, [L, f, J, ee]);
   return i.useEffect(() => {
-    H ? N(ei) : N($)
-  }, [H, N, ei, $]), {
+    H ? N(ei) : N(J)
+  }, [H, N, ei, J]), {
     disabled: q,
     activeSubscription: _,
     subscriptionPeriodEnd: em,
@@ -181,7 +181,7 @@ let q = e => {
     discountInvoicePreview: en,
     oneTimePurchaseNitroGiftInvoicePreview: ei,
     trialInvoicePreview: ev,
-    proratedInvoicePreview: $,
+    proratedInvoicePreview: J,
     renewalInvoicePreview: ee,
     error: eo,
     isGift: H,
@@ -212,7 +212,7 @@ let q = e => {
   }
 };
 
-function X(e) {
+function Z(e) {
   var t;
   let {
     selectedPlanId: n,
@@ -230,17 +230,17 @@ function X(e) {
     trialFooterMessageOverride: I,
     reviewWarningMessage: S,
     metadata: C,
-    purchaseState: R,
-    hideSubscriptionDetails: w,
+    purchaseState: w,
+    hideSubscriptionDetails: R,
     referralTrialOfferId: x,
     isTrial: G = false,
     isDiscount: B = false,
-    handleClose: X
+    handleClose: Z
   } = e, {
-    activeSubscription: Z,
+    activeSubscription: X,
     disabled: Q,
-    isEmbeddedIAP: $,
-    paymentSourceType: J,
+    isEmbeddedIAP: J,
+    paymentSourceType: $,
     hidePersonalInformation: ee,
     giftRecipient: et,
     selectedGiftStyle: en,
@@ -276,9 +276,9 @@ function X(e) {
     priceOptions: o,
     trialId: v,
     metadata: C,
-    purchaseState: R,
+    purchaseState: w,
     isTrial: G
-  }), eR = (0, F.yf)({
+  }), ew = (0, F.yf)({
     error: ep,
     isGift: e_,
     oneTimePurchaseNitroGiftInvoicePreview: eh,
@@ -287,15 +287,15 @@ function X(e) {
     renewalInvoicePreview: eE,
     planSwitchLoading: ey
   });
-  if (null != eR && eR.type === F.N$.LOADING) return (0, r.jsx)("div", {
+  if (null != ew && ew.type === F.N$.LOADING) return (0, r.jsx)("div", {
     className: z.zp,
     children: (0, r.jsx)(f.y$y, {})
   });
-  let ew = (0, r.jsx)(F.eb, {
-      invoiceSummaryTypeWithPreview: eR,
+  let eR = (0, r.jsx)(F.eb, {
+      invoiceSummaryTypeWithPreview: ew,
       priceOptions: o,
       trialFooterMessageOverride: I,
-      hideSubscriptionDetails: w,
+      hideSubscriptionDetails: R,
       referralTrialOfferId: x,
       isTrial: G,
       inReverseTrial: eu,
@@ -312,7 +312,7 @@ function X(e) {
       planName: ef.name
     });
   e_ && !ev ? eD = K.intl.string(K.t.J5a0eb) : e_ && ev ? eD = "" : (0, P.ys)(ef.id) && (eD = P.Ay.getBillingReviewSubheader(null, ef));
-  let ex = null != ec && ec.length > 0 && (el === N.B || null === J) && eo ? k.f.SELECT_PAYMENT_METHOD : true;
+  let ex = null != ec && ec.length > 0 && (el === N.B || null === $) && eo ? k.f.SELECT_PAYMENT_METHOD : true;
   return es ? null : (0, r.jsxs)("div", {
     className: z.Du,
     children: [(0, r.jsx)(k.j, {
@@ -352,14 +352,14 @@ function X(e) {
         subscriptionPeriodEnd: er,
         showTotal: false,
         discountInvoiceItems: eT,
-        handleClose: X
+        handleClose: Z
       }), (0, r.jsx)(L.pK, {})]
     }), eu && (0, r.jsx)(f.Heading, {
       variant: "heading-md/normal",
       color: "always-white",
       className: z.KB,
       children: K.intl.format(K.t["7ZS2m1"], {
-        trialEnd: null == Z ? true : Z.currentPeriodEnd
+        trialEnd: null == X ? true : X.currentPeriodEnd
       })
     }), !G && "" !== eD && (0, r.jsx)(f.Heading, {
       variant: "heading-md/semibold",
@@ -374,7 +374,7 @@ function X(e) {
       }), (0, r.jsx)(V.Z, {
         giftRecipient: et
       })]
-    }), ew, (0, r.jsxs)("div", {
+    }), eR, (0, r.jsxs)("div", {
       className: z.LC,
       children: [(0, r.jsx)(h.Ay, {
         label: G ? K.intl.string(K.t["YH7B+D"]) : K.intl.string(K.t["mmDvV+"]),
@@ -418,8 +418,8 @@ function X(e) {
           subscriptionPlan: ef,
           renewalInvoice: eE,
           isGift: e_,
-          paymentSourceType: J,
-          isEmbeddedIAP: $,
+          paymentSourceType: $,
+          isEmbeddedIAP: J,
           basePrice: (0, P.y8)(ef.id, false, e_, o)
         }),
         showPricingLink: ef.currency !== Y.Yr.USD,

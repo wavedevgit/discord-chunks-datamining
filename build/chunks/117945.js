@@ -8,7 +8,7 @@ var Chunk607399 = require("./607399.js"),
   Chunk788868 = require("./788868.js");
 
 function s(e, t) {
-  return !e && t === i.pe.TIER_2 && !l.Ct && !l.KY && !(0, r.du)({
+  return !e && t === i.pe.TIER_2 && !r.Ct && !r.KY && !(0, l.du)({
     location: "wowMomentEligibilityUtils"
   })
 }

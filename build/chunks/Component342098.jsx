@@ -78,7 +78,7 @@ function v(e) {
     showBenefitsFirst: S,
     onComplete: T,
     forcesTransitionToGuild: C
-  } = e, N = (0, s.A)(), R = false;
+  } = e, N = (0, s.A)(), w = false;
   (0, o.mMO)(async () => {
     let {
       PaymentContextProvider: e
@@ -109,7 +109,7 @@ function v(e) {
             applicationId: I,
             guildId: null != v ? v : true,
             onComplete: () => {
-              R = true, null == T || T()
+              w = true, null == T || T()
             },
             forcesTransitionToGuild: C
           }))
@@ -118,7 +118,7 @@ function v(e) {
     })
   }, {
     onCloseCallback: () => {
-      R || (_.default.track(g.HAw.PAYMENT_FLOW_CANCELED, {
+      w || (_.default.track(g.HAw.PAYMENT_FLOW_CANCELED, {
         load_id: N,
         payment_type: g.frM[g.VVm.SUBSCRIPTION],
         location: null != l ? l : a,

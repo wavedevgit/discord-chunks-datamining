@@ -72,19 +72,19 @@ function N(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = R(e, t), Object.getOwnPropertySymbols)
+  if (a = w(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let w = [];
+let R = [];
 
 function P(e) {
   let {
@@ -92,7 +92,7 @@ function P(e) {
     type: n,
     ignoreFile: a,
     smallAttachments: I = false
-  } = e, T = (0, c.bG)([p.A], () => p.A.keyboardModeEnabled), R = (0, _.A)("attachments", l.Gl.HORIZONTAL), P = (0, c.bG)([m.A], () => m.A.getUploads(t, n.drafts.type)), {
+  } = e, T = (0, c.bG)([p.A], () => p.A.keyboardModeEnabled), w = (0, _.A)("attachments", l.Gl.HORIZONTAL), P = (0, c.bG)([m.A], () => m.A.getUploads(t, n.drafts.type)), {
     isApplicationCommand: D,
     commandOptions: x,
     commandOptionStates: L
@@ -100,7 +100,7 @@ function P(e) {
     let e = h.A.getActiveCommand(t);
     if (null == e) return {
       isApplicationCommand: false,
-      commandOptions: w,
+      commandOptions: R,
       commandOptionStates: null
     };
     let n = h.A.getOptionStates(t);
@@ -123,8 +123,8 @@ function P(e) {
     return u.h.subscribe("APPLICATION_COMMAND_SET_ACTIVE_COMMAND", e), () => u.h.unsubscribe("APPLICATION_COMMAND_SET_ACTIVE_COMMAND", e)
   }, [t, n]);
   let U = i.useCallback(() => {
-    R.focusFirstVisibleItem()
-  }, [R]);
+    w.focusFirstVisibleItem()
+  }, [w]);
   (0, g.Vo)({
     event: O.jej.FOCUS_ATTACHMENT_AREA,
     handler: U
@@ -154,7 +154,7 @@ function P(e) {
   }, [t, j.length, n]);
   let F = P.filter(e => e.filename !== a);
   return !D && 0 === F.length || D && 0 === j.length ? null : (0, r.jsx)(o.hD, {
-    navigator: R,
+    navigator: w,
     children: (0, r.jsx)(o.PR, {
       children: e => {
         let {

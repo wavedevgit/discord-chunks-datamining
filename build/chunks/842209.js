@@ -255,11 +255,11 @@ let C = {
 
 function N(e, t) {
   let n = [];
-  for (let r = 0; r < e; r++) n.push(R(r, t));
+  for (let r = 0; r < e; r++) n.push(w(r, t));
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return {
     type: t,
     inputType: u.y$.PLACEHOLDER,

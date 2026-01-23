@@ -39,7 +39,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk186319 = require("./186319.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,7 +55,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -128,12 +128,12 @@ let D = e => {
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.Fk, {
         ref: n,
-        className: R.Lb,
+        className: w.Lb,
         environment: t.current
       }), (0, r.jsx)(p.K, {
         options: i,
-        className: s()(R.Oh, {
-          [R.R]: !a
+        className: s()(w.Oh, {
+          [w.R]: !a
         })
       })]
     })
@@ -175,8 +175,8 @@ function G(e) {
     analyticsLocations: b
   }), {
     confettiCanvas: C,
-    environment: R,
-    setConfettiCanvas: w,
+    environment: w,
+    setConfettiCanvas: R,
     customConfettiVisible: G,
     setCustomConfettiVisible: V,
     customConfettiDisplayOptions: F,
@@ -211,8 +211,8 @@ function G(e) {
   return (0, r.jsxs)(d.f5, {
     value: T,
     children: [(0, r.jsx)(k, {
-      environment: R,
-      setConfettiCanvas: w,
+      environment: w,
+      setConfettiCanvas: R,
       customConfettiDisplayOptions: F,
       customConfettiVisible: G
     }), (0, r.jsx)(h.PaymentContextProvider, {

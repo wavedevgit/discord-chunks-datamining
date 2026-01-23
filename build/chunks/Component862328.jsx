@@ -145,7 +145,7 @@ function O(e) {
     S(true)
   }, C = () => {
     S(false)
-  }, N = null != b, R = null != O, w = i.useId(), P = "".concat(w, "-upper_badge_masks"), D = "".concat(w, "-lower_badge_masks"), x = "".concat(w, "-blob_mask"), L = "".concat(w, "-stroke_mask"), j = "".concat(w, "-highlight_mask"), M = (null == f ? true : f.width) != null ? f.width : m, k = (null == f ? true : f.height) != null ? f.height : m, U = {
+  }, N = null != b, w = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), D = "".concat(R, "-lower_badge_masks"), x = "".concat(R, "-blob_mask"), L = "".concat(R, "-stroke_mask"), j = "".concat(R, "-highlight_mask"), M = (null == f ? true : f.width) != null ? f.width : m, k = (null == f ? true : f.height) != null ? f.height : m, U = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : false,
@@ -192,7 +192,7 @@ function O(e) {
           ry: h / 2
         }) : null]
       }), (0, r.jsxs)("mask", {
-        id: w,
+        id: R,
         fill: "black",
         x: 0,
         y: 0,
@@ -210,11 +210,11 @@ function O(e) {
         }), N ? (0, r.jsx)("use", {
           href: "#".concat(P),
           fill: "black"
-        }) : null, R ? (0, r.jsx)("use", {
+        }) : null, w ? (0, r.jsx)("use", {
           href: "#".concat(D),
           fill: "black"
         }) : null]
-      }), N || R ? (0, r.jsxs)("mask", {
+      }), N || w ? (0, r.jsxs)("mask", {
         id: L,
         children: [(0, r.jsx)("rect", {
           width: "150%",
@@ -225,7 +225,7 @@ function O(e) {
         }), N ? (0, r.jsx)("use", {
           href: "#".concat(P),
           fill: "black"
-        }) : null, R ? (0, r.jsx)("use", {
+        }) : null, w ? (0, r.jsx)("use", {
           href: "#".concat(D),
           fill: "black"
         }) : null]
@@ -251,7 +251,7 @@ function O(e) {
         className: c.Zt,
         mask: "url(#".concat(L, ")")
       }), (0, r.jsx)("foreignObject", {
-        mask: "url(#".concat(w, ")"),
+        mask: "url(#".concat(R, ")"),
         x: 0,
         y: 0,
         className: u,
@@ -266,5 +266,5 @@ function O(e) {
       className: c.A8,
       children: b
     }) : null]
-  }, "".concat(R, "-").concat(N))
+  }, "".concat(w, "-").concat(N))
 }

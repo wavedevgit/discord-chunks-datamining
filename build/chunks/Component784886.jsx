@@ -2,7 +2,7 @@
 /** chunk id: 784886, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -65,12 +65,12 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = (0, Chunk95701.createChannelRecord)({
+let w = (0, Chunk95701.createChannelRecord)({
   id: "1",
   type: Chunk652215.rbe.DM
 });
 
-function w(e) {
+function R(e) {
   let {
     user: t,
     guildId: a,
@@ -79,7 +79,7 @@ function w(e) {
     disableAutoFocus: S = false,
     upsell: C = false
   } = e, {
-    newestAnalyticsLocation: w,
+    newestAnalyticsLocation: R,
     analyticsLocations: P
   } = (0, u.Ay)(), {
     trackUserProfileAction: D
@@ -121,7 +121,7 @@ function w(e) {
     placeholder: A.intl.formatToPlainString(A.t["0ZQw/X"], {
       name: g.Ay.getName(a, m, t)
     }),
-    channel: R,
+    channel: w,
     textValue: x,
     richValue: j,
     onChange: (e, t, n) => {
@@ -152,7 +152,7 @@ function w(e) {
           content: r,
           openChannel: true,
           whenReady: true,
-          location: w,
+          location: R,
           nonce: null != (i = G.current) ? i : true
         }), U.current = null, G.current = null, null == O || O(), {
           shouldClear: true,

@@ -60,8 +60,8 @@ function C() {
   }
 }
 let N = C(),
-  R = [],
-  w = new Set,
+  w = [],
+  R = new Set,
   P = new Set,
   D = {},
   x = null,
@@ -88,16 +88,16 @@ function k(e) {
 function U() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   if (e) {
-    let e = Math.ceil(R.length / 2);
-    R.slice(0, e).forEach(e => {
-      w.add(e)
-    }), R.forEach(e => {
+    let e = Math.ceil(w.length / 2);
+    w.slice(0, e).forEach(e => {
+      R.add(e)
+    }), w.forEach(e => {
       P.add(e)
     })
   } else
-    for (let e of R) {
+    for (let e of w) {
       let t = d.A.getUserAffinity(e);
-      null != t && t.dmProbability > S && w.add(e), null != t && t.dmProbability > T && P.add(e)
+      null != t && t.dmProbability > S && R.add(e), null != t && t.dmProbability > T && P.add(e)
     }
 }
 
@@ -115,12 +115,12 @@ function G() {
         n = d.A.getUserAffinity(e);
       if (p.A.isFriend(e) && null != n && n.dmProbability > 0 && null != t) {
         let n = new Date(t);
-        k(n) && (R.push(e), D[e] = {
+        k(n) && (w.push(e), D[e] = {
           friendsSince: n
         })
       }
     }
-    R.sort((e, t) => d.A.compareByDmProbability(e, t)), U()
+    w.sort((e, t) => d.A.compareByDmProbability(e, t)), U()
   }
 }
 
@@ -133,7 +133,7 @@ function F() {
 }
 
 function B() {
-  R.length = 0, w.clear(), P.clear(), D = {}
+  w.length = 0, R.clear(), P.clear(), D = {}
 }
 
 function H() {
@@ -145,14 +145,14 @@ function Y() {
 }
 
 function W() {
-  N.lastShownFriendsListGiftIntents = Array.from(R)
+  N.lastShownFriendsListGiftIntents = Array.from(w)
 }
 
 function K(e) {
   let {
     recipientUserId: t
   } = e;
-  Z(t)
+  X(t)
 }
 
 function z() {
@@ -164,14 +164,14 @@ function q() {
   N.giftUnreadNotificationLastDismissedTimes = N.giftUnreadNotificationLastDismissedTimes.filter(t => e - t <= 7 * b)
 }
 
-function X(e) {
+function Z(e) {
   let {
     recipientUserId: t
   } = e;
-  Z(t)
+  X(t)
 }
 
-function Z(e) {
+function X(e) {
   null == N.messageGiftIntentLastShownMap[e] && (N.messageGiftIntentLastShownMap[e] = j())
 }
 
@@ -180,13 +180,13 @@ function Q() {
   for (let t in N.messageGiftIntentLastShownMap) e - N.messageGiftIntentLastShownMap[t] > v && delete N.messageGiftIntentLastShownMap[t]
 }
 
-function $() {
+function J() {
   let e = j(),
     t = b * y * 2;
   for (let n in N.profilePopoutGiftIntentsDismissMap) e - N.profilePopoutGiftIntentsDismissMap[n] > t && delete N.profilePopoutGiftIntentsDismissMap[n]
 }
 
-function J() {
+function $() {
   N.lastShownFriendsListGiftIntents = []
 }
 
@@ -245,11 +245,11 @@ function eo(e) {
     let t = p.A.getSince(e);
     if (null != t) {
       let n = new Date(t);
-      R.push(e), D[e] = {
+      w.push(e), D[e] = {
         friendsSince: n
       }
     }
-  }), R.sort((e, t) => d.A.compareByDmProbability(e, t)), U(true)
+  }), w.sort((e, t) => d.A.compareByDmProbability(e, t)), U(true)
 }
 class el extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
@@ -257,16 +257,16 @@ class el extends(r = Chunk311907.Ay.PersistedStore) {
       var t;
       N.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, N.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), N.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap), N.giftUnreadNotificationLastDismissedTimes = Array.from(null != (t = e.giftUnreadNotificationLastDismissedTimes) ? t : []), N.profilePopoutGiftIntentsDismissMap = g({}, e.profilePopoutGiftIntentsDismissMap)
     }
-    this.syncWith([p.A, d.A, f.A, u.A], G), Q(), q(), $()
+    this.syncWith([p.A, d.A, f.A, u.A], G), Q(), q(), J()
   }
   getState() {
     return N
   }
   getFriendAnniversaries() {
-    return R
+    return w
   }
   getNextRecipientUserIDForNotification() {
-    if (!this.isNotificationCooldownActive()) return Array.from(w).find(e => null == N.messageGiftIntentLastShownMap[e])
+    if (!this.isNotificationCooldownActive()) return Array.from(R).find(e => null == N.messageGiftIntentLastShownMap[e])
   }
   isNotificationCooldownActive() {
     q();
@@ -296,7 +296,7 @@ class el extends(r = Chunk311907.Ay.PersistedStore) {
     return L
   }
   getHighestAffinityFriendAnniversaries() {
-    return Array.from(w)
+    return Array.from(R)
   }
   getHighAffinityFriendAnniversaries() {
     return Array.from(P)
@@ -342,9 +342,9 @@ let ec = new el(Chunk73153.h, {
   MESSAGE_GIFT_INTENT_SHOWN: K,
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: W,
   GIFT_UNREAD_NOTIFICATION_DISMISS: z,
-  GIFT_INTENT_FLOW_PURCHASED_GIFT: X,
+  GIFT_INTENT_FLOW_PURCHASED_GIFT: Z,
   PROFILE_POPOUT_GIFT_INTENTS_DISMISS: ea,
-  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: J,
+  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: $,
   DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: ee,
   DEV_TOOLS_GIFT_UNREAD_NOTIFICATION_COOLDOWN_RESET: et,
   DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: en,

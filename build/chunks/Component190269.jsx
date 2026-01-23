@@ -1,7 +1,7 @@
-/** Chunk was on 66801 **/
+/** Chunk was on 5241 **/
 /** chunk id: 190269, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  B: () => S
+  B: () => f
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,15 +18,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk401517 = require("./401517.js");
 
-function f(e) {
+function g(e) {
   let {
     onClose: t
-  } = e, r = (0, a.jsx)(i.Text, {
+  } = e, r = (0, n.jsx)(i.Text, {
     className: y.h,
     variant: "text-md/normal",
     children: m.intl.string(m.t.FCsTCk)
   });
-  return (0, a.jsx)(b.A, {
+  return (0, n.jsx)(b.A, {
     type: d.Ay.Types.PREMIUM_ACTIVATED,
     text: r,
     buttonText: m.intl.string(m.t.TkTvBz),
@@ -35,36 +35,36 @@ function f(e) {
   })
 }
 
-function g(e) {
+function S(e) {
   let {
     onClose: t
   } = e;
-  return (0, a.jsx)(_.Ay, {
+  return (0, n.jsx)(_.Ay, {
     planId: p.gD.PREMIUM_MONTH_TIER_0,
     onClose: t
   })
 }
-let S = e => {
+let f = e => {
   let {
     transitionState: t,
     onClose: r,
     premiumType: d
-  } = e, b = d === p.PremiumTypes.TIER_0, _ = n.useCallback(() => {
-    l._.dispatch(u.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), c.A.isDisplayingWowMomentConfirmation && c.A.isAnimated ? setTimeout(() => {
+  } = e, b = d === p.PremiumTypes.TIER_0, _ = a.useCallback(() => {
+    c._.dispatch(u.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), l.A.isDisplayingWowMomentConfirmation && l.A.isAnimated ? setTimeout(() => {
       r()
     }, o.K) : r()
   }, [r]);
-  return (0, a.jsxs)(i.EOs, {
+  return (0, n.jsxs)(i.EOs, {
     "data-migration-pending": true,
     className: y.z,
     transitionState: t,
     parentComponent: "ResubscribeSuccessStep",
-    children: [(0, a.jsx)(s.A, {
+    children: [(0, n.jsx)(s.A, {
       onClose: _,
       upgradeToPremiumType: d
-    }), (0, a.jsx)(i.$mQ, {
+    }), (0, n.jsx)(i.$mQ, {
       "data-migration-pending": true,
-      children: (0, a.jsx)(b ? g : f, {
+      children: (0, n.jsx)(b ? S : g, {
         onClose: _
       })
     })]

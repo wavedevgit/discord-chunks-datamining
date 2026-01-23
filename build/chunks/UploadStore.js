@@ -143,7 +143,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     file: t,
     itemId: n
@@ -152,7 +152,7 @@ function R(e) {
   setImmediate(() => r.cancelItem(n))
 }
 
-function w(e) {
+function R(e) {
   let {
     channelId: t,
     file: n
@@ -199,7 +199,7 @@ let x = new D(Chunk73153.h, {
   UPLOAD_COMPLETE: T,
   UPLOAD_FAIL: C,
   UPLOAD_CANCEL_REQUEST: N,
-  UPLOAD_ITEM_CANCEL_REQUEST: R,
-  UPLOAD_FILE_UPDATE: w,
+  UPLOAD_ITEM_CANCEL_REQUEST: w,
+  UPLOAD_FILE_UPDATE: R,
   UPLOAD_RESTORE_FAILED_UPLOAD: P
 })

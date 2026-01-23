@@ -70,7 +70,7 @@ function N(e) {
   E.A.clearSearchEditorState(e), f.A.clearSearchMessages(t), _.A.cleanUp(t), h.A.cleanUp(t)
 }
 
-function R(e) {
+function w(e) {
   let {
     searchContext: t,
     searchQueryString: n,
@@ -80,7 +80,7 @@ function R(e) {
   f.A.clearSearchMessages(a), E.A.setShowNoResultsAlt(t), E.A.setShowBlockedResults(t, false), E.A.updateSearchResultsQuery(t, n, r, i), E.A.addSearchHistoryItem(t, n)
 }
 
-function w(e) {
+function R(e) {
   var t;
   let {
     searchContext: n,
@@ -104,7 +104,7 @@ function w(e) {
         searchQueryString: t,
         searchQuery: r
       } = e;
-      R({
+      w({
         searchContext: n,
         searchQueryString: t,
         searchQuery: r,
@@ -122,7 +122,7 @@ function w(e) {
         searchQueryString: t,
         searchQuery: r
       } = e;
-      R({
+      w({
         searchContext: n,
         searchQueryString: t,
         searchQuery: r,
@@ -152,7 +152,7 @@ function x(e, t) {
   let n = P(e);
   if (null == n) return;
   let r = n.endsWith(" ") ? n + t : n + " " + t;
-  D(e, r), w({
+  D(e, r), R({
     searchContext: e,
     searchQueryString: r,
     offset: 0
@@ -179,7 +179,7 @@ function j(e, t, n) {
     query: d,
     queryString: s,
     searchQuerySource: O.Q_.SEARCH_XDM_SETTINGS
-  }), w({
+  }), R({
     searchContext: t,
     searchQueryString: s,
     offset: 0
@@ -199,7 +199,7 @@ function M() {
 }
 let k = {
   cleanUpSearchState: N,
-  fetchMessages: w,
+  fetchMessages: R,
   setSearchInputText: D,
   appendToSearchInputText: x,
   getSearchInputText: P,

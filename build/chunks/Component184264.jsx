@@ -32,9 +32,9 @@ function v(e, t) {
   } = e, [A, I] = i.useState(false), S = (0, l.bG)([p.A], () => {
     var e, t;
     return A && Object.values(null != (e = null == (t = p.A.frecencyWithoutFetchingLatest.favoriteGifs) ? true : t.gifs) ? e : {}).length <= 2
-  }), [T, C, N, R] = (0, f.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], o.x), w = i.useRef(0), P = i.useCallback(() => {
-    I(true), clearTimeout(w.current), w.current = setTimeout(() => {
-      I(false), w.current = 0
+  }), [T, C, N, w] = (0, f.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], o.x), R = i.useRef(0), P = i.useCallback(() => {
+    I(true), clearTimeout(R.current), R.current = setTimeout(() => {
+      I(false), R.current = 0
     }, 2e3)
   }, []);
   (0, _.Vo)({
@@ -52,7 +52,7 @@ function v(e, t) {
     M = (0, h.p)(d.T),
     k = a === m.oU.NORMAL ? M : true;
   if (n) return null;
-  let U = T === y.kx.GIF && C === a && R === v.id;
+  let U = T === y.kx.GIF && C === a && w === v.id;
   return (0, r.jsx)(u.m, {
     keyboardShortcut: S ? true : k,
     text: b.intl.string(S ? b.t.mE2e8A : b.t.nffuyb),

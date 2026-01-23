@@ -55,11 +55,11 @@ function N(e) {
   if (t !== _.BEX.INTEGRATIONS) returnfalse;
   if (null == r) {
     let e = p.A.getGuildId();
-    null != e && (u.A.fetchForGuild(e), v = true), w(false)
+    null != e && (u.A.fetchForGuild(e), v = true), R(false)
   }
 }
 
-function R(e) {
+function w(e) {
   let {
     section: t,
     sectionId: n
@@ -67,7 +67,7 @@ function R(e) {
   i = t, C = n
 }
 
-function w(e) {
+function R(e) {
   if (null != (r = p.A.getProps().guild) && d.A.can(_.xBc.MANAGE_GUILD, r)) {
     let e = p.A.getProps().integrations;
     null == e && (A = true), g = null != e ? e : []
@@ -87,7 +87,7 @@ function P() {
   r = null, g = [], E = [], y = null, b = null, O = null, I = _.XlH.CLOSED, T = false
 }
 let D = o().debounce(() => {
-  T && (null != b ? o().isEqual(b, z(b.id)) && (T = false) : null != O && o().isEqual(O, q(O.id)) && (T = false), T || Z.emitChange())
+  T && (null != b ? o().isEqual(b, z(b.id)) && (T = false) : null != O && o().isEqual(O, q(O.id)) && (T = false), T || X.emitChange())
 }, 500);
 
 function x(e) {
@@ -218,11 +218,11 @@ function Y() {
 }
 
 function W() {
-  return w(false)
+  return R(false)
 }
 
 function K() {
-  return w(true)
+  return R(true)
 }
 
 function z(e) {
@@ -242,7 +242,7 @@ function q(e) {
     return n === e
   })
 }
-class X extends(a = Chunk311907.Ay.Store) {
+class Z extends(a = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(p.A, f.A, d.A)
   }
@@ -299,13 +299,13 @@ class X extends(a = Chunk311907.Ay.Store) {
     })) ? true : t.application
   }
 }
-h(X, "displayName", "GuildSettingsIntegrationsStore");
-let Z = new X(Chunk73153.h, __OVERLAY__ ? {} : {
+h(Z, "displayName", "GuildSettingsIntegrationsStore");
+let X = new Z(Chunk73153.h, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_INIT: W,
     INTEGRATION_SETTINGS_SAVE_SUCCESS: K,
     GUILD_SETTINGS_INIT: N,
     GUILD_SETTINGS_SET_SECTION: N,
-    INTEGRATION_SETTINGS_SET_SECTION: R,
+    INTEGRATION_SETTINGS_SET_SECTION: w,
     INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
     INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: V,
     INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: F,
@@ -320,4 +320,4 @@ let Z = new X(Chunk73153.h, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_SUBMITTING: j,
     INTEGRATION_SETTINGS_SAVE_FAILURE: M
   }),
-  Q = Z
+  Q = X

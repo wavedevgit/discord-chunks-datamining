@@ -117,20 +117,20 @@ let U = e => {
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: false
-  }), z = (0, p.A)(), q = W && L === w.vQ.DM_CHANNEL, X = K === h.J.POPULAR ? P.intl.string(P.t.Kwgrrr) : P.intl.string(P.t.r1huYR), Z = async (e, t) => {
+  }), z = (0, p.A)(), q = W && L === R.vQ.DM_CHANNEL, Z = K === h.J.POPULAR ? P.intl.string(P.t.Kwgrrr) : P.intl.string(P.t.r1huYR), X = async (e, t) => {
     j(true), null != _ && E(), await (0, c.JJ)(e.id, t) || E(P.intl.string(P.t["4kgVqQ"])), j(false)
   };
   (0, s.Ay)(() => {
-    null != M && null != C && (L !== w.vQ.DM_CHANNEL_WISHLIST && A.default.track(R.HAw.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != M && null != C && (L !== R.vQ.DM_CHANNEL_WISHLIST && A.default.track(w.HAw.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: M
-    }), Z(C, M))
+    }), X(C, M))
   });
   let Q = e => {
-      L !== w.vQ.DM_CHANNEL_WISHLIST && A.default.track(R.HAw.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+      L !== R.vQ.DM_CHANNEL_WISHLIST && A.default.track(w.HAw.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
-      }), null != C && Z(C, e), k(e)
+      }), null != C && X(C, e), k(e)
     },
-    $ = e => {
+    J = e => {
       let t = B[e],
         n = null;
       if (null != t) {
@@ -147,7 +147,7 @@ let U = e => {
         className: D.Cb
       }, e)
     },
-    J = () => (0, r.jsx)(m.A, {
+    $ = () => (0, r.jsx)(m.A, {
       onTextChange: e => null == l ? true : l(e),
       pendingText: o,
       currentText: o,
@@ -162,8 +162,8 @@ let U = e => {
         variant: "text-xs/bold",
         color: "text-default",
         className: D.B7,
-        children: X.toLocaleUpperCase()
-      }), N.map(e => $(e)), (0, r.jsx)(V, {
+        children: Z.toLocaleUpperCase()
+      }), N.map(e => J(e)), (0, r.jsx)(V, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -181,7 +181,7 @@ let U = e => {
           isShopGift: true,
           className: x.mx,
           optionsContainerClassName: x.OZ
-        }), J()]
+        }), $()]
       });
       let e = (0, u.Ee)({
         selectedSkuPricePreview: U,
@@ -191,11 +191,11 @@ let U = e => {
         skusById: H,
         formatPrice: I.$g
       });
-      return L === w.vQ.USER_PROFILE_WISHLIST || L === w.vQ.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
+      return L === R.vQ.USER_PROFILE_WISHLIST || L === R.vQ.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
         className: D.Tc,
         children: [(0, r.jsx)(y.Z, {
           giftRecipient: C
-        }), J(), null != e && null != M && (0, r.jsx)(d.A, {
+        }), $(), null != e && null != M && (0, r.jsx)(d.A, {
           skuId: M,
           price: e,
           className: D.uW,
@@ -216,8 +216,8 @@ let U = e => {
           selectedSkuId: M,
           recipients: z,
           className: D.uh,
-          validateSelectedGift: Z
-        }), J(), null != e && (0, r.jsx)(d.A, {
+          validateSelectedGift: X
+        }), $(), null != e && (0, r.jsx)(d.A, {
           skuId: M,
           price: e,
           className: D.Ng,
@@ -228,7 +228,7 @@ let U = e => {
     },
     onStepChange: t,
     onBackClick: n,
-    ctaDisabled: null != _ || null == C || C.id === (null == Y ? true : Y.id) || o.length > w.Jo,
+    ctaDisabled: null != _ || null == C || C.id === (null == Y ? true : Y.id) || o.length > R.Jo,
     loading: b
   }
 };
@@ -333,7 +333,7 @@ function F(e) {
     t(), (0, a.s7G)(), null == n ? (0, c.Cz)({
       analyticsLocations: i,
       analyticsSource: o.A.COLLECTIBLES_GIFT_CUSTOMIZATION_MODAL
-    }) : (0, b.pX)("".concat(R.BVt.COLLECTIBLES_SHOP, "#itemSkuId=").concat(n))
+    }) : (0, b.pX)("".concat(w.BVt.COLLECTIBLES_SHOP, "#itemSkuId=").concat(n))
   }
   return (0, r.jsx)(a.QWc, {
     text: P.intl.string(P.t.J82mpK),

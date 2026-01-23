@@ -13,7 +13,7 @@ require.d(exports, {
   IX: () => T,
   Jb: () => A,
   LO: () => m,
-  M1: () => R,
+  M1: () => w,
   Qp: () => f,
   RI: () => v,
   RJ: () => E,
@@ -24,7 +24,7 @@ require.d(exports, {
   qz: () => b,
   ts: () => S,
   uS: () => p,
-  uh: () => w
+  uh: () => R
 });
 var Chunk73153 = require("./73153.js"),
   Chunk817281 = require("./817281.js"),
@@ -184,13 +184,13 @@ function N() {
   })
 }
 
-function R() {
+function w() {
   r.h.dispatch({
     type: "ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE"
   })
 }
 
-function w(e) {
+function R(e) {
   r.h.dispatch({
     type: "ACCESSIBILITY_SET_CONTRAST_MODE",
     contrastMode: e

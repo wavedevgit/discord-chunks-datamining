@@ -10,7 +10,7 @@ require.d(exports, {
   Q7: () => C,
   WN: () => L,
   cb: () => h,
-  fE: () => w,
+  fE: () => R,
   h6: () => D,
   j5: () => p,
   lZ: () => P,
@@ -252,7 +252,7 @@ function N(e, t, n) {
   }
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   let r, i, s;
   if (e /= 360, 0 === t) r = i = s = n;
   else {
@@ -266,10 +266,10 @@ function R(e, t, n) {
   return new a.A(Math.round(255 * r), Math.round(255 * i), Math.round(255 * s), 1)
 }
 
-function w(e, t) {
+function R(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = N(e.red, e.green, e.blue);
-  return n ? r.lightness = r.lightness + t > 1 ? .9 : r.lightness + t : r.lightness = r.lightness - t < 0 ? .1 : r.lightness - t, R(r.hue, r.saturation, r.lightness)
+  return n ? r.lightness = r.lightness + t > 1 ? .9 : r.lightness + t : r.lightness = r.lightness - t < 0 ? .1 : r.lightness - t, w(r.hue, r.saturation, r.lightness)
 }
 
 function P(e) {
@@ -322,7 +322,7 @@ function L(e) {
   } = e;
   if (null == n) return n;
   let i = N(n.get("rgb.r"), n.get("rgb.g"), n.get("rgb.b"));
-  return null == i ? null == n ? true : n.hex() : null == (t = R(i.hue, i.saturation * r, i.lightness)) ? true : t.toHexString()
+  return null == i ? null == n ? true : n.hex() : null == (t = w(i.hue, i.saturation * r, i.lightness)) ? true : t.toHexString()
 }
 
 function j(e, t, n) {

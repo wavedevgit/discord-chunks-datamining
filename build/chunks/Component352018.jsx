@@ -84,7 +84,7 @@ function N(e, t) {
   return i
 }
 
-function R(e) {
+function w(e) {
   let {
     className: t
   } = e;
@@ -95,7 +95,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     className: t
   } = e;
@@ -103,7 +103,7 @@ function w(e) {
     children: [(0, r.jsx)(u.Ay, {
       className: t,
       mask: u.Ay.Masks.HEADER_BAR_BADGE_BOTTOM,
-      children: (0, r.jsx)(R, {})
+      children: (0, r.jsx)(w, {})
     }), (0, r.jsx)(h.A, {
       className: v.s
     })]
@@ -122,8 +122,8 @@ function P(e) {
     null != P && (0, f.A)(P.getGuildId(), P.id, A)
   }, [P, A]);
   if (null == n || null == P) return null;
-  let L = R;
-  return t || N || (L = w), (0, r.jsx)(s.YNO, {
+  let L = w;
+  return t || N || (L = R), (0, r.jsx)(s.YNO, {
     targetElementRef: v,
     position: "top",
     renderPopout: e => {

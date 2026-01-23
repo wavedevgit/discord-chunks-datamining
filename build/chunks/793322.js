@@ -38,7 +38,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk746080 = require("./746080.js"),
   Chunk758836 = require("./758836.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,7 +54,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -272,7 +272,7 @@ function W(e) {
           }), (0, l.id)(C.zgK.COMPONENT_PLAYGROUND)
         }
       } else e.record.type === f.t1.SHOP_ORBS_TAB ? (0, p.Cz)({
-        tab: R.G2.ORBS,
+        tab: w.G2.ORBS,
         analyticsLocations: [u.A.QUICK_SWITCHER],
         analyticsSource: u.A.QUICK_SWITCHER
       }) : (0, _.A)(v.path, {

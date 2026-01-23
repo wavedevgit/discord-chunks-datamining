@@ -2,8 +2,8 @@
 /** chunk id: 962789, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w,
-  T: () => R
+  A: () => R,
+  T: () => w
 }), require("./638769.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -184,7 +184,7 @@ function N(e) {
   }) : (0, r.jsx)(C, {})
 }
 
-function R() {
+function w() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
@@ -194,7 +194,7 @@ function R() {
   })
 }
 
-function w() {
+function R() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t

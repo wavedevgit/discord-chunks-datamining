@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $8: () => P,
-  NI: () => R,
+  NI: () => w,
   Q9: () => M,
   ST: () => F,
   Sr: () => V,
@@ -18,7 +18,7 @@ require.d(exports, {
   p9: () => C,
   uE: () => D,
   uN: () => x,
-  yM: () => w
+  yM: () => R
 }), require("./896048.js"), require("./747238.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -55,12 +55,12 @@ function N() {
   return (null == e ? true : e.ageVerificationStatus) !== s.Tk.VERIFIED_ADULT
 }
 
-function R() {
+function w() {
   let e = p.default.getCurrentUser();
   return (null == e ? true : e.ageVerificationStatus) === s.Tk.VERIFIED_TEEN
 }
 
-function w() {
+function R() {
   let e = (0, i.bG)([p.default], () => p.default.getCurrentUser());
   return (null == e ? true : e.ageVerificationStatus) === s.Tk.VERIFIED_TEEN
 }

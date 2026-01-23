@@ -96,25 +96,25 @@ function y(e) {
       singleItem: r,
       productLines: i
     }
-  }, [t, n, A, y, b, O]), R = (0, p.A)({
+  }, [t, n, A, y, b, O]), w = (0, p.A)({
     wishlistId: null != b ? b : null,
     onAction: S,
     productLines: N
   });
   if (0 === T.length) return null;
-  let w = T;
-  return null != C && ((0, u.L)(C) ? w = (0, h.z)(C, {
+  let R = T;
+  return null != C && ((0, u.L)(C) ? R = (0, h.z)(C, {
     profileOwner: n,
     analyticsLocations: A,
     wishlistId: b,
     onViewWishlist: y
-  }) : (0, d.$)(C) && (w = (0, l.A)(C, {
+  }) : (0, d.$)(C) && (R = (0, l.A)(C, {
     profileOwner: n,
     analyticsLocations: A,
     wishlistId: b,
     onViewWishlist: y
   }))), (0, r.jsxs)(_.A.Overlay, {
-    ref: R,
+    ref: w,
     className: g.kL,
     children: [(0, r.jsx)("div", {
       className: g.wx,
@@ -124,7 +124,7 @@ function y(e) {
       })
     }), (0, r.jsx)("div", {
       className: g.vY,
-      children: w
+      children: R
     })]
   })
 }

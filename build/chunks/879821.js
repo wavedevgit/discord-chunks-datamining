@@ -81,17 +81,17 @@ function f(e) {
   }), [b, O] = i.useState(s);
   l(b, s) || O(s);
   let [v, A] = i.useState(null), [I, S] = i.useState(null), T = i.useCallback(e => {
-    e !== w.current && (w.current = e, A(e))
+    e !== R.current && (R.current = e, A(e))
   }, []), C = i.useCallback(e => {
     e !== P.current && (P.current = e, S(e))
-  }, []), N = p || v, R = _ || I, w = i.useRef(null), P = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), j = d(f), M = d(g), k = i.useCallback(() => {
-    if (!w.current || !P.current) return;
+  }, []), N = p || v, w = _ || I, R = i.useRef(null), P = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), j = d(f), M = d(g), k = i.useCallback(() => {
+    if (!R.current || !P.current) return;
     let e = {
       placement: t,
       strategy: n,
       middleware: b
     };
-    j.current && (e.platform = j.current), (0, r.rD)(w.current, P.current, e).then(e => {
+    j.current && (e.platform = j.current), (0, r.rD)(R.current, P.current, e).then(e => {
       let t = {
         ...e,
         isPositioned: false !== M.current
@@ -111,21 +111,21 @@ function f(e) {
   o(() => (U.current = true, () => {
     U.current = false
   }), []), o(() => {
-    if (N && (w.current = N), R && (P.current = R), N && R) {
-      if (L.current) return L.current(N, R, k);
+    if (N && (R.current = N), w && (P.current = w), N && w) {
+      if (L.current) return L.current(N, w, k);
       k()
     }
-  }, [N, R, k, L, x]);
+  }, [N, w, k, L, x]);
   let G = i.useMemo(() => ({
-      reference: w,
+      reference: R,
       floating: P,
       setReference: T,
       setFloating: C
     }), [T, C]),
     V = i.useMemo(() => ({
       reference: N,
-      floating: R
-    }), [N, R]),
+      floating: w
+    }), [N, w]),
     F = i.useMemo(() => {
       let e = {
         position: n,

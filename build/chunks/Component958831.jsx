@@ -105,7 +105,7 @@ function N(e) {
     s.current = a
   });
   let [c, d] = i.useState(null != (t = null == (n = a.params) ? true : n.channelId) ? t : true), f = i.useCallback(() => {
-    (0, o.mMO)(async () => e => (0, r.jsx)(w, v(b({}, e), {
+    (0, o.mMO)(async () => e => (0, r.jsx)(R, v(b({}, e), {
       onSelect: e => {
         d(e), l.A.setKeybind(v(b({}, s.current), {
           params: {
@@ -140,7 +140,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let [t, n] = i.useState(0), r = i.useRef(e);
   return e !== r.current && 0 !== t && n(0), i.useEffect(() => {
     r.current = e
@@ -150,7 +150,7 @@ function R(e) {
   }
 }
 
-function w(e) {
+function R(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -166,7 +166,7 @@ function w(e) {
   }), b = C(p), {
     focusedIndex: O,
     setFocusedIndex: v
-  } = R(p);
+  } = w(p);
   i.useEffect(() => {
     let {
       current: e
@@ -206,7 +206,7 @@ function w(e) {
     }, i.id)
   }
 
-  function w(e) {
+  function R(e) {
     let t = e.key.toLowerCase();
     if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
       case "escape":
@@ -260,7 +260,7 @@ function w(e) {
     input: (0, r.jsx)(o.ksK, {
       value: p,
       onChange: h,
-      onKeyDown: w,
+      onKeyDown: R,
       placeholder: g.intl.string(g.t.tG0r7g),
       role: "combobox",
       "aria-controls": l,

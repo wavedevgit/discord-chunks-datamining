@@ -36,23 +36,23 @@ function N(e) {
     message: n,
     getAcceptInviteContext: N
   } = e, {
-    invite: R,
-    inviteError: w
+    invite: w,
+    inviteError: R
   } = (0, a.cf)([m.A], () => ({
     invite: m.A.getInvite(t),
     inviteError: m.A.getInviteError(t)
-  }), [t]), P = null == R;
+  }), [t]), P = null == w;
   i.useEffect(() => {
     P && s.Ay.resolveInvite(t)
   }, [t, P]);
-  let D = null != R ? R : {
+  let D = null != w ? w : {
       state: C.elq.RESOLVING,
       code: ""
     },
     {
       analyticsLocations: x
     } = (0, l.Ay)(),
-    L = (0, a.bG)([h.A], () => (null == R ? true : R.guild) != null ? h.A.getGuild(R.guild.id) : null, [R]),
+    L = (0, a.bG)([h.A], () => (null == w ? true : w.guild) != null ? h.A.getGuild(w.guild.id) : null, [w]),
     j = (0, a.bG)([_.default], () => _.default.getId()),
     M = (0, a.bG)([u.Ay], () => {
       var e;
@@ -62,7 +62,7 @@ function N(e) {
       null != D.channel && s.Ay.transitionToInviteSync(D)
     },
     U = () => {
-      let e = null == L && (null == R ? true : R.guild) != null ? g.DY(R.guild) : L;
+      let e = null == L && (null == w ? true : w.guild) != null ? g.DY(w.guild) : L;
       (0, p.g)({
         guild: e,
         isMember: null != L,
@@ -95,7 +95,7 @@ function N(e) {
     case C.elq.ERROR:
       G = (0, r.jsx)(y.A, {
         author: n.author,
-        inviteError: w
+        inviteError: R
       });
       break;
     default:

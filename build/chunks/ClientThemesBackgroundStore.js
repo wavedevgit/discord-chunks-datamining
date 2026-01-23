@@ -54,10 +54,10 @@ let S = true,
     }
     i = t
   },
-  R = e => {
+  w = e => {
     r = true
   },
-  w = e => {
+  R = e => {
     let {
       channelId: t,
       guildId: n
@@ -135,9 +135,9 @@ I(j, "displayName", "ClientThemesBackgroundStore"), I(j, "persistKey", "ClientTh
 let M = new j(Chunk73153.h, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: C,
   UPDATE_MOBILE_PENDING_THEME_INDEX: N,
-  RESET_PREVIEW_CLIENT_THEME: R,
+  RESET_PREVIEW_CLIENT_THEME: w,
   CLIENT_THEMES_EDITOR_CLOSE: P,
-  CHANNEL_SELECT: w,
+  CHANNEL_SELECT: R,
   LOGOUT: P,
   CACHE_LOADED: L,
   CONNECTION_OPEN: L,

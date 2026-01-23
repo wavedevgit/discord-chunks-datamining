@@ -114,8 +114,8 @@ function b(e) {
     isCaretHoverable: T = false,
     shouldTrapFocus: C = false,
     returnRef: N,
-    onNudgeChange: R
-  } = e, w = g(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]), [P, D] = i.useState(null != v ? v : "top");
+    onNudgeChange: w
+  } = e, R = g(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]), [P, D] = i.useState(null != v ? v : "top");
   i.useEffect(() => {
     null != v && D(v)
   }, [v]);
@@ -137,23 +137,23 @@ function b(e) {
     }, []),
     k = T ? f.caretHoverable : true,
     U = _({
-      targetElementRef: w.targetElementRef,
-      shouldShow: w.shouldShow,
-      hasVideo: w.hasVideo,
+      targetElementRef: R.targetElementRef,
+      shouldShow: R.shouldShow,
+      hasVideo: R.hasVideo,
       position: P,
       caretConfig: x,
       onRequestClose: L,
       gradientColor: b,
       onPositionChange: M,
-      onNudgeChange: R,
+      onNudgeChange: w,
       scrollBehavior: I,
       modal: C,
       returnRef: N,
       gradientOffsetBottom: 0,
       experimental_ignoreModalClicks: false
-    }, "edge" === w.alignmentStrategy ? {
+    }, "edge" === R.alignmentStrategy ? {
       alignmentStrategy: "edge",
-      align: w.align
+      align: R.align
     } : {
       alignmentStrategy: "trigger-center"
     });

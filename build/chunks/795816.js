@@ -124,17 +124,17 @@ async function eo(e) {
     onConfirmActivityLaunchChecksAlertOpen: v
   } = e, A = x.A.getChannel(a), C = null != (t = null == A ? true : A.getGuildId()) ? t : true;
   if (null == C && !(null != (r = null == A ? true : A.isPrivate()) && r)) returnfalse;
-  let w = y.A.getApplication(s),
-    P = null != w && (0, T.x)(w),
+  let R = y.A.getApplication(s),
+    P = null != R && (0, T.x)(R),
     D = (0, N.m)();
   try {
-    if (R.A.getWindowOpen(J.MLl.ACTIVITY_POPOUT)) {
+    if (w.A.getWindowOpen($.MLl.ACTIVITY_POPOUT)) {
       let {
         close: e
       } = n(574172);
-      e(J.MLl.ACTIVITY_POPOUT)
+      e($.MLl.ACTIVITY_POPOUT)
     }
-    if ((0, Z.y)({
+    if ((0, X.y)({
         applicationId: s
       })) returntrue;
     l.h.dispatch({
@@ -160,8 +160,8 @@ async function eo(e) {
       proxyTicket: e
     });
     let t = M.default.getCurrentUser();
-    if (null != t && (0, X.A)({
-        type: o ? J.UqL.LAUNCH : J.UqL.JOIN,
+    if (null != t && (0, Z.A)({
+        type: o ? $.UqL.LAUNCH : $.UqL.JOIN,
         userId: null == t ? true : t.id,
         guildId: C,
         channelId: a,
@@ -228,9 +228,9 @@ async function eo(e) {
 }
 
 function el(e, t) {
-  let n = (null == t ? true : t.type) === J.rbe.GUILD_VOICE,
+  let n = (null == t ? true : t.type) === $.rbe.GUILD_VOICE,
     r = y.A.getApplication(e),
-    i = null != r && (0, a.Lt)(r.flags, J.gfo.EMBEDDED),
+    i = null != r && (0, a.Lt)(r.flags, $.gfo.EMBEDDED),
     s = (0, F.AX)(t);
   return n && i || s
 }
@@ -319,7 +319,7 @@ async function ec(e) {
           null == l || l(), e()
         },
         onFailure: (e, n, a, s) => {
-          null == l || l(), U.default.track(J.HAw.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
+          null == l || l(), U.default.track($.HAw.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
             channel_id: r,
             guild_id: i,
             application_id: t,
@@ -381,7 +381,7 @@ async function eu(e) {
   });
   if (_ !== K.xy.CAN_LAUNCH) {
     let e = 4;
-    return _ === K.xy.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (e = 5, (0, w.i)()) : _ === K.xy.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && (e = 6, c.A.show({
+    return _ === K.xy.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (e = 5, (0, R.i)()) : _ === K.xy.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && (e = 6, c.A.show({
       title: er.intl.string(er.t["IOy+I5"]),
       body: er.intl.string(er.t.UXoQTp),
       hideActionSheet: false
@@ -433,7 +433,7 @@ async function eu(e) {
     rejectWithError: true
   };
   return null != i ? (await V.A.post(ea({
-    url: J.Rsh.ACTIVITY_CHANNEL_LAUNCH(i, n),
+    url: $.Rsh.ACTIVITY_CHANNEL_LAUNCH(i, n),
     body: {
       session_id: l,
       guild_id: null != o ? o : true
@@ -478,7 +478,7 @@ async function ef() {
       type: "DEVELOPER_ACTIVITY_SHELF_FETCH_START"
     });
     let e = await s.Bo.get({
-        url: J.Rsh.APPLICATIONS_WITH_ASSETS,
+        url: $.Rsh.APPLICATIONS_WITH_ASSETS,
         query: {
           with_team_applications: true
         },
@@ -510,7 +510,7 @@ async function ep(e, t, n) {
         channel_id: t
       } : true,
       i = await s.Bo.post({
-        url: J.Rsh.APPLICATION_UPLOAD_ATTACHMENT(e),
+        url: $.Rsh.APPLICATION_UPLOAD_ATTACHMENT(e),
         query: r,
         attachments: [{
           name: "file",
@@ -564,7 +564,7 @@ async function eh(e) {
         guild_id: s
       } : true,
       t = await V.A.get({
-        url: J.Rsh.ACTIVITY_SHELF,
+        url: $.Rsh.ACTIVITY_SHELF,
         query: e,
         trackedActionData: {
           event: r.NetworkActionNames.EMBEDDED_ACTIVITIES_FETCH_SHELF,
@@ -641,7 +641,7 @@ function eE() {
   })
 }
 async function ey(e) {
-  let t = J.Rsh.ACTIVITY_TEST_MODE(e);
+  let t = $.Rsh.ACTIVITY_TEST_MODE(e);
   try {
     return await s.Bo.get({
       url: t,
@@ -668,14 +668,14 @@ function eO(e) {
 }
 
 function ev() {
-  eb($.Gd.ACTIVITY_POPOUT_WINDOW), l.h.dispatch({
+  eb(J.Gd.ACTIVITY_POPOUT_WINDOW), l.h.dispatch({
     type: "ACTIVITY_POPOUT_WINDOW_OPEN"
   })
 }
 async function eA(e, t) {
   let n = {};
   return null != t && (n.channel_id = t), (await s.Bo.post({
-    url: J.Rsh.APPLICATION_PROXY_TICKET(e),
+    url: $.Rsh.APPLICATION_PROXY_TICKET(e),
     body: n,
     rejectWithError: true
   })).body.ticket

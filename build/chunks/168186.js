@@ -4,14 +4,14 @@
 require.d(exports, {
   $S: () => j,
   Am: () => G,
-  Ap: () => w,
+  Ap: () => R,
   Cq: () => P,
   Ez: () => k,
   Lz: () => T,
   Oe: () => v,
   PV: () => N,
   Qr: () => L,
-  XM: () => R,
+  XM: () => w,
   bq: () => M,
   gI: () => V,
   hT: () => C,
@@ -225,7 +225,7 @@ function N(e, t, n, r) {
   }), i.slice(0, r)
 }
 
-function R(e) {
+function w(e) {
   let t = e.type === u.n4.STRING,
     n = e.type === u.n4.CHANNEL,
     r = e.type === u.n4.USER || e.type === u.n4.MENTIONABLE,
@@ -242,7 +242,7 @@ function R(e) {
   }
 }
 
-function w(e) {
+function R(e) {
   return i()(e).subtract(1).toString()
 }
 let P = Chunk136722.iu(0);

@@ -77,9 +77,9 @@ function v(e) {
   } = e;
   T = b(T);
   let {
-    primaryColor: R,
-    secondaryColor: w
-  } = (0, p.A)(null != A ? A : m), P = "linear-gradient(45deg, ".concat(R, ", ").concat(w, ")"), D = (0, u.bG)([f.A], () => f.A.useReducedMotion), x = i.useRef(false), L = (0, l.K)(e => {
+    primaryColor: w,
+    secondaryColor: R
+  } = (0, p.A)(null != A ? A : m), P = "linear-gradient(45deg, ".concat(w, ", ").concat(R, ")"), D = (0, u.bG)([f.A], () => f.A.useReducedMotion), x = i.useRef(false), L = (0, l.K)(e => {
     if (false === x.current && e) {
       var t;
       null == T || null == (t = T.onView) || t.call(T), (0, h.wV)({

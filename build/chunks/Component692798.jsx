@@ -113,7 +113,7 @@ let Y = Object.freeze({
       themeName: n,
       analyticsLocations: r
     } = e;
-    I.default.track(w.HAw.CLIENT_THEME_UPDATED, {
+    I.default.track(R.HAw.CLIENT_THEME_UPDATED, {
       feature_name: P.Ae.CLIENT_THEME,
       theme_name: n,
       is_persisted: t,
@@ -183,7 +183,7 @@ let Y = Object.freeze({
       children: l
     })
   },
-  X = e => {
+  Z = e => {
     var t, n;
     let {
       renderCTAButtons: a,
@@ -213,7 +213,7 @@ let Y = Object.freeze({
       }), null == a ? true : a()]
     })
   },
-  Z = e => {
+  X = e => {
     let {
       disabled: t
     } = e, {
@@ -226,14 +226,14 @@ let Y = Object.freeze({
       return [T.A.isPreview, null == (e = T.A.gradientPreset) ? true : e.id]
     }), [E, y] = i.useState(false), [b, O] = i.useState(false), v = (0, s.bG)([d.A], () => d.A.useReducedMotion);
     i.useEffect(() => {
-      (b === R.Jm.length - 2 && "EDITOR" === a || g === o.ju.EASTER_EGG) && y(true)
+      (b === w.Jm.length - 2 && "EDITOR" === a || g === o.ju.EASTER_EGG) && y(true)
     }, [b, a, g]);
     let I = (e, t) => {
         if ((0, S.bc)(e.id), K({
             isPersisted: !m,
             analyticsLocations: h,
             themeName: o.ju[e.id]
-          }), m && "SETTINGS" === a ? w(e) : (0, u.u_)({
+          }), m && "SETTINGS" === a ? R(e) : (0, u.u_)({
             backgroundGradientPresetId: e.id,
             theme: e.theme,
             useSystemTheme: m ? D.Q_.OFF : true
@@ -242,7 +242,7 @@ let Y = Object.freeze({
           O(e => e + 1)
         }
       },
-      w = async e => {
+      R = async e => {
         await (0, u.u_)({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
@@ -250,7 +250,7 @@ let Y = Object.freeze({
         }, x.Sb.SLOW_USER_ACTION), (0, _.nf)(_.HP.CLIENT_THEMES), (0, A.default)()
       }, P = () => {
         if (!E) return null;
-        let e = R.ag[o.ju.EASTER_EGG];
+        let e = w.ag[o.ju.EASTER_EGG];
         if (null == e) return null;
         async function t() {
           let {
@@ -279,7 +279,7 @@ let Y = Object.freeze({
             from: "SETTINGS" === a ? _.xv.SETTING : _.xv.CLIENT_THEMES_EDITOR
           }), "SETTINGS" === a && (0, A.default)()
         }
-      }), R.Jm.filter(e => {
+      }), w.Jm.filter(e => {
         let {
           id: t
         } = e;
@@ -304,7 +304,7 @@ let Y = Object.freeze({
     } = e;
     return (0, r.jsxs)("section", {
       className: t,
-      children: [(0, r.jsx)(X, {
+      children: [(0, r.jsx)(Z, {
         renderCTAButtons: n,
         isCoachmark: a
       }), (0, r.jsx)(c.BJc, {
@@ -314,13 +314,13 @@ let Y = Object.freeze({
         style: {
           marginTop: 16
         },
-        children: (0, r.jsx)(Z, {
+        children: (0, r.jsx)(X, {
           disabled: i
         })
       })]
     })
   },
-  $ = e => {
+  J = e => {
     let {
       systemSelectorFirst: t,
       hideSystemSelector: n = false
@@ -365,7 +365,7 @@ let Y = Object.freeze({
       })]
     })
   },
-  J = e => {
+  $ = e => {
     let {
       isEditor: t,
       className: n,
@@ -374,7 +374,7 @@ let Y = Object.freeze({
     } = e;
     return (0, r.jsxs)("section", {
       className: n,
-      children: [!t && (0, r.jsx)(X, {
+      children: [!t && (0, r.jsx)(Z, {
         renderCTAButtons: i,
         isCoachmark: a
       }), t && a && (0, r.jsx)(c.Heading, {
@@ -389,9 +389,9 @@ let Y = Object.freeze({
         style: {
           marginTop: 16
         },
-        children: [(0, r.jsx)($, {
+        children: [(0, r.jsx)(J, {
           systemSelectorFirst: true
-        }), (0, r.jsx)(Z, {
+        }), (0, r.jsx)(X, {
           disabled: false
         })]
       })]
@@ -434,10 +434,10 @@ ee.Basic = e => {
       style: {
         marginTop: 16
       },
-      children: (0, r.jsx)($, {
+      children: (0, r.jsx)(J, {
         hideSystemSelector: n
       })
     })
   })
-}, ee.Gradient = Q, ee.BasicAndGradient = J;
+}, ee.Gradient = Q, ee.BasicAndGradient = $;
 let et = ee

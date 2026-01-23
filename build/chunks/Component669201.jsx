@@ -85,11 +85,11 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
   K = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_MARGIN),
   z = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_MARGIN_SMALL),
   q = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_DIMENSIONS),
-  X = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_DIMENSIONS_SMALL),
-  Z = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_PADDING),
-  Q = q + 2 * Z,
-  $ = X + 2 * Z,
-  J = 8,
+  Z = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_DIMENSIONS_SMALL),
+  X = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_PADDING),
+  Q = q + 2 * X,
+  J = Z + 2 * X,
+  $ = 8,
   ee = 200,
   et = s()(Chunk891090.Qz, ee),
   en = s()(Chunk891090.HA, ee),
@@ -104,18 +104,18 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       location: F
     } = (0, d.p)(), {
       analyticsLocations: q
-    } = (0, p.Ay)(f.A.STICKER_PICKER), X = (null == (a = (0, E.V)()) ? true : a.subscription_trial) != null, Z = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, A.P)(e => e.showPremiumUpsell), [ea, es] = (0, h.RQ)(e => [e.searchQuery, e.isSearchSuggestion], o.x), eo = i.useRef("");
+    } = (0, p.Ay)(f.A.STICKER_PICKER), Z = (null == (a = (0, E.V)()) ? true : a.subscription_trial) != null, X = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, A.P)(e => e.showPremiumUpsell), [ea, es] = (0, h.RQ)(e => [e.searchQuery, e.isSearchSuggestion], o.x), eo = i.useRef("");
     i.useImperativeHandle(t, () => ({
       onPickerOpen: eL
     }));
     let el = (0, T.pD)(c),
       ec = 0 === el.filter(e => e.type !== N.Z2.EMPTY_GUILD_UPSELL).length,
       eu = (0, m.oV)({
-        gridWrapperRef: Z,
+        gridWrapperRef: X,
         containerWidth: s,
         showingEmptyState: ec,
         listPaddingLeft: Y,
-        listScrollbarWidth: J
+        listScrollbarWidth: $
       }),
       ed = y.tP.useSetting(),
       ef = i.useMemo(() => new Set(ed), [ed]),
@@ -146,7 +146,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         listWidth: eu,
         listPaddingRight: W,
         stickerNodeMargin: ev ? K : z,
-        stickerNodeWidth: ev ? Q : $
+        stickerNodeWidth: ev ? Q : J
       }),
       eN = i.useCallback((e, t) => {
         let {
@@ -171,12 +171,12 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         }
       }, [F, ep, c, eO]),
       {
-        getItemProps: eR,
-        getRowProps: ew,
+        getItemProps: ew,
+        getRowProps: eR,
         gridContainerProps: eP,
         handleGridContainerKeyDown: eD,
         isUsingKeyboardNavigation: ex
-      } = (0, R.J)({
+      } = (0, w.J)({
         columnCounts: eC,
         stickersListRef: ee,
         stickersGrid: eS,
@@ -219,7 +219,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
     }, [G]);
     return (0, r.jsxs)(p.f5, {
       value: q,
-      children: [!(X && ec) && (0, r.jsx)("div", {
+      children: [!(Z && ec) && (0, r.jsx)("div", {
         className: U.wx,
         children: (0, r.jsx)(x.A, {
           ref: er,
@@ -232,7 +232,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         onClose: G
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", B(V({
-          ref: Z,
+          ref: X,
           className: U.AD,
           id: M.lq
         }, eP), {
@@ -240,8 +240,8 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             ref: ee,
             collapsedStickersCategories: ef,
             filteredStickers: e_,
-            getStickerItemProps: eR,
-            getStickerRowProps: ew,
+            getStickerItemProps: ew,
+            getStickerRowProps: eR,
             gridWidth: eu,
             gutterWidth: eT,
             isUsingKeyboardNavigation: ex,
@@ -252,7 +252,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             stickersGrid: eS,
             channel: c
           }) : null
-        })), (0, r.jsx)(w.A, {
+        })), (0, r.jsx)(R.A, {
           stickersListRef: ee,
           channel: c
         })]

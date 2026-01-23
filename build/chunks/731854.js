@@ -19,7 +19,7 @@ require.d(exports, {
   QP: () => A,
   TB: () => s,
   U9: () => ee,
-  UK: () => Z,
+  UK: () => X,
   X1: () => Y,
   XA: () => P,
   Xg: () => b,
@@ -31,14 +31,14 @@ require.d(exports, {
   d_: () => O,
   dx: () => h,
   eQ: () => B,
-  ei: () => J,
+  ei: () => $,
   fS: () => r.fS,
   fd: () => et,
   kO: () => _,
-  kc: () => w,
+  kc: () => R,
   l2: () => I,
   lo: () => G,
-  mI: () => $,
+  mI: () => J,
   n8: () => C,
   nJ: () => F,
   nO: () => v,
@@ -48,8 +48,8 @@ require.d(exports, {
   qe: () => g,
   qm: () => N,
   r8: () => u,
-  rB: () => X,
-  sG: () => R,
+  rB: () => Z,
+  sG: () => w,
   tl: () => K,
   us: () => T,
   vt: () => m,
@@ -98,8 +98,8 @@ let d = 100,
   T = 1e7,
   C = 5e3,
   N = 15e3,
-  R = 30,
-  w = 20,
+  w = 30,
+  R = 20,
   P = 12,
   D = 100,
   x = 50,
@@ -143,19 +143,19 @@ var z = function(e) {
   q = function(e) {
     return e.NATIVE = "NATIVE", e.WEBRTC = "WEBRTC", e.DUMMY = "DUMMY", e
   }({}),
-  X = function(e) {
+  Z = function(e) {
     return e.LEGACY = "legacy", e.STANDARD = "standard", e.EXPERIMENTAL = "experimental", e.AUTOMATIC = "automatic", e
   }({}),
-  Z = function(e) {
+  X = function(e) {
     return e.OPUS = "opus", e.VP8 = "VP8", e.VP9 = "VP9", e.H264 = "H264", e.H265 = "H265", e.RTX = "rtx", e.TEST = "TEST", e
   }({}),
   Q = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.VOICE = 1] = "VOICE", e[e.SOUNDSHARE = 2] = "SOUNDSHARE", e[e.PRIORITY = 4] = "PRIORITY", e[e.HIDDEN = 8] = "HIDDEN", e
   }({}),
-  $ = function(e) {
+  J = function(e) {
     return e.AUDIO = "audio", e.VIDEO = "video", e.SCREEN = "screen", e.TEST = "test", e
   }({}),
-  J = function(e) {
+  $ = function(e) {
     return e.FIXED = "fixed", e.SOURCE = "source", e
   }({}),
   ee = function(e) {

@@ -83,8 +83,8 @@ function N(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let R = new Chunk626584.A("GuildSettingsActionCreators"),
-  w = {
+let w = new Chunk626584.A("GuildSettingsActionCreators"),
+  R = {
     init(e, t, n, r) {
       s.h.dispatch({
         type: "GUILD_SETTINGS_INIT",
@@ -96,7 +96,7 @@ let R = new Chunk626584.A("GuildSettingsActionCreators"),
     },
     async open(e, t, r, i) {
       var a;
-      await Promise.all([n.e("10614"), n.e("49681"), n.e("68587"), n.e("43600"), n.e("28136"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("49862"), n.e("8458"), n.e("8018"), n.e("47841"), n.e("59541"), n.e("60989"), n.e("24202"), n.e("94503"), n.e("14360"), n.e("95864")]).then(n.bind(n, 422559)), (null == (a = E.A.getGuild(e)) ? true : a.features.has(O.GuildFeatures.COMMUNITY)) && (t === O.BEX.GUILD_AUTOMOD && (t = O.BEX.SAFETY, i = O.nd0.SAFETY_AUTOMOD), t === O.BEX.MEMBER_VERIFICATION && (t = O.BEX.SAFETY, i = O.nd0.SAFETY_DM_AND_SPAM_PROTECTION)), w.init(e, t, r, i), h.A.closeGuildSidebar(e), (0, o.id)(O.zgK.GUILD_SETTINGS)
+      await Promise.all([n.e("10614"), n.e("49681"), n.e("68587"), n.e("43600"), n.e("28136"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("49862"), n.e("8458"), n.e("8018"), n.e("47841"), n.e("59541"), n.e("60989"), n.e("24202"), n.e("94503"), n.e("14360"), n.e("95864")]).then(n.bind(n, 422559)), (null == (a = E.A.getGuild(e)) ? true : a.features.has(O.GuildFeatures.COMMUNITY)) && (t === O.BEX.GUILD_AUTOMOD && (t = O.BEX.SAFETY, i = O.nd0.SAFETY_AUTOMOD), t === O.BEX.MEMBER_VERIFICATION && (t = O.BEX.SAFETY, i = O.nd0.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, r, i), h.A.closeGuildSidebar(e), (0, o.id)(O.zgK.GUILD_SETTINGS)
     },
     close() {
       s.h.dispatch({
@@ -227,7 +227,7 @@ let R = new Chunk626584.A("GuildSettingsActionCreators"),
         ownerConfiguredContentLevel: S,
         discoverySplash: C,
         publicUpdatesChannelId: N,
-        premiumProgressBarEnabled: w,
+        premiumProgressBarEnabled: R,
         profile: P,
         moderatorReportingEnabled: D
       } = t, x = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, L = T(I({
@@ -251,8 +251,8 @@ let R = new Chunk626584.A("GuildSettingsActionCreators"),
         discovery_splash: C,
         public_updates_channel_id: N,
         safety_alerts_channel_id: A
-      }, null != w ? {
-        premium_progress_bar_enabled: w
+      }, null != R ? {
+        premium_progress_bar_enabled: R
       } : null), {
         profile: null != P ? (0, c.N)(P) : P,
         moderator_reporting_enabled: D
@@ -276,7 +276,7 @@ let R = new Chunk626584.A("GuildSettingsActionCreators"),
         if (s.h.dispatch({
             type: "GUILD_SETTINGS_SUBMIT_FAILURE",
             errors: e.body
-          }), R.error("Failed to save guild settings", {
+          }), w.error("Failed to save guild settings", {
             errors: e.body
           }), x.throwErr) throw e.body
       })
@@ -330,7 +330,7 @@ let R = new Chunk626584.A("GuildSettingsActionCreators"),
       oldFormErrors: true,
       rejectWithError: false
     }).then(() => {
-      w.close()
+      R.close()
     }),
     async leaveGuild(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
@@ -344,7 +344,7 @@ let R = new Chunk626584.A("GuildSettingsActionCreators"),
         rejectWithError: false
       }).then(() => {
         i.OR.announce(v.intl.string(v.t["7iPyVW"]))
-      }), w.close(), t && n && (0, _.pX)(O.BVt.GUILD_DISCOVERY)
+      }), R.close(), t && n && (0, _.pX)(O.BVt.GUILD_DISCOVERY)
     },
     async updateMemberRoles(e, t, n, r, i) {
       f.A.isFullServerPreview(e) && t === m.default.getId() ? (0, d.ID)(e, n) : (await a.Bo.patch({
@@ -437,7 +437,7 @@ let R = new Chunk626584.A("GuildSettingsActionCreators"),
         migratePin: n,
         migrateSlowmode: r
       } = t;
-      n && await w.migratePinPermission(e), r && await w.migrateSlowmodePermission(e)
+      n && await R.migratePinPermission(e), r && await R.migrateSlowmodePermission(e)
     }
   },
-  P = w
+  P = R

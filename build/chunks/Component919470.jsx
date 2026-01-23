@@ -118,11 +118,11 @@ let m = {
       emerald: u.Ac.PREMIUM_TENURE_36_MONTH,
       ruby: u.Ac.PREMIUM_TENURE_60_MONTH,
       opal: u.Ac.PREMIUM_TENURE_72_MONTH
-    })[_], [_]), N = null != C ? (0, c.I)(C) : null, R = i.useMemo(() => {
+    })[_], [_]), N = null != C ? (0, c.I)(C) : null, w = i.useMemo(() => {
       if (null == C) return "";
       let e = u.VD[C];
       return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
-    }, [C]), w = i.useMemo(() => {
+    }, [C]), R = i.useMemo(() => {
       if (!a || null == N) return;
       let e = g ? {
         progressCircleText: E,
@@ -135,13 +135,13 @@ let m = {
         aspectRatio: "6/4",
         props: p({
           src: N,
-          alt: R
+          alt: w
         }, e)
       }
-    }, [a, N, R, g, E, y, b]), P = {
+    }, [a, N, w, g, E, y, b]), P = {
       title: t,
       body: n,
-      graphic: w,
+      graphic: R,
       actions: i.useMemo(() => {
         if (f) return [{
           text: "Got it",

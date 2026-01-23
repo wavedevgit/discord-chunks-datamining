@@ -180,7 +180,7 @@ async function G(e) {
       pids: e
     })
   }).catch(e => {
-    w.A.show(P.kqX.LAUNCH_GAME_FAILURE, x.intl.string(x.t.YZEBdj)), c.h.dispatch({
+    R.A.show(P.kqX.LAUNCH_GAME_FAILURE, x.intl.string(x.t.YZEBdj)), c.h.dispatch({
       type: "GAME_LAUNCH_FAIL",
       applicationId: t,
       error: f
@@ -210,7 +210,7 @@ let V = {
           i = s.Lt(r, P.hM6.OVERLAY_DISABLED);
         t && i !== t && (r = s.PQ(r, P.hM6.OVERLAY_DISABLED));
         let a = s.Lt(r, P.hM6.OVERLAY_V3_DISABLED);
-        null != n && n !== a && (r = s.PQ(r, P.hM6.OVERLAY_V3_DISABLED)), R.V(e.id, e.branchId, r);
+        null != n && n !== a && (r = s.PQ(r, P.hM6.OVERLAY_V3_DISABLED)), w.V(e.id, e.branchId, r);
         return
       }
     }

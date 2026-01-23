@@ -116,14 +116,14 @@ function N(e) {
   delete y[t]
 }
 
-function R(e) {
+function w(e) {
   let {
     channel: t
   } = e;
   return null != t.guild_id && S(t.guild_id, t.id)
 }
 
-function w(e) {
+function R(e) {
   let {
     channels: t
   } = e, n = false;
@@ -177,9 +177,9 @@ let L = new x(Chunk73153.h, {
   GUILD_ROLE_DELETE: N,
   IMPERSONATE_UPDATE: N,
   IMPERSONATE_STOP: N,
-  CHANNEL_CREATE: R,
-  CHANNEL_DELETE: R,
-  CHANNEL_UPDATES: w,
+  CHANNEL_CREATE: w,
+  CHANNEL_DELETE: w,
+  CHANNEL_UPDATES: R,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: P,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: D
 })

@@ -44,9 +44,9 @@ let p = {
         T = g[y],
         C = I - E[m] - g[b],
         N = I / 2 - E[m] / 2 + S,
-        R = (0, l.u)(T, N, C),
-        w = h;
-      n.modifiersData[a] = (t = {}, t[w] = R, t.centerOffset = R - N, t)
+        w = (0, l.u)(T, N, C),
+        R = h;
+      n.modifiersData[a] = (t = {}, t[R] = w, t.centerOffset = w - N, t)
     }
   },
   effect: function(e) {

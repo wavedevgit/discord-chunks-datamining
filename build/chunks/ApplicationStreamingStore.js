@@ -25,7 +25,7 @@ var c, Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk502075 = require("./502075.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,14 +34,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -133,7 +133,7 @@ function H(e) {
   let {
     streamKey: t
   } = e, n = (0, _.Iy)(t);
-  r.delete(t), r.set(t, D(w({}, n), {
+  r.delete(t), r.set(t, D(R({}, n), {
     state: C.XYD.CONNECTING
   })), n.ownerId === y.default.getId() && (L[n.channelId] = false)
 }
@@ -195,7 +195,7 @@ function K(e) {
   let a = false;
   for (let e in s) {
     let t = r.get(e);
-    null != t && (r.set(e, D(w({}, t), {
+    null != t && (r.set(e, D(R({}, t), {
       state: C.XYD.FAILED,
       endReason: n,
       errorCode: i
@@ -219,7 +219,7 @@ function z(e) {
   let a = false;
   for (let e in s) {
     var c, u;
-    (null == (u = s[e]) || null == (c = u.sourceId) ? true : c.startsWith("prepicked:")) && (s[e] = w({}, s[e], i), a = true)
+    (null == (u = s[e]) || null == (c = u.sourceId) ? true : c.startsWith("prepicked:")) && (s[e] = R({}, s[e], i), a = true)
   }
   return a
 }
@@ -231,14 +231,14 @@ function q(e) {
   s[t] = null
 }
 
-function X(e) {
+function Z(e) {
   let {
     streamKey: t,
     region: n,
     viewerIds: i,
     paused: s
   } = e;
-  r.set(t, D(w({}, (0, _.Iy)(t)), {
+  r.set(t, D(R({}, (0, _.Iy)(t)), {
     state: s ? C.XYD.PAUSED : C.XYD.ACTIVE
   })), a[t] = {
     streamKey: t,
@@ -247,7 +247,7 @@ function X(e) {
   }
 }
 
-function Z(e) {
+function X(e) {
   let {
     streamKey: t
   } = e;
@@ -264,7 +264,7 @@ function Q(e) {
   }), null == t || (0, _.wL)(t) && t.includes(y.default.getId()) && (L[n] = false)
 }
 
-function $(e) {
+function J(e) {
   let {
     streamKey: t,
     unavailable: i,
@@ -287,17 +287,17 @@ function $(e) {
       n(e)
     }), l = C.XYD.ENDED
   } else o.state === C.XYD.FAILED && s === C.H2B.USER_REQUESTED && (l = C.XYD.FAILED);
-  r.set(t, D(w({}, o), {
+  r.set(t, D(R({}, o), {
     state: l
   })), l === C.XYD.ENDED && x !== t && G(t)
 }
 
-function J(e) {
+function $(e) {
   let {
     streamKey: t
   } = e, n = r.get(t);
   if (null == n) returnfalse;
-  r.set(t, D(w({}, n), {
+  r.set(t, D(R({}, n), {
     state: C.XYD.FAILED
   }))
 }
@@ -319,7 +319,7 @@ function ee(e) {
       a = C.XYD.ACTIVE
   }
   if (a === i.state) returnfalse;
-  r.set(t, D(w({}, i), {
+  r.set(t, D(R({}, i), {
     state: a
   }))
 }
@@ -461,7 +461,7 @@ class ea extends(c = Chunk311907.Ay.PersistedStore) {
     }
   }
 }
-R(ea, "displayName", "ApplicationStreamingStore"), R(ea, "persistKey", "ApplicationStreamingStore");
+w(ea, "displayName", "ApplicationStreamingStore"), w(ea, "persistKey", "ApplicationStreamingStore");
 let es = new ea(Chunk73153.h, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: K,
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: z,
@@ -470,11 +470,11 @@ let es = new ea(Chunk73153.h, {
   STREAM_WATCH: H,
   STREAM_START: Y,
   STREAM_STOP: q,
-  STREAM_CREATE: X,
-  STREAM_UPDATE: X,
-  STREAM_TIMED_OUT: J,
-  STREAM_DELETE: $,
-  STREAM_CLOSE: Z,
+  STREAM_CREATE: Z,
+  STREAM_UPDATE: Z,
+  STREAM_TIMED_OUT: $,
+  STREAM_DELETE: J,
+  STREAM_CLOSE: X,
   STREAM_UPDATE_SELF_HIDDEN: et,
   SET_STREAM_APP_INTENT: en,
   RTC_CONNECTION_STATE: ee,

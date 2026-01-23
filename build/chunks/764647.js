@@ -261,17 +261,17 @@ let l = function(e) {
           C = "none" !== y;
         !g && C && T.push(...(0, r.lP)(f, b, y, S));
         let N = [f, ...T],
-          R = await s(t, O),
-          w = [],
+          w = await s(t, O),
+          R = [],
           P = (null == (i = u.flip) ? true : i.overflows) || [];
-        if (h && w.push(R[v]), m) {
+        if (h && R.push(w[v]), m) {
           let e = (0, r.w7)(c, d, S);
-          w.push(R[e[0]], R[e[1]])
+          R.push(w[e[0]], w[e[1]])
         }
         if (P = [...P, {
             placement: c,
-            overflows: w
-          }], !w.every(e => e <= 0)) {
+            overflows: R
+          }], !R.every(e => e <= 0)) {
           let e = ((null == (a = u.flip) ? true : a.index) || 0) + 1,
             t = N[e];
           if (t && ("alignment" !== m || A === (0, r.TV)(t) || P.every(e => (0, r.TV)(e.placement) !== A || e.overflows[0] > 0))) return {

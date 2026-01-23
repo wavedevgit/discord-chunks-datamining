@@ -98,22 +98,22 @@ function T(e) {
     enableDisplayNameStyles: I = false
   } = e, T = i.useRef(null), {
     analyticsLocations: C
-  } = (0, c.Ay)(l.A.USERNAME), N = (0, _.Ay)(m, null == t ? true : t.id), R = (0, u.A)({
+  } = (0, c.Ay)(l.A.USERNAME), N = (0, _.Ay)(m, null == t ? true : t.id), w = (0, u.A)({
     userId: null == t ? true : t.id,
     guildId: m
-  }), w = (0, p.a)({
-    displayNameStyles: R
+  }), R = (0, p.a)({
+    displayNameStyles: w
   }), P = S(t, n), D = i.useContext(s.C);
   return (0, E.A)({
     subscribeToGroupId: g,
     authorId: null == t ? true : t.id,
-    shouldSubscribe: I && null != R && null == m
+    shouldSubscribe: I && null != w && null == m
   }), i.useCallback(e => (i, s) => {
     let l = null == e ? true : e.colorStrings,
       u = N && null != l && null != l.primaryColor && null != l.secondaryColor,
       p = (t, n) => {
         var s, c, p;
-        if (!I || null == R || null != m) return (0, r.jsx)(o.V30, v(b({}, null != t ? t : {}), {
+        if (!I || null == w || null != m) return (0, r.jsx)(o.V30, v(b({}, null != t ? t : {}), {
           ref: T,
           onContextMenu: P,
           name: null != (c = (0, o.Oer)(i)) ? c : "",
@@ -121,7 +121,7 @@ function T(e) {
           roleName: null == e ? true : e.colorRoleName,
           colorStrings: u ? l : null,
           "aria-label": O,
-          className: w
+          className: R
         }));
         {
           let e = (null == D ? true : D.animate) || (null == n ? true : n.isShown) ? d.G.ANIMATED : d.G.PLAIN;
@@ -131,7 +131,7 @@ function T(e) {
             "aria-label": O,
             children: (0, r.jsx)(f.A, {
               userName: null != (s = (0, o.Oer)(i)) ? s : "",
-              displayNameStyles: R,
+              displayNameStyles: w,
               effectDisplayType: e,
               shouldUnderlineOnHover: true,
               loop: true
@@ -162,5 +162,5 @@ function T(e) {
         }
       }) : p(true, true)
     }, s)
-  }, [C, t, n, m, g, P, y, O, N, w, null == D ? true : D.animate, R, I])
+  }, [C, t, n, m, g, P, y, O, N, R, null == D ? true : D.animate, w, I])
 }

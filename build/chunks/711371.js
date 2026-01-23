@@ -82,7 +82,7 @@ if (require("./654821.js"), !Chunk719442.KE._addedDiscordOverrides) {
     } : p.range(t, l);
     let [b, O] = y.edges(i), v = p.blocks(t), A = d ? false : 1, I = null != (n = b.path[0]) ? n : 0, S = null != (r = O.path[0]) ? r : v.length - 1, T = d ? S : I, C = d ? I : S, N = false;
 
-    function* R(n) {
+    function* w(n) {
       let [r, i] = n, l = i.length, p = g.isAncestor(i, b.path), E = g.isAncestor(i, O.path), y = p ? b.path[l] : 0, v = E ? O.path[l] : r.children.length - 1, I = d ? v : y, S = d ? y : v;
       for (let n = I; !N && (!d ? n <= S : n >= S); n += A) {
         let l = r.children[n],
@@ -97,7 +97,7 @@ if (require("./654821.js"), !Chunk719442.KE._addedDiscordOverrides) {
             }
             if (!_ && e) continue
           }
-          for (let e of R([l, p])) yield e
+          for (let e of w([l, p])) yield e
         } else if (m.isText(l))
           if ("line" === c) s = {
             path: p,
@@ -118,7 +118,7 @@ if (require("./654821.js"), !Chunk719442.KE._addedDiscordOverrides) {
     }
     "line" === c && (yield d ? O : b);
     for (let e = T; !N && (!d ? e <= C : e >= C); e += A)
-      for (let t of R(v[e])) yield t
+      for (let t of w(v[e])) yield t
   };
   let t = Chunk253018.rL.findDocumentOrShadowRoot;
   Chunk253018.rL.findDocumentOrShadowRoot = e => {

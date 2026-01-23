@@ -88,7 +88,7 @@ function v(e) {
     colorPickerMiddle: v,
     colorPickerFooter: A,
     showEyeDropper: I
-  } = e, S = i.useRef(null), T = (0, u.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), C = c.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, f.sN)(a), R = (0, l.Hl)(a), w = R === T ? C : R, P = N ? c.A.unsafe_rawColors.WHITE.css : c.A.unsafe_rawColors.PRIMARY_530.css, D = (0, d.A)(v), x = (0, d.A)(A), [L, j] = i.useState((0, o.A)());
+  } = e, S = i.useRef(null), T = (0, u.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), C = c.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, f.sN)(a), w = (0, l.Hl)(a), R = w === T ? C : w, P = N ? c.A.unsafe_rawColors.WHITE.css : c.A.unsafe_rawColors.PRIMARY_530.css, D = (0, d.A)(v), x = (0, d.A)(A), [L, j] = i.useState((0, o.A)());
   return i.useEffect(() => {
     (D !== v || x !== A) && j((0, o.A)())
   }, [A, v, x, D]), (0, r.jsx)(u.YNO, {
@@ -116,8 +116,8 @@ function v(e) {
           tabIndex: E ? false : 0,
           onClick: E ? p.tEg : t,
           style: {
-            backgroundColor: R,
-            borderColor: w
+            backgroundColor: w,
+            borderColor: R
           },
           className: h.nf,
           "aria-label": _.intl.string(_.t.Qp04hK),

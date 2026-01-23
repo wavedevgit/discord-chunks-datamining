@@ -2,8 +2,8 @@
 /** chunk id: 694403, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => w,
-  W1: () => R
+  Ay: () => R,
+  W1: () => w
 }), require("./896048.js"), require("./747238.js"), require("./65821.js"), require("./457529.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./733351.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -139,7 +139,7 @@ function N(e) {
   return n.length < 3 || "" !== n[1] || d.A.safeDecodeURIComponent(n[2]) !== n[2]
 }
 
-function R(e) {
+function w(e) {
   try {
     var t;
     if (N(e)) throw Error("Rejected due to suspicious characters in URL: " + JSON.stringify(e));
@@ -158,7 +158,7 @@ function R(e) {
     return null
   }
 }
-let w = g(h({}, l().defaultRules.link), {
+let R = g(h({}, l().defaultRules.link), {
   match: (e, t, n) => t.allowLinks ? l().defaultRules.link.match(e, t, n) : null,
   parse(e, t, n) {
     let [r, a, s, o] = e, u = () => ({
@@ -172,9 +172,9 @@ let w = g(h({}, l().defaultRules.link), {
       m = d.whitespaceSanitized,
       E = p.fullySanitized,
       b = _.fullySanitized,
-      w = E.trim();
-    if (0 === m.trim().length || 0 === w.length) return u();
-    let P = R(l().unescapeUrl(s)),
+      R = E.trim();
+    if (0 === m.trim().length || 0 === R.length) return u();
+    let P = w(l().unescapeUrl(s)),
       D = null == P,
       x = (0, c.Ay)(a).length > 0 || (0, c.Ay)(o).length > 0;
     if (D || x) return u();

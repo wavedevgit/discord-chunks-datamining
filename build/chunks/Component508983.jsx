@@ -92,12 +92,12 @@ function q(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = X(e, t), Object.getOwnPropertySymbols)
+  if (a = Z(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function X(e, t) {
+function Z(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -105,7 +105,7 @@ function X(e, t) {
   return i
 }
 
-function Z(e, t) {
+function X(e, t) {
   let {
     popouts: n,
     selected: r,
@@ -142,7 +142,7 @@ function Q(e, t, n) {
   }, [e, t, n])
 }
 
-function $(e) {
+function J(e) {
   let {
     children: t,
     className: n,
@@ -156,7 +156,7 @@ function $(e) {
   })
 }
 
-function J(e) {
+function $(e) {
   let {
     children: t,
     className: n
@@ -261,9 +261,9 @@ let ei = Chunk64700.memo(function(e) {
       compact: s,
       interactionUserId: o
     } = e,
-    l = Z(n, i),
+    l = X(n, i),
     c = Q(i, n.author),
-    u = (0, R.Ay)(n),
+    u = (0, w.Ay)(n),
     d = (0, D.tO)(W({
       message: n,
       channel: i,
@@ -273,10 +273,10 @@ let ei = Chunk64700.memo(function(e) {
     }, l), c),
     f = () => d,
     _ = S.default.getUser(o),
-    h = Z(n, i),
+    h = X(n, i),
     m = Q(i, _, S.default.getCurrentUser());
   if (null != _) {
-    let e = (0, R.FT)(_, i),
+    let e = (0, w.FT)(_, i),
       r = (0, D.tO)(W({
         message: n,
         channel: i,
@@ -288,7 +288,7 @@ let ei = Chunk64700.memo(function(e) {
   }
   let g = () => (0, r.jsx)("div", {
     className: H.aT,
-    children: (0, r.jsx)(w.A, {
+    children: (0, r.jsx)(R.A, {
       channel: a,
       className: H.HA,
       openChatWithoutConnecting: true
@@ -318,13 +318,13 @@ function ea(e) {
     }
   } = (0, M.a)(true), T = (0, c.rm)(null != n ? n : ""), {
     onFocus: C
-  } = T, R = q(T, ["onFocus"]), {
-    isFocused: w,
+  } = T, w = q(T, ["onFocus"]), {
+    isFocused: R,
     handleFocus: x,
     handleBlur: j
   } = (0, L.G8)(C), U = (0, u.bG)([h.A], () => h.A.keyboardModeEnabled), Y = (0, u.bG)([I.A], () => I.A.can(G.xBc.MANAGE_MESSAGES, l), [l]), {
     ruleName: K,
-    embedChannel: X,
+    embedChannel: Z,
     decisionId: Q,
     keywordMatchedContent: ee,
     keyword: et,
@@ -335,22 +335,22 @@ function ea(e) {
     alertActionsExecution: el,
     quarantineType: ec,
     interactionUserId: eu
-  } = (0, E.Ay)(o), ed = i.useMemo(() => (0, N.Tz)(en, ee, l.id), [en, ee, l]), ef = Z(o, l), {
+  } = (0, E.Ay)(o), ed = i.useMemo(() => (0, N.Tz)(en, ee, l.id), [en, ee, l]), ef = X(o, l), {
     selected: ep
-  } = ef, e_ = q(ef, ["selected"]), eh = ep || U && w, em = e => {
+  } = ef, e_ = q(ef, ["selected"]), eh = ep || U && R, em = e => {
     var t;
     null == (t = e_.onContextMenuModerateUser) || t.call(e_, e)
   }, eg = i.useCallback(() => {
     (0, y.w2)(o.id, en, Q, l)
   }, [o.id, en, Q, l]), eE = i.useCallback(e => {
-    null != ea && null != X && (e.stopPropagation(), e.preventDefault(), (0, O.A)(G.BVt.CHANNEL(null == X ? true : X.guild_id, null == X ? true : X.id, ea)))
-  }, [X, ea]), ey = i.useCallback(e => {
-    null != X && (_.default.selectChannel({
-      guildId: X.guild_id,
+    null != ea && null != Z && (e.stopPropagation(), e.preventDefault(), (0, O.A)(G.BVt.CHANNEL(null == Z ? true : Z.guild_id, null == Z ? true : Z.id, ea)))
+  }, [Z, ea]), ey = i.useCallback(e => {
+    null != Z && (_.default.selectChannel({
+      guildId: Z.guild_id,
       channelId: e,
       messageId: o.id
     }), (0, v.iN)(e))
-  }, [o, X]), eb = i.useCallback(() => {
+  }, [o, Z]), eb = i.useCallback(() => {
     (0, b.E5)(o.id, l, g.G.DELETE_USER_MESSAGE)
   }, [l, o.id]), eO = (0, F.getFriendlyDurationString)(Number(es)), ev = null != eo, eA = Y && null != ea && (null == el || !el.actions.hasOwnProperty(g.G.DELETE_USER_MESSAGE)), eI = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? true : t.rawValue : null, eS = null != eI;
   return (0, r.jsx)("div", {
@@ -389,7 +389,7 @@ function ea(e) {
             }), (0, r.jsx)(ei, {
               message: o,
               channel: l,
-              embedChannel: X,
+              embedChannel: Z,
               compact: a,
               interactionUserId: eu
             })]
@@ -400,9 +400,9 @@ function ea(e) {
           className: s()(H.BK, {
             [H.oE]: a
           }),
-          children: (0, r.jsx)(P.A, z(W({}, R), {
+          children: (0, r.jsx)(P.A, z(W({}, w), {
             message: o,
-            channel: X,
+            channel: Z,
             content: ed,
             compact: a,
             withFooter: true,
@@ -410,7 +410,7 @@ function ea(e) {
             className: s()(H.gD, {
               [H.oE]: a,
               [H.wH]: eh,
-              [H.JD]: null != ea && null != X
+              [H.JD]: null != ea && null != Z
             }),
             childrenAccessories: (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsxs)("div", {
@@ -458,7 +458,7 @@ function ea(e) {
                     })
                   })]
                 })]
-              }), ev ? (0, r.jsx)(J, {
+              }), ev ? (0, r.jsx)($, {
                 children: (0, r.jsx)(p.Text, {
                   variant: "text-xs/medium",
                   color: "text-default",
@@ -473,7 +473,7 @@ function ea(e) {
             onBlur: j,
             onClick: eE
           }))
-        }), (0, r.jsx)($, {
+        }), (0, r.jsx)(J, {
           compact: a,
           children: (0, r.jsxs)("div", {
             className: s()(H.Y4, H.UD, {

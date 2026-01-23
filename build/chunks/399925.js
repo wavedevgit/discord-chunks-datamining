@@ -6,27 +6,27 @@ require.d(exports, {
   GS: () => B,
   H1: () => ei,
   HU: () => F,
-  MI: () => Z,
+  MI: () => X,
   Mt: () => V,
   PW: () => es,
   Su: () => ee,
   Ts: () => ec,
   VO: () => er,
   Wn: () => Y,
-  XK: () => $,
+  XK: () => J,
   Yy: () => Q,
   dR: () => eo,
   e6: () => ea,
   eQ: () => k,
   fd: () => G,
   h$: () => H,
-  jA: () => J,
+  jA: () => $,
   l0: () => eu,
   oH: () => en,
   pM: () => el,
   w7: () => ed,
   yO: () => U,
-  yT: () => X,
+  yT: () => Z,
   yd: () => q
 }), require("./896048.js"), require("./457529.js"), require("./638769.js"), require("./321073.js");
 var Chunk205693 = require("./205693.js"),
@@ -290,7 +290,7 @@ async function z(e) {
     n.clip_save_time_ms = t.clipSaveTimeMs, n.clip_size_bytes = t.clipSizeBytes, null != t.viewerDecodeFps && (n.decode_fps_during_clip = t.viewerDecodeFps, n.encode_fps_during_clip = t.viewerEncodeFps, n.target_fps = null), b.default.track(D.HAw.CLIP_SAVED, n);
     let r = "";
     try {
-      r = await (0, w.m)(s.A.clips.getClipProtocolURLFromPath(u), 0)
+      r = await (0, R.m)(s.A.clips.getClipProtocolURLFromPath(u), 0)
     } catch (e) {
       P.nx.warn("Failed to generate clip thumbnail:", e)
     }
@@ -332,7 +332,7 @@ async function q(e) {
       let e = null != T ? (0, c.Iy)(T).ownerId : true;
       return e === h.default.getId() ? P.Fv.STREAMER : null != e ? P.Fv.VIEWER : E ? P.Fv.DECOUPLED : P.Fv.VOICE
     })(),
-    R = await (async () => {
+    w = await (async () => {
       if (null == T) return;
       let {
         ownerId: e,
@@ -341,7 +341,7 @@ async function q(e) {
       if (null != n) try {
         let e = (0, i.lE)(),
           t = await e.getNextVideoOutputFrame(n);
-        return (0, w.n)(t)
+        return (0, R.n)(t)
       } catch (e) {
         return
       }
@@ -350,7 +350,7 @@ async function q(e) {
     type: "CLIPS_SAVE_CLIP_START",
     clipType: N,
     streamKey: T,
-    thumbnail: R,
+    thumbnail: w,
     clipMethod: n
   });
   let D = "manual" === n ? (0, d.Ak)("clip_save", .5) : null,
@@ -385,7 +385,7 @@ async function q(e) {
   }
   P.nx.info("".concat(A.A.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - x), "ms"))
 }
-async function X(e, t) {
+async function Z(e, t) {
   let n, r;
   if (A.A.getIsAtMaxSaveClipOperations()) return;
   let i = _.A.getCurrentUserActiveStream(),
@@ -431,7 +431,7 @@ async function X(e, t) {
   }
 }
 
-function Z(e, t) {
+function X(e, t) {
   a.h.dispatch({
     type: "CLIPS_SAVE_ANIMATION_END",
     streamKey: e,
@@ -449,13 +449,13 @@ async function Q(e, t) {
     clip: r
   }))
 }
-async function $(e) {
+async function J(e) {
   await Q(e.id, {
     isFavorite: !e.isFavorite
   })
 }
 
-function J() {
+function $() {
   a.h.dispatch({
     type: "CLIPS_CLEAR_CLIPS_SESSION"
   })
@@ -499,7 +499,7 @@ async function er(e) {
       voiceAudio: true,
       soundboardAudio: true
     });
-  return e.type === I.nQ.SCREENSHOT ? r : (0, R.A)(r)
+  return e.type === I.nQ.SCREENSHOT ? r : (0, w.A)(r)
 }
 
 function ei(e) {

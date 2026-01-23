@@ -5,7 +5,7 @@ require.r(exports), require.d(exports, {
   GB: () => S,
   casual: () => A,
   createCasualConfiguration: () => N,
-  createConfiguration: () => R,
+  createConfiguration: () => w,
   parse: () => T,
   parseDate: () => C,
   strict: () => I
@@ -31,8 +31,8 @@ var Chunk191824 = require("./191824.js"),
   Chunk789374 = require("./789374.js"),
   Chunk740789 = require("./740789.js");
 let A = new Chunk880683.u(N(false)),
-  I = new Chunk880683.u(R(true, false)),
-  S = new Chunk880683.u(R(false, true));
+  I = new Chunk880683.u(w(true, false)),
+  S = new Chunk880683.u(w(false, true));
 
 function T(e, t, n) {
   return A.parse(e, t, n)
@@ -43,11 +43,11 @@ function C(e, t, n) {
 }
 
 function N(e = false) {
-  let t = R(false, e);
+  let t = w(false, e);
   return t.parsers.unshift(new h.A), t.parsers.unshift(new m.A), t.parsers.unshift(new s.A), t.parsers.unshift(new E.A), t.parsers.unshift(new O.A), t
 }
 
-function R(e = true, t = false) {
+function w(e = true, t = false) {
   return (0, _.i)({
     parsers: [new b.A(t), new r.A, new i.A, new a.A, new g.A, new o.A, new l.A, new c.A(e), new u.A(e), new d.A(e)],
     refiners: [new v.A, new p.A, new f.A]

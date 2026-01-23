@@ -2,7 +2,7 @@
 /** chunk id: 966846, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => $
+  A: () => J
 }), require("./896048.js"), require("./65821.js"), require("./321073.js"), require("./667532.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -37,8 +37,8 @@ let b = [Chunk613057.Hi.AUTHENTICATION_FAILED, Chunk613057.Hi.NOT_ENTITLED],
   T = null,
   C = false,
   N = new Map,
-  R = false,
-  w = null;
+  w = false,
+  R = null;
 
 function P() {
   let e = {
@@ -67,7 +67,7 @@ function x() {
       let e = d.default.getToken(),
         t = d.default.getId();
       if (null == e) throw Error("missing user token");
-      R = !_.A.setCurrentTask(r, i, n, t, e)
+      w = !_.A.setCurrentTask(r, i, n, t, e)
     }
   }
 }
@@ -215,18 +215,18 @@ function K(e) {
 function z() {
   for (let e of u.Ay.getRunningDiscordApplicationIds()) c.ZT(e, e);
   let e = u.Ay.getVisibleGame();
-  return I || null == e || e.pid === w || c.v7(), w = null == e ? null : e.pid, false
+  return I || null == e || e.pid === R || c.v7(), R = null == e ? null : e.pid, false
 }
 
 function q() {
   (0, h.isDesktop)() && W()
 }
 
-function X() {
+function Z() {
   o.w.remove(O), (0, h.isDesktop)() && _.A.pause()
 }
 
-function Z(e) {
+function X(e) {
   return e.map(e => "string" == typeof e ? {
     comboId: e,
     action: "Patch"
@@ -240,7 +240,7 @@ class Q extends(r = Chunk311907.Ay.Store) {
       paused: null,
       userActions: null
     };
-    null != t.queue && (v = Z(t.queue)), null != t.paused && (I = t.paused), null != t.userActions && (N = new Map(Array.from(t.userActions))), this.waitFor(m.A, u.Ay), this.syncWith([u.Ay], z), this.waitFor(f.A, d.default, m.A)
+    null != t.queue && (v = X(t.queue)), null != t.paused && (I = t.paused), null != t.userActions && (N = new Map(Array.from(t.userActions))), this.waitFor(m.A, u.Ay), this.syncWith([u.Ay], z), this.waitFor(f.A, d.default, m.A)
   }
   get activeItems() {
     return v.map(e => {
@@ -260,11 +260,11 @@ class Q extends(r = Chunk311907.Ay.Store) {
     return L(e, t)
   }
   isCorruptInstallation() {
-    return R
+    return w
   }
 }
 y(Q, "displayName", "DispatchManagerStore");
-let $ = new Q(Chunk73153.h, {
+let J = new Q(Chunk73153.h, {
   DISPATCH_APPLICATION_INSTALL: k,
   DISPATCH_APPLICATION_UPDATE: V,
   DISPATCH_APPLICATION_UNINSTALL: U,
@@ -275,5 +275,5 @@ let $ = new Q(Chunk73153.h, {
   DISPATCH_APPLICATION_STATE_UPDATE: Y,
   DISPATCH_APPLICATION_ERROR: K,
   CONNECTION_OPEN: q,
-  LOGOUT: X
+  LOGOUT: Z
 })

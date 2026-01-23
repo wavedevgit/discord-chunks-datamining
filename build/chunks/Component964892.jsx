@@ -84,9 +84,9 @@ let A = Chunk64700.createContext(null),
   T = 240,
   C = 10,
   N = 4,
-  R = Chunk818348.FX;
+  w = Chunk818348.FX;
 
-function w() {
+function R() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "center",
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "top",
     n = arguments.length > 2 ? arguments[2] : true,
@@ -129,10 +129,10 @@ function P(e) {
     experimental_ignoreModalClicks: F = true,
     closeOnClickOutside: B = false
   } = e, [H, Y] = i.useState(h), [W, K] = i.useState(y), z = i.useRef(y), q = i.useRef(0), {
-    ref: X,
-    width: Z,
+    ref: Z,
+    width: X,
     height: Q
-  } = (0, d.Ay)(), $ = (0, c.bG)([f.A], () => f.A.getLayers()), J = null != (t = $[$.length - 1]) ? t : "base", ee = i.useRef(M);
+  } = (0, d.Ay)(), J = (0, c.bG)([f.A], () => f.A.getLayers()), $ = null != (t = J[J.length - 1]) ? t : "base", ee = i.useRef(M);
   i.useEffect(() => {
     ee.current = M
   }, [M]);
@@ -142,8 +142,8 @@ function P(e) {
     }, []),
     en = i.useMemo(() => {
       var e, t;
-      return null == a.current || (null != (e = null == (t = a.current.closest("[data-layer]")) ? true : t.getAttribute("data-layer")) ? e : "base") === J
-    }, [a, J]);
+      return null == a.current || (null != (e = null == (t = a.current.closest("[data-layer]")) ? true : t.getAttribute("data-layer")) ? e : "base") === $
+    }, [a, $]);
   i.useEffect(() => {
     en && h ? Y(true) : en || Y(false)
   }, [en, h]), i.useEffect(() => {
@@ -169,8 +169,8 @@ function P(e) {
     }, [P, v, W]),
     es = i.useMemo(() => {
       var e;
-      if ("edge" !== P) return w(null != (e = null == D ? true : D.align) ? e : "center", W, Z, Q)
-    }, [P, D, W, Z, Q]),
+      if ("edge" !== P) return R(null != (e = null == D ? true : D.align) ? e : "center", W, X, Q)
+    }, [P, D, W, X, Q]),
     eo = i.useMemo(() => ({
       position: W,
       caretConfig: null != D ? D : {
@@ -198,7 +198,7 @@ function P(e) {
           })
         }));
         return (0, r.jsx)(o.animated.div, {
-          ref: X,
+          ref: Z,
           "data-mana-component": "popover",
           style: b(E({}, e), {
             "--custom-caret-edge-offset-horizontal": "".concat(I, "px"),
@@ -233,6 +233,6 @@ function P(e) {
     ignoreModalClicks: F,
     scrollBehavior: U,
     renderPopout: el,
-    children: R
+    children: w
   })
 }

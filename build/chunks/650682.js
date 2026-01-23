@@ -58,11 +58,11 @@ let _ = (0, Chunk64700.createContext)({}),
       };
       !N.current && y && d ? (0, a.iP)(e, "assertive") : N.current && y && !d && (0, a.iP)(e, "assertive"), N.current = d
     }, [d, y, C, S]);
-    let R = (0, f.$)(e, {
+    let w = (0, f.$)(e, {
       global: true
     });
-    return delete R.onClick, p.createElement("button", {
-      ...(0, u.v)(R, I, h, E, O),
+    return delete w.onClick, p.createElement("button", {
+      ...(0, u.v)(w, I, h, E, O),
       type: "submit" === h.type && d ? "button" : h.type,
       id: S,
       ref: t,

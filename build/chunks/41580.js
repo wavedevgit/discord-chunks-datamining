@@ -16,20 +16,20 @@ let p = 2.5 * Chunk927813.A.Millis.SECOND,
   d = +Chunk927813.A.Millis.HOUR;
 
 function b() {
-  let [e, t] = r.useState(false), a = (0, n.bG)([l.A], () => l.A.getMode() === u.TB.PUSH_TO_TALK), s = (0, n.bG)([i.A], () => {
+  let [e, t] = _.useState(false), a = (0, o.bG)([l.A], () => l.A.getMode() === c.TB.PUSH_TO_TALK), s = (0, o.bG)([i.A], () => {
     var e;
     return null != i.A.getChannelId() && (null != (e = i.A.getDuration()) ? e : Number.MAX_VALUE) < p
-  }), [b, f] = r.useState(false), {
+  }), [b, f] = _.useState(false), {
     showPTTJoinTooltip: g
-  } = c.A.useConfig({
+  } = u.A.useConfig({
     location: "usePTTJoinTooltip"
-  }), m = r.useRef(new _.Ep), v = r.useRef(new _.Ep);
-  r.useEffect(() => {
+  }), m = _.useRef(new n.Ep), C = _.useRef(new n.Ep);
+  _.useEffect(() => {
     if (s && a && !e) {
-      if (c.A.getConfig({
+      if (u.A.getConfig({
           location: "usePTTJoinTooltip:couldDisplayTooltip"
         }), !g) return;
-      f(true), t(true), v.current.start(d, () => {
+      f(true), t(true), C.current.start(d, () => {
         t(false)
       }), m.current.start(p, () => {
         f(false)
@@ -37,13 +37,13 @@ function b() {
     }
     s || f(false)
   }, [s, a, g, e]);
-  let C = r.useCallback(() => {
+  let A = _.useCallback(() => {
     f(false), m.current.stop()
   }, []);
-  return (0, o.l0)(() => {
-    m.current.stop(), v.current.stop()
+  return (0, r.l0)(() => {
+    m.current.stop(), C.current.stop()
   }), {
     shouldShowTooltip: b,
-    dismissTooltip: C
+    dismissTooltip: A
   }
 }

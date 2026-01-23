@@ -122,9 +122,9 @@ function S(e) {
   let {
     filterOutEmptyCurrentGuild: t = false,
     moveDefaultsToBottom: n = false
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, s = arguments.length > 2 && true !== arguments[2] && arguments[2], u = (0, i.bG)([c.default], () => c.default.getCurrentUser()), b = d.Ay.isPremium(u, y.PremiumTypes.TIER_2), [S, T, N] = (0, i.yK)([_.A], () => [_.A.getSounds(), _.A.getFavorites(), _.A.isFetching()]), R = (0, g.I)(), w = (0, m.Y)(e, false), P = (0, i.yK)([o.A], () => {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, s = arguments.length > 2 && true !== arguments[2] && arguments[2], u = (0, i.bG)([c.default], () => c.default.getCurrentUser()), b = d.Ay.isPremium(u, y.PremiumTypes.TIER_2), [S, T, N] = (0, i.yK)([_.A], () => [_.A.getSounds(), _.A.getFavorites(), _.A.isFetching()]), w = (0, g.I)(), R = (0, m.Y)(e, false), P = (0, i.yK)([o.A], () => {
     let e = [];
-    return w.forEach(t => {
+    return R.forEach(t => {
       let n = o.A.getGuild(t);
       null != n && e.push(n)
     }), e
@@ -159,20 +159,20 @@ function S(e) {
     }
     return O({
       sections: i,
-      guildIds: w,
+      guildIds: R,
       allSounds: S,
       potentialSoundIdsForSection: Array.from(T),
       sectionType: h.Cx.FAVORITES,
       sortSoundsFn: g.U
     }), j && O({
       sections: i,
-      guildIds: w,
+      guildIds: R,
       allSounds: S,
       potentialSoundIdsForSection: U,
       sectionType: h.Cx.RECENTLY_HEARD
     }), M && O({
       sections: i,
-      guildIds: w,
+      guildIds: R,
       allSounds: S,
       potentialSoundIdsForSection: k.map(e => e.soundId),
       sectionType: h.Cx.FREQUENTLY_USED
@@ -180,14 +180,14 @@ function S(e) {
       currentGuildHasAddPermissions: L,
       allSounds: S,
       filterOutEmptyCurrentGuild: t,
-      sortSoundsFn: R
+      sortSoundsFn: w
     }), n || D || I(i, S), v({
       sections: i,
       guilds: P,
       currentGuildId: null == x ? true : x.id,
       allSounds: S,
       hasNitro: b,
-      sortSoundsFn: R
+      sortSoundsFn: w
     }), (n || D) && I(i, S), i.forEach(t => {
       t.categoryInfo.type === h.Cx.GUILD && (t.categoryInfo.isNitroLocked ? r += t.items.length : e += t.items.length)
     }), {
@@ -200,7 +200,7 @@ function S(e) {
         lockedCustomSoundCount: r
       }
     }
-  }, [w, S, T, U, k, M, j, x, L, t, n, D, P, s, N, b, R])
+  }, [R, S, T, U, k, M, j, x, L, t, n, D, P, s, N, b, w])
 }
 
 function T(e, t, n) {

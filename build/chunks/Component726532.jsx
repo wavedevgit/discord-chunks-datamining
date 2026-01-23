@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   i: () => N,
-  j: () => w
+  j: () => R
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -163,7 +163,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
             }
         }
       })(),
-      R = () => {
+      w = () => {
         (0, s.mMO)(async () => {
           let {
             default: e
@@ -185,7 +185,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
           button: (0, r.jsx)(s.Button, {
             variant: "secondary",
             text: b.intl.string(y.default.NCu2JD),
-            onClick: R
+            onClick: w
           })
         }), (0, r.jsxs)(s.BJc, {
           direction: "vertical",
@@ -210,7 +210,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
       })]
     })
   },
-  R = e => {
+  w = e => {
     let {
       premiumGroupMembers: t,
       isLoadingPremiumGroupMembers: n,
@@ -282,7 +282,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
       }, "seat-available-".concat(t)))]
     })
   },
-  w = e => {
+  R = e => {
     let {
       subscription: t,
       analyticsLocations: u
@@ -297,7 +297,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
       numAvailableInvites: f.A.getNumAvailableInvites(),
       numTotalSeats: f.A.getNumTotalSeats(),
       numUsedSeats: f.A.getNumUsedSeats()
-    })), [N, w] = i.useState(false), {
+    })), [N, R] = i.useState(false), {
       status: P
     } = t, D = i.useCallback(() => {
       (0, s.mMO)(async () => {
@@ -310,7 +310,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
         }))
       })
     }, [t, u]), x = i.useCallback(async () => {
-      w(true), await (0, o.Ir)(t, u), w(false)
+      R(true), await (0, o.Ir)(t, u), R(false)
     }, [t, u]), L = e => {
       l.default.track(E.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_REMOVE_MEMBER_CLICKED, {
         subscription_id: t.id,
@@ -411,7 +411,7 @@ let T = () => (0, r.jsxs)(s.BJc, {
           title: V,
           description: F,
           button: U()
-        }), (0, r.jsx)(R, {
+        }), (0, r.jsx)(w, {
           premiumGroupMembers: _,
           isLoadingPremiumGroupMembers: h,
           canInvite: G,

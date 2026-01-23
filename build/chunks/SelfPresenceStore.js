@@ -37,8 +37,8 @@ let I = false,
   T = Chunk652215.clD.UNKNOWN,
   C = 0,
   N = [],
-  R = [],
-  w = false,
+  w = [],
+  R = false,
   P = true,
   D = Object.freeze([]),
   x = Object.freeze([]),
@@ -85,7 +85,7 @@ function V() {
 
 function F() {
   var e;
-  if (C = null != (e = g.A.getIdleSince()) ? e : 0, w = g.A.isAFK(), P) S = T;
+  if (C = null != (e = g.A.getIdleSince()) ? e : 0, R = g.A.isAFK(), P) S = T;
   else if (I) S = v.clD.INVISIBLE;
   else {
     let e = p.jP.getSetting();
@@ -94,7 +94,7 @@ function F() {
   S === v.clD.ONLINE && C > 0 && (S = v.clD.IDLE);
   let t = false,
     n = P || S === v.clD.INVISIBLE ? [] : y.A.getActivities().filter(G);
-  a()(N, n) || (N = n, R = M(n), t = true);
+  a()(N, n) || (N = n, w = M(n), t = true);
   let r = O.A.getRemoteActivities();
   D !== r && (D = r, t = true);
   let i = O.A.getHiddenActivities();
@@ -124,8 +124,8 @@ class K extends(r = Chunk311907.Ay.Store) {
     return {
       status: S,
       since: C,
-      activities: R,
-      afk: w
+      activities: w,
+      afk: R
     }
   }
   getStatus() {
@@ -133,7 +133,7 @@ class K extends(r = Chunk311907.Ay.Store) {
   }
   getActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return e ? j : R
+    return e ? j : w
   }
   getUnfilteredActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];

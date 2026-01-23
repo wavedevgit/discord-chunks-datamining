@@ -1,7 +1,8 @@
-/** Chunk was on 21724 **/
-/** chunk id: 878112, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 878112, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  A: () => g
+  A: () => E
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,58 +19,58 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx");
-let g = e => {
+let E = e => {
   let {
     product: t,
     primary: n,
-    selectedVariantIndex: g,
-    returnRef: h,
-    onSuccess: O,
-    tooltipDelay: j,
-    fullWidth: x = false
+    selectedVariantIndex: E,
+    returnRef: y,
+    onSuccess: b,
+    tooltipDelay: O,
+    fullWidth: v = false
   } = e, {
-    analyticsLocations: P
-  } = (0, c.Ay)(), A = l.useRef(null), C = (0, p.uM)(), k = (0, v.A)(), R = e => {
-    e.stopPropagation(), d.default.track(m.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-      collectibles_shop_session_id: null == C ? true : C.sessionId,
+    analyticsLocations: A
+  } = (0, c.Ay)(), I = i.useRef(null), S = (0, f.uM)(), T = (0, p.A)(), C = e => {
+    e.stopPropagation(), d.default.track(h.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      collectibles_shop_session_id: null == S ? true : S.sessionId,
       sku_id: t.skuId,
-      page_section: null == C ? true : C.pageSection,
-      page_category: null == C ? true : C.pageCategory,
+      page_section: null == S ? true : S.pageSection,
+      page_category: null == S ? true : S.pageCategory,
       tile_type: a.R[t.type],
-      tile_position: String(null == C ? true : C.tilePosition),
+      tile_position: String(null == S ? true : S.tilePosition),
       cta_name: "gift button",
-      page_type: k || "home"
+      page_type: T || "home"
     }), (0, u.A)({
-      skuId: (0, b.Y)({
+      skuId: (0, _.Y)({
         product: t,
-        selectedVariantIndex: g
+        selectedVariantIndex: E
       }),
       isGift: true,
-      giftingOrigin: y.vQ.SHOP_PAGE,
-      analyticsLocations: P,
-      returnRef: h,
-      variantsReturnStyle: i.g.VARIANTS_GROUP,
-      onClose: null != O ? e => {
-        e && O()
+      giftingOrigin: m.vQ.SHOP_PAGE,
+      analyticsLocations: A,
+      returnRef: y,
+      variantsReturnStyle: s.g.VARIANTS_GROUP,
+      onClose: null != b ? e => {
+        e && b()
       } : true
     })
   };
-  return x ? (0, r.jsx)(s.Button, {
+  return v ? (0, r.jsx)(l.Button, {
     variant: n ? "primary" : "secondary",
-    icon: s.okO,
-    onClick: R,
-    text: f.intl.string(f.t.gmnzqM),
+    icon: l.okO,
+    onClick: C,
+    text: g.intl.string(g.t.gmnzqM),
     fullWidth: true
   }) : (0, r.jsx)(o.m, {
-    text: f.intl.string(f.t["JCFN/y"]),
-    delay: j,
-    children: (0, r.jsx)(s.K0, {
-      "aria-label": f.intl.string(f.t["JCFN/y"]),
-      buttonRef: A,
+    text: g.intl.string(g.t["JCFN/y"]),
+    delay: O,
+    children: (0, r.jsx)(l.K0, {
+      "aria-label": g.intl.string(g.t["JCFN/y"]),
+      buttonRef: I,
       variant: n ? "primary" : "secondary",
-      icon: s.okO,
+      icon: l.okO,
       size: "md",
-      onClick: R
+      onClick: C
     })
   })
 }

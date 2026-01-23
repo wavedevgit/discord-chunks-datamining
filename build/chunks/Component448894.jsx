@@ -35,13 +35,13 @@ function A(e) {
       onAcceptInstantInvite: C
     } = e,
     N = null == I ? true : I.id,
-    R = (0, l.bG)([h.A], () => h.A.getGuildId()),
-    w = (0, l.bG)([_.A], () => null != a && null != a.target_user ? _.A.getActiveStreamForUser(a.target_user.id, N) : null, [a, N]),
+    w = (0, l.bG)([h.A], () => h.A.getGuildId()),
+    R = (0, l.bG)([_.A], () => null != a && null != a.target_user ? _.A.getActiveStreamForUser(a.target_user.id, N) : null, [a, N]),
     P = (0, l.bG)([_.A], () => null != a && null != a.target_user ? _.A.getStreamForUser(a.target_user.id, N) : null, [a, N]),
     {
       analyticsLocations: D
     } = (0, d.Ay)(u.A.INVITE_EMBED),
-    x = null != a && a.target_type === b.yV.STREAM && null != a.target_user && null != w,
+    x = null != a && a.target_type === b.yV.STREAM && null != a.target_user && null != R,
     L = null != a && null != P && null != a.channel && null != a.guild && P.channelId === a.channel.id && P.guildId === a.guild.id;
   s()(null != a, "Invite cannot be null");
   let {
@@ -73,7 +73,7 @@ function A(e) {
   }) : (t = O.intl.string(O.t.I6JG46), H = "active", x && (t = O.intl.string(O.t.Q1W99y), H = "secondary"), n = k ? O.intl.string(O.t["4hyaHu"]) : O.intl.formatToPlainString(O.t.QmlLEq, {
     name: B
   }));
-  let Y = R === I.id && null != F ? (0, r.jsx)(f.A.Channel, {
+  let Y = w === I.id && null != F ? (0, r.jsx)(f.A.Channel, {
     channel: F
   }) : O.intl.formatToPlainString(O.t.u0vaDE, {
     guildName: I.name

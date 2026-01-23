@@ -6,7 +6,7 @@ require.d(exports, {
   Lu: () => Q,
   NI: () => ee,
   PH: () => K,
-  g2: () => $
+  g2: () => J
 }), require("./560197.js"), require("./864466.js"), require("./443073.js"), require("./896048.js"), require("./446912.js"), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -124,7 +124,7 @@ function Y(e) {
 function W() {
   let {
     shouldMergeGameSettings: e
-  } = R.X.useExperiment({
+  } = w.X.useExperiment({
     location: "settings"
   }), {
     showRedesign: t
@@ -156,7 +156,7 @@ function K() {
     [F] = (0, u.DP)(V ? [a.M.CLIPS_SETTINGS_BETA_TAG] : []),
     {
       shouldMergeGameSettings: B
-    } = R.X.useExperiment({
+    } = w.X.useExperiment({
       location: "settings"
     }),
     H = null != (e = null == (n = N.default.getCurrentUser()) ? true : n.isStaff()) && e,
@@ -171,11 +171,11 @@ function K() {
       location: U.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
     }),
     q = (0, i.bG)([I.A], () => I.A.hasLibraryApplication()),
-    X = (0, i.bG)([v.default], () => v.default.hasTOTPEnabled()),
-    Z = D.Q_.useSetting(),
+    Z = (0, i.bG)([v.default], () => v.default.hasTOTPEnabled()),
+    X = D.Q_.useSetting(),
     Q = (0, f.A)(),
-    $ = null == (t = (0, p.A)()) || t,
-    J = (null == (s = (0, y.G)()) ? true : s.length) > 0,
+    J = null == (t = (0, p.A)()) || t,
+    $ = (null == (s = (0, y.G)()) ? true : s.length) > 0,
     {
       hasBlockedUsers: ee,
       hasIgnoredUsers: et
@@ -184,7 +184,7 @@ function K() {
       hasIgnoredUsers: T.A.getIgnoredIDs().length > 0
     })),
     en = (0, E.fk)(),
-    er = (0, w.j)("SettingRendererUtils"),
+    er = (0, R.j)("SettingRendererUtils"),
     ei = en || er,
     {
       inputMode: ea,
@@ -217,10 +217,10 @@ function K() {
     isEligibleForQuests: z,
     isStricterMessageRequestsEnabled: Q,
     hasLibraryApplication: q,
-    hasTOTPEnabled: X,
-    developerMode: Z,
-    isAdultUser: $,
-    hasSecureFramesVerifiedUserIds: J,
+    hasTOTPEnabled: Z,
+    developerMode: X,
+    isAdultUser: J,
+    hasSecureFramesVerifiedUserIds: $,
     hasIgnoredUsers: et,
     hasBlockedUsers: ee,
     hasAgeGatedFeature: ei,
@@ -230,7 +230,7 @@ function K() {
     isChatMentionSuggestionsSettingEnabled: el,
     isRedesignedNotificationsEnabled: ec,
     isHDRAccessibilitySettingExperimentEnabled: eu
-  }), [Z, F, ee, et, q, J, X, M, $, z, W, Y, G, H, Q, k, K, B, P, A, ei, ea, es, eo, el, ec, eu])
+  }), [X, F, ee, et, q, $, Z, M, J, z, W, Y, G, H, Q, k, K, B, P, A, ei, ea, es, eo, el, ec, eu])
 }
 
 function z(e) {
@@ -284,10 +284,10 @@ function q(e, t, n) {
   return e === k.H.SEARCH_NO_RESULTS && 0 === t.size || n.has(e) || t.has(e)
 }
 
-function X(e, t, n) {
+function Z(e, t, n) {
   let r = [],
-    i = J(t),
-    a = Z(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
+    i = $(t),
+    a = X(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
   return e.forEach(e => {
     0 !== e.settings.length && (true === e.divider && r.push({
       section: s.Fq.DIVIDER
@@ -302,7 +302,7 @@ function X(e, t, n) {
   }), r
 }
 
-function Z(e, t) {
+function X(e, t) {
   let n = new Map;
   return null != t && t.forEach(t => {
     let r = e[t].parent;
@@ -319,7 +319,7 @@ function Q() {
   let e = K(),
     {
       shouldMergeGameSettings: t
-    } = R.X.useExperiment({
+    } = w.X.useExperiment({
       location: "settings"
     }),
     {
@@ -331,16 +331,16 @@ function Q() {
       shouldMergeGameSettings: t,
       showRedesignedThirdPartyAccessSettings: n
     }), [t, n]);
-  return r.useMemo(() => X(i, e), [i, e])
-}
-
-function $(e) {
-  let t = K(),
-    n = W();
-  return r.useMemo(() => X(n, t, new Set(e)), [n, t, e])
+  return r.useMemo(() => Z(i, e), [i, e])
 }
 
 function J(e) {
+  let t = K(),
+    n = W();
+  return r.useMemo(() => Z(n, t, new Set(e)), [n, t, e])
+}
+
+function $(e) {
   return new Map(Object.entries(e).filter(e => {
     let [t, n] = e;
     return null != n.searchableTitles && (null == n.predicate || n.predicate()) && (null == n.unsearchable || false === n.unsearchable)
@@ -348,7 +348,7 @@ function J(e) {
 }
 
 function ee(e) {
-  return Array.from(J(e).entries()).map(e => {
+  return Array.from($(e).entries()).map(e => {
     let [t, n] = e;
     return [t, n.searchableTitles]
   })

@@ -202,8 +202,8 @@ let A = /\b\B/,
   T = "\\b\\d+(\\.\\d+)?",
   C = "(-?)(\\b0[xX][a-fA-F0-9]+|(\\b\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)",
   N = "\\b(0b[01]+)",
-  R = "!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|-|-=|/=|/|:|;|<<|<<=|<=|<|===|==|=|>>>=|>>=|>=|>>>|>>|>|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~",
-  w = (e = {}) => {
+  w = "!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|-|-=|/=|/|:|;|<<|<<=|<=|<|===|==|=|>>>=|>>=|>=|>>>|>>|>|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~",
+  R = (e = {}) => {
     let t = /^#![ ]*\//;
     return e.binary && (e.begin = m(t, /.*\b/, e.binary, /\b.*/)), i({
       scope: "meta",
@@ -324,8 +324,8 @@ var B = Object.freeze({
   PHRASAL_WORDS_MODE: L,
   QUOTE_STRING_MODE: x,
   REGEXP_MODE: G,
-  RE_STARTERS_RE: R,
-  SHEBANG: w,
+  RE_STARTERS_RE: w,
+  SHEBANG: R,
   TITLE_MODE: V,
   UNDERSCORE_IDENT_RE: S,
   UNDERSCORE_TITLE_MODE: F
@@ -357,7 +357,7 @@ function z(e, t) {
 function q(e, t) {
   true === e.relevance && (e.relevance = 1)
 }
-let X = (e, t) => {
+let Z = (e, t) => {
     if (!e.beforeMatch) return;
     if (e.starts) throw Error("beforeMatch cannot be used with starts");
     let n = Object.assign({}, e);
@@ -370,29 +370,29 @@ let X = (e, t) => {
       })]
     }, e.relevance = 0, delete n.beforeMatch
   },
-  Z = ["of", "and", "for", "in", "not", "or", "if", "then", "parent", "list", "value"],
+  X = ["of", "and", "for", "in", "not", "or", "if", "then", "parent", "list", "value"],
   Q = "keyword";
 
-function $(e, t, n = Q) {
+function J(e, t, n = Q) {
   let r = Object.create(null);
   return "string" == typeof e ? i(n, e.split(" ")) : Array.isArray(e) ? i(n, e) : Object.keys(e).forEach(function(n) {
-    Object.assign(r, $(e[n], t, n))
+    Object.assign(r, J(e[n], t, n))
   }), r;
 
   function i(e, n) {
     t && (n = n.map(e => e.toLowerCase())), n.forEach(function(t) {
       let n = t.split("|");
-      r[n[0]] = [e, J(n[0], n[1])]
+      r[n[0]] = [e, $(n[0], n[1])]
     })
   }
 }
 
-function J(e, t) {
+function $(e, t) {
   return t ? Number(t) : +!ee(e)
 }
 
 function ee(e) {
-  return Z.includes(e.toLowerCase())
+  return X.includes(e.toLowerCase())
 }
 let et = {},
   en = e => {
@@ -526,9 +526,9 @@ function ed(e) {
   function s(n, r) {
     let i = n;
     if (n.isCompiled) return i;
-    [Y, z, eu, X].forEach(e => e(n, r)), e.compilerExtensions.forEach(e => e(n, r)), n.__beforeBegin = null, [W, K, q].forEach(e => e(n, r)), n.isCompiled = true;
+    [Y, z, eu, Z].forEach(e => e(n, r)), e.compilerExtensions.forEach(e => e(n, r)), n.__beforeBegin = null, [W, K, q].forEach(e => e(n, r)), n.isCompiled = true;
     let o = null;
-    return "object" == typeof n.keywords && n.keywords.$pattern && (n.keywords = Object.assign({}, n.keywords), o = n.keywords.$pattern, delete n.keywords.$pattern), o = o || /\w+/, n.keywords && (n.keywords = $(n.keywords, e.case_insensitive)), i.keywordPatternRe = t(o, true), r && (n.begin || (n.begin = /\B|\b/), i.beginRe = t(i.begin), n.end || n.endsWithParent || (n.end = /\B|\b/), n.end && (i.endRe = t(i.end)), i.terminatorEnd = f(i.end) || "", n.endsWithParent && r.terminatorEnd && (i.terminatorEnd += (n.end ? "|" : "") + r.terminatorEnd)), n.illegal && (i.illegalRe = t(n.illegal)), n.contains || (n.contains = []), n.contains = [].concat(...n.contains.map(function(e) {
+    return "object" == typeof n.keywords && n.keywords.$pattern && (n.keywords = Object.assign({}, n.keywords), o = n.keywords.$pattern, delete n.keywords.$pattern), o = o || /\w+/, n.keywords && (n.keywords = J(n.keywords, e.case_insensitive)), i.keywordPatternRe = t(o, true), r && (n.begin || (n.begin = /\B|\b/), i.beginRe = t(i.begin), n.end || n.endsWithParent || (n.end = /\B|\b/), n.end && (i.endRe = t(i.end)), i.terminatorEnd = f(i.end) || "", n.endsWithParent && r.terminatorEnd && (i.terminatorEnd += (n.end ? "|" : "") + r.terminatorEnd)), n.illegal && (i.illegalRe = t(n.illegal)), n.contains || (n.contains = []), n.contains = [].concat(...n.contains.map(function(e) {
       return ep("self" === e ? n : e)
     })), n.contains.forEach(function(e) {
       s(e, i)
@@ -592,10 +592,10 @@ let em = r,
       t += e.parentNode ? e.parentNode.className : "";
       let n = c.languageDetectRe.exec(t);
       if (n) {
-        let t = w(n[1]);
+        let t = R(n[1]);
         return t || (er(o.replace("{}", n[1])), er("Falling back to no-highlight mode for this block.", e)), t ? n[1] : "no-highlight"
       }
-      return t.split(/\s+/).find(e => u(e) || w(e))
+      return t.split(/\s+/).find(e => u(e) || R(e))
     }
 
     function g(e, t, n) {
@@ -751,10 +751,10 @@ let em = r,
         if (k > 1e5 && k > 3 * r.index) throw Error("potential infinite loop, way more iterations than matches");
         return L += a, a.length
       }
-      let C = w(e);
+      let C = R(e);
       if (!C) throw en(o.replace("{}", e)), Error('Unknown language: "' + e + '"');
       let N = ed(C),
-        R = "",
+        w = "",
         P = a || N,
         D = {},
         x = new c.__emitter(c);
@@ -777,9 +777,9 @@ let em = r,
           }
           T(t.substring(M))
         }
-        return x.finalize(), R = x.toHTML(), {
+        return x.finalize(), w = x.toHTML(), {
           language: e,
-          value: R,
+          value: w,
           relevance: j,
           illegal: false,
           _emitter: x,
@@ -796,7 +796,7 @@ let em = r,
             index: M,
             context: t.slice(M - 100, M + 100),
             mode: n.mode,
-            resultSoFar: R
+            resultSoFar: w
           },
           _emitter: x
         };
@@ -827,13 +827,13 @@ let em = r,
     function v(e, t) {
       t = t || c.languages || Object.keys(r);
       let n = O(e),
-        i = t.filter(w).filter(D).map(t => y(t, e, false));
+        i = t.filter(R).filter(D).map(t => y(t, e, false));
       i.unshift(n);
       let [a, s] = i.sort((e, t) => {
         if (e.relevance !== t.relevance) return t.relevance - e.relevance;
         if (e.language && t.language) {
-          if (w(e.language).supersetOf === t.language) return 1;
-          else if (w(t.language).supersetOf === e.language) return false
+          if (R(e.language).supersetOf === t.language) return 1;
+          else if (R(t.language).supersetOf === e.language) return false
         }
         return 0
       }), o = a;
@@ -892,7 +892,7 @@ let em = r,
       document.querySelectorAll(c.cssSelector).forEach(I)
     }
 
-    function R(t, n) {
+    function w(t, n) {
       let i = null;
       try {
         i = n(e)
@@ -906,7 +906,7 @@ let em = r,
       })
     }
 
-    function w(e) {
+    function R(e) {
       return r[e = (e || "").toLowerCase()] || r[i[e]]
     }
 
@@ -919,7 +919,7 @@ let em = r,
     }
 
     function D(e) {
-      let t = w(e);
+      let t = R(e);
       return t && !t.disableAutodetect
     }
 
@@ -956,14 +956,14 @@ let em = r,
         },
         initHighlighting: S,
         initHighlightingOnLoad: T,
-        registerLanguage: R,
+        registerLanguage: w,
         unregisterLanguage: function(e) {
           for (let t of (delete r[e], Object.keys(i))) i[t] === e && delete i[t]
         },
         listLanguages: function() {
           return Object.keys(r)
         },
-        getLanguage: w,
+        getLanguage: R,
         registerAliases: P,
         autoDetection: D,
         inherit: eg,

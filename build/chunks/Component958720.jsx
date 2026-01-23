@@ -37,8 +37,8 @@ function b(e) {
     shouldShowUpdatedPaymentModal: T,
     discountOffer: C,
     discountAmountOff: N,
-    isEligibleForDiscount: R,
-    isEligibleForBOGOPromotion: w,
+    isEligibleForDiscount: w,
+    isEligibleForBOGOPromotion: R,
     isEligibleForTrial: P,
     isCurrentPlan: D,
     disabled: x
@@ -52,14 +52,14 @@ function b(e) {
     U = j.interval === g.WT.YEAR && null != M ? Math.floor(k.amount / (1 - M / 100)) : null,
     G = null != M && !T,
     V = j.interval === g.WT.YEAR ? E.t.ECT4A5 : E.t.v9QeON,
-    F = () => w && !L && a === g.gD.PREMIUM_MONTH_TIER_2 ? (0, r.jsx)(u.Text, {
+    F = () => R && !L && a === g.gD.PREMIUM_MONTH_TIER_2 ? (0, r.jsx)(u.Text, {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
       className: y.kP,
       children: E.intl.string(E.t.iQTfWx)
     }) : null,
-    B = () => null != M && !w && (0, r.jsx)(u.Text, {
+    B = () => null != M && !R && (0, r.jsx)(u.Text, {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
@@ -68,7 +68,7 @@ function b(e) {
         discount: (0, _.l9)(t, M / 100)
       })
     }),
-    H = () => w ? F() : j.interval === g.WT.YEAR && null != n || G && !D ? j.interval === g.WT.YEAR && null != n ? (0, r.jsxs)("span", {
+    H = () => R ? F() : j.interval === g.WT.YEAR && null != n || G && !D ? j.interval === g.WT.YEAR && null != n ? (0, r.jsxs)("span", {
       className: y.IS,
       children: ["(", E.intl.string(E.t["122kWB"]), ")"]
     }) : G && !D ? B() : true : null,
@@ -88,12 +88,12 @@ function b(e) {
         })
       })]
     }),
-    z = () => R && null != N && j.interval === g.WT.MONTH ? (0, m.$g)(k.amount - N, k.currency) : P ? (0, m.$g)(0, k.currency, {
+    z = () => w && null != N && j.interval === g.WT.MONTH ? (0, m.$g)(k.amount - N, k.currency) : P ? (0, m.$g)(0, k.currency, {
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
     }) : (0, m.$g)(k.amount, k.currency),
     q = () => {
-      if (R && null != N && j.interval === g.WT.MONTH) {
+      if (w && null != N && j.interval === g.WT.MONTH) {
         var e;
         return E.intl.format(E.t["VeE/4E"], {
           numMonths: null != (e = null == C ? true : C.discount.user_usage_limit) ? e : g.OJ,
@@ -107,17 +107,17 @@ function b(e) {
         percent: M
       }) : null
     },
-    X = () => {
+    Z = () => {
       x || o(a)
     },
-    Z = T ? E.intl.format(E.t.hXcaLT, {
+    X = T ? E.intl.format(E.t.hXcaLT, {
       price: z()
     }) : (0, m.$g)(k.amount, k.currency);
   return I ? (0, r.jsx)(d.ZA, {
     id: a,
     title: null,
     titleDescriber: (0, h.YR)(j.interval, j.intervalCount),
-    primaryText: Z,
+    primaryText: X,
     subtext: null != U ? (0, r.jsx)(d.Lo, {
       strikethrough: true,
       price: (0, m.$g)(U, k.currency)
@@ -135,7 +135,7 @@ function b(e) {
         bottom: 0
       }
     },
-    onClick: X,
+    onClick: Z,
     className: s()(y.G_, {
       [y.vW]: A && b,
       [y.Gb]: A
@@ -153,7 +153,7 @@ function b(e) {
             value: b,
             label: "",
             description: "",
-            onChange: X
+            onChange: Z
           })
         }), K(), D && (0, r.jsxs)("span", {
           className: y.bq,
@@ -163,12 +163,12 @@ function b(e) {
         className: s()({
           [y.kb]: b
         }),
-        children: Z
+        children: X
       }) : (0, r.jsx)("div", {
         className: s()({
           [y.h4]: b || A
         }),
-        children: Z
+        children: X
       })]
     }), T && (0, r.jsx)("div", {
       className: y.hB,
@@ -176,7 +176,7 @@ function b(e) {
         variant: "text-md/normal",
         color: b ? "text-default" : "interactive-text-default",
         className: s()(y.Ub, {
-          [y.sw]: R || P
+          [y.sw]: w || P
         }),
         children: q()
       })

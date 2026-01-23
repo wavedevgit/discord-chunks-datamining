@@ -48,16 +48,16 @@ function m(e, t, n, r, i) {
     T = h(I) ? null != (o = I.packetsLost) ? o : 0 : null != (l = I.packetsLost) ? l : 0,
     C = h(I) ? null != (c = I.frameRateEncode) ? c : 0 : null != (u = I.frameRateDecode) ? u : 0,
     N = null != (d = null == (p = I.resolution) ? true : p.height) ? d : 0,
-    R = h(I) && null != (f = I.videoEntropy) ? f : 0;
-  n.numDatapoints += 1, n.frameRateAggregated += C, n.resolutionAggregated += N, n.entropyAggregated += R;
-  let w = null == i ? true : i.find(e => "video" === e.type);
-  if (null != w && t >= n.minVersion) {
+    w = h(I) && null != (f = I.videoEntropy) ? f : 0;
+  n.numDatapoints += 1, n.frameRateAggregated += C, n.resolutionAggregated += N, n.entropyAggregated += w;
+  let R = null == i ? true : i.find(e => "video" === e.type);
+  if (null != R && t >= n.minVersion) {
     n.numDatapoints -= 1;
-    let e = h(w) ? null != (_ = w.packetsSent) ? _ : 0 : null != (m = w.packetsReceived) ? m : 0,
-      t = h(w) ? null != (g = w.packetsLost) ? g : 0 : null != (E = w.packetsLost) ? E : 0,
-      r = h(w) ? null != (y = w.frameRateEncode) ? y : 0 : null != (b = w.frameRateDecode) ? b : 0,
-      i = h(w) && null != (O = w.videoEntropy) ? O : 0,
-      a = null != (v = null == (A = w.resolution) ? true : A.height) ? v : 0;
+    let e = h(R) ? null != (_ = R.packetsSent) ? _ : 0 : null != (m = R.packetsReceived) ? m : 0,
+      t = h(R) ? null != (g = R.packetsLost) ? g : 0 : null != (E = R.packetsLost) ? E : 0,
+      r = h(R) ? null != (y = R.frameRateEncode) ? y : 0 : null != (b = R.frameRateDecode) ? b : 0,
+      i = h(R) && null != (O = R.videoEntropy) ? O : 0,
+      a = null != (v = null == (A = R.resolution) ? true : A.height) ? v : 0;
     n.frameRateAggregated -= r, n.resolutionAggregated -= a, n.entropyAggregated -= i, n.packetsSentOrReceived = S - e, n.packetsLost = T - t
   } else n.packetsSentOrReceived = S, n.packetsLost = T;
   return n.frameRate = n.frameRateAggregated / n.numDatapoints, n.resolution = n.resolutionAggregated / n.numDatapoints, n.entropy = n.entropyAggregated / n.numDatapoints, n.packetLossRate = n.packetsLost / (n.packetsSentOrReceived + n.packetsLost), n

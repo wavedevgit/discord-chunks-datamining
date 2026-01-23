@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 661652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => S
@@ -49,8 +49,8 @@ function S() {
       analyticsLocations: o
     } = (0, m.Ay)(u.A.DEV_TOOLS),
     S = v.TA.useSetting(),
-    [O, E] = l.useState(""),
-    T = (0, s.bG)([f.Ay, _.A], () => (0, b.A)(f.Ay, _.A)),
+    [O, T] = l.useState(""),
+    E = (0, s.bG)([f.Ay, _.A], () => (0, b.A)(f.Ay, _.A)),
     N = (0, g.h)(O),
     w = (0, s.yK)([x.A], () => {
       var e, t;
@@ -96,11 +96,11 @@ function S() {
       }), (0, a.jsx)(c.ksK, {
         label: "Application ID",
         value: O,
-        onChange: E
-      }), null != T && null != T.id ? (0, a.jsx)(c.Button, {
-        onClick: () => E(T.id),
+        onChange: T
+      }), null != E && null != E.id ? (0, a.jsx)(c.Button, {
+        onClick: () => T(E.id),
         variant: "primary",
-        text: "Use detected game: ".concat(T.name, " (").concat(T.id, ")")
+        text: "Use detected game: ".concat(E.name, " (").concat(E.id, ")")
       }) : null, (0, a.jsxs)(c.Text, {
         variant: "text-md/normal",
         children: ["Application Name: ", null != N ? N.name : "N/A"]

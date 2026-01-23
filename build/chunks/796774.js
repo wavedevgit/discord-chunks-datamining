@@ -9,11 +9,11 @@ require.d(exports, {
   eS: () => x,
   g0: () => k,
   iy: () => U,
-  lT: () => R,
+  lT: () => w,
   nh: () => L,
   qP: () => j,
   ty: () => P,
-  xV: () => w
+  xV: () => R
 }), require("./896048.js"), require("./321073.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -124,7 +124,7 @@ let b = false,
     }
     return n
   };
-async function R(e) {
+async function w(e) {
   let {
     guildId: t,
     name: n,
@@ -145,7 +145,7 @@ async function R(e) {
   });
   return (0, p.N0)(l.body, t)
 }
-async function w(e) {
+async function R(e) {
   let {
     guildId: t,
     soundId: n,

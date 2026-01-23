@@ -81,7 +81,7 @@ function V(e, t) {
 function F(e) {
   let {
     tooltipsWithKeybinds: t
-  } = R.C.useConfig({
+  } = w.C.useConfig({
     location: "GiftBoxAnimationButton"
   }), n = i.useCallback(() => Promise.resolve({
     default: e.boxAnimationUrl
@@ -113,7 +113,7 @@ function B(e) {
     play: a
   } = (0, u.T)(), {
     tooltipsWithKeybinds: s
-  } = R.C.useConfig({
+  } = w.C.useConfig({
     location: "TrinketsAnimationButton"
   }), o = i.useCallback(() => Promise.resolve({
     default: e.trinketAnimationUrl
@@ -160,7 +160,7 @@ function Y(e) {
     channel: u
   } = e, {
     analyticsLocations: d
-  } = (0, _.Ay)(p.A.GIFT_BUTTON), [f, S] = i.useState(false), R = (0, l.bG)([A.A], () => !(null === A.A || true === A.A ? true : A.A.hasLayers())), P = (0, l.bG)([I.default], () => I.default.getCurrentUser()), L = null != P ? T.default.age(P.id) : 0, M = (0, l.bG)([b.A], () => {
+  } = (0, _.Ay)(p.A.GIFT_BUTTON), [f, S] = i.useState(false), w = (0, l.bG)([A.A], () => !(null === A.A || true === A.A ? true : A.A.hasLayers())), P = (0, l.bG)([I.default], () => I.default.getCurrentUser()), L = null != P ? T.default.age(P.id) : 0, M = (0, l.bG)([b.A], () => {
     let e = b.A.getMarketingComponentByType(o.C.GIFT_ICON);
     return null == e || "giftIcon" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftIcon
   }), k = (0, l.bG)([b.A], () => {
@@ -178,15 +178,15 @@ function Y(e) {
     if ((null == t ? true : t.background) != null) return {
       "--custom-promotion-gradient": t.background
     }
-  }, [null == M ? true : M.gradient]), G = !(0, C.uJ)(null == M ? true : M.boxAnimationUrl), V = (!(0, C.uJ)(null == M ? true : M.trinketAnimationUrl) || !(0, C.uJ)(null == M ? true : M.trinketGlowAnimationUrl)) && !G, Y = null != k && !a && R && L >= H, [W, K] = (0, m.RF)(Y ? c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, h.c)(c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), z = null != W, q = f || z, X = (0, N.R1)(u), Z = u.type === D.rbe.DM, Q = (0, v.tA)({
+  }, [null == M ? true : M.gradient]), G = !(0, C.uJ)(null == M ? true : M.boxAnimationUrl), V = (!(0, C.uJ)(null == M ? true : M.trinketAnimationUrl) || !(0, C.uJ)(null == M ? true : M.trinketGlowAnimationUrl)) && !G, Y = null != k && !a && w && L >= H, [W, K] = (0, m.RF)(Y ? c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, h.c)(c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), z = null != W, q = f || z, Z = (0, N.R1)(u), X = u.type === D.rbe.DM, Q = (0, v.tA)({
     location: "gift-promotion-button",
     isGift: true,
-    giftRecipient: X
+    giftRecipient: Z
   });
   if (a) return null;
-  let $ = () => {
-      Q && Z && null != X ? (0, O.A)({
-        giftRecipient: X,
+  let J = () => {
+      Q && X && null != Z ? (0, O.A)({
+        giftRecipient: Z,
         analyticsLocations: d,
         analyticsObject: {
           page: u.isPrivate() ? D.liQ.DM_CHANNEL : D.liQ.GUILD_CHANNEL,
@@ -196,7 +196,7 @@ function Y(e) {
         }
       }) : (0, g.A)({
         isGift: true,
-        giftRecipient: null == X ? true : X,
+        giftRecipient: null == Z ? true : Z,
         initialPlanId: null,
         analyticsLocations: d,
         analyticsObject: {
@@ -207,19 +207,19 @@ function Y(e) {
         }
       })
     },
-    J = () => {
-      S(false), K(x.i.TAKE_ACTION), $()
+    $ = () => {
+      S(false), K(x.i.TAKE_ACTION), J()
     },
     ee = G && (null == M ? true : M.boxAnimationUrl) != null ? (0, r.jsx)(F, {
       boxAnimationUrl: M.boxAnimationUrl,
       hovered: q,
-      onClick: J
+      onClick: $
     }) : V ? (0, r.jsx)(B, {
       trinketAnimationUrl: null != (t = null == M ? true : M.trinketAnimationUrl) ? t : null,
       trinketGlowAnimationUrl: null != (n = null == M ? true : M.trinketGlowAnimationUrl) ? n : null,
       hovered: q,
-      onClick: J
-    }) : (0, r.jsx)(w.A, {
+      onClick: $
+    }) : (0, r.jsx)(R.A, {
       disabled: a,
       channel: u
     });
@@ -236,7 +236,7 @@ function Y(e) {
     },
     children: z ? (0, r.jsx)(y.A, {
       onComplete: () => S(false),
-      onCheckItOutClick: $,
+      onCheckItOutClick: J,
       markAsDismissed: K,
       coachmarkConfig: k,
       children: ee

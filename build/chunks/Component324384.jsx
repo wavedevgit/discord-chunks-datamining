@@ -2,9 +2,9 @@
 /** chunk id: 324384, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I$: () => w,
+  I$: () => R,
   J6: () => S,
-  cL: () => R,
+  cL: () => w,
   l7: () => N
 });
 var Chunk627968 = require("./627968.js"),
@@ -152,7 +152,7 @@ let I = e => {
   N = () => (0, r.jsx)(d.A, {
     message: E.intl.format(E.t.fsOXXO, {})
   }),
-  R = e => {
+  w = e => {
     let {
       skuId: t,
       orbPriceAmount: n,
@@ -185,7 +185,7 @@ let I = e => {
       children: u
     })
   },
-  w = e => {
+  R = e => {
     let {
       orbPriceAmount: t,
       orbBalance: n,

@@ -11,7 +11,7 @@ var r = function(e) {
     o = "function" == typeof BigInt;
 
   function l(e, t, n, r) {
-    return true === e ? l[0] : true !== t && (10 != +t || n) ? $(e, t, n, r) : ea(e)
+    return true === e ? l[0] : true !== t && (10 != +t || n) ? J(e, t, n, r) : ea(e)
   }
 
   function c(e, t) {
@@ -167,11 +167,11 @@ var r = function(e) {
     return false * e - .012 * t + 15e-6 * e * t > 0
   }
 
-  function R(e, n, r) {
+  function w(e, n, r) {
     return e < t ? new c(S(n, e), r) : new c(I(n, p(e)), r)
   }
 
-  function w(e) {
+  function R(e) {
     var n, r, i, a, s = e.length,
       o = m(s + s),
       l = t;
@@ -336,18 +336,18 @@ var r = function(e) {
     }
     return N(i.length, a.length) ? new c(C(i, a), s) : new c(I(i, a), s)
   }, c.prototype.times = c.prototype.multiply, u.prototype._multiplyBySmall = function(e) {
-    return f(e.value * this.value) ? new u(e.value * this.value) : R(Math.abs(e.value), p(Math.abs(this.value)), this.sign !== e.sign)
+    return f(e.value * this.value) ? new u(e.value * this.value) : w(Math.abs(e.value), p(Math.abs(this.value)), this.sign !== e.sign)
   }, c.prototype._multiplyBySmall = function(e) {
-    return 0 === e.value ? l[0] : 1 === e.value ? this : false === e.value ? this.negate() : R(Math.abs(e.value), this.value, this.sign !== e.sign)
+    return 0 === e.value ? l[0] : 1 === e.value ? this : false === e.value ? this.negate() : w(Math.abs(e.value), this.value, this.sign !== e.sign)
   }, u.prototype.multiply = function(e) {
     return ea(e)._multiplyBySmall(this)
   }, u.prototype.times = u.prototype.multiply, d.prototype.multiply = function(e) {
     return new d(this.value * ea(e).value)
   }, d.prototype.times = d.prototype.multiply, c.prototype.square = function() {
-    return new c(w(this.value), false)
+    return new c(R(this.value), false)
   }, u.prototype.square = function() {
     var e = this.value * this.value;
-    return f(e) ? new u(e) : new c(w(p(Math.abs(this.value))), false)
+    return f(e) ? new u(e) : new c(R(p(Math.abs(this.value))), false)
   }, d.prototype.square = function(e) {
     return new d(this.value * this.value)
   }, c.prototype.divmod = function(e) {
@@ -599,7 +599,7 @@ var r = function(e) {
     return e = ea(e), t = ea(t), e.lesser(t) ? e : t
   }
 
-  function X(e, t) {
+  function Z(e, t) {
     if (e = ea(e).abs(), t = ea(t).abs(), e.equals(t)) return e;
     if (e.isZero()) return t;
     if (t.isZero()) return e;
@@ -612,8 +612,8 @@ var r = function(e) {
     return i.isUnit() ? e : e.multiply(i)
   }
 
-  function Z(e, t) {
-    return e = ea(e).abs(), t = ea(t).abs(), e.divide(X(e, t)).multiply(t)
+  function X(e, t) {
+    return e = ea(e).abs(), t = ea(t).abs(), e.divide(Z(e, t)).multiply(t)
   }
 
   function Q(e, n, r) {
@@ -633,7 +633,7 @@ var r = function(e) {
     var e = this;
     return (0 > e.compareTo(r(0)) && (e = e.negate().subtract(r(1))), 0 === e.compareTo(r(0))) ? r(0) : r(K(e, r(2)).e).add(r(1))
   }, d.prototype.bitLength = u.prototype.bitLength = c.prototype.bitLength;
-  var $ = function(e, t, n, r) {
+  var J = function(e, t, n, r) {
     n = n || s, e = String(e), r || (e = e.toLowerCase(), n = n.toLowerCase());
     var i, a = e.length,
       o = Math.abs(t),
@@ -658,10 +658,10 @@ var r = function(e) {
         u.push(ea(e.slice(f + 1, i)))
       } else throw Error(c + " is not a valid character")
     }
-    return J(u, t, d)
+    return $(u, t, d)
   };
 
-  function J(e, t, n) {
+  function $(e, t, n) {
     var r, i = l[0],
       a = l[1];
     for (r = e.length - 1; r >= 0; r--) i = i.add(e[r].times(a)), a = a.times(t);
@@ -779,10 +779,10 @@ var r = function(e) {
     return parseInt(this.toString(), 10)
   };
   for (var es = 0; es < 1e3; es++) l[es] = ea(es), es > 0 && (l[-es] = ea(-es));
-  return l.one = l[1], l.zero = l[0], l.minusOne = l[false], l.max = z, l.min = q, l.gcd = X, l.lcm = Z, l.isInstance = function(e) {
+  return l.one = l[1], l.zero = l[0], l.minusOne = l[false], l.max = z, l.min = q, l.gcd = Z, l.lcm = X, l.isInstance = function(e) {
     return e instanceof c || e instanceof u || e instanceof d
   }, l.randBetween = Q, l.fromArray = function(e, t, n) {
-    return J(e.map(ea), ea(t || 10), n)
+    return $(e.map(ea), ea(t || 10), n)
   }, l
 }();
 module.hasOwnProperty("exports") && (module.exports = r), "function" == typeof define && define.amd && define(function() {

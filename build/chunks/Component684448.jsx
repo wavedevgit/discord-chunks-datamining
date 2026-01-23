@@ -43,28 +43,28 @@ function h(e) {
     T = S && null != E ? (0, c.Au)(E, g, I) : null,
     C = null == t ? true : t.emoji,
     N = null != T ? T : null == t ? true : t.state,
-    R = null != N && "" !== N,
-    w = null;
-  S && null != E ? w = (0, r.jsx)(u.A, {
+    w = null != N && "" !== N,
+    R = null;
+  S && null != E ? R = (0, r.jsx)(u.A, {
     userId: E,
     size: _,
     className: a()(i, p.W9),
     hangStatusActivity: g
-  }) : null == C || O || (w = (0, r.jsx)(f.A, {
+  }) : null == C || O || (R = (0, r.jsx)(f.A, {
     emoji: C,
     animate: b,
     className: i,
-    hideTooltip: v || R
+    hideTooltip: v || w
   }));
-  let P = R && (null != w ? " ".concat(N) : N),
+  let P = w && (null != R ? " ".concat(N) : N),
     D = () => {
-      let e = null != C && !O && !R;
+      let e = null != C && !O && !w;
       return v || e ? (0, r.jsxs)(r.Fragment, {
-        children: [w, P]
+        children: [R, P]
       }) : (0, r.jsxs)(s.A, {
         delay: 150,
         tooltipClassName: h,
-        children: [w, P]
+        children: [R, P]
       })
     };
   return (0, r.jsx)(o.Text, {

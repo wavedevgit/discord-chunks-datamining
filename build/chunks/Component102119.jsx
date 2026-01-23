@@ -37,16 +37,16 @@ let D = () => {
     var e, t, n;
     let i = (0, o.bG)([O.default], () => A.Ay.isPremium(O.default.getCurrentUser())),
       a = (0, m.V)(),
-      s = (null == a || null == (e = a.subscription_trial) ? true : e.sku_id) === R.pe.TIER_2;
+      s = (null == a || null == (e = a.subscription_trial) ? true : e.sku_id) === w.pe.TIER_2;
     return (0, r.jsx)(g.A, {
       size: c.$n.Sizes.MEDIUM,
       textOptions: {
-        textOverride: i ? w.intl.string(w.t.IJI7yk) : s ? (0, A.FY)({
+        textOverride: i ? R.intl.string(R.t.IJI7yk) : s ? (0, A.FY)({
           intervalType: null == a || null == (t = a.subscription_trial) ? true : t.interval,
           intervalCount: null == a || null == (n = a.subscription_trial) ? true : n.interval_count
-        }) : w.intl.string(w.t.mr4K7D)
+        }) : R.intl.string(R.t.mr4K7D)
       },
-      subscriptionTier: R.pe.TIER_2
+      subscriptionTier: w.pe.TIER_2
     })
   },
   x = e => {
@@ -69,7 +69,7 @@ let D = () => {
         className: P.DD,
         children: [(0, r.jsx)(u.Heading, {
           variant: "heading-lg/extrabold",
-          children: w.intl.string(w.t["hb/wE0"])
+          children: R.intl.string(R.t["hb/wE0"])
         }), (0, r.jsx)(E.A, {
           className: P.PC
         })]
@@ -91,7 +91,7 @@ let D = () => {
         onClick: a,
         variant: "secondary",
         fullWidth: true,
-        text: i || t ? w.intl.string(w.t["dqH+qr"]) : w.intl.string(w.t.Olc2K3)
+        text: i || t ? R.intl.string(R.t["dqH+qr"]) : R.intl.string(R.t.Olc2K3)
       })]
     })
   };
@@ -111,7 +111,7 @@ function j(e) {
   })), g = h.fy.getState().activePanel === h.HP.APP_ICON;
   i.useEffect(() => {
     c && v.default.track(C.HAw.PREMIUM_UPSELL_VIEWED, {
-      type: R.e.APP_ICON_UPSELL,
+      type: w.e.APP_ICON_UPSELL,
       location_stack: a
     })
   }, [c, a]);

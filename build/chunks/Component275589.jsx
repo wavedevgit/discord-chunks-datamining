@@ -85,11 +85,11 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
   K = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_MEDIUM),
   z = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_TOP),
   q = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_TOP_SEARCH_RESULTS),
-  X = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_RIGHT),
-  Z = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_BOTTOM),
+  Z = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_RIGHT),
+  X = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_BOTTOM),
   Q = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_LEFT),
-  $ = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKERS_LIST_DIVIDER_HEIGHT),
-  J = (0, Chunk240248.xI)(Chunk319060.A.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_LIST_SECTION_HEADING_HEIGHT),
+  J = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKERS_LIST_DIVIDER_HEIGHT),
+  $ = (0, Chunk240248.xI)(Chunk319060.A.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_LIST_SECTION_HEADING_HEIGHT),
   ee = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_DIMENSIONS),
   et = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_DIMENSIONS_SMALL),
   en = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_PADDING),
@@ -97,8 +97,8 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
   ei = ee + 2 * en + er,
   ea = et + 2 * en + er,
   es = 20,
-  eo = [z, X, Z, Q],
-  el = [q, X, Z, Q],
+  eo = [z, Z, X, Q],
+  el = [q, Z, X, Q],
   ec = 12,
   eu = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKERS_LIST_EMPTY_GUILD_UPSELL_HEIGHT),
   ed = ["laugh", "wave", "yes", "dance", "sad", "no", "hi", "bye", "cry", "ok"],
@@ -132,10 +132,10 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           columnIndex: n,
           gridSectionIndex: r
         } = e;
-        h.bM.setActiveCategoryIndex(r), h.bM.setInspectedExpressionPosition(n, t, g.t.MOUSE_EVENT), e.type === w.op.STICKER && h.bM.setSearchPlaceholder(e.sticker.name)
+        h.bM.setActiveCategoryIndex(r), h.bM.setInspectedExpressionPosition(n, t, g.t.MOUSE_EVENT), e.type === R.op.STICKER && h.bM.setSearchPlaceholder(e.sticker.name)
       }, []),
       handleSelect: i.useCallback((e, i) => {
-        if (e.type !== w.op.STICKER) return;
+        if (e.type !== R.op.STICKER) return;
         let {
           sticker: o
         } = e;
@@ -236,7 +236,7 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         })
       }
       switch (n.type) {
-        case w.Z2.FAVORITE:
+        case R.Z2.FAVORITE:
           return (0, r.jsx)(y.A, {
             className: G.jH,
             "aria-label": U.intl.formatToPlainString(U.t["7lLCjZ"], {
@@ -252,7 +252,7 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             }),
             children: n.name
           }, "header-".concat(n.id));
-        case w.Z2.RECENT:
+        case R.Z2.RECENT:
           return (0, r.jsx)(y.A, {
             className: G.jH,
             "aria-label": U.intl.formatToPlainString(U.t["7lLCjZ"], {
@@ -268,8 +268,8 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             }),
             children: n.name
           }, "header-".concat(n.id));
-        case w.Z2.GUILD:
-        case w.Z2.EMPTY_GUILD_UPSELL: {
+        case R.Z2.GUILD:
+        case R.Z2.EMPTY_GUILD_UPSELL: {
           let e = O.A.getGuild(n.id);
           if (null == e) return null;
           return (0, r.jsx)(y.A, {
@@ -287,8 +287,8 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             children: e.name
           }, "h".concat(e.id))
         }
-        case w.Z2.PACK: {
-          let e = R.A.getStickerPack(n.id);
+        case R.Z2.PACK: {
+          let e = w.A.getStickerPack(n.id);
           if (null == e) return null;
           return (0, r.jsx)(y.A, {
             className: G.jH,
@@ -306,25 +306,25 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           }, "h".concat(e.id))
         }
       }
-    }, [t, g, z, E]), X = i.useCallback(e => {
+    }, [t, g, z, E]), Z = i.useCallback(e => {
       if (null != E) {
         let {
           sendable: t,
           sendableWithPremium: n
         } = E;
-        return 0 === e && t.length > 0 ? 0 : J + (t.length > 0 && n.length > 0 ? $ : 0)
+        return 0 === e && t.length > 0 ? 0 : $ + (t.length > 0 && n.length > 0 ? J : 0)
       }
-      return J
+      return $
     }, [E]);
     return {
       renderRow: H,
       renderSection: Y,
       renderSectionHeader: q,
-      sectionHeaderHeight: X,
+      sectionHeaderHeight: Z,
       renderSectionFooter: i.useCallback(e => {
         let n = g[e],
           i = t.has(n.id);
-        return n.type !== w.Z2.EMPTY_GUILD_UPSELL || null != E || i ? null : (0, r.jsx)(x.A, {
+        return n.type !== R.Z2.EMPTY_GUILD_UPSELL || null != E || i ? null : (0, r.jsx)(x.A, {
           className: G.Ij,
           guildId: n.id,
           channel: S,
@@ -335,7 +335,7 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       sectionFooterHeight: i.useCallback(e => {
         let n = g[e],
           r = t.has(n.id);
-        return n.type !== w.Z2.EMPTY_GUILD_UPSELL || r ? 0 : eu
+        return n.type !== R.Z2.EMPTY_GUILD_UPSELL || r ? 0 : eu
       }, [g, t])
     }
   },
@@ -354,9 +354,9 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       stickersCategories: A,
       stickersGrid: I,
       channel: S
-    } = e, T = i.useRef(false), C = i.useRef(null), [N, w] = h.bM.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.x), {
+    } = e, T = i.useRef(false), C = i.useRef(null), [N, R] = h.bM.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.x), {
       analyticsLocations: P
-    } = (0, f.Ay)(d.A.STICKER_PICKER), D = (0, m.RQ)(e => e.searchQuery), x = (0, s.bG)([R.A], () => R.A.getPremiumPacks()), {
+    } = (0, f.Ay)(d.A.STICKER_PICKER), D = (0, m.RQ)(e => e.searchQuery), x = (0, s.bG)([w.A], () => w.A.getPremiumPacks()), {
       renderRow: j,
       renderSection: M,
       renderSectionFooter: k,
@@ -374,7 +374,7 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       getStickerItemProps: u,
       getStickerRowProps: _,
       gutterWidth: g,
-      inspectedStickerPosition: w,
+      inspectedStickerPosition: R,
       filteredStickers: l,
       ownedStickerPacks: i.useMemo(() => new Set(x.map(e => e.id)), [x]),
       channel: S

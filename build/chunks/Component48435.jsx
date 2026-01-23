@@ -91,15 +91,15 @@ function g(e) {
     getLocation: A
   } = m(n), [I, S] = i.useState(_), T = A(s[s.length - 1]), [C, N] = (0, l.tR)(n, {
     location: T
-  }), R = I ? C.concat(N) : C, {
-    id: w,
+  }), w = I ? C.concat(N) : C, {
+    id: R,
     name: P
-  } = (0, l.x5)(n), D = null != g ? g : w, x = i.useMemo(() => C.concat(N).find(e => {
+  } = (0, l.x5)(n), D = null != g ? g : R, x = i.useMemo(() => C.concat(N).find(e => {
     let {
       id: t
     } = e;
     return t === D
-  }), [C, N, D]), L = R.map(e => {
+  }), [C, N, D]), L = w.map(e => {
     let t, {
         id: i,
         disabled: o,

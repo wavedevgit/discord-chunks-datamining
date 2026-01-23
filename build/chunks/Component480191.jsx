@@ -82,30 +82,30 @@ function G(e) {
     embedUrl: k,
     message: G,
     channel: V
-  } = e, F = i.useRef(null), B = i.useRef(null), H = (0, R.D)(k, G), {
+  } = e, F = i.useRef(null), B = i.useRef(null), H = (0, w.D)(k, G), {
     setPopout: Y
-  } = (0, y.A)(G.id, P.Fd), W = (0, E.VL)(G, V, Y, true), K = v.kt.useSetting(), z = (0, C.j)(), [q, X] = i.useState(false), [Z, Q] = i.useState((null == H ? true : H.coverImage) == null), $ = (0, l.bG)([A.Ay, I.default], () => {
+  } = (0, y.A)(G.id, P.Fd), W = (0, E.VL)(G, V, Y, true), K = v.kt.useSetting(), z = (0, C.j)(), [q, Z] = i.useState(false), [X, Q] = i.useState((null == H ? true : H.coverImage) == null), J = (0, l.bG)([A.Ay, I.default], () => {
     var e;
     return A.Ay.isMember(null == H ? true : H.guildId, null == (e = I.default.getCurrentUser()) ? true : e.id)
-  }, [H]), J = (0, l.bG)([A.Ay], () => (null == H ? true : H.authorId) != null ? A.Ay.getMember(H.guildId, H.authorId) : null), ee = (0, p.A)((null == J ? true : J.avatarDecoration) != null ? null == J ? true : J.avatarDecoration : null == H || null == (a = H.user) ? true : a.avatarDecoration), [et, en, er] = i.useMemo(() => {
+  }, [H]), $ = (0, l.bG)([A.Ay], () => (null == H ? true : H.authorId) != null ? A.Ay.getMember(H.guildId, H.authorId) : null), ee = (0, p.A)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == H || null == (a = H.user) ? true : a.avatarDecoration), [et, en, er] = i.useMemo(() => {
     var e, t;
-    return [null != (e = null == J ? true : J.colorString) ? e : "inherit", null != (t = null == J ? true : J.colorStrings) ? t : null, null == J ? true : J.colorRoleId]
-  }, [J]), ei = (0, b.gn)(null == J ? true : J.guildId, null != (t = null == H ? true : H.authorId) ? t : true, en), {
+    return [null != (e = null == $ ? true : $.colorString) ? e : "inherit", null != (t = null == $ ? true : $.colorStrings) ? t : null, null == $ ? true : $.colorRoleId]
+  }, [$]), ei = (0, b.gn)(null == $ ? true : $.guildId, null != (t = null == H ? true : H.authorId) ? t : true, en), {
     reducedMotion: ea
   } = i.useContext(u.CZY), [es, eo] = i.useState(false), el = i.useCallback(() => {
-    X(true)
-  }, [X]), ec = i.useCallback(() => {
-    X(false)
-  }, [X]), eu = i.useCallback(async () => {
-    null != H && ((0, f.zV)(w.HAw.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
+    Z(true)
+  }, [Z]), ec = i.useCallback(() => {
+    Z(false)
+  }, [Z]), eu = i.useCallback(async () => {
+    null != H && ((0, f.zV)(R.HAw.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
       media_post_id: H.threadId,
       channel_id: V.id,
       can_access: H.canAccess,
-      is_member: $
-    }), H.canAccess ? (0, m.A)(w.BVt.CHANNEL(H.guildId, H.threadId, H.messageId)) : $ ? (0, m.A)(w.BVt.CHANNEL(H.guildId, H.parentChannelId)) : await T.Z2(H.guildId, {}, {
+      is_member: J
+    }), H.canAccess ? (0, m.A)(R.BVt.CHANNEL(H.guildId, H.threadId, H.messageId)) : J ? (0, m.A)(R.BVt.CHANNEL(H.guildId, H.parentChannelId)) : await T.Z2(H.guildId, {}, {
       channelId: H.parentChannelId
     }))
-  }, [H, V, $]);
+  }, [H, V, J]);
   if (null == H) return null;
   let ed = (0, S.F_)({
       avatarDecoration: ee,
@@ -147,7 +147,7 @@ function G(e) {
       className: x.iT,
       onMouseEnter: el,
       onMouseLeave: ec,
-      children: [!Z && (true === H.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
+      children: [!X && (true === H.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: L,
         alt: D.intl.string(D.t.rIbh8H),
         className: s()(x.xn, {

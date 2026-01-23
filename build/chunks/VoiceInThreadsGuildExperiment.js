@@ -15,7 +15,7 @@ require.d(exports, {
   _M: () => G,
   io: () => E,
   jr: () => x,
-  lK: () => w,
+  lK: () => R,
   n: () => y,
   qi: () => U,
   s5: () => V
@@ -113,21 +113,21 @@ function N(e, t) {
   return null != e && t.can(g.xBc.SEND_MESSAGES_IN_THREADS, e)
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   var r;
   return null != e && !!e.isThread() && ((null == (r = e.threadMetadata) ? true : r.locked) ? n : t)
 }
 
-function w(e) {
+function R(e) {
   let t = (0, s.bG)([_.A], () => N(e, _.A)),
     n = M(e);
-  return R(e, t, n)
+  return w(e, t, n)
 }
 
 function P(e) {
   let t = N(e, _.A),
     n = k(e);
-  return R(e, t, n)
+  return w(e, t, n)
 }
 
 function D(e) {

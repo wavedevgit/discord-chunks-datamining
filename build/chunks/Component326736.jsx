@@ -94,11 +94,11 @@ let I = e => {
       leftAlignHeaders: b = false,
       showAllPerksButton: v,
       headerClassname: S
-    } = e, T = i.useRef(null), C = n === m.cJ.WHATS_NEW, N = (0, o.bG)([u.default], () => u.default.getCurrentUser()), R = (0, _.E)();
+    } = e, T = i.useRef(null), C = n === m.cJ.WHATS_NEW, N = (0, o.bG)([u.default], () => u.default.getCurrentUser()), w = (0, _.E)();
     i.useEffect(() => {
-      C && R()
-    }, [R, C]);
-    let w = (0, g.G4)(C),
+      C && w()
+    }, [w, C]);
+    let R = (0, g.G4)(C),
       P = (0, h.A)(),
       D = (0, g.LQ)(),
       {
@@ -130,7 +130,7 @@ let I = e => {
       children: [(0, r.jsx)(I, {
         showAllPerksButton: v,
         leftAlignHeaders: b,
-        title: w.title,
+        title: R.title,
         headerClassname: S
       }), (0, r.jsx)(l.Text, {
         variant: "text-lg/normal",
@@ -143,7 +143,7 @@ let I = e => {
           [y.dO]: b,
           [y.br]: !b
         }),
-        children: w.subtitle
+        children: R.subtitle
       }), !b && null != v && (0, r.jsx)("div", {
         className: y.xk,
         children: v

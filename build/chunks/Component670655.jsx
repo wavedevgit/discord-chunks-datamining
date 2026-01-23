@@ -84,7 +84,7 @@ let I = Chunk64700.forwardRef(function(e, t) {
   let N = i.useCallback(() => {
       v ? f.k(_.Se.DISMISSED) : (f.R(_.s4.TEXT, n, true, a), d.LK()), T()
     }, [v, n, a, T]),
-    R = (0, r.jsx)(I, {
+    w = (0, r.jsx)(I, {
       size: "refresh_sm",
       color: "currentColor"
     });
@@ -112,7 +112,7 @@ let I = Chunk64700.forwardRef(function(e, t) {
           }
         }
       }, S), {
-        children: R
+        children: w
       }))
     })
   })

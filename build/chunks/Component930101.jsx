@@ -135,7 +135,7 @@ let S = e => {
       enableClick: d = true,
       channelId: E,
       messageId: O
-    } = e, [A, S] = i.useState(String(Date.now())), [T, N] = i.useState(false), [R, w] = i.useState(false), P = i.useRef(null), D = e => (0, r.jsx)(u.A, {
+    } = e, [A, S] = i.useState(String(Date.now())), [T, N] = i.useState(false), [w, R] = i.useState(false), P = i.useRef(null), D = e => (0, r.jsx)(u.A, {
       emojiName: t.name,
       size: null != e ? e : t.jumboable ? "jumbo" : "default",
       emojiId: t.emojiId,
@@ -150,7 +150,7 @@ let S = e => {
       ariaHidden: true
     }, h.Uk), {
       position: a,
-      shouldShow: !R,
+      shouldShow: !w,
       onTooltipShow: () => {
         N(true), d && (C({
           emojiNode: t,
@@ -166,7 +166,7 @@ let S = e => {
         },
         onClick: d ? t => {
           var n;
-          N(false), w(true), null == e || null == (n = e.onClick) || n.call(e, t)
+          N(false), R(true), null == e || null == (n = e.onClick) || n.call(e, t)
         } : true,
         onMouseLeave: () => {
           T && (p.default.track(m.HAw.CLOSE_POPOUT, {
@@ -193,7 +193,7 @@ let S = e => {
       onRequestClose: () => {
         p.default.track(m.HAw.CLOSE_POPOUT, {
           nonce: x
-        }), N(false), w(false)
+        }), N(false), R(false)
       },
       autoInvert: true,
       nudgeAlignIntoViewport: true,

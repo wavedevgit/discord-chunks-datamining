@@ -66,11 +66,11 @@ function M(e) {
     withBottomMargin: l,
     discountOffer: c,
     trialOffer: u
-  } = e, d = null != (t = null == u ? true : u.expires_at) ? t : null == c ? true : c.expires_at, f = null == u ? true : u.subscription_trial, p = null != (n = null != (i = e.subscriptionTier) ? i : null == f ? true : f.sku_id) ? n : w.pe.TIER_2;
+  } = e, d = null != (t = null == u ? true : u.expires_at) ? t : null == c ? true : c.expires_at, f = null == u ? true : u.subscription_trial, p = null != (n = null != (i = e.subscriptionTier) ? i : null == f ? true : f.sku_id) ? n : R.pe.TIER_2;
   return (0, r.jsxs)("div", {
     className: s()(a, x.J3, {
-      [x.Vm]: p === w.pe.TIER_0,
-      [x.hD]: p === w.pe.TIER_2,
+      [x.Vm]: p === R.pe.TIER_0,
+      [x.hD]: p === R.pe.TIER_2,
       [x.ip]: l
     }),
     children: [(0, r.jsxs)("div", {
@@ -79,9 +79,9 @@ function M(e) {
         size: "md",
         color: "currentColor",
         className: x.Xo
-      }), p === w.pe.TIER_0 && (0, r.jsx)(O.A, {
+      }), p === R.pe.TIER_0 && (0, r.jsx)(O.A, {
         className: x.Vn
-      }), p === w.pe.TIER_2 && (0, r.jsx)(b.A, {
+      }), p === R.pe.TIER_2 && (0, r.jsx)(b.A, {
         className: x.Vn
       })]
     }), (0, r.jsx)(h.Text, {
@@ -89,11 +89,11 @@ function M(e) {
       className: x.C,
       color: "none",
       children: o
-    }), (0, r.jsx)(R.ir, {
+    }), (0, r.jsx)(w.ir, {
       text: null != c ? D.intl.formatToPlainString(D.t.iiLbvu, {
         percent: c.discount.amount
       }) : D.intl.string(D.t.IBYG5U),
-      colorOptions: p === w.pe.TIER_0 ? R.at.PREMIUM_TIER_0_WHITE_FILL : R.at.PREMIUM_TIER_2_WHITE_FILL
+      colorOptions: p === R.pe.TIER_0 ? w.at.PREMIUM_TIER_0_WHITE_FILL : w.at.PREMIUM_TIER_2_WHITE_FILL
     }), (0, r.jsx)(h.Text, {
       variant: "eyebrow",
       className: x.dt,
@@ -139,12 +139,12 @@ function k(e) {
 function U(e) {
   var t, n;
   let i = null == (n = (0, C.V)()) ? true : n.subscription_trial,
-    a = null != (t = null == i ? true : i.sku_id) ? t : w.pe.TIER_2;
+    a = null != (t = null == i ? true : i.sku_id) ? t : R.pe.TIER_2;
   return (0, r.jsx)(h.Text, {
     variant: "text-xs/bold",
     className: s()(x.A6, e.className, {
-      [x.kU]: a === w.pe.TIER_0,
-      [x.y_]: a === w.pe.TIER_2
+      [x.kU]: a === R.pe.TIER_0,
+      [x.y_]: a === R.pe.TIER_2
     }),
     color: "none",
     children: (0, A.tS)({
@@ -189,10 +189,10 @@ function V(e) {
   } = e, i = (0, C.V)();
   return (0, r.jsxs)("div", {
     className: x.ki,
-    children: [(0, r.jsx)(R.ir, {
+    children: [(0, r.jsx)(w.ir, {
       className: x.LW,
       text: D.intl.string(D.t["8CVUrV"]),
-      colorOptions: R.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL
+      colorOptions: w.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     }), (0, r.jsx)(h.Heading, {
       variant: "heading-md/semibold",
       color: "text-default",
@@ -202,7 +202,7 @@ function V(e) {
     }), (0, r.jsx)(k, {
       trialOffer: i,
       className: x.as,
-      subscriptionTier: w.pe.TIER_2,
+      subscriptionTier: R.pe.TIER_2,
       analyticsLocationObject: n,
       onClose: t
     }), (0, r.jsx)(h.Text, {
@@ -253,7 +253,7 @@ function B(e) {
     useKibibytes: true
   });
   switch (c) {
-    case w.e.EMPTY_STICKER_PICKER_UPSELL:
+    case R.e.EMPTY_STICKER_PICKER_UPSELL:
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.DUT, {
           className: x.kz,
@@ -291,7 +291,7 @@ function B(e) {
           discountOffer: O
         })]
       });
-    case w.e.STICKER_PICKER_UPSELL:
+    case R.e.STICKER_PICKER_UPSELL:
       return l()(null != a, "You must specify children for this upsell type"), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: x.hQ,
@@ -322,16 +322,16 @@ function B(e) {
           discountOffer: O
         })]
       });
-    case w.e.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI:
+    case R.e.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI:
       l()(null != a, "You must specify children for this upsell type");
-      let R = (0, p.qB)(C) ? n(454333) : n(674463);
+      let w = (0, p.qB)(C) ? n(454333) : n(674463);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: x.hQ,
           children: [(0, r.jsx)("img", {
             alt: "",
             className: x.Tn,
-            src: R
+            src: w
           }), (0, r.jsx)(h.Heading, {
             variant: "heading-xl/bold",
             color: "text-strong",
@@ -355,22 +355,22 @@ function B(e) {
           discountOffer: O
         })]
       });
-    case w.e.UPLOAD_ERROR_UPSELL:
-    case w.e.BURST_REACTION_UPSELL:
-    case w.e.STREAM_QUALITY_UPSELL:
-    case w.e.MESSAGE_LENGTH_UPSELL:
+    case R.e.UPLOAD_ERROR_UPSELL:
+    case R.e.BURST_REACTION_UPSELL:
+    case R.e.STREAM_QUALITY_UPSELL:
+    case R.e.MESSAGE_LENGTH_UPSELL:
       let j;
       switch (c) {
-        case w.e.UPLOAD_ERROR_UPSELL:
+        case R.e.UPLOAD_ERROR_UPSELL:
           j = D.intl.format(D.t.F4qoD7, {
             planName: (0, A.Zw)(u),
-            premiumMaxSize: u === w.pe.TIER_0 ? D.intl.string(D.t["C/Rhb9"]) : N,
+            premiumMaxSize: u === R.pe.TIER_0 ? D.intl.string(D.t["C/Rhb9"]) : N,
             onClick: () => {
               (0, y.pX)(P.BVt.APPLICATION_STORE), null == o || o()
             }
           });
           break;
-        case w.e.BURST_REACTION_UPSELL:
+        case R.e.BURST_REACTION_UPSELL:
           j = D.intl.format(D.t.poib9C, {
             planName: (0, A.Zw)(u),
             onClick: () => {
@@ -378,14 +378,14 @@ function B(e) {
             }
           });
           break;
-        case w.e.STREAM_QUALITY_UPSELL:
+        case R.e.STREAM_QUALITY_UPSELL:
           j = D.intl.format(D.t.WspKp9, {
             onClick: () => {
               (0, y.pX)(P.BVt.APPLICATION_STORE), null == o || o(), (0, f.closeAllModals)()
             }
           });
           break;
-        case w.e.MESSAGE_LENGTH_UPSELL:
+        case R.e.MESSAGE_LENGTH_UPSELL:
           j = D.intl.format(D.t.GUHtE3, {
             premiumMaxMessageLength: P.CS1,
             onClick: () => {
@@ -408,7 +408,7 @@ function B(e) {
           children: j
         })]
       });
-    case w.e.BURST_REACTION_QUICK_ACTION_UPSELL:
+    case R.e.BURST_REACTION_QUICK_ACTION_UPSELL:
       return (0, r.jsxs)("div", {
         className: x.hQ,
         children: [(0, r.jsx)(h.Heading, {
@@ -434,7 +434,7 @@ function B(e) {
           discountOffer: O
         })]
       });
-    case w.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT:
+    case R.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT:
       return l()(null != a, "You must specify children for this upsell type"), (0, r.jsx)(M, {
         trialOffer: b,
         discountOffer: O,
@@ -444,7 +444,7 @@ function B(e) {
           }
         })
       });
-    case w.e.MESSAGE_LENGTH_IN_EDITOR_UPSELL:
+    case R.e.MESSAGE_LENGTH_IN_EDITOR_UPSELL:
       return (0, r.jsxs)("div", {
         className: s()(x.iW, {
           [x.WP]: !T
@@ -479,21 +479,21 @@ function B(e) {
           discountOffer: O
         })]
       });
-    case w.e.CUSTOM_PROFILE_TRY_OUT_UPSELL:
-    case w.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL:
+    case R.e.CUSTOM_PROFILE_TRY_OUT_UPSELL:
+    case R.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL:
       return (0, r.jsx)(V, {});
-    case w.e.GUILD_CAP_MODAL_UPSELL:
-    case w.e.PREMIUM_GUILD_IDENTITY_MODAL:
-    case w.e.CUSTOM_PROFILE_UPSELL:
-    case w.e.VIDEO_BACKGROUNDS_MODAL:
-    case w.e.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED:
-    case w.e.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED:
-    case w.e.EMOJI_PICKER_EMOJI_CLICKED:
-    case w.e.CUSTOM_NOTIFICATION_SOUNDS_UPSELL:
-    case w.e.APP_ICON_UPSELL:
-    case w.e.CLIENT_THEMES_UPSELL:
-    case w.e.TRY_IT_OUT_MODAL_UPSELL:
-    case w.e.VOICE_FILTERS_UPSELL:
+    case R.e.GUILD_CAP_MODAL_UPSELL:
+    case R.e.PREMIUM_GUILD_IDENTITY_MODAL:
+    case R.e.CUSTOM_PROFILE_UPSELL:
+    case R.e.VIDEO_BACKGROUNDS_MODAL:
+    case R.e.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED:
+    case R.e.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED:
+    case R.e.EMOJI_PICKER_EMOJI_CLICKED:
+    case R.e.CUSTOM_NOTIFICATION_SOUNDS_UPSELL:
+    case R.e.APP_ICON_UPSELL:
+    case R.e.CLIENT_THEMES_UPSELL:
+    case R.e.TRY_IT_OUT_MODAL_UPSELL:
+    case R.e.VOICE_FILTERS_UPSELL:
       return (0, r.jsx)(F, {
         trialOffer: b,
         discountOffer: O,

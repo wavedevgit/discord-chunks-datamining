@@ -77,45 +77,45 @@ function j(e) {
     reducedGap: z
   } = A.C.useConfig({
     location: "ChannelTextAreaButtons"
-  }), q = (0, m.RQ)(e => e.lastActiveView), X = (null == (t = C.gifs) ? true : t.button) != null && (null == (n = C.stickers) ? true : n.button) != null && null != q ? q : D.kx.EMOJI, Z = [], Q = !j.isDM() || true === j.recipients || j.recipients.length > 1, $ = (0, c.bG)([O.default], () => Q ? null : O.default.getUser(j.recipients[0])), J = (0, f.H)({
+  }), q = (0, m.RQ)(e => e.lastActiveView), Z = (null == (t = C.gifs) ? true : t.button) != null && (null == (n = C.stickers) ? true : n.button) != null && null != q ? q : D.kx.EMOJI, X = [], Q = !j.isDM() || true === j.recipients || j.recipients.length > 1, J = (0, c.bG)([O.default], () => Q ? null : O.default.getUser(j.recipients[0])), $ = (0, f.H)({
     channel: j,
     chatInputType: C
   }), ee = (null == (i = C.submit) ? true : i.button) != null && ((null == (a = C.submit) ? true : a.ignorePreference) || V);
-  if (!l.Fr && ((null == (E = C.gifts) ? true : E.button) != null && null == B && !Y && (null == $ || v.Ay.isPremiumEligible($)) && Z.push({
+  if (!l.Fr && ((null == (E = C.gifts) ? true : E.button) != null && null == B && !Y && (null == J || v.Ay.isPremiumEligible(J)) && X.push({
       key: "gift",
       node: (0, r.jsx)(L, {
         disabled: N,
         channel: j
       }, "gift")
-    }), (null == (y = C.gifs) ? true : y.button) != null && null == B && G && Z.push({
+    }), (null == (y = C.gifs) ? true : y.button) != null && null == B && G && X.push({
       key: "gif",
       node: (0, r.jsx)(T.A, {
         disabled: N,
         type: C,
         channel: j
       }, "gif")
-    }), (null == (b = C.stickers) ? true : b.button) != null && null == B && G && Z.push({
+    }), (null == (b = C.stickers) ? true : b.button) != null && null == B && G && X.push({
       key: "sticker",
-      node: (0, r.jsx)(w.A, {
+      node: (0, r.jsx)(R.A, {
         disabled: N,
         type: C,
         channel: j
       }, "sticker")
-    }), Z.push({
+    }), X.push({
       key: "upload",
       node: (0, r.jsx)(P.n, {
         disabled: N,
         inputType: C,
         channel: j
       }, "upload")
-    }), C !== I.oU.NORMAL || ee || Z.push({
+    }), C !== I.oU.NORMAL || ee || X.push({
       key: "spacer",
       node: (0, r.jsx)("div", {
         className: x.jH
       }, "spacer")
     })), (null == (g = C.emojis) ? true : g.button) != null && (null == B || null != H && H.type !== u.n4.ATTACHMENT)) {
-    let e = K ? X : D.kx.EMOJI;
-    Z.push({
+    let e = K ? Z : D.kx.EMOJI;
+    X.push({
       key: "emoji",
       node: (0, r.jsx)(S.A, {
         disabled: N,
@@ -125,20 +125,20 @@ function j(e) {
       }, "emoji")
     })
   }
-  J && Z.push({
+  $ && X.push({
     key: "appLauncher",
     node: (0, r.jsx)(h.A, {
       channelId: j.id,
       type: C
     }, "appLauncher")
-  }), ee && Z.push({
+  }), ee && X.push({
     key: "submit",
-    node: (0, r.jsx)(R.A, {
+    node: (0, r.jsx)(w.A, {
       onClick: k,
       disabled: N || F
     }, "submit")
   });
-  let et = (0, o.chain)(Z).filter(e => null != W[e.key]).sortBy(e => W[e.key]).map(e => e.node).value();
+  let et = (0, o.chain)(X).filter(e => null != W[e.key]).sortBy(e => W[e.key]).map(e => e.node).value();
   return 0 === et.length ? null : (0, r.jsx)("div", {
     className: s()(x.Uo, {
       [x.d5]: z

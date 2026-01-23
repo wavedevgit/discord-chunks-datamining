@@ -2,7 +2,7 @@
 /** chunk id: 798400, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R
+  A: () => w
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -127,7 +127,7 @@ function N(e) {
   })
 }
 
-function R() {
+function w() {
   let e = (0, i.useContext)(f.P),
     t = (0, c.rdh)(e.primaryColor).hex(),
     {

@@ -111,18 +111,18 @@ let O = (0, Chunk64700.createContext)(null),
       C = y || a.isReadOnly,
       {
         hoverProps: N,
-        isHovered: R
+        isHovered: w
       } = (0, p.M)({
         ...e,
         isDisabled: C
       }),
-      w = (0, r.Sl)({
+      R = (0, r.Sl)({
         ...e,
         defaultClassName: "react-aria-Radio",
         values: {
           isSelected: u,
           isPressed: O,
-          isHovered: R,
+          isHovered: w,
           isFocused: I,
           isFocusVisible: S,
           isDisabled: y,
@@ -135,11 +135,11 @@ let O = (0, Chunk64700.createContext)(null),
         global: true
       });
     return delete P.id, delete P.onClick, b.createElement("label", {
-      ...(0, m.v)(P, l, N, w),
+      ...(0, m.v)(P, l, N, R),
       ref: t,
       "data-selected": u || true,
       "data-pressed": O || true,
-      "data-hovered": R || true,
+      "data-hovered": w || true,
       "data-focused": I || true,
       "data-focus-visible": S || true,
       "data-disabled": y || true,
@@ -155,5 +155,5 @@ let O = (0, Chunk64700.createContext)(null),
       value: {
         isSelected: u
       }
-    }, w.children))
+    }, R.children))
   })

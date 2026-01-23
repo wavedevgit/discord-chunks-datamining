@@ -14,8 +14,8 @@ var Chunk549412 = require("./549412.js"),
   p = [16, 16, 16, 16, 17, 17, 18, 18, 19, 19, 20, 20, 21, 21, 22, 22, 23, 23, 24, 24, 25, 25, 26, 26, 27, 27, 28, 28, 29, 29, 64, 64];
 module.exports = function(e, t, n, _, h, m, g, E) {
   var y, b, O, v, A, I, S, T, C, N = E.bits,
-    R = 0,
     w = 0,
+    R = 0,
     P = 0,
     D = 0,
     x = 0,
@@ -30,30 +30,30 @@ module.exports = function(e, t, n, _, h, m, g, E) {
     B = new r.Buf16(i + 1),
     H = null,
     Y = 0;
-  for (R = 0; R <= i; R++) F[R] = 0;
-  for (w = 0; w < _; w++) F[t[n + w]]++;
+  for (w = 0; w <= i; w++) F[w] = 0;
+  for (R = 0; R < _; R++) F[t[n + R]]++;
   for (x = N, D = i; D >= 1 && 0 === F[D]; D--);
   if (x > D && (x = D), 0 === D) return h[m++] = 0x1400000, h[m++] = 0x1400000, E.bits = 1, 0;
   for (P = 1; P < D && 0 === F[P]; P++);
-  for (x < P && (x = P), M = 1, R = 1; R <= i; R++)
-    if (M <<= 1, (M -= F[R]) < 0) return false;
+  for (x < P && (x = P), M = 1, w = 1; w <= i; w++)
+    if (M <<= 1, (M -= F[w]) < 0) return false;
   if (M > 0 && (e === o || 1 !== D)) return false;
-  for (R = 1, B[1] = 0; R < i; R++) B[R + 1] = B[R] + F[R];
-  for (w = 0; w < _; w++) 0 !== t[n + w] && (g[B[t[n + w]]++] = w);
-  if (e === o ? (G = H = g, I = 19) : e === l ? (G = u, V -= 257, H = d, Y -= 257, I = 256) : (G = f, H = p, I = false), U = 0, w = 0, R = P, A = m, L = x, j = 0, O = false, v = (k = 1 << x) - 1, e === l && k > a || e === c && k > s) return 1;
+  for (w = 1, B[1] = 0; w < i; w++) B[w + 1] = B[w] + F[w];
+  for (R = 0; R < _; R++) 0 !== t[n + R] && (g[B[t[n + R]]++] = R);
+  if (e === o ? (G = H = g, I = 19) : e === l ? (G = u, V -= 257, H = d, Y -= 257, I = 256) : (G = f, H = p, I = false), U = 0, R = 0, w = P, A = m, L = x, j = 0, O = false, v = (k = 1 << x) - 1, e === l && k > a || e === c && k > s) return 1;
   for (;;) {
-    S = R - j, g[w] < I ? (T = 0, C = g[w]) : g[w] > I ? (T = H[Y + g[w]], C = G[V + g[w]]) : (T = 96, C = 0), y = 1 << R - j, P = b = 1 << L;
+    S = w - j, g[R] < I ? (T = 0, C = g[R]) : g[R] > I ? (T = H[Y + g[R]], C = G[V + g[R]]) : (T = 96, C = 0), y = 1 << w - j, P = b = 1 << L;
     do h[A + (U >> j) + (b -= y)] = S << 24 | T << 16 | C; while (0 !== b);
-    for (y = 1 << R - 1; U & y;) y >>= 1;
-    if (0 !== y ? (U &= y - 1, U += y) : U = 0, w++, 0 == --F[R]) {
-      if (R === D) break;
-      R = t[n + g[w]]
+    for (y = 1 << w - 1; U & y;) y >>= 1;
+    if (0 !== y ? (U &= y - 1, U += y) : U = 0, R++, 0 == --F[w]) {
+      if (w === D) break;
+      w = t[n + g[R]]
     }
-    if (R > x && (U & v) !== O) {
-      for (0 === j && (j = x), A += P, M = 1 << (L = R - j); L + j < D && !((M -= F[L + j]) <= 0);) L++, M <<= 1;
+    if (w > x && (U & v) !== O) {
+      for (0 === j && (j = x), A += P, M = 1 << (L = w - j); L + j < D && !((M -= F[L + j]) <= 0);) L++, M <<= 1;
       if (k += 1 << L, e === l && k > a || e === c && k > s) return 1;
       h[O = U & v] = x << 24 | L << 16 | A - m
     }
   }
-  return 0 !== U && (h[A + U] = R - j << 24 | 4194304), E.bits = x, 0
+  return 0 !== U && (h[A + U] = w - j << 24 | 4194304), E.bits = x, 0
 }

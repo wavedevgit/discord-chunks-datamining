@@ -81,11 +81,11 @@ function y(e, t) {
       profileOwner: a,
       isHighlighted: false
     })
-  }, R = !O && e.collectiblesItem.type === i.R.PROFILE_EFFECT, w = O || !R;
+  }, w = !O && e.collectiblesItem.type === i.R.PROFILE_EFFECT, R = O || !w;
   return (0, r.jsx)(f.A, {
     onCardClick: C,
     tooltipConfig: T,
-    shouldScalePreview: w,
+    shouldScalePreview: R,
     renderPreview: N,
     moreCount: n,
     isSingleCard: p,

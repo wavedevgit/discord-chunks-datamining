@@ -134,7 +134,7 @@ function N(e) {
   }
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   if (null != e && e < 0 && ("top" === n.position || "bottom" === n.position) && null != t && Math.abs(e) < (null == t ? true : t.offsetHeight) && null != n.style) {
     let t = "top" === n.position ? "bottom" : "top",
       r = n.style[t];
@@ -147,7 +147,7 @@ function R(e, t, n) {
   return n
 }
 
-function w(e) {
+function R(e) {
   let {
     targetRef: t,
     overrideTargetRect: n
@@ -156,8 +156,8 @@ function w(e) {
 }
 
 function P(e, t) {
-  let n = w(e),
-    r = w(t);
+  let n = R(e),
+    r = R(t);
   return n.top === r.top && n.left === r.left
 }
 class D extends(r = Chunk64700.Component) {
@@ -283,7 +283,7 @@ class D extends(r = Chunk64700.Component) {
   calculatePositionStyle(e, t, n, r) {
     let {
       spacing: i = 0
-    } = this.props, a = w(this.props), s = n.getBoundingClientRect(), o = C(a, s.left, s.top);
+    } = this.props, a = R(this.props), s = n.getBoundingClientRect(), o = C(a, s.left, s.top);
     switch (e) {
       case "top":
         return this.getHorizontalAlignmentStyle(o, t, n, {
@@ -361,7 +361,7 @@ class D extends(r = Chunk64700.Component) {
         }
       }
     }
-    return R(l, n, s)
+    return w(l, n, s)
   }
   componentDidMount() {
     var e, t;

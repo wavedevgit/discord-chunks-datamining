@@ -59,7 +59,7 @@ function u(e) {
   return (0, i.mMO)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("29716"), n.e("13696"), n.e("58197")]).then(n.bind(n, 653813));
+    } = await Promise.all([n.e("29716"), n.e("13696"), n.e("55926")]).then(n.bind(n, 653813));
     return n => (0, r.jsx)(e, l(s({}, n), {
       giftRecipient: t,
       analyticsLocations: o,

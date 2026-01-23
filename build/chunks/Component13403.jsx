@@ -105,12 +105,12 @@ function j(e) {
   }, [Y]), K = (0, h.F)(g), z = i.useMemo(() => null != B ? B : null != K && U ? K : true, [U, B, K]), q = u.A.useConfig({
     location: "RichPresenceGameActivityInviteEmbed"
   }), {
-    canStartAuthorization: X,
-    hasAlreadyLinked: Z,
+    canStartAuthorization: Z,
+    hasAlreadyLinked: X,
     startAuthorization: Q
-  } = (0, f.RD)(g), $ = (0, d.z)(Q, Z), J = !(0, S.A)(k, A, g.id), ee = (0, I.n$)(V, null == (n = A.activity) ? true : n.type, J), et = i.useRef(null), en = (0, a.bG)([O.A], () => O.A.getMessages(E.id)), er = () => {
+  } = (0, f.RD)(g), J = (0, d.z)(Q, X), $ = !(0, S.A)(k, A, g.id), ee = (0, I.n$)(V, null == (n = A.activity) ? true : n.type, $), et = i.useRef(null), en = (0, a.bG)([O.A], () => O.A.getMessages(E.id)), er = () => {
     let e = [];
-    return (0, T.G)(A.id, en) && X && !Z && q.enabled && e.push(s.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, r.jsx)(m.Ay, {
+    return (0, T.G)(A.id, en) && Z && !X && q.enabled && e.push(s.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, r.jsx)(m.Ay, {
       contentTypes: e,
       children: e => {
         let {
@@ -140,7 +140,7 @@ function j(e) {
       }
     })
   };
-  return J ? (0, r.jsx)(R.A, {
+  return $ ? (0, r.jsx)(w.A, {
     message: A,
     application: g,
     applicationName: V,
@@ -156,11 +156,11 @@ function j(e) {
     onView: j,
     presenceActivity: k,
     analyticsLocations: p,
-    showAuthButton: X && !Z && q.enabled,
-    startAuthorization: $,
+    showAuthButton: Z && !X && q.enabled,
+    startAuthorization: J,
     accountLinkButtonRef: et,
     renderAccountLinkUpsell: er
-  }) : (0, r.jsx)(w.A, {
+  }) : (0, r.jsx)(R.A, {
     message: A,
     application: g,
     applicationName: V,
@@ -179,8 +179,8 @@ function j(e) {
     hideParty: v,
     partyStatusElement: M,
     analyticsLocations: p,
-    showAuthButton: X && !Z && q.enabled,
-    startAuthorization: $,
+    showAuthButton: Z && !X && q.enabled,
+    startAuthorization: J,
     accountLinkButtonRef: et,
     renderAccountLinkUpsell: er
   })

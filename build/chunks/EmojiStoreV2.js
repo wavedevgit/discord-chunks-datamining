@@ -81,18 +81,18 @@ function q(e, t) {
   return n
 }
 
-function X(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = [Chunk732139.R2.TOP_GUILD_EMOJI.toString(), Chunk732139.R2.FAVORITES.toString(), Chunk732139.R2.RECENT.toString(), Chunk732139.R2.CUSTOM.toString()].concat(Chunk7584.Ay.getCategories()),
+let X = [Chunk732139.R2.TOP_GUILD_EMOJI.toString(), Chunk732139.R2.FAVORITES.toString(), Chunk732139.R2.RECENT.toString(), Chunk732139.R2.CUSTOM.toString()].concat(Chunk7584.Ay.getCategories()),
   Q = {
     pendingUsages: [],
     emojiReactionPendingUsages: [],
     expandedSectionsByGuildIds: new Set
   };
-class $ {
+class J {
   getEmoji(e) {
     return this._emojiMap[e]
   }
@@ -121,12 +121,12 @@ class $ {
     K(this, "id", true), K(this, "_userId", true), K(this, "_emojis", null), K(this, "_emojiMap", true), K(this, "_emoticons", null), K(this, "_usableEmojis", null), K(this, "_canSeeServerSubIAP", false), this.id = e, this._userId = t, this._emojiMap = n, this._canSeeServerSubIAP = r
   }
 }
-let J = 42,
+let $ = 42,
   ee = Chunk661191.default.fromTimestamp(Date.now() - 60 * Chunk927813.A.Millis.DAY),
   et = [],
   en = [],
   er = 3,
-  ei = [...Z],
+  ei = [...X],
   ea = {},
   es = {},
   eo = new Map;
@@ -175,9 +175,9 @@ let ep = e => ({
     return null != (t = G.Ay.getByName(e)) ? t : ec(e)
   },
   afterCompute: () => {
-    e(), ei = [...Z], o().some(ea, e => e.usableEmojis.length > 0) || ei.splice(Z.indexOf(Y.R2.CUSTOM), 1)
+    e(), ei = [...X], o().some(ea, e => e.usableEmojis.length > 0) || ei.splice(X.indexOf(Y.R2.CUSTOM), 1)
   },
-  numFrequentlyItems: J
+  numFrequentlyItems: $
 });
 
 function e_(e) {
@@ -185,7 +185,7 @@ function e_(e) {
 }
 
 function eh(e) {
-  return new p.A(X(z({}, ep(e)), {
+  return new p.A(Z(z({}, ep(e)), {
     computeFrecency: (e, t, n) => null == n.maxTotalUse ? 0 : Math.trunc(1e3 * (e / n.maxTotalUse * .2 + t / 1e3 * .8)),
     calculateMaxTotalUse: true
   }))
@@ -346,7 +346,7 @@ class em {
           a = null != (n = t[i]) ? n : 0;
         if (t[i] = a + 1, a > 0) {
           let t = "".concat(i, "~").concat(a);
-          r = X(z({}, e), {
+          r = Z(z({}, e), {
             name: t,
             originalName: i
           })
@@ -366,7 +366,7 @@ class em {
       null != t && (o().each(t.usableEmojis, i), o().each(t.emoticons, s))
     };
     for (const e in l(this.guildId), this.newlyAddedEmoji) null != this.newlyAddedEmoji[e] ? this.newlyAddedEmoji[e] = this.newlyAddedEmoji[e].sort((e, t) => j.default.compare(t.id, e.id)).slice(0, 3) : this.newlyAddedEmoji[e] = [];
-    R.Ay.getFlattenedGuildIds().forEach(e => {
+    w.Ay.getFlattenedGuildIds().forEach(e => {
       e !== this.guildId && l(e)
     }), this.escapedEmoticonNames = n.join("|")
   }
@@ -391,10 +391,10 @@ function ev(e) {
   eb(e), em.clear(e);
   let t = U.A.getGuildEmojis(e);
   if (null == t) return;
-  let n = w.default.getCurrentUser();
+  let n = R.default.getCurrentUser();
   if (null == n) return;
   let r = (0, v.p)(e);
-  ea[e] = new $(e, n.id, t, r)
+  ea[e] = new J(e, n.id, t, r)
 }
 
 function eA(e) {
@@ -423,14 +423,14 @@ function eN(e) {
   ev(e.guild.id), eO()
 }
 
-function eR(e) {
+function ew(e) {
   let {
     guildId: t
   } = e;
   ev(t), eO()
 }
 
-function ew(e) {
+function eR(e) {
   let {
     guild: t
   } = e;
@@ -443,7 +443,7 @@ function eP(e) {
     guildId: n,
     user: r
   } = e;
-  r.id === (null == (t = w.default.getCurrentUser()) ? true : t.id) && (ev(n), eO())
+  r.id === (null == (t = R.default.getCurrentUser()) ? true : t.id) && (ev(n), eO())
 }
 
 function eD(e) {
@@ -467,9 +467,9 @@ function eL() {
   let l = I.A.frecencyWithoutFetchingLatest,
     c = null != (e = null == (i = l.emojiFrecency) ? true : i.emojis) ? e : {},
     u = null != (t = null == (a = l.emojiReactionFrecency) ? true : a.emojis) ? t : {};
-  eg.overwriteHistory(o().mapValues(c, e => X(z({}, e), {
+  eg.overwriteHistory(o().mapValues(c, e => Z(z({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), Q.pendingUsages), eE.overwriteHistory(o().mapValues(u, e => X(z({}, e), {
+  })), Q.pendingUsages), eE.overwriteHistory(o().mapValues(u, e => Z(z({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), Q.emojiReactionPendingUsages), ex(c, u)
 }
@@ -535,7 +535,7 @@ function eV(e) {
   let {
     guildId: t
   } = e, n = new Set(Q.expandedSectionsByGuildIds);
-  Q.expandedSectionsByGuildIds.has(t) ? n.delete(t) : n.add(t), Q = X(z({}, Q), {
+  Q.expandedSectionsByGuildIds.has(t) ? n.delete(t) : n.add(t), Q = Z(z({}, Q), {
     expandedSectionsByGuildIds: n
   })
 }
@@ -552,7 +552,7 @@ function eF(e) {
 }
 class eB extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(E.A, S.Ay, T.A, C.A, N.A, A.default, U.A, R.Ay, O.A, V.A, I.A, w.default), null != e && (null != e.pendingUsages && (Q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (Q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (Q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([I.A], eL)
+    this.waitFor(E.A, S.Ay, T.A, C.A, N.A, A.default, U.A, w.Ay, O.A, V.A, I.A, R.default), null != e && (null != e.pendingUsages && (Q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (Q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (Q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([I.A], eL)
   }
   getState() {
     return Q
@@ -693,8 +693,8 @@ let eH = new eB(Chunk73153.h, {
   GUILD_MEMBER_UPDATE: eP,
   GUILD_CREATE: eC,
   GUILD_UPDATE: eN,
-  GUILD_EMOJIS_UPDATE: eR,
-  GUILD_DELETE: ew,
+  GUILD_EMOJIS_UPDATE: ew,
+  GUILD_DELETE: eR,
   MESSAGE_REACTION_ADD: eD,
   EMOJI_TRACK_USAGE: eM,
   USER_SETTINGS_PROTO_UPDATE: ej,

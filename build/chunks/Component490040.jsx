@@ -104,21 +104,21 @@ let T = function(e) {
     location: "SoundboardMention"
   }), C = i.useRef(null), {
     isPlaying: N,
-    playSound: R
-  } = (0, h.A)(O, I), w = i.useCallback(async () => {
-    if (await R()) {
+    playSound: w
+  } = (0, h.A)(O, I), R = i.useCallback(async () => {
+    if (await w()) {
       var e;
       null == (e = C.current) || e.addAnimation()
     }
-  }, [R]);
+  }, [w]);
   return T ? null == O ? (0, r.jsx)(A, {
-    playSound: w
+    playSound: R
   }) : c && !u ? (0, r.jsx)(E.Ay, {
     containerClassName: v.Ti,
     className: v.UX,
     sound: O,
     channel: I,
-    onSelectItem: w,
+    onSelectItem: R,
     isPlayingSoundOverride: N,
     isSoundmoji: true,
     buttonOverlay: g.If.SOUNDMOJI,
@@ -139,7 +139,7 @@ let T = function(e) {
     children: (0, r.jsx)("span", {
       children: (0, r.jsx)(S, {
         sound: O,
-        playSound: w,
+        playSound: R,
         isPlaying: N
       })
     })

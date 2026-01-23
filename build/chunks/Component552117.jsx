@@ -2,7 +2,7 @@
 /** chunk id: 552117, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => J
+  A: () => $
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -102,13 +102,13 @@ function q(e) {
   }), (0, b.Z)()
 }
 
-function X(e) {
+function Z(e) {
   let {
     sticker: t,
     description: n
   } = e;
   return (0, r.jsxs)(h.A, {
-    children: [(0, r.jsx)(R.A, {
+    children: [(0, r.jsx)(w.A, {
       sticker: t,
       size: F,
       isInteracting: true
@@ -128,7 +128,7 @@ function X(e) {
     })]
   })
 }
-let Z = e => {
+let X = e => {
     let {
       closePopout: t,
       sticker: n,
@@ -166,7 +166,7 @@ let Z = e => {
     });
     let g = u,
       E = () => {
-        g && (0, w.a)({
+        g && (0, R.a)({
           stickerPack: l,
           stickerPickerCategories: p
         }), t()
@@ -181,7 +181,7 @@ let Z = e => {
         children: K(l, u)
       }), (0, r.jsx)("ul", {
         className: L.pQ,
-        children: f.map(e => (0, r.jsx)(R.A, {
+        children: f.map(e => (0, r.jsx)(w.A, {
           isInteracting: true,
           size: V,
           sticker: e
@@ -205,35 +205,35 @@ let Z = e => {
         refreshPositionKey: b
       } = e,
       [T, C] = i.useState(null),
-      [N, w] = i.useState(false),
+      [N, R] = i.useState(false),
       M = A.default.getCurrentUser(),
       U = S.Ay.canUseCustomStickersEverywhere(M),
       V = (0, o.bG)([v.A], () => v.A.getGuild(n.guild_id)),
       F = null != V,
       [Y, K] = i.useState(false),
-      [z, Z] = i.useState(null),
+      [z, X] = i.useState(null),
       Q = i.useMemo(() => ({
         page: null != a.guild_id ? P.liQ.GUILD_CHANNEL : P.liQ.DM_CHANNEL,
         section: P.JJy.STICKER_POPOUT
       }), [a.guild_id]),
       {
-        current: $
+        current: J
       } = i.useRef(k({
         guild_id: a.getGuildId()
       }, (0, _.dI)(a))),
-      J = {
+      $ = {
         stickerSourceGuild: V,
         refreshPositionKey: b
       },
-      ee = i.useRef(J);
+      ee = i.useRef($);
     i.useEffect(() => {
-      ee.current = J
+      ee.current = $
     }), i.useEffect(() => {
       let {
         stickerSourceGuild: e
       } = ee.current;
       (async () => {
-        (null == e || e.features.has(P.GuildFeatures.DISCOVERABLE)) && C(await (0, g.A)(n.id)), w(true)
+        (null == e || e.features.has(P.GuildFeatures.DISCOVERABLE)) && C(await (0, g.A)(n.id)), R(true)
       })()
     }, [n.id, F]);
     let et = n.guild_id === a.getGuildId(),
@@ -254,7 +254,7 @@ let Z = e => {
       }, [N, T]), (0, p.Ay)(() => {
         I.default.track(P.HAw.OPEN_POPOUT, k({
           type: ei
-        }, $))
+        }, J))
       }), !N) return (0, r.jsx)(y.Y0, {
       className: L.v0
     });
@@ -270,7 +270,7 @@ let Z = e => {
           };
           return (0, r.jsxs)("div", {
             className: j.gH,
-            children: [(0, r.jsx)(X, {
+            children: [(0, r.jsx)(Z, {
               description: t,
               sticker: n
             }), er && (0, r.jsx)(O.A, {
@@ -347,12 +347,12 @@ let Z = e => {
                       [L.vT]: null != z && z !== e.id
                     }),
                     onMouseEnter: () => {
-                      Z(e.id)
+                      X(e.id)
                     },
                     onMouseLeave: () => {
-                      Z(null)
+                      X(null)
                     },
-                    children: (0, r.jsx)(R.A, {
+                    children: (0, r.jsx)(w.A, {
                       size: B,
                       enlargeOnInteraction: true,
                       enlargeWithName: false,
@@ -373,7 +373,7 @@ let Z = e => {
     }
   };
 
-function $(e) {
+function J(e) {
   let {
     channel: t,
     closePopout: n,
@@ -381,7 +381,7 @@ function $(e) {
   } = e;
   return (0, r.jsx)(y.Uq, {
     className: L.Bm,
-    children: (0, r.jsx)(X, {
+    children: (0, r.jsx)(Z, {
       sticker: i,
       description: x.intl.format(x.t.hGWuxU, {
         openPremiumSettings: () => {
@@ -391,14 +391,14 @@ function $(e) {
     })
   })
 }
-let J = e => {
+let $ = e => {
   let {
     renderableSticker: t,
     channel: n,
     closePopout: i,
     refreshPositionKey: a
   } = e, [s, o] = (0, T.Zq)(t, true);
-  return null != s && (0, N.FD)(s) ? (0, r.jsx)(Z, {
+  return null != s && (0, N.FD)(s) ? (0, r.jsx)(X, {
     sticker: s,
     closePopout: i,
     channel: n,
@@ -408,7 +408,7 @@ let J = e => {
     channel: n,
     closePopout: i,
     refreshPositionKey: a
-  }) : o ? o && null == s ? (0, r.jsx)($, {
+  }) : o ? o && null == s ? (0, r.jsx)(J, {
     channel: n,
     closePopout: i,
     sticker: t

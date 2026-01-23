@@ -213,7 +213,7 @@ function N() {
   }), E.sortedVoiceFilters = I(E.voiceFilters)
 }
 
-function R(e) {
+function w(e) {
   let {
     modelId: t
   } = e;
@@ -223,7 +223,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     modelId: t,
     downloadedBytes: n,
@@ -280,8 +280,8 @@ function k() {
 }
 f(C, "displayName", "VoiceFilterStore");
 let U = new C(Chunk73153.h, {
-  VOICE_FILTER_DOWNLOAD_STARTED: R,
-  VOICE_FILTER_DOWNLOAD_PROGRESS: w,
+  VOICE_FILTER_DOWNLOAD_STARTED: w,
+  VOICE_FILTER_DOWNLOAD_PROGRESS: R,
   VOICE_FILTER_DOWNLOAD_FAILED: P,
   VOICE_FILTER_FILE_READY: D,
   VOICE_FILTER_CATALOG_FETCH_SUCCESS: S,

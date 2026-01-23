@@ -1,7 +1,7 @@
 /** Chunk was on 2824 **/
 /** chunk id: 447784, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => g
+  k: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,85 +15,85 @@ var Chunk627968 = require("./627968.js"),
   Chunk761365 = require("./761365.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk836314 = require("./836314.js");
-let g = e => {
+let f = e => {
   let t, n, {
       skuId: i,
-      assetId: g,
-      user: j,
-      claimed: y,
-      onSelect: h,
-      productName: v,
-      a11yLabel: b,
+      assetId: f,
+      user: y,
+      claimed: j,
+      onSelect: b,
+      productName: h,
+      a11yLabel: v,
       selectedSkuId: O,
-      category: x,
-      type: P,
-      palette: S
+      category: P,
+      type: x,
+      palette: E
     } = e,
-    E = r.useRef(null),
+    S = l.useRef(null),
     {
       isHoveringOrFocusing: T
-    } = (0, u.A)(E),
-    I = !y && T;
-  return P === a.R.AVATAR_DECORATION ? (t = {
+    } = (0, u.A)(S),
+    I = !j && T;
+  return x === a.R.AVATAR_DECORATION ? (t = {
     type: a.R.AVATAR_DECORATION,
-    label: b,
-    asset: g
-  }, n = (0, l.jsx)(d.i, {
+    label: v,
+    asset: f
+  }, n = (0, r.jsx)(d.i, {
     item: t,
-    user: j,
+    user: y,
     isHighlighted: I,
     avatarSize: o._3J.SIZE_96
-  })) : P === a.R.NAMEPLATE && (t = {
+  })) : x === a.R.NAMEPLATE && (t = {
     type: a.R.NAMEPLATE,
-    label: b,
-    asset: g,
-    palette: null != S ? S : "none"
-  }, n = (0, l.jsx)(p.A, {
+    label: v,
+    asset: f,
+    palette: null != E ? E : "none"
+  }, n = (0, r.jsx)(p.A, {
     nameplate: t,
-    user: j,
+    user: y,
     isHighlighted: I,
     size: "small"
-  })), (0, l.jsx)(o.vN3, {
-    children: (0, l.jsxs)(o.sqX, {
-      ref: E,
-      "aria-label": null != v ? v : "",
+  })), (0, r.jsx)(o.vN3, {
+    children: (0, r.jsxs)(o.sqX, {
+      ref: S,
+      "aria-label": null != h ? h : "",
       onClick: () => {
-        null == i || null == h || y || h(i)
+        null == i || null == b || j || b(i)
       },
-      className: s()(f._x, {
-        [f.Vp]: !y,
-        [f.mr]: I,
-        [f.md]: O === i
+      className: s()(g._x, {
+        [g.Vp]: !j,
+        [g.mr]: I,
+        [g.md]: O === i
       }),
-      children: [(0, l.jsx)("div", {
-        className: s()(f.VH, {
-          [f._Q]: P === a.R.AVATAR_DECORATION,
-          [f.M4]: P === a.R.NAMEPLATE,
-          [f.S1]: x === c.Sm.Trick,
-          [f.LX]: x === c.Sm.Treat
+      children: [(0, r.jsx)("div", {
+        className: s()(g.VH, {
+          [g._Q]: x === a.R.AVATAR_DECORATION,
+          [g.M4]: x === a.R.NAMEPLATE,
+          [g.S1]: P === c.Sm.Trick,
+          [g.LX]: P === c.Sm.Treat
         }),
-        children: null != t ? (0, l.jsxs)(l.Fragment, {
-          children: [(0, l.jsx)("div", {
-            className: s()(f.i1, {
-              [f.Sf]: y
+        children: null != t ? (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)("div", {
+            className: s()(g.i1, {
+              [g.Sf]: j
             }),
             children: n
-          }), y && (0, l.jsx)(o.rOg, {
+          }), j && (0, r.jsx)(o.rOg, {
             size: "custom",
             width: 48,
             height: 48,
             color: o.LU0.colors.INTERACTIVE_TEXT_ACTIVE,
-            className: f.j0
+            className: g.j0
           })]
         }) : null
-      }), (0, l.jsxs)("div", {
-        className: f.tZ,
-        children: [(0, l.jsx)(o.Heading, {
+      }), (0, r.jsxs)("div", {
+        className: g.tZ,
+        children: [(0, r.jsx)(o.Heading, {
           variant: "heading-md/extrabold",
-          children: v
-        }), (0, l.jsx)(o.Text, {
+          children: h
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
-          children: y ? m.intl.string(m.t["6cfuDj"]) : m.intl.string(m.t.QQsaCc)
+          children: j ? m.intl.string(m.t["6cfuDj"]) : m.intl.string(m.t.QQsaCc)
         })]
       })]
     })

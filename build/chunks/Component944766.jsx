@@ -33,14 +33,14 @@ let h = 13e3,
       sampleAsset: T,
       animationState: C,
       updateAnimationState: N,
-      characterAssets: R
-    } = (0, u.u)(null == I ? true : I.name), w = i.useMemo(() => Object.values(null != R ? R : {}).flat(), [R]), P = g.find(e => e.type === p.lp.USER && e.user.id === a.userId), D = i.useMemo(() => g.filter(e => m(e, a.userId)), [g, a.userId]), x = i.useMemo(() => D.flatMap(e => {
+      characterAssets: w
+    } = (0, u.u)(null == I ? true : I.name), R = i.useMemo(() => Object.values(null != w ? w : {}).flat(), [w]), P = g.find(e => e.type === p.lp.USER && e.user.id === a.userId), D = i.useMemo(() => g.filter(e => m(e, a.userId)), [g, a.userId]), x = i.useMemo(() => D.flatMap(e => {
       let n = t.find(t => t.claimedBy === e.user.id);
       return null != n ? [n] : []
     }), [D, t]), [L, j] = i.useState(false), [M, k] = i.useState(0), [U, G] = i.useState(0);
     return i.useEffect(() => {
       j(false)
-    }, [I, w]), i.useEffect(() => {
+    }, [I, R]), i.useEffect(() => {
       let e = A.current;
       return () => {
         [...e].forEach(e => window.clearTimeout(e))
@@ -50,13 +50,13 @@ let h = 13e3,
       let e = v.current;
       if (null == e || true === L) return;
       let t = T(),
-        n = w.findIndex(e => e === t);
+        n = R.findIndex(e => e === t);
       S(t), G(n), [...e.children].forEach((e, t) => {
         if ("VIDEO" !== e.nodeName) return;
         let r = e;
         r.currentTime = 0, t === n && (r.play(), j(true))
       })
-    }, [L, w, T, S, O]), i.useEffect(() => {
+    }, [L, R, T, S, O]), i.useEffect(() => {
       O && ((null == P ? true : P.speaking) ? N(u.f.TALKING) : C === u.f.TALKING && N(u.f.IDLE))
     }, [P, C, N, O]), i.useEffect(() => {
       !O || x.some(e => {
@@ -96,8 +96,8 @@ let h = 13e3,
           height: 1.25 * I.height,
           width: 1.25 * I.width
         }
-      }), (null == R ? true : R.decoration) != null && (0, r.jsx)(l.A, {
-        src: R.decoration[0],
+      }), (null == w ? true : w.decoration) != null && (0, r.jsx)(l.A, {
+        src: w.decoration[0],
         className: s()(_.GG, {
           [_.UU]: y
         }),
@@ -108,7 +108,7 @@ let h = 13e3,
         }
       }), (0, r.jsx)("div", {
         ref: v,
-        children: w.map((e, t) => (0, r.jsx)(l.A, {
+        children: R.map((e, t) => (0, r.jsx)(l.A, {
           style: {
             opacity: +(t === U),
             width: I.width
@@ -119,13 +119,13 @@ let h = 13e3,
           }),
           onEnded: () => {
             var t, n;
-            if (C === u.f.HEAD_TURN && (null == R || null == (t = R.headTurn) ? true : t.includes(e))) {
+            if (C === u.f.HEAD_TURN && (null == w || null == (t = w.headTurn) ? true : t.includes(e))) {
               N(u.f.HEAD_TURN_BACK);
               let e = setTimeout(() => {
                 j(false), A.current.delete(e)
               }, 2e3);
               A.current.add(e)
-            } else C === u.f.HEAD_TURN_BACK && (null == R || null == (n = R.headTurnBack) ? true : n.includes(e)) && N(u.f.IDLE), j(false)
+            } else C === u.f.HEAD_TURN_BACK && (null == w || null == (n = w.headTurnBack) ? true : n.includes(e)) && N(u.f.IDLE), j(false)
           },
           autoPlay: false,
           loop: false

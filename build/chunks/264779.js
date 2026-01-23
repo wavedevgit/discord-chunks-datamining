@@ -4,9 +4,9 @@
 require.d(exports, {
   Cp: () => N,
   HB: () => D,
-  OP: () => w,
+  OP: () => R,
   S0: () => P,
-  So: () => R,
+  So: () => w,
   WD: () => A,
   b3: () => S,
   kc: () => C,
@@ -105,14 +105,14 @@ function N() {
   return 0 === g.length ? null : g.sort((e, t) => new Date(e.startDate) < new Date(t.startDate) ? false : 1)[0].id
 }
 
-function R() {
+function w() {
   let e = N();
   return null != e && !(0, o.j6)(a.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, e, {
     cooldownDurationMs: v
   })
 }
 
-function w(e) {
+function R(e) {
   return !(0, _.isIOS)() || !e.hasFlag(E.$3.IS_BLOCKED_IOS)
 }
 

@@ -30,9 +30,9 @@ let A = 3e5,
   T = false,
   C = window.document.createElement("canvas"),
   N = 512,
-  R = 288;
-C.width = 512, C.height = R;
-let w = C.getContext("2d");
+  w = 288;
+C.width = 512, C.height = w;
+let R = C.getContext("2d");
 
 function P() {
   S.stop(), null != r && (r = null)
@@ -47,7 +47,7 @@ let D = o().debounce((e, t, n, r) => {
 }, 500);
 
 function x(e) {
-  let t = Math.min(N / e.width, R / e.height),
+  let t = Math.min(N / e.width, w / e.height),
     n = e.width * t,
     r = e.height * t;
   C.width = n, C.height = r;
@@ -55,7 +55,7 @@ function x(e) {
     a = i.getContext("2d");
   i.width = e.width, i.height = e.height;
   let s = new ImageData(e.data, e.width, e.height);
-  null == a || a.putImageData(s, 0, 0), null == w || w.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r)
+  null == a || a.putImageData(s, 0, 0), null == R || R.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r)
 }
 async function L(e, t) {
   if (r !== e || (0, g.isWeb)() && _.uh.getSetting() || h.A.getIsActiveStreamPreviewDisabled(t)) return;
@@ -107,7 +107,7 @@ function M(e, t) {
     width: r,
     height: i
   } = n.getVideoTracks()[0].getSettings(), a = document.createElement("video"), s = document.createElement("canvas");
-  a.width = s.width = null != r ? r : N, a.height = s.height = null != i ? i : R, a.srcObject = n, a.play();
+  a.width = s.width = null != r ? r : N, a.height = s.height = null != i ? i : w, a.srcObject = n, a.play();
   let o = s.getContext("2d");
   return new Promise((e, n) => {
     a.ontimeupdate = () => {

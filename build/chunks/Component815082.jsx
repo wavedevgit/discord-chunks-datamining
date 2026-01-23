@@ -31,14 +31,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk702888 = require("./702888.js");
 let N = 250;
 
-function R(e) {
+function w(e) {
   return null != e && "animated" in e
 }
-let w = e => {
+let R = e => {
     let {
       inspectedEmoji: t,
       guild: n
-    } = e, r = R(t);
+    } = e, r = w(t);
     return null != n && r ? T.intl.format(T.t.KFW2aY, {
       guildName: n.name
     }) : null
@@ -79,7 +79,7 @@ let w = e => {
       F = (0, a.bG)([E.A], () => E.A.isFocused()),
       B = (0, a.bG)([l.A], () => l.A.useReducedMotion, []),
       H = m.Sf.useSetting(),
-      Y = (0, O.O7)(j, R(t) ? t : null),
+      Y = (0, O.O7)(j, w(t) ? t : null),
       W = (0, a.bG)([c.Ay], () => c.Ay.expandedSectionsByGuildIds),
       {
         newlyAddedEmojis: K
@@ -88,7 +88,7 @@ let w = e => {
     if (i.useEffect(() => {
         let e = Date.now();
         return () => {
-          Date.now() - e >= N && R(t) && z !== S.tm.NONE && (z === S.tm.NEWLY_ADDED_EMOJI && null !== t && t.type === u.i.GUILD && (0, f.mz)(t.guildId, K[0].id), null != U.source && (0, O.yB)({
+          Date.now() - e >= N && w(t) && z !== S.tm.NONE && (z === S.tm.NEWLY_ADDED_EMOJI && null !== t && t.type === u.i.GUILD && (0, f.mz)(t.guildId, K[0].id), null != U.source && (0, O.yB)({
             emoji: t,
             subCategory: z,
             position: G.columnIndex + 1,
@@ -97,8 +97,8 @@ let w = e => {
         }
       }), null == t) return null;
     let q = h.A.theme;
-    if (R(t)) {
-      var X;
+    if (w(t)) {
+      var Z;
       let e = null != t.id ? y.Ay.getEmojiURL({
         id: t.id,
         animated: H && t.animated,
@@ -109,7 +109,7 @@ let w = e => {
         className: C.J_,
         children: "surrogates" in t ? t.surrogates : null
       }) : (0, r.jsx)("img", {
-        alt: null != (X = (0, b.N)(t)) ? X : "",
+        alt: null != (Z = (0, b.N)(t)) ? Z : "",
         src: e,
         className: C.Zg
       })
@@ -128,13 +128,13 @@ let w = e => {
         alt: ""
       })
     }
-    let Z = null != V ? (0, r.jsx)(A.A, {
+    let X = null != V ? (0, r.jsx)(A.A, {
       className: C.__invalid_guildIcon,
       guild: V,
       shouldAnimate: !B && F
     }) : null;
     D = "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? W.has(t.guildId) ? T.intl.string(T.t["/K2RDH"]) : T.intl.string(T.t.NZI2Zk) : (0, b.N)(t);
-    let Q = w({
+    let Q = R({
       inspectedEmoji: t,
       channel: k,
       guildId: j,
@@ -144,7 +144,7 @@ let w = e => {
     return (0, r.jsx)(_.A, {
       className: x,
       graphicPrimary: P,
-      graphicSecondary: Z,
+      graphicSecondary: X,
       titlePrimary: D,
       titleSecondary: Q,
       isFavorite: Y,

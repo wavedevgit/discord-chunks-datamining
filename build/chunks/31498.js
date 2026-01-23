@@ -179,15 +179,15 @@ class g extends Chunk143236.EventEmitter {
     for (let e of Object.values(I)) Array.isArray(e) && (T += e.length);
     let C = true === I.isLoading,
       N = this.shouldShow(T, C, y),
-      R = this.state.selectedIndex;
-    !N || C ? R = null : null != R && R >= T && (R = T - 1);
-    let w = null != this.props.guild && o.M.getCurrentConfig({
+      w = this.state.selectedIndex;
+    !N || C ? w = null : null != w && w >= T && (w = T - 1);
+    let R = null != this.props.guild && o.M.getCurrentConfig({
       guildId: this.props.guild.id,
       location: "mention autocomplete"
     }, {
       autoTrackExposure: true
     }).enabled;
-    N && !this.state.isVisible && (0, a.uA)(E, this.props.channel, S, w), this.setState({
+    N && !this.state.isVisible && (0, a.uA)(E, this.props.channel, S, R), this.setState({
       query: {
         type: E,
         typeInfo: y,
@@ -198,7 +198,7 @@ class g extends Chunk143236.EventEmitter {
         isLoading: C
       },
       isVisible: N,
-      selectedIndex: R,
+      selectedIndex: w,
       hadInitialResults: true,
       isInitialAfterError: true !== this.state.hadInitialResults && null != (e = null == r ? true : r[0].error) && e
     })

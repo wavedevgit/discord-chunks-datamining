@@ -37,7 +37,7 @@ function O(e) {
   s()(null == T || T.isPrivate(), "must be a private channel");
   let {
     analyticsLocations: C
-  } = (0, d.Ay)(u.A.INVITE_EMBED), N = null != T, R = i.useCallback(() => {
+  } = (0, d.Ay)(u.A.INVITE_EMBED), N = null != T, w = i.useCallback(() => {
     let e = "noop";
     N ? (v(), e = "transition") : (A(), e = "accept"), (0, c.he)({
       invite: n,
@@ -57,8 +57,8 @@ function O(e) {
     let e = h.default.getCurrentUser();
     N && null != e && t.push(e)
   }
-  let w = T.name;
-  (null == w || "" === w) && (w = t.length > 0 ? t.filter(m.Vq).map(e => e.username).join(", ") : y.intl.string(y.t.LJpTRF));
+  let R = T.name;
+  (null == R || "" === R) && (R = t.length > 0 ? t.filter(m.Vq).map(e => e.username).join(", ") : y.intl.string(y.t.LJpTRF));
   let P = y.intl.string(y.t.XpeFYr),
     D = "active";
   N && (P = y.intl.string(y.t.cEnaWx), D = "secondary");
@@ -71,16 +71,16 @@ function O(e) {
         className: b.iH,
         children: [(0, r.jsx)(f.A.Icon, {
           channel: T,
-          onClick: N ? R : true
+          onClick: N ? w : true
         }), (0, r.jsx)(f.A.Info, {
-          title: w,
-          onClick: N ? R : true,
+          title: R,
+          onClick: N ? w : true,
           children: (0, r.jsx)(f.A.Data, {
             members: t.length
           })
         })]
       }), (0, r.jsx)(o.$nd, {
-        onClick: R,
+        onClick: w,
         loading: S,
         disabled: N,
         variant: D,

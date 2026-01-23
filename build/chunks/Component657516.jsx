@@ -35,8 +35,8 @@ let A = e => {
   } = e, T = (0, h.D$)(p.A.boostSlots);
   s()(null != t || null != n, "Must either provide slots or an initial selected guild"), s()(!(null == t ? true : t.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
   let C = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
-    [N, R] = (0, l.yK)([d.A], () => [d.A.isModifyingAppliedBoost, d.A.applyBoostError]),
-    [w, P] = i.useState(C[0]),
+    [N, w] = (0, l.yK)([d.A], () => [d.A.isModifyingAppliedBoost, d.A.applyBoostError]),
+    [R, P] = i.useState(C[0]),
     [D, x] = i.useState(false),
     [L, j] = i.useState(n),
     [M, k] = i.useState(null != t ? t : T.slice(0, 1)),
@@ -50,7 +50,7 @@ let A = e => {
       var e;
       return (null == M || null == (e = M[0]) ? true : e.premiumGuildSubscription) != null
     }, [M]),
-    V = () => (S("SUCCESS" === w), _.default.track(y.HAw.MODAL_DISMISSED, {
+    V = () => (S("SUCCESS" === R), _.default.track(y.HAw.MODAL_DISMISSED, {
       type: y.JJy.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
     }), Promise.resolve()),
@@ -104,7 +104,7 @@ let A = e => {
         let e = M.filter(e => (0, h.I5)(e)).length,
           t = M.length,
           n = U.length,
-          i = "CONFIRM" === C[0] ? V : () => P(C[C.indexOf(w) - 1]),
+          i = "CONFIRM" === C[0] ? V : () => P(C[C.indexOf(R) - 1]),
           a = async () => {
             if (x(false), null != L && (null == M ? true : M.length) !== 0) {
               s()(!M.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
@@ -153,7 +153,7 @@ let A = e => {
               guildCount: n
             }),
             imageClass: v.LA,
-            error: D ? R : null,
+            error: D ? w : null,
             slotCount: t,
             canceledCount: e
           }) : (0, r.jsx)(m.A.ApplyBody, {
@@ -164,7 +164,7 @@ let A = e => {
               slotCount: t
             }),
             imageClass: v.MP,
-            error: D ? R : null,
+            error: D ? w : null,
             slotCount: t,
             canceledCount: e
           })
@@ -194,6 +194,6 @@ let A = e => {
       location_section: a
     })
   }, [a]);
-  let B = F[w];
+  let B = F[R];
   return null == B ? null : B()
 }

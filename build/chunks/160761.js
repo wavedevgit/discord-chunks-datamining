@@ -5,9 +5,9 @@ let r;
 require.d(exports, {
   Bo: () => T,
   DP: () => v,
-  Uq: () => R,
+  Uq: () => w,
   Vu: () => C,
-  _L: () => w,
+  _L: () => R,
   eE: () => S,
   hI: () => N
 });
@@ -157,7 +157,7 @@ function N(e, t, n, r) {
   }, [u, r, n, t])]
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   let s = (0, a.bG)([c.A], () => c.A.getGuildId()),
     o = null;
   return null == e || (0, m.j6)(e, n, t) || (o = e), [O(o, s, r), i.useCallback((e, t) => {
@@ -170,7 +170,7 @@ function R(e, t, n, r) {
   }, [o, r, s, n])]
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   let r = (0, a.bG)([l.A], () => l.A.getGuildDismissedContentState(t)),
     s = (0, g.Sg)(e),
     o = null;

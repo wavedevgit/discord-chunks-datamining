@@ -185,7 +185,7 @@ function N(e) {
   return t
 }
 
-function R(e) {
+function w(e) {
   let {
     presences: t
   } = e, n = a()(t).map(e => {
@@ -196,7 +196,7 @@ function R(e) {
   return r
 }
 
-function w(e) {
+function R(e) {
   let {
     chunks: t
   } = e, n = false;
@@ -284,8 +284,8 @@ let M = new j(Chunk73153.h, {
   GUILD_MEMBER_ADD: S,
   GUILD_MEMBER_UPDATE: S,
   GUILD_MEMBER_REMOVE: S,
-  PRESENCES_REPLACE: R,
-  GUILD_MEMBERS_CHUNK_BATCH: w,
+  PRESENCES_REPLACE: w,
+  GUILD_MEMBERS_CHUNK_BATCH: R,
   GUILD_ROLE_UPDATE: x,
   GUILD_ROLE_DELETE: x,
   PASSIVE_UPDATE_V2: C

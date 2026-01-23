@@ -66,14 +66,14 @@ function N() {
   m.clear(), g.clear(), E = {}, y.clear(), b = {}, O = {}, v = {}, A = {}, I.clear()
 }
 
-function R(e) {
+function w(e) {
   let {
     settings: t
   } = e;
   b[t.guild_id] = t
 }
 
-function w(e) {
+function R(e) {
   let {
     guildId: t
   } = e;
@@ -235,8 +235,8 @@ class K extends(r = Chunk311907.Ay.Store) {
 u(K, "displayName", "GuildRoleSubscriptionsStore");
 let z = new K(Chunk73153.h, {
   CONNECTION_OPEN: N,
-  GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS: R,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS: w,
+  GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS: w,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS: R,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS: P,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE: D,
   GUILD_ROLE_SUBSCRIPTIONS_UPDATE_GROUP_LISTING: x,

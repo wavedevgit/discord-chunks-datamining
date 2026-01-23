@@ -37,8 +37,8 @@ function E(e) {
     isTryItOut: T,
     onOpenProfile: C,
     onClose: N,
-    nicknameVariant: R = "heading-lg/bold"
-  } = e, w = e => null == C ? e : (0, r.jsx)(o.sqX, {
+    nicknameVariant: w = "heading-lg/bold"
+  } = e, R = e => null == C ? e : (0, r.jsx)(o.sqX, {
     onClick: C,
     className: g.pt,
     "aria-label": m.intl.string(m.t["+Xp3hq"]),
@@ -54,8 +54,8 @@ function E(e) {
     }, I),
     children: [(0, r.jsxs)("div", {
       className: g.Fj,
-      children: [w(L ? (0, r.jsx)(o.Text, {
-        variant: R,
+      children: [R(L ? (0, r.jsx)(o.Text, {
+        variant: w,
         children: (0, r.jsx)(p.A, {
           userName: y,
           displayNameStyles: x,
@@ -68,7 +68,7 @@ function E(e) {
         })
       }) : (0, r.jsx)(o.Text, {
         className: g.$R,
-        variant: R,
+        variant: w,
         children: y
       })), null != D && (0, r.jsx)(u.A, {
         type: D,
@@ -82,7 +82,7 @@ function E(e) {
         [g.hI]: P,
         [g.Od]: null != D
       }),
-      children: [!t.isProvisional && w((0, r.jsx)(l.A, {
+      children: [!t.isProvisional && R((0, r.jsx)(l.A, {
         user: t,
         usernameIcon: i,
         forceUsername: true,

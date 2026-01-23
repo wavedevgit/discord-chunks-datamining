@@ -36,8 +36,8 @@ function I(e) {
     onUpsellClick: T,
     pendingBanner: C,
     pendingAccentColor: N,
-    pendingBio: R,
-    pendingPronouns: w,
+    pendingBio: w,
+    pendingPronouns: R,
     pendingAvatar: P,
     pendingAvatarDecoration: D,
     pendingNickname: x,
@@ -56,12 +56,12 @@ function I(e) {
     hideMessageInput: K = true,
     pendingBadges: z,
     shouldOpenBadgeTooltip: q,
-    hideExampleButton: X = false,
-    interactive: Z = true
-  } = e, Q = (0, c.Ay)(i.id, null == I ? true : I.id), $ = (0, s.bG)([_.Ay], () => null != I ? _.Ay.getMember(I.id, i.id) : null), J = (0, h.lw)({
+    hideExampleButton: Z = false,
+    interactive: X = true
+  } = e, Q = (0, c.Ay)(i.id, null == I ? true : I.id), J = (0, s.bG)([_.Ay], () => null != I ? _.Ay.getMember(I.id, i.id) : null), $ = (0, h.lw)({
     pendingValue: D,
     userValue: null == i ? true : i.avatarDecoration,
-    guildValue: null == $ ? true : $.avatarDecoration,
+    guildValue: null == J ? true : J.avatarDecoration,
     guildId: null == I ? true : I.id
   }), {
     avatarSrc: ee,
@@ -69,7 +69,7 @@ function I(e) {
   } = (0, d.A)({
     userId: null == i ? true : i.id,
     guildId: null == I ? true : I.id,
-    avatarDecorationOverride: J,
+    avatarDecorationOverride: $,
     avatarOverride: P,
     size: o._3J.SIZE_80,
     showPending: true
@@ -134,8 +134,8 @@ function I(e) {
       pendingAvatar: P,
       pendingNickname: x,
       pendingGlobalName: L,
-      pendingBio: R,
-      pendingPronouns: w,
+      pendingBio: w,
+      pendingPronouns: R,
       pendingLegacyUsernameDisabled: k,
       pendingDisplayNameStyles: U,
       pendingPrimaryGuildId: G,
@@ -146,12 +146,12 @@ function I(e) {
     }), (0, r.jsx)(y.A, {
       user: i,
       hideMessageInput: K,
-      hideExampleButton: X
+      hideExampleButton: Z
     }), null != en && (0, r.jsx)(l.A, {
       skuId: en.skuId
     })]
   });
-  return Z ? ea : (0, r.jsx)("div", {
+  return X ? ea : (0, r.jsx)("div", {
     role: "img",
     "aria-label": v.intl.string(v.t.ayozFl),
     children: (0, r.jsx)(o.M1G, {

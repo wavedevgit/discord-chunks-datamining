@@ -38,7 +38,7 @@ let T = (0, Chunk64700.memo)(function(e) {
   } = (0, p.Ay)(), Y = (0, h.Ay)(), K = (0, E.S5)(null == (l = P.userStatus) ? true : l.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), W = null != (t = null == (T = P.userStatus) ? true : T.claimedTier) ? t : 0, q = P.config.rewards[W], z = (null == q ? true : q.type) === o.l.FRACTIONAL_PREMIUM, Q = (null == q ? true : q.type) === o.l.COLLECTIBLE, X = (null == q ? true : q.type) === o.l.VIRTUAL_CURRENCY, Z = null == q || null == (x = q.collectibleProduct) || null == (j = x.items) ? true : j[0], $ = (null == Z ? true : Z.type) === s.R.AVATAR_DECORATION ? Z : null;
+  }), W = null != (t = null == (T = P.userStatus) ? true : T.claimedTier) ? t : 0, q = P.config.rewards[W], z = (null == q ? true : q.type) === o.l.FRACTIONAL_PREMIUM, Q = (null == q ? true : q.type) === o.l.COLLECTIBLE, X = (null == q ? true : q.type) === o.l.VIRTUAL_CURRENCY, Z = null == q || null == (x = q.collectibleProduct) || null == (j = x.items) ? true : j[0], J = (null == Z ? true : Z.type) === s.R.AVATAR_DECORATION ? Z : null;
   (0, p.i4)(U, e => {
     let {
       height: t
@@ -49,7 +49,7 @@ let T = (0, Chunk64700.memo)(function(e) {
       i = V.current.getBoundingClientRect();
     D((r.top - n.top - i.height) / 2)
   });
-  let J = (0, u.Mw)(Y),
+  let $ = (0, u.Mw)(Y),
     ee = (0, i.useMemo)(() => null != P.config.cosponsorMetadata, [P]),
     et = (0, i.useMemo)(() => (0, O.tW)(P, O.fY.REWARD), [P]),
     en = w ? F + 8 : 0,
@@ -118,14 +118,14 @@ let T = (0, Chunk64700.memo)(function(e) {
       className: a()(N.kL, {
         [N.yo]: w
       }),
-      children: [null != B && Q && null != $ && (0, r.jsx)("div", {
+      children: [null != B && Q && null != J && (0, r.jsx)("div", {
         ref: V,
         className: N.FX,
         style: {
           top: R
         },
         children: (0, r.jsx)(g.A, {
-          avatarDecorationOverride: $,
+          avatarDecorationOverride: J,
           user: B,
           guildId: null,
           animateOnHover: !w
@@ -151,8 +151,8 @@ let T = (0, Chunk64700.memo)(function(e) {
         onError: () => ec(et.url)
       }), (0, r.jsx)("div", {
         className: a()(N.Lw, {
-          [N.en]: J,
-          [N.So]: !J
+          [N.en]: $,
+          [N.So]: !$
         })
       }), (0, r.jsx)("div", {
         ref: G,
@@ -179,9 +179,9 @@ let T = (0, Chunk64700.memo)(function(e) {
           })
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
-          color: J ? "text-muted" : "always-white",
+          color: $ ? "text-muted" : "always-white",
           style: {
-            opacity: J ? 1 : .75
+            opacity: $ ? 1 : .75
           },
           children: C.intl.format(C.t["kXVcV+"], {
             reward: q.name,

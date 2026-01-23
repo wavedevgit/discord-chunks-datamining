@@ -105,7 +105,7 @@ function m(e) {
     focusPath: A
   } = b, [I, S] = r.useState(false), [T, C] = r.useState(E), [{
     onItemFocusMemoizer: N,
-    onItemMouseEnterMemoizer: R
+    onItemMouseEnterMemoizer: w
   }] = r.useState(() => ({
     onItemFocusMemoizer: new s.Lp(e => () => {
       S(true), O({
@@ -119,7 +119,7 @@ function m(e) {
         path: e.split(d)
       })
     })
-  })), w = r.useCallback(e => {
+  })), R = r.useCallback(e => {
     if (!y.current) return;
     e.key === a.D$.ESCAPE && null != g && (e.stopPropagation(), e.preventDefault(), g());
     let n = f(e);
@@ -154,12 +154,12 @@ function m(e) {
     role: "menu",
     id: t,
     tabIndex: false,
-    onKeyDown: w,
+    onKeyDown: R,
     onFocus: P,
     onBlur: D,
     onMouseLeave: x,
     "aria-activedescendant": A.length > 0 ? (0, s.M4)(t, A.join(d)) : true
-  }), [t, w, P, D, x, A]), M = r.useCallback(e => {
+  }), [t, R, P, D, x, A]), M = r.useCallback(e => {
     let {
       path: n
     } = e;
@@ -185,9 +185,9 @@ function m(e) {
       id: (0, s.M4)(t, o),
       tabIndex: false,
       onFocus: i ? N.get(o) : () => {},
-      onMouseEnter: i ? R.get(o) : () => {}
+      onMouseEnter: i ? w.get(o) : () => {}
     })
-  }, [t, L, N, R]);
+  }, [t, L, N, w]);
   return r.useMemo(() => ({
     dispatch: v,
     getContainerProps: j,

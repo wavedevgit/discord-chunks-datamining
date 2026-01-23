@@ -80,7 +80,7 @@ let _ = Chunk64700.forwardRef(function(e, t) {
     title: y,
     error: b,
     titleId: O
-  } = n, v = f(n, ["children", "disabled", "className", "titleClassName", "tag", "required", "style", "title", "error", "titleId"]), [A] = l, I = i.useId(), S = i.useId(), T = null != O ? O : I, C = null != b ? S : true, [N, R] = i.useState(true), [w, P] = i.useState(true), D = true !== w;
+  } = n, v = f(n, ["children", "disabled", "className", "titleClassName", "tag", "required", "style", "title", "error", "titleId"]), [A] = l, I = i.useId(), S = i.useId(), T = null != O ? O : I, C = null != b ? S : true, [N, w] = i.useState(true), [R, P] = i.useState(true), D = true !== R;
   return (0, r.jsx)("div", {
     ref: A,
     className: null != _ ? _ : true,
@@ -91,8 +91,8 @@ let _ = Chunk64700.forwardRef(function(e, t) {
       errorId: C,
       error: null != b ? b : true,
       isFocused: N,
-      setIsFocused: R,
-      hasValue: w,
+      setIsFocused: w,
+      hasValue: R,
       setHasValue: P,
       children: (0, r.jsxs)("div", {
         className: D ? o.G : true,

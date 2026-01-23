@@ -30,7 +30,7 @@ let _ = Chunk64700.forwardRef(function(e, t) {
       S(new s.A(e))
     }
     C(false)
-  }, [E, m, y]), R = i.useCallback(async e => {
+  }, [E, m, y]), w = i.useCallback(async e => {
     if (null != b && null != E) {
       C(true);
       try {
@@ -43,14 +43,14 @@ let _ = Chunk64700.forwardRef(function(e, t) {
       }
       C(false)
     }
-  }, [E, b]), w = i.useCallback(async e => {
+  }, [E, b]), R = i.useCallback(async e => {
     null != v && (d.A.isPhoneReverification(E, y) ? await o.A.reverifyPhone(v, e, m) : await o.A.addPhone(v, e, m), null == n || n(), _())
   }, [n, _, v, m, E, y]);
   return null != v ? (0, r.jsx)(f.default, {
     onClose: _,
     transitionState: h,
     title: p.intl.string(p.t.ZtCDc2),
-    handleSubmit: w
+    handleSubmit: R
   }) : (0, r.jsx)(l.default, {
     onClose: _,
     transitionState: h,
@@ -58,7 +58,7 @@ let _ = Chunk64700.forwardRef(function(e, t) {
     working: T,
     validPhone: null != b,
     onAddPhone: N,
-    onVerifyPhone: R,
+    onVerifyPhone: w,
     layerContext: g
   })
 })

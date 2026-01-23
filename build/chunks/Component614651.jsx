@@ -2,10 +2,10 @@
 /** chunk id: 614651, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $p: () => J,
+  $p: () => $,
   Ay: () => en,
   IE: () => K,
-  Ys: () => $,
+  Ys: () => J,
   ac: () => Q,
   y2: () => ee
 }), require("./896048.js");
@@ -93,35 +93,35 @@ let K = {
   },
   z = (0, Chunk915089.Ld)(),
   q = (0, Chunk915089.Ld)(),
-  X = "1337",
-  Z = e => {
+  Z = "1337",
+  X = e => {
     let t = 0;
     return [(0, b.rh)(W(H({}, (0, O.Ay)({
-      channelId: X,
+      channelId: Z,
       content: G.intl.string(G.t.oZxkEq)
     })), {
       state: k.cmJ.SENT,
       id: "".concat(t++)
     })), (0, b.rh)(W(H({}, (0, O.Ay)({
-      channelId: X,
+      channelId: Z,
       content: (0, c.Mw)(e) ? G.intl.string(G.t["WGb/v7"]) : G.intl.string(G.t["62m4mz"])
     })), {
       state: k.cmJ.SENT,
       id: "".concat(t++)
     })), (0, b.rh)(W(H({}, (0, O.Ay)({
-      channelId: X,
+      channelId: Z,
       content: G.intl.string(G.t.a0Byo5)
     })), {
       state: k.cmJ.SENT,
       id: "".concat(t++)
     })), (0, b.rh)(W(H({}, (0, O.Ay)({
-      channelId: X,
+      channelId: Z,
       content: G.intl.string(G.t.bmwEWJ)
     })), {
       state: k.cmJ.SENT,
       id: "".concat(t++)
     })), (0, b.rh)(W(H({}, (0, O.Ay)({
-      channelId: X,
+      channelId: Z,
       content: G.intl.string(G.t["hK9QW/"])
     })), {
       state: k.cmJ.SENT,
@@ -142,14 +142,14 @@ let K = {
       })]
     }), (0, r.jsx)(D.Q, {})]
   }),
-  $ = () => G.intl.format(G.t.Jae48E, {
+  J = () => G.intl.format(G.t.Jae48E, {
     onClick: () => {
       (0, j.openUserSettings)(P.X.SYNC_FORCED_COLORS, {
         section: k.nc_.ACCESSIBILITY
       })
     }
   }),
-  J = () => G.intl.format(G.t["5LEQdc"], {
+  $ = () => G.intl.format(G.t["5LEQdc"], {
     onAccessibilityClick: () => {
       (0, j.openUserSettings)(P.X.ACCESSIBILITY_PANEL, {
         section: k.nc_.ACCESSIBILITY
@@ -157,9 +157,9 @@ let K = {
     }
   }),
   ee = () => {
-    let e = w.hH.useSetting(),
-      t = w.hD.useSetting(),
-      n = w.rs.useSetting(),
+    let e = R.hH.useSetting(),
+      t = R.hD.useSetting(),
+      n = R.rs.useSetting(),
       {
         theme: a,
         messageGroupSpacing: l
@@ -167,8 +167,8 @@ let K = {
         theme: N.A.theme,
         messageGroupSpacing: h.A.messageGroupSpacing
       })),
-      [d] = i.useState(() => Z(k.NJ8.DARK)),
-      [f] = i.useState(() => Z(k.NJ8.LIGHT)),
+      [d] = i.useState(() => X(k.NJ8.DARK)),
+      [f] = i.useState(() => X(k.NJ8.LIGHT)),
       p = t && n,
       _ = (0, c.Mw)(a) ? d : f;
     return (0, r.jsx)(u.M1G, {
@@ -248,7 +248,7 @@ class et extends Chunk64700.Component {
       label: G.intl.string(G.t.Ksh3ik),
       children: (0, r.jsx)(u.po8, {
         messageType: u.YCn.INFO,
-        children: (0, m.D)() ? (0, r.jsx)($, {}) : G.intl.string(G.t.AUMSZP)
+        children: (0, m.D)() ? (0, r.jsx)(J, {}) : G.intl.string(G.t.AUMSZP)
       })
     }) : (0, r.jsx)(u.nVY, {
       label: G.intl.string(G.t.Ksh3ik),
@@ -353,7 +353,7 @@ class et extends Chunk64700.Component {
     }), c = (0, r.jsx)(u.Text, {
       variant: "text-md/normal",
       className: V.fK,
-      children: (0, r.jsx)(J, {})
+      children: (0, r.jsx)($, {})
     });
     return (0, r.jsxs)(L.A, {
       title: G.intl.string(G.t["iHH+ky"]),
@@ -361,7 +361,7 @@ class et extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), B(this, "darkMessages", Z(k.NJ8.DARK)), B(this, "lightMessages", Z(k.NJ8.LIGHT)), B(this, "handleDisplayCompactAvatarsChanged", e => {
+    super(...e), B(this, "darkMessages", X(k.NJ8.DARK)), B(this, "lightMessages", X(k.NJ8.LIGHT)), B(this, "handleDisplayCompactAvatarsChanged", e => {
       d.Ay.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
@@ -373,36 +373,36 @@ class et extends Chunk64700.Component {
       let {
         value: t
       } = e;
-      w.hH.updateSetting(t === K.COMPACT), (0, _.AC)()
+      R.hH.updateSetting(t === K.COMPACT), (0, _.AC)()
     }), B(this, "handleUIDensityChange", e => {
       let {
         value: t
       } = e;
-      t !== l.NS.UNSET_UI_DENSITY && w.Xi.updateSetting(t)
+      t !== l.NS.UNSET_UI_DENSITY && R.Xi.updateSetting(t)
     })
   }
 }
 
 function en() {
-  let e = w.hH.useSetting(),
-    t = w.hD.useSetting(),
-    n = w.rs.useSetting(),
-    i = w.eh.useSetting(),
-    a = w.Xi.useSetting();
+  let e = R.hH.useSetting(),
+    t = R.hD.useSetting(),
+    n = R.rs.useSetting(),
+    i = R.eh.useSetting(),
+    a = R.Xi.useSetting();
   (0, f.Ay)(() => {
     (0, E.v)()
   });
   let s = (0, S.qo)(),
-    l = (0, o.cf)([N.A, R.Ay, h.A, T.default, g.A], () => {
+    l = (0, o.cf)([N.A, w.Ay, h.A, T.default, g.A], () => {
       var e, t;
       return {
         theme: N.A.theme,
         useForcedColors: h.A.useForcedColors,
-        useSystemTheme: R.Ay.useSystemTheme,
+        useSystemTheme: w.Ay.useSystemTheme,
         fontSize: h.A.fontSize,
         zoom: h.A.zoom,
         messageGroupSpacing: h.A.messageGroupSpacing,
-        displayCompactAvatars: R.Ay.displayCompactAvatars,
+        displayCompactAvatars: w.Ay.displayCompactAvatars,
         isStaff: null != (e = null == (t = T.default.getCurrentUser()) ? true : t.isStaff) && e,
         gradientPreset: g.A.gradientPreset
       }

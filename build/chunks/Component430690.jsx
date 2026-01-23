@@ -120,15 +120,15 @@ function N(e) {
       index: t
     }
   });
-  let R = A.activeSlide,
-    w = (0, _.A)(A.activeSlide),
-    P = null != (t = A.directionOverride) ? t : S(null != w ? C[w] : null, C[R]),
+  let w = A.activeSlide,
+    R = (0, _.A)(A.activeSlide),
+    P = null != (t = A.directionOverride) ? t : S(null != R ? C[R] : null, C[w]),
     {
       reducedMotion: D
     } = i.useContext(d.CZY),
     x = i.useContext(h.A),
-    L = C[R].impressionName,
-    j = O(y({}, C[R].impressionProperties), {
+    L = C[w].impressionName,
+    j = O(y({}, C[w].impressionProperties), {
       location_stack: N
     });
   x({
@@ -143,13 +143,13 @@ function N(e) {
     ref: M,
     width: k = 0,
     height: U = 0
-  } = (0, p.Ay)(R), G = y({}, I, A.springConfig, D.enabled ? {
+  } = (0, p.Ay)(w), G = y({}, I, A.springConfig, D.enabled ? {
     clamp: true
   } : null), V = (0, f.zhh)({
     width: null != (n = A.width) ? n : k,
     height: U,
     config: G
-  }, null == w ? "animate-never" : "respect-motion-settings"), F = (0, f.pnh)(R, {
+  }, null == R ? "animate-never" : "respect-motion-settings"), F = (0, f.pnh)(w, {
     value: 0,
     from: {
       value: 1
@@ -165,9 +165,9 @@ function N(e) {
       let {
         item: n
       } = t;
-      n === R && null != A.onSlideReady && A.onSlideReady(n)
+      n === w && null != A.onSlideReady && A.onSlideReady(n)
     }
-  }, null == w ? "animate-never" : "respect-motion-settings"), B = (0, c.A)(P), {
+  }, null == R ? "animate-never" : "respect-motion-settings"), B = (0, c.A)(P), {
     width: H,
     centered: Y = true
   } = A, W = u.Fr && !A.shouldUseMediaQueriesForSizing ? "100%" : V.width.to(e => "string" == typeof e ? e : Math.round(e)), K = u.Fr && !A.shouldUseMediaQueriesForSizing ? "100%" : V.height.to(e => Math.round(e)), z = u.Fr ? {} : Y ? {
@@ -177,7 +177,7 @@ function N(e) {
     transform: "scale(1.0, 1.0)"
   }, q = u.Fr ? {} : {
     overflow: null != (a = A.overflow) ? a : "hidden"
-  }, X = i.useMemo(() => ({
+  }, Z = i.useMemo(() => ({
     width: u.Fr && !A.shouldUseMediaQueriesForSizing ? "100%" : H
   }), [A.shouldUseMediaQueriesForSizing, H]);
   return (0, r.jsx)(o.animated.div, {
@@ -196,13 +196,13 @@ function N(e) {
         opacity: e.value.to(e => 1 - Math.abs(e))
       };
       return (0, r.jsx)(o.animated.div, {
-        ref: t === R ? M : null,
+        ref: t === w ? M : null,
         style: y({
           position: "absolute",
           display: E,
           flexDirection: "column",
           backfaceVisibility: "hidden"
-        }, X, z, D.enabled ? a : y({
+        }, Z, z, D.enabled ? a : y({
           left: e.value.to(T("left", B)),
           right: e.value.to(T("right", B))
         }, b && a)),

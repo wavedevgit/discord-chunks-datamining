@@ -80,15 +80,15 @@ module.exports = function(e) {
   }, n.render = function() {
     for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, s = e.customStyleMap, o = e.customStyleFn, d = e.editorState, h = e.editorKey, m = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), y = d.getSelection(), b = d.mustForceSelection(), O = d.getDecorator(), v = p(d.getDirectionMap()), A = E.getBlocksAsArray(), I = [], S = null, T = null, C = 0; C < A.length; C++) {
       var N = A[C],
-        R = N.getKey(),
-        w = N.getType(),
+        w = N.getKey(),
+        R = N.getType(),
         P = n(N),
         D = true,
         x = true,
         L = true;
       P && (D = P.component, x = P.props, L = P.editable);
-      var j = g || v.get(R),
-        M = c.encode(R, 0, 0),
+      var j = g || v.get(w),
+        M = c.encode(w, 0, 0),
         k = {
           contentState: E,
           block: N,
@@ -102,16 +102,16 @@ module.exports = function(e) {
           offsetKey: M,
           preventScroll: m,
           selection: y,
-          tree: d.getBlockTree(R)
+          tree: d.getBlockTree(w)
         },
-        U = t.get(w) || t.get("unstyled"),
+        U = t.get(R) || t.get("unstyled"),
         G = U.wrapper,
         V = U.element || t.get("unstyled").element,
         F = N.getDepth(),
         B = "";
       if (r && (B = r(N)), "li" === V) {
         var H = T !== G || null === S || F > S;
-        B = f(B, _(w, F, H, j))
+        B = f(B, _(R, F, H, j))
       }
       var Y = D || l,
         W = {
@@ -119,33 +119,33 @@ module.exports = function(e) {
           "data-block": true,
           "data-editor": h,
           "data-offset-key": M,
-          key: R
+          key: w
         };
       true !== L && (W = a({}, W, {
         contentEditable: L,
         suppressContentEditableWarning: true
       }));
       var K = u.createElement(V, W, u.createElement(Y, i({}, k, {
-        key: R
+        key: w
       })));
       I.push({
         block: K,
         wrapperTemplate: G,
-        key: R,
+        key: w,
         offsetKey: M
       }), S = G ? N.getDepth() : null, T = G
     }
     for (var z = [], q = 0; q < I.length;) {
-      var X = I[q];
-      if (X.wrapperTemplate) {
-        var Z = [];
-        do Z.push(I[q].block), q++; while (q < I.length && I[q].wrapperTemplate === X.wrapperTemplate);
-        var Q = u.cloneElement(X.wrapperTemplate, {
-          key: X.key + "-wrap",
-          "data-offset-key": X.offsetKey
-        }, Z);
+      var Z = I[q];
+      if (Z.wrapperTemplate) {
+        var X = [];
+        do X.push(I[q].block), q++; while (q < I.length && I[q].wrapperTemplate === Z.wrapperTemplate);
+        var Q = u.cloneElement(Z.wrapperTemplate, {
+          key: Z.key + "-wrap",
+          "data-offset-key": Z.offsetKey
+        }, X);
         z.push(Q)
-      } else z.push(X.block), q++
+      } else z.push(Z.block), q++
     }
     return u.createElement("div", {
       "data-contents": "true"

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C5: () => k,
-  CQ: () => R,
+  CQ: () => w,
   D6: () => W,
   DA: () => K,
   EG: () => P,
@@ -20,7 +20,7 @@ require.d(exports, {
   ss: () => N,
   wT: () => z,
   wt: () => U,
-  xf: () => w,
+  xf: () => R,
   yB: () => j
 }), require("./667532.js"), require("./321073.js"), require("./896048.js"), require("./801541.js"), require("./747238.js"), require("./812715.js");
 var Chunk64700 = require("./64700.js"),
@@ -72,8 +72,8 @@ let N = function(e, t) {
         return null == (e = p.A.getGuild(n)) ? true : e.name
       }),
       N = (0, s.bG)([h.default], () => h.default.getCurrentUser()),
-      R = (0, y.ki)(N),
-      w = (0, d.Ym)({
+      w = (0, y.ki)(N),
+      R = (0, d.Ym)({
         location: "useEmojiCategories"
       });
     return r.useMemo(() => {
@@ -109,7 +109,7 @@ let N = function(e, t) {
           t === v.s.GUILD && (d = {
             type: v.s.GUILD,
             guild: e,
-            isNitroLocked: !R && c && l === a.length,
+            isNitroLocked: !w && c && l === a.length,
             emojis: a,
             emojisDisabled: s
           }), null != d && (e.id === n ? u.unshift(d) : u.push(d))
@@ -169,16 +169,16 @@ let N = function(e, t) {
           isNitroLocked: false
         });
         return t
-      }, w && i ? [d] : [])
-    }, [S, t, n, e, R, A, T, c, o, f, a, w, i])
+      }, R && i ? [d] : [])
+    }, [S, t, n, e, w, A, T, c, o, f, a, R, i])
   },
-  R = () => c.Ay.getCategories().map(e => ({
+  w = () => c.Ay.getCategories().map(e => ({
     type: v.s.UNICODE,
     id: e,
     name: e,
     isNitroLocked: false
   })),
-  w = e => {
+  R = e => {
     let t = (null == e ? true : e.getGuildId()) != null;
     m.default.track(A.HAw.PREMIUM_PROMOTION_OPENED, {
       location_page: t ? A.liQ.GUILD_CHANNEL : A.liQ.DM_CHANNEL,

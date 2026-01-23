@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   V6: () => D,
-  rQ: () => R
+  rQ: () => w
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -183,7 +183,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     gradientColor: t,
     graphic: n,
@@ -200,9 +200,9 @@ function R(e) {
     headingId: A
   } = (0, g.k)(), {
     i18n: I
-  } = (0, _.G9)(), S = null != t, R = (0, f.Oy)(n), D = c ? R ? C : N : T, x = null != n && (0, r.jsx)("div", {
+  } = (0, _.G9)(), S = null != t, w = (0, f.Oy)(n), D = c ? w ? C : N : T, x = null != n && (0, r.jsx)("div", {
     className: s()(E.headerGraphic, {
-      [E.headerGraphicAnimated]: R
+      [E.headerGraphicAnimated]: w
     }),
     children: (0, r.jsx)("div", {
       className: E.headerGraphicContainer,
@@ -244,7 +244,7 @@ function R(e) {
             }), j]
           })
         })
-      }), (0, r.jsx)(w, {
+      }), (0, r.jsx)(R, {
         badge: i
       }), null != n && null != a && L, null != l && (0, r.jsx)(P, {
         subtitle: l
@@ -258,7 +258,7 @@ function R(e) {
   }) : M
 }
 
-function w(e) {
+function R(e) {
   let {
     badge: t
   } = e;
@@ -300,7 +300,7 @@ function D(e) {
     title: a,
     subtitle: s
   } = e, o = A(e, ["gradientColor", "graphic", "badge", "title", "subtitle"]);
-  return (0, r.jsx)(R, v(b({}, o), {
+  return (0, r.jsx)(w, v(b({}, o), {
     gradientColor: t,
     graphic: n,
     badge: i,

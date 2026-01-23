@@ -12,12 +12,12 @@ require.d(exports, {
   gp: () => y,
   i4: () => _,
   iK: () => b,
-  kc: () => R,
+  kc: () => w,
   kq: () => m,
   oK: () => g,
   oR: () => N,
   pY: () => E,
-  rE: () => w,
+  rE: () => R,
   uZ: () => I,
   vy: () => P,
   wU: () => v
@@ -345,7 +345,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   var t;
   let {
     searchContext: n,
@@ -383,7 +383,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     searchContext: t,
     searchAutocompleteSelectAction: n

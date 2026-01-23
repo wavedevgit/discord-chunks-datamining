@@ -3,12 +3,12 @@
 "use strict";
 let r, i;
 require.r(exports), require.d(exports, {
-  encryptAndStoreTokens: () => w,
+  encryptAndStoreTokens: () => R,
   getAnalyticsToken: () => O,
   getToken: () => v,
   hideToken: () => T,
   init: () => b,
-  removeAnalyticsToken: () => R,
+  removeAnalyticsToken: () => w,
   removeToken: () => N,
   setAnalyticsToken: () => A,
   setToken: () => I,
@@ -95,7 +95,7 @@ function I(e, t) {
 }
 
 function S(e, t) {
-  null != t && (p[t] = e), f ? w() : (i = r, _ = p, g())
+  null != t && (p[t] = e), f ? R() : (i = r, _ = p, g())
 }
 
 function T() {
@@ -111,11 +111,11 @@ function N(e) {
   return null != e && (t = p[e], delete p[e], delete _[e]), t === r && (r = null, i = null), g(), null != t
 }
 
-function R() {
+function w() {
   return N(l)
 }
 
-function w() {
+function R() {
   (null == u ? true : u.isEncryptionAvailable()) ? (null != r && (i = y(r)), _ = c(Object.entries(p).map(e => {
     let [t, n] = e;
     return [t, y(n)]

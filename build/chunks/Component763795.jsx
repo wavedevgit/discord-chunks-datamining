@@ -76,7 +76,7 @@ let b = e => {
       C = A === m.PremiumTypes.TIER_2;
     n = A === m.PremiumTypes.TIER_0 ? c.A : A === m.PremiumTypes.TIER_1 ? u.A : l.A;
     let N = (0, _.O)(),
-      R = null == N || null == (t = N.discount) ? true : t.amount;
+      w = null == N || null == (t = N.discount) ? true : t.amount;
     return (0, r.jsxs)("div", {
       "aria-hidden": true,
       className: a()({
@@ -96,7 +96,7 @@ let b = e => {
             })
           }), (S || T) && (0, r.jsx)(b, {
             isTier0: A === m.PremiumTypes.TIER_0,
-            discountAmount: T ? R : true
+            discountAmount: T ? w : true
           })]
         }), !i && (0, r.jsx)(s.s_y, {
           "data-migration-pending": true,

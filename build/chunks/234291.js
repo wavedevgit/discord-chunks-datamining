@@ -69,7 +69,7 @@ function O(e, t) {
           profileName: r,
           compressionMethod: i,
           compressedProfileOffset: s
-        } = R(e, n);
+        } = w(e, n);
       a.iccChunks || (a.iccChunks = []), a.iccChunks.push({
         offset: s,
         length: t - (s - n),
@@ -119,7 +119,7 @@ function N(e, t) {
   if (!(i < 2)) return t
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = 1,
     i = 1,
     a = (0, r.BD)(e, t);

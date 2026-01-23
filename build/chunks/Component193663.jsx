@@ -91,12 +91,12 @@ let E = function(e) {
     selectedClassName: T,
     innerClassName: C,
     wrapContent: N,
-    highlighted: R,
-    focusProps: w
+    highlighted: w,
+    focusProps: R
   } = e, P = m(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
   P.className = s()(P.className, d.kL, {
     [d.wH]: v,
-    [d.mr]: R,
+    [d.mr]: w,
     [null != T ? T : ""]: v,
     [d.vk]: !v && (null != I || null != b)
   }), P["aria-selected"] = null != (t = P["aria-selected"]) ? t : v;
@@ -140,7 +140,7 @@ let E = function(e) {
         }) : null]
       })]
     });
-  return null != I ? (0, r.jsx)(l.vN3, h(p({}, w), {
+  return null != I ? (0, r.jsx)(l.vN3, h(p({}, R), {
     children: (0, r.jsx)(o.N_, h(p({
       to: I,
       onClick: b
@@ -151,12 +151,12 @@ let E = function(e) {
     }))
   })) : null != b ? (0, r.jsx)(l.DUT, h(p({
     onClick: b,
-    focusProps: w
+    focusProps: R
   }, P), {
     role: "listitem",
     innerRef: n,
     children: x
-  })) : (0, r.jsx)(l.vN3, h(p({}, w), {
+  })) : (0, r.jsx)(l.vN3, h(p({}, R), {
     children: (0, r.jsx)("div", h(p({}, P), {
       role: "listitem",
       ref: n,

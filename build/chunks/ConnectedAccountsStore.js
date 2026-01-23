@@ -2,7 +2,7 @@
 /** chunk id: 962173, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -107,7 +107,7 @@ function N(e) {
     openid_params: r
   })
 }
-class R extends(r = Chunk311907.Ay.Store) {
+class w extends(r = Chunk311907.Ay.Store) {
   isJoining(e) {
     return E[e] || false
   }
@@ -142,8 +142,8 @@ class R extends(r = Chunk311907.Ay.Store) {
     return y.has(e)
   }
 }
-u(R, "displayName", "ConnectedAccountsStore");
-let w = new R(Chunk73153.h, {
+u(w, "displayName", "ConnectedAccountsStore");
+let R = new w(Chunk73153.h, {
   CONNECTION_OPEN: A,
   USER_CONNECTIONS_UPDATE: I,
   USER_CONNECTIONS_INTEGRATION_JOINING: S,

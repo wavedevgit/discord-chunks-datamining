@@ -30,17 +30,17 @@ let _ = 256,
   T = "\nattribute vec4 a_position;\nattribute vec2 a_texcoord;\nuniform mat4 u_normalMatrix;\nattribute vec3 a_vertexNormal;\n\nuniform mat4 u_matrix;\n\nvarying vec2 v_texcoord;\nvarying highp vec3 v_lighting;\n\nvoid main() {\n  // Multiply the position by the matrix.\n  gl_Position = u_matrix * a_position;\n\n  // Pass the texcoord to the fragment shader.\n  v_texcoord = a_texcoord;\n\n  highp vec3 ambientLight = vec3(0.4, 0.4, 0.4);\n  highp vec3 directionalLightColor = vec3(0.6, 0.6, 0.6);\n  highp vec3 directionalVector = normalize(vec3(0.0, 0.0, 1.0));\n\n  highp vec4 transformedNormal = u_normalMatrix * vec4(a_vertexNormal, 0.0);\n\n  highp float directional = max(dot(transformedNormal.xyz, directionalVector), 0.0);\n  v_lighting = ambientLight + (directionalLightColor * directional);\n}\n",
   C = "\nprecision mediump float;\n\nvarying vec2 v_texcoord;\nvarying highp vec3 v_lighting;\n\nuniform sampler2D u_texture;\n\nvoid main() {\n  highp vec4 texelColor = texture2D(u_texture, v_texcoord);\n  gl_FragColor = vec4(texelColor.rgb * v_lighting, texelColor.a);\n}\n",
   N = [false, false, false, false, .5, false, .5, false, false, false, .5, false, .5, .5, false, .5, false, false, false, false, .5, .5, false, .5, false, .5, .5, false, .5, .5, .5, false, .5, .5, .5, .5, false, .5, false, false, .5, .5, .5, .5, false, false, .5, .5, .5, .5, .5, .5, .5, false, false, false, false, .5, false, false, false, false, .5, false, false, .5, .5, false, false, .5, false, .5, false, false, false, false, false, .5, false, .5, false, false, false, .5, false, .5, .5, false, .5, false, .5, false, false, .5, .5, false, .5, false, .5, .5, false, .5, .5, .5, false, .5, .5, .5],
-  R = [0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0],
-  w = [0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
+  w = [0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0],
+  R = [0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
   P = e => {
     let t = new Float32Array(N);
     e.bufferData(e.ARRAY_BUFFER, t, e.STATIC_DRAW)
   },
   D = e => {
-    e.bufferData(e.ARRAY_BUFFER, new Float32Array(R), e.STATIC_DRAW)
+    e.bufferData(e.ARRAY_BUFFER, new Float32Array(w), e.STATIC_DRAW)
   },
   x = e => {
-    e.bufferData(e.ARRAY_BUFFER, new Float32Array(w), e.STATIC_DRAW)
+    e.bufferData(e.ARRAY_BUFFER, new Float32Array(R), e.STATIC_DRAW)
   };
 
 function L(e, t, n, r, o) {
@@ -99,7 +99,7 @@ function L(e, t, n, r, o) {
 function j(e) {
   let {
     emoji: t
-  } = e, [n, a] = i.useState(null), [s, A] = i.useState(null), I = i.useRef(new Image), [S, T] = i.useState(null), [C, N] = i.useState(false), R = i.useRef(0), w = i.useRef(0), P = d.g[f.P7.EMOJIS], D = (0, l.rdh)(P.primaryColor).hex(), x = i.useRef(E), j = i.useRef(y), M = (0, o.bG)([c.A], () => c.A.useReducedMotion), k = M ? 0 : m, U = M ? 0 : g, G = i.useRef(k), V = i.useRef(U), F = i.useRef(false), B = i.useRef(0), H = i.useRef(0);
+  } = e, [n, a] = i.useState(null), [s, A] = i.useState(null), I = i.useRef(new Image), [S, T] = i.useState(null), [C, N] = i.useState(false), w = i.useRef(0), R = i.useRef(0), P = d.g[f.P7.EMOJIS], D = (0, l.rdh)(P.primaryColor).hex(), x = i.useRef(E), j = i.useRef(y), M = (0, o.bG)([c.A], () => c.A.useReducedMotion), k = M ? 0 : m, U = M ? 0 : g, G = i.useRef(k), V = i.useRef(U), F = i.useRef(false), B = i.useRef(0), H = i.useRef(0);
   L(n, s, S, x, j);
   let Y = i.useCallback(() => {
     let e = null == s ? true : s.getContext("2d");
@@ -110,7 +110,7 @@ function j(e) {
   }, [t, Y, I]), i.useEffect(() => {
     let e = t => {
       let n = .001 * t,
-        r = n - w.current;
+        r = n - R.current;
       if (j.current += -V.current * r, x.current += -G.current * r, !F.current) {
         if (Math.abs(G.current) > k) {
           let e = G.current > 0 ? 1 : false;
@@ -121,9 +121,9 @@ function j(e) {
           V.current -= O * e * window.devicePixelRatio
         }
       }
-      w.current = n, R.current = requestAnimationFrame(e)
+      R.current = n, w.current = requestAnimationFrame(e)
     };
-    return e(0), () => cancelAnimationFrame(R.current)
+    return e(0), () => cancelAnimationFrame(w.current)
   }, [k, U]);
   let W = i.useCallback(e => {
       F.current = true, G.current = 0, V.current = 0, B.current = e.clientX, H.current = e.clientY

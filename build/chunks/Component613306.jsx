@@ -6,11 +6,11 @@ require.d(exports, {
   Dc: () => M,
   M9: () => P,
   NH: () => k,
-  QT: () => R,
+  QT: () => w,
   gn: () => j,
   sQ: () => L,
   ti: () => D,
-  wN: () => w,
+  wN: () => R,
   zT: () => N
 });
 var Chunk627968 = require("./627968.js");
@@ -58,7 +58,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     emoji: t
   } = e;
@@ -74,7 +74,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     text: t
   } = e;

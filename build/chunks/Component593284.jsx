@@ -98,9 +98,9 @@ function F(e) {
     guildId: a,
     channelId: s,
     role: o
-  } = e, c = i.useRef(null), u = (0, l.bG)([w.A], () => {
+  } = e, c = i.useRef(null), u = (0, l.bG)([R.A], () => {
     var e;
-    return null == (e = w.A.getGuild(a)) ? true : e.ownerId
+    return null == (e = R.A.getGuild(a)) ? true : e.ownerId
   }, [a]), p = (0, l.bG)([P.default], () => P.default.getUser(t.userId), [t.userId]), _ = (0, l.bG)([C.A], () => C.A.getChannel(s), [s]);
   return null == p || null == _ ? null : (0, r.jsx)(S.A, {
     targetElementRef: c,
@@ -158,8 +158,8 @@ function B(e) {
     null == (e = t.setPopoutRef) || e.call(t, null)
   });
   let f = (0, b.A)(a),
-    _ = (0, l.bG)([w.A], () => {
-      let e = w.A.getGuild(a);
+    _ = (0, l.bG)([R.A], () => {
+      let e = R.A.getGuild(a);
       return null == e ? null : (0, T.af)(e)
     }, [a]),
     h = (0, l.yK)([N.Ay, P.default], () => {
@@ -170,9 +170,9 @@ function B(e) {
         return null != (t = e.nick) ? t : D.Ay.getName(P.default.getUser(e.userId))
       }).value()
     }, [a, n, _]),
-    m = (0, l.bG)([R.A], () => {
+    m = (0, l.bG)([w.A], () => {
       let e = null != n ? n : _;
-      return null == e ? null : R.A.getRole(a, e)
+      return null == e ? null : w.A.getRole(a, e)
     }, [a, n, _]),
     y = null == n ? null : null == f ? true : f[n],
     O = i.useMemo(() => null != m ? h.map(e => (0, r.jsx)(F, {
@@ -216,7 +216,7 @@ function H(e) {
     inlinePreview: d = false
   } = e, {
     analyticsLocations: f
-  } = (0, m.Ay)(h.A.ROLE_MENTION), p = (0, l.bG)([_.A], () => _.A.roleStyle), g = (0, l.bG)([R.A], () => null == s || null == t ? null : R.A.getRole(s, t)), E = (0, I.jV)(s, g), y = !d && null != g && !(0, A.Qv)(g), b = y && "dot" === p, S = y && "username" === p, T = E && null != g ? g.colorStrings : null, C = i.useRef(null), N = e => (0, r.jsxs)(v.A, G(k({
+  } = (0, m.Ay)(h.A.ROLE_MENTION), p = (0, l.bG)([_.A], () => _.A.roleStyle), g = (0, l.bG)([w.A], () => null == s || null == t ? null : w.A.getRole(s, t)), E = (0, I.jV)(s, g), y = !d && null != g && !(0, A.Qv)(g), b = y && "dot" === p, S = y && "username" === p, T = E && null != g ? g.colorStrings : null, C = i.useRef(null), N = e => (0, r.jsxs)(v.A, G(k({
     ref: C,
     className: L.Dz,
     color: S ? g.color : null,
@@ -230,13 +230,13 @@ function H(e) {
       tooltip: false
     }), c]
   })), {
-    enabled: w
+    enabled: R
   } = V.getCurrentConfig({
     location: "2ec235_1"
   }, {
     autoTrackExposure: false
   });
-  return !w || d || null == n || null == s || null == t && "@everyone" !== a ? (0, r.jsx)(m.f5, {
+  return !R || d || null == n || null == s || null == t && "@everyone" !== a ? (0, r.jsx)(m.f5, {
     value: f,
     children: N()
   }) : (0, r.jsx)(m.f5, {

@@ -82,7 +82,7 @@ function k() {
   n.push(...i);
   let s = C.A.getStream();
   null != s && n.push(D({
-    type: w.$pd.STREAMING
+    type: R.$pd.STREAMING
   }, s));
   let l = new Set;
   o().forEach(M, e => {
@@ -90,14 +90,14 @@ function k() {
     null != t.application_id && (l.add(t.name), n.push(t))
   });
   let c = h.Ay.getVisibleGame(),
-    u = null != c && null != c.name && (l.has(c.name) || (0, y.v)(c, [...n, ...R.A.getRemoteActivities()])),
+    u = null != c && null != c.name && (l.has(c.name) || (0, y.v)(c, [...n, ...w.A.getRemoteActivities()])),
     d = null != c && c.isLauncher,
     f = null != I.A.getCurrentUserActiveStream(),
     p = u || d && !f;
   if (null != c && null != c.name && !p) {
     let t = T.A.getGameByName(c.name);
     n.push(D({
-      type: w.$pd.PLAYING,
+      type: R.$pd.PLAYING,
       name: c.name,
       application_id: null != (e = c.id) ? e : null == t ? true : t.id,
       timestamps: {
@@ -107,7 +107,7 @@ function k() {
   }
   let A = O.A.getActivity();
   null != A && n.push(D({
-    type: w.$pd.LISTENING
+    type: R.$pd.LISTENING
   }, A));
   let P = g.A.getCurrentHangStatus();
   if (null != P) {
@@ -119,7 +119,7 @@ function k() {
         location: "LocalActivityStore"
       });
     n.push({
-      type: w.$pd.HANG_STATUS,
+      type: R.$pd.HANG_STATUS,
       name: "Hang Status",
       state: "".concat(P, ":").concat(r),
       details: null == e ? true : e.status,
@@ -164,7 +164,7 @@ function B() {
   for (let [i, [a, s, o]] of Object.entries(M)) {
     var n, r;
     let c = null != (n = s.flags) ? n : 0,
-      u = (0, f.E)(s, (0, l.Lt)(null != (r = null == s ? true : s.flags) ? r : 0, w.jUm.INSTANCE), s.platform === w.yTV.EMBEDDED, (0, f.e)(s), o);
+      u = (0, f.E)(s, (0, l.Lt)(null != (r = null == s ? true : s.flags) ? r : 0, R.jUm.INSTANCE), s.platform === R.yTV.EMBEDDED, (0, f.e)(s), o);
     u !== c ? (e[i] = [a, L(D({}, s), {
       flags: u
     }), o], t = true) : e[i] = [a, s, o]
@@ -177,7 +177,7 @@ function H() {
 }
 class Y extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.A, I.A, S.A, d.Ay, C.A, E.A, T.A, g.A, h.Ay, N.A, R.A, O.A, A.A), this.syncWith([E.A, g.A], () => k())
+    this.waitFor(p.A, I.A, S.A, d.Ay, C.A, E.A, T.A, g.A, h.Ay, N.A, w.A, O.A, A.A), this.syncWith([E.A, g.A], () => k())
   }
   getActivities() {
     return j
@@ -189,7 +189,7 @@ class Y extends(r = Chunk311907.Ay.Store) {
     return this.findActivity(t => t.application_id === e)
   }
   getCustomStatusActivity() {
-    return this.findActivity(e => e.type === w.$pd.CUSTOM_STATUS)
+    return this.findActivity(e => e.type === R.$pd.CUSTOM_STATUS)
   }
   findActivity(e) {
     return j.find(e)

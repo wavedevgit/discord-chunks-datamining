@@ -231,7 +231,7 @@ let es = e => {
           align: "center"
         },
         shouldShow: true,
-        onRequestClose: () => l($.i.USER_DISMISS),
+        onRequestClose: () => l(J.i.USER_DISMISS),
         targetElementRef: e.targetElementRef
       };
       return i === u.M.MESSAGE_REQUEST_SETTINGS_COACH_MARK ? (0, r.jsxs)(r.Fragment, {
@@ -240,7 +240,7 @@ let es = e => {
           body: ee.intl.string(ee.t.apPgJG),
           actions: [{
             text: ee.intl.string(ee.t.LNoAQW),
-            onClick: () => l($.i.TAKE_ACTION)
+            onClick: () => l(J.i.TAKE_ACTION)
           }]
         })) : (0, r.jsx)(d.AM, ei(er({}, a), {
           title: ee.intl.string(ee.t.hRT8tc),
@@ -252,12 +252,12 @@ let es = e => {
               let t = (0, w.WJ)("MessageRequestCoachmark");
               (0, L.openUserSettings)(t ? P.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING : P.X.CONTENT_AND_SOCIAL_PANEL, {
                 section: Z.nc_.CONTENT_AND_SOCIAL,
-                scrollPosition: t ? true : J.d1.MESSAGE_REQUESTS_V2
-              }), l($.i.TAKE_ACTION)
+                scrollPosition: t ? true : $.d1.MESSAGE_REQUESTS_V2
+              }), l(J.i.TAKE_ACTION)
             }
           }, {
             text: ee.intl.string(ee.t.LNoAQW),
-            onClick: () => l($.i.USER_DISMISS),
+            onClick: () => l(J.i.USER_DISMISS),
             variant: "secondary"
           }]
         }))]

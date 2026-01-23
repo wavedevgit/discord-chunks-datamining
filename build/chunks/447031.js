@@ -39,33 +39,33 @@ async function O(e) {
       referrerId: C
     } = e,
     N = (0, h.A)(),
-    R = i.A.getChannel(l),
-    w = null == R ? true : R.getGuildId(),
-    P = null == w || "" === w,
+    w = i.A.getChannel(l),
+    R = null == w ? true : w.getGuildId(),
+    P = null == R || "" === R,
     D = s.default.getCurrentUser();
   if (null == D) returnfalse;
-  if (null == R || P && !R.isPrivate() || null == l) return Promise.resolve(false);
+  if (null == w || P && !w.isPrivate() || null == l) return Promise.resolve(false);
   let x = u.Ay.getCurrentEmbeddedActivity();
-  if ((null == x ? true : x.applicationId) != null && (t = r.A.getApplication(null == x ? true : x.applicationId)), a.A.getVoiceChannelId() === l && null != x && x.applicationId === n && (0, p.H)(x.location) === a.A.getVoiceChannelId()) return (0, E.A)(w, x.location), Promise.resolve(true);
+  if ((null == x ? true : x.applicationId) != null && (t = r.A.getApplication(null == x ? true : x.applicationId)), a.A.getVoiceChannelId() === l && null != x && x.applicationId === n && (0, p.H)(x.location) === a.A.getVoiceChannelId()) return (0, E.A)(R, x.location), Promise.resolve(true);
   let L = await (0, _.A)(n, l);
   if (!await (0, f.O)({
       applicationId: n,
       application: L,
-      channel: R,
+      channel: w,
       currentEmbeddedApplication: t,
       embeddedActivitiesManager: N,
       user: D
     })) returnfalse;
-  if (null != R) {
-    let e = (0, m.A)(R.id),
-      n = y.lk.includes(R.type);
+  if (null != w) {
+    let e = (0, m.A)(w.id),
+      n = y.lk.includes(w.type);
     if (e) {
       if (!await (0, g.A)({
-          channelId: R.id,
+          channelId: w.id,
           bypassChangeModal: null != t
         })) returnfalse
-    } else if (!(0, o.pE)(R) || !n) returnfalse
-  } else if (null == R) returnfalse;
+    } else if (!(0, o.pE)(w) || !n) returnfalse
+  } else if (null == w) returnfalse;
   return null != l && (0, d.A)(l), null != x && (0, c.rW)(x.location), await (0, c.su)({
     channelId: l,
     applicationId: n,

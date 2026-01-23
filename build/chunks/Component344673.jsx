@@ -1,7 +1,7 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 344673, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => T
+  A: () => E
 }), require("./896048.js"), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -54,7 +54,7 @@ let O = [{
       return t.toLocaleString()
     }
   }],
-  E = [{
+  T = [{
     id: "details",
     name: "Details",
     group: Chunk231643.fu.NONE,
@@ -134,18 +134,18 @@ let O = [{
     }
   }];
 
-function T() {
+function E() {
   let [e, t] = l.useState(""), n = l.useRef(null), r = (0, u.yK)([f.A], () => f.A.loggedTriggers), s = l.useMemo(() => r.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [r, e]), [c, d] = l.useState(true), x = s.find(e => e.key === c), {
     TabBar: g,
     renderSelectedTab: v
   } = (0, y.Ay)({
-    tabs: E
-  }, []), T = (0, u.bG)([f.A], () => f.A.trackTriggers), N = l.useCallback(e => {
+    tabs: T
+  }, []), E = (0, u.bG)([f.A], () => f.A.trackTriggers), N = l.useCallback(e => {
     h.h.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
-  }, []), w = T ? "Stop Tracking" : "Start Tracking";
+  }, []), w = E ? "Stop Tracking" : "Start Tracking";
   return (0, a.jsxs)("div", {
     ref: n,
     className: i()(S.nd, C.nd),
@@ -155,10 +155,10 @@ function T() {
         text: w,
         children: (0, a.jsx)(p.K0, {
           size: "sm",
-          variant: T ? "active" : "primary",
-          icon: T ? p.E$n : p.udU,
+          variant: E ? "active" : "primary",
+          icon: E ? p.E$n : p.udU,
           "aria-label": w,
-          onClick: () => N(!T)
+          onClick: () => N(!E)
         })
       }), (0, a.jsx)(p.IWV, {
         size: "sm",

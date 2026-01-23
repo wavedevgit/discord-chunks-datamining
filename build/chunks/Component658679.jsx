@@ -68,9 +68,9 @@ function b(e) {
     needsPaymentSource: T,
     inReverseTrial: C,
     onNext: N,
-    onPaymentSourceAdd: R
+    onPaymentSourceAdd: w
   } = e, {
-    application: w,
+    application: R,
     selectedPlan: P,
     hasAcceptedTerms: D,
     purchaseType: x,
@@ -103,7 +103,7 @@ function b(e) {
       text: U,
       type: "submit",
       "data-testid": "submitButton",
-      onClick: R
+      onClick: w
     })
   });
   if (T && !k) return (0, r.jsx)(o.m_, {
@@ -116,7 +116,7 @@ function b(e) {
       disabled: true
     })
   });
-  if ((0, s.Lt)(null != (t = null == w ? true : w.flags) ? t : 0, h.gfo.EMBEDDED) && M === c.$.LOADING) return (0, r.jsx)(o.m_, {
+  if ((0, s.Lt)(null != (t = null == R ? true : R.flags) ? t : 0, h.gfo.EMBEDDED) && M === c.$.LOADING) return (0, r.jsx)(o.m_, {
     text: g.intl.string(g.t.cjA5tj),
     children: (0, r.jsx)(l.Button, {
       variant: "active",

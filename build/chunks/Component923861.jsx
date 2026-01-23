@@ -66,19 +66,19 @@ function N(e, t) {
   }), e
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = w(e, t), Object.getOwnPropertySymbols)
+  if (a = R(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function w(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -91,7 +91,7 @@ let P = e => {
     emojiSize: a,
     onSelect: S,
     onSelectSoundmoji: C,
-    onInspect: w,
+    onInspect: R,
     surrogateCodePoint: P,
     getEmojiItemProps: D,
     getEmojiRowProps: x,
@@ -108,7 +108,7 @@ let P = e => {
     isBurstReaction: Y,
     inNitroLockedSection: W,
     handleScrollUpOnSectionCollapse: K
-  } = e, z = n(619508), q = n(404828), X = n(600003), Z = n(318121), Q = n(443336), $ = n(258901), J = n(135974), ee = n(8013), et = (0, u.Ay)(), en = _.Om.getState(), [er, ei] = i.useState(en.inspectedExpressionPosition), [ea, es] = (0, c.A)(null, 300), eo = i.useRef(null);
+  } = e, z = n(619508), q = n(404828), Z = n(600003), X = n(318121), Q = n(443336), J = n(258901), $ = n(135974), ee = n(8013), et = (0, u.Ay)(), en = _.Om.getState(), [er, ei] = i.useState(en.inspectedExpressionPosition), [ea, es] = (0, c.A)(null, 300), eo = i.useRef(null);
   i.useEffect(() => _.Om.subscribe(e => e.inspectedExpressionPosition, e => ei(e)), []), i.useEffect(() => {
     m.bW.loadIfNecessary()
   }, []);
@@ -132,8 +132,8 @@ let P = e => {
             ref: m,
             tabIndex: g,
             onFocus: E
-          } = h, y = R(h, ["ref", "tabIndex", "onFocus"]), b = er.rowIndex === p && er.columnIndex === _, O = () => {
-            L.current || j.current || w(e)
+          } = h, y = w(h, ["ref", "tabIndex", "onFocus"]), b = er.rowIndex === p && er.columnIndex === _, O = () => {
+            L.current || j.current || R(e)
           };
           return (0, i.createElement)("li", N(T({}, y), {
             key: t
@@ -171,7 +171,7 @@ let P = e => {
               collapsed: e.sectionCollapsedToThreeRows,
               guild_id: e.guildId
             }))
-          }, l = e.sectionCollapsedToThreeRows ? a ? (0, o.Mw)(et) ? $ : ee : (0, o.Mw)(et) ? z : q : a ? (0, o.Mw)(et) ? Q : J : (0, o.Mw)(et) ? X : Z, c = A.intl.string(e.sectionCollapsedToThreeRows ? A.t.NZI2Zk : A.t["/K2RDH"]);
+          }, l = e.sectionCollapsedToThreeRows ? a ? (0, o.Mw)(et) ? J : ee : (0, o.Mw)(et) ? z : q : a ? (0, o.Mw)(et) ? Q : $ : (0, o.Mw)(et) ? Z : X, c = A.intl.string(e.sectionCollapsedToThreeRows ? A.t.NZI2Zk : A.t["/K2RDH"]);
           return n({
             handleSelect: s,
             icon: (0, r.jsx)("img", {
@@ -200,7 +200,7 @@ let P = e => {
             allowAnimatedEmoji: k,
             selectedItemClassName: F,
             onSelect: S,
-            onInspect: w,
+            onInspect: R,
             channelGuildId: G,
             getEmojiItemProps: D,
             isMediumSize: ec,

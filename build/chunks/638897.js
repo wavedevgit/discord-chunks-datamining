@@ -60,7 +60,7 @@ function O(e, t) {
 }
 
 function v(e, t, n) {
-  var E, b, v, A, I, S, T, C, N, R, w;
+  var E, b, v, A, I, S, T, C, N, w, R;
   let {
     channel: P,
     type: D
@@ -86,7 +86,7 @@ function v(e, t, n) {
     state: x,
     onFocus: e => K.setSelectedIndex(e)
   }), B = null == (I = e.editorRef.current) ? true : I.getCurrentWord(), H = null == (S = e.editorRef.current) ? true : S.getSlateEditor(), Y = null;
-  null != H && (Y = null != (R = null == (w = c.VW.getSelectedParentOfType(H, _.mk)) ? true : w[0]) ? R : null);
+  null != H && (Y = null != (w = null == (R = c.VW.getSelectedParentOfType(H, _.mk)) ? true : R[0]) ? w : null);
   let W = O(y({}, e), {
       navigator: F,
       activeCommand: G,

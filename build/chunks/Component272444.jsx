@@ -4,10 +4,10 @@
 require.d(exports, {
   AX: () => G,
   JK: () => q,
-  Jx: () => R,
+  Jx: () => w,
   YD: () => M,
   _h: () => z,
-  bg: () => w,
+  bg: () => R,
   bj: () => P,
   c$: () => Y,
   ge: () => H,
@@ -77,7 +77,7 @@ function N(e, t) {
   }), e
 }
 
-function R(e) {
+function w(e) {
   let {
     icon: t,
     label: n,
@@ -109,7 +109,7 @@ function R(e) {
   }))
 }
 
-function w(e) {
+function R(e) {
   let {
     label: t,
     className: n
@@ -242,7 +242,7 @@ function M(e) {
         sublabel: c,
         onSelect: u
       } = e.data, d = a === s, f = s;
-      return s += 1, (0, r.jsx)(R, {
+      return s += 1, (0, r.jsx)(w, {
         icon: i,
         label: o,
         sublabel: c,
@@ -457,7 +457,7 @@ function Y(e) {
     }),
     ariaLabel: n.username
   } : {
-    label: (0, r.jsx)(w, {
+    label: (0, r.jsx)(R, {
       label: i
     }),
     ariaLabel: i
@@ -548,7 +548,7 @@ function q(e) {
     }),
     ariaLabel: n.username
   } : {
-    label: (0, r.jsx)(w, {
+    label: (0, r.jsx)(R, {
       label: i
     }),
     ariaLabel: i

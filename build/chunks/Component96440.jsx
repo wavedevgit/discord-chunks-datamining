@@ -32,13 +32,13 @@ function v(e) {
     customLink: S,
     referrerId: T,
     message: C
-  } = e, N = null == A || null == (t = A.bot) ? true : t.id, R = (0, c.Vr)({
+  } = e, N = null == A || null == (t = A.bot) ? true : t.id, w = (0, c.Vr)({
     context: {
       type: "contextless"
     },
     applicationId: A.id,
     botUserId: null == A || null == (n = A.bot) ? true : n.id
-  }), w = null != A && (0, l.Ag)(A), P = null != N && w && R, {
+  }), R = null != A && (0, l.Ag)(A), P = null != N && R && w, {
     analyticsLocations: D
   } = (0, s.Ay)(a.A.ACTIVITY_CUSTOM_LINK), x = (0, i.bG)([h.A], () => h.A.getChannelId()), L = (0, b.et)(x), j = (0, i.bG)([E.Ay], () => {
     if (null == x) return;

@@ -39,9 +39,9 @@ function I(e) {
     userIdsForRecommendation: I,
     cardSize: S = _.Y.SMALL,
     contextContainerClassName: T
-  } = e, [C, N] = i.useState(l().uniq(v)), [R, w] = i.useState(l().uniq(I));
+  } = e, [C, N] = i.useState(l().uniq(v)), [w, R] = i.useState(l().uniq(I));
   i.useEffect(() => {
-    w(e => {
+    R(e => {
       let t = l().uniq(I);
       return (0, d.v)(e, t) ? e : t
     })
@@ -52,7 +52,7 @@ function I(e) {
     })
   }, [v]);
   let P = (0, u.bG)([h.default], () => 1 === C.length ? h.default.getUser(C[0]) : true, [C]),
-    D = (0, u.yK)([h.default], () => R.map(e => h.default.getUser(e)).filter(m.Vq), [R]);
+    D = (0, u.yK)([h.default], () => w.map(e => h.default.getUser(e)).filter(m.Vq), [w]);
   return (0, r.jsxs)("div", {
     className: O.kL,
     children: ["no_icon" === t ? null : (0, r.jsx)(p.m_, {

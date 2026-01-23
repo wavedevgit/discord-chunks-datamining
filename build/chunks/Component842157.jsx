@@ -42,38 +42,38 @@ function M(e) {
   let {
     presenceActivity: t,
     remoteJoinPlatform: n
-  } = e, a = (0, R.z4)({
+  } = e, a = (0, w.z4)({
     platforms: null == t ? true : t.supported_platforms,
     currentPlatform: D.yTV.DESKTOP
   }), l = i.useMemo(() => a.map(e => {
     switch (e) {
-      case R.FL.MOBILE:
+      case w.FL.MOBILE:
         return (0, r.jsx)(c.u6o, {
           size: "xxs",
           color: "currentColor"
         });
-      case R.FL.ANDROID:
-        return (0, r.jsx)(w.x, {
+      case w.FL.ANDROID:
+        return (0, r.jsx)(R.x, {
           width: o.E.xxs,
           height: o.E.xxs,
           color: "currentColor"
         });
-      case R.FL.IOS:
+      case w.FL.IOS:
         return (0, r.jsx)(c.z0, {
           size: "xxs",
           color: "currentColor"
         });
-      case R.FL.PLAYSTATION:
+      case w.FL.PLAYSTATION:
         return (0, r.jsx)(c.Xj, {
           size: "xxs",
           color: "currentColor"
         });
-      case R.FL.XBOX:
+      case w.FL.XBOX:
         return (0, r.jsx)(c.YWd, {
           size: "xxs",
           color: "currentColor"
         });
-      case R.FL.VR:
+      case w.FL.VR:
         return (0, r.jsx)(s.VrHeadsetIcon, {
           size: "xxs",
           color: "currentColor"
@@ -107,8 +107,8 @@ function k(e) {
     message: o,
     application: b,
     applicationName: T,
-    channel: R,
-    header: w,
+    channel: w,
+    header: R,
     currentUserId: k,
     launchableAppId: U,
     isEmbeddedApplication: G,
@@ -121,11 +121,11 @@ function k(e) {
     currentUserPresenceActivity: K,
     hideParty: z,
     partyStatusElement: q,
-    analyticsLocations: X,
-    showAuthButton: Z,
+    analyticsLocations: Z,
+    showAuthButton: X,
     startAuthorization: Q,
-    accountLinkButtonRef: $,
-    renderAccountLinkUpsell: J
+    accountLinkButtonRef: J,
+    renderAccountLinkUpsell: $
   } = e, ee = null != (t = null == W || null == (n = W.timestamps) ? true : n.start) ? t : null == W ? true : W.created_at, et = i.useMemo(() => {
     var e;
     return null != ee ? (0, r.jsxs)("div", {
@@ -153,8 +153,8 @@ function k(e) {
     className: j.dS,
     color: "none",
     lineClamp: 2,
-    children: [en ? (0, O.YC)(o, T, R, k, false) : et, en ? null : ei]
-  }), [en, o, T, R, k, et, ei]), es = i.useMemo(() => (0, r.jsxs)("div", {
+    children: [en ? (0, O.YC)(o, T, w, k, false) : et, en ? null : ei]
+  }), [en, o, T, w, k, et, ei]), es = i.useMemo(() => (0, r.jsxs)("div", {
     className: j.pq,
     children: [ea, z || en ? null : q]
   }), [ea, z, en, q]), eo = !!U, el = (0, g.e)(b), {
@@ -186,22 +186,22 @@ function k(e) {
           userId: o.author.id,
           sessionId: W.session_id,
           applicationId: W.application_id,
-          channelId: R.id,
+          channelId: w.id,
           messageId: o.id,
           source: D.ThZ.MESSAGE_EMBED,
-          analyticsLocations: X,
+          analyticsLocations: Z,
           embedded: (0, C.A)(W, D.jUm.EMBEDDED),
           remotePartyId: null != eu ? null == (e = W.party) ? true : e.id : true
         }), (0, N.A)({
           type: D.UqL.JOIN,
           source: D.ThZ.MESSAGE_EMBED,
           userId: o.author.id,
-          guildId: R.guild_id,
-          channelId: R.id,
+          guildId: w.guild_id,
+          channelId: w.id,
           applicationId: W.application_id,
           partyId: null == (t = W.party) ? true : t.id,
           messageId: o.id,
-          analyticsLocations: X,
+          analyticsLocations: Z,
           remoteJoinPlatform: eu
         })
       }
@@ -217,7 +217,7 @@ function k(e) {
       onClick: () => {
         null != W && u.A.sendActivityInvite({
           type: D.xL.JOIN,
-          channelId: R.id,
+          channelId: w.id,
           activity: W,
           location: D.ThZ.MESSAGE_EMBED
         })
@@ -231,30 +231,30 @@ function k(e) {
       disabled: true
     } : null != V && (e = V, t = false);
     let r = [];
-    return null != e && (r.push(e), Z && t && (r.push({
+    return null != e && (r.push(e), X && t && (r.push({
       label: L.intl.string(L.t.lw71Nf),
       trackingArea: _.kY.CONNECT_ACCOUNT,
       onClick: () => {
         Q({
-          analyticsLocations: X
+          analyticsLocations: Z
         })
       },
       icon: c.A5T,
       iconButton: true,
-      buttonRef: $
+      buttonRef: J
     }), n = true)), {
       actions: r,
       hasAccountLinkButton: n
     }
-  }, [ec, ed, ef, ep, V, o.author.id, o.id, W, R.id, R.guild_id, X, eu, k, e_, Z, Q, $]), eg = eh.some(e => e.trackingArea === _.kY.CLOUD_PLAY);
-  (0, P.A)(eg, X);
+  }, [ec, ed, ef, ep, V, o.author.id, o.id, W, w.id, w.guild_id, Z, eu, k, e_, X, Q, J]), eg = eh.some(e => e.trackingArea === _.kY.CLOUD_PLAY);
+  (0, P.A)(eg, Z);
   let eE = i.useMemo(() => ep ? null : (0, r.jsx)(M, {
     presenceActivity: W,
     remoteJoinPlatform: eu
   }), [ep, W, eu]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.h, {
-      header: w,
+      header: R,
       title: T,
       staticBannerSrc: F,
       onClickBanner: B,
@@ -269,11 +269,11 @@ function k(e) {
         linkType: x.J.RICH_PRESENCE_INVITE,
         onView: Y,
         referrerId: o.author.id,
-        guildId: R.guild_id,
+        guildId: w.guild_id,
         channelId: o.channel_id,
         messageId: o.id
       },
       footer: eE
-    }), em ? J() : null]
+    }), em ? $() : null]
   })
 }

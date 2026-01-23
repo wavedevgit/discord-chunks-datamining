@@ -35,7 +35,7 @@ function C(e) {
     guild: n,
     onClose: C,
     scrollToPowerupCards: N
-  } = e, [R, w] = i.useState(true), P = i.useRef(false), D = (0, l.A)(() => Date.now()), {
+  } = e, [w, R] = i.useState(true), P = i.useRef(false), D = (0, l.A)(() => Date.now()), {
     analyticsLocations: x
   } = (0, c.Ay)(), L = i.useRef(null), j = i.useRef(null), M = i.useRef(null), k = i.useCallback(() => {
     null != M.current && null != j.current && j.current.scrollIntoViewNode({
@@ -119,7 +119,7 @@ function C(e) {
           }), (0, r.jsx)(m.A, {
             guild: n,
             closeLayer: G,
-            onCtaVisibilityChange: w
+            onCtaVisibilityChange: R
           }), (0, r.jsx)(y.A, {
             guild: n
           })]
@@ -150,7 +150,7 @@ function C(e) {
       })]
     }), (0, r.jsx)(A.A, {
       guild: n,
-      isVisible: !R,
+      isVisible: !w,
       closeLayer: G
     })]
   })

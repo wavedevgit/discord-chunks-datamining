@@ -43,8 +43,8 @@ let g = (e, t, n, r) => {
         paymentSourceType: T,
         hide: C,
         purchaseType: N,
-        productLine: R,
-        proratedAmount: w,
+        productLine: w,
+        proratedAmount: R,
         basePrice: P,
         currentSubscription: D,
         skuId: x,
@@ -62,7 +62,7 @@ let g = (e, t, n, r) => {
         purchaseType: N || f.VVm.SUBSCRIPTION,
         plan: y,
         premiumSubscription: null == D ? null : D,
-        productLine: R,
+        productLine: w,
         isGift: !!b,
         planGroup: k,
         isPrepaidPaymentSource: false
@@ -106,7 +106,7 @@ let g = (e, t, n, r) => {
           break;
         default:
           throw Error("Unexpected interval: ".concat(t))
-      } else if (N === f.VVm.ONE_TIME) switch (R) {
+      } else if (N === f.VVm.ONE_TIME) switch (w) {
         case f.EZt.COLLECTIBLES:
           B = G, F = b ? h.intl.format(h.t.Amdf8X, {
             paidURL: f.X7G.PAID_TERMS
@@ -144,7 +144,7 @@ let g = (e, t, n, r) => {
           throw Error("Unexpected interval: ".concat(t))
       } else {
         let e, r = (0, a.R)({
-          productLine: R,
+          productLine: w,
           purchaseType: f.VVm.SUBSCRIPTION,
           plan: y,
           premiumSubscription: null == D ? null : D,
@@ -164,7 +164,7 @@ let g = (e, t, n, r) => {
           paidURL: f.X7G.PAID_TERMS,
           contactLink: f.X7G.CONTACT,
           helpdeskArticle: l.A.getArticleURL(f.MVz.BILLING)
-        }) : M && R === f.EZt.BOOST && null != P ? h.intl.format(h.t["2nKy/0"], {
+        }) : M && w === f.EZt.BOOST && null != P ? h.intl.format(h.t["2nKy/0"], {
           price: (0, u.$g)(P.amount, P.currency),
           paidServiceTermsArticle: f.X7G.PAID_TERMS,
           contactUsArticle: f.X7G.CONTACT,
@@ -174,9 +174,9 @@ let g = (e, t, n, r) => {
           interval: c.Ay.formatInterval(null == y ? true : y.interval),
           cancelSubscriptionArticle: l.A.getArticleURL(f.MVz.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: l.A.getArticleURL(f.MVz.PAID_TERMS)
-        }) : null != w && null != P ? h.intl.format(h.t.Kcieh4, {
+        }) : null != R && null != P ? h.intl.format(h.t.Kcieh4, {
           primaryText: r,
-          proratedAmount: (0, u.$g)(w, P.currency),
+          proratedAmount: (0, u.$g)(R, P.currency),
           renewalAmount: (0, u.$g)(P.amount, P.currency),
           rateInterval: c.Ay.formatInterval(null == y ? true : y.interval),
           paidURL: f.X7G.PAID_TERMS,

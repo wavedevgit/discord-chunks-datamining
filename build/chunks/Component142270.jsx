@@ -37,7 +37,7 @@ let E = {
       balance: A
     } = (0, d.W)(), {
       isInTreatment: I
-    } = (0, l.uX)("BalanceWidgetMenu"), [S, T] = i.useState(f.k.DEFAULT), [C, N] = i.useState(false), [R, w] = i.useState(false), P = i.useRef(null), D = i.useCallback(() => {
+    } = (0, l.uX)("BalanceWidgetMenu"), [S, T] = i.useState(f.k.DEFAULT), [C, N] = i.useState(false), [w, R] = i.useState(false), P = i.useRef(null), D = i.useCallback(() => {
       let e = !C;
       e && null != y && (0, u.Y)({
         pageType: y,
@@ -64,8 +64,8 @@ let E = {
     }), [C, D, n, a]);
     return (0, r.jsxs)("div", {
       className: s()(g.kL, v, {
-        [g.R]: R,
-        [g.RK]: !R
+        [g.R]: w,
+        [g.RK]: !w
       }),
       children: [(0, r.jsx)(_.J, {
         pillRef: P,
@@ -78,8 +78,8 @@ let E = {
         showNotificationBadge: t
       }), I ? M : C && (0, r.jsx)("div", {
         className: s()(g.Ui, O, {
-          [g.R]: R,
-          [g.RK]: !R
+          [g.R]: w,
+          [g.RK]: !w
         }),
         ref: L,
         children: j

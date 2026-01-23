@@ -2,8 +2,8 @@
 /** chunk id: 923917, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => $,
-  q: () => X
+  A: () => J,
+  q: () => Z
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -86,14 +86,14 @@ function q(e, t) {
   }), e
 }
 
-function X(e) {
+function Z(e) {
   let {
     withTitleBar: t,
     isFullScreen: n
   } = e;
   return t && k.isPlatformEmbedded && !n
 }
-class Z extends(r = Chunk64700.Component) {
+class X extends(r = Chunk64700.Component) {
   componentDidMount() {
     let {
       guestWindow: e
@@ -141,7 +141,7 @@ class Z extends(r = Chunk64700.Component) {
     let {
       guestWindow: t
     } = this.props, n = t.document;
-    for (let t of (this._combokeys = (0, w.I)(n.documentElement), [E.VT, E.rR, g.D, ...null != (e = this.props.keybinds) ? e : []]))
+    for (let t of (this._combokeys = (0, R.I)(n.documentElement), [E.VT, E.rR, g.D, ...null != (e = this.props.keybinds) ? e : []]))
       if (t.comboKeysBindGlobal)
         for (let e of t.binds) this._combokeys.bindGlobal(e, (e, n) => ("function" == typeof t.action && t.action(e, n), false))
   }
@@ -162,10 +162,10 @@ class Z extends(r = Chunk64700.Component) {
       titleBarTheme: _,
       hideModals: g = false,
       appContext: E
-    } = this.props, y = X({
+    } = this.props, y = Z({
       withTitleBar: a,
       isFullScreen: r
-    }), O = n === H.f ? x.A : R.A;
+    }), O = n === H.f ? x.A : w.A;
     return (0, i.jsx)(u.Kd, {
       children: (0, i.jsx)(j.e, {
         windowKey: n,
@@ -222,7 +222,7 @@ class Z extends(r = Chunk64700.Component) {
     })
   }
 }
-W(Z, "defaultProps", {
+W(X, "defaultProps", {
   withTitleBar: true
 });
 let Q = Chunk64700.forwardRef(function(e, t) {
@@ -248,7 +248,7 @@ let Q = Chunk64700.forwardRef(function(e, t) {
       children: s
     })
   }),
-  $ = Chunk64700.forwardRef(function(e, t) {
+  J = Chunk64700.forwardRef(function(e, t) {
     var n;
     let {
       guestWindow: r,
@@ -275,7 +275,7 @@ let Q = Chunk64700.forwardRef(function(e, t) {
     return null == r ? null : (0, i.jsx)(h.WaV, {
       children: (0, i.jsx)(A.f5, {
         value: l,
-        children: (0, i.jsx)(Z, q(K({
+        children: (0, i.jsx)(X, q(K({
           ref: t
         }, e), {
           titleBarTheme: p,

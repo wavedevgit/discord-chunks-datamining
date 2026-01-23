@@ -82,20 +82,20 @@ let C = new Chunk626584.A("ChoosePaymentSourceType"),
     [Chunk652215.hes.IDEAL]: Chunk812745.Ay.Types.IDEAL,
     [Chunk652215.hes.CASH_APP]: Chunk812745.Ay.Types.CASH_APP
   },
-  R = 1e3,
-  w = "40c266_1";
+  w = 1e3,
+  R = "40c266_1";
 class P extends Chunk64700.PureComponent {
   componentDidMount() {
     var e;
     (0, u.xe)(), (null != (e = this.props.paymentRequestWallets) ? e : []).length > 0 && setTimeout(() => {
       this.considerPaymentRequestWalletsLoaded()
-    }, R)
+    }, w)
   }
   considerPaymentRequestWalletsLoaded() {
     var e;
     let t = null != (e = this.props.paymentRequestWallets) ? e : [];
     if (0 === t.length || !this.arePaymentRequestWalletsLoading()) return;
-    C.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(R, " ms"));
+    C.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(w, " ms"));
     let n = t.reduce((e, t) => T(I({}, e), {
       ["".concat(t, "Loaded")]: true
     }), {});
@@ -167,7 +167,7 @@ class P extends Chunk64700.PureComponent {
     }), E = [], y = [], A = true === o || this.arePaymentRequestWalletsLoading();
     if (l) E.push(...this.createPaymentButtons((0, f.J)({
       ipCountryCode: "ALL",
-      location: w
+      location: R
     }).countryPaymentMethods));
     else {
       let {
@@ -175,7 +175,7 @@ class P extends Chunk64700.PureComponent {
         remainingPaymentMethods: t
       } = (0, f.J)({
         ipCountryCode: o,
-        location: w
+        location: R
       });
       E.push(...this.createPaymentButtons(e)), y.push(...this.createPaymentButtons(t))
     }

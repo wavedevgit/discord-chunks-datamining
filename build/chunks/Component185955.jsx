@@ -80,9 +80,9 @@ let b = (0, Chunk915089.Ld)(),
       return null == t ? null : (0, r.jsx)(r.Fragment, {
         children: S(t)
       })
-    }, [S]), R = i.useCallback(e => {
+    }, [S]), w = i.useCallback(e => {
       null == l || l(e)
-    }, [l]), w = i.useCallback(e => e === A, [A]), P = i.useCallback(e => e, []), D = i.useCallback(() => {
+    }, [l]), R = i.useCallback(e => e === A, [A]), P = i.useCallback(e => e, []), D = i.useCallback(() => {
       null == l || l(null)
     }, [l]), x = i.useRef(null);
     return (0, p.A)(x, g._F.GUILD_TAG), (0, r.jsxs)(f.A, {
@@ -96,9 +96,9 @@ let b = (0, Chunk915089.Ld)(),
       }), (0, r.jsx)(s.Pw, {
         className: y.Lt,
         optionClassName: y.S0,
-        isSelected: w,
+        isSelected: R,
         options: I,
-        select: R,
+        select: w,
         renderLeading: T,
         renderTrailing: C,
         renderOptionValue: N,

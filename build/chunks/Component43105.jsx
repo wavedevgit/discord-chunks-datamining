@@ -92,9 +92,9 @@ function b(e) {
     position: S,
     caretConfig: T,
     scrollBehavior: C
-  } = e, N = E(e, ["title", "body", "badge", "graphic", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef", "position", "caretConfig", "scrollBehavior"]), R = i.useCallback((e, t) => {
+  } = e, N = E(e, ["title", "body", "badge", "graphic", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef", "position", "caretConfig", "scrollBehavior"]), w = i.useCallback((e, t) => {
     null == A || A(t)
-  }, [A]), w = i.useCallback(() => {
+  }, [A]), R = i.useCallback(() => {
     null == A || A("user:explicit")
   }, [A]), P = h({
     targetElementRef: N.targetElementRef,
@@ -102,7 +102,7 @@ function b(e) {
     hasVideo: N.hasVideo,
     position: S,
     caretConfig: T,
-    onRequestClose: R,
+    onRequestClose: w,
     gradientColor: v,
     scrollBehavior: C
   }, "edge" === N.alignmentStrategy ? {
@@ -116,7 +116,7 @@ function b(e) {
       ref: I,
       "data-mana-component": "popover",
       children: [(0, r.jsx)(d.q, {
-        onClick: w,
+        onClick: R,
         variant: null != v ? "color-mix" : true
       }), null != m && (0, r.jsx)("div", {
         className: s()(p.graphic, {

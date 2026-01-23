@@ -9,9 +9,9 @@ require.d(exports, {
   X8: () => T,
   aI: () => A,
   iu: () => g,
-  jB: () => R,
+  jB: () => w,
   kg: () => I,
-  pG: () => w,
+  pG: () => R,
   pb: () => y,
   zy: () => S
 });
@@ -205,12 +205,12 @@ function C(e, t) {
 function N(e, t) {
   return t === E ? e : O(e, y(e, t))
 }
-let R = _ ? function(e) {
+let w = _ ? function(e) {
     return BigInt(1) << BigInt(e)
   } : function(e) {
     return p.fromBit(e)
   },
-  w = _ ? function(e, t) {
+  R = _ ? function(e, t) {
     return Number(BigInt.asUintN(e, t))
   } : function(e, t) {
     return p.asUintN(e, t)

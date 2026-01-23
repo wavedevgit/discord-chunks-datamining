@@ -45,8 +45,8 @@ function g(e) {
       icon: (0, u.N)(g, e.icon)
     }))
   }, [g, null == T ? true : T.benefits]), {
-    openModal: R,
-    subscriptionPurchaseButtonState: w
+    openModal: w,
+    subscriptionPurchaseButtonState: R
   } = (0, d.A)({
     skuId: b,
     initialSubscribeForGuild: null != O ? O : true
@@ -58,12 +58,12 @@ function g(e) {
     onHeaderTitleClick: null != A ? A : y,
     onClose: y,
     footer: (0, r.jsx)(h.rc, {
-      onClick: R,
+      onClick: w,
       appId: g,
       subscriptionType: E,
       skuId: b,
       subscriptionPlan: S,
-      state: w
+      state: R
     }),
     children: (0, r.jsx)(m.D, {
       appId: g,

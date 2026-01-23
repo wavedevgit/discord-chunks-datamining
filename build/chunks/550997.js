@@ -4,7 +4,7 @@
 let r;
 require.r(exports), require.d(exports, {
   default: () => N,
-  renderChangelogMessageMarkup: () => R
+  renderChangelogMessageMarkup: () => w
 }), require("./747238.js"), require("./812715.js");
 var Chunk280230 = require("./280230.js"),
   a = require.n(Chunk280230),
@@ -126,7 +126,7 @@ let N = {
   getMessageRules: e => d({}, T(e))
 };
 
-function R(e, t, n) {
+function w(e, t, n) {
   return {
     hasSpoilerEmbeds: false,
     hasBailedAst: false,

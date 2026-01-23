@@ -68,8 +68,8 @@ async function B(e) {
     s = null != a && i.includes(a),
     l = false;
   if (s && null != r.roles && r.roles.length > 0) {
-    let e = R.default.getId(),
-      t = w.Ay.getMember(a, e),
+    let e = w.default.getId(),
+      t = R.Ay.getMember(a, e),
       i = new Set(null != (n = null == t ? true : t.roles) ? n : []);
     l = r.roles.some(e => !i.has(e.id))
   }
@@ -85,17 +85,17 @@ function Y(e) {
   let {
     skipExtensionCheck: a,
     analyticsLocations: o
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : H, R = (0, g.br)(e);
-  if (null != R && (R.type === m.I.INVITE || R.type === m.I.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), B(R), true);
-  if (null != R && (R.type === m.I.APP_DIRECTORY_PROFILE || R.type === m.I.APP_DIRECTORY_STOREFRONT || R.type === m.I.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : H, w = (0, g.br)(e);
+  if (null != w && (w.type === m.I.INVITE || w.type === m.I.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), B(w), true);
+  if (null != w && (w.type === m.I.APP_DIRECTORY_PROFILE || w.type === m.I.APP_DIRECTORY_STOREFRONT || w.type === m.I.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
     var i, a;
     null == t || t.preventDefault();
     let {
       code: s
-    } = R, {
+    } = w, {
       applicationId: o,
       skuId: l
-    } = R.type === m.I.APP_DIRECTORY_PROFILE || R.type === m.I.APP_DIRECTORY_STOREFRONT ? {
+    } = w.type === m.I.APP_DIRECTORY_PROFILE || w.type === m.I.APP_DIRECTORY_STOREFRONT ? {
       applicationId: s,
       skuId: true
     } : null != (i = (0, p.u)(s)) ? i : {
@@ -118,18 +118,18 @@ function Y(e) {
       t({
         tab: r.APPS,
         applicationId: o,
-        section: (0, b.A)(i, R.type === m.I.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
+        section: (0, b.A)(i, w.type === m.I.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
         skuId: l
       })
     })), true
   };
-  if (null != R && R.type === m.I.ACTIVITY_BOOKMARK) return e => {
+  if (null != w && w.type === m.I.ACTIVITY_BOOKMARK) return e => {
     var t, n;
     null == e || e.preventDefault();
     let {
       code: r,
       url: i
-    } = R, a = _.A.getApplication(r), f = new URL(i), p = null != (t = f.searchParams.get("referrer_id")) ? t : true, m = (0, d.A)(), {
+    } = w, a = _.A.getApplication(r), f = new URL(i), p = null != (t = f.searchParams.get("referrer_id")) ? t : true, m = (0, d.A)(), {
       currentChannelId: g,
       instanceId: E,
       isCurrentlyInInstance: y,
@@ -167,9 +167,9 @@ function Y(e) {
       }).catch(() => {}), true)
     }
   };
-  if (null != R && R.type === m.I.GUILD_PRODUCT) return e => {
+  if (null != w && w.type === m.I.GUILD_PRODUCT) return e => {
     null == e || e.preventDefault();
-    let [t, r] = R.code.split("-");
+    let [t, r] = w.code.split("-");
     return n.e("49607").then(n.bind(n, 811546)).then(e => {
       let {
         openGuildProductLink: n
@@ -177,9 +177,9 @@ function Y(e) {
       n(t, r)
     }), true
   };
-  if (null != R && R.type === m.I.SOCIAL_LAYER_STOREFRONT) return e => {
+  if (null != w && w.type === m.I.SOCIAL_LAYER_STOREFRONT) return e => {
     null == e || e.preventDefault();
-    let [t, r] = R.code.split("-");
+    let [t, r] = w.code.split("-");
     return Promise.resolve().then(n.bind(n, 44724)).then(e => {
       let {
         default: n
@@ -190,7 +190,7 @@ function Y(e) {
       })
     }), true
   };
-  if (null != R && R.type === m.I.QUESTS_EMBED && (0, A.s)({
+  if (null != w && w.type === m.I.QUESTS_EMBED && (0, A.s)({
       location: V.rE.EMBED_MOBILE
     }) && !(0, M.I)()) return e => {
     var t, r, a;
@@ -198,7 +198,7 @@ function Y(e) {
     null == e || e.preventDefault();
     let {
       search: l
-    } = null != (t = k.A.toURLSafe(R.url)) ? t : {};
+    } = null != (t = k.A.toURLSafe(w.url)) ? t : {};
     if (null != l) {
       let e = new URLSearchParams(l);
       s = null != (r = e.get("sort")) ? r : true, o = null != (a = e.get("filter")) ? a : true
@@ -209,17 +209,17 @@ function Y(e) {
       } = e;
       t({
         fromContent: i.u.QUEST_SHARE_LINK,
-        questId: R.code
+        questId: w.code
       })
     }), true
   };
   let {
-    host: w,
+    host: R,
     hostname: P,
     pathname: L,
     search: F,
     hash: Y
-  } = null != (t = k.A.toURLSafe(e)) ? t : {}, W = k.A.isDiscordHostname(null != P ? P : null) || k.A.isDiscordLocalhost(null != w ? w : null, null != P ? P : null);
+  } = null != (t = k.A.toURLSafe(e)) ? t : {}, W = k.A.isDiscordHostname(null != P ? P : null) || k.A.isDiscordLocalhost(null != R ? R : null, null != P ? P : null);
   if (W && ((null == L ? true : L.startsWith("/application-directory")) || (null == L ? true : L.startsWith("/discovery/applications")))) {
     let e = L.split("/"),
       t = null == L ? true : L.startsWith("/discovery/applications"),
@@ -260,7 +260,7 @@ function Y(e) {
       getOAuth2AuthorizeProps: t,
       openOAuth2ModalWithCreateGuildModal: r
     } = n(200330), i = t(e);
-    if (null != i) return e => (null == e || e.preventDefault(), null != R && R.type === m.I.APP_OAUTH2_LINK && f.Ay.trackWithMetadata(G.HAw.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
+    if (null != i) return e => (null == e || e.preventDefault(), null != w && w.type === m.I.APP_OAUTH2_LINK && f.Ay.trackWithMetadata(G.HAw.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
       application_id: i.clientId
     }), r(i), true)
   }

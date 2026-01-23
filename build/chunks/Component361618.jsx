@@ -84,8 +84,8 @@ function S(e, t) {
     var t;
     return null == (t = f.A.getGuild(null == e ? true : e.guildId)) ? true : t.premiumTier
   }), {
-    location: R
-  } = (0, l.p)(), w = (0, a.bG)([_.A, d.A], () => d.A.getChannel(_.A.getVoiceChannelId())), P = i.useCallback((e, n, r, i) => {
+    location: w
+  } = (0, l.p)(), R = (0, a.bG)([_.A, d.A], () => d.A.getChannel(_.A.getVoiceChannelId())), P = i.useCallback((e, n, r, i) => {
     if (e) {
       if (null != T) {
         let e = {
@@ -104,18 +104,18 @@ function S(e, t) {
           audioDeviceGuid: T.cameraSource.audioDeviceGuid
         }), o.A.setGoLiveSource(e)
       }
-    } else I(t, A(O({}, R), {
+    } else I(t, A(O({}, w), {
       object: m.ZSU.RADIO_ITEM,
       objectType: i
     }))
-  }, [t, R, S, T]);
+  }, [t, w, S, T]);
   if (null == e) return null;
   let D = n === g.jQ.PRESET_DOCUMENTS ? g.kn.FPS_30 : v,
     x = g.ce.map(e => {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.A)(g.jQ.PRESET_CUSTOM, b, t, C, N, w);
+      } = e, i = (0, c.A)(g.jQ.PRESET_CUSTOM, b, t, C, N, R);
       return (0, r.jsx)(s.iDA, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
@@ -128,7 +128,7 @@ function S(e, t) {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.A)(g.jQ.PRESET_CUSTOM, t, D, C, N, w);
+      } = e, i = (0, c.A)(g.jQ.PRESET_CUSTOM, t, D, C, N, R);
       return (0, r.jsx)(s.iDA, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),

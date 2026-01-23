@@ -65,9 +65,9 @@ let b = "M4.10585 5.3837L5.37864 4.11091L11.884 10.61632L10.6112 11.88912L4.1058
   T = [0, .1, .4, .6, .9, 1],
   C = [0, .1, .9, 1],
   N = [0, .1, .2, .5, .7, 1],
-  R = [0, .3, .5, .8, .9, 1];
+  w = [0, .3, .5, .8, .9, 1];
 
-function w(e, t, n) {
+function R(e, t, n) {
   let i = e.to({
     range: C,
     output: [t, t, n, n],
@@ -128,7 +128,7 @@ function P(e) {
     isHovered: G
   } = (0, s.M)({
     isDisabled: n
-  }), V = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_DEFAULT).spring(), B = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_SELECTED_DEFAULT).spring(), H = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_ACTIVE).spring(), Y = (0, d.r)(c.A.colors.SWITCH_BORDER_DEFAULT).spring(), W = (0, d.r)(c.A.colors.SWITCH_BORDER_SELECTED_DEFAULT).spring(), K = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_HOVER).spring(), z = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_SELECTED_HOVER).spring(), q = (0, d.r)(c.A.colors.SWITCH_BORDER_HOVER).spring(), X = (0, d.r)(c.A.colors.SWITCH_BORDER_SELECTED_HOVER).spring(), Z = (0, d.r)(c.A.colors.SWITCH_THUMB_ICON_DEFAULT).spring(), Q = (0, d.r)(c.A.colors.SWITCH_THUMB_ICON_ACTIVE).spring(), $ = (0, d.r)(c.A.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), J = (0, d.r)(c.A.colors.SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT).spring(), {
+  }), V = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_DEFAULT).spring(), B = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_SELECTED_DEFAULT).spring(), H = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_ACTIVE).spring(), Y = (0, d.r)(c.A.colors.SWITCH_BORDER_DEFAULT).spring(), W = (0, d.r)(c.A.colors.SWITCH_BORDER_SELECTED_DEFAULT).spring(), K = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_HOVER).spring(), z = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_SELECTED_HOVER).spring(), q = (0, d.r)(c.A.colors.SWITCH_BORDER_HOVER).spring(), Z = (0, d.r)(c.A.colors.SWITCH_BORDER_SELECTED_HOVER).spring(), X = (0, d.r)(c.A.colors.SWITCH_THUMB_ICON_DEFAULT).spring(), Q = (0, d.r)(c.A.colors.SWITCH_THUMB_ICON_ACTIVE).spring(), J = (0, d.r)(c.A.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.r)(c.A.colors.SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT).spring(), {
     state: ee,
     opacity: et
   } = (0, u.z)({
@@ -136,11 +136,11 @@ function P(e) {
       duration: S.enabled ? 200 : 300
     },
     opacity: n ? .5 : 1,
-    state: k ? t ? R[R.length - 2] : N[1] : +!!t
+    state: k ? t ? w[w.length - 2] : N[1] : +!!t
   }, "animate-always"), en = function(e) {
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [...e].reverse();
     return t ? ee.to({
-      range: R,
+      range: w,
       output: n
     }) : ee.to({
       range: N,
@@ -170,7 +170,7 @@ function P(e) {
           border: "1px solid",
           borderColor: ee.to({
             range: C,
-            output: [G ? q : Y, G ? q : Y, G ? X : W, G ? X : W],
+            output: [G ? q : Y, G ? q : Y, G ? Z : W, G ? Z : W],
             extrapolate: "clamp"
           })
         },
@@ -191,14 +191,14 @@ function P(e) {
           children: [(0, r.jsx)(o.animated.rect, {
             fill: ee.to({
               range: C,
-              output: [$, $, J, J]
+              output: [J, J, $, $]
             }),
             x: S.enabled ? 4 : en([4, 4, 2.5, 1, 2.5, 4]),
             y: S.enabled ? 4 : en([4, 7, 2.5, 7, 2.5, 4]),
             width: S.enabled ? 16 : en([16, 16, 19, 22, 19, 16]),
             height: S.enabled ? 16 : en([16, 10, 19, 10, 19, 16]),
             rx: S.enabled ? 8 : en([8, 5, 9.5, 5, 9.5, 8])
-          }), O && w(ee, Z, Q)]
+          }), O && R(ee, X, Q)]
         })
       })), (0, r.jsx)(_.A, {
         children: (0, r.jsx)("input", y(g({}, j), {

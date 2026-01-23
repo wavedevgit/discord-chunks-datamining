@@ -2,7 +2,7 @@
 /** chunk id: 761508, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => R
+  V: () => w
 }), require("./896048.js"), require("./747238.js"), require("./812715.js"), require("./65821.js");
 var r, i, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -259,7 +259,7 @@ m(N, "defaultProps", {
   look: "grey",
   disableItemStyles: false
 });
-class R extends(i = Chunk64700.Component) {
+class w extends(i = Chunk64700.Component) {
   render() {
     let {
       className: e,
@@ -324,4 +324,4 @@ class R extends(i = Chunk64700.Component) {
     })
   }
 }
-m(R, "Header", A), m(R, "Item", N), m(R, "Separator", I), m(R, "Panel", S)
+m(w, "Header", A), m(w, "Item", N), m(w, "Separator", I), m(w, "Panel", S)

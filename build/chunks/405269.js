@@ -5,7 +5,7 @@ require.d(exports, {
   Fe: () => O,
   K7: () => S,
   Tf: () => C,
-  Xm: () => R,
+  Xm: () => w,
   c_: () => m,
   i$: () => y,
   m_: () => h,
@@ -149,6 +149,6 @@ function N(e, t) {
   })
 }
 
-function R(e) {
+function w(e) {
   return null == e ? "" : v(e).format("YYYY-MM-DDTHH:mm")
 }

@@ -438,16 +438,16 @@ class b {
       }, {
         autoTrackExposure: false
       }).enabled ? e => (0, c.rh)(e) : e => E(this, e)).value(),
-      R = null;
-    if ((O || v) && null == A && this.ready) R = this.merge(N, O, true);
+      w = null;
+    if ((O || v) && null == A && this.ready) w = this.merge(N, O, true);
     else {
       let e = this._array.filter(e => e.state === f.cmJ.SENDING),
         t = this._array.filter(e => e.state === f.cmJ.SEND_FAILED),
         n = e.length > 0 || t.length > 0;
-      R = this.reset(N), !n || O || v || (null == A ? true : A.messageId) != null || (null == A ? true : A.offset) != null ? h.info("loadComplete: resetting state for channelId=".concat(this.channelId, ", sending.length=").concat(e.length)) : (t.length > 0 && (h.info("loadComplete: merging with SEND_FAILED messages for channelId=".concat(this.channelId)), R = R.merge(t)), e.length > 0 && (h.info("loadComplete: merging with SENDING messages for channelId=".concat(this.channelId)), R = R.merge(e)))
+      w = this.reset(N), !n || O || v || (null == A ? true : A.messageId) != null || (null == A ? true : A.offset) != null ? h.info("loadComplete: resetting state for channelId=".concat(this.channelId, ", sending.length=").concat(e.length)) : (t.length > 0 && (h.info("loadComplete: merging with SEND_FAILED messages for channelId=".concat(this.channelId)), w = w.merge(t)), e.length > 0 && (h.info("loadComplete: merging with SENDING messages for channelId=".concat(this.channelId)), w = w.merge(e)))
     }
-    let w = !C && R.cached && !T;
-    return R.mutate({
+    let R = !C && w.cached && !T;
+    return w.mutate({
       ready: true,
       loadingMore: false,
       jumpType: null != (p = null == A ? true : A.jumpType) ? p : s.US.ANIMATED,
@@ -456,14 +456,14 @@ class b {
       jumpedToPresent: null != (m = null == A ? true : A.present) && m,
       jumpTargetId: null != (g = null == A ? true : A.messageId) ? g : null,
       jumpTargetOffset: null != A && null != A.messageId && null != A.offset ? A.offset : 0,
-      jumpSequenceId: null == A || T ? R.jumpSequenceId : R.jumpSequenceId + 1,
+      jumpSequenceId: null == A || T ? w.jumpSequenceId : w.jumpSequenceId + 1,
       jumpReturnTargetId: null != (y = null == A ? true : A.returnMessageId) ? y : null,
-      hasMoreBefore: null == A && v ? R.hasMoreBefore : I,
-      hasMoreAfter: null == A && O ? R.hasMoreAfter : S,
+      hasMoreBefore: null == A && v ? w.hasMoreBefore : I,
+      hasMoreAfter: null == A && O ? w.hasMoreAfter : S,
       cached: C,
       hasFetched: e.hasFetched,
       error: false,
-      initialScrollSequenceId: w ? R.initialScrollSequenceId + 1 : R.initialScrollSequenceId
+      initialScrollSequenceId: R ? w.initialScrollSequenceId + 1 : w.initialScrollSequenceId
     })
   }
   addCachedMessages(e, t) {

@@ -2,13 +2,13 @@
 /** chunk id: 923531, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $h: () => R,
+  $h: () => w,
   Is: () => O,
   Mo: () => I,
   VE: () => C,
   aq: () => b,
   cV: () => g,
-  fq: () => w,
+  fq: () => R,
   hO: () => T,
   i6: () => E,
   jp: () => m,
@@ -88,12 +88,12 @@ let d = 60,
     s.Ay.fetchLinkedUsers()
   },
   N = () => Object.values(o.A.getLinkedUsers()).some(e => e.link_status === l.Ef.ACTIVE),
-  R = () => {
+  w = () => {
     let e = a.default.getCurrentUser(),
       t = N();
     return (null == e ? true : e.nsfwAllowed) === false && t
   },
-  w = (e, t) => t > 0 && 0 === e ? u.intl.formatToPlainString(c.default["L/Cj7S"], {
+  R = (e, t) => t > 0 && 0 === e ? u.intl.formatToPlainString(c.default["L/Cj7S"], {
     callCount: t
   }) : e > 0 && 0 === t ? u.intl.formatToPlainString(c.default["6X1F0i"], {
     messageCount: e

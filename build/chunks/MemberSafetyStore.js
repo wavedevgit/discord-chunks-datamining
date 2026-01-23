@@ -2,7 +2,7 @@
 /** chunk id: 266047, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => $
+  A: () => J
 }), require("./896048.js"), require("./321073.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -86,7 +86,7 @@ function N(e) {
   return b(t).updateMembersByMemberIds([n])
 }
 
-function R(e) {
+function w(e) {
   let {
     guildId: t,
     user: n
@@ -94,7 +94,7 @@ function R(e) {
   return b(t).removeMember(n.id)
 }
 
-function w(e) {
+function R(e) {
   let t = false,
     n = b(e.guildId);
   return "GUILD_ROLE_DELETE" === e.type && (t = n.removeRoleFromSearchState(e.roleId)), n.rebuildAllMembers() || t
@@ -282,7 +282,7 @@ function q(e) {
   return b(t).updateSearchState(n)
 }
 
-function X(e) {
+function Z(e) {
   let {
     guildId: t,
     memberSupplementals: n
@@ -290,7 +290,7 @@ function X(e) {
   return r && b(t).updateMembersByMemberIds(n.map(e => e.userId)), r
 }
 
-function Z(e) {
+function X(e) {
   var t, n, r, i, a, s;
   let o, l, {
       guildId: c,
@@ -398,7 +398,7 @@ class Q extends(r = Chunk311907.Ay.Store) {
   }
 }
 g(Q, "displayName", "MemberSafetyStore");
-let $ = new Q(Chunk73153.h, {
+let J = new Q(Chunk73153.h, {
   CONNECTION_OPEN: G,
   CONNECTION_OPEN_SUPPLEMENTAL: V,
   LOCAL_MESSAGES_LOADED: B,
@@ -410,9 +410,9 @@ let $ = new Q(Chunk73153.h, {
   GUILD_MEMBER_ADD: S,
   GUILD_MEMBER_UPDATE: S,
   GUILD_MEMBER_UPDATE_LOCAL: N,
-  GUILD_MEMBER_REMOVE: R,
-  GUILD_ROLE_UPDATE: w,
-  GUILD_ROLE_DELETE: w,
+  GUILD_MEMBER_REMOVE: w,
+  GUILD_ROLE_UPDATE: R,
+  GUILD_ROLE_DELETE: R,
   GUILD_MEMBER_PROFILE_UPDATE: M,
   GUILD_ROLE_MEMBER_REMOVE: P,
   GUILD_ROLE_MEMBER_ADD: P,
@@ -425,7 +425,7 @@ let $ = new Q(Chunk73153.h, {
   MEMBER_SAFETY_PAGINATION_UPDATE: K,
   MEMBER_SAFETY_PAGINATION_TOKEN_UPDATE: z,
   MEMBER_SAFETY_SEARCH_STATE_UPDATE: q,
-  FETCH_GUILD_MEMBER_SUPPLEMENTAL_SUCCESS: X,
-  MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: Z,
+  FETCH_GUILD_MEMBER_SUPPLEMENTAL_SUCCESS: Z,
+  MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: X,
   MEMBER_SAFETY_GUILD_MEMBER_UPDATE_BATCH: T
 })

@@ -76,16 +76,16 @@ function O(e) {
     caretConfig: T,
     layerContext: C,
     targetElementRef: N,
-    anchorRef: R,
-    positionKey: w,
+    anchorRef: w,
+    positionKey: R,
     ariaHidden: P = false
   } = e, D = y(e, ["children", "title", "body", "asset", "assetSize", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]), [x, L] = i.useState(null);
   i.useLayoutEffect(() => {
-    null != R && L(R.current)
-  }, [R]);
+    null != w && L(w.current)
+  }, [w]);
   let j = i.useCallback(e => {
-      null == R && L(e), (0, p.cZ)(N, e)
-    }, [N, R]),
+      null == w && L(e), (0, p.cZ)(N, e)
+    }, [N, w]),
     {
       tooltipId: M,
       isVisible: k,
@@ -122,7 +122,7 @@ function O(e) {
         })]
       })]
     }), [g, b, n, a, V, F]),
-    H = null != w ? w : "".concat((0, p.Xj)(null != n ? n : ""), "|").concat((0, p.Xj)(a)),
+    H = null != R ? R : "".concat((0, p.Xj)(null != n ? n : ""), "|").concat((0, p.Xj)(a)),
     Y = (0, _.j)({
       shouldShow: k
     });
@@ -134,7 +134,7 @@ function O(e) {
       isRendered: true,
       targetElementRef: U,
       targetElement: x,
-      anchorRef: R,
+      anchorRef: w,
       id: M,
       content: B,
       position: A,

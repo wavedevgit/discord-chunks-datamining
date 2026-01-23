@@ -55,7 +55,7 @@ function m(e) {
       location: n,
       quest: t
     })
-  }), [S, T] = i.useState(false), C = () => T(true), N = () => T(false), R = null != b ? b : f._B;
+  }), [S, T] = i.useState(false), C = () => T(true), N = () => T(false), w = null != b ? b : f._B;
   return (0, r.jsx)(l.R, {
     questOrQuests: t,
     questContent: n,
@@ -66,7 +66,7 @@ function m(e) {
       style: {
         maxHeight: n === s.uF.QUESTS_EMBED ? true : O.to({
           range: [0, 1],
-          output: [f.es, R]
+          output: [f.es, w]
         })
       },
       className: p.i,

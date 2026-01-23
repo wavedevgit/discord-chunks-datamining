@@ -2,13 +2,13 @@
 /** chunk id: 968898, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CS: () => w,
+  CS: () => R,
   GQ: () => P,
   O0: () => D,
   Pl: () => A,
   RE: () => S,
   X1: () => I,
-  we: () => R
+  we: () => w
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -72,7 +72,7 @@ function C(e, t) {
 }
 let N = 8e3;
 
-function R(e) {
+function w(e) {
   let {
     children: t,
     widgetId: n
@@ -111,7 +111,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     onClick: t
   } = e;

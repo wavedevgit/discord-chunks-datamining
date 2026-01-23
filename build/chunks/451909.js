@@ -162,10 +162,10 @@ let H = Chunk542664.A.RULES,
   K = /^<@&(\d+)>/,
   z = /^<@\$(\d+)>/,
   q = /^<#(\d+)>/,
-  X = /^<a?:(\w+):(\d+)>/,
-  Z = /(@everyone|@here|@Clyde)\b/,
+  Z = /^<a?:(\w+):(\d+)>/,
+  X = /(@everyone|@here|@Clyde)\b/,
   Q = /^[^\s]+@[^\s]+\.[^\s.]+/,
-  $ = {
+  J = {
     link: F(s().defaultRules.link),
     autolink: F(s().defaultRules.autolink),
     url: F(s().defaultRules.url),
@@ -174,7 +174,7 @@ let H = Chunk542664.A.RULES,
     rawUserMention: B(W),
     rawRoleMention: B(K),
     rawChannelMention: B(q),
-    rawEmoji: B(X),
+    rawEmoji: B(Z),
     mention: {
       match(e, t, n) {
         let r = n.split(" ").pop() + e;
@@ -184,7 +184,7 @@ let H = Chunk542664.A.RULES,
         if (!(i = G("@", e, t.users.map(e => U(M({}, e), {
             text: e.text.split("#")[0]
           })), "mention"))) return null;
-        let a = Z.exec(e);
+        let a = X.exec(e);
         if (null != a && i[0].length <= a[0].length) return null;
         if ("" === n) {
           let t = h.U.exec(e);
@@ -263,7 +263,7 @@ let H = Chunk542664.A.RULES,
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, p.VC)(t.textExclusions).exec(e) : null != Y.match ? Y.match(e, t, "") : null
     })
   },
-  J = {
+  $ = {
     inlineCode: F(H.inlineCode),
     codeBlock: F(H.codeBlock),
     mention: {
@@ -282,7 +282,7 @@ let H = Chunk542664.A.RULES,
         });
         if (r) {
           var c;
-          let e = null != (c = w.Ay.getNickname(null == a ? true : a.id, s, o)) ? c : P.Ay.getGlobalName(o);
+          let e = null != (c = R.Ay.getNickname(null == a ? true : a.id, s, o)) ? c : P.Ay.getGlobalName(o);
           return {
             content: null != e ? "@".concat(e) : "@".concat(l)
           }
@@ -352,7 +352,7 @@ let H = Chunk542664.A.RULES,
       }
     },
     emoji: {
-      match: s().anyScopeRegex(X),
+      match: s().anyScopeRegex(Z),
       parse(e, t, n) {
         let [r, i, a] = e, {
           guild: s
@@ -397,12 +397,12 @@ let H = Chunk542664.A.RULES,
     }),
     text: M({}, Y)
   };
-[$, J].forEach(e => {
+[J, $].forEach(e => {
   Object.keys(e).forEach((t, n) => {
     e[t].order = n
   })
 });
-let ee = s().parserFor($),
+let ee = s().parserFor(J),
   et = /(?:<a?:\w+:(\d+)>)|:(?:([^\s:]+?)(?:::skin-tone-\d)?:)/g;
 
 function en(e, t, n) {
@@ -544,7 +544,7 @@ function eo(e, t, n) {
   let r = E.A.getChannel(t),
     a = null != r ? r.getGuildId() : null,
     o = null != a ? A.A.getGuild(a) : null,
-    l = n ? J : i().omit(J, ["spoiler", "timestamp"]),
+    l = n ? $ : i().omit($, ["spoiler", "timestamp"]),
     c = n ? es : u.Ay.translateSurrogatesToInlineEmoji,
     d = s().parserFor(l),
     f = {
@@ -566,7 +566,7 @@ let el = {
         validNonShortcutEmojis: []
       };
     return i.content = ei(i.content, r, (t, n) => {
-      R.Ay.isEmojiPremiumLocked({
+      w.Ay.isEmojiPremiumLocked({
         emoji: t,
         channel: e,
         intention: x.b_.CHAT

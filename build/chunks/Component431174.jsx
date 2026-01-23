@@ -69,7 +69,7 @@ let T = 24,
   C = 24,
   N = 20;
 
-function R(e) {
+function w(e) {
   let {
     percentage: t,
     label: n,
@@ -145,7 +145,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     percentage: t,
     shouldAnimate: n
@@ -216,7 +216,7 @@ function D(e) {
       [O.EK]: i !== g.CQ.LIST,
       [O.wH]: c
     }),
-    children: [a ? (0, r.jsx)(w, {
+    children: [a ? (0, r.jsx)(R, {
       percentage: t.votesPercentage,
       shouldAnimate: p
     }) : null, null != t.pollMedia.emoji && (0, r.jsx)(E.Fb, {
@@ -230,7 +230,7 @@ function D(e) {
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(o.s, {
       children: b.intl.string(b.t["8DAM+5"])
-    }), a && (0, r.jsx)(R, {
+    }), a && (0, r.jsx)(w, {
       percentage: t.votesPercentage,
       label: t.votes,
       canShowVoterDetails: l,

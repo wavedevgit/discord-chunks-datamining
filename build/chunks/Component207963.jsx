@@ -88,10 +88,10 @@ let C = e => {
     return null != e && e.state !== d.m.FAILED && (e.data.interactionType === o.G4.MESSAGE_COMPONENT && e.data.componentId === t.id ? r = y.BB.LOADING : C(t) && (r = y.BB.DISABLED)), n && C(t) && (r = y.BB.DISABLED), r
   };
 
-function R(e) {
+function w(e) {
   return "app-widget-".concat(e.applicationId)
 }
-let w = e => {
+let R = e => {
   let t = h.A.getChannel(e),
     n = (0, a.bG)([g.A], () => (null == t ? true : t.guild_id) == null || g.A.canChatInGuild(t.guild_id), [t]),
     r = (0, a.bG)([p.A], () => (null == t ? true : t.guild_id) != null && p.A.isLurking(t.guild_id), [t]),
@@ -133,7 +133,7 @@ function D(e, t, n, r) {
   var s;
   let o = (0, a.bG)([O.A], () => O.A.getInteractionComponentState(e.id, n.id)),
     l = (0, a.bG)([u.Ay], () => u.Ay.getInteraction(e), [e]),
-    c = w(e.channel_id) || t,
+    c = R(e.channel_id) || t,
     {
       error: d,
       validate: p
@@ -229,7 +229,7 @@ function k(e) {
     };
     if (null != s) return {
       useComponentState: L("ApplicationWidget"),
-      containerId: R(s),
+      containerId: w(s),
       applicationWidget: s,
       validators: o,
       validationErrors: l,

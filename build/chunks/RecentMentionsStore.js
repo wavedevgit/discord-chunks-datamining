@@ -50,8 +50,8 @@ function T(e) {
 }
 let C = "recentMentionFilterSettings",
   N = [],
-  R = {},
   w = {},
+  R = {},
   P = false,
   D = true,
   x = Chunk506774.w.get(C, {
@@ -64,8 +64,8 @@ let C = "recentMentionFilterSettings",
   M = false;
 
 function k(e) {
-  R = {}, e.forEach(e => {
-    null == R[e.getChannelId()] && (R[e.getChannelId()] = 0), R[e.getChannelId()]++
+  w = {}, e.forEach(e => {
+    null == w[e.getChannelId()] && (w[e.getChannelId()] = 0), w[e.getChannelId()]++
   })
 }
 
@@ -75,9 +75,9 @@ function U(e) {
     deletedMessages: n
   } = e;
   null != t && t.forEach(e => {
-    null == R[e.getChannelId()] && (R[e.getChannelId()] = 0), R[e.getChannelId()]++
+    null == w[e.getChannelId()] && (w[e.getChannelId()] = 0), w[e.getChannelId()]++
   }), null != n && n.forEach(e => {
-    null != R[e.getChannelId()] && (R[e.getChannelId()] = Math.max(0, R[e.getChannelId()] - 1))
+    null != w[e.getChannelId()] && (w[e.getChannelId()] = Math.max(0, w[e.getChannelId()] - 1))
   })
 }
 
@@ -85,7 +85,7 @@ function G(e) {
   let {
     guildId: t
   } = e;
-  P = true, null == t && x.guildFilter === I.KE7.THIS_SERVER && Z({
+  P = true, null == t && x.guildFilter === I.KE7.THIS_SERVER && X({
     guildFilter: I.KE7.ALL_SERVERS
   })
 }
@@ -127,8 +127,8 @@ function B(e) {
   } = e, i = a().map(n, V);
   U({
     addedMessages: i
-  }), r ? N = N.concat(i) : (N = i, w = {}), a().forEach(i, e => {
-    w[e.id] = true
+  }), r ? N = N.concat(i) : (N = i, R = {}), a().forEach(i, e => {
+    R[e.id] = true
   }), P = false, D = t, j = (0, l.tB)(), L = true
 }
 
@@ -173,14 +173,14 @@ function W(e) {
     })) returnfalse;
   let i = Y(n, t);
   if (null == i) returnfalse;
-  (N = N.slice()).unshift(i), w[i.id] = true, U({
+  (N = N.slice()).unshift(i), R[i.id] = true, U({
     addedMessages: [i]
   })
 }
 
 function K(e) {
   let t = e.message.id;
-  if (null == t || null == w[t]) returnfalse;
+  if (null == t || null == R[t]) returnfalse;
   let n = a().findIndex(N, e => {
       let {
         id: n
@@ -192,8 +192,8 @@ function K(e) {
 }
 
 function z(e) {
-  if (null == w[e]) returnfalse;
-  delete w[e], U({
+  if (null == R[e]) returnfalse;
+  delete R[e], U({
     deletedMessages: a().filter(N, t => {
       let {
         id: n
@@ -215,23 +215,23 @@ function q(e) {
   return z(t)
 }
 
-function X(e) {
+function Z(e) {
   let {
     ids: t
   } = e;
   a().forEach(t, z)
 }
 
-function Z(e) {
+function X(e) {
   let t = T({}, x);
   x = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), x), o.w.set(C, x);
   let n = (e, n) => t[e] !== x[e] && x[e] === n,
     r = n("guildFilter", I.KE7.THIS_SERVER) || n("everyoneFilter", false) || n("roleFilter", false);
-  w = {};
+  R = {};
   let i = [];
   r && N.forEach(e => {
     let t = Y(e);
-    null != t && (i.push(t), w[t.id] = true)
+    null != t && (i.push(t), R[t.id] = true)
   }), k(N = i), 0 === N.length && (L = false)
 }
 
@@ -240,17 +240,17 @@ function Q() {
   L = false
 }
 
-function $() {
-  N = [], w = {}, L = false, M = false, R = {}
+function J() {
+  N = [], R = {}, L = false, M = false, w = {}
 }
 
-function J(e) {
+function $(e) {
   let {
     guild: t
   } = e, n = [];
   N = a().filter(N, e => {
     let r = g.A.getChannel(e.channel_id);
-    return null != r && r.getGuildId() !== t.id || (delete w[e.id], n.push(e), false)
+    return null != r && r.getGuildId() !== t.id || (delete R[e.id], n.push(e), false)
   }), U({
     deletedMessages: n
   })
@@ -266,13 +266,13 @@ function et(e) {
   let {
     channel: t
   } = e, n = [];
-  N = a().filter(N, e => e.channel_id !== t.id || (delete w[e.id], n.push(e), false)), U({
+  N = a().filter(N, e => e.channel_id !== t.id || (delete R[e.id], n.push(e), false)), U({
     deletedMessages: n
   })
 }
 
 function en(e) {
-  $()
+  J()
 }
 
 function er(e) {
@@ -282,7 +282,7 @@ function er(e) {
   U({
     deletedMessages: N.slice(t)
   });
-  for (let e = t; e < N.length; ++e) delete w[N[e].id];
+  for (let e = t; e < N.length; ++e) delete R[N[e].id];
   N.length > (N = N.slice(0, t)).length && (D = true)
 }
 
@@ -306,7 +306,7 @@ class ea extends(r = Chunk311907.Ay.Store) {
     return L || N.length > 0 ? N.filter(F) : null
   }
   hasMention(e) {
-    return w[e]
+    return R[e]
   }
   get loading() {
     return P
@@ -327,11 +327,11 @@ class ea extends(r = Chunk311907.Ay.Store) {
     return M
   }
   get mentionCountByChannel() {
-    return R
+    return w
   }
   getMentionCountForChannel(e) {
     var t;
-    return null != (t = R[e]) ? t : 0
+    return null != (t = w[e]) ? t : 0
   }
 }
 S(ea, "displayName", "RecentMentionsStore");
@@ -339,17 +339,17 @@ let es = new ea(Chunk73153.h, {
   LOAD_RECENT_MENTIONS: G,
   LOAD_RECENT_MENTIONS_SUCCESS: B,
   LOAD_RECENT_MENTIONS_FAILURE: H,
-  SET_RECENT_MENTIONS_FILTER: Z,
+  SET_RECENT_MENTIONS_FILTER: X,
   CLEAR_MENTIONS: en,
   TRUNCATE_MENTIONS: er,
   CHANNEL_SELECT: Q,
-  CONNECTION_OPEN: $,
-  GUILD_DELETE: J,
+  CONNECTION_OPEN: J,
+  GUILD_DELETE: $,
   MESSAGE_CREATE: W,
   MESSAGE_UPDATE: K,
   MESSAGE_DELETE: q,
   RECENT_MENTION_DELETE: q,
-  MESSAGE_DELETE_BULK: X,
+  MESSAGE_DELETE_BULK: Z,
   CHANNEL_DELETE: et,
   THREAD_DELETE: et,
   RELATIONSHIP_ADD: ee,

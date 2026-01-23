@@ -1,7 +1,7 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 748319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => e6,
+  A: () => e7,
   g: () => e0
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
@@ -139,9 +139,9 @@ function eQ(e, t) {
 let eY = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk397927.euF,
   eJ = 2.5 * Chunk927813.A.Millis.SECOND,
   eX = 2 * Chunk927813.A.Millis.MINUTE,
-  eZ = 5 * Chunk927813.A.Millis.SECOND;
+  e$ = 5 * Chunk927813.A.Millis.SECOND;
 
-function e$(e) {
+function eZ(e) {
   let {
     ref: t,
     speaking: n,
@@ -156,9 +156,9 @@ function e$(e) {
     nameplate: x,
     avatarDecoration: f,
     "data-jump-section": b
-  } = e, j = l.useRef(null), _ = null != t ? t : j, y = (0, eT.F_)({
+  } = e, j = l.useRef(null), _ = null != t ? t : j, y = (0, eE.F_)({
     avatarDecoration: f,
-    size: (0, T.Te)(h._3J.SIZE_32)
+    size: (0, E.Te)(h._3J.SIZE_32)
   }), A = (0, F.A)(), {
     updateOpenPopoutRef: C,
     highlightBadge: S,
@@ -188,7 +188,7 @@ function e$(e) {
       highlightBadge: r ? n : true,
       setHighlightBadge: a
     }
-  }(), E = (0, Y.K)(x);
+  }(), T = (0, Y.K)(x);
   return null == c ? null : (0, a.jsx)(g.A, {
     object: eG.ZSU.AVATAR,
     children: (0, a.jsx)(er.A, {
@@ -227,7 +227,7 @@ function e$(e) {
       },
       children: e => (C(e), (0, a.jsxs)(h.DUT, eQ(eq({
         innerRef: _,
-        style: E
+        style: T
       }, e), {
         onClick: t => {
           var n;
@@ -331,7 +331,7 @@ class e0 extends Chunk64700.PureComponent {
       },
       onClick: n
     } = e;
-    return (0, a.jsx)(e$, eQ(eq({}, this.props), {
+    return (0, a.jsx)(eZ, eQ(eq({}, this.props), {
       ref: this.avatarWithPopoutRef,
       handleClick: n,
       handleMouseLeave: this.handleMouseLeave,
@@ -613,8 +613,8 @@ function e1(e) {
     shouldShowOutputDeviceChangedTooltip: C = false,
     shouldShowPTTJoinTooltip: S = false,
     dismissTooltips: O,
-    speaking: E,
-    latched: T
+    speaking: T,
+    latched: E
   } = e, N = (0, Y.K)(_);
   return (0, a.jsxs)("div", {
     className: eK.Uo,
@@ -636,8 +636,8 @@ function e1(e) {
       shouldShowSpeakingWhilePTTTooltip: c,
       shouldShowPTTJoinTooltip: S,
       dismissTooltips: O,
-      speaking: E,
-      latched: T
+      speaking: T,
+      latched: E
     }), (0, a.jsx)(e8, {
       selfDeaf: t,
       serverDeaf: i,
@@ -662,13 +662,13 @@ function e1(e) {
   })
 }
 
-function e7(e) {
+function e6(e) {
   let t = (0, c.bG)([e_.A], () => null != e_.A.getChannelId()),
     n = (0, z.Py)(e),
     a = l.useRef(new u.Ep),
     [r, i] = l.useState(false);
   l.useEffect(() => {
-    t && n && (i(true), a.current.start(eZ, () => {
+    t && n && (i(true), a.current.start(e$, () => {
       i(false)
     }))
   }, [t, n]);
@@ -683,7 +683,7 @@ function e7(e) {
   }
 }
 
-function e6() {
+function e7() {
   var e;
   let t = (0, c.bG)([eO.default], () => eO.default.getCurrentUser()),
     n = (0, c.bG)([eg.default], () => eg.default.getId()),
@@ -727,27 +727,27 @@ function e6() {
       selfDeaf: A,
       deaf: C
     } = (0, ec.A)(b),
-    T = (0, c.bG)([N.A], () => {
+    E = (0, c.bG)([N.A], () => {
       var e;
       return (0, w.kK)() ? null == (e = N.A.getCurrentBuildOverride().overrides) ? true : e.discord_web : null
     }),
-    k = (0, c.bG)([eE.A], () => eE.A.getPremiumTypeSubscription()),
+    k = (0, c.bG)([eT.A], () => eT.A.getPremiumTypeSubscription()),
     P = (0, c.bG)([ej.A], () => ej.A.getSpeakingWhileMuted()),
     R = (0, c.bG)([I.A], () => I.A.isFullscreenInContext()),
     D = (0, c.bG)([ev.A], () => ev.A.hasLayers()),
     M = (0, h.red)(h.DXt) || D || ek.P.isDisallowPopupsSet() || R,
-    L = (0, Z.g)(),
+    L = (0, $.g)(),
     U = (0, c.bG)([H.default], () => null != H.default.getAwaitingRemoteSessionInfo()),
     B = (0, c.bG)([ey.A], () => ey.A.getGuildId()),
     G = null == t ? true : t.avatarDecoration,
-    F = (0, E.A)(G),
+    F = (0, T.A)(G),
     V = null != (e = eP.Ay.useName(t)) ? e : "",
     {
       voiceActivityStatusEnabled: W
     } = (0, j.G)({
       location: "Account"
     }),
-    K = (0, $.C)(t, "Account"),
+    K = (0, Z.C)(t, "Account"),
     z = (0, ee.lM)("Account"),
     {
       analyticsLocations: q
@@ -780,13 +780,13 @@ function e6() {
   let {
     shouldShowTooltip: er,
     dismissTooltip: ei
-  } = e7(eW.oh.AUDIO_INPUT), {
+  } = e6(eW.oh.AUDIO_INPUT), {
     shouldShowTooltip: es,
     dismissTooltip: eo
-  } = e7(eW.oh.AUDIO_OUTPUT), {
+  } = e6(eW.oh.AUDIO_OUTPUT), {
     shouldShowTooltip: eu,
     dismissTooltip: eh
-  } = (0, em.A)(), eT = (0, ep.A)();
+  } = (0, em.A)(), eE = (0, ep.A)();
   return (0, a.jsx)(O.f5, {
     value: q,
     children: (0, a.jsx)(e0, {
@@ -807,12 +807,12 @@ function e6() {
       speaking: u,
       voiceDb: p,
       speakingWhileMuted: P,
-      speakingWhilePTTInactive: eT,
+      speakingWhilePTTInactive: eE,
       latched: m && null != b,
       status: i,
       streaming: r,
       suppress: y,
-      webBuildOverride: T,
+      webBuildOverride: E,
       awaitingRemote: U,
       isEligibleForPomelo: L,
       voiceActivityStatusEnabled: W,
@@ -902,11 +902,11 @@ function e2(e) {
     A = n || s || r,
     C = (0, c.bG)([ej.A], () => ej.A.getMode() === eG.TBI.PUSH_TO_TALK),
     {
-      showPTTIconIndicator: E
+      showPTTIconIndicator: T
     } = eu.A.useConfig({
       location: "MicrophoneButton"
     }),
-    T = l.useRef(null),
+    E = l.useRef(null),
     {
       Component: N,
       events: w,
@@ -932,7 +932,7 @@ function e2(e) {
     analyticsLocations: L
   } = (0, O.Ay)(S.A.AUDIO_INPUT_BUTTON);
   l.useEffect(() => () => I(), [A, I]);
-  let B = E && C,
+  let B = T && C,
     G = A ? h.LU0.colors.ICON_VOICE_MUTED : "currentColor",
     {
       name: F
@@ -945,7 +945,7 @@ function e2(e) {
   return (0, a.jsx)(O.f5, {
     value: L,
     children: (0, a.jsx)(h.YNO, {
-      targetElementRef: T,
+      targetElementRef: E,
       renderPopout: e => {
         let {
           closePopout: t
@@ -975,7 +975,7 @@ function e2(e) {
           isShown: r
         } = n, s = r ? h.tN5 : h.abt;
         return (0, a.jsxs)("div", {
-          ref: T,
+          ref: E,
           className: i()(eK.WU, {
             [eK.v8]: A,
             [eK.q6]: r

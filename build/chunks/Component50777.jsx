@@ -27,9 +27,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk928625 = require("./928625.js");
 
 function I(e) {
-  var t, n, I, S, T, C, N, R;
+  var t, n, I, S, T, C, N, w;
   let {
-    guildId: w,
+    guildId: R,
     skuId: P,
     channel: D
   } = e, x = (0, s.bG)([p.A], () => p.A.isFetchingForSKU(P)), L = (0, s.bG)([f.A], () => f.A.get(P)), j = null == L ? true : L.applicationId, {
@@ -42,17 +42,17 @@ function I(e) {
       primaryIconLabel: G
     } = i.useMemo(() => (0, h.Cv)(L, j), [L, j]);
   i.useEffect(() => {
-    null == w || null == P || p.A.isFetchingForSKU(P) || (0, m.qf)(w, P)
-  }, [w, P]);
+    null == R || null == P || p.A.isFetchingForSKU(P) || (0, m.qf)(R, P)
+  }, [R, P]);
   let V = i.useCallback(e => {
-      e.stopPropagation(), (null == L ? true : L.applicationId) != null && null != w && (0, g.R)({
+      e.stopPropagation(), (null == L ? true : L.applicationId) != null && null != R && (0, g.R)({
         skuId: P,
         applicationId: L.applicationId,
-        guildId: w,
+        guildId: R,
         isStorefront: false,
         analyticsLocations: M
       })
-    }, [P, null == L ? true : L.applicationId, w, M]),
+    }, [P, null == L ? true : L.applicationId, R, M]),
     F = i.useCallback(() => {
       null != L && (0, E.a)(L, {
         isGift: false
@@ -79,7 +79,7 @@ function I(e) {
       className: A.Nr,
       applicationId: L.applicationId,
       skuId: P,
-      guildId: w,
+      guildId: R,
       variant: b.s.EMBEDDED,
       onClick: V,
       analyticsLocations: M
@@ -115,7 +115,7 @@ function I(e) {
           variant: "primary",
           onClick: F,
           text: v.intl.format(v.t.Xp5WTn, {
-            price: (0, _.$g)(null != (I = null == (N = L.price) ? true : N.amount) ? I : 0, null != (S = null == (R = L.price) ? true : R.currency) ? S : O.Yr.USD)
+            price: (0, _.$g)(null != (I = null == (N = L.price) ? true : N.amount) ? I : 0, null != (S = null == (w = L.price) ? true : w.currency) ? S : O.Yr.USD)
           }),
           fullWidth: true
         }), (0, r.jsx)(y.A, {

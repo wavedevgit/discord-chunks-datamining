@@ -116,7 +116,7 @@ let U = new Chunk626584.A("ApplicationCommandIndexStore"),
   z = false,
   q = [];
 
-function X(e) {
+function Z(e) {
   switch (e.type) {
     case "guild":
       return e.guildId;
@@ -129,9 +129,9 @@ function X(e) {
   }
 }
 
-function Z(e, t) {
+function X(e, t) {
   let n, r = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    i = X(e),
+    i = Z(e),
     a = eh.indices[i];
   return null != a ? ("fetchState" in t && a.fetchState.fetching && a.fetchState.abort.abort(), n = j({}, a, t)) : r && (n = j({
     serverVersion: V,
@@ -142,38 +142,38 @@ function Z(e, t) {
 }
 
 function Q(e) {
-  let t = X(e),
+  let t = Z(e),
     n = eh.indices[t];
   (null == n ? true : n.fetchState.fetching) && n.fetchState.abort.abort(), delete eh.indices[t]
 }
 
-function $() {
+function J() {
   for (let e of Object.values(eh.indices)) e.fetchState.fetching && e.fetchState.abort.abort();
   eh.indices = {}
 }
 
-function J() {
+function $() {
   for (let e of q) ei(e);
   q = []
 }
 
 function ee() {
   for (let e of Object.values(eh.indices)) e.serverVersion = V;
-  J(), z = true
+  $(), z = true
 }
 
 function et(e) {
   var t;
   let {
     target: n
-  } = e, r = X(n);
-  eR(null != (t = eh.indices[r]) ? t : Y) && er(n)
+  } = e, r = Z(n);
+  ew(null != (t = eh.indices[r]) ? t : Y) && er(n)
 }
 async function en(e) {
   var t, n, r;
-  let i = X(e),
+  let i = Z(e),
     a = null != (t = eh.indices[i]) ? t : Y;
-  if (!eR(a)) {
+  if (!ew(a)) {
     if (a.fetchState.fetching) {
       let e = a.fetchState.promise;
       return await e, null != (r = eh.indices[i]) ? r : Y
@@ -185,7 +185,7 @@ async function en(e) {
 async function er(e) {
   let t = new AbortController,
     n = new o.K;
-  Z(e, {
+  X(e, {
     fetchState: {
       fetching: true,
       abort: t,
@@ -213,7 +213,7 @@ function ei(e) {
       null != t ? e.bot = t : c.add(e.bot_id)
     } else null != e.bot && (l[e.bot.id] = e.id);
     let t = {
-      descriptor: k(j({}, (0, R.bq)(eP(e), false)), {
+      descriptor: k(j({}, (0, w.bq)(eP(e), false)), {
         permissions: null != e.permissions ? (0, _.UZ)(ej(e.permissions, s)) : true,
         botId: e.bot_id
       }),
@@ -221,7 +221,7 @@ function ei(e) {
     };
     o[e.id] = t
   }
-  for (let e of ("guild" === i.type && c.size > 0 && u.A.requestMembersById(i.guildId, [...c]), (0, R.Lz)(a.application_commands.map(e => eD(e, s)), true))) {
+  for (let e of ("guild" === i.type && c.size > 0 && u.A.requestMembersById(i.guildId, [...c]), (0, w.Lz)(a.application_commands.map(e => eD(e, s)), true))) {
     let t = o[e.applicationId];
     if (null == t) {
       U.error("Command has no matching application");
@@ -230,7 +230,7 @@ function ei(e) {
     t.commands[e.id] = e
   }
   let d = null != (t = a.version) ? t : F;
-  Z(i, {
+  X(i, {
     serverVersion: d,
     result: {
       sections: o,
@@ -247,7 +247,7 @@ function ea(e) {
   let {
     target: t
   } = e;
-  Z(t, {
+  X(t, {
     fetchState: {
       fetching: false,
       retryAfter: Date.now() + W
@@ -260,7 +260,7 @@ function es(e) {
   let {
     guildId: n,
     version: r
-  } = e, i = Z({
+  } = e, i = X({
     type: "guild",
     guildId: n
   }, {
@@ -269,7 +269,7 @@ function es(e) {
   if (null != a)
     for (let e in a) {
       let t = E.A.getDMFromUserId(e);
-      null != t && Z({
+      null != t && X({
         type: "channel",
         channelId: t
       }, {
@@ -280,7 +280,7 @@ function es(e) {
 
 function eo(e, t) {
   var n;
-  let r = X({
+  let r = Z({
       type: "guild",
       guildId: e
     }),
@@ -297,7 +297,7 @@ function eo(e, t) {
     if (null == r) return;
     let o = i.sections[r];
     s()(null != o, "Bot has no matching index section"), s()(null != o.descriptor.application, "Bot's index section has no application info");
-    let l = (0, R.bq)(k(j({}, o.descriptor.application), {
+    let l = (0, w.bq)(k(j({}, o.descriptor.application), {
       bot: t
     }), false, n);
     o.descriptor = j({}, o.descriptor, l), a = true
@@ -314,7 +314,7 @@ function el(e) {
     applicationId: t,
     channelId: n,
     guildId: r
-  }) && Z(null != r ? {
+  }) && X(null != r ? {
     type: "guild",
     guildId: r
   } : {
@@ -322,11 +322,11 @@ function el(e) {
     channelId: n
   }, {
     serverVersion: V
-  }), eh.hasUserStateApplication(t) && Z({
+  }), eh.hasUserStateApplication(t) && X({
     type: "user"
   }, {
     serverVersion: V
-  }), eh.hasApplicationState(t) && Z({
+  }), eh.hasApplicationState(t) && X({
     type: "application",
     applicationId: t
   }, {
@@ -355,7 +355,7 @@ function eu(e) {
 }
 
 function ed() {
-  Z({
+  X({
     type: "user"
   }, {
     serverVersion: V
@@ -372,7 +372,7 @@ function ef(e) {
 
 function ep() {
   let e = h.default.locale;
-  return e !== eh.oldLocale && ($(), eh.collator = new Intl.Collator(e, {
+  return e !== eh.oldLocale && (J(), eh.collator = new Intl.Collator(e, {
     sensitivity: "accent",
     numeric: true
   }), eh.oldLocale = e, true)
@@ -426,22 +426,22 @@ class e_ extends(r = Chunk311907.Ay.Store) {
       a = this.getUserState(),
       s = this.getApplicationState(n.applicationId),
       o = this.getApplicationStates(),
-      l = (0, w.Bh)(r, t.commandTypes),
+      l = (0, R.Bh)(r, t.commandTypes),
       c = null == r || (null == l ? true : l.hasBaseAccessPermissions) === true,
       u = false !== t.applicationCommands,
       d = false;
     n.allowFetch && (u && c && null != r && eN(r) && (v.default.track(x.HAw.APPLICATION_COMMAND_CACHE_FETCH, {
       miss: null == i.result,
       size: Object.keys(eh.indices).length
-    }), eR(i) && null != r && (null != r.guild_id ? (0, T.$)({
+    }), ew(i) && null != r && (null != r.guild_id ? (0, T.$)({
       type: "guild",
       guildId: r.guild_id
     }) : (0, T.$)({
       type: "channel",
       channelId: r.id
-    }), d = true)), eR(a) && ((0, T.$)({
+    }), d = true)), ew(a) && ((0, T.$)({
       type: "user"
-    }), d = true), eR(s) && null != n.applicationId && ((0, T.$)({
+    }), d = true), ew(s) && null != n.applicationId && ((0, T.$)({
       type: "application",
       applicationId: n.applicationId
     }), d = true));
@@ -483,7 +483,7 @@ class e_ extends(r = Chunk311907.Ay.Store) {
 }
 L(e_, "displayName", "ApplicationCommandIndexStore");
 let eh = new e_(Chunk73153.h, {
-    LOGOUT: $,
+    LOGOUT: J,
     CONNECTION_OPEN: ee,
     APPLICATION_COMMAND_INDEX_FETCH_REQUEST: et,
     APPLICATION_COMMAND_INDEX_FETCH_SUCCESS: ei,
@@ -503,7 +503,7 @@ function eg(e, t, n) {
   return i.useEffect(() => {
     if (r) {
       if ("contextless" === e.type) {
-        n && eR(s) && (0, T.$)({
+        n && ew(s) && (0, T.$)({
           type: "user"
         });
         return
@@ -511,7 +511,7 @@ function eg(e, t, n) {
       n && t && eN(e.channel) && (v.default.track(x.HAw.APPLICATION_COMMAND_CACHE_FETCH, {
         miss: null == s.result,
         size: Object.keys(eh.indices).length
-      }), eR(s) && (null != e.channel.guild_id ? (0, T.$)({
+      }), ew(s) && (null != e.channel.guild_id ? (0, T.$)({
         type: "guild",
         guildId: e.channel.guild_id
       }) : (0, T.$)({
@@ -531,7 +531,7 @@ function eE(e, t) {
     n && null != e && (t && (v.default.track(x.HAw.APPLICATION_COMMAND_CACHE_FETCH, {
       miss: null == a.result,
       size: Object.keys(eh.indices).length
-    }), eR(a) && (0, T.$)({
+    }), ew(a) && (0, T.$)({
       type: "guild",
       guildId: e
     })), r(false))
@@ -541,7 +541,7 @@ function eE(e, t) {
 function ey(e, t) {
   let [n, r] = i.useState(true), a = (0, l.cf)([eh], () => eh.getUserState());
   return i.useEffect(() => {
-    n && (t && eR(a) && e && (0, T.$)({
+    n && (t && ew(a) && e && (0, T.$)({
       type: "user"
     }), r(false))
   }, [a, t, e, n]), a
@@ -550,7 +550,7 @@ function ey(e, t) {
 function eb(e, t) {
   let [n, r] = i.useState(true), a = (0, l.bG)([eh], () => eh.getApplicationState(e));
   i.useEffect(() => {
-    n && (t && eR(a) && null != e && (0, T.$)({
+    n && (t && ew(a) && null != e && (0, T.$)({
       type: "application",
       applicationId: e
     }), r(false))
@@ -615,7 +615,7 @@ let eI = Object.freeze({
 
 function eS(e, t, n) {
   let r = "channel" === e.type ? e.channel : true,
-    a = (0, w.MW)(r, t.commandTypes),
+    a = (0, R.MW)(r, t.commandTypes),
     s = false !== t.applicationCommands,
     o = eg(e, s, n.allowFetch),
     l = ey(s, n.allowFetch),
@@ -655,10 +655,10 @@ function eT(e) {
     installOnDemand: I = false
   } = e, {
     commandTypes: T
-  } = c, N = null == _ ? true : _.toLowerCase(), R = null == N ? true : N.split(" "), w = h === C.n.ONLY_TEXT, P = h !== C.n.DENY ? (0, A.Ez)(T, true, w) : [], x = [], L = {
+  } = c, N = null == _ ? true : _.toLowerCase(), w = null == N ? true : N.split(" "), R = h === C.n.ONLY_TEXT, P = h !== C.n.DENY ? (0, A.Ez)(T, true, R) : [], x = [], L = {
     permissionContext: c,
     query: N,
-    splitQuery: R,
+    splitQuery: w,
     allowEmptySections: y,
     scoreMethod: O,
     installOnDemand: I
@@ -788,11 +788,11 @@ function eN(e) {
   return (null == e ? true : e.guild_id) != null || e.type === x.rbe.DM && (null == (t = O.default.getUser(e.getRecipientId())) ? true : t.bot) === true
 }
 
-function eR(e) {
-  return !!ew(e) && !e.fetchState.fetching && (null == e.fetchState.retryAfter || Date.now() >= e.fetchState.retryAfter)
+function ew(e) {
+  return !!eR(e) && !e.fetchState.fetching && (null == e.fetchState.retryAfter || Date.now() >= e.fetchState.retryAfter)
 }
 
-function ew(e) {
+function eR(e) {
   var t;
   return (null == (t = e.result) ? true : t.version) !== e.serverVersion
 }

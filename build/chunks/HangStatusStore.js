@@ -70,11 +70,11 @@ function N() {
   }
 }
 
-function R() {
+function w() {
   C = N()
 }
 
-function w(e) {
+function R(e) {
   let {
     status: t,
     guildId: n,
@@ -228,12 +228,12 @@ O(k, "displayName", "HangStatusStore"), O(k, "persistKey", "HangStatusStore"), O
   return e
 }, e => ("recentCustomStatuses" in e && delete e.recentCustomStatuses, e), e => (null != e.currentDefaultStatus && "expiresAt" in e.currentDefaultStatus && delete e.currentDefaultStatus.expiresAt, e)]);
 let U = new k(Chunk73153.h, {
-  LOGOUT: R,
-  UPDATE_HANG_STATUS: w,
+  LOGOUT: w,
+  UPDATE_HANG_STATUS: R,
   UPDATE_HANG_STATUS_CUSTOM: P,
   UPDATE_HANG_STATUS_GAME_ACTIVITY: D,
   DELETE_INVALID_HANG_STATUSES: M,
   CLEAR_HANG_STATUS: x,
   UPDATE_FAVORITE_HANG_STATUS: L,
-  RESET_HANG_STATUS_STATE: R
+  RESET_HANG_STATUS_STATE: w
 })

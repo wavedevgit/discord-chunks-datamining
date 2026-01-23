@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   B8: () => N,
-  dF: () => R,
+  dF: () => w,
   up: () => C,
   xr: () => A
 }), require("./896048.js");
@@ -81,7 +81,7 @@ function I(e) {
     item: t,
     containerRef: n
   } = e;
-  return (0, f.tjt)(n), i.useEffect(() => (p.A.disable(), t.key !== m._s && p.A.enableTemp(w(t.key)), () => {
+  return (0, f.tjt)(n), i.useEffect(() => (p.A.disable(), t.key !== m._s && p.A.enableTemp(R(t.key)), () => {
     p.A.disableTemp()
   }), [t.key]), (0, r.jsx)(t.LayerComponent, {
     children: (0, r.jsxs)("div", {
@@ -91,7 +91,7 @@ function I(e) {
         className: g.$E
       }), t.render({
         transitionState: null != t ? t.transitionState : 3,
-        closeLayer: () => R(t.key)
+        closeLayer: () => w(t.key)
       })]
     })
   })
@@ -174,7 +174,7 @@ function N(e) {
   }), o
 }
 
-function R(e) {
+function w(e) {
   (0, u.r)(() => {
     A.setState(t => ({
       fullScreenLayers: t.fullScreenLayers.filter(t => t.key !== e)
@@ -182,13 +182,13 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   return {
     POP_LAYER: {
       binds: ["esc"],
       comboKeysBindGlobal: true,
       action() {
-        R(e)
+        w(e)
       }
     }
   }

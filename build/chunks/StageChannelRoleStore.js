@@ -94,14 +94,14 @@ function N(e) {
   for (let e of t) delete y[e.id]
 }
 
-function R(e) {
+function w(e) {
   let {
     guildId: t
   } = e;
   C(t)
 }
 
-function w(e) {
+function R(e) {
   let {
     guildId: t,
     user: n
@@ -169,9 +169,9 @@ E(j, "displayName", "StageChannelRoleStore");
 let M = new j(Chunk73153.h, {
   CHANNEL_UPDATES: N,
   CONNECTION_OPEN: x,
-  GUILD_MEMBER_REMOVE: w,
-  GUILD_MEMBER_UPDATE: w,
-  GUILD_ROLE_UPDATE: R,
+  GUILD_MEMBER_REMOVE: R,
+  GUILD_MEMBER_UPDATE: R,
+  GUILD_ROLE_UPDATE: w,
   PASSIVE_UPDATE_V2: D,
   VOICE_STATE_UPDATES: P,
   GUILD_CREATE: L,

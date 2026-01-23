@@ -76,7 +76,7 @@ function T(e) {
   } = e;
   if (!j()) return;
   let r = t.soundId.toString();
-  n === h.Zm.SOUNDBOARD && R(r)
+  n === h.Zm.SOUNDBOARD && w(r)
 }
 
 function C(e) {
@@ -87,21 +87,21 @@ function C(e) {
   } = e;
   if (!L()) return;
   let i = n.toString();
-  r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && w(i) && N(i)
+  r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && R(i) && N(i)
 }
 
 function N(e) {
   I.set(e, e)
 }
 
-function R(e) {
+function w(e) {
   S.track(e), A.push({
     key: e,
     timestamp: Date.now()
   }), S.compute()
 }
 
-function w(e) {
+function R(e) {
   for (let t of _.A.getSounds().values())
     if (null != t.find(t => t.soundId.toString() === e)) returntrue;
   returnfalse

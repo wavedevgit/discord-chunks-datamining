@@ -87,14 +87,14 @@ function N(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   return s.oP.create({
     muted: false,
     volume: T(e)
   })
 }
 
-function w() {
+function R() {
   o.w.get(S(f.default.getId())) || g.wc.updateAsync("audioContextSettings", e => {
     let t = false;
     for (let [n, r] of Object.entries(p.A.getState().settingsByContext)) {
@@ -131,11 +131,11 @@ function P(e, t, n, r) {
     s = (0, m.o)(n);
   if (null == s) returnfalse;
   let o = e[s];
-  return o[t] = null != (i = o[t]) ? i : R(n), r(o[t]), o[t].modifiedAt = String(Date.now()), a && C(o, t, n), N(o), true
+  return o[t] = null != (i = o[t]) ? i : w(n), r(o[t]), o[t].modifiedAt = String(Date.now()), a && C(o, t, n), N(o), true
 }
 
 function D() {
-  w()
+  R()
 }
 let x = i().debounce(() => {
   U()

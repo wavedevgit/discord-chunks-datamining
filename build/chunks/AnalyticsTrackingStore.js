@@ -65,8 +65,8 @@ let m = "x-science-test",
   T = 0,
   C = 0,
   N = 0,
-  R = 0,
   w = 0,
+  R = 0,
   P = null,
   D = 0,
   x = Number.MAX_SAFE_INTEGER,
@@ -78,7 +78,7 @@ let m = "x-science-test",
   G = null;
 
 function V() {
-  C = 0, N = 0, R = 0, D = 0, x = Number.MAX_SAFE_INTEGER, L = 0, j = 0, P = Date.now(), w = T
+  C = 0, N = 0, w = 0, D = 0, x = Number.MAX_SAFE_INTEGER, L = 0, j = 0, P = Date.now(), R = T
 }
 
 function F(e) {
@@ -109,10 +109,10 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       drainTimeoutOverride: b,
       waitFor: O,
       scheduleWhenIdle: q = B,
-      getLaunchSignature: X = () => null
+      getLaunchSignature: Z = () => null
     } = e;
 
-    function Z(e) {
+    function X(e) {
       var t;
       if (null != i) return i;
       let n = null != (t = e.fingerprint) ? t : u();
@@ -123,16 +123,16 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       return 0 !== W.length && (null != i ? null != r : null != u())
     }
 
-    function $(e) {
+    function J(e) {
       let {
         shouldFlushOnNextTick: t = false
       } = e;
-      null == K && Q() && (K = t ? setTimeout(J, 0) : q(J, {
+      null == K && Q() && (K = t ? setTimeout($, 0) : q($, {
         timeout: S
       }))
     }
 
-    function J() {
+    function $() {
       if (K = null, !Q()) return Promise.resolve();
       let e = W.slice();
       W = [], D = F(D);
@@ -145,7 +145,7 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           null == (t = e.resolve) || t.call(e)
         }), N = F(N)
       }, t => {
-        W.unshift(...e), R = F(R);
+        W.unshift(...e), w = F(w);
         let {
           message: n
         } = t.body || t;
@@ -186,8 +186,8 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         properties: {
           client_track_timestamp: Date.now(),
           rpc_success_count: N,
-          rpc_failure_count: R,
-          first_seen_event_sequence_number: w,
+          rpc_failure_count: w,
+          first_seen_event_sequence_number: R,
           last_seen_event_sequence_number: T,
           telemetry_period_start_timestamp: P,
           telemetry_period_end_timestamp: Date.now(),
@@ -198,7 +198,7 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           event_queue_batch_avg_size: D > 0 ? j / D : 0,
           science_request_id: G,
           science_response: U,
-          launch_signature: X()
+          launch_signature: Z()
         }
       };
       return V(), ee([e], d.mX.CLIENT_TELEMETRY)
@@ -246,13 +246,13 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         analyticsToken: t,
         user: n
       } = e;
-      return null != t && (r = t), null != n.id && (i = n.id), er(), $({
+      return null != t && (r = t), null != n.id && (i = n.id), er(), J({
         shouldFlushOnNextTick: false
       }), false
     }, Y.handleConnectionClosed = function() {
-      return J(), ei(), r = null, i = null, false
+      return $(), ei(), r = null, i = null, false
     }, Y.handleFingerprint = function() {
-      return J(), false
+      return $(), false
     }, Y.handleTrack = function(e) {
       let {
         event: t,
@@ -273,14 +273,14 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
             event_sequence_number: ++T
           }, n),
           resolve: a
-        }, l = Z(o);
+        }, l = X(o);
         if (null != l && (o.properties.client_uuid = H.generate(l)), W.push(o), W.length > E) {
           let e = W.length - E;
           C = F(C, e), W = W.slice(-E)
         }
-        r ? $({
+        r ? J({
           shouldFlushOnNextTick: true
-        }) : $({
+        }) : J({
           shouldFlushOnNextTick: false
         })
       }), false

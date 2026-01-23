@@ -80,8 +80,8 @@ function S(e) {
     onClickContent: T,
     iconSrc: C,
     onView: N,
-    presenceActivity: R,
-    analyticsLocations: w,
+    presenceActivity: w,
+    analyticsLocations: R,
     showAuthButton: P,
     startAuthorization: D,
     accountLinkButtonRef: x,
@@ -104,7 +104,7 @@ function S(e) {
           })
         }
       }] : null != A && (e = [A], r = false), e.length > 0)
-      if (!(0, E.p)(t.id, j, n.id, R)) return {
+      if (!(0, E.p)(t.id, j, n.id, w)) return {
         actions: [],
         hasAccountLinkButton: false
       };
@@ -113,7 +113,7 @@ function S(e) {
         trackingArea: d.kY.CONNECT_ACCOUNT,
         onClick: () => {
           D({
-            analyticsLocations: w
+            analyticsLocations: R
           })
         },
         icon: l.A5T,
@@ -124,8 +124,8 @@ function S(e) {
       actions: e,
       hasAccountLinkButton: i
     }
-  }, [h, _, A, j, R, n.id, t.id, P, D, w, x]), U = M.some(e => e.trackingArea === d.kY.CLOUD_PLAY);
-  (0, y.A)(U, w);
+  }, [h, _, A, j, w, n.id, t.id, P, D, R, x]), U = M.some(e => e.trackingArea === d.kY.CLOUD_PLAY);
+  (0, y.A)(U, R);
   let G = M.length > 0,
     V = i.useMemo(() => (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",

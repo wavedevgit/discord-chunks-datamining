@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => x,
-  B: () => w
+  B: () => R
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -84,8 +84,8 @@ function T(e, t) {
 }
 let C = 20,
   N = 18,
-  R = 77,
-  w = {
+  w = 77,
+  R = {
     tension: 800,
     friction: 24
   };
@@ -113,7 +113,7 @@ function D(e) {
     ref: O
   } = e, A = S(e, ["className", "renderButtonContents", "active", "onMouseEnter", "onMouseLeave", "onContextMenu", "onFocus", "spriteClassName", "spriteSize", "ref"]), [T, C] = i.useState(false), [N, D] = i.useState(50), x = T || a, L = (0, m.t)(b, "emojiButton", x ? "Hovered" : "Normal"), j = P(N, y), M = i.useCallback(() => {
     if (x) return;
-    let e = Math.floor(Math.random() * R);
+    let e = Math.floor(Math.random() * w);
     C(true), D(e), (0, _.K)(E.Vl.EmojiButtonMouseEntered)
   }, [x, C, D]), k = i.useCallback(() => {
     C(false)
@@ -135,7 +135,7 @@ function D(e) {
     onContextMenu: p
   }, A), {
     children: null != n ? n() : (0, r.jsx)(d.c7X, {
-      config: w,
+      config: R,
       to: {
         value: +!!x
       },
@@ -171,10 +171,10 @@ function x(e) {
     ref: E,
     keyboardShortcut: O,
     canShowNUXPremiumTooltip: A = false
-  } = e, I = S(e, ["aria-label", "tooltipText", "active", "onClick", "aria-controls", "ref", "keyboardShortcut", "canShowNUXPremiumTooltip"]), T = (0, l.bG)([f.A], () => f.A.useReducedMotion), C = (0, h.k0)(), [N, R] = (0, p.kn)(C ? [c.M.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), w = A && N === c.M.TRIAL_NUX_EMOJI_BUTTON, P = !o && w, x = i.useRef(null), L = null != E ? E : x, j = () => (0, r.jsx)(D, v({
+  } = e, I = S(e, ["aria-label", "tooltipText", "active", "onClick", "aria-controls", "ref", "keyboardShortcut", "canShowNUXPremiumTooltip"]), T = (0, l.bG)([f.A], () => f.A.useReducedMotion), C = (0, h.k0)(), [N, w] = (0, p.kn)(C ? [c.M.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), R = A && N === c.M.TRIAL_NUX_EMOJI_BUTTON, P = !o && R, x = i.useRef(null), L = null != E ? E : x, j = () => (0, r.jsx)(D, v({
     ref: L,
     onMouseLeave: () => {
-      w && R(g.i.USER_DISMISS)
+      R && w(g.i.USER_DISMISS)
     },
     onClick: e => {
       null == _ || _(e)
@@ -182,7 +182,7 @@ function x(e) {
     "aria-label": t,
     "aria-controls": m,
     active: o,
-    spriteClassName: w ? b.spritePremiumColored : true
+    spriteClassName: R ? b.spritePremiumColored : true
   }, I));
   return null == a ? j() : P ? (0, r.jsx)(u.un, {
     targetElementRef: L,

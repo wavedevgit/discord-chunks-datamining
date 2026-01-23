@@ -39,7 +39,7 @@ function y(e) {
     t !== v && (A(t), S(n), c(t))
   }
 
-  function R() {
+  function w() {
     return new Promise(e => {
       e({
         shouldClear: false,
@@ -80,7 +80,7 @@ function y(e) {
         C.current = true
       },
       focused: C.current,
-      onSubmit: R
+      onSubmit: w
     }), (0, r.jsx)(a.AC4, {
       id: E,
       children: _.intl.format(_.t["+DFxLc"], {

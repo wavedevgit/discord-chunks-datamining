@@ -108,7 +108,7 @@ function N(e) {
   }, a))
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return null != t ? E.intl.formatToPlainString(E.t["/6mw10"], {
     label: e,
@@ -116,7 +116,7 @@ function R(e, t) {
   }) : e
 }
 
-function w(e, t, n, r) {
+function R(e, t, n, r) {
   if (null == e) return null;
   if (r) switch (t) {
     case g._3.SIZE_16:
@@ -514,7 +514,7 @@ function F(e) {
   } = e, S = {
     width: (0, g.FT)(n),
     height: (0, g.FT)(n)
-  }, T = null == _ || h ? true : R(_, E, b), C = I.size * m.Xq, N = w(E, n, b, O), P = null != v && (0, r.jsx)("svg", {
+  }, T = null == _ || h ? true : w(_, E, b), C = I.size * m.Xq, N = R(E, n, b, O), P = null != v && (0, r.jsx)("svg", {
     width: C + A,
     height: C,
     viewBox: "0 0 ".concat(C + A, " ").concat(C),
@@ -607,16 +607,16 @@ function H(e) {
     statusTooltipDelay: T,
     statusBackdropColor: C,
     "aria-hidden": N = false,
-    "aria-label": R,
-    imageClassName: w,
+    "aria-label": w,
+    imageClassName: R,
     ref: x,
     CutoutIcon: j,
     avatarTooltipAsset: M,
     avatarTooltipText: V,
     avatarTooltipTitle: H
-  } = e, Y = n !== h.clD.UNKNOWN ? n : null, W = (0, g.Kj)(a), K = null != Y ? Math.ceil((W.status * g.x - W.status) / 2) : 0, z = W.size + K, q = (0, u.S3)(Y, o), X = i.useId();
+  } = e, Y = n !== h.clD.UNKNOWN ? n : null, W = (0, g.Kj)(a), K = null != Y ? Math.ceil((W.status * g.x - W.status) / 2) : 0, z = W.size + K, q = (0, u.S3)(Y, o), Z = i.useId();
   return (0, r.jsx)(F, A(O({}, e), {
-    ariaLabel: R,
+    ariaLabel: w,
     ariaHidden: N,
     status: Y,
     specs: W,
@@ -628,7 +628,7 @@ function H(e) {
       viewBox: "0 0 ".concat(z, " ").concat(z),
       className: s()(y.dK, y.JW),
       "aria-hidden": true,
-      children: [null != M && k(X, W, {
+      children: [null != M && k(Z, W, {
         status: Y,
         isMobile: l,
         isTyping: f
@@ -637,7 +637,7 @@ function H(e) {
         y: 0,
         width: W.size,
         height: W.size,
-        mask: null != M ? "url(#".concat(X, ")") : "url(#".concat(P(Y, a, l, f), ")"),
+        mask: null != M ? "url(#".concat(Z, ")") : "url(#".concat(P(Y, a, l, f), ")"),
         children: (0, r.jsx)(B, {
           ref: m,
           src: t,
@@ -645,7 +645,7 @@ function H(e) {
           isLatched: b,
           voiceDb: v,
           speakingStylesConfig: I,
-          className: w
+          className: R
         })
       }), null != Y && null != C ? L(C, l, W, Y) : null, null != Y ? (0, r.jsx)(d.m_, {
         text: S ? (0, _.MU)(Y) : null,
@@ -702,8 +702,8 @@ function K(e) {
     voiceDb: b,
     speakingStylesConfig: v,
     size: S,
-    src: R,
-    status: w,
+    src: w,
+    status: R,
     statusColor: P,
     statusTooltip: D = false,
     statusTooltipDelay: x,
@@ -713,10 +713,10 @@ function K(e) {
     imageClassName: K,
     pulseStatusIcon: z,
     CutoutIcon: q,
-    avatarTooltipAsset: X,
-    avatarTooltipText: Z,
+    avatarTooltipAsset: Z,
+    avatarTooltipText: X,
     avatarTooltipTitle: Q
-  } = e, $ = (0, u.S3)(w, P), J = i.useId(), ee = i.useId(), [et] = i.useState(() => O({
+  } = e, J = (0, u.S3)(R, P), $ = i.useId(), ee = i.useId(), [et] = i.useState(() => O({
     fill: a
   }, V({
     size: S,
@@ -724,13 +724,13 @@ function K(e) {
     isMobile: t,
     isTyping: false
   }))), en = i.useMemo(() => O({
-    fill: $
+    fill: J
   }, V({
     size: S,
-    status: w,
+    status: R,
     isMobile: f,
     isTyping: p
-  })), [$, S, w, f, p]), er = (0, l.zhh)({
+  })), [J, S, R, f, p]), er = (0, l.zhh)({
     config: T,
     from: et,
     to: en
@@ -741,7 +741,7 @@ function K(e) {
     avatarCutoutHeight: eo,
     avatarCutoutRadius: el,
     fill: ec
-  } = er, eu = I(er, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), ed = (0, g.FT)(S), ef = (0, g.Kj)(S), ep = ef.status * g.x, e_ = ef.status * g.jo, eh = null != w ? (ef.status * g.x - ef.status) / 2 : 0, em = ef.size + Math.ceil(eh), [eg, eE, ey] = (0, l.zhh)({
+  } = er, eu = I(er, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), ed = (0, g.FT)(S), ef = (0, g.Kj)(S), ep = ef.status * g.x, e_ = ef.status * g.jo, eh = null != R ? (ef.status * g.x - ef.status) / 2 : 0, em = ef.size + Math.ceil(eh), [eg, eE, ey] = (0, l.zhh)({
     config: {
       tension: 450,
       friction: 20,
@@ -757,7 +757,7 @@ function K(e) {
     }, {
       scale: 1
     }] : []
-  }, C() ? "animate-always" : "animate-never", [z, w]);
+  }, C() ? "animate-always" : "animate-never", [z, R]);
   return (0, r.jsx)(F, A(O({}, e), {
     ariaLabel: H,
     ariaHidden: k,
@@ -770,7 +770,7 @@ function K(e) {
       className: s()(y.dK, y.JW),
       "aria-hidden": true,
       children: [(0, r.jsxs)("mask", {
-        id: J,
+        id: $,
         width: ed,
         height: ed,
         children: [(0, r.jsx)("circle", {
@@ -786,30 +786,30 @@ function K(e) {
           height: eo,
           rx: el,
           ry: el
-        }), null != X && M(ef.size - ef.status - ef.offset, ef.offset, ef.status, X, ef)]
+        }), null != Z && M(ef.size - ef.status - ef.offset, ef.offset, ef.status, Z, ef)]
       }), (0, r.jsx)("foreignObject", {
         className: y.__invalid_foreignObject,
         x: 0,
         y: 0,
         width: ed,
         height: ed,
-        mask: "url(#".concat(J, ")"),
+        mask: "url(#".concat($, ")"),
         children: (0, r.jsx)(B, {
-          src: R,
+          src: w,
           isSpeaking: m,
           isLatched: E,
           voiceDb: b,
           className: K,
           speakingStylesConfig: v
         })
-      }), null != j && L(j, f, ef, w), (0, r.jsx)(d.m_, {
-        text: D ? (0, _.MU)(w) : null,
+      }), null != j && L(j, f, ef, R), (0, r.jsx)(d.m_, {
+        text: D ? (0, _.MU)(R) : null,
         ariaHidden: true,
         position: "top",
         spacing: Y(ef.status, ef.stroke, f, p),
         delay: x,
         children: (0, r.jsxs)(o.animated.g, {
-          transform: eg.scale.to(e => "scale(".concat(e, ") ").concat(W(ef, e, w))),
+          transform: eg.scale.to(e => "scale(".concat(e, ") ").concat(W(ef, e, R))),
           children: [(0, r.jsxs)("svg", {
             width: ep,
             height: e_,
@@ -836,8 +836,8 @@ function K(e) {
         })
       }), null != q && U(ef, q), null != Q && G(ef, f, p, {
         avatarTooltipTitle: Q,
-        avatarTooltipText: Z
-      }, X)]
+        avatarTooltipText: X
+      }, Z)]
     })
   }))
 }

@@ -126,7 +126,7 @@ function F(e) {
       }
       return null
     }, [o, y.timestampFormatter]),
-    R = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
+    w = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.Text, {
         className: j.bV,
         variant: "text-md/semibold",
@@ -139,18 +139,18 @@ function F(e) {
       }) : null]
     }), [C, y, a]);
   if (0 === o.length) return null;
-  let w = o.slice(0, b);
+  let R = o.slice(0, b);
   return (0, r.jsxs)("div", {
     className: j.A2,
-    children: [R(), (0, r.jsx)("div", {
+    children: [w(), (0, r.jsx)("div", {
       className: j.o1,
       style: {
-        maxHeight: w.length * G
+        maxHeight: R.length * G
       },
-      children: w.map((e, t) => N({
+      children: R.map((e, t) => N({
         row: t
       }))
-    }), w.length < c ? (0, r.jsx)(d.DUT, {
+    }), R.length < c ? (0, r.jsx)(d.DUT, {
       className: s()(j.FQ, {
         [j.r9]: m
       }),
@@ -164,7 +164,7 @@ function F(e) {
         className: j.UX,
         variant: "text-sm/bold",
         children: L.intl.format(x.default["7dMmJY"], {
-          pageSize: Math.max(1, Math.min(c - w.length, P.PH))
+          pageSize: Math.max(1, Math.min(c - R.length, P.PH))
         })
       })
     }) : null]
@@ -292,12 +292,12 @@ let Y = () => {
             })
           }), (0, r.jsxs)("div", {
             className: j.RJ,
-            children: [(0, r.jsx)(w.A, {}), t ? e.map(e => {
+            children: [(0, r.jsx)(R.A, {}), t ? e.map(e => {
               let [t] = e;
               return (0, r.jsx)(F, {
                 displayType: t
               }, "".concat(t, "-list"))
-            }) : (0, r.jsx)(R.A, {
+            }) : (0, r.jsx)(w.A, {
               className: j.RL,
               text: null != i ? i : ""
             })]

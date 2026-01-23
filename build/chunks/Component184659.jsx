@@ -1,4 +1,4 @@
-/** Chunk was on 1784 **/
+/** Chunk was on 77313 **/
 /** chunk id: 184659, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   z: () => d
@@ -33,7 +33,7 @@ let d = e => {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(p, ["pendingAvatar"]), v = (0, a.V7)({
+  }(p, ["pendingAvatar"]), h = (0, a.V7)({
     userId: d.id,
     image: f
   });
@@ -57,7 +57,7 @@ let d = e => {
       }
       return e
     }({}, x), n = n = {
-      pendingAvatar: v,
+      pendingAvatar: h,
       user: d,
       pendingBadges: [(0, c._)()],
       canUsePremiumCustomization: m,

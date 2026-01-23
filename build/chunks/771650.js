@@ -6,7 +6,7 @@ require.d(exports, {
   G0: () => ep,
   If: () => e_,
   WL: () => em,
-  Yd: () => Z,
+  Yd: () => X,
   gR: () => eh,
   gU: () => ef,
   sC: () => K,
@@ -59,7 +59,7 @@ function N(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,8 +70,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -156,7 +156,7 @@ function q(e, t, n) {
   return (null == o ? true : o.length) > 0 && (e.setData("channelIds", o.map(e => e.id)), true)
 }
 
-function X(e, t) {
+function Z(e, t) {
   let n = Object.values(d.A.getMutablePrivateChannels()).filter(e => {
     if (e.isGroupDM() && t === (0, u.m1)(e, m.default, p.A)) returntrue;
     if (e.isDM()) {
@@ -169,9 +169,9 @@ function X(e, t) {
   return (null == n ? true : n.length) > 0 && (e.setData("channelIds", n.map(e => e.id)), true)
 }
 
-function Z(e, t) {
+function X(e, t) {
   let n = e.getMatch(1);
-  return S.Ut1.test(n) ? (e.setData("channelIds", [n]), true) : (n.startsWith('"') && n.endsWith('"') && (n = n.substring(1, n.length - 1).replaceAll(/\\(.)/g, (e, t) => t)), (0, v._B)(t)) ? q(e, n, t.guildId) : t.type === S.I4_.DMS && !h.A.hidePersonalInformation && X(e, n)
+  return S.Ut1.test(n) ? (e.setData("channelIds", [n]), true) : (n.startsWith('"') && n.endsWith('"') && (n = n.substring(1, n.length - 1).replaceAll(/\\(.)/g, (e, t) => t)), (0, v._B)(t)) ? q(e, n, t.guildId) : t.type === S.I4_.DMS && !h.A.hidePersonalInformation && Z(e, n)
 }
 
 function Q(e) {
@@ -189,7 +189,7 @@ function Q(e) {
   return null != t && "" !== t && (e.setData("has", t), true)
 }
 
-function $(e) {
+function J(e) {
   let t = {
     [T.intl.string(T.t.tPZo4p)]: "user",
     [T.intl.string(T.t.JL7sRS)]: "bot",
@@ -198,12 +198,12 @@ function $(e) {
   return null != t && "" !== t && (e.setData("author_type", t), true)
 }
 
-function J() {
+function $() {
   return [...Array.from(P()), ...Array.from(D()), ...Array.from(x()), ...Object.keys(k())]
 }
 
 function ee(e, t, n) {
-  return et(e, t, J()).map(e => w(N({}, e), {
+  return et(e, t, $()).map(e => R(N({}, e), {
     group: n,
     key: "".concat(n, "-").concat(e.text)
   }))
@@ -273,12 +273,12 @@ function er(e) {
           return i(t)
         }), O.A.getRecentMessageAuthorIds(n.guildId).forEach(e => i(m.default.getUser(e))), e.slice(0, r)
       }
-      s = g.Ay.queryGuildUsers(w(N({}, a), {
+      s = g.Ay.queryGuildUsers(R(N({}, a), {
         guildId: n.guildId
       }));
       break;
     case S.I4_.CHANNEL:
-      s = g.Ay.queryChannelUsers(w(N({}, a), {
+      s = g.Ay.queryChannelUsers(R(N({}, a), {
         channelId: n.channelId
       }));
       break;
@@ -286,11 +286,11 @@ function er(e) {
       let o = en(null != i ? i : []);
       if (null != o && o.length > 0) {
         let e = m.default.getCurrentUser();
-        null != e && o.push(e), s = g.Ay.queryUsers(w(N({}, a), {
+        null != e && o.push(e), s = g.Ay.queryUsers(R(N({}, a), {
           users: o,
           boosters: (0, g.X3)(c.rD.USER)
         }))
-      } else s = g.Ay.queryAllUsers(w(N({}, a), {
+      } else s = g.Ay.queryAllUsers(R(N({}, a), {
         boosters: (0, g.X3)(c.rD.USER)
       }));
       break;
@@ -600,7 +600,7 @@ function eu(e) {
       componentType: "ANSWER",
       validator: t => {
         let n = null != e ? e : b.A.getSelectedSearchContext();
-        return null != n && Z(t, n)
+        return null != n && X(t, n)
       },
       queryKey: "channel_id"
     },
@@ -641,7 +641,7 @@ function eu(e) {
     [S.LWr.ANSWER_AUTHOR_TYPE]: {
       regex: RegExp("(?:\\s*-?(".concat(t.map(e => E.A.escape(e)).join("|"), "))"), "i"),
       follows: [S.LWr.FILTER_AUTHOR_TYPE],
-      validator: $,
+      validator: J,
       componentType: "ANSWER",
       queryKey: "author_type"
     }

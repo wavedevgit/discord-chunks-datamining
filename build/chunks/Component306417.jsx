@@ -77,12 +77,12 @@ function N(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = R(e, t), Object.getOwnPropertySymbols)
+  if (a = w(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -90,7 +90,7 @@ function R(e, t) {
   return i
 }
 
-function w(e) {
+function R(e) {
   let {
     className: t,
     children: n
@@ -207,10 +207,10 @@ function j(e) {
     canTapAnswers: true,
     answersInteraction: y.CQ.LIST
   }, () => ({
-    ContainerComponent: w,
+    ContainerComponent: R,
     answerElementType: 3
   })).otherwise(() => ({
-    ContainerComponent: w,
+    ContainerComponent: R,
     answerElementType: 0
   }));
   return (0, r.jsx)(d, {

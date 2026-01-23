@@ -189,14 +189,14 @@ module.exports = function(e) {
         });
       return n.push(d.createElement(E, b, d.createElement(m, O))), !y || v(c, f) || A(y, E, n), n
     }, []));
-    var R = r.getKey(),
-      w = u.encode(R, 0, 0),
+    var w = r.getKey(),
+      R = u.encode(w, 0, 0),
       P = S(r, s),
       D = P.CustomComponent,
       x = null != D ? d.createElement(D, i({}, this.props, {
-        tree: h.getBlockTree(R),
+        tree: h.getBlockTree(w),
         blockProps: P.customProps,
-        offsetKey: w,
+        offsetKey: R,
         block: r
       })) : d.createElement(c, {
         block: r,
@@ -207,13 +207,13 @@ module.exports = function(e) {
         decorator: p,
         direction: E,
         forceSelection: y,
-        hasSelection: O(b, R),
+        hasSelection: O(b, w),
         selection: b,
         tree: C
       });
     if (r.getParentKey()) return x;
     var L = I(r, a).Element,
-      j = T(r, _, w, l, P, this.wrapperRef);
+      j = T(r, _, R, l, P, this.wrapperRef);
     return d.createElement(L, j, x)
   }, t
 }(Chunk64700.Component)

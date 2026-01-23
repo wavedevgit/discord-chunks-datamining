@@ -74,7 +74,7 @@ function x(e) {
       pronouns: null == x ? true : x.pronouns,
       tags: (0, r.jsx)(p.A, {
         displayProfile: x,
-        themeType: w.d.POPOUT,
+        themeType: R.d.POPOUT,
         onClose: U
       }),
       nicknameIcons: H ? null : (0, r.jsx)(A.A, {
@@ -82,7 +82,7 @@ function x(e) {
         isVisible: j,
         onOpenProfile: M
       })
-    }), V === R.eA$.PENDING_INCOMING && (0, r.jsx)(O.A.Overlay, {
+    }), V === w.eA$.PENDING_INCOMING && (0, r.jsx)(O.A.Overlay, {
       children: (0, r.jsx)(m.A, {
         user: t,
         guildId: null == L ? true : L.id,

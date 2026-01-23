@@ -1,78 +1,89 @@
-/** Chunk was on 58197 **/
-/** chunk id: 572595, original params: e,t,i (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 572595, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  M: () => c,
-  t: () => a
+  M: () => p,
+  t: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk4227 = require("./4227.js"),
   Chunk466459 = require("./466459.js");
-let o = "collectibles shop product details modal",
-  a = e => {
+
+function o(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function l(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      o(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function c(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let d = "collectibles shop product details modal",
+  f = e => {
     let {
       product: t,
-      category: a,
+      category: o,
       shouldCheckoutWithOrbs: c,
-      analyticsSource: u,
-      analyticsLocations: d,
-      returnRef: p,
-      tab: m,
-      rentalDuration: g
+      analyticsSource: f,
+      analyticsLocations: p,
+      returnRef: _,
+      tab: h,
+      rentalDuration: m
     } = e;
     if (t.isCategoryReward) {
       let {
         isPurchased: e
-      } = (0, s.o)(l.A, t);
+      } = (0, s.o)(a.A, t);
       if (!e) return
-    }(0, r.mMO)(async () => {
+    }(0, i.mMO)(async () => {
       let {
         default: e
-      } = await Promise.all([i.e("21724"), i.e("1784")]).then(i.bind(i, 929400));
-      return i => {
-        var r, l;
-        return (0, n.jsx)(e, (r = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var i = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(i);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(i, e).enumerable
-            }))), n.forEach(function(t) {
-              var n;
-              n = i[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = n
-            })
-          }
-          return e
-        }({}, i), l = l = {
-          product: t,
-          category: a,
-          shouldCheckoutWithOrbs: c,
-          analyticsSource: u,
-          analyticsLocations: d,
-          returnRef: p,
-          tab: m,
-          rentalDuration: g
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-          var i = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            i.push.apply(i, n)
-          }
-          return i
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-        }), r))
-      }
+      } = await n.e("77313").then(n.bind(n, 929400));
+      return n => (0, r.jsx)(e, u(l({}, n), {
+        product: t,
+        category: o,
+        shouldCheckoutWithOrbs: c,
+        analyticsSource: f,
+        analyticsLocations: p,
+        returnRef: _,
+        tab: h,
+        rentalDuration: m
+      }))
     }, {
-      modalKey: o
+      modalKey: d
     })
   },
-  c = () => {
-    (0, r.OoC)(o)
+  p = () => {
+    (0, i.OoC)(d)
   }

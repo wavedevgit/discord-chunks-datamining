@@ -64,7 +64,7 @@ function N() {
   C(), T()
 }
 
-function R() {
+function w() {
   var e;
   let t = e => {
     if (d.A.getConfig({
@@ -73,7 +73,7 @@ function R() {
       let t = Date.now() - e;
       (null == r || t > r) && (y = Math.max(t, y), r = null)
     }
-    N(), setTimeout(R, 10 * p.A.Millis.SECOND)
+    N(), setTimeout(w, 10 * p.A.Millis.SECOND)
   };
   if ((null === u.A || true === u.A || null == (e = u.A.remotePowerMonitor) ? true : e.getSystemIdleTimeMs) != null) {
     let e = u.A.remotePowerMonitor.getSystemIdleTimeMs();
@@ -81,20 +81,20 @@ function R() {
   }
 }
 
-function w(e) {
+function R(e) {
   d.A.getConfig({
     location: "handlePowerEvent"
   }).power_events ? j({}) : (e && (r = Date.now()), N())
 }
 if (!__OVERLAY__) {
-  Chunk723702.isPlatformEmbedded && (null === Chunk77729.A || true === Chunk77729.A ? true : Chunk77729.A.remotePowerMonitor) != null ? (R(), Chunk77729.A.remotePowerMonitor.on("resume", () => {
-    v = false, w(false)
+  Chunk723702.isPlatformEmbedded && (null === Chunk77729.A || true === Chunk77729.A ? true : Chunk77729.A.remotePowerMonitor) != null ? (w(), Chunk77729.A.remotePowerMonitor.on("resume", () => {
+    v = false, R(false)
   }), Chunk77729.A.remotePowerMonitor.on("suspend", () => {
-    v = true, w(true), c.default.disconnect()
+    v = true, R(true), c.default.disconnect()
   }), Chunk77729.A.remotePowerMonitor.on("lock-screen", () => {
-    A = true, w(true)
+    A = true, R(true)
   }), Chunk77729.A.remotePowerMonitor.on("unlock-screen", () => {
-    A = false, w(false)
+    A = false, R(false)
   })) : setInterval(N, 30 * Chunk927813.A.Millis.SECOND);
   let e = s()(() => {
     d.A.getConfig({

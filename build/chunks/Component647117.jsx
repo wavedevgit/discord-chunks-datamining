@@ -30,12 +30,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk89945 = require("./89945.js");
 let C = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
   N = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_SIZE),
-  R = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_MARGIN),
-  w = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_CATEGORY_UNICODE_ICON_SIZE),
+  w = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_MARGIN),
+  R = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_CATEGORY_UNICODE_ICON_SIZE),
   P = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
   D = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
   x = [C, C, C, C],
-  L = (N + R) * 2 + C,
+  L = (N + w) * 2 + C,
   j = P + 2 * D,
   M = 7,
   k = e => {
@@ -49,7 +49,7 @@ let C = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       var u, f;
       let p, E = (null == (u = n[0]) ? true : u.type) === b.Z2.FAVORITE,
         C = +!!E,
-        R = (null == (f = n[C]) ? true : f.type) === b.Z2.RECENT,
+        w = (null == (f = n[C]) ? true : f.type) === b.Z2.RECENT,
         P = n.length > 0,
         D = n.length;
       if (0 === a && E) return (0, r.jsx)("div", {
@@ -61,35 +61,35 @@ let C = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
           className: s()(T._0, T.dC, {
             [T.d8]: P && !E,
             [T.k1]: !g && E && 0 === t,
-            [T.ls]: !R
+            [T.ls]: !w
           }),
           onClick: l,
           children: (0, r.jsx)(c.Gg5, {
             size: "custom",
             color: "currentColor",
             className: T.AB,
-            height: w,
-            width: w
+            height: R,
+            width: R
           })
         })
       }, "favorites");
-      if (a === C && R) return (0, r.jsx)("div", {
+      if (a === C && w) return (0, r.jsx)("div", {
         role: "listitem",
         "aria-setsize": D,
         "aria-posinset": a,
         children: (0, r.jsx)(c.DUT, {
           "aria-label": S.intl.string(S.t.RxAmVC),
           className: s()(T._0, T.dC, T.ls, {
-            [T.d8]: P && !R,
-            [T.k1]: !g && R && t === C
+            [T.d8]: P && !w,
+            [T.k1]: !g && w && t === C
           }),
           onClick: l,
           children: (0, r.jsx)(c.O4, {
             size: "custom",
             color: "currentColor",
             className: T.AB,
-            height: w,
-            width: w
+            height: R,
+            width: R
           })
         })
       }, "recent");
@@ -150,7 +150,7 @@ let C = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       rowHeight: i.useCallback((e, t) => {
         let r = n[t],
           i = n[t + 1];
-        return N + (null != i && r.type === b.Z2.GUILD && i.type !== b.Z2.GUILD ? j : R)
+        return N + (null != i && r.type === b.Z2.GUILD && i.type !== b.Z2.GUILD ? j : w)
       }, [n]),
       onScroll: i.useCallback(e => {
         var t;
@@ -172,7 +172,7 @@ let C = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       var e, t;
       let n = d.filter(e => e.type === b.Z2.GUILD).length,
         r = n + +((null == (e = d[0]) ? true : e.type) === b.Z2.RECENT) + +((null == (t = d[0]) ? true : t.type) === b.Z2.FAVORITE),
-        i = r * (N + R) - R + j;
+        i = r * (N + w) - w + j;
       return {
         firstStandardStickerCategoryIndex: r + 1,
         firstStandardStickerCategoryOffsetTop: i,

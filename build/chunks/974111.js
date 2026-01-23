@@ -46,7 +46,7 @@ function y(e, t, n) {
     }),
     N = (0, u.useRef)(null),
     {
-      focusWithinProps: R
+      focusWithinProps: w
     } = (0, f.R)({
       ...e,
       onFocusWithin(n) {
@@ -59,10 +59,10 @@ function y(e, t, n) {
       },
       onFocusWithinChange: e.onFocusChange
     }),
-    w = (0, _.o)(h(r.A), "@react-aria/datepicker"),
+    R = (0, _.o)(h(r.A), "@react-aria/datepicker"),
     P = "hour" === t.maxGranularity ? "selectedTimeDescription" : "selectedDateDescription",
     D = "hour" === t.maxGranularity ? "time" : "date",
-    x = t.value ? w.format(P, {
+    x = t.value ? R.format(P, {
       [D]: t.formatValue({
         month: "long"
       })
@@ -109,7 +109,7 @@ function y(e, t, n) {
         k.focusFirst()
       }
     },
-    fieldProps: (0, o.v)(F, b, U, R, {
+    fieldProps: (0, o.v)(F, b, U, w, {
       onKeyDown(t) {
         e.onKeyDown && e.onKeyDown(t)
       },

@@ -2,7 +2,7 @@
 /** chunk id: 582322, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R
+  A: () => w
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -125,7 +125,7 @@ let A = "#ffffff",
     })
   };
 
-function R(e) {
+function w(e) {
   let {
     focused: t,
     type: n,

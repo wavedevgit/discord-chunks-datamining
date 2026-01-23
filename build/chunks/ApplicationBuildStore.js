@@ -37,8 +37,8 @@ let v = new Set,
   T = new Set,
   C = {},
   N = 10 * Chunk927813.A.Millis.MINUTE,
-  R = 6 * Chunk927813.A.Millis.HOUR,
-  w = 10 * Chunk927813.A.Millis.MINUTE,
+  w = 6 * Chunk927813.A.Millis.HOUR,
+  R = 10 * Chunk927813.A.Millis.MINUTE,
   P = new Chunk451988.Ep;
 
 function D(e) {
@@ -46,7 +46,7 @@ function D(e) {
 }
 
 function x() {
-  return !p.l_.getSetting() && (D(R), L())
+  return !p.l_.getSetting() && (D(w), L())
 }
 
 function L() {
@@ -160,11 +160,11 @@ function H(e) {
     }
     C[t] = r
   }
-  D(R)
+  D(w)
 }
 
 function Y() {
-  D(w)
+  D(R)
 }
 
 function W() {

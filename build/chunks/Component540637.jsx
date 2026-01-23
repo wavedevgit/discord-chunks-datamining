@@ -92,8 +92,8 @@ function T(e) {
       defaultSelectedItems: O,
       selectedItems: I,
       onSelectionChange: T,
-      activeDescendantIndex: R,
-      shouldFocusWrap: w = false,
+      activeDescendantIndex: w,
+      shouldFocusWrap: R = false,
       renderListItem: P,
       renderEmptyState: D,
       maxVisibleItems: x = 5,
@@ -113,24 +113,24 @@ function T(e) {
     W = Y ? I : B,
     K = (0, o.Ay)({
       id: G,
-      defaultFocused: null != R ? (0, g.ZN)(G, R) : true,
+      defaultFocused: null != w ? (0, g.ZN)(G, w) : true,
       async scrollToEnd() {},
       async scrollToStart() {},
       isEnabled: !d,
-      wrap: w,
+      wrap: R,
       preserveFocusPosition: false
     });
   i.useEffect(() => {
     requestAnimationFrame(() => {
-      if (null != R) {
+      if (null != w) {
         var e;
         null == (e = V.current) || e.scrollToIndex({
           section: 0,
-          row: R
+          row: w
         })
       }
     })
-  }, [G, R]);
+  }, [G, w]);
   let {
     activeIndex: z,
     handleKeyDown: q
@@ -142,12 +142,12 @@ function T(e) {
       null == t || t.focus()
     }
   }, [z, F, k, G]);
-  let X = i.useCallback(e => {
+  let Z = i.useCallback(e => {
       if (true === u && 1 === W.length && W.includes(e)) return;
       let t = (0, g.qH)(f, W, e);
       Y || H(t), null == T || T(t)
     }, [u, W, T, Y, f]),
-    Z = i.useCallback(e => (0, r.jsx)("div", {
+    X = i.useCallback(e => (0, r.jsx)("div", {
       className: E.uN,
       children: (0, r.jsx)(h.E, {
         variant: "text-md/medium",
@@ -187,11 +187,11 @@ function T(e) {
         selectionMode: f,
         selected: o,
         disabled: d || i.disabled,
-        focused: n === R,
+        focused: n === w,
         onClick: () => {
-          d || i.disabled || X(i)
+          d || i.disabled || Z(i)
         },
-        children: null != (t = null == P ? true : P(i)) ? t : Z(i)
+        children: null != (t = null == P ? true : P(i)) ? t : X(i)
       }), i.index)
     }
   });

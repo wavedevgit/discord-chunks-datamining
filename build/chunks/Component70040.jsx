@@ -38,7 +38,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk21082 = require("./21082.js");
 let L = () => {
     (0, g.Dr)(s.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
-      dismissAction: w.i.PRIMARY,
+      dismissAction: R.i.PRIMARY,
       forceTrack: true
     }), (0, m.nf)(m.HP.CLIENT_THEMES), (0, N.default)()
   },
@@ -61,15 +61,15 @@ let L = () => {
           subscriptionTier: P.pe.TIER_2,
           defaultTextOverride: e,
           premiumModalAnalyticsLocation: {
-            object: R.ZSU.BUTTON_CTA,
-            objectType: R.AnalyticsObjectTypes.BUY
+            object: w.ZSU.BUTTON_CTA,
+            objectType: w.AnalyticsObjectTypes.BUY
           },
           fullWidth: true
         })]
       })
     };
     i.useEffect(() => {
-      s && I.default.track(R.HAw.PREMIUM_UPSELL_VIEWED, {
+      s && I.default.track(w.HAw.PREMIUM_UPSELL_VIEWED, {
         type: P.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: n
       })
@@ -126,13 +126,13 @@ function M() {
       gradientPreset: p.A.gradientPreset
     })),
     s = null != T.eh.useSetting().customUserThemeSettings;
-  return t !== R.NJ8.LIGHT ? null : (0, r.jsxs)(r.Fragment, {
+  return t !== w.NJ8.LIGHT ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.cGx, {
       gap: 24
     }), (0, r.jsx)(l.dOG, {
       label: D.intl.string(D.t.yF54Ks),
       checked: e && (0, o.qB)(t) && !n,
-      disabled: t !== R.NJ8.LIGHT || n || null != i || s,
+      disabled: t !== w.NJ8.LIGHT || n || null != i || s,
       onChange: c.LO
     }), (0, r.jsx)(l.cGx, {
       gap: 24

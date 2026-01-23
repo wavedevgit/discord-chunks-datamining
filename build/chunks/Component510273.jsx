@@ -49,21 +49,21 @@ let _ = e => {
       product: t,
       itemConsumed: r,
       forCollectedModal: i
-    } = e, [s] = t.items, l = (0, u.bG)([g.default], () => {
-      let e = g.default.getCurrentUser();
+    } = e, [s] = t.items, l = (0, u.bG)([h.default], () => {
+      let e = h.default.getCurrentUser();
       return a()(null != e, "User cannot be undefined"), e
     }), b = Object.values(o.j).includes(t.skuId), E = (0, p.A)({
       location: "CollectiblesProductPreview"
     });
     if (t.type === c.R.PROFILE_EFFECT) return (0, n.jsx)("div", {
       className: v.NM,
-      children: (0, n.jsx)(h.A, {
+      children: (0, n.jsx)(g.A, {
         skuId: s.skuId,
         delayProfileEffectIntro: i,
         withScaleAnimation: i
       })
     });
-    if (t.type === c.R.AVATAR_DECORATION) return (0, n.jsx)(y.i, {
+    if (t.type === c.R.AVATAR_DECORATION) return (0, n.jsx)(m.i, {
       item: s,
       user: l,
       avatarSize: d._3J.SIZE_120,
@@ -100,7 +100,7 @@ let _ = e => {
           src: x,
           alt: O.intl.string(O.t.g5W1g8)
         });
-      return (0, n.jsx)(m.B, {
+      return (0, n.jsx)(y.B, {
         product: t
       })
     }

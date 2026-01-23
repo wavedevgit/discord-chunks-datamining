@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => P,
-  q: () => w
+  q: () => R
 });
 var Chunk676279 = require("./676279.js"),
   Chunk251786 = require("./251786.js"),
@@ -33,9 +33,9 @@ var Chunk676279 = require("./676279.js"),
   Chunk36993 = require("./36993.js"),
   Chunk424652 = require("./424652.js");
 
-function w() {
+function R() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return e ? R : i
+  return e ? w : i
 }
 let P = {
   DEFAULT_AVATARS: [Chunk513653, Chunk761388, Chunk180391, Chunk427902, Chunk594641, Chunk600776],

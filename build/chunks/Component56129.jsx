@@ -68,14 +68,14 @@ function M(e) {
     idle: j,
     selectedParticipant: M,
     embeddedActivity: k
-  } = e, U = (0, _.Us)() === w.BRT.POPOUT, G = (0, s.bG)([S.A], () => S.A.isVideoEnabled()), V = (0, s.bG)([S.A], () => Object.values(S.A.getVideoDevices())[0]), F = false === (null == (t = null == V ? true : V.disabled) || t), B = (0, u.A)([o])[0], H = (0, m.A)(a), {
+  } = e, U = (0, _.Us)() === R.BRT.POPOUT, G = (0, s.bG)([S.A], () => S.A.isVideoEnabled()), V = (0, s.bG)([S.A], () => Object.values(S.A.getVideoDevices())[0]), F = false === (null == (t = null == V ? true : V.disabled) || t), B = (0, u.A)([o])[0], H = (0, m.A)(a), {
     parentAnalyticsLocation: Y
   } = (0, c.Ay)(), W = e => {
     (0, f.X)(Y, f.O.CAMERA, e), l.A.setVideoEnabled(e)
   }, K = () => {
     F ? W(true) : (0, g.A)()
   }, z = () => {
-    (0, f.X)(Y, f.O.POPOUT, true), null != a && (0, R.A)({
+    (0, f.X)(Y, f.O.POPOUT, true), null != a && (0, w.A)({
       onConfirm: async () => {
         await (0, C.od)(o, a.id), h.openChannelCallPopout(a)
       }

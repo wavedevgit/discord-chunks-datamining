@@ -2,7 +2,7 @@
 /** chunk id: 67414, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -61,18 +61,18 @@ function N(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e) {
+function R(e) {
   let {
     giftIntentType: t,
     recipientUser: T,
     analyticsPage: N,
-    analyticsSection: w,
+    analyticsSection: R,
     innerRef: P
   } = e, D = (0, s.bG)([h.default], () => h.default.getCurrentUser()), {
     analyticsLocations: x
@@ -111,7 +111,7 @@ function w(e) {
         analyticsLocation: r.chat,
         analyticsObject: {
           page: N,
-          section: w,
+          section: R,
           object: v.ZSU.BUTTON_CTA,
           objectType: v.AnalyticsObjectTypes.GIFT
         }
@@ -123,7 +123,7 @@ function w(e) {
         analyticsLocations: x,
         analyticsObject: {
           page: N,
-          section: w,
+          section: R,
           object: v.ZSU.BUTTON_CTA,
           objectType: v.AnalyticsObjectTypes.GIFT
         }
@@ -185,7 +185,7 @@ function w(e) {
               let {
                 default: e
               } = await n.e("95501").then(n.bind(n, 367516));
-              return n => (0, r.jsx)(e, R(C({}, n), {
+              return n => (0, r.jsx)(e, w(C({}, n), {
                 giftIntentType: t,
                 analyticsLocationHistory: x
               }))

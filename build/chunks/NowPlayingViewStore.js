@@ -2,7 +2,7 @@
 /** chunk id: 943577, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => ew
+  A: () => eR
 }), require("./896048.js"), require("./321073.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -84,16 +84,16 @@ let H = "party-",
   K = 1e3,
   z = false,
   q = false,
-  X = [],
   Z = [],
+  X = [],
   Q = {},
-  $ = {},
-  J = new Set,
+  J = {},
+  $ = new Set,
   ee = new Set;
 
 function et() {
   let e = L.A.getFriendIDs();
-  return new Set(R.A.hasConsented(U.YAq.PERSONALIZATION) ? [...O.A.getUserAffinities().filter(e => e.communicationRank <= 15).map(e => e.otherUserId), ...e] : e)
+  return new Set(w.A.hasConsented(U.YAq.PERSONALIZATION) ? [...O.A.getUserAffinities().filter(e => e.communicationRank <= 15).map(e => e.otherUserId), ...e] : e)
 }
 
 function en(e) {
@@ -109,15 +109,15 @@ function er(e) {
 }
 
 function ei(e) {
-  return null == $[e] && ($ = B(V({}, $), {
+  return null == J[e] && (J = B(V({}, J), {
     [e]: new S.A({
       url: e
     })
-  })), $[e]
+  })), J[e]
 }
 
 function ea(e) {
-  ee.has(e) || J.add(e)
+  ee.has(e) || $.add(e)
 }
 
 function es(e) {
@@ -173,7 +173,7 @@ function ef(e, t, n) {
     g = false,
     E = [];
   for (let e of o) {
-    var S, T, R, L;
+    var S, T, w, L;
     let t = C.A.getAnyStreamForUser(e.id),
       n = N.A.getChannel(null == t ? true : t.channelId);
     if ((0, _.qR)(n)) continue;
@@ -193,7 +193,7 @@ function ef(e, t, n) {
           activity: r,
           userId: e.id,
           application: d,
-          channelId: null == (R = M.A.getVoiceStateForUser(e.id)) ? true : R.channelId,
+          channelId: null == (w = M.A.getVoiceStateForUser(e.id)) ? true : w.channelId,
           currentUser: i,
           isActivitiesEnabledForCurrentPlatform: t,
           ChannelStore: N.A,
@@ -206,7 +206,7 @@ function ef(e, t, n) {
     let f = null != r ? es(r) : null;
     (null == f || f.id !== d.id) && (r = null);
     let O = [];
-    O = null != r && null != r.party && null != r.party.id ? Array.from(null != (L = w.A.getParty(r.party.id)) ? L : []).reduce((e, t) => {
+    O = null != r && null != r.party && null != r.party.id ? Array.from(null != (L = R.A.getParty(r.party.id)) ? L : []).reduce((e, t) => {
       let n = j.default.getUser(t);
       return null != n && e.push(n), e
     }, []) : o.filter(e => {
@@ -327,9 +327,9 @@ function ey(e) {
 }
 
 function eb() {
-  if (J.size > 0) {
-    let e = Array.from(J);
-    h.Ay.fetchApplications(e), e.forEach(e => ee.add(e)), J.clear()
+  if ($.size > 0) {
+    let e = Array.from($);
+    h.Ay.fetchApplications(e), e.forEach(e => ee.add(e)), $.clear()
   }
 }
 
@@ -339,13 +339,13 @@ function eO() {
 
 function ev() {
   if (!eO()) returnfalse;
-  J.clear(), Z = ey(X = eE(e_(ep(ec(Array.from(et()).reduce((e, t) => {
+  $.clear(), X = ey(Z = eE(e_(ep(ec(Array.from(et()).reduce((e, t) => {
     let n = j.default.getUser(t);
     return null == n || n.bot || e.push(n), e
   }, [])))))), eb(), q = true
 }
 let eA = a().throttle(() => {
-  ev(), eR.emitChange()
+  ev(), ew.emitChange()
 }, K);
 
 function eI() {
@@ -353,7 +353,7 @@ function eI() {
 }
 
 function eS() {
-  z = false, X = [], Z = [], J.clear()
+  z = false, Z = [], X = [], $.clear()
 }
 
 function eT() {
@@ -365,13 +365,13 @@ function eC() {
 }
 class eN extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([j.default, m.A, x.A, w.A, M.A, C.A, L.A, R.A, O.A], eI), this.waitFor(m.A, C.A, N.A, R.A, w.A, E.A, P.A, D.A, x.A, L.A, O.A, j.default, M.A)
+    this.syncWith([j.default, m.A, x.A, R.A, M.A, C.A, L.A, w.A, O.A], eI), this.waitFor(m.A, C.A, N.A, w.A, R.A, E.A, P.A, D.A, x.A, L.A, O.A, j.default, M.A)
   }
   get currentActivityParties() {
-    return X
+    return Z
   }
   get nowPlayingCards() {
-    return Z
+    return X
   }
   get isMounted() {
     return z
@@ -381,9 +381,9 @@ class eN extends(r = Chunk311907.Ay.Store) {
   }
 }
 G(eN, "displayName", "NowPlayingViewStore");
-let eR = new eN(Chunk73153.h, {
+let ew = new eN(Chunk73153.h, {
     LOGOUT: eS,
     NOW_PLAYING_MOUNTED: eT,
     NOW_PLAYING_UNMOUNTED: eC
   }),
-  ew = eR
+  eR = ew

@@ -1,5 +1,6 @@
-/** Chunk was on 21724 **/
-/** chunk id: 935094, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 935094, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   f: () => a
 }), require("./896048.js");
@@ -10,10 +11,10 @@ let a = e => {
   return {
     previewingVariantIndex: t,
     handleEntering: (0, r.useCallback)(t => {
-      (null == e ? true : e.type) !== l.R.VARIANTS_GROUP || n(t)
+      (null == e ? true : e.type) !== i.R.VARIANTS_GROUP || n(t)
     }, [null == e ? true : e.type]),
     handleLeaving: (0, r.useCallback)(() => {
-      (null == e ? true : e.type) !== l.R.VARIANTS_GROUP || n(null)
+      (null == e ? true : e.type) !== i.R.VARIANTS_GROUP || n(null)
     }, [null == e ? true : e.type])
   }
 }

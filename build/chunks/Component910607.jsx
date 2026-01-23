@@ -37,14 +37,14 @@ function I(e) {
     onClose: T
   } = e, {
     themeType: C
-  } = (0, g.E)(), N = (0, h.A)(I), R = (0, u.Ay)(I), {
-    canViewChannel: w,
+  } = (0, g.E)(), N = (0, h.A)(I), w = (0, u.Ay)(I), {
+    canViewChannel: R,
     canConnect: P
   } = (0, i.cf)([_.A], () => ({
     canViewChannel: _.A.can(y.xBc.VIEW_CHANNEL, I),
     canConnect: I.isPrivate() || _.A.can(y.xBc.CONNECT, I)
   }));
-  if (!w) return null;
+  if (!R) return null;
   let D = () => {
       let e = e => {
         e.stopPropagation(), (0, p.u)(n.id), null == S || S({
@@ -69,7 +69,7 @@ function I(e) {
         color: "text-subtle",
         lineClamp: 1,
         children: (0, r.jsx)(a.A, {
-          children: R
+          children: w
         })
       });
       let e = e => {
@@ -85,7 +85,7 @@ function I(e) {
           color: "text-subtle",
           lineClamp: 1,
           children: (0, r.jsx)(a.A, {
-            children: R
+            children: w
           })
         })
       })

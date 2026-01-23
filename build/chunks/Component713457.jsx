@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 713457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => w
@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk654487 = require("./654487.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk421193 = require("./421193.js");
-let E = [{
+let T = [{
   value: Chunk654487.fO.DESKTOP,
   get label() {
     return S.intl.string(S.t["QXc01+"])
@@ -39,7 +39,7 @@ let E = [{
   }
 }];
 
-function T(e) {
+function E(e) {
   let t, n, {
     value: l
   } = e;
@@ -101,7 +101,7 @@ function w(e) {
     isClaiming: p.A.isClaimingReward(k.id) || p.A.isFetchingRewardCode(k.id),
     isEnrolling: p.A.isEnrolling(k.id),
     isQuestEnrollmentBlocked: null != p.A.questEnrollmentBlockedUntil
-  })), q = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, Q = (null == (n = k.userStatus) ? true : n.completedAt) != null, Y = Q && (null == (w = k.userStatus) ? true : w.claimedAt) == null, J = (0, b.if)(k), X = !(0, b.Ic)(k), Z = (0, f.In)(k), $ = (0, v.IO)(k), ee = (0, v.BS)(k), et = (0, v.Cr)(k), en = (0, f.fc)(k), [ea, el, er] = (0, f.Qo)(k, en), ei = X && Z === f.F3.ACCEPTED, es = ei && ea === h.X0.SELECT, eo = ei && !es && el.length > 1, ec = x.t$.useConfig({
+  })), q = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, Q = (null == (n = k.userStatus) ? true : n.completedAt) != null, Y = Q && (null == (w = k.userStatus) ? true : w.claimedAt) == null, J = (0, b.if)(k), X = !(0, b.Ic)(k), $ = (0, f.In)(k), Z = (0, v.IO)(k), ee = (0, v.BS)(k), et = (0, v.Cr)(k), en = (0, f.fc)(k), [ea, el, er] = (0, f.Qo)(k, en), ei = X && $ === f.F3.ACCEPTED, es = ei && ea === h.X0.SELECT, eo = ei && !es && el.length > 1, ec = x.t$.useConfig({
     location: C.rE.QUEST_HOME_DESKTOP
   }).enabled, ed = l.useCallback(e => {
     er(e), e === C.fO.DESKTOP && R([])
@@ -109,13 +109,13 @@ function w(e) {
     text: eu,
     onClick: em
   } = (0, _._c)({
-    progressState: Z,
+    progressState: $,
     quest: k,
     questContent: P,
     questContentPosition: D,
     questContentRowIndex: M,
     inGiftInventory: true,
-    isVideoQuest: $,
+    isVideoQuest: Z,
     inGameQuest: et,
     sourceQuestContent: L
   }), {
@@ -151,7 +151,7 @@ function w(e) {
       text: eu,
       fullWidth: true
     })
-  }) : Q ? eb = $ ? (0, a.jsxs)(s.e2v, {
+  }) : Q ? eb = Z ? (0, a.jsxs)(s.e2v, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, a.jsx)(s.$nd, {
@@ -224,9 +224,9 @@ function w(e) {
   }) : X && q && !ex ? eb = es ? (0, a.jsx)(i.Pw, {
     className: O.dd,
     isSelected: () => false,
-    options: E,
+    options: T,
     placeholder: S.intl.string(S.t.drVw4T),
-    renderOptionLabel: T,
+    renderOptionLabel: E,
     renderOptionValue: N,
     select: ed,
     serialize: e => {
@@ -259,7 +259,7 @@ function w(e) {
       className: O.tn,
       children: [B.render(), S.intl.string(S.t.nPThNb)]
     })
-  }) : $ ? (0, a.jsx)("div", {
+  }) : Z ? (0, a.jsx)("div", {
     className: O.x6,
     children: (0, a.jsx)(s.$nd, {
       variant: "primary",
@@ -340,9 +340,9 @@ function w(e) {
               returnfalse
           }
         },
-        options: E,
+        options: T,
         placeholder: S.intl.string(S.t.drVw4T),
-        renderOptionLabel: T,
+        renderOptionLabel: E,
         renderOptionValue: N,
         select: ed,
         serialize: e => {

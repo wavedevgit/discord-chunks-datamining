@@ -69,18 +69,18 @@ function N(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w() {
+function R() {
   let e = p.A.getUserAffinities().slice(0, 4).map(e => y.default.getUser(e.otherUserId)).filter(e => null != e),
     t = g.A.affinities.slice(0, 3).map(e => {
       let t = E.A.getGuild(e.guildId);
       return i()(null != t, "Guild must exist"), {
-        guild: (0, v.yF)(R(C({}, t), {
+        guild: (0, v.yF)(w(C({}, t), {
           features: [...t.features]
         })),
         numMessagesSent: 0x9e6ca8,
@@ -162,7 +162,7 @@ async function P() {
       voice: c,
       sidekick: u,
       quests: d
-    } = w();
+    } = R();
     s.h.dispatch({
       type: "CHECKPOINT_FETCH_SUCCESS",
       data: {
@@ -217,7 +217,7 @@ async function P() {
           }
         } : true,
         emojis: null != g ? {
-          emojis: g.emojis.map(e => R(C({}, e), {
+          emojis: g.emojis.map(e => w(C({}, e), {
             id: A.default.isProbablyAValidSnowflake(e.id) ? e.id : true
           })),
           numEmojisSent: g.num_emojis_sent
@@ -246,7 +246,7 @@ async function P() {
         }) : true,
         applications: null != S ? {
           applications: S.applications.map(e => ({
-            game: R(C({}, (0, m.M)(e.game)), {
+            game: w(C({}, (0, m.M)(e.game)), {
               coverImageHash: e.game.cover_image_hash
             }),
             numDaysPlayed: e.num_sessions

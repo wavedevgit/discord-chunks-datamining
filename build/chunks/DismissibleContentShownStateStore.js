@@ -92,22 +92,22 @@ let m = new(require("./863620.js")).u,
   T = (e, t) => (e.candidates.delete(t.content), e),
   C = (e, t) => I(A(e, e.shownFatigableCandidate), t),
   N = e => null != e.prevFatigableCandidate ? e.candidates.get(e.prevFatigableCandidate.content) : true,
-  R = e => {
+  w = e => {
     let t = [...e.candidates.keys()];
     return null !== e.prevFatigableCandidate && e.candidates.has(e.prevFatigableCandidate.content) && e.candidates.size > 1 && (t = t.filter(t => {
       var n;
       return t !== (null == (n = e.prevFatigableCandidate) ? true : n.content)
     })), e.candidates.get(t[Math.floor(Math.random() * t.length)])
   },
-  w = e => null != e.prevFatigableCandidate && e.candidates.has(e.prevFatigableCandidate.content) && null == e.shownFatigableCandidate,
+  R = e => null != e.prevFatigableCandidate && e.candidates.has(e.prevFatigableCandidate.content) && null == e.shownFatigableCandidate,
   P = e => {
     if (0 === e.candidates.size) return e;
     let t = new Date().getTime() - e.lastWinnerTime > g;
-    return w(e) && !t ? (m.unschedule(), C(e, N(e))) : (null != e.shownFatigableCandidate && !t || m.scheduled() || D(e) || m.schedule(() => {
+    return R(e) && !t ? (m.unschedule(), C(e, N(e))) : (null != e.shownFatigableCandidate && !t || m.scheduled() || D(e) || m.schedule(() => {
       (0, a.r)(() => {
         b.setState(e => {
           let t = v(e);
-          return C(t, R(t))
+          return C(t, w(t))
         })
       })
     }, 250), e)

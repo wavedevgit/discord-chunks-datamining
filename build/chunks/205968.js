@@ -129,7 +129,7 @@ var Chunk225758 = require("./225758.js"),
       r = E && !n ? c.fromRawStateToRawTreeState(e).blocks : e.blocks;
     return E ? T(r, t) : C(n ? c.fromRawTreeStateToRawState(e).blocks : r, t)
   },
-  R = function(e) {
+  w = function(e) {
     var t = e.entityMap,
       n = {};
     return Object.keys(t).forEach(function(e) {
@@ -142,7 +142,7 @@ var Chunk225758 = require("./225758.js"),
   };
 module.exports = function(e) {
   Array.isArray(e.blocks) || g(false);
-  var t = R(e),
+  var t = w(e),
     n = N(e, t),
     r = n.isEmpty() ? new u : u.createEmpty(n.first().getKey());
   return new o({

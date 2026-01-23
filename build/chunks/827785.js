@@ -33,7 +33,7 @@ var Chunk284009 = require("./284009.js"),
   Chunk381941 = require("./381941.js"),
   Chunk985018 = require("./985018.jsx");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -81,14 +81,14 @@ let L = require("./743361.js").A,
       id: Chunk73510.Ik.BUILT_IN,
       type: Chunk392054.Hf.BUILT_IN,
       get name() {
-        return R.intl.string(R.t.fI5MTa)
+        return w.intl.string(w.t.fI5MTa)
       }
     },
     [Chunk73510.Ik.FRECENCY]: {
       id: Chunk73510.Ik.FRECENCY,
       type: Chunk392054.Hf.BUILT_IN,
       get name() {
-        return R.intl.string(R.t["+cGVV6"])
+        return w.intl.string(w.t["+cGVV6"])
       }
     }
   },
@@ -100,20 +100,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN_TEXT,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t.j5xUSW)
+      return w.intl.string(w.t.j5xUSW)
     },
     get displayDescription() {
-      return R.intl.string(R.t.j5xUSW)
+      return w.intl.string(w.t.j5xUSW)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.JewOrS)
+        return w.intl.string(w.t.JewOrS)
       },
       get displayDescription() {
-        return R.intl.string(R.t.JewOrS)
+        return w.intl.string(w.t.JewOrS)
       }
     }],
     execute: e => {
@@ -131,20 +131,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN_TEXT,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t.nrQRce)
+      return w.intl.string(w.t.nrQRce)
     },
     get displayDescription() {
-      return R.intl.string(R.t.nrQRce)
+      return w.intl.string(w.t.nrQRce)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.EI80tw)
+        return w.intl.string(w.t.EI80tw)
       },
       get displayDescription() {
-        return R.intl.string(R.t.EI80tw)
+        return w.intl.string(w.t.EI80tw)
       }
     }],
     execute: e => {
@@ -162,20 +162,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN_TEXT,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t.pnnn8e)
+      return w.intl.string(w.t.pnnn8e)
     },
     get displayDescription() {
-      return R.intl.string(R.t.pnnn8e)
+      return w.intl.string(w.t.pnnn8e)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.ETs6go)
+        return w.intl.string(w.t.ETs6go)
       },
       get displayDescription() {
-        return R.intl.string(R.t.ETs6go)
+        return w.intl.string(w.t.ETs6go)
       }
     }],
     execute: e => {
@@ -193,20 +193,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN_TEXT,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t.jZcIid)
+      return w.intl.string(w.t.jZcIid)
     },
     get displayDescription() {
-      return R.intl.string(R.t.jZcIid)
+      return w.intl.string(w.t.jZcIid)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t["k+sw9g"])
+        return w.intl.string(w.t["k+sw9g"])
       },
       get displayDescription() {
-        return R.intl.string(R.t["k+sw9g"])
+        return w.intl.string(w.t["k+sw9g"])
       },
       required: true
     }],
@@ -231,20 +231,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN_TEXT,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t.UGO8fU)
+      return w.intl.string(w.t.UGO8fU)
     },
     get displayDescription() {
-      return R.intl.string(R.t.UGO8fU)
+      return w.intl.string(w.t.UGO8fU)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.RWTgNd)
+        return w.intl.string(w.t.RWTgNd)
       },
       get displayDescription() {
-        return R.intl.string(R.t.RWTgNd)
+        return w.intl.string(w.t.RWTgNd)
       },
       required: true
     }],
@@ -263,20 +263,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN_TEXT,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t.v0eDdV)
+      return w.intl.string(w.t.v0eDdV)
     },
     get displayDescription() {
-      return R.intl.string(R.t.v0eDdV)
+      return w.intl.string(w.t.v0eDdV)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.D13pbc)
+        return w.intl.string(w.t.D13pbc)
       },
       get displayDescription() {
-        return R.intl.string(R.t.D13pbc)
+        return w.intl.string(w.t.D13pbc)
       },
       required: true
     }],
@@ -295,20 +295,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t["jiHfS/"])
+      return w.intl.string(w.t["jiHfS/"])
     },
     get displayDescription() {
-      return R.intl.string(R.t["jiHfS/"])
+      return w.intl.string(w.t["jiHfS/"])
     },
     options: [{
       name: "new_nick",
       displayName: "new_nick",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.WTSzVu)
+        return w.intl.string(w.t.WTSzVu)
       },
       get displayDescription() {
-        return R.intl.string(R.t.WTSzVu)
+        return w.intl.string(w.t.WTSzVu)
       }
     }],
     predicate: e => {
@@ -335,20 +335,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t.t6ZAS0)
+      return w.intl.string(w.t.t6ZAS0)
     },
     get displayDescription() {
-      return R.intl.string(R.t.t6ZAS0)
+      return w.intl.string(w.t.t6ZAS0)
     },
     options: [{
       name: "name",
       displayName: "name",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.TffOfY)
+        return w.intl.string(w.t.TffOfY)
       },
       get displayDescription() {
-        return R.intl.string(R.t.TffOfY)
+        return w.intl.string(w.t.TffOfY)
       },
       required: true
     }, {
@@ -356,10 +356,10 @@ let L = require("./743361.js").A,
       displayName: "message",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.QXfSfU)
+        return w.intl.string(w.t.QXfSfU)
       },
       get displayDescription() {
-        return R.intl.string(R.t.QXfSfU)
+        return w.intl.string(w.t.QXfSfU)
       },
       required: true
     }],
@@ -386,20 +386,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t["03N0UL"])
+      return w.intl.string(w.t["03N0UL"])
     },
     get displayDescription() {
-      return R.intl.string(R.t["03N0UL"])
+      return w.intl.string(w.t["03N0UL"])
     },
     options: [{
       name: "user",
       displayName: "user",
       type: Chunk155718.n4.USER,
       get description() {
-        return R.intl.string(R.t.gF8IpD)
+        return w.intl.string(w.t.gF8IpD)
       },
       get displayDescription() {
-        return R.intl.string(R.t.gF8IpD)
+        return w.intl.string(w.t.gF8IpD)
       },
       required: true
     }, {
@@ -407,10 +407,10 @@ let L = require("./743361.js").A,
       displayName: "reason",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.QWldgj)
+        return w.intl.string(w.t.QWldgj)
       },
       get displayDescription() {
-        return R.intl.string(R.t.QWldgj)
+        return w.intl.string(w.t.QWldgj)
       },
       required: false
     }],
@@ -432,12 +432,12 @@ let L = require("./743361.js").A,
         var t;
         let n = O.default.getUser(a);
         if (null == n) throw Error();
-        await u.A.kickUser(r.id, a, null != (t = j(e, "reason")) ? t : ""), d.A.sendBotMessage(i.id, R.intl.formatToPlainString(R.t["9wzHDV"], {
+        await u.A.kickUser(r.id, a, null != (t = j(e, "reason")) ? t : ""), d.A.sendBotMessage(i.id, w.intl.formatToPlainString(w.t["9wzHDV"], {
           user: A.Ay.getUserTag(n)
         }))
       })().catch(() => {
-        d.A.sendBotMessage(i.id, R.intl.string(R.t.l0gNlp))
-      }) : d.A.sendBotMessage(i.id, R.intl.string(R.t["6RIwPI"]))
+        d.A.sendBotMessage(i.id, w.intl.string(w.t.l0gNlp))
+      }) : d.A.sendBotMessage(i.id, w.intl.string(w.t["6RIwPI"]))
     }
   }, {
     id: "-12",
@@ -447,20 +447,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t.HWuskv)
+      return w.intl.string(w.t.HWuskv)
     },
     get displayDescription() {
-      return R.intl.string(R.t.HWuskv)
+      return w.intl.string(w.t.HWuskv)
     },
     options: [{
       name: "user",
       displayName: "user",
       type: Chunk155718.n4.USER,
       get description() {
-        return R.intl.string(R.t.z3XPjr)
+        return w.intl.string(w.t.z3XPjr)
       },
       get displayDescription() {
-        return R.intl.string(R.t.z3XPjr)
+        return w.intl.string(w.t.z3XPjr)
       },
       required: true
     }, {
@@ -468,40 +468,40 @@ let L = require("./743361.js").A,
       displayName: "delete_messages",
       type: Chunk155718.n4.INTEGER,
       get description() {
-        return R.intl.string(R.t.smrvA6)
+        return w.intl.string(w.t.smrvA6)
       },
       get displayDescription() {
-        return R.intl.string(R.t.smrvA6)
+        return w.intl.string(w.t.smrvA6)
       },
       required: true,
       get choices() {
         return [{
-          name: R.intl.string(R.t["4obaMS"]),
-          displayName: R.intl.string(R.t["4obaMS"]),
+          name: w.intl.string(w.t["4obaMS"]),
+          displayName: w.intl.string(w.t["4obaMS"]),
           value: 0
         }, {
-          name: R.intl.string(R.t.RKpitY),
-          displayName: R.intl.string(R.t.RKpitY),
+          name: w.intl.string(w.t.RKpitY),
+          displayName: w.intl.string(w.t.RKpitY),
           value: v.A.Seconds.HOUR
         }, {
-          name: R.intl.string(R.t["8WfJZ8"]),
-          displayName: R.intl.string(R.t["8WfJZ8"]),
+          name: w.intl.string(w.t["8WfJZ8"]),
+          displayName: w.intl.string(w.t["8WfJZ8"]),
           value: 6 * v.A.Seconds.HOUR
         }, {
-          name: R.intl.string(R.t.p1up7u),
-          displayName: R.intl.string(R.t.p1up7u),
+          name: w.intl.string(w.t.p1up7u),
+          displayName: w.intl.string(w.t.p1up7u),
           value: 12 * v.A.Seconds.HOUR
         }, {
-          name: R.intl.string(R.t.XuVkkD),
-          displayName: R.intl.string(R.t.XuVkkD),
+          name: w.intl.string(w.t.XuVkkD),
+          displayName: w.intl.string(w.t.XuVkkD),
           value: v.A.Seconds.DAY
         }, {
-          name: R.intl.string(R.t["gMcDS+"]),
-          displayName: R.intl.string(R.t["gMcDS+"]),
+          name: w.intl.string(w.t["gMcDS+"]),
+          displayName: w.intl.string(w.t["gMcDS+"]),
           value: 3 * v.A.Seconds.DAY
         }, {
-          name: R.intl.string(R.t.FA7IUk),
-          displayName: R.intl.string(R.t.FA7IUk),
+          name: w.intl.string(w.t.FA7IUk),
+          displayName: w.intl.string(w.t.FA7IUk),
           value: 7 * v.A.Seconds.DAY
         }]
       }
@@ -510,10 +510,10 @@ let L = require("./743361.js").A,
       displayName: "reason",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.dG4noU)
+        return w.intl.string(w.t.dG4noU)
       },
       get displayDescription() {
-        return R.intl.string(R.t.dG4noU)
+        return w.intl.string(w.t.dG4noU)
       },
       required: false
     }],
@@ -537,12 +537,12 @@ let L = require("./743361.js").A,
         let s = null != (t = j(e, "delete_messages")) ? t : 0,
           o = null != (n = j(e, "reason")) ? n : "",
           l = O.default.getUser(a);
-        await u.A.banUser(r.id, a, s, o), d.A.sendBotMessage(i.id, R.intl.formatToPlainString(R.t.YflWdM, {
+        await u.A.banUser(r.id, a, s, o), d.A.sendBotMessage(i.id, w.intl.formatToPlainString(w.t.YflWdM, {
           user: null != l ? A.Ay.getUserTag(l) : a
         }))
       })().catch(() => {
-        d.A.sendBotMessage(i.id, R.intl.string(R.t.w2J6Qs))
-      }) : d.A.sendBotMessage(i.id, R.intl.string(R.t.R27LJl))
+        d.A.sendBotMessage(i.id, w.intl.string(w.t.w2J6Qs))
+      }) : d.A.sendBotMessage(i.id, w.intl.string(w.t.R27LJl))
     }
   }, {
     id: "-13",
@@ -552,20 +552,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t.KkPcep)
+      return w.intl.string(w.t.KkPcep)
     },
     get displayDescription() {
-      return R.intl.string(R.t.KkPcep)
+      return w.intl.string(w.t.KkPcep)
     },
     options: [{
       name: "user",
       displayName: "user",
       type: Chunk155718.n4.USER,
       get description() {
-        return R.intl.string(R.t.UU3VRm)
+        return w.intl.string(w.t.UU3VRm)
       },
       get displayDescription() {
-        return R.intl.string(R.t.UU3VRm)
+        return w.intl.string(w.t.UU3VRm)
       },
       required: true
     }, {
@@ -573,10 +573,10 @@ let L = require("./743361.js").A,
       displayName: "duration",
       type: Chunk155718.n4.INTEGER,
       get description() {
-        return R.intl.string(R.t.SNqN1e)
+        return w.intl.string(w.t.SNqN1e)
       },
       get displayDescription() {
-        return R.intl.string(R.t.SNqN1e)
+        return w.intl.string(w.t.SNqN1e)
       },
       required: true,
       get choices() {
@@ -590,10 +590,10 @@ let L = require("./743361.js").A,
       displayName: "reason",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.akHScA)
+        return w.intl.string(w.t.akHScA)
       },
       get displayDescription() {
-        return R.intl.string(R.t.akHScA)
+        return w.intl.string(w.t.akHScA)
       },
       required: false
     }],
@@ -622,13 +622,13 @@ let L = require("./743361.js").A,
           communicationDisabledUntilTimestamp: s()().add(o, "s").toISOString(),
           duration: o,
           reason: l
-        }), d.A.sendBotMessage(r.id, R.intl.formatToPlainString(R.t.BbRV6o, {
+        }), d.A.sendBotMessage(r.id, w.intl.formatToPlainString(w.t.BbRV6o, {
           user: A.Ay.getUserTag(c),
           duration: o
         }))
       })().catch(() => {
-        d.A.sendBotMessage(r.id, R.intl.string(R.t["+mWyVq"]))
-      }): d.A.sendBotMessage(r.id, R.intl.string(R.t.F5pqSf))
+        d.A.sendBotMessage(r.id, w.intl.string(w.t["+mWyVq"]))
+      }): d.A.sendBotMessage(r.id, w.intl.string(w.t.F5pqSf))
     }
   }, {
     id: "-14",
@@ -638,20 +638,20 @@ let L = require("./743361.js").A,
     inputType: Chunk392054.y$.BUILT_IN,
     applicationId: Chunk73510.Ik.BUILT_IN,
     get untranslatedDescription() {
-      return R.intl.string(R.t.Dg8XZw)
+      return w.intl.string(w.t.Dg8XZw)
     },
     get displayDescription() {
-      return R.intl.string(R.t.Dg8XZw)
+      return w.intl.string(w.t.Dg8XZw)
     },
     options: [{
       name: "user",
       displayName: "user",
       type: Chunk155718.n4.USER,
       get description() {
-        return R.intl.string(R.t["KmVq/D"])
+        return w.intl.string(w.t["KmVq/D"])
       },
       get displayDescription() {
-        return R.intl.string(R.t["KmVq/D"])
+        return w.intl.string(w.t["KmVq/D"])
       },
       required: true
     }, {
@@ -659,10 +659,10 @@ let L = require("./743361.js").A,
       displayName: "message",
       type: Chunk155718.n4.STRING,
       get description() {
-        return R.intl.string(R.t.oGUuOJ)
+        return w.intl.string(w.t.oGUuOJ)
       },
       get displayDescription() {
-        return R.intl.string(R.t.oGUuOJ)
+        return w.intl.string(w.t.oGUuOJ)
       },
       required: true,
       get maxLength() {
@@ -688,7 +688,7 @@ let L = require("./743361.js").A,
           })
         })
       })().catch(() => {
-        d.A.sendBotMessage(r.id, R.intl.string(R.t["3XaE95"]))
+        d.A.sendBotMessage(r.id, w.intl.string(w.t["3XaE95"]))
       })
     }
   }],

@@ -59,7 +59,7 @@ function q(e, t, n) {
   }) : e[t] = n, e
 }
 
-function X(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -72,7 +72,7 @@ function X(e) {
   return e
 }
 
-function Z(e, t) {
+function X(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -84,12 +84,12 @@ function Z(e, t) {
 }
 
 function Q(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : X(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let $ = 52,
-  J = 52,
+let J = 52,
+  $ = 52,
   ee = 24,
   et = .025;
 
@@ -222,7 +222,7 @@ function es(e) {
     guildId: o,
     reactionType: l,
     onRemoveReactor: c
-  } = e, d = (0, u.bG)([R.default], () => R.default.getId()), p = (0, u.bG)([M.default], () => M.default.getUser(n.id), [n]), h = (0, C.Id)(a), E = (0, u.bG)([L.A], () => L.A.can(Y.xBc.MANAGE_MESSAGES, a) && h) || d === n.id, b = (0, u.bG)([P.Ay, w.A, j.A], () => G.Ay.getName(o, a.id, n));
+  } = e, d = (0, u.bG)([w.default], () => w.default.getId()), p = (0, u.bG)([M.default], () => M.default.getUser(n.id), [n]), h = (0, C.Id)(a), E = (0, u.bG)([L.A], () => L.A.can(Y.xBc.MANAGE_MESSAGES, a) && h) || d === n.id, b = (0, u.bG)([P.Ay, R.A, j.A], () => G.Ay.getName(o, a.id, n));
 
   function O() {
     B.et({
@@ -355,15 +355,15 @@ class eo extends Chunk64700.PureComponent {
       } = this.scrollerRef;
       if (null == e) return;
       let t = e.getScrollerState();
-      t.scrollTop + t.offsetHeight >= t.scrollHeight - $ && this.props.hasMore && !this.state.loadingMore && this.loadMore()
+      t.scrollTop + t.offsetHeight >= t.scrollHeight - J && this.props.hasMore && !this.state.loadingMore && this.loadMore()
     }), q(this, "getRowHeight", (e, t) => {
       let {
         reactors: n
       } = this.props;
-      if (1 === e) return 0 === t ? $ : 0;
+      if (1 === e) return 0 === t ? J : 0;
       if (0 === e) {
-        if (0 === t && 0 === n.length) return J;
-        if (null != this.props.reactors[t]) return $
+        if (0 === t && 0 === n.length) return $;
+        if (null != this.props.reactors[t]) return J
       }
       return 0
     }), q(this, "renderRow", e => {
@@ -416,9 +416,9 @@ function ec(e) {
   return i.useMemo(() => {
     let t = [];
     return e.forEach(e => {
-      e.burst_count > 0 && t.push(Q(X({}, e), {
+      e.burst_count > 0 && t.push(Q(Z({}, e), {
         count: 0
-      })), e.count > 0 && t.push(Q(X({}, e), {
+      })), e.count > 0 && t.push(Q(Z({}, e), {
         burst_count: 0
       }))
     }), t.sort((e, t) => {
@@ -447,7 +447,7 @@ function ed(e) {
     onClose: a,
     transitionState: s,
     "aria-label": o = W.intl.string(W.t.gHp0C4)
-  } = e, l = (0, u.bG)([w.A], () => w.A.getChannel(t.getChannelId())), c = null == l ? true : l.getGuildId(), d = (0, u.bG)([x.A, v.A], () => {
+  } = e, l = (0, u.bG)([R.A], () => R.A.getChannel(t.getChannelId())), c = null == l ? true : l.getGuildId(), d = (0, u.bG)([x.A, v.A], () => {
     var e, n;
     let r = null != (e = x.A.getMessage(t.getChannelId(), t.id)) ? e : null == (n = v.A.getMessage(V.default.castMessageIdAsChannelId(t.id))) ? true : n.firstMessage;
     return null != r ? r.reactions : []

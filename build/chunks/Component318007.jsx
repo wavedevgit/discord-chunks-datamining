@@ -92,15 +92,15 @@ let T = e => {
     emojiConfetti: T,
     soundEffect: C,
     setEmojiConfetti: N,
-    setSoundEffect: R
-  } = (0, c.Pv)(), [w, P] = i.useState(false), D = i.useRef(null), x = (0, o._u)({
+    setSoundEffect: w
+  } = (0, c.Pv)(), [R, P] = i.useState(false), D = i.useRef(null), x = (0, o._u)({
     orientation: "horizontal"
   }), {
     ref: L
   } = x, j = I(x, ["ref"]), M = (0, d.lo)(b, t), k = M === d.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== d.tB.DEFAULT, G = (0, _._)(), V = (0, p.A)({
     location: "GiftAnimationOptions"
   }), F = e => {
-    null != R && R(null == e ? true : e)
+    null != w && w(null == e ? true : e)
   };
   return (0, r.jsxs)("div", {
     children: [U && (0, r.jsxs)("div", {
@@ -124,7 +124,7 @@ let T = e => {
         })]
       })]
     }), (0, r.jsx)("div", A(O({
-      tabIndex: null != v || w ? true : 0,
+      tabIndex: null != v || R ? true : 0,
       onFocus: e => {
         var t;
         e.target === e.currentTarget && (null == (t = D.current) || t.focus())

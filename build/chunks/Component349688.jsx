@@ -99,8 +99,8 @@ function I(e, t) {
     size: T = 1
   } = e, C = (0, o.rm)(n), {
     onFocus: N
-  } = C, R = b(C, ["onFocus"]), {
-    handleFocus: w,
+  } = C, w = b(C, ["onFocus"]), {
+    handleFocus: R,
     handleBlur: P
   } = (0, f.G)(N), D = 0 === T, x = null != E, L = e => {
     if (v) {
@@ -125,8 +125,8 @@ function I(e, t) {
     }
   };
   return (0, r.jsx)(l.vN3, {
-    children: (0, r.jsx)("li", y(g({}, R), {
-      onFocus: w,
+    children: (0, r.jsx)("li", y(g({}, w), {
+      onFocus: R,
       onBlur: P,
       onKeyDown: L,
       className: s()(h.Se, a, {

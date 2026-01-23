@@ -95,14 +95,14 @@ let eg = () => {
       section: j.nc_.GUILD_BOOSTING,
       analyticsLocations: e
     })
-  }, eR = () => {
+  }, ew = () => {
     let t = (0, E.qz)("openEntranceSounds") ? g.X.SOUNDBOARD_CATEGORY : g.X.VOICE_AND_VIDEO_PANEL;
     (0, b.openUserSettings)(t, {
       section: j.nc_.VOICE,
       subsection: k.MJ,
       analyticsLocations: e
     })
-  }, ew = () => {
+  }, eR = () => {
     (0, m.pX)(j.BVt.COLLECTIBLES_SHOP)
   }, eP = () => {
     (0, y.A)(U.J.CLIPS, {
@@ -145,14 +145,14 @@ let eg = () => {
       descriptionCta: ev ? G.intl.string(G.t.jVcuVY) : G.intl.string(G.t.hvVgAZ),
       pillText: G.intl.string(G.t.EYxi0o),
       onCtaClick: ev ? eP : ex,
-      perkImage: X
+      perkImage: Z
     } : {
       name: "clips",
       title: G.intl.string(G.t.z2jK6X),
       subtitle: G.intl.string(G.t["hxy0/R"]),
       description: G.intl.string(G.t.X9IeN3),
       pillText: G.intl.string(G.t.EYxi0o),
-      perkImage: X
+      perkImage: Z
     },
     earlyAccess: eb ? {
       name: "earlyAccess",
@@ -173,14 +173,14 @@ let eg = () => {
       title: G.intl.string(G.t.UkLVeJ),
       subtitle: G.intl.string(G.t.xf9ePm),
       description: G.intl.string(G.t["+r4vdg"]),
-      perkImage: $
+      perkImage: J
     } : {
       name: "earlyAccess",
       title: G.intl.string(G.t.UkLVeJ),
       subtitle: G.intl.string(G.t.xf9ePm),
       description: G.intl.string(G.t["6+xTci"]),
       isPremiumGetCta: true,
-      perkImage: $
+      perkImage: J
     },
     entranceSounds: eb ? {
       name: "entranceSounds",
@@ -188,7 +188,7 @@ let eg = () => {
       subtitle: G.intl.string(G.t["7ZCYvC"]),
       description: G.intl.string(G.t.mUT8bO),
       descriptionCta: G.intl.string(G.t.jVcuVY),
-      onCtaClick: eR,
+      onCtaClick: ew,
       perkImage: ee
     } : {
       name: "entranceSounds",
@@ -203,7 +203,7 @@ let eg = () => {
       subtitle: G.intl.string(G.t["7ZCYvC"]),
       description: G.intl.string(G.t.mUT8bO),
       descriptionCta: G.intl.string(G.t.jVcuVY),
-      onCtaClick: eR,
+      onCtaClick: ew,
       perkImage: et
     } : {
       name: "entranceSoundsSeeAllVariation",
@@ -246,7 +246,7 @@ let eg = () => {
       subtitle: G.intl.string(G.t.opgqDZ),
       description: G.intl.string(G.t["t+QZSd"]),
       descriptionCta: G.intl.string(G.t.dBJVnZ),
-      onCtaClick: ew,
+      onCtaClick: eR,
       perkImage: en
     },
     specialMemberPricingSeeAllVariant: {
@@ -255,7 +255,7 @@ let eg = () => {
       subtitle: G.intl.string(G.t.opgqDZ),
       description: G.intl.string(G.t["t+QZSd"]),
       descriptionCta: G.intl.string(G.t.dBJVnZ),
-      onCtaClick: ew,
+      onCtaClick: eR,
       perkImage: en
     },
     specialShopPerks: {
@@ -264,7 +264,7 @@ let eg = () => {
       subtitle: G.intl.string(G.t.chRZiX),
       description: G.intl.string(G.t["t+QZSd"]),
       descriptionCta: G.intl.string(G.t.dBJVnZ),
-      onCtaClick: ew,
+      onCtaClick: eR,
       perkImage: en
     },
     superReactions: {
@@ -299,7 +299,7 @@ let eg = () => {
       name: "customAppIcons",
       title: G.intl.string(G.t.OuItFi),
       subtitle: G.intl.string(G.t.mPyrE6),
-      perkImage: Z,
+      perkImage: X,
       description: G.intl.string(G.t.e7FKCi),
       descriptionCta: G.intl.string(G.t.jVcuVY),
       onCtaClick: eD
@@ -308,7 +308,7 @@ let eg = () => {
       name: "moreEmojiPower",
       title: G.intl.string(G.t["R2IV/Q"]),
       subtitle: G.intl.string(G.t.R5Xag2),
-      perkImage: J,
+      perkImage: $,
       description: G.intl.string(G.t["8lsjSw"])
     },
     customSoundsEverywhere: {
@@ -416,7 +416,7 @@ let eg = () => {
       pillText: G.intl.string(G.t.oW0eUd).toLocaleUpperCase(),
       description: G.intl.format(G.t.zh1X7u, {}),
       descriptionCta: G.intl.string(G.t.w7s5Qr),
-      customContent: (0, r.jsx)(R.U, {
+      customContent: (0, r.jsx)(w.U, {
         percentage: eU
       })
     },
@@ -426,7 +426,7 @@ let eg = () => {
     name: "tenureBadge",
     title: G.intl.string(G.t.rnsqpa),
     pillText: G.intl.string(G.t["jyYgZ+"]).toLocaleUpperCase(),
-    perkComponent: (0, r.jsx)(w.A, {}),
+    perkComponent: (0, r.jsx)(R.A, {}),
     cardVariant: D.PJ.NITRO_GRADIENT_HOVER_BORDER,
     onClick: () => (0, P.D)({
       analyticsLocations: e

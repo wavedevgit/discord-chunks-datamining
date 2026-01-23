@@ -154,7 +154,7 @@ function j(e) {
         scrollPosition: s
       })
     }, [l]),
-    $ = i.useCallback((e, t, n, i) => {
+    J = i.useCallback((e, t, n, i) => {
       if (0 !== e) return null;
       {
         let e = o[t];
@@ -192,7 +192,7 @@ function j(e) {
       })
     })
   }, []);
-  let J = i.useMemo(() => (0, s.debounce)(() => {
+  let $ = i.useMemo(() => (0, s.debounce)(() => {
       var e;
       let t = null == (e = B.current) ? true : e.getScrollerState();
       if (null == t) return;
@@ -212,13 +212,13 @@ function j(e) {
       columns: U,
       itemGutter: 16,
       padding: ee,
-      renderItem: $,
+      renderItem: J,
       renderSection: q,
       getSectionHeight: z,
       getItemKey: Q,
       getItemHeight: X,
       chunkSize: 24,
-      onScroll: J,
+      onScroll: $,
       renderAccessory: e => D ? (0, r.jsx)("div", {
         className: v.pz,
         style: {

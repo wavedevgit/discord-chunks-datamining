@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 139210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -50,11 +50,11 @@ let _ = (0, Chunk108531.animated)(Chunk57718.Ay),
           sourceQuestContent: u.uF.QUEST_BAR_V2
         })
       }, [e, C]),
-      E = y && A,
-      T = (0, a.jsx)(o.DUT, {
+      T = y && A,
+      E = (0, a.jsx)(o.DUT, {
         onClick: O,
         className: i()(j.vk, {
-          [j.wm]: E
+          [j.wm]: T
         }),
         children: (0, a.jsx)(_, {
           quest: C,
@@ -72,7 +72,7 @@ let _ = (0, Chunk108531.animated)(Chunk57718.Ay),
       });
     return (0, a.jsxs)(s.animated.div, {
       className: i()(j.iE, j.Ht, {
-        [j.tT]: E
+        [j.tT]: T
       }),
       style: {
         transform: (0, s.to)([t.to({
@@ -89,8 +89,8 @@ let _ = (0, Chunk108531.animated)(Chunk57718.Ay),
           })
         }
       }), (0, a.jsx)(b.A, {
-        isFullyExpanded: E,
-        partnerBranding: T
+        isFullyExpanded: T,
+        partnerBranding: E
       }), (0, a.jsxs)(s.animated.div, {
         className: j.P0,
         style: {

@@ -149,14 +149,14 @@ function N(e) {
   return C(t)
 }
 
-function R(e) {
+function w(e) {
   let {
     channel: t
   } = e;
   if (null == t.guild_id || !(t.guild_id in h)) returnfalse;
   h[t.guild_id] = f({}, h[t.guild_id]), delete h[t.guild_id][t.id]
 }
-let w = {};
+let R = {};
 class P extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.A)
@@ -166,11 +166,11 @@ class P extends(r = Chunk311907.Ay.Store) {
   }
   getThreadsForGuild(e) {
     var t;
-    return null != (t = h[e]) ? t : w
+    return null != (t = h[e]) ? t : R
   }
   getThreadsForParent(e, t) {
     var n;
-    return null != (n = this.getThreadsForGuild(e)[t]) ? n : w
+    return null != (n = this.getThreadsForGuild(e)[t]) ? n : R
   }
   hasThreadsForChannel(e, t) {
     return !a().isEmpty(this.getThreadsForParent(e, t))
@@ -194,5 +194,5 @@ let D = new P(Chunk73153.h, {
   THREAD_UPDATE: S,
   THREAD_LIST_SYNC: T,
   THREAD_DELETE: N,
-  CHANNEL_DELETE: R
+  CHANNEL_DELETE: w
 })

@@ -4,7 +4,7 @@
 require.d(exports, {
   P5: () => ee,
   PaymentContextProvider: () => en,
-  Qv: () => J
+  Qv: () => $
 }), require("./896048.js"), require("./938796.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -53,7 +53,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk898772 = require("./898772.js");
 
-function X(e, t, n) {
+function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -62,14 +62,14 @@ function X(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function X(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      X(e, t, n[t])
+      Z(e, t, n[t])
     })
   }
   return e
@@ -86,17 +86,17 @@ function Q(e, t) {
   return n
 }
 
-function $(e, t) {
+function J(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let [J, ee, et] = (0, Chunk786300.A)();
+let [$, ee, et] = (0, Chunk786300.A)();
 
 function en(e) {
   var t, n, s, N;
   let {
-    loadId: X,
+    loadId: Z,
     activeSubscription: Q,
     stepConfigs: ee,
     breadcrumbs: et = [],
@@ -126,8 +126,8 @@ function en(e) {
     hasFetchedSubscriptionPlans: eT,
     priceOptions: eC,
     setCurrency: eN,
-    currencyLoading: eR,
-    currencies: ew
+    currencyLoading: ew,
+    currencies: eR
   } = (0, L.A)({
     activeSubscription: Q,
     skuIDs: en,
@@ -151,8 +151,8 @@ function en(e) {
     purchaseErrorBlockRef: eY,
     setPurchaseError: eW
   } = (0, U.A)(), eK = (0, d.A)(() => {
-    let e = null != X ? X : (0, l.A)();
-    return w.A.addBreadcrumb({
+    let e = null != Z ? Z : (0, l.A)();
+    return R.A.addBreadcrumb({
       message: "Checkout session ID: ".concat(e)
     }), {
       loadId: e,
@@ -161,11 +161,11 @@ function en(e) {
   }), {
     selectedSkuId: ez,
     selectedPlan: eq,
-    selectedPlanNotification: eX,
-    setSelectedSkuId: eZ,
+    selectedPlanNotification: eZ,
+    setSelectedSkuId: eX,
     setSelectedPlanId: eQ,
-    setSelectedPlanNotification: e$
-  } = (0, P.A)(), [eJ, e0] = (0, u.yK)([I.A], () => [I.A.purchaseTokenAuthState, I.A.purchaseTokenHash]), [e1, e2, e3, e6] = (0, u.yK)([Y.A], () => [Y.A.browserCheckoutState, Y.A.loadId, Y.A.skuId, Y.A.planId]), [e4, e5] = i.useState(null), [e7, e8] = i.useState(null), [e9, te] = i.useState(null), [tt, tn] = i.useState(null), [tr, ti] = i.useState(null), [ta, ts] = i.useState(true), [to, tl] = i.useState([]), [tc, tu] = i.useState([]), td = i.useMemo(() => null == eq || (0, R.ys)(eq.id), [eq]), tf = i.useRef(null != Q ? Q.planId : null);
+    setSelectedPlanNotification: eJ
+  } = (0, P.A)(), [e$, e0] = (0, u.yK)([I.A], () => [I.A.purchaseTokenAuthState, I.A.purchaseTokenHash]), [e1, e2, e3, e6] = (0, u.yK)([Y.A], () => [Y.A.browserCheckoutState, Y.A.loadId, Y.A.skuId, Y.A.planId]), [e4, e5] = i.useState(null), [e7, e8] = i.useState(null), [e9, te] = i.useState(null), [tt, tn] = i.useState(null), [tr, ti] = i.useState(null), [ta, ts] = i.useState(true), [to, tl] = i.useState([]), [tc, tu] = i.useState([]), td = i.useMemo(() => null == eq || (0, w.ys)(eq.id), [eq]), tf = i.useRef(null != Q ? Q.planId : null);
   i.useEffect(() => {
     null == tf.current && null != Q && (tf.current = Q.planId)
   }, [Q]);
@@ -181,8 +181,8 @@ function en(e) {
   let th = i.useMemo(() => ({
     paymentSourceId: ev,
     paymentGateway: ec,
-    loadId: X
-  }), [ev, ec, X]);
+    loadId: Z
+  }), [ev, ec, Z]);
   (0, x.A)(eg, th);
   let {
     skusById: tm,
@@ -206,13 +206,13 @@ function en(e) {
     null != tS && (0, c.Lt)(tS.flags, K.gfo.EMBEDDED) && tT && null == tC && (0, p.SE)()
   }, [tS, tT, tC]);
   let tN = (0, c.Lt)(null != (t = null == tS ? true : tS.flags) ? t : 0, K.gfo.EMBEDDED) && (0, c.Lt)(null != (n = null == tS ? true : tS.flags) ? n : 0, K.gfo.EMBEDDED_IAP),
-    tR = (0, u.bG)([_.Ay], () => Array.from(_.Ay.getSelfEmbeddedActivities().values()).find(e => {
+    tw = (0, u.bG)([_.Ay], () => Array.from(_.Ay.getSelfEmbeddedActivities().values()).find(e => {
       let {
         applicationId: t
       } = e;
       return t === eo
     })),
-    tw = null == tR ? true : tR.compositeInstanceId,
+    tR = null == tw ? true : tw.compositeInstanceId,
     tP = (0, u.bG)([C.A], () => null != ez ? C.A.getForSKU(ez) : null, [ez]),
     [tD, tx] = i.useState(null),
     tL = null != (s = null == Q ? true : Q.inReverseTrial) && s && !er,
@@ -242,8 +242,8 @@ function en(e) {
     tY = (0, O.O)(),
     tW = null == tY || null == (N = tY.discount) ? true : N.plan_ids.some(e => z.hd[e].skuId === ez),
     tK = !!(!tF && !er && null != tY && null != ez && tW);
-  return (0, r.jsx)(J.Provider, {
-    value: $(Z({
+  return (0, r.jsx)($.Provider, {
+    value: J(X({
       stripe: e_,
       paymentElementsEnabled: tU,
       contextMetadata: eK,
@@ -262,8 +262,8 @@ function en(e) {
       setPaymentSourceId: eA,
       priceOptions: eC,
       setCurrency: eN,
-      currencyLoading: eR,
-      currencies: ew
+      currencyLoading: ew,
+      currencies: eR
     }, eP), {
       hasAcceptedTerms: eD,
       setHasAcceptedTerms: ex,
@@ -282,7 +282,7 @@ function en(e) {
       purchasePreviewError: tv,
       setPurchasePreviewError: tA,
       purchaseErrorBlockRef: eY,
-      purchaseTokenAuthState: eJ,
+      purchaseTokenAuthState: e$,
       purchaseTokenHash: e0,
       browserCheckoutState: e1,
       browserCheckoutStateLoadId: e2,
@@ -298,10 +298,10 @@ function en(e) {
       selectedSku: tb,
       selectedStoreListing: tP,
       selectedPlan: eq,
-      setSelectedSkuId: eZ,
+      setSelectedSkuId: eX,
       setSelectedPlanId: eQ,
-      selectedPlanNotification: eX,
-      setSelectedPlanNotification: e$,
+      selectedPlanNotification: eZ,
+      setSelectedPlanNotification: eJ,
       readySlideId: ta,
       setReadySlideId: ts,
       defaultPlanId: ea,
@@ -317,7 +317,7 @@ function en(e) {
       application: tS,
       purchaseType: es,
       isEmbeddedIAP: tN,
-      activitySessionId: tw,
+      activitySessionId: tR,
       devShelfFetchState: tC,
       entitlementsGranted: to,
       setEntitlementsGranted: tl,

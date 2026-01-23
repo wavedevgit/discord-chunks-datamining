@@ -71,8 +71,8 @@ function N(e) {
     channel: I,
     message: S,
     hideParty: N,
-    onView: R
-  } = e, w = (0, o.b)(m), P = (0, a.bG)([u.default], () => u.default.getId()), D = (0, a.bG)([p.A], () => {
+    onView: w
+  } = e, R = (0, o.b)(m), P = (0, a.bG)([u.default], () => u.default.getId()), D = (0, a.bG)([p.A], () => {
     if (null == S.application) return p.A.findActivity(S.author.id, e => e.type === v.$pd.LISTENING);
     {
       let e = S.author.id;
@@ -80,8 +80,8 @@ function N(e) {
     }
   }, [S, I, P]), x = (0, a.bG)([f.A, _.A], () => {
     var e;
-    return null != (e = f.A.getApplicationActivity(w.id)) ? e : _.A.getApplicationActivity(w.id, true)
-  }, [w.id]), L = (0, a.yK)([d.A], () => {
+    return null != (e = f.A.getApplicationActivity(R.id)) ? e : _.A.getApplicationActivity(R.id, true)
+  }, [R.id]), L = (0, a.yK)([d.A], () => {
     var e;
     return null == D || null == D.party ? [] : Array.from(null != (e = d.A.getParty(D.party.id)) ? e : [])
   }, [D]), {
@@ -100,30 +100,30 @@ function N(e) {
       activityActionType: null == (e = S.activity) ? true : e.type
     })
   }, [k, j, M, I.guild_id, null == (t = S.activity) ? true : t.type]);
-  return (0, A.pH)(null == D || null == (n = D.party) ? true : n.id) || w.id === c.HT.id ? (0, r.jsx)(O.A, {
-    application: w,
+  return (0, A.pH)(null == D || null == (n = D.party) ? true : n.id) || R.id === c.HT.id ? (0, r.jsx)(O.A, {
+    application: R,
     currentUserPresenceActivity: x,
     hideParty: N,
     message: S,
-    onView: R,
+    onView: w,
     partyStatusElement: U,
     presenceActivity: D,
     guildId: I.guild_id
   }) : C(S) ? (0, r.jsx)(l.A, {
     analyticsLocations: s,
-    application: w,
+    application: R,
     channel: I,
     currentUserId: P,
     message: S
   }) : (0, r.jsx)(b.A, {
     analyticsLocations: s,
-    application: w,
+    application: R,
     channel: I,
     currentUserId: P,
     currentUserPresenceActivity: x,
     hideParty: N,
     message: S,
-    onView: R,
+    onView: w,
     partyStatusElement: U,
     presenceActivity: D
   })

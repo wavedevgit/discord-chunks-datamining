@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   $F: () => o.LG,
-  Bo: () => R,
+  Bo: () => w,
   Cu: () => L,
   IA: () => D,
-  TP: () => w,
+  TP: () => R,
   Wl: () => c.L,
   bG: () => o.bG,
   ni: () => l.n,
@@ -234,7 +234,7 @@ let I = A.bind(null, "get"),
   T = A.bind(null, "put"),
   C = A.bind(null, "patch"),
   N = A.bind(null, "del"),
-  R = {
+  w = {
     get: I,
     post: S,
     put: T,
@@ -252,7 +252,7 @@ if (require.g.isServerRendering) {
   I = module, S = module, T = module, C = module, N = module
 }
 
-function w() {
+function R() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
   return "https:" + window.GLOBAL_ENV.API_ENDPOINT + (e ? "/v".concat(window.GLOBAL_ENV.API_VERSION) : "")
 }

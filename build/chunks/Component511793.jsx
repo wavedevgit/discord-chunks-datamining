@@ -34,7 +34,7 @@ var Chunk627968 = require("./627968.js"),
 require("./436317.js");
 var Chunk396574 = require("./396574.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,7 +50,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -119,7 +119,7 @@ let L = (0, Chunk268218.Fe)({
     name: "ActivateDevice"
   }),
   H = (0, Chunk268218.Fe)({
-    createPromise: () => Promise.all([n.e("10614"), n.e("49681"), n.e("94678"), n.e("896"), n.e("73924"), n.e("92777"), n.e("17050"), n.e("87440"), n.e("99011"), n.e("28136"), n.e("72271"), n.e("49862"), n.e("8018"), n.e("59541"), n.e("60989"), n.e("49107"), n.e("24202"), n.e("33818"), n.e("79149"), n.e("94503"), n.e("14360"), n.e("83898"), n.e("4787"), n.e("88974"), n.e("20088"), n.e("6502"), n.e("79023"), n.e("28979"), n.e("31748"), n.e("1636"), n.e("20725"), n.e("48898"), n.e("74492"), n.e("34160"), n.e("33563"), n.e("21724"), n.e("97492"), n.e("65599"), n.e("28636"), n.e("46636"), n.e("71853"), n.e("94531"), n.e("56423"), n.e("21738")]).then(n.bind(n, 885041)),
+    createPromise: () => Promise.all([n.e("10614"), n.e("49681"), n.e("94678"), n.e("896"), n.e("73924"), n.e("92777"), n.e("17050"), n.e("87440"), n.e("99011"), n.e("28136"), n.e("72271"), n.e("49862"), n.e("8018"), n.e("59541"), n.e("60989"), n.e("49107"), n.e("24202"), n.e("33818"), n.e("79149"), n.e("94503"), n.e("14360"), n.e("83898"), n.e("4787"), n.e("88974"), n.e("6502"), n.e("79023"), n.e("28979"), n.e("31748"), n.e("1636"), n.e("20725"), n.e("48898"), n.e("74492"), n.e("34160"), n.e("33563"), n.e("97492"), n.e("36054"), n.e("28636"), n.e("46636"), n.e("71853"), n.e("94531"), n.e("56423"), n.e("21738")]).then(n.bind(n, 885041)),
     webpackId: 885041,
     name: "ViewsWithMainInterface",
     memo: true,
@@ -150,12 +150,12 @@ let L = (0, Chunk268218.Fe)({
     webpackId: 611861,
     name: "Overlay"
   }),
-  X = (0, Chunk268218.Fe)({
+  Z = (0, Chunk268218.Fe)({
     createPromise: () => n.e("66708").then(n.bind(n, 303174)),
     webpackId: 303174,
     name: "SuspendedUserSafetyHubPage"
   }),
-  Z = (0, Chunk268218.Fe)({
+  X = (0, Chunk268218.Fe)({
     createPromise: () => Promise.all([n.e("91227"), n.e("71791")]).then(n.bind(n, 125820)),
     webpackId: 125820,
     name: "QuestsLandingPage"
@@ -165,12 +165,12 @@ let L = (0, Chunk268218.Fe)({
     webpackId: 589877,
     name: "QuestPreviewLandingPage"
   }),
-  $ = (0, Chunk268218.Fe)({
+  J = (0, Chunk268218.Fe)({
     createPromise: () => Promise.all([n.e("34917"), n.e("81881")]).then(n.bind(n, 519716)),
     webpackId: 519716,
     name: "ConnectionsAuthorizeContinue"
   }),
-  J = (0, Chunk268218.Fe)({
+  $ = (0, Chunk268218.Fe)({
     createPromise: () => n.e("15243").then(n.bind(n, 998345)),
     webpackId: 998345,
     name: "ApplicationDirectoryRoutes"
@@ -202,10 +202,10 @@ class ei extends Chunk64700.Component {
       migrationStatus: n,
       skipsSettingDefaultPageTitle: i
     } = this.props;
-    return e = n === g.p.IN_PROGRESS ? null : R.VP ? T.isPlatformEmbedded ? (0, r.jsxs)(s.dO, {
+    return e = n === g.p.IN_PROGRESS ? null : w.VP ? T.isPlatformEmbedded ? (0, r.jsxs)(s.dO, {
       children: [t ? null : (0, r.jsx)(s.qh, {
         path: N.BVt.ACCOUNT_STANDING,
-        component: X
+        component: Z
       }), (0, r.jsx)(s.qh, {
         exact: true,
         path: N.BVt.INDEX,
@@ -256,7 +256,7 @@ class ei extends Chunk64700.Component {
         to: N.BVt.LOGIN
       }), (0, r.jsx)(_.A, {
         path: N.BVt.QUESTS(":questId"),
-        component: Z,
+        component: X,
         impressionName: o.ImpressionNames.QUESTS_LANDING_PAGE,
         impressionProperties: e => {
           let {
@@ -289,7 +289,7 @@ class ei extends Chunk64700.Component {
         component: B
       }), (0, r.jsx)(_.A, {
         path: N.BVt.CONNECTIONS_AUTHORIZE_CONTINUE(":type"),
-        component: $
+        component: J
       }), (0, r.jsx)(_.A, {
         path: N.BVt.CONNECTIONS_SUCCESS(":type"),
         component: U
@@ -345,10 +345,10 @@ class ei extends Chunk64700.Component {
         component: W
       }), t ? null : (0, r.jsx)(s.qh, {
         path: [N.BVt.ACCOUNT_STANDING],
-        component: X
+        component: Z
       }), t ? null : (0, r.jsx)(s.qh, {
         path: [N.BVt.APPLICATION_DIRECTORY],
-        component: J
+        component: $
       }), t ? null : (0, r.jsx)(s.qh, {
         path: [N.BVt.GLOBAL_DISCOVERY_APPS],
         component: ee

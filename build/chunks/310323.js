@@ -50,8 +50,8 @@ function S(e) {
 let T = (0, Chunk735438.debounce)(Chunk401843.a8, 1e3),
   C = {},
   N = {},
-  R = 3 * Chunk927813.A.Millis.MINUTE,
-  w = 5 * Chunk927813.A.Millis.SECOND,
+  w = 3 * Chunk927813.A.Millis.MINUTE,
+  R = 5 * Chunk927813.A.Millis.SECOND,
   P = 12 * Chunk927813.A.Millis.SECOND,
   D = null;
 
@@ -86,7 +86,7 @@ function k(e, t) {
   var n;
   if (g.A.getAllActiveStreamKeys().includes(e)) return;
   let r = null != (n = N[e]) ? n : new i.Ep;
-  N[e] = r, r.start(t ? P : w, () => {
+  N[e] = r, r.start(t ? P : R, () => {
     a.h.dispatch({
       type: "STREAM_TIMED_OUT",
       streamKey: e
@@ -184,7 +184,7 @@ class U extends Chunk439372.A {
               var o;
               let t = (0, O._z)(e),
                 n = null != (o = C[t]) ? o : new i.Ep;
-              n.start(R, () => (0, s.Xi)(t, false)), C[t] = n
+              n.start(w, () => (0, s.Xi)(t, false)), C[t] = n
             }
             if (a && e.state === A.XYD.ENDED) {
               x((0, O._z)(e));

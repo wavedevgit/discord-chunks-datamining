@@ -58,8 +58,8 @@ function N(e) {
     loading: T,
     subscriptionsSettings: N
   } = (0, b.G)(n), {
-    listingsLoaded: R
-  } = (0, h.bb)(n), w = (0, h.fZ)(n, {
+    listingsLoaded: w
+  } = (0, h.bb)(n), R = (0, h.fZ)(n, {
     publishedOnly: true
   }), P = i.useCallback(async () => {
     y.default.track(A.HAw.GUILD_SHOP_EMBED_CLICKED, C({}, (0, f.H$)(n))), await (0, m.A)(A.BVt.SERVER_SHOP(n))
@@ -70,8 +70,8 @@ function N(e) {
   }, {
     disableTrack: null == a
   });
-  let D = w.length > 0 ? new Date(Math.min(...w.map(e => Date.parse(e.published_at)))) : true;
-  return T || !R ? (0, r.jsx)("div", {
+  let D = R.length > 0 ? new Date(Math.min(...R.map(e => Date.parse(e.published_at)))) : true;
+  return T || !w ? (0, r.jsx)("div", {
     className: s()(S.lm, S.dc),
     children: (0, r.jsx)(d.y$y, {})
   }) : null == a || null == N ? null : (0, r.jsxs)("div", {
@@ -122,7 +122,7 @@ function N(e) {
             variant: "text-sm/normal",
             color: "text-muted",
             children: I.intl.format(I.t.tKZNlb, {
-              listingCount: w.length
+              listingCount: R.length
             })
           })
         }), null != D && (0, r.jsx)("li", {

@@ -32,9 +32,9 @@ var Chunk503698 = require("./503698.js"),
 function T(e) {
   let {
     isLoading: t
-  } = e, n = (0, s.bG)([E.A], () => E.A.getConnectedFrame()), i = (0, s.bG)([E.A], () => E.A.getFrameLayoutMode()), u = (0, f.h)(null == n ? true : n.applicationId), d = (0, s.bG)([E.A], () => null != u && E.A.isProxyTicketRefreshing(u.id), [u]), T = (0, s.bG)([p.A], () => p.A.getWindowOpen(O.MLl.ACTIVITY_POPOUT)), C = (0, s.bG)([m.A], () => m.A.isFrameHidden()), N = i === b.y.PIP && !C && !T, R = N && null != m.A.pipVideoWindow && null != m.A.pipFrameWindow;
+  } = e, n = (0, s.bG)([E.A], () => E.A.getConnectedFrame()), i = (0, s.bG)([E.A], () => E.A.getFrameLayoutMode()), u = (0, f.h)(null == n ? true : n.applicationId), d = (0, s.bG)([E.A], () => null != u && E.A.isProxyTicketRefreshing(u.id), [u]), T = (0, s.bG)([p.A], () => p.A.getWindowOpen(O.MLl.ACTIVITY_POPOUT)), C = (0, s.bG)([m.A], () => m.A.isFrameHidden()), N = i === b.y.PIP && !C && !T, w = N && null != m.A.pipVideoWindow && null != m.A.pipFrameWindow;
   if (null == n || null == u || T) return null;
-  let w = {
+  let R = {
     instance_id: "example-cl-instance",
     platform: v.vu.DESKTOP
   };
@@ -66,7 +66,7 @@ function T(e) {
       })]
     }) : null
   }
-  return null != n.proxyTicket && (w.discord_proxy_ticket = n.proxyTicket), (0, r.jsx)(h.Ay, {
+  return null != n.proxyTicket && (R.discord_proxy_ticket = n.proxyTicket), (0, r.jsx)(h.Ay, {
     timeout: 2e3,
     children: e => {
       let {
@@ -81,7 +81,7 @@ function T(e) {
           [I.N7]: i,
           [A.p0]: N,
           [A.R]: C,
-          [A.Gq]: R
+          [A.Gq]: w
         }),
         noBorder: !N,
         children: [(0, r.jsx)("div", {
@@ -99,7 +99,7 @@ function T(e) {
           allowPopups: (0, l.b)(u),
           referrerPolicy: "origin",
           url: n.url,
-          queryParams: w,
+          queryParams: R,
           className: a()(A.pU, {
             [A.p0]: N,
             [A.v8]: N

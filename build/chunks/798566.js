@@ -183,12 +183,12 @@ function N() {
   return null
 }
 
-function R() {
+function w() {
   let e = {};
   return e.os = O(), e.browser = S(), e.device = T(), e.system_locale = (0, c.c)(), e.has_client_mods = (0, l.b)(), e
 }
 
-function w() {
+function R() {
   var e, t;
   return g(h({}, {
     browser_user_agent: window.navigator.userAgent || "",
@@ -219,11 +219,11 @@ function L(e, t) {
 
 function j() {
   let e = u.w.get(E);
-  null == e && (e = R(), u.w.set(E, e));
+  null == e && (e = w(), u.w.set(E, e));
   let t = u.w.get(y);
   null == t && (t = x(), u.w.set(y, t));
   let n = d.u.get(y);
-  return null == n && (n = L(x(), "_current"), d.u.set(y, n)), h({}, e, w(), t, n)
+  return null == n && (n = L(x(), "_current"), d.u.set(y, n)), h({}, e, R(), t, n)
 }
 if (null == r) try {
   r = j()
@@ -247,7 +247,7 @@ M(function() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == n.release_channel || "" === n.release_channel) && (n.release_channel = r.split("-")[0]);
-  let i = parseInt("488608", 10);
+  let i = parseInt("488626", 10);
   isNaN(i) || (n.client_build_number = i);
   let a = null == b || null == (e = (t = b.remoteApp).getBuildNumber) ? true : e.call(t);
   return isNaN(a) || (n.native_build_number = a), n.client_event_source = N(), n.has_client_mods = (0, l.b)(), n.client_launch_id = f.C, n

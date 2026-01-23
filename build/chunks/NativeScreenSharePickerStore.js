@@ -43,16 +43,16 @@ let I = false,
   C = false,
   N = {};
 
-function R() {
+function w() {
   return f.A.supports(b.O5.NATIVE_SCREENSHARE_PICKER)
 }
 
-function w() {
+function R() {
   return f.A.getUseSystemScreensharePicker()
 }
 
 function P() {
-  let e = w() && (T > 0 || I && 0 === S);
+  let e = R() && (T > 0 || I && 0 === S);
   if (e !== C) {
     var t, n;
     C = e, null == (n = f.A.getMediaEngine()) || null == (t = n.setNativeDesktopVideoSourcePickerActive) || t.call(n, C)
@@ -101,10 +101,10 @@ class U extends(i = Chunk311907.Ay.Store) {
     this.syncWith([f.A, _.A, u.A, d.A, p.A], L), L()
   }
   supported() {
-    return R()
+    return w()
   }
   enabled() {
-    return w()
+    return R()
   }
   releasePickerStream() {
     (0, y.E)()

@@ -55,22 +55,22 @@ function G(e) {
     {
       analyticsLocations: z
     } = (0, E.Ay)(null != W ? W : []),
-    [q, X] = r.useState(false),
-    Z = null != (t = null == F ? true : F.applicationId) ? t : null == V ? true : V.application_id,
+    [q, Z] = r.useState(false),
+    X = null != (t = null == F ? true : F.applicationId) ? t : null == V ? true : V.application_id,
     Q = null != F || (0, m.A)(V),
-    $ = (0, i.bG)([w.default], () => w.default.getCurrentUser()),
-    J = B.id === (null == $ ? true : $.id),
+    J = (0, i.bG)([R.default], () => R.default.getCurrentUser()),
+    $ = B.id === (null == J ? true : J.id),
     ee = (0, p.A)({
       channelId: (0, f.H)(null == F ? true : F.location),
       userId: B.id,
       activity: V
     }),
-    et = (0, i.bG)([T.A, O.A, x.A, A.A], () => Q || null != Z && (0, j.A)({
+    et = (0, i.bG)([T.A, O.A, x.A, A.A], () => Q || null != X && (0, j.A)({
       LibraryApplicationStore: T.A,
       LaunchableGameStore: O.A,
       DispatchApplicationStore: x.A,
       ConnectedAppsStore: A.A,
-      applicationId: Z
+      applicationId: X
     })),
     en = (0, i.bG)([c.Ay], () => Array.from(c.Ay.getSelfEmbeddedActivities().values()).some(e => {
       let {
@@ -80,7 +80,7 @@ function G(e) {
       return (t === (null == V ? true : V.application_id) || t === (null == F ? true : F.applicationId)) && (0, f.H)(n) === ee
     })),
     er = (0, i.bG)([D.A], () => null != V && null != V.application_id && D.A.getState(V.application_id, M.xL.JOIN) === M.eAD.LOADING),
-    ei = (0, y.h)(Z),
+    ei = (0, y.h)(X),
     ea = (0, b.e)(ei),
     es = (0, _.vG)({
       userId: B.id,
@@ -88,18 +88,18 @@ function G(e) {
       channelId: ee,
       application: ei
     }),
-    eo = (0, i.bG)([v.A, S.A, I.A, N.A, R.A, P.A, C.A], () => null != F ? es === _.Gy.CAN_JOIN : (0, d.A)({
+    eo = (0, i.bG)([v.A, S.A, I.A, N.A, w.A, P.A, C.A], () => null != F ? es === _.Gy.CAN_JOIN : (0, d.A)({
       user: B,
       activity: V,
       application: ei,
       channelId: ee,
-      currentUser: $,
+      currentUser: J,
       isEmbedded: Q,
       ChannelStore: v.A,
       GuildStore: S.A,
       GuildMemberCountStore: I.A,
       RelationshipStore: N.A,
-      SelectedChannelStore: R.A,
+      SelectedChannelStore: w.A,
       VoiceStateStore: P.A,
       PermissionStore: C.A
     })),
@@ -111,22 +111,22 @@ function G(e) {
     ec = (0, l.p)();
   if (Q && null == F && (null == V || !(0, h.A)(V, M.jUm.CONTEXTLESS))) return null;
   let eu = !L.isPlatformEmbedded;
-  if (!((0, h.A)(V, M.jUm.JOIN) || Q) || null == Z) return null;
-  let ed = !J || Q && !el,
+  if (!((0, h.A)(V, M.jUm.JOIN) || Q) || null == X) return null;
+  let ed = !$ || Q && !el,
     ef = ed && (eu || et) && !q && !en;
   ed ? eu || et || null == V || (G = U.intl.formatToPlainString(U.t.SqJBnN, {
     name: V.name
   })) : G = U.intl.string(U.t["0OiwfH"]);
   let ep = null != (n = null == F ? true : F.launchId) ? n : null == V ? true : V.session_id,
     e_ = async (e, t) => {
-      if (null == ep || null == Z) return;
+      if (null == ep || null == X) return;
       let n = (0, h.A)(t, M.jUm.EMBEDDED),
-        r = R.A.getVoiceChannelId(),
+        r = w.A.getVoiceChannelId(),
         i = v.A.getChannel(r);
       if (await s.A.join({
           userId: e.id,
           sessionId: ep,
-          applicationId: Z,
+          applicationId: X,
           channelId: r,
           messageId: null,
           intent: k.W9.PLAY,
@@ -141,7 +141,7 @@ function G(e) {
           guildId: null == i ? true : i.guild_id,
           channelId: r,
           channelType: null == i ? true : i.type,
-          applicationId: Z,
+          applicationId: X,
           partyId: null != t ? null == t || null == (a = t.party) ? true : a.id : "",
           locationObject: ec.location,
           analyticsLocations: z
@@ -151,7 +151,7 @@ function G(e) {
       let e = false;
       async function t() {
         let e;
-        X(true), null != V && (e = await a.A.sendActivityInviteUser({
+        Z(true), null != V && (e = await a.A.sendActivityInviteUser({
           type: M.xL.JOIN_REQUEST,
           userId: B.id,
           activity: V,
@@ -159,10 +159,10 @@ function G(e) {
         })), null != e && o.default.selectPrivateChannel(e.id)
       }
       if (Q && !ea) {
-        if (null == Z) return;
+        if (null == X) return;
         if (!eo) return t();
         if (e = await (0, u.A)({
-            applicationId: Z,
+            applicationId: X,
             activityChannelId: ee,
             locationObject: ec.location,
             analyticsLocations: z

@@ -2,7 +2,7 @@
 /** chunk id: 395515, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => R
+  T: () => w
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -111,7 +111,7 @@ function N(e, t, n, i) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     onChange: t,
     checked: n,
@@ -121,13 +121,13 @@ function R(e) {
   } = e, b = y(e, ["onChange", "checked", "disabled", "focusProps", "innerRef"]), {
     reducedMotion: v
   } = i.useContext(d.C), A = i.useRef(null), [I, S] = i.useState(false), T = (0, u.r)(l.A.colors.SLIDER_TRACK_BACKGROUND).spring(), C = (0, u.r)(l.A.colors.BACKGROUND_BRAND).spring(), {
-    state: R
+    state: w
   } = (0, c.z)({
     config: O,
     state: I ? n ? .7 : .3 : +!!n
   }, "animate-always");
 
-  function w(e) {
+  function R(e) {
     S(false), e.stopPropagation(), null == t || t(e.currentTarget.checked)
   }
 
@@ -159,7 +159,7 @@ function R(e) {
         onMouseUp: () => S(false),
         onMouseLeave: () => S(false),
         style: {
-          backgroundColor: R.to({
+          backgroundColor: w.to({
             output: [T, C]
           })
         },
@@ -168,7 +168,7 @@ function R(e) {
           viewBox: "0 0 28 20",
           preserveAspectRatio: "xMinYMid meet",
           style: {
-            left: R.to({
+            left: w.to({
               range: [0, .3, .7, 1],
               output: [false, 1, 8, 12]
             })
@@ -176,24 +176,24 @@ function R(e) {
           "aria-hidden": true,
           children: [(0, r.jsx)(o.animated.rect, {
             fill: "white",
-            x: R.to({
+            x: w.to({
               range: [0, .3, .7, 1],
               output: [4, 0, 0, 4]
             }),
-            y: R.to({
+            y: w.to({
               range: [0, .3, .7, 1],
               output: [0, 1, 1, 0]
             }),
-            height: R.to({
+            height: w.to({
               range: [0, .3, .7, 1],
               output: [20, 18, 18, 20]
             }),
-            width: R.to({
+            width: w.to({
               range: [0, .3, .7, 1],
               output: [20, 28, 28, 20]
             }),
             rx: "10"
-          }), N(R, T, C, v.enabled)]
+          }), N(w, T, C, v.enabled)]
         }), (0, r.jsx)("input", {
           id: e.controlId,
           "aria-describedby": e.describedById,
@@ -207,7 +207,7 @@ function R(e) {
           tabIndex: a ? false : 0,
           onKeyDown: P,
           onKeyUp: D,
-          onChange: w,
+          onChange: R,
           checked: n,
           disabled: a
         })]

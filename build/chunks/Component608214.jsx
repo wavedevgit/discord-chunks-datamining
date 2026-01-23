@@ -116,9 +116,9 @@ function S(e) {
     } = n,
     N = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
     {
-      zoomed: R
+      zoomed: w
     } = (0, _.Q)(),
-    w = C(R, g, y, n.contentType, n.originalContentType),
+    R = C(w, g, y, n.contentType, n.originalContentType),
     P = null != d && 0 !== d && null != p && 0 !== p;
   if ("VIDEO" === A && P && null != y) {
     var D;
@@ -126,7 +126,7 @@ function S(e) {
     if (null == e) return null;
     let t = null != (D = n.renderLinkComponent) ? D : u.bU;
     return (0, r.jsx)(l.A, b(E({}, N), {
-      src: w,
+      src: R,
       width: d,
       height: p,
       maxWidth: a,
@@ -146,7 +146,7 @@ function S(e) {
     }))
   }
   return "IMAGE" === A && (t = P ? (0, r.jsx)(o.Ay, b(E({}, N), {
-    src: w,
+    src: R,
     width: d,
     height: p,
     maxWidth: a,
@@ -159,7 +159,7 @@ function S(e) {
     alt: v,
     onContextMenu: c
   })) : (0, r.jsx)("img", {
-    src: w,
+    src: R,
     alt: v,
     onContextMenu: c,
     className: m.xx,

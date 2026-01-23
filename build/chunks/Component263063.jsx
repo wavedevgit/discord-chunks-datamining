@@ -100,7 +100,7 @@ let C = {
     [C.LARGER]: 64,
     [C.XLARGE]: 100
   },
-  R = {
+  w = {
     [C.SMOL]: [10, 10, 8, 6, 6, 4],
     [C.MINI]: [12, 12, 10, 10, 8, 6, 4],
     [C.SMALLER]: [13, 13, 11, 11, 9, 7, 5],
@@ -110,7 +110,7 @@ let C = {
     [C.LARGER]: [19, 19, 17, 17, 15, 13, 11],
     [C.XLARGE]: [20, 20, 18, 18, 16, 14, 12]
   };
-class w extends Chunk64700.PureComponent {
+class R extends Chunk64700.PureComponent {
   renderAcronym() {
     let {
       guild: e,
@@ -158,10 +158,10 @@ class w extends Chunk64700.PureComponent {
         iconSrc: T,
         "aria-hidden": C,
         lossless: N,
-        iconSize: w
+        iconSize: R
       } = n,
       P = S(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
-      D = R[c],
+      D = w[c],
       x = null != h ? f.DUT : "div",
       L = (0, m.Rb)(r);
     return (0, i.jsxs)(x, I(v({
@@ -230,7 +230,7 @@ let P = Chunk311907.Ay.connectStores([Chunk531685.A], e => {
       backgroundImage: (0, E.wU)(r)
     })
   }
-})((0, Chunk162532.Y)(e => (0, i.jsx)(w, v({}, e))));
+})((0, Chunk162532.Y)(e => (0, i.jsx)(R, v({}, e))));
 class D extends(r = Chunk64700.PureComponent) {
   render() {
     return (0, i.jsx)(P, v({}, this.props))

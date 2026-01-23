@@ -124,11 +124,11 @@ function N(e, t) {
   })
 }
 
-function R() {
+function w() {
   b = {}
 }
 
-function w(e, t) {
+function R(e, t) {
   let n = s.Ay.getGameOrTransformedSubgameForPID(e);
   return {
     crash_type: t,
@@ -143,9 +143,9 @@ function P(e) {
     crashType: r
   } = e, i = n instanceof Error ? n : Error(null != n ? n : "Unknown error");
   return "native" === r ? (C(t, i), (0, c.St)(i, u.Ue.OutOfProcess, {
-    extra: w(t, "host")
+    extra: R(t, "host")
   })) : (N(t, i), (0, c.St)(i, u.Ue.OutOfProcess, {
-    extra: w(t, "renderer")
+    extra: R(t, "renderer")
   })), true
 }
 
@@ -191,7 +191,7 @@ function M(e) {
   let {
     lastAssociatedPID: t
   } = e;
-  if (t !== l.UNSET_PID) return T(t), R(), true
+  if (t !== l.UNSET_PID) return T(t), w(), true
 }
 
 function k(e) {
@@ -212,7 +212,7 @@ class U extends(r = Chunk311907.Ay.Store) {
     return I(e)
   }
   getCrashExtra(e, t) {
-    return w(e, t)
+    return R(e, t)
   }
 }
 m(U, "displayName", "Overlay-v3-Native-Analytics-Store");

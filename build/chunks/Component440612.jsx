@@ -60,19 +60,19 @@ function N(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = R(e, t), Object.getOwnPropertySymbols)
+  if (a = w(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let w = e => {
+let R = e => {
     let {
       handleClose: t,
       handleStepChange: n
@@ -204,7 +204,7 @@ let w = e => {
   },
   L = [{
     key: null,
-    renderStep: e => (0, r.jsx)(w, C({}, e))
+    renderStep: e => (0, r.jsx)(R, C({}, e))
   }, {
     key: Chunk166532.pn.REVIEW,
     renderStep: e => (0, r.jsx)(x, C({}, e)),

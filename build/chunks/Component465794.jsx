@@ -91,8 +91,8 @@ let v = function(e) {
     disableShine: T,
     applicationId: C,
     shinyButtonClassName: N,
-    showGradient: R = false,
-    confirmationFooter: w,
+    showGradient: w = false,
+    confirmationFooter: R,
     color: P,
     iconColor: D = "currentColor"
   } = e, x = b(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "color", "iconColor"]), L = (0, o.bG)([d.A], () => d.A.isFocused()), j = (0, p.A)({
@@ -106,7 +106,7 @@ let v = function(e) {
     onSubscribeModalClose: A,
     premiumModalAnalyticsLocation: I,
     applicationId: C,
-    confirmationFooter: w
+    confirmationFooter: R
   }, k = null != P ? P : t === _.pe.TIER_1 ? c.$n.Colors.PRIMARY : c.$n.Colors.GREEN, U = (0, r.jsxs)(u.wLn, y(g({
     "data-migration-pending": true,
     disabled: j.disabled,
@@ -115,8 +115,8 @@ let v = function(e) {
     size: a,
     className: N,
     wrapperClassName: s()({
-      [h.PJ]: R && t === _.pe.TIER_2,
-      [h.Up]: R && t === _.pe.TIER_1
+      [h.PJ]: w && t === _.pe.TIER_2,
+      [h.Up]: w && t === _.pe.TIER_1
     }, m),
     buttonShineClassName: "buttonShineClassName" in x ? x.buttonShineClassName : k === c.XD.BRAND_INVERTED ? h.nz : true,
     pauseAnimation: !L || T

@@ -64,8 +64,8 @@ function S(e) {
 let T = Chunk136722.iu(0),
   C = Chunk136722.kg(...i().values(Chunk652215.xBc)),
   N = Chunk136722.kg(Chunk652215.xBc.CREATE_INSTANT_INVITE, Chunk652215.xBc.CHANGE_NICKNAME, Chunk652215.xBc.VIEW_CHANNEL, Chunk652215.xBc.SEND_MESSAGES, Chunk652215.xBc.EMBED_LINKS, Chunk652215.xBc.ATTACH_FILES, Chunk652215.xBc.READ_MESSAGE_HISTORY, Chunk652215.xBc.MENTION_EVERYONE, Chunk652215.xBc.USE_EXTERNAL_EMOJIS, Chunk652215.xBc.USE_EXTERNAL_STICKERS, Chunk652215.xBc.ADD_REACTIONS, Chunk652215.xBc.CREATE_PUBLIC_THREADS, Chunk652215.xBc.CREATE_PRIVATE_THREADS, Chunk652215.xBc.SEND_MESSAGES_IN_THREADS, Chunk652215.xBc.SEND_POLLS, Chunk652215.xBc.CONNECT, Chunk652215.xBc.SPEAK, Chunk652215.xBc.USE_VAD, Chunk652215.xBc.STREAM, Chunk652215.xBc.USE_EMBEDDED_ACTIVITIES, Chunk652215.xBc.USE_SOUNDBOARD, Chunk652215.xBc.REQUEST_TO_SPEAK, Chunk652215.xBc.USE_APPLICATION_COMMANDS, Chunk652215.xBc.CREATE_GUILD_EXPRESSIONS, Chunk652215.xBc.CREATE_EVENTS, Chunk652215.xBc.USE_EXTERNAL_APPS),
-  R = Chunk136722.kg(Chunk652215.xBc.VIEW_CHANNEL, Chunk652215.xBc.READ_MESSAGE_HISTORY),
-  w = Chunk136722.kg(Chunk652215.xBc.VIEW_CHANNEL, Chunk652215.xBc.SEND_MESSAGES, Chunk652215.xBc.CONNECT, Chunk652215.xBc.SPEAK, Chunk652215.xBc.STREAM, Chunk652215.xBc.USE_EMBEDDED_ACTIVITIES, Chunk652215.xBc.USE_EXTERNAL_APPS, Chunk652215.xBc.USE_EXTERNAL_EMOJIS, Chunk652215.xBc.USE_EXTERNAL_SOUNDS, Chunk652215.xBc.USE_EXTERNAL_STICKERS, Chunk652215.xBc.USE_SOUNDBOARD, Chunk652215.xBc.USE_VAD, Chunk652215.xBc.SEND_MESSAGES_IN_THREADS),
+  w = Chunk136722.kg(Chunk652215.xBc.VIEW_CHANNEL, Chunk652215.xBc.READ_MESSAGE_HISTORY),
+  R = Chunk136722.kg(Chunk652215.xBc.VIEW_CHANNEL, Chunk652215.xBc.SEND_MESSAGES, Chunk652215.xBc.CONNECT, Chunk652215.xBc.SPEAK, Chunk652215.xBc.STREAM, Chunk652215.xBc.USE_EMBEDDED_ACTIVITIES, Chunk652215.xBc.USE_EXTERNAL_APPS, Chunk652215.xBc.USE_EXTERNAL_EMOJIS, Chunk652215.xBc.USE_EXTERNAL_SOUNDS, Chunk652215.xBc.USE_EXTERNAL_STICKERS, Chunk652215.xBc.USE_SOUNDBOARD, Chunk652215.xBc.USE_VAD, Chunk652215.xBc.SEND_MESSAGES_IN_THREADS),
   P = Chunk136722.kg(Chunk652215.xBc.VIEW_CHANNEL, Chunk652215.xBc.READ_MESSAGE_HISTORY),
   D = Chunk136722.kg(Chunk652215.xBc.VIEW_CHANNEL, Chunk652215.xBc.READ_MESSAGE_HISTORY, Chunk652215.xBc.CHANGE_NICKNAME),
   x = Chunk136722.kg(Chunk652215.xBc.MANAGE_GUILD, Chunk652215.xBc.MANAGE_ROLES, Chunk652215.xBc.ADMINISTRATOR, Chunk652215.xBc.BAN_MEMBERS, Chunk652215.xBc.MANAGE_NICKNAMES, Chunk652215.xBc.CREATE_GUILD_EXPRESSIONS, Chunk652215.xBc.MANAGE_GUILD_EXPRESSIONS, Chunk652215.xBc.MANAGE_WEBHOOKS, Chunk652215.xBc.VIEW_AUDIT_LOG);
@@ -106,7 +106,7 @@ function M(e) {
     roles: s,
     checkElevated: o = true,
     excludeGuildPermissions: l = false,
-    lurkerPermissionsMask: c = R
+    lurkerPermissionsMask: c = w
   } = e;
   if (l) return j(r.id, n, T, i);
   let d = (s = null != s ? S({}, E.A.getUnsafeMutableRoles(r.id), s) : E.A.getUnsafeMutableRoles(r.id))[(0, p.af)(r)],
@@ -116,7 +116,7 @@ function M(e) {
       let t = s[n.roles[e]];
       true !== t && (f = a.WQ(f, t.permissions))
     }
-  return f = a.zy(f, A.xBc.ADMINISTRATOR) ? C : j(r.id, n, f, i), (u.A.isLurking(r.id) || (null == n ? true : n.isPending)) && (f = a.pb(f, c)), g.Ay.isCurrentUserGuest(r.id) && (f = a.pb(f, w)), L(f, r, t, o)
+  return f = a.zy(f, A.xBc.ADMINISTRATOR) ? C : j(r.id, n, f, i), (u.A.isLurking(r.id) || (null == n ? true : n.isPending)) && (f = a.pb(f, c)), g.Ay.isCurrentUserGuest(r.id) && (f = a.pb(f, R)), L(f, r, t, o)
 }
 
 function k(e) {
@@ -128,7 +128,7 @@ function k(e) {
       checkElevated: s = true,
       excludeGuildPermissions: o
     } = e,
-    l = R;
+    l = w;
   if (r instanceof f.YB) {
     var c;
     if (r.isScheduledForDeletion()) return T;
@@ -186,7 +186,7 @@ function U(e) {
   } = e;
   if (null == a) return T;
   let h = "string" == typeof a ? a : a.id,
-    E = R;
+    E = w;
   if (s instanceof f.YB) {
     if (s.isScheduledForDeletion()) return T;
     if (f.Le.has(s.type)) {

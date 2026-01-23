@@ -446,8 +446,8 @@ function eC() {
     } = (0, d.cf)([X.A], () => ({
       theme: X.A.theme
     })),
-    o = (0, d.bG)([$.A], () => $.A.hasLibraryApplication()),
-    c = (0, d.bG)([J.A], () => J.A.getCurrentPath()),
+    o = (0, d.bG)([J.A], () => J.A.hasLibraryApplication()),
+    c = (0, d.bG)([$.A], () => $.A.getCurrentPath()),
     [u, h] = (0, z.A)(e => {
       let {
         channelId: t,

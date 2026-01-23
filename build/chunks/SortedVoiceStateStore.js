@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => B,
-  RQ: () => R,
+  RQ: () => w,
   hz: () => C
 }), require("./896048.js");
 var r, Chunk735438 = require("./735438.js"),
@@ -64,7 +64,7 @@ let v = Object.freeze([]),
 
 function I(e) {
   let t = A[e];
-  return null == t && (t = new w(e), A[e] = t), t
+  return null == t && (t = new R(e), A[e] = t), t
 }
 
 function S(e, t) {
@@ -88,7 +88,7 @@ function N(e, t, n) {
   return T(n, S(e, t), t)
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   var i;
   let a = p.default.getUser(n),
     s = null == a;
@@ -110,14 +110,14 @@ function R(e, t, n, r) {
   };
   return s && (u._isPlaceholder = true), u
 }
-class w {
+class R {
   updateVoiceState(e) {
     if (null != this._pending) return this._pending.add(e), false;
     let t = _.A.getVoiceState(this.guildId, e),
       n = this._voiceStates.get(e),
       r = p.default.getUser(e);
     if (null != t && null != r) {
-      if (null == n) return this._voiceStates.set(e, R(t, this.guildId, e)), true;
+      if (null == n) return this._voiceStates.set(e, w(t, this.guildId, e)), true;
       else if (n.voiceState !== t) {
         var i;
         let a = S(this.guildId, r),
@@ -155,7 +155,7 @@ class w {
   updateUsers() {
     return null == this._pending && this._voiceStates.values().reduce((e, t) => {
       let n = p.default.getUser(t.user.id);
-      return null != n && t.user !== n ? (this._voiceStates.set(n.id, R(t.voiceState, this.guildId, n.id, t)), true) : e
+      return null != n && t.user !== n ? (this._voiceStates.set(n.id, w(t.voiceState, this.guildId, n.id, t)), true) : e
     }, false)
   }
   getUserIds() {

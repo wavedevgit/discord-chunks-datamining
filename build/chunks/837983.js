@@ -108,7 +108,7 @@ function I(e) {
 }
 
 function S(e) {
-  return [T(e), C(e), N(e), R(e)]
+  return [T(e), C(e), N(e), w(e)]
 }
 
 function T(e) {
@@ -127,7 +127,7 @@ function N(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   return t => {
     var n, r;
     let i = null == (r = (0, b.u8)(t)) ? true : r.toLocaleLowerCase();
@@ -135,7 +135,7 @@ function R(e) {
   }
 }
 
-function w(e, t) {
+function R(e, t) {
   let n = h.A.getScoreWithoutLoadingLatest(e.id);
   return h.A.getScoreWithoutLoadingLatest(t.id) - n
 }
@@ -335,7 +335,7 @@ function B(e) {
       limit: s,
       filterPredicates: [I(t)],
       bucketPredicates: S(n),
-      sortComparers: [w, P]
+      sortComparers: [R, P]
     })
   }, [l, c, s, t, n, _, h]), b = g.length > 0, O = y.length > 0, T = !b && !O;
   return {

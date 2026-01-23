@@ -151,8 +151,8 @@ function I(e) {
     state: T,
     executeStateUpdate: C,
     visualState: N,
-    isDisabled: R,
-    error: w
+    isDisabled: w,
+    error: R
   } = S.useComponentState(e, I.length > 0 ? {
     type: t,
     values: I
@@ -187,7 +187,7 @@ function I(e) {
       className: m.kL,
       children: (0, r.jsx)(c.Pw, b(E({
         isProcessing: x,
-        isDisabled: g || N === _.BB.DISABLED || R,
+        isDisabled: g || N === _.BB.DISABLED || w,
         className: s()(m.Lt, {
           [m.zE]: P
         }),
@@ -210,7 +210,7 @@ function I(e) {
       }, H), {
         "data-migration-pending": true
       }))
-    }), null == w || P ? null : (0, r.jsx)(f.S0, b(E({}, (0, f.PS)(w)), {
+    }), null == R || P ? null : (0, r.jsx)(f.S0, b(E({}, (0, f.PS)(R)), {
       className: m.z3
     }))]
   })

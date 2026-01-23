@@ -2,7 +2,7 @@
 /** chunk id: 575293, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R
+  A: () => w
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -79,7 +79,7 @@ function N(e) {
   } = e, {
     channelAction: m,
     completed: b
-  } = (0, y.j4)(f, _), O = (0, y.Lr)(f, null == m ? true : m.channelId), v = (0, l.bG)([u.A], () => u.A.useReducedMotion), N = (null == m ? true : m.actionType) === E.NewMemberActionTypes.VIEW, R = (0, c.rdh)(c.LU0.colors.WHITE), w = S[(0, p.C)()], [P, D] = i.useState(false), [x] = i.useState(new o.A.Value(0)), [L] = i.useState(new o.A.Value(0));
+  } = (0, y.j4)(f, _), O = (0, y.Lr)(f, null == m ? true : m.channelId), v = (0, l.bG)([u.A], () => u.A.useReducedMotion), N = (null == m ? true : m.actionType) === E.NewMemberActionTypes.VIEW, w = (0, c.rdh)(c.LU0.colors.WHITE), R = S[(0, p.C)()], [P, D] = i.useState(false), [x] = i.useState(new o.A.Value(0)), [L] = i.useState(new o.A.Value(0));
   i.useEffect(() => {
     b ? o.A.timing(x, {
       toValue: 0,
@@ -109,7 +109,7 @@ function N(e) {
       style: {
         marginBottom: L.interpolate({
           inputRange: [0, 1],
-          outputRange: [-w, 0]
+          outputRange: [-R, 0]
         })
       },
       children: (0, r.jsxs)(c.DUT, {
@@ -136,7 +136,7 @@ function N(e) {
           className: I.kJ,
           children: (0, r.jsx)(c.EdP, {
             size: "xs",
-            color: R.hex(),
+            color: w.hex(),
             className: I.fz
           })
         })]
@@ -148,7 +148,7 @@ function N(e) {
       style: {
         marginBottom: x.interpolate({
           inputRange: [0, 1],
-          outputRange: [-w, 0]
+          outputRange: [-R, 0]
         })
       },
       children: [(0, r.jsx)(C, {
@@ -170,7 +170,7 @@ function N(e) {
         size: "custom",
         color: "currentColor",
         className: I.so,
-        secondaryColor: R.hex(),
+        secondaryColor: w.hex(),
         width: 20,
         height: 20
       }) : null]
@@ -178,7 +178,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     guildId: t,
     channel: n,

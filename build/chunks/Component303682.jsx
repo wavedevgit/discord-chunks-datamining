@@ -36,11 +36,11 @@ let S = e => {
       fetchUsers: T,
       hasError: C,
       isFetching: N,
-      resendUsers: R
+      resendUsers: w
     } = (0, b.i)({
       searchQuery: O,
       selectedUsers: f
-    }), [w, P] = i.useState(false), D = S.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), x = () => (0, r.jsx)(c.iS7, {
+    }), [R, P] = i.useState(false), D = S.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), x = () => (0, r.jsx)(c.iS7, {
       selectionMode: "multiple",
       value: Array.from(f.values()),
       options: Array.from(D.values()),
@@ -79,7 +79,7 @@ let S = e => {
         className: s()(I.qr, I.h0),
         children: (0, r.jsx)(c.Button, {
           variant: "primary",
-          disabled: 0 === f.size && !o || w,
+          disabled: 0 === f.size && !o || R,
           text: i,
           size: "md",
           fullWidth: true,
@@ -103,7 +103,7 @@ let S = e => {
         },
         isFetching: N,
         onFetchMore: T,
-        isUserDisabled: e => null !== a && 0 !== a && [...f.values()].filter(e => !R.has(e.id)).length >= a && !f.has(e.id) && !R.has(e.id),
+        isUserDisabled: e => null !== a && 0 !== a && [...f.values()].filter(e => !w.has(e.id)).length >= a && !f.has(e.id) && !w.has(e.id),
         searchQuery: O,
         emptySearchContent: {
           header: A.intl.string(A.t["8+ywHD"]),

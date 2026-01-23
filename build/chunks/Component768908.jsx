@@ -2,7 +2,7 @@
 /** chunk id: 768908, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => X,
+  Ay: () => Z,
   T: () => q,
   Wx: () => z,
   cH: () => K
@@ -101,7 +101,7 @@ function F(e) {
     label: null != e.name ? e.name : ""
   }));
   return (0, r.jsxs)(u.lGe, {
-    className: s()(R.H2, w.Y_),
+    className: s()(w.H2, R.Y_),
     "aria-label": N.intl.string(N.t.GTCx0p),
     children: [(0, r.jsx)(u.ZiE, {
       selectionMode: "single",
@@ -112,7 +112,7 @@ function F(e) {
     }), (0, r.jsx)(u.cGx, {
       className: s()(D.Ot, D.QB)
     }), (0, r.jsxs)("div", {
-      className: s()(R.o1, P.xM),
+      className: s()(w.o1, P.xM),
       children: [(0, r.jsx)(u.QWc, {
         variant: "secondary",
         text: N.intl.string(N.t["ETE/oC"]),
@@ -137,18 +137,18 @@ function B(e) {
     parentGame: A
   } = e, I = (0, o.cf)([_.Ay, y.A, b.A], () => (0, _.xU)(t, _.Ay, y.A, b.A)), {
     canToggleDetection: S,
-    isCurrentGameDetectionEnabled: w
+    isCurrentGameDetectionEnabled: R
   } = (0, o.cf)([_.Ay], () => ({
     canToggleDetection: null == A || _.Ay.isDetectionEnabled(A),
     isCurrentGameDetectionEnabled: _.Ay.isDetectionEnabled(I)
   })), D = (0, o.bG)([_.Ay], () => _.Ay.getVisibleGame()), [x, j] = i.useState(false), k = i.useMemo(() => (0, E.n1)(I) ? v ? I.gameName : N.intl.formatToPlainString(N.t.G6BGdx, {
     subgameName: I.gameName
   }) : I.name, [I, v]), [V, F] = i.useState(null != k ? k : "???"), H = s()(P.tR, {
-    [R.LO]: !a,
-    [R.Rw]: a,
-    [R.FB]: null != I && a,
-    [R.xL]: v,
-    [R.fG]: null != g && g.length > 0
+    [w.LO]: !a,
+    [w.Rw]: a,
+    [w.FB]: null != I && a,
+    [w.xL]: v,
+    [w.fG]: null != g && g.length > 0
   });
 
   function Y() {
@@ -170,7 +170,7 @@ function B(e) {
   }
 
   function q() {
-    null != g && g.length > 0 && w ? (0, u.mMO)(async () => {
+    null != g && g.length > 0 && R ? (0, u.mMO)(async () => {
       let {
         Modal: e
       } = await Promise.resolve().then(n.bind(n, 158954));
@@ -196,7 +196,7 @@ function B(e) {
     }) : d.A.toggleDetection(I)
   }
 
-  function X() {
+  function Z() {
     if (x) return;
     let e = null != I.id ? y.A.getDetectableGame(I.id) : null;
     O.default.track(T.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
@@ -220,16 +220,16 @@ function B(e) {
     })
   }
 
-  function Z() {
+  function X() {
     return I.verified && !h ? (0, r.jsxs)("div", {
-      className: R.HS,
+      className: w.HS,
       children: [(0, r.jsx)("div", {
-        className: R.mO,
+        className: w.mO,
         children: k
       }), (0, r.jsx)(c.m_, {
         text: N.intl.string(N.t["4PJP5p"]),
         children: (0, r.jsx)(m.A, {
-          className: R.qf,
+          className: w.qf,
           size: G,
           color: l.A.unsafe_rawColors.BRAND_500.css,
           children: (0, r.jsx)(u.Uzd, {
@@ -241,7 +241,7 @@ function B(e) {
         })
       })]
     }) : (0, r.jsx)("input", {
-      className: s()(R.mO, R.sr),
+      className: s()(w.mO, w.sr),
       type: "text",
       maxLength: 128,
       value: V,
@@ -259,7 +259,7 @@ function B(e) {
     return a || en ? e = N.intl.string(N.t.VbV5dv) : null != t && "" !== t && (e = N.intl.format(N.t["gGeOE+"], {
       when: t
     })), (0, r.jsx)("div", {
-      className: R.GN,
+      className: w.GN,
       children: (0, r.jsx)(p.A, {
         hoverText: null != n && "" !== n ? n.toUpperCase() : "",
         children: e
@@ -267,7 +267,7 @@ function B(e) {
     })
   }
 
-  function $() {
+  function J() {
     if (!U || null != A) return null;
     let {
       overlay: e,
@@ -275,26 +275,26 @@ function B(e) {
     } = I, n = e ? (0, r.jsx)(u.kN9, {
       size: "md",
       color: "currentColor",
-      className: R.Lj,
-      colorClass: R.GS
+      className: w.Lj,
+      colorClass: w.GS
     }) : (0, r.jsx)(u.nkR, {
       size: "md",
       color: "currentColor",
-      className: R.$V,
-      colorClass: R.GS
+      className: w.$V,
+      colorClass: w.GS
     }), i = t ? (0, r.jsx)(c.m_, {
       text: N.intl.string(N.t.Vfw2L5),
       children: (0, r.jsx)("i", {
-        className: R.kb
+        className: w.kb
       })
     }) : null;
     return (0, r.jsxs)("div", {
-      className: s()(P.tR, P.oA, P.LT, R.E3),
+      className: s()(P.tR, P.oA, P.LT, w.E3),
       children: [i, (0, r.jsx)(c.m_, {
         text: N.intl.string(N.t["1+O+Tu"]),
         children: (0, r.jsx)(u.DUT, {
           "aria-label": N.intl.string(N.t["1+O+Tu"]),
-          className: R.ym,
+          className: w.ym,
           onClick: () => z(!e),
           children: n
         })
@@ -302,27 +302,27 @@ function B(e) {
     })
   }
 
-  function J() {
+  function $() {
     let {
       detectable: e
     } = I, t = e && S ? (0, r.jsx)(u.bMW, {
       size: "md",
       color: "currentColor",
-      className: R.Lj,
-      colorClass: R.GS
+      className: w.Lj,
+      colorClass: w.GS
     }) : (0, r.jsx)(u.G3N, {
       size: "md",
       color: "currentColor",
-      className: S ? R.$V : R.zN,
-      colorClass: R.GS
+      className: S ? w.$V : w.zN,
+      colorClass: w.GS
     });
     return (0, r.jsx)("div", {
-      className: s()(P.tR, P.oA, P.LT, R.E3),
+      className: s()(P.tR, P.oA, P.LT, w.E3),
       children: (0, r.jsx)(c.m_, {
         text: N.intl.string(N.t.QmitzM),
         children: S ? (0, r.jsx)(u.DUT, {
           "aria-label": N.intl.string(N.t.QmitzM),
-          className: R.ym,
+          className: w.ym,
           onClick: q,
           children: t
         }) : t
@@ -332,18 +332,18 @@ function B(e) {
 
   function ee() {
     return x ? null : (0, r.jsx)("div", {
-      className: s()(P.tR, P.oA, P.LT, R.E3),
+      className: s()(P.tR, P.oA, P.LT, w.E3),
       children: (0, r.jsx)(c.m_, {
         text: N.intl.string(N.t["y0B+lo"]),
         children: (0, r.jsx)(u.DUT, {
           "aria-label": N.intl.string(N.t["y0B+lo"]),
-          className: R.ym,
-          onClick: X,
+          className: w.ym,
+          onClick: Z,
           children: (0, r.jsx)(u.iFK, {
             size: "md",
             color: "currentColor",
-            className: R.Lj,
-            colorClass: R.GS
+            className: w.Lj,
+            colorClass: w.GS
           })
         })
       })
@@ -352,7 +352,7 @@ function B(e) {
 
   function et() {
     return (0, r.jsx)(f.A, {
-      className: R.LS,
+      className: w.LS,
       onClick: Y
     })
   }
@@ -362,11 +362,11 @@ function B(e) {
     children: [(0, r.jsxs)("div", {
       className: H,
       children: [(0, r.jsxs)("div", {
-        className: s()(R.$K, P.Vd),
-        children: [Z(), Q()]
-      }), h ? null : ee(), J(), $(), a && !h || er ? null : et()]
+        className: s()(w.$K, P.Vd),
+        children: [X(), Q()]
+      }), h ? null : ee(), $(), J(), a && !h || er ? null : et()]
     }), null != g && g.length > 0 && !a && (0, r.jsx)("div", {
-      className: R.AQ,
+      className: w.AQ,
       children: g.map((e, t) => (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(B, {
           rawGame: e,
@@ -374,7 +374,7 @@ function B(e) {
           isSubgame: true,
           parentGame: I
         }), t !== g.length - 1 && (0, r.jsx)("div", {
-          className: R.PQ
+          className: w.PQ
         })]
       }, (0, _.Es)(e)))
     })]
@@ -383,14 +383,14 @@ function B(e) {
 
 function H() {
   return (0, r.jsx)("div", {
-    className: s()(P.tR, R.eS, R.Rw),
+    className: s()(P.tR, w.eS, w.Rw),
     children: (0, r.jsxs)("div", {
-      className: s()(R.$K, P.Vd),
+      className: s()(w.$K, P.Vd),
       children: [(0, r.jsx)("div", {
-        className: R.mO,
+        className: w.mO,
         children: N.intl.string(N.t.H68X9x)
       }), (0, r.jsx)("div", {
-        className: R.GN,
+        className: w.GN,
         children: N.intl.string(N.t.T5Ilmw)
       })]
     })
@@ -436,7 +436,7 @@ let W = (0, Chunk583613.L_)(function() {
   z = () => {
     let e = i.useRef(null);
     return (0, r.jsxs)("div", {
-      className: s()(R.ax, D.Gf),
+      className: s()(w.ax, D.Gf),
       children: [(0, r.jsx)("span", {
         children: N.intl.string(N.t.xwhoqM)
       }), (0, r.jsx)(u.YNO, {
@@ -490,7 +490,7 @@ let W = (0, Chunk583613.L_)(function() {
       })
     })
   },
-  X = function(e) {
+  Z = function(e) {
     let {
       className: t,
       showHeader: n = true

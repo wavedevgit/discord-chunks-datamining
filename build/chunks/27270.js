@@ -40,10 +40,10 @@ function h(e, t, n) {
   "virtual" === T && "u" > typeof window && "ontouchstart" in window && (T = "pointer");
   let C = E && ("keyboard" === T || "virtual" === T) ? m.format("removeDescription") : "",
     N = (0, s.I)(C),
-    R = h.key === t.selectionManager.focusedKey,
-    w = null != t.selectionManager.focusedKey,
+    w = h.key === t.selectionManager.focusedKey,
+    R = null != t.selectionManager.focusedKey,
     P = false;
-  I || !R && w || (P = 0);
+  I || !w && R || (P = 0);
   let D = (0, o.$)(h.props),
     x = (0, l.HI)(h.props),
     {

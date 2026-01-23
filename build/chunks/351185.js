@@ -79,7 +79,7 @@ function N(e) {
   }))
 }
 
-function R(e) {
+function w(e) {
   return null == e ? true : e.map(e => ({
     type: e.type,
     rid: e.rid,
@@ -97,14 +97,14 @@ function R(e) {
   }))
 }
 
-function w(e) {
+function R(e) {
   return "audio" === e ? f.mI.AUDIO : "test" === e ? f.mI.TEST : "screen" === e ? f.mI.SCREEN : f.mI.VIDEO
 }
 
 function P(e) {
   var t;
   return null != (t = null == e ? true : e.map(e => ({
-    type: w(e.type),
+    type: R(e.type),
     rid: e.rid,
     ssrc: e.ssrc,
     rtxSsrc: e.rtx_ssrc,
@@ -377,7 +377,7 @@ class x extends Chunk972347.A {
       token: a,
       max_dave_protocol_version: s,
       video: o,
-      streams: R(l)
+      streams: w(l)
     })
   }
   expeditedHeartbeat(e) {
@@ -439,7 +439,7 @@ class x extends Chunk972347.A {
       audio_ssrc: e,
       video_ssrc: t,
       rtx_ssrc: n,
-      streams: R(r)
+      streams: w(r)
     })
   }
   mediaSinkWants(e) {

@@ -67,7 +67,7 @@ function C(e, t) {
 }
 let N = ["image/jpeg", "image/png", "image/webp", "image/gif", "image/avif", "video/quicktime", "video/mp4"];
 
-function R(e) {
+function w(e) {
   let {
     alt: t,
     spoiler: n,
@@ -105,7 +105,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     file: t,
     alt: n,
@@ -178,7 +178,7 @@ function w(e) {
       onClick: g,
       className: A.clickableMedia,
       "aria-label": b,
-      children: (0, r.jsx)(R, {
+      children: (0, r.jsx)(w, {
         size: o,
         alt: n,
         spoiler: a,
@@ -206,7 +206,7 @@ function P(e) {
   }, [t]), (0, r.jsx)("div", {
     onMouseEnter: l,
     className: A.mediaContainer,
-    children: (0, r.jsx)(R, {
+    children: (0, r.jsx)(w, {
       size: o,
       alt: n,
       spoiler: a,
@@ -234,7 +234,7 @@ function D(e) {
     size: a = O.L.MEDIUM,
     onMouseEnter: o
   } = e, [l, c] = i.useState(false);
-  return n.isImage && n.item.platform === f.xz.WEB ? (0, r.jsx)(w, {
+  return n.isImage && n.item.platform === f.xz.WEB ? (0, r.jsx)(R, {
     file: n.item.file,
     alt: n.description,
     spoiler: n.spoiler,
@@ -275,10 +275,10 @@ function x(e) {
     canEdit: m = true,
     hideFileName: E = false,
     clip: I
-  } = e, T = null != I, N = (h = T ? O.L.CLIP : h) === O.L.SMALL, R = (0, o.bG)([g.A], () => {
+  } = e, T = null != I, N = (h = T ? O.L.CLIP : h) === O.L.SMALL, w = (0, o.bG)([g.A], () => {
     var e;
     return null == (e = g.A.getChannel(t)) ? true : e.guild_id
-  }), w = e => {
+  }), R = e => {
     e.stopPropagation(), (0, c.qfG)(e => (0, r.jsx)(d.default, C(S({}, e), {
       draftType: n,
       upload: a,
@@ -325,7 +325,7 @@ function x(e) {
           [A.action]: N
         }),
         tooltip: v.intl.string(v.t.Y8ujqr),
-        onClick: w,
+        onClick: R,
         children: (0, r.jsx)(c.R2l, {
           size: "xs",
           color: "currentColor",
@@ -352,7 +352,7 @@ function x(e) {
     draftType: n,
     id: a.id,
     channelId: t,
-    handleEditModal: w,
+    handleEditModal: R,
     keyboardModeEnabled: f,
     size: h,
     className: s()({
@@ -376,7 +376,7 @@ function x(e) {
         participantIds: I.users,
         applicationId: I.applicationId,
         title: I.name,
-        guildId: R
+        guildId: w
       }), (0, r.jsx)(c.LpS, {
         color: l.A.colors.BACKGROUND_BRAND.css,
         className: A.clipsBadge,

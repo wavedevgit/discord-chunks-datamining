@@ -80,12 +80,12 @@ let C = 40,
     });
     let S = (0, i.bG)([h.A], () => null != t.roleId ? h.A.getRole(n.id, t.roleId) : true),
       N = (0, d.U)(S),
-      R = N ? O.intl.formatToPlainString(O.t.t0928V, {
+      w = N ? O.intl.formatToPlainString(O.t.t0928V, {
         name: A
       }) : O.intl.formatToPlainString(O.t.UDDkGy, {
         name: A
       }),
-      w = T(I({}, t), {
+      R = T(I({}, t), {
         src: null == t.src ? t.src : (0, c.ux)(t.src, C),
         size: C
       }),
@@ -109,7 +109,7 @@ let C = 40,
             className: v.rb,
             children: [(0, r.jsx)("div", {
               className: v.Xq,
-              children: (0, r.jsx)(f.A, T(I({}, w), {
+              children: (0, r.jsx)(f.A, T(I({}, R), {
                 enableTooltip: false,
                 className: v.__invalid_roleIcon,
                 enableHeight: false
@@ -124,7 +124,7 @@ let C = 40,
                 })
               }), (0, r.jsx)(s.Text, {
                 variant: "text-sm/normal",
-                children: R
+                children: w
               })]
             })]
           }), (0, r.jsx)(s.Button, {

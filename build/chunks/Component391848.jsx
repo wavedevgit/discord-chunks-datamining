@@ -54,11 +54,11 @@ let D = 512,
     }, []);
     let {
       sectionDescriptors: q,
-      activeSections: X,
-      commandsByActiveSection: Z,
+      activeSections: Z,
+      commandsByActiveSection: X,
       hasMoreAfter: Q,
-      commands: $,
-      filteredSectionId: J,
+      commands: J,
+      filteredSectionId: $,
       scrollDown: ee,
       filterSection: et
     } = b.cu({
@@ -82,7 +82,7 @@ let D = 512,
       isScrolling: o,
       listRef: Y,
       onActiveCategoryIndexChange: e => {
-        let t = X[e];
+        let t = Z[e];
         if (null != t) {
           let e = q.findIndex(e => e.id === t.id);
           m.LS.setActiveCategoryIndex(e)
@@ -91,30 +91,30 @@ let D = 512,
       scrollOffset: k,
       searchQuery: ""
     }), er = e => {
-      let t = X.length * (M + j) + (Z.reduce((e, t) => e + t.data.length, 0) - (Q ? x : 0)) * L - D;
+      let t = Z.length * (M + j) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? x : 0)) * L - D;
       Q && e + U > t && ee(), en(e), V(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
       ei.current = er
     }), i.useEffect(() => {
       ei.current(l.current)
-    }, [$]);
-    let ea = i.useCallback(e => e !== X.length - 1 || Q ? j : 0, [X.length, Q]),
-      es = Z.map(e => e.data.length);
+    }, [J]);
+    let ea = i.useCallback(e => e !== Z.length - 1 || Q ? j : 0, [Z.length, Q]),
+      es = X.map(e => e.data.length);
     i.useEffect(() => {
       null != Y.current && W && null != F && Y.current.scrollRowIntoView(F)
     }, [W, F]), i.useLayoutEffect(() => {
-      if (null != J) {
+      if (null != $) {
         var e;
         null == (e = Y.current) || e.scrollToSectionTop(0)
       }
-    }, [$, J]);
+    }, [J, $]);
     let eo = i.useCallback(e => {
-        if (e.id === J || e.id === C.Ik.FRECENCY) {
+        if (e.id === $ || e.id === C.Ik.FRECENCY) {
           var t;
           et(null), null == (t = Y.current) || t.scrollToSectionTop(0)
         } else et(e.id)
-      }, [et, J]),
+      }, [et, $]),
       el = i.useCallback((e, t, r) => {
         y.Gf({
           channelId: n.id,
@@ -130,7 +130,7 @@ let D = 512,
         if (null == F) returnfalse;
         let t = 0,
           n = 0;
-        for (let e of Z)
+        for (let e of X)
           if (t = n, F < (n += e.data.length)) {
             let n = e.data[F - t],
               r = q.find(e => e.id === n.applicationId);
@@ -139,15 +139,15 @@ let D = 512,
           } returntrue
       },
       onMoveSelection: e => {
-        if (0 === $.length) returntrue;
+        if (0 === J.length) returntrue;
         let t = Q ? x : 0,
-          n = $.length + t,
+          n = J.length + t,
           r = null == F ? 0 : F + e;
         return r >= n ? r = n - 1 : r < 0 && (r = 0), H(r), K(true), true
       }
-    }), [$.length, Z, Q, q, el, F]);
+    }), [J.length, X, Q, q, el, F]);
     let ec = i.useCallback(e => {
-        let t = X[e];
+        let t = Z[e];
         if (null == t) return null;
         let i = (0, T.Rg)(t),
           a = (0, r.jsx)(i, {
@@ -158,35 +158,35 @@ let D = 512,
             padding: 0
           });
         return (0, r.jsx)(E.A, {
-          className: w.Km,
+          className: R.Km,
           icon: a,
           children: t.name
         }, e)
-      }, [n, X]),
+      }, [n, Z]),
       eu = i.useCallback((e, t) => {
-        let n = e === X.length - 1,
-          i = X[e],
+        let n = e === Z.length - 1,
+          i = Z[e],
           {
             data: a
-          } = Z[e];
+          } = X[e];
         return (0, r.jsxs)("ul", {
           role: "group",
           "aria-label": i.name,
-          className: s()(w.Wy, {
-            [w.YD]: n
+          className: s()(R.Wy, {
+            [R.YD]: n
           }),
           children: [t, 0 === a.length && (0, r.jsx)(c.A, {
-            message: R.intl.format(R.t.WoQXT6, {
+            message: w.intl.format(w.t.WoQXT6, {
               applicationName: i.name
             }),
             noResultsImageURL: P,
-            className: w.qK
+            className: R.qK
           })]
         }, e)
-      }, [X, Z]),
+      }, [Z, X]),
       ed = i.useCallback((e, t) => {
         var i;
-        let a = Z[t.sectionIndex],
+        let a = X[t.sectionIndex],
           s = a.data[t.sectionRowIndex],
           o = "".concat(a.section.id, ":").concat(null != (i = null == s ? true : s.id) ? i : e);
         if (null == s || a.section.id !== s.applicationId && a.section.id !== C.Ik.FRECENCY || s.inputType === v.y$.PLACEHOLDER) return (0, r.jsx)(S.A, {}, o);
@@ -195,7 +195,7 @@ let D = 512,
           index: e,
           command: s,
           channel: n,
-          className: w.D5,
+          className: R.D5,
           selected: F === e,
           showImage: a.section.id !== s.applicationId,
           section: l,
@@ -204,32 +204,32 @@ let D = 512,
             H(null), K(false)
           }
         }, o)
-      }, [n, Z, el, q, F]),
+      }, [n, X, el, q, F]),
       ef = (0, h.GV)();
     return (0, p.gf)(ef, true, (0, f.aI)(F)), i.useEffect(() => () => {
       (0, p.nQ)()
     }, []), (0, r.jsxs)(f.Ay, {
       id: ef,
-      className: w.x9,
-      innerClassName: w.iE,
+      className: R.x9,
+      innerClassName: R.iE,
       onMouseDown: B,
       children: [(0, r.jsx)(I.A, {
-        className: w.H$,
+        className: R.H$,
         channel: n,
         sections: q,
-        filteredSectionId: J,
+        filteredSectionId: $,
         activeCategoryIndex: z,
         onSectionClick: eo,
         applicationCommandListRef: Y
       }), (0, r.jsx)(_.A, {
         role: "listbox",
-        className: w.p_,
+        className: R.p_,
         listPadding: G,
         onScroll: er,
         renderRow: ed,
         renderSection: eu,
         renderSectionHeader: ec,
-        rowCount: X.length,
+        rowCount: Z.length,
         rowCountBySection: es,
         rowHeight: L,
         sectionHeaderHeight: M,

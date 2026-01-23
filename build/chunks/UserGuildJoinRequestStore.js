@@ -2,7 +2,7 @@
 /** chunk id: 212455, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w,
+  A: () => R,
   j: () => h
 });
 var r, Chunk311907 = require("./311907.js"),
@@ -193,7 +193,7 @@ function C(e) {
 function N() {
   u = null
 }
-class R extends(r = Chunk311907.Ay.Store) {
+class w extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(s.default)
   }
@@ -216,8 +216,8 @@ class R extends(r = Chunk311907.Ay.Store) {
     return _[e]
   }
 }
-c(R, "displayName", "UserGuildJoinRequestStore");
-let w = new R(Chunk73153.h, {
+c(w, "displayName", "UserGuildJoinRequestStore");
+let R = new w(Chunk73153.h, {
   CONNECTION_OPEN: g,
   GUILD_JOIN_REQUEST_UPDATE: y,
   GUILD_JOIN_REQUEST_CREATE: y,

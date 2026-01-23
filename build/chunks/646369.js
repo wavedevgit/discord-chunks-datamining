@@ -66,9 +66,9 @@ function S(e, t) {
 let T = 50,
   C = .9,
   N = .1,
-  R = 0;
+  w = 0;
 
-function w(e) {
+function R(e) {
   return (null != e ? e : O.Hz) / O.Hz
 }
 
@@ -322,7 +322,7 @@ class D extends Chunk904986.A {
   }
   getLocalVolume(e) {
     let t = this.localVolumes[e];
-    return null == t && (t = this.context === O.x.DEFAULT ? O.Hz : O.Cn), w(t)
+    return null == t && (t = this.context === O.x.DEFAULT ? O.Hz : O.Cn), R(t)
   }
   setLocalVolume(e, t) {
     this.localVolumes[e] = t;
@@ -838,7 +838,7 @@ class D extends Chunk904986.A {
     this.conn.mergeUsers(e), this.emit(h.yq.UsersMerged, e)
   }
   constructor(e, t, n) {
-    super(e, t), v(this, "mediaEngineConnectionId", "Native-".concat(R++)), v(this, "goLiveSourceIdentifier", true), v(this, "selfVideo", false), v(this, "codecs", []), v(this, "videoEncoderFallbackPending", false), v(this, "videoDecoderFallbackSent", new Set), v(this, "desktopDegradationPreference", (0, E.lE)().DegradationPreference.MAINTAIN_FRAMERATE), v(this, "sourceDesktopDegradationPreference", (0, E.lE)().DegradationPreference.DISABLED), v(this, "videoDegradationPreference", (0, E.lE)().DegradationPreference.BALANCED), v(this, "localPans", {}), v(this, "remoteAudioSSRCs", {}), v(this, "remoteVideoSSRCs", {}), v(this, "inputMode", O.TB.VOICE_ACTIVITY), v(this, "vadThreshold", false), v(this, "vadAutoThreshold", true), v(this, "vadKrispActivationThreshold", .5), v(this, "vadUseKrisp", true), v(this, "vadLeading", 5), v(this, "vadTrailing", 25), v(this, "vadDuringPreProcess", false), v(this, "pttReleaseDelay", 20), v(this, "soundshareActive", false), v(this, "soundshareId", null), v(this, "soundshareSentSpeakingEvent", false), v(this, "echoCancellation", true), v(this, "noiseSuppression", true), v(this, "automaticGainControl", {
+    super(e, t), v(this, "mediaEngineConnectionId", "Native-".concat(w++)), v(this, "goLiveSourceIdentifier", true), v(this, "selfVideo", false), v(this, "codecs", []), v(this, "videoEncoderFallbackPending", false), v(this, "videoDecoderFallbackSent", new Set), v(this, "desktopDegradationPreference", (0, E.lE)().DegradationPreference.MAINTAIN_FRAMERATE), v(this, "sourceDesktopDegradationPreference", (0, E.lE)().DegradationPreference.DISABLED), v(this, "videoDegradationPreference", (0, E.lE)().DegradationPreference.BALANCED), v(this, "localPans", {}), v(this, "remoteAudioSSRCs", {}), v(this, "remoteVideoSSRCs", {}), v(this, "inputMode", O.TB.VOICE_ACTIVITY), v(this, "vadThreshold", false), v(this, "vadAutoThreshold", true), v(this, "vadKrispActivationThreshold", .5), v(this, "vadUseKrisp", true), v(this, "vadLeading", 5), v(this, "vadTrailing", 25), v(this, "vadDuringPreProcess", false), v(this, "pttReleaseDelay", 20), v(this, "soundshareActive", false), v(this, "soundshareId", null), v(this, "soundshareSentSpeakingEvent", false), v(this, "echoCancellation", true), v(this, "noiseSuppression", true), v(this, "automaticGainControl", {
       enabled: true
     }), v(this, "noiseCancellation", false), v(this, "noiseCancellationDuringProcessing", false), v(this, "noiseCancellationAfterProcessing", false), v(this, "vadAfterWebrtc", false), v(this, "voiceFilterId", null), v(this, "attenuationFactor", .5), v(this, "attenuateWhileSpeakingSelf", false), v(this, "attenuateWhileSpeakingOthers", true), v(this, "qos", true), v(this, "conn", true), v(this, "minimumJitterBufferLevel", 0), v(this, "postponeDecodeLevel", 100), v(this, "reconnectInterval", 6e4), v(this, "keyframeInterval", 0), v(this, "clipsKeyFrameInterval", 0), v(this, "videoQualityMeasurement", ""), v(this, "videoEncoderExperiments", ""), v(this, "numFastUdpReconnects", 0), v(this, "simulcastLQDisabledSsrc", true), v(this, "lastPreparedTransitionId", false), v(this, "lastExecutedTransitionId", false), v(this, "logger", true), v(this, "transportInfo", true), v(this, "beginInitializeAt", true), v(this, "onConnectCallbackAt", true), v(this, "onVideoCodecsCallbackAt", true), v(this, "onEncryptionModesCallbackAt", true), v(this, "handleSpeakingNative", (e, t, n) => {
       let r = O.ME.NONE;

@@ -31,8 +31,8 @@ var Chunk503698 = require("./503698.js"),
   Chunk785619 = require("./785619.js"),
   Chunk909340 = require("./909340.js"),
   Chunk455482 = require("./455482.js");
-let R = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
-  w = 720;
+let w = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
+  R = 720;
 
 function P(e, t) {
   let n = e.program_current_state,
@@ -49,7 +49,7 @@ function P(e, t) {
         }), headerText: S.intl.format(I.default.cfE8Oh, {
           days: Math.max(1, i)
         }), subheaderText: S.intl.format(I.default["53tWRt"], {
-          helpdeskArticle: R
+          helpdeskArticle: w
         })
       };
     case _.L.PAYMENT_PROCESSING:
@@ -61,7 +61,7 @@ function P(e, t) {
             section: O.nc_.BILLING
           })
         }), headerText: S.intl.string(I.default.uuZJXR), subheaderText: S.intl.format(I.default.dkeEV7, {
-          helpdeskArticle: R
+          helpdeskArticle: w
         })
       };
     case _.L.PAYMENT_ERROR:
@@ -73,7 +73,7 @@ function P(e, t) {
             section: O.nc_.BILLING
           })
         }), headerText: S.intl.string(I.default["+O9Asn"]), subheaderText: S.intl.format(I.default.nWKEBZ, {
-          helpdeskArticle: R
+          helpdeskArticle: w
         })
       };
     case _.L.PROGRAM_ROLLBACK:
@@ -83,7 +83,7 @@ function P(e, t) {
           variant: t ? "overlay-primary" : "secondary",
           onClick: () => (0, h.pX)(A.BV.COLLECTIBLES_SHOP_WITH_TAB(v.G2.ORBS))
         }), headerText: S.intl.string(I.default.zF0HnJ), subheaderText: S.intl.format(I.default["5tzNTa"], {
-          helpdeskArticle: R
+          helpdeskArticle: w
         })
       };
     case _.L.PREMIUM_CHURNING:
@@ -96,7 +96,7 @@ function P(e, t) {
             section: O.nc_.BILLING
           })
         }), headerText: S.intl.string(I.default.ISnOet), subheaderText: S.intl.format(I.default["vjaRZ/"], {
-          helpdeskArticle: R
+          helpdeskArticle: w
         })
       };
     default:
@@ -112,7 +112,7 @@ let D = e => {
   } = (0, o.cf)([p.A], () => ({
     passesGeneralUIInvariant: p.A.passesGeneralUIInvariant(_.W.NITRO),
     programReward: p.A.getRewardForProgram(_.W.NITRO)
-  })), s = (0, d.A)("(min-width: ".concat(w, "px)"));
+  })), s = (0, d.A)("(min-width: ".concat(R, "px)"));
   if (!n || null == i) return null;
   let h = P(i, s);
   if (null == h) return null;

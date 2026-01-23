@@ -108,7 +108,7 @@ function N(e) {
   }, false)
 }
 
-function R(e) {
+function w(e) {
   let {
     userIds: t,
     guildId: n,
@@ -122,7 +122,7 @@ function R(e) {
   }, false)
 }
 
-function w(e) {
+function R(e) {
   let {
     userId: t,
     context: n
@@ -152,6 +152,6 @@ let D = new P(Chunk73153.h, {
   VOICE_CHANNEL_SELECT: S,
   RTC_CONNECTION_STATE: C,
   VOICE_STATE_UPDATES: N,
-  RTC_CONNECTION_CLIENT_CONNECT: R,
-  RTC_CONNECTION_CLIENT_DISCONNECT: w
+  RTC_CONNECTION_CLIENT_CONNECT: w,
+  RTC_CONNECTION_CLIENT_DISCONNECT: R
 })

@@ -67,11 +67,11 @@ function S(e) {
   let {
     onDismiss: A
   } = e, S = (0, a.bG)([f.A], () => f.A.getGuildId()), T = (0, a.bG)([d.A], () => null != S ? d.A.getChannelId(S) : null, [S]), C = null != S ? S : null, N = (0, a.bG)([u.A], () => null != C ? u.A.getGuild(C) : null, [C]), {
-    shouldShowIncidentActions: R,
-    incidentData: w,
+    shouldShowIncidentActions: w,
+    incidentData: R,
     isUnderLockdown: P
   } = (0, _.Li)(C), D = (0, l.fw)(null != (t = null == N ? true : N.id) ? t : g.dJq), x = i.useCallback(() => null != N && (0, c.aZ)(N.id), [N]);
-  if (null == N || null == w || !R) return null;
+  if (null == N || null == R || !w) return null;
   let L = e => {
       e && D && T !== E.VV.MEMBER_SAFETY && x() ? p.default.track(g.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: g.kqX.GUILD_RAID_NOTIFICATION,
@@ -79,7 +79,7 @@ function S(e) {
       }) : (0, s.mMO)(async () => {
         let e = {
             source: h.Eo.NAGBAR,
-            alertType: (0, m.$5)(w)
+            alertType: (0, m.$5)(R)
           },
           {
             default: t
@@ -95,8 +95,8 @@ function S(e) {
       guild: N,
       size: o.A.Sizes.MINI
     }),
-    M = (0, m.ql)(w, N.name);
-  if (null != (null != (O = w.dmsDisabledUntil) ? O : w.invitesDisabledUntil) && P) return (0, r.jsxs)(s.$Td, {
+    M = (0, m.ql)(R, N.name);
+  if (null != (null != (O = R.dmsDisabledUntil) ? O : R.invitesDisabledUntil) && P) return (0, r.jsxs)(s.$Td, {
     className: b.lm,
     color: s.Hv$.NEUTRAL,
     children: [(0, r.jsx)(s.PMB, {
@@ -116,9 +116,9 @@ function S(e) {
       })
     })]
   });
-  let k = (0, m.P$)(w) ? y.intl.formatToPlainString(y.t.tZTx2E, {
+  let k = (0, m.P$)(R) ? y.intl.formatToPlainString(y.t.tZTx2E, {
       guildName: N.name
-    }) : (0, m.Qm)(w) ? y.intl.formatToPlainString(y.t["1bSmxr"], {
+    }) : (0, m.Qm)(R) ? y.intl.formatToPlainString(y.t["1bSmxr"], {
       guildName: N.name
     }) : y.intl.formatToPlainString(y.t.W87xDE, {
       guildName: N.name

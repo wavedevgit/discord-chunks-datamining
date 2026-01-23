@@ -48,7 +48,7 @@ function O(e) {
   var t;
   let n = null == (t = _.A.getGuild(e.guild_id)) ? true : t.name;
   y.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), a.Ay.Emitter.batched(() => {
-    null != e.channels && C(e.guild_id, new Set(e.channels)), null != e.roles && N(e.guild_id, new Set(e.roles)), null != e.emojis && R(e.guild_id, new Set(e.emojis)), null != e.stickers && w(e.guild_id, new Set(e.stickers))
+    null != e.channels && C(e.guild_id, new Set(e.channels)), null != e.roles && N(e.guild_id, new Set(e.roles)), null != e.emojis && w(e.guild_id, new Set(e.emojis)), null != e.stickers && R(e.guild_id, new Set(e.stickers))
   })
 }
 
@@ -111,7 +111,7 @@ function N(e, t) {
   })
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = u.Ay.getGuildEmoji(e),
     r = n.filter(e => t.has(e.id));
   n.length !== r.length && s.h.dispatch({
@@ -121,7 +121,7 @@ function R(e, t) {
   })
 }
 
-function w(e, t) {
+function R(e, t) {
   var n;
   let r = null != (n = d.A.getStickersByGuildId(e)) ? n : [],
     i = r.filter(e => t.has(e.id));

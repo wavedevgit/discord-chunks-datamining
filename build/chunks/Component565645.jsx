@@ -96,8 +96,8 @@ function T(e) {
     isInteracting: T = false,
     shouldAnimate: C,
     onMouseEnter: N,
-    onMouseLeave: R,
-    canSelect: w = true,
+    onMouseLeave: w,
+    canSelect: R = true,
     autoplay: P,
     registerInnerRef: D,
     registerAnimatedElementRef: x,
@@ -117,15 +117,15 @@ function T(e) {
     }
     if (null != _) return m.Ay.getURL(_);
     throw Error("Unknown Src for Emoji")
-  }, [O, W, f, _, K, Y, M, T, C, a]), X = i.useCallback(() => {
+  }, [O, W, f, _, K, Y, M, T, C, a]), Z = i.useCallback(() => {
     null != q && (V.current = (0, d.yt)(q, e => {
       e || G(Date.now())
     }))
-  }, [q]), Z = i.useCallback(e => {
+  }, [q]), X = i.useCallback(e => {
     O && k(true), null == f && F(_), null == N || N(e)
   }, [O, _, N, F, f]), Q = i.useCallback(e => {
-    O && k(false), null == f && B(_), null == R || R(e)
-  }, [O, f, _, R, B]), $ = i.useMemo(() => {
+    O && k(false), null == f && B(_), null == w || w(e)
+  }, [O, f, _, w, B]), J = i.useMemo(() => {
     let e = null != f && "" !== f ? {
       "data-id": f
     } : {
@@ -135,22 +135,22 @@ function T(e) {
       className: s()("emoji", c, {
         jumboable: "jumbo" === I
       }),
-      onError: X,
-      onMouseEnter: Z,
+      onError: Z,
+      onMouseEnter: X,
       onMouseLeave: Q,
       "data-type": "emoji"
     }), e)
-  }, [c, f, _, Z, Q, X, j, I]);
+  }, [c, f, _, X, Q, Z, j, I]);
   i.useEffect(() => () => {
     var e;
     return null == (e = V.current) ? true : e.call(V)
   }, []);
-  let J = i.useCallback(e => {
+  let $ = i.useCallback(e => {
       z.current = e, null == D || D(e), null == x || x(e)
     }, [D, x]),
     ee = (0, l.A)(z);
-  return null == q || "" === q ? (0, r.jsx)("span", v(b({}, $), {
-    ref: J,
+  return null == q || "" === q ? (0, r.jsx)("span", v(b({}, J), {
+    ref: $,
     className: s()("emoji", "emoji-text"),
     children: null != L ? L : _
   })) : (0, r.jsxs)(r.Fragment, {
@@ -160,13 +160,13 @@ function T(e) {
       emojiName: _,
       disable: false === W || false === H,
       emojiRef: ee
-    }), w ? (0, r.jsx)("img", v(b({}, $), {
-      ref: J,
+    }), R ? (0, r.jsx)("img", v(b({}, J), {
+      ref: $,
       src: q,
       alt: null != (t = null != o ? o : _) ? t : true,
       draggable: false
-    }), U) : (0, r.jsx)("div", v(b({}, $), {
-      ref: J,
+    }), U) : (0, r.jsx)("div", v(b({}, J), {
+      ref: $,
       role: "img",
       "aria-label": null != (n = null != o ? o : _) ? n : true,
       style: {

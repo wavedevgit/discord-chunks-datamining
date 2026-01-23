@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => T,
-  t: () => R
+  t: () => w
 }), require("./896048.js"), require("./733351.js"), require("./321073.js"), require("./747238.js"), require("./812715.js"), require("./667532.js"), require("./264879.js"), require("./183875.js");
 var Chunk485845 = require("./485845.js"),
   Chunk155718 = require("./155718.js"),
@@ -130,11 +130,11 @@ function C(e) {
     command: p,
     commandText: _
   } = x(i), h = s.activeCommand;
-  if (!l && (null == h || null == (t = h.integration_types) ? true : t.includes(r.b.GUILD_INSTALL)) || u && (null == h ? true : h.inputType) !== c.y$.BUILT_IN_TEXT && (null == h ? true : h.inputType) !== c.y$.BUILT_IN_INTEGRATION) return null != p && R(i, o.id, h, true), null;
+  if (!l && (null == h || null == (t = h.integration_types) ? true : t.includes(r.b.GUILD_INSTALL)) || u && (null == h ? true : h.inputType) !== c.y$.BUILT_IN_TEXT && (null == h ? true : h.inputType) !== c.y$.BUILT_IN_INTEGRATION) return null != p && w(i, o.id, h, true), null;
   if (null != p) {
-    if (b.VW.isEditorEmpty(i) || null == h) return R(i, o.id, h, false), null;
+    if (b.VW.isEditorEmpty(i) || null == h) return w(i, o.id, h, false), null;
     let e = "".concat("/").concat(p.displayName);
-    if (null == _ || !_.startsWith(e) || 0 === m.O7(i).length && (_.length < e.length + 1 || " " !== _[e.length])) return R(i, o.id, h, true), null
+    if (null == _ || !_.startsWith(e) || 0 === m.O7(i).length && (_.length < e.length + 1 || " " !== _[e.length])) return w(i, o.id, h, true), null
   } else {
     if (null != h && d) {
       let e = N(i, o, s),
@@ -170,7 +170,7 @@ function C(e) {
     }
   }
   if (null != h && null != p) {
-    w(i, h) || P(i, h);
+    R(i, h) || P(i, h);
     let e = m.SQ(i, h, o.id),
       t = b.VW.above(i, {
         match: e => b.VW.isInline(i, e) && "applicationCommandOption" === e.type,
@@ -274,7 +274,7 @@ function N(e, t, n) {
   return null != A ? (y.b.selectCommandOption(e, A.optionName), C = A.optionName) : null != S ? (y.b.selectCommandOption(e, S.optionName, false), C = S.optionName) : y.b.resetSelectionToEditorEnd(e), null == S && P(e, u), C
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   let [i] = b.VW.blocks(e)[0], s = (r ? (0, E.IQ)(i, {
     mode: "plain"
   }).trimEnd() : "").split("\n").map(e => ({
@@ -296,7 +296,7 @@ function R(e, t, n, r) {
   })
 }
 
-function w(e, t) {
+function R(e, t) {
   if (null == t.options || 0 === t.options.length) returnfalse;
   let n = m.pY(e, t);
   return 0 !== n.length && (b.VW.withoutNormalizing(e, () => {

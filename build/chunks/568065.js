@@ -7,7 +7,7 @@ require.d(exports, {
   G0: () => N,
   HO: () => y,
   On: () => m,
-  Pn: () => w,
+  Pn: () => R,
   Wb: () => d,
   YV: () => v,
   a8: () => _,
@@ -23,7 +23,7 @@ require.d(exports, {
   w$: () => b,
   wr: () => A,
   y7: () => h,
-  yG: () => R,
+  yG: () => w,
   z0: () => D
 }), require("./896048.js");
 var Chunk512750 = require("./512750.js"),
@@ -165,10 +165,10 @@ let T = new Set([Chunk512750.OJ, Chunk512750.jF]),
     3: new Set
   },
   N = "powerupId";
-var R = function(e) {
+var w = function(e) {
     return e[e.AVAILABLE = 0] = "AVAILABLE", e[e.SPENT = 1] = "SPENT", e[e.TOTAL = 2] = "TOTAL", e
   }({}),
-  w = function(e) {
+  R = function(e) {
     return e[e.LEVEL = 0] = "LEVEL", e[e.PERK = 1] = "PERK", e
   }({}),
   P = function(e) {

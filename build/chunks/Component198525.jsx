@@ -74,11 +74,11 @@ function U(e) {
   } = e, q = (0, o.bG)([g.A], () => {
     var e;
     return null != (e = g.A.getChannel(null == B ? true : B.channelId)) ? e : null
-  }), X = (0, S.ix)({
+  }), Z = (0, S.ix)({
     quest: V,
     questContent: y.uF.MEMBERS_LIST,
     sourceQuestContent: y.uF.MEMBERS_LIST
-  }), Z = (null == V || null == (I = V.userStatus) ? true : I.claimedAt) != null, Q = (null == V || null == (x = V.userStatus) ? true : x.enrolledAt) != null, $ = (null == V || null == (U = V.userStatus) ? true : U.completedAt) != null, J = (0, o.bG)([m.A], () => m.A.getState().theme), ee = (0, c.Mw)(J) ? w.NJ.DARK : w.NJ.LIGHT, et = (0, o.bG)([_.A], () => _.A.useReducedMotion), {
+  }), X = (null == V || null == (I = V.userStatus) ? true : I.claimedAt) != null, Q = (null == V || null == (x = V.userStatus) ? true : x.enrolledAt) != null, J = (null == V || null == (U = V.userStatus) ? true : U.completedAt) != null, $ = (0, o.bG)([m.A], () => m.A.getState().theme), ee = (0, c.Mw)($) ? R.NJ.DARK : R.NJ.LIGHT, et = (0, o.bG)([_.A], () => _.A.useReducedMotion), {
     ref: en,
     height: er
   } = (0, p.Ay)(), [ei, ea] = i.useState(et), es = (0, h.aL)(), eo = (0, s.KF)();
@@ -121,7 +121,7 @@ function U(e) {
       }
     }),
     eu = () => {
-      es.dispatch(R.jej.POPOUT_CLOSE)
+      es.dispatch(w.jej.POPOUT_CLOSE)
     },
     ed = "top" === H ? "".concat(j, " ").concat(j, " 0 0") : "0 0 ".concat(j, " ").concat(j),
     ef = () => {
@@ -179,13 +179,13 @@ function U(e) {
       quest: V
     }),
     eg = (() => {
-      if ($ && !Z) return {
+      if (J && !X) return {
         headerText: P.intl.string(P.t.gHerLS),
         ctaText: P.intl.string(P.t.cfY4PE),
-        handleClickCta: X,
+        handleClickCta: Z,
         tileAssetType: "reward"
       };
-      if (Q && !Z) return {
+      if (Q && !X) return {
         headerText: P.intl.string(P.t.uH2sf2),
         ctaText: P.intl.string(P.t.VN1Ajl),
         handleClickCta: ep,

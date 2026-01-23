@@ -86,10 +86,10 @@ let S = function(e) {
     src: T,
     backgroundSrc: C,
     userId: N,
-    guildId: R,
-    pulseSpeakingIndicator: w = false,
+    guildId: w,
+    pulseSpeakingIndicator: R = false,
     speaking: P = false
-  } = e, D = A(e, ["style", "src", "backgroundSrc", "userId", "guildId", "pulseSpeakingIndicator", "speaking"]), x = null != C ? C : T, L = (0, c.Ay)(x, o.A.unsafe_rawColors.PRIMARY_800.css), j = (0, f.Ay)(null != N ? N : m.dJq, R), M = null != (t = (0, d.tM)(null == j || null == (y = j.themeColors) ? true : y[0])) ? t : m.NJ8.DARK, {
+  } = e, D = A(e, ["style", "src", "backgroundSrc", "userId", "guildId", "pulseSpeakingIndicator", "speaking"]), x = null != C ? C : T, L = (0, c.Ay)(x, o.A.unsafe_rawColors.PRIMARY_800.css), j = (0, f.Ay)(null != N ? N : m.dJq, w), M = null != (t = (0, d.tM)(null == j || null == (y = j.themeColors) ? true : y[0])) ? t : m.NJ8.DARK, {
     profileThemeStyle: k,
     profileThemeClassName: U
   } = (0, p.A)({
@@ -102,10 +102,10 @@ let S = function(e) {
   } = (0, h.a5)("VideoBackground-web");
   if (i.useEffect(() => {
       null != N && G && (0, _.A)(N, true, {
-        guildId: R,
+        guildId: w,
         dispatchWait: true
       })
-    }, [G, N, R]), null == T) return null;
+    }, [G, N, w]), null == T) return null;
   let V = (0, r.jsx)(l.euF, b({
       className: E.R,
       src: T
@@ -118,7 +118,7 @@ let S = function(e) {
     className: s()(E.T, {
       [U]: G
     }),
-    children: w ? (0, r.jsx)(u.A, {
+    children: R ? (0, r.jsx)(u.A, {
       shouldAnimate: P,
       children: V
     }) : V

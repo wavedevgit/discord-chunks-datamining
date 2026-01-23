@@ -155,7 +155,7 @@ class m extends h {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, a, s, o, l, c, d, f, p, _, h, g, E, y, b, O, v, A, I, S, T, C, N, R, w, P, D, x, L, j, M, k, U, G, V, F, B, H, Y, W, K, z;
+    var t, n, r, i, a, s, o, l, c, d, f, p, _, h, g, E, y, b, O, v, A, I, S, T, C, N, w, R, P, D, x, L, j, M, k, U, G, V, F, B, H, Y, W, K, z;
     return new m({
       id: null != (t = e.id) ? t : this.id,
       name: null != (n = e.name) ? n : this.name,
@@ -183,8 +183,8 @@ class m extends h {
       bot: null != (T = e.bot) ? T : this.bot,
       flags: null != (C = e.flags) ? C : this.flags,
       maxParticipants: null != (N = e.maxParticipants) ? N : this.maxParticipants,
-      tags: null != (R = e.tags) ? R : this.tags,
-      embeddedActivityConfig: null != (w = e.embeddedActivityConfig) ? w : null != this.embeddedActivityConfig ? u({}, this.embeddedActivityConfig) : true,
+      tags: null != (w = e.tags) ? w : this.tags,
+      embeddedActivityConfig: null != (R = e.embeddedActivityConfig) ? R : null != this.embeddedActivityConfig ? u({}, this.embeddedActivityConfig) : true,
       type: null != (P = e.type) ? P : this.type,
       team: null != (D = e.team) ? D : this.team,
       roleConnectionsVerificationUrl: null != (x = e.roleConnectionsVerificationUrl) ? x : this.roleConnectionsVerificationUrl,

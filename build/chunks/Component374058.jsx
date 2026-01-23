@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 374058, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -28,7 +28,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk76584 = require("./76584.js"),
   Chunk661251 = require("./661251.js");
-let T = [{
+let E = [{
   key: "event",
   cellClassName: Chunk76584.Hz,
   render(e) {
@@ -111,7 +111,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.Ay, {
-          className: i()(E.jr, O.nZ),
+          className: i()(T.jr, O.nZ),
           children: [(0, a.jsx)(p.Ay.Icon, {
             icon: u.Uy2,
             tooltip: t
@@ -291,7 +291,7 @@ function D() {
     }, []);
   return (0, a.jsxs)("div", {
     ref: e,
-    className: i()(E.nd, O.nd),
+    className: i()(T.nd, O.nd),
     children: [(0, a.jsxs)("div", {
       className: O.rh,
       children: [(0, a.jsx)(d.$n, {
@@ -332,7 +332,7 @@ function D() {
         placeholder: "Search by event name"
       })
     }), (0, a.jsx)(A.A, {
-      columns: T,
+      columns: E,
       data: g,
       selectedRowKey: f,
       onClickRow: e => b(e.key)

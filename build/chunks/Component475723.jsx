@@ -44,8 +44,8 @@ function P(e) {
   } = e;
   return (0, r.jsx)(u.$n, {
     buttonRef: a,
-    className: s()(w.x6, t),
-    innerClassName: w.hZ,
+    className: s()(R.x6, t),
+    innerClassName: R.hZ,
     look: u.$n.Looks.OUTLINED,
     color: u.$n.Colors.WHITE,
     size: u.$n.Sizes.NONE,
@@ -60,25 +60,25 @@ function D(e) {
   } = e;
   return (0, r.jsx)(P, {
     onClick: t,
-    children: R.intl.string(R.t.R9GHya)
+    children: w.intl.string(w.t.R9GHya)
   })
 }
 
 function x(e) {
   switch (e) {
     case T.BEX.INTEGRATIONS:
-      return R.intl.string(R.t.k7LGdh);
+      return w.intl.string(w.t.k7LGdh);
     case T.BEX.ROLE_SUBSCRIPTIONS:
-      return R.intl.string(R.t.bRqiqa);
+      return w.intl.string(w.t.bRqiqa);
     case T.BEX.ONBOARDING:
-      return R.intl.string(R.t.qZpU3S);
+      return w.intl.string(w.t.qZpU3S);
     default:
-      return R.intl.string(R.t.MTIXhi)
+      return w.intl.string(w.t.MTIXhi)
   }
 }
 
 function L(e) {
-  return e === T.BEX.ROLE_SUBSCRIPTIONS ? R.intl.string(R.t.hZUCzd) : R.intl.string(R.t["/djIh7"])
+  return e === T.BEX.ROLE_SUBSCRIPTIONS ? w.intl.string(w.t.hZUCzd) : w.intl.string(w.t["/djIh7"])
 }
 
 function j() {
@@ -108,31 +108,31 @@ function j() {
     };
   return (0, r.jsxs)(d.$Td, {
     color: d.Hv$.BRAND,
-    className: w.lm,
+    className: R.lm,
     children: [(0, r.jsxs)(P, {
       onClick: () => U({
         backToSettings: true
       }),
-      className: w.Gv,
+      className: R.Gv,
       children: [(0, r.jsx)(b.A, {
         width: 16,
         height: 16,
         direction: b.A.Directions.LEFT,
-        className: w.lJ
+        className: R.lJ
       }), j]
     }), k && u ? (0, r.jsx)("div", {
-      className: w.XI,
+      className: R.XI,
       children: (0, r.jsx)("div", {
-        className: w.ut,
-        children: R.intl.string(R.t.PxbiAf)
+        className: R.ut,
+        children: w.intl.string(w.t.PxbiAf)
       })
     }) : (0, r.jsxs)("div", {
-      className: w.XI,
+      className: R.XI,
       children: [(0, r.jsx)("div", {
-        className: w.ut,
-        children: u ? R.intl.formatToPlainString(R.t["0PHahI"], {
+        className: R.ut,
+        children: u ? w.intl.formatToPlainString(w.t["0PHahI"], {
           numRoles: Object.keys(a).length
-        }) : R.intl.formatToPlainString(R.t.vMlK8t, {
+        }) : w.intl.formatToPlainString(w.t.vMlK8t, {
           numRoles: Object.keys(a).length
         })
       }), (0, r.jsx)(d.YNO, {
@@ -152,20 +152,20 @@ function j() {
               width: 16,
               height: 16,
               direction: O.A.Directions.DOWN,
-              className: w.k5
+              className: R.k5
             })]
           })
         }
       }), u && (0, r.jsx)(c.m, {
         asContainer: true,
-        text: R.intl.string(R.t.mW4DUE),
+        text: w.intl.string(w.t.mW4DUE),
         children: (0, r.jsx)(d.EpV, {
           size: "xs",
           color: l.A.unsafe_rawColors.YELLOW_300.css
         })
       }), v && (0, r.jsx)(c.m, {
         asContainer: true,
-        text: R.intl.formatToPlainString(R.t.eummvd, {
+        text: w.intl.formatToPlainString(w.t.eummvd, {
           maxTiers: N.f7,
           maxProducts: 50
         }),
@@ -187,9 +187,9 @@ function M(e) {
     guildId: t
   } = e;
   return (0, o.bG)([I.A], () => I.A.isViewingRoles(t)) ? (0, r.jsx)("div", {
-    className: s()(w.xd, {
-      [w.KF]: (0, v.isWindows)(),
-      [w.Xz]: (0, v.isMac)()
+    className: s()(R.xd, {
+      [R.KF]: (0, v.isWindows)(),
+      [R.Xz]: (0, v.isMac)()
     }),
     children: (0, r.jsx)(j, {})
   }) : null

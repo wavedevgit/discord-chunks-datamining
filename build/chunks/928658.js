@@ -2,7 +2,7 @@
 /** chunk id: 928658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GJ: () => w,
+  GJ: () => R,
   LF: () => N,
   NW: () => v,
   RR: () => A,
@@ -14,7 +14,7 @@ require.d(exports, {
   b8: () => b,
   bM: () => C,
   dy: () => D,
-  jJ: () => R,
+  jJ: () => w,
   nQ: () => I,
   pb: () => E,
   r3: () => P,
@@ -254,7 +254,7 @@ async function N(e, t, n) {
   }
 }
 
-function R(e, t) {
+function w(e, t) {
   x(l.t0.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
@@ -268,7 +268,7 @@ function R(e, t) {
   })
 }
 
-function w(e, t, n, r) {
+function R(e, t, n, r) {
   var i;
   (0, u.T)({
     name: l.t0.WIDGET,

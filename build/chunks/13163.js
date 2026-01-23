@@ -49,7 +49,7 @@ function h(e) {
     return u.current = n, () => {
       for (let e of n) e.removeEventListener(p, r)
     }
-  }, [t]), R(u, s, n), b(u, n), P(u, s, n), N(u, o), (0, d.useEffect)(() => {
+  }, [t]), w(u, s, n), b(u, n), P(u, s, n), N(u, o), (0, d.useEffect)(() => {
     let e = (0, i.bq)((0, a.TW)(u.current ? u.current[0] : true)),
       t = null;
     if (v(e, u.current)) {
@@ -290,7 +290,7 @@ function N(e, t) {
   }, [e])
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   (0, r.N)(() => {
     if (t || n) return;
     let r = e.current,
@@ -305,7 +305,7 @@ function R(e, t, n) {
   }, [e, t, n])
 }
 
-function w(e) {
+function R(e) {
   let t = U.getTreeNode(_);
   for (; t && t.scopeRef !== e;) {
     if (t.nodeToRestore) returnfalse;
@@ -332,7 +332,7 @@ function P(e, t, n) {
     let i = t => {
       if ("Tab" !== t.key || t.altKey || t.ctrlKey || t.metaKey || !E(e) || t.isComposing) return;
       let n = r.activeElement;
-      if (!A(n, e) || !w(e)) return;
+      if (!A(n, e) || !R(e)) return;
       let i = U.getTreeNode(e);
       if (!i) return;
       let a = i.nodeToRestore,
@@ -360,7 +360,7 @@ function P(e, t, n) {
       if (!n) return;
       let a = n.nodeToRestore,
         s = (0, i.bq)(r);
-      if (t && a && (s && A(s, e) || s === r.body && w(e))) {
+      if (t && a && (s && A(s, e) || s === r.body && R(e))) {
         let t = U.clone();
         requestAnimationFrame(() => {
           if (r.activeElement === r.body) {

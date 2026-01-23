@@ -51,7 +51,7 @@ function N(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,8 +62,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ function P() {
     {
       remindersEnabled: a,
       clipsLength: C,
-      clipsQuality: R
+      clipsQuality: w
     } = (0, o.cf)([g.A], () => g.A.getSettings()),
     P = (0, o.bG)([g.A], () => g.A.getHardwareClassification()),
     D = (0, o.bG)([_.Ay], () => _.Ay.getKeybindForAction(A.hCu.SAVE_CLIP, true)),
@@ -159,12 +159,12 @@ function P() {
       })
     }], [k]),
     F = i.useCallback(e => {
-      c.A.setKeybind(w(N({}, D), {
+      c.A.setKeybind(R(N({}, D), {
         shortcut: e
       }))
     }, [D]),
     B = i.useCallback(e => {
-      c.A.setKeybind(w(N({}, x), {
+      c.A.setKeybind(R(N({}, x), {
         shortcut: e
       }))
     }, [x]);
@@ -209,25 +209,25 @@ function P() {
       onSelectionChange: e => {
         O.GS({
           resolution: e,
-          frameRate: R.frameRate
+          frameRate: w.frameRate
         })
       },
       label: S.intl.string(S.t.aFudZJ),
       description: S.intl.string(S.t.nIrkW5),
-      value: R.resolution,
+      value: w.resolution,
       options: G,
       selectionMode: "single",
       fullWidth: true
     }), (0, r.jsx)(l.l6P, {
       onSelectionChange: e => {
         O.GS({
-          resolution: R.resolution,
+          resolution: w.resolution,
           frameRate: e
         })
       },
       label: S.intl.string(S.t["2wScL1"]),
       description: S.intl.string(S.t["Rf9+fy"]),
-      value: R.frameRate,
+      value: w.frameRate,
       options: V,
       selectionMode: "single",
       fullWidth: true

@@ -38,7 +38,7 @@ let S = new Chunk626584.A("GameConsoleManager"),
   T = 3e3,
   C = 6e4,
   N = 18e4;
-async function R(e) {
+async function w(e) {
   let t = f.A.getChannelId();
   i()(null == t, "Syncing to remote while in voice!"), e.selfMute !== d.A.isSelfMute() && await o.A.toggleSelfMute({
     syncRemote: false
@@ -47,7 +47,7 @@ async function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let t = E.default.getAwaitingRemoteSessionInfo();
   return e.find(e => {
     let n = O.hv.has(e.clientInfo.os),
@@ -69,11 +69,11 @@ class P extends Chunk439372.A {
       PASSIVE_UPDATE_V2: e => this.handleVoiceStateUpdates(e),
       REMOTE_SESSION_DISCONNECT: () => this.handleRemoteSessionDisconnect()
     }), I(this, "maybeConnect", e => {
-      let t = w(e);
+      let t = R(e);
       if (null == t) return null;
       this.awaitRemoteTimeout.stop(), (0, m.m9)(t.sessionId);
       let n = _.A.getVoiceStateForSession(u.default.getId(), t.sessionId);
-      null != n && R(n)
+      null != n && w(n)
     }), I(this, "handleAudioStateToggle", e => {
       let {
         syncRemote: t,
@@ -90,7 +90,7 @@ class P extends Chunk439372.A {
         selfDeaf: r,
         selfMute: i
       }), this.rollbackCommandTimeout.start(T, () => {
-        R(o)
+        w(o)
       }))
     }), I(this, "handleVoiceStateUpdates", e => {
       let t = e.voiceStates,
@@ -110,7 +110,7 @@ class P extends Chunk439372.A {
         } = e;
         return t === n
       });
-      null != r && (this.rollbackCommandTimeout.stop(), R(r))
+      null != r && (this.rollbackCommandTimeout.stop(), w(r))
     }), I(this, "handleSessionsChanged", () => {
       let e = E.default.getRemoteSessionId();
       null != e && null == p.A.getSessionById(e) && (0, m.ZG)(), null == e && this.maybeConnect(Object.values(p.A.getSessions()))

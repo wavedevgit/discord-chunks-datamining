@@ -94,8 +94,8 @@ function M(e, t) {
 }
 let k = e => {
     C.A.show({
-      title: w.intl.string(w.t.cTaRxF),
-      body: w.intl.formatToPlainString(w.t["VSd+Aj"], {
+      title: R.intl.string(R.t.cTaRxF),
+      body: R.intl.formatToPlainString(R.t["VSd+Aj"], {
         quantity: e
       })
     })
@@ -110,8 +110,8 @@ let k = e => {
   },
   G = () => {
     C.A.show({
-      title: w.intl.string(w.t.ZZlox4),
-      body: w.intl.string(w.t.ZUEGFn)
+      title: R.intl.string(R.t.ZZlox4),
+      body: R.intl.string(R.t.ZUEGFn)
     })
   };
 
@@ -186,7 +186,7 @@ let B = {
       }
       return i
     } catch (t) {
-      if ((null == (i = t.body) ? true : i.code) === N.t02.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED && (0, l.yO)(R.w_.JOIN_LARGE_GUILD_UNDERAGE), (null == (o = t.body) ? true : o.code) === N.t02.TOO_MANY_USER_GUILDS) {
+      if ((null == (i = t.body) ? true : i.code) === N.t02.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED && (0, l.yO)(w.w_.JOIN_LARGE_GUILD_UNDERAGE), (null == (o = t.body) ? true : o.code) === N.t02.TOO_MANY_USER_GUILDS) {
         let e = v.default.getCurrentUser();
         S.Ay.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(N.cZu) : k(N.qlD)
       }
@@ -321,7 +321,7 @@ let B = {
   }),
   async createRole(e, t, n, r) {
     let l = {
-      name: null != t && "" !== t ? t : w.intl.string(w.t.QBMHvB),
+      name: null != t && "" !== t ? t : R.intl.string(R.t.QBMHvB),
       color: null != n ? n : 0,
       colors: null != r ? r : {
         primary_color: null != n ? n : 0,

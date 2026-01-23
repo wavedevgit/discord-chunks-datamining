@@ -97,12 +97,12 @@ function H(e) {
       dockedRect: null != e ? O.A.getDockedRect(e.id) : null,
       isHidden: O.A.isEmbeddedActivityHidden()
     }
-  }), X = (0, T.xi)({
+  }), Z = (0, T.xi)({
     channelId: null == p ? true : p.id
   }), {
-    activityParticipant: Z,
+    activityParticipant: X,
     selectedParticipant: Q,
-    participantsOpen: $
+    participantsOpen: J
   } = (0, o.cf)([g.A], () => ({
     activityParticipant: null != V && null != p ? g.A.getParticipant(p.id, (0, m.Qt)({
       applicationId: V.applicationId,
@@ -110,7 +110,7 @@ function H(e) {
     })) : null,
     selectedParticipant: null != p ? g.A.getSelectedParticipant(p.id) : null,
     participantsOpen: null != p && g.A.getParticipantsOpen(p.id)
-  })), J = K || null != X, ee = (0, R.A)(null == p ? true : p.id), et = ee && (null == Q ? true : Q.type) !== j.lp.ACTIVITY, en = !ee && H === x.Gd.PIP, er = J && (et || en) && null == z, ei = (!J || er) && !q, ea = ei && null != O.A.pipVideoWindow && null != O.A.pipActivityWindow;
+  })), $ = K || null != Z, ee = (0, w.A)(null == p ? true : p.id), et = ee && (null == Q ? true : Q.type) !== j.lp.ACTIVITY, en = !ee && H === x.Gd.PIP, er = $ && (et || en) && null == z, ei = (!$ || er) && !q, ea = ei && null != O.A.pipVideoWindow && null != O.A.pipActivityWindow;
 
   function es() {
     if (null != p) {
@@ -122,7 +122,7 @@ function H(e) {
       let t = null != (e = p.getGuildId()) ? e : L.ME;
       d.A.channelListScrollTo(t, p.id), (0, E.uh)(t, p.id)
     }
-    null == X && (0, f.bz)()
+    null == Z && (0, f.bz)()
   }
 
   function eo() {
@@ -138,7 +138,7 @@ function H(e) {
       isActivityInTextChannel: s,
       users: o
     } = e;
-    return ei && null != V && ((null == Z ? true : Z.type) === j.lp.ACTIVITY || s) ? (null == (t = V.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(P.tM, {
+    return ei && null != V && ((null == X ? true : X.type) === j.lp.ACTIVITY || s) ? (null == (t = V.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(P.tM, {
       onJumpToChannel: es,
       applicationId: V.applicationId,
       channel: p,
@@ -162,7 +162,7 @@ function H(e) {
       applicationId: V.applicationId,
       users: o,
       embeddedActivity: V
-    }) : null == Z ? null : (0, r.jsxs)(r.Fragment, {
+    }) : null == X ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         onMouseMove: n,
         onMouseDown: n,
@@ -177,7 +177,7 @@ function H(e) {
         onJumpToChannel: es,
         channel: p,
         applicationId: V.applicationId,
-        selectedParticipant: Z,
+        selectedParticipant: X,
         embeddedActivity: V
       })]
     }) : null
@@ -191,7 +191,7 @@ function H(e) {
           applicationId: F
         })
       }
-    }, [F, ei]), null == V || null == W || (0, R.A)(null == p ? true : p.id) && null == Z || null == Y) return null;
+    }, [F, ei]), null == V || null == W || (0, w.A)(null == p ? true : p.id) && null == X || null == Y) return null;
   let ec = Array.from(V.userIds).map(e => A.default.getUser(e)).filter(e => null != e),
     eu = {
       instance_id: null != (t = null != (n = V.compositeInstanceId) ? n : V.launchId) ? t : "",
@@ -234,7 +234,7 @@ function H(e) {
             [M.p0]: ei && !C,
             [M.ST]: ei && C
           })
-        }) : (0, r.jsx)(w.o, {
+        }) : (0, r.jsx)(R.o, {
           allowPopups: (0, N.b)(Y),
           referrerPolicy: D.$J.has(V.applicationId) ? "no-referrer" : "origin",
           url: V.url,
@@ -246,7 +246,7 @@ function H(e) {
           }),
           shouldRefocus: !ei && K
         }), !ei && null != p && (0, r.jsx)(P.ll, {
-          participantsOpen: $,
+          participantsOpen: J,
           showToggleParticipants: false,
           channelId: p.id
         })]

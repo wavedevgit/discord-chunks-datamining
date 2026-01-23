@@ -65,7 +65,7 @@ function _(e) {
     size: E = "md",
     actions: y,
     gradientColor: b
-  } = e, O = i.useContext(a.C), [v, A] = i.useState("closed"), I = i.useRef(null), S = i.useRef(false), T = "opening-mouse" === v || "open-mouse" === v, C = "opening-keyboard" === v || "open-keyboard" === v, N = "open-mouse" === v || "open-keyboard" === v, R = (O.keyboardModeEnabled || C) && null != y, w = R, [P, D] = i.useState(0), x = (0, l._)(n, c, v), L = i.useCallback(() => {
+  } = e, O = i.useContext(a.C), [v, A] = i.useState("closed"), I = i.useRef(null), S = i.useRef(false), T = "opening-mouse" === v || "open-mouse" === v, C = "opening-keyboard" === v || "open-keyboard" === v, N = "open-mouse" === v || "open-keyboard" === v, w = (O.keyboardModeEnabled || C) && null != y, R = w, [P, D] = i.useState(0), x = (0, l._)(n, c, v), L = i.useCallback(() => {
     null != I.current && (clearTimeout(I.current), I.current = null)
   }, []), j = i.useCallback(e => {
     e && (S.current = true), L(), A("closing")
@@ -85,8 +85,8 @@ function _(e) {
       L(), A("opening-keyboard")
     }, [L, v]),
     G = i.useCallback(() => {
-      R && "opening-keyboard" !== v || j(false)
-    }, [j, v, R]);
+      w && "opening-keyboard" !== v || j(false)
+    }, [j, v, w]);
   i.useEffect(() => {
     if ("opening-mouse" === v) return I.current = window.setTimeout(() => {
       I.current = null, A("open-mouse"), null == _ || _()
@@ -133,9 +133,9 @@ function _(e) {
       size: E,
       actions: V,
       gradientColor: b,
-      showCloseButton: w,
-      shouldTrapFocus: R,
-      returnRef: R ? n : true,
+      showCloseButton: R,
+      shouldTrapFocus: w,
+      returnRef: w ? n : true,
       isCaretHoverable: true,
       caretConfig: {
         align: "custom",

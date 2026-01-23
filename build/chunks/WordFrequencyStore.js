@@ -99,13 +99,13 @@ function N(e) {
     I(e)
   }), false) : !!T() && g.size > 0 && (C(), true)
 }
-let R = e => {
+let w = e => {
     let {
       messages: t
     } = e;
     return N(t)
   },
-  w = e => {
+  R = e => {
     let {
       message: t
     } = e;
@@ -147,8 +147,8 @@ class P extends(i = Chunk311907.Ay.PersistedStore) {
 }
 d(P, "displayName", "WordFrequencyStore"), d(P, "persistKey", "WordFrequencyStore");
 let D = new P(Chunk73153.h, {
-    LOAD_MESSAGES_SUCCESS: R,
-    MESSAGE_CREATE: w,
+    LOAD_MESSAGES_SUCCESS: w,
+    MESSAGE_CREATE: R,
     DEV_TOOLS_WORD_FREQUENCY_RESET: C
   }),
   x = D

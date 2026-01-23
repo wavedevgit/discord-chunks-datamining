@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 524134, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => O
@@ -52,7 +52,7 @@ function O() {
   } = (0, i.cf)([b.A, f.A], () => ({
     action: b.A.getAction(),
     theme: f.A.theme
-  })), O = v.A.getVerificationTypes(e), [E, T] = l.useState(0), N = (0, m.A)(O);
+  })), O = v.A.getVerificationTypes(e), [T, E] = l.useState(0), N = (0, m.A)(O);
   (0, h.A)({
     type: r.ImpressionTypes.MODAL,
     name: r.ImpressionNames.USER_ACTION_REQUIRED,
@@ -103,7 +103,7 @@ function O() {
     })
   }, [O, N]), (0, a.jsx)(j.A, {
     types: O,
-    captchaKey: E,
+    captchaKey: T,
     onCaptchaVerify: e => {
       s.Bo.post({
         url: y.Rsh.CAPTCHA,
@@ -113,7 +113,7 @@ function O() {
         oldFormErrors: true,
         rejectWithError: true
       }).then(d.jH, () => {
-        T(e => e + 1)
+        E(e => e + 1)
       })
     },
     theme: t,

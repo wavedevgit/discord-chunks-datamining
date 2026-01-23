@@ -4,7 +4,7 @@
 require.r(exports), require.d(exports, {
   enable: () => C,
   isNotSupported: () => S,
-  trackToggleSelfDeaf: () => R,
+  trackToggleSelfDeaf: () => w,
   trackToggleSelfMute: () => N
 });
 var Chunk627968 = require("./627968.js");
@@ -141,7 +141,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     usedKeybind: t = false,
     location: n

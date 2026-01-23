@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  A: () => R
+  A: () => w
 }), require("./896048.js"), require("./747238.js"), require("./812715.js");
 var i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -182,7 +182,7 @@ class N extends(i = Chunk311907.Ay.PersistedStore) {
   }
 }
 d(N, "displayName", "InstallationManagerStore"), d(N, "persistKey", "InstallationManagerStore");
-let R = new N(Chunk73153.h, {
+let w = new N(Chunk73153.h, {
   DISPATCH_APPLICATION_INSTALL: O,
   DISPATCH_APPLICATION_UNINSTALL: A,
   DISPATCH_APPLICATION_CANCEL: v,

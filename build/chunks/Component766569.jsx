@@ -101,7 +101,7 @@ function G(e) {
     } = await n.e("65281").then(n.bind(n, 547352));
     return n => (0, r.jsx)(t, L({
       source: M(L({}, e), {
-        page: w.liQ.GUILD_MEMBER_PROFILE_SETTINGS
+        page: R.liQ.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
   })
@@ -131,12 +131,12 @@ function V(e) {
     guildValue: null == U || null == (n = U.collectibles) ? true : n.nameplate,
     guildId: null == a ? true : a.id
   }), {
-    pendingDisplayNameStyles: X
+    pendingDisplayNameStyles: Z
   } = (0, h.B0)(j, null == a ? true : a.id);
   return (i.useEffect(() => () => c.h.wait(S.IM), []), i.useEffect(() => {
-    null != H && f.Ay.trackWithMetadata(w.HAw.SETTINGS_PANE_VIEWED, {
+    null != H && f.Ay.trackWithMetadata(R.HAw.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
-      destination_pane: w.JJy.SETTINGS_CUSTOMIZE_PROFILE,
+      destination_pane: R.JJy.SETTINGS_CUSTOMIZE_PROFILE,
       source: H
     })
   }, [H]), F) ? (0, r.jsx)(u.A, {}) : V ? (0, r.jsxs)(p.f5, {
@@ -144,10 +144,10 @@ function V(e) {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: P.intl.format(P.t["/PTB2E"], {
-        helpCenterLink: A.A.getArticleURL(w.MVz.GUILD_PROFILES)
+        helpCenterLink: A.A.getArticleURL(R.MVz.GUILD_PROFILES)
       })
     }), null != a ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(R.A, {
+      children: [(0, r.jsx)(w.A, {
         guildId: a.id,
         onChange: e => {
           null != e && (0, S.JJ)(e)
@@ -162,14 +162,14 @@ function V(e) {
         }),
         profilePreview: (0, r.jsx)(g.A, M(L({}, K), {
           pendingAvatar: z,
-          pendingDisplayNameStyles: X,
+          pendingDisplayNameStyles: Z,
           user: j,
           guild: a,
           canUsePremiumCustomization: I.Ay.canUsePremiumProfileCustomization(j),
           onUpsellClick: G
         })),
         nameplatePreview: (0, r.jsx)(_.A, M(L({}, K), {
-          pendingDisplayNameStyles: X,
+          pendingDisplayNameStyles: Z,
           user: j,
           guildId: null == a ? true : a.id,
           nameplate: q,

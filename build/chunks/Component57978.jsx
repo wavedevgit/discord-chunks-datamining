@@ -56,7 +56,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk23145 = require("./23145.js"),
   Chunk56582 = require("./56582.js");
 
-function $(e, t, n) {
+function J(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -65,14 +65,14 @@ function $(e, t, n) {
   }) : e[t] = n, e
 }
 
-function J(e) {
+function $(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      $(e, t, n[t])
+      J(e, t, n[t])
     })
   }
   return e
@@ -90,15 +90,15 @@ let en = e => ({
     },
     serverProfiles: {
       thumbnail: T,
-      assetUrl: e ? Z.Ay : Q.Ay
+      assetUrl: e ? X.Ay : Q.Ay
     },
     customThemes: {
       thumbnail: q.A,
-      assetUrl: e ? z.A : X.A
+      assetUrl: e ? z.A : Z.A
     },
     displayNameStyles: {
       thumbnail: N.A,
-      assetUrl: e ? C.A : R.A
+      assetUrl: e ? C.A : w.A
     },
     referralProgram: {
       thumbnail: k.A,
@@ -114,7 +114,7 @@ let en = e => ({
     },
     emojis: {
       thumbnail: P.A,
-      assetUrl: e ? w.A : D.A
+      assetUrl: e ? R.A : D.A
     },
     noLimits: {
       thumbnail: L.A,
@@ -153,9 +153,9 @@ let en = e => ({
           })
         }
       },
-      R = (0, p.TM)(),
-      w = _.A.getArticleURL(E.MVz.REFERRAL_PROGRAM),
-      P = en(R),
+      w = (0, p.TM)(),
+      R = _.A.getArticleURL(E.MVz.REFERRAL_PROGRAM),
+      P = en(w),
       D = {
         name: "serverProfiles",
         title: v.intl.string(v.t.I9TYMg),
@@ -169,7 +169,7 @@ let en = e => ({
         name: "referralProgram",
         title: v.intl.string(v.t.tPY4o9),
         description: v.intl.format(v.t.jRPQUH, {
-          learnMoreLink: w
+          learnMoreLink: R
         }),
         previewImage: P.referralProgram.thumbnail,
         videoUrl: P.referralProgram.assetUrl
@@ -212,7 +212,7 @@ let en = e => ({
             let {
               default: e
             } = await n.e("69595").then(n.bind(n, 526710));
-            return t => (0, r.jsx)(e, J({}, t))
+            return t => (0, r.jsx)(e, $({}, t))
           })
         },
         badgeText: v.intl.string(v.t.oW0eUd).toLocaleUpperCase(),

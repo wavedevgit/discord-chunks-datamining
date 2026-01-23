@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 422230, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   l: () => O
@@ -31,8 +31,8 @@ let O = e => {
     onClose: t
   } = e, n = (0, u.L)(), {
     installationStatus: O,
-    perkAvailableToUser: E,
-    isSupportedPrivateBrowsingPerkPlatform: T,
+    perkAvailableToUser: T,
+    isSupportedPrivateBrowsingPerkPlatform: E,
     isWeb: N,
     connectionStatus: w
   } = (0, v.lV)(), I = (0, f.lM)("private_browsing_perk_settings_page"), k = (0, l.useCallback)(() => {
@@ -41,7 +41,7 @@ let O = e => {
     (0, p.openUserSettings)(m.X.PRIVATE_BROWSING_PANEL, {
       section: j.nc_.PRIVATE_BROWSING
     })
-  }, []), R = [g.l7.CONNECTED].includes(w), D = T && I && ![g.Lk.ZERO_TRUST, g.Lk.ERROR].includes(O) && !N && (!n || E), M = (0, l.useMemo)(() => {
+  }, []), R = [g.l7.CONNECTED].includes(w), D = E && I && ![g.Lk.ZERO_TRUST, g.Lk.ERROR].includes(O) && !N && (!n || T), M = (0, l.useMemo)(() => {
     switch (w) {
       case g.l7.CONNECTED:
         return A.intl.string(y.default.FBu3XJ);
@@ -51,7 +51,7 @@ let O = e => {
         return A.intl.string(y.default["A70/wR"])
     }
   }, [w]), L = (0, l.useMemo)(() => {
-    if (!E) return A.intl.string(y.default.KN6HOb);
+    if (!T) return A.intl.string(y.default.KN6HOb);
     switch (O) {
       case g.Lk.INSTALLED:
       case g.Lk.EXISTING_INSTALLATION:
@@ -59,8 +59,8 @@ let O = e => {
       default:
         return A.intl.string(y.default.KN6HOb)
     }
-  }, [O, E, M]), U = (0, l.useMemo)(() => {
-    if (!E) return (0, a.jsx)(r.EYj, {
+  }, [O, T, M]), U = (0, l.useMemo)(() => {
+    if (!T) return (0, a.jsx)(r.EYj, {
       variant: "text-sm/normal",
       color: "text-subtle",
       children: A.intl.format(y.default.UDPKcX, {
@@ -94,7 +94,7 @@ let O = e => {
           })
         })
     }
-  }, [O, E, R, P, k]), {
+  }, [O, T, R, P, k]), {
     analyticsLocations: B
   } = (0, o.Ay)(s.A.MASKED_LINK);
   return ((0, l.useEffect)(() => {
@@ -108,7 +108,7 @@ let O = e => {
       className: C.aZ
     }), (0, a.jsxs)("div", {
       className: C.hQ,
-      children: [E && (0, a.jsx)(r.hLv, {
+      children: [T && (0, a.jsx)(r.hLv, {
         className: C.h4,
         offsetBottom: false,
         color: "nitro-pink",
@@ -126,7 +126,7 @@ let O = e => {
           variant: "heading-md/semibold",
           children: L
         }), U]
-      }), !E && (0, a.jsx)("div", {
+      }), !T && (0, a.jsx)("div", {
         className: C.OQ,
         children: (0, a.jsx)(d.A, {
           buttonTextOverride: A.intl.string(A.t["8x0jKT"]),

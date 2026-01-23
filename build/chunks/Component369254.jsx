@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => P,
-  Z5: () => w,
+  Z5: () => R,
   t1: () => C
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -61,7 +61,7 @@ function N(e, t) {
   return (e % t + t) % t
 }
 
-function R(e) {
+function w(e) {
   let {
     children: t,
     isObscured: n,
@@ -89,7 +89,7 @@ function R(e) {
   })
 }
 
-function w(e, t) {
+function R(e, t) {
   "IMAGE" !== e.type || ((0, m.eJ)(e) ? C({
     src: (0, _.E)({
       proxyURL: e.proxyUrl,
@@ -112,16 +112,16 @@ function P(e) {
   } = e, [f, p] = i.useState(a), _ = i.useRef(a), {
     zoomed: m,
     setZoomed: C
-  } = (0, E.Q)(), w = i.useCallback(e => {
+  } = (0, E.Q)(), R = i.useCallback(e => {
     p(e = N(e, t.length)), _.current = e, null == n || n(e), C(false)
   }, [n, t, C]);
   i.useEffect(() => {
-    let e = () => w(_.current + 1),
-      t = () => w(_.current - 1);
+    let e = () => R(_.current + 1),
+      t = () => R(_.current - 1);
     return h._.subscribe(I.jej.MODAL_CAROUSEL_NEXT, e), h._.subscribe(I.jej.MODAL_CAROUSEL_PREV, t), () => {
       h._.unsubscribe(I.jej.MODAL_CAROUSEL_NEXT, e), h._.unsubscribe(I.jej.MODAL_CAROUSEL_PREV, t)
     }
-  }, [w, C]);
+  }, [R, C]);
   let P = t[f],
     D = (0, u.qo)({
       type: l.D.GenericMedia,
@@ -153,7 +153,7 @@ function P(e) {
     }), (0, r.jsx)(y.A, {
       items: t,
       currentIndex: f,
-      children: (e, t) => (0, r.jsx)(R, {
+      children: (e, t) => (0, r.jsx)(w, {
         isObscured: !m && D,
         src: P.url,
         children: n => (0, r.jsx)(A.Ay, {
@@ -168,7 +168,7 @@ function P(e) {
       children: e => (0, r.jsx)(O.A, {
         items: t,
         currentIndex: f,
-        onGalleryItemClick: w,
+        onGalleryItemClick: R,
         className: e,
         enabledContentHarmTypeFlags: c
       })

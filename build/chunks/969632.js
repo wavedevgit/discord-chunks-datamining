@@ -5,12 +5,12 @@ require.d(exports, {
   $m: () => V,
   G8: () => L,
   Gh: () => N,
-  I7: () => R,
+  I7: () => w,
   Il: () => M,
   Kj: () => C,
   ND: () => P,
   VD: () => D,
-  Wn: () => w,
+  Wn: () => R,
   YP: () => S,
   aw: () => k
 }), require("./747238.js"), require("./812715.js"), require("./896048.js"), require("./733351.js");
@@ -95,11 +95,11 @@ function N(e) {
   returnfalse
 }
 
-function R(e) {
+function w(e) {
   return (0, o.bG)([_.A], () => null != e && e.id !== l.E && !!y.kvI.POLLS.has(e.type) && (!!e.isPrivate() || _.A.can(y.xBc.SEND_MESSAGES, e) && _.A.can(y.xBc.SEND_POLLS, e)))
 }
 
-function w(e, t) {
+function R(e, t) {
   return 0 === e.length && null == t.find(e => P(e))
 }
 

@@ -91,7 +91,7 @@ function j(e) {
     guild_num_roles: r,
     guild_member_num_roles: null != a ? a.roles.length : 0,
     guild_member_perms: String(null != (t = g.A.getGuildPermissions(n)) ? t : N.x3),
-    guild_is_vip: n.features.has(w.GuildFeatures.VIP_REGIONS),
+    guild_is_vip: n.features.has(R.GuildFeatures.VIP_REGIONS),
     is_member: null != a,
     num_voice_channels_active: L(u)
   }
@@ -119,7 +119,7 @@ function U(e) {
     let t = e => {
       if (null == e) returnfalse;
       let t = e.permissionOverwrites[r];
-      return null != t && a.zy(t.deny, w.xBc.VIEW_CHANNEL)
+      return null != t && a.zy(t.deny, R.xBc.VIEW_CHANNEL)
     };
     n = t(l.Le.has(e.type) && null != e.parent_id ? u.A.getChannel(e.parent_id) : e)
   }
@@ -143,7 +143,7 @@ function G(e) {
     channel_type: t.type,
     guild_id: t.getGuildId(),
     media_session_id: r
-  }, H(t.getGuildId(), t.id, n), (0, R.V)())
+  }, H(t.getGuildId(), t.id, n), (0, w.V)())
 }
 
 function V(e, t) {
@@ -155,7 +155,7 @@ function F(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (T.default.isThrottled(e)) return;
-  let r = !("location" in t) || t.location !== w.ThZ.GUILD_CREATE_INVITE_SUGGESTION,
+  let r = !("location" in t) || t.location !== R.ThZ.GUILD_CREATE_INVITE_SUGGESTION,
     i = "guild_id" in t ? t.guild_id : r ? v.A.getGuildId() : null,
     a = "channel_id" in t ? t.channel_id : r ? O.A.getChannelId(i) : null,
     s = u.A.getChannel(a),
@@ -203,7 +203,7 @@ function B(e) {
     parent_id: t.parent_id,
     parent_channel_type: t.parentChannelThreadType,
     has_pending_member_action: (0, s.c)(t.guild_id, e),
-    can_send_message: g.A.can(w.xBc.SEND_MESSAGES, t),
+    can_send_message: g.A.can(R.xBc.SEND_MESSAGES, t),
     is_app_dm: false
   }
 }
@@ -224,7 +224,7 @@ function Y(e, t) {
     custom_status_count: 0
   };
   return i()(S.A.getVoiceStates(e)).forEach(e => {
-    e.channelId === t && null != E.A.findActivity(e.userId, e => e.type === w.$pd.CUSTOM_STATUS) && n.custom_status_count++
+    e.channelId === t && null != E.A.findActivity(e.userId, e => e.type === R.$pd.CUSTOM_STATUS) && n.custom_status_count++
   }), n
 }
 let W = {

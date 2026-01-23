@@ -133,7 +133,7 @@ function C(e) {
   } = e, g = null != (t = null == (n = c.client_info) ? true : n.location) ? t : null == (i = c.client_info) ? true : i.ip, E = null == (a = c.client_info) ? true : a.platform, {
     text: y,
     icon: v
-  } = R(null == (o = c.client_info) ? true : o.os), A = f ? null : (0, d.Y)(c.approx_last_used_time), I = [y, E].filter(_.Vq), S = [g, A].filter(_.Vq);
+  } = w(null == (o = c.client_info) ? true : o.os), A = f ? null : (0, d.Y)(c.approx_last_used_time), I = [y, E].filter(_.Vq), S = [g, A].filter(_.Vq);
   return (0, r.jsxs)("div", {
     className: s()(O.dZ, {
       [O.gg]: f
@@ -238,7 +238,7 @@ function N() {
   })
 }
 
-function R(e) {
+function w(e) {
   switch (null == e ? true : e.toLowerCase().trim()) {
     case null:
     case true:

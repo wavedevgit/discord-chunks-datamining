@@ -33,7 +33,7 @@ function S(e) {
     context: n,
     application: l,
     sectionName: c
-  } = e, A = "channel" === n.type ? n.channel : true, S = (0, a.bG)([f.A], () => f.A.entrypoint()), C = null != (t = (0, d.h)(l.id === y.Ik.BUILT_IN ? null : l.id)) ? t : l, N = (0, _.Ag)(C) ? T : E.A, R = i.useRef(null), [w, P] = i.useState(false), {
+  } = e, A = "channel" === n.type ? n.channel : true, S = (0, a.bG)([f.A], () => f.A.entrypoint()), C = null != (t = (0, d.h)(l.id === y.Ik.BUILT_IN ? null : l.id)) ? t : l, N = (0, _.Ag)(C) ? T : E.A, w = i.useRef(null), [R, P] = i.useState(false), {
     iconURL: D,
     name: x
   } = i.useMemo(() => (0, _.X2)(C, {
@@ -45,7 +45,7 @@ function S(e) {
   }, [C.id, null == A ? true : A.id, k]), (0, r.jsxs)(o.d_W, {
     className: O.k,
     fade: true,
-    ref: R,
+    ref: w,
     role: "region",
     "aria-label": b.intl.formatToPlainString(b.t["4OP4Uk"], {
       applicationName: x
@@ -55,7 +55,7 @@ function S(e) {
       context: n,
       name: x,
       iconURL: D,
-      scrollerRef: R,
+      scrollerRef: w,
       sectionName: c
     }), null != D && (0, r.jsx)(h.A, {
       src: D,
@@ -66,7 +66,7 @@ function S(e) {
       context: n,
       application: C,
       sectionName: c,
-      hasCommands: w
+      hasCommands: R
     }), S === p.s4.TEXT ? (0, r.jsx)(m.A, {
       context: n,
       application: C,

@@ -52,7 +52,7 @@ function N(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,8 +63,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -135,7 +135,7 @@ function L(e) {
     y(O.i.USER_DISMISS), n()
   }, [n, y]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_.A, w(N({}, c), {
+    children: [(0, r.jsx)(_.A, R(N({}, c), {
       onCardClick: b,
       ref: u
     })), t && E === s.M.GAME_SHOP_WISHLIST_POPOVER && !d && !f && (0, r.jsx)(x, {

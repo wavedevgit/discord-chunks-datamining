@@ -38,12 +38,12 @@ let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   C = new Set,
   N = {};
 
-function R(e) {
+function w(e) {
   var t;
   return null == (t = v.exec(e)) ? true : t[1]
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   return o.Bo.get({
     url: "".concat(O).concat(e),
     query: t,
@@ -62,7 +62,7 @@ async function P(e, t) {
     body: {
       data: i
     }
-  } = await w("/games", {
+  } = await R("/games", {
     id: e
   }, t), a = null == (n = i[0]) ? true : n.name;
   return N[e] = a, a
@@ -86,7 +86,7 @@ class D {
         body: {
           data: a
         }
-      } = await w("/streams", {
+      } = await R("/streams", {
         user_id: e.id,
         first: 1
       }, t), s = a[0];
@@ -97,7 +97,7 @@ class D {
         title: c
       } = s, f = {
         large_image: null != o && null != (n = (0, d.Di)(h.fg2.TWITCH, o)) ? n : true
-      }, p = await P(l, t), _ = u.A.get(h.fg2.TWITCH), m = null != (r = R(o)) ? r : e.name, g = null != c && "" !== c ? c.slice(0, A) : true, E = null != p && "" !== p ? p.slice(0, A) : true;
+      }, p = await P(l, t), _ = u.A.get(h.fg2.TWITCH), m = null != (r = w(o)) ? r : e.name, g = null != c && "" !== c ? c.slice(0, A) : true, E = null != p && "" !== p ? p.slice(0, A) : true;
       return {
         url: null == (i = _.getPlatformUserUrl) ? true : i.call(_, {
           id: e.id,

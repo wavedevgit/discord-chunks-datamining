@@ -2,7 +2,7 @@
 /** chunk id: 69407, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => R,
+  Ay: () => w,
   ip: () => A,
   wY: () => I
 }), require("./321073.js"), require("./896048.js");
@@ -105,7 +105,7 @@ function N(e) {
   } = e, o = [];
   return C(r) && o.push("ALL_REQUESTED_TO_SPEAK"), r === g.zF.REQUESTED_TO_SPEAK && o.push("REQUESTED_TO_SPEAK_ONLY"), t ? o.push("SPEAKER") : (null != n ? o.push(n.id) : o.push("NO_ROLE"), o.push("AUDIENCE")), i ? o.push("BLOCKED") : a && o.push("IGNORED"), s && o.push("FRIEND"), o
 }
-class R {
+class w {
   _getParticipantsForUser(e, t) {
     var n, r, i;
     let o, y = [],
@@ -136,9 +136,9 @@ class R {
         rtsState: (0, g.eY)(O)
       });
     y.push(N);
-    let R = null != (i = s.A.getStreamForUser(e, this.guildId)) ? i : s.A.getActiveStreamForUser(e, this.guildId);
-    if (null != R && R.channelId === this.channelId) {
-      let e = (0, a._z)(R);
+    let w = null != (i = s.A.getStreamForUser(e, this.guildId)) ? i : s.A.getActiveStreamForUser(e, this.guildId);
+    if (null != w && w.channelId === this.channelId) {
+      let e = (0, a._z)(w);
       o = v(b({}, C), {
         id: e,
         type: "STREAM",

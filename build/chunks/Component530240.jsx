@@ -91,7 +91,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     guildTier: t,
     guildBoostSlot: n,
@@ -139,7 +139,7 @@ function R(e) {
   }))
 }
 
-function w(e) {
+function R(e) {
   let {
     guildTier: t,
     guildBoostSlot: n,
@@ -174,7 +174,7 @@ function w(e) {
         children: null != E && y && !b ? (0, r.jsx)(m.A, {
           className: v.xm,
           cooldown: E.getTime()
-        }) : (0, r.jsx)(R, {
+        }) : (0, r.jsx)(w, {
           guildTier: t,
           guildBoostSlot: n,
           showAltText: f,
@@ -216,7 +216,7 @@ function P(e) {
     children: [(0, r.jsx)(E.A, {
       guildId: t,
       boostingVariant: false
-    }), n.map((e, t) => (0, r.jsx)(w, {
+    }), n.map((e, t) => (0, r.jsx)(R, {
       guildTier: null == l ? true : l.premiumTier,
       guildBoostSlot: e,
       premiumSubscription: i,
@@ -251,7 +251,7 @@ function D(e) {
     children: [(0, r.jsx)(E.A, {
       guildId: t,
       boostingVariant: false
-    }), n.map((e, t) => (0, r.jsx)(w, {
+    }), n.map((e, t) => (0, r.jsx)(R, {
       guildTier: null == a ? true : a.premiumTier,
       guildBoostSlot: l,
       premiumSubscription: i,

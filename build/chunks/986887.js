@@ -158,7 +158,7 @@ module.exports = function(e) {
         match: /\}\}/
       }, e.BACKSLASH_ESCAPE, C]
     },
-    R = {
+    w = {
       scope: "string",
       begin: /(\$@|@\$)"/,
       end: /"/,
@@ -170,7 +170,7 @@ module.exports = function(e) {
         match: /""/
       }, e.BACKSLASH_ESCAPE, C]
     },
-    w = {
+    R = {
       scope: "string",
       begin: /\$"""/,
       end: /"""/,
@@ -185,7 +185,7 @@ module.exports = function(e) {
       scope: "string",
       match: i(/'/, s(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
     };
-  return C.contains = [R, N, S, I, P, n, c, d, E, O, v, A, p, h], {
+  return C.contains = [w, N, S, I, P, n, c, d, E, O, v, A, p, h], {
     name: "F#",
     aliases: ["fs", "f#"],
     keywords: l,
@@ -194,7 +194,7 @@ module.exports = function(e) {
       "computation-expression": "keyword"
     },
     contains: [n, {
-      variants: [w, R, N, T, S, I, P]
+      variants: [R, w, N, T, S, I, P]
     }, c, d, b, {
       scope: "meta",
       begin: /\[</,

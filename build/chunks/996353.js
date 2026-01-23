@@ -47,7 +47,7 @@ function h(e) {
     displayProfile: h,
     location: p
   }), N = r.useMemo(() => [t.id], [t.id]), {
-    recommendations: R
+    recommendations: w
   } = (0, s.A)({
     guildId: (0, i.zf)(),
     numWishlistItems: E ? Math.max(n, d.pl) : 0,
@@ -55,10 +55,10 @@ function h(e) {
     applicationId: f.XR,
     userIds: N,
     includeWishlists: true
-  }), w = r.useMemo(() => {
+  }), R = r.useMemo(() => {
     var e;
-    return E && ((null != (e = null == O ? true : O.items) ? e : []).filter(e => true !== e.isOwned && (0, u.$)(e)).length > 0 || C) ? R : []
-  }, [null == O ? true : O.items, C, E, R]), {
+    return E && ((null != (e = null == O ? true : O.items) ? e : []).filter(e => true !== e.isOwned && (0, u.$)(e)).length > 0 || C) ? w : []
+  }, [null == O ? true : O.items, C, E, w]), {
     displayItems: P,
     hasMoreItems: D,
     totalWishlistItemCount: x,
@@ -66,7 +66,7 @@ function h(e) {
   } = (0, d.mk)({
     wishlist: O,
     popularCollectiblesProducts: v,
-    popularSocialLayerStorefrontItems: w,
+    popularSocialLayerStorefrontItems: R,
     wishlistError: T,
     numItems: n
   });

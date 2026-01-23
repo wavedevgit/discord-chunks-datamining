@@ -38,14 +38,14 @@ function I(e) {
     guildId: S
   } = e, [T, C] = r.useState(false), {
     requestId: N,
-    entries: R,
-    impressionCappedEntryIds: w
+    entries: w,
+    impressionCappedEntryIds: R
   } = (0, h.A)(I), P = (0, i.bG)([f.A], () => f.A.hidden), D = (0, i.bG)([c.A], () => c.A.isFocused()), x = (0, i.bG)([o.A], () => o.A.getChannel(I)), L = (0, i.bG)([l.A], () => l.A.getGuild(S), [S]), j = (0, p.T)(L), M = null != j && j && (null == x ? true : x.isForumChannel()) === false, [k, U, G, V] = r.useMemo(() => {
     let e;
-    if (null == R || 0 === R.length || null == N || !M) return [t, n, v];
+    if (null == w || 0 === w.length || null == N || !M) return [t, n, v];
     let r = O,
-      i = T ? R.length : r,
-      a = R.slice(0, i);
+      i = T ? w.length : r,
+      a = w.slice(0, i);
     e = P ? [{
       type: s.S9.HIDDEN_CONTENT_INVENTORY
     }] : a.map(e => ({
@@ -72,15 +72,15 @@ function I(e) {
         title: b.intl.string(b.t["6gwSFY"]),
         onToggleExpand: o,
         expanded: T,
-        expandedCount: R.length,
+        expandedCount: w.length,
         feedHeight: e.map(m.h9).reduce((e, t) => e + t, 0)
       };
     return [
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [I, R, T, t, S, N, n, v, P, M]), F = r.useRef(0), B = r.useRef(R), H = r.useRef(true), Y = r.useRef({
-    impressionCappedEntryIds: w
+  }, [I, w, T, t, S, N, n, v, P, M]), F = r.useRef(0), B = r.useRef(w), H = r.useRef(true), Y = r.useRef({
+    impressionCappedEntryIds: R
   }), W = r.useCallback(e => {
     var t;
     let n = Math.floor(e / m.bG),
@@ -88,12 +88,12 @@ function I(e) {
     F.current = Math.max(F.current, r)
   }, [V]);
   return r.useEffect(() => {
-    B.current = R
-  }, [R]), r.useEffect(() => {
+    B.current = w
+  }, [w]), r.useEffect(() => {
     Y.current = {
-      impressionCappedEntryIds: w
+      impressionCappedEntryIds: R
     }
-  }, [w]), r.useEffect(() => (F.current = 0, H.current = Date.now(), () => {
+  }, [R]), r.useEffect(() => (F.current = 0, H.current = Date.now(), () => {
     var e, t;
     if (null == N || null == H.current || Date.now() - H.current < A) return;
     let n = null != (e = null == (t = B.current) ? true : t.map(e => e.id)) ? e : [],

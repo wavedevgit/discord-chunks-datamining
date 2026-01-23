@@ -72,41 +72,41 @@ let P = (e, t) => n => {
         children: [null != b && (0, r.jsx)(b, {
           size: "xs",
           color: "currentColor",
-          className: w.p
+          className: R.p
         }), (0, r.jsx)(l.Text, {
-          className: w.I0,
+          className: R.I0,
           variant: "text-xs/normal",
           children: (0, y.l)(null != (t = null == _ ? true : _.locationName) ? t : "", true)
         })]
       });
     return (0, r.jsxs)("div", {
-      className: w.Ix,
+      className: R.Ix,
       children: [(0, r.jsx)(f.A.Icon, {
         guild: p,
         onClick: g
       }), (0, r.jsxs)("div", {
-        className: w.YG,
+        className: R.YG,
         children: [(0, r.jsxs)("div", {
-          className: w.Kp,
+          className: R.Kp,
           children: [(0, r.jsx)(d.A, {
             guild: p,
             tooltipPosition: "top",
             tooltipColor: l.STz.Colors.PRIMARY,
             size: 16,
-            className: w.n2
+            className: R.n2
           }), (0, r.jsx)(l.DUT, {
-            className: w.Nm,
+            className: R.Nm,
             onClick: g,
             children: (0, r.jsx)(l.Heading, {
-              className: u ? w.ht : w.J5,
+              className: u ? R.ht : R.J5,
               variant: "text-sm/medium",
               children: p.name
             })
           })]
         }), (0, r.jsx)("div", {
-          className: w.Nj,
+          className: R.Nj,
           children: L(a, u) ? (0, r.jsx)(l.DUT, {
-            className: w.tR,
+            className: R.tR,
             onClick: E,
             children: O
           }) : O
@@ -131,28 +131,28 @@ let P = (e, t) => n => {
       e.stopPropagation(), c ? a && f() : d()
     };
     return c ? a ? u ? (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.GoCQxU),
+      text: w.intl.string(w.t.GoCQxU),
       variant: "secondary"
     }) : (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.XpeFYr),
+      text: w.intl.string(w.t.XpeFYr),
       onClick: h,
       variant: "active"
     }) : s ? (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.Pj7Xrv),
+      text: w.intl.string(w.t.Pj7Xrv),
       variant: "secondary",
       disabled: true
     }) : p ? (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.DlcqlU),
+      text: w.intl.string(w.t.DlcqlU),
       onClick: _,
       variant: "active",
       icon: l.A9s
     }) : (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.DlcqlU),
+      text: w.intl.string(w.t.DlcqlU),
       onClick: _,
       variant: "secondary",
       icon: l.XFE
     }) : (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.XpeFYr),
+      text: w.intl.string(w.t.XpeFYr),
       onClick: h,
       variant: "active"
     })
@@ -176,27 +176,27 @@ let P = (e, t) => n => {
     if (null == n || !h) return null;
     let T = (0, E.Fd)(n),
       C = (0, E.AZ)(n),
-      R = n.entity_type === N.Ps.EXTERNAL;
+      w = n.entity_type === N.Ps.EXTERNAL;
     return (0, r.jsx)(f.A, {
       className: s()({
-        [w.vk]: c
+        [R.vk]: c
       }),
       children: (0, r.jsxs)(l.DUT, {
         onClick: y,
         children: [null != n.image && (0, r.jsx)(I.A, {
           source: (0, A.A)(n),
-          className: w.vK
+          className: R.vK
         }), (0, r.jsx)(S.Ay, {
           name: n.name,
           description: null != (t = n.description) ? t : true,
-          descriptionClassName: w.tj,
+          descriptionClassName: R.tj,
           guildId: n.guild_id,
           creator: m,
           guildEvent: n,
           eventPreview: n,
           recurrenceId: _
         }), (0, r.jsxs)("div", {
-          className: w.xQ,
+          className: R.xQ,
           children: [(0, r.jsx)(j, {
             guild: a,
             channel: o,
@@ -211,7 +211,7 @@ let P = (e, t) => n => {
             recurrenceId: _,
             onAcceptInstantInvite: d,
             onTransitionToInviteChannel: p,
-            isExternal: R
+            isExternal: w
           })]
         })]
       })

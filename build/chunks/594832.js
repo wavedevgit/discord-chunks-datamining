@@ -5,7 +5,7 @@ require.d(exports, {
   B5: () => v,
   Q8: () => b,
   Zh: () => y,
-  eT: () => w,
+  eT: () => R,
   fw: () => I,
   mQ: () => A,
   mk: () => P,
@@ -111,7 +111,7 @@ function N(e, t) {
   }
 }
 
-function R() {
+function w() {
   let e = [];
   for (let t of g.PI) {
     let n = s.A.getProduct(t);
@@ -120,7 +120,7 @@ function R() {
   return e
 }
 
-function w(e) {
+function R(e) {
   let {
     giftRecipient: t,
     minNumItems: n,
@@ -148,7 +148,7 @@ function w(e) {
     popularCollectiblesProducts: r.useMemo(() => {
       if (d) return [];
       let e = new Set(f);
-      return R().filter(t => e.has(t.skuId))
+      return w().filter(t => e.has(t.skuId))
     }, [d, f]),
     isFetchingWishlist: l,
     isValidatingPopularProducts: !d && p,

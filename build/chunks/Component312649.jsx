@@ -2,7 +2,7 @@
 /** chunk id: 312649, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -32,13 +32,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk789129 = require("./789129.js");
 
-function w(e) {
+function R(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
     onBack: a,
     onNext: o,
-    legalTermsNodeRef: w,
+    legalTermsNodeRef: R,
     flashLegalTerms: P,
     invoiceError: D,
     planError: x,
@@ -58,11 +58,11 @@ function w(e) {
   } = e, {
     selectedPlan: z,
     priceOptions: q,
-    setHasAcceptedTerms: X,
-    setPurchaseError: Z,
+    setHasAcceptedTerms: Z,
+    setPurchaseError: X,
     purchaseType: Q,
-    paymentSourceId: $,
-    paymentSources: J,
+    paymentSourceId: J,
+    paymentSources: $,
     selectedSkuId: ee,
     skusById: et,
     skuPricePreviewsById: en,
@@ -86,7 +86,7 @@ function w(e) {
     {
       analyticsLocations: eb
     } = (0, d.Ay)(),
-    eO = (0, T.W)(J, $),
+    eO = (0, T.W)($, J),
     [ev, eA] = i.useState(ey),
     [eI, eS] = i.useState(false),
     {
@@ -94,23 +94,23 @@ function w(e) {
     } = (0, m.X)(eE, el),
     eC = (0, b.J$)(q.paymentSourceId),
     eN = eT || ey,
-    eR = (0, _.l)(),
-    ew = (0, c.bG)([S.A], () => S.A.currentOrderId),
+    ew = (0, _.l)(),
+    eR = (0, c.bG)([S.A], () => S.A.currentOrderId),
     eP = null,
     eD = null;
   if (Q === N.VVm.ONE_TIME) {
     var ex;
     l()(null != ee, "SKU must be selected for one-time purchases"), eP = null != (ex = et[ee]) ? ex : null, l()(null != eP, "SKU must exist and be fetched.");
     let e = en[ee],
-      t = null != $ ? $ : E.B;
+      t = null != J ? J : E.B;
     eD = null != e ? e[t] : null
   }
   let eL = async () => {
     await (0, A.l)({
       setPurchaseState: n,
-      setHasAcceptedTerms: X,
+      setHasAcceptedTerms: Z,
       setIsSubmitting: eA,
-      setPurchaseError: Z,
+      setPurchaseError: X,
       hasRedirectURL: eI,
       setHasRedirectURL: eS,
       isGift: el,
@@ -123,7 +123,7 @@ function w(e) {
       trialId: k,
       priceOptions: q,
       paymentSource: eO,
-      isPrepaidPaymentPastDue: eR,
+      isPrepaidPaymentPastDue: ew,
       openInvoiceId: F,
       premiumSubscription: t,
       onNext: o,
@@ -135,7 +135,7 @@ function w(e) {
       loadId: ei.loadId,
       giftInfoOptions: eg,
       invoicePreview: ea,
-      orderId: ew
+      orderId: eR
     })
   }, ej = {
     baseAnalyticsData: j,
@@ -144,7 +144,7 @@ function w(e) {
     onNext: o,
     onPurchaseError: L,
     paymentSource: eO,
-    paymentSourceId: $,
+    paymentSourceId: J,
     purchaseTokenAuthState: V,
     setPurchaseState: n
   }, eM = i.useRef(ej);
@@ -161,9 +161,9 @@ function w(e) {
   return ey ? null : (0, r.jsxs)(u.jlY, {
     "data-migration-pending": true,
     align: f.A.Align.CENTER,
-    className: s()(eo, R.H),
+    className: s()(eo, w.H),
     children: [(0, r.jsx)(g.A, {
-      legalTermsNodeRef: w,
+      legalTermsNodeRef: R,
       invoiceError: D,
       planError: x,
       disablePurchase: Y,
@@ -180,7 +180,7 @@ function w(e) {
       inReverseTrial: es,
       onPaymentSourceAdd: K
     }), (0, r.jsx)(C.A, {}), eU ? (0, r.jsx)("div", {
-      className: R.a,
+      className: w.a,
       children: (0, r.jsx)(h.A, {
         onClick: a
       })

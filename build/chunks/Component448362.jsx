@@ -55,10 +55,10 @@ let _ = () => (0, r.jsx)("img", {
       disabled: b,
       isInModalOverlay: O,
       className: v
-    } = e, [A, I] = (0, i.useState)(false), S = (0, i.useMemo)(() => m(f, A), [f, A]), [T, C] = (0, i.useState)(false), [N, R] = (0, i.useState)(false), [w, P] = (0, i.useState)(2700), D = null === a;
+    } = e, [A, I] = (0, i.useState)(false), S = (0, i.useMemo)(() => m(f, A), [f, A]), [T, C] = (0, i.useState)(false), [N, w] = (0, i.useState)(false), [R, P] = (0, i.useState)(2700), D = null === a;
     (0, i.useEffect)(() => {
       D && !T && (C(true), setTimeout(() => {
-        R(true)
+        w(true)
       }, 500))
     }, [D, C, T]), (0, i.useEffect)(() => {
       N && !D && C(false)
@@ -102,7 +102,7 @@ let _ = () => (0, r.jsx)("img", {
           value: L,
           onValueChange: G,
           onValueReached: U,
-          targetTotalCounterTime: w,
+          targetTotalCounterTime: R,
           className: x ? d.F : true
         }), g && (0, r.jsx)(_, {})]
       })

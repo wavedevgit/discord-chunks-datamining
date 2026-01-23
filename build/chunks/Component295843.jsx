@@ -61,12 +61,12 @@ function N(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class w extends(r = Chunk64700.Component) {
+class R extends(r = Chunk64700.Component) {
   get analyticsLocation() {
     let {
       analyticsContext: {
@@ -74,7 +74,7 @@ class w extends(r = Chunk64700.Component) {
       },
       analyticsSection: t
     } = this.props;
-    return R(C({}, e), {
+    return w(C({}, e), {
       section: null != t ? t : A.JJy.APPLICATION_EMBED,
       object: A.ZSU.CARD
     })
@@ -208,7 +208,7 @@ class w extends(r = Chunk64700.Component) {
     })
   }
 }
-T(w, "defaultProps", {
+T(R, "defaultProps", {
   renderFallback: Chunk652215.tEg
 });
 let P = [Chunk67480.A, Chunk286805.A, Chunk189081.A, Chunk328968.A];
@@ -226,6 +226,6 @@ function D(e) {
     libraryApplication: null != n ? E.A.getLibraryApplication(n.applicationId, n.applicationId, true) : null
   }
 }
-let x = (0, Chunk456412.A)((0, Chunk707606.A)(w)),
+let x = (0, Chunk456412.A)((0, Chunk707606.A)(R)),
   L = Chunk311907.Ay.connectStores(P, D)(x),
-  j = (0, Chunk707606.A)(Chunk311907.Ay.connectStores(P, D)(w))
+  j = (0, Chunk707606.A)(Chunk311907.Ay.connectStores(P, D)(R))

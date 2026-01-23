@@ -46,18 +46,18 @@ function E(e, t, n) {
   b = b || t.isCellDisabled(y);
   let C = t.isCellUnavailable(y),
     N = !b && !C,
-    R = t.isValueInvalid && !!("highlightedRange" in t ? !t.anchorDate && t.highlightedRange && y.compare(t.highlightedRange.start) >= 0 && 0 >= y.compare(t.highlightedRange.end) : t.value && (0, a.ro)(t.value, y));
-  R && (S = true), y = (0, s.k)(y, a.NV);
-  let w = (0, m.useMemo)(() => y.toDate(t.timeZone), [y, t.timeZone]),
+    w = t.isValueInvalid && !!("highlightedRange" in t ? !t.anchorDate && t.highlightedRange && y.compare(t.highlightedRange.start) >= 0 && 0 >= y.compare(t.highlightedRange.end) : t.value && (0, a.ro)(t.value, y));
+  w && (S = true), y = (0, s.k)(y, a.NV);
+  let R = (0, m.useMemo)(() => y.toDate(t.timeZone), [y, t.timeZone]),
     P = (0, a.cK)(y, t.timeZone),
     D = (0, m.useMemo)(() => {
       let e = "";
-      return "highlightedRange" in t && t.value && !t.anchorDate && ((0, a.ro)(y, t.value.start) || (0, a.ro)(y, t.value.end)) && (e = v + ", "), e += I.format(w), P ? e = A.format(S ? "todayDateSelected" : "todayDate", {
+      return "highlightedRange" in t && t.value && !t.anchorDate && ((0, a.ro)(y, t.value.start) || (0, a.ro)(y, t.value.end)) && (e = v + ", "), e += I.format(R), P ? e = A.format(S ? "todayDateSelected" : "todayDate", {
         date: e
       }) : S && (e = A.format("dateSelected", {
         date: e
       })), t.minValue && (0, a.ro)(y, t.minValue) ? e += ", " + A.format("minimumDate") : t.maxValue && (0, a.ro)(y, t.maxValue) && (e += ", " + A.format("maximumDate")), e
-    }, [I, w, A, S, P, y, t, v]),
+    }, [I, R, A, S, P, y, t, v]),
     x = "";
   "anchorDate" in t && T && !t.isReadOnly && N && (x = t.anchorDate ? A.format("finishRangeSelectionPrompt") : A.format("startRangeSelectionPrompt"));
   let L = (0, o.I)(x),
@@ -74,7 +74,7 @@ function E(e, t, n) {
       onPressStart(e) {
         if (t.isReadOnly) return void t.setFocusedDate(y);
         if ("highlightedRange" in t && !t.anchorDate && ("mouse" === e.pointerType || "touch" === e.pointerType)) {
-          if (t.highlightedRange && !R) {
+          if (t.highlightedRange && !w) {
             if ((0, a.ro)(y, t.highlightedRange.start)) {
               t.setAnchorDate(t.highlightedRange.end), t.setFocusedDate(y), t.setDragging(true), M.current = true;
               return
@@ -121,13 +121,13 @@ function E(e, t, n) {
       timeZone: t.timeZone,
       calendar: y.calendar.identifier
     }),
-    F = (0, m.useMemo)(() => V.formatToParts(w).find(e => "day" === e.type).value, [V, w]);
+    F = (0, m.useMemo)(() => V.formatToParts(R).find(e => "day" === e.type).value, [V, R]);
   return {
     cellProps: {
       role: "gridcell",
       "aria-disabled": !N || true,
       "aria-selected": S || true,
-      "aria-invalid": R || true
+      "aria-invalid": w || true
     },
     buttonProps: (0, d.v)(U, {
       onFocus() {
@@ -137,8 +137,8 @@ function E(e, t, n) {
       role: "button",
       "aria-disabled": !N || true,
       "aria-label": D,
-      "aria-invalid": R || true,
-      "aria-describedby": [R ? O : true, L["aria-describedby"]].filter(Boolean).join(" ") || true,
+      "aria-invalid": w || true,
+      "aria-describedby": [w ? O : true, L["aria-describedby"]].filter(Boolean).join(" ") || true,
       onPointerEnter(e) {
         "highlightDate" in t && ("touch" !== e.pointerType || t.isDragging) && N && t.highlightDate(y)
       },
@@ -155,7 +155,7 @@ function E(e, t, n) {
     isDisabled: b,
     isUnavailable: C,
     isOutsideVisibleRange: 0 > y.compare(t.visibleRange.start) || y.compare(t.visibleRange.end) > 0,
-    isInvalid: R,
+    isInvalid: w,
     formattedDate: F
   }
 }

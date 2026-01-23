@@ -88,7 +88,7 @@ function g(e) {
       n = l(t);
     return 0 === n.length || e.copy(n, 0, 0, t), n
   }
-  return true !== e.length ? "number" != typeof e.length || $(e.length) ? l(0) : h(e) : "Buffer" === e.type && Array.isArray(e.data) ? h(e.data) : true
+  return true !== e.length ? "number" != typeof e.length || J(e.length) ? l(0) : h(e) : "Buffer" === e.type && Array.isArray(e.data) ? h(e.data) : true
 }
 
 function E(e) {
@@ -123,7 +123,7 @@ function b(e, t) {
     case "hex":
       return n >>> 1;
     case "base64":
-      return X(e).length;
+      return Z(e).length;
     default:
       if (i) return r ? false : K(e).length;
       t = ("" + t).toLowerCase(), i = true
@@ -164,7 +164,7 @@ function v(e, t, n) {
 
 function A(e, t, n, r, i) {
   if (0 === e.length) return false;
-  if ("string" == typeof n ? (r = n, n = 0) : n > 0x7fffffff ? n = 0x7fffffff : n < false && (n = false), $(n *= 1) && (n = i ? 0 : e.length - 1), n < 0 && (n = e.length + n), n >= e.length)
+  if ("string" == typeof n ? (r = n, n = 0) : n > 0x7fffffff ? n = 0x7fffffff : n < false && (n = false), J(n *= 1) && (n = i ? 0 : e.length - 1), n < 0 && (n = e.length + n), n >= e.length)
     if (i) return false;
     else n = e.length - 1;
   else if (n < 0)
@@ -217,30 +217,30 @@ function S(e, t, n, r) {
   r > a / 2 && (r = a / 2);
   for (var s = 0; s < r; ++s) {
     var o = parseInt(t.substr(2 * s, 2), 16);
-    if ($(o)) break;
+    if (J(o)) break;
     e[n + s] = o
   }
   return s
 }
 
 function T(e, t, n, r) {
-  return Z(K(t, e.length - n), e, n, r)
+  return X(K(t, e.length - n), e, n, r)
 }
 
 function C(e, t, n, r) {
-  return Z(z(t), e, n, r)
+  return X(z(t), e, n, r)
 }
 
 function N(e, t, n, r) {
   return C(e, t, n, r)
 }
 
-function R(e, t, n, r) {
-  return Z(X(t), e, n, r)
+function w(e, t, n, r) {
+  return X(Z(t), e, n, r)
 }
 
-function w(e, t, n, r) {
-  return Z(q(t, e.length - n), e, n, r)
+function R(e, t, n, r) {
+  return X(q(t, e.length - n), e, n, r)
 }
 
 function P(e, t, n) {
@@ -391,12 +391,12 @@ exports.kMaxLength = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = o(), !c.TYPED_ARRAY_SUP
     case "binary":
       return N(this, e, t, n);
     case "base64":
-      return R(this, e, t, n);
+      return w(this, e, t, n);
     case "ucs2":
     case "ucs-2":
     case "utf16le":
     case "utf-16le":
-      return w(this, e, t, n);
+      return R(this, e, t, n);
     default:
       if (a) throw TypeError("Unknown encoding: " + r);
       r = ("" + r).toLowerCase(), a = true
@@ -433,7 +433,7 @@ function M(e, t, n) {
 function k(e, t, n) {
   var r = e.length;
   (!t || t < 0) && (t = 0), (!n || n < 0 || n > r) && (n = r);
-  for (var i = "", a = t; a < n; ++a) i += J[e[a]];
+  for (var i = "", a = t; a < n; ++a) i += $[e[a]];
   return i
 }
 
@@ -670,11 +670,11 @@ function q(e, t) {
   return i
 }
 
-function X(e) {
+function Z(e) {
   return r.toByteArray(W(e))
 }
 
-function Z(e, t, n, r) {
+function X(e, t, n, r) {
   for (var i = 0; i < r && !(i + n >= t.length) && !(i >= e.length); ++i) t[i + n] = e[i];
   return i
 }
@@ -683,10 +683,10 @@ function Q(e, t) {
   return e instanceof t || null != e && null != e.constructor && null != e.constructor.name && e.constructor.name === t.name
 }
 
-function $(e) {
+function J(e) {
   return e != e
 }
-var J = function() {
+var $ = function() {
   for (var e = "0123456789abcdef", t = Array(256), n = 0; n < 16; ++n)
     for (var r = 16 * n, i = 0; i < 16; ++i) t[r + i] = e[n] + e[i];
   return t

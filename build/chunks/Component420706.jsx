@@ -159,7 +159,7 @@ let V = e => {
       },
       closePopout: t,
       onVoiceChannelPreview: e => {
-        n.trackRankingItemInteraction(w.PA.VOICE_CHANNEL_PREVIEWED, {
+        n.trackRankingItemInteraction(R.PA.VOICE_CHANNEL_PREVIEWED, {
           destinationChannelId: e.id,
           destinationGuildId: e.guild_id
         })
@@ -208,7 +208,7 @@ let V = e => {
     } = e, p = j(e, ["index", "ref"]), m = i.useRef(null), [g, E] = i.useState("default"), [y, b] = i.useState(false), O = (0, o.rm)("".concat(a)), v = null == (t = _.default.getCurrentUser()) ? true : t.isStaff(), {
       isRich: A,
       appName: I
-    } = (0, R.u)(p.entry), S = i.useMemo(() => ({
+    } = (0, w.u)(p.entry), S = i.useMemo(() => ({
       entry: p.entry,
       channelId: p.channel.id,
       guildId: p.channel.guild_id,
@@ -239,7 +239,7 @@ let V = e => {
         (0, h.I)(e, D({}, S, t))
       }, [S]),
       W = i.useMemo(() => s().throttle(e => {
-        (0, h.I)(w.PA.CARD_POPOUT_OPEN, e)
+        (0, h.I)(R.PA.CARD_POPOUT_OPEN, e)
       }, U, {
         leading: true,
         trailing: false

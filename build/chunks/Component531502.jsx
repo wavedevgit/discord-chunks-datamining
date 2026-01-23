@@ -95,8 +95,8 @@ function B(e) {
     powerLevel: u = 0,
     powerLevelPercentile: f = 0,
     cardId: _ = 0
-  } = (0, c.bG)([v.A], () => v.A.getCheckpointData()), h = (0, c.bG)([E.default], () => E.default.getCurrentUser()), m = (0, i.useContext)(O.P), g = (0, I.A)((0, d.rdh)(m.primaryColor).hex()), y = (0, b.j5)(g), T = (0, c.bG)([p.A], () => p.A.useReducedMotion), C = (0, i.useRef)(null), [N, w] = (0, i.useState)(true), M = (0, i.useMemo)(() => n <= P.Wf.END_REWARD ? 1 : n === P.Wf.END_CLAIM ? 2 : 3, [n]), k = (0, i.useMemo)(() => s().throttle(() => {
-    null != C.current && w(C.current.clientWidth)
+  } = (0, c.bG)([v.A], () => v.A.getCheckpointData()), h = (0, c.bG)([E.default], () => E.default.getCurrentUser()), m = (0, i.useContext)(O.P), g = (0, I.A)((0, d.rdh)(m.primaryColor).hex()), y = (0, b.j5)(g), T = (0, c.bG)([p.A], () => p.A.useReducedMotion), C = (0, i.useRef)(null), [N, R] = (0, i.useState)(true), M = (0, i.useMemo)(() => n <= P.Wf.END_REWARD ? 1 : n === P.Wf.END_CLAIM ? 2 : 3, [n]), k = (0, i.useMemo)(() => s().throttle(() => {
+    null != C.current && R(C.current.clientWidth)
   }, F), []), B = (0, i.useCallback)(() => n <= P.Wf.END_REWARD ? "100%" : n === P.Wf.END_CLAIM ? "50%" : "30%", [n]), H = (0, l.zhh)({
     onChange: k,
     to: {
@@ -130,12 +130,12 @@ function B(e) {
             color: g,
             colorClass: L.d7,
             className: L.gr
-          }), (0, r.jsx)(R.A, {
+          }), (0, r.jsx)(w.A, {
             variant: "eyebrow",
             className: L.UP,
             children: x.intl.string(D.default.ir6nEQ)
           })]
-        }), (0, r.jsx)(R.A, {
+        }), (0, r.jsx)(w.A, {
           variant: "display-lg",
           className: j.Vy,
           children: "DECO"
@@ -171,7 +171,7 @@ function B(e) {
       children: (0, r.jsx)(S.A, {
         onClick: a,
         muteSound: true,
-        children: (0, r.jsx)(R.A, {
+        children: (0, r.jsx)(w.A, {
           variant: "eyebrow",
           className: j.HL,
           children: x.intl.string(x.t.dcztdU)
@@ -188,10 +188,10 @@ function H() {
     } = (0, c.bG)([v.A], () => v.A.getCheckpointData());
   return (0, r.jsxs)("div", {
     className: j.ZG,
-    children: [(0, r.jsx)(R.A, {
+    children: [(0, r.jsx)(w.A, {
       variant: "eyebrow",
       children: x.intl.string(D.default["4R3VzK"])
-    }), (0, r.jsx)(R.A, {
+    }), (0, r.jsx)(w.A, {
       variant: "heading-lg/medium",
       className: j.$2,
       children: x.intl.string(D.default["94azAy"])
@@ -201,7 +201,7 @@ function H() {
       avatarDecorationOverride: t
     }), (0, r.jsx)(T.A, {
       className: j.Hk
-    }), (0, r.jsx)(R.A, {
+    }), (0, r.jsx)(w.A, {
       variant: "heading-sm/medium",
       children: x.intl.format(x.t.eZSTa5, {
         date: new Date("2026-01-15").toLocaleDateString(x.intl.currentLocale, {
@@ -252,10 +252,10 @@ function Y(e) {
   } = (0, A.oO)(a), C = (0, c.bG)([g.A], () => g.A.getGuild(null == O ? true : O.id)), N = null != I && null != I.icon ? y.Ay.getApplicationIconURL({
     id: I.id,
     icon: I.icon
-  }) : null, P = (0, w.HL)(), M = (0, i.useMemo)(() => [{
+  }) : null, P = (0, R.HL)(), M = (0, i.useMemo)(() => [{
     icon: l.oyn,
     title: x.intl.string(D.default.wWKySP),
-    content: (0, r.jsx)(R.A, {
+    content: (0, r.jsx)(w.A, {
       variant: "heading-xxl/medium",
       className: L.sH,
       children: n
@@ -265,7 +265,7 @@ function Y(e) {
     title: S === u.pJ.HOURS ? x.intl.formatToPlainString(D.default.Xu0QsX, {
       numHours: T
     }) : x.intl.string(D.default.RmVTph),
-    content: (0, r.jsx)(R.A, {
+    content: (0, r.jsx)(w.A, {
       variant: "heading-xxl/medium",
       className: L.sH,
       children: T
@@ -273,7 +273,7 @@ function Y(e) {
   }, {
     icon: l.nm2,
     title: x.intl.string(D.default.zcbFu1),
-    content: (0, r.jsx)(R.A, {
+    content: (0, r.jsx)(w.A, {
       variant: "heading-xxl/medium",
       className: L.sH,
       children: s
@@ -290,7 +290,7 @@ function Y(e) {
           emojiId: b.id,
           animated: !E && b.animated,
           className: j.Gl
-        }), (0, r.jsx)(R.A, {
+        }), (0, r.jsx)(w.A, {
           variant: "text-md/medium",
           children: null == b.id ? h.Ay.convertSurrogateToName(b.name) : ":".concat(b.name, ":")
         })]
@@ -298,7 +298,7 @@ function Y(e) {
         color: t,
         size: "md",
         className: j.Gl
-      }), null == b && (0, r.jsx)(R.A, {
+      }), null == b && (0, r.jsx)(w.A, {
         variant: "text-md/medium",
         children: x.intl.string(x.t.PoWNfe)
       })]
@@ -316,7 +316,7 @@ function Y(e) {
         color: t,
         size: "md",
         className: j.Gl
-      }), (0, r.jsx)(R.A, {
+      }), (0, r.jsx)(w.A, {
         variant: "text-md/medium",
         children: null != I ? I.name : x.intl.string(x.t.PoWNfe)
       })]
@@ -333,13 +333,13 @@ function Y(e) {
         color: t,
         size: "md",
         className: j.Gl
-      }), (0, r.jsx)(R.A, {
+      }), (0, r.jsx)(w.A, {
         variant: "text-md/medium",
         children: null != C ? C.name : x.intl.string(x.t.PoWNfe)
       })]
     })
   }], [n, T, S, s, b, E, t, N, I, C]);
-  return (0, r.jsx)(w.gy.Provider, {
+  return (0, r.jsx)(R.gy.Provider, {
     value: P,
     children: (0, r.jsx)("div", {
       className: j.Fo,
@@ -352,12 +352,12 @@ function Y(e) {
             color: t,
             colorClass: L.d7,
             className: L.gr
-          }), (0, r.jsx)(R.A, {
+          }), (0, r.jsx)(w.A, {
             variant: "eyebrow",
             className: L.UP,
             children: x.intl.string(D.default.ir6nEQ)
           })]
-        }), (0, r.jsx)(R.A, {
+        }), (0, r.jsx)(w.A, {
           variant: "display-lg",
           className: j.Vy,
           children: x.intl.string(D.default.y4M1na)
@@ -399,9 +399,9 @@ function K(e) {
     icon: t,
     title: n,
     content: a
-  } = e, s = (0, i.useContext)(O.P), o = (0, d.rdh)(s.primaryColor).hex(), l = (0, w.vy)(), c = (0, w.vy)();
+  } = e, s = (0, i.useContext)(O.P), o = (0, d.rdh)(s.primaryColor).hex(), l = (0, R.vy)(), c = (0, R.vy)();
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(w.vw, {
+    children: [(0, r.jsx)(R.vw, {
       spring: l,
       className: j.NX,
       children: (0, r.jsxs)("div", {
@@ -411,13 +411,13 @@ function K(e) {
           color: o,
           colorClass: L.d7,
           className: L.gr
-        }), (0, r.jsx)(R.A, {
+        }), (0, r.jsx)(w.A, {
           variant: "eyebrow",
           className: L.UP,
           children: n
         })]
       })
-    }), (0, r.jsx)(w.vw, {
+    }), (0, r.jsx)(R.vw, {
       spring: c,
       children: a
     })]

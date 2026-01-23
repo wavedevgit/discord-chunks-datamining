@@ -69,7 +69,7 @@ function y(e) {
     trackDisplayedQuestions: y
   } = (0, c.i)(), b = h(t), O = (0, d.i)(n), [v, A] = i.useState(O.blockId), [I, S] = i.useState(O.pageIndex), [T, C] = i.useState(false), N = (e, n) => {
     g(t, e, n)
-  }, R = i.useCallback(() => (T ? s() : (0, o.qfG)(e => (0, r.jsx)(a.Modal, E(m({
+  }, w = i.useCallback(() => (T ? s() : (0, o.qfG)(e => (0, r.jsx)(a.Modal, E(m({
     title: p.intl.string(p.t.T9Sx3z),
     actions: [{
       variant: "secondary",
@@ -87,7 +87,7 @@ function y(e) {
       variant: "text-md/normal",
       children: p.intl.string(p.t.iCK6G0)
     })
-  }))), Promise.resolve()), [s, T]), w = i.useMemo(() => null == v ? [] : (0, d.uy)(n, {
+  }))), Promise.resolve()), [s, T]), R = i.useMemo(() => null == v ? [] : (0, d.uy)(n, {
     blockId: v,
     pageIndex: I,
     responses: b
@@ -98,14 +98,14 @@ function y(e) {
       pageIndex: I,
       responses: b
     });
-    y(t, w), e.isComplete && l.Ay.submitSurveyResponse(t, b), A(e.blockId), S(e.pageIndex), C(e.isComplete)
-  }, [n, v, I, b, t, w, y]);
+    y(t, R), e.isComplete && l.Ay.submitSurveyResponse(t, b), A(e.blockId), S(e.pageIndex), C(e.isComplete)
+  }, [n, v, I, b, t, R, y]);
   i.useEffect(() => {
-    0 === w.length && P()
-  }, [w, P]);
-  let D = e => 0 === w.length ? null : (0, r.jsx)("div", {
+    0 === R.length && P()
+  }, [R, P]);
+  let D = e => 0 === R.length ? null : (0, r.jsx)("div", {
       className: _.Qs,
-      children: w.map(t => {
+      children: R.map(t => {
         let n = e.Questions[t];
         return null == n ? null : (0, r.jsx)(f.A, {
           question: n,
@@ -117,7 +117,7 @@ function y(e) {
     }),
     x = i.useMemo(() => {
       if (T) returnfalse;
-      for (let r of w) {
+      for (let r of R) {
         var e, t;
         let i = n.Questions[r];
         if ((null == i || null == (t = i.Validation) || null == (e = t.Settings) ? true : e.ForceResponse) === "ON") {
@@ -126,7 +126,7 @@ function y(e) {
         }
       }
       returntrue
-    }, [T, w, n, b]);
+    }, [T, R, n, b]);
   return T ? (0, r.jsxs)(a.Modal, {
     transitionState: u,
     onClose: s,
@@ -146,7 +146,7 @@ function y(e) {
     })]
   }) : (0, r.jsx)(a.Modal, {
     transitionState: u,
-    onClose: R,
+    onClose: w,
     title: p.intl.string(p.t.OSqLUF),
     size: "md",
     actions: [{

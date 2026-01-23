@@ -65,12 +65,12 @@ function N(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = 100,
+let R = 100,
   P = 60,
   D = 1,
   x = .5,
@@ -134,7 +134,7 @@ class M {
       id: o.id,
       banner: o.banner
     }, true)) ? e : null;
-    return null !== u && (c.selected_guild_banner_url = u), c.guilds.length > w && (c.guilds = c.guilds.slice(0, w), c.truncated = true), c.channels.length > w && (c.channels = c.channels.slice(0, w), c.truncated = true), {
+    return null !== u && (c.selected_guild_banner_url = u), c.guilds.length > R && (c.guilds = c.guilds.slice(0, R), c.truncated = true), c.channels.length > R && (c.channels = c.channels.slice(0, R), c.truncated = true), {
       brand_safety_context: JSON.stringify(c)
     }
   }
@@ -171,11 +171,11 @@ class M {
             s = O.A.getQuest(e);
           (0, A.L)().info("".concat(null != (a = null == s ? true : s.config.messages.questName) ? a : e, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, b.jO)(this.questContent)), {
             impressionId: this.id
-          }), (0, b.av)(R(C({}, r), {
+          }), (0, b.av)(w(C({}, r), {
             shouldExtendSession: n,
             questId: e,
             event: S.HAw.QUEST_CONTENT_VIEWED,
-            properties: R(C({}, i, this.commonProperties(s)), {
+            properties: w(C({}, i, this.commonProperties(s)), {
               traffic_metadata_raw: null != (o = (0, I.yI)(this.questContent, null == s ? true : s.id)) ? o : null,
               traffic_metadata_sealed: null != (l = (0, I.Gp)(this.questContent, null == s ? true : s.id)) ? l : null
             })
@@ -184,7 +184,7 @@ class M {
           let e = this.entity.adContentIds[t];
           (0, A.L)().info("".concat(e, " ad content viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, b.jO)(this.questContent)), {
             impressionId: this.id
-          }), (0, b.Qg)(R(C({}, r), {
+          }), (0, b.Qg)(w(C({}, r), {
             shouldExtendSession: n,
             adContentId: e,
             adCreativeType: this.entity.adCreativeType,
@@ -213,7 +213,7 @@ class M {
               s = O.A.getQuest(a);
             (0, A.L)().info("".concat(null != (l = null == s ? true : s.config.messages.questName) ? l : a, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
               impressionId: t.id
-            }), (0, b.av)(R(C({}, r), {
+            }), (0, b.av)(w(C({}, r), {
               questId: a,
               event: S.HAw.QUEST_CONTENT_VIEW_TIME,
               properties: C({}, i, t.commonProperties(s))
@@ -222,7 +222,7 @@ class M {
             let a = t.entity.adContentIds[o];
             (0, A.L)().info("".concat(a, " ad content impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
               impressionId: t.id
-            }), (0, b.Qg)(R(C({}, r), {
+            }), (0, b.Qg)(w(C({}, r), {
               adContentId: a,
               adCreativeType: t.entity.adCreativeType,
               event: S.HAw.QUEST_CONTENT_VIEW_TIME,
@@ -269,10 +269,10 @@ class M {
             s = O.A.getQuest(e);
           (0, A.L)().info("".concat(null != (i = null == s ? true : s.config.messages.questName) ? i : e, " Quest became visible at ").concat((0, b.jO)(this.questContent)), {
             impressionId: this.id
-          }), (0, b.av)(R(C({}, n), {
+          }), (0, b.av)(w(C({}, n), {
             questId: e,
             event: S.HAw.QUEST_CONTENT_LOADED,
-            properties: R(C({}, r, this.commonProperties(s)), {
+            properties: w(C({}, r, this.commonProperties(s)), {
               traffic_metadata_raw: null != (a = (0, I.yI)(this.questContent, null == s ? true : s.id)) ? a : null,
               traffic_metadata_sealed: null != (o = (0, I.Gp)(this.questContent, null == s ? true : s.id)) ? o : null
             })
@@ -281,7 +281,7 @@ class M {
           let e = this.entity.adContentIds[t];
           (0, A.L)().info("".concat(e, " ad content became visible at ").concat((0, b.jO)(this.questContent)), {
             impressionId: this.id
-          }), (0, b.Qg)(R(C({}, n), {
+          }), (0, b.Qg)(w(C({}, n), {
             adContentId: e,
             adCreativeType: this.entity.adCreativeType,
             event: S.HAw.QUEST_CONTENT_LOADED,
@@ -388,7 +388,7 @@ function Y(e) {
         trackGuildAndChannelMetadata: e.trackGuildAndChannelMetadata,
         triggeredByStatusChange: f
       };
-      e.adCreativeType, s.p.QUEST, p.current = new M(R(C({}, t), {
+      e.adCreativeType, s.p.QUEST, p.current = new M(w(C({}, t), {
         adContentIds: e.adContentIds,
         adCreativeType: e.adCreativeType
       })), p.current.start()

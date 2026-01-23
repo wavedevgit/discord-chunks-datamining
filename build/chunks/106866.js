@@ -1,5 +1,5 @@
 /** Chunk was on 23321 **/
-/** chunk id: 106866, original params: e,t,l (module,exports,require) **/
+/** chunk id: 106866, original params: e,t,n (module,exports,require) **/
 module.exports = {
   u1: "spinner__2aeb5",
   wx: "header__2aeb5",

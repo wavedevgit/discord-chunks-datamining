@@ -167,8 +167,8 @@ function v(e, t, n, a) {
       onContentResize: T = null,
       dir: C = "ltr",
       sections: N,
-      sectionHeight: R,
-      rowHeight: w,
+      sectionHeight: w,
+      rowHeight: R,
       footerHeight: P = 0,
       sidebarHeight: D,
       listHeaderHeight: x = 0,
@@ -187,11 +187,11 @@ function v(e, t, n, a) {
       chunkSize: K,
       style: z,
       innerId: q,
-      innerRole: X,
-      innerAriaLabel: Z,
+      innerRole: Z,
+      innerAriaLabel: X,
       innerAriaMultiselectable: Q,
-      innerAriaOrientation: $,
-      innerClassName: J,
+      innerAriaOrientation: J,
+      innerClassName: $,
       innerTag: ee = "div"
     } = g, et = m(g, ["className", "onScroll", "onResize", "onContentResize", "dir", "sections", "sectionHeight", "rowHeight", "footerHeight", "sidebarHeight", "listHeaderHeight", "renderSection", "renderRow", "renderFooter", "renderSidebar", "renderListHeader", "stickyListHeader", "wrapSection", "getAnchorId", "paddingTop", "paddingBottom", "fade", "customTheme", "chunkSize", "style", "innerId", "innerRole", "innerAriaLabel", "innerAriaMultiselectable", "innerAriaOrientation", "innerClassName", "innerTag"]), [en] = v, er = i.useRef(null), ei = i.useRef(null), [ea, es] = i.useState(false), {
       scrollerRef: eo,
@@ -215,8 +215,8 @@ function v(e, t, n, a) {
       anchor: em
     } = (0, u.mh)({
       sections: N,
-      sectionHeight: R,
-      rowHeight: w,
+      sectionHeight: w,
+      rowHeight: R,
       footerHeight: P,
       sidebarHeight: D,
       listHeaderHeight: x,
@@ -289,14 +289,14 @@ function v(e, t, n, a) {
     }, et), {
       children: [i.useMemo(() => (0, r.jsx)(ee, {
         id: q,
-        role: X,
-        "aria-label": Z,
+        role: Z,
+        "aria-label": X,
         "aria-multiselectable": Q,
-        "aria-orientation": $,
+        "aria-orientation": J,
         style: {
           height: ed
         },
-        className: s()(d.Qs, J),
+        className: s()(d.Qs, $),
         ref: ei,
         children: (0, r.jsx)(c.xp, {
           containerRef: ei,
@@ -311,7 +311,7 @@ function v(e, t, n, a) {
             spacerTop: eu
           })
         })
-      }), [ee, q, X, Z, Q, $, ed, J, ef, U, G, L, j, M, V, eu]), i.useMemo(() => O({
+      }), [ee, q, Z, X, Q, J, ed, $, ef, U, G, L, j, M, V, eu]), i.useMemo(() => O({
         isSidebarVisible: ep,
         renderSidebar: k,
         sidebarHeight: D,

@@ -101,8 +101,8 @@ function H(e, t) {
 
 function Y() {
   var e;
-  let t = (0, o.bG)([R.default], () => {
-      let e = R.default.getCurrentUser();
+  let t = (0, o.bG)([w.default], () => {
+      let e = w.default.getCurrentUser();
       return s()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
     }),
     n = (0, o.bG)([C.A], () => C.A.hidePersonalInformation),
@@ -123,23 +123,23 @@ function Y() {
     }),
     z = (0, o.bG)([N.A], () => N.A.showNotice()),
     q = (0, T.A)() && null != U ? m.Ay.parse(true, U).content : U,
-    X = P.Ay.canUsePremiumProfileCustomization(t),
+    Z = P.Ay.canUsePremiumProfileCustomization(t),
     {
-      analyticsLocations: Z,
+      analyticsLocations: X,
       newestAnalyticsLocation: Q
     } = (0, _.Ay)(p.A.USER_SETTINGS_USER_PROFILE);
   i.useEffect(() => () => u.h.wait(d.IM), []);
-  let [$, J] = i.useState(false), {
+  let [J, $] = i.useState(false), {
     showRedesign: ee
   } = D.X.useExperiment({
     location: "profile customization"
-  }), et = !X, en = i.useRef(null);
+  }), et = !Z, en = i.useRef(null);
   return n ? (0, r.jsx)(f.A, {}) : (0, r.jsxs)(_.f5, {
-    value: Z,
+    value: X,
     children: [(0, r.jsx)(h.A, {}), (0, r.jsx)(O.A, {
       profilePreview: (0, r.jsx)(v.A, F(G({
         user: t,
-        canUsePremiumCustomization: X,
+        canUsePremiumCustomization: Z,
         onUpsellClick: x.A,
         pendingBio: q
       }, Y), {
@@ -155,7 +155,7 @@ function Y() {
       children: (0, r.jsx)(L.A, {})
     }), ee && (0, r.jsx)(A.A, {}), (0, r.jsx)(l.L, {
       innerRef: en,
-      onChange: e => J(e),
+      onChange: e => $(e),
       threshold: .25,
       active: et,
       children: (0, r.jsx)("div", {
@@ -163,12 +163,12 @@ function Y() {
         children: (0, r.jsx)(I.A, {
           user: t,
           shouldShow: et,
-          isVisible: $
+          isVisible: J
         })
       })
     }), et && !z && (0, r.jsx)(E.d, {
       className: k.E,
-      showUpsell: et && !$,
+      showUpsell: et && !J,
       text: M.intl.format(M.t.TmfgI2, {
         onClick: () => (0, y.K)({
           analyticsSource: Q
@@ -179,7 +179,7 @@ function Y() {
         variant: "expressive",
         onClick: () => {
           var e;
-          w.default.track(j.HAw.TRY_IT_OUT_PRESET_CLICKED, {
+          R.default.track(j.HAw.TRY_IT_OUT_PRESET_CLICKED, {
             cta_variant: "floating_action_button"
           }), null == en || null == (e = en.current) || e.scrollIntoView({
             behavior: "smooth"

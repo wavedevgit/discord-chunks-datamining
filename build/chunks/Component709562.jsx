@@ -103,8 +103,8 @@ function I(e) {
     grow: T,
     "aria-label": C,
     look: N,
-    buttonText: R,
-    size: w,
+    buttonText: w,
+    size: R,
     color: P
   } = e;
   return (0, r.jsx)(_.A, {
@@ -117,7 +117,7 @@ function I(e) {
       children: (0, r.jsxs)(c.$n, {
         "data-migration-pending": true,
         look: null != N ? N : c.$n.Looks.BLANK,
-        size: null != w ? w : c.$n.Sizes.NONE,
+        size: null != R ? R : c.$n.Sizes.NONE,
         color: P,
         onKeyDown: e => {
           null == i || i(e)
@@ -135,7 +135,7 @@ function I(e) {
         onBlur: u,
         disabled: b,
         innerClassName: s()(g.NL, {
-          [g.eq]: null != R
+          [g.eq]: null != w
         }),
         className: s()({
           [g.vu]: O
@@ -147,12 +147,12 @@ function I(e) {
         children: [(0, r.jsx)(E, {
           size: o.E.md,
           className: s()(h, {
-            [g.pd]: null == R,
+            [g.pd]: null == w,
             [g.IW]: y,
             [g.vu]: O
           }),
           color: m
-        }), R]
+        }), w]
       })
     })
   })
@@ -195,20 +195,20 @@ function C(e) {
     popoutOpen: A = false,
     popoutDisabled: C = false,
     isTrayButton: N,
-    applyStyles: R = false
-  } = e, w = v(e, ["ref", "color", "caretColor", "isActive", "className", "iconClassName", "onPopoutClick", "popoutOpen", "popoutDisabled", "isTrayButton", "applyStyles"]), P = (0, h.A)(a, l), D = null != o ? o : P, x = (0, d.A)("(max-width: 456px)"), L = i.useRef(null), j = i.useContext(p.vG);
+    applyStyles: w = false
+  } = e, R = v(e, ["ref", "color", "caretColor", "isActive", "className", "iconClassName", "onPopoutClick", "popoutOpen", "popoutDisabled", "isTrayButton", "applyStyles"]), P = (0, h.A)(a, l), D = null != o ? o : P, x = (0, d.A)("(max-width: 456px)"), L = i.useRef(null), j = i.useContext(p.vG);
   i.useEffect(() => {
     null != L.current && (j ? L.current.pause() : L.current.play())
   }, [j]);
-  let M = null != (t = w.onContextMenu) ? t : b,
+  let M = null != (t = R.onContextMenu) ? t : b,
     k = null == b && !N,
     U = null != b && !N,
     G = N && null != b && !x,
-    V = (0, r.jsx)(I, O(y({}, w), {
+    V = (0, r.jsx)(I, O(y({}, R), {
       grow: false,
       onContextMenu: M,
       iconClassName: s()(E, g.LF, k && g.Ns),
-      className: s()(x || R ? c : null, l && g.vu, g.wh, T[P], k && g.Sy, G && g.hA)
+      className: s()(x || w ? c : null, l && g.vu, g.wh, T[P], k && g.Sy, G && g.hA)
     }));
   return x ? V : (0, r.jsxs)("div", {
     ref: n,

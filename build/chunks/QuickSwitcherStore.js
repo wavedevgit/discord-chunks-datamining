@@ -31,7 +31,7 @@ var i, Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -67,7 +67,7 @@ function q(e) {
       channelId: r
     } = n;
     if (e(r)) return;
-    let i = X(r);
+    let i = Z(r);
     if (null != i) {
       let e = {
         record: i,
@@ -78,12 +78,12 @@ function q(e) {
   }), t
 }
 
-function X(e) {
+function Z(e) {
   let t = (0, d.A)(e);
   return null == t || null != V && V !== t.type ? null : t
 }
 
-function Z() {
+function X() {
   var e, t;
   let n = null != (e = I.A.getGuildId()) ? e : true,
     r = null != (t = A.A.getChannelId()) ? t : true;
@@ -132,51 +132,51 @@ function Z() {
     a = new Set,
     s = q(e => e === r || W.includes(e) || a.has(e));
   if (s.length > 0)
-    for (let e of (i.push((0, u.jF)(R.intl.string(R.t["4B63jZ"]))), s)) a.add(e.channelId), i.push(e.record);
-  let o = v.Ay.getMentionChannelIds().filter(e => e !== r && !W.includes(e) && !a.has(e)).map(e => X(e)).filter(C.Vq).reverse();
+    for (let e of (i.push((0, u.jF)(w.intl.string(w.t["4B63jZ"]))), s)) a.add(e.channelId), i.push(e.record);
+  let o = v.Ay.getMentionChannelIds().filter(e => e !== r && !W.includes(e) && !a.has(e)).map(e => Z(e)).filter(C.Vq).reverse();
   if (o.length > 0)
-    for (let e of (i.push((0, u.jF)(R.intl.string(R.t["61Df13"]))), o)) a.add(e.record.id), i.push(e);
+    for (let e of (i.push((0, u.jF)(w.intl.string(w.t["61Df13"]))), o)) a.add(e.record.id), i.push(e);
   if (null != n) {
     let e = E.Ay.getSelectableChannelIds(n).filter(e => {
       let t = m.A.getChannel(e);
       return !(null == t || e === r || W.includes(e) || a.has(e) || S.Ay.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.Ay.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.Y)(t)
-    }).map(e => X(e)).filter(e => e);
+    }).map(e => Z(e)).filter(e => e);
     Object.values(p.A.getActiveJoinedUnreadThreadsForGuild(n)).forEach(t => {
       for (let n in t) {
-        let t = X(n);
+        let t = Z(n);
         null == t || a.has(t.record.id) || W.includes(n) || e.push(t)
       }
-    }), e.length > 0 && (i.push((0, u.jF)(R.intl.string(R.t.ieCAhD))), i = i.concat(e))
+    }), e.length > 0 && (i.push((0, u.jF)(w.intl.string(w.t.ieCAhD))), i = i.concat(e))
   }
   let l = Math.min((i.length > 0 ? L : x) + 1, W.length),
     c = [];
   for (let e = 1; e < l; e += 1) {
-    let t = X(W[e]);
+    let t = Z(W[e]);
     null != t && (t.type !== u.rD.TEXT_CHANNEL && t.type !== u.rD.VOICE_CHANNEL || O.A.can(N.xBc.VIEW_CHANNEL, t.record)) && (c.push(t), a.add(t.record.id))
   }
-  return c.length > 0 && (i = [(0, u.jF)(R.intl.string(R.t["80lOZ1"])), ...c, ...i]), i
+  return c.length > 0 && (i = [(0, u.jF)(w.intl.string(w.t["80lOZ1"])), ...c, ...i]), i
 }
 
 function Q(e, t) {
   switch (V) {
     case u.rD.USER: {
       let t = b.A.getGuild(I.A.getGuildId());
-      e.unshift((0, u.jF)(null != t ? R.intl.formatToPlainString(R.t.FREzQs, {
+      e.unshift((0, u.jF)(null != t ? w.intl.formatToPlainString(w.t.FREzQs, {
         name: t.name
-      }) : R.intl.string(R.t.XFYW1o))), F = e;
+      }) : w.intl.string(w.t.XFYW1o))), F = e;
       break
     }
     case u.rD.TEXT_CHANNEL:
-      e.unshift((0, u.jF)(R.intl.string(R.t.W26k4V))), F = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.W26k4V))), F = e;
       break;
     case u.rD.VOICE_CHANNEL:
-      e.unshift((0, u.jF)(R.intl.string(R.t.zUoI5C))), F = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.zUoI5C))), F = e;
       break;
     case u.rD.GUILD:
-      e.unshift((0, u.jF)(R.intl.string(R.t.olADPs))), F = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.olADPs))), F = e;
       break;
     case u.rD.APPLICATION:
-      e.unshift((0, u.jF)(R.intl.string(R.t.VwK1ld))), F = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.VwK1ld))), F = e;
       break;
     default:
       F = e
@@ -189,7 +189,7 @@ function Q(e, t) {
   eo.emitChange()
 }
 
-function $(e) {
+function J(e) {
   var t;
   let {
     query: n,
@@ -202,7 +202,7 @@ function $(e) {
   }, j), B = null, H = a.length, V = i, r.search(a)
 }
 
-function J(e) {
+function $(e) {
   let {
     channelId: t
   } = e;
@@ -221,7 +221,7 @@ function ee(e, t) {
 }
 
 function et(e, t) {
-  ee(e = "" === (t = t.trim()).trim() ? Z() : e, Y) || (Y = e, Q(e, t))
+  ee(e = "" === (t = t.trim()).trim() ? X() : e, Y) || (Y = e, Q(e, t))
 }
 
 function en() {
@@ -308,18 +308,18 @@ class es extends(i = Chunk311907.Ay.PersistedStore) {
     }
   }
 }
-w(es, "displayName", "QuickSwitcherStore"), w(es, "persistKey", "QuickSwitcherStore");
+R(es, "displayName", "QuickSwitcherStore"), R(es, "persistKey", "QuickSwitcherStore");
 let eo = new es(Chunk73153.h, {
     CONNECTION_OPEN: z,
     CONNECTION_OPEN_SUPPLEMENTAL: z,
-    QUICKSWITCHER_SHOW: $,
-    SHOW_ACTION_SHEET_QUICK_SWITCHER: $,
+    QUICKSWITCHER_SHOW: J,
+    SHOW_ACTION_SHEET_QUICK_SWITCHER: J,
     QUICKSWITCHER_HIDE: en,
     OVERLAY_SET_INPUT_LOCKED: en,
     HIDE_ACTION_SHEET_QUICK_SWITCHER: en,
     QUICKSWITCHER_SEARCH: er,
     QUICKSWITCHER_SELECT: ei,
     QUICKSWITCHER_SWITCH_TO: ea,
-    CHANNEL_SELECT: J
+    CHANNEL_SELECT: $
   }),
   el = eo

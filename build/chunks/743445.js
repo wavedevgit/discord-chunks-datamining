@@ -40,7 +40,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -171,7 +171,7 @@ class k extends Chunk565150.Ay {
       "Content-Type": t
     };
     true !== this.contentHash && (r[L] = this.contentHash);
-    let i = R({
+    let i = w({
       url: this.responseUrl,
       body: e,
       headers: r,
@@ -207,7 +207,7 @@ class k extends Chunk565150.Ay {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
     if (D.log("Attempting to upload attachment with resumeFrom: ".concat(t, " and attempts: ").concat(this.uploadAttempts)), t > 0) {
       var n;
-      this.uploadAnalytics.uploadResumptionCount++, e.headers = P(R({}, null != (n = e.headers) ? n : {}), {
+      this.uploadAnalytics.uploadResumptionCount++, e.headers = P(w({}, null != (n = e.headers) ? n : {}), {
         "Content-Range": "bytes ".concat(t, "-").concat(this.currentSize - 1, "/").concat(this.currentSize)
       })
     }
@@ -319,7 +319,7 @@ class k extends Chunk565150.Ay {
       D.log("Requesting upload url for ".concat(this.id));
       let e = await this.trackTime("getUploadUrlTimeMs", async () => {
         let e = s.getCreateAttachmentURL(this.channelId);
-        return await o.Bo.post(P(R({
+        return await o.Bo.post(P(w({
           url: e,
           body: {
             files: [a]
@@ -386,7 +386,7 @@ class k extends Chunk565150.Ay {
       filename: i,
       mimeType: s
     };
-    return this.item = R({}, this.item, l), this.reactNativeFilePrepped = true, this
+    return this.item = w({}, this.item, l), this.reactNativeFilePrepped = true, this
   }
   static async tryConvertToWebP(e, t, n) {
     var r, i, a;

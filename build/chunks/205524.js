@@ -63,9 +63,9 @@ function o(e, t) {
     T = u * g - p * _,
     C = d * m - f * h,
     N = d * g - p * h,
-    R = f * g - p * m,
-    w = E * R - y * N + b * C + O * T - v * S + A * I;
-  return w ? (w = 1 / w, e[0] = (o * R - l * N + c * C) * w, e[1] = (i * N - r * R - a * C) * w, e[2] = (h * A - m * v + g * O) * w, e[3] = (f * v - d * A - p * O) * w, e[4] = (l * T - s * R - c * S) * w, e[5] = (n * R - i * T + a * S) * w, e[6] = (m * b - _ * A - g * y) * w, e[7] = (u * A - f * b + p * y) * w, e[8] = (s * N - o * T + c * I) * w, e[9] = (r * T - n * N - a * I) * w, e[10] = (_ * v - h * b + g * E) * w, e[11] = (d * b - u * v - p * E) * w, e[12] = (o * S - s * C - l * I) * w, e[13] = (n * C - r * S + i * I) * w, e[14] = (h * y - _ * O - m * E) * w, e[15] = (u * O - d * y + f * E) * w, e) : null
+    w = f * g - p * m,
+    R = E * w - y * N + b * C + O * T - v * S + A * I;
+  return R ? (R = 1 / R, e[0] = (o * w - l * N + c * C) * R, e[1] = (i * N - r * w - a * C) * R, e[2] = (h * A - m * v + g * O) * R, e[3] = (f * v - d * A - p * O) * R, e[4] = (l * T - s * w - c * S) * R, e[5] = (n * w - i * T + a * S) * R, e[6] = (m * b - _ * A - g * y) * R, e[7] = (u * A - f * b + p * y) * R, e[8] = (s * N - o * T + c * I) * R, e[9] = (r * T - n * N - a * I) * R, e[10] = (_ * v - h * b + g * E) * R, e[11] = (d * b - u * v - p * E) * R, e[12] = (o * S - s * C - l * I) * R, e[13] = (n * C - r * S + i * I) * R, e[14] = (h * y - _ * O - m * E) * R, e[15] = (u * O - d * y + f * E) * R, e) : null
 }
 
 function l(e, t, n) {

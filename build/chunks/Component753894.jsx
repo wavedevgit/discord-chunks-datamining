@@ -79,7 +79,7 @@ let A = e => {
       isDarkMode: f
     } = e, {
       analyticsLocations: E
-    } = (0, d.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), b = (0, m.QQ)(), S = (0, h.ar)(), C = (0, _.cg)(), N = (0, o.bG)([p.A], () => p.A.affinities).length > 0, R = O.intl.string(O.t.YCZldK);
+    } = (0, d.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), b = (0, m.QQ)(), S = (0, h.ar)(), C = (0, _.cg)(), N = (0, o.bG)([p.A], () => p.A.affinities).length > 0, w = O.intl.string(O.t.YCZldK);
     return (0, r.jsx)(d.f5, {
       value: E,
       children: (0, r.jsxs)("div", {
@@ -94,7 +94,7 @@ let A = e => {
           children: [(0, r.jsx)(c.Heading, {
             variant: S ? "display-lg" : "display-md",
             color: "always-white",
-            children: R
+            children: w
           }), N ? (0, r.jsx)("div", {
             className: v.DF,
             children: (0, r.jsx)(y.A, {

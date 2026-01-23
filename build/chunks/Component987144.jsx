@@ -90,11 +90,11 @@ async function v(e) {
     onSubscribeComplete: T,
     guild: C,
     handleSubscribeModalClose: N,
-    disablePremiumUpsell: R,
-    inPopout: w,
+    disablePremiumUpsell: w,
+    inPopout: R,
     applicationId: P,
     intent: D
-  } = e, x = w ? i.KX8 : i.SYi, L = l.default.getCurrentUser();
+  } = e, x = R ? i.KX8 : i.SYi, L = l.default.getCurrentUser();
   if (null == L) return;
   if (!L.verified) return void(0, i.mMO)(async () => {
     let {
@@ -159,10 +159,10 @@ async function v(e) {
     closeLayer: G,
     totalNumberOfSlotsToAssign: null != b ? b : 1,
     onCloseModal: U,
-    disablePremiumUpsell: R,
+    disablePremiumUpsell: w,
     onSubscriptionConfirmation: S,
     onSubscribeComplete: T,
-    inPopout: w,
+    inPopout: R,
     applicationId: P,
     intent: D
   })

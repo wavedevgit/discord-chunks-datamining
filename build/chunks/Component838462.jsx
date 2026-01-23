@@ -31,17 +31,17 @@ var Chunk627968 = require("./627968.js"),
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = r
     })
   }
   return e
@@ -53,9 +53,9 @@ function A(e) {
       planGroup: A,
       onSubscriptionConfirmation: k,
       renderPurchaseConfirmation: w,
-      postSuccessGuild: _,
-      followupSKUInfo: C,
-      continueSessionToInitialStep: M
+      postSuccessGuild: C,
+      followupSKUInfo: M,
+      continueSessionToInitialStep: _
     } = e,
     {
       activeSubscription: N,
@@ -68,92 +68,92 @@ function A(e) {
       startingPremiumSubscriptionPlanIdRef: B,
       startingFractionalPremiumEndsAtRef: F,
       isPremiumGroupPurchase: W
-    } = (0, v.P5)(),
+    } = (0, h.P5)(),
     {
-      isGift: z,
-      giftRecipient: V,
-      giftCode: K,
+      isGift: V,
+      giftRecipient: K,
+      giftCode: z,
       hasSentMessage: Y,
       isSendingMessage: Z,
       sendGiftMessage: Q,
       claimableRewards: q,
       selectedGiftingPromotionReward: J
-    } = (0, h.Pv)(),
+    } = (0, b.Pv)(),
     {
       confirmationFooter: X
-    } = (0, b.cG)(),
-    $ = (0, p.px)(L, z, q),
+    } = (0, v.cG)(),
+    $ = (0, p.px)(L, V, q),
     ee = (0, d.A)(),
     et = (0, p.Mq)(L),
     en = (0, u.Mv)(null == J ? true : J.skuId),
-    el = (0, P.g)(R, D),
-    er = z && null != J && et;
+    er = (0, x.g)(R, D),
+    el = V && null != J && et;
   s()(null != L, "Expected plan to selected"), s()(null != U, "Expected selectedSkuId"), s()(null != G, "Step should be set");
-  let ei = r.useCallback(() => {
+  let ei = l.useCallback(() => {
     i(), null == k || k()
   }, [i, k]);
-  r.useEffect(() => {
+  l.useEffect(() => {
     function e() {
       W && null != H && H.hasAnyPremiumGroup && (0, o.mMO)(async () => {
         let {
           default: e
         } = await n.e("73987").then(n.bind(n, 773486));
         return t => {
-          var n, r;
-          return (0, l.jsx)(e, (n = I({}, t), r = r = {
+          var n, l;
+          return (0, r.jsx)(e, (n = I({}, t), l = l = {
             subscription: H
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var l = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, l)
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
             }
             return n
-          })(Object(r)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
           }), n))
         }
       })
     }
-    return g._.subscribe(E.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
-      g._.unsubscribe(E.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
+    return f._.subscribe(S.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
+      f._.unsubscribe(S.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
     }
-  }, [W, H]), r.useEffect(() => {
-    !z || null == V || null == K || Y || Z || (0, j.Ik)(V) || Q({
+  }, [W, H]), l.useEffect(() => {
+    !V || null == K || null == z || Y || Z || (0, y.Ik)(K) || Q({
       onSubscriptionConfirmation: k
     })
-  }, [Q, z, V, K, Y, Z, k]), r.useEffect(() => {
+  }, [Q, V, K, z, Y, Z, k]), l.useEffect(() => {
     null != ee && null != ee.reminderNotice && $ && (0, c.$l)(a.M.GIFTING_PROMOTION_REMINDER, (0, m.p)(), {
       dismissAction: T.i.INDIRECT_ACTION
     })
   }, [ee, $]);
-  let es = null != M ? f.Rs.DEEPLINK_TO_DESKTOP_APP : true;
+  let es = null != _ ? g.Rs.DEEPLINK_TO_DESKTOP_APP : true;
   if (null != w) t = w(L, ei, H);
-  else if (z) t = (0, l.jsx)(f.fw, {
+  else if (V) t = (0, r.jsx)(g.fw, {
     planId: L.id,
     onClose: ei
   });
   else {
     let e = B.current === L.id ? {
-      postSuccessGuild: _
+      postSuccessGuild: C
     } : {
-      followupSKUInfo: C,
+      followupSKUInfo: M,
       startingPremiumSubscriptionPlanId: B.current,
-      isDowngrade: null != N && (0, y.vT)(N, L.id, A)
+      isDowngrade: null != N && (0, j.vT)(N, L.id, A)
     };
-    t = (0, l.jsx)(f.Ay, I({
+    t = (0, r.jsx)(g.Ay, I({
       planId: L.id,
       onClose: ei,
-      paymentSourceType: el,
+      paymentSourceType: er,
       hideClose: null != X,
       startingFractionalPremiumEndsAt: F.current,
       customCTAType: es
     }, e))
   }
-  return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsxs)(O.dZ, {
-      children: [(0, l.jsx)(S.A, {}), t]
-    }), null != X && X, er && null != en && (0, l.jsx)(x.A, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)(O.dZ, {
+      children: [(0, r.jsx)(E.A, {}), t]
+    }), null != X && X, el && null != en && (0, r.jsx)(P.A, {
       reward: J,
       purchase: en,
       onClose: ei

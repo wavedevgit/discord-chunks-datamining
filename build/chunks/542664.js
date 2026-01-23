@@ -296,7 +296,7 @@ let H = e => {
           r = null != (o = g.Ay.getNickname(s.getGuildId(), n.channelId, a)) ? o : E.Ay.getName(a)
         }
         let l = e[1],
-          c = null != l && w.Ut1.test(l.trim()),
+          c = null != l && R.Ut1.test(l.trim()),
           u = c && n.unknownUserMentionPlaceholder ? "@".concat(D.intl.string(D.t.sKdZ6U)) : e[0];
         return {
           userId: i,
@@ -443,7 +443,7 @@ let H = e => {
     spoiler: {
       order: Chunk704726.Ay.order,
       requiredFirstCharacters: ["|"],
-      match: e => w.VFs.exec(e),
+      match: e => R.VFs.exec(e),
       parse: (e, t, n) => ({
         content: t(e[1], n),
         channelId: n.channelId
@@ -452,7 +452,7 @@ let H = e => {
     staticRouteLink: {
       order: Chunk704726.Ay.order,
       requiredFirstCharacters: ["<"],
-      match: e => w.P0V.exec(e),
+      match: e => R.P0V.exec(e),
       parse(e, t, n) {
         var r;
         let [, i, a] = e, s = (0, C.Q)(i), o = (0, C.f)(i, a, null == (r = Y(n)) ? true : r.id);
@@ -481,8 +481,8 @@ let H = e => {
   K = (0, Chunk551965.A)([W, Chunk438419.A]),
   z = i().omit(K, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]),
   q = i().omit(K, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard", "gameMention"]),
-  X = i().omit(K, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]),
-  Z = i().omit((0, Chunk551965.A)([K, {
+  Z = i().omit(K, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]),
+  X = i().omit((0, Chunk551965.A)([K, {
     inlineCode: {
       match(e, t, n) {
         let r = K.codeBlock.match(e, t, n);
@@ -493,8 +493,8 @@ let H = e => {
     }
   }]), ["blockQuote", "codeBlock", "br"]),
   Q = i().omit(K, ["codeBlock", "br", "blockQuote"]),
-  $ = i().omit(K, ["codeBlock", "br", "attachmentLink", "mention", "roleMention", "channel", "paragraph", "newline", "subtext", "soundboard"]),
-  J = i().omit(K, ["codeBlock", "blockQuote", "br"]),
+  J = i().omit(K, ["codeBlock", "br", "attachmentLink", "mention", "roleMention", "channel", "paragraph", "newline", "subtext", "soundboard"]),
+  $ = i().omit(K, ["codeBlock", "blockQuote", "br"]),
   ee = i().omit(K, ["codeBlock", "br", "inlineCode"]);
 
 function et(e, t) {
@@ -535,11 +535,11 @@ let en = 10,
     RULES: K,
     CHANNEL_TOPIC_RULES: z,
     VOICE_CHANNEL_STATUS_RULES: q,
-    EMBED_TITLE_RULES: X,
-    INLINE_REPLY_RULES: Z,
+    EMBED_TITLE_RULES: Z,
+    INLINE_REPLY_RULES: X,
     GUILD_VERIFICATION_FORM_RULES: Q,
-    GUILD_EVENT_RULES: J,
-    PROFILE_BIO_RULES: $,
+    GUILD_EVENT_RULES: $,
+    PROFILE_BIO_RULES: J,
     AUTO_MODERATION_SYSTEM_MESSAGE_RULES: er,
     NATIVE_SEARCH_RESULT_LINK_RULES: ee
   }

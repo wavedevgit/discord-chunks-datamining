@@ -1,10 +1,9 @@
-/** Chunk was on 59275 **/
+/** Chunk was on 77313 **/
 /** chunk id: 177366, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  XU: () => C,
-  Yr: () => v,
-  k0: () => A
+  XU: () => A,
+  Yr: () => j,
+  k0: () => _
 }), require("./591487.js"), require("./727858.js"), require("./747238.js"), require("./812715.js"), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk960488 = require("./960488.js"),
@@ -20,35 +19,35 @@ var Chunk64700 = require("./64700.js"),
   Chunk159439 = require("./159439.js"),
   Chunk57020 = require("./57020.js"),
   Chunk652215 = require("./652215.js");
-let b = "".concat("#").concat("itemSkuId", "="),
-  h = new RegExp("^".concat(b, "(\\d+)$")),
-  E = [Chunk652215.BVt.COLLECTIBLES_SHOP],
-  v = e => {
+let v = "".concat("#").concat("itemSkuId", "="),
+  g = new RegExp("^".concat(v, "(\\d+)$")),
+  b = [Chunk652215.BVt.COLLECTIBLES_SHOP],
+  j = e => {
     let t = (0, l.zy)();
     r.useEffect(() => {
-      if (null != e && E.includes(t.pathname)) return () => {
-        window.location.hash.startsWith(b) && window.location.replace("#")
+      if (null != e && b.includes(t.pathname)) return () => {
+        window.location.hash.startsWith(v) && window.location.replace("#")
       }
     }, [e, t.pathname])
   },
-  C = () => {
-    let e = (0, m.U)(),
+  A = () => {
+    let e = (0, f.U)(),
       t = r.useRef(null),
       n = (0, l.zy)(),
-      a = n.pathname === _.BVt.COLLECTIBLES_SHOP ? i.A.HOME_PAGE_SHOP_TAB : i.A.COLLECTIBLES_SHOP,
+      a = n.pathname === h.BVt.COLLECTIBLES_SHOP ? s.A.HOME_PAGE_SHOP_TAB : s.A.COLLECTIBLES_SHOP,
       {
-        analyticsLocations: b
+        analyticsLocations: v
       } = (0, o.Ay)(a),
-      E = (0, g.A)();
+      b = (0, m.A)();
     r.useEffect(() => {
-      let e = h.exec(n.hash);
+      let e = g.exec(n.hash);
       null != e ? t.current = e[1] : t.current = null
-    }, [E, n.hash]);
-    let v = (0, s.bG)([u.A], () => u.A.initialProductSkuId);
+    }, [b, n.hash]);
+    let j = (0, i.bG)([u.A], () => u.A.initialProductSkuId);
     r.useEffect(() => {
       if (e) return;
       let n = null;
-      if (null != v ? n = v : null != t.current && (n = t.current), null != n) {
+      if (null != j ? n = j : null != t.current && (n = t.current), null != n) {
         let e = setTimeout(() => {
           (e => {
             let {
@@ -56,22 +55,22 @@ let b = "".concat("#").concat("itemSkuId", "="),
               analyticsLocations: n,
               analyticsSource: r,
               tab: l
-            } = e, s = c.A.getProduct(t), a = c.A.getCategoryForProduct(t);
-            if (null != s && null != a) {
-              let e = s,
-                o = (0, p.Ak)({
-                  product: s
+            } = e, i = c.A.getProduct(t), a = c.A.getCategoryForProduct(t);
+            if (null != i && null != a) {
+              let e = i,
+                o = (0, x.Ak)({
+                  product: i
                 }),
                 u = document.getElementById("shop-item-".concat(e.skuId));
-              if (u !== document.activeElement && (null == u || u.focus()), null != s.variantGroupStoreListingId) {
-                let n = c.A.getProductByStoreListingId(s.variantGroupStoreListingId);
+              if (u !== document.activeElement && (null == u || u.focus()), null != i.variantGroupStoreListingId) {
+                let n = c.A.getProductByStoreListingId(i.variantGroupStoreListingId);
                 if (null != n) {
-                  var i;
+                  var s;
                   e = n;
-                  let r = null == (i = n.variants) ? true : i.findIndex(e => e.skuId === t);
+                  let r = null == (s = n.variants) ? true : s.findIndex(e => e.skuId === t);
                   null != r && r > false && (0, d.n)(n, r)
                 }
-              }(0, f.t)({
+              }(0, p.t)({
                 product: e,
                 category: a,
                 analyticsSource: r,
@@ -82,20 +81,20 @@ let b = "".concat("#").concat("itemSkuId", "="),
             }
           })({
             productSkuId: n,
-            analyticsLocations: b,
+            analyticsLocations: v,
             analyticsSource: a,
-            tab: E
+            tab: b
           })
         }, 250);
         return () => clearTimeout(e)
       }
-    }, [b, a, e, v, E])
+    }, [v, a, e, j, b])
   },
-  A = e => {
+  _ = e => {
     let t = r.useRef({}),
-      n = (0, s.bG)([a.A], () => a.A.useReducedMotion),
-      l = (0, s.bG)([c.A], () => c.A.isFetchingCategories),
-      [i, o] = r.useState(null),
+      n = (0, i.bG)([a.A], () => a.A.useReducedMotion),
+      l = (0, i.bG)([c.A], () => c.A.isFetchingCategories),
+      [s, o] = r.useState(null),
       u = r.useCallback((e, n) => {
         t.current[e] = n
       }, []),
@@ -111,8 +110,8 @@ let b = "".concat("#").concat("itemSkuId", "="),
         }, 100)
       }, [e, n, l, o]);
     return r.useEffect(() => {
-      l || null == i || (d(i), o(null))
-    }, [l, d, i, o]), {
+      l || null == s || (d(s), o(null))
+    }, [l, d, s, o]), {
       setCategoryRef: u,
       handleScrollToCategory: d
     }

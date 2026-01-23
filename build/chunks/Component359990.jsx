@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => P,
-  RegisterWebAuthnCredentialModal: () => R
+  RegisterWebAuthnCredentialModal: () => w
 }), require("./896048.js"), require("./457529.js"), require("./492834.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -67,7 +67,7 @@ function N(e, t) {
   }), e
 }
 
-function R(e) {
+function w(e) {
   let {
     transitionState: t,
     onClose: s,
@@ -75,7 +75,7 @@ function R(e) {
     challenge: c,
     showAccountSettingsButton: h = false,
     initialSlide: b = O.C.INIT
-  } = e, S = (0, u.GV)(), [T, C] = i.useState(A.intl.string(A.t["I/sJtJ"])), [N, R] = i.useState(false), [w, P] = i.useState(b), [D, x] = i.useState(""), [L, j] = i.useState(null), M = async () => {
+  } = e, S = (0, u.GV)(), [T, C] = i.useState(A.intl.string(A.t["I/sJtJ"])), [N, w] = i.useState(false), [R, P] = i.useState(b), [D, x] = i.useState(""), [L, j] = i.useState(null), M = async () => {
     let e;
     P(O.C.REGISTER);
     let t = m.isPlatformEmbedded && E.Ay.supportsFeature(v.BYE.WEBAUTHN) ? E.Ay.webAuthnRegister(c) : a.vt(JSON.parse(c)).then(e => JSON.stringify(e));
@@ -97,13 +97,13 @@ function R(e) {
       children: [(0, r.jsxs)(o.Heading, {
         id: S,
         variant: "heading-lg/semibold",
-        children: [w === O.C.INIT && A.intl.string(A.t.vrOCCk), w === O.C.REGISTER && A.intl.string(A.t.wePEBF), w === O.C.NAME && A.intl.string(A.t["cY/IOu"]), w === O.C.SUCCESS && d.A.parse(A.intl.string(A.t.FXC7ZC))]
+        children: [R === O.C.INIT && A.intl.string(A.t.vrOCCk), R === O.C.REGISTER && A.intl.string(A.t.wePEBF), R === O.C.NAME && A.intl.string(A.t["cY/IOu"]), R === O.C.SUCCESS && d.A.parse(A.intl.string(A.t.FXC7ZC))]
       }), (0, r.jsx)(o.s_y, {
         onClick: s,
         className: I.iT
       })]
     }), (0, r.jsxs)(o.tN_, {
-      activeSlide: w,
+      activeSlide: R,
       width: 440,
       children: [(0, r.jsxs)(o.q7S, {
         id: O.C.INIT,
@@ -183,7 +183,7 @@ function R(e) {
               }), (0, r.jsx)(o.ksK, {
                 value: T,
                 onChange: e => {
-                  C(e), R(0 === e.length)
+                  C(e), w(0 === e.length)
                 },
                 autoFocus: true,
                 minLength: 1
@@ -248,7 +248,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     onSelect: t,
     credential: i
@@ -304,7 +304,7 @@ function P() {
         ticket: t,
         challenge: n
       } = e;
-      (0, o.qfG)(e => (0, r.jsx)(R, N(T({}, e), {
+      (0, o.qfG)(e => (0, r.jsx)(w, N(T({}, e), {
         ticket: t,
         challenge: n
       })))
@@ -356,7 +356,7 @@ function x(e) {
         asset: o.FHP
       },
       onClick: t => {
-        (0, l.jA)(t, t => (0, r.jsx)(w, N(T({}, t), {
+        (0, l.jA)(t, t => (0, r.jsx)(R, N(T({}, t), {
           credential: e
         })))
       },

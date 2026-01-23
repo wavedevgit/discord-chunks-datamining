@@ -216,12 +216,12 @@ function N(e) {
     }, e.item.uniqueId))
   })
 }
-let R = e => ({
+let w = e => ({
     className: s()(e, h.s_),
     imgContainerClassName: h.nh,
     imgClassName: h.g2
   }),
-  w = e => ({
+  R = e => ({
     className: s()(e, h.g2)
   });
 
@@ -234,7 +234,7 @@ function P(e) {
     isSingleItem: s = false,
     footer: o,
     displayGridItem: l
-  } = e, c = t.item.type, u = y(g({}, t, "IMAGE" === c && R(t.className), "VIDEO" === c && w(t.className)), {
+  } = e, c = t.item.type, u = y(g({}, t, "IMAGE" === c && w(t.className), "VIDEO" === c && R(t.className)), {
     displayGridItem: l,
     mediaLayoutType: _.dG.MOSAIC,
     maxWidth: n,

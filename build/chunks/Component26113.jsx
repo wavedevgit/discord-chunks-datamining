@@ -66,13 +66,13 @@ let T = e => {
   let {
     channel: t,
     width: n
-  } = e, a = (0, o.bG)([c.A], () => c.A.getFilteredParticipants(t.id)), v = (0, g.A)(t.id), I = i.useMemo(() => (0, u.m1)(t, m.default, h.A), [t]), T = (0, d.A)(t), C = n * (E.i.height / E.i.width), N = 1156, R = 1050, [w, P] = i.useState(.65), [D, x] = i.useState({
+  } = e, a = (0, o.bG)([c.A], () => c.A.getFilteredParticipants(t.id)), v = (0, g.A)(t.id), I = i.useMemo(() => (0, u.m1)(t, m.default, h.A), [t]), T = (0, d.A)(t), C = n * (E.i.height / E.i.width), N = 1156, w = 1050, [R, P] = i.useState(.65), [D, x] = i.useState({
     x: 0,
     y: 0
   }), L = (0, l.w)(e => {
     let {
       contentRect: t
-    } = e, n = Math.max(t.width / E.i.width * 1.5, t.height / E.i.height * 1.5), r = t.width / 2 - N * n, i = t.height / 2 - R * n;
+    } = e, n = Math.max(t.width / E.i.width * 1.5, t.height / E.i.height * 1.5), r = t.width / 2 - N * n, i = t.height / 2 - w * n;
     P(n), x({
       x: r,
       y: i
@@ -99,7 +99,7 @@ let T = e => {
         children: (0, r.jsx)("div", {
           className: s()(y.VT, y.rh),
           style: {
-            transform: "translate(".concat(D.x, "px, ").concat(D.y, "px) scale(").concat(w, ")")
+            transform: "translate(".concat(D.x, "px, ").concat(D.y, "px) scale(").concat(R, ")")
           },
           children: (0, r.jsx)(E.A, {
             roomSeats: v.seats,

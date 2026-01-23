@@ -89,20 +89,20 @@ let N = i()((e, t, n) => {
       rtc_connection_id: _.A.getRTCConnectionId()
     })
   }, 300),
-  R = {
+  w = {
     isNotSupported: () => false,
     enable: e => Promise.resolve(true),
     trackToggleSelfMute(e) {},
     trackToggleSelfDeaf(e) {}
   },
   {
-    enable: w,
+    enable: R,
     isNotSupported: P,
     trackToggleSelfMute: D,
     trackToggleSelfDeaf: x
-  } = R = require("./401124.jsx"),
+  } = w = require("./401124.jsx"),
   L = {
-    enable: w,
+    enable: R,
     toggleSelfMute() {
       var e;
       let {

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Vv: () => I,
-  W$: () => w,
+  W$: () => R,
   Xq: () => D,
   Yi: () => b,
   Zr: () => x,
@@ -128,7 +128,7 @@ let b = (0, Chunk64700.createContext)(null),
       style: e.style,
       cellPadding: 0,
       className: null != (r = e.className) ? r : "react-aria-CalendarGrid"
-    }, "function" != typeof e.children ? e.children : y.createElement(y.Fragment, null, y.createElement(N, null, e => y.createElement(w, null, e)), y.createElement(D, null, e.children))))
+    }, "function" != typeof e.children ? e.children : y.createElement(y.Fragment, null, y.createElement(N, null, e => y.createElement(R, null, e)), y.createElement(D, null, e.children))))
   });
 
 function C(e, t) {
@@ -153,7 +153,7 @@ function C(e, t) {
 }
 let N = (0, Chunk64700.forwardRef)(C);
 
-function R(e, t) {
+function w(e, t) {
   let {
     children: n,
     style: r,
@@ -168,7 +168,7 @@ function R(e, t) {
     className: i || "react-aria-CalendarHeaderCell"
   }, n)
 }
-let w = (0, Chunk64700.forwardRef)(R);
+let R = (0, Chunk64700.forwardRef)(w);
 
 function P(e, t) {
   let {
@@ -231,9 +231,9 @@ let D = (0, Chunk64700.forwardRef)(P),
         isFocusVisible: N
       } = (0, _.o)();
     N && (N = O.isFocused);
-    let R = false,
-      w = false;
-    "highlightedRange" in o && o.highlightedRange && (R = (0, m.ro)(e, o.highlightedRange.start), w = (0, m.ro)(e, o.highlightedRange.end));
+    let w = false,
+      R = false;
+    "highlightedRange" in o && o.highlightedRange && (w = (0, m.ro)(e, o.highlightedRange.start), R = (0, m.ro)(e, o.highlightedRange.end));
     let P = (0, i.Sl)({
         ...t,
         defaultChildren: O.formattedDate,
@@ -243,8 +243,8 @@ let D = (0, Chunk64700.forwardRef)(P),
           isHovered: T,
           isOutsideMonth: u,
           isFocusVisible: N,
-          isSelectionStart: R,
-          isSelectionEnd: w,
+          isSelectionStart: w,
+          isSelectionEnd: R,
           isToday: d,
           ...O
         }
@@ -259,8 +259,8 @@ let D = (0, Chunk64700.forwardRef)(P),
         "data-outside-visible-range": O.isOutsideVisibleRange || true,
         "data-outside-month": u || true,
         "data-selected": O.isSelected || true,
-        "data-selection-start": R || true,
-        "data-selection-end": w || true,
+        "data-selection-start": w || true,
+        "data-selection-end": R || true,
         "data-invalid": O.isInvalid || true,
         "data-today": d || true
       },

@@ -2,7 +2,7 @@
 /** chunk id: 895944, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js");
 var r, Chunk410530 = require("./410530.js"),
   Chunk892227 = require("./892227.js"),
@@ -76,7 +76,7 @@ function C() {
 function N() {
   v.clear()
 }
-class R extends(r = Chunk311907.Ay.PersistedStore) {
+class w extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (this.waitFor(p.A, f.default), this.syncWith([p.A], () => {}), (null == e ? true : e.cache) != null) {
       let t = new Map(e.cache.value);
@@ -166,8 +166,8 @@ class R extends(r = Chunk311907.Ay.PersistedStore) {
     v.forceExpire()
   }
 }
-E(R, "displayName", "ProgramRewardsStore"), E(R, "persistKey", "ProgramRewardsStore");
-let w = new R(Chunk73153.h, {
+E(w, "displayName", "ProgramRewardsStore"), E(w, "persistKey", "ProgramRewardsStore");
+let R = new w(Chunk73153.h, {
   LOGOUT: N,
   PROGRAM_REWARDS_FETCH: S,
   PROGRAM_REWARDS_FETCH_SUCCESS: T,

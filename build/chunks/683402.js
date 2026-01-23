@@ -26,8 +26,8 @@ var r, Chunk549412 = require("./549412.js"),
   T = 8,
   C = 9,
   N = 15,
-  R = 8,
-  w = 286,
+  w = 8,
+  R = 286,
   P = 30,
   D = 19,
   x = 573,
@@ -46,18 +46,18 @@ var r, Chunk549412 = require("./549412.js"),
   K = 1,
   z = 2,
   q = 3,
-  X = 4,
-  Z = 3;
+  Z = 4,
+  X = 3;
 
 function Q(e, t) {
   return e.msg = l[t], t
 }
 
-function $(e) {
+function J(e) {
   return (e << 1) - 9 * (e > 4)
 }
 
-function J(e) {
+function $(e) {
   for (var t = e.length; --t >= 0;) e[t] = 0
 }
 
@@ -140,7 +140,7 @@ function eo(e, t) {
     else r = a._tr_tally(e, 0, e.window[e.strstart]), e.lookahead--, e.strstart++;
     if (r && (et(e, false), 0 === e.strm.avail_out)) return K
   }
-  return (e.insert = e.strstart < j - 1 ? e.strstart : j - 1, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? q : X : e.last_lit && (et(e, false), 0 === e.strm.avail_out) ? K : z
+  return (e.insert = e.strstart < j - 1 ? e.strstart : j - 1, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? q : Z : e.last_lit && (et(e, false), 0 === e.strm.avail_out) ? K : z
 }
 
 function el(e, t) {
@@ -157,7 +157,7 @@ function el(e, t) {
       if ((r = a._tr_tally(e, 0, e.window[e.strstart - 1])) && et(e, false), e.strstart++, e.lookahead--, 0 === e.strm.avail_out) return K
     } else e.match_available = 1, e.strstart++, e.lookahead--
   }
-  return (e.match_available && (r = a._tr_tally(e, 0, e.window[e.strstart - 1]), e.match_available = 0), e.insert = e.strstart < j - 1 ? e.strstart : j - 1, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? q : X : e.last_lit && (et(e, false), 0 === e.strm.avail_out) ? K : z
+  return (e.match_available && (r = a._tr_tally(e, 0, e.window[e.strstart - 1]), e.match_available = 0), e.insert = e.strstart < j - 1 ? e.strstart : j - 1, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? q : Z : e.last_lit && (et(e, false), 0 === e.strm.avail_out) ? K : z
 }
 
 function ec(e, t) {
@@ -173,7 +173,7 @@ function ec(e, t) {
     }
     if (e.match_length >= j ? (n = a._tr_tally(e, 1, e.match_length - j), e.lookahead -= e.match_length, e.strstart += e.match_length, e.match_length = 0) : (n = a._tr_tally(e, 0, e.window[e.strstart]), e.lookahead--, e.strstart++), n && (et(e, false), 0 === e.strm.avail_out)) return K
   }
-  return (e.insert = 0, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? q : X : e.last_lit && (et(e, false), 0 === e.strm.avail_out) ? K : z
+  return (e.insert = 0, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? q : Z : e.last_lit && (et(e, false), 0 === e.strm.avail_out) ? K : z
 }
 
 function eu(e, t) {
@@ -184,7 +184,7 @@ function eu(e, t) {
     }
     if (e.match_length = 0, n = a._tr_tally(e, 0, e.window[e.strstart]), e.lookahead--, e.strstart++, n && (et(e, false), 0 === e.strm.avail_out)) return K
   }
-  return (e.insert = 0, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? q : X : e.last_lit && (et(e, false), 0 === e.strm.avail_out) ? K : z
+  return (e.insert = 0, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? q : Z : e.last_lit && (et(e, false), 0 === e.strm.avail_out) ? K : z
 }
 
 function ed(e, t, n, r, i) {
@@ -192,11 +192,11 @@ function ed(e, t, n, r, i) {
 }
 
 function ef(e) {
-  e.window_size = 2 * e.w_size, J(e.head), e.max_lazy_match = r[e.level].max_lazy, e.good_match = r[e.level].good_length, e.nice_match = r[e.level].nice_length, e.max_chain_length = r[e.level].max_chain, e.strstart = 0, e.block_start = 0, e.lookahead = 0, e.insert = 0, e.match_length = e.prev_length = j - 1, e.match_available = 0, e.ins_h = 0
+  e.window_size = 2 * e.w_size, $(e.head), e.max_lazy_match = r[e.level].max_lazy, e.good_match = r[e.level].good_length, e.nice_match = r[e.level].nice_length, e.max_chain_length = r[e.level].max_chain, e.strstart = 0, e.block_start = 0, e.lookahead = 0, e.insert = 0, e.match_length = e.prev_length = j - 1, e.match_available = 0, e.ins_h = 0
 }
 
 function ep() {
-  this.strm = null, this.status = 0, this.pending_buf = null, this.pending_buf_size = 0, this.pending_out = 0, this.pending = 0, this.wrap = 0, this.gzhead = null, this.gzindex = 0, this.method = T, this.last_flush = false, this.w_size = 0, this.w_bits = 0, this.w_mask = 0, this.window = null, this.window_size = 0, this.prev = null, this.head = null, this.ins_h = 0, this.hash_size = 0, this.hash_bits = 0, this.hash_mask = 0, this.hash_shift = 0, this.block_start = 0, this.match_length = 0, this.prev_match = 0, this.match_available = 0, this.strstart = 0, this.match_start = 0, this.lookahead = 0, this.prev_length = 0, this.max_chain_length = 0, this.max_lazy_match = 0, this.level = 0, this.strategy = 0, this.good_match = 0, this.nice_match = 0, this.dyn_ltree = new i.Buf16(2 * x), this.dyn_dtree = new i.Buf16((2 * P + 1) * 2), this.bl_tree = new i.Buf16((2 * D + 1) * 2), J(this.dyn_ltree), J(this.dyn_dtree), J(this.bl_tree), this.l_desc = null, this.d_desc = null, this.bl_desc = null, this.bl_count = new i.Buf16(L + 1), this.heap = new i.Buf16(2 * w + 1), J(this.heap), this.heap_len = 0, this.heap_max = 0, this.depth = new i.Buf16(2 * w + 1), J(this.depth), this.l_buf = 0, this.lit_bufsize = 0, this.last_lit = 0, this.d_buf = 0, this.opt_len = 0, this.static_len = 0, this.matches = 0, this.insert = 0, this.bi_buf = 0, this.bi_valid = 0
+  this.strm = null, this.status = 0, this.pending_buf = null, this.pending_buf_size = 0, this.pending_out = 0, this.pending = 0, this.wrap = 0, this.gzhead = null, this.gzindex = 0, this.method = T, this.last_flush = false, this.w_size = 0, this.w_bits = 0, this.w_mask = 0, this.window = null, this.window_size = 0, this.prev = null, this.head = null, this.ins_h = 0, this.hash_size = 0, this.hash_bits = 0, this.hash_mask = 0, this.hash_shift = 0, this.block_start = 0, this.match_length = 0, this.prev_match = 0, this.match_available = 0, this.strstart = 0, this.match_start = 0, this.lookahead = 0, this.prev_length = 0, this.max_chain_length = 0, this.max_lazy_match = 0, this.level = 0, this.strategy = 0, this.good_match = 0, this.nice_match = 0, this.dyn_ltree = new i.Buf16(2 * x), this.dyn_dtree = new i.Buf16((2 * P + 1) * 2), this.bl_tree = new i.Buf16((2 * D + 1) * 2), $(this.dyn_ltree), $(this.dyn_dtree), $(this.bl_tree), this.l_desc = null, this.d_desc = null, this.bl_desc = null, this.bl_count = new i.Buf16(L + 1), this.heap = new i.Buf16(2 * R + 1), $(this.heap), this.heap_len = 0, this.heap_max = 0, this.depth = new i.Buf16(2 * R + 1), $(this.depth), this.l_buf = 0, this.lit_bufsize = 0, this.last_lit = 0, this.d_buf = 0, this.opt_len = 0, this.static_len = 0, this.matches = 0, this.insert = 0, this.bi_buf = 0, this.bi_valid = 0
 }
 
 function e_(e) {
@@ -226,7 +226,7 @@ function eE(e, t) {
   if (!e || !e.state || t > p || t < 0) return e ? Q(e, m) : m;
   if (i = e.state, !e.output || !e.input && 0 !== e.avail_in || i.status === W && t !== f) return Q(e, 0 === e.avail_out ? E : m);
   if (i.strm = e, n = i.last_flush, i.last_flush = t, i.status === G)
-    if (2 === i.wrap) e.adler = 0, en(i, 31), en(i, 139), en(i, 8), i.gzhead ? (en(i, +!!i.gzhead.text + 2 * !!i.gzhead.hcrc + 4 * !!i.gzhead.extra + 8 * !!i.gzhead.name + 16 * !!i.gzhead.comment), en(i, 255 & i.gzhead.time), en(i, i.gzhead.time >> 8 & 255), en(i, i.gzhead.time >> 16 & 255), en(i, i.gzhead.time >> 24 & 255), en(i, 9 === i.level ? 2 : 4 * (i.strategy >= O || i.level < 2)), en(i, 255 & i.gzhead.os), i.gzhead.extra && i.gzhead.extra.length && (en(i, 255 & i.gzhead.extra.length), en(i, i.gzhead.extra.length >> 8 & 255)), i.gzhead.hcrc && (e.adler = o(e.adler, i.pending_buf, i.pending, 0)), i.gzindex = 0, i.status = V) : (en(i, 0), en(i, 0), en(i, 0), en(i, 0), en(i, 0), en(i, 9 === i.level ? 2 : 4 * (i.strategy >= O || i.level < 2)), en(i, Z), i.status = Y);
+    if (2 === i.wrap) e.adler = 0, en(i, 31), en(i, 139), en(i, 8), i.gzhead ? (en(i, +!!i.gzhead.text + 2 * !!i.gzhead.hcrc + 4 * !!i.gzhead.extra + 8 * !!i.gzhead.name + 16 * !!i.gzhead.comment), en(i, 255 & i.gzhead.time), en(i, i.gzhead.time >> 8 & 255), en(i, i.gzhead.time >> 16 & 255), en(i, i.gzhead.time >> 24 & 255), en(i, 9 === i.level ? 2 : 4 * (i.strategy >= O || i.level < 2)), en(i, 255 & i.gzhead.os), i.gzhead.extra && i.gzhead.extra.length && (en(i, 255 & i.gzhead.extra.length), en(i, i.gzhead.extra.length >> 8 & 255)), i.gzhead.hcrc && (e.adler = o(e.adler, i.pending_buf, i.pending, 0)), i.gzindex = 0, i.status = V) : (en(i, 0), en(i, 0), en(i, 0), en(i, 0), en(i, 0), en(i, 9 === i.level ? 2 : 4 * (i.strategy >= O || i.level < 2)), en(i, X), i.status = Y);
     else {
       var n, i, s, l, g = T + (i.w_bits - 8 << 4) << 8,
         y = false;
@@ -262,12 +262,12 @@ function eE(e, t) {
     } else i.status = H;
   if (i.status === H && (i.gzhead.hcrc ? (i.pending + 2 > i.pending_buf_size && ee(e), i.pending + 2 <= i.pending_buf_size && (en(i, 255 & e.adler), en(i, e.adler >> 8 & 255), e.adler = 0, i.status = Y)) : i.status = Y), 0 !== i.pending) {
     if (ee(e), 0 === e.avail_out) return i.last_flush = false, _
-  } else if (0 === e.avail_in && $(t) <= $(n) && t !== f) return Q(e, E);
+  } else if (0 === e.avail_in && J(t) <= J(n) && t !== f) return Q(e, E);
   if (i.status === W && 0 !== e.avail_in) return Q(e, E);
   if (0 !== e.avail_in || 0 !== i.lookahead || t !== c && i.status !== W) {
     var b = i.strategy === O ? eu(i, t) : i.strategy === v ? ec(i, t) : r[i.level].func(i, t);
-    if ((b === q || b === X) && (i.status = W), b === K || b === q) return 0 === e.avail_out && (i.last_flush = false), _;
-    if (b === z && (t === u ? a._tr_align(i) : t !== p && (a._tr_stored_block(i, 0, 0, false), t === d && (J(i.head), 0 === i.lookahead && (i.strstart = 0, i.block_start = 0, i.insert = 0))), ee(e), 0 === e.avail_out)) return i.last_flush = false, _
+    if ((b === q || b === Z) && (i.status = W), b === K || b === q) return 0 === e.avail_out && (i.last_flush = false), _;
+    if (b === z && (t === u ? a._tr_align(i) : t !== p && (a._tr_stored_block(i, 0, 0, false), t === d && ($(i.head), 0 === i.lookahead && (i.strstart = 0, i.block_start = 0, i.insert = 0))), ee(e), 0 === e.avail_out)) return i.last_flush = false, _
   }
   return t !== f ? _ : i.wrap <= 0 ? h : (2 === i.wrap ? (en(i, 255 & e.adler), en(i, e.adler >> 8 & 255), en(i, e.adler >> 16 & 255), en(i, e.adler >> 24 & 255), en(i, 255 & e.total_in), en(i, e.total_in >> 8 & 255), en(i, e.total_in >> 16 & 255), en(i, e.total_in >> 24 & 255)) : (er(i, e.adler >>> 16), er(i, 65535 & e.adler)), ee(e), i.wrap > 0 && (i.wrap = -i.wrap), 0 !== i.pending ? _ : h)
 }
@@ -280,7 +280,7 @@ function ey(e) {
 function eb(e, t) {
   var n, r, a, o, l, c, u, d, f = t.length;
   if (!e || !e.state || 2 === (o = (n = e.state).wrap) || 1 === o && n.status !== G || n.lookahead) return m;
-  for (1 === o && (e.adler = s(e.adler, t, f, 0)), n.wrap = 0, f >= n.w_size && (0 === o && (J(n.head), n.strstart = 0, n.block_start = 0, n.insert = 0), d = new i.Buf8(n.w_size), i.arraySet(d, t, f - n.w_size, n.w_size, 0), t = d, f = n.w_size), l = e.avail_in, c = e.next_in, u = e.input, e.avail_in = f, e.next_in = 0, e.input = t, es(n); n.lookahead >= j;) {
+  for (1 === o && (e.adler = s(e.adler, t, f, 0)), n.wrap = 0, f >= n.w_size && (0 === o && ($(n.head), n.strstart = 0, n.block_start = 0, n.insert = 0), d = new i.Buf8(n.w_size), i.arraySet(d, t, f - n.w_size, n.w_size, 0), t = d, f = n.w_size), l = e.avail_in, c = e.next_in, u = e.input, e.avail_in = f, e.next_in = 0, e.input = t, es(n); n.lookahead >= j;) {
     r = n.strstart, a = n.lookahead - (j - 1);
     do n.ins_h = (n.ins_h << n.hash_shift ^ n.window[r + j - 1]) & n.hash_mask, n.prev[r & n.w_mask] = n.head[n.ins_h], n.head[n.ins_h] = r, r++; while (--a);
     n.strstart = r, n.lookahead = j - 1, es(n)
@@ -298,7 +298,7 @@ r = [new ed(0, 0, 0, 0, function(e, t) {
     var r = e.block_start + n;
     if ((0 === e.strstart || e.strstart >= r) && (e.lookahead = e.strstart - r, e.strstart = r, et(e, false), 0 === e.strm.avail_out) || e.strstart - e.block_start >= e.w_size - k && (et(e, false), 0 === e.strm.avail_out)) return K
   }
-  return (e.insert = 0, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? q : X : (e.strstart > e.block_start && (et(e, false), e.strm.avail_out), K)
+  return (e.insert = 0, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? q : Z : (e.strstart > e.block_start && (et(e, false), e.strm.avail_out), K)
 }), new ed(4, 4, 8, 4, eo), new ed(4, 5, 16, 8, eo), new ed(4, 6, 32, 32, eo), new ed(4, 4, 16, 16, el), new ed(8, 16, 32, 32, el), new ed(8, 16, 128, 128, el), new ed(8, 32, 128, 256, el), new ed(32, 128, 258, 1024, el), new ed(32, 258, 258, 4096, el)], exports.deflateInit = function(e, t) {
-  return eg(e, t, T, N, R, I)
+  return eg(e, t, T, N, w, I)
 }, exports.deflateInit2 = eg, exports.deflateReset = eh, exports.deflateResetKeep = e_, exports.deflateSetHeader = em, exports.deflate = eE, exports.deflateEnd = ey, exports.deflateSetDictionary = eb, exports.deflateInfo = "pako deflate (from Nodeca project)"

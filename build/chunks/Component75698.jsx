@@ -2,8 +2,8 @@
 /** chunk id: 75698, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => Z,
-  d7: () => X,
+  Ay: () => X,
+  d7: () => Z,
   u: () => W
 }), require("./896048.js"), require("./321073.js"), require("./492834.js");
 var Chunk627968 = require("./627968.js"),
@@ -143,15 +143,15 @@ function Y(e) {
     account: n,
     theme: a,
     locale: s
-  } = e, [l, p] = i.useState(n.friendSync), [h, m] = i.useState(n.visibility), [v, I] = i.useState(n.metadataVisibility), [S, T] = i.useState(n.showActivity), [C, R] = i.useState(null), [D, G] = i.useState(null), [F, Y] = i.useState(false), [W, K] = i.useState([]), z = (0, E.ML)(n.type), q = g.A.get(z);
+  } = e, [l, p] = i.useState(n.friendSync), [h, m] = i.useState(n.visibility), [v, I] = i.useState(n.metadataVisibility), [S, T] = i.useState(n.showActivity), [C, w] = i.useState(null), [D, G] = i.useState(null), [F, Y] = i.useState(false), [W, K] = i.useState([]), z = (0, E.ML)(n.type), q = g.A.get(z);
   i.useEffect(() => {
     p(n.friendSync), m(n.visibility), I(n.metadataVisibility), T(n.showActivity)
   }, [n]);
-  let X = {
+  let Z = {
       inProgressVisibility: C,
       inProgressMetadataVisibility: D
     },
-    Z = i.useRef(X);
+    X = i.useRef(Z);
 
   function Q(e) {
     var t;
@@ -211,11 +211,11 @@ function Y(e) {
     })
   }
 
-  function $(e) {
+  function J(e) {
     return e.twoWayLink ? null : e.type === j.fg2.XBOX ? (0, r.jsx)(L._, {}) : e.type === j.fg2.PLAYSTATION ? (0, r.jsx)(x.j, {}) : null
   }
 
-  function J(e) {
+  function $(e) {
     var t;
     let n = null != (t = e.metadata) ? t : {},
       i = null,
@@ -360,7 +360,7 @@ function Y(e) {
         variant: "primary"
       }]
     }, i), {
-      children: (0, w.A)(n) && (0, r.jsx)(P.A, {
+      children: (0, R.A)(n) && (0, r.jsx)(P.A, {
         children: k.intl.format(k.t.COW3Xn, {
           platformName: e.name
         })
@@ -373,7 +373,7 @@ function Y(e) {
       verified: t
     } = n, r = +!!e;
     if (e && !t) {
-      R(r), (0, b.A)({
+      w(r), (0, b.A)({
         platformType: n.type,
         location: "User Settings"
       });
@@ -404,17 +404,17 @@ function Y(e) {
     T(e), _.A.setShowActivity(n.type, n.id, e)
   }
   return i.useEffect(() => {
-    Z.current = X
+    X.current = Z
   }), i.useEffect(() => {
     if (false === n.verified) return;
     let {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
-    } = Z.current;
-    null != e && (m(e), _.A.setVisibility(n.type, n.id, e), R(null)), null != t && (I(t), _.A.setMetadataVisibility(n.type, n.id, t), G(null))
+    } = X.current;
+    null != e && (m(e), _.A.setVisibility(n.type, n.id, e), w(null)), null != t && (I(t), _.A.setMetadataVisibility(n.type, n.id, t), G(null))
   }, [n]), (0, r.jsxs)("div", {
     className: U.FI,
-    children: [Q(n), $(n), J(n), ee(q), en(), et()]
+    children: [Q(n), J(n), $(n), ee(q), en(), et()]
   })
 }
 
@@ -509,12 +509,12 @@ function q(e) {
   })
 }
 
-function X() {
+function Z() {
   let e = (0, l.bG)([T.A], () => T.A.hidePersonalInformation),
     t = (0, l.bG)([I.A], () => I.A.isFetching()),
     n = (0, l.bG)([I.A], () => I.A.getAccounts()),
     i = (0, m.Ay)(),
-    a = (0, l.bG)([R.default], () => R.default.locale);
+    a = (0, l.bG)([w.default], () => w.default.locale);
   return e ? null : (0, r.jsx)(q, {
     fetching: t,
     accounts: n,
@@ -522,11 +522,11 @@ function X() {
     locale: a
   })
 }
-let Z = () => {
+let X = () => {
   let e = (0, l.bG)([I.A], () => I.A.isFetching()),
     t = (0, l.bG)([I.A], () => I.A.getAccounts()),
     n = (0, m.Ay)(),
-    a = (0, l.bG)([R.default], () => R.default.locale);
+    a = (0, l.bG)([w.default], () => w.default.locale);
   return i.useEffect(() => {
     _.A.fetch()
   }, []), (0, r.jsxs)(D.A, {

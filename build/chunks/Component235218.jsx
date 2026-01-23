@@ -2,7 +2,7 @@
 /** chunk id: 235218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -83,16 +83,16 @@ function N(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let R = 20;
+let w = 20;
 
-function w(e) {
+function R(e) {
   let {
     profileOwner: t,
     additionalUserIds: n,
     hideButtonIcon: A = false,
     showPrice: S = false,
     showIcons: N = false,
-    source: w = p.uS.WISHLIST,
+    source: R = p.uS.WISHLIST,
     analyticsLocations: P
   } = e, D = C(e, ["profileOwner", "additionalUserIds", "hideButtonIcon", "showPrice", "showIcons", "source", "analyticsLocations"]), {
     item: x,
@@ -136,25 +136,25 @@ function w(e) {
         })
       }
     }
-  }, [L, B, S, M, A, U, F, t, n, j, V]), z = i.useCallback(() => N ? w === p.uS.WISHLIST ? (0, r.jsx)("div", {
+  }, [L, B, S, M, A, U, F, t, n, j, V]), z = i.useCallback(() => N ? R === p.uS.WISHLIST ? (0, r.jsx)("div", {
     className: v.Fx,
     children: (0, r.jsx)(s.C3E, {
       size: "custom",
-      width: R,
-      height: R,
+      width: w,
+      height: w,
       color: "currentColor",
       colorClass: v.Be
     })
-  }) : w === p.uS.POPULAR ? (0, r.jsx)("div", {
+  }) : R === p.uS.POPULAR ? (0, r.jsx)("div", {
     className: v.Fx,
     children: (0, r.jsx)(s.Y3C, {
       size: "custom",
-      width: R,
-      height: R,
+      width: w,
+      height: w,
       color: "currentColor",
       colorClass: v.rY
     })
-  }) : null : null, [N, w]), q = i.useCallback(() => (0, r.jsx)(E.e, {
+  }) : null : null, [N, R]), q = i.useCallback(() => (0, r.jsx)(E.e, {
     shape: "custom",
     containerClassName: v.Nr,
     backgroundImageClassName: v.GC,
@@ -162,7 +162,7 @@ function w(e) {
     sku: M
   }), [M]);
   return (0, r.jsx)(d.A, T(I({}, D), {
-    source: w,
+    source: R,
     cardRef: G,
     accessibleLabel: H,
     onCardClick: K,

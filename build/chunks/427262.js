@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $3: () => m,
-  Ay: () => R,
+  Ay: () => w,
   G2: () => A,
   Gn: () => N,
   MU: () => O,
@@ -163,7 +163,7 @@ function N() {
   let e = a.default.getCurrentUser();
   return null != e && e.isStaff()
 }
-let R = {
+let w = {
   getName: g,
   useName: E,
   isNameConcealed: e => 2 === e.length && e.endsWith("…"),

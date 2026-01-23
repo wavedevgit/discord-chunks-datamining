@@ -118,17 +118,17 @@ function N() {
   })
 }
 
-function R() {
+function w() {
   null != S && (S.destroy(), S = null)
 }
 
-function w(e) {
+function R(e) {
   var t;
   h = null != (t = e.section) ? t : _
 }
 
 function P() {
-  R()
+  w()
 }
 
 function D(e) {
@@ -224,7 +224,7 @@ function G(e) {
   let {
     path: t
   } = e, n = l.A.getMediaEngine();
-  if (R(), !n.supports(d.O5.CONNECTION_REPLAY) || 0 === t.length) return;
+  if (w(), !n.supports(d.O5.CONNECTION_REPLAY) || 0 === t.length) return;
   let r = n.createReplayConnection(d.x.DEFAULT, t);
   null != r && (S = r, r.on(a.yq.Video, (e, t, n, i, a) => {
     s.h.dispatch({
@@ -303,7 +303,7 @@ class H extends(r = Chunk311907.Ay.Store) {
 }
 f(H, "displayName", "RTCDebugStore");
 let Y = new H(Chunk73153.h, {
-  RTC_DEBUG_MODAL_OPEN: w,
+  RTC_DEBUG_MODAL_OPEN: R,
   RTC_DEBUG_MODAL_CLOSE: P,
   RTC_DEBUG_MODAL_SET_SECTION: L,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,

@@ -63,7 +63,7 @@ function q(e, t, n) {
   }) : e[t] = n, e
 }
 
-function X(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -76,7 +76,7 @@ function X(e) {
   return e
 }
 
-function Z(e, t) {
+function X(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -88,12 +88,12 @@ function Z(e, t) {
 }
 
 function Q(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : X(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let $ = 32,
-  J = 12,
+let J = 32,
+  $ = 12,
   ee = () => ({
     page: null != (0, l.bG)([L.A], () => L.A.getGuildId()) ? H.liQ.GUILD_CHANNEL : H.liQ.DM_CHANNEL,
     section: H.JJy.EMOJI_UPSELL_POPOUT
@@ -149,7 +149,7 @@ let $ = 32,
       id: a,
       icon: o,
       name: l
-    } = t, c = $, d = k.Ay.getGuildIconURL({
+    } = t, c = J, d = k.Ay.getGuildIconURL({
       id: a,
       icon: o,
       size: c,
@@ -283,9 +283,9 @@ let $ = 32,
       guildEmoji: x,
       demoMode: k = false,
       nonce: U
-    } = e, F = (0, l.bG)([j.default], () => j.default.getCurrentUser()), q = (0, l.bG)([L.A], () => L.A.getGuildId()), X = G.Ay.isPremium(F), Z = null != q && (q === (null == v ? true : v.id) || q === (null == S ? true : S.id)), Q = null != S, $ = null != (t = null == v ? true : v.isDiscoverable()) && t;
-    k && (X = true, $ = true, Q = false, Z = false);
-    let J = ee(),
+    } = e, F = (0, l.bG)([j.default], () => j.default.getCurrentUser()), q = (0, l.bG)([L.A], () => L.A.getGuildId()), Z = G.Ay.isPremium(F), X = null != q && (q === (null == v ? true : v.id) || q === (null == S ? true : S.id)), Q = null != S, J = null != (t = null == v ? true : v.isDiscoverable()) && t;
+    k && (Z = true, J = true, Q = false, X = false);
+    let $ = ee(),
       {
         isRoleSubscriptionEmoji: et,
         isUnusableRoleSubscriptionEmoji: er,
@@ -318,22 +318,22 @@ let $ = 32,
       ec = (0, V.O)({
         sourceType: d,
         expressionSourceApplication: b,
-        isPremium: X,
+        isPremium: Z,
         hasJoinedEmojiSourceGuild: Q,
         isRoleSubscriptionEmoji: et,
         isUnusableRoleSubscriptionEmoji: er,
         userIsRoleSubscriber: ei,
-        emojiComesFromCurrentGuild: Z,
-        isDiscoverable: $,
+        emojiComesFromCurrentGuild: X,
+        isDiscoverable: J,
         shouldHideRoleSubscriptionCTA: es,
         onOpenPremiumSettings: () => {
           T(), M.default.track(H.HAw.PREMIUM_PROMOTION_OPENED, {
-            location_page: J.page,
-            location_section: J.section
-          }), (0, w.Z)()
+            location_page: $.page,
+            location_section: $.section
+          }), (0, R.Z)()
         }
       }),
-      eu = Q && er && !es && (X && et || !X),
+      eu = Q && er && !es && (Z && et || !Z),
       ed = ec.emojiDescription,
       ef = (0, I.i)({
         emojiId: c.emojiId,
@@ -357,7 +357,7 @@ let $ = 32,
           T(), (null == S ? true : S.id) != null && _.A.transitionToGuildSync(S.id, {
             sourceLocationStack: [m.A.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL]
           }, Y.VV.ROLE_SUBSCRIPTIONS)
-        }, n = !Q && $, i = () => e_ ? (0, r.jsx)(P.A, {
+        }, n = !Q && J, i = () => e_ ? (0, r.jsx)(P.A, {
           className: z.lI,
           subscriptionTier: W.pe.TIER_2,
           size: f.$n.Sizes.SMALL,
@@ -367,7 +367,7 @@ let $ = 32,
           },
           onSubscribeModalClose: t => t ? e() : T(),
           postSuccessGuild: n && null != v ? v : true,
-          premiumModalAnalyticsLocation: J
+          premiumModalAnalyticsLocation: $
         }) : ep ? (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: z.lI,
@@ -402,7 +402,7 @@ let $ = 32,
                 children: ed
               })]
             })]
-          }), i(), eu && (0, r.jsx)(R.A, {
+          }), i(), eu && (0, r.jsx)(w.A, {
             text: ei ? K.intl.string(K.t.yma8Vp) : K.intl.string(K.t.nN2DIo),
             size: "sm",
             fullWidth: true,
@@ -413,7 +413,7 @@ let $ = 32,
       [em, eg] = i.useState(false),
       eE = () => {
         var e, t;
-        let n = null != v && !Q && $ && (null != (e = null == v || null == (t = v.emojis) ? true : t.length) ? e : 0) > 1,
+        let n = null != v && !Q && J && (null != (e = null == v || null == (t = v.emojis) ? true : t.length) ? e : 0) > 1,
           i = () => {
             n && (null == D || D(), em || k || M.default.track(H.HAw.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
           },
@@ -462,7 +462,7 @@ let $ = 32,
           })]
         })
       },
-      ey = $ || Q && !Z || null != v;
+      ey = J || Q && !X || null != v;
     return (0, r.jsxs)(B.Uq, {
       className: z.Bm,
       children: [eh(), ey && eE()]
@@ -477,7 +477,7 @@ let $ = 32,
       popoutData: s,
       onClose: o,
       isDisplayingButtonInTopSection: l
-    } = e, c = (null != (t = null == i ? true : i.emojis) ? t : []).slice(0, J + 1).filter(e => e.id !== n).slice(0, J), u = () => a ? null : c.map(e => (0, r.jsx)(d.m, Q(X({
+    } = e, c = (null != (t = null == i ? true : i.emojis) ? t : []).slice(0, $ + 1).filter(e => e.id !== n).slice(0, $), u = () => a ? null : c.map(e => (0, r.jsx)(d.m, Q(Z({
       text: e.require_colons ? ":".concat(e.name, ":") : e.name
     }, B.Uk), {
       children: (0, r.jsx)(h.A, {

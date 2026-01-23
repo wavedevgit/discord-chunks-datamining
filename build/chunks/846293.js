@@ -176,7 +176,7 @@ function em(e) {
         if (y) {
           (0, M.av)(r instanceof k.YB ? r : (0, k.createChannelRecord)(r)), (0, j.pX)(b);
           return
-        }(null == i ? true : i.muteOnJoinVoiceChannel) && Q.A.setSelfMute(f.x.DEFAULT, true), n.selectVoiceChannel(m), c === ei.yV.STREAM && null != l && J.Nl({
+        }(null == i ? true : i.muteOnJoinVoiceChannel) && Q.A.setSelfMute(f.x.DEFAULT, true), n.selectVoiceChannel(m), c === ei.yV.STREAM && null != l && $.Nl({
           streamType: er.U4.GUILD,
           ownerId: l,
           guildId: t,
@@ -258,7 +258,7 @@ let ey = function(e, t) {
       guild_id: t,
       channel_id: n
     } = e;
-    (0, N.Fd)(e) && null != n ? ey(n) : await $.A.transitionToGuildSync(t)
+    (0, N.Fd)(e) && null != n ? ey(n) : await J.A.transitionToGuildSync(t)
   };
 
 function eO(e, t) {
@@ -403,7 +403,7 @@ let eA = {
     try {
       let {
         body: t
-      } = await X.A.get({
+      } = await Z.A.get({
         url: ee.Rsh.INVITE_FRIEND_MEMBERS(e),
         trackedActionData: {
           event: a.NetworkActionNames.INVITE_FRIEND_MEMBERS_FETCH,
@@ -440,7 +440,7 @@ let eA = {
       code: t,
       channel: n
     } = e;
-    return X.A.delete({
+    return Z.A.delete({
       url: ee.Rsh.INVITE(t),
       oldFormErrors: true,
       trackedActionData: {
@@ -540,9 +540,9 @@ let eA = {
       channel: a,
       guild: l
     } = e;
-    if (null != l && (null == (i = l.features) ? true : i.includes(ee.GuildFeatures.HUB))) return void w.A.onOpenHubInvite(e);
+    if (null != l && (null == (i = l.features) ? true : i.includes(ee.GuildFeatures.HUB))) return void R.A.onOpenHubInvite(e);
     let c = (0, o.Lt)(null != (r = e.flags) ? r : 0, s.Q.IS_APPLICATION_BYPASS);
-    if (null != l && !c && e.new_member && (0, R.h)(l)) return void(0, R.W)(l.id);
+    if (null != l && !c && e.new_member && (0, w.h)(l)) return void(0, w.W)(l.id);
     if (null == a) return;
     let u = ef(e);
     null != t && (u.transitionTo = t), null != n && (u.muteOnJoinVoiceChannel = n), em({
@@ -592,7 +592,7 @@ let eA = {
         invite_code: p
       })
     } else "#" === (d = null != t ? ee.BVt.INVITE_PROXY(t) : "")[0] && (d = d.slice(1)), d = "discord://".concat(d);
-    Z.A.launch(d, t => {
+    X.A.launch(d, t => {
       _.h.dispatch(t ? {
         type: "INVITE_APP_OPENED",
         code: e

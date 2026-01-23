@@ -61,8 +61,8 @@ function N(e) {
     children: n,
     initialTab: a,
     guildId: s
-  } = e, I = (0, o.bG)([m.A], () => m.A.getGuild(s)), C = (0, o.bG)([p.A], () => p.A.isViewingServerShop(s)), N = (0, y.P)(I, "guild_shop_page"), R = (0, E.YZ)(s, "guild_shop_page"), w = (null == I ? true : I.features.has(A.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === true, P = (0, f.Oh)(null == I ? true : I.id), D = P && R, x = null == (t = (0, d.Tq)(s)) ? true : t.server_shop_tab_order, L = [], j = b.B.GUILD_SHOP_FULL_PREVIEW;
-  C || w && P ? (L.push(x === O.HA.PRODUCTS_FIRST ? b.B.GUILD_PRODUCTS : b.B.GUILD_ROLE_SUBSCRIPTIONS), L.push(x === O.HA.PRODUCTS_FIRST ? b.B.GUILD_ROLE_SUBSCRIPTIONS : b.B.GUILD_PRODUCTS), j = L[0]) : w && !P ? (L.push(b.B.GUILD_PRODUCTS), j = b.B.GUILD_PRODUCTS) : !w && P && (L.push(b.B.GUILD_ROLE_SUBSCRIPTIONS), j = b.B.GUILD_ROLE_SUBSCRIPTIONS, N && L.push(b.B.GUILD_PRODUCTS_PREVIEW)), a = null != a ? a : j;
+  } = e, I = (0, o.bG)([m.A], () => m.A.getGuild(s)), C = (0, o.bG)([p.A], () => p.A.isViewingServerShop(s)), N = (0, y.P)(I, "guild_shop_page"), w = (0, E.YZ)(s, "guild_shop_page"), R = (null == I ? true : I.features.has(A.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === true, P = (0, f.Oh)(null == I ? true : I.id), D = P && w, x = null == (t = (0, d.Tq)(s)) ? true : t.server_shop_tab_order, L = [], j = b.B.GUILD_SHOP_FULL_PREVIEW;
+  C || R && P ? (L.push(x === O.HA.PRODUCTS_FIRST ? b.B.GUILD_PRODUCTS : b.B.GUILD_ROLE_SUBSCRIPTIONS), L.push(x === O.HA.PRODUCTS_FIRST ? b.B.GUILD_ROLE_SUBSCRIPTIONS : b.B.GUILD_PRODUCTS), j = L[0]) : R && !P ? (L.push(b.B.GUILD_PRODUCTS), j = b.B.GUILD_PRODUCTS) : !R && P && (L.push(b.B.GUILD_ROLE_SUBSCRIPTIONS), j = b.B.GUILD_ROLE_SUBSCRIPTIONS, N && L.push(b.B.GUILD_PRODUCTS_PREVIEW)), a = null != a ? a : j;
   let [M, k] = i.useState(a), U = N && !D || M === b.B.GUILD_PRODUCTS_PREVIEW;
   i.useEffect(() => {
     k(a)

@@ -88,8 +88,8 @@ let O = "US",
   }), {})),
   C = (0, Chunk915089.Ld)(),
   N = (0, Chunk915089.Ld)(),
-  R = (0, Chunk915089.Ld)(),
   w = (0, Chunk915089.Ld)(),
+  R = (0, Chunk915089.Ld)(),
   P = (0, Chunk915089.Ld)(),
   D = (0, Chunk915089.Ld)(),
   x = (0, Chunk915089.Ld)();
@@ -155,7 +155,7 @@ let M = {
   }),
   V = e => ({
     name: "line1",
-    id: R,
+    id: w,
     title: () => p.intl.string(p.t.x0beVT),
     autoComplete: "address-line1",
     placeholder: () => p.intl.string(p.t["ynII/6"]),
@@ -164,7 +164,7 @@ let M = {
   }),
   F = e => ({
     name: "line2",
-    id: w,
+    id: R,
     title: () => p.intl.string(p.t.i2Z0gI),
     placeholder: () => p.intl.string(p.t.fKLoNo),
     autoComplete: "address-line2",

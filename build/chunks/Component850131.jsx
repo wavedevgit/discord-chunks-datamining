@@ -2,7 +2,7 @@
 /** chunk id: 850131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -183,7 +183,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     className: t,
     data: n,
@@ -205,7 +205,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   var t;
   let {
     message: n,
@@ -238,7 +238,7 @@ function w(e) {
         title: b,
         titleOnClick: I
       })
-    }), (0, r.jsx)(R, {
+    }), (0, r.jsx)(w, {
       className: y.E6,
       data: m,
       onClickPollLink: l ? true : I

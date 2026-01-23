@@ -31,12 +31,12 @@ let A = function(e) {
     onCtaVisibilityChange: a
   } = e, A = i.useRef(null), I = (0, o.bG)([h.default], () => h.default.getCurrentUser()), S = (0, o.bG)([m.A], () => m.A.boostSlots), T = null == I ? true : I.isPremiumGroupMember(), {
     analyticsLocations: C
-  } = (0, u.Ay)(), [N, R] = i.useState(false), w = i.useMemo(() => Object.keys(S).filter(e => {
+  } = (0, u.Ay)(), [N, w] = i.useState(false), R = i.useMemo(() => Object.keys(S).filter(e => {
     let t = S[e];
     return null != t.premiumGuildSubscription && t.premiumGuildSubscription.guildId === n.id
   }).length, [S, n.id]), P = (0, p.A)(e.guild.id).total;
   async function D() {
-    R(true), await (0, E.g)({
+    w(true), await (0, E.g)({
       analyticsLocations: C,
       analyticsLocation: {
         page: y.liQ.PREMIUM_GUILD_USER_MODAL,
@@ -46,7 +46,7 @@ let A = function(e) {
       },
       guild: n,
       closeLayer: t
-    }), R(false)
+    }), w(false)
   }
 
   function x() {
@@ -109,11 +109,11 @@ let A = function(e) {
               subscriptions: P
             })
           })]
-        }), w > 0 ? (0, r.jsx)(c.Text, {
+        }), R > 0 ? (0, r.jsx)(c.Text, {
           className: v.EV,
           variant: "text-sm/normal",
           children: O.intl.format(O.t.Jeto2u, {
-            numSubscriptions: w
+            numSubscriptions: R
           })
         }) : null]
       })]

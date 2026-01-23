@@ -89,17 +89,17 @@ function O(e) {
     popoverRef: S,
     shouldShow: T,
     position: C
-  } = e, N = y(e, ["steps", "caretConfig", "size", "onStepChange", "onRequestClose", "popoverRef", "shouldShow", "position"]), [R, w] = i.useState(0);
+  } = e, N = y(e, ["steps", "caretConfig", "size", "onStepChange", "onRequestClose", "popoverRef", "shouldShow", "position"]), [w, R] = i.useState(0);
   i.useEffect(() => {
-    T && w(0)
+    T && R(0)
   }, [T]), i.useEffect(() => {
-    null == A || A(R)
-  }, [R, A]);
-  let P = b[R],
-    D = R + 1 === b.length,
+    null == A || A(w)
+  }, [w, A]);
+  let P = b[w],
+    D = w + 1 === b.length,
     x = i.useCallback(() => {
       var e;
-      null == P || null == (e = P.onCta) || e.call(P), D ? null == I || I() : w(e => e + 1)
+      null == P || null == (e = P.onCta) || e.call(P), D ? null == I || I() : R(e => e + 1)
     }, [P, D, I]),
     L = i.useCallback(() => {
       null == I || I()
@@ -154,7 +154,7 @@ function O(e) {
             variant: "text-xs/normal",
             className: _.multistepIndicator,
             children: p.intl.formatToPlainString(p.t.rO31eY, {
-              count: R + 1,
+              count: w + 1,
               totalSteps: b.length
             })
           }), (0, r.jsx)(l.$nd, m({

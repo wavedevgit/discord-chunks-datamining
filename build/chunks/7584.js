@@ -128,11 +128,11 @@ function N(e) {
   return null != t ? t : ""
 }
 
-function R(e) {
+function w(e) {
   c = null != e && "" !== e ? e : null
 }
 
-function w() {
+function R() {
   return c
 }
 
@@ -241,8 +241,8 @@ function K(e) {
   return D(W(d.reduce((e, t) => e.replace(t, ""), e), false))
 }
 let z = {
-  getDefaultDiversitySurrogate: w,
-  setDefaultDiversitySurrogate: R,
+  getDefaultDiversitySurrogate: R,
+  setDefaultDiversitySurrogate: w,
   getCategories: P,
   getByName: D,
   getByCategory: L,

@@ -37,14 +37,14 @@ function N(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let R = null,
-  w = null,
+let w = null,
+  R = null,
   P = new Chunk32603.Ay;
 
 function D() {
   let e = v.A.getChannelId(),
     t = v.A.getVoiceChannelId();
-  return R = e, w = t, P.clear()
+  return w = e, R = t, P.clear()
 }
 
 function x(e) {
@@ -148,7 +148,7 @@ function W(e) {
 }
 
 function K() {
-  return null != R && P.nonPositionalChannelIdUpdate(R)
+  return null != w && P.nonPositionalChannelIdUpdate(w)
 }
 
 function z(e) {
@@ -167,14 +167,14 @@ function q(e) {
   return P.clearGuildId(e.guildId)
 }
 
-function X(e) {
+function Z(e) {
   let {
     channel: t
   } = e;
   return P.nonPositionalChannelIdUpdate(t.id)
 }
 
-function Z(e) {
+function X(e) {
   let {
     channel: t
   } = e;
@@ -188,19 +188,19 @@ function Q(e) {
   return P.nonPositionalChannelIdUpdate(t)
 }
 
-function $() {
+function J() {
   let e = v.A.getChannelId(),
     t = v.A.getVoiceChannelId(),
-    n = R !== e || w !== t;
-  return !!n && (a()([R, w, e, t]).uniq().forEach(e => {
+    n = w !== e || R !== t;
+  return !!n && (a()([w, R, e, t]).uniq().forEach(e => {
     null != e && P.nonPositionalChannelIdUpdate(e) && (n = true)
-  }), R = e, w = t, true)
+  }), w = e, R = t, true)
 }
 
-function J(e) {
+function $(e) {
   let {
     voiceStates: t
-  } = e, n = $(), r = new Set;
+  } = e, n = J(), r = new Set;
   for (let {
       channelId: e,
       oldChannelId: i
@@ -319,7 +319,7 @@ let eu = new ec(Chunk73153.h, {
   CHANNEL_LOCAL_ACK: W,
   CHANNEL_MUTE_EXPIRED: V,
   CHANNEL_RTC_UPDATE_CHAT_OPEN: W,
-  CHANNEL_SELECT: $,
+  CHANNEL_SELECT: J,
   CHANNEL_STATUSES: k,
   CHANNEL_UPDATES: j,
   CONNECTION_OPEN_SUPPLEMENTAL: ei,
@@ -366,12 +366,12 @@ let eu = new ec(Chunk73153.h, {
   RECOMPUTE_READ_STATES: D,
   RESORT_THREADS: W,
   SET_RECENTLY_ACTIVE_COLLAPSED: D,
-  THREAD_CREATE: X,
-  THREAD_DELETE: Z,
+  THREAD_CREATE: Z,
+  THREAD_DELETE: X,
   THREAD_LIST_SYNC: V,
   THREAD_MEMBER_UPDATE: Q,
   THREAD_MEMBERS_UPDATE: Q,
-  THREAD_UPDATE: X,
+  THREAD_UPDATE: Z,
   TRY_ACK: W,
   UPDATE_CHANNEL_DIMENSIONS: W,
   UPDATE_CHANNEL_LIST_SUBTITLES: eo,
@@ -383,8 +383,8 @@ let eu = new ec(Chunk73153.h, {
   USER_SETTINGS_PROTO_UPDATE: el,
   VOICE_CATEGORY_COLLAPSE: et,
   VOICE_CATEGORY_EXPAND: et,
-  VOICE_CHANNEL_SELECT: $,
+  VOICE_CHANNEL_SELECT: J,
   VOICE_CHANNEL_STATUS_UPDATE: M,
-  VOICE_STATE_UPDATES: J,
+  VOICE_STATE_UPDATES: $,
   WINDOW_FOCUS: K
 })

@@ -56,7 +56,7 @@ function k() {
   return (0, r.jsxs)(l.lVW, {
     children: [(0, r.jsxs)(_.x, {
       setting: x.H.ACCOUNT_PROFILE,
-      children: [n && (0, r.jsx)(R.A, {}), (0, r.jsx)(P.A, {
+      children: [n && (0, r.jsx)(w.A, {}), (0, r.jsx)(P.A, {
         currentUser: e
       }), (0, r.jsx)(D.A, {})]
     }), (0, r.jsx)(_.x, {
@@ -76,7 +76,7 @@ function k() {
       })
     }), (0, r.jsxs)(_.x, {
       setting: x.H.ACCOUNT_REMOVAL,
-      children: [(0, r.jsx)(l.cGx, {}), (0, r.jsx)(w.A, {
+      children: [(0, r.jsx)(l.cGx, {}), (0, r.jsx)(R.A, {
         currentUser: e,
         userTeamsLoading: a,
         userTeams: i

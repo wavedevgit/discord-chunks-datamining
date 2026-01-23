@@ -1,5 +1,5 @@
 /** Chunk was on 23321 **/
-/** chunk id: 390734, original params: e,t,l (module,exports,require) **/
+/** chunk id: 390734, original params: e,t,n (module,exports,require) **/
 module.exports = {
   pf: "inventory__6980e",
   VQ: "inventoryControls__6980e",

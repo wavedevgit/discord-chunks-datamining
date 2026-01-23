@@ -137,7 +137,7 @@ function N() {
   return T(), false
 }
 
-function R(e) {
+function w(e) {
   let {
     channel: {
       id: t
@@ -148,7 +148,7 @@ function R(e) {
   return delete r[t], false
 }
 
-function w(e) {
+function R(e) {
   let {
     channel: t
   } = e, n = u.default.getId();
@@ -261,9 +261,9 @@ let j = new L(Chunk73153.h, {
   LOGOUT: P,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
   GUILD_DELETE: N,
-  CHANNEL_DELETE: R,
-  THREAD_DELETE: R,
-  THREAD_CREATE: w,
+  CHANNEL_DELETE: w,
+  THREAD_DELETE: w,
+  THREAD_CREATE: R,
   DRAFT_SAVE: v,
   DRAFT_CHANGE: v,
   DRAFT_CLEAR: A,

@@ -97,8 +97,8 @@ let v = (0, Chunk64700.createContext)(null),
       inputProps: T,
       isSelected: C,
       isDisabled: N,
-      isReadOnly: R,
-      isPressed: w,
+      isReadOnly: w,
+      isPressed: R,
       isInvalid: P
     } = v ? (0, d.B)({
       ...(0, i.SK)(e),
@@ -112,7 +112,7 @@ let v = (0, Chunk64700.createContext)(null),
       isFocused: D,
       isFocusVisible: x,
       focusProps: L
-    } = (0, p.o)(), j = N || R, {
+    } = (0, p.o)(), j = N || w, {
       hoverProps: M,
       isHovered: k
     } = (0, _.M)({
@@ -124,12 +124,12 @@ let v = (0, Chunk64700.createContext)(null),
       values: {
         isSelected: C,
         isIndeterminate: e.isIndeterminate || false,
-        isPressed: w,
+        isPressed: R,
         isHovered: k,
         isFocused: D,
         isFocusVisible: x,
         isDisabled: N,
-        isReadOnly: R,
+        isReadOnly: w,
         isInvalid: P,
         isRequired: e.isRequired || false
       }
@@ -142,12 +142,12 @@ let v = (0, Chunk64700.createContext)(null),
       slot: e.slot || true,
       "data-selected": C || true,
       "data-indeterminate": e.isIndeterminate || true,
-      "data-pressed": w || true,
+      "data-pressed": R || true,
       "data-hovered": k || true,
       "data-focused": D || true,
       "data-focus-visible": x || true,
       "data-disabled": N || true,
-      "data-readonly": R || true,
+      "data-readonly": w || true,
       "data-invalid": P || true,
       "data-required": e.isRequired || true
     }, O.createElement(h.s, {

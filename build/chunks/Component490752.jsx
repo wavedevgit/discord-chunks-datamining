@@ -86,14 +86,14 @@ function b(e) {
       analyticsLocations: v
     }),
     color: "danger"
-  }), R = (0, d.A)({
+  }), w = (0, d.A)({
     id: null == S ? true : S.id,
     label: g.intl.string(g.t["+NP/b2"]),
     onSuccess: () => O({
       action: "COPY_APP_ID",
       analyticsLocations: v
     })
-  }), w = [
+  }), R = [
     [E],
     [C, T, N],
     [(0, c.A)({
@@ -103,9 +103,9 @@ function b(e) {
         action: "COPY_APP_LINK",
         analyticsLocations: v
       })
-    }), R]
+    }), w]
   ];
-  return w.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.YNO, {
+  return R.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.YNO, {
     targetElementRef: b,
     renderPopout: e => {
       let {
@@ -117,7 +117,7 @@ function b(e) {
         onSelect: true,
         onClose: t,
         "aria-label": g.intl.string(g.t.AXIHpV),
-        children: w.map((e, t) => (0, r.jsx)(s.rXV, {
+        children: R.map((e, t) => (0, r.jsx)(s.rXV, {
           children: e.map(e => e)
         }, t))
       })

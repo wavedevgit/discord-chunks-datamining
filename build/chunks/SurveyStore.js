@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => Q,
-  bh: () => R
+  bh: () => w
 }), require("./896048.js");
 var r, Chunk989349 = require("./989349.js"),
   a = require.n(Chunk989349),
@@ -71,8 +71,8 @@ let v = {
   T = {},
   C = null,
   N = false,
-  R = Chunk927813.A.Millis.DAY,
-  w = 10 * Chunk927813.A.Millis.HOUR,
+  w = Chunk927813.A.Millis.DAY,
+  R = 10 * Chunk927813.A.Millis.HOUR,
   P = 7;
 var D = function(e) {
   return e.IS_OWNER = "is_owner", e.IS_ADMIN = "is_admin", e.IS_COMMUNITY = "is_community", e.GUILD_SIZE = "guild_size", e.IS_HUB = "is_hub", e.IS_VIEWING = "is_viewing", e.GUILD_PERMISSIONS = "guild_permissions", e.GUILD_SIZE_ALL = "guild_size_all", e
@@ -80,7 +80,7 @@ var D = function(e) {
 let x = new Set(Object.values(D));
 
 function L() {
-  return null == A.lastFetched || Date.now() - A.lastFetched >= R
+  return null == A.lastFetched || Date.now() - A.lastFetched >= w
 }
 
 function j() {
@@ -201,10 +201,10 @@ function q() {
   z()
 }
 
-function X() {
+function Z() {
   A.lastSeen = Date.now()
 }
-class Z extends(r = Chunk311907.Ay.PersistedStore) {
+class X extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     this.waitFor(f.A, p.A, _.A, h.A, m.default), A = null != e ? e : v, this.syncWith([h.A], q)
   }
@@ -222,10 +222,10 @@ class Z extends(r = Chunk311907.Ay.PersistedStore) {
   }
   shouldAllowSurveyAction() {
     var e;
-    return Date.now() - (null != (e = A.lastActionTriggered) ? e : 0) >= w
+    return Date.now() - (null != (e = A.lastActionTriggered) ? e : 0) >= R
   }
 }
-E(Z, "displayName", "SurveyStore"), E(Z, "persistKey", "SurveyStore"), E(Z, "migrations", [e => {
+E(X, "displayName", "SurveyStore"), E(X, "persistKey", "SurveyStore"), E(X, "migrations", [e => {
   let t = y({}, e);
   return delete t.validSurveys, delete t.currentSurvey, delete t.iosIsPushNotificationClicked, delete t.iosIsInviteShown, delete t.iosFirstRunDate, t
 }, e => {
@@ -239,7 +239,7 @@ E(Z, "displayName", "SurveyStore"), E(Z, "persistKey", "SurveyStore"), E(Z, "mig
     hiddenSurveys: null != (t = e.hiddenSurveys) ? t : {}
   })
 }]);
-let Q = new Z(Chunk73153.h, {
+let Q = new X(Chunk73153.h, {
   CONNECTION_OPEN: j,
   CONNECTION_RESUMED: j,
   SURVEY_FETCHED: V,
@@ -248,5 +248,5 @@ let Q = new Z(Chunk73153.h, {
   PUSH_NOTIFICATION_CLICK: B,
   DISPLAYED_INVITE_SHOW: H,
   LOGOUT: W,
-  SURVEY_SEEN: X
+  SURVEY_SEEN: Z
 })

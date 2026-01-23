@@ -6,13 +6,13 @@ require.d(exports, {
   H9: () => k,
   Qh: () => M,
   Se: () => B,
-  Tr: () => J,
+  Tr: () => $,
   V$: () => Y,
   Z4: () => K,
   _E: () => F,
   g4: () => H,
   k8: () => W,
-  wg: () => $,
+  wg: () => J,
   xo: () => z
 }), require("./896048.js"), require("./747238.js"), require("./812715.js");
 var Chunk735438 = require("./735438.js"),
@@ -94,8 +94,8 @@ function C(e, t) {
   return i
 }
 let N = 250,
-  R = /-/g,
-  w = "format",
+  w = /-/g,
+  R = "format",
   P = "animated",
   D = "webp",
   x = ".webp",
@@ -241,7 +241,7 @@ function H(e) {
 }
 
 function Y() {
-  let e = (0, a.A)().replace(R, "");
+  let e = (0, a.A)().replace(w, "");
   c.Ay.trackWithMetadata(y.HAw.SEARCH_OPENED, {
     search_type: y.I4_.GIF,
     load_id: e
@@ -318,11 +318,11 @@ function q(e) {
   return null != t && ((0, d.BX)(t) || (0, d.fr)(t))
 }
 
-function X(e) {
+function Z(e) {
   return q(e) && null != e.gifSrc ? e.gifSrc : e.src
 }
 
-function Z(e) {
+function X(e) {
   let t = g.A.toURLSafe(e);
   if (null == t) returnfalse;
   let n = t.pathname.toLowerCase();
@@ -336,15 +336,15 @@ function Q(e) {
     r = n.endsWith(x),
     i = n.endsWith(L),
     a = n.endsWith(j);
-  return r || i || a ? ((i || a) && t.searchParams.set(w, D), t.searchParams.set(P, "true"), t.toString()) : e
+  return r || i || a ? ((i || a) && t.searchParams.set(R, D), t.searchParams.set(P, "true"), t.toString()) : e
 }
 
-function $(e) {
+function J(e) {
   p.bW.updateAsync("favoriteGifs", t => {
     var n;
     let r = null != (n = i().max(Object.values(t.gifs).map(e => e.order))) ? n : 0,
-      a = X(e),
-      s = q(e) && Z(a),
+      a = Z(e),
+      s = q(e) && X(a),
       l = s ? Q(a) : a,
       c = s ? o.TL.IMAGE : e.format;
     if (t.gifs[z(e.url)] = S(A({}, e), {
@@ -362,7 +362,7 @@ function $(e) {
   }, b.Sb.INFREQUENT_USER_ACTION)
 }
 
-function J(e) {
+function $(e) {
   p.bW.updateAsync("favoriteGifs", t => {
     e in t.gifs ? delete t.gifs[e] : delete t.gifs[z(e)], h.default.track(y.HAw.GIF_UNFAVORITED, {
       total_num_favorited: i().size(t.gifs)

@@ -29,7 +29,7 @@ var a, Chunk247775 = require("./247775.js"),
   Chunk652215 = require("./652215.js"),
   Chunk204925 = require("./204925.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,7 +37,7 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let w = new Chunk626584.A("AuthenticationStore"),
+let R = new Chunk626584.A("AuthenticationStore"),
   P = "fingerprint",
   D = "analytics_installation",
   x = "user_id_cache",
@@ -56,17 +56,17 @@ let w = new Chunk626584.A("AuthenticationStore"),
   K = false,
   z = null,
   q = false,
-  X = false,
-  Z = null,
+  Z = false,
+  X = null,
   Q = null,
-  $ = false,
   J = false,
+  $ = false,
   ee = [];
 
 function et(e) {
   let t = null != s.getToken(),
     n = null != u.w.get(C.ilC);
-  w.verbose(e, {
+  R.verbose(e, {
     tokenManagerHasToken: t,
     storageHasToken: n
   })
@@ -75,7 +75,7 @@ function et(e) {
 function en() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  if (U = u.w.get(P), V = null != (e = u.w.get(D)) ? e : null, null != Z) return Z;
+  if (U = u.w.get(P), V = null != (e = u.w.get(D)) ? e : null, null != X) return X;
   let n = null != U ? U : s.getToken();
   !(0, y.m)() || !t && null != n || S.A.isHandoffAvailable() || er({
     withGuildExperiments: true
@@ -86,7 +86,7 @@ function er(e) {
   let {
     withGuildExperiments: t
   } = e, n = {}, r = v.default.getSuperPropertiesBase64();
-  null != r && (n["X-Super-Properties"] = r), null != U && (n["X-Fingerprint"] = U), null != V && (n["X-Installation-ID"] = V), Z = c.Bo.get({
+  null != r && (n["X-Super-Properties"] = r), null != U && (n["X-Fingerprint"] = U), null != V && (n["X-Installation-ID"] = V), X = c.Bo.get({
     url: C.Rsh.EXPERIMENTS,
     query: {
       with_guild_experiments: t
@@ -112,9 +112,9 @@ function er(e) {
       fingerprint: t,
       experiments: n,
       guildExperiments: r
-    }), Z = null, (0, p.hK)()
+    }), X = null, (0, p.hK)()
   }, () => {
-    Z = null, d.h.dispatch({
+    X = null, d.h.dispatch({
       type: "EXPERIMENTS_FETCH_FAILURE"
     })
   })
@@ -140,7 +140,7 @@ function el(e) {
   let {
     isPasswordAttempt: t
   } = e;
-  B = C.aUe.LOGGING_IN, J = J || true === t
+  B = C.aUe.LOGGING_IN, $ = $ || true === t
 }
 
 function ec(e) {
@@ -158,7 +158,7 @@ function ed(e) {
   let {
     token: t
   } = e;
-  B = C.aUe.NONE, ea(t), ei(), W = "", K = false, z = null, i = null, eh(), $ = false
+  B = C.aUe.NONE, ea(t), ei(), W = "", K = false, z = null, i = null, eh(), J = false
 }
 
 function ef(e) {
@@ -169,14 +169,14 @@ function ef(e) {
 }
 
 function ep() {
-  $ = true
+  J = true
 }
 
 function e_(e) {
   let {
     error: t
   } = e;
-  W = "", K = false, z = null, $ = false, i = null, B = null != (0, _.W)(t).date_of_birth ? C.aUe.LOGIN_AGE_GATE : C.aUe.NONE
+  W = "", K = false, z = null, J = false, i = null, B = null != (0, _.W)(t).date_of_birth ? C.aUe.LOGIN_AGE_GATE : C.aUe.NONE
 }
 
 function eh() {
@@ -186,7 +186,7 @@ function eh() {
     challenge: z
   }), q && e.push({
     type: "totp"
-  }), X && e.push({
+  }), Z && e.push({
     type: "backup"
   }), K && e.push({
     type: "sms"
@@ -202,7 +202,7 @@ function em(e) {
     totp: s,
     loginInstanceId: o
   } = e;
-  null != t && (W = t, K = n, z = null != r ? r : null, X = a, q = s, i = o, eh()), B = C.aUe.MFA_STEP
+  null != t && (W = t, K = n, z = null != r ? r : null, Z = a, q = s, i = o, eh()), B = C.aUe.MFA_STEP
 }
 
 function eg() {
@@ -286,7 +286,7 @@ function eC(e) {
   et("handleConnectionClosed called with code ".concat(t, "."));
   let r = n(192308).hasModalOpen;
   if (4004 === t) {
-    if (H || r(N.jc) || r(N.Uy)) return void ew();
+    if (H || r(N.jc) || r(N.Uy)) return void eR();
     v.default.track(C.HAw.APP_USER_DEAUTHENTICATED, {
       user_id: u.w.get(x)
     }), eP(), setImmediate(() => (0, y.pX)(C.BVt.DEFAULT_LOGGED_OUT))
@@ -301,14 +301,14 @@ function eN(e) {
   et("handleUpdateToken called"), ea(t, n), ei()
 }
 
-function eR(e) {
+function ew(e) {
   let {
     authSessionIdHash: t
   } = e;
   null != t && (M = t)
 }
 
-function ew() {
+function eR() {
   H = true, eP(), d.h.wait(() => {
     (0, y.pX)(C.BVt.REGISTER)
   })
@@ -321,7 +321,7 @@ function eP(e) {
   null != (t = null == e ? true : e.isSwitchingAccount) && t || (n && ei(), en()), l.Ay.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore"],
     type: (null == e ? true : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), T.A.clearAll(), m.IU(), I.A.clearUser(), u.w.remove(x), L = null, j = null, B = (null == e ? true : e.isSwitchingAccount) ? C.aUe.LOGGING_IN : C.aUe.NONE, W = "", z = null, K = false, $ = false, J = false, eh()
+  }), T.A.clearAll(), m.IU(), I.A.clearUser(), u.w.remove(x), L = null, j = null, B = (null == e ? true : e.isSwitchingAccount) ? C.aUe.LOGGING_IN : C.aUe.NONE, W = "", z = null, K = false, J = false, $ = false, eh()
 }
 
 function eD() {
@@ -343,7 +343,7 @@ function ej(e) {
   let {
     suspendedUserToken: t
   } = e;
-  $ = false, Q = t, setImmediate(() => (0, y.pX)(C.BVt.ACCOUNT_STANDING))
+  J = false, Q = t, setImmediate(() => (0, y.pX)(C.BVt.ACCOUNT_STANDING))
 }
 
 function eM() {
@@ -407,18 +407,18 @@ class ek extends(a = Chunk311907.Ay.Store) {
     return Q
   }
   getIsPasswordlessActive() {
-    return $
-  }
-  attemptedPasswordLogin() {
     return J
   }
+  attemptedPasswordLogin() {
+    return $
+  }
 }
-R(ek, "displayName", "AuthenticationStore");
+w(ek, "displayName", "AuthenticationStore");
 let eU = new ek(Chunk73153.h, {
   CONNECTION_OPEN: eS,
   OVERLAY_INITIALIZE: eT,
   CONNECTION_CLOSED: eC,
-  AUTH_SESSION_CHANGE: eR,
+  AUTH_SESSION_CHANGE: ew,
   LOGIN: el,
   LOGIN_SUCCESS: ed,
   LOGIN_FAILURE: ef,
@@ -440,7 +440,7 @@ let eU = new ek(Chunk73153.h, {
   UPDATE_TOKEN: eN,
   EXPERIMENTS_FETCH: er,
   CURRENT_USER_UPDATE: eL,
-  AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: ew,
+  AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: eR,
   CLOSE_SUSPENDED_USER: eM,
   PASSWORDLESS_FAILURE: e_,
   PASSWORDLESS_START: ep

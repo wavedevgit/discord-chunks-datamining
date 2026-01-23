@@ -110,7 +110,7 @@ function b(e, t, n, i, a) {
       value: u,
       description: T(r.A.iptc[l], u, n, i)
     };
-  return R(l) && (d.repeatable = true), w(l) && (d.encoding = r.A.iptc[l].encoding_name(u)), {
+  return w(l) && (d.repeatable = true), R(l) && (d.encoding = r.A.iptc[l].encoding_name(u)), {
     tag: d,
     tagSize: c
   }
@@ -154,10 +154,10 @@ function N(e) {
   return e && true !== e.description
 }
 
-function R(e) {
+function w(e) {
   return r.A.iptc[e] && r.A.iptc[e].repeatable
 }
 
-function w(e) {
+function R(e) {
   return r.A.iptc[e] && true !== r.A.iptc[e].encoding_name
 }

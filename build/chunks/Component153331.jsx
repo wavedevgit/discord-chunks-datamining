@@ -87,12 +87,12 @@ let z = 40;
 var q = function(e) {
   return e.ACTIVITY_FEED = "ActivityFeed", e.STREAM_PREVIEW = "StreamPreview", e.VOICE_CHANNEL = "VoiceChannel", e
 }({});
-let X = {
+let Z = {
     StreamPreview: [108, 60],
     VoiceChannel: [108, 60],
     ActivityFeed: [900, 500]
   },
-  Z = (0, Chunk492684.A)(class extends Chunk64700.PureComponent {
+  X = (0, Chunk492684.A)(class extends Chunk64700.PureComponent {
     render() {
       return (0, i.jsx)("div", {
         className: B.timestamp,
@@ -108,7 +108,7 @@ function Q(e) {
   return (0, j.A)(t) && (n = V.fg2.SPOTIFY), null != t.platform && [V.yTV.PS4, V.yTV.PS5].includes(t.platform) && (n = V.fg2.PLAYSTATION), n
 }
 
-function $(e) {
+function J(e) {
   let {
     activity: t
   } = e, n = (0, h.Ay)(), r = Q({
@@ -122,7 +122,7 @@ function $(e) {
     className: B.platformIcon
   })
 }
-class J extends(r = Chunk64700.PureComponent) {
+class $ extends(r = Chunk64700.PureComponent) {
   get activity() {
     let {
       activity: e,
@@ -227,11 +227,11 @@ class J extends(r = Chunk64700.PureComponent) {
       application_id: f
     } = e;
     if (null == d || null == d.large_image && null == d.small_image) return null;
-    (0, k.A)(e) && (s = X[u]);
+    (0, k.A)(e) && (s = Z[u]);
     let _ = (0, j.A)(e),
       h = null != d.large_image ? (0, i.jsx)("img", {
         alt: null != (t = d.large_text) ? t : "",
-        src: (0, R.uD)(f, d.large_image, null != s ? s : [G.iu.LARGE, G.iu.LARGE]),
+        src: (0, w.uD)(f, d.large_image, null != s ? s : [G.iu.LARGE, G.iu.LARGE]),
         className: o()(this.getTypeClass("assetsLargeImage", this.isStreamerOnTypeActivityFeed() ? V.fg2.TWITCH : ""), {
           [null != (n = this.getTypeClass("assetsLargeMask")) ? n : ""]: null != d.small_image,
           [B.assetsLargeImageSpotify]: _
@@ -249,7 +249,7 @@ class J extends(r = Chunk64700.PureComponent) {
         width: G.iu.SMALL,
         height: G.iu.SMALL,
         children: (0, i.jsx)("img", {
-          src: null != (r = w.Ay.getGuildIconURL({
+          src: null != (r = R.Ay.getGuildIconURL({
             id: t.guildId,
             icon: d.small_image,
             size: G.iu.SMALL
@@ -284,7 +284,7 @@ class J extends(r = Chunk64700.PureComponent) {
         var t;
         return (0, i.jsx)("img", Y({
           alt: null != (t = d.small_text) ? t : "",
-          src: (0, R.uD)(f, d.small_image, [G.iu.SMALL, G.iu.SMALL]),
+          src: (0, w.uD)(f, d.small_image, [G.iu.SMALL, G.iu.SMALL]),
           className: this.getTypeClass("assetsSmallImage", null == h ? "WithoutLargeImage" : true)
         }, e))
       }
@@ -438,7 +438,7 @@ class J extends(r = Chunk64700.PureComponent) {
     let {
       timestamps: n
     } = e;
-    return null == n ? null : (0, x.A)(e) ? (0, i.jsx)(Z, {
+    return null == n ? null : (0, x.A)(e) ? (0, i.jsx)(X, {
       timestamps: n
     }) : (0, i.jsx)(S.Ay, {
       start: n.start,
@@ -545,7 +545,7 @@ class J extends(r = Chunk64700.PureComponent) {
             }), y, d ? null : O, u ? b : null]
           })]
         })
-      }), d ? b : null, (0, i.jsx)($, {
+      }), d ? b : null, (0, i.jsx)(J, {
         activity: c
       })]
     })
@@ -574,7 +574,7 @@ class J extends(r = Chunk64700.PureComponent) {
     })
   }
 }
-H(J, "Types", q);
+H($, "Types", q);
 let ee = e => {
   var t, n, r;
   let a = (0, O.A)({
@@ -584,7 +584,7 @@ let ee = e => {
     sourceUserId: e.user.id,
     trackEntryPointImpression: true
   });
-  return (0, i.jsx)(J, K(Y({}, e), {
+  return (0, i.jsx)($, K(Y({}, e), {
     onOpenGameProfileModal: a
   }))
 };

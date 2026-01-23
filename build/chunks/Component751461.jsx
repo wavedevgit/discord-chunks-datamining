@@ -45,10 +45,10 @@ function A(e) {
       applied_to_existing_guilds: t
     })
   }
-  let R = e => {
-      w(!e)
+  let w = e => {
+      R(!e)
     },
-    w = e => {
+    R = e => {
       let t = () => {
           d.n6.updateSetting(e), d.$s.updateSetting(e ? o.A.getGuildIds() : []), N(e, true)
         },
@@ -72,7 +72,7 @@ function A(e) {
       title: P,
       note: S ? O.intl.string(O.t.XXGmuB) : O.intl.string(O.t.wbYDfT),
       value: !I,
-      onChange: R,
+      onChange: w,
       disabled: T,
       tooltipText: T ? O.intl.string(v.default["6Af/cw"]) : true
     }) : (0, r.jsx)(h.Ay, {

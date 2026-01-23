@@ -53,7 +53,7 @@ function N(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -155,9 +155,9 @@ let V = () => {
   K = false,
   z = false,
   q = [Chunk652215.hCu.PUSH_TO_TALK, Chunk652215.hCu.TOGGLE_OVERLAY_INPUT_LOCK, Chunk652215.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET],
-  X = [];
+  Z = [];
 
-function Z(e) {
+function X(e) {
   switch (e) {
     case D.id:
       return D;
@@ -172,7 +172,7 @@ function Q(e, t) {
   return !(e.shortcut.length >= t.shortcut.length) && e.shortcut.every(e => t.shortcut.some(t => t[0] === e[0] && t[1] === e[1]))
 }
 
-function $(e, t, n) {
+function J(e, t, n) {
   m.default.track(v.HAw.KEYBOARD_SHORTCUT_USED, {
     shortcut_name: n.action,
     shortcut_combo: (0, b.dI)(n.shortcut),
@@ -180,31 +180,31 @@ function $(e, t, n) {
   }), t.onTrigger(e, n)
 }
 
-function J(e, t) {
+function $(e, t) {
   var n;
-  let r = Z(e);
+  let r = X(e);
   if (null == r) return;
   let i = null == (n = W[r.action]) ? true : n.keyEvents;
   if (null == i) return;
   let a = W[r.action];
   if (i.keydown && i.keyup) {
-    null != a && $(t, W[r.action], r);
+    null != a && J(t, W[r.action], r);
     return
   }
-  X.push(e), setTimeout(() => {
-    for (let t of X) {
+  Z.push(e), setTimeout(() => {
+    for (let t of Z) {
       if (t === e) continue;
-      let n = Z(t);
+      let n = X(t);
       if (null != n && Q(r, n)) {
-        X.includes(e) && X.splice(X.indexOf(e), 1);
+        Z.includes(e) && Z.splice(Z.indexOf(e), 1);
         return
       }
     }
     try {
-      null != a && $(t, a, r)
+      null != a && J(t, a, r)
     } finally {
       setTimeout(() => {
-        X.includes(e) && X.splice(X.indexOf(e), 1)
+        Z.includes(e) && Z.splice(Z.indexOf(e), 1)
       }, j)
     }
   }, j)
@@ -264,7 +264,7 @@ function es(e) {
       let n = B[e];
       if (null != n) {
         let e = W[n.action];
-        (null == e ? true : e.isPressed) === true && T.nextTick(() => $(false, e, n))
+        (null == e ? true : e.isPressed) === true && T.nextTick(() => J(false, e, n))
       }
       t.reset(), F[e] = null
     }
@@ -286,7 +286,7 @@ function eo(e) {
     keybind: e
   });
   let s = W[n].keyEvents;
-  e.action === v.hCu.TOGGLE_MUTE && er(), e.action === v.hCu.TOGGLE_OVERLAY_INPUT_LOCK && et(), ea(a, t, e => J(i, e), N({
+  e.action === v.hCu.TOGGLE_MUTE && er(), e.action === v.hCu.TOGGLE_OVERLAY_INPUT_LOCK && et(), ea(a, t, e => $(i, e), N({
     focused: true,
     blurred: true,
     keydown: false,
@@ -303,7 +303,7 @@ function el(e) {
     managed: false,
     params: {}
   }, e);
-  return B = w(N({}, B), {
+  return B = R(N({}, B), {
     [t.id]: t
   }), H += 1, t
 }
@@ -334,7 +334,7 @@ function ef(e) {
   let {
     keybind: t
   } = e;
-  B = w(N({}, B), {
+  B = R(N({}, B), {
     [t.id]: t
   }), __OVERLAY__ || (m.default.track(v.HAw.USER_SETTINGS_KEYBIND_UPDATED, {
     keybind_action: t.action,
@@ -404,7 +404,7 @@ let eg = [function() {
     else {
       if (null == t) return e || false;
       ef({
-        keybind: w(N({}, r), {
+        keybind: R(N({}, r), {
           shortcut: "string" == typeof t ? (0, b.OH)(t) : t,
           context: n
         })
@@ -500,7 +500,7 @@ C(eb, "displayName", "KeybindsStore"), C(eb, "persistKey", "keybinds"), C(eb, "m
         r = (0, b.OH)("`").map(e => e[1]);
       if (s()(n, r)) return e
     }
-    return w(N({}, e), {
+    return R(N({}, e), {
       [n]: t
     })
   }, {})
@@ -511,7 +511,7 @@ C(eb, "displayName", "KeybindsStore"), C(eb, "persistKey", "keybinds"), C(eb, "m
     if (null != i) {
       if (null == i.params || null == i.enabled) {
         var n;
-        i = w(N({}, i), {
+        i = R(N({}, i), {
           enabled: false !== i.enabled,
           params: null != (n = i.params) ? n : {}
         })
@@ -520,7 +520,7 @@ C(eb, "displayName", "KeybindsStore"), C(eb, "persistKey", "keybinds"), C(eb, "m
     }
   }
   return t
-}, e => l().reduce(e, (e, t, n) => t.action === v.hCu.TOGGLE_GO_LIVE_STREAMING && t.managed ? e : w(N({}, e), {
+}, e => l().reduce(e, (e, t, n) => t.action === v.hCu.TOGGLE_GO_LIVE_STREAMING && t.managed ? e : R(N({}, e), {
   [n]: t
 }), {})]);
 let eO = new eb(Chunk73153.h, {

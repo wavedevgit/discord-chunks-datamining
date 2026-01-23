@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => D,
-  D: () => w
+  D: () => R
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -67,9 +67,9 @@ function C(e, t) {
   }), e
 }
 let N = Chunk307731.b_.CHAT,
-  R = [Chunk7584.Ay.getByName("thumbsup"), Chunk7584.Ay.getByName("eyes"), Chunk7584.Ay.getByName("laughing"), Chunk7584.Ay.getByName("watermelon"), Chunk7584.Ay.getByName("fork_and_knife"), Chunk7584.Ay.getByName("yum")].filter(Chunk403362.Vq);
+  w = [Chunk7584.Ay.getByName("thumbsup"), Chunk7584.Ay.getByName("eyes"), Chunk7584.Ay.getByName("laughing"), Chunk7584.Ay.getByName("watermelon"), Chunk7584.Ay.getByName("fork_and_knife"), Chunk7584.Ay.getByName("yum")].filter(Chunk403362.Vq);
 
-function w(e) {
+function R(e) {
   let {
     emoji: t,
     isDisabled: n = false,
@@ -151,7 +151,7 @@ function D(e) {
     recentlyUsedEmojis: b,
     analyticsOverride: I,
     ref: T
-  } = e, D = (0, f.GV)(), [x, L] = i.useState(false), j = (0, _.Fj)(t.guild_id), M = (0, o.uniqBy)([...j, ...R], "name").filter(e => !y.Ay.isEmojiFilteredOrLocked({
+  } = e, D = (0, f.GV)(), [x, L] = i.useState(false), j = (0, _.Fj)(t.guild_id), M = (0, o.uniqBy)([...j, ...w], "name").filter(e => !y.Ay.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: N
@@ -222,7 +222,7 @@ function D(e) {
                 text: e.name,
                 position: "top",
                 asContainer: true,
-                children: (0, r.jsx)(w, {
+                children: (0, r.jsx)(R, {
                   emoji: e,
                   isDisabled: n,
                   onClick: () => {

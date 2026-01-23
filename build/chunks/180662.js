@@ -2,7 +2,7 @@
 /** chunk id: 180662, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => X,
+  A: () => Z,
   e: () => F
 }), require("./65821.js"), require("./896048.js"), require("./114821.js"), require("./339614.js"), require("./733351.js");
 var Chunk284009 = require("./284009.js"),
@@ -142,7 +142,7 @@ function V(e) {
     cancelText: P.intl.string(P.t["2m+Sqk"]),
     onConfirm: () => {
       f.A.joinGuild(t, {
-        source: w.Q4z.POLL_ALERT
+        source: R.Q4z.POLL_ALERT
       })
     }
   })
@@ -319,7 +319,7 @@ function z(e) {
         var n, r;
         return e + (null != (n = null == (r = t.count_details) ? true : r.vote) ? n : 0)
       }, 0) : 0;
-    return h.Ay.trackWithMetadata(w.HAw.POLL_SHOW_RESULTS_CLICKED, {
+    return h.Ay.trackWithMetadata(R.HAw.POLL_SHOW_RESULTS_CLICKED, {
       channel_id: t,
       message_id: n,
       show_results: a,
@@ -375,7 +375,7 @@ async function q(e) {
       i()(false, "Unknown poll action type: ".concat(r))
   }
 }
-let X = {
+let Z = {
   handlePollAnswerTapped: function(e) {
     var t, n;
     let {
@@ -386,7 +386,7 @@ let X = {
       message: s
     } = U(M(e, ["answerId"])), {
       tapShouldOpenVotersModal: o
-    } = null != (t = (0, R.j8)(s)) ? t : {};
+    } = null != (t = (0, w.j8)(s)) ? t : {};
     if (true === o) return void F({
       channelId: i,
       messageId: a,
@@ -402,7 +402,7 @@ let X = {
             selectedTextAnswersCount: o,
             selectedEmojiAnswersCount: l
           } = G(null == (n = s.poll) ? true : n.answers, e);
-        return h.Ay.trackWithMetadata(w.HAw.POLL_VOTE_SELECTED, {
+        return h.Ay.trackWithMetadata(R.HAw.POLL_VOTE_SELECTED, {
           channel_id: i,
           message_id: a,
           selected_answer_ids: t,
@@ -429,7 +429,7 @@ let X = {
         selectedTextAnswersCount: d,
         selectedEmojiAnswersCount: f
       } = G(null == (t = s.poll) ? true : t.answers, c);
-      return h.Ay.trackWithMetadata(w.HAw.POLL_VOTE_SELECTED, {
+      return h.Ay.trackWithMetadata(R.HAw.POLL_VOTE_SELECTED, {
         channel_id: i,
         message_id: a,
         selected_answer_ids: u,

@@ -107,11 +107,11 @@ function N(e) {
   return m(e, d)
 }
 
-function R(e) {
+function w(e) {
   return m(e, f)
 }
 
-function w(e) {
+function R(e) {
   return m(e, p)
 }
 
@@ -132,8 +132,8 @@ exports.isSharedArrayBuffer = C, exports.isAsyncFunction = function(e) {
   return "[object Generator]" === u(e)
 }, exports.isWebAssemblyCompiledModule = function(e) {
   return "[object WebAssembly.Module]" === u(e)
-}, exports.isNumberObject = N, exports.isStringObject = R, exports.isBooleanObject = w, exports.isBigIntObject = P, exports.isSymbolObject = D, exports.isBoxedPrimitive = function(e) {
-  return N(e) || R(e) || w(e) || P(e) || D(e)
+}, exports.isNumberObject = N, exports.isStringObject = w, exports.isBooleanObject = R, exports.isBigIntObject = P, exports.isSymbolObject = D, exports.isBoxedPrimitive = function(e) {
+  return N(e) || w(e) || R(e) || P(e) || D(e)
 }, exports.isAnyArrayBuffer = function(e) {
   return "u" > typeof Uint8Array && (v(e) || C(e))
 }, ["isProxy", "isExternal", "isModuleNamespaceObject"].forEach(function(e) {

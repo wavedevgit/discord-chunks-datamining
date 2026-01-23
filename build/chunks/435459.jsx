@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 435459, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -41,7 +41,7 @@ let o = {
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/gems/Lottie_NitroGems_Badge18.lottie": () => n.e("11817").then(n.t.bind(n, 110320, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/gems/Lottie_NitroGems_Badge24.lottie": () => n.e("84996").then(n.t.bind(n, 248476, 17)),
   "discord_common/js/shared/animations/app/gifts/seasonal/box/box-action.lottiejson": () => n.e("19534").then(n.t.bind(n, 87037, 19)),
-  "discord_common/js/shared/animations/app/gifts/seasonal/box/box-idle.lottiejson": () => n.e("12250").then(n.t.bind(n, 553998, 19)),
+  "discord_common/js/shared/animations/app/gifts/seasonal/box/box-idle.lottiejson": () => n.e("12250").then(n.t.bind(n, 331617, 19)),
   "discord_common/js/shared/animations/app/gifts/seasonal/box/box-loop.lottiejson": () => n.e("58526").then(n.t.bind(n, 138157, 19)),
   "discord_common/js/shared/animations/app/gifts/seasonal/cake/cake-action.lottiejson": () => n.e("64376").then(n.t.bind(n, 37259, 19)),
   "discord_common/js/shared/animations/app/gifts/seasonal/cake/cake-idle.lottiejson": () => n.e("30800").then(n.t.bind(n, 683891, 19)),

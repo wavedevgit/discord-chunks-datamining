@@ -155,14 +155,14 @@ let y = Chunk64700.forwardRef(function(e, t) {
       x: y + (b - y) / 2,
       y: Math.max(O, Math.min(_.y, d.y))
     }
-  }, [s, p, a]), [T, C] = i.useState(0), [N, R] = i.useState(0);
+  }, [s, p, a]), [T, C] = i.useState(0), [N, w] = i.useState(0);
   if (i.useLayoutEffect(() => {
       if (null == I || null == S || null == f.current) return;
       let e = f.current.getBoundingClientRect();
-      R(e.width / 2), C(e.height + 12)
+      w(e.width / 2), C(e.height + 12)
     }, [I, S]), null == I || null == S) return null;
-  let w = null == (n = a.current) ? true : n.getSlateEditor();
-  return null == w ? null : (0, r.jsx)(u.Ay, {
+  let R = null == (n = a.current) ? true : n.getSlateEditor();
+  return null == R ? null : (0, r.jsx)(u.Ay, {
     children: (0, r.jsxs)("div", {
       id: "slate-toolbar",
       ref: f,
@@ -178,7 +178,7 @@ let y = Chunk64700.forwardRef(function(e, t) {
         e.stopPropagation()
       },
       children: [(0, r.jsx)(v, {
-        slateEditor: w
+        slateEditor: R
       }), (0, r.jsx)(E, {
         editorRef: a,
         options: c

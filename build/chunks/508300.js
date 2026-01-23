@@ -44,8 +44,8 @@ var T = Chunk230606(m),
 if (C.constructor !== T) {
   for (var N in Chunk105712 || o(C, "constructor", Chunk231977(1, T)), Chunk753609)
     if (Chunk210140(Chunk753609, N)) {
-      var R = Chunk753609[N],
-        w = R.s;
-      Chunk210140(T, w) || o(T, w, Chunk231977(6, R.c))
+      var w = Chunk753609[N],
+        R = w.s;
+      Chunk210140(T, R) || o(T, R, Chunk231977(6, w.c))
     }
 }

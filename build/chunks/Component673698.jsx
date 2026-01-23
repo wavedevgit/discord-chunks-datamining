@@ -92,7 +92,7 @@ let T = Chunk64700.forwardRef((e, t) => {
       alt: v,
       width: S,
       height: T,
-      maxWidth: w = S,
+      maxWidth: R = S,
       maxHeight: P = T,
       minWidth: D = 0,
       minHeight: x = 0,
@@ -113,7 +113,7 @@ let T = Chunk64700.forwardRef((e, t) => {
           className: null != a ? a : true,
           alt: null != i ? i : m.intl.string(m.t.X4IxWL),
           src: t,
-          style: R(n, s)
+          style: w(n, s)
         })
       },
       renderAccessory: V,
@@ -126,25 +126,25 @@ let T = Chunk64700.forwardRef((e, t) => {
     K = I(a, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]),
     [z] = o,
     q = i.useRef(null),
-    X = i.useRef(null);
+    Z = i.useRef(null);
   if (1 === S && 1 === T) return null;
-  let Z = (0, d.Uj)({
+  let X = (0, d.Uj)({
       width: S,
       height: T,
-      maxWidth: w,
+      maxWidth: R,
       maxHeight: P,
       minWidth: D,
       minHeight: x
     }),
-    Q = 0 !== Z.width ? Z.width / Z.height : 1;
+    Q = 0 !== X.width ? X.width / X.height : 1;
   "" !== E && h !== _.Rv1.ERROR ? n = G({
     src: E,
-    size: Z,
+    size: X,
     alt: v,
     className: f,
     mediaLayoutType: L
   }) : h !== _.Rv1.LOADING && (n = (0, r.jsx)(C, {
-    size: Z,
+    size: X,
     mediaLayoutType: L,
     alt: v
   })), n = (0, r.jsx)(p.y, {
@@ -152,13 +152,13 @@ let T = Chunk64700.forwardRef((e, t) => {
     aspectRatio: Q,
     placeholder: y,
     placeholderVersion: b,
-    placeholderStyle: R(Z, L),
+    placeholderStyle: w(X, L),
     children: n
   });
-  let $ = null != V ? V() : null;
-  return $ = null != $ ? $ : M, (0, r.jsx)(l.vN3, {
+  let J = null != V ? V() : null;
+  return J = null != J ? J : M, (0, r.jsx)(l.vN3, {
     ringTarget: q,
-    focusTarget: X,
+    focusTarget: Z,
     children: (0, r.jsxs)("div", A(O({
       ref: z,
       className: s()("imageWrapper", g.h4, {
@@ -166,7 +166,7 @@ let T = Chunk64700.forwardRef((e, t) => {
         [g.LF]: h !== _.Rv1.READY,
         [g.vk]: null != F
       }, c),
-      style: N(Z, j, Y, L)
+      style: N(X, j, Y, L)
     }, K), {
       children: [null != U && (0, r.jsx)("a", {
         tabIndex: false,
@@ -183,14 +183,14 @@ let T = Chunk64700.forwardRef((e, t) => {
         onClick: F,
         "aria-label": null != v ? v : m.intl.string(m.t.X4IxWL),
         "aria-describedby": u.l2,
-        innerRef: X,
+        innerRef: Z,
         focusProps: {
           enabled: false
         },
         children: n
-      }) : n, null != $ ? (0, r.jsx)("div", {
+      }) : n, null != J ? (0, r.jsx)("div", {
         className: g.mQ,
-        children: $
+        children: J
       }) : null]
     }))
   })
@@ -204,7 +204,7 @@ function C(e) {
   } = e, a = (0, c.Ay)();
   return (0, r.jsx)("div", {
     className: g.x5,
-    style: w(t, n),
+    style: R(t, n),
     children: (0, r.jsx)("img", {
       src: (0, o.qB)(a) ? y : E,
       className: g.wL,
@@ -227,7 +227,7 @@ function N(e, t, n, r) {
   } : e
 }
 
-function R(e, t) {
+function w(e, t) {
   switch (t) {
     case h.dG.MOSAIC:
       return {
@@ -240,7 +240,7 @@ function R(e, t) {
   }
 }
 
-function w(e, t) {
+function R(e, t) {
   switch (t) {
     case h.dG.MOSAIC:
       return {

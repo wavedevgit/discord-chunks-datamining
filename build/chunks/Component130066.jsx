@@ -34,7 +34,7 @@ let N = () => (0, r.jsxs)(h.A, {
     webSetting: I.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
     children: [(0, r.jsx)(g.f, {}), (0, r.jsx)(f.A, {}), (0, r.jsx)(d.A, {}), (0, r.jsx)(c.A, {}), (0, r.jsx)(E.A, {})]
   }),
-  R = () => (0, r.jsxs)(h.A, {
+  w = () => (0, r.jsxs)(h.A, {
     title: C.intl.string(C.t["y62Z/d"]),
     webSetting: I.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: [(0, r.jsx)(a.x, {
@@ -42,13 +42,13 @@ let N = () => (0, r.jsxs)(h.A, {
       children: (0, r.jsx)(_.A, {})
     }), (0, r.jsx)(O.A, {}), (0, r.jsx)(v.A, {}), (0, r.jsx)(b.A, {}), (0, r.jsx)(y.A, {})]
   }),
-  w = () => (0, r.jsxs)(h.A, {
+  R = () => (0, r.jsxs)(h.A, {
     title: C.intl.string(C.t["1Qn8iV"]),
     webSetting: I.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, r.jsx)(p.A, {}), (0, r.jsx)(m.Ay, {})]
   }),
   P = () => (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(N, {}), (0, r.jsx)(R, {}), (0, r.jsx)(w, {})]
+    children: [(0, r.jsx)(N, {}), (0, r.jsx)(w, {}), (0, r.jsx)(R, {})]
   });
 
 function D() {

@@ -75,7 +75,7 @@ function N(e, t, n) {
   }))
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = _.A.getChannel(t);
   if (null == n) return null;
   let r = h.A.getGuild(n.getGuildId());
@@ -85,7 +85,7 @@ function R(e, t) {
   }))
 }
 
-function w(e, t) {
+function R(e, t) {
   let n = _.A.getChannel(e);
   if (null == n) return null;
   let r = h.A.getGuild(n.getGuildId());
@@ -230,13 +230,13 @@ let D = {
               return t === y.Auw.AUTO_MODERATION_NOTIFICATION
             }),
             n = null == t || null == (h = t.fields) ? true : h.find(e => "name" in e && e.name === r.E.NOTIFICATION_TYPE);
-          return w(E, null != n && "value" in n ? n.value : true)
+          return R(E, null != n && "value" in n ? n.value : true)
         }
         return e.content;
       case y.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED:
         return N(O, E, e.content);
       case y.lAJ.GUILD_INCIDENT_ALERT_MODE_DISABLED:
-        return R(O, E);
+        return w(O, E);
       default:
         return e.content
     }

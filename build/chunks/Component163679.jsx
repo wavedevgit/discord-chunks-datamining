@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 163679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -70,7 +70,7 @@ let y = function(e) {
     } finally {
       x(false)
     }
-  }, [t]), E = l.useCallback(async e => {
+  }, [t]), T = l.useCallback(async e => {
     if (null !== n) {
       S(true);
       try {
@@ -90,19 +90,19 @@ let y = function(e) {
   (0, i.Ay)(() => {
     O()
   });
-  let T = l.useMemo(() => (null == n ? true : n.task_type) === m.wP.AGE_VERIFICATION, [n]);
+  let E = l.useMemo(() => (null == n ? true : n.task_type) === m.wP.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
     className: v.Tp,
     children: [(0, a.jsx)("img", {
       className: v.xX,
       src: j,
       alt: ""
-    }), T ? (0, a.jsx)(o.default, {
+    }), E ? (0, a.jsx)(o.default, {
       transitionState: r.ip4.ENTERED,
       entryPoint: s.q1.SAFETY_FLOWS,
       onClose: g.tE,
       onComplete: async () => {
-        await E({
+        await T({
           type: m.Ij.Empty
         })
       },
@@ -155,7 +155,7 @@ let y = function(e) {
             })]
           }), null === y && null != n && (0, a.jsx)(_, {
             task: n,
-            handleSubmit: E,
+            handleSubmit: T,
             disabled: C
           })]
         })

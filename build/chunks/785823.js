@@ -112,13 +112,13 @@ function N(e, t) {
   }
 }
 
-function R(e) {
+function w(e) {
   var t, n;
   let [r] = null != (t = e.embeds) ? t : [];
   return null != (n = null == r ? true : r.rawDescription) ? n : ""
 }
 
-function w(e) {
+function R(e) {
   let t = N(e, l.G.DECISION_OUTCOME);
   if (null != t) return t
 }
@@ -207,7 +207,7 @@ function U(e, t) {
     c = D(e),
     u = L(e),
     d = P(e),
-    f = w(e),
+    f = R(e),
     p = N(e, l.G.INTERACTION_CALLBACK_TYPE),
     _ = N(e, l.G.APPLICATION_NAME);
   if (null != d) {
@@ -291,7 +291,7 @@ function B(e) {
     n = N(e, l.G.ALERT_ACTIONS_EXECUTION),
     r = (0, m.v)(n);
   return {
-    content: R(e),
+    content: w(e),
     ruleName: N(e, l.G.RULE_NAME),
     decisionId: N(e, l.G.DECISION_ID),
     keyword: N(e, l.G.KEYWORD),

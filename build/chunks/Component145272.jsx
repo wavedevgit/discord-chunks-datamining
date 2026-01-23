@@ -2,7 +2,7 @@
 /** chunk id: 145272, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => w
+  e: () => R
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -98,24 +98,24 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   if (!(0, u.qt)(e)) return e;
   let t = s()(e);
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
 }
 
-function w(e) {
+function R(e) {
   let {
     value: t,
     onChange: n,
     className: a,
     colors: s,
     setColors: o
-  } = e, c = (0, h.A)(), [v, S] = i.useState(0), [T, w] = i.useState(t);
+  } = e, c = (0, h.A)(), [v, S] = i.useState(0), [T, R] = i.useState(t);
   i.useEffect(() => {
     if (s.length > 0 && v < s.length) {
       let e = s[v];
-      (0, u.qt)(e) && (w(e), n(e))
+      (0, u.qt)(e) && (R(e), n(e))
     }
     v >= s.length && S(0)
   }, [v, s, n]);
@@ -125,13 +125,13 @@ function w(e) {
     },
     D = e => {
       let t = P(e);
-      if (w(t), (0, u.qt)(t) && ((0, E.CE)(), n(t), s.length > 0)) {
+      if (R(t), (0, u.qt)(t) && ((0, E.CE)(), n(t), s.length > 0)) {
         let e = [...s];
         e[v] = t, o(e)
       }
     },
     x = i.useCallback(e => {
-      w(e.hex)
+      R(e.hex)
     }, []),
     L = e => {
       if ((0, E.VE)(), n(e.hex), s.length > 0) {
@@ -150,7 +150,7 @@ function w(e) {
       if (s.length === I) return;
       0 === s.length && (0, g.eq)(), (0, E.HU)();
       let e = s.length > 0 ? s[s.length - 1] : T,
-        t = s.length > 0 ? R(e) : e,
+        t = s.length > 0 ? w(e) : e,
         n = [...s, t];
       o(n), S(n.length - 1)
     }, k = e => {

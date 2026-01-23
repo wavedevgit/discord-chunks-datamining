@@ -92,14 +92,14 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     channel: t
   } = e;
   return v.delete(t.id)
 }
 
-function w(e) {
+function R(e) {
   let {
     channelId: t,
     message: n
@@ -168,8 +168,8 @@ let j = new L(Chunk73153.h, {
   CACHE_LOADED_LAZY: D,
   CHANNEL_UPDATES: N,
   CHANNEL_CREATE: C,
-  CHANNEL_DELETE: R,
-  MESSAGE_CREATE: w,
+  CHANNEL_DELETE: w,
+  MESSAGE_CREATE: R,
   GUILD_CREATE: P,
   LOGOUT: A
 })

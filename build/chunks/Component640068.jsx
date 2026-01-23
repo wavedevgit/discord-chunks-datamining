@@ -101,7 +101,7 @@ function S(e) {
         type: l.ToastType.SUCCESS
       }), e.preventDefault(), e.stopPropagation()
     })
-  }, [n]), R = (0, r.jsx)(l.sqX, {
+  }, [n]), w = (0, r.jsx)(l.sqX, {
     "aria-label": "Toggle visibility",
     onClick: A,
     children: (0, r.jsxs)(l.Text, {
@@ -131,15 +131,15 @@ function S(e) {
   });
   if (!h) return (0, r.jsx)("div", {
     className: O.Os,
-    children: R
+    children: w
   });
-  let w = "";
-  return w = t.system === u.l5.LEGACY ? "Currently assigned to bucket ".concat(null != S ? S : b.RE.NOT_ELIGIBLE) : null != S ? "Currently assigned to variant ".concat(S) : "Currently unassigned", (0, r.jsxs)("div", {
+  let R = "";
+  return R = t.system === u.l5.LEGACY ? "Currently assigned to bucket ".concat(null != S ? S : b.RE.NOT_ELIGIBLE) : null != S ? "Currently assigned to variant ".concat(S) : "Currently unassigned", (0, r.jsxs)("div", {
     className: O.Os,
-    children: [R, (0, r.jsx)("div", {
+    children: [w, (0, r.jsx)("div", {
       children: (0, r.jsx)(d.g, {
         label: t.system === u.l5.LEGACY ? "Bucket Override" : "Variant Override",
-        description: w,
+        description: R,
         experiment: t,
         experimentId: n,
         overrideInfo: a

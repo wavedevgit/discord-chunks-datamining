@@ -70,11 +70,11 @@ function N(e) {
   y[e.invite.code] = p.A.createFromServer(e.invite), r = null != (t = s()(l()(u()(Object.values(y), "createdAt")))) ? t : null, v = false
 }
 
-function R() {
+function w() {
   v = false
 }
 
-function w(e) {
+function R(e) {
   var t;
   null != e.invites && e.invites.forEach(e => {
     null != y[e.code] && delete y[e.code]
@@ -128,8 +128,8 @@ let k = new M(Chunk73153.h, {
   CONNECTION_OPEN: A,
   CHANNEL_DELETE: I,
   FRIEND_INVITE_CREATE_SUCCESS: N,
-  FRIEND_INVITE_CREATE_FAILURE: R,
-  FRIEND_INVITE_REVOKE_SUCCESS: w,
+  FRIEND_INVITE_CREATE_FAILURE: w,
+  FRIEND_INVITE_REVOKE_SUCCESS: R,
   INSTANT_INVITE_CREATE_SUCCESS: S,
   INSTANT_INVITE_CREATE_FAILURE: T,
   INSTANT_INVITE_REVOKE_SUCCESS: C,

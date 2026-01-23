@@ -82,7 +82,7 @@ class W extends Chunk64700.PureComponent {
   }
   tokenize(e) {
     let t = (0, T._o)(v.pe(e)).filter(e => e.type !== f.Ay.NON_TOKEN_TYPE);
-    return v.uD(t, e, R.Ay)
+    return v.uD(t, e, w.Ay)
   }
   clearSearch() {
     let {
@@ -281,7 +281,7 @@ class W extends Chunk64700.PureComponent {
           _editorRef: e
         } = this;
         null == e || e.focus(), this.handleSetSearchQuery({
-          query: R.Ay[U.LWr.FILTER_IN].key + "".concat(s, " "),
+          query: w.Ay[U.LWr.FILTER_IN].key + "".concat(s, " "),
           replace: true,
           searchQuerySource: M.Q_.SEARCH_TEXT_INPUT
         })
@@ -382,7 +382,7 @@ class W extends Chunk64700.PureComponent {
       let {
         searchContext: t
       } = this.props;
-      w.A.updateSearchEditorState(t, e)
+      R.A.updateSearchEditorState(t, e)
     }), F(this, "getPopoutRef", () => {
       let {
         current: e
@@ -410,7 +410,7 @@ class W extends Chunk64700.PureComponent {
         if (e.preventDefault(), v.Im(a)) this.blurEditor();
         else {
           let e = v.Xq(a);
-          w.A.updateSearchEditorState(s, e), this.setState({
+          R.A.updateSearchEditorState(s, e), this.setState({
             focused: true
           })
         }
@@ -454,7 +454,7 @@ function K(e) {
   i.useEffect(() => {
     l && c.current !== l && (c.current = l, P.A.ensureSearchInputDecorators(t))
   }, [l, t]);
-  let f = i.useMemo(() => null != o ? o : v.e_(A.ys(R.Ay)), [o]),
+  let f = i.useMemo(() => null != o ? o : v.e_(A.ys(w.Ay)), [o]),
     {
       isSearching: p,
       hasResults: h
@@ -489,7 +489,7 @@ function K(e) {
         query: r,
         queryString: n,
         searchQuerySource: a
-      }), w.A.updateSearchMode(t, U.BBH.NEWEST), Y({
+      }), R.A.updateSearchMode(t, U.BBH.NEWEST), Y({
         searchContext: t,
         searchQueryString: n,
         searchEverywhere: i,

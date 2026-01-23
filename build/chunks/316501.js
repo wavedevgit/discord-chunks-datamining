@@ -7,7 +7,7 @@ require.d(exports, {
   Pk: () => k,
   Q_: () => M,
   Ze: () => x,
-  pF: () => w,
+  pF: () => R,
   sv: () => j
 }), require("./896048.js"), require("./446912.js"), require("./114821.js"), require("./339614.js"), require("./321073.js"), require("./638769.js");
 var Chunk695497 = require("./695497.js"),
@@ -366,10 +366,10 @@ class C extends T {
   }
 }
 let N = null,
-  R = null;
+  w = null;
 
-function w() {
-  return null != R ? R : R = new Promise(async e => {
+function R() {
+  return null != w ? w : w = new Promise(async e => {
     await y(), N = new C(p), document.addEventListener("keydown", e => {
       try {
         null == N || N.addEvent(e)
@@ -384,7 +384,7 @@ function w() {
 }
 
 function P() {
-  return null == N ? (w(), null) : N
+  return null == N ? (R(), null) : N
 }
 async function D() {
   var e;

@@ -9,8 +9,8 @@ require.d(exports, {
   Jm: () => G,
   Tv: () => M,
   UK: () => L,
-  a9: () => R,
-  k$: () => w,
+  a9: () => w,
+  k$: () => R,
   kK: () => k,
   p5: () => Y,
   qR: () => F,
@@ -65,21 +65,21 @@ function N() {
   return ((0, c.d6)(r.t.AGE_GATED_SPACES) || e) && t
 }
 
-function R() {
+function w() {
   let e = (0, c.aX)(r.t.AGE_GATED_SPACES),
     t = (0, u.j)("age-gate-utils"),
     n = (0, l.i2)();
   return (e || t) && n
 }
 
-function w(e) {
+function R(e) {
   let t = (0, l.b8)(),
     n = (0, d.wh)(e),
     r = (0, i.bG)([h.default], () => {
       var e;
       return (null == (e = h.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     }),
-    c = R(),
+    c = w(),
     {
       enabled: u
     } = s.Y.useConfig({
@@ -117,7 +117,7 @@ function w(e) {
 
 function P(e) {
   let t = (0, l.b8)(),
-    n = R(),
+    n = w(),
     r = e === y.w_.NSFW_SERVER || e === y.w_.NSFW_SERVER_INVITE || e === y.w_.NSFW_SERVER_INVITE_EMBED,
     a = (0, i.bG)([h.default], () => {
       var e;

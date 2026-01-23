@@ -116,12 +116,12 @@ function N() {
   } : y.userDiscountOffers = {}, y.userTrialOffers = {}, true)
 }
 
-function R() {
+function w() {
   let e = l.default.getCurrentUser();
   !(0, u.TW)(e) && Object.keys(y.userDiscountOffers).length > 0 && (0, o._D)("UserOfferStore", true)
 }
 
-function w() {
+function R() {
   var e;
   let t = null == (e = l.default.getCurrentUser()) ? true : e.id;
   if (null == t) returnfalse;
@@ -134,7 +134,7 @@ function w() {
 }
 class P extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    y = null != e ? e : E, this.waitFor(c.A, s.A, d.A, l.default), this.syncWith([l.default], C), this.syncWith([d.A], N), this.syncWith([s.A], w)
+    y = null != e ? e : E, this.waitFor(c.A, s.A, d.A, l.default), this.syncWith([l.default], C), this.syncWith([d.A], N), this.syncWith([s.A], R)
   }
   getUserTrialOffer(e) {
     if (null !== e) return y.userTrialOffers[e]
@@ -229,8 +229,8 @@ let D = new P(Chunk73153.h, {
   BILLING_USER_OFFER_FETCH_SUCCESS: v,
   BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: S,
   BILLING_USER_OFFER_FETCH_FAIL: A,
-  BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: R,
-  BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: R,
-  BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: R,
+  BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: w,
+  BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: w,
+  BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: w,
   LOGOUT: T
 })

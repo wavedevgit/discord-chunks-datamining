@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => N,
-  L: () => R
+  L: () => w
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -48,12 +48,12 @@ function N() {
       children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(O.A, {})]
     }), (0, r.jsx)(d.x, {
       setting: v.H.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
-      children: (0, r.jsx)(R, {})
+      children: (0, r.jsx)(w, {})
     })]
   })
 }
 
-function R() {
+function w() {
   let {
     analyticsLocations: e
   } = (0, l.Ay)(), [t, n] = i.useState(I.XH), o = (0, h.mz)(t), d = C(o), E = (null == o ? true : o.type) === h.PP.GLOBAL, b = (0, a.bG)([p.A], () => p.A.hasFetchedAllSounds()) && null != o && null == d;
@@ -68,7 +68,7 @@ function R() {
     let {
       inDropdown: n
     } = t;
-    return null == e ? null : n ? (0, r.jsx)(w, {
+    return null == e ? null : n ? (0, r.jsx)(R, {
       guildId: e.value
     }) : null
   }, []);
@@ -114,7 +114,7 @@ function R() {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     guildId: t
   } = e, n = (0, a.bG)([E.A], () => {

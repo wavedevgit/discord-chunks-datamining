@@ -32,7 +32,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk415097 = require("./415097.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,7 +48,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -75,7 +75,7 @@ function L(e) {
   var t;
   let {
     application: a,
-    context: w,
+    context: R,
     className: D,
     sectionName: L
   } = e, j = i.useRef(null), M = (0, l.bG)([A.A], () => A.A.entrypoint()), k = (0, I.Pp)(a), U = (0, _.Ie)(k), G = (0, f.G)(a.id), V = (0, l.bG)([E.A], () => {
@@ -91,9 +91,9 @@ function L(e) {
     label: N.intl.string(N.t["+NP/b2"])
   }), Y = (0, S.r)({
     application: a
-  }), W = (0, o.Lt)(null != (t = a.flags) ? t : 0, C.gfo.EMBEDDED), K = "channel" === w.type ? w.channel : true;
+  }), W = (0, o.Lt)(null != (t = a.flags) ? t : 0, C.gfo.EMBEDDED), K = "channel" === R.type ? R.channel : true;
   return (0, r.jsxs)("div", {
-    className: R.k,
+    className: w.k,
     children: [(0, r.jsx)(c.DUT, {
       onClick: () => {
         let e = W ? (0, p.W)({
@@ -107,7 +107,7 @@ function L(e) {
           source: M
         })
       },
-      className: s()(R.v, D),
+      className: s()(w.v, D),
       "aria-label": N.intl.string(N.t.WqhZss),
       children: (0, r.jsx)(c.qYV, {
         size: "sm",
@@ -182,7 +182,7 @@ function L(e) {
         innerRef: j
       }, e), {
         onClick: e.onClick,
-        className: s()(R.v, D),
+        className: s()(w.v, D),
         "aria-label": N.intl.string(N.t["UKOtz+"]),
         children: (0, r.jsx)(c.jNK, {
           size: "sm",

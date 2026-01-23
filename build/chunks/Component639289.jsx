@@ -43,19 +43,19 @@ let y = 1e3,
       y && N(true)
     }, [y]);
     let {
-      mediaUrls: R,
-      isSuccess: w
+      mediaUrls: w,
+      isSuccess: R
     } = (0, _.A)(!b && a && C), P = (0, i.useRef)(null), [D, x] = (0, i.useState)(false), [L, j] = (0, i.useState)(false), [M, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        a && n && !U && "none" === M && (b || !w ? (k("static"), b || (G(true), f.default.track(h.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (k("animated"), j(true), e = true), c.h.dispatch({
+        a && n && !U && "none" === M && (b || !R ? (k("static"), b || (G(true), f.default.track(h.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (k("animated"), j(true), e = true), c.h.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
         }), f.default.track(h.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
           wow_moment_type: e ? "animated" : "static"
         }))
-      }, [b, a, n, w, U, M]), (0, i.useEffect)(() => {
+      }, [b, a, n, R, U, M]), (0, i.useEffect)(() => {
         function e() {
           x(true), T()
         }
@@ -80,7 +80,7 @@ let y = 1e3,
             onEnded: S,
             className: s()(m.Ki, "entry" === O ? m.RK : m.R),
             children: (0, r.jsx)("source", {
-              src: R.modalGlowEntry
+              src: w.modalGlowEntry
             })
           })
         }), (0, r.jsx)(d.A, {
@@ -90,7 +90,7 @@ let y = 1e3,
           loop: true,
           className: s()(m.Ki, "idle" === O ? m.RK : m.R),
           children: (0, r.jsx)("source", {
-            src: R.modalGlowIdle
+            src: w.modalGlowIdle
           })
         }), (0, r.jsx)(d.A, {
           ref: I,
@@ -98,7 +98,7 @@ let y = 1e3,
           muted: true,
           className: s()(m.Ki, "exit" === O ? m.RK : m.R),
           children: (0, r.jsx)("source", {
-            src: R.modalGlowExit
+            src: w.modalGlowExit
           })
         })]
       }), (0, r.jsx)("div", {

@@ -112,14 +112,14 @@ let y = Chunk64700.memo(function(e) {
       onShowProfile: A,
       onClose: I
     } = e, S = i.useRef(null), T = (0, o.bG)([d.default], () => d.default.getUser(n), [n]), C = (0, o.bG)([u.A], () => u.A.theme), N = true !== t ? t : null == T ? true : T.primaryGuild, {
-      tag: R,
-      badge: w,
+      tag: w,
+      badge: R,
       guildId: P
     } = (0, f.Zo)(N);
     return (0, f.Wb)(n, a, N) && null != P ? O ? (0, r.jsx)(b, {
       guildId: P,
-      guildTag: R,
-      guildBadge: w,
+      guildTag: w,
+      guildBadge: R,
       className: s()(m.Zy, p),
       textVariant: h,
       textColor: g,
@@ -137,8 +137,8 @@ let y = Chunk64700.memo(function(e) {
           ref: S,
           children: (0, r.jsx)(b, E({
             guildId: P,
-            guildTag: R,
-            guildBadge: w,
+            guildTag: w,
+            guildBadge: R,
             className: p,
             textVariant: h,
             textColor: g,

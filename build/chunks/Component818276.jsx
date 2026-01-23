@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 818276, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -30,18 +30,18 @@ let b = Chunk64700.forwardRef(function(e, t) {
     taskDetails: y,
     isExpanded: A,
     isExpansionAnimationComplete: C
-  } = l.useContext(p.T), S = (null == (n = _.userStatus) ? true : n.completedAt) != null, O = (0, c.I3)(_), E = l.useRef(null), T = (null == (r = _.userStatus) ? true : r.enrolledAt) != null, N = null != O ? O.percentComplete : y.percentComplete, [w, I] = l.useState(false);
+  } = l.useContext(p.T), S = (null == (n = _.userStatus) ? true : n.completedAt) != null, O = (0, c.I3)(_), T = l.useRef(null), E = (null == (r = _.userStatus) ? true : r.enrolledAt) != null, N = null != O ? O.percentComplete : y.percentComplete, [w, I] = l.useState(false);
   return (0, a.jsxs)(a.Fragment, {
     children: [S && (0, a.jsx)(m.A, {
       overlayRef: v,
-      progressBarRef: E,
+      progressBarRef: T,
       isHovered: w
     }), (0, a.jsx)(s.animated.div, {
       ref: t,
       "aria-hidden": A && C,
       className: i()(b, f.hR, {
         [f.Ag]: A,
-        [f.s]: T
+        [f.s]: E
       }),
       style: {
         opacity: j.to({
@@ -58,9 +58,9 @@ let b = Chunk64700.forwardRef(function(e, t) {
           children: [(0, a.jsx)(x.A, {}), (0, a.jsx)("div", {
             className: f.yF
           })]
-        }), T ? (0, a.jsx)(h.A, {
+        }), E ? (0, a.jsx)(h.A, {
           contentLocation: "collapsed",
-          progressBarRef: E,
+          progressBarRef: T,
           isExpanded: false,
           percentComplete: N
         }) : null, S && (0, a.jsx)(u.f, {

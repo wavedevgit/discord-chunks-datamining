@@ -91,10 +91,10 @@ let S = {
       setShouldFireConfetti: T,
       tier: C,
       tierMarkerAnimationPosition: N,
-      totalAvailableBoostsCount: R
+      totalAvailableBoostsCount: w
     } = e, {
-      analyticsLocations: w
-    } = (0, c.Ay)(), P = (0, u.A)(), D = h.M2T[C], x = D - R, L = C <= N || b, j = L && C <= i.premiumTier, M = L && C < i.premiumTier, k = L && C === i.premiumTier, U = i.premiumTier < C && R >= D, {
+      analyticsLocations: R
+    } = (0, c.Ay)(), P = (0, u.A)(), D = h.M2T[C], x = D - w, L = C <= N || b, j = L && C <= i.premiumTier, M = L && C < i.premiumTier, k = L && C === i.premiumTier, U = i.premiumTier < C && w >= D, {
       scaleFactor: G
     } = (0, l.zhh)({
       from: {
@@ -126,7 +126,7 @@ let S = {
 
     function F() {
       !L || U || (0, p.g)({
-        analyticsLocations: w,
+        analyticsLocations: R,
         analyticsLocation: {
           page: h.liQ.PREMIUM_GUILD_USER_MODAL,
           section: h.JJy.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR,

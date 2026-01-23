@@ -33,8 +33,8 @@ let a = {
   T = 65501,
   C = 65498,
   N = 65504,
-  R = 65505,
-  w = 65506,
+  w = 65505,
+  R = 65506,
   P = 65517,
   D = 65519,
   x = 65534,
@@ -56,8 +56,8 @@ function F(e) {
     else if (i.A.USE_FILE && H(e, O)) t = e.getUint16(O + u), r = O + u;
     else if (i.A.USE_JFIF && K(e, O)) t = e.getUint16(O + u), a = O + d;
     else if (i.A.USE_EXIF && z(e, O)) t = e.getUint16(O + u), s = O + f;
-    else if (i.A.USE_XMP && q(e, O)) _ || (_ = []), t = e.getUint16(O + u), _.push($(O, t));
-    else if (i.A.USE_XMP && Z(e, O)) _ || (_ = []), t = e.getUint16(O + u), _.push(J(O, t));
+    else if (i.A.USE_XMP && q(e, O)) _ || (_ = []), t = e.getUint16(O + u), _.push(J(O, t));
+    else if (i.A.USE_XMP && X(e, O)) _ || (_ = []), t = e.getUint16(O + u), _.push($(O, t));
     else if (i.A.USE_IPTC && ee(e, O)) t = e.getUint16(O + u), o = O + p;
     else if (i.A.USE_ICC && Y(e, O)) {
       t = e.getUint16(O + u);
@@ -101,12 +101,12 @@ function H(e, t) {
 
 function Y(e, t) {
   let n = E.length;
-  return e.getUint16(t) === w && (0, r.hT)(e, t + c, n) === E
+  return e.getUint16(t) === R && (0, r.hT)(e, t + c, n) === E
 }
 
 function W(e, t) {
   let n = O.length;
-  return e.getUint16(t) === w && (0, r.hT)(e, t + c, n) === O
+  return e.getUint16(t) === R && (0, r.hT)(e, t + c, n) === O
 }
 
 function K(e, t) {
@@ -116,20 +116,20 @@ function K(e, t) {
 
 function z(e, t) {
   let n = M.length;
-  return e.getUint16(t) === R && (0, r.hT)(e, t + c, n) === M && 0 === e.getUint8(t + c + n)
+  return e.getUint16(t) === w && (0, r.hT)(e, t + c, n) === M && 0 === e.getUint8(t + c + n)
 }
 
 function q(e, t) {
-  return e.getUint16(t) === R && X(e, t)
+  return e.getUint16(t) === w && Z(e, t)
 }
 
-function X(e, t) {
+function Z(e, t) {
   let n = k.length;
   return (0, r.hT)(e, t + c, n) === k
 }
 
-function Z(e, t) {
-  return e.getUint16(t) === R && Q(e, t)
+function X(e, t) {
+  return e.getUint16(t) === w && Q(e, t)
 }
 
 function Q(e, t) {
@@ -137,14 +137,14 @@ function Q(e, t) {
   return (0, r.hT)(e, t + c, n) === U
 }
 
-function $(e, t) {
+function J(e, t) {
   return {
     dataOffset: e + _,
     length: t - (_ - u)
   }
 }
 
-function J(e, t) {
+function $(e, t) {
   return {
     dataOffset: e + h,
     length: t - (h - u)

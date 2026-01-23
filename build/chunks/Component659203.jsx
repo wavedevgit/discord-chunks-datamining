@@ -92,12 +92,12 @@ let M = "???",
 class U extends Chunk64700.Component {
   getSystemMessageHeader() {
     let e = h.default.getUser(this.trialOffer.user_id);
-    if (this.isSender) return R.intl.format(R.t["4/EMxl"], {
+    if (this.isSender) return w.intl.format(w.t["4/EMxl"], {
       receiver: null == e ? true : e.username
     });
     let t = h.default.getUser(this.trialOffer.referrer_id),
       n = (null == t ? true : t.username) !== true ? t.username : "";
-    return R.intl.format(R.t.yisueA, {
+    return w.intl.format(w.t.yisueA, {
       sender: n,
       helpdeskArticle: y.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
     })
@@ -107,31 +107,31 @@ class U extends Chunk64700.Component {
       t = null != e ? e.username : M,
       n = h.default.getUser(this.trialOffer.referrer_id),
       r = null != n ? n.username : M;
-    return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? R.intl.formatToPlainString(R.t["Mptau/"], {
+    return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? w.intl.formatToPlainString(w.t["Mptau/"], {
       username: t
-    }) : this.offerExpired ? this.isSender ? R.intl.string(R.t["9SNdf4"]) : R.intl.formatToPlainString(R.t["H0+MxK"], {
+    }) : this.offerExpired ? this.isSender ? w.intl.string(w.t["9SNdf4"]) : w.intl.formatToPlainString(w.t["H0+MxK"], {
       userName: r
-    }) : R.intl.formatToPlainString(R.t.IiWKwg, {
+    }) : w.intl.formatToPlainString(w.t.IiWKwg, {
       senderUserName: r,
       recipientUserName: t
     })
   }
   getBodyText() {
-    return this.recipientHasNitro && !this.isSender && true === this.trialOffer.redeemed_at ? R.intl.format(R.t.LwCwT9, {
+    return this.recipientHasNitro && !this.isSender && true === this.trialOffer.redeemed_at ? w.intl.format(w.t.LwCwT9, {
       helpdeskArticle: y.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
-    }) : this.offerExpired ? null : R.intl.string(R.t.lQLlOb)
+    }) : this.offerExpired ? null : w.intl.string(w.t.lQLlOb)
   }
   renderActions() {
     let e = this.currentUser.id !== this.trialOffer.user_id || (0, b.TW)(this.currentUser) || !this.currentUser.verified || (0, T.P)(this.trialOffer),
       t = this.renderExpirationDate();
     return (0, r.jsxs)("div", {
-      className: w.UD,
+      className: R.UD,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(c.Button, {
           variant: "primary",
           disabled: e,
           size: "sm",
-          text: R.intl.string(R.t.O0etsF),
+          text: w.intl.string(w.t.O0etsF),
           onClick: () => {
             (0, _.A)({
               initialPlanId: null,
@@ -143,7 +143,7 @@ class U extends Chunk64700.Component {
           }
         })
       }), (0, r.jsx)("div", {
-        className: w.yu,
+        className: R.yu,
         children: t
       })]
     })
@@ -153,18 +153,18 @@ class U extends Chunk64700.Component {
       trialOffer: e,
       trialEndsAt: t
     } = this.props;
-    if (true !== e.redeemed_at && !this.isSender && null !== t) return R.intl.formatToPlainString(R.t.nP0ivR, {
+    if (true !== e.redeemed_at && !this.isSender && null !== t) return w.intl.formatToPlainString(w.t.nP0ivR, {
       date: (0, E.i$)(s()(t), "LL")
     });
     if (this.recipientHasNitro || true === e.expires_at) return null;
     let n = s()(e.expires_at);
-    return this.offerExpired ? R.intl.formatToPlainString(R.t.PuSHfU, {
+    return this.offerExpired ? w.intl.formatToPlainString(w.t.PuSHfU, {
       date: (0, E.i$)(s()(n), "LL")
     }) : (0, v.GQ)(n.valueOf())
   }
   renderMedia() {
     return (0, r.jsx)("div", {
-      className: w.Qj
+      className: R.Qj
     })
   }
   render() {
@@ -175,27 +175,27 @@ class U extends Chunk64700.Component {
           r = null != n ? n.username : M;
         if (this.isSender)
           if (this.recipientHasNitro && true === this.trialOffer.redeemed_at) return {
-            headerText: R.intl.formatToPlainString(R.t.qABVhL, {
+            headerText: w.intl.formatToPlainString(w.t.qABVhL, {
               recipient: t
             }),
-            bodyText: R.intl.formatToPlainString(R.t.u7hyDx, {
+            bodyText: w.intl.formatToPlainString(w.t.u7hyDx, {
               helpdeskArticle: y.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
             })
           };
           else return {
-            headerText: R.intl.string(R.t.LAGZfq),
-            bodyText: R.intl.formatToPlainString(R.t["0gnFLC"], {
+            headerText: w.intl.string(w.t.LAGZfq),
+            bodyText: w.intl.formatToPlainString(w.t["0gnFLC"], {
               recipient: t
             })
           };
         return this.offerExpired ? {
-          headerText: R.intl.string(R.t.nYvpUl),
-          bodyText: R.intl.formatToPlainString(R.t.wJdBEZ, {
+          headerText: w.intl.string(w.t.nYvpUl),
+          bodyText: w.intl.formatToPlainString(w.t.wJdBEZ, {
             sender: r
           })
         } : {
-          headerText: R.intl.string(R.t.HtTvXA),
-          bodyText: R.intl.formatToPlainString(R.t.wOQByA, {
+          headerText: w.intl.string(w.t.HtTvXA),
+          bodyText: w.intl.formatToPlainString(w.t.wOQByA, {
             sender: r
           })
         }
@@ -203,7 +203,7 @@ class U extends Chunk64700.Component {
       t = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(S.A, {
           subscriptionTier: C.pe.TIER_2,
-          buttonTextOverride: R.intl.string(R.t.O0etsF),
+          buttonTextOverride: w.intl.string(w.t.O0etsF),
           size: "md",
           variantOverride: "expressive"
         }), (0, r.jsx)(c.Text, {
@@ -220,37 +220,37 @@ class U extends Chunk64700.Component {
           analyticsLocations: [],
           startingScreen: this.referralsSent.size === A.Z ? I.SelectFriendsModalScreens.REMINDER : I.SelectFriendsModalScreens.SELECT_FRIENDS
         }),
-        text: R.intl.string(R.t.Lm2nFc)
+        text: w.intl.string(w.t.Lm2nFc)
       }),
       i = this.isSender ? n : t,
       a = (0, r.jsx)(c._V3, {
         src: P.A,
         height: 84,
         width: 144,
-        className: w.ms
+        className: R.ms
       }),
       {
         headerText: s,
         bodyText: o
       } = e();
     return (0, r.jsxs)(p.A, {
-      className: w.SB,
+      className: R.SB,
       iconNode: (0, r.jsx)(c.tvc, {
         size: "md",
         color: "currentColor"
       }),
-      iconContainerClassName: w.J5,
+      iconContainerClassName: R.J5,
       compact: this.compact,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-strong",
         children: this.getSystemMessageHeader()
       }), (0, r.jsxs)("div", {
-        className: w.i2,
+        className: R.i2,
         children: [a, (0, r.jsxs)("div", {
-          className: w.KX,
+          className: R.KX,
           children: [(0, r.jsxs)("div", {
-            className: w.xJ,
+            className: R.xJ,
             children: [(0, r.jsx)(c.Heading, {
               variant: "heading-md/semibold",
               color: "text-strong",
@@ -261,7 +261,7 @@ class U extends Chunk64700.Component {
               children: o
             })]
           }), (0, r.jsx)("div", {
-            className: w.ox,
+            className: R.ox,
             children: i
           })]
         })]
@@ -303,9 +303,9 @@ function G(e) {
     analyticsLocations: E,
     compact: i
   }) : (0, r.jsx)("div", {
-    className: w.TU,
+    className: R.TU,
     children: (0, r.jsx)("div", {
-      className: w.Gq
+      className: R.Gq
     })
   })
 }

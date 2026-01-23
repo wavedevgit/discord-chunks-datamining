@@ -281,11 +281,11 @@ let ez = Chunk64700.memo(function() {
     c = (0, u.bG)([eO.Ay], () => eO.Ay.getNotice()),
     {
       analyticsLocations: g
-    } = (0, w.Ay)(),
+    } = (0, R.Ay)(),
     C = (0, K.H)(l),
     {
-      windowsMuteAndZeroVolumeDetectionEnabled: R
-    } = (0, $.I)({
+      windowsMuteAndZeroVolumeDetectionEnabled: w
+    } = (0, J.I)({
       location: "AppNotice"
     });
   i.useEffect(() => {
@@ -301,12 +301,12 @@ let ez = Chunk64700.memo(function() {
       })()
     }
   }, [c]);
-  let G = (0, J.x5)(ew.oh.AUDIO_INPUT),
+  let G = (0, $.x5)(eR.oh.AUDIO_INPUT),
     [ep, ev] = i.useState(""),
     [eC, ex] = i.useState(null),
     [ej, ek] = i.useState(null);
   if (i.useEffect(() => {
-      if ((0, eI.isWindows)() && R) {
+      if ((0, eI.isWindows)() && w) {
         let e = null == G ? true : G.guid;
         null != e && "" !== e && (ev(e), eS.Ay.ensureModule("discord_voice").then(() => {
           try {
@@ -316,7 +316,7 @@ let ez = Chunk64700.memo(function() {
           } catch (e) {}
         }).catch())
       }
-    }, [R, null == G ? true : G.guid]), null == c) return null;
+    }, [w, null == G ? true : G.guid]), null == c) return null;
   let eG = null != c.type ? eO.Re[c.type] : null,
     eV = null != c.type ? eO.k3[c.type] : null,
     ez = null != c.type ? eO.f7[c.type] : null,
@@ -336,7 +336,7 @@ let ez = Chunk64700.memo(function() {
     dismissibleContent: eq,
     noticeType: c.type
   });
-  let eX = null == (e = c.metadata) ? true : e.premiumType;
+  let eZ = null == (e = c.metadata) ? true : e.premiumType;
   switch (c.type) {
     case eT.kqX.PTT_NO_KEYBIND_WARNING:
       return (0, r.jsx)(ef.A, {});
@@ -348,10 +348,10 @@ let ez = Chunk64700.memo(function() {
       return (0, r.jsx)(el.A, {});
     case eT.kqX.GUILD_RAID_NOTIFICATION:
       let {
-        dismissUntil: eZ
+        dismissUntil: eX
       } = c.metadata;
       return (0, r.jsx)(B.A, {
-        onDismiss: () => eK(eZ)
+        onDismiss: () => eK(eX)
       });
     case eT.kqX.WIN32_DEPRECATED_MESSAGE:
       let {
@@ -368,12 +368,12 @@ let ez = Chunk64700.memo(function() {
       });
     case eT.kqX.WIN7_8_DEPRECATED_MESSAGE:
       let {
-        dismissUntil: e$
+        dismissUntil: eJ
       } = c.metadata;
       return (0, r.jsxs)(f.$Td, {
         color: f.Hv$.WARNING,
         children: [(0, r.jsx)(f.PMB, {
-          onClick: () => eK(e$),
+          onClick: () => eK(eJ),
           noticeType: c.type
         }), eP.intl.format(eP.t["8Je+dX"], {
           helpCenterLink: eA.A.getArticleURL(eT.MVz.WIN7_8_DEPRECATE)
@@ -381,12 +381,12 @@ let ez = Chunk64700.memo(function() {
       });
     case eT.kqX.MACOS_19_DEPRECATED_MESSAGE:
       let {
-        dismissUntil: eJ
+        dismissUntil: e$
       } = c.metadata;
       return (0, r.jsxs)(f.$Td, {
         color: f.Hv$.WARNING,
         children: [(0, r.jsx)(f.PMB, {
-          onClick: () => eK(eJ),
+          onClick: () => eK(e$),
           noticeType: c.type
         }), eP.intl.format(eP.t.q8VPLo, {
           helpCenterLink: eA.A.getArticleURL(eT.MVz.MACOS_19_DEPRECATE)
@@ -515,9 +515,9 @@ let ez = Chunk64700.memo(function() {
         })]
       });
     case eT.kqX.NO_INPUT_DETECTED:
-      if ((0, $.F)({
+      if ((0, J.F)({
           location: "AppNotice.trueTriggerPoint"
-        }), (0, eI.isWindows)() && R) {
+        }), (0, eI.isWindows)() && w) {
         if (true === eC) return (0, r.jsx)(eF, {
           deviceGuid: ep,
           noticeType: c.type
@@ -527,7 +527,7 @@ let ez = Chunk64700.memo(function() {
           noticeType: c.type
         })
       }
-      if (!eh.A.supports(ew.O5.LOOPBACK)) return (0, r.jsx)(eH, {
+      if (!eh.A.supports(eR.O5.LOOPBACK)) return (0, r.jsx)(eH, {
         noticeType: c.type
       });
       return (0, r.jsx)(eY, {
@@ -798,10 +798,10 @@ let ez = Chunk64700.memo(function() {
         })
       });
     case eT.kqX.VIEWING_ROLES:
-      return (0, r.jsx)(Z.A, {});
+      return (0, r.jsx)(X.A, {});
     case eT.kqX.PREMIUM_UNCANCEL:
       return (0, r.jsxs)(f.$Td, {
-        color: eX === eN.PremiumTypes.TIER_1 ? f.Hv$.PREMIUM_TIER_1 : eX === eN.PremiumTypes.TIER_0 ? f.Hv$.PREMIUM_TIER_0 : f.Hv$.PREMIUM_TIER_2,
+        color: eZ === eN.PremiumTypes.TIER_1 ? f.Hv$.PREMIUM_TIER_1 : eZ === eN.PremiumTypes.TIER_0 ? f.Hv$.PREMIUM_TIER_0 : f.Hv$.PREMIUM_TIER_2,
         children: [(0, r.jsx)(f.PMB, {
           noticeType: eT.kqX.PREMIUM_UNCANCEL,
           onClick: () => {
@@ -812,9 +812,9 @@ let ez = Chunk64700.memo(function() {
           size: "md",
           color: "currentColor",
           className: eD.PC
-        }), eX === eN.PremiumTypes.TIER_1 ? eP.intl.formatToPlainString(eP.t.fXv4wm, {
+        }), eZ === eN.PremiumTypes.TIER_1 ? eP.intl.formatToPlainString(eP.t.fXv4wm, {
           daysLeft: c.metadata.daysLeft
-        }) : eX === eN.PremiumTypes.TIER_0 ? eP.intl.formatToPlainString(eP.t.ZOHZMr, {
+        }) : eZ === eN.PremiumTypes.TIER_0 ? eP.intl.formatToPlainString(eP.t.ZOHZMr, {
           daysLeft: c.metadata.daysLeft
         }) : eP.intl.formatToPlainString(eP.t.outyHh, {
           daysLeft: c.metadata.daysLeft
@@ -828,13 +828,13 @@ let ez = Chunk64700.memo(function() {
               } = await Promise.all([n.e("14704"), n.e("47827")]).then(n.bind(n, 174705));
               return t => (0, r.jsx)(e, eM(eL({}, t), {
                 daysLeft: c.metadata.daysLeft,
-                premiumType: eX,
+                premiumType: eZ,
                 analyticsSource: "Nag Bar",
                 premiumSubscription: c.metadata.premiumSubscription
               }))
             })
           },
-          children: eX === eN.PremiumTypes.TIER_1 ? eP.intl.string(eP.t.BkbUPM) : eX === eN.PremiumTypes.TIER_0 ? eP.intl.string(eP.t.Px978X) : eP.intl.string(eP.t.LW5tCE)
+          children: eZ === eN.PremiumTypes.TIER_1 ? eP.intl.string(eP.t.BkbUPM) : eZ === eN.PremiumTypes.TIER_0 ? eP.intl.string(eP.t.Px978X) : eP.intl.string(eP.t.LW5tCE)
         })]
       });
     case eT.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
@@ -909,9 +909,9 @@ let ez = Chunk64700.memo(function() {
             var e, t;
             eK(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd)
           }
-        }), eX === eN.PremiumTypes.TIER_1 ? eP.intl.formatToPlainString(eP.t.b6QUvf, {
+        }), eZ === eN.PremiumTypes.TIER_1 ? eP.intl.formatToPlainString(eP.t.b6QUvf, {
           daysLeft: c.metadata.daysLeft
-        }) : eX === eN.PremiumTypes.TIER_0 ? eP.intl.formatToPlainString(eP.t["tURZ/M"], {
+        }) : eZ === eN.PremiumTypes.TIER_0 ? eP.intl.formatToPlainString(eP.t["tURZ/M"], {
           daysLeft: c.metadata.daysLeft
         }) : eP.intl.formatToPlainString(eP.t.AyC74I, {
           daysLeft: c.metadata.daysLeft
@@ -923,7 +923,7 @@ let ez = Chunk64700.memo(function() {
               section: eT.nc_.SUBSCRIPTIONS
             })
           },
-          children: eX === eN.PremiumTypes.TIER_1 ? eP.intl.string(eP.t.lboF5O) : eX === eN.PremiumTypes.TIER_0 ? eP.intl.string(eP.t["4UPwOq"]) : eP.intl.string(eP.t["P/VvGb"])
+          children: eZ === eN.PremiumTypes.TIER_1 ? eP.intl.string(eP.t.lboF5O) : eZ === eN.PremiumTypes.TIER_0 ? eP.intl.string(eP.t["4UPwOq"]) : eP.intl.string(eP.t["P/VvGb"])
         })]
       });
     case eT.kqX.BACK_TO_PREVIOUS_SCREEN:
@@ -942,7 +942,7 @@ let ez = Chunk64700.memo(function() {
       return (0, r.jsxs)(f.$Td, {
         color: f.Hv$.DANGER,
         children: [eP.intl.string(eP.t.DVFJYf), (0, r.jsx)(f.eCN, {
-          href: eR.q,
+          href: ew.q,
           target: "_blank",
           noticeType: c.type,
           children: eP.intl.string(eP.t.kvHdFN)
@@ -984,7 +984,7 @@ let ez = Chunk64700.memo(function() {
           },
           children: eP.intl.string(eP.t.oX14El)
         }), null != l ? (0, r.jsx)(f.zr9, {
-          onClick: () => X.A.open(l, eT.BEX.GUILD_AUTOMOD, true, eT.nd0.AUTOMOD_MENTION_SPAM),
+          onClick: () => Z.A.open(l, eT.BEX.GUILD_AUTOMOD, true, eT.nd0.AUTOMOD_MENTION_SPAM),
           children: eP.intl.string(eP.t["1R7QIx"])
         }) : null]
       });
@@ -1066,8 +1066,8 @@ let ez = Chunk64700.memo(function() {
 function eq() {
   let {
     analyticsLocations: e
-  } = (0, w.Ay)(R.A.NOTICE);
-  return (0, r.jsx)(w.f5, {
+  } = (0, R.Ay)(w.A.NOTICE);
+  return (0, r.jsx)(R.f5, {
     value: e,
     children: (0, r.jsx)(ez, {})
   })

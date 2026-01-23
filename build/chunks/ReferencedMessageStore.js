@@ -192,11 +192,11 @@ function N(e) {
   return y.deleteChannelCache(e.channel.id)
 }
 
-function R() {
+function w() {
   if (0 === y.retainWhere(e => null != u.A.getChannel(e))) returnfalse
 }
 
-function w(e, t) {
+function R(e, t) {
   if (!y.has(e, t)) returnfalse;
   y.set(e, t, {
     state: 2
@@ -208,7 +208,7 @@ function P(e) {
     id: t,
     channelId: n
   } = e;
-  return w(n, t)
+  return R(n, t)
 }
 
 function D(e) {
@@ -216,7 +216,7 @@ function D(e) {
     ids: t,
     channelId: n
   } = e;
-  return O(t, e => w(n, e))
+  return O(t, e => R(n, e))
 }
 
 function x(e) {
@@ -287,7 +287,7 @@ let U = new k(Chunk73153.h, {
   CREATE_PENDING_REPLY: x,
   CHANNEL_DELETE: N,
   THREAD_DELETE: N,
-  GUILD_DELETE: R,
+  GUILD_DELETE: w,
   CONNECTION_OPEN: L,
   LOGOUT: L
 })

@@ -113,12 +113,12 @@ function I(e) {
         }), t]
       })
     },
-    R = i.useMemo(() => (0, E.iA)(e.defaultValues, null == I ? true : I.id), [e.defaultValues, I]);
+    w = i.useMemo(() => (0, E.iA)(e.defaultValues, null == I ? true : I.id), [e.defaultValues, I]);
   return (0, r.jsx)(y.Ay, {
     selectActionComponent: e,
     queryOptions: T,
     renderIcon: C,
     renderOptionLabel: N,
-    defaultValues: R
+    defaultValues: w
   })
 }

@@ -98,20 +98,20 @@ function I(e) {
     viewingChannelId: T
   } = e, C = i.useRef(null), {
     analyticsLocations: N
-  } = (0, c.Ay)(l.A.USER_MENTION), R = (0, s.bG)([m.default], () => m.default.getUser(u)), w = (0, s.bG)([p.A], () => p.A.getChannel(y)), P = null != w ? w.getGuildId() : null, D = S || null == R || null == P || null == y ? true : e => {
-    null != w && (0, o.L3)(e, async () => {
+  } = (0, c.Ay)(l.A.USER_MENTION), w = (0, s.bG)([m.default], () => m.default.getUser(u)), R = (0, s.bG)([p.A], () => p.A.getChannel(y)), P = null != R ? R.getGuildId() : null, D = S || null == w || null == P || null == y ? true : e => {
+    null != R && (0, o.L3)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("97262"), n.e("29534"), n.e("33818"), n.e("55296"), n.e("84841"), n.e("43144")]).then(n.bind(n, 107632));
       return t => (0, r.jsx)(e, v(b({}, t), {
         viewingChannelId: T,
-        user: R,
-        channel: w,
+        user: w,
+        channel: R,
         guildId: P
       }))
     })
-  }, x = E.Ay.useName(R), L = (0, s.bG)([p.A, _.Ay, h.A], () => g.Ay.getNickname(P, y, R));
-  if (null == R) return (0, r.jsx)(A, {
+  }, x = E.Ay.useName(w), L = (0, s.bG)([p.A, _.Ay, h.A], () => g.Ay.getNickname(P, y, w));
+  if (null == w) return (0, r.jsx)(A, {
     userId: O,
     className: t,
     children: I
@@ -130,7 +130,7 @@ function I(e) {
     value: N,
     children: (0, r.jsx)(f.A, {
       targetElementRef: C,
-      user: R,
+      user: w,
       guildId: null != P ? P : true,
       channelId: y,
       position: a.Fr ? "top" : "right",

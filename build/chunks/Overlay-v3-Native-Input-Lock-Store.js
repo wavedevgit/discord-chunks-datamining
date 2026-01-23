@@ -93,12 +93,12 @@ function N(e) {
   }), null != n && v(false, n), true
 }
 
-function R() {
+function w() {
   let e = l.A.getFocusedPID();
   return (0, c.dK)(null != e ? e : null, "deactivate_all_regions"), null != e && O(true, e), true
 }
 
-function w() {
+function R() {
   return I(), true
 }
 
@@ -128,9 +128,9 @@ let L = new x(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {
     OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: T,
     OVERLAY_SET_INPUT_LOCKED: C,
     OVERLAY_ACTIVATE_REGION: N,
-    OVERLAY_DEACTIVATE_ALL_REGIONS: R,
+    OVERLAY_DEACTIVATE_ALL_REGIONS: w,
     OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: D,
-    OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: w,
+    OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: R,
     OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: P
   }),
   j = L

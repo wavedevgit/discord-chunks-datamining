@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 947926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => B,
@@ -78,8 +78,8 @@ function U(e) {
   } = (0, v.Gk)(), Y = l.useContext(N.Z) || h && B && !Q && !U, {
     isExpanded: J,
     setIsExpanded: X,
-    expandQuestBar: Z,
-    isExpansionAnimationComplete: $,
+    expandQuestBar: $,
+    isExpansionAnimationComplete: Z,
     isVisibilityAnimationAtRest: ee,
     expansionSpring: et,
     visibilitySpring: en,
@@ -102,7 +102,7 @@ function U(e) {
     quest: r,
     isExpanded: J,
     setIsExpanded: X,
-    expandQuestBar: Z,
+    expandQuestBar: $,
     isQuestCompleted: z,
     isQuestAccepted: H,
     prevIsQuestAccepted: K,
@@ -161,18 +161,18 @@ function U(e) {
             [D.E$]: J,
             [D.KA]: H
           }),
-          children: (0, a.jsx)(E.R, {
+          children: (0, a.jsx)(T.R, {
             springConfig: ea,
             isExpanded: J,
             children: (0, a.jsx)(C.oK, {
               expandedContentRef: ep,
               collapsedContentRef: eh,
               expansionSpring: et,
-              children: (0, a.jsxs)(T.C, {
+              children: (0, a.jsxs)(E.C, {
                 quest: r,
                 taskDetails: eg,
                 isExpanded: J,
-                isExpansionAnimationComplete: $,
+                isExpansionAnimationComplete: Z,
                 onCtxMenuClose: er,
                 onCtxMenuOpen: el,
                 onCtxMenuSelect: ei,

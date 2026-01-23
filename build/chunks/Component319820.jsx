@@ -75,7 +75,7 @@ let A = (e, t) => {
       children: t
     })
   },
-  R = e => {
+  w = e => {
     let {
       sku: t
     } = e, n = (0, u.bG)([f.A], () => f.A.getProduct(t.id));
@@ -88,7 +88,7 @@ let A = (e, t) => {
       shape: "square"
     }) : null
   },
-  w = e => {
+  R = e => {
     let {
       discount: t
     } = e, n = (0, u.bG)([g.default], () => g.default.locale), i = null != t && null != t.percentage_amount ? (0, E.l9)(n, -(t.percentage_amount / 100 * 1)) : null;
@@ -119,7 +119,7 @@ let A = (e, t) => {
       className: v.S,
       children: (0, r.jsxs)(S, {
         children: ["THREE_COLUMN" === l && (0, r.jsx)(T, {
-          children: (0, r.jsx)(R, {
+          children: (0, r.jsx)(w, {
             sku: t
           })
         }), (0, r.jsxs)(C, {
@@ -158,7 +158,7 @@ function D(e) {
     className: v.S,
     children: [(0, r.jsxs)(S, {
       children: ["THREE_COLUMN" === s && (0, r.jsx)(T, {
-        children: (0, r.jsx)(R, {
+        children: (0, r.jsx)(w, {
           sku: t
         })
       }), (0, r.jsxs)(C, {
@@ -175,7 +175,7 @@ function D(e) {
       })]
     }), null != m && (0, r.jsxs)(S, {
       children: ["THREE_COLUMN" === s && (0, r.jsx)(T, {
-        children: (0, r.jsx)(w, {
+        children: (0, r.jsx)(R, {
           discount: m
         })
       }), (0, r.jsx)(C, {

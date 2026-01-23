@@ -66,25 +66,25 @@ function V(e) {
       currentEmbeddedActivity: f.Ay.getCurrentEmbeddedActivity(),
       activityLaunchState: f.Ay.getLaunchState(d.id, null != Y ? Y : true)
     }), [Y, d.id]),
-    X = null == K ? true : K.userIds,
-    Z = (0, o.yK)([N.default], () => Array.from(null != X ? X : []).map(e => N.default.getUser(e)).filter(D.Vq), [X]),
+    Z = null == K ? true : K.userIds,
+    X = (0, o.yK)([N.default], () => Array.from(null != Z ? Z : []).map(e => N.default.getUser(e)).filter(D.Vq), [Z]),
     Q = (0, o.bG)([C.A], () => {
-      if (null == X) return null;
-      for (let e of X) {
+      if (null == Z) return null;
+      for (let e of Z) {
         let t = C.A.findActivity(e, e => e.application_id === d.id);
         if (null != t) return t
       }
       return null
-    }, [d.id, X]),
-    $ = null == Q ? true : Q.details,
-    J = i.useMemo(() => {
+    }, [d.id, Z]),
+    J = null == Q ? true : Q.details,
+    $ = i.useMemo(() => {
       let e = new I.Ay(d);
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.Gl), e
     }, [d]),
     ee = (0, h.vG)({
       userId: W,
       channelId: A,
-      application: J
+      application: $
     }),
     et = null == K,
     en = (0, L.I3)({
@@ -96,7 +96,7 @@ function V(e) {
     er = i.useId(),
     ei = null != q && q.isLaunching && q.componentId === er,
     ea = async () => {
-      R.default.track(j.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+      w.default.track(j.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
         channel_id: A,
         channel_type: null == H ? true : H.type,
@@ -116,20 +116,20 @@ function V(e) {
         analyticsLocations: V,
         componentId: er
       })
-    }, es = en.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), eo = (0, v.F)(J, () => {
-      R.default.track(j.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+    }, es = en.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), eo = (0, v.F)($, () => {
+      w.default.track(j.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
         channel_id: A,
         channel_type: null == H ? true : H.type,
         cta: "View"
       })
-    }), el = w.Ay.getApplicationIconURL({
+    }), el = R.Ay.getApplicationIconURL({
       id: d.id,
       icon: d.icon,
       bot: d.bot
     });
   en.disabled && (l = en.tooltip);
-  let ec = Z.length,
+  let ec = X.length,
     eu = null != (t = null == Q || null == (a = Q.timestamps) ? true : a.start) ? t : null == Q ? true : Q.created_at,
     ed = (0, b.y)({
       activity: Q,
@@ -154,7 +154,7 @@ function V(e) {
         color: "none",
         children: es
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [null != $ && (0, r.jsxs)("div", {
+        children: [null != J && (0, r.jsxs)("div", {
           className: G.oL,
           children: [null != eu && (0, r.jsxs)("div", {
             className: G.DT,
@@ -182,11 +182,11 @@ function V(e) {
               variant: "text-xs/medium",
               color: "none",
               lineClamp: 1,
-              children: $
+              children: J
             })]
           })]
         }), ec > 0 && (0, r.jsx)(b.$, {
-          activityUsers: Z,
+          activityUsers: X,
           guildId: P,
           activityText: ed.text
         })]

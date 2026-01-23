@@ -171,7 +171,7 @@ let s = (e, t) => {
     case a.o2.SEASONAL_STANDARD_BOX:
       switch (t) {
         case r.oA.IDLE:
-          s = () => n.e("12250").then(n.t.bind(n, 553998, 19)).then(e => {
+          s = () => n.e("12250").then(n.t.bind(n, 331617, 19)).then(e => {
             let {
               default: t
             } = e;

@@ -66,8 +66,8 @@ let O = "scientist:triggered",
   T = new Chunk626584.A("ExperimentStore"),
   C = false,
   N = {},
-  R = new Map,
-  w = {},
+  w = new Map,
+  R = {},
   P = {
     rawUserExperiments: [],
     rawGuildExperiments: []
@@ -117,13 +117,13 @@ function K(e) {
 let z = Date.now(),
   q = false;
 
-function X(e, t) {
+function Z(e, t) {
   let n = N[e];
   return !(null == n || (q ? n.time < z : Date.now() - n.time > B)) && n.hash === t
 }
 
-function Z(e, t) {
-  return R.get(e) === t
+function X(e, t) {
+  return w.get(e) === t
 }
 
 function Q(e) {
@@ -153,7 +153,7 @@ function Q(e) {
   let u = l === h.vf.AUTO_FALLBACK && !!n.triggerDebuggingEnabled,
     f = W(t, n, r, u),
     _ = K(n);
-  if (c && Z(f, _) || X(f, _)) returnfalse;
+  if (c && X(f, _) || Z(f, _)) returnfalse;
   if (n.type === h.Vh.USER) {
     let e = {
       name: t,
@@ -224,18 +224,18 @@ function Q(e) {
       fingerprint: s
     })
   }
-  c ? R.set(f, _) : (N[W(t, n, r, u)] = {
+  c ? w.set(f, _) : (N[W(t, n, r, u)] = {
     time: Date.now(),
     hash: K(n)
   }, eh(N))
 }
 
-function $(e) {
+function J(e) {
   let [t, n] = e;
   return null != _.k[t] ? _.k[t](n) : null
 }
 
-function J(e) {
+function $(e) {
   let t = {};
   if (null == e) return t;
   for (let {
@@ -266,7 +266,7 @@ function ee(e) {
         })
       }
     }),
-    filters: n.map($),
+    filters: n.map(J),
     rawFilterData: n
   }
 }
@@ -335,7 +335,7 @@ function en(e) {
       hashKey: n,
       revision: o,
       populations: l.map(ee),
-      overrides: J(c),
+      overrides: $(c),
       overridesFormatted: (null != u ? u : []).map(e => e.map(ee)),
       holdoutName: null != d ? d : null,
       holdoutControlBucket: null != f ? f : null,
@@ -444,9 +444,9 @@ function es(e) {
   for (let r in e) {
     var n;
     let i = e[r];
-    for (let e of (t[r] = E({}, i), t[r].populations)) e.filters = e.rawFilterData.map($);
+    for (let e of (t[r] = E({}, i), t[r].populations)) e.filters = e.rawFilterData.map(J);
     for (let e of null != (n = t[r].overridesFormatted) ? n : [])
-      for (let t of e) t.filters = t.rawFilterData.map($)
+      for (let t of e) t.filters = t.rawFilterData.map(J)
   }
   return t
 }
@@ -569,7 +569,7 @@ function em(e) {
     buckets: a,
     commonTriggerPoint: s
   } = e;
-  w[t] = {
+  R[t] = {
     type: n,
     title: r,
     description: i,
@@ -585,7 +585,7 @@ function eg(e) {
     experimentBucket: r,
     experimentType: i,
     skipCleanup: a
-  } = e, s = null != i ? i : null == (t = w[n]) ? true : t.type;
+  } = e, s = null != i ? i : null == (t = R[n]) ? true : t.type;
   if (null == s) returnfalse;
   if (null == r ? (j = E({}, j), delete j[n], M = E({}, M), delete M[n]) : "user" === s ? j = b(E({}, j), {
       [n]: {
@@ -604,7 +604,7 @@ function eg(e) {
       }
     }), !a)
     for (let e of [j, M])
-      for (let t in e) null == w[t] && delete j[t];
+      for (let t in e) null == R[t] && delete j[t];
   e_()
 }
 
@@ -635,7 +635,7 @@ class ey extends Chunk536802.A {
     return C
   }
   hasRegisteredExperiment(e) {
-    return null != w[e]
+    return null != R[e]
   }
   getUserExperimentDescriptor(e) {
     if (U) {
@@ -687,7 +687,7 @@ class ey extends Chunk536802.A {
     })
   }
   getRegisteredExperiments() {
-    return w
+    return R
   }
   getAllExperimentOverrideDescriptors() {
     return U ? E({}, j, M) : {}
@@ -699,7 +699,7 @@ class ey extends Chunk536802.A {
   getAllExperimentAssignments() {
     let e = {},
       t = {};
-    for (let n in Object.keys(w).forEach(e => {
+    for (let n in Object.keys(R).forEach(e => {
         t[V("".concat(e))] = e
       }), D) {
       let r = t[n];
@@ -729,7 +729,7 @@ class ey extends Chunk536802.A {
     }
   }
   hasExperimentTrackedExposure(e, t, n, r) {
-    return X(W(e, t, n, r), K(t))
+    return Z(W(e, t, n, r), K(t))
   }
   constructor() {
     super({

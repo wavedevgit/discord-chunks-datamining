@@ -310,7 +310,7 @@ let eD = (0, Chunk156828.Fe)({
       })
     }, [t, n]), null == t) ? (0, r.jsx)(er.A, {}) : ez(e)
   },
-  e$ = e => {
+  eJ = e => {
     let {
       match: t
     } = e;
@@ -318,7 +318,7 @@ let eD = (0, Chunk156828.Fe)({
       guildId: t.params.guildId
     }) : null
   },
-  eJ = e => {
+  e$ = e => {
     let {
       match: t
     } = e;
@@ -343,7 +343,7 @@ function e9() {
 let e7 = e => (0, r.jsx)(C.A, eR({}, e)),
   e5 = () => (0, r.jsx)(ea.A, {}),
   e8 = () => (0, r.jsx)(z.A, {}),
-  e2 = () => (0, r.jsx)($.A, {}),
+  e2 = () => (0, r.jsx)(J.A, {}),
   e4 = () => (0, r.jsx)(el.A, {}),
   e3 = e => {
     let t = e.location.pathname;
@@ -584,7 +584,7 @@ function tn() {
       optional: true
     }), ":messageId?")]),
     m = (null == f || null == (e = f.params) ? true : e.channelId) === ej.VV.GUILD_ONBOARDING,
-    A = i.useCallback(() => J.A.openSidebar(), []),
+    A = i.useCallback(() => $.A.openSidebar(), []),
     _ = (0, D.D)("AppView"),
     b = (0, w.useAppSidebarState)(e => !e.isOpen),
     E = (0, p.bG)([T.A], () => T.A.isFullscreenInContext()),
@@ -714,12 +714,12 @@ function tn() {
                   disableTrack: true
                 }), (0, r.jsx)(N.A, {
                   path: eT.BVt.GUILD_MEMBER_VERIFICATION(ef.pv.guildId()),
-                  render: e$,
+                  render: eJ,
                   impressionName: c.ImpressionNames.GUILD_MEMBER_VERIFICATION,
                   disableTrack: true
                 }), (0, r.jsx)(N.A, {
                   path: eT.BVt.GUILD_MEMBER_VERIFICATION_FOR_HUB(ef.pv.guildId(), ":inviteCode?"),
-                  render: eJ
+                  render: e$
                 }), (0, r.jsx)(N.A, {
                   path: eT.BVt.GUILD_FEATURE(":feature", ef.pv.guildId()),
                   exact: true,

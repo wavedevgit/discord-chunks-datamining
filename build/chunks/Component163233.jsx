@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 163233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => C
@@ -31,7 +31,7 @@ function C(e) {
     onClose: n
   } = e, [C, S] = l.useState(false), {
     trackUserProfileEditAction: O
-  } = (0, p.NJ)(), E = (0, r.bG)([v.default], () => v.default.getId()), T = function() {
+  } = (0, p.NJ)(), T = (0, r.bG)([v.default], () => v.default.getId()), E = function() {
     let e, t, n = (0, r.bG)([v.default], () => v.default.getId()),
       a = (0, g.A)(n),
       i = l.useMemo(() => a.filter(e => e instanceof h.R), [a]),
@@ -76,17 +76,17 @@ function C(e) {
   }(), {
     analyticsLocations: N
   } = (0, s.Ay)();
-  return null == T || 0 === T.length ? null : (0, a.jsx)(m.Ay, {
-    contentTypes: T.map(e => e.dismissibleContent),
+  return null == E || 0 === E.length ? null : (0, a.jsx)(m.Ay, {
+    contentTypes: E.map(e => e.dismissibleContent),
     children: e => {
       let {
         visibleContent: l,
         markAsDismissed: r
-      } = e, s = T.find(e => e.dismissibleContent === l);
+      } = e, s = E.find(e => e.dismissibleContent === l);
       if (null == s) return null;
       let o = "linked" === s.type,
         c = () => (0, f.openUserProfileModal)({
-          userId: E,
+          userId: T,
           tabSection: y.RP.WIDGETS
         }).then(() => {
           r(_.i.TAKE_ACTION), n()

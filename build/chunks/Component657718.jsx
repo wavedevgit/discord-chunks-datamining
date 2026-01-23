@@ -124,11 +124,11 @@ function C(e) {
     className: W,
     style: K,
     buttonRef: z
-  } = e, q = v(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "loading", "loadingStartedLabel", "loadingFinishedLabel", "rounded", "type", "rel", "onClick", "onDoubleClick", "onMouseEnter", "onMouseLeave", "onMouseUp", "onMouseDown", "onKeyDown", "disabled", "minWidth", "className", "style", "buttonRef"]), X = (0, u.C)(), Z = null != (t = null == X ? true : X.size) ? t : _, Q = null != (n = null == X ? true : X.fullWidth) ? n : S, $ = null != h, J = i.useRef(null), ee = null != z ? z : J, et = (0, r.jsx)(w, {
+  } = e, q = v(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "loading", "loadingStartedLabel", "loadingFinishedLabel", "rounded", "type", "rel", "onClick", "onDoubleClick", "onMouseEnter", "onMouseLeave", "onMouseUp", "onMouseDown", "onKeyDown", "disabled", "minWidth", "className", "style", "buttonRef"]), Z = (0, u.C)(), X = null != (t = null == Z ? true : Z.size) ? t : _, Q = null != (n = null == Z ? true : Z.fullWidth) ? n : S, J = null != h, $ = i.useRef(null), ee = null != z ? z : $, et = (0, r.jsx)(R, {
     icon: E,
     iconOpticalOffsetMargin: A,
     iconPosition: b,
-    size: Z,
+    size: X,
     ref: ee,
     disabled: H
   }), en = "expressive" === f, er = i.useContext(c.C), {
@@ -142,9 +142,9 @@ function C(e) {
       className: s()(g.buttonChildren, {
         [g.loading]: C
       }),
-      children: [null != et && "start" === b && et, $ && (0, r.jsx)(m.E, {
+      children: [null != et && "start" === b && et, J && (0, r.jsx)(m.E, {
         tag: "span",
-        variant: I[Z],
+        variant: I[X],
         color: "none",
         lineClamp: 1,
         children: h
@@ -158,8 +158,8 @@ function C(e) {
       "data-mana-component": "button",
       role: a,
       "aria-busy": C,
-      className: s()(g.button, g[Z], g[f], {
-        [g.hasText]: $,
+      className: s()(g.button, g[X], g[f], {
+        [g.hasText]: J,
         [g.fullWidth]: Q,
         [g.rounded]: x
       }),
@@ -178,7 +178,7 @@ function C(e) {
         "--__button-min-width": eu
       }
     }, q), {
-      children: [en && (0, r.jsx)(R, {
+      children: [en && (0, r.jsx)(w, {
         hasReducedMotion: er.reducedMotion.enabled,
         buttonRef: ee,
         isLightMode: es,
@@ -188,7 +188,7 @@ function C(e) {
         children: el
       }) : (0, r.jsx)(N, {
         loading: C,
-        size: Z,
+        size: X,
         children: el
       })]
     }))
@@ -196,7 +196,7 @@ function C(e) {
   return en ? (0, r.jsx)("div", {
     className: s()(g.expressiveWrapper, {
       [g.fullWidth]: Q,
-      [g.hasText]: $
+      [g.hasText]: J
     }),
     children: ed
   }) : ed
@@ -228,7 +228,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     hasReducedMotion: t,
     buttonRef: n,
@@ -268,7 +268,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     icon: t,
     iconOpticalOffsetMargin: n,

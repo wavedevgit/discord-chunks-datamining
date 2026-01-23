@@ -2,10 +2,10 @@
 /** chunk id: 649963, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BB: () => w,
+  BB: () => R,
   Go: () => D,
   Jf: () => x,
-  ao: () => R,
+  ao: () => w,
   et: () => L,
   on: () => P,
   qN: () => I
@@ -129,7 +129,7 @@ function N(e, t, n) {
   let i = null != (r = n.id) ? r : n.name;
   return E.Rsh.POLL_ANSWER_VOTERS(e, t, i)
 }
-async function R(e) {
+async function w(e) {
   let {
     channelId: t,
     messageId: n,
@@ -160,7 +160,7 @@ async function R(e) {
     reactionType: c
   }), f
 }
-async function w(e, t, n) {
+async function R(e, t, n) {
   let a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "Message",
     u = arguments.length > 4 ? arguments[4] : true,
     f = null != u && !!u.burst,
@@ -211,7 +211,7 @@ async function w(e, t, n) {
       name: n.name
     }))
   }).catch(r => {
-    S(r, () => w(e, t, n, a, {
+    S(r, () => R(e, t, n, a, {
       burst: f,
       isRetry: true
     }), {

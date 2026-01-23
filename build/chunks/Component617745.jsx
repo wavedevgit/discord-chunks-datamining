@@ -41,7 +41,7 @@ let y = 1e3,
       {
         isGift: N
       } = (0, d.Pv)(),
-      [R, w] = i.useState(false);
+      [w, R] = i.useState(false);
     switch (n) {
       case p.pn.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY:
         t = h.do8.GOOGLE_PAY;
@@ -52,7 +52,7 @@ let y = 1e3,
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        R || (w(true), (0, s.Ze)(C.loadId), (0, u.my)({
+        w || (R(true), (0, s.Ze)(C.loadId), (0, u.my)({
           planId: null != (e = null == b ? true : b.id) ? e : m.gD.PREMIUM_MONTH_TIER_2,
           isGift: N,
           loadId: C.loadId,
@@ -60,7 +60,7 @@ let y = 1e3,
         }, c))
       }, y);
       return () => clearTimeout(e)
-    }, [b, N, C, c, w, R, t]), i.useEffect(() => {
+    }, [b, N, C, c, R, w, t]), i.useEffect(() => {
       null !== S && (m.oz.includes(S) && ((0, o.ur)(S), (0, s.hP)()), v(S)), null !== T && O(T), I === C.loadId && A === _.k.DONE && l()
     }, [v, O, A, I, S, T, C, l]), (0, r.jsxs)("div", {
       className: E.r,

@@ -72,8 +72,8 @@ async function b(e) {
     subscriptionPlan: T,
     planGroup: C,
     trialId: N,
-    priceOptions: R,
-    paymentSource: w,
+    priceOptions: w,
+    paymentSource: R,
     isPrepaidPaymentPastDue: P,
     openInvoiceId: D,
     premiumSubscription: x,
@@ -102,7 +102,7 @@ async function b(e) {
       expectedAmount: k.amount,
       expectedCurrency: k.currency,
       isGift: O,
-      paymentSource: w,
+      paymentSource: R,
       loadId: V,
       giftInfoOptions: F,
       orderId: H
@@ -113,10 +113,10 @@ async function b(e) {
           amount: B.total,
           currency: B.currency
         },
-        n = (0, f.$Q)((0, f.y8)(T.id, false, false, R));
+        n = (0, f.$Q)((0, f.y8)(T.id, false, false, w));
       if (null != x) {
         let e = (0, f.Pg)(x, T.id, 1, new Set(C));
-        e = (0, f.qn)(e), n = (0, f.UC)(e, R.currency.toLowerCase(), R.paymentSourceId)
+        e = (0, f.qn)(e), n = (0, f.UC)(e, w.currency.toLowerCase(), w.paymentSourceId)
       }
       if (O) {
         let t = B.total,
@@ -124,28 +124,28 @@ async function b(e) {
         e = await (0, c.XU)(h.tv, T.skuId, {
           expectedAmount: t,
           expectedCurrency: n,
-          paymentSource: w,
+          paymentSource: R,
           subscriptionPlanId: T.id,
           isGift: true,
           loadId: V,
           giftInfoOptions: F,
           orderId: H
         })
-      } else if (P && null != D && null != w && null != x) e = _.AD1.has(w.type) ? await (0, s.LD)(x, D, w, R.currency) : await (0, s.nV)(x, {
-        paymentSource: w,
-        currency: R.currency
+      } else if (P && null != D && null != R && null != x) e = _.AD1.has(R.type) ? await (0, s.LD)(x, D, R, w.currency) : await (0, s.nV)(x, {
+        paymentSource: R,
+        currency: w.currency
       }, t, n, I, A, V);
       else if (null != x) {
         let r = (0, f.Pg)(x, T.id, 1, new Set(C)),
           i = {
-            paymentSource: w,
-            currency: R.currency
+            paymentSource: R,
+            currency: w.currency
           };
         x.status === _.Dmq.PAUSED && (i.status = _.Dmq.ACTIVE), x.isPausedAllowsResumeButNotUpdates || (i.items = r), e = await (0, s.nV)(x, i, t, n, I, A, V)
       } else e = await (0, l.B1)({
         planId: T.id,
-        currency: R.currency,
-        paymentSource: w,
+        currency: w.currency,
+        paymentSource: R,
         trialId: N,
         metadata: j,
         referralCode: G,
@@ -159,8 +159,8 @@ async function b(e) {
   } catch (e) {
     t(p.h.FAIL), m(e), d.default.track(_.HAw.PAYMENT_FLOW_FAILED, y(g({}, v), {
       payment_error_code: null == e ? true : e.code,
-      payment_source_id: null == w ? true : w.id,
-      payment_source_type: null == w ? true : w.type,
+      payment_source_id: null == R ? true : R.id,
+      payment_source_type: null == R ? true : R.type,
       duration_ms: Date.now() - S
     }))
   } finally {

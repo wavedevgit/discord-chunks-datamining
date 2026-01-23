@@ -38,10 +38,10 @@ function E(e, t, n, r) {
     }) => {
       try {
         if (l.A.USE_EXIF && C(e, t)) return {
-          __exif: s.A.read(R(t), g, r).tags
+          __exif: s.A.read(w(t), g, r).tags
         };
         if (l.A.USE_IPTC && N(e, t)) return {
-          __iptc: o.A.read(R(t), 0, r)
+          __iptc: o.A.read(w(t), 0, r)
         };
         if (e && !C(e, t) && !N(e, t)) return {
           [e]: {
@@ -148,11 +148,11 @@ function N(e, t) {
   return "raw profile type iptc" === e.toLowerCase() && "iptc" === t.substring(1, 5)
 }
 
-function R(e) {
-  return w(e.match(/\n(exif|iptc)\n\s*\d+\n([\s\S]*)$/)[2].replace(/\n/g, ""))
+function w(e) {
+  return R(e.match(/\n(exif|iptc)\n\s*\d+\n([\s\S]*)$/)[2].replace(/\n/g, ""))
 }
 
-function w(e) {
+function R(e) {
   let t = new DataView(new ArrayBuffer(e.length / 2));
   for (let n = 0; n < e.length; n += 2) t.setUint8(n / 2, parseInt(e.substring(n, n + 2), 16));
   return t

@@ -90,14 +90,14 @@ function T(e) {
   } = e, [S] = (0, a.yK)([p.A], () => [p.A.getCurrentDesktopIcon()]), T = (0, d.dk)("AppIconSelectionGroup"), C = i.useRef(null);
   (0, f.A)(C, m.kq.CUSTOM_APP_ICONS);
   let N = (0, c.GV)(),
-    R = (0, s._u)({
+    w = (0, s._u)({
       orientation: "horizontal",
       labelledBy: N
     }),
     {
-      ref: w
-    } = R,
-    P = I(R, ["ref"]),
+      ref: R
+    } = w,
+    P = I(w, ["ref"]),
     D = e => {
       l.h.dispatch({
         type: "APP_ICON_UPDATED",
@@ -107,7 +107,7 @@ function T(e) {
   return (0, r.jsx)("div", {
     ref: C,
     children: (0, r.jsx)("div", A(O({}, P), {
-      ref: w,
+      ref: R,
       className: E.__invalid_container,
       children: (0, r.jsxs)("div", {
         className: t,

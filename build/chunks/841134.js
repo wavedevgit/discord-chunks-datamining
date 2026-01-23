@@ -73,13 +73,13 @@ module.exports = function(e) {
     for (var T = [], C = 0; C < b.length;) {
       var N = b[C];
       if (N.wrapperTemplate) {
-        var R = [];
-        do R.push(b[C].block), C++; while (C < b.length && b[C].wrapperTemplate === N.wrapperTemplate);
-        var w = l.cloneElement(N.wrapperTemplate, {
+        var w = [];
+        do w.push(b[C].block), C++; while (C < b.length && b[C].wrapperTemplate === N.wrapperTemplate);
+        var R = l.cloneElement(N.wrapperTemplate, {
           key: N.key + "-wrap",
           "data-offset-key": N.offsetKey
-        }, R);
-        T.push(w)
+        }, w);
+        T.push(R)
       } else T.push(N.block), C++
     }
     return l.createElement("div", {

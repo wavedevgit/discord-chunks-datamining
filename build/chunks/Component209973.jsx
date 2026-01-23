@@ -2,7 +2,7 @@
 /** chunk id: 209973, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,9 +30,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk86369 = require("./86369.js"),
   Chunk650000 = require("./650000.js");
 let N = 100,
-  R = 1;
+  w = 1;
 
-function w() {
+function R() {
   let {
     voice: {
       totalVoiceMinutes: e,
@@ -48,7 +48,7 @@ function w() {
       }
     }
   } = (0, o.bG)([f.A], () => f.A.getCheckpointData()), {
-    duration: w,
+    duration: R,
     unit: P
   } = (0, p.oO)(e), D = P === l.pJ.HOURS, x = i.useContext(h.GD), L = i.useRef(null), j = i.useContext(y.Aq), M = i.useContext(d.P), k = (0, c.rdh)(M.primaryColor).hex(), U = (0, o.bG)([u.A], () => u.A.useReducedMotion), G = i.useCallback(e => {
     let t = L.current;
@@ -67,7 +67,7 @@ function w() {
     s.translate(o, l), s.scale(r, r), s.translate(-o, -l), s.translate(0, i), (0, _.A)(t, a, s, N), s.restore()
   }, [j]);
   i.useEffect(() => (x.addEventListener("frame", G), () => x.removeEventListener("frame", G)), [x, G]), i.useEffect(() => {
-    null != L.current && U && (L.current.currentTime = R)
+    null != L.current && U && (L.current.currentTime = w)
   }, [U]);
   let {
     monthName: V
@@ -98,17 +98,17 @@ function w() {
           variant: "eyebrow",
           className: S.UP,
           children: I.intl.format(A.default.Xu0QsX, {
-            numHours: w
+            numHours: R
           })
         }) : (0, r.jsx)(b.A, {
           variant: "eyebrow",
           className: S.UP,
           children: I.intl.format(A.default.UZbUtl, {
-            numMinutes: w
+            numMinutes: R
           })
         })]
       }), (0, r.jsx)(O.A, {
-        end: w,
+        end: R,
         alignment: "center"
       }), (0, r.jsx)(b.A, {
         variant: "heading-xxl/medium",

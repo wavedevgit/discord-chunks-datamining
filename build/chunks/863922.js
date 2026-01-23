@@ -6,7 +6,7 @@ require.d(exports, {
   Ay: () => P,
   C6: () => v,
   C7: () => T,
-  O$: () => w,
+  O$: () => R,
   Oz: () => A,
   sK: () => I,
   s_: () => S
@@ -197,7 +197,7 @@ async function N(e) {
   })
 }
 
-function R() {
+function w() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
     t = (0, s.bG)([d.A], () => d.A.isConnected()),
     n = r.useMemo(() => e.join(","), [e]);
@@ -211,7 +211,7 @@ function R() {
     }
   }, [n, t])
 }
-async function w(e) {
+async function R(e) {
   try {
     await o.Bo.del({
       url: h.BVt.CHANNEL_SUMMARY(e.channelId, e.id),
@@ -235,7 +235,7 @@ let P = {
     let {
       channelIds: t = []
     } = e;
-    return R(t), (0, s.yK)([_.A], () => _.A.topSummaries(), [])
+    return w(t), (0, s.yK)([_.A], () => _.A.topSummaries(), [])
   },
-  deleteSummary: w
+  deleteSummary: R
 }

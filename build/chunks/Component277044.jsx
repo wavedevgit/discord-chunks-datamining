@@ -66,16 +66,16 @@ function C(e) {
     channel: n,
     closePopout: l,
     refreshPosition: u
-  } = e, E = t.guildId === A.mV, O = (0, s.bG)([g.A], () => g.A.getGuild(t.guildId)), v = !E && null != O, [C, N] = i.useState(), R = (0, y.tj)({
+  } = e, E = t.guildId === A.mV, O = (0, s.bG)([g.A], () => g.A.getGuild(t.guildId)), v = !E && null != O, [C, N] = i.useState(), w = (0, y.tj)({
     location: "SoundmojiGuildInfo"
-  }), w = E || v || null != C || !R, [P, D] = i.useState(!w);
+  }), R = E || v || null != C || !w, [P, D] = i.useState(!R);
   i.useEffect(() => {
-    w || (D(true), (0, _.nh)(t.soundId, t.guildId).then(e => {
+    R || (D(true), (0, _.nh)(t.soundId, t.guildId).then(e => {
       N(e)
     }).finally(() => {
       D(false), u()
     }))
-  }, [u, w, t.guildId, t.soundId]);
+  }, [u, R, t.guildId, t.soundId]);
   let {
     buttonType: x,
     description: L

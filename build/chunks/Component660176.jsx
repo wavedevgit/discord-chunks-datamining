@@ -259,11 +259,11 @@ function Y(e) {
   }, T = i.useCallback(() => {
     let e = null == b ? true : b.guild_id;
     null != e && (0, E.is)(n.id, e)
-  }, [n.id, b]), C = _ === u.p.DM_RAID, R = C ? p.EpV : p.EF8;
+  }, [n.id, b]), C = _ === u.p.DM_RAID, w = C ? p.EpV : p.EF8;
   return (0, r.jsx)(K, {
     compact: a,
     header: (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(R, {
+      children: [(0, r.jsx)(w, {
         size: "xs",
         color: f.A.colors.TEXT_FEEDBACK_CRITICAL.css
       }), (0, r.jsx)(p.Text, {
@@ -445,17 +445,17 @@ function z(e) {
       onMouseEnter: l,
       onMouseLeave: u
     }
-  } = (0, R.a)(true), {
+  } = (0, w.a)(true), {
     notificationType: d
   } = (0, g.Bk)(i), f = null == d || d === c.W.RAID;
   return (0, r.jsx)("div", {
     onMouseEnter: l,
     onMouseLeave: u,
-    children: (0, r.jsx)(w.A, {
+    children: (0, r.jsx)(R.A, {
       className: s()(L.rs, {
         [L.oE]: n
       }),
-      iconNode: n ? null : (0, r.jsx)(R.l, {
+      iconNode: n ? null : (0, r.jsx)(w.l, {
         src: o
       }),
       iconContainerClassName: L.zc,

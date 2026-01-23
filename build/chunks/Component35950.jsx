@@ -1,5 +1,5 @@
 /** Chunk was on 23321 **/
-/** chunk id: 35950, original params: e,t,l (module,exports,require) **/
+/** chunk id: 35950, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
 }), require("./896048.js");
@@ -25,33 +25,33 @@ var Chunk627968 = require("./627968.js"),
 let b = e => {
     let {
       purchase: t,
-      product: l,
+      product: n,
       user: i
-    } = e, d = (0, o.bG)([x.default], () => x.default.locale), m = (0, p.Tk)(t), g = (0, p.o7)(l), _ = A.Ay.canUseCollectibles(i), v = (0, u.gA)(t), b = (0, u.G0)(l), f = !_ && v, [O, C] = r.useState(null);
+    } = e, d = (0, o.bG)([x.default], () => x.default.locale), m = (0, p.Tk)(t), g = (0, p.o7)(n), _ = h.Ay.canUseCollectibles(i), j = (0, u.gA)(t), b = (0, u.G0)(n), f = !_ && j, [O, C] = r.useState(null);
     r.useEffect(() => {
-      C((null == t ? true : t.expiresAt) != null ? (0, h.Tf)(Date.now(), t.expiresAt) : null)
+      C((null == t ? true : t.expiresAt) != null ? (0, A.Tf)(Date.now(), t.expiresAt) : null)
     }, [null == t ? true : t.expiresAt]);
     let E = null == t || f;
-    return (0, n.jsxs)("div", {
-      className: s()(j.ip, {
-        [j.w6]: E
+    return (0, l.jsxs)("div", {
+      className: s()(v.ip, {
+        [v.w6]: E
       }),
-      children: [(0, n.jsx)(c.Text, {
+      children: [(0, l.jsx)(c.Text, {
         color: "text-strong",
         variant: "text-sm/semibold",
         children: (0, a.isEmpty)(m) ? g : m
-      }), E ? (0, n.jsx)(c.Text, {
+      }), E ? (0, l.jsx)(c.Text, {
         color: "text-default",
         variant: "text-sm/normal",
         children: f ? y.intl.string(y.t.nD78oa) : b && _ ? y.intl.string(y.t.hmyYK8) : b ? y.intl.string(y.t.JY1i0u) : y.intl.string(y.t.fEGjVQ)
-      }) : (0, n.jsxs)(n.Fragment, {
-        children: [null != O && (0, n.jsx)(c.Text, {
+      }) : (0, l.jsxs)(l.Fragment, {
+        children: [null != O && (0, l.jsx)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
           children: y.intl.format(y.t.Io7ozn, {
             days: O.days.toString()
           })
-        }), (0, n.jsxs)(c.Text, {
+        }), (0, l.jsxs)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
           children: [y.intl.format(y.t.gW9R4B, {
@@ -59,8 +59,8 @@ let b = e => {
               month: "long",
               year: "numeric"
             })
-          }), null != t.expiresAt && (0, n.jsxs)(n.Fragment, {
-            children: [(0, n.jsx)("br", {}), y.intl.format(y.t.eZSTa5, {
+          }), null != t.expiresAt && (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)("br", {}), y.intl.format(y.t.eZSTa5, {
               date: t.expiresAt.toLocaleDateString(d, {
                 minute: "numeric",
                 hour: "numeric",
@@ -70,7 +70,7 @@ let b = e => {
               })
             })]
           })]
-        }), v && (0, n.jsx)(c.Text, {
+        }), j && (0, l.jsx)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
           children: y.intl.string(y.t.nKdAlO)
@@ -79,7 +79,7 @@ let b = e => {
     })
   },
   f = e => {
-    var t, l;
+    var t, n;
     let {
       user: r,
       guildId: i,
@@ -87,64 +87,64 @@ let b = e => {
     } = e, c = (0, o.cf)([g.A, m.A], () => null == i ? g.A.getAllPending() : m.A.getAllPending()), {
       product: p,
       purchase: x
-    } = (0, d.A)(null == a ? true : a.skuId), h = A.Ay.canUseCollectibles(r), f = (0, u.gA)(x), O = null == x || !h && f;
-    return (0, n.jsxs)("div", {
-      className: s()(j.i1, {
-        [j.Zj]: null != a && O
+    } = (0, d.A)(null == a ? true : a.skuId), A = h.Ay.canUseCollectibles(r), f = (0, u.gA)(x), O = null == x || !A && f;
+    return (0, l.jsxs)("div", {
+      className: s()(v.i1, {
+        [v.Zj]: null != a && O
       }),
-      children: [(0, n.jsx)("div", {
-        className: j.u_,
+      children: [(0, l.jsx)("div", {
+        className: v.u_,
         role: "img",
         "aria-label": y.intl.string(y.t.SZeUdR),
-        children: (0, n.jsxs)("div", {
-          className: j.Xp,
+        children: (0, l.jsxs)("div", {
+          className: v.Xp,
           "aria-hidden": true,
-          children: [(0, n.jsx)(_._, {
+          children: [(0, l.jsx)(_._, {
             width: 124,
             opacity: .9
-          }), (0, n.jsx)(_._, {
+          }), (0, l.jsx)(_._, {
             width: 124,
             opacity: .9
-          }), (0, n.jsx)(v.A, (t = function(e) {
+          }), (0, l.jsx)(j.A, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
-              var l = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(l);
-              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(l, e).enumerable
-              }))), n.forEach(function(t) {
-                var n;
-                n = l[t], t in e ? Object.defineProperty(e, t, {
-                  value: n,
+              var n = null != arguments[t] ? arguments[t] : {},
+                l = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), l.forEach(function(t) {
+                var l;
+                l = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: l,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = n
+                }) : e[t] = l
               })
             }
             return e
-          }({}, c), l = l = {
+          }({}, c), n = n = {
             user: r,
             guildId: i,
             nameplate: a,
             isHighlighted: true
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-            var l = Object.keys(e);
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+            var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var n = Object.getOwnPropertySymbols(e);
-              l.push.apply(l, n)
+              var l = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, l)
             }
-            return l
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
-          }), t)), (0, n.jsx)(_._, {
+            return n
+          })(Object(n)).forEach(function(e) {
+            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+          }), t)), (0, l.jsx)(_._, {
             width: 124,
             opacity: .9
-          }), (0, n.jsx)(_._, {
+          }), (0, l.jsx)(_._, {
             width: 124,
             opacity: .9
           })]
         })
-      }), null != a && (0, n.jsx)(b, {
+      }), null != a && (0, l.jsx)(b, {
         purchase: x,
         product: p,
         user: r

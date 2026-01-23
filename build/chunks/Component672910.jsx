@@ -101,11 +101,11 @@ let T = Chunk64700.memo(function(e) {
     title: T,
     renderFooter: C,
     contentOpacity: N,
-    status: R,
-    containerRef: w,
+    status: w,
+    containerRef: R,
     className: P,
     wrapperClassName: D
-  } = e, [x, L] = i.useState(false), j = n || x || R === m.yFH.FOCUSED, M = (0, l.bG)([_.A, p.A], () => _.A.isInputLocked(p.A.getTargetPID()));
+  } = e, [x, L] = i.useState(false), j = n || x || w === m.yFH.FOCUSED, M = (0, l.bG)([_.A, p.A], () => _.A.isInputLocked(p.A.getTargetPID()));
   i.useEffect(() => {
     null == a || a()
   }, [a]);
@@ -213,7 +213,7 @@ let T = Chunk64700.memo(function(e) {
       className: s()(E.af, D),
       onScroll: S,
       children: (0, r.jsx)(c.DUT, {
-        innerRef: w,
+        innerRef: R,
         ignoreKeyPress: true,
         onMouseOver: V,
         onMouseLeave: F,
@@ -266,16 +266,16 @@ function N(e) {
     children: n
   }) : n
 }
-let R = {
+let w = {
   mass: 1,
   friction: 8,
   tension: 300
 };
 
-function w() {
+function R() {
   let [e, t] = i.useState(false), [n, r] = i.useState(false), a = (0, c.zhh)({
     scale: e ? .975 : 1,
-    config: R,
+    config: w,
     onRest: () => {
       t(false), setTimeout(() => {
         r(false)
@@ -316,7 +316,7 @@ function P(e) {
   }, [c, f]), {
     clickSpring: I,
     handleMouseClick: S
-  } = w(), R = i.useCallback(e => {
+  } = R(), w = i.useCallback(e => {
     null == p || p(e, c), S()
   }, [p, c, S]), P = i.useCallback(e => {
     null == _ || _(e, c)
@@ -353,7 +353,7 @@ function P(e) {
         notificationId: t.id,
         onNotificationShow: 0 === n ? y : true,
         onDismissClick: O,
-        onNotificationClick: R,
+        onNotificationClick: w,
         onConfirmClick: null != _ ? P : true,
         onCancelClick: null != m ? D : true,
         renderFooter: x,

@@ -85,7 +85,7 @@ let S = (e, t) => t ? (0, _.DP)() : e ? h.intl.string(h.t.lG6a5x) : h.intl.strin
       showTrialBadge: y = false,
       showDiscountBadge: b = false,
       isPremiumGroupPurchase: T = false
-    } = e, C = g === p.PremiumTypes.TIER_2, N = (0, c.lp)(E), R = (0, d.O)(), w = null == R || null == (n = R.discount) ? true : n.amount, P = C ? v : O, {
+    } = e, C = g === p.PremiumTypes.TIER_2, N = (0, c.lp)(E), w = (0, d.O)(), R = null == w || null == (n = w.discount) ? true : n.amount, P = C ? v : O, {
       step: D,
       breadcrumbs: x,
       startedPaymentFlowWithPaymentSourcesRef: L,
@@ -153,7 +153,7 @@ let S = (e, t) => t ? (0, _.DP)() : e ? h.intl.string(h.t.lG6a5x) : h.intl.strin
           })]
         })]
       }), (y || b) && (0, r.jsx)(f.A, {
-        discountAmount: w
+        discountAmount: R
       }), G && (0, r.jsx)(A, {
         isOneStepCheckout: N,
         headerText: U,

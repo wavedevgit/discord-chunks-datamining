@@ -32,17 +32,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk981656 = require("./981656.js");
 
-function w(e) {
+function R(e) {
   let {
     onClose: t
   } = e;
   return (0, r.jsx)(u.DUT, {
     "aria-label": N.intl.string(N.t.WAI6xu),
     onClick: t,
-    className: R.Sc,
+    className: w.Sc,
     children: (0, r.jsx)(u.PGe, {
       size: "xs",
-      className: R.Nk,
+      className: w.Nk,
       color: "currentColor"
     })
   })
@@ -60,9 +60,9 @@ function P(e) {
     trackUserProfileAction: o
   } = (0, b.NJ)();
   return (0, r.jsxs)("div", {
-    className: R.JO,
+    className: w.JO,
     children: [(0, r.jsx)("div", {
-      className: R.xB,
+      className: w.xB,
       children: n ? (0, r.jsx)(v.FD, {
         action: A.pt.VIEW_PREMIUM_PERKS,
         fullWidth: true,
@@ -86,7 +86,7 @@ function P(e) {
         premiumModalAnalyticsLocation: {
           section: I.JJy.USER_PROFILE
         },
-        className: R.Js,
+        className: w.Js,
         size: t ? c.$n.Sizes.TINY : c.$n.Sizes.SMALL,
         look: c.$n.Looks.FILLED,
         color: c.$n.Colors.PRIMARY,
@@ -94,7 +94,7 @@ function P(e) {
         fullWidth: true
       })
     }), (0, r.jsx)("div", {
-      className: R.xB,
+      className: w.xB,
       children: (0, r.jsx)(v.FD, {
         action: A.pt.VISIT_SHOP,
         fullWidth: true,
@@ -133,7 +133,7 @@ function D(e) {
       id: c,
       children: N.intl.string(N.t.EIYbj6)
     }),
-    v = (0, r.jsx)(w, {
+    v = (0, r.jsx)(R, {
       onClose: () => {
         (0, h.Dr)(l.M.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS, {
           dismissAction: S.i.USER_DISMISS,
@@ -148,12 +148,12 @@ function D(e) {
       tiny: f
     });
   return f ? (0, r.jsx)("aside", {
-    className: s()(R.Zj, a),
+    className: s()(w.Zj, a),
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {
-      className: s()(R.xw, R.xq),
+      className: s()(w.xw, w.xq),
       children: [b, (0, r.jsxs)("div", {
-        className: R.A_,
+        className: w.A_,
         children: [(0, r.jsx)("div", {
           children: A
         }), (0, r.jsx)("div", {
@@ -162,12 +162,12 @@ function D(e) {
       })]
     })
   }) : (0, r.jsx)("aside", {
-    className: s()(R.Zj, a),
+    className: s()(w.Zj, a),
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {
-      className: s()(R.xw, R.K1),
+      className: s()(w.xw, w.K1),
       children: [(0, r.jsxs)("div", {
-        className: R.$P,
+        className: w.$P,
         children: [b, (0, r.jsx)("div", {
           children: v
         })]

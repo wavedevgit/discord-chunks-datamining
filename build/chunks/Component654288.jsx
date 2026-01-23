@@ -50,19 +50,19 @@ let A = (e, t, n) => {
       entry: n
     }), {
       primaryColor: N,
-      secondaryColor: R
-    } = (0, m.A)(null == C ? true : C.src), w = (0, a.bG)([o.default], () => o.default.locale), P = (0, h.A)(O.fg2.CRUNCHYROLL), D = (0, p.kR)(n.extra.media_assets_large_text), x = i.useCallback(e => {
+      secondaryColor: w
+    } = (0, m.A)(null == C ? true : C.src), R = (0, a.bG)([o.default], () => o.default.locale), P = (0, h.A)(O.fg2.CRUNCHYROLL), D = (0, p.kR)(n.extra.media_assets_large_text), x = i.useCallback(e => {
       if (null != T && (null == C ? true : C.src) != null) return (0, _.z)({
         entry: n,
         mediaImageSrc: null == C ? true : C.src,
         avatarSrc: T.getAvatarURL(null == t ? true : t.guild_id, 128),
         description: A(n, t, T),
-        timestamp: (0, p.As)(n, w),
+        timestamp: (0, p.As)(n, R),
         episodeDescription: D,
-        colors: [N, R],
+        colors: [N, w],
         channelId: e
       })
-    }, [t, n, D, w, null == C ? true : C.src, N, R, T]), L = () => {
+    }, [t, n, D, R, null == C ? true : C.src, N, w, T]), L = () => {
       if (null == n.extra.url) return;
       let e = d.A.safeParseWithQuery(n.extra.url);
       null != e && null != e.protocol && null != e.hostname && (0, c.h)({

@@ -104,7 +104,7 @@ function p(e, t, n) {
     requestAnimationFrame(() => {
       "child" === g && document.activeElement === n.current && I()
     })
-  }, R = (0, c.v)(S, {
+  }, w = (0, c.v)(S, {
     role: "gridcell",
     onKeyDownCapture: C,
     "aria-colspan": h.colSpan,
@@ -112,14 +112,14 @@ function p(e, t, n) {
     colSpan: m ? true : h.colSpan,
     onFocus: N
   });
-  return m && (R["aria-colindex"] = (null != (p = h.colIndex) ? p : h.index) + 1), E && null != R.tabIndex && null == R.onPointerDown && (R.onPointerDown = e => {
+  return m && (w["aria-colindex"] = (null != (p = h.colIndex) ? p : h.index) + 1), E && null != w.tabIndex && null == w.onPointerDown && (w.onPointerDown = e => {
     let t = e.currentTarget,
       n = t.getAttribute("tabindex");
     t.removeAttribute("tabindex"), requestAnimationFrame(() => {
       null != n && t.setAttribute("tabindex", n)
     })
   }), {
-    gridCellProps: R,
+    gridCellProps: w,
     isPressed: T
   }
 }

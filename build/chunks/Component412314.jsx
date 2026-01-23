@@ -43,8 +43,8 @@ let E = () => {
     className: h.dc,
     children: (0, r.jsx)(s.y$y, {})
   });
-  let R = n === f.PremiumTypes.TIER_2,
-    w = [{
+  let w = n === f.PremiumTypes.TIER_2,
+    R = [{
       text: _.intl.string(_.t.zl7LZp),
       onClick: () => t(),
       variant: "secondary",
@@ -60,14 +60,14 @@ let E = () => {
   return (0, r.jsxs)(a.ExpressiveModal, {
     graphic: {
       type: "image",
-      src: R ? g.A : m
+      src: w ? g.A : m
     },
-    gradientColor: R ? "nitro-pink" : "nitro-green",
+    gradientColor: w ? "nitro-pink" : "nitro-green",
     transitionState: e,
     title: E.status === p.Dmq.CANCELED ? _.intl.string(_.t["2Otzti"]) : "".concat(_.intl.format(_.t.q9Vxu4, {
       percent: O.discount.amount
     })),
-    actions: w,
+    actions: R,
     onClose: async () => t(),
     children: [(0, r.jsx)("div", {
       className: h.TA,

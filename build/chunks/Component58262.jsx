@@ -57,10 +57,10 @@ function b(e) {
     })
   }, [n, b, S, O]);
   if (null == n.inviter) return null;
-  let R = T ? C : N,
-    w = E.intl.string(E.t.ib7Ng1),
+  let w = T ? C : N,
+    R = E.intl.string(E.t.ib7Ng1),
     P = "active";
-  T ? (w = E.intl.string(E.t.xhxnPn), P = "secondary") : A && (w = E.intl.string(E.t.ib7Ng1), P = "secondary");
+  T ? (R = E.intl.string(E.t.xhxnPn), P = "secondary") : A && (R = E.intl.string(E.t.ib7Ng1), P = "secondary");
   let D = A ? E.intl.string(E.t.eQyu1F) : E.intl.string(E.t.PYJHW6),
     x = null != n.inviter ? "".concat(n.inviter.username) : "",
     L = null != n.inviter ? m.Ay.getUserTag(n.inviter) : "";
@@ -72,15 +72,15 @@ function b(e) {
         className: y.iH,
         children: [(0, r.jsx)(d.A.Icon, {
           user: new f.A(n.inviter),
-          onClick: T ? R : true
+          onClick: T ? w : true
         }), (0, r.jsx)(d.A.Info, {
           title: x,
-          onClick: T ? R : true,
+          onClick: T ? w : true,
           children: L
         })]
       }), (0, r.jsx)(a.$nd, {
-        onClick: R,
-        text: w,
+        onClick: w,
+        text: R,
         loading: I,
         disabled: A,
         variant: P

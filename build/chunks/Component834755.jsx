@@ -2,7 +2,7 @@
 /** chunk id: 834755, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => $
+  A: () => J
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -103,7 +103,7 @@ function z(e, t) {
   return i
 }
 let q = 498 + Chunk732139.as.MEDIUM,
-  X = Chunk64700.memo(function(e) {
+  Z = Chunk64700.memo(function(e) {
     let {
       isActive: t,
       className: n,
@@ -128,12 +128,12 @@ let q = 498 + Chunk732139.as.MEDIUM,
       })
     }))
   }),
-  Z = e => {
+  X = e => {
     let {
       positionContainerRef: t,
       drawerRef: n,
       orientation: r
-    } = e, a = (0, d.bG)([w.Ay], () => w.Ay.expressionPickerWidth), [s, o] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : L.wp.MIN), f = i.useMemo(() => {
+    } = e, a = (0, d.bG)([R.Ay], () => R.Ay.expressionPickerWidth), [s, o] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : L.wp.MIN), f = i.useMemo(() => {
       switch (c) {
         case L.wp.MIN:
           return 498;
@@ -177,7 +177,7 @@ function Q(e) {
   let {
     positionTargetRef: l,
     hideGifFavorites: h,
-    onSelectGIF: w,
+    onSelectGIF: R,
     onSelectEmoji: B,
     onSelectSticker: H,
     onSelectSound: Y,
@@ -185,13 +185,13 @@ function Q(e) {
     type: K,
     position: z,
     align: Q,
-    positionLayerClassName: $,
-    closeOnModalOuterClick: J = false,
+    positionLayerClassName: J,
+    closeOnModalOuterClick: $ = false,
     parentModalKey: ee
   } = e, et = i.useRef(null), en = i.useRef(false), er = i.useRef(null), ei = i.useRef(null), {
     drawerWidth: ea,
     handleDrawerResizeHandleMouseDown: es
-  } = Z({
+  } = X({
     positionContainerRef: et,
     drawerRef: ei,
     orientation: "left" === Q ? g.R.HORIZONTAL_RIGHT : g.R.HORIZONTAL_LEFT
@@ -204,9 +204,9 @@ function Q(e) {
     reorderExpressionPickerTabs: em
   } = y.C.useConfig({
     location: "expression_picker"
-  }), eg = (null == (t = K.gifs) ? true : t.allowSending) && !c.Fr && null != w, eE = (null == (n = K.stickers) ? true : n.allowSending) && null != H, ey = !(null == (a = K.expressionPicker) ? true : a.onlyEmojis) && (eg || eE), eb = i.useCallback(e => {
+  }), eg = (null == (t = K.gifs) ? true : t.allowSending) && !c.Fr && null != R, eE = (null == (n = K.stickers) ? true : n.allowSending) && null != H, ey = !(null == (a = K.expressionPicker) ? true : a.onlyEmojis) && (eg || eE), eb = i.useCallback(e => {
     var t;
-    if (!e_ && (0, p.hasAnyModalOpen)() || e_ && !(eh && J) || ep || e.defaultPrevented) return;
+    if (!e_ && (0, p.hasAnyModalOpen)() || e_ && !(eh && $) || ep || e.defaultPrevented) return;
     let {
       target: n
     } = e;
@@ -218,7 +218,7 @@ function Q(e) {
     }(0, x.v8)();
     let r = null == (t = (0, u.BF)(e)) ? true : t.activeElement;
     (null == r || "BODY" === r.tagName) && D._.dispatchToLastSubscribed(j.jej.TEXTAREA_FOCUS)
-  }, [J, eh, e_, ep]), eO = i.useCallback(() => {
+  }, [$, eh, e_, ep]), eO = i.useCallback(() => {
     (0, x.v8)()
   }, []);
   i.useLayoutEffect(() => {
@@ -251,9 +251,9 @@ function Q(e) {
   let eT = i.useCallback((e, t) => null == Y ? true : Y(e, "emoji_picker", t), [Y]),
     eC = i.useCallback((e, t) => null == Y ? true : Y(e, "soundboard_picker", t), [Y]),
     eN = (null == (o = K.soundmoji) ? true : o.allowSending) === true && null != Y,
-    eR = "left" === Q ? "right" : "left",
-    ew = null != $ ? $ : "left" === Q ? F.sj : F.Jg,
-    eP = eg ? (0, r.jsx)(X, {
+    ew = "left" === Q ? "right" : "left",
+    eR = null != J ? J : "left" === Q ? F.sj : F.Jg,
+    eP = eg ? (0, r.jsx)(Z, {
       id: k.g9,
       "aria-controls": k.ni,
       "aria-selected": eo === L.kx.GIF,
@@ -261,7 +261,7 @@ function Q(e) {
       viewType: L.kx.GIF,
       children: V.intl.string(V.t["6gUTsS"])
     }) : null,
-    eD = eE ? (0, r.jsx)(X, {
+    eD = eE ? (0, r.jsx)(Z, {
       id: G.LD,
       "aria-controls": G.GX,
       "aria-selected": eo === L.kx.STICKER,
@@ -273,7 +273,7 @@ function Q(e) {
         children: V.intl.string(V.t.nf1s3u)
       })
     }) : null,
-    ex = (0, r.jsx)(X, {
+    ex = (0, r.jsx)(Z, {
       id: k.k1,
       "aria-controls": k.Do,
       "aria-selected": eo === L.kx.EMOJI,
@@ -284,7 +284,7 @@ function Q(e) {
   return (0, r.jsx)(m.A, {
     section: j.JJy.EXPRESSION_PICKER,
     children: (0, r.jsx)(A.nE, {
-      className: s()(F.T8, ew),
+      className: s()(F.T8, eR),
       targetRef: l,
       position: z,
       align: Q,
@@ -314,7 +314,7 @@ function Q(e) {
               className: F.Di,
               onMouseDown: es,
               style: {
-                [eR]: false
+                [ew]: false
               }
             }), (0, r.jsxs)("div", {
               className: F.FG,
@@ -328,7 +328,7 @@ function Q(e) {
                     children: [ex, eP, eD]
                   }) : (0, r.jsxs)(r.Fragment, {
                     children: [eP, eD, ex]
-                  }), ef && eN && (0, r.jsx)(X, {
+                  }), ef && eN && (0, r.jsx)(Z, {
                     id: k.N6,
                     "aria-controls": k.AA,
                     "aria-selected": eo === L.kx.SOUNDBOARD,
@@ -342,7 +342,7 @@ function Q(e) {
                     })
                   })]
                 })
-              }) : null, eo === L.kx.STICKER && eE ? (0, r.jsx)(R.A, {
+              }) : null, eo === L.kx.STICKER && eE ? (0, r.jsx)(w.A, {
                 isLoading: ed,
                 channel: W,
                 containerWidth: ea,
@@ -352,7 +352,7 @@ function Q(e) {
                   er.current = e
                 }
               }) : null, eo === L.kx.GIF && eg ? (0, r.jsx)(v.A, {
-                onSelectGIF: w,
+                onSelectGIF: R,
                 hideFavorites: h,
                 persistSearch: true
               }) : null, eo === L.kx.EMOJI ? (0, r.jsx)(O.A, {
@@ -394,4 +394,4 @@ function Q(e) {
     })
   })
 }
-let $ = Chunk64700.memo(Q)
+let J = Chunk64700.memo(Q)

@@ -7,7 +7,7 @@ require.d(exports, {
   Nl: () => j,
   TZ: () => P,
   Tp: () => U,
-  XI: () => w,
+  XI: () => R,
   Xd: () => V,
   Xi: () => k,
   a8: () => G,
@@ -63,9 +63,9 @@ function N(e) {
   }
   return e
 }
-let R = 2;
+let w = 2;
 
-function w(e, t, n) {
+function R(e, t, n) {
   o.h.dispatch(N({
     type: "STREAM_START",
     streamType: null != e ? T.U4.GUILD : T.U4.CALL,
@@ -107,7 +107,7 @@ function x(e, t) {
         ownerId: t
       } = e;
       return t !== h.default.getId()
-    }).length >= R;
+    }).length >= w;
   o.h.dispatch({
     type: "STREAM_WATCH",
     streamKey: a,

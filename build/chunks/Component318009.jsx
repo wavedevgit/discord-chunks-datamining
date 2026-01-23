@@ -115,12 +115,12 @@ let A = e => {
     N = i.useCallback(() => {
       T.dispatch(g.jej.POPOUT_HIDE)
     }, [T]),
-    R = (0, l.D)("ContextMenu"),
-    w = u.ownerDocument;
-  return R ? (0, r.jsx)(s.Ow, {
+    w = (0, l.D)("ContextMenu"),
+    R = u.ownerDocument;
+  return w ? (0, r.jsx)(s.Ow, {
     spacing: 0,
     open: true,
-    ownerDocument: w,
+    ownerDocument: R,
     onOpenChange: e => {
       e ? C() : (N(), v(), I.current())
     },

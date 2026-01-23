@@ -30,7 +30,7 @@ var Chunk960488 = require("./960488.js"),
   Chunk746080 = require("./746080.js"),
   Chunk985018 = require("./985018.jsx");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,7 +38,7 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let w = new Chunk626584.A("MessageManager");
+let R = new Chunk626584.A("MessageManager");
 
 function P(e) {
   let {
@@ -56,7 +56,7 @@ function P(e) {
   let _ = y.A.getChannel(n);
   if ((null == _ ? true : _.type) === T.rbe.GUILD_STORE || (null == _ ? true : _.type) != null && T.kvI.GUILD_THREADS_ONLY.has(_.type)) return;
   let m = f.A.getOrCreate(n);
-  m.some(S.$r) && (w.log("Found expired attachment link, clearing messages"), f.A.clear(n), m = f.A.getOrCreate(n)), null != m.jumpTargetId && null == r && (m = m.mutate({
+  m.some(S.$r) && (R.log("Found expired attachment link, clearing messages"), f.A.clear(n), m = f.A.getOrCreate(n)), null != m.jumpTargetId && null == r && (m = m.mutate({
     jumpTargetId: null,
     jumped: false,
     jumpType: u.US.ANIMATED
@@ -77,7 +77,7 @@ function P(e) {
       avoidInitialScroll: l
     });
     else {
-      if ((null == _ ? true : _.isThread()) && L(n)) return w.log("Jumping to start of thread ".concat(_.id)), c.A.fetchMessages({
+      if ((null == _ ? true : _.isThread()) && L(n)) return R.log("Jumping to start of thread ".concat(_.id)), c.A.fetchMessages({
         channelId: n,
         limit: T.EMb,
         jump: {
@@ -101,7 +101,7 @@ function P(e) {
         fetchKey: d
       });
       let e = O.Ay.getTrackedAckMessageId(_.id);
-      return w.log("Jumping to most recent message in thread ".concat(_.id, " - ").concat(e)), c.A.fetchMessages({
+      return R.log("Jumping to most recent message in thread ".concat(_.id, " - ").concat(e)), c.A.fetchMessages({
         channelId: n,
         limit: T.EMb,
         jump: {
@@ -317,7 +317,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Z(e) {
   let {
     state: t
   } = e;
@@ -326,7 +326,7 @@ function X(e) {
   if (null == n) returnfalse;
   c.A.fetchNewLocalMessages(n, T.EMb)
 }
-class Z extends Chunk439372.A {
+class X extends Chunk439372.A {
   _initialize() {
     o.h.subscribe("CONNECTION_OPEN", M)
   }
@@ -334,8 +334,8 @@ class Z extends Chunk439372.A {
     o.h.unsubscribe("CONNECTION_OPEN", M)
   }
   constructor(...e) {
-    super(...e), R(this, "fetchMessages", P), R(this, "loadSelectedChannelIfNecessary", k), R(this, "stores", new Map().set(E.Ay, B)), R(this, "actions", {
-      APP_STATE_UPDATE: X,
+    super(...e), w(this, "fetchMessages", P), w(this, "loadSelectedChannelIfNecessary", k), w(this, "stores", new Map().set(E.Ay, B)), w(this, "actions", {
+      APP_STATE_UPDATE: Z,
       OVERLAY_INITIALIZE: M,
       CHANNEL_SELECT: U,
       VOICE_CHANNEL_SELECT: G,
@@ -353,4 +353,4 @@ class Z extends Chunk439372.A {
     })
   }
 }
-let Q = new Z
+let Q = new X

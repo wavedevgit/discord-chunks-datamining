@@ -72,13 +72,13 @@ function v(e) {
   } = e, A = (0, f.xi)({}), I = (0, o.useMemoOne)(() => (0, l.A)(), [t]), S = i.useRef(null), T = (0, p.A)(S, g, null == A ? window : A), C = O(y({}, E), {
     frame_id: I,
     platform: h.vu.DESKTOP
-  }), [N, R] = i.useState(false), w = u.A.theme, P = y({}, a);
+  }), [N, w] = i.useState(false), R = u.A.theme, P = y({}, a);
 
   function D(e) {
     var n;
     null == s || s(e.target), S.current = e.target, T(true), null == (n = e.target.contentWindow) || n.postMessage([c.A.HELLO, C], null != t ? t : "")
   }
-  return w === m.NJ8.LIGHT ? P.colorScheme = "light" : P.colorScheme = "dark", i.useEffect(() => (d._.dispatch(m.jej.IFRAME_MOUNT, {
+  return R === m.NJ8.LIGHT ? P.colorScheme = "light" : P.colorScheme = "dark", i.useEffect(() => (d._.dispatch(m.jej.IFRAME_MOUNT, {
     id: I
   }), () => {
     d._.dispatch(m.jej.IFRAME_UNMOUNT, {
@@ -89,7 +89,7 @@ function v(e) {
       let {
         resizing: t
       } = e;
-      R(t)
+      w(t)
     };
     return d._.subscribe(m.jej.MANUAL_IFRAME_RESIZING, e), () => {
       d._.unsubscribe(m.jej.MANUAL_IFRAME_RESIZING, e)

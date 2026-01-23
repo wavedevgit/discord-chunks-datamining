@@ -2,7 +2,7 @@
 /** chunk id: 680243, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./65821.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk118356 = require("./118356.js"),
@@ -41,7 +41,7 @@ let _ = new Chunk118356.Vy("OverlayV3NativeModuleStore"),
           crashType: "native"
         })
       } finally {
-        R.emitChange()
+        w.emitChange()
       }
     }
     return () => (null == b && (b = e()), b)
@@ -104,11 +104,11 @@ class N extends(r = Chunk311907.Ay.Store) {
   }
 }
 p(N, "displayName", "Overlay-v3-Native-Module-Store");
-let R = new N(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
+let w = new N(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
     CONNECTION_OPEN: C,
     EXPERIMENT_OVERRIDE_BUCKET: A,
     OVERLAY_SET_ENABLED: I,
     OVERLAY_V3_LOAD_NATIVE_MODULE: S,
     OVERLAY_CRASHED: T
   }),
-  w = R
+  R = w

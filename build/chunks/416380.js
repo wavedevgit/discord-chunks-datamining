@@ -2,7 +2,7 @@
 /** chunk id: 416380, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./321073.js"), require("./896048.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -38,7 +38,7 @@ class I extends Chunk439372.A {
     _.bW.beforeSendCallbacks.push({
       hasChanges: () => false,
       processProto: () => {
-        R(O, false)
+        w(O, false)
       }
     }), _.bW.beforeSendCallbacks.push({
       hasChanges: () => d.A.hasPendingUsage() && h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS),
@@ -83,7 +83,7 @@ class I extends Chunk439372.A {
 }
 
 function S() {
-  A = true, R(b, true)
+  A = true, w(b, true)
 }
 
 function T(e) {
@@ -94,12 +94,12 @@ function C() {
   A && (clearTimeout(v), v = null, N(false))
 }
 async function N(e) {
-  R(O, false), !h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (d.A.hasPendingUsage() || c.Ay.hasPendingUsage() || o.Ay.hasPendingUsage() || l.A.hasPendingUsage() || f.A.hasPendingUsage() && !e) && ((0, _.cE)(), await _.bW.loadIfNecessary()), i().forEach(_.Df, e => {
+  w(O, false), !h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (d.A.hasPendingUsage() || c.Ay.hasPendingUsage() || o.Ay.hasPendingUsage() || l.A.hasPendingUsage() || f.A.hasPendingUsage() && !e) && ((0, _.cE)(), await _.bW.loadIfNecessary()), i().forEach(_.Df, e => {
     e.markDirtyIfHasPendingChange()
   })
 }
 
-function R(e, t) {
+function w(e, t) {
   null != v && clearTimeout(v), v = setTimeout(() => N(t), e)
 }
-let w = new I
+let R = new I

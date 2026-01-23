@@ -233,7 +233,7 @@ let S = function(e) {
     var e;
     let t = "".concat(y, "-").concat(o);
     return null != (e = m[t]) ? e : g(a, o, t)
-  }, [y, o, a]), N = I(null != l, o, a), R = A(a);
+  }, [y, o, a]), N = I(null != l, o, a), w = A(a);
   return (0, r.jsxs)("div", {
     style: p({
       width: y,
@@ -247,7 +247,7 @@ let S = function(e) {
       height: y,
       width: y,
       children: [(0, r.jsx)(u.Ay, {
-        mask: R,
+        mask: w,
         height: y,
         width: y,
         children: (0, r.jsx)("img", {

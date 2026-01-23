@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 103748, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => N
@@ -61,7 +61,7 @@ let C = {
   },
   S = "debug",
   O = "reduced-motion-preview-modal",
-  E = e => {
+  T = e => {
     let {
       transitionState: t,
       onClose: n,
@@ -99,7 +99,7 @@ let C = {
       })
     })
   },
-  T = e => {
+  E = e => {
     let {
       type: t,
       frame: n,
@@ -127,7 +127,7 @@ let C = {
         onClick: () => {
           (0, c.kBI)(O) ? (0, c.OoC)(O) : (0, c.mMO)(() => Promise.resolve(e => {
             var t;
-            return (0, a.jsx)(E, A(y({}, e), {
+            return (0, a.jsx)(T, A(y({}, e), {
               frameSrc: null != (t = null == n ? true : n.src) ? t : null,
               placeholderSrc: o
             }))
@@ -153,7 +153,7 @@ let C = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.wu)(), r = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [j, _] = l.useState(true), O = l.useRef({}), [E, N] = l.useState(false), [w, I] = l.useState(false), [k, P] = l.useState([]), [R, D] = l.useState(C), M = l.useRef([]), [L, U] = l.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = l.useMemo(() => ({
+    } = (0, h.wu)(), r = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [j, _] = l.useState(true), O = l.useRef({}), [T, N] = l.useState(false), [w, I] = l.useState(false), [k, P] = l.useState([]), [R, D] = l.useState(C), M = l.useRef([]), [L, U] = l.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = l.useMemo(() => ({
       id: S,
       skuId: S,
       title: S,
@@ -260,7 +260,7 @@ let C = {
         children: [(0, a.jsxs)("div", {
           className: i()(f.nz, f.VH),
           children: [(0, a.jsx)("img", {
-            src: E ? b : v,
+            src: T ? b : v,
             alt: "",
             width: 450
           }), j && (0, a.jsx)("div", {
@@ -293,10 +293,10 @@ let C = {
                 children: "Dark Theme"
               }), (0, a.jsx)("input", {
                 type: "checkbox",
-                checked: E,
+                checked: T,
                 className: f.OO,
                 onChange: () => {
-                  N(!E)
+                  N(!T)
                 }
               })]
             }), (0, a.jsxs)("div", {
@@ -409,10 +409,10 @@ let C = {
               className: f.mv,
               children: Object.entries(R).map(e => {
                 let [t, n] = e;
-                return (0, a.jsx)(T, {
+                return (0, a.jsx)(E, {
                   type: t,
                   frame: n,
-                  showDarkTheme: E,
+                  showDarkTheme: T,
                   onClear: () => {
                     D(e => A(y({}, e), {
                       [t]: null

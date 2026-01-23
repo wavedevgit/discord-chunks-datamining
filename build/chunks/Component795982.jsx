@@ -32,15 +32,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk772004 = require("./772004.js");
 
-function w() {
+function R() {
   return (0, r.jsxs)("div", {
-    className: R.N1,
+    className: w.N1,
     children: [(0, r.jsx)(C.A, {
       size: "xs",
-      className: R.nr,
+      className: w.nr,
       color: l.A.colors.TEXT_MUTED
     }), (0, r.jsx)(a.EYj, {
-      className: R.TK,
+      className: w.TK,
       variant: "text-sm/semibold",
       color: "text-muted",
       children: N.intl.string(N.t.ToyvLk)
@@ -60,17 +60,17 @@ function P(e) {
     (0, S.A)(t)
   }, [t]);
   return null == p ? null : (0, r.jsxs)(c.DUT, {
-    className: R.xQ,
+    className: w.xQ,
     onClick: h,
     "aria-label": p.accessibilityLabel,
     children: [null != p.originIconUrl ? (0, r.jsx)("img", {
-      className: R.yl,
+      className: w.yl,
       src: p.originIconUrl,
       alt: ""
     }) : null, null == p.originIconUrl && (null == _ ? true : _.isThread()) ? (0, r.jsx)(D, {
       channel: _
     }) : null, (0, r.jsx)(a.EYj, {
-      className: R.PJ,
+      className: w.PJ,
       variant: "text-sm/medium",
       color: "none",
       children: "".concat(p.originLabel, "  •  ").concat(p.timestampLabel)
@@ -88,7 +88,7 @@ function D(e) {
     location: "ForwardFooter"
   }), a = i.useMemo(() => (0, u.gU)(t), [t]);
   return n.enabled && null != a ? (0, r.jsx)(a, {
-    className: R.yl,
+    className: w.yl,
     size: "xs",
     color: "currentColor"
   }) : null
@@ -115,12 +115,12 @@ function x(e) {
     previewLinkTarget: true
   }), I = (0, s.bG)([E.A], () => E.A.getChannel(n.channel_id)), S = g.hH.useSetting();
   return null == I ? null : (0, r.jsxs)("div", {
-    className: R.kL,
+    className: w.kL,
     children: [(0, r.jsx)("div", {
-      className: R.hD
+      className: w.hD
     }), (0, r.jsxs)("div", {
-      className: R.Qs,
-      children: [(0, r.jsx)(w, {}), (0, r.jsx)(p.Ay, {
+      className: w.Qs,
+      children: [(0, r.jsx)(R, {}), (0, r.jsx)(p.Ay, {
         message: l,
         content: O,
         compact: S

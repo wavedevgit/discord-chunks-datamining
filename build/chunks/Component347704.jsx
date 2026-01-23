@@ -89,26 +89,26 @@ function y(e) {
   let T = _.findIndex(e => e.stepKey === g),
     C = T === _.length - 1,
     N = 0 === T,
-    R = null == (t = S.nextEnabled) || t,
-    w = i.useCallback(e => {
+    w = null == (t = S.nextEnabled) || t,
+    R = i.useCallback(e => {
       null == b || b(e, g)
     }, [b, g]),
     P = i.useCallback(async () => {
       await (null == O ? true : O()), I()
     }, [O, I]),
     D = i.useCallback(async () => {
-      (null == S.onNext || await S.onNext()) && (C ? await P() : w(_[T + 1].stepKey))
-    }, [w, T, _, C, P, S]),
+      (null == S.onNext || await S.onNext()) && (C ? await P() : R(_[T + 1].stepKey))
+    }, [R, T, _, C, P, S]),
     x = i.useCallback(() => {
-      N || w(_[T - 1].stepKey)
-    }, [w, T, _, N]),
+      N || R(_[T - 1].stepKey)
+    }, [R, T, _, N]),
     L = i.useMemo(() => ({
       currentStepKey: g,
-      goToStep: w,
+      goToStep: R,
       goToNextStep: D,
       goToPreviousStep: x,
       complete: P
-    }), [g, w, D, x, P]),
+    }), [g, R, D, x, P]),
     j = {
       variant: "secondary",
       text: A.BACK
@@ -116,9 +116,9 @@ function y(e) {
     M = {
       variant: "primary",
       text: A.NEXT,
-      disabled: !R,
+      disabled: !w,
       onClick: () => {
-        R && D()
+        w && D()
       }
     },
     k = {

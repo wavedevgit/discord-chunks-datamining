@@ -33,8 +33,8 @@ var Chunk557939 = require("./557939.js"),
   T = S && S.prototype,
   C = I.prototype,
   N = Chunk883972.set,
-  R = Chunk883972.getterFor(v),
-  w = "stack" in new I(v),
+  w = Chunk883972.getterFor(v),
+  R = "stack" in new I(v),
   P = function(e) {
     return f(g, e) && g[e].m ? g[e].c : 0
   },
@@ -49,7 +49,7 @@ var Chunk557939 = require("./557939.js"),
         name: n,
         message: t,
         code: r
-      }), b || (this.name = n, this.message = t, this.code = r), w) {
+      }), b || (this.name = n, this.message = t, this.code = r), R) {
       var i = new I(t);
       i.name = v, c(this, "stack", l(1, E(i.stack, 1)))
     }
@@ -64,7 +64,7 @@ var Chunk557939 = require("./557939.js"),
   },
   j = function(e) {
     return L(function() {
-      return R(this)[e]
+      return w(this)[e]
     })
   };
 Chunk257943 && (Chunk485155(x, "code", j("code")), Chunk485155(x, "message", j("message")), Chunk485155(x, "name", j("name"))), c(x, "constructor", Chunk231977(1, D));

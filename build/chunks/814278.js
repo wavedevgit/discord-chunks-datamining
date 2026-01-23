@@ -4,13 +4,13 @@
 require.d(exports, {
   A5: () => H,
   Dh: () => D,
-  Lu: () => R,
+  Lu: () => w,
   Vw: () => W,
   W0: () => x,
   Z1: () => M,
   aW: () => N,
   bk: () => P,
-  dc: () => w,
+  dc: () => R,
   iO: () => G,
   kj: () => L,
   m8: () => Y,
@@ -48,11 +48,11 @@ function N() {
   return g.A.getArticleURL(T.MVz.END_TO_END_ENCRYPTION)
 }
 
-function R() {
+function w() {
   return g.A.getArticleURL(T.MVz.END_TO_END_ENCRYPTION)
 }
 
-function w() {
+function R() {
   return g.A.getArticleURL(T.MVz.END_TO_END_ENCRYPTION)
 }
 

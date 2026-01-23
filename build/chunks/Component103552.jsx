@@ -105,11 +105,11 @@ function I(e) {
     maxVisibleItems: T = 5,
     itemToString: C = v,
     emptyStateText: N,
-    emptyStateHeader: R,
-    onQueryChange: w
+    emptyStateHeader: w,
+    onQueryChange: R
   } = e, [P, D] = i.useState(""), x = i.useCallback(e => {
-    D(e), null == w || w(e)
-  }, [w]), [L] = i.useState(true), [j, M] = i.useState(null), k = i.useId(), U = i.useRef(null);
+    D(e), null == R || R(e)
+  }, [R]), [L] = i.useState(true), [j, M] = i.useState(null), k = i.useId(), U = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = document.querySelector("[".concat(y, '="').concat(j, '"]')),
       t = U.current;
@@ -120,7 +120,7 @@ function I(e) {
   }, [j]);
   let G = n(P),
     V = 0 === G.length,
-    F = null != R ? R : d.intl.string(d.t["4o4z3e"]),
+    F = null != w ? w : d.intl.string(d.t["4o4z3e"]),
     B = i.useId(),
     H = i.useCallback(() => new Promise(e => {
       let t = U.current;

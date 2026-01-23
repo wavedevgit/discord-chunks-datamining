@@ -2,7 +2,7 @@
 /** chunk id: 256449, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gc: () => w,
+  Gc: () => R,
   Sr: () => v,
   Th: () => A,
   UT: () => D,
@@ -10,7 +10,7 @@ require.d(exports, {
   ZO: () => S,
   Zq: () => L,
   _c: () => I,
-  ln: () => R,
+  ln: () => w,
   pD: () => j
 }), require("./321073.js"), require("./896048.js"), require("./667532.js");
 var Chunk64700 = require("./64700.js"),
@@ -168,13 +168,13 @@ let v = e => {
   },
   N = [];
 
-function R() {
+function w() {
   var e, t;
   return null != (e = null == (t = (0, o.k)().favoriteStickers) ? true : t.stickerIds) ? e : N
 }
 
-function w() {
-  let e = R();
+function R() {
+  let e = w();
   return (0, i.yK)([g.A], () => e.map(e => g.A.getStickerById(e)).filter(e => null != e && (!(0, y.Xw)(e) || (0, y.Y4)(e))), [e])
 }
 
@@ -190,7 +190,7 @@ function D() {
   return (0, i.yK)([g.A], () => e.map(e => g.A.getStickerById(e)).filter(e => true !== e), [e])
 }
 let x = e => {
-    let t = w(),
+    let t = R(),
       {
         packs: n,
         frequentlyUsedStickers: a

@@ -38,8 +38,8 @@ let b = 1048576,
   T = true,
   C = true,
   N = 15 * Chunk927813.A.Millis.MINUTE,
-  R = +b,
-  w = 1.5 * b,
+  w = +b,
+  R = 1.5 * b,
   P = 256,
   D = 12,
   x = true,
@@ -174,7 +174,7 @@ class K extends Chunk439372.A {
     let r = _.A.getPartitionAllocatorStats();
     if (null == r) return;
     let i = null != (e = r.total_alloc_kb) ? e : 0;
-    if (!this._paHeapHooksInstalled && i > R) {
+    if (!this._paHeapHooksInstalled && i > w) {
       let e = _.A.enablePAMemoryProfiler({
         allocationThresholdKB: D,
         enableCallStackTracking: x
@@ -182,7 +182,7 @@ class K extends Chunk439372.A {
       null != e && e && (this._paHeapHooksInstalled = true)
     }
     if (this._paHeapHooksInstalled) {
-      if (i < w) return;
+      if (i < R) return;
       let e = _.A.getPerfAttributedPAMemory();
       if (null == e) return;
       let r = [],

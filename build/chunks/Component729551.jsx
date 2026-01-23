@@ -33,7 +33,7 @@ var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk123511 = require("./123511.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -112,7 +112,7 @@ function k(e) {
   } = e, o = a - 1;
   return (0, r.jsxs)(l.EYj, {
     variant: t,
-    className: s()(n, R.qi),
+    className: s()(n, w.qi),
     color: i ? "status-positive" : "none",
     children: ["+", o]
   })
@@ -125,7 +125,7 @@ function U(e) {
   } = e;
   return (0, r.jsx)(l.EYj, {
     variant: t,
-    className: s()(R.Om, n),
+    className: s()(w.Om, n),
     children: "•"
   })
 }
@@ -141,7 +141,7 @@ function G(e) {
     textSize: b = "xs",
     animateEmoji: O = true,
     hasQuest: N = false,
-    hideEmoji: w = false,
+    hideEmoji: R = false,
     hideTooltip: D = false
   } = e;
   (0, f.A)(null == t ? true : t.id);
@@ -177,14 +177,14 @@ function G(e) {
     K = (0, c.bG)([y.A], () => y.A.isBlockedOrIgnored(null == t ? true : t.id)),
     z = (null == V ? true : V.state) != null,
     q = null != L,
-    X = !q && null != l,
-    Z = H.length + (q || X ? 1 : 0),
-    Q = Z > 1,
-    $ = ((null == V ? true : V.state) != null || null != B) && "xs" === b,
-    J = M({
+    Z = !q && null != l,
+    X = H.length + (q || Z ? 1 : 0),
+    Q = X > 1,
+    J = ((null == V ? true : V.state) != null || null != B) && "xs" === b,
+    $ = M({
       streamActivity: Y,
       otherActivities: H,
-      voiceActivityChannel: X ? l : null
+      voiceActivityChannel: Z ? l : null
     });
   if (K) return null;
   let ee = function() {
@@ -196,7 +196,7 @@ function G(e) {
         textVariant: "text-".concat(b, "/medium"),
         textClassName: p,
         iconClassName: _,
-        hideText: $,
+        hideText: J,
         hideIcon: W,
         hideTooltip: t
       });
@@ -206,7 +206,7 @@ function G(e) {
         textVariant: "text-".concat(b, "/medium"),
         textClassName: p,
         iconClassName: _,
-        hideText: $,
+        hideText: J,
         hideIcon: W,
         hideTooltip: t
       }) : null != l ? (0, r.jsx)(T.A, {
@@ -214,7 +214,7 @@ function G(e) {
         textVariant: "text-".concat(b, "/medium"),
         textClassName: p,
         iconClassName: _,
-        hideText: $,
+        hideText: J,
         hideTooltip: t
       }) : null
     },
@@ -236,7 +236,7 @@ function G(e) {
         e.push((0, r.jsx)(S.A, P({
           activity: n
         }, t), "activity-".concat(i)))
-      }), X && e.push((0, r.jsx)(T.A, x(P({
+      }), Z && e.push((0, r.jsx)(T.A, x(P({
         channel: l
       }, t), {
         showChannelName: true
@@ -246,29 +246,29 @@ function G(e) {
       textVariant: "text-".concat(b, "/medium"),
       className: p,
       hasCustomStatusText: z,
-      totalActivityCount: Z
+      totalActivityCount: X
     }),
-    er = () => 0 === Z ? null : Q && !W ? D ? (0, r.jsxs)("div", {
-      className: s()(R.ht, $ && R.e7),
+    er = () => 0 === X ? null : Q && !W ? D ? (0, r.jsxs)("div", {
+      className: s()(w.ht, J && w.e7),
       children: [ee(), en()]
     }) : (0, r.jsx)(u.m, {
       delay: 150,
       __unsupportedReactNodeAsText: et(),
       children: (0, r.jsxs)("div", {
-        className: s()(R.ht, $ && R.e7),
-        "aria-label": J,
+        className: s()(w.ht, J && w.e7),
+        "aria-label": $,
         children: [ee(true), en()]
       })
     }) : ee(),
-    ei = s()(R.kL, {
-      [R.Dk]: "xs" === b,
-      [R.WV]: "sm" === b
+    ei = s()(w.kL, {
+      [w.Dk]: "xs" === b,
+      [w.WV]: "sm" === b
     }),
     ea = () => null == V && null == B ? null : (0, r.jsx)(I.A, {
       customStatusActivity: V,
       textSize: b,
       animateEmoji: O,
-      hideEmoji: w,
+      hideEmoji: R,
       hideTooltip: D,
       textClassName: p,
       iconClassName: _,
@@ -279,7 +279,7 @@ function G(e) {
     });
   return (0, r.jsxs)("div", {
     className: ei,
-    children: [er(), (null != V || null != B) && Z > 0 && (0, r.jsx)(U, {
+    children: [er(), (null != V || null != B) && X > 0 && (0, r.jsx)(U, {
       textVariant: "text-".concat(b, "/normal"),
       className: p
     }), ea(), N && (0, r.jsx)(v.A, {})]

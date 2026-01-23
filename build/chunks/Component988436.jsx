@@ -1,8 +1,8 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 988436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => O,
-  i: () => T
+  i: () => E
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -35,7 +35,7 @@ function O(e) {
     errorHints: r,
     transitionState: _,
     onClose: O,
-    sourceQuestContent: T
+    sourceQuestContent: E
   } = e, [N, w] = (0, l.useState)(r), I = (0, f.UX)(), k = (0, h.Ut)(), P = null == (t = (0, x.vU)()) ? true : t.getId(), R = (0, o.bG)([m.A], () => m.A.useReducedMotion), D = (0, y.Xf)({
     useReducedMotion: R,
     className: S.Zf
@@ -49,7 +49,7 @@ function O(e) {
         questId: n.id,
         questContent: g.uF.CONNECTIONS_MODAL,
         questContentCTA: h.Cy.DEFIBRILLATOR,
-        sourceQuestContent: T
+        sourceQuestContent: E
       })
     },
     afterRequest: e => {
@@ -69,7 +69,7 @@ function O(e) {
         content: g.uF.CONNECTIONS_MODAL,
         ctaContent: h.Cy.VIEW_CONSOLE_CONNECTIONS_LINK,
         impressionId: P,
-        sourceQuestContent: T
+        sourceQuestContent: E
       })),
       text: C.intl.string(C.t["qiS+xj"])
     }, {
@@ -98,12 +98,12 @@ function O(e) {
         })]
       }), (0, a.jsxs)("div", {
         className: S.ei,
-        children: [(0, a.jsx)(E, {
+        children: [(0, a.jsx)(T, {
           icon: (0, a.jsx)(u.kN9, {
             size: "sm"
           }),
           text: C.intl.string(C.t.br3uIi)
-        }), (0, a.jsx)(E, {
+        }), (0, a.jsx)(T, {
           icon: (0, a.jsx)(u._xR, {
             size: "sm"
           }),
@@ -134,7 +134,7 @@ function O(e) {
   })
 }
 
-function E(e) {
+function T(e) {
   let {
     icon: t,
     text: n,
@@ -183,7 +183,7 @@ function E(e) {
   })
 }
 
-function T(e) {
+function E(e) {
   (0, u.mMO)(async () => {
     let {
       default: t

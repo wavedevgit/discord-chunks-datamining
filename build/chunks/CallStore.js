@@ -157,7 +157,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     channelId: t,
     unavailable: n
@@ -174,7 +174,7 @@ function R(e) {
   }, null != E[t] && delete E[t]
 }
 
-function w(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
@@ -219,7 +219,7 @@ let D = new P(Chunk73153.h, {
   CHANNEL_DELETE: S,
   CALL_CREATE: T,
   CALL_UPDATE: N,
-  CALL_DELETE: R,
+  CALL_DELETE: w,
   CALL_ENQUEUE_RING: C,
-  VOICE_CHANNEL_SELECT: w
+  VOICE_CHANNEL_SELECT: R
 })

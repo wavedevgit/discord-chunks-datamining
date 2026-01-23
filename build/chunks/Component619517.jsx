@@ -67,8 +67,8 @@ let S = /\.gif($|\?|#)/i,
   T = /\.webp($|\?|#)/i,
   C = /\.avif($|\?|#)/i,
   N = /\.png($|\?|#)/i,
-  R = 400,
-  w = 300;
+  w = 400,
+  R = 300;
 class P extends(r = Chunk64700.Component) {
   static isAnimated(e) {
     let {
@@ -266,8 +266,8 @@ class P extends(r = Chunk64700.Component) {
     let {
       width: e,
       height: t,
-      maxWidth: n = R,
-      maxHeight: r = w,
+      maxWidth: n = w,
+      maxHeight: r = R,
       mediaLayoutType: i,
       useFullWidth: a
     } = this.props;
@@ -327,8 +327,8 @@ class P extends(r = Chunk64700.Component) {
       limitResponsiveWidth: T,
       useFullWidth: C,
       placeholder: N,
-      placeholderVersion: R,
-      dataSafeSrc: w,
+      placeholderVersion: w,
+      dataSafeSrc: R,
       srcIsAnimated: D
     } = this.props, {
       readyState: x,
@@ -351,8 +351,8 @@ class P extends(r = Chunk64700.Component) {
       height: G,
       src: "",
       placeholder: N,
-      placeholderVersion: R,
-      dataSafeSrc: w,
+      placeholderVersion: w,
+      dataSafeSrc: R,
       srcIsAnimated: D,
       children: null != f ? e => {
         let {

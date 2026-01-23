@@ -2,7 +2,7 @@
 /** chunk id: 721923, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -72,27 +72,27 @@ function N(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = R(e, t), Object.getOwnPropertySymbols)
+  if (a = w(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let w = e => {
+let R = e => {
   let {
     analyticsLocation: t,
     analyticsSourceLocation: n,
     guild: a,
     buttonText: I,
     targetBoostedGuildTier: T,
-    onClose: R = () => {},
-    closeLayer: w = () => {},
+    onClose: w = () => {},
+    closeLayer: R = () => {},
     pauseAnimation: P = false,
     applicationId: D,
     handleSubscribeModalClose: x,
@@ -120,23 +120,23 @@ let w = e => {
         analyticsSourceLocation: n,
         guild: a,
         numberOfBoostsToAdd: K,
-        onClose: R,
-        closeLayer: w,
+        onClose: w,
+        closeLayer: R,
         inPopout: V,
         applicationId: D,
         handleSubscribeModalClose: x,
         intent: M
       }), B(false)
-    }, X = g.A.getPremiumTypeSubscription(), Z = (0, r.jsxs)("div", {
+    }, Z = g.A.getPremiumTypeSubscription(), X = (0, r.jsxs)("div", {
       className: A.x6,
       children: [j, null != I ? I : v.intl.string(v.t.gKmQ1G)]
     }), Q = false;
-  return ((Q = null !== X && !(W.length > 0) && (null == X ? true : X.isPausedOrPausePending) && H === O.xc.NONE) && (Z = (0, r.jsxs)("div", {
+  return ((Q = null !== Z && !(W.length > 0) && (null == Z ? true : Z.isPausedOrPausePending) && H === O.xc.NONE) && (X = (0, r.jsxs)("div", {
     className: A.x6,
     children: [(0, r.jsx)(d.XAi, {
       size: "xs",
       className: A.iA
-    }), " ", Z]
+    }), " ", X]
   }), U.disabled = true), null != z) ? k ? (0, r.jsx)(c.m_, {
     text: z,
     children: (0, r.jsx)(d.Button, {
@@ -156,7 +156,7 @@ let w = e => {
       size: u.$n.Sizes.SMALL,
       pauseAnimation: P
     }), U), {
-      children: Z
+      children: X
     }))
   }) : k ? (0, r.jsx)(d.Button, {
     variant: "expressive",
@@ -174,6 +174,6 @@ let w = e => {
     submitting: F,
     onClick: q,
     pauseAnimation: P,
-    children: Z
+    children: X
   }))
 }

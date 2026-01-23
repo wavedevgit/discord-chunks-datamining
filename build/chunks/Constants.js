@@ -4,29 +4,29 @@
 require.d(exports, {
   $4X: () => eD,
   $8o: () => ei,
-  $OG: () => tw,
+  $OG: () => tR,
   $aF: () => ta,
   $jw: () => nv,
-  $pd: () => eZ,
+  $pd: () => eX,
   AD1: () => p.AD,
   AKn: () => rC,
   AMi: () => tq,
   AO_: () => nE,
   AaC: () => nH,
   Ahp: () => td,
-  Ajs: () => rw,
+  Ajs: () => rR,
   An1: () => rv,
-  AnalyticsObjectTypes: () => tR,
+  AnalyticsObjectTypes: () => tw,
   Auw: () => i.A,
   BBH: () => tO,
   BEX: () => O,
   BIo: () => no,
-  BRT: () => nX,
+  BRT: () => nZ,
   BVt: () => d.BV,
-  BYE: () => t$,
-  CS1: () => eR,
+  BYE: () => tJ,
+  CS1: () => ew,
   CT4: () => _.CT,
-  CUs: () => nR,
+  CUs: () => nw,
   CmT: () => p.Cm,
   D0I: () => ep,
   D2K: () => nf,
@@ -45,7 +45,7 @@ require.d(exports, {
   F_X: () => nm,
   Fz7: () => nS,
   G2g: () => tM,
-  G6Q: () => J,
+  G6Q: () => $,
   GD: () => n4,
   GaG: () => nb,
   Gg3: () => p.Gg,
@@ -64,13 +64,13 @@ require.d(exports, {
   K3c: () => rS,
   KE7: () => y,
   KIY: () => tY,
-  KL3: () => ew,
+  KL3: () => eR,
   Kby: () => nI,
   KcG: () => p.Kc,
   Kf: () => p.Kf,
   Ks6: () => nN,
   LU7: () => rp,
-  LWr: () => tJ,
+  LWr: () => t$,
   L_o: () => p.L_,
   Lti: () => p.Lt,
   Lw6: () => p.Lw,
@@ -90,9 +90,9 @@ require.d(exports, {
   NcF: () => p.Nc,
   O3O: () => tW,
   OLI: () => p.OL,
-  OQC: () => n$,
+  OQC: () => nJ,
   OSZ: () => Q,
-  Oi0: () => rR,
+  Oi0: () => rw,
   P0V: () => eK,
   P6Q: () => ro,
   PE$: () => nM,
@@ -102,7 +102,7 @@ require.d(exports, {
   PvD: () => er,
   Q4z: () => tD,
   Q7O: () => p.Q7,
-  QCW: () => nZ,
+  QCW: () => nX,
   RCc: () => e9,
   RWi: () => ng,
   R_U: () => nV,
@@ -115,19 +115,19 @@ require.d(exports, {
   SO9: () => n_,
   T2E: () => tE,
   T7x: () => eL,
-  TBI: () => w,
+  TBI: () => R,
   TGd: () => p.TG,
-  TGz: () => tX,
+  TGz: () => tZ,
   TLS: () => t3,
   TVA: () => t6,
   TZK: () => eq,
   T_y: () => tm,
   TbF: () => eB,
   ThZ: () => tA,
-  TpD: () => tZ,
+  TpD: () => tX,
   U2_: () => p.U2,
   UNo: () => eS,
-  UVF: () => Z,
+  UVF: () => X,
   Ue3: () => eI,
   Umv: () => eu,
   UqL: () => tI,
@@ -139,7 +139,7 @@ require.d(exports, {
   W6J: () => _.W6,
   WA1: () => eG,
   WMy: () => _.WM,
-  WTw: () => nJ,
+  WTw: () => n$,
   WxW: () => rT,
   Wzo: () => p.Wz,
   X30: () => rL,
@@ -167,13 +167,13 @@ require.d(exports, {
   _4N: () => rO,
   _Ak: () => p._A,
   _Ee: () => e_,
-  _Of: () => eX,
+  _Of: () => eZ,
   __0: () => p.__,
   _i_: () => tt,
   _tK: () => tQ,
   a3B: () => nA,
   aUe: () => h,
-  aVn: () => R,
+  aVn: () => w,
   ajI: () => en,
   b7d: () => I,
   bFR: () => k,
@@ -198,10 +198,10 @@ require.d(exports, {
   dzt: () => nK,
   e$_: () => p.e$,
   eA$: () => eo,
-  eAD: () => e$,
+  eAD: () => eJ,
   eGj: () => ef,
   eMA: () => n5,
-  eQT: () => eJ,
+  eQT: () => e$,
   elq: () => D,
   ewM: () => tz,
   f5z: () => q,
@@ -276,7 +276,7 @@ require.d(exports, {
   nhx: () => nl,
   nyz: () => tn,
   o$q: () => t1,
-  o1q: () => nw,
+  o1q: () => nR,
   oA2: () => t7,
   oIV: () => e7,
   oJQ: () => nY,
@@ -313,7 +313,7 @@ require.d(exports, {
   ugG: () => tF,
   uje: () => n3,
   ump: () => t2,
-  uss: () => X,
+  uss: () => Z,
   uvi: () => eN,
   uw8: () => rI,
   vkP: () => U,
@@ -329,7 +329,7 @@ require.d(exports, {
   xL: () => ec,
   xei: () => p.xe,
   xfJ: () => p.xf,
-  yFH: () => $,
+  yFH: () => J,
   yKI: () => nz,
   yTV: () => tH,
   zF_: () => n6,
@@ -392,10 +392,10 @@ var Chunk478437 = require("./478437.js"),
   N = function(e) {
     return e.NEVER = "NEVER", e.ENABLED = "ENABLED", e.BLOCKED = "BLOCKED", e
   }({}),
-  R = function(e) {
+  w = function(e) {
     return e.NEVER = "NEVER", e.ALL_CHANNELS = "ALL_CHANNELS", e.SELECTED_CHANNEL = "SELECTED_CHANNEL", e
   }({}),
-  w = function(e) {
+  R = function(e) {
     return e.PUSH_TO_TALK = "PUSH_TO_TALK", e.VOICE_ACTIVITY = "VOICE_ACTIVITY", e
   }({}),
   P = function(e) {
@@ -458,19 +458,19 @@ var H = function(e) {
   q = function(e) {
     return e.ALWAYS = "ALWAYS", e.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING", e
   }({}),
-  X = function(e) {
+  Z = function(e) {
     return e.GUILDS = "GUILDS", e.VOICE = "VOICE", e.VIDEO = "VIDEO", e.VOICE_V3 = "VOICE_V3", e.TEXT = "TEXT", e.GUILDS_TEXT = "GUILDS_TEXT", e.GO_LIVE = "GO_LIVE", e.QUICK_ACTIONS = "QUICK_ACTIONS", e.NOTIFICATIONS = "NOTIFICATIONS", e.ACTIVITY = "ACTIVITY", e.FRIENDS = "FRIENDS", e.CLICK_ZONE_DEBUG = "CLICK_ZONE_DEBUG", e.PERFORMANCE_DEBUG = "PERFORMANCE_DEBUG", e
   }({}),
-  Z = function(e) {
+  X = function(e) {
     return e.DEFAULT = "DEFAULT", e.PINNED = "PINNED", e.UNPINNED = "UNPINNED", e.IN_GAME = "IN_GAME", e.IN_GAME_TEXT = "IN_GAME_TEXT", e.IN_GAME_ACTIVE = "IN_GAME_ACTIVE", e.IN_GAME_PREVIEW = "IN_GAME_PREVIEW", e
   }({}),
   Q = function(e) {
     return e.LARGE = "large", e.SMALL = "small", e
   }({}),
-  $ = function(e) {
+  J = function(e) {
     return e[e.ACTIVE = 0] = "ACTIVE", e[e.TIMED_OUT = 1] = "TIMED_OUT", e[e.DISMISSED = 2] = "DISMISSED", e[e.FOCUSED = 3] = "FOCUSED", e
   }({}),
-  J = function(e) {
+  $ = function(e) {
     return e.TOP_LEFT = "topLeft", e.TOP_RIGHT = "topRight", e.BOTTOM_LEFT = "bottomLeft", e.BOTTOM_RIGHT = "bottomRight", e.DISABLED = "disabled", e
   }({}),
   ee = function(e) {
@@ -1349,8 +1349,8 @@ let eb = 100,
   eT = 100,
   eC = 250,
   eN = 2e3,
-  eR = 4e3,
-  ew = 250,
+  ew = 4e3,
+  eR = 250,
   eP = 100,
   eD = 1e3,
   ex = 100,
@@ -1371,19 +1371,19 @@ let eb = 100,
 var eq = function(e) {
     return e.MESSAGE = "MESSAGE", e.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED", e.MESSAGE_GROUP_IGNORED = "MESSAGE_GROUP_IGNORED", e.MESSAGE_GROUP_SPAMMER = "MESSAGE_GROUP_SPAMMER", e.THREAD_STARTER_MESSAGE = "THREAD_STARTER_MESSAGE", e.DIVIDER = "DIVIDER", e.JUMP_TARGET = "JUMP_TARGET", e.FORUM_POST_ACTION_BAR = "FORUM_POST_ACTION_BAR", e.MESSAGE_GROUP = "MESSAGE_GROUP", e.DIVIDER_TIME_STAMP = "DIVIDER_TIME_STAMP", e.DIVIDER_NEW_MESSAGES = "DIVIDER_NEW_MESSAGES", e
   }({}),
-  eX = function(e) {
+  eZ = function(e) {
     return e.VIDEO = "video", e.VOICE = "voice", e
   }({}),
-  eZ = function(e) {
+  eX = function(e) {
     return e[e.PLAYING = 0] = "PLAYING", e[e.STREAMING = 1] = "STREAMING", e[e.LISTENING = 2] = "LISTENING", e[e.WATCHING = 3] = "WATCHING", e[e.CUSTOM_STATUS = 4] = "CUSTOM_STATUS", e[e.COMPETING = 5] = "COMPETING", e[e.HANG_STATUS = 6] = "HANG_STATUS", e
   }({}),
   eQ = function(e) {
     return e.GAME = "game", e.USER = "user", e.GROUP = "group", e
   }({}),
-  e$ = function(e) {
+  eJ = function(e) {
     return e.LOADING = "LOADING", e.COMPLETE = "COMPLETE", e.FAILED = "FAILED", e
   }({});
-let eJ = 128,
+let e$ = 128,
   e0 = 1024,
   e1 = 2e3,
   e2 = 8e3,
@@ -1480,10 +1480,10 @@ var tC = function(e) {
   tN = function(e) {
     return e.TOOLTIP = "Tooltip", e.CARD = "Card", e.CAROUSEL = "Carousel", e.NAVIGATION_LINK = "Nav Link", e.SUBSCRIBE_TO_TIER_BUTTON = "Subscribe up to Tier Button", e.BUTTON_BROWSE = "Button Browse", e.BUTTON_HOME = "Button Home", e.BUTTON_BACK = "Button Back", e.BUTTON_CTA = "Button CTA", e.BUTTON_ICON = "Button Icon", e.MENU_LINK = "Menu Link", e.WEB_URL = "Web URL", e.LIST_ITEM = "List Item", e.RADIO_ITEM = "Radio Item", e.CONTEXT_MENU = "Context Menu", e.CONTEXT_MENU_ITEM = "Context Menu Item", e.SEARCH = "Search", e.ALTERNATIVE_SKU = "Alternative Sku", e.HOVER_MENU = "Hover Menu", e.AVATAR = "Avatar", e.ANIMATED_AVATAR = "Animated Avatar", e.EDIT_GUILD_PROFILE_AVATAR = "Edit Guild Profile Avatar", e.CHANNEL = "Channel", e.CHANNEL_TAG = "Channel Tag", e.BADGE = "Badge", e.STICKER_SEARCH_VIEW_ALL = "Sticker Search View All", e.STICKER_PICKER_VIEW_ALL = "Sticker Picker View All", e.STICKER_POPOUT_VIEW_ALL = "Sticker Popout View All", e.STICKER_PICKER_PURCHASE_BUTTON = "Sticker Picker Purchase Button", e.STICKER_PICKER_UPSELL_BUTTON = "Sticker Picker Upsell Button", e.STICKER_POPOUT_PURCHASE_BUTTON = "Sticker Popout Purchase Button", e.NUDGED_STICKER = "Nudged Sticker", e.EXPRESSION_SUGGESTIONS = "Expression Suggestions", e.STICKER = "Sticker", e.EMOJI = "Emoji", e.SOUNDBOARD_SOUND = "Soundboard Sound", e.EDIT_PER_SERVER_IDENTITY = "Edit Per Server Identity", e.EDIT_PROFILE_BANNER = "Edit Profile Banner", e.EDIT_GUILD_PROFILE_BANNER = "Edit Guild Profile Banner", e.BOOSTING_BANNER = "Boosting Banner", e.BOOST_LEVEL_UPSELL_BUTTON = "Boost Level Upsell Button", e.BOOST_UPSELL_LOST_LEVEL_HEADER = "Boost Upsell Lost Level Header", e.BOOST_UPSELL_NEXT_LEVEL_HEADER = "Boost Upsell Next Level Header", e.BOOST_UPSELL_BANNER_LOST_LEVEL = "Boost Upsell Banner for Lost Level", e.BOOST_UPSELL_BANNER_SLOTS_FULL = "Boost Upsell Banner for Slots Full", e.BOOST_GEM_ICON = "Boost Gem Icon", e.BOOST_ANNOUNCEMENT_UPSELL = "Boost Announcement Upsell", e.PRIVATE_THREAD_CHECKBOX = "Private Thread Checkbox", e.LEARN_MORE = "Learn More", e.UPLOAD_IMAGE = "Upload Image", e.PREMIUM_UPSELL_BUTTON = "Nitro upsell button", e.PREMIUM_UPSELL_BANNER = "Nitro upsell banner", e.PREMIUM_SUBSCRIPTION_PAYMENT_FLOW_COMPLETED = "Nitro Payment Flow Completed", e.PREMIUM_SUBSCRIPTION = "Discord Nitro", e.PREMIUM_GUILD_SUBSCRIPTION = "Server Boost", e.PREMIUM_GUILD_SUBSCRIPTION_WITH_PREMIUM_SUBSCRIPTION = "Server Boost (Has Nitro)", e.GIF_CROPPING_MODAL = "GIF Cropping Modal", e.IMAGE_CROPPING_MODAL = "Image Cropping Modal", e.UPSELL_HEADER = "Upsell Header", e.TRY_IT_CTA = "Try It CTA", e.GIFTING_PROMOTION_BUTTON = "Gifting promotion icon", e.SERVER_BANNER_TOOLTIP = "Server Banner Tooltip", e.THREAD_ARCHIVE_DURATION_DROPDOWN = "Thread Archive Duration Dropdown", e.BOOST_SERVER_CTA = "Boost This Server CTA", e.SERVER_STATUS_CTA = "See Server Status CTA", e.ACTIVITIES_BOOSTING_UPSELL = "ACTIVITIES_BOOSTING_UPSELL", e.ACTIVITIES_NITRO_UPSELL = "ACTIVITIES_NITRO_UPSELL", e.ACTIVITY_SHELF = "ACTIVITY_SHELF", e.ACTIVITY_NITRO_HOST_LEFT_UPSELL = "ACTIVITY_NITRO_HOST_LEFT_UPSELL", e.ACTIVITIES_COACH_MARK = "ACTIVITIES_COACH_MARK", e.VOICE_CHANNEL_EFFECTS_COACH_MARK = "VOICE_CHANNEL_EFFECTS_COACHMARK", e.VOICE_CHANNEL_EFFECTS_TOGGLE = "VOICE_CHANNEL_EFFECTS_TOGGLE", e.BURST_REACTION_TOGGLE = "BURST_REACTION_TOGGLE", e.ONBOARDING_EDIT = "ONBOARDING_EDIT", e.ONBOARDING_REVIEW = "ONBOARDING_REVIEW", e.FORUM_ACTION_BAR = "FORUM_ACTION_BAR", e.FORUM_GRID_ITEM_FOOTER = "FORUM_GRID_ITEM_FOOTER", e.FORUM_LIST_ITEM_FOOTER = "FORUM_LIST_ITEM_FOOTER", e.MESSAGE_ACTION_SHEET = "MESSAGE_ACTION_SHEET", e.MESSAGE = "MESSAGE", e.CHANNEL_PIN = "CHANNEL_PIN", e.CHANNEL_SEARCH = "CHANNEL_SEARCH", e.CHANNEL_SETTINGS = "CHANNEL_SETTINGS", e.EMOJI_PICKER_BUTTON = "EMOJI_PICKER_BUTTON", e.REACTION_RAIL = "REACTION_RAIL", e.EMOJI_REACTION_PICKER_POPOUT = "EMOJI_REACTION_PICKER_POPOUT", e.EMOJI_REACTION_UPSELL = "EMOJI_REACTION_UPSELL", e.EMOJI_REACTION_TOOLTIP_UPSELL = "EMOJI_REACTION_TOOLTIP_UPSELL", e.EMOJI_PICKER_FLOATING_UPSELL = "EMOJI_PICKER_FLOATING_UPSELL", e.INLINE_REACTION_PICKER_UPSELL = "INLINE_REACTION_PICKER_UPSELL", e.EMOJI_REACTION_PICKER_POPOUT_UPSELL = "EMOJI_REACTION_PICKER_POPOUT_UPSELL", e.REACTION_RIGHT_CLICK_MENU_UPSELL = "REACTION_RIGHT_CLICK_MENU_UPSELL", e.NOTIFICATION_SETTING_UNREAD_NOTICE = "NOTIFICATION_SETTING_UNREAD_NOTICE", e.FORWARD_BREADCRUMB = "FORWARD_BREADCRUMB", e.GUILD_PROFILE = "GUILD_PROFILE", e.GIFT_CATEGORY_OPTION = "Gift Category Option", e.GUILD_POWERUPS_CHANNEL_LIST_ITEM = "GUILD_POWERUPS_CHANNEL_LIST_ITEM", e.GUILD_POWERUPS_LEARN_MORE = "GUILD_POWERUPS_LEARN_MORE", e.REMIXING_ACTION_SHEET_UPSELL = "REMIXING_ACTION_SHEET_UPSELL", e.MESSAGE_REMIX_BUTTON = "MESSAGE_REMIX_BUTTON", e.CUSTOM_STATUS_MANAGER = "CUSTOM_STATUS_MANAGER", e.APP_COMMAND = "APP_COMMAND", e.CTA_TO_ORB_INTRO_QUEST = "CTA to Orb Intro Quest", e.CTA_TO_QUEST_HOME = "CTA to Quest Home", e.CTA_TO_ORBS_SHOP = "CTA_TO_ORBS_SHOP", e.DISCOVERY_BUTTON_TO_ORB_INTRO_QUEST = "Discovery Button to Orb Intro Quest", e.SHOP_BUTTON_TO_SHOP_ORBS_TAB = "Shop Button to Shop Orbs Tab", e.OPEN_ORB_BALANCE_MENU_FROM_PILL = "Open Orb Balance Menu from Pill", e.ORBS_LEARN_MORE_LINK = "Orbs Learn More Link", e.ORBS_QUESTS_BALANCE_MENU_CTA = "ORBS_QUESTS_BALANCE_MENU_CTA", e.ORBS_QUESTS_TILE_SHOP_CTA = "ORBS_QUESTS_TILE_SHOP_CTA", e.ORBS_QUESTS_REWARD_MODAL_SHOP_CTA = "ORBS_QUESTS_REWARD_MODAL_SHOP_CTA", e.MARK_CHANNEL_AS_READ_BUTTON = "Mark Channel as Read Button", e.MARK_CHANNEL_AS_READ_KEYBIND = "Mark Channel as Read Keybind", e.MARK_FORUM_POST_AS_READ_BUTTON = "Mark Forum Post as Read Button", e.MARK_THREAD_AS_READ_BUTTON = "Mark Thread as Read Button", e.MARK_MESSAGE_AS_READ_BUTTON = "Mark Message as Read Button", e.MARK_CHANNEL_AS_READ_FROM_NOTIFICATION = "Mark Channel as Read from Notification", e.UNDO_MARK_AS_READ = "Undo Mark as Read", e.ACK_DECLINE_REQUEST_TO_JOIN = "Ack - Decline Request to Join", e.ACK_DECLINE_REQUEST_TO_STREAM = "Ack - Decline Request to Stream", e.ACK_GRAVITY_CLEAR_READ_STATES_BUTTON = "Ack - Gravity Clear Read States Button", e.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON = "Ack - Gravity Regenerate Feed and Clear Read States Button", e.ACK_INLINE_REPLY = "Ack - Inline Reply", e.ACK_TEXT_CHAT_NOTIFICATION = "Ack - Text Chat Notification", e.ACK_MESSAGE_VIEWED = "Ack - Message Viewed", e.ACK_MEDIA_VIEWED = "Ack - Media Viewed", e.ACK_FORUM_ACTIVE_THREADS = "Ack - Forum Active Threads", e.ACK_GUILD_DIRECTORY_CHANNEL_VIEWED = "Ack - Guild Directory Channel Viewed", e.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED = "Ack - Recent Channel New Channel Viewed", e.ACK_INBOX_CHANNEL_NO_MESSAGES = "Ack - Inbox Channel No Messages", e.ACK_INBOX_FORUM_NO_POSTS = "Ack - Inbox Forum No Posts", e.ACK_INBOX_NEWEST_UNREAD_MESSAGE = "Ack - Inbox Newest Unread Message", e.ACK_FORUM_CHANNEL_NO_UNREAD_POSTS = "Ack - Forum Channel No Unread Posts", e.ACK_INCOMING_MESSAGE = "Ack - Incoming Message", e.ACK_RESORT_THREADS = "Ack - Resort Threads", e.ACK_CHANNEL_SELECT_SAME_CHANNEL = "Ack - Channel Select Same Channel", e.ACK_CHANNEL_SELECT_SAME_CHANNEL_SIDEBAR = "Ack - Channel Select Same Channel Sidebar", e.ACK_CHANNEL_SELECT_SAME_CHANNEL_DISPATCH = "Ack - Channel Select Same Channel Dispatch", e.ACK_CHANNEL_RTC_UPDATE_CHAT_OPEN = "Ack - Channel RTC Update Chat Open", e.ACK_CHANNEL_SCROLL = "Ack - Channel Scroll", e.ACK_WINDOW_FOCUS = "Ack - Window Focus", e.ACK_CHANNEL_SECTION_STORE_UPDATE = "Ack - Channel Section Store Update", e.ACK_VOICE_CHANNEL_SELECT = "Ack - Voice Channel Select", e.ACK_APP_FOREGROUND = "Ack - App Foreground", e.ENABLE_AUTOMATIC_ACK = "Enable Automatic Ack", e
   }({}),
-  tR = function(e) {
+  tw = function(e) {
     return e.GIFT = "gift", e.BUY = "buy", e.BOX_ART = "box_art", e.PERK = "perk", e.NONE = "none", e.TIER_1 = "tier_1", e.TIER_2 = "tier_2", e.TIER_3 = "tier_3", e.TRIAL = "trial", e.FPS = "fps", e.RESOLUTION = "resolution", e.ACTIVITY = "activity", e.REACTION = "reaction", e.CANT_ADD_OR_REMOVE = "cant_add_or_remove", e.REACTION_OVERFLOW = "reaction_overflow", e.NITRO_STANDARD = "nitro_standard", e.NITRO_BASIC = "nitro_basic", e.NITRO_SKU_SELECTION = "nitro_sku_selection", e.ACK_AUTOMATIC = "ack_automatic", e.ACK_SEMI_AUTOMATIC = "ack_semi_automatic", e.ACK_MANUAL = "ack_manual", e
   }({});
-let tw = {
+let tR = {
     page: "Direct",
     object: "Web URL"
   },
@@ -1649,13 +1649,13 @@ let tW = Object.freeze({
     IOS: "https://itunes.apple.com/app/discord/id985746746",
     ANDROID: "https://play.google.com/store/apps/details?id=com.discord"
   }),
-  tX = 0x99aab5,
-  tZ = (0, Chunk317097.Hl)(tX),
+  tZ = 0x99aab5,
+  tX = (0, Chunk317097.Hl)(tZ),
   tQ = [1752220, 3066993, 3447003, 0x9b59b6, 0xe91e63, 0xf1c40f, 0xe67e22, 0xe74c3c, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530, 0xad1457, 0xc27c0e, 0xa84300, 0x992d22, 9936031, 5533306];
-var t$ = function(e) {
+var tJ = function(e) {
     return e.VOICE_LEGACY_SUBSYSTEM = "voice_legacy_subsystem", e.DEBUG_LOGGING = "debug_logging", e.POPOUT_WINDOWS = "popout_windows", e.ELEVATED_HOOK = "elevated_hook", e.CREATE_HOST_ON_ATTACH = "create_host_on_attach", e.USER_DATA_CACHE = "user_data_cache", e.WEBAUTHN = "webauthn", e
   }({}),
-  tJ = function(e) {
+  t$ = function(e) {
     return e.FILTER_FROM = "FILTER_FROM", e.FILTER_MENTIONS = "FILTER_MENTIONS", e.ANSWER_USERNAME_FROM = "ANSWER_USERNAME_FROM", e.ANSWER_USERNAME_MENTIONS = "ANSWER_USERNAME_MENTIONS", e.FILTER_HAS = "FILTER_HAS", e.ANSWER_HAS = "ANSWER_HAS", e.FILTER_FILE_TYPE = "FILTER_FILE_TYPE", e.ANSWER_FILE_TYPE = "ANSWER_FILE_TYPE", e.FILTER_FILE_NAME = "FILTER_FILE_NAME", e.ANSWER_FILE_NAME = "ANSWER_FILE_NAME", e.FILTER_BEFORE = "FILTER_BEFORE", e.ANSWER_BEFORE = "ANSWER_BEFORE", e.FILTER_AFTER = "FILTER_AFTER", e.ANSWER_AFTER = "ANSWER_AFTER", e.FILTER_ON = "FILTER_ON", e.ANSWER_ON = "ANSWER_ON", e.FILTER_IN = "FILTER_IN", e.ANSWER_IN = "ANSWER_IN", e.FILTER_PINNED = "FILTER_PINNED", e.ANSWER_PINNED = "ANSWER_PINNED", e.FILTER_AUTHOR_TYPE = "FILTER_AUTHOR_TYPE", e.ANSWER_AUTHOR_TYPE = "ANSWER_AUTHOR_TYPE", e
   }({}),
   t0 = function(e) {
@@ -1865,10 +1865,10 @@ var nC = function(e) {
   nN = function(e) {
     return e[e.BACKSPACE = 8] = "BACKSPACE", e[e.TAB = 9] = "TAB", e[e.ENTER = 13] = "ENTER", e[e.ESCAPE = 27] = "ESCAPE", e[e.SPACE = 32] = "SPACE", e[e.END = 35] = "END", e[e.HOME = 36] = "HOME", e[e.ARROW_LEFT = 37] = "ARROW_LEFT", e[e.ARROW_UP = 38] = "ARROW_UP", e[e.ARROW_RIGHT = 39] = "ARROW_RIGHT", e[e.ARROW_DOWN = 40] = "ARROW_DOWN", e[e.DELETE = 46] = "DELETE", e[e.DIGIT_0 = 48] = "DIGIT_0", e[e.DIGIT_1 = 49] = "DIGIT_1", e[e.DIGIT_2 = 50] = "DIGIT_2", e[e.DIGIT_3 = 51] = "DIGIT_3", e[e.DIGIT_4 = 52] = "DIGIT_4", e[e.DIGIT_5 = 53] = "DIGIT_5", e[e.DIGIT_6 = 54] = "DIGIT_6", e[e.DIGIT_7 = 55] = "DIGIT_7", e[e.DIGIT_8 = 56] = "DIGIT_8", e[e.DIGIT_9 = 57] = "DIGIT_9", e[e.A = 65] = "A", e[e.B = 66] = "B", e[e.D = 68] = "D", e[e.E = 69] = "E", e[e.H = 72] = "H", e[e.I = 73] = "I", e[e.K = 75] = "K", e[e.N = 78] = "N", e[e.P = 80] = "P", e[e.S = 83] = "S", e[e.U = 85] = "U", e[e.COMMA = 188] = "COMMA", e
   }({}),
-  nR = function(e) {
+  nw = function(e) {
     return e.TOP_LEFT = "top-left", e.TOP_RIGHT = "top-right", e.BOTTOM_LEFT = "bottom-left", e.BOTTOM_RIGHT = "bottom-right", e
   }({}),
-  nw = function(e) {
+  nR = function(e) {
     return e.VIDEO = "VIDEO", e.ACTIVITY = "ACTIVITY", e.FRAME = "FRAME", e.HAVEN = "HAVEN", e
   }({}),
   nP = function(e) {
@@ -1931,17 +1931,17 @@ var nW = function(e) {
   }({});
 let nz = 14,
   nq = 30;
-var nX = function(e) {
+var nZ = function(e) {
   return e.OVERLAY = "OVERLAY", e.APP = "APP", e.POPOUT = "POPOUT", e.CALL_TILE_POPOUT = "CALL_TILE_POPOUT", e
 }({});
-let nZ = __OVERLAY__ ? "OVERLAY" : "APP";
+let nX = __OVERLAY__ ? "OVERLAY" : "APP";
 var nQ = function(e) {
     return e.COMPLETE = "complete", e.TRANSITION = "transition", e
   }({}),
-  n$ = function(e) {
+  nJ = function(e) {
     return e.QUEUED = "queued", e.PLANNING = "planning", e.ALLOCATING_DISK = "allocating_disk", e.PATCHING = "patching", e.FINALIZING = "finalizing", e.PAUSING = "pausing", e.VERIFYING = "verifying", e.REPAIRING = "repairing", e.POST_INSTALL_SCRIPTS = "running_install_scripts", e.UNINSTALLING = "uninstalling", e
   }({}),
-  nJ = function(e) {
+  n$ = function(e) {
     return e.INSTALL_REQUIRED = "install_required", e.INSTALLING = "installing", e.UP_TO_DATE = "up_to_date", e.UPDATE_REQUIRED = "update_required", e.UPDATING = "updating", e.REPAIRING = "repairing", e.UNINSTALLING = "uninstalling", e
   }({}),
   n0 = function(e) {
@@ -2045,8 +2045,8 @@ let rT = 100,
 var rN = function(e) {
   return e[e.NULL = 0] = "NULL", e[e.DISABLED = 1] = "DISABLED", e[e.ENABLED = 2] = "ENABLED", e
 }({});
-let rR = "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
-var rw = function(e) {
+let rw = "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
+var rR = function(e) {
     return e[e.CLIPS_ENABLED = 1] = "CLIPS_ENABLED", e[e.ALLOW_VOICE_RECORDING = 2] = "ALLOW_VOICE_RECORDING", e[e.ALLOW_ANY_VIEWER_CLIPS = 4] = "ALLOW_ANY_VIEWER_CLIPS", e
   }({}),
   rP = function(e) {

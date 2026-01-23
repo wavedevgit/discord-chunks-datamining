@@ -72,19 +72,19 @@ function N(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = R(e, t), Object.getOwnPropertySymbols)
+  if (a = w(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let w = 20,
+let R = 20,
   P = 125,
   D = (0, Chunk915089.Ld)(),
   x = Chunk838677.A.convert.fromCodePoint("1f44f"),
@@ -169,7 +169,7 @@ let k = e => {
             children: d.map((e, t) => (0, r.jsx)(k, {
               index: t,
               fade: 0 !== t,
-              delay: t * w,
+              delay: t * R,
               surrogate: e,
               onClick: a
             }, t))

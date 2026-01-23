@@ -2,7 +2,7 @@
 /** chunk id: 307600, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  h: () => R,
+  h: () => w,
   m: () => N
 });
 var Chunk280230 = require("./280230.js"),
@@ -37,14 +37,14 @@ function N(e, t) {
   return (null == r || r.type !== T.rbe.DM || !!A.A.isFriend(null != (n = r.getRecipientId()) ? n : "")) && e === t
 }
 
-function R(e, t) {
+function w(e, t) {
   let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
     A = arguments.length > 3 ? arguments[3] : true,
     {
       trusted: I,
       onClick: N,
-      onConfirm: R,
-      onCancel: w,
+      onConfirm: w,
+      onCancel: R,
       shouldConfirm: P,
       messageId: D,
       channelId: x
@@ -114,9 +114,9 @@ function R(e, t) {
         guildId: M,
         sourceChannelId: G,
         sourceGuildId: V
-      }), null != R) ? R(): (0, o.A)(j)
+      }), null != w) ? w(): (0, o.A)(j)
     },
-    W = null != w ? w : () => {};
+    W = null != R ? R : () => {};
   if (null !== c.A.isBlockedDomain(j)) {
     null == t || t.preventDefault(), l.A.show(j);
     return

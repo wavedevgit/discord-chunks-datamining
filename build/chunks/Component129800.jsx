@@ -60,7 +60,7 @@ function k(e) {
       sectionName: c,
       source: e,
       commandOrigin: m.iw.APPLICATION_LAUNCHER
-    }), y._.dispatch(R.jej.FOCUS_CHANNEL_TEXT_AREA, {
+    }), y._.dispatch(w.jej.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: a.channel.id
     }))
   }, [a, s, l, c]), f = (null != (t = null == (n = s.options) ? true : n.length) ? t : 0) > 0, _ = i.useMemo(() => (0, C.SD)(s.displayDescription, true), [s.displayDescription]), h = i.useMemo(() => (0, r.jsxs)("div", {
@@ -238,7 +238,7 @@ function F(e) {
     },
     options: {
       placeholderCount: 0,
-      limit: w.Hi,
+      limit: R.Hi,
       includeFrecency: true,
       allowApplicationState: o,
       installOnDemand: o,

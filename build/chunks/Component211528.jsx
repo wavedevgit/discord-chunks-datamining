@@ -4,7 +4,7 @@
 require.d(exports, {
   KS: () => P,
   Lw: () => M,
-  Wf: () => R,
+  Wf: () => w,
   e4: () => L,
   eR: () => x
 }), require("./446912.js"), require("./896048.js");
@@ -87,7 +87,7 @@ function C(e, t) {
   return i
 }
 let N = [Chunk166532.pn.PAYMENT_ELEMENT],
-  R = Chunk64700.memo(function(e) {
+  w = Chunk64700.memo(function(e) {
     let {
       wallets: t = [],
       customPaymentMethodIdsToSourceTypes: n,
@@ -143,7 +143,7 @@ let N = [Chunk166532.pn.PAYMENT_ELEMENT],
       onChange: g
     }, d))
   }),
-  w = e => {
+  R = e => {
     let {
       children: t
     } = e, {
@@ -186,7 +186,7 @@ let N = [Chunk166532.pn.PAYMENT_ELEMENT],
         defaultValues: c
       }, t)
     }, l), o), [c, t, l, o]);
-    return n ? (0, r.jsxs)(w, {
+    return n ? (0, r.jsxs)(R, {
       children: [(0, r.jsx)("div", {
         className: O.R,
         children: (0, r.jsx)(a.PaymentElement, {
@@ -220,7 +220,7 @@ let N = [Chunk166532.pn.PAYMENT_ELEMENT],
           [O._m]: d === b.he.CARD,
           [O.JD]: d === b.he.PAYPAL
         }),
-        children: (0, r.jsx)(R, S(A({}, l), {
+        children: (0, r.jsx)(w, S(A({}, l), {
           customPaymentMethodIdsToSourceTypes: s,
           step: t,
           analyticsContext: _

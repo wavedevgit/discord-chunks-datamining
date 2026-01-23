@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 885293, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => x
@@ -34,7 +34,7 @@ function x(e) {
     shouldTrustUrl: C,
     setShouldTrustUrl: S,
     handleConfirm: O,
-    handleCancel: E
+    handleCancel: T
   } = (0, u.u)({
     url: t,
     trustUrl: n,
@@ -54,7 +54,7 @@ function x(e) {
     actions: [{
       text: p.intl.string(p.t["/g10LC"]),
       onClick: () => {
-        E(), d.default.track(m.HAw.MASKED_LINK_MODAL_CLICKED, {
+        T(), d.default.track(m.HAw.MASKED_LINK_MODAL_CLICKED, {
           is_trust_url_selected: C,
           action_type: "cancel"
         })

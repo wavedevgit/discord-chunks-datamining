@@ -2,7 +2,7 @@
 /** chunk id: 522602, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js"), require("./321073.js"), require("./228524.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -136,7 +136,7 @@ function N(e) {
   } = e;
   y(t, d.C.FirstThreadMessage, [])
 }
-class R extends(r = Chunk311907.Ay.Store) {
+class w extends(r = Chunk311907.Ay.Store) {
   getFirstUpload(e, t) {
     let n = g(e, t);
     return n.length > 0 ? n[0] : null
@@ -159,8 +159,8 @@ class R extends(r = Chunk311907.Ay.Store) {
     return g(e, t).find(n)
   }
 }
-_(R, "displayName", "UploadAttachmentStore");
-let w = new R(Chunk73153.h, {
+_(w, "displayName", "UploadAttachmentStore");
+let R = new w(Chunk73153.h, {
   UPLOAD_ATTACHMENT_POP_FILE: b,
   UPLOAD_ATTACHMENT_ADD_FILES: O,
   UPLOAD_ATTACHMENT_UPDATE_FILE: I,

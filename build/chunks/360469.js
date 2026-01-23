@@ -8,7 +8,7 @@ require.d(exports, {
   CS: () => v,
   D4: () => l,
   DY: () => g,
-  Gl: () => w,
+  Gl: () => R,
   H5: () => D,
   I4: () => _,
   Ig: () => a,
@@ -69,14 +69,14 @@ let T = new Set([u, d, f, p]),
 var N = function(e) {
   return e[e.FOCUSED = 0] = "FOCUSED", e[e.PIP = 1] = "PIP", e[e.GRID = 2] = "GRID", e
 }({});
-let R = {
+let w = {
     label_type: Chunk155718.Hr.NONE,
     release_phase: "",
     label_from: null,
     label_until: null,
     omit_badge_from_surfaces: []
   },
-  w = {
+  R = {
     application_id: "",
     requires_age_gate: false,
     legacy_responsive_aspect_ratio: false,
@@ -84,9 +84,9 @@ let R = {
     tablet_default_orientation_lock_state: 1,
     supported_platforms: [Chunk155718.Yl.WEB],
     client_platform_config: {
-      [Chunk155718.Yl.WEB]: R,
-      [Chunk155718.Yl.IOS]: R,
-      [Chunk155718.Yl.ANDROID]: R
+      [Chunk155718.Yl.WEB]: w,
+      [Chunk155718.Yl.IOS]: w,
+      [Chunk155718.Yl.ANDROID]: w
     },
     has_csp_exception: false,
     displays_advertisements: false,

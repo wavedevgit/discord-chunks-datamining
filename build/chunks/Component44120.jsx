@@ -92,7 +92,7 @@ function C(e) {
       giftMessage: b,
       giftingOrigin: A,
       giftRecipient: C,
-      onClose: w,
+      onClose: R,
       onComplete: P,
       variantsReturnStyle: D
     } = e,
@@ -113,7 +113,7 @@ function C(e) {
       } = t, i = v(t, ["onClose"]);
       return (0, r.jsx)(e, O(y({}, i), {
         onClose: () => {
-          n(), null == w || w(false)
+          n(), null == R || R(false)
         }
       }))
     }
@@ -137,7 +137,7 @@ function C(e) {
       is_gift: E,
       sku_id: u,
       location_stack: _
-    }), (0, o.ET)(), (0, l.z)(), null == w || w(x), x && (0, d.gB)({
+    }), (0, o.ET)(), (0, l.z)(), null == R || R(x), x && (0, d.gB)({
       variantsReturnStyle: D
     })
   }, V = () => {
@@ -152,14 +152,14 @@ function C(e) {
     giftMessage: b,
     giftingOrigin: A,
     giftRecipient: C,
-    onClose: w,
+    onClose: R,
     onCloseCallback: G,
     onCloseRequest: V,
     onComplete: () => {
       x = true, null == P || P()
     }
   };
-  U ? N(F) : R(F)
+  U ? N(F) : w(F)
 }
 let N = e => {
     let {
@@ -199,7 +199,7 @@ let N = e => {
       }
     })
   },
-  R = e => {
+  w = e => {
     let {
       loadId: t,
       skuId: n,

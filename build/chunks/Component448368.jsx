@@ -87,8 +87,8 @@ function L(e, t, n, i, a, o) {
     onClick: i,
     onContextMenu: a,
     className: s()({
-      [w.mf]: true,
-      [w.vk]: null != i
+      [R.mf]: true,
+      [R.vk]: null != i
     }),
     ref: o
   })
@@ -109,26 +109,26 @@ function j(e, t, n) {
     analyticsLocations: E
   } = (0, d.Ay)(u.A.AVATAR), y = i.useRef(null);
   if (o || a.state !== g.a.LOADED || l) return n === N.lAJ.CONTEXT_MENU_COMMAND ? (0, r.jsx)("div", {
-    className: w.Do,
+    className: R.Do,
     children: (0, r.jsx)(c.oyn, {
       size: "xs"
     })
   }) : (0, r.jsx)("div", {
-    className: w.Cz,
+    className: R.Cz,
     children: (0, r.jsx)(D, {
-      className: w.UE
+      className: R.UE
     })
   });
   if (a.message.type === N.lAJ.USER_JOIN || a.message.type === N.lAJ.ROLE_SUBSCRIPTION_PURCHASE || a.message.type === N.lAJ.GUILD_DEADCHAT_REVIVE_PROMPT || a.message.type === N.lAJ.GUILD_GAMING_STATS_PROMPT) return (0, r.jsx)(x, {
-    className: w.VJ
+    className: R.VJ
   });
   if (a.message.type === N.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, r.jsx)(c.qyI, {
     size: "md",
     color: "currentColor",
-    className: w.Cw
+    className: R.Cw
   });
   if (a.message.type === N.lAJ.POLL_RESULT) return (0, r.jsx)(c.YRe, {
-    className: w.Vs,
+    className: R.Vs,
     width: C.eJ,
     height: C.eJ,
     size: "custom"
@@ -189,22 +189,22 @@ function k(e, t, n) {
         renderedContent: u,
         trailingIcon: f,
         leadingIcon: p
-      } = U(a.message, i, o, l, w.Io, {
-        trailingIconClass: w.$4,
-        leadingIconClass: w.Vs,
+      } = U(a.message, i, o, l, R.Io, {
+        trailingIconClass: R.$4,
+        leadingIconClass: R.Vs,
         iconSize: C.eJ
       });
       return (0, r.jsxs)(r.Fragment, {
         children: [p, (0, r.jsx)(c.DUT, {
-          className: s()(w.$y, w.vk, {
-            [w.FQ]: t
+          className: s()(R.$y, R.vk, {
+            [R.FQ]: t
           }),
           onClick: d,
           onMouseEnter: n,
           onMouseLeave: n,
           children: (0, r.jsx)(c.RDc, {
             children: null != u ? u : (0, r.jsx)("span", {
-              className: w.MK,
+              className: R.MK,
               children: e
             })
           })
@@ -213,19 +213,19 @@ function k(e, t, n) {
     }
     case g.a.NOT_LOADED:
       return (0, r.jsx)(c.DUT, {
-        className: s()(w.$y, w.vk),
+        className: s()(R.$y, R.vk),
         onClick: d,
         children: (0, r.jsx)("span", {
-          className: w.MK,
-          children: R.intl.string(R.t["1i+hMi"])
+          className: R.MK,
+          children: w.intl.string(w.t["1i+hMi"])
         })
       });
     case g.a.DELETED:
       return (0, r.jsx)("div", {
-        className: w.$y,
+        className: R.$y,
         children: (0, r.jsx)("span", {
-          className: w.MK,
-          children: R.intl.string(R.t.mE3KJN)
+          className: R.MK,
+          children: w.intl.string(w.t.mE3KJN)
         })
       });
     default:
@@ -251,9 +251,9 @@ function U(e, t, n, i, a, o) {
       className: O,
       width: v,
       height: v
-    })), n) l = R.intl.string(R.t.XAkOo2);
-  else if (i) l = R.intl.string(R.t["G7p6v/"]);
-  else if (E.type === N.lAJ.CHANNEL_PINNED_MESSAGE) l = R.intl.string(R.t.sCfDDl);
+    })), n) l = w.intl.string(w.t.XAkOo2);
+  else if (i) l = w.intl.string(w.t["G7p6v/"]);
+  else if (E.type === N.lAJ.CHANNEL_PINNED_MESSAGE) l = w.intl.string(w.t.sCfDDl);
   else if (E.type === N.lAJ.EMOJI_ADDED) u = (0, r.jsx)(f.HN, {
     message: E,
     rendered: t
@@ -262,10 +262,10 @@ function U(e, t, n, i, a, o) {
     if (D) {
       var L, j;
       u = (0, r.jsx)("div", {
-        className: s()(w.Io, P.PT),
+        className: s()(R.Io, P.PT),
         children: null == E || null == (j = E.poll) || null == (L = j.question) ? true : L.text
       })
-    } else x ? l = (0, m.Il)(E) : S ? l = R.intl.string(R.t.kHdYCW) : T ? l = R.intl.string(R.t["E+6SSY"]) : C ? l = R.intl.string(R.t.XC3A52) : E.hasFlag(N.pr7.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6S) : (l = R.intl.string(R.t["6hGo0c"]), d = (0, r.jsx)(c.xfq, {
+    } else x ? l = (0, m.Il)(E) : S ? l = w.intl.string(w.t.kHdYCW) : T ? l = w.intl.string(w.t["E+6SSY"]) : C ? l = w.intl.string(w.t.XC3A52) : E.hasFlag(N.pr7.IS_COMPONENTS_V2) ? l = w.intl.string(w.t.Xxat6S) : (l = w.intl.string(w.t["6hGo0c"]), d = (0, r.jsx)(c.xfq, {
       size: "custom",
       color: "currentColor",
       className: b,
@@ -327,22 +327,22 @@ function G(e) {
     b = M(e, m),
     v = k(e, _, E),
     I = i.useMemo(() => e.compact ? (0, T.A)((0, O.i$)(l()(), "LT")) : null, [e.compact]);
-  null != n && null != a && (t = R.intl.formatToPlainString(R.t.RhbQ2K, {
+  null != n && null != a && (t = w.intl.formatToPlainString(w.t.RhbQ2K, {
     author: null == a ? true : a.nick,
     repliedAuthor: null == n ? true : n.nick
   }));
   let S = o.type === N.lAJ.CONTEXT_MENU_COMMAND;
   return (0, r.jsxs)("div", {
     id: (0, A.nS)(o),
-    className: s()(w.JZ, I, S ? w.C4 : {
-      [w.NB]: !f && p
+    className: s()(R.JZ, I, S ? R.C4 : {
+      [R.NB]: !f && p
     }),
     "aria-label": t,
     children: [f && p && (0, r.jsx)(c.DUT, {
       tag: "div",
-      "aria-label": R.intl.string(R.t.dpjpOp),
-      className: s()(w.Uo, {
-        [w.xe]: _
+      "aria-label": w.intl.string(w.t.dpjpOp),
+      className: s()(R.Uo, {
+        [R.xe]: _
       }),
       onClick: e.onClickReply,
       onMouseEnter: E,

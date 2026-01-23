@@ -2,7 +2,7 @@
 /** chunk id: 83257, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => w,
+  Ay: () => R,
   OZ: () => T,
   n3: () => S,
   pe: () => C
@@ -94,7 +94,7 @@ function N(e) {
     }))
   })
 }
-class R extends Chunk64700.PureComponent {
+class w extends Chunk64700.PureComponent {
   componentDidMount() {
     this.getPredicateSections().forEach(e => {
       let {
@@ -312,4 +312,4 @@ class R extends Chunk64700.PureComponent {
     })
   }
 }
-let w = R
+let R = w

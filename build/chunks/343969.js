@@ -94,12 +94,12 @@ function N(e) {
   return T.getState()[e]
 }
 
-function R(e) {
+function w(e) {
   let t = N(e);
   return null == t && C(e, t = S(1)), t
 }
 
-function w(e) {
+function R(e) {
   (0, o.r)(() => {
     T.setState(t => {
       let n = y({}, t);
@@ -149,7 +149,7 @@ function L(e) {
 }
 
 function j(e) {
-  w(I(e))
+  R(I(e))
 }
 
 function M(e) {
@@ -265,7 +265,7 @@ function F(e, t) {
     nextPageChunkNumber: a
   } = V(t), {
     previousPagination: s
-  } = R(I(e)), o = t.currentPage, l = null != (n = null == s ? true : s.currentPage) ? n : 0, c = g.A.getElasticSearchPaginationByGuildId(e);
+  } = w(I(e)), o = t.currentPage, l = null != (n = null == s ? true : s.currentPage) ? n : 0, c = g.A.getElasticSearchPaginationByGuildId(e);
   switch (true) {
     case null == c:
     case r === a && 0 === r:
@@ -313,7 +313,7 @@ function B(e, t, n) {
 }
 
 function H(e, t) {
-  let n = R(e);
+  let n = w(e);
   return i()(n.query, t)
 }
 async function Y(e) {
@@ -321,7 +321,7 @@ async function Y(e) {
   let i = g.A.getSearchStateByGuildId(e),
     s = g.A.getPaginationStateByGuildId(e),
     o = I(e),
-    l = R(o),
+    l = w(o),
     [c, u] = B(e, l, s),
     d = U(k(i), u),
     f = null != (t = i.selectedSort) ? t : h.mF.ORDER_BY_GUILD_JOINED_AT_DESC;

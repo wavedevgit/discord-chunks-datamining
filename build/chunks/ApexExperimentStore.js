@@ -104,8 +104,8 @@ let O = [Chunk445397.ni.User, Chunk445397.ni.Installation],
   T = {},
   C = {},
   N = new Set,
-  R = new Set,
-  w = "apexTrackedExposures",
+  w = new Set,
+  R = "apexTrackedExposures",
   P = 2,
   D = 6048e5,
   x = {},
@@ -147,7 +147,7 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
       if (null == r || null == n) continue;
       let i = v[n];
       for (let e in r) {
-        R.add(e);
+        w.add(e);
         let {
           evaluation_id: t,
           assignments: n
@@ -218,7 +218,7 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
     return S[e]
   }
   handleLogout(e) {
-    e || (this.clearUserServerAssignments(), this.clearSessionOverrides()), l.w.remove(w), this.clearAllTrackedExposures()
+    e || (this.clearUserServerAssignments(), this.clearSessionOverrides()), l.w.remove(R), this.clearAllTrackedExposures()
   }
   registerExperiment(e) {
     A[e.name] = e, null != T[e.name] && this.trackExposureSuppression(e.name, "cookie_override")
@@ -333,7 +333,7 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
     return null == t || Date.now() - t > D
   }
   loadTrackedExposures() {
-    let e = l.w.get(w);
+    let e = l.w.get(R);
     if (null == e || e.version !== P) return {};
     let t = e.exposures,
       n = Date.now(),
@@ -343,7 +343,7 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
   }
   saveTrackedExposures(e) {
     try {
-      l.w.set(w, {
+      l.w.set(R, {
         version: P,
         exposures: e
       })
@@ -357,7 +357,7 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
     }
   }
   clearForTests() {
-    this.clearAllServerAssignments(), this.clearAllOverrides(), this.clearAllTrackedExposures(), N.clear(), R.clear()
+    this.clearAllServerAssignments(), this.clearAllOverrides(), this.clearAllTrackedExposures(), N.clear(), w.clear()
   }
   clearAllServerAssignments() {
     v = {
@@ -389,16 +389,16 @@ class k extends(r = Chunk311907.Ay.PersistedStore) {
     N.add(e)
   }
   handleFetchSuccess(e, t) {
-    N.delete(e), R.add(e), this.setExperimentAssignments(t)
+    N.delete(e), w.add(e), this.setExperimentAssignments(t)
   }
   handleFetchFailure(e) {
-    N.delete(e), R.add(e)
+    N.delete(e), w.add(e)
   }
   isFetching(e) {
     return N.has(e)
   }
   hasLoaded(e) {
-    return R.has(e)
+    return w.has(e)
   }
   getOverride(e) {
     var t, n;

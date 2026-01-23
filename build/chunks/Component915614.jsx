@@ -2,7 +2,7 @@
 /** chunk id: 915614, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R,
+  A: () => w,
   o: () => N
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -103,8 +103,8 @@ function N(e) {
     avatarOffsetX: S,
     avatarOffsetY: T,
     bannerWidth: N,
-    bannerHeight: R,
-    themePadding: w,
+    bannerHeight: w,
+    themePadding: R,
     pendingAccentColor: P,
     animateOnHoverOrFocusOnly: D = false
   } = e, x = (0, p.GV)(), [L, j] = i.useState(false), M = (0, l.bG)([m.A], () => m.A.isFocused()), k = h.kt.getSetting(), {
@@ -115,13 +115,13 @@ function N(e) {
     pendingBanner: O,
     size: N,
     canAnimate: D || !k ? L : M
-  }), V = (0, u.rdh)(c.A.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(y, (0, u.FT9)(I)), B = (0, o.LX)((0, d.Ay)(F, V, false)), H = (0, f.A)(null != (t = null != P ? P : null == a ? true : a.primaryColor) ? t : B).hex, Y = C(I), W = Y + S - w, K = R - T - w;
+  }), V = (0, u.rdh)(c.A.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(y, (0, u.FT9)(I)), B = (0, o.LX)((0, d.Ay)(F, V, false)), H = (0, f.A)(null != (t = null != P ? P : null == a ? true : a.primaryColor) ? t : B).hex, Y = C(I), W = Y + S - R, K = w - T - R;
   return (0, r.jsxs)("svg", {
     className: b.dK,
-    viewBox: "0 0 ".concat(N, " ").concat(R),
+    viewBox: "0 0 ".concat(N, " ").concat(w),
     style: {
       minWidth: N,
-      minHeight: R
+      minHeight: w
     },
     children: [(0, r.jsxs)("mask", {
       id: x,
@@ -149,8 +149,8 @@ function N(e) {
         onMouseMove: () => j(true),
         onMouseLeave: () => j(false),
         style: {
-          height: R,
-          minHeight: R,
+          height: w,
+          minHeight: w,
           backgroundImage: null != U ? "url(".concat(U, ")") : true,
           backgroundColor: "COMPLETE" !== G ? c.A.unsafe_rawColors.PRIMARY_800.css : H
         },
@@ -162,7 +162,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     themeType: t,
     displayProfile: n,

@@ -1,7 +1,7 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 742860, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => Z
+  A: () => $
 }), require("./896048.js"), require("./228524.js"), require("./801541.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -93,7 +93,7 @@ function q(e) {
     onMouseLeave: () => {
       s && o && u(false)
     },
-    children: [null != x && (0, a.jsx)(T.Sn, {
+    children: [null != x && (0, a.jsx)(E.Sn, {
       id: "QuestBarContentExpanded_videoThumbnail",
       children: e => (0, a.jsx)("img", {
         ref: e,
@@ -101,7 +101,7 @@ function q(e) {
         src: x.url,
         className: K.Ue
       })
-    }), null != p ? (0, a.jsx)(T.Sn, {
+    }), null != p ? (0, a.jsx)(E.Sn, {
       id: "QuestBarContentExpanded_video",
       children: e => (0, a.jsx)(z, {
         ref: e,
@@ -153,7 +153,7 @@ function Y(e) {
     expansionSpring: g
   } = l.useContext(k.PW), f = l.useRef(null), j = (0, c.bG)([b.A], () => b.A.isEnrolling(o.id), [o]), A = l.useMemo(() => (0, C.tW)(o, C.fY.QUEST_BAR_HERO), [o]), S = (0, y.NA)({
     quest: o
-  }), O = l.useMemo(() => (0, C.tW)(o, C.fY.HERO_IMAGE), [o]), E = l.useMemo(() => null == O ? {} : {
+  }), O = l.useMemo(() => (0, C.tW)(o, C.fY.HERO_IMAGE), [o]), T = l.useMemo(() => null == O ? {} : {
     backgroundImage: "url(".concat(O.url, ")")
   }, [O]), w = (0, p.Ay)(), P = (0, u.Mw)(w), R = _.t$.useConfig({
     location: V.rE.QUESTS_BAR
@@ -214,7 +214,7 @@ function Y(e) {
       },
       children: (0, a.jsx)("div", {
         className: i()(K.LC, K.Ge),
-        style: E
+        style: T
       })
     }), (0, a.jsxs)(s.animated.div, {
       className: K.IC,
@@ -222,7 +222,7 @@ function Y(e) {
         backdropFilter: g.to([0, 1], [5, 0]).to(e => "blur(".concat(e, "px)")),
         filter: g.to([0, 1], [.8, 1]).to(e => "brightness(".concat(e, ")"))
       },
-      children: [A.isAnimated ? (0, a.jsx)(T.Sn, {
+      children: [A.isAnimated ? (0, a.jsx)(E.Sn, {
         id: "QuestBarContentExpanded_heroAnimated",
         children: e => (0, a.jsx)(z, {
           ref: e,
@@ -230,7 +230,7 @@ function Y(e) {
           asset: A,
           className: K.LO
         })
-      }) : (0, a.jsx)(T.Sn, {
+      }) : (0, a.jsx)(E.Sn, {
         id: "QuestBarContentExpanded_heroStatic",
         children: e => (0, a.jsx)("img", {
           ref: e,
@@ -259,14 +259,14 @@ function J(e) {
     expansionSpring: u
   } = l.useContext(k.PW), m = (null == (t = c.userStatus) ? true : t.completedAt) != null, p = d.percentComplete > 0, h = (0, A.Vn)(c), [x, g, b] = (0, A.Qo)(c, d), j = l.useRef(null), _ = l.useRef(null), y = (0, A.RR)({
     quest: c
-  }), C = (0, O.vv)(c), E = (0, A.I3)(c), T = l.useCallback(() => {
+  }), C = (0, O.vv)(c), T = (0, A.I3)(c), E = l.useCallback(() => {
     (0, I.d5)({
       quest: c,
       questContent: v.uF.QUEST_BAR_V2,
       sourceQuestContent: v.uF.QUEST_BAR_V2,
       sourceQuestContentCTA: f.Cy.QUEST_BAR_VIDEO_QUEST_PREVIEW
     })
-  }, [c]), N = null != E ? E.percentComplete : d.percentComplete;
+  }, [c]), N = null != T ? T.percentComplete : d.percentComplete;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.animated.div, {
       className: i()(K.tv, K.ag),
@@ -307,7 +307,7 @@ function J(e) {
         })).exhaustive()
       }), (0, a.jsxs)(M.T, {
         children: [C && (0, a.jsx)(q, {
-          onClick: T
+          onClick: E
         }), (0, a.jsx)(P.f, {
           awaitingConsoleConnections: y,
           hasMadeProgress: p,
@@ -332,7 +332,7 @@ async function X(e, t, n, a) {
     questContentCTA: n,
     sourceQuestContent: a,
     sourceQuestContentCTA: n
-  }) : (0, E.vA)(e) ? await (0, g.Oy)(e.id, {
+  }) : (0, T.vA)(e) ? await (0, g.Oy)(e.id, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: a
@@ -342,7 +342,7 @@ async function X(e, t, n, a) {
     sourceQuestContent: a
   })
 }
-let Z = Chunk64700.forwardRef(function(e, t) {
+let $ = Chunk64700.forwardRef(function(e, t) {
   var n;
   let {
     children: r,
@@ -357,7 +357,7 @@ let Z = Chunk64700.forwardRef(function(e, t) {
     expansionSpring: h
   } = l.useContext(k.PW), {
     launchInGameActivity: x
-  } = (0, A.zW)(p), g = (0, E.vA)(p), b = l.useCallback(async () => {
+  } = (0, A.zW)(p), g = (0, T.vA)(p), b = l.useCallback(async () => {
     let e = g ? f.Cy.START_QUEST : f.Cy.ACCEPT_QUEST;
     await X(p, v.uF.QUEST_BAR_V2, e, v.uF.QUEST_BAR_V2), g && x()
   }, [p, x, g]), j = (null == (n = p.userStatus) ? true : n.enrolledAt) != null, _ = u && m;

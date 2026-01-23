@@ -2,9 +2,9 @@
 /** chunk id: 631576, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $x: () => w,
+  $x: () => R,
   AO: () => S,
-  MO: () => R,
+  MO: () => w,
   YB: () => I,
   oI: () => T,
   p9: () => N,
@@ -178,13 +178,13 @@ let A = async (e, t) => {
       user_id: null == (t = f.default.getCurrentUser()) ? true : t.id
     })
   }), r.body
-}, R = async (e, t, n) => (await a.Bo.patch({
+}, w = async (e, t, n) => (await a.Bo.patch({
   url: m.Rsh.GUILD_STICKER(e, t),
   body: n,
   rejectWithError: false
 })).body;
 
-function w(e, t, n) {
+function R(e, t, n) {
   s.h.dispatch({
     type: "ADD_STICKER_PREVIEW",
     channelId: e,

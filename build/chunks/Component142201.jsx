@@ -53,18 +53,18 @@ let k = function(e) {
     V = (0, o.bG)([v.default], () => v.default.getCurrentUser()),
     F = null == V ? true : V.id,
     B = (0, P.V)(),
-    H = (0, w.O)(),
+    H = (0, R.O)(),
     Y = (0, g.Y)(L.T7),
     [W, K] = i.useState(true),
     z = i.useRef(0),
     q = (0, T.YE)(V, L.PremiumTypes.TIER_2),
-    X = (0, R.A)({
+    Z = (0, w.A)({
       location: "PremiumMarketingPage"
     }),
-    Z = (0, o.bG)([C.A], () => C.A.hasFetched);
+    X = (0, o.bG)([C.A], () => C.A.hasFetched);
   i.useEffect(() => {
-    Z || u.xG()
-  }, [Z]), i.useEffect(() => {
+    X || u.xG()
+  }, [X]), i.useEffect(() => {
     c.h.wait(async () => {
       let e = Date.now();
       await Promise.all([u.hP(), u.$o(), (0, d.zS)(null, null, j.tF5.DISCOVERY)]), z.current = Date.now() - e, K(false)
@@ -78,8 +78,8 @@ let k = function(e) {
     n && (null != B || null != H) && (0, N.u1)(B, H)
   }, [n, B, H]);
   let Q = (0, o.bG)([O.A], () => O.A.enabled),
-    $ = t === L.Mf.ApplicationStoreHome,
-    J = Q ? (0, r.jsx)(f.A, {}) : n ? (0, r.jsx)(E.uK, {}) : $ && q ? (0, r.jsx)(h.f5, {
+    J = t === L.Mf.ApplicationStoreHome,
+    $ = Q ? (0, r.jsx)(f.A, {}) : n ? (0, r.jsx)(E.uK, {}) : J && q ? (0, r.jsx)(h.f5, {
       value: k,
       children: (0, r.jsx)(x.A, {
         userId: F
@@ -88,11 +88,11 @@ let k = function(e) {
       className: s()(M.kL, M.Lq),
       children: (0, r.jsx)(l.y$y, {})
     });
-  return null != J ? (0, r.jsxs)(r.Fragment, {
-    children: [$ && (0, r.jsx)(p.A, {}), J]
+  return null != $ ? (0, r.jsxs)(r.Fragment, {
+    children: [J && (0, r.jsx)(p.A, {}), $]
   }) : (0, r.jsxs)(h.f5, {
     value: k,
-    children: [$ && !X && (0, r.jsx)(p.A, {}), (0, r.jsx)(D.A, {
+    children: [J && !Z && (0, r.jsx)(p.A, {}), (0, r.jsx)(D.A, {
       entrypoint: t
     })]
   })

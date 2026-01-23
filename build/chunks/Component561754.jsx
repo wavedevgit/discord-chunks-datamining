@@ -31,7 +31,7 @@ let T = ["YYYYMMDD", "YYYY-MM-DD", "LL", "L", "MMMM Do YYYY", "MMMM Do YY", "MMM
   C = ["h:mm:ssa", "h:mm:ss a", "H:mm:ss", "h:mma", "h:mm a", "H:mm", "HHmm", "ha", "h a", "H", "LT", "LTS"],
   N = [y().ISO_8601, ...T.flatMap(e => [...C.map(t => "".concat(e, " ").concat(t)), ...C])];
 
-function R() {
+function w() {
   let e = v.default.locale;
   if ("en-US" === e) return a;
   if ("en-GB" === e) return a.GB;
@@ -50,7 +50,7 @@ function R() {
   else return null
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   let r, i, a;
   if (null == n) return {};
   let s = e.clone();
@@ -68,7 +68,7 @@ let P = {
   queryResults(e, t, n) {
     var r;
     let i = y()(),
-      a = R(),
+      a = w(),
       [s] = null != (r = null == a ? true : a.parse(n, i.toDate())) ? r : [true],
       o = (null == s ? true : s.start) != null && (null == s ? true : s.end) == null && s.text === n,
       l = o ? y()(s.start.date()) : y()(n, N, true),
@@ -115,7 +115,7 @@ let P = {
         adjustedTimestamp: p,
         adjustedDescription: _,
         unadjustedDescription: h
-      } = w(i, l, e);
+      } = R(i, l, e);
       null != p && (c.push({
         mention: {
           timestamp: p,

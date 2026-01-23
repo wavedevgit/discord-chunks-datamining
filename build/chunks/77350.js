@@ -4,8 +4,8 @@
 require.d(exports, {
   AE: () => N,
   L8: () => E,
-  XA: () => R,
-  XB: () => w,
+  XA: () => w,
+  XB: () => R,
   Zj: () => c,
   ge: () => p,
   r1: () => T,
@@ -50,5 +50,5 @@ let s = (e, t) => {
     location: "isWebPlayerVideoFile"
   }).enabled && y.test(e),
   N = e => null != e && (I.test(e) || C(e)),
-  R = e => null != e && A.test(e),
-  w = e => o(e, "video")
+  w = e => null != e && A.test(e),
+  R = e => o(e, "video")

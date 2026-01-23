@@ -97,11 +97,11 @@ function N() {
   }), b = 1), T()
 }
 
-function R() {
+function w() {
   return (0, a.qB)(S())
 }
 
-function w(e) {
+function R(e) {
   return I = null, !e.isSwitchingAccount && A !== h.NJ8.DARK && (A = h.NJ8.DARK, (0, u.A)(A), T())
 }
 
@@ -136,14 +136,14 @@ m(C, "displayName", "ThemeStore"), m(C, "persistKey", "ThemeStore"), m(C, "migra
 let M = new C(Chunk73153.h, {
   CACHE_LOADED: T,
   CONNECTION_OPEN: N,
-  LOGOUT: w,
+  LOGOUT: R,
   OVERLAY_INITIALIZE: T,
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: T,
   UNSYNCED_USER_SETTINGS_UPDATE: T,
   USER_SETTINGS_PROTO_UPDATE: T,
   RESET_PREVIEW_CLIENT_THEME: T,
   SYSTEM_THEME_CHANGE: P,
-  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: R,
+  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: w,
   UPDATE_THEME_PREFERENCES: D,
   SET_THEME_OVERRIDE: x,
   CLEAR_THEME_OVERRIDE: L,

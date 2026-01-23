@@ -39,8 +39,8 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
     hideScrollbar: T = false,
     fade: C = false,
     initialScrollTop: N = 0,
-    role: R = "list"
-  } = e, [w, P] = i.useState(false), [D, x] = i.useState(false), L = i.useRef(null), j = i.useRef(0), M = i.useRef(false);
+    role: w = "list"
+  } = e, [R, P] = i.useState(false), [D, x] = i.useState(false), L = i.useRef(null), j = i.useRef(0), M = i.useRef(false);
   (0, l.u5)(() => {
     var e;
     let t = null == (e = L.current) ? true : e.getScrollerNode();
@@ -224,15 +224,15 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
     }
   }), [G, I, Y, D]);
   let {
-    visibleItems: X,
-    listOffset: Z
+    visibleItems: Z,
+    listOffset: X
   } = i.useMemo(() => {
-    if (false === D || false === w) return {
+    if (false === D || false === R) return {
       visibleItems: null,
       listOffset: 0
     };
-    let e = w,
-      t = w + D,
+    let e = R,
+      t = R + D,
       n = 0,
       r = d[0],
       i = [],
@@ -279,30 +279,30 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
       visibleItems: i,
       listOffset: r
     }
-  }, [U, V, G, F, d, f, p, h, _, w, K, I, m, k, D]), Q = i.useMemo(() => {
+  }, [U, V, G, F, d, f, p, h, _, R, K, I, m, k, D]), Q = i.useMemo(() => {
     var e, t, n;
     return {
-      top: Z,
+      top: X,
       right: null != (e = null == d ? true : d[1]) ? e : 0,
       bottom: null != (t = null == d ? true : d[2]) ? t : 0,
       left: null != (n = null == d ? true : d[3]) ? n : 0
     }
-  }, [Z, d]), $ = i.useMemo(() => ({
+  }, [X, d]), J = i.useMemo(() => ({
     height: Y
-  }), [Y]), J = T ? o.zCo : o.ChK;
-  return (0, r.jsxs)(J, {
+  }), [Y]), $ = T ? o.zCo : o.ChK;
+  return (0, r.jsxs)($, {
     fade: C,
     className: s()(c.XG, S),
     ref: L,
     onScroll: q,
     children: [(0, r.jsx)("div", {
-      role: R,
+      role: w,
       className: c.Dw,
       style: Q,
-      children: X
+      children: Z
     }), (0, r.jsx)("div", {
       className: c.W7,
-      style: $
+      style: J
     })]
   })
 }))

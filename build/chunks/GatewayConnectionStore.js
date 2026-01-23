@@ -30,7 +30,7 @@ var r, Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk355097 = require("./355097.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,7 +38,7 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let w = window.DiscordNative;
+let R = window.DiscordNative;
 Chunk531013.sZ.dispatcher.getDispatchHandler = Chunk448515.A;
 let P = new Chunk626584.A("ConnectionStore"),
   D = 100,
@@ -67,7 +67,7 @@ async function F(e) {
     n = y.A.getVoiceChannelId();
   if (null != n) {
     var r, i, a, s, o, c, u, f;
-    if ((null == (o = window) || null == (s = o.performance) || null == (a = s.getEntriesByType) || null == (i = a.call(s, "navigation")) || null == (r = i[0]) ? true : r.type) !== "reload" && (null == (c = await (null == w || null == (f = w.processUtils) || null == (u = f.getLastCrash) ? true : u.call(f))) ? true : c.rendererCrashReason) == null && j) g.A.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+    if ((null == (o = window) || null == (s = o.performance) || null == (a = s.getEntriesByType) || null == (i = a.call(s, "navigation")) || null == (r = i[0]) ? true : r.type) !== "reload" && (null == (c = await (null == R || null == (f = R.processUtils) || null == (u = f.getLastCrash) ? true : u.call(f))) ? true : c.rendererCrashReason) == null && j) g.A.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
     else {
       let e = h.A.getChannel(n);
       null != e && (t = {
@@ -130,14 +130,14 @@ function q(e) {
   }, false)
 }
 
-function X(e) {
+function Z(e) {
   e.guild.id === I.Xo.guildId && I.Xo.setState({
     guildId: null,
     channelId: null
   })
 }
 
-function Z(e) {
+function X(e) {
   let {
     channelId: t
   } = e;
@@ -160,12 +160,12 @@ function Q(e) {
   })
 }
 
-function $(e) {
+function J(e) {
   if (e.state !== C.S7L.DISCONNECTED) returnfalse;
   e.willReconnect && (null != e.streamKey ? I.sZ.streamPing(e.streamKey) : I.sZ.voiceServerPing())
 }
 
-function J(e) {
+function $(e) {
   return (0, v.isIOS)() ? (p.default.isAuthenticated() && (M === C.g6G.INACTIVE && e.state === C.g6G.BACKGROUND && null == I.Xo.channelId ? I.sZ.close(true) : M === C.g6G.BACKGROUND && e.state === C.g6G.ACTIVE && I.sZ.isClosed() && (S.V(false), I.sZ.connect())), M = e.state) : e.state === C.g6G.ACTIVE && (S.V(false), p.default.isAuthenticated() && I.sZ.resetBackoff("App state is active")), false
 }
 
@@ -326,7 +326,7 @@ class ey extends(r = Chunk311907.Ay.Store) {
     return x
   }
 }
-R(ey, "displayName", "GatewayConnectionStore");
+w(ey, "displayName", "GatewayConnectionStore");
 let eb = new ey(Chunk73153.h, {
   START_SESSION: U,
   LOGIN_SUCCESS: V,
@@ -337,13 +337,13 @@ let eb = new ey(Chunk73153.h, {
   },
   CONNECTION_RESUMED: H,
   CONNECTION_CLOSED: B,
-  RTC_CONNECTION_STATE: $,
+  RTC_CONNECTION_STATE: J,
   VOICE_CHANNEL_SELECT: W,
   VOICE_STATE_UPDATES: q,
-  GUILD_DELETE: X,
+  GUILD_DELETE: Z,
   CHANNEL_DELETE: Q,
-  CALL_DELETE: Z,
-  APP_STATE_UPDATE: J,
+  CALL_DELETE: X,
+  APP_STATE_UPDATE: $,
   GUILD_MEMBERS_REQUEST: en,
   GUILD_SEARCH_RECENT_MEMBERS: er,
   GUILD_SUBSCRIPTIONS_FLUSH: ei,

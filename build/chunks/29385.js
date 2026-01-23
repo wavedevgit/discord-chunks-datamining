@@ -79,9 +79,9 @@ module.exports = function(e, t) {
           entity: u(O.getCurrentContent(), O.getSelection())
         }),
         N = c.getCurrentBlockType(O),
-        R = o.processText(E, C, N),
-        w = r.createFromArray(R);
-      e.update(_(e._latestEditorState, w))
+        w = o.processText(E, C, N),
+        R = r.createFromArray(w);
+      e.update(_(e._latestEditorState, R))
     }
   }
 }

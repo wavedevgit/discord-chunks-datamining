@@ -76,12 +76,12 @@ function O(e) {
   }), C = (0, l.A)({
     id: n.id,
     label: _.intl.string(_.t["/AXYnE"])
-  }), N = "application_id" in O.extra ? O.extra.application_id : null, R = (0, l.A)({
+  }), N = "application_id" in O.extra ? O.extra.application_id : null, w = (0, l.A)({
     id: N,
     label: _.intl.string(_.t["FfCL+6"])
-  }), w = (0, f.zD)(O), P = (0, u.A)({
+  }), R = (0, f.zD)(O), P = (0, u.A)({
     location: "ContentPopoutContextMenu",
-    applicationId: w && true !== A ? null == (t = O.extra) ? true : t.application_id : true,
+    applicationId: R && true !== A ? null == (t = O.extra) ? true : t.application_id : true,
     source: c.Ob.ActivityCardContextMenu,
     trackEntryPointImpression: true,
     sourceUserId: O.author_id
@@ -113,7 +113,7 @@ function O(e) {
               }
             })]
           }), (0, r.jsxs)(s.rXV, {
-            children: [C, R]
+            children: [C, w]
           })]
         })
       })

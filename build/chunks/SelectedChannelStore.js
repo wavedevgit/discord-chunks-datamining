@@ -25,7 +25,7 @@ var u, Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk746080 = require("./746080.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,14 +34,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -140,7 +140,7 @@ function q() {
   r = null
 }
 
-function X(e) {
+function Z(e) {
   let {
     guildId: t,
     channelId: n
@@ -149,7 +149,7 @@ function X(e) {
   null == n && (n = B(t)), null != a && n !== a && (i = a), a = n, H(t, n), M[V(t)] !== n && (k[V(t)] = M[V(t)], M[V(t)] = a), F()
 }
 
-function Z(e) {
+function X(e) {
   let {
     channelId: t
   } = e;
@@ -172,7 +172,7 @@ function Q(e, t, n) {
   o === e && (o = null, a = true), M[V(i)] === e && (M[V(i)] = r && null != n ? n : B(V(i)), T.A.getGuildId() === i && (0, g.bG)(C.BVt.CHANNEL(t, M[V(i)])), a = true), null != i && U[i] === e && (delete U[i], a = true), a && F()
 }
 
-function $(e) {
+function J(e) {
   let {
     type: t,
     channel: n
@@ -180,7 +180,7 @@ function $(e) {
   Q(n.id, n.guild_id, n.parent_id, "THREAD_DELETE" === t)
 }
 
-function J(e) {
+function $(e) {
   let {
     channels: t
   } = e;
@@ -274,7 +274,7 @@ class es extends(u = Chunk311907.Ay.Store) {
         selectedChannelIds: M,
         mostRecentSelectedTextChannelIds: U
       };
-      null != n.knownThreadIds && (G = new Set(n.knownThreadIds)), o = n.selectedVoiceChannelId, s = n.lastChannelFollowingDestination, l = n.lastConnectedTime, U = null != (t = n.mostRecentSelectedTextChannelIds) ? t : {}, null != n.selectedChannelIds && (M = D(w({}, n.selectedChannelIds), {
+      null != n.knownThreadIds && (G = new Set(n.knownThreadIds)), o = n.selectedVoiceChannelId, s = n.lastChannelFollowingDestination, l = n.lastConnectedTime, U = null != (t = n.mostRecentSelectedTextChannelIds) ? t : {}, null != n.selectedChannelIds && (M = D(R({}, n.selectedChannelIds), {
         null: null
       }))
     }
@@ -306,19 +306,19 @@ class es extends(u = Chunk311907.Ay.Store) {
     return s
   }
 }
-R(es, "displayName", "SelectedChannelStore");
+w(es, "displayName", "SelectedChannelStore");
 let eo = new es(Chunk73153.h, {
   CONNECTION_OPEN: K,
   OVERLAY_INITIALIZE: z,
   CONNECTION_CLOSED: q,
-  CHANNEL_SELECT: X,
+  CHANNEL_SELECT: Z,
   CHANNEL_CREATE: ea,
-  CHANNEL_DELETE: $,
-  CHANNEL_UPDATES: J,
-  THREAD_DELETE: $,
+  CHANNEL_DELETE: J,
+  CHANNEL_UPDATES: $,
+  THREAD_DELETE: J,
   GUILD_CREATE: ee,
   GUILD_DELETE: et,
-  VOICE_CHANNEL_SELECT: Z,
+  VOICE_CHANNEL_SELECT: X,
   VOICE_STATE_UPDATES: en,
   CHANNEL_FOLLOWER_CREATED: er,
   LOGOUT: ei

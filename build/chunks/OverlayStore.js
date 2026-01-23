@@ -439,14 +439,14 @@ function N(e) {
   }))
 }
 
-function R(e) {
+function w(e) {
   let {
     widgetId: t
   } = e;
-  return C(t, (e, t) => w(t, e.id))
+  return C(t, (e, t) => R(t, e.id))
 }
 
-function w(e, t) {
+function R(e, t) {
   let n = H(e);
   n.sort((e, t) => e.zIndex - t.zIndex);
   let r = n.findIndex(e => e.id === t);
@@ -849,7 +849,7 @@ let q = new z(Chunk73153.h, {
   LAYOUT_CREATE: S,
   LAYOUT_SET_PINNED: x,
   LAYOUT_UPDATE_WIDGET: N,
-  LAYOUT_SET_TOP_WIDGET: R,
+  LAYOUT_SET_TOP_WIDGET: w,
   LAYOUT_DELETE_WIDGET: k,
   LAYOUT_DELETE_ALL_WIDGETS: U,
   LAYOUT_CREATE_WIDGETS: G,

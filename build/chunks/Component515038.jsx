@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 515038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => O
@@ -28,7 +28,7 @@ var Chunk627968 = require("./627968.js"),
 let S = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
 function O(e) {
-  var t, n, r, O, T;
+  var t, n, r, O, E;
   let {
     quest: N,
     questContent: w,
@@ -64,23 +64,23 @@ function O(e) {
         })
       }
       return e
-    }({}, y.N), T = T = {
+    }({}, y.N), E = E = {
       clamp: true
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(T)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var a = Object.getOwnPropertySymbols(e);
         n.push.apply(n, a)
       }
       return n
-    })(Object(T)).forEach(function(e) {
-      Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(T, e))
+    })(Object(E)).forEach(function(e) {
+      Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(E, e))
     }), O)
   }), z = (null == (n = N.userStatus) ? true : n.completedAt) != null, q = (null == (r = N.userStatus) ? true : r.claimedAt) != null, Q = (0, g.ks)(N.config), Y = (0, g._Z)(N.config), {
     completedRatio: J,
     completedRatioDisplay: X
-  } = (0, h.O9)(N), Z = (0, p.gj)(N, M, L), $ = l.useMemo(() => q && Q ? A.intl.format(A.t["8Op4c4"], {
-    balanceHook: () => (0, a.jsxs)(E, {
+  } = (0, h.O9)(N), $ = (0, p.gj)(N, M, L), Z = l.useMemo(() => q && Q ? A.intl.format(A.t["8Op4c4"], {
+    balanceHook: () => (0, a.jsxs)(T, {
       questId: N.id,
       children: [(0, a.jsx)(m.A, {
         shouldUseThemeColor: true,
@@ -88,11 +88,11 @@ function O(e) {
         customSize: 14
       }), Y]
     }, N.id)
-  }) : q ? (0, a.jsx)(E, {
+  }) : q ? (0, a.jsx)(T, {
     questId: N.id,
     children: U
   }) : Q ? A.intl.format(A.t.ro1sze, {
-    balanceHook: () => (0, a.jsxs)(E, {
+    balanceHook: () => (0, a.jsxs)(T, {
       questId: N.id,
       children: [(0, a.jsx)(m.A, {
         shouldUseThemeColor: true,
@@ -101,18 +101,18 @@ function O(e) {
       }), Y]
     }, N.id)
   }) : A.intl.format(A.t["0IUT4Y"], {
-    rewardWithArticleHook: () => (0, a.jsx)(E, {
+    rewardWithArticleHook: () => (0, a.jsx)(T, {
       questId: N.id,
       children: B
     }, N.id)
   }), [U, q, B, N.id, Y, Q]), ee = l.useMemo(() => {
-    if (null != Z) return (0, a.jsx)(c.Text, {
+    if (null != $) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       className: C.h_,
-      children: Z
+      children: $
     })
-  }, [Z]), et = (0, o.bG)([u.A], () => u.A.useReducedMotion);
+  }, [$]), et = (0, o.bG)([u.A], () => u.A.useReducedMotion);
   return (0, a.jsxs)("div", {
     className: C.kL,
     ref: L,
@@ -181,7 +181,7 @@ function O(e) {
           variant: "text-md/semibold",
           color: "text-strong",
           className: C.wx,
-          children: $
+          children: Z
         }), ee]
       }), W && (0, a.jsx)(s.animated.div, {
         style: {
@@ -199,7 +199,7 @@ function O(e) {
     })]
   })
 }
-let E = Chunk64700.memo(function(e) {
+let T = Chunk64700.memo(function(e) {
   let {
     questId: t,
     children: n

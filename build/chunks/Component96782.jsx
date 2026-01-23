@@ -53,7 +53,7 @@ function N(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -186,8 +186,8 @@ function U(e) {
     renderPlaintextFilePreview: T,
     renderGenericFileComponent: C,
     renderVisualPlaceholderComponent: N,
-    className: R,
-    imgContainerClassName: w,
+    className: w,
+    imgContainerClassName: R,
     imgClassName: P,
     focusable: D,
     hiddenSpoilers: x,
@@ -206,7 +206,7 @@ function U(e) {
     spoiler: K,
     type: z,
     contentType: q
-  } = n, [X, Z] = i.useState(false), Q = t.getChannelId(), $ = E.A.getChannel(Q), J = (0, m.A)(Q), ee = i.useMemo(() => null != q && false !== q.indexOf("/") ? q.split("/") : ["unknown", "unknown"], [q]), et = false;
+  } = n, [Z, X] = i.useState(false), Q = t.getChannelId(), J = E.A.getChannel(Q), $ = (0, m.A)(Q), ee = i.useMemo(() => null != q && false !== q.indexOf("/") ? q.split("/") : ["unknown", "unknown"], [q]), et = false;
   if (V) {
     (null == Y || null == W) && (et = true);
     let e = (0, b.U8)({
@@ -222,15 +222,15 @@ function U(e) {
     }, [n, l]),
     er = i.useCallback(() => {
       y.default.track(A.HAw.IMAGE_HOVERED, {
-        guild_id: null == $ ? true : $.guild_id,
-        channel_id: null == $ ? true : $.id,
+        guild_id: null == J ? true : J.guild_id,
+        channel_id: null == J ? true : J.id,
         image_recommendations_shown: false
       })
-    }, [$]),
+    }, [J]),
     ei = i.useCallback(() => {
       if (L === v.dG.MOSAIC) {
-        let e = !J && ["VIDEO", "CLIP", "AUDIO"].includes(z) || "OTHER" === z;
-        return et ? null : !X && (0, r.jsx)(k, {
+        let e = !$ && ["VIDEO", "CLIP", "AUDIO"].includes(z) || "OTHER" === z;
+        return et ? null : !Z && (0, r.jsx)(k, {
           mimeType: ee,
           downloadURL: n.downloadUrl,
           showDownload: e,
@@ -252,9 +252,9 @@ function U(e) {
           color: "currentColor"
         })
       })
-    }, [L, o, K, J, z, et, X, ee, n, en, V, l]);
+    }, [L, o, K, $, z, et, Z, ee, n, en, V, l]);
   if (H) return (0, r.jsx)(c._V3, {
-    className: R,
+    className: w,
     readyState: A.Rv1.READY,
     src: "",
     width: null != Y ? Y : 350,
@@ -276,11 +276,11 @@ function U(e) {
           autoPlay: a && !x,
           onClick: u,
           onContextMenu: f,
-          shouldHideMediaOptions: J,
+          shouldHideMediaOptions: $,
           renderAccessory: e,
           renderAdjacentContent: ei,
-          containerClassName: R,
-          className: w,
+          containerClassName: w,
+          className: R,
           imageClassName: P,
           shouldLink: D,
           hiddenSpoilers: x,
@@ -305,7 +305,7 @@ function U(e) {
         renderAdjacentContent: ei,
         naturalWidth: Y,
         naturalHeight: W,
-        className: s()(R, {
+        className: s()(w, {
           [S.yq]: U
         }),
         playable: D,
@@ -317,7 +317,7 @@ function U(e) {
         mimeType: ee,
         onControlsShow: F,
         onControlsHide: B,
-        downloadable: !J,
+        downloadable: !$,
         mediaPlayerClassName: U ? S.yq : true
       });
     case "VISUAL_PLACEHOLDER":
@@ -325,7 +325,7 @@ function U(e) {
       return (0, r.jsx)(N, {
         item: n,
         message: t,
-        className: w,
+        className: R,
         imageClassName: P,
         maxWidth: j,
         maxHeight: M,
@@ -336,19 +336,19 @@ function U(e) {
       return (0, r.jsx)(O, {
         item: n,
         message: t,
-        className: R,
+        className: w,
         playable: D,
         mimeType: ee,
         renderAdjacentContent: ei,
-        onVolumeShow: () => Z(true),
-        onVolumeHide: () => Z(false),
+        onVolumeShow: () => X(true),
+        onVolumeHide: () => X(false),
         onPlay: p
       });
     case "PLAINTEXT_PREVIEW":
       return (0, r.jsx)(T, {
         item: n,
         message: t,
-        className: R,
+        className: w,
         onClick: u,
         onContextMenu: f,
         renderAdjacentContent: ei
@@ -357,7 +357,7 @@ function U(e) {
       return (0, r.jsx)(C, {
         item: n,
         message: t,
-        className: R,
+        className: w,
         onClick: u,
         onContextMenu: f,
         renderAdjacentContent: ei
@@ -381,7 +381,7 @@ function G(e, t, n) {
     });
     r = t
   }
-  return w(N({}, n !== v.dG.MOSAIC && {
+  return R(N({}, n !== v.dG.MOSAIC && {
     maxWidth: null != r ? r : "400px"
   }), {
     width: "100%",
@@ -404,13 +404,13 @@ let V = function(e) {
     width: E,
     height: y,
     type: b
-  } = n, A = o(n, (0, _.P)(a)), [I, T] = i.useState(null != A), C = (0, f.qZ)(A), R = c === v.dG.MOSAIC, D = !R && (null != E && E < x || null != y && y < L), M = j(b), k = (0, O.Xg)(b), V = u && null != A && (0, f.j8)(E, y), [F, B] = i.useState(false), H = () => {
+  } = n, A = o(n, (0, _.P)(a)), [I, T] = i.useState(null != A), C = (0, f.qZ)(A), w = c === v.dG.MOSAIC, D = !w && (null != E && E < x || null != y && y < L), M = j(b), k = (0, O.Xg)(b), V = u && null != A && (0, f.j8)(E, y), [F, B] = i.useState(false), H = () => {
     B(true)
   }, Y = () => {
     B(false)
   }, W = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    return (0, r.jsx)(U, w(N({}, m), {
+    return (0, r.jsx)(U, R(N({}, m), {
       item: n,
       message: a,
       getObscureReason: o,
@@ -440,8 +440,8 @@ let V = function(e) {
     className: s()(S.wO, {
       [S.xV]: M,
       [S.D$]: l,
-      [S.UI]: R,
-      [S.JP]: R && k,
+      [S.UI]: w,
+      [S.JP]: w && k,
       [S.hU]: null != d
     }),
     children: [null != A ? (0, r.jsx)(g.Ay, {

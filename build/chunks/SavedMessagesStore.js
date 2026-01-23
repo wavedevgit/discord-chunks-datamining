@@ -118,14 +118,14 @@ function N(e) {
   A(t)
 }
 
-function R(e) {
+function w(e) {
   let {
     savedMessageData: t
   } = e;
   return I(t)
 }
 
-function w(e) {
+function R(e) {
   let {
     messageId: t,
     channelId: n
@@ -143,7 +143,7 @@ function P(e) {
     id: t,
     channelId: n
   } = e;
-  return w({
+  return R({
     messageId: t,
     channelId: n
   })
@@ -154,7 +154,7 @@ function D(e) {
     ids: t,
     channelId: n
   } = e;
-  for (let e of t) w({
+  for (let e of t) R({
     messageId: e,
     channelId: n
   })
@@ -276,7 +276,7 @@ let F = new V(Chunk73153.h, {
   LOGOUT: T,
   SAVED_MESSAGES_UPDATE: C,
   SAVED_MESSAGE_CREATE: N,
-  SAVED_MESSAGE_DELETE: R,
+  SAVED_MESSAGE_DELETE: w,
   MESSAGE_DELETE: P,
   MESSAGE_DELETE_BULK: D,
   MESSAGE_UPDATE: x,

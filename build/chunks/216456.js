@@ -11,7 +11,7 @@ require.d(exports, {
   Y5: () => F,
   av: () => U,
   fF: () => M,
-  jO: () => w,
+  jO: () => R,
   u0: () => H
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
@@ -75,9 +75,9 @@ function C(e, t) {
   }), e
 }
 let N = Object.keys(Chunk341915.uF),
-  R = new Set([Chunk652215.HAw.QUEST_CONTENT_VIEWED, Chunk652215.HAw.QUEST_CONTENT_CLICKED]);
+  w = new Set([Chunk652215.HAw.QUEST_CONTENT_VIEWED, Chunk652215.HAw.QUEST_CONTENT_CLICKED]);
 
-function w(e) {
+function R(e) {
   var t;
   return null != (t = N.find(t => m.uF[t] === e)) ? t : ""
 }
@@ -124,7 +124,7 @@ function j(e, t, n, r) {
 function M(e, t, n) {
   return {
     content_id: e,
-    content_name: w(e),
+    content_name: R(e),
     content_position: t,
     row_index: n
   }
@@ -136,7 +136,7 @@ function k(e, t) {
   if ((0, E.Q)({
       location: v.rE.QUEST_PREVIEW_TOOL
     }) && d.A.getLayers().includes(A.zgK.USER_SETTINGS) || (u.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", e, t), r)) return;
-  let i = R.has(e);
+  let i = w.has(e);
   if (n) return l.Ay.trackWithMetadata(e, t, i);
   f.default.track(e, t, {
     flush: i
@@ -180,7 +180,7 @@ async function F(e) {
     impressionId: l,
     trackGuildAndChannelMetadata: u,
     sourceQuestContent: d
-  } = e, f = h.A.getQuest(t), _ = await (0, a.N)(w(n)), m = (0, y.Li)(n), g = (0, y.L4)(n), E = (0, y.yI)(n, t), b = (0, y.Gp)(n, t);
+  } = e, f = h.A.getQuest(t), _ = await (0, a.N)(R(n)), m = (0, y.Li)(n), g = (0, y.L4)(n), E = (0, y.yI)(n, t), b = (0, y.Gp)(n, t);
   U({
     questId: t,
     event: A.HAw.QUEST_CONTENT_CLICKED,
@@ -246,7 +246,7 @@ function Y() {
       trackGuildAndChannelMetadata: u,
       sourceQuestContent: d
     } = t, f = h.A.getQuest(n), _ = (0, y.Li)(r), m = (0, y.L4)(r), g = (0, y.yI)(r, n), E = (0, y.Gp)(r, n);
-    (0, a.N)(w(r)).then(t => {
+    (0, a.N)(R(r)).then(t => {
       e({
         questId: n,
         event: A.HAw.QUEST_CONTENT_CLICKED,

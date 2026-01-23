@@ -52,7 +52,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk701939 = require("./701939.js");
 
-function X(e, t, n) {
+function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,14 +61,14 @@ function X(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function X(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      X(e, t, n[t])
+      Z(e, t, n[t])
     })
   }
   return e
@@ -85,13 +85,13 @@ function Q(e, t) {
   return n
 }
 
-function $(e, t) {
+function J(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function J(e, t) {
+function $(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -144,12 +144,12 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
       isMobileOnline: v,
       premiumSince: A,
       nameplate: I
-    } = e, S = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), T = i.useRef(null), [C, N] = i.useState(false), w = null != A ? new Date(A) : null, P = i.useCallback(e => {
+    } = e, S = $(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), T = i.useRef(null), [C, N] = i.useState(false), R = null != A ? new Date(A) : null, P = i.useCallback(e => {
       (0, _.L3)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("29534"), n.e("33818"), n.e("55296"), n.e("84841"), n.e("43144")]).then(n.bind(n, 107632)), t = F.A.isInChannel(U.A.getVoiceChannelId(), u.id);
-        return n => (0, r.jsx)(e, $(Z({}, n), {
+        return n => (0, r.jsx)(e, J(X({}, n), {
           user: u,
           guildId: b,
           channel: y,
@@ -168,7 +168,7 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
         rawText: t
       }), m.A.startTyping(y.id)
     }, [u, y.id]), x = i.useCallback(e => {
-      null != b && (e.stopPropagation(), (0, R.K)({
+      null != b && (e.stopPropagation(), (0, w.K)({
         guildId: b,
         location: {
           section: K.JJy.MEMBER_LIST,
@@ -193,8 +193,8 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
         let {
           onClick: n,
           onMouseDown: i
-        } = e, o = J(e, ["onClick", "onMouseDown"]);
-        return (0, r.jsx)(g.A, Z({
+        } = e, o = $(e, ["onClick", "onMouseDown"]);
+        return (0, r.jsx)(g.A, X({
           ref: T,
           className: q.Dc,
           onContextMenu: P,
@@ -206,7 +206,7 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
           activities: p,
           applicationStream: h,
           isOwner: l,
-          premiumSince: w,
+          premiumSince: R,
           colorString: t,
           colorStrings: a,
           colorRoleName: s,
@@ -231,7 +231,7 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
   es = Chunk64700.memo(function(e) {
     let {
       colorRoleId: t
-    } = e, n = J(e, ["colorRoleId"]), {
+    } = e, n = $(e, ["colorRoleId"]), {
       channel: i,
       user: a,
       index: s
@@ -242,7 +242,7 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
       user: a,
       guildId: i.guild_id
     });
-    return (0, r.jsx)(ea, $(Z({}, n, o), {
+    return (0, r.jsx)(ea, J(X({}, n, o), {
       isTyping: l,
       currentUser: u,
       colorRoleName: d,
@@ -256,7 +256,7 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
       count: s,
       guildId: o,
       className: l
-    } = e, c = (0, w.$7)({
+    } = e, c = (0, R.$7)({
       roleId: t,
       guildId: o,
       size: 16
@@ -265,7 +265,7 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
         let {
           default: e
         } = await n.e("33743").then(n.bind(n, 455538));
-        return t => (0, r.jsx)(e, $(Z({}, t), {
+        return t => (0, r.jsx)(e, J(X({}, t), {
           imageUrl: c.src
         }))
       })
@@ -287,7 +287,7 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
         "aria-hidden": true,
         children: [null != c ? (0, r.jsx)("span", {
           onContextMenu: d,
-          children: (0, r.jsx)(D.A, Z({
+          children: (0, r.jsx)(D.A, X({
             className: q.UT
           }, c))
         }) : null, (0, r.jsx)("span", {
@@ -377,8 +377,8 @@ class ec extends Chunk64700.Component {
                 let {
                   ref: o,
                   role: l
-                } = n, c = J(n, ["ref", "role"]);
-                return (0, r.jsx)(p.B8B, Z({
+                } = n, c = $(n, ["ref", "role"]);
+                return (0, r.jsx)(p.B8B, X({
                   innerRole: l,
                   innerAriaLabel: z.intl.string(z.t["9Oq93m"]),
                   ref: e => {
@@ -405,16 +405,16 @@ class ec extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), X(this, "_list", null), X(this, "_areActivitiesExperimentallyHidden", false), X(this, "_firstApplicationIdOccurrences", null), X(this, "_lastRowsVersion", true), X(this, "lastReportedAnalyticsChannel", true), X(this, "setList", e => {
+    super(...e), Z(this, "_list", null), Z(this, "_areActivitiesExperimentallyHidden", false), Z(this, "_firstApplicationIdOccurrences", null), Z(this, "_lastRowsVersion", true), Z(this, "lastReportedAnalyticsChannel", true), Z(this, "setList", e => {
       this._list = e, this.props.listRef.current = e
-    }), X(this, "renderSection", e => {
+    }), Z(this, "renderSection", e => {
       let {
         section: t
       } = e, {
         groups: n,
         channel: a
       } = this.props, s = n[t];
-      if ((0, A.l)(s)) return (0, i.createElement)(A.A, $(Z({}, s), {
+      if ((0, A.l)(s)) return (0, i.createElement)(A.A, J(X({}, s), {
         key: "section-".concat(t)
       }));
       if (0 === t) {
@@ -425,19 +425,19 @@ class ec extends Chunk64700.Component {
           tutorialId: "whos-online",
           position: "left",
           inlineSpecs: ei,
-          children: (0, i.createElement)(eo, $(Z({}, s), {
+          children: (0, i.createElement)(eo, J(X({}, s), {
             key: "section-".concat(e),
             guildId: a.guild_id,
             className: q.lL
           }))
         }, "section-".concat(t))
       }
-      return (0, i.createElement)(eo, $(Z({}, s), {
+      return (0, i.createElement)(eo, J(X({}, s), {
         key: "section-".concat(t),
         guildId: a.guild_id,
         className: q.lL
       }))
-    }), X(this, "getRowProps", e => {
+    }), Z(this, "getRowProps", e => {
       let {
         groups: t,
         rows: n
@@ -447,7 +447,7 @@ class ec extends Chunk64700.Component {
         index: i
       } = r;
       return null == i || "row" !== e.type ? null : n[i + 1 + e.row]
-    }), X(this, "getFirstApplicationIdOccurrences", () => {
+    }), Z(this, "getFirstApplicationIdOccurrences", () => {
       let {
         rows: e,
         version: t
@@ -465,7 +465,7 @@ class ec extends Chunk64700.Component {
             n.has(t) || (n.add(t), r.add(e.id))
           }
         } return this._firstApplicationIdOccurrences = r, this._lastRowsVersion = t, r
-    }), X(this, "renderRow", e => {
+    }), Z(this, "renderRow", e => {
       let {
         section: t,
         row: n,
@@ -509,7 +509,7 @@ class ec extends Chunk64700.Component {
           let e = "content-inventory-".concat(s.entry.id);
           null != s.entry.original_id && (e += "-".concat(s.entry.original_id));
           let t = this.getFirstApplicationIdOccurrences().has(s.entry.id);
-          return (0, r.jsx)(S.Ay, $(Z({}, s), {
+          return (0, r.jsx)(S.Ay, J(X({}, s), {
             channel: this.props.channel,
             index: i,
             isFirstApplicationOccurrence: t
@@ -520,9 +520,9 @@ class ec extends Chunk64700.Component {
       return (0, r.jsx)(el, {
         index: i
       }, "placeholder-".concat(t, ":").concat(n))
-    }), X(this, "handleScroll", () => {
+    }), Z(this, "handleScroll", () => {
       this.updateSubscription(), this.updateMaxContentFeedRowSeen()
-    }), X(this, "updateMaxContentFeedRowSeen", l().debounce(() => {
+    }), Z(this, "updateMaxContentFeedRowSeen", l().debounce(() => {
       let e = this._list;
       if (null == e) return;
       let {
@@ -530,10 +530,10 @@ class ec extends Chunk64700.Component {
         scrollTop: n
       } = e.getScrollerState(), r = n + t - this.props.sectionHeight;
       this.props.updateMaxContentFeedRowSeen(r)
-    }, 50)), X(this, "getContentFeedGroup", () => {
+    }, 50)), Z(this, "getContentFeedGroup", () => {
       let e = this.props.groups[T.f];
       if ((0, A.l)(e)) return e
-    }), X(this, "hasContentFeed", () => null != this.getContentFeedGroup()), X(this, "getRowHeightComputer", () => {
+    }), Z(this, "hasContentFeed", () => null != this.getContentFeedGroup()), Z(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
           rowHeight: t
@@ -551,10 +551,10 @@ class ec extends Chunk64700.Component {
         }
       }
       return t
-    }), X(this, "getContentFeedHeight", () => {
+    }), Z(this, "getContentFeedHeight", () => {
       let e = this.getContentFeedGroup();
       return null != e ? e.feedHeight + this.props.sectionHeight : 0
-    }), X(this, "updateSubscription", l().debounce(() => {
+    }), Z(this, "updateSubscription", l().debounce(() => {
       if (null == this._list) return;
       let {
         channel: e
@@ -570,7 +570,7 @@ class ec extends Chunk64700.Component {
         height: r,
         rowHeight: t
       })
-    }, 50)), X(this, "trackMemberListViewed", () => {
+    }, 50)), Z(this, "trackMemberListViewed", () => {
       var e;
       if (this.lastReportedAnalyticsChannel === this.props.channel.id) return;
       let t = null == (e = this._list) ? true : e.getItems(),
@@ -592,7 +592,7 @@ class ec extends Chunk64700.Component {
         num_users_visible_with_avatar_decoration: 0,
         num_users_visible_with_nameplate: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, b.Ay.trackWithMetadata(K.HAw.MEMBER_LIST_VIEWED, Z({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, b.Ay.trackWithMetadata(K.HAw.MEMBER_LIST_VIEWED, X({}, i))
     })
   }
 }
@@ -658,7 +658,7 @@ function eu(e) {
       className: s()(q.kL, n),
       children: (0, r.jsx)(c.hD, {
         navigator: C,
-        children: (0, r.jsx)(ec, $(Z({}, e, l), {
+        children: (0, r.jsx)(ec, J(X({}, e, l), {
           version: h,
           groups: _,
           rows: d,

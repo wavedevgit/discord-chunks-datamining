@@ -35,19 +35,19 @@ function b(e) {
   })), I = (0, _.k)(), {
     selectedTab: S,
     handleTabChange: T
-  } = (0, p.A)(), C = u.default.getCurrentUser(), N = null != b, R = v && null != C && !N;
+  } = (0, p.A)(), C = u.default.getCurrentUser(), N = null != b, w = v && null != C && !N;
   (0, s.Ay)(() => {
     (0, c.d)("family-center"), null != n && n()
   });
-  let w = {
+  let R = {
       isConsideredAdult: b,
       numOfAcceptedRequests: O,
       selectedTab: S,
       selectedTeenId: I
     },
-    P = r.useRef(w);
+    P = r.useRef(R);
   return r.useEffect(() => {
-    P.current = w
+    P.current = R
   }), r.useEffect(() => {
     if (v && N) {
       let {
@@ -67,11 +67,11 @@ function b(e) {
       })
     }
   }, [v, N, t]), r.useEffect(() => {
-    R && (0, o.yO)(y.w_.FAMILY_CENTER)
-  }, [R]), {
+    w && (0, o.yO)(y.w_.FAMILY_CENTER)
+  }, [w]), {
     isLoading: A,
     selectedTab: S,
     handleTabChange: T,
-    showAgeGateModal: R
+    showAgeGateModal: w
   }
 }

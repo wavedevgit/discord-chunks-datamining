@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 986294, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => P
@@ -93,7 +93,7 @@ function k(e) {
 
 function P() {
   var e, t, n;
-  let r, i = (0, u.bG)([C.A], () => C.A.getFeed(T.X1.GLOBAL_FEED)),
+  let r, i = (0, u.bG)([C.A], () => C.A.getFeed(E.X1.GLOBAL_FEED)),
     s = (0, u.bG)([C.A], () => C.A.getDebugImpressionCappingDisabled()),
     c = (0, u.bG)([A.A], () => A.A.getDebugFastImpressionCappingEnabled()),
     k = (n = null == i || null == (t = i.entries) ? true : t.map(e => e.content), Object.keys(r = o().groupBy(n, e => e.content_type)).map(e => {
@@ -106,7 +106,7 @@ function P() {
     })),
     P = (0, u.bG)([C.A], () => {
       var e;
-      return (null == (e = C.A.getFeedState(T.X1.GLOBAL_FEED)) ? true : e.loading) === true
+      return (null == (e = C.A.getFeedState(E.X1.GLOBAL_FEED)) ? true : e.loading) === true
     }),
     [D, M] = l.useState(""),
     L = (0, u.bG)([j.A, x.A], () => {
@@ -139,14 +139,14 @@ function P() {
         }), k.length > 0 && (0, a.jsx)(f.A, {
           columns: I,
           data: k
-        }), (0, a.jsx)(E.A, {}), (0, a.jsx)(p.Button, {
+        }), (0, a.jsx)(T.A, {}), (0, a.jsx)(p.Button, {
           variant: "primary",
           text: "Refresh Now",
           fullWidth: true,
           onClick: function() {
             h.h.dispatch({
               type: "CONTENT_INVENTORY_MANUAL_REFRESH",
-              feedId: T.X1.GLOBAL_FEED,
+              feedId: E.X1.GLOBAL_FEED,
               feature: d.M.INBOX
             })
           },

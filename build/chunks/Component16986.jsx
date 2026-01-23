@@ -35,9 +35,9 @@ function y() {
     T = _.jW.useSetting(),
     C = _.ng.useSetting(),
     N = _.Hu.useSetting(),
-    R = _.wT.useSetting(),
+    w = _.wT.useSetting(),
     {
-      analyticsLocations: w
+      analyticsLocations: R
     } = (0, o.Ay)(s.A.TEXT_AND_IMAGES),
     P = i.useCallback(e => {
       let t = 1 === e;
@@ -150,7 +150,7 @@ function y() {
                   location: {
                     section: g.JJy.SETTINGS_TEXT_AND_IMAGES
                   },
-                  location_stack: w
+                  location_stack: R
                 }), _.ML.updateSetting(e)
               },
               label: E.intl.string(E.t["29xPVZ"])
@@ -256,7 +256,7 @@ function y() {
             value: l.P.NONE
           }],
           onChange: e => _.wT.updateSetting(e),
-          value: R
+          value: w
         })]
       })]
     })

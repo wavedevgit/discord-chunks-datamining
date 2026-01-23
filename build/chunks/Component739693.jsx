@@ -22,7 +22,7 @@ function p(e) {
     onSuccess: m,
     onClose: g,
     requirementsUpdated: E
-  } = e, [y, b] = i.useState(""), [O, v] = i.useState(""), [A, I] = i.useState(""), [S, T] = i.useState(null), [C, N] = i.useState(null), R = (0, s.bG)([c.A], () => c.A.getErrors()), w = (0, s.bG)([c.A], () => c.A.getFormState()), P = i.useRef(null);
+  } = e, [y, b] = i.useState(""), [O, v] = i.useState(""), [A, I] = i.useState(""), [S, T] = i.useState(null), [C, N] = i.useState(null), w = (0, s.bG)([c.A], () => c.A.getErrors()), R = (0, s.bG)([c.A], () => c.A.getFormState()), P = i.useRef(null);
   async function D(e) {
     e.preventDefault(), (0, l.x8)();
     let t = false;
@@ -56,14 +56,14 @@ function p(e) {
       }, {
         variant: "primary",
         text: f.intl.string(f.t.i4jeWR),
-        loading: w === d.XlH.SUBMITTING,
+        loading: R === d.XlH.SUBMITTING,
         type: "submit"
       }],
       children: (0, r.jsxs)(o.BJc, {
         gap: 20,
         children: [(0, r.jsx)(o.ksK, {
           label: f.intl.string(f.t.WBqMRQ),
-          error: null == R || null == (p = R.password) ? true : p[0],
+          error: null == w || null == (p = w.password) ? true : p[0],
           type: "password",
           value: y,
           onChange: b,
@@ -72,7 +72,7 @@ function p(e) {
           required: true
         }), (0, r.jsx)(o.ksK, {
           label: f.intl.string(f.t["8dM4FO"]),
-          error: null != (t = null != (n = null == R || null == (_ = R.new_password) ? true : _[0]) ? n : S) ? t : true,
+          error: null != (t = null != (n = null == w || null == (_ = w.new_password) ? true : _[0]) ? n : S) ? t : true,
           type: "password",
           value: O,
           onChange: v,

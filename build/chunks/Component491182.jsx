@@ -91,13 +91,13 @@ let O = function(e) {
     childrenMessageContent: T,
     childrenAccessories: C,
     messageRef: N,
-    focusProps: R = {
+    focusProps: w = {
       offset: {
         left: 4,
         right: 4
       }
     },
-    hasThread: w,
+    hasThread: R,
     isSystemMessage: P,
     hasReply: D,
     author: x,
@@ -114,7 +114,7 @@ let O = function(e) {
       animate: G,
       setAnimate: V
     },
-    children: (0, r.jsx)(c.vN3, E(m({}, R), {
+    children: (0, r.jsx)(c.vN3, E(m({}, w), {
       children: (0, r.jsxs)("div", E(m({
         className: s()(t, {
           [_.D7]: U,
@@ -125,7 +125,7 @@ let O = function(e) {
           [_.VH]: g,
           [_.E]: !n,
           [_.GZ]: h,
-          [_.pR]: w,
+          [_.pR]: R,
           [_.X4]: P,
           [_.h8]: D
         }),

@@ -97,13 +97,13 @@ async function er(e) {
     distributor: v,
     rawExePath: S
   } = (0, y.wH)(a), C = c.enabledLegacy || c.enabledOOP, N = j.x.legacyEnabled || j.x.oopEnabled, T = c.source;
-  Z.default.track(J.HAw.LAUNCH_GAME, {
+  Z.default.track($.HAw.LAUNCH_GAME, {
     game: b,
     game_id: E,
     verified: null != s && (0, y.PQ)(S, null == s ? true : s.executables),
     elevated: a.elevated,
     is_launcher: null != (t = null == a ? true : a.isLauncher) && t,
-    game_platform: J.yTV.DESKTOP,
+    game_platform: $.yTV.DESKTOP,
     detection_method: o,
     distributor: v,
     is_overlay_enabled: N,
@@ -149,7 +149,7 @@ class ei extends Chunk64700.PureComponent {
         r = R.A.getStageInstanceByChannel(e.voiceChannelId),
         i = C.Ay.getActiveEventByChannel(e.voiceChannelId),
         a = H.A.getLastRTCConnectionState();
-      (null == a ? true : a.channelId) !== e.voiceChannelId && (a = null), Z.default.track(J.HAw.LEAVE_VOICE_CHANNEL, en({
+      (null == a ? true : a.channelId) !== e.voiceChannelId && (a = null), Z.default.track($.HAw.LEAVE_VOICE_CHANNEL, en({
         channel_id: e.voiceChannelId,
         channel_type: e.voiceChannelType,
         channel_bitrate: e.voiceChannelBitrate,
@@ -169,12 +169,12 @@ class ei extends Chunk64700.PureComponent {
         t = null != e ? e.name : "",
         n = R.A.getStageInstanceByChannel(m),
         r = C.Ay.getActiveEventByChannel(m);
-      (0, h.zV)(J.HAw.CHANNEL_OPENED, en({}, (0, h.qL)(m))), (0, f.k)(J.HAw.CHANNEL_OPENED_CLICKSTREAM, {
+      (0, h.zV)($.HAw.CHANNEL_OPENED, en({}, (0, h.qL)(m))), (0, f.k)($.HAw.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: m
       });
       let i = null,
         l = X.default.getFocusedPID();
-      null != l && P.default.getOverlayMethod(l) !== x.Ue.Disabled && (X.default.isInstanceLocked() ? i = J.Xmn.OVERLAY_LOCKED_ACTIVATED : X.default.isInstanceLocked() || (i = X.default.isPinned(J.uss.TEXT) ? J.Xmn.OVERLAY_UNLOCKED_PINNED : J.Xmn.OVERLAY_UNLOCKED)), Z.default.track(J.HAw.JOIN_VOICE_CHANNEL, en({
+      null != l && P.default.getOverlayMethod(l) !== x.Ue.Disabled && (X.default.isInstanceLocked() ? i = $.Xmn.OVERLAY_LOCKED_ACTIVATED : X.default.isInstanceLocked() || (i = X.default.isPinned($.uss.TEXT) ? $.Xmn.OVERLAY_UNLOCKED_PINNED : $.Xmn.OVERLAY_UNLOCKED)), Z.default.track($.HAw.JOIN_VOICE_CHANNEL, en({
         location: i,
         channel_id: m,
         channel_type: S,
@@ -207,7 +207,7 @@ class ei extends Chunk64700.PureComponent {
         },
         A = null != (p = P.default.getOverlayMethod(w.pid)) ? p : f.overlayMethod;
       if (setTimeout(() => {
-          (w.distributor === J.d3x.ROBLOX ? this.debouncedRobloxAnalytics : er)({
+          (w.distributor === $.d3x.ROBLOX ? this.debouncedRobloxAnalytics : er)({
             runningGame: w,
             game: t,
             detectionMethod: s,
@@ -226,12 +226,12 @@ class ei extends Chunk64700.PureComponent {
     }
     if (e.runningNonGame !== U && (null == U ? true : U.id) != null && (null == (i = e.runningNonGame) ? true : i.id) !== U.id) {
       let e = O.A.getById(U.id);
-      null != e && Z.default.track(J.HAw.LAUNCH_NON_GAME_APPLICATION, {
+      null != e && Z.default.track($.HAw.LAUNCH_NON_GAME_APPLICATION, {
         name: e.name,
         application_id: e.id,
         application_type: ee.S7.NON_GAME_DETECTABLE,
         elevated: U.elevated,
-        game_platform: J.yTV.DESKTOP,
+        game_platform: $.yTV.DESKTOP,
         distributor: U.distributor,
         detection_method: "verified_non_game_application",
         current_user_status: K.A.getStatus(),
@@ -244,9 +244,9 @@ class ei extends Chunk64700.PureComponent {
     }
     if ((e.videoEnabled !== T || e.isScreenSharing !== j) && null != m) {
       let e = "none",
-        t = [j ? "screen" : null, T ? "camera" : null].filter($.Vq),
+        t = [j ? "screen" : null, T ? "camera" : null].filter(J.Vq),
         n = null;
-      j ? (e = "screen", n = (0, A.p)()) : T && (e = "camera"), Z.default.track(J.HAw.VIDEO_INPUT_TOGGLED, en({
+      j ? (e = "screen", n = (0, A.p)()) : T && (e = "camera"), Z.default.track($.HAw.VIDEO_INPUT_TOGGLED, en({
         video_input_type: e,
         video_toggle_source: __OVERLAY__ ? "overlay" : "app",
         enabled_inputs: t,
@@ -261,9 +261,9 @@ class ei extends Chunk64700.PureComponent {
         let e = B.A.getMessages(t),
           i = e.toArray().reverse().find(e => {
             var t;
-            return (0, s.Lt)(e.flags, J.pr7.IS_CROSSPOST) && (null == (t = e.messageReference) ? true : t.guild_id) === "667560445975986187"
+            return (0, s.Lt)(e.flags, $.pr7.IS_CROSSPOST) && (null == (t = e.messageReference) ? true : t.guild_id) === "667560445975986187"
           });
-        Z.default.track(J.HAw.ACK_COMMUNITY_MESSAGES, en({
+        Z.default.track($.HAw.ACK_COMMUNITY_MESSAGES, en({
           last_message_id: null == i ? true : i.id,
           last_message_reference_message_id: null == i || null == (g = i.messageReference) ? true : g.message_id,
           messages_loaded: e.hasFetched
@@ -271,7 +271,7 @@ class ei extends Chunk64700.PureComponent {
       }
       e.isTextInVoice && !this.props.isTextInVoice && _.M.getConfig({
         location: "ChatAutoAnalytics"
-      }).collectAnalytics && Z.default.track(J.HAw.TEXT_IN_VOICE_CLOSED, {
+      }).collectAnalytics && Z.default.track($.HAw.TEXT_IN_VOICE_CLOSED, {
         reason: "switched away",
         channel_id: t,
         guild_id: null == n ? true : n.getGuildId()
@@ -324,7 +324,7 @@ function el() {
     gameName: null != j ? j.name : null,
     gameId: null != j ? j.application_id : null,
     gameExeName: null != x ? x.exeName : null,
-    hasPreviewEnabled: null == u ? true : u.features.has(J.GuildFeatures.PREVIEW_ENABLED),
+    hasPreviewEnabled: null == u ? true : u.features.has($.GuildFeatures.PREVIEW_ENABLED),
     isMemberPending: A,
     postableChannelCount: w,
     isTextInVoice: l,
@@ -346,14 +346,14 @@ function el() {
     i.useEffect(() => {
       if (n && null != s) {
         let e = (0, g.C)(M.A.getChannel(s), true);
-        (0, h.zV)(J.HAw.CHANNEL_OPENED, en({}, e, (0, h.qL)(s))), (0, f.k)(J.HAw.CHANNEL_OPENED_CLICKSTREAM, {
+        (0, h.zV)($.HAw.CHANNEL_OPENED, en({}, e, (0, h.qL)(s))), (0, f.k)($.HAw.CHANNEL_OPENED_CLICKSTREAM, {
           channelId: s
-        }), t.current.isTextInVoice && (0, h.zV)(J.HAw.TEXT_IN_VOICE_OPENED, {
+        }), t.current.isTextInVoice && (0, h.zV)($.HAw.TEXT_IN_VOICE_OPENED, {
           channel_is_nsfw: t.current.isNSFWChannel
         })
       }
     }, [n, s]), i.useEffect(() => {
-      n && null == o && l === J.BVt.FRIENDS && (0, m.A)({
+      n && null == o && l === $.BVt.FRIENDS && (0, m.A)({
         tab_opened: r
       })
     }, [n, r, l, o]), i.useEffect(() => {
@@ -377,14 +377,14 @@ function el() {
         })(Object(l)).forEach(function(e) {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
         }), i);
-        (0, h.zV)(J.HAw.GUILD_VIEWED, n), (0, f.k)(J.HAw.GUILD_VIEWED_CLICKSTREAM, {
+        (0, h.zV)($.HAw.GUILD_VIEWED, n), (0, f.k)($.HAw.GUILD_VIEWED_CLICKSTREAM, {
           guildId: o
         })
       }
     }, [n, o, a]);
     let c = i.useRef(false);
     i.useEffect(() => {
-      n && null == o && l === J.BVt.MESSAGE_REQUESTS && !c.current && (c.current = true, Z.default.track(J.HAw.MESSAGE_REQUESTS_INITIALIZED, {
+      n && null == o && l === $.BVt.MESSAGE_REQUESTS && !c.current && (c.current = true, Z.default.track($.HAw.MESSAGE_REQUESTS_INITIALIZED, {
         num_message_requests: t.current.numMessageRequests
       }))
     }, [n, o, l])

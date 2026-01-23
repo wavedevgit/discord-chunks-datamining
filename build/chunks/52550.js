@@ -106,11 +106,11 @@ var Chunk611668 = require("./611668.js"),
             s = e || T(a),
             o = s.x,
             l = s.y;
-          R(i) || N(false), i.focus(), a === window ? window.scrollTo(o, l) : b.setTop(a, l), r || n.update(E.forceSelection(t, t.getSelection()))
+          w(i) || N(false), i.focus(), a === window ? window.scrollTo(o, l) : b.setTop(a, l), r || n.update(E.forceSelection(t, t.getSelection()))
         }
       }), o(s(n), "blur", function() {
         var e = n.editor;
-        e && (R(e) || N(false), e.blur())
+        e && (w(e) || N(false), e.blur())
       }), o(s(n), "setMode", function(e) {
         var t = n.props,
           r = t.onPaste,
@@ -161,7 +161,7 @@ var Chunk611668 = require("./611668.js"),
     }, r._renderPlaceholder = function() {
       if (this._showPlaceholder()) {
         var e = {
-          text: w(this.props.placeholder),
+          text: R(this.props.placeholder),
           editorState: this.props.editorState,
           textAlignment: this.props.textAlignment,
           accessibilityID: this._placeholderAccessibilityID

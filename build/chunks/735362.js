@@ -134,21 +134,21 @@ function c(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, I, S, T, C, {
+    w = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, I, S, T, C, {
       match: /\$\d+/
     }, v];
-  A.contains = R.concat({
+  A.contains = w.concat({
     begin: /\{/,
     end: /\}/,
     keywords: E,
-    contains: ["self"].concat(R)
+    contains: ["self"].concat(w)
   });
-  let w = [].concat(N, A.contains),
-    P = w.concat([{
+  let R = [].concat(N, A.contains),
+    P = R.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
-      contains: ["self"].concat(w)
+      contains: ["self"].concat(R)
     }]),
     D = {
       className: "params",

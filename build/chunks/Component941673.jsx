@@ -132,7 +132,7 @@ let W = e => {
   } = (0, p.Pv)(), {
     selectedSkuId: v,
     application: S
-  } = (0, _.P5)(), N = (0, o.bG)([A.default], () => A.default.getCurrentUser()), R = H(null == N ? true : N.id, s, y), x = (0, o.bG)([I.A], () => null != v ? I.A.get(v) : null, [v]), L = (0, C.fq)(x), G = (0, C.xf)(x), V = (0, P.j)(x, {
+  } = (0, _.P5)(), N = (0, o.bG)([A.default], () => A.default.getCurrentUser()), w = H(null == N ? true : N.id, s, y), x = (0, o.bG)([I.A], () => null != v ? I.A.get(v) : null, [v]), L = (0, C.fq)(x), G = (0, C.xf)(x), V = (0, P.j)(x, {
     shouldFetchIfMissing: true
   }), F = async (e, t) => {}, B = () => (0, r.jsx)(g.A, {
     onTextChange: e => null == a ? true : a(e),
@@ -146,7 +146,7 @@ let W = e => {
   }) : (0, r.jsx)(u.A, {
     selectedSkuId: v,
     validateSelectedGift: F,
-    recipients: R
+    recipients: w
   }), W = e => {
     null != h && h(null == e ? true : e)
   }, K = () => {
@@ -192,7 +192,7 @@ let W = e => {
           })
         }), (0, r.jsxs)("div", {
           className: U.vz,
-          children: [null != S && (0, r.jsx)(w.Q, {
+          children: [null != S && (0, r.jsx)(R.Q, {
             application: S
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
@@ -204,7 +204,7 @@ let W = e => {
         })]
       })]
     })
-  }, X = () => (0, r.jsxs)("div", {
+  }, Z = () => (0, r.jsxs)("div", {
     className: U.Tc,
     children: [Y(), B(), q(), null != V && null != x && (0, r.jsx)(z, {
       handleClose: n,
@@ -215,10 +215,10 @@ let W = e => {
   return {
     renderStepBody: () => (0, r.jsxs)("div", {
       className: U.Du,
-      children: [K(), X()]
+      children: [K(), Z()]
     }),
     getLeftColumnComponent: K,
-    getRightColumnComponent: X,
+    getRightColumnComponent: Z,
     onStepChange: t,
     onBackClick: n,
     disabled: null == s || s.id === (null == N ? true : N.id) || i.length > j.Jo
@@ -263,14 +263,14 @@ function z(e) {
     guild: n,
     sku: a
   } = e, s = i.useCallback(() => {
-    (0, R.X)({
+    (0, w.X)({
       guildId: n.id
     })
   }, [n.id]), o = i.useCallback(() => {
     var e;
     t();
     let r = null == (e = N.A.getStorefrontState(n.id)) ? true : e.activePage;
-    window.location.pathname.includes(x.BVt.CHANNELS_GAME_SHOP(n.id, null != r ? r : 0, a.id)) || ((0, l.s7G)(), (0, R.default)({
+    window.location.pathname.includes(x.BVt.CHANNELS_GAME_SHOP(n.id, null != r ? r : 0, a.id)) || ((0, l.s7G)(), (0, w.default)({
       guildId: n.id,
       pageIndex: null != r ? r : 0,
       skuId: a.id,

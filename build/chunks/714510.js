@@ -4,7 +4,7 @@
 require.d(exports, {
   NA: () => q,
   VX: () => H,
-  XR: () => X,
+  XR: () => Z,
   gj: () => F,
   mU: () => V,
   tH: () => B,
@@ -126,7 +126,7 @@ function N(e, t, n, r) {
   })
 }
 
-function R(e) {
+function w(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -151,7 +151,7 @@ function R(e) {
   }, i)
 }
 
-function w(e) {
+function R(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -357,14 +357,14 @@ function U(e) {
     onGameSheetOpened: u,
     onGameSheetClosed: d
   });
-  if (g) return R({
+  if (g) return w({
     quest: t,
     taskDetails: n,
     withoutMarkdown: s,
     hasNitro: f,
     collectibleRewardDuration: m
   });
-  if ((0, _.g5)(t)) return w({
+  if ((0, _.g5)(t)) return R({
     quest: t,
     taskDetails: n,
     withoutMarkdown: s,
@@ -551,7 +551,7 @@ function q(e) {
   }
 }
 
-function X(e) {
+function Z(e) {
   var t, n, r, i, a;
   let {
     quest: s,

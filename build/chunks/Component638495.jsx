@@ -2,7 +2,7 @@
 /** chunk id: 638495, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  b: () => R,
+  b: () => w,
   k: () => T
 }), require("./896048.js"), require("./667532.js"), require("./65821.js"), require("./775443.js");
 var Chunk627968 = require("./627968.js"),
@@ -144,7 +144,7 @@ function C(e) {
 }
 let N = [];
 
-function R() {
+function w() {
   let e = T(),
     t = (0, m.useModalsStore)(t => true !== t[e] ? t[e] : N),
     n = i.useMemo(() => C(t), [t]),

@@ -50,7 +50,7 @@ function h(e) {
     minValue: I,
     maxValue: S,
     isDateUnavailable: T
-  } = e, C = e.value || e.defaultValue || e.placeholderValue || null, [N, R] = (0, r.bf)(C, e.granularity), w = R || "UTC";
+  } = e, C = e.value || e.defaultValue || e.placeholderValue || null, [N, w] = (0, r.bf)(C, e.granularity), R = w || "UTC";
   if (C && !(N in C)) throw Error("Invalid granularity " + N + " for value " + C.toString());
   let P = (0, d.useMemo)(() => new(0, a.p)(h), [h]),
     D = (0, d.useMemo)(() => g(P.resolvedOptions().calendar), [g, P]),
@@ -60,7 +60,7 @@ function h(e) {
       var e;
       return null != (e = (0, r.nf)(x, D)) ? e : null
     }, [x, D]),
-    [k, U] = (0, d.useState)(() => (0, r.o_)(e.placeholderValue, N, D, R)),
+    [k, U] = (0, d.useState)(() => (0, r.o_)(e.placeholderValue, N, D, w)),
     G = M || k,
     V = "gregory" === D.identifier && "BC" === G.era,
     F = (0, d.useMemo)(() => {
@@ -68,13 +68,13 @@ function h(e) {
       return {
         granularity: N,
         maxGranularity: null != (t = e.maxGranularity) ? t : "year",
-        timeZone: R,
+        timeZone: w,
         hideTimeZone: b,
         hourCycle: e.hourCycle,
         showEra: V,
         shouldForceLeadingZeros: e.shouldForceLeadingZeros
       }
-    }, [e.maxGranularity, N, e.hourCycle, e.shouldForceLeadingZeros, R, b, V]),
+    }, [e.maxGranularity, N, e.hourCycle, e.shouldForceLeadingZeros, w, b, V]),
     B = (0, d.useMemo)(() => (0, r.id)({}, F), [F]),
     H = (0, d.useMemo)(() => new(0, a.p)(h, B), [h, B]),
     Y = (0, d.useMemo)(() => H.resolvedOptions(), [H]),
@@ -83,23 +83,23 @@ function h(e) {
       ...W
     } : {}),
     q = (0, d.useRef)(null),
-    X = (0, d.useRef)(D);
+    Z = (0, d.useRef)(D);
   (0, d.useEffect)(() => {
-    (0, s.Jg)(D, X.current) || (X.current = D, U(t => Object.keys(K).length > 0 ? (0, o.yP)(t, D) : (0, r.o_)(e.placeholderValue, N, D, R)))
-  }, [D, N, K, R, e.placeholderValue]), x && Object.keys(K).length < Object.keys(W).length && z(K = {
+    (0, s.Jg)(D, Z.current) || (Z.current = D, U(t => Object.keys(K).length > 0 ? (0, o.yP)(t, D) : (0, r.o_)(e.placeholderValue, N, D, w)))
+  }, [D, N, K, w, e.placeholderValue]), x && Object.keys(K).length < Object.keys(W).length && z(K = {
     ...W
-  }), null == x && Object.keys(K).length === Object.keys(W).length && (z(K = {}), U((0, r.o_)(e.placeholderValue, N, D, R)));
-  let Z = M && Object.keys(K).length >= Object.keys(W).length ? M : k,
+  }), null == x && Object.keys(K).length === Object.keys(W).length && (z(K = {}), U((0, r.o_)(e.placeholderValue, N, D, w)));
+  let X = M && Object.keys(K).length >= Object.keys(W).length ? M : k,
     Q = t => {
       if (e.isDisabled || e.isReadOnly) return;
       let n = Object.keys(K),
         i = Object.keys(W);
-      null == t ? (L(null), U((0, r.o_)(e.placeholderValue, N, D, R)), z({})) : 0 === n.length && null == q.current || n.length >= i.length || n.length === i.length - 1 && W.dayPeriod && !K.dayPeriod && "dayPeriod" !== q.current ? (0 === n.length && z(K = {
+      null == t ? (L(null), U((0, r.o_)(e.placeholderValue, N, D, w)), z({})) : 0 === n.length && null == q.current || n.length >= i.length || n.length === i.length - 1 && W.dayPeriod && !K.dayPeriod && "dayPeriod" !== q.current ? (0 === n.length && z(K = {
         ...W
       }), L(t = (0, o.yP)(t, (null == C ? true : C.calendar) || new(0, l.FG)))) : U(t), q.current = null
     },
-    $ = (0, d.useMemo)(() => Z.toDate(w), [Z, w]),
-    J = (0, d.useMemo)(() => m($, K, H, Y, Z, D, h, N), [$, K, H, Y, Z, D, h, N]);
+    J = (0, d.useMemo)(() => X.toDate(R), [X, R]),
+    $ = (0, d.useMemo)(() => m(J, K, H, Y, X, D, h, N), [J, K, H, Y, X, D, h, N]);
   W.era && K.year && !K.era ? (K.era = true, z({
     ...K
   })) : !W.era && K.era && (delete K.era, z({
@@ -111,12 +111,12 @@ function h(e) {
       })
     },
     et = (e, t) => {
-      if (K[e]) Q(E(Z, e, t, Y));
+      if (K[e]) Q(E(X, e, t, Y));
       else {
         ee(e);
         let t = Object.keys(K),
           n = Object.keys(W);
-        (t.length >= n.length || t.length === n.length - 1 && W.dayPeriod && !K.dayPeriod) && Q(Z)
+        (t.length >= n.length || t.length === n.length - 1 && W.dayPeriod && !K.dayPeriod) && Q(X)
       }
     },
     en = (0, d.useMemo)(() => (0, r.nz)(x, I, S, T, F), [x, I, S, T, F]),
@@ -131,10 +131,10 @@ function h(e) {
     ...er,
     value: M,
     defaultValue: null != (n = e.defaultValue) ? n : j,
-    dateValue: $,
+    dateValue: J,
     calendar: D,
     setValue: Q,
-    segments: J,
+    segments: $,
     dateFormatter: H,
     validationState: ea,
     isInvalid: ei,
@@ -156,7 +156,7 @@ function h(e) {
       et(e, -(p[e] || 1))
     },
     setSegment(e, t) {
-      ee(e), Q(y(Z, e, t, Y))
+      ee(e), Q(y(X, e, t, Y))
     },
     confirmPlaceholder() {
       if (e.isDisabled || e.isReadOnly) return;
@@ -164,25 +164,25 @@ function h(e) {
         n = Object.keys(W);
       t.length === n.length - 1 && W.dayPeriod && !K.dayPeriod && (z(K = {
         ...W
-      }), Q(Z.copy()))
+      }), Q(X.copy()))
     },
     clearSegment(t) {
       delete K[t], q.current = t, z({
         ...K
       });
-      let n = (0, r.o_)(e.placeholderValue, N, D, R),
-        i = Z;
-      if ("dayPeriod" === t && "hour" in Z && "hour" in n) {
-        let e = Z.hour >= 12,
+      let n = (0, r.o_)(e.placeholderValue, N, D, w),
+        i = X;
+      if ("dayPeriod" === t && "hour" in X && "hour" in n) {
+        let e = X.hour >= 12,
           t = n.hour >= 12;
-        e && !t ? i = Z.set({
-          hour: Z.hour - 12
-        }) : !e && t && (i = Z.set({
-          hour: Z.hour + 12
+        e && !t ? i = X.set({
+          hour: X.hour - 12
+        }) : !e && t && (i = X.set({
+          hour: X.hour + 12
         }))
-      } else "hour" === t && "hour" in Z && Z.hour >= 12 && K.dayPeriod ? i = Z.set({
+      } else "hour" === t && "hour" in X && X.hour >= 12 && K.dayPeriod ? i = X.set({
         hour: n.hour + 12
-      }) : t in Z && (i = Z.set({
+      }) : t in X && (i = X.set({
         [t]: n[t]
       }));
       L(null), Q(i)
@@ -190,7 +190,7 @@ function h(e) {
     formatValue(e) {
       if (!M) return "";
       let t = (0, r.id)(e, F);
-      return new(0, a.p)(h, t).format($)
+      return new(0, a.p)(h, t).format(J)
     },
     getDateFormatter(e, t) {
       let n = {

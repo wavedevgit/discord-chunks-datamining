@@ -273,7 +273,7 @@ for (var C = 0, N = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"]; C < N.
   }
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   let r = E("DELETE", e);
   return "function" == typeof t && (n = t, t = null), t && r.send(t), n && r.end(n), r
 }
@@ -286,7 +286,7 @@ Chunk427879.prototype.del = Chunk427879.prototype.delete, E.get = (e, t, n) => {
 }, E.options = (e, t, n) => {
   let r = E("OPTIONS", e);
   return "function" == typeof t && (n = t, t = null), t && r.send(t), n && r.end(n), r
-}, E.del = R, E.delete = R, E.patch = (e, t, n) => {
+}, E.del = w, E.delete = w, E.patch = (e, t, n) => {
   let r = E("PATCH", e);
   return "function" == typeof t && (n = t, t = null), t && r.send(t), n && r.end(n), r
 }, E.post = (e, t, n) => {

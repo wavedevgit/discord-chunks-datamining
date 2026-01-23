@@ -165,7 +165,7 @@ function N() {
   return y(d.ME, e, t)
 }
 
-function R(e) {
+function w(e) {
   let {
     relationship: t
   } = e;
@@ -178,7 +178,7 @@ function R(e) {
   }
 }
 
-function w(e) {
+function R(e) {
   let {
     relationship: t
   } = e, n = _[t.id];
@@ -211,7 +211,7 @@ let D = new P(Chunk73153.h, {
   PRESENCE_UPDATES: I,
   THREAD_MEMBER_LIST_UPDATE: S,
   THREAD_MEMBERS_UPDATE: T,
-  RELATIONSHIP_ADD: R,
-  RELATIONSHIP_UPDATE: R,
-  RELATIONSHIP_REMOVE: w
+  RELATIONSHIP_ADD: w,
+  RELATIONSHIP_UPDATE: w,
+  RELATIONSHIP_REMOVE: R
 })

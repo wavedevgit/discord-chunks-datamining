@@ -138,8 +138,8 @@ let O = 24,
       tooltipAlign: T,
       tooltipDisabled: C,
       tooltipSpacing: N,
-      role: R,
-      "aria-label": w,
+      role: w,
+      "aria-label": R,
       "aria-hidden": P,
       "aria-checked": D,
       "aria-expanded": x,
@@ -156,7 +156,7 @@ let O = 24,
       className: s()(i, _.Kk),
       colorClass: null != g ? g : true,
       color: null != h ? h : "currentColor"
-    }, M)), U = w;
+    }, M)), U = R;
     return null == U && "string" == typeof I && (U = I), (0, r.jsx)(c.m_, {
       __unsupportedReactNodeAsText: I,
       position: S,
@@ -192,7 +192,7 @@ let O = 24,
           [_.wH]: o,
           [_.Ir]: l
         }),
-        role: R,
+        role: w,
         "aria-label": U,
         "aria-hidden": P,
         "aria-checked": D,

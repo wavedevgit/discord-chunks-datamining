@@ -2,7 +2,7 @@
 /** chunk id: 844944, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => Z
+  A: () => X
 }), require("./896048.js"), require("./321073.js");
 var r, Chunk989349 = require("./989349.js"),
   a = require.n(Chunk989349),
@@ -105,12 +105,12 @@ function C(e) {
 function N() {
   S = false
 }
-let R = e => "guild-join-request=".concat(e),
-  w = (e, t) => "guild-".concat(e, "-").concat(t);
+let w = e => "guild-join-request=".concat(e),
+  R = (e, t) => "guild-".concat(e, "-").concat(t);
 
 function P(e) {
   let t = [];
-  return t.push(R(e.joinRequestId)), t.push(w(e.guildId, e.applicationStatus)), t
+  return t.push(w(e.joinRequestId)), t.push(R(e.guildId, e.applicationStatus)), t
 }
 let D = new Chunk713402.J(P, e => "".concat(e.joinRequestId)),
   x = new Chunk713402.J(P, e => "".concat(e.joinRequestId)),
@@ -152,7 +152,7 @@ function V(e) {
     guildId: t,
     action: n
   } = e;
-  D.values(w(t, f.B5.SUBMITTED)).forEach(e => {
+  D.values(R(t, f.B5.SUBMITTED)).forEach(e => {
     k(g(h({}, e), {
       applicationStatus: n
     }))
@@ -191,7 +191,7 @@ function K(e) {
 }
 let z = {},
   q = 10 * Chunk927813.A.Seconds.MINUTE;
-class X extends(r = Chunk311907.Ay.Store) {
+class Z extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.default)
   }
@@ -199,7 +199,7 @@ class X extends(r = Chunk311907.Ay.Store) {
     return z[e]
   }
   getRequests(e, t) {
-    let n = w(e, t);
+    let n = R(e, t);
     return (0, d.mf)(t) ? L.values(n) : (0, d.ar)(t) ? x.values(n) : D.values(n)
   }
   getSubmittedGuildJoinRequestTotal(e) {
@@ -227,8 +227,8 @@ class X extends(r = Chunk311907.Ay.Store) {
     return null != t ? j(t.joinRequestId) : null
   }
 }
-_(X, "displayName", "GuildJoinRequestStoreV2");
-let Z = new X(Chunk73153.h, {
+_(Z, "displayName", "GuildJoinRequestStoreV2");
+let X = new Z(Chunk73153.h, {
   GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: I,
   GUILD_JOIN_REQUESTS_FETCH_SUCCESS: C,
   GUILD_JOIN_REQUESTS_FETCH_START: T,

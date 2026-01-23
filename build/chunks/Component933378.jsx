@@ -1,7 +1,7 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 933378, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => T
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -44,7 +44,7 @@ function O(e) {
   }), b = (0, m.Ut)(), _ = (0, p.go)(), {
     errorHints: y,
     startingConsoleQuest: O,
-    startConsoleQuest: E
+    startConsoleQuest: T
   } = (0, g.Wj)({
     questId: t.id,
     beforeRequest: () => {
@@ -57,7 +57,7 @@ function O(e) {
     },
     afterRequest: d.stopAnimation
   }), {
-    header: T,
+    header: E,
     renderBody: N
   } = l.useMemo(() => {
     let e = y.length > 0,
@@ -117,12 +117,12 @@ function O(e) {
         height: 16
       }), (0, a.jsx)(c.Text, {
         variant: "text-xs/medium",
-        children: T
+        children: E
       }), (0, a.jsx)(c.DUT, {
         className: i()(C.w, {
           [C.r9]: O
         }),
-        onClick: () => E(),
+        onClick: () => T(),
         children: d.render()
       })]
     }), (0, a.jsxs)("div", {
@@ -135,7 +135,7 @@ function O(e) {
     })]
   })
 }
-let E = function(e) {
+let T = function(e) {
   let {
     quest: t,
     taskDetails: n

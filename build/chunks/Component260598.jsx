@@ -93,11 +93,11 @@ function v(e) {
     rows: T = 3,
     inputRef: C
   } = e, N = E(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "inputRef"]), {
-    fieldProps: R,
-    props: w
+    fieldProps: w,
+    props: R
   } = (0, o.ndh)(N), {
     disabled: P
-  } = R, D = (0, u.Y)({
+  } = w, D = (0, u.Y)({
     validateOn: "change",
     error: y,
     value: n,
@@ -111,13 +111,13 @@ function v(e) {
   }, [m]), L = e => {
     let {
       onChange: t
-    } = w;
+    } = R;
     null == t || t(e.currentTarget.value), D.setShouldValidate(true)
   }, j = I ? (0, r.jsx)(c.n, {
     value: n,
     maxLength: S && null != m ? m : true
   }) : null;
-  return (0, r.jsx)(o.D0$, g(h({}, R), {
+  return (0, r.jsx)(o.D0$, g(h({}, w), {
     trailingAuxiliaryContent: j,
     errorMessage: D.hasError && null != (t = D.errorMessage) ? t : true,
     children: (0, r.jsx)(o.FON, {
@@ -138,7 +138,7 @@ function v(e) {
           rows: T,
           disabled: P,
           "data-mana-component": "text-area"
-        }, w), {
+        }, R), {
           onChange: L,
           ref: C
         }))

@@ -57,8 +57,8 @@ function I(e) {
     lineClamp: T = 1,
     cardWidth: C,
     cardHeight: N,
-    thumbnailHeight: R,
-    descriptionTextVariant: w = "text-sm/normal",
+    thumbnailHeight: w,
+    descriptionTextVariant: R = "text-sm/normal",
     showOpaqueBackground: P = false
   } = e, D = (0, i.bG)([u.A], () => u.A.getGuild(n), [n]), x = (0, i.bG)([c.A], () => {
     var e;
@@ -120,8 +120,8 @@ function I(e) {
     lineClamp: T,
     cardWidth: C,
     cardHeight: N,
-    thumbnailHeight: R,
-    descriptionTextVariant: w,
+    thumbnailHeight: w,
+    descriptionTextVariant: R,
     isDraft: !t.published
   }, t.id)
 }

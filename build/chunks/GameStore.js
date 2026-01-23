@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  A: () => J,
+  A: () => $,
   M: () => B
 }), require("./896048.js"), require("./591487.js"), require("./727858.js"), require("./747238.js");
 var i, a, Chunk311907 = require("./311907.js"),
@@ -64,8 +64,8 @@ let S = "GameStoreReportedGames",
   T = 0x80000000,
   C = Chunk927813.A.Millis.DAY,
   N = new Chunk194862.A,
-  R = {},
   w = {},
+  R = {},
   P = null != (i = Chunk506774.w.get(S)) ? i : {},
   D = "",
   x = null,
@@ -118,16 +118,16 @@ function H(e) {
 
 function Y(e) {
   let t = e instanceof f.Ay ? H(e) : e;
-  for (let n of (N.set(e.id, t), R[e.name.toLowerCase()] = t, e.aliases)) R[n.toLowerCase()] = t;
+  for (let n of (N.set(e.id, t), w[e.name.toLowerCase()] = t, e.aliases)) w[n.toLowerCase()] = t;
   if ((0, g.isDesktop)())
-    for (let n of e.executables) w[n.name] = t
+    for (let n of e.executables) R[n.name] = t
 }
 
 function W(e) {
   let {
     detectableApplications: t
   } = e;
-  for (let e of (N.clear(), R = {}, w = {}, t)) Y(e)
+  for (let e of (N.clear(), w = {}, R = {}, t)) Y(e)
 }
 
 function K() {
@@ -143,15 +143,15 @@ function q(e) {
     games: t,
     etag: n
   } = e;
-  for (let e of (null != n && D !== n && (N.clear(), R = {}, w = {}, D = n), t)) Y(B(e));
+  for (let e of (null != n && D !== n && (N.clear(), w = {}, R = {}, D = n), t)) Y(B(e));
   r = true, x = Date.now(), L = true
 }
 
-function X() {
+function Z() {
   M = true
 }
 
-function Z() {
+function X() {
   M = false
 }
 
@@ -163,7 +163,7 @@ function Q(e) {
   } = e;
   null != r && k !== r && (k = r, U = t.map(e => e.toLowerCase()), G = n.map(e => RegExp(e, "i"))), M = false, j = Date.now()
 }
-class $ extends(a = Chunk311907.Ay.PersistedStore) {
+class J extends(a = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
     null != e && (null != e.detectableGamesEtag && (D = e.detectableGamesEtag), null != e.blocklistEtag && (k = e.blocklistEtag), null != e.blocklistExecutables && (U = e.blocklistExecutables), null != e.blocklistPatterns && (G = e.blocklistPatterns.map(e => RegExp(e, "i"))), null == (t = e.detectableGames) || t.forEach(e => Y(e)))
@@ -192,7 +192,7 @@ class $ extends(a = Chunk311907.Ay.PersistedStore) {
   getGameByName(e) {
     if (null == e) return null;
     let t = e.toLowerCase();
-    return Object.prototype.hasOwnProperty.call(R, t) ? R[t] : null
+    return Object.prototype.hasOwnProperty.call(w, t) ? w[t] : null
   }
   getOfficialGame(e) {
     let t;
@@ -243,7 +243,7 @@ class $ extends(a = Chunk311907.Ay.PersistedStore) {
     }).enabled && !M && (null == j || Date.now() >= j + C)
   }
   getGameByExecutable(e) {
-    return w[e]
+    return R[e]
   }
   getGameByGameData(e) {
     var t, n;
@@ -291,7 +291,7 @@ class $ extends(a = Chunk311907.Ay.PersistedStore) {
     P[e] = true, o.w.set(S, P)
   }
 }
-O($, "displayName", "GameStore"), O($, "persistKey", "GameStore"), O($, "migrations", [e => {
+O(J, "displayName", "GameStore"), O(J, "persistKey", "GameStore"), O(J, "migrations", [e => {
   var t, n;
   return null == e ? {
     detectableGamesEtag: "",
@@ -314,12 +314,12 @@ O($, "displayName", "GameStore"), O($, "persistKey", "GameStore"), O($, "migrati
     blocklistPatterns: null != (r = e.blocklistPatterns) ? r : []
   })
 }]);
-let J = new $(Chunk73153.h, {
+let $ = new J(Chunk73153.h, {
   OVERLAY_INITIALIZE: W,
   GAMES_DATABASE_FETCH: K,
   GAMES_DATABASE_FETCH_FAIL: z,
   GAMES_DATABASE_UPDATE: q,
-  GAMES_BLOCKLIST_FETCH: X,
-  GAMES_BLOCKLIST_FETCH_FAIL: Z,
+  GAMES_BLOCKLIST_FETCH: Z,
+  GAMES_BLOCKLIST_FETCH_FAIL: X,
   GAMES_BLOCKLIST_UPDATE: Q
 })

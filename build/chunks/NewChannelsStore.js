@@ -61,7 +61,7 @@ function T(e) {
     guildId: t,
     channelId: n
   } = e;
-  return null != t && (null == O[t] || v[t] < Date.now() - m.A.Millis.HOUR ? (w(t), true) : (null != n && R(t, n), false))
+  return null != t && (null == O[t] || v[t] < Date.now() - m.A.Millis.HOUR ? (R(t), true) : (null != n && w(t, n), false))
 }
 
 function C(e) {
@@ -70,7 +70,7 @@ function C(e) {
     channelId: n,
     sidebarType: r
   } = e;
-  return null != t && r === o.PE.VIEW_CHANNEL && (R(t, n), false)
+  return null != t && r === o.PE.VIEW_CHANNEL && (w(t, n), false)
 }
 
 function N(e) {
@@ -78,10 +78,10 @@ function N(e) {
     guildId: t,
     baseChannelId: n
   } = e;
-  return null != t && (R(t, n), false)
+  return null != t && (w(t, n), false)
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = O[e];
   if (null != n && null != t && n.has(t)) {
     var r;
@@ -92,7 +92,7 @@ function R(e, t) {
   }
 }
 
-function w(e) {
+function R(e) {
   var t;
   if (null != O[e]) return;
   let n = d.Ay.getChannels(e)[d.I6].map(e => e.channel.id),
@@ -118,13 +118,13 @@ class D extends(r = Chunk311907.Ay.Store) {
   }
   getNewChannelIds(e) {
     var t;
-    return null != e && null == O[e] && w(e), null != e && null != (t = O[e]) ? t : b
+    return null != e && null == O[e] && R(e), null != e && null != (t = O[e]) ? t : b
   }
   shouldIndicateNewChannel(e, t) {
     var n;
     if (null == e) returnfalse;
     let r = p.A.getGuild(e);
-    return null != r && !!r.features.has(E.GuildFeatures.COMMUNITY) && (null != e && null == O[e] && w(e), (null == (n = O[e]) ? true : n.has(t)) && null == _.Ay.getTrackedAckMessageId(t))
+    return null != r && !!r.features.has(E.GuildFeatures.COMMUNITY) && (null != e && null == O[e] && R(e), (null == (n = O[e]) ? true : n.has(t)) && null == _.Ay.getTrackedAckMessageId(t))
   }
 }
 y(D, "displayName", "NewChannelsStore");

@@ -62,7 +62,7 @@ function Q(e, t, n) {
   }) : e[t] = n, e
 }
 
-function $(e) {
+function J(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -75,7 +75,7 @@ function $(e) {
   return e
 }
 
-function J(e, t) {
+function $(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -87,7 +87,7 @@ function J(e, t) {
 }
 
 function ee(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : J(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : $(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -103,7 +103,7 @@ let et = async (e, t, n) => {
 function en(e, t) {
   return i.useMemo(() => {
     let n = A.f[null != t ? t : Y.c8.ONE];
-    return e === Y.P7.END ? n : ee($({}, A.g[e]), {
+    return e === Y.P7.END ? n : ee(J({}, A.g[e]), {
       backgroundOverlayColor: n.backgroundOverlayColor
     })
   }, [t, e])
@@ -116,7 +116,7 @@ function er(e) {
 function ei(e) {
   let {
     onClose: t
-  } = e, n = (0, T.A)(), a = (0, S.A)(), [g, y] = i.useState(0), A = a[g], L = Y.jS[A], Z = en(L, (0, h.bG)([I.A], () => I.A.getCheckpointData()).cardId), Q = (0, m.rdh)(Z.primaryColor).hex(), [$] = i.useState(new N.B4), [J, ee] = i.useState(false), et = (0, C.V)(d.A), ei = (0, C.V)(u.A), es = (0, C.V)(o.A), eo = (0, C.V)(l.A), el = (0, C.V)(c.A), ec = i.useRef(Y.Wf.WELCOME), eu = i.useCallback(() => {
+  } = e, n = (0, T.A)(), a = (0, S.A)(), [g, y] = i.useState(0), A = a[g], L = Y.jS[A], X = en(L, (0, h.bG)([I.A], () => I.A.getCheckpointData()).cardId), Q = (0, m.rdh)(X.primaryColor).hex(), [J] = i.useState(new N.B4), [$, ee] = i.useState(false), et = (0, C.V)(d.A), ei = (0, C.V)(u.A), es = (0, C.V)(o.A), eo = (0, C.V)(l.A), el = (0, C.V)(c.A), ec = i.useRef(Y.Wf.WELCOME), eu = i.useCallback(() => {
     ee(true), ei()
   }, [ei]), ed = i.useCallback(() => {
     A === Y.Wf.END_CLAIM ? es() : A === Y.Wf.END_REWARD ? el() : Y.eg.has(A) || eo()
@@ -150,20 +150,20 @@ function ei(e) {
       ed(), y(r)
     }, [ed, a]),
     eh = i.useCallback(() => {
-      J && ((0, O.hv)(), t())
-    }, [J, t]);
+      $ && ((0, O.hv)(), t())
+    }, [$, t]);
   return (0, r.jsx)(N.GD.Provider, {
-    value: $,
+    value: J,
     children: (0, r.jsx)(v.P.Provider, {
-      value: Z,
+      value: X,
       children: (0, r.jsx)(m.NPJ, {
         theme: K.NJ.DARKER,
-        children: e => (0, r.jsxs)(w.A, {
+        children: e => (0, r.jsxs)(R.A, {
           playEntryAnimation: n,
-          isLeaving: J,
+          isLeaving: $,
           onRest: eh,
           children: [(0, r.jsx)(_.Utq, {}), (0, r.jsxs)("div", {
-            className: s()(X.kL, e),
+            className: s()(Z.kL, e),
             "aria-label": q.intl.string(z.default["CdU/PF"]),
             children: [(0, r.jsx)(N.Ay, {
               slide: L
@@ -207,15 +207,15 @@ function ei(e) {
                 })
               })]
             }), (0, r.jsxs)("div", {
-              className: s()(X.wx, e),
+              className: s()(Z.wx, e),
               children: [L !== Y.P7.WELCOME && (0, r.jsxs)("div", {
-                className: X.wm,
+                className: Z.wm,
                 children: [(0, r.jsx)(m.pVd, {
-                  colorClass: X.d7,
+                  colorClass: Z.d7,
                   color: Q
                 }), (0, r.jsx)(m.Text, {
                   variant: "display-sm",
-                  className: X.jF,
+                  className: Z.jF,
                   style: {
                     color: Q
                   },
@@ -224,18 +224,18 @@ function ei(e) {
               }), (0, r.jsx)(D.A, {
                 activeSlide: L,
                 setActiveSlide: e_,
-                className: X.cJ,
+                className: Z.cJ,
                 color: Q
               }), (0, r.jsxs)("div", {
-                className: X.o1,
+                className: Z.o1,
                 children: [(0, r.jsx)(P.A, {}), (0, r.jsx)(m.DUT, {
                   onClick: () => eu(),
-                  className: X.b,
+                  className: Z.b,
                   style: {
                     color: Q
                   },
                   children: (0, r.jsx)(m.d$L, {
-                    colorClass: X.d7,
+                    colorClass: Z.d7,
                     color: Q,
                     size: "sm"
                   })
@@ -244,21 +244,21 @@ function ei(e) {
             }), L !== Y.P7.WELCOME && (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(m.DUT, {
                 onClick: ep,
-                className: X.Gv,
+                className: Z.Gv,
                 style: {
                   borderColor: Q
                 },
                 children: (0, r.jsx)(m.Zge, {
-                  colorClass: X.d7,
+                  colorClass: Z.d7,
                   color: Q
                 })
-              }), A !== Y.Wf.END_REWARD && A !== Y.Wf.END_SUMMARY && (0, r.jsx)(R.A, {
+              }), A !== Y.Wf.END_REWARD && A !== Y.Wf.END_SUMMARY && (0, r.jsx)(w.A, {
                 onClick: ef,
-                contentClassName: X.jR,
-                className: X.E5,
+                contentClassName: Z.jR,
+                className: Z.E5,
                 muteSound: true,
                 children: (0, r.jsx)(m.KS6, {
-                  colorClass: X.d7,
+                  colorClass: Z.d7,
                   color: Q
                 })
               }), A === Y.Wf.END_SUMMARY && (0, r.jsx)(ea, {
@@ -291,18 +291,18 @@ function ea(e) {
       customSendHandler: et
     })
   };
-  return (0, r.jsxs)(R.A, {
+  return (0, r.jsxs)(w.A, {
     onClick: i,
-    className: X.OI,
+    className: Z.OI,
     children: [(0, r.jsx)(L.A, {
       variant: "eyebrow",
-      className: X.HL,
+      className: Z.HL,
       style: {
         color: t
       },
       children: q.intl.string(q.t.RDE0Sc)
     }), (0, r.jsx)(m.I9m, {
-      colorClass: Z.d7,
+      colorClass: X.d7,
       color: t
     })]
   })

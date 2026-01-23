@@ -5,8 +5,8 @@ require.d(exports, {
   FD: () => x,
   Id: () => A,
   NO: () => N,
-  Qn: () => w,
-  T5: () => R,
+  Qn: () => R,
+  T5: () => w,
   Xw: () => D,
   Y4: () => j,
   YS: () => P,
@@ -95,13 +95,13 @@ let {
   }
   let _ = "".concat(location.protocol).concat(h).concat(o);
   return c ? "".concat(_, "?force_sdr=true") : _
-}, N = e => null != e.match("development" !== m ? O : v), R = e => ({
+}, N = e => null != e.match("development" !== m ? O : v), w = e => ({
   type: d.Z2.PACK,
   id: e.id,
   name: e.name,
   stickers: e.stickers,
   previewSticker: A(e)
-}), w = (e, t) => e === f.BJ.ANIMATE_ON_INTERACTION ? t : e !== f.BJ.NEVER_ANIMATE, P = (e, t, n, r) => {
+}), R = (e, t) => e === f.BJ.ANIMATE_ON_INTERACTION ? t : e !== f.BJ.NEVER_ANIMATE, P = (e, t, n, r) => {
   if (s.A.getUploadCount(n, r) > 0) returntrue;
   let i = c.A.getStickerPreview(n, r);
   if (null != i && i.length > 0) returntrue;

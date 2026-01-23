@@ -2,7 +2,7 @@
 /** chunk id: 64585, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js"), require("./321073.js");
 var Chunk73153 = require("./73153.js"),
   Chunk272355 = require("./272355.js"),
@@ -49,7 +49,7 @@ let _ = (0, Chunk400492.aN)("poggermode_applause", Chunk312671.A.getSoundpack())
       n = l.A.isConnected() ? g : m;
     O.push([e, t * n]), T()
   };
-class R extends Chunk272355.A {
+class w extends Chunk272355.A {
   _initialize() {
     f.Ay.addChangeListener(this.startAudio), r.h.subscribe("RTC_CONNECTION_STATE", this.setVolume), r.h.subscribe("TYPING_STOP", this.stopAudio), r.h.subscribe("TYPING_STOP_LOCAL", this.stopAudio), r.h.subscribe("CHANNEL_SELECT", this.stopAudio), r.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
   }
@@ -86,4 +86,4 @@ class R extends Chunk272355.A {
     S() && N("poggermode_achievement_unlock")
   }
 }
-let w = new R
+let R = new w

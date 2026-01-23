@@ -160,7 +160,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     subscriptionGroupMemberId: t,
     errorCode: n
@@ -182,7 +182,7 @@ function R(e) {
   }))
 }
 
-function w(e) {
+function R(e) {
   let {
     message: t
   } = e;
@@ -249,8 +249,8 @@ let L = new x(Chunk73153.h, {
   PREMIUM_GROUP_ACCEPT_INVITE_START: T,
   PREMIUM_GROUP_ACCEPT_INVITE_FAIL: C,
   PREMIUM_GROUP_REMOVE_INVITE_START: N,
-  PREMIUM_GROUP_REMOVE_INVITE_FAILURE: R,
-  MESSAGE_CREATE: w,
+  PREMIUM_GROUP_REMOVE_INVITE_FAILURE: w,
+  MESSAGE_CREATE: R,
   LOCAL_MESSAGES_LOADED: P,
   LOAD_MESSAGES_SUCCESS: P,
   LOAD_MESSAGES_AROUND_SUCCESS: P,

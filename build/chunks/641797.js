@@ -52,12 +52,12 @@ var Chunk788409 = require("./788409.js"),
   },
   h = {},
   m = function e(t, n, a, s, o, c, d, f, m, g, E, y, b, O, v, A, I, S) {
-    for (var T, C = t, N = S, R = 0, w = false; true !== (N = N.get(h)) && !w;) {
+    for (var T, C = t, N = S, w = 0, R = false; true !== (N = N.get(h)) && !R;) {
       var P = N.get(t);
-      if (R += 1, true !== P)
-        if (P === R) throw RangeError("Cyclic object value");
-        else w = true;
-      true === N.get(h) && (R = 0)
+      if (w += 1, true !== P)
+        if (P === w) throw RangeError("Cyclic object value");
+        else R = true;
+      true === N.get(h) && (w = 0)
     }
     if ("function" == typeof g ? C = g(n, C) : C instanceof Date ? C = b(C) : "comma" === a && l(C) && (C = i.maybeMap(C, function(e) {
         return e instanceof Date ? b(e) : e
@@ -85,7 +85,7 @@ var Chunk788409 = require("./788409.js"),
       if (!d || null !== U) {
         var G = y && f ? String(k).replace(/\./g, "%2E") : String(k),
           V = l(C) ? "function" == typeof a ? a(j, G) : j : j + (y ? "." + G : "[" + G + "]");
-        S.set(t, R);
+        S.set(t, w);
         var F = r();
         F.set(h, S), u(D, e(U, V, a, s, o, c, d, f, "comma" === a && A && l(C) ? null : m, g, E, y, b, O, v, A, I, F))
       }

@@ -26,9 +26,9 @@ var r = "function" == typeof Map && Map.prototype,
   T = Math.floor,
   C = "function" == typeof BigInt ? BigInt.prototype.valueOf : null,
   N = Object.getOwnPropertySymbols,
-  R = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Symbol.prototype.toString : null,
-  w = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
-  P = "function" == typeof Symbol && Symbol.toStringTag && (typeof Symbol.toStringTag === w ? "object" : "symbol") ? Symbol.toStringTag : null,
+  w = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Symbol.prototype.toString : null,
+  R = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
+  P = "function" == typeof Symbol && Symbol.toStringTag && (typeof Symbol.toStringTag === R ? "object" : "symbol") ? Symbol.toStringTag : null,
   D = Object.prototype.propertyIsEnumerable,
   x = ("function" == typeof Reflect ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(e) {
     return e.__proto__
@@ -49,7 +49,7 @@ function L(e, t) {
 }
 var Chunk234629 = require("./234629.js"),
   M = Chunk234629.custom,
-  k = Z(M) ? M : null,
+  k = X(M) ? M : null,
   U = {
     __proto__: null,
     double: '"',
@@ -98,16 +98,16 @@ function q(e) {
   return "[object Number]" === ee(e) && B(e)
 }
 
-function X(e) {
+function Z(e) {
   return "[object Boolean]" === ee(e) && B(e)
 }
 
-function Z(e) {
-  if (w) return e && "object" == typeof e && e instanceof Symbol;
+function X(e) {
+  if (R) return e && "object" == typeof e && e instanceof Symbol;
   if ("symbol" == typeof e) returntrue;
-  if (!e || "object" != typeof e || !R) returnfalse;
+  if (!e || "object" != typeof e || !w) returnfalse;
   try {
-    return R.call(e), true
+    return w.call(e), true
   } catch (e) {}
   returnfalse
 }
@@ -121,12 +121,12 @@ function Q(e) {
 }
 module.exports = function e(t, r, i, o) {
   var l = r || {};
-  if (J(l, "quoteStyle") && !J(U, l.quoteStyle)) throw TypeError('option "quoteStyle" must be "single" or "double"');
-  if (J(l, "maxStringLength") && ("number" == typeof l.maxStringLength ? l.maxStringLength < 0 && l.maxStringLength !== 1 / 0 : null !== l.maxStringLength)) throw TypeError('option "maxStringLength", if provided, must be a positive integer, Infinity, or `null`');
-  var d = !J(l, "customInspect") || l.customInspect;
+  if ($(l, "quoteStyle") && !$(U, l.quoteStyle)) throw TypeError('option "quoteStyle" must be "single" or "double"');
+  if ($(l, "maxStringLength") && ("number" == typeof l.maxStringLength ? l.maxStringLength < 0 && l.maxStringLength !== 1 / 0 : null !== l.maxStringLength)) throw TypeError('option "maxStringLength", if provided, must be a positive integer, Infinity, or `null`');
+  var d = !$(l, "customInspect") || l.customInspect;
   if ("boolean" != typeof d && "symbol" !== d) throw TypeError("option \"customInspect\", if provided, must be `true`, `false`, or `'symbol'`");
-  if (J(l, "indent") && null !== l.indent && "	" !== l.indent && !(parseInt(l.indent, 10) === l.indent && l.indent > 0)) throw TypeError('option "indent" must be "\\t", an integer > 0, or `null`');
-  if (J(l, "numericSeparator") && "boolean" != typeof l.numericSeparator) throw TypeError('option "numericSeparator", if provided, must be `true` or `false`');
+  if ($(l, "indent") && null !== l.indent && "	" !== l.indent && !(parseInt(l.indent, 10) === l.indent && l.indent > 0)) throw TypeError('option "indent" must be "\\t", an integer > 0, or `null`');
+  if ($(l, "numericSeparator") && "boolean" != typeof l.numericSeparator) throw TypeError('option "numericSeparator", if provided, must be `true` or `false`');
   var f = l.numericSeparator;
   if (true === t) return "undefined";
   if (null === t) return "null";
@@ -152,7 +152,7 @@ module.exports = function e(t, r, i, o) {
       var a = {
         depth: l.depth
       };
-      return J(l, "quoteStyle") && (a.quoteStyle = l.quoteStyle), e(t, a, i + 1, o)
+      return $(l, "quoteStyle") && (a.quoteStyle = l.quoteStyle), e(t, a, i + 1, o)
     }
     return e(t, l, i + 1, o)
   }
@@ -161,9 +161,9 @@ module.exports = function e(t, r, i, o) {
       T = eg(t, b);
     return "[Function" + (v ? ": " + v : " (anonymous)") + "]" + (T.length > 0 ? " { " + I.call(T, ", ") + " }" : "")
   }
-  if (Z(t)) {
-    var N = w ? y.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : R.call(t);
-    return "object" != typeof t || w ? N : ed(N)
+  if (X(t)) {
+    var N = R ? y.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : w.call(t);
+    return "object" != typeof t || R ? N : ed(N)
   }
   if (el(t)) {
     for (var M = "<" + O.call(String(t.nodeName)), G = t.attributes || [], B = 0; B < G.length; B++) M += " " + G[B].name + "=" + V(F(G[B].value), "double", l);
@@ -171,8 +171,8 @@ module.exports = function e(t, r, i, o) {
   }
   if (H(t)) {
     if (0 === t.length) return "[]";
-    var $ = eg(t, b);
-    return g && !e_($) ? "[" + em($, g) + "]" : "[ " + I.call($, ", ") + " ]"
+    var J = eg(t, b);
+    return g && !e_(J) ? "[" + em(J, g) + "]" : "[ " + I.call(J, ", ") + " ]"
   }
   if (K(t)) {
     var eu = eg(t, b);
@@ -201,7 +201,7 @@ module.exports = function e(t, r, i, o) {
   if (ea(t)) return ef("WeakRef");
   if (q(t)) return ed(b(Number(t)));
   if (Q(t)) return ed(b(C.call(t)));
-  if (X(t)) return ed(_.call(t));
+  if (Z(t)) return ed(_.call(t));
   if (z(t)) return ed(b(String(t)));
   if ("u" > typeof window && t === window) return "{ [object Window] }";
   if ("u" > typeof globalThis && t === globalThis || true !== n.g && t === n.g) return "{ [object globalThis] }";
@@ -215,12 +215,12 @@ module.exports = function e(t, r, i, o) {
   }
   return String(t)
 };
-var $ = Object.prototype.hasOwnProperty || function(e) {
+var J = Object.prototype.hasOwnProperty || function(e) {
   return e in this
 };
 
-function J(e, t) {
-  return $.call(e, t)
+function $(e, t) {
+  return J.call(e, t)
 }
 
 function ee(e) {
@@ -372,16 +372,16 @@ function eg(e, t) {
     i = [];
   if (r) {
     i.length = e.length;
-    for (var a = 0; a < e.length; a++) i[a] = J(e, a) ? t(e[a], e) : ""
+    for (var a = 0; a < e.length; a++) i[a] = $(e, a) ? t(e[a], e) : ""
   }
   var s = "function" == typeof N ? N(e) : [];
-  if (w) {
+  if (R) {
     n = {};
     for (var o = 0; o < s.length; o++) n["$" + s[o]] = s[o]
   }
   for (var l in e)
-    if (J(e, l) && (!r || String(Number(l)) !== l || !(l < e.length)))
-      if (w && n["$" + l] instanceof Symbol) continue;
+    if ($(e, l) && (!r || String(Number(l)) !== l || !(l < e.length)))
+      if (R && n["$" + l] instanceof Symbol) continue;
       else v.call(/[^\w$]/, l) ? i.push(t(l, e) + ": " + t(e[l], e)) : i.push(l + ": " + t(e[l], e));
   if ("function" == typeof N)
     for (var c = 0; c < s.length; c++) D.call(e, s[c]) && i.push("[" + t(s[c]) + "]: " + t(e[s[c]], e));

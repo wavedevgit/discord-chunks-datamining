@@ -51,7 +51,7 @@ function N(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,8 +62,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -174,7 +174,7 @@ let P = () => (0, r.jsx)("div", {
             variant: "text-lg/bold"
           })
         }), (0, r.jsx)("td", {}), (0, r.jsx)("td", {})]
-      }), n.map((e, t) => (0, r.jsx)(j, w(N({}, e), {
+      }), n.map((e, t) => (0, r.jsx)(j, R(N({}, e), {
         withBottomMargin: t === n.length - 1
       }), e.id))]
     })
@@ -263,7 +263,7 @@ let P = () => (0, r.jsx)("div", {
       S = (0, g.V)(),
       T = null == S || null == (t = S.subscription_trial) ? true : t.sku_id,
       C = (0, m.O)(),
-      R = null != C && (0, E.U9)(C, b.pe.TIER_2),
+      w = null != C && (0, E.U9)(C, b.pe.TIER_2),
       x = (0, E.N1)(b.gD.PREMIUM_MONTH_TIER_2),
       L = "".concat(x, "/").concat((0, h.FJ)(b.WT.MONTH)),
       j = (0, h.JM)(b.gD.PREMIUM_MONTH_TIER_0),
@@ -296,9 +296,9 @@ let P = () => (0, r.jsx)("div", {
               children: [(0, r.jsx)(G, {
                 tier0MonthlyPrice: j,
                 tier2MonthlyPrice: k,
-                shouldUseDiscountPrice: R,
+                shouldUseDiscountPrice: w,
                 tier2DiscountedPriceString: L
-              }), V.map(e => (0, i.createElement)(M, w(N({}, e), {
+              }), V.map(e => (0, i.createElement)(M, R(N({}, e), {
                 key: e.id
               })))]
             })]

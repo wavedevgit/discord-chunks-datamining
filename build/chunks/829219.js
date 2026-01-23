@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   CV: () => x,
-  Fr: () => J,
-  Gn: () => Z,
+  Fr: () => $,
+  Gn: () => X,
   Gt: () => K,
-  HA: () => X,
+  HA: () => Z,
   N1: () => j,
   Oq: () => V,
   Ov: () => L,
@@ -24,7 +24,7 @@ require.d(exports, {
   lk: () => H,
   lx: () => q,
   qY: () => en,
-  r8: () => $,
+  r8: () => J,
   uI: () => et,
   vD: () => D,
   xB: () => er,
@@ -77,7 +77,7 @@ function N(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -88,8 +88,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -252,7 +252,7 @@ async function G(e, t) {
       r = (0, v.L4)(t.questContent),
       s = await i.Bo.post({
         url: S.Rsh.QUESTS_ENROLL(e),
-        body: w(N({
+        body: R(N({
           location: t.questContent
         }, (0, v.Kc)(e, t.questContent)), {
           metadata_raw: null != n ? n : null,
@@ -288,7 +288,7 @@ async function V(e, t, n) {
         s = (0, v.L4)(n),
         o = await i.Bo.post({
           url: S.Rsh.QUESTS_CLAIM_REWARD(e),
-          body: w(N({
+          body: R(N({
             platform: t,
             location: n
           }, (0, v.Kc)(e, n)), {
@@ -454,7 +454,7 @@ function q(e, t) {
     platform: t
   })
 }
-async function X() {
+async function Z() {
   if (!E.A.isFetchingClaimedQuests) {
     a.h.dispatch({
       type: "QUESTS_FETCH_CLAIMED_QUESTS_BEGIN"
@@ -477,7 +477,7 @@ async function X() {
   }
 }
 
-function Z(e, t, n) {
+function X(e, t, n) {
   a.h.dispatch({
     type: "QUESTS_UPDATE_OPTIMISTIC_PROGRESS",
     questId: e,
@@ -492,7 +492,7 @@ function Q(e) {
     questId: e
   })
 }
-async function $(e, t) {
+async function J(e, t) {
   var n, r, c, d, p, _, h, E;
   let b = Date.now();
   g.A.recordQuestRequestAttempt("/quests/decision", t, e), a.h.dispatch({
@@ -535,7 +535,7 @@ async function $(e, t) {
         currentQuestId: null != (n = null == I ? true : I.id) ? n : null,
         currentFetchedAt: b
       }), null == I) return;
-    e === y.yW.DESKTOP_ACCOUNT_PANEL_AREA && m.A.startTracking(I.id), f.default.track(S.HAw.QUEST_DECISION_RECEIVED, w(N({}, (0, u.A)()), {
+    e === y.yW.DESKTOP_ACCOUNT_PANEL_AREA && m.A.startTracking(I.id), f.default.track(S.HAw.QUEST_DECISION_RECEIVED, R(N({}, (0, u.A)()), {
       quest_id: I.id,
       caller_source: t,
       ad_request_id: String(O.request_id)
@@ -543,7 +543,7 @@ async function $(e, t) {
   } catch (n) {
     g.A.recordQuestRequestApiResponse("/quests/decision", {
       wasSuccessful: false
-    }), f.default.track(S.HAw.QUEST_DECISION_ROUNDTRIP_ERROR, w(N({}, (0, u.A)()), {
+    }), f.default.track(S.HAw.QUEST_DECISION_ROUNDTRIP_ERROR, R(N({}, (0, u.A)()), {
       reason: null != (E = null == n ? true : n.message) ? E : null,
       api_error: new s.A(n).getAnyErrorMessage(),
       caller_source: t
@@ -555,7 +555,7 @@ async function $(e, t) {
   }
 }
 
-function J(e, t) {
+function $(e, t) {
   a.h.dispatch({
     type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS",
     quest: true,

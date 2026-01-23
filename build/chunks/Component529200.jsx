@@ -2,7 +2,7 @@
 /** chunk id: 529200, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -217,7 +217,7 @@ let b = e => {
       })
     })
   },
-  R = e => {
+  w = e => {
     let {
       guildTemplate: t
     } = e;
@@ -229,5 +229,5 @@ let b = e => {
       })
     })
   };
-T.Header = b, T.Body = O, T.Icon = v, T.Info = A, T.Data = I, T.Channel = S, T.GuildSplash = C, T.GuildName = N, T.GuildTemplateName = R, b.displayName = "InviteButton.Header", O.displayName = "InviteButton.Body", v.displayName = "InviteButton.Icon", A.displayName = "InviteButton.Info", I.displayName = "InviteButton.Data", S.displayName = "InviteButton.Channel", C.displayName = "InviteButton.GuildSplash", N.displayName = "InviteButton.GuildName", R.displayName = "InviteButton.GuildTemplateName";
-let w = T
+T.Header = b, T.Body = O, T.Icon = v, T.Info = A, T.Data = I, T.Channel = S, T.GuildSplash = C, T.GuildName = N, T.GuildTemplateName = w, b.displayName = "InviteButton.Header", O.displayName = "InviteButton.Body", v.displayName = "InviteButton.Icon", A.displayName = "InviteButton.Info", I.displayName = "InviteButton.Data", S.displayName = "InviteButton.Channel", C.displayName = "InviteButton.GuildSplash", N.displayName = "InviteButton.GuildName", w.displayName = "InviteButton.GuildTemplateName";
+let R = T

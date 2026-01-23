@@ -83,8 +83,8 @@ function N(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let R = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions),
-  w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewPadding),
+let w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions),
+  R = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewPadding),
   P = 250,
   D = Chunk64700.memo(function(e) {
     let {
@@ -101,8 +101,8 @@ let R = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
       rowIndex: M,
       stickerClassName: k,
       stickerDescriptors: U,
-      stickerPadding: G = w,
-      stickerSize: V = R,
+      stickerPadding: G = R,
+      stickerSize: V = w,
       ownedStickerPacks: F,
       enlargeOnInteraction: B = false,
       channel: H,
@@ -115,11 +115,11 @@ let R = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
       gridTemplateColumns: "repeat(auto-fill, ".concat(z, "px)"),
       height: z,
       paddingRight: t ? true : z
-    }), [t, S, z]), X = i.useMemo(() => ({
+    }), [t, S, z]), Z = i.useMemo(() => ({
       width: V,
       height: V,
       padding: G
-    }), [G, V]), [Z, Q] = (0, f.A)(null, 300);
+    }), [G, V]), [X, Q] = (0, f.A)(null, 300);
     return (0, r.jsx)("div", T(I({
       className: v.nM,
       style: q
@@ -133,10 +133,10 @@ let R = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
             let n = t.altKey;
             n && e.type === m.op.STICKER && !(0, g.o1)(e.sticker.id) && Q(e.sticker.id), null == j || j(e, n)
           },
-          R = (0, o.throttle)(() => {
+          w = (0, o.throttle)(() => {
             (null == D ? true : D.current) === true || (null == x ? true : x.current) === true || f || null == L || L(e)
           }, P),
-          w = () => {
+          R = () => {
             e.type === m.op.CREATE_STICKER && (_.default.track(b.HAw.OPEN_MODAL, {
               type: b.JJy.CREATE_STICKER_MODAL,
               location: K
@@ -155,10 +155,10 @@ let R = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
             tabIndex: z,
             onFocus: q
           } = U,
-          $ = C(U, ["ref", "tabIndex", "onFocus"]);
+          J = C(U, ["ref", "tabIndex", "onFocus"]);
         switch (e.type) {
           case m.op.CREATE_STICKER:
-            return (0, r.jsx)("div", T(I({}, $), {
+            return (0, r.jsx)("div", T(I({}, J), {
               children: (0, r.jsxs)(c.DUT, {
                 "aria-label": e.name,
                 className: s()(v.wP, k, {
@@ -166,10 +166,10 @@ let R = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
                 }),
                 innerRef: G,
                 tabIndex: z,
-                onFocus: null != q ? q : R,
-                onMouseMove: R,
-                onClick: w,
-                style: X,
+                onFocus: null != q ? q : w,
+                onMouseMove: w,
+                onClick: R,
+                style: Z,
                 children: [!B && (0, r.jsx)("div", {
                   className: v.fw
                 }), (0, r.jsx)("div", {
@@ -196,20 +196,20 @@ let R = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
                   return t => (0, r.jsx)(e, I({}, t))
                 })
               };
-            return (0, i.createElement)("div", T(I({}, $), {
+            return (0, i.createElement)("div", T(I({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.DUT, {
               className: s()(v.yI, k, {
                 [v.PV]: f,
-                [v.TV]: Z === e.sticker.id
+                [v.TV]: X === e.sticker.id
               }),
               innerRef: G,
               tabIndex: z,
-              onFocus: null != q ? q : R,
-              onMouseMove: R,
+              onFocus: null != q ? q : w,
+              onMouseMove: w,
               onClick: S,
               onContextMenu: l,
-              style: X,
+              style: Z,
               "data-type": p.g.STICKER,
               "data-id": e.sticker.id,
               "data-name": e.sticker.name,

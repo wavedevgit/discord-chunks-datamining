@@ -2,7 +2,7 @@
 /** chunk id: 718019, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -65,9 +65,9 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk397927.euF;
+let w = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk397927.euF;
 
-function w(e) {
+function R(e) {
   let {
     user: t,
     displayProfile: n,
@@ -75,7 +75,7 @@ function w(e) {
     channelId: h,
     themeType: S,
     animateOnHover: C,
-    onOpenProfile: w,
+    onOpenProfile: R,
     className: P,
     previewStatus: D
   } = e, {
@@ -101,19 +101,19 @@ function w(e) {
     guildId: null != n ? n.guildId : a,
     size: H,
     animateOnHover: C
-  }), q = (0, r.jsx)(R, {
+  }), q = (0, r.jsx)(w, {
     src: K,
     avatarDecoration: W,
     size: H,
     "aria-label": t.username,
-    imageClassName: null != w ? I.Lw : true,
+    imageClassName: null != R ? I.Lw : true,
     status: k ? O.clD.UNKNOWN : B,
     statusBackdropColor: M && !k ? (0, l.C$5)(x) : true,
     isMobile: F,
     statusTooltip: true,
     statusTooltipDelay: b.In
   });
-  return null == w ? (0, r.jsx)("div", N(T({}, z), {
+  return null == R ? (0, r.jsx)("div", N(T({}, z), {
     className: Y,
     children: q
   })) : (0, r.jsx)(l.DUT, N(T({}, z), {
@@ -125,7 +125,7 @@ function w(e) {
       j({
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: L
-      }), null == w || w()
+      }), null == R || R()
     },
     children: q
   }))

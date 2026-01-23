@@ -66,13 +66,13 @@ let U = e => {
     Y = i.useRef(null),
     [W, K] = i.useState(false),
     [z, q] = i.useState(false),
-    X = null != H && null != U && U.status === L.Dmq.CANCELED,
-    Z = (0, I.iU)(x.gD.PREMIUM_MONTH_TIER_2, H, U),
-    Q = !z && X,
+    Z = null != H && null != U && U.status === L.Dmq.CANCELED,
+    X = (0, I.iU)(x.gD.PREMIUM_MONTH_TIER_2, H, U),
+    Q = !z && Z,
     {
-      analyticsLocations: $
+      analyticsLocations: J
     } = (0, f.Ay)(d.A.PREMIUM_SUBSCRIBER_NITRO_HOME),
-    [J, ee] = i.useState(false),
+    [$, ee] = i.useState(false),
     et = (0, o.bG)([E.A], () => null != t ? E.A.getUserProfile(t) : null),
     en = (0, v.A)({
       location: "SubscriberNitroHome"
@@ -87,7 +87,7 @@ let U = e => {
           [M.fv]: !en
         }),
         children: (0, r.jsxs)(f.f5, {
-          value: $,
+          value: J,
           children: [(0, r.jsx)(l.L, {
             innerRef: Y,
             onChange: e => q(e),
@@ -98,23 +98,23 @@ let U = e => {
               className: M.v1,
               enablePremiumBrandRefresh: en,
               userDiscountOffer: H,
-              discountedPrice: Z
+              discountedPrice: X
             })
           }), (0, r.jsx)(T.A, {
-            variant: w.cJ.WHATS_NEW,
+            variant: R.cJ.WHATS_NEW,
             className: M.Iw,
             noBackground: true,
             leftAlignHeaders: true
           }), (0, r.jsx)(T.A, {
             className: M.xU,
-            variant: w.cJ.PERKS_DISCOVERABILITY,
+            variant: R.cJ.PERKS_DISCOVERABILITY,
             noBackground: true,
             leftAlignHeaders: true,
             showAllPerksButton: (0, r.jsx)(D.A, {
               setIsAllPerksVisible: K,
-              previousComponent: w.A2.HOME
+              previousComponent: R.A2.HOME
             })
-          }), null != V && m.A.isInProperTreatments() && (0, r.jsx)(R.A, {
+          }), null != V && m.A.isInProperTreatments() && (0, r.jsx)(w.A, {
             location: d.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
           }), (0, r.jsx)(C.A, {
             className: M.Zy,
@@ -128,8 +128,8 @@ let U = e => {
           }), (0, r.jsx)(l.L, {
             innerRef: a,
             onChange: e => {
-              e && !J && (O.default.track(L.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                location_stack: $
+              e && !$ && (O.default.track(L.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                location_stack: J
               }), ee(true))
             },
             children: (0, r.jsx)("div", {
@@ -144,16 +144,16 @@ let U = e => {
             alt: j.intl.string(j.t.X4IxWL)
           })]
         })
-      }), X && null != Z && (0, r.jsx)(S.A, {
+      }), Z && null != X && (0, r.jsx)(S.A, {
         isVisible: Q && F,
         premiumSubscription: U,
         churnDiscountOffer: H,
-        discountedPrice: Z
+        discountedPrice: X
       })]
     }), (0, r.jsx)(P.A, {
       isAllPerksVisible: W,
       setIsAllPerksVisible: K,
-      previousComponent: w.A2.HOME,
+      previousComponent: R.A2.HOME,
       enablePremiumBrandRefresh: en
     })]
   }) : (0, r.jsx)("div", {

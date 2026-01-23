@@ -46,8 +46,8 @@ var a, Chunk387739 = require("./387739.js"),
   T = " ",
   C = RegExp("\r", "g"),
   N = RegExp("\n", "g"),
-  R = RegExp("^\n", "g"),
-  w = RegExp(S, "g"),
+  w = RegExp("^\n", "g"),
+  R = RegExp(S, "g"),
   P = RegExp("&#13;?", "g"),
   D = RegExp("&#8203;?", "g"),
   x = ["bold", "bolder", "500", "600", "700", "800", "900"],
@@ -203,7 +203,7 @@ var a, Chunk387739 = require("./387739.js"),
       })) ? Math.max(n, e - r[0]) : n) ? (this.currentText = "", this.characterList = g()) : (this.currentText = this.currentText.slice(t, n), this.characterList = this.characterList.slice(t, n))
     }, t._addTextNode = function(e, t) {
       var n = e.textContent;
-      "" === n.trim() && "pre" !== this.wrapper && (n = " "), "pre" !== this.wrapper && (n = (n = n.replace(R, "")).replace(N, T)), this._appendText(n, t)
+      "" === n.trim() && "pre" !== this.wrapper && (n = " "), "pre" !== this.wrapper && (n = (n = n.replace(w, "")).replace(N, T)), this._appendText(n, t)
     }, t._addBreakNode = function(e, t) {
       O(e) && this._appendText("\n", t)
     }, t._addImgNode = function(e, t) {
@@ -263,7 +263,7 @@ var a, Chunk387739 = require("./387739.js"),
 module.exports = function(e) {
   var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : _,
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : c,
-    r = t(e = e.trim().replace(C, "").replace(w, T).replace(P, "").replace(D, ""));
+    r = t(e = e.trim().replace(C, "").replace(R, T).replace(P, "").replace(D, ""));
   return r ? new W(G(n), function(e, t) {
     return "li" === e ? "ol" === t ? "ordered-list-item" : "unordered-list-item" : null
   }).addDOMNode(r).getContentBlocks() : null

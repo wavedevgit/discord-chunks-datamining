@@ -35,7 +35,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk187866 = require("./187866.js");
 
 function D(e, t) {
-  return R.intl.formatToPlainString(R.t.h2yWWX, {
+  return w.intl.formatToPlainString(w.t.h2yWWX, {
     username: t.username,
     activity: e
   })
@@ -44,8 +44,8 @@ let x = (e, t, n) => {
   let {
     artist: r,
     media: i
-  } = e, a = R.t["6iNxrl"], s = m.Ay.getName(t.guild_id, t.id, n);
-  return R.intl.formatToMarkdownString(a, {
+  } = e, a = w.t["6iNxrl"], s = m.Ay.getName(t.guild_id, t.id, n);
+  return w.intl.formatToMarkdownString(a, {
     artist: r,
     userName: s,
     media: i
@@ -80,17 +80,17 @@ function L(e) {
     }
   }, [t, a]);
   return null == o ? null : (0, r.jsxs)("div", {
-    className: w.lu,
+    className: R.lu,
     children: [(0, r.jsx)(I.z, {
       entry: n
     }), (0, r.jsx)("div", {
-      className: w.Lt,
+      className: R.Lt,
       children: (0, r.jsx)("div", {
-        className: w.Vp,
+        className: R.Vp,
         style: o
       })
     }), (0, r.jsx)(l.Text, {
-      className: w.vE,
+      className: R.vE,
       variant: "text-xs/normal",
       tabularNumbers: true,
       color: true,
@@ -103,7 +103,7 @@ function j(e) {
   var t;
   let n, m, I, {
       channel: T,
-      entry: w,
+      entry: R,
       closePopout: j,
       onReaction: M,
       onVoiceChannelPreview: k
@@ -111,7 +111,7 @@ function j(e) {
     {
       largeImage: U
     } = (0, g.nO)({
-      entry: w
+      entry: R
     }),
     {
       activity: G,
@@ -119,7 +119,7 @@ function j(e) {
       artist: F,
       title: B,
       user: H
-    } = (0, v.u7)(w),
+    } = (0, v.u7)(R),
     {
       primaryColor: Y,
       secondaryColor: W
@@ -132,7 +132,7 @@ function j(e) {
       let t = null == (e = G.timestamps) ? true : e.start,
         n = (0, E.W6)(null != t ? {
           start: t
-        } : w, Date.now());
+        } : R, Date.now());
       return (0, y.Lu)({
         user: H,
         channel: T,
@@ -147,10 +147,10 @@ function j(e) {
           timestamp: n
         })
       })
-    }, [G, F, T, w, null == U ? true : U.src, Y, W, B, H]);
+    }, [G, F, T, R, null == U ? true : U.src, Y, W, B, H]);
   if (null == G || null == V) return null;
-  let X = F,
-    Z = [];
+  let Z = F,
+    X = [];
   if (V.media.provider === a.X.SPOTIFY) {
     m = () => {
       (0, c.Mp)(G)
@@ -163,7 +163,7 @@ function j(e) {
     let e = e => {
       (0, c.mN)(G, H.id, e)
     };
-    if (X = (0, r.jsx)(d.A, {
+    if (Z = (0, r.jsx)(d.A, {
         artists: F,
         canOpen: null != G.sync_id,
         linkClassName: P.zA,
@@ -172,11 +172,11 @@ function j(e) {
       let e = () => {
         (0, p.A)(z, N.Qp.USER_ACTIVITY_SYNC), j()
       };
-      Z.push((0, r.jsx)(l.Button, {
+      X.push((0, r.jsx)(l.Button, {
         variant: "primary",
         size: "md",
         fullWidth: true,
-        text: R.intl.string(R.t.eU3inB),
+        text: w.intl.string(w.t.eU3inB),
         icon: l.J2m,
         onClick: e
       }, "listen-along"))
@@ -185,16 +185,16 @@ function j(e) {
   let Q = (0, r.jsx)(A.BC, {
     onClickThumbnail: I,
     channel: T,
-    entry: w,
+    entry: R,
     headerIcons: V.media.provider === a.X.SPOTIFY ? (0, r.jsx)(S.A, {
       onClick: n,
-      "aria-label": R.intl.string(R.t.rRffNz),
+      "aria-label": w.intl.string(w.t.rRffNz),
       Icon: h.A
     }) : null,
-    userDescription: (0, E.JM)(w) ? R.t.Tzx5D2 : R.t.CcVI1T,
+    userDescription: (0, E.JM)(R) ? w.t.Tzx5D2 : w.t.CcVI1T,
     title: B,
     onClickTitle: m,
-    subtitle: X,
+    subtitle: Z,
     badges: null,
     children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(L, {
       activity: G
@@ -209,8 +209,8 @@ function j(e) {
         channel: T,
         generateReactionImage: q,
         reactionImageAltText: D(F, H),
-        entry: w,
-        buttons: Z
+        entry: R,
+        buttons: X
       })
     })]
   })

@@ -56,8 +56,8 @@ function l(e, t, n) {
     },
     isDisabled: l || c
   }), {
-    focusableProps: R
-  } = (0, o.Wc)(e, n), w = (0, r.v)(S, R), P = (0, i.$)(e, {
+    focusableProps: w
+  } = (0, o.Wc)(e, n), R = (0, r.v)(S, w), P = (0, i.$)(e, {
     labelable: true
   });
   return (0, a.F)(n, t.defaultSelected, t.setSelected), {
@@ -77,7 +77,7 @@ function l(e, t, n) {
       name: d,
       form: f,
       type: "checkbox",
-      ...w
+      ...R
     }),
     isSelected: t.isSelected,
     isPressed: T || N,

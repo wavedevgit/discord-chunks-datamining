@@ -73,13 +73,13 @@ function T(e) {
   } = e, v = I(e, ["user", "closePopout"]), S = i.useRef(null), T = (0, a.bG)([g.A], () => {
     var e;
     return null == (e = g.A.getUserProfile(t.id)) ? true : e.application
-  }), C = (0, a.bG)([f.A, d.A], () => d.A.getChannel(f.A.getChannelId())), N = (0, o.A)(C), R = t.id, w = i.useCallback(() => {
-    null != T && (N ? ((0, l.hg)(T.id), (0, s.OoC)((0, E.n)(R, null == C ? true : C.guild_id)), null == n || n(), p.default.track(b.HAw.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+  }), C = (0, a.bG)([f.A, d.A], () => d.A.getChannel(f.A.getChannelId())), N = (0, o.A)(C), w = t.id, R = i.useCallback(() => {
+    null != T && (N ? ((0, l.hg)(T.id), (0, s.OoC)((0, E.n)(w, null == C ? true : C.guild_id)), null == n || n(), p.default.track(b.HAw.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
       application_id: T.id
     })) : (0, m.o)(A({
       applicationId: T.id
     }, T)))
-  }, [T, N, R, null == C ? true : C.guild_id, n]), P = N ? O.intl.string(O.t["Cia+A8"]) : O.intl.string(O.t.NgXl3C);
+  }, [T, N, w, null == C ? true : C.guild_id, n]), P = N ? O.intl.string(O.t["Cia+A8"]) : O.intl.string(O.t.NgXl3C);
   if (null == T || !(0, u.Ie)(T)) return null;
   let {
     customInstallUrl: D
@@ -115,14 +115,14 @@ function T(e) {
         text: P,
         icon: L,
         onContextMenu: t,
-        onClick: w
+        onClick: R
       }, n, v))
     }
   }) : (0, r.jsx)(y.FD, A({
     action: "PRESS_ADD_APP",
     text: P,
     icon: L,
-    onClick: w,
+    onClick: R,
     variant: "primary"
   }, v))
 }

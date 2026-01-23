@@ -85,12 +85,12 @@ function W(e, t) {
 let K = 32,
   z = 12,
   q = 150,
-  X = 144,
-  Z = 520,
+  Z = 144,
+  X = 520,
   Q = 5,
-  $ = 150;
+  J = 150;
 
-function J(e, t) {
+function $(e, t) {
   let n = z / t,
     r = e * n;
   return "".concat(r + 1, " / ").concat(r + n + 1)
@@ -124,8 +124,8 @@ function et(e) {
     onPause: I,
     onEnded: S,
     onControlsHide: C,
-    onControlsShow: R,
-    onVolumeChange: w,
+    onControlsShow: w,
+    onVolumeChange: R,
     onMute: D,
     href: x,
     placeholder: j,
@@ -148,12 +148,12 @@ function et(e) {
     maxWidth: l,
     maxHeight: c
   });
-  W = Math.max(z.width, q), K = Math.max(z.height, X);
-  let Z = (0, T.E)(u);
+  W = Math.max(z.width, q), K = Math.max(z.height, Z);
+  let X = (0, T.E)(u);
   if (null != d && null != d.proxyURL) return (0, i.jsx)("div", {
     className: o()(V.pu, r),
     children: m({
-      poster: Z,
+      poster: X,
       src: d.proxyURL,
       placeholder: j,
       placeholderVersion: M,
@@ -164,7 +164,7 @@ function et(e) {
       onEnded: S,
       naturalWidth: d.width,
       naturalHeight: d.height,
-      onVolumeChange: w,
+      onVolumeChange: R,
       playable: y,
       autoMute: O,
       volume: v,
@@ -172,7 +172,7 @@ function et(e) {
       onPause: I,
       onMute: D,
       onControlsHide: C,
-      onControlsShow: R,
+      onControlsShow: w,
       sourceMetadata: U
     })
   });
@@ -231,7 +231,7 @@ function et(e) {
       height: K
     },
     children: [h({
-      src: Z,
+      src: X,
       width: W,
       height: K,
       maxWidth: W,
@@ -502,7 +502,7 @@ class er extends(r = Chunk64700.PureComponent) {
           return (0, i.jsxs)("div", {
             className: V.Me,
             style: {
-              gridColumn: J(r, n)
+              gridColumn: $(r, n)
             },
             children: [(0, i.jsx)("div", {
               className: V.$L,
@@ -755,7 +755,7 @@ class er extends(r = Chunk64700.PureComponent) {
             children: [t.text, null != t.text && null != n ? (0, i.jsx)("span", {
               className: V.i8,
               children: "•"
-            }) : null, null != n ? (0, R.mk)(n) : null]
+            }) : null, null != n ? (0, w.mk)(n) : null]
           })]
         })
       }
@@ -763,7 +763,7 @@ class er extends(r = Chunk64700.PureComponent) {
       className: o()(V.te, V.aK),
       children: (0, i.jsx)("span", {
         className: V.oy,
-        children: (0, R.mk)(n)
+        children: (0, w.mk)(n)
       })
     }) : true
   }
@@ -891,7 +891,7 @@ class er extends(r = Chunk64700.PureComponent) {
       maxHeight: o
     });
     if (!e && (i === k.Auw.VIDEO || c >= 300)) return c + K;
-    if (i === k.Auw.RICH && true !== n) return Z;
+    if (i === k.Auw.RICH && true !== n) return X;
     if (i === k.Auw.GIFV) {
       var u, d, f, p;
       let {
@@ -911,7 +911,7 @@ class er extends(r = Chunk64700.PureComponent) {
     } = this.props.embed;
     return null != e ? {
       minWidth: q,
-      minHeight: X
+      minHeight: Z
     } : true
   }
   isInline() {
@@ -919,7 +919,7 @@ class er extends(r = Chunk64700.PureComponent) {
       hideMedia: e,
       embed: t
     } = this.props;
-    return !e && (0, w.NV)(t)
+    return !e && (0, R.NV)(t)
   }
   renderSuppressButton(e) {
     return (0, i.jsx)(l.DUT, {
@@ -984,7 +984,7 @@ class er extends(r = Chunk64700.PureComponent) {
         d = i
       }
     }
-    let f = $ / (c.A.fontScale / 100),
+    let f = J / (c.A.fontScale / 100),
       p = (null != o ? (0, D.W7)(o) : 0) >= f,
       _ = (null != (t = null == o ? true : o.split("\n").length) ? t : 0) >= Q,
       h = p || _;
@@ -1057,7 +1057,7 @@ class er extends(r = Chunk64700.PureComponent) {
           embedIndex: this.props.embedIndex
         }
       }
-    }, (0, w.ds)(this.props.embed))), B(this, "onReveal", () => {
+    }, (0, R.ds)(this.props.embed))), B(this, "onReveal", () => {
       this.setState({
         isVisible: true
       })

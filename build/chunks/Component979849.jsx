@@ -74,8 +74,8 @@ function v(e) {
     isTryItOut: T,
     onUpsellClick: C
   } = e, N = i.useRef(null), {
-    analyticsLocations: R,
-    newestAnalyticsLocation: w
+    analyticsLocations: w,
+    newestAnalyticsLocation: R
   } = (0, c.Ay)(), P = (0, o.bG)([d.A], () => d.A.getStatus(t.id)), D = null == n || (null == a ? true : a.canUsePremiumProfileCustomization) || f, x = (0, r.jsx)(O, {
     src: g,
     avatarDecoration: y,
@@ -103,13 +103,13 @@ function v(e) {
         onChangeAvatar: () => (0, _.XD)({
           uploadType: h.HL.AVATAR,
           guildId: null == n ? true : n.id,
-          analyticsSource: w,
+          analyticsSource: R,
           isTryItOut: T
         }),
         onChangeAvatarDecoration: () => {
           (0, u.L)({
             guild: null == n ? true : n,
-            analyticsLocations: R
+            analyticsLocations: w
           })
         }
       })

@@ -37,17 +37,17 @@ function h(e) {
   } = e, {
     fetching: C,
     maybeFetchData: N
-  } = (0, f.A)(), R = (0, d.A)({
+  } = (0, f.A)(), w = (0, d.A)({
     location: "SoundboardSoundPicker"
   }), {
-    analyticsLocations: w
+    analyticsLocations: R
   } = (0, c.Ay)(l.A.SOUNDBOARD_POPOUT);
   return i.useEffect(() => {
     N()
   }, [N]), i.useEffect(() => {
     v || (0, u.Ri)("")
   }, [v]), (0, r.jsx)(c.f5, {
-    value: w,
+    value: R,
     children: (0, r.jsx)(o.lGe, {
       className: s()(_.Nz, {
         [_.Bg]: C,
@@ -69,7 +69,7 @@ function h(e) {
         defaultSoundsOnly: T,
         inExpressionPicker: v,
         analyticsSource: g,
-        enablePickerUpsellPremiumBrandRefresh: R
+        enablePickerUpsellPremiumBrandRefresh: w
       })
     })
   })

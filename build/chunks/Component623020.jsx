@@ -128,11 +128,11 @@ function G(e) {
     }),
     {
       activeSubscription: q,
-      setUpdatedSubscription: X,
-      contextMetadata: Z,
+      setUpdatedSubscription: Z,
+      contextMetadata: X,
       currencies: Q,
-      paymentSources: $,
-      priceOptions: J,
+      paymentSources: J,
+      priceOptions: $,
       purchaseError: ee,
       purchaseTokenAuthState: et,
       selectedPlan: en,
@@ -166,8 +166,8 @@ function G(e) {
   let eT = i.useRef(null),
     [eC, eN] = (0, l.A)(false, k),
     {
-      paymentSource: eR,
-      isEligibleForTrial: ew,
+      paymentSource: ew,
+      isEligibleForTrial: eR,
       planGroup: eP,
       disablePurchase: eD,
       userTrialOffer: ex
@@ -183,14 +183,14 @@ function G(e) {
     })
   }, [ee]);
   let ek = i.useCallback((e, t, n) => {
-      X(e), null != t && ep(t), null != n && e_(n), _(y.pn.CONFIRM, {
+      Z(e), null != t && ep(t), null != n && e_(n), _(y.pn.CONFIRM, {
         fulfillment: {
           subscription: e,
           entitlements: t
         }
       })
-    }, [_, X, ep, e_]),
-    eU = null != en && P.Er.has(en.id) && null != eR && !(0, u.j2)(eR) ? Error(x.intl.string(x.t["2ik8ih"])) : null,
+    }, [_, Z, ep, e_]),
+    eU = null != en && P.Er.has(en.id) && null != ew && !(0, u.j2)(ew) ? Error(x.intl.string(x.t["2ik8ih"])) : null,
     eG = i.useRef(null),
     [eV, eF] = i.useState(null),
     eB = null == eO || null == (n = eO.discount) ? true : n.plan_ids,
@@ -198,21 +198,21 @@ function G(e) {
     eY = ev && (0, h.Ik)(eI),
     eW = null == Y && null == W && ef === D.VV.SUBSCRIPTION,
     eK = (0, I.vT)({
-      isTrial: ew,
+      isTrial: eR,
       isGift: ev,
       selectedSkuId: er,
       startedPaymentFlowWithPaymentSources: eh.current
     }),
     ez = ev && ef === D.VV.ONE_TIME,
     eq = ez || (eK ? eW && eu : eu),
-    eX = (0, d.px)(en, ev, eS),
-    eZ = i.useCallback(() => eK ? void _(y.pn.SKU_SELECT) : ey ? void _(y.pn.ADD_PAYMENT_STEPS) : eX ? void _(y.pn.SELECT_FREE_SKU) : ez ? _(y.pn.GIFT_CUSTOMIZATION) : _(y.pn.PLAN_SELECT), [_, eK, ez, eX, ey]),
+    eZ = (0, d.px)(en, ev, eS),
+    eX = i.useCallback(() => eK ? void _(y.pn.SKU_SELECT) : ey ? void _(y.pn.ADD_PAYMENT_STEPS) : eZ ? void _(y.pn.SELECT_FREE_SKU) : ez ? _(y.pn.GIFT_CUSTOMIZATION) : _(y.pn.PLAN_SELECT), [_, eK, ez, eZ, ey]),
     eQ = () => {
       _(y.pn.ADD_PAYMENT_STEPS)
     },
-    e$ = eD;
-  eE && (e$ = true);
-  let eJ = null != G ? G : eP;
+    eJ = eD;
+  eE && (eJ = true);
+  let e$ = null != G ? G : eP;
   if (ef === D.VV.ONE_TIME) a = (0, r.jsx)(T.A, {
     hasLegalTermsFlash: eC,
     legalTermsNodeRef: eG,
@@ -223,10 +223,10 @@ function G(e) {
     s()(null != en, "Expected plan to be selected");
     let e = {
       selectedPlanId: en.id,
-      planGroup: eJ,
-      paymentSources: $,
+      planGroup: e$,
+      paymentSources: J,
       onPaymentSourceChange: e => ea(null != e ? e.id : null),
-      priceOptions: J,
+      priceOptions: $,
       currencies: Q,
       onCurrencyChange: e => ei(e),
       handlePaymentSourceAdd: () => _(y.pn.ADD_PAYMENT_STEPS),
@@ -238,15 +238,15 @@ function G(e) {
       reviewWarningMessage: j,
       purchaseState: ec,
       referralTrialOfferId: H,
-      isTrial: ew || null != m && null != C,
+      isTrial: eR || null != m && null != C,
       isDiscount: eH,
       handleClose: K
     };
     a = z ? (0, r.jsx)(S._, M({}, e)) : (0, r.jsx)(f.A, M({}, e))
   } else s()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(p.A, {
     premiumSubscription: q,
-    paymentSources: $,
-    priceOptions: J,
+    paymentSources: J,
+    priceOptions: $,
     onPaymentSourceChange: e => {
       ea(null != e ? e.id : null)
     },
@@ -256,7 +256,7 @@ function G(e) {
     legalTermsNodeRef: eG,
     hasLegalTermsFlash: eC,
     onInvoiceError: e => eF(e),
-    planGroup: eJ,
+    planGroup: e$,
     currencies: Q,
     onCurrencyChange: e => ei(e),
     hasOpenInvoice: null != V,
@@ -267,8 +267,8 @@ function G(e) {
     children: [(0, r.jsx)(b.Z, {
       giftMessage: eA
     }), !eY && (0, r.jsx)(N.A, {
-      isEligibleForTrial: ew
-    }), (0, r.jsxs)(w.dZ, {
+      isEligibleForTrial: eR
+    }), (0, r.jsxs)(R.dZ, {
       children: [eg && eK && !ey && (0, r.jsx)("div", {
         className: L.AC
       }), (0, r.jsxs)(o.BJc, {
@@ -276,11 +276,11 @@ function G(e) {
         gap: 8,
         children: [(0, r.jsx)(v.A, {}), (0, r.jsx)(O.A, {}), (0, r.jsx)(A.A, {})]
       }), a]
-    }), (0, r.jsx)(w.UX, {
-      children: (0, r.jsx)(R.A, {
+    }), (0, r.jsx)(R.UX, {
+      children: (0, r.jsx)(w.A, {
         premiumSubscription: null != q ? q : null,
         setPurchaseState: es,
-        onBack: eZ,
+        onBack: eX,
         onNext: ek,
         onPurchaseError: e => eo(e),
         legalTermsNodeRef: eG,
@@ -289,15 +289,15 @@ function G(e) {
         planError: eU,
         analyticsLocation: B,
         baseAnalyticsData: F,
-        flowStartTime: Z.startTime,
+        flowStartTime: X.startTime,
         trialId: ej,
-        planGroup: eJ,
+        planGroup: e$,
         purchaseTokenAuthState: et,
         openInvoiceId: V,
         backButtonEligible: eq,
         metadata: eM,
-        isTrial: ew,
-        disablePurchase: e$,
+        isTrial: eR,
+        disablePurchase: eJ,
         onPaymentSourceAdd: eQ
       })
     })]

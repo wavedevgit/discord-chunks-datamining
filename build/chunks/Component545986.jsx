@@ -8,13 +8,13 @@ require.d(exports, {
   QA: () => Q,
   Zc: () => Y,
   cf: () => V,
-  d5: () => X,
+  d5: () => Z,
   e0: () => et,
   hJ: () => B,
   l9: () => q,
   m6: () => H,
   navigateToQuestHome: () => W,
-  q$: () => J,
+  q$: () => $,
   rx: () => G,
   z6: () => z
 });
@@ -194,7 +194,7 @@ function W() {
   let r = null != t ? "#".concat(t) : "";
   n && c.A.setState({
     selectedTab: P.GlobalDiscoveryTab.QUESTS
-  }), (0, d.default)(), (0, u.pX)((n ? w.BVt.QUEST_HOME : w.BVt.QUEST_HOME_V2) + r)
+  }), (0, d.default)(), (0, u.pX)((n ? R.BVt.QUEST_HOME : R.BVt.QUEST_HOME_V2) + r)
 }
 let K = .2;
 
@@ -203,7 +203,7 @@ function z(e) {
       quest: e
     }),
     n = {
-      location: R.rE.QUESTS_BAR
+      location: w.rE.QUESTS_BAR
     };
   if (!(0, b.l)(n) || Math.random() > K) return;
   let r = (0, v.A)(e);
@@ -217,7 +217,7 @@ function q() {
   return Promise.all([n.e("35584"), n.e("23628"), n.e("29")]).then(n.bind(n, 717415))
 }
 
-function X(e) {
+function Z(e) {
   var t;
   let {
     quest: n,
@@ -236,7 +236,7 @@ function X(e) {
       sourceQuestContent: s
     });
     let e = y.Ay.getState().getVideoProgress(n.id);
-    null != e && e.timestampSec > 1 && ((0, h.QG)(n.id), p.default.track(w.HAw.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
+    null != e && e.timestampSec > 1 && ((0, h.QG)(n.id), p.default.track(R.HAw.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
       quest_id: n.id,
       source_quest_content: (0, m.jO)(s),
       source_quest_content_cta: l,
@@ -264,7 +264,7 @@ function X(e) {
   })
 }
 
-function Z(e) {
+function X(e) {
   var t;
   let n = null == (t = platform.os) ? true : t.family,
     r = "quest";
@@ -282,21 +282,21 @@ function Z(e) {
 }
 
 function Q(e) {
-  let t = Z(e),
+  let t = X(e),
     n = (0, a.X7)(t);
-  null != n && p.default.track(w.HAw.DEEP_LINK_CLICKED, {
+  null != n && p.default.track(R.HAw.DEEP_LINK_CLICKED, {
     fingerprint: (0, s.v)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), _.A.launch(t, t => {
     t || (0, u.bG)({
-      pathname: w.BVt.QUEST_HOME_V2,
+      pathname: R.BVt.QUEST_HOME_V2,
       hash: e
     })
   })
 }
 
-function $(e) {
+function J(e) {
   var t;
   let n = null == (t = platform.os) ? true : t.family,
     r = "quest-preview";
@@ -313,16 +313,16 @@ function $(e) {
   return "discord://"
 }
 
-function J(e) {
-  let t = $(e),
+function $(e) {
+  let t = J(e),
     n = (0, a.X7)(t);
-  null != n && p.default.track(w.HAw.DEEP_LINK_CLICKED, {
+  null != n && p.default.track(R.HAw.DEEP_LINK_CLICKED, {
     fingerprint: (0, s.v)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), _.A.launch(t, t => {
     t || (0, u.bG)({
-      pathname: w.BVt.QUEST_HOME_V2,
+      pathname: R.BVt.QUEST_HOME_V2,
       hash: e
     })
   })
@@ -350,7 +350,7 @@ async function et(e, t) {
   });
   switch (n) {
     case h.WM.SUCCESS:
-      X({
+      Z({
         quest: e,
         questContent: t.questContent,
         sourceQuestContent: t.sourceQuestContent,
@@ -373,5 +373,5 @@ async function et(e, t) {
 }
 
 function en(e) {
-  if ((0, S.vA)(e)) return e.config.features.includes(R.Li.CLOUD_GAMING_ACTIVITY) ? o.hpF : o._xR
+  if ((0, S.vA)(e)) return e.config.features.includes(w.Li.CLOUD_GAMING_ACTIVITY) ? o.hpF : o._xR
 }

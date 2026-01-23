@@ -69,7 +69,7 @@ var N = function(e) {
   return e.MFA = "MFA", e.SUCCESS = "SUCCESS", e
 }({});
 
-function R(e) {
+function w(e) {
   let t = v({
     type: "LOGOUT"
   }, e);
@@ -79,9 +79,9 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : y.BVt.DEFAULT_LOGGED_OUT;
-  if (R(), null == t) return;
+  if (w(), null == t) return;
   let n = (0, f.Y)();
   null == n ? (0, p.pX)(t, {
     source: e
@@ -365,7 +365,7 @@ let P = {
     })
   },
   logoutInternal(e) {
-    R(e)
+    w(e)
   },
   logout(e) {
     var t;
@@ -393,7 +393,7 @@ let P = {
     }), {
       rejectWithError: false
     })).finally(() => {
-      (null == r || r === h.default.getId()) && w(e, n)
+      (null == r || r === h.default.getId()) && R(e, n)
     })
   },
   switchAccountToken(e) {
@@ -402,7 +402,7 @@ let P = {
     return S.log("Switching accounts", {
       wasLoggedIn: null != n,
       tokenHasChanged: e !== n
-    }), R({
+    }), w({
       isSwitchingAccount: true,
       goHomeAfterSwitching: t
     }), this.loginToken(e, true).then(() => {
@@ -418,7 +418,7 @@ let P = {
       url: y.Rsh.ME,
       oldFormErrors: true,
       rejectWithError: true
-    }).catch(() => w(e, t))
+    }).catch(() => R(e, t))
   },
   async verify(e) {
     let t = await g.A.post({

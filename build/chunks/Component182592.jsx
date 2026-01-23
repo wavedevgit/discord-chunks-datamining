@@ -59,15 +59,15 @@ let O = e => {
       layerData: b
     } = e, O = i.useRef(null), [v, A] = i.useState([]), [I, S] = i.useState(0), [T, C] = i.useState(0), {
       accessibilityLabel: N
-    } = _, R = y ? 500 : .1, [w, P] = i.useState(-R), {
+    } = _, w = y ? 500 : .1, [R, P] = i.useState(-w), {
       stop: D,
       reset: x,
       ticking: L
     } = (0, p.A)(e => {
       P(t => t + e)
-    }), j = i.useRef(R);
+    }), j = i.useRef(w);
     i.useEffect(() => {
-      j.current = R
+      j.current = w
     }), i.useEffect(() => {
       P(-j.current), A((0, h.u)(_.effects))
     }, [_]), i.useEffect(() => {
@@ -111,7 +111,7 @@ let O = e => {
             layerConfig: e,
             animationType: _.animationType,
             ticking: L.current,
-            time: w,
+            time: R,
             hasPlayedThrough: M,
             setHasPlayedThrough: k,
             maxLoops: n,

@@ -101,8 +101,8 @@ async function B(e) {
     command: C,
     commandOrigin: K
   }), await b.A.unarchiveThreadIfNecessary(M.channel.id);
-  let X = [],
-    Z = [],
+  let Z = [],
+    X = [],
     Q = (0, L.Qr)(K);
   if (null != C.options)
     for (let e of C.options) {
@@ -110,9 +110,9 @@ async function B(e) {
       if (e.type === c.n4.SUB_COMMAND || e.type === c.n4.SUB_COMMAND_GROUP || !(e.name in P)) continue;
       let n = (null == (_ = M.autocomplete) ? true : _.name) === e.name || true;
       if (e.type === c.n4.STRING) {
-        let r = null != (h = null == (m = w.Eq(P, e.name)) ? true : m.trim()) ? h : "";
-        if (null != e.choices ? t = (0, R.$7)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, R.Xf)(M.channel.id, e.name, r)), null == t && (t = r), "" === t && null != M.autocomplete && !n) continue;
-        i()(null != M.autocomplete || null != t, 'Option "'.concat(e.name, '" expects a value')), X.push({
+        let r = null != (h = null == (m = R.Eq(P, e.name)) ? true : m.trim()) ? h : "";
+        if (null != e.choices ? t = (0, w.$7)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, w.Xf)(M.channel.id, e.name, r)), null == t && (t = r), "" === t && null != M.autocomplete && !n) continue;
+        i()(null != M.autocomplete || null != t, 'Option "'.concat(e.name, '" expects a value')), Z.push({
           type: e.type,
           name: e.name,
           value: t,
@@ -124,8 +124,8 @@ async function B(e) {
         if (null != M.autocomplete) continue;
         let t = A.A.getUpload(M.channel.id, e.name, Q);
         if (null == t) continue;
-        let r = Z.length;
-        Z.push(t), X.push({
+        let r = X.length;
+        X.push(t), Z.push({
           type: e.type,
           name: e.name,
           value: r,
@@ -133,7 +133,7 @@ async function B(e) {
         });
         continue
       }
-      let r = w.Gk(P[e.name]);
+      let r = R.Gk(P[e.name]);
       if (i()(null != M.autocomplete || 1 === r.length, 'Option "'.concat(e.name, '" expects a single option type')), null == r[0] && !n) continue;
       let a = null != (d = r[0]) ? d : {
         type: "text",
@@ -181,23 +181,23 @@ async function B(e) {
               (null == e ? true : e.type) === "userMention" ? t = e.userId: (null == e ? true : e.type) === "roleMention" ? t = e.roleId : (null == e ? true : e.type) === "textMention" && "@everyone" === e.text ? t = null == (T = M.guild) ? true : T.id : i()(false, "Failed to resolve ".concat(a.text))
             } break;
         case c.n4.BOOLEAN:
-          "text" === a.type && (t = (0, R.a5)(a.text.trim()));
+          "text" === a.type && (t = (0, w.a5)(a.text.trim()));
           break;
         case c.n4.INTEGER:
           if ("text" === a.type) {
             let r = a.text.trim();
-            null != e.choices ? t = (0, R.Bk)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, R.lM)(M.channel.id, e.name, r)), null == t && (t = Number(w.ib(O.default.locale, r)))
+            null != e.choices ? t = (0, w.Bk)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, w.lM)(M.channel.id, e.name, r)), null == t && (t = Number(R.ib(O.default.locale, r)))
           }
           break;
         case c.n4.NUMBER:
           if ("text" === a.type) {
             let r = a.text.trim();
-            null != e.choices ? t = (0, R.Bk)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, R.lM)(M.channel.id, e.name, r)), null == t && (t = Number(w.ib(O.default.locale, r)))
+            null != e.choices ? t = (0, w.Bk)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, w.lM)(M.channel.id, e.name, r)), null == t && (t = Number(R.ib(O.default.locale, r)))
           }
           break;
         default:
           throw Error("Unsupported option type: ".concat(e.type))
-      }("" !== t || null == M.autocomplete || n) && (i()(null != M.autocomplete || null != t, 'Unexpected value for option "'.concat(e.name, '"')), null != t && X.push({
+      }("" !== t || null == M.autocomplete || n) && (i()(null != M.autocomplete || null != t, 'Unexpected value for option "'.concat(e.name, '"')), null != t && Z.push({
         type: e.type,
         name: e.name,
         value: t,
@@ -210,10 +210,10 @@ async function B(e) {
         name: t,
         type: n
       } = C.subCommandPath[e];
-      X = [{
+      Z = [{
         type: n,
         name: t,
-        options: X
+        options: Z
       }]
     }
   if (null != C.execute) return f.Ay.trackWithMetadata(j.HAw.APPLICATION_COMMAND_USED, {
@@ -222,31 +222,31 @@ async function B(e) {
     command_type: C.type,
     location: q(K),
     source: Y
-  }), C.execute(X, M);
+  }), C.execute(Z, M);
   if (C.inputType === x.y$.BUILT_IN || C.inputType === x.y$.BUILT_IN_TEXT || C.inputType === x.y$.BUILT_IN_INTEGRATION) return;
-  let $ = {
+  let J = {
       version: C.version,
       id: null != (r = null == (l = C.rootCommand) ? true : l.id) ? r : C.id,
       guild_id: C.guildId,
       name: null != (s = null == (u = C.rootCommand) ? true : u.name) ? s : C.untranslatedName,
       type: C.type,
-      options: X,
+      options: Z,
       application_command: C.rootCommand
     },
-    J = () => {
+    $ = () => {
       H(P)
     };
-  null != k && ($.target_id = k), null != M.autocomplete ? (0, N.WL)(C, M, $) : (o.A.clearAll(M.channel.id, Q), W({
+  null != k && (J.target_id = k), null != M.autocomplete ? (0, N.WL)(C, M, J) : (o.A.clearAll(M.channel.id, Q), W({
     applicationId: C.applicationId,
-    data: $,
+    data: J,
     context: M,
-    attachments: Z,
+    attachments: X,
     maxSizeCallback: U,
-    onMessageSuccess: J,
+    onMessageSuccess: $,
     analytics_location: q(K),
     sectionName: V,
     source: Y,
-    interactionLifecycleOptions: await F(C, M, $)
+    interactionLifecycleOptions: await F(C, M, J)
   }))
 }
 let H = e => {
@@ -313,7 +313,7 @@ let H = e => {
         applicationId: n,
         channelId: h
       }
-    }), null != a && a.length > 0 ? Z(a, E.nonce, g, s).then(e => {
+    }), null != a && a.length > 0 ? X(a, E.nonce, g, s).then(e => {
       e && K(E, o)
     }) : K(E, o)
   };
@@ -413,7 +413,7 @@ function q(e) {
       return x.Oh.SLASH_UI
   }
 }
-async function X(e, t) {
+async function Z(e, t) {
   let n = 0,
     r = 0;
   for (let a of e) {
@@ -426,7 +426,7 @@ async function X(e, t) {
     largestUploadedFileSize: r
   }
 }
-async function Z(e, t, n, r) {
+async function X(e, t, n, r) {
   let i = (0, S.o2)(n),
     a = e => {
       null == r || r(i, e), m.C1(t, j.t02.ENTITY_TOO_LARGE, k.intl.formatToPlainString(k.t.fxEKdS, {
@@ -436,7 +436,7 @@ async function Z(e, t, n, r) {
     {
       totalSize: s,
       largestUploadedFileSize: o
-    } = await X(e, false);
+    } = await Z(e, false);
   if (o > Math.max(i, M.VP) || s > C.eM) return a(o), false;
   try {
     await (0, d.A)(e)
@@ -448,5 +448,5 @@ async function Z(e, t, n, r) {
   return {
     totalSize: s,
     largestUploadedFileSize: o
-  } = await X(e, true), !e.some(e => e.error === j.t02.ENTITY_TOO_LARGE) && !(s > C.eM) || (a(o), false)
+  } = await Z(e, true), !e.some(e => e.error === j.t02.ENTITY_TOO_LARGE) && !(s > C.eM) || (a(o), false)
 }

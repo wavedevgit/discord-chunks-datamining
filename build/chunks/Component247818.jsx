@@ -88,13 +88,13 @@ function A(e) {
     type: y,
     maxValues: v,
     disabled: A
-  } = t, I = (0, _.c7)(t), [S, T] = i.useState(false), [C, N] = i.useState(false), [R, w] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [P, D] = i.useState(new Set(R.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
+  } = t, I = (0, _.c7)(t), [S, T] = i.useState(false), [C, N] = i.useState(false), [w, R] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [P, D] = i.useState(new Set(w.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
   i.useEffect(() => {
     let e = (null != g ? g : []).map(e => e.value);
     if (e.every(e => x.includes(e)) && x.every(t => e.includes(t))) return;
     L(e);
     let t = new Map(null == g ? true : g.map(e => [e.value, e]));
-    w(t), D(new Set(t.keys())), M(e => e + 1)
+    R(t), D(new Set(t.keys())), M(e => e + 1)
   }, [g, x]);
   let k = (0, f.jc)();
   l()(null != k, "SearchableSelectActionComponent must be rendered inside a ComponentStateContext");
@@ -104,35 +104,35 @@ function A(e) {
     visualState: V,
     isDisabled: F,
     error: B
-  } = k.useComponentState(t, R.size > 0 ? {
+  } = k.useComponentState(t, w.size > 0 ? {
     type: y,
-    selectedOptions: Array.from(R.values())
+    selectedOptions: Array.from(w.values())
   } : true), H = null != k.modal, Y = v > 1, W = V === p.BB.LOADING;
   i.useEffect(() => {
     if ((null == U ? true : U.type) === u.I5.USER_SELECT || (null == U ? true : U.type) === u.I5.ROLE_SELECT || (null == U ? true : U.type) === u.I5.MENTIONABLE_SELECT || (null == U ? true : U.type) === u.I5.CHANNEL_SELECT) {
       let e = new Map(U.selectedOptions.map(e => [e.value, e]));
-      w(e), D(new Set(e.keys()))
+      R(e), D(new Set(e.keys()))
     }
   }, [U]);
   let K = i.useCallback(() => {
     G({
       type: y,
-      selectedOptions: Array.from(R.values())
-    }) && D(new Set(R.keys()))
-  }, [G, y, R]);
+      selectedOptions: Array.from(w.values())
+    }) && D(new Set(w.keys()))
+  }, [G, y, w]);
   i.useEffect(() => {
-    S || C || R.size === P.size && Array.from(R.keys()).every(e => P.has(e)) || K()
-  }, [S, C, P, R, K]);
+    S || C || w.size === P.size && Array.from(w.keys()).every(e => P.has(e)) || K()
+  }, [S, C, P, w, K]);
   let z = e => {
-      S || N(true), w(new Map(e.map(e => [e.value, e])))
+      S || N(true), R(new Map(e.map(e => [e.value, e])))
     },
-    q = e => w(null != e ? new Map([
+    q = e => R(null != e ? new Map([
       [e.value, e]
     ]) : new Map),
-    X = e => new Promise(t => {
+    Z = e => new Promise(t => {
       t(n(e))
     }),
-    Z = (e, t) => {
+    X = (e, t) => {
       let {
         inPill: n
       } = t, i = n ? 16 : 24, s = a(e, i);
@@ -141,40 +141,40 @@ function A(e) {
         iconSize: i
       }) : null
     },
-    Q = 0 === R.size || S,
-    $ = {
+    Q = 0 === w.size || S,
+    J = {
       isProcessing: W,
       isDisabled: A || V === p.BB.DISABLED || F,
       wrapperClassName: s()(h.Lt, {
         [h.zE]: H
       }),
-      options: X,
+      options: Z,
       placeholder: Q ? I : true,
       onClose: () => T(false),
       onOpen: () => T(true),
       onBlur: () => N(false),
       maxVisibleItems: 5,
-      renderOptionPrefix: Z,
+      renderOptionPrefix: X,
       renderOptionLabel: o
     };
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)("div", {
       className: h.kL,
       children: Y ? (0, r.jsx)(c.p, b(E({
-        value: Array.from(R.values()),
+        value: Array.from(w.values()),
         onChange: z,
         multi: true,
         inputClassNames: s()({
           [h.R]: !Q
         }),
         closeOnSelect: false
-      }, $), {
+      }, J), {
         "data-migration-pending": true
       }), j) : (0, r.jsx)(c.p, b(E({
-        value: [...R.values()][0],
+        value: [...w.values()][0],
         onChange: q,
         clearable: true
-      }, $), {
+      }, J), {
         "data-migration-pending": true
       }), j)
     }), null == B || H ? null : (0, r.jsx)(d.S0, b(E({}, (0, d.PS)(B)), {

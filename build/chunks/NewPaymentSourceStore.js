@@ -41,11 +41,11 @@ function N() {
   f = null, c = "", u = null, d = "", p = false, _ = null, h = "US", m = "", g = "", E = "", y = "", b = "", O = "", v = "", A = false, I = null, S = null, T = null, C = null
 }
 
-function R(e) {
+function w(e) {
   m = e.name, h = e.country, E = e.line1, y = e.line2, b = e.city, O = e.postalCode, v = e.state, g = e.email
 }
 
-function w(e) {
+function R(e) {
   let {
     stripePaymentMethod: t
   } = e;
@@ -54,7 +54,7 @@ function w(e) {
   let {
     billingAddressInfo: n
   } = o.uK(f);
-  R(n)
+  w(n)
 }
 
 function P() {
@@ -67,7 +67,7 @@ function D(e) {
     nonce: n,
     billingAddress: r
   } = e;
-  c = t, u = n, R(r), A = h.length > 0
+  c = t, u = n, w(r), A = h.length > 0
 }
 
 function x() {
@@ -190,7 +190,7 @@ class H extends(r = Chunk311907.Ay.Store) {
 }
 l(H, "displayName", "NewPaymentSourceStore");
 let Y = new H(Chunk73153.h, {
-  NEW_PAYMENT_SOURCE_STRIPE_PAYMENT_REQUEST_UPDATE: w,
+  NEW_PAYMENT_SOURCE_STRIPE_PAYMENT_REQUEST_UPDATE: R,
   NEW_PAYMENT_SOURCE_CARD_INFO_UPDATE: j,
   NEW_PAYMENT_SOURCE_ADDRESS_INFO_UPDATE: M,
   BRAINTREE_TOKENIZE_PAYPAL_START: P,

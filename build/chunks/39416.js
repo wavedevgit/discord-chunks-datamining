@@ -4,7 +4,7 @@
 require.r(exports), require.d(exports, {
   default: () => C,
   errors: () => N,
-  load: () => R,
+  load: () => w,
   loadView: () => H
 });
 var Chunk643479 = require("./643479.js"),
@@ -32,17 +32,17 @@ var Chunk643479 = require("./643479.js"),
   Chunk306827 = require("./306827.js"),
   T = require("./264572.js").Buffer;
 let C = {
-    load: R,
+    load: w,
     loadView: H,
     errors: Chunk306827.A
   },
   N = Chunk306827.A;
 
-function R(e, t = {}) {
-  return w(e) ? (t.async = true, P(e, t).then(e => V(e, t))) : U(e) ? (t.async = true, G(e).then(e => V(e, t))) : V(e, t)
+function w(e, t = {}) {
+  return R(e) ? (t.async = true, P(e, t).then(e => V(e, t))) : U(e) ? (t.async = true, G(e).then(e => V(e, t))) : V(e, t)
 }
 
-function w(e) {
+function R(e) {
   return "string" == typeof e
 }
 
@@ -165,8 +165,8 @@ function H(e, {
     C = {},
     N = [],
     {
-      fileType: R,
-      fileDataOffset: w,
+      fileType: w,
+      fileDataOffset: R,
       jfifDataOffset: P,
       tiffHeaderOffset: D,
       iptcDataOffset: x,
@@ -179,9 +179,9 @@ function H(e, {
       vp8xChunkOffset: V,
       gifHeaderOffset: F
     } = o.A.parseAppMarkers(e, n);
-  if (a.A.USE_JPEG && a.A.USE_FILE && Y(w)) {
+  if (a.A.USE_JPEG && a.A.USE_FILE && Y(R)) {
     T = true;
-    let n = u.A.read(e, w);
+    let n = u.A.read(e, R);
     t ? C.file = n : C = (0, r.dP)({}, C, n)
   }
   if (a.A.USE_JPEG && a.A.USE_JFIF && W(P)) {
@@ -199,7 +199,7 @@ function H(e, {
       let e = f.A.read(n["IPTC-NAA"].value, 0, i);
       t ? C.iptc = e : C = (0, r.dP)({}, C, e)
     }
-    if (a.A.USE_TIFF && a.A.USE_XMP && n.ApplicationNotes && !X(L)) {
+    if (a.A.USE_TIFF && a.A.USE_XMP && n.ApplicationNotes && !Z(L)) {
       let e = p.A.read((0, r.YF)(n.ApplicationNotes.value), true, s);
       t ? C.xmp = e : (delete e._raw, C = (0, r.dP)({}, C, e))
     }
@@ -207,7 +207,7 @@ function H(e, {
       let e = _.A.read(n.PhotoshopSettings.value, i);
       t ? C.photoshop = e : C = (0, r.dP)({}, C, e)
     }
-    if (a.A.USE_TIFF && a.A.USE_ICC && n.ICC_Profile && !Z(j)) {
+    if (a.A.USE_TIFF && a.A.USE_ICC && n.ICC_Profile && !X(j)) {
       let e = h.A.read(n.ICC_Profile.value, [{
         offset: 0,
         length: n.ICC_Profile.value.length,
@@ -220,7 +220,7 @@ function H(e, {
       if (Q(n)) {
         let a = m.A.read(e, D, n.MakerNote.__offset, o, i);
         t ? C.makerNotes = a : C = (0, r.dP)({}, C, a)
-      } else if ($(n)) {
+      } else if (J(n)) {
         let a = g.A.read(e, D, n.MakerNote.__offset, i);
         t ? C.makerNotes = a : C = (0, r.dP)({}, C, a)
       }
@@ -232,17 +232,17 @@ function H(e, {
     let n = f.A.read(e, x, i);
     t ? C.iptc = n : C = (0, r.dP)({}, C, n)
   }
-  if (a.A.USE_XMP && X(L)) {
+  if (a.A.USE_XMP && Z(L)) {
     T = true;
     let n = p.A.read(e, L, s);
     t ? C.xmp = n : (delete n._raw, C = (0, r.dP)({}, C, n))
   }
-  if ((a.A.USE_JPEG || a.A.USE_WEBP) && a.A.USE_ICC && Z(j)) {
+  if ((a.A.USE_JPEG || a.A.USE_WEBP) && a.A.USE_ICC && X(j)) {
     T = true;
     let t = h.A.read(e, j, n);
     t instanceof Promise ? N.push(t.then(es)) : es(t)
   }
-  if (a.A.USE_MPF && J(M)) {
+  if (a.A.USE_MPF && $(M)) {
     T = true;
     let n = c.A.read(e, M, i);
     t ? C.mpf = n : C = (0, r.dP)({}, C, n)
@@ -278,7 +278,7 @@ function H(e, {
   let B = I.A.get(C, t);
   B && (t ? C.composite = B : C = (0, r.dP)({}, C, B));
   let ea = (a.A.USE_JPEG || a.A.USE_WEBP) && a.A.USE_EXIF && a.A.USE_THUMBNAIL && A.A.get(e, C.Thumbnail, D);
-  if (ea ? (T = true, C.Thumbnail = ea) : delete C.Thumbnail, R && (t ? (C.file || (C.file = {}), C.file.FileType = R) : C.FileType = R, T = true), !T) throw new S.A.MetadataMissingError;
+  if (ea ? (T = true, C.Thumbnail = ea) : delete C.Thumbnail, w && (t ? (C.file || (C.file = {}), C.file.FileType = w) : C.FileType = w, T = true), !T) throw new S.A.MetadataMissingError;
   if (n) return Promise.all(N).then(() => C);
   return C;
 
@@ -327,11 +327,11 @@ function q(e) {
   return true !== e
 }
 
-function X(e) {
+function Z(e) {
   return Array.isArray(e) && e.length > 0
 }
 
-function Z(e) {
+function X(e) {
   return Array.isArray(e) && e.length > 0
 }
 
@@ -339,12 +339,12 @@ function Q(e) {
   return e.Make && e.Make.value && Array.isArray(e.Make.value) && "Canon" === e.Make.value[0] && e.MakerNote && e.MakerNote.__offset
 }
 
-function $(e) {
+function J(e) {
   let t = "PENTAX ";
   return e.MakerNote.value.length > t.length && (0, r.YF)(e.MakerNote.value.slice(0, t.length)) === t && e.MakerNote.__offset
 }
 
-function J(e) {
+function $(e) {
   return true !== e
 }
 

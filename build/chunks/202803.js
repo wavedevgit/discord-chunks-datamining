@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $r: () => C,
-  AN: () => R,
+  AN: () => w,
   BX: () => b,
   fr: () => y,
   w6: () => O
@@ -87,7 +87,7 @@ async function N(e) {
   });
   return t.ok ? t.body.refreshed_urls[0].refreshed : true
 }
-async function R(e) {
+async function w(e) {
   let t = l.A.toURLSafe(e);
   if (null == t || !A(t)) return e;
   let n = await N(e);

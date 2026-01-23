@@ -101,10 +101,10 @@ function C(e) {
     colorString: I,
     colorStrings: C,
     colorRoleName: N,
-    authorId: R,
-    displayNameStyles: w
-  } = (0, f.Ay)(a), P = (0, p.gn)(g, R, C), D = (0, d.a)({
-    displayNameStyles: w
+    authorId: w,
+    displayNameStyles: R
+  } = (0, f.Ay)(a), P = (0, p.gn)(g, w, C), D = (0, d.a)({
+    displayNameStyles: R
   }), x = S(i, a), L = (0, m.n)(i, a), j = n.showThreadPromptOnReply && x >= A && L, M = () => (0, h.pX)(b.BVt.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function k(e) {

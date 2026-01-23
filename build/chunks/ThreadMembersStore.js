@@ -109,7 +109,7 @@ function I(e) {
   let {
     threads: t
   } = e;
-  t.forEach(R)
+  t.forEach(w)
 }
 
 function S(e) {
@@ -128,7 +128,7 @@ function T(e) {
 
 function C(e) {
   let t = false;
-  for (let n of e.messages) t = R(n.thread) || t;
+  for (let n of e.messages) t = w(n.thread) || t;
   return t
 }
 
@@ -143,15 +143,15 @@ function N(e) {
     } = e;
     r.forEach(e => {
       e.forEach(e => {
-        n = R(e.thread) || n
+        n = w(e.thread) || n
       })
     }), t.forEach(e => {
-      n = R(e) || n
+      n = w(e) || n
     })
   }), n
 }
 
-function R(e) {
+function w(e) {
   if (null != e && !(e.id in f)) {
     let t = c.A.getChannel(e.id);
     if (null != t) return g(t), true
@@ -159,7 +159,7 @@ function R(e) {
   returnfalse
 }
 
-function w(e) {
+function R(e) {
   let t = f[e.id];
   if (null == t) returnfalse;
   null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview), t.memberCount = e.memberCount
@@ -190,7 +190,7 @@ let D = new P(Chunk73153.h, {
   THREAD_CREATE: v,
   THREAD_UPDATE: v,
   THREAD_LIST_SYNC: A,
-  THREAD_MEMBERS_UPDATE: w,
+  THREAD_MEMBERS_UPDATE: R,
   SEARCH_MESSAGES_SUCCESS: N,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: N,
   LOAD_THREADS_SUCCESS: I,

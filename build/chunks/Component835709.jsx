@@ -71,7 +71,7 @@ function q(e) {
   return e
 }
 
-function X(e, t) {
+function Z(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -82,8 +82,8 @@ function X(e, t) {
   return n
 }
 
-function Z(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : X(Object(t)).forEach(function(n) {
+function X(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -95,7 +95,7 @@ function Q(e) {
   })
 }
 
-function $(e) {
+function J(e) {
   let {
     label: t,
     enabled: n,
@@ -114,7 +114,7 @@ function $(e) {
   })
 }
 
-function J(e) {
+function $(e) {
   let {
     disabledSounds: t,
     disableAllSounds: n,
@@ -229,7 +229,7 @@ function J(e) {
           return (0, r.jsxs)(u.BJc, {
             children: [i > 0 && (0, r.jsx)(u.cGx, {
               gap: 8
-            }), (0, r.jsx)($, {
+            }), (0, r.jsx)(J, {
               label: a,
               disabled: n || true === o,
               onChange: e => c(s, e),
@@ -371,7 +371,7 @@ class et extends Chunk64700.PureComponent {
           })]
         }), this.renderTTS(), (0, r.jsx)(ee, {}), (0, r.jsx)(u.cGx, {
           gap: 24
-        }), (0, r.jsx)(J, {
+        }), (0, r.jsx)($, {
           disabledSounds: a,
           disableAllSounds: o,
           notifyMessagesInSelectedChannel: l
@@ -468,28 +468,28 @@ async function ea(e) {
 }
 async function es(e) {
   e(true), c.w.set("turnedOffNewNotifications", true), x.default.track(B.HAw.NOTIFICATION_MIGRATION_OPTOUT, {
-    num_guilds_with_new_setting: R.A.getGuildsArray().filter(e => P.Ay.resolveGuildUnreadSetting(e) === Y.e.ONLY_MENTIONS).length
+    num_guilds_with_new_setting: w.A.getGuildsArray().filter(e => P.Ay.resolveGuildUnreadSetting(e) === Y.e.ONLY_MENTIONS).length
   }), await f.A.setAccountFlag(H.i.USE_NEW_NOTIFICATIONS, false), e(false)
 }
 
 function eo(e) {
   let t = (0, b.kB)();
-  return (0, r.jsx)(et, Z(q({}, e), {
+  return (0, r.jsx)(et, X(q({}, e), {
     focusMode: t
   }))
 }
 
 function el() {
-  let e = (0, o.cf)([w.A], () => ({
-    disableUnreadBadge: w.A.getDisableUnreadBadge(),
-    taskbarFlash: w.A.taskbarFlash,
-    disabledSounds: w.A.getDisabledSounds(),
-    disableAllSounds: w.A.getDisableAllSounds(),
-    desktopType: w.A.getDesktopType(),
-    ttsType: w.A.getTTSType(),
-    notifyMessagesInSelectedChannel: w.A.getNotifyMessagesInSelectedChannel()
+  let e = (0, o.cf)([R.A], () => ({
+    disableUnreadBadge: R.A.getDisableUnreadBadge(),
+    taskbarFlash: R.A.taskbarFlash,
+    disabledSounds: R.A.getDisabledSounds(),
+    disableAllSounds: R.A.getDisableAllSounds(),
+    desktopType: R.A.getDesktopType(),
+    ttsType: R.A.getTTSType(),
+    notifyMessagesInSelectedChannel: R.A.getNotifyMessagesInSelectedChannel()
   }));
-  return (0, r.jsx)(eo, Z(q({}, e), {
+  return (0, r.jsx)(eo, X(q({}, e), {
     afkTimeout: k.cU.useSetting()
   }))
 }

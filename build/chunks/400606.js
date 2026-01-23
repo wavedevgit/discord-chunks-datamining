@@ -39,16 +39,16 @@ function a(e, t) {
     T = parseInt(_, 10) || 0,
     C = parseInt(h, 10) || 0,
     N = parseInt(g, 10) || 0,
-    R = parseInt(m, 10) || 0,
-    w = n - (parseInt(E, 10) || 0),
-    P = n + i + R,
+    w = parseInt(m, 10) || 0,
+    R = n - (parseInt(E, 10) || 0),
+    P = n + i + w,
     D = r - C,
     x = r + a + N,
     L = o + parseInt(u, 10) + T,
     j = O - S,
     M = l + parseInt(c, 10) + A,
     k = v - I;
-  (w > L || P < j) && (w <= o + T ? o = w - parseInt(u, 10) - T : P > O - S && (o += P - O + S)), (D > M || x < k) && (D <= b + A ? l = D - parseInt(c, 10) - A : x > v - I && (l += x - v + I)), e.scrollTo({
+  (R > L || P < j) && (R <= o + T ? o = R - parseInt(u, 10) - T : P > O - S && (o += P - O + S)), (D > M || x < k) && (D <= b + A ? l = D - parseInt(c, 10) - A : x > v - I && (l += x - v + I)), e.scrollTo({
     left: o,
     top: l
   })

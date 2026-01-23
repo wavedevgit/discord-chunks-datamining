@@ -54,16 +54,16 @@ function M(e) {
       }), (0, r.jsx)(C.A, {
         variant: "eyebrow",
         className: P.UP,
-        children: w.intl.string(R.default.ZQakPR)
+        children: R.intl.string(w.default.ZQakPR)
       })]
     }), (0, r.jsx)(C.A, {
       variant: "display-lg",
       className: D.Vy,
-      children: w.intl.string(R.default.OzY5Ns)
+      children: R.intl.string(w.default.OzY5Ns)
     }), (0, r.jsx)(C.A, {
       variant: "heading-xxl/medium",
       className: D.VA,
-      children: w.intl.string(R.default.sEPtGY)
+      children: R.intl.string(w.default.sEPtGY)
     }), (0, r.jsx)(I.e, {
       slide: N.P7.FRIENDS
     })]
@@ -75,7 +75,7 @@ function k() {
     className: D.Qs,
     children: (0, r.jsx)(C.A, {
       variant: "heading-xxl/medium",
-      children: w.intl.string(R.default.d5HUsD)
+      children: R.intl.string(w.default.d5HUsD)
     })
   })
 }
@@ -101,18 +101,18 @@ function U(e) {
       }), (0, r.jsx)(C.A, {
         variant: "eyebrow",
         className: P.UP,
-        children: w.intl.string(R.default.ZQakPR)
+        children: R.intl.string(w.default.ZQakPR)
       })]
     }), (0, r.jsx)(C.A, {
       variant: "display-lg",
       className: s()(D.Vy, D.VA),
-      children: w.intl.string(R.default["+uwOHt"])
+      children: R.intl.string(w.default["+uwOHt"])
     }), (0, r.jsxs)("div", {
       className: D.M1,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(C.A, {
           variant: "eyebrow",
-          children: w.intl.string(R.default.wWKySP)
+          children: R.intl.string(w.default.wWKySP)
         }), (0, r.jsx)(C.A, {
           variant: "heading-xxl/normal",
           className: P.sH,
@@ -121,9 +121,9 @@ function U(e) {
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsx)(C.A, {
           variant: "eyebrow",
-          children: a === d.pJ.HOURS ? w.intl.format(R.default.Xu0QsX, {
+          children: a === d.pJ.HOURS ? R.intl.format(w.default.Xu0QsX, {
             numHours: o
-          }) : w.intl.string(R.default.RmVTph)
+          }) : R.intl.string(w.default.RmVTph)
         }), (0, r.jsx)(C.A, {
           variant: "heading-xxl/normal",
           className: P.sH,
@@ -143,9 +143,9 @@ function G(e) {
   } = e, {
     users: d = [],
     sidekick: _
-  } = (0, u.bG)([O.A], () => O.A.getCheckpointData()), h = (0, i.useContext)(b.P), y = (0, f.rdh)(h.primaryColor).hex(), v = d[1], A = d[0], I = (0, u.bG)([m.default], () => m.default.getCurrentUser()), C = (0, i.useRef)(0), R = (0, i.useRef)(true), w = (0, i.useRef)(null), P = null != (t = (0, E.tx)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E.tx)(v)) ? n : "", G = null != (a = (0, E.tx)(A)) ? a : "", V = 1 === d.length, F = (0, u.bG)([p.A], () => p.A.useReducedMotion);
-  (0, i.useEffect)(() => (s === N.Wf.FRIENDS_LEAVE && (R.current ? l() : F ? (o(), R.current = true) : C.current = setTimeout(() => {
-    o(), R.current = true
+  } = (0, u.bG)([O.A], () => O.A.getCheckpointData()), h = (0, i.useContext)(b.P), y = (0, f.rdh)(h.primaryColor).hex(), v = d[1], A = d[0], I = (0, u.bG)([m.default], () => m.default.getCurrentUser()), C = (0, i.useRef)(0), w = (0, i.useRef)(true), R = (0, i.useRef)(null), P = null != (t = (0, E.tx)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E.tx)(v)) ? n : "", G = null != (a = (0, E.tx)(A)) ? a : "", V = 1 === d.length, F = (0, u.bG)([p.A], () => p.A.useReducedMotion);
+  (0, i.useEffect)(() => (s === N.Wf.FRIENDS_LEAVE && (w.current ? l() : F ? (o(), w.current = true) : C.current = setTimeout(() => {
+    o(), w.current = true
   }, x)), () => clearTimeout(C.current)), [o, l, F, s]);
   let B = (0, i.useMemo)(() => {
       switch (s) {
@@ -163,20 +163,20 @@ function G(e) {
     }, [s, F]),
     H = (0, i.useCallback)(e => null != e ? g.Ay.getUserAvatarURL(e, false, 64, "png") : true, []);
   (0, i.useEffect)(() => () => clearTimeout(C.current), []), (0, i.useEffect)(() => {
-    s !== N.Wf.FRIENDS_LEAVE && (R.current = false)
+    s !== N.Wf.FRIENDS_LEAVE && (w.current = false)
   }, [s]);
   let Y = (0, i.useCallback)(() => {
       let e = setInterval(() => {
         var t, n;
-        let r = null == (t = w.current) ? true : t.getProperties();
-        null != w.current && (null == r ? true : r.twoFriends.value) === V && (null == r ? true : r.reducedMotion.value) === F && (null == (n = w.current) || n.play(), clearInterval(e))
+        let r = null == (t = R.current) ? true : t.getProperties();
+        null != R.current && (null == r ? true : r.twoFriends.value) === V && (null == r ? true : r.reducedMotion.value) === F && (null == (n = R.current) || n.play(), clearInterval(e))
       }, L);
       return () => clearInterval(e)
     }, [F, V]),
     W = (0, i.useMemo)(() => s < N.Wf.FRIENDS_INTRO ? N.Wf.FRIENDS_INTRO : s >= N.Wf.FRIENDS_BEST ? N.Wf.FRIENDS_BEST : s, [s]);
   return (0, r.jsxs)(S.A, {
     children: [(0, r.jsx)(c.m0T, {
-      ref: w,
+      ref: R,
       className: D.lW,
       fit: "contain",
       autoplay: false,
@@ -239,7 +239,7 @@ function V() {
     [T, C] = (0, i.useState)(false),
     x = T || null == p || p.length < 1 || p.length > j,
     L = (0, A.V)(l.A),
-    M = T ? w.intl.string(w.t.fjcCk5) : "";
+    M = T ? R.intl.string(R.t.fjcCk5) : "";
   (0, i.useEffect)(() => {
     null != d.current && (d.current.style.height = "".concat(Math.min(d.current.scrollHeight, 140), "px"))
   }, [p]);
@@ -264,7 +264,7 @@ function V() {
       style: {
         backgroundColor: a
       },
-      children: w.intl.string(R.default["//ZYM/"])
+      children: R.intl.string(w.default["//ZYM/"])
     }), (0, r.jsx)("textarea", {
       ref: d,
       onChange: U,

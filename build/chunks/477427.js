@@ -161,19 +161,19 @@ function A(e) {
       channel_message_notification_settings: a,
       channel_muted_until: v(r.mute_config)
     }
-  }, N = C(A), R = C(S(h, g), b), w = O(N, R, "RETURN_PREVIOUS_WHEN_CHANGED"), P = s.A.getChannel(g), D = null != (t = w("channel_flags")) ? t : 0, x = (null != (n = R.channel_flags) ? n : 0) ^ D, L = 0 === (0, r.iE)(x, f.vv.FAVORITED, f.vv.OPT_IN_ENABLED), j = null != (l = null == (d = o.A.getLastMessage(g)) ? true : d.type) ? l : null;
-  i.Ay.trackWithMetadata(c.HAw.NOTIFICATION_SETTINGS_UPDATED, m(_({}, R, a.A.getStats(h)), {
+  }, N = C(A), w = C(S(h, g), b), R = O(N, w, "RETURN_PREVIOUS_WHEN_CHANGED"), P = s.A.getChannel(g), D = null != (t = R("channel_flags")) ? t : 0, x = (null != (n = w.channel_flags) ? n : 0) ^ D, L = 0 === (0, r.iE)(x, f.vv.FAVORITED, f.vv.OPT_IN_ENABLED), j = null != (l = null == (d = o.A.getLastMessage(g)) ? true : d.type) ? l : null;
+  i.Ay.trackWithMetadata(c.HAw.NOTIFICATION_SETTINGS_UPDATED, m(_({}, w, a.A.getStats(h)), {
     location: T,
     guild_id: h,
     channel_id: g,
     update_type: p,
     label: I,
     parent_id: null != P ? P.parent_id : null,
-    channel_flags_old: w("channel_flags"),
-    channel_is_muted_old: w("channel_is_muted"),
-    channel_muted_until_old: w("channel_muted_until"),
-    channel_is_overridden_old: w("channel_is_overridden"),
-    channel_message_notification_settings_old: w("channel_message_notification_settings"),
+    channel_flags_old: R("channel_flags"),
+    channel_is_muted_old: R("channel_is_muted"),
+    channel_muted_until_old: R("channel_muted_until"),
+    channel_is_overridden_old: R("channel_is_overridden"),
+    channel_message_notification_settings_old: R("channel_message_notification_settings"),
     is_opt_in_only_change: L,
     last_message_type: j,
     application_id: E

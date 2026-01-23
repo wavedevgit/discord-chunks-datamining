@@ -73,7 +73,7 @@ function C() {
 }
 let N = new Map;
 
-function R(e, t) {
+function w(e, t) {
   let n = _.get(e);
   if (n === t) return;
   if (null != n) {
@@ -85,7 +85,7 @@ function R(e, t) {
   null != i ? i.add(e) : N.set(t, new Set([e])), C()
 }
 
-function w(e) {
+function R(e) {
   var t;
   let n = _.get(e);
   null != n && (_.delete(e), null == (t = N.get(n)) || t.delete(e), C())
@@ -98,18 +98,18 @@ function P() {
 
 function D(e) {
   _.clear(), N.clear(), h = {}, m = {}, E.clear(), g.clear(), y.clear(), C(), b = {}, v = {}, e.relationships.forEach(e => {
-    R(e.id, e.type), null != e.nickname && (h[e.id] = e.nickname), null != e.since && (m[e.id] = e.since), e.is_spam_request && g.add(e.id), null != e.origin_application_id && (b[e.id] = e.origin_application_id), e.user_ignored && (E.add(e.id), e.type === l.eA$.PENDING_INCOMING && y.add(e.id))
+    w(e.id, e.type), null != e.nickname && (h[e.id] = e.nickname), null != e.since && (m[e.id] = e.since), e.is_spam_request && g.add(e.id), null != e.origin_application_id && (b[e.id] = e.origin_application_id), e.user_ignored && (E.add(e.id), e.type === l.eA$.PENDING_INCOMING && y.add(e.id))
   }), P()
 }
 
 function x(e) {
-  for (let [t, n] of(_.clear(), N.clear(), e.relationships)) R(t, n);
+  for (let [t, n] of(_.clear(), N.clear(), e.relationships)) w(t, n);
   P()
 }
 
 function L(e) {
   let t = _.get(e.relationship.id);
-  R(e.relationship.id, e.relationship.type), null != e.relationship.nickname && (h = f(u({}, h), {
+  w(e.relationship.id, e.relationship.type), null != e.relationship.nickname && (h = f(u({}, h), {
     [e.relationship.id]: e.relationship.nickname
   })), null != e.relationship.since && (m = f(u({}, m), {
     [e.relationship.id]: e.relationship.since
@@ -122,18 +122,18 @@ function L(e) {
 }
 
 function j(e) {
-  w(e.relationship.id), null != h[e.relationship.id] && (h = u({}, h), delete h[e.relationship.id]), null != m[e.relationship.id] && (m = u({}, m), delete m[e.relationship.id]), null != b[e.relationship.id] && (b = u({}, b), delete b[e.relationship.id]), e.relationship.userIgnored || E.delete(e.relationship.id), y.delete(e.relationship.id), g.delete(e.relationship.id), P()
+  R(e.relationship.id), null != h[e.relationship.id] && (h = u({}, h), delete h[e.relationship.id]), null != m[e.relationship.id] && (m = u({}, m), delete m[e.relationship.id]), null != b[e.relationship.id] && (b = u({}, b), delete b[e.relationship.id]), e.relationship.userIgnored || E.delete(e.relationship.id), y.delete(e.relationship.id), g.delete(e.relationship.id), P()
 }
 
 function M(e) {
   let {
     relationship: t
   } = e;
-  R(t.id, t.type), null == t.since ? delete m[t.id] : m[t.id] = t.since, null == t.nickname ? delete h[t.id] : h[t.id] = t.nickname, t.isSpamRequest ? g.add(t.id) : g.delete(t.id), null != v[t.id] && delete v[t.id], null == t.originApplicationId ? delete b[t.id] : b[t.id] = t.originApplicationId, t.userIgnored ? (E.add(t.id), t.type === l.eA$.PENDING_INCOMING && y.add(t.id)) : (E.delete(t.id), y.delete(t.id)), P()
+  w(t.id, t.type), null == t.since ? delete m[t.id] : m[t.id] = t.since, null == t.nickname ? delete h[t.id] : h[t.id] = t.nickname, t.isSpamRequest ? g.add(t.id) : g.delete(t.id), null != v[t.id] && delete v[t.id], null == t.originApplicationId ? delete b[t.id] : b[t.id] = t.originApplicationId, t.userIgnored ? (E.add(t.id), t.type === l.eA$.PENDING_INCOMING && y.add(t.id)) : (E.delete(t.id), y.delete(t.id)), P()
 }
 
 function k(e) {
-  for (let e of _.keys()) _.get(e) === l.eA$.PENDING_INCOMING && (w(e), g.delete(e), y.delete(e), delete v[e]);
+  for (let e of _.keys()) _.get(e) === l.eA$.PENDING_INCOMING && (R(e), g.delete(e), y.delete(e), delete v[e]);
   P()
 }
 

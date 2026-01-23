@@ -238,7 +238,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   return (0, r.jsx)(c.m, {
     asContainer: true,
     text: m.intl.string(m.t["0PQYk3"]),
@@ -255,7 +255,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   var t;
   let {
     url: n,
@@ -275,7 +275,7 @@ function w(e) {
     formattedBytes: (0, h.up)(_)
   }));
   let I = (null == y ? true : y.slice(0, O).join("\n")) + A,
-    w = (0, f.sJ)(I),
+    R = (0, f.sJ)(I),
     P = l || O < b;
   return (0, r.jsxs)("div", {
     className: s()(E, g.kL),
@@ -286,7 +286,7 @@ function w(e) {
       children: null == o ? (0, r.jsx)(u.y$y, {
         className: g.u1
       }) : (0, r.jsx)(S, {
-        text: w,
+        text: R,
         language: d
       })
     }), (0, r.jsxs)(u.Text, {
@@ -299,7 +299,7 @@ function w(e) {
           setExpanded: c,
           isWholeFile: v,
           numLines: b
-        }), (0, r.jsx)(R, {
+        }), (0, r.jsx)(w, {
           url: n,
           fileName: i,
           fileSize: a,
@@ -390,7 +390,7 @@ let D = Chunk64700.memo(function(e) {
     onClick: c,
     onContextMenu: u,
     className: l
-  }) : (0, r.jsx)(w, {
+  }) : (0, r.jsx)(R, {
     url: t,
     fileName: n,
     fileSize: a,

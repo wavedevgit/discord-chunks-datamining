@@ -94,8 +94,8 @@ function O(e) {
     A(true)
   }, []), S = i.useCallback(() => {
     A(false)
-  }, []), T = "username" === t, C = "dot" === t, N = null != c && null != c.primaryColor && null != c.secondaryColor, R = T && N, {
-    gradientStyle: w,
+  }, []), T = "username" === t, C = "dot" === t, N = null != c && null != c.primaryColor && null != c.secondaryColor, w = T && N, {
+    gradientStyle: R,
     gradientClassname: P,
     gradientGlowClassname: D
   } = (0, f.v5)({
@@ -105,7 +105,7 @@ function O(e) {
   }), x = (0, f.CR)(n), L = {
     className: s()(_.UU, g, b, {
       [_.Xh]: T,
-      [P]: R
+      [P]: w
     }),
     children: x
   }, j = {
@@ -126,12 +126,12 @@ function O(e) {
       className: _.VW,
       style: m({
         color: T && !N && null != a ? a : true
-      }, R ? w : {}),
+      }, w ? R : {}),
       children: [null != y ? (0, r.jsx)(o.EYj, m({
         tag: "span",
         color: "currentColor",
         variant: y
-      }, L)) : (0, r.jsx)("span", m({}, L)), R && (null != y ? (0, r.jsx)(o.EYj, m({
+      }, L)) : (0, r.jsx)("span", m({}, L)), w && (null != y ? (0, r.jsx)(o.EYj, m({
         tag: "span",
         color: "currentColor",
         "aria-hidden": true,

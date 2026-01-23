@@ -38,10 +38,10 @@ let b = 25,
   T = Chunk602137.T.LATEST_ACTIVITY,
   C = [],
   N = 0,
-  R = Chunk392421.n.MATCH_SOME;
+  w = Chunk392421.n.MATCH_SOME;
 
-function w() {
-  O = false, v = true, A = false, I = false, S = null, T = l.T.LATEST_ACTIVITY, r = new Set, N = 0, C = [], R = o.n.MATCH_SOME
+function R() {
+  O = false, v = true, A = false, I = false, S = null, T = l.T.LATEST_ACTIVITY, r = new Set, N = 0, C = [], w = o.n.MATCH_SOME
 }
 
 function P(e, t) {
@@ -49,11 +49,11 @@ function P(e, t) {
 }
 
 function D(e) {
-  e.channelId === S && e.sortOrder === T && (0, c._)(e.tagFilter, r) && e.tagSetting === R || w(), S = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), R = e.tagSetting, O = true, v = false
+  e.channelId === S && e.sortOrder === T && (0, c._)(e.tagFilter, r) && e.tagSetting === w || R(), S = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), w = e.tagSetting, O = true, v = false
 }
 
 function x(e) {
-  if (e.channelId !== S || e.sortOrder !== T || !(0, c._)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
+  if (e.channelId !== S || e.sortOrder !== T || !(0, c._)(e.tagFilter, r) || e.tagSetting !== w) returnfalse;
   let t = e.threads.filter(e => _.A_.has(e.type)).map(e => e.id);
   C = C.concat(t);
   let n = h.A.getChannel(S);
@@ -79,9 +79,9 @@ function j() {
   C = s()(h.A.getAllThreadsForParent(S)).filter(e => e.isArchivedThread()).filter(t => {
     if (0 !== r.size) {
       var i, a;
-      if (R === o.n.MATCH_SOME) {
+      if (w === o.n.MATCH_SOME) {
         if ((null == (i = t.appliedTags) ? true : i.some(e => r.has(e))) !== true) returnfalse
-      } else if (R === o.n.MATCH_ALL) {
+      } else if (w === o.n.MATCH_ALL) {
         for (let e of r.values())
           if ((null == (a = t.appliedTags) ? true : a.includes(e)) !== true) returnfalse
       }
@@ -95,13 +95,13 @@ function j() {
 }
 
 function M(e) {
-  if (e.channelId !== S || e.sortOrder !== T || !(0, c._)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
+  if (e.channelId !== S || e.sortOrder !== T || !(0, c._)(e.tagFilter, r) || e.tagSetting !== w) returnfalse;
   O = false, I = true, v = false
 }
 
 function k(e) {
   if (e.channel.id !== S) returnfalse;
-  w()
+  R()
 }
 
 function U(e) {
@@ -137,15 +137,15 @@ class B extends(i = Chunk311907.Ay.Store) {
     return v
   }
   isLoading(e, t, n, i) {
-    return S === e && T === t && (0, c._)(r, n) && R === i ? O : (w(), false)
+    return S === e && T === t && (0, c._)(r, n) && w === i ? O : (R(), false)
   }
   getThreads(e, t, n, i) {
-    return S === e && T === t && (0, c._)(r, n) && R === i ? C : F
+    return S === e && T === t && (0, c._)(r, n) && w === i ? C : F
   }
 }
 y(B, "displayName", "ArchivedThreadsStore");
 let H = new B(Chunk73153.h, {
-  CONNECTION_OPEN: w,
+  CONNECTION_OPEN: R,
   THREAD_DELETE: G,
   THREAD_UPDATE: V,
   CHANNEL_DELETE: k,

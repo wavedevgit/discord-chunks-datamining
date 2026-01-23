@@ -62,28 +62,28 @@ let v = e => {
     });
     let C = (0, f.Zb)(A),
       N = C ? b.intl.string(y.default.z2vO3h) : b.intl.string(b.t.PWq8TL),
-      R = C ? b.intl.formatToPlainString(y.default.stVlc6, {
+      w = C ? b.intl.formatToPlainString(y.default.stVlc6, {
         cooldownMonths: E.wl
       }) : b.intl.string(b.t.SOC4ML),
-      w = [];
-    return null != h ? w.push({
+      R = [];
+    return null != h ? R.push({
       text: b.intl.string(b.t.zrCzVB),
       onClick: () => a(m.g.CONFIRM_DISCOUNT),
       variant: "secondary",
       icon: c.tvc
-    }) : w.push({
+    }) : R.push({
       text: b.intl.string(b.t.h9tkAK),
       onClick: () => t(),
       variant: "secondary"
-    }), w.push({
+    }), R.push({
       text: T ? b.intl.string(b.t.PfnxqD) : b.intl.string(b.t["3PatSz"]),
       onClick: () => a(m.g.CONFIRM),
       variant: "primary"
     }), (0, r.jsx)(o.Modal, {
       transitionState: e,
       title: N,
-      subtitle: R,
-      actions: w,
+      subtitle: w,
+      actions: R,
       preview: null !== h && (0, r.jsx)(v, {
         churnUserDiscountOffer: h
       }),

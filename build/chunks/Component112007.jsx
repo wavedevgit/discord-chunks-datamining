@@ -49,8 +49,8 @@ function A(e) {
 function I(e) {
   var t, v, I, S;
   let T, C, N, {
-      onTransitionToInviteChannel: R,
-      onAcceptInstantInvite: w,
+      onTransitionToInviteChannel: w,
+      onAcceptInstantInvite: R,
       guild: P,
       invite: D,
       message: x,
@@ -74,21 +74,21 @@ function I(e) {
     {
       analyticsLocations: q
     } = (0, d.Ay)(u.A.INVITE_EMBED),
-    [X, Z] = i.useState(false),
-    Q = i.useCallback(() => Z(false), []),
-    $ = i.useRef(null),
-    J = i.useCallback(() => {
-      Z(true), (0, c.Pq)(z, "show profile", q)
+    [Z, X] = i.useState(false),
+    Q = i.useCallback(() => X(false), []),
+    J = i.useRef(null),
+    $ = i.useCallback(() => {
+      X(true), (0, c.Pq)(z, "show profile", q)
     }, [z, q]),
     ee = i.useCallback(() => {
       let e = "noop";
-      F ? (R(), e = "transition") : (w(), e = "accept"), (0, c.he)({
+      F ? (w(), e = "transition") : (R(), e = "accept"), (0, c.he)({
         invite: D,
         action: e,
         inviter_id: x.author.id,
         invite_message_id: x.id
       }, q)
-    }, [D, x, q, F, R, w]);
+    }, [D, x, q, F, w, R]);
   if (null == P) {
     if (null == D.guild) return (0, r.jsx)(E.A, {});
     (P = m.DY(D.guild)).premiumTier = null != (S = D.guild.premium_tier) ? S : y.TVA.NONE
@@ -106,12 +106,12 @@ function I(e) {
     children: [(0, r.jsx)(f.A, {
       guildId: P.id,
       name: P.name,
-      shouldShow: X,
+      shouldShow: Z,
       onRequestClose: Q,
-      targetElementRef: $,
+      targetElementRef: J,
       children: () => (0, r.jsx)(_.A.GuildName, {
         guild: P,
-        ref: $
+        ref: J
       })
     }), (0, r.jsx)("span", {
       className: O.E3,
@@ -161,7 +161,7 @@ function I(e) {
           guild: P
         }), (0, r.jsx)(_.A.Info, {
           title: C,
-          onClick: J,
+          onClick: $,
           children: T
         })]
       }), (0, r.jsx)("div", {

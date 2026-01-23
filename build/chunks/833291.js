@@ -29,8 +29,8 @@ var Chunk123677 = require("./123677.js"),
   Chunk652215 = require("./652215.js");
 let C = 10,
   N = /^\/([a-zA-Z0-9-]+)$/,
-  R = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
-  w = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?\.?$/,
+  w = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
+  R = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?\.?$/,
   P = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
   D = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/?((about|images|privacy)\/?)?$/,
   x = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
@@ -49,8 +49,8 @@ let C = 10,
   K = Q("//ptb.".concat(Chunk652215.U2_)),
   z = Q("discordapp.com"),
   q = Q("discord.com"),
-  X = [Chunk257120.A.escape(null != (i = B.host) ? i : ""), Chunk257120.A.escape(null != (a = H.host) ? a : ""), Chunk257120.A.escape(null != (s = Y.host) ? s : ""), Chunk257120.A.escape(null != (o = z.host) ? o : ""), Chunk257120.A.escape(null != (l = q.host) ? l : "")].filter(Boolean),
-  Z = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(X.join("|"), ")"), "g");
+  Z = [Chunk257120.A.escape(null != (i = B.host) ? i : ""), Chunk257120.A.escape(null != (a = H.host) ? a : ""), Chunk257120.A.escape(null != (s = Y.host) ? s : ""), Chunk257120.A.escape(null != (o = z.host) ? o : ""), Chunk257120.A.escape(null != (l = q.host) ? l : "")].filter(Boolean),
+  X = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(Z.join("|"), ")"), "g");
 
 function Q(e) {
   if (null == e) return {
@@ -69,10 +69,10 @@ function Q(e) {
     pathPrefix: null
   }
 }
-let $ = e => e.replaceAll(ee, " $2 "),
-  J = null == (d = m().defaultRules.link) || null == (u = d.match) || null == (c = u.regex) ? true : c.source;
-p()(J, "SimpleMarkdown link regex is not set."), "^" === J[0] && (J = J.substring(1));
-let ee = RegExp(J, "g");
+let J = e => e.replaceAll(ee, " $2 "),
+  $ = null == (d = m().defaultRules.link) || null == (u = d.match) || null == (c = u.regex) ? true : c.source;
+p()($, "SimpleMarkdown link regex is not set."), "^" === $[0] && ($ = $.substring(1));
+let ee = RegExp($, "g");
 
 function et(e, t) {
   var n;
@@ -141,7 +141,7 @@ function eo(e) {
   if (null == e) return [];
   let t = new Set,
     n = [],
-    r = $(e = e.replace(Z, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(I.A.URL_REGEX),
+    r = J(e = e.replace(X, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(I.A.URL_REGEX),
     i = e.match(F);
   if (null == (r = (null != r ? r : []).concat(null != i ? i : [])) || 0 === r.length) return [];
   for (let e of r) {
@@ -166,7 +166,7 @@ function eo(e) {
       if (v.A.getInvite(t), e.includes("\\")) continue;
       d(S.I.INVITE, t)
     }(null == c ? true : c.match(N)) != null && d(S.I.TEMPLATE, c.substring(1));
-    let f = null == u ? true : u.match(w);
+    let f = null == u ? true : u.match(R);
     if (null != f) {
       let t = f[1].toUpperCase();
       if (t === S.I.INVITE) {
@@ -174,7 +174,7 @@ function eo(e) {
         let t = (0, b.fB)(f[2], r.search);
         d(S.I.INVITE, t)
       } else d(t, f[2])
-    }(null == u ? true : u.match(R)) != null && d(S.I.CHANNEL_LINK, u.replace("/channels/", ""));
+    }(null == u ? true : u.match(w)) != null && d(S.I.CHANNEL_LINK, u.replace("/channels/", ""));
     let p = ei(r.pathname);
     if (null != p && d(S.I.EVENT, "".concat(p.guildId, "-").concat(p.guildEventId) + (null != p.recurrenceId ? "-".concat(p.recurrenceId) : "")), null != (null == u ? true : u.match(G)) && null != r.query) {
       let e = (0, O._)(r.query),

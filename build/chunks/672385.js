@@ -5,13 +5,13 @@ require.d(exports, {
   R9: () => D,
   Tu: () => P,
   UI: () => C,
-  Wn: () => R,
+  Wn: () => w,
   am: () => L,
   nR: () => k,
   pT: () => M,
   sQ: () => x,
   un: () => j,
-  wd: () => w
+  wd: () => R
 }), require("./321073.js"), require("./896048.js");
 var Chunk58149 = require("./58149.js"),
   Chunk21119 = require("./21119.js"),
@@ -156,7 +156,7 @@ let A = e => {
     application_id: e,
     application_linked: null != e && s.default.getFetchStateForApplication(e) === s.FetchState.FETCHED ? null != s.default.getNewestTokenForApplication(e) : null
   }),
-  R = e => {
+  w = e => {
     let {
       guildId: t,
       channelId: n,
@@ -177,7 +177,7 @@ let A = e => {
       widget_type: s
     }))
   },
-  w = e => {
+  R = e => {
     if (!(0, _.i)({
         location: "UserProfileAnalyticsUtils"
       })) return;
@@ -298,7 +298,7 @@ let A = e => {
       numCharacters: c,
       applicationId: u
     } = e;
-    R(v(b({}, e), {
+    w(v(b({}, e), {
       action: a
     })), d.default.track(g.HAw.USER_PROFILE_EDIT_ACTION, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), N(u)), {
       location_stack: i,
@@ -321,7 +321,7 @@ let A = e => {
       numCharactersCommentary: l,
       isWidgetRemoved: c
     } = e;
-    R(v(b({}, e), {
+    w(v(b({}, e), {
       action: "EDIT_SAVED"
     })), d.default.track(g.HAw.USER_PROFILE_EDIT_SAVED, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e)), {
       location_stack: i,
@@ -342,7 +342,7 @@ let A = e => {
       skuId: o,
       productLines: l
     } = e;
-    R(v(b({}, e), {
+    w(v(b({}, e), {
       action: a
     })), d.default.track(g.HAw.USER_PROFILE_WISHLIST_ACTION, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e)), {
       location_stack: i,

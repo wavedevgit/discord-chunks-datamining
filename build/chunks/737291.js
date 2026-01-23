@@ -167,11 +167,11 @@
   }, m.toExponential = function(e, t) {
     var n, i = this,
       a = i.constructor;
-    return true === e ? n = R(i, true) : (E(e, 0, r), true === t ? t = a.rounding : E(t, 0, 8), n = R(i = C(new a(i), e + 1, t), true, e + 1)), n
+    return true === e ? n = w(i, true) : (E(e, 0, r), true === t ? t = a.rounding : E(t, 0, 8), n = w(i = C(new a(i), e + 1, t), true, e + 1)), n
   }, m.toFixed = function(e, t) {
     var n, i, a = this,
       s = a.constructor;
-    return true === e ? R(a) : (E(e, 0, r), true === t ? t = s.rounding : E(t, 0, 8), n = R((i = C(new s(a), e + v(a) + 1, t)).abs(), false, e + v(i) + 1), a.isneg() && !a.isZero() ? "-" + n : n)
+    return true === e ? w(a) : (E(e, 0, r), true === t ? t = s.rounding : E(t, 0, 8), n = w((i = C(new s(a), e + v(a) + 1, t)).abs(), false, e + v(i) + 1), a.isneg() && !a.isZero() ? "-" + n : n)
   }, m.toInteger = m.toint = function() {
     var e = this,
       t = e.constructor;
@@ -192,7 +192,7 @@
     if (i = f.precision, e.eq(n)) return C(d, i);
     if (u = (t = e.e) >= (r = e.d.length - 1), l = d.s, u) {
       if ((r = m < 0 ? -m : m) <= _) {
-        for (o = new f(n), t = Math.ceil(i / p + 4), a = false; r % 2 && w((o = o.times(d)).d, t), 0 !== (r = c(r / 2));) w((d = d.times(d)).d, t);
+        for (o = new f(n), t = Math.ceil(i / p + 4), a = false; r % 2 && R((o = o.times(d)).d, t), 0 !== (r = c(r / 2));) R((d = d.times(d)).d, t);
         return a = true, e.s < 0 ? new f(n).div(o) : C(o, i)
       }
     } else if (l < 0) throw Error(s + "NaN");
@@ -200,7 +200,7 @@
   }, m.toPrecision = function(e, t) {
     var n, i, a = this,
       s = a.constructor;
-    return true === e ? (n = v(a), i = R(a, n <= s.toExpNeg || n >= s.toExpPos)) : (E(e, 1, r), true === t ? t = s.rounding : E(t, 0, 8), n = v(a = C(new s(a), e, t)), i = R(a, e <= n || n <= s.toExpNeg, e)), i
+    return true === e ? (n = v(a), i = w(a, n <= s.toExpNeg || n >= s.toExpPos)) : (E(e, 1, r), true === t ? t = s.rounding : E(t, 0, 8), n = v(a = C(new s(a), e, t)), i = w(a, e <= n || n <= s.toExpNeg, e)), i
   }, m.toSignificantDigits = m.tosd = function(e, t) {
     var n = this,
       i = n.constructor;
@@ -209,7 +209,7 @@
     var e = this,
       t = v(e),
       n = e.constructor;
-    return R(e, t <= n.toExpNeg || t >= n.toExpPos)
+    return w(e, t <= n.toExpNeg || t >= n.toExpPos)
   };
   var b = function() {
     function e(e, t) {
@@ -235,21 +235,21 @@
       for (; !e[0] && e.length > 1;) e.shift()
     }
     return function(r, i, a, o) {
-      var l, c, u, d, _, h, m, g, E, y, b, O, A, I, S, T, N, R, w = r.constructor,
+      var l, c, u, d, _, h, m, g, E, y, b, O, A, I, S, T, N, w, R = r.constructor,
         P = r.s == i.s ? 1 : false,
         D = r.d,
         x = i.d;
-      if (!r.s) return new w(r);
+      if (!r.s) return new R(r);
       if (!i.s) throw Error(s + "Division by zero");
-      for (u = 0, c = r.e - i.e, N = x.length, S = D.length, g = (m = new w(P)).d = []; x[u] == (D[u] || 0);) ++u;
-      if (x[u] > (D[u] || 0) && --c, (O = null == a ? a = w.precision : o ? a + (v(r) - v(i)) + 1 : a) < 0) return new w(0);
+      for (u = 0, c = r.e - i.e, N = x.length, S = D.length, g = (m = new R(P)).d = []; x[u] == (D[u] || 0);) ++u;
+      if (x[u] > (D[u] || 0) && --c, (O = null == a ? a = R.precision : o ? a + (v(r) - v(i)) + 1 : a) < 0) return new R(0);
       if (O = O / p + 2 | 0, u = 0, 1 == N)
         for (d = 0, x = x[0], O++;
           (u < S || d) && O--; u++) A = d * f + (D[u] || 0), g[u] = A / x | 0, d = A % x | 0;
       else {
         for ((d = f / (x[0] + 1) | 0) > 1 && (x = e(x, d), D = e(D, d), N = x.length, S = D.length), I = N, y = (E = D.slice(0, N)).length; y < N;) E[y++] = 0;
-        (R = x.slice()).unshift(0), T = x[0], x[1] >= f / 2 && ++T;
-        do d = 0, (l = t(x, E, N, y)) < 0 ? (b = E[0], N != y && (b = b * f + (E[1] || 0)), (d = b / T | 0) > 1 ? (d >= f && (d = f - 1), h = (_ = e(x, d)).length, y = E.length, 1 == (l = t(_, E, h, y)) && (d--, n(_, N < h ? R : x, h))) : (0 == d && (l = d = 1), _ = x.slice()), (h = _.length) < y && _.unshift(0), n(E, _, y), false == l && (y = E.length, (l = t(x, E, N, y)) < 1 && (d++, n(E, N < y ? R : x, y))), y = E.length) : 0 === l && (d++, E = [0]), g[u++] = d, l && E[0] ? E[y++] = D[I] || 0 : (E = [D[I]], y = 1); while ((I++ < S || true !== E[0]) && O--)
+        (w = x.slice()).unshift(0), T = x[0], x[1] >= f / 2 && ++T;
+        do d = 0, (l = t(x, E, N, y)) < 0 ? (b = E[0], N != y && (b = b * f + (E[1] || 0)), (d = b / T | 0) > 1 ? (d >= f && (d = f - 1), h = (_ = e(x, d)).length, y = E.length, 1 == (l = t(_, E, h, y)) && (d--, n(_, N < h ? w : x, h))) : (0 == d && (l = d = 1), _ = x.slice()), (h = _.length) < y && _.unshift(0), n(E, _, y), false == l && (y = E.length, (l = t(x, E, N, y)) < 1 && (d++, n(E, N < y ? w : x, y))), y = E.length) : 0 === l && (d++, E = [0]), g[u++] = d, l && E[0] ? E[y++] = D[I] || 0 : (E = [D[I]], y = 1); while ((I++ < S || true !== E[0]) && O--)
       }
       return g[0] || g.shift(), m.e = c, C(m, o ? a + v(m) + 1 : a)
     }
@@ -370,14 +370,14 @@
     return c[0] ? (t.d = c, t.e = r, a ? C(t, m) : t) : new h(0)
   }
 
-  function R(e, t, n) {
+  function w(e, t, n) {
     var r, i = v(e),
       a = y(e.d),
       s = a.length;
     return t ? (n && (r = n - s) > 0 ? a = a.charAt(0) + "." + a.slice(1) + I(r) : s > 1 && (a = a.charAt(0) + "." + a.slice(1)), a = a + (i < 0 ? "e" : "e+") + i) : i < 0 ? (a = "0." + I(-i - 1) + a, n && (r = n - s) > 0 && (a += I(r))) : i >= s ? (a += I(i + 1 - s), n && (r = n - i - 1) > 0 && (a = a + "." + I(r))) : ((r = i + 1) < s && (a = a.slice(0, r) + "." + a.slice(r)), n && (r = n - s) > 0 && (i + 1 === s && (a += "."), a += I(r))), e.s < 0 ? "-" + a : a
   }
 
-  function w(e, t) {
+  function R(e, t) {
     if (e.length > t) return e.length = t, true
   }
 

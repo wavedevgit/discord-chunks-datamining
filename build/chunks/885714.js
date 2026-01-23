@@ -105,21 +105,21 @@ function N() {
   }, []), (0, l.wR)() ? null : e
 }
 "u" > typeof document && I();
-let R = new Set(["checkbox", "radio", "range", "color", "file", "image", "button", "submit", "reset"]);
+let w = new Set(["checkbox", "radio", "range", "color", "file", "image", "button", "submit", "reset"]);
 
-function w(e, t, n) {
+function R(e, t, n) {
   let r = (0, s.TW)(null == n ? true : n.target),
     i = "u" > typeof window ? (0, s.mD)(null == n ? true : n.target).HTMLInputElement : HTMLInputElement,
     a = "u" > typeof window ? (0, s.mD)(null == n ? true : n.target).HTMLTextAreaElement : HTMLTextAreaElement,
     o = "u" > typeof window ? (0, s.mD)(null == n ? true : n.target).HTMLElement : HTMLElement,
     l = "u" > typeof window ? (0, s.mD)(null == n ? true : n.target).KeyboardEvent : KeyboardEvent;
-  return !((e = e || r.activeElement instanceof i && !R.has(r.activeElement.type) || r.activeElement instanceof a || r.activeElement instanceof o && r.activeElement.isContentEditable) && "keyboard" === t && n instanceof l && !_[n.key])
+  return !((e = e || r.activeElement instanceof i && !w.has(r.activeElement.type) || r.activeElement instanceof a || r.activeElement instanceof o && r.activeElement.isContentEditable) && "keyboard" === t && n instanceof l && !_[n.key])
 }
 
 function P(e, t, n) {
   v(), (0, o.useEffect)(() => {
     let t = (t, r) => {
-      w(!!(null == n ? true : n.isTextInput), t, r) && e(S())
+      R(!!(null == n ? true : n.isTextInput), t, r) && e(S())
     };
     return u.add(t), () => {
       u.delete(t)

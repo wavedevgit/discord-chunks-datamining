@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 207869, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => L
@@ -29,7 +29,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk703653 = require("./703653.js");
 
-function T(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -156,7 +156,7 @@ let I = e => {
       targetElementRef: i,
       onGameSheetOpened: s,
       onGameSheetClosed: o,
-      children: e => (0, a.jsx)(r.$nd, T({
+      children: e => (0, a.jsx)(r.$nd, E({
         variant: "secondary",
         fullWidth: true,
         size: "sm",
@@ -200,7 +200,7 @@ let I = e => {
         analyticsSource: o.A.QUEST_HOME_PAGE
       }) : x()
     }, [d, n.config, null == (t = n.userStatus) ? true : t.claimedAt, x]);
-    return (0, a.jsx)(r.$nd, N(T({
+    return (0, a.jsx)(r.$nd, N(E({
       fullWidth: true,
       onClick: g,
       text: null != s ? s : O.intl.string(O.t.cfY4PE)
@@ -246,7 +246,7 @@ let I = e => {
       quest: d,
       sourceQuestContent: n
     })), null == j ? null : (0, a.jsx)("div", {
-      className: E.lO,
+      className: T.lO,
       children: j
     })
   };
@@ -254,7 +254,7 @@ let I = e => {
 function L(e) {
   let t = l.useRef(null);
   return (0, a.jsxs)("div", {
-    className: E.oG,
+    className: T.oG,
     ref: t,
     children: [e.showBackButton && (0, a.jsx)(r.K0, {
       size: "sm",
@@ -262,7 +262,7 @@ function L(e) {
       onClick: e.onBack,
       icon: s.n2b,
       variant: "secondary"
-    }), (0, a.jsx)(M, N(T({}, e), {
+    }), (0, a.jsx)(M, N(E({}, e), {
       popoutTargetElementRef: t
     }))]
   })

@@ -82,15 +82,15 @@ function C(e) {
     modalKey: E,
     onAction: C,
     onClose: N,
-    entry: R
+    entry: w
   } = e, {
-    resetInteraction: w,
+    resetInteraction: R,
     setInteractionToast: P
   } = (0, g.Pq)(), {
     primaryColor: D
   } = (0, y.E)(), [x, L] = i.useState(""), [j, M] = i.useState((0, u.x7)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
-    e.key === O.dh.ESCAPE && (e.stopPropagation(), w())
-  }, [w]);
+    e.key === O.dh.ESCAPE && (e.stopPropagation(), R())
+  }, [R]);
   i.useEffect(() => {
     null == p || p(null == U ? true : U.current)
   }, [U, p]);
@@ -117,7 +117,7 @@ function C(e) {
         location: "UserProfileReplyPopout",
         openChannel: false,
         whenReady: false,
-        entry: R
+        entry: w
       })
     } catch (e) {}
     P(b.AQ.REPLY)
@@ -162,7 +162,7 @@ function C(e) {
             shouldRefocus: false
           };
           try {
-            return await V(n), w(), null == N || N(), {
+            return await V(n), R(), null == N || N(), {
               shouldClear: true,
               shouldRefocus: false
             }

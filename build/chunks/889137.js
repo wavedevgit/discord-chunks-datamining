@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   P: () => Q,
-  YW: () => J
+  YW: () => $
 });
 let r = Symbol.for("@ts-pattern/matcher"),
   i = Symbol.for("@ts-pattern/isVariadic"),
@@ -226,8 +226,8 @@ let I = f(y(function(e) {
   }),
   C = T(y(v)),
   N = (e, t) => y(n => O(n) && e <= n && t >= n),
-  R = e => y(t => O(t) && t < e),
-  w = e => y(t => O(t) && t > e),
+  w = e => y(t => O(t) && t < e),
+  R = e => y(t => O(t) && t > e),
   P = e => y(t => O(t) && t <= e),
   D = e => y(t => O(t) && t >= e),
   x = () => y(e => O(e) && Number.isInteger(e)),
@@ -236,8 +236,8 @@ let I = f(y(function(e) {
   M = () => y(e => O(e) && e < 0),
   k = e => Object.assign(f(e), {
     between: (t, n) => k(g(e, N(t, n))),
-    lt: t => k(g(e, R(t))),
-    gt: t => k(g(e, w(t))),
+    lt: t => k(g(e, w(t))),
+    gt: t => k(g(e, R(t))),
     lte: t => k(g(e, P(t))),
     gte: t => k(g(e, D(t))),
     int: () => k(g(e, x())),
@@ -266,10 +266,10 @@ let I = f(y(function(e) {
   q = f(y(function(e) {
     return "boolean" == typeof e
   })),
-  X = f(y(function(e) {
+  Z = f(y(function(e) {
     return "symbol" == typeof e
   })),
-  Z = f(y(function(e) {
+  X = f(y(function(e) {
     return null == e
   }));
 var Q = {
@@ -387,8 +387,8 @@ var Q = {
   _: S,
   string: C,
   between: N,
-  lt: R,
-  gt: w,
+  lt: w,
+  gt: R,
   lte: P,
   gte: D,
   int: x,
@@ -405,8 +405,8 @@ var Q = {
   negativeBigInt: W,
   bigint: z,
   boolean: q,
-  symbol: X,
-  nullish: Z,
+  symbol: Z,
+  nullish: X,
   instanceOf: function(e) {
     return f(y(function(e) {
       return t => t instanceof e
@@ -416,13 +416,13 @@ var Q = {
     return f(y(d(e)))
   }
 };
-let $ = {
+let J = {
   matched: false,
   value: true
 };
 
-function J(e) {
-  return new ee(e, $)
+function $(e) {
+  return new ee(e, J)
 }
 class ee {
   constructor(e, t) {
@@ -442,7 +442,7 @@ class ee {
       c = r.some(e => l(e, this.input, o)) && (!t || t(this.input)) ? {
         matched: true,
         value: n(i ? a in s ? s[a] : s : this.input, this.input)
-      } : $;
+      } : J;
     return new ee(this.input, c)
   }
   when(e, t) {
@@ -451,7 +451,7 @@ class ee {
     return new ee(this.input, n ? {
       matched: true,
       value: t(this.input, this.input)
-    } : $)
+    } : J)
   }
   otherwise(e) {
     return this.state.matched ? this.state.value : e(this.input)

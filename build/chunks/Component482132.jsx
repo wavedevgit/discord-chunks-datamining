@@ -67,8 +67,8 @@ function E(e) {
       setReadySlideId: T,
       premiumBrandRefreshBackgroundClassName: C,
       selectedSkuId: N,
-      isDisplayingWowMomentConfirmation: R,
-      isGift: w
+      isDisplayingWowMomentConfirmation: w,
+      isGift: R
     } = (0, d.P5)(),
     P = null != N && N in p.WN,
     D = v.find(e => e.key === O);
@@ -86,7 +86,7 @@ function E(e) {
       m = 392;
       break;
     case f.pn.PLAN_SELECT:
-      P && !w && (m = "100%")
+      P && !R && (m = "100%")
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [null == (n = null == D || null == (h = D.options) ? true : h.renderHeader) || n ? E : null, D.renderStep(b), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
@@ -101,7 +101,7 @@ function E(e) {
           centered: false,
           onSlideReady: e => T(e),
           width: m,
-          overflow: R ? "visible" : true,
+          overflow: w ? "visible" : true,
           shouldUseMediaQueriesForSizing: true,
           children: v.filter(e => null != e.key).map(e => (0, r.jsx)(u.q7S, {
             id: e.key,

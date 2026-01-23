@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   J7: () => A,
-  Nx: () => w,
+  Nx: () => R,
   OE: () => D,
   SA: () => I,
   Tf: () => T,
   b3: () => P,
-  b6: () => R,
+  b6: () => w,
   e7: () => S,
   gt: () => N,
   lL: () => C
@@ -140,7 +140,7 @@ function N(e, t) {
   })
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   let r = e.getGuildId();
   i()(null != r, "Channel cannot be guildless");
   let s = e.permissionOverwrites[r],
@@ -152,7 +152,7 @@ function R(e, t, n) {
     }, s);
   n ? (c.allow = a.WQ(c.allow, t), c.deny = a.TF(c.deny, t)) : (c.allow = a.TF(c.allow, t), c.deny = a.WQ(c.deny, t)), o.A.updatePermissionOverwrite(e.id, c)
 }
-async function w(e, t, n, r) {
+async function R(e, t, n, r) {
   if ("" === t) return;
   d.A.getVoiceChannelId() !== e.id && (0, _.cy)(e);
   let i = await (0, m.yG)(e.id, t, n, r);

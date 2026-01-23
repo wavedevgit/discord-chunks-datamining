@@ -229,7 +229,7 @@ function q(e) {
     })
   })
 }
-class X extends W {
+class Z extends W {
   renderContent() {
     let {
       className: e
@@ -242,7 +242,7 @@ class X extends W {
     super(...e), M(this, "layoutClass", j.fF), M(this, "selectable", false)
   }
 }
-class Z extends W {
+class X extends W {
   renderContent() {
     var e;
     let {
@@ -262,10 +262,10 @@ class Z extends W {
         })
       }), (0, i.jsx)(P.oC, {
         children: (0, i.jsx)(P.dB, {
-          children: null != (e = null != n ? n : o) ? e : w.Ay.getName(t)
+          children: null != (e = null != n ? n : o) ? e : R.Ay.getName(t)
         })
       }), (0, i.jsxs)(P.Aq, {
-        children: [w.Ay.getUserTag(t, {
+        children: [R.Ay.getUserTag(t, {
           mode: "username",
           identifiable: a ? "never" : "always"
         }), a || t.hasUniqueUsername() ? null : (0, i.jsxs)("span", {
@@ -288,7 +288,7 @@ class Q extends W {
       guildId: l,
       selected: c,
       layout: u = "horizontal"
-    } = this.props, d = null == l ? C.A.getNickname(t.id) : null, p = null != (e = null != n ? n : d) ? e : w.Ay.getName(t);
+    } = this.props, d = null == l ? C.A.getNickname(t.id) : null, p = null != (e = null != n ? n : d) ? e : R.Ay.getName(t);
     return (0, i.jsxs)(P.Mr, {
       className: o()({
         [j.DH]: "vertical-suggestion" === u
@@ -314,7 +314,7 @@ class Q extends W {
           })
         }), (0, i.jsx)(P.Aq, {
           children: null == r || r === p.toLocaleLowerCase() || r === t.username.toLocaleLowerCase() ? (0, i.jsxs)(i.Fragment, {
-            children: [w.Ay.getUserTag(t, {
+            children: [R.Ay.getUserTag(t, {
               mode: "username",
               identifiable: s ? "never" : "always"
             }), s || t.hasUniqueUsername() ? null : (0, i.jsxs)("span", {
@@ -336,7 +336,7 @@ class Q extends W {
     super(...e), M(this, "layoutClass", j.xF)
   }
 }
-class $ extends W {
+class J extends W {
   renderContent() {
     let {
       role: e,
@@ -379,7 +379,7 @@ class $ extends W {
     })
   }
 }
-class J extends W {
+class $ extends W {
   renderContent() {
     let {
       timestamp: e,
@@ -476,7 +476,7 @@ class er extends W {
     } = this.props, r = S.Sf.getSetting(), a = null != e.id || "" !== e.url ? (0, i.jsx)("img", {
       alt: "",
       className: j.mp,
-      src: null != e.id ? R.Ay.getEmojiURL({
+      src: null != e.id ? w.Ay.getEmojiURL({
         id: e.id,
         animated: e.animated && r,
         size: x.L4
@@ -570,7 +570,7 @@ class el extends W {
     } = this.props, t = (0, i.jsx)("img", {
       alt: "",
       className: j.Kk,
-      src: R.Ay.getApplicationIconURL({
+      src: w.Ay.getApplicationIconURL({
         id: e.id,
         icon: e.icon,
         size: 32
@@ -612,5 +612,5 @@ class ec extends(r = Chunk64700.PureComponent) {
     }) : null
   }
 }
-M(ec, "Generic", K), M(ec, "Loading", z), M(ec, "Title", q), M(ec, "Divider", X), M(ec, "User", Z), M(ec, "UserSuggestion", Q), M(ec, "Role", $), M(ec, "Channel", ee), M(ec, "Command", et), M(ec, "NewCommand", en), M(ec, "Emoji", er), M(ec, "GIFIntegration", ea), M(ec, "Sticker", ei), M(ec, "EmojiUpsell", es), M(ec, "Soundmoji", eo), M(ec, "Game", el), M(ec, "Timestamp", J);
+M(ec, "Generic", K), M(ec, "Loading", z), M(ec, "Title", q), M(ec, "Divider", Z), M(ec, "User", X), M(ec, "UserSuggestion", Q), M(ec, "Role", J), M(ec, "Channel", ee), M(ec, "Command", et), M(ec, "NewCommand", en), M(ec, "Emoji", er), M(ec, "GIFIntegration", ea), M(ec, "Sticker", ei), M(ec, "EmojiUpsell", es), M(ec, "Soundmoji", eo), M(ec, "Game", el), M(ec, "Timestamp", $);
 let eu = ec

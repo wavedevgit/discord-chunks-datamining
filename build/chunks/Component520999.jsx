@@ -69,7 +69,7 @@ function I(e) {
     currentDeviceId: I,
     responsiveBackgroundOptions: S,
     className: T
-  } = e, C = (0, a.bG)([l.default], () => l.default.getCurrentUser()), [N, R] = i.useState(null), w = (0, _.A)(), P = c.Ay.canUseCustomBackgrounds(C);
+  } = e, C = (0, a.bG)([l.default], () => l.default.getCurrentUser()), [N, w] = i.useState(null), R = (0, _.A)(), P = c.Ay.canUseCustomBackgrounds(C);
   i.useEffect(() => {
     (0, u.HR)()
   }, []);
@@ -77,7 +77,7 @@ function I(e) {
     x = i.useMemo(() => Object.values(D).filter(e => e.type === m.yZ.BACKGROUND), [D]),
     L = (0, o.p)(),
     j = {
-      isVideoBackgroundSupported: w,
+      isVideoBackgroundSupported: R,
       onSelectBackgroundOption: v,
       selectedBackgroundOption: b
     },
@@ -99,9 +99,9 @@ function I(e) {
       return new Promise(async r => {
         try {
           let r = await (0, u.F9)(e, m.yZ.BACKGROUND);
-          U(r), (0, f.D1)(r, t.type === E.a.MP4, n), R(null)
+          U(r), (0, f.D1)(r, t.type === E.a.MP4, n), w(null)
         } catch (e) {
-          R(e.message)
+          w(e.message)
         }
         r()
       })
@@ -109,8 +109,8 @@ function I(e) {
     U = e => {
       v(e), (0, p.S1)(e, I, {
         location: L.location
-      }).then(() => R(null)).catch(() => {
-        R(y.intl.string(y.t.ejrSLe)), (0, p.S1)(null, I, {
+      }).then(() => w(null)).catch(() => {
+        w(y.intl.string(y.t.ejrSLe)), (0, p.S1)(null, I, {
           location: L.location
         })
       })
@@ -128,7 +128,7 @@ function I(e) {
         }))
       })
     };
-  return w ? (0, r.jsx)("div", {
+  return R ? (0, r.jsx)("div", {
     className: T,
     children: (0, r.jsx)(s.D0$, {
       label: y.intl.string(y.t.lZTUPs),

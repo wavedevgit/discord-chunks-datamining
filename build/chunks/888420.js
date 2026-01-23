@@ -47,23 +47,23 @@ var Chunk557939 = require("./557939.js"),
   K = Chunk739305.TYPED_ARRAY_TAG,
   z = Chunk739305.TypedArray,
   q = Chunk739305.TypedArrayPrototype,
-  X = Chunk739305.isTypedArray,
-  Z = "BYTES_PER_ELEMENT",
+  Z = Chunk739305.isTypedArray,
+  X = "BYTES_PER_ELEMENT",
   Q = "Wrong length",
-  $ = function(e, t) {
-    w(e, t, {
+  J = function(e, t) {
+    R(e, t, {
       configurable: true,
       get: function() {
         return M(this)[t]
       }
     })
   },
-  J = function(e) {
+  $ = function(e) {
     var t;
     return I(H, e) || "ArrayBuffer" === (t = b(e)) || "SharedArrayBuffer" === t
   },
   ee = function(e, t) {
-    return X(e) && !v(t) && t in e && p(+t) && t >= 0
+    return Z(e) && !v(t) && t in e && p(+t) && t >= 0
   },
   et = function(e, t) {
     return ee(e, t = E(t)) ? d(2, e[t]) : V(e, t)
@@ -71,7 +71,7 @@ var Chunk557939 = require("./557939.js"),
   en = function(e, t, n) {
     return ee(e, t = E(t)) && O(n) && y(n, "value") && !y(n, "get") && !y(n, "set") && !n.configurable && (!y(n, "writable") || n.writable) && (!y(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : G(e, t, n)
   };
-Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, $(q, "buffer"), $(q, "byteOffset"), $(q, "byteLength"), $(q, "length")), Chunk557939({
+Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, J(q, "buffer"), J(q, "byteOffset"), J(q, "byteLength"), J(q, "length")), Chunk557939({
   target: "Object",
   stat: true,
   forced: !W
@@ -95,7 +95,7 @@ Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, $(q, "buffer"), $(q, 
       var i = M(e);
       i.view[d](t * s + i.byteOffset, n ? g(r) : r, true)
     },
-    w = function(e, t) {
+    R = function(e, t) {
       G(e, t, {
         get: function() {
           return v(this, t)
@@ -108,7 +108,7 @@ Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, $(q, "buffer"), $(q, 
     };
   W ? o && (E = t(function(e, t, n, r) {
     return u(e, y), j(function() {
-      return O(t) ? J(t) ? true !== r ? new p(t, m(n, s), r) : true !== n ? new p(t, m(n, s)) : new p(t) : X(t) ? x(E, t) : a(C, E, t) : new p(h(t))
+      return O(t) ? $(t) ? true !== r ? new p(t, m(n, s), r) : true !== n ? new p(t, m(n, s)) : new p(t) : Z(t) ? x(E, t) : a(C, E, t) : new p(h(t))
     }(), e, E)
   }), S && S(E, z), N(T(p), function(e) {
     e in E || f(E, e, p[e])
@@ -117,14 +117,14 @@ Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, $(q, "buffer"), $(q, 
     var i, o, l, c = 0,
       d = 0;
     if (O(t))
-      if (J(t)) {
+      if ($(t)) {
         i = t, d = m(n, s);
         var f = t.byteLength;
         if (true === r) {
           if (f % s || (o = f - d) < 0) throw new F(Q)
         } else if ((o = _(r) * s) + d > f) throw new F(Q);
         l = o / s
-      } else if (X(t)) return x(E, t);
+      } else if (Z(t)) return x(E, t);
     else return a(C, E, t);
     else i = new B(o = (l = h(t)) * s);
     for (k(e, {
@@ -133,7 +133,7 @@ Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, $(q, "buffer"), $(q, 
         byteLength: o,
         length: l,
         view: new Y(i)
-      }); c < l;) w(e, c++)
+      }); c < l;) R(e, c++)
   }), S && S(E, z), y = E.prototype = A(q)), y.constructor !== E && f(y, "constructor", E), U(y).TypedArrayConstructor = E, K && f(y, K, l);
   var P = E !== p;
   b[l] = E, r({
@@ -141,5 +141,5 @@ Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, $(q, "buffer"), $(q, 
     constructor: true,
     forced: P,
     sham: !W
-  }, b), Z in E || f(E, Z, s), Z in y || f(y, Z, s), R(l)
+  }, b), X in E || f(E, X, s), X in y || f(y, X, s), w(l)
 }) : module.exports = function() {}

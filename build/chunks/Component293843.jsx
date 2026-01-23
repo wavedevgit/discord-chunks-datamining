@@ -31,7 +31,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk822563 = require("./822563.js"),
   Chunk447515 = require("./447515.js"),
   Chunk844636 = require("./844636.js");
-let w = 2.8,
+let R = 2.8,
   P = 2,
   D = 1e3,
   x = 500,
@@ -41,7 +41,7 @@ function j(e) {
   let {
     onNextStep: t
   } = e, n = (0, c.bG)([h.A], () => h.A.getFetchState() === h.$.ERROR || null == h.A.getCheckpointData().messages), [a, j] = i.useState(true), M = i.useRef(null), k = i.useContext(_.P), U = (0, u.rdh)(k.primaryColor).hex(), G = (0, c.bG)([f.A], () => f.A.useReducedMotion), V = i.useCallback(e => {
-    e.currentTarget.currentTime >= w && j(false)
+    e.currentTarget.currentTime >= R && j(false)
   }, []), F = (0, u.zhh)({
     from: {
       opacity: 0
@@ -83,7 +83,7 @@ function j(e) {
       loop: true,
       className: C.CT,
       children: (0, r.jsx)("source", {
-        src: R.A,
+        src: w.A,
         type: "video/webm"
       })
     }), (0, r.jsx)(b.A, {
@@ -143,7 +143,7 @@ function j(e) {
         loop: true,
         className: C.RS,
         children: (0, r.jsx)("source", {
-          src: R.A,
+          src: w.A,
           type: "video/webm"
         })
       })

@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 231207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => M
@@ -79,7 +79,7 @@ function D(e) {
   }) : null
 }
 let M = function() {
-  let [e, t] = l.useState(I.pe.TIER_2), [n, j] = l.useState(null), _ = (0, o.yK)([T.A], () => T.A.getGuildsArray()), [M] = (0, o.yK)([N.A], () => [N.A.getPremiumSubscription()]), L = _.map(e => ({
+  let [e, t] = l.useState(I.pe.TIER_2), [n, j] = l.useState(null), _ = (0, o.yK)([E.A], () => E.A.getGuildsArray()), [M] = (0, o.yK)([N.A], () => [N.A.getPremiumSubscription()]), L = _.map(e => ({
     id: e.id,
     value: e,
     label: e.name
@@ -89,8 +89,8 @@ let M = function() {
   }), H = "true" !== V.gift && null != M, [K, z] = l.useState(L.length > 0 ? L[0].value : null), {
     analyticsLocations: q
   } = (0, g.Ay)(x.A.PAYMENT_FLOW_TEST_PAGE), [Q, Y] = l.useState(""), [J, X] = l.useState(w.dJq), {
-    balance: Z,
-    isFetching: $,
+    balance: $,
+    isFetching: Z,
     error: ee
   } = (0, O.W)(), {
     isSubmitting: et,
@@ -281,7 +281,7 @@ let M = function() {
             children: [(0, a.jsx)(u.Text, {
               variant: "text-sm/normal",
               children: "Virtual Currency Balance:"
-            }), $ ? (0, a.jsx)("div", {
+            }), Z ? (0, a.jsx)("div", {
               className: k.wG,
               children: (0, a.jsx)(u.y$y, {
                 type: u.tVU.SPINNING_CIRCLE
@@ -291,9 +291,9 @@ let M = function() {
               children: [null !== ee && (0, a.jsxs)(u.Text, {
                 variant: "text-sm/normal",
                 children: ["Error fetching Virtual Currency Balance: ", ee.message]
-              }), (0, a.jsx)(E.Gy, {
-                balance: null != Z ? Z : 0,
-                balanceWidgetMode: E.k7.SELECTED
+              }), (0, a.jsx)(T.Gy, {
+                balance: null != $ ? $ : 0,
+                balanceWidgetMode: T.k7.SELECTED
               })]
             })]
           }), (0, a.jsx)(u.ksK, {

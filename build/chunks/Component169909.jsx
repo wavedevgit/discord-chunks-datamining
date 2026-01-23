@@ -4,7 +4,7 @@
 require.d(exports, {
   Gt: () => eu,
   Ps: () => ec,
-  r0: () => $,
+  r0: () => J,
   wW: () => ed
 }), require("./228524.js"), require("./938796.js"), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
@@ -84,13 +84,13 @@ function q(e, t) {
   return n
 }
 
-function X(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function Z(e, t) {
+function X(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -109,11 +109,11 @@ function Q(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-var $ = function(e) {
+var J = function(e) {
   return e.ICON = "icon", e.ROW = "row", e.NO_BANNER = "no_banner", e.MEDIUM_BANNER = "medium_banner", e.LARGE_BANNER = "large_banner", e
 }({});
 
-function J(e) {
+function $(e) {
   var t;
   let {
     application: n,
@@ -266,7 +266,7 @@ function en(e) {
     fakeAppIconURL: Y
   }), [t]), y = i.useMemo(() => null == E ? null : (0, M.SD)(E), [E]), b = (0, I.Ay)(m, ""), [O, A] = i.useState(false), S = i.useCallback(() => {
     true === o && A(true)
-  }, [o]), T = _ || (0, L.NO)(t), C = "large_banner" === n || "medium_banner" === n, N = i.useCallback(() => A(false), []), R = (0, l.bG)([h.A, w.A], () => h.A.inDevModeForApplication(t.id) || w.A.inTestModeForApplication(t.id), [t.id]), P = (0, L.fl)(t);
+  }, [o]), T = _ || (0, L.NO)(t), C = "large_banner" === n || "medium_banner" === n, N = i.useCallback(() => A(false), []), w = (0, l.bG)([h.A, R.A], () => h.A.inDevModeForApplication(t.id) || R.A.inTestModeForApplication(t.id), [t.id]), P = (0, L.fl)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [C ? (0, r.jsxs)("div", {
       onMouseEnter: S,
@@ -286,7 +286,7 @@ function en(e) {
           disableFadeIn: c,
           overrideImageUrl: p
         })
-      }), R || T || P !== f.Hr.NONE ? (0, r.jsxs)("div", {
+      }), w || T || P !== f.Hr.NONE ? (0, r.jsxs)("div", {
         className: H.YN,
         children: [T && (0, r.jsx)("div", {
           className: H.Ag,
@@ -295,7 +295,7 @@ function en(e) {
             color: "text-strong",
             children: B.intl.string(B.t["/eVltv"])
           })
-        }), R && (0, r.jsx)(er, {}), P !== f.Hr.NONE && (0, r.jsx)(v.A, {
+        }), w && (0, r.jsx)(er, {}), P !== f.Hr.NONE && (0, r.jsx)(v.A, {
           labelType: P
         })]
       }) : null, (0, r.jsx)("div", {
@@ -360,7 +360,7 @@ function er() {
 function ei(e) {
   let {
     application: t
-  } = e, n = R.default.getCurrentUser();
+  } = e, n = w.default.getCurrentUser();
   if (!(null == n ? true : n.isStaff()) && !(null == n ? true : n.isStaffPersonal())) return null;
   let i = (0, L.Cx)(t);
   if (null == i || !(0, L.$B)(t)) return null;
@@ -529,7 +529,7 @@ function eu(e) {
   let {
     onClickAppCard: t
   } = ec(e);
-  return (0, r.jsx)(J, X(z({}, e), {
+  return (0, r.jsx)($, Z(z({}, e), {
     onClick: t
   }))
 }
@@ -542,7 +542,7 @@ function ed(e) {
     sectionName: s,
     isOneClickCTA: o,
     fetchesApplication: c = true
-  } = e, d = Z(e, ["context", "application", "location", "sectionName", "isOneClickCTA", "fetchesApplication"]);
+  } = e, d = X(e, ["context", "application", "location", "sectionName", "isOneClickCTA", "fetchesApplication"]);
   if (!(0, L.$B)(n)) throw Error("PerformActivityActionAppCard was passed the Built-in App, which is not supported.");
   let f = i.useId(),
     [p, _, h] = (0, l.yK)([m.Ay, T.A], () => [m.Ay.isLaunchingActivity(), m.Ay.getLaunchState(n.id, "channel" === t.type ? t.channel.id : true), T.A.isLaunchingFrame(n.id)]),
@@ -560,7 +560,7 @@ function ed(e) {
       launchingComponentId: f,
       fetchesApplication: c
     });
-  return b === y.o6.START || b === y.o6.JOIN ? o ? (0, r.jsx)(J, X(z({}, d), {
+  return b === y.o6.START || b === y.o6.JOIN ? o ? (0, r.jsx)($, Z(z({}, d), {
     sectionName: s,
     application: n,
     onClick: E,
@@ -570,12 +570,12 @@ function ed(e) {
       type: u.y$y.Type.PULSING_ELLIPSIS,
       className: H.u1
     }) : null
-  })) : (0, r.jsx)(eu, X(z({}, d), {
+  })) : (0, r.jsx)(eu, Z(z({}, d), {
     context: t,
     sectionName: s,
     application: n,
     location: a
-  })) : (0, r.jsx)(J, X(z({}, d), {
+  })) : (0, r.jsx)($, Z(z({}, d), {
     sectionName: s,
     application: n,
     onClick: e => {

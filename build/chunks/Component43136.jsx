@@ -2,7 +2,7 @@
 /** chunk id: 43136, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R,
+  A: () => w,
   C: () => N
 }), require("./896048.js"), require("./228524.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
@@ -90,7 +90,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   var t, n;
   let {
     guild: a,
@@ -103,10 +103,10 @@ function R(e) {
     ExpandableTextContainer: h
   } = (0, b.e)(), m = () => (0, A.A)({
     guildId: o
-  }), g = (null != (t = null == s || null == (n = s.description) ? true : n.trim().length) ? t : 0) > 0, [E, y] = i.useState(1), R = (0, c.A)("(max-width: 1439px)"), {
-    selectedTab: w,
+  }), g = (null != (t = null == s || null == (n = s.description) ? true : n.trim().length) ? t : 0) > 0, [E, y] = i.useState(1), w = (0, c.A)("(max-width: 1439px)"), {
+    selectedTab: R,
     isPhantomPreview: P
-  } = (0, O.k)(), D = w === v.B.GUILD_PRODUCTS_PREVIEW ? I.intl.string(I.t["LvXy/H"]) : I.intl.string(I.t.XyqKh8), x = e => {
+  } = (0, O.k)(), D = R === v.B.GUILD_PRODUCTS_PREVIEW ? I.intl.string(I.t["LvXy/H"]) : I.intl.string(I.t.XyqKh8), x = e => {
     null != e && e.clientHeight > 30 && y(2)
   };
 
@@ -120,7 +120,7 @@ function R(e) {
   }
   let j = g ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h, {
-      lineClamp: R || 2 === E ? 2 : 3,
+      lineClamp: w || 2 === E ? 2 : 3,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-default",

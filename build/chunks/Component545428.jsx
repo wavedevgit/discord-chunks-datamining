@@ -100,8 +100,8 @@ function b(e) {
     onBlur: T,
     pulse: C,
     sparkle: N,
-    notification: R,
-    "aria-label": w,
+    notification: w,
+    "aria-label": R,
     "aria-expanded": P,
     "aria-haspopup": D,
     "aria-controls": x,
@@ -112,7 +112,7 @@ function b(e) {
     let {
       component: t
     } = e;
-    return null != R ? (0, r.jsxs)("div", {
+    return null != w ? (0, r.jsxs)("div", {
       className: f.IO,
       children: [(0, r.jsx)(c.Ay, {
         className: f.SA,
@@ -127,7 +127,7 @@ function b(e) {
   };
   return (0, r.jsxs)(l.DUT, {
     innerRef: t,
-    "aria-label": w,
+    "aria-label": R,
     "aria-expanded": P,
     "aria-haspopup": D,
     "aria-controls": x,

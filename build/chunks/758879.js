@@ -114,17 +114,17 @@ true === y && (y = E), y(function(e, t) {
       s = f(d(S, n), n),
       l = s.pathname,
       N = l && l.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1"),
-      R = N ? (0, r.B6)(n.pathname, {
+      w = N ? (0, r.B6)(n.pathname, {
         path: N,
         exact: h,
         sensitive: v,
         strict: A
       }) : null,
-      w = !!(m ? m(R, n) : R),
-      P = w ? b(_, u) : _,
-      D = w ? (0, o.A)({}, I, {}, p) : I,
+      R = !!(m ? m(w, n) : w),
+      P = R ? b(_, u) : _,
+      D = R ? (0, o.A)({}, I, {}, p) : I,
       x = (0, o.A)({
-        "aria-current": w && i || null,
+        "aria-current": R && i || null,
         className: P,
         style: D,
         to: s

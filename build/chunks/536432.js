@@ -2,8 +2,8 @@
 /** chunk id: 536432, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ak: () => w,
-  Au: () => R,
+  Ak: () => R,
+  Au: () => w,
   Dv: () => j,
   Ir: () => N,
   ND: () => U,
@@ -52,7 +52,7 @@ function N(e, t, n) {
   return (m.Ay.canUseSoundboardEverywhere(e) || t.guildId === (null == n ? true : n.guild_id) || t.guildId === A.mV) && C(t, n) && (!r || t.available)
 }
 
-function R(e) {
+function w(e) {
   let {
     mute: t,
     suppress: n
@@ -62,7 +62,7 @@ function R(e) {
   return !t && !n
 }
 
-function w(e, t, n, r) {
+function R(e, t, n, r) {
   (0, E.qP)(t, e, b.Zm.SOUNDBOARD), (0, d.Wv)(t, e, __OVERLAY__, n, r)
 }
 
@@ -83,7 +83,7 @@ async function x(e) {
   let i = r.guildId === A.XH ? A.mV : r.guildId,
     a = y.A.getSound(i, r.soundId);
   if (null != a) {
-    if (!C(a, n) || !N(t, a, n, true) || !R(n)) return null;
+    if (!C(a, n) || !N(t, a, n, true) || !w(n)) return null;
     P(a, n.id)
   }
 }

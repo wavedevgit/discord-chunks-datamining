@@ -6,7 +6,7 @@ require.d(exports, {
   EW: () => D,
   Er: () => I,
   FY: () => j,
-  Go: () => R,
+  Go: () => w,
   Gr: () => b,
   Iz: () => A,
   Oz: () => S,
@@ -17,7 +17,7 @@ require.d(exports, {
   e$: () => N,
   gi: () => y,
   w5: () => x,
-  xe: () => w
+  xe: () => R
 });
 var Chunk311907 = require("./311907.js"),
   Chunk562465 = require("./562465.js"),
@@ -163,14 +163,14 @@ function N(e) {
   }), E(h.Ae.ANIMATED_AVATAR)
 }
 
-function R(e) {
+function w(e) {
   a.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION",
     avatarDecoration: e
   }), E(h.Ae.AVATAR_DECORATION)
 }
 
-function w(e) {
+function R(e) {
   a.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER",
     banner: e

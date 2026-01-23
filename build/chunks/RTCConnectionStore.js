@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  A: () => Z
+  A: () => X
 }), require("./65821.js"), require("./896048.js");
 var a, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -149,7 +149,7 @@ function N(e, t) {
   }), v = new c.A(f.default.getId(), t), b = null, A = false, I = false, a
 }
 
-function R() {
+function w() {
   var e;
   if (null == r) returnfalse;
   b = {
@@ -166,12 +166,12 @@ function R() {
   }), r.destroy(), r = null, v = null, T = false
 }
 
-function w(e) {
-  return i = e.sessionId, y = null, O = null, R(), false
+function R(e) {
+  return i = e.sessionId, y = null, O = null, w(), false
 }
 
 function P() {
-  i = null, y = null, O = null, R()
+  i = null, y = null, O = null, w()
 }
 
 function D(e) {
@@ -181,7 +181,7 @@ function D(e) {
   return t.reduce((e, t) => {
     var n, a, s;
     if (null == v || v.updateVoiceStates(t.userId, t.channelId), A = A || (null != (n = null == v ? true : v.getStats().max_voice_state_count) ? n : 0) > 1, f.default.getId() !== t.userId) return e;
-    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? R() : (r.setNextChannelId(t.channelId), T = true, C = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || R(), null != t.channelId && (y = null, O = null, r = N(t.guildId, t.channelId), A = (null != (a = null == v ? true : v.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.default.getAwaitingRemoteSessionInfo() || null == u.default.getRemoteSessionId()) && (y = r.channelId), R());
+    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? w() : (r.setNextChannelId(t.channelId), T = true, C = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || w(), null != t.channelId && (y = null, O = null, r = N(t.guildId, t.channelId), A = (null != (a = null == v ? true : v.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.default.getAwaitingRemoteSessionInfo() || null == u.default.getRemoteSessionId()) && (y = r.channelId), w());
     else {
       if (t.sessionId !== i || null == t.channelId) return e;
       y = null, O = null, r = N(t.guildId, t.channelId), A = (null != (s = null == v ? true : v.getStats().max_voice_state_count) ? s : 0) > 1
@@ -208,7 +208,7 @@ function M(e) {
     guild: t
   } = e;
   if (null == r || r.guildId !== t.id) returnfalse;
-  R()
+  w()
 }
 
 function k(e) {
@@ -216,7 +216,7 @@ function k(e) {
     channelId: t
   } = e;
   if (null == r || r.channelId !== t) returnfalse;
-  R()
+  w()
 }
 
 function U(e) {
@@ -224,7 +224,7 @@ function U(e) {
     channel: t
   } = e;
   if (null == r || r.channelId !== t.id) returnfalse;
-  R()
+  w()
 }
 
 function G(e) {
@@ -232,7 +232,7 @@ function G(e) {
     channelId: t,
     joinVoiceId: n
   } = e;
-  null != r && (null == t || r.channelId !== t) && R(), C = n
+  null != r && (null == t || r.channelId !== t) && w(), C = n
 }
 
 function V(e) {
@@ -388,8 +388,8 @@ class q extends(a = Chunk311907.Ay.Store) {
   }
 }
 m(q, "displayName", "RTCConnectionStore");
-let X = new q(Chunk73153.h, __OVERLAY__ ? {} : {
-  CONNECTION_OPEN: w,
+let Z = new q(Chunk73153.h, __OVERLAY__ ? {} : {
+  CONNECTION_OPEN: R,
   CONNECTION_CLOSED: P,
   RTC_CONNECTION_STATE: F,
   RTC_CONNECTION_PING: H,
@@ -419,7 +419,7 @@ Promise.resolve().then(require.bind(require, 954571)).then(e => {
     addExtraAnalyticsDecorator: t
   } = e;
   t(e => {
-    e.client_rtc_state = X.getState()
+    e.client_rtc_state = Z.getState()
   })
 });
-let Z = X
+let X = Z

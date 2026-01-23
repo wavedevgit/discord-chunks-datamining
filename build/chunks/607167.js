@@ -27,18 +27,18 @@ var Chunk860511 = require("./860511.js"),
   T = Chunk814113.PROPER,
   C = Chunk814113.CONFIGURABLE,
   N = "ArrayBuffer",
-  R = "DataView",
-  w = "prototype",
+  w = "DataView",
+  R = "prototype",
   P = "Wrong length",
   D = "Wrong index",
   x = Chunk883972.getterFor(N),
-  L = Chunk883972.getterFor(R),
+  L = Chunk883972.getterFor(w),
   j = Chunk883972.set,
   M = Chunk860511[N],
   k = M,
-  U = k && k[w],
-  G = Chunk860511[R],
-  V = G && G[w],
+  U = k && k[R],
+  G = Chunk860511[w],
+  V = G && G[R],
   F = Object.prototype,
   B = Chunk860511.Array,
   H = Chunk860511.RangeError,
@@ -49,23 +49,23 @@ var Chunk860511 = require("./860511.js"),
   q = function(e) {
     return [255 & e]
   },
-  X = function(e) {
+  Z = function(e) {
     return [255 & e, e >> 8 & 255]
   },
-  Z = function(e) {
+  X = function(e) {
     return [255 & e, e >> 8 & 255, e >> 16 & 255, e >> 24 & 255]
   },
   Q = function(e) {
     return e[3] << 24 | e[2] << 16 | e[1] << 8 | e[0]
   },
-  $ = function(e) {
+  J = function(e) {
     return K(m(e), 23, 4)
   },
-  J = function(e) {
+  $ = function(e) {
     return K(e, 52, 8)
   },
   ee = function(e, t, n) {
-    c(e[w], t, {
+    c(e[R], t, {
       configurable: true,
       get: function() {
         return n(this)[t]
@@ -100,7 +100,7 @@ if (Chunk593858) {
     return new M, new M(1.5), new M(NaN), 1 !== M.length || er && !C
   }) ? ((k = function(e) {
     return f(this, U), v(new M(h(e)), this, k)
-  })[w] = U, U.constructor = k, Chunk517771(k, M)) : er && C && Chunk706938(M, "name", N), Chunk458680 && Chunk42756(V) !== F && Chunk458680(V, F);
+  })[R] = U, U.constructor = k, Chunk517771(k, M)) : er && C && Chunk706938(M, "name", N), Chunk458680 && Chunk42756(V) !== F && Chunk458680(V, F);
   var ei = new G(new k(2)),
     ea = Chunk410323(V.setInt8);
   ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && Chunk673570(V, {
@@ -121,7 +121,7 @@ if (Chunk593858) {
     bytes: Y(B(t), 0),
     byteLength: t
   }), a || (this.byteLength = t, this.detached = false)
-})[w], V = (G = function(e, t, n) {
+})[R], V = (G = function(e, t, n) {
   f(this, V), f(e, U);
   var r = x(e),
     i = r.byteLength,
@@ -129,13 +129,13 @@ if (Chunk593858) {
   if (s < 0 || s > i) throw new H("Wrong offset");
   if (n = true === n ? i - s : _(n), s + n > i) throw new H(P);
   j(this, {
-    type: R,
+    type: w,
     buffer: e,
     byteLength: n,
     byteOffset: s,
     bytes: r.bytes
   }), a || (this.buffer = e, this.byteLength = n, this.byteOffset = s)
-})[w], Chunk257943 && (ee(k, "byteLength", x), ee(G, "buffer", L), ee(G, "byteLength", L), ee(G, "byteOffset", L)), Chunk673570(V, {
+})[R], Chunk257943 && (ee(k, "byteLength", x), ee(G, "buffer", L), ee(G, "byteLength", L), ee(G, "byteOffset", L)), Chunk673570(V, {
   getInt8: function(e) {
     return et(this, 1, e)[0] << 24 >> 24
   },
@@ -169,25 +169,25 @@ if (Chunk593858) {
     en(this, 1, e, q, t)
   },
   setInt16: function(e, t) {
-    en(this, 2, e, X, t, arguments.length > 2 && arguments[2])
+    en(this, 2, e, Z, t, arguments.length > 2 && arguments[2])
   },
   setUint16: function(e, t) {
-    en(this, 2, e, X, t, arguments.length > 2 && arguments[2])
+    en(this, 2, e, Z, t, arguments.length > 2 && arguments[2])
   },
   setInt32: function(e, t) {
-    en(this, 4, e, Z, t, arguments.length > 2 && arguments[2])
+    en(this, 4, e, X, t, arguments.length > 2 && arguments[2])
   },
   setUint32: function(e, t) {
-    en(this, 4, e, Z, t, arguments.length > 2 && arguments[2])
+    en(this, 4, e, X, t, arguments.length > 2 && arguments[2])
   },
   setFloat32: function(e, t) {
-    en(this, 4, e, $, t, arguments.length > 2 && arguments[2])
+    en(this, 4, e, J, t, arguments.length > 2 && arguments[2])
   },
   setFloat64: function(e, t) {
-    en(this, 8, e, J, t, arguments.length > 2 && arguments[2])
+    en(this, 8, e, $, t, arguments.length > 2 && arguments[2])
   }
 });
-Chunk174168(k, N), Chunk174168(G, R), module.exports = {
+Chunk174168(k, N), Chunk174168(G, w), module.exports = {
   ArrayBuffer: k,
   DataView: G
 }

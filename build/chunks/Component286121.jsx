@@ -29,7 +29,7 @@ let l = {
         showDisabledItems: m,
         showColoredItems: g,
         dangerItemColor: E
-      } = e, [y, b] = i.useState(true), [O, v] = i.useState(false), [A, I] = i.useState("text"), [S, T] = i.useState("cozy"), [C, N] = i.useState(true), R = e => (0, r.jsxs)(s.W1t, {
+      } = e, [y, b] = i.useState(true), [O, v] = i.useState(false), [A, I] = i.useState("text"), [S, T] = i.useState("cozy"), [C, N] = i.useState(true), w = e => (0, r.jsxs)(s.W1t, {
         navId: "menu-story",
         "aria-label": "Story Menu",
         variant: t,
@@ -176,7 +176,7 @@ let l = {
           icon: p ? s.ucK : true,
           action: () => {}
         })]
-      }), w = i.useRef(null);
+      }), R = i.useRef(null);
       return (0, r.jsxs)("div", {
         className: o.k,
         children: [!C && (0, r.jsx)(a.$nd, {
@@ -187,15 +187,15 @@ let l = {
             let {
               closePopout: t
             } = e;
-            return R(t)
+            return w(t)
           },
           position: "bottom",
           align: "center",
           shouldShow: true,
-          targetElementRef: w,
+          targetElementRef: R,
           onRequestClose: () => N(false),
           children: () => (0, r.jsx)("div", {
-            ref: w,
+            ref: R,
             style: {
               width: 1,
               height: 1,

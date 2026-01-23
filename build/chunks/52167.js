@@ -89,13 +89,13 @@ let k = (e, t, n) => (0, i.Mw)(e) ? t : n,
       customAppIcons: {
         title: p.intl.string(p.t.OuItFi),
         description: p.intl.string(p.t.mPyrE6),
-        imageSource: R,
+        imageSource: w,
         imageClassName: t.customAppIconImage
       },
       emoji: {
         title: p.intl.string(p.t["R2IV/Q"]),
         description: p.intl.string(p.t.R5Xag2),
-        imageSource: w,
+        imageSource: R,
         imageClassName: t.emojiImage
       },
       guildProfile: {

@@ -45,14 +45,14 @@ require.d(exports, {
   Tc: () => v,
   Tf: () => m,
   ZU: () => f,
-  _m: () => w,
+  _m: () => R,
   ep: () => s,
   eu: () => I,
   gJ: () => O,
   mq: () => i,
   sQ: () => b,
   sb: () => c,
-  v9: () => R,
+  v9: () => w,
   vq: () => l,
   zk: () => a
 });
@@ -137,19 +137,19 @@ function N(e) {
   return I(t) ? e.ownerDocument ? e.ownerDocument.body : e.body : c(t) && f(t) ? t : N(t)
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   var r;
   true === t && (t = []), true === n && (n = true);
   let i = N(e),
     s = i === (null == (r = e.ownerDocument) ? true : r.body),
     o = a(i);
   if (s) {
-    let e = w(o);
-    return t.concat(o, o.visualViewport || [], f(i) ? i : [], e && n ? R(e) : [])
+    let e = R(o);
+    return t.concat(o, o.visualViewport || [], f(i) ? i : [], e && n ? w(e) : [])
   }
-  return t.concat(i, R(i, [], n))
+  return t.concat(i, w(i, [], n))
 }
 
-function w(e) {
+function R(e) {
   return e.parent && Object.getPrototypeOf(e.parent) ? e.frameElement : null
 }

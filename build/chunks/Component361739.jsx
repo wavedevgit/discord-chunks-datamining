@@ -2,7 +2,7 @@
 /** chunk id: 361739, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => w,
+  Ay: () => R,
   Fq: () => A,
   Py: () => C,
   gJ: () => T,
@@ -139,7 +139,7 @@ let N = Object.freeze({
   scrollableCustom: "contentColumnCustom"
 });
 
-function R(e) {
+function w(e) {
   let {
     isMobile: t,
     mobileSidebarOpen: n,
@@ -168,7 +168,7 @@ function R(e) {
     })
   })
 }
-let w = function(e) {
+let R = function(e) {
   let {
     sidebar: t,
     content: n,
@@ -199,7 +199,7 @@ let w = function(e) {
       to: 0
     })
   }, [s, S, v]);
-  let w = (0, i.jsx)(R, {
+  let R = (0, i.jsx)(w, {
     isMobile: u.Fr,
     mobileSidebarOpen: y,
     closeAction: _
@@ -222,12 +222,12 @@ let w = function(e) {
         }),
         children: [e && (0, i.jsx)(c._, {
           onClick: b
-        }), w]
+        }), R]
       });
     if ("custom" === g) return (0, i.jsxs)(d.F, {
       component: "div",
       className: m.contentRegion,
-      children: [t, n, !u.Fr && w, P()]
+      children: [t, n, !u.Fr && R, P()]
     });
     if ("scrollableCustom" === g) return (0, i.jsxs)(d.F, {
       component: "div",
@@ -245,7 +245,7 @@ let w = function(e) {
               children: n
             })
           })
-        }), !u.Fr && w]
+        }), !u.Fr && R]
       }), P()]
     });
     let r = N[null != g ? g : "default"];
@@ -275,7 +275,7 @@ let w = function(e) {
                 children: n
               })
             })
-          }), !u.Fr && w]
+          }), !u.Fr && R]
         })]
       }), P()]
     })
@@ -298,7 +298,7 @@ let w = function(e) {
             }),
             children: [u.Fr && (0, i.jsx)("div", {
               className: m.mobileSidebarHeader,
-              children: w
+              children: R
             }), t]
           })
         })

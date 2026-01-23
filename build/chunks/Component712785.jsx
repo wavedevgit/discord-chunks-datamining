@@ -2,7 +2,7 @@
 /** chunk id: 712785, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => X
+  A: () => Z
 });
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
@@ -86,22 +86,22 @@ function q(e, t) {
   }), e
 }
 
-function X(e) {
+function Z(e) {
   let {
     user: t,
     currentUser: n,
     activity: i,
     application: W,
     voiceGuild: z,
-    voiceChannel: X,
-    className: Z,
+    voiceChannel: Z,
+    className: X,
     onClose: Q,
-    appContext: $
-  } = e, J = (0, y.GV)(), ee = (0, y.GV)(), {
+    appContext: J
+  } = e, $ = (0, y.GV)(), ee = (0, y.GV)(), {
     analyticsLocations: et
   } = (0, _.Ay)(p.A.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     themeType: en
-  } = (0, R.E)(), er = (0, E.A)({
+  } = (0, w.E)(), er = (0, E.A)({
     activity: i,
     user: t
   }), ei = (0, S.A)({
@@ -124,7 +124,7 @@ function X(e) {
     application: W,
     entry: er,
     onClose: Q
-  }), ed = () => i.type !== V.$pd.HANG_STATUS || t.id !== n.id || null == X ? null : (0, r.jsx)(o.m, {
+  }), ed = () => i.type !== V.$pd.HANG_STATUS || t.id !== n.id || null == Z ? null : (0, r.jsx)(o.m, {
     text: H.intl.string(H.t.QSOBaq),
     children: (0, r.jsx)(l.mir, {
       size: "xxs"
@@ -160,8 +160,8 @@ function X(e) {
   }, ep = () => i.type === V.$pd.HANG_STATUS ? (0, r.jsx)(j.Q, {
     variant: "heading-sm/semibold",
     text: (0, b.Au)(t.id, i),
-    id: J
-  }) : (0, f.A)(i) && null != X ? (0, r.jsxs)("div", {
+    id: $
+  }) : (0, f.A)(i) && null != Z ? (0, r.jsxs)("div", {
     className: Y.FH,
     children: [(0, r.jsx)(l.HKD, {
       size: "xxs",
@@ -169,24 +169,24 @@ function X(e) {
       className: Y.Ow
     }), (0, r.jsx)(j.Q, {
       variant: "heading-sm/semibold",
-      text: X.name,
-      id: J
+      text: Z.name,
+      id: $
     })]
   }) : (0, d.A)(i) || (0, I.Cy)(i) ? (0, r.jsx)(j.Q, {
     variant: "heading-sm/semibold",
     text: i.name,
-    id: J
+    id: $
   }) : null != i.details ? (0, r.jsx)(m.O, {
     href: i.details_url,
     children: (0, r.jsx)(j.Q, {
       variant: "heading-sm/semibold",
       text: i.details,
-      id: J
+      id: $
     })
   }) : (0, r.jsx)(j.Q, {
     variant: "heading-sm/semibold",
     text: i.name,
-    id: J
+    id: $
   }), e_ = () => {
     if (i.type === V.$pd.HANG_STATUS) return null;
     if ((0, f.A)(i) && null != z) return (0, r.jsx)(j.A, {
@@ -303,13 +303,13 @@ function X(e) {
       }), eu(e)
     },
     children: [ep(), e_(), eh()]
-  }), ey = () => null == z || null == X ? null : (0, r.jsx)(M.A, {
+  }), ey = () => null == z || null == Z ? null : (0, r.jsx)(M.A, {
     user: t,
     guild: z,
-    channel: X,
+    channel: Z,
     onAction: ei,
     onClose: Q
-  }), eb = () => (0, r.jsx)(w.A, {
+  }), eb = () => (0, r.jsx)(R.A, {
     containerClassName: Y.o1,
     activity: i,
     user: t,
@@ -321,10 +321,10 @@ function X(e) {
     value: et,
     children: (0, r.jsxs)(x.A, {
       ref: ea,
-      className: a()(Y.Nr, Z),
+      className: a()(Y.Nr, X),
       onAction: ei,
       onClose: Q,
-      "aria-labelledby": eo ? "".concat(ee, " ").concat(J) : J,
+      "aria-labelledby": eo ? "".concat(ee, " ").concat($) : $,
       children: [(0, r.jsx)(L.A, q(K({
         textId: ee,
         tags: ed()
@@ -335,7 +335,7 @@ function X(e) {
           activity: i,
           entry: er,
           onClose: Q,
-          appContext: $
+          appContext: J
         })
       })), (0, r.jsx)(v.A, {
         applicationId: null == W ? true : W.id,

@@ -153,8 +153,8 @@ class A extends(r = Chunk64700.PureComponent) {
       mini: T,
       hideBubble: C,
       defaultValue: N,
-      orientation: R,
-      onValueRender: w,
+      orientation: w,
+      onValueRender: R,
       renderMarker: P,
       getAriaValueText: D,
       barClassName: x,
@@ -193,7 +193,7 @@ class A extends(r = Chunk64700.PureComponent) {
           })
         }, t)
       }) : null,
-      W = null != w ? w(t) : "".concat(B.toFixed(0), "%"),
+      W = null != R ? R(t) : "".concat(B.toFixed(0), "%"),
       K = null != (e = null == D ? true : D(t)) ? e : true;
     return (0, i.jsx)(f.D0$, y(g({}, F), {
       children: e => (0, i.jsx)(I, {
@@ -216,7 +216,7 @@ class A extends(r = Chunk64700.PureComponent) {
               "aria-valuemax": m,
               "aria-valuenow": t,
               "aria-disabled": E,
-              "aria-orientation": R,
+              "aria-orientation": w,
               "aria-hidden": k,
               "aria-label": U,
               "aria-labelledby": G,

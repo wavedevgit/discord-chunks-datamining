@@ -87,8 +87,8 @@ function T(e, t) {
 }
 let C = new Chunk626584.A("ReadyPayloadUtils"),
   N = {},
-  R = null,
-  w = {};
+  w = null,
+  R = {};
 
 function P(e, t) {
   var n;
@@ -96,9 +96,9 @@ function P(e, t) {
     guilds: a,
     merged_members: s,
     merged_presences: o
-  } = r, l = S(r, ["guilds", "merged_members", "merged_presences"]), [c] = i, u = k(w, null == o ? true : o.friends), d = null != (n = null == a ? true : a.map((e, t) => {
-    let n = k(w, null == o ? true : o.guilds[t]),
-      r = k(w, null == s ? true : s[t]);
+  } = r, l = S(r, ["guilds", "merged_members", "merged_presences"]), [c] = i, u = k(R, null == o ? true : o.friends), d = null != (n = null == a ? true : a.map((e, t) => {
+    let n = k(R, null == o ? true : o.guilds[t]),
+      r = k(R, null == s ? true : s[t]);
     return I(v({}, e), {
       unavailable: true === e.voice_states,
       presences: n,
@@ -112,7 +112,7 @@ function P(e, t) {
     voice_states: e.voice_states,
     unavailable: false
   }));
-  return null != f && d.push(f), w = {}, I(v({}, l), {
+  return null != f && d.push(f), R = {}, I(v({}, l), {
     presences: u,
     guilds: d
   })
@@ -140,12 +140,12 @@ function x(e, t, n) {
     guilds: f
   } = a, p = S(a, ["users", "relationships", "private_channels", "merged_members", "guilds"]), [_, ...h] = o, [m] = h;
   G(m);
-  let g = k(w = s().keyBy(l, e => e.id), c);
+  let g = k(R = s().keyBy(l, e => e.id), c);
   null == u || u.forEach(e => {
     let t = e.recipient_ids;
-    null != t && (e.recipients = t.map(e => (i()(null != w[e], "Missing user in compressed ready payload"), w[e]))), delete e.recipient_ids
+    null != t && (e.recipients = t.map(e => (i()(null != R[e], "Missing user in compressed ready payload"), R[e]))), delete e.recipient_ids
   });
-  let E = null != (r = null == f ? true : f.map((e, t) => true === e.unavailable ? e : (e.members = k(w, null == d ? true : d[t]), F(e)))) ? r : [],
+  let E = null != (r = null == f ? true : f.map((e, t) => true === e.unavailable ? e : (e.members = k(R, null == d ? true : d[t]), F(e)))) ? r : [],
     y = L(_, f, e => F(e));
   return null != y && E.push(y), I(v({}, p), {
     users: l,
@@ -157,7 +157,7 @@ function x(e, t, n) {
 }
 
 function L(e, t, n) {
-  return null == R || R.identifyTime !== e || null != t && t.some(e => e.id === R.guild.id) ? null : n(R.guild)
+  return null == w || w.identifyTime !== e || null != t && t.some(e => e.id === w.guild.id) ? null : n(w.guild)
 }
 
 function j(e) {
@@ -174,7 +174,7 @@ function M(e, t) {
       emojis: j(r.id),
       stickers: null != (n = h.A.getRawStickersByGuild().get(r.id)) ? n : null
     });
-  return R = {
+  return w = {
     guild: e,
     identifyTime: t
   }, i

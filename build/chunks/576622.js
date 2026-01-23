@@ -34,12 +34,12 @@ function p(e, t) {
     C = Date.now() - (null != (n = null == T ? true : T.fetchEndedAt) ? n : 0) >= f;
   if (((null == T || null == (p = T.fetchError) ? true : p.status) === 404 || (null == T || null == (_ = T.fetchError) ? true : _.status) === 429) && !C) return Promise.resolve();
   let N = u.A.getGuildMemberProfile(e, v),
-    R = u.A.getMutualGuilds(e),
-    w = u.A.getMutualFriends(e),
+    w = u.A.getMutualGuilds(e),
+    R = u.A.getMutualFriends(e),
     P = u.A.getMutualFriendsCount(e),
-    D = null == w && y,
+    D = null == R && y,
     x = null == P && E,
-    L = null == R && g || D || x,
+    L = null == w && g || D || x,
     j = null == v ? null == T : null == N,
     M = !j && (C || L);
   if (!j && !M) return Promise.resolve();

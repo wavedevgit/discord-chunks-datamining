@@ -55,7 +55,7 @@ function N(e) {
   return null != (t = null == (n = c.A.getConnectionStats(e)) ? true : n.stats.transport.inboundBitrateEstimate) ? t : null
 }
 
-function R(e) {
+function w(e) {
   let t = c.A.getConnectionStats(e),
     n = c.A.getLastConnectionStats(e);
   if (null == t || null == n) return null;
@@ -72,7 +72,7 @@ function R(e) {
   return l > 0 ? u : null
 }
 
-function w(e) {
+function R(e) {
   var t, n;
   let r = h.A.getVoiceChannelId();
   return null != (t = null != (n = "channelId" in e ? e.channelId : true) ? n : r) ? t : null
@@ -86,7 +86,7 @@ function P(e, t, n) {
 function D(e, t) {
   var n, r, c, h, D;
   let x, L = (0, O.B1)(e),
-    j = w(t),
+    j = R(t),
     M = d.A.getChannel(j),
     k = "streamKey" in t ? t.streamKey : true,
     U = "mediaContext" in t ? t.mediaContext : true,
@@ -100,12 +100,12 @@ function D(e, t) {
     K = "audioCaptureSampleRateMismatchPercent" in t ? t.audioCaptureSampleRateMismatchPercent : true,
     z = "audioInputDeviceName" in t ? t.audioInputDeviceName : true,
     q = "audioOutputDeviceName" in t ? t.audioOutputDeviceName : true,
-    X = "videoDeviceName" in t ? t.videoDeviceName : true,
-    Z = "userId" in t ? t.userId : true,
+    Z = "videoDeviceName" in t ? t.videoDeviceName : true,
+    X = "userId" in t ? t.userId : true,
     Q = null != k ? (0, l.Iy)(k) : null,
-    $ = null != k ? m.A.getRTCConnection(k) : null,
-    J = null != k ? $ : p.A.getRTCConnection(),
-    ee = null != k ? null == $ || null == (r = $.analyticsContext) ? true : r.streamApplication : null,
+    J = null != k ? m.A.getRTCConnection(k) : null,
+    $ = null != k ? J : p.A.getRTCConnection(),
+    ee = null != k ? null == J || null == (r = J.analyticsContext) ? true : r.streamApplication : null,
     {
       resolution: et,
       fps: en
@@ -118,11 +118,11 @@ function D(e, t) {
     } = (0, o.wH)(ee),
     eo = L.isErrorOutbound,
     el = null != U ? U : A.x.DEFAULT,
-    ec = null != Q ? Q.ownerId : Z,
-    eu = null != $ ? null == $ ? true : $.getVoiceParticipantType() : eo ? "sender" : "receiver",
-    ed = null != (n = null == J ? true : J.getMediaEngineConnectionId()) ? n : null;
-  x = null != k && null != Q ? eo ? null == J || null == (c = J.getOutboundStats()) ? true : c.find(e => e.quality === A.Y4) : null == J ? true : J.getInboundStats(Q.ownerId) : eo ? null != (h = i().maxBy(null != (D = null == J ? true : J.getOutboundStats()) ? D : [], e => e.num_frames)) ? h : null : null != ec ? null == J ? true : J.getInboundStats(ec) : null, (0, g.w)().then(t => {
-    var n, r, i, o, l, c, u, d, h, m, g, O, w, D, k, Z, ee, ef, ep, e_, eh, em, eg, eE, ey, eb, eO, ev, eA, eI, eS, eT, eC, eN, eR, ew, eP, eD, ex, eL, ej, eM, ek, eU, eG, eV, eF, eB, eH;
+    ec = null != Q ? Q.ownerId : X,
+    eu = null != J ? null == J ? true : J.getVoiceParticipantType() : eo ? "sender" : "receiver",
+    ed = null != (n = null == $ ? true : $.getMediaEngineConnectionId()) ? n : null;
+  x = null != k && null != Q ? eo ? null == $ || null == (c = $.getOutboundStats()) ? true : c.find(e => e.quality === A.Y4) : null == $ ? true : $.getInboundStats(Q.ownerId) : eo ? null != (h = i().maxBy(null != (D = null == $ ? true : $.getOutboundStats()) ? D : [], e => e.num_frames)) ? h : null : null != ec ? null == $ ? true : $.getInboundStats(ec) : null, (0, g.w)().then(t => {
+    var n, r, i, o, l, c, u, d, h, m, g, O, R, D, k, X, ee, ef, ep, e_, eh, em, eg, eE, ey, eb, eO, ev, eA, eI, eS, eT, eC, eN, ew, eR, eP, eD, ex, eL, ej, eM, ek, eU, eG, eV, eF, eB, eH;
     let eY = {
       error_name: e.valueOf(),
       error_code: L.errorCode,
@@ -135,21 +135,21 @@ function D(e, t) {
       channel_type: null != (r = null == M ? true : M.type) ? r : null,
       rtc_connection_id: null != B ? B : null,
       media_session_id: null != (i = null != F ? F : p.A.getMediaSessionId()) ? i : null,
-      parent_media_session_id: null != (o = null == $ ? true : $.parentMediaSessionId) ? o : null,
+      parent_media_session_id: null != (o = null == J ? true : J.parentMediaSessionId) ? o : null,
       context: null != U ? U : null,
       voice_backend_version: null != (l = null == (eP = p.A.getRTCConnection()) ? true : eP.getVoiceVersion()) ? l : null,
       rtc_worker_backend_version: null != (c = null == (eD = p.A.getRTCConnection()) ? true : eD.getRtcWorkerVersion()) ? c : null,
       guild_region: null != (u = _.A.getRegion(p.A.getHostname())) ? u : null,
       hostname: null != (d = p.A.getHostname()) ? d : null,
-      duration: null != (h = null == J ? true : J.getDurationSeconds()) ? h : null,
+      duration: null != (h = null == $ ? true : $.getDurationSeconds()) ? h : null,
       participant_type: null != eu ? eu : null,
       num_frames: null != (m = null == x ? true : x.num_frames) ? m : 0,
       num_packets: null != (g = null == x ? true : x.num_packets) ? g : 0,
       num_bytes: null != (O = null == x ? true : x.num_bytes) ? O : 0,
-      num_packets_lost: null != (w = null == (ex = T(eo, ed, ec)) ? true : ex.packetsLost) ? w : 0,
+      num_packets_lost: null != (R = null == (ex = T(eo, ed, ec)) ? true : ex.packetsLost) ? R : 0,
       video_codec: null != (D = null != H ? H : (0, a.aV)(null == (eL = T(eo, ed, ec)) ? true : eL.codec.name)) ? D : null,
       video_encoder: null != (k = null != Y ? Y : (0, a.kZ)(null == (ej = I(ed)) ? true : ej.encoderImplementationName)) ? k : null,
-      video_decoder: null != (Z = null != W ? W : (0, a.s7)(null == (eM = S(ed, ec)) ? true : eM.decoderImplementationName)) ? Z : null,
+      video_decoder: null != (X = null != W ? W : (0, a.s7)(null == (eM = S(ed, ec)) ? true : eM.decoderImplementationName)) ? X : null,
       audio_capture_sample_rate_mismatch_percent: null != K ? K : null,
       incoming_video_stopped_for_occlusion: !s.X.isIncomingVideoEnabled(),
       bitrate: null != (ee = null == (ek = T(eo, ed, ec)) ? true : ek.bitrate) ? ee : null,
@@ -157,12 +157,12 @@ function D(e, t) {
       fps: null != (ep = P(eo, el, ec)) ? ep : null,
       target_fps: el === A.x.STREAM && eo ? en : null,
       sender_user_id: null != (e_ = null == Q ? true : Q.ownerId) ? e_ : null,
-      stream_region: null != (eh = null == $ ? true : $.getRegion()) ? eh : null,
-      stream_source_type: eo && null != (em = null == $ || null == (eG = $.analyticsContext) ? true : eG.streamSourceType) ? em : null,
-      num_stream_viewers: null != (eg = null == $ || null == (eV = $.analyticsContext) ? true : eV.numViewers) ? eg : null,
+      stream_region: null != (eh = null == J ? true : J.getRegion()) ? eh : null,
+      stream_source_type: eo && null != (em = null == J || null == (eG = J.analyticsContext) ? true : eG.streamSourceType) ? em : null,
+      num_stream_viewers: null != (eg = null == J || null == (eV = J.analyticsContext) ? true : eV.numViewers) ? eg : null,
       video_input_resolution_height: eo && null != et ? et : null,
       video_input_frame_rate: eo && null != en ? en : null,
-      screenshare_capture_method: R(ed),
+      screenshare_capture_method: w(ed),
       share_application_name: null != er ? er : null,
       share_application_id: null != ei ? ei : null,
       share_application_executable: null != ea ? ea : null,
@@ -178,14 +178,14 @@ function D(e, t) {
       gpu_device_sub_sys_id: null != (eT = null == t ? true : t.gpu_device_sub_sys_id) ? eT : null,
       gpu_device_revision: null != (eC = null == t ? true : t.gpu_device_revision) ? eC : null,
       gpu_driver_version: null != (eN = null == t ? true : t.gpu_driver_version) ? eN : null,
-      cpu_usage: null != (eR = b.A.getCurrentCPUUsagePercent()) ? eR : null,
-      memory_usage: null != (ew = b.A.getCurrentMemoryUsageKB()) ? ew : null,
+      cpu_usage: null != (ew = b.A.getCurrentCPUUsagePercent()) ? ew : null,
+      memory_usage: null != (eR = b.A.getCurrentMemoryUsageKB()) ? eR : null,
       outbound_bitrate_estimate: C(ed),
       inbound_bitrate_estimate: N(ed),
       hardware_enabled: f.A.getHardwareEncoding(),
       audio_input_device_name: null != z ? z : null == (eF = f.A.getInputDevices()[f.A.getInputDeviceId()]) ? true : eF.name,
       audio_output_device_name: null != q ? q : null == (eB = f.A.getOutputDevices()[f.A.getOutputDeviceId()]) ? true : eB.name,
-      video_device_name: null != X ? X : null == (eH = f.A.getVideoDevices()[f.A.getVideoDeviceId()]) ? true : eH.name,
+      video_device_name: null != Z ? Z : null == (eH = f.A.getVideoDevices()[f.A.getVideoDeviceId()]) ? true : eH.name,
       audio_subsystem: f.A.getMediaEngine().getAudioSubsystem(),
       automatic_audio_subsystem: f.A.getSettings().automaticAudioSubsystem,
       audio_layer: f.A.getMediaEngine().getAudioLayer(),

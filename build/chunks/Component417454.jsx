@@ -2,7 +2,7 @@
 /** chunk id: 417454, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => J,
+  Ay: () => $,
   b_: () => q
 }), require("./896048.js"), require("./638769.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
@@ -151,11 +151,11 @@ let q = Chunk64700.forwardRef(function(e, t) {
       onMouseDown: C,
       guild: N
     } = e,
-    R = (0, u.rm)(E.id),
+    w = (0, u.rm)(E.id),
     {
-      tabIndex: w
-    } = R,
-    P = B(R, ["tabIndex"]),
+      tabIndex: R
+    } = w,
+    P = B(w, ["tabIndex"]),
     D = (0, A.$7)({
       roleId: E.id,
       size: 16,
@@ -211,12 +211,12 @@ let q = Chunk64700.forwardRef(function(e, t) {
       onContextMenu: U,
       onMouseDown: C,
       "aria-label": E.name,
-      tabIndex: w
+      tabIndex: R
     }, P), {
       children: [(0, r.jsxs)(h.DUT, {
         className: s()(d && k.jH, k.j1),
         onClick: d ? O : true,
-        tabIndex: d ? w : false,
+        tabIndex: d ? R : false,
         focusProps: {
           focusClassName: k.vZ
         },
@@ -247,7 +247,7 @@ let q = Chunk64700.forwardRef(function(e, t) {
   })
 });
 
-function X(e) {
+function Z(e) {
   let {
     user: t,
     numRolesHidden: n,
@@ -277,7 +277,7 @@ function X(e) {
   })
 }
 
-function Z(e) {
+function X(e) {
   let t = i.useRef(null),
     {
       guild: n,
@@ -290,8 +290,8 @@ function Z(e) {
     f = (0, u.rm)("overflow-add-roles-".concat(a.id)),
     _ = (0, p.bG)([y.A], () => y.A.roleStyle),
     m = D.A.getHighestRole(n),
-    g = w.Ay.getMember(n.id, a.id),
-    E = e => !(0, R.Oy)(e) && !e.managed && D.A.isRoleHigher(n, m, e) && (null == g || false === g.roles.indexOf(e.id));
+    g = R.Ay.getMember(n.id, a.id),
+    E = e => !(0, w.Oy)(e) && !e.managed && D.A.isRoleHigher(n, m, e) && (null == g || false === g.roles.indexOf(e.id));
   return (0, r.jsx)(h.YNO, {
     targetElementRef: t,
     renderPopout: e => {
@@ -355,24 +355,24 @@ function Q(e) {
     }, [o, a.id, n.id]),
     [S, T] = i.useState(null),
     N = (0, p.yK)([P.A], () => P.A.getManyRoles(a.id, o).sort(C.m)),
-    R = i.useMemo(() => null != S ? N.slice(0, S) : N, [N, S]),
-    w = o.length - R.length;
+    w = i.useMemo(() => null != S ? N.slice(0, S) : N, [N, S]),
+    R = o.length - w.length;
   i.useLayoutEffect(() => {
     if (f) return;
     if ("number" != typeof _) throw Error("Unexpected null width");
     let e = 0,
       t = 0,
       n = _ - Y - W;
-    for (let r = 0; r < R.length; r++) {
-      let i = R[r],
+    for (let r = 0; r < w.length; r++) {
+      let i = w[r],
         a = b.current[i.id];
       if (null != a) {
         if ((t += a.offsetWidth + W) > n) break;
         e++
       }
     }
-    T(t => e < R.length ? e : t)
-  }, [f, _, R]);
+    T(t => e < w.length ? e : t)
+  }, [f, _, w]);
   let U = x.default.getCurrentUser();
   l()(null != U, "MemberRolesList: currentUser cannot be undefined");
   let V = !m && D.A.can(j.xBc.MANAGE_ROLES, a),
@@ -385,7 +385,7 @@ function Q(e) {
       scrollToEnd: K,
       wrap: true
     }),
-    $ = R.map(e => {
+    J = w.map(e => {
       var t;
       return (0, r.jsx)(q, {
         className: E,
@@ -397,9 +397,9 @@ function Q(e) {
         disableBorderColor: y
       }, e.id)
     });
-  return null != S && 0 !== w ? t = (0, r.jsx)(X, F(G({}, e), {
-    numRolesHidden: w
-  })) : V && (t = (0, r.jsx)(Z, F(G({}, e), {
+  return null != S && 0 !== R ? t = (0, r.jsx)(Z, F(G({}, e), {
+    numRolesHidden: R
+  })) : V && (t = (0, r.jsx)(X, F(G({}, e), {
     handleAddRole: A
   }))), (0, r.jsx)(u.hD, {
     navigator: Q,
@@ -415,17 +415,17 @@ function Q(e) {
           }),
           ref: n
         }, i), {
-          children: [$, t]
+          children: [J, t]
         }))
       }
     })
   })
 }
-let $ = (0, Chunk456412.A)(Q);
+let J = (0, Chunk456412.A)(Q);
 
-function J(e) {
+function $(e) {
   return (0, p.bG)([D.A], () => {
     var t;
     return D.A.getGuildVersion(null == (t = e.guild) ? true : t.id)
-  }), false === e.wrap ? (0, r.jsx)($, G({}, e)) : (0, r.jsx)(Q, G({}, e))
+  }), false === e.wrap ? (0, r.jsx)(J, G({}, e)) : (0, r.jsx)(Q, G({}, e))
 }

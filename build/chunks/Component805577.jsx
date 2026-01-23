@@ -53,7 +53,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk630765 = require("./630765.js"),
   Chunk513653 = require("./513653.js");
 
-function X(e, t, n) {
+function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -62,14 +62,14 @@ function X(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function X(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      X(e, t, n[t])
+      Z(e, t, n[t])
     })
   }
   return e
@@ -86,19 +86,19 @@ function Q(e, t) {
   return n
 }
 
-function $(e, t) {
+function J(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let J = (0, Chunk915089.Ld)(),
+let $ = (0, Chunk915089.Ld)(),
   ee = (0, Chunk915089.Ld)(),
   et = (0, Chunk915089.Ld)(),
   en = s().debounce(e => {
     (0, f.HU)(e)
   }, 250),
   er = s().debounce(e => {
-    (0, R.zU)(e)
+    (0, w.zU)(e)
   }, 250);
 
 function ei(e) {
@@ -184,7 +184,7 @@ function ea() {
   let e = L.hH.useSetting(),
     [t] = i.useState(() => {
       let e = "1337",
-        t = (0, A.rh)($(Z({}, (0, I.Ay)({
+        t = (0, A.rh)(J(X({}, (0, I.Ay)({
           channelId: e,
           content: W.intl.formatToPlainString(W.t.bB80LC, {
             previewLink: "https://discord.com/accessibility"
@@ -218,7 +218,7 @@ function ea() {
         className: z.QS,
         children: (0, r.jsx)(T.A, {
           compact: e,
-          author: $(Z({}, (0, S.p_)(t)), {
+          author: J(X({}, (0, S.p_)(t)), {
             colorString: "#DD80F4"
           }),
           message: t
@@ -275,7 +275,7 @@ function el() {
     children: [(0, r.jsx)(c.Apm, {
       label: W.intl.string(W.t["5PWWCY"]),
       description: W.intl.string(W.t["0PbE/H"]),
-      "aria-labelledby": J,
+      "aria-labelledby": $,
       "aria-describedby": ee,
       markers: B.hH7.SATURATION_INCREMENTS,
       equidistant: true,
@@ -578,7 +578,7 @@ function eE() {
 }
 
 function ey() {
-  let e = (0, o.bG)([w.A], () => w.A.speechRate);
+  let e = (0, o.bG)([R.A], () => R.A.speechRate);
   return (0, r.jsxs)(c.BJc, {
     gap: 16,
     children: [(0, r.jsx)(c.Apm, {
@@ -610,14 +610,14 @@ function ey() {
 function eb() {
   let [e, t] = i.useState(false), n = () => {
     if (e) {
-      (0, R.pr)(), t(false);
+      (0, w.pr)(), t(false);
       return
     }
     let n = () => t(true),
       r = () => t(false);
-    (0, R.AU)(W.intl.string(W.t.PKaNJL), true, true, n, r), t(true)
+    (0, w.AU)(W.intl.string(W.t.PKaNJL), true, true, n, r), t(true)
   };
-  return (0, u.l0)(() => (0, R.pr)()), (0, r.jsx)(c.Button, {
+  return (0, u.l0)(() => (0, w.pr)()), (0, r.jsx)(c.Button, {
     text: W.intl.string(W.t.SKNnqq),
     icon: e ? c.E$n : c.udU,
     size: "sm",

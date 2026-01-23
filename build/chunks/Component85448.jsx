@@ -63,7 +63,7 @@ function h(e) {
     isSpeaking: i,
     isLatched: f,
     voiceDb: _
-  }), R = () => {
+  }), w = () => {
     let e = C ? o.O1p : m ? o.cQT : o.z0P;
     return h || m || C ? (0, r.jsx)("div", {
       className: d.II,
@@ -72,15 +72,15 @@ function h(e) {
         color: o.LU0.colors.WHITE.css
       }, "status")
     }) : null
-  }, w = () => (0, r.jsx)("div", {
+  }, R = () => (0, r.jsx)("div", {
     className: d.PQ,
     style: N
   }, "border"), P = () => h && i ? (0, r.jsxs)(r.Fragment, {
-    children: [w(), R()]
+    children: [R(), w()]
   }) : h || m || C ? (0, r.jsx)(r.Fragment, {
-    children: R()
-  }) : (0, r.jsx)(r.Fragment, {
     children: w()
+  }) : (0, r.jsx)(r.Fragment, {
+    children: R()
   }), D = () => {
     let e = (0, o.FT9)(n),
       t = (0, r.jsx)("img", {

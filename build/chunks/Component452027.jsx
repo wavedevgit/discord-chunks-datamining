@@ -116,8 +116,8 @@ function g(e) {
     ref: T
   } = e, C = h(e), {
     labelId: N,
-    controlId: R,
-    errorMessageId: w,
+    controlId: w,
+    errorMessageId: R,
     describedById: P,
     helperTextId: D,
     descriptionId: x
@@ -133,7 +133,7 @@ function g(e) {
     tag: M,
     variant: "text-md/medium",
     color: "text-strong",
-    htmlFor: R,
+    htmlFor: w,
     className: f.Pf,
     children: [null != v ? (0, r.jsx)(v, {
       "aria-hidden": true,
@@ -157,7 +157,7 @@ function g(e) {
     helperText: c,
     trailing: S,
     helperTextId: D,
-    errorMessageId: w
+    errorMessageId: R
   });
   return (0, r.jsx)(d._.Provider, {
     value: C,

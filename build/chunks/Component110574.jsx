@@ -207,7 +207,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })]
     })
   }),
-  X = Chunk64700.memo(function(e) {
+  Z = Chunk64700.memo(function(e) {
     let {
       user: t,
       shouldAnimateStatus: n,
@@ -240,7 +240,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })]
     })
   }),
-  Z = Chunk64700.memo(function(e) {
+  X = Chunk64700.memo(function(e) {
     let {
       hideSubtext: t,
       hideTooltip: n = false,
@@ -295,7 +295,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       applicationStream: v,
       status: A,
       shouldAnimateStatus: I = false,
-      isMobile: R,
+      isMobile: w,
       premiumSince: D,
       channel: x,
       guildId: L,
@@ -307,8 +307,8 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       onMouseDown: W,
       onKeyDown: K,
       onClick: Q,
-      onContextMenu: $,
-      onClickPremiumGuildIcon: J,
+      onContextMenu: J,
+      onClickPremiumGuildIcon: $,
       "aria-controls": ee,
       "aria-expanded": et,
       "aria-posinset": en,
@@ -317,7 +317,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       tabIndex: ea,
       itemProps: es,
       ref: eo
-    } = e, el = null == y ? true : y.id, ec = w.Ay.useName(y), eu = i.useRef(null), ed = null != eo ? eo : eu, [ef, ep] = i.useState(false), [e_, eh] = i.useState(false), [em, eg] = i.useState(null), {
+    } = e, el = null == y ? true : y.id, ec = R.Ay.useName(y), eu = i.useRef(null), ed = null != eo ? eo : eu, [ef, ep] = i.useState(false), [e_, eh] = i.useState(false), [em, eg] = i.useState(null), {
       voiceChannel: eE
     } = (0, p.A)({
       userId: el,
@@ -337,12 +337,12 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       guildId: L
     }), eI = null != es ? es : {}, {
       onFocus: eS
-    } = eI, eT = V(eI, ["onFocus"]), eC = (0, S.gn)(L, el, null != a ? a : null), [eN, eR] = i.useState(false);
+    } = eI, eT = V(eI, ["onFocus"]), eC = (0, S.gn)(L, el, null != a ? a : null), [eN, ew] = i.useState(false);
     i.useEffect(() => {
-      t && eR(false)
+      t && ew(false)
     }, [t]);
-    let ew = (0, T.YW)(O),
-      eP = (0, T.Yl)(ew, v, el) && t && !eN,
+    let eR = (0, T.YW)(O),
+      eP = (0, T.Yl)(eR, v, el) && t && !eN,
       eD = i.useCallback(() => {
         ep(true)
       }, []),
@@ -358,14 +358,14 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       eM = i.useCallback(e => {
         eg(e)
       }, []),
-      ek = i.useCallback(e => null == ew ? null : (0, r.jsx)(C.A, G(k({
+      ek = i.useCallback(e => null == eR ? null : (0, r.jsx)(C.A, G(k({
         name: null != E ? E : ec,
-        quest: ew,
+        quest: eR,
         memberListItemRef: ed,
         applicationStream: v
       }, e), {
-        closePopout: () => eR(true)
-      })), [ew, ed, v, E, ec]);
+        closePopout: () => ew(true)
+      })), [eR, ed, v, E, ec]);
     return null == y ? (0, r.jsx)(m.A, {
       avatarSize: c._3J.SIZE_32,
       className: j.qf
@@ -389,7 +389,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         onClick: Q,
         onKeyDown: K,
         onMouseDown: W,
-        onContextMenu: $,
+        onContextMenu: J,
         onMouseEnter: eD,
         onMouseLeave: ex,
         onBlur: ej,
@@ -422,14 +422,14 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
             })
           })
         }),
-        avatar: (0, r.jsx)(X, {
+        avatar: (0, r.jsx)(Z, {
           user: y,
           shouldAnimateStatus: I,
           activities: O,
           status: A,
           eventHandlers: eA,
           avatarSrc: ev,
-          isMobile: R,
+          isMobile: w,
           isTyping: h,
           avatarDecorationSrc: eO,
           handleSetTypingRef: eM,
@@ -437,7 +437,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           currentUser: b
         }),
         nameplate: U,
-        subText: (0, r.jsx)(Z, {
+        subText: (0, r.jsx)(X, {
           hideSubtext: B,
           activities: O,
           status: A,
@@ -446,7 +446,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           user: y,
           channel: x,
           isHoveringOrFocusing: ef || e_,
-          quest: ew,
+          quest: eR,
           hideTooltip: Y
         }),
         decorators: (0, r.jsx)(z, {
@@ -455,7 +455,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           lostPermissionTooltipText: _,
           ownerTooltipText: f,
           premiumSince: D,
-          onClickPremiumGuildIcon: J
+          onClickPremiumGuildIcon: $
         }),
         "aria-controls": ee,
         "aria-expanded": et,

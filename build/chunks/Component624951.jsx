@@ -34,7 +34,7 @@ function y(e) {
     data: A
   } = (0, u.YY)(n), I = (0, o.J)(A), {
     themeType: S
-  } = (0, _.E)(), T = S === m.d.MODAL || S === m.d.MODAL_V2, C = (0, f.o)(null != (t = null == O ? true : O.application_id) ? t : n), N = I && T && null != A && !C, R = N ? [i.M.CLOUD_PLAY_NEW_BADGE] : [], [w] = (0, d.kn)(R);
+  } = (0, _.E)(), T = S === m.d.MODAL || S === m.d.MODAL_V2, C = (0, f.o)(null != (t = null == O ? true : O.application_id) ? t : n), N = I && T && null != A && !C, w = N ? [i.M.CLOUD_PLAY_NEW_BADGE] : [], [R] = (0, d.kn)(w);
   return N ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.A, {
       className: E.Xl
@@ -42,7 +42,7 @@ function y(e) {
       className: E.DK,
       children: [(0, r.jsxs)("div", {
         className: E.tJ,
-        children: [w === i.M.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(s.LpS, {
+        children: [R === i.M.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(s.LpS, {
           text: g.intl.string(g.t.y2b7CA),
           color: a.A.colors.BACKGROUND_BRAND.css
         }), (0, r.jsx)(s.Text, {

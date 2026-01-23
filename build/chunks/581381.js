@@ -235,7 +235,7 @@ function W(e) {
   }
   let n = e.filter(e => (0, b.b)(e) && 0 !== (0, T.Fg)(e)),
     r = e.map(e => {
-      if (R.sl8.has(e.type) && null != e.messageReference) {
+      if (w.sl8.has(e.type) && null != e.messageReference) {
         let t = f.A.getMessageByReference(e.messageReference);
         if (t.state === f.a.LOADED && null != t.message && (0, b.b)(t.message) && 0 !== (0, T.Fg)(t.message)) return t.message
       }
@@ -334,7 +334,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Z(e) {
   var t, n;
   let {
     channelId: r,
@@ -355,7 +355,7 @@ function X(e) {
   })
 }
 
-function Z(e) {
+function X(e) {
   let {
     channelId: t,
     messages: n
@@ -378,7 +378,7 @@ function Q(e) {
   }), n
 }
 
-function $(e) {
+function J(e) {
   let {
     pins: t
   } = e;
@@ -390,7 +390,7 @@ function $(e) {
   }))
 }
 
-function J(e) {
+function $(e) {
   let {
     guildId: t,
     threads: n
@@ -427,7 +427,7 @@ function er(e) {
     settings: t,
     local: n
   } = e;
-  if (!n || t.type !== w.oD.PRELOADED_USER_SETTINGS) returnfalse;
+  if (!n || t.type !== R.oD.PRELOADED_USER_SETTINGS) returnfalse;
   let r = g.A.getChannelId();
   return null != r && ea(r)
 }
@@ -447,18 +447,18 @@ function ea(e) {
 class es extends Chunk439372.A {
   constructor(...e) {
     super(...e), P(this, "actions", {
-      LOAD_MESSAGES_SUCCESS: Z,
-      LOAD_FORUM_POSTS: J,
+      LOAD_MESSAGES_SUCCESS: X,
+      LOAD_FORUM_POSTS: $,
       LOAD_THREADS_SUCCESS: ee,
       LOAD_ARCHIVED_THREADS_SUCCESS: ee,
       SIDEBAR_VIEW_CHANNEL: et,
-      MESSAGE_CREATE: X,
+      MESSAGE_CREATE: Z,
       MESSAGE_UPDATE: q,
       LOGOUT: M,
       SEARCH_MESSAGES_SUCCESS: Q,
       MOD_VIEW_SEARCH_MESSAGES_SUCCESS: Q,
       CHANNEL_SELECT: en,
-      LOAD_PINNED_MESSAGES_SUCCESS: $,
+      LOAD_PINNED_MESSAGES_SUCCESS: J,
       USER_SETTINGS_PROTO_UPDATE: er,
       CHANNEL_RTC_UPDATE_CHAT_OPEN: ei
     })

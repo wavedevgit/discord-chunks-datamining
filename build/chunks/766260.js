@@ -38,12 +38,12 @@ var Chunk410323 = require("./410323.js"),
   N = function(e) {
     return e + 22 + 75 * (e < 26)
   },
-  R = function(e, t, n) {
+  w = function(e, t, n) {
     var r = 0;
     for (e = n ? y(e / c) : e >> 1, e += y(e / t); e > m * o >> 1;) e = y(e / m), r += a;
     return y(r + (m + 1) * e / (e + l))
   },
-  w = function(e) {
+  R = function(e) {
     var t, n, r = [],
       l = (e = C(e)).length,
       c = d,
@@ -61,13 +61,13 @@ var Chunk410323 = require("./410323.js"),
         if ((n = e[t]) < c && ++p > i) throw new g(h);
         if (n === c) {
           for (var S = p, T = a;;) {
-            var w = T <= _ ? s : T >= _ + o ? o : T - _;
-            if (S < w) break;
-            var P = S - w,
-              D = a - w;
-            A(r, b(N(w + P % D))), S = y(P / D), T += a
+            var R = T <= _ ? s : T >= _ + o ? o : T - _;
+            if (S < R) break;
+            var P = S - R,
+              D = a - R;
+            A(r, b(N(R + P % D))), S = y(P / D), T += a
           }
-          A(r, b(N(S))), _ = R(p, I, E === m), p = 0, E++
+          A(r, b(N(S))), _ = w(p, I, E === m), p = 0, E++
         }
       }
       p++, c++
@@ -77,6 +77,6 @@ var Chunk410323 = require("./410323.js"),
 module.exports = function(e) {
   var t, n, r = [],
     i = S(I(T(e), _, "."), ".");
-  for (t = 0; t < i.length; t++) A(r, E(p, n = i[t]) ? "xn--" + w(n) : n);
+  for (t = 0; t < i.length; t++) A(r, E(p, n = i[t]) ? "xn--" + R(n) : n);
   return v(r, ".")
 }

@@ -128,7 +128,7 @@ let C = e => {
       children: O.intl.string(O.t.ERdH1o)
     })]
   }),
-  R = () => (0, r.jsx)("div", {
+  w = () => (0, r.jsx)("div", {
     className: v.p$,
     children: (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
@@ -136,7 +136,7 @@ let C = e => {
       children: O.intl.string(O.t.RV3AXf)
     })
   }),
-  w = e => {
+  R = e => {
     let {
       timestamp: t
     } = e;
@@ -192,7 +192,7 @@ let C = e => {
       }),
       children: (0, r.jsxs)("div", {
         className: v.iQ,
-        children: [u ? (0, r.jsx)(P, {}) : (0, r.jsx)(w, {
+        children: [u ? (0, r.jsx)(P, {}) : (0, r.jsx)(R, {
           timestamp: c
         }), (0, r.jsx)(l.Heading, {
           variant: "heading-lg/normal",
@@ -246,7 +246,7 @@ let C = e => {
               nextPageSize: m
             })
           })]
-        }), 0 === h.length && "active" === t && (0, r.jsx)(N, {}), 0 === h.length && "expired" === t && (0, r.jsx)(R, {})]
+        }), 0 === h.length && "active" === t && (0, r.jsx)(N, {}), 0 === h.length && "expired" === t && (0, r.jsx)(w, {})]
       })]
     })
   },

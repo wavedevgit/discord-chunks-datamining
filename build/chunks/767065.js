@@ -2,7 +2,7 @@
 /** chunk id: 767065, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => eR
+  A: () => ew
 }), require("./747238.js"), require("./321073.js"), require("./896048.js"), require("./457529.js"), require("./65821.js"), require("./492834.js");
 var Chunk824120 = require("./824120.js"),
   i = require.n(Chunk824120),
@@ -130,7 +130,7 @@ function eN() {
   }));
   return JSON.stringify(e)
 }
-class eR extends Chunk972347.A {
+class ew extends Chunk972347.A {
   recordEvent(e) {
     for (eT.push(e_(ef({}, e), {
         t: (0, _.tB)(),
@@ -175,7 +175,7 @@ class eR extends Chunk972347.A {
         connection: this
       }))), null == this.endpoint) return void this.setState(el.S7L.AWAITING_ENDPOINT);
     let i = this._socket;
-    null != i && this._cleanupSocket(), null != this._nextChannelId && (this._channelId = this._nextChannelId, this._nextChannelId = true), (i = this._socket = new J.Ay(this.endpoint, this.context)).on(J.yg.Connecting, this._handleConnecting.bind(this, i)), i.on(J.yg.Connect, this._handleConnect.bind(this, i)), i.on(J.yg.Disconnect, this._handleDisconnect.bind(this, i)), i.on(J.yg.Resuming, this._handleResuming.bind(this, i)), i.on(J.yg.Ready, this._handleReady.bind(this, i)), i.on(J.yg.Speaking, this._handleSpeaking.bind(this, i)), i.on(J.yg.Video, this._handleVideo.bind(this, i)), i.on(J.yg.Ping, this._handleControlPing.bind(this)), i.on(J.yg.ClientDisconnect, this._handleClientDisconnect.bind(this)), i.on(J.yg.ClientConnect, this._handleClientConnect.bind(this)), i.on(J.yg.Codecs, this._handleCodecs.bind(this)), i.on(J.yg.MediaSessionId, this._handleMediaSessionId.bind(this)), i.on(J.yg.MediaSinkWants, this._handleMediaSinkWants.bind(this)), i.on(J.yg.VoiceBackendVersion, this._handleCodeVersion.bind(this)), i.on(J.yg.KeyframeInterval, this._handleKeyframeInterval.bind(this)), i.on(J.yg.Flags, this.handleFlags.bind(this)), i.on(J.yg.Platform, this.handlePlatform.bind(this)), i.on(J.yg.BandwidthEstimationExperiment, this._handleBandwidthEstimationExperiment.bind(this)), i.on(J.yg.SecureFramesInit, this._handleSecureFramesInit.bind(this)), i.on(J.yg.SecureFramesPrepareTransition, this._handleSecureFramesPrepareTransition.bind(this)), i.on(J.yg.SecureFramesPrepareEpoch, this._handleSecureFramesPrepareEpoch.bind(this)), i.on(J.yg.SecureFramesExecuteTransition, this._handleSecureFramesExecuteTransition.bind(this)), i.on(J.yg.MLSExternalSenderPackage, this._handleMLSExternalSenderPackage.bind(this)), i.on(J.yg.MLSProposals, this._handleMLSProposals.bind(this, i)), i.on(J.yg.MLSPrepareCommitTransition, this._handleMLSPrepareCommitTransition.bind(this)), i.on(J.yg.MLSWelcome, this._handleMLSWelcome.bind(this)), i.on(J.yg.ReceiveMessage, this._recordMessageEvent.bind(this, 4)), i.on(J.yg.SendMessage, this._recordMessageEvent.bind(this, 5)), this._connectStartTime = (0, _.tB)(), this._connectCount++, this._connecting = true, null != i && this._socket === i && (this._trackVoiceConnectionConnecting(), this._encountered_socket_failure = false, i.connect())
+    null != i && this._cleanupSocket(), null != this._nextChannelId && (this._channelId = this._nextChannelId, this._nextChannelId = true), (i = this._socket = new $.Ay(this.endpoint, this.context)).on($.yg.Connecting, this._handleConnecting.bind(this, i)), i.on($.yg.Connect, this._handleConnect.bind(this, i)), i.on($.yg.Disconnect, this._handleDisconnect.bind(this, i)), i.on($.yg.Resuming, this._handleResuming.bind(this, i)), i.on($.yg.Ready, this._handleReady.bind(this, i)), i.on($.yg.Speaking, this._handleSpeaking.bind(this, i)), i.on($.yg.Video, this._handleVideo.bind(this, i)), i.on($.yg.Ping, this._handleControlPing.bind(this)), i.on($.yg.ClientDisconnect, this._handleClientDisconnect.bind(this)), i.on($.yg.ClientConnect, this._handleClientConnect.bind(this)), i.on($.yg.Codecs, this._handleCodecs.bind(this)), i.on($.yg.MediaSessionId, this._handleMediaSessionId.bind(this)), i.on($.yg.MediaSinkWants, this._handleMediaSinkWants.bind(this)), i.on($.yg.VoiceBackendVersion, this._handleCodeVersion.bind(this)), i.on($.yg.KeyframeInterval, this._handleKeyframeInterval.bind(this)), i.on($.yg.Flags, this.handleFlags.bind(this)), i.on($.yg.Platform, this.handlePlatform.bind(this)), i.on($.yg.BandwidthEstimationExperiment, this._handleBandwidthEstimationExperiment.bind(this)), i.on($.yg.SecureFramesInit, this._handleSecureFramesInit.bind(this)), i.on($.yg.SecureFramesPrepareTransition, this._handleSecureFramesPrepareTransition.bind(this)), i.on($.yg.SecureFramesPrepareEpoch, this._handleSecureFramesPrepareEpoch.bind(this)), i.on($.yg.SecureFramesExecuteTransition, this._handleSecureFramesExecuteTransition.bind(this)), i.on($.yg.MLSExternalSenderPackage, this._handleMLSExternalSenderPackage.bind(this)), i.on($.yg.MLSProposals, this._handleMLSProposals.bind(this, i)), i.on($.yg.MLSPrepareCommitTransition, this._handleMLSPrepareCommitTransition.bind(this)), i.on($.yg.MLSWelcome, this._handleMLSWelcome.bind(this)), i.on($.yg.ReceiveMessage, this._recordMessageEvent.bind(this, 4)), i.on($.yg.SendMessage, this._recordMessageEvent.bind(this, 5)), this._connectStartTime = (0, _.tB)(), this._connectCount++, this._connecting = true, null != i && this._socket === i && (this._trackVoiceConnectionConnecting(), this._encountered_socket_failure = false, i.connect())
   }
   _recordMessageEvent(e, t) {
     this.recordEvent({
@@ -370,7 +370,7 @@ class eR extends Chunk972347.A {
   _chooseExperiments(e) {
     let t = [];
     if (this._recordingEnabled && t.push("connection_log"), U.A.supports(ec.O5.FIXED_KEYFRAME_INTERVAL) && t.push("fixed_keyframe_interval"), 0 !== this._supportedBandwidthEstimationExperiments.length) {
-      let e = R.A.workerExperimentString();
+      let e = w.A.workerExperimentString();
       null != e && t.push(e)
     }
     this.context === ec.x.DEFAULT && (0, S.I)("RtcConnection").enabled && t.push("audio_transport_cc");
@@ -485,7 +485,7 @@ class eR extends Chunk972347.A {
       let n = F.A.shouldIncludePreferredRegion() ? F.A.getPreferredRegion() : null,
         i = U.A.getSettings(),
         a = k.A.getChannel(this.channelId),
-        s = null == (u = w.A.getConnectionStats(this.getMediaEngineConnectionId())) || null == (c = u.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : c.sampleRateMismatchPercent,
+        s = null == (u = R.A.getConnectionStats(this.getMediaEngineConnectionId())) || null == (c = u.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : c.sampleRateMismatchPercent,
         o = e_(ef(e_(ef({}, this._getAnalyticsProperties()), {
           hostname: this.hostname,
           port: this.port,
@@ -632,12 +632,12 @@ class eR extends Chunk972347.A {
           })
         }), this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceQualityPeriodicStatsInterval = setInterval(this._handleVoiceQualityPeriodicsStats, 3e5), this._systemResponsiveness = new en.A(f), this._systemResponsiveness.start(), this._systemResources = new et.A, this._systemResources.setLastBattery(), this._noiseCancellationError = 0, this._voiceDuration = new ea.A(this.userId, f), this._voiceDuration.start(f.getSelfMute(), f.getSelfDeaf(), f.getVoiceFilterId()), this.protocol = r, r) {
         case "udp":
-          this.logger.info("Sending UDP info to RTC server.", i, this._selectedExperiments), e.once(J.yg.Encryption, (e, t) => {
+          this.logger.info("Sending UDP info to RTC server.", i, this._selectedExperiments), e.once($.yg.Encryption, (e, t) => {
             f === this._connection && (f.setEncryption(e, t), this._encryptionMode = e)
           }), e.selectProtocol(r, this.getRTCConnectionId(), i, this._selectedExperiments);
           break;
         case "webrtc":
-          this.logger.info("Sending local SDP to RTC server."), e.once(J.yg.SDP, this._handleSDP.bind(this)), e.selectProtocol(r, this.getRTCConnectionId(), i);
+          this.logger.info("Sending local SDP to RTC server."), e.once($.yg.SDP, this._handleSDP.bind(this)), e.selectProtocol(r, this.getRTCConnectionId(), i);
           break;
         default:
           this.logger.error("Unable to determine protocol.");
@@ -738,7 +738,7 @@ class eR extends Chunk972347.A {
       } else n === el.S7L.RTC_CONNECTED && this.stateHistory.reset(this.state)
     }), f.on(p.yq.SecureFramesUpdate, e => {
       this._secureFramesState = e, this.emit(Q.q.SecureFramesUpdate)
-    }), f.on(p.yq.Ping, this._handlePing.bind(this)), f.on(p.yq.PingTimeout, this._handlePingTimeout.bind(this)), f.on(p.yq.OutboundLossRate, this._handleOutboundLossRate.bind(this)), f.on(p.yq.LocalVideoDisabled, this._handleLocalVideoDisabled.bind(this)), f.on(p.yq.Stats, Z.A.create()), f.on(p.yq.RemoteStreamsReady, this._handleRemoteStreamsReady.bind(this)), f.on(p.yq.UsersMerged, this.handleUsersMerged.bind(this)), f.on(p.yq.NoiseCancellationError, e => {
+    }), f.on(p.yq.Ping, this._handlePing.bind(this)), f.on(p.yq.PingTimeout, this._handlePingTimeout.bind(this)), f.on(p.yq.OutboundLossRate, this._handleOutboundLossRate.bind(this)), f.on(p.yq.LocalVideoDisabled, this._handleLocalVideoDisabled.bind(this)), f.on(p.yq.Stats, X.A.create()), f.on(p.yq.RemoteStreamsReady, this._handleRemoteStreamsReady.bind(this)), f.on(p.yq.UsersMerged, this.handleUsersMerged.bind(this)), f.on(p.yq.NoiseCancellationError, e => {
       this._noiseCancellationError = e
     }), f.on(p.yq.MLSFailure, this._handleMLSFailure.bind(this)), f.setRemoteVideoSinkWants(this._remoteVideoSinkWants), this._connection = f, this._mediaEngineConnectionId = f.mediaEngineConnectionId
   }
@@ -1340,7 +1340,7 @@ class eR extends Chunk972347.A {
       c: 0
     }), this._fetchAsyncResourcesPromise = U.A.fetchAsyncResources().catch(e => {
       z.A.captureException(e)
-    }), this.userId = e, this.sessionId = t, this.guildId = n, this._channelId = r, this.channelIds = new Set([r]), this.streamServerId = a, this.streamChannelId = o, this.parentMediaSessionId = l, this.joinVoiceId = d, this._connectionSerial = eS++, this.logger = new O.A("RTCConnection(".concat(this.trueServerId, ", ").concat(this.context, ")")), this.logger.enableNativeLogger(true), this._endpoint = null, this.hostname = null, this.port = null, this.token = null, this.voiceVersion = null, this.rtcWorkerVersion = null, this.state = el.S7L.AWAITING_ENDPOINT, this.stateHistory = new $.M(this.state), this._socket = null, this._backoff = new u.A(1e3, 1e4), this._destroyed = false, this._pings = [], this._pingBadCount = 0, this._pingTimeouts = [], this._mediaSessionId = null, this._voiceQuality = null, this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._systemResponsiveness = null, this._noiseCancellationError = 0, this._voiceDuration = null, this._videoQuality = null, this._videoHealthManager = null, this._sentVideo = false, this._videoDecoderFallbackSuppressed = false, this._outboundLossRate = null, this._createdTime = (0, _.tB)(), this._connectStartTime = 0, this._connectCompletedTime = 0, this._rtcConnectionId = (0, c.A)(), this._connectCount = 0, this._connected = false, this._connecting = false, this._encountered_socket_failure = false, this._inputDetected = false, this._selectedExperiments = [], this._secureFramesState = null, this._userIds = new Set([e]), this._secureFramesRosterMap.clear(), this._mlsFailures = [], this._nextFailureId = 0, this._mediaEngineConnectionId = null, this.reconnecting = false, this._lastSentSpeakingStatus = 0, this._lastSentSSRC = true;
+    }), this.userId = e, this.sessionId = t, this.guildId = n, this._channelId = r, this.channelIds = new Set([r]), this.streamServerId = a, this.streamChannelId = o, this.parentMediaSessionId = l, this.joinVoiceId = d, this._connectionSerial = eS++, this.logger = new O.A("RTCConnection(".concat(this.trueServerId, ", ").concat(this.context, ")")), this.logger.enableNativeLogger(true), this._endpoint = null, this.hostname = null, this.port = null, this.token = null, this.voiceVersion = null, this.rtcWorkerVersion = null, this.state = el.S7L.AWAITING_ENDPOINT, this.stateHistory = new J.M(this.state), this._socket = null, this._backoff = new u.A(1e3, 1e4), this._destroyed = false, this._pings = [], this._pingBadCount = 0, this._pingTimeouts = [], this._mediaSessionId = null, this._voiceQuality = null, this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._systemResponsiveness = null, this._noiseCancellationError = 0, this._voiceDuration = null, this._videoQuality = null, this._videoHealthManager = null, this._sentVideo = false, this._videoDecoderFallbackSuppressed = false, this._outboundLossRate = null, this._createdTime = (0, _.tB)(), this._connectStartTime = 0, this._connectCompletedTime = 0, this._rtcConnectionId = (0, c.A)(), this._connectCount = 0, this._connected = false, this._connecting = false, this._encountered_socket_failure = false, this._inputDetected = false, this._selectedExperiments = [], this._secureFramesState = null, this._userIds = new Set([e]), this._secureFramesRosterMap.clear(), this._mlsFailures = [], this._nextFailureId = 0, this._mediaEngineConnectionId = null, this.reconnecting = false, this._lastSentSpeakingStatus = 0, this._lastSentSSRC = true;
     const f = U.A.supports(ec.O5.FIRST_FRAME_CALLBACK) && U.A.supports(ec.O5.REMOTE_USER_MULTI_STREAM);
     if (i === ec.x.DEFAULT) {
       var p;
@@ -1363,7 +1363,7 @@ class eR extends Chunk972347.A {
         this.logger.info("Go Live Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null == (t = this._connection) || t.setLocalVideoSinkWants(e)
       }
     }));
-    this._remoteVideoSinkWants = ee.AE, eo.X.on(eo.N.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), eo.X.on(eo.N.WindowVisibilityChanged, this.windowVisibilityChanged), V.Ay.shouldRecordNextConnection() ? (this._recordingEnabled = true, E.Et(false)) : this._recordingEnabled = false, W.A.addOnlineCallback(this._handleNetworkOnline), W.A.addOfflineCallback(this._handleNetworkOffline), (0, K.isDesktop)() && (this.powerMonitorListener = X.A.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, U.A.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+    this._remoteVideoSinkWants = ee.AE, eo.X.on(eo.N.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), eo.X.on(eo.N.WindowVisibilityChanged, this.windowVisibilityChanged), V.Ay.shouldRecordNextConnection() ? (this._recordingEnabled = true, E.Et(false)) : this._recordingEnabled = false, W.A.addOnlineCallback(this._handleNetworkOnline), W.A.addOfflineCallback(this._handleNetworkOffline), (0, K.isDesktop)() && (this.powerMonitorListener = Z.A.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, U.A.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
       this._supportedBandwidthEstimationExperiments = e
     })
   }

@@ -42,10 +42,10 @@ function v(e, t, n, r) {
     },
     C = 100 - n,
     N = "\n      --custom-theme-background: ".concat(I, ";\n      ", "--custom-background-gradient-chat-opacity-base-light", ": 0.95;\n      ", "--custom-background-gradient-highest-opacity-base-light", ": 1.0;\n      ", "--custom-background-gradient-opacity-mix-amount", ": ").concat(((f + p * C) / 100).toFixed(2), ";\n      ", "--custom-theme-border-color-amount", ": 5%;\n      "),
-    R = S ? "\n      ".concat(o.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(_ + h * C, "%;\n      ").concat(o.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(E, "%;\n    ") : "\n      ".concat(o.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(m + g * n, "%;\n      ").concat(o.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(y, "%;\n    "),
-    w = "\n      ".concat(o.RB.DARK_THEME_BASE_COLOR, ": ").concat(T.dark.css(), ";\n      ").concat(o.RB.DARK_THEME_BASE_COLOR_HSL, ": ").concat((0, o.FT)(T.dark), ";\n      ").concat(o.RB.DARK_THEME_TEXT_COLOR, ": ").concat(i()(v).set("hsl.l", ((100 - b * C) / 100).toFixed(2)).css(), ";\n    "),
+    w = S ? "\n      ".concat(o.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(_ + h * C, "%;\n      ").concat(o.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(E, "%;\n    ") : "\n      ".concat(o.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(m + g * n, "%;\n      ").concat(o.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(y, "%;\n    "),
+    R = "\n      ".concat(o.RB.DARK_THEME_BASE_COLOR, ": ").concat(T.dark.css(), ";\n      ").concat(o.RB.DARK_THEME_BASE_COLOR_HSL, ": ").concat((0, o.FT)(T.dark), ";\n      ").concat(o.RB.DARK_THEME_TEXT_COLOR, ": ").concat(i()(v).set("hsl.l", ((100 - b * C) / 100).toFixed(2)).css(), ";\n    "),
     P = "\n      ".concat(o.RB.LIGHT_THEME_BASE_COLOR, ": ").concat(T.light.css(), ";\n      ").concat(o.RB.LIGHT_THEME_BASE_COLOR_HSL, ": ").concat((0, o.FT)(T.light), ";\n      ").concat(o.RB.LIGHT_THEME_TEXT_COLOR, ": ").concat(i()(A).set("hsl.l", (O * C / 100).toFixed(2)).css(), ";\n    ");
-  return ".".concat(l, " {\n      ").concat(N, "\n      ").concat(R, "\n      ").concat(w, "\n      ").concat(P, "\n      }")
+  return ".".concat(l, " {\n      ").concat(N, "\n      ").concat(w, "\n      ").concat(R, "\n      ").concat(P, "\n      }")
 }
 
 function A(e, t) {

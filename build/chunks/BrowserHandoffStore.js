@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a;
 require.d(exports, {
-  A: () => R
+  A: () => w
 });
 var s, Chunk835245 = require("./835245.js"),
   Chunk311907 = require("./311907.js"),
@@ -77,7 +77,7 @@ class N extends(s = Chunk311907.Ay.Store) {
   }
 }
 g(N, "displayName", "BrowserHandoffStore");
-let R = new N(Chunk73153.h, {
+let w = new N(Chunk73153.h, {
   RPC_SERVER_READY: A,
   BROWSER_HANDOFF_BEGIN: I,
   BROWSER_HANDOFF_FROM_APP: S,

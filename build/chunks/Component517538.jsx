@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 517538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => _
@@ -99,8 +99,8 @@ function _() {
   let {
     name: e
   } = (0, h.x5)(g.oh.AUDIO_INPUT), [t, n] = l.useState(false), [r, i] = l.useState([]), v = (0, s.bG)([x.A], () => x.A.getKrispSuppressionLevel()), [_, y] = l.useState(null), A = l.useRef(null), C = l.useRef(null), [S, O] = l.useState(.5), {
-    krispModels: E,
-    krispModelOverride: T,
+    krispModels: T,
+    krispModelOverride: E,
     inputMode: N,
     echoCancellation: w,
     autoThreshold: I,
@@ -191,8 +191,8 @@ function _() {
         }), (0, a.jsx)(c.l6P, {
           label: "Krisp Model Override",
           clearable: true,
-          value: T,
-          options: E.map(e => ({
+          value: E,
+          options: T.map(e => ({
             label: e,
             value: e,
             id: e

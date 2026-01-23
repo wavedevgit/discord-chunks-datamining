@@ -95,13 +95,13 @@ function A(e) {
     S = i.useRef(null),
     T = i.useRef(null),
     C = i.useRef(null),
-    [N, R] = i.useState(false);
+    [N, w] = i.useState(false);
   i.useLayoutEffect(() => {
-    R(true)
+    w(true)
   }, []), i.useLayoutEffect(() => {
     h && (0, u.Y)(S)
   }, [h]);
-  let w = (0, r.jsx)("div", {
+  let R = (0, r.jsx)("div", {
       className: _.submenuPaddingContainer,
       children: (0, r.jsx)("div", E(m({
         className: s()(_.submenu, n)
@@ -132,7 +132,7 @@ function A(e) {
       } = e;
       return (0, r.jsx)(v.Provider, {
         value: t,
-        children: w
+        children: R
       })
     },
     children: e => {
@@ -155,7 +155,7 @@ function A(e) {
     spacing: 4,
     position: "right",
     align: "top",
-    children: () => w
+    children: () => R
   });
   return (0, r.jsxs)("div", {
     ref: S,

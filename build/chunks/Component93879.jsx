@@ -41,7 +41,7 @@ function b(e) {
   }, [S]), {
     state: C,
     recommendations: N,
-    skuIdToUserIdsReasons: R
+    skuIdToUserIdsReasons: w
   } = (0, _.A)({
     guildId: null == S ? true : S.guildId,
     applicationId: null == S ? true : S.id,
@@ -49,14 +49,14 @@ function b(e) {
     location: O,
     includeWishlists: true,
     userIds: a
-  }), w = i.useMemo(() => new Set(a), [a]), P = i.useMemo(() => N.length > 0 && N.every(e => {
+  }), R = i.useMemo(() => new Set(a), [a]), P = i.useMemo(() => N.length > 0 && N.every(e => {
     var t;
-    return null == (t = R[e.skuId]) ? true : t.some(e => e.reason === f.G.WISHLIST && w.has(e.userId))
-  }), [N, R, w]), D = i.useMemo(() => {
+    return null == (t = w[e.skuId]) ? true : t.some(e => e.reason === f.G.WISHLIST && R.has(e.userId))
+  }), [N, w, R]), D = i.useMemo(() => {
     let e = P && 1 === a.length;
     return N.map(t => {
       var n, i;
-      let s = null != (n = null == (i = R[t.skuId]) ? true : i.filter(e => e.reason === f.G.WISHLIST && w.has(e.userId)).map(e => e.userId).filter(d.Vq)) ? n : [];
+      let s = null != (n = null == (i = w[t.skuId]) ? true : i.filter(e => e.reason === f.G.WISHLIST && R.has(e.userId)).map(e => e.userId).filter(d.Vq)) ? n : [];
       return (0, r.jsx)(h.A, {
         variant: e ? h.$.NO_ICON : s.length > 0 ? h.$.WISHLIST : h.$.POPULAR,
         userIdsForRecommendation: s,
@@ -68,7 +68,7 @@ function b(e) {
         contextContainerClassName: y.RL
       }, t.skuId)
     })
-  }, [b, A, v, N, R, P, a, w]);
+  }, [b, A, v, N, w, P, a, R]);
   i.useEffect(() => {
     0 !== N.length && u.default.track(m.HAw.COMMERCE_SHOP_GIFTING_BREADCRUMB_VIEWED, {
       guild_id: v,

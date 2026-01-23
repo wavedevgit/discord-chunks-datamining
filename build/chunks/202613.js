@@ -7,7 +7,7 @@ require.d(exports, {
   EE: () => y,
   FQ: () => N,
   F_: () => O,
-  Pw: () => R,
+  Pw: () => w,
   Qh: () => m,
   SJ: () => _,
   Tu: () => g,
@@ -294,7 +294,7 @@ class N extends f {
     this.username = e.username || ""
   }
 }
-class R extends f {
+class w extends f {
   constructor(e) {
     if (e.id = "", e.paymentGateway = o.kM_.APPLE_PARTNER, e.type = o.hes.APPLE, e.billingAddress = {}, e.country = "", e.invalid = false, e.isDefault = false, e.flags = 0, super(e), e.type !== o.hes.APPLE) throw Error("Cannot instantiate AppleSourceRecord with type: ".concat(e.type, ", must be ").concat(o.hes.APPLE))
   }

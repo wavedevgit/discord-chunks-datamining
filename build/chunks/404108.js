@@ -58,10 +58,10 @@ function _(e) {
     }
   };
   let N = n.isLink(_) && "override" === I,
-    R = v && "action" === e.UNSTABLE_itemBehavior,
-    w = n.isLink(_) && "selection" !== I && "none" !== I,
-    P = !O && n.canSelectItem(_) && !N && !R,
-    D = (v || w) && !O,
+    w = v && "action" === e.UNSTABLE_itemBehavior,
+    R = n.isLink(_) && "selection" !== I && "none" !== I,
+    P = !O && n.canSelectItem(_) && !N && !w,
+    D = (v || R) && !O,
     x = D && ("replace" === n.selectionBehavior ? !P : !P || n.isEmpty),
     L = D && P && "replace" === n.selectionBehavior,
     j = x || L,
@@ -77,7 +77,7 @@ function _(e) {
           bubbles: true
         }))
       }
-      w && g.current && S.open(g.current, e, V.href, V.routerOptions)
+      R && g.current && S.open(g.current, e, V.href, V.routerOptions)
     },
     B = {
       ref: g

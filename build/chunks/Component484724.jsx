@@ -57,7 +57,7 @@ function O(e) {
     }
   };
 
-  function R() {
+  function w() {
     (0, c.V)(n) ? (0, l.Ze)(n) : (null == T ? true : T.isGuildStageVoice()) ? (0, d.av)(T) : (null == T ? true : T.isGuildVoice()) && E.A.joinVoiceEvent(T.guild_id, T.id)
   }
   return i.useEffect(() => {
@@ -68,7 +68,7 @@ function O(e) {
     guildScheduledEvent: I,
     isMember: C,
     onAcceptInstantInvite: N,
-    onTransitionToInviteChannel: R,
+    onTransitionToInviteChannel: w,
     recurrenceId: v
   })
 }

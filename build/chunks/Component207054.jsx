@@ -24,19 +24,19 @@ let u = e => {
     loopEnd: O,
     bannerAdjustment: v,
     imageData: A
-  } = e, I = true, S = 0, T = (0, s.gm)() && null != _.loopDelay && _.loopDelay > 0 && (null == A ? true : A.src) != null, [C, N] = i.useState("reset"), R = i.useRef(null != (t = null == A ? true : A.src) ? t : _.src), [w, P] = i.useState(null != (n = null == A ? true : A.src) ? n : _.src);
+  } = e, I = true, S = 0, T = (0, s.gm)() && null != _.loopDelay && _.loopDelay > 0 && (null == A ? true : A.src) != null, [C, N] = i.useState("reset"), w = i.useRef(null != (t = null == A ? true : A.src) ? t : _.src), [R, P] = i.useState(null != (n = null == A ? true : A.src) ? n : _.src);
   i.useEffect(() => {
     if (!T || "layer" === C) return;
     let e = new AbortController;
     return (async () => {
       try {
-        let t = R.current,
+        let t = w.current,
           n = await fetch(t, {
             signal: e.signal
           }),
           r = await n.blob();
         if (e.signal.aborted) return;
-        t !== (null == A ? true : A.src) && URL.revokeObjectURL(t), R.current = URL.createObjectURL(r), P(() => R.current)
+        t !== (null == A ? true : A.src) && URL.revokeObjectURL(t), w.current = URL.createObjectURL(r), P(() => w.current)
       } catch (e) {
         if ("AbortError" === e.name) return null;
         o.A.captureException(e)
@@ -45,7 +45,7 @@ let u = e => {
       e.abort()
     }
   }, [C, T, P, null == A ? true : A.src]), i.useEffect(() => () => {
-    R.current !== (null == A ? true : A.src) && URL.revokeObjectURL(R.current)
+    w.current !== (null == A ? true : A.src) && URL.revokeObjectURL(w.current)
   }, []);
   let D = e => {
     (0, s.gm)() && e !== C && N(e)
@@ -55,7 +55,7 @@ let u = e => {
     S = Math.floor((g - _.start) / e), g - _.start - S * e > _.duration && (h === a.l.ANIMATION_TYPE_INTERMITTENT && !E && null != b && S >= b && y(true), I = false)
   }
   return I ? (D("layer"), (0, r.jsx)("img", {
-    src: w,
+    src: R,
     className: c.QZ,
     style: {
       top: (null != (u = null == (f = _.position) ? true : f.y) ? u : 0) - v,

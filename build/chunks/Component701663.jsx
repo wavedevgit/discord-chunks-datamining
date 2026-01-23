@@ -75,7 +75,7 @@ let et = (0, Chunk268218.Fe)({
     let e = (0, u.bG)([W.A], () => W.A.hasLayers()),
       t = (0, p.red)(p.ueM),
       n = (0, u.bG)([Y.default], () => Y.default.isAuthenticated());
-    return (0, r.jsx)($.v5, {
+    return (0, r.jsx)(J.v5, {
       fixed: true,
       show: e || t || !n
     })
@@ -87,26 +87,26 @@ let et = (0, Chunk268218.Fe)({
     } = e, a = (0, K.getPlatform)(), f = o.Fr || o.v1, g = (0, u.bG)([E.A], () => E.A.useForcedColors ? "yes" : "no"), Y = i.useRef(document.body), W = "".concat(g);
     (0, N.M)(), (0, L.i)("AppSkeleton");
     let z = (0, D._D)("AppSkeleton"),
-      $ = P.wX.useConfig({
+      J = P.wX.useConfig({
         location: "AppSkeleton"
       }).enableFastConnectEarlyIdentify,
       er = (0, x.sK)("AppSkeleton");
     return i.useEffect(() => {
       K.isPlatformEmbedded && (z ? d.w.set(D.UR, "json") : d.w.remove(D.UR))
     }, [z]), i.useEffect(() => {
-      $ ? d.w.set(P.Vz, true) : d.w.remove(P.Vz)
-    }, [$]), i.useEffect(() => {
+      J ? d.w.set(P.Vz, true) : d.w.remove(P.Vz)
+    }, [J]), i.useEffect(() => {
       er ? d.w.set(x.AL, true) : d.w.remove(x.AL)
     }, [er]), (0, r.jsx)(B.e, {
       children: (0, r.jsxs)(y.A, {
         children: [(0, r.jsx)(q.A, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(m.N, {
-          children: (0, r.jsx)(w.A, {
+          children: (0, r.jsx)(R.A, {
             children: (0, r.jsxs)(p.xpW, {
               containerRef: Y,
-              children: [(0, r.jsx)(Q.Al, {}), (0, r.jsx)(Z.Ay, {}), (0, r.jsx)(c.Utq, {}), (0, r.jsx)(U.Wr, {
-                appContext: J.BRT.APP,
+              children: [(0, r.jsx)(Q.Al, {}), (0, r.jsx)(X.Ay, {}), (0, r.jsx)(c.Utq, {}), (0, r.jsx)(U.Wr, {
+                appContext: $.BRT.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(j.Yf, {
                   children: [null != a ? (0, r.jsx)(en, {}) : null, (0, r.jsxs)("div", {
@@ -124,16 +124,16 @@ let et = (0, Chunk268218.Fe)({
                                   className: s()(f ? ee.C$ : ee.yA),
                                   children: t
                                 }), (0, r.jsx)(_.A, {}), (0, r.jsx)(A.A, {}), (0, r.jsx)(h.A, {}), (0, r.jsx)(p.bM6, {}), (0, r.jsx)(H.A, {}), (0, r.jsx)(M.up, {}), (0, r.jsx)(l.P, {}), (0, r.jsx)(j.C8, {}), (0, r.jsx)(k.ok, {}), (0, r.jsx)(p.N9M, {
-                                  appContext: J.BRT.APP
+                                  appContext: $.BRT.APP
                                 }), (0, r.jsx)(v.A, {}), (0, r.jsx)(G.A, {}), (0, r.jsx)(et, {}), (0, r.jsx)(F.A, {})]
                               })
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(I.A, {}), (0, r.jsx)(X.A, {
+                    }), (0, r.jsx)(I.A, {}), (0, r.jsx)(Z.A, {
                       mobile: f
-                    }), (0, r.jsx)(R.A, {
+                    }), (0, r.jsx)(w.A, {
                       mobile: f
                     })]
                   }), false]

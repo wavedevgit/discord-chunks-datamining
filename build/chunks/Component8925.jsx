@@ -83,31 +83,31 @@ function S(e) {
     onAction: v,
     renderMoreButtonPopout: S
   } = e, T = i.useRef(null), C = (0, o.bG)([d.default], () => d.default.getId() === t.id), N = (0, f.A)(t.id), {
-    onInteraction: R,
-    onInteractionPopoutTargetRefChange: w
+    onInteraction: w,
+    onInteractionPopoutTargetRefChange: R
   } = (0, p.Pq)();
   if (t.bot || C || !N) return null;
   let P = () => {
-      w(O), n === _.dS.AVATAR ? v({
+      R(O), n === _.dS.AVATAR ? v({
         action: "PRESS_REACT_AVATAR"
       }) : n === _.dS.STATUS ? v({
         action: "PRESS_REACT_CUSTOM_STATUS"
       }) : v({
         action: "PRESS_REACT_ACTIVITY"
-      }), null == R || R({
+      }), null == w || w({
         interactionType: _.AQ.REACT,
         interactionSource: n,
         interactionSourceId: y
       })
     },
     D = () => {
-      w(O), n === _.dS.AVATAR ? v({
+      R(O), n === _.dS.AVATAR ? v({
         action: "PRESS_REPLY_AVATAR"
       }) : n === _.dS.STATUS ? v({
         action: "PRESS_REPLY_CUSTOM_STATUS"
       }) : v({
         action: "PRESS_REPLY_ACTIVITY"
-      }), null == R || R({
+      }), null == w || w({
         interactionType: _.AQ.REPLY,
         interactionSource: n,
         interactionSourceId: y
@@ -156,7 +156,7 @@ function S(e) {
     }), null == S ? true : S(e => {
       let t = () => {
         var t;
-        w(T), null == (t = e.onClick) || t.call(e)
+        R(T), null == (t = e.onClick) || t.call(e)
       };
       return (0, r.jsx)(l.m, {
         asContainer: true,

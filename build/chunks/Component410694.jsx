@@ -78,7 +78,7 @@ function T(e) {
 }
 
 function C(e) {
-  var t, n, C, N, R, w, P, D, x, L, j, M;
+  var t, n, C, N, w, R, P, D, x, L, j, M;
   let {
     stats: k,
     onClose: U
@@ -187,7 +187,7 @@ function C(e) {
           children: b
         }), (0, r.jsxs)("span", {
           className: c.cR,
-          children: [null != (R = null != (w = k.codecInfo.audioCodecDescription) ? w : k.codecInfo.audioCodec) ? R : "Unknown", null != k.codecInfo.audioBitrate && " @ ".concat((0, l.BZ)(k.codecInfo.audioBitrate))]
+          children: [null != (w = null != (R = k.codecInfo.audioCodecDescription) ? R : k.codecInfo.audioCodec) ? w : "Unknown", null != k.codecInfo.audioBitrate && " @ ".concat((0, l.BZ)(k.codecInfo.audioBitrate))]
         })]
       }), (null == (M = k.codecInfo) ? true : M.audioChannels) != null && (0, r.jsxs)("div", {
         className: c.N8,

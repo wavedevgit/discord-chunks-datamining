@@ -91,7 +91,7 @@ let v = new Chunk626584.A("PaymentElement.web.stories"),
       })]
     })
   },
-  R = e => {
+  w = e => {
     let {
       theme: t,
       colorText: n,
@@ -113,8 +113,8 @@ let v = new Chunk626584.A("PaymentElement.web.stories"),
     }), {
       elementsOptions: S,
       isLoading: T,
-      setupError: R,
-      customPaymentMethodIdsToSourceTypes: w
+      setupError: w,
+      customPaymentMethodIdsToSourceTypes: R
     } = (0, l.p)({
       onSetupError: e => {
         v.info("Stripe Payment Element options setup error: ", e)
@@ -127,7 +127,7 @@ let v = new Chunk626584.A("PaymentElement.web.stories"),
         tabBackgroundColor: p
       }
     });
-    return T || null != R || null == b ? (0, r.jsx)(c.eR, {}) : (0, r.jsxs)("div", {
+    return T || null != w || null == b ? (0, r.jsx)(c.eR, {}) : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         style: {
           marginBottom: 16
@@ -150,11 +150,11 @@ let v = new Chunk626584.A("PaymentElement.web.stories"),
               children: ["stripe-address-element" === E ? (0, r.jsx)("div", {
                 className: g.R,
                 children: (0, r.jsx)(c.Wf, O(y({}, A), {
-                  customPaymentMethodIdsToSourceTypes: w,
+                  customPaymentMethodIdsToSourceTypes: R,
                   step: d.pn.PAYMENT_ELEMENT
                 }))
               }) : (0, r.jsx)(c.Wf, O(y({}, A), {
-                customPaymentMethodIdsToSourceTypes: w,
+                customPaymentMethodIdsToSourceTypes: R,
                 step: d.pn.PAYMENT_ELEMENT
               })), ("joined-payment-address-elements" === E || "stripe-address-element" === E) && (0, r.jsx)(c.KS, O(y({}, I), {
                 billingAddressInfo: {
@@ -174,13 +174,13 @@ let v = new Chunk626584.A("PaymentElement.web.stories"),
       })]
     })
   },
-  w = e => (0, r.jsx)(R, O(y({}, e), {
+  R = e => (0, r.jsx)(w, O(y({}, e), {
     storyType: "joined-payment-address-elements"
   })),
-  P = e => (0, r.jsx)(R, O(y({}, e), {
+  P = e => (0, r.jsx)(w, O(y({}, e), {
     storyType: "stripe-payment-element"
   })),
-  D = e => (0, r.jsx)(R, O(y({}, e), {
+  D = e => (0, r.jsx)(w, O(y({}, e), {
     storyType: "stripe-address-element"
   })),
   x = {
@@ -217,7 +217,7 @@ let v = new Chunk626584.A("PaymentElement.web.stories"),
   L = {
     name: "Joined Payment + Address",
     id: "joined-payment-address-elements",
-    component: w,
+    component: R,
     controls: y({}, x)
   },
   j = {

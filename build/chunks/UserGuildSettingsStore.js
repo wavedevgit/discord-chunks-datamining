@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ay: () => eh,
-  b5: () => Z,
-  wn: () => X
+  b5: () => X,
+  wn: () => Z
 }), require("./896048.js"), require("./938796.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -66,10 +66,10 @@ let S = {},
   T = {},
   C = false,
   N = false,
-  R = {
+  w = {
     flags: 0
   },
-  w = new Chunk544743.Ay,
+  R = new Chunk544743.Ay,
   P = new Chunk544743.Ay,
   D = {
     suppress_everyone: false,
@@ -105,11 +105,11 @@ function F(e, t) {
   var n;
   let r = S[e],
     i = null != (n = null == r ? true : r.channel_overrides) ? n : {},
-    o = Z(t.channel_overrides),
-    l = I(v({}, X(e), r, t), {
+    o = X(t.channel_overrides),
+    l = I(v({}, Z(e), r, t), {
       channel_overrides: o
     });
-  w.clearTimer(e), a().forEach(i, e => {
+  R.clearTimer(e), a().forEach(i, e => {
     P.clearTimer(e.channel_id)
   }), B(e, l), S[e] = l, L[e] = ed(S[e]);
   let c = a().filter(l.channel_overrides, e => {
@@ -120,7 +120,7 @@ function F(e, t) {
 }
 
 function B(e, t) {
-  true === t.muted && w.setTimer(e, t.mute_config, () => {
+  true === t.muted && R.setTimer(e, t.mute_config, () => {
     Y(e, {
       muted: false
     }), l.h.dispatch({
@@ -198,22 +198,22 @@ function q(e, t, n) {
   }, (null != (r = null == i ? true : i.channel_overrides) ? r : {})[t], n)
 }
 
-function X(e) {
+function Z(e) {
   let t = h.A.getGuild(e);
   return x[null != t ? t.defaultMessageNotifications : g.orn.ALL_MESSAGES]
 }
 
-function Z() {
+function X() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
   return e instanceof Array ? a().keyBy(e, "channel_id") : e
 }
 
 function Q(e) {
   var t;
-  return null != (t = S[e]) ? t : X(e)
+  return null != (t = S[e]) ? t : Z(e)
 }
 
-function $(e) {
+function J(e) {
   null != e.userGuildSettings && 0 !== e.userGuildSettings.length && (S = {}, L = {}, j = {}, e.userGuildSettings.forEach(e => {
     let t = e.guild_id;
     S[t] = e;
@@ -228,8 +228,8 @@ function $(e) {
   }))
 }
 
-function J(e) {
-  en(e.notificationSettings), w.reset(), P.reset(), e.userGuildSettings.partial || (S = {}, L = {}, j = {});
+function $(e) {
+  en(e.notificationSettings), R.reset(), P.reset(), e.userGuildSettings.partial || (S = {}, L = {}, j = {});
   let t = new Set;
   for (let n in e.userGuildSettings.entries.forEach(e => {
       let n = e;
@@ -260,7 +260,7 @@ function et(e) {
 }
 
 function en(e) {
-  C = s.Lt(e.flags, E.i.USE_NEW_NOTIFICATIONS), N = s.Lt(e.flags, E.i.MENTION_ON_ALL_MESSAGES), R = e
+  C = s.Lt(e.flags, E.i.USE_NEW_NOTIFICATIONS), N = s.Lt(e.flags, E.i.MENTION_ON_ALL_MESSAGES), w = e
 }
 
 function er(e) {
@@ -333,7 +333,7 @@ function ec(e) {
 function eu(e) {
   let {
     guildId: t
-  } = e, n = null == S[t] ? X(t) : S[t];
+  } = e, n = null == S[t] ? Z(t) : S[t];
   S[t] = I(v({}, n), {
     guild_id: t,
     hide_muted_channels: true !== n.hide_muted_channels
@@ -541,7 +541,7 @@ class e_ extends(r = Chunk311907.Ay.PersistedStore) {
     return null != (e = j[M]) ? e : U
   }
   get accountNotificationSettings() {
-    return R
+    return w
   }
   get useNewNotifications() {
     return C
@@ -570,8 +570,8 @@ let eh = new e_(Chunk73153.h, {
   USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: ea,
   USER_GUILD_SETTINGS_CHANNEL_UPDATE: es,
   USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: ec,
-  CONNECTION_OPEN: J,
-  CACHE_LOADED: $,
+  CONNECTION_OPEN: $,
+  CACHE_LOADED: J,
   OVERLAY_INITIALIZE: ee,
   GUILD_CREATE: ef,
   GUILD_UPDATE: ef,

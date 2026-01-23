@@ -72,25 +72,25 @@ function N(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = R(e, t), Object.getOwnPropertySymbols)
+  if (a = w(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let w = 490,
+let R = 490,
   P = 490,
   D = 245,
   x = 200,
   L = 120,
   j = Chunk64700.forwardRef(function(e, t) {
-    var n, a, I, T, R, j, M, k, U;
+    var n, a, I, T, w, j, M, k, U;
     let {
       channel: G,
       type: V,
@@ -101,11 +101,11 @@ let w = 490,
     } = e, W = (0, h.GV)(), K = (0, l.bG)([E.A], () => {
       var e;
       return null != (e = E.A.getGuild(G.guild_id)) ? e : null
-    }, [G.guild_id]), z = i.useRef(null), [q, X, Z] = (0, O.A)(C(S({}, e), {
+    }, [G.guild_id]), z = i.useRef(null), [q, Z, X] = (0, O.A)(C(S({}, e), {
       guild: K
-    }), t, z), Q = (null == (I = V.autocomplete) ? true : I.forceChatLayer) ? g.Ay : m.Ay, $ = (0, p.aI)(q.selectedIndex);
-    (0, _.gf)(W, q.isVisible, $);
-    let J = (0, b.l)({
+    }), t, z), Q = (null == (I = V.autocomplete) ? true : I.forceChatLayer) ? g.Ay : m.Ay, J = (0, p.aI)(q.selectedIndex);
+    (0, _.gf)(W, q.isVisible, J);
+    let $ = (0, b.l)({
         editorHeight: F,
         type: V,
         state: q
@@ -115,11 +115,11 @@ let w = 490,
           t = d.Ay.getActivityPanelMode();
         return (0, u.AX)(G) && null != e && (0, f.H)(e.location) === G.id && t === v.Gd.PANEL
       }, [G]),
-      et = i.useMemo(() => (null == J ? true : J.top) == null && (null == J ? true : J.left) == null && (null == J ? true : J.bottom) == null && (null == J ? true : J.right) == null ? "" : String(Date.now()), [null == J ? true : J.top, null == J ? true : J.left, null == J ? true : J.bottom, null == J ? true : J.right]);
+      et = i.useMemo(() => (null == $ ? true : $.top) == null && (null == $ ? true : $.left) == null && (null == $ ? true : $.bottom) == null && (null == $ ? true : $.right) == null ? "" : String(Date.now()), [null == $ ? true : $.top, null == $ ? true : $.left, null == $ ? true : $.bottom, null == $ ? true : $.right]);
     if (i.useEffect(() => {
         var e, t;
         B(q.isVisible, null != (e = null == (t = q.query) ? true : t.type) ? e : null)
-      }, [B, q.isVisible, null == (T = q.query) ? true : T.type]), !q.isVisible || null == q.query || true === J) return null;
+      }, [B, q.isVisible, null == (T = q.query) ? true : T.type]), !q.isVisible || null == q.query || true === $) return null;
     let en = null != (n = q.query.typeInfo.renderResults({
       results: q.query.results,
       selectedIndex: q.selectedIndex,
@@ -127,19 +127,19 @@ let w = 490,
       guild: K,
       query: q.query.queryText,
       options: q.query.options,
-      onHover: e => X.onResultHover(e),
-      onClick: e => X.onResultClick(e)
+      onHover: e => Z.onResultHover(e),
+      onClick: e => Z.onResultClick(e)
     })) ? n : null;
     if (null == en) return null;
     let er = {
-        [A.pK]: null == J,
-        [A.YB]: null != J,
-        [A.sQ]: null == J && "bottom" === e.position,
+        [A.pK]: null == $,
+        [A.YB]: null != $,
+        [A.sQ]: null == $ && "bottom" === e.position,
         [A.mO]: ee,
-        [A.Wi]: (null == (R = q.query) ? true : R.type) === y.DB.MENTION_SUGGESTIONS
+        [A.Wi]: (null == (w = q.query) ? true : w.type) === y.DB.MENTION_SUGGESTIONS
       },
-      ei = w;
-    null != J && (ei = (null == (M = V.autocomplete) ? true : M.small) ? x : (null == (k = q.query) ? true : k.type) === y.DB.EMOJIS_AND_STICKERS ? P : D);
+      ei = R;
+    null != $ && (ei = (null == (M = V.autocomplete) ? true : M.small) ? x : (null == (k = q.query) ? true : k.type) === y.DB.EMOJIS_AND_STICKERS ? P : D);
     let ea = Math.max(F, null != (a = null == H || null == (j = H.current) ? true : j.clientHeight) ? a : 0),
       es = Math.min(.5 * window.innerHeight, ea);
     ei = Math.min(window.innerHeight - L - es - (null != Y ? Y : 0), ei);
@@ -149,7 +149,7 @@ let w = 490,
       innerClassName: A.Fv,
       onMouseDown: e => e.preventDefault(),
       children: (0, r.jsx)(o.hD, {
-        navigator: Z,
+        navigator: X,
         children: (0, r.jsx)(o.PR, {
           children: e => {
             let {
@@ -176,10 +176,10 @@ let w = 490,
         })
       })
     });
-    return null != J ? (0, r.jsx)(Q, {
+    return null != $ ? (0, r.jsx)(Q, {
       children: (0, r.jsx)(c.QCO, {
         targetRef: e.targetRef,
-        overrideTargetRect: J,
+        overrideTargetRect: $,
         positionKey: et,
         position: null != (U = e.position) ? U : "top",
         align: "left",

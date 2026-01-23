@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Di: () => A,
-  RG: () => R,
+  RG: () => w,
   Y: () => S,
   uD: () => I
 }), require("./747238.js"), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
@@ -147,7 +147,7 @@ function N(e, t, n, r) {
   }
   return i
 }
-async function R(e, t) {
+async function w(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 1;
   s.h.dispatch({
     type: "APPLICATION_ASSETS_FETCH",
@@ -164,7 +164,7 @@ async function R(e, t) {
     type: "APPLICATION_ASSETS_UPDATE",
     applicationId: e,
     assets: a
-  }), N(t, r, a, n)) ? O(e).then(() => R(e, t, n - 1)) : (s.h.dispatch({
+  }), N(t, r, a, n)) ? O(e).then(() => w(e, t, n - 1)) : (s.h.dispatch({
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r)

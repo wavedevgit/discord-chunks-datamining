@@ -313,7 +313,7 @@ class T {
 let C = new T;
 "u" > typeof window && C.setContainer(document.body);
 let N = Chunk64700.createContext(C);
-var R = function(e, t, n, r) {
+var w = function(e, t, n, r) {
   var i = n ? n.call(r, e, t) : true;
   if (true !== i) return !!i;
   if (e === t) returntrue;
@@ -330,13 +330,13 @@ var R = function(e, t, n, r) {
   }
   returntrue
 };
-let w = false,
+let R = false,
   P, D = {};
 
 function x() {
-  if (!w) return;
+  if (!R) return;
   let e = null == r ? true : r.getStyle();
-  null == e || R(e, D) ? null != P && cancelAnimationFrame(P) : (D = e, null == r || r.invalidate()), P = requestAnimationFrame(x)
+  null == e || w(e, D) ? null != P && cancelAnimationFrame(P) : (D = e, null == r || r.invalidate()), P = requestAnimationFrame(x)
 }
 let L = false,
   j = {
@@ -347,10 +347,10 @@ let L = false,
       L = e, null == r || r.invalidate()
     },
     enableAnimationTracking() {
-      w = true, P = requestAnimationFrame(x)
+      R = true, P = requestAnimationFrame(x)
     },
     disableAnimationTracking() {
-      w = false, null != P && cancelAnimationFrame(P)
+      R = false, null != P && cancelAnimationFrame(P)
     }
   };
 

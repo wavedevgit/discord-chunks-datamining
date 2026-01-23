@@ -54,7 +54,7 @@ let k = () => (0, r.jsx)("div", {
   U = e => {
     let {
       markAsDismissed: t
-    } = e, n = (0, R.H)(), i = () => {
+    } = e, n = (0, w.H)(), i = () => {
       null != t && t(x.i.DISMISS), n(D.HAw.CLIENT_THEME_PREVIEW_CLOSED), (0, N.D)()
     };
     return (0, r.jsxs)("div", {
@@ -112,7 +112,7 @@ let k = () => (0, r.jsx)("div", {
       isPreview: a
     } = (0, l.cf)([C.A], () => ({
       isPreview: C.A.isPreview
-    })), [s, c] = i.useState(false), d = (0, R.H)(), f = () => {
+    })), [s, c] = i.useState(false), d = (0, w.H)(), f = () => {
       null != t && t(x.i.DISMISS), d(D.HAw.CLIENT_THEME_PREVIEW_CLOSED), (0, N.D)(), n || (0, A.openUserSettings)(v.X.APPEARANCE_PANEL, {
         section: D.nc_.APPEARANCE
       })
@@ -160,14 +160,14 @@ function F(e) {
   } = (0, l.cf)([C.A, _.A], () => ({
     isPreview: C.A.isPreview,
     shouldEditorAnimate: n && !_.A.useReducedMotion
-  })), u = (0, g.fy)().activePanel === g.HP.CLIENT_THEMES, f = (0, R.H)();
+  })), u = (0, g.fy)().activePanel === g.HP.CLIENT_THEMES, f = (0, w.H)();
   i.useEffect(() => f(D.HAw.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
     o && S.default.track(D.HAw.PREMIUM_UPSELL_VIEWED, {
       type: L.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: a
     })
   }, [o, a]);
-  let E = (0, R.Z)(),
+  let E = (0, w.Z)(),
     y = (0, p.A)(null, o ? E : D.tEg);
   return i.useEffect(() => {
     if (o && !u) return E
@@ -180,7 +180,7 @@ function F(e) {
       children: (0, r.jsxs)(d.Fmo, {
         children: [n ? (0, r.jsx)(k, {}) : (0, r.jsx)(U, {
           markAsDismissed: t
-        }), (0, r.jsx)(w.A, {}), (0, r.jsx)(d.HOs, {
+        }), (0, r.jsx)(R.A, {}), (0, r.jsx)(d.HOs, {
           className: M.sV,
           children: (0, r.jsxs)(P.Ay, {
             type: P.v0.EDITOR,

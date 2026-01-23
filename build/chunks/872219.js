@@ -55,14 +55,14 @@ function E(e, t, n) {
   y && (C["aria-rowcount"] = t.collection.size + t.collection.headerRows.length), (0, f.D5)() && "expandedKeys" in t && (C.role = "treegrid");
   let {
     column: N,
-    direction: R
-  } = t.sortDescriptor || {}, w = (0, h.o)(g(i.A), "@react-aria/table"), P = (0, m.useMemo)(() => {
+    direction: w
+  } = t.sortDescriptor || {}, R = (0, h.o)(g(i.A), "@react-aria/table"), P = (0, m.useMemo)(() => {
     var e, n;
     let r = null != (n = null == (e = t.collection.columns.find(e => e.key === N)) ? true : e.textValue) ? n : "";
-    return R && N ? w.format(`${R}Sort`, {
+    return w && N ? R.format(`${w}Sort`, {
       columnName: r
     }) : true
-  }, [R, N, t.collection.columns]), D = (0, c.I)(P);
+  }, [w, N, t.collection.columns]), D = (0, c.I)(P);
   return (0, u.w)(() => {
     P && (0, s.iP)(P, "assertive", 500)
   }, [P]), {

@@ -126,7 +126,7 @@ function N(e) {
     tooltipOverrideText: A,
     nuxGraphic: S,
     onClick: C
-  } = e, [N, R] = (0, p.kn)([l.M.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), w = N === l.M.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
+  } = e, [N, w] = (0, p.kn)([l.M.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), R = N === l.M.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
     analyticsLocations: P
   } = (0, d.Ay)(), D = E.default.getCurrentUser(), x = null != D ? _.A.getFirstWishlistId(D.id) : null, L = (0, g.rJ)(x, t), j = i.useRef(null), [M, k] = i.useState(null);
   i.useEffect(() => {
@@ -147,19 +147,19 @@ function N(e) {
       } else {
         k(true);
         try {
-          await m.A.addSkuToWishlist(t, P), k(null), w && null != S && ((0, u.mMO)(async () => {
+          await m.A.addSkuToWishlist(t, P), k(null), R && null != S && ((0, u.mMO)(async () => {
             let {
               default: e
             } = await n.e("64581").then(n.bind(n, 38884));
             return t => (0, r.jsx)(e, T(I({}, t), {
               graphic: S
             }))
-          }), R(b.i.USER_DISMISS))
+          }), w(b.i.USER_DISMISS))
         } catch (e) {
           k(null), (0, u.showToast)((0, u.createToast)(O.intl.string(O.t.F8FvUy), u.ToastType.FAILURE)), u.ORC.announce(O.intl.string(O.t.F8FvUy))
         }
       }
-    }, [U, x, t, P, w, S, R, C]),
+    }, [U, x, t, P, R, S, w, C]),
     H = U ? O.intl.string(O.t.yr9TTf) : O.intl.string(O.t["8DkMEQ"]);
   return (y || U) && null != D ? h ? (0, r.jsx)(c.m_, {
     text: null != A ? A : H,
@@ -176,7 +176,7 @@ function N(e) {
         width: o
       })
     })
-  }) : w ? (0, r.jsx)(c.un, {
+  }) : R ? (0, r.jsx)(c.un, {
     title: O.intl.string(O.t["47Rhc3"]),
     body: O.intl.string(O.t.PXjA0b),
     "aria-label": H,

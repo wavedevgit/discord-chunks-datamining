@@ -58,7 +58,7 @@ function D(e) {
       questContentPosition: r,
       questContentRowIndex: a,
       sourceQuestContent: o
-    }), (0, I.ks)(t.config) && !f ? (0, N.E)() : d ? (0, I.K9)(t.config) ? (0, c.x)() : (0, I.tU)(t.config) ? (0, R.hJ)(t, n, o) : (0, I.HG)(t.config) ? (0, R.cf)(t, n, o) : (0, I.ks)(t.config) ? (0, R.Df)(t, n, o) : (0, R.rx)({
+    }), (0, I.ks)(t.config) && !f ? (0, N.E)() : d ? (0, I.K9)(t.config) ? (0, c.x)() : (0, I.tU)(t.config) ? (0, w.hJ)(t, n, o) : (0, I.HG)(t.config) ? (0, w.cf)(t, n, o) : (0, I.ks)(t.config) ? (0, w.Df)(t, n, o) : (0, w.rx)({
       quest: t,
       sourceQuestContent: o
     }) : (0, N.E)())
@@ -119,7 +119,7 @@ let x = e => {
   };
 
 function j(e) {
-  return e.config.features.includes(w.Li.START_QUEST_CTA) ? (0, S.vl)(e) ? e.config.features.includes(w.Li.CLOUD_GAMING_ACTIVITY) ? {
+  return e.config.features.includes(R.Li.START_QUEST_CTA) ? (0, S.vl)(e) ? e.config.features.includes(R.Li.CLOUD_GAMING_ACTIVITY) ? {
     text: P.intl.string(P.t["+qoymD"]),
     questContentCTA: p.Cy.START_QUEST
   } : {
@@ -176,7 +176,7 @@ function M(e) {
                 questContentPosition: s,
                 questContentRowIndex: o,
                 sourceQuestContent: d
-              }), (0, R.Fy)(n);
+              }), (0, w.Fy)(n);
               return
             }
             c || O || (0, f.Oy)(n.id, {
@@ -185,7 +185,7 @@ function M(e) {
               questContentPosition: s,
               questContentRowIndex: o,
               sourceQuestContent: d
-            }), c ? await (0, R.e0)(n, {
+            }), c ? await (0, w.e0)(n, {
               questContent: a,
               questContentCTA: t,
               sourceQuestContent: d,
@@ -221,13 +221,13 @@ function M(e) {
           text: P.intl.string(P.t.IsH2Sp),
           tooltipText: null,
           onClick: () => {
-            (0, R.Fy)(n)
+            (0, w.Fy)(n)
           }
         };
         if (c) return {
           text: (0, C.WM)(g),
           tooltipText: P.intl.string(P.t.hsbwjv),
-          onClick: () => (0, R.d5)({
+          onClick: () => (0, w.d5)({
             quest: n,
             questContent: a,
             sourceQuestContent: d,
@@ -242,7 +242,7 @@ function M(e) {
             text: e,
             tooltipText: P.intl.string(P.t.hsbwjv),
             onClick: () => {
-              n.config.features.includes(w.Li.START_QUEST_CTA) && b()
+              n.config.features.includes(R.Li.START_QUEST_CTA) && b()
             }
           }
         }

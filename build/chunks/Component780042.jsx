@@ -32,10 +32,10 @@ function O(e) {
     checked: t,
     onClick: n,
     id: a = "burst-reaction-toggle-button"
-  } = e, O = (0, l.bG)([f.A], () => f.A.useReducedMotion), v = _.default.getCurrentUser(), A = null == v || (0, h.TW)(v) ? [c.M.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, S] = (0, p.kn)(A), [T, C] = i.useState(false), [N, R] = (0, d.zhh)(() => ({})), w = (0, o.animated)(d.it9);
+  } = e, O = (0, l.bG)([f.A], () => f.A.useReducedMotion), v = _.default.getCurrentUser(), A = null == v || (0, h.TW)(v) ? [c.M.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, S] = (0, p.kn)(A), [T, C] = i.useState(false), [N, w] = (0, d.zhh)(() => ({})), R = (0, o.animated)(d.it9);
 
   function P() {
-    R({
+    w({
       from: {
         rotate: t ? "360deg" : "0deg"
       },
@@ -74,7 +74,7 @@ function O(e) {
         className: s()(E.Pf, {
           [E.wM]: t
         }),
-        children: [(0, r.jsx)(w, {
+        children: [(0, r.jsx)(R, {
           style: O ? true : N,
           size: "custom",
           width: b,

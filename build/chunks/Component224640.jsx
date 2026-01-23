@@ -74,19 +74,19 @@ function b(e) {
     contentOutsideContainer: S,
     trackingProps: T,
     children: C
-  } = e, N = i.useId(), R = i.useMemo(() => ({
+  } = e, N = i.useId(), w = i.useMemo(() => ({
     id: N,
     headingId: "heading-".concat(N),
     onClose: I,
     dismissable: A
-  }), [A, N, I]), w = (0, p.kS)(n, a), P = i.useRef(null);
+  }), [A, N, I]), R = (0, p.kS)(n, a), P = i.useRef(null);
   return (0, r.jsx)(f.V.Provider, {
-    value: R,
+    value: w,
     children: (0, r.jsx)(c.l, {
       id: N,
       role: O,
       "aria-label": v,
-      "aria-labelledby": null != v ? true : R.headingId,
+      "aria-labelledby": null != v ? true : w.headingId,
       returnRef: b,
       trackingProps: y(g({}, T), {
         impressionType: null != (t = null == T ? true : T.impressionType) ? t : l.ImpressionTypes.MODAL
@@ -103,7 +103,7 @@ function b(e) {
             children: [S, (0, r.jsx)(o.animated.div, {
               "data-mana-component": "modal",
               className: s()(h.container, h["size-".concat(_)], h["padding-size-".concat(m)]),
-              style: w,
+              style: R,
               children: C
             })]
           })

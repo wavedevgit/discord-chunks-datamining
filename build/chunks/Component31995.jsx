@@ -83,13 +83,13 @@ let S = function(e) {
       icon: A.icon,
       size: 32
     })
-  }) : null, R = (0, f.Ay)({
+  }) : null, w = (0, f.Ay)({
     applicationId: t,
     location: "GameMention",
     source: d.Ob.GameMention,
     trackEntryPointImpression: false,
     autoTrackExposure: false
-  }), w = i.useCallback(() => {
+  }), R = i.useCallback(() => {
     (0, c.mMO)(async () => {
       let {
         default: e
@@ -114,10 +114,10 @@ let S = function(e) {
           ref: O
         }, e), {
           onClick: n => {
-            if (R.shouldOpenGameProfile && null != t) {
+            if (w.shouldOpenGameProfile && null != t) {
               var r;
               null == (r = e.onClick) || r.call(e, n)
-            } else w()
+            } else R()
           },
           children: [(0, r.jsx)(E.A, {
             children: N

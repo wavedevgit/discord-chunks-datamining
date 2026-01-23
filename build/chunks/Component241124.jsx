@@ -120,18 +120,18 @@ function h(e) {
       }
       return d
     }, [T, C, g, E]),
-    R = i.useMemo(() => O.size > 0 || !A, [A, O]);
+    w = i.useMemo(() => O.size > 0 || !A, [A, O]);
   i.useEffect(() => {
-    R || (S.current = true)
-  }, [R]);
-  let w = i.useMemo(() => ({
+    w || (S.current = true)
+  }, [w]);
+  let R = i.useMemo(() => ({
     registerAsset: N,
     unregisterAsset: C,
     hasError: y,
-    isLoading: R && !S.current
-  }), [N, C, y, R]);
+    isLoading: w && !S.current
+  }), [N, C, y, w]);
   return (0, r.jsx)(d.Provider, {
-    value: w,
+    value: R,
     children: t
   })
 }

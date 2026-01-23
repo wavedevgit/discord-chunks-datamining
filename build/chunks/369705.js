@@ -46,8 +46,8 @@ module.exports = function(e, t, n, r, v, I, S) {
       var N = S.get(e);
       if (N) return N == t;
       r |= u, S.set(e, t);
-      var R = s(T(e), T(t), r, v, I, S);
-      return S.delete(e), R;
+      var w = s(T(e), T(t), r, v, I, S);
+      return S.delete(e), w;
     case y:
       if (A) return A.call(e) == A.call(t)
   }

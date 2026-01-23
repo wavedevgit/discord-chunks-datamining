@@ -2,7 +2,7 @@
 /** chunk id: 837921, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => Z,
+  Ay: () => X,
   UB: () => z,
   _0: () => V,
   dv: () => W,
@@ -65,10 +65,10 @@ let A = window.DiscordNative,
   T = e => e.startsWith("image/"),
   C = 5,
   N = null,
-  R = null,
   w = null,
+  R = null,
   P = {};
-null != A && (N = A.remoteApp.getVersion().split(".").map(e => parseInt(e)), w = null == (r = (i = A.remoteApp).getModuleVersions) ? true : r.call(i), R = null == (a = (s = A.remoteApp).getBuildNumber) ? true : a.call(s));
+null != A && (N = A.remoteApp.getVersion().split(".").map(e => parseInt(e)), R = null == (r = (i = A.remoteApp).getModuleVersions) ? true : r.call(i), w = null == (a = (s = A.remoteApp).getBuildNumber) ? true : a.call(s));
 let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
   x = false,
   L = "lastImageSaveDirectory",
@@ -151,10 +151,10 @@ function z(e, t) {
 
 function q(e) {
   if ((0, h.isDesktop)()) try {
-    X.send(e)
+    Z.send(e)
   } catch (e) {}
 }
-let X = {
+let Z = {
     requireModule: e => A.nativeModules.requireModule(e),
     ensureModule: e => h.isPlatformEmbedded ? __OVERLAY__ && D.has(e) ? Promise.resolve() : A.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
     get canBootstrapNewUpdater() {
@@ -307,10 +307,10 @@ let X = {
       return N
     },
     get buildNumber() {
-      return R
+      return w
     },
     get moduleVersions() {
-      return w
+      return R
     },
     get parsedOSRelease() {
       if (!h.isPlatformEmbedded) return [];
@@ -873,4 +873,4 @@ let X = {
       q("DISCORD_APP_ASYNC_INDEX_TSX_LOADED")
     }
   },
-  Z = X
+  X = Z

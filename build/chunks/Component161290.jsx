@@ -77,8 +77,8 @@ function M(e, t) {
 
 function k() {
   var e, t, n, i, x, j, k, U;
-  let G = (0, s.bG)([R.default], () => {
-      let e = R.default.getCurrentUser();
+  let G = (0, s.bG)([w.default], () => {
+      let e = w.default.getCurrentUser();
       return a()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
     }),
     V = (0, s.bG)([T.A], () => T.A.getUserProfile(G.id)),
@@ -91,8 +91,8 @@ function k() {
       pendingAccentColor: K,
       pendingThemeColors: z,
       pendingLegacyUsernameDisabled: q,
-      pendingPrimaryGuildId: X,
-      errors: Z
+      pendingPrimaryGuildId: Z,
+      errors: X
     } = (0, s.cf)([N.A], () => {
       let e = N.A.getAllPending(),
         t = N.A.getErrors();
@@ -104,19 +104,19 @@ function k() {
       userId: G.id,
       image: F
     }),
-    $ = (0, l.EC)(),
-    J = w.Ay.canUsePremiumProfileCustomization(G),
+    J = (0, l.EC)(),
+    $ = R.Ay.canUsePremiumProfileCustomization(G),
     ee = (0, d.z5)(F, G.avatar),
     et = (0, d.Ac)(H, null == V ? true : V.banner),
     en = (0, C.Ay)(G.id),
     er = null == en ? true : en.getLegacyUsername(),
-    ei = (null != (e = null == (k = Z.global_name) ? true : k.length) ? e : 0) > 0 ? Z.global_name : null != (t = null == $ ? true : $.nick) ? t : [],
-    ea = (null != (n = null == (U = Z.bio) ? true : U.length) ? n : 0) > 0 ? Z.bio : null != (i = null == $ ? true : $.bio) ? i : [],
+    ei = (null != (e = null == (k = X.global_name) ? true : k.length) ? e : 0) > 0 ? X.global_name : null != (t = null == J ? true : J.nick) ? t : [],
+    ea = (null != (n = null == (U = X.bio) ? true : U.length) ? n : 0) > 0 ? X.bio : null != (i = null == J ? true : J.bio) ? i : [],
     es = (0, u.b)(),
-    eo = () => J ? (0, r.jsxs)(r.Fragment, {
+    eo = () => $ ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(E.A, {
         showRemoveBannerButton: et,
-        errors: Z.banner,
+        errors: X.banner,
         onBannerChange: S.Iz,
         forcedDivider: true
       }, "banner"), (0, r.jsx)(O.A, {
@@ -143,14 +143,14 @@ function k() {
       user: G
     }), (0, r.jsx)(A.A, {
       sectionTitle: P.intl.string(P.t["+T3RI/"]),
-      errors: Z.pronouns,
+      errors: X.pronouns,
       onPronounsChange: S.Oz,
       pendingPronouns: W,
       currentPronouns: null != (x = null == V ? true : V.pronouns) ? x : ""
     }, "pronouns"), (0, r.jsx)(v.A, {}), (0, r.jsx)(_.A, {
       onAvatarChange: o.zq,
       showRemoveAvatarButton: ee,
-      errors: Z.avatar,
+      errors: X.avatar,
       sectionTitle: P.intl.string(P.t.lqaIxI),
       forcedDivider: true
     }, "avatar"), (0, r.jsx)(p.A, {
@@ -169,7 +169,7 @@ function k() {
       currentBio: null != (j = null == V ? true : V.bio) ? j : ""
     }, "bio"), es.length > 0 && (0, r.jsx)(c.A, {
       availablePrimaryGuilds: es,
-      pendingPrimaryGuildId: X,
+      pendingPrimaryGuildId: Z,
       onChange: e => (0, o.Ch)(e)
     }), null != er && (0, r.jsx)(m.A, {
       legacyUsername: er,

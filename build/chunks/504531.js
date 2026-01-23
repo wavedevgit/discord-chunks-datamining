@@ -13,12 +13,12 @@ require.d(exports, {
   Xq: () => D,
   a4: () => V,
   aB: () => M,
-  e_: () => w,
+  e_: () => R,
   le: () => S,
   mQ: () => k,
   pe: () => N,
   t7: () => x,
-  uD: () => R,
+  uD: () => w,
   vE: () => T,
   y8: () => G
 }), require("./896048.js"), require("./321073.js");
@@ -109,7 +109,7 @@ function N(e) {
   return e.getCurrentContent().getFirstBlock().getText()
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     r = t.getCurrentContent(),
     i = r.getFirstBlock(),
@@ -144,7 +144,7 @@ function R(e, t) {
   }), t
 }
 
-function w(e) {
+function R(e) {
   return r.EditorState.createEmpty(new r.CompositeDecorator(e))
 }
 

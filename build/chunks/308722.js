@@ -39,26 +39,26 @@ function u(e) {
       maxValue: C,
       isDateUnavailable: N
     } = e,
-    R = (0, c.useMemo)(() => (0, r.nz)(d, T, C, N, S), [d, T, C, N, S]),
-    w = (0, s.KZ)({
+    w = (0, c.useMemo)(() => (0, r.nz)(d, T, C, N, S), [d, T, C, N, S]),
+    R = (0, s.KZ)({
       ...e,
       value: d,
-      builtinValidation: R
+      builtinValidation: w
     }),
-    P = w.displayValidation.isInvalid,
+    P = R.displayValidation.isInvalid,
     D = e.validationState || (P ? "invalid" : null),
     x = (e, t) => {
-      f("timeZone" in t ? t.set((0, i.gw)(e)) : (0, i.tR)(e, t)), O(null), A(null), w.commitValidation()
+      f("timeZone" in t ? t.set((0, i.gw)(e)) : (0, i.tR)(e, t)), O(null), A(null), R.commitValidation()
     },
     L = t => {
       let n = "function" == typeof y ? y() : y;
-      E ? v || n ? x(t, v || (0, r.$l)(e.defaultValue || e.placeholderValue)) : O(t) : (f(t), w.commitValidation()), n && u.setOpen(false)
+      E ? v || n ? x(t, v || (0, r.$l)(e.defaultValue || e.placeholderValue)) : O(t) : (f(t), R.commitValidation()), n && u.setOpen(false)
     },
     j = e => {
       b && e ? x(b, e) : A(e)
     };
   return {
-    ...w,
+    ...R,
     value: d,
     defaultValue: null != (n = e.defaultValue) ? n : p,
     setValue: f,

@@ -101,7 +101,7 @@ function N(e) {
   return !!(0, f.ER)(r) && !!(0, f.de)(r) && (E[t] = r.id, true)
 }
 
-function R(e) {
+function w(e) {
   var t;
   let {
     channelId: n,
@@ -120,7 +120,7 @@ function R(e) {
     }, a);
   return null != s && E[i] !== s && (E[i] = s, true)
 }
-class w extends(r = Chunk311907.Ay.PersistedStore) {
+class R extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     this.waitFor(l.A, c.A), null != e && (h = e.automodFailedMessages, g = e.mentionRaidDetectionByGuild)
   }
@@ -147,11 +147,11 @@ class w extends(r = Chunk311907.Ay.PersistedStore) {
     return null != (t = E[e]) ? t : null
   }
 }
-_(w, "displayName", "GuildAutomodMessageStore"), _(w, "persistKey", "GuildAutomodMessages");
-let P = new w(Chunk73153.h, {
+_(R, "displayName", "GuildAutomodMessageStore"), _(R, "persistKey", "GuildAutomodMessages");
+let P = new R(Chunk73153.h, {
   CONNECTION_OPEN: v,
-  LOAD_MESSAGES_SUCCESS: R,
-  LOCAL_MESSAGES_LOADED: R,
+  LOAD_MESSAGES_SUCCESS: w,
+  LOCAL_MESSAGES_LOADED: w,
   MESSAGE_CREATE: N,
   MESSAGE_SEND_FAILED_AUTOMOD: A,
   MESSAGE_EDIT_FAILED_AUTOMOD: A,

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => P,
-  a: () => w
+  a: () => R
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -31,19 +31,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk662567 = require("./662567.js"),
   Chunk16533 = require("./16533.js"),
   Chunk312653 = require("./312653.js");
-let R = {
+let w = {
     xlarge: Chunk397927._3J.SIZE_48,
     large: Chunk397927._3J.SIZE_40,
     small: Chunk397927._3J.SIZE_24,
     xsmall: Chunk397927._3J.SIZE_20,
     default: Chunk397927._3J.SIZE_32
   },
-  w = Chunk64700.memo(function(e) {
+  R = Chunk64700.memo(function(e) {
     let {
       user: t,
       guildId: n,
       nameplate: a,
-      nameplateData: w,
+      nameplateData: R,
       className: P,
       innerClassName: D,
       isHighlighted: x,
@@ -57,17 +57,17 @@ let R = {
       nameplatePreviewSize: F = "default",
       skipEffectDisplayName: B = false,
       width: H
-    } = e, Y = (0, u.Ay)(), W = (0, l.Mw)(Y), K = null != a ? (0, p.D)(a) : w, z = (0, o.bG)([v.A], () => null != t ? v.A.getStatus(t.id) : c.clD.ONLINE), q = W ? "#706F74" : "#aaaab2", X = i.useRef(null), Z = (0, o.bG)([O.Ay], () => null != n && null != t ? O.Ay.getMember(n, t.id) : null), Q = null != t ? (0, b.eh)({
+    } = e, Y = (0, u.Ay)(), W = (0, l.Mw)(Y), K = null != a ? (0, p.D)(a) : R, z = (0, o.bG)([v.A], () => null != t ? v.A.getStatus(t.id) : c.clD.ONLINE), q = W ? "#706F74" : "#aaaab2", Z = i.useRef(null), X = (0, o.bG)([O.Ay], () => null != n && null != t ? O.Ay.getMember(n, t.id) : null), Q = null != t ? (0, b.eh)({
       pendingNickname: k,
       pendingGlobalName: M,
       user: t,
-      guildMember: Z
-    }) : true, $ = (0, y.lw)({
+      guildMember: X
+    }) : true, J = (0, y.lw)({
       pendingValue: U,
       userValue: null == t ? true : t.avatarDecoration,
-      guildValue: null == Z ? true : Z.avatarDecoration,
+      guildValue: null == X ? true : X.avatarDecoration,
       guildId: n
-    }), J = i.useMemo(() => R[F], [F]), ee = (0, _.A)({
+    }), $ = i.useMemo(() => w[F], [F]), ee = (0, _.A)({
       userId: null == t ? true : t.id,
       guildId: n,
       pendingDisplayNameStyles: G
@@ -93,19 +93,19 @@ let R = {
           nameplate: K,
           hovered: x,
           placement: A.u.PREVIEW,
-          content: j ? true : X
+          content: j ? true : Z
         }, null == a ? true : a.skuId), (0, r.jsxs)("div", {
           className: T.MU,
           children: [null != t ? (0, r.jsx)("div", {
             className: s()(T.H, !j && T.Mk),
             children: (0, r.jsx)(d.A, {
-              ref: X,
+              ref: Z,
               avatar: (0, r.jsx)(f.A, {
                 user: t,
                 guildId: n,
-                avatarSize: J,
+                avatarSize: $,
                 status: L ? z : true,
-                avatarDecorationOverride: $,
+                avatarDecorationOverride: J,
                 "aria-hidden": true
               }),
               decorators: (0, r.jsx)(E.Ay, {
@@ -127,7 +127,7 @@ let R = {
             className: s()(T.H, j && T.Mk),
             children: [(0, r.jsx)(c.euF, {
               src: W ? C : N,
-              size: J,
+              size: $,
               "aria-hidden": true,
               status: c.clD.ONLINE,
               statusColor: q,
@@ -140,4 +140,4 @@ let R = {
       })
     })
   }),
-  P = w
+  P = R

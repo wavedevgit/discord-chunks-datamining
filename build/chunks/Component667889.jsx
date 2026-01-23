@@ -2,7 +2,7 @@
 /** chunk id: 667889, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -94,7 +94,7 @@ function C(e) {
           role: "dialog",
           style: T,
           "aria-label": b.intl.string(b.t["3CNGLK"]),
-          children: t && (0, r.jsx)(R, A({}, i))
+          children: t && (0, r.jsx)(w, A({}, i))
         })
       }
     })
@@ -105,7 +105,7 @@ function N() {
   p.k(_.Se.DISMISSED)
 }
 
-function R(e) {
+function w(e) {
   let {
     channel: t,
     closeOnModalOuterClick: n = false,
@@ -149,4 +149,4 @@ function R(e) {
     initHistory: S
   })
 }
-let w = Chunk64700.memo(C)
+let R = Chunk64700.memo(C)

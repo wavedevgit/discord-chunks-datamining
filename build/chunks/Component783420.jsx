@@ -91,14 +91,14 @@ function A(e) {
     confirmationFooter: T,
     isGift: C,
     initialPlanId: N = null,
-    children: R
-  } = e, w = (0, i.bG)([f.default], () => f.default.getCurrentUser()), P = (0, i.bG)([p.A], () => p.A.getPremiumTypeSubscription()), {
+    children: w
+  } = e, R = (0, i.bG)([f.default], () => f.default.getCurrentUser()), P = (0, i.bG)([p.A], () => p.A.getPremiumTypeSubscription()), {
     analyticsLocations: D
   } = (0, s.Ay)(), x = (0, _.V)(), L = !C && null != x && null != g && h.TP[x.trial_id].skus.includes(g);
-  return R({
+  return w({
     onClick: e => {
       var i;
-      if (e.preventDefault(), null == w) return void(0, c.pX)(m.BVt.LOGIN, {
+      if (e.preventDefault(), null == R) return void(0, c.pX)(m.BVt.LOGIN, {
         source: "premium_subscribe_button"
       });
       if (null == t || t(e), (null == P ? true : P.status) === m.Dmq.ACCOUNT_HOLD) {
@@ -107,7 +107,7 @@ function A(e) {
         }), null == v || v(false);
         return
       }
-      if (!w.isClaimed()) return void(0, a.mMO)(async () => {
+      if (!R.isClaimed()) return void(0, a.mMO)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("12206"), n.e("24806"), n.e("80388")]).then(n.bind(n, 195759));
@@ -120,7 +120,7 @@ function A(e) {
           }))
         }
       });
-      if (!w.verified) return void(0, a.mMO)(async () => {
+      if (!R.verified) return void(0, a.mMO)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("12206"), n.e("90406")]).then(n.bind(n, 661925));

@@ -75,11 +75,11 @@ let B = true,
   K = false,
   z = Chunk652215.XlH.CLOSED,
   q = {},
-  X = null,
-  Z = false,
+  Z = null,
+  X = false,
   Q = false,
-  $ = false,
-  J = null,
+  J = false,
+  $ = null,
   ee = null,
   et = null,
   en = 0,
@@ -126,14 +126,14 @@ function em(e) {
   } = e, p = N.A.getGuild(n);
   if (null == p) return eg();
   let _ = A.A.getProfile(n);
-  s = o = p, l = c = _, $ = Q, ee = J, z = j.XlH.OPEN, q = {}, X = null, u = P.default.castGuildIdAsEveryoneGuildRoleId(n), er = o.mfaLevel, el = eo, f = null, ei = d, ey({
+  s = o = p, l = c = _, J = Q, ee = $, z = j.XlH.OPEN, q = {}, Z = null, u = P.default.castGuildIdAsEveryoneGuildRoleId(n), er = o.mfaLevel, el = eo, f = null, ei = d, ey({
     section: null != (t = null != i ? i : r) ? t : (0, L.x)(),
     subsection: null != a ? a : null
   })
 }
 
 function eg() {
-  K = false, z = j.XlH.CLOSED, s = o = null, Z = false, $ = false, ee = null, et = null, en = 0, ec = null, ef = null, ep = null, r = null, i = null, a = null, er = j.EkJ.NONE, d = true
+  K = false, z = j.XlH.CLOSED, s = o = null, X = false, J = false, ee = null, et = null, en = 0, ec = null, ef = null, ep = null, r = null, i = null, a = null, er = j.EkJ.NONE, d = true
 }
 
 function eE(e) {
@@ -229,7 +229,7 @@ function eN(e) {
     revoked: e.revoked,
     inviter: null != e.inviter ? new C.A(e.inviter) : null,
     channel: (0, I.OY)(e.channel),
-    guild: null != e.guild ? (0, w.DY)(e.guild) : null,
+    guild: null != e.guild ? (0, R.DY)(e.guild) : null,
     uses: e.uses,
     maxUses: e.max_uses,
     maxAge: e.max_age,
@@ -239,11 +239,11 @@ function eN(e) {
   })
 }
 
-function eR(e) {
+function ew(e) {
   ef = e.invites.reduce((e, t) => (e[t.code] = eN(t), e), {})
 }
 
-function ew(e) {
+function eR(e) {
   ef = G({}, ef), delete ef[e.code]
 }
 
@@ -345,7 +345,7 @@ function eF(e) {
 }
 
 function eB(e) {
-  Z = true, Q = $ = e.enabled, J = ee = e.channelId
+  X = true, Q = J = e.enabled, $ = ee = e.channelId
 }
 
 function eH(e) {
@@ -355,7 +355,7 @@ function eH(e) {
     channelId: r
   } = e;
   if (null == o || o.id !== t) returnfalse;
-  $ = n, ee = r
+  J = n, ee = r
 }
 
 function eY(e) {
@@ -387,7 +387,7 @@ function eq(e) {
   o = (0, v.hZ)(o, "features", new Set([...o.features, j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE]))
 }
 
-function eX(e) {
+function eZ(e) {
   let {
     guildId: t
   } = e;
@@ -395,7 +395,7 @@ function eX(e) {
   o = (0, v.hZ)(o, "features", new Set([...o.features, j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE]))
 }
 
-function eZ(e) {
+function eX(e) {
   var t, n, r, i, a, s, l, c, u, d;
   let {
     guildId: f,
@@ -419,14 +419,14 @@ function eQ() {
   eo = el = ea
 }
 
-function e$(e) {
+function eJ(e) {
   let {
     slug: t
   } = e;
   f = t
 }
 
-function eJ(e) {
+function e$(e) {
   let {} = e;
   f = null
 }
@@ -507,7 +507,7 @@ function e5(e) {
     guildId: t
   } = e;
   if (null == o || o.id !== t) returnfalse;
-  X = null
+  Z = null
 }
 
 function e7(e) {
@@ -515,7 +515,7 @@ function e7(e) {
     profile: t
   } = e;
   if ((null == c ? true : c.id) == null || !e_(c.id)) returnfalse;
-  t.id === (null == o ? true : o.id) && (l = c = t, X = null)
+  t.id === (null == o ? true : o.id) && (l = c = t, Z = null)
 }
 
 function e8(e) {
@@ -524,7 +524,7 @@ function e8(e) {
     error: n
   } = e;
   if (null == o || o.id !== t) returnfalse;
-  X = n
+  Z = n
 }
 
 function e9(e) {
@@ -532,17 +532,17 @@ function e9(e) {
     guildId: t
   } = e;
   if ((null == c ? true : c.id) == null || !e_(c.id)) returnfalse;
-  t === (null == o ? true : o.id) && (l = c = A.A.getProfile(t), X = null)
+  t === (null == o ? true : o.id) && (l = c = A.A.getProfile(t), Z = null)
 }
 class te extends(p = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(N.A, A.A, R.default)
+    this.waitFor(N.A, A.A, w.default)
   }
   getMetadata() {
     return el
   }
   widgetHasChanges() {
-    returnfalse !== Z && ($ !== Q || ee !== J)
+    returnfalse !== X && (J !== Q || ee !== $)
   }
   hasChanges() {
     return !h().isEqual(o, s) || !h().isEqual(el, eo) || !h().isEqual(c, l) || this.widgetHasChanges()
@@ -573,7 +573,7 @@ class te extends(p = Chunk311907.Ay.Store) {
   }
   getWidget() {
     return {
-      enabled: $,
+      enabled: J,
       channelId: ee
     }
   }
@@ -591,7 +591,7 @@ class te extends(p = Chunk311907.Ay.Store) {
     return null != (t = q[e]) ? t : null
   }
   getProfileError() {
-    return X
+    return Z
   }
   getSelectedRoleId() {
     return u
@@ -614,8 +614,8 @@ class te extends(p = Chunk311907.Ay.Store) {
       bansVersion: eu,
       invites: ef,
       selectedRoleId: u,
-      fetchedEmbed: Z,
-      embedEnabled: $,
+      fetchedEmbed: X,
+      embedEnabled: J,
       embedChannelId: ee,
       mfaLevel: er,
       searchQuery: a,
@@ -647,14 +647,14 @@ let tt = new te(Chunk73153.h, __OVERLAY__ ? {} : {
   GUILD_SETTINGS_SET_SEARCH_QUERY: eb,
   GUILD_SETTINGS_LOADED_BANS: eD,
   GUILD_SETTINGS_LOADED_BANS_BATCH: ex,
-  GUILD_SETTINGS_LOADED_INVITES: eR,
+  GUILD_SETTINGS_LOADED_INVITES: ew,
   GUILD_SETTINGS_SET_WIDGET: eB,
   GUILD_SETTINGS_SET_VANITY_URL: eY,
   GUILD_SETTINGS_SET_MFA_SUCCESS: eW,
   GUILD_SETTINGS_ROLE_SELECT: eU,
   GUILD_SETTINGS_LOADED_INTEGRATIONS: eK,
   GUILD_SETTINGS_PIN_PERMISSION_MIGRATED: eq,
-  GUILD_SETTINGS_SLOWMODE_PERMISSION_MIGRATED: eX,
+  GUILD_SETTINGS_SLOWMODE_PERMISSION_MIGRATED: eZ,
   GUILD_BAN_ADD: eL,
   GUILD_BAN_REMOVE: ej,
   GUILD_ROLE_CREATE: eG,
@@ -671,16 +671,16 @@ let tt = new te(Chunk73153.h, __OVERLAY__ ? {} : {
   GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: e8,
   USER_CONNECTIONS_UPDATE: ez,
   GUILD_INTEGRATIONS_UPDATE: ez,
-  INSTANT_INVITE_REVOKE_SUCCESS: ew,
+  INSTANT_INVITE_REVOKE_SUCCESS: eR,
   INSTANT_INVITE_CREATE_SUCCESS: eP,
-  GUILD_UPDATE_DISCOVERY_METADATA_FROM_SERVER: eZ,
+  GUILD_UPDATE_DISCOVERY_METADATA_FROM_SERVER: eX,
   GUILD_DISCOVERY_METADATA_FETCH_FAIL: eQ,
   GUILD_DISCOVERY_CATEGORY_ADD: e0,
   GUILD_DISCOVERY_CATEGORY_DELETE: e1,
   GUILD_DISCOVERY_CATEGORY_UPDATE_FAIL: e2,
   GUILD_UPDATE_DISCOVERY_METADATA: e3,
   GUILD_UPDATE_DISCOVERY_METADATA_FAIL: e6,
-  GUILD_DISCOVERY_SLUG_FETCH_SUCCESS: e$,
-  GUILD_DISCOVERY_SLUG_FETCH_FAIL: eJ,
+  GUILD_DISCOVERY_SLUG_FETCH_SUCCESS: eJ,
+  GUILD_DISCOVERY_SLUG_FETCH_FAIL: e$,
   GUILD_SETTINGS_WIDGET_UPDATE: eH
 })

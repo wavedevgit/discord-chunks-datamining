@@ -4,8 +4,8 @@
 require.d(exports, {
   $m: () => x,
   Dc: () => M,
-  EO: () => w,
-  WM: () => R,
+  EO: () => R,
+  WM: () => w,
   jl: () => L,
   rI: () => C,
   rQ: () => P,
@@ -97,11 +97,11 @@ let N = Object.freeze({
   large: Chunk997168.as,
   dynamic: null
 });
-var R = function(e) {
+var w = function(e) {
   return e.DEFAULT = "default", e.SUBTLE = "subtle", e
 }({});
 
-function w(e) {
+function R(e) {
   var t;
   let {
     transitionState: n,
@@ -115,7 +115,7 @@ function w(e) {
     returnRef: A,
     animation: T = "default",
     parentComponent: C
-  } = e, R = S(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]), w = n === g.ip.ENTERING || n === g.ip.ENTERED;
+  } = e, w = S(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]), R = n === g.ip.ENTERING || n === g.ip.ENTERED;
   i.useContext(h.A)({
     type: l.ImpressionTypes.PAGE,
     name: l.ImpressionNames.MODAL_ROOT_LEGACY,
@@ -126,15 +126,15 @@ function w(e) {
   let {
     reducedMotion: P
   } = i.useContext(d.CZY), D = (0, d.zhh)({
-    opacity: +!!w,
-    transform: w || P.enabled || "subtle" === T ? "scale(1)" : "scale(0.7)",
+    opacity: +!!R,
+    transform: R || P.enabled || "subtle" === T ? "scale(1)" : "scale(0.7)",
     config: {
       duration: 200,
       easing: c.A.Easing.out(c.A.Easing.quad),
       clamp: true
     },
     onRest: O
-  }, "animate-always"), x = i.useRef(null), L = null != R["aria-label"], j = null != R["aria-labelledby"], M = i.useId(), k = null != (t = R["aria-labelledby"]) ? t : M, U = i.useMemo(() => ({
+  }, "animate-always"), x = i.useRef(null), L = null != w["aria-label"], j = null != w["aria-labelledby"], M = i.useId(), k = null != (t = w["aria-labelledby"]) ? t : M, U = i.useMemo(() => ({
     headerId: k,
     headerIdIsManaged: j
   }), [k, j]);
@@ -146,7 +146,7 @@ function w(e) {
       returnRef: A,
       impressionType: l.ImpressionTypes.MODAL,
       "aria-labelledby": L ? true : U.headerId
-    }, R), {
+    }, w), {
       children: (0, r.jsx)(o.animated.div, {
         className: s()(_, b.zr, N[u], {
           [b.z]: m,

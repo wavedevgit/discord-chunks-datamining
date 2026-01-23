@@ -105,7 +105,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     nameplate: t
   } = e;
@@ -120,7 +120,7 @@ function R(e) {
     })
   })
 }
-let w = e => {
+let R = e => {
   let {
     sku: t
   } = e, {
@@ -145,7 +145,7 @@ let w = e => {
     skuId: e.skuId
   })).with({
     type: a.R.NAMEPLATE
-  }, e => (0, r.jsx)(R, {
+  }, e => (0, r.jsx)(w, {
     nameplate: e
   })).otherwise(() => null);
   return null != n && null == l ? (0, r.jsx)("div", {
@@ -163,7 +163,7 @@ function P(e) {
   let {
     sku: t
   } = e;
-  return t.productLine === E.EZt.COLLECTIBLES ? (0, r.jsx)(w, {
+  return t.productLine === E.EZt.COLLECTIBLES ? (0, r.jsx)(R, {
     sku: t
   }) : null
 }

@@ -27,8 +27,8 @@ var r, Chunk557939 = require("./557939.js"),
   T = Chunk985729.URLSearchParams,
   C = Chunk985729.getState,
   N = Chunk860511.URL,
-  R = Chunk860511.TypeError,
-  w = Chunk860511.parseInt,
+  w = Chunk860511.TypeError,
+  R = Chunk860511.parseInt,
   P = Math.floor,
   D = Math.pow,
   x = Chunk410323("".charAt),
@@ -47,11 +47,11 @@ var r, Chunk557939 = require("./557939.js"),
   K = "Invalid scheme",
   z = "Invalid host",
   q = "Invalid port",
-  X = /[a-z]/i,
-  Z = /[\d+-.a-z]/i,
+  Z = /[a-z]/i,
+  X = /[\d+-.a-z]/i,
   Q = /\d/,
-  $ = /^0x/i,
-  J = /^[0-7]+$/,
+  J = /^0x/i,
+  $ = /^[0-7]+$/,
   ee = /^\d+$/,
   et = /^[\da-f]+$/i,
   en = /[\0\t\n\r #%/:<>?@[\\\]^|]/,
@@ -64,10 +64,10 @@ var r, Chunk557939 = require("./557939.js"),
     if (l.length && "" === l[l.length - 1] && l.length--, (t = l.length) > 4) return e;
     for (r = 0, n = []; r < t; r++) {
       if ("" === (i = l[r])) return e;
-      if (a = 10, i.length > 1 && "0" === x(i, 0) && (a = L($, i) ? 16 : 8, i = B(i, 8 === a ? 1 : 2)), "" === i) s = 0;
+      if (a = 10, i.length > 1 && "0" === x(i, 0) && (a = L(J, i) ? 16 : 8, i = B(i, 8 === a ? 1 : 2)), "" === i) s = 0;
       else {
-        if (!L(10 === a ? ee : 8 === a ? J : et, i)) return e;
-        s = w(i, a)
+        if (!L(10 === a ? ee : 8 === a ? $ : et, i)) return e;
+        s = R(i, a)
       }
       U(n, s)
     }
@@ -97,7 +97,7 @@ var r, Chunk557939 = require("./557939.js"),
         d++, u = ++c;
         continue
       }
-      for (t = n = 0; n < 4 && L(et, f());) t = 16 * t + w(f(), 16), d++, n++;
+      for (t = n = 0; n < 4 && L(et, f());) t = 16 * t + R(f(), 16), d++, n++;
       if ("." === f()) {
         if (0 === n || (d -= n, c > 6)) return;
         for (r = 0; f();) {
@@ -106,7 +106,7 @@ var r, Chunk557939 = require("./557939.js"),
             else d++;
           if (!L(Q, f())) return;
           for (; L(Q, f());) {
-            if (a = w(f(), 10), null === i) i = a;
+            if (a = R(f(), 10), null === i) i = a;
             else {
               if (0 === i) return;
               i = 10 * i + a
@@ -185,7 +185,7 @@ var r, Chunk557939 = require("./557939.js"),
   },
   eg = function(e, t) {
     var n;
-    return 2 === e.length && L(X, x(e, 0)) && (":" === (n = x(e, 1)) || !t && "|" === n)
+    return 2 === e.length && L(Z, x(e, 0)) && (":" === (n = x(e, 1)) || !t && "|" === n)
   },
   eE = function(e) {
     var t;
@@ -205,8 +205,8 @@ var r, Chunk557939 = require("./557939.js"),
   eT = {},
   eC = {},
   eN = {},
-  eR = {},
   ew = {},
+  eR = {},
   eP = {},
   eD = {},
   ex = {},
@@ -221,10 +221,10 @@ var r, Chunk557939 = require("./557939.js"),
   eB = function(e, t, n) {
     var r, i, a, s = y(e);
     if (t) {
-      if (i = this.parse(s)) throw new R(i);
+      if (i = this.parse(s)) throw new w(i);
       this.searchParams = null
     } else {
-      if (true !== n && (r = new eB(n, true)), i = this.parse(s, null, r)) throw new R(i);
+      if (true !== n && (r = new eB(n, true)), i = this.parse(s, null, r)) throw new w(i);
       (a = C(new T)).bindURL(this), this.searchParams = a
     }
   };
@@ -241,7 +241,7 @@ eB.prototype = {
     for (e = y(e), t || (l.scheme = "", l.username = "", l.password = "", l.host = null, l.port = null, l.path = [], l.query = null, l.fragment = null, l.cannotBeABaseURL = false, e = G(e, ei, ""), e = G(e, ea, "$1")), i = h(e = G(e, es, "")); u <= i.length;) {
       switch (a = i[u], c) {
         case eO:
-          if (a && L(X, a)) d += H(a), c = ev;
+          if (a && L(Z, a)) d += H(a), c = ev;
           else {
             if (t) return K;
             c = eA;
@@ -249,7 +249,7 @@ eB.prototype = {
           }
           break;
         case ev:
-          if (a && (L(Z, a) || "+" === a || "-" === a || "." === a)) d += H(a);
+          if (a && (L(X, a) || "+" === a || "-" === a || "." === a)) d += H(a);
           else if (":" === a) {
             if (t && (l.isSpecial() !== p(em, d) || "file" === d && (l.includesCredentials() || null !== l.port) || "file" === l.scheme && !l.host)) return;
             if (l.scheme = d, t) {
@@ -272,7 +272,7 @@ eB.prototype = {
           c = "file" === n.scheme ? eL : eT;
           continue;
         case eI:
-          if ("/" === a && "/" === i[u + 1]) c = eR, u++;
+          if ("/" === a && "/" === i[u + 1]) c = ew, u++;
           else {
             c = eT;
             continue
@@ -280,7 +280,7 @@ eB.prototype = {
           break;
         case eS:
           if ("/" === a) {
-            c = ew;
+            c = eR;
             break
           }
           c = eU;
@@ -296,24 +296,24 @@ eB.prototype = {
           }
           break;
         case eC:
-          if (l.isSpecial() && ("/" === a || "\\" === a)) c = eR;
-          else if ("/" === a) c = ew;
+          if (l.isSpecial() && ("/" === a || "\\" === a)) c = ew;
+          else if ("/" === a) c = eR;
           else {
             l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, c = eU;
             continue
           }
           break;
         case eN:
-          if (c = eR, "/" !== a || "/" !== x(d, u + 1)) continue;
+          if (c = ew, "/" !== a || "/" !== x(d, u + 1)) continue;
           u++;
           break;
-        case eR:
+        case ew:
           if ("/" !== a && "\\" !== a) {
-            c = ew;
+            c = eR;
             continue
           }
           break;
-        case ew:
+        case eR:
           if ("@" === a) {
             f && (d = "%40" + d), f = true, s = h(d);
             for (var E = 0; E < s.length; E++) {
@@ -356,7 +356,7 @@ eB.prototype = {
           else {
             if (!(a === r || "/" === a || "?" === a || "#" === a || "\\" === a && l.isSpecial()) && !t) return q;
             if ("" !== d) {
-              var v = w(d, 10);
+              var v = R(d, 10);
               if (v > 65535) return q;
               l.port = l.isSpecial() && v === em[l.scheme] ? null : v, d = ""
             }
@@ -478,7 +478,7 @@ eB.prototype = {
   },
   setHref: function(e) {
     var t = this.parse(e);
-    if (t) throw new R(t);
+    if (t) throw new w(t);
     this.searchParams.update()
   },
   getOrigin: function() {

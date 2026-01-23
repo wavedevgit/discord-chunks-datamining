@@ -234,7 +234,7 @@ class H extends Chunk767065.A {
               }
             }
             let I = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != r ? r : 0) + (null != i ? i : 0) + (null != a ? a : 0) + (null != _ ? _ : 0) + (null != y ? y : 0) + (null != E ? E : 0),
-              R = (null != c ? c : 0) + (null != u ? u : 0) + (null != d ? d : 0) + (null != f ? f : 0) + (null != p ? p : 0);
+              w = (null != c ? c : 0) + (null != u ? u : 0) + (null != d ? d : 0) + (null != f ? f : 0) + (null != p ? p : 0);
             S.default.track(D.HAw.SCREENSHARE_FINISHED, j({
               screenshare_frames: e,
               videohook_frames: t,
@@ -254,7 +254,7 @@ class H extends Chunk767065.A {
               screencapturekit_frames: y,
               go_live_camera_frames: E,
               total_frames: I,
-              total_frames_unique: R,
+              total_frames_unique: w,
               desktop_capturer_type: m,
               media_session_id: C,
               rtc_connection_id: N,
@@ -271,7 +271,7 @@ class H extends Chunk767065.A {
           })
         }), null == (i = this._connection) || i.on(a.yq.SoundshareAttached, () => {
           let e = b.A.getGoLiveSource();
-          (null == e ? true : e.desktopSource) != null && S.default.track(D.HAw.SOUNDSHARE_ATTACHED, j({}, (0, w.A)(null == e ? true : e.desktopSource), this.getSoundshareAnalyticsProperties()))
+          (null == e ? true : e.desktopSource) != null && S.default.track(D.HAw.SOUNDSHARE_ATTACHED, j({}, (0, R.A)(null == e ? true : e.desktopSource), this.getSoundshareAnalyticsProperties()))
         }), null == (o = this._connection) || o.on(a.yq.SoundshareFailed, e => {
           let {
             failureCode: t,
@@ -281,7 +281,7 @@ class H extends Chunk767065.A {
           this.reportSoundshareFailure(null == i ? true : i.desktopSource, t, n, r)
         }), null == (c = this._connection) || c.on(a.yq.SoundshareSpeaking, () => {
           let e = b.A.getGoLiveSource();
-          (null == e ? true : e.desktopSource) != null && (S.default.track(D.HAw.SOUNDSHARE_TRANSMITTING, j({}, (0, w.A)(null == e ? true : e.desktopSource), this.getSoundshareAnalyticsProperties())), null != y.A.getHookError(D.LU7.SOUND) && l.h.dispatch({
+          (null == e ? true : e.desktopSource) != null && (S.default.track(D.HAw.SOUNDSHARE_TRANSMITTING, j({}, (0, R.A)(null == e ? true : e.desktopSource), this.getSoundshareAnalyticsProperties())), null != y.A.getHookError(D.LU7.SOUND) && l.h.dispatch({
             type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
           }))
         }), null == (u = this._connection) || u.on(a.yq.SoundshareTrace, e => {
@@ -351,7 +351,7 @@ class H extends Chunk767065.A {
         })
       }
     }), this.on(u.q.Video, (t, n, r, i, a) => {
-      let s = (0, R.Iy)(this.streamKey);
+      let s = (0, w.Iy)(this.streamKey);
       s.guildId === t && s.channelId === n && s.ownerId === r && (null == this.getMediaSessionId() || e || (this.trackVideoStartStats(), e = true), this.updateVideoStreamId(i, a))
     }), this.on(u.q.VideoSourceQualityChanged, (e, t, n, r, i, a) => {
       var s;
@@ -384,7 +384,7 @@ class H extends Chunk767065.A {
       soundshare_failure_code: t,
       soundshare_failure_reason: n,
       soundshare_failure_will_retry: r
-    }, (0, w.A)(e), this.getSoundshareAnalyticsProperties()))
+    }, (0, R.A)(e), this.getSoundshareAnalyticsProperties()))
   }
   getStreamAnalyticsProperties() {
     let {
@@ -492,7 +492,7 @@ class H extends Chunk767065.A {
   }
   getExtraConnectionOptions() {
     return {
-      streamUserId: (0, R.Iy)(this.streamKey).ownerId
+      streamUserId: (0, w.Iy)(this.streamKey).ownerId
     }
   }
   constructor({
@@ -504,7 +504,7 @@ class H extends Chunk767065.A {
     parentMediaSessionId: s,
     channelId: c
   }) {
-    const u = (0, R.Iy)(t),
+    const u = (0, w.Iy)(t),
       {
         guildId: f,
         channelId: p
@@ -524,7 +524,7 @@ class H extends Chunk767065.A {
         guildId: n,
         channelId: r,
         ownerId: i
-      } = (0, R.Iy)(this.streamKey);
+      } = (0, w.Iy)(this.streamKey);
       l.h.dispatch({
         type: "RTC_CONNECTION_VIDEO",
         guildId: n,

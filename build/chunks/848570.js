@@ -2,7 +2,7 @@
 /** chunk id: 848570, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R
+  A: () => w
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk143236 = require("./143236.js"),
@@ -67,7 +67,7 @@ function N(e, t) {
   }), e
 }
 
-function R(e) {
+function w(e) {
   let t = r.useContext(l.Ay),
     n = c.SI.useSetting(),
     [i] = r.useState(() => {
@@ -75,7 +75,7 @@ function R(e) {
       return r.children = (0, u.x7)(""), r.selection = {
         anchor: I.K,
         focus: I.K
-      }, w(N(T({}, e), {
+      }, R(N(T({}, e), {
         editor: r,
         windowContext: t,
         previewMarkdown: n
@@ -91,7 +91,7 @@ function R(e) {
   }, [i, n]), i
 }
 
-function w(e) {
+function R(e) {
   var t, n, r;
   let {
     editor: a,
@@ -105,17 +105,17 @@ function w(e) {
     onChangeStart: T,
     onChangeEnd: C,
     updateState: N
-  } = e, R = a, {
-    onChange: w
-  } = R;
-  R.chatInputType = s, R.windowContext = u, R.previewMarkdown = I, R.composition = null, R.events = new i.EventEmitter, R.isMac = "MacIntel" === navigator.platform, R.onChange = () => {
-    R.events.emit("onChange"), w()
-  }, R = (0, b.o)(R, true === S), R = (0, y.A)(R), R = (0, E.A)(R), (null == (t = s.commands) ? true : t.enabled) && (R = (0, d.A)(R, o, true === l, true === c)), R = (0, g.Ay)(R, o.guild_id, o.id), (null == (n = s.markdown) ? true : n.disableBlockQuotes) || (R = (0, f.A)(R)), (null == (r = s.markdown) ? true : r.disableCodeBlocks) || (R = (0, p.Ay)(R)), S && (R = (0, v.A)(R)), R = (0, m.A)(R), R = (0, _.A)(R), R = (0, O.A)(R), R = (0, A.A)(R, T, C), R = (0, h.A)(R, e => {
+  } = e, w = a, {
+    onChange: R
+  } = w;
+  w.chatInputType = s, w.windowContext = u, w.previewMarkdown = I, w.composition = null, w.events = new i.EventEmitter, w.isMac = "MacIntel" === navigator.platform, w.onChange = () => {
+    w.events.emit("onChange"), R()
+  }, w = (0, b.o)(w, true === S), w = (0, y.A)(w), w = (0, E.A)(w), (null == (t = s.commands) ? true : t.enabled) && (w = (0, d.A)(w, o, true === l, true === c)), w = (0, g.Ay)(w, o.guild_id, o.id), (null == (n = s.markdown) ? true : n.disableBlockQuotes) || (w = (0, f.A)(w)), (null == (r = s.markdown) ? true : r.disableCodeBlocks) || (w = (0, p.Ay)(w)), S && (w = (0, v.A)(w)), w = (0, m.A)(w), w = (0, _.A)(w), w = (0, O.A)(w), w = (0, A.A)(w, T, C), w = (0, h.A)(w, e => {
     let {
       newValue: t,
       newSelection: n
     } = e;
-    return N(R, "undo", {
+    return N(w, "undo", {
       value: t,
       selection: n
     })

@@ -289,8 +289,8 @@ function C(e) {
     onClose: O,
     onSelect: A,
     onInteraction: C
-  } = e, N = I(y), w = S(N), P = i.useRef([]);
-  l()(P.current, w) || (P.current = w);
+  } = e, N = I(y), R = S(N), P = i.useRef([]);
+  l()(P.current, R) || (P.current = R);
   let D = (0, p.Y)("Menu"),
     x = null == (t = N.find(e => null != e.key)) ? true : t.key,
     L = (0, c.A)({
@@ -325,7 +325,7 @@ function C(e) {
         className: E.scroller,
         children: [0 === N.length && (0, r.jsx)(m.q7, {
           disabled: true,
-          label: () => (0, r.jsx)(R, {}),
+          label: () => (0, r.jsx)(w, {}),
           menuItemProps: L.getItemProps({
             path: ["empty"]
           }),
@@ -345,7 +345,7 @@ function N() {
   })
 }
 
-function R() {
+function w() {
   let e = "♫ (つ｡◕‿‿◕｡)つ ♪",
     t = "♫ ⊂(｡◕‿‿◕｡⊂) ♪",
     [n, a] = i.useState(e);

@@ -61,7 +61,7 @@ function M(e) {
     h.default.track(T.HAw.PREMIUM_UPSELL_VIEWED, U), null == V || V()
   }, [V, U]);
   let W = H.length > 1 && M,
-    K = () => 2 === t ? R.vf : 1 === t ? R.oU : R.RK,
+    K = () => 2 === t ? w.vf : 1 === t ? w.oU : w.RK,
     z = () => {
       h.default.track(T.HAw.PREMIUM_PROMOTION_OPENED, {
         location_section: k,
@@ -69,15 +69,15 @@ function M(e) {
       }), null == F || F(), (0, p.A)(), G(), (0, f.jH)(), (0, _.pX)(T.BVt.APPLICATION_STORE)
     },
     q = (0, b.V)(),
-    X = i.useCallback(() => {
+    Z = i.useCallback(() => {
       var e;
       return null != (e = (0, g.LE)(q, S.pe.TIER_2)) ? e : C.intl.string(C.t.pj0XBN)
     }, [q]),
-    Z = (0, y.A)({
+    X = (0, y.A)({
       location: "PremiumUpsellPickerOverlay"
     }),
     Q = (0, A.A)(S.pe.TIER_2);
-  if (Z) {
+  if (X) {
     let e;
     e = B ? (0, m.TM)() ? P.A : D.A : (0, m.TM)() ? x.A : L.A;
     let t = B ? "nitro-pink" : "green";
@@ -97,7 +97,7 @@ function M(e) {
           }), (0, r.jsxs)("div", {
             className: N.hQ,
             children: [(0, r.jsx)("div", {
-              className: w.headerGraphic,
+              className: R.headerGraphic,
               children: (0, r.jsx)(u.vYh, {
                 type: "video",
                 src: e,
@@ -140,7 +140,7 @@ function M(e) {
               onClick: () => {
                 G()
               },
-              defaultTextOverride: X(),
+              defaultTextOverride: Z(),
               fullWidth: true
             })]
           })
@@ -153,22 +153,22 @@ function M(e) {
       onClick: G,
       isVisible: true
     }), (0, r.jsxs)("div", {
-      className: s()(R.kL, K()),
+      className: s()(w.kL, K()),
       children: [(0, r.jsx)(u.s_y, {
         "data-migration-pending": true,
         onClick: G,
-        className: R.b
+        className: w.b
       }), (0, r.jsxs)("div", {
-        className: R.hQ,
+        className: w.hQ,
         children: [(0, r.jsx)("img", {
-          className: R.Sl,
+          className: w.Sl,
           width: n.width,
           height: n.height,
           src: n.url,
           alt: "Nitro Perk"
         }), (0, r.jsx)(u.Heading, {
-          className: s()(R.DD, {
-            [R.$z]: !W
+          className: s()(w.DD, {
+            [w.$z]: !W
           }),
           variant: "heading-xl/bold",
           children: a
@@ -176,14 +176,14 @@ function M(e) {
           affinities: H
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/medium",
-          className: R.rf,
+          className: w.rf,
           children: j
         })]
       }), (0, r.jsxs)("div", {
-        className: R.OQ,
+        className: w.OQ,
         children: [(0, r.jsx)(c.$n, {
           "data-migration-pending": true,
-          className: R.vh,
+          className: w.vh,
           size: c.$n.Sizes.SMALL,
           color: c.$n.Colors.CUSTOM,
           look: c.$n.Looks.LINK,
@@ -202,7 +202,7 @@ function M(e) {
             G()
           },
           textOptions: {
-            textOverride: X()
+            textOverride: Z()
           }
         })]
       })]

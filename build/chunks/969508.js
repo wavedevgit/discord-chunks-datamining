@@ -134,7 +134,7 @@ let k = (e, t, n) => t.map(t => {
         type: t.type, components: k(e, t.components, n)
       };
     case u.I5.TEXT_INPUT: {
-      let n = R.A.getInteractionComponentState(e, t.id);
+      let n = w.A.getInteractionComponentState(e, t.id);
       return {
         type: t.type,
         custom_id: t.customId,
@@ -143,7 +143,7 @@ let k = (e, t, n) => t.map(t => {
     }
     case u.I5.FILE_UPLOAD: {
       var r;
-      let i = R.A.getInteractionComponentState(e, t.id),
+      let i = w.A.getInteractionComponentState(e, t.id),
         a = (null == i ? true : i.type) === t.type ? i.uploadIds : null;
       return {
         type: t.type,
@@ -152,7 +152,7 @@ let k = (e, t, n) => t.map(t => {
       }
     }
     case u.I5.STRING_SELECT: {
-      let n = R.A.getInteractionComponentState(e, t.id);
+      let n = w.A.getInteractionComponentState(e, t.id);
       return {
         type: t.type,
         custom_id: t.customId,
@@ -163,7 +163,7 @@ let k = (e, t, n) => t.map(t => {
     case u.I5.ROLE_SELECT:
     case u.I5.MENTIONABLE_SELECT:
     case u.I5.CHANNEL_SELECT: {
-      let n = R.A.getInteractionComponentState(e, t.id);
+      let n = w.A.getInteractionComponentState(e, t.id);
       return {
         type: t.type,
         custom_id: t.customId,
@@ -179,7 +179,7 @@ let k = (e, t, n) => t.map(t => {
         type: t.type, component: k(e, [t.component], n)[0]
       };
     case u.I5.RADIO_GROUP: {
-      let n = R.A.getInteractionComponentState(e, t.id);
+      let n = w.A.getInteractionComponentState(e, t.id);
       return {
         type: t.type,
         custom_id: t.customId,
@@ -187,7 +187,7 @@ let k = (e, t, n) => t.map(t => {
       }
     }
     case u.I5.CHECKBOX_GROUP: {
-      let n = R.A.getInteractionComponentState(e, t.id);
+      let n = w.A.getInteractionComponentState(e, t.id);
       return {
         type: t.type,
         custom_id: t.customId,
@@ -195,7 +195,7 @@ let k = (e, t, n) => t.map(t => {
       }
     }
     case u.I5.CHECKBOX: {
-      let n = R.A.getInteractionComponentState(e, t.id);
+      let n = w.A.getInteractionComponentState(e, t.id);
       return {
         type: t.type,
         custom_id: t.customId,
@@ -232,7 +232,7 @@ async function G(e, t, n) {
     }),
     f = () => {
       null != t && t.aborted || o.Bo.post({
-        url: w.Rsh.INTERACTIONS,
+        url: R.Rsh.INTERACTIONS,
         body: {
           type: u.G4.MODAL_SUBMIT,
           application_id: e.application.id,

@@ -1,11 +1,12 @@
-/** Chunk was on 65599 **/
-/** chunk id: 638006, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 638006, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   A: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk575593 = require("./575593.js"),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
@@ -22,25 +23,25 @@ var Chunk627968 = require("./627968.js"),
   Chunk761365 = require("./761365.jsx"),
   Chunk550674 = require("./550674.js"),
   Chunk8056 = require("./8056.js");
-let y = e => {
+let v = e => {
     let {
       product: t,
       isCardHovered: n
-    } = e, l = (0, h.YW)(t), {
-      isPurchased: s,
-      isPartiallyOwnedBundle: o
-    } = (0, p.h)(t), c = l === i.R.PROFILE_EFFECT;
-    return (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)("div", {
-        className: r()(_.mA, {
-          [_.zj]: (s || o) && !n,
-          [_.Ge]: c
+    } = e, i = (0, _.YW)(t), {
+      isPurchased: o,
+      isPartiallyOwnedBundle: l
+    } = (0, p.h)(t), c = i === s.R.PROFILE_EFFECT;
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("div", {
+        className: a()(O.mA, {
+          [O.zj]: (o || l) && !n,
+          [O.Ge]: c
         }),
-        children: (0, a.jsx)(A, {
+        children: (0, r.jsx)(A, {
           product: t,
           isCardHovered: n
         })
-      }), s && (0, a.jsx)(C, {
+      }), o && (0, r.jsx)(I, {
         hidden: n
       })]
     })
@@ -49,35 +50,35 @@ let y = e => {
     let {
       product: t,
       isCardHovered: n
-    } = e, l = (0, o.bG)([u.default], () => u.default.getCurrentUser()), r = (0, h.YW)(t), s = (0, j.D)(t);
-    switch (r) {
-      case i.R.PROFILE_EFFECT:
-        return (0, a.jsx)(d.A, {
-          skuId: s.skuId,
+    } = e, i = (0, l.bG)([d.default], () => d.default.getCurrentUser()), a = (0, _.YW)(t), o = (0, b.D)(t);
+    switch (a) {
+      case s.R.PROFILE_EFFECT:
+        return (0, r.jsx)(u.A, {
+          skuId: o.skuId,
           isHighlighted: n,
           removeSetHeight: true
         });
-      case i.R.AVATAR_DECORATION:
-        return (0, a.jsx)(f.i, {
-          item: s,
-          user: l,
+      case s.R.AVATAR_DECORATION:
+        return (0, r.jsx)(g.i, {
+          item: o,
+          user: i,
           isHighlighted: n,
           avatarSize: c._3J.SIZE_120
         });
-      case i.R.NAMEPLATE:
-        return (0, a.jsx)(v.A, {
-          nameplate: s,
-          user: l,
+      case s.R.NAMEPLATE:
+        return (0, r.jsx)(y.A, {
+          nameplate: o,
+          user: i,
           isHighlighted: n
         });
-      case i.R.BUNDLE:
-        return (0, a.jsx)(b.X, {
+      case s.R.BUNDLE:
+        return (0, r.jsx)(E.X, {
           product: t,
-          user: l,
+          user: i,
           isHighlighted: n
         });
-      case i.R.EXTERNAL_SKU:
-        return (0, a.jsx)(g.B, {
+      case s.R.EXTERNAL_SKU:
+        return (0, r.jsx)(m.B, {
           product: t,
           animationState: n ? "on" : "off"
         });
@@ -85,17 +86,17 @@ let y = e => {
         return null
     }
   },
-  C = e => {
+  I = e => {
     let {
       hidden: t
     } = e;
-    return (0, a.jsx)(s.rOg, {
+    return (0, r.jsx)(o.rOg, {
       size: "custom",
       color: c.LU0.colors.INTERACTIVE_TEXT_ACTIVE,
       width: 40,
       height: 40,
-      className: r()(_.zo, {
-        [_.R]: t
+      className: a()(O.zo, {
+        [O.R]: t
       })
     })
   },
@@ -103,12 +104,12 @@ let y = e => {
     let {
       skuId: t,
       isCardHovered: n,
-      overrideVariantIndex: l
-    } = e, r = (0, x.Vm)(t), i = (0, m.Q)(r);
-    if (null == r) return null;
-    let s = (0, h.rb)(r, null != l ? l : i);
-    return (0, a.jsx)(y, {
-      product: s,
+      overrideVariantIndex: i
+    } = e, a = (0, h.Vm)(t), s = (0, f.Q)(a);
+    if (null == a) return null;
+    let o = (0, _.rb)(a, null != i ? i : s);
+    return (0, r.jsx)(v, {
+      product: o,
       isCardHovered: n
     })
   }

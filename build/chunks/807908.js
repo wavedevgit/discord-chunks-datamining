@@ -62,7 +62,7 @@ function u(e) {
 }
 
 function d(e, t) {
-  var n, i, a, s, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S, T, C, N, R, w, P, D;
+  var n, i, a, s, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S, T, C, N, w, R, P, D;
   let x = e.substreams.find(e => !e.isRTX && !e.isFlexFEC);
   if (null == x) return;
   let L = e.substreams.reduce((e, t) => e + o(t.rtpStats), 0),
@@ -123,8 +123,8 @@ function d(e, t) {
     hqSimulcastStreamEncoded: e.hqSimulcastStreamEncoded,
     lqSimulcastStreamEncoded: e.lqSimulcastStreamEncoded,
     bandwidthLimitedFrameRate: e.bwLimitedFrameRate,
-    freezeCount: null == (R = x.encoderQualityStats) ? true : R.freezeCount,
-    totalFreezesDuration: null == (w = x.encoderQualityStats) ? true : w.totalFreezesDuration,
+    freezeCount: null == (w = x.encoderQualityStats) ? true : w.freezeCount,
+    totalFreezesDuration: null == (R = x.encoderQualityStats) ? true : R.totalFreezesDuration,
     totalFramesDuration: null == (P = x.encoderQualityStats) ? true : P.totalFramesDuration,
     videoEntropy: null == (D = x.encoderQualityStats) ? true : D.interFrameEntropy
   }

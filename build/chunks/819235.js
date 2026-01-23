@@ -41,12 +41,12 @@ let b = 4,
     trailing: true
   });
 
-function R() {
+function w() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0;
   return Math.random() * (e + 1) * O
 }
 
-function w(e, t) {
+function R(e, t) {
   a.h.dispatch({
     type: "CONTENT_INVENTORY_SET_FEED_STATE",
     feedId: e,
@@ -65,7 +65,7 @@ function P(e) {
 }
 
 function D(e) {
-  w(e, {
+  R(e, {
     loading: false
   });
   let t = I.get(e);
@@ -79,8 +79,8 @@ function x() {
   let n = m.A.getFeed(v);
   if ((null == n ? true : n.refresh_stale_inbox_after_ms) != null && null == C) return;
   let r = (null == n ? true : n.expired_at) == null ? 0 : new Date(n.expired_at).getTime() - Date.now(),
-    a = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), r) + (t > 0 ? R() : 0);
-  w(v, {
+    a = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), r) + (t > 0 ? w() : 0);
+  R(v, {
     loading: false,
     nextFetchDate: new Date(Date.now() + a)
   }), I.set(v, setTimeout(() => L({
@@ -96,7 +96,7 @@ async function L(e) {
   } = e;
   if (P(t) || r) try {
     let e = m.A.getFeed(t);
-    S.add(t), w(t, {
+    S.add(t), R(t, {
       loading: true
     });
     let r = await (0, _.sy)({
@@ -108,14 +108,14 @@ async function L(e) {
       type: "CONTENT_INVENTORY_SET_FEED",
       feedId: t,
       feed: r
-    }), T.set(t, 0), S.delete(t), w(t, {
+    }), T.set(t, 0), S.delete(t), R(t, {
       loading: false
     }), t === v && (C = null, x())
   } catch (s) {
     var i;
     let e = null != (i = T.get(t)) ? i : 0;
     if (e < b) {
-      let i = f.A.Millis.MINUTE * Math.pow(2, e) + R(e);
+      let i = f.A.Millis.MINUTE * Math.pow(2, e) + w(e);
       I.set(t, setTimeout(() => L({
         feedId: t,
         feature: n,

@@ -14,7 +14,7 @@ require.d(exports, {
   U_: () => K,
   VL: () => U,
   Yq: () => k,
-  m: () => w,
+  m: () => R,
   r4: () => G,
   ri: () => B,
   yp: () => H
@@ -88,7 +88,7 @@ function N(e, t, n) {
   }, [e, n, t])
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   return i.useCallback(r => {
     let i = h.default.getUser(e);
     if (null == i) return;
@@ -104,24 +104,24 @@ function R(e, t, n) {
   }, [e, t, n])
 }
 
-function w(e, t, n, r) {
+function R(e, t, n, r) {
   let i = N("usernameProfile", n, r);
-  return R(e.author.id, t.id, i)
+  return w(e.author.id, t.id, i)
 }
 
 function P(e, t, n, r) {
   let i = N("referencedUsernameProfile", n, r);
-  return R(null == e ? true : e.author.id, t.id, i)
+  return w(null == e ? true : e.author.id, t.id, i)
 }
 
 function D(e, t, n, r) {
   let i = N("interactionUsernameProfile", n, r);
-  return R(null == e ? true : e.user.id, t.id, i)
+  return w(null == e ? true : e.user.id, t.id, i)
 }
 
 function x(e, t, n, r) {
   let i = N("referencedUsernameProfile", n, r);
-  return R(e, t.id, i)
+  return w(e, t.id, i)
 }
 
 function L(e) {

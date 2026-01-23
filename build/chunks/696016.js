@@ -8,7 +8,7 @@ require.d(exports, {
   LX: () => a,
   Ot: () => c,
   P4: () => l,
-  T2: () => w,
+  T2: () => R,
   U_: () => E,
   V0: () => _,
   VP: () => T,
@@ -17,7 +17,7 @@ require.d(exports, {
   cM: () => S,
   dV: () => C,
   gC: () => x,
-  iJ: () => R,
+  iJ: () => w,
   kd: () => p,
   l_: () => h,
   mk: () => y,
@@ -66,9 +66,9 @@ let c = "alt+c",
   T = 15,
   C = 3e4,
   N = 30,
-  R = 10;
+  w = 10;
 Chunk927813.A.Millis.DAY;
-let w = 20,
+let R = 20,
   P = 1,
   D = 50;
 var x = function(e) {

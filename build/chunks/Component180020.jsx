@@ -35,19 +35,19 @@ function O(e) {
     guildDisplayNameStyles: S,
     pendingDisplayNameStyles: T,
     pendingErrors: C
-  } = (0, _.B0)(t, n), [N, R] = (0, c.kn)([a.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), w = N === a.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, P = (0, i.useCallback)(() => {
-    R(g.i.TAKE_ACTION), f.default.track(m.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, u.L)({
+  } = (0, _.B0)(t, n), [N, w] = (0, c.kn)([a.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), R = N === a.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, P = (0, i.useCallback)(() => {
+    w(g.i.TAKE_ACTION), f.default.track(m.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, u.L)({
       analyticsLocations: A,
       guildId: n
     })
-  }, [A, R, n]), D = (0, i.useCallback)(() => {
+  }, [A, w, n]), D = (0, i.useCallback)(() => {
     (0, o.dM)(null), f.default.track(m.HAw.DISPLAY_NAME_STYLES_REMOVED)
   }, []), x = (0, i.useCallback)(() => {
     (0, d.mZ)(null)
   }, []), L = true !== T || (null != n ? null != S : null != I), j = true !== T ? T : S;
   return (0, r.jsx)(h.A, {
     title: E.intl.string(y.default["86GtGH"]),
-    titleIcon: w ? (0, r.jsx)(s.LpS, {
+    titleIcon: R ? (0, r.jsx)(s.LpS, {
       text: E.intl.string(E.t.y2b7CA),
       className: b.A
     }) : true,

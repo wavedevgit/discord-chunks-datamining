@@ -4,7 +4,7 @@
 require.d(exports, {
   Fc: () => I,
   JS: () => A,
-  Jm: () => R,
+  Jm: () => w,
   Uc: () => N,
   VP: () => D,
   VR: () => S,
@@ -170,14 +170,14 @@ async function N(e) {
   }), n
 }
 
-function R(e, t) {
+function w(e, t) {
   s.h.dispatch({
     type: "GAME_CONSOLE_SELECT_DEVICE",
     platform: e,
     deviceId: t
   })
 }
-async function w(e, t, n, i) {
+async function R(e, t, n, i) {
   let o;
   s.h.dispatch({
     type: "GAME_CONSOLE_DEVICE_SEND_COMMAND_START",
@@ -242,5 +242,5 @@ async function P(e, t, n) {
 async function D(e, t, n) {
   await p.A.maybeShowPTTAlert(e), await O();
   let r = await T();
-  await w(e, t, n, r), (0, h.A)(n.id, e)
+  await R(e, t, n, r), (0, h.A)(n.id, e)
 }

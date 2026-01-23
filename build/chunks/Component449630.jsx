@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 449630, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => el
@@ -120,8 +120,8 @@ function el(e) {
       location: "UserProfileAccountPopout"
     }),
     eO = l.useRef(null),
-    eE = l.useRef(null),
-    eT = l.useRef((0, W.A)(e => e.shouldRenderTenureLevelUp)),
+    eT = l.useRef(null),
+    eE = l.useRef((0, W.A)(e => e.shouldRenderTenureLevelUp)),
     eN = l.useMemo(() => (0, g.A)(), []),
     [ew, eI] = l.useState(true);
   l.useEffect(() => {
@@ -140,7 +140,7 @@ function el(e) {
     [eD, eM] = (0, f.kn)(eR),
     eL = eD === o.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eU = l.useCallback(() => {
-      eM(Z.i.USER_DISMISS), n()
+      eM($.i.USER_DISMISS), n()
     }, [eM, n]),
     eB = l.useCallback(() => {
       eA(), eU()
@@ -172,22 +172,22 @@ function el(e) {
           className: et.BK,
           user: t,
           displayProfile: eo,
-          themeType: $.d.POPOUT,
+          themeType: Z.d.POPOUT,
           children: [(0, a.jsxs)("div", {
             className: en.wx,
-            children: [(0, a.jsx)(E.A, {
+            children: [(0, a.jsx)(T.A, {
               user: t,
               displayProfile: eo,
-              themeType: $.d.POPOUT
+              themeType: Z.d.POPOUT
             }), (0, a.jsx)(S.A, {
               user: t,
               displayProfile: eo,
-              themeType: $.d.POPOUT,
+              themeType: Z.d.POPOUT,
               onOpenProfile: es ? true : ek
             }), (0, a.jsx)(D.A, {
               ref: eO,
               user: t,
-              themeType: $.d.POPOUT,
+              themeType: Z.d.POPOUT,
               onCloseProfile: n,
               prompt: eS ? eN : null
             })]
@@ -206,10 +206,10 @@ function el(e) {
               pronouns: null == eo ? true : eo.pronouns,
               tags: (0, a.jsx)(O.A, {
                 displayProfile: eo,
-                themeType: $.d.POPOUT,
+                themeType: Z.d.POPOUT,
                 onClose: n,
                 shouldOpenBadgeTooltip: null != er ? e => e === er : true,
-                shouldGlowTenureBadge: eT.current
+                shouldGlowTenureBadge: eE.current
               }),
               nicknameIcons: (0, a.jsx)(R.A, {
                 user: t,
@@ -224,7 +224,7 @@ function el(e) {
               user: t,
               widgets: null == eo ? true : eo.widgets,
               onOpenUserProfileModal: ek
-            }), (0, a.jsx)(T.A, {
+            }), (0, a.jsx)(E.A, {
               isPremiumUser: eC,
               onInteraction: n
             }), (0, a.jsx)(w.A, {
@@ -245,7 +245,7 @@ function el(e) {
                     trailing: eL ? (0, a.jsx)(c.LpS, {
                       text: ee.intl.string(ee.t.y2b7CA)
                     }) : true,
-                    ref: eE
+                    ref: eT
                   }), (0, a.jsx)(z.N3, {
                     action: "PRESS_SET_STATUS",
                     label: (0, a.jsx)(q.A, {}),
@@ -353,12 +353,12 @@ function el(e) {
                 })
               })]
             })]
-          }), (null == eo ? true : eo.profileEffect) != null && !eT.current && (0, a.jsx)(_.A, {
+          }), (null == eo ? true : eo.profileEffect) != null && !eE.current && (0, a.jsx)(_.A, {
             skuId: eo.profileEffect.skuId,
             isHovering: eh
           })]
         }), eG && eF ? (0, a.jsx)(K.A, {
-          targetElementRef: eE,
+          targetElementRef: eT,
           onClose: n
         }) : null, (0, a.jsx)(v.A, {})]
       })

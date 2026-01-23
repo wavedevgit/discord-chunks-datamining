@@ -51,7 +51,7 @@ function N(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,8 +62,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -153,12 +153,12 @@ let x = {
       [u, p] = (0, v._N)(e, t, o),
       y = [...s, ...o],
       C = y.map(e => _.A.getChannel(e)).filter(E.Vq),
-      R = (0, A.w)(e, new Set(y), C, true).length,
+      w = (0, A.w)(e, new Set(y), C, true).length,
       D = null == n ? [] : n.options.map(e => e.id),
       x = O.A.getConnections(e),
       L = (0, v.H_)(x),
       j = (0, v.OG)(x);
-    if (g.default.track(I.HAw.GUILD_ONBOARDING_STEP_COMPLETED, w(N({}, (0, c.H$)(e)), {
+    if (g.default.track(I.HAw.GUILD_ONBOARDING_STEP_COMPLETED, R(N({}, (0, c.H$)(e)), {
         step: t.length - 1,
         options_selected: null == n ? 0 : r.filter(e => D.includes(e.id)).length,
         skipped: D.length > 0,
@@ -166,7 +166,7 @@ let x = {
         in_onboarding: true,
         is_final_step: true,
         roles_granted: i.size,
-        channels_granted: R,
+        channels_granted: w,
         guild_onboarding_covered_channel_ids: u.map(e => e.id),
         guild_onboarding_uncovered_channel_ids: p.map(e => e.id),
         provider_connections_connected: L.connected,

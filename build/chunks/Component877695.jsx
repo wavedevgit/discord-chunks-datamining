@@ -37,11 +37,11 @@ function N(e) {
     message: a,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, f = i.useRef(null), [_, m] = i.useState(true), [N, w] = i.useState(false), P = t.state === v.elq.ACCEPTING, D = (0, o.bG)([u.A], () => u.A.useReducedMotion);
+  } = e, f = i.useRef(null), [_, m] = i.useState(true), [N, R] = i.useState(false), P = t.state === v.elq.ACCEPTING, D = (0, o.bG)([u.A], () => u.A.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
-    w((null != (e = null == (t = f.current) ? true : t.clientHeight) ? e : 0) > S)
-  }, [w]);
+    R((null != (e = null == (t = f.current) ? true : t.clientHeight) ? e : 0) > S)
+  }, [R]);
   let x = (0, p.oO)(t),
     L = i.useCallback(() => {
       !N || _ && m(false)
@@ -102,7 +102,7 @@ function N(e) {
         }),
         children: (0, r.jsx)("div", {
           className: I.UD,
-          children: (0, r.jsx)(R, {
+          children: (0, r.jsx)(w, {
             invite: t,
             profile: x,
             isMemberOfGuild: n,
@@ -117,7 +117,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     invite: t,
     profile: n,

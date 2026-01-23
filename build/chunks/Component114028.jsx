@@ -65,8 +65,8 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = [8, 8, 8, 8],
-  w = 40;
+let w = [8, 8, 8, 8],
+  R = 40;
 
 function P(e) {
   let {
@@ -171,7 +171,7 @@ function j(e) {
     soundboardListRef: t,
     categories: n,
     shouldUpsellLockedCategories: a,
-    listPadding: s = R,
+    listPadding: s = w,
     guildId: o,
     inExpressionPicker: c,
     showPinnedDefaultsShortcut: d = false
@@ -210,7 +210,7 @@ function j(e) {
     listPadding: s,
     renderCategoryListItem: C,
     rowCount: n.length,
-    categoryHeight: w,
+    categoryHeight: R,
     children: e => d && (0, r.jsx)(u.DUT, {
       "aria-label": A.intl.string(A.t.Rtvk9X),
       className: I.xe,

@@ -63,7 +63,7 @@ function I() {
       c.h.unsubscribe("CHANGE_LOG_RESOLVED", e)
     }
   }, []);
-  let R = i.useCallback(() => {
+  let w = i.useCallback(() => {
     (0, l.mMO)(async () => {
       let {
         DesktopRefreshOnboardingModal: e
@@ -79,9 +79,9 @@ function I() {
   i.useEffect(() => {
     if (C && !O && e) {
       let e = setTimeout(() => {
-        R()
+        w()
       }, A);
       return () => clearTimeout(e)
     }
-  }, [e, O, C, R])
+  }, [e, O, C, w])
 }

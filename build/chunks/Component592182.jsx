@@ -50,19 +50,19 @@ let D = (0, Chunk707606.A)(e => {
   } = e, U = (0, l.bG)([h.default], () => {
     let e = h.default.getCurrentUser();
     return o()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-  }), G = M === y.O.STREAM_PREVIEW || null != s, V = (0, g.A)(t), F = V || G ? f.A.Direction.HORIZONTAL : f.A.Direction.VERTICAL, B = (null == t ? true : t.type) === w.$pd.HANG_STATUS, H = (0, l.bG)([m.A, _.A], () => {
+  }), G = M === y.O.STREAM_PREVIEW || null != s, V = (0, g.A)(t), F = V || G ? f.A.Direction.HORIZONTAL : f.A.Direction.VERTICAL, B = (null == t ? true : t.type) === R.$pd.HANG_STATUS, H = (0, l.bG)([m.A, _.A], () => {
     var e;
     return B ? _.A.getChannel(null == (e = m.A.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
   }), Y = () => {
     if ((0, E.A)(t)) return (0, r.jsx)(b.A, {
-      platform: d.A.get(w.fg2.XBOX),
+      platform: d.A.get(R.fg2.XBOX),
       variant: j,
       onAction: k,
       icon: c.YWd
     });
-    if ((null == t ? true : t.platform) === w.yTV.PS4 || (null == t ? true : t.platform) === w.yTV.PS5) return (0, r.jsx)(b.A, {
+    if ((null == t ? true : t.platform) === R.yTV.PS4 || (null == t ? true : t.platform) === R.yTV.PS5) return (0, r.jsx)(b.A, {
       variant: j,
-      platform: d.A.get(w.fg2.PLAYSTATION),
+      platform: d.A.get(R.fg2.PLAYSTATION),
       onAction: k,
       icon: c.Xj
     });
@@ -96,7 +96,7 @@ let D = (0, Chunk707606.A)(e => {
         onAction: k
       })
     }
-    return G ? (0, r.jsx)(R.A, {
+    return G ? (0, r.jsx)(w.A, {
       isCurrentUser: U.id === i.id,
       applicationStream: s,
       onAction: k

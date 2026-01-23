@@ -42,16 +42,16 @@ function O(e) {
   } = (0, f.Ay)(null != g ? g : O, v), C = (0, d.A)(v, g.id), N = (null == I ? true : I.scheduled_start_time) != null ? (0, h.j)(C, T, new Date(I.scheduled_start_time)) : null;
   if (null == I) return null;
   let {
-    entity_type: R,
-    status: w,
+    entity_type: w,
+    status: R,
     recurrence_rule: P
   } = I;
   return (0, r.jsxs)("div", {
     className: a()(b.II, t),
     children: [(0, r.jsx)(E.L, {
       startTime: T.toISOString(),
-      status: null != N ? N : w,
-      eventType: R,
+      status: null != N ? N : R,
+      eventType: w,
       isNew: m,
       recurrenceRule: (0, _.Sn)(P),
       guildEventId: g.id,

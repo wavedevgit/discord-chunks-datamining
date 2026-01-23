@@ -29,7 +29,7 @@ function _(e) {
     value: y,
     labelType: b = "primary",
     usageVariant: O = "single"
-  } = e, v = (0, i.useRef)(null), A = (0, i.useRef)(null), I = (0, i.useRef)(null), [S, T] = (0, i.useState)(true), C = (0, i.useRef)(false), N = null != m && "" !== m, R = null != n && "" !== n, w = null != E ? E : null;
+  } = e, v = (0, i.useRef)(null), A = (0, i.useRef)(null), I = (0, i.useRef)(null), [S, T] = (0, i.useState)(true), C = (0, i.useRef)(false), N = null != m && "" !== m, w = null != n && "" !== n, R = null != E ? E : null;
   (0, i.useEffect)(() => {
     if (!C.current) {
       C.current = true;
@@ -69,7 +69,7 @@ function _(e) {
         gap: 4,
         children: [(0, r.jsxs)(o.J, {
           className: p.label,
-          children: [null != w && (0, r.jsx)(w, {
+          children: [null != R && (0, r.jsx)(R, {
             className: p.leadingIcon,
             size: "sm",
             color: "currentColor",
@@ -80,7 +80,7 @@ function _(e) {
             color: "primary" === b ? "text-strong" : "text-subtle",
             children: m
           })]
-        }), R && (0, r.jsx)(f.E, {
+        }), w && (0, r.jsx)(f.E, {
           variant: "text-sm/normal",
           color: "text-subtle",
           children: n

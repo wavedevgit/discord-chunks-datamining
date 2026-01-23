@@ -57,7 +57,7 @@ function p(e) {
     tryItOutBanner: T,
     tryItOutAvatarDecoration: C,
     tryItOutDisplayNameStyles: N
-  } = (0, a.cf)([l.A], () => f({}, l.A.getAllPending(), l.A.getAllTryItOut())), R = (0, o.V7)({
+  } = (0, a.cf)([l.A], () => f({}, l.A.getAllPending(), l.A.getAllTryItOut())), w = (0, o.V7)({
     userId: d.id,
     image: null != S ? S : m
   });
@@ -68,7 +68,7 @@ function p(e) {
     pendingBio: A,
     pendingBanner: null != (t = null != T ? T : g) ? t : n(636763),
     pendingDisplayNameStyles: null != N ? N : b,
-    pendingAvatar: R,
+    pendingAvatar: w,
     pendingThemeColors: null != I ? I : O,
     pendingAvatarDecoration: true !== C ? C : E,
     pendingProfileEffect: y,

@@ -2,7 +2,7 @@
 /** chunk id: 342952, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R,
+  A: () => w,
   I: () => N
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -215,7 +215,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     users: t,
     maxUsers: a,
@@ -231,8 +231,8 @@ function R(e) {
     disableUserPopout: I = false,
     onClickOverflow: C,
     onFocusOverflow: N,
-    onUserClick: R,
-    onUserPopoutRequestClose: w,
+    onUserClick: w,
+    onUserPopoutRequestClose: R,
     "aria-label": P,
     "aria-labelledby": D,
     "aria-hidden": x
@@ -248,9 +248,9 @@ function R(e) {
         channelId: l,
         nick: p.Ay.getNickname(o, l, e),
         disablePopout: "function" == typeof I ? I(e.id) : I,
-        onClick: R,
+        onClick: w,
         onPopoutRequestClose: () => {
-          j(false), null == w || w()
+          j(false), null == R || R()
         },
         onContextMenu: t => (0, d.L3)(t, async () => {
           let {

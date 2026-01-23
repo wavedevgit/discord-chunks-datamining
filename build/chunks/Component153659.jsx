@@ -74,7 +74,7 @@ let p = e => {
     size: o = "md",
     width: c,
     height: f,
-    color: p = i.A.colors.ICON_STRONG,
+    color: p = i.A.colors.ICON_OVERLAY_LIGHT,
     colorClass: _ = ""
   } = e, h = d(e, ["size", "width", "height", "color", "colorClass"]), m = (0, s.J)(o), g = null != (t = null == m ? true : m.width) ? t : c, E = null != (n = null == m ? true : m.height) ? n : f;
   return (0, r.jsxs)("svg", u(l({}, (0, a.A)(h)), {

@@ -73,17 +73,17 @@ function b(e, t, n, r) {
     let t = C[e];
     T[t.author.id] = (null != (d = T[t.author.id]) ? d : 1) + (C.length - e) / C.length, N.add(t.author.id)
   }
-  let R = false;
-  A && (R = null != e.guild_id && (null != (g = s.A.getMemberCount(e.guild_id)) ? g : 0) > m);
-  let w = l.Ay.queryMentionSuggestionResults({
+  let w = false;
+  A && (w = null != e.guild_id && (null != (g = s.A.getMemberCount(e.guild_id)) ? g : 0) > m);
+  let R = l.Ay.queryMentionSuggestionResults({
     query: S,
     channel: e,
     boosters: T,
-    onlyExactMatch: O && (!v || R)
+    onlyExactMatch: O && (!v || w)
   });
-  return (R ? w = w.filter(e => N.has(e.user.id)) : v && (w = w.filter(e => "exact" === e.matchType || N.has(e.user.id))), E || b === a.DB.MENTION_SUGGESTIONS || !(S.length < _) || w.some(e => "exact" === e.matchType || v && N.has(e.user.id))) ? {
+  return (w ? R = R.filter(e => N.has(e.user.id)) : v && (R = R.filter(e => "exact" === e.matchType || N.has(e.user.id))), E || b === a.DB.MENTION_SUGGESTIONS || !(S.length < _) || R.some(e => "exact" === e.matchType || v && N.has(e.user.id))) ? {
     results: {
-      suggestions: w,
+      suggestions: R,
       queryInfo: I
     }
   } : f

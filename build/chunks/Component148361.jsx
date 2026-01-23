@@ -71,9 +71,9 @@ let I = e => {
     } = e,
     C = (0, a.bG)([f.A], () => f.A.theme) === m.NJ8.LIGHT ? "light" : "dark",
     N = "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_".concat(C, ".png"),
-    R = (0, c.RQ)(e => e.searchQuery),
+    w = (0, c.RQ)(e => e.searchQuery),
     {
-      analyticsLocations: w
+      analyticsLocations: R
     } = (0, l.Ay)(o.A.EMOJI_PICKER);
   t = I === g.b_.REACTION ? E.e.EMOJI_PICKER_REACTION_EMOJI_CLICKED : null == v ? E.e.EMOJI_PICKER_FLOATING_UPSELL : v.subCategory === h.tm.TOP_GUILD_EMOJI ? E.e.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : v.subCategory === h.tm.NEWLY_ADDED_EMOJI ? E.e.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : E.e.EMOJI_PICKER_EMOJI_CLICKED;
   let P = null != v ? v.emoji : true,
@@ -101,9 +101,9 @@ let I = e => {
       location: A(O({}, S), {
         object: L
       }),
-      location_stack: w,
+      location_stack: R,
       sku_id: (0, _.mH)(_.Ay.getSkuIdForPremiumType(E.PremiumTypes.TIER_2)),
-      has_search_query: null != R && "" !== R,
+      has_search_query: null != w && "" !== w,
       is_animated: D
     },
     isEmojiPickerOverlay: true

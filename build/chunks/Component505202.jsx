@@ -73,8 +73,8 @@ function b(e) {
     menuItemProps: T,
     action: C,
     onClose: N,
-    onFocus: R,
-    className: w,
+    onFocus: w,
+    className: R,
     focusedClassName: P,
     dontCloseOnActionIfHoldingShiftKey: D,
     dontCloseOnAction: x,
@@ -90,10 +90,10 @@ function b(e) {
     e.shiftKey && D || x || N(), e.persist(), null == j || j(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => C(e))
   }, [C, N, j, D, x, M]);
   return i.useEffect(() => {
-    S && ((0, u.Y)(k), null == R || R())
-  }, [S, R]), (0, r.jsxs)(o.DUT, y(g({
+    S && ((0, u.Y)(k), null == w || w())
+  }, [S, w]), (0, r.jsxs)(o.DUT, y(g({
     innerRef: k,
-    className: s()(h.item, h.labelContainer, _.jV[t], w, {
+    className: s()(h.item, h.labelContainer, _.jV[t], R, {
       [h.disabled]: I,
       [h.focused]: S,
       [null != P ? P : ""]: S

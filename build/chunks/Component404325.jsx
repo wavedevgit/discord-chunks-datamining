@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk765671 = require("./765671.js"),
   Chunk240147 = require("./240147.js"),
   Chunk998304 = require("./998304.js"),
-  Chunk934581 = require("./934581.js"),
+  Chunk156962 = require("./156962.js"),
   Chunk539451 = require("./539451.js");
 require("./518950.js");
 var Chunk783821 = require("./783821.js");
@@ -53,12 +53,12 @@ function N(e, t) {
   }
 }
 
-function R(e) {
+function w(e) {
   let t;
   return Math.floor(((t = e <= m ? h : e >= E ? g : (Math.min(e, E) - m) / (E - m) * (g - h) + h) + b) / O) * O - b
 }
 
-function w(e) {
+function R(e) {
   if (null == e) return;
   let t = 2 * y + b;
   return Math.floor((e + b) / t)
@@ -92,7 +92,7 @@ function x(e) {
 
 function L(e, t) {
   let n = i.useMemo(() => C(e), [e]),
-    r = i.useMemo(() => w(t), [t]);
+    r = i.useMemo(() => R(t), [t]);
   return i.useMemo(() => {
     var e;
     return null != (e = N(null != n ? n : [], r)) ? e : S
@@ -148,8 +148,8 @@ function U(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.Ay)(), y = i.useMemo(() => R(o), [o]), b = i.useRef(true), O = L(n, E), A = i.useRef(l), S = i.useRef(d), C = i.useRef(null), N = window.devicePixelRatio, {
-    lastBackgroundFillColor: w,
+  } = (0, c.Ay)(), y = i.useMemo(() => w(o), [o]), b = i.useRef(true), O = L(n, E), A = i.useRef(l), S = i.useRef(d), C = i.useRef(null), N = window.devicePixelRatio, {
+    lastBackgroundFillColor: R,
     backgroundFillColor: P,
     lastActiveFillColor: j,
     activeFillColor: U,
@@ -203,7 +203,7 @@ function U(e) {
       (A.current !== l || S.current !== d) && (A.current = l, S.current = d, C.current = n), null != C.current && n > C.current + T && (C.current = null);
       let o = r.height / N;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
-      let [c, u] = k(w, P, n, C.current);
+      let [c, u] = k(R, P, n, C.current);
       s = s || u, i.fillStyle = c;
       for (let e = 0; e < O.length; e++) x({
         context: i,
@@ -235,7 +235,7 @@ function U(e) {
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, N, O, E, a, o, l, d, w, P, j, U, G, V]);
+  }, [g, N, O, E, a, o, l, d, R, P, j, U, G, V]);
   let [, H] = (0, u.A)({
     ref: g,
     onDrag: f,

@@ -36,9 +36,9 @@ function y(e) {
     caretConfig: T,
     layerContext: C,
     animationStyle: N,
-    positionKey: R
+    positionKey: w
   } = e, {
-    isRichTooltip: w
+    isRichTooltip: R
   } = (0, p.w6)(), P = (0, u.D)("Tooltip"), D = i.useMemo(() => ("left" === A || "right" === A ? E : g).includes(I) ? I : "center", [A, I]);
   if (!n) return null;
   let x = e => {
@@ -53,7 +53,7 @@ function y(e) {
     }, E = (0, r.jsxs)("div", {
       id: O,
       className: s()(h.YL, {
-        [h.mj]: w
+        [h.mj]: R
       }),
       role: "tooltip",
       "data-position": u,
@@ -101,7 +101,7 @@ function y(e) {
     position: A,
     align: D,
     spacing: S,
-    positionKey: R,
+    positionKey: w,
     autoInvert: true,
     nudgeAlignIntoViewport: true,
     children: x

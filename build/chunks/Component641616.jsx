@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 641616, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   x: () => eo
@@ -304,13 +304,13 @@ function eo() {
       name: "Gifting Intent",
       group: er.fu.PREMIUM,
       tags: ["friends", "anniversary"],
-      render: () => (0, a.jsx)(E.A, {})
+      render: () => (0, a.jsx)(T.A, {})
     }), e.push({
       id: "voice_filters",
       name: "Voice Filters",
       group: er.fu.AUDIO_VIDEO,
       tags: ["soundboard", "effects"],
-      render: () => (0, a.jsx)(Z.A, {})
+      render: () => (0, a.jsx)($.A, {})
     }), e.push({
       id: "krisp_tester",
       name: "Krisp Tester",
@@ -322,7 +322,7 @@ function eo() {
       name: "Skill Trees",
       group: er.fu.BOOSTING,
       tags: ["boosting", "powerups", "server tag"],
-      render: () => (0, a.jsx)(T.A, {})
+      render: () => (0, a.jsx)(E.A, {})
     }), e.push({
       id: "game_server",
       name: "Game Server",
@@ -338,7 +338,7 @@ function eo() {
       id: "word_frequency",
       name: "Word Frequency",
       group: er.fu.DEVELOPMENT,
-      render: () => (0, a.jsx)($.A, {})
+      render: () => (0, a.jsx)(Z.A, {})
     }), e.push({
       id: "user_settings",
       name: "User Settings",

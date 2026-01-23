@@ -40,10 +40,10 @@ function b(e) {
     context: t,
     launchingComponentId: v,
     onSubmissionComplete: A
-  }), [C, N] = i.useState(false), R = (0, o.Hq)({
+  }), [C, N] = i.useState(false), w = (0, o.Hq)({
     applicationId: n.id,
     context: t
-  }), w = i.useMemo(() => (0, h.kF)(O.displayName), [O.displayName]), {
+  }), R = i.useMemo(() => (0, h.kF)(O.displayName), [O.displayName]), {
     onActivityItemSelected: P,
     buttonVariant: D,
     buttonText: x
@@ -52,8 +52,8 @@ function b(e) {
     application: n,
     location: l.Oh.APP_LAUNCHER_APPLICATION_VIEW,
     sectionName: b,
-    commandName: w,
-    autoDismissOnClick: R === o.o6.LEAVE || (0, c.x)(n),
+    commandName: R,
+    autoDismissOnClick: w === o.o6.LEAVE || (0, c.x)(n),
     launchingComponentId: v,
     submitting: null != T ? T : S,
     onConfirmActivityLaunchChecksAlertOpen: I
@@ -63,7 +63,7 @@ function b(e) {
   } = (0, _.A)({
     context: t,
     application: n,
-    activityAction: R
+    activityAction: w
   });
   return (0, r.jsx)(a.m, {
     shouldShow: null != j,

@@ -2,7 +2,7 @@
 /** chunk id: 147905, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => J,
+  Ay: () => $,
   FT: () => V,
   Ob: () => F
 }), require("./896048.js");
@@ -158,7 +158,7 @@ function q(e, t) {
     setHideConnectedAnimation: l
   }), [a, n, o, l])
 }
-let X = Chunk64700.memo(function(e) {
+let Z = Chunk64700.memo(function(e) {
     let {
       nick: t,
       connectedOn: n,
@@ -223,7 +223,7 @@ let X = Chunk64700.memo(function(e) {
       })
     })
   }),
-  Z = Chunk64700.memo(function(e) {
+  X = Chunk64700.memo(function(e) {
     let {
       avatarSize: t,
       userId: n,
@@ -250,7 +250,7 @@ let X = Chunk64700.memo(function(e) {
     })
   }),
   Q = Chunk64700.memo(Chunk397927.euF),
-  $ = Chunk64700.memo(function(e) {
+  J = Chunk64700.memo(function(e) {
     let {
       channel: t,
       flipped: n = false,
@@ -276,10 +276,10 @@ let X = Chunk64700.memo(function(e) {
       width: W
     } = (0, _.Ay)(), {
       showConnectedAnimation: K
-    } = q(G, P), z = null == L ? true : L.sessionId, $ = t.id, J = o.id, [ee] = (0, l.bG)([R.A], () => {
+    } = q(G, P), z = null == L ? true : L.sessionId, J = t.id, $ = o.id, [ee] = (0, l.bG)([w.A], () => {
       var e;
-      return [null != (e = R.A.getVoiceStateForChannel($, J)) ? e : R.A.getVoiceStateForSession(J, z), R.A.getVoiceStateVersion()]
-    }, [$, J, z], w.D), et = P ? L : null != ee ? ee : L, [en, er, ei] = (0, l.yK)([C.A], () => H ? [!C.A.isSupported() || C.A.isSelfMute() || C.A.isSelfMutedTemporarily(), C.A.isSelfDeaf(), false] : [!C.A.isSupported() || C.A.isLocalMute(o.id), false, C.A.isLocalVideoDisabled(o.id)], [H, o.id]), ea = (0, l.bG)([I.A], () => {
+      return [null != (e = w.A.getVoiceStateForChannel(J, $)) ? e : w.A.getVoiceStateForSession($, z), w.A.getVoiceStateVersion()]
+    }, [J, $, z], R.D), et = P ? L : null != ee ? ee : L, [en, er, ei] = (0, l.yK)([C.A], () => H ? [!C.A.isSupported() || C.A.isSelfMute() || C.A.isSelfMutedTemporarily(), C.A.isSelfDeaf(), false] : [!C.A.isSupported() || C.A.isLocalMute(o.id), false, C.A.isLocalVideoDisabled(o.id)], [H, o.id]), ea = (0, l.bG)([I.A], () => {
       let e = I.A.getCurrentUserActiveStream();
       return null != e && e.ownerId !== o.id && I.A.getViewerIds(e).filter(e => e === o.id).length > 0
     }, [o.id]), es = P && (null == L ? true : L.discoverable), eo = (0, h.A)({
@@ -304,7 +304,7 @@ let X = Chunk64700.memo(function(e) {
       a || null == y || y(e, o)
     }, [a, y, o]), ep = i.useCallback(() => {
       a || null != ec && k(o.id)
-    }, [a, k, ec, o]), e_ = a || P, eh = i.useMemo(() => V(m), [m]), em = i.useMemo(() => F(eh), [eh]), eg = i.useMemo(() => o.getAvatarURL(T, em), [o, T, em]), eE = (0, l.bG)([N.A], () => N.A.getVoiceVolume(J));
+    }, [a, k, ec, o]), e_ = a || P, eh = i.useMemo(() => V(m), [m]), em = i.useMemo(() => F(eh), [eh]), eg = i.useMemo(() => o.getAvatarURL(T, em), [o, T, em]), eE = (0, l.bG)([N.A], () => N.A.getVoiceVolume($));
     return f === x.f5z.ONLY_WHILE_SPEAKING && e_ && !eo || null == et ? null : n ? (0, r.jsxs)(c.DUT, {
       innerRef: B,
       className: s()(j.q7, {
@@ -361,7 +361,7 @@ let X = Chunk64700.memo(function(e) {
             children: u
           })]
         })
-      }), !H && (0, r.jsx)(X, {
+      }), !H && (0, r.jsx)(Z, {
         nick: u,
         connectedOn: G,
         isSettingsPreview: P,
@@ -381,7 +381,7 @@ let X = Chunk64700.memo(function(e) {
           hideIfVolumeMissing: true
         },
         "aria-hidden": true
-      }), (0, r.jsx)(Z, {
+      }), (0, r.jsx)(X, {
         avatarSize: em,
         userId: o.id,
         channelId: t.id,
@@ -413,7 +413,7 @@ let X = Chunk64700.memo(function(e) {
           hideIfVolumeMissing: true
         },
         "aria-hidden": true
-      }), !H && (0, r.jsx)(X, {
+      }), !H && (0, r.jsx)(Z, {
         nick: u,
         connectedOn: G,
         isSettingsPreview: P,
@@ -467,7 +467,7 @@ let X = Chunk64700.memo(function(e) {
       })]
     })
   }),
-  J = Chunk64700.memo(function(e) {
+  $ = Chunk64700.memo(function(e) {
     let {
       widgetId: t,
       channel: a,
@@ -494,10 +494,10 @@ let X = Chunk64700.memo(function(e) {
         value: D.IP.STREAM_PREVIEWED
       })
     }, [I]);
-    let R = e => {
+    let w = e => {
         S(e)
       },
-      w = (e, t) => {
+      R = (e, t) => {
         m || (0, u.L3)(e, async () => {
           let {
             default: e
@@ -552,7 +552,7 @@ let X = Chunk64700.memo(function(e) {
       spacing: 24,
       children: () => {
         var e;
-        return (0, r.jsx)($, {
+        return (0, r.jsx)(J, {
           ref: E,
           guildId: null == a ? true : a.guild_id,
           user: y,
@@ -564,12 +564,12 @@ let X = Chunk64700.memo(function(e) {
           displayUserMode: l,
           size: _,
           locked: j,
-          onContextMenu: w,
-          onClick: w,
+          onContextMenu: R,
+          onClick: R,
           context: g,
           channel: a,
           showStreamPreview: y.id === I,
-          onShowStreamPreview: R,
+          onShowStreamPreview: w,
           onWatchStream: L,
           isSettingsPreview: m
         })

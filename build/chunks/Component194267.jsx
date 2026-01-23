@@ -82,17 +82,17 @@ let j = 10,
 function B(e) {
   var t;
   let n = {
-      [C.Li.PACKAGE_ACTION_ADVENTURE]: R.t.PYFVdf,
-      [C.Li.PACKAGE_RPG_MMO]: R.t.rFQo2F,
-      [C.Li.PACKAGE_RACING_SPORTS]: R.t.zDRa6g,
-      [C.Li.PACKAGE_SANDBOX_CREATIVE]: R.t.vz9U2Q,
-      [C.Li.PACKAGE_FAMILY_FRIENDLY]: R.t.IOiAE0,
-      [C.Li.PACKAGE_HOLIDAY_SEASON]: R.t.cJPqvD,
-      [C.Li.PACKAGE_NEW_YEARS]: R.t.S0w2mv
+      [C.Li.PACKAGE_ACTION_ADVENTURE]: w.t.PYFVdf,
+      [C.Li.PACKAGE_RPG_MMO]: w.t.rFQo2F,
+      [C.Li.PACKAGE_RACING_SPORTS]: w.t.zDRa6g,
+      [C.Li.PACKAGE_SANDBOX_CREATIVE]: w.t.vz9U2Q,
+      [C.Li.PACKAGE_FAMILY_FRIENDLY]: w.t.IOiAE0,
+      [C.Li.PACKAGE_HOLIDAY_SEASON]: w.t.cJPqvD,
+      [C.Li.PACKAGE_NEW_YEARS]: w.t.S0w2mv
     },
     r = e.config.features.find(e => e in n),
-    i = null != (t = null != r ? n[r] : null) ? t : R.t["D+DkEH"];
-  return R.intl.string(i)
+    i = null != (t = null != r ? n[r] : null) ? t : w.t["D+DkEH"];
+  return w.intl.string(i)
 }
 let H = e => {
     let {
@@ -100,15 +100,15 @@ let H = e => {
       onClose: n
     } = e, i = (0, a.bG)([E.A], () => E.A.getState().theme), s = (0, l.Mw)(i) ? N.NJ8.DARK : N.NJ8.LIGHT;
     return (0, r.jsxs)("div", {
-      className: w.N1,
+      className: R.N1,
       children: [(0, r.jsxs)("div", {
-        className: w.VW,
+        className: R.VW,
         children: [(0, r.jsx)("img", {
-          className: w.rC,
+          className: R.rC,
           alt: t.config.messages.gameTitle,
           src: (0, I.tW)(t, I.fY.GAME_TILE, s).url
         }), (0, r.jsxs)("div", {
-          className: w.if,
+          className: R.if,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
@@ -116,12 +116,12 @@ let H = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: R.intl.string(R.t.VgN1Bn)
+            children: w.intl.string(w.t.VgN1Bn)
           })]
         })]
       }), (0, r.jsx)(c.DUT, {
-        className: w.b,
-        "aria-label": R.intl.string(R.t.cpT0Cq),
+        className: R.b,
+        "aria-label": w.intl.string(w.t.cpT0Cq),
         onClick: n,
         children: (0, r.jsx)(c.PGe, {
           size: "md",
@@ -177,23 +177,23 @@ let H = e => {
     }, [E]), C = () => null != s.supplementalData ? (0, r.jsx)(g.A, {
       game: s.supplementalData,
       application: m,
-      className: w.xe,
+      className: R.xe,
       size: g.w.SMALL
     }) : null != s.fallbackCoverImageUrl ? (0, r.jsx)("img", {
       src: s.fallbackCoverImageUrl,
       alt: s.name,
-      className: w.xe
+      className: R.xe
     }) : null;
     return (0, r.jsx)(o.m, {
       text: s.name,
       children: (0, r.jsx)(c.DUT, {
-        className: w.zR,
+        className: R.zR,
         onClick: I,
         onMouseMove: S,
         onMouseLeave: T,
         children: (0, r.jsx)("div", {
           ref: y,
-          className: w._M,
+          className: R._M,
           children: C()
         })
       })
@@ -277,9 +277,9 @@ function K(e) {
       return e <= U ? U - e : e === G ? 0 : e <= V ? V - e : F - e
     }, [I.length]),
     C = !g && 0 === I.length,
-    R = E || C;
+    w = E || C;
   if (i.useEffect(() => {
-      if (R) {
+      if (w) {
         let e = E ? T.W.FETCH_FAILED : T.W.NO_GAMES_AVAILABLE;
         b.default.track(N.HAw.QUEST_GAME_SHEET_ERROR, {
           quest_id: t.id,
@@ -291,31 +291,31 @@ function K(e) {
           return t => (0, r.jsx)(e, D({}, t))
         })
       }
-    }, [R, E, t.id, o]), g && !R) {
+    }, [w, E, t.id, o]), g && !w) {
     let e = Math.min(s.length, j);
     return (0, r.jsxs)("div", {
-      className: w.kL,
+      className: R.kL,
       children: [(0, r.jsx)(H, {
         quest: t,
         onClose: o
       }), (0, r.jsx)("div", {
-        className: w.LA,
+        className: R.LA,
         children: s.slice(0, e).map(e => (0, r.jsx)("div", {
-          className: w.Vj
+          className: R.Vj
         }, e))
       })]
     })
   }
-  return R ? null : (0, r.jsxs)("div", {
+  return w ? null : (0, r.jsxs)("div", {
     ref: e => {
       d.current = e
     },
-    className: w.kL,
+    className: R.kL,
     children: [(0, r.jsx)(H, {
       quest: t,
       onClose: o
     }), (0, r.jsxs)("div", {
-      className: w.LA,
+      className: R.LA,
       children: [I.map(e => (0, r.jsx)(Y, {
         quest: t,
         game: e,

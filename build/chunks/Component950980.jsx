@@ -58,20 +58,20 @@ function y(e) {
     return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
   });
   if (null == n || null == A) return null;
-  let R = (0, u.hp)(A).find(e => e.value === c),
-    w = null != R ? m.Ps.EXPERIMENT_TREATMENT : m.Ps.EXPERIMENT,
-    P = null != I && null != R && I.variantId === R.value,
+  let w = (0, u.hp)(A).find(e => e.value === c),
+    R = null != w ? m.Ps.EXPERIMENT_TREATMENT : m.Ps.EXPERIMENT,
+    P = null != I && null != w && I.variantId === w.value,
     D = () => {
-      null != R && (P ? (0, d.t$)(A.system, n, null) : (0, d.t$)(A.system, n, R.value))
+      null != w && (P ? (0, d.t$)(A.system, n, null) : (0, d.t$)(A.system, n, w.value))
     },
     x = (0, r.jsx)(E, {
       url: t
     }),
     L = null;
-  return (w === m.Ps.EXPERIMENT_TREATMENT && null != R ? L = (0, r.jsx)(s.Text, {
+  return (R === m.Ps.EXPERIMENT_TREATMENT && null != w ? L = (0, r.jsx)(s.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
-    children: R.label
+    children: w.label
   }) : null != T && (L = (0, r.jsxs)(s.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
@@ -100,10 +100,10 @@ function y(e) {
           }), x]
         })
       })
-    }), null != R ? (0, r.jsx)(s.Button, {
+    }), null != w ? (0, r.jsx)(s.Button, {
       fullWidth: true,
       variant: P ? "critical-primary" : "primary",
-      text: P ? "Clear Treatment ".concat(R.value) : "Apply Treatment ".concat(R.value),
+      text: P ? "Clear Treatment ".concat(w.value) : "Apply Treatment ".concat(w.value),
       onClick: D
     }) : (0, r.jsx)("div", {
       className: g.uh,

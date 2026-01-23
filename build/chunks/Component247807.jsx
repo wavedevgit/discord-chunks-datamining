@@ -52,23 +52,23 @@ let S = (e, t, n, r) => {
       parent_title: I,
       provider: C,
       image_url: N
-    } = n.extra.media, R = n.extra.artist.name, w = (0, o.bG)([c.default], () => c.default.getUser(n.author_id)), {
+    } = n.extra.media, w = n.extra.artist.name, R = (0, o.bG)([c.default], () => c.default.getUser(n.author_id)), {
       primaryColor: P,
       secondaryColor: D
     } = (0, m.A)(N), x = (0, p.TQ)(n), L = i.useCallback(() => {
-      if (null == t || null == w || !(0, d.S1)(x, g.wE)) return;
-      let e = S(n, t, w, x);
+      if (null == t || null == R || !(0, d.S1)(x, g.wE)) return;
+      let e = S(n, t, R, x);
       return (0, _.Lu)({
-        user: w,
+        user: R,
         channel: t,
         mediaImageSrc: N,
-        artist: R,
+        artist: w,
         description: e,
         colors: [P, D],
         badges: (0, _.KR)(n)
       })
-    }, [N, R, t, n, P, x, D, w]), j = (0, h.A)(O.fg2.SPOTIFY);
-    if (null == w || !(0, d.S1)(x, g.wE)) return null;
+    }, [N, w, t, n, P, x, D, R]), j = (0, h.A)(O.fg2.SPOTIFY);
+    if (null == R || !(0, d.S1)(x, g.wE)) return null;
     let M = () => {
         let e = v.M0.ALBUM,
           t = l.A.isProtocolRegistered() ? v.RQ.PLAYER_OPEN(e, n.extra.media.external_parent_id) : v.RQ.WEB_OPEN(e, n.extra.media.external_parent_id);
@@ -93,7 +93,7 @@ let S = (e, t, n, r) => {
         }) : null,
         userDescription: A.t.CcVI1T,
         title: I,
-        subtitle: R,
+        subtitle: w,
         badges: (0, r.jsx)(E.mG, {
           location: E.N5.POPOUT,
           children: g.$u.map((e, t) => (0, r.jsx)(e, {
@@ -104,10 +104,10 @@ let S = (e, t, n, r) => {
         children: (0, r.jsx)(y.fD, {
           onReaction: a,
           onVoiceChannelPreview: f,
-          user: w,
+          user: R,
           channel: t,
           generateReactionImage: L,
-          reactionImageAltText: T(n, w),
+          reactionImageAltText: T(n, R),
           entry: n
         })
       })]

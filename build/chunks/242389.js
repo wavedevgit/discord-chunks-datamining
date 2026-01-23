@@ -154,10 +154,10 @@ function S(e) {
 function T(e) {
   let t = {};
   for (let n in e) try {
-    C(n) && (t[R(n)] = {
+    C(n) && (t[w(n)] = {
       value: e[n],
       attributes: {},
-      description: w(e[n], n)
+      description: R(e[n], n)
     })
   } catch (e) {}
   return t
@@ -171,11 +171,11 @@ function N(e) {
   return "xmlns" === e.split(":")[0]
 }
 
-function R(e) {
+function w(e) {
   return /^MicrosoftPhoto(_\d+_)?:Rating$/i.test(e) ? "RatingPercent" : e.split(":")[1]
 }
 
-function w(e, t) {
+function R(e, t) {
   if (Array.isArray(e)) {
     let n = P(e);
     return t && "function" == typeof i.A[t] ? i.A[t](e, n) : n
@@ -190,12 +190,12 @@ function w(e, t) {
 }
 
 function P(e) {
-  return e.map(e => true !== e.value ? w(e.value) : w(e)).join(", ")
+  return e.map(e => true !== e.value ? R(e.value) : R(e)).join(", ")
 }
 
 function D(e) {
   let t = [];
-  for (let n in e) t.push(`${x(n)}: ${w(e[n].value)}`);
+  for (let n in e) t.push(`${x(n)}: ${R(e[n].value)}`);
   return t.join("; ")
 }
 
@@ -206,7 +206,7 @@ function x(e) {
 function L(e) {
   let t = {};
   for (let n in e) try {
-    N(n) || (t[R(n)] = j(e[n], n))
+    N(n) || (t[w(n)] = j(e[n], n))
   } catch (e) {}
   return t
 }
@@ -216,7 +216,7 @@ function j(e, t) {
     value: "",
     attributes: {},
     description: ""
-  } : G(e) ? V(e, t) : Y(e) ? W(e, t) : K(e) ? z(e, t) : q(e) ? Z(e, t) : $(e, t)
+  } : G(e) ? V(e, t) : Y(e) ? W(e, t) : K(e) ? z(e, t) : q(e) ? X(e, t) : J(e, t)
 }
 
 function M(e) {
@@ -228,7 +228,7 @@ function k(e) {
 }
 
 function U(e, t) {
-  return $(e[e.length - 1], t)
+  return J(e[e.length - 1], t)
 }
 
 function G(e) {
@@ -242,24 +242,24 @@ function V(e, t) {
   return {
     value: i,
     attributes: n,
-    description: w(i, t)
+    description: R(i, t)
   }
 }
 
 function F(e) {
   let t = {};
-  for (let n in e.attributes) "rdf:parseType" === n || "rdf:resource" === n || N(n) || (t[R(n)] = e.attributes[n]);
+  for (let n in e.attributes) "rdf:parseType" === n || "rdf:resource" === n || N(n) || (t[w(n)] = e.attributes[n]);
   return t
 }
 
 function B(e) {
   let t = {};
-  for (let n in e.value) "rdf:value" === n || N(n) || (t[R(n)] = e.value[n].value);
+  for (let n in e.value) "rdf:value" === n || N(n) || (t[w(n)] = e.value[n].value);
   return t
 }
 
 function H(e) {
-  return J(e.value["rdf:value"]) || e.value["rdf:value"].value
+  return $(e.value["rdf:value"]) || e.value["rdf:value"].value
 }
 
 function Y(e) {
@@ -271,7 +271,7 @@ function W(e, t) {
     value: {},
     attributes: {}
   };
-  return true !== e.value["rdf:Description"] && ((0, r.dP)(n.value, T(e.value["rdf:Description"].attributes)), (0, r.dP)(n.attributes, F(e)), e = e.value["rdf:Description"]), (0, r.dP)(n.value, L(e.value)), n.description = w(n.value, t), n
+  return true !== e.value["rdf:Description"] && ((0, r.dP)(n.value, T(e.value["rdf:Description"].attributes)), (0, r.dP)(n.attributes, F(e)), e = e.value["rdf:Description"]), (0, r.dP)(n.value, L(e.value)), n.description = R(n.value, t), n
 }
 
 function K(e) {
@@ -283,20 +283,20 @@ function z(e, t) {
   return {
     value: n,
     attributes: {},
-    description: w(n, t)
+    description: R(n, t)
   }
 }
 
 function q(e) {
-  return true !== X(e.value)
+  return true !== Z(e.value)
 }
 
-function X(e) {
+function Z(e) {
   return e["rdf:Bag"] || e["rdf:Seq"] || e["rdf:Alt"]
 }
 
-function Z(e, t) {
-  let n = X(e.value).value["rdf:li"],
+function X(e, t) {
+  let n = Z(e.value).value["rdf:li"],
     r = F(e),
     i = [];
   return true === n ? n = [] : Array.isArray(n) || (n = [n]), n.forEach(e => {
@@ -304,23 +304,23 @@ function Z(e, t) {
   }), {
     value: i,
     attributes: r,
-    description: w(i, t)
+    description: R(i, t)
   }
 }
 
 function Q(e) {
-  return G(e) ? V(e) : Y(e) ? W(e).value : K(e) ? z(e).value : $(e)
+  return G(e) ? V(e) : Y(e) ? W(e).value : K(e) ? z(e).value : J(e)
 }
 
-function $(e, t) {
-  let n = J(e) || S(e.value);
+function J(e, t) {
+  let n = $(e) || S(e.value);
   return {
     value: n,
     attributes: F(e),
-    description: w(n, t)
+    description: R(n, t)
   }
 }
 
-function J(e) {
+function $(e) {
   return e.attributes && e.attributes["rdf:resource"]
 }

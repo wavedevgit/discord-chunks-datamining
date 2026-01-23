@@ -31,7 +31,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk473169 = require("./473169.js"),
   Chunk525351 = require("./525351.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,14 +40,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -211,7 +211,7 @@ function M(e) {
             ref: t,
             role: i
           } = e, l = P(e, ["ref", "role"]);
-          return (0, r.jsx)(c.B8B, w({
+          return (0, r.jsx)(c.B8B, R({
             innerRole: i,
             innerAriaLabel: n,
             ref: e => {

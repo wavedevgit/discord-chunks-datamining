@@ -30,7 +30,7 @@ function h(e) {
     onClickContent: I,
     onView: S,
     guildId: T
-  } = e, C = (0, d.w)(A, b), N = (0, c.Gq)(b, E.author, "Invite Embed"), R = i.useMemo(() => {
+  } = e, C = (0, d.w)(A, b), N = (0, c.Gq)(b, E.author, "Invite Embed"), w = i.useMemo(() => {
     let e = [];
     if (!C) {
       var t;
@@ -45,7 +45,7 @@ function h(e) {
       })
     }
     return e
-  }, [C, N]), w = null != b && null != b.details && null != b.state ? p.intl.formatToPlainString(p.t.JCvHtx, {
+  }, [C, N]), R = null != b && null != b.details && null != b.state ? p.intl.formatToPlainString(p.t.JCvHtx, {
     track: b.details,
     artist: b.state
   }) : g.name, P = null != (t = null == b || null == (h = b.timestamps) ? true : h.start) ? t : null == b ? true : b.created_at, D = i.useMemo(() => {
@@ -77,10 +77,10 @@ function h(e) {
   }), [D, O, v]);
   return (0, r.jsx)(s.h, {
     header: y,
-    title: w,
+    title: R,
     iconSrc: null != (n = (0, u.A)(b, g.id)) ? n : true,
     info: x,
-    actions: R,
+    actions: w,
     onClickContent: I,
     trackingConfig: {
       id: g.id,

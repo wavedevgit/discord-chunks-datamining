@@ -61,13 +61,13 @@ function N(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -213,7 +213,7 @@ function j(e) {
       disableBoostClick: T,
       "aria-label": N = false
     } = e,
-    P = null != (t = w(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? t : 18,
+    P = null != (t = R(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? t : 18,
     x = (0, o.bG)([m.default, h.Ay], () => {
       let e = m.default.getCurrentUser();
       return h.Ay.isMember(null == s ? true : s.id, null == e ? true : e.id)
@@ -245,9 +245,9 @@ function j(e) {
   if (null == V) return null;
   M.premium && (n = K, a = W);
   let q = (0, c.Mw)(j) ? H : Y,
-    X = (0, c.Mw)(j) ? F : B;
-  n = null != n ? n : q, a = null != a ? a : X;
-  let Z = Math.floor(.75 * P) - (null != z ? z : 0);
+    Z = (0, c.Mw)(j) ? F : B;
+  n = null != n ? n : q, a = null != a ? a : Z;
+  let X = Math.floor(.75 * P) - (null != z ? z : 0);
   return (0, r.jsx)(u.STz, {
     color: l,
     position: d,
@@ -260,7 +260,7 @@ function j(e) {
     children: e => (0, r.jsx)(u.DUT, {
       onClick: G,
       tabIndex: U ? 0 : false,
-      children: (0, r.jsx)(p.A, R(C({}, e), {
+      children: (0, r.jsx)(p.A, w(C({}, e), {
         className: g,
         flowerStarClassName: E,
         allowFullSizedIcon: true,
@@ -269,8 +269,8 @@ function j(e) {
         size: P,
         children: (0, r.jsx)(V, {
           size: "custom",
-          width: Z,
-          height: Z,
+          width: X,
+          height: X,
           className: y,
           color: null != n ? n : "currentColor"
         })

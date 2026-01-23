@@ -83,9 +83,9 @@ function N(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let R = "SHOW_MORE";
+let w = "SHOW_MORE";
 
-function w(e) {
+function R(e) {
   return ({
     [b.oh.AUDIO_INPUT]: {
       setDevice: d.A.setInputDevice,
@@ -132,7 +132,7 @@ function P(e) {
     getCanSetDevice: x,
     getWarningMessage: L,
     getLocation: j
-  } = w(t), {
+  } = R(t), {
     analyticsLocations: M
   } = (0, f.Ay)(), k = (0, o.bG)([p.A], () => p.A.theme), [U, G] = i.useState(d), V = j(a), [F, B] = (0, E.tR)(t, {
     location: V
@@ -142,7 +142,7 @@ function P(e) {
     messageType: u.YCn.WARNING,
     children: L()
   }), z = i.useCallback(e => {
-    if (e === R) G(true), g.default.track(y.HAw.DEVICES_LIST_SHOW_MORE_CLICKED, {
+    if (e === w) G(true), g.default.track(y.HAw.DEVICES_LIST_SHOW_MORE_CLICKED, {
       device_type: t,
       location: V,
       location_stack: M,
@@ -207,7 +207,7 @@ function P(e) {
     })
   }
 
-  function X() {
+  function Z() {
     let e = e => {
         let {
           id: t,
@@ -224,7 +224,7 @@ function P(e) {
       return t.concat(n)
     } {
       let e = {
-        value: R,
+        value: w,
         label: O.intl.string(O.t.E99UMh),
         preventCloseOnSelect: true
       };
@@ -236,7 +236,7 @@ function P(e) {
       label: S,
       value: Y,
       onChange: z,
-      options: X(),
+      options: Z(),
       isDisabled: !W,
       popoutPosition: "bottom",
       renderOptionLabel: e => q(e, true),

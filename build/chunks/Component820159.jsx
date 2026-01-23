@@ -123,11 +123,11 @@ let A = e => {
     T = (0, l.bG)([f.A], () => f.A.getUpload(n, a.optionName, d.C.SlashCommand), [n, a.optionName]),
     C = a.children[a.children.length - 1],
     N = null != C && h.l5.isText(C) && C.text.endsWith("\n"),
-    R = s()(g.S0, g.xP, {
+    w = s()(g.S0, g.xP, {
       [g.t$]: v && b,
       [g.$2]: (!v || !b) && S
     }),
-    w = i.useCallback(() => {
+    R = i.useCallback(() => {
       h.VW.isVoid(A, a) || _.b.selectCommandOption(A, a.optionName, true)
     }, [A, a]);
   return t = I === c.n4.ATTACHMENT ? (null == T ? true : T.filename) != null ? (0, r.jsxs)("span", {
@@ -145,11 +145,11 @@ let A = e => {
       contentEditable: false
     }) : null]
   }), (0, r.jsxs)("span", O(y({}, p), {
-    className: R,
+    className: w,
     children: [(0, r.jsxs)("span", {
       className: g.gA,
       contentEditable: false,
-      onClick: w,
+      onClick: R,
       children: [a.optionDisplayName, "​"]
     }), t, (0, r.jsx)("span", {
       contentEditable: false,

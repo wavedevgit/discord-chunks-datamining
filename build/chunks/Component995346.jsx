@@ -33,7 +33,7 @@ var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk515636 = require("./515636.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -157,7 +157,7 @@ function F(e) {
     context: a,
     commandResults: s,
     query: o
-  } = e, p = s.length > k, E = i.useMemo(() => p ? s.slice(0, k) : s, [s, p]), [y, b] = i.useState(false), v = null != (t = (0, l.A)(y)) ? t : y, A = i.useCallback(() => b(e => !e), []), T = (null != (n = (0, l.A)(o)) ? n : o)[0] !== o[0], w = y && !T;
+  } = e, p = s.length > k, E = i.useMemo(() => p ? s.slice(0, k) : s, [s, p]), [y, b] = i.useState(false), v = null != (t = (0, l.A)(y)) ? t : y, A = i.useCallback(() => b(e => !e), []), T = (null != (n = (0, l.A)(o)) ? n : o)[0] !== o[0], R = y && !T;
   i.useLayoutEffect(() => b(false), [T]);
   let {
     ref: P,
@@ -165,7 +165,7 @@ function F(e) {
     onTransitionEnd: x
   } = (0, O.A)({
     key: o,
-    isExpanded: w,
+    isExpanded: R,
     durationMs: 200,
     maxAnimationHeight: 680
   });
@@ -176,8 +176,8 @@ function F(e) {
       num: s.length
     })
   }, [s.length, v, y]);
-  let L = w || D,
-    j = w ? I.A.buttonTypes.VIEW_LESS : I.A.buttonTypes.VIEW_MORE,
+  let L = R || D,
+    j = R ? I.A.buttonTypes.VIEW_LESS : I.A.buttonTypes.VIEW_MORE,
     M = L ? s : E;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(I.A, {
@@ -185,7 +185,7 @@ function F(e) {
       buttonType: j,
       onClickViewButton: p ? A : true
     }), (0, r.jsx)("div", {
-      className: R._,
+      className: w._,
       ref: P,
       onTransitionEnd: x,
       children: M.map((e, t) => {
@@ -235,7 +235,7 @@ function B(e) {
     searchResultsPosition: e.resultsPosition
   });
   return (0, r.jsx)("div", {
-    className: R.Gn,
+    className: w.Gn,
     ref: e => {
       t.current = e
     },
@@ -258,7 +258,7 @@ function H(e) {
     children: [(0, r.jsx)(I.A, {
       title: N.intl.string(N.t.PHjkRE)
     }), (0, r.jsxs)("div", {
-      className: R._,
+      className: w._,
       children: [n.map((e, n) => {
         let {
           application: i,
@@ -279,7 +279,7 @@ function H(e) {
     children: [(0, r.jsx)(I.A, {
       title: N.intl.string(N.t.shUONg)
     }), (0, r.jsxs)("div", {
-      className: R.H$,
+      className: w.H$,
       children: [n.map((e, n) => {
         let {
           application: i,
@@ -319,12 +319,12 @@ function W() {
     children: [(0, r.jsx)(I.A, {
       title: N.intl.string(N.t["0hKkS+"])
     }), (0, r.jsx)("div", {
-      className: R._,
+      className: w._,
       children: L.map(e => (0, r.jsx)(T.A, {}, e))
     }), (0, r.jsx)(I.A, {
       title: N.intl.string(N.t.PHjkRE)
     }), (0, r.jsx)("div", {
-      className: R._,
+      className: w._,
       children: j.map(e => (0, r.jsx)(T.A, {}, e))
     })]
   })

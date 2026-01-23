@@ -4,7 +4,7 @@
 require.d(exports, {
   Cp: () => S,
   Gf: () => A,
-  Sw: () => R,
+  Sw: () => w,
   V4: () => N,
   ak: () => I,
   dK: () => O,
@@ -147,7 +147,7 @@ function N(e) {
   }), false) : !e.emojis.includes(t) && void e.emojis.push(t), y.Sb.INFREQUENT_USER_ACTION)
 }
 
-function R(e) {
+function w(e) {
   let t = C(e);
   null != t && _.bW.updateAsync("favoriteEmojis", e => {
     if (e.emojis = T(e.emojis), !e.emojis.includes(t)) returnfalse;

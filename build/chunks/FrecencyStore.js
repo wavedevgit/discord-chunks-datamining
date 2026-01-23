@@ -81,10 +81,10 @@ function T(e) {
     guildId: t,
     channelId: n
   } = e, r = false;
-  return n !== I && (I = null != n ? n : null, null != n && _.Ut1.test(n) && (r = true, A.track(n), R.pendingUsages.push({
+  return n !== I && (I = null != n ? n : null, null != n && _.Ut1.test(n) && (r = true, A.track(n), w.pendingUsages.push({
     key: n,
     timestamp: Date.now()
-  }))), t !== S && (S = null != t ? t : null, null != t && _.Ut1.test(t) && (r = true, A.track(t), R.pendingUsages.push({
+  }))), t !== S && (S = null != t ? t : null, null != t && _.Ut1.test(t) && (r = true, A.track(t), w.pendingUsages.push({
     key: t,
     timestamp: Date.now()
   }))), r
@@ -97,7 +97,7 @@ function C(e) {
     },
     wasSaved: n
   } = e;
-  return t === h.oD.FRECENCY_AND_FAVORITES_SETTINGS && !!n && (R.pendingUsages = [], true)
+  return t === h.oD.FRECENCY_AND_FAVORITES_SETTINGS && !!n && (w.pendingUsages = [], true)
 }
 
 function N() {
@@ -106,20 +106,20 @@ function N() {
   if (null == t) returnfalse;
   A.overwriteHistory(a().mapValues(t, e => y(g({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), R.pendingUsages)
+  })), w.pendingUsages)
 }
-let R = {
+let w = {
   pendingUsages: []
 };
-class w extends(r = Chunk311907.Ay.PersistedStore) {
+class R extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(u.A, d.A, f.A, p.A, c.A), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && _.Ut1.test(e.key)), R = e), this.syncWith([c.A], N)
+    this.waitFor(u.A, d.A, f.A, p.A, c.A), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && _.Ut1.test(e.key)), w = e), this.syncWith([c.A], N)
   }
   getState() {
-    return R
+    return w
   }
   hasPendingUsage() {
-    return R.pendingUsages.length > 0
+    return w.pendingUsages.length > 0
   }
   get frecencyWithoutFetchingLatest() {
     return A
@@ -142,8 +142,8 @@ class w extends(r = Chunk311907.Ay.PersistedStore) {
     return O
   }
 }
-m(w, "displayName", "FrecencyStore"), m(w, "persistKey", "FrecencyStore");
-let P = new w(Chunk73153.h, {
+m(R, "displayName", "FrecencyStore"), m(R, "persistKey", "FrecencyStore");
+let P = new R(Chunk73153.h, {
   CHANNEL_SELECT: T,
   VOICE_CHANNEL_SELECT: T,
   USER_SETTINGS_PROTO_UPDATE: C

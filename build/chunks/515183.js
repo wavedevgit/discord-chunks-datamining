@@ -6,8 +6,8 @@ require.d(exports, {
   E1: () => I,
   O4: () => P,
   T$: () => f,
-  Zj: () => R,
-  e3: () => w,
+  Zj: () => w,
+  e3: () => R,
   gK: () => E,
   mk: () => p,
   ph: () => h,
@@ -125,7 +125,7 @@ function N(e) {
   return 0 === t.length ? r.aI.UNKNOWN : e[t.length > 1 ? t[1] : t[0]]
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   if (e.overlayMethod !== c.Ue.OutOfProcess && e.overlayMethod !== c.Ue.OutOfProcessLimitedInteraction) returnfalse;
   if (!n) returntrue;
   switch (t) {
@@ -137,7 +137,7 @@ function R(e, t, n) {
   returnfalse
 }
 
-function w(e, t) {
+function R(e, t) {
   if (!t) returnfalse;
   switch (e) {
     case r.aI.UNKNOWN:

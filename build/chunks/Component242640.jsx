@@ -40,8 +40,8 @@ function O(e) {
     buttonCTALabel: T,
     buttonIcon: C,
     isOwned: N = false,
-    renderSourceIcon: R,
-    dragHandle: w,
+    renderSourceIcon: w,
+    dragHandle: R,
     giftingOrigin: P,
     source: D
   } = e, x = i.useRef(null), L = i.useRef(null), j = null != v ? v : L, {
@@ -120,7 +120,7 @@ function O(e) {
           e.stopPropagation(), Y()
         }
       })]
-    }), null != R && R(), w, a && null != n && (0, r.jsx)(_.A, {
+    }), null != w && w(), R, a && null != n && (0, r.jsx)(_.A, {
       iconSize: "sm",
       item: t,
       wishlistId: n,

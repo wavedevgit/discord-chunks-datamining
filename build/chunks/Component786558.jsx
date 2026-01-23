@@ -34,8 +34,8 @@ function f(e) {
     dynamicDataBinding: T,
     listenOnDocumentBody: C,
     eventCapture: N,
-    assetLoader: R,
-    onLoad: w
+    assetLoader: w,
+    onLoad: R
   } = e, P = i.useContext(l.C), D = (0, o.R)(), x = null != (t = null == (n = (a = (0, c.G9)()).isWindowFocused) ? true : n.call(a)) ? t : D, [L, j] = i.useState(true), M = i.useRef(null), {
     rive: k,
     RiveComponent: U
@@ -53,8 +53,8 @@ function f(e) {
     isTouchScrollEnabled: S,
     listenOnDocumentBody: C,
     eventCapture: N,
-    assetLoader: R,
-    onLoad: w
+    assetLoader: w,
+    onLoad: R
   });
   i.useImperativeHandle(O, () => ({
     play: () => null == k ? true : k.play(),

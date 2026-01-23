@@ -8,13 +8,13 @@ require.d(exports, {
   IO: () => A,
   JC: () => H,
   TP: () => p,
-  YL: () => R,
+  YL: () => w,
   Yh: () => F,
   _3: () => c,
   a2: () => _,
   fE: () => g,
   g5: () => C,
-  hL: () => w,
+  hL: () => R,
   pU: () => u,
   t: () => m,
   uD: () => v,
@@ -120,11 +120,11 @@ let N = (e, t) => {
   return !isNaN(a) && a > Date.now()
 };
 
-function R(e) {
+function w(e) {
   return null != e.userStatus && (N(e.userStatus, i.n.PLAY_ON_XBOX) || N(e.userStatus, i.n.PLAY_ON_PLAYSTATION))
 }
 
-function w(e) {
+function R(e) {
   return new Set(Object.keys(e.config.taskConfigV2.tasks))
 }
 
@@ -132,7 +132,7 @@ function P(e) {
   return (null == e ? true : e.type) === i.n.PLAY_ON_DESKTOP
 }
 let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
-  x = e => R(e) || o.A.isProgressingOnDesktop(e.id),
+  x = e => w(e) || o.A.isProgressingOnDesktop(e.id),
   L = (e, t) => {
     var n, i, s, o;
     let l = null == (o = e.userStatus) || null == (s = o.progress) || null == (i = s[t.type]) || null == (n = i.heartbeat) ? true : n.lastBeatAt;
@@ -214,7 +214,7 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
     };
     if (v(e)) return V({
       quest: e,
-      includeTaskTypes: null != t ? t : R(e) ? i.o.CONSOLE : i.o.ALL
+      includeTaskTypes: null != t ? t : w(e) ? i.o.CONSOLE : i.o.ALL
     });
     if (S(e))
       if (I(e)) return U({

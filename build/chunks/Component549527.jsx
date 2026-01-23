@@ -47,10 +47,10 @@ function V(e) {
     message: t,
     snapshot: n,
     index: u
-  } = e, f = i.useMemo(() => new d.j(t, n, u), [t, n, u]), _ = (0, s.bG)([N.A, L.default, D.A, P.A, w.A, p.A], () => f.getForwardInfo(N.A, L.default, D.A, P.A, w.A, p.A).footerInfo, [f], o.A), h = i.useCallback(() => {
+  } = e, f = i.useMemo(() => new d.j(t, n, u), [t, n, u]), _ = (0, s.bG)([N.A, L.default, D.A, P.A, R.A, p.A], () => f.getForwardInfo(N.A, L.default, D.A, P.A, R.A, p.A).footerInfo, [f], o.A), h = i.useCallback(() => {
     var e, n;
     let r = N.A.getChannel(t.channel_id),
-      i = w.A.getGuild(null == r ? true : r.guild_id),
+      i = R.A.getGuild(null == r ? true : r.guild_id),
       a = null == (e = t.messageReference) ? true : e.channel_id,
       s = x.A.getCurrentlySelectedChannelId(),
       o = C.Ay.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
@@ -177,7 +177,7 @@ function H(e) {
     m = T.hD.useSetting(),
     g = T.rs.useSetting(),
     E = m && g,
-    y = (0, s.bG)([R.A], () => R.A.isDeveloper),
+    y = (0, s.bG)([w.A], () => w.A.isDeveloper),
     b = (0, _.S)((null != (t = h.editedTimestamp) ? t : h.timestamp).valueOf()),
     {
       content: O,

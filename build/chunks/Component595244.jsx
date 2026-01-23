@@ -38,7 +38,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk756302 = require("./756302.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -125,7 +125,7 @@ function j(e) {
 }
 
 function M(e) {
-  return (0, r.jsx)(j, D(w({}, e), {
+  return (0, r.jsx)(j, D(R({}, e), {
     headerClassName: N.nQ
   }))
 }
@@ -168,9 +168,9 @@ function k(e) {
     variant: "primary",
     text: C.intl.string(C.t["0cCDKP"]),
     onClick: f
-  })), (0, r.jsx)(S.f, D(w({}, a), {
+  })), (0, r.jsx)(S.f, D(R({}, a), {
     actions: N,
-    children: (0, r.jsx)(U, w({
+    children: (0, r.jsx)(U, R({
       guild: t,
       application: n
     }, a))
@@ -198,7 +198,7 @@ function U(e) {
       className: N.OY,
       children: o
     });
-  return (0, r.jsx)(M, w({
+  return (0, r.jsx)(M, R({
     message: s,
     footer: l
   }, a))
@@ -220,7 +220,7 @@ function G(e) {
       application_id: t.id
     })
   }, [a, t.id]);
-  return (0, r.jsx)(S.f, D(w({}, n), {
+  return (0, r.jsx)(S.f, D(R({}, n), {
     actions: [{
       variant: "primary",
       text: C.intl.string(C.t["31Bci5"]),
@@ -259,7 +259,7 @@ function G(e) {
 }
 
 function V(e) {
-  return (0, r.jsx)(S.f, D(w({}, e), {
+  return (0, r.jsx)(S.f, D(R({}, e), {
     title: C.intl.string(C.t.j2d6Km),
     subtitle: C.intl.string(C.t["/B7kXy"]),
     actions: [{
@@ -270,7 +270,7 @@ function V(e) {
 }
 
 function F(e) {
-  return (0, r.jsx)(j, D(w({}, e), {
+  return (0, r.jsx)(j, D(R({}, e), {
     headerClassName: N.gW
   }))
 }

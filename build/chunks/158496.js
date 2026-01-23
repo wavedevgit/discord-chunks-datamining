@@ -74,9 +74,9 @@ function f(e, t) {
       accept: e => e instanceof(0, a.mD)(e).HTMLInputElement && "radio" === e.type
     });
     "next" === n ? (r = i.nextNode()) || (i.currentNode = e.currentTarget, r = i.firstChild()) : (r = i.previousNode()) || (i.currentNode = e.currentTarget, r = i.lastChild()), r && (r.focus(), t.setSelectedValue(r.value))
-  }, R = (0, s.Bi)(n);
+  }, w = (0, s.Bi)(n);
   return r.V.set(t, {
-    name: R,
+    name: w,
     form: f,
     descriptionId: I.id,
     errorMessageId: S.id,

@@ -61,12 +61,12 @@ function N(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = e => {
+let R = e => {
     let {
       disabled: t,
       invite: s,
@@ -88,7 +88,7 @@ let w = e => {
         let {
           default: i
         } = await n.e("60072").then(n.bind(n, 159707));
-        return n => (0, r.jsx)(i, R(C({}, n), {
+        return n => (0, r.jsx)(i, w(C({}, n), {
           premiumGroupSubscriptionId: e,
           premiumGroupInviteId: t,
           premiumGroupPrimaryName: c,
@@ -143,7 +143,7 @@ let w = e => {
         let {
           default: e
         } = await n.e("15554").then(n.bind(n, 115225));
-        return n => (0, r.jsx)(e, R(C({}, n), {
+        return n => (0, r.jsx)(e, w(C({}, n), {
           subscriptionId: i.subscription,
           invitedUser: t,
           subscriptionGroupMemberId: i.id
@@ -243,7 +243,7 @@ let w = e => {
         disabled: !O,
         invite: u,
         channel: n
-      }) : (0, r.jsx)(w, {
+      }) : (0, r.jsx)(R, {
         disabled: !O,
         invite: u,
         isExistingSub: null != _

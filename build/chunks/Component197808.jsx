@@ -73,7 +73,7 @@ class U extends Chunk64700.PureComponent {
       activityPIPWindow: p,
       chatOpen: _,
       callChatSidebarWidth: h
-    } = this.props, m = document.body.style.getPropertyValue("--custom-guild-sidebar-width"), y = "" !== m ? parseInt(m, 10) : R.MdR, b = d.width - y - (_ ? h : 0), O = null != p, v = !f && O && _ && b < 550;
+    } = this.props, m = document.body.style.getPropertyValue("--custom-guild-sidebar-width"), y = "" !== m ? parseInt(m, 10) : w.MdR, b = d.width - y - (_ ? h : 0), O = null != p, v = !f && O && _ && b < 550;
     return (0, r.jsxs)(E.ic, {
       children: [(0, r.jsx)(g.A, {
         pictureInPictureComponents: j,
@@ -109,13 +109,13 @@ let G = Chunk311907.Ay.connectStores([Chunk869146.A, Chunk933958.Ay, Chunk531685
       popoutWindowKey: g,
       popoutWindowHasTitleBar: E = false
     } = e,
-    A = b.A.getWindowOpen(R.MLl.CHANNEL_CALL_POPOUT),
-    x = b.A.getWindowOpen(R.MLl.ACTIVITY_POPOUT),
+    A = b.A.getWindowOpen(w.MLl.CHANNEL_CALL_POPOUT),
+    x = b.A.getWindowOpen(w.MLl.ACTIVITY_POPOUT),
     L = o.Ay.getCurrentEmbeddedActivity(),
     j = (0, c.H)(null == L ? true : L.location),
     M = null != L && !(0, u.A)(j, I.A, T.A),
     U = o.Ay.getActivityPanelMode(),
-    G = M && U === w.Gd.PANEL,
+    G = M && U === R.Gd.PANEL,
     V = null != L && null != j && (null == (n = f.A.getSelectedParticipant(j)) ? true : n.type) === P.lp.ACTIVITY,
     F = _.A.getConnectedFrame(),
     B = _.A.getFrameLayoutMode() === D.y.FOCUSED,
@@ -127,7 +127,7 @@ let G = Chunk311907.Ay.connectStores([Chunk869146.A, Chunk933958.Ay, Chunk531685
     width: Y.innerWidth,
     height: Y.innerHeight
   });
-  let z = H ? R.BRT.POPOUT : R.BRT.APP,
+  let z = H ? w.BRT.POPOUT : w.BRT.APP,
     q = e => H && (0, y.q)({
       withTitleBar: E,
       isFullScreen: W
@@ -135,12 +135,12 @@ let G = Chunk311907.Ay.connectStores([Chunk869146.A, Chunk933958.Ay, Chunk531685
       isPopoutWindow: H
     }) : e;
   m = null != L && x || H && M || H && null != F ? null : H || !A || M || null != F ? null != L && G ? null != (r = S.A.pipActivityWindow) ? r : S.A.pipVideoWindow : null != F && B ? null != (i = null != (a = S.A.pipFrameWindow) ? a : S.A.pipVideoWindow) ? i : S.A.pipActivityWindow : null != (s = null != (d = null != (h = S.A.pipHavenWindow) ? h : S.A.pipVideoWindow) ? d : S.A.pipActivityWindow) ? s : S.A.pipFrameWindow : null;
-  let X = Array.from(S.A.pipWindows.values()),
-    Z = S.A.pipWidth(P.R8.VIDEO),
-    Q = X.find(e => e.component === R.o1q.VIDEO),
-    $ = X.find(e => e.component === R.o1q.ACTIVITY),
-    J = X.find(e => e.component === R.o1q.FRAME),
-    ee = [X.find(e => e.component === R.o1q.HAVEN), Q, $, J].filter(N.Vq),
+  let Z = Array.from(S.A.pipWindows.values()),
+    X = S.A.pipWidth(P.R8.VIDEO),
+    Q = Z.find(e => e.component === w.o1q.VIDEO),
+    J = Z.find(e => e.component === w.o1q.ACTIVITY),
+    $ = Z.find(e => e.component === w.o1q.FRAME),
+    ee = [Z.find(e => e.component === w.o1q.HAVEN), Q, J, $].filter(N.Vq),
     et = v.Ay.callChatSidebarWidth,
     en = T.A.getVoiceChannelId(),
     er = T.A.getChannelId() === en,
@@ -151,7 +151,7 @@ let G = Chunk311907.Ay.connectStores([Chunk869146.A, Chunk933958.Ay, Chunk531685
   return {
     selectedPIPWindow: m,
     pipWindows: 0 === ee.length ? k : ee,
-    pipWidth: Z,
+    pipWidth: X,
     maxX: K.width - (eo ? et : 0),
     maxY: K.height,
     theme: O.A.theme,
@@ -161,7 +161,7 @@ let G = Chunk311907.Ay.connectStores([Chunk869146.A, Chunk933958.Ay, Chunk531685
     roundCorners: !es,
     windowSize: K,
     inPopoutWindow: H,
-    activityPIPWindow: $,
+    activityPIPWindow: J,
     chatOpen: ei,
     callChatSidebarWidth: et
   }

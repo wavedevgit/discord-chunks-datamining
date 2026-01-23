@@ -39,7 +39,7 @@ function I(e) {
 
 function S(e) {
   let t = setTimeout(() => {
-    R(t)
+    w(t)
   }, E);
   return e.map(e => {
     let n = {
@@ -78,14 +78,14 @@ function N() {
   return O.length > 0 && 0 === b.length
 }
 
-function R(e) {
+function w(e) {
   let t = C(e);
   for (let n of (null != e && clearTimeout(e), t)) delete v[n];
   let n = O.filter(e => !t.includes(e.name));
   N() || (b = n, T(n, "timer_expired")), O = [...n]
 }
 
-function w(e, t) {
+function R(e, t) {
   if (!f.A.isOverlayEnabled) {
     if (0 === b.length) return;
     P("overlay_disabled");
@@ -132,7 +132,7 @@ function M(e) {
   let {
     zones: t
   } = e;
-  return w(t, "set_click_zones"), true
+  return R(t, "set_click_zones"), true
 }
 
 function k() {

@@ -56,12 +56,12 @@ function p(e) {
     T = _.hasOwnProperty("y"),
     C = r.kb,
     N = r.Mn,
-    R = window;
+    w = window;
   if (g) {
-    var w = (0, i.A)(l),
+    var R = (0, i.A)(l),
       P = "clientHeight",
       D = "clientWidth";
-    w === (0, a.A)(l) && (w = (0, s.A)(l), "static" !== (0, o.A)(w).position && "absolute" === h && (P = "scrollHeight", D = "scrollWidth")), (u === r.Mn || (u === r.kb || u === r.pG) && p === r._N) && (N = r.sQ, A -= (y && w === R && R.visualViewport ? R.visualViewport.height : w[P]) - c.height, A *= m ? 1 : false), (u === r.kb || (u === r.Mn || u === r.sQ) && p === r._N) && (C = r.pG, O -= (y && w === R && R.visualViewport ? R.visualViewport.width : w[D]) - c.width, O *= m ? 1 : false)
+    R === (0, a.A)(l) && (R = (0, s.A)(l), "static" !== (0, o.A)(R).position && "absolute" === h && (P = "scrollHeight", D = "scrollWidth")), (u === r.Mn || (u === r.kb || u === r.pG) && p === r._N) && (N = r.sQ, A -= (y && R === w && w.visualViewport ? w.visualViewport.height : R[P]) - c.height, A *= m ? 1 : false), (u === r.kb || (u === r.Mn || u === r.sQ) && p === r._N) && (C = r.pG, O -= (y && R === w && w.visualViewport ? w.visualViewport.width : R[D]) - c.width, O *= m ? 1 : false)
   }
   var x = Object.assign({
       position: h
@@ -73,7 +73,7 @@ function p(e) {
       x: O,
       y: A
     };
-  return (O = L.x, A = L.y, m) ? Object.assign({}, x, ((n = {})[N] = T ? "0" : "", n[C] = S ? "0" : "", n.transform = 1 >= (R.devicePixelRatio || 1) ? "translate(" + O + "px, " + A + "px)" : "translate3d(" + O + "px, " + A + "px, 0)", n)) : Object.assign({}, x, ((t = {})[N] = T ? A + "px" : "", t[C] = S ? O + "px" : "", t.transform = "", t))
+  return (O = L.x, A = L.y, m) ? Object.assign({}, x, ((n = {})[N] = T ? "0" : "", n[C] = S ? "0" : "", n.transform = 1 >= (w.devicePixelRatio || 1) ? "translate(" + O + "px, " + A + "px)" : "translate3d(" + O + "px, " + A + "px, 0)", n)) : Object.assign({}, x, ((t = {})[N] = T ? A + "px" : "", t[C] = S ? O + "px" : "", t.transform = "", t))
 }
 let _ = {
   name: "computeStyles",

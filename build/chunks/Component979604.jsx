@@ -38,7 +38,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,7 +63,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,7 +88,7 @@ function j(e) {
 }
 class M extends(r = Chunk64700.Component) {
   get analyticsLocation() {
-    return P(R({}, this.props.analyticsContext.location), {
+    return P(w({}, this.props.analyticsContext.location), {
       object: S.ZSU.BUTTON_CTA
     })
   }
@@ -269,7 +269,7 @@ function k(e) {
   let {
     libraryApplication: t
   } = e, n = (0, f.p)(), [r, a] = (0, o.yK)([E.A, y.A], () => [(0, m.F)(t, E.A, y.A), E.A.getState(t.id, t.branchId)], [t]), s = (0, o.bG)([g.A], () => g.A.isSyncing(t.id, t.branchId), [t]), l = (0, o.bG)([h.A], () => h.A.hasNoBuild(t.id, t.branchId), [t]);
-  return (0, i.jsx)(M, P(R({}, e), {
+  return (0, i.jsx)(M, P(w({}, e), {
     analyticsContext: n,
     actionState: r,
     dispatchState: a,

@@ -2,7 +2,7 @@
 /** chunk id: 412090, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => R
+  _: () => w
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -186,7 +186,7 @@ let A = (e, t) => {
       totalLineItemLabel: A(r, i)
     }
   },
-  R = e => {
+  w = e => {
     let {
       referralTrialOfferId: t,
       selectedPlanId: n,
@@ -204,8 +204,8 @@ let A = (e, t) => {
       isPrepaid: I,
       discountInvoiceItems: S,
       premiumPlanOptions: T,
-      shouldAllowPlanSelect: R,
-      isCustomGift: w
+      shouldAllowPlanSelect: w,
+      isCustomGift: R
     } = (0, f.L)(e), P = (0, p.yf)({
       error: s,
       isGift: u,
@@ -232,7 +232,7 @@ let A = (e, t) => {
         subscriptionPlan: A,
         isPrepaidPaymentSource: I,
         premiumTrialOffer: D,
-        isCustomGift: w
+        isCustomGift: R
       }),
       M = null;
     if (!I && (P.type === p.N$.PREMIUM_DEFAULT || P.type === p.N$.PREMIUM_WITH_TRIAL) && null != P.renewalInvoicePreview) {
@@ -240,7 +240,7 @@ let A = (e, t) => {
       M = (0, r.jsx)(o._, b({}, e))
     }
     return (0, r.jsxs)("div", {
-      children: [R ? L : null, (0, r.jsx)("div", {
+      children: [w ? L : null, (0, r.jsx)("div", {
         style: {
           height: 12
         }

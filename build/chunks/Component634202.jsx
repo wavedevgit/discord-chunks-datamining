@@ -134,7 +134,7 @@ function B(e) {
         p = E.A.get(e),
         h = null == d ? true : d.application,
         g = (null == h ? true : h.bot) != null ? new A.A(h.bot) : null;
-      return T.iC.includes(null != (t = null == h ? true : h.id) ? t : "") ? l = (0, r.jsx)(w.A, {
+      return T.iC.includes(null != (t = null == h ? true : h.id) ? t : "") ? l = (0, r.jsx)(R.A, {
         className: M.AO,
         color: i,
         size: 16
@@ -284,7 +284,7 @@ function Y(e) {
         ref: g,
         className: M.qS
       }, e), {
-        children: [(0, r.jsx)(R.A, {
+        children: [(0, r.jsx)(w.A, {
           className: M.f7,
           size: 16,
           color: u.colorString

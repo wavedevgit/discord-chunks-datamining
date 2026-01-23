@@ -37,9 +37,9 @@ function N(e) {
     currentUser: n,
     voiceChannel: i,
     className: N,
-    onClose: R
+    onClose: w
   } = e, {
-    themeType: w
+    themeType: R
   } = (0, g.E)(), {
     analyticsLocations: P
   } = (0, u.Ay)(c.A.USER_PROFILE_VOICE_ACTIVITY_CARD), D = (0, h.A)({
@@ -71,7 +71,7 @@ function N(e) {
     children: (0, r.jsx)(A.A, {
       channel: i,
       onAction: D,
-      onClose: R
+      onClose: w
     })
   }), V = i.isDM() || i.isGroupDM() ? T.intl.string(T.t["9FaEzi"]) : i.isGuildStageVoice() ? T.intl.string(T.t.QygGCN) : T.intl.string(T.t.msxteM);
   return (0, r.jsx)(u.f5, {
@@ -80,7 +80,7 @@ function N(e) {
       ref: x,
       className: a()(C.Nr, N),
       onAction: D,
-      onClose: R,
+      onClose: w,
       "aria-label": "".concat(V, ", ").concat(M),
       children: [(0, r.jsx)(y.A, {
         text: V,
@@ -88,7 +88,7 @@ function N(e) {
         contextMenu: (0, r.jsx)(I.A, {
           display: "voice",
           user: t,
-          onClose: R
+          onClose: w
         })
       }), (0, r.jsx)("div", {
         className: C.rf,
@@ -103,15 +103,15 @@ function N(e) {
               channel: i,
               guild: L,
               onAction: D,
-              onClose: R
+              onClose: w
             }), k && i.isGuildVoice() && (0, r.jsx)(v.A, {
               voiceChannel: i,
               onAction: D,
-              onClose: R
-            }), w === S.d.MODAL_V2 && G()]
-          }), w === S.d.MODAL && G()]
+              onClose: w
+            }), R === S.d.MODAL_V2 && G()]
+          }), R === S.d.MODAL && G()]
         })
-      }), w !== S.d.MODAL && w !== S.d.MODAL_V2 && G()]
+      }), R !== S.d.MODAL && R !== S.d.MODAL_V2 && G()]
     })
   })
 }

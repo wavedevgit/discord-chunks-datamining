@@ -306,14 +306,14 @@ function N(e) {
   return "static" === (0, a.L9)(e).position
 }
 
-function R(e, t) {
+function w(e, t) {
   if (!(0, a.sb)(e) || "fixed" === (0, a.L9)(e).position) return null;
   if (t) return t(e);
   let n = e.offsetParent;
   return (0, a.ep)(e) === n && (n = n.ownerDocument.body), n
 }
 
-function w(e, t) {
+function R(e, t) {
   let n = (0, a.zk)(e);
   if ((0, a.Tf)(e)) return n;
   if (!(0, a.sb)(e)) {
@@ -324,12 +324,12 @@ function w(e, t) {
     }
     return n
   }
-  let r = R(e, t);
-  for (; r && (0, a.Lv)(r) && N(r);) r = R(r, t);
+  let r = w(e, t);
+  for (; r && (0, a.Lv)(r) && N(r);) r = w(r, t);
   return r && (0, a.eu)(r) && N(r) && !(0, a.sQ)(r) ? n : r || (0, a.gJ)(e) || n
 }
 let P = async function(e) {
-  let t = this.getOffsetParent || w,
+  let t = this.getOffsetParent || R,
     n = this.getDimensions,
     r = await n(e.floating);
   return {
@@ -350,7 +350,7 @@ let x = {
   convertOffsetParentRelativeRectToViewportRelativeRect: h,
   getDocumentElement: Chunk84157.ep,
   getClippingRect: S,
-  getOffsetParent: w,
+  getOffsetParent: R,
   getElementRects: P,
   getClientRects: m,
   getDimensions: T,

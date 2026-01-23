@@ -39,8 +39,8 @@ let I = "SELECTABLE",
   T = null,
   C = {},
   N = {},
-  R = {},
-  w = null,
+  w = {},
+  R = null,
   P = {},
   D = {
     comparator: false,
@@ -119,14 +119,14 @@ function H(e) {
   } = e, n = B(t);
   return a().forEach(n, n => {
     let r = n.channel;
-    if (e.count += 1, p.JT.has(r.type) && !y.A.can(v.xBc.VIEW_CHANNEL, r) && !c.A.isChannelGated(r.guild_id, r.id) && r.id !== w) return;
+    if (e.count += 1, p.JT.has(r.type) && !y.A.can(v.xBc.VIEW_CHANNEL, r) && !c.A.isChannelGated(r.guild_id, r.id) && r.id !== R) return;
     let i = V(r.type);
     r.type === v.rbe.GUILD_DIRECTORY && (null == P[t] && (P[t] = []), P[t].push(n)), null != e[i] && e[i].push(n)
   }), e
 }
 
 function Y() {
-  C = {}, P = {}, N = {}, R = {}, null != T && W(T)
+  C = {}, P = {}, N = {}, w = {}, null != T && W(T)
 }
 
 function W(e) {
@@ -164,10 +164,10 @@ function q(e) {
       id: t
     }
   } = e;
-  return delete C[t], delete N[t], delete R[t], delete P[t], true
+  return delete C[t], delete N[t], delete w[t], delete P[t], true
 }
 
-function X(e) {
+function Z(e) {
   let {
     guildId: t,
     user: n
@@ -176,7 +176,7 @@ function X(e) {
   C[t] = true, t === T && W(t)
 }
 
-function Z(e) {
+function X(e) {
   let t = m.A.getBasicChannel(e.id);
   null != t && null != t.guild_id && W(t.guild_id)
 }
@@ -191,7 +191,7 @@ function Q(e) {
   C[t] = true, t === T && W(t)
 }
 
-function $(e) {
+function J(e) {
   let {
     channels: t
   } = e, n = false;
@@ -204,7 +204,7 @@ function $(e) {
   return n
 }
 
-function J(e) {
+function $(e) {
   let {
     guildId: t
   } = e;
@@ -241,12 +241,12 @@ function et(e, t) {
 }
 
 function en(e) {
-  et(O.default.getCurrentUser(), e) ? R[e] = true : delete R[e]
+  et(O.default.getCurrentUser(), e) ? w[e] = true : delete w[e]
 }
 
 function er(e, t) {
   var n;
-  w = t;
+  R = t;
   let r = null != (n = null == e ? true : e.getGuildId()) ? n : null;
   if (null == r) returnfalse;
   C[r] = true, r === T && W(r)
@@ -256,7 +256,7 @@ function ei(e) {
   let {
     channelId: t
   } = e;
-  return null == t && null != w ? er(m.A.getChannel(w), null) : er(m.A.getChannel(t), t)
+  return null == t && null != R ? er(m.A.getChannel(R), null) : er(m.A.getChannel(t), t)
 }
 
 function ea(e) {
@@ -344,7 +344,7 @@ class el extends(r = Chunk311907.Ay.Store) {
     return this.getSelectableChannelIds(e).includes(t)
   }
   hasElevatedPermissions(e) {
-    return R[e] || false
+    return w[e] || false
   }
   hasChannels(e) {
     return this.getChannels(e).count > 0
@@ -367,16 +367,16 @@ let ec = new el(Chunk73153.h, {
   GUILD_CREATE: z,
   GUILD_UPDATE: z,
   GUILD_DELETE: q,
-  GUILD_MEMBER_UPDATE: X,
+  GUILD_MEMBER_UPDATE: Z,
   CHANNEL_CREATE: Q,
   CHANNEL_DELETE: Q,
-  CHANNEL_UPDATES: $,
-  GUILD_ROLE_CREATE: J,
-  GUILD_ROLE_UPDATE: J,
-  GUILD_ROLE_DELETE: J,
-  IMPERSONATE_UPDATE: J,
-  IMPERSONATE_STOP: J,
+  CHANNEL_UPDATES: J,
+  GUILD_ROLE_CREATE: $,
+  GUILD_ROLE_UPDATE: $,
+  GUILD_ROLE_DELETE: $,
+  IMPERSONATE_UPDATE: $,
+  IMPERSONATE_STOP: $,
   VOICE_CHANNEL_SELECT: ei,
-  VOICE_CHANNEL_STATUS_UPDATE: Z,
+  VOICE_CHANNEL_STATUS_UPDATE: X,
   VOICE_STATE_UPDATES: ea
 })

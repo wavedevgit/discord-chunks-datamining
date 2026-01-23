@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 158265, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => _
@@ -35,7 +35,7 @@ let j = ["#51BC9D"],
     } = l.useContext(h.PW), {
       completionSpring: S,
       startCompletionAnimation: O
-    } = (0, g.Ry)(), E = (null == (t = y.userStatus) ? true : t.completedAt) != null, T = l.useRef(false), N = (0, d.bG)([m.A], () => m.A.useReducedMotion), w = l.useRef(null), I = (0, d.bG)([p.A], () => p.A.hasLayers()), k = (0, u.A)(I), [P, R] = l.useState(null), [D, M] = l.useState(null), L = l.useRef(new s.OH({
+    } = (0, g.Ry)(), T = (null == (t = y.userStatus) ? true : t.completedAt) != null, E = l.useRef(false), N = (0, d.bG)([m.A], () => m.A.useReducedMotion), w = l.useRef(null), I = (0, d.bG)([p.A], () => p.A.hasLayers()), k = (0, u.A)(I), [P, R] = l.useState(null), [D, M] = l.useState(null), L = l.useRef(new s.OH({
       gravity: 0,
       wind: 0
     })), U = (0, s.f9)(P, D), B = l.useCallback(() => {
@@ -118,16 +118,16 @@ let j = ["#51BC9D"],
       }
     }, [r, w, U, N]), G = (0, u.A)(A);
     return (l.useEffect(() => {
-      E && A && !G && (O(), B())
-    }, [A, E, O, B, G]), l.useEffect(() => {
-      E && !I && k && setTimeout(() => {
+      T && A && !G && (O(), B())
+    }, [A, T, O, B, G]), l.useEffect(() => {
+      T && !I && k && setTimeout(() => {
         O(), B()
       }, 200)
-    }, [E, k, I, O, B]), l.useEffect(() => {
-      U.isReady && (!T.current && E && (O(), B()), T.current = E)
-    }, [E, T, B, O, U]), l.useEffect(() => {
-      _ && E && (O(), B())
-    }, [_, E, O, B]), N) ? null : (0, a.jsxs)("div", {
+    }, [T, k, I, O, B]), l.useEffect(() => {
+      U.isReady && (!E.current && T && (O(), B()), E.current = T)
+    }, [T, E, B, O, U]), l.useEffect(() => {
+      _ && T && (O(), B())
+    }, [_, T, O, B]), N) ? null : (0, a.jsxs)("div", {
       className: b.iE,
       "aria-hidden": "true",
       ref: w,

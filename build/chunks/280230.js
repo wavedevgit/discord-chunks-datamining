@@ -167,8 +167,8 @@
     T = RegExp(I + "[^\\n]*(?:\\n(?!\\1" + A + " )[^\\n]*)*(\n|$)", "gm"),
     C = /\n{2,}$/,
     N = /^ (?= *`)|(` *) $/g,
-    R = C,
-    w = / *\n+$/,
+    w = C,
+    R = / *\n+$/,
     P = RegExp("^( *)(" + A + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + A + " )\\n*|\\s*\n*$)"),
     D = /(?:^|\n)( *)$/,
     x = function() {
@@ -382,7 +382,7 @@
           var r = e[2],
             i = r.length > 1,
             a = i ? +r : true,
-            s = e[0].replace(R, "\n").match(T),
+            s = e[0].replace(w, "\n").match(T),
             o = false;
           return {
             ordered: i,
@@ -396,7 +396,7 @@
               o = d;
               var f = n.inline,
                 p = n._list;
-              n._list = true, d ? (n.inline = false, i = c.replace(w, "\n\n")) : (n.inline = true, i = c.replace(w, ""));
+              n._list = true, d ? (n.inline = false, i = c.replace(R, "\n\n")) : (n.inline = true, i = c.replace(R, ""));
               var _ = t(i, n);
               return n.inline = f, n._list = p, _
             })
@@ -856,12 +856,12 @@
       var n = C.test(e);
       return (t = t || {}).inline = !n, W(e, t)
     },
-    X = Y(V, "react"),
-    Z = Y(V, "html"),
+    Z = Y(V, "react"),
+    X = Y(V, "html"),
     Q = function(e, t) {
-      return X(K(e, t), t)
+      return Z(K(e, t), t)
     },
-    $ = function(e) {
+    J = function(e) {
       var t = {};
       for (var n in e) "source" !== n && Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
       return t.children = Q(e.source), u("div", null, t)
@@ -877,14 +877,14 @@
     parseBlock: b,
     markdownToReact: Q,
     markdownToHtml: function(e, t) {
-      return Z(K(e, t), t)
+      return X(K(e, t), t)
     },
-    ReactMarkdown: $,
+    ReactMarkdown: J,
     defaultBlockParse: K,
     defaultInlineParse: z,
     defaultImplicitParse: q,
-    defaultReactOutput: X,
-    defaultHtmlOutput: Z,
+    defaultReactOutput: Z,
+    defaultHtmlOutput: X,
     preprocess: r,
     sanitizeText: m,
     sanitizeUrl: p,
@@ -899,7 +899,7 @@
       return "u" > typeof console && console.warn("defaultParse is deprecated, please use `defaultImplicitParse`"), q.apply(null, arguments)
     },
     defaultOutput: function() {
-      return "u" > typeof console && console.warn("defaultOutput is deprecated, please use `defaultReactOutput`"), X.apply(null, arguments)
+      return "u" > typeof console && console.warn("defaultOutput is deprecated, please use `defaultReactOutput`"), Z.apply(null, arguments)
     }
   }
 })

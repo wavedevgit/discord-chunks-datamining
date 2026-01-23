@@ -79,14 +79,14 @@ function N() {
   }))
 }
 
-function R(e) {
+function w(e) {
   for (let t of e) {
     let e = u.A.createFromServer(t);
     O[(0, d.gW)(e.id, e.branchId)] = e
   }
 }
 
-function w() {
+function R() {
   b = false
 }
 
@@ -94,14 +94,14 @@ function P(e) {
   let {
     libraryApplications: t
   } = e;
-  O = {}, R(t), b = true
+  O = {}, w(t), b = true
 }
 
 function D(e) {
   let {
     libraryApplications: t
   } = e;
-  R(t)
+  w(t)
 }
 
 function x(e) {
@@ -229,7 +229,7 @@ class B extends(r = Chunk311907.Ay.Store) {
 }
 _(B, "displayName", "LibraryApplicationStore");
 let H = new B(Chunk73153.h, {
-  LOGOUT: w,
+  LOGOUT: R,
   LIBRARY_FETCH_SUCCESS: P,
   SKU_PURCHASE_SUCCESS: D,
   LIBRARY_APPLICATION_FLAGS_UPDATE_START: x,

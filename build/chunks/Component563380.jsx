@@ -2,7 +2,7 @@
 /** chunk id: 563380, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => R
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
@@ -61,13 +61,13 @@ function N(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w() {
+function R() {
   let e = (0, E.h)(O.A.testModeApplicationId),
     {
       analyticsLocations: t
@@ -82,12 +82,12 @@ function w() {
         isSubscribedToAuthorizeRequest: T,
         oauth2Token: C,
         hasConnectionEntrypointUrl: N,
-        validFlows: R
+        validFlows: w
       }
     } = (0, v.RD)(e, {
       debug: true
     }),
-    w = (0, c.bG)([b.A], () => null != e && b.A.isConnected(e.id)),
+    R = (0, c.bG)([b.A], () => null != e && b.A.isConnected(e.id)),
     x = (0, c.bG)([_.Ay], () => _.Ay.getSelfEmbeddedActivities()),
     L = "authorization_debug",
     j = [{
@@ -152,18 +152,18 @@ function w() {
           color: "text-subtle",
           children: I.intl.string(A.default["no+FQS"])
         }), (0, r.jsx)(P, {
-          overallStatus: T ? 0 : w ? 3 : 1,
+          overallStatus: T ? 0 : R ? 3 : 1,
           name: I.intl.string(A.default.AGLx00),
           steps: [{
-            status: w ? 2 : 4,
+            status: R ? 2 : 4,
             text: I.intl.string(A.default.kxF9br),
-            description: w ? null : I.intl.string(A.default.PFxxJa),
-            learnMoreLink: w ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
+            description: R ? null : I.intl.string(A.default.PFxxJa),
+            learnMoreLink: R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }, {
-            status: T ? 2 : w ? 3 : 4,
+            status: T ? 2 : R ? 3 : 4,
             text: I.intl.string(A.default.S94dzs),
-            description: T || !w ? null : I.intl.string(A.default.aTULMB),
-            learnMoreLink: T || !w ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
+            description: T || !R ? null : I.intl.string(A.default.aTULMB),
+            learnMoreLink: T || !R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }],
           isChosen: u === v._M.RPC
         }), (0, r.jsx)(P, {
@@ -183,7 +183,7 @@ function w() {
         children: [(0, r.jsx)(D, {
           status: +!i,
           text: I.intl.string(I.t["Vu/zmQ"])
-        }), 0 === R.length && (0, r.jsx)(l.EYj, {
+        }), 0 === w.length && (0, r.jsx)(l.EYj, {
           style: {
             minWidth: 0,
             overflow: "hidden"
@@ -301,23 +301,23 @@ function L(e) {
   };
   switch (t) {
     case 0:
-      return (0, r.jsx)(l.yr3, R(C({}, n), {
+      return (0, r.jsx)(l.yr3, w(C({}, n), {
         color: u.A.colors.ICON_FEEDBACK_POSITIVE
       }));
     case 1:
-      return (0, r.jsx)(l.aXh, R(C({}, n), {
+      return (0, r.jsx)(l.aXh, w(C({}, n), {
         color: u.A.colors.ICON_FEEDBACK_CRITICAL
       }));
     case 2:
-      return (0, r.jsx)(l.Uzd, R(C({}, n), {
+      return (0, r.jsx)(l.Uzd, w(C({}, n), {
         color: u.A.colors.ICON_FEEDBACK_POSITIVE
       }));
     case 3:
-      return (0, r.jsx)(l.id, R(C({}, n), {
+      return (0, r.jsx)(l.id, w(C({}, n), {
         color: u.A.colors.ICON_FEEDBACK_WARNING
       }));
     case 4:
-      return (0, r.jsx)(l.PGe, R(C({}, n), {
+      return (0, r.jsx)(l.PGe, w(C({}, n), {
         color: u.A.colors.ICON_FEEDBACK_CRITICAL
       }))
   }

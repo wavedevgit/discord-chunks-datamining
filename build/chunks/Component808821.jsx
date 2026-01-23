@@ -66,7 +66,7 @@ function y(e) {
     let e = p.A.toURLSafe(C.proxy_url);
     null != e && (e.searchParams.append("format", "webp"), N = e.toString())
   }
-  let R = null != N ? [N, A.thumbnail] : [A.thumbnail];
+  let w = null != N ? [N, A.thumbnail] : [A.thumbnail];
   return (0, r.jsx)(_.A, {
     iconNode: (0, r.jsx)(l.xgA, {
       size: "md",
@@ -77,7 +77,7 @@ function y(e) {
     additionalContent: (0, r.jsxs)("div", {
       className: g.i,
       children: [(0, r.jsx)(u.A, {
-        thumbnails: R,
+        thumbnails: w,
         variant: "stacked"
       }), (0, r.jsx)(o.$nd, {
         size: "sm",

@@ -177,8 +177,8 @@ function I(e) {
     minLength: T,
     error: C,
     defaultDirty: N = false,
-    leading: R,
-    trailing: w,
+    leading: w,
+    trailing: R,
     validateOn: P = "change",
     size: D = "md",
     fullWidth: x = false,
@@ -195,7 +195,7 @@ function I(e) {
     defaultDirty: N
   }), {
     setShouldValidate: G
-  } = U, V = O(b, I), F = "object" == typeof R && "type" in R && "tags" === R.type, B = e => {
+  } = U, V = O(b, I), F = "object" == typeof w && "type" in w && "tags" === w.type, B = e => {
     var t, n;
     let r = e.currentTarget.value;
     null == (t = M.onChange) || t.call(M, r, u), G(true), null == (n = V.setHasValue) || n.call(V, "" !== r)
@@ -217,22 +217,22 @@ function I(e) {
   ("boolean" == typeof L ? L && null != b && "" !== b && !z : L.show) ? q = (0, r.jsx)(A, {
     inputSize: D,
     onClick: W
-  }): null != w && (q = (0, r.jsx)(v, {
-    accessory: w,
-    inputSize: D
-  }));
-  let X = null;
-  null != R && (X = (0, r.jsx)(v, {
+  }): null != R && (q = (0, r.jsx)(v, {
     accessory: R,
     inputSize: D
   }));
-  let Z = j ? (0, r.jsx)(d.n, {
+  let Z = null;
+  null != w && (Z = (0, r.jsx)(v, {
+    accessory: w,
+    inputSize: D
+  }));
+  let X = j ? (0, r.jsx)(d.n, {
     value: b,
     maxLength: g
   }) : null;
   return (0, r.jsx)(o.D0$, E(m({}, k), {
     errorMessage: U.hasError && null != (t = U.errorMessage) ? t : true,
-    trailingAuxiliaryContent: Z,
+    trailingAuxiliaryContent: X,
     children: (0, r.jsxs)(o.FON, {
       ref: K,
       disabled: n,
@@ -240,11 +240,11 @@ function I(e) {
       fullWidth: x,
       readOnly: z,
       className: s()(_.container, _[D], {
-        [_.hasLeading]: null != X,
+        [_.hasLeading]: null != Z,
         [_.hasTrailing]: null != q,
         [_.hasTags]: F
       }),
-      children: [X, (0, r.jsx)(o.vN3, E(m({
+      children: [Z, (0, r.jsx)(o.vN3, E(m({
         ringTarget: K
       }, c), {
         children: (0, r.jsx)(S, E(m({

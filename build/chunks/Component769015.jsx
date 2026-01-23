@@ -90,14 +90,14 @@ let O = Chunk64700.forwardRef(function(e, t) {
       allowUnknownGameIcon: T = true
     } = e,
     [C, N] = i.useState(null),
-    [R, w] = i.useState(false),
+    [w, R] = i.useState(false),
     P = i.useCallback(e => {
-      w(e)
+      R(e)
     }, []),
     D = i.useRef(null);
   i.useEffect(() => {
-    null != D.current && R && (cancelIdleCallback(D.current), D.current = null)
-  }, [R]);
+    null != D.current && w && (cancelIdleCallback(D.current), D.current = null)
+  }, [w]);
   let x = (0, o.K)(P);
   if (null != O && (n = y(O)), null != a && null == n && (a instanceof f.Ay ? n = a.getIconURL(E(S)) : null != a.icon && (n = p.Ay.getApplicationIconURL({
       id: a.id,
@@ -111,14 +111,14 @@ let O = Chunk64700.forwardRef(function(e, t) {
       let e = () => (0, d.yt)(n, (e, t) => {
         N(n)
       });
-      if (R) return e();
+      if (w) return e();
       let t = requestIdleCallback(() => {
         D.current = null, e()
       });
       return D.current = t, () => {
         null != D.current && (cancelIdleCallback(D.current), D.current = null)
       }
-    }, [n, R]), true === n && null != _) {
+    }, [n, w]), true === n && null != _) {
     let e = b(S);
     return (0, r.jsx)(u.A, {
       className: s()(m.Gt, I, A),

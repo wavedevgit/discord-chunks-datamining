@@ -9,7 +9,7 @@ require.d(exports, {
   NV: () => o,
   Nu: () => h,
   Py: () => P,
-  RZ: () => w,
+  RZ: () => R,
   SE: () => _,
   SJ: () => d,
   Xj: () => E,
@@ -58,7 +58,7 @@ let u = {
 };
 
 function d(e, t, n) {
-  let r = Math.ceil(e.calendar.toJulianDay(e) + 1 - (n ? u[n] : R(t))) % 7;
+  let r = Math.ceil(e.calendar.toJulianDay(e) + 1 - (n ? u[n] : w(t))) % 7;
   return r < 0 && (r += 7), r
 }
 
@@ -137,7 +137,7 @@ function N(e) {
   return "u" === t ? true : t
 }
 
-function R(e) {
+function w(e) {
   let t = C.get(e);
   if (!t) {
     if (Intl.Locale) {
@@ -172,7 +172,7 @@ function R(e) {
   return t.firstDay
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   let r = e.calendar.getDaysInMonth(e);
   return Math.ceil((d(y(e), t, n) + r) / 7)
 }

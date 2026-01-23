@@ -35,8 +35,8 @@ let m = new Map,
   T = b,
   C = null,
   N = false,
-  R = new Set,
-  w = new Map,
+  w = new Set,
+  R = new Map,
   P = new Map,
   D = {},
   x = 0,
@@ -44,21 +44,21 @@ let m = new Map,
     let {
       skuId: t
     } = e;
-    (R = new Set(R)).add(t), (w = new Map(w)).delete(t), (P = new Map(P)).delete(t)
+    (w = new Set(w)).add(t), (R = new Map(R)).delete(t), (P = new Map(P)).delete(t)
   },
   j = e => {
     let {
       skuId: t,
       error: n
     } = e;
-    (R = new Set(R)).delete(t), (w = new Map(w)).set(t, n), (P = new Map(P)).set(t, Date.now())
+    (w = new Set(w)).delete(t), (R = new Map(R)).set(t, n), (P = new Map(P)).set(t, Date.now())
   },
   M = e => {
     let {
       skuId: t,
       product: n
     } = e;
-    v.set(t, n), (R = new Set(R)).delete(t), (w = new Map(w)).delete(t), (P = new Map(P)).delete(t)
+    v.set(t, n), (w = new Set(w)).delete(t), (R = new Map(R)).delete(t), (P = new Map(P)).delete(t)
   },
   k = e => {
     N = true, r = true, a = true, D = e.options
@@ -67,7 +67,7 @@ let m = new Map,
     let {
       error: t
     } = e;
-    O = m, v = g, T = b, N = false, R = new Set, r = t, a = Date.now()
+    O = m, v = g, T = b, N = false, w = new Set, r = t, a = Date.now()
   },
   G = e => {
     let t = e.categories.categories;
@@ -104,7 +104,7 @@ let m = new Map,
     }
   },
   B = () => {
-    O = m, v = g, T = b, i = true, N = false, R = new Set, r = true, a = true, D = {}, x = 0
+    O = m, v = g, T = b, i = true, N = false, w = new Set, r = true, a = true, D = {}, x = 0
   },
   H = () => {
     if (!u.A.hasLoadedExperiments) return;
@@ -128,7 +128,7 @@ class W extends(s = Chunk311907.Ay.Store) {
     return N
   }
   isFetchingProduct(e) {
-    return null != e && R.has(e)
+    return null != e && w.has(e)
   }
   get error() {
     return r
@@ -167,7 +167,7 @@ class W extends(s = Chunk311907.Ay.Store) {
     return e.map(e => v.get(e)).filter(e => null != e)
   }
   getProductFetchError(e) {
-    return null != e ? w.get(e) : true
+    return null != e ? R.get(e) : true
   }
   getProductFetchErrorTimestamp(e) {
     return null != e ? P.get(e) : true

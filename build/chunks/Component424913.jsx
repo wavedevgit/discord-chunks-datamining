@@ -48,7 +48,7 @@ function v(e) {
       searchEverywhere: t,
       searchQuerySource: E.Q_.SEARCH_POPOUT
     })
-  }, R = e => {
+  }, w = e => {
     var t;
     let {
       autocompleteCount: r,
@@ -75,7 +75,7 @@ function v(e) {
       isInFilterForSelectedChannel: v,
       searchAutocompleteSelectAction: a
     })
-  }, w = i.useCallback(e => {
+  }, R = i.useCallback(e => {
     let {
       hasOtherSearchFiltersVisible: t
     } = e, i = t ? b.intl.string(b.t.diOL4i) : b.intl.string(b.t["M1tf+7"]);
@@ -147,7 +147,7 @@ function v(e) {
           });
         e.push(s)
       }
-      let t = [...C, w({
+      let t = [...C, R({
         hasOtherSearchFiltersVisible: true
       })];
       e.push((0, p.wE)(f.$.GROUP, {
@@ -297,7 +297,7 @@ function v(e) {
               selectedIndex: t,
               searchAutocompleteSelectAction: r
             } = e;
-            R({
+            w({
               selectedIndex: t,
               searchAutocompleteSelectAction: r,
               selectedAutocomplete: n,
@@ -330,7 +330,7 @@ function v(e) {
         }
       });
       if (0 === i) {
-        let t = [...C, w({
+        let t = [...C, R({
           hasOtherSearchFiltersVisible: true
         })];
         e.push((0, p.wE)(f.$.GROUP, {
@@ -338,7 +338,7 @@ function v(e) {
           title: b.intl.string(b.t.UdhTtk)
         }))
       } else {
-        let t = w({
+        let t = R({
           hasOtherSearchFiltersVisible: false
         });
         e.push(t)
@@ -373,7 +373,7 @@ function v(e) {
               selectedIndex: r,
               searchAutocompleteSelectAction: s
             } = t;
-            R({
+            w({
               selectedIndex: r,
               searchAutocompleteSelectAction: s,
               selectedAutocomplete: n,

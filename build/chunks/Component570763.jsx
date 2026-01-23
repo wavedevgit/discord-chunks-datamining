@@ -178,7 +178,7 @@ function e_(e) {
     var e;
     null == (e = A.current) || e.resetSortingFiltering()
   }, []);
-  return (0, r.jsxs)(J.X.Provider, {
+  return (0, r.jsxs)($.X.Provider, {
     value: d,
     children: [l, (0, r.jsxs)(x.A, {
       onScroll: c,
@@ -252,7 +252,7 @@ let eb = function(e) {
     enabled: X
   } = (0, w.Z)({
     location: en.rE.QUEST_HOME_DESKTOP
-  }), J = i.useCallback(() => {
+  }), $ = i.useCallback(() => {
     X ? window.open(er.X7G.PAID_TERMS_ORBS) : window.open(k.A.getArticleURL(er.MVz.QUESTS_LEARN_MORE))
   }, [X]);
   (0, E.HU)({
@@ -339,7 +339,7 @@ let eb = function(e) {
         animate: false
       }), x(e)
     }, [l, x]);
-  return (0, r.jsx)($.M.Provider, {
+  return (0, r.jsx)(J.M.Provider, {
     value: {
       onAssetLoadComplete: z
     },
@@ -408,7 +408,7 @@ let eb = function(e) {
               }), (0, r.jsx)(p.Button, {
                 variant: "overlay-secondary",
                 text: ea.intl.string(ea.t["7kTAgJ"]),
-                onClick: J
+                onClick: $
               })]
             }),
             className: a()(es.cI, es.GF),
@@ -437,7 +437,7 @@ let eb = function(e) {
             button: (0, r.jsx)(p.Button, {
               variant: "overlay-primary",
               text: ea.intl.string(ea.t.hvVgAZ),
-              onClick: J,
+              onClick: $,
               icon: p.I9m,
               iconPosition: "end"
             }),

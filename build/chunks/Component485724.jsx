@@ -51,7 +51,7 @@ function M(e) {
   } = e, {
     name: E,
     bot: O
-  } = n = (0, w.b)(n), v = null == O ? true : O.id, A = (0, _.Ag)(n), S = I.Ay.getApplicationIconURL({
+  } = n = (0, R.b)(n), v = null == O ? true : O.id, A = (0, _.Ag)(n), S = I.Ay.getApplicationIconURL({
     id: n.id,
     icon: n.icon,
     bot: O
@@ -72,11 +72,11 @@ function M(e) {
     },
     applicationId: n.id,
     botUserId: null == O ? true : O.id
-  }), K = null != v && A && W, z = H && A, q = (0, D.F)(n), X = (0, D.t)(n), Z = i.useMemo(() => {
+  }), K = null != v && A && W, z = H && A, q = (0, D.F)(n), Z = (0, D.t)(n), X = i.useMemo(() => {
     let e = [];
     return A ? (z && e.push({
       label: null == F ? L.intl.string(L.t.RscU7I) : B ? L.intl.string(L.t.DPfdsq) : L.intl.string(L.t.sqe0hj),
-      trackingArea: R.kY.PLAY,
+      trackingArea: w.kY.PLAY,
       onClick() {
         (0, c.su)({
           channelId: null != V ? V : true,
@@ -91,7 +91,7 @@ function M(e) {
       disabled: B
     }), !z && K && e.push({
       label: L.intl.string(L.t.JeK1Wg),
-      trackingArea: R.kY.PLAY,
+      trackingArea: w.kY.PLAY,
       onClick() {
         (0, p.Q)({
           appId: n.id,
@@ -101,8 +101,8 @@ function M(e) {
           referrerId: M
         })
       }
-    })) : null != X && e.push(X), e
-  }, [z, K, F, B, V, n.id, Y, s, M, G, A, X, v]), Q = A ? (0, r.jsx)(U, {
+    })) : null != Z && e.push(Z), e
+  }, [z, K, F, B, V, n.id, Y, s, M, G, A, Z, v]), Q = A ? (0, r.jsx)(U, {
     app: n
   }) : (0, r.jsx)(k, {
     app: n
@@ -115,7 +115,7 @@ function M(e) {
     bannerAspectRatio: j,
     iconSrc: S,
     info: Q,
-    actions: Z,
+    actions: X,
     onClickContent: q,
     trackingConfig: {
       id: n.id,

@@ -464,7 +464,7 @@ function N(e) {
   }))
 }
 
-function R(e, t, n, r, i) {
+function w(e, t, n, r, i) {
   var a = function(e, t) {
       return f(f({
         id: t
@@ -507,7 +507,7 @@ function R(e, t, n, r, i) {
   })
 }
 
-function w() {
+function R() {
   var e = r.useRef(false),
     t = r.useRef({}),
     n = r.useCallback(function(e) {
@@ -556,7 +556,7 @@ var P = Chunk64700.forwardRef(function(e, t) {
         return n
       }(e, ["className", "environment", "onClick", "onMouseDown", "onMouseMove", "onMouseUp", "onBeforeRender", "onAfterRender", "requestAnimationFrame", "cancelAnimationFrame"]),
       b = r.useRef(null),
-      O = w(),
+      O = R(),
       v = O.isReady,
       A = O.addReadyListener,
       I = O.removeReadyListener,
@@ -590,7 +590,7 @@ var P = Chunk64700.forwardRef(function(e, t) {
         }), null == C.current && D()
       }, [D]),
       L = r.useCallback(function(e, t, n, r, a) {
-        var s, o = R(null != (s = e.id) ? s : (0, i.A)(), e, n, r, a);
+        var s, o = w(null != (s = e.id) ? s : (0, i.A)(), e, n, r, a);
         return x(o, t), o
       }, [x]),
       j = r.useCallback(function(e) {
@@ -725,7 +725,7 @@ var P = Chunk64700.forwardRef(function(e, t) {
       c = e.spriteHeight,
       u = r.useRef(null),
       d = r.useRef([]),
-      f = w(),
+      f = R(),
       h = f.isReady,
       m = f.addReadyListener,
       g = f.removeReadyListener,

@@ -35,8 +35,8 @@ let O = function(e) {
     } = e,
     C = (0, f.Ut)(),
     N = (0, l.bG)([u.A], () => u.A.useReducedMotion),
-    R = i.useMemo(() => (0, p.tW)(a, p.fY.REWARD), [a]),
-    w = i.useMemo(() => (0, p.tW)(a, p.fY.REWARD_IMAGE), [a]),
+    w = i.useMemo(() => (0, p.tW)(a, p.fY.REWARD), [a]),
+    R = i.useMemo(() => (0, p.tW)(a, p.fY.REWARD_IMAGE), [a]),
     P = i.useCallback(t => {
       var n;
       (0, o.vq)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), C({
@@ -55,13 +55,13 @@ let O = function(e) {
     L = (0, _.K9)(a.config);
   return i.useEffect(() => {
     if (null != D.current) {
-      if (!R.isAnimated || N) {
+      if (!w.isAnimated || N) {
         D.current.currentTime = 0, D.current.pause();
         return
       }
       O && !x.current ? D.current.play() : !O && x.current && (D.current.currentTime = 0, D.current.pause()), x.current = O
     }
-  }, [O, R, N]), t = L ? (0, r.jsx)(h.Sn, {
+  }, [O, w, N]), t = L ? (0, r.jsx)(h.Sn, {
     id: "QuestRewardTile_rewardTileNitro",
     children: e => (0, r.jsx)(g.A, {
       ref: e,
@@ -69,19 +69,19 @@ let O = function(e) {
     })
   }) : S ? (0, r.jsx)(m.N, {
     showVideo: O,
-    imageAsset: null != w ? {
-      asset: w,
+    imageAsset: null != R ? {
+      asset: R,
       assetId: "QuestRewardTile_rewardTileStatic",
       className: b.XM,
       alt: y.intl.string(y.t.UMclVN)
     } : true,
     videoAsset: {
-      asset: R,
+      asset: w,
       assetId: "QuestRewardTile_rewardTileAnimated",
       className: s()(b.eB, b.tv)
     },
     onLoadComplete: e.onLoadComplete
-  }) : R.isAnimated ? (0, r.jsx)(h.Sn, {
+  }) : w.isAnimated ? (0, r.jsx)(h.Sn, {
     id: "QuestRewardTile_rewardTileAnimated",
     children: t => {
       var n;
@@ -97,8 +97,8 @@ let O = function(e) {
         controls: false,
         onProgress: e.onLoadComplete,
         children: (0, r.jsx)("source", {
-          src: R.url,
-          type: null != (n = R.mimetype) ? n : true
+          src: w.url,
+          type: null != (n = w.mimetype) ? n : true
         })
       })
     }
@@ -108,7 +108,7 @@ let O = function(e) {
       ref: t,
       alt: (0, _.mq)(a.config),
       className: s()(b.eB, b.Qz),
-      src: R.url,
+      src: w.url,
       onLoad: e.onLoadComplete
     })
   }), null == v ? (0, r.jsx)("div", {

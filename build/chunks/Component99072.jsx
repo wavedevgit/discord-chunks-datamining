@@ -72,8 +72,8 @@ function N(e) {
     message: I,
     application: T,
     channel: N,
-    analyticsLocations: R,
-    onView: w
+    analyticsLocations: w,
+    onView: R
   } = e, {
     staticBannerSrc: P,
     videoBannerSrc: D,
@@ -92,7 +92,7 @@ function N(e) {
     children: (0, s.Wf)(I, N, t)
   }), {
     analyticsLocations: V
-  } = (0, l.Ay)(R, o.A.REQUEST_TO_STREAM_INVITE_EMBED), F = A.intl.string(v.default["5+172e"]), B = false;
+  } = (0, l.Ay)(w, o.A.REQUEST_TO_STREAM_INVITE_EMBED), F = A.intl.string(v.default["5+172e"]), B = false;
   return U ? (F = A.intl.string(v.default.u4QmWl), B = true) : null != M ? (F = A.intl.string(v.default.P0wwmM), B = true) : k !== N.id ? (F = A.intl.string(v.default.qRXats), B = true) : null == j && (F = A.intl.string(v.default["43zohO"]), B = true), (0, r.jsx)(c.h, {
     header: A.intl.string(v.default.nAyuPp),
     title: T.name,
@@ -122,7 +122,7 @@ function N(e) {
       guildId: N.guild_id,
       channelId: N.id,
       messageId: I.id,
-      onView: w,
+      onView: R,
       isDeadEnd: U
     }
   })

@@ -59,8 +59,8 @@ function T(e, t) {
 }
 let C = Chunk652215.XlH.CLOSED,
   N = {},
-  R = {},
-  w = false,
+  w = {},
+  R = false,
   P = false,
   D = null,
   x = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
@@ -92,20 +92,20 @@ function j(e) {
 }
 
 function M(e) {
-  r = e.section, i = e.subsection, null != s && r === v.p_A.INSTANT_INVITES && (w = true, h.Bo.get({
+  r = e.section, i = e.subsection, null != s && r === v.p_A.INSTANT_INVITES && (R = true, h.Bo.get({
     url: v.Rsh.INSTANT_INVITES(s.id),
     oldFormErrors: true,
     rejectWithError: true
   }).then(e => {
-    w = false, m.h.dispatch({
+    R = false, m.h.dispatch({
       type: "CHANNEL_SETTINGS_LOADED_INVITES",
       invites: e.body
     })
-  }, () => w = false))
+  }, () => R = false))
 }
 
 function k() {
-  P = false, C = v.XlH.CLOSED, r = null, s = a = null, o = null, R = {}
+  P = false, C = v.XlH.CLOSED, r = null, s = a = null, o = null, w = {}
 }
 
 function U() {
@@ -127,7 +127,7 @@ let F = d().debounce(() => {
   if (null == s || null == a) returnfalse;
   let e = s.toJS(),
     t = a.toJS();
-  x.every(n => e[n] === t[n]) && s !== a && (s = a, J.emitChange())
+  x.every(n => e[n] === t[n]) && s !== a && (s = a, $.emitChange())
 }, 500);
 
 function B(e) {
@@ -183,17 +183,17 @@ function H(e) {
 }
 
 function Y(e) {
-  R = {}, e.invites.forEach(e => {
-    R[e.code] = H(e)
+  w = {}, e.invites.forEach(e => {
+    w[e.code] = H(e)
   })
 }
 
 function W(e) {
-  R = I({}, R), delete R[e.code]
+  w = I({}, w), delete w[e.code]
 }
 
 function K(e) {
-  R = T(I({}, R), {
+  w = T(I({}, w), {
     [e.invite.code]: H(e.invite)
   })
 }
@@ -212,14 +212,14 @@ function q(e) {
   return n
 }
 
-function X(e) {
+function Z(e) {
   let {
     channelId: t
   } = e;
   return z(t)
 }
 
-function Z(e) {
+function X(e) {
   let {
     channel: {
       id: t
@@ -235,7 +235,7 @@ function Q(e) {
   } = e;
   l = t
 }
-class $ extends(c = Chunk311907.Ay.Store) {
+class J extends(c = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(O.A)
   }
@@ -250,8 +250,8 @@ class $ extends(c = Chunk311907.Ay.Store) {
   }
   getInvites() {
     return {
-      invites: R,
-      loading: w
+      invites: w,
+      loading: R
     }
   }
   showNotice() {
@@ -273,29 +273,29 @@ class $ extends(c = Chunk311907.Ay.Store) {
       channel: s,
       section: r,
       subsection: i,
-      invites: R,
+      invites: w,
       selectedOverwriteId: l,
       hasChanges: this.hasChanges(),
       analyticsLocation: D
     }
   }
 }
-A($, "displayName", "ChannelSettingsStore");
-let J = new $(Chunk73153.h, {
+A(J, "displayName", "ChannelSettingsStore");
+let $ = new J(Chunk73153.h, {
     CHANNEL_SETTINGS_INIT: j,
     CHANNEL_SETTINGS_SUBMIT: U,
     CHANNEL_SETTINGS_SUBMIT_SUCCESS: G,
     CHANNEL_SETTINGS_SUBMIT_FAILURE: V,
     CHANNEL_SETTINGS_CLOSE: k,
-    CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: X,
-    CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: X,
+    CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: Z,
+    CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: Z,
     CHANNEL_SETTINGS_OVERWRITE_SELECT: Q,
     CHANNEL_SETTINGS_UPDATE: B,
     CHANNEL_SETTINGS_SET_SECTION: M,
     CHANNEL_SETTINGS_LOADED_INVITES: Y,
     CHANNEL_UPDATES: q,
-    CHANNEL_DELETE: Z,
+    CHANNEL_DELETE: X,
     INSTANT_INVITE_REVOKE_SUCCESS: W,
     INSTANT_INVITE_CREATE_SUCCESS: K
   }),
-  ee = J
+  ee = $

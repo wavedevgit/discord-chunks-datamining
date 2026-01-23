@@ -6,7 +6,7 @@ require.d(exports, {
   D1: () => v,
   E2: () => x,
   FW: () => I,
-  Hn: () => w,
+  Hn: () => R,
   Hr: () => _,
   Qx: () => P,
   Tf: () => C,
@@ -16,7 +16,7 @@ require.d(exports, {
   gN: () => A,
   hl: () => f,
   i4: () => m,
-  sN: () => R,
+  sN: () => w,
   t_: () => g,
   v_: () => T,
   zC: () => y,
@@ -176,11 +176,11 @@ function N(e, t) {
   return S(e, r.Z6.TOGGLE, t)
 }
 
-function R(e, t) {
+function w(e, t) {
   return S(e, r.Z6.SLIDER, t)
 }
 
-function w(e, t) {
+function R(e, t) {
   return S(e, r.Z6.SELECT, t)
 }
 

@@ -2,7 +2,7 @@
 /** chunk id: 775602, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => J,
+  A: () => $,
   _: () => b
 });
 var r, Chunk311907 = require("./311907.js"),
@@ -142,12 +142,12 @@ function N() {
   (v = h({}, v)).keyboardModeEnabled = true
 }
 
-function R() {
+function w() {
   if (!v.keyboardModeEnabled) returnfalse;
   (v = h({}, v)).keyboardModeEnabled = false
 }
 
-function w() {
+function R() {
   (v = h({}, v)).colorblindMode = !v.colorblindMode
 }
 
@@ -249,7 +249,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Z(e) {
   let {
     contrast: t
   } = e;
@@ -258,7 +258,7 @@ function X(e) {
   })
 }
 
-function Z(e) {
+function X(e) {
   let {
     contrastMode: t
   } = e;
@@ -272,7 +272,7 @@ function Q(e) {
     switchIconsEnabled: e.switchIconsEnabled
   })
 }
-class $ extends(r = Chunk311907.Ay.DeviceSettingsStore) {
+class J extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
     this.waitFor(u.A), this.waitFor(l.A), isNaN((v = h({}, O, null != e ? e : null)).fontSize) && (v.fontSize = f.hH7.FONT_SIZE_DEFAULT), 0 > p.qh.indexOf(null != v.messageGroupSpacing ? v.messageGroupSpacing : false) && (v.messageGroupSpacing = null)
   }
@@ -397,7 +397,7 @@ class $ extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return v
   }
 }
-_($, "displayName", "AccessibilityStore"), _($, "persistKey", "AccessibilityStore"), _($, "migrations", [() => {
+_(J, "displayName", "AccessibilityStore"), _(J, "persistKey", "AccessibilityStore"), _(J, "migrations", [() => {
   let e = "a11yFontScale",
     t = "a11yZoom",
     n = "a11yColorblindMode",
@@ -460,13 +460,13 @@ _($, "displayName", "AccessibilityStore"), _($, "persistKey", "AccessibilityStor
 }, e => g(h({}, e), {
   enableCustomCursor: true
 })]);
-let J = new $(Chunk73153.h, {
+let $ = new J(Chunk73153.h, {
   ACCESSIBILITY_SET_FONT_SIZE: S,
   ACCESSIBILITY_SET_ZOOM: T,
   ACCESSIBILITY_RESET_TO_DEFAULT: C,
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: N,
-  ACCESSIBILITY_KEYBOARD_MODE_DISABLE: R,
-  ACCESSIBILITY_COLORBLIND_TOGGLE: w,
+  ACCESSIBILITY_KEYBOARD_MODE_DISABLE: w,
+  ACCESSIBILITY_COLORBLIND_TOGGLE: R,
   ACCESSIBILITY_LOW_CONTRAST_TOGGLE: P,
   ACCESSIBILITY_SET_SATURATION: x,
   ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: L,
@@ -485,7 +485,7 @@ let J = new $(Chunk73153.h, {
   ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING: q,
   ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: k,
   ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: U,
-  ACCESSIBILITY_SET_CONTRAST: X,
-  ACCESSIBILITY_SET_CONTRAST_MODE: Z,
+  ACCESSIBILITY_SET_CONTRAST: Z,
+  ACCESSIBILITY_SET_CONTRAST_MODE: X,
   ACCESSIBILITY_SET_SWITCH_ICONS_ENABLED: Q
 })

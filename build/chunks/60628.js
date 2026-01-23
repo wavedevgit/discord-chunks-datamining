@@ -34,7 +34,7 @@ let v = (0, Chunk64700.createContext)(null),
     } = (0, a.CC)(c.c) || {}, C = null != (S = null != (n = e.validationBehavior) ? n : T) ? S : "native", N = (0, g.j)({
       ...e,
       validationBehavior: C
-    }), R = (0, O.useRef)(null), [w, P] = (0, a._E)(!e["aria-label"] && !e["aria-labelledby"]), {
+    }), w = (0, O.useRef)(null), [R, P] = (0, a._E)(!e["aria-label"] && !e["aria-labelledby"]), {
       groupProps: D,
       labelProps: x,
       fieldProps: L,
@@ -48,11 +48,11 @@ let v = (0, Chunk64700.createContext)(null),
       ...(0, a.SK)(e),
       label: P,
       validationBehavior: C
-    }, N, R), [F, B] = (0, O.useState)(null), H = (0, O.useCallback)(() => {
-      R.current && B(R.current.offsetWidth + "px")
+    }, N, w), [F, B] = (0, O.useState)(null), H = (0, O.useCallback)(() => {
+      w.current && B(w.current.offsetWidth + "px")
     }, []);
     (0, E.w)({
-      ref: R,
+      ref: w,
       onResize: H
     });
     let {
@@ -81,7 +81,7 @@ let v = (0, Chunk64700.createContext)(null),
         [A, N],
         [u.t, {
           ...D,
-          ref: R,
+          ref: w,
           isInvalid: N.isInvalid
         }],
         [s.cQ, L],
@@ -91,14 +91,14 @@ let v = (0, Chunk64700.createContext)(null),
         }],
         [f.I, {
           ...x,
-          ref: w,
+          ref: R,
           elementType: "span"
         }],
         [i.Yi, k],
         [o.RG, N],
         [p.n, {
           trigger: "DatePicker",
-          triggerRef: R,
+          triggerRef: w,
           placement: "bottom start",
           style: {
             "--trigger-width": F

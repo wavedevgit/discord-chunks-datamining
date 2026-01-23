@@ -32,7 +32,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk784505 = require("./784505.js");
 
-function w(e) {
+function R(e) {
   let {
     dropping: t,
     fileInputRef: n,
@@ -44,10 +44,10 @@ function w(e) {
     useSpace: true
   });
   return (0, r.jsxs)("div", {
-    className: R.pp,
+    className: w.pp,
     children: [(0, r.jsxs)("div", {
-      className: s()(R.e8, {
-        [R.R]: t
+      className: s()(w.e8, {
+        [w.R]: t
       }),
       children: [(0, r.jsx)(u.H8$, {
         color: u.LU0.colors.ICON_STRONG,
@@ -78,7 +78,7 @@ function w(e) {
         })
       })]
     }), t && (0, r.jsxs)("div", {
-      className: s()(R.e8, R.r$),
+      className: s()(w.e8, w.r$),
       children: [(0, r.jsx)(u.H8$, {
         color: u.LU0.colors.ICON_STRONG,
         size: "refresh_sm"
@@ -93,7 +93,7 @@ function w(e) {
 
 function P() {
   return (0, r.jsxs)("div", {
-    className: s()(R.pp, R.e8),
+    className: s()(w.pp, w.e8),
     children: [(0, r.jsx)(u.yr3, {
       color: u.LU0.colors.ICON_STRONG,
       size: "refresh_sm"
@@ -117,27 +117,27 @@ function D(e) {
     singleFileInput: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(R.NJ, {
-      [R.j1]: a
+    className: s()(w.NJ, {
+      [w.j1]: a
     }),
     children: [(0, r.jsx)(g.J, {
       upload: n,
       size: a ? m.L.XSMALL : m.L.XXSMALL
     }), (0, r.jsx)(u.Text, {
       variant: "text-".concat(a ? "md" : "xs", "/medium"),
-      className: R.iW,
+      className: w.iW,
       children: null != (t = n.filename) ? t : N.intl.string(N.t.ZMirp0)
     }), (0, r.jsx)(E.Ay, {
-      className: R.BX,
+      className: w.BX,
       children: (0, r.jsx)(h.A, {
-        className: R.XI,
+        className: w.XI,
         tooltip: N.intl.string(N.t.N86XcP),
         onClick: () => i(n.id),
         dangerous: true,
         children: (0, r.jsx)(u.ucK, {
           size: "xs",
           color: "currentColor",
-          className: R.gE
+          className: w.gE
         })
       })
     })]
@@ -219,18 +219,18 @@ function x(e) {
     singleFileInput: true
   }) : (0, r.jsxs)("div", {
     ref: u,
-    className: s()(R.kL, {
-      [R.Ke]: h,
-      [R.z3]: null != j
+    className: s()(w.kL, {
+      [w.Ke]: h,
+      [w.z3]: null != j
     }),
-    children: [v.length >= a ? (0, r.jsx)(P, {}) : (0, r.jsx)(w, {
+    children: [v.length >= a ? (0, r.jsx)(P, {}) : (0, r.jsx)(R, {
       dropping: h,
       fileInputRef: o,
       minValues: n,
       maxValues: a,
       guildId: M.guild_id
     }), L.length > 0 && (0, r.jsx)("div", {
-      className: R.aq,
+      className: w.aq,
       children: L.map(e => (0, r.jsx)(D, {
         upload: e,
         handleRemoveFile: B
@@ -240,7 +240,7 @@ function x(e) {
       onChange: F,
       multiple: a > 1,
       tabIndex: false,
-      className: R.Fg
+      className: w.Fg
     })]
   })
 }

@@ -4,8 +4,8 @@
 require.d(exports, {
   Ay: () => P,
   Ej: () => T,
-  Ls: () => R,
-  j8: () => w
+  Ls: () => w,
+  j8: () => R
 }), require("./896048.js"), require("./801541.js");
 var Chunk889137 = require("./889137.js"),
   Chunk966974 = require("./966974.js"),
@@ -92,11 +92,11 @@ function N(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   return null == e.poll || f.A.getMessage(e.channel_id, e.id) === e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n, r, i, a;
   let {
     formattedExpirationLabel: s
@@ -115,15 +115,15 @@ function w(e, t) {
     } = null != (n = null != t ? t : (0, g.xt)(e.getChannelId(), e.id)) ? n : S,
     O = e.reactions,
     I = true;
-  if (!R(e)) {
+  if (!w(e)) {
     let t = f.A.getMessage(e.channel_id, e.id);
     I = !e.isSearchHit && null != t, O = null != (a = null == t ? true : t.reactions) ? a : O
   }
   let T = m.size > 0,
     C = O.some(e => true === e.me_vote),
     N = !y && C,
-    w = N || h || b,
-    P = p && I && (!C || y || w),
+    R = N || h || b,
+    P = p && I && (!C || y || R),
     D = null == (i = u.A.getChannel(e.getChannelId())) || null == (r = i.getGuildId) ? true : r.call(i),
     x = null != D ? d.Ay.getSelfMember(D) : null,
     L = (0, l.TR)(x),
@@ -133,7 +133,7 @@ function w(e, t) {
     poll: o,
     canTapAnswers: P,
     canRemoveVote: N && p && !h,
-    canShowVoteCounts: w,
+    canShowVoteCounts: R,
     canSubmitVote: M,
     expirationLabel: _,
     hasSelectedAnswer: T,
@@ -146,7 +146,7 @@ function w(e, t) {
     reactions: O,
     selectedAnswerIds: m,
     submitting: E,
-    tapShouldOpenVotersModal: w,
+    tapShouldOpenVotersModal: R,
     showResults: b
   }
 }
@@ -168,12 +168,12 @@ function P(e, t) {
     g = (0, b.T)(f, h),
     v = d.answers,
     A = d.layout_type,
-    S = w(e, t, {
+    S = R(e, t, {
       formattedExpirationLabel: c
     });
   if (null == S) return;
   let {
-    canTapAnswers: R,
+    canTapAnswers: w,
     canRemoveVote: P,
     canShowVoteCounts: D,
     canSubmitVote: x,
@@ -231,7 +231,7 @@ function P(e, t) {
         count: c
       }))
     }
-  }), X = (0, r.YW)({
+  }), Z = (0, r.YW)({
     isExpired: U,
     canSubmitVote: x,
     hasVoted: M,
@@ -270,7 +270,7 @@ function P(e, t) {
     presentation: "button",
     enabled: x,
     type: "submit"
-  })), Z = (0, m.isIOS)() ? I.intl.string(I.t["PVATM/"]) : I.intl.string(I.t.cHfFql), Q = (0, r.YW)({
+  })), X = (0, m.isIOS)() ? I.intl.string(I.t["PVATM/"]) : I.intl.string(I.t.cHfFql), Q = (0, r.YW)({
     isExpired: U,
     isInteractive: G,
     isEditingVote: k
@@ -291,19 +291,19 @@ function P(e, t) {
   })).otherwise(() => ({
     label: K,
     secondaryLabel: L,
-    accessibilityHint: Z,
+    accessibilityHint: X,
     presentation: "text",
     enabled: true,
     type: "showVoterDetails"
-  })), $ = !G || U || M || Y ? true : {
+  })), J = !G || U || M || Y ? true : {
     label: I.intl.string(I.t["/KHAUF"]),
     presentation: "textButton",
     enabled: true,
     type: "showVotes"
-  }, J = d.allow_multiselect, ee = (0, r.YW)({
+  }, $ = d.allow_multiselect, ee = (0, r.YW)({
     isInteractive: G,
     isExpired: U,
-    canSelectMultipleAnswers: J
+    canSelectMultipleAnswers: $
   }).with({
     isInteractive: false
   }, () => true).with({
@@ -317,8 +317,8 @@ function P(e, t) {
     answers: q,
     answersInteraction: (0, r.YW)({
       tapShouldOpenVotersModal: H,
-      canTapAnswers: R,
-      canSelectMultipleAnswers: J
+      canTapAnswers: w,
+      canSelectMultipleAnswers: $
     }).with({
       tapShouldOpenVotersModal: true
     }, () => y.CQ.LIST).with({
@@ -328,23 +328,23 @@ function P(e, t) {
     }, () => y.CQ.RADIO_BUTTONS).with({
       canSelectMultipleAnswers: true
     }, () => y.CQ.CHECKBOXES).exhaustive(),
-    answerTapAccessibilityLabel: H ? Z : true,
+    answerTapAccessibilityLabel: H ? X : true,
     layoutType: A,
     resources: (0, O.A)({
       theme: l,
       layoutType: A
     }),
     containerStyle: "normal",
-    primaryAction: X,
+    primaryAction: Z,
     isInteractive: G,
-    canTapAnswers: R,
-    canSelectMultipleAnswers: J,
+    canTapAnswers: w,
+    canSelectMultipleAnswers: $,
     hasSelectedAnswer: j,
     canShowVoteCounts: D,
     hasVoted: M,
     isExpired: U,
     myAvatarUrl: g,
     secondaryAction: Q,
-    tertiaryAction: $
+    tertiaryAction: J
   }
 }

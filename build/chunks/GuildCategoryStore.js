@@ -126,17 +126,17 @@ function N(e) {
   h[t] = true, t === _ && b(t)
 }
 
-function R(e, t) {
+function w(e, t) {
   if (m = t, null == e || null == e.getGuildId()) returnfalse;
   let n = e.getGuildId();
   return null != n && (h[n] = true, n === _ && b(n), true)
 }
 
-function w(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
-  return null == t && null != m ? R(c.A.getChannel(m), null) : R(c.A.getChannel(t), t)
+  return null == t && null != m ? w(c.A.getChannel(m), null) : w(c.A.getChannel(t), t)
 }
 
 function P(e) {
@@ -148,7 +148,7 @@ function P(e) {
       channelId: n,
       sessionId: r
     } = t;
-    return l.default.getSessionId() !== r ? e : R(c.A.getChannel(n), n) || e
+    return l.default.getSessionId() !== r ? e : w(c.A.getChannel(n), n) || e
   }, false)
 }
 
@@ -195,6 +195,6 @@ let M = new j(Chunk73153.h, {
   GUILD_ROLE_DELETE: N,
   IMPERSONATE_UPDATE: N,
   IMPERSONATE_STOP: N,
-  VOICE_CHANNEL_SELECT: w,
+  VOICE_CHANNEL_SELECT: R,
   VOICE_STATE_UPDATES: P
 })

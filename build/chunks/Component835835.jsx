@@ -41,7 +41,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,7 +66,7 @@ function w(e, t) {
 }
 
 function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -217,7 +217,7 @@ function H(e) {
     scrollerClassName: A,
     className: I,
     listName: N
-  } = e, w = i.useRef(null), x = (0, p.A)(N, w), G = (0, u.bG)([y.Ay], () => y.Ay.hasNotice()), V = (0, u.bG)([b.A], () => b.A.windowSize());
+  } = e, R = i.useRef(null), x = (0, p.A)(N, R), G = (0, u.bG)([y.Ay], () => y.Ay.hasNotice()), V = (0, u.bG)([b.A], () => b.A.windowSize());
   i.useEffect(() => {
     O.default.track(S.HAw.OPEN_POPOUT, {
       type: t
@@ -225,14 +225,14 @@ function H(e) {
   }, [t]), i.useEffect(() => {
     function e() {
       var e;
-      null == (e = w.current) || e.scrollPageUp({
+      null == (e = R.current) || e.scrollPageUp({
         animate: true
       })
     }
 
     function t() {
       var e;
-      null == (e = w.current) || e.scrollPageDown({
+      null == (e = R.current) || e.scrollPageDown({
         animate: true
       })
     }
@@ -242,7 +242,7 @@ function H(e) {
   }, []);
   let F = i.useCallback(() => {
       var e;
-      let t = null == (e = w.current) ? true : e.getScrollerState();
+      let t = null == (e = R.current) ? true : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < k && a && !o && (null == f || f())
     }, [a, f, o]),
     B = [],
@@ -300,7 +300,7 @@ function H(e) {
       children: [(0, r.jsxs)(d.T7Y, {
         className: s()(C.m4, A),
         onScroll: q ? F : true,
-        ref: w,
+        ref: R,
         children: [(0, r.jsx)(c.hD, {
           navigator: x,
           children: (0, r.jsx)(c.PR, {
@@ -308,7 +308,7 @@ function H(e) {
               let {
                 ref: t
               } = e, n = D(e, ["ref"]);
-              return (0, r.jsx)("div", P(R({
+              return (0, r.jsx)("div", P(w({
                 ref: t
               }, n), {
                 children: B
@@ -340,8 +340,8 @@ function Y(e) {
     className: v,
     onCloseMessage: T,
     listName: N,
-    closeAriaLabel: R
-  } = e, w = (0, u.bG)([g.A], () => {
+    closeAriaLabel: w
+  } = e, R = (0, u.bG)([g.A], () => {
     let e = null != a ? g.A.getMessages(a.id) : null;
     return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
   });
@@ -354,7 +354,7 @@ function Y(e) {
       } = e, a = m.A.getChannel(i);
       null != a && (f.A.trackJump(i, r, t), (0, h.pX)(S.BVt.CHANNEL(a.getGuildId(), i, r))), null == d || d(n)
     };
-    (0, A.A)(e, r) && !w && r()
+    (0, A.A)(e, r) && !R && r()
   }
 
   function D(e) {
@@ -374,11 +374,11 @@ function Y(e) {
       }), (0, r.jsx)(B, {
         channel: a,
         message: t,
-        jumping: w,
+        jumping: R,
         canCloseAllMessages: p,
         jumpTo: P,
         onCloseMessage: T,
-        closeAriaLabel: R
+        closeAriaLabel: w
       })]
     }, t.id)), i)
   }

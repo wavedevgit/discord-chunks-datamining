@@ -1,9 +1,9 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 850730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  DB: () => T,
+  DB: () => E,
   ZL: () => O,
-  ln: () => E,
+  ln: () => T,
   t0: () => S
 }), require("./896048.js"), require("./492834.js");
 var Chunk64700 = require("./64700.js"),
@@ -79,7 +79,7 @@ async function O() {
   } catch (e) {}
 }
 
-function E() {
+function T() {
   try {
     let e = C(v.hH7.FONT_SIZES);
     (0, s.XS)(e);
@@ -90,7 +90,7 @@ function E() {
   } catch (e) {}
 }
 
-function T() {
+function E() {
   a.useEffect(() => {
     var e, t, n, a, l;
     let b = f.default.getCurrentUser(),
@@ -102,8 +102,8 @@ function T() {
       C = v.backgroundGradientPresetId,
       S = null == b || null == (n = b.avatarDecoration) ? true : n.skuId,
       O = null == b || null == (l = b.collectibles) || null == (a = l.nameplate) ? true : a.skuId,
-      E = null != S && null != (e = _.find(e => e.skuId === S)) ? e : null,
-      T = null != O && null != (t = y.find(e => e.skuId === O)) ? t : null,
+      T = null != S && null != (e = _.find(e => e.skuId === S)) ? e : null,
+      E = null != O && null != (t = y.find(e => e.skuId === O)) ? t : null,
       N = o.A.fontSize,
       w = o.A.messageGroupSpacing,
       I = h.Xi.getSetting();
@@ -113,7 +113,7 @@ function T() {
           theme: A,
           backgroundGradientPresetId: null != C ? C : true,
           customUserThemeSettings: true
-        }, x.Sb.INFREQUENT_USER_ACTION), (0, u.Dx)(E), (0, u.pX)(T);
+        }, x.Sb.INFREQUENT_USER_ACTION), (0, u.Dx)(T), (0, u.pX)(E);
         let e = g.A.getAllPending(),
           t = (0, m.Sk)(e);
         (0, r.yu)(t).finally(r.pZ), (0, s.XS)(N), (0, s.AC)(w), h.Xi.updateSetting(I)

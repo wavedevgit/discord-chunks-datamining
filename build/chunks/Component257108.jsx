@@ -31,7 +31,7 @@ function b(e) {
     maxCharacterCount: A,
     showRemainingCharsAfterCount: I,
     className: S
-  } = e, T = (0, s.bG)([p.default], () => _.Ay.canUseIncreasedMessageLength(p.default.getCurrentUser())), C = (0, d.A)(), N = null != A ? A : C, R = null != (t = null != I ? I : A) ? t : C / 10, w = v.length, P = null != O.upsellLongMessages && (null != w ? w : 0) > m.uvi && T, D = null != O.upsellLongMessages && !T, x = (null == (i = (0, f.V)()) || null == (n = i.subscription_trial) ? true : n.sku_id) === g.pe.TIER_2, L = N - w, j = L > R, M = L < 0 && x, k = 0 === L ? E.intl.string(E.t.tU6YQ7) : L > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
+  } = e, T = (0, s.bG)([p.default], () => _.Ay.canUseIncreasedMessageLength(p.default.getCurrentUser())), C = (0, d.A)(), N = null != A ? A : C, w = null != (t = null != I ? I : A) ? t : C / 10, R = v.length, P = null != O.upsellLongMessages && (null != R ? R : 0) > m.uvi && T, D = null != O.upsellLongMessages && !T, x = (null == (i = (0, f.V)()) || null == (n = i.subscription_trial) ? true : n.sku_id) === g.pe.TIER_2, L = N - R, j = L > w, M = L < 0 && x, k = 0 === L ? E.intl.string(E.t.tU6YQ7) : L > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
     count: L
   }) : E.intl.string(E.t.YSRIqa), {
     analyticsLocations: U

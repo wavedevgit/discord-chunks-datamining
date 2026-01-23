@@ -37,14 +37,14 @@ function O(e) {
     giftMessage: T = E.intl.string(E.t["DrgnS+"]),
     hideBreadcrumbs: C = false,
     isLoading: N = false,
-    purchaseError: R,
-    purchaseErrorBlockRef: w,
+    purchaseError: w,
+    purchaseErrorBlockRef: R,
     planError: P,
     onScroll: D,
     scrollerClassName: x,
     hasCurrencies: L = false
   } = e, j = null;
-  null != v && null == (0, _.ou)(v) ? j = v : null != R ? j = R : null != P && (j = P);
+  null != v && null == (0, _.ou)(v) ? j = v : null != w ? j = w : null != P && (j = P);
   let M = null != j ? j.message : "";
   null != j && j instanceof d.Ey && (j.code === f.tG.CARD_DECLINED && L && (M += " ".concat(E.intl.string(E.t.iWvwQS))), j.code === f.tG.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.intl.string(E.t.ypuSd8)), j.code === g.t02.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.intl.string(E.t.mXMmWE)));
   let {
@@ -86,7 +86,7 @@ function O(e) {
         className: y.uK,
         children: [null == j ? null : (0, r.jsx)("div", {
           className: y.Nk,
-          ref: w,
+          ref: R,
           children: (0, r.jsx)(c.wx6, {
             type: "critical",
             children: M

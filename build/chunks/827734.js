@@ -38,7 +38,7 @@ let {
 } = Chunk788894.z, {
   Layout: T,
   Space: C
-} = Chunk626757.zv, N = l()(b, e => i()(e)), R = {
+} = Chunk626757.zv, N = l()(b, e => i()(e)), w = {
   themes: E,
   modules: S,
   colors: l()(y, (e, t) => {
@@ -59,10 +59,10 @@ let {
           let e = null == (o = v[n]) ? true : o[t.theme];
           null != e && (d = null != (l = e.raw) ? l : d, f = null != (c = e.opacity) ? c : f)
         }
-        if (1 === f) return R.unsafe_rawColors[d].resolve(t);
+        if (1 === f) return w.unsafe_rawColors[d].resolve(t);
         {
           let e = N[d];
-          return 0 !== e.alpha() && 1 !== f && (e = e.alpha(f)), w(e, t.saturation)
+          return 0 !== e.alpha() && 1 !== f && (e = e.alpha(f)), R(e, t.saturation)
         }
       }
     }
@@ -74,7 +74,7 @@ let {
       css: x(n),
       resolve(e) {
         var t;
-        return w(r, null != (t = null == e ? true : e.saturation) ? t : 1)
+        return R(r, null != (t = null == e ? true : e.saturation) ? t : 1)
       }
     }
   }),
@@ -100,7 +100,7 @@ let {
   }))
 };
 
-function w(e, t) {
+function R(e, t) {
   return {
     spring() {
       let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
@@ -143,4 +143,4 @@ function x(e, t) {
     r = D(e);
   return "var(--".concat([n, r].filter(Boolean).join("-"), ")")
 }
-let L = R
+let L = w

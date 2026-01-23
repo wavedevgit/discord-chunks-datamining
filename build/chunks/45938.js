@@ -7,14 +7,14 @@ require.d(exports, {
   Ik: () => k,
   Kx: () => U,
   UJ: () => q,
-  Vd: () => J,
+  Vd: () => $,
   Vt: () => ee,
   X6: () => G,
-  YI: () => $,
+  YI: () => J,
   Zq: () => H,
   e7: () => B,
   eN: () => et,
-  e_: () => Z,
+  e_: () => X,
   lo: () => M,
   n$: () => z,
   pF: () => F,
@@ -68,10 +68,10 @@ let b = ["discordapp.com/gifts", "discord.com/gifts"],
   T = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789",
   C = (e, t) => Array(t).fill(true).map(() => "[".concat(T, "]{").concat(e, "}")).join("-?"),
   N = C(4, 4),
-  R = C(4, 6),
-  w = C(5, 3),
+  w = C(4, 6),
+  R = C(5, 3),
   P = "WUMP-?",
-  D = [N, R, w, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
+  D = [N, w, R, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
   x = new RegExp("^(".concat(P, ")?(").concat(D, ")$")),
   L = "-";
 var j = function(e) {
@@ -200,7 +200,7 @@ function q(e, t, n) {
   }
 }
 
-function X(e) {
+function Z(e) {
   return (0, r.YW)(e).with({
     interval: m.WT.MONTH,
     premiumSubscriptionType: m.PremiumTypes.TIER_2
@@ -224,7 +224,7 @@ function X(e) {
   })).otherwise(() => g.intl.string(g.t["5ayf7w"]))
 }
 
-function Z(e) {
+function X(e) {
   let {
     step: t,
     sku: n,
@@ -239,7 +239,7 @@ function Z(e) {
     case h.frR.ERROR:
       return Q(r, i, a, s, o);
     case h.frR.SUCCESS:
-      if (null != l) return X(l);
+      if (null != l) return Z(l);
       return g.intl.formatToPlainString(g.t["3CPsbo"], {
         skuName: n.name
       });
@@ -266,14 +266,14 @@ function Q(e, t, n, r, i) {
   return null != a ? s : null == t ? null : et(t, c.default.getCurrentUser())
 }
 
-function $(e, t, n) {
+function J(e, t, n) {
   let r = t.applicationId,
     i = e.length > 0 ? e : [r],
     a = i.map(e => n.getLibraryApplication(r, e, true)).filter(d.Vq);
   return a.length === i.length ? a[0] : null
 }
 
-function J(e) {
+function $(e) {
   let t = e.trim().split("/").pop().match(x);
   if (null == t) return null;
   let [n, r, i] = t;

@@ -1,4 +1,4 @@
-/** Chunk was on 65599 **/
+/** Chunk was on 36054 **/
 /** chunk id: 484762, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => eR
@@ -53,7 +53,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk167056 = require("./167056.js"),
   Chunk661251 = require("./661251.js");
 
-function Z(e) {
+function $(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -72,7 +72,7 @@ function Z(e) {
   return e
 }
 
-function $(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -85,7 +85,7 @@ function $(e, t) {
   }), e
 }
 let ee = {
-    [Chunk652215.uss.CLICK_ZONE_DEBUG]: e => $(Z({
+    [Chunk652215.uss.CLICK_ZONE_DEBUG]: e => Z($({
       type: q.uss.CLICK_ZONE_DEBUG,
       id: (0, c.A)(),
       layoutId: e,
@@ -100,7 +100,7 @@ let ee = {
     }, P.A.getWidgetDefaultSettings(q.uss.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
-    [Chunk652215.uss.PERFORMANCE_DEBUG]: e => $(Z({
+    [Chunk652215.uss.PERFORMANCE_DEBUG]: e => Z($({
       type: q.uss.PERFORMANCE_DEBUG,
       id: (0, c.A)(),
       layoutId: e,
@@ -348,7 +348,7 @@ let es = Chunk64700.memo(function(e) {
     let a = null == (n = S.default.getTrackedGameByPid(t)) ? true : n.gameName;
     return null != a ? (et[t] = a, a) : null != (e = et[t]) ? e : "Unknown"
   }, [t]);
-  return (0, a.jsx)(p.Text, $(Z({}, n), {
+  return (0, a.jsx)(p.Text, Z($({}, n), {
     variant: "text-md/semibold",
     color: "text-strong",
     children: l
@@ -356,7 +356,7 @@ let es = Chunk64700.memo(function(e) {
 });
 
 function eo() {
-  let e = (0, d.bG)([T.A], () => T.A.hasRenderDebugMode(y.x7.TrackFocusPIDs)),
+  let e = (0, d.bG)([E.A], () => E.A.hasRenderDebugMode(y.x7.TrackFocusPIDs)),
     t = (0, d.yK)([S.default], () => S.default.getDevToolsFocusedPidsWithTimestamp());
   return (0, a.jsxs)("div", {
     className: J.st,
@@ -364,7 +364,7 @@ function eo() {
       className: J.Iv,
       children: [(0, a.jsx)(p.dOG, {
         checked: e,
-        onChange: () => void g.A.setRenderDebugMode(!T.A.hasRenderDebugMode(y.x7.TrackFocusPIDs), y.x7.TrackFocusPIDs),
+        onChange: () => void g.A.setRenderDebugMode(!E.A.hasRenderDebugMode(y.x7.TrackFocusPIDs), y.x7.TrackFocusPIDs),
         label: "Track Focus Pids"
       }), (0, a.jsx)(p.DUT, {
         className: J.LL,
@@ -442,7 +442,7 @@ let ec = Chunk64700.memo(function(e) {
           screenType: r,
           timestamp: i
         }]), e
-      }, Z({}, e)))
+      }, $({}, e)))
     }, +B.A.Millis.SECOND), () => clearInterval(r.current)), []), (0, a.jsx)(u.m_, {
       position: "left",
       text: "The most recent screen types we've logged, indexed by pid",
@@ -550,7 +550,7 @@ let ec = Chunk64700.memo(function(e) {
     tooltip: "Enables legacy overlay logging, which will forward all legacy logging to the main apps console."
   }],
   ep = Chunk64700.memo(function() {
-    let [e, t] = er(q.uss.CLICK_ZONE_DEBUG), [n, r] = er(q.uss.PERFORMANCE_DEBUG), i = (0, d.bG)([T.A], () => T.A.getRenderDebugModes()), [s, o] = l.useState({});
+    let [e, t] = er(q.uss.CLICK_ZONE_DEBUG), [n, r] = er(q.uss.PERFORMANCE_DEBUG), i = (0, d.bG)([E.A], () => E.A.getRenderDebugModes()), [s, o] = l.useState({});
     return l.useEffect(() => {
       let e = setInterval(() => {
         o({})
@@ -638,7 +638,7 @@ let ec = Chunk64700.memo(function(e) {
         label: y.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
         value: y.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
         id: y.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
-      }].map(t => $(Z({}, t), {
+      }].map(t => Z($({}, t), {
         label: "".concat(t.label, " ").concat(e === t.value ? "(current)" : "")
       }));
     return (0, a.jsx)(p.l6P, {
@@ -662,7 +662,7 @@ function eg(e) {
   function s() {
     n(null)
   }
-  return (0, a.jsxs)(p.EOs, $(Z({
+  return (0, a.jsxs)(p.EOs, Z($({
     size: p.rIJ.LARGE,
     "aria-label": "Breadcrumb Import"
   }, t), {
@@ -968,7 +968,7 @@ function eO() {
   let {
     ref: e,
     height: t
-  } = (0, b.Ay)(), n = (0, d.bG)([T.A], () => T.A.isModuleLoggingEnabled()), [r, s] = l.useState(n), [o, c] = l.useState(false), [u, m] = l.useState(null), [h, x] = l.useState(Object.keys(ef)), [f, v] = (0, d.bG)([T.A], () => T.A.getOverlayLoggingBreadcrumbs(), [], G.D), [j, _] = l.useState(null), y = null != j ? j : f, A = null != j ? false : v;
+  } = (0, b.Ay)(), n = (0, d.bG)([E.A], () => E.A.isModuleLoggingEnabled()), [r, s] = l.useState(n), [o, c] = l.useState(false), [u, m] = l.useState(null), [h, x] = l.useState(Object.keys(ef)), [f, v] = (0, d.bG)([E.A], () => E.A.getOverlayLoggingBreadcrumbs(), [], G.D), [j, _] = l.useState(null), y = null != j ? j : f, A = null != j ? false : v;
   l.useEffect(() => {
     0 !== A && (o ? m(y.reduce((e, t) => "game_tracking_starting" === t.name ? Math.max(e, t.timestamp) : e, 0)) : m(null))
   }, [o, y, A]);
@@ -981,7 +981,7 @@ function eO() {
       if (n(e)) returntrue
     }
     returnfalse
-  }), [y, h, u, o, A]), [E, N] = l.useState(O), [w, k] = l.useState(null), P = l.useMemo(() => y.find(e => e.key === w), [y, w]), R = l.useCallback(e => {
+  }), [y, h, u, o, A]), [T, N] = l.useState(O), [w, k] = l.useState(null), P = l.useMemo(() => y.find(e => e.key === w), [y, w]), R = l.useCallback(e => {
     N(e)
   }, []), {
     renderSelectedTab: D
@@ -1093,7 +1093,7 @@ function eO() {
       className: i()(J.st, J.CZ),
       children: (0, a.jsx)(K.A, {
         columns: ev,
-        data: E,
+        data: T,
         selectedRowKey: null != w ? w : true,
         onClickRow: e => k(e.key)
       })
@@ -1108,8 +1108,8 @@ function eO() {
     })]
   })
 }
-let eE = Chunk64700.memo(function() {
-    let e = (0, d.bG)([E.A], () => E.A.getPopoutInitializationStages());
+let eT = Chunk64700.memo(function() {
+    let e = (0, d.bG)([T.A], () => T.A.getPopoutInitializationStages());
     return (0, a.jsxs)("div", {
       className: J.st,
       children: [(0, a.jsx)("div", {
@@ -1128,9 +1128,9 @@ let eE = Chunk64700.memo(function() {
       })]
     })
   }),
-  eT = Chunk64700.memo(function() {
-    let e = (0, d.bG)([T.A], () => T.A.isStateDebuggingEnabled()),
-      t = (0, d.bG)([T.A], () => T.A.getDebuggingState());
+  eE = Chunk64700.memo(function() {
+    let e = (0, d.bG)([E.A], () => E.A.isStateDebuggingEnabled()),
+      t = (0, d.bG)([E.A], () => E.A.getDebuggingState());
     return l.useEffect(() => (g.A.setStateDebugging(true), () => {
       g.A.setStateDebugging(false)
     }), []), (0, a.jsxs)("div", {
@@ -1156,7 +1156,7 @@ function eN() {
   return (0, a.jsx)(p.ArX, {
     children: (0, a.jsxs)("div", {
       className: i()(X.nd, J.rf),
-      children: [(0, a.jsx)(ep, {}), (0, a.jsx)(ex, {}), (0, a.jsx)(eh, {}), (0, a.jsx)(eu, {}), (0, a.jsx)(eo, {}), (0, a.jsx)(ed, {}), (0, a.jsx)(eE, {}), (0, a.jsx)(eT, {})]
+      children: [(0, a.jsx)(ep, {}), (0, a.jsx)(ex, {}), (0, a.jsx)(eh, {}), (0, a.jsx)(eu, {}), (0, a.jsx)(eo, {}), (0, a.jsx)(ed, {}), (0, a.jsx)(eT, {}), (0, a.jsx)(eE, {})]
     })
   })
 }
@@ -1186,7 +1186,7 @@ let ew = e => {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: (0, a.jsx)("pre", {
-          children: JSON.stringify($(Z({}, e), {
+          children: JSON.stringify(Z($({}, e), {
             overlayKeybind: (0, F.dI)(t.shortcut)
           }), true, 2)
         })

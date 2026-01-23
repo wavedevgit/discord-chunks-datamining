@@ -2,7 +2,7 @@
 /** chunk id: 422998, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  mg: () => J,
+  mg: () => $,
   vd: () => W
 });
 var Chunk64700 = require("./64700.js"),
@@ -152,14 +152,14 @@ var m = {
       return e
     }, []).reverse()
   },
-  R = function(e, t) {
+  w = function(e, t) {
     if (Array.isArray(e) && e.length) {
       for (var n = 0; n < e.length; n += 1)
         if (e[n][t]) returntrue
     }
     returnfalse
   },
-  w = function(e) {
+  R = function(e) {
     return Array.isArray(e) ? e.join("") : e
   },
   P = function(e, t) {
@@ -220,7 +220,7 @@ var m = {
           }, toString: function() {
             return function(e, t, n, r) {
               var i = j(n),
-                a = w(t);
+                a = R(t);
               return i ? "<" + e + ' data-rh="true" ' + i + ">" + L(a, r) + "</" + e + ">" : "<" + e + ' data-rh="true">' + L(a, r) + "</" + e + ">"
             }(e, t.title, t.titleAttributes, n)
           }
@@ -424,7 +424,7 @@ var K = function(e, t) {
       d = e.titleAttributes;
     z(m.BODY, e.bodyAttributes), z(m.HTML, r),
       function(e, t) {
-        true !== e && document.title !== e && (document.title = w(e)), z(m.TITLE, t)
+        true !== e && document.title !== e && (document.title = R(e)), z(m.TITLE, t)
       }(u, d);
     var f = {
         baseTag: K(m.BASE, n),
@@ -443,8 +443,8 @@ var K = function(e, t) {
       n.length && (p[e] = n), r.length && (_[e] = f[e].oldTags)
     }), t && t(), o(e, p, _)
   },
-  X = null,
-  Z = function(e) {
+  Z = null,
+  X = function(e) {
     function t() {
       for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
       return (t = e.call.apply(e, [this].concat(r)) || this).rendered = false, t
@@ -478,25 +478,25 @@ var K = function(e, t) {
           styleTags: N(m.STYLE, ["cssText"], e),
           title: I(e),
           titleAttributes: T("titleAttributes", e),
-          prioritizeSeoTags: R(e, "prioritizeSeoTags")
+          prioritizeSeoTags: w(e, "prioritizeSeoTags")
         };
-      W.canUseDOM ? (t = a, X && cancelAnimationFrame(X), t.defer ? X = requestAnimationFrame(function() {
+      W.canUseDOM ? (t = a, Z && cancelAnimationFrame(Z), t.defer ? Z = requestAnimationFrame(function() {
         q(t, function() {
-          X = null
+          Z = null
         })
-      }) : (q(t), X = null)) : G && (i = G(a)), r(i)
+      }) : (q(t), Z = null)) : G && (i = G(a)), r(i)
     }, n.init = function() {
       this.rendered || (this.rendered = true, this.props.context.helmetInstances.add(this), this.emitChange())
     }, n.render = function() {
       return this.init(), null
     }, t
   }(Chunk64700.Component);
-Z.propTypes = {
+X.propTypes = {
   context: H.isRequired
-}, Z.displayName = "HelmetDispatcher";
+}, X.displayName = "HelmetDispatcher";
 var Q = ["children"],
-  $ = ["children"],
-  J = function(e) {
+  J = ["children"],
+  $ = function(e) {
     function t() {
       return e.apply(this, arguments) || this
     }
@@ -595,20 +595,20 @@ var Q = ["children"],
     }, n.render = function() {
       var e = this.props,
         t = e.children,
-        n = h(e, $),
+        n = h(e, J),
         i = f({}, n),
         a = n.helmetData;
-      return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof F || (a = new F(a.context, a.instances)), a ? r.createElement(Z, f({}, i, {
+      return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof F || (a = new F(a.context, a.instances)), a ? r.createElement(X, f({}, i, {
         context: a.value,
         helmetData: true
       })) : r.createElement(B.Consumer, null, function(e) {
-        return r.createElement(Z, f({}, i, {
+        return r.createElement(X, f({}, i, {
           context: e
         }))
       })
     }, t
   }(Chunk64700.Component);
-J.propTypes = {
+$.propTypes = {
   base: a().object,
   bodyAttributes: a().object,
   children: a().oneOfType([a().arrayOf(a().node), a().node]),
@@ -627,8 +627,8 @@ J.propTypes = {
   titleTemplate: a().string,
   prioritizeSeoTags: a().bool,
   helmetData: a().object
-}, J.defaultProps = {
+}, $.defaultProps = {
   defer: true,
   encodeSpecialCharacters: true,
   prioritizeSeoTags: false
-}, J.displayName = "Helmet"
+}, $.displayName = "Helmet"

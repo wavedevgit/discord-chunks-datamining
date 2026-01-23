@@ -140,7 +140,7 @@ class q extends Chunk64700.PureComponent {
     })), H(this, "renderTagline", () => this.props.isSelfGift ? F.intl.string(F.t.eEM3dq) : F.intl.string(F.t.tB8S6u))
   }
 }
-class X extends Chunk64700.Component {
+class Z extends Chunk64700.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
@@ -420,7 +420,7 @@ class X extends Chunk64700.Component {
     })
   }
 }
-let Z = (0, Chunk456412.A)((0, Chunk707606.A)(X)),
+let X = (0, Chunk456412.A)((0, Chunk707606.A)(Z)),
   Q = function(e) {
     let {
       code: t,
@@ -431,8 +431,8 @@ let Z = (0, Chunk456412.A)((0, Chunk707606.A)(X)),
     } = (0, c.cf)([N.A], () => ({
       giftCode: N.A.get(t),
       resolved: N.A.getIsResolved(t)
-    })), s = (0, c.bG)([w.default], () => null != i && null != i.userId ? w.default.getUser(i.userId) : null), o = (0, c.bG)([P.A], () => null != i ? P.A.get(i.skuId) : null), l = (0, c.bG)([R.A], () => null != o && (null == i ? true : i.entitlementBranches) != null ? L.YI(i.entitlementBranches, o, R.A) : null), u = (0, m.h)(null == o ? true : o.applicationId), d = (0, M.zz)(null == i ? true : i.subscriptionPlanId), f = (0, c.bG)([C.default], () => null != i ? C.default.getId() === i.userId : C.default.getId() === n.id);
-    return (0, r.jsx)(Z, K(Y({}, e), {
+    })), s = (0, c.bG)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), o = (0, c.bG)([P.A], () => null != i ? P.A.get(i.skuId) : null), l = (0, c.bG)([w.A], () => null != o && (null == i ? true : i.entitlementBranches) != null ? L.YI(i.entitlementBranches, o, w.A) : null), u = (0, m.h)(null == o ? true : o.applicationId), d = (0, M.zz)(null == i ? true : i.subscriptionPlanId), f = (0, c.bG)([C.default], () => null != i ? C.default.getId() === i.userId : C.default.getId() === n.id);
+    return (0, r.jsx)(X, K(Y({}, e), {
       skuApplication: u,
       giftCode: i,
       resolved: a,

@@ -4,9 +4,9 @@
 require.d(exports, {
   $k: () => N,
   AK: () => T,
-  An: () => R,
+  An: () => w,
   HO: () => y,
-  IJ: () => w,
+  IJ: () => R,
   aC: () => S,
   u6: () => O,
   v5: () => P
@@ -419,7 +419,7 @@ function N(e, t) {
   return n.codecs = l()(n.codecs, s()), n
 }
 
-function R(e, t) {
+function w(e, t) {
   var n;
   let {
     codecs: r
@@ -430,7 +430,7 @@ function R(e, t) {
   }
 }
 
-function w(e) {
+function R(e) {
   if (!e.includes("a=fingerprint")) return E.error("Remote SDP does not include fingerprint!"), false;
   if (!e.includes("a=ice-ufrag")) return E.error("Remote SDP does not include ICE user name!"), false;
   if (!e.includes("a=ice-pwd")) return E.error("Remote SDP does not include ICE password!"), false;

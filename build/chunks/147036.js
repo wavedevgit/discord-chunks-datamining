@@ -4,10 +4,10 @@
 require.d(exports, {
   CG: () => T,
   DJ: () => V,
-  IP: () => R,
+  IP: () => w,
   Jg: () => L,
   Jz: () => P,
-  Pd: () => w,
+  Pd: () => R,
   QG: () => j,
   af: () => G,
   an: () => a.A,
@@ -81,7 +81,7 @@ function N(e, t) {
   return S(e, t, i.r2.ROLE)
 }
 
-function R(e) {
+function w(e) {
   return [{
     id: e,
     type: i.r2.ROLE,
@@ -90,7 +90,7 @@ function R(e) {
   }]
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   var r, i;
   let a = e.getGuildId(),
     o = n.getGuild(a),

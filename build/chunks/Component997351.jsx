@@ -81,7 +81,7 @@ function A(e) {
     onClick: () => {
       window.open(f.A.getArticleURL(m.MVz.NITRO_FAQ), "_blank")
     }
-  }), R = (0, r.jsx)("div", {
+  }), w = (0, r.jsx)("div", {
     className: E.rf,
     children: (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
@@ -94,7 +94,7 @@ function A(e) {
     enableArtBoxShadow: false,
     type: h.e.UPLOAD_ERROR_UPSELL,
     title: g.intl.string(g.t["9C+41g"]),
-    body: R,
+    body: w,
     context: g.intl.formatToPlainString(g.t.q5fTZp, {
       maxSize: C
     }),

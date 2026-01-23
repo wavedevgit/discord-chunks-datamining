@@ -74,16 +74,16 @@ let C = e => {
     previewHeaderClassName: C,
     hideProfilePreview: N = false
   } = e, {
-    product: R
+    product: w
   } = (0, m.q)(t, true), {
-    giftRecipient: w,
+    giftRecipient: R,
     giftRecipientError: P
-  } = (0, f.Pv)(), D = (0, u.bG)([h.default], () => h.default.getCurrentUser()), x = (0, g.o7)(R), L = i.useRef(null);
-  if (null == R) return null;
-  let [j] = R.items;
+  } = (0, f.Pv)(), D = (0, u.bG)([h.default], () => h.default.getCurrentUser()), x = (0, g.o7)(w), L = i.useRef(null);
+  if (null == w) return null;
+  let [j] = w.items;
   l()(null != j, "Product item should not be empty");
   let M = () => {
-      if ((null == R ? true : R.type) === c.R.BUNDLE) return null;
+      if ((null == w ? true : w.type) === c.R.BUNDLE) return null;
       switch (j.type) {
         case c.R.AVATAR_DECORATION:
           return O.intl.string(O.t["7v0T9P"]);
@@ -95,7 +95,7 @@ let C = e => {
           return null
       }
     },
-    k = null != w && w.id !== (null == D ? true : D.id) && R.type !== c.R.BUNDLE && j.type !== c.R.NAMEPLATE && !N,
+    k = null != R && R.id !== (null == D ? true : D.id) && w.type !== c.R.BUNDLE && j.type !== c.R.NAMEPLATE && !N,
     U = () => {
       null != t && null != o && o(t)
     };
@@ -107,10 +107,10 @@ let C = e => {
         label: O.intl.string(O.t.PpoJzt),
         children: k && (0, r.jsx)(d.YNO, {
           targetElementRef: L,
-          preload: () => (0, _.A)(w.id, w.getAvatarURL(null, 80)),
+          preload: () => (0, _.A)(R.id, R.getAvatarURL(null, 80)),
           renderPopout: e => (0, r.jsx)(p.A, T(I({}, e), {
-            user: w,
-            pendingAvatar: w.getAvatarURL(null, (0, d.FT9)(d._3J.SIZE_80)),
+            user: R,
+            pendingAvatar: R.getAvatarURL(null, (0, d.FT9)(d._3J.SIZE_80)),
             pendingAvatarDecoration: (0, E.T)(j) ? j : null,
             pendingProfileEffect: (0, y.C)(j) ? j : null,
             canUsePremiumCustomization: true,
@@ -128,7 +128,7 @@ let C = e => {
               children: O.intl.string(O.t["2GnJQL"])
             })
           }))
-        }, w.id)
+        }, R.id)
       })
     }), (0, r.jsxs)(d.DUT, {
       tag: "div",
@@ -140,7 +140,7 @@ let C = e => {
       children: [(0, r.jsxs)("div", {
         className: v.Ug,
         children: [(0, r.jsx)(b.O, {
-          product: R,
+          product: w,
           fallbackLabel: null
         }), (0, r.jsxs)("div", {
           className: v.JZ,

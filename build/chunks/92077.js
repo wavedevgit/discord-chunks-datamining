@@ -8,9 +8,9 @@ require.d(exports, {
   NQ: () => I,
   Ts: () => E,
   U: () => S,
-  Vt: () => R,
+  Vt: () => w,
   ZT: () => N,
-  jU: () => w,
+  jU: () => R,
   oc: () => b,
   qv: () => O,
   v7: () => T,
@@ -165,7 +165,7 @@ function N(e, t) {
   })
 }
 
-function R(e, t) {
+function w(e, t) {
   i.h.dispatch({
     type: "DISPATCH_APPLICATION_REMOVE_FINISHED",
     applicationId: e,
@@ -173,7 +173,7 @@ function R(e, t) {
   })
 }
 
-function w(e, t) {
+function R(e, t) {
   let n = a.A.getApplication(e);
   null != n && f.A.createShortcuts(l.uB.getSetting(), l.Pf.getSetting(), n.name, n.id, t.installPath)
 }
