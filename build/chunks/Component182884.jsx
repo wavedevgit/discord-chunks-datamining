@@ -22,7 +22,7 @@ function l(e) {
     },
     children: [(0, r.jsx)(i.Heading, {
       variant: "heading-md/semibold",
-      color: "text-default",
+      color: "text-muted",
       className: o.D,
       children: s.intl.string(s.t.rPREPG)
     }), t.layout.map(e => (0, r.jsx)(a.A, {

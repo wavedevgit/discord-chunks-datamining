@@ -63,7 +63,7 @@ let Y = () => {
               }), (0, n.jsx)("div", {
                 className: h.zN
               }), (0, n.jsx)("img", {
-                src: t ? X : M,
+                src: t ? M : X,
                 alt: "Cloudflare",
                 width: 103,
                 height: 15
