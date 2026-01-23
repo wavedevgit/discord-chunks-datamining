@@ -213,7 +213,7 @@ function $(e) {
                 closePopout: n
               } = e;
               return (0, r.jsx)(x.A, {
-                children: (0, r.jsx)(G.A, {
+                children: (0, r.jsx)(G.default, {
                   application: q,
                   channelId: U,
                   onClose: n

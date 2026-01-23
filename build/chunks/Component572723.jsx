@@ -69,7 +69,7 @@ function A(e) {
         return "Linux"
     }
     return ""
-  }((0, O.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ev] = r.useState(false), [ep, eh] = r.useState(false), [ef, ex] = r.useState(false), [eg, eb] = r.useState(null);
+  }((0, O.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ev] = r.useState(false), [ep, ef] = r.useState(false), [eh, ex] = r.useState(false), [eg, eb] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     s.Bo.get({
@@ -79,8 +79,8 @@ function A(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "10dca4666798f0c42d403e5abeb91cf7d4926bb3" !== e.body.hash) {
-        let e = new Date("1769192930827"),
+      if (null != e.body && "7ffad88f64080938bf6bae0f5629689f5b541a27" !== e.body.hash) {
+        let e = new Date("1769194247142"),
           t = new Date,
           n = (0, w.Tf)(t, e);
         n.hours > 6 && eb(n.hours)
@@ -114,7 +114,7 @@ function A(e) {
     var e, t;
     if (ex(false), "" === M || "" === z || null == W) return void ev(true);
     let r = null == G || null == (t = G.features) ? true : t.find(e => (0, S.wY)(e) === J);
-    eh(true), ev(false);
+    ef(true), ev(false);
     let l = (0, k.B)(U.map(e => {
         let {
           item: t
@@ -140,7 +140,7 @@ function A(e) {
       } : {
         overridePlatformInformation: Q
       }, l).catch(() => ex(true));
-    eh(false), null != a && a.ok ? (ej && window.open(a.body.permalink_url, "_blank"), D(), (0, d.mMO)(async () => {
+    ef(false), null != a && a.ok ? (ej && window.open(a.body.permalink_url, "_blank"), D(), (0, d.mMO)(async () => {
       let {
         default: e
       } = await n.e("71256").then(n.bind(n, 369323));
@@ -415,12 +415,12 @@ function A(e) {
               className: C.oh,
               children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsx)(x.J, {
-                  size: f.L.SMALL,
+                  size: h.L.SMALL,
                   upload: e
                 }), (0, i.jsx)("div", {
                   className: C.eA,
                   children: (0, i.jsx)(g.Ay, {
-                    children: (0, i.jsx)(h.A, {
+                    children: (0, i.jsx)(f.A, {
                       tooltip: E.intl.string(E.t.vN7REz),
                       onClick: () => {
                         var t;
@@ -441,7 +441,7 @@ function A(e) {
               })]
             }, e.id))
           })
-        }) : null, ef ? (0, i.jsx)(d.Text, {
+        }) : null, eh ? (0, i.jsx)(d.Text, {
           color: "text-feedback-critical",
           variant: "text-sm/normal",
           children: "Something went wrong, try again!"

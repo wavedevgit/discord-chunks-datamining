@@ -1,13 +1,13 @@
-/** Chunk was on 14360 **/
+/** Chunk was on 36290 **/
 /** chunk id: 460760, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  GX: () => u,
+  GX: () => _,
   MA: () => O,
   Mu: () => l,
   Oh: () => A,
   Ok: () => E,
   Tz: () => y,
-  ZH: () => _,
+  ZH: () => u,
   ax: () => d,
   mo: () => c,
   nA: () => T,
@@ -21,8 +21,8 @@ var Chunk562465 = require("./562465.js"),
   Chunk997590 = require("./997590.js"),
   Chunk652215 = require("./652215.js");
 async function l() {
-  let e = a.default.locale;
-  if (e === o.A.getFetchedLocale()) return;
+  let e = o.default.locale;
+  if (e === a.A.getFetchedLocale()) return;
   let t = await i.Bo.get({
     url: s.Rsh.GUILD_DISCOVERY_CATEGORIES,
     query: {
@@ -43,13 +43,13 @@ async function c(e) {
     let {
       primary_category_id: t,
       category_ids: r,
-      keywords: a,
-      emoji_discoverability_enabled: o,
+      keywords: o,
+      emoji_discoverability_enabled: a,
       partner_actioned_timestamp: l,
       partner_application_timestamp: c,
       is_published: d,
-      reasons_to_join: u,
-      social_links: _,
+      reasons_to_join: _,
+      social_links: u,
       about: p
     } = (await i.Bo.get({
       url: s.Rsh.GUILD_DISCOVERY_METADATA(e),
@@ -58,13 +58,13 @@ async function c(e) {
     })).body, E = {
       primaryCategoryId: t,
       secondaryCategoryIds: r,
-      keywords: a,
-      emojiDiscoverabilityEnabled: o,
+      keywords: o,
+      emojiDiscoverabilityEnabled: a,
       partnerActionedTimestamp: l,
       partnerApplicationTimestamp: c,
       isPublished: d,
-      reasonsToJoin: u,
-      socialLinks: _,
+      reasonsToJoin: _,
+      socialLinks: u,
       about: p
     };
     return n.h.dispatch({
@@ -96,7 +96,7 @@ async function d(e) {
   }
 }
 
-function u(e, t) {
+function _(e, t) {
   n.h.dispatch({
     type: "GUILD_UPDATE_DISCOVERY_METADATA",
     guildId: e,
@@ -104,7 +104,7 @@ function u(e, t) {
   })
 }
 
-function _(e, t) {
+function u(e, t) {
   n.h.dispatch({
     type: "GUILD_UPDATE_DISCOVERY_METADATA",
     guildId: e,
@@ -155,13 +155,13 @@ async function A(e) {
   let {
     guildId: t,
     primaryCategoryId: r,
-    keywords: a,
-    emojiDiscoverabilityEnabled: o,
+    keywords: o,
+    emojiDiscoverabilityEnabled: a,
     partnerActionedTimestamp: l,
     partnerApplicationTimestamp: c,
     isPublished: d,
-    reasonsToJoin: u,
-    socialLinks: _,
+    reasonsToJoin: _,
+    socialLinks: u,
     about: p
   } = e;
   try {
@@ -180,13 +180,13 @@ async function A(e) {
       url: s.Rsh.GUILD_DISCOVERY_METADATA(t),
       body: {
         primary_category_id: r,
-        emoji_discoverability_enabled: o,
+        emoji_discoverability_enabled: a,
         partner_actioned_timestamp: l,
         partner_application_timestamp: c,
-        keywords: a,
+        keywords: o,
         is_published: d,
-        reasons_to_join: u,
-        social_links: _,
+        reasons_to_join: _,
+        social_links: u,
         about: p
       },
       oldFormErrors: true,

@@ -255,7 +255,7 @@ function es(e) {
       className: K.Bi,
       children: [(0, r.jsx)(_.Text, {
         tag: "strong",
-        variant: "text-md/normal",
+        variant: "text-md/medium",
         className: K.UU,
         children: null != b && "" !== b && (0, r.jsx)("span", {
           className: K.Ci,

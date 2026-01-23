@@ -1,5 +1,5 @@
 /** Chunk was on 31294 **/
-/** chunk id: 935101, original params: e,t,a (module,exports,require) **/
+/** chunk id: 935101, original params: e,t,_ (module,exports,require) **/
 require.d(exports, {
   A: () => b
 }), require("./896048.js");
@@ -18,24 +18,24 @@ let d = 3 * Chunk927813.A.Millis.SECOND;
 function b() {
   let {
     showPTTSpeakingIndicator: e
-  } = c.A.useConfig({
+  } = u.A.useConfig({
     location: "useSpeakingWhilePTT"
-  }), [t, a] = _.useState(false), u = (0, o.bG)([l.A], () => l.A.getMode() === p.TB.PUSH_TO_TALK), b = (0, o.bG)([i.A], () => i.A.getRTCConnectionId()), f = _.useRef(new r.Ep);
-  return _.useEffect(() => {
-    a(false)
-  }, [b]), _.useEffect(() => {
+  }), [t, _] = a.useState(false), c = (0, o.bG)([i.A], () => i.A.getMode() === p.TB.PUSH_TO_TALK), b = (0, o.bG)([l.A], () => l.A.getRTCConnectionId()), f = a.useRef(new n.Ep);
+  return a.useEffect(() => {
+    _(false)
+  }, [b]), a.useEffect(() => {
     let t = 0,
-      _ = f.current;
+      a = f.current;
 
     function o(e, o) {
-      let n = (o & p.ME.VOICE) === p.ME.VOICE,
-        r = s.A.isCurrentUserPTTActive();
-      n && !r ? ++t >= 5 && (a(true), _.start(d, () => {
-        a(false)
+      let r = (o & p.ME.VOICE) === p.ME.VOICE,
+        n = s.A.isCurrentUserPTTActive();
+      r && !n ? ++t >= 5 && (_(true), a.start(d, () => {
+        _(false)
       })) : t = 0
     }
-    return e && u && null != b && l.A.getMediaEngine().on(n.bg.VoiceActivity, o), () => {
-      l.A.getMediaEngine().removeListener(n.bg.VoiceActivity, o), _.stop()
+    return e && c && null != b && i.A.getMediaEngine().on(r.bg.VoiceActivity, o), () => {
+      i.A.getMediaEngine().removeListener(r.bg.VoiceActivity, o), a.stop()
     }
-  }, [e, u, b]), t
+  }, [e, c, b]), t
 }

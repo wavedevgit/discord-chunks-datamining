@@ -1,5 +1,5 @@
 /** Chunk was on 31294 **/
-/** chunk id: 41580, original params: e,t,a (module,exports,require) **/
+/** chunk id: 41580, original params: e,t,_ (module,exports,require) **/
 require.d(exports, {
   A: () => b
 }), require("./896048.js");
@@ -16,17 +16,17 @@ let p = 2.5 * Chunk927813.A.Millis.SECOND,
   d = +Chunk927813.A.Millis.HOUR;
 
 function b() {
-  let [e, t] = _.useState(false), a = (0, o.bG)([l.A], () => l.A.getMode() === c.TB.PUSH_TO_TALK), s = (0, o.bG)([i.A], () => {
+  let [e, t] = a.useState(false), _ = (0, o.bG)([i.A], () => i.A.getMode() === u.TB.PUSH_TO_TALK), s = (0, o.bG)([l.A], () => {
     var e;
-    return null != i.A.getChannelId() && (null != (e = i.A.getDuration()) ? e : Number.MAX_VALUE) < p
-  }), [b, f] = _.useState(false), {
+    return null != l.A.getChannelId() && (null != (e = l.A.getDuration()) ? e : Number.MAX_VALUE) < p
+  }), [b, f] = a.useState(false), {
     showPTTJoinTooltip: g
-  } = u.A.useConfig({
+  } = c.A.useConfig({
     location: "usePTTJoinTooltip"
-  }), m = _.useRef(new n.Ep), C = _.useRef(new n.Ep);
-  _.useEffect(() => {
-    if (s && a && !e) {
-      if (u.A.getConfig({
+  }), m = a.useRef(new r.Ep), C = a.useRef(new r.Ep);
+  a.useEffect(() => {
+    if (s && _ && !e) {
+      if (c.A.getConfig({
           location: "usePTTJoinTooltip:couldDisplayTooltip"
         }), !g) return;
       f(true), t(true), C.current.start(d, () => {
@@ -36,11 +36,11 @@ function b() {
       })
     }
     s || f(false)
-  }, [s, a, g, e]);
-  let A = _.useCallback(() => {
+  }, [s, _, g, e]);
+  let A = a.useCallback(() => {
     f(false), m.current.stop()
   }, []);
-  return (0, r.l0)(() => {
+  return (0, n.l0)(() => {
     m.current.stop(), C.current.stop()
   }), {
     shouldShowTooltip: b,

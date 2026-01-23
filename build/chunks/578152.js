@@ -90,7 +90,7 @@ class y extends Chunk439372.A {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        if (null == e.body || "10dca4666798f0c42d403e5abeb91cf7d4926bb3" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "7ffad88f64080938bf6bae0f5629689f5b541a27" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, o.kK)()) return this._handleUpdateDownloaded(false);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : m;
         if (Date.now() - g > t) return i.w.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)

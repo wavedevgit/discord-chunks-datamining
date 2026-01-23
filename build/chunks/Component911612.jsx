@@ -61,7 +61,7 @@ function g(e) {
     action: () => (0, s.mMO)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("72271"), n.e("64233"), n.e("63641")]).then(n.bind(n, 409200));
+      } = await Promise.all([n.e("8018"), n.e("72271"), n.e("64233"), n.e("63641")]).then(n.bind(n, 409200));
       return n => (0, i.jsx)(t, d(u({}, n), {
         channelType: a.rbe.GUILD_TEXT,
         guildId: e.id
@@ -73,7 +73,7 @@ function g(e) {
     action: () => (0, s.mMO)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("72271"), n.e("64233"), n.e("63641")]).then(n.bind(n, 409200));
+      } = await Promise.all([n.e("8018"), n.e("72271"), n.e("64233"), n.e("63641")]).then(n.bind(n, 409200));
       return n => (0, i.jsx)(t, d(u({}, n), {
         channelType: a.rbe.GUILD_CATEGORY,
         guildId: e.id

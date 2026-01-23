@@ -1,7 +1,7 @@
 /** Chunk was on 99116 **/
 /** chunk id: 672551, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk48835 = require("./48835.js");
 
-function d(e, t, r) {
+function b(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -27,7 +27,7 @@ let f = (0, Chunk268218.Fe)({
   createPromise: () => r.e("66147").then(r.bind(r, 48736)),
   webpackId: 48736
 });
-class g extends Chunk64700.PureComponent {
+class O extends Chunk64700.PureComponent {
   render() {
     let {
       transitionState: e,
@@ -59,7 +59,7 @@ class g extends Chunk64700.PureComponent {
           }), (0, n.jsx)(i.D0$, {
             label: u.intl.string(u.t.xpurRF),
             children: (0, n.jsx)(f, {
-              className: b.E,
+              className: d.E,
               defaultColor: p.DO,
               colors: h._tK,
               value: null != o ? o : p.DO,
@@ -72,20 +72,20 @@ class g extends Chunk64700.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), d(this, "state", {
+    super(...e), b(this, "state", {
       name: null != (t = this.props.folderName) ? t : "",
       color: this.props.folderColor
-    }), d(this, "close", () => {
+    }), b(this, "close", () => {
       this.props.onClose()
-    }), d(this, "handleNameChange", e => {
+    }), b(this, "handleNameChange", e => {
       this.setState({
         name: e
       })
-    }), d(this, "handleColorChange", e => {
+    }), b(this, "handleColorChange", e => {
       this.setState({
         color: e
       })
-    }), d(this, "handleSubmit", e => {
+    }), b(this, "handleSubmit", e => {
       e.preventDefault();
       let {
         folderId: t
@@ -101,7 +101,7 @@ class g extends Chunk64700.PureComponent {
             "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
               return Object.getOwnPropertyDescriptor(r, e).enumerable
             }))), n.forEach(function(t) {
-              d(e, t, r[t])
+              b(e, t, r[t])
             })
           }
           return e
@@ -123,4 +123,4 @@ class g extends Chunk64700.PureComponent {
     })
   }
 }
-let m = g
+let g = O

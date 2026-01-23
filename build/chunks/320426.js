@@ -1,4 +1,4 @@
-/** Chunk was on 14360 **/
+/** Chunk was on 36290 **/
 /** chunk id: 320426, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -57,12 +57,12 @@ let O = +Chunk927813.A.Millis.DAY,
       i.useEffect(() => {
         var r;
         let i, n;
-        t && (i = Date.now(), i < (n = null != (r = I.get(e)) ? r : 0) + O || (I.set(e, i), a.Bo.post({
+        t && (i = Date.now(), i < (n = null != (r = I.get(e)) ? r : 0) + O || (I.set(e, i), o.Bo.post({
           url: p.Rsh.GUILD_MIGRATE_COMMAND_SCOPE(e),
           rejectWithError: true
         }).then(t => {
           var r, i;
-          o.h.dispatch({
+          a.h.dispatch({
             type: "COMMANDS_MIGRATION_UPDATE_SUCCESS",
             guildId: e,
             integrationIdsWithAppCommands: null != (r = null == (i = t.body) ? true : i.integration_ids_with_app_commands) ? r : []
@@ -71,18 +71,18 @@ let O = +Chunk927813.A.Millis.DAY,
           I.set(e, n)
         })))
       }, [e, t]);
-      let r = (0, n.bG)([_.A], () => _.A.shouldShowChannelNotice(e));
+      let r = (0, n.bG)([u.A], () => u.A.shouldShowChannelNotice(e));
       return t && r
     },
     dismissNotice(e) {
-      o.h.dispatch({
+      a.h.dispatch({
         type: "COMMANDS_MIGRATION_NOTICE_DISMISSED",
         guildId: e
       })
     },
     dismissOverviewTooltip(e, t) {
       var r;
-      o.h.dispatch({
+      a.h.dispatch({
         type: "COMMANDS_MIGRATION_OVERVIEW_TOOLTIP_DISMISSED",
         guildId: e,
         integrationId: t.id
@@ -93,7 +93,7 @@ let O = +Chunk927813.A.Millis.DAY,
     },
     dismissToggleTooltip(e, t) {
       var r;
-      true !== t && (o.h.dispatch({
+      true !== t && (a.h.dispatch({
         type: "COMMANDS_MIGRATION_TOGGLE_TOOLTIP_DISMISSED",
         integrationId: t.id
       }), d.default.track(p.HAw.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, h(E({}, (0, s.H$)(e)), {
