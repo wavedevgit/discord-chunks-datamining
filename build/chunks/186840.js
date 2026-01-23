@@ -524,9 +524,9 @@ class ea extends Chunk969091.A {
     if (this.isClosed()) return void Y.verbose("close() called, but socket is already closed.");
     Y.info("Closing connection, current state is ".concat(this.connectionState));
     let t = e ? 4e3 : true;
-    this._cleanup(e => e.close(t)), this.connectionState = C.A.CLOSED, e || setImmediate(() => {
+    this._cleanup(e => e.close(t)), this.connectionState = C.A.CLOSED, e || (this.sessionId = null, this.token = null, setImmediate(() => {
       this._reset(true, 1e3, "Disconnect requested by user")
-    })
+    }))
   }
   networkStateChange(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
