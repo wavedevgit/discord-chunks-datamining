@@ -1,7 +1,7 @@
 /** Chunk was on 2824 **/
 /** chunk id: 641819, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => E
+  j: () => x
 }), require("./896048.js"), require("./114821.js"), require("./339614.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,28 +25,28 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk907 = require("./907.js");
 
-function E(e) {
-  var t, n, i, E, S, T;
+function x(e) {
+  var t, n, i, x, S, T;
   let {
     handleStepChange: I,
     handleClose: A
   } = e, {
     selectedPlan: k,
-    selectedSkuId: w,
-    step: C
+    selectedSkuId: C,
+    step: w
   } = (0, h.P5)(), {
-    setSelectedGiftingPromotionReward: M,
-    selectedGiftingPromotionReward: _,
+    setSelectedGiftingPromotionReward: _,
+    selectedGiftingPromotionReward: M,
     claimableRewards: N,
     claimableVariants: R
-  } = (0, b.Pv)(), D = (0, d.A)(), L = (0, a.bG)([y.default], () => y.default.getCurrentUser()), U = (0, p.Ay)(N, R, _), [G, H] = l.useState(null == U || null == (t = U.defaultHighlightedReward) ? true : t.skuId), [B, F] = l.useState(false), W = (0, m.A)({
+  } = (0, b.Pv)(), D = (0, d.A)(), L = (0, a.bG)([y.default], () => y.default.getCurrentUser()), G = (0, p.Ay)(N, R, M), [U, H] = l.useState(null == G || null == (t = G.defaultHighlightedReward) ? true : t.skuId), [B, F] = l.useState(false), W = (0, m.A)({
     claimableVariants: R,
     claimableRewards: N,
-    defaultSelection: U,
-    selectedGiftingPromotionReward: _,
-    setSelectedGiftingPromotionReward: M,
+    defaultSelection: G,
+    selectedGiftingPromotionReward: M,
+    setSelectedGiftingPromotionReward: _,
     hasUserMadeSelection: B
-  }), V = l.useMemo(() => {
+  }), K = l.useMemo(() => {
     var e, t;
     if (null == R || 0 === R.length) return null != (t = null == D ? true : D.rewards) ? t : [];
     let n = null != (e = null == W ? true : W.selectedCategory) ? e : p.Sm.Trick;
@@ -84,23 +84,23 @@ function E(e) {
     })
   }, [R, null == D ? true : D.rewards, null == W ? true : W.selectedCategory]);
   l.useEffect(() => {
-    let e = null == U ? true : U.defaultHighlightedReward;
-    !B && null == _ && null != e && null != e && V.some(t => t.skuId === e.skuId) && (M(e), H(e.skuId))
-  }, [U, B, _, V, M]), s()(null != k, "Expected plan to selected"), s()(null != w, "Expected selectedSkuId"), s()(null != C, "Step should be set");
-  let K = l.useMemo(() => null != G && (null != N ? N : []).some(e => e.skuId === G), [G, N]),
-    z = l.useMemo(() => null != _ && V.some(e => e.skuId === _.skuId), [V, _]),
-    Y = l.useMemo(() => 0 === V.length || null == G || !z || !K, [V, G, K, z]);
+    let e = null == G ? true : G.defaultHighlightedReward;
+    !B && null == M && null != e && null != e && K.some(t => t.skuId === e.skuId) && (_(e), H(e.skuId))
+  }, [G, B, M, K, _]), s()(null != k, "Expected plan to selected"), s()(null != C, "Expected selectedSkuId"), s()(null != w, "Step should be set");
+  let V = l.useMemo(() => null != U && (null != N ? N : []).some(e => e.skuId === U), [U, N]),
+    z = l.useMemo(() => null != M && K.some(e => e.skuId === M.skuId), [K, M]),
+    Y = l.useMemo(() => 0 === K.length || null == U || !z || !V, [K, U, V, z]);
   l.useEffect(() => {
-    if (0 === V.length) {
-      H(true), M(true);
+    if (0 === K.length) {
+      H(true), _(true);
       return
     }
-    K && V.some(e => e.skuId === G) || null == G || (H(true), M(true))
-  }, [V, K, G, M]);
+    V && K.some(e => e.skuId === U) || null == U || (H(true), _(true))
+  }, [K, V, U, _]);
   let Z = e => {
-      M(V.find(t => t.skuId === e)), H(e), F(true)
+      _(K.find(t => t.skuId === e)), H(e), F(true)
     },
-    Q = V.map(e => {
+    Q = K.map(e => {
       var t, n;
       return (0, r.jsx)(u.k, {
         skuId: e.skuId,
@@ -110,7 +110,7 @@ function E(e) {
         claimed: null != N && N.every(t => t.skuId !== e.skuId),
         user: L,
         onSelect: Z,
-        selectedSkuId: G,
+        selectedSkuId: U,
         category: null == W ? true : W.selectedCategory,
         type: e.type,
         palette: e.palette
@@ -119,12 +119,12 @@ function E(e) {
     q = (0, r.jsx)(O.UX, {
       children: (0, r.jsx)(o.jlY, {
         "data-migration-pending": true,
-        className: x.Hx,
+        className: E.Hx,
         children: (0, r.jsx)(f.Z3, {
           onStepChange: e => {
-            null != L && null != _ && j.default.track(P.HAw.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != L && null != M && j.default.track(P.HAw.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: L.id,
-              reward_sku_id: _.skuId
+              reward_sku_id: M.skuId
             }), I(e)
           },
           onBackClick: () => I(v.pn.PLAN_SELECT),
@@ -139,7 +139,7 @@ function E(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(o.rQ0, {
       "data-migration-pending": true,
-      className: x.Hc,
+      className: E.Hc,
       direction: c.A.Direction.VERTICAL,
       align: c.A.Align.START,
       separator: false,
@@ -150,15 +150,15 @@ function E(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-subtle",
-        className: x.GQ,
+        className: E.GQ,
         children: null == D || null == (i = D.rewardSelection) ? true : i.primarySubtitle()
-      }), (null == D || null == (S = D.rewardSelection) || null == (E = S.secondarySubtitle) ? true : E.call(S)) != null && (0, r.jsx)(o.Text, {
+      }), (null == D || null == (S = D.rewardSelection) || null == (x = S.secondarySubtitle) ? true : x.call(S)) != null && (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-subtle",
         children: null == D || null == (T = D.rewardSelection) ? true : T.secondarySubtitle()
       }), (0, r.jsx)(o.s_y, {
         "data-migration-pending": true,
-        className: x.b,
+        className: E.b,
         onClick: A
       })]
     }), (0, r.jsx)(o.$mQ, {
@@ -171,7 +171,7 @@ function E(e) {
           defaultCategory: W.selectedCategory,
           onCategoryChange: W.setSelectedCategory
         }), (0, r.jsx)("div", {
-          className: x.Dq,
+          className: E.Dq,
           children: Q
         })]
       })

@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk722125 = require("./722125.js");
-let p = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
+let P = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
     usePredicate: () => !(0, N.dk)("LegacyProfilePanel"),
     useTitle: () => D.intl.string(D.t["vi7f+q"]),
     notice: {
@@ -67,21 +67,21 @@ let p = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
           size: r._3J.SIZE_48
         });
       return null == e ? null : (0, n.jsxs)("div", {
-        className: P.a5,
+        className: p.a5,
         children: [(0, n.jsx)(r.euF, {
           src: i,
           avatarDecoration: u,
           size: r._3J.SIZE_48,
           "aria-label": D.intl.string(D.t.lqaIxI)
         }), (0, n.jsxs)("div", {
-          className: P.FS,
+          className: p.FS,
           children: [(0, n.jsx)(r.Text, {
             color: "text-strong",
             variant: "text-md/medium",
             lineClamp: 1,
             children: null != (t = e.globalName) ? t : e.username
           }), (0, n.jsxs)("div", {
-            className: P.Fk,
+            className: p.Fk,
             children: [(0, n.jsx)(r.Text, {
               variant: "text-sm/normal",
               color: "currentColor",
@@ -99,5 +99,5 @@ let p = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
       type: Chunk933297.S.BADGE_NEW,
       getDismissibleContentTypes: Chunk368631.Jn
     },
-    buildLayout: () => (0, N.WJ)("ProfilePanel") ? [v] : [p]
+    buildLayout: () => (0, N.WJ)("ProfilePanel") ? [v] : [P]
   })

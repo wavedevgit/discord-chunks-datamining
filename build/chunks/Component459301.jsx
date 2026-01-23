@@ -63,7 +63,7 @@ let Y = () => {
               }), (0, n.jsx)("div", {
                 className: h.zN
               }), (0, n.jsx)("img", {
-                src: t ? M : X,
+                src: t ? X : M,
                 alt: "Cloudflare",
                 width: 103,
                 height: 15
@@ -78,7 +78,7 @@ let Y = () => {
             alt: "Private browsing perk logo"
           }), (0, n.jsxs)("div", {
             className: h.Qs,
-            children: [(0, n.jsx)(p.F, {}), (0, n.jsx)(P.q, {})]
+            children: [(0, n.jsx)(P.F, {}), (0, n.jsx)(p.q, {})]
           }), (0, n.jsx)("div", {
             className: h.yP
           }), (0, n.jsx)("div", {

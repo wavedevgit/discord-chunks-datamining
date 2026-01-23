@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 662826, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  g: () => S
+  g: () => d
 });
 var Chunk311907 = require("./311907.js"),
   Chunk274372 = require("./274372.js"),
@@ -11,11 +11,10 @@ var Chunk311907 = require("./311907.js"),
   Chunk419954 = require("./419954.js"),
   Chunk430452 = require("./430452.js"),
   Chunk780964 = require("./780964.js"),
-  Chunk358776 = require("./358776.js"),
   Chunk985018 = require("./985018.jsx");
-let S = (0, Chunk419954.zD)(Chunk780964.X.CLIPS_VIEWERSIDE_CLIPS_SETTING, {
-  useTitle: () => d.intl.string(d.t.NWw7kY),
-  useSubtitle: () => d.intl.string(d.t["0vjy8N"]),
+let d = (0, Chunk419954.zD)(Chunk780964.X.CLIPS_VIEWERSIDE_CLIPS_SETTING, {
+  useTitle: () => A.intl.string(A.t.NWw7kY),
+  useSubtitle: () => A.intl.string(A.t["0vjy8N"]),
   useValue: function() {
     return (0, n.bG)([l.A], () => l.A.getSettings().viewerClipsEnabled)
   },
@@ -24,15 +23,13 @@ let S = (0, Chunk419954.zD)(Chunk780964.X.CLIPS_VIEWERSIDE_CLIPS_SETTING, {
     trackAnalytics: true
   }),
   usePredicate: function() {
-    let t = (0, A.$m)("DataAndPrivacyPanel"),
-      {
-        enableViewerClipping: e
-      } = u.A.useExperiment({
-        location: "Data & Privacy"
-      }, {
-        autoTrackExposure: false
-      }),
-      i = (0, n.bG)([o.A], () => (0, s.A)(o.A));
-    return t && e && i
+    let {
+      enableViewerClipping: t
+    } = u.A.useExperiment({
+      location: "Data & Privacy"
+    }, {
+      autoTrackExposure: false
+    }), e = (0, n.bG)([o.A], () => (0, s.A)(o.A));
+    return t && e
   }
 })

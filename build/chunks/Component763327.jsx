@@ -40,23 +40,23 @@ function m(e) {
     }),
     onMouseEnter: () => v(u.Sm.Treat),
     onMouseLeave: () => v(null)
-  }], []), x = l.useCallback(e => {
+  }], []), E = l.useCallback(e => {
     b(e.value), f(e.value)
-  }, [f]), E = null == O || null == (n = O.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == O || null == (m = O.segmentedControlAnimations) || null == (i = m.treat) ? true : i.getAnimationData;
+  }, [f]), x = null == O || null == (n = O.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == O || null == (m = O.segmentedControlAnimations) || null == (i = m.treat) ? true : i.getAnimationData;
   return (0, r.jsxs)("div", {
     className: s()(p.kL, y),
     children: [(0, r.jsx)(c.R, {
       options: P,
       value: j,
-      onChange: x
-    }), h === u.Sm.Trick && null != E && (0, r.jsx)("div", {
+      onChange: E
+    }), h === u.Sm.Trick && null != x && (0, r.jsx)("div", {
       className: s()(p.Do, p.yf),
       children: (0, r.jsx)(a.akl, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
         className: p.I3,
-        importData: E,
+        importData: x,
         renderer: a.akl.Renderers.SVG,
         versionKey: +(h === u.Sm.Trick)
       })

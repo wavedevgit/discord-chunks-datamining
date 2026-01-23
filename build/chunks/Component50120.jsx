@@ -1,7 +1,7 @@
 /** Chunk was on 95153 **/
 /** chunk id: 50120, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => D
+  default: () => _
 }), require("./896048.js"), require("./667532.js"), require("./321073.js"), require("./747238.js"), require("./812715.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,6 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk688810 = require("./688810.jsx"),
   Chunk148810 = require("./148810.js"),
   Chunk390486 = require("./390486.js"),
+  Chunk734066 = require("./734066.js"),
   Chunk780964 = require("./780964.js"),
   Chunk358776 = require("./358776.js"),
   Chunk360619 = require("./360619.js"),
@@ -28,77 +29,86 @@ var Chunk627968 = require("./627968.js"),
   Chunk466410 = require("./466410.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let D = (0, Chunk358367.A)(function(e) {
+let _ = (0, Chunk358367.A)(function(e) {
   let {
     webBuildOverride: t,
     onSelect: n,
     onInteraction: c
-  } = e, [s, D] = i.useState(false), _ = (0, h.A)(), m = (0, j.A)(), T = (0, v.A)(), I = (0, f.A)(), L = (0, P.A)(), N = (0, S.A)(), k = (0, E.A)(), R = (0, x.A)(), V = (0, A.A)(), {
-    analyticsLocations: M
-  } = (0, d.Ay)(), U = i.useMemo(() => (0, g.H)(), []);
-  async function G() {
+  } = e, [s, _] = r.useState(false), m = (0, A.A)(), L = (0, S.A)(), I = (0, E.A)(), T = (0, v.A)(), N = (0, x.A)(), k = (0, P.A)(), R = (0, h.A)(), V = (0, w.A)(), M = (0, j.A)(), U = (0, p.sw)(), {
+    analyticsLocations: G
+  } = (0, d.Ay)(), X = r.useMemo(() => (0, g.H)(), []);
+  async function H() {
     try {
-      D(true), await (0, u.iD)(), window.location.reload(true)
+      _(true), await (0, u.iD)(), window.location.reload(true)
     } catch (e) {
-      D(false)
+      _(false)
     }
   }
-  let X = (0, b.t0)("UserSettingsCogContextMenu"),
-    H = (0, O.getWebUserSettingsByUserSettingsSections)(),
-    F = (0, y.Lu)(),
-    Y = i.useMemo(() => {
+  let F = (0, y.t0)("UserSettingsCogContextMenu"),
+    Y = (0, f.getWebUserSettingsByUserSettingsSections)(),
+    q = (0, O.Lu)(),
+    z = r.useMemo(() => {
       let e = [];
-      F.forEach(t => {
+      q.forEach(t => {
         let {
           section: n,
-          predicate: r
+          predicate: i
         } = t;
-        n !== o.Fq.HEADER && n !== o.Fq.CUSTOM && n !== o.Fq.DIVIDER && "logout" !== n && (null == r || r()) && null != H.get(n) && (n === w.nc_.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t))
+        n !== o.Fq.HEADER && n !== o.Fq.CUSTOM && n !== o.Fq.DIVIDER && "logout" !== n && (null == i || i()) && null != Y.get(n) && (n === C.nc_.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t))
       });
-      let t = e.findIndex(e => e.section === w.nc_.ADVANCED);
-      if (false !== t && e.splice(t, 0, {
-          section: w.nc_.STREAMER_MODE,
-          label: C.intl.string(C.t.S5GfOW)
-        }), X) {
-        let t = e.findIndex(e => e.section === w.nc_.NOTIFICATIONS),
-          n = e.findIndex(e => e.section === w.nc_.CONNECTIONS);
+      let t = e.findIndex(e => e.section === C.nc_.ADVANCED);
+      false !== t && e.splice(t, 0, {
+        section: C.nc_.STREAMER_MODE,
+        label: D.intl.string(D.t.S5GfOW)
+      });
+      let n = e.findIndex(e => e.section === C.nc_.CONNECTIONS);
+      if (U) {
+        let t = {
+          section: C.nc_.CLIPS,
+          label: D.intl.string(D.t.z2jK6X),
+          onClick: () => (0, f.openUserSettings)(b.X.CLIPS_PANEL)
+        };
+        false !== n && e.splice(n + 1, 0, t)
+      }
+      if (F) {
+        let t = e.findIndex(e => e.section === C.nc_.NOTIFICATIONS);
         if (false !== t && false !== n && t > n) {
-          let [r] = e.splice(t, 1);
-          e.splice(n + 1, 0, r)
+          let [i] = e.splice(t, 1);
+          e.splice(n + 1, 0, i)
         }
       }
       return e
-    }, [F, H, X]);
-  return (0, r.jsx)(d.f5, {
-    value: M,
-    children: (0, r.jsxs)(l.W1t, {
+    }, [U, F, Y, q]);
+  return (0, i.jsx)(d.f5, {
+    value: G,
+    children: (0, i.jsxs)(l.W1t, {
       "data-menu-migration-ready": true,
       navId: "user-settings-cog",
       onClose: a.Z_,
-      "aria-label": C.intl.string(C.t.opYYHn),
+      "aria-label": D.intl.string(D.t.opYYHn),
       onSelect: n,
       onInteraction: c,
-      children: [Y.map(e => {
+      children: [z.map(e => {
         var t, n;
         let {
-          section: i,
+          section: r,
           label: a,
           onClick: o
-        } = e, c = i.replace(/\W/gi, "_");
-        return (0, r.jsx)(l.Drp, (t = function(e) {
+        } = e, c = r.replace(/\W/gi, "_");
+        return (0, i.jsx)(l.Drp, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = i
             })
           }
           return e
@@ -109,49 +119,49 @@ let D = (0, Chunk358367.A)(function(e) {
           action: () => {
             var e, t;
             let n;
-            return null != o ? o() : (t = null != (e = H.get(i)) ? e : p.X.ACCOUNT_PANEL, void(null != (n = Object.values(w.nc_).filter(e => e === i)[0]) && (0, O.openUserSettings)(t, {
+            return null != o ? o() : (t = null != (e = Y.get(r)) ? e : b.X.ACCOUNT_PANEL, void(null != (n = Object.values(C.nc_).filter(e => e === r)[0]) && (0, f.openUserSettings)(t, {
               section: n,
-              analyticsLocations: M
+              analyticsLocations: G
             })))
           }
         }), n = n = {
           children: (e => {
             switch (e) {
-              case w.nc_.GAMES:
-                return _;
-              case w.nc_.STREAMER_MODE:
+              case C.nc_.GAMES:
                 return m;
-              case w.nc_.APPEARANCE:
-                return T;
-              case w.nc_.ACCESSIBILITY:
-                return I;
-              case w.nc_.VOICE:
+              case C.nc_.STREAMER_MODE:
                 return L;
-              case w.nc_.TEXT:
+              case C.nc_.APPEARANCE:
+                return I;
+              case C.nc_.ACCESSIBILITY:
+                return T;
+              case C.nc_.VOICE:
                 return N;
-              case w.nc_.EXPERIMENTS:
+              case C.nc_.TEXT:
                 return k;
-              case w.nc_.DEVELOPER_OPTIONS:
+              case C.nc_.EXPERIMENTS:
                 return R;
+              case C.nc_.DEVELOPER_OPTIONS:
+                return V;
               default:
                 return null
             }
-          })(i)
+          })(r)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var i = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, i)
           }
           return n
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t), c)
-      }), e.user.isStaff() && V, e.user.isStaff() && U.length > 0 ? (0, r.jsx)(l.Drp, {
+      }), e.user.isStaff() && M, e.user.isStaff() && X.length > 0 ? (0, i.jsx)(l.Drp, {
         label: "Build Overrides",
         id: "build_overrides",
-        children: (0, r.jsx)(l.rXV, {
-          children: U.map(e => (0, r.jsx)(l.iDA, {
+        children: (0, i.jsx)(l.rXV, {
+          children: X.map(e => (0, i.jsx)(l.iDA, {
             id: "input-".concat(e.payload),
             group: "build_overrides",
             label: e.id,
@@ -161,12 +171,12 @@ let D = (0, Chunk358367.A)(function(e) {
             }
           }, "input-".concat(e.payload)))
         })
-      }) : null, null != t ? (0, r.jsx)(l.rXV, {
-        children: (0, r.jsx)(l.Drp, {
+      }) : null, null != t ? (0, i.jsx)(l.rXV, {
+        children: (0, i.jsx)(l.Drp, {
           id: "clear-build-override",
           disabled: s,
-          label: C.intl.string(C.t["/Nz9rY"]),
-          action: G,
+          label: D.intl.string(D.t["/Nz9rY"]),
+          action: H,
           color: "danger"
         })
       }) : null]

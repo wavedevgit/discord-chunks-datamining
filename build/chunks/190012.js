@@ -1,7 +1,7 @@
 /** Chunk was on 20725 **/
 /** chunk id: 190012, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  BC: () => g
+  BC: () => b
 });
 var Chunk735438 = require("./735438.js"),
   Chunk448761 = require("./448761.js"),
@@ -17,14 +17,14 @@ var Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g(e, t) {
+function b(e, t) {
   let {
     isBlocked: n,
-    isIgnored: g
+    isIgnored: b
   } = (0, i.cf)([d.A], () => ({
     isBlocked: d.A.isBlocked(e.author.id),
     isIgnored: d.A.isIgnored(e.author.id)
-  }), [e.author.id]), b = (0, s.Ay)(t.id, e.id), A = (0, i.bG)([c.default], () => c.default.getId()), x = (0, u.Ay)(e).nick, v = e.author.id === A ? y.intl.string(y.t.LuZzxn) : x, h = (0, i.bG)([p.default], () => e.mentions.length > 0 ? p.default.getUser(e.mentions[0]) : true), E = (0, u.d8)(h, t).nick;
+  }), [e.author.id]), g = (0, s.Ay)(t.id, e.id), A = (0, i.bG)([c.default], () => c.default.getId()), x = (0, u.Ay)(e).nick, v = e.author.id === A ? y.intl.string(y.t.LuZzxn) : x, h = (0, i.bG)([p.default], () => e.mentions.length > 0 ? p.default.getUser(e.mentions[0]) : true), O = (0, u.d8)(h, t).nick;
   return function(e, t) {
     let {
       isBlocked: n,
@@ -268,9 +268,9 @@ function g(e, t) {
     currentUserId: A,
     authorNick: v,
     otherUser: h,
-    otherUserNick: E,
+    otherUserNick: O,
     isBlocked: n,
-    isIgnored: g,
-    isCallActive: b
+    isIgnored: b,
+    isCallActive: g
   })
 }

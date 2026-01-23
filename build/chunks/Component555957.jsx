@@ -41,36 +41,36 @@ let T = function(e) {
   let {
     clip: v,
     actionsDisabled: O,
-    isNew: E,
-    onClick: k
-  } = e, S = (0, u.yK)([g.default], () => v.users.map(e => g.default.getUser(e)).filter(w.Vq)), N = (0, u.bG)([j.A], () => null != v.channelId ? j.A.getChannel(v.channelId) : null), T = (0, u.bG)([h.A], () => null != v.guildId ? h.A.getGuild(v.guildId) : null), {
+    isNew: I,
+    onClick: S
+  } = e, N = (0, u.yK)([g.default], () => v.users.map(e => g.default.getUser(e)).filter(w.Vq)), k = (0, u.bG)([j.A], () => null != v.channelId ? j.A.getChannel(v.channelId) : null), T = (0, u.bG)([h.A], () => null != v.guildId ? h.A.getGuild(v.guildId) : null), {
     analyticsLocations: G
   } = (0, y.Ay)(f.A.CLIPS_GALLERY_ITEM), {
     selectedClipIds: K,
     toggleClipSelection: z,
     isMultiSelectMode: U
-  } = r.useContext(D.$), [F, Y] = r.useState(false), B = r.useRef(null), Q = (0, o.A)(null != (t = null == (i = v.editMetadata) ? true : i.start) ? t : 0), q = K.has(v.id), X = v.type === I.nQ.SCREENSHOT, Z = "" === v.applicationName && (null == N ? true : N.name) != null && "" !== N.name ? N.name : v.applicationName, W = (0, C.Fe)(new Date(P.default.extractTimestamp(v.id))), $ = r.useMemo(() => {
+  } = r.useContext(D.$), [F, Y] = r.useState(false), B = r.useRef(null), Q = (0, o.A)(null != (t = null == (i = v.editMetadata) ? true : i.start) ? t : 0), X = K.has(v.id), q = v.type === E.nQ.SCREENSHOT, Z = "" === v.applicationName && (null == k ? true : k.name) != null && "" !== k.name ? k.name : v.applicationName, W = (0, C.Fe)(new Date(P.default.extractTimestamp(v.id))), $ = r.useMemo(() => {
     let e = [];
-    if (v.type === I.nQ.VOICE_CLIP)(null == T ? true : T.name) != null && e.push(T.name), (null == N ? true : N.name) != null && e.push(N.name);
+    if (v.type === E.nQ.VOICE_CLIP)(null == T ? true : T.name) != null && e.push(T.name), (null == k ? true : k.name) != null && e.push(k.name);
     else {
       var t, l;
       "" !== Z && null != Z && e.push(Z), (null == (t = v.activity) ? true : t.state) != null && "" !== v.activity.state && e.push(v.activity.state), (null == (l = v.activity) ? true : l.details) != null && "" !== v.activity.details && e.push(v.activity.details)
     }
     return e.join(" › ")
-  }, [Z, null == T ? true : T.name, null == N ? true : N.name, null == (s = v.activity) ? true : s.state, null == (c = v.activity) ? true : c.details, v.type]), J = r.useCallback(() => {
+  }, [Z, null == T ? true : T.name, null == k ? true : k.name, null == (s = v.activity) ? true : s.state, null == (c = v.activity) ? true : c.details, v.type]), J = r.useCallback(() => {
     let e = B.current;
     null != e && (e.pause(), e.src = "")
   }, []), ee = r.useCallback(() => {
     var e;
-    if (true === X) return;
+    if (true === q) return;
     let t = B.current;
     null != t && t.paused && (t.currentTime = Q.current, null == (e = B.current) || e.play())
-  }, [X, Q]), et = r.useCallback(() => {
+  }, [q, Q]), et = r.useCallback(() => {
     var e, t;
-    if (true === X) return;
+    if (true === q) return;
     let l = B.current;
     null != l && (l.pause(), l.currentTime = null != (e = null == (t = v.editMetadata) ? true : t.start) ? e : 0)
-  }, [X, null == (b = v.editMetadata) ? true : b.start]), el = r.useCallback(e => {
+  }, [q, null == (b = v.editMetadata) ? true : b.start]), el = r.useCallback(e => {
     var t, l;
     (null == (l = e.relatedTarget) || null == (t = l.parentElement) ? true : t.parentElement) !== e.currentTarget.parentElement && et()
   }, [et]), en = r.useCallback(() => {
@@ -139,19 +139,19 @@ let T = function(e) {
   }, [v, U, K, O, J, en]), ei = r.useCallback(e => {
     O || (e.preventDefault(), e.stopPropagation(), er(e))
   }, [O, er]), ea = r.useCallback(e => {
-    O || (e.shiftKey ? (e.preventDefault(), z(v.id)) : U ? z(v.id) : null != k && k(v), x.default.track(M.HAw.CLIP_GALLERY_CARD_CLICKED))
-  }, [O, U, z, v, k]);
+    O || (e.shiftKey ? (e.preventDefault(), z(v.id)) : U ? z(v.id) : null != S && S(v), x.default.track(M.HAw.CLIP_GALLERY_CARD_CLICKED))
+  }, [O, U, z, v, S]);
   return (0, n.jsx)(y.f5, {
     value: G,
     children: (0, n.jsxs)(p.sqX, {
       "aria-disabled": O,
-      "aria-label": L.intl.string(true === X ? L.t["HO/oXl"] : L.t.bt75uw),
+      "aria-label": L.intl.string(true === q ? L.t["HO/oXl"] : L.t.bt75uw),
       onClick: O ? true : ea,
       onContextMenu: ei,
       className: a()(H.QN, {
         [H.r9]: O,
         [H.in]: F,
-        [H.wH]: q
+        [H.wH]: X
       }),
       onBlur: el,
       onFocus: ee,
@@ -159,7 +159,7 @@ let T = function(e) {
       onMouseLeave: et,
       children: [(0, n.jsx)(R, {
         clip: v,
-        isNew: E,
+        isNew: I,
         videoRef: B,
         onOpenContextMenu: er,
         actionsDisabled: O
@@ -186,7 +186,7 @@ let T = function(e) {
           className: H.jW,
           children: (0, n.jsx)(d.A, {
             maxUsers: 3,
-            users: S,
+            users: N,
             size: p._3J.SIZE_24,
             onFocusOverflow: e => {
               var t, l, n, r;
@@ -258,7 +258,7 @@ function R(e) {
       isClipEdited: n
     }
   }, [t.length, t.editMetadata]), b = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), E.XK(t)
+    e.preventDefault(), e.stopPropagation(), I.XK(t)
   }, [t]), v = r.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), s || a(e)
   }, [s, a]);
@@ -327,7 +327,7 @@ function R(e) {
 function V(e) {
   let {
     clip: t
-  } = e, l = (0, N.h)(t), r = "" !== l;
+  } = e, l = (0, k.h)(t), r = "" !== l;
   return (0, n.jsx)(p.Text, {
     className: H.NV,
     variant: "text-md/normal",
@@ -340,8 +340,8 @@ function G(e) {
   let {
     clip: t,
     videoRef: l
-  } = e, r = (0, S.j)(t), i = t.type === I.nQ.SCREENSHOT;
-  return t.type === I.nQ.VOICE_CLIP ? (0, n.jsx)(k.A, {
+  } = e, r = (0, N.j)(t), i = t.type === E.nQ.SCREENSHOT;
+  return t.type === E.nQ.VOICE_CLIP ? (0, n.jsx)(S.A, {
     className: H.fT
   }) : i ? (0, n.jsx)("img", {
     alt: "",
@@ -380,7 +380,7 @@ function _(e) {
       src: r,
       alt: "",
       className: H.NH
-    }) : t.type === I.nQ.VOICE_CLIP ? (0, n.jsx)(p.HKD, {
+    }) : t.type === E.nQ.VOICE_CLIP ? (0, n.jsx)(p.HKD, {
       size: "sm",
       color: "currentColor"
     }) : (0, n.jsx)(p.kN9, {

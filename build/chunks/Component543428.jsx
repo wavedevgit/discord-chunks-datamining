@@ -82,31 +82,31 @@ function x(e) {
     return i
   }(e, ["channelId", "onClose", "onClipClick"]), {
     analyticsLocations: P
-  } = (0, u.Ay)(o.A.CLIPS_GALLERY), [A, I] = r.useState(new Set), {
-    clipsByGame: E,
-    filteredClips: k,
-    favoriteClips: S,
-    allClips: N
+  } = (0, u.Ay)(o.A.CLIPS_GALLERY), [A, E] = r.useState(new Set), {
+    clipsByGame: I,
+    filteredClips: S,
+    favoriteClips: N,
+    allClips: k
   } = (0, b.a)(), {
     onShareClick: D
   } = (0, p.A)(t), M = (0, i.bG)([d.A], () => d.A.getExportingClipIds().length > 0), L = (0, y.P)(e => e.selectedGameId), H = r.useMemo(() => {
     var e;
-    return null == L || "favorites" === L ? null : null != (e = E.find(e => e.applicationId === L)) ? e : null
-  }, [L, E]), T = r.useMemo(() => {
+    return null == L || "favorites" === L ? null : null != (e = I.find(e => e.applicationId === L)) ? e : null
+  }, [L, I]), T = r.useMemo(() => {
     var e;
-    return "favorites" === L ? S : null != (e = null == H ? true : H.filteredClips) ? e : k
-  }, [L, H, k, S]), R = r.useMemo(() => {
+    return "favorites" === L ? N : null != (e = null == H ? true : H.filteredClips) ? e : S
+  }, [L, H, S, N]), R = r.useMemo(() => {
     var e;
     return "favorites" === L ? v.intl.string(v.t["9rlCk1"]) : null != (e = null == H ? true : H.name) ? e : v.intl.string(v.t.dPVrEv)
   }, [L, H]), V = r.useCallback(e => {
-    I(t => {
+    E(t => {
       let l = new Set(t);
       return l.has(e) ? l.delete(e) : l.add(e), l
     })
   }, []), G = r.useCallback(() => {
-    I(new Set)
+    E(new Set)
   }, []), _ = A.size > 0, K = r.useCallback(() => {
-    let e = N.filter(e => A.has(e.id));
+    let e = k.filter(e => A.has(e.id));
     (0, c.mMO)(async () => {
       let {
         default: t
@@ -120,12 +120,12 @@ function x(e) {
     }, {
       stackingBehavior: "stack"
     })
-  }, [N, A, G]), z = r.useCallback(async () => {
-    let e = N.filter(e => A.has(e.id));
+  }, [k, A, G]), z = r.useCallback(async () => {
+    let e = k.filter(e => A.has(e.id));
     await D({
       clips: e
     }), G()
-  }, [N, A, D, G]), U = r.useMemo(() => ({
+  }, [k, A, D, G]), U = r.useMemo(() => ({
     selectedClipIds: A,
     toggleClipSelection: V,
     clearSelection: G,
@@ -141,10 +141,10 @@ function x(e) {
         children: (0, n.jsxs)("div", {
           className: j.jT,
           children: [(0, n.jsx)(f.A, {
-            clipsByGame: E,
-            filteredClips: k,
-            favoriteClips: S,
-            allClips: N
+            clipsByGame: I,
+            filteredClips: S,
+            favoriteClips: N,
+            allClips: k
           }), (0, n.jsxs)("div", {
             className: j.Qs,
             children: [(0, n.jsxs)("div", {
@@ -187,7 +187,7 @@ function x(e) {
             }), (0, n.jsx)(m.A, {
               channelId: t,
               filteredClips: T,
-              totalClipCount: N.length,
+              totalClipCount: k.length,
               onClipClick: C
             })]
           })]

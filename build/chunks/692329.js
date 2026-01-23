@@ -1,7 +1,7 @@
 /** Chunk was on 44751 **/
-/** chunk id: 692329, original params: t,i,l (module,exports,require) **/
+/** chunk id: 692329, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => s
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -9,9 +9,9 @@ var Chunk64700 = require("./64700.js"),
   Chunk696016 = require("./696016.js"),
   Chunk985018 = require("./985018.jsx");
 
-function c() {
-  let t = (0, a.bG)([e.default], () => e.default.locale);
-  return n.useMemo(() => [{
+function s() {
+  let t = (0, e.bG)([a.default], () => a.default.locale);
+  return l.useMemo(() => [{
     value: r.LX.SECONDS_30,
     label: o.intl.formatToPlainString(o.t["bTFv/3"], {
       count: 30

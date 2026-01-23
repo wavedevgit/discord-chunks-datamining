@@ -41,5 +41,6 @@ let T = (0, Chunk419954.Hn)(Chunk780964.X.CLIPS_FRAME_RATE, {
     label: o.intl.formatToPlainString(o.t.Qb44XH, {
       fps: a.kn.FPS_60
     })
-  }]
+  }],
+  fieldLayout: "horizontal-responsive"
 })

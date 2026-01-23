@@ -18,5 +18,5 @@ var Chunk419954 = require("./419954.js"),
   Chunk985018 = require("./985018.jsx");
 let g = (0, Chunk419954.WI)(Chunk780964.X.USER_SECTION, {
   useTitle: () => _.intl.string(_.t.cduTBL),
-  buildLayout: () => [s.J, o.TC, T.v, A.T, r.J, E.$, a.z, d.e, u.rC, S.u]
+  buildLayout: () => [s.J, o.TC, T.v, A.T, r.J, E.$, a.z, d.e, u.r, S.u]
 })

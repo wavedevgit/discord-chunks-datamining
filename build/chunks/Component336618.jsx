@@ -154,93 +154,90 @@ function B(e) {
 let H = Chunk927813.A.Millis.DAYS_30;
 
 function Y(e) {
-  var t, n;
+  var t, n, a;
   let {
-    disabled: a,
-    channel: u
+    disabled: u,
+    channel: d
   } = e, {
-    analyticsLocations: d
-  } = (0, _.Ay)(p.A.GIFT_BUTTON), [f, S] = i.useState(false), w = (0, l.bG)([A.A], () => !(null === A.A || true === A.A ? true : A.A.hasLayers())), P = (0, l.bG)([I.default], () => I.default.getCurrentUser()), L = null != P ? T.default.age(P.id) : 0, M = (0, l.bG)([b.A], () => {
+    analyticsLocations: f
+  } = (0, _.Ay)(p.A.GIFT_BUTTON), [S, w] = i.useState(false), P = (0, l.bG)([A.A], () => !(null === A.A || true === A.A ? true : A.A.hasLayers())), L = (0, l.bG)([I.default], () => I.default.getCurrentUser()), M = null != L ? T.default.age(L.id) : 0, k = (0, l.bG)([b.A], () => {
     let e = b.A.getMarketingComponentByType(o.C.GIFT_ICON);
     return null == e || "giftIcon" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftIcon
-  }), k = (0, l.bG)([b.A], () => {
+  }), U = (0, l.bG)([b.A], () => {
     let e = b.A.getMarketingComponentByType(o.C.GIFT_ICON_COACHMARK);
     return null == e || "giftIconCoachmark" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftIconCoachmark
-  }), U = i.useMemo(() => {
-    let e = null == M ? true : M.gradient;
-    if (null == e || null == e.colors || e.colors.length < 2) return;
-    let t = (0, E.K5)({
-      gradient: e.colors,
-      angle: e.angle
-    }, {
-      defaultAngle: 180
-    });
-    if ((null == t ? true : t.background) != null) return {
-      "--custom-promotion-gradient": t.background
+  }), G = null == k ? true : k.gradient, V = null != G && null != G.colors && G.colors.length >= 2 ? (0, E.K5)({
+    gradient: G.colors,
+    angle: null != (t = G.angle) ? t : true
+  }, {
+    defaultAngle: 180
+  }) : true, Y = i.useMemo(() => {
+    if ((null == V ? true : V.background) != null) return {
+      "--custom-promotion-gradient": V.background
     }
-  }, [null == M ? true : M.gradient]), G = !(0, C.uJ)(null == M ? true : M.boxAnimationUrl), V = (!(0, C.uJ)(null == M ? true : M.trinketAnimationUrl) || !(0, C.uJ)(null == M ? true : M.trinketGlowAnimationUrl)) && !G, Y = null != k && !a && w && L >= H, [W, K] = (0, m.RF)(Y ? c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, h.c)(c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), z = null != W, q = f || z, Z = (0, N.R1)(u), X = u.type === D.rbe.DM, Q = (0, v.tA)({
+  }, [V]), W = !(0, C.uJ)(null == k ? true : k.boxAnimationUrl), K = (!(0, C.uJ)(null == k ? true : k.trinketAnimationUrl) || !(0, C.uJ)(null == k ? true : k.trinketGlowAnimationUrl)) && !W, z = null != U && !u && P && M >= H, [q, Z] = (0, m.RF)(z ? c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, h.c)(c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), X = null != q, Q = S || X, J = (0, N.R1)(d), $ = d.type === D.rbe.DM, ee = (0, v.tA)({
     location: "gift-promotion-button",
     isGift: true,
-    giftRecipient: Z
+    giftRecipient: J
   });
-  if (a) return null;
-  let J = () => {
-      Q && X && null != Z ? (0, O.A)({
-        giftRecipient: Z,
-        analyticsLocations: d,
+  if (u) return null;
+  let et = () => {
+      ee && $ && null != J ? (0, O.A)({
+        giftRecipient: J,
+        analyticsLocations: f,
         analyticsObject: {
-          page: u.isPrivate() ? D.liQ.DM_CHANNEL : D.liQ.GUILD_CHANNEL,
+          page: d.isPrivate() ? D.liQ.DM_CHANNEL : D.liQ.GUILD_CHANNEL,
           section: D.JJy.CHANNEL_TEXT_AREA,
           object: D.ZSU.BUTTON_ICON,
           objectType: D.AnalyticsObjectTypes.GIFT
         }
       }) : (0, g.A)({
         isGift: true,
-        giftRecipient: null == Z ? true : Z,
+        giftRecipient: null == J ? true : J,
         initialPlanId: null,
-        analyticsLocations: d,
+        analyticsLocations: f,
         analyticsObject: {
-          page: u.isPrivate() ? D.liQ.DM_CHANNEL : D.liQ.GUILD_CHANNEL,
+          page: d.isPrivate() ? D.liQ.DM_CHANNEL : D.liQ.GUILD_CHANNEL,
           section: D.JJy.CHANNEL_TEXT_AREA,
           object: D.ZSU.GIFTING_PROMOTION_BUTTON,
           objectType: D.AnalyticsObjectTypes.GIFT
         }
       })
     },
-    $ = () => {
-      S(false), K(x.i.TAKE_ACTION), J()
+    en = () => {
+      w(false), Z(x.i.TAKE_ACTION), et()
     },
-    ee = G && (null == M ? true : M.boxAnimationUrl) != null ? (0, r.jsx)(F, {
-      boxAnimationUrl: M.boxAnimationUrl,
-      hovered: q,
-      onClick: $
-    }) : V ? (0, r.jsx)(B, {
-      trinketAnimationUrl: null != (t = null == M ? true : M.trinketAnimationUrl) ? t : null,
-      trinketGlowAnimationUrl: null != (n = null == M ? true : M.trinketGlowAnimationUrl) ? n : null,
-      hovered: q,
-      onClick: $
+    er = W && (null == k ? true : k.boxAnimationUrl) != null ? (0, r.jsx)(F, {
+      boxAnimationUrl: k.boxAnimationUrl,
+      hovered: Q,
+      onClick: en
+    }) : K ? (0, r.jsx)(B, {
+      trinketAnimationUrl: null != (n = null == k ? true : k.trinketAnimationUrl) ? n : null,
+      trinketGlowAnimationUrl: null != (a = null == k ? true : k.trinketGlowAnimationUrl) ? a : null,
+      hovered: Q,
+      onClick: en
     }) : (0, r.jsx)(R.A, {
-      disabled: a,
-      channel: u
+      disabled: u,
+      channel: d
     });
   return (0, r.jsx)("div", {
     className: s()(j.kL, {
-      [j.DM]: q
+      [j.DM]: Q
     }),
-    style: U,
+    style: Y,
     onMouseEnter: () => {
-      f || S(true)
+      S || w(true)
     },
     onMouseLeave: () => {
-      S(false)
+      w(false)
     },
-    children: z ? (0, r.jsx)(y.A, {
-      onComplete: () => S(false),
-      onCheckItOutClick: J,
-      markAsDismissed: K,
-      coachmarkConfig: k,
-      children: ee
-    }) : ee
+    children: X ? (0, r.jsx)(y.A, {
+      onComplete: () => w(false),
+      onCheckItOutClick: et,
+      markAsDismissed: Z,
+      coachmarkConfig: U,
+      children: er
+    }) : er
   })
 }
 let W = Chunk64700.memo(Y)

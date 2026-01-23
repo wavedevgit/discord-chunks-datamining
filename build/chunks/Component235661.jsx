@@ -15,9 +15,9 @@ function s() {
   let {
     analyticsLocations: e
   } = (0, l.Ay)();
-  return [(0, r.jsx)(i.rXV, {
+  return [(0, i.jsx)(r.rXV, {
     children: (0, o.A)(e)
-  }, "input-mode-items"), (0, r.jsxs)(i.rXV, {
+  }, "input-mode-items"), (0, i.jsxs)(r.rXV, {
     children: [(0, a.A)(e), (0, c.A)(e)]
   }, "input-output")]
 }

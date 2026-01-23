@@ -32,10 +32,10 @@ function x(e) {
     filteredClips: x,
     totalClipCount: C,
     onClipClick: w
-  } = e, [P, A] = r.useState(true), [I, E] = r.useState({
+  } = e, [P, A] = r.useState(true), [E, I] = r.useState({
     width: 0,
     height: 0
-  }), k = (0, a.bG)([d.A], () => d.A.getSettings().storageLocation), S = (0, a.yK)([d.A], () => d.A.getNewClipIds()), N = (0, a.bG)([d.A], () => d.A.getExportingClipIds().length > 0);
+  }), S = (0, a.bG)([d.A], () => d.A.getSettings().storageLocation), N = (0, a.yK)([d.A], () => d.A.getNewClipIds()), k = (0, a.bG)([d.A], () => d.A.getExportingClipIds().length > 0);
   (0, c.A)({
     type: i.ImpressionTypes.MODAL,
     name: i.ImpressionNames.CLIP_GALLERY_VIEWED,
@@ -87,7 +87,7 @@ function x(e) {
     }, [x]),
     {
       width: M
-    } = I,
+    } = E,
     {
       tileWidth: L,
       columns: H
@@ -104,12 +104,12 @@ function x(e) {
     !async function() {
       A(true);
       try {
-        await p.Fb(k)
+        await p.Fb(S)
       } finally {
         A(false)
       }
     }()
-  }, [k]);
+  }, [S]);
   let T = r.useCallback(e => {
       (0, s.mMO)(async () => {
         let {
@@ -171,14 +171,14 @@ function x(e) {
             width: L
           },
           children: (0, n.jsx)(m.A, {
-            actionsDisabled: N,
-            isNew: S.includes(e.id),
+            actionsDisabled: k,
+            isNew: N.includes(e.id),
             onClick: null != w ? w : T,
             clip: e
           })
         }, e.id))
       }, "row-".concat(l, "-").concat(r))
-    }, [D, H, L, N, S, T, w]),
+    }, [D, H, L, k, N, T, w]),
     K = r.useCallback(e => {
       let t = D[e];
       return (null == t ? true : t.description) != null ? 66 : 44
@@ -210,7 +210,7 @@ function x(e) {
     rowCountBySection: R,
     rowHeight: G + 68 + 16,
     sectionHeaderHeight: K,
-    onResize: E
+    onResize: I
   }) : (0, n.jsx)(f.A, {
     isEmptyBecauseQuery: C > 0
   })

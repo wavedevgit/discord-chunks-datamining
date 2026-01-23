@@ -2,11 +2,10 @@
 /** chunk id: 358776, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $m: () => l,
   E7: () => o,
-  WJ: () => d,
-  dk: () => u,
-  qz: () => c,
+  WJ: () => u,
+  dk: () => c,
+  qz: () => l,
   t0: () => s
 });
 var Chunk945810 = require("./945810.js");
@@ -49,15 +48,12 @@ let i = (0, Chunk945810.mj)({
   o = e => i.getConfig({
     location: e
   }).showRedesignedNotifications,
-  l = e => i.useConfig({
+  l = e => i.getConfig({
     location: e
   }).showRedesignedVoiceAndVideo,
-  c = e => i.getConfig({
-    location: e
-  }).showRedesignedVoiceAndVideo,
-  u = e => a.useConfig({
+  c = e => a.useConfig({
     location: e
   }).enabled,
-  d = e => a.getConfig({
+  u = e => a.getConfig({
     location: e
   }).enabled

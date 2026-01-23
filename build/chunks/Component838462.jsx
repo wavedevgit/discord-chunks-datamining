@@ -52,26 +52,26 @@ function A(e) {
       handleClose: i,
       planGroup: A,
       onSubscriptionConfirmation: k,
-      renderPurchaseConfirmation: w,
-      postSuccessGuild: C,
-      followupSKUInfo: M,
-      continueSessionToInitialStep: _
+      renderPurchaseConfirmation: C,
+      postSuccessGuild: w,
+      followupSKUInfo: _,
+      continueSessionToInitialStep: M
     } = e,
     {
       activeSubscription: N,
       paymentSources: R,
       paymentSourceId: D,
       selectedPlan: L,
-      selectedSkuId: U,
-      step: G,
+      selectedSkuId: G,
+      step: U,
       updatedSubscription: H,
       startingPremiumSubscriptionPlanIdRef: B,
       startingFractionalPremiumEndsAtRef: F,
       isPremiumGroupPurchase: W
     } = (0, h.P5)(),
     {
-      isGift: V,
-      giftRecipient: K,
+      isGift: K,
+      giftRecipient: V,
       giftCode: z,
       hasSentMessage: Y,
       isSendingMessage: Z,
@@ -82,13 +82,13 @@ function A(e) {
     {
       confirmationFooter: X
     } = (0, v.cG)(),
-    $ = (0, p.px)(L, V, q),
+    $ = (0, p.px)(L, K, q),
     ee = (0, d.A)(),
     et = (0, p.Mq)(L),
     en = (0, u.Mv)(null == J ? true : J.skuId),
-    er = (0, x.g)(R, D),
-    el = V && null != J && et;
-  s()(null != L, "Expected plan to selected"), s()(null != U, "Expected selectedSkuId"), s()(null != G, "Step should be set");
+    er = (0, E.g)(R, D),
+    el = K && null != J && et;
+  s()(null != L, "Expected plan to selected"), s()(null != G, "Expected selectedSkuId"), s()(null != U, "Step should be set");
   let ei = l.useCallback(() => {
     i(), null == k || k()
   }, [i, k]);
@@ -119,25 +119,25 @@ function A(e) {
       f._.unsubscribe(S.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
     }
   }, [W, H]), l.useEffect(() => {
-    !V || null == K || null == z || Y || Z || (0, y.Ik)(K) || Q({
+    !K || null == V || null == z || Y || Z || (0, y.Ik)(V) || Q({
       onSubscriptionConfirmation: k
     })
-  }, [Q, V, K, z, Y, Z, k]), l.useEffect(() => {
+  }, [Q, K, V, z, Y, Z, k]), l.useEffect(() => {
     null != ee && null != ee.reminderNotice && $ && (0, c.$l)(a.M.GIFTING_PROMOTION_REMINDER, (0, m.p)(), {
       dismissAction: T.i.INDIRECT_ACTION
     })
   }, [ee, $]);
-  let es = null != _ ? g.Rs.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != w) t = w(L, ei, H);
-  else if (V) t = (0, r.jsx)(g.fw, {
+  let es = null != M ? g.Rs.DEEPLINK_TO_DESKTOP_APP : true;
+  if (null != C) t = C(L, ei, H);
+  else if (K) t = (0, r.jsx)(g.fw, {
     planId: L.id,
     onClose: ei
   });
   else {
     let e = B.current === L.id ? {
-      postSuccessGuild: C
+      postSuccessGuild: w
     } : {
-      followupSKUInfo: M,
+      followupSKUInfo: _,
       startingPremiumSubscriptionPlanId: B.current,
       isDowngrade: null != N && (0, j.vT)(N, L.id, A)
     };
@@ -152,7 +152,7 @@ function A(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(O.dZ, {
-      children: [(0, r.jsx)(E.A, {}), t]
+      children: [(0, r.jsx)(x.A, {}), t]
     }), null != X && X, el && null != en && (0, r.jsx)(P.A, {
       reward: J,
       purchase: en,

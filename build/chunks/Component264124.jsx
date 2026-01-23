@@ -12,8 +12,8 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function s() {
-  let e = (0, i.bG)([o.A], () => o.A.enabled, []);
-  return (0, r.jsx)(l.sLh, {
+  let e = (0, r.bG)([o.A], () => o.A.enabled, []);
+  return (0, i.jsx)(l.sLh, {
     id: "streamer-mode-toggle",
     label: c.intl.string(c.t.p9ZAJZ),
     action: () => {

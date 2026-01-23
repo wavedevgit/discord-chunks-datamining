@@ -1,55 +1,55 @@
 /** Chunk was on 44751 **/
-/** chunk id: 575538, original params: t,i,l (module,exports,require) **/
+/** chunk id: 575538, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk442433 = require("./442433.js"),
-  Chunk725177 = require("./725177.js"),
+  Chunk780964 = require("./780964.js"),
+  Chunk840065 = require("./840065.jsx"),
   Chunk274372 = require("./274372.js"),
   Chunk692329 = require("./692329.js"),
   Chunk399925 = require("./399925.js"),
-  Chunk857266 = require("./857266.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(t) {
+function g(t) {
   let {
     onSelect: i
   } = t, {
-    clipsLength: l
-  } = (0, a.cf)([c.A], () => c.A.getSettings()), h = (0, s.A)();
-  return (0, n.jsxs)(e.W1t, {
+    clipsLength: n
+  } = (0, e.cf)([c.A], () => c.A.getSettings()), g = (0, u.A)();
+  return (0, l.jsxs)(a.W1t, {
     "data-menu-migration-ready": true,
     navId: "clips-context",
     "aria-label": p.intl.string(p.t.J1hsY2),
     onClose: r.Z_,
     onSelect: i,
-    children: [(0, n.jsx)(e.rXV, {
-      children: (0, n.jsx)(e.Drp, {
+    children: [(0, l.jsx)(a.rXV, {
+      children: (0, l.jsx)(a.Drp, {
         id: "clips-duration",
         label: p.intl.string(p.t.OgfUio),
-        children: h.map(t => {
+        children: g.map(t => {
           let {
             value: i,
-            label: a
+            label: e
           } = t;
-          return (0, n.jsx)(e.iDA, {
+          return (0, l.jsx)(a.iDA, {
             id: "clips-duration-".concat(i),
             group: "clips-duration",
-            label: a,
-            action: () => (0, u.h$)(i),
-            checked: i === l
+            label: e,
+            action: () => (0, d.h$)(i),
+            checked: i === n
           }, i)
         })
       })
-    }), (0, n.jsx)(e.rXV, {
-      children: (0, n.jsx)(e.Drp, {
+    }), (0, l.jsx)(a.rXV, {
+      children: (0, l.jsx)(a.Drp, {
         id: "clips-settings",
         label: p.intl.string(p.t.J1hsY2),
-        action: () => (0, o.A)(d.J.CLIPS)
+        action: () => (0, s.openUserSettings)(o.X.CLIPS_PANEL)
       })
     })]
   })

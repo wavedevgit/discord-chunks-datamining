@@ -26,15 +26,15 @@ let f = e => {
       a11yLabel: v,
       selectedSkuId: O,
       category: P,
-      type: x,
-      palette: E
+      type: E,
+      palette: x
     } = e,
     S = l.useRef(null),
     {
       isHoveringOrFocusing: T
     } = (0, u.A)(S),
     I = !j && T;
-  return x === a.R.AVATAR_DECORATION ? (t = {
+  return E === a.R.AVATAR_DECORATION ? (t = {
     type: a.R.AVATAR_DECORATION,
     label: v,
     asset: f
@@ -43,11 +43,11 @@ let f = e => {
     user: y,
     isHighlighted: I,
     avatarSize: o._3J.SIZE_96
-  })) : x === a.R.NAMEPLATE && (t = {
+  })) : E === a.R.NAMEPLATE && (t = {
     type: a.R.NAMEPLATE,
     label: v,
     asset: f,
-    palette: null != E ? E : "none"
+    palette: null != x ? x : "none"
   }, n = (0, r.jsx)(p.A, {
     nameplate: t,
     user: y,
@@ -67,8 +67,8 @@ let f = e => {
       }),
       children: [(0, r.jsx)("div", {
         className: s()(g.VH, {
-          [g._Q]: x === a.R.AVATAR_DECORATION,
-          [g.M4]: x === a.R.NAMEPLATE,
+          [g._Q]: E === a.R.AVATAR_DECORATION,
+          [g.M4]: E === a.R.NAMEPLATE,
           [g.S1]: P === c.Sm.Trick,
           [g.LX]: P === c.Sm.Treat
         }),

@@ -33,5 +33,6 @@ let T = (0, Chunk419954.Hn)(Chunk780964.X.CLIPS_LENGTH, {
     label: o.intl.formatToPlainString(o.t.ICo9Nk, {
       count: 2
     })
-  }]
+  }],
+  fieldLayout: "horizontal-responsive"
 })

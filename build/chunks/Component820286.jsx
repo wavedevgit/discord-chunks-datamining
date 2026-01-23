@@ -1,7 +1,7 @@
 /** Chunk was on 20725 **/
 /** chunk id: 820286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => g
+  X: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -91,7 +91,7 @@ let f = Chunk64700.memo(function(e) {
     })
   });
 
-function g(e) {
+function b(e) {
   let t, {
       channel: n,
       message: l

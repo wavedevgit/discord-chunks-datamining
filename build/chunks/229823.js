@@ -51,5 +51,6 @@ let T = (0, Chunk419954.Hn)(Chunk780964.X.CLIPS_RESOLUTION, {
     id: "source",
     value: a.on.RESOLUTION_SOURCE,
     label: o.intl.string(o.t.XjXqzh)
-  }]
+  }],
+  fieldLayout: "horizontal-responsive"
 })
