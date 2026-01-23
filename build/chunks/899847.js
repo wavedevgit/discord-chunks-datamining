@@ -119,8 +119,9 @@ let b = {
     }), {
       teen_audit_log: m,
       linked_users: g,
-      users: E
-    } = _, y = {
+      users: E,
+      age_group: y
+    } = _, b = {
       teenId: null == m ? true : m.teen_user_id,
       rangeStartId: null == m ? true : m.range_start_id,
       totals: null != (e = null == m ? true : m.totals) ? e : {},
@@ -133,12 +134,13 @@ let b = {
       totalSpendCurrency: null != (c = null == m || null == (p = m.total_spend) ? true : p.currency) ? c : null,
       invoices: null != (u = null == m ? true : m.invoices) ? u : []
     };
-    return null != y.invoices && y.invoices.length > 0 && await h(y.invoices), a.h.dispatch({
+    return null != b.invoices && b.invoices.length > 0 && await h(b.invoices), a.h.dispatch({
       type: "FAMILY_CENTER_INITIAL_LOAD",
-      familyCenterTeenActivity: y,
+      familyCenterTeenActivity: b,
       linkedUsers: g,
-      users: E
-    }), y
+      users: E,
+      ageGroup: y
+    }), b
   },
   async fetchLinkedUsers() {
     let {

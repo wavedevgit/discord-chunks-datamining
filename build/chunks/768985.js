@@ -16,7 +16,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk695515 = require("./695515.js"),
   Chunk809697 = require("./809697.js"),
   Chunk500470 = require("./500470.js"),
-  Chunk945276 = require("./945276.js"),
+  Chunk33666 = require("./33666.js"),
   Chunk834981 = require("./834981.js"),
   Chunk191627 = require("./191627.js"),
   Chunk652215 = require("./652215.js"),
@@ -35,19 +35,19 @@ function b(e) {
   })), I = (0, _.k)(), {
     selectedTab: S,
     handleTabChange: T
-  } = (0, p.A)(), C = u.default.getCurrentUser(), N = null != b, w = v && null != C && !N;
+  } = (0, p.A)(), C = u.default.getCurrentUser(), N = null != b, w = "adult" === b, R = v && null != C && !N;
   (0, s.Ay)(() => {
     (0, c.d)("family-center"), null != n && n()
   });
-  let R = {
-      isConsideredAdult: b,
+  let P = {
+      isConsideredAdult: w,
       numOfAcceptedRequests: O,
       selectedTab: S,
       selectedTeenId: I
     },
-    P = r.useRef(R);
+    D = r.useRef(P);
   return r.useEffect(() => {
-    P.current = R
+    D.current = P
   }), r.useEffect(() => {
     if (v && N) {
       let {
@@ -55,7 +55,7 @@ function b(e) {
         numOfAcceptedRequests: n,
         selectedTab: r,
         selectedTeenId: a
-      } = P.current;
+      } = D.current;
       d.default.track(E.HAw.FAMILY_CENTER_VIEWED, {
         is_considered_adult: e,
         num_of_accepted_links: n,
@@ -67,11 +67,11 @@ function b(e) {
       })
     }
   }, [v, N, t]), r.useEffect(() => {
-    w && (0, o.yO)(y.w_.FAMILY_CENTER)
-  }, [w]), {
+    R && (0, o.yO)(y.w_.FAMILY_CENTER)
+  }, [R]), {
     isLoading: A,
     selectedTab: S,
     handleTabChange: T,
-    showAgeGateModal: w
+    showAgeGateModal: R
   }
 }

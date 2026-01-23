@@ -10,8 +10,8 @@ var Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk294433 = require("./294433.js"),
+  Chunk438732 = require("./438732.js"),
   Chunk809697 = require("./809697.js"),
-  Chunk945276 = require("./945276.js"),
   Chunk834981 = require("./834981.js"),
   Chunk796497 = require("./796497.jsx"),
   Chunk191627 = require("./191627.js"),
@@ -23,10 +23,10 @@ var Chunk503698 = require("./503698.js"),
   Chunk607913 = require("./607913.js");
 let y = () => {
     let e = (0, u.Li)(),
-      t = (0, c.A)(),
+      t = (0, l.A)(),
       {
         handleTabChange: n
-      } = (0, l.A)();
+      } = (0, c.A)();
     return (0, u.xr)() || t && e ? null : (0, r.jsx)("div", {
       className: h.x6,
       children: t ? (0, r.jsx)(s.Button, {
@@ -37,7 +37,7 @@ let y = () => {
     })
   },
   b = () => {
-    let e = (0, c.A)(),
+    let e = (0, l.A)(),
       t = (0, o.y)(_.intl.string(p.default["T7GyW+"]), _.intl.string(p.default.goKE2b)),
       n = (0, o.y)(_.intl.format(p.default.MXjDSv, {
         articleLink: "https://support.discord.com/hc/articles/14155060633623"

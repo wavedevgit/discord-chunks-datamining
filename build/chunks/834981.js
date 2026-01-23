@@ -2,24 +2,25 @@
 /** chunk id: 834981, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Du: () => m,
   GR: () => _,
   Li: () => h,
-  VE: () => m,
-  VT: () => E,
-  W1: () => y,
-  XC: () => O,
-  v4: () => b,
+  VE: () => g,
+  VT: () => y,
+  W1: () => b,
+  XC: () => v,
+  v4: () => O,
   vx: () => p,
   xk: () => f,
-  xr: () => g
+  xr: () => E
 }), require("./638769.js");
 var Chunk64700 = require("./64700.js"),
   Chunk417597 = require("./417597.js"),
   Chunk287809 = require("./287809.js"),
   Chunk695515 = require("./695515.js"),
   Chunk923531 = require("./923531.js"),
+  Chunk438732 = require("./438732.js"),
   Chunk500470 = require("./500470.js"),
-  Chunk945276 = require("./945276.js"),
   Chunk191627 = require("./191627.js");
 
 function d(e) {
@@ -41,35 +42,40 @@ function _() {
 let h = () => p().length > 0;
 
 function m() {
+  let e = (0, i.bG)([s.A], () => s.A.getLinkedUsers());
+  return r.useMemo(() => Object.values(e).some(e => null != e && e.link_status === u.Ef.ACTIVE && e.link_type === u.QM.PARENT), [e])
+}
+
+function g() {
   let e = (0, i.bG)([s.A], () => s.A.getLinkCode()),
     t = (0, i.bG)([a.default], () => a.default.getCurrentUser());
   return null == e || null == t ? null : (0, u.jZ)(t.id, e)
 }
 
-function g() {
-  let e = (0, c.A)(),
+function E() {
+  let e = (0, l.A)(),
     t = p(),
     n = e ? u.Y7 : u.kp;
   return t.length >= n
 }
 
-function E() {
+function y() {
   let e = (0, i.bG)([a.default], () => a.default.getCurrentUser()),
     t = (0, i.bG)([s.A], () => s.A.getLinkedUsers());
   return null == e ? 0 : Object.values(t).filter(t => null != t && t.link_status === u.Ef.PENDING && e.id !== t.requestor_id).length
 }
 
-function y() {
+function b() {
   return p().length
 }
 
-function b(e) {
-  let t = (0, l.k)(),
+function O(e) {
+  let t = (0, c.k)(),
     n = (0, i.bG)([s.A], () => null == t ? null : s.A.getRangeStartTimestamp());
   return null == n ? null : (0, o.i6)(new Date(n).getTime(), () => e, 7)
 }
 
-function O(e, t) {
+function v(e, t) {
   let n = (0, i.bG)([s.A], () => s.A.getLinkTimestamp(e));
   return null != n ? (0, o.mV)(Date.parse(n), t === u.Ef.PENDING ? u.lu : u.dI) : null
 }

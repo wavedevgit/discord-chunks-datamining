@@ -10,11 +10,11 @@ var Chunk417597 = require("./417597.js"),
   Chunk287809 = require("./287809.js"),
   Chunk842144 = require("./842144.js"),
   Chunk695515 = require("./695515.js"),
-  Chunk945276 = require("./945276.js");
+  Chunk438732 = require("./438732.js");
 let l = () => {
     let e = (0, o.A)();
     return (0, r.bG)([s.A, i.default], () => {
-      if (!e) return i.default.getCurrentUser();
+      if (true !== e) return i.default.getCurrentUser();
       let t = s.A.getSelectedTeenId();
       if (null !== t) return i.default.getUser(t)
     })
