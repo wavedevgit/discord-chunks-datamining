@@ -17,9 +17,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk975807 = require("./975807.js"),
   Chunk151252 = require("./151252.js"),
   Chunk954571 = require("./954571.js"),
-  Chunk216456 = require("./216456.js"),
   Chunk859703 = require("./859703.js"),
   Chunk341915 = require("./341915.js"),
+  Chunk590202 = require("./590202.js"),
   Chunk545986 = require("./545986.jsx"),
   Chunk654487 = require("./654487.js"),
   Chunk652215 = require("./652215.js"),
@@ -104,9 +104,9 @@ function T(e) {
     e.contentRect.width < 500 ? w("display-md") : w("display-lg")
   }, []), R = (0, d.w)(L, [], {
     fireOnMount: true
-  }), D = (0, c.bG)([A.A], () => A.A.quests);
+  }), D = (0, c.bG)([m.A], () => m.A.quests);
   return i.useEffect(() => {
-    f.default.track(O.HAw.QUEST_CONTENT_VIEWED, C(S({}, (0, m.fF)(_.uF.QUEST_HOME_TAKEOVER)), {
+    f.default.track(O.HAw.QUEST_CONTENT_VIEWED, C(S({}, (0, _.fF)(A.uF.QUEST_HOME_TAKEOVER)), {
       quest_id: t.campaignId,
       is_targeted: false
     }))
@@ -157,10 +157,10 @@ function T(e) {
               onClick: () => {
                 (0, h.A)(t.ctaSponsorUrl.url), f.default.track(O.HAw.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
-                  cta_name: m.Cy.OPEN_GAME_LINK,
+                  cta_name: _.Cy.OPEN_GAME_LINK,
                   click_id: (0, o.A)(),
                   is_targeted: false
-                }, (0, m.fF)(_.uF.QUEST_HOME_TAKEOVER)))
+                }, (0, _.fF)(A.uF.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: t.ctaSponsorUrl.title,
@@ -175,10 +175,10 @@ function T(e) {
                   })
                 }), f.default.track(O.HAw.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
-                  cta_name: m.Cy.LEARN_MORE,
+                  cta_name: _.Cy.VIEW_QUESTS,
                   click_id: (0, o.A)(),
                   is_targeted: false
-                }, (0, m.fF)(_.uF.QUEST_HOME_TAKEOVER)))
+                }, (0, _.fF)(A.uF.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: e.title,

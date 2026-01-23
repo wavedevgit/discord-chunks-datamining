@@ -57,13 +57,20 @@ function d(e, t) {
   }), e
 }
 async function f() {
-  return (await i.Bo.post({
+  let {
+    challenge: e,
+    ticket: t
+  } = (await i.Bo.post({
     url: o.Rsh.WEBAUTHN_CONDITIONAL_UI_CHALLENGE,
     headers: {
       authorization: ""
     },
     rejectWithError: false
-  })).body
+  })).body;
+  return {
+    challenge: e,
+    ticket: t
+  }
 }
 async function p() {
   let {

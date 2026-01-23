@@ -89,6 +89,7 @@ class _ extends(r = Chunk64700.PureComponent) {
           }), p)
         },
         children: (0, i.jsx)(c.A, {
+          className: d.YZ,
           sliderClassName: a,
           type: c.A.Types.VOLUME,
           value: m / h,

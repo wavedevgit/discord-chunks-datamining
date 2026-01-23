@@ -169,7 +169,6 @@ function E() {
     targetElementRef: e,
     popoutPosition: "right",
     popoutAlign: "top",
-    dialogClassName: j.T8,
     children: (t, n, l) => (0, r.jsx)(x, {
       ref: e,
       selectedOverride: n,

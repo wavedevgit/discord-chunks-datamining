@@ -9,9 +9,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk829219 = require("./829219.js"),
-  Chunk216456 = require("./216456.js"),
   Chunk859703 = require("./859703.js"),
   Chunk890687 = require("./890687.js"),
+  Chunk590202 = require("./590202.js"),
   Chunk792620 = require("./792620.js"),
   Chunk545986 = require("./545986.jsx"),
   Chunk654487 = require("./654487.js"),
@@ -39,16 +39,16 @@ function m(e) {
     case i.n.ACHIEVEMENT_IN_ACTIVITY:
     case i.n.PLAY_ACTIVITY:
     case i.n.WATCH_VIDEO:
-      return l.Cy.START_QUEST;
+      return u.Cy.START_QUEST;
     default:
-      return l.Cy.ACCEPT_QUEST
+      return u.Cy.ACCEPT_QUEST
   }
 }
 
 function g(e, t) {
   let {
     launchInGameActivity: n
-  } = (0, u.zW)(t);
+  } = (0, c.zW)(t);
   if ((0, d.BS)(t)) return () => {
     (0, f.Fy)(t)
   };
@@ -91,20 +91,20 @@ let y = function(e) {
     taskType: n,
     size: i = "sm",
     preClickCallback: o,
-    analyticsCtxQuestContent: l,
+    analyticsCtxQuestContent: c,
     analyticsCtxSourceQuestContent: u,
     analyticsCtxQuestContentPosition: d,
     analyticsCtxQuestContentRowIndex: p
   } = e, _ = {
-    questContent: l,
+    questContent: c,
     questContentCTA: m(n),
     sourceQuestContent: u,
     questContentPosition: d,
     questContentRowIndex: p
   }, y = t.id, {
     isEnrolling: b
-  } = (0, a.cf)([c.A], () => ({
-    isEnrolling: c.A.isEnrolling(y)
+  } = (0, a.cf)([l.A], () => ({
+    isEnrolling: l.A.isEnrolling(y)
   }), [y]), O = (0, f.Oz)(t), v = g(n, t), A = h(n, t.config.features), I = E(n, t, _, null != v ? v : true);
   return (0, r.jsx)(s.Button, {
     size: i,

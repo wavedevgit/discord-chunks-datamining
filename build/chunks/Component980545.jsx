@@ -14,8 +14,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk736653 = require("./736653.js"),
   Chunk12901 = require("./12901.js"),
   Chunk954571 = require("./954571.js"),
-  Chunk216456 = require("./216456.js"),
   Chunk341915 = require("./341915.js"),
+  Chunk590202 = require("./590202.js"),
   Chunk545986 = require("./545986.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
@@ -52,12 +52,12 @@ function A(e) {
     backgroundImage: "url(".concat(v, ")")
   }), []), b = i.useCallback(() => {
     (0, d.default)(), (0, h.navigateToQuestHome)({
-      fromContent: _.uF.QUEST_HOME_MOVE_CALLOUT
+      fromContent: p.uF.QUEST_HOME_MOVE_CALLOUT
     }), f.default.track(m.HAw.QUEST_CONTENT_CLICKED, O({
-      cta_name: p.Cy.VIEW_QUESTS,
+      cta_name: _.Cy.VIEW_QUESTS,
       click_id: (0, o.A)(),
       is_targeted: false
-    }, (0, p.fF)(_.uF.QUEST_HOME_MOVE_CALLOUT)))
+    }, (0, _.fF)(p.uF.QUEST_HOME_MOVE_CALLOUT)))
   }, []);
   return (0, r.jsx)("div", {
     className: s()(E.kL, {

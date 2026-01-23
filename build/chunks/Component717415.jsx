@@ -16,10 +16,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
   Chunk770178 = require("./770178.js"),
   Chunk765548 = require("./765548.js"),
-  Chunk906822 = require("./906822.jsx"),
   Chunk859703 = require("./859703.js"),
   Chunk341915 = require("./341915.js"),
   Chunk890687 = require("./890687.js"),
+  Chunk971649 = require("./971649.js"),
   Chunk792620 = require("./792620.js"),
   Chunk753386 = require("./753386.js"),
   Chunk73473 = require("./73473.js"),
@@ -81,12 +81,12 @@ function L(e) {
     transitionState: o,
     onClose: s,
     quest: u,
-    autoplay: v,
-    videoSessionId: E,
+    autoplay: p,
+    videoSessionId: v,
     impressionRef: y,
     parentModalOpenStartClockTime: A,
     sourceQuestContent: I
-  } = e, L = (0, h.Yh)(u), R = (0, g.LS)(u), k = (0, p.go)(), [M, V] = l.useState(L.progressSeconds), [Q, U] = l.useState(142), F = null == (n = u.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.n.WATCH_VIDEO];
+  } = e, L = (0, h.Yh)(u), R = (0, E.LS)(u), k = (0, g.go)(), [M, V] = l.useState(L.progressSeconds), [Q, U] = l.useState(142), F = null == (n = u.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.n.WATCH_VIDEO];
   a()(null != F, "VideoQuestModal: videoTask must not be null");
   let B = (0, b.eG)(F),
     K = "portrait" === B,
@@ -103,10 +103,10 @@ function L(e) {
     W = l.useMemo(() => ({
       quest: u,
       sourceQuestContent: I,
-      videoSessionId: E,
+      videoSessionId: v,
       isPortrait: K,
       onClose: s
-    }), [u, I, E, K, s]);
+    }), [u, I, v, K, s]);
   return (0, r.jsx)(P.Provider, {
     value: W,
     children: (0, r.jsxs)(d.EOs, {
@@ -146,7 +146,7 @@ function L(e) {
               videoTask: F,
               parentTransitionState: o,
               onOptimisticProgressUpdate: V,
-              autoplay: v,
+              autoplay: p,
               performanceClockStartTime: A,
               orientation: B
             }), K ? (0, r.jsxs)("div", {
@@ -212,14 +212,14 @@ function R(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
     return o
-  }(e, ["questId", "overrideQuest", "autoplay", "openStartClockTime"]), a = (0, u.bG)([v.A], () => v.A.getQuest(t)), c = (0, u.bG)([v.A], () => v.A.getQuestConfig(t)), d = null != n ? n : a, f = null != n ? n.config : c, m = l.useMemo(() => null != f ? {
+  }(e, ["questId", "overrideQuest", "autoplay", "openStartClockTime"]), a = (0, u.bG)([p.A], () => p.A.getQuest(t)), c = (0, u.bG)([p.A], () => p.A.getQuestConfig(t)), d = null != n ? n : a, f = null != n ? n.config : c, m = l.useMemo(() => null != f ? {
     questConfig: f
   } : null, [f]);
   return null != d && null != f && null != m ? (0, r.jsx)(I.Provider, {
     value: m,
     children: (0, r.jsx)(y.R, {
       questOrQuests: d,
-      questContent: E.uF.VIDEO_MODAL,
+      questContent: v.uF.VIDEO_MODAL,
       minViewTimeSeconds: A.bq,
       trackGuildAndChannelMetadata: true,
       sourceQuestContent: s.sourceQuestContent,

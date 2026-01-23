@@ -14,9 +14,9 @@ require.d(exports, {
 var Chunk412703 = require("./412703.js"),
   Chunk544180 = require("./544180.js"),
   Chunk829219 = require("./829219.js"),
-  Chunk216456 = require("./216456.js"),
   Chunk859703 = require("./859703.js"),
   Chunk405670 = require("./405670.js"),
+  Chunk561844 = require("./561844.js"),
   Chunk710969 = require("./710969.js"),
   Chunk792620 = require("./792620.js"),
   Chunk652215 = require("./652215.js"),
@@ -55,12 +55,12 @@ function y(e) {
     questId: r,
     sourceQuestContent: a,
     videoSessionId: c
-  } = e, u = l.Ay.getState().getVideoProgress(r);
+  } = e, u = o.Ay.getState().getVideoProgress(r);
   if (null == u) return;
-  let f = o.A.getQuest(r);
+  let f = s.A.getQuest(r);
   null != f && (null == (t = f.userStatus) ? true : t.enrolledAt) != null && (null == (n = f.userStatus) ? true : n.completedAt) == null && p(f, u.maxTimestampSec);
   let _ = g(u.maxTimestampSec, u.duration);
-  (0, s.av)({
+  (0, l.av)({
     questId: r,
     event: d.HAw.QUEST_VIDEO_PROGRESSED,
     properties: {
@@ -69,7 +69,7 @@ function y(e) {
       video_session_id: c
     },
     sourceQuestContent: a
-  }), (0, s.av)({
+  }), (0, l.av)({
     questId: r,
     event: d.HAw.QUEST_VIDEO_MODAL_CLOSED,
     properties: {

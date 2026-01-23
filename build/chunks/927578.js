@@ -4,7 +4,7 @@
 require.d(exports, {
   $Q: () => X,
   $k: () => ex,
-  Ay: () => tW,
+  Ay: () => tz,
   CC: () => S.CC,
   D8: () => en,
   Dd: () => ec,
@@ -30,10 +30,11 @@ require.d(exports, {
   RH: () => eo,
   TW: () => S.ki,
   Tm: () => e_,
-  To: () => tH,
+  To: () => tW,
   U8: () => J,
   UC: () => Q,
   Uf: () => eL,
+  VA: () => tH,
   YE: () => S.YE,
   YR: () => et,
   Zb: () => ev,
@@ -48,7 +49,7 @@ require.d(exports, {
   iv: () => tF,
   jh: () => eM,
   ji: () => eI,
-  k8: () => tB,
+  k8: () => tY,
   kX: () => eC,
   ki: () => eG,
   m6: () => ei,
@@ -62,7 +63,7 @@ require.d(exports, {
   sS: () => ej,
   tS: () => ez,
   tW: () => eQ,
-  x6: () => tY,
+  x6: () => tK,
   xq: () => ey,
   y8: () => K,
   ys: () => eO,
@@ -1676,26 +1677,54 @@ function tF(e) {
     return e + i * r
   }, 0)
 }
-
-function tB(e) {
-  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-  if (e.interval !== w.WT.YEAR) return;
-  let r = w.En[e.skuId];
-  if (null == r) return;
-  let i = K(r, false, t, n),
-    a = K(e.id, false, t, n);
-  if (0 !== i.amount) return Math.floor(100 * (1 - a.amount / (12 * i.amount)))
-}
+let tB = e => {
+  let {
+    subscriptionPlan: t,
+    isGift: n = false,
+    priceOptions: r = {}
+  } = e, i = w.En[t.skuId];
+  return null == i ? null : K(i, false, n, r)
+};
 
 function tH(e) {
-  return null == e ? 0 : Math.max((0, b.m_)(new Date, new Date(e)), 0)
+  let {
+    subscriptionPlan: t,
+    isGift: n = false,
+    priceOptions: r = {}
+  } = e;
+  if (t.interval === w.WT.DAY || t.interval === w.WT.MONTH && 1 === t.intervalCount) return null;
+  let i = tB({
+    subscriptionPlan: t,
+    isGift: n,
+    priceOptions: r
+  });
+  if (null == i) return null;
+  let a = t.interval === w.WT.MONTH ? t.intervalCount : 12 * t.intervalCount;
+  return i.amount * a
 }
 
 function tY(e) {
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
+  if (e.interval !== w.WT.YEAR) return;
+  let r = tB({
+    subscriptionPlan: e,
+    isGift: t,
+    priceOptions: n
+  });
+  if (null == r) return;
+  let i = K(e.id, false, t, n);
+  if (0 !== r.amount) return Math.floor(100 * (1 - i.amount / (12 * r.amount)))
+}
+
+function tW(e) {
+  return null == e ? 0 : Math.max((0, b.m_)(new Date, new Date(e)), 0)
+}
+
+function tK(e) {
   return Math.max(1, Math.ceil((0, b.c_)(new Date(e.currentPeriodEnd), new Date)))
 }
-let tW = Object.freeze({
+let tz = Object.freeze({
   isNewUser: tn,
   isPremiumAtLeast: Chunk474090.CC,
   isPremium: Chunk474090.ki,
@@ -1742,9 +1771,9 @@ let tW = Object.freeze({
   getPremiumGradientColor: tt,
   getUnactivatedFractionalPremiumHours: tV,
   castPremiumSubscriptionAsSkuId: tw,
-  calculateDiscountPercentageForYearlyPlan: tB,
-  getDaysSincePremium: tH,
-  getDaysRemainingUntilSubscriptionCurrentPeriodEnds: tY,
+  calculateDiscountPercentageForYearlyPlan: tY,
+  getDaysSincePremium: tW,
+  getDaysRemainingUntilSubscriptionCurrentPeriodEnds: tK,
   canUseAnimatedEmojis: tr,
   canUseEmojisEverywhere: ti,
   canUseSoundboardEverywhere: ta,

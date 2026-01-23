@@ -9,10 +9,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
   Chunk435371 = require("./435371.js"),
   Chunk736653 = require("./736653.js"),
-  Chunk216456 = require("./216456.js"),
-  Chunk906822 = require("./906822.jsx"),
   Chunk341915 = require("./341915.js"),
   Chunk579473 = require("./579473.js"),
+  Chunk590202 = require("./590202.js"),
+  Chunk971649 = require("./971649.js"),
   Chunk651892 = require("./651892.js"),
   Chunk901406 = require("./901406.js"),
   Chunk814793 = require("./814793.js"),
@@ -29,7 +29,7 @@ function N(e) {
     quest: t,
     sourceQuestContent: n,
     onLoadComplete: N
-  } = e, A = (0, o.Ay)(), b = (0, s.Mwr)(A) ? p.NJ.DARK : p.NJ.LIGHT, E = (0, x.wr)(t), w = (0, c.go)(), D = (0, _.E0)(t.config), L = r.useMemo(() => {
+  } = e, A = (0, o.Ay)(), b = (0, s.Mwr)(A) ? p.NJ.DARK : p.NJ.LIGHT, E = (0, x.wr)(t), w = (0, m.go)(), D = (0, _.E0)(t.config), L = r.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
     return null != n ? n : (0, _.pv)(t.config) !== a.Z.GAMEPLAY || t.config.features.includes(j.Li.NON_GAMING_PLAY_QUEST) || (0, _.ui)(t) ? C.intl.string(C.t.y8Xf3k) : C.intl.string(C.t["wirwN+"])
@@ -43,8 +43,8 @@ function N(e) {
     isShareable: D,
     questId: t.id,
     trackingCtx: r.useMemo(() => ({
-      content: u.uF.REWARD_MODAL,
-      ctaContent: d.Cy.REWARD_MODAL_COPY_LINK,
+      content: d.uF.REWARD_MODAL,
+      ctaContent: u.Cy.REWARD_MODAL_COPY_LINK,
       impressionId: w,
       sourceQuestContent: n
     }), [w, n])
@@ -73,7 +73,7 @@ function N(e) {
           alt: C.intl.formatToPlainString(C.t.rtm15P, {
             name: t.config.messages.gameTitle
           }),
-          src: (0, m.tW)(t, m.fY.LOGO_TYPE, b).url
+          src: (0, c.tW)(t, c.fY.LOGO_TYPE, b).url
         })
       })
     }), (0, i.jsxs)("div", {
@@ -100,7 +100,7 @@ function N(e) {
           alt: C.intl.formatToPlainString(C.t.rtm15P, {
             name: t.config.messages.gameTitle
           }),
-          src: (0, m.tW)(t, m.fY.GAME_TILE, b).url
+          src: (0, c.tW)(t, c.fY.GAME_TILE, b).url
         })
       })]
     }), (0, i.jsx)("div", {
@@ -123,8 +123,8 @@ function N(e) {
           text: E,
           onClick: () => {
             (0, f.pu)(t, {
-              content: u.uF.REWARD_MODAL,
-              ctaContent: d.Cy.OPEN_GAME_LINK,
+              content: d.uF.REWARD_MODAL,
+              ctaContent: u.Cy.OPEN_GAME_LINK,
               impressionId: w,
               sourceQuestContent: n
             })

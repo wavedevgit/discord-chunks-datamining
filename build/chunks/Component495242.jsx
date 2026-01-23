@@ -1,35 +1,36 @@
 /** Chunk was on 36054 **/
 /** chunk id: 495242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk780964 = require("./780964.js"),
   Chunk840065 = require("./840065.jsx"),
-  Chunk216456 = require("./216456.js"),
   Chunk341915 = require("./341915.js"),
+  Chunk18437 = require("./18437.js"),
+  Chunk590202 = require("./590202.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk805180 = require("./805180.js");
 
-function m(e) {
+function p(e) {
   let {
     text: t,
     quest: n,
-    sourceQuestContent: d
-  } = e, m = (0, s.Ut)();
+    sourceQuestContent: u
+  } = e, p = (0, o.Ut)();
   return (0, a.jsx)(l.DUT, {
-    className: u.Z0,
+    className: m.Z0,
     onClick: () => {
-      m({
+      p({
         questId: n.id,
-        questContent: o.uF.QUEST_BAR_V2,
-        questContentCTA: s.Cy.VIEW_CONSOLE_CONNECTIONS_LINK,
-        sourceQuestContent: d
+        questContent: s.uF.QUEST_BAR_V2,
+        questContentCTA: c.Cy.VIEW_CONSOLE_CONNECTIONS_LINK,
+        sourceQuestContent: u
       }), (0, i.openUserSettings)(r.X.CONNECTIONS_PANEL, {
-        section: c.nc_.CONNECTIONS
+        section: d.nc_.CONNECTIONS
       })
     },
     children: (0, a.jsx)(l.Text, {
@@ -41,26 +42,26 @@ function m(e) {
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     xboxAndPlaystationAccounts: t,
     quest: n,
     sourceQuestContent: l
   } = e;
-  return t.length > 0 ? (0, a.jsx)(m, {
-    text: d.intl.string(d.t["qiS+xj"]),
+  return t.length > 0 ? (0, a.jsx)(p, {
+    text: u.intl.string(u.t["qiS+xj"]),
     quest: n,
     sourceQuestContent: l
   }) : null
 }
 
-function h(e) {
+function x(e) {
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(l.Text, {
       color: "text-muted",
       variant: "text-xs/medium",
-      children: d.intl.string(d.t.EJFSvD)
-    }), (0, a.jsx)(p, function(e) {
+      children: u.intl.string(u.t.EJFSvD)
+    }), (0, a.jsx)(h, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           a = Object.keys(n);

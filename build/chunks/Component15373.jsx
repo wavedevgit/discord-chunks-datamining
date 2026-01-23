@@ -17,8 +17,13 @@ class f extends Chunk64700.PureComponent {
   componentDidMount() {
     null != this.props.paypalClient && o.Rz()
   }
+  componentDidUpdate(e) {
+    null == e.paypalClient && null != this.props.paypalClient && o.Rz()
+  }
   componentWillUnmount() {
-    o.gm().then(() => o.LR())
+    o.gm().then(() => {
+      null != c.A.getClient() && o.LR()
+    })
   }
   render() {
     let {

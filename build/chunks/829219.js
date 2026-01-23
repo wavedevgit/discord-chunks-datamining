@@ -42,13 +42,13 @@ var Chunk110259 = require("./110259.js"),
   Chunk954571 = require("./954571.js"),
   Chunk927813 = require("./927813.js"),
   Chunk499785 = require("./499785.js"),
-  Chunk216456 = require("./216456.js"),
   Chunk260364 = require("./260364.js"),
   Chunk869359 = require("./869359.js"),
   Chunk859703 = require("./859703.js"),
   Chunk341915 = require("./341915.js"),
   Chunk405670 = require("./405670.js"),
   Chunk579473 = require("./579473.js"),
+  Chunk561844 = require("./561844.js"),
   Chunk710969 = require("./710969.js"),
   Chunk229006 = require("./229006.js"),
   Chunk654487 = require("./654487.js"),
@@ -117,7 +117,7 @@ async function D(e) {
     let e = new s.A(r);
     if (429 === e.status) return {
       errorHints: [{
-        type: y.xv.RATE_LIMITED,
+        type: E.xv.RATE_LIMITED,
         message: T.intl.string(T.t.Whhv4w),
         connected_account_id: "",
         connected_account_type: ""
@@ -126,7 +126,7 @@ async function D(e) {
     let t = null != (n = e.getAnyErrorMessage()) ? n : T.intl.string(T.t.xSCvBf);
     return {
       errorHints: [{
-        type: y.xv.GENERIC,
+        type: E.xv.GENERIC,
         message: t,
         connected_account_id: "",
         connected_account_type: ""
@@ -150,7 +150,7 @@ async function L() {
   })
 }
 async function j() {
-  if (!E.A.isFetchingCurrentQuests) {
+  if (!g.A.isFetchingCurrentQuests) {
     a.h.dispatch({
       type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
     });
@@ -233,14 +233,14 @@ var U = function(e) {
   return e.SUCCESS = "success", e.CAPTCHA_FAILED = "captcha_failed", e.UNKNOWN_ERROR = "unknown_error", e.PREVIOUS_IN_FLIGHT_REQUEST = "previous_in_flight_request", e
 }({});
 async function G(e, t) {
-  if (null != t.questContentCTA && (0, h.Y5)({
+  if (null != t.questContentCTA && (0, O.Y5)({
       questId: e,
       questContent: t.questContent,
       questContentCTA: t.questContentCTA,
       questContentPosition: t.questContentPosition,
       questContentRowIndex: t.questContentRowIndex,
       sourceQuestContent: t.sourceQuestContent
-    }), e === I.Fw && (0, d.u)(), E.A.isEnrolling(e)) return {
+    }), e === I.Fw && (0, d.u)(), g.A.isEnrolling(e)) return {
     type: "previous_in_flight_request"
   };
   a.h.dispatch({
@@ -278,7 +278,7 @@ async function G(e, t) {
   }
 }
 async function V(e, t, n) {
-  if (!E.A.isClaimingReward(e)) {
+  if (!g.A.isClaimingReward(e)) {
     a.h.dispatch({
       type: "QUESTS_CLAIM_REWARD_BEGIN",
       questId: e
@@ -317,7 +317,7 @@ async function V(e, t, n) {
   }
 }
 async function F(e) {
-  if (!E.A.isFetchingRewardCode(e)) {
+  if (!g.A.isFetchingRewardCode(e)) {
     a.h.dispatch({
       type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
       questId: e
@@ -342,7 +342,7 @@ async function F(e) {
   }
 }
 async function B(e, t) {
-  let n = E.A.isDismissingContent(e),
+  let n = g.A.isDismissingContent(e),
     r = (0, v.vy)(t);
   if (!n && r) {
     a.h.dispatch({
@@ -455,7 +455,7 @@ function q(e, t) {
   })
 }
 async function Z() {
-  if (!E.A.isFetchingClaimedQuests) {
+  if (!g.A.isFetchingClaimedQuests) {
     a.h.dispatch({
       type: "QUESTS_FETCH_CLAIMED_QUESTS_BEGIN"
     });
@@ -493,17 +493,17 @@ function Q(e) {
   })
 }
 async function J(e, t) {
-  var n, r, c, d, p, _, h, E;
+  var n, r, c, d, p, _, g, y;
   let b = Date.now();
-  g.A.recordQuestRequestAttempt("/quests/decision", t, e), a.h.dispatch({
+  m.A.recordQuestRequestAttempt("/quests/decision", t, e), a.h.dispatch({
     type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN",
     placement: e
   });
   try {
     let s = await (0, l.Ht)(),
-      E = await (0, o.sN)(),
+      y = await (0, o.sN)(),
       O = (await i.Bo.get({
-        url: S.Rsh.QUEST_FETCH_QUEST_TO_DELIVER(e, null == s ? true : s.uuid, E.uuid),
+        url: S.Rsh.QUEST_FETCH_QUEST_TO_DELIVER(e, null == s ? true : s.uuid, y.uuid),
         rejectWithError: false
       })).body,
       v = O.quest,
@@ -517,7 +517,7 @@ async function J(e, t) {
           ad_set_id: null == (d = O.ad_identifiers) ? true : d.ad_set_id,
           campaign_id: null == (p = O.ad_identifiers) ? true : p.campaign_id,
           creative_id: null == (_ = O.ad_identifiers) ? true : _.creative_id,
-          creative_type: null == (h = O.ad_identifiers) ? true : h.creative_type,
+          creative_type: null == (g = O.ad_identifiers) ? true : g.creative_type,
           decision_id: O.request_id,
           is_targeted: null != O.ad_identifiers
         },
@@ -529,22 +529,22 @@ async function J(e, t) {
         responseTtlSeconds: O.response_ttl_seconds,
         placement: e,
         fetchedAt: b
-      }), g.A.recordQuestRequestApiResponse("/quests/decision", {
+      }), m.A.recordQuestRequestApiResponse("/quests/decision", {
         wasSuccessful: true,
         adRequestId: String(O.request_id),
         currentQuestId: null != (n = null == I ? true : I.id) ? n : null,
         currentFetchedAt: b
       }), null == I) return;
-    e === y.yW.DESKTOP_ACCOUNT_PANEL_AREA && m.A.startTracking(I.id), f.default.track(S.HAw.QUEST_DECISION_RECEIVED, R(N({}, (0, u.A)()), {
+    e === E.yW.DESKTOP_ACCOUNT_PANEL_AREA && h.A.startTracking(I.id), f.default.track(S.HAw.QUEST_DECISION_RECEIVED, R(N({}, (0, u.A)()), {
       quest_id: I.id,
       caller_source: t,
       ad_request_id: String(O.request_id)
     }))
   } catch (n) {
-    g.A.recordQuestRequestApiResponse("/quests/decision", {
+    m.A.recordQuestRequestApiResponse("/quests/decision", {
       wasSuccessful: false
     }), f.default.track(S.HAw.QUEST_DECISION_ROUNDTRIP_ERROR, R(N({}, (0, u.A)()), {
-      reason: null != (E = null == n ? true : n.message) ? E : null,
+      reason: null != (y = null == n ? true : n.message) ? y : null,
       api_error: new s.A(n).getAnyErrorMessage(),
       caller_source: t
     })), a.h.dispatch({
@@ -618,30 +618,30 @@ async function et(e, t) {
 }
 async function en(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = (0, O.tW)(e, O.fY.VIDEO_PLAYER_TRANSCRIPT, true, t);
-  if (null == n) return void b.Ay.getState().setTranscriptAsset({
+    n = (0, b.tW)(e, b.fY.VIDEO_PLAYER_TRANSCRIPT, true, t);
+  if (null == n) return void y.Ay.getState().setTranscriptAsset({
     questId: e.id,
-    fetchStatus: b.Lx.FAILURE
+    fetchStatus: y.Lx.FAILURE
   });
-  b.Ay.getState().setTranscriptAsset({
+  y.Ay.getState().setTranscriptAsset({
     questId: e.id,
-    fetchStatus: b.Lx.FETCHING
+    fetchStatus: y.Lx.FETCHING
   });
   try {
     let t = await i.Bo.get({
       url: n.url,
       rejectWithError: true
     });
-    b.Ay.getState().setTranscriptAsset({
+    y.Ay.getState().setTranscriptAsset({
       questId: e.id,
-      fetchStatus: b.Lx.SUCCESS,
+      fetchStatus: y.Lx.SUCCESS,
       text: t.text,
       url: n.url
     })
   } catch (t) {
-    b.Ay.getState().setTranscriptAsset({
+    y.Ay.getState().setTranscriptAsset({
       questId: e.id,
-      fetchStatus: b.Lx.FAILURE
+      fetchStatus: y.Lx.FAILURE
     })
   }
 }
@@ -653,7 +653,7 @@ async function er(e) {
   return (0, A.Yn)(t.body)
 }
 async function ei(e) {
-  if (!E.A.isFetchingQuestPreview(e)) {
+  if (!g.A.isFetchingQuestPreview(e)) {
     a.h.dispatch({
       type: "QUESTS_FETCH_PREVIEW_BEGIN",
       questId: e
@@ -679,19 +679,19 @@ async function ei(e) {
 }
 let ea = 5 * Chunk927813.A.Millis.MINUTE;
 async function es() {
-  if (E.A.isFetchingQuestHomeTakeover()) return;
-  let e = E.A.getLastFetchedQuestHomeTakeover();
+  if (g.A.isFetchingQuestHomeTakeover()) return;
+  let e = g.A.getLastFetchedQuestHomeTakeover();
   if (!(null != e && Date.now() - e <= ea)) {
     a.h.dispatch({
       type: "QUESTS_FETCH_QUEST_HOME_TAKEOVER_BEGIN"
     });
     try {
-      let e = [y.gh.QUEST_HOME_BANNER],
+      let e = [E.gh.QUEST_HOME_BANNER],
         t = await i.Bo.get({
           url: S.Rsh.QUEST_PLACEMENT,
           query: {
             placements: e,
-            platform: y.vg.WEB
+            platform: E.vg.WEB
           },
           rejectWithError: false
         });

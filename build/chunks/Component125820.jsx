@@ -14,8 +14,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk10088 = require("./10088.js"),
   Chunk976860 = require("./976860.js"),
   Chunk829219 = require("./829219.js"),
-  Chunk216456 = require("./216456.js"),
   Chunk341915 = require("./341915.js"),
+  Chunk561844 = require("./561844.js"),
   Chunk545986 = require("./545986.jsx"),
   Chunk654487 = require("./654487.js"),
   Chunk652215 = require("./652215.js"),
@@ -42,11 +42,11 @@ function f(e) {
     }, [t, e]), s
   }(l);
   r.useEffect(() => {
-    T || (null == t ? ((0, o.av)({
+    T || (null == t ? ((0, g.av)({
       questId: l,
       event: p.HAw.QUEST_SHARE_LINK_DEEP_LINKED_INTO_DESKTOP_CLIENT,
       properties: {},
-      sourceQuestContent: g.uF.QUEST_HOME_DESKTOP
+      sourceQuestContent: o.uF.QUEST_HOME_DESKTOP
     }), _.A.openNativeAppModal("quests", p.e$_.DEEP_LINK, {
       type: E.XK.QUEST_HOME,
       params: {

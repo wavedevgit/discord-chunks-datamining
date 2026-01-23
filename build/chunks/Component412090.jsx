@@ -2,12 +2,14 @@
 /** chunk id: 412090, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => w
+  _: () => j
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
   Chunk854354 = require("./854354.js"),
+  Chunk93159 = require("./93159.js"),
   Chunk270537 = require("./270537.jsx"),
+  Chunk241989 = require("./241989.jsx"),
   Chunk669510 = require("./669510.jsx"),
   Chunk234419 = require("./234419.js"),
   Chunk446929 = require("./446929.jsx"),
@@ -16,12 +18,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk494230 = require("./494230.jsx"),
   Chunk299301 = require("./299301.jsx"),
   Chunk927578 = require("./927578.js"),
+  Chunk580630 = require("./580630.js"),
+  Chunk427262 = require("./427262.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk756366 = require("./756366.js"),
   Chunk220264 = require("./220264.js");
 
-function y(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,20 +34,20 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,21 +58,12 @@ function O(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = (e, t) => {
-    if (1 === t) switch (e) {
-      case h.WT.MONTH:
-        return m.intl.string(g.default.ajn5LL);
-      case h.WT.YEAR:
-        return m.intl.string(g.default.FNijW7)
-    }
-    return m.intl.string(g.default.jxUJkZ)
-  },
-  I = (e, t, n) => {
+let C = (e, t, n) => {
     var r;
     return {
       id: null != (r = e.discount_id) ? r : t,
@@ -76,7 +71,35 @@ let A = (e, t) => {
       amount: -e.amount
     }
   },
-  S = (e, t) => {
+  N = e => {
+    let {
+      interval: t
+    } = e, n = (0, m.m6)(e.id);
+    switch (t) {
+      case y.WT.MONTH:
+        let r = b.intl.string(O.default.ZnoRKt);
+        return n === y.PremiumTypes.TIER_0 ? b.intl.formatToPlainString(O.default.Z9mu9q, {
+          timeInterval: r
+        }) : b.intl.formatToPlainString(O.default["8Jt4Dw"], {
+          timeInterval: r
+        });
+      case y.WT.YEAR:
+        let i = b.intl.string(O.default.Xrg8aC);
+        return n === y.PremiumTypes.TIER_0 ? b.intl.formatToPlainString(O.default.Z9mu9q, {
+          timeInterval: i
+        }) : b.intl.formatToPlainString(O.default["8Jt4Dw"], {
+          timeInterval: i
+        });
+      case y.WT.DAY:
+        let a = b.intl.string(O.default.WmjxYl);
+        return n === y.PremiumTypes.TIER_0 ? b.intl.formatToPlainString(O.default.Z9mu9q, {
+          timeInterval: a
+        }) : b.intl.formatToPlainString(O.default["8Jt4Dw"], {
+          timeInterval: a
+        })
+    }
+  },
+  w = (e, t) => {
     let {
       isPrepaidPaymentSource: n,
       invoiceSummaryTypeWithPreview: r,
@@ -86,31 +109,31 @@ let A = (e, t) => {
       newPlanInvoiceItem: s,
       basePlanFullAmount: o,
       invoiceAdjustmentDisplayItems: l
-    } = (0, d.qi)(e, i), c = r.type === p.N$.PREMIUM_DEFAULT ? o : true, {
+    } = (0, p.qi)(e, i), c = r.type === h.N$.PREMIUM_DEFAULT ? o : true, {
       label: u,
-      amount: f,
-      amountWithoutDiscount: _,
-      subscriptionDiscount: h,
-      entitlementDiscount: E,
-      trialDiscount: y
-    } = (0, d.Ol)(s, {
+      amount: d,
+      amountWithoutDiscount: f,
+      subscriptionDiscount: _,
+      entitlementDiscount: m,
+      trialDiscount: g
+    } = (0, p.Ol)(s, {
       overrideAmount: c,
       subscriptionPlan: i,
       premiumTrialOffer: a,
       isPrepaidPaymentSource: n,
       currency: e.currency
-    }), b = null != h || null != E || null != y, O = [{
+    }), E = null != _ || null != m || null != g, y = [{
       id: s.id,
       label: u,
-      amount: b ? _ : f
+      amount: E ? f : d
     }, ...l.map(e => ({
       id: e.id,
       label: e.label,
       amount: e.amount
     }))];
-    return null != y ? O.push(I(y, "trial-discount", m.intl.string(g.default["7LeLN4"]))) : (null != h && O.push(I(h, "subscription-discount", m.intl.string(g.default["9yHcmL"]))), null != E && O.push(I(E, "entitlement-discount", m.intl.string(m.t.A7Hpfs)))), O
+    return null != g ? y.push(C(g, "trial-discount", b.intl.string(O.default["7LeLN4"]))) : (null != _ && y.push(C(_, "subscription-discount", b.intl.string(O.default["9yHcmL"]))), null != m && y.push(C(m, "entitlement-discount", b.intl.string(b.t.A7Hpfs)))), y
   },
-  T = (e, t) => {
+  R = (e, t) => {
     let {
       isCustomGift: n,
       isPrepaidPaymentSource: r,
@@ -118,142 +141,187 @@ let A = (e, t) => {
     } = t;
     return [{
       id: "premium-gift-line-item",
-      label: (0, u.Lw)(i, {
+      label: (0, f.Lw)(i, {
         isCustomGift: n,
         isPrepaidPaymentSource: r
       }),
       amount: e.total - e.tax
     }]
   },
-  C = e => {
+  P = e => {
     let {
       isPrepaidPaymentSource: t,
       invoiceSummaryTypeWithPreview: n,
       subscriptionPlan: i,
-      premiumTrialOffer: o,
+      premiumTrialOffer: s,
       isCustomGift: l
     } = e, {
       invoicePreview: c
-    } = n, u = n.type === p.N$.PREMIUM_GIFT ? T(c, {
+    } = n, u = n.type === h.N$.PREMIUM_GIFT ? R(c, {
       isCustomGift: l,
       isPrepaidPaymentSource: t,
       subscriptionPlan: i
-    }) : S(c, {
+    }) : w(c, {
       isPrepaidPaymentSource: t,
       invoiceSummaryTypeWithPreview: n,
       subscriptionPlan: i,
-      premiumTrialOffer: o
+      premiumTrialOffer: s
     }), d = (0, a.l)(c, {
       manualLineItems: u,
       addTaxLineItem: true
     });
-    return (0, r.jsx)(s.V, {
-      label: m.intl.string(g.default.eoXh7B),
+    return (0, r.jsx)(o.V, {
+      label: b.intl.string(O.default.eoXh7B),
       lineItems: d,
-      currency: c.currency
+      currency: c.currency,
+      totalDueLabel: b.intl.string(O.default.R0cZsM)
     })
   },
-  N = (e, t) => {
-    let n = (0, d.Q8)(e),
+  D = (e, t, n) => {
+    let r = (0, p.Q8)(t, e),
       {
-        intervalType: r,
-        intervalCount: i
-      } = (0, _.Ge)(e),
-      a = e.currency;
+        intervalType: i,
+        intervalCount: a
+      } = (0, m.Ge)(t),
+      s = t.currency;
     return {
-      lineItems: n.map(e => {
+      lineItems: r.map(e => {
         let {
-          subscriptionPlanPrice: n
+          subscriptionPlanPrice: t,
+          showGuildSubscriptionAdjustmentTooltip: r
         } = e, {
-          label: r
-        } = (0, d.Ol)(e, {
-          premiumTrialOffer: t,
-          currency: a
-        });
+          label: i
+        } = (0, p.Ol)(e, {
+          premiumTrialOffer: n,
+          currency: s
+        }), a = r ? b.intl.format(b.t.UDop9c, {}) : true;
         return {
           id: e.id,
-          label: r,
-          amount: n,
-          tooltip: e.tooltipText
+          label: i,
+          amount: t,
+          tooltip: a
         }
       }),
-      intervalType: r,
-      intervalCount: i,
-      currency: a,
-      label: m.intl.format(g.default["57B1ks"], {
-        renewalDate: e.subscriptionPeriodEnd
+      intervalType: i,
+      intervalCount: a,
+      currency: s,
+      label: b.intl.format(O.default["57B1ks"], {
+        renewalDate: t.subscriptionPeriodEnd
       }),
-      totalLineItemLabel: A(r, i)
+      totalLineItemLabel: L(i, a)
     }
   },
-  w = e => {
+  x = (e, t, n) => {
+    var i;
+    let {
+      isPrepaidPaymentSource: a,
+      giftRecipient: o
+    } = n, l = e.type === h.N$.PREMIUM_GIFT, {
+      invoicePreview: c
+    } = e, u = l ? N(t) : (0, m.Mn)(t.id, false, a), d = l && null != o ? {
+      username: E.Ay.getUserTag(o, {
+        identifiable: "never"
+      }),
+      avatarUrl: o.getAvatarURL(true, 16),
+      nickname: E.Ay.getName(o)
+    } : true, f = null == o ? b.intl.string(O.default.AM9XGb) : "", _ = l ? f : b.intl.string(O.default["2zUa6I"]), v = (0, m.m6)(t.id) === y.PremiumTypes.TIER_0 ? (0, r.jsx)(s.DH, {}) : (0, r.jsx)(s.JW, {}), {
+      subscriptionPlanInvoiceItem: A
+    } = (0, p.Sb)(c, t), I = null != (i = l ? null == A ? true : A.amount : null == A ? true : A.subscriptionPlanPrice) ? i : 0, S = (0, g.$g)(I, c.currency);
+    return {
+      label: u,
+      description: _,
+      price: e.type === h.N$.PREMIUM_GIFT ? S : (0, g.CE)(S, t.interval, t.intervalCount),
+      gift: d,
+      graphic: v
+    }
+  },
+  L = (e, t) => {
+    if (1 === t) switch (e) {
+      case y.WT.MONTH:
+        return b.intl.string(O.default.ajn5LL);
+      case y.WT.YEAR:
+        return b.intl.string(O.default.FNijW7)
+    }
+    return b.intl.string(O.default.jxUJkZ)
+  },
+  j = e => {
     let {
       referralTrialOfferId: t,
       selectedPlanId: n,
       priceOptions: a
     } = e, {
       error: s,
-      isGift: u,
-      oneTimePurchaseNitroGiftInvoicePreview: d,
-      subscriptionPeriodEnd: _,
-      trialInvoicePreview: h,
-      proratedInvoicePreview: g,
+      isGift: o,
+      giftRecipient: f,
+      oneTimePurchaseNitroGiftInvoicePreview: p,
+      subscriptionPeriodEnd: m,
+      trialInvoicePreview: g,
+      proratedInvoicePreview: E,
       renewalInvoicePreview: y,
       planSwitchLoading: O,
       plan: A,
-      isPrepaid: I,
-      discountInvoiceItems: S,
-      premiumPlanOptions: T,
+      isPrepaid: S,
+      discountInvoiceItems: C,
+      premiumPlanOptions: N,
       shouldAllowPlanSelect: w,
       isCustomGift: R
-    } = (0, f.L)(e), P = (0, p.yf)({
+    } = (0, _.L)(e), L = (0, h.yf)({
       error: s,
-      isGift: u,
-      oneTimePurchaseNitroGiftInvoicePreview: d,
-      trialInvoicePreview: h,
-      proratedInvoicePreview: g,
+      isGift: o,
+      oneTimePurchaseNitroGiftInvoicePreview: p,
+      trialInvoicePreview: g,
+      proratedInvoicePreview: E,
       renewalInvoicePreview: y,
       planSwitchLoading: O
-    }), D = (0, l.V)(t), x = (0, c.RO)({
+    }), j = (0, u.V)(t), M = (0, d.RO)({
       selectedPlanId: n,
       priceOptions: a,
-      planOptions: T,
+      planOptions: N,
       eligibleForMultiMonthPlans: false,
-      subscriptionPeriodEnd: _,
-      discountInvoiceItems: S
-    }), L = (0, r.jsx)(c.fJ, v(b({
-      planOptions: T
-    }, x), {
+      subscriptionPeriodEnd: m,
+      discountInvoiceItems: C
+    }), k = (0, r.jsx)(d.fJ, T(I({
+      planOptions: N
+    }, M), {
       shouldUseUnifiedCheckoutUI: true
     }));
-    if (null == P || P.type === p.N$.LOADING) return null;
-    let j = (0, r.jsx)(C, {
-        invoiceSummaryTypeWithPreview: P,
+    if (null == L || L.type === h.N$.LOADING) return null;
+    let U = (0, r.jsx)(P, {
+        invoiceSummaryTypeWithPreview: L,
         subscriptionPlan: A,
-        isPrepaidPaymentSource: I,
-        premiumTrialOffer: D,
+        isPrepaidPaymentSource: S,
+        premiumTrialOffer: j,
         isCustomGift: R
       }),
-      M = null;
-    if (!I && (P.type === p.N$.PREMIUM_DEFAULT || P.type === p.N$.PREMIUM_WITH_TRIAL) && null != P.renewalInvoicePreview) {
-      let e = N(P.renewalInvoicePreview, D);
-      M = (0, r.jsx)(o._, b({}, e))
+      G = null;
+    if (!S && (L.type === h.N$.PREMIUM_DEFAULT || L.type === h.N$.PREMIUM_WITH_TRIAL) && null != L.renewalInvoicePreview) {
+      let e = D(L.invoicePreview, L.renewalInvoicePreview, j);
+      G = (0, r.jsx)(c._, I({}, e))
     }
+    let V = x(L, A, {
+        isPrepaidPaymentSource: S,
+        giftRecipient: f
+      }),
+      F = w ? k : (0, r.jsx)(l.f7, I({}, V));
     return (0, r.jsxs)("div", {
-      children: [w ? L : null, (0, r.jsx)("div", {
+      children: [(0, r.jsx)("div", {
+        style: {
+          height: 24
+        }
+      }), F, (0, r.jsx)("div", {
         style: {
           height: 12
         }
-      }), M, (0, r.jsx)(i.Text, {
+      }), G, (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-strong",
-        className: E.S,
-        children: m.intl.string(m.t["YH7B+D"])
+        className: v.S,
+        children: b.intl.string(b.t["YH7B+D"])
       }), (0, r.jsx)("div", {
         style: {
           height: 24
         }
-      }), j, (0, r.jsx)("div", {
+      }), U, (0, r.jsx)("div", {
         style: {
           height: 12
         }

@@ -18,8 +18,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk508591 = require("./508591.jsx"),
   Chunk603538 = require("./603538.jsx"),
   Chunk30084 = require("./30084.jsx"),
-  Chunk216456 = require("./216456.js"),
   Chunk341915 = require("./341915.js"),
+  Chunk590202 = require("./590202.js"),
   Chunk976860 = require("./976860.js"),
   Chunk305003 = require("./305003.js"),
   Chunk588455 = require("./588455.jsx"),
@@ -158,7 +158,7 @@ function B(e) {
           if (null != n) return null == k || k(), n(t)
         },
         T = () => {
-          e.id === N.h && A.default.track(P.HAw.QUEST_CONTENT_VIEWED, V(U({}, (0, g.fF)(E.uF.QUEST_BADGE)), {
+          e.id === N.h && A.default.track(P.HAw.QUEST_CONTENT_VIEWED, V(U({}, (0, E.fF)(g.uF.QUEST_BADGE)), {
             is_targeted: false
           })), K({
             action: "HOVER_BADGE"

@@ -26,7 +26,7 @@ function g(e) {
     challenge: x
   } = t.methods.find(e => "webauthn" === e.type), v = async () => {
     j(true), S(null);
-    let e = d.isPlatformEmbedded && c.Ay.supportsFeature(f.BYE.WEBAUTHN) ? c.Ay.webAuthnAuthenticate(x) : i.Jt(JSON.parse(x)).then(e => JSON.stringify(e)),
+    let e = d.isPlatformEmbedded && c.Ay.supportsFeature(f.BYE.WEBAUTHN) ? c.Ay.webAuthnAuthenticate(x) : (0, i.Jt)(JSON.parse(x)).then(JSON.stringify),
       t = async e => {
         try {
           await n({

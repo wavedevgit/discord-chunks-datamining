@@ -7,9 +7,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk435371 = require("./435371.js"),
   Chunk397927 = require("./397927.js"),
-  Chunk216456 = require("./216456.js"),
-  Chunk906822 = require("./906822.jsx"),
   Chunk341915 = require("./341915.js"),
+  Chunk590202 = require("./590202.js"),
+  Chunk971649 = require("./971649.js"),
   Chunk651892 = require("./651892.js"),
   Chunk814793 = require("./814793.js"),
   Chunk717415 = require("./717415.jsx"),
@@ -21,10 +21,10 @@ function p(e) {
   } = e, {
     quest: n,
     sourceQuestContent: p
-  } = l.useContext(f.VideoQuestModalContext), v = (0, a.go)(), E = (0, d.E0)(n.config), g = l.useCallback(() => {
+  } = l.useContext(f.VideoQuestModalContext), v = (0, c.go)(), E = (0, d.E0)(n.config), g = l.useCallback(() => {
     E && ((0, u.Xm)(n.id, {
-      content: c.uF.VIDEO_MODAL,
-      ctaContent: s.Cy.COPY_QUEST_URL,
+      content: s.uF.VIDEO_MODAL,
+      ctaContent: a.Cy.COPY_QUEST_URL,
       impressionId: v,
       sourceQuestContent: p
     }), (0, i.showToast)((0, i.createToast)(m.intl.string(m.t["+5kSoW"]), i.ToastType.SUCCESS)))

@@ -14,9 +14,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk964486 = require("./964486.js"),
   Chunk235986 = require("./235986.jsx"),
   Chunk954571 = require("./954571.js"),
-  Chunk216456 = require("./216456.js"),
   Chunk859703 = require("./859703.js"),
   Chunk890687 = require("./890687.js"),
+  Chunk590202 = require("./590202.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk627574 = require("./627574.js"),
@@ -70,7 +70,7 @@ function S(e) {
     transitionState: a,
     onClose: s,
     onSubmit: f
-  } = e, p = (0, _.C5)(t), [y, O] = i.useState(0), [S, C] = (0, l.zhh)(() => ({
+  } = e, _ = (0, p.C5)(t), [y, O] = i.useState(0), [S, C] = (0, l.zhh)(() => ({
     from: {
       width: "0%"
     },
@@ -78,7 +78,7 @@ function S(e) {
       duration: A
     }
   })), w = e => {
-    f(), O(1), null != p && d.default.track(h.HAw.QUEST_SURVEY_SUBMITTED, v(b({}, N(p, n)), {
+    f(), O(1), null != _ && d.default.track(h.HAw.QUEST_SURVEY_SUBMITTED, v(b({}, N(_, n)), {
       choice: e.text,
       choice_id: e.key
     }))
@@ -88,8 +88,8 @@ function S(e) {
     }), s())
   };
   return (0, c.Ay)(() => {
-    null != p && d.default.track(h.HAw.QUEST_SURVEY_DISPLAYED, N(p, n))
-  }), null == p && s(), (0, r.jsx)(l.EOs, {
+    null != _ && d.default.track(h.HAw.QUEST_SURVEY_DISPLAYED, N(_, n))
+  }), null == _ && s(), (0, r.jsx)(l.EOs, {
     "data-migration-pending": true,
     transitionState: a,
     size: l.rIJ.DYNAMIC,
@@ -195,7 +195,7 @@ function C(e) {
     }))
   }, {
     onCloseCallback: () => {
-      let n = p.A.getQuest(e.questId);
+      let n = f.A.getQuest(e.questId);
       null != n && d.default.track(h.HAw.QUEST_SURVEY_DISMISSED, v(b({}, N(n, e.survey)), {
         submitted: t
       }))
@@ -206,7 +206,7 @@ function C(e) {
 function N(e, t) {
   return {
     quest_id: e.id,
-    quest_status: (0, f.NI)(e),
+    quest_status: (0, _.NI)(e),
     survey_id: t.id,
     survey_title: t.title,
     survey_subtitle: t.subtitle,

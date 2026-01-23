@@ -2,14 +2,14 @@
 /** chunk id: 692440, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DP: () => V,
-  Lw: () => G,
-  _J: () => x,
-  m0: () => U,
-  mT: () => L,
-  sw: () => D,
-  tC: () => F,
-  wP: () => j
+  DP: () => B,
+  Lw: () => F,
+  _J: () => j,
+  m0: () => V,
+  mT: () => M,
+  sw: () => L,
+  tC: () => H,
+  wP: () => k
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -60,7 +60,27 @@ function R(e) {
   return e
 }
 
-function P(e) {
+function P(e, t) {
+  if (null == e) return {};
+  var n, r, i, a = {};
+  if ("u" > typeof Reflect && Reflect.ownKeys) {
+    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+    return a
+  }
+  if (a = D(e, t), Object.getOwnPropertySymbols)
+    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+  return a
+}
+
+function D(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.getOwnPropertyNames(e);
+  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+  return i
+}
+
+function x(e) {
   let {
     invoiceItem: t,
     overrideAmount: n,
@@ -111,7 +131,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     label: t,
     tooltipText: n,
@@ -132,13 +152,13 @@ function D(e) {
   })
 }
 
-function x(e) {
+function j(e) {
   let {
     invoice: t,
     isPrepaidPaymentSource: n
   } = e, i = (0, b.Z)(t.invoiceItems), a = i.find(e => !(0, g.z4)(e.subscriptionPlanId) && e.amount >= 0), s = i.find(e => (0, g.z4)(e.subscriptionPlanId) && e.amount >= 0), o = (0, c.bG)([_.A], () => null != s ? _.A.get(s.subscriptionPlanId) : null), l = null != s ? s.amount : 0, u = (0, E.$g)(l, t.currency), d = null != o ? (0, E.CE)(u, o.interval, o.intervalCount) : 0;
   return (0, r.jsxs)(r.Fragment, {
-    children: [null != a ? (0, r.jsx)(P, {
+    children: [null != a ? (0, r.jsx)(x, {
       invoiceItem: a,
       currency: t.currency,
       isPrepaidPaymentSource: n
@@ -157,7 +177,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function M(e) {
   let {
     invoice: t,
     newPlan: n,
@@ -169,7 +189,7 @@ function L(e) {
     invoiceAdjustmentDisplayItems: l
   } = (0, I.qi)(t, n);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(P, {
+    children: [(0, r.jsx)(x, {
       invoiceItem: s,
       currency: t.currency,
       overrideAmount: o,
@@ -184,7 +204,7 @@ function L(e) {
         value: s
       } = e;
       return (0, r.jsx)(v.oR, {
-        label: (0, r.jsx)(D, {
+        label: (0, r.jsx)(L, {
           label: n,
           tooltipText: i,
           tooltipAriaLabel: a
@@ -200,7 +220,7 @@ function L(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     proratedInvoice: t,
     renewalInvoice: n,
@@ -222,23 +242,23 @@ function j(e) {
   })
 }
 
-function M(e) {
+function U(e) {
   let {
     isUpdate: t,
     currentInvoice: n,
     newInvoice: i,
     inTrialPeriod: a
-  } = e, o = null != n ? (0, b.Z)(n.invoiceItems) : null, l = null != n ? (0, g.Ge)(n) : null, {
-    intervalType: c,
-    intervalCount: u
-  } = (0, g.Ge)(i), d = null != l && (l.intervalType !== c || l.intervalCount !== u);
+  } = e, o = null != n ? (0, b.Z)(n.invoiceItems) : null, {
+    intervalType: l,
+    intervalCount: c
+  } = (0, g.Ge)(i);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(v.pK, {
       extended: true
     }), null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(v.Xd, {
         children: C.intl.string(C.t.tuqjWQ)
-      }), (0, I.Q8)(n).map(e => (0, r.jsx)(P, {
+      }), (0, I.Q8)(n).map(e => (0, r.jsx)(x, {
         invoiceItem: e,
         currency: n.currency,
         inTrialPeriod: a
@@ -247,27 +267,29 @@ function M(e) {
       })]
     }) : null, (0, r.jsx)(v.Xd, {
       children: C.intl.string(C.t.qxVrh6)
-    }), (0, I.Q8)(i).map(e => {
-      let n = null != o && !o.some(t => t.subscriptionPlanId === e.subscriptionPlanId && t.quantity === e.quantity);
-      return (0, r.jsx)(P, {
-        invoiceItem: e,
+    }), (0, I.Q8)(i, n).map(e => {
+      let {
+        showGuildSubscriptionAdjustmentTooltip: n
+      } = e, a = P(e, ["showGuildSubscriptionAdjustmentTooltip"]), l = null != o && !o.some(e => e.subscriptionPlanId === a.subscriptionPlanId && e.quantity === a.quantity);
+      return (0, r.jsx)(x, {
+        invoiceItem: a,
         currency: i.currency,
-        showGuildSubscriptionAdjustmentTooltip: d && (e.subscriptionPlanId === S.gD.PREMIUM_MONTH_GUILD || e.subscriptionPlanId === S.gD.PREMIUM_YEAR_GUILD || e.subscriptionPlanId === S.gD.PREMIUM_3_MONTH_GUILD || e.subscriptionPlanId === S.gD.PREMIUM_6_MONTH_GUILD),
+        showGuildSubscriptionAdjustmentTooltip: n,
         className: s()({
-          [N.sy]: !t || n
+          [N.sy]: !t || l
         })
-      }, e.id)
+      }, a.id)
     }), (0, r.jsx)(A.A, {
       invoice: i
     }), (0, r.jsx)(v.pK, {}), (0, r.jsx)(v.oR, {
       label: C.intl.string(C.t.AChTLW),
-      value: (0, E.CE)((0, E.$g)(i.total, i.currency), c, u),
+      value: (0, E.CE)((0, E.$g)(i.total, i.currency), l, c),
       className: N.RV
     })]
   })
 }
 
-function k(e) {
+function G(e) {
   var t;
   let {
     proratedInvoice: n,
@@ -305,7 +327,7 @@ function k(e) {
   })
 }
 
-function U(e) {
+function V(e) {
   let {
     premiumSubscription: t,
     proratedInvoice: n,
@@ -328,7 +350,7 @@ function U(e) {
   }, c), [b] = (0, y.Kq)(E), [O, A] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [u ? null : (0, r.jsx)(v.X0, {
-      children: (0, r.jsx)(k, {
+      children: (0, r.jsx)(G, {
         proratedInvoice: n,
         renewalInvoice: a,
         isTrial: l,
@@ -344,7 +366,7 @@ function U(e) {
           direction: O ? h.A.Directions.UP : h.A.Directions.DOWN,
           className: N.ts
         })]
-      }), O ? (0, r.jsx)(M, {
+      }), O ? (0, r.jsx)(U, {
         isUpdate: o,
         currentInvoice: b,
         newInvoice: a,
@@ -353,7 +375,7 @@ function U(e) {
     })]
   })
 }
-let G = (e, t) => {
+let F = (e, t) => {
   let {
     isCustomGift: n,
     isPrepaidPaymentSource: r
@@ -363,7 +385,7 @@ let G = (e, t) => {
   })
 };
 
-function V(e) {
+function B(e) {
   let {
     plan: t,
     className: n,
@@ -374,7 +396,7 @@ function V(e) {
     tax: o,
     taxInclusive: l,
     currency: c
-  } = s, u = s.total, f = u - o, p = (0, E.$g)(f, c), _ = (0, E.$g)(u, c), h = G(t, {
+  } = s, u = s.total, f = u - o, p = (0, E.$g)(f, c), _ = (0, E.$g)(u, c), h = F(t, {
     isCustomGift: a,
     isPrepaidPaymentSource: i
   });
@@ -410,7 +432,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function H(e) {
   let t, {
       invoice: n,
       plan: i

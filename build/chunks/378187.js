@@ -18,10 +18,10 @@ var Chunk412703 = require("./412703.js"),
   Chunk927813 = require("./927813.js"),
   Chunk403362 = require("./403362.js"),
   Chunk829219 = require("./829219.js"),
-  Chunk216456 = require("./216456.js"),
   Chunk859703 = require("./859703.js"),
   Chunk341915 = require("./341915.js"),
   Chunk943849 = require("./943849.js"),
+  Chunk590202 = require("./590202.js"),
   Chunk710969 = require("./710969.js"),
   Chunk639214 = require("./639214.js"),
   Chunk792620 = require("./792620.js"),
@@ -48,12 +48,12 @@ function P(e) {
 }
 
 function D(e) {
-  let t = E.A.quests;
+  let t = g.A.quests;
   for (let n of (0, v.jm)(t, e))
     if (n.config.features.includes(i.L.ACTIVITY_QUEST_AUTO_ENROLLMENT)) return void(0, m.Oy)(n.id, {
-      questContent: y.uF.RUNNING_ACTIVITY,
-      questContentCTA: g.Cy.ACCEPT_QUEST,
-      sourceQuestContent: y.uF.RUNNING_ACTIVITY
+      questContent: E.uF.RUNNING_ACTIVITY,
+      questContentCTA: b.Cy.ACCEPT_QUEST,
+      sourceQuestContent: E.uF.RUNNING_ACTIVITY
     })
 }
 
@@ -70,7 +70,7 @@ class j extends Chunk439372.A {
       let e = this.heartbeats[r],
         t = this.getActivelyProgressingQuests(r);
       for (let n of new Set(e.keys())) t.has(n) || this.terminateHeartbeat(n, r);
-      for (let [i, a] of t.entries()) !e.has(i) && (null == n || n(E.A.quests.get(i))) && this.initiateHeartbeat(i, r, a.applicationId)
+      for (let [i, a] of t.entries()) !e.has(i) && (null == n || n(g.A.quests.get(i))) && this.initiateHeartbeat(i, r, a.applicationId)
     }
   }
   getActivelyProgressingQuests(e) {
@@ -89,7 +89,7 @@ class j extends Chunk439372.A {
     let e = new Map,
       t = o.Ay.getRunningGames(),
       n = o.Ay.getRunningNonGames(),
-      r = E.A.quests;
+      r = g.A.quests;
     R.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", t, "Running non-games: ", n);
     let i = {};
     for (let e of t) {
@@ -131,7 +131,7 @@ class j extends Chunk439372.A {
     R.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Active stream metadata: ", n);
     let r = n.id;
     if (null == r) return e;
-    for (let t of E.A.quests.values()) {
+    for (let t of g.A.quests.values()) {
       let n = (0, A.a2)(t);
       P(t) && null != n && n === r && e.set(t.id, {
         applicationId: r
@@ -144,7 +144,7 @@ class j extends Chunk439372.A {
       t = s.Ay.getSelfEmbeddedActivities(),
       n = t.size > 0;
     if (R.log("~ getActivelyProgressingActivityQuestIds -> Embedded activities: ", t), !n) return e;
-    let r = E.A.quests;
+    let r = g.A.quests;
     for (let n of t.keys())
       for (let t of r.values()) {
         let r = (0, A.vS)(t);
@@ -163,7 +163,7 @@ class j extends Chunk439372.A {
       [r.n.STREAM_ON_DESKTOP]: new Map,
       [r.n.PLAY_ACTIVITY]: new Map
     }), T(this, "calculateHeartbeatDurationMs", e => {
-      let t = E.A.quests.get(e);
+      let t = g.A.quests.get(e);
       if (null == t || null == t.config || null == t.userStatus) return C;
       let {
         progressSeconds: n,
@@ -203,7 +203,7 @@ class j extends Chunk439372.A {
       R.log("~ initiateHeartbeat -> Initiating heartbeat for Quest ".concat(e)), a()
     }), T(this, "terminateHeartbeat", (e, t) => {
       let n = this.heartbeats[t],
-        r = E.A.quests,
+        r = g.A.quests,
         i = n.get(e);
       if (null != i) {
         R.log("~ terminateHeartbeat -> Terminating heartbeat for questId: ".concat(e)), window.clearTimeout(i), n.delete(e);

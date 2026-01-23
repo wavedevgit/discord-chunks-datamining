@@ -15,10 +15,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk765671 = require("./765671.js"),
   Chunk736653 = require("./736653.js"),
   Chunk496885 = require("./496885.jsx"),
-  Chunk216456 = require("./216456.js"),
   Chunk859703 = require("./859703.js"),
   Chunk341915 = require("./341915.js"),
   Chunk890687 = require("./890687.js"),
+  Chunk590202 = require("./590202.js"),
   Chunk710969 = require("./710969.js"),
   Chunk792620 = require("./792620.js"),
   Chunk814793 = require("./814793.js"),
@@ -64,9 +64,9 @@ function R(e) {
   } = e, {
     ref: d,
     height: p = 0
-  } = (0, m.Ay)([r]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, x = (0, b.Vn)(n), {
+  } = (0, m.Ay)([r]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, x = (0, f.Vn)(n), {
     type: g,
-    hints: f
+    hints: b
   } = l.useMemo(() => h || x ? {
     type: 2,
     hints: []
@@ -97,7 +97,7 @@ function R(e) {
         }), (0, a.jsx)(u.Text, {
           variant: "text-xs/medium",
           color: o ? "text-muted" : "always-white",
-          children: f.at(0)
+          children: b.at(0)
         })]
       }), 0 === g && (0, a.jsx)(u.QWc, {
         text: I.intl.string(I.t["yKJi+/"]),
@@ -125,7 +125,7 @@ function D(e) {
     onCtxMenuOpen: B,
     onCtxMenuSelect: G,
     sourceQuestContent: F
-  } = e, V = (0, j.IO)(y), W = (0, p.Ay)(), H = ((0, d.Mw)(W) ? w.NJ8.DARK : w.NJ8.LIGHT) === w.NJ8.DARK, K = (0, b.LS)(y), z = (null == (n = y.userStatus) ? true : n.claimedAt) != null, q = (0, b.S5)(y.config.expiresAt, {
+  } = e, V = (0, j.IO)(y), W = (0, p.Ay)(), H = ((0, d.Mw)(W) ? w.NJ8.DARK : w.NJ8.LIGHT) === w.NJ8.DARK, K = (0, f.LS)(y), z = (null == (n = y.userStatus) ? true : n.claimedAt) != null, q = (0, f.S5)(y.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), Q = (null == (r = y.userStatus) ? true : r.enrolledAt) != null, Y = (null == (s = y.userStatus) ? true : s.completedAt) != null, {
@@ -133,11 +133,11 @@ function D(e) {
   } = l.useContext(T.M), X = H ? "text-muted" : "always-white", $ = l.useCallback(() => {
     V && (0, O.d5)({
       quest: y,
-      questContent: f.uF.QUEST_HOME_DESKTOP,
+      questContent: g.uF.QUEST_HOME_DESKTOP,
       sourceQuestContent: F,
-      sourceQuestContentCTA: x.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
+      sourceQuestContentCTA: b.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })
-  }, [V, y, F]), Z = (0, o.bG)([g.A], () => g.A.getQuestHomeTakeoverConfig()), ee = l.useMemo(() => null != Z && (0, _.f0)(Z, y.id), [Z, y.id]);
+  }, [V, y, F]), Z = (0, o.bG)([x.A], () => x.A.getQuestHomeTakeoverConfig()), ee = l.useMemo(() => null != Z && (0, _.f0)(Z, y.id), [Z, y.id]);
   return (0, a.jsxs)("div", {
     className: k.kL,
     children: [(0, a.jsx)("div", {
@@ -193,7 +193,7 @@ function D(e) {
             onOpen: B,
             onClose: U,
             onSelect: G,
-            questContent: f.uF.QUEST_HOME_DESKTOP,
+            questContent: g.uF.QUEST_HOME_DESKTOP,
             quest: y,
             hideLearnMore: true,
             shouldShowDisclosure: true,

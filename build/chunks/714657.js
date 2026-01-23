@@ -15,7 +15,6 @@ var r = {
   footerLink: "footerLink__2ee1b " + require("./248789.js").footerLink,
   actionBar: "actionBar__2ee1b " + require("./248789.js").actionBar,
   actions: "actions__2ee1b " + require("./248789.js").actions,
-  actionsFullWidth: "actionsFullWidth__2ee1b " + require("./248789.js").actionsFullWidth,
   multistepIndicator: "multistepIndicator__2ee1b " + require("./248789.js").multistepIndicator,
   multistepActionLayout: "multistepActionLayout__2ee1b " + require("./248789.js").multistepActionLayout,
   caretIcon: "caretIcon__2ee1b " + require("./248789.js").caretIcon,

@@ -2,7 +2,7 @@
 /** chunk id: 270045, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => U
+  C: () => G
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,12 +15,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk957565 = require("./957565.js"),
   Chunk975571 = require("./975571.js"),
   Chunk829219 = require("./829219.js"),
-  Chunk216456 = require("./216456.js"),
-  Chunk906822 = require("./906822.jsx"),
   Chunk859703 = require("./859703.js"),
   Chunk341915 = require("./341915.js"),
   Chunk807876 = require("./807876.js"),
   Chunk890687 = require("./890687.js"),
+  Chunk18437 = require("./18437.js"),
+  Chunk590202 = require("./590202.js"),
+  Chunk971649 = require("./971649.js"),
   Chunk651892 = require("./651892.js"),
   Chunk710969 = require("./710969.js"),
   Chunk901406 = require("./901406.js"),
@@ -33,7 +34,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk985018 = require("./985018.jsx");
 
-function P(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,20 +43,20 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,25 +67,25 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = M(e, t), Object.getOwnPropertySymbols)
+  if (a = k(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function M(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -92,181 +93,181 @@ function M(e, t) {
   return i
 }
 
-function k(e) {
+function U(e) {
   var t;
-  let n = (0, a.bG)([m.A], () => m.A.questDeliveryOverride, []),
-    u = (0, O.vy)(e.questContent),
-    P = [g.uF.QUEST_BAR_V2, g.uF.QUEST_BAR].includes(e.questContent),
-    D = (0, _.Ut)(),
-    x = (0, h.go)(),
-    L = (0, b.wr)(e.quest),
-    j = true === e.showShareLink && (0, I.E0)(e.quest.config),
+  let n = (0, a.bG)([_.A], () => _.A.questDeliveryOverride, []),
+    u = (0, v.vy)(e.questContent),
+    D = [h.uF.QUEST_BAR_V2, h.uF.QUEST_BAR].includes(e.questContent),
+    x = (0, E.Ut)(),
+    L = (0, b.go)(),
+    j = (0, O.wr)(e.quest),
+    M = true === e.showShareLink && (0, S.E0)(e.quest.config),
     {
-      handleComplete: M,
-      handleProgress: k,
-      handleResetDismissibilityClick: U,
-      handleResetStatusClick: G,
-      handleOverrideDeliveryClick: V
-    } = (0, y.j$)(e.quest.id),
-    F = () => {
-      k(.9 * Math.random() + .03)
+      handleComplete: k,
+      handleProgress: U,
+      handleResetDismissibilityClick: G,
+      handleResetStatusClick: V,
+      handleOverrideDeliveryClick: F
+    } = (0, g.j$)(e.quest.id),
+    B = () => {
+      U(.9 * Math.random() + .03)
     },
-    B = i.useCallback(() => {
-      e.quest.id === C.Fw ? window.open(f.A.getArticleURL(N.MVz.VIRTUAL_CURRENCY_LEARN_MORE)) : (0, v.pu)(e.quest, {
+    H = i.useCallback(() => {
+      e.quest.id === N.Fw ? window.open(f.A.getArticleURL(w.MVz.VIRTUAL_CURRENCY_LEARN_MORE)) : (0, A.pu)(e.quest, {
         content: e.questContent,
-        ctaContent: _.Cy.CONTEXT_MENU_OPEN_GAME_LINK,
-        impressionId: x,
+        ctaContent: y.Cy.CONTEXT_MENU_OPEN_GAME_LINK,
+        impressionId: L,
         sourceQuestContent: e.sourceQuestContent
       })
-    }, [x, e.quest, e.questContent, e.sourceQuestContent]),
-    H = (0, S.Lk)({
-      isShareable: j,
+    }, [L, e.quest, e.questContent, e.sourceQuestContent]),
+    Y = (0, T.Lk)({
+      isShareable: M,
       questId: e.quest.id,
       trackingCtx: i.useMemo(() => ({
         content: e.questContent,
         position: e.questContentPosition,
-        ctaContent: _.Cy.CONTEXT_MENU_COPY_LINK,
-        impressionId: x,
+        ctaContent: y.Cy.CONTEXT_MENU_COPY_LINK,
+        impressionId: L,
         sourceQuestContent: e.sourceQuestContent
-      }), [e.questContent, e.questContentPosition, e.sourceQuestContent, x])
+      }), [e.questContent, e.questContentPosition, e.sourceQuestContent, L])
     }),
-    Y = () => {
-      (0, T.Zc)(e.quest, {
+    W = () => {
+      (0, C.Zc)(e.quest, {
         content: e.questContent,
         position: e.questContentPosition,
-        ctaContent: _.Cy.CONTEXT_MENU_OPEN_DISCLOSURE,
-        impressionId: x,
+        ctaContent: y.Cy.CONTEXT_MENU_OPEN_DISCLOSURE,
+        impressionId: L,
         sourceQuestContent: e.sourceQuestContent
       })
     },
-    W = () => {
-      D({
+    K = () => {
+      x({
         questId: e.quest.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
-        questContentCTA: _.Cy.CONTEXT_MENU_LEARN_MORE,
+        questContentCTA: y.Cy.CONTEXT_MENU_LEARN_MORE,
         sourceQuestContent: e.sourceQuestContent
-      }), (0, T.navigateToQuestHome)({
+      }), (0, C.navigateToQuestHome)({
         fromContent: e.questContent,
         questId: e.quest.id
       })
     },
-    K = () => {
+    z = () => {
       null != e.onSelect ? e.onSelect() : (0, o.Z_)()
     },
-    z = () => {
-      D({
+    q = () => {
+      x({
         questId: e.quest.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
-        questContentCTA: _.Cy.CONTEXT_MENU_HIDE_CONTENT,
+        questContentCTA: y.Cy.CONTEXT_MENU_HIDE_CONTENT,
         sourceQuestContent: e.sourceQuestContent
-      }), (0, O.vy)(e.questContent) && ((0, p.g5)(e.quest.id, e.questContent), P && (0, T.z6)(e.quest))
+      }), (0, v.vy)(e.questContent) && ((0, p.g5)(e.quest.id, e.questContent), D && (0, C.z6)(e.quest))
     },
-    q = e => (0, s.showToast)((0, s.createToast)(new l.A(e, e.status).message, s.ToastType.FAILURE)),
-    Z = () => (0, p.vD)(e.quest.id, true).catch(q),
-    X = () => (0, p.CV)(e.quest.id).catch(q),
-    Q = () => {
-      G(), X()
+    Z = e => (0, s.showToast)((0, s.createToast)(new l.A(e, e.status).message, s.ToastType.FAILURE)),
+    X = () => (0, p.vD)(e.quest.id, true).catch(Z),
+    Q = () => (0, p.CV)(e.quest.id).catch(Z),
+    J = () => {
+      V(), Q()
     },
-    J = (0, y.nv)(e.quest),
-    $ = i.useMemo(() => (0, r.jsx)(s.sLh, {
+    $ = (0, g.nv)(e.quest),
+    ee = i.useMemo(() => (0, r.jsx)(s.sLh, {
       id: "delivery",
       label: "Show in Quest Bar",
       checked: (null == n ? true : n.id) === e.quest.id,
-      action: V
-    }), [V, e.quest.id, null == n ? true : n.id]),
-    ee = i.useCallback(() => {
-      (0, c.pX)(N.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
+      action: F
+    }), [F, e.quest.id, null == n ? true : n.id]),
+    et = i.useCallback(() => {
+      (0, c.pX)(w.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
     }, [e.quest.id]),
-    et = e.shouldShowDisclosure && e.quest.id !== C.Fw;
+    en = e.shouldShowDisclosure && e.quest.id !== N.Fw;
   return (0, r.jsxs)(s.W1t, {
     "data-menu-mixed": true,
     variant: "fixed",
-    onSelect: K,
+    onSelect: z,
     navId: "quests-entry",
-    "aria-label": R.intl.string(R.t.ogxXGq),
-    onClose: null != (t = null == e ? true : e.onClose) ? t : w.tE,
+    "aria-label": P.intl.string(P.t.ogxXGq),
+    onClose: null != (t = null == e ? true : e.onClose) ? t : R.tE,
     children: [(0, r.jsxs)(s.rXV, {
       children: [(0, r.jsx)(s.Drp, {
         id: "play-game",
-        label: L,
-        action: B,
-        icon: s.We5
-      }), j && (0, r.jsx)(s.Drp, {
-        id: "share-link",
-        label: R.intl.string(R.t.RDE0Sc),
+        label: j,
         action: H,
+        icon: s.We5
+      }), M && (0, r.jsx)(s.Drp, {
+        id: "share-link",
+        label: P.intl.string(P.t.RDE0Sc),
+        action: Y,
         icon: s.TdU
-      }), J && $]
+      }), $ && ee]
     }, "major-actions"), (0, r.jsxs)(s.rXV, {
       children: [!e.hideLearnMore && (0, r.jsx)(s.Drp, {
         id: "learn-more",
-        label: R.intl.string(R.t["Ws2Bl+"]),
-        action: W,
+        label: P.intl.string(P.t["Ws2Bl+"]),
+        action: K,
         icon: s.r2v
-      }), et && (0, r.jsx)(s.Drp, {
+      }), en && (0, r.jsx)(s.Drp, {
         id: "display-disclosure",
-        label: R.intl.string(R.t.GcsZKJ),
-        action: Y
+        label: P.intl.string(P.t.GcsZKJ),
+        action: W
       }), u && (0, r.jsx)(s.Drp, {
         id: "hide-entrypoint",
-        label: R.intl.string(R.t.NN79E9),
-        action: z,
-        subtext: R.intl.string(R.t.RK9gxo)
+        label: P.intl.string(P.t.NN79E9),
+        action: q,
+        subtext: P.intl.string(P.t.RK9gxo)
       })]
     }, "minor-actions"), e.quest.preview && (0, r.jsxs)(s.rXV, {
-      label: R.intl.string(R.t["Ape+mm"]),
+      label: P.intl.string(P.t["Ape+mm"]),
       children: [(0, r.jsx)(s.Drp, {
         id: "dismiss",
-        label: R.intl.string(R.t.JF6W66),
-        action: U
+        label: P.intl.string(P.t.JF6W66),
+        action: G
       }), (0, r.jsx)(s.Drp, {
         id: "enrollment",
-        label: R.intl.string(R.t.taqkwK),
-        action: Q
+        label: P.intl.string(P.t.taqkwK),
+        action: J
       }), (0, r.jsx)(s.Drp, {
         id: "progress",
-        label: R.intl.string(R.t.cKSLr4),
-        action: F
+        label: P.intl.string(P.t.cKSLr4),
+        action: B
       }), (0, r.jsx)(s.Drp, {
         id: "complete",
-        label: R.intl.string(R.t.jQEfRT),
-        action: M
-      }), (0, A.g5)(e.quest) && (0, r.jsxs)(s.Drp, {
+        label: P.intl.string(P.t.jQEfRT),
+        action: k
+      }), (0, I.g5)(e.quest) && (0, r.jsxs)(s.Drp, {
         id: "console",
         label: "Console Heartbeat",
         children: [(0, r.jsx)(s.Drp, {
           disabled: true,
           id: "status",
-          label: "Status: ".concat((0, A.YL)(e.quest) ? "alive" : "dead")
+          label: "Status: ".concat((0, I.YL)(e.quest) ? "alive" : "dead")
         }), (0, r.jsx)(s.Drp, {
           id: "start",
           label: "Start heartbeat (cheatmode)",
-          action: Z
+          action: X
         }), (0, r.jsx)(s.Drp, {
           id: "stop",
           label: "Stop heartbeat",
-          action: X
+          action: Q
         })]
       }), (0, r.jsx)(s.Drp, {
         id: "copy-quest-id",
-        label: R.intl.string(R.t.oisrFi),
+        label: P.intl.string(P.t.oisrFi),
         action: () => {
           (0, d.C)(e.quest.id)
         }
-      }), (0, E.U)({
-        location: C.rE.QUEST_PREVIEW_TOOL_2
+      }), (0, m.U)({
+        location: N.rE.QUEST_PREVIEW_TOOL_2
       }) && (0, r.jsx)(s.Drp, {
         id: "preview",
-        label: R.intl.string(R.t.tx5Ax5),
-        action: ee
+        label: P.intl.string(P.t.tx5Ax5),
+        action: et
       })]
     }, "preview-controls")]
   })
 }
 
-function U(e) {
+function G(e) {
   let {
     children: t,
     onOpen: n,
@@ -276,32 +277,32 @@ function U(e) {
     questContent: c,
     questContentPosition: d,
     sourceQuestContent: f
-  } = e, p = j(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition", "sourceQuestContent"]), h = (0, _.Ut)(), m = i.useRef(null), g = i.useCallback(() => {
-    h({
+  } = e, p = M(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition", "sourceQuestContent"]), _ = (0, E.Ut)(), h = i.useRef(null), m = i.useCallback(() => {
+    _({
       questId: l.id,
       questContent: c,
-      questContentCTA: _.Cy.OPEN_CONTEXT_MENU,
+      questContentCTA: y.Cy.OPEN_CONTEXT_MENU,
       questContentPosition: d,
       sourceQuestContent: f
     }), null != n && n()
-  }, [n, l.id, c, d, h, f]);
+  }, [n, l.id, c, d, _, f]);
   return (0, r.jsx)(s.YNO, {
-    targetElementRef: m,
-    onRequestOpen: g,
+    targetElementRef: h,
+    onRequestOpen: m,
     onRequestClose: a,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
       return o ? (0, r.jsx)(u.A, {
-        children: (0, r.jsx)(k, L(D({}, p), {
+        children: (0, r.jsx)(U, j(x({}, p), {
           quest: l,
           questContent: c,
           questContentPosition: d,
           onClose: t,
           sourceQuestContent: f
         }))
-      }) : (0, r.jsx)(k, L(D({}, p), {
+      }) : (0, r.jsx)(U, j(x({}, p), {
         quest: l,
         questContent: c,
         questContentPosition: d,
@@ -311,7 +312,7 @@ function U(e) {
     },
     animation: s.YNO.Animation.NONE,
     children: e => (0, r.jsx)("div", {
-      ref: m,
+      ref: h,
       children: t(e)
     })
   })

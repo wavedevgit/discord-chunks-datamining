@@ -360,9 +360,9 @@ function eb(e) {
         [ei.Y_]: eU
       })
     })]
-  }) : e7, e4 = l.useRef(null), e5 = (0, I.W)({
+  }) : e7, e4 = l.useRef(null), e8 = (0, I.W)({
     location: "PrivateChannel"
-  }) && (null == o ? true : o.displayNameStyles) != null, e8 = [(0, T.Ay)({
+  }) && (null == o ? true : o.displayNameStyles) != null, e5 = [(0, T.Ay)({
     channel: t,
     unread: ek
   }), (0, T.r2)({
@@ -425,7 +425,7 @@ function eb(e) {
             innerRef: eO,
             to: er.BVt.CHANNEL(er.ME, t.id),
             className: ei.nf,
-            "aria-label": e8
+            "aria-label": e5
           }, f), {
             children: (0, r.jsx)(S.A, {
               ref: e4,
@@ -496,7 +496,7 @@ function eb(e) {
               nameClassName: ei.Xh,
               name: (0, r.jsx)(y.A, {
                 className: s()(ei.uN, {
-                  [ei.e8]: e5
+                  [ei.e8]: e8
                 }),
                 children: e3
               }),
@@ -506,7 +506,7 @@ function eb(e) {
                 verified: true
               }) : null,
               rightDecorators: tt,
-              withDisplayNameStyles: e5
+              withDisplayNameStyles: e8
             })
           })), (0, r.jsxs)("div", {
             className: s()(ei._q, {

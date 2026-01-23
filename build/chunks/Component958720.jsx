@@ -49,7 +49,11 @@ function b(e) {
   let M = g.XE[a];
   S && (M = (0, h.k8)(j, L, O));
   let k = (0, h.y8)(a, false, L, O),
-    U = j.interval === g.WT.YEAR && null != M ? Math.floor(k.amount / (1 - M / 100)) : null,
+    U = (0, h.VA)({
+      subscriptionPlan: j,
+      isGift: L,
+      priceOptions: O
+    }),
     G = null != M && !T,
     V = j.interval === g.WT.YEAR ? E.t.ECT4A5 : E.t.v9QeON,
     F = () => R && !L && a === g.gD.PREMIUM_MONTH_TIER_2 ? (0, r.jsx)(u.Text, {
