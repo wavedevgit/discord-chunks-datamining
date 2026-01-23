@@ -2,8 +2,8 @@
 /** chunk id: 106922, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => eg,
-  c: () => eh
+  A: () => eE,
+  c: () => em
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,6 +11,7 @@ var Chunk627968 = require("./627968.js"),
   s = require.n(Chunk503698),
   Chunk989349 = require("./989349.js"),
   l = require.n(Chunk989349),
+  Chunk877624 = require("./877624.js"),
   Chunk311907 = require("./311907.js"),
   Chunk230109 = require("./230109.js"),
   Chunk732955 = require("./732955.js"),
@@ -22,7 +23,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk73825 = require("./73825.js"),
   Chunk974544 = require("./974544.jsx"),
   Chunk736653 = require("./736653.js"),
-  Chunk775602 = require("./775602.js"),
   Chunk793574 = require("./793574.js"),
   Chunk688810 = require("./688810.jsx"),
   Chunk86379 = require("./86379.js"),
@@ -44,8 +44,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk526292 = require("./526292.js"),
   Chunk637073 = require("./637073.js"),
   Chunk411268 = require("./411268.js"),
-  Chunk552736 = require("./552736.js"),
   Chunk810498 = require("./810498.js"),
+  Chunk807098 = require("./807098.js"),
+  Chunk412260 = require("./412260.js"),
   Chunk103411 = require("./103411.js"),
   Chunk190187 = require("./190187.js"),
   Chunk194509 = require("./194509.jsx"),
@@ -63,226 +64,233 @@ var Chunk627968 = require("./627968.js"),
   Chunk95252 = require("./95252.js"),
   Chunk396785 = require("./396785.js"),
   Chunk956537 = require("./956537.js");
-let eo = "to_subscriptions_button",
-  el = "subscriptions settings",
-  ec = "to_premium_home_button",
-  eu = "premium home page",
-  ed = "gifting_button",
-  ef = "payment modal";
+let el = "to_subscriptions_button",
+  ec = "subscriptions settings",
+  eu = "to_premium_home_button",
+  ed = "premium home page",
+  ef = "gifting_button",
+  ep = "payment modal";
 
-function ep(e) {
+function e_(e) {
   let {
     premiumSubscription: t,
     isDiscountApplied: n,
     activeDiscountInfo: i,
     theme: a
-  } = e, s = t.hasActiveTrial, o = t.planIdFromItems === ee.gD.PREMIUM_YEAR_TIER_2, c = n || s, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, d = ee.hd[t.planIdFromItems], p = U.Ay.formatPriceString(U.Ay.getDefaultPrice(d.id), d.interval), {
-    enabled: h
+  } = e, s = t.hasActiveTrial, o = t.planIdFromItems === et.gD.PREMIUM_YEAR_TIER_2, c = n || s, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, d = et.hd[t.planIdFromItems], f = U.Ay.formatPriceString(U.Ay.getDefaultPrice(d.id), d.interval), {
+    enabled: _
   } = F.K.getCurrentConfig({
     location: "SubscriptionUserHeroSubheader"
   }), m = () => {
     var e, t, n;
-    return h ? "" : s ? er.intl.format(er.t["2CGBri"], {
+    return _ ? "" : s ? ei.intl.format(ei.t["2CGBri"], {
       remainingTime: u,
-      price: p
-    }) : o ? er.intl.format(er.t["+qqh6g"], {
-      percent: null != (e = null == i ? true : i.percentage) ? e : ee.Cq,
-      regularPrice: p
-    }) : er.intl.formatToPlainString(er.t["3ZiutU"], {
-      percent: null != (t = null == i ? true : i.percentage) ? t : ee._$,
-      regularPrice: p,
-      numMonths: null != (n = null == i ? true : i.duration) ? n : ee.OJ
+      price: f
+    }) : o ? ei.intl.format(ei.t["+qqh6g"], {
+      percent: null != (e = null == i ? true : i.percentage) ? e : et.Cq,
+      regularPrice: f
+    }) : ei.intl.formatToPlainString(ei.t["3ZiutU"], {
+      percent: null != (t = null == i ? true : i.percentage) ? t : et._$,
+      regularPrice: f,
+      numMonths: null != (n = null == i ? true : i.duration) ? n : et.OJ
     })
   };
   return c ? (0, r.jsxs)(r.Fragment, {
-    children: [(s || !o) && (0, r.jsx)(Z.ir, {
-      text: s ? er.intl.string(er.t.qYKftX) : er.intl.string(er.t.EyjDRE),
-      className: ei.uS,
-      colorOptions: (0, f.Mw)(a) ? Z.at.PREMIUM_TIER_2_WHITE_FILL : Z.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL
+    children: [(s || !o) && (0, r.jsx)(X.ir, {
+      text: s ? ei.intl.string(ei.t.qYKftX) : ei.intl.string(ei.t.EyjDRE),
+      className: ea.uS,
+      colorOptions: (0, p.Mw)(a) ? X.at.PREMIUM_TIER_2_WHITE_FILL : X.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL
     }), (s || !o) && (0, r.jsx)("div", {
-      className: ei.on
-    }), (0, r.jsx)(_.Heading, {
+      className: ea.on
+    }), (0, r.jsx)(h.Heading, {
       variant: "heading-md/normal",
       color: "always-white",
-      className: ei.KB,
+      className: ea.KB,
       children: m()
     })]
-  }) : h ? (0, r.jsx)("div", {
+  }) : _ ? (0, r.jsx)("div", {
     style: {
       marginBottom: "18px"
     }
-  }) : (0, r.jsx)(Q.A, {
+  }) : (0, r.jsx)(J.A, {
     variant: true,
-    subscriptionTier: ee.pe.TIER_2,
+    subscriptionTier: et.pe.TIER_2,
     interval: d.interval
   })
 }
 
-function e_() {
+function eh() {
   let e = (0, G.k5)(),
     t = (0, G.nf)(),
-    n = (0, y.Ay)(),
-    i = (0, c.bG)([L.A], () => L.A.getPremiumTypeSubscription()),
-    a = (0, c.bG)([x.default], () => x.default.getCurrentUser()),
+    n = (0, b.Ay)(),
+    i = (0, u.bG)([L.A], () => L.A.getPremiumTypeSubscription()),
+    a = (0, u.bG)([x.default], () => x.default.getCurrentUser()),
     o = null == a ? true : a.isPremiumWithPremiumGroup(),
     l = (0, I.A)(),
-    u = (0, V.d)(),
-    p = null !== i && null !== i.planIdFromItems;
-  if (!p && !l.isFractionalPremiumActive && !o) return null;
-  let h = l.isFractionalPremiumActive,
+    c = (0, V.d)(),
+    d = null !== i && null !== i.planIdFromItems;
+  if (!d && !l.isFractionalPremiumActive && !o) return null;
+  let _ = l.isFractionalPremiumActive,
     m = null !== i && i.hasActiveTrial,
     g = e || m,
-    E = () => (null == a ? true : a.isPremiumGroupPrimary()) ? X.Nz.PREMIUM_GROUP_PRIMARY : (null == a ? true : a.isPremiumGroupMember()) ? X.Nz.PREMIUM_GROUP_MEMBER : h ? X.Nz.FRACTIONAL_PREMIUM : X.Nz.DEFAULT,
-    b = () => o ? (0, r.jsx)(_.Heading, {
+    E = () => (null == a ? true : a.isPremiumGroupPrimary()) ? Q.Nz.PREMIUM_GROUP_PRIMARY : (null == a ? true : a.isPremiumGroupMember()) ? Q.Nz.PREMIUM_GROUP_MEMBER : _ ? Q.Nz.FRACTIONAL_PREMIUM : Q.Nz.DEFAULT,
+    y = () => o ? (0, r.jsx)(h.Heading, {
       variant: "display-md",
       color: "always-white",
-      className: ei._K,
-      children: (0, et.DP)()
+      className: ea._K,
+      children: (0, en.DP)()
     }) : (0, r.jsx)(j.A, {
-      className: ei.TJ
+      className: ea.TJ
     }),
     O = () => o ? (0, r.jsx)("div", {
       style: {
         marginBottom: "18px"
       }
-    }) : h && !u ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(Z.R, {
-        text: er.intl.string(er.t.uXF4c4),
-        className: ei.rd,
-        colorOptions: Z.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL
-      }), (0, r.jsx)(_.Heading, {
+    }) : _ && !c ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(X.R, {
+        text: ei.intl.string(ei.t.uXF4c4),
+        className: ea.rd,
+        colorOptions: X.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL
+      }), (0, r.jsx)(h.Heading, {
         variant: "heading-md/normal",
         color: "always-white",
-        className: ei.sQ,
-        children: er.intl.format(er.t.sK7fGl, {
-          helpCenterLink: k.A.getArticleURL(en.MVz.FRACTIONAL_PREMIUM_ABOUT)
+        className: ea.sQ,
+        children: ei.intl.format(ei.t.sK7fGl, {
+          helpCenterLink: k.A.getArticleURL(er.MVz.FRACTIONAL_PREMIUM_ABOUT)
         })
       })]
-    }) : p ? (0, r.jsx)(ep, {
+    }) : d ? (0, r.jsx)(e_, {
       premiumSubscription: i,
       isDiscountApplied: e,
       activeDiscountInfo: t,
       theme: n
-    }) : u ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(Z.ir, {
-        text: er.intl.string(er.t.qYKftX),
-        className: ei.uS,
-        colorOptions: (0, f.Mw)(n) ? Z.at.PREMIUM_TIER_2_WHITE_FILL : Z.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL
-      }), (0, r.jsx)(_.Heading, {
+    }) : c ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(X.ir, {
+        text: ei.intl.string(ei.t.qYKftX),
+        className: ea.uS,
+        colorOptions: (0, p.Mw)(n) ? X.at.PREMIUM_TIER_2_WHITE_FILL : X.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL
+      }), (0, r.jsx)(h.Heading, {
         variant: "heading-md/normal",
         color: "always-white",
-        className: ei.KB,
-        children: er.intl.format(er.t["/SfHwl"], {
+        className: ea.KB,
+        children: ei.intl.format(ei.t["/SfHwl"], {
           weeks: 1
         })
       })]
     }) : null,
-    v = () => h && !p ? (0, r.jsxs)(d.e2v, {
+    v = () => _ && !d ? (0, r.jsxs)(f.e2v, {
       fullWidth: true,
       direction: "vertical",
-      children: [(0, r.jsx)(q.A, {
-        defaultTextOverride: u ? er.intl.string(er.t.YScQSF) : er.intl.string(er.t["0b3YRn"])
-      }), (0, r.jsx)(d.$nd, {
+      children: [(0, r.jsx)(Z.A, {
+        defaultTextOverride: c ? ei.intl.string(ei.t.YScQSF) : ei.intl.string(ei.t["0b3YRn"])
+      }), (0, r.jsx)(f.$nd, {
         onClick: () => {
-          M.default.track(en.HAw.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: ec,
-            target: eu
-          }), (0, R.default)(), (0, N.pX)(en.BVt.APPLICATION_STORE)
+          M.default.track(er.HAw.PREMIUM_SETTINGS_INTERACTED, {
+            cta_type: eu,
+            target: ed
+          }), (0, R.default)(), (0, N.pX)(er.BVt.APPLICATION_STORE)
         },
         variant: "overlay-secondary",
         fullWidth: true,
         size: "md",
-        text: u ? er.intl.string(er.t.VR2iVB) : er.intl.string(er.t.T1aUAX)
+        text: c ? ei.intl.string(ei.t.VR2iVB) : ei.intl.string(ei.t.T1aUAX)
       })]
-    }) : (0, r.jsxs)(d.e2v, {
+    }) : (0, r.jsxs)(f.e2v, {
       fullWidth: true,
       direction: "vertical",
-      children: [(0, r.jsx)(d.$nd, {
+      children: [(0, r.jsx)(f.$nd, {
         variant: "overlay-primary",
         fullWidth: true,
         onClick: () => {
-          M.default.track(en.HAw.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: ec,
-            target: eu
-          }), (0, R.default)(), (0, N.pX)(en.BVt.APPLICATION_STORE)
+          M.default.track(er.HAw.PREMIUM_SETTINGS_INTERACTED, {
+            cta_type: eu,
+            target: ed
+          }), (0, R.default)(), (0, N.pX)(er.BVt.APPLICATION_STORE)
         },
-        text: er.intl.string(er.t.VR2iVB),
+        text: ei.intl.string(ei.t.VR2iVB),
         size: "md"
-      }), (0, r.jsx)(d.$nd, {
+      }), (0, r.jsx)(f.$nd, {
         variant: "overlay-secondary",
         onClick: () => {
-          M.default.track(en.HAw.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: eo,
-            target: el
+          M.default.track(er.HAw.PREMIUM_SETTINGS_INTERACTED, {
+            cta_type: el,
+            target: ec
           }), (0, P.openUserSettings)(w.X.SUBSCRIPTIONS_PANEL, {
-            section: en.nc_.SUBSCRIPTIONS
+            section: er.nc_.SUBSCRIPTIONS
           })
         },
-        text: er.intl.string(er.t["9uDy6C"]),
+        text: ei.intl.string(ei.t["9uDy6C"]),
         fullWidth: true,
         size: "md"
       })]
     });
   return (0, r.jsxs)("div", {
-    className: s()(ei.$Y, {
-      [ei.J5]: g
+    className: s()(ea.$Y, {
+      [ea.J5]: g
     }),
     children: [(0, r.jsxs)("div", {
-      className: ei.jp,
-      children: [b(), O(), (0, r.jsx)(X.ZP, {
+      className: ea.jp,
+      children: [y(), O(), (0, r.jsx)(Q.ZP, {
         featureSet: E()
       }), v()]
     }), (0, r.jsx)("div", {
-      className: ei.ah,
+      className: ea.ah,
       children: (0, r.jsx)("img", {
-        className: ei.ah,
+        className: ea.ah,
         alt: "",
-        src: ea
+        src: es
       })
     })]
   })
 }
 
-function eh(e) {
-  var t, n;
+function em(e) {
   let {
-    className: i,
-    config: a
-  } = e, o = (0, c.bG)([b.A], () => b.A.useReducedMotion), l = a.getImageUrl(o), u = null == (n = a.getBackgroundImageUrl) ? true : n.call(a), d = (0, H.gc)(u), f = (0, H.K5)(a.gradientConfig), p = (0, H.x)(d, f), h = {
-    color: null != (t = a.textColor) ? t : "var(--always-white)"
+    className: t,
+    config: n
+  } = e, a = (0, H.T)(n.asset), o = (0, H.T)(n.backgroundAsset), l = (0, B.gc)(null != o ? o : true), c = i.useMemo(() => {
+    let e = n.gradient;
+    if (null != e && null != e.colors && !(e.colors.length < 2)) return (0, B.K5)({
+      gradient: e.colors,
+      angle: e.angle
+    }, {
+      defaultAngle: 180
+    })
+  }, [n.gradient]), u = (0, B.x)(l, c), d = {
+    color: null != n.textColor && "" !== n.textColor ? n.textColor : "var(--always-white)"
   };
   return (0, r.jsxs)("div", {
-    className: s()(ei.WR, i),
-    style: p,
-    children: [(0, r.jsx)("img", {
+    className: s()(ea.WR, t),
+    style: u,
+    children: [null != a && (0, r.jsx)("img", {
       alt: "",
-      className: ei.TB,
+      className: ea.TB,
       "aria-hidden": true,
-      src: l
+      src: a
     }), (0, r.jsxs)("div", {
-      className: ei.QT,
-      children: [(0, r.jsx)(_.Heading, {
-        className: ei.u_,
-        style: h,
+      className: ea.QT,
+      children: [(0, r.jsx)(h.Heading, {
+        className: ea.u_,
+        style: d,
         variant: "heading-lg/extrabold",
-        children: a.title()
-      }), (0, r.jsx)(_.Text, {
-        className: ei.Oi,
-        style: h,
+        children: n.header
+      }), (0, r.jsx)(h.Text, {
+        className: ea.Oi,
+        style: d,
         variant: "text-xs/medium",
-        children: a.body()
-      }), null != a.additionalTerm && (0, r.jsx)(_.Text, {
-        className: ei.KW,
-        style: h,
+        children: n.body
+      }), null != n.additionalTerms && (0, r.jsx)(h.Text, {
+        className: ea.KW,
+        style: d,
         variant: "text-xxs/normal",
-        children: a.additionalTerm()
-      }), (0, r.jsx)(z.A, {
+        children: n.additionalTerms
+      }), (0, r.jsx)(q.A, {
         variant: "primary",
         size: "md",
         onClick: () => {
-          M.default.track(en.HAw.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: ed,
-            target: ef
+          M.default.track(er.HAw.PREMIUM_SETTINGS_INTERACTED, {
+            cta_type: ef,
+            target: ep
           })
         }
       })]
@@ -290,101 +298,103 @@ function eh(e) {
   })
 }
 
-function em() {
+function eg() {
   return (0, r.jsxs)("div", {
-    className: ei.T1,
+    className: ea.T1,
     children: [(0, r.jsx)("img", {
-      className: ei.GY,
+      className: ea.GY,
       alt: "",
-      src: es
+      src: eo
     }), (0, r.jsxs)("div", {
-      className: ei.b4,
-      children: [(0, r.jsx)(_.Heading, {
-        className: ei.Vz,
+      className: ea.b4,
+      children: [(0, r.jsx)(h.Heading, {
+        className: ea.Vz,
         variant: "heading-xl/extrabold",
-        children: er.intl.string(er.t["3KomGa"])
-      }), (0, r.jsx)(_.Text, {
-        className: ei.Oi,
+        children: ei.intl.string(ei.t["3KomGa"])
+      }), (0, r.jsx)(h.Text, {
+        className: ea.Oi,
         variant: "text-sm/normal",
-        children: er.intl.string(er.t.yQ06u1)
-      }), (0, r.jsx)(K.A, {
-        className: s()(ei.Tp, ei._c),
+        children: ei.intl.string(ei.t.yQ06u1)
+      }), (0, r.jsx)(z.A, {
+        className: s()(ea.Tp, ea._c),
         textOptions: {
-          textOverride: er.intl.string(er.t.Ve9Ge6),
-          textClassName: ei.VV
+          textOverride: ei.intl.string(ei.t.Ve9Ge6),
+          textClassName: ea.VV
         },
-        color: p.$n.Colors.CUSTOM,
+        color: _.$n.Colors.CUSTOM,
         onClick: () => {
-          M.default.track(en.HAw.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: ed,
-            target: ef
+          M.default.track(er.HAw.PREMIUM_SETTINGS_INTERACTED, {
+            cta_type: ef,
+            target: ep
           })
         }
       })]
     })]
   })
 }
-let eg = function() {
-  var e;
-  let t = (0, A.H)(),
+let eE = function() {
+  let e = (0, A.H)(),
     {
-      analyticsLocations: n
+      analyticsLocations: t
     } = (0, v.Ay)(O.A.PREMIUM_SETTINGS),
-    a = (0, c.bG)([x.default], () => x.default.getCurrentUser()),
-    s = (0, c.bG)([L.A], () => L.A.getPremiumTypeSubscription()),
-    o = (0, c.bG)([L.A], () => L.A.hasFetchedSubscriptions()),
-    l = (0, S.Y)(ee.T7),
-    [d, f] = i.useState(true),
+    n = (0, u.bG)([x.default], () => x.default.getCurrentUser()),
+    a = (0, u.bG)([L.A], () => L.A.getPremiumTypeSubscription()),
+    s = (0, u.bG)([L.A], () => L.A.hasFetchedSubscriptions()),
+    o = (0, S.Y)(et.T7),
+    [l, f] = i.useState(true),
     p = (0, I.A)({
       forceFetch: true
     }),
-    y = null == (e = (0, B.A)()) ? true : e.billingSettingsMarketingBanner,
-    b = (0, c.bG)([D.A], () => D.A.enabled),
+    _ = (0, u.bG)([Y.A], () => {
+      let e = Y.A.getMarketingComponentByType(c.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
+      return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
+    }),
+    b = (0, u.bG)([D.A], () => D.A.enabled),
     N = i.useRef(null);
-  (0, W.i)();
-  let w = (0, Y.m)();
+  (0, K.i)();
+  let w = (0, W.m)();
   i.useEffect(() => {
-    h.h.wait(async () => {
-      b || t || await Promise.all([m.hP(), m.$o(), (0, g.zS)(null, null, en.tF5.DISCOVERY)]), f(false)
+    m.h.wait(async () => {
+      b || e || await Promise.all([g.hP(), g.$o(), (0, E.zS)(null, null, er.tF5.DISCOVERY)]), f(false)
     })
-  }, [b, t]);
+  }, [b, e]);
   let [R, P] = i.useState(false);
-  if (b) return (0, r.jsx)(E.A, {});
-  if (t) return (0, r.jsx)(T.uK, {});
-  let j = o && null !== s && l,
+  if (b) return (0, r.jsx)(y.A, {});
+  if (e) return (0, r.jsx)(T.uK, {});
+  let j = s && null !== a && o,
     k = p.fetched && p.isFractionalPremiumActive,
-    U = null == a ? true : a.isPremiumWithPremiumGroup();
-  if (!j && !k && !d && !U) return (0, r.jsx)(C.A, {
-    title: er.intl.string(er.t.dyq9TR),
+    U = null == n ? true : n.isPremiumWithPremiumGroup();
+  if (!j && !k && !l && !U) return (0, r.jsx)(C.A, {
+    title: ei.intl.string(ei.t.dyq9TR),
     note: null
   });
-  if (!j && !k && !U || d) return (0, r.jsx)(_.y$y, {});
-  let G = !!(null == s ? true : s.hasActiveTrial);
+  if (!j && !k && !U || l) return (0, r.jsx)(h.y$y, {});
+  let G = !!(null == a ? true : a.hasActiveTrial);
   return (0, r.jsx)(v.f5, {
-    value: n,
+    value: t,
     children: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        children: [null != y && (0, r.jsx)(eh, {
-          config: y
-        }), (0, r.jsx)(e_, {}), w && (0, r.jsx)($.A, {
+        children: [null != _ && (0, r.jsx)(em, {
+          config: _
+        }), (0, r.jsx)(eh, {}), w && (0, r.jsx)(ee.A, {
           isInSettings: true
-        }), null == y && (0, r.jsx)(em, {}), (0, r.jsx)(J.A, {
+        }), null == _ && (0, r.jsx)(eg, {}), (0, r.jsx)($.A, {
           hideCTAs: true,
-          headingOverride: er.intl.string(er.t.dnVvQS),
+          headingOverride: ei.intl.string(ei.t.dnVvQS),
           hidePill: !G,
-          selectedPlanColumnClassName: ei.JG,
-          selectedPlanTier: ee.PremiumTypes.TIER_2
+          selectedPlanColumnClassName: ea.JG,
+          selectedPlanTier: et.PremiumTypes.TIER_2
         })]
-      }), (0, r.jsx)(u.L, {
+      }), (0, r.jsx)(d.L, {
         innerRef: N,
         onChange: e => {
-          e && !R && (M.default.track(en.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-            location_stack: n
+          e && !R && (M.default.track(er.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            location_stack: t
           }), P(true))
         },
         children: (0, r.jsx)("div", {
           ref: N,
-          className: ei._Z
+          className: ea._Z
         })
       })]
     })
