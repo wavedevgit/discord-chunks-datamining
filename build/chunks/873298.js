@@ -13,7 +13,7 @@ require.d(exports, {
   KJ: () => M,
   NS: () => O,
   PZ: () => I,
-  Po: () => ti,
+  Po: () => tl,
   Q0: () => L,
   Qd: () => E,
   Sx: () => v,
@@ -23,7 +23,7 @@ require.d(exports, {
   X9: () => eE,
   Y2: () => u,
   YW: () => X,
-  _o: () => tn,
+  _o: () => ts,
   ak: () => eU,
   eF: () => d,
   fL: () => b,
@@ -179,22 +179,22 @@ class P extends Chunk324281.G {
           a.clips = e2.internalBinaryRead(e, e.uint32(), n, a.clips);
           break;
         case 20:
-          a.forLater = e5.internalBinaryRead(e, e.uint32(), n, a.forLater);
+          a.forLater = te.internalBinaryRead(e, e.uint32(), n, a.forLater);
           break;
         case 21:
-          a.safetySettings = e6.internalBinaryRead(e, e.uint32(), n, a.safetySettings);
+          a.safetySettings = e8.internalBinaryRead(e, e.uint32(), n, a.safetySettings);
           break;
         case 22:
-          a.icymiSettings = e8.internalBinaryRead(e, e.uint32(), n, a.icymiSettings);
+          a.icymiSettings = tn.internalBinaryRead(e, e.uint32(), n, a.icymiSettings);
           break;
         case 23:
-          a.applications = te.internalBinaryRead(e, e.uint32(), n, a.applications);
+          a.applications = ti.internalBinaryRead(e, e.uint32(), n, a.applications);
           break;
         case 24:
-          a.ads = tl.internalBinaryRead(e, e.uint32(), n, a.ads);
+          a.ads = tf.internalBinaryRead(e, e.uint32(), n, a.ads);
           break;
         case 25:
-          a.inAppFeedbackSettings = t_.internalBinaryRead(e, e.uint32(), n, a.inAppFeedbackSettings);
+          a.inAppFeedbackSettings = tE.internalBinaryRead(e, e.uint32(), n, a.inAppFeedbackSettings);
           break;
         default:
           let s = n.readUnknownField;
@@ -206,7 +206,7 @@ class P extends Chunk324281.G {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.versions && c.u.internalBinaryWrite(e.versions, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.inbox && L.internalBinaryWrite(e.inbox, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), e.guilds && M.internalBinaryWrite(e.guilds, t.tag(3, r.O0.LengthDelimited).fork(), n).join(), e.userContent && X.internalBinaryWrite(e.userContent, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), e.textAndImages && ef.internalBinaryWrite(e.textAndImages, t.tag(6, r.O0.LengthDelimited).fork(), n).join(), e.notifications && e_.internalBinaryWrite(e.notifications, t.tag(7, r.O0.LengthDelimited).fork(), n).join(), e.privacy && em.internalBinaryWrite(e.privacy, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.debug && eE.internalBinaryWrite(e.debug, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), e.gameLibrary && eb.internalBinaryWrite(e.gameLibrary, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.status && ev.internalBinaryWrite(e.status, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), e.localization && eT.internalBinaryWrite(e.localization, t.tag(12, r.O0.LengthDelimited).fork(), n).join(), e.appearance && eR.internalBinaryWrite(e.appearance, t.tag(13, r.O0.LengthDelimited).fork(), n).join(), e.guildFolders && eM.internalBinaryWrite(e.guildFolders, t.tag(14, r.O0.LengthDelimited).fork(), n).join(), e.favorites && eV.internalBinaryWrite(e.favorites, t.tag(15, r.O0.LengthDelimited).fork(), n).join(), e.audioContextSettings && eK.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.O0.LengthDelimited).fork(), n).join(), e.communities && eq.internalBinaryWrite(e.communities, t.tag(17, r.O0.LengthDelimited).fork(), n).join(), e.broadcast && e0.internalBinaryWrite(e.broadcast, t.tag(18, r.O0.LengthDelimited).fork(), n).join(), e.clips && e2.internalBinaryWrite(e.clips, t.tag(19, r.O0.LengthDelimited).fork(), n).join(), e.forLater && e5.internalBinaryWrite(e.forLater, t.tag(20, r.O0.LengthDelimited).fork(), n).join(), e.safetySettings && e6.internalBinaryWrite(e.safetySettings, t.tag(21, r.O0.LengthDelimited).fork(), n).join(), e.icymiSettings && e8.internalBinaryWrite(e.icymiSettings, t.tag(22, r.O0.LengthDelimited).fork(), n).join(), e.applications && te.internalBinaryWrite(e.applications, t.tag(23, r.O0.LengthDelimited).fork(), n).join(), e.ads && tl.internalBinaryWrite(e.ads, t.tag(24, r.O0.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && t_.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.O0.LengthDelimited).fork(), n).join();
+    e.versions && c.u.internalBinaryWrite(e.versions, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.inbox && L.internalBinaryWrite(e.inbox, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), e.guilds && M.internalBinaryWrite(e.guilds, t.tag(3, r.O0.LengthDelimited).fork(), n).join(), e.userContent && X.internalBinaryWrite(e.userContent, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), e.textAndImages && ef.internalBinaryWrite(e.textAndImages, t.tag(6, r.O0.LengthDelimited).fork(), n).join(), e.notifications && e_.internalBinaryWrite(e.notifications, t.tag(7, r.O0.LengthDelimited).fork(), n).join(), e.privacy && em.internalBinaryWrite(e.privacy, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.debug && eE.internalBinaryWrite(e.debug, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), e.gameLibrary && eb.internalBinaryWrite(e.gameLibrary, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.status && ev.internalBinaryWrite(e.status, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), e.localization && eT.internalBinaryWrite(e.localization, t.tag(12, r.O0.LengthDelimited).fork(), n).join(), e.appearance && eR.internalBinaryWrite(e.appearance, t.tag(13, r.O0.LengthDelimited).fork(), n).join(), e.guildFolders && eM.internalBinaryWrite(e.guildFolders, t.tag(14, r.O0.LengthDelimited).fork(), n).join(), e.favorites && eV.internalBinaryWrite(e.favorites, t.tag(15, r.O0.LengthDelimited).fork(), n).join(), e.audioContextSettings && eK.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.O0.LengthDelimited).fork(), n).join(), e.communities && eq.internalBinaryWrite(e.communities, t.tag(17, r.O0.LengthDelimited).fork(), n).join(), e.broadcast && e0.internalBinaryWrite(e.broadcast, t.tag(18, r.O0.LengthDelimited).fork(), n).join(), e.clips && e2.internalBinaryWrite(e.clips, t.tag(19, r.O0.LengthDelimited).fork(), n).join(), e.forLater && te.internalBinaryWrite(e.forLater, t.tag(20, r.O0.LengthDelimited).fork(), n).join(), e.safetySettings && e8.internalBinaryWrite(e.safetySettings, t.tag(21, r.O0.LengthDelimited).fork(), n).join(), e.icymiSettings && tn.internalBinaryWrite(e.icymiSettings, t.tag(22, r.O0.LengthDelimited).fork(), n).join(), e.applications && ti.internalBinaryWrite(e.applications, t.tag(23, r.O0.LengthDelimited).fork(), n).join(), e.ads && tf.internalBinaryWrite(e.ads, t.tag(24, r.O0.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && tE.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -310,32 +310,32 @@ class P extends Chunk324281.G {
       no: 20,
       name: "for_later",
       kind: "message",
-      T: () => e5
+      T: () => te
     }, {
       no: 21,
       name: "safety_settings",
       kind: "message",
-      T: () => e6
+      T: () => e8
     }, {
       no: 22,
       name: "icymi_settings",
       kind: "message",
-      T: () => e8
+      T: () => tn
     }, {
       no: 23,
       name: "applications",
       kind: "message",
-      T: () => te
+      T: () => ti
     }, {
       no: 24,
       name: "ads",
       kind: "message",
-      T: () => tl
+      T: () => tf
     }, {
       no: 25,
       name: "in_app_feedback_settings",
       kind: "message",
-      T: () => t_
+      T: () => tE
     }])
   }
 }
@@ -1633,7 +1633,7 @@ class ed extends Chunk324281.G {
           a.goreContentSettings = es.internalBinaryRead(e, e.uint32(), n, a.goreContentSettings);
           break;
         case 33:
-          a.defaultReactionEmoji = tf.internalBinaryRead(e, e.uint32(), n, a.defaultReactionEmoji);
+          a.defaultReactionEmoji = tm.internalBinaryRead(e, e.uint32(), n, a.defaultReactionEmoji);
           break;
         case 34:
           a.showMentionSuggestions = o._t.internalBinaryRead(e, e.uint32(), n, a.showMentionSuggestions);
@@ -1659,7 +1659,7 @@ class ed extends Chunk324281.G {
     for (let n = 0; n < e.stickerPickerCollapsedSections.length; n++) t.tag(6, r.O0.LengthDelimited).string(e.stickerPickerCollapsedSections[n]);
     e.viewImageDescriptions && o._t.internalBinaryWrite(e.viewImageDescriptions, t.tag(7, r.O0.LengthDelimited).fork(), n).join(), e.showCommandSuggestions && o._t.internalBinaryWrite(e.showCommandSuggestions, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.inlineAttachmentMedia && o._t.internalBinaryWrite(e.inlineAttachmentMedia, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), e.inlineEmbedMedia && o._t.internalBinaryWrite(e.inlineEmbedMedia, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.gifAutoPlay && o._t.internalBinaryWrite(e.gifAutoPlay, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), e.renderEmbeds && o._t.internalBinaryWrite(e.renderEmbeds, t.tag(12, r.O0.LengthDelimited).fork(), n).join(), e.renderReactions && o._t.internalBinaryWrite(e.renderReactions, t.tag(13, r.O0.LengthDelimited).fork(), n).join(), e.animateEmoji && o._t.internalBinaryWrite(e.animateEmoji, t.tag(14, r.O0.LengthDelimited).fork(), n).join(), e.animateStickers && o.ZQ.internalBinaryWrite(e.animateStickers, t.tag(15, r.O0.LengthDelimited).fork(), n).join(), e.enableTtsCommand && o._t.internalBinaryWrite(e.enableTtsCommand, t.tag(16, r.O0.LengthDelimited).fork(), n).join(), e.messageDisplayCompact && o._t.internalBinaryWrite(e.messageDisplayCompact, t.tag(17, r.O0.LengthDelimited).fork(), n).join(), e.explicitContentFilter && o.ZQ.internalBinaryWrite(e.explicitContentFilter, t.tag(19, r.O0.LengthDelimited).fork(), n).join(), e.viewNsfwGuilds && o._t.internalBinaryWrite(e.viewNsfwGuilds, t.tag(20, r.O0.LengthDelimited).fork(), n).join(), e.convertEmoticons && o._t.internalBinaryWrite(e.convertEmoticons, t.tag(21, r.O0.LengthDelimited).fork(), n).join(), e.expressionSuggestionsEnabled && o._t.internalBinaryWrite(e.expressionSuggestionsEnabled, t.tag(22, r.O0.LengthDelimited).fork(), n).join(), e.viewNsfwCommands && o._t.internalBinaryWrite(e.viewNsfwCommands, t.tag(23, r.O0.LengthDelimited).fork(), n).join(), e.useLegacyChatInput && o._t.internalBinaryWrite(e.useLegacyChatInput, t.tag(24, r.O0.LengthDelimited).fork(), n).join();
     for (let n = 0; n < e.soundboardPickerCollapsedSections.length; n++) t.tag(25, r.O0.LengthDelimited).string(e.soundboardPickerCollapsedSections[n]);
-    e.dmSpamFilter && o.ZQ.internalBinaryWrite(e.dmSpamFilter, t.tag(26, r.O0.LengthDelimited).fork(), n).join(), 0 !== e.dmSpamFilterV2 && t.tag(27, r.O0.Varint).int32(e.dmSpamFilterV2), e.includeStickersInAutocomplete && o._t.internalBinaryWrite(e.includeStickersInAutocomplete, t.tag(28, r.O0.LengthDelimited).fork(), n).join(), e.explicitContentSettings && ei.internalBinaryWrite(e.explicitContentSettings, t.tag(29, r.O0.LengthDelimited).fork(), n).join(), e.keywordFilterSettings && eu.internalBinaryWrite(e.keywordFilterSettings, t.tag(30, r.O0.LengthDelimited).fork(), n).join(), e.includeSoundmojiInAutocomplete && o._t.internalBinaryWrite(e.includeSoundmojiInAutocomplete, t.tag(31, r.O0.LengthDelimited).fork(), n).join(), e.goreContentSettings && es.internalBinaryWrite(e.goreContentSettings, t.tag(32, r.O0.LengthDelimited).fork(), n).join(), e.defaultReactionEmoji && tf.internalBinaryWrite(e.defaultReactionEmoji, t.tag(33, r.O0.LengthDelimited).fork(), n).join(), e.showMentionSuggestions && o._t.internalBinaryWrite(e.showMentionSuggestions, t.tag(34, r.O0.LengthDelimited).fork(), n).join(), e.selfHarmContentSettings && el.internalBinaryWrite(e.selfHarmContentSettings, t.tag(35, r.O0.LengthDelimited).fork(), n).join(), e.isCrossDmSearchEnabled && o._t.internalBinaryWrite(e.isCrossDmSearchEnabled, t.tag(36, r.O0.LengthDelimited).fork(), n).join();
+    e.dmSpamFilter && o.ZQ.internalBinaryWrite(e.dmSpamFilter, t.tag(26, r.O0.LengthDelimited).fork(), n).join(), 0 !== e.dmSpamFilterV2 && t.tag(27, r.O0.Varint).int32(e.dmSpamFilterV2), e.includeStickersInAutocomplete && o._t.internalBinaryWrite(e.includeStickersInAutocomplete, t.tag(28, r.O0.LengthDelimited).fork(), n).join(), e.explicitContentSettings && ei.internalBinaryWrite(e.explicitContentSettings, t.tag(29, r.O0.LengthDelimited).fork(), n).join(), e.keywordFilterSettings && eu.internalBinaryWrite(e.keywordFilterSettings, t.tag(30, r.O0.LengthDelimited).fork(), n).join(), e.includeSoundmojiInAutocomplete && o._t.internalBinaryWrite(e.includeSoundmojiInAutocomplete, t.tag(31, r.O0.LengthDelimited).fork(), n).join(), e.goreContentSettings && es.internalBinaryWrite(e.goreContentSettings, t.tag(32, r.O0.LengthDelimited).fork(), n).join(), e.defaultReactionEmoji && tm.internalBinaryWrite(e.defaultReactionEmoji, t.tag(33, r.O0.LengthDelimited).fork(), n).join(), e.showMentionSuggestions && o._t.internalBinaryWrite(e.showMentionSuggestions, t.tag(34, r.O0.LengthDelimited).fork(), n).join(), e.selfHarmContentSettings && el.internalBinaryWrite(e.selfHarmContentSettings, t.tag(35, r.O0.LengthDelimited).fork(), n).join(), e.isCrossDmSearchEnabled && o._t.internalBinaryWrite(e.isCrossDmSearchEnabled, t.tag(36, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -1826,7 +1826,7 @@ class ed extends Chunk324281.G {
       no: 33,
       name: "default_reaction_emoji",
       kind: "message",
-      T: () => tf
+      T: () => tm
     }, {
       no: 34,
       name: "show_mention_suggestions",
@@ -3665,6 +3665,96 @@ let e2 = new e1;
 class e3 extends Chunk324281.G {
   create(e) {
     let t = {
+      amount: "0",
+      currency: ""
+    };
+    return globalThis.Object.defineProperty(t, a.$, {
+      enumerable: false,
+      value: this
+    }), true !== e && (0, i.x)(this, t, e), t
+  }
+  internalBinaryRead(e, t, n, i) {
+    let a = null != i ? i : this.create(),
+      s = e.pos + t;
+    for (; e.pos < s;) {
+      let [t, i] = e.tag();
+      switch (t) {
+        case 1:
+          a.amount = e.uint64().toString();
+          break;
+        case 2:
+          a.currency = e.string();
+          break;
+        default:
+          let s = n.readUnknownField;
+          if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let o = e.skip(i);
+          false !== s && (true === s ? r.f$.onRead : s)(this.typeName, a, t, i, o)
+      }
+    }
+    return a
+  }
+  internalBinaryWrite(e, t, n) {
+    "0" !== e.amount && t.tag(1, r.O0.Varint).uint64(e.amount), "" !== e.currency && t.tag(2, r.O0.LengthDelimited).string(e.currency);
+    let i = n.writeUnknownFields;
+    returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
+  }
+  constructor() {
+    super("discord_protos.discord_users.v1.SpendingLimit", [{
+      no: 1,
+      name: "amount",
+      kind: "scalar",
+      T: 4
+    }, {
+      no: 2,
+      name: "currency",
+      kind: "scalar",
+      T: 9
+    }])
+  }
+}
+let e6 = new e3;
+class e4 extends Chunk324281.G {
+  create(e) {
+    let t = {};
+    return globalThis.Object.defineProperty(t, a.$, {
+      enumerable: false,
+      value: this
+    }), true !== e && (0, i.x)(this, t, e), t
+  }
+  internalBinaryRead(e, t, n, i) {
+    let a = null != i ? i : this.create(),
+      s = e.pos + t;
+    for (; e.pos < s;) {
+      let [t, i] = e.tag();
+      if (1 === t) a.oneTimePurchaseLimit = e6.internalBinaryRead(e, e.uint32(), n, a.oneTimePurchaseLimit);
+      else {
+        let s = n.readUnknownField;
+        if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+        let o = e.skip(i);
+        false !== s && (true === s ? r.f$.onRead : s)(this.typeName, a, t, i, o)
+      }
+    }
+    return a
+  }
+  internalBinaryWrite(e, t, n) {
+    e.oneTimePurchaseLimit && e6.internalBinaryWrite(e.oneTimePurchaseLimit, t.tag(1, r.O0.LengthDelimited).fork(), n).join();
+    let i = n.writeUnknownFields;
+    returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
+  }
+  constructor() {
+    super("discord_protos.discord_users.v1.SpendingLimitSettings", [{
+      no: 1,
+      name: "one_time_purchase_limit",
+      kind: "message",
+      T: () => e6
+    }])
+  }
+}
+let e5 = new e4;
+class e7 extends Chunk324281.G {
+  create(e) {
+    let t = {
       safetySettingsPreset: 0,
       ignoreProfileSpeedbumpDisabled: false
     };
@@ -3685,6 +3775,9 @@ class e3 extends Chunk324281.G {
         case 2:
           a.ignoreProfileSpeedbumpDisabled = e.bool();
           break;
+        case 3:
+          a.spendingLimitSettings = e5.internalBinaryRead(e, e.uint32(), n, a.spendingLimitSettings);
+          break;
         default:
           let s = n.readUnknownField;
           if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -3695,7 +3788,7 @@ class e3 extends Chunk324281.G {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    0 !== e.safetySettingsPreset && t.tag(1, r.O0.Varint).int32(e.safetySettingsPreset), false !== e.ignoreProfileSpeedbumpDisabled && t.tag(2, r.O0.Varint).bool(e.ignoreProfileSpeedbumpDisabled);
+    0 !== e.safetySettingsPreset && t.tag(1, r.O0.Varint).int32(e.safetySettingsPreset), false !== e.ignoreProfileSpeedbumpDisabled && t.tag(2, r.O0.Varint).bool(e.ignoreProfileSpeedbumpDisabled), e.spendingLimitSettings && e5.internalBinaryWrite(e.spendingLimitSettings, t.tag(3, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -3710,11 +3803,16 @@ class e3 extends Chunk324281.G {
       name: "ignore_profile_speedbump_disabled",
       kind: "scalar",
       T: 8
+    }, {
+      no: 3,
+      name: "spending_limit_settings",
+      kind: "message",
+      T: () => e5
     }])
   }
 }
-let e6 = new e3;
-class e4 extends Chunk324281.G {
+let e8 = new e7;
+class e9 extends Chunk324281.G {
   create(e) {
     let t = {
       currentTab: 0
@@ -3753,8 +3851,8 @@ class e4 extends Chunk324281.G {
     }])
   }
 }
-let e5 = new e4;
-class e7 extends Chunk324281.G {
+let te = new e9;
+class tt extends Chunk324281.G {
   create(e) {
     let t = {
       feedGeneratedAt: "0"
@@ -3793,8 +3891,8 @@ class e7 extends Chunk324281.G {
     }])
   }
 }
-let e8 = new e7;
-class e9 extends Chunk324281.G {
+let tn = new tt;
+class tr extends Chunk324281.G {
   create(e) {
     let t = {
       appSettings: {}
@@ -3830,16 +3928,16 @@ class e9 extends Chunk324281.G {
           a = t.fixed64().toString();
           break;
         case 2:
-          s = tn.internalBinaryRead(t, t.uint32(), n);
+          s = ts.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.AllApplicationSettings.app_settings")
       }
     }
-    e[null != a ? a : "0"] = null != s ? s : tn.create()
+    e[null != a ? a : "0"] = null != s ? s : ts.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.appSettings)) t.tag(1, r.O0.LengthDelimited).fork().tag(1, r.O0.Bit64).fixed64(i), t.tag(2, r.O0.LengthDelimited).fork(), tn.internalBinaryWrite(e.appSettings[i], t, n), t.join().join();
+    for (let i of Object.keys(e.appSettings)) t.tag(1, r.O0.LengthDelimited).fork().tag(1, r.O0.Bit64).fixed64(i), t.tag(2, r.O0.LengthDelimited).fork(), ts.internalBinaryWrite(e.appSettings[i], t, n), t.join().join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -3851,13 +3949,13 @@ class e9 extends Chunk324281.G {
       K: 6,
       V: {
         kind: "message",
-        T: () => tn
+        T: () => ts
       }
     }])
   }
 }
-let te = new e9;
-class tt extends Chunk324281.G {
+let ti = new tr;
+class ta extends Chunk324281.G {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.$, {
@@ -3872,10 +3970,10 @@ class tt extends Chunk324281.G {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.appDmSettings = ti.internalBinaryRead(e, e.uint32(), n, a.appDmSettings);
+          a.appDmSettings = tl.internalBinaryRead(e, e.uint32(), n, a.appDmSettings);
           break;
         case 2:
-          a.appSharingSettings = ts.internalBinaryRead(e, e.uint32(), n, a.appSharingSettings);
+          a.appSharingSettings = tu.internalBinaryRead(e, e.uint32(), n, a.appSharingSettings);
           break;
         default:
           let s = n.readUnknownField;
@@ -3887,7 +3985,7 @@ class tt extends Chunk324281.G {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.appDmSettings && ti.internalBinaryWrite(e.appDmSettings, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.appSharingSettings && ts.internalBinaryWrite(e.appSharingSettings, t.tag(2, r.O0.LengthDelimited).fork(), n).join();
+    e.appDmSettings && tl.internalBinaryWrite(e.appDmSettings, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.appSharingSettings && tu.internalBinaryWrite(e.appSharingSettings, t.tag(2, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -3896,17 +3994,17 @@ class tt extends Chunk324281.G {
       no: 1,
       name: "app_dm_settings",
       kind: "message",
-      T: () => ti
+      T: () => tl
     }, {
       no: 2,
       name: "app_sharing_settings",
       kind: "message",
-      T: () => ts
+      T: () => tu
     }])
   }
 }
-let tn = new tt;
-class tr extends Chunk324281.G {
+let ts = new ta;
+class to extends Chunk324281.G {
   create(e) {
     let t = {
       allowMobilePush: false
@@ -3945,8 +4043,8 @@ class tr extends Chunk324281.G {
     }])
   }
 }
-let ti = new tr;
-class ta extends Chunk324281.G {
+let tl = new to;
+class tc extends Chunk324281.G {
   create(e) {
     let t = {
       disableApplicationActivitySharing: false
@@ -3985,8 +4083,8 @@ class ta extends Chunk324281.G {
     }])
   }
 }
-let ts = new ta;
-class to extends Chunk324281.G {
+let tu = new tc;
+class td extends Chunk324281.G {
   create(e) {
     let t = {
       alwaysDeliver: false
@@ -4025,8 +4123,8 @@ class to extends Chunk324281.G {
     }])
   }
 }
-let tl = new to;
-class tc extends Chunk324281.G {
+let tf = new td;
+class tp extends Chunk324281.G {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.$, {
@@ -4074,8 +4172,8 @@ class tc extends Chunk324281.G {
     }])
   }
 }
-let tu = new tc;
-class td extends Chunk324281.G {
+let t_ = new tp;
+class th extends Chunk324281.G {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.$, {
@@ -4139,8 +4237,8 @@ class td extends Chunk324281.G {
     }])
   }
 }
-let tf = new td;
-class tp extends Chunk324281.G {
+let tm = new th;
+class tg extends Chunk324281.G {
   create(e) {
     let t = {
       inAppFeedbackStates: {}
@@ -4176,16 +4274,16 @@ class tp extends Chunk324281.G {
           a = t.int32();
           break;
         case 2:
-          s = tu.internalBinaryRead(t, t.uint32(), n);
+          s = t_.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.InAppFeedbackSettings.in_app_feedback_states")
       }
     }
-    e[null != a ? a : 0] = null != s ? s : tu.create()
+    e[null != a ? a : 0] = null != s ? s : t_.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.inAppFeedbackStates)) t.tag(1, r.O0.LengthDelimited).fork().tag(1, r.O0.Varint).int32(parseInt(i)), t.tag(2, r.O0.LengthDelimited).fork(), tu.internalBinaryWrite(e.inAppFeedbackStates[i], t, n), t.join().join();
+    for (let i of Object.keys(e.inAppFeedbackStates)) t.tag(1, r.O0.LengthDelimited).fork().tag(1, r.O0.Varint).int32(parseInt(i)), t.tag(2, r.O0.LengthDelimited).fork(), t_.internalBinaryWrite(e.inAppFeedbackStates[i], t, n), t.join().join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -4197,9 +4295,9 @@ class tp extends Chunk324281.G {
       K: 5,
       V: {
         kind: "message",
-        T: () => tu
+        T: () => t_
       }
     }])
   }
 }
-let t_ = new tp
+let tE = new tg
