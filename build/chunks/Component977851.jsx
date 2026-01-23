@@ -120,7 +120,7 @@ function x(e) {
       }
     }(n),
     w = l.useCallback(() => {
-      (0, p.X)(E, p.O.CHAT, !I), null == h || h(), !I && g && (null == A || A()), c.A.updateChatOpen(n, !I)
+      (0, p.X)(E, p.O.CHAT, !I), null == h || h(), !I && g && (null == A || A()), c.A.updateChatOpen(n, !I, "toggle chat button")
     }, [n, I, h, g, A, E]),
     R = l.useCallback(e => {
       let {

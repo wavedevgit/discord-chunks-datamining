@@ -2,7 +2,7 @@
 /** chunk id: 343547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => D
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,7 +21,6 @@ var Chunk503698 = require("./503698.js"),
   Chunk780964 = require("./780964.js"),
   Chunk840065 = require("./840065.jsx"),
   Chunk975571 = require("./975571.js"),
-  Chunk84483 = require("./84483.js"),
   Chunk749082 = require("./749082.jsx"),
   Chunk385243 = require("./385243.jsx"),
   Chunk652215 = require("./652215.js"),
@@ -32,81 +31,79 @@ var Chunk503698 = require("./503698.js"),
   Chunk785619 = require("./785619.js"),
   Chunk909340 = require("./909340.js"),
   Chunk455482 = require("./455482.js");
-let w = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
-  P = 720;
+let R = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
+  w = 720;
 
-function D(e, t, n) {
-  let i = e.program_current_state,
-    a = null != e.next_reward_date && "" !== e.next_reward_date ? (0, s.default)(new Date(e.next_reward_date), new Date) : null,
-    o = null == e ? true : e.total_rewarded_from_program;
-  switch (i) {
+function P(e, t) {
+  let n = e.program_current_state,
+    i = null != e.next_reward_date && "" !== e.next_reward_date ? (0, s.default)(new Date(e.next_reward_date), new Date) : null,
+    a = null == e ? true : e.total_rewarded_from_program;
+  switch (n) {
     case _.L.ACTIVE:
-      if (null == a || a < 0) return null;
+      if (null == i || i < 0) return null;
       return {
-        displayTotalLifetimeRewards: null != o, displayProgressBar: true, actionButton: (0, r.jsx)(c.$nd, {
-          text: T.intl.string(S.default.BxjHiu),
+        displayTotalLifetimeRewards: null != a, displayProgressBar: true, actionButton: (0, r.jsx)(c.$nd, {
+          text: S.intl.string(I.default.BxjHiu),
           variant: t ? "overlay-primary" : "secondary",
-          onClick: () => (0, h.pX)(I.BV.COLLECTIBLES_SHOP_WITH_TAB(A.G2.ORBS))
-        }), headerText: T.intl.format(S.default.cfE8Oh, {
-          days: Math.max(1, a)
-        }), subheaderText: T.intl.format(S.default.JCLEQp, {
-          orbsCount: n,
-          helpdeskArticle: w
+          onClick: () => (0, h.pX)(A.BV.COLLECTIBLES_SHOP_WITH_TAB(v.G2.ORBS))
+        }), headerText: S.intl.format(I.default.cfE8Oh, {
+          days: Math.max(1, i)
+        }), subheaderText: S.intl.format(I.default["53tWRt"], {
+          helpdeskArticle: R
         })
       };
     case _.L.PAYMENT_PROCESSING:
       return {
         displayTotalLifetimeRewards: false, displayProgressBar: false, actionButton: (0, r.jsx)(c.$nd, {
-          text: T.intl.string(S.default.KVCfnE),
+          text: S.intl.string(I.default.KVCfnE),
           variant: t ? "overlay-primary" : "secondary",
           onClick: () => (0, g.openUserSettings)(m.X.BILLING_PANEL, {
-            section: v.nc_.BILLING
+            section: O.nc_.BILLING
           })
-        }), headerText: T.intl.string(S.default.uuZJXR), subheaderText: T.intl.format(S.default.dkeEV7, {
-          helpdeskArticle: w
+        }), headerText: S.intl.string(I.default.uuZJXR), subheaderText: S.intl.format(I.default.dkeEV7, {
+          helpdeskArticle: R
         })
       };
     case _.L.PAYMENT_ERROR:
       return {
-        displayTotalLifetimeRewards: null != o, displayProgressBar: false, actionButton: (0, r.jsx)(c.$nd, {
-          text: T.intl.string(S.default.KVCfnE),
+        displayTotalLifetimeRewards: null != a, displayProgressBar: false, actionButton: (0, r.jsx)(c.$nd, {
+          text: S.intl.string(I.default.KVCfnE),
           variant: "critical-secondary",
           onClick: () => (0, g.openUserSettings)(m.X.BILLING_PANEL, {
-            section: v.nc_.BILLING
+            section: O.nc_.BILLING
           })
-        }), headerText: T.intl.string(S.default["+O9Asn"]), subheaderText: T.intl.format(S.default.nWKEBZ, {
-          helpdeskArticle: w
+        }), headerText: S.intl.string(I.default["+O9Asn"]), subheaderText: S.intl.format(I.default.nWKEBZ, {
+          helpdeskArticle: R
         })
       };
     case _.L.PROGRAM_ROLLBACK:
       return {
-        displayTotalLifetimeRewards: null != o, displayProgressBar: null != a, actionButton: (0, r.jsx)(c.$nd, {
-          text: T.intl.string(S.default["wLAd/+"]),
+        displayTotalLifetimeRewards: null != a, displayProgressBar: null != i, actionButton: (0, r.jsx)(c.$nd, {
+          text: S.intl.string(I.default["wLAd/+"]),
           variant: t ? "overlay-primary" : "secondary",
-          onClick: () => (0, h.pX)(I.BV.COLLECTIBLES_SHOP_WITH_TAB(A.G2.ORBS))
-        }), headerText: T.intl.string(S.default.zF0HnJ), subheaderText: T.intl.format(S.default["5tzNTa"], {
-          helpdeskArticle: w
+          onClick: () => (0, h.pX)(A.BV.COLLECTIBLES_SHOP_WITH_TAB(v.G2.ORBS))
+        }), headerText: S.intl.string(I.default.zF0HnJ), subheaderText: S.intl.format(I.default["5tzNTa"], {
+          helpdeskArticle: R
         })
       };
     case _.L.PREMIUM_CHURNING:
       return {
-        displayTotalLifetimeRewards: null != o, displayProgressBar: null != a, actionButton: (0, r.jsx)(c.$nd, {
-          text: T.intl.string(S.default.FToh6D),
+        displayTotalLifetimeRewards: null != a, displayProgressBar: null != i, actionButton: (0, r.jsx)(c.$nd, {
+          text: S.intl.string(I.default.FToh6D),
           variant: t ? "overlay-primary" : "secondary",
           icon: c.tvc,
           onClick: () => (0, g.openUserSettings)(m.X.BILLING_PANEL, {
-            section: v.nc_.BILLING
+            section: O.nc_.BILLING
           })
-        }), headerText: T.intl.string(S.default.ISnOet), subheaderText: T.intl.format(S.default.agletO, {
-          orbsCount: n,
-          helpdeskArticle: w
+        }), headerText: S.intl.string(I.default.ISnOet), subheaderText: S.intl.format(I.default["vjaRZ/"], {
+          helpdeskArticle: R
         })
       };
     default:
       return null
   }
 }
-let x = e => {
+let D = e => {
   let {
     className: t
   } = e, {
@@ -115,77 +112,75 @@ let x = e => {
   } = (0, o.cf)([p.A], () => ({
     passesGeneralUIInvariant: p.A.passesGeneralUIInvariant(_.W.NITRO),
     programReward: p.A.getRewardForProgram(_.W.NITRO)
-  })), s = (0, d.A)("(min-width: ".concat(P, "px)")), {
-    orbsRewardAmount: h
-  } = (0, y.uX)("PremiumTenureRewardsOrbsCard");
+  })), s = (0, d.A)("(min-width: ".concat(w, "px)"));
   if (!n || null == i) return null;
-  let m = D(i, s, h);
-  if (null == m) return null;
+  let h = P(i, s);
+  if (null == h) return null;
   let {
-    displayTotalLifetimeRewards: g,
-    displayProgressBar: E,
-    actionButton: v,
-    headerText: A,
-    subheaderText: I
-  } = m;
+    displayTotalLifetimeRewards: m,
+    displayProgressBar: g,
+    actionButton: E,
+    headerText: O,
+    subheaderText: v
+  } = h;
   return (0, r.jsxs)("div", {
-    className: a()(C.Hc, t),
+    className: a()(T.Hc, t),
     children: [(0, r.jsx)("div", {
-      className: C.aZ,
+      className: T.aZ,
       children: (0, r.jsx)(c.Exy, {
         type: "beta",
         variant: "expressive"
       })
-    }), (0, r.jsxs)(b.A, {
+    }), (0, r.jsxs)(y.A, {
       cardType: u.sl2.CUSTOM,
-      cardClassName: C.Nr,
+      cardClassName: T.Nr,
       children: [(0, r.jsx)(f.A, {
         muted: true,
         autoPlay: true,
         playsInline: true,
         loop: true,
-        className: C.Ki,
-        src: N.A
+        className: T.Ki,
+        src: C.A
       }), (0, r.jsxs)("div", {
-        className: C.zK,
+        className: T.zK,
         children: [(0, r.jsx)("img", {
-          src: R.A,
-          className: C._e,
+          src: N.A,
+          className: T._e,
           alt: "",
           "aria-hidden": true
         }), (0, r.jsx)("div", {
-          className: C.mR
+          className: T.mR
         })]
       }), (0, r.jsxs)("div", {
-        className: C.FS,
+        className: T.FS,
         children: [(0, r.jsx)(c.DZT, {
           variant: "heading-xxl/bold",
-          className: C.R_,
-          children: A
+          className: T.R_,
+          children: O
         }), (0, r.jsx)(c.EYj, {
           variant: "text-md/medium",
-          className: C.G3,
-          children: I
-        }), E && (0, r.jsx)(O.A, {
-          className: C.L$
-        }), g && (0, r.jsxs)("div", {
-          className: C.fB,
+          className: T.G3,
+          children: v
+        }), g && (0, r.jsx)(b.A, {
+          className: T.L$
+        }), m && (0, r.jsxs)("div", {
+          className: T.fB,
           children: [(0, r.jsx)(c.EYj, {
             variant: "text-md/medium",
-            className: C.G3,
-            children: T.intl.string(S.default["/1mWUn"])
+            className: T.G3,
+            children: S.intl.string(I.default["/1mWUn"])
           }), (0, r.jsx)(c.Cp8, {
             size: "sm",
             color: l.A.colors.TEXT_DEFAULT.css
           }), (0, r.jsx)(c.EYj, {
             variant: "text-md/medium",
-            className: C.G3,
+            className: T.G3,
             children: i.total_rewarded_from_program
           })]
         }), (0, r.jsx)("div", {
-          className: C.WT,
+          className: T.WT,
           children: (0, r.jsx)(c.e2v, {
-            children: v
+            children: E
           })
         })]
       })]

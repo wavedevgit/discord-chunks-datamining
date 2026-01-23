@@ -33,7 +33,7 @@ let O = function(e) {
     })
   }, []);
   let j = l.useCallback(() => {
-      a.A.updateChatOpen(t.id, false), g._.safeDispatch(b.jej.FOCUS_CHAT_BUTTON)
+      a.A.updateChatOpen(t.id, false, "close button"), g._.safeDispatch(b.jej.FOCUS_CHAT_BUTTON)
     }, [t.id]),
     v = (0, r.jsx)(h.Ay.Icon, {
       icon: s.PGe,

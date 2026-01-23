@@ -50,7 +50,7 @@ let T = {
     if (null != i && (null == l ? true : l.type) === d.PE.CREATE_THREAD) return u.A.closeChannelSidebar(i), false;
     let f = N(i),
       p = N(c);
-    return null == i || f || p || null == l ? null != i && !f && s.A.getChatOpen(i) ? r.A.updateChatOpen(i, false) : I._.dispatch(S.jej.SCROLLTO_PRESENT) : u.A.closeChannelSidebar(i), false
+    return null == i || f || p || null == l ? null != i && !f && s.A.getChatOpen(i) ? r.A.updateChatOpen(i, false, "esc keybind") : I._.dispatch(S.jej.SCROLLTO_PRESENT) : u.A.closeChannelSidebar(i), false
   }
 };
 

@@ -2,15 +2,17 @@
 /** chunk id: 367513, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => u
+  A: () => f
 });
 var Chunk73153 = require("./73153.js"),
   Chunk58149 = require("./58149.js"),
+  Chunk134047 = require("./134047.js"),
+  Chunk734057 = require("./734057.js"),
   Chunk954571 = require("./954571.js"),
   Chunk203982 = require("./203982.js"),
   Chunk652215 = require("./652215.js");
 
-function l(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,19 +21,19 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      l(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
-let u = {
+let f = {
   rebuildRTCActiveChannels() {
     r.h.dispatch({
       type: "CHANNEL_RTC_ACTIVE_CHANNELS"
@@ -59,8 +61,8 @@ let u = {
     })
   },
   updateLayout(e, t) {
-    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.BRT.APP;
-    a.default.track(o.HAw.VIDEO_LAYOUT_TOGGLED, c({
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : c.BRT.APP;
+    o.default.track(c.HAw.VIDEO_LAYOUT_TOGGLED, d({
       video_layout: t
     }, (0, i.QS)(e))), r.h.dispatch({
       type: "CHANNEL_RTC_UPDATE_LAYOUT",
@@ -104,16 +106,26 @@ let u = {
       dismissed: t
     })
   },
-  updateChatOpen(e, t) {
-    r.h.dispatch({
-      type: "CHANNEL_RTC_UPDATE_CHAT_OPEN",
-      channelId: e,
-      chatOpen: t
-    }), t ? setTimeout(() => {
-      s._.dispatch(o.jej.FOCUS_CHANNEL_TEXT_AREA, {
+  updateChatOpen(e, t, n) {
+    if (r.h.dispatch({
+        type: "CHANNEL_RTC_UPDATE_CHAT_OPEN",
+        channelId: e,
+        chatOpen: t
+      }), t) setTimeout(() => {
+      l._.dispatch(c.jej.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       })
-    }, 0) : s._.dispatch(o.jej.FOCUS_CHAT_BUTTON)
+    }, 0);
+    else if (l._.dispatch(c.jej.FOCUS_CHAT_BUTTON), a.M.getConfig({
+        location: "ChannelCall"
+      }).collectAnalytics) {
+      var i;
+      o.default.track(c.HAw.TEXT_IN_VOICE_CLOSED, {
+        reason: n,
+        channel_id: e,
+        guild_id: null == (i = s.A.getChannel(e)) ? true : i.getGuildId()
+      })
+    }
   },
   jumpToVoiceChannelMessage(e, t, n, i) {
     r.h.dispatch({

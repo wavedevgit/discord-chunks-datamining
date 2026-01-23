@@ -251,15 +251,12 @@ let en = e => ({
         videoUrl: P.noLimits.assetUrl
       },
       {
-        orbsRewardAmount: F,
-        isInTreatment: B
+        isInTreatment: F
       } = (0, m.uX)("useBentoBoxes"),
-      H = {
+      B = {
         name: "orbRewards",
         title: v.intl.string(O.default["ZFJ/NU"]),
-        description: v.intl.formatToPlainString(O.default.VuvFfT, {
-          orbsCount: F
-        }),
+        description: v.intl.string(O.default.wMi514),
         descriptionCta: v.intl.string(v.t.hvVgAZ),
         onClick: () => {
           window.open(_.A.getArticleURL(E.MVz.ORBS_REWARDS_FAQ), "_blank")
@@ -270,25 +267,25 @@ let en = e => ({
         badgeText: v.intl.string(v.t.oW0eUd).toLocaleUpperCase(),
         badgeVariant: "expressive"
       },
-      Y = [
+      H = [
         [k],
         [U],
         [G, V]
       ];
     return {
-      whatsNewBoxes: e = T ? B ? [
+      whatsNewBoxes: e = T ? F ? [
         [M],
-        [H, x]
+        [B, x]
       ] : [
         [M],
         [D, x]
-      ] : B ? [
-        [H],
+      ] : F ? [
+        [B],
         [D, x]
       ] : [
         [j],
         [L, x]
       ],
-      bestOfBoxes: Y
+      bestOfBoxes: H
     }
   }

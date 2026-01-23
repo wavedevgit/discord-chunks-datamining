@@ -22,7 +22,7 @@ let _ = {
     let e = f.A.getGuildId(),
       t = d.A.getChannelId(e),
       n = u.A.getChannel(t);
-    if (null != t && null != n && n.type === r.r.GUILD_VOICE) return i.A.updateChatOpen(t, !s.A.getChatOpen(t)), false;
+    if (null != t && null != n && n.type === r.r.GUILD_VOICE) return i.A.updateChatOpen(t, !s.A.getChatOpen(t), "toggle users keybind"), false;
     if (null != t && null != n && n.type === r.r.DM) {
       let e = c.Ay.getSection(t, null == n ? true : n.isDM()),
         r = (0, l.AP)(n.getRecipientId()),
