@@ -241,10 +241,7 @@ let Q = Chunk64700.forwardRef(function(e, t) {
     }, [n, u]), a.useEffect(() => {
       let e = n.document.documentElement;
       c()(null != e, "Window document element was null"), e.setAttribute("lang", l)
-    }, [n, l]), a.useEffect(() => {
-      let e = n.document.documentElement;
-      c()(null != e, "Window document element was null"), e.className = d
-    }, [n, d]), (0, i.jsx)("div", {
+    }, [n, l]), (0, i.jsx)("div", {
       "data-popout-root": true,
       ref: t,
       className: o()(d, r),
