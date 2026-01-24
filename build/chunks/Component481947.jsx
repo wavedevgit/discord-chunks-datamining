@@ -283,7 +283,7 @@ let U = function(e) {
     displayNameStyles: q
   }), X = (0, p.v)({
     isSpeaking: R,
-    isLatched: L,
+    isLatched: L && !M && !U,
     voiceDb: x
   }), Q = e => {
     null == g || g(e, z)

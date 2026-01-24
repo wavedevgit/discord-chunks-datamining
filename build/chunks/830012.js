@@ -3,8 +3,10 @@
 "use strict";
 
 function r(e, t) {
-  return null != t && e.startsWith("window:".concat(t))
+  if (null == t) returnfalse;
+  let [n, r] = e.split(":");
+  return "window" === n && r === t
 }
 require.d(exports, {
   A: () => r
-})
+}), require("./896048.js"), require("./747238.js")

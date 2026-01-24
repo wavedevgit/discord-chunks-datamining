@@ -100,7 +100,7 @@ var P = function(e) {
 }({});
 
 function D(e) {
-  return u.default.getId() === e && _.A.isCurrentUserPTTLatched()
+  return !(u.default.getId() !== e || p.A.isMute()) && _.A.isCurrentUserPTTLatched()
 }
 class x {
   get version() {
