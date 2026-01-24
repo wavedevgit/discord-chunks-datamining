@@ -2,13 +2,15 @@
 /** chunk id: 493507, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => g
+  A: () => b
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
-  Chunk961350 = require("./961350.js");
+  Chunk961350 = require("./961350.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk469679 = require("./469679.js");
 
-function o(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,76 +18,84 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let l = 3 * require("./927813.js").A.Millis.DAY,
-  c = {};
+let u = 3 * Chunk927813.A.Millis.DAY,
+  d = {};
 
-function u(e) {
+function f() {
+  return l.T.getConfig({
+    location: "ReplyNudgeStore"
+  }).enabled
+}
+
+function p(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Date.now(),
     n = {};
-  for (let [r, i] of Object.entries(e)) null != i && t - i < l && (n[r] = i);
+  for (let [r, i] of Object.entries(e)) null != i && t - i < u && (n[r] = i);
   return n
 }
 
-function d(e) {
+function _(e) {
   let {
     channelId: t,
     timestamp: n
   } = e;
-  if (t in c) returnfalse;
-  c[t] = n
+  if (t in d) returnfalse;
+  d[t] = n
 }
 
-function f(e) {
+function h(e) {
   let {
     message: t
   } = e;
-  delete c[t.channel_id]
+  if (!(t.channel_id in d)) returnfalse;
+  delete d[t.channel_id]
 }
 
-function p(e) {
+function m(e) {
   let {
     channelId: t,
     userId: n
   } = e;
-  if (n !== s.default.getId()) returnfalse;
-  delete c[t]
+  if (n !== s.default.getId() || !(t in d)) returnfalse;
+  delete d[t]
 }
 
-function _(e) {
+function g(e) {
   let {
     channel: {
       id: t
     }
   } = e;
-  delete c[t]
+  if (!(t in d)) returnfalse;
+  delete d[t]
 }
 
-function h() {
-  c = {}
+function E() {
+  d = {}
 }
-class m extends(r = Chunk311907.Ay.PersistedStore) {
+class y extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
-    c = u(null != (t = null == e ? true : e.nudgedChannels) ? t : {}), this.waitFor(s.default)
+    d = p(null != (t = null == e ? true : e.nudgedChannels) ? t : {}), this.waitFor(s.default)
   }
   getState() {
     return {
-      nudgedChannels: c
+      nudgedChannels: d
     }
   }
   getNudgeTimestamp(e) {
     var t;
-    return null != (t = c[e]) ? t : null
+    return f() && null != (t = d[e]) ? t : null
   }
   isChannelNudged(e) {
     return null != this.getNudgeTimestamp(e)
   }
 }
-o(m, "displayName", "ReplyNudgeStore"), o(m, "persistKey", "ReplyNudgeStore");
-let g = new m(Chunk73153.h, {
-  REPLY_NUDGE_SET: d,
-  MESSAGE_CREATE: f,
-  MESSAGE_REACTION_ADD: p,
-  CHANNEL_DELETE: _,
-  LOGOUT: h
+c(y, "displayName", "ReplyNudgeStore"), c(y, "persistKey", "ReplyNudgeStore");
+let b = new y(Chunk73153.h, {
+  REPLY_NUDGE_SET: _,
+  MESSAGE_CREATE: h,
+  MESSAGE_REACTION_ADD: m,
+  CHANNEL_DELETE: g,
+  LOGOUT: E
 })
