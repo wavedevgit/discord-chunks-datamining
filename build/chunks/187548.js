@@ -27,13 +27,13 @@ class p extends Chunk439372.A {
     let {
       channelId: t
     } = e;
-    u.U.getState().isEnabled && null != t && this.findAndWatchStream()
+    u.Uq.getState().isEnabled && null != t && this.findAndWatchStream()
   }
   handleVoiceStateUpdates(e) {
     let {
       voiceStates: t
     } = e;
-    if (!u.U.getState().isEnabled) return;
+    if (!u.Uq.getState().isEnabled) return;
     let n = c.A.getVoiceChannelId();
     null != n && t.forEach(e => {
       if (e.channelId !== n) return;

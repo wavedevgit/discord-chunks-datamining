@@ -51,24 +51,24 @@ let U = Chunk64700.memo(e => {
   } = e, T = A.id, G = (0, a.bG)([C.default], () => C.default.getId() === T, [T]), [U, B, V] = (0, a.yK)([I.A], () => G ? [!I.A.isSupported() || I.A.isSelfMute() || I.A.isSelfMutedTemporarily(), I.A.isSelfDeaf(), false] : [!I.A.isSupported() || I.A.isLocalMute(T), false, I.A.isLocalVideoDisabled(T)], [G, T]), F = (0, a.bG)([w.A], () => w.A.isPrioritySpeaker(T)), H = (0, c.A)({
     userId: T,
     checkSoundSharing: true
-  }), K = (0, a.bG)([w.A], () => w.A.getVoiceVolume(T), [T]), W = (0, a.bG)([w.A], () => w.A.isCurrentUserPTTLatched()), z = G && W, Y = (0, a.bG)([S.Ay], () => S.Ay.isGuestOrLurker(y.guild_id, T)), q = (0, a.bG)([h.A], () => h.A.getGuildRingingUsers(y.id).has(T)), X = (0, a.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(y.id).find(e => {
+  }), K = (0, a.bG)([w.A], () => w.A.isCurrentUserPTTLatched()), W = G && K, z = (0, a.bG)([S.Ay], () => S.Ay.isGuestOrLurker(y.guild_id, T)), Y = (0, a.bG)([h.A], () => h.A.getGuildRingingUsers(y.id).has(T)), q = (0, a.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(y.id).find(e => {
     let {
       userIds: t
     } = e;
     return t.has(T)
-  }), [T, y.id]), J = (0, p.A)(null != X ? [X.applicationId] : []), Q = (0, j.A)(T, y.guild_id)[0], Z = null != (t = (0, d.YY)(null == Q ? true : Q.application_id).data) ? t : true, [$, ee] = (0, a.yK)([E.A], () => [E.A.getStreamForUser(T, y.getGuildId()), E.A.getActiveStreamForUser(T, y.getGuildId())], [y, T]), et = (0, a.bG)([P.A], () => P.A.getSessionById(x)), en = D.Ay.useName(A), er = (0, a.bG)([R.A], () => R.A.getVoicePlatformForChannel(y.id, T), [y.id, T]), {
-    enableHangStatus: el
+  }), [T, y.id]), X = (0, p.A)(null != q ? [q.applicationId] : []), J = (0, j.A)(T, y.guild_id)[0], Q = null != (t = (0, d.YY)(null == J ? true : J.application_id).data) ? t : true, [Z, $] = (0, a.yK)([E.A], () => [E.A.getStreamForUser(T, y.getGuildId()), E.A.getActiveStreamForUser(T, y.getGuildId())], [y, T]), ee = (0, a.bG)([P.A], () => P.A.getSessionById(x)), et = D.Ay.useName(A), en = (0, a.bG)([R.A], () => R.A.getVoicePlatformForChannel(y.id, T), [y.id, T]), {
+    enableHangStatus: er
   } = (0, g.$j)({
     guildId: y.guild_id,
     location: "VoiceUsers"
-  }), ei = (0, f.Ay)(y, true, A), es = (0, a.bG)([m.A], () => G ? m.A.getHangStatusActivity() : null, [G]), ea = (0, b.h)(T), eo = (0, v.uy)(y.id, T), {
-    enableVCStatusIcons: ec,
-    enableRequestToStream: eu
+  }), el = (0, f.Ay)(y, true, A), ei = (0, a.bG)([m.A], () => G ? m.A.getHangStatusActivity() : null, [G]), es = (0, b.h)(T), ea = (0, v.uy)(y.id, T), {
+    enableVCStatusIcons: eo,
+    enableRequestToStream: ec
   } = O.m.useExperiment({
     guildId: y.guild_id,
     location: "VoiceUsers"
   }, {
-    autoTrackExposure: (null == Q ? true : Q.session_id) != null
+    autoTrackExposure: (null == J ? true : J.session_id) != null
   });
   return (0, r.jsx)(_.A, {
     shakeLocation: k.uD.VOICE_USER,
@@ -91,29 +91,28 @@ let U = Chunk64700.memo(e => {
       }
       return e
     }({}, e), i = i = {
-      nick: null != N ? N : en,
-      canDrag: e.canDrag && !Y,
-      disconnected: eo,
-      otherClientSessionType: null == et || null == (n = et.clientInfo) ? true : n.os,
-      voicePlatform: er,
+      nick: null != N ? N : et,
+      canDrag: e.canDrag && !z,
+      disconnected: ea,
+      otherClientSessionType: null == ee || null == (n = ee.clientInfo) ? true : n.os,
+      voicePlatform: en,
       localMute: U && !G,
       localVideoDisabled: V,
       mute: s || U,
       deaf: o || B,
       speaking: H,
-      voiceDb: K,
-      latched: z,
-      ringing: q,
+      latched: W,
+      ringing: Y,
       priority: F,
-      embeddedApplication: J[0],
-      isStreaming: null != $ && $.channelId === y.id,
-      isWatching: null != ee && ee.state !== L.XYD.ENDED,
-      isGuest: Y,
+      embeddedApplication: X[0],
+      isStreaming: null != Z && Z.channelId === y.id,
+      isWatching: null != $ && $.state !== L.XYD.ENDED,
+      isGuest: z,
       isSelf: G,
-      requestToStreamActivity: eu ? Q : true,
-      application: (ec || el) && (null == Q ? true : Q.session_id) != null ? Z : true,
-      showHangStatus: ei && el && (G || null != ea),
-      hangStatusActivity: G ? es : ea
+      requestToStreamActivity: ec ? J : true,
+      application: (eo || er) && (null == J ? true : J.session_id) != null ? Q : true,
+      showHangStatus: el && er && (G || null != es),
+      hangStatusActivity: G ? ei : es
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

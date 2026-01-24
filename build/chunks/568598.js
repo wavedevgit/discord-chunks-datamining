@@ -146,17 +146,18 @@ class x {
     var t, n;
     return null != (t = null == (n = this.participants[e]) ? true : n.reduce((t, n) => {
       if (n.type === b.lp.USER) {
-        let t = (0, a.R)({
-          userId: e,
-          checkIsMuted: true
-        });
-        return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, T(I({}, n), {
-          speaking: t,
-          voiceDb: _.A.getVoiceVolume(e),
-          latched: D(e),
+        let r = (0, a.R)({
+            userId: e,
+            checkIsMuted: true
+          }),
+          i = D(e),
+          s = _.A.isSoundSharing(e);
+        return n.speaking === r && n.latched === i && n.soundsharing === s ? t : (r && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, T(I({}, n), {
+          speaking: r,
+          latched: i,
           lastSpoke: this.lastSpoke[e],
-          soundsharing: _.A.isSoundSharing(e)
-        })), true
+          soundsharing: s
+        })), true)
       }
       return t
     }, false)) && t
@@ -218,7 +219,6 @@ class x {
         userId: e,
         checkIsMuted: true
       }),
-      voiceDb: _.A.getVoiceVolume(e),
       latched: D(e),
       lastSpoke: null != (s = this.lastSpoke[e]) ? s : 0,
       soundsharing: _.A.isSoundSharing(e),
