@@ -38,27 +38,29 @@ let p = {
       fit: m = "layout",
       glowAmount: g = 8,
       blurAmount: E = 30,
-      isReducedMotion: y
-    } = e, b = i.useRef(null), O = i.useRef(null), {
-      status: v,
-      buffer: A
-    } = (0, u.CE)(o.A), I = i.useContext(l.C), S = null != y ? y : I.reducedMotion.enabled, T = {
+      hueRotate: y = 0,
+      isReducedMotion: b
+    } = e, O = i.useRef(null), v = i.useRef(null), {
+      status: A,
+      buffer: I
+    } = (0, u.CE)(o.A), S = i.useContext(l.C), T = null != b ? b : S.reducedMotion.enabled, C = {
       "--custom-glow-amount": "".concat(g, "px"),
-      "--custom-blur-amount": "".concat(E, "px")
+      "--custom-blur-amount": "".concat(E, "px"),
+      "--custom-hue-rotate": "".concat(y, "deg")
     };
     return (0, r.jsxs)("div", {
-      ref: b,
+      ref: O,
       className: s()(f.kL, n),
-      style: T,
-      children: [v !== u.BW.Loading && (0, r.jsx)(c.w, {
-        buffer: A,
+      style: C,
+      children: [A !== u.BW.Loading && (0, r.jsx)(c.w, {
+        buffer: I,
         artboard: h,
         artboardProperties: p,
-        eventTargetRef: b,
+        eventTargetRef: O,
         className: f.Q_,
-        ref: O,
+        ref: v,
         fit: m,
-        withReducedMotion: S ? "halt" : "play"
+        withReducedMotion: T ? "halt" : "play"
       }), (0, r.jsx)(d.ZpM, {
         type: null != _ ? _ : d.sl2.CUSTOM,
         className: s()(f.Nr, a),
