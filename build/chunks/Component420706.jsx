@@ -2,11 +2,11 @@
 /** chunk id: 420706, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => K,
-  Jd: () => Y,
-  Oo: () => H,
-  bG: () => k,
-  h9: () => G
+  Ay: () => q,
+  Jd: () => K,
+  Oo: () => W,
+  bG: () => U,
+  h9: () => F
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,6 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
   Chunk442433 = require("./442433.js"),
   Chunk775602 = require("./775602.js"),
+  Chunk941726 = require("./941726.jsx"),
   Chunk963307 = require("./963307.js"),
   Chunk287809 = require("./287809.js"),
   Chunk947593 = require("./947593.js"),
@@ -37,7 +38,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk299846 = require("./299846.js"),
   Chunk424994 = require("./424994.js");
 
-function P(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,20 +47,20 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,87 +71,88 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = M(e, t), Object.getOwnPropertySymbols)
+  if (a = k(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function M(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let k = 72,
-  U = 2e3;
+let U = 72,
+  G = 32,
+  V = 2e3;
 
-function G(e) {
-  return (null == e ? true : e.type) === p.S9.CONTENT_INVENTORY ? k : 0
+function F(e) {
+  return (null == e ? true : e.type) === _.S9.CONTENT_INVENTORY ? e.entry.content_type === l.I.PLAYED_GAME && null != e.entry.applicationWidgetPreview ? U + G : U : 0
 }
-let V = e => {
+let B = e => {
     let {
       entry: t
-    } = e, n = j(e, ["entry"]);
+    } = e, n = M(e, ["entry"]);
     switch (t.content_type) {
       case l.I.PLAYED_GAME:
-        return (0, r.jsx)(E.A, L(D({}, n), {
+        return (0, r.jsx)(y.A, j(x({}, n), {
           entry: t
         }));
       case l.I.WATCHED_MEDIA:
-        return (0, r.jsx)(C.A, L(D({}, n), {
+        return (0, r.jsx)(N.A, j(x({}, n), {
           entry: t
         }));
       case l.I.TOP_GAME:
-        return (0, r.jsx)(S.Ay, L(D({}, n), {
+        return (0, r.jsx)(T.Ay, j(x({}, n), {
           entry: t
         }));
       case l.I.TOP_ARTIST:
-        return (0, r.jsx)(A.Ay, L(D({}, n), {
+        return (0, r.jsx)(I.Ay, j(x({}, n), {
           entry: t
         }));
       case l.I.LISTENED_SESSION:
-        return (0, r.jsx)(O.Ay, L(D({}, n), {
+        return (0, r.jsx)(v.Ay, j(x({}, n), {
           entry: t
         }));
       case l.I.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(m.A, L(D({}, n), {
+        return (0, r.jsx)(g.A, j(x({}, n), {
           entry: t
         }));
       default:
         return null
     }
   },
-  F = e => {
+  H = e => {
     var t;
     let {
       entry: n,
       targetElementRef: i
-    } = e, a = j(e, ["entry", "targetElementRef"]);
-    return n.content_type !== l.I.PLAYED_GAME ? null : (0, r.jsx)(b.A, {
+    } = e, a = M(e, ["entry", "targetElementRef"]);
+    return n.content_type !== l.I.PLAYED_GAME ? null : (0, r.jsx)(O.A, {
       entry: n,
       targetElementRef: i,
       isFirstApplicationOccurrence: null != (t = a.isFirstApplicationOccurrence) && t
     })
   },
-  B = e => {
+  Y = e => {
     let {
       closePopout: t
-    } = e, n = j(e, ["closePopout"]);
-    return (0, r.jsx)(H, D({
+    } = e, n = M(e, ["closePopout"]);
+    return (0, r.jsx)(W, x({
       onReaction: (e, r) => {
         n.trackRankingItemInteraction(e, {
           destinationChannelId: r.id,
@@ -159,136 +161,142 @@ let V = e => {
       },
       closePopout: t,
       onVoiceChannelPreview: e => {
-        n.trackRankingItemInteraction(R.PA.VOICE_CHANNEL_PREVIEWED, {
+        n.trackRankingItemInteraction(P.PA.VOICE_CHANNEL_PREVIEWED, {
           destinationChannelId: e.id,
           destinationGuildId: e.guild_id
         })
       }
     }, n))
   },
-  H = e => {
+  W = e => {
     let {
       entry: t
-    } = e, n = j(e, ["entry"]);
+    } = e, n = M(e, ["entry"]);
     switch (t.content_type) {
       case l.I.PLAYED_GAME:
-        return (0, r.jsx)(y.A, L(D({}, n), {
+        return (0, r.jsx)(b.A, j(x({}, n), {
           entry: t
         }));
       case l.I.WATCHED_MEDIA:
-        return (0, r.jsx)(N.A, L(D({}, n), {
+        return (0, r.jsx)(w.A, j(x({}, n), {
           entry: t
         }));
       case l.I.TOP_GAME:
-        return (0, r.jsx)(T.A, L(D({}, n), {
+        return (0, r.jsx)(C.A, j(x({}, n), {
           entry: t
         }));
       case l.I.TOP_ARTIST:
-        return (0, r.jsx)(I.A, L(D({}, n), {
+        return (0, r.jsx)(S.A, j(x({}, n), {
           entry: t
         }));
       case l.I.LISTENED_SESSION:
-        return (0, r.jsx)(v.A, L(D({}, n), {
+        return (0, r.jsx)(A.A, j(x({}, n), {
           entry: t
         }));
       case l.I.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(g.Ay, L(D({}, n), {
+        return (0, r.jsx)(E.Ay, j(x({}, n), {
           entry: t
         }));
       default:
         return null
     }
   },
-  Y = Chunk64700.createContext(true),
-  W = e => {
+  K = Chunk64700.createContext(true),
+  z = e => {
     var t;
     let {
       index: a,
       ref: l
-    } = e, p = j(e, ["index", "ref"]), m = i.useRef(null), [g, E] = i.useState("default"), [y, b] = i.useState(false), O = (0, o.rm)("".concat(a)), v = null == (t = _.default.getCurrentUser()) ? true : t.isStaff(), {
-      isRich: A,
-      appName: I
-    } = (0, w.u)(p.entry), S = i.useMemo(() => ({
-      entry: p.entry,
-      channelId: p.channel.id,
-      guildId: p.channel.guild_id,
-      requestId: p.requestId,
-      richPresenceName: A ? I : true
-    }), [I, p.channel.guild_id, p.channel.id, p.entry, p.requestId, A]), T = i.useRef(false), [C, N] = i.useState(false), [P, x] = i.useState(false), M = (0, c.bG)([f.A], () => f.A.keyboardModeEnabled);
+    } = e, _ = M(e, ["index", "ref"]), g = i.useRef(null), [E, y] = i.useState("default"), [b, O] = i.useState(false), v = (0, o.rm)("".concat(a)), A = null == (t = h.default.getCurrentUser()) ? true : t.isStaff(), {
+      isRich: I,
+      appName: S
+    } = (0, R.u)(_.entry);
+    (0, p.T2)(_.entry.id);
+    let T = i.useMemo(() => ({
+        entry: _.entry,
+        channelId: _.channel.id,
+        guildId: _.channel.guild_id,
+        requestId: _.requestId,
+        richPresenceName: I ? S : true
+      }), [S, _.channel.guild_id, _.channel.id, _.entry, _.requestId, I]),
+      C = i.useRef(false),
+      [N, w] = i.useState(false),
+      [D, L] = i.useState(false),
+      k = (0, c.bG)([f.A], () => f.A.keyboardModeEnabled);
     i.useEffect(() => {
-      C && M && x(true)
-    }, [C, M]), i.useLayoutEffect(() => {
-      null != m.current && b(true)
+      N && k && L(true)
+    }, [N, k]), i.useLayoutEffect(() => {
+      null != g.current && O(true)
     }, []);
-    let k = i.useCallback(e => {
-        v && (0, d.L3)(e, async () => {
+    let U = i.useCallback(e => {
+        A && (0, d.L3)(e, async () => {
           let {
             default: e
           } = await n.e("89346").then(n.bind(n, 949881));
           return () => (0, r.jsx)(e, {
-            entry: p.entry,
-            requestId: p.requestId
+            entry: _.entry,
+            requestId: _.requestId
           })
         })
-      }, [p, v]),
+      }, [_, A]),
       G = i.useCallback(() => {
-        E(String(Date.now()))
+        y(String(Date.now()))
       }, []),
-      H = i.useCallback(function(e) {
+      F = i.useCallback(function(e) {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-        (0, h.I)(e, D({}, S, t))
-      }, [S]),
+        (0, m.I)(e, x({}, T, t))
+      }, [T]),
       W = i.useMemo(() => s().throttle(e => {
-        (0, h.I)(R.PA.CARD_POPOUT_OPEN, e)
-      }, U, {
+        (0, m.I)(P.PA.CARD_POPOUT_OPEN, e)
+      }, V, {
         leading: true,
         trailing: false
       }), []),
-      K = () => {
-        T.current = false, setTimeout(() => {
-          T.current || (N(false), x(M))
+      z = () => {
+        C.current = false, setTimeout(() => {
+          C.current || (w(false), L(k))
         }, 100)
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [y && (0, r.jsx)(F, L(D({}, p), {
-        targetElementRef: m
+      children: [b && (0, r.jsx)(H, j(x({}, _), {
+        targetElementRef: g
       })), (0, r.jsx)("div", {
         ref: l,
         onMouseEnter: () => {
-          T.current = true, setTimeout(() => {
-            T.current && N(true), W(S)
+          C.current = true, setTimeout(() => {
+            C.current && w(true), W(T)
           }, 100)
         },
-        onMouseLeave: K,
+        onMouseLeave: z,
         children: (0, r.jsx)(u.YNO, {
-          targetElementRef: m,
+          targetElementRef: g,
           renderPopout: e => {
             let {
               closePopout: t
             } = e;
-            return (0, r.jsx)(Y.Provider, {
-              value: K,
-              children: (0, r.jsx)(B, D({
+            return (0, r.jsx)(K.Provider, {
+              value: z,
+              children: (0, r.jsx)(Y, x({
                 closePopout: t,
                 updatePopoutPosition: G,
-                trackRankingItemInteraction: H
-              }, p))
+                trackRankingItemInteraction: F
+              }, _))
             })
           },
           position: "left",
-          shouldShow: C,
-          positionKey: g,
-          onRequestOpen: () => W(S),
+          shouldShow: N,
+          positionKey: E,
+          onRequestOpen: () => W(T),
           onRequestClose: () => {
-            P && K()
+            D && z()
           },
           spacing: 8,
           children: (e, t) => {
             let {
               isShown: n
             } = t;
-            return (0, r.jsx)(u.DUT, L(D({}, e, O), {
-              innerRef: m,
+            return (0, r.jsx)(u.DUT, j(x({}, e, v), {
+              innerRef: g,
               focusProps: {
                 offset: {
                   top: 4,
@@ -298,12 +306,12 @@ let V = e => {
                 }
               },
               onClick: () => {
-                C || N(true)
+                N || w(true)
               },
-              onContextMenu: k,
-              children: (0, r.jsx)(V, L(D({}, p), {
+              onContextMenu: U,
+              children: (0, r.jsx)(B, j(x({}, _), {
                 selected: n,
-                hovered: T.current
+                hovered: C.current
               }))
             }))
           }
@@ -311,4 +319,4 @@ let V = e => {
       })]
     })
   },
-  K = Chunk64700.memo(W)
+  q = Chunk64700.memo(z)

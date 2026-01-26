@@ -2,8 +2,8 @@
 /** chunk id: 991275, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => ed,
-  Y: () => eo
+  A: () => ep,
+  Y: () => ec
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,6 +24,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk793574 = require("./793574.js"),
   Chunk58149 = require("./58149.js"),
   Chunk688810 = require("./688810.jsx"),
+  Chunk496015 = require("./496015.js"),
+  Chunk941726 = require("./941726.jsx"),
   Chunk122997 = require("./122997.js"),
   Chunk276055 = require("./276055.jsx"),
   Chunk83974 = require("./83974.js"),
@@ -52,7 +54,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk701939 = require("./701939.js");
 
-function Z(e, t, n) {
+function Q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,20 +63,20 @@ function Z(e, t, n) {
   }) : e[t] = n, e
 }
 
-function X(e) {
+function J(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Z(e, t, n[t])
+      Q(e, t, n[t])
     })
   }
   return e
 }
 
-function Q(e, t) {
+function $(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -85,35 +87,35 @@ function Q(e, t) {
   return n
 }
 
-function J(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Q(Object(t)).forEach(function(n) {
+function ee(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : $(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function $(e, t) {
+function et(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = ee(e, t), Object.getOwnPropertySymbols)
+  if (a = en(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function ee(e, t) {
+function en(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
-  en = 18,
-  er = 42,
-  ei = {
+let er = Chunk837921.Ay.getEnableHardwareAcceleration(),
+  ei = 18,
+  ea = 42,
+  es = {
     origin: {
       x: 38,
       y: 11
@@ -125,7 +127,7 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
       y: 0
     }
   },
-  ea = Chunk64700.memo(function(e) {
+  eo = Chunk64700.memo(function(e) {
     let {
       colorString: t,
       colorStrings: a,
@@ -144,12 +146,12 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
       isMobileOnline: v,
       premiumSince: A,
       nameplate: I
-    } = e, S = $(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), T = i.useRef(null), [C, N] = i.useState(false), R = null != A ? new Date(A) : null, P = i.useCallback(e => {
+    } = e, S = et(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), T = i.useRef(null), [C, N] = i.useState(false), w = null != A ? new Date(A) : null, R = i.useCallback(e => {
       (0, _.L3)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("97262"), n.e("29534"), n.e("33818"), n.e("55296"), n.e("84841"), n.e("9001")]).then(n.bind(n, 107632)), t = F.A.isInChannel(U.A.getVoiceChannelId(), u.id);
-        return n => (0, r.jsx)(e, J(X({}, n), {
+        } = await Promise.all([n.e("97262"), n.e("29534"), n.e("33818"), n.e("55296"), n.e("84841"), n.e("9001")]).then(n.bind(n, 107632)), t = H.A.isInChannel(V.A.getVoiceChannelId(), u.id);
+        return n => (0, r.jsx)(e, ee(J({}, n), {
           user: u,
           guildId: b,
           channel: y,
@@ -157,26 +159,26 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
         }))
       })
     }, [u, b, y]), D = i.useCallback(() => {
-      let e = "@".concat(Y.Ay.getUserTag(u, {
+      let e = "@".concat(K.Ay.getUserTag(u, {
           decoration: "never"
         })),
         t = "<@".concat(u.id, ">");
-      B._.dispatch(K.jej.TEXTAREA_FOCUS, {
+      Y._.dispatch(q.jej.TEXTAREA_FOCUS, {
         channelId: y.id
-      }), B._.dispatchToLastSubscribed(K.jej.INSERT_TEXT, {
+      }), Y._.dispatchToLastSubscribed(q.jej.INSERT_TEXT, {
         plainText: e,
         rawText: t
       }), m.A.startTyping(y.id)
     }, [u, y.id]), x = i.useCallback(e => {
-      null != b && (e.stopPropagation(), (0, w.K)({
+      null != b && (e.stopPropagation(), (0, P.K)({
         guildId: b,
         location: {
-          section: K.JJy.MEMBER_LIST,
-          object: K.ZSU.BOOST_GEM_ICON
+          section: q.JJy.MEMBER_LIST,
+          object: q.ZSU.BOOST_GEM_ICON
         }
       }))
     }, [b]);
-    return (0, r.jsx)(L.A, {
+    return (0, r.jsx)(M.A, {
       targetElementRef: T,
       user: u,
       guildId: b,
@@ -193,12 +195,12 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
         let {
           onClick: n,
           onMouseDown: i
-        } = e, o = $(e, ["onClick", "onMouseDown"]);
-        return (0, r.jsx)(g.A, X({
+        } = e, o = et(e, ["onClick", "onMouseDown"]);
+        return (0, r.jsx)(g.A, J({
           ref: T,
-          className: q.Dc,
-          onContextMenu: P,
-          shouldAnimateStatus: et,
+          className: X.Dc,
+          onContextMenu: R,
+          shouldAnimateStatus: er,
           user: u,
           currentUser: f,
           nick: c,
@@ -206,7 +208,7 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
           activities: p,
           applicationStream: h,
           isOwner: l,
-          premiumSince: R,
+          premiumSince: w,
           colorString: t,
           colorStrings: a,
           colorRoleName: s,
@@ -228,70 +230,70 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
       }
     })
   }),
-  es = Chunk64700.memo(function(e) {
+  el = Chunk64700.memo(function(e) {
     let {
       colorRoleId: t
-    } = e, n = $(e, ["colorRoleId"]), {
+    } = e, n = et(e, ["colorRoleId"]), {
       channel: i,
       user: a,
       index: s
-    } = e, o = (0, c.rm)("".concat(s)), l = (0, f.bG)([G.A], () => G.A.isTyping(i.id, a.id)), u = (0, f.bG)([V.default], () => V.default.getCurrentUser()), d = (0, f.bG)([k.A], () => {
+    } = e, o = (0, c.rm)("".concat(s)), l = (0, f.bG)([F.A], () => F.A.isTyping(i.id, a.id)), u = (0, f.bG)([B.default], () => B.default.getCurrentUser()), d = (0, f.bG)([G.A], () => {
       var e;
-      return null != t ? null == (e = k.A.getRole(i.guild_id, t)) ? true : e.name : true
-    }, [i, t]), p = (0, P.r)({
+      return null != t ? null == (e = G.A.getRole(i.guild_id, t)) ? true : e.name : true
+    }, [i, t]), p = (0, x.r)({
       user: a,
       guildId: i.guild_id
     });
-    return (0, r.jsx)(ea, J(X({}, n, o), {
+    return (0, r.jsx)(eo, ee(J({}, n, o), {
       isTyping: l,
       currentUser: u,
       colorRoleName: d,
       nameplate: p
     }))
   }),
-  eo = Chunk64700.memo(function(e) {
+  ec = Chunk64700.memo(function(e) {
     let {
       id: t,
       title: a,
       count: s,
       guildId: o,
       className: l
-    } = e, c = (0, R.$7)({
+    } = e, c = (0, D.$7)({
       roleId: t,
       guildId: o,
       size: 16
-    }), u = (0, f.bG)([j.default], () => null == s ? null : new Intl.NumberFormat(j.default.locale).format(s), [s]), d = i.useCallback(e => {
+    }), u = (0, f.bG)([k.default], () => null == s ? null : new Intl.NumberFormat(k.default.locale).format(s), [s]), d = i.useCallback(e => {
       (null == c ? true : c.src) != null && (0, _.L3)(e, async () => {
         let {
           default: e
         } = await n.e("33743").then(n.bind(n, 455538));
-        return t => (0, r.jsx)(e, J(X({}, t), {
+        return t => (0, r.jsx)(e, ee(J({}, t), {
           imageUrl: c.src
         }))
       })
     }, [null == c ? true : c.src]);
-    return t === K.clD.UNKNOWN ? (0, r.jsx)("div", {
+    return t === q.clD.UNKNOWN ? (0, r.jsx)("div", {
       className: l,
       children: (0, r.jsx)("div", {
-        className: q.k1
+        className: X.k1
       })
-    }) : (0, r.jsxs)(C.A, {
+    }) : (0, r.jsxs)(w.A, {
       className: l,
       children: [(0, r.jsx)(p.AC4, {
-        children: null == s ? a : z.intl.format(z.t.Uaqbke, {
+        children: null == s ? a : Z.intl.format(Z.t.Uaqbke, {
           title: a,
           count: s
         })
       }), (0, r.jsxs)("div", {
-        className: q.CN,
+        className: X.CN,
         "aria-hidden": true,
         children: [null != c ? (0, r.jsx)("span", {
           onContextMenu: d,
-          children: (0, r.jsx)(D.A, X({
-            className: q.UT
+          children: (0, r.jsx)(L.A, J({
+            className: X.UT
           }, c))
         }) : null, (0, r.jsx)("span", {
-          className: q.iy,
+          className: X.iy,
           children: a
         }), null == u ? null : (0, r.jsxs)("span", {
           children: ["\xa0— ", u]
@@ -300,7 +302,7 @@ let et = Chunk837921.Ay.getEnableHardwareAcceleration(),
     })
   });
 
-function el(e) {
+function eu(e) {
   let {
     index: t
   } = e, n = (0, c.rm)("".concat(t));
@@ -308,12 +310,12 @@ function el(e) {
     itemProps: n
   })
 }
-class ec extends Chunk64700.Component {
+class ed extends Chunk64700.Component {
   shouldComponentUpdate(e) {
     return e.channel.id !== this.props.channel.id || e.version !== this.props.version || e.groups.length !== this.props.groups.length
   }
   componentDidMount() {
-    this.updateSubscription(), this.trackMemberListViewed(), this._areActivitiesExperimentallyHidden = (0, v.M)("ChannelMembers")
+    this.updateSubscription(), this.trackMemberListViewed(), this._areActivitiesExperimentallyHidden = (0, I.M)("ChannelMembers")
   }
   componentDidUpdate(e) {
     e.channel.id !== this.props.channel.id && this.updateSubscription(), this.trackMemberListViewed(), this.updateMaxContentFeedRowSeen()
@@ -359,15 +361,15 @@ class ec extends Chunk64700.Component {
       sectionHeight: i
     } = this.props;
     return (0, r.jsx)(p.skg, {
-      children: a => (0, r.jsx)(N.V0, {
+      children: a => (0, r.jsx)(R.V0, {
         children: o => (0, r.jsx)("aside", {
-          className: s()(q.yg, q.ML),
+          className: s()(X.yg, X.ML),
           "aria-labelledby": o,
           children: (0, r.jsx)(p.Fmo, {
             component: (0, r.jsx)(p.AC4, {
               children: (0, r.jsx)(p.H, {
                 id: o,
-                children: z.intl.format(z.t.JBQxV6, {
+                children: Z.intl.format(Z.t.JBQxV6, {
                   channel: n.name
                 })
               })
@@ -377,16 +379,16 @@ class ec extends Chunk64700.Component {
                 let {
                   ref: o,
                   role: l
-                } = n, c = $(n, ["ref", "role"]);
-                return (0, r.jsx)(p.B8B, X({
+                } = n, c = et(n, ["ref", "role"]);
+                return (0, r.jsx)(p.B8B, J({
                   innerRole: l,
-                  innerAriaLabel: z.intl.string(z.t["9Oq93m"]),
+                  innerAriaLabel: Z.intl.string(Z.t["9Oq93m"]),
                   ref: e => {
                     var t;
                     this._list = e, this.props.listRef.current = e, o.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
                   },
-                  className: s()(q.ol, {
-                    [q.Ij]: d.Fr
+                  className: s()(X.ol, {
+                    [X.Ij]: d.Fr
                   }),
                   paddingTop: 0,
                   sectionHeight: i,
@@ -405,39 +407,39 @@ class ec extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), Z(this, "_list", null), Z(this, "_areActivitiesExperimentallyHidden", false), Z(this, "_firstApplicationIdOccurrences", null), Z(this, "_lastRowsVersion", true), Z(this, "lastReportedAnalyticsChannel", true), Z(this, "setList", e => {
+    super(...e), Q(this, "_list", null), Q(this, "_areActivitiesExperimentallyHidden", false), Q(this, "_firstApplicationIdOccurrences", null), Q(this, "_lastRowsVersion", true), Q(this, "lastReportedAnalyticsChannel", true), Q(this, "setList", e => {
       this._list = e, this.props.listRef.current = e
-    }), Z(this, "renderSection", e => {
+    }), Q(this, "renderSection", e => {
       let {
         section: t
       } = e, {
         groups: n,
         channel: a
       } = this.props, s = n[t];
-      if ((0, A.l)(s)) return (0, i.createElement)(A.A, J(X({}, s), {
+      if ((0, S.l)(s)) return (0, i.createElement)(S.A, ee(J({}, s), {
         key: "section-".concat(t)
       }));
       if (0 === t) {
         let {
           key: e
         } = s;
-        return (0, r.jsx)(x.A, {
+        return (0, r.jsx)(j.A, {
           tutorialId: "whos-online",
           position: "left",
-          inlineSpecs: ei,
-          children: (0, i.createElement)(eo, J(X({}, s), {
+          inlineSpecs: es,
+          children: (0, i.createElement)(ec, ee(J({}, s), {
             key: "section-".concat(e),
             guildId: a.guild_id,
-            className: q.lL
+            className: X.lL
           }))
         }, "section-".concat(t))
       }
-      return (0, i.createElement)(eo, J(X({}, s), {
+      return (0, i.createElement)(ec, ee(J({}, s), {
         key: "section-".concat(t),
         guildId: a.guild_id,
-        className: q.lL
+        className: X.lL
       }))
-    }), Z(this, "getRowProps", e => {
+    }), Q(this, "getRowProps", e => {
       let {
         groups: t,
         rows: n
@@ -447,7 +449,7 @@ class ec extends Chunk64700.Component {
         index: i
       } = r;
       return null == i || "row" !== e.type ? null : n[i + 1 + e.row]
-    }), Z(this, "getFirstApplicationIdOccurrences", () => {
+    }), Q(this, "getFirstApplicationIdOccurrences", () => {
       let {
         rows: e,
         version: t
@@ -456,7 +458,7 @@ class ec extends Chunk64700.Component {
       let n = new Set,
         r = new Set;
       for (let t of e)
-        if (null != t && t.type === M.S9.CONTENT_INVENTORY) {
+        if (null != t && t.type === U.S9.CONTENT_INVENTORY) {
           let {
             entry: e
           } = t;
@@ -465,7 +467,7 @@ class ec extends Chunk64700.Component {
             n.has(t) || (n.add(t), r.add(e.id))
           }
         } return this._firstApplicationIdOccurrences = r, this._lastRowsVersion = t, r
-    }), Z(this, "renderRow", e => {
+    }), Q(this, "renderRow", e => {
       let {
         section: t,
         row: n,
@@ -474,7 +476,7 @@ class ec extends Chunk64700.Component {
         channel: a
       } = this.props, s = this.getRowProps(e);
       if (null != s) {
-        if (s.type === M.S9.MEMBER && "user" in s) {
+        if (s.type === U.S9.MEMBER && "user" in s) {
           let {
             colorString: e,
             colorStrings: t,
@@ -488,7 +490,7 @@ class ec extends Chunk64700.Component {
             applicationStream: p,
             premiumSince: _
           } = s;
-          return (0, r.jsx)(es, {
+          return (0, r.jsx)(el, {
             colorString: e,
             colorStrings: t,
             colorRoleId: n,
@@ -505,24 +507,24 @@ class ec extends Chunk64700.Component {
             index: i
           }, "member-".concat(s.user.id))
         }
-        if (s.type === M.S9.CONTENT_INVENTORY) {
+        if (s.type === U.S9.CONTENT_INVENTORY) {
           let e = "content-inventory-".concat(s.entry.id);
           null != s.entry.original_id && (e += "-".concat(s.entry.original_id));
           let t = this.getFirstApplicationIdOccurrences().has(s.entry.id);
-          return (0, r.jsx)(S.Ay, J(X({}, s), {
+          return (0, r.jsx)(C.Ay, ee(J({}, s), {
             channel: this.props.channel,
             index: i,
             isFirstApplicationOccurrence: t
           }), e)
         }
-        if (s.type === M.S9.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(I.A, {}, "content-inventory-hidden-entry")
+        if (s.type === U.S9.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(T.A, {}, "content-inventory-hidden-entry")
       }
-      return (0, r.jsx)(el, {
+      return (0, r.jsx)(eu, {
         index: i
       }, "placeholder-".concat(t, ":").concat(n))
-    }), Z(this, "handleScroll", () => {
+    }), Q(this, "handleScroll", () => {
       this.updateSubscription(), this.updateMaxContentFeedRowSeen()
-    }), Z(this, "updateMaxContentFeedRowSeen", l().debounce(() => {
+    }), Q(this, "updateMaxContentFeedRowSeen", l().debounce(() => {
       let e = this._list;
       if (null == e) return;
       let {
@@ -530,10 +532,10 @@ class ec extends Chunk64700.Component {
         scrollTop: n
       } = e.getScrollerState(), r = n + t - this.props.sectionHeight;
       this.props.updateMaxContentFeedRowSeen(r)
-    }, 50)), Z(this, "getContentFeedGroup", () => {
-      let e = this.props.groups[T.f];
-      if ((0, A.l)(e)) return e
-    }), Z(this, "hasContentFeed", () => null != this.getContentFeedGroup()), Z(this, "getRowHeightComputer", () => {
+    }, 50)), Q(this, "getContentFeedGroup", () => {
+      let e = this.props.groups[N.f];
+      if ((0, S.l)(e)) return e
+    }), Q(this, "hasContentFeed", () => null != this.getContentFeedGroup()), Q(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
           rowHeight: t
@@ -543,18 +545,18 @@ class ec extends Chunk64700.Component {
           rows: n
         } = this.props, r = e.index;
         return function(e, i) {
-          if (e === T.f) {
+          if (e === N.f) {
             let e = n[r + 1 + i];
-            return (0, S.h9)(e)
+            return (0, C.h9)(e)
           }
           return t
         }
       }
       return t
-    }), Z(this, "getContentFeedHeight", () => {
+    }), Q(this, "getContentFeedHeight", () => {
       let e = this.getContentFeedGroup();
       return null != e ? e.feedHeight + this.props.sectionHeight : 0
-    }), Z(this, "updateSubscription", l().debounce(() => {
+    }), Q(this, "updateSubscription", l().debounce(() => {
       if (null == this._list) return;
       let {
         channel: e
@@ -570,7 +572,7 @@ class ec extends Chunk64700.Component {
         height: r,
         rowHeight: t
       })
-    }, 50)), Z(this, "trackMemberListViewed", () => {
+    }, 50)), Q(this, "trackMemberListViewed", () => {
       var e;
       if (this.lastReportedAnalyticsChannel === this.props.channel.id) return;
       let t = null == (e = this._list) ? true : e.getItems(),
@@ -578,12 +580,12 @@ class ec extends Chunk64700.Component {
           rowsVisible: n
         } = this.getDimensions();
       if (true === n || 0 === n || null == t) return;
-      this.hasContentFeed() && (t = t.filter(e => e.section !== T.f));
-      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(H.Vq);
+      this.hasContentFeed() && (t = t.filter(e => e.section !== N.f));
+      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(W.Vq);
       if (0 === r.length) return;
       let i = r.reduce((e, t) => {
         var n;
-        return t.type !== M.S9.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === K.$pd.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++, (null == (n = t.user.collectibles) ? true : n.nameplate) != null && e.num_users_visible_with_nameplate++), e
+        return t.type !== U.S9.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === q.$pd.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++, (null == (n = t.user.collectibles) ? true : n.nameplate) != null && e.num_users_visible_with_nameplate++), e
       }, {
         num_users_visible: 0,
         num_users_visible_with_mobile_indicator: 0,
@@ -592,27 +594,27 @@ class ec extends Chunk64700.Component {
         num_users_visible_with_avatar_decoration: 0,
         num_users_visible_with_nameplate: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, b.Ay.trackWithMetadata(K.HAw.MEMBER_LIST_VIEWED, X({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, b.Ay.trackWithMetadata(q.HAw.MEMBER_LIST_VIEWED, J({}, i))
     })
   }
 }
 
-function eu(e) {
+function ef(e) {
   let {
     channel: t,
     className: n
   } = e, {
     analyticsLocations: a
-  } = (0, O.Ay)(y.A.MEMBER_LIST), o = (0, f.bG)([E.A], () => E.A.keyboardModeEnabled), l = (0, f.cf)([M.Ay], () => M.Ay.getProps(t.guild_id, t.id)), {
+  } = (0, O.Ay)(y.A.MEMBER_LIST), o = (0, f.bG)([E.A], () => E.A.keyboardModeEnabled), l = (0, f.cf)([U.Ay], () => U.Ay.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: _,
     version: h,
     updateMaxRowSeen: m
-  } = (0, T.s)({
+  } = (0, N.s)({
     memberStoreProps: l,
     channelId: t.id,
     guildId: t.guild_id
-  }), g = i.useRef(null), b = en + ((0, p.WHe)("lg") + (0, p.WHe)("xxs")), v = er, A = i.useCallback((e, t) => {
+  }), g = i.useRef(null), b = ei + ((0, p.WHe)("lg") + (0, p.WHe)("xxs")), v = ea, A = i.useCallback((e, t) => {
     let n = g.current;
     if (null == n) return;
     let r = parseInt(t, 10),
@@ -645,7 +647,7 @@ function eu(e) {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), []), C = (0, u.Ay)({
+  }), []), T = (0, u.Ay)({
     id: "members-".concat(t.id),
     setFocus: A,
     isEnabled: o,
@@ -655,10 +657,10 @@ function eu(e) {
   return (0, r.jsx)(O.f5, {
     value: a,
     children: (0, r.jsx)("div", {
-      className: s()(q.kL, n),
+      className: s()(X.kL, n),
       children: (0, r.jsx)(c.hD, {
-        navigator: C,
-        children: (0, r.jsx)(ec, J(X({}, e, l), {
+        navigator: T,
+        children: (0, r.jsx)(ed, ee(J({}, e, l), {
           version: h,
           groups: _,
           rows: d,
@@ -672,13 +674,20 @@ function eu(e) {
   })
 }
 
-function ed(e) {
+function ep(e) {
   let {
     channel: t,
     className: n
-  } = e, a = i.useDeferredValue(t);
-  return i.useMemo(() => (0, r.jsx)(eu, {
+  } = e, a = i.useDeferredValue(t), s = (0, v.p)({
+    location: y.A.MEMBER_LIST
+  });
+  return i.useMemo(() => s ? (0, r.jsx)(A.r$, {
+    children: (0, r.jsx)(ef, {
+      channel: a,
+      className: n
+    })
+  }) : (0, r.jsx)(ef, {
     channel: a,
     className: n
-  }), [a, n])
+  }), [s, a, n])
 }

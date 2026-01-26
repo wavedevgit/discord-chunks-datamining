@@ -17,60 +17,60 @@ var Chunk503698 = require("./503698.js"),
   Chunk612605 = require("./612605.js");
 let h = e => {
   let t, n, {
-    rateLimitPerUser: r,
+    rateLimitPerUser: l,
     slowmodeCooldownGuess: a,
     isBypassSlowmode: h,
     leadingIcon: g = false
   } = e;
-  if (r >= d.A.Seconds.HOUR) {
-    let e = Math.floor(r / d.A.Seconds.HOUR),
-      t = Math.floor((r - e * d.A.Seconds.HOUR) / d.A.Seconds.MINUTE),
-      l = r - e * d.A.Seconds.HOUR - t * d.A.Seconds.MINUTE;
+  if (l >= d.A.Seconds.HOUR) {
+    let e = Math.floor(l / d.A.Seconds.HOUR),
+      t = Math.floor((l - e * d.A.Seconds.HOUR) / d.A.Seconds.MINUTE),
+      r = l - e * d.A.Seconds.HOUR - t * d.A.Seconds.MINUTE;
     n = u.intl.formatToPlainString(u.t.oEwLez, {
       hours: e,
       minutes: t,
-      seconds: l
+      seconds: r
     })
-  } else if (r >= 60) {
-    let e = Math.floor(r / 60);
+  } else if (l >= 60) {
+    let e = Math.floor(l / 60);
     n = u.intl.formatToPlainString(u.t.DARKYm, {
       minutes: e,
-      seconds: r - 60 * e
+      seconds: l - 60 * e
     })
   } else n = u.intl.formatToPlainString(u.t["9yE8Ga"], {
-    seconds: r
+    seconds: l
   });
   if (!h && a > 0) {
     let e = s().duration(a);
     if (a > d.A.Millis.HOUR) {
       let n = "".concat(e.minutes()).padStart(2, "0"),
-        l = "".concat(e.seconds()).padStart(2, "0");
-      t = "".concat(e.hours(), ":").concat(n, ":").concat(l)
+        r = "".concat(e.seconds()).padStart(2, "0");
+      t = "".concat(e.hours(), ":").concat(n, ":").concat(r)
     } else {
       let n = "".concat(e.seconds()).padStart(2, "0");
       t = "".concat(e.minutes(), ":").concat(n)
     }
   } else t = h ? u.intl.string(u.t.SSzXvQ) : u.intl.string(u.t.Icu3bf);
-  let x = (0, l.jsx)(c.Text, {
+  let f = (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
       children: t
     }),
-    f = (0, l.jsx)(c.xbX, {
+    x = (0, r.jsx)(c.xbX, {
       size: "xs",
       color: "currentColor",
       className: i()(m.Eq, {
         [m.iE]: g
       })
     });
-  return (0, l.jsx)(o.m, {
+  return (0, r.jsx)(o.m, {
     text: n,
-    children: (0, l.jsx)("div", {
+    children: (0, r.jsx)("div", {
       className: m.ns,
-      children: g ? (0, l.jsxs)(l.Fragment, {
-        children: [f, x]
-      }) : (0, l.jsxs)(l.Fragment, {
+      children: g ? (0, r.jsxs)(r.Fragment, {
         children: [x, f]
+      }) : (0, r.jsxs)(r.Fragment, {
+        children: [f, x]
       })
     })
   })

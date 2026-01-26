@@ -17,21 +17,21 @@ function c(e, t) {
     mediaAttachments: d,
     hasThumbnail: u
   } = function(e) {
-    let [t, n] = l.useState(null), o = (0, r.yK)([a.A], () => {
+    let [t, n] = r.useState(null), o = (0, l.yK)([a.A], () => {
       let t = a.A.getUploads(e.id, i.oU.CREATE_FORUM_POST.drafts.type),
         n = t.find(e => e.isThumbnail);
       return null != n ? [n] : t.filter(e => e.isVideo || e.isImage)
-    }), c = l.useMemo(() => o.some(e => e.isThumbnail), [o]);
-    return l.useEffect(() => {
+    }), c = r.useMemo(() => o.some(e => e.isThumbnail), [o]);
+    return r.useEffect(() => {
       let e = [];
       return n(o.slice(0, s.A8).flatMap(t => {
         var n;
-        let l = null == t || null == (n = t.item) ? true : n.file;
-        if (null == l) return [];
-        let r = URL.createObjectURL(l);
-        return e.push(r), {
+        let r = null == t || null == (n = t.item) ? true : n.file;
+        if (null == r) return [];
+        let l = URL.createObjectURL(r);
+        return e.push(l), {
           id: t.id,
-          src: r,
+          src: l,
           spoiler: t.spoiler,
           alt: t.description,
           isThumbnail: t.isThumbnail,
@@ -47,7 +47,7 @@ function c(e, t) {
     }
   }(e), m = Math.max(s.A8 - (null != (n = null == d ? true : d.length) ? n : 0), 0), {
     embeds: h
-  } = (0, o.w)(u, m, t), g = l.useMemo(() => null == h ? true : h.flatMap(e => {
+  } = (0, o.w)(u, m, t), g = r.useMemo(() => null == h ? true : h.flatMap(e => {
     let t = (0, s.m3)(e);
     return null == t ? [] : {
       id: t,
@@ -55,6 +55,6 @@ function c(e, t) {
       spoiler: false,
       alt: e.title
     }
-  }), [h]), x = [...null != d ? d : []];
-  return !u && m > 0 && x.push(...null != (c = null == g ? true : g.slice(0, m)) ? c : []), x
+  }), [h]), f = [...null != d ? d : []];
+  return !u && m > 0 && f.push(...null != (c = null == g ? true : g.slice(0, m)) ? c : []), f
 }

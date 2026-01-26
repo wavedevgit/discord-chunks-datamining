@@ -2,7 +2,8 @@
 /** chunk id: 201718, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => u
+  A: () => u,
+  P: () => d
 });
 var Chunk311907 = require("./311907.js"),
   Chunk562465 = require("./562465.js"),
@@ -38,7 +39,8 @@ let c = {
       }
     }
   },
-  u = (0, Chunk311907.UT)(Chunk339580.A, {
+  u = c,
+  d = (0, Chunk311907.UT)(Chunk339580.A, {
     getQueryId: Chunk652215.fic.USER_APPLICATION_IDENTITIES,
     get: e => o.A.getUserIdentities(e),
     load: e => c.fetchUserApplicationIdentitiesWithProfiles(e)

@@ -20,16 +20,16 @@ let m = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
     className: m,
     onClick: h,
     channel: g
-  } = e, [x, f, p] = (0, c.RQ)(e => [e.activeView, e.activeViewType, e.activeChannelId], s.x), b = r.useCallback(() => {
+  } = e, [f, x, p] = (0, c.RQ)(e => [e.activeView, e.activeViewType, e.activeChannelId], s.x), b = l.useCallback(() => {
     (0, c.ed)(i, g.id), null == h || h()
   }, [i, h, g.id]);
-  return n ? null : (0, l.jsx)("div", {
+  return n ? null : (0, r.jsx)("div", {
     className: a()(d.VQ, u.UD),
     ref: t,
-    children: (0, l.jsx)(o.A, {
+    children: (0, r.jsx)(o.A, {
       className: a()(u.Z8, m),
       onClick: b,
-      active: (x === d.kx.GIF || x === d.kx.EMOJI || x === d.kx.STICKER) && f === i && p === g.id,
+      active: (f === d.kx.GIF || f === d.kx.EMOJI || f === d.kx.STICKER) && x === i && p === g.id,
       tabIndex: 0,
       focusProps: {
         offset: {

@@ -22,7 +22,7 @@ let s = e => {
     messageId: null == s ? true : s.id,
     stopPropagation: true
   })(null != d ? d : true)(u, c.id);
-  return (0, l.jsx)(r.Text, {
+  return (0, r.jsx)(l.Text, {
     variant: "text-md/semibold",
     children: m
   })

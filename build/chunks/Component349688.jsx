@@ -88,31 +88,36 @@ function A(e) {
 function I(e, t) {
   let {
     id: n,
-    channelId: i,
-    className: a,
-    children: m,
-    actions: E,
-    handleEditModal: O,
-    keyboardModeEnabled: v,
-    onKeyDown: I,
-    draftType: S,
-    size: T = 1
-  } = e, C = (0, o.rm)(n), {
-    onFocus: N
-  } = C, w = b(C, ["onFocus"]), {
-    handleFocus: R,
-    handleBlur: P
-  } = (0, f.G)(N), D = 0 === T, x = null != E, L = e => {
-    if (v) {
+    channelId: a,
+    className: m,
+    children: E,
+    actions: O,
+    handleEditModal: v,
+    keyboardModeEnabled: I,
+    onKeyDown: S,
+    draftType: T,
+    size: C = 1
+  } = e, N = i.useRef(null), w = (0, o.rm)(n), {
+    onFocus: R
+  } = w, P = b(w, ["onFocus"]), {
+    handleFocus: D,
+    handleBlur: x
+  } = (0, f.G)(R), L = 0 === C, j = null != O, M = e => {
+    if (0 === e.detail && null != N.current) {
+      let e = N.current.querySelector('[role="button"], button');
+      null == e || e.click()
+    }
+  }, k = e => {
+    if (I) {
       switch (e.which) {
         case p.Ks6.D:
-          e.preventDefault(), c.A.remove(i, n, S);
+          e.preventDefault(), c.A.remove(a, n, T);
           return;
         case p.Ks6.E:
-          null != O && (e.preventDefault(), O(e));
+          null != v && (e.preventDefault(), v(e));
           return;
         case p.Ks6.BACKSPACE:
-          e.ctrlKey ? (e.preventDefault(), c.A.clearAll(i, S)) : (e.preventDefault(), c.A.remove(i, n, S));
+          e.ctrlKey ? (e.preventDefault(), c.A.clearAll(a, T)) : (e.preventDefault(), c.A.remove(a, n, T));
           return;
         case p.Ks6.ARROW_UP:
           let t = e.shiftKey || e.altKey || e.ctrlKey || e.metaKey;
@@ -121,33 +126,35 @@ function I(e, t) {
             atEnd: true
           })
       }
-      null == I || I(e)
+      null == S || S(e)
     }
   };
   return (0, r.jsx)(l.vN3, {
-    children: (0, r.jsx)("li", y(g({}, w), {
-      onFocus: R,
-      onBlur: P,
-      onKeyDown: L,
-      className: s()(h.Se, a, {
-        [h.oi]: 2 === T
+    children: (0, r.jsx)("li", y(g({}, P), {
+      onFocus: D,
+      onBlur: x,
+      onClick: M,
+      onKeyDown: k,
+      className: s()(h.Se, m, {
+        [h.oi]: 2 === C
       }),
       ref: t,
       children: (0, r.jsxs)("div", {
         className: h.PO,
-        children: [m, x ? (0, r.jsx)("div", {
+        ref: N,
+        children: [E, j ? (0, r.jsx)("div", {
           className: h.TC,
           children: (0, r.jsx)("div", {
             className: s()(h.KY, {
-              [h.BN]: D
+              [h.BN]: L
             }),
             onContextMenu: A,
             "aria-label": _.intl.string(_.t["8Lu3Du"]),
             children: (0, r.jsx)(u.Ay, {
               className: s()({
-                [h.BX]: D
+                [h.BX]: L
               }),
-              children: E
+              children: O
             })
           })
         }) : null]

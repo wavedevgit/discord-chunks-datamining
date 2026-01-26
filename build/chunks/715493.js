@@ -23,17 +23,17 @@ function u(e) {
   let {
     numAttachments: t,
     containerWidth: n,
-    containerHeight: r
+    containerHeight: l
   } = e;
-  return l.useMemo(() => (function(e) {
+  return r.useMemo(() => (function(e) {
     let {
       numAttachments: t,
       containerWidth: n,
-      containerHeight: l
-    } = e, r = "".concat(t, "-").concat(n, "-").concat(l), i = d.get(r);
+      containerHeight: r
+    } = e, l = "".concat(t, "-").concat(n, "-").concat(r), i = d.get(l);
     if (null != i) return i;
     {
-      let e = ((e, t, n, l) => {
+      let e = ((e, t, n, r) => {
         if (0 === n) return [];
         if (1 === n) return [{
           width: e,
@@ -43,7 +43,7 @@ function u(e) {
           position: c
         }];
         if (2 === n) {
-          let n = Math.ceil((e - l) / 2);
+          let n = Math.ceil((e - r) / 2);
           return [{
             top: 0,
             left: 0,
@@ -52,15 +52,15 @@ function u(e) {
             height: t
           }, {
             top: 0,
-            left: n + l,
+            left: n + r,
             position: c,
             width: n,
             height: t
           }]
         }
         if (3 === n) {
-          let n = Math.ceil((e - l) / 2),
-            r = Math.ceil((t - l) / 2);
+          let n = Math.ceil((e - r) / 2),
+            l = Math.ceil((t - r) / 2);
           return [{
             top: 0,
             left: 0,
@@ -69,54 +69,54 @@ function u(e) {
             height: t
           }, {
             top: 0,
-            left: n + l,
+            left: n + r,
             position: c,
             width: n,
-            height: r
+            height: l
           }, {
-            top: r + l,
-            left: n + l,
+            top: l + r,
+            left: n + r,
             position: c,
             width: n,
-            height: r
+            height: l
           }]
         } {
-          let n = Math.ceil((e - l) / 2),
-            r = Math.ceil((t - l) / 2);
+          let n = Math.ceil((e - r) / 2),
+            l = Math.ceil((t - r) / 2);
           return [{
             top: 0,
             left: 0,
             position: c,
             width: n,
-            height: r
+            height: l
           }, {
-            top: r + l,
+            top: l + r,
             left: 0,
             position: c,
             width: n,
-            height: r
+            height: l
           }, {
             top: 0,
-            left: n + l,
+            left: n + r,
             position: c,
             width: n,
-            height: r
+            height: l
           }, {
-            top: r + l,
-            left: n + l,
+            top: l + r,
+            left: n + r,
             position: c,
             width: n,
-            height: r
+            height: l
           }]
         }
-      })(n, l, t, 4);
-      return d.set(r, e), e
+      })(n, r, t, 4);
+      return d.set(l, e), e
     }
   })({
     numAttachments: t,
     containerWidth: n,
-    containerHeight: r
-  }), [t, n, r])
+    containerHeight: l
+  }), [t, n, l])
 }
 
 function m(e) {
@@ -132,7 +132,7 @@ function h(e) {
   let {
     imageContainerStyles: t,
     containerWidth: n,
-    containerHeight: r
-  } = e, i = l.useRef(m(t)), a = l.useRef(n), s = l.useRef(r), o = n > a.current + 100, c = r > s.current + 100;
+    containerHeight: l
+  } = e, i = r.useRef(m(t)), a = r.useRef(n), s = r.useRef(l), o = n > a.current + 100, c = l > s.current + 100;
   return (o || c) && (i.current = m(t)), i.current
 }

@@ -10,7 +10,7 @@ require.d(exports, {
   qf: () => o,
   tm: () => u
 });
-var l, Chunk284009 = require("./284009.js"),
+var r, Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009);
 
 function a(e, t, n) {
@@ -21,7 +21,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var s = ((l = {})[l.THREE_BY_TWO = 2 / 3] = "THREE_BY_TWO", l[l.SIXTEEN_BY_NINE = 9 / 16] = "SIXTEEN_BY_NINE", l);
+var s = ((r = {})[r.THREE_BY_TWO = 2 / 3] = "THREE_BY_TWO", r[r.SIXTEEN_BY_NINE = 9 / 16] = "SIXTEEN_BY_NINE", r);
 let o = 12;
 class c {
   getWidth(e) {
@@ -34,10 +34,10 @@ class c {
     };
     let t = e / this.maxWidth,
       n = Math.max(Math.floor(t + (e / this.minWidth - t) / 2), 1),
-      l = this.gap * (n - 1);
+      r = this.gap * (n - 1);
     return {
       columns: n,
-      columnWidth: (e - l) / n
+      columnWidth: (e - r) / n
     }
   }
   constructor({
@@ -55,8 +55,8 @@ let d = {
   u = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s.THREE_BY_TWO,
       n = e - 2,
-      l = Math.ceil(n * t);
-    return [n, l]
+      r = Math.ceil(n * t);
+    return [n, r]
   },
   m = 12,
   h = function(e) {

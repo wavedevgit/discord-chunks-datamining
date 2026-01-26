@@ -13,8 +13,8 @@ let s = {
     let {
       guildId: t,
       channelId: n
-    } = e, s = l.useRef(null), o = (0, i.Xg)(), c = !r.A.isFocused(o);
-    return l.useLayoutEffect(() => (null == s.current && (s.current = new a.Ay({
+    } = e, s = r.useRef(null), o = (0, i.Xg)(), c = !l.A.isFocused(o);
+    return r.useLayoutEffect(() => (null == s.current && (s.current = new a.Ay({
       guildId: t,
       channelId: n,
       isPaused: c,

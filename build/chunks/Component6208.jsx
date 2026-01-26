@@ -2,7 +2,7 @@
 /** chunk id: 6208, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => x
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,72 +19,72 @@ var Chunk503698 = require("./503698.js"),
   Chunk558997 = require("./558997.js"),
   Chunk827469 = require("./827469.js");
 
-function f(e) {
+function x(e) {
   let {
     onDismiss: t
   } = e;
-  return (0, l.jsxs)(a.DUT, {
+  return (0, r.jsxs)(a.DUT, {
     onClick: () => {
       open(c.X_), (0, s.Md)({
         readGuideCta: true
       })
     },
     className: i()(g.kL, h.kL, m.mainCard),
-    children: [(0, l.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: h.mG,
-      children: [(0, l.jsxs)("div", {
+      children: [(0, r.jsxs)("div", {
         className: h.cy,
-        children: [(0, l.jsx)(a.pVd, {
+        children: [(0, r.jsx)(a.pVd, {
           size: "custom",
           width: 28,
           height: 28,
           color: "currentColor",
           className: h.Mg
-        }), (0, l.jsx)(a.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-strong",
           children: u.intl.string(u.t.uvGmCx)
-        }), (0, l.jsxs)("div", {
+        }), (0, r.jsxs)("div", {
           className: h.lm,
-          children: [(0, l.jsx)(a.mir, {
+          children: [(0, r.jsx)(a.mir, {
             size: "md",
             color: "currentColor",
             className: h.G
-          }), (0, l.jsx)(a.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-default",
             children: u.intl.string(u.t.t2GkVR)
           })]
         })]
-      }), (0, l.jsx)(a.DUT, {
+      }), (0, r.jsx)(a.DUT, {
         onClick: e => {
           e.stopPropagation(), t(d.i.DISMISS), (0, s.Md)({
             readGuideCta: false
           })
         },
-        children: (0, l.jsx)(a.PGe, {
+        children: (0, r.jsx)(a.PGe, {
           size: "xs",
           color: "currentColor",
           className: h.ut
         })
       })]
-    }), (0, l.jsx)("hr", {
+    }), (0, r.jsx)("hr", {
       className: h.me
-    }), (0, l.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: h.mG,
-      children: [(0, l.jsxs)("div", {
-        children: [(0, l.jsx)(a.Heading, {
+      children: [(0, r.jsxs)("div", {
+        children: [(0, r.jsx)(a.Heading, {
           className: i()(g.__invalid_channelName, h.DD),
           variant: "heading-lg/semibold",
           color: "text-strong",
           children: u.intl.string(u.t.JtSpD0)
-        }), (0, l.jsx)(a.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           children: u.intl.string(u.t.Ajhp03)
         })]
-      }), (0, l.jsx)("img", {
-        src: x,
+      }), (0, r.jsx)("img", {
+        src: f,
         alt: u.intl.string(u.t.gAlJzV),
         width: o.T5,
         height: o.T5

@@ -32,70 +32,70 @@ let b = Chunk64700.memo(function(e) {
     return {
       guidelinesOpen: t
     }
-  }, o.x), v = (0, m.S4)(t), [_, y] = r.useState(false), A = r.useCallback(e => {
+  }, o.x), v = (0, m.S4)(t), [_, y] = l.useState(false), A = l.useCallback(e => {
     if (null == e) return;
     let t = e.clientHeight >= 220;
     t !== _ && y(t)
   }, [_]);
-  r.useLayoutEffect(() => {
+  l.useLayoutEffect(() => {
     setTimeout(i, 350)
   }, [j, i]);
-  let [C, T] = r.useState(!j), O = (0, c.zhh)({
+  let [C, O] = l.useState(!j), T = (0, c.zhh)({
     opacity: +!!j,
     maxHeight: 500 * !!j,
     config: {
       duration: 300
     },
-    onRest: () => T(!j)
+    onRest: () => O(!j)
   });
-  return null != t.topic && t.topic.length > 0 ? (0, l.jsx)(s.animated.div, {
-    style: O,
-    className: C ? f.kK : true,
-    children: (0, l.jsxs)("div", {
-      className: f.kL,
-      children: [(0, l.jsxs)("div", {
-        className: f.N1,
-        children: [(0, l.jsxs)(c.Heading, {
+  return null != t.topic && t.topic.length > 0 ? (0, r.jsx)(s.animated.div, {
+    style: T,
+    className: C ? x.kK : true,
+    children: (0, r.jsxs)("div", {
+      className: x.kL,
+      children: [(0, r.jsxs)("div", {
+        className: x.N1,
+        children: [(0, r.jsxs)(c.Heading, {
           variant: "heading-lg/semibold",
-          className: f.$4,
-          children: [(0, l.jsx)(c.B8Q, {
+          className: x.$4,
+          children: [(0, r.jsx)(c.B8Q, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20
-          }), x.intl.string(x.t["4d4T4l"]), v && (0, l.jsx)(c.DUT, {
+          }), f.intl.string(f.t["4d4T4l"]), v && (0, r.jsx)(c.DUT, {
             onClick: () => {
               d.Ay.open(t.id, true, g.b7d.TOPIC)
             },
             tag: "span",
-            className: f.vk,
-            children: (0, l.jsx)(c.R2l, {
+            className: x.vk,
+            children: (0, r.jsx)(c.R2l, {
               size: "xs",
               color: "currentColor"
             })
           })]
-        }), (0, l.jsx)(c.DUT, {
-          "aria-label": x.intl.string(x.t.cpT0Cq),
-          className: f.vk,
+        }), (0, r.jsx)(c.DUT, {
+          "aria-label": f.intl.string(f.t.cpT0Cq),
+          className: x.vk,
           onClick: () => {
             b.getState().setGuidelinesOpen(false)
           },
-          children: (0, l.jsx)(c.PGe, {
+          children: (0, r.jsx)(c.PGe, {
             size: "xs",
             color: "currentColor"
           })
         })]
-      }), (0, l.jsxs)("div", {
-        className: f.iQ,
-        children: [(0, l.jsx)(c.Text, {
+      }), (0, r.jsxs)("div", {
+        className: x.iQ,
+        children: [(0, r.jsx)(c.Text, {
           selectable: true,
           variant: "text-sm/normal",
           color: "text-default",
           style: {
             maxHeight: 220
           },
-          className: a()(f.I4, p.PT),
-          children: (0, l.jsx)("div", {
+          className: a()(x.I4, p.PT),
+          children: (0, r.jsx)("div", {
             ref: A,
             children: u.A.parseForumPostGuidelines(t.topic, true, {
               channelId: t.id,
@@ -103,61 +103,61 @@ let b = Chunk64700.memo(function(e) {
               allowList: true
             })
           })
-        }), _ && (0, l.jsxs)("div", {
-          className: f.jP,
-          children: [(0, l.jsx)("div", {
-            className: f.D7
-          }), (0, l.jsx)("div", {
-            className: f.kx,
-            children: (0, l.jsx)(c.DUT, {
-              className: f.DD,
+        }), _ && (0, r.jsxs)("div", {
+          className: x.jP,
+          children: [(0, r.jsx)("div", {
+            className: x.D7
+          }), (0, r.jsx)("div", {
+            className: x.kx,
+            children: (0, r.jsx)(c.DUT, {
+              className: x.DD,
               onClick: () => {
                 (0, c.mMO)(async () => {
                   let {
                     default: e
                   } = await n.e("45457").then(n.bind(n, 494664));
                   return n => {
-                    var r, i;
-                    return (0, l.jsx)(e, (r = function(e) {
+                    var l, i;
+                    return (0, r.jsx)(e, (l = function(e) {
                       for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {},
-                          l = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                          r = Object.keys(n);
+                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                           return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), l.forEach(function(t) {
-                          var l;
-                          l = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: l,
+                        }))), r.forEach(function(t) {
+                          var r;
+                          r = n[t], t in e ? Object.defineProperty(e, t, {
+                            value: r,
                             enumerable: true,
                             configurable: true,
                             writable: true
-                          }) : e[t] = l
+                          }) : e[t] = r
                         })
                       }
                       return e
                     }({}, n), i = i = {
                       channel: t
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                       var n = Object.keys(e);
                       if (Object.getOwnPropertySymbols) {
-                        var l = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, l)
+                        var r = Object.getOwnPropertySymbols(e);
+                        n.push.apply(n, r)
                       }
                       return n
                     })(Object(i)).forEach(function(e) {
-                      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-                    }), r))
+                      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+                    }), l))
                   }
                 })
               },
-              children: (0, l.jsxs)(c.Text, {
+              children: (0, r.jsxs)(c.Text, {
                 variant: "text-sm/semibold",
                 color: "text-brand",
-                className: f.ur,
-                children: [x.intl.string(x.t.Vu7odK), (0, l.jsx)(c._Xm, {
+                className: x.ur,
+                children: [f.intl.string(f.t.Vu7odK), (0, r.jsx)(c._Xm, {
                   size: "xs",
                   color: "currentColor",
-                  className: f.yS
+                  className: x.yS
                 })]
               })
             })

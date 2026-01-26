@@ -57,10 +57,10 @@ function B(e, t, n) {
 function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
+    }))), r.forEach(function(t) {
       B(e, t, n[t])
     })
   }
@@ -71,8 +71,8 @@ function K(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -114,12 +114,12 @@ let Q = e => {
       guild: t,
       roles: n
     } = e;
-    return (0, l.jsx)("div", {
+    return (0, r.jsx)("div", {
       className: H.Ei,
       "aria-label": z.intl.formatToPlainString(z.t.PCs0oo, {
         numRoles: n.length
       }),
-      children: n.map(e => (0, l.jsx)(f.b_, {
+      children: n.map(e => (0, r.jsx)(x.b_, {
         role: e,
         canRemove: false,
         onRemove: G.FXj,
@@ -138,11 +138,11 @@ let Q = e => {
     let {
       handleHide: t
     } = e;
-    return (0, l.jsx)(g.DUT, {
+    return (0, r.jsx)(g.DUT, {
       onClick: t,
       className: H.b,
       "aria-label": z.intl.string(z.t.WAI6xu),
-      children: (0, l.jsx)(g.PGe, {
+      children: (0, r.jsx)(g.PGe, {
         size: "md",
         color: "currentColor",
         className: H.ut
@@ -154,15 +154,15 @@ let Q = e => {
       expanded: t,
       onClick: n
     } = e;
-    return (0, l.jsx)(g.DUT, {
+    return (0, r.jsx)(g.DUT, {
       onClick: n,
       className: H.b,
       "aria-label": t ? z.intl.string(z.t.iTcuma) : z.intl.string(z.t.dcl9MQ),
-      children: t ? (0, l.jsx)(g.gR, {
+      children: t ? (0, r.jsx)(g.gR, {
         size: "xs",
         color: "currentColor",
         className: H.ut
-      }) : (0, l.jsx)(g._Xm, {
+      }) : (0, r.jsx)(g._Xm, {
         size: "xs",
         color: "currentColor",
         className: H.ut
@@ -173,11 +173,11 @@ let Q = e => {
     let t, {
         hasAnyThread: i,
         hasActiveThreads: s,
-        channel: f
+        channel: x
       } = e,
       {
         onboardingExpanded: B
-      } = (0, U.kU)(e => {
+      } = (0, F.kU)(e => {
         let {
           onboardingExpanded: t
         } = e;
@@ -187,14 +187,14 @@ let Q = e => {
       }, d.x),
       {
         tagFilter: ee
-      } = (0, R.R)(f.id),
-      et = (0, m.bG)([T.A], () => T.A.getGuild(f.getGuildId())),
-      en = (0, k.S4)(f),
+      } = (0, R.R)(x.id),
+      et = (0, m.bG)([O.A], () => O.A.getGuild(x.getGuildId())),
+      en = (0, k.S4)(x),
       {
-        transitions: el,
-        setVisible: er
+        transitions: er,
+        setVisible: el
       } = (() => {
-        let [e, t] = r.useState(true);
+        let [e, t] = l.useState(true);
         return {
           transitions: (0, g.pnh)(e, {
             keys: e => e ? "shown" : "hidden",
@@ -227,11 +227,11 @@ let Q = e => {
           duration: 200
         }
       }),
-      ea = r.useCallback(e => {
+      ea = l.useCallback(e => {
         var t;
         null == (t = e.clickHandler) || t.call(e)
       }, []),
-      es = (t = f.id, r.useCallback(() => (er(false), I.A.hideAdminOnboarding(t, true)), [t, er])),
+      es = (t = x.id, l.useCallback(() => (el(false), I.A.hideAdminOnboarding(t, true)), [t, el])),
       {
         onboardingSteps: eo,
         isDismissed: ec,
@@ -242,30 +242,30 @@ let Q = e => {
         let i, a, s, c, {
             guild: d,
             channel: h,
-            hasAnyThread: f,
+            hasAnyThread: x,
             handleHide: p
           } = e,
-          [j, v] = r.useState(false),
+          [j, v] = l.useState(false),
           _ = (0, D.l)(h.id),
           y = (0, m.bG)([E.A], () => E.A.hasHidden(h.id)),
-          T = (i = null == d ? true : d.id, a = (0, m.bG)([C.A], () => null != i ? C.A.getSortedRoles(i) : true), r.useMemo(() => {
-            let e, t, r, i, s, o, c, m, p = new X,
+          O = (i = null == d ? true : d.id, a = (0, m.bG)([C.A], () => null != i ? C.A.getSortedRoles(i) : true), l.useMemo(() => {
+            let e, t, l, i, s, o, c, m, p = new X,
               j = (null == h ? true : h.isMediaChannel()) === true;
-            return null == d || null == h || j || null == a || p.addStep((e = (0, b.A)(h) ? u.kg(G.xBc.VIEW_CHANNEL, G.xBc.SEND_MESSAGES) : G.xBc.SEND_MESSAGES, r = (t = null != d ? (0, P.N)(a, h, e).filter(e => h.permissionOverwrites.hasOwnProperty(e.id) || (0, A.Oy)(e)) : []).length > 0, i = t.some(e => (0, A.Oy)(e)), {
+            return null == d || null == h || j || null == a || p.addStep((e = (0, b.A)(h) ? u.kg(G.xBc.VIEW_CHANNEL, G.xBc.SEND_MESSAGES) : G.xBc.SEND_MESSAGES, l = (t = null != d ? (0, P.N)(a, h, e).filter(e => h.permissionOverwrites.hasOwnProperty(e.id) || (0, A.Oy)(e)) : []).length > 0, i = t.some(e => (0, A.Oy)(e)), {
               name: z.intl.string(z.t["/Ax2gs"]),
               description: z.intl.string(z.t.gAIOfg),
-              isDone: r && i,
-              shouldWarn: r && !i,
-              children: r ? (0, l.jsx)(Q, {
+              isDone: l && i,
+              shouldWarn: l && !i,
+              children: l ? (0, r.jsx)(Q, {
                 guild: d,
                 roles: t
               }) : null,
               clickHandler: () => {
-                J(F._G.PERMISSIONS), (0, g.mMO)(async () => {
+                J(U._G.PERMISSIONS), (0, g.mMO)(async () => {
                   let {
-                    default: r
+                    default: l
                   } = await n.e("17110").then(n.bind(n, 698325));
-                  return v(true), n => (0, l.jsx)(r, K(V({}, n), {
+                  return v(true), n => (0, r.jsx)(l, K(V({}, n), {
                     channel: h,
                     guild: d,
                     permission: e,
@@ -281,18 +281,18 @@ let Q = e => {
               name: z.intl.string(z.t.UgJu1e),
               description: z.intl.string(z.t["3C6/G1"]),
               clickHandler: () => {
-                J(F._G.GUIDELINES), x.Ay.open(h.id, true, G.b7d.TOPIC)
+                J(U._G.GUIDELINES), f.Ay.open(h.id, true, G.b7d.TOPIC)
               },
               isDone: s
             })), p.addStep((o = null != h.availableTags && h.availableTags.length > 0, {
               name: z.intl.string(z.t.xiBFCi),
               description: z.intl.string(z.t.wCv4Oz),
               clickHandler: () => {
-                J(F._G.TAGS), x.Ay.open(h.id), (0, g.mMO)(async () => {
+                J(U._G.TAGS), f.Ay.open(h.id), (0, g.mMO)(async () => {
                   let {
                     default: e
                   } = await n.e("47326").then(n.bind(n, 950989));
-                  return t => (0, l.jsx)(e, K(V({}, t), {
+                  return t => (0, r.jsx)(e, K(V({}, t), {
                     channelId: h.id,
                     guildId: h.guild_id
                   }))
@@ -303,11 +303,11 @@ let Q = e => {
               name: z.intl.string(z.t.QlyC9s),
               description: z.intl.string(z.t["+50LJg"]),
               clickHandler: () => {
-                J(F._G.DEFAULT_REACTION), (0, g.mMO)(async () => {
+                J(U._G.DEFAULT_REACTION), (0, g.mMO)(async () => {
                   let {
                     default: e
                   } = await n.e("85157").then(n.bind(n, 939940));
-                  return t => (0, l.jsx)(e, K(V({}, t), {
+                  return t => (0, r.jsx)(e, K(V({}, t), {
                     channel: h
                   }))
                 })
@@ -321,148 +321,148 @@ let Q = e => {
                     let {
                       default: e
                     } = await n.e("7937").then(n.bind(n, 420472));
-                    return t => (0, l.jsx)(e, K(V({}, t), {
+                    return t => (0, r.jsx)(e, K(V({}, t), {
                       guildId: m
                     }))
                   }))
                 }
               }),
               clickHandler: () => {
-                J(F._G.CREATE_POST), S._.dispatch(G.jej.FOCUS_COMPOSER_TITLE)
+                J(U._G.CREATE_POST), S._.dispatch(G.jej.FOCUS_COMPOSER_TITLE)
               },
-              isDone: f
+              isDone: x
             })), p
-          }, [h, d, a, f, v])),
-          O = T.isAllDone(),
+          }, [h, d, a, x, v])),
+          T = O.isAllDone(),
           I = _ || y || (t = h.id, s = w.default.extractTimestamp(t), !o()().isBefore(o()(s).add(o().duration(15, "days"))));
-        return c = r.useRef(0), r.useEffect(() => (j || !O || I ? clearTimeout(c.current) : c.current = setTimeout(() => {
+        return c = l.useRef(0), l.useEffect(() => (j || !T || I ? clearTimeout(c.current) : c.current = setTimeout(() => {
           p()
-        }, 60 * N.A.Millis.SECOND), () => clearTimeout(c.current)), [O, I, p, j]), {
-          onboardingSteps: T,
+        }, 60 * N.A.Millis.SECOND), () => clearTimeout(c.current)), [T, I, p, j]), {
+          onboardingSteps: O,
           isHidden: y,
           isDismissed: _,
-          isAllDone: O
+          isAllDone: T
         }
       })({
         guild: et,
-        channel: f,
+        channel: x,
         hasAnyThread: i,
         handleHide: es
       }),
       em = !ed && !ec,
-      eh = (0, U.ST)(),
-      eg = f.isMediaChannel(),
-      ex = e => eh.getState().setOnboardingExpanded(e);
+      eh = (0, F.ST)(),
+      eg = x.isMediaChannel(),
+      ef = e => eh.getState().setOnboardingExpanded(e);
     return ((0, p.Ay)(() => {
       eu && em && es()
     }), (e => {
       let {
         isAllDone: t,
         isVisible: n,
-        canManageChannel: l,
+        canManageChannel: r,
         guildId: i,
         channel: a
-      } = e, s = (0, m.bG)([C.A], () => null != i ? C.A.partitionVersion(i) : true), o = r.useCallback(() => {
+      } = e, s = (0, m.bG)([C.A], () => null != i ? C.A.partitionVersion(i) : true), o = l.useCallback(() => {
         S._.dispatch(G.jej.REMEASURE_TARGET)
       }, []);
-      r.useEffect(() => {
+      l.useEffect(() => {
         o()
-      }, [o, t, n, l, s, a.id, a.permissionOverwrites])
+      }, [o, t, n, r, s, a.id, a.permissionOverwrites])
     })({
       isAllDone: eu,
       isVisible: em,
       canManageChannel: en,
       guildId: null == et ? true : et.id,
-      channel: f
-    }), r.useEffect(() => {
-      ec || er(!ed)
-    }, [ec, er, ed]), (0, p.Ay)(() => {
-      i && em || ex(true)
-    }), null == et) ? null : (0, v.Fo)(f) ? s || 0 !== ee.size ? ee.size > 0 ? null : (0, l.jsx)(_.A, {
+      channel: x
+    }), l.useEffect(() => {
+      ec || el(!ed)
+    }, [ec, el, ed]), (0, p.Ay)(() => {
+      i && em || ef(true)
+    }), null == et) ? null : (0, v.Fo)(x) ? s || 0 !== ee.size ? ee.size > 0 ? null : (0, r.jsx)(_.A, {
       guild: et
-    }) : (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsx)(_.A, {
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(_.A, {
         guild: et
-      }), (0, l.jsx)(y.D, {})]
-    }) : em && en ? eg ? i ? null : (0, l.jsx)(j.A, {
-      channel: f
-    }) : (0, l.jsx)(l.Fragment, {
-      children: el((e, t) => t ? (0, l.jsx)(c.animated.div, {
+      }), (0, r.jsx)(y.D, {})]
+    }) : em && en ? eg ? i ? null : (0, r.jsx)(j.A, {
+      channel: x
+    }) : (0, r.jsx)(r.Fragment, {
+      children: er((e, t) => t ? (0, r.jsx)(c.animated.div, {
         style: e,
         className: H.kL,
-        children: (0, l.jsxs)("div", {
+        children: (0, r.jsxs)("div", {
           className: H.iE,
-          children: [(0, l.jsx)("div", {
+          children: [(0, r.jsx)("div", {
             className: H.U1,
-            children: (0, l.jsxs)(g.Fmo, {
-              component: (0, l.jsx)(g.Heading, {
+            children: (0, r.jsxs)(g.Fmo, {
+              component: (0, r.jsx)(g.Heading, {
                 variant: "heading-md/semibold",
                 children: z.intl.string(z.t.LhlgY9)
               }),
-              children: [(0, l.jsx)(g.Heading, {
+              children: [(0, r.jsx)(g.Heading, {
                 variant: "heading-md/medium",
                 className: H.wx,
                 children: z.intl.format(z.t["9L+8bz"], {
                   numCompleted: eo.completedSteps.toString(),
                   numSteps: eo.steps.length.toString()
                 })
-              }), (0, l.jsxs)(g.Text, {
+              }), (0, r.jsxs)(g.Text, {
                 variant: "text-xs/normal",
                 className: H.l2,
-                children: [(0, l.jsx)(g.mir, {
+                children: [(0, r.jsx)(g.mir, {
                   size: "xxs",
                   color: "currentColor",
                   className: H.Kk
                 }), z.intl.string(z.t.znhX2R)]
-              }), (0, l.jsx)($, {
+              }), (0, r.jsx)($, {
                 expanded: B,
-                onClick: () => ex(!B)
-              }), (0, l.jsx)(Z, {
+                onClick: () => ef(!B)
+              }), (0, r.jsx)(Z, {
                 handleHide: es
               })]
             })
-          }), ei((e, t) => t ? (0, l.jsx)(c.animated.div, {
+          }), ei((e, t) => t ? (0, r.jsx)(c.animated.div, {
             style: e,
             className: H.qI,
-            children: (0, l.jsx)("ol", {
+            children: (0, r.jsx)("ol", {
               className: H.D4,
-              children: eo.getSteps().map(e => (0, l.jsxs)(g.DUT, {
+              children: eo.getSteps().map(e => (0, r.jsxs)(g.DUT, {
                 tag: "li",
                 "aria-label": e.name,
                 onClick: () => ea(e),
                 className: a()(H._h, {
                   [H.so]: e.isDone
                 }),
-                children: [e.shouldWarn ? (0, l.jsx)(g.EpV, {
+                children: [e.shouldWarn ? (0, r.jsx)(g.EpV, {
                   size: "custom",
                   width: 20,
                   height: 20,
                   color: h.A.colors.ICON_FEEDBACK_CRITICAL,
                   className: H.FY
-                }) : e.isDone ? (0, l.jsx)(g.fkz, {
+                }) : e.isDone ? (0, r.jsx)(g.fkz, {
                   color: h.A.colors.STATUS_POSITIVE_BACKGROUND.css,
                   icon: g.A9s,
                   style: q,
                   className: H.FY
-                }) : (0, l.jsx)(g.fkz, {
+                }) : (0, r.jsx)(g.fkz, {
                   disableColor: true,
-                  icon: (0, g.kHD)(O.A),
+                  icon: (0, g.kHD)(T.A),
                   style: W,
                   className: a()(H.FY, H.so)
-                }), (0, l.jsxs)("div", {
+                }), (0, r.jsxs)("div", {
                   className: H.PM,
-                  children: [(0, l.jsx)(g.Text, {
+                  children: [(0, r.jsx)(g.Text, {
                     variant: "text-md/medium",
                     color: e.isDone ? "text-default" : "text-strong",
                     className: H.u,
                     children: e.name
-                  }), (0, l.jsx)(g.Text, {
+                  }), (0, r.jsx)(g.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
                     className: H.XK,
                     children: e.description
                   }), e.children]
-                }), (0, l.jsx)(g._BQ, {
+                }), (0, r.jsx)(g._BQ, {
                   size: "custom",
                   color: "currentColor",
                   width: 12,
@@ -473,10 +473,10 @@ let Q = e => {
           }) : null)]
         })
       }) : null)
-    }) : i ? null : (0, l.jsx)(L.A, {
-      channelName: f.name,
-      guildId: f.guild_id,
+    }) : i ? null : (0, r.jsx)(L.A, {
+      channelName: x.name,
+      guildId: x.guild_id,
       tagFilter: ee,
-      channel: f
+      channel: x
     })
   }

@@ -18,7 +18,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk111314 = require("./111314.js");
-let m = [Chunk355622.oU.NORMAL, Chunk355622.oU.SIDEBAR, Chunk355622.oU.CREATE_FORUM_POST];
+let m = [Chunk355622.oU.NORMAL, Chunk355622.oU.SIDEBAR];
 
 function g(e) {
   let {

@@ -23,8 +23,8 @@ function g(e) {
     closePopout: n
   } = e, {
     sortOrder: g,
-    layoutType: x,
-    tagSetting: f
+    layoutType: f,
+    tagSetting: x
   } = (0, c.R)(t.id), {
     showResolvedFlags: p,
     setShowResolvedFlags: b
@@ -43,70 +43,70 @@ function g(e) {
   }, A = e => {
     j.getState().setTagSetting(t.id, e), n()
   }, C = null != t.availableTags && t.availableTags.length > 0;
-  return (0, l.jsx)("div", {
+  return (0, r.jsx)("div", {
     className: h.k,
-    children: (0, l.jsxs)(s.W1t, {
+    children: (0, r.jsxs)(s.W1t, {
       "data-menu-migration-ready": true,
       navId: "sort-and-view",
       "aria-label": v ? u.intl.string(u.t["kQN/bi"]) : u.intl.string(u.t.DJzbkL),
       hideScroller: true,
       onClose: n,
       onSelect: n,
-      children: [(0, l.jsxs)(s.rXV, {
+      children: [(0, r.jsxs)(s.rXV, {
         label: u.intl.string(u.t.f8wNDl),
-        children: [(0, l.jsx)(s.iDA, {
+        children: [(0, r.jsx)(s.iDA, {
           id: "sort-by-recent-activity",
           group: "sort-by",
           label: u.intl.string(u.t.jOPmcI),
           action: () => _(a.T.LATEST_ACTIVITY),
           checked: g === a.T.LATEST_ACTIVITY
-        }), (0, l.jsx)(s.iDA, {
+        }), (0, r.jsx)(s.iDA, {
           id: "sort-by-date-posted",
           group: "sort-by",
           label: u.intl.string(u.t.UIltXd),
           action: () => _(a.T.CREATION_DATE),
           checked: g === a.T.CREATION_DATE
         })]
-      }), t.isModeratorReportChannel() && (0, l.jsx)(s.rXV, {
+      }), t.isModeratorReportChannel() && (0, r.jsx)(s.rXV, {
         label: u.intl.string(m.default.PsM2b4),
-        children: (0, l.jsx)(s.sLh, {
+        children: (0, r.jsx)(s.sLh, {
           id: "resolved-flags-none",
           label: u.intl.string(u.t.XJuakA),
           action: () => b(!p),
           checked: p
         })
-      }), t.isMediaChannel() || t.isModeratorReportChannel() ? null : (0, l.jsxs)(s.rXV, {
+      }), t.isMediaChannel() || t.isModeratorReportChannel() ? null : (0, r.jsxs)(s.rXV, {
         label: u.intl.string(u.t.mFMDSq),
-        children: [(0, l.jsx)(s.iDA, {
+        children: [(0, r.jsx)(s.iDA, {
           id: "view-as-list",
           group: "view-as",
           label: u.intl.string(u.t["NJFr+g"]),
-          action: () => y(r.C.LIST),
-          checked: x === r.C.LIST
-        }), (0, l.jsx)(s.iDA, {
+          action: () => y(l.C.LIST),
+          checked: f === l.C.LIST
+        }), (0, r.jsx)(s.iDA, {
           id: "view-as-grid",
           group: "view-as",
           label: u.intl.string(u.t.wKeggb),
-          action: () => y(r.C.GRID),
-          checked: x === r.C.GRID
+          action: () => y(l.C.GRID),
+          checked: f === l.C.GRID
         })]
-      }), C ? (0, l.jsxs)(s.rXV, {
+      }), C ? (0, r.jsxs)(s.rXV, {
         label: u.intl.string(u.t.Paxaug),
-        children: [(0, l.jsx)(s.iDA, {
+        children: [(0, r.jsx)(s.iDA, {
           id: "match-some",
           group: "tag-setting",
           label: u.intl.string(u.t.rQ0ctQ),
           action: () => A(i.n.MATCH_SOME),
-          checked: f === i.n.MATCH_SOME
-        }), (0, l.jsx)(s.iDA, {
+          checked: x === i.n.MATCH_SOME
+        }), (0, r.jsx)(s.iDA, {
           id: "match-all",
           group: "tag-setting",
           label: u.intl.string(u.t.FCXUu0),
           action: () => A(i.n.MATCH_ALL),
-          checked: f === i.n.MATCH_ALL
+          checked: x === i.n.MATCH_ALL
         })]
-      }) : null, (0, l.jsx)(s.rXV, {
-        children: (0, l.jsx)(s.Drp, {
+      }) : null, (0, r.jsx)(s.rXV, {
+        children: (0, r.jsx)(s.Drp, {
           id: "reset-all",
           className: h.Z,
           label: u.intl.string(u.t["3b//lO"]),

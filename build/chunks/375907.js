@@ -13,11 +13,11 @@ function i(e) {
     padding: n,
     channel: i,
     isEnabled: a
-  } = e, s = l.useCallback(e => {
-    let l = t.current,
-      r = document.querySelector(e);
-    null != r && (null == l || l.scrollIntoViewNode({
-      node: r,
+  } = e, s = r.useCallback(e => {
+    let r = t.current,
+      l = document.querySelector(e);
+    null != l && (null == r || r.scrollIntoViewNode({
+      node: l,
       padding: n,
       callback: () => {
         var t;
@@ -26,18 +26,18 @@ function i(e) {
         })
       }
     }))
-  }, [n, t]), o = l.useCallback(() => new Promise(e => {
+  }, [n, t]), o = r.useCallback(() => new Promise(e => {
     let n = t.current;
     null == n || n.scrollToTop({
       callback: () => requestAnimationFrame(e)
     })
-  }), [t]), c = l.useCallback(() => new Promise(e => {
+  }), [t]), c = r.useCallback(() => new Promise(e => {
     let n = t.current;
     null == n || n.scrollToBottom({
       callback: () => requestAnimationFrame(e)
     })
   }), [t]);
-  return (0, r.Ay)({
+  return (0, l.Ay)({
     id: "forum-channel-list-".concat(i.id),
     isEnabled: a,
     scrollToStart: o,

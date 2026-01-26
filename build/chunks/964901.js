@@ -14,12 +14,12 @@ function s(e) {
     isPlaying: t,
     playSound: n,
     preloadSound: s
-  } = (0, a.A)(null != e ? (0, r.A)(e.soundId) : null);
-  return l.useEffect(() => {
+  } = (0, a.A)(null != e ? (0, l.A)(e.soundId) : null);
+  return r.useEffect(() => {
     null != e && s()
   }, [e, s]), {
     isPlaying: t,
-    playSound: l.useCallback(() => {
+    playSound: r.useCallback(() => {
       var t;
       return !!n({
         volume: (0, i.A)(null != (t = null == e ? true : e.volume) ? t : 1)

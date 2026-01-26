@@ -2,9 +2,9 @@
 /** chunk id: 636202, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => U,
-  n: () => k
-});
+  A: () => G,
+  n: () => U
+}), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk808380 = require("./808380.js"),
@@ -39,7 +39,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk299846 = require("./299846.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let k = {
+let k = [...Chunk322789.n, Chunk506326.Yq],
+  U = {
     [Chunk808380.Y.DESKTOP]: null,
     [Chunk808380.Y.LINUX]: null,
     [Chunk808380.Y.MACOS]: null,
@@ -49,12 +50,12 @@ let k = {
     [Chunk808380.Y.XBOX]: Chunk266080.A,
     [Chunk808380.Y.PLAYSTATION]: Chunk790381.A
   },
-  U = e => {
+  G = e => {
     var t, n;
     let {
       channel: y,
       entry: b,
-      disableGameProfileLinks: U,
+      disableGameProfileLinks: R,
       onReaction: G,
       onVoiceChannelPreview: V,
       onUserPopoutClosed: F,
@@ -80,7 +81,7 @@ let k = {
       participant1: et,
       participant2: en,
       numOtherParticipants: er
-    } = (0, A.A)(b, 3), ei = b.extra.platform, ea = null != ei ? k[ei] : null, es = ei === a.Y.XBOX ? j.fg2.XBOX : ei === a.Y.PLAYSTATION ? j.fg2.PLAYSTATION : true, eo = (0, N.A)(es), {
+    } = (0, A.A)(b, 3), ei = b.extra.platform, ea = null != ei ? U[ei] : null, es = ei === a.Y.XBOX ? j.fg2.XBOX : ei === a.Y.PLAYSTATION ? j.fg2.PLAYSTATION : true, eo = (0, N.A)(es), {
       data: el
     } = (0, m.YY)(b.extra.application_id), ec = (0, d.J)(el), eu = (0, g.o)(null != (t = null != (n = null == z ? true : z.application_id) ? n : null == q ? true : q.applicationId) ? t : null == el ? true : el.id), ed = i.useCallback(e => {
       if ((null == H ? true : H.src) == null || null == y || null == Y) return;
@@ -103,7 +104,7 @@ let k = {
     if (null == Y) return null;
     let ef = (0, r.jsx)(P.mG, {
         location: null == J ? P.N5.POPOUT : P.N5.STREAMING_POPOUT,
-        children: R.n.map((e, t) => (0, r.jsx)(e, {
+        children: k.map((e, t) => (0, r.jsx)(e, {
           entry: b
         }, t))
       }),
@@ -119,7 +120,7 @@ let k = {
         subtitle: W,
         badges: ef,
         entry: b,
-        disableGameProfileLinks: U,
+        disableGameProfileLinks: R,
         onUserPopoutClosed: F,
         trackRankingItemInteraction: B
       }) : (0, r.jsx)(D.Fl, {
