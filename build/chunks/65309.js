@@ -1,4 +1,4 @@
-/** Chunk was on 97887 **/
+/** Chunk was on 67564 **/
 /** chunk id: 65309, original params: e,t,n (module,exports,require) **/
 module.exports = {
   fi: "column__535e0",

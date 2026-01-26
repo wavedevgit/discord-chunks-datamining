@@ -19,15 +19,15 @@ function b(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : c.x.DEFAULT,
     b = arguments.length > 2 && true !== arguments[2] ? arguments[2] : true,
-    g = (0, r.bG)([o.A], () => o.A.getLocalVolume(e, n), [e, n]),
+    g = (0, i.bG)([o.A], () => o.A.getLocalVolume(e, n), [e, n]),
     f = e === (null == (t = s.default.getCurrentUser()) ? true : t.id),
     m = n === c.x.STREAM;
-  return f ? null : (0, l.jsx)(i.aK1, {
+  return f ? null : (0, l.jsx)(r.aK1, {
     id: "user-volume",
     label: m ? A.intl.string(A.t.t4JBnI) : A.intl.string(A.t.m7TNdF),
-    control: (t, r) => {
+    control: (t, i) => {
       var o, s;
-      return (0, l.jsx)(i.i42, (o = function(e) {
+      return (0, l.jsx)(r.i42, (o = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             l = Object.keys(n);
@@ -45,7 +45,7 @@ function b(e) {
         }
         return e
       }({}, t), s = s = {
-        ref: r,
+        ref: i,
         value: (0, d.M)(g),
         maxValue: u.isPlatformEmbedded ? 200 : 100,
         onChange: t => {

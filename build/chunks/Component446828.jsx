@@ -23,7 +23,7 @@ let f = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     showWithoutDeveloperMode: true
   });
   return (0, r.jsx)(o.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated": true,
     navId: "unknown-user-context",
     onClose: c.Z_,
     "aria-label": s.intl.string(s.t.liqwPJ),

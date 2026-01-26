@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 224394, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -142,7 +142,7 @@ let E = [{
     return i.useEffect(() => {
       null != T && l(T / 2), null != C && O(C / 2)
     }, [T, C, l, O]), i.useEffect(() => {
-      (0, u.sF)(b._.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
+      (0, u.sF)(h._.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []), (0, r.jsxs)("div", {
       className: x.kL,
       children: [(0, r.jsxs)("div", {
@@ -174,23 +174,23 @@ let E = [{
         })]
       }), (0, r.jsx)(d.Heading, {
         variant: "heading-xl/semibold",
-        children: h.intl.string(h.t["M/gBcA"])
+        children: b.intl.string(b.t["M/gBcA"])
       }), (0, r.jsx)(d.Text, {
         color: "text-default",
         variant: "text-md/normal",
         className: x.rf,
-        children: h.intl.format(h.t["52EgsM"], {
+        children: b.intl.format(b.t["52EgsM"], {
           helpdeskArticle: p.A.getArticleURL(f.MVz.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.m, {
-        text: I ? null : h.intl.string(h.t["pjG+T3"]),
-        "aria-label": I ? true : h.intl.string(h.t["pjG+T3"]),
+        text: I ? null : b.intl.string(b.t["pjG+T3"]),
+        "aria-label": I ? true : b.intl.string(b.t["pjG+T3"]),
         children: (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: x.x6,
           children: (0, r.jsx)(d.Button, {
             variant: "primary",
-            text: h.intl.string(h.t.ElKTeb),
+            text: b.intl.string(b.t.ElKTeb),
             onClick: () => {
               g.A.open()
             },
@@ -202,12 +202,12 @@ let E = [{
       }), (0, r.jsx)(d.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: h.intl.string(h.t.OzLWLE)
+        children: b.intl.string(b.t.OzLWLE)
       }), (0, r.jsx)(d.Text, {
         color: "text-default",
         className: x.rf,
         variant: "text-sm/normal",
-        children: h.intl.format(h.t.rjhrqC, {
+        children: b.intl.format(b.t.rjhrqC, {
           helpdeskArticle: p.A.getArticleURL(f.MVz.GUILD_COMMUNITY_FEATURE)
         })
       }), (0, r.jsx)("div", {
@@ -215,8 +215,8 @@ let E = [{
         children: [{
           icon: d.Uy2,
           color: o.A.unsafe_rawColors.GREEN_360.css,
-          header: h.intl.string(h.t.oVQF2y),
-          body: h.intl.format(h.t.A6G7ak, {
+          header: b.intl.string(b.t.oVQF2y),
+          body: b.intl.format(b.t.A6G7ak, {
             featureHook: (e, t) => (0, r.jsx)("strong", {
               className: x.A3,
               children: e
@@ -225,11 +225,11 @@ let E = [{
         }, {
           icon: d.Uy2,
           color: o.A.unsafe_rawColors.PARTNER.css,
-          header: h.intl.string(h.t["0rJl9y"]),
-          body: h.intl.format(h.t.XsCNky, {
+          header: b.intl.string(b.t["0rJl9y"]),
+          body: b.intl.format(b.t.XsCNky, {
             infoHook: () => (0, r.jsx)(c.m, {
-              text: h.intl.string(h.t.kPJlTh),
-              "aria-label": h.intl.string(h.t.kPJlTh),
+              text: b.intl.string(b.t.kPJlTh),
+              "aria-label": b.intl.string(b.t.kPJlTh),
               children: (0, r.jsx)(d.mir, {
                 size: "xs",
                 color: "currentColor",
@@ -244,8 +244,8 @@ let E = [{
         }, {
           icon: d.mir,
           color: o.A.unsafe_rawColors.RED_360.css,
-          header: h.intl.string(h.t.W2kLJC),
-          body: h.intl.string(h.t.hyNkHz)
+          header: b.intl.string(b.t.W2kLJC),
+          body: b.intl.string(b.t.hyNkHz)
         }].map((e, t) => (0, r.jsx)(N, A({}, e), t))
       })]
     })

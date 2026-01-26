@@ -18,7 +18,7 @@ let p = (0, Chunk847767.A)(function(e) {
     onSelect: t
   } = e, r = (0, c.bG)([l.A], () => l.A.favoriteServerMuted);
   return (0, n.jsx)(o.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated": true,
     navId: "favorite-server-context",
     onClose: i.Z_,
     "aria-label": b.intl.string(b.t.liqwPJ),

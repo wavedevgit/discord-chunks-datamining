@@ -212,7 +212,7 @@ function eb(e) {
         Y[e.id] = e, null != j.A.getReadTimestamp(e.id) ? i.push(e) : r.push(e)
       }), en = em(en, r, T.Mm.GUILD_EVENT, 7), er = em(er, i, T.Mm.GUILD_EVENT, 7)
     }(), l = new Set, a = {}, u = [], p = [], (h = null != (t = null == (n = s.A.getFeed(w.X1.GLOBAL_FEED)) ? true : n.entries) ? t : []).sort((e, t) => e.rank - t.rank).slice(0, 5), h.forEach(e => {
-      if (l.has(e.content.id) || e.content.content_type !== i.I.PLAYED_GAME && e.content.content_type !== i.I.CUSTOM_STATUS && e.content.content_type !== i.I.TOP_GAME || (0, c.I5)(e.content)) return;
+      if (l.has(e.content.id) || e.content.content_type !== i.ContentInventoryEntryType.PLAYED_GAME && e.content.content_type !== i.ContentInventoryEntryType.CUSTOM_STATUS && e.content.content_type !== i.ContentInventoryEntryType.TOP_GAME || (0, c.I5)(e.content)) return;
       if ((0, o.zD)(e.content)) {
         if (null == a[e.content.author_id] && (a[e.content.author_id] = new Set), a[e.content.author_id].has(e.content.extra.application_id)) return;
         a[e.content.author_id].add(e.content.extra.application_id)

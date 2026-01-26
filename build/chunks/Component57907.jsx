@@ -16,7 +16,7 @@ var Chunk989349 = require("./989349.js"),
   Chunk985018 = require("./985018.jsx");
 
 function A(t) {
-  let [n, i, r] = (0, a.yK)([o.A], () => [o.A.isMuted(t.id), o.A.getMuteConfig(t.id), o.A.hasJoined(t.id)]), A = (0, s.M)(i);
+  let [n, i, r] = (0, a.yK)([s.A], () => [s.A.isMuted(t.id), s.A.getMuteConfig(t.id), s.A.hasJoined(t.id)]), A = (0, o.M)(i);
 
   function g(n) {
     u.A.setNotificationSettings(t, {

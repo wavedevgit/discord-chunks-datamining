@@ -16,12 +16,12 @@ function s() {
   let e = (0, a.wH)(),
     {
       analyticsLocations: t
-    } = (0, i.Ay)();
+    } = (0, l.Ay)();
   return (0, n.jsx)(o.aK1, {
     id: "user-volume",
     "aria-haspopup": true,
     label: u.intl.string(u.t.kbFsAD),
-    control: (r, i) => {
+    control: (r, l) => {
       var a, s;
       return (0, n.jsx)(o.i42, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -41,10 +41,10 @@ function s() {
         }
         return e
       }({}, r), s = s = {
-        ref: i,
-        value: (0, l.M)(e),
+        ref: l,
+        value: (0, i.M)(e),
         maxValue: 100,
-        onChange: e => (0, c.iy)((0, l.w)(e), t),
+        onChange: e => (0, c.iy)((0, i.w)(e), t),
         "aria-label": u.intl.string(u.t.kbFsAD)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var r = Object.keys(e);

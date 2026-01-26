@@ -1,4 +1,4 @@
-/** Chunk was on 97887 **/
+/** Chunk was on 67564 **/
 /** chunk id: 470743, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -28,6 +28,10 @@ function p() {
         analyticsLocations: t
       })
     },
-    icon: l.Zes
+    icon: l.Zes,
+    leadingAccessory: {
+      type: "icon",
+      icon: l.Zes
+    }
   })
 }

@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 72507, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  l: () => h
+  l: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,11 +19,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk822679 = require("./822679.js");
 
-function h(e) {
+function b(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: h
+    buttonClassName: b
   } = e, {
     analyticsLocations: x
   } = (0, s.Ay)(), j = t.features.has(g.GuildFeatures.INVITE_SPLASH), _ = n && j, O = i.useRef(null), v = i.useCallback(e => {
@@ -43,14 +43,14 @@ function h(e) {
     null == (e = O.current) || e.activateUploadDialogue()
   }, []);
   return j ? (0, r.jsxs)("div", {
-    className: h,
+    className: b,
     children: [(0, r.jsx)(l.$nd, {
       disabled: !_,
       variant: "primary",
       text: f.intl.string(f.t.yG2pUi),
       onClick: A
     }), (0, r.jsx)("div", {
-      className: b.y,
+      className: h.y,
       children: (0, r.jsx)(o.Ay, {
         ref: O,
         disabled: !_,
@@ -62,7 +62,7 @@ function h(e) {
       })
     })]
   }) : (0, r.jsx)("div", {
-    className: h,
+    className: b,
     children: (0, r.jsx)(d.u, {
       onClick: y
     })

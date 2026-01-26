@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 561923, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -42,20 +42,20 @@ function x(e) {
     }, []),
     A = null == (t = n.features) ? true : t.includes(f.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {
-    className: h.Im,
+    className: b.Im,
     ref: O,
     children: [(0, r.jsxs)("div", {
-      className: h.fi,
+      className: b.fi,
       children: [(0, r.jsx)(c.dOG, {
-        label: b.intl.string(b.t.fjHWen),
-        description: b.intl.string(b.t.J1YOV6),
+        label: h.intl.string(h.t.fjHWen),
+        description: h.intl.string(h.t.J1YOV6),
         checked: !j,
         onChange: v,
         disabled: A || !l
       }), A && (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: b.intl.format(b.t.R8jY9g, {
+        children: h.intl.format(h.t.R8jY9g, {
           accessLink: (e, t) => (0, r.jsx)(c.MzZ, {
             onClick: y,
             children: e
@@ -63,8 +63,8 @@ function x(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: s()(h.fi, {
-        [h.Rl]: j
+      className: s()(b.fi, {
+        [b.Rl]: j
       }),
       children: (0, r.jsx)(g.A, {
         guildId: x,

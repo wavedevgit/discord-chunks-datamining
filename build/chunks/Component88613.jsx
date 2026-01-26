@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 88613, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => b
 }), require("./864466.js"), require("./443073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk840701 = require("./840701.js");
 
-function b(e) {
+function h(e) {
   let {
     title: t,
     subtitle: n,
@@ -53,14 +53,14 @@ function b(e) {
   })
 }
 
-function h(e) {
+function b(e) {
   let {
     guild: t
   } = e;
   (0, s.qv)(t.id);
   let d = (0, a.ws)(t.id),
     {
-      rulesByTriggerType: h
+      rulesByTriggerType: b
     } = (0, s.wP)(t.id),
     {
       numEnabledRules: x,
@@ -68,9 +68,9 @@ function h(e) {
     } = i.useMemo(() => {
       let e = 0,
         t = 0;
-      return null == h || Object.values(d).flat().forEach(n => {
+      return null == b || Object.values(d).flat().forEach(n => {
         var r;
-        let i = null == (r = h[n]) ? true : r.filter(c.Vq);
+        let i = null == (r = b[n]) ? true : r.filter(c.Vq);
         null == i || 0 === i.length ? t++ : i.forEach(n => {
           n.enabled && e++, t++
         })
@@ -78,7 +78,7 @@ function h(e) {
         numEnabledRules: e,
         numRules: t
       }
-    }, [d, h]),
+    }, [d, b]),
     _ = (0, m.N)(t),
     O = _[u.C.CAPTCHA_AND_RAID_PROTECTION],
     v = _[u.C.DM_AND_SPAM_PROTECTION],
@@ -94,7 +94,7 @@ function h(e) {
       guild: t
     }), (0, r.jsxs)("div", {
       className: f.Xf,
-      children: [(0, r.jsx)(b, {
+      children: [(0, r.jsx)(h, {
         icon: n(818774),
         title: p.intl.string(p.t["53eF5o"]),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
@@ -104,7 +104,7 @@ function h(e) {
         page: u.C.CAPTCHA_AND_RAID_PROTECTION
       }), (0, r.jsx)("div", {
         className: f.yF
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(h, {
         icon: n(134635),
         title: p.intl.string(p.t.O0SfFy),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
@@ -115,7 +115,7 @@ function h(e) {
       }), (0, r.jsx)("div", {
         className: f.yF
       }), A && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(b, {
+        children: [(0, r.jsx)(h, {
           icon: n(34853),
           title: p.intl.string(p.t.uRelgx),
           subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
@@ -126,7 +126,7 @@ function h(e) {
         }), (0, r.jsx)("div", {
           className: f.yF
         })]
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(h, {
         icon: n(638154),
         title: p.intl.string(p.t.xrmhRX),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {

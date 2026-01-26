@@ -62,7 +62,7 @@ function I(e, t) {
 }
 
 function P(e, t, P, T, _) {
-  let L = r.useMemo(() => ({
+  let L = i.useMemo(() => ({
       [t]: [e.id]
     }), [t, e.id]),
     U = null != T ? [T] : [];
@@ -82,13 +82,13 @@ function P(e, t, P, T, _) {
       suppressed: K,
       voiceChannelId: X
     } = (0, a.cf)([E.A], () => {
-      var n, l, r;
-      let i = E.A.getVoiceState(t, e.id);
+      var n, l, i;
+      let r = E.A.getVoiceState(t, e.id);
       return {
-        muted: null != (n = null == i ? true : i.mute) && n,
-        deafened: null != (l = null == i ? true : i.deaf) && l,
-        suppressed: null != (r = null == i ? true : i.suppress) && r,
-        voiceChannelId: null == i ? true : i.channelId
+        muted: null != (n = null == r ? true : r.mute) && n,
+        deafened: null != (l = null == r ? true : r.deaf) && l,
+        suppressed: null != (i = null == r ? true : r.suppress) && i,
+        voiceChannelId: null == r ? true : r.channelId
       }
     }),
     W = (0, a.bG)([p.Ay], () => p.Ay.getMember(t, e.id)),
@@ -134,9 +134,9 @@ function P(e, t, P, T, _) {
     }, "voice-disconnect") : null] : [],
     Z = async (t, n, l) => {
       if (t.ctrlKey || t.metaKey) try {
-        var r;
+        var i;
         await s.A.setCommunicationDisabledDuration(n, l, S.DisableCommunicationDuration.DURATION_60_SEC, null, T), Y(f.Nj.TIMEOUT), (0, o.showToast)((0, o.createToast)(D.intl.formatToPlainString(D.t.O9C3Nt, {
-          user: null != (r = h.Ay.getName(n, null, e)) ? r : ""
+          user: null != (i = h.Ay.getName(n, null, e)) ? i : ""
         }), o.ToastType.SUCCESS))
       } catch (e) {
         (0, o.showToast)((0, o.createToast)(D.intl.string(D.t.epyCuh), o.ToastType.FAILURE))
@@ -144,23 +144,23 @@ function P(e, t, P, T, _) {
     }, z = null, $ = null != N && y.A.canManageUser(x.xBc.MODERATE_MEMBERS, e, N) && y.A.canManageUser(x.xBc.KICK_MEMBERS, e, N) && y.A.canManageUser(x.xBc.BAN_MEMBERS, e, N), Q = null != N && (y.A.canManageUser(x.xBc.MANAGE_GUILD, e, N) || y.A.canManageUser(x.xBc.MANAGE_ROLES, e, N));
   if (!G && null != N && null != W && null != W.joinedAt && ($ || Q) && N.features.has(x.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED)) {
     var ee;
-    z = (0, i.Lt)(null != (ee = W.flags) ? ee : 0, M.D.BYPASSES_VERIFICATION) ? (0, l.jsx)(o.Drp, {
+    z = (0, r.Lt)(null != (ee = W.flags) ? ee : 0, M.D.BYPASSES_VERIFICATION) ? (0, l.jsx)(o.Drp, {
       id: "verify",
       label: D.intl.string(D.t.NbhSI7),
       action: () => {
         var t;
-        return d.A.setMemberFlags(N.id, e.id, (0, i.lA)(null != (t = W.flags) ? t : 0, M.D.BYPASSES_VERIFICATION, false))
+        return d.A.setMemberFlags(N.id, e.id, (0, r.lA)(null != (t = W.flags) ? t : 0, M.D.BYPASSES_VERIFICATION, false))
       }
     }, "verify") : (0, l.jsx)(o.Drp, {
       id: "verify",
       label: D.intl.string(D.t["6QlTeK"]),
       action: () => {
         var t;
-        return d.A.setMemberFlags(N.id, e.id, (0, i.lA)(null != (t = W.flags) ? t : 0, M.D.BYPASSES_VERIFICATION, true))
+        return d.A.setMemberFlags(N.id, e.id, (0, r.lA)(null != (t = W.flags) ? t : 0, M.D.BYPASSES_VERIFICATION, true))
       }
     }, "verify")
   }
-  return [H, ...q, ...G || null == N ? [] : [z, J && !R ? w ? (0, l.jsx)(o.Drp, {
+  return [H, z, ...q, ...G || null == N ? [] : [J && !R ? w ? (0, l.jsx)(o.Drp, {
     id: "removetimeout",
     label: D.intl.formatToPlainString(D.t.csKeta, {
       user: e.username
@@ -195,9 +195,9 @@ function P(e, t, P, T, _) {
     color: "danger",
     action: () => (0, o.mMO)(async () => {
       let {
-        default: r
+        default: i
       } = await n.e("40243").then(n.bind(n, 324785));
-      return n => (0, l.jsx)(r, I(C({}, n), {
+      return n => (0, l.jsx)(i, I(C({}, n), {
         location: T,
         guildId: t,
         user: e
@@ -211,9 +211,9 @@ function P(e, t, P, T, _) {
     color: "danger",
     action: () => (0, o.mMO)(async () => {
       let {
-        default: r
+        default: i
       } = await n.e("2504").then(n.bind(n, 333179));
-      return n => (0, l.jsx)(r, I(C({}, n), {
+      return n => (0, l.jsx)(i, I(C({}, n), {
         location: T,
         guildId: t,
         user: e

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 429526, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -32,38 +32,38 @@ let x = [],
     }, [t, v]);
     return v.length <= 0 || j.length >= o.CW ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: h.rS,
+        className: b.rS,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
-          children: b.intl.string(b.t.WThgAR)
+          children: h.intl.string(h.t.WThgAR)
         }), (0, r.jsxs)("div", {
-          className: h.vn,
+          className: b.vn,
           children: [(0, r.jsx)(a.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            children: b.intl.string(b.t.YtNI8C)
+            children: h.intl.string(h.t.YtNI8C)
           }), (0, r.jsxs)(a.DUT, {
-            className: h.iC,
+            className: b.iC,
             onClick: y,
             children: [(0, r.jsx)(a.A9s, {
               size: "md",
               color: "currentColor",
-              className: h.An
+              className: b.An
             }), (0, r.jsx)(a.Text, {
               variant: "text-xs/semibold",
               color: "text-brand",
-              children: b.intl.string(b.t.aLqZTl)
+              children: h.intl.string(h.t.aLqZTl)
             })]
           })]
         }), (0, r.jsx)("div", {
-          className: h.cF,
+          className: b.cF,
           children: v.map((e, t) => (0, r.jsx)(p.A, {
             channel: e.channel,
             end: t < v.length - 1
           }, e.channel.id))
         })]
       }), (0, r.jsx)("div", {
-        className: h.DY
+        className: b.DY
       })]
     })
   }

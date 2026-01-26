@@ -30,10 +30,10 @@ function N(e) {
   let {
     guildId: t
   } = e;
-  (0, g.tR)(t), (0, b.A)(t);
+  (0, f.tR)(t), (0, b.A)(t);
   let n = (0, _.U)("GameServerPage");
   a.useEffect(() => {
-    (0, f.cq)(t), o.A.getDetectableGames()
+    (0, g.cq)(t), o.A.getDetectableGames()
   }, [t]);
   let N = (0, m.A)(t),
     A = (0, l.bG)([x.A], () => x.A.getStateForGuild(t)),

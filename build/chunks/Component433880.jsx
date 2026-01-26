@@ -82,15 +82,22 @@ function m(e) {
     let {
       applicationId: t
     } = e, n = C.get(t);
-    null != n && N.push((0, r.jsx)(s.Drp, {
-      id: t,
-      label: n.name,
-      icon: (0, r.jsx)(l.A, {
-        game: n,
-        size: l.M.XXSMALL
-      }),
-      action: () => m(n)
-    }, t))
+    if (null != n) {
+      let e = n.getIconURL(16);
+      N.push((0, r.jsx)(s.Drp, {
+        id: t,
+        label: n.name,
+        icon: (0, r.jsx)(l.A, {
+          game: n,
+          size: l.M.XXSMALL
+        }),
+        leadingAccessory: null != e ? {
+          type: "image",
+          src: e
+        } : true,
+        action: () => m(n)
+      }, t))
+    }
   }), 0 === N.length) ? null : (0, r.jsx)(s.Drp, {
     color: g,
     id: t,

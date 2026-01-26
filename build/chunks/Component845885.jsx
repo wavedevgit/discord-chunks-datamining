@@ -74,6 +74,10 @@ function b(e) {
     id: "share-your-screen",
     label: y.intl.string(y.t.fjBNo1),
     icon: s.Fzq,
+    leadingAccessory: {
+      type: "icon",
+      icon: s.Fzq
+    },
     action: v
   });
   let H = p.isPlatformEmbedded ? (0, r.jsx)(s.Drp, {
@@ -91,6 +95,10 @@ function b(e) {
       id: "change-windows",
       label: F,
       icon: s.Fzq,
+      leadingAccessory: {
+        type: "icon",
+        icon: s.Fzq
+      },
       action: k
     }),
     K = (0, r.jsx)(s.Drp, {
@@ -98,6 +106,10 @@ function b(e) {
       color: "danger",
       label: y.intl.string(y.t.S5anIc),
       icon: s.GT3,
+      leadingAccessory: {
+        type: "icon",
+        icon: s.GT3
+      },
       action: () => (0, u.A)(O)
     });
   return S ? (0, r.jsxs)(r.Fragment, {

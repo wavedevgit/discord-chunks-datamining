@@ -24,7 +24,7 @@ function p(e) {
     channel: p
   });
   return (0, n.jsxs)(l.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-needs-migration": true,
     navId: "guild-context",
     "aria-label": d.intl.string(d.t.HpQykc),
     onClose: i.Z_,

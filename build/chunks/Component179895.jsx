@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 179895, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -52,9 +52,9 @@ function f() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, a.O)(), [n, f] = o.lZ(e), b = i.useMemo(() => new Set(n.map(e => e.ref_id)), [n]);
+  } = (0, a.O)(), [n, f] = o.lZ(e), h = i.useMemo(() => new Set(n.map(e => e.ref_id)), [n]);
 
-  function h(e, t) {
+  function b(e, t) {
     let {
       channelId: r,
       description: i,
@@ -77,9 +77,9 @@ function f() {
       onEdit: function(e) {
         (0, l.qfG)(i => (0, r.jsx)(c.oJ, p(m({}, i), {
           guildId: t,
-          omitChannelIds: b,
+          omitChannelIds: h,
           initialData: n[e],
-          onSave: t => h(t, e),
+          onSave: t => b(t, e),
           onDelete: () => {
             let t;
             (t = [...n]).splice(e, 1), f(t)
@@ -98,8 +98,8 @@ function f() {
       onClick: function() {
         (0, l.qfG)(e => (0, r.jsx)(c.oJ, p(m({}, e), {
           guildId: t,
-          omitChannelIds: b,
-          onSave: e => h(e)
+          omitChannelIds: h,
+          onSave: e => b(e)
         })))
       },
       disabled: x,

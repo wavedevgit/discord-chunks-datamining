@@ -54,7 +54,9 @@ function E() {
   }
   i !== e && (i = e, t && v.emitChange())
 }
-let y = o().debounce(E, 300);
+let y = o().throttle(E, 300, {
+  trailing: true
+});
 
 function b() {
   return y(), false

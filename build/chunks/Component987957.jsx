@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 987957, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -33,10 +33,10 @@ let O = function(e) {
     onDragStart: T,
     onDragComplete: C,
     onDragReset: P
-  } = e, w = (0, a.bG)([f.A], () => f.A.getChannel(E.channelId)), R = (0, a.bG)([b.A], () => b.A.getGuild(A)), D = (0, a.bG)([x.A], () => x.A.getPendingData()[E.channelId]), {
+  } = e, w = (0, a.bG)([f.A], () => f.A.getChannel(E.channelId)), R = (0, a.bG)([h.A], () => h.A.getGuild(A)), D = (0, a.bG)([x.A], () => x.A.getPendingData()[E.channelId]), {
     customEmoji: G,
     unicodeEmoji: L
-  } = (0, g.A)(null == (l = E.emoji) ? true : l.id, null == (O = E.emoji) ? true : O.name), k = null == E.emoji || null != G || null != L, M = h.Ay.getNewMemberActionIconURL({
+  } = (0, g.A)(null == (l = E.emoji) ? true : l.id, null == (O = E.emoji) ? true : O.name), k = null == E.emoji || null != G || null != L, M = b.Ay.getNewMemberActionIconURL({
     channelId: E.channelId,
     icon: E.icon
   }), U = null != D ? D.iconData : M, B = null;

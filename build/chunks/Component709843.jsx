@@ -17,20 +17,20 @@ function b(e) {
   let {
     guild: a,
     onSelect: s
-  } = e, [b, p] = t.useState(a.premiumProgressBarEnabled), [h, g] = t.useState(false), m = (0, i.bG)([c.A], () => c.A.can(o.xBc.MANAGE_GUILD, a)), k = async () => {
+  } = e, [b, p] = r.useState(a.premiumProgressBarEnabled), [h, g] = r.useState(false), m = (0, i.bG)([c.A], () => c.A.can(u.xBc.MANAGE_GUILD, a)), k = async () => {
     m && (g(true), await l.A.saveGuild(a.id, {
       premiumProgressBarEnabled: !b
     }), p(!b), g(false))
   };
-  return (0, r.jsx)(n.W1t, {
-    "data-menu-migration-ready": true,
+  return (0, t.jsx)(n.W1t, {
+    "data-menu-migrated": true,
     navId: "progress-bar-context",
     onClose: d.Z_,
-    "aria-label": u.intl.string(u.t["m85s/h"]),
+    "aria-label": o.intl.string(o.t["m85s/h"]),
     onSelect: s,
-    children: (0, r.jsx)(n.sLh, {
+    children: (0, t.jsx)(n.sLh, {
       id: "progress-bar-enabled",
-      label: u.intl.string(u.t["0CJWP2"]),
+      label: o.intl.string(o.t["0CJWP2"]),
       checked: b,
       disabled: h,
       action: k

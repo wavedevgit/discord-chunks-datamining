@@ -21,7 +21,7 @@ function p(e) {
     onClose: t
   } = e;
   return (0, n.jsx)(i.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated-auto": true,
     navId: "settings-footer-more-menu",
     onClose: t,
     onSelect: () => {},

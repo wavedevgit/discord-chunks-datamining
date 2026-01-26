@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 694878, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -26,18 +26,18 @@ function m(e) {
     })
   }, [n]), f = i.useCallback(() => {
     (0, o.A)(n, s.A.GUILD_POWERUPS_GUILD_SETTINGS_TAGS, "guildTagsBadgePacks"), c.A.close()
-  }, [n]), b = (0, a.A)(), h = i.useId();
+  }, [n]), h = (0, a.A)(), b = i.useId();
   return (0, r.jsx)("div", {
     className: t,
     children: (0, r.jsx)(l.D0$, {
       label: g.intl.string(u.default.pb7lpK),
-      id: h,
+      id: b,
       children: (0, r.jsx)(d.y, {
-        badgeCollection: b,
+        badgeCollection: h,
         handleBoostUpsellClick: f,
         onBadgeClicked: p,
         selectedBadge: m,
-        headingId: h
+        headingId: b
       })
     })
   })

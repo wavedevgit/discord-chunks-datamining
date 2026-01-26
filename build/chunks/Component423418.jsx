@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 423418, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -25,7 +25,7 @@ function j(e) {
   let {
     guild: t
   } = e, n = i.useRef(null), j = (0, o.M5)(t.id, "GuildSettingsBoostPerks"), _ = (0, l.bG)([c.A], () => c.A.hideInstantInvites);
-  (0, u.A)(n, b.nd0.BOOST_PERKS_VANITY_URL);
+  (0, u.A)(n, h.nd0.BOOST_PERKS_VANITY_URL);
   let {
     vanityURLCode: O,
     vanityURLUses: v,
@@ -47,17 +47,17 @@ function j(e) {
       variant: "heading-md/medium",
       color: "text-strong",
       className: x.D,
-      children: [h.intl.string(h.t["5XZKy/"]), (0, r.jsx)(p.rV, {
+      children: [b.intl.string(b.t["5XZKy/"]), (0, r.jsx)(p.rV, {
         guild: t
       })]
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
       className: x.h,
-      children: j ? h.intl.format(h.t["J/v84B"], {
-        helpCenterArticle: d.A.getArticleURL(b.MVz.GUILD_VANITY_URL)
-      }) : h.intl.format(h.t.koklFG, {
-        helpCenterArticle: d.A.getArticleURL(b.MVz.GUILD_VANITY_URL)
+      children: j ? b.intl.format(b.t["J/v84B"], {
+        helpCenterArticle: d.A.getArticleURL(h.MVz.GUILD_VANITY_URL)
+      }) : b.intl.format(b.t.koklFG, {
+        helpCenterArticle: d.A.getArticleURL(h.MVz.GUILD_VANITY_URL)
       })
     }), (0, r.jsx)(f.C, {
       guild: t,

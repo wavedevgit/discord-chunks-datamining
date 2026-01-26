@@ -24,15 +24,15 @@ function f(e) {
     onSelect: r
   } = e, f = (0, o.bG)([l.A], () => null != t && l.A.can(u.xBc.ADMINISTRATOR, t));
   return (0, n.jsx)(c.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated": true,
     navId: "guild-shop-context",
-    "aria-label": d.intl.string(d.t.g3KvYF),
+    "aria-label": y.intl.string(y.t.g3KvYF),
     onClose: i.Z_,
     onSelect: r,
     children: (0, n.jsx)(c.rXV, {
       children: (0, n.jsx)(c.Drp, {
         id: "role-subscription-copy-link",
-        label: d.intl.string(d.t.WqhZss),
+        label: y.intl.string(y.t.WqhZss),
         action: () => {
           var e, r;
           s.default.track(u.HAw.GUILD_SHOP_COPY_LINK, (e = function(e) {
@@ -64,7 +64,7 @@ function f(e) {
             return r
           })(Object(r)).forEach(function(t) {
             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-          }), e)), (0, b.C)((0, p.n)(t.id, y.VV.GUILD_SHOP))
+          }), e)), (0, b.C)((0, p.n)(t.id, d.VV.GUILD_SHOP))
         }
       })
     })

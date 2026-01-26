@@ -1,7 +1,7 @@
-/** Chunk was on 97887 **/
+/** Chunk was on 89209 **/
 /** chunk id: 690953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => v
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,7 +18,7 @@ var Chunk417597 = require("./417597.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function m(e) {
   return e
 }
 
-function b(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,50 +50,50 @@ function b(e, t) {
   }), e
 }
 
-function A(e) {
+function v(e) {
   let t = (0, l.bG)([o.A], () => o.A.getChannelId() === e.id),
-    A = (0, d.A)(),
-    y = (null == A ? true : A.channelId) === e.id,
-    _ = (0, a.J)(e) && !e.isPrivate(),
-    O = (0, a.A)(e),
-    j = !(0, l.bG)([c.A], () => c.A.isInChannel(e.id)) && O || _,
-    v = (0, p.A)();
-  return y || 0 !== v.length ? y ? (0, r.jsx)(i.Drp, {
-    label: g.intl.string(g.t.PlwgdU),
+    v = (0, s.A)(),
+    b = (null == v ? true : v.channelId) === e.id,
+    p = (0, a.J)(e) && !e.isPrivate(),
+    N = (0, a.A)(e),
+    h = !(0, l.bG)([c.A], () => c.A.isInChannel(e.id)) && N || p,
+    _ = (0, f.A)();
+  return b || 0 !== _.length ? b ? (0, r.jsx)(i.Drp, {
+    label: y.intl.string(y.t.PlwgdU),
     id: "handoff",
     action: () => {
-      (0, u.x)(A)
+      (0, d.x)(v)
     },
-    icon: (0, h.A)(true),
-    disabled: j
-  }) : v.map(l => {
+    icon: (0, A.A)(true),
+    disabled: h
+  }) : _.map(l => {
     var a, o;
     return (0, r.jsx)(i.Drp, {
       id: "transfer-".concat(l.type, "-").concat(l.id),
-      label: (a = l.type, o = t, a === f.fg2.XBOX ? o ? g.intl.string(g.t["qVE/VF"]) : g.intl.string(g.t.E8euSk) : a === f.fg2.PLAYSTATION ? o ? g.intl.string(g.t.vzfxmY) : g.intl.string(g.t.QxEYDj) : a === f.fg2.PLAYSTATION_STAGING ? o ? g.intl.string(g.t.BDiXtV) : g.intl.string(g.t["bhdB9+"]) : true),
+      label: (a = l.type, o = t, a === E.fg2.XBOX ? o ? y.intl.string(y.t["qVE/VF"]) : y.intl.string(y.t.E8euSk) : a === E.fg2.PLAYSTATION ? o ? y.intl.string(y.t.vzfxmY) : y.intl.string(y.t.QxEYDj) : a === E.fg2.PLAYSTATION_STAGING ? o ? y.intl.string(y.t.BDiXtV) : y.intl.string(y.t["bhdB9+"]) : true),
       action: () => {
-        !l.twoWayLink || l.revoked ? (0, s.A)({
+        !l.twoWayLink || l.revoked ? (0, u.A)({
           platformType: l.type,
           location: "Console Transfer Item"
-        }) : l.type === f.fg2.XBOX ? (0, i.mMO)(async () => {
+        }) : l.type === E.fg2.XBOX ? (0, i.mMO)(async () => {
           let {
             default: t
           } = await Promise.all([n.e("14882"), n.e("67670")]).then(n.bind(n, 188072));
-          return n => (0, r.jsx)(t, b(m({}, n), {
+          return n => (0, r.jsx)(t, O(g({}, n), {
             channel: e
           }))
-        }) : (l.type === f.fg2.PLAYSTATION || l.type === f.fg2.PLAYSTATION_STAGING) && (0, i.mMO)(async () => {
+        }) : (l.type === E.fg2.PLAYSTATION || l.type === E.fg2.PLAYSTATION_STAGING) && (0, i.mMO)(async () => {
           let {
             default: t
           } = await n.e("71282").then(n.bind(n, 315337));
-          return n => (0, r.jsx)(t, b(m({}, n), {
+          return n => (0, r.jsx)(t, O(g({}, n), {
             platform: l.type,
             channel: e
           }))
         })
       },
-      icon: (0, h.A)(l.type),
-      disabled: j
+      icon: (0, A.A)(l.type),
+      disabled: h
     }, l.id)
   }) : null
 }

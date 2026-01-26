@@ -1,7 +1,7 @@
 /** Chunk was on 35894 **/
 /** chunk id: 512068, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,20 +16,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk576705 = require("./576705.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk510403 = require("./510403.js");
-let f = e => {
+let b = e => {
   let {
     guild: t,
     transitionState: n,
     onClose: i
-  } = e, [f, j] = l.useState(7), [g, h] = l.useState(null), [x, y] = l.useState([]), O = l.useCallback(async () => {
-    h(null), h(await u.A.updateEstimate(t.id, f, x))
-  }, [f, t.id, x]);
+  } = e, [b, j] = l.useState(7), [g, h] = l.useState(null), [x, y] = l.useState([]), O = l.useCallback(async () => {
+    h(null), h(await u.A.updateEstimate(t.id, b, x))
+  }, [b, t.id, x]);
   l.useEffect(() => {
     O()
   }, [O]);
   let v = l.useCallback(() => {
-      u.A.prune(t.id, f, x), i()
-    }, [t.id, f, x, i]),
+      u.A.prune(t.id, b, x), i()
+    }, [t.id, b, x, i]),
     _ = (0, a.yK)([m.A, C.A], () => {
       let e = m.A.getHighestRole(t);
       return o()(C.A.getSortedRoles(t.id)).filter(n => !(0, d.Oy)(n) && m.A.isRoleHigher(t, e, n)).map(e => {
@@ -59,10 +59,10 @@ let f = e => {
     },
     transitionState: n,
     children: (0, r.jsxs)("div", {
-      className: b.Q,
+      className: f.Q,
       children: [(0, r.jsx)(c.z6M, {
         label: p.intl.string(p.t.YccTvK),
-        value: String(f),
+        value: String(b),
         options: [{
           name: p.intl.formatToPlainString(p.t.FM1dHS, {
             days: 7
@@ -78,7 +78,7 @@ let f = e => {
           j(Number(e))
         }
       }), (0, r.jsx)(c.IpV, {
-        className: b.X,
+        className: f.X,
         children: (0, r.jsx)(c.ZiE, {
           selectionMode: "multiple",
           label: p.intl.string(p.t.buoe17),
@@ -91,10 +91,10 @@ let f = e => {
         variant: "text-sm/normal",
         children: x.length > 0 ? p.intl.format(p.t["5WxHHp"], {
           members: g,
-          days: f
+          days: b
         }) : p.intl.format(p.t.f13az9, {
           members: g,
-          days: f
+          days: b
         })
       })]
     })

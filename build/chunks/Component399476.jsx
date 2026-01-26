@@ -77,7 +77,6 @@ function h(e) {
   }), [b]);
   return O || A ? null : (0, r.jsx)(a.Drp, {
     id: "ignore",
-    color: "default",
     label: v ? u.intl.string(u.t["8wXU9B"]) : u.intl.string(u.t.ytCpKs),
     action: v ? () => {
       null == g || g(), s.A.unignoreUser(b, null != E ? E : "use-ignore-user-item-web", null != p ? p : true)

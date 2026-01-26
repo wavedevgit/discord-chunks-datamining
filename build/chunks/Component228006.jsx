@@ -49,7 +49,7 @@ let J = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   var t;
   let {
     user: n,
-    channel: o,
+    channel: s,
     context: a,
     showChatItems: u = true,
     showMediaItems: X = false,
@@ -69,47 +69,47 @@ let J = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   } = j.A.useExperiment({
     guildId: null == q ? true : q.guild_id,
     location: "GroupDMUserContextMenu"
-  }), $ = Q ? null == q ? true : q.id : o.id, ee = (0, k.A)(n, $), et = (0, S.A)(n.id, a), en = (0, w.A)({
+  }), $ = Q ? null == q ? true : q.id : s.id, ee = (0, V.A)(n, $), et = (0, S.A)(n.id, a), en = (0, w.A)({
     user: n,
     context: a
-  }), ei = (0, C.A)({
+  }), ei = (0, D.A)({
     user: n,
-    channelId: o.id,
+    channelId: s.id,
     context: a
   }), er = (0, y.A)({
     user: n
-  }), el = (0, B.A)(n.id), es = (0, N.A)(n.id, o.id), eo = (0, V.A)(n.id), ea = (0, m.u)({
+  }), el = (0, B.A)(n.id), eo = (0, N.A)(n.id, s.id), es = (0, k.A)(n.id), ea = (0, f.u)({
     userId: n.id,
-    channelId: o.id,
-    guildId: o.getGuildId()
-  }), ed = (0, M.A)(n.id, o.id), ec = (0, L.A)({
+    channelId: s.id,
+    guildId: s.getGuildId()
+  }), ed = (0, M.A)(n.id, s.id), ec = (0, L.A)({
     user: n
   }), eu = (0, c.A)(null, n), eA = (0, O.A)({
     user: n
-  }), eb = (0, D.A)({
+  }), eb = (0, C.A)({
     user: n
   }), eg = (0, T.A)({
     user: n
   }), ep = (0, P.A)({
     user: n,
     location: "GroupDMUserContextMenu"
-  }), em = (0, U.A)({
+  }), ef = (0, U.A)({
     user: n,
     location: "GroupDMUserContextMenu"
-  }), ef = (0, f.A)({
+  }), em = (0, m.A)({
     id: n.id,
     label: F.intl.string(F.t["/AXYnE"])
-  }), eh = (0, R.A)(n.id), ej = (0, g.A)(n.id), ev = (0, b.A)(o.id), ex = (0, h.A)(n), eO = (0, p.A)(n.id), ey = (0, A.A)(o.id, n.id), eD = (0, I.A)({
+  }), eh = (0, R.A)(n.id), ej = (0, g.A)(n.id), ev = (0, b.A)(s.id), ex = (0, h.A)(n), eO = (0, p.A)(n.id), ey = (0, A.A)(s.id, n.id), eC = (0, I.A)({
     commandType: d.kc.USER,
     commandTargetId: n.id,
-    channel: o,
+    channel: s,
     guildId: true,
     onHeightUpdate: W
-  }), eC = (0, E.A)(n, o), eI = n.isNonUserBot(), eP = o.isManaged(), ew = null == (t = o.recipients) ? true : t.includes(n.id);
+  }), eD = (0, E.A)(n, s), eI = n.isNonUserBot(), eP = s.isManaged(), ew = null == (t = s.recipients) ? true : t.includes(n.id);
   return (0, i.jsxs)(l.W1t, {
     "data-menu-mixed": true,
     navId: "user-context",
-    onClose: s.Z_,
+    onClose: o.Z_,
     "aria-label": F.intl.string(F.t.liqwPJ),
     onSelect: Y,
     onInteraction: Z,
@@ -121,16 +121,16 @@ let J = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
       }), X && (0, i.jsx)(l.rXV, {
         children: el
       }), ew && (0, i.jsxs)(l.rXV, {
-        children: [!eP && es, eC]
+        children: [!eP && eo, eD]
       }), (0, i.jsx)(l.rXV, {
         children: z && eu
       }), (0, i.jsxs)(l.rXV, {
-        children: [X && eo, X && ea, X && ed, eD, z && ec, eA, eb, eg, z && em, z && ep, X && eO]
+        children: [X && es, X && ea, X && ed, eC, z && ec, eA, eb, eg, z && ef, z && ep, X && eO]
       }), J && (0, i.jsxs)(l.rXV, {
         children: [ey, ev, ej]
       })]
     }), (0, i.jsx)(l.rXV, {
-      children: ef
+      children: em
     })]
   })
 }, {

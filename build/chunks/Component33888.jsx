@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 33888, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -118,7 +118,7 @@ function v(e) {
     profile: n,
     onCustomBannerChange: l,
     canManageGuild: u
-  } = e, m = (0, a.bG)([g.A], () => g.A.getGuild(n.id)), p = null != (t = null == m ? true : m.features.has(b.GuildFeatures.DISCOVERABLE)) && t, v = n.id, y = i.useCallback(e => () => {
+  } = e, m = (0, a.bG)([g.A], () => g.A.getGuild(n.id)), p = null != (t = null == m ? true : m.features.has(h.GuildFeatures.DISCOVERABLE)) && t, v = n.id, y = i.useCallback(e => () => {
     f.A.updateGuildProfile(v, {
       brandColorPrimary: e,
       customBanner: null
@@ -133,7 +133,7 @@ function v(e) {
         canManageGuild: u,
         handleClick: y(null),
         hasCustomBanner: p && null != n.customBanner
-      }), h.aA.map(e => {
+      }), b.aA.map(e => {
         let {
           name: t,
           color: n

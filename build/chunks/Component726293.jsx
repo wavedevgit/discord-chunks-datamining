@@ -24,7 +24,7 @@ function u(e) {
   return (0, r.jsx)("div", {
     className: a()(o.Wx, c.k),
     children: (0, r.jsx)(s.W1t, {
-      "data-menu-migration-ready": true,
+      "data-menu-migrated": true,
       navId: "command-list-sort",
       "aria-label": l.intl.string(l.t.Ugo9ud),
       hideScroller: true,

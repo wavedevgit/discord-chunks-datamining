@@ -1,7 +1,7 @@
 /** Chunk was on 67447 **/
 /** chunk id: 146359, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk287809 = require("./287809.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function p(e) {
   return e
 }
 
-function m(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,30 +50,30 @@ function m(e, t) {
   }), e
 }
 
-function y(e, t, y) {
+function m(e, t, m) {
   let j = l.useMemo(() => ({
     [t]: [e.id]
   }), [t, e.id]);
   (0, a.E)(j, "useThreadAdminActionItems"), (0, i.bG)([b.A], () => b.A.getGuildVersion(t), [t]);
-  let h = (0, i.bG)([A.A], () => A.A.getChannel(y)),
+  let h = (0, i.bG)([A.A], () => A.A.getChannel(m)),
     E = (0, i.bG)([g.A], () => g.A.getGuild(t), [t]),
     P = (0, i.bG)([f.default], () => f.default.getCurrentUser()),
-    x = (0, u.A)(h, "Context Menu"),
-    v = (0, s.qi)(null == h ? true : h.id);
-  return (null == P ? true : P.id) === e.id ? [x] : null == E || null == h || null == P ? [] : [v ? (0, r.jsx)(o.Drp, {
+    v = (0, c.A)(h, "Context Menu"),
+    x = (0, s.qi)(null == h ? true : h.id);
+  return (null == P ? true : P.id) === e.id ? [v] : null == E || null == h || null == P ? [] : [x ? (0, r.jsx)(o.Drp, {
     id: "remove",
-    label: h.isForumPost() ? O.intl.formatToPlainString(O.t.v2KNNx, {
+    label: h.isForumPost() ? p.intl.formatToPlainString(p.t.v2KNNx, {
       user: e.username
-    }) : O.intl.formatToPlainString(O.t["27xWaT"], {
+    }) : p.intl.formatToPlainString(p.t["27xWaT"], {
       user: e.username
     }),
     color: "danger",
     action: () => d.A.removeMember(h.id, e.id, "Context Menu")
-  }) : null, (0, c.L7)(e, E) ? (0, r.jsx)(o.Drp, {
+  }) : null, (0, u.L7)(e, E) ? (0, r.jsx)(o.Drp, {
     id: "kick",
-    label: v ? O.intl.formatToPlainString(O.t["1Ie87p"], {
+    label: x ? p.intl.formatToPlainString(p.t["1Ie87p"], {
       user: e.username
-    }) : O.intl.formatToPlainString(O.t["9l/iTS"], {
+    }) : p.intl.formatToPlainString(p.t["9l/iTS"], {
       user: e.username
     }),
     color: "danger",
@@ -81,16 +81,16 @@ function y(e, t, y) {
       let {
         default: t
       } = await n.e("62624").then(n.bind(n, 324785));
-      return n => (0, r.jsx)(t, m(p({}, n), {
+      return n => (0, r.jsx)(t, y(O({}, n), {
         guildId: E.id,
         user: e
       }))
     })
-  }) : null, (0, c.EZ)(e, E) ? (0, r.jsx)(o.Drp, {
+  }) : null, (0, u.EZ)(e, E) ? (0, r.jsx)(o.Drp, {
     id: "ban",
-    label: v ? O.intl.formatToPlainString(O.t.i62APf, {
+    label: x ? p.intl.formatToPlainString(p.t.i62APf, {
       user: e.username
-    }) : O.intl.formatToPlainString(O.t.WnpUBi, {
+    }) : p.intl.formatToPlainString(p.t.WnpUBi, {
       user: e.username
     }),
     color: "danger",
@@ -98,7 +98,7 @@ function y(e, t, y) {
       let {
         default: t
       } = await n.e("80123").then(n.bind(n, 333179));
-      return n => (0, r.jsx)(t, m(p({}, n), {
+      return n => (0, r.jsx)(t, y(O({}, n), {
         guildId: E.id,
         user: e
       }))

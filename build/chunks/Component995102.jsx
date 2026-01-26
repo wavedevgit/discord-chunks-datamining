@@ -1,9 +1,9 @@
-/** Chunk was on 98865 **/
+/** Chunk was on 88962 **/
 /** chunk id: 995102, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => O,
-  gv: () => g,
-  pB: () => h
+  Ay: () => g,
+  gv: () => C,
+  pB: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,26 +20,26 @@ var Chunk989349 = require("./989349.js"),
   Chunk652215 = require("./652215.js"),
   Chunk815968 = require("./815968.js"),
   Chunk985018 = require("./985018.jsx");
-let g = () => [{
-    value: p.Xx.MINUTES_15,
-    label: v.intl.string(v.t["8ot6gv"])
+let C = () => [{
+    value: _.Xx.MINUTES_15,
+    label: p.intl.string(p.t["8ot6gv"])
   }, {
-    value: p.Xx.HOURS_1,
-    label: v.intl.string(v.t.UMWBZr)
+    value: _.Xx.HOURS_1,
+    label: p.intl.string(p.t.UMWBZr)
   }, {
-    value: p.Xx.HOURS_3,
-    label: v.intl.string(v.t.QmYWtu)
+    value: _.Xx.HOURS_3,
+    label: p.intl.string(p.t.QmYWtu)
   }, {
-    value: p.Xx.HOURS_8,
-    label: v.intl.string(v.t.EpAXPC)
+    value: _.Xx.HOURS_8,
+    label: p.intl.string(p.t.EpAXPC)
   }, {
-    value: p.Xx.HOURS_24,
-    label: v.intl.string(v.t["755t4q"])
+    value: _.Xx.HOURS_24,
+    label: p.intl.string(p.t["755t4q"])
   }, {
-    value: p.Xx.ALWAYS,
-    label: v.intl.string(v.t.r3LawO)
+    value: _.Xx.ALWAYS,
+    label: p.intl.string(p.t.r3LawO)
   }],
-  h = e => {
+  b = e => {
     let t = e > 0 ? l()().add(e, "second").toISOString() : null;
     return {
       muted: true,
@@ -50,60 +50,60 @@ let g = () => [{
     }
   };
 
-function O(e, t) {
+function g(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-    [i, l] = (0, a.yK)([d.Ay], () => [d.Ay.isChannelMuted(e.guild_id, e.id), d.Ay.getChannelMuteConfig(e.guild_id, e.id)]),
-    p = (0, u.M)(l),
-    O = (0, A.Ay)(e, true);
+    [a, l] = (0, r.yK)([c.Ay], () => [c.Ay.isChannelMuted(e.guild_id, e.id), c.Ay.getChannelMuteConfig(e.guild_id, e.id)]),
+    _ = (0, s.M)(l),
+    g = (0, v.Ay)(e, true);
 
   function m(t) {
-    t && e.type === b.rbe.GUILD_CATEGORY && (0, s.Gv)(e.id), c.A.updateChannelOverrideSettings(e.guild_id, e.id, {
+    t && e.type === A.rbe.GUILD_CATEGORY && (0, o.Gv)(e.id), u.A.updateChannelOverrideSettings(e.guild_id, e.id, {
       muted: t
     }, f.G_.muted(t))
   }
-  let y = v.intl.string(v.t.tbeRRJ),
-    _ = v.intl.string(v.t.OYefme);
+  let h = p.intl.string(p.t.tbeRRJ),
+    E = p.intl.string(p.t.OYefme);
   switch (e.type) {
-    case b.rbe.GUILD_CATEGORY:
-      y = v.intl.string(v.t.pNMCg2), _ = v.intl.string(v.t.olaBeG);
+    case A.rbe.GUILD_CATEGORY:
+      h = p.intl.string(p.t.pNMCg2), E = p.intl.string(p.t.olaBeG);
       break;
-    case b.rbe.GROUP_DM:
-      y = v.intl.string(v.t.LO3kaK), _ = v.intl.string(v.t["s5/5fm"]);
+    case A.rbe.GROUP_DM:
+      h = p.intl.string(p.t.LO3kaK), E = p.intl.string(p.t["s5/5fm"]);
       break;
-    case b.rbe.DM:
-      y = n ? v.intl.format(v.t.byjuJm, {
-        name: O
-      }) : v.intl.string(v.t.LO3kaK), _ = n ? v.intl.format(v.t["eC+9rj"], {
-        name: O
-      }) : v.intl.string(v.t["s5/5fm"]);
+    case A.rbe.DM:
+      h = n ? p.intl.format(p.t.byjuJm, {
+        name: g
+      }) : p.intl.string(p.t.LO3kaK), E = n ? p.intl.format(p.t["eC+9rj"], {
+        name: g
+      }) : p.intl.string(p.t["s5/5fm"]);
       break;
     default:
-      y = v.intl.string(v.t.tbeRRJ), _ = v.intl.string(v.t.OYefme)
+      h = p.intl.string(p.t.tbeRRJ), E = p.intl.string(p.t.OYefme)
   }
-  return i ? (0, r.jsx)(o.Drp, {
+  return a ? (0, i.jsx)(d.Drp, {
     id: "unmute-channel",
-    void_label: _,
-    subtext: p,
+    label: E,
+    subtext: _,
     action: () => m(false)
-  }) : (0, r.jsx)(o.Drp, {
+  }) : (0, i.jsx)(d.Drp, {
     id: "mute-channel",
-    label: y,
+    label: h,
     action: () => {
       m(true)
     },
-    children: g().map(n => {
+    children: C().map(n => {
       let {
-        value: i,
+        value: a,
         label: l
       } = n;
-      return (0, r.jsx)(o.Drp, {
-        id: "".concat(i),
+      return (0, i.jsx)(d.Drp, {
+        id: "".concat(a),
         label: l,
         action: () => {
           let n;
-          return e.type === b.rbe.GUILD_CATEGORY && (0, s.Gv)(e.id), n = h(i), void c.A.updateChannelOverrideSettings(e.guild_id, e.id, n, f.fd.Muted, t)
+          return e.type === A.rbe.GUILD_CATEGORY && (0, o.Gv)(e.id), n = b(a), void u.A.updateChannelOverrideSettings(e.guild_id, e.id, n, f.fd.Muted, t)
         }
-      }, i)
+      }, a)
     })
   })
 }

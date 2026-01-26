@@ -75,6 +75,10 @@ function h(e) {
         appContext: E
       }, m, _)), g.dispatch(c.jej.POPOUT_CLOSE)
     },
-    icon: d
+    icon: d,
+    leadingAccessory: null != d ? {
+      type: "icon",
+      icon: d
+    } : true
   })
 }

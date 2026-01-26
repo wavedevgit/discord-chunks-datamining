@@ -42,27 +42,27 @@ function g(e) {
     onMemberSelect: a
   } = e, g = t.id, v = (0, o.bG)([u.A], () => u.A.getEstimatedMemberSearchCountByGuildId(g), [g]), _ = (0, d.Ms)(g), A = (0, d.Wl)(g), p = r.useCallback(e => {
     null != e && (null == a || a(e))
-  }, [a]), S = (0, x.ii)(A, _, v), T = r.useRef(null), E = r.useRef(null), y = r.useCallback(() => {
+  }, [a]), T = (0, x.ii)(A, _, v), E = r.useRef(null), S = r.useRef(null), y = r.useCallback(() => {
     var e;
-    null == (e = T.current) || e.resetSearchText()
+    null == (e = E.current) || e.resetSearchText()
   }, []);
   return (0, n.jsx)("div", {
     className: s()(h.FV, l),
     children: (0, n.jsxs)(c.T7Y, {
       className: h.A0,
-      ref: E,
+      ref: S,
       orientation: "horizontal",
       children: [(0, n.jsx)(b.A, {
         guild: t,
-        ref: T
+        ref: E
       }), (0, n.jsx)(f, {
         guild: t
       }), (0, n.jsx)(m.A, {
         guild: t,
         onSelectRow: p,
-        searchState: S,
+        searchState: T,
         onResetForNewMembers: y
-      }), S !== x.IY.SUCCESS_STILL_INDEXING && (0, n.jsx)(j.A, {
+      }), T !== x.IY.SUCCESS_STILL_INDEXING && (0, n.jsx)(j.A, {
         guildId: t.id,
         onPageChange: i
       })]

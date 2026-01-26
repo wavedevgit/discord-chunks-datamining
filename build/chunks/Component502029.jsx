@@ -23,7 +23,7 @@ function o(e) {
     context: n,
     object: l.ZSU.CONTEXT_MENU,
     children: (0, i.jsxs)(r.W1t, {
-      "data-menu-migration-ready": true,
+      "data-menu-migrated": true,
       navId: "user-context",
       onClose: d.Z_,
       "aria-label": u.intl.string(u.t.liqwPJ),

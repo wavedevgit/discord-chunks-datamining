@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 445567, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B: () => b
+  B: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,11 +18,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk664991 = require("./664991.js");
 
-function b(e) {
+function h(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, b = t.features.has(d.GuildFeatures.BANNER), h = t.features.has(d.GuildFeatures.ANIMATED_BANNER), x = b && n, {
+  } = e, h = t.features.has(d.GuildFeatures.BANNER), b = t.features.has(d.GuildFeatures.ANIMATED_BANNER), x = h && n, {
     analyticsLocations: j
   } = (0, s.Ay)(), _ = i.useCallback((e, n) => {
     (0, c.fI)(t, j, e, n)
@@ -39,7 +39,7 @@ function b(e) {
     makeURL: e => null != e ? o.Ay.getGuildBannerURL({
       id: t.id,
       banner: e
-    }, h) : null,
+    }, b) : null,
     disabled: !x,
     onChange: _,
     hint: p.intl.string(p.t.uPvxqJ),
@@ -61,7 +61,7 @@ function b(e) {
     }),
     enabled: x
   });
-  return b ? v : (0, r.jsx)(l.DUT, {
+  return h ? v : (0, r.jsx)(l.DUT, {
     "aria-hidden": true,
     tabIndex: false,
     className: f.U,

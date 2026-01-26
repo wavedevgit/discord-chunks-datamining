@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 249202, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,7 +23,7 @@ function p(e) {
     buttonClassName: p
   } = e, {
     analyticsLocations: f
-  } = (0, s.Ay)(), b = t.features.has(c.GuildFeatures.BANNER), h = i.useCallback(e => {
+  } = (0, s.Ay)(), h = t.features.has(c.GuildFeatures.BANNER), b = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
@@ -41,18 +41,18 @@ function p(e) {
     (0, o.Nn)({
       uploadType: u.HL.GUILD_BANNER,
       maxFileSizeBytes: g.j,
-      onComplete: h,
+      onComplete: b,
       analyticsLocation: {
         page: c.liQ.GUILD_SETTINGS,
         section: c.JJy.GUILD_BANNER
       },
       analyticsLocations: f
     })
-  }, [f, h]);
-  return b ? (0, r.jsx)("div", {
+  }, [f, b]);
+  return h ? (0, r.jsx)("div", {
     className: p,
     children: (0, r.jsx)(l.$nd, {
-      disabled: !(b && n),
+      disabled: !(h && n),
       variant: "primary",
       text: m.intl.string(m.t.yG2pUi),
       onClick: j

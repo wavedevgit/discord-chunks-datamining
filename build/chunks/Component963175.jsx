@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 963175, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -21,14 +21,14 @@ function m(e) {
     title: n,
     description: l,
     children: m
-  } = e, [p, f] = i.useState(t), b = () => f(e => !e), h = (0, o.GV)();
+  } = e, [p, f] = i.useState(t), h = () => f(e => !e), b = (0, o.GV)();
   return (0, r.jsxs)("div", {
     className: g.kL,
     children: [(0, r.jsx)(d.A, {
       className: s()(g.wx, {
         [g.OD]: p && null != l
       }),
-      onClick: b,
+      onClick: h,
       children: e => {
         let {
           areaRef: t,
@@ -39,9 +39,9 @@ function m(e) {
             variant: "heading-md/semibold",
             children: n
           }), (0, r.jsx)(a.DUT, {
-            onClick: i(b),
+            onClick: i(h),
             "aria-label": u.intl.string(u.t.e5eQOy),
-            "aria-controls": h,
+            "aria-controls": b,
             "aria-expanded": p,
             focusProps: {
               ringTarget: t
@@ -54,7 +54,7 @@ function m(e) {
         })
       }
     }), p && (0, r.jsxs)("div", {
-      id: h,
+      id: b,
       children: [null != l && (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         className: g.h_,

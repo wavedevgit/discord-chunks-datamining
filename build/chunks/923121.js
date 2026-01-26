@@ -1,11 +1,11 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 923121, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Bq: () => p,
   fH: () => x,
   p2: () => f,
-  q3: () => b,
+  q3: () => h,
   sF: () => u,
   yM: () => m,
   zN: () => g
@@ -53,14 +53,14 @@ function f() {
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET"
   })
 }
-async function b(e) {
+async function h(e) {
   var t, n, u;
   let g = a.A.getEditedConnections(),
     m = [];
   if (g.forEach(e => {
       let t = (0, c.Ii)(e);
       m.push(...t)
-    }), m.length > 0) throw h(m), i.A.show({
+    }), m.length > 0) throw b(m), i.A.show({
     title: d.intl.string(d.t.ISppXw),
     body: m.join("\n")
   }), Error("failed to validate connections");
@@ -80,14 +80,14 @@ async function b(e) {
       fieldName: e,
       error: t
     } = null != (u = new l.LG(r).getAnyErrorMessageAndField()) ? u : {}, n = [e, t].filter(s.Vq).join(": ");
-    throw h([n]), i.A.show({
+    throw b([n]), i.A.show({
       title: d.intl.string(d.t.iLdiqY),
       body: n
     }), r
   }
 }
 
-function h(e) {
+function b(e) {
   r.h.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_FAILED",
     errors: e
@@ -96,5 +96,5 @@ function h(e) {
 
 function x(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return t || a.A.hasChanges() ? b(e) : Promise.resolve()
+  return t || a.A.hasChanges() ? h(e) : Promise.resolve()
 }

@@ -45,18 +45,22 @@ function v(e) {
         closePopout: a
       } = e;
       return (0, r.jsx)(i.W1t, {
-        "data-menu-migration-ready": true,
+        "data-menu-migrated": true,
         navId: "game_server-popout-context-menu",
         onClose: () => {
           (0, l.Z_)(), a()
         },
-        "aria-label": g.intl.string(f.default["yb+ork"]),
+        "aria-label": f.intl.string(g.default["yb+ork"]),
         onSelect: true,
         children: (0, r.jsxs)(i.rXV, {
           children: [null != v && (0, r.jsx)(i.Drp, {
             id: "get-support",
             icon: i.oyn,
-            label: g.intl.string(f.default.bBkeMs),
+            leadingAccessory: {
+              type: "icon",
+              icon: i.oyn
+            },
+            label: f.intl.string(g.default.bBkeMs),
             action: () => {
               (0, o.h)({
                 href: v
@@ -65,7 +69,11 @@ function v(e) {
           }), (0, r.jsx)(i.Drp, {
             id: "settings",
             icon: i.Zes,
-            label: g.intl.string(f.default["feUiM/"]),
+            leadingAccessory: {
+              type: "icon",
+              icon: i.Zes
+            },
+            label: f.intl.string(g.default["feUiM/"]),
             action: () => {
               (0, u.A)({
                 guildId: t,
@@ -98,7 +106,7 @@ function v(e) {
         }
         return e
       }({
-        "aria-label": g.intl.string(g.t["UKOtz+"]),
+        "aria-label": f.intl.string(f.t["UKOtz+"]),
         className: _.v
       }, e), n = n = {
         innerRef: m,

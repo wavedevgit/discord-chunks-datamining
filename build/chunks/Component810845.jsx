@@ -20,15 +20,19 @@ function p(e, t) {
     enabled: l
   } = s.A.useConfig({
     location: "useCallTilePopoutItem"
-  }), p = (0, i.bG)([u.A], () => u.A.getParticipant(e, t)), b = (0, i.bG)([u.A], () => u.A.isParticipantPoppedOut(e, t)), f = r.useCallback(() => {
-    null != p && ((0, A.Ay)(p) && (0, d.A9)(p.stream, {
+  }), p = (0, r.bG)([u.A], () => u.A.getParticipant(e, t)), b = (0, r.bG)([u.A], () => u.A.isParticipantPoppedOut(e, t)), f = i.useCallback(() => {
+    null != p && ((0, A.Ay)(p) && (0, c.A9)(p.stream, {
       forceMultiple: true
-    }), o.A.popoutParticipant(e, p.id), c.openCallTilePopout(e, p.id))
+    }), a.A.popoutParticipant(e, p.id), d.openCallTilePopout(e, p.id))
   }, [p, e]);
-  return b || null == p || !l || p.type === A.lp.ACTIVITY ? null : (0, n.jsx)(a.Drp, {
+  return b || null == p || !l || p.type === A.lp.ACTIVITY ? null : (0, n.jsx)(o.Drp, {
     id: "call-tile-popout",
     label: (0, A.Ay)(p) ? g.intl.string(g.t.Cm4aDQ) : null != p.streamId ? g.intl.string(g.t["8Xyas9"]) : g.intl.string(g.t.ifpl2s),
     action: f,
-    icon: a.tfB
+    icon: o.tfB,
+    leadingAccessory: {
+      type: "icon",
+      icon: o.tfB
+    }
   })
 }

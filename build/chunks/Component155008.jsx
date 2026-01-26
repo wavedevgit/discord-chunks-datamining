@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 155008, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -36,18 +36,18 @@ function v() {
   let y = (0, x.N)(n);
   switch (v) {
     case f.C.OVERVIEW:
-      e = (0, r.jsx)(b.A, {
+      e = (0, r.jsx)(h.A, {
         guild: n
       });
       break;
     case f.C.CAPTCHA_AND_RAID_PROTECTION:
-      e = (0, r.jsx)(h.A, {
+      e = (0, r.jsx)(b.A, {
         title: _.intl.string(_.t["53eF5o"]),
         settings: y[f.C.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
     case f.C.DM_AND_SPAM_PROTECTION:
-      e = (0, r.jsx)(h.A, {
+      e = (0, r.jsx)(b.A, {
         title: _.intl.string(_.t.O0SfFy),
         settings: y[f.C.DM_AND_SPAM_PROTECTION]
       });
@@ -58,7 +58,7 @@ function v() {
       });
       break;
     case f.C.PERMISSIONS:
-      e = (0, r.jsx)(h.A, {
+      e = (0, r.jsx)(b.A, {
         title: _.intl.string(_.t.BXoNiT),
         settings: y[f.C.PERMISSIONS]
       })

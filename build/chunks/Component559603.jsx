@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 559603, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,20 +49,20 @@ function b(e, t) {
   }), e
 }
 
-function h(e) {
-  var t, n, h, x, j, _;
+function b(e) {
+  var t, n, b, x, j, _;
   let {
     rule: O,
     onChangeRule: v
   } = e, y = i.useCallback(e => {
-    v(b(f({}, O), {
-      triggerMetadata: b(f({}, O.triggerMetadata), {
+    v(h(f({}, O), {
+      triggerMetadata: h(f({}, O.triggerMetadata), {
         keywordFilter: e
       })
     }))
   }, [v, O]), A = i.useCallback(e => {
-    v(b(f({}, O), {
-      triggerMetadata: b(f({}, O.triggerMetadata), {
+    v(h(f({}, O), {
+      triggerMetadata: h(f({}, O.triggerMetadata), {
         allowList: e
       })
     }))
@@ -79,7 +79,7 @@ function h(e) {
       }), (0, r.jsx)(a.A, {
         rule: O,
         onChangeRule: v,
-        collapsed: (null == O || null == (n = O.triggerMetadata) ? true : n.regexPatterns) == null || (null == O || null == (h = O.triggerMetadata) ? true : h.regexPatterns.length) === 0
+        collapsed: (null == O || null == (n = O.triggerMetadata) ? true : n.regexPatterns) == null || (null == O || null == (b = O.triggerMetadata) ? true : b.regexPatterns.length) === 0
       }), (0, r.jsx)(l.A, {
         onChange: A,
         initialValue: null == (x = O.triggerMetadata) ? true : x.allowList,

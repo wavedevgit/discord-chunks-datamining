@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 175471, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -64,7 +64,7 @@ function v(e) {
   }, m = 2 === t, p = 1 === t;
   if (!(!(r >= i) && r / i >= .8) || m) return null;
   let f = p || m ? j.R : null,
-    b = p ? g.A.Stages.FLYING : g.A.Stages.HOVERING;
+    h = p ? g.A.Stages.FLYING : g.A.Stages.HOVERING;
   return (0, l.jsx)(u.c7X, {
     from: {
       opacity: 0
@@ -79,7 +79,7 @@ function v(e) {
       style: e,
       children: [(0, l.jsx)(g.A, {
         className: j.a_,
-        stage: b,
+        stage: h,
         onFlyingComplete: d
       }), (0, l.jsx)("div", {
         className: o()(j.Sb, f),
@@ -113,7 +113,7 @@ function y(e) {
     className: p
   } = e, f = e => {
     null == i || i(e)
-  }, [h, x] = s.useState(0);
+  }, [b, x] = s.useState(0);
   return s.useLayoutEffect(() => {
     n && x(1)
   }, [n]), (0, l.jsx)(u.c7X, {
@@ -121,7 +121,7 @@ function y(e) {
       unlockedTranslateY: 50
     },
     to: {
-      unlockedTranslateY: 50 * (0 === h)
+      unlockedTranslateY: 50 * (0 === b)
     },
     config: _,
     children: e => (0, l.jsx)("div", {
@@ -133,7 +133,7 @@ function y(e) {
       ref: f,
       children: (0, l.jsxs)("div", {
         className: j.H3,
-        children: [(0, l.jsx)(b.A, {
+        children: [(0, l.jsx)(h.A, {
           tier: a.tier,
           color: "currentColor",
           className: o()(j.w5, {
@@ -168,12 +168,12 @@ function A(e) {
     hasBottomMargin: a,
     headerButton: c = null,
     withCardBody: g = true,
-    guildId: b,
+    guildId: h,
     showHeaderLockStatus: _ = true
   } = e, O = (0, d.bG)([f.A], () => {
     var e, t;
-    return null != (e = null == (t = f.A.getGuild(b)) ? true : t.premiumTier) ? e : h.TVA.NONE
-  }), v = h.M2T[i.tier], A = s && i.tier <= O, E = i.tier !== h.TVA.NONE && i.tier !== h.TVA.TIER_1;
+    return null != (e = null == (t = f.A.getGuild(h)) ? true : t.premiumTier) ? e : b.TVA.NONE
+  }), v = b.M2T[i.tier], A = s && i.tier <= O, E = i.tier !== b.TVA.NONE && i.tier !== b.TVA.TIER_1;
   return (0, l.jsxs)("div", {
     className: o()(j.Zm, {
       [j.Ab]: a
@@ -187,7 +187,7 @@ function A(e) {
         null != r && r(e, i)
       },
       withCardBody: g,
-      guildId: b,
+      guildId: h,
       hasBottomMargin: a,
       subscriptionsRequired: v,
       hasAnimatedUnlocked: A,

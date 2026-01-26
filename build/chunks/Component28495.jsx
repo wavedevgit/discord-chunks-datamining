@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 28495, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -80,7 +80,7 @@ function J(e) {
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: a
-  } = e, o = (0, C.$)(B.intl.string(B.t.Mi9Kbe)), d = (0, f.Ay)(), b = (0, _.qE)(n, t), x = {
+  } = e, o = (0, C.$)(B.intl.string(B.t.Mi9Kbe)), d = (0, f.Ay)(), h = (0, _.qE)(n, t), x = {
     dark: {
       src: K,
       name: t.name
@@ -92,7 +92,7 @@ function J(e) {
   };
 
   function y() {
-    (0, A.A)(n, h.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, p.jH)()
+    (0, A.A)(n, b.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, p.jH)()
   }
   return (0, r.jsx)(j.Ay, {
     contentTypes: [u.M.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
@@ -133,7 +133,7 @@ function J(e) {
                     },
                     message: o,
                     preview: true,
-                    roleIcon: null != b ? b : (0, g.qB)(d) ? x.light : x.dark,
+                    roleIcon: null != h ? h : (0, g.qB)(d) ? x.light : x.dark,
                     isGroupStart: true,
                     disableInteraction: true,
                     previewGuildId: n
@@ -173,7 +173,7 @@ function J(e) {
 }
 
 function Z() {
-  let e = (0, d.bG)([b.A], () => b.A.useReducedMotion),
+  let e = (0, d.bG)([h.A], () => h.A.useReducedMotion),
     {
       gradientStyle: t,
       gradientClassname: n
@@ -209,7 +209,7 @@ function Z() {
   })
 }
 
-function q(e) {
+function Q(e) {
   var t, n;
   let {
     role: i,
@@ -247,7 +247,7 @@ function q(e) {
   })
 }
 
-function Q(e) {
+function q(e) {
   let {
     role: t,
     guildId: n,
@@ -329,8 +329,8 @@ function ee(e) {
     locked: i,
     setSelectedSection: l
   } = e, a = (0, y.jV)(t.id, n), o = (0, d.bG)([T.A], () => T.A.getRoleStyleData(n.id)), c = !a, u = null != o && a ? o.currentStyle : T.y.SOLID, g = (0, N.Oy)(n), p = i || g, f = (0, d.bG)([S.A], () => S.A.canImpersonateRole(t, n)), {
-    headerHeight: b,
-    headerRef: h
+    headerHeight: h,
+    headerRef: b
   } = (0, P.A)(0), {
     scrolledToTop: x,
     handleScroll: j
@@ -338,7 +338,7 @@ function ee(e) {
   return (0, r.jsx)(m.GtU, {
     className: H.XG,
     style: {
-      scrollPaddingTop: b
+      scrollPaddingTop: h
     },
     onScroll: j,
     children: (0, r.jsxs)("div", {
@@ -347,7 +347,7 @@ function ee(e) {
         className: s()(V.wx, V.ln, {
           [V.l6]: !x
         }),
-        ref: h,
+        ref: b,
         children: (0, r.jsx)(R.A, {
           guild: t,
           role: n,
@@ -370,7 +370,7 @@ function ee(e) {
         selectedStyle: u,
         disabled: p,
         shouldShowUpsell: c
-      }), u !== T.y.HOLOGRAPHIC && null != u && (0, r.jsx)(q, {
+      }), u !== T.y.HOLOGRAPHIC && null != u && (0, r.jsx)(Q, {
         role: n,
         disabled: p,
         currentStyle: u,
@@ -385,7 +385,7 @@ function ee(e) {
         guild: t,
         disabled: p,
         role: n
-      }), (0, r.jsx)(Q, {
+      }), (0, r.jsx)(q, {
         role: n,
         guildId: t.id,
         selectedStyle: u,

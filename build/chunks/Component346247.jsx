@@ -1,7 +1,7 @@
 /** Chunk was on 84841 **/
 /** chunk id: 346247, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,47 +19,51 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function O(e) {
+function y(e) {
   let {
     guildId: t,
-    userId: O,
-    analyticsLocation: y,
+    userId: y,
+    analyticsLocation: O,
     analyticsLocations: j,
     context: C,
     icon: E
-  } = e, m = g.A.getGuild(t), x = u.default.getId(), M = (0, i.bG)([b.default], () => b.default.getUser(O)), N = (0, i.bG)([A.Ay], () => A.Ay.isGuestOrLurker(t, O), [t, O]);
-  (0, i.bG)([p.A], () => p.A.getGuildVersion(t), [t]);
-  let G = r.useMemo(() => ({
-    [t]: [O]
-  }), [t, O]);
-  (0, o.E)(G, "useChangeIdentityItem");
-  let I = C === f.BRT.POPOUT,
-    v = (0, c.A)({
+  } = e, m = g.A.getGuild(t), x = u.default.getId(), M = (0, r.bG)([b.default], () => b.default.getUser(y)), N = (0, r.bG)([A.Ay], () => A.Ay.isGuestOrLurker(t, y), [t, y]);
+  (0, r.bG)([p.A], () => p.A.getGuildVersion(t), [t]);
+  let v = i.useMemo(() => ({
+    [t]: [y]
+  }), [t, y]);
+  (0, a.E)(v, "useChangeIdentityItem");
+  let G = C === f.BRT.POPOUT,
+    I = (0, d.A)({
       guild: m,
       analyticsLocations: j
     }),
-    P = (0, d.aL)();
-  if (null == m || I) return null;
-  let U = x === O && (p.A.can(f.xBc.CHANGE_NICKNAME, m) || p.A.can(f.xBc.MANAGE_NICKNAMES, m)),
-    S = x === O,
-    _ = p.A.canManageUser(f.xBc.MANAGE_NICKNAMES, O, m);
+    P = (0, c.aL)();
+  if (null == m || G) return null;
+  let U = x === y && (p.A.can(f.xBc.CHANGE_NICKNAME, m) || p.A.can(f.xBc.MANAGE_NICKNAMES, m)),
+    S = x === y,
+    _ = p.A.canManageUser(f.xBc.MANAGE_NICKNAMES, y, m);
   if (!(U || _ || S) || null == M || N) return null;
   let T = m.features.has(f.GuildFeatures.HUB) ? h.intl.string(h.t["+MWrWt"]) : h.intl.string(h.t["PKQB/H"]),
     R = S ? T : h.intl.string(h.t.dilOF6);
-  return (0, n.jsx)(a.Drp, {
+  return (0, n.jsx)(o.Drp, {
     id: "change-nickname",
     label: R,
     icon: E,
+    leadingAccessory: null != E ? {
+      type: "icon",
+      icon: E
+    } : true,
     action: () => {
       S ? ((0, s.A)(M.id, M.getAvatarURL(t, 80), {
         guildId: t
-      }), v(), P.dispatch(f.jej.POPOUT_CLOSE), (0, a.s7G)()) : (0, a.mMO)(async () => {
+      }), I(), P.dispatch(f.jej.POPOUT_CLOSE), (0, o.s7G)()) : (0, o.mMO)(async () => {
         let {
           default: e
         } = await l.e("48635").then(l.bind(l, 752118));
         return l => {
-          var r, i;
-          return (0, n.jsx)(e, (r = function(e) {
+          var i, r;
+          return (0, n.jsx)(e, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var l = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(l);
@@ -76,21 +80,21 @@ function O(e) {
               })
             }
             return e
-          }({}, l), i = i = {
+          }({}, l), r = r = {
             guildId: t,
             user: M,
-            analyticsSource: y,
+            analyticsSource: O,
             analyticsLocations: j
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var l = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var n = Object.getOwnPropertySymbols(e);
               l.push.apply(l, n)
             }
             return l
-          })(Object(i)).forEach(function(e) {
-            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-          }), r))
+          })(Object(r)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(r, e))
+          }), i))
         }
       })
     }

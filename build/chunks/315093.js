@@ -76,7 +76,7 @@ function y(e) {
       type: e
     })
   }
-  n = i.content_type === r.I.PLAYED_GAME && (0, l.JM)(i) && !(0, l.I5)(i) ? f.t.vPg1JT : f.t.rPqqts;
+  n = i.content_type === r.ContentInventoryEntryType.PLAYED_GAME && (0, l.JM)(i) && !(0, l.I5)(i) ? f.t.vPg1JT : f.t.rPqqts;
   let y = E[s],
     b = {
       onClick: (0, o.A)({

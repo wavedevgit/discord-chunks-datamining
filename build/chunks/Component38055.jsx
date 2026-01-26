@@ -57,7 +57,7 @@ let h = e => {
       closePopout: t
     } = e, i = (0, a.bG)([l.A], () => l.A.hidden);
     return (0, r.jsx)(s.W1t, {
-      "data-menu-migration-ready": true,
+      "data-menu-needs-migration": true,
       onSelect: () => {},
       navId: "member-list-settings-menu",
       onClose: null != t ? t : c.tEg,
@@ -66,6 +66,10 @@ let h = e => {
         children: [(0, r.jsx)(s.Drp, {
           id: "about",
           label: u.intl.string(u.t.pWLGnF),
+          leadingAccessory: {
+            type: "icon",
+            icon: s.mir
+          },
           icon: s.mir,
           action: () => {
             (0, s.mMO)(async () => {

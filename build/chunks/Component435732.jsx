@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 435732, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -47,16 +47,16 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = [],
-  h = function(e) {
+let h = [],
+  b = function(e) {
     let {
       guildId: t
-    } = e, h = (0, l.yK)([d.A], () => {
+    } = e, b = (0, l.yK)([d.A], () => {
       var e;
-      return null != (e = d.A.getSettings().resourceChannels) ? e : b
-    }), x = i.useMemo(() => h.map(e => f(p({}, e), {
+      return null != (e = d.A.getSettings().resourceChannels) ? e : h
+    }), x = i.useMemo(() => b.map(e => f(p({}, e), {
       id: e.channelId
-    })), [h]), {
+    })), [b]), {
       handleDragStart: j,
       handleDragReset: _,
       handleDragComplete: O
@@ -79,14 +79,14 @@ let b = [],
     }, [t, v]);
     return (0, r.jsxs)("div", {
       className: m.C5,
-      children: [h.map((e, n) => (0, r.jsx)(u.A, {
+      children: [b.map((e, n) => (0, r.jsx)(u.A, {
         guildId: t,
         resourceChannel: e,
         index: n,
         onDragStart: j,
         onDragReset: _,
         onDragComplete: O
-      }, e.channelId)), h.length < o.CW && (0, r.jsxs)(s.DUT, {
+      }, e.channelId)), b.length < o.CW && (0, r.jsxs)(s.DUT, {
         className: m.Bw,
         onClick: y,
         children: [(0, r.jsx)(s.U1e, {

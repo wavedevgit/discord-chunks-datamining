@@ -1,7 +1,7 @@
 /** Chunk was on 98700 **/
 /** chunk id: 132514, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => h
 }), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var l, Chunk735438 = require("./735438.js"),
   r = require.n(Chunk735438),
@@ -59,17 +59,17 @@ function G(e, n) {
   _.newMemberActions[t] = E({}, n), _.newMemberActions = [..._.newMemberActions]
 }
 
-function f(e, n) {
+function T(e, n) {
   if (null == _.resourceChannels) returnfalse;
   let t = _.resourceChannels.findIndex(n => n.channelId === e);
   if (t < 0) returnfalse;
   _.resourceChannels[t] = E({}, n), _.resourceChannels = [..._.resourceChannels]
 }
 
-function T() {
+function f() {
   A = false, _ = r().cloneDeep(Object.assign({}, u.h.getSettings(I)))
 }
-class h extends(l = Chunk311907.Ay.PersistedStore) {
+class b extends(l = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     null != e && (S = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(a.A, u.h)
   }
@@ -116,8 +116,8 @@ class h extends(l = Chunk311907.Ay.PersistedStore) {
     if (null != e) return O[e]
   }
 }
-c(h, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), c(h, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
-let b = new h(Chunk73153.h, {
+c(b, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), c(b, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
+let h = new b(Chunk73153.h, {
   GUILD_SETTINGS_INIT: g,
   GUILD_SETTINGS_SET_SECTION: g,
   GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: g,
@@ -127,8 +127,8 @@ let b = new h(Chunk73153.h, {
   GUILD_HOME_SETTINGS_UPDATE_START: function() {
     A = true
   },
-  GUILD_HOME_SETTINGS_UPDATE_SUCCESS: T,
-  GUILD_HOME_SETTINGS_UPDATE_FAIL: T,
+  GUILD_HOME_SETTINGS_UPDATE_SUCCESS: f,
+  GUILD_HOME_SETTINGS_UPDATE_FAIL: f,
   GUILD_NEW_MEMBER_ACTION_UPDATE_SUCCESS: function(e) {
     let {
       action: n
@@ -139,7 +139,7 @@ let b = new h(Chunk73153.h, {
     let {
       resourceChannel: n
     } = e;
-    f(n.channelId, n)
+    T(n.channelId, n)
   },
   GUILD_SETTINGS_ONBOARDING_UPDATE_WELCOME_MESSAGE: function(e) {
     let {
@@ -208,7 +208,7 @@ let b = new h(Chunk73153.h, {
       channelId: n,
       resourceChannel: t
     } = e;
-    f(n, t)
+    T(n, t)
   },
   GUILD_SETTINGS_ONBOARDING_ADD_RESOURCE_CHANNEL: function(e) {
     var n;

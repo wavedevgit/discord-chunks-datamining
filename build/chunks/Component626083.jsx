@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 626083, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -61,7 +61,7 @@ function y(e) {
     guildId: t,
     emojiData: n,
     onSelectEmoji: l
-  } = e, s = i.useRef(null), a = (0, o.bG)([p.Ay], () => null != n.id ? p.Ay.getCustomEmojiById(n.id) : true), u = (0, o.bG)([b.Ay], () => b.Ay.getDefaultChannel(t)), h = i.useCallback(e => {
+  } = e, s = i.useRef(null), a = (0, o.bG)([p.Ay], () => null != n.id ? p.Ay.getCustomEmojiById(n.id) : true), u = (0, o.bG)([h.Ay], () => h.Ay.getDefaultChannel(t)), b = i.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -96,7 +96,7 @@ function y(e) {
     targetElementRef: s,
     animation: c.YNO.Animation.NONE,
     position: "top",
-    renderPopout: h,
+    renderPopout: b,
     children: (e, t) => {
       let {
         isShown: n
@@ -132,14 +132,14 @@ function A(e) {
     onDelete: m,
     transitionState: p,
     onClose: f
-  } = e, b = (0, u.GV)(), [h, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [_, O] = i.useState(() => ({
+  } = e, h = (0, u.GV)(), [b, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [_, O] = i.useState(() => ({
     id: null == l ? true : l.emoji_id,
     name: null == l ? true : l.emoji_name
-  })), v = d && "" !== h && (null != _.id || null != _.name);
+  })), v = d && "" !== b && (null != _.id || null != _.name);
 
   function A(e) {
     e.preventDefault(), v && (g({
-      description: h,
+      description: b,
       emojiId: _.id,
       emojiName: _.name
     }), f())
@@ -173,11 +173,11 @@ function A(e) {
         children: [s, (0, r.jsx)(c.fs1, {
           label: j.intl.string(j.t["1Ts7QP"]),
           placeholder: o,
-          value: h,
+          value: b,
           rows: 1,
           autosize: true,
           onChange: x,
-          "aria-labelledby": b
+          "aria-labelledby": h
         }), (0, r.jsx)(a.D0$, {
           label: j.intl.string(j.t.sMOuuS),
           children: (0, r.jsx)(y, {
@@ -200,12 +200,12 @@ function E(e) {
     onDelete: o,
     transitionState: d,
     onClose: g
-  } = e, [m, p] = i.useState(null == l ? true : l.ref_id), f = (0, u.GV)(), b = (0, r.jsxs)(c.BJc, {
+  } = e, [m, p] = i.useState(null == l ? true : l.ref_id), f = (0, u.GV)(), h = (0, r.jsxs)(c.BJc, {
     gap: 16,
     children: [(0, r.jsx)(c.po8, {
       messageType: c.YCn.WARNING,
       children: j.intl.string(j.t.xunxCo)
-    }), (0, r.jsx)(h.A, {
+    }), (0, r.jsx)(b.A, {
       label: j.intl.string(j.t.GK18KJ),
       guildId: t,
       value: m,
@@ -220,7 +220,7 @@ function E(e) {
   return (0, r.jsx)(A, {
     guildId: t,
     initialData: l,
-    benefitTypeInput: b,
+    benefitTypeInput: h,
     descriptionPlaceholder: j.intl.string(j.t.J8O1Lp),
     canSubmit: null != m,
     onSave: function(e) {
@@ -243,7 +243,7 @@ function N(e) {
     onClose: o,
     onDelete: d,
     guildId: g
-  } = e, [m, p] = i.useState(null != (t = null == n ? true : n.name) ? t : ""), f = (0, u.GV)(), b = (0, r.jsx)(c.fs1, {
+  } = e, [m, p] = i.useState(null != (t = null == n ? true : n.name) ? t : ""), f = (0, u.GV)(), h = (0, r.jsx)(c.fs1, {
     label: j.intl.string(j.t.NPOJrU),
     placeholder: j.intl.string(j.t.NPOJrU),
     value: m,
@@ -256,7 +256,7 @@ function N(e) {
   return (0, r.jsx)(A, {
     guildId: g,
     initialData: n,
-    benefitTypeInput: b,
+    benefitTypeInput: h,
     descriptionPlaceholder: j.intl.string(j.t.ucP4Tt),
     canSubmit: "" !== m,
     onSave: function(e) {

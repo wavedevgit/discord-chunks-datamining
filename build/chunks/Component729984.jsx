@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 729984, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -37,7 +37,7 @@ var Chunk627968 = require("./627968.js"),
 function P(e) {
   let {
     guild: t
-  } = e, s = (0, l.bG)([d.A], () => d.A.getEnabled(t.id)), f = (0, l.bG)([p.A], () => p.A.hasFetched(t.id)), b = (0, y.A)(t), h = (0, l.bG)([_.A], () => _.A.editedDefaultChannelIds), x = b.filter(e => !h.has(e.id)), [O, v] = i.useState(false);
+  } = e, s = (0, l.bG)([d.A], () => d.A.getEnabled(t.id)), f = (0, l.bG)([p.A], () => p.A.hasFetched(t.id)), h = (0, y.A)(t), b = (0, l.bG)([_.A], () => _.A.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [O, v] = i.useState(false);
   return (i.useEffect(() => {
     f || s || (0, m.A)(t.id)
   }, [t.id, f, s]), O || 0 === x.length) ? null : (0, r.jsxs)("div", {
@@ -164,7 +164,7 @@ function P(e) {
 function w(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.bG)([x.A], () => x.A.getGuild()), s = (0, l.bG)([d.A], () => d.A.isLoading()), a = (0, l.bG)([b.Ay], () => b.Ay.getChannels(null == n ? true : n.id)), c = (0, l.bG)([f.A], () => f.A.getCategories(null == n ? true : n.id)), u = (0, l.bG)([v.A], () => v.A.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), _ = i.useRef(n);
+  } = e, n = (0, l.bG)([x.A], () => x.A.getGuild()), s = (0, l.bG)([d.A], () => d.A.isLoading()), a = (0, l.bG)([h.Ay], () => h.Ay.getChannels(null == n ? true : n.id)), c = (0, l.bG)([f.A], () => f.A.getCategories(null == n ? true : n.id)), u = (0, l.bG)([v.A], () => v.A.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), _ = i.useRef(n);
   return (i.useEffect(() => {
     _.current = n
   }), i.useEffect(() => {
@@ -187,8 +187,8 @@ function w(e) {
       children: [(0, r.jsx)(o.DUT, {
         className: T.cS,
         onClick: () => p(e => !e),
-        children: (0, r.jsx)(h.A, {
-          direction: m ? h.A.Directions.DOWN : h.A.Directions.UP,
+        children: (0, r.jsx)(b.A, {
+          direction: m ? b.A.Directions.DOWN : b.A.Directions.UP,
           height: 16,
           width: 16
         })

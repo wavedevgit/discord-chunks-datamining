@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./896048.js");
 var Chunk681154 = require("./681154.js"),
   Chunk155718 = require("./155718.js");
-let a = new Set([Chunk681154.I.TOP_ARTIST, Chunk681154.I.TOP_GAME, Chunk681154.I.PLAYED_GAME, Chunk681154.I.WATCHED_MEDIA, Chunk681154.I.LISTENED_SESSION, Chunk681154.I.LAUNCHED_ACTIVITY]);
+let a = new Set([Chunk681154.ContentInventoryEntryType.TOP_ARTIST, Chunk681154.ContentInventoryEntryType.TOP_GAME, Chunk681154.ContentInventoryEntryType.PLAYED_GAME, Chunk681154.ContentInventoryEntryType.WATCHED_MEDIA, Chunk681154.ContentInventoryEntryType.LISTENED_SESSION, Chunk681154.ContentInventoryEntryType.LAUNCHED_ACTIVITY]);
 
 function s(e) {
   var t;

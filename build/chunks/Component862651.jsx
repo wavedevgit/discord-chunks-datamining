@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 862651, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk700458 = require("./700458.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function h(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -84,7 +84,7 @@ function x() {
           let {
             default: t
           } = await n.e("55631").then(n.bind(n, 185074));
-          return n => (0, r.jsx)(t, h(b({}, n), {
+          return n => (0, r.jsx)(t, b(h({}, n), {
             onConfirmDelete: () => {
               N(e.id), n.onClose()
             }
@@ -99,7 +99,7 @@ function x() {
           let {
             EmojiAddModal: e
           } = await n.e("90410").then(n.bind(n, 126033));
-          return n => (0, r.jsx)(e, h(b({}, n), {
+          return n => (0, r.jsx)(e, b(h({}, n), {
             guildId: t,
             initialTierEmojiIds: x,
             onSubmit: E,

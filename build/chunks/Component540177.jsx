@@ -17,7 +17,7 @@ function d(e) {
     onClose: t
   } = e, n = (0, o.x)(), i = (0, s.N)(n, a.Ft), u = (0, c.A)();
   return (0, r.jsxs)(l.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated": true,
     onSelect: () => {},
     navId: "devtools-popout",
     variant: "fixed",

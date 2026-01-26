@@ -49,7 +49,7 @@ function m(e) {
   return (0, a.jsx)("div", {
     className: c.wE,
     children: (0, a.jsx)(i.W1t, d({
-      "data-menu-migration-ready": true,
+      "data-menu-migrated": true,
       variant: "fixed",
       hideScroller: true,
       onSelect: true

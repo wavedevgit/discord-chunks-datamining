@@ -1,5 +1,5 @@
 /** Chunk was on 22305 **/
-/** chunk id: 5752, original params: t,n,i (module,exports,require) **/
+/** chunk id: 5752, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   default: () => s
 });
@@ -14,22 +14,22 @@ var Chunk397927 = require("./397927.js"),
 function s(t) {
   let {
     onSelect: n,
-    backgroundOption: i,
+    backgroundOption: e,
     optionIsInUse: s
   } = t;
-  return (0, e.jsx)(a.W1t, {
-    "data-menu-migration-ready": true,
+  return (0, i.jsx)(a.W1t, {
+    "data-menu-migrated-auto": true,
     navId: "video-background-context",
-    onClose: r.Z_,
+    onClose: d.Z_,
     onSelect: n,
     "aria-label": l.intl.string(l.t.ptxALO),
-    children: (0, e.jsx)(a.Drp, {
+    children: (0, i.jsx)(a.Drp, {
       id: "remove",
       action: () => {
-        (0, o.d1)(i) && ((0, d.pW)(i), (0, o.Eo)(i))
+        (0, o.d1)(e) && ((0, r.pW)(e), (0, o.Eo)(e))
       },
-      label: (0, o.d1)(i) ? s ? l.intl.string(l.t["xh/P/8"]) : l.intl.string(l.t.oKuPwe) : l.intl.string(l.t.hFYUDN),
-      disabled: !(0, o.d1)(i) || s,
+      label: (0, o.d1)(e) ? s ? l.intl.string(l.t["xh/P/8"]) : l.intl.string(l.t.oKuPwe) : l.intl.string(l.t.hFYUDN),
+      disabled: !(0, o.d1)(e) || s,
       color: "danger"
     })
   })

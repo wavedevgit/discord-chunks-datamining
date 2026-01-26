@@ -1,4 +1,4 @@
-/** Chunk was on 97887 **/
+/** Chunk was on 67564 **/
 /** chunk id: 38198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => L
@@ -171,57 +171,71 @@ function L(e) {
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, r.jsx)(o.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-needs-migration": true,
     onSelect: L,
     navId: "channel-attach",
     onClose: j,
     "aria-label": w.intl.string(w.t.Xm41aV),
     className: R.MK,
     children: m.map(function(e) {
-      let n = (0, r.jsxs)("div", {
-        className: R.ed,
-        children: [(0, r.jsx)(e.icon, {
-          className: R.H9,
-          color: "currentColor"
-        }), (0, r.jsx)("div", {
-          className: R.fS,
-          children: e.display
-        }), null != e.badgeVal && e.badgeVal > 0 && (0, r.jsx)(o.hVq, {
-          className: R.qS,
-          color: e.badgeColor,
-          count: e.badgeVal
-        })]
-      });
       switch (e.type) {
         case I.v.UPLOAD_A_FILE:
           return (0, r.jsx)(o.Drp, {
             id: "upload-file",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
             action: b
           }, "upload-file");
         case I.v.UPLOAD_TEXT_AS_FILE:
           if ("" === G) return null;
           return (0, r.jsx)(o.Drp, {
             id: "upload-text-as-file",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
             action: J
           }, "upload-text-as-file");
         case I.v.CLIPS:
           return (0, r.jsx)(o.Drp, {
             id: "clips",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
+            badge: null != e.badgeVal && e.badgeVal > 0 ? {
+              text: e.badgeVal.toString()
+            } : true,
             action: Y
           }, "clips");
         case I.v.POLL:
           return (0, r.jsx)(o.Drp, {
             id: "poll",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
             action: q
           }, "poll");
         case I.v.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(o.Drp, {
             id: "play",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
             action: () => {
               var n;
               return n = e.activity, void c.A.sendActivityInvite({
@@ -235,7 +249,12 @@ function L(e) {
         case I.v.INVITE_TO_LISTEN:
           return (0, r.jsx)(o.Drp, {
             id: "listen",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
             action: () => {
               var n;
               return n = e.activity, void c.A.sendActivityInvite({
@@ -249,7 +268,12 @@ function L(e) {
         case I.v.INVITE_TO_WATCH:
           return (0, r.jsx)(o.Drp, {
             id: "watch",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
             action: () => {
               var n;
               return n = e.activity, void c.A.sendActivityInvite({
@@ -263,32 +287,57 @@ function L(e) {
         case I.v.CREATE_THREAD:
           return (0, r.jsx)(o.Drp, {
             id: "THREAD",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
             action: W
           }, "THREAD");
         case I.v.SLASH_COMMAND:
           return (0, r.jsx)(o.Drp, {
             id: "SLASH_COMMAND",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
             action: z
           }, "SLASH_COMMAND");
         case I.v.APP_LAUNCHER:
           return (0, r.jsx)(o.Drp, {
             id: "APP_LAUNCHER",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
             action: () => (0, p.R)(h.s4.TEXT, a, true, t.id)
           }, "APP_LAUNCHER");
         case I.v.ACTIVITY:
           return (0, r.jsx)(o.Drp, {
             id: "activity",
-            void_label: n,
-            action: X,
-            hint: (0, r.jsx)(M, {})
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
+            hint: (0, r.jsx)(M, {}),
+            action: X
           }, "activity");
         case I.v.SCHEDULED_MESSAGE:
           return (0, r.jsx)(o.Drp, {
             id: "scheduled_message",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
             action: () => (0, A.e0)({
               channel: t
             }),
@@ -297,11 +346,14 @@ function L(e) {
         case I.v.SUMMARIZE_THREAD:
           return (0, r.jsx)(o.Drp, {
             id: "summarize_thread",
-            void_label: n,
+            label: e.display,
+            iconLeft: e.icon,
+            leadingAccessory: {
+              type: "icon",
+              icon: e.icon
+            },
             action: () => y.A.summarizeThread(t),
-            icon: K ? (0, r.jsx)(o.y$y, {
-              type: o.tVU.PULSING_ELLIPSIS
-            }) : null,
+            loading: K,
             disabled: K,
             children: K ? null : (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(o.Drp, {

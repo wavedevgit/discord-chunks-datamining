@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 584508, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b,
+  A: () => h,
   m: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -139,7 +139,7 @@ function f(e) {
   })
 }
 
-function b(e) {
+function h(e) {
   let {
     guild: t,
     monetizationEligibility: n

@@ -32,7 +32,7 @@ function f(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(o.W1t, {
-        "data-menu-mixed": true,
+        "data-menu-migrated": true,
         navId: "user-profile-widget-context-menu",
         onClose: () => {
           (0, s.Z_)(), t()
@@ -40,13 +40,17 @@ function f(e) {
         onSelect: () => {},
         "aria-label": u.intl.string(u.t.xpSHSk),
         children: (0, r.jsxs)(o.rXV, {
-          children: [(0, r.jsx)(o.Drp, {
+          children: [f, (0, r.jsx)(o.Drp, {
             id: "flag-widget",
             label: u.intl.string(u.t.D4GvHE),
             action: g,
             color: "danger",
-            icon: o.iFK
-          }, "flag-widget"), f]
+            icon: o.iFK,
+            leadingAccessory: {
+              type: "icon",
+              icon: o.iFK
+            }
+          }, "flag-widget")]
         })
       })
     },

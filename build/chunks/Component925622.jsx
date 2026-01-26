@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 925622, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -69,10 +69,10 @@ let C = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: o
-    } = e, [c, d] = i.useState(true === a.w.get(C)), p = (0, l.bG)([h.A], () => {
+    } = e, [c, d] = i.useState(true === a.w.get(C)), p = (0, l.bG)([b.A], () => {
       var e;
-      return null != (e = h.A.getMemberCount(o.id)) ? e : 0
-    }), [b, j] = i.useState(false);
+      return null != (e = b.A.getMemberCount(o.id)) ? e : 0
+    }), [h, j] = i.useState(false);
     (0, m.Ay)(() => {
       s.Bo.get({
         url: N.Rsh.GUILD_ADMIN_SERVER_ELIGIBILITY(o.id),
@@ -82,7 +82,7 @@ let C = "dismissedCommunityFeaturesUpsell",
       }).catch(() => j(false))
     });
     let _ = (0, l.bG)([x.A], () => x.A.getGuild("942897714956472401")),
-      O = o.features.has(N.GuildFeatures.COMMUNITY) && p >= 1e3 && b && null == _;
+      O = o.features.has(N.GuildFeatures.COMMUNITY) && p >= 1e3 && h && null == _;
     if (t && n && !O) return null;
     let y = async () => {
       try {
@@ -183,12 +183,12 @@ let C = "dismissedCommunityFeaturesUpsell",
         canManageGuild: j.A.can(N.xBc.MANAGE_GUILD, s),
         isGuildAdmin: j.A.can(N.xBc.ADMINISTRATOR, s)
       })),
-      m = (0, l.bG)([b.Ay], () => null != s ? b.Ay.getChannels(s.id) : null),
+      m = (0, l.bG)([h.Ay], () => null != s ? h.Ay.getChannels(s.id) : null),
       f = i.useMemo(E.fr, []),
-      h = true !== a.w.get(C);
+      b = true !== a.w.get(C);
     if (null == s) return null;
     let x = [];
-    null != m && m[b.I6].forEach(e => {
+    null != m && m[h.I6].forEach(e => {
       let {
         channel: t
       } = e;
@@ -217,7 +217,7 @@ let C = "dismissedCommunityFeaturesUpsell",
       children: [(0, r.jsx)(g.Heading, {
         variant: "heading-lg/semibold",
         children: S.intl.string(S.t.nRtNqn)
-      }), h ? (0, r.jsx)(w, {
+      }), b ? (0, r.jsx)(w, {
         discoveryEnabled: s.features.has(N.GuildFeatures.DISCOVERABLE),
         onboardingEnabled: s.features.has(N.GuildFeatures.GUILD_ONBOARDING),
         guild: s

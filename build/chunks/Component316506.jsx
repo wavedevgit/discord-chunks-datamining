@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 316506, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b,
+  A: () => h,
   u: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -28,21 +28,21 @@ function f() {
   }
 }
 
-function b(e) {
+function h(e) {
   let {
     guild: t,
     role: f,
-    selectedSection: b,
-    setSelectedSection: h
+    selectedSection: h,
+    setSelectedSection: b
   } = e, x = i.useCallback(e => {
-    h(e)
-  }, [h]), j = (0, l.bG)([d.A], () => {
+    b(e)
+  }, [b]), j = (0, l.bG)([d.A], () => {
     var e;
     return null == (e = d.A.getRoleMemberCount(t.id)) ? true : e[f.id]
   }, [f.id, t.id]), _ = (0, c.Oy)(f), O = (0, u.A)(t.id, f);
   i.useEffect(() => {
-    _ && h(g.T$.PERMISSIONS)
-  }, [_, h]);
+    _ && b(g.T$.PERMISSIONS)
+  }, [_, b]);
   let v = (0, o.x)(t, f);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -108,7 +108,7 @@ function b(e) {
     }) : null, (0, r.jsxs)(s.VQ0, {
       className: p.$H,
       "aria-label": m.intl.string(m.t["+1H47t"]),
-      selectedItem: b,
+      selectedItem: h,
       type: "top",
       look: "brand",
       onItemSelect: x,

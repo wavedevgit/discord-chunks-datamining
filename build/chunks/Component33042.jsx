@@ -1,8 +1,8 @@
 /** Chunk was on 36054 **/
 /** chunk id: 33042, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => b,
-  T: () => v
+  Q: () => f,
+  T: () => b
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,9 +15,8 @@ var Chunk397927 = require("./397927.js"),
   Chunk146901 = require("./146901.js"),
   Chunk827827 = require("./827827.js"),
   Chunk652215 = require("./652215.js"),
-  Chunk985018 = require("./985018.jsx"),
-  Chunk423648 = require("./423648.js");
-let x = [{
+  Chunk985018 = require("./985018.jsx");
+let h = [{
     duration: 15 * Chunk927813.A.Millis.MINUTE,
     label: () => p.intl.string(p.t["8ot6gv"])
   }, {
@@ -36,15 +35,15 @@ let x = [{
     duration: true,
     label: () => p.intl.string(p.t["46dqJY"])
   }],
-  g = "forever";
+  x = "forever";
 
-function f(e) {
+function g(e) {
   let {
     status: t,
     currentStatus: n,
     description: r
   } = e, i = t !== m.clD.ONLINE, s = (0, a.jsx)(a.Fragment, {
-    children: x.map(e => {
+    children: h.map(e => {
       let {
         duration: r,
         label: i
@@ -58,33 +57,22 @@ function f(e) {
           durationMillis: r
         }),
         dontCloseOnAction: true
-      }, null != r ? r : g)
+      }, null != r ? r : x)
     })
   });
   return (0, a.jsx)(l.Drp, {
     id: t,
-    className: h.pn,
     keepItemStyles: true,
     hasSubmenu: i,
-    void_label: e => {
-      let {
-        isFocused: n
-      } = e;
-      return (0, a.jsxs)("div", {
-        className: h.Oq,
-        children: [(0, a.jsx)(l.nW6, {
-          status: t,
-          className: h.Kk,
-          size: 10,
-          color: n ? "currentColor" : true
-        }), (0, a.jsx)("div", {
-          className: h.h5,
-          children: (0, c.MU)(t)
-        }), null != r && (0, a.jsx)("div", {
-          className: h.h_,
-          children: r
-        })]
-      })
+    label: (0, c.MU)(t),
+    subtext: r,
+    iconLeft: () => (0, a.jsx)(l.nW6, {
+      status: t,
+      size: 10
+    }),
+    leadingAccessory: {
+      type: "status",
+      status: t
     },
     action: () => {
       (0, u.A)({
@@ -97,7 +85,7 @@ function f(e) {
   })
 }
 
-function b(e) {
+function f(e) {
   if (null == e || "0" === e) return;
   let {
     kind: t,
@@ -112,7 +100,7 @@ function b(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let t = s.CY.useSetting(),
     n = (0, r.kB)(),
     o = i.P.useExperiment({
@@ -121,7 +109,7 @@ function v(e) {
     c = s.Jr.useSetting(),
     d = e === m.clD.DND,
     u = n => {
-      let a = b(t);
+      let a = f(t);
       if (e === n && null != a) return a;
       switch (n) {
         case m.clD.DND:
@@ -132,8 +120,8 @@ function v(e) {
           return
       }
     },
-    v = (0, a.jsx)(a.Fragment, {
-      children: x.map(t => {
+    b = (0, a.jsx)(a.Fragment, {
+      children: h.map(t => {
         let {
           duration: n,
           label: i
@@ -145,64 +133,57 @@ function v(e) {
             (0, r.ES)(true, n)
           },
           dontCloseOnAction: true
-        }, null != n ? n : g)
+        }, null != n ? n : x)
       })
     }),
-    j = f({
+    v = g({
       status: m.clD.ONLINE,
       currentStatus: e
     }),
-    _ = f({
+    j = g({
       status: m.clD.IDLE,
       currentStatus: e,
       description: u(m.clD.IDLE)
     }),
-    y = f({
+    _ = g({
       status: m.clD.DND,
       currentStatus: e,
       description: u(m.clD.DND)
     }),
-    A = f({
+    y = g({
       status: m.clD.INVISIBLE,
       currentStatus: e,
       description: u(m.clD.INVISIBLE)
     });
   return (0, a.jsxs)(a.Fragment, {
-    children: [j, (0, a.jsx)(l.bXX, {}, "menu-separator-statuses"), _, y, A, o || n ? (0, a.jsxs)(a.Fragment, {
+    children: [v, (0, a.jsx)(l.bXX, {}, "menu-separator-statuses"), j, _, y, o || n ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(l.bXX, {}, "menu-separator-statuses"), (0, a.jsx)(l.Drp, {
         id: "quiet-mode",
         "aria-label": "focus mode",
-        className: h.pn,
         keepItemStyles: true,
         hasSubmenu: true,
-        void_label: () => (0, a.jsxs)("div", {
-          className: h.Oq,
-          children: [(0, a.jsx)(l.a_I, {
-            size: "xxs",
-            className: h.Kk
-          }), (0, a.jsxs)("div", {
-            className: h.K3,
-            children: [p.intl.string(p.t.gJRnwK), (0, a.jsx)(l.LpS, {
-              text: n ? p.intl.string(p.t.ApAu9f) : d ? p.intl.string(p.t.gH3Frd) : p.intl.string(p.t["64pl82"]),
-              color: n ? l.LU0.unsafe_rawColors.BRAND_500.css : d ? l.LU0.unsafe_rawColors.RED_400.css : l.LU0.unsafe_rawColors.PRIMARY_500.css
-            })]
-          }), (0, a.jsx)("div", {
-            className: h.h_,
-            children: n && null != c && "0" !== c ? p.intl.formatToPlainString(p.t.BWD8fs, {
-              endTime: new Date(Number(c)).toLocaleString(p.intl.currentLocale, {
-                month: "numeric",
-                day: "numeric",
-                hour: "numeric",
-                minute: "2-digit"
-              })
-            }) : p.intl.string(p.t["Br1q+x"])
-          })]
-        }),
+        label: p.intl.string(p.t.gJRnwK),
+        iconLeft: l.a_I,
+        leadingAccessory: {
+          type: "icon",
+          icon: l.a_I
+        },
+        badge: {
+          text: n ? p.intl.string(p.t.ApAu9f) : d ? p.intl.string(p.t.gH3Frd) : p.intl.string(p.t["64pl82"])
+        },
+        subtext: n && null != c && "0" !== c ? p.intl.format(p.t.BWD8fs, {
+          endTime: new Date(Number(c)).toLocaleString(p.intl.currentLocale, {
+            month: "numeric",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit"
+          })
+        }) : p.intl.string(p.t["Br1q+x"]),
         action: () => {
           (0, r.ES)(!n)
         },
         dontCloseOnAction: true,
-        children: v
+        children: b
       }, "quiet-mode")]
     }) : null]
   })

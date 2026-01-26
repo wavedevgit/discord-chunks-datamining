@@ -81,12 +81,12 @@ function h(e) {
       children: j.intl.string(v.default["3vWDMz"])
     }), h && (0, i.jsx)("div", {
       className: p.Bq,
-      children: (0, i.jsx)(g.k, {})
+      children: (0, i.jsx)(f.k, {})
     }), (0, i.jsx)(s.IpV, {
       className: p.nd,
       children: (0, i.jsx)("div", {
         className: p.Y_,
-        children: r.map((e, n) => (0, i.jsx)(f.A, {
+        children: r.map((e, n) => (0, i.jsx)(g.A, {
           guildId: t,
           game: e,
           onClick: () => (0, _.A)({

@@ -96,7 +96,7 @@ let w = new Chunk626584.A("GuildSettingsActionCreators"),
     },
     async open(e, t, r, i) {
       var a;
-      await Promise.all([n.e("10614"), n.e("49681"), n.e("68587"), n.e("43600"), n.e("28136"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("8018"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("47841"), n.e("49862"), n.e("60989"), n.e("24202"), n.e("38985"), n.e("36290"), n.e("59541"), n.e("78528")]).then(n.bind(n, 422559)), (null == (a = E.A.getGuild(e)) ? true : a.features.has(O.GuildFeatures.COMMUNITY)) && (t === O.BEX.GUILD_AUTOMOD && (t = O.BEX.SAFETY, i = O.nd0.SAFETY_AUTOMOD), t === O.BEX.MEMBER_VERIFICATION && (t = O.BEX.SAFETY, i = O.nd0.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, r, i), h.A.closeGuildSidebar(e), (0, o.id)(O.zgK.GUILD_SETTINGS)
+      await Promise.all([n.e("10614"), n.e("49681"), n.e("68587"), n.e("43600"), n.e("28136"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("8018"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("11810"), n.e("8458"), n.e("39048"), n.e("49862"), n.e("60989"), n.e("24202"), n.e("38985"), n.e("36290"), n.e("59541"), n.e("53481")]).then(n.bind(n, 422559)), (null == (a = E.A.getGuild(e)) ? true : a.features.has(O.GuildFeatures.COMMUNITY)) && (t === O.BEX.GUILD_AUTOMOD && (t = O.BEX.SAFETY, i = O.nd0.SAFETY_AUTOMOD), t === O.BEX.MEMBER_VERIFICATION && (t = O.BEX.SAFETY, i = O.nd0.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, r, i), h.A.closeGuildSidebar(e), (0, o.id)(O.zgK.GUILD_SETTINGS)
     },
     close() {
       s.h.dispatch({

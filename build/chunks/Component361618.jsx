@@ -114,27 +114,31 @@ function S(e, t) {
     x = g.ce.map(e => {
       let {
         value: t,
-        label: n
-      } = e, i = (0, c.A)(g.jQ.PRESET_CUSTOM, b, t, C, N, R);
+        label: n,
+        subtext: i
+      } = e, a = (0, c.A)(g.jQ.PRESET_CUSTOM, b, t, C, N, R);
       return (0, r.jsx)(s.iDA, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
         label: n,
+        subtext: i,
         checked: t === v,
-        action: () => P(i, b, t, m.AnalyticsObjectTypes.RESOLUTION)
+        action: () => P(a, b, t, m.AnalyticsObjectTypes.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
     L = g.Jk.map(e => {
       let {
         value: t,
-        label: n
-      } = e, i = (0, c.A)(g.jQ.PRESET_CUSTOM, t, D, C, N, R);
+        label: n,
+        subtext: i
+      } = e, a = (0, c.A)(g.jQ.PRESET_CUSTOM, t, D, C, N, R);
       return (0, r.jsx)(s.iDA, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
+        subtext: i,
         checked: t === b,
-        action: () => P(i, t, D, m.AnalyticsObjectTypes.RESOLUTION)
+        action: () => P(a, t, D, m.AnalyticsObjectTypes.RESOLUTION)
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {

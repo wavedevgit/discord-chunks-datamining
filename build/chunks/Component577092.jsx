@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 577092, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -116,7 +116,7 @@ let T = e => {
       guild: t
     } = e, l = (0, O.A)(t.id), {
       analyticsLocations: u
-    } = (0, g.Ay)(), j = (0, h.A)(t.id), w = t.features.has(E.GuildFeatures.MORE_STICKERS) ? E.TVA.TIER_3 : t.premiumTier, R = t.features.has(E.GuildFeatures.MORE_STICKERS) ? E.M2T[E.TVA.TIER_3] : j, D = (0, x.A)(t.id);
+    } = (0, g.Ay)(), j = (0, b.A)(t.id), w = t.features.has(E.GuildFeatures.MORE_STICKERS) ? E.TVA.TIER_3 : t.premiumTier, R = t.features.has(E.GuildFeatures.MORE_STICKERS) ? E.M2T[E.TVA.TIER_3] : j, D = (0, x.A)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [l]), "success" !== l.status) return (0, r.jsx)(c.y$y, {});
@@ -159,7 +159,7 @@ let T = e => {
       renderTier: e => {
         var i;
         let l, g, {
-            isAnimatedTo: h,
+            isAnimatedTo: b,
             onSetRef: x,
             tier: O,
             tiers: y,
@@ -182,9 +182,9 @@ let T = e => {
           X = B - U,
           J = n(415358),
           Z = F - H.length,
-          q = W ? Math.min(5 - (H.length + 0) % 5, Z) : 0,
-          Q = [];
-        for (let e = 0; e < q; e++) Q.push((0, r.jsx)(C, {}, "placeholder-".concat(e)));
+          Q = W ? Math.min(5 - (H.length + 0) % 5, Z) : 0,
+          q = [];
+        for (let e = 0; e < Q; e++) q.push((0, r.jsx)(C, {}, "placeholder-".concat(e)));
         let $ = t.premiumTier < O.tier && j >= E.M2T[O.tier],
           ee = S.intl.string(S.t.dtFw5c),
           et = () => {
@@ -205,7 +205,7 @@ let T = e => {
           en = false;
         $ && (D ? (et = () => {
           let e = N.a8[O.tier];
-          null != e && (0, b.Qh)(t.id, e)
+          null != e && (0, h.Qh)(t.id, e)
         }, ee = S.intl.string(S.t.g7lkrU), t.premiumTier + 1 !== O.tier && (en = true, l = S.intl.string(S.t.mTMkY2))) : (en = true, l = S.intl.string(S.t.hwPEJR)));
         let er = z === T + 1 && z > w,
           ei = W || er || T > w;
@@ -227,7 +227,7 @@ let T = e => {
           subscriptionCount: R,
           tier: O,
           onSetRef: x,
-          isAnimatedTo: h,
+          isAnimatedTo: b,
           hasBottomMargin: T !== y.length - 1,
           withCardBody: !Y,
           headerButton: g,
@@ -239,7 +239,7 @@ let T = e => {
               isDisabled: K,
               sticker: e,
               canManageSticker: k(e)
-            }, e.id)), Q]
+            }, e.id)), q]
           }), !K && !W && 0 === H.length && (0, r.jsx)("div", {
             className: s()(I.Rm, I.MC),
             children: (0, r.jsx)(c.Text, {

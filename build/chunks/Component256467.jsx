@@ -50,8 +50,8 @@ function T(e) {
     isPhantomPreview: u,
     categoryTabs: p
   } = (0, x.k)(), f = !o || null == l;
-  return null == s || !u && f ? (0, n.jsx)(d.y$y, {}) : (0, n.jsx)(y.A, {
-    defaultSortOption: null != (t = null == l ? true : l.store_page_guild_products_default_sort) ? t : A.p$.NAME,
+  return null == s || !u && f ? (0, n.jsx)(d.y$y, {}) : (0, n.jsx)(y.default, {
+    defaultSortOption: null != (t = null == l ? true : l.store_page_guild_products_default_sort) ? t : D.p$.NAME,
     children: (0, n.jsxs)("div", {
       className: N.hQ,
       children: [(0, n.jsx)(I.A, {
@@ -91,7 +91,7 @@ function V(e) {
     categoryTabs: w
   } = (0, x.k)(), P = o && (null == g || 0 === w.length && !_ || y && !m);
   return i.useEffect(() => {
-    P && (0, h.B)(t, D.VV.GUILD_SHOP)
+    P && (0, h.B)(t, A.VV.GUILD_SHOP)
   }, [t, P]), (0, u.A)({
     type: R.z.PAGE,
     name: s.ImpressionNames.GUILD_SHOP_PAGE,
@@ -104,12 +104,12 @@ function V(e) {
   }), (0, n.jsxs)("div", {
     "data-has-border": true,
     className: l()(k.TE, N.kL),
-    children: [(0, n.jsxs)(j.A, {
-      children: [(0, n.jsx)(j.A.Icon, {
+    children: [(0, n.jsxs)(b.A, {
+      children: [(0, n.jsx)(b.A.Icon, {
         icon: (0, d.kHD)(S.h),
         "aria-hidden": true,
         color: a.A.colors.INTERACTIVE_TEXT_ACTIVE.css
-      }), (0, n.jsx)(j.A.Title, {
+      }), (0, n.jsx)(b.A.Title, {
         children: E.intl.string(E.t.al5EXL)
       }), (0, n.jsx)(L.A, {})]
     }), (0, n.jsx)(d.d_W, {
@@ -118,7 +118,7 @@ function V(e) {
         guildId: t,
         productId: r
       }) : (0, n.jsx)(d.y$y, {})
-    }), (0, n.jsx)(b.A, {
+    }), (0, n.jsx)(j.A, {
       className: N.Dv
     }), (0, n.jsx)(C.A, {
       className: N.xC

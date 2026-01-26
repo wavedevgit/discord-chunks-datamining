@@ -1,4 +1,4 @@
-/** Chunk was on 97887 **/
+/** Chunk was on 67564 **/
 /** chunk id: 435084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -36,7 +36,7 @@ function f(e) {
     }
   });
   return (0, r.jsxs)(a.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated-auto": true,
     navId: "mentions-filter",
     "aria-label": h.intl.string(h.t.pEasFX),
     onClose: t,

@@ -1,7 +1,7 @@
 /** Chunk was on 35894 **/
 /** chunk id: 925282, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -47,22 +47,22 @@ function p(e, t) {
   }), e
 }
 
-function b(e) {
+function f(e) {
   let {
     guildId: t,
     onClose: n
   } = e, l = (0, s.bG)([c.A], () => c.A.getSearchStateByGuildId(t), [t], i()), {
     selectedJoinDateOption: o
   } = l, {
-    afterDate: b,
-    beforeDate: f,
+    afterDate: f,
+    beforeDate: b,
     optionId: j
-  } = o, g = j === d.H_.CUSTOM, h = g && null != b ? a()(b).format(d.Ti) : null, x = g && null != f ? a()(f).format(d.Ti) : null;
+  } = o, g = j === d.H_.CUSTOM, h = g && null != f ? a()(f).format(d.Ti) : null, x = g && null != b ? a()(b).format(d.Ti) : null;
   return (0, r.jsx)(d.Ay, {
     startDateLabel: h,
     endDateLabel: x,
-    afterDate: b,
-    beforeDate: f,
+    afterDate: f,
+    beforeDate: b,
     selectedOption: j,
     isCustomDateRange: g,
     menuName: "joined-date",
@@ -82,8 +82,8 @@ function b(e) {
       (0, u.Ld)(t, p(m({}, l), {
         selectedJoinDateOption: {
           optionId: d.H_.CUSTOM,
-          afterDate: g ? b : null,
-          beforeDate: g ? f : null
+          afterDate: g ? f : null,
+          beforeDate: g ? b : null
         }
       }))
     },
@@ -92,7 +92,7 @@ function b(e) {
         selectedJoinDateOption: {
           optionId: d.H_.CUSTOM,
           afterDate: e.valueOf(),
-          beforeDate: f
+          beforeDate: b
         }
       }))
     },
@@ -100,7 +100,7 @@ function b(e) {
       (0, u.Ld)(t, p(m({}, l), {
         selectedJoinDateOption: {
           optionId: d.H_.CUSTOM,
-          afterDate: b,
+          afterDate: f,
           beforeDate: e.valueOf()
         }
       }))

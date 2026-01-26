@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 950358, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -126,7 +126,7 @@ let y = Chunk64700.memo(function() {
       isFirstChannel: m,
       isLastChannel: v,
       tooltipDirection: E = "right"
-    } = e, N = (0, f.Rg)(t.id, i.id), S = (0, f.eK)(t.id, i.id), I = (0, f.v)(t.id, i.id), T = (0, f.fS)(l.id, i.id), C = null != (0, b.A)(l).find(e => e.id === t.id);
+    } = e, N = (0, f.Rg)(t.id, i.id), S = (0, f.eK)(t.id, i.id), I = (0, f.v)(t.id, i.id), T = (0, f.fS)(l.id, i.id), C = null != (0, h.A)(l).find(e => e.id === t.id);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.m, {
         asContainer: true,
@@ -206,7 +206,7 @@ let y = Chunk64700.memo(function() {
               variant: "secondary",
               text: x.intl.string(x.t.zA9d1J),
               icon: c.XAi,
-              onClick: h.tEg
+              onClick: b.tEg
             })
           })]
         })

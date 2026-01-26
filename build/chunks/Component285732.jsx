@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 285732, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,20 +17,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk148355 = require("./148355.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk102982 = require("./102982.js");
-let b = e => {
+let h = e => {
   let {
     className: t,
     isDisabled: l,
-    sticker: b,
-    canManageSticker: h
+    sticker: h,
+    canManageSticker: b
   } = e, [x, j] = i.useState(false), [_, O] = (0, d.A)(null, 4e3), v = async () => {
     O(null), j(true);
     try {
-      await (0, g.sl)(b)
+      await (0, g.sl)(h)
     } catch (e) {
       O(e.body.message), j(false)
     }
-  }, y = u.Ay.useUserTag(b.user);
+  }, y = u.Ay.useUserTag(h.user);
   return (0, r.jsx)(a.m, {
     forceOpen: null != _,
     text: _,
@@ -46,26 +46,26 @@ let b = e => {
         children: [(0, r.jsx)(m.A, {
           className: f.yI,
           size: 72,
-          sticker: b
+          sticker: h
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(o.Text, {
             color: "text-strong",
             variant: "text-xs/semibold",
             className: f.Zl,
-            children: b.name
-          }), null != b.user && (0, r.jsxs)("div", {
+            children: h.name
+          }), null != h.user && (0, r.jsxs)("div", {
             className: f.kQ,
             children: [(0, r.jsx)(c.A, {
               className: f.dj,
               size: o._3J.SIZE_16,
-              user: b.user
+              user: h.user
             }), (0, r.jsx)(o.Text, {
               color: "text-default",
               variant: "text-xs/normal",
               children: y
             })]
           })]
-        }), h ? (0, r.jsxs)("div", {
+        }), b ? (0, r.jsxs)("div", {
           className: f.o1,
           children: [(0, r.jsx)(o.DUT, {
             className: f.XI,
@@ -92,8 +92,8 @@ let b = e => {
                   }
                   return e
                 }({
-                  sticker: b,
-                  guildId: b.guild_id
+                  sticker: h,
+                  guildId: h.guild_id
                 }, t))
               })
             },

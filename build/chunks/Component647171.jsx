@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 647171, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -28,11 +28,11 @@ function m() {
     guild: m,
     submitting: p,
     errors: f,
-    hasChanges: b
-  } = (0, l.cf)([o.A], () => o.A.getProps()), h = i.useMemo(() => null != n ? (0, u.z)(null == n ? true : n.code) : (0, g.$s)(f), [f, n]), x = i.useCallback(async () => {
+    hasChanges: h
+  } = (0, l.cf)([o.A], () => o.A.getProps()), b = i.useMemo(() => null != n ? (0, u.z)(null == n ? true : n.code) : (0, g.$s)(f), [f, n]), x = i.useCallback(async () => {
     if (null != m && (t && await (0, c.zf)(m.id, e, {
         throwErr: true
-      }), b)) {
+      }), h)) {
       let e = {
         premiumProgressBarEnabled: m.premiumProgressBarEnabled,
         banner: m.banner,
@@ -42,12 +42,12 @@ function m() {
         throwErr: true
       })
     }
-  }, [m, b, t, e]), j = i.useCallback(() => {
+  }, [m, h, t, e]), j = i.useCallback(() => {
     null != m && (a.A.init(m.id), (0, c.fx)())
   }, [m]);
   return (0, r.jsx)(s.A, {
     submitting: p,
-    errorMessage: h,
+    errorMessage: b,
     onSave: x,
     onReset: j
   })

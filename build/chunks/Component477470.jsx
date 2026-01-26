@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 477470, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -21,7 +21,7 @@ let m = function(e) {
     paginationCaretClassName: l,
     intervalBetweenAutomaticItemRotations: m,
     renderItem: p
-  } = e, f = i.useMemo(() => new a.IX, []), [b, h] = i.useState(d.f.LEFT), [x, j] = i.useState(0), [_, O] = i.useState(false), [v, y] = i.useState(false), A = i.useCallback((e, t) => {
+  } = e, f = i.useMemo(() => new a.IX, []), [h, b] = i.useState(d.f.LEFT), [x, j] = i.useState(0), [_, O] = i.useState(false), [v, y] = i.useState(false), A = i.useCallback((e, t) => {
     j(n => {
       let r = n + t;
       return r < 0 ? r = e.length - 1 : r > e.length - 1 && (r = 0), r
@@ -40,7 +40,7 @@ let m = function(e) {
     children: [(0, r.jsx)(o.DUT, {
       className: s()(g.Sx, l),
       onClick: N,
-      onMouseEnter: () => h(d.f.RIGHT),
+      onMouseEnter: () => b(d.f.RIGHT),
       ignoreKeyPress: v,
       children: (0, r.jsx)(c.A, {
         direction: c.A.Directions.LEFT,
@@ -50,7 +50,7 @@ let m = function(e) {
       })
     }), (0, r.jsx)(d.A, {
       step: x,
-      direction: b,
+      direction: h,
       onAnimationStart: () => y(true),
       onAnimationEnd: () => y(false),
       className: s()(g.Dk, n),
@@ -58,7 +58,7 @@ let m = function(e) {
     }), (0, r.jsx)(o.DUT, {
       className: s()(g.Sx, l),
       onClick: E,
-      onMouseEnter: () => h(d.f.LEFT),
+      onMouseEnter: () => b(d.f.LEFT),
       ignoreKeyPress: v,
       children: (0, r.jsx)(c.A, {
         direction: c.A.Directions.RIGHT,

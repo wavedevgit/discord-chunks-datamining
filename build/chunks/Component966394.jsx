@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 966394, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk875331 = require("./875331.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let h = "NO_CHANNEL",
+let b = "NO_CHANNEL",
   x = Chunk136722.kg(Chunk652215.xBc.VIEW_CHANNEL, Chunk652215.xBc.CREATE_INSTANT_INVITE);
 
 function j(e) {
@@ -52,11 +52,11 @@ function j(e) {
     });
     return e.unshift({
       id: "no-instant-invite",
-      value: h,
-      label: b.intl.string(b.t.u197b7)
+      value: b,
+      label: h.intl.string(h.t.u197b7)
     }), e
   }, [O, l, j]), y = i.useCallback(e => {
-    _ ? (0, p.E)(l, f, e !== h ? e : null) : m.A.updateEmbed(l, f, e !== h ? e : null)
+    _ ? (0, p.E)(l, f, e !== b ? e : null) : m.A.updateEmbed(l, f, e !== b ? e : null)
   }, [l, f, _]);
   return (0, r.jsx)(a.l6P, {
     label: t,

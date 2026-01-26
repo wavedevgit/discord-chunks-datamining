@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 86933, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,8 +24,8 @@ function g(e) {
     isLoading: m,
     hasChanges: p,
     editingRule: f,
-    errorMessage: b,
-    saveEditingRule: h
+    errorMessage: h,
+    saveEditingRule: b
   } = (0, c.S)(), {
     updateRule: x
   } = (0, o.wP)(t), j = null != f, _ = j && !(0, a.wC)(f), O = j || p || _, v = async () => {
@@ -38,7 +38,7 @@ function g(e) {
       return t === (null == f ? true : f.id)
     });
     try {
-      let e = await h(n);
+      let e = await b(n);
       null != e && x(e)
     } catch (t) {
       null != e && x(e)
@@ -46,11 +46,11 @@ function g(e) {
   }, y = d.intl.string(d.t["ETE/oC"]), A = !p && j ? d.intl.formatToPlainString(d.t.nula34, {
     ruleName: null == f ? true : f.name
   }) : true;
-  return null != b && (A = (0, r.jsx)(s.Text, {
+  return null != h && (A = (0, r.jsx)(s.Text, {
     variant: "text-md/normal",
     color: "text-feedback-critical",
     className: u.i,
-    children: b
+    children: h
   })), (0, r.jsx)(i.F, {
     component: "div",
     className: u.n,

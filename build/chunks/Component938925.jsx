@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 938925, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -44,8 +44,8 @@ function m(e) {
     buttonLabel: l,
     buttonCallback: s,
     disabled: o
-  } = e, [m, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), b = f.filter(e => e).length / f.length, h = (0, c.zhh)({
-    width: "".concat(100 * b, "%")
+  } = e, [m, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), h = f.filter(e => e).length / f.length, b = (0, c.zhh)({
+    width: "".concat(100 * h, "%")
   });
   return (0, r.jsxs)("div", {
     className: u.kL,
@@ -64,7 +64,7 @@ function m(e) {
       className: u.ux,
       children: (0, r.jsx)(a.animated.div, {
         className: u.zZ,
-        style: h
+        style: b
       })
     }), !m && n.map((e, t) => {
       let {
@@ -96,7 +96,7 @@ function m(e) {
           size: "sm",
           text: l,
           onClick: s,
-          disabled: 1 !== b || o
+          disabled: 1 !== h || o
         })
       })]
     })]

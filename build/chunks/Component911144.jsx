@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 911144, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -73,7 +73,7 @@ function y(e) {
           uses: l
         })
       }) : null]
-    }), (0, r.jsx)(h.A, {
+    }), (0, r.jsx)(b.A, {
       value: n,
       onChange: u,
       error: g,
@@ -97,17 +97,17 @@ function A(e) {
     originalVanityURLCode: c,
     errorDetails: m
   } = e, {
-    analyticsLocations: h
+    analyticsLocations: b
   } = (0, o.Ay)(), _ = (0, d.M5)(t.id, "GuildSettingsBoostPerks"), A = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), _ ? (g.A.close(), (0, u.A)(t.id, a.A.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.FB)) : (0, b.p_)({
+    e.preventDefault(), e.stopPropagation(), _ ? (g.A.close(), (0, u.A)(t.id, a.A.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.FB)) : (0, h.p_)({
       guild: t,
-      analyticsLocations: h,
+      analyticsLocations: b,
       analyticsSection: x.JJy.GUILD_SETTINGS_VANITY_URL,
       analyticsObject: x.ZSU.BUTTON_CTA,
       perks: (0, j.DU)(),
       targetPremiumGuildTier: x.TVA.TIER_3
     })
-  }, [h, t, _]);
+  }, [b, t, _]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, p.d)(t) ? (0, r.jsx)(y, {
       guild: t,

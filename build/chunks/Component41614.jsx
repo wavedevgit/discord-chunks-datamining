@@ -17,14 +17,14 @@ function o(t) {
     guild: a,
     onSelect: n
   } = t;
-  return (0, i.jsx)(e.W1t, {
-    "data-menu-migration-ready": true,
+  return (0, e.jsx)(i.W1t, {
+    "data-menu-migrated-auto": true,
     navId: "game-shop-context",
     "aria-label": c.intl.string(c.t.vyaWs7),
     onClose: s.Z_,
     onSelect: n,
-    children: (0, i.jsx)(e.rXV, {
-      children: (0, i.jsx)(e.Drp, {
+    children: (0, e.jsx)(i.rXV, {
+      children: (0, e.jsx)(i.Drp, {
         id: "game-shop-copy-link",
         label: c.intl.string(c.t.WqhZss),
         action: () => {

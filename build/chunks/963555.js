@@ -1,11 +1,11 @@
-/** Chunk was on 97887 **/
+/** Chunk was on 71287 **/
 /** chunk id: 963555, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => i
+  F: () => r
 });
 var Chunk311907 = require("./311907.js"),
   Chunk349435 = require("./349435.js");
 
-function i(e, t) {
-  return (0, r.bG)([l.Ay], () => l.Ay.getChannelSafetyWarnings(e), [e]).filter(e => e.type === t).find(e => null == e.dismiss_timestamp && ((null == e ? true : e.expiry) == null || Date.parse(e.expiry) > Date.now()))
+function r(e, t) {
+  return (0, i.bG)([a.Ay], () => a.Ay.getChannelSafetyWarnings(e), [e]).filter(e => e.type === t).find(e => null == e.dismiss_timestamp && ((null == e ? true : e.expiry) == null || Date.parse(e.expiry) > Date.now()))
 }

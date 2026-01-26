@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 658446, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -154,7 +154,7 @@ let S = e => {
       description: O.intl.string(O.t.hSLSM6),
       failingDescription: O.intl.format(O.t.odsGgy, {
         termsURL: _.X7G.TERMS,
-        guidelinesURL: b.A.getArticleURL(_.MVz.PUBLIC_GUILD_GUILDLINES)
+        guidelinesURL: h.A.getArticleURL(_.MVz.PUBLIC_GUILD_GUILDLINES)
       }),
       checked: null == S ? true : S.safeEnvironment
     }, {
@@ -177,7 +177,7 @@ let S = e => {
       }),
       failingDescription: O.intl.formatToPlainString(O.t.jYwM1Y, {
         minimumGuildAge: Math.ceil(S.minimumGuildAge / 7),
-        passDate: d()(h.default.extractTimestamp(a)).add(S.minimumGuildAge, "days").format("LL")
+        passDate: d()(b.default.extractTimestamp(a)).add(S.minimumGuildAge, "days").format("LL")
       }),
       checked: null == S ? true : S.age
     }, {

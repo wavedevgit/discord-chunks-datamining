@@ -1,46 +1,46 @@
-/** Chunk was on 97887 **/
-/** chunk id: 560010, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 90850 **/
+/** chunk id: 560010, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
-var r, l, Chunk311907 = require("./311907.js"),
+var n, s, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
-let a = {};
-class o extends(l = Chunk311907.Ay.Store) {
+let r = {};
+class a extends(s = Chunk311907.Ay.Store) {
   getFollowerStatsForChannel(e) {
-    return a[e]
+    return r[e]
   }
-}(r = "displayName") in o ? Object.defineProperty(o, r, {
+}(n = "displayName") in a ? Object.defineProperty(a, n, {
   value: "ChannelFollowerStatsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : o[r] = "ChannelFollowerStatsStore";
-let c = new o(Chunk73153.h, {
+}) : a[n] = "ChannelFollowerStatsStore";
+let c = new a(Chunk73153.h, {
   CONNECTION_OPEN: function() {
-    a = {}
+    r = {}
   },
   CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS: function(e) {
     let {
-      channelId: t,
-      stats: n
+      channelId: l,
+      stats: t
     } = e;
-    n = null != n ? n : {}, a[t] = {
+    t = null != t ? t : {}, r[l] = {
       loadingStatus: "succeeded",
       lastFetched: Date.now(),
-      channelsFollowing: n.channels_following,
-      guildMembers: n.guild_members,
-      guildsFollowing: n.guilds_following,
-      usersSeenEver: n.users_seen_ever,
-      subscribersGainedSinceLastPost: n.subscribers_gained_since_last_post,
-      subscribersLostSinceLastPost: n.subscribers_lost_since_last_post
+      channelsFollowing: t.channels_following,
+      guildMembers: t.guild_members,
+      guildsFollowing: t.guilds_following,
+      usersSeenEver: t.users_seen_ever,
+      subscribersGainedSinceLastPost: t.subscribers_gained_since_last_post,
+      subscribersLostSinceLastPost: t.subscribers_lost_since_last_post
     }
   },
   CHANNEL_FOLLOWER_STATS_FETCH_FAILURE: function(e) {
     let {
-      channelId: t
+      channelId: l
     } = e;
-    a[t] = {
+    r[l] = {
       loadingStatus: "failed",
       lastFetched: Date.now(),
       channelsFollowing: 0,

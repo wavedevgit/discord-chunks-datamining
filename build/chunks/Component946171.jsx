@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 946171, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -57,7 +57,7 @@ function N(e) {
     })
   }, []), {
     memberCount: p,
-    onlineCount: b
+    onlineCount: h
   } = (0, l.cf)([u.A], () => ({
     memberCount: u.A.getMemberCount(n.id),
     onlineCount: u.A.getOnlineCount(n.id)
@@ -132,7 +132,7 @@ function N(e) {
       className: A.VH,
       guild: n,
       memberCount: p,
-      presenceCount: b
+      presenceCount: h
     })]
   })
 }
@@ -169,7 +169,7 @@ function S(e) {
         children: y.intl.string(y.t.CE5Gya)
       }), (0, r.jsx)("div", {
         className: A.wF,
-        children: (0, r.jsx)(h.T, {
+        children: (0, r.jsx)(b.T, {
           guildId: t.id,
           guildMetadata: n
         })
@@ -215,7 +215,7 @@ function I(e) {
       keywords: r
     } = n;
     r.length >= O.Qy || r.includes(e) || (g(null), (0, o.ZH)(t, [...r, e]))
-  }, [t, n]), b = i.useMemo(() => (0, p.hV)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
+  }, [t, n]), h = i.useMemo(() => (0, p.hV)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
     let t = n.keywords.length >= O.Qy;
     return {
       text: e,
@@ -223,7 +223,7 @@ function I(e) {
       disabled: t,
       tooltipText: t ? y.intl.string(y.t.Xx7XeB) : true
     }
-  }), [n.keywords, n.primaryCategoryId, f]), h = null != d ? d : u, x = i.useMemo(() => n.keywords.map(e => ({
+  }), [n.keywords, n.primaryCategoryId, f]), b = null != d ? d : u, x = i.useMemo(() => n.keywords.map(e => ({
     id: e,
     label: e
   })), [n.keywords]);
@@ -242,13 +242,13 @@ function I(e) {
         maxTags: O.Qy,
         maxTaxLength: O.Ug,
         placeholder: n.keywords.length < 1 ? y.intl.string(y.t.EL4Lhs) : true
-      }), null != h ? (0, r.jsx)(s.Text, {
+      }), null != b ? (0, r.jsx)(s.Text, {
         color: "text-feedback-critical",
         variant: "text-sm/normal",
         className: A.z3,
-        children: h
+        children: b
       }) : null]
-    }), b.length > 0 ? (0, r.jsxs)("div", {
+    }), h.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(s.Heading, {
         variant: "text-xs/bold",
         color: "text-muted",
@@ -257,7 +257,7 @@ function I(e) {
       }), (0, r.jsx)("div", {
         className: A.wF,
         children: (0, r.jsx)(c.z, {
-          pills: b
+          pills: h
         })
       })]
     }) : null]
@@ -295,7 +295,7 @@ function T(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(b.k, {
+      children: (0, r.jsx)(h.k, {
         guild: t,
         discoverableGuild: null
       })

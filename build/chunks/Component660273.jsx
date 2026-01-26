@@ -16,11 +16,11 @@ function u(t, n) {
   let i = (0, r.bG)([d.A], () => d.A.hasJoined(t.id));
   return (0, r.bG)([a.A], () => null != t.guild_id && a.A.isLurking(t.guild_id)) ? null : i ? (0, e.jsx)(l.Drp, {
     id: "leave-thread",
-    label: t.isForumPost() ? o.intl.string(o.t["2LsZdT"]) : o.intl.string(o.t["fa/84m"]),
-    action: () => s.A.leaveThread(t, n)
+    label: t.isForumPost() ? s.intl.string(s.t["2LsZdT"]) : s.intl.string(s.t["fa/84m"]),
+    action: () => o.A.leaveThread(t, n)
   }) : (0, e.jsx)(l.Drp, {
     id: "join-thread",
-    label: t.isForumPost() ? o.intl.string(o.t.ihLPiO) : o.intl.string(o.t["10kukS"]),
-    action: () => s.A.joinThread(t, n)
+    label: t.isForumPost() ? s.intl.string(s.t.ihLPiO) : s.intl.string(s.t["10kukS"]),
+    action: () => o.A.joinThread(t, n)
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 271653, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,21 +19,21 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk296217 = require("./296217.js");
 
-function h(e) {
+function b(e) {
   let {
     guildId: t,
     handleCreateOrEditProduct: i
   } = e, g = (0, d.fZ)(t, {
     publishedOnly: false
   }), {
-    shouldRestrictUpdatingCreatorMonetizationSettings: h
+    shouldRestrictUpdatingCreatorMonetizationSettings: b
   } = (0, a.nq)(t), x = g.length > 0;
   return (0, r.jsx)("div", {
-    className: b.aW,
+    className: h.aW,
     children: (0, r.jsx)(l.D0$, {
       label: x ? f.intl.string(f.t.RwuStQ) : f.intl.string(f.t.WKMcMW),
       children: e => x ? (0, r.jsx)("ul", {
-        className: b.Hn,
+        className: h.Hn,
         id: e.controlId,
         children: g.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(p.A, {
@@ -85,7 +85,7 @@ function h(e) {
               productId: e.id
             }),
             onReportProduct: () => {},
-            disabled: h
+            disabled: b
           })
         }, e.id))
       }) : (0, r.jsx)(s.A, {
@@ -113,7 +113,7 @@ function x(e) {
       disabled: n
     }), (0, r.jsx)(l.hKd, {
       size: 24
-    }), (0, r.jsx)(h, {
+    }), (0, r.jsx)(b, {
       guildId: t,
       handleCreateOrEditProduct: s
     })]

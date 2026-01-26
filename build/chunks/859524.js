@@ -179,10 +179,10 @@ function P(e) {
     activity: {
       id: e.id,
       author_id: e.data.user_id,
-      author_type: i.t.USER,
+      author_type: i.ContentInventoryAuthorType.USER,
       traits: [],
       participants: [],
-      content_type: l.I.CUSTOM_STATUS,
+      content_type: l.ContentInventoryEntryType.CUSTOM_STATUS,
       extra: {
         type: "custom_status_extra",
         status: null != (t = e.data.text) ? t : "",
@@ -260,7 +260,7 @@ function D(e) {
     case "guildEvent":
       return "guild_event";
     case "contentInventory":
-      if (e.data.content.content_type === l.I.CUSTOM_STATUS) return "hotwheels_custom_status";
+      if (e.data.content.content_type === l.ContentInventoryEntryType.CUSTOM_STATUS) return "hotwheels_custom_status";
       return "hotwheels_gaming_activity";
     case "recommendedGuilds":
       return "recommended_guilds";

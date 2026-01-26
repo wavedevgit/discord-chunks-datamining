@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 599167, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -26,13 +26,13 @@ function j() {
     {
       application: n,
       loading: j
-    } = (0, o.A)(null == t ? true : t.id, h.S7.GUILD_ROLE_SUBSCRIPTIONS),
+    } = (0, o.A)(null == t ? true : t.id, b.S7.GUILD_ROLE_SUBSCRIPTIONS),
     _ = i.useRef(null),
     O = (0, u.A)(null != t ? t : true);
   i.useEffect(() => {
     null != t && (0, g.aV)(t) && (0, c.Dr)(s.M.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
   }, [t]);
-  let v = (null == t ? true : t.features.has(b.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == t ? true : t.features.has(b.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
+  let v = (null == t ? true : t.features.has(h.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == t ? true : t.features.has(h.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
   return e = null == t || j ? (0, r.jsx)(a.y$y, {}) : null != O ? (0, r.jsx)(p.A, {
     guild: t,
     config: O

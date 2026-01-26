@@ -9,7 +9,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk442433 = require("./442433.js"),
   Chunk818348 = require("./818348.js");
 let i = e => (0, r.jsx)(a.W1t, {
-  "data-menu-migration-ready": true,
+  "data-menu-migrated": true,
   onClose: o.Z_,
   navId: "staff-only-entry-debug",
   "aria-label": "staff only content inventory debug",
@@ -42,6 +42,10 @@ let i = e => (0, r.jsx)(a.W1t, {
         }({}, n, e))
       })
     },
-    icon: a.PXj
+    icon: a.PXj,
+    leadingAccessory: {
+      type: "icon",
+      icon: a.PXj
+    }
   })
 })

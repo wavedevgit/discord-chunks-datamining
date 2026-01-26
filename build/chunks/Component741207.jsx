@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 741207, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,10 +23,10 @@ function f(e) {
   let {
     action: n,
     triggerType: f,
-    guildId: b,
-    toggled: h,
+    guildId: h,
+    toggled: b,
     onToggleAction: x
-  } = e, j = e => () => x(e), _ = (0, c.x)(n.type, n, f), O = null == (t = n.metadata) ? true : t.durationSeconds, v = null != O ? (0, g.getFriendlyDurationString)(O) : null, y = (0, i.bG)([o.A, a.A], () => o.A.can(u.xBc.MODERATE_MEMBERS, a.A.getGuild(b)), [b]);
+  } = e, j = e => () => x(e), _ = (0, c.x)(n.type, n, f), O = null == (t = n.metadata) ? true : t.durationSeconds, v = null != O ? (0, g.getFriendlyDurationString)(O) : null, y = (0, i.bG)([o.A, a.A], () => o.A.can(u.xBc.MODERATE_MEMBERS, a.A.getGuild(h)), [h]);
   if (null == _) return null;
   let {
     headerText: A,
@@ -51,7 +51,7 @@ function f(e) {
         color: "interactive-text-default",
         variant: "text-xs/medium",
         children: E
-      }), h && (0, r.jsxs)(s.Text, {
+      }), b && (0, r.jsxs)(s.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
         children: [null === v ? null : f === d.uh.MENTION_SPAM ? m.intl.format(m.t.i3lsKD, {
@@ -74,7 +74,7 @@ function f(e) {
         children: (0, r.jsx)(s.DUT, {
           onClick: y ? j(false) : true,
           children: (0, r.jsx)(s.P7L, {
-            checked: h,
+            checked: b,
             disabled: !y
           })
         })

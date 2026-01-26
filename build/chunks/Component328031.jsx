@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 328031, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -42,9 +42,9 @@ function p(e) {
 function f(e) {
   let {
     children: t
-  } = e, [n, l] = i.useState(false), s = t.flatMap(e => e.items.map(e => e.completed)), o = s.filter(e => e).length / s.length, f = 1 === o, b = (0, c.zhh)({
+  } = e, [n, l] = i.useState(false), s = t.flatMap(e => e.items.map(e => e.completed)), o = s.filter(e => e).length / s.length, f = 1 === o, h = (0, c.zhh)({
     width: "".concat(100 * o, "%")
-  }), h = [g.intl.format(g.t.wtQtXs, {
+  }), b = [g.intl.format(g.t.wtQtXs, {
     promoPageGuideUrl: u.P7.PROMO_PAGE_GUIDE
   }), g.intl.format(g.t["0Fo0wf"], {
     caseStudiesUrl: u.P7.CASE_STUDIES
@@ -74,7 +74,7 @@ function f(e) {
       label: g.intl.string(g.t.FO0AIS),
       children: (0, r.jsx)(c.BJc, {
         gap: 8,
-        children: h.map((e, t) => (0, r.jsx)("div", {
+        children: b.map((e, t) => (0, r.jsx)("div", {
           className: m.nM,
           children: (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
@@ -105,7 +105,7 @@ function f(e) {
           className: m.ux,
           children: (0, r.jsx)(a.animated.div, {
             className: m.zZ,
-            style: b
+            style: h
           })
         }), x]
       })

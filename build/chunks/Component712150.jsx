@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 712150, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -63,8 +63,8 @@ function _(e) {
     label: (0, d.A)(t.primary, t.secondary)
   });
   return (0, r.jsx)(c.DUT, j(x({}, a), {
-    className: s()(h.Uh, {
-      [h.fT]: i
+    className: s()(b.Uh, {
+      [b.fT]: i
     }),
     onClick: l,
     children: (0, r.jsx)(g.J, {
@@ -89,7 +89,7 @@ function O(e) {
     handleChange: f
   } = e, _ = (0, o.Gx)({
     isSelected: l,
-    label: b.intl.formatToPlainString(b.t.hr4D2X, {
+    label: h.intl.formatToPlainString(h.t.hr4D2X, {
       primaryColor: n,
       secondaryColor: i
     })
@@ -118,8 +118,8 @@ function O(e) {
       onClick: () => {
         g(e => !e)
       },
-      className: s()(h.Uh, {
-        [h.fT]: l
+      className: s()(b.Uh, {
+        [b.fT]: l
       }),
       children: (0, r.jsx)(c.dDg, {
         size: "custom",
@@ -149,12 +149,12 @@ let v = function(e) {
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(c.D0$, {
-      label: b.intl.string(f.default.zSbMdX),
+      label: h.intl.string(f.default.zSbMdX),
       id: v,
       children: e => (0, r.jsxs)("div", j(x({}, E), {
         id: e.controlId,
         "aria-describedby": y,
-        className: h.p3,
+        className: b.p3,
         children: [p.Ub.map(e => (0, r.jsx)(_, {
           palette: e,
           badge: l,
@@ -173,7 +173,7 @@ let v = function(e) {
       }))
     }), (0, r.jsx)(c.AC4, {
       id: y,
-      children: b.intl.string(b.t.ovbW0Z)
+      children: h.intl.string(h.t.ovbW0Z)
     })]
   })
 }

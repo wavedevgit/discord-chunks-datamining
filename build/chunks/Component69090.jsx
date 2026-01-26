@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 69090, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -83,13 +83,13 @@ function k(e) {
   i.useEffect(() => {
     (0, A.L)(n.id)
   }, [n.id]);
-  let b = i.useRef(false);
+  let h = i.useRef(false);
   i.useEffect(() => {
-    b.current || "" === u.trimStart() || (y.default.track(C.HAw.SEARCH_STARTED, {
+    h.current || "" === u.trimStart() || (y.default.track(C.HAw.SEARCH_STARTED, {
       search_type: "Roles"
-    }), b.current = true)
+    }), h.current = true)
   }, [u]);
-  let h = i.useMemo(() => s.filter(e => (0, N.Vh)(e, f)), [s, f]),
+  let b = i.useMemo(() => s.filter(e => (0, N.Vh)(e, f)), [s, f]),
     x = i.useMemo(() => [...s, l], [s, l]),
     {
       draggingId: j,
@@ -102,8 +102,8 @@ function k(e) {
       let {
         row: l
       } = e;
-      if (0 === h.length) return (0, r.jsx)(M, {}, "empty-role");
-      let o = h[l];
+      if (0 === b.length) return (0, r.jsx)(M, {}, "empty-role");
+      let o = b[l];
       return (0, r.jsx)(U, {
         role: o,
         guild: n,
@@ -114,13 +114,13 @@ function k(e) {
         onDragReset: O,
         onDragComplete: S,
         disableHover: null != j,
-        disableDrag: s.length !== h.length,
+        disableDrag: s.length !== b.length,
         setEditRoleId: t,
         setSelectedSection: a
       }, o.id)
-    }, [h, n, m, g, _, O, S, j, s, t, a]);
+    }, [b, n, m, g, _, O, S, j, s, t, a]);
   return (0, r.jsx)(p.ic, {
-    sections: [Math.max(h.length, 1)],
+    sections: [Math.max(b.length, 1)],
     sectionHeight: d,
     renderSection: o,
     rowHeight: 61,
@@ -202,7 +202,7 @@ function U(e) {
         guild: p
       }))
     })
-  }, [p, d]), J = (0, h.x)(p, d);
+  }, [p, d]), J = (0, b.x)(p, d);
   if (V) return (0, r.jsx)("div", {
     ref: e => {
       K(e)
@@ -262,7 +262,7 @@ function U(e) {
       }), (null == (l = d.tags) ? true : l.subscription_listing_id) != null && (0, r.jsx)(j.A, {
         className: w.tU,
         "aria-label": P.intl.string(P.t.a2Ak8b)
-      }), (null == (c = d.tags) ? true : c.is_guild_product_role) === true && (0, r.jsx)(b.A, {})]
+      }), (null == (c = d.tags) ? true : c.is_guild_product_role) === true && (0, r.jsx)(h.A, {})]
     }), (0, r.jsx)(u.m, {
       text: P.intl.string(P.t.CW75t0),
       "aria-label": P.intl.formatToPlainString(P.t.Fgs8fD, {
@@ -322,8 +322,8 @@ function B(e) {
     defaultIconClassName: p
   } = e, {
     hasGradient: f,
-    stops: b,
-    gradientId: h
+    stops: h,
+    gradientId: b
   } = (0, d.RM)(null == (n = o.colorStrings) ? true : n.primaryColor, null == (i = o.colorStrings) ? true : i.secondaryColor, null == (l = o.colorStrings) ? true : l.tertiaryColor), j = (0, _.jV)(a, o), v = (0, x.$7)({
     guildId: a,
     roleId: o.id,
@@ -334,7 +334,7 @@ function B(e) {
     enableTooltip: u
   }));
   let y = null != (t = o.colorString) ? t : C.TpD;
-  return j && f && (y = "url(#".concat(h, ")")), (0, r.jsxs)(r.Fragment, {
+  return j && f && (y = "url(#".concat(b, ")")), (0, r.jsxs)(r.Fragment, {
     children: [j && f && (0, r.jsx)("svg", {
       width: "0",
       height: "0",
@@ -342,12 +342,12 @@ function B(e) {
         position: "absolute"
       },
       children: (0, r.jsx)("linearGradient", {
-        id: h,
+        id: b,
         x1: "0%",
         y1: "0%",
         x2: "0%",
         y2: "100%",
-        children: b
+        children: h
       })
     }), (0, r.jsx)(g.iTF, {
       size: "custom",

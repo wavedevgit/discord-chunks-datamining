@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 159719, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -50,7 +50,7 @@ function p(e, t) {
 function f(e) {
   let {
     guild: t
-  } = e, f = (0, i.bG)([s.A], () => s.A.isUploadingEmoji()), b = (0, u.A)(t.id), h = (0, d.A)(t) - b.length, x = (0, c.gN)();
+  } = e, f = (0, i.bG)([s.A], () => s.A.isUploadingEmoji()), h = (0, u.A)(t.id), b = (0, d.A)(t) - h.length, x = (0, c.gN)();
   return (0, r.jsxs)(l.D0$, {
     label: g.intl.string(g.t["LDT0Q/"]),
     disabled: x,
@@ -72,7 +72,7 @@ function f(e) {
           }))
         })
       },
-      disabled: x || f || 0 === h,
+      disabled: x || f || 0 === b,
       size: "md",
       variant: "primary",
       text: g.intl.string(g.t.AuPtov),
@@ -82,10 +82,10 @@ function f(e) {
     }), (0, r.jsx)(a.Bt, {
       title: g.intl.string(g.t.lu1ZQ2),
       maxSlots: (0, d.A)(t),
-      emojiCount: b.length,
+      emojiCount: h.length,
       children: (0, r.jsx)(a.zI, {
         guild: t,
-        emojis: b,
+        emojis: h,
         onEdit: (e, t) => {
           (0, l.mMO)(async () => {
             let {

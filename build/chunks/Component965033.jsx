@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 965033, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -200,7 +200,7 @@ function D(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, l = (0, o.bG)([f.A], () => null != t && f.A.can(E.xBc.MANAGE_GUILD, t), [t]), s = (0, o.bG)([h.default], () => h.default.getCurrentUser()), {
+  } = e, l = (0, o.bG)([f.A], () => null != t && f.A.can(E.xBc.MANAGE_GUILD, t), [t]), s = (0, o.bG)([b.default], () => b.default.getCurrentUser()), {
     isGuildOwnerWithMFA: d,
     showMFAUserTooltip: u
   } = i.useMemo(() => null == s ? {
@@ -209,7 +209,7 @@ function D(e) {
   } : {
     isGuildOwnerWithMFA: (0, p.ok)(t, s),
     showMFAUserTooltip: !s.mfaEnabled && (0, p.bM)(t, s)
-  }, [s, t]), b = n === E.EkJ.ELEVATED, x = (0, a.throttle)(async e => {
+  }, [s, t]), h = n === E.EkJ.ELEVATED, x = (0, a.throttle)(async e => {
     !d || u || await _.A.updateMFALevel({
       guildId: t.id,
       level: e ? E.EkJ.ELEVATED : E.EkJ.NONE
@@ -223,7 +223,7 @@ function D(e) {
       children: [(0, r.jsx)(c.dOG, {
         label: N.intl.string(N.t.lbBfEQ),
         description: N.intl.string(N.t.REr5AI),
-        checked: b,
+        checked: h,
         onChange: x,
         disabled: !d
       }), u && (0, r.jsx)(c.po8, {
@@ -245,7 +245,7 @@ function G() {
   let {
     guild: e,
     mfaLevel: t
-  } = (0, o.cf)([O.A], () => O.A.getProps(), []), n = (0, o.bG)([b.A], () => b.A.enabled, []);
+  } = (0, o.cf)([O.A], () => O.A.getProps(), []), n = (0, o.bG)([h.A], () => h.A.enabled, []);
   return null == e ? null : n ? (0, r.jsx)(d.A, {}) : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Heading, {
       className: S.N1,

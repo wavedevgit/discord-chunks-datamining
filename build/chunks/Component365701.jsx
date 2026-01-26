@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 365701, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -126,7 +126,7 @@ function w() {
           try {
             await x.A.loadTemplatesForGuild(e), n(false)
           } catch (e) {
-            I.setError(new h.LG(e))
+            I.setError(new b.LG(e))
           }
         }()
       }, [e]), {
@@ -300,7 +300,7 @@ function L(e) {
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(p.D0$, {
       label: y.intl.string(y.t.zGGcLw),
-      children: (0, i.jsx)(b.A, {
+      children: (0, i.jsx)(h.A, {
         buttonLook: m.$n.Looks.FILLED,
         buttonColor: m.$n.Colors.BRAND,
         value: (0, _.A)(n.code)
@@ -341,7 +341,7 @@ function k(e) {
     try {
       await x.A.createGuildTemplate(t.id, I.name, I.description)
     } catch (e) {
-      I.setError(new h.LG(e))
+      I.setError(new b.LG(e))
     }
     s(false)
   };
@@ -363,7 +363,7 @@ function M(e) {
     try {
       await x.A.syncGuildTemplate(t.id, n.code)
     } catch (e) {
-      I.setError(new h.LG(e))
+      I.setError(new b.LG(e))
     }
     s(false)
   };
@@ -388,7 +388,7 @@ function U(e) {
     try {
       await x.A.deleteGuildTemplate(t.id, n.code), I.setName(""), I.setDescription("")
     } catch (e) {
-      I.setError(new h.LG(e))
+      I.setError(new b.LG(e))
     }
     s(false)
   };

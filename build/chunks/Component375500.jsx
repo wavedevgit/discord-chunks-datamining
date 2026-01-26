@@ -14,11 +14,11 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function c(t) {
-  let n = (0, s.X)(t);
+  let n = (0, o.X)(t);
   return (0, r.bG)([a.A], () => a.A.hasJoined(t.id)) ? (0, e.jsx)(l.Drp, {
     id: "thread-notifications",
     label: u.intl.string(u.t.h850Ss),
-    children: (0, o.EU)().map(i => {
+    children: (0, s.EU)().map(i => {
       let {
         setting: r,
         label: a

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 199139, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -89,12 +89,12 @@ class A extends(r = Chunk64700.Component) {
     let n = Math.min(t, e.numRequired);
     return this.getTierDisabled(e) ? {
       title: null,
-      body: b.intl.formatToPlainString(f.default["9CtPjt"], {
+      body: h.intl.formatToPlainString(f.default["9CtPjt"], {
         perk: e.name
       })
     } : {
       title: e.name,
-      body: b.intl.format(b.t.AkLa6n, {
+      body: h.intl.format(h.t.AkLa6n, {
         subscribers: n,
         numRequired: e.numRequired
       })
@@ -110,10 +110,10 @@ class A extends(r = Chunk64700.Component) {
       u = null != a && e.key === a.key,
       m = e.key === s[0].key,
       p = this.getTierDisabled(e);
-    r = m ? h.LR : p ? h.B2 : u ? h.E2 : c ? h.lZ : h.B2;
+    r = m ? b.LR : p ? b.B2 : u ? b.E2 : c ? b.lZ : b.B2;
     let f = e.y - (m ? 0 : O / 2),
-      b = this.state.tierMarkerActive >= t,
-      x = !m && u && b,
+      h = this.state.tierMarkerActive >= t,
+      x = !m && u && h,
       j = this.getTierMarkerTooltipText(e);
     return (0, i.jsx)(g.c7X, {
       from: {
@@ -140,7 +140,7 @@ class A extends(r = Chunk64700.Component) {
             children: x && (0, i.jsx)(g.A9s, {
               size: "md",
               color: "currentColor",
-              className: h.zw
+              className: b.zw
             })
           })
         })
@@ -175,7 +175,7 @@ class A extends(r = Chunk64700.Component) {
     return (0, i.jsxs)("g", {
       mask: "url(#".concat(this.tierMarkerMaskId, ")"),
       children: [(0, i.jsx)("rect", {
-        className: h.Tp,
+        className: b.Tp,
         height: e,
         fill: "currentColor"
       }), (0, i.jsx)(g.c7X, {
@@ -190,7 +190,7 @@ class A extends(r = Chunk64700.Component) {
         onChange: this.handleForegroundFrame,
         onRest: r ? true : this.handleFinishedInitialAnimation,
         children: e => (0, i.jsx)(o.animated.rect, {
-          className: h.CU,
+          className: b.CU,
           height: e.height.interpolate(e => Math.max(0, e)),
           fill: "currentColor"
         })
@@ -203,7 +203,7 @@ class A extends(r = Chunk64700.Component) {
       tiers: t
     } = this.props, n = this.getCurrentTierIndex(), r = this.getTotalHeight();
     return (0, i.jsxs)("div", {
-      className: a()(e, h.hr),
+      className: a()(e, b.hr),
       style: {
         height: r
       },

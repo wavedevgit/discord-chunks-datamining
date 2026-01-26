@@ -17,7 +17,7 @@ function s(e) {
     showActivityTicker: l,
     setShowSuggestions: u,
     setShowActivityTicker: b
-  } = (0, o.A)(), d = i.useCallback(() => {
+  } = (0, c.A)(), d = i.useCallback(() => {
     (0, a.mMO)(async () => {
       let {
         default: e
@@ -43,10 +43,10 @@ function s(e) {
     }), t()
   }, [t]);
   return (0, r.jsxs)(a.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated": true,
     navId: "friends-popout-settings",
     onClose: t,
-    "aria-label": c.intl.string(c.t["3D5yo/"]),
+    "aria-label": o.intl.string(o.t["3D5yo/"]),
     onSelect: () => {},
     children: [(0, r.jsx)(a.Drp, {
       id: "create-group",

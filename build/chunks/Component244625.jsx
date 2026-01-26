@@ -121,10 +121,10 @@ function _(e) {
                 return m.intl.string(m.t.bYNuVx);
               case "contentInventory":
                 switch (n.data.content.content_type) {
-                  case l.I.CUSTOM_STATUS:
+                  case l.ContentInventoryEntryType.CUSTOM_STATUS:
                     return m.intl.string(m.t.fxOLPR);
-                  case l.I.TOP_GAME:
-                  case l.I.PLAYED_GAME:
+                  case l.ContentInventoryEntryType.TOP_GAME:
+                  case l.ContentInventoryEntryType.PLAYED_GAME:
                     return m.intl.string(m.t.ktOTRQ);
                   default:
                     return "".concat(n.data.content.content_type)

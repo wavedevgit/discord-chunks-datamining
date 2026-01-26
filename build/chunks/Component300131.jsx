@@ -1,7 +1,7 @@
 /** Chunk was on 38663 **/
 /** chunk id: 300131, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,43 +11,36 @@ var Chunk627968 = require("./627968.js"),
   Chunk975571 = require("./975571.js"),
   Chunk993401 = require("./993401.jsx"),
   Chunk652215 = require("./652215.js"),
-  Chunk985018 = require("./985018.jsx"),
-  Chunk998855 = require("./998855.js");
-let p = Chunk975571.A.getArticleURL(Chunk652215.MVz.CUSTOM_PROFILES_WISHLIST);
+  Chunk985018 = require("./985018.jsx");
+let f = Chunk975571.A.getArticleURL(Chunk652215.MVz.CUSTOM_PROFILES_WISHLIST);
 
-function g(e) {
+function p(e) {
   let {
     isOwner: t,
     isWishlistPublic: n,
     onToggleVisibility: s
   } = e, u = l.useRef(null), {
-    analyticsLocations: g
-  } = (0, o.Ay)(a.A.USER_PROFILE_WISHLIST), m = l.useMemo(() => t ? (0, r.jsxs)(i.rXV, {
+    analyticsLocations: p
+  } = (0, o.Ay)(a.A.USER_PROFILE_WISHLIST), g = l.useMemo(() => t ? (0, r.jsxs)(i.rXV, {
     children: [(0, r.jsx)(i.fPC, {
       id: "wishlist-privacy-setting",
-      label: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(i.Text, {
-          variant: "text-sm/medium",
-          color: "text-strong",
-          children: d.intl.string(d.t.b2nFyA)
-        }), (0, r.jsx)(i.Text, {
-          className: f.z,
-          variant: "text-xs/medium",
-          color: "text-muted",
-          children: d.intl.string(d.t.dw58pE)
-        })]
-      }),
+      label: d.intl.string(d.t.b2nFyA),
+      subtext: d.intl.string(d.t.dw58pE),
       checked: n,
       action: s
     }), (0, r.jsx)(i.bXX, {}), (0, r.jsx)(i.Drp, {
       id: "wishlist-privacy-setting2",
       label: d.intl.string(d.t.hvVgAZ),
       icon: i.I9m,
-      action: () => window.open(p)
+      trailingIndicator: {
+        type: "icon",
+        icon: i.I9m
+      },
+      action: () => window.open(f)
     })]
   }) : null, [t, n, s]);
-  return null == m ? null : (0, r.jsx)(o.f5, {
-    value: g,
+  return null == g ? null : (0, r.jsx)(o.f5, {
+    value: p,
     children: (0, r.jsx)(i.YNO, {
       targetElementRef: u,
       renderPopout: e => {
@@ -55,12 +48,12 @@ function g(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(i.W1t, {
-          "data-menu-migration-ready": true,
+          "data-menu-migrated": true,
           navId: "wishlist-overflow-menu",
           onSelect: true,
           onClose: t,
           "aria-label": d.intl.string(d.t.GdNkvG),
-          children: m
+          children: g
         })
       },
       children: e => (0, r.jsx)(c.q3, function(e) {

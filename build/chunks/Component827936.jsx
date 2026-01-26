@@ -54,14 +54,14 @@ function b(e) {
 
 function g(e, t) {
   let n = (0, r.bG)([c.default], () => c.default.getCurrentUser());
-  return null == n || t.ownerId !== n.id || e.id === n.id ? null : (0, i.jsx)(s.Drp, {
+  return null == n || t.ownerId !== n.id || e.id === n.id ? null : (0, i.jsx)(o.Drp, {
     id: "make-dm-owner",
     color: "danger",
     label: u.intl.string(u.t["6t3CyN"]),
     action: () => {
-      (0, s.qfG)(r => {
+      (0, o.qfG)(r => {
         var c, g;
-        return (0, i.jsxs)(s.VoidConfirmModal, (c = function(e) {
+        return (0, i.jsxs)(o.VoidConfirmModal, (c = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -83,7 +83,7 @@ function g(e, t) {
           header: u.intl.string(u.t.WZoUsm),
           confirmText: u.intl.string(u.t["cY+Oob"]),
           cancelText: u.intl.string(u.t["ETE/oC"]),
-          onConfirm: () => o.A.setDMOwner(t.id, e.id)
+          onConfirm: () => s.A.setDMOwner(t.id, e.id)
         }, r), g = g = {
           children: [(0, i.jsx)(b, {
             color: l.A.unsafe_rawColors.PRIMARY_300.css
@@ -93,23 +93,23 @@ function g(e, t) {
               className: A.HT,
               children: (0, i.jsx)(d.A, {
                 user: n,
-                size: s._3J.SIZE_80
+                size: o._3J.SIZE_80
               })
             }), (0, i.jsx)("div", {
               className: A.to,
               children: (0, i.jsx)(d.A, {
                 user: e,
-                size: s._3J.SIZE_80
+                size: o._3J.SIZE_80
               })
             })]
-          }), (0, i.jsx)(s.Text, {
+          }), (0, i.jsx)(o.Text, {
             variant: "text-md/normal",
             children: u.intl.format(u.t.gsBb3F, {
               usernameHook: (t, n) => (0, i.jsx)(a.A, {
-                usernameIcon: (0, i.jsx)(s.euF, {
+                usernameIcon: (0, i.jsx)(o.euF, {
                   className: A.jj,
                   src: e.getAvatarURL(true, 16),
-                  size: s._3J.SIZE_16,
+                  size: o._3J.SIZE_16,
                   "aria-hidden": true
                 }),
                 className: A.xK,

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 299824, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,7 +24,7 @@ function c(e) {
       reapplyNoticeText: p
     } = (0, l.A)(n),
     f = n.features.has(s.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED),
-    b = n.features.has(s.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
+    h = n.features.has(s.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   if (null != d) return (0, r.jsx)("div", {
     className: o.U,
     children: (0, r.jsx)(i.wx6, {
@@ -32,8 +32,8 @@ function c(e) {
       children: d.getAnyErrorMessage()
     })
   });
-  let h = null;
-  return null != m ? h = m : g ? h = a.intl.string(a.t.MyJpJT) : null != p ? (h = p, t = a.intl.string(a.t["YKw/NQ"])) : b ? h = a.intl.string(a.t.e2g9sW) : f && (h = a.intl.string(a.t.rxI9sl)), null != h ? (0, r.jsx)("div", {
+  let b = null;
+  return null != m ? b = m : g ? b = a.intl.string(a.t.MyJpJT) : null != p ? (b = p, t = a.intl.string(a.t["YKw/NQ"])) : h ? b = a.intl.string(a.t.e2g9sW) : f && (b = a.intl.string(a.t.rxI9sl)), null != b ? (0, r.jsx)("div", {
     className: o.U,
     children: (0, r.jsx)(i.po8, {
       messageType: i.YCn.WARNING,
@@ -43,7 +43,7 @@ function c(e) {
         onClick: u,
         loading: c
       }),
-      children: h
+      children: b
     })
   }) : null
 }

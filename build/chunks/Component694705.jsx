@@ -76,27 +76,27 @@ function O(e) {
     })
   }, n);
   switch (t.content_type) {
-    case o.I.TOP_ARTIST:
+    case o.ContentInventoryEntryType.TOP_ARTIST:
       return (0, r.jsx)(I, m({
         entry: t
       }, i));
-    case o.I.TOP_GAME:
+    case o.ContentInventoryEntryType.TOP_GAME:
       return (0, r.jsx)(S, m({
         entry: t
       }, i));
-    case o.I.PLAYED_GAME:
+    case o.ContentInventoryEntryType.PLAYED_GAME:
       return (0, r.jsx)(T, m({
         entry: t
       }, i));
-    case o.I.WATCHED_MEDIA:
+    case o.ContentInventoryEntryType.WATCHED_MEDIA:
       return (0, r.jsx)(C, m({
         entry: t
       }, i));
-    case o.I.LISTENED_SESSION:
+    case o.ContentInventoryEntryType.LISTENED_SESSION:
       return (0, r.jsx)(N, m({
         entry: t
       }, i));
-    case o.I.LAUNCHED_ACTIVITY:
+    case o.ContentInventoryEntryType.LAUNCHED_ACTIVITY:
       return (0, r.jsx)(A, m({
         entry: t
       }, i));

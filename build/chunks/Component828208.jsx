@@ -1,6 +1,5 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 11810 **/
 /** chunk id: 828208, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   A: () => l
 });
@@ -12,10 +11,10 @@ function l(e) {
   var t, n;
   let {
     width: l = 17,
-    height: s = 16,
-    color: a = "currentColor",
-    foreground: o
-  } = e, c = function(e, t) {
+    height: o = 16,
+    color: c = "currentColor",
+    foreground: s
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -49,25 +48,25 @@ function l(e) {
       })
     }
     return e
-  }({}, (0, i.A)(c)), n = n = {
+  }({}, (0, i.A)(a)), n = n = {
     width: l,
-    height: s,
+    height: o,
     viewBox: "0 0 17 16",
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("rect", {
-      className: o,
+      className: s,
       y: "5",
       width: "16",
       height: "2",
       rx: "1",
-      fill: a
+      fill: c
     }), (0, r.jsx)("rect", {
-      className: o,
+      className: s,
       y: "9",
       width: "8",
       height: "2",
       rx: "1",
-      fill: a
+      fill: c
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

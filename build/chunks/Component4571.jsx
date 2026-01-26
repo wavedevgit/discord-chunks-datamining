@@ -1,5 +1,5 @@
 /** Chunk was on 17288 **/
-/** chunk id: 4571, original params: t,i,n (module,exports,require) **/
+/** chunk id: 4571, original params: t,i,e (module,exports,require) **/
 require.d(exports, {
   default: () => s
 });
@@ -15,20 +15,20 @@ function s(t) {
   let {
     onSelect: i
   } = t;
-  return (0, e.jsxs)(a.W1t, {
-    "data-menu-migration-ready": true,
+  return (0, n.jsxs)(a.W1t, {
+    "data-menu-migrated": true,
     navId: "guild-context",
     "aria-label": r.intl.string(r.t.HpQykc),
     onClose: l.Z_,
     onSelect: i,
-    children: [(0, e.jsx)(a.Drp, {
+    children: [(0, n.jsx)(a.Drp, {
       id: "join",
       label: r.intl.string(r.t.yRjK4p),
       action: () => o.A.openCreateGuildModal({
         initialSlide: d.oS.JOIN_GUILD,
         location: "Guild List - ContextMenu"
       })
-    }), (0, e.jsx)(a.Drp, {
+    }), (0, n.jsx)(a.Drp, {
       id: "create",
       label: r.intl.string(r.t.B44MTm),
       action: () => o.A.openCreateGuildModal({

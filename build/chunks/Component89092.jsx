@@ -72,18 +72,18 @@ let D = Chunk64700.forwardRef(function(e, t) {
     isFiltered: u,
     isSorted: C,
     className: m
-  } = i, p = S(i, ["label", "onFilter", "isFiltered", "isSorted", "className"]), [b] = a, f = u ? "text-strong" : "text-default";
-  return C && (f = "text-brand"), (0, r.jsx)("th", {
+  } = i, p = S(i, ["label", "onFilter", "isFiltered", "isSorted", "className"]), [f] = a, b = u ? "text-strong" : "text-default";
+  return C && (b = "text-brand"), (0, r.jsx)("th", {
     className: o()(H.P1, m),
     children: (0, r.jsxs)(d.DUT, (n = A({}, p), l = l = {
-      innerRef: b,
+      innerRef: f,
       onClick: c,
       className: o()(H.WV, {
         [H.o1]: null != c
       }),
       children: [(0, r.jsx)(d.Text, {
         variant: "eyebrow",
-        color: f,
+        color: b,
         children: s
       }), null != c && (0, r.jsx)("div", {
         className: H.IO,
@@ -112,11 +112,11 @@ function N(e) {
   let {
     guildId: t,
     currentPagedMembers: n
-  } = e, i = l.useRef(null), a = l.useRef(null), N = l.useRef(null), L = l.useRef(null), P = l.useRef(null), R = (0, c.bG)([f.A], () => f.A.getSearchStateByGuildId(t), [t], s()), V = (0, c.bG)([m.A, C.A], () => m.A.can(v.xBc.MANAGE_GUILD, C.A.getGuild(t)), [t]), {
+  } = e, i = l.useRef(null), a = l.useRef(null), N = l.useRef(null), L = l.useRef(null), P = l.useRef(null), R = (0, c.bG)([b.A], () => b.A.getSearchStateByGuildId(t), [t], s()), V = (0, c.bG)([m.A, C.A], () => m.A.can(v.xBc.MANAGE_GUILD, C.A.getGuild(t)), [t]), {
     selectedUserIds: E,
     addUsers: M,
     clearSelection: I
-  } = (0, j.A)(t), T = R.requireUnusualDmActivity || R.requireCommunicationDisabled || R.requireUnusualAccountActivity || R.requireUsernameQuarantined, Z = R.selectedRoleIds.size > 0, k = null != R.selectedJoinDateOption.afterDate, U = R.selectedSort === p.mF.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != R.selectedAccountAgeOption.afterDate, B = R.selectedSort === p.mF.ORDER_BY_USER_ID_ASC || R.selectedSort === p.mF.ORDER_BY_USER_ID_DESC, G = null != R.selectedSourceInviteCode && "" !== R.selectedSourceInviteCode, q = null != R.selectedJoinSourceType, z = G || q, Y = (0, b.vA)(t), K = l.useMemo(() => n.filter(e => (0, b.Ph)(t, Y, e)), [Y, n, t]), Q = K.length > 0, X = 0 === K.filter(e => !E.has(e)).length, J = l.useCallback(() => {
+  } = (0, j.A)(t), T = R.requireUnusualDmActivity || R.requireCommunicationDisabled || R.requireUnusualAccountActivity || R.requireUsernameQuarantined, Z = R.selectedRoleIds.size > 0, k = null != R.selectedJoinDateOption.afterDate, U = R.selectedSort === p.mF.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != R.selectedAccountAgeOption.afterDate, B = R.selectedSort === p.mF.ORDER_BY_USER_ID_ASC || R.selectedSort === p.mF.ORDER_BY_USER_ID_DESC, G = null != R.selectedSourceInviteCode && "" !== R.selectedSourceInviteCode, q = null != R.selectedJoinSourceType, z = G || q, Y = (0, f.vA)(t), K = l.useMemo(() => n.filter(e => (0, f.Ph)(t, Y, e)), [Y, n, t]), Q = K.length > 0, X = 0 === K.filter(e => !E.has(e)).length, W = l.useCallback(() => {
     Q && (X ? I() : M(K))
   }, [Q, X, I, M, K]);
   return (0, r.jsx)("thead", {
@@ -128,7 +128,7 @@ function N(e) {
           shouldShow: !Q,
           text: _.intl.string(_.t.tJEY0G),
           children: (0, r.jsx)(d.DUT, {
-            onClick: J,
+            onClick: W,
             className: H.WV,
             children: (0, r.jsx)(d.P7L, {
               checked: X,
@@ -200,7 +200,7 @@ function N(e) {
         position: "bottom",
         spacing: 4,
         align: "left",
-        renderPopout: () => (0, r.jsx)(y.A, {
+        renderPopout: () => (0, r.jsx)(y.default, {
           guildId: t,
           onClose: v.tEg
         }),

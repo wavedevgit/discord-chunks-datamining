@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 810877, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  W: () => b
+  W: () => h
 }), require("./747238.js");
 var Chunk830917 = require("./830917.js"),
   Chunk397927 = require("./397927.js"),
@@ -21,19 +21,19 @@ let f = (e, t, n, r) => (o.default.track(g.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
     file_size: t,
     upload_id: r
   }), a.o.TOO_BIG),
-  b = async e => {
+  h = async e => {
     let {
       data: t,
       file: n,
-      guildId: b,
-      uploadId: h,
+      guildId: h,
+      uploadId: b,
       roles: x,
       image: j,
       hideErrorModal: _,
       analyticsLocation: O
     } = e, v = c.Ay.sanitizeEmojiName(n.name.split(".")[0]);
     if (c.Ay.isFileTooBig(n)) {
-      if ("image/gif" === n.type || "image/webp" === n.type || "image/avif" === n.type) return f(n.name, n.size, b, h);
+      if ("image/gif" === n.type || "image/webp" === n.type || "image/avif" === n.type) return f(n.name, n.size, h, b);
       else if (null != j) {
         var y, A;
         let e;
@@ -41,7 +41,7 @@ let f = (e, t, n, r) => (o.default.track(g.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
         try {
           e = c.Ay.isDataTooBig(t)
         } catch (e) {
-          return f(n.name, n.size, b, h)
+          return f(n.name, n.size, h, b)
         }
         if (y = t, A = e, o.default.track(g.HAw.EMOJI_FILE_RESIZED, {
             is_animated: false,
@@ -49,20 +49,20 @@ let f = (e, t, n, r) => (o.default.track(g.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
             original_file_size_bytes: n.size,
             resized_file_size_bytes: (0, d.EW)(y),
             resized_file_too_big: A
-          }), e) return f(n.name, n.size, b, h)
+          }), e) return f(n.name, n.size, h, b)
       }
     }
     try {
       let e = await (0, s.Gf)({
-        guildId: b,
+        guildId: h,
         image: t,
         name: v,
         roles: x,
         analyticsLocation: O
       });
       return o.default.track(g.HAw.EMOJI_UPLOAD_COMPLETED, {
-        guild_id: b,
-        upload_id: h
+        guild_id: h,
+        upload_id: b
       }), (0, i.showToast)((0, i.createToast)(m.intl.string(m.t["r0w9m/"]), i.ToastType.SUCCESS)), e
     } catch (s) {
       let e, n, {
@@ -70,9 +70,9 @@ let f = (e, t, n, r) => (o.default.track(g.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
         status: i
       } = s;
       return null != r && (r.code === g.t02.TOO_MANY_EMOJI ? (e = m.intl.string(m.t["jP/Rqm"]), n = a.o.TOO_MANY_EMOJI) : r.code === g.t02.TOO_MANY_ANIMATED_EMOJI ? (e = m.intl.string(m.t["6v5dP/"]), n = a.o.TOO_MANY_ANIMATED_EMOJI) : null != r.image || r.code === g.t02.INVALID_FILE_ASSET_SIZE ? (o.default.track(g.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
-        guild_id: b,
+        guild_id: h,
         file_size: p.byteLength(t),
-        upload_id: h
+        upload_id: b
       }), e = m.intl.formatToPlainString(m.t.kIO9jy, {
         maxSize: u.i9
       }), n = a.o.TOO_BIG) : (null != r.image || r.code === g.t02.INVALID_FILE_ASSET_SIZE_RESIZE_GIF) && (n = a.o.RESIZE_GIF)), 429 === i && (e = m.intl.string(m.t.Whhv4w), n = a.o.RATE_LIMIT), null == e || _ || l.A.show({

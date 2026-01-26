@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 215194, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -86,7 +86,7 @@ let S = function() {
           onIconChange: P
         }), (0, r.jsx)("div", {
           className: N.yF
-        }), (0, r.jsx)(b.A, {
+        }), (0, r.jsx)(h.A, {
           profile: T,
           onCustomBannerChange: w,
           canManageGuild: C
@@ -97,7 +97,7 @@ let S = function() {
           canManageGuild: C
         }), (0, r.jsx)("div", {
           className: N.yF
-        }), (0, r.jsx)(h.A, {
+        }), (0, r.jsx)(b.A, {
           profile: T,
           canManageGuild: C
         }), (0, r.jsx)("div", {

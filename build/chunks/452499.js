@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 452499, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -29,7 +29,7 @@ function a(e, t, n) {
     id: e,
     icon: p,
     size: n
-  }), b = r.useMemo(() => null != m && m.length > t ? m.slice(0, t) : m, [m, t]), h = null != m && m.length > t ? m.length - t : null, x = null == u ? true : u.slug, j = null != x ? s.X7G.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, _ = null == g || null == (a = g.guild) ? true : a.name, O = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, v = !c && null != _ && null != p && null != f;
+  }), h = r.useMemo(() => null != m && m.length > t ? m.slice(0, t) : m, [m, t]), b = null != m && m.length > t ? m.length - t : null, x = null == u ? true : u.slug, j = null != x ? s.X7G.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, _ = null == g || null == (a = g.guild) ? true : a.name, O = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, v = !c && null != _ && null != p && null != f;
   return v ? {
     hasAllImperativeDetails: v,
     isLoading: c,
@@ -39,8 +39,8 @@ function a(e, t, n) {
       guildAvatarUrl: f,
       storePageUrl: j,
       subscriberCount: O,
-      emojisToShow: b,
-      notShownEmojiCount: h
+      emojisToShow: h,
+      notShownEmojiCount: b
     }
   } : {
     hasAllImperativeDetails: v,

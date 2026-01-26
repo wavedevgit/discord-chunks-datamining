@@ -106,11 +106,11 @@ function R(e, t) {
   return i
 }
 let P = {
-  [Chunk681154.I.TOP_ARTIST]: [K],
-  [Chunk681154.I.PLAYED_GAME]: [U, G, k, q, F, Y, z, H, B],
-  [Chunk681154.I.TOP_GAME]: [W],
-  [Chunk681154.I.WATCHED_MEDIA]: [Z, X],
-  [Chunk681154.I.LAUNCHED_ACTIVITY]: [U, G, k, q, z, B]
+  [Chunk681154.ContentInventoryEntryType.TOP_ARTIST]: [K],
+  [Chunk681154.ContentInventoryEntryType.PLAYED_GAME]: [U, G, k, q, F, Y, z, H, B],
+  [Chunk681154.ContentInventoryEntryType.TOP_GAME]: [W],
+  [Chunk681154.ContentInventoryEntryType.WATCHED_MEDIA]: [Z, X],
+  [Chunk681154.ContentInventoryEntryType.LAUNCHED_ACTIVITY]: [U, G, k, q, z, B]
 };
 var D = function(e) {
   return e[e.CARD = 0] = "CARD", e[e.POPOUT = 1] = "POPOUT", e[e.STREAMING_POPOUT = 2] = "STREAMING_POPOUT", e[e.GAME_PROFILE = 3] = "GAME_PROFILE", e[e.USER_PROFILE = 4] = "USER_PROFILE", e[e.EMBED = 5] = "EMBED", e[e.LEADERBOARD_POPOUT = 6] = "LEADERBOARD_POPOUT", e[e.OVERLAY = 7] = "OVERLAY", e[e.FRIENDS_POPOUT = 8] = "FRIENDS_POPOUT", e[e.APP_LAUNCHER = 9] = "APP_LAUNCHER", e
@@ -480,23 +480,23 @@ function J(e) {
 
 function $(e) {
   switch (e.content_type) {
-    case c.I.TOP_ARTIST:
+    case c.ContentInventoryEntryType.TOP_ARTIST:
       return P[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
-    case c.I.PLAYED_GAME:
+    case c.ContentInventoryEntryType.PLAYED_GAME:
       return P[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
-    case c.I.TOP_GAME:
+    case c.ContentInventoryEntryType.TOP_GAME:
       return P[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
-    case c.I.WATCHED_MEDIA:
+    case c.ContentInventoryEntryType.WATCHED_MEDIA:
       return P[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
-    case c.I.LAUNCHED_ACTIVITY:
+    case c.ContentInventoryEntryType.LAUNCHED_ACTIVITY:
       return P[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));

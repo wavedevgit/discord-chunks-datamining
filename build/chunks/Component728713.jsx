@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 728713, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -41,7 +41,7 @@ function P(e) {
       highestRole: m,
       selectedItem: p,
       onClick: f,
-      currentPosition: h,
+      currentPosition: b,
       onDragStart: _,
       onDragReset: O,
       onDragComplete: v,
@@ -56,7 +56,7 @@ function P(e) {
       type: C,
       item: () => (_(d.id), {
         id: d.id,
-        position: h
+        position: b
       }),
       canDrag: () => I,
       end: (e, t) => {
@@ -82,7 +82,7 @@ function P(e) {
       })
     }),
     L = null != (t = d.colorString) ? t : S.TpD;
-  return l = P ? (0, r.jsx)(b.A, {
+  return l = P ? (0, r.jsx)(h.A, {
     size: 12,
     color: d.colorString,
     className: T.Ev
@@ -96,8 +96,8 @@ function P(e) {
     colors: w
   }), (0, r.jsxs)(u.VQ0.Item, {
     className: s()(T.nM, {
-      [T.qo]: null !== D && h < D,
-      [T.BP]: null !== D && h > D
+      [T.qo]: null !== D && b < D,
+      [T.BP]: null !== D && b > D
     }),
     id: d.id,
     selectedItem: p,
@@ -166,7 +166,7 @@ function w(e) {
     currentRoleId: n,
     setCurrentRoleId: l,
     setSelectedSection: a
-  } = e, o = (0, c.bG)([v.A], () => v.A.roles), g = (0, c.bG)([_.A], () => _.A.getHighestRole(t)), b = (0, c.bG)([f.A], () => f.A.roleStyle), [x, j] = i.useState(o.length), {
+  } = e, o = (0, c.bG)([v.A], () => v.A.roles), g = (0, c.bG)([_.A], () => _.A.getHighestRole(t)), h = (0, c.bG)([f.A], () => f.A.roleStyle), [x, j] = i.useState(o.length), {
     scrolledToTop: y,
     handleScroll: S
   } = (0, E.u)(), {
@@ -184,7 +184,7 @@ function w(e) {
     G(n)
   }), i.useEffect(() => {
     o.length > x && G(n), o.length !== x && j(o.length)
-  }, [o.length, x, j, G, n]), (0, r.jsx)(h.Ay.Sidebar, {
+  }, [o.length, x, j, G, n]), (0, r.jsx)(b.Ay.Sidebar, {
     className: T.pz,
     children: (0, r.jsxs)("div", {
       className: T.kL,
@@ -242,7 +242,7 @@ function w(e) {
             onDragStart: C,
             onDragReset: w,
             onDragComplete: R,
-            roleStyle: b
+            roleStyle: h
           }, e.id))
         })
       })]

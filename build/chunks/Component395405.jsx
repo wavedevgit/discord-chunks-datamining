@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 395405, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -255,7 +255,7 @@ let w = Chunk311907.Ay.connectStores([Chunk71393.A, Chunk645619.A, Chunk555337.A
   var e, t;
   let n = f.A.getGuildId(),
     r = null != (e = null == (t = v.A.getGuild(n)) ? true : t.premiumTier) ? e : N.TVA.NONE,
-    i = (0, h.G)(n),
+    i = (0, b.G)(n),
     l = null != n ? _.A.getAppliedGuildBoostsForGuild(n) : null,
     s = o()(null != l ? l : []).uniqBy(e => e.userId),
     a = s.map(e => ({

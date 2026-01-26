@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 690420, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,22 +22,22 @@ let g = Chunk64700.memo(function(e) {
     hasChanges: m,
     editingRule: p,
     createNewEditingRule: f,
-    setEditingRule: b
+    setEditingRule: h
   } = (0, a.U)(), {
-    isLoading: h
+    isLoading: b
   } = (0, a.S)(), [x] = i.useState(() => !(0, l.wC)(t)), j = (null == p ? true : p.id) === t.id || n, _ = (0, s.R)(null == t ? true : t.id), O = j && null != p ? p : t, v = i.useMemo(() => (0, o.cT)(t.name), [null == t ? true : t.name]), y = i.useCallback(() => {
     f(t.guildId, t.triggerType)
   }, [t.guildId, t.triggerType, f]), A = i.useCallback(e => {
-    h || b(e, true)
-  }, [h, b]);
+    b || h(e, true)
+  }, [b, h]);
   i.useEffect(() => {
-    g && b(t, true)
-  }, [g, t, b]);
+    g && h(t, true)
+  }, [g, t, h]);
   let E = i.useCallback(() => {
-    j ? m || b(null) : m ? v(() => {
-      b(t)
-    }) : b(t)
-  }, [j, m, v, t, b]);
+    j ? m || h(null) : m ? v(() => {
+      h(t)
+    }) : h(t)
+  }, [j, m, v, t, h]);
   return (0, r.jsx)(d.A, {
     renderHeader: (0, r.jsx)(u.A, {
       rule: O,
@@ -53,7 +53,7 @@ let g = Chunk64700.memo(function(e) {
     onExpand: E,
     children: j && (0, r.jsx)(c.A, {
       rule: O,
-      isLoading: h,
+      isLoading: b,
       onChangeRule: A
     })
   })

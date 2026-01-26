@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 190695, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -36,7 +36,7 @@ function j(e) {
       className: x.uW,
       variant: "text-xs/medium",
       color: "text-muted",
-      children: y ? h.intl.string(b.default["6xBCpG"]) : h.intl.string(b.default.eSRKez)
+      children: y ? b.intl.string(h.default["6xBCpG"]) : b.intl.string(h.default.eSRKez)
     }), (0, r.jsx)("div", {
       className: x.yF
     }), (0, r.jsxs)("div", {
@@ -55,10 +55,10 @@ function j(e) {
           inline: false
         }),
         username: p.Ay.getName(i, null, _),
-        message: h.intl.string(h.t["6OSasb"])
+        message: b.intl.string(b.t["6OSasb"])
       }), (0, r.jsx)(a.Button, {
         variant: "primary",
-        text: h.intl.string(h.t.cQDYRu),
+        text: b.intl.string(b.t.cQDYRu),
         onClick: O,
         loading: v,
         disabled: y,

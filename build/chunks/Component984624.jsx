@@ -1,4 +1,4 @@
-/** Chunk was on 97887 **/
+/** Chunk was on 67564 **/
 /** chunk id: 984624, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -40,7 +40,7 @@ function b(e) {
       } = e;
       return (0, r.jsx)(c.A, {
         children: (0, r.jsx)(s.W1t, {
-          "data-menu-all-icons": true,
+          "data-menu-migrated": true,
           navId: "exit-options",
           onSelect: () => {},
           "aria-label": m.intl.string(m.t["K6/mk3"]),
@@ -50,6 +50,10 @@ function b(e) {
             color: "danger",
             action: x,
             label: m.intl.string(m.t.qaYzPA),
+            leadingAccessory: {
+              type: "icon",
+              icon: s.aXh
+            },
             icon: s.aXh
           })
         })

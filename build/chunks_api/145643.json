@@ -1,1 +1,1 @@
-{"id":"145643","type":"store","data":{"name":"GuildRoleConnectionsConfigurationStore","functions":[{"name":"initialize","args":[]},{"name":"getGuildRoleConnectionsConfiguration","args":["e"]}],"events":["GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS"]},"fromModule":{"id":"47841"}}
+{"id":"145643","type":"store","data":{"name":"GuildRoleConnectionsConfigurationStore","functions":[{"name":"initialize","args":[]},{"name":"getGuildRoleConnectionsConfiguration","args":["e"]}],"events":["GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS"]},"fromModule":{"id":"39048"}}

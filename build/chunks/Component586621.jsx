@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 586621, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,7 +23,7 @@ function g(e) {
     summaryMetricLabel: m,
     summaryMetricValue: p,
     summaryMetricTrend: f,
-    summaryMetricTrendIsPercent: b
+    summaryMetricTrendIsPercent: h
   } = e;
   return (0, r.jsx)(i.nVY, {
     label: d.intl.string(d.t.ofmOzb),
@@ -42,7 +42,7 @@ function g(e) {
           value: p,
           additionalContent: (0, r.jsx)(l.u, {
             value: f,
-            isPercent: b
+            isPercent: h
           })
         })]
       }), t]

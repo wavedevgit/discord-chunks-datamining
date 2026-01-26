@@ -19,27 +19,25 @@ function c(e) {
     onSuccess: i,
     shiftId: c,
     showIconFirst: u,
-    showWithoutDeveloperMode: d,
-    focusedClassName: f
-  } = e, p = o.Q_.useSetting();
+    showWithoutDeveloperMode: d
+  } = e, f = o.Q_.useSetting();
 
-  function _(e) {
+  function p(e) {
     let n = null != c && e.shiftKey ? c : t;
     a()(null != n, "cannot copy null text"), (0, l.C)(n, i)
   }
-  let h = d || p;
-  if (__OVERLAY__ || !h || !l.p5 || null == t) return null;
-  let m = "devmode-copy-id-".concat(t);
+  let _ = d || f;
+  if (__OVERLAY__ || !_ || !l.p5 || null == t) return null;
+  let h = "devmode-copy-id-".concat(t);
   return (0, r.jsx)(s.Drp, {
-    id: m,
+    id: h,
     label: n,
-    action: _,
+    action: p,
     icon: u ? true : s.L9S,
     iconLeft: u ? s.L9S : true,
     leadingAccessory: {
       type: "icon",
       icon: s.L9S
-    },
-    focusedClassName: f
-  }, m)
+    }
+  }, h)
 }

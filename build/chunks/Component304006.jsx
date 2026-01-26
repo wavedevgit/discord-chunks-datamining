@@ -20,10 +20,10 @@ function b(e) {
     channelId: n
   } = e, b = (0, u.k)({
     channelId: n
-  }), f = (0, i.bG)([d.A], () => null != d.A.getActiveStreamForApplicationStream(t)), g = (0, o._z)(t), A = (0, s.w)(g), h = l.useCallback(() => {
-    c.A.openSecureFramesStreamVerification(g, n)
-  }, [n, g]);
-  return b && f && !A ? (0, r.jsx)(a.Drp, {
+  }), g = (0, i.bG)([d.A], () => null != d.A.getActiveStreamForApplicationStream(t)), f = (0, o._z)(t), A = (0, s.w)(f), h = l.useCallback(() => {
+    c.A.openSecureFramesStreamVerification(f, n)
+  }, [n, f]);
+  return b && g && !A ? (0, r.jsx)(a.Drp, {
     id: "secure-frames-stream-verification",
     label: p.intl.string(p.t.tjbJbf),
     action: h

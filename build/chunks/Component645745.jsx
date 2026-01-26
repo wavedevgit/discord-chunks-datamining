@@ -1,8 +1,7 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 11810 **/
 /** chunk id: 645745, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  A: () => m
+  A: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,52 +14,52 @@ var Chunk503698 = require("./503698.js"),
   Chunk243056 = require("./243056.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk592454 = require("./592454.js");
-let m = function(e) {
+let j = function(e) {
   let {
     channelId: t,
     formField: n,
     index: i,
-    isDragEnabled: m,
+    isDragEnabled: j,
     isDropHovered: p,
-    onDrop: f,
-    onEdit: b,
-    onRemove: h,
-    canRemove: x,
-    title: j,
-    actionsLocation: _,
-    fieldStyle: O
-  } = e, v = n.values, y = v.slice(0, 1), A = v.length - y.length;
+    onDrop: b,
+    onEdit: y,
+    onRemove: m,
+    canRemove: O,
+    title: v,
+    actionsLocation: x,
+    fieldStyle: h
+  } = e, g = n.values, P = g.slice(0, 1), w = g.length - P.length;
   return (0, r.jsxs)(d.A, {
     field: n,
     index: i,
-    isDragEnabled: m,
+    isDragEnabled: j,
     isDropHovered: p,
-    onDrop: f,
-    onEdit: b,
-    onRemove: h,
-    title: j,
-    canRemove: x,
-    actionsLocation: _,
-    fieldStyle: O,
-    children: [(0, r.jsx)(c.IJ, {
-      terms: y,
+    onDrop: b,
+    onEdit: y,
+    onRemove: m,
+    title: v,
+    canRemove: O,
+    actionsLocation: x,
+    fieldStyle: h,
+    children: [(0, r.jsx)(a.IJ, {
+      terms: P,
       channelId: t
-    }), 0 !== A && (0, r.jsxs)(a.DUT, {
-      className: l()(g.vs, g.vk),
-      onClick: b,
-      children: [(0, r.jsx)(a.Text, {
+    }), 0 !== w && (0, r.jsxs)(c.DUT, {
+      className: l()(f.vs, f.vk),
+      onClick: y,
+      children: [(0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: g.vk,
+        className: f.vk,
         children: u.intl.format(u.t.jnhD0S, {
-          count: A
+          count: w
         })
-      }), (0, r.jsx)(o.A, {
-        className: g.IC,
+      }), (0, r.jsx)(s.A, {
+        className: f.IC,
         height: 14,
         width: 14,
-        color: s.A.unsafe_rawColors.WHITE.css
+        color: o.A.unsafe_rawColors.WHITE.css
       })]
-    }), (0, r.jsx)(c.xs, {
+    }), (0, r.jsx)(a.xs, {
       disabled: true,
       checked: false
     })]

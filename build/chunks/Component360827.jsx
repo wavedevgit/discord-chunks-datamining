@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 360827, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -32,12 +32,12 @@ function E(e) {
   let {
     guildId: t,
     prompts: n
-  } = e, s = (0, l.bG)([g.A], () => g.A.editedDefaultChannelIds), [c, u] = (0, d.Lx)(t, n, [...s]), m = c.length, p = c.length + u.length, f = m / p * 100, b = Math.max(Math.ceil(85 * p / 100) - m, 0), [h, x] = i.useState(false), j = h ? a.abt : a.tN5;
+  } = e, s = (0, l.bG)([g.A], () => g.A.editedDefaultChannelIds), [c, u] = (0, d.Lx)(t, n, [...s]), m = c.length, p = c.length + u.length, f = m / p * 100, h = Math.max(Math.ceil(85 * p / 100) - m, 0), [b, x] = i.useState(false), j = b ? a.abt : a.tN5;
   return (0, r.jsxs)("div", {
     className: A.Kf,
     children: [(0, r.jsxs)(a.DUT, {
       className: A.a9,
-      onClick: () => x(!h),
+      onClick: () => x(!b),
       children: [(0, r.jsxs)("div", {
         className: A.Vn,
         children: [f <= 85 && (0, r.jsx)(a.EpV, {
@@ -64,7 +64,7 @@ function E(e) {
           className: A.OW
         })]
       })]
-    }), h ? (0, r.jsxs)("div", {
+    }), b ? (0, r.jsxs)("div", {
       className: A.k$,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/semibold",
@@ -90,7 +90,7 @@ function E(e) {
         })
       }), (0, r.jsx)("div", {
         className: A.fg,
-        children: b > 0 ? (0, r.jsxs)(r.Fragment, {
+        children: h > 0 ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.EpV, {
             size: "xs",
             color: "currentColor"
@@ -98,7 +98,7 @@ function E(e) {
             variant: "text-xs/normal",
             color: "text-muted",
             children: y.intl.format(y.t.sX8890, {
-              numChannels: b
+              numChannels: h
             })
           })]
         }) : (0, r.jsx)(a.Text, {
@@ -125,9 +125,9 @@ function S(e) {
   let {
     guild: t,
     saveOnClose: n
-  } = e, s = (0, l.bG)([c.A], () => c.A.isLoading()), o = (0, l.bG)([h.A], () => h.A.editedOnboardingPrompts), d = (0, l.bG)([h.A], () => h.A.advancedMode), u = i.useRef(false);
+  } = e, s = (0, l.bG)([c.A], () => c.A.isLoading()), o = (0, l.bG)([b.A], () => b.A.editedOnboardingPrompts), d = (0, l.bG)([b.A], () => b.A.advancedMode), u = i.useRef(false);
   i.useEffect(() => {
-    s || u.current || (u.current = true, d || 0 !== o.length || (0, b.WC)(t, [(0, v.Mc)()], false))
+    s || u.current || (u.current = true, d || 0 !== o.length || (0, h.WC)(t, [(0, v.Mc)()], false))
   });
   let g = i.useRef(t);
   if (i.useEffect(() => {
@@ -135,14 +135,14 @@ function S(e) {
     }), i.useEffect(() => {
       if (n) return () => {
         let e = g.current;
-        null != e && (0, b.dm)(e, {
+        null != e && (0, h.dm)(e, {
           ignoreDefaultPrompt: true
         }).then(() => (0, p.fH)(e.id)).catch(() => {})
       }
     }, [n]), null == t) return null;
   let f = async () => {
     try {
-      await (0, b.dm)(t), await (0, m.X$)(t.id)
+      await (0, h.dm)(t), await (0, m.X$)(t.id)
     } catch (e) {}
   };
   return (0, r.jsxs)(r.Fragment, {
@@ -195,17 +195,17 @@ function S(e) {
 
 function I() {
   let e = (0, l.bG)([u.A], () => u.A.getGuild()),
-    t = (0, l.bG)([h.A], () => h.A.submitting),
+    t = (0, l.bG)([b.A], () => b.A.submitting),
     n = (0, l.bG)([f.A], () => f.A.isSubmitting()),
     i = (0, l.bG)([f.A], () => f.A.hasChanges());
   return null == e ? null : (0, r.jsx)(s.A, {
     onSave: async () => {
       try {
-        await (0, b.dm)(e), i && await (0, p.q3)(e.id)
+        await (0, h.dm)(e), i && await (0, p.q3)(e.id)
       } catch (e) {}
     },
     onReset: () => {
-      (0, b.P3)(), i && (0, p.p2)()
+      (0, h.P3)(), i && (0, p.p2)()
     },
     submitting: t || i && n,
     onSaveText: y.intl.string(y.t["R3BPH+"])

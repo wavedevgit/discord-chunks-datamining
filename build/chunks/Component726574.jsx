@@ -113,7 +113,7 @@ function b(e) {
     return null == e ? true : e.name
   }, [m, S]), N = n.useMemo(() => null != b ? b : true, [b]), _ = n.useMemo(() => null != y ? String(y) : true, [y]);
   return (0, l.jsxs)(o.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated": true,
     navId: "clips-filters-context",
     "aria-label": p.intl.string(p.t.X7yRDm),
     onClose: s.Z_,

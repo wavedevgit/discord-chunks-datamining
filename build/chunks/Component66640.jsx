@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 66640, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -48,31 +48,31 @@ function f(e, t) {
   }), e
 }
 
-function b(e) {
-  var t, n, b;
+function h(e) {
+  var t, n, h;
   let {
-    rule: h,
+    rule: b,
     onChangeRule: x
   } = e, j = i.useCallback(e => {
-    x(f(p({}, h), {
-      triggerMetadata: f(p({}, h.triggerMetadata), {
+    x(f(p({}, b), {
+      triggerMetadata: f(p({}, b.triggerMetadata), {
         allowList: e
       })
     }))
-  }, [x, h]);
+  }, [x, b]);
   return (0, r.jsxs)("div", {
     className: m.sp,
     children: [(0, r.jsxs)(c.A, {
       step: 1,
       header: g.intl.string(g.t.CX5Yfc),
       children: [(0, r.jsx)(s.A, {
-        rule: h,
+        rule: b,
         onChangeRule: x
       }), (0, r.jsx)(l.A, {
         onChange: j,
-        initialValue: null == (t = h.triggerMetadata) ? true : t.allowList,
+        initialValue: null == (t = b.triggerMetadata) ? true : t.allowList,
         maxWordCount: u.hG,
-        collapsed: (null == (n = h.triggerMetadata) ? true : n.allowList) == null || (null == (b = h.triggerMetadata) ? true : b.allowList.length) === 0
+        collapsed: (null == (n = b.triggerMetadata) ? true : n.allowList) == null || (null == (h = b.triggerMetadata) ? true : h.allowList.length) === 0
       })]
     }), (0, r.jsx)(d.A, {
       type: d.A.Type.ARROW_DOWN
@@ -80,7 +80,7 @@ function b(e) {
       step: 2,
       header: g.intl.string(g.t["18TOiQ"]),
       children: (0, r.jsx)(a.A, {
-        rule: h,
+        rule: b,
         onChangeRule: x
       })
     }), (0, r.jsx)(d.A, {
@@ -89,7 +89,7 @@ function b(e) {
       step: 3,
       header: g.intl.string(g.t.eq3gjh),
       children: (0, r.jsx)(o.A, {
-        rule: h,
+        rule: b,
         onChangeRule: x
       })
     })]

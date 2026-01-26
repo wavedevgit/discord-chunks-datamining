@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 92911, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -76,7 +76,7 @@ let M = "WELCOME_CHANNEL",
         guildId: a,
         welcomeChannel: o,
         onEdit: f,
-        onChannelReorder: b,
+        onChannelReorder: h,
         isDropHovered: _,
         index: O
       } = e,
@@ -85,7 +85,7 @@ let M = "WELCOME_CHANNEL",
       A = (0, u.bG)([j.Ay], () => null != o.emoji_id ? j.Ay.getUsableCustomEmojiById(o.emoji_id) : null),
       S = null != y && I.MJ(P.xBc.VIEW_CHANNEL, y),
       T = null != (t = (0, x.gU)(y)) ? t : g.N$i,
-      C = (0, h.Ay)(y, false),
+      C = (0, b.Ay)(y, false),
       R = () => {
         (0, g.mMO)(async () => {
           let {
@@ -108,16 +108,16 @@ let M = "WELCOME_CHANNEL",
           index: O
         },
         end: (e, t) => {
-          null == e || t.didDrop() || b(e.channel, null, true)
+          null == e || t.didDrop() || h(e.channel, null, true)
         }
       }),
       [, B] = (0, d.H)({
         accept: M,
         hover: e => {
-          b(e.channel, O, false)
+          h(e.channel, O, false)
         },
         drop: e => {
-          b(e.channel, O, true)
+          h(e.channel, O, true)
         }
       });
     return i.useLayoutEffect(() => (U(B(v)), () => {
@@ -148,7 +148,7 @@ let M = "WELCOME_CHANNEL",
           return t => (0, r.jsx)(e, k(L({}, t), {
             guildId: a,
             welcomeChannel: o,
-            onChannelReorder: b,
+            onChannelReorder: h,
             onShowDeleteModal: R,
             index: O
           }))
@@ -186,7 +186,7 @@ let M = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: l,
       originalWelcomeSettings: s
-    } = (0, u.bG)([A.A], () => A.A.getSettingsProps()), a = (0, u.bG)([b.A], () => b.A.useReducedMotion), [c, d] = i.useState(null), [m, p] = i.useState(false), [h, x] = i.useState(false), {
+    } = (0, u.bG)([A.A], () => A.A.getSettingsProps()), a = (0, u.bG)([h.A], () => h.A.useReducedMotion), [c, d] = i.useState(null), [m, p] = i.useState(false), [b, x] = i.useState(false), {
       description: j,
       channels: E,
       enabled: I
@@ -264,7 +264,7 @@ let M = "WELCOME_CHANNEL",
         onToggle: I || (null == E ? true : E.length) !== 0 ? () => {
           M(!I)
         } : true,
-        animateStatus: h,
+        animateStatus: b,
         firstLine: I ? D.intl.string(D.t.JbB7Ql) : D.intl.string(D.t["/bd0Qv"]),
         secondLine: I ? D.intl.string(D.t.TA1g7z) : D.intl.string(D.t.nc6r1B)
       }), (0, r.jsxs)("div", {

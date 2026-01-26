@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 113266, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -79,7 +79,7 @@ function V() {
   let e = (0, c.bG)([D.A], () => D.A.getProps().guild),
     {
       analyticsLocations: t
-    } = (0, x.Ay)(h.A.GUILD_SETTINGS_SOUNDBOARD);
+    } = (0, x.Ay)(b.A.GUILD_SETTINGS_SOUNDBOARD);
   return null == e ? null : (0, r.jsx)(x.f5, {
     value: t,
     children: (0, r.jsxs)(m.BJc, {
@@ -214,14 +214,14 @@ function X(e) {
     return [null != (e = v.A.getSoundsForGuild(t.id)) ? e : k.pD, v.A.isFetchingSounds() || v.A.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: a
-  } = (0, _.nr)(t), o = i.useRef(null), d = (0, b.Ay)(), u = t.premiumTier, g = (0, P.tO)(t, l, u);
+  } = (0, _.nr)(t), o = i.useRef(null), d = (0, h.Ay)(), u = t.premiumTier, g = (0, P.tO)(t, l, u);
   i.useEffect(() => {
     (0, O.E7)()
   }, []);
   let p = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, y.A)(t.soundId)), e), {}), [l]),
     f = 0 === l.length && !s;
 
-  function h(e) {
+  function b(e) {
     var t;
     null == (t = o.current) || t.pause();
     let n = p[e.soundId];
@@ -301,7 +301,7 @@ function X(e) {
           sound: e,
           isPlaying: false,
           guild: t,
-          onPlaySound: h
+          onPlaySound: b
         }, e.soundId))]
       })]
     })]
@@ -317,13 +317,13 @@ function J(e) {
   } = e, {
     soundId: d,
     name: g,
-    user: b,
-    userId: h,
+    user: h,
+    userId: b,
     emojiId: j,
     emojiName: v
   } = t, {
     analyticsLocations: y
-  } = (0, x.Ay)(), A = (0, c.bG)([I.default], () => null != b ? b : I.default.getUser(h), [h, b]), {
+  } = (0, x.Ay)(), A = (0, c.bG)([I.default], () => null != h ? h : I.default.getUser(b), [b, h]), {
     canManageGuildExpression: S
   } = (0, _.nr)(o), T = i.useMemo(() => S(t), [t, S]), P = null != j || null != v, [w, D] = i.useState(false), G = (0, E.v)(t, o.id);
   async function L() {
@@ -339,9 +339,9 @@ function J(e) {
   i.useEffect(() => {
     null == A && e();
     async function e() {
-      await (0, p.wz)(h)
+      await (0, p.wz)(b)
     }
-  }, [A, h]);
+  }, [A, b]);
   let k = i.useCallback(() => {
       null != A && (0, N.openUserProfileModal)({
         userId: A.id,

@@ -34,20 +34,18 @@ function x(e) {
     channelId: l,
     guildId: o,
     context: a
-  } = e, s = (0, m.A)({
+  } = e, s = (0, v.A)({
     userId: n,
     guildId: o,
     channelId: l,
     showGuildProfile: true,
-    icon: (0, r.jsx)(i.nys, {
-      size: "sm"
-    }),
-    label: y.intl.string(y.t.iXAna6)
-  }), d = (0, p.A)(n, a, i.oyn), f = (0, v.A)(n), g = (0, O.A)(n), A = (0, c.A)(n), j = (0, u.A)(n), h = (0, b.A)();
+    icon: i.nys,
+    label: h.intl.string(h.t.iXAna6)
+  }), d = (0, j.A)(n, a, i.oyn), f = (0, m.A)(n), g = (0, O.A)(n), A = (0, c.A)(n), p = (0, u.A)(n), y = (0, b.A)();
   return [(0, r.jsxs)(i.rXV, {
     children: [s, d]
   }), (0, r.jsxs)(i.rXV, {
-    children: [f, g, A, j, t && h]
+    children: [f, g, A, p, t && y]
   })]
 }
 
@@ -60,9 +58,9 @@ function D(e, t, n) {
     }),
     o = (0, f.A)({
       id: e.id,
-      label: y.intl.string(y.t["/AXYnE"])
+      label: h.intl.string(h.t["/AXYnE"])
     }),
-    a = (0, j.A)({
+    a = (0, p.A)({
       user: e,
       guildId: n,
       channelId: t,
@@ -93,15 +91,15 @@ let E = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     userId: t.id,
     channelId: c,
     context: s
-  }), A = D(t, c), j = (0, f.A)({
+  }), A = D(t, c), p = (0, f.A)({
     id: t.id,
-    label: y.intl.string(y.t["/AXYnE"])
+    label: h.intl.string(h.t["/AXYnE"])
   });
   return (0, r.jsx)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "user-context",
     onClose: l.Z_,
-    "aria-label": y.intl.string(y.t.liqwPJ),
+    "aria-label": h.intl.string(h.t.liqwPJ),
     onSelect: o,
     onInteraction: a,
     variant: "fixed",
@@ -109,11 +107,11 @@ let E = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
       children: [b, !d && (0, r.jsx)(i.rXV, {
         children: (0, r.jsx)(i.Drp, {
           id: "more-options",
-          label: y.intl.string(y.t.PdRCRg),
+          label: h.intl.string(h.t.PdRCRg),
           children: A
         })
       }), d && (0, r.jsx)(i.rXV, {
-        children: j
+        children: p
       })]
     })
   })

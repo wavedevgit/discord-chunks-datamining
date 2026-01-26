@@ -54,7 +54,7 @@ let w = {
       compact: s,
       onSelectRow: m,
       onResetForNewMembers: p
-    } = e, f = (0, c.bG)([C.A], () => C.A.useReducedMotion), _ = (0, u.useHasAnyModalOpen)(), P = (0, b.j)(), [R, V] = l.useState(false), [E, M] = l.useState(false), I = !_ && R && E;
+    } = e, b = (0, c.bG)([C.A], () => C.A.useReducedMotion), _ = (0, u.useHasAnyModalOpen)(), P = (0, f.j)(), [R, V] = l.useState(false), [E, M] = l.useState(false), I = !_ && R && E;
     l.useEffect(() => {
       P || (V(false), M(false))
     }, [P]), l.useLayoutEffect(() => {
@@ -84,7 +84,7 @@ let w = {
         enter: S,
         config: D
       }),
-      k = !f && a === x.IY.LOADING;
+      k = !b && a === x.IY.LOADING;
     return (0, r.jsxs)("table", {
       className: o()(H.tp, i),
       children: [(0, r.jsx)(y.A, {
@@ -128,17 +128,17 @@ let w = {
       compact: s,
       onSelectRow: u,
       onResetForNewMembers: d
-    } = e, C = (0, c.cf)([j.A], () => j.A.getPaginationStateByGuildId(i.id), [i.id]), [b] = (0, c.bG)([j.A], () => j.A.getPagedMembersByGuildId(i.id), [i.id], p.D);
+    } = e, C = (0, c.cf)([j.A], () => j.A.getPaginationStateByGuildId(i.id), [i.id]), [f] = (0, c.bG)([j.A], () => j.A.getPagedMembersByGuildId(i.id), [i.id], p.D);
     l.useEffect(() => {
       (0, g.uO)(i.id)
     }, [i.id]);
-    let h = l.useDeferredValue(null != (t = b[C.currentPage]) ? t : []),
+    let h = l.useDeferredValue(null != (t = f[C.currentPage]) ? t : []),
       {
         analyticsLocations: x
       } = (0, m.Ay)(),
       y = null != (n = null == x ? true : x[0]) ? n : null;
     return l.useEffect(() => {
-      (0, f.KW)(i.id, y)
+      (0, b.KW)(i.id, y)
     }, [i.id, y]), (0, r.jsx)(P, {
       members: h,
       guild: i,

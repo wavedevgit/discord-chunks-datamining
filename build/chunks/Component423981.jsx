@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 423981, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -71,7 +71,7 @@ let N = function(e, t, n) {
     })
   },
   I = () => {
-    let [e, t] = i.useState(false), n = (0, a.bG)([h.A], () => h.A.getGuildId());
+    let [e, t] = i.useState(false), n = (0, a.bG)([b.A], () => b.A.getGuildId());
     return (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: A.XU,
@@ -80,7 +80,7 @@ let N = function(e, t, n) {
         text: y.intl.string(y.t.Uskgxx),
         onClick: () => {
           let e, r;
-          t(true), (b.default.track(O.HAw.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
+          t(true), (h.default.track(O.HAw.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
             guild_id: n
           }), e = null == n ? O.dSh.DEVELOPER_PORTAL : O.dSh.DEVELOPER_PORTAL_GUILD_ANALYTICS(n), r = (0, l.A)(), o.Bo.post({
             url: O.Rsh.HANDOFF,
@@ -103,7 +103,7 @@ let N = function(e, t, n) {
     })
   },
   T = () => {
-    let e = (0, a.bG)([h.A], () => h.A.getGuildId()),
+    let e = (0, a.bG)([b.A], () => b.A.getGuildId()),
       t = (0, a.bG)([m.A], () => m.A.getMemberCount(e)),
       n = (0, a.bG)([p.A], () => p.A.getGuild(e)),
       l = (0, a.bG)([g.default], () => g.default.locale),
@@ -114,7 +114,7 @@ let N = function(e, t, n) {
         analytics: null != e ? j.A.getOverviewAnalytics(e) : null,
         errorCode: j.A.getError()
       })),
-      b = (0, a.bG)([f.A], () => f.A.getSettings().enabled),
+      h = (0, a.bG)([f.A], () => f.A.getSettings().enabled),
       T = null == t || null == n || null != t && t < 500 && null != n && !n.features.has(O.GuildFeatures.PARTNERED) && !n.features.has(O.GuildFeatures.VERIFIED);
     i.useEffect(() => {
       null == e || T || ((0, x.p9)(e), (0, x.fe)(e), (0, x._z)(e))
@@ -155,7 +155,7 @@ let N = function(e, t, n) {
           variant: "text-sm/normal",
           children: y.intl.string(y.t.A5vswv)
         }), (0, r.jsx)(I, {})]
-      }), b ? (0, r.jsx)("div", {
+      }), h ? (0, r.jsx)("div", {
         className: A.Rc,
         children: (0, r.jsx)(d.A, {})
       }) : C]

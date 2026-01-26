@@ -17,15 +17,15 @@ function u(t) {
     src: e,
     onSelect: n
   } = t, u = (0, a.A)(e), d = (0, c.A)(e, null);
-  return o.isPlatformEmbedded ? (0, i.jsxs)(l.W1t, {
-    "data-menu-migration-ready": true,
+  return o.isPlatformEmbedded ? (0, l.jsxs)(i.W1t, {
+    "data-menu-all-icons-auto": true,
     navId: "image-context",
     onClose: r.Z_,
     "aria-label": s.intl.string(s.t.Zow2V5),
     onSelect: n,
-    children: [(0, i.jsx)(l.rXV, {
+    children: [(0, l.jsx)(i.rXV, {
       children: u
-    }), (0, i.jsx)(l.rXV, {
+    }), (0, l.jsx)(i.rXV, {
       children: d
     })]
   }) : null

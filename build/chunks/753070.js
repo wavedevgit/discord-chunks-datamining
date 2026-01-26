@@ -157,11 +157,14 @@ let d = {
     fps: 5
   }];
 
-function p(e, t) {
+function p(e, t, n) {
   return {
     value: e,
     get label() {
-      return null != t ? t() : e
+      return null != t ? t() : String(e)
+    },
+    get subtext() {
+      return null != n ? n() : true
     }
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 533350, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -50,7 +50,7 @@ let O = function() {
         }), (0, r.jsx)("div", {
           className: _.yF
         })]
-      }), (0, r.jsx)(b.h, {
+      }), (0, r.jsx)(h.h, {
         canManageGuild: n,
         guild: t
       }), true !== O && (0, r.jsxs)(r.Fragment, {
@@ -75,7 +75,7 @@ let O = function() {
       }), true === n && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: _.yF
-        }), (0, r.jsx)(h.E, {
+        }), (0, r.jsx)(b.E, {
           guildId: t.id
         })]
       })]

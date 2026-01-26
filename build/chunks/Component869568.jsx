@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 869568, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -128,7 +128,7 @@ function D(e) {
   }
 
   function j(e) {
-    let i = h.default.getUser(t.id);
+    let i = b.default.getUser(t.id);
     null != i && (0, u.L3)(e, async () => {
       let {
         default: e
@@ -142,7 +142,7 @@ function D(e) {
   }
   return (0, m.E)(f, "GuildSettingsRolesEditMembers"), (0, r.jsx)("div", {
     className: C.Q,
-    children: (0, r.jsx)(b.A, {
+    children: (0, r.jsx)(h.A, {
       targetElementRef: p,
       userId: t.id,
       guildId: l,
@@ -224,13 +224,13 @@ function L(e) {
     analyticsLocations: g
   } = (0, f.Ay)(p.A.MEMBER_LIST), m = i.useMemo(() => l.trim().toLowerCase(), [l]);
   (0, v.cG)(t, m);
-  let b = i.useMemo(() => c.filter(e => (0, v.EF)(m, e)), [c, m]),
-    h = i.useMemo(() => b.sort((e, t) => e.name.localeCompare(t.name)), [b]);
+  let h = i.useMemo(() => c.filter(e => (0, v.EF)(m, e)), [c, m]),
+    b = i.useMemo(() => h.sort((e, t) => e.name.localeCompare(t.name)), [h]);
   return (0, r.jsx)(f.f5, {
     value: g,
     children: (0, r.jsx)(d.Eie, {
       className: T.p_,
-      sections: [Math.max(b.length, 1)],
+      sections: [Math.max(h.length, 1)],
       sectionHeight: s,
       renderSection: () => (0, r.jsx)("div", {
         style: {
@@ -245,11 +245,11 @@ function L(e) {
         let {
           row: i
         } = e;
-        if (0 === h.length) return (0, r.jsx)(G, {
+        if (0 === b.length) return (0, r.jsx)(G, {
           handleAddClick: u,
           locked: a
         }, "empty");
-        let l = h[i];
+        let l = b[i];
         return (0, r.jsx)(D, {
           member: l,
           guildId: t,
@@ -298,8 +298,8 @@ function M(e) {
     headerRef: p
   } = (0, y.A)(0), {
     scrolledToTop: f,
-    handleScroll: b
-  } = (0, A.u)(), h = l.managed || a, _ = (0, v.K5)(t.id, l.id), O = (0, o.bG)([j.A], () => {
+    handleScroll: h
+  } = (0, A.u)(), b = l.managed || a, _ = (0, v.K5)(t.id, l.id), O = (0, o.bG)([j.A], () => {
     var e, n;
     return null != (e = null == (n = j.A.getRoleMemberCount(t.id)) ? true : n[l.id]) ? e : 0
   }) > _.length, E = () => {
@@ -336,7 +336,7 @@ function M(e) {
           }), (0, r.jsx)(k, {
             query: u,
             setQuery: g,
-            locked: h,
+            locked: b,
             handleAddClick: E
           }), O ? (0, r.jsx)(d.po8, {
             className: T.v6,
@@ -350,8 +350,8 @@ function M(e) {
       query: u,
       guildId: t.id,
       roleId: l.id,
-      locked: h,
-      onScroll: b,
+      locked: b,
+      onScroll: h,
       roleMembers: _,
       handleAddClick: E
     })]

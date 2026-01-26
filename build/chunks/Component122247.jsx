@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 122247, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -48,12 +48,12 @@ function f(e, t) {
   }), e
 }
 
-function b(e) {
+function h(e) {
   var t, n;
   let {
-    rule: b,
-    onChangeRule: h
-  } = e, [x, j] = i.useState(null == (t = b.triggerMetadata) ? true : t.mentionTotalLimit), _ = (0, s._)(b.guildId, false);
+    rule: h,
+    onChangeRule: b
+  } = e, [x, j] = i.useState(null == (t = h.triggerMetadata) ? true : t.mentionTotalLimit), _ = (0, s._)(h.guildId, false);
   return (0, r.jsxs)("div", {
     className: m.sp,
     children: [(0, r.jsxs)(c.A, {
@@ -84,8 +84,8 @@ function b(e) {
           children: (0, r.jsx)(l.lw3, {
             value: x,
             onChange: e => {
-              j(e), h(f(p({}, b), {
-                triggerMetadata: f(p({}, b.triggerMetadata), {
+              j(e), b(f(p({}, h), {
+                triggerMetadata: f(p({}, h.triggerMetadata), {
                   mentionTotalLimit: e
                 })
               }))
@@ -119,14 +119,14 @@ function b(e) {
           children: (0, r.jsx)(l.DUT, {
             onClick: _ ? () => {
               var e, t;
-              return t = !(null == (e = b.triggerMetadata) ? true : e.mentionRaidProtectionEnabled), void h(f(p({}, b), {
-                triggerMetadata: f(p({}, b.triggerMetadata), {
+              return t = !(null == (e = h.triggerMetadata) ? true : e.mentionRaidProtectionEnabled), void b(f(p({}, h), {
+                triggerMetadata: f(p({}, h.triggerMetadata), {
                   mentionRaidProtectionEnabled: t
                 })
               }))
             } : true,
             children: (0, r.jsx)(l.P7L, {
-              checked: null == (n = b.triggerMetadata) ? true : n.mentionRaidProtectionEnabled,
+              checked: null == (n = h.triggerMetadata) ? true : n.mentionRaidProtectionEnabled,
               disabled: !_
             })
           })
@@ -138,8 +138,8 @@ function b(e) {
       step: 2,
       header: g.intl.string(g.t["18TOiQ"]),
       children: (0, r.jsx)(a.A, {
-        rule: b,
-        onChangeRule: h
+        rule: h,
+        onChangeRule: b
       })
     }), (0, r.jsx)(d.A, {
       type: d.A.Type.CROSS
@@ -147,8 +147,8 @@ function b(e) {
       step: 3,
       header: g.intl.string(g.t.eq3gjh),
       children: (0, r.jsx)(o.A, {
-        rule: b,
-        onChangeRule: h
+        rule: h,
+        onChangeRule: b
       })
     })]
   })

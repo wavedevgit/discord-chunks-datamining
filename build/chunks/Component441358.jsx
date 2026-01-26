@@ -1,7 +1,7 @@
 /** Chunk was on 35894 **/
 /** chunk id: 441358, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => D
+  default: () => D
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -110,7 +110,7 @@ function S(e) {
           width: t
         });
       case h.UP.MANUAL_MEMBER_VERIFICATION:
-        return (0, r.jsx)(b.A, {
+        return (0, r.jsx)(f.A, {
           className: v.Kk,
           height: t,
           width: t
@@ -147,7 +147,7 @@ function D(e) {
     onClose: i
   } = e, a = (0, d.bG)([j.A], () => j.A.getSearchStateByGuildId(n), [n], u()), {
     inviteCodes: c
-  } = (0, x.N)(n), b = (0, d.bG)([m.A], () => m.A.getGuild(n)), D = null != (t = null == b ? true : b.vanityURLCode) ? t : null, [N, L] = l.useState(false), {
+  } = (0, x.N)(n), f = (0, d.bG)([m.A], () => m.A.getGuild(n)), D = null != (t = null == f ? true : f.vanityURLCode) ? t : null, [N, L] = l.useState(false), {
     selectedSourceInviteCode: P,
     selectedJoinSourceType: R
   } = a, V = null != R && R !== h.UP.UNSPECIFIED, E = (0, d.bG)([p.A], () => p.A.hideInstantInvites, []);
@@ -185,7 +185,7 @@ function D(e) {
       }), M(e)
     }, [n, M]);
   return (0, r.jsx)(C.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-needs-migration": true,
     navId: "members-table-join-method-menu",
     onClose: () => {
       i()
@@ -212,7 +212,7 @@ function D(e) {
         }))
       }), A.map(e => (0, r.jsx)(C.iDA, {
         id: "join-source-type-option-".concat(e),
-        label: t => (0, r.jsx)(S, w(H({}, t), {
+        void_label: t => (0, r.jsx)(S, w(H({}, t), {
           type: e,
           vanityUrl: D,
           text: (0, h.CI)(e, D, E)
@@ -240,7 +240,7 @@ function D(e) {
         group: "join-source-type-options"
       }, "join-source-type-option-all"), c.map(e => (0, r.jsx)(C.iDA, {
         id: "join-source-type-option-".concat(e),
-        label: t => (0, r.jsx)(S, w(H({}, t), {
+        void_label: t => (0, r.jsx)(S, w(H({}, t), {
           type: h.UP.INVITE,
           vanityUrl: D,
           text: e
@@ -271,7 +271,7 @@ function D(e) {
                 vanityUrl: D
               }))
             }) : null]
-          }), V ? (0, r.jsx)(f.A, {
+          }), V ? (0, r.jsx)(b.A, {
             background: v.__invalid_radio,
             foreground: v.QE,
             width: 16,

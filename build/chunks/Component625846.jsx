@@ -505,8 +505,8 @@ function ew(e) {
     getItemKey: e8,
     renderGridSection: e6,
     renderGridItem: e7,
-    getGridSectionHeight: e2,
-    getSectionProps: e5,
+    getGridSectionHeight: e5,
+    getSectionProps: e2,
     handleGridFocus: te
   } = function(e) {
     let {
@@ -715,11 +715,11 @@ function ew(e) {
             columns: eD,
             sections: eB,
             getItemKey: e8,
-            getSectionHeight: e2,
+            getSectionHeight: e5,
             getItemHeight: ta,
             renderSection: e6,
             renderItem: e7,
-            getSectionProps: e5,
+            getSectionProps: e2,
             onScroll: y ? tt : true,
             chunkSize: 350
           }, tc, e), H)

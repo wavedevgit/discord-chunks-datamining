@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 857802, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -57,11 +57,11 @@ function T(e) {
     error: m
   } = (0, d.A)(), {
     fetchSubscriptionsSettings: p
-  } = (0, j.XE)(), f = (0, _.gN)(), b = i.useMemo(() => n.map(e => ({
+  } = (0, j.XE)(), f = (0, _.gN)(), h = i.useMemo(() => n.map(e => ({
     id: e.id,
     label: e.name,
     value: e.id
-  })), [n]), h = async () => {
+  })), [n]), b = async () => {
     await u(t, o, A.S7.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, O.E)({
       title: N.intl.string(N.t["AP/2qe"]),
       body: N.intl.string(N.t.kHMgaK)
@@ -72,16 +72,16 @@ function T(e) {
       className: S.xF,
       children: [(0, r.jsx)(a.l6P, {
         selectionMode: "single",
-        options: b,
+        options: h,
         placeholder: N.intl.string(N.t.QXf93A),
         value: o,
-        disabled: 0 === b.length || f || !l,
+        disabled: 0 === h.length || f || !l,
         onSelectionChange: c,
         label: N.intl.string(N.t.QXf93A),
         hideLabel: true
       }), (0, r.jsx)(s.$nd, {
         text: N.intl.string(N.t["9HU3ZV"]),
-        onClick: h,
+        onClick: b,
         loading: g,
         disabled: null == o || f || !l
       })]
@@ -95,7 +95,7 @@ function T(e) {
 let C = e => {
   let {
     guild: t
-  } = e, n = (0, l.bG)([b.default], () => b.default.getCurrentUser()), s = (0, f.bM)(t, n), d = (0, c.ME)(t), j = (0, l.bG)([h.A], () => h.A.isFocused()), {
+  } = e, n = (0, l.bG)([h.default], () => h.default.getCurrentUser()), s = (0, f.bM)(t, n), d = (0, c.ME)(t), j = (0, l.bG)([b.A], () => b.A.isFocused()), {
     teams: _,
     loading: O
   } = (0, p.A)({

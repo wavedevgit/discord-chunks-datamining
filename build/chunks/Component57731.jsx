@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 57731, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,7 +20,7 @@ function p() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, s.O)(), [, p] = a.$7(e, t), [f, b] = a.xR(e, t), h = a.It(e, t);
+  } = (0, s.O)(), [, p] = a.$7(e, t), [f, h] = a.xR(e, t), b = a.It(e, t);
 
   function x() {
     (0, i.mMO)(async () => {
@@ -81,7 +81,7 @@ function p() {
         disabled: j,
         children: (0, r.jsx)(d.A, {
           value: f,
-          onChange: b,
+          onChange: h,
           disabled: j
         })
       }), (0, r.jsx)(i.D0$, {
@@ -92,7 +92,7 @@ function p() {
           direction: "horizontal",
           gap: 16,
           children: [(0, r.jsx)(u.A, {
-            role: h,
+            role: b,
             "aria-label": g.intl.string(g.t.mD1oGB),
             onClick: x,
             disabled: j
@@ -109,12 +109,12 @@ function p() {
           "aria-hidden": true,
           children: [(0, r.jsx)(c.A, {
             guildId: t,
-            role: h,
+            role: b,
             className: m.z,
             theme: "light"
           }), (0, r.jsx)(c.A, {
             guildId: t,
-            role: h,
+            role: b,
             className: m.z,
             theme: "dark"
           })]

@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 861410, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => h
 }), require("./228524.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -62,7 +62,7 @@ class f extends(r = Chunk311907.Ay.Store) {
   }
 }
 o(f, "displayName", "WelcomeScreenSettingsStore");
-let b = new f(Chunk73153.h, {
+let h = new f(Chunk73153.h, {
   WELCOME_SCREEN_FETCH_SUCCESS: p,
   WELCOME_SCREEN_UPDATE: p,
   WELCOME_SCREEN_SETTINGS_RESET: function() {

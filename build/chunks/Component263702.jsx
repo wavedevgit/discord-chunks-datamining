@@ -20,23 +20,23 @@ let p = (0, Chunk358367.A)(function(e) {
     user: t,
     analyticsContext: n,
     onSelect: c
-  } = e, s = (0, d.A)({
+  } = e, o = (0, d.A)({
     userId: t.id
-  }), p = (0, o.A)({
+  }), p = (0, s.A)({
     id: t.id,
     label: f.intl.string(f.t["/AXYnE"])
-  }), O = (0, u.A)(t.id), j = t.isNonUserBot();
+  }), A = (0, u.A)(t.id), O = t.isNonUserBot();
   return (0, r.jsx)(a.A, {
     context: n,
     object: b.ZSU.CONTEXT_MENU,
     children: (0, r.jsxs)(i.W1t, {
-      "data-menu-mixed": true,
+      "data-menu-migrated": true,
       navId: "user-context",
       onClose: l.Z_,
       "aria-label": f.intl.string(f.t.liqwPJ),
       onSelect: c,
       children: [(0, r.jsxs)(i.rXV, {
-        children: [!j && s, !j && O]
+        children: [!O && o, !O && A]
       }), (0, r.jsx)(i.rXV, {
         children: p
       })]

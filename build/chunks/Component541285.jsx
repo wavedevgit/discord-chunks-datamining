@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 541285, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -67,14 +67,14 @@ function C(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), u = i.useMemo(() => h.cc({
+  } = e, s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), u = i.useMemo(() => b.cc({
     user: s,
     context: t
   }), [s, t]), g = i.useMemo(() => ({
     [n.id]: T(I({}, n), {
-      permissions: h.x3
+      permissions: b.x3
     })
-  }), [n]), m = i.useMemo(() => h.cc({
+  }), [n]), m = i.useMemo(() => b.cc({
     user: s,
     context: t,
     roles: g
@@ -88,7 +88,7 @@ function C(e) {
         variant: "primary",
         textVariant: "text-sm/semibold",
         onClick: () => (0, x.Y_)(n.id),
-        disabled: a.aI(n.permissions, h.x3) || f || l,
+        disabled: a.aI(n.permissions, b.x3) || f || l,
         text: E.intl.string(E.t["UYq7+O"])
       })
     })
@@ -153,7 +153,7 @@ function w(e) {
     locked: l,
     setSelectedSection: a,
     initialSearchQuery: o
-  } = e, [c, u] = i.useState(null != o ? o : ""), g = i.useMemo(() => b.A.generateGuildPermissionSpec(t), [t]).map(e => T(I({}, e), {
+  } = e, [c, u] = i.useState(null != o ? o : ""), g = i.useMemo(() => h.A.generateGuildPermissionSpec(t), [t]).map(e => T(I({}, e), {
     permissions: e.permissions.filter(e => {
       let t = c.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
@@ -162,7 +162,7 @@ function w(e) {
     headerHeight: m,
     headerRef: p
   } = (0, _.A)(0), {
-    scrolledToTop: h,
+    scrolledToTop: b,
     handleScroll: x
   } = (0, O.u)(), j = i.useRef(false);
   return i.useEffect(() => {
@@ -179,7 +179,7 @@ function w(e) {
       className: S.Q,
       children: [(0, r.jsxs)("div", {
         className: s()(S.wx, S.ln, {
-          [S.l6]: !h
+          [S.l6]: !b
         }),
         ref: p,
         children: [(0, r.jsx)(O.A, {

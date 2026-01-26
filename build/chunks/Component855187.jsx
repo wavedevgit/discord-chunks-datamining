@@ -81,6 +81,10 @@ function _(e, t) {
     id: "change-video-background",
     label: f ? c.intl.string(c.t.mZKxHb) : c.intl.string(c.t["vkV93/"]),
     action: g,
-    icon: f ? a.fBX : a.bMW
+    icon: f ? a.fBX : a.bMW,
+    leadingAccessory: {
+      type: "icon",
+      icon: f ? a.fBX : a.bMW
+    }
   }) : null
 }

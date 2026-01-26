@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 327427, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -27,7 +27,7 @@ function _(e) {
     payoutsByPeriod: t,
     team: n
   } = e, l = (0, c.gN)() ? null : x.intl.format(x.t.d1sCiW, {
-    url: null != n ? h.X7G.DEVELOPER_PORTAL_PAYOUT_SETTINGS(n.id) : null
+    url: null != n ? b.X7G.DEVELOPER_PORTAL_PAYOUT_SETTINGS(n.id) : null
   });
   return 0 === t.length ? (0, r.jsxs)(i.Text, {
     variant: "text-sm/medium",
@@ -73,7 +73,7 @@ let v = e => {
     children: [E && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.A, {
         children: x.intl.format(x.t["2raBCT"], {
-          insightsURL: h.X7G.DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION(a)
+          insightsURL: b.X7G.DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION(a)
         })
       }), (0, r.jsx)(i.hKd, {
         size: 32
@@ -87,7 +87,7 @@ let v = e => {
         className: j.Zs,
         children: [(0, r.jsx)(p.A, {
           label: x.intl.string(x.t.iY1jW3),
-          value: (0, s.$g)(null != (t = A.revenue) ? t : 0, h.Yri.USD),
+          value: (0, s.$g)(null != (t = A.revenue) ? t : 0, b.Yri.USD),
           additionalContent: (0, r.jsx)(p.u, {
             value: A.revenuePctChange,
             isPercent: true
@@ -128,7 +128,7 @@ let v = e => {
     }), (0, r.jsx)(i.nVY, {
       label: x.intl.string(x.t["0n7R2X"]),
       className: j.gy,
-      children: (0, r.jsx)(b.A, {
+      children: (0, r.jsx)(h.A, {
         guildId: a,
         allPeriods: y
       })

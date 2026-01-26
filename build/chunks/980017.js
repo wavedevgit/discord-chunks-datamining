@@ -1,4 +1,4 @@
-/** Chunk was on 97887 **/
+/** Chunk was on 67564 **/
 /** chunk id: 980017, original params: e,t,n (module,exports,require) **/
 module.exports = {
   hs: "text-sm/normal__6ec1a",

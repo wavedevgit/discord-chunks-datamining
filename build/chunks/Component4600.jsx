@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 4600, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -30,14 +30,14 @@ function x(e) {
     isFullServerGating: A
   } = (0, c.A)(x), E = (0, s.gN)();
   return (0, r.jsx)(d.A, {
-    title: h.intl.string(h.t.YNw2Sm),
-    description: h.intl.string(h.t.zMW5r0),
+    title: b.intl.string(b.t.YNw2Sm),
+    description: b.intl.string(b.t.zMW5r0),
     children: (0, r.jsxs)(l.BJc, {
       gap: 24,
       children: [(0, r.jsxs)(l.D0$, {
         disabled: E,
-        label: h.intl.string(h.t.DFlDaE),
-        description: h.intl.string(h.t.kHalVA),
+        label: b.intl.string(b.t.DFlDaE),
+        description: b.intl.string(b.t.kHalVA),
         children: [(0, r.jsx)(u.A, {
           channelBenefits: j,
           intangibleBenefits: O,
@@ -57,15 +57,15 @@ function x(e) {
               }));
               return [...t, ...e.filter(e => !n.has(e)).map(e => ({
                 ref_id: e,
-                ref_type: b.bN.CHANNEL
+                ref_type: h.bN.CHANNEL
               }))]
             })
           },
           disabled: E
         })]
       }), (0, r.jsx)(l.D0$, {
-        label: h.intl.string(h.t.S2kKzP),
-        description: h.intl.string(h.t["5a4AxV"]),
+        label: b.intl.string(b.t.S2kKzP),
+        description: b.intl.string(b.t["5a4AxV"]),
         disabled: E,
         children: e => (0, r.jsxs)(r.Fragment, {
           children: [A && (0, r.jsxs)(r.Fragment, {
@@ -78,8 +78,8 @@ function x(e) {
           }), (0, r.jsx)(m.A, {})]
         })
       }), (0, r.jsx)(l.D0$, {
-        label: h.intl.string(h.t.RdwKw7),
-        description: h.intl.string(h.t.zAww7V),
+        label: b.intl.string(b.t.RdwKw7),
+        description: b.intl.string(b.t.zAww7V),
         disabled: E,
         children: (0, r.jsx)(f.A, {})
       }), (0, r.jsx)(p.A, {})]

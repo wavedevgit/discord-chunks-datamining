@@ -104,7 +104,7 @@ function h(e, t) {
         icon: c.nm2,
         leadingAccessory: {
           type: "icon",
-          icon: c.nm2
+          icon: c.ShF
         },
         action: () => {
           b._.dispatchKeyed(m.zOV.TOGGLE_REACTION_POPOUT, e.id, {

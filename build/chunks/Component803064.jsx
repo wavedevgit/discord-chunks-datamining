@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 803064, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -87,9 +87,9 @@ let j = function(e) {
     }) : null,
     disabled: !j,
     onChange: _,
-    hint: h.intl.string(h.t.NyXznh),
+    hint: b.intl.string(b.t.NyXznh),
     enabled: j,
-    maxFileSizeBytes: b.j
+    maxFileSizeBytes: h.j
   });
   return j ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -97,7 +97,7 @@ let j = function(e) {
       children: [(0, r.jsx)(l.Heading, {
         className: x.wx,
         variant: "heading-lg/extrabold",
-        children: h.intl.string(h.t.BBj1nY)
+        children: b.intl.string(b.t.BBj1nY)
       }), (0, r.jsx)(a.A, {
         className: x.ts,
         guild: t,
@@ -111,13 +111,13 @@ let j = function(e) {
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: h.intl.string(h.t.Vwintv)
+          children: b.intl.string(b.t.Vwintv)
         }), (0, r.jsx)("div", {
           className: x.au,
           children: (0, r.jsx)(d.A, {
             onChange: _,
-            maxFileSizeBytes: b.j,
-            text: h.intl.string(h.t.yG2pUi),
+            maxFileSizeBytes: h.j,
+            text: b.intl.string(b.t.yG2pUi),
             size: "md",
             variant: "primary"
           })
@@ -132,7 +132,7 @@ let j = function(e) {
       children: [(0, r.jsx)(l.Heading, {
         className: x.wx,
         variant: "heading-lg/extrabold",
-        children: h.intl.string(h.t.BBj1nY)
+        children: b.intl.string(b.t.BBj1nY)
       }), (0, r.jsx)(a.A, {
         className: x.ts,
         guild: t,
@@ -147,11 +147,11 @@ let j = function(e) {
           variant: "text-sm/normal",
           color: "text-default",
           className: x.tb,
-          children: h.intl.string(h.t.Vwintv)
+          children: b.intl.string(b.t.Vwintv)
         }), (0, r.jsx)(l.Button, {
           variant: "expressive",
           icon: l._Jp,
-          text: h.intl.string(h.t["+7XY31"]),
+          text: b.intl.string(b.t["+7XY31"]),
           onClick: O
         })]
       }), (0, r.jsx)("div", {

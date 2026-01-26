@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 754513, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => b
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk256893 = require("./256893.js");
 let f = Chunk975571.A.getArticleURL(Chunk652215.MVz.GUILD_AUTOMOD_REGEX);
 
-function b(e) {
+function h(e) {
   let {
     hasErrors: t,
     text: n,
@@ -42,7 +42,7 @@ function b(e) {
   })
 }
 
-function h(e) {
+function b(e) {
   var t, n;
   let {
     rule: l,
@@ -50,7 +50,7 @@ function h(e) {
     className: o
   } = e, {
     patterns: g,
-    valueError: h,
+    valueError: b,
     errors: x,
     validatePatternsChanged: j,
     validateEditingValueChanged: _
@@ -87,17 +87,17 @@ function h(e) {
       onChangeNewTagValue: A,
       tagErrors: v,
       maxTags: u.qm
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(h, {
       text: m.intl.format(m.t["PGC/AJ"], {
         helpArticle: f
       }),
-      hasErrors: x.length > 0 || null != h,
+      hasErrors: x.length > 0 || null != b,
       errorText: null != (t = null == (n = x.find(e => {
         let {
           pattern: t
         } = e;
         return t === d.B
-      })) ? true : n.message) ? t : null == h ? true : h.message
+      })) ? true : n.message) ? t : null == b ? true : b.message
     })]
   })
 }

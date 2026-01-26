@@ -26,7 +26,7 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = new Set([Chunk681154.I.LISTENED_SESSION]),
+let g = new Set([Chunk681154.ContentInventoryEntryType.LISTENED_SESSION]),
   E = new Map;
 
 function y(e) {
@@ -34,7 +34,7 @@ function y(e) {
 }
 
 function b(e) {
-  return (0, _.I5)(e) ? null : (0, _.JM)(e) && e.author_type === s.t.USER ? u.A.getActivities(e.author_id).find(t => t.type === h.$pd.PLAYING && (0, f.P)(e) ? (0, p.fp)(e, t) : !!(t.type === h.$pd.LISTENING && (0, f.Tq)(e)) && (0, p.qb)(e, t)) : true
+  return (0, _.I5)(e) ? null : (0, _.JM)(e) && e.author_type === s.ContentInventoryAuthorType.USER ? u.A.getActivities(e.author_id).find(t => t.type === h.$pd.PLAYING && (0, f.P)(e) ? (0, p.fp)(e, t) : !!(t.type === h.$pd.LISTENING && (0, f.Tq)(e)) && (0, p.qb)(e, t)) : true
 }
 
 function O(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 97887 **/
+/** Chunk was on 67564 **/
 /** chunk id: 223938, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => ee
@@ -511,7 +511,7 @@ function et(e) {
     canCreateThread: i
   } = e, s = v.A.useField("channelDrafts")[l], a = null == (t = null == s ? true : s.createThread) || t, o = null == (n = null == s ? true : s.publish) || n;
   return (0, r.jsxs)(f.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated": true,
     "aria-label": q.intl.string(q.t["9WnJyo"]),
     navId: "send-announcement-options",
     onClose: z.tEg,

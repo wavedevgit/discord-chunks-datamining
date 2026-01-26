@@ -82,7 +82,7 @@ let _ = (0, Chunk358367.A)(function(e) {
   return (0, i.jsx)(d.f5, {
     value: G,
     children: (0, i.jsxs)(l.W1t, {
-      "data-menu-migration-ready": true,
+      "data-menu-migrated": true,
       navId: "user-settings-cog",
       onClose: a.Z_,
       "aria-label": D.intl.string(D.t.opYYHn),

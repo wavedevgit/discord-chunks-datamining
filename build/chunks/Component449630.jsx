@@ -297,11 +297,10 @@ function el(e) {
                           size: "sm",
                           "aria-label": ee.intl.string(ee.t["3Uj+2p"]),
                           children: (0, a.jsx)(c.W1t, {
-                            "data-menu-migration-ready": true,
+                            "data-menu-needs-review": true,
                             navId: "set-status-submenu-mobile-web",
                             variant: "fixed",
                             "aria-label": ee.intl.string(ee.t.E13trI),
-                            className: et.YS,
                             hideScroller: true,
                             onClose: l,
                             onSelect: true,

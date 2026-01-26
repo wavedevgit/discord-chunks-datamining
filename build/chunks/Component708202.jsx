@@ -45,29 +45,29 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     user: t,
     guildId: n,
     channel: a,
-    context: u,
+    context: c,
     onSelect: B,
     onHeightUpdate: V
   } = e, k = a.id, X = (0, D.A)({
     userId: t.id,
     guildId: n,
     channelId: k
-  }), H = (0, S.A)(t, n, u), W = (0, T.A)(t.id, u), F = (0, R.A)(t.id), K = (0, v.A)({
+  }), H = (0, S.A)(t, n, c), W = (0, T.A)(t.id, c), F = (0, R.A)(t.id), K = (0, x.A)({
     user: t,
-    context: u
-  }), J = (0, l.bG)([m.A, p.A], () => {
-    let e = m.A.getVoiceChannelId();
-    return p.A.getChannel(e)
+    context: c
+  }), J = (0, l.bG)([y.A, O.A], () => {
+    let e = y.A.getVoiceChannelId();
+    return O.A.getChannel(e)
   }), {
     enabled: Z
-  } = O.A.useExperiment({
+  } = p.A.useExperiment({
     guildId: null == J ? true : J.guild_id,
     location: "ThreadUserContextMenu"
   }), q = Z ? null == J ? true : J.id : null, Q = (0, U.A)(t, q), Y = (0, E.A)({
     user: t,
     guildId: n,
     channelId: k,
-    context: u
+    context: c
   }), $ = (0, j.A)({
     user: t
   }), {
@@ -81,17 +81,17 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
       object: w.ZSU.CONTEXT_MENU_ITEM
     },
     analyticsLocations: z,
-    context: u
+    context: c
   }), et = (0, C.A)({
     user: t,
     guildId: n
-  }), en = (0, d.A)(null, t), er = (0, y.A)({
+  }), en = (0, d.A)(null, t), er = (0, m.A)({
     user: t
   }), el = (0, h.A)({
     user: t
   }), ei = (0, G.A)({
     user: t
-  }), eo = (0, x.A)({
+  }), eo = (0, v.A)({
     user: t,
     guildId: n,
     channelId: k,
@@ -101,18 +101,18 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     guildId: n,
     channelId: k,
     location: "ThreadUserContextMenu"
-  }), eu = (0, _.A)(t, n, k), ec = (0, I.A)(t.id, n), ed = (0, N.A)(t, n), es = (0, g.A)({
+  }), ec = (0, _.A)(t, n, k), eu = (0, I.A)(t.id, n), ed = (0, N.A)(t, n), es = (0, g.A)({
     id: t.id,
     label: L.intl.string(L.t["/AXYnE"])
   }), eA = (0, f.A)(t), eg = (0, P.A)({
-    commandType: c.kc.USER,
+    commandType: u.kc.USER,
     commandTargetId: t.id,
     channel: a,
     guildId: n,
     onHeightUpdate: V
   }), eb = t.isNonUserBot();
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated": true,
     navId: "user-context",
     onClose: o.Z_,
     "aria-label": L.intl.string(L.t.liqwPJ),
@@ -127,9 +127,9 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
       }), (0, r.jsxs)(i.rXV, {
         children: [ee, eg, et, er, el, ei, ea, eo]
       }), (0, r.jsx)(i.rXV, {
-        children: eu
+        children: ec
       }), (0, r.jsxs)(i.rXV, {
-        children: [ec, ed]
+        children: [eu, ed]
       })]
     }), (0, r.jsx)(i.rXV, {
       children: es

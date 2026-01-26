@@ -40,7 +40,7 @@ let I = [{
     } = e;
     return (0, a.jsx)(p.Text, {
       variant: "text-md/semibold",
-      children: c.I[t]
+      children: c.ContentInventoryEntryType[t]
     })
   }
 }, {

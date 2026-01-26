@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 294363, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -36,7 +36,7 @@ function S(e) {
     isExpanded: n,
     selectedChannelId: l,
     className: a
-  } = e, b = (0, m.w)(t), x = (0, p.A)(t), [j, _] = i.useState(x), O = (0, o.bG)([h.A], () => h.A.getChannel(l), [l]), v = (0, u.Ay)(O), S = async () => {
+  } = e, h = (0, m.w)(t), x = (0, p.A)(t), [j, _] = i.useState(x), O = (0, o.bG)([b.A], () => b.A.getChannel(l), [l]), v = (0, u.Ay)(O), S = async () => {
     _(!j);
     try {
       var e;
@@ -80,7 +80,7 @@ function S(e) {
     }), (0, r.jsx)(y.A, {
       checked: j,
       onChange: S,
-      disabled: !b || null == l
+      disabled: !h || null == l
     })]
   })
 }
@@ -92,7 +92,7 @@ function I(e) {
     selectedChannelId: i,
     setSelectedChannelId: l,
     className: g
-  } = e, m = null != (t = n.safetyAlertsChannelId) ? t : null, b = (0, o.yK)([x.Ay, O.default, _.A, j.A], () => {
+  } = e, m = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.yK)([x.Ay, O.default, _.A, j.A], () => {
     let e = x.Ay.getChannels(n.id)[x.I6].filter(e => {
       let {
         channel: t
@@ -109,7 +109,7 @@ function I(e) {
       }
     });
     return null != m ? e : [...e]
-  }, [n.id, m]), h = async e => {
+  }, [n.id, m]), b = async e => {
     l(e);
     try {
       if (e !== m && (await v.A.saveGuild(n.id, {
@@ -140,8 +140,8 @@ function I(e) {
         selectionMode: "single",
         label: E.intl.string(E.t.sMkYE8),
         helperText: E.intl.string(E.t["1QxN9N"]),
-        options: b,
-        onSelectionChange: h,
+        options: h,
+        onSelectionChange: b,
         value: i,
         maxOptionsVisible: 5
       })
@@ -154,7 +154,7 @@ function T(e) {
   let {
     guild: l
   } = e, [s, a] = i.useState(false), o = null != (t = l.safetyAlertsChannelId) ? t : null, [c, d] = i.useState(null != o ? o : null != (n = null == l ? true : l.publicUpdatesChannelId) ? n : null);
-  return (0, r.jsx)(b.A, {
+  return (0, r.jsx)(h.A, {
     renderHeader: (0, r.jsx)(S, {
       isExpanded: s,
       guild: l,

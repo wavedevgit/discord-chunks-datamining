@@ -85,7 +85,7 @@ function _(t) {
         setting: s,
         label: o
       } = r;
-      return (0, i.jsx)(l.iDA, {
+      return null != o && (0, i.jsx)(l.iDA, {
         group: "channel-notifications",
         id: "".concat(s),
         label: o,

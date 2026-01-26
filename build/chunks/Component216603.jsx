@@ -39,7 +39,7 @@ function d(t) {
     action: () => u.Ay.copy(e)
   }, "copy")] : null;
   return (0, r.jsxs)(c.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated": true,
     navId: "textarea-context",
     onClose: f,
     "aria-label": p.intl.string(p.t.NWlDSI),

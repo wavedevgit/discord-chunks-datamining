@@ -18,39 +18,38 @@ function d(e) {
     handleOpenCollectiblesShop: n,
     handleOpenGameShop: d,
     socialLayerStorefrontApplicationId: f
-  } = e, p = l.useRef(null), [g, m] = l.useState(false), b = (0, a.h)(f), y = l.useMemo(() => {
-    let e = null == b || b.id !== s.XR ? c.intl.string(c.t.apFNLU) : c.intl.string(c.t["kq/75v"]);
-    if (null == b) return e;
-    let t = o.Ay.getApplicationIconURL({
-      id: b.id,
-      icon: b.icon,
-      size: 20
-    });
-    return (0, r.jsxs)("div", {
-      className: u.C,
-      children: [(0, r.jsx)("img", {
-        className: u.I,
-        src: t,
-        alt: e
-      }), (0, r.jsx)(i.Text, {
-        variant: "text-sm/medium",
-        color: "text-strong",
-        children: e
-      })]
-    })
-  }, [b]), O = l.useMemo(() => (0, r.jsxs)(i.rXV, {
+  } = e, p = l.useRef(null), [g, m] = l.useState(false), b = (0, a.h)(f), y = l.useMemo(() => null == b || b.id !== s.XR ? c.intl.string(c.t.apFNLU) : c.intl.string(c.t["kq/75v"]), [b]), O = l.useMemo(() => null == b ? null : o.Ay.getApplicationIconURL({
+    id: b.id,
+    icon: b.icon,
+    size: 20
+  }), [b]), j = l.useMemo(() => null == O ? i.U1X : () => (0, r.jsx)("img", {
+    className: u.I,
+    src: O,
+    alt: ""
+  }), [O]), x = l.useMemo(() => null == O ? {
+    type: "icon",
+    icon: i.U1X
+  } : {
+    type: "image",
+    src: O
+  }, [O]), h = l.useMemo(() => (0, r.jsxs)(i.rXV, {
     children: [(0, r.jsx)(i.Drp, {
       id: "browse-collectibles-shop",
       label: c.intl.string(c.t["5upuqx"]),
       iconLeft: i.U1X,
+      leadingAccessory: {
+        type: "icon",
+        icon: i.U1X
+      },
       action: n
     }), (0, r.jsx)(i.Drp, {
       id: "browse-social-layer-storefront",
-      void_label: y,
-      iconLeft: null != b ? true : i.U1X,
+      label: y,
+      iconLeft: j,
+      leadingAccessory: x,
       action: d
     })]
-  }), [n, d, y, b]);
+  }), [n, d, y, j, x]);
   return (0, r.jsx)(i.YNO, {
     targetElementRef: p,
     position: "bottom",
@@ -61,12 +60,12 @@ function d(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(i.W1t, {
-        "data-menu-migration-ready": true,
+        "data-menu-migrated": true,
         navId: "wishlist-overflow-menu",
         onSelect: true,
         onClose: t,
         "aria-label": c.intl.string(c.t.GdNkvG),
-        children: O
+        children: h
       })
     },
     children: e => (0, r.jsx)(i.Button, function(e) {

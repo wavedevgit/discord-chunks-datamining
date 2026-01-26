@@ -33,7 +33,7 @@ let f = (0, Chunk358367.A)(function(e) {
     context: c,
     object: g.ZSU.CONTEXT_MENU,
     children: (0, r.jsxs)(t.W1t, {
-      "data-menu-mixed": true,
+      "data-menu-migrated": true,
       navId: "user-context",
       onClose: i.Z_,
       "aria-label": b.intl.string(b.t.liqwPJ),

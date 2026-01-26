@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 239741, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -126,7 +126,7 @@ function L(e) {
     Z = async () => {
       let e = O.A.advancedMode;
       if (k) try {
-        if (G === y.Hy.DEFAULT_CHANNELS) await (0, b.jr)(t).then(() => e ? (0, _.dm)(t, {
+        if (G === y.Hy.DEFAULT_CHANNELS) await (0, h.jr)(t).then(() => e ? (0, _.dm)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
         else if (G === y.Hy.CUSTOMIZATION_QUESTIONS) await (0, _.dm)(t, {
@@ -140,18 +140,18 @@ function L(e) {
         returnfalse
       }
       returntrue
-    }, q = async () => {
+    }, Q = async () => {
       m.default.track(C.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.H$)(f)), {
         step: y.Hy[G],
         back: false,
         skip: !k
-      })), (0, h.Ay)((0, y.ql)(G)), await Z() && (0, h._k)(f, G)
-    }, Q = async () => {
+      })), (0, b.Ay)((0, y.ql)(G)), await Z() && (0, b._k)(f, G)
+    }, q = async () => {
       m.default.track(C.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.H$)(f)), {
         step: y.Hy[G],
         back: true,
         skip: false
-      })), await Z() && (0, h.kP)(f, G)
+      })), await Z() && (0, b.kP)(f, G)
     }, $ = null;
   B && (G === y.Hy.SAFETY_CHECK ? $ = (0, r.jsx)(E.Et, {}) : G === y.Hy.DEFAULT_CHANNELS ? $ = (0, r.jsx)(E.hz, {}) : G === y.Hy.CUSTOMIZATION_QUESTIONS ? $ = (0, r.jsx)(E.yP, {}) : G === y.Hy.HOME_SETTINGS && ($ = (0, r.jsx)(E.QS, {})));
   let ee = (0, r.jsx)("div", {
@@ -162,7 +162,7 @@ function L(e) {
         text: P.intl.string(P.t["13/7kX"]),
         icon: d.rJJ,
         iconPosition: "start",
-        onClick: Q,
+        onClick: q,
         disabled: B || U
       })
     }),
@@ -172,7 +172,7 @@ function L(e) {
       text: M ? P.intl.string(P.t.PDTjLN) : P.intl.string(P.t["5Wxrcd"]),
       icon: d.EdP,
       iconPosition: "end",
-      onClick: q,
+      onClick: Q,
       disabled: B || U
     });
   return (0, r.jsx)(o.F, {

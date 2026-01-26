@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 437242, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,16 +23,16 @@ function m(e) {
     triggerType: m,
     toggled: p,
     onToggleAction: f
-  } = e, b = e => () => f(e), h = (0, d.x)(n.type, n, m), x = null == (t = n.metadata) ? true : t.channelId, j = (0, i.bG)([c.default, o.A, a.A], () => {
+  } = e, h = e => () => f(e), b = (0, d.x)(n.type, n, m), x = null == (t = n.metadata) ? true : t.channelId, j = (0, i.bG)([c.default, o.A, a.A], () => {
     let e = a.A.getChannel(x);
     return null == e ? null : (0, s.m1)(e, c.default, o.A)
   }, [x]);
-  if (null == h) return null;
+  if (null == b) return null;
   let {
     headerText: _,
     descriptionText: O,
     icon: v
-  } = h;
+  } = b;
   return (0, r.jsxs)("div", {
     className: g.Ik,
     children: [(0, r.jsx)("div", {
@@ -57,7 +57,7 @@ function m(e) {
         children: [null != j && u.intl.format(u.t["8Sr/ar"], {
           channelName: j
         }), (0, r.jsx)(l.DUT, {
-          onClick: b(true),
+          onClick: h(true),
           className: g._2,
           tag: "span",
           role: "link",
@@ -66,10 +66,10 @@ function m(e) {
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(l.DUT, {
-        onClick: h.isEditable ? b(false) : true,
+        onClick: b.isEditable ? h(false) : true,
         children: (0, r.jsx)(l.P7L, {
           checked: p,
-          disabled: !h.isEditable
+          disabled: !b.isEditable
         })
       })
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 915417, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -64,7 +64,7 @@ function _(e) {
       }))
     }, [null == n ? true : n.id, E]),
     I = i.useCallback(() => {
-      g.A.setSection(b.BEX.PROFILE)
+      g.A.setSection(h.BEX.PROFILE)
     }, []);
   if (null == n) return null;
   let T = null != t ? t : null == v ? true : v.formFields;
@@ -72,13 +72,13 @@ function _(e) {
     children: [(0, r.jsx)(s.DZT, {
       variant: "heading-md/semibold",
       color: "text-strong",
-      children: h.intl.string(h.t.AHJddL)
+      children: b.intl.string(b.t.AHJddL)
     }), (0, r.jsx)(s.EYj, {
       tag: "p",
       variant: "text-sm/medium",
       color: "text-subtle",
       className: x.nB,
-      children: h.intl.string(h.t.Z7TCtd)
+      children: b.intl.string(b.t.Z7TCtd)
     }), (0, r.jsx)(f.o, {
       guildId: n.id
     }), (0, r.jsx)("div", {
@@ -94,18 +94,18 @@ function _(e) {
       children: [(0, r.jsxs)("div", {
         className: x.fi,
         children: [(0, r.jsx)(o.dOG, {
-          label: h.intl.string(h.t["N/0232"]),
+          label: b.intl.string(b.t["N/0232"]),
           checked: E,
           onChange: S,
           disabled: A
         }), (0, r.jsx)(s.EYj, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: h.intl.string(h.t["3TSZYK"])
+          children: b.intl.string(b.t["3TSZYK"])
         }), A && (0, r.jsx)(s.EYj, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: h.intl.format(h.t.Bk0VOi, {
+          children: b.intl.format(b.t.Bk0VOi, {
             profileLink: (e, t) => (0, r.jsx)(o.MzZ, {
               onClick: I,
               children: e
@@ -124,7 +124,7 @@ function _(e) {
             CTAOverride: (0, r.jsx)(s.$nd, {
               variant: "active",
               size: "sm",
-              text: h.intl.string(h.t["7XdMW2"]),
+              text: b.intl.string(b.t["7XdMW2"]),
               fullWidth: true
             }),
             disableGuildNameClick: true

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 692453, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -111,23 +111,23 @@ function j(e) {
   if (null == s) return null;
   let T = j.length < f.pA;
   return (0, r.jsx)("div", {
-    className: h.kL,
+    className: b.kL,
     children: (0, r.jsxs)("div", {
-      className: h.jx,
+      className: b.jx,
       children: [(0, r.jsxs)("div", {
-        className: h.G6,
+        className: b.G6,
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-lg/bold",
-          children: b.intl.string(b.t.Cl8F8H)
+          children: h.intl.string(h.t.Cl8F8H)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-strong",
-          children: b.intl.format(b.t.vqgyJR, {
+          children: h.intl.format(h.t.vqgyJR, {
             linkedRolesUrl: c.A.getArticleURL(p.MVz.CONNECTION_DETAILS_ADMIN)
           })
         })]
       }), j.length > 0 && (0, r.jsx)("div", {
-        className: h.eF,
+        className: b.eF,
         children: y.map((e, t) => (0, r.jsx)(m.A, {
           connection: e,
           index: t,
@@ -137,7 +137,7 @@ function j(e) {
           draggingId: I
         }, e.id))
       }), (0, r.jsxs)("button", {
-        className: h.qG,
+        className: b.qG,
         onClick: v,
         disabled: !T || _,
         type: "button",
@@ -149,12 +149,12 @@ function j(e) {
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "text-brand",
-          children: b.intl.string(b.t["03EqaC"])
+          children: h.intl.string(h.t["03EqaC"])
         })]
       }), !T && (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: b.intl.format(b.t.Nc7guW, {
+        children: h.intl.format(h.t.Nc7guW, {
           max: f.pA
         })
       })]
@@ -174,14 +174,14 @@ function _() {
     },
     onReset: u.p2,
     submitting: t,
-    onSaveText: b.intl.string(b.t["R3BPH+"]),
+    onSaveText: h.intl.string(h.t["R3BPH+"]),
     disabled: i,
     errorMessage: i ? (0, r.jsx)("div", {
-      className: h.Tt,
+      className: b.Tt,
       children: (0, r.jsx)("ul", {
-        className: h.qr,
+        className: b.qr,
         children: n.map((e, t) => (0, r.jsxs)("li", {
-          className: h.Ff,
+          className: b.Ff,
           children: [(0, r.jsx)(a.EpV, {
             size: "sm",
             color: "currentColor"

@@ -13,10 +13,10 @@ var Chunk64700 = require("./64700.js"),
 
 function d(e, t, n, d) {
   let u = r.useRef(null),
-    [m, f] = r.useState(false);
+    [m, g] = r.useState(false);
   return {
-    handleCopyServerIp: r.useCallback(() => (null != u.current && clearTimeout(u.current), (0, o.ed)(e, t, n), (0, l.C)(null != d ? d : ""), (0, i.showToast)((0, a.o)(c.intl.string(c.t["+5kSoW"]), i.ToastType.SUCCESS)), f(true), u.current = setTimeout(() => {
-      f(false)
+    handleCopyServerIp: r.useCallback(() => (null != u.current && clearTimeout(u.current), (0, o.ed)(e, t, n), (0, l.C)(null != d ? d : ""), (0, i.showToast)((0, a.o)(c.intl.string(c.t["+5kSoW"]), i.ToastType.SUCCESS)), g(true), u.current = setTimeout(() => {
+      g(false)
     }, 2 * s.A.Millis.SECOND), () => {
       null != u.current && clearTimeout(u.current)
     }), [e, t, n, d]),

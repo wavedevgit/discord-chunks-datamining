@@ -89,12 +89,12 @@ function M(e) {
             variant: "eyebrow",
             color: "interactive-text-default",
             children: N.intl.string(N.t.EZ5QWL)
-          }), t === f._e.TIMESTAMP_ASC ? (0, n.jsx)(S.A, {
+          }), t === f._e.TIMESTAMP_ASC ? (0, n.jsx)(T.A, {
             className: I.GM,
-            direction: S.A.Directions.UP
-          }) : (0, n.jsx)(S.A, {
+            direction: T.A.Directions.UP
+          }) : (0, n.jsx)(T.A, {
             className: I.GM,
-            direction: S.A.Directions.DOWN
+            direction: T.A.Directions.DOWN
           })]
         })
       }), (0, n.jsx)("th", {
@@ -118,7 +118,7 @@ let w = Chunk64700.memo(function(e) {
     } = t, {
       analyticsLocations: a
     } = (0, j.Ay)(), o = r.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), (0, T.openUserProfileModal)({
+      e.stopPropagation(), e.preventDefault(), (0, E.openUserProfileModal)({
         userId: l.id,
         joinRequestId: i,
         sourceAnalyticsLocations: a
@@ -170,7 +170,7 @@ let w = Chunk64700.memo(function(e) {
       guildId: a,
       createdAt: m,
       applicationStatus: j
-    } = t, b = r.useMemo(() => new E.A(t.user), [t.user]), h = (0, v.R)({
+    } = t, b = r.useMemo(() => new S.A(t.user), [t.user]), h = (0, v.R)({
       guildId: a
     }), g = (0, c.bG)([y.A], () => y.A.getGuild(a)), _ = j === f.B5.SUBMITTED;
     return null == b ? null : (0, n.jsxs)("tr", {

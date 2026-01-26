@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 491032, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -50,9 +50,9 @@ function g(e) {
     rule: n,
     onChangeRule: g,
     collapsed: m = false
-  } = e, [p, f] = i.useState(!m), b = i.useCallback(() => {
+  } = e, [p, f] = i.useState(!m), h = i.useCallback(() => {
     f(!p)
-  }, [p, f]), h = i.useCallback(e => {
+  }, [p, f]), b = i.useCallback(e => {
     g(u(d({}, n), {
       triggerMetadata: u(d({}, n.triggerMetadata), {
         regexPatterns: e
@@ -63,7 +63,7 @@ function g(e) {
     isExpanded: p,
     collapsibleContent: (0, r.jsx)(a.A, {
       rule: n,
-      onChangeText: h,
+      onChangeText: b,
       className: c.kS,
       initialValue: null == (t = n.triggerMetadata) ? true : t.regexPatterns
     }),
@@ -74,7 +74,7 @@ function g(e) {
       } = e;
       return (0, r.jsx)(l.DUT, {
         onClick: e => {
-          b(), t(e)
+          h(), t(e)
         },
         children: (0, r.jsxs)("div", {
           className: c.wx,

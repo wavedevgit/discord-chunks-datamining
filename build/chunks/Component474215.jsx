@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 474215, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -38,7 +38,7 @@ let f = {
   label: ""
 };
 
-function b(e) {
+function h(e) {
   let {
     emoji: t,
     disabled: n,
@@ -93,7 +93,7 @@ function b(e) {
   })
 }
 
-function h(e) {
+function b(e) {
   let {
     guildId: t,
     trait: n,
@@ -127,7 +127,7 @@ function h(e) {
       maxLength: 24,
       leading: {
         type: "emoji",
-        button: (0, r.jsx)(b, {
+        button: (0, r.jsx)(h, {
           emoji: g,
           disabled: o,
           handleSelectEmoji: d
@@ -159,7 +159,7 @@ function j(e) {
       className: m.Vg,
       children: x.map(e => {
         var i;
-        return (0, r.jsx)(h, {
+        return (0, r.jsx)(b, {
           guildId: t.id,
           trait: null != (i = s[e]) ? i : f,
           index: e,

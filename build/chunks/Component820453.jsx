@@ -72,7 +72,7 @@ function P(e) {
   return (0, r.jsx)("div", {
     className: h.li,
     children: (0, r.jsx)(c.W1t, {
-      "data-menu-migration-ready": true,
+      "data-menu-migrated-auto": true,
       navId: "poll-media-edit-menu",
       onClose: a,
       "aria-label": y.intl.string(y.t["cV+h7B"]),

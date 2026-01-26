@@ -1,17 +1,17 @@
-/** Chunk was on 97887 **/
+/** Chunk was on 71287 **/
 /** chunk id: 321404, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => s,
-  c: () => a
+  O: () => l,
+  c: () => u
 });
 var Chunk311907 = require("./311907.js"),
   Chunk380335 = require("./380335.js"),
   Chunk157550 = require("./157550.js");
 
-function s(e) {
-  return (0, r.bG)([l.A], () => l.A.isMessageRequest(e), [e])
+function l(e) {
+  return (0, i.bG)([a.A], () => a.A.isMessageRequest(e), [e])
 }
 
-function a(e) {
-  return (0, r.bG)([l.A, i.A], () => null != e && (l.A.isMessageRequest(e) || i.A.isSpam(e)))
+function u(e) {
+  return (0, i.bG)([a.A, r.A], () => null != e && (a.A.isMessageRequest(e) || r.A.isSpam(e)))
 }

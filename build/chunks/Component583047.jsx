@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 583047, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,8 +22,8 @@ function f(e) {
   let {
     guild: n,
     formFields: c
-  } = e, [f, h] = i.useState(c);
-  i.useEffect(() => h(c), [c]);
+  } = e, [f, b] = i.useState(c);
+  i.useEffect(() => b(c), [c]);
   let x = null != (t = (0, a.H)({
       guildId: n.id
     })) ? t : 0,
@@ -31,7 +31,7 @@ function f(e) {
     O = i.useMemo(() => null == f ? true : f.some(e => (0, s.i7)(e)), [f]),
     v = i.useMemo(() => f.length === g.OK, [f]),
     y = i.useCallback(e => {
-      u.A.setPendingMemberVerificationRules(n.id, e), h(e), null != j && _(null)
+      u.A.setPendingMemberVerificationRules(n.id, e), b(e), null != j && _(null)
     }, [j, n.id]),
     A = i.useCallback(e => {
       y([...f, e])
@@ -47,7 +47,7 @@ function f(e) {
     S = i.useCallback((e, t, n) => {
       let r = f.indexOf(e),
         i = [...f];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), h(i)), n ? (y(i), null !== j && _(null)) : j !== t && _(t)
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (y(i), null !== j && _(null)) : j !== t && _(t)
     }, [j, f, y]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.DZT, {
@@ -78,13 +78,13 @@ function f(e) {
         guild: n,
         allowTerms: !O
       })
-    }), !v && (0, r.jsx)(b, {
+    }), !v && (0, r.jsx)(h, {
       addFormField: A
     })]
   })
 }
 
-function b(e) {
+function h(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{

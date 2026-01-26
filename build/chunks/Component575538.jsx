@@ -22,7 +22,7 @@ function g(t) {
     clipsLength: n
   } = (0, e.cf)([c.A], () => c.A.getSettings()), g = (0, u.A)();
   return (0, l.jsxs)(a.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated": true,
     navId: "clips-context",
     "aria-label": p.intl.string(p.t.J1hsY2),
     onClose: r.Z_,
@@ -49,7 +49,7 @@ function g(t) {
       children: (0, l.jsx)(a.Drp, {
         id: "clips-settings",
         label: p.intl.string(p.t.J1hsY2),
-        action: () => (0, s.openUserSettings)(o.X.CLIPS_PANEL)
+        action: () => (0, o.openUserSettings)(s.X.CLIPS_PANEL)
       })
     })]
   })

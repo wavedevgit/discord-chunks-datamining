@@ -46,7 +46,7 @@ function g(e) {
   return (0, r.jsx)("div", {
     className: h.k,
     children: (0, r.jsxs)(s.W1t, {
-      "data-menu-migration-ready": true,
+      "data-menu-migrated": true,
       navId: "sort-and-view",
       "aria-label": v ? u.intl.string(u.t["kQN/bi"]) : u.intl.string(u.t.DJzbkL),
       hideScroller: true,
@@ -108,7 +108,6 @@ function g(e) {
       }) : null, (0, r.jsx)(s.rXV, {
         children: (0, r.jsx)(s.Drp, {
           id: "reset-all",
-          className: h.Z,
           label: u.intl.string(u.t["3b//lO"]),
           action: () => {
             _(t.getDefaultSortOrder()), y(t.getDefaultLayout()), A(t.getDefaultTagSetting())

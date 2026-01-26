@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 399056, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -47,9 +47,9 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = [];
+let h = [];
 
-function h() {
+function b() {
   return (0, r.jsx)("div", {
     className: m.L8,
     children: (0, r.jsxs)("div", {
@@ -107,7 +107,7 @@ let j = function(e) {
     guildId: t
   } = e, n = (0, l.yK)([d.A], () => {
     var e;
-    return null != (e = d.A.getSettings().newMemberActions) ? e : b
+    return null != (e = d.A.getSettings().newMemberActions) ? e : h
   }), s = i.useCallback((e, t) => {
     (0, c.G$)(e, t)
   }, []), g = i.useCallback((e, r, i, l) => {
@@ -139,7 +139,7 @@ let j = function(e) {
       onDragStart: v,
       onDragReset: y,
       onDragComplete: A
-    }, e.channelId)), (0, r.jsx)(h, {}), n.length < o._7 && (0, r.jsx)(x, {
+    }, e.channelId)), (0, r.jsx)(b, {}), n.length < o._7 && (0, r.jsx)(x, {
       guildId: t,
       onAddAction: s
     })]

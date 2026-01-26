@@ -75,7 +75,7 @@ function F(e) {
     guildId: l
   } = e, i = null != (t = (0, v.H)({
     guildId: l
-  })) ? t : 0, [u, b] = r.useState(i > 0 ? E.D.PENDING : E.D.ALL_MEMBERS), _ = (0, a.bG)([T.A], () => T.A.getGuild(l)), {
+  })) ? t : 0, [u, b] = r.useState(i > 0 ? S.D.PENDING : S.D.ALL_MEMBERS), _ = (0, a.bG)([E.A], () => E.A.getGuild(l)), {
     analyticsLocations: C
   } = (0, d.Ay)(c.A.MEMBER_SAFETY_PAGE), G = (0, f.n)({
     guildId: l
@@ -87,7 +87,7 @@ function F(e) {
     sortOrder: G
   });
   r.useEffect(() => {
-    (null == _ ? true : _.features.has(w.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || b(E.D.ALL_MEMBERS)
+    (null == _ ? true : _.features.has(w.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || b(S.D.ALL_MEMBERS)
   }, [_]);
   let F = (0, y.fw)(l),
     V = (0, x.q)(l),
@@ -100,37 +100,37 @@ function F(e) {
     guildJoinRequests: L
   }), q = r.useCallback(async () => {
     var e;
-    if (u === E.D.ALL_MEMBERS) return;
+    if (u === S.D.ALL_MEMBERS) return;
     let t = null == (e = z.current) ? true : e.getScrollerState();
     null == t || t.scrollHeight - t.scrollTop - t.offsetHeight < 200 && await H(G, u)
-  }, [u, u, G, H]), W = r.useCallback(async e => {
+  }, [u, u, G, H]), Q = r.useCallback(async e => {
     u === e || (b(e), m.A.setSelectedGuildJoinRequest(l, null), "ALL_MEMBERS" !== e && await H(G, e))
   }, [u, l, H, G]);
   r.useEffect(() => {
     if (!F && null != _) {
       var e;
-      let t = null == (e = S.Ay.getDefaultChannel(_.id)) ? true : e.id;
+      let t = null == (e = T.Ay.getDefaultChannel(_.id)) ? true : e.id;
       (0, A.uh)(_.id, t)
     }
   }, [_, F]);
-  let K = (0, a.bG)([p.Ay], () => null != p.Ay.getGuildSidebarState(l), [l]);
+  let W = (0, a.bG)([p.Ay], () => null != p.Ay.getGuildSidebarState(l), [l]);
   return null != _ && F ? (0, n.jsxs)(d.f5, {
     value: C,
     children: [(0, n.jsxs)("div", {
       className: s()(k.TE, U.MY, {
-        [k.js]: K
+        [k.js]: W
       }),
       children: [(0, n.jsx)(B, {
         guild: _,
         currentTab: u,
-        onTabSelect: W
+        onTabSelect: Q
       }), (0, n.jsx)(o.T7Y, {
         onScroll: q,
         ref: z,
         orientation: "vertical",
         children: (0, n.jsx)("div", {
           className: s()(k.Qs, U.kL),
-          children: u === E.D.ALL_MEMBERS ? (0, n.jsxs)(n.Fragment, {
+          children: u === S.D.ALL_MEMBERS ? (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)(R.A, {
               guild: _
             }), (0, n.jsx)(M.A, {
@@ -144,7 +144,7 @@ function F(e) {
       }), (0, n.jsx)(P.A, {
         guildId: _.id
       })]
-    }), V && (u === E.D.ALL_MEMBERS ? (0, n.jsx)(D.A, {
+    }), V && (u === S.D.ALL_MEMBERS ? (0, n.jsx)(D.A, {
       guildId: _.id
     }) : (0, n.jsx)(N.A, {
       guildId: _.id

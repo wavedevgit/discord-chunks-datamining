@@ -24,7 +24,7 @@ function u(e) {
     onSelect: O
   } = e, j = (0, l.bG)([s.Ay], () => s.Ay.getGuildFolderById(t), [t]), g = (0, l.bG)([a.A], () => a.A.getExpandedFolders().size > 0);
   return (0, n.jsxs)(o.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated": true,
     navId: "guild-context",
     "aria-label": p.intl.string(p.t.HpQykc),
     onClose: i.Z_,

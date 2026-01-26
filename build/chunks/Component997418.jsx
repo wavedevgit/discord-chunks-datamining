@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 997418, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,7 +22,7 @@ function m() {
     m = (0, l.bG)([d.A], () => d.A.getGuildProfile()),
     p = (0, l.bG)([o.A], () => o.A.getIsUpdating(t)),
     f = i.useMemo(() => (null == n ? true : n.status) === 429 ? g.intl.string(u.default["bFRS/s"]) : null == n ? true : n.getAnyErrorMessage(), [n]),
-    b = i.useCallback(() => {
+    h = i.useCallback(() => {
       if (null == e || null == m) return;
       let t = {
         tag: m.tag,
@@ -32,13 +32,13 @@ function m() {
       };
       (0, a._C)(e.id, t)
     }, [e, m]),
-    h = i.useCallback(() => {
+    b = i.useCallback(() => {
       null != t && c.A.init(t)
     }, [t]);
   return (0, r.jsx)(s.A, {
     submitting: p,
     errorMessage: f,
-    onSave: b,
-    onReset: h
+    onSave: h,
+    onReset: b
   })
 }

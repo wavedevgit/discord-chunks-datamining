@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 863598, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -66,11 +66,11 @@ function O(e) {
     });
     return e.unshift({
       value: x,
-      label: h.intl.string(h.t.wGiHkK)
+      label: b.intl.string(b.t.wGiHkK)
     }), e
   }, [d]), g = i.useCallback(e => {
     let t = e === x ? null : e;
-    b.A.updateGuild({
+    h.A.updateGuild({
       afkChannelId: t
     })
   }, []);
@@ -105,11 +105,11 @@ function v(e) {
     });
     return e.unshift({
       value: x,
-      label: h.intl.string(h.t.ibUhoa)
+      label: b.intl.string(b.t.ibUhoa)
     }), e
   }, [g]), f = i.useCallback(e => {
     let t = e === x ? null : e;
-    b.A.updateGuild({
+    h.A.updateGuild({
       systemChannelId: t
     })
   }, []);

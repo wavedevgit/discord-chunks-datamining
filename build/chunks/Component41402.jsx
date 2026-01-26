@@ -17,12 +17,12 @@ var Chunk311907 = require("./311907.js"),
 
 function A(t) {
   let n = (0, r.bG)([u.A], () => u.A.getChannel(t.parent_id)),
-    i = (0, o.H_)(t),
+    i = (0, s.H_)(t),
     A = (0, d.Eh)(t);
   return (null == n ? true : n.isForumLikeChannel()) && i ? t.hasFlag(c.lx.PINNED) ? (0, e.jsx)(l.Drp, {
     id: "unpin-thread",
     label: h.intl.string(h.t.trD8ao),
-    action: () => s.A.unpin(t)
+    action: () => o.A.unpin(t)
   }) : (0, e.jsx)(l.Drp, {
     id: "pin-thread",
     label: h.intl.string(h.t.EnaWhu),
@@ -31,9 +31,9 @@ function A(t) {
         title: h.intl.string(h.t.IMbjxo),
         body: h.intl.string(h.t["mi5+Vl"]),
         onConfirm: async () => {
-          await s.A.unpin(A), s.A.pin(t)
+          await o.A.unpin(A), o.A.pin(t)
         }
-      }) : s.A.pin(t)
+      }) : o.A.pin(t)
     }
   }) : null
 }

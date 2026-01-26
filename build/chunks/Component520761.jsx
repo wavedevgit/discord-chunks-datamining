@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 520761, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => b
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,11 +18,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk132514 = require("./132514.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk659233 = require("./659233.js");
-let h = function(e) {
+let b = function(e) {
   let {
     guildId: t,
     resourceChannel: l,
-    index: h,
+    index: b,
     onDragComplete: x,
     onDragStart: j,
     onDragReset: _
@@ -45,7 +45,7 @@ let h = function(e) {
     } = (0, c.A)({
       type: "RESOURCE_CHANNEL",
       optionId: l.channelId,
-      index: h,
+      index: b,
       onDragStart: j,
       onDragComplete: x,
       onDragReset: _
@@ -101,44 +101,44 @@ let h = function(e) {
       }
     }), [t, l, w, R]);
   return null == A ? null : (0, r.jsxs)("div", {
-    className: b.l5,
+    className: h.l5,
     children: [(0, r.jsxs)("div", {
-      className: s()(b.Km, {
-        [b.A]: null != T && h < T,
-        [b.Ze]: null != T && h > T,
-        [b._t]: null != E
+      className: s()(h.Km, {
+        [h.A]: null != T && b < T,
+        [h.Ze]: null != T && b > T,
+        [h._t]: null != E
       }),
       ref: e => {
         I(C(e))
       },
       children: [(0, r.jsx)("div", {
-        className: b.cK,
+        className: h.cK,
         onMouseEnter: () => P(true),
         onMouseLeave: () => P(false),
         children: (0, r.jsx)(o.WP0, {
           size: "xs",
           color: "currentColor",
-          className: b.co
+          className: h.co
         })
       }), null != S && (0, r.jsx)("div", {
-        className: b.P0,
+        className: h.P0,
         children: (0, r.jsx)("img", {
           src: S,
-          className: b.Kk,
+          className: h.Kk,
           width: 32,
           height: 32,
           alt: "",
           "aria-hidden": true
         })
       }), (0, r.jsxs)("div", {
-        className: b.DP,
+        className: h.DP,
         children: [(0, r.jsx)(o.Text, {
-          className: b.qj,
+          className: h.qj,
           variant: "text-md/semibold",
           color: "text-strong",
           children: O
         }), !N && (0, r.jsx)(o.Text, {
-          className: b.ur,
+          className: h.ur,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,

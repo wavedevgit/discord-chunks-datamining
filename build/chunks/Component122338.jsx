@@ -19,7 +19,7 @@ let d = Chunk64700.memo(function(e) {
     onClose: a
   } = e;
   return (0, r.jsx)(i.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-needs-migration": true,
     navId: "widget-game-tags",
     "aria-label": c.intl.string(c.t.r6EJOu),
     onClose: a,

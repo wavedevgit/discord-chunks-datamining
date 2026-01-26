@@ -41,7 +41,7 @@ function I(e) {
     className: s()(O.hP, {
       [O.r9]: i
     }),
-    onClick: i ? T.tEg : r,
+    onClick: i ? E.tEg : r,
     "aria-label": l,
     children: [(0, n.jsx)(t, {
       size: "custom",
@@ -97,7 +97,7 @@ function R(e) {
             primaryGuild: null == t ? true : t.primaryGuild,
             userId: null == t ? true : t.id,
             contextGuildId: l,
-            badgeSize: E.Sl.SIZE_16,
+            badgeSize: S.Sl.SIZE_16,
             textVariant: "heading-md/semibold",
             className: N.Dz,
             containerClassName: N.UL
@@ -108,7 +108,7 @@ function R(e) {
           children: (0, n.jsx)(d.Text, {
             variant: "text-md/medium",
             color: "text-default",
-            children: S.Ay.getUserTag(t)
+            children: T.Ay.getUserTag(t)
           })
         })]
       })]

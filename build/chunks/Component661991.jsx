@@ -17,7 +17,7 @@ function l(n) {
     onSelect: l
   } = n, u = (0, r.A)(t, a);
   return (0, i.jsx)(d.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated": true,
     navId: "launch-context",
     onClose: e.Z_,
     "aria-label": c.intl.string(c.t.tKobzb),

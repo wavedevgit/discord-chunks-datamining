@@ -89,7 +89,7 @@ function _(e) {
     switch (e) {
       case C.B.GUILD_PRODUCTS:
         return (0, n.jsx)(v, {
-          icon: (0, n.jsx)(b.A, {
+          icon: (0, n.jsx)(j.A, {
             width: 20,
             height: 20
           }),
@@ -100,7 +100,7 @@ function _(e) {
         }, e);
       case C.B.GUILD_ROLE_SUBSCRIPTIONS:
         return (0, n.jsx)(v, {
-          icon: (0, n.jsx)(j.A, {
+          icon: (0, n.jsx)(b.A, {
             width: 20,
             height: 20
           }),
@@ -150,7 +150,7 @@ function _(e) {
       children: [(0, n.jsx)("div", {
         className: m.vR,
         children: I
-      }), i === C.B.GUILD_PRODUCTS && (0, n.jsx)(O.A, {})]
+      }), i === C.B.GUILD_PRODUCTS && (0, n.jsx)(O.default, {})]
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 774780, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -70,7 +70,7 @@ function v(e) {
       return L(null != (e = null == A ? true : A.id) ? e : null, null != (t = null == A ? true : A.triggerType) ? t : null)
     }, [L, A]);
   i.useEffect(() => {
-    y(T, (0, h.cT)(k))
+    y(T, (0, b.cT)(k))
   }, [y, T, k]);
   let M = (0, g.ws)(I);
   return (0, r.jsxs)("div", {
@@ -110,7 +110,7 @@ function v(e) {
         children: [l, (0, r.jsx)(r.Fragment, {
           children: n.map(e => {
             var t;
-            return (0, r.jsx)(b.A, {
+            return (0, r.jsx)(h.A, {
               guildId: I,
               triggerType: e,
               rules: null != (t = P[e]) ? t : [],

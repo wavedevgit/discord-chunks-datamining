@@ -1,5 +1,5 @@
 /** Chunk was on 43921 **/
-/** chunk id: 304232, original params: e,d,n (module,exports,require) **/
+/** chunk id: 304232, original params: e,d,a (module,exports,require) **/
 require.d(exports, {
   default: () => o
 });
@@ -16,16 +16,16 @@ var Chunk397927 = require("./397927.js"),
 function o(e) {
   let {
     summary: d,
-    onSelect: n
+    onSelect: a
   } = e;
-  return (0, a.jsx)(i.W1t, {
-    "data-menu-migration-ready": true,
-    onSelect: n,
+  return (0, n.jsx)(t.W1t, {
+    "data-menu-migrated-auto": true,
+    onSelect: a,
     navId: "channel-summaries-context-menu",
     "aria-label": c.intl.string(c.t.ogxXGq),
-    onClose: t.Z_,
-    children: (0, a.jsx)(i.rXV, {
-      children: (0, a.jsx)(i.Drp, {
+    onClose: i.Z_,
+    children: (0, n.jsx)(t.rXV, {
+      children: (0, n.jsx)(t.Drp, {
         id: "delete-summary",
         color: "danger",
         label: c.intl.string(c.t["5AwUIg"]),

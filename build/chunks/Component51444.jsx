@@ -22,18 +22,18 @@ function f(e) {
   var t, a;
   let {
     onSelect: f,
-    onClose: y
+    onClose: b
   } = e, {
-    avatarSizeMode: b,
+    avatarSizeMode: y,
     displayNameMode: O,
     displayUserMode: j
   } = (0, l.cf)([d.default], () => ({
     avatarSizeMode: d.default.getAvatarSizeMode(),
     displayNameMode: d.default.getDisplayNameMode(),
     displayUserMode: d.default.getDisplayUserMode()
-  })), h = r.useRef(y);
+  })), h = r.useRef(b);
   r.useEffect(() => {
-    h.current = y
+    h.current = b
   }), r.useEffect(() => () => {
     var e;
     return null == (e = h.current) ? true : e.call(h)
@@ -54,7 +54,7 @@ function f(e) {
     }))
   }
   return (0, n.jsxs)(i.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated-auto": true,
     navId: "overlay-voice-widget-context-menu",
     onClose: o.Z_,
     "aria-label": m.intl.string(m.t.tPfVWi),
@@ -69,7 +69,7 @@ function f(e) {
         name: m.intl.string(m.t.BKIKqx)
       }].map(e => (0, n.jsx)(i.iDA, {
         label: e.name,
-        checked: b === e.value,
+        checked: y === e.value,
         id: "avatar-size-mode-".concat(e.value),
         group: "avatar-size-mode",
         action: () => c.A.setAvatarSizeMode(e.value)

@@ -1,7 +1,7 @@
 /** Chunk was on 95813 **/
-/** chunk id: 755319, original params: n,t,i (module,exports,require) **/
+/** chunk id: 755319, original params: n,e,i (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,31 +12,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk957565 = require("./957565.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d(n) {
+function u(n) {
   let {
-    splashUrl: t,
+    splashUrl: e,
     onSelect: i
-  } = n, d = r.Q_.useSetting(), {
+  } = n, u = c.Q_.useSetting(), {
     tidaWebformEnabled: p
   } = s.A.useExperiment({
     location: "GuildOnboardingSplashContextMenu"
   }, {
     autoTrackExposure: false
-  }), h = e.useCallback(() => {
-    (0, c.C)(t)
-  }, [t]);
-  return c.p5 && d && p ? (0, a.jsx)(l.W1t, {
-    "data-menu-all-icons": true,
+  }), g = a.useCallback(() => {
+    (0, r.C)(e)
+  }, [e]);
+  return r.p5 && u && p ? (0, t.jsx)(l.W1t, {
+    "data-menu-migrated": true,
     navId: "guild-onboarding-splash-context",
     onClose: o.Z_,
     onSelect: i,
-    "aria-label": u.intl.string(u.t.Zow2V5),
-    children: (0, a.jsx)(l.rXV, {
-      children: (0, a.jsx)(l.Drp, {
+    "aria-label": d.intl.string(d.t.Zow2V5),
+    children: (0, t.jsx)(l.rXV, {
+      children: (0, t.jsx)(l.Drp, {
         id: "copy-image-link",
-        label: u.intl.string(u.t["8xHmxo"]),
-        action: h,
-        icon: l.qYV
+        label: d.intl.string(d.t["8xHmxo"]),
+        action: g,
+        icon: l.qYV,
+        leadingAccessory: {
+          type: "icon",
+          icon: l.qYV
+        }
       })
     })
   }) : null

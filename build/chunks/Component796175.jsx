@@ -47,7 +47,7 @@ function _(e) {
 }
 
 function U(e) {
-  let t, n, P, U, z, F, R, N, L, J, B, Q, {
+  let t, n, P, U, z, F, R, N, L, B, J, Q, {
       stream: W,
       analyticsContext: Y,
       appContext: Z,
@@ -63,7 +63,7 @@ function U(e) {
     et = function(e) {
       let t = _(e),
         n = (0, v.A)(G.A),
-        a = (0, I.Et)(),
+        a = (0, y.Et)(),
         o = e.ownerId === E.default.getId(),
         {
           enableViewerClipping: c,
@@ -79,12 +79,12 @@ function U(e) {
         id: "clip-stream",
         disabled: !a || !(o || d) || u,
         label: X.intl.string(X.t.U4URzP),
-        action: () => o ? (0, x.l0)() : (0, x.yd)((0, k._z)(e))
+        action: () => o ? (0, I.l0)() : (0, I.yd)((0, k._z)(e))
       }) : null
     }(W),
     en = _(W),
     er = (t = _(W), n = (0, w.A)(W.ownerId, M.x.STREAM), t ? n : null),
-    el = (U = (0, l.bG)([y.default], () => null != y.default.getRemoteSessionId()), z = (0, l.bG)([V.A], () => V.A.getChannel(W.channelId), [W.channelId]), F = _(W), (P = (N = null != (R = T.default.getCurrentUser()) && W.ownerId === R.id) ? X.intl.string(X.t.S5anIc) : F ? X.intl.string(X.t.q3O3J8) : X.intl.string(X.t["7Xq/nV"]), U || !N && F && (null == z ? true : z.isGuildStageVoice())) ? null : (0, r.jsx)(i.Drp, {
+    el = (U = (0, l.bG)([x.default], () => null != x.default.getRemoteSessionId()), z = (0, l.bG)([V.A], () => V.A.getChannel(W.channelId), [W.channelId]), F = _(W), (P = (N = null != (R = T.default.getCurrentUser()) && W.ownerId === R.id) ? X.intl.string(X.t.S5anIc) : F ? X.intl.string(X.t.q3O3J8) : X.intl.string(X.t["7Xq/nV"]), U || !N && F && (null == z ? true : z.isGuildStageVoice())) ? null : (0, r.jsx)(i.Drp, {
       id: "watch",
       label: P,
       action: F ? function() {
@@ -92,15 +92,19 @@ function U(e) {
       } : function() {
         c.default.selectVoiceChannel(W.channelId), (0, s.A9)(W)
       },
-      icon: $ && F && i.GT3
+      icon: $ && F && i.GT3,
+      leadingAccessory: $ && F ? {
+        type: "icon",
+        icon: i.GT3
+      } : true
     })),
-    ei = (L = _(W), J = (0, l.bG)([G.A], () => G.A.isLocalMute(W.ownerId, M.x.STREAM)), Q = null != (B = T.default.getCurrentUser()) && W.ownerId === B.id, !L || Q ? null : (0, r.jsx)(i.sLh, {
+    ei = (L = _(W), B = (0, l.bG)([G.A], () => G.A.isLocalMute(W.ownerId, M.x.STREAM)), Q = null != (J = T.default.getCurrentUser()) && W.ownerId === J.id, !L || Q ? null : (0, r.jsx)(i.sLh, {
       id: "mute",
       label: X.intl.string(X.t.sWmtI6),
       action: function() {
         a.A.toggleLocalMute(W.ownerId, M.x.STREAM)
       },
-      checked: J
+      checked: B
     })),
     ea = function(e) {
       let t = _(e),
@@ -165,8 +169,8 @@ function U(e) {
       }) : null
     }(W),
     eo = (0, A.A)(W, Z, q),
-    ec = (0, g.A)(W.channelId, W.ownerId),
-    es = (0, f.A)(W.channelId),
+    ec = (0, f.A)(W.channelId, W.ownerId),
+    es = (0, g.A)(W.channelId),
     eu = (0, b.A)(W.channelId, (0, k._z)(W)),
     ed = (0, l.bG)([V.A], () => V.A.getChannel(W.channelId), [W.channelId]),
     ep = (0, h.h)({
@@ -180,18 +184,18 @@ function U(e) {
       minimal: $
     }),
     {
-      analyticsLocations: ef
+      analyticsLocations: eg
     } = (0, p.Ay)(d.A.STREAM_CONTEXT_MENU),
-    eg = (0, m.E)({
+    ef = (0, m.E)({
       stream: W,
-      handleGoLive: () => (0, C.A)(W.guildId, W.channelId, ef),
+      handleGoLive: () => (0, C.A)(W.guildId, W.channelId, eg),
       minimal: $,
       appContext: Z
     });
   return $ ? (0, r.jsx)(p.f5, {
-    value: ef,
+    value: eg,
     children: (0, r.jsxs)(i.W1t, {
-      "data-menu-mixed": true,
+      "data-menu-migrated-auto": true,
       navId: "stream-context",
       onClose: o.Z_,
       "aria-label": X.intl.string(X.t.Gl3Q30),
@@ -199,7 +203,7 @@ function U(e) {
       onSelect: K,
       onInteraction: H,
       children: [(0, r.jsx)(i.rXV, {
-        children: ee ? eg : el
+        children: ee ? ef : el
       }), (0, r.jsxs)(i.rXV, {
         children: [ei, er]
       }), (0, r.jsx)(i.rXV, {
@@ -208,7 +212,7 @@ function U(e) {
         children: [(0, r.jsx)(i.bXX, {}), (0, r.jsxs)(i.Drp, {
           id: "more-options",
           label: X.intl.string(X.t.PdRCRg),
-          children: [ec, eb, ep, eo]
+          children: [ec, ep, eb, eo]
         })]
       }) : null]
     })
@@ -216,7 +220,7 @@ function U(e) {
     context: Y,
     object: D.ZSU.CONTEXT_MENU,
     children: (0, r.jsxs)(i.W1t, {
-      "data-menu-mixed": true,
+      "data-menu-migrated-auto": true,
       navId: "stream-context",
       onClose: o.Z_,
       "aria-label": X.intl.string(X.t.Gl3Q30),

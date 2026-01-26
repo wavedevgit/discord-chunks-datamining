@@ -65,7 +65,7 @@ function V(e) {
     header: s,
     className: x,
     onClose: p
-  } = e, j = (0, E.GV)(), {
+  } = e, j = (0, f.GV)(), {
     themeType: y
   } = (0, C.E)(), {
     largeImage: h
@@ -75,7 +75,7 @@ function V(e) {
   }), {
     appName: g,
     activity: k
-  } = (0, f.u)(n), U = (0, v.A)({
+  } = (0, E.u)(n), U = (0, v.A)({
     location: "UserProfileRecentActivityCard",
     applicationId: n.extra.application_id,
     source: I.Ob.UserProfile,
@@ -127,7 +127,7 @@ function V(e) {
     "aria-labelledby": j,
     children: [s, (0, t.jsx)(b.A, {
       applicationId: n.extra.application_id,
-      questContent: r.u.USER_PROFILE_ACTIVITY,
+      questContent: l.u.USER_PROFILE_ACTIVITY,
       children: e => (0, t.jsx)("div", {
         className: L.rf,
         ref: e,
@@ -159,7 +159,7 @@ function V(e) {
             }), (0, t.jsx)(_.mG, {
               location: _.N5.USER_PROFILE,
               className: L.jp,
-              children: n.content_type === l.I.TOP_GAME ? A.ac.map((e, a) => (0, t.jsx)(e, {
+              children: n.content_type === r.ContentInventoryEntryType.TOP_GAME ? A.ac.map((e, a) => (0, t.jsx)(e, {
                 entry: n
               }, "entry-".concat(a))) : u.n.map((e, a) => (0, t.jsx)(e, {
                 entry: n
@@ -183,8 +183,8 @@ function z(e) {
     entry: n,
     header: s,
     className: i,
-    onClose: l
-  } = e, r = (0, E.GV)(), {
+    onClose: r
+  } = e, l = (0, f.GV)(), {
     largeImage: x
   } = (0, d.nO)({
     entry: n
@@ -206,8 +206,8 @@ function z(e) {
     className: i,
     profileModalScrollTarget: M.bk.RECENT_ACTIVITY,
     onAction: y,
-    onClose: l,
-    "aria-labelledby": r,
+    onClose: r,
+    "aria-labelledby": l,
     children: [s, (0, t.jsx)("div", {
       className: L.rf,
       children: (0, t.jsxs)("div", {
@@ -233,7 +233,7 @@ function z(e) {
             children: [(0, t.jsx)(P.Q, {
               variant: "heading-sm/semibold",
               text: n.extra.media_title,
-              id: r
+              id: l
             }), (0, t.jsx)(P.A, {
               variant: "text-xs/normal",
               text: n.extra.media_subtitle
@@ -248,7 +248,7 @@ function z(e) {
             children: [(0, t.jsx)(P.Q, {
               variant: "heading-sm/semibold",
               text: n.extra.media_title,
-              id: r
+              id: l
             }), (0, t.jsx)(P.A, {
               variant: "text-xs/normal",
               text: n.extra.media_subtitle
@@ -271,10 +271,10 @@ function G(e) {
   let {
     user: s,
     entry: i,
-    header: l,
-    className: r,
+    header: r,
+    className: l,
     onClose: c
-  } = e, x = (0, E.GV)(), {
+  } = e, x = (0, f.GV)(), {
     largeImage: j
   } = (0, d.nO)({
     entry: i
@@ -288,15 +288,15 @@ function G(e) {
   }), h = (0, O.A)({
     userId: s.id,
     onAction: A
-  }), f = null == (a = i.extra.entries[0]) ? true : a.media;
-  return null == f ? null : (0, t.jsxs)(R.A, {
+  }), E = null == (a = i.extra.entries[0]) ? true : a.media;
+  return null == E ? null : (0, t.jsxs)(R.A, {
     ref: h,
-    className: r,
+    className: l,
     profileModalScrollTarget: M.bk.RECENT_ACTIVITY,
     onAction: A,
     onClose: c,
     "aria-labelledby": x,
-    children: [l, (0, t.jsx)("div", {
+    children: [r, (0, t.jsx)("div", {
       className: L.rf,
       children: (0, t.jsxs)("div", {
         className: L.Qs,
@@ -307,28 +307,28 @@ function G(e) {
           onClick: e => {
             e.stopPropagation(), A({
               action: "OPEN_SPOTIFY_ALBUM"
-            }), (0, p.n)(k.M0.ALBUM, f.external_parent_id)
+            }), (0, p.n)(k.M0.ALBUM, E.external_parent_id)
           }
         }), (0, t.jsxs)("div", {
           className: L.zH,
           children: [(0, t.jsxs)("div", {
             children: [(0, t.jsx)(P.Q, {
               variant: "heading-sm/semibold",
-              text: f.title,
+              text: E.title,
               onClick: () => {
                 A({
                   action: "OPEN_SPOTIFY_TRACK"
-                }), (0, p.n)(k.M0.TRACK, f.external_id)
+                }), (0, p.n)(k.M0.TRACK, E.external_id)
               },
               id: x
             }), (0, t.jsx)(P.A, {
               variant: "text-xs/normal",
-              text: null == (n = f.artists[0]) ? true : n.name,
+              text: null == (n = E.artists[0]) ? true : n.name,
               onClick: () => {
                 var e;
                 A({
                   action: "OPEN_SPOTIFY_ARTIST"
-                }), (0, p.n)(k.M0.ARTIST, null == (e = f.artists[0]) ? true : e.external_id)
+                }), (0, p.n)(k.M0.ARTIST, null == (e = E.artists[0]) ? true : e.external_id)
               }
             })]
           }), (0, t.jsx)(_.mG, {
@@ -350,8 +350,8 @@ function Q(e) {
     entry: n,
     header: s,
     className: i,
-    onClose: l
-  } = e, c = (0, E.GV)(), {
+    onClose: r
+  } = e, c = (0, f.GV)(), {
     largeImage: x
   } = (0, d.nO)({
     entry: n,
@@ -368,18 +368,18 @@ function Q(e) {
     onAction: u
   }), A = (0, g.A)({
     applicationId: n.extra.application_id,
-    onClose: l
+    onClose: r
   });
   return (0, t.jsxs)(R.A, {
     ref: y,
     className: i,
     profileModalScrollTarget: M.bk.RECENT_ACTIVITY,
     onAction: u,
-    onClose: l,
+    onClose: r,
     "aria-labelledby": c,
     children: [s, (0, t.jsx)(b.A, {
       applicationId: n.extra.application_id,
-      questContent: r.u.USER_PROFILE_ACTIVITY,
+      questContent: l.u.USER_PROFILE_ACTIVITY,
       children: e => (0, t.jsx)("div", {
         className: L.rf,
         ref: e,

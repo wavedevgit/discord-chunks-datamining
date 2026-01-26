@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 206774, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -36,14 +36,14 @@ function S(e) {
       selectedSection: S,
       setSelectedSection: I
     } = e,
-    T = (0, a.bG)([h.A], () => h.A.guild, []);
+    T = (0, a.bG)([b.A], () => b.A.guild, []);
   s()(null != T, "guildId cannot be null here");
   let {
     role: C,
     permissionSearchQuery: P
-  } = (0, a.cf)([h.A], () => ({
-    role: h.A.getRole(n),
-    permissionSearchQuery: h.A.getPermissionSearchQuery()
+  } = (0, a.cf)([b.A], () => ({
+    role: b.A.getRole(n),
+    permissionSearchQuery: b.A.getPermissionSearchQuery()
   }), [n]);
   i.useEffect(() => {
     null == C && l(null)
@@ -51,7 +51,7 @@ function S(e) {
   let w = (0, a.bG)([g.A], () => g.A.getHighestRole(T), [T]),
     R = (0, a.bG)([g.A], () => !g.A.isRoleHigher(T, w, C)),
     D = i.useRef(null),
-    G = (0, a.bG)([b.A], () => b.A.getProps().integrations),
+    G = (0, a.bG)([h.A], () => h.A.getProps().integrations),
     L = {
       role: C,
       editRoleId: n

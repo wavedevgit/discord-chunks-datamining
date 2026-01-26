@@ -158,7 +158,7 @@ let _ = e => {
           closePopout: t
         } = e;
         return (0, r.jsx)(c.W1t, {
-          "data-menu-mixed": true,
+          "data-menu-migrated": true,
           navId: "user-profile-widget-context-menu",
           onClose: () => {
             (0, u.Z_)(), t()
@@ -172,7 +172,11 @@ let _ = e => {
               label: O.intl.string(O.t.Mm07Yc),
               action: s,
               color: "danger",
-              icon: c.ucK
+              icon: c.ucK,
+              leadingAccessory: {
+                type: "icon",
+                icon: c.ucK
+              }
             })]
           })
         })

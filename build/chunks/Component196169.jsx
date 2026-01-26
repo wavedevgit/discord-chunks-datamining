@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 196169, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -178,7 +178,7 @@ function y() {
       alt: o.intl.string(o.t.yTPprb)
     }), (0, r.jsx)("img", {
       className: c.tj,
-      src: h,
+      src: b,
       alt: o.intl.string(o.t["+gd9QQ"])
     })]
   })
@@ -204,7 +204,7 @@ function A() {
       })]
     }), (0, r.jsx)("img", {
       className: c.U2,
-      src: b,
+      src: h,
       alt: o.intl.string(o.t.fD9Wv1)
     })]
   })

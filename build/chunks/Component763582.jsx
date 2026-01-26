@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 763582, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -35,7 +35,7 @@ function f(e) {
   })
 }
 
-function b(e) {
+function h(e) {
   let {
     guild: t,
     display: n
@@ -73,7 +73,7 @@ function b(e) {
   })
 }
 
-function h() {
+function b() {
   let e = i.useMemo(() => [{
       backgroundClass: p.Cy,
       username: "Wumpus#0000",
@@ -164,7 +164,7 @@ function h() {
   }, [t]), (0, r.jsx)("div", {
     className: p.cI,
     "aria-hidden": true,
-    children: e.map((e, n) => (0, r.jsx)(b, {
+    children: e.map((e, n) => (0, r.jsx)(h, {
       guild: e,
       display: n === t
     }, n))
@@ -189,7 +189,7 @@ function x(e) {
         children: m.intl.string(m.t["LPJmL/"])
       }), (0, r.jsxs)("div", {
         className: p.kL,
-        children: [(0, r.jsx)(h, {}), (0, r.jsx)(a.Heading, {
+        children: [(0, r.jsx)(b, {}), (0, r.jsx)(a.Heading, {
           variant: "heading-xl/semibold",
           children: m.intl.string(m.t.ALlnbi)
         }), (0, r.jsx)(a.Text, {

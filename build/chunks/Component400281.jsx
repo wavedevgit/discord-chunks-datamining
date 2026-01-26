@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 400281, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -37,24 +37,24 @@ function j(e) {
     })
   }, l = (0, r.jsx)(i, {
     children: (0, r.jsx)(f.A, {})
-  }, h.u.HOW_IT_WORKS), a = (0, r.jsx)(i, {
+  }, b.u.HOW_IT_WORKS), a = (0, r.jsx)(i, {
     children: (0, r.jsx)(m.A, {})
-  }, h.u.BENEFITS);
+  }, b.u.BENEFITS);
   return null != n || (null == t ? true : t.sections) == null ? (0, r.jsxs)(r.Fragment, {
     children: [l, a]
   }) : (0, r.jsx)(r.Fragment, {
     children: t.sections.map(e => {
       switch (e.type) {
-        case h.u.HOW_IT_WORKS:
+        case b.u.HOW_IT_WORKS:
           return l;
-        case h.u.BENEFITS:
+        case b.u.BENEFITS:
           return a;
-        case h.u.OTHER_CREATORS:
+        case b.u.OTHER_CREATORS:
           return (0, r.jsx)(i, {
             children: (0, r.jsx)(p.A, {
               highlightedCreators: e.creators
             })
-          }, h.u.OTHER_CREATORS)
+          }, b.u.OTHER_CREATORS)
       }
     })
   })
@@ -67,7 +67,7 @@ function _(e) {
     eligibilityLoading: m,
     eligibilityError: p,
     eligibility: f
-  } = n, h = (0, c.s)(f), {
+  } = n, b = (0, c.s)(f), {
     isLoading: _,
     error: O,
     creatorMonetizationOnboardingMarketing: v
@@ -81,11 +81,11 @@ function _(e) {
       guild_id: t.id,
       is_owner: n.isGuildOwner,
       is_eligible: n.eligibleForMonetization,
-      ineligible_reasons: h
+      ineligible_reasons: b
     }
   }, {
     disableTrack: null == t.id || null == f
-  }), m || null == f || _) ? (0, r.jsx)(s.y$y, {}) : f.actionRequired ? (0, r.jsx)(b.A, {
+  }), m || null == f || _) ? (0, r.jsx)(s.y$y, {}) : f.actionRequired ? (0, r.jsx)(h.A, {
     guild: t
   }) : null != p ? (0, r.jsx)(s.wx6, {
     type: "critical",

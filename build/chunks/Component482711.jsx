@@ -79,7 +79,7 @@ function O(e) {
   return (0, r.jsx)("div", {
     className: h.li,
     children: (0, r.jsxs)(o.W1t, {
-      "data-menu-migration-ready": true,
+      "data-menu-migrated": true,
       navId: "guild-product-context",
       onClose: g,
       "aria-label": _.intl.string(_.t.Z146dM),
@@ -88,16 +88,29 @@ function O(e) {
         children: [t && (0, r.jsx)(o.Drp, {
           id: "guild-product-edit",
           label: _.intl.string(_.t.EEfce4),
+          icon: o.R2l,
+          leadingAccessory: {
+            type: "icon",
+            icon: o.R2l
+          },
           action: c
         }), i && (0, r.jsx)(o.Drp, {
           id: "guild-product-copy-link",
           label: _.intl.string(_.t.XR26uj),
           icon: o.qYV,
+          leadingAccessory: {
+            type: "icon",
+            icon: o.qYV
+          },
           action: f
         }), a && (0, r.jsx)(o.Drp, {
           id: "guild-product-test-download",
           label: _.intl.string(_.t.aXoI6U),
           icon: o.s3U,
+          leadingAccessory: {
+            type: "icon",
+            icon: o.s3U
+          },
           action: p
         })]
       }), (0, r.jsxs)(o.rXV, {

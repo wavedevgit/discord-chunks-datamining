@@ -91,7 +91,7 @@ function S(e, t) {
     }, [r]),
     A = i.useMemo(() => {
       var n;
-      return null != (n = null == e ? true : e.filter(e => e.content_type === a.I.PLAYED_GAME).filter(e => t.has(e.id))) ? n : []
+      return null != (n = null == e ? true : e.filter(e => e.content_type === a.ContentInventoryEntryType.PLAYED_GAME).filter(e => t.has(e.id))) ? n : []
     }, [e, t]),
     I = i.useMemo(() => [...new Set(A.map(e => e.extra.application_id))], [A]),
     S = (0, s.bG)([l.A], () => I.length > 0 && I.some(e => l.A.isFetchingApplication(e) || null == l.A.getApplication(e) && !l.A.didFetchingApplicationFail(e))),
@@ -123,7 +123,7 @@ function S(e, t) {
     k = i.useMemo(() => {
       if (!M && true !== e) return e.map(e => {
         var t, r, i, s;
-        if (e.content_type !== a.I.PLAYED_GAME || null == j) return e;
+        if (e.content_type !== a.ContentInventoryEntryType.PLAYED_GAME || null == j) return e;
         let o = e.extra.application_id in C ? C[e.extra.application_id] : null;
         if (null == o) return e;
         let l = o.id in j ? j[o.id] : null;

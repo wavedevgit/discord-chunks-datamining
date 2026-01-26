@@ -72,7 +72,7 @@ function N(e, t) {
 function M(e) {
   return (0, o.bG)([w.A], () => {
     let t = w.A.getActiveStreamForApplicationStream(e);
-    return null != t && (0, E._z)(t) === (0, E._z)(e)
+    return null != t && (0, y._z)(t) === (0, y._z)(e)
   })
 }
 
@@ -92,7 +92,7 @@ function U(e) {
         {
           enableViewerClipping: s,
           ignoreSenderPreference: c
-        } = y.A.useExperiment({
+        } = S.A.useExperiment({
           location: "StreamContextMenu"
         }, {
           autoTrackExposure: false
@@ -103,7 +103,7 @@ function U(e) {
         id: "clip-stream",
         disabled: !l || !(i || d) || u,
         label: k.intl.string(k.t.U4URzP),
-        action: () => i ? (0, j.l0)() : (0, j.yd)((0, E._z)(e))
+        action: () => i ? (0, j.l0)() : (0, j.yd)((0, y._z)(e))
       }) : null
     }(W),
     ei = M(W),
@@ -118,7 +118,7 @@ function U(e) {
       id: "watch",
       label: U,
       action: z ? function() {
-        (0, d.vN)((0, E._z)(W)), (0, D.YX)(_.uss.GO_LIVE, {
+        (0, d.vN)((0, y._z)(W)), (0, D.YX)(_.uss.GO_LIVE, {
           type: D.Z5.GO_LIVE,
           value: D.IP.DISABLED,
           userId: W.ownerId
@@ -205,13 +205,13 @@ function U(e) {
       id: "fit",
       label: k.intl.string(k.t.mpnvrV),
       action: () => {
-        (0, G.CZ)(W, Q === S.$.CONTAIN ? S.$.COVER : S.$.CONTAIN), (0, D.YX)(_.uss.GO_LIVE, {
+        (0, G.CZ)(W, Q === E.$.CONTAIN ? E.$.COVER : E.$.CONTAIN), (0, D.YX)(_.uss.GO_LIVE, {
           type: D.Z5.GO_LIVE,
           value: D.IP.SETTING_ADJUSTED,
           userId: W.ownerId
         })
       },
-      checked: Q === S.$.COVER
+      checked: Q === E.$.COVER
     }));
   return (0, r.jsx)(b.A, {
     context: ee,

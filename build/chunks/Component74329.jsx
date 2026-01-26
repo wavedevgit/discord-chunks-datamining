@@ -67,6 +67,10 @@ function p(e, t, d) {
     color: "danger",
     label: u.intl.string(u.t.sdnCxV),
     action: y,
-    icon: a.EpV
+    icon: a.EpV,
+    leadingAccessory: {
+      type: "icon",
+      icon: a.EpV
+    }
   })
 }

@@ -1,8 +1,8 @@
 /** Chunk was on 78870 **/
 /** chunk id: 558060, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => d,
-  R: () => a
+  R: () => a,
+  default: () => d
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),

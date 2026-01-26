@@ -12,12 +12,10 @@ let s = e => {
   let {
     onChangeAvatar: t,
     onChangeAvatarDecoration: n,
-    onClose: s,
-    className: o
+    onClose: s
   } = e;
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-migration-ready": true,
-    className: o,
+    "data-menu-needs-review": true,
     onClose: s,
     onSelect: true,
     navId: "user-settings-change-avatar",

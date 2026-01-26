@@ -1,7 +1,7 @@
 /** Chunk was on 39778 **/
 /** chunk id: 385913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => B
+  default: () => Y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -45,15 +45,15 @@ var Chunk397927 = require("./397927.js"),
   Chunk77544 = require("./77544.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
+let Y = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   let {
     user: t,
     channel: n,
     channelSelected: a = false,
     showMute: o = true,
-    showMediaItems: u = false,
+    showMediaItems: c = false,
     showChannelCallItems: F = false,
-    showModalItems: B = true,
+    showModalItems: Y = true,
     targetIsUser: W = false,
     context: J,
     onSelect: K,
@@ -71,15 +71,15 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     context: J
   }), $ = (0, D.A)({
     user: t
-  }), ee = (0, X.A)(t.id), et = (0, M.A)(n.id, a), en = (0, N.A)({
+  }), ee = (0, X.A)(t.id), et = (0, M.A)(n.id, a), en = (0, V.A)({
     user: t
   }), er = (0, d.A)(null, t), ei = (0, k.A)(t.id), el = (0, L.g)(n.id, "DMUserContextMenu"), ea = (0, L.A)(t, el), eo = (0, x.A)({
     user: t
   }), es = (0, E.A)({
     user: t
-  }), ed = (0, V.A)({
+  }), ed = (0, N.A)({
     user: t
-  }), eu = (0, R.A)(t.id), ec = (0, g.u)({
+  }), ec = (0, R.A)(t.id), eu = (0, g.u)({
     userId: t.id,
     channelId: n.id,
     guildId: n.getGuildId()
@@ -89,26 +89,26 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   }), eb = (0, w.A)({
     user: t,
     location: "DMUserContextMenu"
-  }), eg = (0, j.Ay)(n), ep = (0, O.A)({
+  }), eg = (0, j.Ay)(n), ep = (0, y.A)({
     id: t.id,
-    label: Y.intl.string(Y.t["/AXYnE"])
-  }), eh = (0, O.A)({
+    label: B.intl.string(B.t["/AXYnE"])
+  }), eh = (0, y.A)({
     id: n.id,
-    label: Y.intl.string(Y.t.gFHI3k)
-  }), ej = (0, h.A)(n), eO = (0, f.A)(t.id), ey = (0, A.A)(n.id), ev = (0, _.A)(t), em = (0, b.A)(t.id), e_ = (0, c.A)(n.id, t.id), ex = (0, I.A)({
+    label: B.intl.string(B.t.gFHI3k)
+  }), ej = (0, h.A)(n), ey = (0, f.A)(t.id), eO = (0, A.A)(n.id), ev = (0, _.A)(t), em = (0, b.A)(t.id), e_ = (0, u.A)(n.id, t.id), ex = (0, I.A)({
     commandType: s.kc.USER,
     commandTargetId: t.id,
     channel: n,
     guildId: true,
     onHeightUpdate: H
-  }), eD = (0, y.m)(n), eE = (0, y.y)(n), eP = (0, v.A)(n), eI = (0, m.A)(n), eC = (0, T.A)({
+  }), eD = (0, O.m)(n), eE = (0, O.y)(n), eP = (0, v.A)(n), eI = (0, m.A)(n), eC = (0, T.A)({
     channel: n
   }), eS = n.isManaged(), eM = t.isNonUserBot();
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-needs-review": true,
     navId: "user-context",
     onClose: l.Z_,
-    "aria-label": Y.intl.string(Y.t.liqwPJ),
+    "aria-label": B.intl.string(B.t.liqwPJ),
     onSelect: K,
     onInteraction: q,
     children: [(0, r.jsx)(i.rXV, {
@@ -119,19 +119,19 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
       children: !eM && ev
     }), (0, r.jsxs)(i.rXV, {
       children: [!eM && (0, r.jsxs)(r.Fragment, {
-        children: [B && z, Z, !eS && ea, B && Q, B && $, ee]
+        children: [Y && z, Z, !eS && ea, Y && Q, Y && $, ee]
       }), (0, p.A)(n.id) && z, et]
     }), !eM && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.rXV, {
-        children: u && ei
+        children: c && ei
       }), (0, r.jsx)(i.rXV, {
-        children: B && er
+        children: Y && er
       }), (0, r.jsxs)(i.rXV, {
-        children: [u && eu, B && ec, u && eA, ex, B && en, eo, es, ed, B && eb, B && ef, u && em]
+        children: [ex, c && em, c && ec, Y && eu, c && eA, Y && en, eo, es, ed, Y && eb, Y && ef]
       }), (0, r.jsx)(i.rXV, {
         children: o && eg
       }), F && (0, r.jsxs)(i.rXV, {
-        children: [e_, ey, eO]
+        children: [e_, eO, ey]
       })]
     }), (0, p.A)(n.id) && (0, r.jsx)(i.rXV, {
       children: o && eg

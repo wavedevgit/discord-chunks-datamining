@@ -48,11 +48,11 @@ function b(e) {
       onSelect: b,
       onClose: f
     } = e,
-    y = (t = l.Ay.useState(e => e.timeToLiveMs, o.x), (0, a.jsx)(i.aK1, {
+    y = (t = l.Ay.useState(e => e.timeToLiveMs, o.x), (0, a.jsx)(c.aK1, {
       id: "opacity",
       "aria-haspopup": true,
       label: "Time To Live",
-      control: (e, r) => (0, a.jsx)(i.i42, s(p({}, e), {
+      control: (e, r) => (0, a.jsx)(c.i42, s(p({}, e), {
         ref: r,
         value: t,
         maxValue: l.nl,
@@ -62,11 +62,11 @@ function b(e) {
         "aria-label": "Time To Live"
       }))
     })),
-    O = (r = l.Ay.useState(e => e.reappearTimeMs, o.x), (0, a.jsx)(i.aK1, {
+    O = (r = l.Ay.useState(e => e.reappearTimeMs, o.x), (0, a.jsx)(c.aK1, {
       id: "opacity",
       "aria-haspopup": true,
       label: "Time To Reappear",
-      control: (e, t) => (0, a.jsx)(i.i42, s(p({}, e), {
+      control: (e, t) => (0, a.jsx)(c.i42, s(p({}, e), {
         ref: t,
         value: r,
         maxValue: l.J5,
@@ -82,10 +82,10 @@ function b(e) {
   }), n.useEffect(() => () => {
     var e;
     return null == (e = j.current) ? true : e.call(j)
-  }, []), (0, a.jsxs)(i.W1t, {
-    "data-menu-migration-ready": true,
+  }, []), (0, a.jsxs)(c.W1t, {
+    "data-menu-migrated-auto": true,
     navId: "overlay-click-zone-debug-context-menu",
-    onClose: c.Z_,
+    onClose: i.Z_,
     "aria-label": u.intl.string(u.t.tPfVWi),
     onSelect: b,
     children: [y, O]

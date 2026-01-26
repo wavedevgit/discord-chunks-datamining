@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 992711, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -21,7 +21,7 @@ function p(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.bG)([a.A], () => a.A.isAdvancedMode(t)), f = (0, i.bG)([c.A], () => c.A.editedDefaultChannelIds), [b, h] = (0, o.tb)(t, f), [x, j] = (0, d.tB)(t, [...f]), _ = p ? j.length : h.length, O = p ? x.length : b.length, v = O >= u.Kd, y = j.length - h.length, A = (0, r.jsx)(s.yr3, {
+  } = e, p = (0, i.bG)([a.A], () => a.A.isAdvancedMode(t)), f = (0, i.bG)([c.A], () => c.A.editedDefaultChannelIds), [h, b] = (0, o.tb)(t, f), [x, j] = (0, d.tB)(t, [...f]), _ = p ? j.length : b.length, O = p ? x.length : h.length, v = O >= u.Kd, y = j.length - b.length, A = (0, r.jsx)(s.yr3, {
     size: "sm",
     color: l.A.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.A.unsafe_rawColors.WHITE.css,

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 241499, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -67,8 +67,8 @@ function S(e) {
     onChange: a,
     onKeyDown: o,
     onClear: u,
-    onRuleReorder: b,
-    isDropHovered: h,
+    onRuleReorder: h,
+    isDropHovered: b,
     focused: x,
     onFocus: j,
     previewEnabled: O,
@@ -84,7 +84,7 @@ function S(e) {
       index: l
     },
     end: (e, t) => {
-      null == e || t.didDrop() || b(e.rule, null, true)
+      null == e || t.didDrop() || h(e.rule, null, true)
     }
   }), [, D] = (0, d.H)({
     accept: N,
@@ -96,10 +96,10 @@ function S(e) {
       if (null == i || null == s) return;
       let a = (i.bottom - i.top) / 2,
         o = s.y - i.top;
-      r < l && o < a || r > l && o > a || b(e.rule, l, false)
+      r < l && o < a || r > l && o > a || h(e.rule, l, false)
     },
     drop: e => {
-      b(e.rule, l, true)
+      h(e.rule, l, true)
     }
   });
   if (i.useLayoutEffect(() => (w(I), R(D(S)), () => {
@@ -111,7 +111,7 @@ function S(e) {
   return (0, r.jsx)("div", {
     ref: S,
     className: s()(y.XQ, {
-      [y.cB]: h
+      [y.cB]: b
     }),
     "data-dnd-name": G,
     children: (0, r.jsxs)("div", {
@@ -171,7 +171,7 @@ function I(e) {
     setRules: n,
     guild: l,
     disabled: s
-  } = e, a = l.rulesChannelId, c = l.features.has(O.GuildFeatures.PREVIEW_ENABLED), d = (0, u.bG)([b.A], () => null != a ? b.A.getChannel(a) : null), m = (0, u.bG)([h.Ay], () => h.Ay.getDefaultChannel(l.id)), [p, f] = i.useState(null), [N, I] = i.useState(null), T = i.useCallback(e => {
+  } = e, a = l.rulesChannelId, c = l.features.has(O.GuildFeatures.PREVIEW_ENABLED), d = (0, u.bG)([h.A], () => null != a ? h.A.getChannel(a) : null), m = (0, u.bG)([b.Ay], () => b.Ay.getDefaultChannel(l.id)), [p, f] = i.useState(null), [N, I] = i.useState(null), T = i.useCallback(e => {
     if (!s && t.length !== _.yN)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];

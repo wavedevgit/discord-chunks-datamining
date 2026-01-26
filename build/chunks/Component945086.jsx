@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 945086, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -49,8 +49,8 @@ function p(e) {
     className: u,
     textColor: p,
     headerColor: f,
-    buttonProps: b,
-    useExpressiveButton: h
+    buttonProps: h,
+    useExpressiveButton: b
   } = e, {
     analyticsLocations: x
   } = (0, c.Ay)(o.A.GUILD_BOOSTING_UPSELL_BANNER);
@@ -80,8 +80,8 @@ function p(e) {
           guild: d,
           analyticsLocation: s,
           className: g.x6,
-          buttonProps: b,
-          useExpressiveButton: h
+          buttonProps: h,
+          useExpressiveButton: b
         })
       })]
     })

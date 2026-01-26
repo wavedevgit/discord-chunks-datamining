@@ -17,10 +17,10 @@ function s(t) {
     textContent: n,
     onSelect: s
   } = t, u = (0, o.A)(e, n);
-  return a.isPlatformEmbedded && null != u ? (0, l.jsx)(i.W1t, {
-    "data-menu-migration-ready": true,
+  return r.isPlatformEmbedded && null != u ? (0, l.jsx)(i.W1t, {
+    "data-menu-mixed-auto": true,
     navId: "image-context",
-    onClose: r.Z_,
+    onClose: a.Z_,
     "aria-label": c.intl.string(c.t.Zow2V5),
     onSelect: s,
     children: (0, l.jsx)(i.rXV, {

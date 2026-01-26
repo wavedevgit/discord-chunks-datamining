@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 643674, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,8 +23,8 @@ let p = e => {
       onSetReason: m,
       onSelectEmoji: p,
       onClearPressed: f,
-      reasonMinLength: b,
-      reasonMaxLength: h,
+      reasonMinLength: h,
+      reasonMaxLength: b,
       placeholder: x,
       position: j
     } = e, _ = i.useRef(null), [O, v] = i.useState(false), y = (0, l.bG)([u.A], () => u.A.isGuildMetadataLoaded()), A = (0, r.jsx)(s.YNO, {
@@ -68,8 +68,8 @@ let p = e => {
     return (0, r.jsx)(s.ksK, {
       placeholder: x,
       value: n,
-      minLength: b,
-      maxLength: h,
+      minLength: h,
+      maxLength: b,
       defaultDirty: (null == n ? true : n.length) > 0,
       leading: {
         type: "emoji",

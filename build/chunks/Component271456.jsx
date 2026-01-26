@@ -13,30 +13,32 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function u(t) {
-  let n = (0, r.bG)([s.A], () => s.A.isInProgress());
+  let n = (0, r.bG)([o.A], () => o.A.isInProgress());
   return (0, a.b)() && t.isThread() ? (0, e.jsx)(l.Drp, {
     id: "summarize-thread",
-    label: n ? o.intl.string(o.t.oKECxB) : o.intl.string(o.t.EXfguE),
+    label: n ? s.intl.string(s.t.oKECxB) : s.intl.string(s.t.EXfguE),
     disabled: n,
-    icon: n ? (0, e.jsx)(l.y$y, {
-      type: l.tVU.PULSING_ELLIPSIS
-    }) : null,
+    loading: n,
     action: () => d.A.summarizeThread(t),
     children: n ? null : (0, e.jsxs)(e.Fragment, {
       children: [(0, e.jsx)(l.Drp, {
         id: "summarize_thread_for_everyone",
-        label: o.intl.string(o.t.eCzSdd),
+        label: s.intl.string(s.t.eCzSdd),
         action: () => d.A.summarizeThread(t, false),
-        icon: (0, e.jsx)(l.nFg, {
-          size: "sm"
-        })
+        icon: l.nFg,
+        leadingAccessory: {
+          type: "icon",
+          icon: l.nFg
+        }
       }), (0, e.jsx)(l.Drp, {
         id: "summarize_thread_for_me",
-        label: o.intl.string(o.t["HOe+Hq"]),
+        label: s.intl.string(s.t["HOe+Hq"]),
         action: () => d.A.summarizeThread(t),
-        icon: (0, e.jsx)(l.nys, {
-          size: "sm"
-        })
+        icon: l.nys,
+        leadingAccessory: {
+          type: "icon",
+          icon: l.nys
+        }
       })]
     })
   }) : null

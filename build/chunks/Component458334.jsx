@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 458334, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,21 +22,21 @@ function p(e, t) {
     var i, s, u, p;
     let f;
     if (!t.managed) return null;
-    let b = null == (i = t.tags) ? true : i.bot_id,
-      h = null == (s = t.tags) ? true : s.integration_id,
+    let h = null == (i = t.tags) ? true : i.bot_id,
+      b = null == (s = t.tags) ? true : s.integration_id,
       x = (null == (u = t.tags) ? true : u.premium_subscriber) !== true,
       j = (null == (p = t.tags) ? true : p.guild_connections) !== true;
-    if (null != b ? f = null == n ? true : n.find(e => {
+    if (null != h ? f = null == n ? true : n.find(e => {
         var t;
         let {
           application: n
         } = e;
-        return (null == n || null == (t = n.bot) ? true : t.id) === b
-      }) : null != h && (f = null == n ? true : n.find(e => {
+        return (null == n || null == (t = n.bot) ? true : t.id) === h
+      }) : null != b && (f = null == n ? true : n.find(e => {
         let {
           id: t
         } = e;
-        return t === h
+        return t === b
       })), null != f && null != f.application && null != f.name) {
       let e = f.application.id,
         t = f.name;

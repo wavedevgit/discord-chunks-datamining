@@ -102,7 +102,7 @@ function C(e) {
     })
   });
   return (0, n.jsxs)(l.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-needs-migration": true,
     "aria-label": b.intl.string(b.t["+1H47t"]),
     navId: "stream-options",
     onClose: c,
@@ -166,7 +166,7 @@ function C(e) {
             group: "resolution",
             id: "stream-option-resolution-".concat(t),
             checked: R === t,
-            label: t !== g.on.RESOLUTION_720 ? (0, n.jsx)(w, {
+            void_label: t !== g.on.RESOLUTION_720 ? (0, n.jsx)(w, {
               label: (0, p.b)(t)
             }) : (0, p.b)(t),
             action: () => (function(e) {
@@ -187,7 +187,7 @@ function C(e) {
           group: "frame-rate",
           id: "stream-option-frame-rate-".concat(e),
           checked: P === e,
-          label: e === g.kn.FPS_60 ? (0, n.jsx)(w, {
+          void_label: e === g.kn.FPS_60 ? (0, n.jsx)(w, {
             label: "".concat(e, "fps")
           }) : "".concat(e, "fps"),
           action: () => (function(e) {

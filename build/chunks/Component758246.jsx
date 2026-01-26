@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 758246, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -76,8 +76,8 @@ let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     }, [s, T]);
     let {
       canManageGuild: P
-    } = (0, l.cf)([b.A], () => ({
-      canManageGuild: b.A.can(E.xBc.MANAGE_GUILD, s)
+    } = (0, l.cf)([h.A], () => ({
+      canManageGuild: h.A.can(E.xBc.MANAGE_GUILD, s)
     })), w = (0, l.bG)([_.A], () => _.A.isGuildMetadataLoaded()), R = (0, l.bG)([_.A], () => null != s ? _.A.getMetadata() : null), D = (0, l.bG)([_.A], () => null != s && (null == R ? true : R.isPublished) ? _.A.getSlug() : null), [G, L] = i.useState([true]), [k, M] = i.useState(true), [U, B] = i.useState([false]), [F, H] = i.useState([""]);
     i.useEffect(() => {
       if (null !== R) {
@@ -252,7 +252,7 @@ let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           gap: 16,
                           children: [(0, r.jsx)(f.A, {
                             image: s.discoverySplash,
-                            makeURL: e => h.Ay.getGuildDiscoverySplashURL({
+                            makeURL: e => b.Ay.getGuildDiscoverySplashURL({
                               id: s.id,
                               splash: e,
                               size: 512 * (0, m.mZ)()

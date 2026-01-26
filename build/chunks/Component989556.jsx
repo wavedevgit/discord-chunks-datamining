@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 989556, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -38,15 +38,15 @@ let x = function(e) {
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(o.D0$, {
-      label: b.intl.string(f.default["tN+8pD"]),
+      label: h.intl.string(f.default["tN+8pD"]),
       children: e => (0, r.jsxs)("div", {
-        className: h.I8,
+        className: b.I8,
         children: [(0, r.jsx)("div", {
-          className: h.sx,
+          className: b.sx,
           children: (0, r.jsx)(a.ob, {
             id: e.controlId,
-            className: h.U3,
-            inputClassName: l()(h.f1, "heading-sm/semibold"),
+            className: b.U3,
+            inputClassName: l()(b.f1, "heading-sm/semibold"),
             maxLength: 4,
             autoFocus: true,
             placeholder: "WUMP",
@@ -62,19 +62,19 @@ let x = function(e) {
             onChange: A
           })
         }), (0, r.jsx)("div", {
-          className: h.e7,
+          className: b.e7,
           children: (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            children: b.intl.string(f.default.CrHXHt)
+            children: h.intl.string(f.default.CrHXHt)
           })
         })]
       })
     }), y && (0, r.jsx)(d.A, {
-      className: h.O2,
+      className: b.O2,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
-        children: b.intl.format(f.default["4ZKDXq"], {
+        children: h.intl.format(f.default["4ZKDXq"], {
           articleUrl: u.A.getArticleURL(p.MVz.SERVER_TAGS)
         })
       })

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 324898, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -21,7 +21,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk690450 = require("./690450.js");
 
-function h(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function j(e) {
   } = e, i = (0, a.bG)([d.A], () => d.A.getEveryoneRole(t)), g = x(t), m = g.length > 0, j = p.dR.some(e => {
     var n, r;
     return !u.A.can(e, t, null, {
-      [i.id]: (n = h({}, i), r = r = {
+      [i.id]: (n = b({}, i), r = r = {
         permissions: s.TF(i.permissions, e)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
@@ -65,7 +65,7 @@ function j(e) {
     })
   }), _ = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: b.Ly,
+      className: h.Ly,
       children: [(0, r.jsx)(c.Heading, {
         variant: "text-md/semibold",
         color: "text-strong",
@@ -82,21 +82,21 @@ function j(e) {
       color: "currentColor",
       height: 24,
       width: 24,
-      className: b.$e,
+      className: h.$e,
       "aria-label": f.intl.string(f.t["bG7Gu+"])
     }) : (0, r.jsx)(c.yr3, {
       size: "custom",
       color: "currentColor",
       height: 24,
       width: 24,
-      className: b.z6,
+      className: h.z6,
       "aria-label": f.intl.string(f.t.YQix8y)
     })]
   });
   return m ? j ? (0, r.jsx)(o.m, {
     text: f.intl.string(f.t["E5v/a/"]),
     children: (0, r.jsx)("div", {
-      className: l()(b.ph, b.r9),
+      className: l()(h.ph, h.r9),
       children: _
     })
   }) : (0, r.jsx)(c.DUT, {
@@ -105,15 +105,15 @@ function j(e) {
         let {
           default: e
         } = await n.e("94286").then(n.bind(n, 868952));
-        return n => (0, r.jsx)(e, h({
+        return n => (0, r.jsx)(e, b({
           guild: t
         }, n))
       })
     },
-    className: l()(b.ph, b.vk),
+    className: l()(h.ph, h.vk),
     children: _
   }) : (0, r.jsx)("div", {
-    className: b.ph,
+    className: h.ph,
     children: _
   })
 }

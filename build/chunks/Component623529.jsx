@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 623529, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -39,7 +39,7 @@ function I(e) {
     format: a
   } = (0, v.A)(n.id), g = (0, j.Tq)(n.id), x = i.useCallback(() => {
     var e;
-    return (null == g || null == (e = g.cover_image_asset) ? true : e.application_id) == null ? null : (0, h.YE)(g.cover_image_asset.application_id, g.cover_image_asset, S)
+    return (null == g || null == (e = g.cover_image_asset) ? true : e.application_id) == null ? null : (0, b.YE)(g.cover_image_asset.application_id, g.cover_image_asset, S)
   }, [g]), [I, T] = i.useState(a), [C, P] = i.useState(null != (t = null == g ? true : g.description) ? t : ""), [w, R] = i.useState(x), [D, G] = i.useState(null == g ? true : g.store_page_guild_products_default_sort), [L, k] = i.useState(null == g ? true : g.server_shop_tab_order), {
     loading: M,
     error: U,
@@ -60,7 +60,7 @@ function I(e) {
     Y = null != C && "" !== C && null != w;
   i.useEffect(() => {
     var e;
-    (null == g || null == (e = g.cover_image_asset) ? true : e.application_id) != null && R((0, h.YE)(g.cover_image_asset.application_id, g.cover_image_asset, S))
+    (null == g || null == (e = g.cover_image_asset) ? true : e.application_id) != null && R((0, b.YE)(g.cover_image_asset.application_id, g.cover_image_asset, S))
   }, [null == g ? true : g.cover_image_asset]);
   let X = (0, _.gN)(),
     J = i.useMemo(() => A.aq.map(e => ({
@@ -127,7 +127,7 @@ function I(e) {
     }), (0, r.jsxs)(m.D0$, {
       label: E.intl.string(E.t["0kpTpM"]),
       description: E.intl.string(E.t.i2rCwT),
-      children: [(0, r.jsx)(b.A, {
+      children: [(0, r.jsx)(h.A, {
         image: w,
         hint: F,
         showIcon: true,

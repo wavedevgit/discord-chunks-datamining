@@ -254,7 +254,7 @@ function R(e) {
     credential: i
   } = e;
   return (0, r.jsxs)(o.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated": true,
     navId: "webauthn-credential-actions",
     onClose: l.Z_,
     "aria-label": A.intl.string(A.t["+nrTbK"]),

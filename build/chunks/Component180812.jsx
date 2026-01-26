@@ -1,7 +1,7 @@
 /** Chunk was on 87997 **/
 /** chunk id: 180812, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => x
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -73,10 +73,10 @@ function D(e) {
     onAction: () => {
       null == _ || _()
     }
-  }), x = (0, O.A)({
+  }), P = (0, O.A)({
     user: t,
     context: I
-  }), P = (0, b.A)({
+  }), x = (0, b.A)({
     user: t,
     appContext: I
   }), M = (0, v.A)(t.id, S), C = (0, E.A)(t.id), w = (0, j.A)(t.id, o), T = (0, y.A)({
@@ -95,7 +95,7 @@ function D(e) {
     label: h.intl.string(h.t["/AXYnE"])
   }), k = (0, d.A)(t), G = (0, f.A)(t, n, a), B = t.isNonUserBot();
   return (0, r.jsxs)(l.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "user-context",
     onClose: i.Z_,
     "aria-label": h.intl.string(h.t.liqwPJ),
@@ -104,7 +104,7 @@ function D(e) {
       children: [(0, r.jsx)(l.rXV, {
         children: k
       }), (0, r.jsxs)(l.rXV, {
-        children: [D, x, P, M]
+        children: [D, P, x, M]
       }), (0, r.jsx)(l.rXV, {
         children: C
       }), (0, r.jsx)(l.rXV, {
@@ -120,7 +120,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function P(e) {
   let {
     user: t,
     mediaEngineContext: n,
@@ -138,7 +138,7 @@ function x(e) {
   }), I = (0, b.A)({
     user: t,
     appContext: f
-  }), D = (0, v.A)(t.id, c), x = (0, E.A)(t.id), P = (0, j.A)(t.id, n), M = (0, y.A)({
+  }), D = (0, v.A)(t.id, c), P = (0, E.A)(t.id), x = (0, j.A)(t.id, n), M = (0, y.A)({
     user: t
   }), C = (0, u.A)(null, t), w = (0, A.A)({
     user: t,
@@ -154,7 +154,7 @@ function x(e) {
     label: h.intl.string(h.t["/AXYnE"])
   }), L = (0, d.A)(t), V = t.isNonUserBot();
   return (0, r.jsxs)(l.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "user-context",
     onClose: i.Z_,
     "aria-label": h.intl.string(h.t.liqwPJ),
@@ -165,18 +165,18 @@ function x(e) {
       }), (0, r.jsxs)(l.rXV, {
         children: [_, S, I, D]
       }), (0, r.jsx)(l.rXV, {
-        children: x
+        children: P
       }), (0, r.jsx)(l.rXV, {
         children: C
       }), (0, r.jsxs)(l.rXV, {
-        children: [P, M, w, N, T]
+        children: [x, M, w, N, T]
       })]
     }), (0, r.jsx)(l.rXV, {
       children: U
     })]
   })
 }
-let P = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
+let x = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   let {
     guildId: t,
     channelId: n
@@ -200,7 +200,7 @@ let P = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   return null != t && null != n ? (0, r.jsx)(D, I(S({}, l), {
     guildId: t,
     channelId: n
-  })) : (0, r.jsx)(x, I(S({}, l), {
+  })) : (0, r.jsx)(P, I(S({}, l), {
     guildId: t,
     channelId: n
   }))

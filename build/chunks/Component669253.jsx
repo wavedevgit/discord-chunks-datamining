@@ -63,12 +63,12 @@ let h = e => {
       label: c.intl.string(c.t["+NP/b2"])
     });
     return (0, r.jsxs)(a.W1t, {
-      "data-menu-mixed": true,
+      "data-menu-needs-review": true,
       navId: "authorized-app-action-menu",
       onClose: n,
       "aria-label": c.intl.string(c.t.tKobzb),
       onSelect: true,
-      children: [(0, r.jsx)(a.Drp, {
+      children: [u, (0, r.jsx)(a.Drp, {
         id: "report",
         label: c.intl.string(c.t["+78Pfm"]),
         color: "danger",
@@ -78,7 +78,7 @@ let h = e => {
           contextualGuildId: i,
           contextualChannelId: l
         })
-      }), u, d]
+      }), d]
     })
   },
   m = e => {

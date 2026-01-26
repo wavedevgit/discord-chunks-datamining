@@ -1,7 +1,8 @@
-/** Chunk was on 97887 **/
-/** chunk id: 770666, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 81579 **/
+/** chunk id: 770666, original params: e,n,t (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  A: () => c
+  A: () => o
 }), require("./896048.js");
 var Chunk311907 = require("./311907.js"),
   Chunk931991 = require("./931991.js"),
@@ -10,17 +11,17 @@ var Chunk311907 = require("./311907.js"),
   Chunk576705 = require("./576705.js"),
   Chunk652215 = require("./652215.js");
 
-function c(e, t) {
-  return (0, r.bG)([s.A, i.Ay, a.A], () => {
-    let n = s.A.getGuild(e);
-    if (a.A.can(o.xBc.ADMINISTRATOR, n) || a.A.can(o.xBc.CREATE_EVENTS, n)) returntrue;
+function o(e, n) {
+  return (0, i.bG)([a.A, r.Ay, s.A], () => {
+    let t = a.A.getGuild(e);
+    if (s.A.can(u.xBc.ADMINISTRATOR, t) || s.A.can(u.xBc.CREATE_EVENTS, t)) returntrue;
     for (let {
-        channel: n
+        channel: t
       }
-      of i.Ay.getChannels(e)[i.vM])
-      if (null == t || n.type === t) {
-        let [e] = (0, l.p_)(n);
-        if (a.A.can(e, n)) returntrue
+      of r.Ay.getChannels(e)[r.vM])
+      if (null == n || t.type === n) {
+        let [e] = (0, l.p_)(t);
+        if (s.A.can(e, t)) returntrue
       } returnfalse
-  }, [e, t])
+  }, [e, n])
 }

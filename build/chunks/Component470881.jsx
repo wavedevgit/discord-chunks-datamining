@@ -16,7 +16,7 @@ var Chunk681154 = require("./681154.js"),
 function d(e) {
   let {
     item: t
-  } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, d = null == n ? true : n.extra, p = null == n ? true : n.author_id, h = null == n ? true : n.content_type, g = (null == d ? true : d.type) === "played_game_extra" || (null == d ? true : d.type) === "launched_activity_extra" ? d.application_id : true, f = (0, s.h)(g), m = (0, l.bG)([o.default], () => null != p ? o.default.getUser(p) : null, [p]), A = h === i.I.TOP_GAME, _ = null == f ? true : f.getIconURL(240);
+  } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, d = null == n ? true : n.extra, p = null == n ? true : n.author_id, h = null == n ? true : n.content_type, g = (null == d ? true : d.type) === "played_game_extra" || (null == d ? true : d.type) === "launched_activity_extra" ? d.application_id : true, f = (0, s.h)(g), m = (0, l.bG)([o.default], () => null != p ? o.default.getUser(p) : null, [p]), A = h === i.ContentInventoryEntryType.TOP_GAME, _ = null == f ? true : f.getIconURL(240);
   return (null == d ? true : d.type) !== "played_game_extra" || "contentInventory" !== t.data.kind || null == f || null == m || null == _ ? null : (0, r.jsx)("div", {
     className: u.kL,
     children: (0, r.jsxs)("div", {

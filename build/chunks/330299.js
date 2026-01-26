@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 330299, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -122,7 +122,7 @@ function c(e, t) {
         }
       })
     }, [u]),
-    b = r.useCallback(e => t => {
+    h = r.useCallback(e => t => {
       u(n => {
         let {
           tags: r,
@@ -136,7 +136,7 @@ function c(e, t) {
         }
       })
     }, [u]),
-    h = r.useCallback(e => {
+    b = r.useCallback(e => {
       u(t => {
         let {
           tags: n,
@@ -296,8 +296,8 @@ function c(e, t) {
       "Backspace" === e.key ? v(e) : "a" === e.key && t ? A(e) : "Escape" === e.key ? j(e) : a.A_.has(e.key) && t ? y(e) : "Meta" !== e.key && j(e)
     }, [y, v, A, j, l]),
     handleRemoveTag: f,
-    handleTagChangeEvent: b,
-    handleSelectTag: h,
+    handleTagChangeEvent: h,
+    handleSelectTag: b,
     handleUnselectTag: x,
     handleResetTagSelections: j,
     handleInputBlurEvent: E

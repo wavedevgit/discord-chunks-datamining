@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 41558, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  S: () => h
+  S: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,11 +19,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk340736 = require("./340736.js");
 
-function h(e) {
+function b(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, h = t.features.has(g.GuildFeatures.INVITE_SPLASH), x = n && h, {
+  } = e, b = t.features.has(g.GuildFeatures.INVITE_SPLASH), x = n && b, {
     analyticsLocations: j
   } = (0, s.Ay)(), _ = i.useCallback(e => {
     d.A.updateGuild({
@@ -50,10 +50,10 @@ function h(e) {
     maxFileSizeBytes: p.j,
     onFileSizeError: () => (0, a.A)(p.j)
   });
-  return h ? v : (0, r.jsx)(l.DUT, {
+  return b ? v : (0, r.jsx)(l.DUT, {
     "aria-hidden": true,
     tabIndex: false,
-    className: b.U,
+    className: h.U,
     onClick: O,
     children: v
   })

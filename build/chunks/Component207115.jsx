@@ -29,7 +29,7 @@ function b(e, t) {
     label: y.intl.string(y.t["zx/e4P"]),
     leadingAccessory: {
       type: "icon",
-      icon: a.tjR
+      icon: a.FD6
     },
     color: "danger",
     children: m.map(i => {

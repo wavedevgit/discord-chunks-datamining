@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 268075, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -27,7 +27,7 @@ function g(e) {
       memberCount: null != (e = d.A.getMemberCount(g)) ? e : 1234,
       onlineCount: null != (t = d.A.getOnlineCount(g)) ? t : 1234
     }
-  }, [g]), f = i.useRef((0, l.A)()), b = i.useMemo(() => {
+  }, [g]), f = i.useRef((0, l.A)()), h = i.useMemo(() => {
     var e, r;
     if (null != n) return o.GO.createFromDiscoverableGuild(n);
     if (null == t) return null;
@@ -65,21 +65,21 @@ function g(e) {
     })(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
     }), e))
-  }, [n, t, m, p]), h = i.useMemo(() => {
+  }, [n, t, m, p]), b = i.useMemo(() => {
     var e;
-    let t = null == b || null == (e = b.emojis) ? true : e[0];
+    let t = null == h || null == (e = h.emojis) ? true : e[0];
     return null != t ? {
       name: t.require_colons ? ":".concat(t.name, ":") : t.name,
       emojiId: t.id,
       animated: t.animated,
       jumboable: true
     } : {}
-  }, [null == b ? true : b.emojis]);
-  return null != b && b.isDiscoverable() ? (0, r.jsx)(c.sX, {
+  }, [null == h ? true : h.emojis]);
+  return null != h && h.isDiscoverable() ? (0, r.jsx)(c.sX, {
     sourceType: o.rV.GUILD,
     expressionSourceApplication: null,
-    expressionSourceGuild: b,
-    node: h,
+    expressionSourceGuild: h,
+    node: b,
     closePopout: u.tE,
     nonce: f.current,
     demoMode: true

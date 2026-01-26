@@ -8,8 +8,8 @@ var Chunk309010 = require("./309010.js"),
 
 function r() {
   var t;
-  let e = null != (t = i.A.getCurrentlySelectedChannelId()) ? t : true;
-  return null != e && (0, l.jq)(e) ? {
+  let e = null != (t = l.A.getCurrentlySelectedChannelId()) ? t : true;
+  return null != e && (0, i.jq)(e) ? {
     channel_static_route: e
   } : {
     channel_id: e

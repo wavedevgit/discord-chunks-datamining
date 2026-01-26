@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 614164, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -91,15 +91,15 @@ function T(e) {
   } = e, {
     headerHeight: T,
     headerRef: C
-  } = (0, h.A)(0), {
+  } = (0, b.A)(0), {
     scrolledToTop: P,
     handleScroll: w
   } = (0, j.u)(), R = (0, c.bG)([p.A], () => {
     var e;
     return null == (e = p.A.getRoleMemberCount(t.id)) ? true : e[n.id]
-  }, [n.id, t.id]), D = (0, c.yK)([b.A], () => {
+  }, [n.id, t.id]), D = (0, c.yK)([h.A], () => {
     var e;
-    return null != (e = b.A.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
+    return null != (e = h.A.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
   }), G = D.length > 1 ? g.jO.OR : g.jO.AND, L = i.useMemo(() => G === g.jO.OR ? D.flat() : null != D && D.length > 0 ? D[0] : [], [G, D]), k = i.useMemo(() => new Set(L.map(e => e.connectionType)), [L]);
 
   function M(e) {

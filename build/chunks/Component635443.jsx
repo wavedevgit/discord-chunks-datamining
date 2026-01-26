@@ -15,11 +15,11 @@ var Chunk311907 = require("./311907.js"),
 function c(e, t) {
   var n;
   let c = (0, r.bG)([a.default], () => a.default.getCurrentUser(), []),
-    u = (0, r.bG)([o.A], () => o.A.getChannel(t), [t]);
+    u = (0, r.bG)([s.A], () => s.A.getChannel(t), [t]);
   return null == u || u.isOwner(e) || null == c || !u.isOwner(c.id) || !(null == (n = u.recipients) ? true : n.includes(e)) ? null : (0, i.jsx)(l.Drp, {
     id: "remove",
     label: d.intl.string(d.t["n5zMI+"]),
-    action: () => s.A.removeRecipient(t, e),
+    action: () => o.A.removeRecipient(t, e),
     color: "danger"
   })
 }

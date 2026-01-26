@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 781289, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,12 +24,12 @@ function g(e) {
   }), f = (0, a.fZ)(t, {
     publishedOnly: false
   }), {
-    allowSelfRemoveMonetization: b
-  } = (0, s.nq)(t), h = g.filter(e => {
+    allowSelfRemoveMonetization: h
+  } = (0, s.nq)(t), b = g.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? true : n.status) === d.U1.OPEN || (null == n ? true : n.status) === d.U1.PAYOUT_DEFERRED
-  }), x = p.length > 0, j = f.length > 0, _ = h.length > 0;
+  }), x = p.length > 0, j = f.length > 0, _ = b.length > 0;
   return null == m ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
@@ -41,7 +41,7 @@ function g(e) {
     }), (0, r.jsx)(l.Button, {
       variant: "critical-primary",
       text: u.intl.string(u.t.FrOFSo),
-      disabled: !b || x || j || _,
+      disabled: !h || x || j || _,
       onClick: () => {
         (0, l.mMO)(async () => {
           let {

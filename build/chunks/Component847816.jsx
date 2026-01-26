@@ -1,7 +1,7 @@
 /** Chunk was on 48654 **/
 /** chunk id: 847816, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,29 +19,29 @@ var Chunk627968 = require("./627968.js"),
   Chunk597351 = require("./597351.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk70438 = require("./70438.js");
-let h = Chunk64700.memo(function(e) {
+let g = Chunk64700.memo(function(e) {
   let {
     message: t
   } = e, n = (0, a.bG)([f.A], () => f.A.getChannel(t.channel_id));
-  return null == n ? null : (0, l.jsx)(O.Ay, {
-    children: e => (0, l.jsxs)(u.A.Provider, {
+  return null == n ? null : (0, i.jsx)(O.Ay, {
+    children: e => (0, i.jsxs)(u.A.Provider, {
       value: n.guild_id,
-      children: [(0, l.jsx)(c.A, {
+      children: [(0, i.jsx)(c.A, {
         user: t.author,
         size: s._3J.SIZE_40,
         className: o()(E.Du, e)
-      }), (0, l.jsxs)("div", {
+      }), (0, i.jsxs)("div", {
         className: o()(E.cy, e),
-        children: [(0, l.jsx)(s.M1G, {
-          children: (0, l.jsx)("div", {
+        children: [(0, i.jsx)(s.M1G, {
+          children: (0, i.jsx)("div", {
             className: E.mG,
-            children: (0, l.jsx)(p.A, {
+            children: (0, i.jsx)(p.A, {
               className: E.fh,
               message: t,
               channel: n
             })
           })
-        }), (0, l.jsx)(d.A, {
+        }), (0, i.jsx)(d.A, {
           timestamp: t.timestamp,
           className: E.vE,
           tooltipPosition: "bottom"
@@ -51,26 +51,26 @@ let h = Chunk64700.memo(function(e) {
   })
 });
 
-function g(e) {
+function h(e) {
   var t;
   let {
     item: n,
-    hideMediaOptions: i,
+    hideMediaOptions: l,
     onClose: r
   } = e, a = null == (t = n.sourceMetadata) ? true : t.message;
-  return (0, l.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: E.XV,
-    children: [null != a && (0, l.jsx)(h, {
+    children: [null != a && (0, i.jsx)(g, {
       message: a
-    }), (0, l.jsx)(m.A, {
+    }), (0, i.jsx)(m.A, {
       item: n,
-      hideMediaOptions: i
-    }), (0, l.jsx)(O.Ay, {
+      hideMediaOptions: l
+    }), (0, i.jsx)(O.Ay, {
       mode: O.nY.PINNED,
-      children: e => (0, l.jsx)(b.A, {
+      children: e => (0, i.jsx)(y.A, {
         onClick: r,
         icon: s.PGe,
-        tooltip: y.intl.string(y.t.cpT0Cq),
+        tooltip: b.intl.string(b.t.cpT0Cq),
         className: o()(E.b, e)
       })
     })]

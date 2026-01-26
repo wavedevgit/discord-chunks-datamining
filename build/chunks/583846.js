@@ -192,7 +192,7 @@ function N(e, t) {
 }
 
 function w(e) {
-  return e.content_type === o.I.TOP_GAME
+  return e.content_type === o.ContentInventoryEntryType.TOP_GAME
 }
 
 function R(e) {

@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk285953 = require("./285953.js");
 
-function g(e, t) {
+function h(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   true === n || d.A.useReducedMotion ? e.set(t) : e.start(t)
 }
@@ -34,23 +34,23 @@ function S(e) {
     enabledContentHarmTypeFlags: S,
     shouldHideMediaOptions: _ = false,
     transitionState: T
-  } = e, j = function(e, t) {
+  } = e, A = function(e, t) {
     if (null == e) return {};
-    var n, l, i, r = {};
+    var n, i, l, r = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
+      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (r[i] = e[i]);
       return r
     }
     if (r = function(e, t) {
         if (null == e) return {};
-        var n, l, i = {},
+        var n, i, l = {},
           r = Object.getOwnPropertyNames(e);
-        for (l = 0; l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-        return i
+        for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+        return l
       }(e, t), Object.getOwnPropertySymbols)
-      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
+      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (r[i] = e[i]);
     return r
-  }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [A, v] = i.useState(null != r ? r : 0), [C, I] = i.useState(false), [x, N] = (0, s.zhh)(() => ({
+  }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [j, v] = l.useState(null != r ? r : 0), [C, I] = l.useState(false), [N, x] = (0, s.zhh)(() => ({
     scale: d.A.useReducedMotion ? 1 : .9,
     x: 0,
     y: 0,
@@ -58,105 +58,105 @@ function S(e) {
       friction: 30,
       tension: 300
     }
-  })), D = i.useRef(null);
-  i.useEffect(() => {
-    if (null != t) return p._.subscribe(y.jej.MEDIA_MODAL_CLOSE, t), () => {
-      p._.unsubscribe(y.jej.MEDIA_MODAL_CLOSE, t)
+  })), D = l.useRef(null);
+  l.useEffect(() => {
+    if (null != t) return p._.subscribe(b.jej.MEDIA_MODAL_CLOSE, t), () => {
+      p._.unsubscribe(b.jej.MEDIA_MODAL_CLOSE, t)
     }
-  }, [t]), i.useEffect(() => {
+  }, [t]), l.useEffect(() => {
     var e, t;
-    T === s.ip4.ENTERING && g(x.scale, 1), T === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), T === s.ip4.HIDDEN && (g(x.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), T === s.ip4.EXITING && g(x.scale, .9);
+    T === s.ip4.ENTERING && h(N.scale, 1), T === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), T === s.ip4.HIDDEN && (h(N.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), T === s.ip4.EXITING && h(N.scale, .9);
     let n = () => {
         u.A.disable(), T === s.ip4.ENTERED ? u.A.enableTemp(c.w) : u.A.enableTemp(c.b)
       },
-      l = () => {
+      i = () => {
         u.A.disableTemp()
       },
-      i = null == (t = D.current) || null == (e = t.ownerDocument) ? true : e.defaultView;
-    return null == i || i.addEventListener("focus", n), null == i || i.addEventListener("blur", l), () => {
-      null == i || i.removeEventListener("focus", n), null == i || i.removeEventListener("blur", l), u.A.disableTemp()
+      l = null == (t = D.current) || null == (e = t.ownerDocument) ? true : e.defaultView;
+    return null == l || l.addEventListener("focus", n), null == l || l.addEventListener("blur", i), () => {
+      null == l || l.removeEventListener("focus", n), null == l || l.removeEventListener("blur", i), u.A.disableTemp()
     }
-  }, [T, x]);
-  let R = i.useCallback(e => {
+  }, [T, N]);
+  let R = l.useCallback(e => {
       v(e), (0, f.Yq)(f.NJ.SELECTED_ITEM_CHANGE)
     }, []),
-    P = i.useMemo(() => ({
-      scale: x.scale,
-      x: x.x,
-      y: x.y,
+    P = l.useMemo(() => ({
+      scale: N.scale,
+      x: N.x,
+      y: N.y,
       setScale(e, t) {
-        g(x.scale, e, null == t ? true : t.immediate)
+        h(N.scale, e, null == t ? true : t.immediate)
       },
       setOffset(e, t, n) {
-        g(x.x, e, null == n ? true : n.immediate), g(x.y, t, null == n ? true : n.immediate)
+        h(N.x, e, null == n ? true : n.immediate), h(N.y, t, null == n ? true : n.immediate)
       },
       zoomed: C,
       setZoomed(e) {
-        I(e), g(x.scale, e ? 2.5 : 1), e || (g(x.x, 0), g(x.y, 0))
+        I(e), h(N.scale, e ? 2.5 : 1), e || (h(N.x, 0), h(N.y, 0))
       }
-    }), [C, x]);
-  return (0, l.jsx)(s.NPJ, {
-    theme: y.NJ8.MIDNIGHT,
+    }), [C, N]);
+  return (0, i.jsx)(s.NPJ, {
+    theme: b.NJ8.MIDNIGHT,
     children: e => {
-      var i, r;
-      return (0, l.jsx)(s.EOs, (i = function(e) {
+      var l, r;
+      return (0, i.jsx)(s.EOs, (l = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-              value: l,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = l
+            }) : e[t] = i
           })
         }
         return e
       }({
         "data-migration-pending": true,
         hideShadow: true,
-        className: o()(h.O, e),
+        className: o()(g.O, e),
         transitionState: T
-      }, j), r = r = {
+      }, A), r = r = {
         size: s.rIJ.DYNAMIC,
         animation: a.WM.SUBTLE,
         fullscreenOnMobile: false,
         onClick: t,
         "aria-label": E.intl.string(E.t.AMTX3j),
         parentComponent: "MediaViewerModal",
-        children: (0, l.jsxs)(m.f.Provider, {
+        children: (0, i.jsxs)(m.f.Provider, {
           value: P,
-          children: [(0, l.jsx)(b.A, {
-            item: n[A],
+          children: [(0, i.jsx)(y.A, {
+            item: n[j],
             hideMediaOptions: _,
             onClose: t
-          }), (0, l.jsx)("div", {
+          }), (0, i.jsx)("div", {
             style: {
               display: "none"
             },
             ref: D
-          }), (0, l.jsx)(O.Ay, {
+          }), (0, i.jsx)(O.Ay, {
             items: n,
-            startIndex: A,
+            startIndex: j,
             onIndexChange: R,
             enabledContentHarmTypeFlags: S,
             shouldHideMediaOptions: _
           })]
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, l)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
       })(Object(r)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(r, e))
-      }), i))
+        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
+      }), l))
     }
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 391958, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,8 +23,8 @@ function u(e) {
     initialValue: m
   } = e, p = i.useMemo(() => null != m ? m : [], [m]), {
     value: f,
-    onChange: b,
-    errorMessage: h
+    onChange: h,
+    errorMessage: b
   } = (0, o.A)(t, m, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -32,7 +32,7 @@ function u(e) {
       children: [(0, r.jsx)(a.d4u, {
         className: s()(d.To, u),
         value: f,
-        onChange: b,
+        onChange: h,
         placeholder: c.intl.string(c.t.UyaxJy)
       }), (0, r.jsx)(a.Text, {
         className: d.fE,
@@ -40,11 +40,11 @@ function u(e) {
         color: "text-muted",
         children: "".concat(p.length, " / ").concat(n)
       })]
-    }), null != h ? (0, r.jsx)(a.Text, {
+    }), null != b ? (0, r.jsx)(a.Text, {
       className: s()(d.dG, d.kc),
       variant: "text-xs/medium",
       color: "text-feedback-critical",
-      children: h
+      children: b
     }) : (0, r.jsx)(a.Text, {
       className: d.dG,
       variant: "text-xs/normal",

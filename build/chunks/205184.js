@@ -11,7 +11,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk475450 = require("./475450.js"),
   Chunk661191 = require("./661191.js"),
   Chunk424994 = require("./424994.js");
-let u = new Set([Chunk681154.I.PLAYED_GAME, Chunk681154.I.LAUNCHED_ACTIVITY]),
+let u = new Set([Chunk681154.ContentInventoryEntryType.PLAYED_GAME, Chunk681154.ContentInventoryEntryType.LAUNCHED_ACTIVITY]),
   d = e => u.has(e.content_type);
 
 function f(e) {

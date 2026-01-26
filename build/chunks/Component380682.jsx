@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 380682, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -42,7 +42,7 @@ function L(e) {
   let {
     application: t,
     guild: n
-  } = e, l = (0, _.Tq)(n.id), s = (0, _.uP)(n.id), a = s.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.yK)([b.A], () => s.map(e => b.A.getRole(n.id, e.role_id)), [n.id, s]).some(e => null != e && 0 !== e.color), c = s.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(P.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
+  } = e, l = (0, _.Tq)(n.id), s = (0, _.uP)(n.id), a = s.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.yK)([h.A], () => s.map(e => h.A.getRole(n.id, e.role_id)), [n.id, s]).some(e => null != e && 0 !== e.color), c = s.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(P.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
     title: D.intl.string(D.t.p2Rsdl),
     items: [{
       description: D.intl.string(D.t.zbO7fU),
@@ -137,7 +137,7 @@ function U(e) {
       setCurrentTab: _
     } = (0, T.Tj)(),
     O = (0, j.X)(),
-    S = (0, i.bG)([h.default], () => h.default.getCurrentUser()),
+    S = (0, i.bG)([b.default], () => b.default.getCurrentUser()),
     R = (0, y.A)(n.id),
     M = null != n && (0, f.bM)(n, S);
   if (!O) return (0, r.jsx)(s.y$y, {});
@@ -218,7 +218,7 @@ function U(e) {
             children: (0, r.jsx)(s.Button, {
               disabled: R,
               onClick: () => {
-                let e = b.A.getEveryoneRole(n);
+                let e = h.A.getEveryoneRole(n);
                 c.A.close();
                 let t = {
                   [e.id]: e

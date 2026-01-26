@@ -103,7 +103,7 @@ function $(e) {
       popoutWindowAlwaysOnTop: n,
       handleStayOnTop: t
     }),
-    e_ = (0, K.G)(),
+    e_ = (0, M.G)(),
     {
       rootNode: es,
       popoutWindow: ed,
@@ -113,7 +113,7 @@ function $(e) {
         popoutWindow: e,
         currentDocument: n,
         rootNode: t
-      } = (0, M.A)(), [r, a] = o.useState(false), i = o.useCallback(() => {
+      } = (0, K.A)(), [r, a] = o.useState(false), i = o.useCallback(() => {
         null == t || r && (a(false), (0, E.sP)(t, n))
       }, [t, n, r]), l = o.useCallback(() => {
         null != t && (r ? i() : (a(true), (0, E.tl)(t)))

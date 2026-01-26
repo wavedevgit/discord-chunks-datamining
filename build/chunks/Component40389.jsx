@@ -24,8 +24,8 @@ function v(t) {
     {
       needSubscriptionToAccess: v
     } = (0, c.A)(t.id),
-    p = (0, d.bG)([u.A], () => u.A.getChatOpen(t.id)),
-    m = r.useCallback(() => {
+    b = (0, d.bG)([u.A], () => u.A.getChatOpen(t.id)),
+    p = r.useCallback(() => {
       g.A.handleVoiceConnect({
         channel: t,
         connected: i,
@@ -34,15 +34,15 @@ function v(t) {
       })
     }, [t, i, v]);
   return i || !n ? null : (0, e.jsxs)(e.Fragment, {
-    children: [(0, e.jsx)(s.Drp, {
+    children: [(0, e.jsx)(o.Drp, {
       id: "join-thread-voice",
-      label: l ? b.intl.string(b.t["0D/6Rz"]) : b.intl.string(b.t.My50nf),
-      action: m
-    }), l && !p && (0, e.jsx)(s.Drp, {
+      label: l ? m.intl.string(m.t["0D/6Rz"]) : m.intl.string(m.t.My50nf),
+      action: p
+    }), l && !b && (0, e.jsx)(o.Drp, {
       id: "open-chat",
-      label: b.intl.string(b.t.ZXxLQg),
+      label: m.intl.string(m.t.ZXxLQg),
       action: () => {
-        o.A.updateChatOpen(t.id, true)
+        s.A.updateChatOpen(t.id, true)
       }
     })]
   })

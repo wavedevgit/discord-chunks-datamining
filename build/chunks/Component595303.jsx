@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 595303, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -21,19 +21,19 @@ function g(e) {
     application: g
   } = e, m = (0, i.bG)([o.A], () => o.A.getGuild(t)), p = (0, i.bG)([c.default], () => c.default.getCurrentUser()), f = (0, d.gN)();
   if (null == m || !(0, a.bM)(m, p)) return null;
-  let b = g.team;
+  let h = g.team;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: f ? "text-muted" : "text-default",
-      children: null != b ? u.intl.format(u.t.erxwWA, {
-        teamName: b.name
+      children: null != h ? u.intl.format(u.t.erxwWA, {
+        teamName: h.name
       }) : u.intl.string(u.t.FGzLkK)
     }), (0, r.jsx)(s.hKd, {
       size: 16
     }), (0, r.jsx)(l.$nd, {
-      text: null != b ? u.intl.string(u.t["/Fjq5P"]) : u.intl.string(u.t["6ih+b4"]),
-      variant: null != b ? "secondary" : "primary",
+      text: null != h ? u.intl.string(u.t["/Fjq5P"]) : u.intl.string(u.t["6ih+b4"]),
+      variant: null != h ? "secondary" : "primary",
       onClick: () => {
         (0, s.mMO)(async () => {
           let {

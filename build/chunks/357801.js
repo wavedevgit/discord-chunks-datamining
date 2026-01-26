@@ -1,4 +1,4 @@
-/** Chunk was on 97887 **/
+/** Chunk was on 89209 **/
 /** chunk id: 357801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => a
@@ -12,19 +12,19 @@ function a(e, t, n, r) {
   let a = l()(),
     o = new Date(e.scheduled_start_time).getTime(),
     c = {
-      start: o - s.Oz,
+      start: o - u.Oz,
       end: o
     };
   if (a.isBetween(c.start, c.end)) {
     if (null != t) {
       let e = l()(t),
         n = e.isBetween(c.start, c.end),
-        i = e.isBetween(l()(o).subtract(s.nN, "days"), o);
-      return n || i && !r ? true : s.w0.EVENT_STARTING_SOON
+        i = e.isBetween(l()(o).subtract(u.nN, "days"), o);
+      return n || i && !r ? true : u.w0.EVENT_STARTING_SOON
     }
-    return s.w0.EVENT_STARTING_SOON
+    return u.w0.EVENT_STARTING_SOON
   }
-  let u = i.default.extractTimestamp(e.id),
-    d = Math.min((null != n ? n : u) + s.aj, o);
-  if (a.isBetween(u, d) && null == t && !r) return s.w0.NEW_EVENT
+  let d = i.default.extractTimestamp(e.id),
+    s = Math.min((null != n ? n : d) + u.aj, o);
+  if (a.isBetween(d, s) && null == t && !r) return u.w0.NEW_EVENT
 }

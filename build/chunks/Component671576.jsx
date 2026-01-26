@@ -27,7 +27,7 @@ function _(e) {
     transitionState: l,
     onClose: _,
     analyticsData: A
-  } = e, p = (0, s.bG)([c.A], () => c.A.getGuild(t), [t]), S = !!(null == p ? true : p.features.has(f.GuildFeatures.INVITES_DISABLED)), [T] = r.useState(false), [E, y] = r.useState(h.f7), O = (0, s.bG)([j.A], () => j.A.getGuildIncident(t)), N = (0, x.w)(p), I = (0, m.r2)(O) || S, R = (0, m.di)(O), [C, D] = r.useState(I), [P, M] = r.useState(R), [w, G] = r.useState(false), L = C !== I || P !== R || w, U = S && !N;
+  } = e, p = (0, s.bG)([c.A], () => c.A.getGuild(t), [t]), T = !!(null == p ? true : p.features.has(f.GuildFeatures.INVITES_DISABLED)), [E] = r.useState(false), [S, y] = r.useState(h.f7), O = (0, s.bG)([j.A], () => j.A.getGuildIncident(t)), N = (0, x.w)(p), I = (0, m.r2)(O) || T, R = (0, m.di)(O), [C, D] = r.useState(I), [P, M] = r.useState(R), [w, G] = r.useState(false), L = C !== I || P !== R || w, U = T && !N;
   return null == p ? (_(), null) : (0, n.jsx)(i.Modal, {
     transitionState: l,
     title: g.intl.string(g.t.oCYAc7),
@@ -35,7 +35,7 @@ function _(e) {
       text: g.intl.string(g.t["ETE/oC"]),
       onClick: _,
       variant: "secondary",
-      disabled: T
+      disabled: E
     }, {
       text: g.intl.string(g.t["pwm/z0"]),
       onClick: () => {
@@ -70,7 +70,7 @@ function _(e) {
           })(Object(r)).forEach(function(e) {
             Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
           }), l))
-        }))) : (0, u.tr)(p.id, C, P, E);
+        }))) : (0, u.tr)(p.id, C, P, S);
         let {
           source: e,
           alertType: l,
@@ -83,10 +83,10 @@ function _(e) {
           raid_alert_type: l,
           intervention_type_enabled: (0, m.mR)(C, P),
           intervention_type_disabled: (0, m.fi)(C, P),
-          duration: 60 * E
+          duration: 60 * S
         }), _()
       },
-      loading: T,
+      loading: E,
       disabled: !L
     }],
     onClose: _,
@@ -100,7 +100,7 @@ function _(e) {
         onSelectionChange: function(e) {
           y(e), G(true)
         },
-        value: E,
+        value: S,
         selectionMode: "single",
         fullWidth: true
       }), (0, n.jsxs)("div", {
@@ -118,7 +118,7 @@ function _(e) {
           })]
         }), (0, n.jsx)(a.un, {
           body: g.intl.string(g.t["9GPbsV"]),
-          shouldShow: S,
+          shouldShow: T,
           asContainer: true,
           element: "div",
           children: (0, n.jsx)("div", {

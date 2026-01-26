@@ -86,7 +86,7 @@ function d(e) {
     })
   });
   return (0, n.jsx)(i.W1t, {
-    "data-menu-migration-ready": true,
+    "data-menu-migrated-auto": true,
     navId: "message-reminder-create",
     onClose: o.Z_,
     "aria-label": l.intl.string(l.t.mJ3P0N),

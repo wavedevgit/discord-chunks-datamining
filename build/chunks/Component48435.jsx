@@ -112,10 +112,7 @@ function g(e) {
       group: "".concat(n, "-devices"),
       disabled: o,
       label: u,
-      subtext: null != t && (0, r.jsx)(a.Text, {
-        variant: "text-xs/normal",
-        children: t
-      }),
+      subtext: t,
       checked: i === D,
       action: () => {
         var e;

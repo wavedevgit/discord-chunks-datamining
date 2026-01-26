@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 778526, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -39,31 +39,31 @@ function x(e) {
     return null == j ? true : j.filter(t => !e.includes(t))
   }, [x, A, j]), I = null == E, T = null != (t = null == E ? true : E.published) && t, C = null != (n = null == E ? true : E.archived) && n;
   return (0, r.jsxs)("div", {
-    className: h.rf,
+    className: b.rf,
     children: [null != O && (0, r.jsx)(a.wx6, {
       type: "critical",
       children: O.getAnyErrorMessage()
     }), !T && !N && !C && (0, r.jsxs)("div", {
-      className: h.Oy,
+      className: b.Oy,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
-          className: h.Bm,
-          children: b.intl.string(b.t.WOlcS8)
+          className: b.Bm,
+          children: h.intl.string(h.t.WOlcS8)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          children: b.intl.string(b.t.rMulDT)
+          children: h.intl.string(h.t.rMulDT)
         })]
       }), (0, r.jsx)(s.m, {
         shouldShow: I,
-        text: b.intl.string(b.t.v7lRIh),
+        text: h.intl.string(h.t.v7lRIh),
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(a.Button, {
             disabled: I,
             variant: "secondary",
             onClick: v,
             loading: _,
-            text: b.intl.string(b.t.Lj6R5m)
+            text: h.intl.string(h.t.Lj6R5m)
           })
         })
       })]

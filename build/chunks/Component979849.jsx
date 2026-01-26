@@ -98,7 +98,6 @@ function v(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(p.A, {
-        className: m.MK,
         onClose: t,
         onChangeAvatar: () => (0, _.XD)({
           uploadType: h.HL.AVATAR,

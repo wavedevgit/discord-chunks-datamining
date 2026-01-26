@@ -1,5 +1,5 @@
 /** Chunk was on 98126 **/
-/** chunk id: 894069, original params: n,t,i (module,exports,require) **/
+/** chunk id: 894069, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
@@ -11,12 +11,12 @@ var Chunk397927 = require("./397927.js"),
   Chunk746080 = require("./746080.js"),
   Chunk985018 = require("./985018.jsx");
 
-function c(n) {
+function c(t) {
   return (0, r.jsx)(s.Drp, {
     id: "role-subscription-copy-link",
     label: o.intl.string(o.t.WqhZss),
     action: () => {
-      (0, a.C)((0, e.n)(n, l.VV.ROLE_SUBSCRIPTIONS))
+      (0, a.C)((0, e.n)(t, l.VV.ROLE_SUBSCRIPTIONS))
     }
   })
 }

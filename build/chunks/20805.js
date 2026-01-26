@@ -18,11 +18,11 @@ var Chunk681154 = require("./681154.js"),
   Chunk808380 = require("./808380.js");
 
 function a(e) {
-  return (null == e ? true : e.content_type) === r.I.PLAYED_GAME
+  return (null == e ? true : e.content_type) === r.ContentInventoryEntryType.PLAYED_GAME
 }
 
 function s(e) {
-  return (null == e ? true : e.content_type) === r.I.TOP_GAME
+  return (null == e ? true : e.content_type) === r.ContentInventoryEntryType.TOP_GAME
 }
 
 function o(e) {
@@ -34,11 +34,11 @@ function l(e) {
 }
 
 function c(e) {
-  return (null == e ? true : e.content_type) === r.I.LISTENED_SESSION
+  return (null == e ? true : e.content_type) === r.ContentInventoryEntryType.LISTENED_SESSION
 }
 
 function u(e) {
-  return (null == e ? true : e.content_type) === r.I.TOP_ARTIST
+  return (null == e ? true : e.content_type) === r.ContentInventoryEntryType.TOP_ARTIST
 }
 
 function d(e) {
@@ -46,7 +46,7 @@ function d(e) {
 }
 
 function f(e) {
-  return (null == e ? true : e.content_type) === r.I.WATCHED_MEDIA
+  return (null == e ? true : e.content_type) === r.ContentInventoryEntryType.WATCHED_MEDIA
 }
 
 function p(e) {
@@ -62,7 +62,7 @@ function h(e) {
 }
 
 function m(e) {
-  return (null == e ? true : e.content_type) === r.I.LAUNCHED_ACTIVITY
+  return (null == e ? true : e.content_type) === r.ContentInventoryEntryType.LAUNCHED_ACTIVITY
 }
 
 function g(e) {

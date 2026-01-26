@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 111771, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -21,17 +21,17 @@ function f(e) {
   var t, n, l;
   let {
     changeTitle: f,
-    value: b,
-    options: h,
+    value: h,
+    options: b,
     className: x,
     onChange: j
-  } = e, [_, O] = i.useState(b), [v, y] = i.useState(false), [A, E] = i.useState(false), N = i.useRef(null);
+  } = e, [_, O] = i.useState(h), [v, y] = i.useState(false), [A, E] = i.useState(false), N = i.useRef(null);
   i.useEffect(() => {
-    O(b)
-  }, [b]), i.useEffect(() => () => {
+    O(h)
+  }, [h]), i.useEffect(() => () => {
     clearTimeout(N.current)
   }, []);
-  let S = h.find(e => e.value === _);
+  let S = b.find(e => e.value === _);
   return (0, r.jsx)(u.A, {
     title: v ? f : null != (t = null == S ? true : S.title) ? t : f,
     description: v ? "(".concat(null != (n = null == S ? true : S.title) ? n : m.intl.string(m.t.PoWNfe), ")") : null != (l = null == S ? true : S.description) ? l : "",
@@ -42,7 +42,7 @@ function f(e) {
     }),
     loading: A,
     className: x,
-    children: h.map((e, t) => (0, r.jsx)(g.A, {
+    children: b.map((e, t) => (0, r.jsx)(g.A, {
       title: e.title,
       description: e.description,
       highlightColor: e.highlightColor,

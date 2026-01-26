@@ -1,7 +1,7 @@
 /** Chunk was on 35894 **/
 /** chunk id: 17864, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,11 +17,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk918372 = require("./918372.js"),
   Chunk27786 = require("./27786.js");
 
-function f(e) {
+function b(e) {
   let {
     guild: t,
     onSubmit: i
-  } = e, f = (0, a.bG)([d.A], () => d.A.getMembersCountByGuildId(t.id, c.Tu.NEW_GUILD_MEMBER), [t.id]), j = (0, a.bG)([d.A], () => {
+  } = e, b = (0, a.bG)([d.A], () => d.A.getMembersCountByGuildId(t.id, c.Tu.NEW_GUILD_MEMBER), [t.id]), j = (0, a.bG)([d.A], () => {
     let e = d.A.getNewMemberTimestamp(t.id);
     return o()(e).format("h:mm A")
   }, [t.id]), g = (0, a.bG)([d.A], () => d.A.hasDefaultSearchStateByGuildId(t.id), [t.id]), h = l.useCallback(() => {
@@ -64,9 +64,9 @@ function f(e) {
         }), n))
       }
     })
-  }, [h, g]), y = new Intl.NumberFormat(m.intl.currentLocale).format(f), O = (0, u.Y0)(t.id), v = (0, u.vA)(t.id), _ = l.useMemo(() => 1 + +!!O + +!!v, [O, v]);
-  return 0 === f ? null : (0, r.jsxs)("tr", {
-    className: b.iS,
+  }, [h, g]), y = new Intl.NumberFormat(m.intl.currentLocale).format(b), O = (0, u.Y0)(t.id), v = (0, u.vA)(t.id), _ = l.useMemo(() => 1 + +!!O + +!!v, [O, v]);
+  return 0 === b ? null : (0, r.jsxs)("tr", {
+    className: f.iS,
     onClick: x,
     children: [(0, r.jsx)("td", {
       colSpan: 3,
@@ -86,11 +86,11 @@ function f(e) {
         className: p.$E,
         children: (0, r.jsx)(s.DUT, {
           onClick: x,
-          className: b.Fu,
+          className: f.Fu,
           children: (0, r.jsxs)(s.Text, {
             variant: "text-sm/normal",
             color: "always-white",
-            className: b.Lb,
+            className: f.Lb,
             children: [(0, r.jsx)("div", {
               children: m.intl.string(m.t.rkyOzK)
             }), (0, r.jsx)(s.nys, {
@@ -98,7 +98,7 @@ function f(e) {
               color: "currentColor",
               width: 16,
               height: 16,
-              className: b.Ke
+              className: f.Ke
             })]
           })
         })

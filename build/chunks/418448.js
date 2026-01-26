@@ -1,9 +1,9 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 418448, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  bN: () => b,
-  jr: () => h,
+  bN: () => h,
+  jr: () => b,
   nx: () => f
 }), require("./896048.js"), require("./65821.js");
 var Chunk73153 = require("./73153.js"),
@@ -25,18 +25,18 @@ function f() {
   })
 }
 
-function b(e) {
+function h(e) {
   r.h.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_TOGGLE",
     channelId: e
   })
 }
-async function h(e) {
+async function b(e) {
   let t = Array.from(d.A.editedDefaultChannelIds).filter(e => null != o.A.getChannel(e)),
     n = g.A.advancedMode,
     [f] = (0, a.ui)(e.id, [...t]),
-    b = (0, a.G4)(e.id, t, g.A.editedOnboardingPrompts, a.VU);
-  if (s.A.getEnabled(e.id) && (!n && f.length < m.Kd || n && b.length < m.Kd)) {
+    h = (0, a.G4)(e.id, t, g.A.editedOnboardingPrompts, a.VU);
+  if (s.A.getEnabled(e.id) && (!n && f.length < m.Kd || n && h.length < m.Kd)) {
     if (i.A.show({
         title: p.intl.string(p.t.iLdiqY),
         body: p.intl.string(p.t.JOT74c)
@@ -67,11 +67,11 @@ async function h(e) {
         }
       })
     } catch (n) {
-      var h;
+      var b;
       let {
         fieldName: e,
         error: t
-      } = null != (h = new l.LG(n).getAnyErrorMessageAndField()) ? h : {};
+      } = null != (b = new l.LG(n).getAnyErrorMessageAndField()) ? b : {};
       i.A.show({
         title: p.intl.string(p.t.iLdiqY),
         body: [e, t].filter(c.Vq).join(": ")

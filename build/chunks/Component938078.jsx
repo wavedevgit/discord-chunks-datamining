@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 938078, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,10 +22,10 @@ function a(e) {
     includeStageVoiceChannels: g = false,
     helperText: m,
     className: p
-  } = e, f = (0, l.q)(t, n, u, g), b = (0, s.H)(t, a, d);
+  } = e, f = (0, l.q)(t, n, u, g), h = (0, s.H)(t, a, d);
   return (0, r.jsx)(i.Ay, {
     channelRows: f,
-    roleRows: b,
+    roleRows: h,
     guildId: t,
     selectedChannelIds: n,
     selectedRoleIds: a,

@@ -19,8 +19,8 @@ function b(e) {
     userId: t,
     channelId: n,
     guildId: b,
-    minimal: f = false
-  } = e, g = (0, u.k)({
+    minimal: g = false
+  } = e, f = (0, u.k)({
     channelId: n
   }), A = (0, i.bG)([d.default], () => d.default.getId() === t), h = (0, o.Us)(), j = l.useCallback(() => {
     c.A.openSecureFramesUserVerificationModal(t, n, () => (0, s.z4)({
@@ -29,10 +29,14 @@ function b(e) {
       guildId: b
     }), h)
   }, [h, n, b, t]);
-  return !g || A ? null : (0, r.jsx)(a.Drp, {
+  return !f || A ? null : (0, r.jsx)(a.Drp, {
     id: "secure-frames-user-verification",
     label: p.intl.string(p.t["8ErYvY"]),
     action: j,
-    icon: f ? a.V1C : null
+    icon: g ? a.V1C : null,
+    leadingAccessory: g ? {
+      type: "icon",
+      icon: a.V1C
+    } : true
   })
 }

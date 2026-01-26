@@ -13,7 +13,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk929509 = require("./929509.js"),
   Chunk475450 = require("./475450.js"),
   Chunk424994 = require("./424994.js");
-let f = new Set([Chunk681154.I.PLAYED_GAME, Chunk681154.I.WATCHED_MEDIA, Chunk681154.I.TOP_GAME, Chunk681154.I.TOP_ARTIST, Chunk681154.I.LISTENED_SESSION, Chunk681154.I.LAUNCHED_ACTIVITY]);
+let f = new Set([Chunk681154.ContentInventoryEntryType.PLAYED_GAME, Chunk681154.ContentInventoryEntryType.WATCHED_MEDIA, Chunk681154.ContentInventoryEntryType.TOP_GAME, Chunk681154.ContentInventoryEntryType.TOP_ARTIST, Chunk681154.ContentInventoryEntryType.LISTENED_SESSION, Chunk681154.ContentInventoryEntryType.LAUNCHED_ACTIVITY]);
 
 function p(e) {
   let t = (0, u.A)({

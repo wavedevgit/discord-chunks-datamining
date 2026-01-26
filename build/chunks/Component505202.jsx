@@ -108,7 +108,7 @@ function v(e) {
     "aria-disabled": R
   }, D), {
     "data-menu-item": "true",
-    children: [Y ? null != v && (0, r.jsx)(_.B, {
+    children: [Y || (null == v ? true : v.type) === "status" ? null != v && (0, r.jsx)(_.B, {
       accessory: v,
       isFocused: P
     }) : (0, d.O)(b) ? b : null != b && (0, r.jsx)("div", {

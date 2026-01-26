@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 40160, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -39,37 +39,37 @@ function x(e) {
       })
     }, 1e3);
   if (!j) return null;
-  A || (t = O ? b.intl.format(b.t.nFwNyR, {
+  A || (t = O ? h.intl.format(h.t.nFwNyR, {
     settingsHook: () => (0, c.openUserSettings)(o.X.ACCOUNT_PANEL, {
       section: f.nc_.ACCOUNT
     })
-  }) : b.intl.string(b.t["9Ghu40"]));
+  }) : h.intl.string(h.t["9Ghu40"]));
   let N = n.features.has(f.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {
-    className: h.ph,
+    className: b.ph,
     children: [(0, r.jsxs)("div", {
-      className: h.Ly,
+      className: b.Ly,
       children: [(0, r.jsx)(a.Heading, {
         variant: "text-md/semibold",
         color: "text-strong",
-        children: b.intl.string(b.t.lbBfEQ)
+        children: h.intl.string(h.t.lbBfEQ)
       }), (0, r.jsxs)(a.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: [b.intl.string(b.t["a/93J6"]), " ", t]
+        children: [h.intl.string(h.t["a/93J6"]), " ", t]
       })]
     }), !A || y && N ? (0, r.jsx)(s.m, {
-      text: N ? b.intl.string(b.t["KG1V/E"]) : O ? b.intl.string(b.t.NmsheT) : b.intl.string(b.t.LieBta),
+      text: N ? h.intl.string(h.t["KG1V/E"]) : O ? h.intl.string(h.t.NmsheT) : h.intl.string(h.t.LieBta),
       children: (0, r.jsx)(p.A, {
         checked: y,
         disabled: true,
         onChange: E,
-        className: h.R0
+        className: b.R0
       })
     }) : (0, r.jsx)(p.A, {
       checked: y,
       onChange: E,
-      className: h.R0
+      className: b.R0
     })]
   })
 }

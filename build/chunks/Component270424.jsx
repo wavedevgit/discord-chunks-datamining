@@ -1,7 +1,7 @@
 /** Chunk was on 19750 **/
 /** chunk id: 270424, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
@@ -15,12 +15,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk710882 = require("./710882.js");
 
-function g(e) {
+function f(e) {
   let {
     guildId: t
   } = e, n = (0, i.bG)([s.default], () => s.default.getCurrentUser());
   if (null == n) return null;
-  let g = (0, d.yC)(n.id, t);
+  let f = (0, d.yC)(n.id, t);
   return (0, r.jsx)(c.A, {
     actions: (0, r.jsx)(a.$nd, {
       variant: "secondary",
@@ -29,17 +29,17 @@ function g(e) {
       icon: a.I9m,
       iconPosition: "end",
       onClick: () => (0, o.h)({
-        href: g
+        href: f
       })
     }),
     children: (0, r.jsxs)("div", {
-      className: f.Q,
+      className: g.Q,
       children: [(0, r.jsx)(l.u7P, {
         alt: "",
         width: 117,
         height: 78
       }), (0, r.jsxs)("div", {
-        className: f.y,
+        className: g.y,
         children: [(0, r.jsx)(a.DZT, {
           variant: "heading-md/semibold",
           children: m.intl.string(u.default.qE2eqK)

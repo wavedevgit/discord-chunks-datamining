@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 110807, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Ay: () => b,
+  Ay: () => h,
   SB: () => f
 }), require("./321073.js");
 var Chunk469993 = require("./469993.js"),
@@ -23,8 +23,8 @@ function f(e) {
   let {
     guild: c,
     canManageGuild: f,
-    canViewAuditLog: b,
-    canManageRoles: h,
+    canViewAuditLog: h,
+    canManageRoles: b,
     canManageBans: x,
     canAccessMembersPage: j,
     canViewGuildAnalytics: _,
@@ -77,7 +77,7 @@ function f(e) {
   }), N.push({
     section: m,
     label: u.intl.string(u.t.m6lkGy)
-  }), N.push(g(d.BEX.EMOJI, E)), N.push(g(d.BEX.STICKERS, E)), N.push(g(d.BEX.SOUNDBOARD, E))), (f || h || j || v) && (N.push({
+  }), N.push(g(d.BEX.EMOJI, E)), N.push(g(d.BEX.STICKERS, E)), N.push(g(d.BEX.SOUNDBOARD, E))), (f || b || j || v) && (N.push({
     section: p
   }), N.push({
     section: m,
@@ -89,7 +89,7 @@ function f(e) {
     label: u.intl.string(u.t.wF3KJy)
   }), N.push(g(d.BEX.INTEGRATIONS, E)), N.push(g(d.BEX.APP_DIRECTORY, E));
   let S = !c.features.has(d.GuildFeatures.COMMUNITY) && ((0, l.hX)(c.id) || (0, l.i_)(c.id));
-  (f || b || x || S) && (N.push({
+  (f || h || x || S) && (N.push({
     section: p
   }), N.push({
     section: m,
@@ -103,6 +103,6 @@ function f(e) {
     section: p
   }), N.push(g(d.BEX.GUILD_TEMPLATES, E)), N.push(g(d.BEX.DELETE, E)), N.filter(o.Vq)
 }
-let b = {
+let h = {
   generateSections: f
 }

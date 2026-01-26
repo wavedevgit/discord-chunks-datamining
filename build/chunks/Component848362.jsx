@@ -59,7 +59,7 @@ function E(e) {
   return (0, r.jsx)(o.A, {
     section: h.JJy.CONTEXT_MENU,
     children: (0, r.jsxs)(s.W1t, {
-      "data-menu-mixed": true,
+      "data-menu-needs-review": true,
       onSelect: E,
       navId: "manage-streams",
       onClose: _,
@@ -77,15 +77,15 @@ function E(e) {
               username: n
             }),
             icon: s.GT3,
+            leadingAccessory: {
+              type: "icon",
+              icon: s.GT3
+            },
             action: () => (0, d.A)(t)
           }, "manage-stream-menu".concat(t.ownerId))
         })
       }), l ? null : S, l ? null : (0, r.jsx)(s.rXV, {
-        children: (0, r.jsx)(s.Drp, {
-          id: "more-options",
-          label: m.intl.string(m.t.PdRCRg),
-          children: I
-        })
+        children: I
       })]
     })
   })

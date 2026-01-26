@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 863913, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b,
+  A: () => h,
   f: () => m
 });
 var r, Chunk627968 = require("./627968.js"),
@@ -79,7 +79,7 @@ class f extends Chunk64700.PureComponent {
     super(e), u(this, "_animated", true), this._animated = new o.A.Value(false * e.direction)
   }
 }
-let b = e => {
+let h = e => {
   let {
     children: t,
     step: n,
