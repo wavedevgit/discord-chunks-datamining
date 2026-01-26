@@ -6,6 +6,6 @@ require.d(exports, {
 });
 let r = {
   canUseInstallationId: function() {
-    returnfalse
+    returntrue
   }
 }
