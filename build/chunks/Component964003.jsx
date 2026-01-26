@@ -123,6 +123,7 @@ let E = 1140,
       children: [(0, r.jsx)(K, {}), (0, r.jsx)(W, {})]
     });
     return (0, r.jsxs)(c.hLv, {
+      id: t,
       className: s()(g.backgroundColor, g.boxContainer, g["".concat(R)], g.gradientBackground, k && g.overlayImageMode, U && g.overlayMode),
       onMouseEnter: F,
       onFocus: F,

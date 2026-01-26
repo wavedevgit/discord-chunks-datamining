@@ -24,7 +24,7 @@ function f(e) {
   } = e, {
     orbsRewardAmount: m
   } = (0, c.uX)("PremiumOrbRewardsOrbDropPopover"), A = i.useCallback(() => {
-    n(d.i.TAKE_ACTION), (0, o.pX)(u.BVt.APPLICATION_STORE)
+    n(d.i.TAKE_ACTION), (0, o.pX)("".concat(u.BVt.NITRO_HOME, "?section=orbs"))
   }, [n]), _ = (0, r.jsx)(l.AM, {
     targetElementRef: t,
     onRequestClose: () => n(d.i.USER_DISMISS),

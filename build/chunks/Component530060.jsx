@@ -20,13 +20,15 @@ var Chunk503698 = require("./503698.js"),
 let h = e => {
   let {
     className: t,
-    location: n
+    location: n,
+    sectionRef: i
   } = e, {
-    analyticsLocations: i
+    analyticsLocations: h
   } = (0, l.Ay)(n);
   return (0, s.bG)([c.A], () => c.A.passesGeneralUIInvariant(u.W.NITRO)) ? (0, r.jsx)(l.f5, {
-    value: i,
+    value: h,
     children: (0, r.jsxs)("div", {
+      ref: i,
       className: a()(_.uW, _.Uv, t),
       children: [(0, r.jsx)(o.DZT, {
         variant: "heading-xxl/extrabold",

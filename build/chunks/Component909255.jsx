@@ -20,7 +20,7 @@ function h(e) {
     dismissPopover: n,
     children: h
   } = e, g = i.useCallback(() => {
-    n(c.i.TAKE_ACTION), (0, s.pX)(o.BVt.APPLICATION_STORE)
+    n(c.i.TAKE_ACTION), (0, s.pX)("".concat(o.BVt.NITRO_HOME, "?section=orbs"))
   }, [n]), f = (0, r.jsx)(l.AM, {
     targetElementRef: t,
     onRequestClose: () => n(c.i.USER_DISMISS),
