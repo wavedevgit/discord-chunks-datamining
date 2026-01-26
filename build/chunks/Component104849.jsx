@@ -40,23 +40,23 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     moderationAlertId: D,
     analyticsLocation: T,
     analyticsLocations: x,
-    onCloseContextMenu: w,
-    showTransferOwnershipItem: N
+    onCloseContextMenu: N,
+    showTransferOwnershipItem: w
   } = e, {
     analyticsLocations: G
-  } = (0, A.Ay)(d.A.CONTEXT_MENU), R = (0, s.p)(), U = null != (t = null == x ? true : x[0]) ? t : G[0], B = (0, f.$9)(u, {
+  } = (0, A.Ay)(d.A.CONTEXT_MENU), R = (0, s.p)(), U = null != (t = null == x ? true : x[0]) ? t : G[0], L = (0, O.$9)(u, {
     location: U,
     targetUserId: n.id
-  }), L = (0, i.bG)([y.A], () => {
+  }), B = (0, i.bG)([y.A], () => {
     var e;
     return null != (e = y.A.getUserVoiceChannelId(u, n.id)) ? e : true
   }, [u, n.id]), k = l.useCallback(() => {
-    B(f.Nj.COPY_ID)
-  }, [B]), V = (0, i.bG)([g.Ay], () => g.Ay.isMember(u, n.id), [u, n.id]), F = (0, S.A)({
+    L(O.Nj.COPY_ID)
+  }, [L]), V = (0, i.bG)([g.Ay], () => g.Ay.isMember(u, n.id), [u, n.id]), F = (0, S.A)({
     userId: n.id,
     guildId: u,
     sourceAnalyticsLocations: x
-  }), H = (0, j.A)(n.id, P), K = (0, O.A)({
+  }), H = (0, m.A)(n.id, P), K = (0, f.A)({
     guildId: u,
     userId: n.id,
     analyticsLocation: null != T ? T : R.location,
@@ -67,12 +67,12 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     guildId: u,
     location: U,
     channelId: c
-  }), W = (0, m.A)({
+  }), W = (0, j.A)({
     user: n,
     guildId: u,
     location: U,
     channelId: c
-  }), X = (0, p.A)(n, u, null != c ? c : L, U), Z = (0, _.A)(c, D), $ = (0, h.A)(n, u), q = (0, M.A)(n.id, u, false, U), z = (0, b.A)({
+  }), X = (0, p.A)(n, u, null != c ? c : B, U), Z = (0, _.A)(c, D), $ = (0, h.A)(n, u), q = (0, M.A)(n.id, u, false, U), z = (0, b.A)({
     id: n.id,
     label: C.intl.string(C.t["/AXYnE"]),
     onSuccess: k
@@ -81,7 +81,7 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     "data-menu-mixed": true,
     navId: "user-context",
     onClose: () => {
-      (0, o.Z_)(), null == w || w()
+      (0, o.Z_)(), null == N || N()
     },
     "aria-label": C.intl.string(C.t.liqwPJ),
     onSelect: I,
@@ -96,7 +96,7 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
         }), (0, r.jsxs)(a.rXV, {
           children: [q, Q]
         })]
-      }), null != D ? Z : null, N && null != $ ? (0, r.jsx)(a.rXV, {
+      }), null != D ? Z : null, w && null != $ ? (0, r.jsx)(a.rXV, {
         children: $
       }) : null]
     }), (0, r.jsx)(a.rXV, {

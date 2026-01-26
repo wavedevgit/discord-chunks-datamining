@@ -14,20 +14,24 @@ var Chunk627968 = require("./627968.js"),
 function d(e, t) {
   var n;
   let d = null != (n = null == e ? true : e.url) ? n : "",
-    u = (0, i.bG)([a.Ay], () => a.Ay.isVideoStatsEnabled(d)),
-    f = l.useCallback(() => {
-      "" !== d && (0, a.FM)(d)
+    u = (0, l.bG)([o.Ay], () => o.Ay.isVideoStatsEnabled(d)),
+    g = i.useCallback(() => {
+      "" !== d && (0, o.FM)(d)
     }, [d]);
   if (null == e || !(0, s.XB)(e.contentType) || (null == t ? true : t.shouldHideMediaOptions) === true) return null;
   let {
-    enableVideoStatsForNerds: g
+    enableVideoStatsForNerds: p
   } = (0, c.G)({
     location: "useVideoStatsMenuItem"
   });
-  return g ? (0, r.jsx)(o.sLh, {
+  return p ? (0, r.jsx)(a.sLh, {
     id: "video-stats-for-nerds",
     label: "Stats for Nerds",
+    leadingAccessory: {
+      type: "icon",
+      icon: a.mir
+    },
     checked: u,
-    action: f
+    action: g
   }) : null
 }

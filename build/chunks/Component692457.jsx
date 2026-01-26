@@ -14,13 +14,17 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function u(e, t) {
-  let n = (0, l.bG)([c.default], () => c.default.getId()),
-    u = (0, a.Id)(t),
-    f = (0, a.s5)(t);
-  return (0, s.A)(e, n) && u && !f ? (0, r.jsx)(i.Drp, {
+  let n = (0, i.bG)([c.default], () => c.default.getId()),
+    u = (0, o.Id)(t),
+    g = (0, o.s5)(t);
+  return (0, s.A)(e, n) && u && !g ? (0, r.jsx)(l.Drp, {
     id: "edit",
     label: d.intl.string(d.t.fsBWmS),
-    action: () => o.A.startEditMessageRecord(t.id, e),
-    icon: i.R2l
+    action: () => a.A.startEditMessageRecord(t.id, e),
+    leadingAccessory: {
+      type: "icon",
+      icon: l.R2l
+    },
+    icon: l.R2l
   }) : null
 }

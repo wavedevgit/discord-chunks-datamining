@@ -12,12 +12,16 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx");
 
 function s(e, t) {
-  return (0, i.m)(e) ? (0, r.jsx)(l.Drp, {
+  return (0, l.m)(e) ? (0, r.jsx)(i.Drp, {
     id: "forward",
     label: c.intl.string(c.t.I3ltXO),
-    icon: o.A,
+    leadingAccessory: {
+      type: "icon",
+      icon: a.A
+    },
+    icon: a.A,
     action: () => {
-      (0, a.Z4)(t, e)
+      (0, o.Z4)(t, e)
     }
   }) : null
 }

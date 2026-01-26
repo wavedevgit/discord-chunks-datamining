@@ -18,20 +18,24 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function m(e, t) {
-  let n = (0, l.bG)([c.default], () => c.default.getCurrentUser()),
+  let n = (0, l.bG)([d.default], () => d.default.getCurrentUser()),
     m = (0, o.Id)(t),
-    D = (0, l.bG)([u.A], () => u.A.can(A.xBc.MANAGE_MESSAGES, t), [t]),
+    g = (0, l.bG)([c.A], () => c.A.can(A.xBc.MANAGE_MESSAGES, t), [t]),
     {
-      firstMessage: g
+      firstMessage: p
     } = (0, l.bG)([a.A], () => a.A.getMessage(t.id), [t.id]),
-    p = D || null != n && e.canDeleteOwnMessage(n.id);
-  return e.state === A.cmJ.SENDING || !p || A.MRS.UNDELETABLE.has(e.type) || !m || t.isModeratorReportChannel() && (e.id === (null == g ? true : g.id) || (0, d.A)(e)) ? null : (0, i.jsx)(r.Drp, {
+    D = g || null != n && e.canDeleteOwnMessage(n.id);
+  return e.state === A.cmJ.SENDING || !D || A.MRS.UNDELETABLE.has(e.type) || !m || t.isModeratorReportChannel() && (e.id === (null == p ? true : p.id) || (0, u.A)(e)) ? null : (0, i.jsx)(s.Drp, {
     id: "delete",
     label: f.intl.string(f.t.xwMqD7),
     action: function(n) {
-      e.state === A.cmJ.SEND_FAILED ? s.A.deleteMessage(t.id, e.id, true) : n.shiftKey ? s.A.deleteMessage(t.id, e.id) : E.A.confirmDelete(t, e, true)
+      e.state === A.cmJ.SEND_FAILED ? r.A.deleteMessage(t.id, e.id, true) : n.shiftKey ? r.A.deleteMessage(t.id, e.id) : E.A.confirmDelete(t, e, true)
     },
     color: "danger",
-    icon: r.ucK
+    leadingAccessory: {
+      type: "icon",
+      icon: s.ucK
+    },
+    icon: s.ucK
   })
 }

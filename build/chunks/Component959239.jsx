@@ -1,7 +1,7 @@
 /** Chunk was on 1636 **/
 /** chunk id: 959239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -9,18 +9,22 @@ var Chunk397927 = require("./397927.js"),
   Chunk969632 = require("./969632.js"),
   Chunk985018 = require("./985018.jsx");
 
-function a(e) {
-  return null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, i.Gh)(e) ? null : (0, r.jsx)(l.Drp, {
+function o(e) {
+  return null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, l.Gh)(e) ? null : (0, r.jsx)(i.Drp, {
     id: "reactions",
-    label: o.intl.string(o.t.wikODq),
-    icon: l.nm2,
-    action: () => (0, l.mMO)(async () => {
+    label: a.intl.string(a.t.wikODq),
+    leadingAccessory: {
+      type: "icon",
+      icon: i.ShF
+    },
+    icon: i.nm2,
+    action: () => (0, i.mMO)(async () => {
       let {
         default: t
       } = await Promise.resolve().then(n.bind(n, 112753));
       return n => {
-        var l, i;
-        return (0, r.jsx)(t, (l = function(e) {
+        var i, l;
+        return (0, r.jsx)(t, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -37,18 +41,18 @@ function a(e) {
             })
           }
           return e
-        }({}, n), i = i = {
+        }({}, n), l = l = {
           message: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-        }), l))
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+        }), i))
       }
     })
   })

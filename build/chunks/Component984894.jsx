@@ -1,7 +1,7 @@
 /** Chunk was on 84841 **/
-/** chunk id: 984894, original params: e,t,n (module,exports,require) **/
+/** chunk id: 984894, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => u
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,16 +13,16 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e, t) {
-  let n = (0, i.bG)([d.A], () => e === d.A.getSelectedParticipantId(t), [t, e]);
-  return (0, i.bG)([d.A, c.A], () => {
-    let n = c.A.isInChannel(t, e) && c.A.hasVideo(t),
-      l = d.A.getLayout(t),
-      i = l === u.DUB.MINIMUM || l === u.DUB.NORMAL;
-    return !n || i
-  }, [t, e]) ? null : (0, l.jsx)(r.Drp, {
+function u(e, t) {
+  let l = (0, r.bG)([o.A], () => e === o.A.getSelectedParticipantId(t), [t, e]);
+  return (0, r.bG)([o.A, d.A], () => {
+    let l = d.A.isInChannel(t, e) && d.A.hasVideo(t),
+      n = o.A.getLayout(t),
+      r = n === c.DUB.MINIMUM || n === c.DUB.NORMAL;
+    return !l || r
+  }, [t, e]) ? null : (0, n.jsx)(i.Drp, {
     id: "focus-video",
-    label: n ? o.intl.string(o.t.KJPKUT) : o.intl.string(o.t["77cRN4"]),
-    action: () => a.A.selectParticipant(t, n ? null : e)
+    label: l ? s.intl.string(s.t.KJPKUT) : s.intl.string(s.t["77cRN4"]),
+    action: () => a.A.selectParticipant(t, l ? null : e)
   })
 }

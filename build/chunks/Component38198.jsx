@@ -1,4 +1,4 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 97887 **/
 /** chunk id: 38198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => L
@@ -307,6 +307,7 @@ function L(e) {
               children: [(0, r.jsx)(o.Drp, {
                 id: "summarize_thread_for_everyone",
                 label: w.intl.string(w.t.eCzSdd),
+                iconLeft: o.nFg,
                 leadingAccessory: {
                   type: "icon",
                   icon: o.nFg
@@ -315,6 +316,7 @@ function L(e) {
               }, "summarize_thread_for_everyone"), (0, r.jsx)(o.Drp, {
                 id: "summarize_thread_for_me",
                 label: w.intl.string(w.t["HOe+Hq"]),
+                iconLeft: o.nys,
                 leadingAccessory: {
                   type: "icon",
                   icon: o.nys

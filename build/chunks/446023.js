@@ -7,6 +7,6 @@ require.d(exports, {
 var Chunk728458 = require("./728458.js");
 
 function i() {
-  let e = parseInt("489223");
-  return Number.isNaN(e) && (r.A.captureMessage("Trying to open a changelog for an invalid build number ".concat("489223")), e = 0), e
+  let e = parseInt("489228");
+  return Number.isNaN(e) && (r.A.captureMessage("Trying to open a changelog for an invalid build number ".concat("489228")), e = 0), e
 }

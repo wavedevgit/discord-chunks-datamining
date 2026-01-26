@@ -18,24 +18,24 @@ let _ = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   var t;
   let {
     user: n,
-    guildId: o,
-    onSelect: u,
+    guildId: i,
+    onSelect: c,
     analyticsLocations: s,
     onCloseContextMenu: _,
     isViewOnly: b
   } = e, {
-    analyticsLocations: E
-  } = (0, c.Ay)(a.A.CONTEXT_MENU), f = null != (t = null == s ? true : s[0]) ? t : E[0], O = (0, d.A)(n.id, o, true, f, b);
-  return (0, r.jsx)(l.W1t, {
+    analyticsLocations: f
+  } = (0, a.Ay)(u.A.CONTEXT_MENU), E = null != (t = null == s ? true : s[0]) ? t : f[0], g = (0, d.A)(n.id, i, true, E, b);
+  return (0, l.jsx)(r.W1t, {
     "data-menu-migration-ready": true,
     navId: "guild-moderation-roles",
     onClose: () => {
-      (0, i.Z_)(), null == _ || _()
+      (0, o.Z_)(), null == _ || _()
     },
     "aria-label": A.intl.string(A.t.liqwPJ),
-    onSelect: u,
-    children: (0, r.jsx)(l.rXV, {
-      children: O
+    onSelect: c,
+    children: (0, l.jsx)(r.rXV, {
+      children: g
     })
   })
 }, {

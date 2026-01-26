@@ -1,1 +1,1 @@
-{"id":"560010","type":"store","data":{"name":"ChannelFollowerStatsStore","functions":[{"name":"getFollowerStatsForChannel","args":["e"]}],"events":["CONNECTION_OPEN","CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS","CHANNEL_FOLLOWER_STATS_FETCH_FAILURE"]},"fromModule":{"id":"97492"}}
+{"id":"560010","type":"store","data":{"name":"ChannelFollowerStatsStore","functions":[{"name":"getFollowerStatsForChannel","args":["e"]}],"events":["CONNECTION_OPEN","CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS","CHANNEL_FOLLOWER_STATS_FETCH_FAILURE"]},"fromModule":{"id":"97887"}}

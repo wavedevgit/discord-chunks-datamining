@@ -169,7 +169,7 @@ function U(e, t, a, l) {
     }), (0, o.L3)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("24202"), n.e("6502"), n.e("1636"), n.e("27687"), n.e("42897")]).then(n.bind(n, 547983));
+      } = await Promise.all([n.e("24202"), n.e("6502"), n.e("1636"), n.e("27687"), n.e("33596")]).then(n.bind(n, 547983));
       return n => (0, r.jsx)(e, C(S({}, n), {
         message: s,
         channel: i,

@@ -54,30 +54,30 @@ function y(e, t, y) {
   let j = l.useMemo(() => ({
     [t]: [e.id]
   }), [t, e.id]);
-  (0, o.E)(j, "useThreadAdminActionItems"), (0, i.bG)([g.A], () => g.A.getGuildVersion(t), [t]);
+  (0, a.E)(j, "useThreadAdminActionItems"), (0, i.bG)([b.A], () => b.A.getGuildVersion(t), [t]);
   let h = (0, i.bG)([A.A], () => A.A.getChannel(y)),
-    E = (0, i.bG)([b.A], () => b.A.getGuild(t), [t]),
-    P = (0, i.bG)([O.default], () => O.default.getCurrentUser()),
+    E = (0, i.bG)([g.A], () => g.A.getGuild(t), [t]),
+    P = (0, i.bG)([f.default], () => f.default.getCurrentUser()),
     x = (0, u.A)(h, "Context Menu"),
     v = (0, s.qi)(null == h ? true : h.id);
-  return (null == P ? true : P.id) === e.id ? [x] : null == E || null == h || null == P ? [] : [v ? (0, r.jsx)(a.Drp, {
+  return (null == P ? true : P.id) === e.id ? [x] : null == E || null == h || null == P ? [] : [v ? (0, r.jsx)(o.Drp, {
     id: "remove",
-    label: h.isForumPost() ? f.intl.formatToPlainString(f.t.v2KNNx, {
+    label: h.isForumPost() ? O.intl.formatToPlainString(O.t.v2KNNx, {
       user: e.username
-    }) : f.intl.formatToPlainString(f.t["27xWaT"], {
+    }) : O.intl.formatToPlainString(O.t["27xWaT"], {
       user: e.username
     }),
     color: "danger",
-    action: () => c.A.removeMember(h.id, e.id, "Context Menu")
-  }) : null, (0, d.L7)(e, E) ? (0, r.jsx)(a.Drp, {
+    action: () => d.A.removeMember(h.id, e.id, "Context Menu")
+  }) : null, (0, c.L7)(e, E) ? (0, r.jsx)(o.Drp, {
     id: "kick",
-    label: v ? f.intl.formatToPlainString(f.t["1Ie87p"], {
+    label: v ? O.intl.formatToPlainString(O.t["1Ie87p"], {
       user: e.username
-    }) : f.intl.formatToPlainString(f.t["9l/iTS"], {
+    }) : O.intl.formatToPlainString(O.t["9l/iTS"], {
       user: e.username
     }),
     color: "danger",
-    action: () => (0, a.mMO)(async () => {
+    action: () => (0, o.mMO)(async () => {
       let {
         default: t
       } = await n.e("62624").then(n.bind(n, 324785));
@@ -86,15 +86,15 @@ function y(e, t, y) {
         user: e
       }))
     })
-  }) : null, (0, d.EZ)(e, E) ? (0, r.jsx)(a.Drp, {
+  }) : null, (0, c.EZ)(e, E) ? (0, r.jsx)(o.Drp, {
     id: "ban",
-    label: v ? f.intl.formatToPlainString(f.t.i62APf, {
+    label: v ? O.intl.formatToPlainString(O.t.i62APf, {
       user: e.username
-    }) : f.intl.formatToPlainString(f.t.WnpUBi, {
+    }) : O.intl.formatToPlainString(O.t.WnpUBi, {
       user: e.username
     }),
     color: "danger",
-    action: () => (0, a.mMO)(async () => {
+    action: () => (0, o.mMO)(async () => {
       let {
         default: t
       } = await n.e("80123").then(n.bind(n, 333179));

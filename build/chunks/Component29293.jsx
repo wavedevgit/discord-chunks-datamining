@@ -1,7 +1,7 @@
 /** Chunk was on 91042 **/
 /** chunk id: 29293, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => s
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -10,22 +10,22 @@ var Chunk311907 = require("./311907.js"),
   Chunk994500 = require("./994500.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d(e) {
+function s(e) {
   let {
     user: t,
-    onAction: d,
-    appContext: s
-  } = e, u = t.id, [c, A] = (0, i.yK)([a.A], () => {
+    onAction: s,
+    appContext: d
+  } = e, u = t.id, [c, A] = (0, r.yK)([a.A], () => {
     var e;
     return [a.A.isFriend(u), null != (e = a.A.getNickname(u)) ? e : null]
   }, [u]);
   if (!c) return null;
   let b = null == A ? o.intl.string(o.t.BGYkaH) : o.intl.string(o.t["8pOYUE"]);
-  return (0, l.jsx)(r.Drp, {
+  return (0, l.jsx)(i.Drp, {
     id: null == A ? "add-friend-nickname" : "edit-friend-nickname",
     label: b,
     action: () => {
-      null == d || d(), (0, r.mMO)(async () => {
+      null == s || s(), (0, i.mMO)(async () => {
         let {
           default: e
         } = await n.e("59139").then(n.bind(n, 609422));
@@ -51,7 +51,7 @@ function d(e) {
           nickname: A
         }, n))
       }, {
-        contextKey: null != s ? (0, r.TId)(s) : true
+        contextKey: null != d ? (0, i.TId)(d) : true
       })
     }
   })

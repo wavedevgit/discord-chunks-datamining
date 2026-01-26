@@ -1,7 +1,7 @@
 /** Chunk was on 47260 **/
 /** chunk id: 115184, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => g
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,54 +16,62 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(t) {
+function f(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
       return Object.getOwnPropertyDescriptor(n, t).enumerable
-    }))), l.forEach(function(e) {
-      var l;
-      l = n[e], e in t ? Object.defineProperty(t, e, {
-        value: l,
+    }))), i.forEach(function(e) {
+      var i;
+      i = n[e], e in t ? Object.defineProperty(t, e, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : t[e] = l
+      }) : t[e] = i
     })
   }
   return t
 }
 
-function f(t, e) {
-  (0, r.showToast)((0, r.createToast)(t, r.ToastType.FAILURE)), s.A.captureException(e)
+function v(t, e) {
+  (0, l.showToast)((0, l.createToast)(t, l.ToastType.FAILURE)), s.A.captureException(e)
 }
 
-function E(t, e, n) {
-  if ((0, i.A)(null == e ? true : e.getChannelId()) || (null == n ? true : n.shouldHideMediaOptions) === true || !c.isPlatformEmbedded || null == t || !(0, a.e7)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType)) return null;
-  let s = (0, a.XW)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType, a.N7),
-    E = async () => {
+function g(t, e, n) {
+  if ((0, o.A)(null == e ? true : e.getChannelId()) || (null == n ? true : n.shouldHideMediaOptions) === true || !c.isPlatformEmbedded || null == t || !(0, r.e7)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType)) return null;
+  let s = (0, r.XW)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType, r.N7),
+    g = async () => {
       try {
-        let t = await u.Ay.saveImage(s, null == n ? true : n.contentType, a.N7);
+        let t = await u.Ay.saveImage(s, null == n ? true : n.contentType, r.N7);
         if (t === u._0.ERRORED) throw Error("NativeUtils.saveImage errored for ".concat(s));
-        t === u._0.SAVED && (o.default.track(p.HAw.CONTEXT_MENU_IMAGE_SAVED, y({}, (0, d.N)())), (0, r.showToast)((0, r.createToast)(v.intl.string(v.t.cqpdJW), r.ToastType.SUCCESS)))
+        t === u._0.SAVED && (a.default.track(p.HAw.CONTEXT_MENU_IMAGE_SAVED, f({}, (0, d.N)())), (0, l.showToast)((0, l.createToast)(y.intl.string(y.t.cqpdJW), l.ToastType.SUCCESS)))
       } catch (t) {
-        o.default.track(p.HAw.CONTEXT_MENU_IMAGE_SAVE_FAILED, y({}, (0, d.N)())), f(v.intl.string(v.t["8Ve/S0"]), t)
+        a.default.track(p.HAw.CONTEXT_MENU_IMAGE_SAVE_FAILED, f({}, (0, d.N)())), v(y.intl.string(y.t["8Ve/S0"]), t)
       }
-    }, g = async () => {
+    }, E = async () => {
       try {
-        await u.Ay.copyImage(s, null == n ? true : n.contentType), o.default.track(p.HAw.CONTEXT_MENU_IMAGE_COPIED, y({}, (0, d.N)())), (0, r.showToast)((0, r.createToast)(v.intl.string(v.t.bhUpvC), r.ToastType.SUCCESS))
+        await u.Ay.copyImage(s, null == n ? true : n.contentType), a.default.track(p.HAw.CONTEXT_MENU_IMAGE_COPIED, f({}, (0, d.N)())), (0, l.showToast)((0, l.createToast)(y.intl.string(y.t.bhUpvC), l.ToastType.SUCCESS))
       } catch (t) {
-        f(v.intl.string(v.t.PTPbjx), t), o.default.track(p.HAw.CONTEXT_MENU_IMAGE_COPY_FAILED, y({}, (0, d.N)()))
+        v(y.intl.string(y.t.PTPbjx), t), a.default.track(p.HAw.CONTEXT_MENU_IMAGE_COPY_FAILED, f({}, (0, d.N)()))
       }
     };
-  return [(0, a.PK)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType) ? (0, l.jsx)(r.Drp, {
+  return [(0, r.PK)(t, null == n ? true : n.contentType, null == n ? true : n.originalContentType) ? (0, i.jsx)(l.Drp, {
     id: "copy-image",
-    label: v.intl.string(v.t.tvUqWn),
-    action: g
-  }, "copy-image") : null, (0, l.jsx)(r.Drp, {
-    id: "save-image",
-    label: v.intl.string(v.t.PeXhgO),
+    label: y.intl.string(y.t.tvUqWn),
+    leadingAccessory: {
+      type: "icon",
+      icon: l.xfq
+    },
     action: E
+  }, "copy-image") : null, (0, i.jsx)(l.Drp, {
+    id: "save-image",
+    label: y.intl.string(y.t.PeXhgO),
+    leadingAccessory: {
+      type: "icon",
+      icon: l.xfq
+    },
+    action: g
   }, "save-image")]
 }

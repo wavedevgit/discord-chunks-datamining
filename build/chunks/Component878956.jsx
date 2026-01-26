@@ -12,9 +12,13 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx");
 
 function s(e, t) {
-  return e.state !== a.cmJ.SEND_FAILED ? null : (0, r.jsx)(l.Drp, {
+  return e.state !== o.cmJ.SEND_FAILED ? null : (0, r.jsx)(i.Drp, {
     id: "resend",
     label: c.intl.string(c.t.lXHojr),
-    action: () => (0, o.A)(t, e, true, i.A.getOptions(e.id))
+    leadingAccessory: {
+      type: "icon",
+      icon: i.fNY
+    },
+    action: () => (0, a.A)(t, e, true, l.A.getOptions(e.id))
   })
 }

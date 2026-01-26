@@ -25,38 +25,38 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function h(e, t) {
-  let n = (0, i.bG)([c.Ay], () => c.Ay.getChannels(t)[c.vM], [t]),
-    h = (0, i.bG)([O.A, u.A], () => {
-      let n = O.A.getUserVoiceChannelId(t, e.id);
+  let n = (0, r.bG)([c.Ay], () => c.Ay.getChannels(t)[c.vM], [t]),
+    h = (0, r.bG)([p.A, u.A], () => {
+      let n = p.A.getUserVoiceChannelId(t, e.id);
       return u.A.getChannel(n)
     }, [t, e.id]);
-  if ((0, i.bG)([A.Ay], () => A.Ay.isGuestOrLurker(t, e.id), [t, e.id]) || null == h) return null;
-  let j = e.id === s.default.getId();
-  if (!j && !g.A.can(E.xBc.MOVE_MEMBERS, h)) return null;
+  if ((0, r.bG)([A.Ay], () => A.Ay.isGuestOrLurker(t, e.id), [t, e.id]) || null == h) return null;
+  let j = e.id === d.default.getId();
+  if (!j && !g.A.can(v.xBc.MOVE_MEMBERS, h)) return null;
   let x = n.filter(t => {
     let {
       channel: n
     } = t;
-    return n.id !== h.id && (j ? g.A.can(E.xBc.CONNECT, n) && !(0, p.Pd)(n, O.A, b.A) : g.A.can(E.xBc.MOVE_MEMBERS, n) && (g.A.can(E.xBc.CONNECT, n) || y.$3({
-      permission: E.xBc.CONNECT,
+    return n.id !== h.id && (j ? g.A.can(v.xBc.CONNECT, n) && !(0, O.Pd)(n, p.A, b.A) : g.A.can(v.xBc.MOVE_MEMBERS, n) && (g.A.can(v.xBc.CONNECT, n) || y.$3({
+      permission: v.xBc.CONNECT,
       user: e,
       context: n
-    })) && !(0, p.Pd)(n, O.A, b.A))
+    })) && !(0, O.Pd)(n, p.A, b.A))
   });
-  return 0 === x.length ? null : (0, l.jsx)(r.Drp, {
+  return 0 === x.length ? null : (0, l.jsx)(i.Drp, {
     id: "voice-move",
-    label: v.intl.string(v.t.FAplms),
+    label: E.intl.string(E.t.FAplms),
     children: x.map(n => {
       let {
-        channel: i
+        channel: r
       } = n;
-      return (0, l.jsx)(r.Drp, {
-        id: i.id,
+      return (0, l.jsx)(i.Drp, {
+        id: r.id,
         action: () => {
-          e.id === s.default.getId() ? o.default.selectVoiceChannel(i.id) : a.A.setChannel(t, e.id, i.id)
+          e.id === d.default.getId() ? o.default.selectVoiceChannel(r.id) : a.A.setChannel(t, e.id, r.id)
         },
-        label: (0, d.m1)(i, m.default, f.A)
-      }, i.id)
+        label: (0, s.m1)(r, m.default, f.A)
+      }, r.id)
     })
   })
 }

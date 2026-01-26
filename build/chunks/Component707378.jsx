@@ -22,28 +22,28 @@ function m(e) {
   let {
     user: t,
     context: m,
-    joinCallVideo: O,
-    id: p,
+    joinCallVideo: p,
+    id: O,
     onCall: y
-  } = e, E = (0, d.aL)(), v = (0, i.bG)([u.default], () => u.default.getId() === t.id), h = (0, i.bG)([A.A], () => A.A.isBlocked(t.id)), j = (0, i.bG)([b.A, c.A], () => b.A.getVoiceChannelId() === c.A.getDMFromUserId(t.id)), {
+  } = e, v = (0, s.aL)(), E = (0, r.bG)([u.default], () => u.default.getId() === t.id), h = (0, r.bG)([A.A], () => A.A.isBlocked(t.id)), j = (0, r.bG)([b.A, c.A], () => b.A.getVoiceChannelId() === c.A.getDMFromUserId(t.id)), {
     copyVariant: x
   } = o.o.useConfig({
     location: "useCallUserItem"
   });
-  if (v || m === g.BRT.POPOUT || j || t.bot || t.isProvisional) return null;
+  if (E || m === g.BRT.POPOUT || j || t.bot || t.isProvisional) return null;
   let S = () => {
       null == y || y(), a.A.openPrivateChannel({
         recipientIds: t.id,
         joinCall: true,
-        joinCallVideo: O
-      }), E.dispatch(g.jej.POPOUT_CLOSE), (0, r.s7G)()
+        joinCallVideo: p
+      }), v.dispatch(g.jej.POPOUT_CLOSE), (0, i.s7G)()
     },
-    M = !s.Ay.disableCallUserConfirmationPrompt;
-  return (0, l.jsx)(r.Drp, {
-    id: null != p ? p : "call",
+    M = !d.Ay.disableCallUserConfirmationPrompt;
+  return (0, l.jsx)(i.Drp, {
+    id: null != O ? O : "call",
     label: "control" !== x ? f.intl.string(f.t["ZeP+kK"]) : f.intl.string(f.t.JJogjm),
     action: M ? () => {
-      (0, r.mMO)(async () => {
+      (0, i.mMO)(async () => {
         let {
           default: e
         } = await n.e("19106").then(n.bind(n, 279673));

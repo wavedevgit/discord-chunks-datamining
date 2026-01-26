@@ -36,6 +36,10 @@ function c(e) {
     action: _,
     icon: u ? true : s.L9S,
     iconLeft: u ? s.L9S : true,
+    leadingAccessory: {
+      type: "icon",
+      icon: s.L9S
+    },
     focusedClassName: f
   }, m)
 }

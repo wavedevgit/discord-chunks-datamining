@@ -10,12 +10,16 @@ var Chunk397927 = require("./397927.js"),
   Chunk52684 = require("./52684.js"),
   Chunk985018 = require("./985018.jsx");
 let c = {
-  [Chunk52684.G.END_EARLY]: e => (0, r.jsx)(l.Drp, {
+  [Chunk52684.G.END_EARLY]: e => (0, r.jsx)(i.Drp, {
     id: "end-poll-early",
-    label: a.intl.string(a.t.grdwwt),
-    icon: l.O7L,
+    label: o.intl.string(o.t.grdwwt),
+    icon: i.O7L,
+    leadingAccessory: {
+      type: "icon",
+      icon: i.O7L
+    },
     action: () => {
-      i.A.endPollEarly({
+      l.A.endPollEarly({
         channelId: e.channel_id,
         messageId: e.id
       })
@@ -27,7 +31,7 @@ let c = {
 };
 
 function s(e) {
-  let t = (0, o.A)(e);
+  let t = (0, a.A)(e);
   return 0 === t.length ? null : (0, r.jsx)(r.Fragment, {
     children: t.map(t => c[t](e))
   })

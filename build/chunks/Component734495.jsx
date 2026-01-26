@@ -12,15 +12,19 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx");
 
 function s(e) {
-  if (!a.p5) return null;
+  if (!o.p5) return null;
   let t = e.getContentMessage(),
-    n = (0, o._c)(t) ? (0, i.kC)(t.components) : t.content;
-  return null == n || 0 === n.length ? null : (0, r.jsx)(l.Drp, {
+    n = (0, a._c)(t) ? (0, l.kC)(t.components) : t.content;
+  return null == n || 0 === n.length ? null : (0, r.jsx)(i.Drp, {
     id: "copy-text",
     label: c.intl.string(c.t.JrGD7E),
-    icon: l.TdU,
+    leadingAccessory: {
+      type: "icon",
+      icon: i.TdU
+    },
+    icon: i.TdU,
     action: () => {
-      (0, a.C)(n)
+      (0, o.C)(n)
     }
   })
 }

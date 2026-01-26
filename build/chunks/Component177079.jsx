@@ -16,16 +16,16 @@ function u(t) {
   let {
     src: e,
     onSelect: n
-  } = t, u = (0, o.A)(e), d = (0, c.A)(e, null);
-  return i.isPlatformEmbedded ? (0, l.jsxs)(r.W1t, {
+  } = t, u = (0, a.A)(e), d = (0, c.A)(e, null);
+  return o.isPlatformEmbedded ? (0, i.jsxs)(l.W1t, {
     "data-menu-migration-ready": true,
     navId: "image-context",
-    onClose: a.Z_,
+    onClose: r.Z_,
     "aria-label": s.intl.string(s.t.Zow2V5),
     onSelect: n,
-    children: [(0, l.jsx)(r.rXV, {
+    children: [(0, i.jsx)(l.rXV, {
       children: u
-    }), (0, l.jsx)(r.rXV, {
+    }), (0, i.jsx)(l.rXV, {
       children: d
     })]
   }) : null

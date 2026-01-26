@@ -11,10 +11,14 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx");
 
 function o(e, t) {
-  return (0, r.Id)(t) ? (0, i.jsx)(l.Drp, {
+  return (0, s.Id)(t) ? (0, i.jsx)(l.Drp, {
     id: "mark-unread",
     label: a.intl.string(a.t.RpE9k7),
-    action: () => (0, s.A)(t.id, e.id),
+    action: () => (0, r.A)(t.id, e.id),
+    leadingAccessory: {
+      type: "icon",
+      icon: l.QTh
+    },
     icon: l.QTh
   }) : null
 }

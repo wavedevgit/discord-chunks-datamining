@@ -11,20 +11,20 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx");
 
 function c(e, t) {
-  let c = (0, o.Fg)(e),
-    s = null != t && (0, o.qo)({
-      type: i.D.GenericMedia,
+  let c = (0, a.Fg)(e),
+    s = null != t && (0, a.qo)({
+      type: l.D.GenericMedia,
       media: t
     }, c);
-  return null != t && s ? (0, r.jsx)(l.Drp, {
+  return null != t && s ? (0, r.jsx)(i.Drp, {
     id: "report-image-false-positive",
-    label: a.intl.string(a.t.ZH7P2h),
+    label: o.intl.string(o.t.ZH7P2h),
     action: () => {
-      (0, l.mMO)(async () => {
+      (0, i.mMO)(async () => {
         let {
-          default: l
+          default: i
         } = await n(652442);
-        return n => (0, r.jsx)(l, function(e) {
+        return n => (0, r.jsx)(i, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -48,6 +48,10 @@ function c(e, t) {
         }, n))
       })
     },
-    icon: l.DAq
+    leadingAccessory: {
+      type: "icon",
+      icon: i.DAq
+    },
+    icon: i.DAq
   }, "report-image-false-positive") : null
 }

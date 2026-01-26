@@ -1,8 +1,8 @@
 /** Chunk was on 1636 **/
 /** chunk id: 880457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m,
-  P: () => y
+  A: () => b,
+  P: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,18 +18,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk927813 = require("./927813.js"),
   Chunk985018 = require("./985018.jsx");
 
-function m(e) {
+function b(e) {
   let {
     enabled: t
   } = c.A.useExperiment({
     location: "LongPressMessageActionSheet"
-  }), n = (0, i.bG)([u.A], () => u.A.getSavedMessage(e.channel_id, e.id)), l = y({
+  }), n = (0, l.bG)([u.A], () => u.A.getSavedMessage(e.channel_id, e.id)), i = A({
     message: e,
     savedMessage: n
   });
-  return t ? null != n || (0, f.A)() ? (0, r.jsxs)(o.Drp, {
+  return t ? null != n || (0, g.A)() ? (0, r.jsxs)(a.Drp, {
     id: "save-for-later",
-    label: b.intl.string(b.t.tpxJto),
+    label: y.intl.string(y.t.tpxJto),
+    leadingAccessory: {
+      type: "icon",
+      icon: null != n ? a.cFy : a.c$8
+    },
     action: () => null == n ? (0, s.Y)({
       channelId: e.channel_id,
       messageId: e.id,
@@ -40,32 +44,45 @@ function m(e) {
       dueAt: n.saveData.dueAt,
       displayToast: true
     }),
-    children: [null != n ? (0, r.jsx)(o.Drp, {
+    children: [null != n ? (0, r.jsx)(a.Drp, {
       id: "remove-from-for-later",
-      label: b.intl.string(b.t.SvXS1Z),
-      icon: o.cFy,
+      label: y.intl.string(y.t.SvXS1Z),
+      leadingAccessory: {
+        type: "icon",
+        icon: a.cFy
+      },
+      icon: a.cFy,
       action: () => (0, s.x)({
         channelId: e.channel_id,
         messageId: e.id,
         dueAt: n.saveData.dueAt,
         displayToast: true
       })
-    }) : (0, r.jsx)(o.Drp, {
+    }) : (0, r.jsx)(a.Drp, {
       id: "create-bookmark",
-      label: b.intl.string(b.t["9p3D9p"]),
-      icon: o.c$8,
+      label: y.intl.string(y.t["9p3D9p"]),
+      leadingAccessory: {
+        type: "icon",
+        icon: a.c$8
+      },
+      icon: a.c$8,
       action: () => (0, s.Y)({
         channelId: e.channel_id,
         messageId: e.id,
         displayToast: true
       })
-    }), (0, r.jsx)(o.bXX, {}), l]
-  }) : (0, r.jsx)(o.Drp, {
+    }), (0, r.jsx)(a.bXX, {}), i]
+  }) : (0, r.jsx)(a.Drp, {
     id: "save-for-later-upsell",
-    label: b.intl.string(b.t.tpxJto),
-    icon: o.tvc,
+    label: y.intl.string(y.t.tpxJto),
+    leadingAccessory: {
+      type: "icon",
+      icon: a.tvc,
+      color: o.k0.PREMIUM_TIER_2
+    },
+    icon: a.tvc,
     iconProps: {
-      color: a.k0.PREMIUM_TIER_2
+      color: o.k0.PREMIUM_TIER_2
     },
     action: () => (0, s.Y)({
       channelId: e.channel_id,
@@ -75,50 +92,54 @@ function m(e) {
   }) : null
 }
 
-function y(e) {
+function A(e) {
   let {
     message: t,
     savedMessage: n
-  } = e, [i, a] = l.useState(new Date);
-  l.useEffect(() => {
-    let e = setInterval(() => a(new Date), p.A.Millis.MINUTE);
+  } = e, [l, o] = i.useState(new Date);
+  i.useEffect(() => {
+    let e = setInterval(() => o(new Date), f.A.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }
   }, []);
-  let c = l.useCallback(e => (0, s.Y)({
+  let c = i.useCallback(e => (0, s.Y)({
       channelId: t.channel_id,
       messageId: t.id,
       dueAt: e,
       displayToast: true
     }), [t.channel_id, t.id]),
-    u = (0, g.S)({
+    u = (0, p.S)({
       createReminder: c
     }),
     {
-      dueInText: f
+      dueInText: g
     } = (0, d.Ce)({
       dueAt: null == n ? true : n.saveData.dueAt,
-      now: i,
+      now: l,
       type: d.kh.LONG
     });
-  return (null == n ? true : n.saveData.dueAt) == null ? (0, r.jsx)(o.rXV, {
-    label: b.intl.string(b.t.roMu1H),
+  return (null == n ? true : n.saveData.dueAt) == null ? (0, r.jsx)(a.rXV, {
+    label: y.intl.string(y.t.roMu1H),
     children: u
-  }) : (0, r.jsxs)(o.rXV, {
-    label: f,
-    children: [(0, r.jsx)(o.Drp, {
+  }) : (0, r.jsxs)(a.rXV, {
+    label: g,
+    children: [(0, r.jsx)(a.Drp, {
       id: "mark-complete",
-      label: b.intl.string(b.t.yjGtdJ),
-      icon: o.Uzd,
+      label: y.intl.string(y.t.yjGtdJ),
+      leadingAccessory: {
+        type: "icon",
+        icon: a.Uzd
+      },
+      icon: a.Uzd,
       action: () => (0, s.Y)({
         channelId: t.channel_id,
         messageId: t.id,
         dueAt: true
       })
-    }), (0, r.jsx)(o.Drp, {
+    }), (0, r.jsx)(a.Drp, {
       id: "edit-reminder",
-      label: b.intl.string(b.t.vrbqs1),
+      label: y.intl.string(y.t.vrbqs1),
       children: u
     })]
   })

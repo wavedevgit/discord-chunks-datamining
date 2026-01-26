@@ -20,30 +20,30 @@ let f = (0, Chunk358367.A)(function(e) {
   let {
     user: l,
     guildId: n,
-    analyticsContext: a,
-    onSelect: d
+    analyticsContext: c,
+    onSelect: s
   } = e, f = (0, u.A)({
     userId: l.id,
     guildId: n
-  }), h = (0, A.A)(l.id, n), p = (0, s.A)({
+  }), p = (0, A.A)(l.id, n), h = (0, a.A)({
     id: l.id,
-    label: g.intl.string(g.t["/AXYnE"])
-  }), O = (0, c.A)(l.id), j = l.isNonUserBot();
-  return (0, t.jsx)(o.A, {
-    context: a,
-    object: b.ZSU.CONTEXT_MENU,
-    children: (0, t.jsxs)(r.W1t, {
+    label: b.intl.string(b.t["/AXYnE"])
+  }), j = (0, d.A)(l.id), O = l.isNonUserBot();
+  return (0, r.jsx)(o.A, {
+    context: c,
+    object: g.ZSU.CONTEXT_MENU,
+    children: (0, r.jsxs)(t.W1t, {
       "data-menu-mixed": true,
       navId: "user-context",
       onClose: i.Z_,
-      "aria-label": g.intl.string(g.t.liqwPJ),
-      onSelect: d,
-      children: [(0, t.jsxs)(r.rXV, {
-        children: [!j && f, !j && O]
-      }), (0, t.jsx)(r.rXV, {
-        children: !j && h
-      }), (0, t.jsx)(r.rXV, {
-        children: p
+      "aria-label": b.intl.string(b.t.liqwPJ),
+      onSelect: s,
+      children: [(0, r.jsxs)(t.rXV, {
+        children: [!O && f, !O && j]
+      }), (0, r.jsx)(t.rXV, {
+        children: !O && p
+      }), (0, r.jsx)(t.rXV, {
+        children: h
       })]
     })
   })

@@ -21,50 +21,50 @@ function f(t) {
   let {
     target: e,
     onSelect: n
-  } = t, f = e.getAttribute("data-type"), O = e.getAttribute("data-id"), j = e.getAttribute("data-name"), m = e.getAttribute("data-surrogates"), v = "true" === e.getAttribute("data-animated"), E = e.getAttribute("data-format-type"), S = f === d.g.EMOJI, A = f === d.g.STICKER, C = b.Q_.useSetting(), I = (0, c.A)({
+  } = t, f = e.getAttribute("data-type"), O = e.getAttribute("data-id"), j = e.getAttribute("data-name"), m = e.getAttribute("data-surrogates"), A = "true" === e.getAttribute("data-animated"), v = e.getAttribute("data-format-type"), E = f === b.g.EMOJI, S = f === b.g.STICKER, C = g.Q_.useSetting(), I = (0, u.A)({
     type: f,
     id: O,
     name: j,
     isInExpressionPicker: true
-  }), x = null != m ? (0, l.jsx)(i.Dr, {
+  }), x = null != m ? (0, i.jsx)(r.Dr, {
     id: "copy",
     label: y.intl.string(y.t.ad58UB),
-    action: () => (0, g.C)(m)
-  }) : null, P = (0, u.A)({
+    action: () => (0, p.C)(m)
+  }) : null, P = (0, c.A)({
     id: O,
-    shiftId: f === d.g.EMOJI ? "<".concat(v ? "a" : "", ":").concat(null == j ? true : j.split("~")[0], ":").concat(O, ">") : true,
-    label: f === d.g.STICKER ? y.intl.string(y.t.SJ3249) : y.intl.string(y.t.Ap2oVy)
-  }), h = r.useCallback(() => {
+    shiftId: f === b.g.EMOJI ? "<".concat(A ? "a" : "", ":").concat(null == j ? true : j.split("~")[0], ":").concat(O, ">") : true,
+    label: f === b.g.STICKER ? y.intl.string(y.t.SJ3249) : y.intl.string(y.t.Ap2oVy)
+  }), h = l.useCallback(() => {
     if (null != O && null != j) {
-      if (S)(0, g.C)((0, p.Ez)({
+      if (E)(0, p.C)((0, d.Ez)({
         id: O,
         name: j,
-        animated: v
+        animated: A
       }));
-      else if (A && null != E) {
+      else if (S && null != v) {
         let t = (0, s.zg)({
           id: O,
           name: j,
-          format_type: Number(E)
+          format_type: Number(v)
         });
-        null != t && (0, g.C)(t)
+        null != t && (0, p.C)(t)
       }
     }
-  }, [O, j, v, S, A, E]), w = null != O && null != j && (S && null == m || A && null != E) ? (0, l.jsx)(i.Dr, {
+  }, [O, j, A, E, S, v]), w = null != O && null != j && (E && null == m || S && null != v) ? (0, i.jsx)(r.Dr, {
     id: "copy-image-link",
     label: y.intl.string(y.t["8xHmxo"]),
     action: h,
     icon: o.qYV
   }) : null;
-  return (0, l.jsx)(o.W1t, {
+  return (0, i.jsx)(o.W1t, {
     "data-menu-mixed": true,
     navId: "expression-picker",
     onClose: a.Z_,
     "aria-label": y.intl.string(y.t.XoasSC),
     onSelect: n,
     className: "context-menu",
-    children: (0, l.jsxs)(o.rXV, {
-      children: [I, g.p5 && C ? null != x ? x : P : null, g.p5 && C ? w : null]
+    children: (0, i.jsxs)(o.rXV, {
+      children: [I, p.p5 && C ? null != x ? x : P : null, p.p5 && C ? w : null]
     })
   })
 }

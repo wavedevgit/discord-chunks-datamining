@@ -40,17 +40,17 @@ let L = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     guildId: n,
     showModalItems: a = true,
     showMediaItems: o = false,
-    showChatItems: s = true,
+    showChatItems: d = true,
     context: L,
     onSelect: U
   } = e, N = {
-    page: _.liQ.GUILD_CHANNEL,
-    section: _.JJy.CHAT_USERNAME,
-    object: _.ZSU.CONTEXT_MENU_ITEM
-  }, G = (0, C.A)({
+    page: T.liQ.GUILD_CHANNEL,
+    section: T.JJy.CHAT_USERNAME,
+    object: T.ZSU.CONTEXT_MENU_ITEM
+  }, G = (0, D.A)({
     userId: t.id,
     guildId: n
-  }), R = (0, h.A)(t, n, L), B = (0, j.A)(t.id, L), w = (0, I.A)(t.id), V = (0, y.A)({
+  }), R = (0, h.A)(t, n, L), B = (0, j.A)(t.id, L), w = (0, P.A)(t.id), V = (0, y.A)({
     user: t,
     context: L
   }), k = (0, m.A)({
@@ -59,56 +59,56 @@ let L = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     context: L
   }), F = (0, g.A)({
     user: t
-  }), K = (0, P.A)(t.id), X = (0, M.A)(t.id), H = (0, c.A)({
+  }), K = (0, I.A)(t.id), X = (0, M.A)(t.id), W = (0, c.A)({
     guildId: n,
     userId: t.id,
     analyticsLocation: N,
     context: L
-  }), W = (0, A.A)({
+  }), H = (0, A.A)({
     user: t,
     guildId: n
-  }), Y = (0, v.A)({
+  }), Y = (0, E.A)({
     user: t,
     guildId: n
-  }), J = (0, d.A)(null, t), q = (0, b.A)({
+  }), J = (0, s.A)(null, t), q = (0, b.A)({
     user: t
   }), Z = (0, f.A)({
     user: t
   }), z = (0, S.A)({
     user: t
-  }), $ = (0, p.A)({
+  }), $ = (0, O.A)({
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), Q = (0, E.A)({
+  }), Q = (0, v.A)({
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), ee = (0, O.A)(t, n), et = (0, D.A)(t.id, n), en = (0, x.A)(t, n), el = (0, u.A)({
+  }), ee = (0, p.A)(t, n), et = (0, C.A)(t.id, n), en = (0, x.A)(t, n), el = (0, u.A)({
     id: t.id,
-    label: T.intl.string(T.t["/AXYnE"])
-  }), ei = t.isNonUserBot();
-  return (0, l.jsxs)(i.W1t, {
+    label: _.intl.string(_.t["/AXYnE"])
+  }), er = t.isNonUserBot();
+  return (0, l.jsxs)(r.W1t, {
     "data-menu-mixed": true,
     navId: "user-context",
-    onClose: r.Z_,
-    "aria-label": T.intl.string(T.t.liqwPJ),
+    onClose: i.Z_,
+    "aria-label": _.intl.string(_.t.liqwPJ),
     onSelect: U,
-    children: [!ei && (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsxs)(i.rXV, {
-        children: [a && G, s && R, B, V, a && k, a && F, w]
-      }), o && (0, l.jsx)(i.rXV, {
+    children: [!er && (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsxs)(r.rXV, {
+        children: [a && G, d && R, B, V, a && k, a && F, w]
+      }), o && (0, l.jsx)(r.rXV, {
         children: K
-      }), (0, l.jsx)(i.rXV, {
+      }), (0, l.jsx)(r.rXV, {
         children: a && J
-      }), (0, l.jsxs)(i.rXV, {
-        children: [o && X, a && H, a && Y, q, Z, z, W, a && Q, a && $]
-      }), (0, l.jsx)(i.rXV, {
+      }), (0, l.jsxs)(r.rXV, {
+        children: [o && X, a && W, a && Y, q, Z, z, H, a && Q, a && $]
+      }), (0, l.jsx)(r.rXV, {
         children: ee
-      }), (0, l.jsxs)(i.rXV, {
+      }), (0, l.jsxs)(r.rXV, {
         children: [et, en]
       })]
-    }), (0, l.jsx)(i.rXV, {
+    }), (0, l.jsx)(r.rXV, {
       children: el
     })]
   })

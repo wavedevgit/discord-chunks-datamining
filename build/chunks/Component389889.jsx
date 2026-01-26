@@ -12,11 +12,15 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function s(e, t) {
-  let n = (0, l.bG)([a.A], () => a.A.isSpeakingMessage(t.id, e.id), [t, e]);
-  return "" === e.content ? null : (0, r.jsx)(i.Drp, {
+  let n = (0, i.bG)([o.A], () => o.A.isSpeakingMessage(t.id, e.id), [t, e]);
+  return "" === e.content ? null : (0, r.jsx)(l.Drp, {
     id: "tts",
     label: n ? c.intl.string(c.t.CJ30BP) : c.intl.string(c.t.yGLjXF),
-    icon: i._Ft,
-    action: () => n ? (0, o.pr)() : (0, o.kP)(t, e)
+    leadingAccessory: {
+      type: "icon",
+      icon: l._Ft
+    },
+    icon: l._Ft,
+    action: () => n ? (0, a.pr)() : (0, a.kP)(t, e)
   })
 }
