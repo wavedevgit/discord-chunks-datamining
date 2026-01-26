@@ -78,6 +78,5 @@ let T = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
   }),
   _ = (0, Chunk419954.FW)(Chunk780964.X.STREAMER_MODE_OPTIONS_LIST, {
     useTitle: () => o.intl.string(o.t.UtW8R6),
-    variant: "separators",
     buildLayout: () => [T, A, d, S, E]
   })

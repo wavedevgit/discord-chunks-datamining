@@ -63,7 +63,7 @@ let Y = () => {
               }), (0, n.jsx)("div", {
                 className: h.zN
               }), (0, n.jsx)("img", {
-                src: t ? M : X,
+                src: t ? X : M,
                 alt: "Cloudflare",
                 width: 103,
                 height: 15
@@ -86,7 +86,7 @@ let Y = () => {
             children: (0, n.jsx)(k, {})
           })]
         })]
-      }), (0, n.jsx)(m.u, {})]
+      }), (0, n.jsx)(v.u, {})]
     })
   },
   k = () => {
@@ -127,7 +127,7 @@ let Y = () => {
     switch (t) {
       case g.Lk.ERROR:
       case g.Lk.NOT_INSTALLED:
-        return (0, n.jsx)(v.y, {
+        return (0, n.jsx)(m.y, {
           onClick: () => A.current = true
         });
       case g.Lk.INSTALLED:

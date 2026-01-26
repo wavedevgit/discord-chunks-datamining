@@ -1,4 +1,4 @@
-/** Chunk was on 65076 **/
+/** Chunk was on 21940 **/
 /** chunk id: 188180, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   X: () => p
@@ -28,7 +28,7 @@ function d(e) {
     children: p
   } = e, {
     icon: g,
-    stronglyDiscouragedCustomComponent: O,
+    StronglyDiscouragedCustomComponent: O,
     trailing: j,
     useTitle: m
   } = s, h = null == m ? true : m();

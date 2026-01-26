@@ -5,6 +5,7 @@ require.d(exports, {
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
+  Chunk362599 = require("./362599.jsx"),
   Chunk342494 = require("./342494.js"),
   Chunk732955 = require("./732955.js"),
   Chunk397927 = require("./397927.js"),
@@ -12,8 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk49999 = require("./49999.js"),
   Chunk49370 = require("./49370.js"),
-  Chunk985018 = require("./985018.jsx"),
-  Chunk880055 = require("./880055.js");
+  Chunk985018 = require("./985018.jsx");
 
 function g(e) {
   let {
@@ -22,13 +22,13 @@ function g(e) {
     lastGrantedRewardAmount: g,
     children: f
   } = e, m = i.useCallback(() => {
-    n(u.i.TAKE_ACTION), (0, o.pX)("".concat(c.BVt.NITRO_HOME, "?section=orbs"))
-  }, [n]), A = (0, r.jsx)(l.AM, {
+    n(d.i.TAKE_ACTION), (0, c.pX)("".concat(u.BVt.NITRO_HOME, "?section=orbs"))
+  }, [n]), A = (0, r.jsx)(a.AM, {
     targetElementRef: t,
-    onRequestClose: () => n(u.i.USER_DISMISS),
+    onRequestClose: () => n(d.i.USER_DISMISS),
     graphic: {
-      type: "image",
-      src: h.A
+      type: "rive",
+      rive: l.Z
     },
     badge: {
       type: "beta",
@@ -41,19 +41,19 @@ function g(e) {
       align: "start"
     },
     size: "md",
-    title: p.intl.string(d.default["78+gLr"]),
-    body: p.intl.formatToPlainString(d.default.Ry1TXC, {
+    title: h.intl.string(p.default["78+gLr"]),
+    body: h.intl.formatToPlainString(p.default.Ry1TXC, {
       orbsCount: g
     }),
     actions: [{
-      text: p.intl.string(p.t.RzWDqY),
-      icon: a.tvc,
+      text: h.intl.string(h.t.RzWDqY),
+      icon: s.tvc,
       onClick: m
     }],
     gradientColor: {
       type: "custom",
-      start: s.LU0.colors.EXPRESSIVE_GRADIENT_PURPLE_START,
-      end: s.LU0.colors.EXPRESSIVE_GRADIENT_PURPLE_END
+      start: o.LU0.colors.EXPRESSIVE_GRADIENT_PURPLE_START,
+      end: o.LU0.colors.EXPRESSIVE_GRADIENT_PURPLE_END
     }
   });
   return (0, r.jsxs)(r.Fragment, {

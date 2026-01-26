@@ -141,10 +141,11 @@ let U = e => {
       let a = (0, I.$g)(n.amount, n.currency);
       return (0, r.jsx)(d.A, {
         skuId: e,
-        price: a,
+        pricePreview: n,
         isSelected: e === M,
         onSelect: e => Q(e),
-        className: D.Cb
+        className: D.Cb,
+        fallbackPrice: a
       }, e)
     },
     $ = () => (0, r.jsx)(m.A, {
@@ -184,25 +185,27 @@ let U = e => {
         }), $()]
       });
       let e = (0, u.Ee)({
-        selectedSkuPricePreview: U,
-        paymentSourceId: G,
-        selectedSkuId: M,
-        skuPricePreviewsById: B,
-        skusById: H,
-        formatPrice: I.$g
-      });
+          selectedSkuPricePreview: U,
+          paymentSourceId: G,
+          selectedSkuId: M,
+          skuPricePreviewsById: B,
+          skusById: H,
+          formatPrice: I.$g
+        }),
+        t = null != U || null != e;
       return L === R.vQ.USER_PROFILE_WISHLIST || L === R.vQ.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
         className: D.Tc,
         children: [(0, r.jsx)(y.Z, {
           giftRecipient: C
-        }), $(), null != e && null != M && (0, r.jsx)(d.A, {
+        }), $(), t && null != M && (0, r.jsx)(d.A, {
           skuId: M,
-          price: e,
+          pricePreview: U,
           className: D.uW,
           previewHeaderClassName: D.vX,
           isSelected: true,
           shouldDisplayHeader: true,
-          hideProfilePreview: true
+          hideProfilePreview: true,
+          fallbackPrice: e
         }), (0, r.jsx)("div", {
           className: D.fi,
           children: (0, r.jsx)(F, {
@@ -217,12 +220,13 @@ let U = e => {
           recipients: z,
           className: D.uh,
           validateSelectedGift: X
-        }), $(), null != e && (0, r.jsx)(d.A, {
+        }), $(), t && (0, r.jsx)(d.A, {
           skuId: M,
-          price: e,
+          pricePreview: U,
           className: D.Ng,
           isSelected: true,
-          shouldDisplayHeader: true
+          shouldDisplayHeader: true,
+          fallbackPrice: e
         })]
       })
     },

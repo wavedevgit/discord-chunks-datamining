@@ -118,6 +118,7 @@ let b = e => (null == e ? true : e.premiumType) != null,
     discountPercentage: false
   },
   N = (e, t) => {
+    if (null == e) return C;
     let n = S(e);
     if (n <= 0) return C;
     let r = T(e, I(t));

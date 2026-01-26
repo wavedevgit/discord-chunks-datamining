@@ -2,7 +2,7 @@
 /** chunk id: 482246, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => C
+  A: () => P
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,15 +17,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk287070 = require("./287070.jsx"),
   Chunk576622 = require("./576622.js"),
   Chunk287809 = require("./287809.js"),
+  Chunk927578 = require("./927578.js"),
+  Chunk993408 = require("./993408.js"),
   Chunk674658 = require("./674658.js"),
   Chunk645178 = require("./645178.js"),
   Chunk898461 = require("./898461.js"),
   Chunk203632 = require("./203632.js"),
   Chunk14702 = require("./14702.jsx"),
+  Chunk219103 = require("./219103.jsx"),
+  Chunk525723 = require("./525723.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk245948 = require("./245948.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +38,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,110 +62,124 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = e => {
+let P = e => {
+  var t, n;
   let {
-    skuId: t,
-    isSelected: n,
-    price: a,
-    onSelect: o,
-    shouldDisplayHeader: A = false,
-    className: S,
-    previewHeaderClassName: C,
-    hideProfilePreview: N = false
+    skuId: a,
+    isSelected: o,
+    pricePreview: C,
+    onSelect: w,
+    shouldDisplayHeader: P = false,
+    className: D,
+    previewHeaderClassName: x,
+    hideProfilePreview: L = false,
+    fallbackPrice: j
   } = e, {
-    product: w
-  } = (0, m.q)(t, true), {
-    giftRecipient: R,
-    giftRecipientError: P
-  } = (0, f.Pv)(), D = (0, u.bG)([h.default], () => h.default.getCurrentUser()), x = (0, g.o7)(w), L = i.useRef(null);
-  if (null == w) return null;
-  let [j] = w.items;
-  l()(null != j, "Product item should not be empty");
-  let M = () => {
-      if ((null == w ? true : w.type) === c.R.BUNDLE) return null;
-      switch (j.type) {
+    product: M
+  } = (0, E.q)(a, true), {
+    giftRecipient: k,
+    giftRecipientError: U
+  } = (0, f.Pv)(), G = (0, u.bG)([h.default], () => h.default.getCurrentUser()), V = (0, y.o7)(M), F = i.useRef(null), B = m.Ay.canUseCollectibles(G), H = i.useMemo(() => (0, g.fT)(M, B), [M, B]), Y = (0, I.V_)(M);
+  if (null == M) return null;
+  let [W] = M.items;
+  l()(null != W, "Product item should not be empty");
+  let K = () => {
+      if ((null == M ? true : M.type) === c.R.BUNDLE) return null;
+      switch (W.type) {
         case c.R.AVATAR_DECORATION:
-          return O.intl.string(O.t["7v0T9P"]);
+          return S.intl.string(S.t["7v0T9P"]);
         case c.R.PROFILE_EFFECT:
-          return O.intl.string(O.t.wR5wOo);
+          return S.intl.string(S.t.wR5wOo);
         case c.R.NAMEPLATE:
-          return O.intl.string(O.t.x5CoXR);
+          return S.intl.string(S.t.x5CoXR);
         default:
           return null
       }
     },
-    k = null != R && R.id !== (null == D ? true : D.id) && w.type !== c.R.BUNDLE && j.type !== c.R.NAMEPLATE && !N,
-    U = () => {
-      null != t && null != o && o(t)
-    };
+    z = null != k && k.id !== (null == G ? true : G.id) && M.type !== c.R.BUNDLE && W.type !== c.R.NAMEPLATE && !L,
+    q = () => {
+      null != a && null != w && w(a)
+    },
+    Z = null == C || null == (n = C.invoice_items) || null == (t = n[0]) ? true : t.unit_price;
   return (0, r.jsxs)("div", {
-    className: S,
-    children: [A && (0, r.jsx)("div", {
-      className: s()(v.QU, C),
+    className: D,
+    children: [P && (0, r.jsx)("div", {
+      className: s()(T.QU, x),
       children: (0, r.jsx)(d.D0$, {
-        label: O.intl.string(O.t.PpoJzt),
-        children: k && (0, r.jsx)(d.YNO, {
-          targetElementRef: L,
-          preload: () => (0, _.A)(R.id, R.getAvatarURL(null, 80)),
-          renderPopout: e => (0, r.jsx)(p.A, T(I({}, e), {
-            user: R,
-            pendingAvatar: R.getAvatarURL(null, (0, d.FT9)(d._3J.SIZE_80)),
-            pendingAvatarDecoration: (0, E.T)(j) ? j : null,
-            pendingProfileEffect: (0, y.C)(j) ? j : null,
+        label: S.intl.string(S.t.PpoJzt),
+        children: z && (0, r.jsx)(d.YNO, {
+          targetElementRef: F,
+          preload: () => (0, _.A)(k.id, k.getAvatarURL(null, 80)),
+          renderPopout: e => (0, r.jsx)(p.A, R(N({}, e), {
+            user: k,
+            pendingAvatar: k.getAvatarURL(null, (0, d.FT9)(d._3J.SIZE_80)),
+            pendingAvatarDecoration: (0, b.T)(W) ? W : null,
+            pendingProfileEffect: (0, O.C)(W) ? W : null,
             canUsePremiumCustomization: true,
             disabledInputs: true,
             hideExampleButton: true
           })),
           align: "center",
           position: "right",
-          children: e => (0, r.jsx)(d.DUT, T(I({}, e), {
-            className: v.Nx,
-            innerRef: L,
+          children: e => (0, r.jsx)(d.DUT, R(N({}, e), {
+            className: T.Nx,
+            innerRef: F,
             children: (0, r.jsx)(d.Text, {
               variant: "text-xs/medium",
               color: "text-link",
-              children: O.intl.string(O.t["2GnJQL"])
+              children: S.intl.string(S.t["2GnJQL"])
             })
           }))
-        }, R.id)
+        }, k.id)
       })
     }), (0, r.jsxs)(d.DUT, {
       tag: "div",
-      onClick: U,
-      className: s()(v.i1, {
-        [v.no]: n && null == P,
-        [v.cN]: n && null != P
+      onClick: q,
+      className: s()(T.i1, {
+        [T.no]: o && null == U,
+        [T.cN]: o && null != U
       }),
       children: [(0, r.jsxs)("div", {
-        className: v.Ug,
-        children: [(0, r.jsx)(b.O, {
-          product: w,
+        className: T.Ug,
+        children: [(0, r.jsx)(v.O, {
+          product: M,
           fallbackLabel: null
         }), (0, r.jsxs)("div", {
-          className: v.JZ,
+          className: T.JZ,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-md/semibold",
-            children: x
+            children: V
           }), (0, r.jsx)(d.Heading, {
             variant: "heading-sm/medium",
             color: "text-default",
-            children: M()
+            children: K()
           })]
-        }), (0, r.jsx)(d.Text, {
+        }), null != C && null != Z ? (0, r.jsx)(A.x, {
+          price: {
+            amount: Z.amount,
+            currency: Z.currency,
+            taxInclusive: C.tax_inclusive,
+            tax: C.tax,
+            exponent: Z.exponent
+          },
+          discount: H,
+          discountOfferAmount: Y,
+          variant: "text-md/bold"
+        }) : (0, r.jsx)(d.Text, {
           variant: "text-md/semibold",
-          children: a
+          children: j
         })]
-      }), n && null != P && (0, r.jsx)("div", {
-        className: v.Wh,
+      }), o && null != U && (0, r.jsx)("div", {
+        className: T.Wh,
         children: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-feedback-critical",
-          children: P
+          children: U
         })
       })]
     })]

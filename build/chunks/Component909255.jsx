@@ -5,14 +5,14 @@ require.d(exports, {
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
+  Chunk362599 = require("./362599.jsx"),
   Chunk342494 = require("./342494.js"),
   Chunk397927 = require("./397927.js"),
   Chunk976860 = require("./976860.js"),
   Chunk652215 = require("./652215.js"),
   Chunk49999 = require("./49999.js"),
   Chunk49370 = require("./49370.js"),
-  Chunk985018 = require("./985018.jsx"),
-  Chunk880055 = require("./880055.js");
+  Chunk985018 = require("./985018.jsx");
 
 function h(e) {
   let {
@@ -20,13 +20,13 @@ function h(e) {
     dismissPopover: n,
     children: h
   } = e, g = i.useCallback(() => {
-    n(c.i.TAKE_ACTION), (0, s.pX)("".concat(o.BVt.NITRO_HOME, "?section=orbs"))
-  }, [n]), f = (0, r.jsx)(l.AM, {
+    n(u.i.TAKE_ACTION), (0, o.pX)("".concat(c.BVt.NITRO_HOME, "?section=orbs"))
+  }, [n]), f = (0, r.jsx)(a.AM, {
     targetElementRef: t,
-    onRequestClose: () => n(c.i.USER_DISMISS),
+    onRequestClose: () => n(u.i.USER_DISMISS),
     graphic: {
-      type: "image",
-      src: p.A
+      type: "rive",
+      rive: l.Z
     },
     badge: {
       type: "beta",
@@ -39,16 +39,16 @@ function h(e) {
       align: "start"
     },
     size: "md",
-    title: d.intl.string(u.default["3BI7j6"]),
-    body: d.intl.string(u.default.XNHr3C),
+    title: p.intl.string(d.default["3BI7j6"]),
+    body: p.intl.string(d.default.XNHr3C),
     actions: [{
-      text: d.intl.string(d.t.hvVgAZ),
+      text: p.intl.string(p.t.hvVgAZ),
       onClick: g
     }],
     gradientColor: {
       type: "custom",
-      start: a.LU0.colors.EXPRESSIVE_GRADIENT_PURPLE_START,
-      end: a.LU0.colors.EXPRESSIVE_GRADIENT_PURPLE_END
+      start: s.LU0.colors.EXPRESSIVE_GRADIENT_PURPLE_START,
+      end: s.LU0.colors.EXPRESSIVE_GRADIENT_PURPLE_END
     }
   });
   return (0, r.jsxs)(r.Fragment, {

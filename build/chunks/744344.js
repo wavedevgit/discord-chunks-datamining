@@ -24,6 +24,5 @@ function A(t) {
   })
 }
 let d = (0, Chunk419954.FW)(Chunk780964.X.OVERLAY_NOTIFICATIONS_LIST, {
-  variant: "separators",
   buildLayout: () => T.map(A)
 })
