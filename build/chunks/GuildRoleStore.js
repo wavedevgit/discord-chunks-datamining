@@ -149,4 +149,4 @@ let u = new c({
     } = e;
     t.remove(n, r)
   }
-}, "libdiscore")
+})

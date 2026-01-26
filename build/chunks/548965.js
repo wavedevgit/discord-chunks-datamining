@@ -2,17 +2,14 @@
 /** chunk id: 548965, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ML: () => l,
-  aL: () => h,
-  iQ: () => m,
-  ys: () => _
+  ML: () => o,
+  iQ: () => f
 }), require("./228524.js"), require("./321073.js"), require("./896048.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
-  Chunk306173 = require("./306173.js"),
-  Chunk723426 = require("./723426.js");
+  Chunk306173 = require("./306173.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,15 +17,15 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let l = [],
-  c = Symbol("unknown");
-class u {
+let o = [],
+  l = Symbol("unknown");
+class c {
   getEnabledFeatureName() {
     let e = this.getCachedConfig();
     return true === e || e.treatmentId <= 0 ? null : "".concat(this.id, ":").concat(e.treatmentId)
   }
   getCachedConfig() {
-    return this.cachedConfig === c && ((0, a.xd)() ? this.cachedConfig = (0, a.Ih)().getConfig(this.id) : this.cachedConfig = true), this.cachedConfig
+    return this.cachedConfig === l && ((0, a.xd)() ? this.cachedConfig = (0, a.Ih)().getConfig(this.id) : this.cachedConfig = true), this.cachedConfig
   }
   setExperiment(e) {
     this.inner = e
@@ -41,10 +38,10 @@ class u {
     })
   }
   constructor(e, t) {
-    o(this, "id", true), o(this, "inner", true), o(this, "cachedConfig", true), this.id = e, this.inner = null, this.cachedConfig = c, l.push(this)
+    s(this, "id", true), s(this, "inner", true), s(this, "cachedConfig", true), this.id = e, this.inner = null, this.cachedConfig = l, o.push(this)
   }
 }
-class d extends u {
+class u extends c {
   getLabel() {
     return this.label
   }
@@ -60,46 +57,10 @@ class d extends u {
     return null != e && 1 === e.treatmentId
   }
   constructor(e, t) {
-    super(e), o(this, "label", true), this.label = t
+    super(e), s(this, "label", true), this.label = t
   }
 }
-class f extends u {
-  getCachedBridgedStoreMode() {
-    let e = this.getCachedConfig(),
-      t = (() => {
-        var t;
-        switch (null != (t = null == e ? true : e.treatmentId) ? t : false) {
-          case 1:
-            return "typescript-libdiscore-dual-read";
-          case 2:
-            return "libdiscore";
-          default:
-            return "typescript"
-        }
-      })();
-    return (0, s.E)(t)
-  }
-  getEnabledFeatureName() {
-    let e = this.getCachedBridgedStoreMode();
-    return "typescript" === e ? null : "".concat(this.type, "Store[").concat(this.storeName, ",").concat(e, "]")
-  }
-  getLabel() {
-    return "libdiscore '".concat(this.storeName, "' Migration")
-  }
-  getTreatments() {
-    return [{
-      treatmentId: 0
-    }, {
-      treatmentId: 1
-    }, {
-      treatmentId: 2
-    }]
-  }
-  constructor(e, t, n, r) {
-    super(e, r), o(this, "storeName", true), o(this, "type", true), this.storeName = t, this.type = n
-  }
-}
-class p extends u {
+class d extends c {
   getLabel() {
     return "libdiscore Telemetry"
   }
@@ -135,10 +96,8 @@ class p extends u {
     return 0 !== e && (1 === e || !(this.emissionsCount >= this.MAX_EMISSIONS_PER_APP_LAUNCH) && Math.random() < e)
   }
   constructor(...e) {
-    super(...e), o(this, "MAX_EMISSIONS_PER_APP_LAUNCH", 5), o(this, "emissionsCount", 0)
+    super(...e), s(this, "MAX_EMISSIONS_PER_APP_LAUNCH", 5), s(this, "emissionsCount", 0)
   }
 }
-let _ = new f("2025-09-libdiscore-rawguildemojistore", "RawGuildEmojiStore", "Kkv"),
-  h = new f("2025-10-libdiscore-guildstickersstore", "GuildStickersStore", "Kkv");
-new p("2025-09-libdiscore-telemetry");
-let m = new d("2025-11-defer-load-late-lazy-cache", "Allow react to render before lazy cache is loaded")
+new d("2025-09-libdiscore-telemetry");
+let f = new u("2025-11-defer-load-late-lazy-cache", "Allow react to render before lazy cache is loaded")

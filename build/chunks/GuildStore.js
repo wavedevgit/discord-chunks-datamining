@@ -122,4 +122,4 @@ let p = new f({
     let c = "string" == typeof r ? new Date(r) : r;
     c !== l.joinedAt && null != c && t.set(n, (0, i.kn)(l, c))
   }
-}, "libdiscore")
+})

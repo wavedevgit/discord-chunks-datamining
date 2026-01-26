@@ -37,4 +37,4 @@ let l = new o({
       note: null
     }))
   }
-}, "libdiscore")
+})
