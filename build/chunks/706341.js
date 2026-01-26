@@ -152,7 +152,8 @@ let T = {
       isUnread: r,
       isSidebar: a,
       viewId: l,
-      track: u = true
+      track: u = true,
+      autoTriggeredOnInboxOpen: d = false
     } = e;
     i.h.dispatch({
       type: "NOTIFICATIONS_INBOX_ITEM_CLICK",
@@ -168,7 +169,8 @@ let T = {
       object: h.ZSU.ACK_MESSAGE_VIEWED,
       objectType: h.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
     }, true, true, t.id), s.A.trackJump(n.id, t.id, _.XU);
-    let d = a ? h.gNP : n.guild_id;
-    (0, c.pX)(h.BVt.CHANNEL(d, n.id, t.id))
+    let p = a ? h.gNP : n.guild_id,
+      m = h.BVt.CHANNEL(p, n.id, t.id);
+    d && a ? (0, c.bG)(m) : (0, c.pX)(m)
   }
 }

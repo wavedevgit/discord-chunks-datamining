@@ -115,6 +115,7 @@ let y = e => {
       loadId: t,
       stepConfigs: w,
       purchaseType: S,
+      analyticsLocations: l,
       paymentGateway: P === s.C.ORB_CHECKOUT ? p.kM.VIRTUAL_CURRENCY : true,
       isGift: null == c ? true : c.isGift,
       excludeSubscriptionPlansBySKU: true,

@@ -2,50 +2,49 @@
 /** chunk id: 963169, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  MS: () => c,
-  OE: () => u,
-  Qb: () => d
+  MS: () => u,
+  OE: () => f,
+  Qb: () => p
 });
 var Chunk73153 = require("./73153.js"),
+  Chunk824865 = require("./824865.js"),
   Chunk976860 = require("./976860.js"),
   Chunk954571 = require("./954571.js"),
   Chunk545167 = require("./545167.js"),
   Chunk729904 = require("./729904.js"),
   Chunk652215 = require("./652215.js");
 
-function c(e, t, n) {
+function u(e, t) {
   r.h.dispatch({
     type: "ROUTE_CHANGED",
-    path: e,
-    key: t,
-    isReplace: n
+    location: e,
+    action: t
+  })
+}
+let d = () => (0, o.J)({
+  location: "NavHistoryActionCreators"
+});
+
+function f(e) {
+  if (!(0, a.TX)()) return;
+  if (s.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
+      nav_direction: false,
+      nav_trigger: e
+    }), !d()) return void(0, a.aX)();
+  let t = l.A.backDestination;
+  null != t && (0, a.pX)(t.path, {
+    source: i.A.USER_NAVIGATED_BACK
   })
 }
 
-function u(e) {
-  if (!(0, i.TX)()) return;
-  if (a.default.track(l.HAw.APP_BACK_FORWARD_NAVIGATED, {
-      nav_direction: false,
-      nav_trigger: e
-    }), !(0, s.J)({
-      location: e
-    })) return void(0, i.aX)();
-  let t = o.A.backDestination;
-  null != t && (r.h.dispatch({
-    type: "GO_BACK"
-  }), (0, i.pX)(t.path))
-}
-
-function d(e) {
-  if (!(0, i.TX)()) return;
-  if (a.default.track(l.HAw.APP_BACK_FORWARD_NAVIGATED, {
+function p(e) {
+  if (!(0, a.TX)()) return;
+  if (s.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
       nav_direction: 1,
       nav_trigger: e
-    }), !(0, s.J)({
-      location: e
-    })) return void(0, i.sY)();
-  let t = o.A.forwardDestination;
-  null != t && (r.h.dispatch({
-    type: "GO_FORWARD"
-  }), (0, i.pX)(t.path))
+    }), !d()) return void(0, a.sY)();
+  let t = l.A.forwardDestination;
+  null != t && (0, a.pX)(t.path, {
+    source: i.A.USER_NAVIGATED_FORWARD
+  })
 }

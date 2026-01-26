@@ -140,37 +140,36 @@ let O = (0, Chunk736843.Mz)(),
         loadId: n,
         applicationId: s,
         analyticsSourceLocation: o,
-        analyticsLocations: l,
-        renderModalProps: c,
-        onClose: u,
-        onComplete: d,
-        flowSpecificOptions: f,
-        children: p
+        renderModalProps: l,
+        onClose: c,
+        onComplete: u,
+        flowSpecificOptions: d,
+        children: f
       } = e, {
-        analyticsLocations: _
-      } = (0, a.Ay)(l), h = c.onClose, m = i.useCallback(e => {
-        h(), null != u && u(e)
-      }, [h, u]), g = i.useMemo(() => ({
-        onClose: m,
-        onComplete: d,
+        analyticsLocations: p
+      } = (0, a.Ay)(), _ = l.onClose, h = i.useCallback(e => {
+        _(), null != c && c(e)
+      }, [_, c]), m = i.useMemo(() => ({
+        onClose: h,
+        onComplete: u,
         applicationId: s,
         skuId: t,
         initialPlanId: null,
         analyticsObject: o,
-        analyticsLocations: _
-      }), [m, d, s, t, o, _]), E = i.useMemo(() => ({
+        analyticsLocations: p
+      }), [h, u, s, t, o, p]), g = i.useMemo(() => ({
         skuId: t,
         loadId: n,
-        flowSpecificOptions: f,
-        analyticsLocations: _
-      }), [t, n, f, _]), y = i.useMemo(() => ({
-        sharedCheckoutContext: E,
-        paymentModalProps: g,
-        renderModalProps: c
-      }), [E, g, c]);
+        flowSpecificOptions: d,
+        analyticsLocations: p
+      }), [t, n, d, p]), E = i.useMemo(() => ({
+        sharedCheckoutContext: g,
+        paymentModalProps: m,
+        renderModalProps: l
+      }), [g, m, l]);
       return (0, r.jsx)(O.Provider, {
-        value: y,
-        children: p
+        value: E,
+        children: f
       })
     },
     UnifiedCheckoutCustomHeader: e => {

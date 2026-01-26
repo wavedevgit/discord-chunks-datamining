@@ -849,12 +849,12 @@ let ti = (0, Chunk456412.A)(tl),
     (0, C.A)({
       onTransition: true
     }), l.useEffect(() => {
-      var e, t, n;
-      let r = (0, eg.JK)();
-      if ((null == r || null == (e = r.location) ? true : e.state) === e5.J2) {
+      var e, t, n, r;
+      let l = (0, eg.JK)();
+      if ((null == l || null == (t = l.location) || null == (e = t.state) ? true : e.stageInviteKey) === e5.J2) {
         let {
           channelId: e
-        } = null != (t = (0, eu.vu)(null == r || null == (n = r.location) ? true : n.pathname)) ? t : {};
+        } = null != (n = (0, eu.vu)(null == l || null == (r = l.location) ? true : r.pathname)) ? n : {};
         null != e && s(e)
       }
     }, []);

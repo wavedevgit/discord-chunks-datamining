@@ -35,15 +35,16 @@ function f(e) {
     listenOnDocumentBody: C,
     eventCapture: N,
     assetLoader: w,
-    onLoad: R
-  } = e, P = i.useContext(l.C), D = (0, o.R)(), x = null != (t = null == (n = (a = (0, c.G9)()).isWindowFocused) ? true : n.call(a)) ? t : D, [L, j] = i.useState(true), M = i.useRef(null), {
-    rive: k,
-    RiveComponent: U
+    onLoad: R,
+    stateMachine: P
+  } = e, D = i.useContext(l.C), x = (0, o.R)(), L = null != (t = null == (n = (a = (0, c.G9)()).isWindowFocused) ? true : n.call(a)) ? t : x, [j, M] = i.useState(true), k = i.useRef(null), {
+    rive: U,
+    RiveComponent: G
   } = (0, s.useRive)({
     eventTarget: null == E ? true : E.current,
     buffer: f,
     autoplay: p,
-    stateMachines: L,
+    stateMachines: null != P ? [P] : j,
     artboard: y,
     useOffscreenRenderer: true,
     layout: new s.Layout({
@@ -57,88 +58,88 @@ function f(e) {
     onLoad: R
   });
   i.useImperativeHandle(O, () => ({
-    play: () => null == k ? true : k.play(),
-    pause: () => null == k ? true : k.pause(),
-    stop: () => null == k ? true : k.stop(),
+    play: () => null == U ? true : U.play(),
+    pause: () => null == U ? true : U.pause(),
+    stop: () => null == U ? true : U.stop(),
     getProperties: () => {
       var e, t;
-      return null != (e = null == k || null == (t = k.viewModelInstance) ? true : t.properties.reduce((e, t) => {
+      return null != (e = null == U || null == (t = U.viewModelInstance) ? true : t.properties.reduce((e, t) => {
         var n, r, i, a, s;
-        return "viewModel" === t.type && (null == k || null == (s = k.viewModelInstance) || null == (a = s.viewModel(t.name)) || a.properties.forEach(n => {
+        return "viewModel" === t.type && (null == U || null == (s = U.viewModelInstance) || null == (a = s.viewModel(t.name)) || a.properties.forEach(n => {
           var r, i, a;
           e[t.name + "/" + n.name] = {
             type: n.type,
-            value: null == k || null == (a = k.viewModelInstance) || null == (i = a[n.type]) || null == (r = i.call(a, "".concat(t.name, "/").concat(n.name))) ? true : r.value
+            value: null == U || null == (a = U.viewModelInstance) || null == (i = a[n.type]) || null == (r = i.call(a, "".concat(t.name, "/").concat(n.name))) ? true : r.value
           }
         })), e[t.name] = {
           type: t.type,
-          value: null == k || null == (i = k.viewModelInstance) || null == (r = i[t.type]) || null == (n = r.call(i, t.name)) ? true : n.value
+          value: null == U || null == (i = U.viewModelInstance) || null == (r = i[t.type]) || null == (n = r.call(i, t.name)) ? true : n.value
         }, e
       }, {})) ? e : {}
     },
     getArtboards: () => {
-      if (null == k) return [];
+      if (null == U) return [];
       let e = new Set,
-        t = k.riveFile.getInstance();
+        t = U.riveFile.getInstance();
       for (let n = 0; n < t.artboardCount(); n++) {
         let r = t.artboardByIndex(n);
         e.add(r.name)
       }
       return Array.from(e)
     }
-  }), [k]), (0, d.J)({
-    rive: k,
+  }), [U]), (0, d.J)({
+    rive: U,
     artboard: y,
     artboardProperties: v,
     dataBinding: A,
     dynamicDataBinding: T,
     onDataBindingChange: I
   }), i.useEffect(() => {
-    if (null != k && "short-loop" === b && P.reducedMotion.enabled) {
+    if (null != U && "short-loop" === b && D.reducedMotion.enabled) {
       let e = () => {
-          k.isPlaying && (M.current = setTimeout(() => {
-            k.pause()
+          U.isPlaying && (k.current = setTimeout(() => {
+            U.pause()
           }, 5e3))
         },
         t = () => {
-          clearTimeout(M.current)
+          clearTimeout(k.current)
         };
-      return k.on(s.EventType.Play, e), k.on(s.EventType.Pause, t), k.on(s.EventType.Stop, t), () => {
-        k.off(s.EventType.Play, e), k.off(s.EventType.Pause, t), k.off(s.EventType.Stop, t)
+      return U.on(s.EventType.Play, e), U.on(s.EventType.Pause, t), U.on(s.EventType.Stop, t), () => {
+        U.off(s.EventType.Play, e), U.off(s.EventType.Pause, t), U.off(s.EventType.Stop, t)
       }
     }
-  }, [k, b, P.reducedMotion.enabled]), i.useLayoutEffect(() => {
-    if (null != k && "layout" === h) {
-      k.resizeDrawingSurfaceToCanvas();
+  }, [U, b, D.reducedMotion.enabled]), i.useLayoutEffect(() => {
+    if (null != U && "layout" === h) {
+      U.resizeDrawingSurfaceToCanvas();
       let e = setTimeout(() => {
-        null != k.canvas && k.resizeDrawingSurfaceToCanvas()
+        null != U.canvas && U.resizeDrawingSurfaceToCanvas()
       }, 100);
       return () => clearTimeout(e)
     }
-  }, [k, h]), i.useEffect(() => {
-    null != k && null == L && (j(k.stateMachineNames), k.reset({
-      stateMachines: k.stateMachineNames,
+  }, [U, h]), i.useEffect(() => {
+    null != U && null == j && null == P && (M(U.stateMachineNames), U.reset({
+      stateMachines: U.stateMachineNames,
       autoplay: p,
       artboard: y,
       autoBind: true
-    }), k.setupRiveListeners())
-  }, [k, p, L, y]);
-  let G = i.useRef(0);
+    }), U.setupRiveListeners())
+  }, [U, p, j, y, P]);
+  let V = i.useRef(0);
   i.useEffect(() => {
-    if (null == k) return;
+    if (null == U) return;
     let e = t => {
-      null != t.data && "number" == typeof t.data && (G.current = t.data, t.data > 0 && ("halt" === b && P.reducedMotion.enabled && k.isPlaying && k.pause(), k.off(s.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (V.current = t.data, t.data > 0 && ("halt" === b && D.reducedMotion.enabled && U.isPlaying && U.pause(), U.off(s.EventType.Advance, e)))
     };
-    return k.on(s.EventType.Advance, e), p && k.play(), () => {
-      k.off(s.EventType.Advance, e)
+    return U.on(s.EventType.Advance, e), p && U.play(), () => {
+      U.off(s.EventType.Advance, e)
     }
-  }, [k, P.reducedMotion.enabled, b, p]);
-  let V = i.useRef(false);
+  }, [U, D.reducedMotion.enabled, b, p]);
+  let F = i.useRef(false);
   return i.useEffect(() => {
-    if (null != k) return !x && V.current && k.isPlaying && G.current > 0 ? k.pause() : x && !k.isPlaying && V.current && k.play(), () => {
-      null != k && x && (V.current = null != k.frameRequestId)
+    if (null != U) return !L && F.current && U.isPlaying && V.current > 0 ? U.pause() : L && !U.isPlaying && F.current && U.play(), () => {
+      null != U && L && (F.current = null != U.frameRequestId)
     }
-  }, [k, x]), (0, r.jsx)(U, {
+  }, [U, L]), (0, r.jsx)(G, {
     className: _,
     style: g
   })

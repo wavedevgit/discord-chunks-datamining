@@ -148,7 +148,9 @@ function eh(e, t) {
     source: L.A.INVITE_ACCEPT,
     navigationReplace: true
   };
-  return null != i && (o.welcomeModalChannelId = i), s && (o.state = ea.J2), null != a && (o.guildScheduledEventId = a.id), e => null != r ? r(e, o) : (0, j.pX)(e, o)
+  return null != i && (o.welcomeModalChannelId = i), s && (o.state = {
+    stageInviteKey: ea.J2
+  }), null != a && (o.guildScheduledEventId = a.id), e => null != r ? r(e, o) : (0, j.pX)(e, o)
 }
 
 function em(e) {

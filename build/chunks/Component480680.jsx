@@ -186,6 +186,7 @@ function G(e) {
       isUnread: i,
       isSidebar: true,
       track: false,
+      autoTriggeredOnInboxOpen: true,
       viewId: n
     })
   }), (0, h.l0)(() => {

@@ -569,8 +569,7 @@ class tA extends Chunk64700.PureComponent {
   handleHistoryChange(e, t) {
     let {
       pathname: n,
-      search: r,
-      key: i
+      search: r
     } = e;
     ! function(e) {
       if (Q.A.isConnected() || Q.A.isTryingToConnect()) return;
@@ -630,7 +629,10 @@ class tA extends Chunk64700.PureComponent {
         var n;
         return (null == (n = (0, a.B6)(e, t)) ? true : n.isExact) === true
       }) || (0, eC.bG)(eX.A.fallbackRoute)
-    }(n, r), (0, G.MS)(n, i, "REPLACE" === t)
+    }(n, r), (0, G.MS)({
+      pathname: n,
+      source: e.source
+    }, t)
   }
   ensureChannelMatchesGuild(e) {
     if (!Q.A.isConnected()) return null;

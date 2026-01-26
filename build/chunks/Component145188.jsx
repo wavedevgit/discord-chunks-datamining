@@ -85,17 +85,19 @@ let p = {
 
 function _(e) {
   let {
-    artboard: t = "HoverLightmode"
-  } = e, n = d(e, ["artboard"]), {
-    status: o,
-    buffer: c
-  } = (0, s.CE)(i.A), f = (0, s.m2)(i.A);
-  return o === s.BW.Loading ? null : (0, r.jsx)(a.w, l(u(l({}, f ? {
+    artboard: t = "HoverLightmode",
+    stateMachine: n
+  } = e, o = d(e, ["artboard", "stateMachine"]), {
+    status: c,
+    buffer: f
+  } = (0, s.CE)(i.A), _ = (0, s.m2)(i.A);
+  return c === s.BW.Loading ? null : (0, r.jsx)(a.w, l(u(l({}, _ ? {
     key: "override"
   } : {}), {
-    buffer: c,
+    buffer: f,
     artboard: t,
+    stateMachine: n,
     artboardProperties: p
-  }), n))
+  }), o))
 }
 _.riveSrc = Chunk524007.A

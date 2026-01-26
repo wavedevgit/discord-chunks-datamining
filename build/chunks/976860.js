@@ -69,10 +69,9 @@ function E(e, t) {
 function y(e, t) {
   if (E(e, "assign")) return;
   p.log("transitionTo - Transitioning to ".concat(e));
-  let n = null == t ? true : t.source;
-  null == t || delete t.source;
-  let s = null == t ? true : t.sourceLocationStack;
-  if (null == t || delete t.sourceLocationStack, null == t) r.push(e);
+  let n = null == t ? true : t.source,
+    s = null == t ? true : t.sourceLocationStack;
+  if (null == t) r.push(e);
   else {
     let n = new URL(e, "https:".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT));
     r.push(f({
