@@ -1,8 +1,8 @@
 /** Chunk was on 67564 **/
 /** chunk id: 422361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => el
-}), require("./896048.js"), require("./65821.js");
+  A: () => ei
+}), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
@@ -43,6 +43,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk543465 = require("./543465.js"),
   Chunk977997 = require("./977997.js"),
   Chunk147036 = require("./147036.js"),
+  Chunk338234 = require("./338234.js"),
   Chunk557534 = require("./557534.jsx"),
   Chunk68437 = require("./68437.jsx"),
   Chunk166444 = require("./166444.jsx"),
@@ -54,7 +55,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk728444 = require("./728444.js");
 
-function $(e, t, n) {
+function ee(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -63,20 +64,20 @@ function $(e, t, n) {
   }) : e[t] = n, e
 }
 
-function ee(e) {
+function et(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      $(e, t, n[t])
+      ee(e, t, n[t])
     })
   }
   return e
 }
 
-function et(e, t) {
+function en(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -88,7 +89,7 @@ function et(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class en extends Chunk557534.Ay {
+class er extends Chunk557534.Ay {
   componentWillUnmount() {
     this.activitiesHideTimeout.stop()
   }
@@ -111,11 +112,11 @@ class en extends Chunk557534.Ay {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (n) return Z.ZS;
+    if (n) return $.ZS;
     if (null != t)
-      if (e > t) return Z.mU;
-      else return Z.TR;
-    return Z.fx
+      if (e > t) return $.mU;
+      else return $.TR;
+    return $.fx
   }
   renderSubtitle() {
     var e;
@@ -126,7 +127,7 @@ class en extends Chunk557534.Ay {
     } = this.props, i = null == (e = (0, v.M)(this.props.subtitle)) ? true : e.subtitle, {
       hovered: s
     } = this.state;
-    return (0, r.jsx)(Y.A, {
+    return (0, r.jsx)(q.A, {
       onClick: this.handleVoiceStatusClick,
       channel: t,
       connected: n,
@@ -143,14 +144,14 @@ class en extends Chunk557534.Ay {
       withGuildIcon: l,
       tabIndex: i
     } = this.props;
-    return (0, r.jsx)(q.A, {
+    return (0, r.jsx)(X.A, {
       channel: e,
       collapsed: n,
       collapsedMax: 6,
       voiceStates: t,
       withGuildIcon: l,
       tabIndex: i,
-      location: X.ThZ.GUILD_CHANNEL_LIST
+      location: J.ThZ.GUILD_CHANNEL_LIST
     })
   }
   renderChannelInfo() {
@@ -158,7 +159,7 @@ class en extends Chunk557534.Ay {
       channelInfo: e
     } = this.props;
     return null == e ? null : (0, r.jsx)("div", {
-      className: Z.yW,
+      className: $.yW,
       children: e
     })
   }
@@ -189,20 +190,24 @@ class en extends Chunk557534.Ay {
       shouldHighlightChannel: I,
       shouldUseAnimatedWaveform: N
     } = this.props, {
-      shouldShowActivities: T,
-      shouldShowGuildVerificationPopout: P
-    } = this.state, w = I || N, D = this.getVoiceStatesCount(), M = (0, r.jsxs)("li", {
+      shouldShowGuildVerificationPopout: T
+    } = this.state, {
+      enableUserHoverActivities: P
+    } = (0, H.Uw)({
+      guildId: e.guild_id,
+      location: "VoiceChannel"
+    }), w = I || N, D = this.getVoiceStatesCount(), M = (0, r.jsxs)("li", {
       ref: this.ref,
       className: s()(this.getModeClass(), {
-        [Z.r9]: this.isDisabled(),
-        [Z.fy]: I
+        [$.r9]: this.isDisabled(),
+        [$.fy]: I
       }),
       "data-dnd-name": e.name,
       children: [I && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: Z.UQ
+          className: $.UQ
         }), (0, r.jsx)("div", {
-          className: Z.l0
+          className: $.l0
         })]
       }), (0, r.jsx)("div", {
         onMouseEnter: this.handleMouseEnter,
@@ -212,14 +217,14 @@ class en extends Chunk557534.Ay {
           position: "right",
           renderPopout: this.renderPopout,
           onRequestClose: this.closeGuildVerificationPopout,
-          shouldShow: T && !d && !p && !P || P,
+          shouldShow: T || !P && this.state.shouldShowActivities && !d && !p,
           children: () => (0, r.jsx)(c.m, {
             text: this.getTooltipText(),
-            children: (0, r.jsxs)(W.Ay, {
+            children: (0, r.jsxs)(z.Ay, {
               ref: this.channelItemRef,
-              className: Z.Ki,
+              className: $.Ki,
               iconClassName: s()({
-                [Z.Gj]: j || S || w
+                [$.Gj]: j || S || w
               }),
               hasActiveEvent: j,
               channel: e,
@@ -270,15 +275,15 @@ class en extends Chunk557534.Ay {
     })), M
   }
   constructor(...e) {
-    super(...e), $(this, "state", {
+    super(...e), ee(this, "state", {
       shouldShowActivities: false,
       shouldShowGuildVerificationPopout: false,
       hovered: false
-    }), $(this, "ref", l.createRef()), $(this, "channelItemRef", l.createRef()), $(this, "activitiesHideTimeout", new o.Ep), $(this, "closeGuildVerificationPopout", () => {
+    }), ee(this, "ref", l.createRef()), ee(this, "channelItemRef", l.createRef()), ee(this, "activitiesHideTimeout", new o.Ep), ee(this, "closeGuildVerificationPopout", () => {
       this.setState({
         shouldShowGuildVerificationPopout: false
       })
-    }), $(this, "handleVoiceConnect", () => {
+    }), ee(this, "handleVoiceConnect", () => {
       let {
         locked: e,
         connected: t,
@@ -299,7 +304,7 @@ class en extends Chunk557534.Ay {
         routeDirectlyToChannel: a,
         locked: e
       })
-    }), $(this, "handleContextMenu", e => {
+    }), ee(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, l = L.A.getGuild(t.getGuildId());
@@ -307,31 +312,47 @@ class en extends Chunk557534.Ay {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("53378")]).then(n.bind(n, 698193));
-        return n => (0, r.jsx)(e, et(ee({}, n), {
+        return n => (0, r.jsx)(e, en(et({}, n), {
           channel: t,
           guild: l
         }))
       })
-    }), $(this, "handleMouseEnter", () => {
-      this.activitiesHideTimeout.stop(), this.setState({
+    }), ee(this, "handleMouseEnter", () => {
+      let {
+        enableUserHoverActivities: e
+      } = (0, H.Uw)({
+        guildId: this.props.channel.guild_id,
+        location: "VoiceChannel"
+      });
+      e ? this.setState({
+        hovered: true
+      }) : (this.activitiesHideTimeout.stop(), this.setState({
         shouldShowActivities: true,
         hovered: true
-      })
-    }), $(this, "handleMouseLeave", () => {
-      this.activitiesHideTimeout.start(100, () => this.setState({
+      }))
+    }), ee(this, "handleMouseLeave", () => {
+      let {
+        enableUserHoverActivities: e
+      } = (0, H.Uw)({
+        guildId: this.props.channel.guild_id,
+        location: "VoiceChannel"
+      });
+      e ? this.setState({
+        hovered: false
+      }) : this.activitiesHideTimeout.start(100, () => this.setState({
         shouldShowActivities: false,
         hovered: false
       }))
-    }), $(this, "closePopout", () => {
+    }), ee(this, "closePopout", () => {
       this.activitiesHideTimeout.stop(), this.setState({
         shouldShowActivities: false
       })
-    }), $(this, "handleClick", () => {
+    }), ee(this, "handleClick", () => {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
       null != t && (0, C.V)(t) && (0, E.Ze)(t), this.handleVoiceConnect()
-    }), $(this, "handleVoiceStatusClick", e => {
+    }), ee(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
         channel: n
@@ -339,7 +360,7 @@ class en extends Chunk557534.Ay {
       t && (e.stopPropagation(), (0, m.A)({
         channel: n
       }))
-    }), $(this, "renderPopout", () => {
+    }), ee(this, "renderPopout", () => {
       let {
         channel: e,
         voiceStates: t,
@@ -350,10 +371,20 @@ class en extends Chunk557534.Ay {
       } = this.props, {
         shouldShowActivities: a,
         shouldShowGuildVerificationPopout: o
-      } = this.state;
-      if (a && !n && !l && !o) {
+      } = this.state, {
+        enableUserHoverActivities: c
+      } = (0, H.Uw)({
+        guildId: e.guild_id,
+        location: "VoiceChannel"
+      });
+      if (o) return (0, r.jsx)(N.A, {
+        type: N.H.VOICE,
+        guildId: e.guild_id,
+        closePopout: this.closeGuildVerificationPopout
+      });
+      if (!c && a && !n && !l) {
         let n = D.JG.getSetting().includes(s.id);
-        return (0, r.jsx)(z.A, {
+        return (0, r.jsx)(Y.A, {
           onAction: this.closePopout,
           guild: s,
           channel: e,
@@ -362,13 +393,8 @@ class en extends Chunk557534.Ay {
           shouldShowSettingNudge: n
         })
       }
-      if (o) return (0, r.jsx)(N.A, {
-        type: N.H.VOICE,
-        guildId: e.guild_id,
-        closePopout: this.closeGuildVerificationPopout
-      });
-      throw Error("VoiceChannel.renderPopout: There must always be something to render")
-    }), $(this, "renderOpenChatButton", () => {
+      return null
+    }), ee(this, "renderOpenChatButton", () => {
       let {
         channel: e,
         locked: t,
@@ -376,31 +402,31 @@ class en extends Chunk557534.Ay {
       } = this.props;
       if (!t) return (0, r.jsx)(c.m, {
         asContainer: true,
-        text: Q.intl.string(Q.t.ZXxLQg),
+        text: Z.intl.string(Z.t.ZXxLQg),
         children: (0, r.jsx)(u.DUT, {
-          className: s()(Z.Xs, n ? Z.Tf : null),
+          className: s()($.Xs, n ? $.Tf : null),
           onClick: () => {
             d.A.updateChatOpen(e.id, true), (0, w.iN)(e.id)
           },
-          "aria-label": Q.intl.string(Q.t.ZXxLQg),
+          "aria-label": Z.intl.string(Z.t.ZXxLQg),
           children: (0, r.jsx)(u.oyn, {
             size: "xs",
             color: "currentColor",
-            className: Z.gE
+            className: $.gE
           })
         })
       })
-    }), $(this, "getTooltipText", () => {
+    }), ee(this, "getTooltipText", () => {
       let {
         connected: e
       } = this.props;
-      return this.isFull() && !e ? Q.intl.string(Q.t.rZfiNq) : null
+      return this.isFull() && !e ? Z.intl.string(Z.t.rZfiNq) : null
     })
   }
 }
-let er = (0, Chunk676002.a)((0, Chunk296216.F)(en));
+let el = (0, Chunk676002.a)((0, Chunk296216.F)(er));
 
-function el(e) {
+function ei(e) {
   let {
     guild: t,
     channel: n,
@@ -416,11 +442,11 @@ function el(e) {
     let e = M.A.getChannel(n.parent_id),
       r = k.A.getCheck(n.guild_id);
     return {
-      canManageChannel: G.A.can(X.xBc.MANAGE_CHANNELS, n),
-      canReorderChannel: true !== l && (t.id === J.V || (null != e ? G.A.can(X.xBc.MANAGE_CHANNELS, e) : G.A.can(X.xBc.MANAGE_CHANNELS, t))),
-      canMoveMembers: G.A.can(X.xBc.MOVE_MEMBERS, n),
-      locked: !G.A.can(X.xBc.CONNECT, n),
-      bypassLimit: G.A.can(X.xBc.MOVE_MEMBERS, n),
+      canManageChannel: G.A.can(J.xBc.MANAGE_CHANNELS, n),
+      canReorderChannel: true !== l && (t.id === Q.V || (null != e ? G.A.can(J.xBc.MANAGE_CHANNELS, e) : G.A.can(J.xBc.MANAGE_CHANNELS, t))),
+      canMoveMembers: G.A.can(J.xBc.MOVE_MEMBERS, n),
+      locked: !G.A.can(J.xBc.CONNECT, n),
+      bypassLimit: G.A.can(J.xBc.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
   }), h = (0, a.bG)([V.A], () => V.A.hasVideo(n.id)), f = (0, g.Ay)(n), m = (0, O.Ay)(n), y = (0, I.Qs)(n.id), _ = (0, a.bG)([A.A], () => null != A.A.getStartTime(n), [n]), {
@@ -442,7 +468,7 @@ function el(e) {
   }), {
     enableHighlight: L,
     enableWaveformIcon: F
-  } = (0, b.b)(t.id, "VoiceChannel"), H = null != c && c.length > 0, W = L && H, z = F && H, Y = (0, K.A)({
+  } = (0, b.b)(t.id, "VoiceChannel"), H = null != c && c.length > 0, K = L && H, z = F && H, Y = (0, W.A)({
     channel: n,
     isChannelSelected: s,
     isChannelCollapsed: o,
@@ -452,10 +478,10 @@ function el(e) {
     enableConnectedUserLimit: true,
     enableActivities: true
   }), q = N && null == Y;
-  return (0, r.jsx)(er, et(ee({
+  return (0, r.jsx)(el, en(et({
     channelName: m,
     embeddedApps: f,
-    embeddedActivityType: X.$pd.PLAYING,
+    embeddedActivityType: J.$pd.PLAYING,
     video: h,
     hasActiveEvent: null != y,
     isSubscriptionGated: j,
@@ -471,7 +497,7 @@ function el(e) {
     enableOpenTIVForPing: D,
     hasChannelInfo: null != Y,
     hasStartTime: _,
-    shouldHighlightChannel: W,
+    shouldHighlightChannel: K,
     shouldUseAnimatedWaveform: z
   }))
 }

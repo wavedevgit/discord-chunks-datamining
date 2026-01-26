@@ -147,7 +147,7 @@ function e1(e) {
 }
 let e9 = /^\+(?!\w+):?(?!:)(\w+)?:?$/;
 
-function e7(e) {
+function e2(e) {
   let {
     isSidebar: t
   } = e, n = function(e, t) {
@@ -171,10 +171,10 @@ function e7(e) {
     role: "complementary"
   })) : (0, r.jsx)("main", e$({}, n))
 }
-let e2 = Chunk64700.forwardRef((e, t) => (0, r.jsx)(e6, e0(e$({}, e), {
+let e7 = Chunk64700.forwardRef((e, t) => (0, r.jsx)(e6, e0(e$({}, e), {
   ref: t
 })));
-e2.displayName = "ChannelTextAreaForm";
+e7.displayName = "ChannelTextAreaForm";
 class e6 extends Chunk64700.PureComponent {
   focusEditor() {
     var e;
@@ -678,7 +678,7 @@ class e3 extends Chunk64700.PureComponent {
           tutorialId: "writing-messages",
           position: "left",
           offsetX: 75,
-          children: (0, r.jsx)(e2, {
+          children: (0, r.jsx)(e7, {
             ref: this.refToChannelTextAreaFormComponent,
             refInstance: this.containerDomRef,
             focused: T,
@@ -728,7 +728,7 @@ class e3 extends Chunk64700.PureComponent {
             }), (0, r.jsx)(eD.EG, {
               event: eq.jej.OPEN_APP_LAUNCHER,
               handler: this.handleOpenAppLauncher
-            }), (0, r.jsxs)(e7, {
+            }), (0, r.jsxs)(e2, {
               isSidebar: w,
               className: eQ.q2,
               "aria-label": eJ.intl.formatToPlainString(t, {
