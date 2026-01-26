@@ -41,9 +41,8 @@ class y extends Chunk439372.A {
   isNewUpdater() {
     return "win32" === (0, u.getPlatformName)()
   }
-  async handlePostConnectionOpen() {
-    let e = true;
-    this.isNewUpdater() && e !== await f.Ay.getOptionalUpdates() && await f.Ay.setOptionalUpdates(e), this.checkForUpdates(), clearInterval(this._checkInterval), this._checkInterval = setInterval(this.checkForUpdates, _)
+  handlePostConnectionOpen() {
+    this.checkForUpdates(), clearInterval(this._checkInterval), this._checkInterval = setInterval(this.checkForUpdates, _)
   }
   async _requestNewUpdaterBootstrap() {
     let e;
@@ -90,7 +89,7 @@ class y extends Chunk439372.A {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        if (null == e.body || "0a44e6836b5a98dec73b69982de90541caa239d7" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "3d70f46e50d4e46d1270f1ea2e7a44275750021d" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, o.kK)()) return this._handleUpdateDownloaded(false);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : m;
         if (Date.now() - g > t) return i.w.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)

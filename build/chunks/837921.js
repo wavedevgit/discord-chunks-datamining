@@ -522,10 +522,6 @@ let Z = {
       var n, r;
       null == (n = (r = A.gpuSettings).setSetting) || n.call(r, e, t)
     },
-    getOptionalUpdates: async () => await A.settings.get("OPTIN_OPTIONAL_UPDATES", false),
-    async setOptionalUpdates(e) {
-      await A.settings.set("OPTIN_OPTIONAL_UPDATES", e)
-    },
     async getOpenOnStart() {
       var e, t, n;
       return null != (e = await (null == (t = (n = A.app).getOpenOnStart) ? true : t.call(n))) ? e : await A.settings.get("OPEN_ON_STARTUP", true)
