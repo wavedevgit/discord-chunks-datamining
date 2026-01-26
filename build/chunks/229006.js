@@ -235,7 +235,8 @@ function I(e) {
 function S(e) {
   if (1 !== e.version || !(a.gh.QUEST_HOME_BANNER in e.placements)) return null;
   let t = e.placements[a.gh.QUEST_HOME_BANNER];
-  return null == t ? null : {
+  if (null == t) return null;
+  let n = {
     placementType: a.gh.QUEST_HOME_BANNER,
     campaignId: t.campaign_id,
     labelTitle: t.label_title,
@@ -246,5 +247,6 @@ function S(e) {
     ctaQuests: t.cta_quests.map(I),
     startsAt: t.starts_at,
     expiresAt: t.expires_at
-  }
+  };
+  return null != t.asset_hero_video && (n.assetHeroVideo = v(t.asset_hero_video)), n
 }

@@ -2,17 +2,18 @@
 /** chunk id: 731935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => p
-}), require("./896048.js"), require("./938796.js"), require("./228524.js");
+  A: () => y
+}), require("./228524.js"), require("./896048.js"), require("./938796.js");
 var Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
+  Chunk575593 = require("./575593.js"),
   Chunk665260 = require("./665260.js"),
   Chunk315069 = require("./315069.js"),
   Chunk871123 = require("./871123.js"),
   Chunk611010 = require("./611010.js"),
   Chunk652215 = require("./652215.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,24 +21,115 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let d = ["500428425362931713", "451550535720501248", "471376328319303681", "466696214818193408"];
+let f = ["500428425362931713", "451550535720501248", "471376328319303681", "466696214818193408"];
 
-function f(e) {
-  if (null != e && null != e.social_layer) return {
-    socialLayer: (0, o.M$)(e.social_layer)
+function p(e) {
+  if (null != e) return {
+    staticImagePath: e.static_image_path,
+    animatedImagePath: e.animated_image_path,
+    videoPath: e.video_path
   }
 }
-class p extends Chunk315069.A {
+
+function _(e) {
+  var t, n, r;
+  return {
+    src: e.src,
+    loop: e.loop,
+    height: e.height,
+    width: e.width,
+    duration: null != (t = e.duration) ? t : 0,
+    start: null != (n = e.start) ? n : 0,
+    loopDelay: e.loop_delay,
+    position: e.position,
+    zIndex: e.z_index,
+    randomizedSources: null == (r = e.randomized_sources) ? true : r.map(e => ({
+      src: e.src
+    }))
+  }
+}
+
+function h(e) {
+  if (null != e) {
+    if (e.type === a.R.AVATAR_DECORATION) return {
+      id: e.id,
+      type: e.type,
+      asset: e.asset,
+      assets: p(e.assets),
+      label: e.label,
+      labelLocalized: e.label_localized
+    };
+    if (e.type === a.R.NAMEPLATE) return {
+      id: e.id,
+      type: e.type,
+      asset: e.asset,
+      assets: p(e.assets),
+      label: e.label,
+      labelLocalized: e.label_localized,
+      palette: e.palette
+    };
+    if (e.type === a.R.PROFILE_EFFECT) {
+      var t;
+      return {
+        id: e.id,
+        type: e.type,
+        title: e.title,
+        titleLocalized: e.title_localized,
+        description: e.description,
+        descriptionLocalized: e.description_localized,
+        accessibilityLabel: e.accessibility_label,
+        accessibilityLabelLocalized: e.accessibility_label_localized,
+        animationType: e.animation_type,
+        staticFrameSrc: e.static_frame_src,
+        thumbnailPreviewSrc: e.thumbnail_preview_src,
+        reducedMotionSrc: e.reduced_motion_src,
+        effects: null == (t = e.effects) ? true : t.map(_)
+      }
+    }
+  }
+}
+
+function m(e) {
+  if (null != e) return {
+    role: e.role,
+    baseVariantSkuId: e.base_variant_sku_id,
+    baseVariantName: e.base_variant_name,
+    value: e.value,
+    label: e.label,
+    collapseUnder: e.collapse_under
+  }
+}
+
+function g(e) {
+  if (null != e) return {
+    type: e.type,
+    item: h(e.item),
+    categorySkuId: e.category_sku_id,
+    premiumType: e.premium_type,
+    expiresSecondsAfterClaim: e.expires_seconds_after_claim,
+    expiresAt: null != e.expires_at ? new Date(1e3 * e.expires_at) : true,
+    variant: m(e.variant),
+    optionSelectorDisplayValue: e.option_selector_display_value
+  }
+}
+
+function E(e) {
+  if (null != e) return {
+    socialLayer: (0, l.M$)(e.social_layer),
+    collectibles: g(e.collectibles)
+  }
+}
+class y extends Chunk315069.A {
   static createFromServer(e) {
-    var t, n, r, a, s, o, c;
+    var t, n, r, a, s, o, l, u, d;
     let {
-      price: u
+      price: f
     } = e;
-    return new p({
+    return new y({
       id: e.id,
       type: e.type,
       applicationId: e.application_id,
-      application: null != e.application ? l.Ay.createFromServer(e.application) : null,
+      application: null != e.application ? c.Ay.createFromServer(e.application) : null,
       eligiblePaymentGateways: null != (t = e.eligible_payment_gateways) ? t : null,
       productLine: e.product_line,
       name: null != (n = e.name) ? n : "",
@@ -55,12 +147,12 @@ class p extends Chunk315069.A {
       contentRating: e.content_rating,
       contentRatingAgency: e.content_rating_agency,
       legalNotice: e.legal_notice,
-      price: null != u ? {
-        amount: u.amount,
-        currency: u.currency,
-        saleAmount: u.sale_amount,
-        salePercentage: u.sale_percentage,
-        premium: u.premium
+      price: null != f ? {
+        amount: f.amount,
+        currency: f.currency,
+        saleAmount: f.sale_amount,
+        salePercentage: f.sale_percentage,
+        premium: f.premium
       } : null,
       premium: null != (r = e.premium) && r,
       showAgeGate: e.show_age_gate || false,
@@ -71,22 +163,23 @@ class p extends Chunk315069.A {
       flags: e.flags,
       externalPurchaseUrl: e.external_purchase_url,
       deleted: null != (o = e.deleted) && o,
-      bundledSkuIds: null != (c = e.bundled_sku_ids) ? c : [],
-      tenantMetadata: f(e.tenant_metadata),
+      bundledSkuIds: null != (l = e.bundled_sku_ids) ? l : [],
+      bundledSkus: null != (u = null == (d = e.bundled_skus) ? true : d.map(e => y.createFromServer(e))) ? u : [],
+      tenantMetadata: E(e.tenant_metadata),
       thumbnailAssetId: e.thumbnail_asset_id,
       description: e.description
     })
   }
   get supportedOperatingSystems() {
     let e = null != this.systemRequirements ? Object.keys(this.systemRequirements) : [];
-    return e.length > 0 ? e : [c.uje.WINDOWS]
+    return e.length > 0 ? e : [u.uje.WINDOWS]
   }
   get isOnSale() {
     return null != this.price && null != this.price.saleAmount
   }
   isGiftable() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.price;
-    return this.type === c.Puh.DURABLE_PRIMARY && this.available && this.requiresPayment && null != e && c.Ly6.has(e.currency) && null == this.externalPurchaseUrl
+    return this.type === u.Puh.DURABLE_PRIMARY && this.available && this.requiresPayment && null != e && u.Ly6.has(e.currency) && null == this.externalPurchaseUrl
   }
   getPrice() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
@@ -119,19 +212,19 @@ class p extends Chunk315069.A {
     return !this.premium && null != e && e.amount > 0
   }
   get isTheGameAwardsWinner() {
-    return d.includes(this.id)
+    return f.includes(this.id)
   }
   get available() {
-    return (0, a.Lt)(this.flags, c.d68.AVAILABLE) || null != this.externalPurchaseUrl
+    return (0, s.Lt)(this.flags, u.d68.AVAILABLE) || null != this.externalPurchaseUrl
   }
   isAvailableForDistribution() {
-    return this.available && null != this.getPrice() && null == this.externalPurchaseUrl && (!this.premium || (0, a.Lt)(this.flags, c.d68.PREMIUM_AND_DISTRIBUTION))
+    return this.available && null != this.getPrice() && null == this.externalPurchaseUrl && (!this.premium || (0, s.Lt)(this.flags, u.d68.PREMIUM_AND_DISTRIBUTION))
   }
   isAvailable() {
-    return (0, a.Lt)(this.flags, c.d68.AVAILABLE)
+    return (0, s.Lt)(this.flags, u.d68.AVAILABLE)
   }
   isPremiumPerk() {
-    return this.premium && ((0, a.Lt)(this.flags, c.d68.PREMIUM_PURCHASE) || (0, a.Lt)(this.flags, c.d68.PREMIUM_AND_DISTRIBUTION))
+    return this.premium && ((0, s.Lt)(this.flags, u.d68.PREMIUM_PURCHASE) || (0, s.Lt)(this.flags, u.d68.PREMIUM_AND_DISTRIBUTION))
   }
   hasFeature(e) {
     return this.features.has(e)
@@ -140,6 +233,6 @@ class p extends Chunk315069.A {
     return null != this.preorderReleaseAt || null != this.preorderApproximateReleaseDate
   }
   constructor(e) {
-    super(), u(this, "id", true), u(this, "type", true), u(this, "applicationId", true), u(this, "application", true), u(this, "eligiblePaymentGateways", true), u(this, "productLine", true), u(this, "name", true), u(this, "releaseDate", true), u(this, "preorderReleaseAt", true), u(this, "preorderApproximateReleaseDate", true), u(this, "summary", true), u(this, "features", true), u(this, "genres", true), u(this, "dependentSkuId", true), u(this, "manifests", true), u(this, "availableRegions", true), u(this, "accessType", true), u(this, "systemRequirements", true), u(this, "contentRating", true), u(this, "contentRatingAgency", true), u(this, "legalNotice", true), u(this, "price", true), u(this, "premium", true), u(this, "showAgeGate", true), u(this, "restricted", true), u(this, "slug", true), u(this, "exclusive", true), u(this, "locales", true), u(this, "flags", true), u(this, "externalPurchaseUrl", true), u(this, "deleted", true), u(this, "bundledSkuIds", true), u(this, "tenantMetadata", true), u(this, "thumbnailAssetId", true), u(this, "description", true), this.id = e.id, this.type = e.type, this.applicationId = e.applicationId, this.application = e.application, this.eligiblePaymentGateways = e.eligiblePaymentGateways, this.productLine = e.productLine, this.name = e.name, this.preorderReleaseAt = e.preorderReleaseAt, this.preorderApproximateReleaseDate = e.preorderApproximateReleaseDate, this.releaseDate = e.releaseDate, this.summary = e.summary, this.features = e.features, this.genres = e.genres, this.dependentSkuId = e.dependentSkuId, this.manifests = e.manifests, this.availableRegions = e.availableRegions, this.accessType = e.accessType, this.systemRequirements = e.systemRequirements, this.contentRating = e.contentRating, this.contentRatingAgency = e.contentRatingAgency, this.legalNotice = e.legalNotice, this.price = e.price, this.premium = e.premium, this.showAgeGate = e.showAgeGate, this.restricted = e.restricted, this.slug = e.slug, this.exclusive = e.exclusive, this.locales = e.locales, this.flags = e.flags, this.externalPurchaseUrl = e.externalPurchaseUrl || null, this.deleted = e.deleted, this.bundledSkuIds = e.bundledSkuIds, this.tenantMetadata = e.tenantMetadata, this.thumbnailAssetId = e.thumbnailAssetId, this.description = e.description
+    super(), d(this, "id", true), d(this, "type", true), d(this, "applicationId", true), d(this, "application", true), d(this, "eligiblePaymentGateways", true), d(this, "productLine", true), d(this, "name", true), d(this, "releaseDate", true), d(this, "preorderReleaseAt", true), d(this, "preorderApproximateReleaseDate", true), d(this, "summary", true), d(this, "features", true), d(this, "genres", true), d(this, "dependentSkuId", true), d(this, "manifests", true), d(this, "availableRegions", true), d(this, "accessType", true), d(this, "systemRequirements", true), d(this, "contentRating", true), d(this, "contentRatingAgency", true), d(this, "legalNotice", true), d(this, "price", true), d(this, "premium", true), d(this, "showAgeGate", true), d(this, "restricted", true), d(this, "slug", true), d(this, "exclusive", true), d(this, "locales", true), d(this, "flags", true), d(this, "externalPurchaseUrl", true), d(this, "deleted", true), d(this, "bundledSkuIds", true), d(this, "bundledSkus", true), d(this, "tenantMetadata", true), d(this, "thumbnailAssetId", true), d(this, "description", true), this.id = e.id, this.type = e.type, this.applicationId = e.applicationId, this.application = e.application, this.eligiblePaymentGateways = e.eligiblePaymentGateways, this.productLine = e.productLine, this.name = e.name, this.preorderReleaseAt = e.preorderReleaseAt, this.preorderApproximateReleaseDate = e.preorderApproximateReleaseDate, this.releaseDate = e.releaseDate, this.summary = e.summary, this.features = e.features, this.genres = e.genres, this.dependentSkuId = e.dependentSkuId, this.manifests = e.manifests, this.availableRegions = e.availableRegions, this.accessType = e.accessType, this.systemRequirements = e.systemRequirements, this.contentRating = e.contentRating, this.contentRatingAgency = e.contentRatingAgency, this.legalNotice = e.legalNotice, this.price = e.price, this.premium = e.premium, this.showAgeGate = e.showAgeGate, this.restricted = e.restricted, this.slug = e.slug, this.exclusive = e.exclusive, this.locales = e.locales, this.flags = e.flags, this.externalPurchaseUrl = e.externalPurchaseUrl || null, this.deleted = e.deleted, this.bundledSkuIds = e.bundledSkuIds, this.bundledSkus = e.bundledSkus, this.tenantMetadata = e.tenantMetadata, this.thumbnailAssetId = e.thumbnailAssetId, this.description = e.description
   }
 }

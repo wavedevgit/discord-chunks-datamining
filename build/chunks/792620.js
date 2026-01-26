@@ -6,10 +6,11 @@ require.d(exports, {
   Cr: () => O,
   F9: () => d,
   IO: () => A,
-  JC: () => H,
+  JC: () => Y,
   TP: () => p,
+  Xi: () => V,
   YL: () => w,
-  Yh: () => F,
+  Yh: () => B,
   _3: () => c,
   a2: () => _,
   fE: () => g,
@@ -22,7 +23,7 @@ require.d(exports, {
   vl: () => E,
   vv: () => S,
   xZ: () => y,
-  xm: () => K
+  xm: () => z
 }), require("./896048.js"), require("./65821.js"), require("./638769.js");
 var Chunk735438 = require("./735438.js"),
   Chunk412703 = require("./412703.js"),
@@ -179,8 +180,15 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
       applications: h
     }
   },
-  G = e => i.o.ALL.has(e) ? e : null,
-  V = e => {
+  G = e => i.o.ALL.has(e) ? e : null;
+
+function V(e) {
+  var t;
+  let n = e.taskConfigV2.tasks[i.n.WATCH_VIDEO],
+    r = e.taskConfigV2.tasks[i.n.WATCH_VIDEO_ON_MOBILE];
+  return null != n && null != r ? n : null != (t = null != r ? r : n) ? t : null
+}
+let F = e => {
     var t, n;
     let {
       quest: r,
@@ -204,7 +212,7 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
       includeTaskTypes: a
     })
   },
-  F = (e, t) => {
+  B = (e, t) => {
     if (O(e)) return {
       progressSeconds: 0,
       targetSeconds: 1,
@@ -212,19 +220,17 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
       percentComplete: 0,
       taskType: i.n.STREAM_ON_DESKTOP
     };
-    if (v(e)) return V({
+    if (v(e)) return F({
       quest: e,
       includeTaskTypes: null != t ? t : w(e) ? i.o.CONSOLE : i.o.ALL
     });
-    if (S(e))
-      if (I(e)) return U({
+    if (S(e)) {
+      var n;
+      return U({
         quest: e,
-        taskType: i.n.WATCH_VIDEO_ON_MOBILE
-      });
-      else return U({
-        quest: e,
-        taskType: i.n.WATCH_VIDEO
-      });
+        taskType: null == (n = V(e.config)) ? true : n.type
+      })
+    }
     return y(e) ? U({
       quest: e,
       taskType: i.n.PLAY_ON_DESKTOP
@@ -237,7 +243,7 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
     })
   };
 
-function B(e) {
+function H(e) {
   var t;
   let n = e.taskConfigV2.tasks,
     r = n[i.n.ACHIEVEMENT_IN_ACTIVITY],
@@ -245,9 +251,9 @@ function B(e) {
   return null != (t = null != r ? r : a) ? t : null
 }
 
-function H(e) {
+function Y(e) {
   var t, n, r, i;
-  let a = B(e.config);
+  let a = H(e.config);
   if (null == a) return null;
   let s = null != (t = null == (i = e.userStatus) || null == (r = i.progress) || null == (n = r[a.type]) ? true : n.value) ? t : 0,
     o = D(a.target, s);
@@ -260,22 +266,22 @@ function H(e) {
   }
 }
 
-function Y(e) {
-  return W(e.targetSeconds - e.progressSeconds)
+function W(e) {
+  return K(e.targetSeconds - e.progressSeconds)
 }
 
-function W(e) {
+function K(e) {
   return {
     minutes: Math.max(0, Math.floor(e / 60)),
     seconds: Math.max(0, Math.floor(e % 60))
   }
 }
 
-function K(e) {
-  let t = Y(e);
-  return z(t.minutes, t.seconds)
+function z(e) {
+  let t = W(e);
+  return q(t.minutes, t.seconds)
 }
 
-function z(e, t) {
+function q(e, t) {
   return "".concat(String(e).padStart(2, "0"), ":").concat(String(t).padStart(2, "0"))
 }
