@@ -1,7 +1,7 @@
 /** Chunk was on 73987 **/
 /** chunk id: 773486, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => N
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -83,19 +83,19 @@ let w = e => {
       b = x(e, ["onInvite", "onClose", "subscriptionId"]),
       [y, v] = s.useState([]),
       [w, E] = s.useState(""),
-      C = (0, o.A)(w, 400),
-      N = (0, l.bG)([m.A], () => m.A.getNumAvailableInvites());
+      N = (0, o.A)(w, 400),
+      C = (0, l.bG)([m.A], () => m.A.getNumAvailableInvites());
     s.useEffect(() => {
       d.default.track(_.HAw.PREMIUM_GROUP_INVITE_FRIENDS_MODAL_VIEWED)
     }, []);
     let {
-      eligibleUsers: k,
-      getNextRows: M,
+      eligibleUsers: M,
+      getNextRows: k,
       hasError: R,
       isFetching: A
     } = (0, g.A)({
       subscriptionId: u,
-      searchQuery: C
+      searchQuery: N
     }), [U, D] = s.useState(false), T = s.useCallback(e => {
       v(t => t.filter(t => !e.has(t.id)))
     }, [v]), z = s.useMemo(() => y.map(e => ({
@@ -108,7 +108,7 @@ let w = e => {
       subtitle: S.intl.string(O.default.zrtwpV),
       onClose: c,
       actions: []
-    }, b)) : 0 !== k.length || A || 0 !== C.length ? (0, n.jsx)(i.Modal, I(P({
+    }, b)) : 0 !== M.length || A || 0 !== N.length ? (0, n.jsx)(i.Modal, I(P({
       size: "md",
       title: S.intl.string(O.default["Um/7BM"]),
       subtitle: S.intl.format(O.default.qSWXaf, {
@@ -132,7 +132,7 @@ let w = e => {
         })
       }),
       actions: [],
-      actionBarInput: (t = C.length > 0 && 0 === k.length, (0, n.jsx)(a.Button, {
+      actionBarInput: (t = N.length > 0 && 0 === M.length, (0, n.jsx)(a.Button, {
         variant: "primary",
         disabled: 0 === y.length && !t || U,
         text: S.intl.string(O.default["5fZHp3"]),
@@ -146,20 +146,27 @@ let w = e => {
       }))
     }, b), {
       children: (0, n.jsx)(p.A, {
-        users: k,
+        users: M,
         isUserSelected: e => y.some(t => t.id === e.id),
         onSelectionChange: (e, t) => {
           v(r => t ? [...r, e] : r.filter(t => t.id !== e.id))
         },
-        isUserDisabled: e => y.length >= N && !y.some(t => t.id === e.id),
+        isUserDisabled: e => y.length >= C && !y.some(t => t.id === e.id) || !e.eligible,
         isFetching: A,
-        onFetchMore: M,
-        searchQuery: C,
+        onFetchMore: k,
+        searchQuery: N,
         emptySearchContent: {
           header: S.intl.string(O.default.gaamNe),
           body: S.intl.string(O.default.nQcM39)
         },
-        className: j.p_
+        className: j.p_,
+        tooltipConfig: {
+          text: e => S.intl.formatToPlainString(O.default["5tzM9V"], {
+            disabledUserName: f.Ay.getName(e),
+            premiumGroupProductName: (0, h.DP)()
+          }),
+          isActive: (e, t) => !!(t && !e.eligible)
+        }
       })
     })) : (0, n.jsx)(i.Modal, P({
       size: "sm",
@@ -205,7 +212,7 @@ let w = e => {
       })
     }))
   },
-  C = e => {
+  N = e => {
     let {
       subscription: t
     } = e, r = x(e, ["subscription"]), [i, l] = s.useState([]), [a, o] = s.useState(1), c = async e => {

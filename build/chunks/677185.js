@@ -10,7 +10,7 @@ require.d(exports, {
   n2: () => p,
   oO: () => _,
   wc: () => m
-});
+}), require("./896048.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
   Chunk562465 = require("./562465.js"),
@@ -48,18 +48,24 @@ async function d() {
 async function f(e, t, n, r) {
   let {
     users: i,
-    next_index: s
+    next_index: s,
+    ineligible_users: l
   } = (await a.Bo.get({
     url: c.Rsh.BILLING_SUBSCRIPTION_ELIGIBLE_USERS(e),
     query: {
       index: t,
       limit: null != r ? r : u,
-      search_query: n
+      search_query: n,
+      include_ineligible: true
     },
     rejectWithError: true
   })).body;
   return {
-    users: i.map(e => new o.A(e)),
+    users: [...i.map(e => Object.assign(new o.A(e), {
+      eligible: true
+    })), ...(null != l ? l : []).map(e => Object.assign(new o.A(e), {
+      eligible: false
+    }))],
     nextIndex: s
   }
 }
