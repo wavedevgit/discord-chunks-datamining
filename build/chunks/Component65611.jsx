@@ -49,7 +49,7 @@ function h(e) {
   else if (n) t = a.HKD;
   else {
     if (!c) return null;
-    t = a.bxf
+    t = a.k9F
   }
   return g({
     icon: t,

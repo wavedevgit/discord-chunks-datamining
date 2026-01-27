@@ -178,7 +178,7 @@ let R = Chunk64700.forwardRef(function(e, t) {
             className: N.gn,
             children: [(0, r.jsxs)("div", {
               className: N.gH,
-              children: [(0, r.jsx)(u.bxf, {
+              children: [(0, r.jsx)(u.k9F, {
                 size: "md",
                 className: N.ch,
                 color: "var(--interactive-text-active)"

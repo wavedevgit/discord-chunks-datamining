@@ -635,6 +635,24 @@ let Z = {
       } = this.getDiscordUtils();
       return null == e ? true : e()
     },
+    startCPUProfiling(e) {
+      let {
+        startCPUProfiling: t
+      } = this.getDiscordUtils();
+      return null == t ? true : t(e)
+    },
+    async stopCPUProfiling() {
+      let {
+        stopCPUProfiling: e
+      } = this.getDiscordUtils(), t = await (null == e ? true : e());
+      return null == t ? Promise.reject(Error("Failed to stop CPU profiling")) : JSON.parse(t)
+    },
+    gzipAndBase64Encode(e) {
+      let {
+        gzipAndBase64Encode: t
+      } = this.getDiscordUtils(), n = null == t ? true : t(e);
+      return null != n ? n : Promise.resolve(null)
+    },
     showOpenDialog: e => A.fileManager.showOpenDialog({
       properties: e
     }),

@@ -90,7 +90,7 @@ function S(e) {
           className: x.F1,
           children: (0, r.jsx)("div", {
             className: x.zc,
-            children: (0, r.jsx)(u.dCJ, {
+            children: (0, r.jsx)(u.k9F, {
               size: "custom",
               color: "currentColor",
               width: 40,
@@ -209,7 +209,7 @@ function I(e) {
             onClick: d
           }), (0, r.jsx)(u.Button, {
             variant: "secondary",
-            icon: u.bxf,
+            icon: u.k9F,
             text: v.intl.string(v.t.qnFavR),
             onClick: p
           })]

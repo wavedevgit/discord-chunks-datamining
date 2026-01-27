@@ -191,7 +191,7 @@ function C(e) {
     })
   }, "disconnected")), null != j && z.push((0, r.jsx)(c.m, {
     text: (0, d.A)(j.name),
-    children: (0, r.jsx)(u.bxf, {
+    children: (0, r.jsx)(u.k9F, {
       size: "md",
       color: "currentColor",
       className: a()(P.Kk, h)

@@ -2,8 +2,8 @@
 /** chunk id: 311849, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => z
-}), require("./638769.js"), require("./896048.js"), require("./321073.js"), require("./114821.js"), require("./339614.js");
+  A: () => J
+}), require("./638769.js"), require("./896048.js"), require("./321073.js"), require("./114821.js"), require("./339614.js"), require("./134528.js"), require("./947204.js"), require("./747238.js"), require("./733351.js");
 var Chunk141931 = require("./141931.js"),
   Chunk506774 = require("./506774.js"),
   Chunk439372 = require("./439372.js"),
@@ -53,19 +53,24 @@ let b = 1048576,
   V = 60 * Chunk927813.A.Millis.MINUTE,
   B = "lastMemoryUsageRestart",
   H = +Chunk927813.A.Millis.DAY,
-  Y = +Chunk927813.A.Millis.MINUTE;
+  Y = +Chunk927813.A.Millis.MINUTE,
+  W = 10 * Chunk927813.A.Millis.MINUTE,
+  K = 60 * Chunk927813.A.Millis.MINUTE,
+  z = 4,
+  q = 1,
+  Z = 1e4;
 
-function W() {
+function Q() {
   return p.isPlatformEmbedded && (0, p.isWindows)()
 }
-class K extends Chunk439372.A {
+class X extends Chunk439372.A {
   _initialize() {}
   _terminate() {
-    W() && (clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = null, clearInterval(this._checkIntervalPA), this._checkIntervalPA = null, clearInterval(this._checkIntervalV8), this._checkIntervalV8 = null, _.A.disablePerfMemoryHooks(), _.A.disablePAMemoryProfiler(), _.A.disableProfilingV8Heap())
+    Q() && (clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = null, clearInterval(this._checkIntervalPA), this._checkIntervalPA = null, clearInterval(this._checkIntervalV8), this._checkIntervalV8 = null, clearTimeout(this._checkIntervalCPUProfiler), this._checkIntervalCPUProfiler = null, _.A.disablePerfMemoryHooks(), _.A.disablePAMemoryProfiler(), _.A.disableProfilingV8Heap(), _.A.stopCPUProfiling())
   }
   handlePostConnectionOpen() {
     var e, t;
-    if (!W()) return;
+    if (!Q()) return;
     let n = null == (e = (t = o.A.remoteApp).getReleaseChannel) ? true : e.call(t);
     "development" !== n && "canary" !== n && (this._supportedNativeChannel = false), clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = setInterval(async () => {
       await this.trackNativeHeapPerformanceStats()
@@ -73,7 +78,10 @@ class K extends Chunk439372.A {
       await this.trackPartitionAllocPerformanceStats()
     }, N), clearInterval(this._checkIntervalV8), this._checkIntervalV8 = setInterval(async () => {
       await this.trackV8HeapAlloc()
-    }, x))
+    }, x), clearTimeout(this._checkIntervalCPUProfiler), this._checkIntervalCPUProfiler = setTimeout(() => {
+      let e = _.A.getCumulativeCPUUsage();
+      null != e && e.usage > z && this.trackCPUProfiling()
+    }, W))
   }
   async trackNativeHeapPerformanceStats() {
     var e, t;
@@ -276,10 +284,76 @@ class K extends Chunk439372.A {
       }
     }
   }
+  trackCPUProfiling() {
+    var e;
+    let t = {
+        maxSampleCount: Z,
+        sampleRateMS: q,
+        captureJSThreadOnly: false
+      },
+      n = q * Z + 1e3,
+      r = _.A.startCPUProfiling(t);
+    null != r && false !== (null != (e = r.success) && e) && (this._checkIntervalCPUProfiler = setTimeout(async () => {
+      let e = null;
+      try {
+        e = await _.A.stopCPUProfiling()
+      } catch (e) {}
+      if (null === e || null == e.fg_module_name || null == e.fg_sample_data) return;
+      for (let t = 0; t < e.fg_module_name.length; t++) {
+        let n = e.fg_module_name.at(t);
+        (null == n ? true : n.includes("<unknown_0>")) && (e.fg_module_name[t] = "[JS] jit_tracking_not_enabled")
+      }
+      let t = [],
+        n = new Map;
+      for (let r = 0; r < e.fg_module_name.length; r++) {
+        let i = e.fg_module_name[r],
+          a = t.indexOf(i);
+        false === a && (a = t.length, t.push(i)), n.set(r, a)
+      }
+      let r = [],
+        i = new Map;
+      if (null != e.fg_code_id)
+        for (let t = 0; t < e.fg_code_id.length; t++) {
+          let n = e.fg_code_id[t],
+            a = r.indexOf(n);
+          false === a && (a = r.length, r.push(n)), i.set(t, a)
+        }
+      let a = e.fg_sample_data.split("\n"),
+        o = [];
+      for (let e of a) {
+        if (0 === e.trim().length) continue;
+        let t = e.split(" "),
+          r = t[0],
+          a = t[1],
+          s = r.split(";").map(e => parseInt(e, 10)).map(e => {
+            var t, r;
+            let a = null != (t = n.get(e)) ? t : 0,
+              o = null != (r = i.get(e)) ? r : 0;
+            return "".concat(a, ",").concat(o, ",").concat(e)
+          });
+        o.push("".concat(s.join(";"), " ").concat(a))
+      }
+      let s = o.join("\n"),
+        l = await m.Ay.gzipAndBase64Encode(s),
+        c = null != l && l.length > 0 ? l : s,
+        u = {
+          sample_period_ms: q,
+          sample_count: e.fg_sample_count,
+          fg_sample_data: c,
+          fg_module_name: t,
+          fg_code_id: r,
+          fg_instr_rel_addr_high: e.fg_instr_rel_addr_high,
+          fg_instr_rel_addr_low: e.fg_instr_rel_addr_low
+        };
+      d.default.track(E.HAw.DESKTOP_PERF_CPU_PROFILE, u), this._checkIntervalCPUProfiler = setTimeout(() => {
+        this.trackCPUProfiling()
+      }, K)
+    }, n))
+  }
   constructor(...e) {
-    super(...e), y(this, "_checkIntervalNativeHeap", null), y(this, "_checkIntervalPA", null), y(this, "_checkIntervalV8", null), y(this, "_nativeHeapHooksInstalled", false), y(this, "_paHeapHooksInstalled", false), y(this, "_v8ProfilerRunning", false), y(this, "_pushedNativeDeadlockMinidumpCount", 0), y(this, "_startupTime", performance.now()), y(this, "_supportedNativeChannel", true), y(this, "actions", {
+    super(...e), y(this, "_checkIntervalNativeHeap", null), y(this, "_checkIntervalPA", null), y(this, "_checkIntervalV8", null), y(this, "_checkIntervalCPUProfiler", null), y(this, "_nativeHeapHooksInstalled", false), y(this, "_paHeapHooksInstalled", false), y(this, "_v8ProfilerRunning", false), y(this, "_pushedNativeDeadlockMinidumpCount", 0), y(this, "_startupTime", performance.now()), y(this, "_supportedNativeChannel", true), y(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
     })
   }
 }
-let z = new K
+let J = new X

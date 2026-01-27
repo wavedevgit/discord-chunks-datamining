@@ -92,7 +92,7 @@ function C(e) {
       users: D
     }),
     G = (0, r.jsx)(x, {
-      icon: c.bxf,
+      icon: c.k9F,
       users: R
     }),
     {

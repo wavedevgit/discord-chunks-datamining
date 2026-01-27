@@ -132,6 +132,16 @@ class c extends Chunk832213.D {
       return null
     }
   }
+  startCPUProfiling(e) {
+    try {
+      return o.Ay.startCPUProfiling(e)
+    } catch (e) {
+      return null
+    }
+  }
+  stopCPUProfiling() {
+    return o.Ay.stopCPUProfiling()
+  }
   enablePAMemoryProfiler(e) {
     try {
       var t;
