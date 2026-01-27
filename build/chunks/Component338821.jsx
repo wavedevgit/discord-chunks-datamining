@@ -343,8 +343,11 @@ function ef(e) {
     })
   }, [e1]), e3 = i.useCallback(e => e0(e, t) ? ea : er, [t, e0]), e6 = i.useCallback(e => {
     let t = e === eB.length - 1;
-    return eY && t ? 70 : eY && e === eH ? 20 : 0
-  }, [eB.length, eY, eH]), e4 = i.useCallback((e, t) => (0, r.jsx)("div", {
+    if (eY && t)
+      if (ex.bottomBar) return 4;
+      else return 70;
+    return eY && e === eH ? 20 : 0
+  }, [eB.length, eY, eH, ex.bottomBar]), e4 = i.useCallback((e, t) => (0, r.jsx)("div", {
     children: t
   }, e), []), e5 = i.useCallback((e, n) => {
     let i = "".concat(e.key),
@@ -374,7 +377,7 @@ function ef(e) {
   }, [ez, eQ, t, e0, $, eN, eY, eg]), e7 = i.useCallback((e, t) => {
     let n = t === eB.length - 1,
       i = t === eH;
-    return eY && n ? (0, r.jsx)("div", {
+    return eY && n && !ex.bottomBar ? (0, r.jsx)("div", {
       className: o()(Q.Lk, {
         [Q.Ns]: i,
         [Q.N4]: eg
@@ -385,7 +388,7 @@ function ef(e) {
         [Q.N4]: eg
       })
     }) : null
-  }, [eH, eY, eB.length, eg]), e8 = i.useCallback(e => eG((0, F.lG)(e, ej, eC, a, ey)), [a, eC, ej, ey]), e9 = i.useCallback(e => {
+  }, [eH, eY, eB.length, eg, ex.bottomBar]), e8 = i.useCallback(e => eG((0, F.lG)(e, ej, eC, a, ey)), [a, eC, ej, ey]), e9 = i.useCallback(e => {
     (0, u.L3)(e, async () => {
       let {
         default: e
@@ -425,13 +428,15 @@ function ef(e) {
       guildId: t,
       inExpressionPicker: eh,
       showPinnedDefaultsShortcut: eW,
+      hasBottomBarUpsell: ex.bottomBar && eY,
       defaultsSectionIndex: i
     })
-  }, [eM, eB, eY, t, eh, eW, ef]), tn = i.useCallback(() => {
+  }, [eM, eB, ef, eY, t, eh, eW, ex.bottomBar]), tn = i.useCallback(() => {
     var e;
     let t = (0, O.qD)();
     return null != (e = (0, L.LE)(t, q.pe.TIER_2)) ? e : Z.intl.string(Z.t.pj0XBN)
   }, []), tr = i.useCallback(() => {
+    if (ex.bottomBar) return null;
     if (eY) {
       let e = eV;
       return ex.enabled && (e = true), (0, r.jsx)(A.d, {
@@ -445,7 +450,7 @@ function ef(e) {
       })
     }
     return null
-  }, [e2, tn, eY, ex.enabled, eV, eS]), ti = i.useCallback(e => {
+  }, [e2, tn, eY, ex.enabled, ex.bottomBar, eV, eS]), ti = i.useCallback(e => {
     var t;
     return (null == e ? true : e.item.type) !== M.uq.SOUND ? null : (0, r.jsx)(H.A, {
       closePicker: g,
@@ -517,6 +522,15 @@ function ef(e) {
       gridNotice: et,
       renderHeader: ep,
       renderUpsell: tr
+    }), ex.bottomBar && eY && (0, r.jsx)(A.d, {
+      showUpsell: true,
+      text: e2(),
+      button: tn(),
+      buttonAnalyticsObject: {
+        section: K.JJy.SOUND_PICKER_FLOATING_UPSELL
+      },
+      hoveredNitroLockedSound: eS,
+      position: "bottom"
     })]
   })
 }

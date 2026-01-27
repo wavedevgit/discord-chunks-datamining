@@ -4,6 +4,7 @@
 module.exports = {
   jv: "categoryList_a1e0e0",
   HZ: "expressionPickerCategoryList_a1e0e0",
+  Gi: "hasBottomBarUpsell_a1e0e0",
   L1: "category_a1e0e0",
   Yl: "categoryIcon_a1e0e0 category_a1e0e0",
   wH: "selected_a1e0e0",

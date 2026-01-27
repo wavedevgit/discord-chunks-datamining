@@ -172,24 +172,25 @@ function j(e) {
     soundboardListRef: t,
     categories: n,
     shouldUpsellLockedCategories: a,
-    listPadding: o = w,
-    guildId: s,
-    inExpressionPicker: c,
-    showPinnedDefaultsShortcut: d = false,
-    defaultsSectionIndex: _ = false
-  } = e, E = i.useRef(null), S = (0, l.bG)([h.default], () => h.default.getCurrentUser()), T = (0, g.TW)(S, v.PremiumTypes.TIER_2), C = i.useCallback(e => {
-    if (_ >= 0) {
+    listPadding: s = w,
+    guildId: c,
+    inExpressionPicker: d,
+    showPinnedDefaultsShortcut: _ = false,
+    hasBottomBarUpsell: E = false,
+    defaultsSectionIndex: S = false
+  } = e, T = i.useRef(null), C = (0, l.bG)([h.default], () => h.default.getCurrentUser()), N = (0, g.TW)(C, v.PremiumTypes.TIER_2), D = i.useCallback(e => {
+    if (S >= 0) {
       var n;
-      e(_), null == (n = t.current) || n.scrollToSectionTop(_)
+      e(S), null == (n = t.current) || n.scrollToSectionTop(S)
     }
-  }, [_, t]), N = i.useCallback(e => d ? P : 0, [d]), D = i.useCallback((e, t, n, i) => {
-    let o = a && (0, y.B)(e.categoryInfo, T, s),
-      l = () => {
+  }, [S, t]), L = i.useCallback(e => _ || E ? P : 0, [_, E]), x = i.useCallback((e, t, n, i) => {
+    let o = a && (0, y.B)(e.categoryInfo, N, c),
+      s = () => {
         m.default.track(b.HAw.EXPRESSION_PICKER_CATEGORY_SELECTED, {
           location: {
             page: b.liQ.SOUNDBOARD_POPOUT
           },
-          guild_id: null != s ? s : null,
+          guild_id: null != c ? c : null,
           num_expressions: e.items.length,
           tab: O.kx.SOUNDBOARD,
           sticker_pack_id: null,
@@ -199,26 +200,28 @@ function j(e) {
     return (0, r.jsx)(M, {
       category: e,
       categoryIndex: t,
-      onClick: l,
+      onClick: s,
       isSelected: i,
       isNitroLocked: o
     })
-  }, [s, a, T]);
-  return d && ((o = [...o])[2] = P), (0, r.jsx)(p.A, {
-    className: c ? I.HZ : I.jv,
-    categoryListRef: E,
+  }, [c, a, N]);
+  return _ && ((s = [...s])[2] = P), (0, r.jsx)(p.A, {
+    className: o()(d ? I.HZ : I.jv, {
+      [I.Gi]: E
+    }),
+    categoryListRef: T,
     expressionsListRef: t,
     store: f.LW,
     categories: n,
-    listPadding: o,
-    renderCategoryListItem: D,
+    listPadding: s,
+    renderCategoryListItem: x,
     rowCount: n.length,
     categoryHeight: R,
-    getScrollOffsetForIndex: N,
-    children: e => d && (0, r.jsx)(u.DUT, {
+    getScrollOffsetForIndex: L,
+    children: e => _ && (0, r.jsx)(u.DUT, {
       "aria-label": A.intl.string(A.t.Rtvk9X),
       className: I.xe,
-      onClick: () => C(e),
+      onClick: () => D(e),
       children: (0, r.jsx)(u.pVd, {
         size: "custom",
         width: 24,

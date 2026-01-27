@@ -73,7 +73,8 @@ function E(e) {
     style: g({}, I),
     className: a()(h.Zj, A && h.g9, {
       [h.tO]: "floating" === O,
-      [h.Kx]: "inline" === O
+      [h.Kx]: "inline" === O,
+      [h.ik]: "bottom" === O
     }, E),
     children: (0, r.jsxs)(y, {
       hasPreviewSound: S,
