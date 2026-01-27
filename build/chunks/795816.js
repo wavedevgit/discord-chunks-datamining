@@ -2,21 +2,21 @@
 /** chunk id: 795816, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CS: () => ep,
-  D2: () => eA,
-  Ir: () => ey,
-  LK: () => eE,
-  LV: () => eh,
-  SE: () => ef,
-  Ue: () => eg,
-  _H: () => ed,
-  gk: () => eb,
-  i5: () => eO,
-  jp: () => ev,
-  od: () => eI,
-  rW: () => eo,
-  su: () => es,
-  tk: () => em
+  CS: () => e_,
+  D2: () => eI,
+  Ir: () => eb,
+  LK: () => ey,
+  LV: () => em,
+  SE: () => ep,
+  Ue: () => eE,
+  _H: () => ef,
+  gk: () => eO,
+  i5: () => ev,
+  jp: () => eA,
+  od: () => eS,
+  rW: () => es,
+  su: () => el,
+  tk: () => eg
 }), require("./938796.js"), require("./896048.js"), require("./65821.js");
 var Chunk110259 = require("./110259.js"),
   Chunk344351 = require("./344351.js"),
@@ -63,6 +63,7 @@ var Chunk110259 = require("./110259.js"),
   Chunk817636 = require("./817636.js"),
   Chunk782091 = require("./782091.js"),
   Chunk108959 = require("./108959.js"),
+  Chunk448739 = require("./448739.js"),
   Chunk90804 = require("./90804.js"),
   Chunk946255 = require("./946255.js"),
   Chunk859007 = require("./859007.js"),
@@ -74,7 +75,7 @@ var Chunk110259 = require("./110259.js"),
   Chunk172799 = require("./172799.js"),
   Chunk985018 = require("./985018.jsx");
 
-function ei(e, t, n) {
+function ea(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -83,28 +84,28 @@ function ei(e, t, n) {
   }) : e[t] = n, e
 }
 
-function ea(e) {
+function eo(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      ei(e, t, n[t])
+      ea(e, t, n[t])
     })
   }
   return e
 }
 
-function eo(e) {
+function es(e) {
   let t = B.Ay.getSelfEmbeddedActivityForLocation(e);
-  null != t && ed({
+  null != t && ef({
     location: t.location,
     applicationId: t.applicationId,
     showFeedback: false
   })
 }
-async function es(e) {
+async function el(e) {
   var t, r;
   let {
     channelId: a,
@@ -128,13 +129,13 @@ async function es(e) {
     P = null != R && (0, T.x)(R),
     D = (0, N.m)();
   try {
-    if (w.A.getWindowOpen($.MLl.ACTIVITY_POPOUT)) {
+    if (w.A.getWindowOpen(ee.MLl.ACTIVITY_POPOUT)) {
       let {
         close: e
       } = n(574172);
-      e($.MLl.ACTIVITY_POPOUT)
+      e(ee.MLl.ACTIVITY_POPOUT)
     }
-    if ((0, Q.y)({
+    if ((0, q.Q)(), (0, X.y)({
         applicationId: o
       })) returntrue;
     l.h.dispatch({
@@ -152,7 +153,7 @@ async function es(e) {
         referrerId: E
       }
     });
-    let e = await eA(o, null != a ? a : true);
+    let e = await eI(o, null != a ? a : true);
     l.h.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET",
       applicationId: o,
@@ -160,8 +161,8 @@ async function es(e) {
       proxyTicket: e
     });
     let t = j.default.getCurrentUser();
-    if (null != t && (0, Z.A)({
-        type: s ? $.UqL.LAUNCH : $.UqL.JOIN,
+    if (null != t && (0, Q.A)({
+        type: s ? ee.UqL.LAUNCH : ee.UqL.JOIN,
         userId: null == t ? true : t.id,
         guildId: C,
         channelId: a,
@@ -173,8 +174,8 @@ async function es(e) {
         referrerId: E,
         inviterUserId: O
       }), s) {
-      if (null == a || !el(o, A)) throw new I.A(I.A.Reasons.INVALID_CHANNEL);
-      let e = await ec({
+      if (null == a || !ec(o, A)) throw new I.A(I.A.Reasons.INVALID_CHANNEL);
+      let e = await eu({
         applicationId: o,
         nonce: D,
         channelId: a,
@@ -195,7 +196,7 @@ async function es(e) {
         }), false;
         else throw new I.A(I.A.Reasons.PRIMARY_APP_COMMAND_NOT_FOUND)
     } else {
-      let e = await eu({
+      let e = await ed({
         applicationId: o,
         channelId: a,
         embeddedActivitiesManager: d,
@@ -227,14 +228,14 @@ async function es(e) {
   returntrue
 }
 
-function el(e, t) {
-  let n = (null == t ? true : t.type) === $.rbe.GUILD_VOICE,
+function ec(e, t) {
+  let n = (null == t ? true : t.type) === ee.rbe.GUILD_VOICE,
     r = y.A.getApplication(e),
-    i = null != r && (0, a.Lt)(r.flags, $.gfo.EMBEDDED),
+    i = null != r && (0, a.Lt)(r.flags, ee.gfo.EMBEDDED),
     o = (0, V.AX)(t);
   return n && i || o
 }
-async function ec(e) {
+async function eu(e) {
   let {
     applicationId: t,
     nonce: n,
@@ -257,7 +258,7 @@ async function ec(e) {
     throw e
   }
   let f = d.handler !== h.Ys.APP_HANDLER;
-  if (!(f || ee.TR.includes(t))) {
+  if (!(f || et.TR.includes(t))) {
     null != r && await (0, m.Zn)({
       type: "channel",
       channelId: r
@@ -319,7 +320,7 @@ async function ec(e) {
           null == l || l(), e()
         },
         onFailure: (e, n, a, o) => {
-          null == l || l(), U.default.track($.HAw.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
+          null == l || l(), U.default.track(ee.HAw.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
             channel_id: r,
             guild_id: i,
             application_id: t,
@@ -343,7 +344,7 @@ async function ec(e) {
     result: "success"
   }
 }
-async function eu(e) {
+async function ed(e) {
   let t, {
       applicationId: n,
       channelId: i,
@@ -382,8 +383,8 @@ async function eu(e) {
   if (_ !== K.xy.CAN_LAUNCH) {
     let e = 4;
     return _ === K.xy.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (e = 5, (0, R.i)()) : _ === K.xy.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && (e = 6, c.A.show({
-      title: er.intl.string(er.t["IOy+I5"]),
-      body: er.intl.string(er.t.UXoQTp),
+      title: ei.intl.string(ei.t["IOy+I5"]),
+      body: ei.intl.string(ei.t.UXoQTp),
       hideActionSheet: false
     })), {
       result: "failure",
@@ -404,9 +405,9 @@ async function eu(e) {
   };
   if (null != p) {
     let e = (0, z.A)(p.id),
-      n = X.lk.includes(p.type);
+      n = J.lk.includes(p.type);
     if (e) {
-      if (!await (0, q.A)({
+      if (!await (0, Z.A)({
           channelId: p.id,
           bypassChangeModal: null != t
         })) return {
@@ -432,8 +433,8 @@ async function eu(e) {
     oldFormErrors: true,
     rejectWithError: true
   };
-  return null != i ? (await F.A.post(ea({
-    url: $.Rsh.ACTIVITY_CHANNEL_LAUNCH(i, n),
+  return null != i ? (await F.A.post(eo({
+    url: ee.Rsh.ACTIVITY_CHANNEL_LAUNCH(i, n),
     body: {
       session_id: l,
       guild_id: null != s ? s : true
@@ -446,7 +447,7 @@ async function eu(e) {
   }
 }
 
-function ed(e) {
+function ef(e) {
   let {
     location: t,
     applicationId: n,
@@ -472,13 +473,13 @@ function ed(e) {
     }) && d.A.selectParticipant(a, null)
   }
 }
-async function ef() {
+async function ep() {
   try {
     l.h.dispatch({
       type: "DEVELOPER_ACTIVITY_SHELF_FETCH_START"
     });
     let e = await o.Bo.get({
-        url: $.Rsh.APPLICATIONS_WITH_ASSETS,
+        url: ee.Rsh.APPLICATIONS_WITH_ASSETS,
         query: {
           with_team_applications: true
         },
@@ -501,7 +502,7 @@ async function ef() {
     })
   }
 }
-async function ep(e, t, n) {
+async function e_(e, t, n) {
   try {
     l.h.dispatch({
       type: "UPLOAD_ACTIVITY_IMAGE_ATTACHMENT_START"
@@ -510,7 +511,7 @@ async function ep(e, t, n) {
         channel_id: t
       } : true,
       i = await o.Bo.post({
-        url: $.Rsh.APPLICATION_UPLOAD_ATTACHMENT(e),
+        url: ee.Rsh.APPLICATION_UPLOAD_ATTACHMENT(e),
         query: r,
         attachments: [{
           name: "file",
@@ -528,13 +529,13 @@ async function ep(e, t, n) {
     }), new _.A(e)
   }
 }
-let e_ = (e, t, n) => {
+let eh = (e, t, n) => {
   let {
     guildId: r
   } = n;
   (r === e || null == r && null == e) && t()
 };
-async function eh(e) {
+async function em(e) {
   var t, n, i, a;
   let {
     guildId: o,
@@ -543,10 +544,10 @@ async function eh(e) {
   if (!s && !B.Ay.shouldFetchShelf(o)) {
     if (null == (t = B.Ay.getShelfFetchStatus(o)) ? true : t.isFetching) {
       let e, t, n = new Promise(t => {
-          e = e_.bind(null, o, t), l.h.subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS", e)
+          e = eh.bind(null, o, t), l.h.subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS", e)
         }),
         r = new Promise(e => {
-          t = e_.bind(null, o, e), l.h.subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL", t)
+          t = eh.bind(null, o, e), l.h.subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL", t)
         });
       await Promise.race([n, r]), null != e && (l.h.unsubscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS", e), e = null), null != t && (l.h.unsubscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL", t), t = null)
     }
@@ -564,7 +565,7 @@ async function eh(e) {
         guild_id: o
       } : true,
       t = await F.A.get({
-        url: $.Rsh.ACTIVITY_SHELF,
+        url: ee.Rsh.ACTIVITY_SHELF,
         query: e,
         trackedActionData: {
           event: r.NetworkActionNames.EMBEDDED_ACTIVITIES_FETCH_SHELF,
@@ -602,7 +603,7 @@ async function eh(e) {
     }
   }
 }
-async function em(e) {
+async function eg(e) {
   let {
     activityChannelId: t,
     invitedChannelId: n,
@@ -610,12 +611,12 @@ async function em(e) {
     location: i,
     inviteAnalyticsMetadata: a
   } = e, o = await f.Ay.createInvite(t, {
-    target_type: en.yV.EMBEDDED_APPLICATION,
+    target_type: er.yV.EMBEDDED_APPLICATION,
     target_application_id: r
   }, i);
   null != L.A.getChannel(n) && p.A.sendInvite(n, o.code, i, a)
 }
-async function eg(e) {
+async function eE(e) {
   let {
     channelId: t,
     applicationId: n,
@@ -624,7 +625,7 @@ async function eg(e) {
     inviteAnalyticsMetadata: a,
     prefixedContent: o
   } = e, s = await f.Ay.createInvite(t, {
-    target_type: en.yV.EMBEDDED_APPLICATION,
+    target_type: er.yV.EMBEDDED_APPLICATION,
     target_application_id: n
   }, i);
   await u.A.ensurePrivateChannel(r).then(e => {
@@ -634,14 +635,14 @@ async function eg(e) {
   })
 }
 
-function eE() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : et.i.INDIRECT_ACTION;
+function ey() {
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : en.i.INDIRECT_ACTION;
   (0, A.$l)(s.M.ACTIVITIES_VOICE_LAUNCHER_BADGE, Math.floor(new Date().getTime() / 1e3), {
     dismissAction: e
   })
 }
-async function ey(e) {
-  let t = $.Rsh.ACTIVITY_TEST_MODE(e);
+async function eb(e) {
+  let t = ee.Rsh.ACTIVITY_TEST_MODE(e);
   try {
     return await o.Bo.get({
       url: t,
@@ -653,41 +654,41 @@ async function ey(e) {
   }
 }
 
-function eb(e) {
+function eO(e) {
   l.h.dispatch({
     type: "EMBEDDED_ACTIVITY_SET_PANEL_MODE",
     activityPanelMode: e
   })
 }
 
-function eO(e) {
+function ev(e) {
   l.h.dispatch({
     type: "EMBEDDED_ACTIVITY_SET_FOCUSED_LAYOUT",
     focusedActivityLayout: e
   })
 }
 
-function ev() {
-  eb(J.Gd.ACTIVITY_POPOUT_WINDOW), l.h.dispatch({
+function eA() {
+  eO($.Gd.ACTIVITY_POPOUT_WINDOW), l.h.dispatch({
     type: "ACTIVITY_POPOUT_WINDOW_OPEN"
   })
 }
-async function eA(e, t) {
+async function eI(e, t) {
   let n = {};
   return null != t && (n.channel_id = t), (await o.Bo.post({
-    url: $.Rsh.APPLICATION_PROXY_TICKET(e),
+    url: ee.Rsh.APPLICATION_PROXY_TICKET(e),
     body: n,
     rejectWithError: true
   })).body.ticket
 }
-async function eI(e, t) {
+async function eS(e, t) {
   l.h.dispatch({
     type: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING",
     applicationId: e,
     refreshing: true
   });
   try {
-    let n = await eA(e, null != t ? t : true);
+    let n = await eI(e, null != t ? t : true);
     l.h.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET",
       applicationId: e,

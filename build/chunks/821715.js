@@ -4,15 +4,15 @@ require.d(exports, {
   A: () => o
 }), require("./896048.js"), require("./638769.js");
 var Chunk311907 = require("./311907.js"),
-  Chunk487329 = require("./487329.js"),
+  Chunk709710 = require("./709710.js"),
   Chunk161518 = require("./161518.js");
 let a = {
-  [Chunk487329.iy.STREAM_SOUNDSHARE_FAILED]: 0,
-  [Chunk487329.iy.STREAM_SEND_HIGH_PACKET_LOSS]: 1,
-  [Chunk487329.iy.STREAM_VIEW_HIGH_PACKET_LOSS]: 1,
-  [Chunk487329.iy.STREAM_SEND_LOW_FPS]: 2,
-  [Chunk487329.iy.STREAM_VIEW_LOW_FPS]: 2,
-  [Chunk487329.iy.STREAM_BAD_NETWORK_QUALITY]: 3
+  [Chunk709710.iy.STREAM_SOUNDSHARE_FAILED]: 0,
+  [Chunk709710.iy.STREAM_SEND_HIGH_PACKET_LOSS]: 1,
+  [Chunk709710.iy.STREAM_VIEW_HIGH_PACKET_LOSS]: 1,
+  [Chunk709710.iy.STREAM_SEND_LOW_FPS]: 2,
+  [Chunk709710.iy.STREAM_VIEW_LOW_FPS]: 2,
+  [Chunk709710.iy.STREAM_BAD_NETWORK_QUALITY]: 3
 };
 
 function o(e) {
