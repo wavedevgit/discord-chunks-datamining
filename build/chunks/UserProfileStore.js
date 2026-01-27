@@ -530,6 +530,7 @@ class em extends Chunk536802.A {
     return (null == t ? true : t.wishlistSettings) != null ? Object.keys(t.wishlistSettings) : []
   }
   getFirstWishlistId(e) {
+    if (null == e) return null;
     let t = this.getWishlistIds(e);
     return t.length > 0 ? t[0] : null
   }
