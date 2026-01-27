@@ -14,7 +14,7 @@ require.d(exports, {
 var r, Chunk214958 = require("./214958.js"),
   a = require.n(Chunk214958);
 let o = parseInt(null != (r = a().version) ? r : "0", 10),
-  s = true !== a().ua && a().ua.indexOf("OculusBrowser") > false,
+  s = null != a().ua && a().ua.indexOf("OculusBrowser") > false,
   l = (() => {
     if ("u" > typeof window && null == window.WebSocket) returnfalse;
     switch (a().name) {

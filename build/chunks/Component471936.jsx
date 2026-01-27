@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   t: () => T
-}), require("./747238.js"), require("./321073.js"), require("./65821.js"), require("./896048.js");
+}), require("./747238.js"), require("./321073.js"), require("./65821.js"), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk18051 = require("./18051.js"),
@@ -106,8 +106,9 @@ function v() {
 
 function A(e) {
   let {
-    setIsSafetyAccepted: t
-  } = e, [n, a] = i.useState([]), s = [{
+    setIsSafetyAccepted: t,
+    setIsHelmetSelected: n
+  } = e, [a, s] = i.useState([]), l = [{
     label: "I am wearing a helmet",
     value: "helmet"
   }, {
@@ -118,12 +119,12 @@ function A(e) {
     value: "training"
   }];
   return i.useEffect(() => {
-    t(n.length === s.length)
-  }, [n, s.length, t]), (0, r.jsx)(o.$QX, {
+    t(a.length === l.length), n(a.includes("helmet"))
+  }, [a, l.length, t, n]), (0, r.jsx)(o.$QX, {
     label: "Safety checklist",
-    options: s,
-    selectedValues: n,
-    onChange: a
+    options: l,
+    selectedValues: a,
+    onChange: s
   })
 }
 
@@ -141,46 +142,90 @@ function I(e) {
 }
 
 function S(e) {
-  let {} = e, t = h({}, e), [n, a] = i.useState("intro"), [s, l] = i.useState(false), [c, u] = i.useState(false), d = [{
+  let {
+    callbackDelay: t,
+    failOnNext: n,
+    failOnComplete: a,
+    onCompleteAlert: s,
+    onNextAlert: l,
+    customErrorNotice: c,
+    errorNoticeType: u
+  } = e, d = y(e, ["callbackDelay", "failOnNext", "failOnComplete", "onCompleteAlert", "onNextAlert", "customErrorNotice", "errorNoticeType"]), [f, p] = i.useState("intro"), [_, h] = i.useState(false), [g, E] = i.useState(false), [b, O] = i.useState(false), [S, T] = i.useState(null), C = i.useCallback(async () => {
+    if (T(null), t > 0 && await new Promise(e => setTimeout(e, 1e3 * t)), l && alert("onNext callback fired"), n) {
+      if ("" !== c.trim()) return T({
+        message: c,
+        type: u
+      }), false;
+      throw Error("onNext failed")
+    }
+    returntrue
+  }, [t, n, l, c, u]), N = i.useCallback(async () => {
+    if (T(null), t > 0 && await new Promise(e => setTimeout(e, 1e3 * t)), s && alert("onComplete callback fired"), a) {
+      if ("" !== c.trim()) throw T({
+        message: c,
+        type: u
+      }), Error("Custom error");
+      throw Error("onComplete failed")
+    }
+  }, [t, a, s, c, u]), w = [{
     stepKey: "intro",
     modalProps: {
       title: "Verify radness",
-      subtitle: "To verify your radness, we need to ask you a few deep and personal questions."
+      subtitle: "To verify your radness, we need to ask you a few deep and personal questions.",
+      notice: null != S ? {
+        message: S.message,
+        type: S.type
+      } : true
     },
     body: (0, r.jsx)(v, {}),
     nextButtonProps: {
       text: "Verify"
-    }
+    },
+    onNext: C
   }, {
     stepKey: "safety",
     modalProps: {
       title: "Safety first",
-      subtitle: "Before we get started verifying your radness, we need to make sure you're safe and sound."
+      subtitle: "Before we get started verifying your radness, we need to make sure you're safe and sound.",
+      notice: null != S ? {
+        message: S.message,
+        type: S.type
+      } : b ? {
+        message: "Great job, helmets are important for protecting your brain!",
+        type: "warning"
+      } : true
     },
     body: (0, r.jsx)(A, {
-      setIsSafetyAccepted: l
+      setIsSafetyAccepted: h,
+      setIsHelmetSelected: O
     }),
-    nextEnabled: s
+    nextEnabled: _,
+    onNext: C
   }, {
     stepKey: "passcode",
     modalProps: {
       title: "Enter passcode",
-      subtitle: "Enter your passcode to complete the radness verification process."
+      subtitle: "Enter your passcode to complete the radness verification process.",
+      notice: null != S ? {
+        message: S.message,
+        type: S.type
+      } : true
     },
     body: (0, r.jsx)(I, {
-      setIsPasscodeValid: u
+      setIsPasscodeValid: E
     }),
     nextButtonProps: {
       text: "Verify passcode"
     },
-    nextEnabled: c
-  }], f = d.slice(1).map(e => e.stepKey);
+    nextEnabled: g
+  }], R = w.slice(1).map(e => e.stepKey);
   return (0, r.jsx)(o.t04, m({
-    steps: d,
-    currentStepKey: n,
-    numberedSteps: f,
-    onStepChange: a
-  }, t))
+    steps: w,
+    currentStepKey: f,
+    numberedSteps: R,
+    onStepChange: p,
+    onComplete: N
+  }, d))
 }
 let T = {
   title: "Modal",
@@ -702,7 +747,15 @@ let T = {
     name: "MultiStepModal [Alpha]",
     id: "multi-step-modal",
     component: function(e) {
-      let {} = e, t = h({}, e);
+      let {
+        callbackDelay: t,
+        failOnNext: n,
+        failOnComplete: i,
+        onCompleteAlert: a,
+        onNextAlert: o,
+        customErrorNotice: s,
+        errorNoticeType: l
+      } = e;
       return (0, r.jsxs)(u.BJc, {
         gap: 16,
         align: "center",
@@ -712,11 +765,67 @@ let T = {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           text: "Open MultiStepModal",
-          onClick: () => (0, u.qfG)(e => (0, r.jsx)(S, m({}, e)), {
-            dismissable: t.dismissable
-          })
+          onClick: () => (0, u.qfG)(e => (0, r.jsx)(S, E(m({}, e), {
+            callbackDelay: t,
+            failOnNext: n,
+            failOnComplete: i,
+            onCompleteAlert: a,
+            onNextAlert: o,
+            customErrorNotice: s,
+            errorNoticeType: l
+          })))
         })]
       })
+    },
+    controls: {
+      callbackDelay: {
+        label: "Delay Callbacks (seconds)",
+        type: "number",
+        defaultValue: 0
+      },
+      failOnNext: {
+        label: "Fail onNext",
+        type: "boolean",
+        defaultValue: false
+      },
+      failOnComplete: {
+        label: "Fail onComplete",
+        type: "boolean",
+        defaultValue: false
+      },
+      onCompleteAlert: {
+        label: "onComplete Alert",
+        type: "boolean",
+        defaultValue: false
+      },
+      onNextAlert: {
+        label: "onNext Alert",
+        type: "boolean",
+        defaultValue: false
+      },
+      customErrorNotice: {
+        label: "Custom Error Notice",
+        type: "text",
+        defaultValue: ""
+      },
+      errorNoticeType: {
+        label: "Error Notice Type",
+        type: "select",
+        defaultValue: "critical",
+        options: [{
+          label: "Critical",
+          value: "critical"
+        }, {
+          label: "Warning",
+          value: "warning"
+        }, {
+          label: "Info",
+          value: "info"
+        }, {
+          label: "Success",
+          value: "success"
+        }]
+      }
     }
   }]
 }

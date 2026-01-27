@@ -15,6 +15,7 @@ let o = {
       CANCEL: "Cancel",
       BACK: "Back",
       NEXT: "Next",
+      SUBMIT: "Submit",
       SPINNER_LOADING_LABEL: "Loading",
       BUTTON_LOADING_STARTED_LABEL: "Loading",
       BUTTON_LOADING_FINISHED_LABEL: "Loading",

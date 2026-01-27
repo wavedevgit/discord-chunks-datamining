@@ -37,6 +37,7 @@ function N(e, t, n, r, o) {
         CANCEL: C.intl.string(C.t["ETE/oC"]),
         BACK: C.intl.string(C.t["13/7kX"]),
         NEXT: C.intl.string(C.t.PDTjLN),
+        SUBMIT: C.intl.string(C.t.geKm7t),
         SPINNER_LOADING_LABEL: C.intl.string(C.t.ZTNur7),
         BUTTON_LOADING_STARTED_LABEL: C.intl.string(C.t.pfChQr),
         BUTTON_LOADING_FINISHED_LABEL: C.intl.string(C.t.SVParY),
