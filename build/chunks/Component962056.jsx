@@ -2,14 +2,15 @@
 /** chunk id: 962056, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => c
+  T: () => u
 }), require("./896048.js"), require("./457529.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
+  Chunk295918 = require("./295918.js"),
   Chunk714026 = require("./714026.jsx"),
   Chunk723666 = require("./723666.jsx");
-let s = e => e,
-  l = {
+let l = e => e,
+  c = {
     id: "playground",
     children: [{
       block: "ContainedHero",
@@ -20,28 +21,28 @@ let s = e => e,
         block: "InteractiveHScroll",
         children: [{
           block: "ShopProductCard",
-          skuId: s("1458472704079434020")
+          skuId: l("1458472704079434020")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704167379109")
+          skuId: l("1458472704167379109")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704192811088")
+          skuId: l("1458472704192811088")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704222171347")
+          skuId: l("1458472704222171347")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704272498709")
+          skuId: l("1458472704272498709")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704306053202")
+          skuId: l("1458472704306053202")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704087818312")
+          skuId: l("1458472704087818312")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704096075816")
+          skuId: l("1458472704096075816")
         }]
       }]
     }, {
@@ -81,118 +82,165 @@ let s = e => e,
         columns: 6,
         children: [{
           block: "ShopProductCard",
-          skuId: s("1458472704167379109")
+          skuId: l("1458472704167379109")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704079434020")
+          skuId: l("1458472704079434020")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704251396148")
+          skuId: l("1458472704251396148")
         }, {
           block: "ShopProductCard",
-          skuId: s("1436367668788592782")
+          skuId: l("1436367668788592782")
         }, {
           block: "ShopProductCard",
-          skuId: s("1447654090439004170")
+          skuId: l("1447654090439004170")
         }, {
           block: "ShopProductCard",
-          skuId: s("1428438925021548544")
+          skuId: l("1428438925021548544")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704435945653")
+          skuId: l("1458472704435945653")
         }, {
           block: "ShopProductCard",
-          skuId: s("1428438924564631663")
+          skuId: l("1428438924564631663")
         }, {
           block: "ShopProductCard",
-          skuId: s("1144308439720394944")
+          skuId: l("1144308439720394944")
         }, {
           block: "ShopProductCard",
-          skuId: s("1432550258478682222")
+          skuId: l("1432550258478682222")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458483484598337682")
+          skuId: l("1458483484598337682")
         }, {
           block: "ShopProductCard",
-          skuId: s("1432550258126229565")
+          skuId: l("1432550258126229565")
         }, {
           block: "ShopProductCard",
-          skuId: s("1428438924539334718")
+          skuId: l("1428438924539334718")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704721158372")
+          skuId: l("1458472704721158372")
         }, {
           block: "ShopProductCard",
-          skuId: s("1447654090539667609")
+          skuId: l("1447654090539667609")
         }, {
           block: "ShopProductCard",
-          skuId: s("1333866045236314327")
+          skuId: l("1333866045236314327")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704524156959")
+          skuId: l("1458472704524156959")
         }, {
           block: "ShopProductCard",
-          skuId: s("1447654090556571799")
+          skuId: l("1447654090556571799")
         }, {
           block: "ShopProductCard",
-          skuId: s("1428438924648382626")
+          skuId: l("1428438924648382626")
         }, {
           block: "ShopProductCard",
-          skuId: s("1417311919643299840")
+          skuId: l("1417311919643299840")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704192811088")
+          skuId: l("1458472704192811088")
         }, {
           block: "ShopProductCard",
-          skuId: s("1432550258247995533")
+          skuId: l("1432550258247995533")
         }, {
           block: "ShopProductCard",
-          skuId: s("1212569433839636530")
+          skuId: l("1212569433839636530")
         }, {
           block: "ShopProductCard",
-          skuId: s("1447654090661302343")
+          skuId: l("1447654090661302343")
         }, {
           block: "ShopProductCard",
-          skuId: s("1432550258465837086")
+          skuId: l("1432550258465837086")
         }, {
           block: "ShopProductCard",
-          skuId: s("1447654090573217912")
+          skuId: l("1447654090573217912")
         }, {
           block: "ShopProductCard",
-          skuId: s("1280621222496964630")
+          skuId: l("1280621222496964630")
         }, {
           block: "ShopProductCard",
-          skuId: s("1447654090623549471")
+          skuId: l("1447654090623549471")
         }, {
           block: "ShopProductCard",
-          skuId: s("1436367668897775757")
+          skuId: l("1436367668897775757")
         }, {
           block: "ShopProductCard",
-          skuId: s("1458472704222171347")
+          skuId: l("1458472704222171347")
         }]
       }]
     }]
   },
-  c = {
+  u = {
     title: "Template Builder",
     stories: [{
       name: "Template Builder",
       id: "template-builder",
       component: () => {
-        let [e, t] = i.useState(JSON.stringify(l, null, 2)), [n, s] = i.useState(e);
+        let [e, t] = i.useState(JSON.stringify(c, null, 2)), [n, a] = i.useState(e);
         return i.useEffect(() => {
           try {
-            (0, o.d)(JSON.parse(e)) && s(e)
+            (0, s.d)(JSON.parse(e)) && a(e)
           } catch (e) {}
         }, [e]), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(a.A, {
+          children: [(0, r.jsx)(o.A, {
             value: e,
             onChange: e => t(e)
-          }), (0, r.jsx)("hr", {}), (0, r.jsx)(o.A, {
+          }), (0, r.jsx)("hr", {}), (0, r.jsx)(s.A, {
             template: JSON.parse(n)
           })]
         })
       },
       controls: {}
+    }, {
+      name: "Shop Index Page (sample)",
+      id: "shop-index-page",
+      component: e => {
+        let {
+          collectionId: t
+        } = e, {
+          isFetching: n,
+          category: o
+        } = (0, a.U)(t), l = i.useMemo(() => {
+          var e, t, n, r, i;
+          let a = null == o || null == (i = o.styles) || null == (r = i.backgroundColors) ? true : r[0];
+          return {
+            id: "shop-index-page",
+            children: [{
+              block: "Section",
+              children: [{
+                block: "ContainedHero",
+                bannerSrc: null != (e = null == o ? true : o.catalogBannerUrl) ? e : "",
+                backgroundColor: null != (t = null == a ? true : a.toHexString()) ? t : "red"
+              }]
+            }, {
+              block: "Section",
+              children: [{
+                block: "Grid",
+                columns: 3,
+                children: null != (n = null == o ? true : o.products.map(e => ({
+                  block: "ShopProductCard",
+                  skuId: e.skuId
+                }))) ? n : []
+              }]
+            }]
+          }
+        }, [o]);
+        return n ? (0, r.jsx)("div", {
+          children: "Loading..."
+        }) : (0, r.jsx)(s.A, {
+          template: l
+        })
+      },
+      controls: {
+        collectionId: {
+          label: "Collection Id",
+          type: "text",
+          defaultValue: "1458472704079434020"
+        }
+      }
     }]
   }
