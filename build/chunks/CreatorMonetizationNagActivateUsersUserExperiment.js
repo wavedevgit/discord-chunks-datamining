@@ -4,8 +4,7 @@
 require.d(exports, {
   i$: () => i,
   wm: () => o,
-  xQ: () => a,
-  yz: () => s
+  xQ: () => a
 });
 var Chunk600975 = require("./600975.js");
 let i = (0, Chunk600975.C)({
@@ -50,21 +49,6 @@ let i = (0, Chunk600975.C)({
       label: "Enables users to see nag bar to activate server subscriptions",
       config: {
         enableCreatorMonetizationNagActivateForUser: true
-      }
-    }]
-  }),
-  s = (0, Chunk600975.C)({
-    kind: "guild",
-    id: "2025-08_move_role_subscriptions_onboarding_from_server_settings_",
-    label: "Move Role Subscriptions Onboarding From Server Settings",
-    defaultConfig: {
-      hideMonetizatonOnboardingInServerSettings: false
-    },
-    treatments: [{
-      id: 1,
-      label: "Only shows onboarding page if first visited from new home",
-      config: {
-        hideMonetizatonOnboardingInServerSettings: true
       }
     }]
   })

@@ -2,8 +2,8 @@
 /** chunk id: 114028, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => M
-});
+  A: () => j
+}), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
@@ -66,9 +66,10 @@ function N(e, t) {
   }), e
 }
 let w = [8, 8, 8, 8],
-  R = 40;
+  R = 40,
+  P = 50;
 
-function P(e) {
+function D(e) {
   let {
     icon: t,
     isSelected: n,
@@ -87,24 +88,24 @@ function P(e) {
   }))
 }
 
-function D(e, t, n, i, a) {
+function L(e, t, n, i, a) {
   switch (e.categoryInfo.type) {
     case E.Cx.FAVORITES:
-      return (0, r.jsx)(P, {
+      return (0, r.jsx)(D, {
         icon: u.Gg5,
         onClick: t,
         isSelected: n,
         listItemProps: i
       }, e.key);
     case E.Cx.RECENTLY_HEARD:
-      return (0, r.jsx)(P, {
+      return (0, r.jsx)(D, {
         icon: u.O4,
         onClick: t,
         isSelected: n,
         listItemProps: i
       }, e.key);
     case E.Cx.FREQUENTLY_USED:
-      return (0, r.jsx)(P, {
+      return (0, r.jsx)(D, {
         icon: u.Uy2,
         onClick: t,
         isSelected: n,
@@ -121,7 +122,7 @@ function D(e, t, n, i, a) {
         })
       }), e.key);
     case E.Cx.DEFAULTS:
-      return (0, r.jsx)(P, {
+      return (0, r.jsx)(D, {
         icon: u.pVd,
         onClick: t,
         isSelected: n,
@@ -132,7 +133,7 @@ function D(e, t, n, i, a) {
   }
 }
 
-function L(e) {
+function x(e) {
   switch (e.categoryInfo.type) {
     case E.Cx.FAVORITES:
       return A.intl.string(A.t.k8fFjp);
@@ -147,7 +148,7 @@ function L(e) {
   }
 }
 
-function x(e) {
+function M(e) {
   let {
     category: t,
     categoryIndex: n,
@@ -157,16 +158,16 @@ function x(e) {
   } = e, l = (0, s.rm)("soundboard_guild_".concat(n));
   return t.categoryInfo.type === E.Cx.GUILD ? (0, r.jsx)(_.Q, {
     guild: t.categoryInfo.guild,
-    children: D(t, i, a, l, o)
+    children: L(t, i, a, l, o)
   }) : (0, r.jsx)(c.m_, {
-    text: L(t),
+    text: x(t),
     position: "right",
     align: "center",
-    children: D(t, i, a, l, o)
+    children: L(t, i, a, l, o)
   })
 }
 
-function M(e) {
+function j(e) {
   let {
     soundboardListRef: t,
     categories: n,
@@ -174,13 +175,15 @@ function M(e) {
     listPadding: o = w,
     guildId: s,
     inExpressionPicker: c,
-    showPinnedDefaultsShortcut: d = false
-  } = e, _ = i.useRef(null), E = (0, l.bG)([h.default], () => h.default.getCurrentUser()), S = (0, g.TW)(E, v.PremiumTypes.TIER_2), T = i.useCallback(e => {
-    var r;
-    let i = n.length - 1;
-    e(i), null == (r = t.current) || r.scrollToSectionTop(i)
-  }, [n.length, t]), C = i.useCallback((e, t, n, i) => {
-    let o = a && (0, y.B)(e.categoryInfo, S, s),
+    showPinnedDefaultsShortcut: d = false,
+    defaultsSectionIndex: _ = false
+  } = e, E = i.useRef(null), S = (0, l.bG)([h.default], () => h.default.getCurrentUser()), T = (0, g.TW)(S, v.PremiumTypes.TIER_2), C = i.useCallback(e => {
+    if (_ >= 0) {
+      var n;
+      e(_), null == (n = t.current) || n.scrollToSectionTop(_)
+    }
+  }, [_, t]), N = i.useCallback(e => d ? P : 0, [d]), D = i.useCallback((e, t, n, i) => {
+    let o = a && (0, y.B)(e.categoryInfo, T, s),
       l = () => {
         m.default.track(b.HAw.EXPRESSION_PICKER_CATEGORY_SELECTED, {
           location: {
@@ -193,28 +196,29 @@ function M(e) {
           pack_id: null
         }), n()
       };
-    return (0, r.jsx)(x, {
+    return (0, r.jsx)(M, {
       category: e,
       categoryIndex: t,
       onClick: l,
       isSelected: i,
       isNitroLocked: o
     })
-  }, [s, a, S]);
-  return (0, r.jsx)(p.A, {
+  }, [s, a, T]);
+  return d && ((o = [...o])[2] = P), (0, r.jsx)(p.A, {
     className: c ? I.HZ : I.jv,
-    categoryListRef: _,
+    categoryListRef: E,
     expressionsListRef: t,
     store: f.LW,
     categories: n,
     listPadding: o,
-    renderCategoryListItem: C,
+    renderCategoryListItem: D,
     rowCount: n.length,
     categoryHeight: R,
+    getScrollOffsetForIndex: N,
     children: e => d && (0, r.jsx)(u.DUT, {
       "aria-label": A.intl.string(A.t.Rtvk9X),
       className: I.xe,
-      onClick: () => T(e),
+      onClick: () => C(e),
       children: (0, r.jsx)(u.pVd, {
         size: "custom",
         width: 24,

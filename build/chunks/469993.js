@@ -8,7 +8,6 @@ require.d(exports, {
   ME: () => d,
   Sm: () => f,
   Z1: () => o,
-  Zy: () => m,
   oS: () => a
 });
 var Chunk967245 = require("./967245.js"),
@@ -93,16 +92,4 @@ function h() {
     autoTrackExposure: true
   });
   return e
-}
-
-function m(e) {
-  let {
-    hideMonetizatonOnboardingInServerSettings: t
-  } = r.yz.getCurrentConfig({
-    guildId: null != e ? e : i.dJq,
-    location: "e3bb71_12"
-  }, {
-    autoTrackExposure: false
-  });
-  return t
 }
