@@ -2,18 +2,15 @@
 /** chunk id: 23974, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => h
-}), require("./228524.js"), require("./65821.js");
+  f: () => d
+}), require("./228524.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
   Chunk311907 = require("./311907.js"),
-  Chunk118356 = require("./118356.js"),
   Chunk73153 = require("./73153.js"),
-  Chunk867051 = require("./867051.js"),
-  Chunk403362 = require("./403362.js"),
-  Chunk747465 = require("./747465.js");
+  Chunk867051 = require("./867051.js");
 
-function d(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,60 +18,23 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = new Chunk118356.Vy("KvStore"),
-  p = Object.prototype.hasOwnProperty,
-  _ = Symbol("version");
-class h extends Chunk311907.il {
-  getMode() {
-    return this.mode
-  }
-  registerWithLibdiscore(e) {
-    let t;
-    switch (this.mode) {
-      case "typescript-libdiscore-dual-read":
-        this.shadowState = {
-          root: {},
-          derived: {
-            length: 0,
-            memoized: {}
-          }
-        }, t = e => {
-          this.shadowState = e
-        }, this.addChangeListener(() => {
-          let e = this.shadowState;
-          i()(null != e, "Shadow state must be set in dual-read mode before running validation."), (0, u.R7)(this.getName(), "Kv", t => {
-            t(this.state, e)
-          })
-        });
-        break;
-      case "libdiscore":
-        t = this.setKvState.bind(this);
-        break;
-      case "typescript":
-        throw Error("This method should not be called in TypeScript mode.");
-      default:
-        (0, c.xb)(this.mode)
-    }
-    let {
-      state: n,
-      storeToken: r
-    } = e.registerKvStore(this.getName());
-    return t(n), r
-  }
+let c = Object.prototype.hasOwnProperty,
+  u = Symbol("version");
+class d extends Chunk311907.il {
   memoized(e) {
     let t = Symbol();
     return () => {
       let {
         memoized: n
       } = this.state.derived, r = n[t];
-      return p.call(n, t) || (r = e(this.state.root), n[t] = r), r
+      return c.call(n, t) || (r = e(this.state.root), n[t] = r), r
     }
   }
   version() {
     let {
       memoized: e
-    } = this.state.derived, t = e[_];
-    return null == t && (e[_] = t = ++this.nextVersion), t
+    } = this.state.derived, t = e[u];
+    return null == t && (e[u] = t = ++this.nextVersion), t
   }
   get(e) {
     return this.state.root[e]
@@ -85,57 +45,55 @@ class h extends Chunk311907.il {
   length() {
     return this.state.derived.length
   }
-  constructor(e, t = "typescript") {
-    const n = {};
-    if ("typescript" == (t = "typescript") || "typescript-libdiscore-dual-read" === t) {
-      let t = false;
-      const r = {
-        reset: e => {
-          let n = {};
-          "function" == typeof e ? e(n = {}, this.state.root) : null != e && (n = e), this.setKvState({
-            root: n,
-            derived: {
-              length: Object.keys(n).length,
-              memoized: {}
-            }
-          }), t = true
-        },
-        get: e => this.state.root[e],
-        set: (e, n) => {
-          let r = this.state.root[e];
-          if ("function" == typeof n && (n = n(r)), true !== r && (0, l.Kl)(r, n)) returnfalse;
-          this.state.root[e] = n;
-          let {
-            derived: i
-          } = this.state;
-          return true === r && i.length++, i.memoized = {}, t = true, true
-        },
-        remove: e => {
-          let n = p.call(this.state.root, e);
-          if (n) {
-            delete this.state.root[e];
-            let {
-              derived: n
-            } = this.state;
-            n.length--, n.memoized = {}, t = true
+  constructor(e) {
+    const t = {};
+    let n = false;
+    const r = {
+      reset: e => {
+        let t = {};
+        "function" == typeof e ? e(t = {}, this.state.root) : null != e && (t = e), this.setKvState({
+          root: t,
+          derived: {
+            length: Object.keys(t).length,
+            memoized: {}
           }
-          return n
+        }), n = true
+      },
+      get: e => this.state.root[e],
+      set: (e, t) => {
+        let r = this.state.root[e];
+        if ("function" == typeof t && (t = t(r)), true !== r && (0, s.Kl)(r, t)) returnfalse;
+        this.state.root[e] = t;
+        let {
+          derived: i
+        } = this.state;
+        return true === r && i.length++, i.memoized = {}, n = true, true
+      },
+      remove: e => {
+        let t = c.call(this.state.root, e);
+        if (t) {
+          delete this.state.root[e];
+          let {
+            derived: t
+          } = this.state;
+          t.length--, t.memoized = {}, n = true
         }
-      };
-      for (const i in e) {
-        const a = e[i],
-          o = e => {
-            if (t = false, a(e, r), !t) returnfalse
-          };
-        n[i] = o
+        return t
       }
+    };
+    for (const i in e) {
+      const a = e[i],
+        o = e => {
+          if (n = false, a(e, r), !n) returnfalse
+        };
+      t[i] = o
     }
-    super(s.h, n), d(this, "shadowState", null), d(this, "mode", true), d(this, "state", {
+    super(o.h, t), l(this, "state", {
       derived: {
         length: 0,
         memoized: {}
       },
       root: {}
-    }), d(this, "nextVersion", 0), this.mode = t, f.info("".concat(this.getName(), " initialized in mode: ").concat(this.mode))
+    }), l(this, "nextVersion", 0)
   }
 }

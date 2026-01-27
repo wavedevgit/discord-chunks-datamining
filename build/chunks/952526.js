@@ -2,18 +2,13 @@
 /** chunk id: 952526, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => y
+  U: () => p
 }), require("./228524.js"), require("./896048.js"), require("./321073.js"), require("./65821.js");
-var Chunk284009 = require("./284009.js"),
-  i = require.n(Chunk284009),
-  Chunk311907 = require("./311907.js"),
-  Chunk118356 = require("./118356.js"),
+var Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
-  Chunk867051 = require("./867051.js"),
-  Chunk403362 = require("./403362.js"),
-  Chunk747465 = require("./747465.js");
+  Chunk867051 = require("./867051.js");
 
-function d(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,32 +16,31 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = new Chunk118356.Vy("KkvStore"),
-  p = Symbol("version"),
-  _ = Symbol("boxedPartition"),
-  h = Object.freeze({}),
-  m = Object.freeze({
-    current: h,
+let s = Symbol("version"),
+  l = Symbol("boxedPartition"),
+  c = Object.freeze({}),
+  u = Object.freeze({
+    current: c,
     length: 0,
     version: false
   }),
-  g = Object.hasOwnProperty;
+  d = Object.hasOwnProperty;
 
-function E(e, t) {
+function f(e, t) {
   if (e === t) returntrue;
   let n = Object.keys(e),
     r = Object.keys(t);
   if (n.length !== r.length) returnfalse;
   for (let r of n) {
     let n = r;
-    if (!g.call(t, r) || !(0, l.Kl)(e[n], t[n])) returnfalse
+    if (!d.call(t, r) || !(0, a.Kl)(e[n], t[n])) returnfalse
   }
   returntrue
 }
-class y extends Chunk311907.il {
+class p extends Chunk311907.il {
   _derivedVersion(e) {
-    let t = e[p];
-    return null == t && (e[p] = t = this.nextVersion++), t
+    let t = e[s];
+    return null == t && (e[s] = t = this.nextVersion++), t
   }
   mapPartitions(e) {
     let t = [],
@@ -58,70 +52,6 @@ class y extends Chunk311907.il {
       values: e(n[r].root, r)
     });
     return t
-  }
-  getMode() {
-    return this.mode
-  }
-  registerWithLibdiscore(e) {
-    let t;
-    switch (this.mode) {
-      case "typescript-libdiscore-dual-read": {
-        this.shadowState = {
-          root: {},
-          derived: {
-            length: 0,
-            numPartitions: 0,
-            memoized: {}
-          }
-        }, t = e => {
-          i()(null != this.shadowState, "Shadow state must be set in dual-read mode before setting derived data."), this.shadowState = e
-        };
-        let e = Symbol(),
-          n = {
-            root: {},
-            derived: {
-              length: 0,
-              memoized: {}
-            }
-          };
-        this.addChangeListener(() => {
-          let t = this.shadowState;
-          i()(null != t, "Shadow state must be set in dual-read mode before running validation."), (0, u.R7)(this.getName(), "Kkv", r => {
-            let {
-              root: i
-            } = this.state, a = Object.keys(i), o = Object.keys(t.root);
-            for (let o of a) {
-              if (!Object.prototype.hasOwnProperty.call(t.root, o)) {
-                r(i[o], n);
-                continue
-              }
-              let a = i[o],
-                s = t.root[o],
-                l = a.derived.memoized[e],
-                c = s.derived.memoized[e];
-              if (null != l && l === c) continue;
-              r(a, s);
-              let u = {};
-              a.derived.memoized[e] = u, s.derived.memoized[e] = u
-            }
-            for (let e of o) Object.prototype.hasOwnProperty.call(i, e) || r(n, t.root[e])
-          })
-        });
-        break
-      }
-      case "libdiscore":
-        t = this.setKkvState.bind(this);
-        break;
-      case "typescript":
-        throw Error("This method should not be called in TypeScript mode.");
-      default:
-        (0, c.xb)(this.mode)
-    }
-    let {
-      storeToken: n,
-      state: r
-    } = e.registerKkvStore(this.getName());
-    return t(r), n
   }
   version() {
     return this._derivedVersion(this.state.derived.memoized)
@@ -146,22 +76,22 @@ class y extends Chunk311907.il {
   }
   getPartition(e) {
     let t = this.state.root[e];
-    return null != t ? t.root : h
+    return null != t ? t.root : c
   }
   getPartitionKeys() {
     return Object.keys(this.state.root)
   }
   getBoxedPartition(e) {
     let t = this.state.root[e];
-    if (null == t) return m;
+    if (null == t) return u;
     let {
       root: n,
       derived: {
         memoized: r,
         length: i
       }
-    } = t, a = r[_];
-    return null == a && (r[_] = a = {
+    } = t, a = r[l];
+    return null == a && (r[l] = a = {
       current: n,
       version: this._derivedVersion(r),
       length: i
@@ -193,7 +123,7 @@ class y extends Chunk311907.il {
           memoized: o
         }
       } = i, s = o[n];
-      return g.call(o, n) || (s = e(t, a), o[n] = s), s
+      return d.call(o, n) || (s = e(t, a), o[n] = s), s
     }
   }
   memoized(e) {
@@ -202,7 +132,7 @@ class y extends Chunk311907.il {
       let {
         memoized: n
       } = this.state.derived, r = n[t];
-      return g.call(n, t) || (r = e(this.state.root), n[t] = r), r
+      return d.call(n, t) || (r = e(this.state.root), n[t] = r), r
     }
   }
   memoizedSecondaryIndex() {
@@ -236,132 +166,130 @@ class y extends Chunk311907.il {
     }
     return t
   }
-  constructor(e, t = "typescript") {
-    const n = {};
-    if ("typescript" == (t = "typescript") || "typescript-libdiscore-dual-read" === t) {
-      let t = false;
-      const r = {
-        getPartitionKeys: () => Object.keys(this.state.root),
-        reset: e => {
-          let n = {};
-          "function" == typeof e ? e(n, this.state.root) : null != e && (n = e);
-          let r = {},
-            i = 0,
-            a = 0;
-          for (let e in n) {
-            let t = Object.keys(n[e]).length;
-            i++, a += t, r[e] = {
-              root: n[e],
-              derived: {
-                length: t,
-                memoized: {}
-              }
-            }
-          }(0 !== a || 0 !== this.state.derived.length) && (t = true, this.setKkvState({
-            root: r,
+  constructor(e) {
+    const t = {};
+    let n = false;
+    const r = {
+      getPartitionKeys: () => Object.keys(this.state.root),
+      reset: e => {
+        let t = {};
+        "function" == typeof e ? e(t, this.state.root) : null != e && (t = e);
+        let r = {},
+          i = 0,
+          a = 0;
+        for (let e in t) {
+          let n = Object.keys(t[e]).length;
+          i++, a += n, r[e] = {
+            root: t[e],
             derived: {
-              memoized: {},
-              numPartitions: i,
-              length: a
+              length: n,
+              memoized: {}
             }
-          }))
-        },
-        set: (e, n, r) => {
-          let i = this.state.root[e];
-          if (null == i) {
-            r = "function" == typeof r ? r(true) : r, this.state.root[e] = {
-              root: {
-                [n]: r
-              },
-              derived: {
-                length: 1,
-                memoized: {}
-              }
-            };
-            let {
-              derived: i
-            } = this.state;
-            return i.numPartitions++, i.length++, t = true, true
           }
-          let a = i.root[n];
-          return "function" == typeof r && (r = r(a)), !(true !== a && (0, l.Kl)(a, r)) && (i.root[n] = r, true === a && (i.derived.length++, this.state.derived.length++), i.derived.memoized = {}, t = true, true)
-        },
-        setPartition: (e, n) => {
-          let r = this.state.root[e];
-          if (null == r) {
-            "function" == typeof n && (n = n(true));
-            let r = Object.keys(n).length;
-            if (0 === r) returnfalse;
-            let {
-              root: i,
-              derived: a
-            } = this.state;
-            return i[e] = {
-              root: n,
-              derived: {
-                length: r,
-                memoized: {}
-              }
-            }, a.numPartitions++, a.length += r, t = true, true
+        }(0 !== a || 0 !== this.state.derived.length) && (n = true, this.setKkvState({
+          root: r,
+          derived: {
+            memoized: {},
+            numPartitions: i,
+            length: a
           }
-          if ("function" == typeof n && (n = n(r.root)), E(r.root, n)) returnfalse;
-          let i = Object.keys(n).length,
-            a = r.derived.length;
-          if (this.state.derived.length -= a, 0 === i) delete this.state.root[e], this.state.derived.numPartitions--;
-          else {
-            let {
-              root: t,
-              derived: r
-            } = this.state;
-            t[e] = {
-              root: n,
-              derived: {
-                length: i,
-                memoized: {}
-              }
-            }, r.length += i
-          }
-          return t = true, true
-        },
-        get: (e, t) => {
-          var n;
-          return null == (n = this.state.root[e]) ? true : n.root[t]
-        },
-        getPartition: e => {
-          var t;
-          return null == (t = this.state.root[e]) ? true : t.root
-        },
-        remove: (e, n) => {
-          let r = this.state.root[e];
-          return null != r && true !== r.root[n] && (delete r.root[n], r.derived.length--, 0 === r.derived.length ? (delete this.state.root[e], this.state.derived.numPartitions--) : r.derived.memoized = {}, this.state.derived.length--, t = true, true)
-        },
-        removePartition: e => {
-          let n = this.state.root[e];
-          if (null == n) returnfalse;
-          let r = n.derived.length,
-            {
-              root: i,
-              derived: a
-            } = this.state;
-          return delete i[e], a.numPartitions--, a.length -= r, t = true, true
-        }
-      };
-      for (const i in e) {
-        const a = e[i],
-          o = e => {
-            if (t = false, a(e, r), !t) returnfalse;
-            this.state.derived.memoized = {}
+        }))
+      },
+      set: (e, t, r) => {
+        let i = this.state.root[e];
+        if (null == i) {
+          r = "function" == typeof r ? r(true) : r, this.state.root[e] = {
+            root: {
+              [t]: r
+            },
+            derived: {
+              length: 1,
+              memoized: {}
+            }
           };
-        n[i] = o
+          let {
+            derived: i
+          } = this.state;
+          return i.numPartitions++, i.length++, n = true, true
+        }
+        let o = i.root[t];
+        return "function" == typeof r && (r = r(o)), !(true !== o && (0, a.Kl)(o, r)) && (i.root[t] = r, true === o && (i.derived.length++, this.state.derived.length++), i.derived.memoized = {}, n = true, true)
+      },
+      setPartition: (e, t) => {
+        let r = this.state.root[e];
+        if (null == r) {
+          "function" == typeof t && (t = t(true));
+          let r = Object.keys(t).length;
+          if (0 === r) returnfalse;
+          let {
+            root: i,
+            derived: a
+          } = this.state;
+          return i[e] = {
+            root: t,
+            derived: {
+              length: r,
+              memoized: {}
+            }
+          }, a.numPartitions++, a.length += r, n = true, true
+        }
+        if ("function" == typeof t && (t = t(r.root)), f(r.root, t)) returnfalse;
+        let i = Object.keys(t).length,
+          a = r.derived.length;
+        if (this.state.derived.length -= a, 0 === i) delete this.state.root[e], this.state.derived.numPartitions--;
+        else {
+          let {
+            root: n,
+            derived: r
+          } = this.state;
+          n[e] = {
+            root: t,
+            derived: {
+              length: i,
+              memoized: {}
+            }
+          }, r.length += i
+        }
+        return n = true, true
+      },
+      get: (e, t) => {
+        var n;
+        return null == (n = this.state.root[e]) ? true : n.root[t]
+      },
+      getPartition: e => {
+        var t;
+        return null == (t = this.state.root[e]) ? true : t.root
+      },
+      remove: (e, t) => {
+        let r = this.state.root[e];
+        return null != r && true !== r.root[t] && (delete r.root[t], r.derived.length--, 0 === r.derived.length ? (delete this.state.root[e], this.state.derived.numPartitions--) : r.derived.memoized = {}, this.state.derived.length--, n = true, true)
+      },
+      removePartition: e => {
+        let t = this.state.root[e];
+        if (null == t) returnfalse;
+        let r = t.derived.length,
+          {
+            root: i,
+            derived: a
+          } = this.state;
+        return delete i[e], a.numPartitions--, a.length -= r, n = true, true
       }
+    };
+    for (const i in e) {
+      const a = e[i],
+        o = e => {
+          if (n = false, a(e, r), !n) returnfalse;
+          this.state.derived.memoized = {}
+        };
+      t[i] = o
     }
-    super(s.h, n), d(this, "state", {
+    super(i.h, t), o(this, "state", {
       root: {},
       derived: {
         numPartitions: 0,
         length: 0,
         memoized: {}
       }
-    }), d(this, "shadowState", null), d(this, "mode", true), d(this, "nextVersion", 0), this.mode = t, f.info("".concat(this.getName(), " initialized in mode: ").concat(this.mode))
+    }), o(this, "nextVersion", 0)
   }
 }
