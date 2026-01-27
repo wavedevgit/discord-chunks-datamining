@@ -142,8 +142,8 @@ function x(e) {
       disabled: L,
       onContextMenu: W,
       onClick: z,
-      onMouseEnter: () => {
-        H(), T()
+      onMouseEnter: e => {
+        T(), "focus" !== e.type && H()
       },
       onMouseLeave: () => {
         null == E && (K(), P())
