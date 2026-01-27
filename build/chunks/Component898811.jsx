@@ -1,5 +1,5 @@
 /** Chunk was on 84264 **/
-/** chunk id: 898811, original params: n,e,t (module,exports,require) **/
+/** chunk id: 898811, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
   default: () => s
 });
@@ -14,22 +14,22 @@ var Chunk397927 = require("./397927.js"),
 
 function s(n) {
   let {
-    text: e,
-    onSelect: t
-  } = n, s = (0, r.A)(e);
+    text: t,
+    onSelect: e
+  } = n, s = (0, r.A)(t);
   return c.isPlatformEmbedded ? (0, l.jsxs)(o.W1t, {
-    "data-menu-mixed-auto": true,
+    "data-menu-migrated-auto": true,
     navId: "text-context",
     onClose: a.Z_,
     "aria-label": d.intl.string(d.t.s285pq),
-    onSelect: t,
+    onSelect: e,
     children: [(0, l.jsx)(o.rXV, {
       children: s
     }), (0, l.jsx)(o.rXV, {
       children: (0, l.jsx)(o.Drp, {
         id: "copy",
         label: d.intl.string(d.t.OpuAlK),
-        action: () => i.Ay.copy(e)
+        action: () => i.Ay.copy(t)
       })
     })]
   }) : null

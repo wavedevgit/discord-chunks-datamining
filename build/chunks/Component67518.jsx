@@ -63,6 +63,11 @@ function u(e) {
   return (0, r.jsx)(i.Drp, {
     id: "game-profile-something-wrong",
     label: a.intl.string(a.t.qP2cXd),
-    action: t
+    action: t,
+    color: "danger",
+    leadingAccessory: {
+      type: "icon",
+      icon: i.EpV
+    }
   })
 }

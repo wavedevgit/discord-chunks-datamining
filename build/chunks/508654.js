@@ -1,7 +1,7 @@
 /** Chunk was on 93952 **/
 /** chunk id: 508654, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => p,
+  Ay: () => O,
   BP: () => N,
   Qs: () => v,
   RO: () => T,
@@ -24,9 +24,9 @@ var Chunk64700 = require("./64700.js"),
   Chunk988794 = require("./988794.js"),
   Chunk652215 = require("./652215.js");
 let g = [],
-  O = 15 * Chunk927813.A.Millis.MINUTE;
+  p = 15 * Chunk927813.A.Millis.MINUTE;
 
-function p(e, t) {
+function O(e, t) {
   return (0, l.yK)([u.A, c.Ay, a.A, i.A], () => {
     let n = u.A.getGuild(e);
     return null == n ? g : c.Ay.getGuildScheduledEventsByIndex(null != t ? t : c.ej.GUILD_EVENT_UPCOMING(n.id)).filter(e => {
@@ -102,8 +102,8 @@ function h(e) {
       }), n
     }, {}), [n]),
     g = (0, l.bG)([u.A], () => u.A.getGuild(e)),
-    O = null != g && !g.features.has(y.GuildFeatures.COMMUNITY) && g.features.has(y.GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
-  if (null != n && null != A && O)
+    p = null != g && !g.features.has(y.GuildFeatures.COMMUNITY) && g.features.has(y.GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
+  if (null != n && null != A && p)
     for (let e = 0; e < n.length; e++) {
       let l = n[e],
         i = r[l.id],
@@ -142,7 +142,7 @@ function T(e) {
   r.useEffect(() => {
     let e = setInterval(() => {
       n(Date.now())
-    }, O);
+    }, p);
     return () => clearInterval(e)
   }, []);
   let i = (0, l.bG)([c.Ay], () => null == e ? [] : c.Ay.getGuildScheduledEventsByIndex(c.ej.CHANNEL_EVENT_UPCOMING(e)), [e, t]);

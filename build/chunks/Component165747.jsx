@@ -19,15 +19,15 @@ function o(t) {
     onSelect: o
   } = t, p = [], c = (0, r.A)(l, n, u.BEX.INTEGRATIONS);
   null != c && p.push(c);
-  let h = (0, a.A)({
+  let h = (0, s.A)({
     id: n.id,
     label: d.intl.string(d.t.sMsaLg)
   });
   return (null != h && p.push(h), 0 === p.length) ? null : (0, e.jsx)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "guild-integrations-permission-role-context",
     "aria-label": d.intl.string(d.t["337Ja9"]),
-    onClose: s.Z_,
+    onClose: a.Z_,
     onSelect: o,
     children: p
   })

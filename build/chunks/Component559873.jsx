@@ -1,4 +1,4 @@
-/** Chunk was on 41727 **/
+/** Chunk was on 77870 **/
 /** chunk id: 559873, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => I
@@ -185,7 +185,7 @@ let S = {
         savedMessage: l
       });
       return (0, r.jsxs)(a.W1t, v(j({
-        "data-menu-mixed": true
+        "data-menu-migrated-auto": true
       }, n), {
         navId: "message-reminder-create",
         "aria-label": _.intl.string(_.t.mJ3P0N),
@@ -195,6 +195,10 @@ let S = {
           id: "remove-from-for-later",
           label: _.intl.string(_.t.SvXS1Z),
           icon: a.cFy,
+          leadingAccessory: {
+            type: "icon",
+            icon: a.cFy
+          },
           action: () => (0, p.x)({
             channelId: t.channel_id,
             messageId: t.id,
@@ -205,6 +209,10 @@ let S = {
           id: "create-bookmark",
           label: _.intl.string(_.t["9p3D9p"]),
           icon: a.c$8,
+          leadingAccessory: {
+            type: "icon",
+            icon: a.c$8
+          },
           action: () => (0, p.Y)({
             channelId: t.channel_id,
             messageId: t.id,

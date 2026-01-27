@@ -35,9 +35,9 @@ function O(e) {
   r.useEffect(() => {
     null != w && o.A.requestMembersById(n.id, w)
   }, [n.id, w]);
-  let T = r.useMemo(() => l.kg(_.permissions, ...N.map(e => e.permissions)), [N, _]);
+  let E = r.useMemo(() => l.kg(_.permissions, ...N.map(e => e.permissions)), [N, _]);
   if (null == A) return null;
-  let E = h.Ay.getApplicationIconURL({
+  let T = h.Ay.getApplicationIconURL({
     id: y.id,
     guildMember: v,
     bot: y.bot,
@@ -53,7 +53,7 @@ function O(e) {
         align: p.A.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
-          src: E,
+          src: T,
           className: j.P0
         }), (0, i.jsx)(s.Text, {
           color: "text-strong",
@@ -91,7 +91,7 @@ function O(e) {
             disabledPermissionsHeader: x.intl.string(x.t["/rEZ2i"])
           }) : null]
         })
-      }(A, n, null != (t = null == v ? true : v.roles) ? t : [], T)]
+      }(A, n, null != (t = null == v ? true : v.roles) ? t : [], E)]
     })
   })
 }

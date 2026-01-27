@@ -37,52 +37,60 @@ function b(e) {
     guild: n,
     channel: r,
     stageInstance: i
-  } = e, o = (0, c.bG)([a.A], () => (0, l.K)(a.A, n, r, i)), u = O(t, n, r), s = f(t, r);
-  return o ? u : s
+  } = e, a = (0, c.bG)([l.A], () => (0, o.K)(l.A, n, r, i)), u = O(t, n, r), s = y(t, r);
+  return a ? u : s
 }
 
 function p(e, t) {
-  return null != t && [o.PE1.GUILD_HEADER, o.PE1.GUILD_CONTEXT_MENU].includes(t) || null == e ? u.intl.string(u.t.Sd8Ixw) : e.type === o.rbe.GUILD_VOICE ? u.intl.string(u.t["EE+P0H"]) : u.intl.string(u.t["0jeAXt"])
+  return null != t && [a.PE1.GUILD_HEADER, a.PE1.GUILD_CONTEXT_MENU].includes(t) || null == e ? u.intl.string(u.t.Sd8Ixw) : e.type === a.rbe.GUILD_VOICE ? u.intl.string(u.t["EE+P0H"]) : u.intl.string(u.t["0jeAXt"])
 }
 let O = (e, t, c) => {
     if (null == t) return null;
-    let l = p(c, e);
+    let o = p(c, e);
     return (0, r.jsx)(i.Drp, {
       id: "invite-people",
-      label: l,
+      label: o,
       color: "brand",
-      icon: e === o.PE1.GUILD_HEADER ? i.DpX : true,
+      icon: e === a.PE1.GUILD_HEADER ? i.DpX : true,
+      leadingAccessory: e === a.PE1.GUILD_HEADER ? {
+        type: "icon",
+        icon: i.DpX
+      } : true,
       action: () => (0, i.mMO)(async () => {
         let {
           default: i
         } = await Promise.all([n.e("43600"), n.e("28136"), n.e("92779")]).then(n.bind(n, 234355));
         return n => {
-          var l, a;
-          return (0, r.jsx)(i, (l = s({}, n), a = a = {
+          var o, l;
+          return (0, r.jsx)(i, (o = s({}, n), l = l = {
             guild: t,
             channel: c,
             source: e
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(a)).forEach(function(e) {
-            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-          }), l))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
+          }), o))
         }
       })
     })
   },
-  f = (e, t) => {
+  y = (e, t) => {
     let c = p(t, e);
     return (0, r.jsx)(i.Drp, {
       id: "invite-people",
       label: c,
       color: "brand",
-      icon: e === o.PE1.GUILD_HEADER ? i.DpX : true,
+      icon: e === a.PE1.GUILD_HEADER ? i.DpX : true,
+      leadingAccessory: e === a.PE1.GUILD_HEADER ? {
+        type: "icon",
+        icon: i.DpX
+      } : true,
       action: () => (0, i.mMO)(async () => {
         let {
           default: e

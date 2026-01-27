@@ -1,5 +1,5 @@
 /** Chunk was on 19418 **/
-/** chunk id: 82770, original params: e,t,n (module,exports,require) **/
+/** chunk id: 82770, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   A: () => d
 });
@@ -16,6 +16,10 @@ function d(e) {
     id: "application-directory",
     label: c.intl.string(c.t.AKcFUj),
     icon: r.k9F,
+    leadingAccessory: {
+      type: "icon",
+      icon: r.k9F
+    },
     action: () => {
       (0, l.transitionToGlobalDiscovery)({
         tab: o.GlobalDiscoveryTab.APPS,

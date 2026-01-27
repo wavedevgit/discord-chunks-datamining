@@ -1,4 +1,4 @@
-/** Chunk was on 41727 **/
+/** Chunk was on 77870 **/
 /** chunk id: 283354, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => h
@@ -40,7 +40,7 @@ function h(e) {
     (0, a.Z_)(), null == f || f()
   }
   return (0, r.jsxs)(s.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated": true,
     navId: "guild-entry-context",
     onClose: O,
     "aria-label": p.intl.string(p.t.HpQykc),
@@ -87,6 +87,10 @@ function h(e) {
               }), l))
             }
           }), O()
+        },
+        leadingAccessory: {
+          type: "icon",
+          icon: s.R2l
         }
       }) : null, A ? (0, r.jsx)(s.Drp, {
         id: "remove-from-hub",
@@ -101,7 +105,11 @@ function h(e) {
             onConfirm: _
           }), O()
         },
-        color: "danger"
+        color: "danger",
+        leadingAccessory: {
+          type: "icon",
+          icon: s.ucK
+        }
       }) : null, m ? null : (0, r.jsx)(s.Drp, {
         id: "report-server-listing",
         label: p.intl.string(p.t.Aen9eh),
@@ -109,6 +117,10 @@ function h(e) {
           null != t && ((0, c.sJ)(t), O())
         },
         icon: s.iFK,
+        leadingAccessory: {
+          type: "icon",
+          icon: s.iFK
+        },
         color: "danger"
       })]
     }), (0, r.jsx)(s.rXV, {

@@ -29,7 +29,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk183395 = require("./183395.js");
 
-function E(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -138,7 +138,7 @@ function S(e) {
       let {
         default: t
       } = await n.e("52532").then(n.bind(n, 192991));
-      return n => (0, i.jsx)(t, E({
+      return n => (0, i.jsx)(t, T({
         editPermissions: z,
         guildId: j,
         headerText: w.intl.string(w.t["i1c+kV"]),
@@ -155,7 +155,7 @@ function S(e) {
       let {
         default: t
       } = await n.e("52532").then(n.bind(n, 192991));
-      return n => (0, i.jsx)(t, E({
+      return n => (0, i.jsx)(t, T({
         editPermissions: z,
         guildId: j,
         hasMemberSearch: true,
@@ -170,7 +170,7 @@ function S(e) {
     let {
       default: e
     } = await n.e("29384").then(n.bind(n, 519387)), t = D.defaultMemberPermissions;
-    return s.aI(t, u.Cq) && (t = _.xBc.ADMINISTRATOR), n => (0, i.jsx)(e, C(E({}, n), {
+    return s.aI(t, u.Cq) && (t = _.xBc.ADMINISTRATOR), n => (0, i.jsx)(e, C(T({}, n), {
       defaultMemberPermissions: t
     }))
   }), [D]), q = L - N.iW, J = q >= 0, Q = [{
@@ -193,13 +193,13 @@ function S(e) {
         removeCount: q
       })
     }) : null, M ? (0, i.jsxs)("div", {
-      className: T.Yg,
+      className: E.Yg,
       children: [(0, i.jsx)(c.mir, {
         size: "sm",
         color: "currentColor",
-        className: T.Kk
+        className: E.Kk
       }), (0, i.jsx)("span", {
-        className: T.iU,
+        className: E.iU,
         children: w.intl.format(w.t["2889Gq"], {})
       }), (0, i.jsx)(c.Button, {
         variant: "secondary",
@@ -211,10 +211,10 @@ function S(e) {
       let n = null;
       return G ? J && (n = w.intl.string(w.t["XTwtW/"])) : n = null != l ? w.intl.string(w.t.tybdas) : w.intl.string(w.t["z2hjk/"]), (0, i.jsx)(v.A, {
         bar: (0, i.jsx)(c.STz, {
-          tooltipClassName: T.YL,
+          tooltipClassName: E.YL,
           text: n,
           shouldShow: null != n,
-          children: t => (0, i.jsx)(c.Button, C(E({}, t), {
+          children: t => (0, i.jsx)(c.Button, C(T({}, t), {
             variant: "secondary",
             disabled: J || !G,
             onClick: e.buttonClick,
@@ -225,7 +225,7 @@ function S(e) {
         inModal: O,
         title: e.title,
         children: (0, i.jsx)("div", {
-          className: O ? true : T.qI,
+          className: O ? true : E.qI,
           children: (0, i.jsx)(y.A, {
             guildId: j,
             commandId: l,
@@ -242,8 +242,8 @@ function S(e) {
 
 function I(e) {
   let t = (0, j.Q)(e);
-  return C(E({}, t), {
-    results: t.results.map(e => C(E({}, e), {
+  return C(T({}, t), {
+    results: t.results.map(e => C(T({}, e), {
       type: d.RA.CHANNEL
     }))
   })
@@ -251,10 +251,10 @@ function I(e) {
 
 function P(e) {
   let t = (0, O.t)(e);
-  return C(E({}, t), {
-    results: t.results.roles.map(e => C(E({}, e), {
+  return C(T({}, t), {
+    results: t.results.roles.map(e => C(T({}, e), {
       type: d.RA.ROLE
-    })).concat(t.results.members.map(e => C(E({}, e), {
+    })).concat(t.results.members.map(e => C(T({}, e), {
       type: d.RA.USER
     })))
   })

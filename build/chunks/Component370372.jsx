@@ -55,12 +55,12 @@ function k(n) {
   let {
     channel: e,
     onSelect: r
-  } = n, c = (0, y.A)(e), a = (0, f.A)(e), o = (0, u.m)(e), A = (0, u.y)(e), X = (0, h.A)(e), V = (0, x.A)(e), E = (0, j.A)(e), m = (0, p.Ay)(e), _ = (0, C.A)(e), g = (0, N.A)(e), O = (0, d.A)({
+  } = n, c = (0, y.A)(e), a = (0, f.A)(e), o = (0, u.m)(e), A = (0, u.y)(e), X = (0, h.A)(e), V = (0, x.A)(e), E = (0, j.A)(e), m = (0, g.Ay)(e), v = (0, p.A)(e), _ = (0, N.A)(e), O = (0, d.A)({
     id: e.id,
     label: S.intl.string(S.t.gFHI3k)
-  }), k = (0, s.A)(e), M = (0, v.Ay)(e), T = (0, b.os)("ChannelContextFavoritesMenu");
+  }), k = (0, s.A)(e), M = (0, C.Ay)(e), T = (0, b.os)("ChannelContextFavoritesMenu");
   return (0, t.jsxs)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "channel-context",
     onClose: l.Z_,
     "aria-label": S.intl.string(S.t.Xm41aV),
@@ -70,9 +70,9 @@ function k(n) {
     }), (0, t.jsxs)(i.rXV, {
       children: [V, E, X, o]
     }), (0, t.jsxs)(i.rXV, {
-      children: [m, T ? M : _]
+      children: [m, T ? M : v]
     }), (0, t.jsx)(i.rXV, {
-      children: g
+      children: _
     }), (0, t.jsx)(i.rXV, {
       children: k
     }), (0, t.jsx)(i.rXV, {
@@ -90,12 +90,12 @@ function M(n) {
     channel: e,
     guild: r,
     onSelect: c
-  } = n, a = (0, y.A)(e), o = (0, f.A)(e), A = (0, u.m)(e), h = (0, u.y)(e), x = (0, _.A)(e), j = (0, p.Ay)(e), g = (0, N.A)(e), O = (0, m.A)(e, r), k = (0, X.A)(e, r), M = (0, V.A)(e, r), T = (0, E.A)(e), w = (0, d.A)({
+  } = n, a = (0, y.A)(e), o = (0, f.A)(e), A = (0, u.m)(e), h = (0, u.y)(e), x = (0, v.A)(e), j = (0, g.Ay)(e), _ = (0, N.A)(e), O = (0, m.A)(e, r), k = (0, X.A)(e, r), M = (0, V.A)(e, r), T = (0, E.A)(e), w = (0, d.A)({
     id: e.id,
     label: S.intl.string(S.t.gFHI3k)
-  }), H = (0, s.A)(e), I = (0, C.A)(e), L = (0, v.Ay)(e), P = (0, b.os)("ChannelContextMenuNormal");
+  }), H = (0, s.A)(e), I = (0, p.A)(e), L = (0, C.Ay)(e), P = (0, b.os)("ChannelContextMenuNormal");
   return (0, t.jsxs)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated": true,
     navId: "channel-context",
     onClose: l.Z_,
     "aria-label": S.intl.string(S.t.Xm41aV),
@@ -107,7 +107,7 @@ function M(n) {
     }, "channel-actions"), (0, t.jsxs)(i.rXV, {
       children: [j, P ? L : I]
     }, "notifications"), (0, t.jsxs)(i.rXV, {
-      children: [g, k, M, T]
+      children: [_, k, M, T]
     }, "admin-actions"), (0, t.jsx)(i.rXV, {
       children: H
     }), (0, t.jsx)(i.rXV, {

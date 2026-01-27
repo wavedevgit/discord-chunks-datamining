@@ -39,6 +39,10 @@ function g(e, t) {
       label: m.intl.string(m.t.oyYWHE),
       color: "danger",
       icon: l.ucK,
+      leadingAccessory: {
+        type: "icon",
+        icon: l.ucK
+      },
       action: () => {
         s.A.show({
           title: m.intl.string(m.t.YWISbQ),

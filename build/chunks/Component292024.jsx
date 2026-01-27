@@ -20,6 +20,10 @@ function p(e, t) {
     id: "view-as-role",
     label: u.intl.string(u.t.arFPfJ),
     icon: l.EdP,
+    leadingAccessory: {
+      type: "icon",
+      icon: l.EdP
+    },
     action: () => {
       a.A.close(), (0, s.Tk)(e.id, {
         type: o._.ROLES,

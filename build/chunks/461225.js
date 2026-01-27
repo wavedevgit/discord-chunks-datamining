@@ -1,5 +1,5 @@
-/** Chunk was on 70690 **/
-/** chunk id: 461225, original params: e,t,o (module,exports,require) **/
+/** Chunk was on 77870 **/
+/** chunk id: 461225, original params: e,t,n (module,exports,require) **/
 module.exports = {
   R_: "heading__6f81c",
   $H: "tabBar__6f81c",

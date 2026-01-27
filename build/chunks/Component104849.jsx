@@ -52,11 +52,11 @@ let T = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     return null != (e = y.A.getUserVoiceChannelId(u, n.id)) ? e : true
   }, [u, n.id]), k = l.useCallback(() => {
     x(E.Nj.COPY_ID)
-  }, [x]), V = (0, i.bG)([g.Ay], () => g.Ay.isMember(u, n.id), [u, n.id]), F = (0, I.A)({
+  }, [x]), V = (0, i.bG)([g.Ay], () => g.Ay.isMember(u, n.id), [u, n.id]), W = (0, I.A)({
     userId: n.id,
     guildId: u,
     sourceAnalyticsLocations: P
-  }), W = (0, m.A)(n.id, h), K = (0, b.A)({
+  }), F = (0, m.A)(n.id, h), K = (0, b.A)({
     guildId: u,
     userId: n.id,
     analyticsLocation: null != C ? C : w.location,
@@ -78,7 +78,7 @@ let T = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     onSuccess: k
   }), z = (0, S.A)(n, u), J = !!(null == n ? true : n.isNonUserBot());
   return (0, r.jsxs)(a.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated": true,
     navId: "user-context",
     onClose: () => {
       (0, o.Z_)(), null == R || R()
@@ -87,15 +87,11 @@ let T = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     onSelect: T,
     children: [!J && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(a.rXV, {
-        children: [F, W]
+        children: [W, F]
       }), (0, r.jsxs)(a.rXV, {
         children: [K, Y, H]
-      }), V && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.rXV, {
-          children: X
-        }), (0, r.jsxs)(a.rXV, {
-          children: [Z, z]
-        })]
+      }), V && (0, r.jsxs)(a.rXV, {
+        children: [Z, X, z]
       }), null != N ? q : null, U && null != Q ? (0, r.jsx)(a.rXV, {
         children: Q
       }) : null]

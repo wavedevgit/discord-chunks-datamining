@@ -129,9 +129,9 @@ function W(e) {
         showYoutubeCard: eA > 0 || !n && e
       }
     }, [eg, eh, X, eb, ey, eA]),
-    eT = Object.values(ee).length,
-    eE = r.useMemo(() => {
-      let e = eT > 100 ? U : o();
+    eE = Object.values(ee).length,
+    eT = r.useMemo(() => {
+      let e = eE > 100 ? U : o();
       return Object.values(ee).filter(t => {
         var n;
         let {
@@ -139,11 +139,11 @@ function W(e) {
         } = t;
         return !!("" === (n = (n = ep).trim().toLowerCase()) || i.id === n || e(n, i.name.toLowerCase()) || null != i.bot && e(n, i.bot.username.toLowerCase()))
       })
-    }, [ee, eT, ep]),
+    }, [ee, eE, ep]),
     eC = (0, c.bG)([I.A], () => {
-      if (null != X) return eE.find(e => I.A.canShowOverviewTooltip(X.id, e.integration.id))
-    }, [eE, X]),
-    eS = r.useMemo(() => true !== eC ? [eC, ...eE.filter(e => e.integration.id !== eC.integration.id)] : eE, [eE, eC]),
+      if (null != X) return eT.find(e => I.A.canShowOverviewTooltip(X.id, e.integration.id))
+    }, [eT, X]),
+    eS = r.useMemo(() => true !== eC ? [eC, ...eT.filter(e => e.integration.id !== eC.integration.id)] : eT, [eT, eC]),
     eI = (0, u.red)(u.DXt),
     [eP, ek] = r.useState(false),
     eR = r.useRef(0),
@@ -163,13 +163,13 @@ function W(e) {
         return null != s.user ? o.push({
           icon: u.O4,
           text: R.intl.formatToPlainString(R.t.Nu9sat, {
-            timestamp: T.default.extractTimestamp(s.id),
-            user: E.Ay.getUserTag(s.user)
+            timestamp: E.default.extractTimestamp(s.id),
+            user: T.Ay.getUserTag(s.user)
           })
         }) : o.push({
           icon: u.O4,
           text: R.intl.formatToPlainString(R.t.gcdJ8J, {
-            timestamp: T.default.extractTimestamp(s.id)
+            timestamp: E.default.extractTimestamp(s.id)
           })
         }), (0, i.jsx)(S.A, {
           name: a.name,
@@ -248,7 +248,7 @@ function W(e) {
           })
         })]
       })
-    }), eD = eT > 0 ? t : r, eM = null
+    }), eD = eE > 0 ? t : r, eM = null
   }
   let eG = w.A.getArticleURL(P.MVz.INTEGRATIONS),
     eU = null != $ ? R.t.YV0vh6 : R.t.FnZEJs,
@@ -377,7 +377,7 @@ function W(e) {
           variant: "heading-md/semibold",
           className: L.bV,
           children: R.intl.string(R.t.pUBKht)
-        }), eT > 4 ? (0, i.jsx)(B, {
+        }), eE > 4 ? (0, i.jsx)(B, {
           query: ep,
           setQuery: em
         }) : null, eD]

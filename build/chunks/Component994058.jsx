@@ -21,7 +21,7 @@ let u = (0, Chunk358367.A)(function(n) {
     label: A.intl.string(A.t.gFHI3k)
   });
   return (0, r.jsxs)(a.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "channel-context",
     onClose: c.Z_,
     "aria-label": A.intl.string(A.t.Xm41aV),

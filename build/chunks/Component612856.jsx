@@ -23,7 +23,7 @@ function o(n) {
     label: c.intl.string(c.t.gFHI3k)
   });
   return (0, i.jsxs)(e.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "channel-mention-context",
     onClose: a.Z_,
     onSelect: u,

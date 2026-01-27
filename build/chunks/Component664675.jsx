@@ -44,8 +44,8 @@ function P(e) {
   } = e, b = (0, s.bG)([j.A], () => j.A.getGuild(l));
   a()(null != b, "");
   let h = (0, s.bG)([x.A], () => x.A.getSortedRoles(l)),
-    [y, T] = r.useState(new Set),
-    E = r.useMemo(() => {
+    [y, E] = r.useState(new Set),
+    T = r.useMemo(() => {
       let e = (0, g.Ap)(l),
         t = h.toReversed().reduce((e, t, n) => (e[t.id] = n, e), {});
       return Object.values(c).filter(e => e.canRead).sort((n, i) => {
@@ -92,15 +92,15 @@ function P(e) {
     }, [n, c]);
   r.useEffect(() => {
     let e = Object.values(c).filter(e => e.type === m.RA.USER && !e.canRead && !y.has(e.id)).map(e => e.id);
-    0 !== e.length && (u.A.requestMembersById(l, e, false), T(t => new Set([...t, ...e])))
-  }, [l, c, y, T]);
+    0 !== e.length && (u.A.requestMembersById(l, e, false), E(t => new Set([...t, ...e])))
+  }, [l, c, y, E]);
   let P = (0, s.bG)([N.A], () => N.A.getApplicationId()),
     R = (0, s.bG)([_.default], () => null == P ? true : _.default.integrations.find(e => {
       var t;
       return (null == (t = e.application) ? true : t.id) === P
     })),
     L = (0, s.bG)([f.A], () => true !== R && f.A.canShowToggleTooltip(R.id));
-  return E.length > 0 ? E.map(e => (0, i.jsx)(k, {
+  return T.length > 0 ? T.map(e => (0, i.jsx)(k, {
     guild: b,
     commandId: t,
     onChange: t => S(e.id, e.type, t),
@@ -179,7 +179,7 @@ function k(e) {
       position: "left",
       children: (0, i.jsx)("div", {
         ref: k,
-        children: (0, i.jsx)(E.A, {
+        children: (0, i.jsx)(T.A, {
           isDisabled: N,
           currentValue: x.permission,
           onChange: P ? e => {
@@ -207,7 +207,7 @@ function k(e) {
     className: I.Wk,
     children: [(0, i.jsx)("div", {
       className: I.MB,
-      children: (0, i.jsx)(T.A, {
+      children: (0, i.jsx)(E.A, {
         guild: s,
         id: x.id,
         type: x.type,

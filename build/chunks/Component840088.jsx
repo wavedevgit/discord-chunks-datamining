@@ -1,7 +1,7 @@
 /** Chunk was on 1636 **/
 /** chunk id: 840088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => j
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,12 +23,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk451590 = require("./451590.js");
 
-function h(e, t) {
+function j(e, t) {
   let {
     reducedMotion: n
   } = i.useContext(c.CZY), l = (0, g.Id)(t), a = (0, o.bG)([f.A], () => (t.isPrivate() || f.A.can(m.xBc.ADD_REACTIONS, t)) && l, [t, l]), y = (0, s.D6)(t.getGuildId());
   if (!p.jW.getSetting() || !a) return null;
-  let j = y.filter(e => !A.Ay.isEmojiFilteredOrLocked({
+  let h = y.filter(e => !A.Ay.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: O.b_.REACTION
@@ -97,7 +97,7 @@ function h(e, t) {
     },
     color: "default",
     children: (0, r.jsxs)(r.Fragment, {
-      children: [j, (0, r.jsx)(c.bXX, {}), (0, r.jsx)(c.Drp, {
+      children: [h, (0, r.jsx)(c.bXX, {}), (0, r.jsx)(c.Drp, {
         color: "default",
         id: "other-reactions",
         label: v.intl.string(v.t["OBCR+p"]),
@@ -125,7 +125,7 @@ function E(e) {
     isFocused: o = false
   } = e;
   return (0, r.jsx)("img", {
-    className: a()(l, j.Z),
+    className: a()(l, h.Z),
     src: null != n.id ? y.Ay.getEmojiURL({
       id: n.id,
       animated: n.animated && (!i || o),

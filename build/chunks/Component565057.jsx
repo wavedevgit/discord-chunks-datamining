@@ -50,12 +50,12 @@ let k = e => {
     sortOptions: z,
     shuffleProducts: V,
     showRecommendationOption: K
-  } = (0, x.A)({
+  } = (0, S.A)({
     sortedSkuIds: k,
     isPremiumUser: M,
     prioritizeUserDiscounts: R,
     orbsSupportedOnly: w
-  }), W = (0, S.od)(F), Y = (0, i.bG)([d.A], () => d.A.useReducedMotion), q = (0, i.bG)([f.A], () => f.A.isFocused()), Z = !Y && q, {
+  }), W = (0, x.od)(F), Y = (0, i.bG)([d.A], () => d.A.useReducedMotion), q = (0, i.bG)([f.A], () => f.A.isFocused()), Z = !Y && q, {
     animationPhase: X,
     startAnimation: J
   } = (0, A.s)(), Q = (0, b.uM)(), $ = null != (t = null == Q ? true : Q.sessionId) ? t : "", ee = l.useRef(null), et = l.useCallback(e => {

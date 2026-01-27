@@ -79,13 +79,14 @@ function b(e) {
   } = e, d = (0, s.bG)([u.A], () => u.A.getCategories()), g = l.useMemo(() => [(0, p.AU)(), ...d.filter(e => {
     var t;
     return (null != (t = n[e.id]) ? t : 0) !== 0
-  })], [d, n]), _ = l.useMemo(() => g.map(e => ({
-    id: "".concat(e.id),
-    label: (0, r.jsx)(c.kR, {
-      count: n[e.id],
-      name: e.name
-    })
-  })), [g, n]), b = l.useCallback(e => {
+  })], [d, n]), _ = l.useMemo(() => g.map(e => {
+    var t;
+    return {
+      id: "".concat(e.id),
+      name: e.name,
+      count: null != (t = n[e.id]) ? t : 0
+    }
+  }), [g, n]), b = l.useCallback(e => {
     let t = g.find(t => t.id === Number(e));
     null != t && i(t)
   }, [i, g]), f = l.useMemo(() => g.find(e => e.id === a), [a, g]);
@@ -95,13 +96,13 @@ function b(e) {
       variant: "text-sm/medium",
       color: "text-subtle",
       children: h.intl.string(h.t.f09BQJ)
-    }), (0, r.jsx)(c.Ay, {
+    }), (0, r.jsx)(c.A, {
       items: _,
       title: null != (t = null == f ? true : f.name) ? t : "",
       onSelect: b,
       selected: "".concat(a),
       "aria-label": h.intl.string(h.t.WHdCwR),
-      variant: c.Hb.FILLED
+      variant: c.H.FILLED
     })]
   })
 }

@@ -15,7 +15,7 @@ var Chunk311907 = require("./311907.js"),
 function s(e, t) {
   let n = (0, i.bG)([l.A], () => l.A.getMute(e)),
     s = !n;
-  return (0, r.jsx)(c.sLh, {
+  return (0, r.jsx)(a.sLh, {
     id: "mute-game",
     label: u.intl.string(u.t["6EwEwp"]),
     checked: n,
@@ -25,7 +25,7 @@ function s(e, t) {
         applicationId: e,
         label: s ? o.VD.MUTED : o.VD.UNMUTED,
         source: o.eh.GAME_CONTEXT_MENU
-      }), (0, a.b)(e, s)
+      }), (0, c.b)(e, s)
     }
   })
 }

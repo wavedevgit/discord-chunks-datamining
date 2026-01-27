@@ -70,7 +70,7 @@ function h(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(o.W1t, {
-        "data-menu-mixed": true,
+        "data-menu-migrated-auto": true,
         navId: "game-profile-context",
         onClose: () => {
           (0, s.Z_)(), t()

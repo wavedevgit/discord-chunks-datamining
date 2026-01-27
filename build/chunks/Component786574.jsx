@@ -1,27 +1,16 @@
 /** Chunk was on 65298 **/
 /** chunk id: 786574, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => d
+  N: () => o
 }), require("./896048.js"), require("./321073.js"), require("./733351.js"), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk614820 = require("./614820.js"),
   Chunk397927 = require("./397927.js"),
-  Chunk231643 = require("./231643.jsx"),
-  Chunk890288 = require("./890288.js");
+  Chunk231643 = require("./231643.jsx");
 
-function c(e) {
-  let {
-    label: t
-  } = e;
-  return (0, a.jsx)("div", {
-    className: o.G,
-    children: t
-  })
-}
-
-function d(e, t) {
-  let [n, o] = l.useState(""), d = l.useMemo(() => {
+function o(e, t) {
+  let [n, o] = l.useState(""), c = l.useMemo(() => {
     if ("" === n.trim()) return e;
     let t = n.toLowerCase().trim();
     return e.filter(e => {
@@ -71,13 +60,13 @@ function d(e, t) {
     }
   }, "devtools-search"), [n]), ...l.useMemo(() => {
     let e = [];
-    if ("" !== n.trim() && 0 === d.length) e.push((0, a.jsx)(i.Drp, {
+    if ("" !== n.trim() && 0 === c.length) e.push((0, a.jsx)(i.Drp, {
       id: "devtools-no-results",
       label: 'No DevTools found for "'.concat(n, '"'),
       disabled: true
     }, "devtools-no-results"));
     else {
-      let l = d.filter(e => e.group === s.fu.NONE),
+      let l = c.filter(e => e.group === s.fu.NONE),
         o = function(e) {
           let t = new Map;
           for (let a of e) {
@@ -86,19 +75,18 @@ function d(e, t) {
             e.push(a), t.set(a.group, e)
           }
           return t
-        }(d.filter(e => e.group !== s.fu.NONE));
+        }(c.filter(e => e.group !== s.fu.NONE));
       l.forEach(n => {
+        var l;
         let {
-          id: l,
-          name: r
+          id: s,
+          name: o
         } = n;
         return e.push((0, a.jsx)(i.Drp, {
-          id: l,
-          void_label: (0, a.jsx)(c, {
-            label: r
-          }),
-          action: () => t(l)
-        }, l))
+          id: s,
+          label: null != (l = (0, r.O)(o)) ? l : "",
+          action: () => t(s)
+        }, s))
       }), s.BW.forEach(l => {
         let s = o.get(l);
         if (null != s && s.length > 0) {
@@ -108,31 +96,31 @@ function d(e, t) {
           });
           "" === n.trim() ? e.push((0, a.jsx)(i.Drp, {
             id: "devtools-".concat(l),
-            void_label: (0, a.jsx)(c, {
-              label: l
-            }),
+            label: l,
             children: (0, a.jsx)(i.rXV, {
-              children: o.map(e => (0, a.jsx)(i.Drp, {
-                id: "devtools-".concat(e.id),
-                void_label: (0, a.jsx)(c, {
-                  label: e.name
-                }),
-                action: () => t(e.id)
-              }, e.id))
+              children: o.map(e => {
+                var n;
+                return (0, a.jsx)(i.Drp, {
+                  id: "devtools-".concat(e.id),
+                  label: null != (n = (0, r.O)(e.name)) ? n : "",
+                  action: () => t(e.id)
+                }, e.id)
+              })
             })
           }, "devtools-".concat(l))) : e.push((0, a.jsx)(i.rXV, {
             label: l,
-            children: o.map(e => (0, a.jsx)(i.Drp, {
-              id: "devtools-filtered-".concat(e.id),
-              void_label: (0, a.jsx)(c, {
-                label: e.name
-              }),
-              action: () => t(e.id)
-            }, e.id))
+            children: o.map(e => {
+              var n;
+              return (0, a.jsx)(i.Drp, {
+                id: "devtools-filtered-".concat(e.id),
+                label: null != (n = (0, r.O)(e.name)) ? n : "",
+                action: () => t(e.id)
+              }, e.id)
+            })
           }, "devtools-filtered-".concat(l)))
         }
       })
     }
     return e
-  }, [d, n, t])]
+  }, [c, n, t])]
 }

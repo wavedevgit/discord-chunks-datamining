@@ -17,7 +17,7 @@ function o(e) {
       type: "icon",
       icon: i.ShF
     },
-    icon: i.nm2,
+    icon: i.ShF,
     action: () => (0, i.mMO)(async () => {
       let {
         default: t

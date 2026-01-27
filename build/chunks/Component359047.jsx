@@ -12,19 +12,23 @@ var Chunk397927 = require("./397927.js"),
 
 function a(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    a = (0, l.A)(e),
-    u = (0, o.A)();
+    a = (0, o.A)(e),
+    u = (0, c.A)();
   return a ? (0, n.jsx)(i.Drp, {
     id: "create-event",
-    label: c.intl.string(c.t["60lJ0C"]),
+    label: l.intl.string(l.t["60lJ0C"]),
     icon: t ? i.UC$ : true,
+    leadingAccessory: t ? {
+      type: "icon",
+      icon: i.UC$
+    } : true,
     action: () => {
       (0, i.mMO)(async () => {
         let {
           default: t
         } = await Promise.all([r.e("68587"), r.e("51354"), r.e("342"), r.e("62106")]).then(r.bind(r, 21653));
         return r => {
-          var i, l;
+          var i, o;
           return (0, n.jsx)(t, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
@@ -42,17 +46,17 @@ function a(e) {
               })
             }
             return e
-          }({}, r), l = l = {
+          }({}, r), o = o = {
             guildId: e
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var r = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var n = Object.getOwnPropertySymbols(e);
               r.push.apply(r, n)
             }
             return r
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+          })(Object(o)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
           }), i))
         }
       }, u)

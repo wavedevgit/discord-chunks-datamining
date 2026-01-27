@@ -1,7 +1,7 @@
 /** Chunk was on 93952 **/
 /** chunk id: 690953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => O
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -37,7 +37,7 @@ function g(e) {
   return e
 }
 
-function O(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,24 +50,31 @@ function O(e, t) {
   }), e
 }
 
-function p(e) {
+function O(e) {
   let t = (0, l.bG)([o.A], () => o.A.getChannelId() === e.id),
-    p = (0, s.A)(),
-    v = (null == p ? true : p.channelId) === e.id,
+    O = (0, s.A)(),
+    v = (null == O ? true : O.channelId) === e.id,
     b = (0, a.J)(e) && !e.isPrivate(),
     h = (0, a.A)(e),
     N = !(0, l.bG)([c.A], () => c.A.isInChannel(e.id)) && h || b,
     _ = (0, A.A)();
-  return v || 0 !== _.length ? v ? (0, r.jsx)(i.Drp, {
+  if (!v && 0 === _.length) return null;
+  let G = (0, f.A)(true);
+  return v ? (0, r.jsx)(i.Drp, {
     label: y.intl.string(y.t.PlwgdU),
     id: "handoff",
     action: () => {
-      (0, d.x)(p)
+      (0, d.x)(O)
     },
-    icon: (0, f.A)(true),
+    icon: G,
+    leadingAccessory: {
+      type: "icon",
+      icon: G
+    },
     disabled: N
   }) : _.map(l => {
     var a, o;
+    let c = (0, f.A)(l.type);
     return (0, r.jsx)(i.Drp, {
       id: "transfer-".concat(l.type, "-").concat(l.id),
       label: (a = l.type, o = t, a === E.fg2.XBOX ? o ? y.intl.string(y.t["qVE/VF"]) : y.intl.string(y.t.E8euSk) : a === E.fg2.PLAYSTATION ? o ? y.intl.string(y.t.vzfxmY) : y.intl.string(y.t.QxEYDj) : a === E.fg2.PLAYSTATION_STAGING ? o ? y.intl.string(y.t.BDiXtV) : y.intl.string(y.t["bhdB9+"]) : true),
@@ -79,21 +86,25 @@ function p(e) {
           let {
             default: t
           } = await Promise.all([n.e("14882"), n.e("67670")]).then(n.bind(n, 188072));
-          return n => (0, r.jsx)(t, O(g({}, n), {
+          return n => (0, r.jsx)(t, p(g({}, n), {
             channel: e
           }))
         }) : (l.type === E.fg2.PLAYSTATION || l.type === E.fg2.PLAYSTATION_STAGING) && (0, i.mMO)(async () => {
           let {
             default: t
           } = await n.e("71282").then(n.bind(n, 315337));
-          return n => (0, r.jsx)(t, O(g({}, n), {
+          return n => (0, r.jsx)(t, p(g({}, n), {
             platform: l.type,
             channel: e
           }))
         })
       },
-      icon: (0, f.A)(l.type),
+      icon: c,
+      leadingAccessory: {
+        type: "icon",
+        icon: c
+      },
       disabled: N
     }, l.id)
-  }) : null
+  })
 }

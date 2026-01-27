@@ -1,4 +1,4 @@
-/** Chunk was on 41727 **/
+/** Chunk was on 77870 **/
 /** chunk id: 834857, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -45,11 +45,19 @@ function u(e, t, n, u) {
     id: "invite-to-stream",
     label: c.intl.string(c.t["OzOM/q"]),
     action: p,
-    icon: l.DpX
+    icon: l.DpX,
+    leadingAccessory: {
+      type: "icon",
+      icon: l.DpX
+    }
   }) : null != t && null != e && a.A.can(o.xBc.CREATE_INSTANT_INVITE, e) ? (0, r.jsx)(l.Drp, {
     id: "invite-friends",
     label: c.intl.string(c.t["EE+P0H"]),
     action: p,
-    icon: l.Rvf
+    icon: l.Rvf,
+    leadingAccessory: {
+      type: "icon",
+      icon: l.Rvf
+    }
   }) : null
 }

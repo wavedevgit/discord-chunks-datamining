@@ -31,7 +31,7 @@ function j(t) {
     let {
       editingRule: e,
       setEditingRule: i
-    } = (0, x.U)();
+    } = (0, T.U)();
     return (0, l.jsx)(d.Drp, {
       id: "edit-automod-rule",
       label: M.intl.string(M.t.uQq6Px),
@@ -43,22 +43,22 @@ function j(t) {
   }(e), I = function(t) {
     let {
       setEditingRule: e
-    } = (0, x.U)(), [i, s] = n.useState(false), {
-      removeRule: u
+    } = (0, T.U)(), [i, u] = n.useState(false), {
+      removeRule: s
     } = (0, p.wP)(t.guildId), c = (0, a.bG)([g.A], () => g.A.getGuild(t.guildId)), h = async () => {
-      if (!i && await (0, T.ih)(t.name)) {
-        s(true);
+      if (!i && await (0, f.ih)(t.name)) {
+        u(true);
         try {
-          await (0, b.nV)(t.id, t.guildId), e(null), u(t.id, t.guildId)
+          await (0, b.nV)(t.id, t.guildId), e(null), s(t.id, t.guildId)
         } catch (e) {
           var l;
           let t = new o.LG(e);
           (0, d.showToast)((0, d.createToast)(null != (l = t.getAnyErrorMessage()) ? l : M.intl.string(M.t.fEptJP), d.ToastType.FAILURE))
         } finally {
-          s(false)
+          u(false)
         }
       }
-    }, j = t.triggerType === f.uh.MENTION_SPAM && (null == c ? true : c.features) != null && c.features.has(w.GuildFeatures.COMMUNITY);
+    }, j = t.triggerType === w.uh.MENTION_SPAM && (null == c ? true : c.features) != null && c.features.has(x.GuildFeatures.COMMUNITY);
     return (0, l.jsx)(d.Drp, {
       id: "delete-automod-rule",
       label: M.intl.string(M.t["92m/01"]),
@@ -73,13 +73,13 @@ function j(t) {
     id: e.id,
     label: M.intl.string(M.t.F64hjn)
   });
-  return (0, l.jsx)(u.A, {
+  return (0, l.jsx)(s.A, {
     context: i,
-    object: w.ZSU.CONTEXT_MENU,
+    object: x.ZSU.CONTEXT_MENU,
     children: (0, l.jsxs)(d.W1t, {
-      "data-menu-mixed": true,
+      "data-menu-migrated-auto": true,
       navId: "automod-rule-context",
-      onClose: s.Z_,
+      onClose: u.Z_,
       "aria-label": M.intl.string(M.t.uT36So),
       onSelect: j,
       children: [(0, l.jsxs)(d.rXV, {

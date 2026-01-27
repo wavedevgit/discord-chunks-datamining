@@ -59,7 +59,7 @@ function v(e) {
       closePopout: t
     } = e;
     return (0, l.jsx)(c.W1t, {
-      "data-menu-mixed": true,
+      "data-menu-migrated": true,
       navId: "devtools-overflow",
       variant: "fixed",
       onClose: t,

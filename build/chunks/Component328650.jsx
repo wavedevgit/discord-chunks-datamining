@@ -94,14 +94,14 @@ function q(e) {
     showRolesColumn: m,
     onRevokeInvite: g
   } = e;
-  return (0, i.jsxs)(T.A, {
+  return (0, i.jsxs)(E.A, {
     className: a()(V._O, z.N, {
       [V.Gg]: t
     }),
-    children: [(0, i.jsxs)(T.A, {
+    children: [(0, i.jsxs)(E.A, {
       grow: 3,
       basis: 0,
-      align: T.A.Align.CENTER,
+      align: E.A.Align.CENTER,
       className: V.Qq,
       children: [null != n && (0, i.jsx)(A.A, {
         user: n,
@@ -117,40 +117,40 @@ function q(e) {
           children: (0, N.m1)(l, G.default, M.A, true)
         })]
       })]
-    }), (0, i.jsx)(T.A, {
+    }), (0, i.jsx)(E.A, {
       grow: 3,
       shrink: 1,
       basis: 0,
-      align: T.A.Align.CENTER,
+      align: E.A.Align.CENTER,
       className: V.Qq,
       children: (0, i.jsxs)("div", {
         className: V.AL,
         children: [s, o]
       })
-    }), (0, i.jsx)(T.A, {
+    }), (0, i.jsx)(E.A, {
       grow: 1,
       basis: 0,
-      align: T.A.Align.CENTER,
+      align: E.A.Align.CENTER,
       className: V.Qq,
       children: (0, i.jsx)(f.Text, {
         className: V.r9,
         variant: "text-sm/normal",
         children: c
       })
-    }), (0, i.jsx)(T.A, {
+    }), (0, i.jsx)(E.A, {
       grow: 2,
       basis: 0,
-      align: T.A.Align.CENTER,
+      align: E.A.Align.CENTER,
       className: a()(V.Qq, V.sA),
       children: (0, i.jsx)(f.Text, {
         className: V.qW,
         variant: "text-sm/normal",
         children: d
       })
-    }), m && null != p && (0, i.jsx)(T.A, {
+    }), m && null != p && (0, i.jsx)(E.A, {
       grow: 2,
       basis: 0,
-      align: T.A.Align.CENTER,
+      align: E.A.Align.CENTER,
       className: V.Qq,
       children: (0, i.jsx)(k.A, {
         roles: u,
@@ -231,9 +231,9 @@ function Q(e) {
     channel: r,
     inviteSource: (0, i.jsxs)("div", {
       className: V._z,
-      children: [(0, i.jsx)(E.A, {
+      children: [(0, i.jsx)(T.A, {
         game: o,
-        size: E.M.XXSMALL
+        size: T.M.XXSMALL
       }), (0, i.jsx)(f.Text, {
         className: V.PD,
         variant: "text-sm/normal",
@@ -297,7 +297,7 @@ function Z(e) {
         source: W.PE1.SETTINGS_INVITE
       })))
     },
-    [E, k] = r.useState(62),
+    [T, k] = r.useState(62),
     R = () => {
       let e = {
         source: C.Eo.GUILD_SETTINGS
@@ -328,8 +328,8 @@ function Z(e) {
             })]
           })
         }, "empty-state");
-        else return (0, i.jsxs)(T.A, {
-          children: [(0, i.jsx)(T.A.Child, {
+        else return (0, i.jsxs)(E.A, {
+          children: [(0, i.jsx)(E.A.Child, {
             grow: 3,
             basis: 0,
             className: K.Gf,
@@ -337,7 +337,7 @@ function Z(e) {
               variant: "text-md/medium",
               children: H.intl.string(H.t.EgHyKy)
             })
-          }), (0, i.jsx)(T.A.Child, {
+          }), (0, i.jsx)(E.A.Child, {
             basis: 0,
             grow: 3,
             className: K.Gf,
@@ -345,21 +345,21 @@ function Z(e) {
               variant: "text-md/medium",
               children: _.length > 0 ? H.intl.string(H.t.l7VISQ) : H.intl.string(H.t.LBlFEN)
             })
-          }), (0, i.jsx)(T.A.Child, {
+          }), (0, i.jsx)(E.A.Child, {
             grow: 1,
             basis: 0,
             children: (0, i.jsx)(f.Text, {
               variant: "text-md/medium",
               children: H.intl.string(H.t.erWrmA)
             })
-          }), (0, i.jsx)(T.A.Child, {
+          }), (0, i.jsx)(E.A.Child, {
             grow: 2,
             basis: 0,
             children: (0, i.jsx)(f.Text, {
               variant: "text-md/medium",
               children: H.intl.string(H.t["1aM27d"])
             })
-          }), O && (0, i.jsx)(T.A.Child, {
+          }), O && (0, i.jsx)(E.A.Child, {
             grow: 2,
             basis: 0,
             children: (0, i.jsx)(f.Text, {
@@ -452,7 +452,7 @@ function Z(e) {
         }
       }
     },
-    rowHeight: (e, t) => 0 === e ? 64 : 1 === e ? 109 : 2 === e ? E : 3 === e ? 0 === N.length && 0 === t && b ? 62 : 62 * (null != N[t]) : 0,
+    rowHeight: (e, t) => 0 === e ? 64 : 1 === e ? 109 : 2 === e ? T : 3 === e ? 0 === N.length && 0 === t && b ? 62 : 62 * (null != N[t]) : 0,
     sectionHeight: e => 3 === e ? 0 !== N.length || b ? 28 : 240 : 0
   })
 }

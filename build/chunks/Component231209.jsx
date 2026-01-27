@@ -113,7 +113,7 @@ let P = e => {
       errorMessage: U.message
     }) : G || 0 === F.length ? (0, r.jsxs)("div", {
       className: a()(R.g4, R.Of),
-      children: [(0, r.jsx)(S.A, {
+      children: [(0, r.jsx)(x.A, {
         isLoading: G,
         handleTransition: c,
         tab: E
@@ -121,7 +121,7 @@ let P = e => {
         isLoading: G,
         handleTransition: c,
         categories: []
-      }), (0, r.jsx)(x.A, {
+      }), (0, r.jsx)(S.A, {
         isLoading: G,
         title: E === I.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
         numVisibleItems: u,
@@ -134,7 +134,7 @@ let P = e => {
           s = false;
         switch (e.type) {
           case i.g.HERO:
-            l = (0, r.jsx)(S.A, {
+            l = (0, r.jsx)(x.A, {
               isLoading: G,
               handleTransition: c,
               heroBlock: P ? B : e,
@@ -150,7 +150,7 @@ let P = e => {
             break;
           case i.g.FEED:
             let f = e.sortedSkuIds;
-            l = (0, r.jsx)(x.A, {
+            l = (0, r.jsx)(S.A, {
               title: E === I.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
               isLoading: G || g,
               numVisibleItems: u,

@@ -21,7 +21,6 @@ function u(e) {
   return !__OVERLAY__ && t === o.YYv && d && u ? (0, r.jsx)(l.Drp, {
     id: "add-channel-to-category",
     icon: l.U1e,
-    color: "brand",
     label: s.intl.string(s.t["6uDHk6"]),
     action: function() {
       (0, l.mMO)(async () => {

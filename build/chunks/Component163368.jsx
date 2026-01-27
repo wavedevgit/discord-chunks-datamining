@@ -65,7 +65,7 @@ function P(t) {
     object: h.ZSU.CONTEXT_MENU
   }), u = (0, p.A)(n, o), P = (0, A.A)(n), D = (0, O.A)(n), m = (0, y.A)(n), T = (0, g.A)(n), S = (0, s.A)(n, e), E = (0, f.A)(n, e), w = (0, d.A)(n, e), L = (0, b.A)(e);
   return (0, r.jsxs)(l.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated": true,
     navId: "game-context",
     onClose: a.Z_,
     "aria-label": j.intl.string(j.t.tKobzb),

@@ -42,7 +42,7 @@ function h(e) {
     application: t
   });
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "activity-shelf-item-context",
     onClose: a.Z_,
     "aria-label": p.intl.string(p.t.WkcHT9),

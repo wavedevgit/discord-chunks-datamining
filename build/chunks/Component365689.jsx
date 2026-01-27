@@ -87,28 +87,28 @@ let L = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   }), ee = (0, p.A)(t, n), et = (0, C.A)(t.id, n), en = (0, x.A)(t, n), el = (0, u.A)({
     id: t.id,
     label: _.intl.string(_.t["/AXYnE"])
-  }), ei = t.isNonUserBot();
-  return (0, l.jsxs)(i.W1t, {
-    "data-menu-mixed": true,
+  }), er = t.isNonUserBot();
+  return (0, l.jsxs)(r.W1t, {
+    "data-menu-migrated": true,
     navId: "user-context",
-    onClose: r.Z_,
+    onClose: i.Z_,
     "aria-label": _.intl.string(_.t.liqwPJ),
     onSelect: U,
-    children: [!ei && (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsxs)(i.rXV, {
+    children: [!er && (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsxs)(r.rXV, {
         children: [a && G, d && R, B, V, a && k, a && F, w]
-      }), o && (0, l.jsx)(i.rXV, {
+      }), o && (0, l.jsx)(r.rXV, {
         children: K
-      }), (0, l.jsx)(i.rXV, {
+      }), (0, l.jsx)(r.rXV, {
         children: a && J
-      }), (0, l.jsxs)(i.rXV, {
+      }), (0, l.jsxs)(r.rXV, {
         children: [o && X, a && W, a && Y, q, Z, z, H, a && Q, a && $]
-      }), (0, l.jsx)(i.rXV, {
-        children: ee
-      }), (0, l.jsxs)(i.rXV, {
-        children: [et, en]
+      }), (0, l.jsx)(r.rXV, {
+        children: en
+      }), (0, l.jsxs)(r.rXV, {
+        children: [et, ee]
       })]
-    }), (0, l.jsx)(i.rXV, {
+    }), (0, l.jsx)(r.rXV, {
       children: el
     })]
   })

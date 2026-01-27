@@ -53,7 +53,7 @@ function A() {
         variant: "text-md/semibold",
         className: C.hr,
         children: v.intl.string(v.t.Qk6r1a)
-      }), b._6.map(e => (0, r.jsx)(x, {
+      }), b._6.map(e => (0, r.jsx)(S, {
         filter: e,
         trackFilterAction: u
       }, e)), o && (0, r.jsx)(d.Checkbox, {
@@ -63,7 +63,7 @@ function A() {
         },
         label: v.intl.string(v.t.AHHHgG)
       })]
-    }), (0, r.jsx)(S, {
+    }), (0, r.jsx)(x, {
       trackFilterAction: u
     }), (0, r.jsx)(j, {
       trackFilterAction: u
@@ -77,7 +77,7 @@ function A() {
     })]
   })
 }
-let x = e => {
+let S = e => {
     var t;
     let {
       filter: n,
@@ -101,7 +101,7 @@ let x = e => {
       label: null != (t = s[n]) ? t : ""
     })
   },
-  S = e => {
+  x = e => {
     let {
       trackFilterAction: t
     } = e, n = l.useMemo(() => [{

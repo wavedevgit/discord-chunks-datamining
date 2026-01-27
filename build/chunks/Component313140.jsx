@@ -18,17 +18,17 @@ let d = (0, Chunk358367.A)(function(e) {
   let {
     channel: n,
     guild: t,
-    onSelect: i
+    onSelect: l
   } = e, a = (0, s.A)(n), d = (0, b.A)(n, t), p = (0, u.A)(n), E = (0, o.A)({
     id: n.id,
     label: A.intl.string(A.t.gFHI3k)
   });
   return (0, r.jsxs)(c.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "channel-context",
-    onClose: l.Z_,
+    onClose: i.Z_,
     "aria-label": A.intl.string(A.t.Xm41aV),
-    onSelect: i,
+    onSelect: l,
     children: [(0, r.jsx)(c.rXV, {
       children: a
     }), (0, r.jsx)(c.rXV, {

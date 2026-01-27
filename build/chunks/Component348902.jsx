@@ -21,17 +21,17 @@ let A = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     game: t,
     guildId: n,
     context: o,
-    onSelect: a
+    onSelect: c
   } = e, l = (0, b.A)(t.id, t.name), f = (0, d.A)(t), A = (0, s.A)(t, n, o), j = (0, u.A)({
     id: t.id,
     label: p.intl.string(p.t["FfCL+6"])
   });
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "game-context",
-    onClose: c.Z_,
+    onClose: a.Z_,
     "aria-label": p.intl.string(p.t.liqwPJ),
-    onSelect: a,
+    onSelect: c,
     children: [(0, r.jsxs)(i.rXV, {
       children: [l, f, A]
     }), (0, r.jsx)(i.rXV, {

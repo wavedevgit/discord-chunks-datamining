@@ -29,7 +29,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk874090 = require("./874090.js");
 
-function E(e, t) {
+function T(e, t) {
   switch (e) {
     case N.wLn.APPLICATION:
       var n;
@@ -246,22 +246,22 @@ let C = Chunk64700.memo(function(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(p.A, {
       align: p.A.Align.CENTER,
-      className: T.jD,
+      className: E.jD,
       children: t === N.wLn.OVERVIEW ? (0, i.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        children: E(N.wLn.OVERVIEW)
+        children: T(N.wLn.OVERVIEW)
       }) : (0, i.jsx)(o.BIu, {
         activeId: t.toString(),
         breadcrumbs: [N.wLn.OVERVIEW, t].map(e => ({
           id: e.toString(),
-          label: E(e, q[V])
+          label: T(e, q[V])
         })),
         onBreadcrumbClick: e => {
           t !== parseInt(e.id) && Y(parseInt(e.id))
         },
         renderCustomBreadcrumb: (e, t) => (0, i.jsx)(o.Heading, {
           variant: "heading-lg/semibold",
-          className: t ? T.q3 : T.fd,
+          className: t ? E.q3 : E.fd,
           children: e.label
         })
       })

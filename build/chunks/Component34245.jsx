@@ -51,7 +51,11 @@ function m(e) {
       id: "copy-user-id",
       label: h.intl.string(h.t["/AXYnE"]),
       action: O,
-      icon: s.L9S
+      icon: s.L9S,
+      leadingAccessory: {
+        type: "icon",
+        icon: s.L9S
+      }
     }), null != t.avatar && (0, r.jsx)(s.Drp, {
       id: "copy-user-avatar-link",
       label: h.intl.string(h.t.gERDvM),

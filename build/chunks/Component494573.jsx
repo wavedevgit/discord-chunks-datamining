@@ -63,7 +63,7 @@ function A(e) {
     hasSubmenu: i,
     showNewBadge: c
   } = e;
-  return i ? (0, r.jsx)(x, {
+  return i ? (0, r.jsx)(S, {
     tab: t,
     label: n,
     selected: l,
@@ -81,7 +81,7 @@ function A(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   let {
     tab: t,
     label: n,
@@ -92,9 +92,9 @@ function x(e) {
     setIsHovered: b,
     onMouseEnter: h,
     onMouseLeave: A,
-    cancelTimers: x
-  } = (0, f.A)(100, 100), S = e => {
-    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), x(), b(true), p.current = d.A.keyboardModeEnabled)
+    cancelTimers: S
+  } = (0, f.A)(100, 100), x = e => {
+    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), S(), b(true), p.current = d.A.keyboardModeEnabled)
   }, O = l.useCallback(() => {
     p.current = d.A.keyboardModeEnabled, h()
   }, [h]);
@@ -108,7 +108,7 @@ function x(e) {
       position: "bottom",
       align: "left",
       onRequestOpen: () => {
-        x(), b(true), p.current = d.A.keyboardModeEnabled
+        S(), b(true), p.current = d.A.keyboardModeEnabled
       },
       onRequestClose: () => {
         var e;
@@ -134,7 +134,7 @@ function x(e) {
         return (0, r.jsx)(g.A.Title, C(v({}, e), {
           ref: c,
           onClick: () => i(t),
-          onKeyDown: S,
+          onKeyDown: x,
           wrapperClassName: E.Vn,
           className: a()(E.Mf, {
             [E.wH]: s
@@ -152,7 +152,7 @@ function x(e) {
   })
 }
 
-function S(e) {
+function x(e) {
   let {
     onTabSelect: t,
     tabs: n,
@@ -162,18 +162,18 @@ function S(e) {
   } = e, m = l.useRef(null), _ = l.useRef(false), {
     isHovered: h,
     setIsHovered: A,
-    onMouseEnter: x,
-    onMouseLeave: S,
+    onMouseEnter: S,
+    onMouseLeave: x,
     cancelTimers: O
   } = (0, f.A)(100, 100), y = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), O(), A(true), _.current = d.A.keyboardModeEnabled)
   }, j = l.useCallback(() => {
-    _.current = d.A.keyboardModeEnabled, x()
-  }, [x]);
+    _.current = d.A.keyboardModeEnabled, S()
+  }, [S]);
   return (0, r.jsx)("div", {
     className: E.iV,
     onMouseEnter: j,
-    onMouseLeave: S,
+    onMouseLeave: x,
     children: (0, r.jsx)(o.YNO, {
       targetElementRef: m,
       shouldShow: h,
@@ -191,8 +191,8 @@ function S(e) {
           closePopout: l
         } = e;
         return (0, r.jsx)("div", {
-          onMouseEnter: x,
-          onMouseLeave: S,
+          onMouseEnter: S,
+          onMouseLeave: x,
           children: (0, r.jsx)(p.A, {
             selectedTab: s,
             onClose: l,
@@ -247,11 +247,11 @@ function y(e) {
     itemGapPx: 24,
     maxLines: 1,
     containerWidth: d
-  }), h = l.useMemo(() => s.slice(0, m + 1), [m, s]), v = l.useMemo(() => s.slice(m + 1), [m, s]), C = l.useRef(null), x = l.useCallback(e => {
+  }), h = l.useMemo(() => s.slice(0, m + 1), [m, s]), v = l.useMemo(() => s.slice(m + 1), [m, s]), C = l.useRef(null), S = l.useCallback(e => {
     let t = e.contentRect.width;
     null != t && f.current !== t && (g(t), f.current = t)
   }, []);
-  (0, c.g)(C, x);
+  (0, c.g)(C, S);
   let y = 0 !== d,
     j = v.some(e => O(e.tab, e, n));
   return (0, r.jsxs)("div", {
@@ -275,7 +275,7 @@ function y(e) {
         }, e.tab)
       }), (0, r.jsx)("div", {
         ref: b,
-        children: (0, r.jsx)(S, {
+        children: (0, r.jsx)(x, {
           tabs: v,
           onTabSelect: o,
           selectedTab: n,
@@ -295,7 +295,7 @@ function y(e) {
           hasSubmenu: null != (t = e.hasSubmenu) && t,
           showNewBadge: e.tab === _.G2.ORBS && u
         }, e.tab)
-      }), 0 !== v.length ? (0, r.jsx)(S, {
+      }), 0 !== v.length ? (0, r.jsx)(x, {
         tabs: v,
         onTabSelect: o,
         selectedTab: n,

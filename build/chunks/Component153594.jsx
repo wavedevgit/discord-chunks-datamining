@@ -12,11 +12,16 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function c(e) {
-  let t = (0, r.bG)([a.Ay], () => a.Ay.isGuildCollapsed(e), [e]);
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = (0, r.bG)([a.Ay], () => a.Ay.isGuildCollapsed(e), [e]);
   return (0, i.jsx)(s.sLh, {
     id: "hide-muted-channels",
     label: o.intl.string(o.t.UwOLJO),
+    leadingAccessory: t ? {
+      type: "icon",
+      icon: s.G3N
+    } : true,
     action: () => l.A.toggleCollapseGuild(e),
-    checked: t
+    checked: n
   })
 }

@@ -2,14 +2,13 @@
 /** chunk id: 292103, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => h,
-  S_: () => _,
-  zo: () => S
+  S_: () => E,
+  zo: () => j
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk311907 = require("./311907.js"),
   Chunk554146 = require("./554146.js"),
-  Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk964486 = require("./964486.js"),
   Chunk865116 = require("./865116.js"),
@@ -27,74 +26,65 @@ var Chunk311907 = require("./311907.js"),
   Chunk641131 = require("./641131.js");
 
 function h(e) {
-  let t = (0, i.bG)([b.A], () => b.A.getGuildId()),
-    n = (0, y.Qo)(t);
-  return (0, m.ul)(e) ? (0, r.jsx)(o.Drp, {
+  let t = (0, i.bG)([y.A], () => y.A.getGuildId()),
+    n = (0, f.Qo)(t);
+  return (0, A.ul)(e) ? (0, r.jsx)(a.Drp, {
     id: "report",
-    label: n ? v.intl.string(v.t.n5EBAJ) : v.intl.string(v.t.GwbdGe),
-    action: () => (0, g.V2)(e, "web_message_context_menu"),
-    icon: n ? o.pVd : o.iFK,
+    label: n ? O.intl.string(O.t.n5EBAJ) : O.intl.string(O.t.GwbdGe),
+    action: () => (0, u.V2)(e, "web_message_context_menu"),
+    icon: n ? a.pVd : a.iFK,
     leadingAccessory: {
       type: "icon",
-      icon: n ? o.pVd : o.iFK
+      icon: n ? a.pVd : a.iFK
     },
     color: "danger"
   }) : null
 }
 
-function E() {
-  return (0, r.jsx)(u.Ay, {
-    contentTypes: [l.M.REPORT_TO_MOD_NEW_TAG],
-    children: e => {
-      let {
-        visibleContent: t
-      } = e;
-      return t === l.M.REPORT_TO_MOD_NEW_TAG ? (0, r.jsx)(o.LpS, {
-        color: a.A.colors.BACKGROUND_BRAND.css,
-        text: v.intl.string(v.t.y2b7CA)
-      }) : (0, r.jsx)(o.iFK, {
-        color: "currentColor",
-        size: "refresh_sm"
-      })
-    }
-  })
-}
-
-function S(e) {
-  let t = (0, i.bG)([p.A], () => p.A.hasReportedMessage(e.channel_id, e.id)),
-    n = (0, f.KB)(e);
-  return ((0, c.l0)(() => {
-    n && (0, d.Dr)(l.M.REPORT_TO_MOD_NEW_TAG, {
-      dismissAction: O.i.AUTO_DISMISS
+function j(e) {
+  let t = (0, i.bG)([g.A], () => g.A.hasReportedMessage(e.channel_id, e.id)),
+    n = (0, p.KB)(e);
+  return ((0, o.l0)(() => {
+    n && (0, s.Dr)(l.M.REPORT_TO_MOD_NEW_TAG, {
+      dismissAction: m.i.AUTO_DISMISS
     })
-  }), n) ? (0, r.jsx)(o.Drp, {
-    id: "report-to-mod",
-    label: t ? v.intl.string(j.default["8wsdng"]) : v.intl.string(j.default["1D+vqy"]),
-    action: () => {
-      (0, d.Dr)(l.M.REPORT_TO_MOD_NEW_TAG, {
-        dismissAction: O.i.USER_DISMISS
-      }), (0, g.dy)(e)
-    },
-    icon: (0, r.jsx)(E, {}),
-    disabled: t,
-    leadingAccessory: {
-      type: "icon",
-      icon: o.iFK
+  }), n) ? (0, r.jsx)(d.Ay, {
+    contentTypes: [l.M.REPORT_TO_MOD_NEW_TAG],
+    children: n => {
+      let {
+        visibleContent: i
+      } = n;
+      return (0, r.jsx)(a.Drp, {
+        id: "report-to-mod",
+        label: t ? O.intl.string(v.default["8wsdng"]) : O.intl.string(v.default["1D+vqy"]),
+        action: () => {
+          (0, s.Dr)(l.M.REPORT_TO_MOD_NEW_TAG, {
+            dismissAction: m.i.USER_DISMISS
+          }), (0, u.dy)(e)
+        },
+        icon: a.iFK,
+        disabled: t,
+        leadingAccessory: {
+          type: "icon",
+          icon: a.iFK
+        },
+        badge: i === l.M.REPORT_TO_MOD_NEW_TAG ? "new" : true
+      })
     }
   }) : null
 }
 
-function _(e) {
-  let t = (0, i.bG)([s.Ay], () => s.Ay.get("iar_testing")),
-    n = (0, i.bG)([A.default], () => A.default.getCurrentUser());
-  return (0, m.ul)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(o.Drp, {
+function E(e) {
+  let t = (0, i.bG)([c.Ay], () => c.Ay.get("iar_testing")),
+    n = (0, i.bG)([b.default], () => b.default.getCurrentUser());
+  return (0, A.ul)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.Drp, {
     id: "staff-test-message-report",
     label: "[STAFF] Test Message Report",
-    action: () => (0, g.Rj)(e, "web_message_context_menu"),
-    icon: o.iFK,
+    action: () => (0, u.Rj)(e, "web_message_context_menu"),
+    icon: a.iFK,
     leadingAccessory: {
       type: "icon",
-      icon: o.iFK
+      icon: a.iFK
     },
     color: "danger"
   }) : null

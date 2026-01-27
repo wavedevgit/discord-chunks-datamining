@@ -172,10 +172,10 @@ function L(e) {
     }, [s, l.id]), l.enabled && null != l.user) t = [{
     icon: b.O4,
     text: W ? S.intl.formatToPlainString(S.t.gcdJ8J, {
-      timestamp: T.default.extractTimestamp(l.id)
+      timestamp: E.default.extractTimestamp(l.id)
     }) : S.intl.formatToPlainString(S.t.Nu9sat, {
       user: null != l.user ? new y.A(l.user).tag : null,
-      timestamp: T.default.extractTimestamp(l.id)
+      timestamp: E.default.extractTimestamp(l.id)
     })
   }];
   else {
@@ -191,7 +191,7 @@ function L(e) {
   let ei = (0, i.jsxs)(x.A, {
       className: I.wx,
       align: x.A.Align.CENTER,
-      children: [(0, i.jsx)(E.A, {
+      children: [(0, i.jsx)(T.A, {
         name: "".concat(l.name),
         detailsClassName: I.h_,
         details: t

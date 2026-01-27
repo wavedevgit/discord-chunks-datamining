@@ -85,7 +85,7 @@ let j = (0, Chunk358367.A)((0, Chunk847767.A)(function(t) {
       soundId: e
     } = t, n = o.useCallback(async () => {
       try {
-        let t = (0, w.A)(e),
+        let t = (0, g.A)(e),
           n = await fetch(t),
           r = await n.blob(),
           o = function(t) {
@@ -114,12 +114,12 @@ let j = (0, Chunk358367.A)((0, Chunk847767.A)(function(t) {
       label: h.intl.string(h.t["/fzLLK"]),
       action: n
     }, "download-soundboard-sound")
-  }(s), S = (0, g.A)(s, d), A = (0, p.A)({
+  }(s), S = (0, w.A)(s, d), A = (0, p.A)({
     id: s.soundId,
     label: h.intl.string(h.t.HJikXp)
   });
   return (0, r.jsx)(c.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated": true,
     navId: "sound-button-context",
     onClose: l.Z_,
     "aria-label": h.intl.string(h.t.liqwPJ),

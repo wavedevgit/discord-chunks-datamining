@@ -1,7 +1,7 @@
 /** Chunk was on 40394 **/
 /** chunk id: 671483, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,19 +16,19 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(n, t) {
-  let h = (0, l.bG)([d.A], () => d.A.can(A.xBc.MANAGE_CHANNELS, t)),
-    g = (0, s.Ay)(n),
-    j = (0, o.b)(n),
-    v = (0, l.bG)([u.A], () => u.A.getChannelStatus(n)),
-    p = null != v && v.length > 0;
-  return n.isGuildVoice() && (h || g) ? !j && h && p ? (0, i.jsx)(r.Drp, {
+function g(n, t) {
+  let g = (0, l.bG)([d.A], () => d.A.can(A.xBc.MANAGE_CHANNELS, t)),
+    h = (0, s.Ay)(n),
+    v = (0, o.b)(n),
+    j = (0, l.bG)([u.A], () => u.A.getChannelStatus(n)),
+    p = null != j && j.length > 0;
+  return n.isGuildVoice() && (g || h) ? !v && g && p ? (0, i.jsx)(r.Drp, {
     id: "clear-status",
     label: b.intl.string(b.t["22CYiZ"]),
     action: () => {
       a.Ay.updateVoiceChannelStatus(n.id, "")
     }
-  }) : j && g ? (0, i.jsx)(r.Drp, {
+  }) : v && h ? (0, i.jsx)(r.Drp, {
     id: "set-status",
     label: b.intl.string(b.t.RBd5PW),
     action: () => {

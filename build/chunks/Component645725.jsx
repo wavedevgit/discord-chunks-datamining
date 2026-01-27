@@ -120,7 +120,7 @@ function x(e) {
           closePopout: t
         } = e;
         return (0, r.jsxs)(c.W1t, {
-          "data-menu-mixed": true,
+          "data-menu-needs-review": true,
           className: T.qp,
           navId: "app-details-more-menu",
           onClose: t,
@@ -157,7 +157,9 @@ function x(e) {
                   source: "app_launcher_app_details"
                 }))
               }
-            }) : null, a instanceof g.Ay ? (0, r.jsx)(c.Drp, {
+            }) : null, Y]
+          }), (0, r.jsx)(c.rXV, {
+            children: a instanceof g.Ay ? (0, r.jsx)(c.Drp, {
               id: "report-app",
               color: "danger",
               label: N.intl.string(N.t.jhJzez),
@@ -170,7 +172,7 @@ function x(e) {
                   contextualChannelId: null == K ? true : K.id
                 })
               }
-            }) : null, Y]
+            }) : null
           }), (0, r.jsx)(c.rXV, {
             children: H
           })]

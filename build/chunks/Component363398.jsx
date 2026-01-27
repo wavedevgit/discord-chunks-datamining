@@ -1,7 +1,7 @@
 /** Chunk was on 1636 **/
 /** chunk id: 363398, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => j
 }), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -51,13 +51,13 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = Chunk411335.uh.KEYWORD;
+let h = Chunk411335.uh.KEYWORD;
 
-function h(e, t) {
+function j(e, t) {
   let {
     perGuildMaxCount: n
-  } = s.i$[j], {
-    isLoading: h,
+  } = s.i$[h], {
+    isLoading: j,
     saveRule: E,
     errorMessage: S
   } = (0, u.S)(), {
@@ -67,7 +67,7 @@ function h(e, t) {
     updateRule: w
   } = (0, c.wP)(t), M = i.useMemo(() => {
     var e;
-    return null != (e = x[j]) ? e : []
+    return null != (e = x[h]) ? e : []
   }, [x]), C = 0 === M.length, N = n > M.length && !C;
   if (!i.useMemo(() => (0, d.i_)(t), [t]) || null == e || 0 === e.length || null == t) return null;
   let R = e.split(" "),
@@ -79,7 +79,7 @@ function h(e, t) {
   }
   let L = () => {
       null != t && ((0, a.Z_)(), f.A.open(t, y.BEX.GUILD_AUTOMOD), setTimeout(() => {
-        _(t, j, {
+        _(t, h, {
           triggerMetadata: {
             keywordFilter: [e],
             regexPatterns: [],
@@ -106,9 +106,9 @@ function h(e, t) {
       id: "add-first-rule",
       label: A.intl.string(A.t.f72Zqb),
       action: L,
-      disabled: h
+      disabled: j
     }), M.map(e => {
-      let t = (0, s.J6)(j).reduce((t, n) => {
+      let t = (0, s.J6)(h).reduce((t, n) => {
         let r = e.actions.find(e => {
           let {
             type: t
@@ -130,7 +130,7 @@ function h(e, t) {
         }),
         group: "automod-rule-selection",
         checked: false,
-        disabled: h,
+        disabled: j,
         action: () => U(e)
       }, e.id)
     }), N && (0, r.jsxs)(r.Fragment, {
@@ -138,7 +138,7 @@ function h(e, t) {
         id: "add-another-rule",
         label: A.intl.string(A.t["0K5jDE"]),
         action: L,
-        disabled: h
+        disabled: j
       })]
     })]
   })), (0, r.jsx)(l.Drp, {

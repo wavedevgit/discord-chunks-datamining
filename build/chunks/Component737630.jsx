@@ -75,13 +75,13 @@ let G = e => {
       {
         categories: V,
         refreshCategories: K
-      } = (0, x.Ay)({
+      } = (0, S.Ay)({
         logPerf: true
       }, {
         sessionId: n,
         tab: z
       }),
-      W = (0, S.x)(V),
+      W = (0, x.x)(V),
       [Y, q] = l.useState(),
       Z = (0, o.bG)([E.A], () => {
         var e;

@@ -161,7 +161,7 @@ function O(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(a.W1t, {
-          "data-menu-mixed": true,
+          "data-menu-migrated-auto": true,
           navId: "user-profile-overflow-menu",
           onSelect: true,
           onClose: t,

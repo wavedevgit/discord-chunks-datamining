@@ -18,7 +18,7 @@ function s(t) {
     onSelect: s
   } = t, u = (0, o.A)(n, e);
   return a.isPlatformEmbedded && null != u ? (0, l.jsx)(i.W1t, {
-    "data-menu-mixed-auto": true,
+    "data-menu-migrated-auto": true,
     navId: "image-context",
     onClose: r.Z_,
     "aria-label": c.intl.string(c.t.Zow2V5),

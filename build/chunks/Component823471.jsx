@@ -1,4 +1,4 @@
-/** Chunk was on 41727 **/
+/** Chunk was on 77870 **/
 /** chunk id: 823471, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => w
@@ -113,7 +113,7 @@ function P(e) {
     (0, O.iN)(t.id)
   }
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated": true,
     navId: "thread-context",
     onClose: n,
     "aria-label": S.intl.string(S.t["1NBjqb"]),
@@ -133,6 +133,10 @@ function P(e) {
         id: "search",
         label: S.intl.string(S.t["5h0QOP"]),
         icon: i.tfB,
+        trailingIndicator: {
+          type: "icon",
+          icon: i.tfB
+        },
         action: function() {
           L(), setTimeout(() => {
             j._.dispatch(C.jej.FOCUS_SEARCH, {
@@ -144,6 +148,10 @@ function P(e) {
         id: "pins",
         label: S.intl.string(S.t["2BSH7n"]),
         icon: i.tfB,
+        trailingIndicator: {
+          type: "icon",
+          icon: i.tfB
+        },
         action: function() {
           L(), j._.dispatch(C.jej.TOGGLE_CHANNEL_PINS)
         }

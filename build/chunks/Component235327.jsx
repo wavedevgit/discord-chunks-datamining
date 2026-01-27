@@ -1,7 +1,7 @@
 /** Chunk was on 39572 **/
-/** chunk id: 235327, original params: e,i,l (module,exports,require) **/
+/** chunk id: 235327, original params: t,a,e (module,exports,require) **/
 require.d(exports, {
-  default: () => r
+  default: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,30 +10,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk50268 = require("./50268.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function r(e) {
+function d(t) {
   let {
-    guild: i,
-    shiftId: l,
-    onSelect: r,
+    guild: a,
+    shiftId: e,
+    onSelect: d,
     closePopout: o,
     "aria-label": u
-  } = e, p = (0, c.A)({
-    id: i.id,
-    label: d.intl.string(d.t["94lLD7"]),
-    shiftId: l,
+  } = t, p = (0, r.A)({
+    id: a.id,
+    label: c.intl.string(c.t["94lLD7"]),
+    shiftId: e,
     onSuccess: o
-  }), h = t.useCallback(e => {
-    e.stopPropagation()
+  }), h = l.useCallback(t => {
+    t.stopPropagation()
   }, []);
-  return (0, n.jsx)(a.DUT, {
+  return (0, i.jsx)(n.DUT, {
     onClick: h,
-    children: (0, n.jsx)(a.W1t, {
-      "data-menu-mixed": true,
-      onSelect: r,
+    children: (0, i.jsx)(n.W1t, {
+      "data-menu-migrated-auto": true,
+      onSelect: d,
       navId: "guild-discovery-context-menu",
-      "aria-label": null != u ? u : d.intl.string(d.t.ogxXGq),
+      "aria-label": null != u ? u : c.intl.string(c.t.ogxXGq),
       onClose: s.Z_,
-      children: (0, n.jsx)(a.rXV, {
+      children: (0, i.jsx)(n.rXV, {
         children: p
       })
     })

@@ -2,7 +2,7 @@
 /** chunk id: 190294, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,9 +10,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
   Chunk365491 = require("./365491.js"),
   Chunk758836 = require("./758836.js"),
-  Chunk985018 = require("./985018.jsx"),
-  Chunk78716 = require("./78716.js");
-let d = [{
+  Chunk985018 = require("./985018.jsx");
+let u = [{
     tab: Chunk758836.G2.AVATAR_DECORATIONS,
     labelKey: Chunk985018.t.dRZYNE
   }, {
@@ -28,7 +27,7 @@ let d = [{
     tab: Chunk758836.G2.CATALOG,
     labelKey: Chunk985018.t.xFcotU
   }],
-  g = {
+  d = {
     [Chunk641150.q.ALL]: Chunk758836.G2.CATALOG,
     [Chunk641150.q.AVATAR_DECORATION]: Chunk758836.G2.AVATAR_DECORATIONS,
     [Chunk641150.q.PROFILE_EFFECT]: Chunk758836.G2.PROFILE_EFFECTS,
@@ -36,29 +35,29 @@ let d = [{
     [Chunk641150.q.BUNDLE]: Chunk758836.G2.BUNDLES
   };
 
-function f(e) {
+function g(e) {
   let {
     tabs: t,
     selectedTab: n,
     onTabSelect: s,
-    onClose: f,
-    showOrbRentalNewBadge: m
+    onClose: g,
+    showOrbRentalNewBadge: f
   } = e, {
-    itemTypeFilters: p
-  } = (0, i.v)(), _ = l.useMemo(() => {
-    if (n === o.G2.CATALOG && p.size > 0) {
-      let e = g[Array.from(p)[0]];
+    itemTypeFilters: m
+  } = (0, i.v)(), p = l.useMemo(() => {
+    if (n === o.G2.CATALOG && m.size > 0) {
+      let e = d[Array.from(m)[0]];
       if (null != e) return e
     }
     return n
-  }, [n, p]);
+  }, [n, m]);
   return (0, r.jsx)(a.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "collectibles-shop-tabs-overflow-menu",
     "aria-label": c.intl.string(c.t["UKOtz+"]),
     hideScroller: true,
-    onClose: f,
-    onSelect: f,
+    onClose: g,
+    onSelect: g,
     children: (0, r.jsx)(a.rXV, {
       children: t.map(e => {
         let {
@@ -72,39 +71,41 @@ function f(e) {
             id: t,
             label: l,
             icon: e ? a.yr3 : true,
+            leadingAccessory: e ? {
+              type: "icon",
+              icon: a.yr3
+            } : true,
             hasSubmenu: true,
-            children: d.map(e => {
+            children: u.map(e => {
               let {
                 tab: t,
                 labelKey: n
-              } = e, l = t === _;
+              } = e, l = t === p;
               return (0, r.jsx)(a.Drp, {
                 id: t,
                 label: c.intl.string(n),
                 icon: l ? a.yr3 : true,
+                leadingAccessory: l ? {
+                  type: "icon",
+                  icon: a.yr3
+                } : true,
                 action: () => {
-                  s(t), f()
+                  s(t), g()
                 }
               }, t)
             })
           }, t)
         }
-        let g = t === o.G2.ORBS && m,
-          p = (0, r.jsxs)("span", {
-            style: {
-              display: "flex",
-              alignItems: "center",
-              gap: "4px"
-            },
-            children: [l, g && (0, r.jsx)(a.LpS, {
-              text: c.intl.string(c.t.y2b7CA),
-              className: u.Ad
-            })]
-          });
+        let d = t === o.G2.ORBS && f;
         return (0, r.jsx)(a.Drp, {
           id: t,
-          void_label: p,
+          label: l,
           icon: t === n ? a.yr3 : true,
+          leadingAccessory: t === n ? {
+            type: "icon",
+            icon: a.yr3
+          } : true,
+          badge: d ? "new" : true,
           action: () => s(t)
         }, t)
       })

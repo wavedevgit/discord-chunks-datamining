@@ -80,6 +80,10 @@ function m(e) {
     id: "guild-connection-roles",
     label: l.intl.string(l.t.ghtnss),
     icon: a.qYV,
+    leadingAccessory: {
+      type: "icon",
+      icon: a.qYV
+    },
     action: () => h(e.id)
   }) : null
 }

@@ -47,13 +47,13 @@ function R(e) {
   } = (0, v.A)(), H = (0, a.bG)([u.default], () => u.default.getCurrentUser()), G = (0, a.bG)([f.A], () => f.A.productsWithVariantsAsGroup), [U, F] = l.useState(1), z = (0, c.DP)(), V = (0, i.qB)(z), [K, W, Y] = l.useMemo(() => {
     switch (P) {
       case C.G2.AVATAR_DECORATIONS:
-        return [x.intl.string(x.t.dRZYNE), V ? T.A : j.A, s.R.AVATAR_DECORATION];
+        return [S.intl.string(S.t.dRZYNE), V ? T.A : j.A, s.R.AVATAR_DECORATION];
       case C.G2.PROFILE_EFFECTS:
-        return [x.intl.string(x.t["1cNjtx"]), V ? N.A : k.A, s.R.PROFILE_EFFECT];
+        return [S.intl.string(S.t["1cNjtx"]), V ? N.A : k.A, s.R.PROFILE_EFFECT];
       case C.G2.NAMEPLATES:
-        return [x.intl.string(x.t.V68Fqz), V ? I.A : L.A, s.R.NAMEPLATE];
+        return [S.intl.string(S.t.V68Fqz), V ? I.A : L.A, s.R.NAMEPLATE];
       case C.G2.BUNDLES:
-        return [x.intl.string(x.t.FYFpps), V ? y.A : O.A, s.R.BUNDLE]
+        return [S.intl.string(S.t.FYFpps), V ? y.A : O.A, s.R.BUNDLE]
     }
   }, [P, V]), q = (0, m.p)(), Z = l.useMemo(() => q(G.filter(e => {
     var t;
@@ -85,13 +85,13 @@ function R(e) {
       style: {
         backgroundImage: "url(".concat(W, ")")
       },
-      className: S.cI,
+      className: x.cI,
       children: (0, r.jsx)(o.Heading, {
         variant: "heading-xxl/extrabold",
         children: K
       })
     }), (0, r.jsx)("div", {
-      className: S.ZE,
+      className: x.ZE,
       children: X.slice(40 * (U - 1), 40 * U).map((e, t) => null == f.A.getCategory(e.categorySkuId) ? null : (0, r.jsx)(g.R9, {
         newValue: {
           tilePosition: t
@@ -102,7 +102,7 @@ function R(e) {
         }, e.skuId)
       }, e.skuId))
     }), X.length > 40 && (0, r.jsx)("div", {
-      className: S.Ej,
+      className: x.Ej,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.mgR, {
           currentPage: U,

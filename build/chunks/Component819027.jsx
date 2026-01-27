@@ -29,6 +29,10 @@ function p(e) {
         appContext: e
       }), (0, i.A)(e, e === c.BRT.POPOUT)
     },
-    icon: o.Zes
+    icon: o.Zes,
+    leadingAccessory: {
+      type: "icon",
+      icon: o.Zes
+    }
   })
 }

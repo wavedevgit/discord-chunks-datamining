@@ -1,7 +1,7 @@
 /** Chunk was on 67596 **/
 /** chunk id: 113255, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,29 +16,29 @@ var Chunk397927 = require("./397927.js"),
   Chunk317910 = require("./317910.jsx"),
   Chunk475777 = require("./475777.js"),
   Chunk985018 = require("./985018.jsx");
-let y = (0, Chunk358367.A)(function(e) {
+let d = (0, Chunk358367.A)(function(e) {
   let {
     channel: t,
     guild: n,
-    onSelect: l
-  } = e, a = (0, p.A)(t), y = (0, O.A)(t, n), d = (0, u.A)(t, n), j = (0, s.A)(t, n), A = (0, b.A)(t), g = (0, o.A)({
+    onSelect: o
+  } = e, l = (0, p.A)(t), d = (0, O.A)(t, n), f = (0, u.A)(t, n), A = (0, s.A)(t, n), j = (0, b.A)(t), E = (0, a.A)({
     id: t.id,
-    label: f.intl.string(f.t.gFHI3k)
+    label: y.intl.string(y.t.gFHI3k)
   });
   return (0, r.jsxs)(c.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated": true,
     navId: "channel-context",
     onClose: i.Z_,
-    "aria-label": f.intl.string(f.t.Xm41aV),
-    onSelect: l,
+    "aria-label": y.intl.string(y.t.Xm41aV),
+    onSelect: o,
     children: [(0, r.jsx)(c.rXV, {
-      children: a
+      children: l
     }), (0, r.jsxs)(c.rXV, {
-      children: [y, d, j]
+      children: [d, f, A]
     }), (0, r.jsx)(c.rXV, {
-      children: A
+      children: j
     }), (0, r.jsx)(c.rXV, {
-      children: g
+      children: E
     })]
   })
 }, [Chunk793574.A.CONTEXT_MENU, Chunk793574.A.CHANNEL_ACTIVITY_FEED_VOICE_MENU])

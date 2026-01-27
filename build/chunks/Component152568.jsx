@@ -93,23 +93,23 @@ let O = e => {
       }
     }, [O.ctaRoute, z]);
   if (null == D || N) return null;
-  let K = a()(S.nM, S.Tq, S.TS, S.YB, {
-      [S._1]: M,
-      [S.vb]: H
+  let K = a()(x.nM, x.Tq, x.TS, x.YB, {
+      [x._1]: M,
+      [x.vb]: H
     }),
     W = (0, r.jsxs)(r.Fragment, {
       children: [O.isDismissible && (0, r.jsx)("div", {
-        className: S.Mh,
+        className: x.Mh,
         children: (0, r.jsx)(c.JnF, {
           size: "sm",
           onClick: e => {
             e.stopPropagation(), F()
           },
-          "aria-label": x.intl.string(x.t.WAI6xu)
+          "aria-label": S.intl.string(S.t.WAI6xu)
         })
       }), (0, r.jsx)("div", {
-        className: a()(S.zK, {
-          [S._1]: M
+        className: a()(x.zK, {
+          [x._1]: M
         }),
         style: null != I ? {
           height: "".concat(I, "px")
@@ -118,24 +118,24 @@ let O = e => {
           ref: L,
           src: D,
           alt: O.title,
-          className: a()(S.LN, {
-            [S.d5]: M
+          className: a()(x.LN, {
+            [x.d5]: M
           })
         })
       }), (0, r.jsx)("div", {
-        className: a()(S.Ep, {
-          [S.Qq]: G
+        className: a()(x.Ep, {
+          [x.Qq]: G
         }),
         style: {
           maxHeight: null != I ? "".concat(I, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
-          className: S.E8,
+          className: x.E8,
           children: [(0, r.jsx)(c.Heading, {
             style: {
               color: null != (n = O.bannerTextColor) ? n : "var(--text-strong)"
             },
-            className: M ? S.O2 : true,
+            className: M ? x.O2 : true,
             variant: "heading-xl/bold",
             children: O.title
           }), (0, r.jsx)(c.Text, {
@@ -144,22 +144,22 @@ let O = e => {
             },
             lineClamp: 2,
             variant: M ? "text-md/medium" : "text-sm/medium",
-            children: M ? x.intl.format(x.t.SFFP7K, {
+            children: M ? S.intl.format(S.t.SFFP7K, {
               helpdeskArticle: m.A.getArticleURL(v.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : O.body
           }), G && (0, r.jsxs)("div", {
-            className: S.nP,
+            className: x.nP,
             children: [(0, r.jsx)(c.Button, {
               variant: "overlay-primary",
               onClick: e => {
                 var t;
-                e.stopPropagation(), V(null != (t = O.ctaText) ? t : x.intl.string(x.t.jVcuVY))
+                e.stopPropagation(), V(null != (t = O.ctaText) ? t : S.intl.string(S.t.jVcuVY))
               },
-              text: null != (s = O.ctaText) ? s : x.intl.string(x.t.jVcuVY)
+              text: null != (s = O.ctaText) ? s : S.intl.string(S.t.jVcuVY)
             }), U && (0, r.jsx)("img", {
               src: O.logoURL,
               alt: "",
-              className: S.bU
+              className: x.bU
             })]
           })]
         })

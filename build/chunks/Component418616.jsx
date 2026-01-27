@@ -1,24 +1,25 @@
 /** Chunk was on 21738 **/
 /** chunk id: 418616, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
-  Chunk191711 = require("./191711.jsx"),
+  Chunk397927 = require("./397927.js"),
   Chunk773669 = require("./773669.js"),
   Chunk417426 = require("./417426.js"),
   Chunk747550 = require("./747550.js"),
   Chunk282026 = require("./282026.js"),
   Chunk965660 = require("./965660.js"),
   Chunk324580 = require("./324580.js"),
-  Chunk985018 = require("./985018.jsx");
+  Chunk985018 = require("./985018.jsx"),
+  Chunk678042 = require("./678042.js");
 
-function g(e) {
+function f(e) {
   let {
     loadId: t
-  } = e, n = (0, l.bG)([s.default], () => (0, d.Kv)([s.default])), g = u.A.useField("languageCode"), f = null != g ? g : n, m = i.useCallback(e => {
+  } = e, n = (0, l.bG)([s.default], () => (0, d.Kv)([s.default])), f = u.A.useField("languageCode"), m = i.useCallback(e => {
     u.A.setState({
       languageCode: e
     });
@@ -33,17 +34,18 @@ function g(e) {
     })
   }, [t]), A = i.useMemo(() => (0, p.tO)().map(e => ({
     id: e.code,
+    value: e.code,
     label: e.name
-  })), []), _ = i.useMemo(() => {
-    var e;
-    let t = (0, p.tO)().find(e => e.code === f);
-    return null != (e = null == t ? true : t.name) ? e : h.intl.string(h.t.LQLMGP)
-  }, [f]);
-  return (0, r.jsx)(a.Ay, {
-    items: A,
-    title: _,
-    onSelect: m,
-    selected: f,
-    "aria-label": h.intl.string(h.t.Ng5cTK)
+  })), []);
+  return (0, r.jsx)("div", {
+    className: g.k,
+    children: (0, r.jsx)(a.ZiE, {
+      selectionMode: "single",
+      label: h.intl.string(h.t.Ng5cTK),
+      hideLabel: true,
+      value: null != f ? f : n,
+      options: A,
+      onSelectionChange: m
+    })
   })
 }

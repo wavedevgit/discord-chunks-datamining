@@ -1,5 +1,5 @@
-/** Chunk was on 70690 **/
-/** chunk id: 513167, original params: e,t,o (module,exports,require) **/
+/** Chunk was on 77870 **/
+/** chunk id: 513167, original params: e,t,n (module,exports,require) **/
 module.exports = {
   lj: "socialLinks__7df54",
   nf: "link__7df54",

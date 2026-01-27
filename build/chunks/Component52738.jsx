@@ -169,5 +169,10 @@ function y(e) {
         })
       })
     }
+    case "guildTag":
+      return (0, r.jsx)("div", {
+        className: d.guildTagAccessory,
+        children: t.element
+      })
   }
 }

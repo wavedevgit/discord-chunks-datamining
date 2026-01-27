@@ -1,7 +1,7 @@
 /** Chunk was on 21968 **/
 /** chunk id: 971157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => T
+  A: () => E
 }), require("./896048.js"), require("./321073.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -96,25 +96,25 @@ function w(e) {
   }), t))
 }
 
-function T(e) {
+function E(e) {
   let {
     guild: t,
     applicationIntegration: n,
     selectableWebhookChannels: a,
     editedWebhook: c,
     errors: u,
-    canNavigate: T
+    canNavigate: E
   } = e, {
-    application: E,
+    application: T,
     integration: C,
     webhooks: S
-  } = n, [I, P] = (0, s.yK)([g.A], () => [g.A.can(A.xBc.MANAGE_ROLES, t), null == E.bot || g.A.canManageUser(A.xBc.MANAGE_GUILD, E.bot.id, t)], [E.bot, t]), k = (0, s.bG)([g.A], () => g.A.can(A.xBc.MANAGE_WEBHOOKS, t), [t]), R = r.useCallback(() => {
-    T() && (0, o.qfG)(e => (0, i.jsx)(w, N({
+  } = n, [I, P] = (0, s.yK)([g.A], () => [g.A.can(A.xBc.MANAGE_ROLES, t), null == T.bot || g.A.canManageUser(A.xBc.MANAGE_GUILD, T.bot.id, t)], [T.bot, t]), k = (0, s.bG)([g.A], () => g.A.can(A.xBc.MANAGE_WEBHOOKS, t), [t]), R = r.useCallback(() => {
+    E() && (0, o.qfG)(e => (0, i.jsx)(w, N({
       guild: t,
-      application: E,
+      application: T,
       integration: C
     }, e)))
-  }, [E, T, t, C]), L = r.useMemo(() => {
+  }, [T, E, t, C]), L = r.useMemo(() => {
     let e = [{
       icon: o.O4,
       text: v.intl.formatToPlainString(v.t.gcdJ8J, {
@@ -129,7 +129,7 @@ function T(e) {
     }), e
   }, [C.id, C.user]), D = r.useMemo(() => {
     var e;
-    return null != E.bot && (null == (e = C.scopes) ? true : e.includes(l.F.BOT)) ? (0, i.jsx)(O.A, {
+    return null != T.bot && (null == (e = C.scopes) ? true : e.includes(l.F.BOT)) ? (0, i.jsx)(O.A, {
       guild: t,
       applicationIntegration: n
     }) : (0, i.jsx)(o.ZpM, {
@@ -141,27 +141,27 @@ function T(e) {
         children: v.intl.string(v.t.pfLnza)
       })
     })
-  }, [E.bot, n, t, C.scopes]);
+  }, [T.bot, n, t, C.scopes]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(x.A, {
-      name: E.name,
+      name: T.name,
       imageSrc: b.Ay.getApplicationIconURL({
-        id: E.id,
-        icon: E.icon,
+        id: T.id,
+        icon: T.icon,
         size: 32
       }),
       details: L,
       isHeader: true
-    }), (null == E ? true : E.description) != null ? (0, i.jsx)(m.A, {
-      userBio: E.description,
+    }), (null == T ? true : T.description) != null ? (0, i.jsx)(m.A, {
+      userBio: T.description,
       className: _.ux
     }) : null, I ? (0, i.jsx)(p.A, {
-      application: E,
-      canNavigate: T,
+      application: T,
+      canNavigate: E,
       guildId: t.id
     }) : null, (0, i.jsx)(o.cGx, {
       className: _.zN
-    }), null != E.bot ? (0, i.jsxs)("div", {
+    }), null != T.bot ? (0, i.jsxs)("div", {
       className: _.uW,
       children: [(0, i.jsx)(j.A, {
         icon: (0, i.jsx)(o.CnV, {
@@ -183,7 +183,7 @@ function T(e) {
         editedWebhook: c,
         selectableWebhookChannels: a,
         errors: u,
-        canNavigate: T
+        canNavigate: E
       }) : (0, i.jsx)(o.ZpM, {
         className: _.aM,
         editable: true,

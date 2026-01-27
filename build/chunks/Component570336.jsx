@@ -16,12 +16,12 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function f(e, t, n) {
-  let [f, p] = (0, i.yK)([u.A, a.A, l.A], () => {
+  let [f, p] = (0, i.yK)([u.A, c.A, l.A], () => {
     let e = u.A.getChannelId(t),
-      n = a.A.getChannel(e);
+      n = c.A.getChannel(e);
     return [e, null != n && (n.isPrivate() || l.A.can(b.xBc.SEND_MESSAGES, n))]
   }, [t]), A = n === b.BRT.POPOUT;
-  return !p || A ? null : (0, r.jsx)(c.Drp, {
+  return !p || A ? null : (0, r.jsx)(a.Drp, {
     id: "mention",
     label: d.intl.string(d.t.P8tvKG),
     action: function() {

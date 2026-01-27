@@ -1,5 +1,5 @@
 /** Chunk was on 19418 **/
-/** chunk id: 226958, original params: e,t,n (module,exports,require) **/
+/** chunk id: 226958, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   A: () => u
 });
@@ -14,37 +14,41 @@ var Chunk735438 = require("./735438.js"),
   Chunk985018 = require("./985018.jsx");
 
 function u(e) {
-  let t = (0, d.H_)(e),
+  let n = (0, d.H_)(e),
     r = (0, a.bG)([c.A], () => !l().isEmpty(c.A.getThreadsForGuild(e.id)));
-  return t && r ? (0, i.jsx)(o.Drp, {
+  return n && r ? (0, i.jsx)(o.Drp, {
     id: "active-threads",
     label: s.intl.string(s.t.TM6err),
     icon: o.oyn,
+    leadingAccessory: {
+      type: "icon",
+      icon: o.oyn
+    },
     action: () => {
       (0, o.mMO)(async () => {
         let {
-          default: t
-        } = await n.e("70215").then(n.bind(n, 400954));
-        return n => (0, i.jsx)(t, function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
+          default: n
+        } = await t.e("70215").then(t.bind(t, 400954));
+        return t => (0, i.jsx)(n, function(e) {
+          for (var n = 1; n < arguments.length; n++) {
+            var t = null != arguments[n] ? arguments[n] : {},
+              i = Object.keys(t);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            }))), i.forEach(function(n) {
               var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
+              i = t[n], n in e ? Object.defineProperty(e, n, {
                 value: i,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = i
+              }) : e[n] = i
             })
           }
           return e
         }({
           guildId: e.id
-        }, n))
+        }, t))
       })
     }
   }) : null

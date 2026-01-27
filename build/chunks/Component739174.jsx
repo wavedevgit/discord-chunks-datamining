@@ -28,7 +28,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk393800 = require("./393800.js");
 
-function T(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function E(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function C(e) {
       let {
         default: e
       } = await n.e("15687").then(n.bind(n, 646938));
-      return t => (0, i.jsx)(e, E(T({}, t), {
+      return t => (0, i.jsx)(e, T(E({}, t), {
         id: l,
         label: N.intl.string(N.t.oJ1Muw)
       }))
@@ -174,7 +174,7 @@ function I(e) {
       let {
         default: e
       } = await n.e("41072").then(n.bind(n, 165747));
-      return t => (0, i.jsx)(e, E(T({}, t), {
+      return t => (0, i.jsx)(e, T(E({}, t), {
         guild: l,
         role: m
       }))
@@ -183,7 +183,7 @@ function I(e) {
   return (null == m ? true : m.name) == null ? null : (0, i.jsxs)("div", {
     onContextMenu: b,
     className: w.Cv,
-    children: [null != g ? (0, i.jsx)(h.A, T({
+    children: [null != g ? (0, i.jsx)(h.A, E({
       className: a()(w.__invalid_icon, w.Sl)
     }, g)) : (0, i.jsx)(u.iTF, {
       size: "custom",

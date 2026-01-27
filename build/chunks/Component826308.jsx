@@ -1,5 +1,5 @@
 /** Chunk was on 84264 **/
-/** chunk id: 826308, original params: n,e,t (module,exports,require) **/
+/** chunk id: 826308, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
   A: () => p
 });
@@ -14,7 +14,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx");
 
 function p(n) {
-  let e = o.useCallback(() => {
+  let t = o.useCallback(() => {
     c()(null != n, "text cannot be null"), r.default.track(s.HAw.MESSAGE_MENU_GOOGLE_SEARCHED), window.open("https://www.google.com/search?q=".concat(encodeURIComponent(n)), "_blank")
   }, [n]);
   return d.isPlatformEmbedded && null != n && (null == n ? true : n.length) !== 0 ? [(0, l.jsx)(i.Drp, {
@@ -24,6 +24,6 @@ function p(n) {
       type: "icon",
       icon: i.$p$
     },
-    action: e
+    action: t
   }, "search-google")] : null
 }

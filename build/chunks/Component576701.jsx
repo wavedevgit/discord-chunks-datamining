@@ -1,7 +1,7 @@
 /** Chunk was on 57550 **/
 /** chunk id: 576701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,37 +18,41 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function j(e) {
+function f(e) {
   var t;
-  let n, j, v, g, {
+  let n, f, g, y, {
       channel: A,
-      onSelect: h,
-      onInteraction: y
+      onSelect: E,
+      onInteraction: j
     } = e,
-    E = (0, p.A)(),
+    D = (0, p.A)(),
     P = d.vL.useSetting(),
-    D = (t = null != A ? A : true, n = (0, l.bG)([a.A], () => a.A.getWindow(O.MLl.CHANNEL_CALL_POPOUT)), null == t || null != n ? null : (0, r.jsx)(i.Drp, {
+    h = (t = null != A ? A : true, n = (0, l.bG)([a.A], () => a.A.getWindow(O.MLl.CHANNEL_CALL_POPOUT)), null == t || null != n ? null : (0, r.jsx)(i.Drp, {
       id: "popout-call",
-      label: f.intl.string(f.t.JzWezz),
+      label: v.intl.string(v.t.JzWezz),
       icon: i.tfB,
+      trailingIndicator: {
+        type: "icon",
+        icon: i.tfB
+      },
       action: () => s.openChannelCallPopout(t)
     })),
-    w = (j = (0, l.bG)([b.A], () => b.A.getGuild(null == A ? true : A.guild_id)), v = (0, c.A)(null != A ? A : null, null != j ? j : null), g = (0, u.A)(null != A ? A : null), null != A && A.isGuildVocal() ? (0, r.jsxs)(i.rXV, {
-      children: [v, g]
+    w = (f = (0, l.bG)([b.A], () => b.A.getGuild(null == A ? true : A.guild_id)), g = (0, u.A)(null != A ? A : null, null != f ? f : null), y = (0, c.A)(null != A ? A : null), null != A && A.isGuildVocal() ? (0, r.jsxs)(i.rXV, {
+      children: [g, y]
     }) : null);
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "rtc-channel",
-    "aria-label": f.intl.string(f.t.ogxXGq),
+    "aria-label": v.intl.string(v.t.ogxXGq),
     onClose: o.Z_,
-    onSelect: h,
-    onInteraction: y,
-    children: [E, w, (0, r.jsxs)(i.rXV, {
-      children: [D, (0, r.jsx)(i.sLh, {
+    onSelect: E,
+    onInteraction: j,
+    children: [D, w, (0, r.jsxs)(i.rXV, {
+      children: [h, (0, r.jsx)(i.sLh, {
         id: "show-voice-states",
         checked: P,
         action: () => d.vL.updateSetting(!P),
-        label: f.intl.string(f.t.vkbSB0)
+        label: v.intl.string(v.t.vkbSB0)
       })]
     })]
   })

@@ -42,9 +42,9 @@ function p(e) {
         mobilePush: o.Ay.isMobilePushEnabled(e.id),
         messageNotifications: o.Ay.getMessageNotifications(e.id),
         notifyHighlights: o.Ay.getNotifyHighlights(e.id)
-      }), [e.id]), h = A === u.guM.DISABLED, O = (0, a.A)(e.id);
+      }), [e.id]), h = A === u.guM.DISABLED, y = (0, a.A)(e.id);
 
-      function y(t, n) {
+      function O(t, n) {
         l.A.updateGuildNotificationSettings(e.id, t, n)
       }
       return (0, i.jsxs)(i.Fragment, {
@@ -58,7 +58,7 @@ function p(e) {
               group: "guild-notifications",
               id: "".concat(t),
               label: n,
-              action: () => y({
+              action: () => O({
                 message_notifications: t
               }, c.G_.notifications(t)),
               checked: t === b
@@ -68,14 +68,14 @@ function p(e) {
           children: [(0, i.jsx)(s.sLh, {
             id: "suppress-everyone",
             label: d.intl.format(d.t.OWiWAp, {}),
-            action: () => y({
+            action: () => O({
               suppress_everyone: !t
             }, c.G_.suppressEveryone(!t)),
             checked: t
           }), (0, i.jsx)(s.sLh, {
             id: "suppress-roles",
             label: d.intl.string(d.t["O/QdoD"]),
-            action: () => y({
+            action: () => O({
               suppress_roles: !n
             }, c.G_.suppressRoles(!n)),
             checked: n
@@ -83,17 +83,17 @@ function p(e) {
             id: "suppress-highlights",
             label: d.intl.string(d.t.gPuteJ),
             action: () => {
-              y({
+              O({
                 notify_highlights: h ? u.guM.ENABLED : u.guM.DISABLED
               }, c.G_.highlights(h))
             },
             checked: h
-          }), O]
+          }), y]
         }), (0, i.jsx)(s.rXV, {
           children: (0, i.jsx)(s.sLh, {
             id: "mobile-push",
             label: d.intl.string(d.t.h1DL66),
-            action: () => y({
+            action: () => O({
               mobile_push: !p
             }, c.G_.mobilePush(!p)),
             checked: p

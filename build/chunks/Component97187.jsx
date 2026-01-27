@@ -29,7 +29,7 @@ function E(t) {
     d.A.removeGuildJoinRequest(E), g.A.getGuildId() === E && (0, c.pX)(A.BVt.ME)
   };
   return (0, l.jsxs)(r.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "join-request-guild-context",
     onClose: s.Z_,
     "aria-label": m.intl.string(m.t.HpQykc),

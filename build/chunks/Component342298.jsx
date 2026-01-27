@@ -83,8 +83,8 @@ class O extends(i = Chunk64700.PureComponent) {
       className: _,
       imageClassName: N,
       iconClassName: w,
-      iconWrapperClassName: T,
-      icon: E,
+      iconWrapperClassName: E,
+      icon: T,
       hideSize: C,
       imageStyle: S,
       showRemoveButton: I,
@@ -107,7 +107,7 @@ class O extends(i = Chunk64700.PureComponent) {
         }),
         children: [i, v && (0, r.jsx)("div", {
           className: s()(b.XD, b.$N, w),
-          children: E
+          children: T
         })]
       })
     });
@@ -127,7 +127,7 @@ class O extends(i = Chunk64700.PureComponent) {
       children: [(0, r.jsx)(d.vN3, {
         within: true,
         children: (0, r.jsxs)("div", {
-          className: A ? s()(b.U1, T) : true,
+          className: A ? s()(b.U1, E) : true,
           children: [(0, r.jsxs)("div", {
             className: s()(b.Yp, N),
             style: x(h({}, S), {
@@ -155,7 +155,7 @@ class O extends(i = Chunk64700.PureComponent) {
             children: o
           }), A && (0, r.jsx)(j, {
             className: w,
-            icon: E
+            icon: T
           })]
         })
       }), I ? l : null]

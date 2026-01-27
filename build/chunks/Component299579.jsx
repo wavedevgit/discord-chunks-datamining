@@ -118,7 +118,7 @@ function j(e) {
     z = i.useCallback(e => {
       switch (e) {
         case 0:
-          let t = D ? 16 : 50;
+          let t = D ? 16 : 68;
           return P ? t + 448 : t;
         case 1:
           return 120;

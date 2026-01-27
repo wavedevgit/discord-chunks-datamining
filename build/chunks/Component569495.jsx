@@ -195,7 +195,7 @@ let R = Chunk64700.forwardRef(function(e, t) {
     label: O.intl.string(O.t["FfCL+6"]),
     onSuccess: () => (0, c.showToast)((0, c.createToast)(O.intl.string(O.t.eNjAah), c.ToastType.SUCCESS))
   }), y = l.useCallback((e, t) => (0, r.jsxs)(c.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "application-directory-profile",
     "aria-label": O.intl.string(O.t["/7I4/C"]),
     onClose: t,
@@ -205,13 +205,21 @@ let R = Chunk64700.forwardRef(function(e, t) {
         id: "copy",
         label: O.intl.string(O.t.z4sP5J),
         action: h,
-        icon: c.qYV
+        icon: c.qYV,
+        leadingAccessory: {
+          type: "icon",
+          icon: c.qYV
+        }
       })
     }) : null, (0, r.jsx)(c.rXV, {
       children: (0, r.jsx)(c.Drp, {
         id: "report",
         label: O.intl.string(O.t.NgA5vp),
         color: "danger",
+        leadingAccessory: {
+          type: "icon",
+          icon: c.iFK
+        },
         action: x
       })
     }), null != j ? (0, r.jsx)(c.rXV, {

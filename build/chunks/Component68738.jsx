@@ -1,19 +1,20 @@
 /** Chunk was on 65298 **/
 /** chunk id: 68738, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
-}), require("./638769.js"), require("./896048.js");
+  A: () => f
+}), require("./896048.js"), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk397927 = require("./397927.js"),
   Chunk442433 = require("./442433.js"),
   Chunk611010 = require("./611010.js"),
+  Chunk734057 = require("./734057.js"),
   Chunk71393 = require("./71393.js"),
   Chunk287809 = require("./287809.js"),
   Chunk815907 = require("./815907.js"),
   Chunk661251 = require("./661251.js");
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -32,7 +33,7 @@ function m(e) {
   return e
 }
 
-function p(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,12 +45,12 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = {
+let x = {
     ClipsContextMenu: async () => {
       let {
         default: e
       } = await n.e("44751").then(n.bind(n, 575538));
-      return t => (0, a.jsx)(e, m({}, t))
+      return t => (0, a.jsx)(e, p({}, t))
     },
     ActivityPopoutHeaderOverflowMenu: async () => {
       let {
@@ -80,16 +81,16 @@ let h = {
     GuildChannelListContextMenu: async () => {
       let {
         default: e
-      } = await n.e("10758").then(n.bind(n, 455557)), t = Object.values(o.A.getGuilds())[0];
-      return null == t ? () => null : n => (0, a.jsx)(e, p(m({}, n), {
+      } = await n.e("10758").then(n.bind(n, 455557)), t = Object.values(c.A.getGuilds())[0];
+      return null == t ? () => null : n => (0, a.jsx)(e, h(p({}, n), {
         guild: t
       }))
     },
     GuildContextMenu: async () => {
       let {
         default: e
-      } = await Promise.all([n.e("10614"), n.e("49681"), n.e("43600"), n.e("28136"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("8018"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("11810"), n.e("8458"), n.e("39048"), n.e("60989"), n.e("24202"), n.e("38985"), n.e("36290"), n.e("59735"), n.e("54469"), n.e("59461")]).then(n.bind(n, 544676)), t = Object.values(o.A.getGuilds())[0];
-      return null == t ? () => null : n => (0, a.jsx)(e, p(m({}, n), {
+      } = await Promise.all([n.e("10614"), n.e("49681"), n.e("43600"), n.e("28136"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("8018"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("11810"), n.e("8458"), n.e("39048"), n.e("60989"), n.e("24202"), n.e("38985"), n.e("36290"), n.e("59735"), n.e("54469"), n.e("59461")]).then(n.bind(n, 544676)), t = Object.values(c.A.getGuilds())[0];
+      return null == t ? () => null : n => (0, a.jsx)(e, h(p({}, n), {
         guild: t
       }))
     },
@@ -97,7 +98,7 @@ let h = {
       let {
         default: e
       } = await n.e("32857").then(n.bind(n, 842112));
-      return t => (0, a.jsx)(e, p(m({}, t), {
+      return t => (0, a.jsx)(e, h(p({}, t), {
         folderId: 1,
         folderColor: true,
         folderName: true,
@@ -108,7 +109,7 @@ let h = {
       let {
         default: e
       } = await n.e("15687").then(n.bind(n, 646938));
-      return t => (0, a.jsx)(e, p(m({}, t), {
+      return t => (0, a.jsx)(e, h(p({}, t), {
         id: "123456789",
         label: "Copy Test ID"
       }))
@@ -116,8 +117,8 @@ let h = {
     UserSettingsCogContextMenu: async () => {
       let {
         default: e
-      } = await n.e("95153").then(n.bind(n, 50120)), t = c.default.getCurrentUser();
-      return null == t ? () => null : n => (0, a.jsx)(e, p(m({}, n), {
+      } = await n.e("95153").then(n.bind(n, 50120)), t = d.default.getCurrentUser();
+      return null == t ? () => null : n => (0, a.jsx)(e, h(p({}, n), {
         user: t,
         webBuildOverride: null,
         premiumSubscription: null
@@ -127,7 +128,7 @@ let h = {
       let {
         default: e
       } = await n.e("46132").then(n.bind(n, 233503));
-      return t => (0, a.jsx)(e, m({}, t))
+      return t => (0, a.jsx)(e, p({}, t))
     },
     ForumTagContextMenu: async () => {
       let {
@@ -144,7 +145,7 @@ let h = {
       let {
         default: e
       } = await n.e("68001").then(n.bind(n, 699896));
-      return t => (0, a.jsx)(e, p(m({}, t), {
+      return t => (0, a.jsx)(e, h(p({}, t), {
         roleId: "123456789",
         onLeaveRole: () => {
           console.log("Leave role clicked"), (0, i.Z_)()
@@ -159,7 +160,7 @@ let h = {
         ContentInventoryEntryType: l
       } = await Promise.resolve().then(n.bind(n, 681154)), {
         ContentInventoryAuthorType: r
-      } = await Promise.resolve().then(n.bind(n, 6161)), i = c.default.getCurrentUser(), s = {
+      } = await Promise.resolve().then(n.bind(n, 6161)), i = d.default.getCurrentUser(), s = {
         id: "mock-entry-123",
         author_id: null != (e = null == i ? true : i.id) ? e : "123456789",
         author_type: r.USER,
@@ -180,8 +181,8 @@ let h = {
     AddQuestionsContextMenu: async () => {
       let {
         AddQuestionsContextMenu: e
-      } = await Promise.all([n.e("10614"), n.e("11810"), n.e("23342")]).then(n.bind(n, 892921)), t = Object.values(o.A.getGuilds())[0];
-      return null == t ? () => null : n => (0, a.jsx)(e, p(m({}, n), {
+      } = await Promise.all([n.e("10614"), n.e("11810"), n.e("23342")]).then(n.bind(n, 892921)), t = Object.values(c.A.getGuilds())[0];
+      return null == t ? () => null : n => (0, a.jsx)(e, h(p({}, n), {
         addFormField: e => {
           console.log("Add form field:", e), (0, i.Z_)()
         },
@@ -189,10 +190,28 @@ let h = {
         allowTerms: true
       }))
     },
+    ChannelListThreadContextMenu: async () => {
+      let {
+        default: e
+      } = await Promise.all([n.e("99011"), n.e("88974"), n.e("9282")]).then(n.bind(n, 44536)), t = c.A.getGuilds(), l = null;
+      for (let e of Object.values(t)) {
+        for (let t of Object.values(o.A.getMutableGuildChannelsForGuild(e.id))) {
+          let e = o.A.getAllThreadsForParent(t.id);
+          if (e.length > 0) {
+            l = e[0];
+            break
+          }
+        }
+        if (null != l) break
+      }
+      return null == l ? (console.log("No thread channel found for ChannelListThreadContextMenu"), () => null) : t => (0, a.jsx)(e, h(p({}, t), {
+        channel: l
+      }))
+    },
     MembersTableSortContextMenu: async () => {
       let {
         default: e
-      } = await n.e("73091").then(n.bind(n, 779662)), t = Object.values(o.A.getGuilds())[0];
+      } = await n.e("73091").then(n.bind(n, 779662)), t = Object.values(c.A.getGuilds())[0];
       return null == t ? () => null : () => (0, a.jsx)(e, {
         guildId: t.id,
         onClose: i.Z_
@@ -201,14 +220,14 @@ let h = {
     MembersTableJoinTypeContextMenu: async () => {
       let {
         default: e
-      } = await n.e("21539").then(n.bind(n, 441358)), t = Object.values(o.A.getGuilds())[0];
+      } = await n.e("21539").then(n.bind(n, 441358)), t = Object.values(c.A.getGuilds())[0];
       return null == t ? () => null : () => (0, a.jsx)(e, {
         guildId: t.id,
         onClose: i.Z_
       })
     }
   },
-  x = {
+  g = {
     GuildShopSortOptions: Chunk64700.lazy(async () => {
       let {
         default: e
@@ -224,27 +243,27 @@ let h = {
     })
   };
 
-function g() {
-  let e = l.useMemo(() => Object.keys(h).map(e => ({
+function f() {
+  let e = l.useMemo(() => Object.keys(x).map(e => ({
       label: e,
       value: e,
       id: e
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
-    t = l.useMemo(() => Object.keys(x).map(e => ({
+    t = l.useMemo(() => Object.keys(g).map(e => ({
       label: e,
       value: e,
       id: e
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
     [n, s] = l.useState(null),
     [o, c] = l.useState(null),
-    m = l.useCallback(e => {
-      null != n && (0, i.L3)(e, h[n])
+    d = l.useCallback(e => {
+      null != n && (0, i.L3)(e, x[n])
     }, [n]),
-    p = null != o ? x[o] : null;
+    p = null != o ? g[o] : null;
   return (0, a.jsx)(r.IpV, {
-    className: u.nd,
+    className: m.nd,
     children: (0, a.jsxs)(r.BJc, {
-      className: d.l$,
+      className: u.l$,
       gap: 16,
       children: [(0, a.jsxs)(r.BJc, {
         gap: 8,
@@ -271,7 +290,7 @@ function g() {
           variant: "primary",
           text: "Open",
           disabled: null == n,
-          onClick: m
+          onClick: d
         })]
       }), (0, a.jsxs)(r.BJc, {
         gap: 8,

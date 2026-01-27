@@ -22,17 +22,17 @@ var Chunk311907 = require("./311907.js"),
 
 function O(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f.x.DEFAULT,
-    n = (0, i.bG)([A.default], () => {
+    n = (0, r.bG)([A.default], () => {
       var t;
       return (null == (t = A.default.getCurrentUser()) ? true : t.id) === e
     }),
-    O = (0, i.bG)([s.A], () => s.A.isLocalSoundboardMuted(e)),
+    O = (0, r.bG)([s.A], () => s.A.isLocalSoundboardMuted(e)),
     {
       muted: y,
       deafened: v = false,
       localVideoDisabled: E = false,
       localVideoAutoDisabled: h = false
-    } = (0, i.cf)([d.A], () => n ? {
+    } = (0, r.cf)([d.A], () => n ? {
       muted: d.A.isSelfMute(t),
       deafened: d.A.isSelfDeaf(t)
     } : {
@@ -40,7 +40,7 @@ function O(e) {
       localVideoDisabled: d.A.isLocalVideoDisabled(e, t),
       localVideoAutoDisabled: d.A.isLocalVideoAutoDisabled(e, t)
     }, [n, t, e]),
-    j = d.A.supports(f.O5.DISABLE_VIDEO) && !n ? (0, l.jsx)(r.sLh, {
+    j = d.A.supports(f.O5.DISABLE_VIDEO) && !n ? (0, l.jsx)(i.sLh, {
       id: "disable-video",
       label: m.intl.string(m.t["4MMsWF"]),
       action: () => {
@@ -57,7 +57,7 @@ function O(e) {
       checked: E,
       subtext: h ? (0, l.jsxs)("div", {
         className: p.Y,
-        children: [(0, l.jsx)(r.EpV, {
+        children: [(0, l.jsx)(i.EpV, {
           size: "custom",
           color: "currentColor",
           width: 12,
@@ -65,7 +65,7 @@ function O(e) {
         }), m.intl.string(m.t.m2Hyj0)]
       }) : null
     }, "disable-video") : null,
-    x = n ? null : (0, l.jsx)(r.sLh, {
+    x = n ? null : (0, l.jsx)(i.sLh, {
       id: "soundboard-sound-mute",
       label: m.intl.string(m.t.LxhEuG),
       action: () => {
@@ -80,7 +80,7 @@ function O(e) {
       },
       checked: O
     }, "soundboard-sound-mute");
-  return n ? [(0, l.jsx)(r.sLh, {
+  return n ? [(0, l.jsx)(i.sLh, {
     id: "mute",
     label: m.intl.string(m.t.sWmtI6),
     action: () => o.A.toggleSelfMute({
@@ -88,7 +88,7 @@ function O(e) {
       location: "User Context Menu"
     }),
     checked: y
-  }, "self-mute"), (0, l.jsx)(r.sLh, {
+  }, "self-mute"), (0, l.jsx)(i.sLh, {
     id: "deafen",
     label: m.intl.string(m.t.wjcRFX),
     action: () => o.A.toggleSelfDeaf({
@@ -96,7 +96,7 @@ function O(e) {
       location: "User Context Menu"
     }),
     checked: v
-  }, "self-deafen"), j] : [(0, l.jsx)(r.sLh, {
+  }, "self-deafen"), j] : [(0, l.jsx)(i.sLh, {
     id: "mute",
     label: m.intl.string(m.t.sWmtI6),
     action: () => o.A.toggleLocalMute(e, t),

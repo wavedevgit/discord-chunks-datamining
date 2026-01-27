@@ -1,7 +1,7 @@
 /** Chunk was on 75149 **/
 /** chunk id: 725756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => E
+  default: () => x
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -53,9 +53,9 @@ function C(e) {
   } = e, a = (0, A.A)(t), c = (0, j.Ay)(t), s = (0, h.A)(t), y = (0, O.A)(t), f = (0, p.A)(t), g = (0, d.A)(t), m = (0, u.A)(t), w = (0, P.A)(t), C = (0, o.A)({
     id: t.id,
     label: _.intl.string(_.t["2visC6"])
-  }), x = (0, b.os)("ChannelCategoryFavoritesMenu"), E = (0, v.Ay)(t);
+  }), E = (0, b.os)("ChannelCategoryFavoritesMenu"), x = (0, v.Ay)(t);
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-needs-review": true,
     navId: "channel-context",
     onClose: l.Z_,
     "aria-label": _.intl.string(_.t.Xm41aV),
@@ -63,7 +63,7 @@ function C(e) {
     children: [(0, r.jsxs)(i.rXV, {
       children: [a, m, g]
     }), (0, r.jsxs)(i.rXV, {
-      children: [c, x ? E : s]
+      children: [c, E ? x : s]
     }), (0, r.jsxs)(i.rXV, {
       children: [y, f]
     }), (0, r.jsx)(i.rXV, {
@@ -74,17 +74,17 @@ function C(e) {
   })
 }
 
-function x(e) {
+function E(e) {
   let {
     channel: t,
     guild: n,
     onSelect: a
-  } = e, c = (0, A.A)(t), s = (0, j.Ay)(t), u = (0, h.A)(t), P = (0, O.A)(t), w = (0, p.A)(t), C = (0, g.A)(t), x = (0, d.A)(t), E = (0, y.A)(t, n), D = (0, f.A)(t), S = (0, o.A)({
+  } = e, c = (0, A.A)(t), s = (0, j.Ay)(t), u = (0, h.A)(t), P = (0, O.A)(t), w = (0, p.A)(t), C = (0, g.A)(t), E = (0, d.A)(t), x = (0, y.A)(t, n), D = (0, f.A)(t), S = (0, o.A)({
     id: t.id,
     label: _.intl.string(_.t["2visC6"])
   }), G = (0, m.A)(t), N = (0, b.os)("ChannelCategoryNormalMenu"), T = (0, v.Ay)(t);
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-mixed": true,
+    "data-menu-migrated-auto": true,
     navId: "channel-context",
     onClose: l.Z_,
     "aria-label": _.intl.string(_.t.Xm41aV),
@@ -96,12 +96,12 @@ function x(e) {
     }, "channel-actions"), (0, r.jsxs)(i.rXV, {
       children: [s, N ? T : u]
     }, "notifications"), (0, r.jsxs)(i.rXV, {
-      children: [C, x, E, D]
+      children: [C, E, x, D]
     }, "admin-actions"), (0, r.jsx)(i.rXV, {
       children: S
     }, "developer-actions")]
   })
 }
-let E = (0, Chunk358367.A)(function(e) {
-  return (0, s.A)() ? (0, r.jsx)(C, w({}, e)) : (0, r.jsx)(x, w({}, e))
+let x = (0, Chunk358367.A)(function(e) {
+  return (0, s.A)() ? (0, r.jsx)(C, w({}, e)) : (0, r.jsx)(E, w({}, e))
 }, [Chunk793574.A.CONTEXT_MENU, Chunk793574.A.CHANNEL_CATEGORY_MENU])

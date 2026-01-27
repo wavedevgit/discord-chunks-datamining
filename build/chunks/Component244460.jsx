@@ -65,14 +65,14 @@ let I = function(e) {
     U = (0, i.bG)([p.A], () => p.A.getSimilarApplications({
       applicationId: null == T ? true : T.id
     })),
-    H = l.useMemo(() => null == U ? true : U.applications.slice(0, 3), [U]),
-    V = {
-      displayedSimilarApplications: H,
+    V = l.useMemo(() => null == U ? true : U.applications.slice(0, 3), [U]),
+    H = {
+      displayedSimilarApplications: V,
       previousView: M
     },
-    B = l.useRef(V);
+    B = l.useRef(H);
   l.useEffect(() => {
-    B.current = V
+    B.current = H
   }), l.useEffect(() => {
     let {
       displayedSimilarApplications: e,
@@ -146,7 +146,7 @@ let I = function(e) {
             }), Y, (0, r.jsx)(j.A, {
               applicationId: t,
               fetchState: G,
-              similarApplications: H,
+              similarApplications: V,
               onSelectApplication: k,
               similarLoadId: null == U ? true : U.loadId
             })]

@@ -17,19 +17,19 @@ function c(e) {
   let {
     guild: t,
     onSelect: n
-  } = e, c = (0, u.A)(t.id), h = (0, a.rs)(t.id);
-  return (0, l.jsx)(i.W1t, {
-    "data-menu-mixed": true,
+  } = e, c = (0, d.A)(t.id), h = (0, a.rs)(t.id);
+  return (0, i.jsx)(l.W1t, {
+    "data-menu-migrated-auto": true,
     onSelect: n,
     navId: "guild-browse-channels-context-menu",
     "aria-label": o.intl.string(o.t.ogxXGq),
     onClose: r.Z_,
-    children: (0, l.jsxs)(i.rXV, {
-      children: [h && (0, l.jsx)(i.Drp, {
+    children: (0, i.jsxs)(l.rXV, {
+      children: [h && (0, i.jsx)(l.Drp, {
         id: "go-to-settings",
         label: o.intl.string(o.t.X70lV6),
         action: () => {
-          s.A.open(t.id, d.BEX.ONBOARDING)
+          s.A.open(t.id, u.BEX.ONBOARDING)
         }
       }), c]
     })

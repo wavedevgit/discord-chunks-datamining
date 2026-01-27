@@ -1,7 +1,7 @@
 /** Chunk was on 28636 **/
 /** chunk id: 122204, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => V
+  default: () => H
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -77,7 +77,7 @@ function U(e) {
   })
 }
 
-function H() {
+function V() {
   let e = l.useCallback(() => {
       (0, O.dG)()
     }, []),
@@ -111,7 +111,7 @@ function H() {
     })]
   })
 }
-let V = function() {
+let H = function() {
   var e;
   let t = (0, o.bG)([b.default], () => !b.default.isAuthenticated()),
     {
@@ -120,7 +120,7 @@ let V = function() {
       resetScrollPosition: A
     } = (0, d.G)(),
     R = (0, E.R4)(),
-    V = (0, O.DB)(),
+    H = (0, O.DB)(),
     B = (null == R ? true : R.type) === E.ev.CATEGORY ? R.categoryId : true,
     {
       applicationId: F,
@@ -134,8 +134,8 @@ let V = function() {
     K = l.useMemo(() => [(0, C.AU)(), ...W], [W]),
     Z = l.useMemo(() => K.find(e => e.id === Number(X)), [K, X]),
     {
-      tabs: J,
-      selectedTab: Q,
+      tabs: Q,
+      selectedTab: J,
       onSelectTab: q
     } = (0, I.S)(null == B ? true : B.toString()),
     [$, ee] = l.useState(true),
@@ -161,8 +161,8 @@ let V = function() {
   }, [en, et, null == er ? true : er.id]), l.useEffect(() => {
     v.bW()
   }, []), l.useEffect(() => {
-    V && v.wD()
-  }, [V]), l.useEffect(() => E.tS.setState({
+    H && v.wD()
+  }, [H]), l.useEffect(() => E.tS.setState({
     lastItem: R
   }), [R]);
   let el = null != F,
@@ -222,7 +222,7 @@ let V = function() {
     className: a()(G.nw, {
       [G.Yz]: t
     }),
-    children: [t ? (0, r.jsx)(H, {}) : null, (0, r.jsxs)("div", {
+    children: [t ? (0, r.jsx)(V, {}) : null, (0, r.jsxs)("div", {
       className: G.WH,
       children: [(0, r.jsxs)(p.Ay, {
         variant: e_ ? p.Z5.RELATIVE : p.Z5.OVERLAY,
@@ -248,8 +248,8 @@ let V = function() {
               categoryName: null != (e = null == Z ? true : Z.name) ? e : M.intl.string(M.t.E407b7)
             })
           }) : (0, r.jsx)(h.A, {
-            tabs: J,
-            selectedTab: Q,
+            tabs: Q,
+            selectedTab: J,
             onTabSelect: em,
             onAvailableWidthChange: eu
           }), (0, r.jsx)(m.A, {
@@ -272,11 +272,11 @@ let V = function() {
       }) : ei ? (0, r.jsx)(D.A, {
         onSelectApplication: eg,
         onScroll: e => ex(e, E.ev.SEARCH)
-      }) : Q === w.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, r.jsx)(L.A, {
+      }) : J === w.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, r.jsx)(L.A, {
         onScroll: e => ex(e, E.ev.HOME),
         onSelectApplication: eg
       }) : (0, r.jsx)(N.A, {
-        tabId: Number(Q),
+        tabId: Number(J),
         onScroll: e => ex(e, E.ev.CATEGORY),
         onSelectApplication: eg
       })]

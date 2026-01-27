@@ -22,21 +22,21 @@ let b = (0, Chunk358367.A)(function(n) {
     id: e.id,
     label: d.intl.string(d.t.gFHI3k)
   });
-  return (0, r.jsxs)(a.W1t, {
-    "data-menu-mixed": true,
+  return (0, a.jsxs)(r.W1t, {
+    "data-menu-migrated-auto": true,
     navId: "channel-context",
     onClose: c.Z_,
     "aria-label": d.intl.string(d.t.Xm41aV),
     onSelect: t,
-    children: [(0, r.jsxs)(a.rXV, {
-      children: [l, e.isCategory() ? null : (0, r.jsx)(a.Drp, {
+    children: [(0, a.jsxs)(r.rXV, {
+      children: [l, e.isCategory() ? null : (0, a.jsx)(r.Drp, {
         id: "jump-to-channel",
         label: d.intl.string(d.t.bQIM40),
         action: () => {
           (0, u.uh)(e.guild_id, e.id), (0, i.jH)()
         }
       })]
-    }), (0, r.jsx)(a.rXV, {
+    }), (0, a.jsx)(r.rXV, {
       children: s
     })]
   })
