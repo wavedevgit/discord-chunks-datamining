@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 614725, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.r(module.exports = {
   container: "container_b0f4cc",
   title: "title_b0f4cc",

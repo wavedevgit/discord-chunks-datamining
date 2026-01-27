@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 538796, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => o
 });
@@ -31,7 +32,7 @@ function o(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r]);
     return s
-  }(e, ["children", "className"]), d = i();
+  }(e, ["children", "className"]), u = i();
   return (0, r.jsx)(l.Ay, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -52,10 +53,10 @@ function o(e) {
   }({}, c), n = n = {
     className: s()(o, a.kL),
     contentClassName: a.Qs,
-    children: d.map((e, t) => (0, r.jsx)("div", {
+    children: u.map((e, t) => (0, r.jsx)("div", {
       className: a.fi,
       style: {
-        flexBasis: "".concat(100 / d.length, "%")
+        flexBasis: "".concat(100 / u.length, "%")
       },
       children: e
     }, t))

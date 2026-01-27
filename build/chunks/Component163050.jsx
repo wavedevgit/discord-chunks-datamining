@@ -59,11 +59,11 @@ class x extends(n = Chunk64700.PureComponent) {
         src: null == o ? r(79418) : r(579656),
         className: v.SX
       }), (0, s.jsx)(y.hE, {
-        children: A.intl.string(A.t["1LV6Kq"])
+        children: S.intl.string(S.t["1LV6Kq"])
       }), (0, s.jsxs)(y.eB, {
         className: v.QX,
         children: [(0, s.jsx)(y.pd, {
-          label: A.intl.string(A.t["8dM4FO"]),
+          label: S.intl.string(S.t["8dM4FO"]),
           className: v.SX,
           name: "password",
           value: e,
@@ -78,11 +78,11 @@ class x extends(n = Chunk64700.PureComponent) {
           direction: "vertical",
           fullWidth: true,
           children: [(0, s.jsx)(h.Button, {
-            text: A.intl.string(A.t["FRep5/"]),
+            text: S.intl.string(S.t["FRep5/"]),
             type: "submit",
             loading: i
           }), n && (0, s.jsx)(h.Button, {
-            text: A.intl.string(A.t["ETE/oC"]),
+            text: S.intl.string(S.t["ETE/oC"]),
             variant: "secondary",
             onClick: this.handleGoToLogin,
             loading: i
@@ -140,9 +140,9 @@ class x extends(n = Chunk64700.PureComponent) {
         className: a()(v.SX, c.Fr ? v.QX : "")
       }), (0, s.jsx)(y.hE, {
         className: v.C2,
-        children: A.intl.string(A.t.WAUOoK)
+        children: S.intl.string(S.t.WAUOoK)
       }), (0, s.jsx)(h.Button, {
-        text: A.intl.string(A.t["uJWIj/"]),
+        text: S.intl.string(S.t["uJWIj/"]),
         fullWidth: true,
         onClick: this.handleOpenApp
       })]
@@ -165,8 +165,8 @@ class x extends(n = Chunk64700.PureComponent) {
       } = this.state;
       if (e.preventDefault(), 0 === i.length) {
         this.setState({
-          error: A.intl.string(A.t.R98xD5)
-        }), C._.dispatch(S.jej.WAVE_EMPHASIZE);
+          error: S.intl.string(S.t.R98xD5)
+        }), C._.dispatch(A.jej.WAVE_EMPHASIZE);
         return
       }
       null != l && this.setState({
@@ -252,12 +252,12 @@ class x extends(n = Chunk64700.PureComponent) {
       } = this.props;
       c.v1 || c.Fr ? this.setState({
         success: true
-      }) : e(S.BVt.APP)
+      }) : e(A.BVt.APP)
     }), E(this, "handleGoToLogin", () => {
       let {
         transitionTo: e
       } = this.props;
-      p.A.loginReset(), e(S.BVt.LOGIN, {
+      p.A.loginReset(), e(A.BVt.LOGIN, {
         source: "reset_password"
       })
     }), E(this, "handleOpenApp", () => {

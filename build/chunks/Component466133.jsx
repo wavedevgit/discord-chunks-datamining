@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 466133, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => x
 }), require("./896048.js");
@@ -23,19 +24,19 @@ Chunk311907.Ay.initialize();
 let x = e => {
   let {
     location: t
-  } = e, n = (0, s.bG)([_.default], () => _.default.isAuthenticated()), x = (0, s.bG)([u.A], () => u.A.hasLoadedExperiments), E = (0, p.Jp)("RSL - Landing Page"), [v, b] = i.useState(false), [y, j] = i.useState(m.intl.string(m.t["9exy+V"])), [I, O] = i.useState(true), S = e => {
+  } = e, n = (0, s.bG)([f.default], () => f.default.isAuthenticated()), x = (0, s.bG)([d.A], () => d.A.hasLoadedExperiments), E = (0, p.Jp)("RSL - Landing Page"), [v, y] = i.useState(false), [b, j] = i.useState(m.intl.string(m.t["9exy+V"])), [O, I] = i.useState(true), S = e => {
     switch (e) {
-      case f.t02.INVALID_FORM_BODY:
-      case f.t02.DSA_RSL_REPORT_NOT_FOUND:
+      case _.t02.INVALID_FORM_BODY:
+      case _.t02.DSA_RSL_REPORT_NOT_FOUND:
         j(m.intl.string(m.t.bzXDfc));
         break;
-      case f.t02.DSA_RSL_ALREADY_REQUESTED:
+      case _.t02.DSA_RSL_ALREADY_REQUESTED:
         j(m.intl.string(m.t.rV00wq));
         break;
-      case f.t02.DSA_RSL_LIMITED_TIME:
+      case _.t02.DSA_RSL_LIMITED_TIME:
         j(m.intl.string(m.t["0dI29h"]));
         break;
-      case f.t02.DSA_RSL_REPORT_INELIGIBLE:
+      case _.t02.DSA_RSL_REPORT_INELIGIBLE:
         j(m.intl.string(m.t["RGa/Gb"]));
         break;
       default:
@@ -43,9 +44,9 @@ let x = e => {
     }
   };
   return i.useEffect(() => {
-    n ? (O(true), o.rQ({
+    n ? (I(true), o.rQ({
       withAnalyticsToken: true
-    }).then(() => O(false)).catch(() => O(false))) : O(false)
+    }).then(() => I(false)).catch(() => I(false))) : I(false)
   }, [n]), i.useEffect(() => {
     x || E || a.A.getExperiments()
   }, [x, E]), i.useEffect(() => {
@@ -57,14 +58,14 @@ let x = e => {
       } catch (e) {
         S(null == (n = e.body) ? true : n.code)
       } finally {
-        b(false)
+        y(false)
       }
     };
-    b(true), e((0, c.A)(t)), (0, g.d)("report_second_look")
-  }, [t]), E && !I && (0, r.jsxs)(d.Ay, {
-    children: [(0, r.jsx)(d.hE, {
+    y(true), e((0, c.A)(t)), (0, g.d)("report_second_look")
+  }, [t]), E && !O && (0, r.jsxs)(u.Ay, {
+    children: [(0, r.jsx)(u.hE, {
       className: A.QB,
-      children: y
+      children: b
     }), v && (0, r.jsx)(l.y$y, {})]
   })
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 170159, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => k
 }), require("./747238.js"), require("./896048.js"), require("./65821.js");
@@ -188,7 +189,7 @@ class P extends Chunk64700.PureComponent {
       giftCodeCode: e.code,
       transitionTo: i,
       children: (0, r.jsxs)(g.Ay, {
-        children: [(0, r.jsx)(O.A, {
+        children: [(0, r.jsx)(I.A, {
           giftCode: e
         }), (0, r.jsx)("div", {
           className: R.eT,
@@ -204,7 +205,7 @@ class P extends Chunk64700.PureComponent {
         }) : (0, r.jsx)(g.ME, {
           className: R.QX,
           children: T.intl.format(T.t.NYM08s, {
-            userTag: I.Ay.getUserTag(t),
+            userTag: O.Ay.getUserTag(t),
             onLogoutClick: this.handleLogout
           })
         })]
@@ -223,9 +224,9 @@ class P extends Chunk64700.PureComponent {
       location: o
     } = this.props, {
       fetchingUser: c,
-      continueOnWeb: d
+      continueOnWeb: u
     } = this.state;
-    if (e === C.fAW.OPEN && !d) return this.renderAppOpened();
+    if (e === C.fAW.OPEN && !u) return this.renderAppOpened();
     if (e === C.fAW.OPENING) return this.renderSpinner(T.intl.string(T.t["Z+hCVU"]));
     if (l) return this.renderSpinner(T.intl.string(T.t.bhJseN));
     if (null == i) return s ? this.renderExpiredInvite() : this.renderSpinner(T.intl.string(T.t.b3lf1c));
@@ -268,9 +269,9 @@ class P extends Chunk64700.PureComponent {
       }))
     }), w(this, "handleLogout", () => {
       let e = this.props.match.params.giftCode;
-      d.A.logout("gift_code", C.BVt.GIFT_CODE_LOGIN(e))
+      u.A.logout("gift_code", C.BVt.GIFT_CODE_LOGIN(e))
     }), w(this, "handleResendVerification", () => {
-      d.A.verifyResend(), this.setState({
+      u.A.verifyResend(), this.setState({
         sentVerification: true
       })
     }), w(this, "handleAccept", async () => {
@@ -283,7 +284,7 @@ class P extends Chunk64700.PureComponent {
       try {
         this.setState({
           error: null
-        }), await u.A.redeemGiftCode({
+        }), await d.A.redeemGiftCode({
           code: n
         }), e(C.BVt.APP)
       } catch (e) {
@@ -295,7 +296,7 @@ class P extends Chunk64700.PureComponent {
       let {
         transitionTo: e
       } = this.props, t = this.getCode();
-      u.A.resolveGiftCode(t, true, true).then(n => {
+      d.A.resolveGiftCode(t, true, true).then(n => {
         null != n && null != n.giftCode.promotion && e(C.BVt.BILLING_PROMOTION_REDEMPTION(t))
       })
     })
@@ -304,17 +305,17 @@ class P extends Chunk64700.PureComponent {
 let k = Chunk311907.Ay.connectStores([Chunk30793.A, Chunk189081.A, Chunk961350.default, Chunk67480.A, Chunk650048.A, Chunk10088.A], e => {
     let t = e.match.params.giftCode,
       n = E.A.get(t),
-      r = null != n ? b.A.get(n.skuId) : null;
+      r = null != n ? y.A.get(n.skuId) : null;
     return {
       giftCode: n,
       sku: r,
-      libraryApplication: null != r && (null == n ? true : n.entitlementBranches) != null ? y.YI(n.entitlementBranches, r, v.A) : null,
+      libraryApplication: null != r && (null == n ? true : n.entitlementBranches) != null ? b.YI(n.entitlementBranches, r, v.A) : null,
       authenticated: A.default.isAuthenticated(),
       defaultRoute: x.A.defaultRoute,
       isResolved: E.A.getIsResolved(t),
       isAccepting: E.A.getIsAccepting(t),
       libraryApplicationsFetched: v.A.fetched,
-      nativeAppState: _.A.getState(t)
+      nativeAppState: f.A.getState(t)
     }
   })(P),
   L = e => {
@@ -323,7 +324,7 @@ let k = Chunk311907.Ay.connectStores([Chunk30793.A, Chunk189081.A, Chunk961350.d
       children: n,
       giftCodeCode: s,
       transitionTo: l
-    } = e, a = (0, f.bF)(t);
+    } = e, a = (0, _.bF)(t);
     return (i.useEffect(() => {
       null != s && a && l(C.BVt.APP_WITH_GIFT_CODE(s))
     }, [a, s, l]), a) ? (0, r.jsxs)(g.Ay, {

@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 126912, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => v
 }), require("./747238.js"), require("./896048.js");
@@ -30,10 +31,10 @@ function x(e, t, n) {
 Chunk311907.Ay.initialize();
 class E extends(r = Chunk64700.PureComponent) {
   componentDidMount() {
-    let e = (0, d.A)(this.props.location),
+    let e = (0, u.A)(this.props.location),
       t = (0, l.parse)(this.props.location.search);
     o.Bo.post({
-      url: _.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
+      url: f.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
       body: {
         token: e,
         pixel_uuid: t.hash,
@@ -60,8 +61,8 @@ class E extends(r = Chunk64700.PureComponent) {
     })), (0, h.d)("disable_email_notifications")
   }
   renderBusy() {
-    return (0, i.jsx)(u.Ay, {
-      children: (0, i.jsx)(u.CK, {})
+    return (0, i.jsx)(d.Ay, {
+      children: (0, i.jsx)(d.CK, {})
     })
   }
   renderCategorySuccess(e, t) {
@@ -71,11 +72,11 @@ class E extends(r = Chunk64700.PureComponent) {
     } = this.props, s = m.intl.formatToPlainString(m.t.YDAohB, {
       category: t
     });
-    return (0, i.jsxs)(u.Ay, {
-      children: [(0, i.jsx)(u.hE, {
+    return (0, i.jsxs)(d.Ay, {
+      children: [(0, i.jsx)(d.hE, {
         className: A.QB,
         children: m.intl.string(m.t.f6rdLg)
-      }), (0, i.jsx)(u.tK, {
+      }), (0, i.jsx)(d.tK, {
         children: s
       }), (0, i.jsx)("div", {
         className: A.QX,
@@ -89,7 +90,7 @@ class E extends(r = Chunk64700.PureComponent) {
         children: (0, i.jsx)(c.QWc, {
           text: m.intl.string(m.t.YYTirT),
           textVariant: "text-sm/normal",
-          onClick: () => r(_.BVt.SETTINGS("notifications", f.oh))
+          onClick: () => r(f.BVt.SETTINGS("notifications", _.oh))
         })
       })]
     })
@@ -103,18 +104,18 @@ class E extends(r = Chunk64700.PureComponent) {
       category: r
     } = this.state;
     if (null != r) {
-      let e = f.px.find(e => e.category === r);
+      let e = _.px.find(e => e.category === r);
       if (null != e) return this.renderCategorySuccess(r, e.label())
     }
-    return (0, i.jsxs)(u.Ay, {
-      children: [(0, i.jsx)(u.eu, {
+    return (0, i.jsxs)(d.Ay, {
+      children: [(0, i.jsx)(d.eu, {
         src: null == n ? true : n.getAvatarURL(true, 100),
         size: c._3J.DEPRECATED_SIZE_100,
         className: A.SX
-      }), (0, i.jsx)(u.hE, {
+      }), (0, i.jsx)(d.hE, {
         className: A.QB,
         children: m.intl.string(m.t["6U6OMQ"])
-      }), (0, i.jsx)(u.tK, {
+      }), (0, i.jsx)(d.tK, {
         children: m.intl.string(m.t["yaDJ4/"])
       }), (0, i.jsx)("div", {
         className: A.eT,
@@ -131,14 +132,14 @@ class E extends(r = Chunk64700.PureComponent) {
       defaultRoute: e,
       transitionTo: t
     } = this.props;
-    return (0, i.jsxs)(u.Ay, {
-      children: [(0, i.jsx)(u._V, {
+    return (0, i.jsxs)(d.Ay, {
+      children: [(0, i.jsx)(d._V, {
         src: n(37772),
         className: A.SX
-      }), (0, i.jsx)(u.hE, {
+      }), (0, i.jsx)(d.hE, {
         className: A.QB,
         children: m.intl.string(m.t.ox9hIS)
-      }), (0, i.jsx)(u.tK, {
+      }), (0, i.jsx)(d.tK, {
         children: m.intl.string(m.t["/dcuR5"])
       }), (0, i.jsx)("div", {
         className: A.eT,

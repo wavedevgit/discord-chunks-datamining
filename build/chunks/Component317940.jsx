@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 317940, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => c
 });
@@ -16,8 +17,8 @@ function c(e) {
     title: t,
     subtitle: n,
     buttonText: c,
-    image: d,
-    onButtonClick: u,
+    image: u,
+    onButtonClick: d,
     loading: h
   } = e;
   return (0, r.jsx)(a.Ay, {
@@ -32,11 +33,11 @@ function c(e) {
         children: [(0, r.jsxs)(i.BJc, {
           gap: 24,
           align: "center",
-          children: [null != d && (0, r.jsx)(i.BJc, {
+          children: [null != u && (0, r.jsx)(i.BJc, {
             align: "center",
             justify: "center",
             className: o.Sl,
-            children: d
+            children: u
           }), h && (0, r.jsx)(l.y$y, {
             type: l.y$y.Type.SPINNING_CIRCLE
           }), (0, r.jsx)(i.DZT, {
@@ -51,7 +52,7 @@ function c(e) {
           children: n
         })]
       }), !h && (0, r.jsx)(s.$nd, {
-        onClick: u,
+        onClick: d,
         text: c,
         variant: "overlay-primary"
       })]

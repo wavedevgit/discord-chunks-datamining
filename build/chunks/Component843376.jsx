@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 843376, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   i: () => h
 });
@@ -11,7 +12,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk369053 = require("./369053.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +31,7 @@ function d(e) {
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,7 +48,7 @@ function h(e, t) {
   let h = h => {
     let p = async () => {
       await (0, o.TP)(e, h)
-    }, g = async t => await (0, o.G_)(e, h, t), _ = n => {
+    }, g = async t => await (0, o.G_)(e, h, t), f = n => {
       let r = null == n ? true : n.token;
       e === l.tY.MESSAGE ? (0, a.bM)(r, t) : e === l.tY.USER ? (0, a.nQ)(r, t) : e === l.tY.GUILD ? (0, a.V3)(r, t) : e === l.tY.MEDIA_TAKEDOWN && (0, a._Y)(r, t)
     };
@@ -55,10 +56,10 @@ function h(e, t) {
       let {
         default: e
       } = await n.e("19840").then(n.bind(n, 79779));
-      return t => (0, r.jsx)(e, u(d({}, t), {
+      return t => (0, r.jsx)(e, d(u({}, t), {
         onFormSubmit: g,
         onResend: p,
-        onSuccess: _,
+        onSuccess: f,
         headerText: c.intl.string(c.t.H3Q7U8),
         confirmButtonText: c.intl.string(c.t["13ofGu"]),
         impression: {
@@ -74,7 +75,7 @@ function h(e, t) {
       let {
         default: t
       } = await n.e("29232").then(n.bind(n, 180275));
-      return n => (0, r.jsx)(t, u(d({}, n), {
+      return n => (0, r.jsx)(t, d(u({}, n), {
         onSuccess: h,
         headerText: c.intl.string(c.t.ZLRYGU),
         confirmButtonText: c.intl.string(c.t.PDTjLN),

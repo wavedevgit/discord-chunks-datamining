@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 7936, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => m
 }), require("./896048.js"), require("./747238.js");
@@ -19,11 +20,11 @@ var Chunk985018 = require("./985018.jsx"),
   Chunk20976 = require("./20976.js"),
   Chunk473169 = require("./473169.js");
 let m = () => {
-  let [e, t] = i.useState(""), [s, m] = i.useState(""), [A, x] = i.useState(false), [E, v] = i.useState(false), [b, y] = i.useState(null), [j, I] = i.useState(null), O = (0, a.bG)([u.A], () => u.A.getCountryCode()), S = O.code.split(" ")[0], N = async () => {
+  let [e, t] = i.useState(""), [s, m] = i.useState(""), [A, x] = i.useState(false), [E, v] = i.useState(false), [y, b] = i.useState(null), [j, O] = i.useState(null), I = (0, a.bG)([d.A], () => d.A.getCountryCode()), S = I.code.split(" ")[0], N = async () => {
     try {
       await c.A.resendCode(e)
     } catch (e) {
-      I(e.body.message)
+      O(e.body.message)
     }
   }, C = async () => {
     x(true);
@@ -31,9 +32,9 @@ let m = () => {
       let {
         token: t
       } = await c.A.verifyPhone(S + e, s);
-      y(null), I(null), v(true), c.A.validatePhoneForSupport(t)
+      b(null), O(null), v(true), c.A.validatePhoneForSupport(t)
     } catch (e) {
-      e.body.message ? (y(null), I(e.body.message)) : (y(e.body.phone), I(e.body.code))
+      e.body.message ? (b(null), O(e.body.message)) : (b(e.body.phone), O(e.body.code))
     } finally {
       x(false)
     }
@@ -41,11 +42,11 @@ let m = () => {
     children: [(0, r.jsx)(p._V, {
       src: n(142041)
     }), (0, r.jsxs)(p.hE, {
-      className: l()(f.QX, _.Uu, _.wq, _.Hu),
+      className: l()(_.QX, f.Uu, f.wq, f.Hu),
       children: [g.intl.string(g.t.WWzQta), (0, r.jsx)(o.yr3, {
         size: "md",
         color: "currentColor",
-        className: f.oY
+        className: _.oY
       })]
     })]
   });
@@ -53,22 +54,22 @@ let m = () => {
     children: [(0, r.jsx)(p.hE, {
       children: g.intl.string(g.t.o4JNrO)
     }), (0, r.jsx)(p.tK, {
-      className: f.Ot,
+      className: _.Ot,
       children: g.intl.string(g.t.y0tVbq)
     }), (0, r.jsxs)(p.eB, {
-      className: f.QX,
+      className: _.QX,
       children: [(0, r.jsx)(h.A, {
         label: g.intl.string(g.t["eJnn0+"]),
-        alpha2: O.alpha2,
+        alpha2: I.alpha2,
         countryCode: S,
         value: e,
         autoComplete: "off",
         spellCheck: "false",
         onChange: t,
-        forceMode: d.Pd.PHONE,
-        error: b
+        forceMode: u.Pd.PHONE,
+        error: y
       }), (0, r.jsx)(p.pd, {
-        className: f.QX,
+        className: _.QX,
         label: g.intl.string(g.t.OdzNbm),
         value: s,
         onChange: m,
@@ -78,7 +79,7 @@ let m = () => {
         text: g.intl.string(g.t["5b60gi"]),
         onClick: N
       }), (0, r.jsx)("div", {
-        className: f.QX,
+        className: _.QX,
         children: (0, r.jsx)(o.Button, {
           text: g.intl.string(g.t.i4jeWR),
           fullWidth: true,

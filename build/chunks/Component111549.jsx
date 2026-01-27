@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 111549, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => Q
 }), require("./938796.js"), require("./896048.js");
@@ -59,7 +60,7 @@ async function K(e) {
   let {
     invite: t
   } = await p.Ay.resolveInvite(e, V);
-  null != t && (0, f.v)(t)
+  null != t && (0, _.v)(t)
 }
 class z extends Chunk64700.PureComponent {
   componentDidMount() {
@@ -72,7 +73,7 @@ class z extends Chunk64700.PureComponent {
         invite_code: n
       }, {
         flush: true
-      }), (0, I.d)("invite"), !U.VP) {
+      }), (0, O.d)("invite"), !U.VP) {
       let e = this.getInviteKey();
       w.A.launch("discord://" + D.BVt.INVITE(e), () => true)
     }
@@ -80,7 +81,7 @@ class z extends Chunk64700.PureComponent {
       let e = this.getInviteKey(),
         {
           baseCode: t
-        } = (0, b.y$)(e);
+        } = (0, y.y$)(e);
       (0, j.bG)(D.BVt.INVITE_LOGIN(t))
     }
   }
@@ -94,7 +95,7 @@ class z extends Chunk64700.PureComponent {
     if (s !== this.getInviteKey(e)) K(s);
     else if (t.state === D.elq.APP_NOT_OPENED) this.handleContinue();
     else if (this.getMode() === H && r !== e.authenticated && r) {
-      let e = O.default.getFingerprint();
+      let e = I.default.getFingerprint();
       if (null != e) {
         let t = (0, c.d)(e);
         this.track(D.HAw.INVITE_LOGIN_SUCCESSFUL, true, {
@@ -113,10 +114,10 @@ class z extends Chunk64700.PureComponent {
         channel: e
       } = t;
       if (null != e)
-        if ((0, y.C)(B.zY.INVITE_UNCLAIMED), null != t.guild) {
-          var l, d, u;
+        if ((0, b.C)(B.zY.INVITE_UNCLAIMED), null != t.guild) {
+          var l, u, d;
           let e = (0, o.Lt)(null != (l = t.flags) ? l : 0, a.Q.IS_APPLICATION_BYPASS),
-            n = (null == (d = t.guild.features) ? true : d.includes(D.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (u = t.guild.features) ? true : u.includes(D.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL));
+            n = (null == (u = t.guild.features) ? true : u.includes(D.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (d = t.guild.features) ? true : d.includes(D.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL));
           i(!e && n ? D.BVt.GUILD_MEMBER_VERIFICATION(t.guild.id) : D.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
         } else p.Ay.transitionToInvite(t, i)
     }
@@ -132,7 +133,7 @@ class z extends Chunk64700.PureComponent {
   track(e, t, n) {
     let {
       invite: r
-    } = this.props, i = this.getInviteKey(), s = (0, b.m0)(i), l = t ? {
+    } = this.props, i = this.getInviteKey(), s = (0, y.m0)(i), l = t ? {
       guild_id: null != r.guild ? r.guild.id : null,
       channel_id: null != r.channel ? r.channel.id : null,
       inviter_id: null != r.inviter ? r.inviter.id : null,
@@ -274,7 +275,7 @@ class z extends Chunk64700.PureComponent {
         return this.renderSpinner(G.intl.string(G.t["Z+hCVU"]));
       case D.elq.RESOLVED:
         var l;
-        if (n && (0, o.Lt)(null != (l = e.flags) ? l : 0, a.Q.IS_GUEST_INVITE)) return p.Ay.openApp(e.code), u.u.set(v.B, e.code), this.renderAppOpened(() => i(D.BVt.APP));
+        if (n && (0, o.Lt)(null != (l = e.flags) ? l : 0, a.Q.IS_GUEST_INVITE)) return p.Ay.openApp(e.code), d.u.set(v.B, e.code), this.renderAppOpened(() => i(D.BVt.APP));
         if (n || !U.VP) return this.renderAuthenticatedOrDownload();
         if (this.getMode() === H) return (0, r.jsx)(k.A, {
           invite: e,
@@ -323,7 +324,7 @@ class z extends Chunk64700.PureComponent {
         context: this.getAcceptInviteContext(V),
         skipOnboarding: true,
         callback: t => {
-          (0, f.v)(t), null != t.channel && p.Ay.openApp(e, t.channel.id)
+          (0, _.v)(t), null != t.channel && p.Ay.openApp(e, t.channel.id)
         }
       }).catch(e => {
         if (e instanceof g.Wl || e instanceof g.LG) {
@@ -375,8 +376,8 @@ let Q = Chunk311907.Ay.connectStores([Chunk299091.A, Chunk650048.A, Chunk961350.
   return {
     invite: null != (t = N.A.getInvite(n)) ? t : {},
     nativeAppState: E.A.getState(n),
-    authenticated: O.default.isAuthenticated(),
+    authenticated: I.default.isAuthenticated(),
     defaultRoute: S.A.defaultRoute,
-    isUnderage: _.A.isUnderageAnonymous()
+    isUnderage: f.A.isUnderageAnonymous()
   }
 })(z)

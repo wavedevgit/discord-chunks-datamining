@@ -1,7 +1,8 @@
 /** Chunk was on 86142 **/
 /** chunk id: 926451, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  A: () => d
+  A: () => u
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,15 +11,15 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js");
 let c = null != (r = window.ResizeObserver) ? r : Chunk218681.t;
 
-function d(e) {
+function u(e) {
   let {
     show: t,
     children: n,
     top: r = 0,
     bottom: l = 0
   } = e, {
-    ref: d,
-    height: u
+    ref: u,
+    height: d
   } = (() => {
     let e = s.useRef(null),
       [t, n] = s.useState(0),
@@ -37,7 +38,7 @@ function d(e) {
       marginTop: "0px"
     },
     to: {
-      height: t ? u : 0,
+      height: t ? d : 0,
       paddingBottom: t ? "".concat(l, "px") : "0px",
       marginTop: t ? "".concat(r, "px") : "0px"
     },
@@ -68,7 +69,7 @@ function d(e) {
       style: {
         opacity: p.opacity
       },
-      ref: d,
+      ref: u,
       children: n
     })
   })

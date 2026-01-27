@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 210714, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   D: () => g,
   d: () => p
@@ -20,7 +21,7 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +34,7 @@ function d(e) {
   return e
 }
 
-function u() {
+function d() {
   return window.GLOBAL_ENV.HTML_TIMESTAMP
 }
 let h = new class {
@@ -42,7 +43,7 @@ let h = new class {
     requestIdleCallback(() => {
       var n, r;
       let a, c;
-      s.default.track(o.HAw.APP_UI_VIEWED, (n = d({}, function() {
+      s.default.track(o.HAw.APP_UI_VIEWED, (n = u({}, function() {
         var e, t, n;
         let r = "--campaign-id=";
         for (let s of null != (e = null === i.A || true === i.A || null == (n = i.A.processUtils) || null == (t = n.getMainArgvSync) ? true : t.call(n)) ? e : [])
@@ -68,7 +69,7 @@ let h = new class {
       }), a ? c : {})), r = r = {
         load_id: this.loadId,
         screen_name: e,
-        duration_ms_since_app_opened: t - u(),
+        duration_ms_since_app_opened: t - d(),
         app_hardware_acceleration_enabled: l.Ay.getEnableHardwareAcceleration()
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
@@ -88,10 +89,10 @@ let h = new class {
     window.__TTI_COMPLETED = true;
     let r = null == (n = window.location) || null == (t = n.pathname) || null == (e = t.split("/")) ? true : e[1];
     requestIdleCallback(() => {
-      let e = u();
+      let e = d();
       a.A.firstRenderAfterReadyPayload.record();
       let t = a.A.serializeWebPerfStartupMetrics(e);
-      s.default.track(o.HAw.APP_WEB_PERF_STARTUP_METRICS, d({
+      s.default.track(o.HAw.APP_WEB_PERF_STARTUP_METRICS, u({
         load_id: this.loadId,
         url_root_path: r
       }, t));

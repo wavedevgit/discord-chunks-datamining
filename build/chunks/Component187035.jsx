@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 187035, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => B
 }), require("./896048.js");
@@ -47,49 +48,49 @@ function L(e, t, n) {
 Chunk311907.Ay.initialize();
 class D extends Chunk64700.PureComponent {
   componentDidMount() {
-    (0, x.d)("guildTemplate"), R.VP || y.A.launch("discord://" + S.BVt.GUILD_TEMPLATE(this.props.code), () => true)
+    (0, x.d)("guildTemplate"), R.VP || b.A.launch("discord://" + S.BVt.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && _.A.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && f.A.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
     return R.VP ? (0, r.jsx)("div", {
       className: k.eT,
-      children: (0, r.jsx)(d.Button, {
+      children: (0, r.jsx)(u.Button, {
         text: e,
         fullWidth: true,
         onClick: t
       })
-    }) : (0, r.jsx)(u.KE, {
+    }) : (0, r.jsx)(d.KE, {
       className: k.eT
     })
   }
   renderSpinner(e) {
-    return (0, r.jsxs)(u.Ay, {
-      children: [(0, r.jsx)(u.hE, {
+    return (0, r.jsxs)(d.Ay, {
+      children: [(0, r.jsx)(d.hE, {
         children: e
-      }), (0, r.jsx)(u.CK, {})]
+      }), (0, r.jsx)(d.CK, {})]
     })
   }
   renderInvalidGuildTemplate() {
-    return (0, r.jsxs)(u.Ay, {
-      children: [(0, r.jsx)(u._V, {
+    return (0, r.jsxs)(d.Ay, {
+      children: [(0, r.jsx)(d._V, {
         src: n(428721),
         className: k.QB
-      }), (0, r.jsx)(u.hE, {
+      }), (0, r.jsx)(d.hE, {
         className: l()(k.Ot, k.QB),
         children: w.intl.string(w.t.C7ZRNw)
-      }), (0, r.jsx)(u.tK, {
+      }), (0, r.jsx)(d.tK, {
         children: w.intl.string(w.t.A6MwXE)
       }), this.renderButton(w.intl.string(w.t.fIv16B), this.handleContinue)]
     })
   }
   renderAppOpened() {
-    return (0, r.jsxs)(u.Ay, {
-      children: [(0, r.jsx)(u.hE, {
+    return (0, r.jsxs)(d.Ay, {
+      children: [(0, r.jsx)(d.hE, {
         className: k.QB,
         children: w.intl.string(w.t.csrAMJ)
-      }), (0, r.jsx)(u.tK, {
+      }), (0, r.jsx)(d.tK, {
         children: w.intl.string(w.t["m1+IBn"])
       }), this.renderButton(w.intl.string(w.t.fIv16B), this.handleContinue)]
     })
@@ -98,7 +99,7 @@ class D extends Chunk64700.PureComponent {
     let {
       guildTemplate: e
     } = this.props;
-    return (o()(null != e, "guild template must not be null"), e.state === N.QB.RESOLVING) ? (0, r.jsx)(u.Ay, {
+    return (o()(null != e, "guild template must not be null"), e.state === N.QB.RESOLVING) ? (0, r.jsx)(d.Ay, {
       className: P.sL,
       children: (0, r.jsx)(m.A, {
         guildTemplate: e
@@ -108,8 +109,8 @@ class D extends Chunk64700.PureComponent {
     })
   }
   renderContinue() {
-    return (0, r.jsxs)(u.Ay, {
-      children: [(0, r.jsx)(u.hE, {
+    return (0, r.jsxs)(d.Ay, {
+      children: [(0, r.jsx)(d.hE, {
         children: w.intl.string(w.t.fOc4gn)
       }), this.renderButton(w.intl.string(w.t.fIv16B), this.handleContinue)]
     })
@@ -135,7 +136,7 @@ class D extends Chunk64700.PureComponent {
           transitionTo: i,
           location: s
         });
-        return (0, r.jsx)(O.A, {
+        return (0, r.jsx)(I.A, {
           guildTemplate: e,
           transitionTo: i,
           location: s,
@@ -165,7 +166,7 @@ function B(e) {
     guildTemplate: (0, c.bG)([p.A], () => p.A.getGuildTemplate(e.code)),
     nativeAppState: (0, c.bG)([h.A], () => h.A.getState(e.code)),
     authenticated: (0, c.bG)([v.default], () => v.default.isAuthenticated()),
-    defaultRoute: (0, c.bG)([b.A], () => b.A.defaultRoute)
+    defaultRoute: (0, c.bG)([y.A], () => y.A.defaultRoute)
   };
   return (0, r.jsx)(D, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -190,21 +191,21 @@ function U(e) {
   } = (0, g.A)(t, false);
   E.A.flowStep(T.do.ORGANIC_GUILD_TEMPLATES, T.jC.GUILD_CREATE);
   let s = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(u.hE, {
+    children: [(0, r.jsx)(d.hE, {
       className: P.wx,
       children: w.intl.string(w.t.UNFvtM)
     }), n, (0, r.jsx)("div", {
       className: P.Tf,
-      children: (0, r.jsx)(d.Button, {
+      children: (0, r.jsx)(u.Button, {
         text: w.intl.string(w.t.xr59t7),
         fullWidth: true,
         onClick: i
       })
     })]
   });
-  return (0, r.jsx)(I.A, {
+  return (0, r.jsx)(O.A, {
     className: P.sL,
-    children: () => [(0, r.jsx)(f.A, {
+    children: () => [(0, r.jsx)(_.A, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
       className: P.KJ,

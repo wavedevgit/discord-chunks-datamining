@@ -1,4 +1,4 @@
-/** Chunk was on 65715 **/
+/** Chunk was on 63 **/
 /** chunk id: 939932, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,14 +22,14 @@ function f(e) {
   })(e)
 }
 
-function h(e, t) {
+function l(e, t) {
   (null == t || t > e.length) && (t = e.length);
   for (var r = 0, n = Array(t); r < t; r++) n[r] = e[r];
   return n
 }
 
-function l(e, t) {
-  return (l = Object.setPrototypeOf || function(e, t) {
+function h(e, t) {
+  return (h = Object.setPrototypeOf || function(e, t) {
     return e.__proto__ = t, e
   })(e, t)
 }
@@ -60,22 +60,22 @@ function b(e) {
     d = e.createMonitor,
     b = e.createConnector,
     m = e.registerHandler,
-    D = e.containerDisplayName,
-    k = e.getType,
-    C = e.collect,
-    w = e.options.arePropsEqual,
-    j = true === w ? i.b : w,
-    I = t.displayName || t.name || "Component",
-    A = function(e) {
+    w = e.containerDisplayName,
+    D = e.getType,
+    S = e.collect,
+    k = e.options.arePropsEqual,
+    O = true === k ? i.b : k,
+    C = t.displayName || t.name || "Component",
+    I = function(e) {
       if ("function" != typeof e && null !== e) throw TypeError("Super expression must either be null or a function");
-      A.prototype = Object.create(e && e.prototype, {
+      I.prototype = Object.create(e && e.prototype, {
         constructor: {
-          value: A,
+          value: I,
           writable: true,
           configurable: true
         }
-      }), e && l(A, e);
-      var p, D, w = (p = function() {
+      }), e && h(I, e);
+      var p, w, k = (p = function() {
         if ("u" < typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
         if ("function" == typeof Proxy) returntrue;
         try {
@@ -84,7 +84,7 @@ function b(e) {
           returnfalse
         }
       }(), function() {
-        var e, t = y(A);
+        var e, t = y(I);
         return e = p ? Reflect.construct(t, arguments, y(this).constructor) : t.apply(this, arguments),
           function(e, t) {
             if (t && ("object" === f(t) || "function" == typeof t)) return t;
@@ -93,15 +93,15 @@ function b(e) {
           }(this, e)
       });
 
-      function A(e) {
+      function I(e) {
         var t;
-        if (!(this instanceof A)) throw TypeError("Cannot call a class as a function");
-        return g(v(t = w.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", true), g(v(t), "manager", true), g(v(t), "handlerMonitor", true), g(v(t), "handlerConnector", true), g(v(t), "handler", true), g(v(t), "disposable", true), g(v(t), "rafId", true), g(v(t), "currentType", true), g(v(t), "handleChange", function() {
+        if (!(this instanceof I)) throw TypeError("Cannot call a class as a function");
+        return g(v(t = k.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", true), g(v(t), "manager", true), g(v(t), "handlerMonitor", true), g(v(t), "handlerConnector", true), g(v(t), "handler", true), g(v(t), "disposable", true), g(v(t), "rafId", true), g(v(t), "currentType", true), g(v(t), "handleChange", function() {
           var e = t.getCurrentState();
           (0, i.b)(e, t.state) || t.setState(e)
         }), t.disposable = new c.DS, t.receiveProps(e), t.dispose(), t
       }
-      return D = [{
+      return w = [{
           key: "getHandlerId",
           value: function() {
             return this.handlerId
@@ -114,7 +114,7 @@ function b(e) {
         }, {
           key: "shouldComponentUpdate",
           value: function(e, t) {
-            return !j(e, this.props) || !(0, i.b)(t, this.state)
+            return !O(e, this.props) || !(0, i.b)(t, this.state)
           }
         }, {
           key: "componentDidMount",
@@ -124,7 +124,7 @@ function b(e) {
         }, {
           key: "componentDidUpdate",
           value: function(e) {
-            j(this.props, e) || (this.receiveProps(this.props), this.handleChange())
+            O(this.props, e) || (this.receiveProps(this.props), this.handleChange())
           }
         }, {
           key: "componentWillUnmount",
@@ -134,7 +134,7 @@ function b(e) {
         }, {
           key: "receiveProps",
           value: function(e) {
-            this.handler && (this.handler.receiveProps(e), this.receiveType(k(e)))
+            this.handler && (this.handler.receiveProps(e), this.receiveType(D(e)))
           }
         }, {
           key: "receiveType",
@@ -164,10 +164,10 @@ function b(e) {
                   }
                 }(t, 2) || function(e, t) {
                   if (e) {
-                    if ("string" == typeof e) return h(e, 2);
+                    if ("string" == typeof e) return l(e, 2);
                     var r = Object.prototype.toString.call(e).slice(8, false);
                     if ("Object" === r && e.constructor && (r = e.constructor.name), "Map" === r || "Set" === r) return Array.from(e);
-                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return h(e, 2)
+                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return l(e, 2)
                   }
                 }(t, 2) || function() {
                   throw TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
@@ -189,7 +189,7 @@ function b(e) {
         }, {
           key: "getCurrentState",
           value: function() {
-            return this.handlerConnector ? C(this.handlerConnector.hooks, this.handlerMonitor, this.props) : {}
+            return this.handlerConnector ? S(this.handlerConnector.hooks, this.handlerMonitor, this.props) : {}
           }
         }, {
           key: "render",
@@ -210,7 +210,7 @@ function b(e) {
         }, {
           key: "receiveDragDropManager",
           value: function(e) {
-            true !== this.manager || ((0, a.V)(true !== e, "Could not find the drag and drop manager in the context of %s. Make sure to render a DndProvider component in your top-level component. Read more: http://react-dnd.github.io/react-dnd/docs/troubleshooting#could-not-find-the-drag-and-drop-manager-in-the-context", I, I), true !== e && (this.manager = e, this.handlerMonitor = d(e), this.handlerConnector = b(e.getBackend()), this.handler = r(this.handlerMonitor, this.decoratedRef)))
+            true !== this.manager || ((0, a.V)(true !== e, "Could not find the drag and drop manager in the context of %s. Make sure to render a DndProvider component in your top-level component. Read more: http://react-dnd.github.io/react-dnd/docs/troubleshooting#could-not-find-the-drag-and-drop-manager-in-the-context", C, C), true !== e && (this.manager = e, this.handlerMonitor = d(e), this.handlerConnector = b(e.getBackend()), this.handler = r(this.handlerMonitor, this.decoratedRef)))
           }
         }],
         function(e, t) {
@@ -218,7 +218,7 @@ function b(e) {
             var n = t[r];
             n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(e, n.key, n)
           }
-        }(A.prototype, D), A
+        }(I.prototype, w), I
     }(o.Component);
-  return g(A, "DecoratedComponent", t), g(A, "displayName", "".concat(D, "(").concat(I, ")")), p()(A, t)
+  return g(I, "DecoratedComponent", t), g(I, "displayName", "".concat(w, "(").concat(C, ")")), p()(I, t)
 }

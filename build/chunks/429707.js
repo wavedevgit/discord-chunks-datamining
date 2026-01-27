@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 429707, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   At: () => g,
   F6: () => h,
@@ -13,7 +14,7 @@ var Chunk247775 = require("./247775.js"),
   Chunk961350 = require("./961350.js"),
   Chunk274303 = require("./274303.js"),
   Chunk652215 = require("./652215.js");
-let u = new Chunk626584.A("MultiAccountActionCreators");
+let d = new Chunk626584.A("MultiAccountActionCreators");
 
 function h() {
   let e = o.default.getId();
@@ -32,7 +33,7 @@ function h() {
     });
     try {
       n = await i.Bo.get({
-        url: d.Rsh.ME,
+        url: u.Rsh.ME,
         headers: {
           authorization: a
         },
@@ -58,11 +59,11 @@ function h() {
 }
 
 function p(e, t) {
-  u.log("Switching account to ".concat(e), {
+  d.log("Switching account to ".concat(e), {
     switchSynchronously: t
   });
   let n = r.getToken(e);
-  return null == n ? (u.log("Switching accounts failed because there was no token"), s.h.dispatch({
+  return null == n ? (d.log("Switching accounts failed because there was no token"), s.h.dispatch({
     type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
     userId: e
   }), Promise.resolve()) : l.A.switchAccountToken(n, t)

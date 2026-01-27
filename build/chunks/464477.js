@@ -1,10 +1,11 @@
 /** Chunk was on 86142 **/
 /** chunk id: 464477, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   K7: () => h,
   Os: () => m,
-  V3: () => f,
-  cC: () => _,
+  V3: () => _,
+  cC: () => f,
   d4: () => p,
   tn: () => g
 }), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js"), require("./747238.js"), require("./812715.js"), require("./733351.js");
@@ -42,23 +43,23 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let d = null != (r = null == (i = window) ? true : i.crypto) ? r : null == (s = window) ? true : s.msCrypto,
-  u = "Uint8Array" in window,
-  h = null != d && "getRandomValues" in d && u,
-  p = "PublicKeyCredential" in window && u;
+let u = null != (r = null == (i = window) ? true : i.crypto) ? r : null == (s = window) ? true : s.msCrypto,
+  d = "Uint8Array" in window,
+  h = null != u && "getRandomValues" in u && d,
+  p = "PublicKeyCredential" in window && d;
 
 function g() {
   var e;
-  return e = d.getRandomValues(new Uint8Array(20)), l.encode(e).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim()
+  return e = u.getRandomValues(new Uint8Array(20)), l.encode(e).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim()
 }
 
-function _(e) {
+function f(e) {
   return e.replace(/[\s._-]+/g, "").toUpperCase()
 }
 
-function f(e, t) {
+function _(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "Discord";
-  return "otpauth://totp/".concat(encodeURI(n), ":").concat(encodeURI(e), "?secret=").concat(_(t), "&issuer=").concat(encodeURIComponent(n))
+  return "otpauth://totp/".concat(encodeURI(n), ":").concat(encodeURI(e), "?secret=").concat(f(t), "&issuer=").concat(encodeURIComponent(n))
 }
 
 function m(e, t) {

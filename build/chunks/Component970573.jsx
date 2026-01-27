@@ -1,8 +1,9 @@
 /** Chunk was on 86142 **/
 /** chunk id: 970573, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => S,
-  X: () => I
+  X: () => O
 }), require("./492834.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,9 +26,9 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk364877 = require("./364877.js"),
-  I = ((r = {})[r.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", r[r.SWITCHED = 1] = "SWITCHED", r[r.REMOVED = 2] = "REMOVED", r);
+  O = ((r = {})[r.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", r[r.SWITCHED = 1] = "SWITCHED", r[r.REMOVED = 2] = "REMOVED", r);
 
-function O(e) {
+function I(e) {
   let {
     actionText: t,
     user: n,
@@ -36,34 +37,34 @@ function O(e) {
     currentUser: s,
     hidePrivateData: l,
     isAuthenticated: v
-  } = (0, o.cf)([f.default, _.A, g.default], () => ({
-    currentUser: f.default.getCurrentUser(),
-    hidePrivateData: _.A.hidePersonalInformation,
+  } = (0, o.cf)([_.default, f.A, g.default], () => ({
+    currentUser: _.default.getCurrentUser(),
+    hidePrivateData: f.A.hidePersonalInformation,
     isAuthenticated: g.default.isAuthenticated()
-  })), I = new p.A(n), O = v && (null == s ? true : s.id) === I.id, S = n.tokenStatus === E.U.INVALID, N = l || I.hasUniqueUsername() ? null : "#".concat(I.discriminator), C = null;
+  })), O = new p.A(n), I = v && (null == s ? true : s.id) === O.id, S = n.tokenStatus === E.U.INVALID, N = l || O.hasUniqueUsername() ? null : "#".concat(O.discriminator), C = null;
   return h.A.useConfig({
     location: "Account card load"
-  }), O ? C = (0, i.jsx)(c.Text, {
+  }), I ? C = (0, i.jsx)(c.Text, {
     variant: "text-sm/semibold",
     className: j.dx,
     color: "text-feedback-positive",
-    children: y.intl.string(y.t.seV8yt)
+    children: b.intl.string(b.t.seV8yt)
   }) : S && (C = (0, i.jsx)(c.Text, {
     variant: "text-sm/semibold",
     className: j.dx,
     color: "text-feedback-critical",
-    children: y.intl.string(y.t.tYX2ps)
+    children: b.intl.string(b.t.tYX2ps)
   })), (0, i.jsx)("div", {
     className: j.KJ,
     children: (0, i.jsxs)("div", {
       className: j.yS,
       children: [(0, i.jsx)(c.euF, {
-        src: I.getAvatarURL(true, 40),
+        src: O.getAvatarURL(true, 40),
         size: c._3J.SIZE_40,
         "aria-label": n.username
       }), (0, i.jsxs)("div", {
         className: a()(j.K_, {
-          [j.zU]: !O
+          [j.zU]: !I
         }),
         children: [(0, i.jsxs)("div", {
           className: j.Xh,
@@ -71,7 +72,7 @@ function O(e) {
             variant: "text-md/semibold",
             color: "text-strong",
             lineClamp: 1,
-            children: A.Ay.getUserTag(I, {
+            children: A.Ay.getUserTag(O, {
               mode: "username",
               identifiable: l ? "never" : "always"
             })
@@ -83,37 +84,37 @@ function O(e) {
         }), C]
       }), (0, i.jsxs)("div", {
         className: j.Xp,
-        children: [!O && (0, i.jsx)(c.Button, {
+        children: [!I && (0, i.jsx)(c.Button, {
           variant: "secondary",
-          text: S ? y.intl.string(y.t["DSN+hw"]) : t,
+          text: S ? b.intl.string(b.t["DSN+hw"]) : t,
           onClick: function() {
-            S ? r(0, n.id) : (m.default.track(b.HAw.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+            S ? r(0, n.id) : (m.default.track(y.HAw.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
-                section: b.JJy.MANAGE_ACCOUNTS_MODAL
+                section: y.JJy.MANAGE_ACCOUNTS_MODAL
               }
             }), x.Mx(n.id), r(1, n.id))
           }
         }), (0, i.jsx)(c.K0, {
           icon: c.jNK,
           onClick: function(e) {
-            (0, u.jA)(e, e => {
+            (0, d.jA)(e, e => {
               let {
                 onSelect: t
               } = e;
               return (0, i.jsx)(c.W1t, {
                 "data-menu-migrated-auto": true,
-                "aria-label": y.intl.string(y.t["41qiDU"]),
+                "aria-label": b.intl.string(b.t["41qiDU"]),
                 navId: "manage-multi-account",
-                onClose: u.Z_,
+                onClose: d.Z_,
                 onSelect: t,
                 children: (0, i.jsx)(c.Drp, {
                   id: "remove-account",
-                  label: y.intl.string(y.t.lSLMaU),
+                  label: b.intl.string(b.t.lSLMaU),
                   action: () => {
                     let e;
-                    d.A.logout("multi_accounts_list", null, n.id).finally(() => {
+                    u.A.logout("multi_accounts_list", null, n.id).finally(() => {
                       x.At(n.id)
-                    }), e = {}, null != s ? e.section = b.JJy.MANAGE_ACCOUNTS_MODAL : e.page = b.S3d.LOGIN, m.default.track(b.HAw.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
+                    }), e = {}, null != s ? e.section = y.JJy.MANAGE_ACCOUNTS_MODAL : e.page = y.S3d.LOGIN, m.default.track(y.HAw.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
                       location: e
                     }), r(2, n.id), null != t && t()
                   },
@@ -122,7 +123,7 @@ function O(e) {
               })
             })
           },
-          "aria-label": y.intl.string(y.t.PdRCRg),
+          "aria-label": b.intl.string(b.t.PdRCRg),
           variant: "icon-only"
         })]
       })]
@@ -143,7 +144,7 @@ function S(e) {
     children: r ? (0, i.jsx)(c.y$y, {
       className: j.u1
     }) : l.map((e, r) => (0, i.jsxs)(s.Fragment, {
-      children: [(0, i.jsx)(O, {
+      children: [(0, i.jsx)(I, {
         user: e,
         actionText: t,
         onAction: n

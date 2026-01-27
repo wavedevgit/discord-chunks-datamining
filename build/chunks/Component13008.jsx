@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 13008, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => g
 }), require("./896048.js"), require("./321073.js");
@@ -10,7 +11,7 @@ var r, i, Chunk627968 = require("./627968.js"),
   Chunk235986 = require("./235986.jsx"),
   Chunk267950 = require("./267950.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +26,7 @@ class h extends(r = Chunk64700.PureComponent) {
     } = this.props;
     return (0, s.jsx)("input", {
       ref: this.setCodeBlockRef,
-      className: o()(d.h, e),
+      className: o()(u.h, e),
       maxLength: 1,
       value: null != this.props.code ? this.props.code : true,
       autoFocus: this.props.autoFocus,
@@ -42,9 +43,9 @@ class h extends(r = Chunk64700.PureComponent) {
     null == (e = this._codeBlockRef) || e.blur()
   }
   constructor(...e) {
-    super(...e), u(this, "_codeBlockRef", true), u(this, "setCodeBlockRef", e => {
+    super(...e), d(this, "_codeBlockRef", true), d(this, "setCodeBlockRef", e => {
       this._codeBlockRef = e
-    }), u(this, "handleKeyDown", e => {
+    }), d(this, "handleKeyDown", e => {
       let t = 8 === e.which || 37 === e.which || 39 === e.which,
         n = e.which >= 48 && e.which <= 57 || e.keyCode >= 96 && e.keyCode <= 105;
       t || n || e.preventDefault();
@@ -52,7 +53,7 @@ class h extends(r = Chunk64700.PureComponent) {
         onKeyDown: r
       } = this.props;
       null == r || r(e)
-    }), u(this, "handleChange", e => {
+    }), d(this, "handleChange", e => {
       let {
         onChange: t
       } = this.props;
@@ -60,7 +61,7 @@ class h extends(r = Chunk64700.PureComponent) {
     })
   }
 }
-u(h, "defaultProps", {
+d(h, "defaultProps", {
   autoFocus: false
 });
 class p extends(i = Chunk64700.PureComponent) {
@@ -72,7 +73,7 @@ class p extends(i = Chunk64700.PureComponent) {
       codes: n
     } = this.state, r = [];
     for (let e = 0; e < n.length; e++) e === n.length / 2 && r.push((0, s.jsx)("div", {
-      className: d.j
+      className: u.j
     }, "spacer")), r.push((0, s.jsx)(h, {
       ref: t => this.setCodeBlockRef(e, t),
       code: n[e],
@@ -128,12 +129,12 @@ class p extends(i = Chunk64700.PureComponent) {
     null == t || t(e)
   }
   constructor(e) {
-    super(e), u(this, "_codeBlockRefs", Array(this.props.count)), this.state = {
+    super(e), d(this, "_codeBlockRefs", Array(this.props.count)), this.state = {
       codes: Array(e.count)
     }
   }
 }
-u(p, "defaultProps", {
+d(p, "defaultProps", {
   count: 6
 });
 let g = p

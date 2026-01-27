@@ -1,7 +1,8 @@
 /** Chunk was on 86142 **/
 /** chunk id: 957622, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./747238.js"), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,14 +29,14 @@ let v = e => {
     buttonText: i,
     buttonOnClick: s
   } = e;
-  return (0, r.jsx)(d.Ay, {
+  return (0, r.jsx)(u.Ay, {
     children: (0, r.jsxs)(o.BJc, {
       gap: 24,
       children: [(0, r.jsxs)(o.BJc, {
         gap: 8,
-        children: [(0, r.jsx)(d.hE, {
+        children: [(0, r.jsx)(u.hE, {
           children: t
-        }), (0, r.jsx)(d.tK, {
+        }), (0, r.jsx)(u.tK, {
           children: n
         })]
       }), (0, r.jsx)(o.Button, {
@@ -47,15 +48,15 @@ let v = e => {
   })
 };
 
-function b(e) {
+function y(e) {
   let {
     match: t,
     location: l
-  } = e, o = (0, s.parse)(l.search).token, [u, b] = i.useState("loading"), y = i.useRef(false), j = i.useCallback(async e => {
+  } = e, o = (0, s.parse)(l.search).token, [d, y] = i.useState("loading"), b = i.useRef(false), j = i.useCallback(async e => {
     try {
       g.default.track(A.HAw.ONE_TIME_LOGIN_ATTEMPTED, {
         source: "web_page"
-      }), await c.A.oneTimeLogin(e), b("login_success"), g.default.track(A.HAw.LOGIN_SUCCESSFUL, {
+      }), await c.A.oneTimeLogin(e), y("login_success"), g.default.track(A.HAw.LOGIN_SUCCESSFUL, {
         source: "web_page",
         login_method: "one_time_login"
       }), n.g.location.assign(A.BVt.APP)
@@ -65,21 +66,21 @@ function b(e) {
         source: "web_page",
         error_reason: "api_error",
         error_message: e
-      }), b("error")
+      }), y("error")
     }
-  }, []), I = i.useCallback(e => {
+  }, []), O = i.useCallback(e => {
     var t;
     let n = null != (t = p.default.getFingerprint()) ? t : p.default.getId(),
       r = "discord://login/one-time?token=".concat(encodeURIComponent(e));
-    f.A.launch(r, e => {
+    _.A.launch(r, e => {
       e ? (g.default.track(A.HAw.DEEP_LINK_CLICKED, {
         source: "web_page",
         destination: "discord://login/one-time",
         deep_link_provider: "protocol",
         fingerprint: n
-      }), b("app_launched")) : b("app_launch_not_supported")
+      }), y("app_launched")) : y("app_launch_not_supported")
     })
-  }, []), O = i.useCallback(e => {
+  }, []), I = i.useCallback(e => {
     var t;
     let r = null != (t = p.default.getFingerprint()) ? t : p.default.getId();
     Promise.resolve().then(n.bind(n, 129014)).then(t => {
@@ -98,19 +99,19 @@ function b(e) {
           destination: "one_time_login_modal",
           deep_link_provider: "rpc",
           fingerprint: r
-        }), b("app_launched")) : I(e)
+        }), y("app_launched")) : O(e)
       }).catch(() => {
-        I(e)
+        O(e)
       }).then(() => n.disconnect())
     })
-  }, [I]);
+  }, [O]);
   if (i.useEffect(() => {
       let e = null != o && "string" == typeof o,
-        t = a.Fr ? "mobile" : a.v1 ? "tablet" : (0, _.isDesktop)() ? "desktop_app" : "web";
+        t = a.Fr ? "mobile" : a.v1 ? "tablet" : (0, f.isDesktop)() ? "desktop_app" : "web";
       if (g.default.track(A.HAw.ONE_TIME_LOGIN_PAGE_VIEWED, {
           has_token: e,
           device_type: t
-        }), !e) return void b("error");
+        }), !e) return void y("error");
       if (a.Fr || a.v1) {
         var n;
         let e = null == (n = g.default.getSuperProperties()) ? true : n.os;
@@ -120,33 +121,33 @@ function b(e) {
           platform: e
         });
         return
-      }(0, _.isDesktop)() ? j(o): y.current || (y.current = true, b("rpc_attempting"), O(o))
-    }, [o, l, j, O]), a.Fr || a.v1) {
+      }(0, f.isDesktop)() ? j(o): b.current || (b.current = true, y("rpc_attempting"), I(o))
+    }, [o, l, j, I]), a.Fr || a.v1) {
     let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";
     return (0, r.jsx)(m.W, {
       token: o,
-      hasError: "error" === u,
+      hasError: "error" === d,
       errorReason: e
     })
   }
   if ((0, h.MX)()) return null;
-  if ("app_launched" === u) return (0, r.jsx)(v, {
+  if ("app_launched" === d) return (0, r.jsx)(v, {
     title: E.intl.string(E.t.RvUUOy),
     subtitle: E.intl.string(E.t["5/lR0g"]),
     buttonText: E.intl.string(E.t["2ixEBi"]),
     buttonOnClick: () => {
       g.default.track(A.HAw.ONE_TIME_LOGIN_CONTINUE_IN_BROWSER_CLICKED, {
-        previous_status: u
+        previous_status: d
       }), j(o)
     }
   });
-  if ("app_launch_not_supported" === u) return (0, r.jsx)(v, {
+  if ("app_launch_not_supported" === d) return (0, r.jsx)(v, {
     title: E.intl.string(E.t.qq4tjT),
     subtitle: E.intl.string(E.t.CVxYRo),
     buttonText: E.intl.string(E.t["2ixEBi"]),
     buttonOnClick: () => j(o)
   });
-  if ("error" === u) {
+  if ("error" === d) {
     let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";
     return (0, r.jsx)(v, {
       title: E.intl.string(E.t.RtCSr1),
@@ -159,15 +160,15 @@ function b(e) {
       }
     })
   }
-  return (0, r.jsx)(d.Ay, {
-    children: (0, r.jsx)(d.CK, {})
+  return (0, r.jsx)(u.Ay, {
+    children: (0, r.jsx)(u.CK, {})
   })
 }
-let y = function(e) {
+let b = function(e) {
   let {
     enabled: t
-  } = (0, u.lq)("OneTimeLoginCardWrapper");
-  return t ? (0, r.jsx)(b, function(e) {
+  } = (0, d.lq)("OneTimeLoginCardWrapper");
+  return t ? (0, r.jsx)(y, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

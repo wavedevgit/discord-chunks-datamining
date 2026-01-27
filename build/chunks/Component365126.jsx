@@ -2,12 +2,12 @@
 /** chunk id: 365126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
-}), require("./896048.js"), require("./457529.js");
+}), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
-  Chunk460648 = require("./460648.js"),
   Chunk562465 = require("./562465.js"),
   Chunk397927 = require("./397927.js"),
+  Chunk293731 = require("./293731.js"),
   Chunk464477 = require("./464477.js"),
   Chunk723702 = require("./723702.js"),
   Chunk837921 = require("./837921.js"),
@@ -26,7 +26,7 @@ function g(e) {
     challenge: x
   } = t.methods.find(e => "webauthn" === e.type), v = async () => {
     j(true), S(null);
-    let e = d.isPlatformEmbedded && c.Ay.supportsFeature(f.BYE.WEBAUTHN) ? c.Ay.webAuthnAuthenticate(x) : (0, i.Jt)(JSON.parse(x)).then(JSON.stringify),
+    let e = d.isPlatformEmbedded && c.Ay.supportsFeature(f.BYE.WEBAUTHN) ? c.Ay.webAuthnAuthenticate(x) : (0, a.J)(x),
       t = async e => {
         try {
           await n({
@@ -34,7 +34,7 @@ function g(e) {
             data: e
           })
         } catch (e) {
-          e instanceof s.oh ? S(h.intl.string(h.t.xSCvBf)) : ((0, o.Os)(e, {}), S(e.message))
+          e instanceof i.oh ? S(h.intl.string(h.t.xSCvBf)) : ((0, o.Os)(e, {}), S(e.message))
         }
       };
     try {
@@ -61,7 +61,7 @@ function g(e) {
     }), (0, r.jsx)(u.A.SlideFooter, {
       mfaChallenge: t,
       setSlide: g,
-      trailingButton: (0, r.jsx)(a.Button, {
+      trailingButton: (0, r.jsx)(s.Button, {
         variant: "primary",
         text: h.intl.string(h.t.Xr3Eks),
         loading: b,

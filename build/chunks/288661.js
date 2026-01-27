@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 288661, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   wx: "header__7c901",
   VA: "subtitle__7c901",

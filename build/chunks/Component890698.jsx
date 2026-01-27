@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 890698, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => w,
   M: () => C
@@ -33,7 +34,7 @@ var Chunk627968 = require("./627968.js"),
 let C = () => (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(h.eu, {
       src: null,
-      size: d._3J.DEPRECATED_SIZE_100,
+      size: u._3J.DEPRECATED_SIZE_100,
       className: N.my
     }), (0, r.jsx)(h.tK, {
       children: S.intl.string(S.t["3rE1P8"])
@@ -55,7 +56,7 @@ let C = () => (0, r.jsxs)(i.Fragment, {
       size: N.q6
     }) : null != n ? (0, r.jsx)(h.eu, {
       src: null != n ? n.getAvatarURL(true, 80) : null,
-      size: d._3J.SIZE_80,
+      size: u._3J.SIZE_80,
       className: s ? true : N.my
     }) : null != t ? (0, r.jsx)(p.Ay, {
       mask: p.Ay.Masks.SQUIRCLE,
@@ -69,7 +70,7 @@ let C = () => (0, r.jsxs)(i.Fragment, {
       })
     }) : null
   },
-  R = e => (0, r.jsx)(d.Text, {
+  R = e => (0, r.jsx)(u.Text, {
     tag: "span",
     className: e.className,
     variant: "text-sm/medium",
@@ -96,7 +97,7 @@ let C = () => (0, r.jsxs)(i.Fragment, {
       }));
     if (null == g) return null;
     let M = null != D && D.length > 0,
-      F = null != g.guild ? b.fh(g.guild) ? g.guild : b.DY(g.guild) : null,
+      F = null != g.guild ? y.fh(g.guild) ? g.guild : y.DY(g.guild) : null,
       V = null != g.channel ? (0, x.OY)(g.channel) : null,
       W = null != g.target_application ? new A.Ay(g.target_application) : null,
       H = C || null == g.inviter ? null : new E.A(g.inviter),
@@ -105,11 +106,11 @@ let C = () => (0, r.jsxs)(i.Fragment, {
       Q = (0, o.Lt)(null != (t = g.flags) ? t : 0, a.Q.IS_GUEST_INVITE),
       q = false;
     if (null != F) B && (z = null == H ? S.intl.string(S.t["3rE1P8"]) : S.intl.formatToPlainString(S.t["5u47va"], {
-      username: y.Ay.getFormattedName(H)
-    }), g.target_type === O.yV.STREAM && null != g.target_user && (z = S.intl.formatToPlainString(S.t.x2L32Q, {
-      username: y.Ay.getFormattedName(g.target_user)
-    })), g.target_type === O.yV.EMBEDDED_APPLICATION && null != g.target_application && (z = null != H ? S.intl.formatToPlainString(S.t.UW1Cav, {
-      username: y.Ay.getFormattedName(H)
+      username: b.Ay.getFormattedName(H)
+    }), g.target_type === I.yV.STREAM && null != g.target_user && (z = S.intl.formatToPlainString(S.t.x2L32Q, {
+      username: b.Ay.getFormattedName(g.target_user)
+    })), g.target_type === I.yV.EMBEDDED_APPLICATION && null != g.target_application && (z = null != H ? S.intl.formatToPlainString(S.t.UW1Cav, {
+      username: b.Ay.getFormattedName(H)
     }) : S.intl.string(S.t.ENSuN3))), K && null == W && (i = (0, r.jsx)(h.$v, {
       className: N.Kk,
       guild: F,
@@ -123,7 +124,7 @@ let C = () => (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(h.$v, {
           guild: F,
           size: h.$v.Sizes.SMALL
-        }), (0, r.jsx)(d.Text, {
+        }), (0, r.jsx)(u.Text, {
           tag: "span",
           variant: "text-lg/normal",
           color: "text-strong",
@@ -134,15 +135,15 @@ let C = () => (0, r.jsxs)(i.Fragment, {
     }));
     else if (null != V) {
       if (null == H) throw Error("no inviter in group DM invite");
-      let e = y.Ay.getFormattedName(H);
+      let e = b.Ay.getFormattedName(H);
       null != V.name && "" !== V.name ? (z = S.intl.formatToPlainString(S.t["5u47va"], {
         username: e
       }), s = V.name, null != V.icon && (i = (0, r.jsx)(h.F4, {
         channel: V,
-        size: d._3J.SIZE_32
+        size: u._3J.SIZE_32
       }))) : (z = S.intl.string(S.t.OsdY8B), s = e)
     } else if (null != H) {
-      let e = y.Ay.getFormattedName(H, true);
+      let e = b.Ay.getFormattedName(H, true);
       s = S.intl.formatToPlainString(S.t["4aF92R"], {
         username: e
       }), q = true, p = null != w ? null : (0, r.jsx)(h.tK, {
@@ -154,7 +155,7 @@ let C = () => (0, r.jsxs)(i.Fragment, {
         })
       })
     }
-    return (0, r.jsxs)(d.BJc, {
+    return (0, r.jsxs)(u.BJc, {
       direction: "vertical",
       gap: 8,
       className: l()(N.kL, U),
@@ -176,24 +177,24 @@ let C = () => (0, r.jsxs)(i.Fragment, {
           children: z
         }) : null, (0, r.jsxs)(h.hE, {
           className: N.DD,
-          children: [null != F ? (0, r.jsx)(_.A, {
+          children: [null != F ? (0, r.jsx)(f.A, {
             guild: F,
             className: N.n2,
             tooltipPosition: "left"
           }) : null, i, s]
         })]
-      }), p, (0, r.jsxs)(d.BJc, {
+      }), p, (0, r.jsxs)(u.BJc, {
         direction: "vertical",
         gap: 24,
-        children: [(0, r.jsxs)(d.BJc, {
+        children: [(0, r.jsxs)(u.BJc, {
           direction: "vertical",
           gap: 4,
-          children: [null != W || q || (null == g || null == (n = g.guild) ? true : n.id) === I.TA ? null : (0, r.jsx)(h.R1, {
+          children: [null != W || q || (null == g || null == (n = g.guild) ? true : n.id) === O.TA ? null : (0, r.jsx)(h.R1, {
             online: g.approximate_presence_count,
             total: g.approximate_member_count,
             flat: P,
             renderText: M ? R : true
-          }), M && (0, r.jsx)(u.A, {
+          }), M && (0, r.jsx)(d.A, {
             friendMemberIds: D
           })]
         }), (0, r.jsx)(m.A, {
@@ -202,7 +203,7 @@ let C = () => (0, r.jsxs)(i.Fragment, {
           className: N.Ei
         }), L || Q || null == G ? (0, r.jsx)(h.xt, {
           user: G
-        }) : (0, r.jsx)(f.L, {})]
+        }) : (0, r.jsx)(_.L, {})]
       })]
     })
   }

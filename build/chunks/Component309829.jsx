@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 309829, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   K: () => c
 });
@@ -15,8 +16,8 @@ let c = e => {
     showBackButton: t,
     onBack: n,
     renderFooter: c,
-    onReopen: d
-  } = e, u = (0, l.i)(s.tY.MEDIA_TAKEDOWN, d), h = (0, r.jsxs)(i.ButtonGroup, {
+    onReopen: u
+  } = e, d = (0, l.i)(s.tY.MEDIA_TAKEDOWN, u), h = (0, r.jsxs)(i.ButtonGroup, {
     fullWidth: true,
     children: [t && null != n && (0, r.jsx)(i.Button, {
       variant: "secondary",
@@ -25,7 +26,7 @@ let c = e => {
     }), (0, r.jsx)(i.Button, {
       text: a.intl.string(a.t.D5Czbu),
       variant: "primary",
-      onClick: u
+      onClick: d
     })]
   });
   return (0, r.jsxs)(i.BJc, {

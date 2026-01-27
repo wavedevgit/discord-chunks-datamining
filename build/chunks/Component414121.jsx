@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 414121, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Ay: () => x,
   Lx: () => A,
@@ -34,7 +35,7 @@ function p(e) {
   return e
 }
 var g = ((r = {}).SIZE_40 = "SIZE_40", r.SIZE_60 = "SIZE_60", r);
-let _ = Object.freeze({
+let f = Object.freeze({
     SIZE_40: "size-40",
     SIZE_60: "size-60"
   }),
@@ -69,8 +70,8 @@ class m extends(i = Chunk64700.PureComponent) {
         height: r.size,
         backgroundColor: r.bgColor
       },
-      className: c()(u.qrCodeContainer, t),
-      children: (0, l.jsx)(d.default, p({
+      className: c()(d.qrCodeContainer, t),
+      children: (0, l.jsx)(u.default, p({
         value: n,
         level: "M"
       }, r))
@@ -86,14 +87,14 @@ class A extends(s = Chunk64700.PureComponent) {
   render() {
     let {
       overlaySize: e
-    } = this.props, t = _[null != e ? e : "SIZE_40"];
+    } = this.props, t = f[null != e ? e : "SIZE_40"];
     return (0, l.jsxs)("div", {
-      className: u.qrCodeOverlayContainer,
+      className: d.qrCodeOverlayContainer,
       children: [(0, l.jsx)(m, p({}, this.props)), (0, l.jsx)("div", {
-        className: u.qrCodeOverlay,
+        className: d.qrCodeOverlay,
         children: (0, l.jsx)("img", {
-          className: u[t],
-          src: f,
+          className: d[t],
+          src: _,
           alt: ""
         })
       })]

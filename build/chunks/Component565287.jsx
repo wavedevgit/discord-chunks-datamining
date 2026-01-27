@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 565287, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Kz: () => v,
   rP: () => x
@@ -43,36 +44,36 @@ let E = e => {
     let {
       transitionState: t,
       onClose: n
-    } = e, [r, x] = s.useState(true), [v, b] = s.useState([]), [y, j] = s.useState("selection"), I = (0, l.bG)([p.default], () => p.default.isAuthenticated()), O = (0, l.bG)([d.A], () => d.A.hasLoadedExperiments), S = s.useCallback(() => {
+    } = e, [r, x] = s.useState(true), [v, y] = s.useState([]), [b, j] = s.useState("selection"), O = (0, l.bG)([p.default], () => p.default.isAuthenticated()), I = (0, l.bG)([u.A], () => u.A.hasLoadedExperiments), S = s.useCallback(() => {
       (0, h.OY)().then(e => {
         let {
           body: {
             capabilities: t
           }
         } = e;
-        x(false), b(t)
+        x(false), y(t)
       }).catch(() => {
-        x(false), b([])
+        x(false), y([])
       })
     }, []);
     s.useEffect(() => {
-      I ? (x(true), c.rQ({
+      O ? (x(true), c.rQ({
         withAnalyticsToken: true
       }).then(() => S()).catch(() => x(false))) : S()
-    }, [I, S]), s.useEffect(() => {
+    }, [O, S]), s.useEffect(() => {
       (async () => {
-        O || (await o.A.getLocationMetadata(), o.A.getExperiments())
+        I || (await o.A.getLocationMetadata(), o.A.getExperiments())
       })()
-    }, [O]);
-    let N = v.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
-      C = v.includes(u.tY.MEDIA_TAKEDOWN),
+    }, [I]);
+    let N = v.filter(e => e !== d.tY.MEDIA_TAKEDOWN),
+      C = v.includes(d.tY.MEDIA_TAKEDOWN),
       T = N.length > 0,
       R = T && C;
     s.useEffect(() => {
-      !r && O && !R && (T ? j("dsa") : C && j("tida"))
-    }, [r, O, R, T, C]), s.useEffect(() => {
-      r || !O || T || C || n()
-    }, [r, O, T, C, n]);
+      !r && I && !R && (T ? j("dsa") : C && j("tida"))
+    }, [r, I, R, T, C]), s.useEffect(() => {
+      r || !I || T || C || n()
+    }, [r, I, T, C, n]);
     let w = s.useCallback(e => {
         j(e)
       }, []),
@@ -96,7 +97,7 @@ let E = e => {
       children: (0, i.jsx)(a.$mQ, {
         className: m.k,
         "data-migration-pending": true,
-        children: r || !O ? (0, i.jsx)(a.BJc, {
+        children: r || !I ? (0, i.jsx)(a.BJc, {
           gap: 16,
           align: "center",
           justify: "center",
@@ -106,11 +107,11 @@ let E = e => {
           children: (0, i.jsx)(a.y$y, {})
         }) : (0, i.jsxs)(a.tN_, {
           width: "100%",
-          activeSlide: y,
+          activeSlide: b,
           centered: false,
           children: [(0, i.jsx)(a.q7S, {
             id: "selection",
-            children: (0, i.jsx)(_.u, {
+            children: (0, i.jsx)(f.u, {
               onNavigate: w
             })
           }), (0, i.jsx)(a.q7S, {
@@ -125,7 +126,7 @@ let E = e => {
             })
           }), (0, i.jsx)(a.q7S, {
             id: "tida",
-            children: (0, i.jsx)(f.K, {
+            children: (0, i.jsx)(_.K, {
               showBackButton: R,
               onBack: R ? P : true,
               renderFooter: L,

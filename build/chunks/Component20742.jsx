@@ -188,85 +188,99 @@ function w(e) {
     gradientColor: t,
     graphic: n,
     badge: i,
-    title: a,
-    titleTextVariant: s,
-    subtitle: l,
-    alignCenter: c = false,
-    leading: m,
-    trailing: y,
-    stepNumber: O,
-    stepCount: v
+    badgePosition: a = "top",
+    title: s,
+    titleTextVariant: l,
+    subtitle: c,
+    alignCenter: m = false,
+    leading: y,
+    trailing: O,
+    stepNumber: v,
+    stepCount: A
   } = e, {
-    headingId: A
+    headingId: I
   } = (0, g.k)(), {
-    i18n: I
-  } = (0, _.G9)(), S = null != t, w = (0, f.Oy)(n), D = c ? w ? C : N : T, L = null != n && (0, r.jsx)("div", {
+    i18n: S
+  } = (0, _.G9)(), w = null != t, D = (0, f.Oy)(n), L = m ? D ? C : N : T, x = null != n && (0, r.jsx)("div", {
     className: o()(E.headerGraphic, {
-      [E.headerGraphicAnimated]: w
+      [E.headerGraphicAnimated]: D
     }),
     children: (0, r.jsx)("div", {
       className: E.headerGraphicContainer,
       children: (0, r.jsx)(d.v, b({}, n))
     })
-  }), x = (0, r.jsx)(p.D, {
+  }), M = (0, r.jsx)(p.D, {
     className: E.headerTitle,
-    id: A,
-    variant: null != s ? s : "heading-lg/semibold",
+    id: I,
+    variant: null != l ? l : "heading-lg/semibold",
     color: "text-strong",
-    children: a
-  }), M = null != n ? L : x, j = (0, r.jsx)("header", {
+    children: s
+  }), j = null != n ? x : M;
+  "end" === a && (M = (0, r.jsxs)(h.B, {
+    direction: "horizontal",
+    gap: 8,
+    align: "center",
+    children: [M, (0, r.jsx)(R, {
+      badge: i,
+      position: a
+    })]
+  }));
+  let k = (0, r.jsx)("header", {
     className: o()(E.section, E.header, {
-      [E.headerCentered]: c
+      [E.headerCentered]: m
     }),
     children: (0, r.jsxs)(h.B, {
       gap: 8,
       children: [(0, r.jsx)("div", {
         className: E.headerLayout,
-        children: (0, r.jsx)(D, {
-          leading: m,
-          trailing: y,
-          hasGradient: S,
+        children: (0, r.jsx)(L, {
+          leading: y,
+          trailing: O,
+          hasGradient: w,
           children: (0, r.jsxs)("div", {
             className: E.headerMain,
-            children: [null != O && null != v && (0, r.jsx)("div", {
+            children: [null != v && null != A && (0, r.jsx)("div", {
               className: E.headerStepIndicator,
               children: (0, r.jsx)("span", {
                 className: E.progressBar,
                 style: {
-                  width: "".concat(O / (v + 1) * 100, "%")
+                  width: "".concat(v / (A + 1) * 100, "%")
                 },
                 role: "progressbar",
-                "aria-valuenow": O,
+                "aria-valuenow": v,
                 "aria-valuemin": 1,
-                "aria-valuemax": v,
-                "aria-label": I.STEP_INDICATOR(O, v)
+                "aria-valuemax": A,
+                "aria-label": S.STEP_INDICATOR(v, A)
               })
-            }), M]
+            }), j]
           })
         })
-      }), (0, r.jsx)(R, {
-        badge: i
-      }), null != n && null != a && x, null != l && (0, r.jsx)(P, {
-        subtitle: l
+      }), "top" === a && (0, r.jsx)(R, {
+        badge: i,
+        position: a
+      }), null != n && null != s && M, null != c && (0, r.jsx)(P, {
+        subtitle: c
       })]
     })
   });
-  return S ? (0, r.jsx)(u.h, {
+  return w ? (0, r.jsx)(u.h, {
     color: t,
     className: E.headerGradient,
-    children: j
-  }) : j
+    children: k
+  }) : k
 }
 
 function R(e) {
   let {
-    badge: t
+    badge: t,
+    position: n
   } = e;
   if (null == t) return null;
-  let n = (0, l.U)(t);
+  let i = (0, l.U)(t);
   return (0, r.jsx)("div", {
     className: E.headerBadge,
-    children: (0, r.jsx)(l.E, b({}, n))
+    "data-position": n,
+    children: (0, r.jsx)(l.E, b({}, i))
   })
 }
 

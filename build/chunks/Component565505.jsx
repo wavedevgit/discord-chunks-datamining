@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 565505, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => E
 }), require("./228524.js");
@@ -21,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk473169 = require("./473169.js");
 
 function x(e, t, n) {
-  e.preventDefault(), p.default.track(_.HAw.GUILD_TEMPLATE_APP_OPENED, {
+  e.preventDefault(), p.default.track(f.HAw.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
     guild_template_description: n.description,
@@ -29,7 +30,7 @@ function x(e, t, n) {
   });
   let r = h.default.getFingerprint(),
     i = null != r ? r : h.default.getId();
-  c.A.openMobileApp(n.state === f.QB.RESOLVED ? t : true, i)
+  c.A.openMobileApp(n.state === _.QB.RESOLVED ? t : true, i)
 }
 
 function E(e) {
@@ -37,11 +38,11 @@ function E(e) {
     code: t
   } = e, n = (0, s.bG)([o.A], () => o.A.getGuildTemplate(t));
   return (i.useEffect(() => {
-    (0, u.d)("guild_template_mobile")
-  }, []), null == n || n.state === f.QB.RESOLVING) ? (0, r.jsx)(a.Ay, {
+    (0, d.d)("guild_template_mobile")
+  }, []), null == n || n.state === _.QB.RESOLVING) ? (0, r.jsx)(a.Ay, {
     children: (0, r.jsx)(l.y$y, {})
-  }) : n.state === f.QB.RESOLVED ? (0, r.jsxs)(a.Ay, {
-    children: [(0, r.jsx)(d.A, {
+  }) : n.state === _.QB.RESOLVED ? (0, r.jsxs)(a.Ay, {
+    children: [(0, r.jsx)(u.A, {
       guildTemplate: n,
       tall: true
     }), (0, r.jsx)("div", {

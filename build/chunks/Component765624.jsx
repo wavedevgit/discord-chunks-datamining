@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 765624, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => m
 }), require("./896048.js");
@@ -35,8 +36,8 @@ function g(e) {
   }
   return e
 }
-let _ = (0, Chunk240248.xI)(Chunk319060.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-  f = {
+let f = (0, Chunk240248.xI)(Chunk319060.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+  _ = {
     friction: 10,
     tension: 130
   },
@@ -60,7 +61,7 @@ let _ = (0, Chunk240248.xI)(Chunk319060.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
       animateTo(e, t) {
         a.A.spring(this.anim, g({
           toValue: e
-        }, f)).start(t)
+        }, _)).start(t)
       }
       getAnimatedStyle(e) {
         return this.state.shouldAnimate ? {
@@ -83,7 +84,7 @@ let _ = (0, Chunk240248.xI)(Chunk319060.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
       render() {
         return (0, r.jsx)("div", {
           className: h.i,
-          children: (0, r.jsx)(d.CZY.Consumer, {
+          children: (0, r.jsx)(u.CZY.Consumer, {
             children: t => {
               let {
                 reducedMotion: n
@@ -101,7 +102,7 @@ let _ = (0, Chunk240248.xI)(Chunk319060.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         super(...e), p(this, "timeout", true), p(this, "anim", new a.A.Value(0)), p(this, "state", {
           shouldAnimate: !o.Fr
         }), p(this, "handleResize", () => {
-          let e = window.innerWidth > _;
+          let e = window.innerWidth > f;
           !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
             shouldAnimate: e
           })

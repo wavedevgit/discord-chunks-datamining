@@ -1,7 +1,8 @@
 /** Chunk was on 86142 **/
 /** chunk id: 383302, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  N: () => d
+  N: () => u
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,17 +12,17 @@ var Chunk397927 = require("./397927.js"),
   Chunk860689 = require("./860689.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk936528 = require("./936528.js");
-let d = e => {
+let u = e => {
   let {
     guild: t,
     onlineCount: n
   } = e;
   if (null == t) return null;
-  let d = a.DY(t),
+  let u = a.DY(t),
     {
-      name: u,
+      name: d,
       description: h
-    } = d;
+    } = u;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(i.Heading, {
       variant: "heading-md/normal",
@@ -35,7 +36,7 @@ let d = e => {
         width: 40,
         height: 40,
         children: (0, r.jsx)(l.A, {
-          guild: d,
+          guild: u,
           size: l.A.Sizes.MEDIUM,
           active: true
         })
@@ -43,7 +44,7 @@ let d = e => {
         className: c.OA,
         children: [(0, r.jsx)(i.Heading, {
           variant: "heading-sm/semibold",
-          children: u
+          children: d
         }), (0, r.jsxs)("div", {
           className: c.aH,
           children: [(0, r.jsx)("div", {

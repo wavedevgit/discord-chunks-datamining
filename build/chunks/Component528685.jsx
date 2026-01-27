@@ -1,7 +1,8 @@
 /** Chunk was on 86142 **/
 /** chunk id: 528685, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  A: () => d
+  A: () => u
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -12,7 +13,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk473169 = require("./473169.js");
 
-function d(e) {
+function u(e) {
   let {
     email: t
   } = e;

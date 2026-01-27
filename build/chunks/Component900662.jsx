@@ -1,8 +1,9 @@
 /** Chunk was on 86142 **/
 /** chunk id: 900662, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  A: () => f,
-  N: () => _
+  A: () => _,
+  N: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,21 +19,21 @@ var Chunk503698 = require("./503698.js"),
   Chunk20976 = require("./20976.js"),
   Chunk473169 = require("./473169.js");
 
-function _(e) {
+function f(e) {
   let {
     text: t,
     buttonCta: i,
-    onClick: d
+    onClick: u
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o._V, {
       src: n(431979)
     }), (0, r.jsx)(o.hE, {
       className: s()(g.QX, g.QB, p.tR),
-      children: u.intl.string(u.t.eL5z0i)
+      children: d.intl.string(d.t.eL5z0i)
     }), (0, r.jsx)(o.tK, {
       className: g.C2,
-      children: u.intl.string(u.t.poAv63)
+      children: d.intl.string(d.t.poAv63)
     }), (0, r.jsxs)(a.ZpM, {
       className: h.Nr,
       type: a.ZpM.Types.CUSTOM,
@@ -62,7 +63,7 @@ function _(e) {
           children: (0, r.jsx)(a.Button, {
             text: i,
             fullWidth: true,
-            onClick: d
+            onClick: u
           })
         })]
       })]
@@ -70,16 +71,16 @@ function _(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     text: t,
     buttonCta: n,
-    theme: i = d.NJ8.DARK,
+    theme: i = u.NJ8.DARK,
     onClick: s
   } = e;
   return (0, r.jsx)(o.Ay, {
     theme: i,
-    children: (0, r.jsx)(_, {
+    children: (0, r.jsx)(f, {
       text: t,
       buttonCta: n,
       onClick: s

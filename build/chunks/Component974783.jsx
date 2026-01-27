@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 974783, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   c: () => g
 });
@@ -26,7 +27,7 @@ let h = {
       (0, o.i)(n, l)()
     }, [n, l]);
     return (0, r.jsxs)(s.DUT, {
-      className: u.b0,
+      className: d.b0,
       onClick: a,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/medium",
@@ -46,12 +47,12 @@ let h = {
       dsaCapabilities: i,
       renderFooter: o,
       onClose: g,
-      onReopen: _
-    } = e, f = t && null != n ? (0, r.jsx)("div", {
-      className: u.Hq,
+      onReopen: f
+    } = e, _ = t && null != n ? (0, r.jsx)("div", {
+      className: d.Hq,
       children: (0, r.jsx)(s.Button, {
         variant: "secondary",
-        text: d.intl.string(d.t["13/7kX"]),
+        text: u.intl.string(u.t["13/7kX"]),
         onClick: n
       })
     }) : null;
@@ -59,20 +60,20 @@ let h = {
       gap: 16,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-xl/semibold",
-        children: d.intl.string(d.t.Z11w18)
+        children: u.intl.string(u.t.Z11w18)
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        children: d.intl.format(d.t["532l+q"], {
+        children: u.intl.format(u.t["532l+q"], {
           supportURL: a.A.getArticleURL(c.MVz.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, r.jsx)("div", {
-        className: u.kL,
+        className: d.kL,
         children: i.map(e => e === l.tY.MEDIA_TAKEDOWN || null == h[e] ? null : (0, r.jsx)(p, {
-          title: d.intl.string(h[e]),
+          title: u.intl.string(h[e]),
           menuType: e,
           onClose: g,
-          onReopen: _
+          onReopen: f
         }, e))
-      }), null == o ? true : o(f)]
+      }), null == o ? true : o(_)]
     })
   }

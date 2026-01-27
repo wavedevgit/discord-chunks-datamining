@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 526423, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => g
 }), require("./896048.js");
@@ -14,7 +15,7 @@ var Chunk562465 = require("./562465.js"),
   Chunk652215 = require("./652215.js");
 
 function h(e, t) {
-  c.default.track(u.HAw.BROWSER_HANDOFF_SUCCEEDED, {
+  c.default.track(d.HAw.BROWSER_HANDOFF_SUCCEEDED, {
     authenticated: e,
     handoff_source: t
   })
@@ -34,7 +35,7 @@ class p extends Chunk272355.A {
       handoffSource: o
     } = e;
     null != n ? r.Bo.post({
-      url: u.Rsh.HANDOFF_EXCHANGE,
+      url: d.Rsh.HANDOFF_EXCHANGE,
       body: {
         key: t,
         handoff_token: n
@@ -48,7 +49,7 @@ class p extends Chunk272355.A {
     }, e => {
       if (null != i && h(false, o), s.A.setFingerprint(i), (0, l.mZ)(), o === a.L.ROLE_SUBSCRIPTION) {
         var t;
-        c.default.track(u.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
+        c.default.track(d.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
           reason: null != (t = e.message) ? t : e.text,
           handoff_source: o
         })
