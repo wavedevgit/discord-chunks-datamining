@@ -14,7 +14,7 @@ function o(e, t) {
   return s.isPlatformEmbedded && (null == e ? true : e.length) !== 0 ? (0, i.jsx)(l.Drp, {
     id: "copy",
     label: a.intl.string(a.t.OpuAlK),
-    hint: (0, s.isMac)() ? "⌘C" : "Ctrl+C",
+    shortcut: (0, s.isMac)() ? "⌘C" : "Ctrl+C",
     leadingAccessory: {
       type: "icon",
       icon: l.TdU

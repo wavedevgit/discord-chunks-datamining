@@ -68,7 +68,7 @@ function v(e) {
     iconLeft: b,
     leadingAccessory: v,
     trailingIndicator: A,
-    hint: I,
+    shortcut: I,
     subtext: S,
     subtextLineClamp: T,
     hasSubmenu: C,
@@ -131,8 +131,8 @@ function v(e) {
         children: S
       })]
     }), null != I && (0, r.jsx)("div", {
-      className: g.hintContainer,
-      children: (0, l.J)(I, e)
+      className: g.shortcutContainer,
+      children: I
     }), null != w && (0, r.jsx)("div", {
       className: g.badgeContainer,
       children: (0, r.jsx)(s.Exy, {

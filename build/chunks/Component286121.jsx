@@ -24,7 +24,7 @@ let l = {
         showSwitchItems: d,
         showSubmenus: f,
         showIcons: p,
-        showHints: _,
+        showShortcuts: _,
         showSubtext: h,
         showDisabledItems: m,
         showColoredItems: g,
@@ -42,7 +42,7 @@ let l = {
           id: "edit",
           label: "Edit Message",
           icon: p ? o.R2l : true,
-          hint: _ ? "⌘E" : true,
+          shortcut: _ ? "⌘E" : true,
           action: () => {}
         }), (0, r.jsx)(o.Drp, {
           id: "pin",
@@ -259,9 +259,9 @@ let l = {
         label: "Show Icons",
         defaultValue: true
       },
-      showHints: {
+      showShortcuts: {
         type: "boolean",
-        label: "Show Hints",
+        label: "Show Shortcuts",
         defaultValue: true
       },
       showSubtext: {

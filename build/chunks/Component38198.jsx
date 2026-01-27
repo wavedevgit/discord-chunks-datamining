@@ -1,13 +1,12 @@
 /** Chunk was on 41727 **/
 /** chunk id: 38198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => L
-}), require("./591487.js"), require("./727858.js"), require("./747238.js"), require("./321073.js"), require("./896048.js");
+  A: () => P
+}), require("./591487.js"), require("./727858.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk554146 = require("./554146.js"),
-  Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk308368 = require("./308368.js"),
   Chunk795816 = require("./795816.js"),
@@ -16,13 +15,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk500049 = require("./500049.js"),
   Chunk975412 = require("./975412.jsx"),
   Chunk826673 = require("./826673.js"),
-  Chunk160761 = require("./160761.js"),
-  Chunk379848 = require("./379848.jsx"),
   Chunk970244 = require("./970244.jsx"),
   Chunk867455 = require("./867455.js"),
   Chunk780057 = require("./780057.js"),
   Chunk747926 = require("./747926.js"),
-  Chunk320501 = require("./320501.js"),
   Chunk954571 = require("./954571.js"),
   Chunk203982 = require("./203982.js"),
   Chunk453771 = require("./453771.js"),
@@ -34,66 +30,43 @@ var Chunk627968 = require("./627968.js"),
   Chunk412136 = require("./412136.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk545156 = require("./545156.js");
-let D = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
+let T = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
-function M() {
-  let e = (0, i.bG)([j.A], () => j.A.hasCurrentUserSentMessageSinceAppStart()),
-    t = [];
-  e && t.push(s.M.ACTIVITIES_CHAT_MENU_NEW_BADGE);
-  let [n] = (0, m.DP)(t);
-  return l.useEffect(() => () => {
-    n === s.M.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, g.Dr)(s.M.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-      dismissAction: T.i.TAKE_ACTION
-    })
-  }, [n]), (0, r.jsx)(b.Ay, {
-    contentTypes: t,
-    children: e => {
-      let {
-        visibleContent: t
-      } = e;
-      return t === s.M.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(o.LpS, {
-        text: w.intl.string(w.t.y2b7CA),
-        color: a.A.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT.css
-      }) : null
-    }
-  })
-}
-
-function L(e) {
+function P(e) {
   let {
     channel: t,
-    chatInputType: a,
-    options: m,
-    onFileUpload: b,
-    onClose: j,
-    onSelect: L,
-    draftType: k,
-    editorTextContent: G,
-    setValue: U,
-    openClips: B
+    chatInputType: P,
+    options: w,
+    onFileUpload: R,
+    onClose: D,
+    onSelect: M,
+    draftType: L,
+    editorTextContent: k,
+    setValue: G,
+    openClips: U
   } = e, {
-    analyticsLocations: V,
-    newestAnalyticsLocation: F
-  } = (0, d.Ay)(), H = (0, A.s)({
+    analyticsLocations: B,
+    newestAnalyticsLocation: V
+  } = (0, u.Ay)(), F = (0, g.s)({
     channel: t
-  }), K = (0, i.bG)([_.A], () => _.A.isInProgress());
+  }), H = (0, i.bG)([b.A], () => b.A.isInProgress());
+
+  function K() {
+    (0, A.Tv)(t, true, "Plus Button")
+  }
 
   function W() {
-    (0, O.Tv)(t, true, "Plus Button")
+    y.default.track(E.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), G("/", (0, v.x7)("/"))
   }
 
   function z() {
-    v.default.track(N.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), U("/", (0, S.x7)("/"))
+    U()
   }
 
   function Y() {
-    B()
-  }
-
-  function q() {
-    (0, g.Dr)(s.M.POLLS_CHAT_INPUT_COACHMARK, {
-      dismissAction: T.i.TAKE_ACTION
-    }), (0, o.mMO)(async () => {
+    (0, f.Dr)(s.M.POLLS_CHAT_INPUT_COACHMARK, {
+      dismissAction: C.i.TAKE_ACTION
+    }), (0, a.mMO)(async () => {
       let {
         default: e
       } = await n.e("52786").then(n.bind(n, 489449));
@@ -130,16 +103,16 @@ function L(e) {
         }), l))
       }
     }, {
-      modalKey: P.sm
+      modalKey: S.sm
     })
   }
 
-  function X() {
-    v.default.track(N.HAw.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+  function q() {
+    y.default.track(E.HAw.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
-    }), (0, f.A)({
+    }), (0, h.A)({
       context: null != t ? {
         type: "channel",
         channel: t
@@ -147,40 +120,40 @@ function L(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: F
-    }), (0, u.LV)({
+      analyticsLocation: V
+    }), (0, c.LV)({
       guildId: t.guild_id
     })
   }
 
-  function J() {
-    let e = G,
+  function X() {
+    let e = k,
       n = "txt",
       r = "",
-      l = G.match(D);
-    null != l && (r = l[1], n = l[2], e = l[3], r += l[4]), (0, C.R)([(0, E.VE)(new Blob([e], {
+      l = k.match(T);
+    null != l && (r = l[1], n = l[2], e = l[3], r += l[4]), (0, j.R)([(0, O.VE)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, k), x._.dispatchToLastSubscribed(N.jej.CLEAR_TEXT), "" !== r && x._.dispatchToLastSubscribed(N.jej.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, L), _._.dispatchToLastSubscribed(E.jej.CLEAR_TEXT), "" !== r && _._.dispatchToLastSubscribed(E.jej.INSERT_TEXT, {
       plainText: r
     })
   }
   return l.useEffect(() => {
-    v.default.track(N.HAw.OPEN_POPOUT, {
+    y.default.track(E.HAw.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
     })
-  }, [t.guild_id, t.id]), (0, r.jsx)(o.W1t, {
+  }, [t.guild_id, t.id]), (0, r.jsx)(a.W1t, {
     "data-menu-needs-migration": true,
-    onSelect: L,
+    onSelect: M,
     navId: "channel-attach",
-    onClose: j,
-    "aria-label": w.intl.string(w.t.Xm41aV),
-    className: R.MK,
-    children: m.map(function(e) {
+    onClose: D,
+    "aria-label": I.intl.string(I.t.Xm41aV),
+    className: N.MK,
+    children: w.map(function(e) {
       switch (e.type) {
-        case I.v.UPLOAD_A_FILE:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.UPLOAD_A_FILE:
+          return (0, r.jsx)(a.Drp, {
             id: "upload-file",
             label: e.display,
             iconLeft: e.icon,
@@ -188,11 +161,11 @@ function L(e) {
               type: "icon",
               icon: e.icon
             },
-            action: b
+            action: R
           }, "upload-file");
-        case I.v.UPLOAD_TEXT_AS_FILE:
-          if ("" === G) return null;
-          return (0, r.jsx)(o.Drp, {
+        case x.v.UPLOAD_TEXT_AS_FILE:
+          if ("" === k) return null;
+          return (0, r.jsx)(a.Drp, {
             id: "upload-text-as-file",
             label: e.display,
             iconLeft: e.icon,
@@ -200,10 +173,10 @@ function L(e) {
               type: "icon",
               icon: e.icon
             },
-            action: J
+            action: X
           }, "upload-text-as-file");
-        case I.v.CLIPS:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.CLIPS:
+          return (0, r.jsx)(a.Drp, {
             id: "clips",
             label: e.display,
             iconLeft: e.icon,
@@ -214,10 +187,10 @@ function L(e) {
             badge: null != e.badgeVal && e.badgeVal > 0 ? {
               text: e.badgeVal.toString()
             } : true,
-            action: Y
+            action: z
           }, "clips");
-        case I.v.POLL:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.POLL:
+          return (0, r.jsx)(a.Drp, {
             id: "poll",
             label: e.display,
             iconLeft: e.icon,
@@ -225,10 +198,10 @@ function L(e) {
               type: "icon",
               icon: e.icon
             },
-            action: q
+            action: Y
           }, "poll");
-        case I.v.INVITE_TO_PLAY_GAME:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.INVITE_TO_PLAY_GAME:
+          return (0, r.jsx)(a.Drp, {
             id: "play",
             label: e.display,
             iconLeft: e.icon,
@@ -238,16 +211,16 @@ function L(e) {
             },
             action: () => {
               var n;
-              return n = e.activity, void c.A.sendActivityInvite({
+              return n = e.activity, void o.A.sendActivityInvite({
                 channelId: t.id,
-                type: N.xL.JOIN,
+                type: E.xL.JOIN,
                 activity: n,
-                location: V[V.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "play");
-        case I.v.INVITE_TO_LISTEN:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.INVITE_TO_LISTEN:
+          return (0, r.jsx)(a.Drp, {
             id: "listen",
             label: e.display,
             iconLeft: e.icon,
@@ -257,16 +230,16 @@ function L(e) {
             },
             action: () => {
               var n;
-              return n = e.activity, void c.A.sendActivityInvite({
+              return n = e.activity, void o.A.sendActivityInvite({
                 channelId: t.id,
-                type: N.xL.LISTEN,
+                type: E.xL.LISTEN,
                 activity: n,
-                location: V[V.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "listen");
-        case I.v.INVITE_TO_WATCH:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.INVITE_TO_WATCH:
+          return (0, r.jsx)(a.Drp, {
             id: "watch",
             label: e.display,
             iconLeft: e.icon,
@@ -276,16 +249,16 @@ function L(e) {
             },
             action: () => {
               var n;
-              return n = e.activity, void c.A.sendActivityInvite({
+              return n = e.activity, void o.A.sendActivityInvite({
                 channelId: t.id,
-                type: N.xL.WATCH,
+                type: E.xL.WATCH,
                 activity: n,
-                location: V[V.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "watch");
-        case I.v.CREATE_THREAD:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.CREATE_THREAD:
+          return (0, r.jsx)(a.Drp, {
             id: "THREAD",
             label: e.display,
             iconLeft: e.icon,
@@ -293,10 +266,10 @@ function L(e) {
               type: "icon",
               icon: e.icon
             },
-            action: W
+            action: K
           }, "THREAD");
-        case I.v.SLASH_COMMAND:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.SLASH_COMMAND:
+          return (0, r.jsx)(a.Drp, {
             id: "SLASH_COMMAND",
             label: e.display,
             iconLeft: e.icon,
@@ -304,10 +277,10 @@ function L(e) {
               type: "icon",
               icon: e.icon
             },
-            action: z
+            action: W
           }, "SLASH_COMMAND");
-        case I.v.APP_LAUNCHER:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.APP_LAUNCHER:
+          return (0, r.jsx)(a.Drp, {
             id: "APP_LAUNCHER",
             label: e.display,
             iconLeft: e.icon,
@@ -315,10 +288,10 @@ function L(e) {
               type: "icon",
               icon: e.icon
             },
-            action: () => (0, p.R)(h.s4.TEXT, a, true, t.id)
+            action: () => (0, d.R)(p.s4.TEXT, P, true, t.id)
           }, "APP_LAUNCHER");
-        case I.v.ACTIVITY:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.ACTIVITY:
+          return (0, r.jsx)(a.Drp, {
             id: "activity",
             label: e.display,
             iconLeft: e.icon,
@@ -326,11 +299,10 @@ function L(e) {
               type: "icon",
               icon: e.icon
             },
-            hint: (0, r.jsx)(M, {}),
-            action: X
+            action: q
           }, "activity");
-        case I.v.SCHEDULED_MESSAGE:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.SCHEDULED_MESSAGE:
+          return (0, r.jsx)(a.Drp, {
             id: "scheduled_message",
             label: e.display,
             iconLeft: e.icon,
@@ -338,13 +310,13 @@ function L(e) {
               type: "icon",
               icon: e.icon
             },
-            action: () => (0, A.e0)({
+            action: () => (0, g.e0)({
               channel: t
             }),
-            children: H
+            children: F
           }, "scheduled_message");
-        case I.v.SUMMARIZE_THREAD:
-          return (0, r.jsx)(o.Drp, {
+        case x.v.SUMMARIZE_THREAD:
+          return (0, r.jsx)(a.Drp, {
             id: "summarize_thread",
             label: e.display,
             iconLeft: e.icon,
@@ -352,28 +324,28 @@ function L(e) {
               type: "icon",
               icon: e.icon
             },
-            action: () => y.A.summarizeThread(t),
-            loading: K,
-            disabled: K,
-            children: K ? null : (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(o.Drp, {
+            action: () => m.A.summarizeThread(t),
+            loading: H,
+            disabled: H,
+            children: H ? null : (0, r.jsxs)(r.Fragment, {
+              children: [(0, r.jsx)(a.Drp, {
                 id: "summarize_thread_for_everyone",
-                label: w.intl.string(w.t.eCzSdd),
-                iconLeft: o.nFg,
+                label: I.intl.string(I.t.eCzSdd),
+                iconLeft: a.nFg,
                 leadingAccessory: {
                   type: "icon",
-                  icon: o.nFg
+                  icon: a.nFg
                 },
-                action: () => y.A.summarizeThread(t, false)
-              }, "summarize_thread_for_everyone"), (0, r.jsx)(o.Drp, {
+                action: () => m.A.summarizeThread(t, false)
+              }, "summarize_thread_for_everyone"), (0, r.jsx)(a.Drp, {
                 id: "summarize_thread_for_me",
-                label: w.intl.string(w.t["HOe+Hq"]),
-                iconLeft: o.nys,
+                label: I.intl.string(I.t["HOe+Hq"]),
+                iconLeft: a.nys,
                 leadingAccessory: {
                   type: "icon",
-                  icon: o.nys
+                  icon: a.nys
                 },
-                action: () => y.A.summarizeThread(t)
+                action: () => m.A.summarizeThread(t)
               }, "summarize_thread_for_me")]
             })
           }, "summarize_thread");

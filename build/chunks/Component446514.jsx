@@ -60,12 +60,12 @@ function j(t) {
     $ = "" !== w ? [(0, n.jsx)(c.Drp, {
       id: "cut",
       label: T.intl.string(T.t.pNPVhe),
-      hint: (0, x.isMac)() ? "⌘X" : "Ctrl+X",
+      shortcut: (0, x.isMac)() ? "⌘X" : "Ctrl+X",
       action: () => setTimeout(() => h.Ay.cut(), 0)
     }, "cut"), (0, n.jsx)(c.Drp, {
       id: "copy",
       label: T.intl.string(T.t.OpuAlK),
-      hint: (0, x.isMac)() ? "⌘C" : "Ctrl+C",
+      shortcut: (0, x.isMac)() ? "⌘C" : "Ctrl+C",
       action: () => setTimeout(() => h.Ay.copy(), 0)
     }, "copy")] : null,
     tt = (0, n.jsx)(c.sLh, {
@@ -114,12 +114,12 @@ function j(t) {
       children: [$, (0, n.jsx)(c.Drp, {
         id: "paste",
         label: T.intl.string(T.t.lMUxVi),
-        hint: (0, x.isMac)() ? "⌘V" : "Ctrl+V",
+        shortcut: (0, x.isMac)() ? "⌘V" : "Ctrl+V",
         action: () => setTimeout(() => h.Ay.paste(), 0)
       }), J && (0, n.jsx)(c.Drp, {
         id: "paste-as-plain-text",
         label: T.intl.string(T.t.X92Qnr),
-        hint: (0, x.isMac)() ? "⌘⇧V" : "Ctrl+Shift+V",
+        shortcut: (0, x.isMac)() ? "⌘⇧V" : "Ctrl+Shift+V",
         action: R
       })]
     })]

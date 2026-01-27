@@ -1,5 +1,5 @@
 /** Chunk was on 42312 **/
-/** chunk id: 216603, original params: t,e,n (module,exports,require) **/
+/** chunk id: 216603, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
   default: () => d
 }), require("./896048.js");
@@ -16,43 +16,43 @@ var Chunk627968 = require("./627968.js"),
 function d(t) {
   let {
     text: e,
-    target: n,
+    target: r,
     onHeightUpdate: d,
     onSelect: b
   } = t, f = l.useCallback(() => {
-    (0, a.Z_)(), (0, i.vq)(n, HTMLElement) && (n.focus(), setTimeout(() => n.focus(), 0))
-  }, [n]), [y, h] = (0, o.A)({
+    (0, a.Z_)(), (0, c.vq)(r, HTMLElement) && (r.focus(), setTimeout(() => r.focus(), 0))
+  }, [r]), [y, h] = (0, o.A)({
     text: e,
-    target: n,
+    target: r,
     onHeightUpdate: d
   });
-  if (!s.isPlatformEmbedded || !((0, i.vq)(n, HTMLInputElement) || (0, i.vq)(n, HTMLTextAreaElement))) return null;
-  let O = "" !== e ? [(0, r.jsx)(c.Drp, {
+  if (!s.isPlatformEmbedded || !((0, c.vq)(r, HTMLInputElement) || (0, c.vq)(r, HTMLTextAreaElement))) return null;
+  let O = "" !== e ? [(0, n.jsx)(i.Drp, {
     id: "cut",
     label: p.intl.string(p.t.pNPVhe),
-    hint: (0, s.isMac)() ? "⌘X" : "Ctrl+X",
+    shortcut: (0, s.isMac)() ? "⌘X" : "Ctrl+X",
     action: () => setTimeout(() => u.Ay.cut(), 0)
-  }, "cut"), (0, r.jsx)(c.Drp, {
+  }, "cut"), (0, n.jsx)(i.Drp, {
     id: "copy",
     label: p.intl.string(p.t.OpuAlK),
-    hint: (0, s.isMac)() ? "⌘C" : "Ctrl+C",
+    shortcut: (0, s.isMac)() ? "⌘C" : "Ctrl+C",
     action: () => u.Ay.copy(e)
   }, "copy")] : null;
-  return (0, r.jsxs)(c.W1t, {
+  return (0, n.jsxs)(i.W1t, {
     "data-menu-migrated": true,
     navId: "textarea-context",
     onClose: f,
     "aria-label": p.intl.string(p.t.NWlDSI),
     onSelect: b,
-    children: [(0, r.jsx)(c.rXV, {
+    children: [(0, n.jsx)(i.rXV, {
       children: y
-    }), (0, r.jsx)(c.rXV, {
+    }), (0, n.jsx)(i.rXV, {
       children: h
-    }), (0, r.jsxs)(c.rXV, {
-      children: [O, (0, r.jsx)(c.Drp, {
+    }), (0, n.jsxs)(i.rXV, {
+      children: [O, (0, n.jsx)(i.Drp, {
         id: "paste",
         label: p.intl.string(p.t.lMUxVi),
-        hint: (0, s.isMac)() ? "⌘V" : "Ctrl+V",
+        shortcut: (0, s.isMac)() ? "⌘V" : "Ctrl+V",
         action: () => setTimeout(() => u.Ay.paste(), 0)
       })]
     })]
