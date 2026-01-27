@@ -109,13 +109,10 @@ function X() {
     })),
     l = (0, P.s)({
       location: W.rE.USE_QUESTS
-    }),
-    u = w.Bw.useConfig({
-      location: W.rE.USE_QUESTS
     });
   return r.useEffect(() => {
     if ("cache-only" !== e.fetchPolicy && ("cache-and-network" === e.fetchPolicy || "cache-or-network" === e.fetchPolicy && 0 === s) && l && !t && !o && !(0, v.I)()) {
-      if (n(true), (0, T.N1)(), u.enabled && "focused" !== f.A.getState()) return;
+      if (n(true), (0, T.N1)(), (0, I.isMac)() && "focused" !== f.A.getState()) return;
       let {
         enableNewRequestBehavior: t
       } = R.A.getConfig({
@@ -123,7 +120,7 @@ function X() {
       });
       if (!t)(0, T.r8)(N.yW.DESKTOP_ACCOUNT_PANEL_AREA, "use_quests_".concat(e.callerSource))
     }
-  }, [e.fetchPolicy, l, t, o, s, e.callerSource, u.enabled]), {
+  }, [e.fetchPolicy, l, t, o, s, e.callerSource]), {
     quests: i,
     excludedQuests: a,
     isFetchingCurrentQuests: o,

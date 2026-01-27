@@ -16,6 +16,9 @@ let r = (0, require("./945810.js").mj)({
       },
       1: {
         enabled: true
+      },
+      2: {
+        enabled: true
       }
     }
   }),

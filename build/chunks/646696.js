@@ -8,10 +8,10 @@ var Chunk439372 = require("./439372.js"),
   Chunk183636 = require("./183636.js"),
   Chunk927813 = require("./927813.js"),
   Chunk67486 = require("./67486.js"),
+  Chunk723702 = require("./723702.js"),
   Chunk829219 = require("./829219.js"),
   Chunk859703 = require("./859703.js"),
   Chunk341915 = require("./341915.js"),
-  Chunk245853 = require("./245853.js"),
   Chunk51935 = require("./51935.js"),
   Chunk302654 = require("./302654.js"),
   Chunk677402 = require("./677402.js"),
@@ -34,15 +34,13 @@ class O extends Chunk439372.A {
   _fetch(e) {
     if (!(0, p.s)({
         location: _.rE.QUESTS_MANAGER
-      }) || l.A.isFetchingCurrentQuests || (0, o.I)() || ((0, s.N1)(), u.Bw.getConfig({
-        location: _.rE.QUESTS_MANAGER
-      }).enabled && "focused" !== i.A.getState())) return;
+      }) || c.A.isFetchingCurrentQuests || (0, o.I)() || ((0, l.N1)(), (0, s.isMac)() && "focused" !== i.A.getState())) return;
     let {
       enableNewRequestBehavior: t
     } = f.A.getConfig({
       location: "QuestFetchManager"
     });
-    t || (0, s.r8)(c.yW.DESKTOP_ACCOUNT_PANEL_AREA, e)
+    t || (0, l.r8)(u.yW.DESKTOP_ACCOUNT_PANEL_AREA, e)
   }
   constructor(...e) {
     super(...e), h(this, "instantiatedAt", Date.now()), h(this, "initialFetchTimerId", null), h(this, "recurringFetchTimerId", null), h(this, "lastFetchAttemptedAt", 0), h(this, "lastFetchedQuestForLocaleChangeAt", 0), h(this, "handleQuestsFetchCurrentQuestsBegin", () => {
@@ -56,10 +54,10 @@ class O extends Chunk439372.A {
       }, g);
       let t = Math.floor(Math.random() * E);
       this.initialFetchTimerId = window.setTimeout(() => {
-        !(Date.now() - t < l.A.lastFetchedCurrentQuests) && (e || 0 === l.A.lastFetchedCurrentQuests) && this._fetch("post_connect_initial")
+        !(Date.now() - t < c.A.lastFetchedCurrentQuests) && (e || 0 === c.A.lastFetchedCurrentQuests) && this._fetch("post_connect_initial")
       }, t)
     }), h(this, "handleRunningGamesChange", () => {
-      this.instantiatedAt + b > Date.now() || l.A.lastFetchedCurrentQuests + b > Date.now() || this._fetch("running_games")
+      this.instantiatedAt + b > Date.now() || c.A.lastFetchedCurrentQuests + b > Date.now() || this._fetch("running_games")
     }), h(this, "handleUserSettingsProtoUpdate", e => {
       let {
         partial: t,
