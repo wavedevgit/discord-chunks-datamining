@@ -209,14 +209,15 @@ let N = function(e, t) {
       isLocked: c,
       location: u,
       intention: d,
-      index: f
-    } = e, p = null != (t = i.uniqueName) ? t : i.name, _ = (0, a.YW)(d).with(I.b_.REACTION, () => A.I4_.EMOJI_REACTION).with(I.b_.AUTO_SUGGESTION, () => A.I4_.EMOJI_AUTO_SUGGESTION).otherwise(() => A.I4_.EMOJI);
+      index: f,
+      messageId: p
+    } = e, _ = null != (t = i.uniqueName) ? t : i.name, h = (0, a.YW)(d).with(I.b_.REACTION, () => A.I4_.EMOJI_REACTION).with(I.b_.AUTO_SUGGESTION, () => A.I4_.EMOJI_AUTO_SUGGESTION).otherwise(() => A.I4_.EMOJI);
     s.Ay.trackWithMetadata(A.HAw.SEARCH_RESULT_SELECTED, {
-      search_type: _,
+      search_type: h,
       location: u,
       expression_guild_id: i.guildId,
       emoji_id: i.id,
-      emoji_name: p,
+      emoji_name: _,
       is_custom: null != i.id,
       is_animated: i.animated,
       is_locked: c,
@@ -229,7 +230,8 @@ let N = function(e, t) {
           emoji: t
         } = e;
         return t.id
-      }).filter(e => null != e)
+      }).filter(e => null != e),
+      message_id: p
     })
   },
   x = (e, t) => {
@@ -265,7 +267,8 @@ let N = function(e, t) {
       subCategory: l = v.tm.NONE,
       position: c,
       newlyAddedHighlight: u,
-      isBurstReaction: d
+      isBurstReaction: d,
+      messageId: f
     } = e;
     switch (a) {
       case I.b_.REACTION:
@@ -277,12 +280,12 @@ let N = function(e, t) {
       default:
         n = T.e.EMOJI_PICKER_EMOJI_CLICKED
     }
-    let f = null != (t = r.uniqueName) ? t : r.name;
+    let p = null != (t = r.uniqueName) ? t : r.name;
     s.Ay.trackWithMetadata(A.HAw.EXPRESSION_PICKER_EXPRESSION_SELECTED, {
       type: n,
       location: i,
       expression_id: r.id,
-      expression_name: f,
+      expression_name: p,
       expression_guild_id: r.guildId,
       is_custom: null != r.id,
       is_animated: r.animated,
@@ -290,7 +293,8 @@ let N = function(e, t) {
       expression_section: null == l ? true : l.toString(),
       emoji_position: c,
       newly_added_highlight: u,
-      is_burst: d
+      is_burst: d,
+      message_id: f
     })
   },
   k = e => {

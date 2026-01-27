@@ -12,7 +12,8 @@ function a(e) {
   let {
     entry: a,
     viewId: s,
-    officialGuildId: o
+    officialGuildId: o,
+    source: c
   } = e;
   return (0, l.jsx)(r.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -39,7 +40,8 @@ function a(e) {
         gameName: a.extra.game_name,
         recipientUserId: a.author_id,
         viewId: s,
-        officialGuildId: o
+        officialGuildId: o,
+        source: c
       })
     },
     onRequestOpen: () => {
@@ -49,7 +51,8 @@ function a(e) {
         gameName: a.extra.game_name,
         recipientUserId: a.author_id,
         viewId: s,
-        officialGuildId: o
+        officialGuildId: o,
+        source: c
       })
     }
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

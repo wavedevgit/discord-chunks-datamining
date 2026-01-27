@@ -325,7 +325,8 @@ let ec = (e, t) => {
               object: Q.ZSU.EMOJI
             }),
             searchQuery: eU,
-            intention: l
+            intention: l,
+            messageId: eI
           }) : (0, k._7)({
             emoji: e.emoji,
             location: et(er(et({}, e$), {
@@ -338,7 +339,8 @@ let ec = (e, t) => {
             subCategory: e.subCategory,
             position: e.columnIndex + 1,
             newlyAddedHighlight: e.subCategory === Z.tm.NEWLY_ADDED_EMOJI && v.A.isNewerThanLastSeen(eB, e.emoji.id),
-            isBurstReaction: eH
+            isBurstReaction: eH,
+            messageId: eI
           })
         },
         trackEmojiFavorited: e => {

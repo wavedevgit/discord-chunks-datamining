@@ -74,7 +74,8 @@ let d = () => (0, r.A)(),
       recipientUserId: i,
       similarGameId: s,
       viewId: l,
-      officialGuildId: c
+      officialGuildId: c,
+      source: u
     } = e;
     a.default.track(o.HAw.GAME_PROFILE_ACTION, {
       game_name: t,
@@ -83,7 +84,8 @@ let d = () => (0, r.A)(),
       recipient_user_id: i,
       similar_game_id: s,
       view_id: l,
-      official_guild_id: c
+      official_guild_id: c,
+      source: u
     })
   },
   h = e => {

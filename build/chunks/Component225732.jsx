@@ -179,7 +179,8 @@ function en(e) {
     similarGamesError: o,
     onClose: c,
     viewId: u,
-    trackAction: d
+    trackAction: d,
+    source: m
   } = e;
   return (0, l.jsxs)("div", {
     className: $.V0,
@@ -187,7 +188,8 @@ function en(e) {
       entries: i,
       viewId: u,
       officialGuildId: null == a || null == (t = a.guild) ? true : t.id,
-      onClose: c
+      onClose: c,
+      source: m
     }), (0, l.jsx)(F.A, {
       detectedGame: n,
       trackAction: d
@@ -323,7 +325,8 @@ function ei(e) {
       action: e,
       similarGameId: t,
       viewId: h,
-      officialGuildId: null == P || null == (l = P.guild) ? true : l.id
+      officialGuildId: null == P || null == (l = P.guild) ? true : l.id,
+      source: i
     })
   };
   return ((0, p.Ay)(() => {
@@ -395,7 +398,8 @@ function ei(e) {
               similarGamesError: b,
               onClose: c,
               viewId: h,
-              trackAction: Y
+              trackAction: Y,
+              source: i
             }), (0, l.jsx)(er, {
               detectedGame: G,
               onSetOfficialGuildInvite: E,

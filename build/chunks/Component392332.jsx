@@ -19,8 +19,9 @@ function f(e) {
     entries: t,
     viewId: n,
     officialGuildId: i,
-    onClose: f
-  } = e, g = t.length > 7, [x, p] = r.useState(false), j = r.useMemo(() => t.slice(0, g && !x ? 6 : true), [t, g, x]);
+    onClose: f,
+    source: g
+  } = e, x = t.length > 7, [p, j] = r.useState(false), h = r.useMemo(() => t.slice(0, x && !p ? 6 : true), [t, x, p]);
   return (0, l.jsxs)("div", {
     children: [(0, l.jsx)(s.DZT, {
       className: d.bV,
@@ -35,20 +36,21 @@ function f(e) {
     }) : (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)("div", {
         className: a()(m.yz, {
-          [m.T6]: g && !x
+          [m.T6]: x && !p
         }),
         children: (0, l.jsx)("div", {
           className: d.fi,
-          children: j.map(e => (0, l.jsx)(c.A, {
+          children: h.map(e => (0, l.jsx)(c.A, {
             entry: e,
             viewId: n,
             onClose: f,
-            officialGuildId: i
+            officialGuildId: i,
+            source: g
           }, e.id))
         })
-      }), g && !x && (0, l.jsxs)(o.DUT, {
+      }), x && !p && (0, l.jsxs)(o.DUT, {
         className: m.ND,
-        onClick: () => p(true),
+        onClick: () => j(true),
         children: [(0, l.jsx)(s.EYj, {
           variant: "text-xs/semibold",
           color: "interactive-text-default",
