@@ -2,34 +2,34 @@
 /** chunk id: 829219, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CV: () => x,
-  Fr: () => ee,
-  Gn: () => X,
-  Gt: () => z,
-  HA: () => Q,
-  N1: () => j,
-  Oq: () => V,
-  Ov: () => M,
-  Oy: () => F,
-  QG: () => J,
-  R2: () => k,
-  Tb: () => es,
-  UZ: () => K,
-  WM: () => G,
-  Yb: () => W,
-  d6: () => q,
-  dQ: () => ea,
-  g5: () => H,
-  jh: () => B,
-  lk: () => Y,
-  lx: () => Z,
-  qY: () => er,
-  r8: () => $,
-  uI: () => en,
-  vD: () => L,
-  xB: () => ei,
-  yO: () => et
-}), require("./65821.js"), require("./896048.js");
+  CV: () => k,
+  Fr: () => er,
+  Gn: () => ee,
+  Gt: () => Q,
+  HA: () => $,
+  N1: () => G,
+  Oq: () => Y,
+  Ov: () => U,
+  Oy: () => H,
+  QG: () => et,
+  R2: () => F,
+  Tb: () => eu,
+  UZ: () => Z,
+  WM: () => B,
+  Yb: () => q,
+  d6: () => X,
+  dQ: () => el,
+  g5: () => K,
+  jh: () => W,
+  lk: () => z,
+  lx: () => J,
+  qY: () => eo,
+  r8: () => en,
+  uI: () => ea,
+  vD: () => j,
+  xB: () => es,
+  yO: () => ei
+}), require("./65821.js"), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk110259 = require("./110259.js"),
   Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
@@ -38,7 +38,9 @@ var Chunk110259 = require("./110259.js"),
   Chunk861638 = require("./861638.js"),
   Chunk577015 = require("./577015.js"),
   Chunk69114 = require("./69114.js"),
+  Chunk253932 = require("./253932.js"),
   Chunk310829 = require("./310829.js"),
+  Chunk967198 = require("./967198.js"),
   Chunk954571 = require("./954571.js"),
   Chunk927813 = require("./927813.js"),
   Chunk499785 = require("./499785.js"),
@@ -48,6 +50,7 @@ var Chunk110259 = require("./110259.js"),
   Chunk859703 = require("./859703.js"),
   Chunk341915 = require("./341915.js"),
   Chunk405670 = require("./405670.js"),
+  Chunk331138 = require("./331138.js"),
   Chunk579473 = require("./579473.js"),
   Chunk561844 = require("./561844.js"),
   Chunk710969 = require("./710969.js"),
@@ -56,7 +59,7 @@ var Chunk110259 = require("./110259.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function N(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -65,20 +68,20 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
 
-function R(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -89,17 +92,17 @@ function R(e, t) {
   return n
 }
 
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = 5;
-async function L(e) {
+let M = 5;
+async function j(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   try {
     let n = (await i.Bo.post({
-      url: T.Rsh.QUEST_ON_CONSOLE_START(e),
+      url: w.Rsh.QUEST_ON_CONSOLE_START(e),
       query: t ? {
         preview: t
       } : true,
@@ -111,23 +114,23 @@ async function L(e) {
       user_status: n.quest_user_status
     });
     else if (null != n.error_hints_v2 && n.error_hints_v2.length > 0) return {
-      errorHints: n.error_hints_v2.slice(0, D)
+      errorHints: n.error_hints_v2.slice(0, M)
     }
   } catch (r) {
     var n;
     let e = new o.A(r);
     if (429 === e.status) return {
       errorHints: [{
-        type: y.xv.RATE_LIMITED,
-        message: C.intl.string(C.t.Whhv4w),
+        type: O.xv.RATE_LIMITED,
+        message: R.intl.string(R.t.Whhv4w),
         connected_account_id: "",
         connected_account_type: ""
       }]
     };
-    let t = null != (n = e.getAnyErrorMessage()) ? n : C.intl.string(C.t.xSCvBf);
+    let t = null != (n = e.getAnyErrorMessage()) ? n : R.intl.string(R.t.xSCvBf);
     return {
       errorHints: [{
-        type: y.xv.GENERIC,
+        type: O.xv.GENERIC,
         message: t,
         connected_account_id: "",
         connected_account_type: ""
@@ -138,35 +141,35 @@ async function L(e) {
     errorHints: []
   }
 }
-async function x(e) {
+async function k(e) {
   await i.Bo.post({
-    url: T.Rsh.QUEST_ON_CONSOLE_STOP(e),
+    url: w.Rsh.QUEST_ON_CONSOLE_STOP(e),
     rejectWithError: false
   })
 }
-async function M() {
+async function U() {
   await i.Bo.del({
-    url: T.Rsh.QUESTS_RESET_RECENT_QUEST_COMPLETIONS,
+    url: w.Rsh.QUESTS_RESET_RECENT_QUEST_COMPLETIONS,
     rejectWithError: false
   })
 }
-async function j() {
-  if (!E.A.isFetchingCurrentQuests) {
+async function G() {
+  if (!b.A.isFetchingCurrentQuests) {
     a.h.dispatch({
       type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
     });
     try {
       let e = await i.Bo.get({
-          url: T.Rsh.QUESTS_CURRENT_QUESTS,
+          url: w.Rsh.QUESTS_CURRENT_QUESTS,
           rejectWithError: false
         }),
-        t = e.body.quests.filter(e => (0, I.s2)(e)).map(e => (0, I.rO)(e)),
+        t = e.body.quests.filter(e => (0, C.s2)(e)).map(e => (0, C.rO)(e)),
         n = e.body.quest_enrollment_blocked_until,
         r = t.filter(e => {
           var t;
           return (null == (t = e.userStatus) ? true : t.claimedAt) != null || e.config.rewardsConfig.platforms.length > 0
         }),
-        o = e.body.excluded_quests.map(e => (0, I._g)(e));
+        o = e.body.excluded_quests.map(e => (0, C._g)(e));
       a.h.dispatch({
         type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
         quests: r,
@@ -181,7 +184,7 @@ async function j() {
     }
   }
 }
-async function k(e) {
+async function F(e) {
   let {
     questId: t,
     streamKey: n,
@@ -190,8 +193,8 @@ async function k(e) {
   } = e;
   try {
     var l;
-    let e = await _.A.post({
-      url: T.Rsh.QUESTS_HEARTBEAT(t),
+    let e = await m.A.post({
+      url: w.Rsh.QUESTS_HEARTBEAT(t),
       body: {
         stream_key: n,
         application_id: i,
@@ -212,7 +215,7 @@ async function k(e) {
     });
     a.h.dispatch({
       type: "QUESTS_SEND_HEARTBEAT_SUCCESS",
-      userStatus: (0, I.tp)(e.body),
+      userStatus: (0, C.tp)(e.body),
       questId: t,
       streamKey: n
     })
@@ -226,22 +229,22 @@ async function k(e) {
   }
 }
 
-function U(e) {
+function V(e) {
   var t, n;
   return e instanceof c.CaptchaCancelError || null != e && "object" == typeof e && (400 === e.status && (null == (t = e.body) ? true : t.captcha_key) != null || null != e.captchaFields && !!(Object.keys(e.captchaFields).length > 0) || (null == (n = e.fields) ? true : n.captcha_key) != null || false)
 }
-var G = function(e) {
+var B = function(e) {
   return e.SUCCESS = "success", e.CAPTCHA_FAILED = "captcha_failed", e.UNKNOWN_ERROR = "unknown_error", e.PREVIOUS_IN_FLIGHT_REQUEST = "previous_in_flight_request", e
 }({});
-async function F(e, t) {
-  if (null != t.questContentCTA && (0, v.Y5)({
+async function H(e, t) {
+  if (null != t.questContentCTA && (0, S.Y5)({
       questId: e,
       questContent: t.questContent,
       questContentCTA: t.questContentCTA,
       questContentPosition: t.questContentPosition,
       questContentRowIndex: t.questContentRowIndex,
       sourceQuestContent: t.sourceQuestContent
-    }), e === S.Fw && (0, d.u)(), E.A.isEnrolling(e)) return {
+    }), e === N.Fw && (0, f.u)(), b.A.isEnrolling(e)) return {
     type: "previous_in_flight_request"
   };
   a.h.dispatch({
@@ -249,13 +252,13 @@ async function F(e, t) {
     questId: e
   });
   try {
-    let n = (0, A.Li)(t.questContent),
-      r = (0, A.L4)(t.questContent),
+    let n = (0, T.Li)(t.questContent),
+      r = (0, T.L4)(t.questContent),
       o = await i.Bo.post({
-        url: T.Rsh.QUESTS_ENROLL(e),
-        body: P(w({
+        url: w.Rsh.QUESTS_ENROLL(e),
+        body: x(D({
           location: t.questContent
-        }, (0, A.Kc)(e, t.questContent)), {
+        }, (0, T.Kc)(e, t.questContent)), {
           metadata_raw: null != n ? n : null,
           metadata_sealed: null != r ? r : null
         }),
@@ -263,7 +266,7 @@ async function F(e, t) {
       });
     return a.h.dispatch({
       type: "QUESTS_ENROLL_SUCCESS",
-      enrolledQuestUserStatus: (0, I.tp)(o.body)
+      enrolledQuestUserStatus: (0, C.tp)(o.body)
     }), {
       type: "success"
     }
@@ -271,34 +274,34 @@ async function F(e, t) {
     return a.h.dispatch({
       type: "QUESTS_ENROLL_FAILURE",
       questId: e
-    }), U(t) ? {
+    }), V(t) ? {
       type: "captcha_failed"
     } : {
       type: "unknown_error"
     }
   }
 }
-async function V(e, t, n) {
-  if (!E.A.isClaimingReward(e)) {
+async function Y(e, t, n) {
+  if (!b.A.isClaimingReward(e)) {
     a.h.dispatch({
       type: "QUESTS_CLAIM_REWARD_BEGIN",
       questId: e
     });
     try {
-      let r = (0, A.Li)(n),
-        o = (0, A.L4)(n),
+      let r = (0, T.Li)(n),
+        o = (0, T.L4)(n),
         s = await i.Bo.post({
-          url: T.Rsh.QUESTS_CLAIM_REWARD(e),
-          body: P(w({
+          url: w.Rsh.QUESTS_CLAIM_REWARD(e),
+          body: x(D({
             platform: t,
             location: n
-          }, (0, A.Kc)(e, n)), {
+          }, (0, T.Kc)(e, n)), {
             metadata_raw: null != r ? r : null,
             metadata_sealed: null != o ? o : null
           }),
           rejectWithError: false
         }),
-        l = (0, I.Dv)(s.body);
+        l = (0, C.Dv)(s.body);
       return 0 === l.errors.length ? a.h.dispatch({
         type: "QUESTS_CLAIM_REWARD_SUCCESS",
         questId: e,
@@ -317,21 +320,21 @@ async function V(e, t, n) {
     }
   }
 }
-async function B(e) {
-  if (!E.A.isFetchingRewardCode(e)) {
+async function W(e) {
+  if (!b.A.isFetchingRewardCode(e)) {
     a.h.dispatch({
       type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
       questId: e
     });
     try {
       let t = await i.Bo.get({
-        url: T.Rsh.QUESTS_REWARD_CODE(e),
+        url: w.Rsh.QUESTS_REWARD_CODE(e),
         rejectWithError: false
       });
       a.h.dispatch({
         type: "QUESTS_FETCH_REWARD_CODE_SUCCESS",
         questId: e,
-        rewardCode: (0, I.Rd)(t.body)
+        rewardCode: (0, C.Rd)(t.body)
       })
     } catch (t) {
       throw a.h.dispatch({
@@ -342,9 +345,9 @@ async function B(e) {
     }
   }
 }
-async function H(e, t) {
-  let n = E.A.isDismissingContent(e),
-    r = (0, A.vy)(t);
+async function K(e, t) {
+  let n = b.A.isDismissingContent(e),
+    r = (0, T.vy)(t);
   if (!n && r) {
     a.h.dispatch({
       type: "QUESTS_DISMISS_CONTENT_BEGIN",
@@ -353,13 +356,13 @@ async function H(e, t) {
     });
     try {
       let n = await i.Bo.post({
-        url: T.Rsh.QUESTS_DISMISS_CONTENT(e, t),
-        body: w({}, (0, A.Kc)(e, t)),
+        url: w.Rsh.QUESTS_DISMISS_CONTENT(e, t),
+        body: D({}, (0, T.Kc)(e, t)),
         rejectWithError: false
       });
       a.h.dispatch({
         type: "QUESTS_DISMISS_CONTENT_SUCCESS",
-        dismissedQuestUserStatus: (0, I.tp)(n.body)
+        dismissedQuestUserStatus: (0, C.tp)(n.body)
       })
     } catch (t) {
       a.h.dispatch({
@@ -371,17 +374,17 @@ async function H(e, t) {
   }
 }
 
-function Y(e) {
+function z(e) {
   a.h.dispatch({
     type: "QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE",
     streamKey: e
   })
 }
-async function W(e) {
+async function q(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1;
   try {
     let n = await i.Bo.post({
-      url: T.Rsh.QUESTS_PREVIEW_COMPLETE(e),
+      url: w.Rsh.QUESTS_PREVIEW_COMPLETE(e),
       body: {
         percent: t
       },
@@ -389,7 +392,7 @@ async function W(e) {
     });
     a.h.dispatch({
       type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
-      previewQuestUserStatus: (0, I.tp)(n.body)
+      previewQuestUserStatus: (0, C.tp)(n.body)
     })
   } catch (t) {
     a.h.dispatch({
@@ -399,16 +402,16 @@ async function W(e) {
     })
   }
 }
-async function K(e) {
+async function Z(e) {
   try {
     let t = await i.Bo.del({
-      url: T.Rsh.QUESTS_PREVIEW_STATUS(e),
+      url: w.Rsh.QUESTS_PREVIEW_STATUS(e),
       body: {},
       rejectWithError: false
     });
     a.h.dispatch({
       type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
-      previewQuestUserStatus: (0, I.tp)(t.body)
+      previewQuestUserStatus: (0, C.tp)(t.body)
     })
   } catch (t) {
     a.h.dispatch({
@@ -418,19 +421,19 @@ async function K(e) {
     })
   }
 }
-async function z(e) {
+async function Q(e) {
   try {
     a.h.dispatch({
       type: "QUESTS_DOCK_RESET_SOFT_DISMISSAL"
     });
     let t = await i.Bo.del({
-      url: T.Rsh.QUESTS_PREVIEW_DISMISSIBILITY(e),
+      url: w.Rsh.QUESTS_PREVIEW_DISMISSIBILITY(e),
       body: {},
       rejectWithError: false
     });
     a.h.dispatch({
       type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
-      previewQuestUserStatus: (0, I.tp)(t.body)
+      previewQuestUserStatus: (0, C.tp)(t.body)
     })
   } catch (t) {
     a.h.dispatch({
@@ -441,30 +444,30 @@ async function z(e) {
   }
 }
 
-function q(e) {
+function X(e) {
   a.h.dispatch({
     type: "QUESTS_DELIVERY_OVERRIDE",
     questId: e
   })
 }
 
-function Z(e, t) {
+function J(e, t) {
   a.h.dispatch({
     type: "QUESTS_SELECT_TASK_PLATFORM",
     questId: e,
     platform: t
   })
 }
-async function Q() {
-  if (!E.A.isFetchingClaimedQuests) {
+async function $() {
+  if (!b.A.isFetchingClaimedQuests) {
     a.h.dispatch({
       type: "QUESTS_FETCH_CLAIMED_QUESTS_BEGIN"
     });
     try {
       let e = (await i.Bo.get({
-        url: T.Rsh.QUESTS_CLAIMED_QUESTS,
+        url: w.Rsh.QUESTS_CLAIMED_QUESTS,
         rejectWithError: false
-      })).body.quests.map(e => (0, I.S)(e));
+      })).body.quests.map(e => (0, C.S)(e));
       a.h.dispatch({
         type: "QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS",
         quests: e
@@ -478,7 +481,7 @@ async function Q() {
   }
 }
 
-function X(e, t, n) {
+function ee(e, t, n) {
   a.h.dispatch({
     type: "QUESTS_UPDATE_OPTIMISTIC_PROGRESS",
     questId: e,
@@ -487,66 +490,76 @@ function X(e, t, n) {
   })
 }
 
-function J(e) {
+function et(e) {
   a.h.dispatch({
     type: "QUESTS_RESET_OPTIMISTIC_PROGRESS",
     questId: e
   })
 }
-async function $(e, t) {
-  var n, r, c, d, p, _, h, E;
-  let b = Date.now();
-  g.A.recordQuestRequestAttempt("/quests/decision", t, e), a.h.dispatch({
+async function en(e, t) {
+  var n, r, c, f, h, m, g, b;
+  let v = Date.now();
+  y.A.recordQuestRequestAttempt("/quests/decision", t, e), a.h.dispatch({
     type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN",
     placement: e
   });
   try {
     let o = await (0, l.Ht)(),
-      E = await (0, s.sN)(),
-      O = (await i.Bo.get({
-        url: T.Rsh.QUEST_FETCH_QUEST_TO_DELIVER(e, null == o ? true : o.uuid, E.uuid),
+      b = await (0, s.sN)(),
+      I = A.r.getConfig({
+        location: "QuestActionCreators.fetchQuestToDeliver"
+      }),
+      S = d.H1.getSetting(),
+      T = p.A.getGuildId(),
+      N = I.enabled && S && null != T ? T : true,
+      R = new URLSearchParams({
+        placement: String(e)
+      });
+    (null == o ? true : o.uuid) != null && R.append("client_heartbeat_session_id", o.uuid), null != b.uuid && R.append("client_ad_session_id", b.uuid), null != N && R.append("guild_id", N);
+    let P = (await i.Bo.get({
+        url: "".concat(w.Rsh.QUEST_FETCH_QUEST_TO_DELIVER, "?").concat(R.toString()),
         rejectWithError: false
       })).body,
-      v = O.quest,
-      A = null != v ? (0, I.Yn)(v) : true;
+      L = P.quest,
+      M = null != L ? (0, C.Yn)(L) : true;
     if (a.h.dispatch({
         type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS",
-        quest: A,
+        quest: M,
         adDecisionData: {
-          ad_id: null == (r = O.ad_identifiers) ? true : r.ad_id,
-          adset_id: null == (c = O.ad_identifiers) ? true : c.adset_id,
-          ad_set_id: null == (d = O.ad_identifiers) ? true : d.ad_set_id,
-          campaign_id: null == (p = O.ad_identifiers) ? true : p.campaign_id,
-          creative_id: null == (_ = O.ad_identifiers) ? true : _.creative_id,
-          creative_type: null == (h = O.ad_identifiers) ? true : h.creative_type,
-          decision_id: O.request_id,
-          is_targeted: null != O.ad_identifiers
+          ad_id: null == (r = P.ad_identifiers) ? true : r.ad_id,
+          adset_id: null == (c = P.ad_identifiers) ? true : c.adset_id,
+          ad_set_id: null == (f = P.ad_identifiers) ? true : f.ad_set_id,
+          campaign_id: null == (h = P.ad_identifiers) ? true : h.campaign_id,
+          creative_id: null == (m = P.ad_identifiers) ? true : m.creative_id,
+          creative_type: null == (g = P.ad_identifiers) ? true : g.creative_type,
+          decision_id: P.request_id,
+          is_targeted: null != P.ad_identifiers
         },
-        metadataRaw: O.metadata_raw,
-        metadataSealed: O.metadata_sealed,
-        trafficMetadataRaw: O.traffic_metadata_raw,
-        trafficMetadataSealed: O.traffic_metadata_sealed,
-        adContext: O.ad_context,
-        responseTtlSeconds: O.response_ttl_seconds,
+        metadataRaw: P.metadata_raw,
+        metadataSealed: P.metadata_sealed,
+        trafficMetadataRaw: P.traffic_metadata_raw,
+        trafficMetadataSealed: P.traffic_metadata_sealed,
+        adContext: P.ad_context,
+        responseTtlSeconds: P.response_ttl_seconds,
         placement: e,
-        fetchedAt: b
-      }), g.A.recordQuestRequestApiResponse("/quests/decision", {
+        fetchedAt: v
+      }), y.A.recordQuestRequestApiResponse("/quests/decision", {
         wasSuccessful: true,
-        adRequestId: String(O.request_id),
-        currentQuestId: null != (n = null == A ? true : A.id) ? n : null,
-        currentFetchedAt: b
-      }), null == A) return;
-    e === y.yW.DESKTOP_ACCOUNT_PANEL_AREA && m.A.startTracking(A.id), f.default.track(T.HAw.QUEST_DECISION_RECEIVED, P(w({}, (0, u.A)()), {
-      quest_id: A.id,
+        adRequestId: String(P.request_id),
+        currentQuestId: null != (n = null == M ? true : M.id) ? n : null,
+        currentFetchedAt: v
+      }), null == M) return;
+    e === O.yW.DESKTOP_ACCOUNT_PANEL_AREA && E.A.startTracking(M.id), _.default.track(w.HAw.QUEST_DECISION_RECEIVED, x(D({}, (0, u.A)()), {
+      quest_id: M.id,
       caller_source: t,
-      ad_request_id: String(O.request_id)
+      ad_request_id: String(P.request_id)
     }))
   } catch (n) {
-    g.A.recordQuestRequestApiResponse("/quests/decision", {
+    y.A.recordQuestRequestApiResponse("/quests/decision", {
       wasSuccessful: false,
-      currentFetchedAt: b
-    }), f.default.track(T.HAw.QUEST_DECISION_ROUNDTRIP_ERROR, P(w({}, (0, u.A)()), {
-      reason: null != (E = null == n ? true : n.message) ? E : null,
+      currentFetchedAt: v
+    }), _.default.track(w.HAw.QUEST_DECISION_ROUNDTRIP_ERROR, x(D({}, (0, u.A)()), {
+      reason: null != (b = null == n ? true : n.message) ? b : null,
       api_error: new o.A(n).getAnyErrorMessage(),
       caller_source: t
     })), a.h.dispatch({
@@ -557,7 +570,7 @@ async function $(e, t) {
   }
 }
 
-function ee(e, t) {
+function er(e, t) {
   a.h.dispatch({
     type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS",
     quest: true,
@@ -566,9 +579,9 @@ function ee(e, t) {
     responseTtlSeconds: t / 1e3
   })
 }
-async function et(e, t, n) {
+async function ei(e, t, n) {
   let r = Date.now();
-  h.A.recordEarnedRequestAttempt(t, n), a.h.dispatch({
+  g.A.recordEarnedRequestAttempt(t, n), a.h.dispatch({
     type: "QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_BEGIN",
     content: t
   });
@@ -577,20 +590,20 @@ async function et(e, t, n) {
     let n = await (0, l.Ht)(),
       o = e.join(","),
       c = await i.Bo.get({
-        url: T.Rsh.QUEST_EARNED_DECISION(o, t, null == n ? true : n.uuid),
+        url: w.Rsh.QUEST_EARNED_DECISION(o, t, null == n ? true : n.uuid),
         rejectWithError: false
       }),
       u = c.body.quests,
       d = new Map;
     if (null != u)
-      for (let [e, t] of Object.entries(u))(0, I.s2)(t) && d.set(e, (0, I.rO)(t));
+      for (let [e, t] of Object.entries(u))(0, C.s2)(t) && d.set(e, (0, C.rO)(t));
     let f = c.body.metadata_raw;
     return a.h.dispatch({
       type: "QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_SUCCESS",
       quests: d,
       metadataRaw: f,
       content: t
-    }), h.A.recordEarnedRequestApiResponse(t, {
+    }), g.A.recordEarnedRequestApiResponse(t, {
       wasSuccessful: true,
       requestId: null != (s = c.body.request_id) ? s : null,
       fetchedAt: r
@@ -599,7 +612,7 @@ async function et(e, t, n) {
       metadataRaw: f
     }
   } catch (e) {
-    h.A.recordEarnedRequestApiResponse(t, {
+    g.A.recordEarnedRequestApiResponse(t, {
       wasSuccessful: false,
       fetchedAt: r
     }), a.h.dispatch({
@@ -609,10 +622,10 @@ async function et(e, t, n) {
     })
   }
 }
-async function en(e, t) {
+async function ea(e, t) {
   var n;
-  await _.A.post({
-    url: T.Rsh.QUESTS_VIDEO_PROGRESS(e),
+  await m.A.post({
+    url: w.Rsh.QUESTS_VIDEO_PROGRESS(e),
     body: {
       timestamp: t
     },
@@ -627,57 +640,57 @@ async function en(e, t) {
     rejectWithError: false
   })
 }
-async function er(e) {
+async function eo(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = (0, O.tW)(e, O.fY.VIDEO_PLAYER_TRANSCRIPT, true, t);
-  if (null == n) return void b.Ay.getState().setTranscriptAsset({
+    n = (0, I.tW)(e, I.fY.VIDEO_PLAYER_TRANSCRIPT, true, t);
+  if (null == n) return void v.Ay.getState().setTranscriptAsset({
     questId: e.id,
-    fetchStatus: b.Lx.FAILURE
+    fetchStatus: v.Lx.FAILURE
   });
-  b.Ay.getState().setTranscriptAsset({
+  v.Ay.getState().setTranscriptAsset({
     questId: e.id,
-    fetchStatus: b.Lx.FETCHING
+    fetchStatus: v.Lx.FETCHING
   });
   try {
     let t = await i.Bo.get({
       url: n.url,
       rejectWithError: true
     });
-    b.Ay.getState().setTranscriptAsset({
+    v.Ay.getState().setTranscriptAsset({
       questId: e.id,
-      fetchStatus: b.Lx.SUCCESS,
+      fetchStatus: v.Lx.SUCCESS,
       text: t.text,
       url: n.url
     })
   } catch (t) {
-    b.Ay.getState().setTranscriptAsset({
+    v.Ay.getState().setTranscriptAsset({
       questId: e.id,
-      fetchStatus: b.Lx.FAILURE
+      fetchStatus: v.Lx.FAILURE
     })
   }
 }
-async function ei(e) {
+async function es(e) {
   let t = await i.Bo.get({
-    url: T.Rsh.QUEST(e),
+    url: w.Rsh.QUEST(e),
     rejectWithError: false
   });
-  return (0, I.Yn)(t.body)
+  return (0, C.Yn)(t.body)
 }
-async function ea(e) {
-  if (!E.A.isFetchingQuestPreview(e)) {
+async function el(e) {
+  if (!b.A.isFetchingQuestPreview(e)) {
     a.h.dispatch({
       type: "QUESTS_FETCH_PREVIEW_BEGIN",
       questId: e
     });
     try {
       let t = await i.Bo.get({
-        url: T.Rsh.QUEST_PREVIEW(e),
+        url: w.Rsh.QUEST_PREVIEW(e),
         rejectWithError: false
       });
       a.h.dispatch({
         type: "QUESTS_FETCH_PREVIEW_SUCCESS",
         questId: e,
-        quest: (0, I.rO)(t.body)
+        quest: (0, C.rO)(t.body)
       })
     } catch (t) {
       throw a.h.dispatch({
@@ -688,27 +701,27 @@ async function ea(e) {
     }
   }
 }
-let eo = 5 * Chunk927813.A.Millis.MINUTE;
-async function es() {
-  if (E.A.isFetchingQuestHomeTakeover()) return;
-  let e = E.A.getLastFetchedQuestHomeTakeover();
-  if (!(null != e && Date.now() - e <= eo)) {
+let ec = 5 * Chunk927813.A.Millis.MINUTE;
+async function eu() {
+  if (b.A.isFetchingQuestHomeTakeover()) return;
+  let e = b.A.getLastFetchedQuestHomeTakeover();
+  if (!(null != e && Date.now() - e <= ec)) {
     a.h.dispatch({
       type: "QUESTS_FETCH_QUEST_HOME_TAKEOVER_BEGIN"
     });
     try {
-      let e = [y.gh.QUEST_HOME_BANNER],
+      let e = [O.gh.QUEST_HOME_BANNER],
         t = await i.Bo.get({
-          url: T.Rsh.QUEST_PLACEMENT,
+          url: w.Rsh.QUEST_PLACEMENT,
           query: {
             placements: e,
-            platform: y.vg.WEB
+            platform: O.vg.WEB
           },
           rejectWithError: false
         });
       a.h.dispatch({
         type: "QUESTS_FETCH_QUEST_HOME_TAKEOVER_SUCCESS",
-        takeover: (0, I.Em)(t.body)
+        takeover: (0, C.Em)(t.body)
       })
     } catch (e) {
       throw a.h.dispatch({

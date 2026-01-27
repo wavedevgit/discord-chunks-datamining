@@ -93,6 +93,7 @@ class T extends Chunk64700.PureComponent {
         onMenuSelect: n
       } = this.props;
       return (0, r.jsx)(o.W1t, {
+        "data-menu-migrated": true,
         onSelect: n,
         navId: "test-skus",
         "aria-label": d.intl.string(d.t.ogxXGq),

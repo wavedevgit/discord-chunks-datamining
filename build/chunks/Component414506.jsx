@@ -27,7 +27,7 @@ let _ = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     analyticsLocations: f
   } = (0, a.Ay)(u.A.CONTEXT_MENU), E = null != (t = null == s ? true : s[0]) ? t : f[0], g = (0, d.A)(n.id, i, true, E, b);
   return (0, l.jsx)(r.W1t, {
-    "data-menu-label-graphic-auto": true,
+    "data-menu-migrated": true,
     navId: "guild-moderation-roles",
     onClose: () => {
       (0, o.Z_)(), null == _ || _()

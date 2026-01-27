@@ -121,6 +121,7 @@ function I(e) {
     }, o)
   }
   return (0, r.jsx)(s.W1t, {
+    "data-menu-migrated": true,
     navId: "pip-menu",
     "aria-label": "switch PIP",
     onClose: t,

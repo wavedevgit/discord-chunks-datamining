@@ -151,8 +151,9 @@ class L {
             checkIsMuted: true
           }),
           i = D(e),
-          o = _.A.isSoundSharing(e);
-        return n.speaking === r && n.latched === i && n.soundsharing === o ? t : (r && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, T(I({}, n), {
+          o = _.A.isSoundSharing(e),
+          s = this.participantByIndex.get(n.id);
+        return (null == s ? true : s.type) === b.lp.USER && s.speaking === r && s.latched === i && s.soundsharing === o ? t : (r && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, T(I({}, n), {
           speaking: r,
           latched: i,
           lastSpoke: this.lastSpoke[e],

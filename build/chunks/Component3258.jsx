@@ -109,6 +109,7 @@ function L() {
       })]
     }, "controls-layout"), [a]);
   return (0, r.jsxs)(c.W, {
+    "data-menu-migrated": true,
     onSelect: S.tE,
     navId: "playground-settings-menu",
     onClose: S.tE,

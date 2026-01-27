@@ -99,6 +99,7 @@ class h extends Chunk64700.PureComponent {
         }
       }) : null);
       return (0, r.jsx)(a.W1t, {
+        "data-menu-migrated": true,
         onSelect: i,
         navId: "test-store-listing",
         "aria-label": u.intl.string(u.t.ogxXGq),

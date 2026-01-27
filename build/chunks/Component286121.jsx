@@ -32,6 +32,7 @@ let l = {
         showTrailingIndicator: y,
         dangerItemColor: b
       } = e, [O, v] = i.useState(true), [A, I] = i.useState(false), [S, T] = i.useState("text"), [C, N] = i.useState("cozy"), [w, R] = i.useState(true), P = e => (0, r.jsxs)(o.W1t, {
+        "data-menu-migrated": true,
         navId: "menu-story",
         "aria-label": "Story Menu",
         variant: t,
@@ -42,12 +43,20 @@ let l = {
           id: "edit",
           label: "Edit Message",
           icon: p ? o.R2l : true,
+          leadingAccessory: p ? {
+            type: "icon",
+            icon: o.R2l
+          } : true,
           shortcut: _ ? "⌘E" : true,
           action: () => {}
         }), (0, r.jsx)(o.Drp, {
           id: "pin",
           label: "Pin Message",
           icon: p ? o.tsw : true,
+          leadingAccessory: p ? {
+            type: "icon",
+            icon: o.tsw
+          } : true,
           subtext: h ? "Pin this message to the channel" : true,
           badge: "beta",
           loading: E,
@@ -56,12 +65,20 @@ let l = {
           id: "copy",
           label: "Copy Message Link",
           icon: p ? o.TdU : true,
+          leadingAccessory: p ? {
+            type: "icon",
+            icon: o.TdU
+          } : true,
           badge: "new",
           action: () => {}
         }), m && (0, r.jsx)(o.Drp, {
           id: "disabled",
           label: "Disabled Item",
           icon: p ? o.Zes : true,
+          leadingAccessory: p ? {
+            type: "icon",
+            icon: o.Zes
+          } : true,
           disabled: true,
           action: () => {}
         }), g && (0, r.jsxs)(r.Fragment, {
@@ -79,12 +96,20 @@ let l = {
             label: "Premium Item",
             color: "premium",
             icon: p ? o.Zes : true,
+            leadingAccessory: p ? {
+              type: "icon",
+              icon: o.Zes
+            } : true,
             action: () => {}
           }), (0, r.jsx)(o.Drp, {
             id: "success-item",
             label: "Success Item",
             color: "success",
             icon: p ? o.Zes : true,
+            leadingAccessory: p ? {
+              type: "icon",
+              icon: o.Zes
+            } : true,
             action: () => {}
           })]
         }), f && (0, r.jsxs)(r.Fragment, {
