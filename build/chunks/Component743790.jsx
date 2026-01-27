@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
-/** chunk id: 743790, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 743790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => u
+  $: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk573435 = require("./573435.jsx"),
   Chunk260509 = require("./260509.js"),
   Chunk369752 = require("./369752.js");
 
-function u(e) {
+function d(e) {
   let {
     guild: t,
     size: n
-  } = e, i = (0, l.Iv)(t, n, false, true), u = (0, l.Rb)(t);
-  return (0, r.jsx)(o.Ay, {
+  } = e, i = (0, o.Iv)(t, n, false, true), d = (0, o.Rb)(t);
+  return (0, r.jsx)(a.Ay, {
     className: c.zc,
-    mask: o.Ay.Masks.SQUIRCLE,
+    mask: a.Ay.Masks.SQUIRCLE,
     width: n,
     height: n,
     children: null != i ? (0, r.jsx)("img", {
@@ -30,12 +29,12 @@ function u(e) {
     }) : (0, r.jsx)("div", {
       className: c.FS,
       children: (0, r.jsx)(s.Text, {
-        className: a()({
+        className: l()({
           [c.ri]: 20 === n
         }),
         color: "text-subtle",
         variant: "text-md/semibold",
-        children: u
+        children: d
       })
     })
   })

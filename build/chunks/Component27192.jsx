@@ -11,7 +11,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   l = require.n(Chunk284009),
   Chunk317097 = require("./317097.js"),
@@ -62,7 +62,7 @@ let y = {
       disabled: t = false,
       readOnly: n = false,
       displayOnly: a = false,
-      value: o = false,
+      value: s = false,
       size: l = 24,
       type: c = "default",
       align: u = "center",
@@ -77,7 +77,7 @@ let y = {
     } = e, S = i.useCallback(e => {
       null == f || f(e, e.currentTarget.checked)
     }, [f]), T = null != E ? (0, r.jsx)("div", {
-      className: s()(_.Pf, t ? _.fR : _.ru, O ? _.dT : _.a5),
+      className: o()(_.Pf, t ? _.fR : _.ru, O ? _.dT : _.a5),
       style: {
         lineHeight: "".concat(l, "px")
       },
@@ -85,24 +85,24 @@ let y = {
     }) : null, C = a ? "span" : "label", N = t ? _.pR : n ? _.bB : _.qw;
     return (0, r.jsxs)(C, {
       "data-toggleable-component": "checkbox",
-      className: s()(t ? _.Tc : _.TQ, b[u], m, {
+      className: o()(t ? _.Tc : _.TQ, b[u], m, {
         [_.nM]: "row" === c,
-        [_.KD]: o
+        [_.KD]: s
       }),
       children: [O ? T : null, !a && (0, r.jsx)(d.vN, {
         children: (0, r.jsx)("input", {
-          className: s()(g, N),
+          className: o()(g, N),
           type: "checkbox",
           onClick: h,
           onChange: t || n ? p.tE : S,
-          checked: o,
+          checked: s,
           style: {
             width: l,
             height: l
           }
         })
       }), (0, r.jsx)(A, {
-        value: o,
+        value: s,
         size: l,
         shape: v,
         checkboxColor: I,
@@ -141,12 +141,12 @@ function A(e) {
     indicatorClassName: t,
     value: n,
     size: a,
-    shape: o,
+    shape: s,
     checkboxColor: l,
     disabled: c
   } = e, d = v(e), p = i.useMemo(() => n ? u.A.colors.WHITE.css : u.A.unsafe_rawColors.TRANSPARENT.css, [n]);
   return (0, r.jsx)("div", {
-    className: s()(_.kv, o, t, {
+    className: o()(_.kv, s, t, {
       [_.KD]: n,
       [_.Ab]: c
     }),

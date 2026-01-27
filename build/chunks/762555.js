@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   U: () => a,
-  g: () => s
+  g: () => o
 });
 var Chunk661191 = require("./661191.js"),
   Chunk696016 = require("./696016.js");
@@ -12,6 +12,6 @@ function a(e) {
   return new Date(r.default.extractTimestamp(e)).toISOString()
 }
 
-function s(e) {
+function o(e) {
   return e.slice(0, i.GU)
 }

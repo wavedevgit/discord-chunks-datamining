@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 212614, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 212614, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk732955 = require("./732955.js"),
@@ -10,7 +9,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk884392 = require("./884392.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function l(e) {
+function o(e) {
   let {
     taskType: t
   } = e;
@@ -18,7 +17,7 @@ function l(e) {
     variant: "primary",
     fullWidth: true,
     size: "sm",
-    text: o.intl.string(o.t.P84bAD)
+    text: s.intl.string(s.t.P84bAD)
   })
 }
 
@@ -26,7 +25,7 @@ function c(e) {
   let {
     taskType: t
   } = e;
-  return (0, r.jsx)(l, {
+  return (0, r.jsx)(o, {
     taskType: t
   })
 }
@@ -39,7 +38,7 @@ function u(e) {
     variant: "primary",
     fullWidth: true,
     size: "sm",
-    text: o.intl.string(o.t.P84bAD)
+    text: s.intl.string(s.t.P84bAD)
   })
 }
 
@@ -51,58 +50,58 @@ function d(e) {
     variant: "primary",
     fullWidth: true,
     size: "sm",
-    text: o.intl.string(o.t.P84bAD)
+    text: s.intl.string(s.t.P84bAD)
   })
 }
-let f = function(e) {
+let p = function(e) {
   let {
     quest: t,
     preClickCallback: n,
-    analyticsCtxQuestContent: f,
-    analyticsCtxSourceQuestContent: p,
-    analyticsCtxQuestContentPosition: _,
-    size: h = "md"
-  } = e, m = (0, a.P)(t);
+    analyticsCtxQuestContent: p,
+    analyticsCtxSourceQuestContent: m,
+    analyticsCtxQuestContentPosition: f,
+    size: g = "md"
+  } = e, h = (0, l.P)(t);
   if (0 === Object.keys(t.config.taskConfigV2.tasks).length) return (0, r.jsx)(i.$nd, {
     variant: "primary",
     fullWidth: true,
     size: "sm",
-    text: o.intl.string(o.t.P84bAD)
+    text: s.intl.string(s.t.P84bAD)
   });
-  let g = Object.values(t.config.taskConfigV2.tasks)[0];
-  switch (m) {
-    case a.U.UNENROLLED:
-      return (0, r.jsx)(s.A, {
+  let _ = Object.values(t.config.taskConfigV2.tasks)[0];
+  switch (h) {
+    case l.U.UNENROLLED:
+      return (0, r.jsx)(a.A, {
         quest: t,
-        taskType: g.type,
-        size: h,
+        taskType: _.type,
+        size: g,
         preClickCallback: n,
-        analyticsCtxQuestContent: f,
-        analyticsCtxSourceQuestContent: p,
-        analyticsCtxQuestContentPosition: _
+        analyticsCtxQuestContent: p,
+        analyticsCtxSourceQuestContent: m,
+        analyticsCtxQuestContentPosition: f
       });
-    case a.U.ENROLLED:
-      return (0, r.jsx)(l, {
-        taskType: g.type
+    case l.U.ENROLLED:
+      return (0, r.jsx)(o, {
+        taskType: _.type
       });
-    case a.U.INCOMPLETE:
+    case l.U.INCOMPLETE:
       return (0, r.jsx)(c, {
-        taskType: g.type
+        taskType: _.type
       });
-    case a.U.COMPLETED:
+    case l.U.COMPLETED:
       return (0, r.jsx)(u, {
-        taskType: g.type
+        taskType: _.type
       });
-    case a.U.CLAIMED:
+    case l.U.CLAIMED:
       return (0, r.jsx)(d, {
-        taskType: g.type
+        taskType: _.type
       });
     default:
       return (0, r.jsx)(i.$nd, {
         variant: "primary",
         fullWidth: true,
-        size: h,
-        text: o.intl.string(o.t.P84bAD)
+        size: g,
+        text: s.intl.string(s.t.P84bAD)
       })
   }
 }

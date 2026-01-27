@@ -78,11 +78,11 @@ let i = {
     },
     24: {
       name: "ICC Profile Date",
-      value: (e, t) => s(e, t).toISOString()
+      value: (e, t) => o(e, t).toISOString()
     },
     36: {
       name: "ICC Signature",
-      value: (e, t) => o(e.buffer.slice(t, t + 4))
+      value: (e, t) => s(e.buffer.slice(t, t + 4))
     },
     40: {
       name: "Primary Platform",
@@ -122,11 +122,11 @@ let i = {
     }
   };
 
-function s(e, t) {
+function o(e, t) {
   return new Date(Date.UTC(e.getUint16(t), e.getUint16(t + 2) - 1, e.getUint16(t + 4), e.getUint16(t + 6), e.getUint16(t + 8), e.getUint16(t + 10)))
 }
 
-function o(e) {
+function s(e) {
   return String.fromCharCode.apply(null, new Uint8Array(e))
 }
 

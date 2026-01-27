@@ -2,7 +2,7 @@
 /** chunk id: 333737, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  default: () => m
+  default: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -27,44 +27,44 @@ let f = e => {
   let {
     image: t,
     label: r,
-    text: n,
-    children: i
+    text: o,
+    children: s
   } = e;
-  return (0, s.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: p.uW,
-    children: [(0, s.jsx)("div", {
+    children: [(0, n.jsx)("div", {
       className: p.X$,
       children: t
-    }), (0, s.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: p.f5,
-      children: (0, s.jsxs)("div", {
-        children: [(0, s.jsx)(a.Heading, {
+      children: (0, n.jsxs)("div", {
+        children: [(0, n.jsx)(i.Heading, {
           variant: "heading-sm/semibold",
           className: p.p_,
           children: r
-        }), (0, s.jsx)(a.Text, {
+        }), (0, n.jsx)(i.Text, {
           variant: "text-md/normal",
-          children: n
-        }), i]
+          children: o
+        }), s]
       })
     })]
   })
 };
-class g extends Chunk64700.PureComponent {
+class _ extends Chunk64700.PureComponent {
   render() {
     var e;
     let {
       transitionState: t,
-      onClose: n
+      onClose: o
     } = this.props, {
-      totpSecret: l,
+      totpSecret: a,
       code: h,
-      isVerifying: g
-    } = this.state, m = null == (e = c.default.getCurrentUser()) ? true : e.email, y = (0, d.V3)(null != m ? m : "", l), x = (0, s.jsx)("form", {
+      isVerifying: _
+    } = this.state, y = null == (e = l.default.getCurrentUser()) ? true : e.email, g = (0, d.V3)(null != y ? y : "", a), b = (0, n.jsx)("form", {
       onSubmit: this.handleActivate,
-      children: (0, s.jsxs)("div", {
+      children: (0, n.jsxs)("div", {
         className: p.Kf,
-        children: [(0, s.jsx)(a.ksK, {
+        children: [(0, n.jsx)(i.ksK, {
           value: h,
           placeholder: "000 000",
           maxLength: 7,
@@ -73,22 +73,22 @@ class g extends Chunk64700.PureComponent {
           error: this.state.error,
           autoFocus: true,
           fullWidth: true
-        }), (0, s.jsx)(a.Button, {
+        }), (0, n.jsx)(i.Button, {
           variant: "primary",
           text: u.intl.string(u.t["/a5+YV"]),
           type: "submit",
-          loading: g
+          loading: _
         })]
       })
     });
-    return (0, s.jsxs)(i.Modal, {
+    return (0, n.jsxs)(s.Modal, {
       title: u.intl.string(u.t.cDgKte),
       subtitle: u.intl.string(u.t["7NGwtH"]),
       transitionState: t,
-      onClose: n,
+      onClose: o,
       actions: [],
-      children: [(0, s.jsx)(f, {
-        image: (0, s.jsx)("img", {
+      children: [(0, n.jsx)(f, {
+        image: (0, n.jsx)("img", {
           alt: "",
           src: r(582248),
           width: 100,
@@ -99,37 +99,37 @@ class g extends Chunk64700.PureComponent {
           googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en",
           authyURL: "https://www.authy.com/"
         })
-      }), (0, s.jsx)(a.cGx, {
+      }), (0, n.jsx)(i.cGx, {
         className: p.yF
-      }), (0, s.jsx)(f, {
-        image: (0, s.jsx)(o.Ay, {
-          text: y
+      }), (0, n.jsx)(f, {
+        image: (0, n.jsx)(c.Ay, {
+          text: g
         }),
         label: u.intl.string(u.t["91InF1"]),
         text: u.intl.string(u.t.hFeBkl),
-        children: (0, s.jsxs)("div", {
+        children: (0, n.jsxs)("div", {
           className: p.h8,
-          children: [(0, s.jsx)(a.Heading, {
+          children: [(0, n.jsx)(i.Heading, {
             variant: "heading-sm/semibold",
             className: p.p_,
             children: u.intl.string(u.t["76IPwr"])
-          }), (0, s.jsx)(a.Text, {
+          }), (0, n.jsx)(i.Text, {
             variant: "text-md/normal",
             className: p.rJ,
             selectable: true,
-            children: l
+            children: a
           })]
         })
-      }), (0, s.jsx)(a.cGx, {
+      }), (0, n.jsx)(i.cGx, {
         className: p.yF
-      }), (0, s.jsx)(f, {
-        image: (0, s.jsx)("img", {
+      }), (0, n.jsx)(f, {
+        image: (0, n.jsx)("img", {
           alt: "",
           src: r(87282)
         }),
         label: u.intl.string(u.t["SaD/LY"]),
         text: u.intl.string(u.t.vI1zic),
-        children: x
+        children: b
       })]
     })
   }
@@ -151,7 +151,7 @@ class g extends Chunk64700.PureComponent {
       } = this.state;
       this.setState({
         isVerifying: true
-      }), l.A.enable({
+      }), a.A.enable({
         code: r,
         secret: (0, d.cC)(t)
       }).then(this.handleActivateSuccess, e => this.setState({
@@ -169,4 +169,4 @@ class g extends Chunk64700.PureComponent {
     })
   }
 }
-let m = g
+let y = _

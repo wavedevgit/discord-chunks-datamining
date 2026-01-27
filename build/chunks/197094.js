@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   B: () => a,
-  b: () => s
+  b: () => o
 });
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js");
@@ -15,7 +15,7 @@ function a(e) {
   })
 }
 
-function s(e, t) {
+function o(e, t) {
   i.h.dispatch({
     type: "RTC_LATENCY_TEST_COMPLETE",
     latencyRankedRegions: e,

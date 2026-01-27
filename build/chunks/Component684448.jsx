@@ -61,13 +61,13 @@ function h(e) {
       let e = null != C && !O && !w;
       return v || e ? (0, r.jsxs)(r.Fragment, {
         children: [R, P]
-      }) : (0, r.jsxs)(s.A, {
+      }) : (0, r.jsxs)(o.A, {
         delay: 150,
         tooltipClassName: h,
         children: [R, P]
       })
     };
-  return (0, r.jsx)(o.Text, {
+  return (0, r.jsx)(s.Text, {
     variant: "text-".concat(y, "/medium"),
     color: "none",
     className: a()(p.ps, n),

@@ -21,7 +21,7 @@ let u = () => (0, r.jsx)(r.Fragment, {
     })
   }),
   d = () => {
-    let e = (0, i.bG)([s.A, o.A], () => s.A.getGuild(o.A.getGuildId()), []),
+    let e = (0, i.bG)([o.A, s.A], () => o.A.getGuild(s.A.getGuildId()), []),
       t = null == e ? true : e.name;
     return (0, r.jsx)(r.Fragment, {
       children: l.intl.format(l.t.oQuG3K, {

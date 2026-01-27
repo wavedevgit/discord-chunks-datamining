@@ -39,10 +39,10 @@ let u = e => {
     })
   }
   if (f.type === i.R.NAMEPLATE) {
-    let e = (0, s.D)(f);
+    let e = (0, o.D)(f);
     return (0, r.jsx)(l.A, {
       nameplate: e,
-      placement: o.u.PREVIEW
+      placement: s.u.PREVIEW
     })
   }
   return null

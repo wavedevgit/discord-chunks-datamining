@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 120385, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 120385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
 }), require("./896048.js");
@@ -13,10 +12,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk124953 = require("./124953.js");
-async function f(e) {
+async function _(e) {
   try {
-    return (await a.Bo.get({
-      url: l.Rsh.BILLING_INVOICE_BREAKDOWN,
+    return (await l.Bo.get({
+      url: o.Rsh.BILLING_INVOICE_BREAKDOWN,
       query: {
         payment_id: e
       },
@@ -31,57 +30,51 @@ async function f(e) {
 function p(e) {
   let {
     payment: t
-  } = e, [n, a] = i.useState(null), [l, p] = i.useState(null), _ = async e => {
+  } = e, [n, l] = i.useState(null), [o, p] = i.useState(null), m = async e => {
     try {
-      let n = await f(t.id);
-      a(n);
+      let n = await _(t.id);
+      l(n);
       let r = e ? n.refundInvoiceLinks[0] : n.invoiceLink;
       window.open(r, "_blank"), p(null)
     } catch (e) {
       var n;
       p(null == (n = e.body) ? true : n.message)
     }
-  };
-
-  function h(e, t) {
-    o.A.open(e, t)
-  }
-  let m = null != t.paymentSource && t.status === c.__.COMPLETED,
-    g = null == n ? true : n.invoiceLink,
-    E = null == n ? true : n.refundInvoiceLinks;
+  }, g = null != t.paymentSource && t.status === c.__.COMPLETED, A = null == n ? true : n.invoiceLink, f = null == n ? true : n.refundInvoiceLinks;
   return t.hasInvoiceURL && null == n ? (0, r.jsxs)("div", {
-    className: d.It,
+    className: u.It,
     children: [(0, r.jsx)(s.MzZ, {
-      onClick: () => _(false),
-      children: u.intl.formatToPlainString(u.t.R0xzCN, {})
+      onClick: () => m(false),
+      children: d.intl.formatToPlainString(d.t.R0xzCN, {})
     }), t.hasRefundInvoiceURLs ? (0, r.jsx)(s.MzZ, {
-      className: d.oe,
-      onClick: () => _(true),
-      children: u.intl.formatToPlainString(u.t["3x6NGw"], {})
-    }) : null, null != l && "" !== l && (0, r.jsx)(s.wx6, {
+      className: u.oe,
+      onClick: () => m(true),
+      children: d.intl.formatToPlainString(d.t["3x6NGw"], {})
+    }) : null, null != o && "" !== o && (0, r.jsx)(s.wx6, {
       type: "critical",
-      children: l
+      children: o
     })]
   }) : t.hasInvoiceURL && null != n ? (0, r.jsxs)("div", {
-    className: d.It,
+    className: u.It,
     children: [(0, r.jsx)(s.MzZ, {
-      href: g,
-      children: u.intl.formatToPlainString(u.t.R0xzCN, {})
-    }), null != E ? E.map((e, t) => (0, r.jsx)(s.MzZ, {
-      className: d.oe,
+      href: A,
+      children: d.intl.formatToPlainString(d.t.R0xzCN, {})
+    }), null != f ? f.map((e, t) => (0, r.jsx)(s.MzZ, {
+      className: u.oe,
       href: e,
-      children: u.intl.formatToPlainString(u.t["3x6NGw"], {})
-    }, t)) : null, null != l && "" !== l && (0, r.jsx)(s.wx6, {
+      children: d.intl.formatToPlainString(d.t["3x6NGw"], {})
+    }, t)) : null, null != o && "" !== o && (0, r.jsx)(s.wx6, {
       type: "critical",
-      children: l
+      children: o
     })]
-  }) : m ? (0, r.jsx)("div", {
-    className: d.It,
+  }) : g ? (0, r.jsx)("div", {
+    className: u.It,
     children: (0, r.jsx)(s.MzZ, {
       onClick: () => {
-        h(t, t.paymentSource)
+        var e;
+        e = t.paymentSource, a.A.open(t, e)
       },
-      children: u.intl.formatToPlainString(u.t.onRIxS, {})
+      children: d.intl.formatToPlainString(d.t.onRIxS, {})
     })
   }) : null
 }

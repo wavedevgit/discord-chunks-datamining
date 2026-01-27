@@ -1,4 +1,4 @@
-/** Chunk was on 58652 **/
+/** Chunk was on 12236 **/
 /** chunk id: 842012, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -21,20 +21,20 @@ let g = e => {
     user: t,
     channelId: n,
     reportId: g
-  } = e, _ = c.A.getDMFromUserId(t.id), h = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), v = r.useMemo(() => m.Ay.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), f = (0, i.bG)([u.Ay], () => null == _ ? null : u.Ay.isChannelMuted(null, _)), [j, A] = r.useState(null != f && f), y = r.useCallback(() => {
-    null != _ && (A(true), s.Ay.trackWithMetadata(b.HAw.IAR_MUTE_USER_BUTTON_CLICKED, {
+  } = e, x = c.A.getDMFromUserId(t.id), h = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), v = r.useMemo(() => m.Ay.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), f = (0, i.bG)([u.Ay], () => null == x ? null : u.Ay.isChannelMuted(null, x)), [j, A] = r.useState(null != f && f), y = r.useCallback(() => {
+    null != x && (A(true), s.Ay.trackWithMetadata(b.HAw.IAR_MUTE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: g
-    }), a.A.updateChannelOverrideSettings(null, _, {
+    }), a.A.updateChannelOverrideSettings(null, x, {
       muted: true
     }, p.fd.Muted), o.A.showMuteSuccessToast(t.id, n))
-  }, [_, n, t, g]);
+  }, [x, n, t, g]);
   return (0, l.jsx)(d.PQ, {
-    title: x.intl.formatToPlainString(x.t.TRp5wR, {
+    title: _.intl.formatToPlainString(_.t.TRp5wR, {
       username: v
     }),
-    description: x.intl.string(x.t["yM/+AJ"]),
-    buttonText: j ? x.intl.string(x.t.E8x4Nj) : x.intl.string(x.t.HITUcR),
+    description: _.intl.string(_.t["yM/+AJ"]),
+    buttonText: j ? _.intl.string(_.t.E8x4Nj) : _.intl.string(_.t.HITUcR),
     buttonDisabled: j,
     onButtonPress: y
   })

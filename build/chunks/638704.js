@@ -2,43 +2,43 @@
 /** chunk id: 638704, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk559751 = require("./559751.js"),
   Chunk499702 = require("./499702.js"),
   Chunk264816 = require("./264816.js"),
   Chunk140851 = require("./140851.js");
 
-function o(e) {
+function s(e) {
   var t, n = e.reference,
-    o = e.element,
+    s = e.element,
     l = e.placement,
     c = l ? (0, r.A)(l) : null,
     u = l ? (0, i.A)(l) : null,
-    d = n.x + n.width / 2 - o.width / 2,
-    f = n.y + n.height / 2 - o.height / 2;
+    d = n.x + n.width / 2 - s.width / 2,
+    f = n.y + n.height / 2 - s.height / 2;
   switch (c) {
-    case s.Mn:
+    case o.Mn:
       t = {
         x: d,
-        y: n.y - o.height
+        y: n.y - s.height
       };
       break;
-    case s.sQ:
+    case o.sQ:
       t = {
         x: d,
         y: n.y + n.height
       };
       break;
-    case s.pG:
+    case o.pG:
       t = {
         x: n.x + n.width,
         y: f
       };
       break;
-    case s.kb:
+    case o.kb:
       t = {
-        x: n.x - o.width,
+        x: n.x - s.width,
         y: f
       };
       break;
@@ -52,11 +52,11 @@ function o(e) {
   if (null != p) {
     var _ = "y" === p ? "height" : "width";
     switch (u) {
-      case s.ni:
-        t[p] = t[p] - (n[_] / 2 - o[_] / 2);
+      case o.ni:
+        t[p] = t[p] - (n[_] / 2 - s[_] / 2);
         break;
-      case s._N:
-        t[p] = t[p] + (n[_] / 2 - o[_] / 2)
+      case o._N:
+        t[p] = t[p] + (n[_] / 2 - s[_] / 2)
     }
   }
   return t

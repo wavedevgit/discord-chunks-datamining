@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 547629, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 547629, original params: e,t,n (module,exports,require) **/
 module.exports = {
   TQ: "navBar__88ef1",
   nE: "nitroWheelIcon__88ef1",

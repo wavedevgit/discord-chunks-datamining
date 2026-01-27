@@ -26,8 +26,8 @@ function u(e, t, n, i) {
   }
   if (Array.isArray(e) || Array.isArray(t)) returnfalse;
   let a = Object.keys(e),
-    s = Object.keys(t);
-  if (a.length !== s.length) returnfalse;
+    o = Object.keys(t);
+  if (a.length !== o.length) returnfalse;
   for (let r of a)
     if (!Object.prototype.hasOwnProperty.call(t, r) || !u(e[r], t[r], n, false)) returnfalse;
   returntrue
@@ -175,7 +175,7 @@ function y(e, t) {
   let d = null != (r = u.mismatchesByLastAction.get(a)) ? r : 0;
   if (d >= c) return;
   let f = O(u, t);
-  null != f && (u.mismatchesByLastAction.set(a, d + 1), u.mismatchesReported++, s.default.track(o.HAw.LIBDISCORE_KV_DUAL_READ_ERROR, {
+  null != f && (u.mismatchesByLastAction.set(a, d + 1), u.mismatchesReported++, o.default.track(s.HAw.LIBDISCORE_KV_DUAL_READ_ERROR, {
     store_name: e,
     action_type: a,
     num_missing_keys: f.numMissingKeys,
@@ -214,7 +214,7 @@ function O(e, t) {
             });
             break;
           case "value-mismatch":
-            null !== t.primaryValue && null !== t.shadowValue && "object" == typeof t.primaryValue && "object" == typeof t.shadowValue ? Array.isArray(t.primaryValue) && Array.isArray(t.shadowValue) ? s(e, t.primaryValue, t.shadowValue) : i(e, t.primaryValue, t.shadowValue) : r({
+            null !== t.primaryValue && null !== t.shadowValue && "object" == typeof t.primaryValue && "object" == typeof t.shadowValue ? Array.isArray(t.primaryValue) && Array.isArray(t.shadowValue) ? o(e, t.primaryValue, t.shadowValue) : i(e, t.primaryValue, t.shadowValue) : r({
               fieldName: e,
               primaryType: b(t.primaryValue),
               shadowType: b(t.shadowValue)
@@ -235,10 +235,10 @@ function O(e, t) {
 
   function i(e, t, n) {
     let a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : new Set;
-    for (let o of Object.keys(t)) {
-      let l = "".concat(e, ".").concat(o),
-        c = t[o];
-      if (!Object.prototype.hasOwnProperty.call(n, o)) {
+    for (let s of Object.keys(t)) {
+      let l = "".concat(e, ".").concat(s),
+        c = t[s];
+      if (!Object.prototype.hasOwnProperty.call(n, s)) {
         r({
           fieldName: l,
           primaryType: b(c),
@@ -246,8 +246,8 @@ function O(e, t) {
         });
         continue
       }
-      let u = n[o];
-      c !== u && ("object" == typeof c && "object" == typeof u ? Array.isArray(c) && Array.isArray(u) ? s(l, c, u) : null == c || null == u || a.has(c) || (a.add(c), i(l, c, u, a)) : r({
+      let u = n[s];
+      c !== u && ("object" == typeof c && "object" == typeof u ? Array.isArray(c) && Array.isArray(u) ? o(l, c, u) : null == c || null == u || a.has(c) || (a.add(c), i(l, c, u, a)) : r({
         fieldName: l,
         primaryType: b(c),
         shadowType: b(u)
@@ -255,7 +255,7 @@ function O(e, t) {
     }
   }
 
-  function s(e, t, n) {
+  function o(e, t, n) {
     (0, a.v)(t, n) || r({
       fieldName: e,
       primaryType: "array",

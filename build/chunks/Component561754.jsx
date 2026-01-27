@@ -35,8 +35,8 @@ function w() {
   let e = v.default.locale;
   if ("en-US" === e) return a;
   if ("en-GB" === e) return a.GB;
-  if ("de" === e) return s;
-  if ("fr" === e) return o;
+  if ("de" === e) return o;
+  if ("fr" === e) return s;
   if ("ja" === e) return l;
   else if ("nl" === e) return c;
   else if ("ru" === e) return u;
@@ -53,10 +53,10 @@ function w() {
 function R(e, t, n) {
   let r, i, a;
   if (null == n) return {};
-  let s = e.clone();
-  s.subtract(1, n.periodType);
-  let o = t.clone();
-  return o.add(1, n.periodType), t.isSame(e, n.periodType) ? (a = S.intl.string(n.currentName), t.isSameOrBefore(e) && (i = S.intl.string(n.nextName))) : t.isSame(s, n.periodType) && (a = S.intl.string(n.previousName), i = S.intl.string(n.currentName)), null != i && (r = o.unix().toString()), {
+  let o = e.clone();
+  o.subtract(1, n.periodType);
+  let s = t.clone();
+  return s.add(1, n.periodType), t.isSame(e, n.periodType) ? (a = S.intl.string(n.currentName), t.isSameOrBefore(e) && (i = S.intl.string(n.nextName))) : t.isSame(o, n.periodType) && (a = S.intl.string(n.previousName), i = S.intl.string(n.currentName)), null != i && (r = s.unix().toString()), {
     adjustedTimestamp: r,
     adjustedDescription: i,
     unadjustedDescription: a
@@ -69,24 +69,24 @@ let P = {
     var r;
     let i = y()(),
       a = w(),
-      [s] = null != (r = null == a ? true : a.parse(n, i.toDate())) ? r : [true],
-      o = (null == s ? true : s.start) != null && (null == s ? true : s.end) == null && s.text === n,
-      l = o ? y()(s.start.date()) : y()(n, N, true),
+      [o] = null != (r = null == a ? true : a.parse(n, i.toDate())) ? r : [true],
+      s = (null == o ? true : o.start) != null && (null == o ? true : o.end) == null && o.text === n,
+      l = s ? y()(o.start.date()) : y()(n, N, true),
       c = [],
       {
         format: u
       } = l.creationData();
-    if ("string" != typeof u && (u = true), "" !== n || l.isValid() || (l = i, u = "YYYYMMDDHHmmss"), l.isValid() && (o || null != u)) {
+    if ("string" != typeof u && (u = true), "" !== n || l.isValid() || (l = i, u = "YYYYMMDDHHmmss"), l.isValid() && (s || null != u)) {
       let e;
-      if (o && !s.start.isCertain("hour")) {
+      if (s && !o.start.isCertain("hour")) {
         let e = 9e5,
           t = Math.round(l.valueOf() / e) * e;
         l = y()(t)
       }
-      let t = o ? s.start.isCertain("weekday") : null == u ? true : u.includes("d"),
-        n = o ? s.start.isCertain("day") || s.start.isCertain("month") || s.start.isCertain("year") : null == u ? true : u.includes("D"),
-        r = o ? s.start.isCertain("year") : null == u ? true : u.includes("Y"),
-        a = o ? s.start.isCertain("second") : null == u ? true : u.includes("s"),
+      let t = s ? o.start.isCertain("weekday") : null == u ? true : u.includes("d"),
+        n = s ? o.start.isCertain("day") || o.start.isCertain("month") || o.start.isCertain("year") : null == u ? true : u.includes("D"),
+        r = s ? o.start.isCertain("year") : null == u ? true : u.includes("Y"),
+        a = s ? o.start.isCertain("second") : null == u ? true : u.includes("s"),
         d = l.unix().toString(),
         f = a ? "S" : "s";
       n || t ? t && !n ? e = {
@@ -173,8 +173,8 @@ let P = {
       },
       selectedIndex: n,
       query: a,
-      onHover: s,
-      onClick: o
+      onHover: o,
+      onClick: s
     } = e, l = t.map((e, t) => {
       let {
         mention: i,
@@ -183,8 +183,8 @@ let P = {
       if (true === i) return (0, r.jsx)(b.Ay.Divider, {}, "divider-".concat(t));
       let l = (0, O.WA)(i);
       return null == l ? null : (0, r.jsx)(b.Ay.Timestamp, {
-        onClick: o,
-        onHover: s,
+        onClick: s,
+        onHover: o,
         selected: n === t,
         index: t,
         timestamp: l,
@@ -209,12 +209,12 @@ let P = {
       index: i,
       options: a
     } = e, {
-      mention: s
+      mention: o
     } = null != (t = r[i]) ? t : {};
-    if (null == s) return null;
-    let o = (0, O.tf)(s.timestamp, s.format),
-      l = null == (n = (0, O.WA)(s)) ? true : n.formatted;
-    return null == l ? null : (a.replaceInlineInput("timestampMentionInput", l, o), {
+    if (null == o) return null;
+    let s = (0, O.tf)(o.timestamp, o.format),
+      l = null == (n = (0, O.WA)(o)) ? true : n.formatted;
+    return null == l ? null : (a.replaceInlineInput("timestampMentionInput", l, s), {
       type: I.kc.TIMESTAMP
     })
   }

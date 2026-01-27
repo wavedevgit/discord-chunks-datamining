@@ -2,7 +2,7 @@
 /** chunk id: 805396, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./457529.js"), require("./65821.js");
 var Chunk536194 = require("./536194.js");
 let i = (0, require("./242133.js").g)();
@@ -21,6 +21,6 @@ class a {
     returntrue
   }
 }
-let s = true !== i ? i : a;
-Chunk536194.P.isDiscordGatewayPlaintextSet() && (s = a);
-let o = s
+let o = true !== i ? i : a;
+Chunk536194.P.isDiscordGatewayPlaintextSet() && (o = a);
+let s = o

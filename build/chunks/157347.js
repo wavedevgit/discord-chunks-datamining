@@ -5,8 +5,8 @@ require.d(exports, {
   OA: () => a,
   hL: () => d,
   vn: () => f,
-  wN: () => o,
-  wp: () => s
+  wN: () => s,
+  wp: () => o
 });
 var Chunk469881 = require("./469881.js"),
   Chunk985018 = require("./985018.jsx");
@@ -17,14 +17,14 @@ let a = {
     hour: "numeric",
     minute: "2-digit"
   },
-  s = {
+  o = {
     month: "short",
     day: "numeric",
     year: "numeric",
     hour: "numeric",
     minute: "2-digit"
   };
-var o = function(e) {
+var s = function(e) {
   return e[e.JOINED_AT = 0] = "JOINED_AT", e[e.ACCOUNT_AGE = 1] = "ACCOUNT_AGE", e
 }({});
 let l = () => ({

@@ -14,8 +14,8 @@ var Chunk64700 = require("./64700.js"),
   Chunk661191 = require("./661191.js");
 
 function d(e) {
-  let t = (0, o.s)(e.id),
-    n = (0, s.cf)([c.default, l.A], () => {
+  let t = (0, s.s)(e.id),
+    n = (0, o.cf)([c.default, l.A], () => {
       let e = {};
       for (let n of t.values()) {
         let t = c.default.getUser(n.author_id),

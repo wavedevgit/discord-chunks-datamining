@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 575684, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 575684, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,24 +17,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk531525 = require("./531525.js"),
   Chunk652215 = require("./652215.js");
 
-function m(e) {
+function A(e) {
   let {
     isRedesign: t = false
-  } = e, n = (0, s.p)(), m = i.useRef(false), g = (0, a.bG)([f.A], () => f.A.getVideoDeviceId()), [E, y] = i.useState((0, l.i)(p.default.getCurrentUser())), b = i.useRef(E);
-  i.useEffect(() => () => {
-    m.current && (0, c._C)(b.current)
-  }, []);
-  let O = e => {
-    m.current = true, b.current = e, y(e), (0, u.gB)(e, {
-      location: n.location
-    }).catch(h.tEg)
-  };
-  return (0, r.jsx)(o.x, {
-    setting: _.H.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
-    children: (0, r.jsx)(d.A, {
-      selectedBackgroundOption: E,
-      onSelectBackgroundOption: O,
-      currentDeviceId: g,
+  } = e, n = (0, s.p)(), A = i.useRef(false), f = (0, l.bG)([_.A], () => _.A.getVideoDeviceId()), [h, b] = i.useState((0, o.i)(p.default.getCurrentUser())), E = i.useRef(h);
+  return i.useEffect(() => () => {
+    A.current && (0, c._C)(E.current)
+  }, []), (0, r.jsx)(a.x, {
+    setting: m.H.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
+    children: (0, r.jsx)(u.A, {
+      selectedBackgroundOption: h,
+      onSelectBackgroundOption: e => {
+        A.current = true, E.current = e, b(e), (0, d.gB)(e, {
+          location: n.location
+        }).catch(g.tEg)
+      },
+      currentDeviceId: f,
       responsiveBackgroundOptions: t
     })
   })

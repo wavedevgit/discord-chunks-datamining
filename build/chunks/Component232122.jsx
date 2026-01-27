@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk975571 = require("./975571.js"),
   Chunk652215 = require("./652215.js"),
@@ -49,12 +49,12 @@ function p(e) {
     className: t
   } = e, [n, a] = i.useState(null), [l, c] = i.useState(null);
   return (0, r.jsxs)("div", {
-    className: s()(d.iE, t),
-    children: [(0, r.jsx)(o.Heading, {
+    className: o()(d.iE, t),
+    children: [(0, r.jsx)(s.Heading, {
       className: d.R_,
       variant: "heading-xxl/semibold",
       children: u.intl.string(u.t.HPJ6Nj)
-    }), (0, r.jsx)(o.hKd, {
+    }), (0, r.jsx)(s.hKd, {
       size: 32
     }), (0, r.jsx)("ul", {
       className: d.p_,
@@ -62,9 +62,9 @@ function p(e) {
         let i = n === t,
           u = l === t,
           f = i || u ? "text-default" : "text-muted";
-        return (0, r.jsxs)(o.DUT, {
+        return (0, r.jsxs)(s.DUT, {
           tag: "li",
-          className: s()(d.Aw, {
+          className: o()(d.Aw, {
             [d.$K]: i
           }),
           onClick: () => a(e => e === t ? null : t),
@@ -72,21 +72,21 @@ function p(e) {
           onMouseLeave: () => c(null),
           children: [(0, r.jsxs)("div", {
             className: d.k7,
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(s.Text, {
               className: d.b1,
               color: f,
               variant: "heading-md/semibold",
               tag: "span",
               children: e.getQuestion()
-            }), (0, r.jsx)(o.abt, {
+            }), (0, r.jsx)(s.abt, {
               size: "sm",
-              color: o.LU0.colors.INTERACTIVE_ICON_DEFAULT,
+              color: s.LU0.colors.INTERACTIVE_ICON_DEFAULT,
               className: d.q4,
               style: {
                 transform: i ? "rotate(180deg)" : "rotate(0deg)"
               }
             })]
-          }), i && (0, r.jsx)(o.Text, {
+          }), i && (0, r.jsx)(s.Text, {
             className: d.ZF,
             color: "text-muted",
             variant: "text-sm/medium",

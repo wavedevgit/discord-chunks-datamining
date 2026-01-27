@@ -56,12 +56,12 @@ function m(e, t) {
       i = false,
       a = true;
     try {
-      for (var s, o = e[Symbol.iterator](); !(r = (s = o.next()).done) && (n.push(s.value), !t || n.length !== t); r = true);
+      for (var o, s = e[Symbol.iterator](); !(r = (o = s.next()).done) && (n.push(o.value), !t || n.length !== t); r = true);
     } catch (e) {
       i = true, a = e
     } finally {
       try {
-        r || null == o.return || o.return()
+        r || null == s.return || s.return()
       } finally {
         if (i) throw a
       }
@@ -77,9 +77,9 @@ function g(e) {
 function E(e) {
   var t = (0, a.Q)().toString();
   switch (e) {
-    case s.z.SOURCE:
+    case o.z.SOURCE:
       return "S".concat(t);
-    case s.z.TARGET:
+    case o.z.TARGET:
       return "T".concat(t);
     default:
       throw Error("Unknown Handler Role: ".concat(e))
@@ -89,9 +89,9 @@ function E(e) {
 function y(e) {
   switch (e[0]) {
     case "S":
-      return s.z.SOURCE;
+      return o.z.SOURCE;
     case "T":
-      return s.z.TARGET;
+      return o.z.TARGET;
     default:
       (0, r.V)(false, "Cannot parse handler ID: ".concat(e))
   }
@@ -115,15 +115,15 @@ var O = function() {
   return d(e, [{
     key: "addSource",
     value: function(e, t) {
-      (0, o.v2)(e), (0, o.Mv)(t);
-      var n = this.addHandler(s.z.SOURCE, e, t);
+      (0, s.v2)(e), (0, s.Mv)(t);
+      var n = this.addHandler(o.z.SOURCE, e, t);
       return this.store.dispatch((0, i.pM)(n)), n
     }
   }, {
     key: "addTarget",
     value: function(e, t) {
-      (0, o.v2)(e, true), (0, o.kV)(t);
-      var n = this.addHandler(s.z.TARGET, e, t);
+      (0, s.v2)(e, true), (0, s.kV)(t);
+      var n = this.addHandler(o.z.TARGET, e, t);
       return this.store.dispatch((0, i.z9)(n)), n
     }
   }, {
@@ -155,12 +155,12 @@ var O = function() {
   }, {
     key: "isSourceId",
     value: function(e) {
-      return y(e) === s.z.SOURCE
+      return y(e) === o.z.SOURCE
     }
   }, {
     key: "isTargetId",
     value: function(e) {
-      return y(e) === s.z.TARGET
+      return y(e) === o.z.TARGET
     }
   }, {
     key: "removeSource",
@@ -190,7 +190,7 @@ var O = function() {
     key: "addHandler",
     value: function(e, t, n) {
       var r = E(e);
-      return this.types.set(r, t), e === s.z.SOURCE ? this.dragSources.set(r, n) : e === s.z.TARGET && this.dropTargets.set(r, n), r
+      return this.types.set(r, t), e === o.z.SOURCE ? this.dragSources.set(r, n) : e === o.z.TARGET && this.dropTargets.set(r, n), r
     }
   }]), e
 }()

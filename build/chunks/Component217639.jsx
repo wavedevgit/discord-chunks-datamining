@@ -47,7 +47,7 @@ let g = function(e) {
             className: m.qZ
           })
         })]
-      }), e.tier === t.premiumTier && (0, r.jsx)(o.Text, {
+      }), e.tier === t.premiumTier && (0, r.jsx)(s.Text, {
         className: m._E,
         tag: "div",
         variant: "text-xs/semibold",
@@ -55,14 +55,14 @@ let g = function(e) {
         children: h.intl.string(h.t["9JbE3J"])
       }), (0, r.jsxs)("div", {
         className: m.Oj,
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(s.Heading, {
           className: m.Xk,
           variant: "heading-xxl/semibold",
           color: "always-white",
           children: (0, d.gb)(e.tier, {
             useLevels: false
           })
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
           className: m.$T,
           variant: "text-md/normal",
           color: "always-white",
@@ -76,13 +76,13 @@ let g = function(e) {
           let n = (0, f.X)(e.perkIcon);
           return null == e.predicate || e.predicate() ? (0, r.jsxs)("li", {
             className: m.de,
-            children: [(0, r.jsxs)(o.Text, {
+            children: [(0, r.jsxs)(s.Text, {
               className: m.kt,
               variant: "text-md/normal",
               color: "always-white",
               children: [(0, r.jsx)(n, {
                 className: m.Kd,
-                color: s.A.colors.WHITE
+                color: o.A.colors.WHITE
               }), e.getCopy()]
             }), e.isNew ? (0, r.jsx)(l.A, {
               className: m.WN,

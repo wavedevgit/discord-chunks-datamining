@@ -58,12 +58,12 @@ function m(e) {
     messageId: n,
     content: r,
     source: i
-  } = e, a = l.D_.getSetting(), c = o.Ay.unparse(r, t);
+  } = e, a = l.D_.getSetting(), c = s.Ay.unparse(r, t);
   _[t] = {
     channelId: t,
     messageId: n,
     textValue: c,
-    richValue: (0, s.x7)(a ? c : r)
+    richValue: (0, o.x7)(a ? c : r)
   }, h[t] = i
 }
 

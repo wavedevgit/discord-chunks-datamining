@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -42,7 +42,7 @@ function o(e, t) {
 }
 
 function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,15 +72,15 @@ function d(e) {
     width: t = 12,
     height: n = 12,
     color: a = "currentColor",
-    foreground: o
+    foreground: s
   } = e, u = c(e, ["width", "height", "color", "foreground"]);
-  return (0, r.jsx)("svg", l(s({}, (0, i.A)(u)), {
+  return (0, r.jsx)("svg", l(o({}, (0, i.A)(u)), {
     width: t,
     height: n,
     viewBox: "0 0 12 12",
     children: (0, r.jsxs)("g", {
       fill: a,
-      className: o,
+      className: s,
       fillRule: "evenodd",
       children: [(0, r.jsx)("path", {
         d: "M5,3 C5,3 5,6.1325704 5,6.48601043 C5,6.83945045 5.18485201,7 5.49021559,7 L9,7 L9,6 L8,6 L8,5 L7,5 L7,4 L6,4 L6,3 L5,3 Z",

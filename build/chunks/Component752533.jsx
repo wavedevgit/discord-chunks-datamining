@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 752533, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 752533, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Bs: () => b,
-  MT: () => E,
+  Bs: () => h,
+  MT: () => A,
   U4: () => g,
-  XN: () => O,
-  YF: () => y
+  XN: () => b,
+  YF: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,78 +18,73 @@ var Chunk627968 = require("./627968.js"),
   Chunk519412 = require("./519412.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk75717 = require("./75717.js");
-
-function _(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function h(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      _(e, t, n[t])
-    })
-  }
-  return e
-}
 let m = e => {
     let {
       user: t,
       isOwnUser: n,
-      label: a,
-      removeButton: o,
-      isFaded: d
+      label: l,
+      removeButton: a,
+      isFaded: u
     } = e, {
-      avatarSrc: _,
-      eventHandlers: m
+      avatarSrc: m,
+      eventHandlers: g
     } = (0, c.A)({
       userId: null == t ? true : t.id,
-      size: l._3J.SIZE_24
-    }), g = (0, u.$3)(t), [E, y] = i.useState(false);
+      size: o._3J.SIZE_24
+    }), A = (0, d.$3)(t), [f, h] = i.useState(false);
     return (0, r.jsxs)("div", {
       className: s()(p.kL, {
-        [p.RE]: null != o
+        [p.RE]: null != a
       }),
-      onMouseEnter: () => y(true),
-      onMouseLeave: () => y(false),
+      onMouseEnter: () => h(true),
+      onMouseLeave: () => h(false),
       children: [(0, r.jsxs)("div", {
         className: s()(p.TT, {
-          [p.zj]: d
+          [p.zj]: u
         }),
-        children: [(0, r.jsx)(l.euF, h({
+        children: [(0, r.jsx)(o.euF, function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({
           className: p.my,
-          src: _,
-          "aria-label": g,
-          size: l._3J.SIZE_24
-        }, m)), (0, r.jsxs)(l.Text, {
+          src: m,
+          "aria-label": A,
+          size: o._3J.SIZE_24
+        }, g)), (0, r.jsxs)(o.Text, {
           className: p.Xh,
           variant: "text-sm/medium",
           color: "text-strong",
-          children: [g, !!n && " (".concat(f.intl.string(f.t.LuZzxn), ")")]
-        }), null != a && (0, r.jsxs)(l.Text, {
+          children: [A, !!n && " (".concat(_.intl.string(_.t.LuZzxn), ")")]
+        }), null != l && (0, r.jsxs)(o.Text, {
           className: p.Pf,
           variant: "text-sm/medium",
           color: "text-subtle",
           children: [(0, r.jsx)("span", {
             className: p.me,
             children: "\xb7"
-          }), a]
+          }), l]
         })]
-      }), null != o && E && (0, r.jsx)("div", {
+      }), null != a && f && (0, r.jsx)("div", {
         className: p.dM,
-        children: (0, r.jsx)(l.QWc, {
+        children: (0, r.jsx)(o.QWc, {
           textVariant: "text-sm/medium",
           variant: "secondary",
-          text: o.label,
-          onClick: o.onRemove
+          text: a.label,
+          onClick: a.onRemove
         })
       })]
     })
@@ -103,24 +97,24 @@ let m = e => {
     return (0, r.jsx)(m, {
       user: t,
       isOwnUser: n,
-      label: f.intl.string(d.default.vc2xys)
+      label: _.intl.string(u.default.vc2xys)
     })
   },
-  E = e => {
+  A = e => {
     let {
       user: t,
       onRemove: n
     } = e;
     return (0, r.jsx)(m, {
       user: t,
-      label: f.intl.string(d.default.mnt50A),
+      label: _.intl.string(u.default.mnt50A),
       removeButton: {
         onRemove: n,
-        label: f.intl.string(f.t.N86XcP)
+        label: _.intl.string(_.t.N86XcP)
       }
     })
   },
-  y = e => {
+  f = e => {
     let {
       user: t,
       isOwnUser: n
@@ -128,29 +122,29 @@ let m = e => {
     return (0, r.jsx)(m, {
       user: t,
       isOwnUser: n,
-      label: f.intl.string(d.default.mnt50A)
+      label: _.intl.string(u.default.mnt50A)
     })
   },
-  b = e => {
+  h = e => {
     let {
       user: t,
       onRemove: n
     } = e;
     return (0, r.jsx)(m, {
       user: t,
-      label: f.intl.string(d.default["1RH5t9"]),
+      label: _.intl.string(u.default["1RH5t9"]),
       isFaded: true,
       removeButton: {
         onRemove: n,
-        label: f.intl.string(d.default["2blqtw"])
+        label: _.intl.string(u.default["2blqtw"])
       }
     })
   },
-  O = e => {
+  b = e => {
     let {
       onInvite: t,
       canInvite: n
-    } = e, [a, c] = i.useState(false);
+    } = e, [l, c] = i.useState(false);
     return (0, r.jsxs)("div", {
       className: s()(p.kL, {
         [p.RE]: n
@@ -161,22 +155,22 @@ let m = e => {
         className: p.TT,
         children: [(0, r.jsx)("div", {
           className: s()(p.vG, p.my),
-          children: (0, r.jsx)(l.nys, {
+          children: (0, r.jsx)(o.nys, {
             size: "xxs",
-            color: o.A.colors.ICON_SUBTLE
+            color: a.A.colors.ICON_SUBTLE
           })
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: p.Xh,
           variant: "text-sm/medium",
           color: "text-strong",
-          children: f.intl.string(d.default["/x7DVG"])
+          children: _.intl.string(u.default["/x7DVG"])
         })]
-      }), a && n && (0, r.jsx)("div", {
+      }), l && n && (0, r.jsx)("div", {
         className: p.dM,
-        children: (0, r.jsx)(l.QWc, {
+        children: (0, r.jsx)(o.QWc, {
           textVariant: "text-sm/medium",
           variant: "secondary",
-          text: f.intl.string(d.default.O15JWp),
+          text: _.intl.string(u.default.O15JWp),
           onClick: t
         })
       })]

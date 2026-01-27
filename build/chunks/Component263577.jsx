@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk990078 = require("./990078.jsx"),
   Chunk582754 = require("./582754.js"),
   Chunk397927 = require("./397927.js"),
@@ -34,7 +34,7 @@ function p(e) {
     style: {
       maxWidth: y
     },
-    className: s()(f.f, p)
+    className: o()(f.f, p)
   });
   let S = "height" === a ? {
     maxWidth: y,
@@ -43,13 +43,13 @@ function p(e) {
     maxWidth: y,
     minHeight: y
   };
-  return (0, r.jsx)(o.m, {
+  return (0, r.jsx)(s.m, {
     "aria-label": _,
     __unsupportedReactNodeAsText: _,
     shouldShow: g,
     children: (0, r.jsx)("img", {
       style: S,
-      className: s()(f.f, p),
+      className: o()(f.f, p),
       src: b && null != h ? h : t,
       "aria-hidden": m,
       alt: null != _ ? _ : m ? true : d.intl.string(d.t["2B/phM"]),

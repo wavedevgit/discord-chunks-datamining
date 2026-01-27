@@ -8,7 +8,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk554352 = require("./554352.js"),
   Chunk418034 = require("./418034.js"),
   Chunk542362 = require("./542362.js"),
-  o = function() {},
+  s = function() {},
   l = function() {
     return Promise.resolve(null)
   },
@@ -49,7 +49,7 @@ function u(e) {
         }])
       }
     }, [n, d, h, p, A]),
-    T = (0, s.E)(_ || E, b, S),
+    T = (0, o.E)(_ || E, b, S),
     C = T.state,
     N = T.styles,
     w = T.forceUpdate,
@@ -65,7 +65,7 @@ function u(e) {
           style: N.arrow,
           ref: I
         },
-        forceUpdate: w || o,
+        forceUpdate: w || s,
         update: R || l
       }
     }, [O, I, n, C, N, R, w]);

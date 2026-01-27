@@ -107,7 +107,7 @@ function g(e) {
   return e.ctaConfig.link
 }
 let E = (e, t) => {
-  (0, s.Y5)({
+  (0, o.Y5)({
     questId: e,
     questContent: t.content,
     questContentCTA: t.ctaContent,
@@ -127,5 +127,5 @@ let b = e => {
     playerState: n,
     pauseReason: r
   } = e;
-  return t ? n === o.Q6.PAUSED && r === a.Yg.LOST_FOCUS ? c.intl.string(c.t["U7Xrb+"]) : null : (0, i.isWeb)() ? c.intl.string(c.t["E1du/q"]) : c.intl.string(c.t["rStN/7"])
+  return t ? n === s.Q6.PAUSED && r === a.Yg.LOST_FOCUS ? c.intl.string(c.t["U7Xrb+"]) : null : (0, i.isWeb)() ? c.intl.string(c.t["E1du/q"]) : c.intl.string(c.t["rStN/7"])
 }

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 117178, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 117178, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk837921 = require("./837921.js"),
   Chunk650583 = require("./650583.js");
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 let p = Chunk723702.isPlatformEmbedded && null != Chunk837921.Ay.getDiscordUtils().inputCaptureRegisterElement;
-class _ extends Chunk64700.PureComponent {
+class m extends Chunk64700.PureComponent {
   componentDidMount() {
     this._mounted = true
   }
@@ -44,7 +43,7 @@ class _ extends Chunk64700.PureComponent {
     } = this.state, {
       onChange: n
     } = this.props;
-    t === l.E.RECORDING && (null != n && n(e), this.setState({
+    t === o.E.RECORDING && (null != n && n(e), this.setState({
       codes: e
     }))
   }
@@ -54,10 +53,10 @@ class _ extends Chunk64700.PureComponent {
         mode: i
       } = this.state,
       {
-        disabled: a
+        disabled: l
       } = this.props;
-    return p ? (t = u.Ay.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : c.isPlatformEmbedded || (e = this.handleComboKeys), (0, r.jsx)(l.A, {
-      disabled: a,
+    return p ? (t = d.Ay.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : c.isPlatformEmbedded || (e = this.handleComboKeys), (0, r.jsx)(o.A, {
+      disabled: l,
       value: n,
       mode: i,
       onClick: this.toggleRecordMode,
@@ -67,32 +66,32 @@ class _ extends Chunk64700.PureComponent {
     })
   }
   constructor(e) {
-    super(e), f(this, "_input", true), f(this, "gs", true), f(this, "_mounted", false), f(this, "recordStart", () => {
-      c.isPlatformEmbedded && !p && (this.gs = new o.A, this.gs.on("change", this.handleGSChange)), this.setState({
-        mode: l.E.RECORDING
+    super(e), _(this, "_input", true), _(this, "gs", true), _(this, "_mounted", false), _(this, "recordStart", () => {
+      c.isPlatformEmbedded && !p && (this.gs = new a.A, this.gs.on("change", this.handleGSChange)), this.setState({
+        mode: o.E.RECORDING
       })
-    }), f(this, "recordEnd", () => {
+    }), _(this, "recordEnd", () => {
       this.cleanUp(), this.setState({
-        mode: l.E.DEFAULT
+        mode: o.E.DEFAULT
       })
-    }), f(this, "toggleRecordMode", () => {
-      this.state.mode === l.E.DEFAULT ? this.recordStart() : this.recordEnd()
-    }), f(this, "handleComboKeys", (e, t, n) => {
+    }), _(this, "toggleRecordMode", () => {
+      this.state.mode === o.E.DEFAULT ? this.recordStart() : this.recordEnd()
+    }), _(this, "handleComboKeys", (e, t, n) => {
       if (n.preventDefault(), "keydown" === n.type) {
-        let e = t.map(e => [d.zY.KEYBOARD_KEY, s()(e), d.g$.BROWSER]),
+        let e = t.map(e => [u.zY.KEYBOARD_KEY, s()(e), u.g$.BROWSER]),
           {
             keyCode: r
           } = n;
         null == e.find(e => {
           let [, t] = e;
           return r === t
-        }) && e.push([d.zY.KEYBOARD_KEY, r, d.g$.BROWSER]), this.handleComboChange(e)
+        }) && e.push([u.zY.KEYBOARD_KEY, r, u.g$.BROWSER]), this.handleComboChange(e)
       }
-    }), f(this, "handleGSChange", e => {
+    }), _(this, "handleGSChange", e => {
       if (false === this._mounted) return;
       let t = [...e.combo];
       this.handleComboChange(t)
-    }), f(this, "handleNativeChange", e => {
+    }), _(this, "handleNativeChange", e => {
       e.length > 0 && this.handleComboChange(e), this.recordEnd()
     });
     const {
@@ -100,8 +99,8 @@ class _ extends Chunk64700.PureComponent {
     } = e;
     this.state = {
       codes: t,
-      mode: l.E.DEFAULT
+      mode: o.E.DEFAULT
     }
   }
 }
-let h = _
+let g = m

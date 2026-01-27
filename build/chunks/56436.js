@@ -68,7 +68,7 @@ function f(e, t) {
       null == (n = v.current) || n.insertAutocomplete(e, null != t ? t : e, r)
     },
     replaceText: (e, t) => {
-      S(e, null != t ? t : (0, o.x7)(e))
+      S(e, null != t ? t : (0, s.x7)(e))
     },
     insertAutocompleteInput: e => {
       var t;
@@ -84,7 +84,7 @@ function f(e, t) {
     }
   };
   if (null != i) {
-    let e = (0, s.XM)(i);
+    let e = (0, o.XM)(i);
     e.canMentionChannels && (w.mentions.channel = u.xS.ALLOW_SELECTABLE), e.canMentionEveryone && (w.mentions.global = e.canMentionHere ? u.VN.ALLOW_EVERYONE_OR_HERE : u.VN.ALLOW_EVERYONE), e.canMentionRoles && (w.mentions.role = e.canMentionNonMentionableRoles ? u.eP.ALLOW_ALL : u.eP.ALLOW_MENTIONABLE), e.canMentionUsers && (w.mentions.user = e.canMentionAnyGuildUser ? u.Vf.ALLOW_GUILD : u.Vf.ALLOW_CHANNEL), e.canMentionOtherGlobals && (w.mentions.otherGlobals = true), w.hideMentionDescription = true
   } else d && (w.mentions.channel = u.xS.ALLOW_SELECTABLE), c && (w.mentions.role = u.eP.ALLOW_MENTIONABLE), l && (w.mentions.user = u.Vf.ALLOW_CHANNEL), f && (w.mentions.global = u.VN.ALLOW_EVERYONE_OR_HERE), p && (w.mentions.otherGlobals = true);
   return (null == (r = b.commands) ? true : r.enabled) && (_ ? w.commands = h ? u.Ze.NEW_TEXT_ONLY : u.Ze.NEW : w.commands = u.Ze.OLD_BUILT_INS), null != i && null != i.channelTypes && (w.allowedChannelTypes = i.channelTypes), w
@@ -97,13 +97,13 @@ function p(e) {
     guild: r,
     query: i,
     isAtStart: a,
-    options: s
-  } = e, o = c.a[t];
-  if (null != o.sentinel) {
-    if (!i.startsWith(o.sentinel)) returnfalse;
-    i = i.substring(o.sentinel.length)
+    options: o
+  } = e, s = c.a[t];
+  if (null != s.sentinel) {
+    if (!i.startsWith(s.sentinel)) returnfalse;
+    i = i.substring(s.sentinel.length)
   }
-  return null == o.matches || !!o.matches(n, r, i, a, s)
+  return null == s.matches || !!s.matches(n, r, i, a, o)
 }
 
 function _(e) {
@@ -112,8 +112,8 @@ function _(e) {
     guild: n,
     options: r,
     currentWord: a,
-    currentWordIsAtStart: s,
-    textValue: o,
+    currentWordIsAtStart: o,
+    textValue: s,
     optionText: f,
     parentAutocompleteInputType: _,
     parentAutocompleteInputValue: h
@@ -139,14 +139,14 @@ function _(e) {
               type: e,
               channel: t,
               guild: n,
-              query: o,
+              query: s,
               isAtStart: false,
               options: r
             })) {
             m = {
               type: e,
               typeInfo: A,
-              query: o
+              query: s
             };
             break
           }
@@ -180,14 +180,14 @@ function _(e) {
             type: e,
             channel: t,
             guild: n,
-            query: o,
+            query: s,
             isAtStart: true,
             options: r
           })) {
           m = {
             type: e,
             typeInfo: A,
-            query: o.substring(null != (g = null == (E = A.sentinel) ? true : E.length) ? g : 0)
+            query: s.substring(null != (g = null == (E = A.sentinel) ? true : E.length) ? g : 0)
           };
           break
         }
@@ -196,14 +196,14 @@ function _(e) {
             type: e,
             channel: t,
             guild: n,
-            query: o,
-            isAtStart: s,
+            query: s,
+            isAtStart: o,
             options: r
           })) {
           m = {
             type: e,
             typeInfo: A,
-            query: o
+            query: s
           };
           break
         }
@@ -213,7 +213,7 @@ function _(e) {
             channel: t,
             guild: n,
             query: a,
-            isAtStart: s,
+            isAtStart: o,
             options: r
           })) {
           m = {
@@ -228,7 +228,7 @@ function _(e) {
           channel: t,
           guild: n,
           query: a,
-          isAtStart: s,
+          isAtStart: o,
           options: r
         })) {
         m = {

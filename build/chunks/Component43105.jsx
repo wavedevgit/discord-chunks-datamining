@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk964892 = require("./964892.jsx"),
   Chunk208756 = require("./208756.jsx"),
@@ -119,10 +119,10 @@ function b(e) {
         onClick: R,
         variant: null != v ? "color-mix" : true
       }), null != m && (0, r.jsx)("div", {
-        className: s()(p.graphic, {
+        className: o()(p.graphic, {
           [p["graphic--".concat(y)]]: null != y
         }),
-        children: (0, r.jsx)(o.vYh, g(h({}, m), {
+        children: (0, r.jsx)(s.vYh, g(h({}, m), {
           aspectRatio: null != (t = m.aspectRatio) ? t : "sm" === y ? "2/1" : "16/9"
         }))
       }), (0, r.jsx)(f.D, {

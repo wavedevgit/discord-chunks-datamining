@@ -2,13 +2,13 @@
 /** chunk id: 274593, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk255438 = require("./255438.js"),
   Chunk613057 = require("./613057.js"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class s {
   get displayMessage() {
     if (null == this.code) return a.intl.string(a.t["5NMPSS"]);
     let {
@@ -26,14 +26,14 @@ class o {
       case i.Hi.DISK_LOW:
         let {
           available: t, required: n
-        } = this.context, s = (0, r.Xq)(t, {
+        } = this.context, o = (0, r.Xq)(t, {
           useKibibytes: true
-        }), o = (0, r.Xq)(n, {
+        }), s = (0, r.Xq)(n, {
           useKibibytes: true
         });
         return a.intl.formatToPlainString(a.t["2DR5dl"], {
-          required: o,
-          available: s
+          required: s,
+          available: o
         });
       case i.Hi.POST_INSTALL_FAILED:
         let {
@@ -75,6 +75,6 @@ class o {
     }
   }
   constructor(e) {
-    s(this, "raw", true), s(this, "context", true), s(this, "code", true), s(this, "uuid", true), s(this, "applicationId", true), s(this, "branchId", true), this.raw = e, null != e.code && (this.code = e.code), null != e.uuid && (this.uuid = e.uuid), null != e.application_id && (this.applicationId = e.application_id), null != e.branch_id && (this.branchId = e.branch_id), null != e.context ? this.context = e.context : this.context = {}
+    o(this, "raw", true), o(this, "context", true), o(this, "code", true), o(this, "uuid", true), o(this, "applicationId", true), o(this, "branchId", true), this.raw = e, null != e.code && (this.code = e.code), null != e.uuid && (this.uuid = e.uuid), null != e.application_id && (this.applicationId = e.application_id), null != e.branch_id && (this.branchId = e.branch_id), null != e.context ? this.context = e.context : this.context = {}
   }
 }

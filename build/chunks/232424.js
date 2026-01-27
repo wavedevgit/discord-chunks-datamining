@@ -27,11 +27,11 @@ var Chunk860511 = require("./860511.js"),
   });
 h("set", function(e) {
   _(this);
-  var t = o(arguments.length > 1 ? arguments[1] : true, 1),
+  var t = s(arguments.length > 1 ? arguments[1] : true, 1),
     n = l(e);
   if (m) return i(p, this, n, t);
   var r = this.length,
-    a = s(n),
+    a = o(n),
     c = 0;
   if (a + t > r) throw new u("Wrong length");
   for (; c < a;) this[t + c] = n[c++]

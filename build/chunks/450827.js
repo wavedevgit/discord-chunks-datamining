@@ -39,7 +39,7 @@ function O(e) {
     username: "0" !== e.discriminator ? "".concat(e.username, "#").concat(e.discriminator) : e.username,
     nicknames: {}
   };
-  return null != g.Ay.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = true), e instanceof c.A ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = s.Lt(null != (t = e.flags) ? t : 0, E.nhx.PROVISIONAL_ACCOUNT) : r.isProvisional = false, f.A.isFriend(e.id) && (r.isFriend = true, r.friendNickname = f.A.getNickname(e.id)), e instanceof c.A ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = s.Lt(null != (n = e.flags) ? n : 0, E.nhx.STAFF) : r.isStaff = false, r
+  return null != g.Ay.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = true), e instanceof c.A ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = o.Lt(null != (t = e.flags) ? t : 0, E.nhx.PROVISIONAL_ACCOUNT) : r.isProvisional = false, f.A.isFriend(e.id) && (r.isFriend = true, r.friendNickname = f.A.getNickname(e.id)), e instanceof c.A ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = o.Lt(null != (n = e.flags) ? n : 0, E.nhx.STAFF) : r.isStaff = false, r
 }
 
 function v(e, t, n) {
@@ -71,15 +71,15 @@ function S(e) {
   let {
     message: n,
     nicknameContextId: r
-  } = e, i = u.A.getChannel(n.channel_id), a = null != r ? r : (null == i ? true : i.isPrivate()) === true ? null == i ? true : i.id : null == i ? true : i.getGuildId(), s = [];
+  } = e, i = u.A.getChannel(n.channel_id), a = null != r ? r : (null == i ? true : i.isPrivate()) === true ? null == i ? true : i.id : null == i ? true : i.getGuildId(), o = [];
   if (null != n.author) {
     let e = O(n.author);
-    null != e && (s.push(e), null != a && v(e, a))
+    null != e && (o.push(e), null != a && v(e, a))
   }
   return null == (t = n.mentions) || t.forEach(e => {
     let t = O(e);
-    null != t && (s.push(t), null != a && v(t, a))
-  }), s
+    null != t && (o.push(t), null != a && v(t, a))
+  }), o
 }
 class T {
   setLimit(e) {
@@ -244,9 +244,9 @@ class C extends Chunk439372.A {
         for (let e in r)
           for (let t in r[e]) {
             var i, a;
-            let s = n[t],
-              o = null != (i = null == (a = r[e][t]) ? true : a.nick) ? i : g.Ay.getGlobalName(s);
-            null != s && v(s, e, o)
+            let o = n[t],
+              s = null != (i = null == (a = r[e][t]) ? true : a.nick) ? i : g.Ay.getGlobalName(o);
+            null != o && v(o, e, s)
           }
         this.updateUsers(Object.values(n), "connection_open")
       }, 3e3)

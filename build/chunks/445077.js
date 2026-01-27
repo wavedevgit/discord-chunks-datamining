@@ -12,7 +12,7 @@ var Chunk562465 = require("./562465.js"),
 
 function l(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  return s.A.isFullServerPreview(e) ? void(0, a.Z$)(e, {
+  return o.A.isFullServerPreview(e) ? void(0, a.Z$)(e, {
     memberOptions: t
   }) : (i.h.dispatch({
     type: "GUILD_MEMBER_UPDATE_LOCAL",
@@ -20,7 +20,7 @@ function l(e, t) {
     roles: t.roles,
     flags: t.flags
   }), r.Bo.patch({
-    url: o.Rsh.SET_GUILD_MEMBER(e),
+    url: s.Rsh.SET_GUILD_MEMBER(e),
     body: t,
     oldFormErrors: !!n || true,
     rejectWithError: false

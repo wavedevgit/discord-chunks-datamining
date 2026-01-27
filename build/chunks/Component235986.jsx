@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk538640 = require("./538640.js"),
   Chunk20976 = require("./20976.js");
 
@@ -112,7 +112,7 @@ let h = {
         flexGrow: _,
         flexBasis: y
       }, b),
-      className: s()(o.Uu, i, a, l, c, n)
+      className: o()(s.Uu, i, a, l, c, n)
     }, O), {
       children: t
     }))
@@ -127,7 +127,7 @@ y.Child = e => {
     style: d,
     wrap: _ = false
   } = e, h = p(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]), m = u({
-    className: n = null != n ? n : o.Gu,
+    className: n = null != n ? n : s.Gu,
     style: u({
       flexGrow: l,
       flexShrink: a,
@@ -136,7 +136,7 @@ y.Child = e => {
   }, h);
   if (!_ && "string" != typeof t && 1 === i.Children.count(t)) {
     let e = i.Children.only(t);
-    return m.style = u({}, m.style, e.props.style), m.className = s()(e.props.className, n), i.cloneElement(e, m)
+    return m.style = u({}, m.style, e.props.style), m.className = o()(e.props.className, n), i.cloneElement(e, m)
   }
   return (0, r.jsx)("div", f(u({}, m), {
     children: t

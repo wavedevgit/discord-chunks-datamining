@@ -64,7 +64,7 @@ function h() {
       n = e.get("q");
     null != n && "" !== n && (t.query = n);
     let r = Number(e.get("category_id"));
-    Number.isInteger(r) && r !== o.lj && (t.categoryId = r.toString());
+    Number.isInteger(r) && r !== s.lj && (t.categoryId = r.toString());
     let i = Number(e.get("page"));
     return null != i && i > 1 && (t.page = i), t
   }
@@ -89,7 +89,7 @@ function h() {
       skuId: m
     } = null != (t = null == p ? true : p.params) ? t : {};
   if (null != p && null != _) {
-    let e = null == (n = s.A.getApplication(_)) ? true : n.name;
+    let e = null == (n = o.A.getApplication(_)) ? true : n.name;
     return {
       type: "application",
       applicationId: _,

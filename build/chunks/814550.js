@@ -2,27 +2,27 @@
 /** chunk id: 814550, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => s,
+  f: () => o,
   u: () => l
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
   Chunk860923 = require("./860923.js"),
-  s = function(e) {
+  o = function(e) {
     return e.IDLE = "idle", e.HEAD_TURN = "headTurn", e.HEAD_TURN_BACK = "headTurnBack", e.TALKING = "talking", e
   }({});
-let o = {
+let s = {
     idle: ["headTurnBack", "talking"],
     headTurn: ["idle", "talking"],
     headTurnBack: ["headTurn"],
     talking: ["idle", "headTurnBack"]
   },
   l = e => {
-    let [t, n] = r.useState("idle"), [s, l] = r.useState(), c = (0, a.A)(), u = r.useMemo(() => null == c ? true : c.characters[e], [c, e]), d = r.useCallback(() => {
-      if (null == u) return s;
+    let [t, n] = r.useState("idle"), [o, l] = r.useState(), c = (0, a.A)(), u = r.useMemo(() => null == c ? true : c.characters[e], [c, e]), d = r.useCallback(() => {
+      if (null == u) return o;
       let e = u[t];
       return (0, i.sample)(e)
-    }, [s, u, t]);
+    }, [o, u, t]);
     r.useEffect(() => {
       l(d())
     }, [c, e, d]), r.useEffect(() => {
@@ -36,11 +36,11 @@ let o = {
         for (; !n && r < e;) r += 1;
         return i
       },
-      p = e => e === t ? t : o[e].includes(t) ? (n(e), e) : t;
+      p = e => e === t ? t : s[e].includes(t) ? (n(e), e) : t;
     return {
       animationState: t,
       updateAnimationState: p,
-      asset: s,
+      asset: o,
       setAsset: l,
       sampleAsset: d,
       findAnimationTree: f,

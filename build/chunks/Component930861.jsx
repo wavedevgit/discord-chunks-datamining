@@ -9,7 +9,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk615300 = require("./615300.js"),
   Chunk421380 = require("./421380.js"),
   Chunk235986 = require("./235986.jsx"),
@@ -95,7 +95,7 @@ class v extends(r = Chunk64700.PureComponent) {
       } = e,
       a = g(e, ["className", "shineSize", "shinePaused"]);
     return (0, i.jsx)(l.A.div, m(_({}, a), {
-      className: o()(f.dj, t, {
+      className: s()(f.dj, t, {
         [f.EM]: r
       }),
       children: (0, i.jsx)(u.A, {
@@ -117,24 +117,24 @@ let A = e => {
     children: t,
     className: n,
     disabled: r,
-    submitting: s,
+    submitting: o,
     pauseAnimation: l,
     shineSize: u = "default",
     shinePaused: p,
     buttonShineClassName: h,
     onlyShineOnHover: E
-  } = e, y = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]), b = a.useRef(null), O = (0, d.M)(b), A = !r && !s && true !== l && (!E || O);
+  } = e, y = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]), b = a.useRef(null), O = (0, d.M)(b), A = !r && !o && true !== l && (!E || O);
   return (0, i.jsxs)(c.$n, m(_({
     "data-migration-pending": true,
     buttonRef: b
   }, y), {
-    className: o()(f.WE, n),
+    className: s()(f.WE, n),
     disabled: r,
-    submitting: s,
+    submitting: o,
     children: [t, A ? (0, i.jsx)(v, {
       "data-migration-pending": true,
       shinePaused: p,
-      className: o()(f.Qr, E ? f.PK : true, h),
+      className: s()(f.Qr, E ? f.PK : true, h),
       shineSize: u
     }) : null]
   }))

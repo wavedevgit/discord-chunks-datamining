@@ -3,21 +3,21 @@
 "use strict";
 require.d(exports, {
   L: () => l,
-  n: () => o
+  n: () => s
 });
 var Chunk371926 = require("./371926.js"),
   Chunk531684 = require("./531684.js");
 let a = "row-header-column-" + Math.random().toString(36).slice(2),
-  s = "row-header-column-" + Math.random().toString(36).slice(2);
-for (; a === s;) s = "row-header-column-" + Math.random().toString(36).slice(2);
+  o = "row-header-column-" + Math.random().toString(36).slice(2);
+for (; a === o;) o = "row-header-column-" + Math.random().toString(36).slice(2);
 
-function o(e, t) {
+function s(e, t) {
   if (0 === t.length) return [];
   let n = [],
     r = new Map;
-  for (let s of t) {
-    let t = s.parentKey,
-      o = [s];
+  for (let o of t) {
+    let t = o.parentKey,
+      s = [o];
     for (; t;) {
       let n = e.get(t);
       if (!n) break;
@@ -28,25 +28,25 @@ function o(e, t) {
           column: e,
           index: t
         } = r.get(n);
-        if (t > o.length) break;
-        for (let n = t; n < o.length; n++) e.splice(n, 0, null);
-        for (let t = o.length; t < e.length; t++) e[t] && r.has(e[t]) && (r.get(e[t]).index = t)
-      } else n.colSpan = 1, n.colspan = 1, o.push(n), r.set(n, {
-        column: o,
-        index: o.length - 1
+        if (t > s.length) break;
+        for (let n = t; n < s.length; n++) e.splice(n, 0, null);
+        for (let t = s.length; t < e.length; t++) e[t] && r.has(e[t]) && (r.get(e[t]).index = t)
+      } else n.colSpan = 1, n.colspan = 1, s.push(n), r.set(n, {
+        column: s,
+        index: s.length - 1
       });
       t = n.parentKey
     }
-    n.push(o), s.index = n.length - 1
+    n.push(s), o.index = n.length - 1
   }
-  let s = Math.max(...n.map(e => e.length)),
-    o = Array(s).fill(0).map(() => []),
+  let o = Math.max(...n.map(e => e.length)),
+    s = Array(o).fill(0).map(() => []),
     l = 0;
   for (let e of n) {
-    let t = s - 1;
+    let t = o - 1;
     for (let n of e) {
       if (n) {
-        let e = o[t],
+        let e = s[t],
           r = e.reduce((e, t) => {
             var n;
             return e + (null != (n = t.colSpan) ? n : 1)
@@ -74,7 +74,7 @@ function o(e, t) {
     l++
   }
   let c = 0;
-  for (let e of o) {
+  for (let e of s) {
     let n = e.reduce((e, t) => {
       var n;
       return e + (null != (n = t.colSpan) ? n : 1)
@@ -98,7 +98,7 @@ function o(e, t) {
     }
     c++
   }
-  return o.map((e, t) => ({
+  return s.map((e, t) => ({
     type: "headerrow",
     key: "headerrow-" + t,
     index: t,
@@ -188,7 +188,7 @@ class l extends Chunk531684.Z {
     if (null == n ? true : n.showDragButtons) {
       let e = {
         type: "column",
-        key: s,
+        key: o,
         value: null,
         textValue: "",
         level: 0,
@@ -219,7 +219,7 @@ class l extends Chunk531684.Z {
         for (let t of e.childNodes) d(t)
       };
     for (let t of e) d(t);
-    let f = o(u, l);
+    let f = s(u, l);
     if (f.forEach((e, t) => c.splice(t, 0, e)), super({
         columnCount: l.length,
         items: c,

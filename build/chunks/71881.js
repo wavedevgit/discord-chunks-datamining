@@ -37,7 +37,7 @@ module.exports = function(e) {
         keyword: ".PHONY"
       }
     },
-    s = {
+    o = {
       className: "section",
       begin: /^[^\s]+:/,
       end: /$/,
@@ -50,6 +50,6 @@ module.exports = function(e) {
       $pattern: /[\w-]+/,
       keyword: "define endef undefine ifdef ifndef ifeq ifneq else endif include -include sinclude override export unexport private vpath"
     },
-    contains: [e.HASH_COMMENT_MODE, t, n, r, i, a, s]
+    contains: [e.HASH_COMMENT_MODE, t, n, r, i, a, o]
   }
 }

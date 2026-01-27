@@ -9,7 +9,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk663675 = require("./663675.js"),
   Chunk621466 = require("./621466.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -70,7 +70,7 @@ function f(e, t) {
 
 function p(e) {
   e.removeAttribute("src"), Array.from(e.children).forEach(e => {
-    (0, s.vq)(e, HTMLSourceElement) && (e.removeAttribute("src"), e.removeAttribute("type")), (0, s.vq)(e, HTMLImageElement) && e.removeAttribute("src")
+    (0, o.vq)(e, HTMLSourceElement) && (e.removeAttribute("src"), e.removeAttribute("type")), (0, o.vq)(e, HTMLImageElement) && e.removeAttribute("src")
   });
   try {
     e.load()
@@ -80,17 +80,17 @@ let _ = e => {
     let {
       alt: t,
       externalRef: n,
-      autoPlay: s,
-      playOnHover: o,
+      autoPlay: o,
+      playOnHover: s,
       onPlayError: c,
       responsive: u,
       mediaLayoutType: f,
       useReducedMotion: _
-    } = e, h = d(e, ["alt", "externalRef", "autoPlay", "playOnHover", "onPlayError", "responsive", "mediaLayoutType", "useReducedMotion"]), m = !_ && !o && s, g = i.useRef(null);
+    } = e, h = d(e, ["alt", "externalRef", "autoPlay", "playOnHover", "onPlayError", "responsive", "mediaLayoutType", "useReducedMotion"]), m = !_ && !s && o, g = i.useRef(null);
 
     function E() {
       var e, t;
-      o && (null == g || null == (t = g.current) || null == (e = t.play()) || e.catch(e => {
+      s && (null == g || null == (t = g.current) || null == (e = t.play()) || e.catch(e => {
         if (null != c) c(e);
         else throw e
       }))
@@ -98,7 +98,7 @@ let _ = e => {
 
     function y() {
       var e;
-      o && (null == g || null == (e = g.current) || e.pause())
+      s && (null == g || null == (e = g.current) || e.pause())
     }
 
     function b() {

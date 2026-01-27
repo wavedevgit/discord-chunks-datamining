@@ -35,16 +35,16 @@ function v(e, t, n, r) {
     v = i()(e[c.indexOf(Math.min(...c))]),
     A = i()(e[c.indexOf(Math.max(...c))]),
     I = "linear-gradient(".concat(t, "deg, ").concat(a.join(", "), ")"),
-    S = (0, s.Mw)(r),
+    S = (0, o.Mw)(r),
     T = {
       light: i()(A).set("hsl.s", 1).set("hsl.l", d),
       dark: i()(v).set("hsl.s", 1).set("hsl.l", u)
     },
     C = 100 - n,
     N = "\n      --custom-theme-background: ".concat(I, ";\n      ", "--custom-background-gradient-chat-opacity-base-light", ": 0.95;\n      ", "--custom-background-gradient-highest-opacity-base-light", ": 1.0;\n      ", "--custom-background-gradient-opacity-mix-amount", ": ").concat(((f + p * C) / 100).toFixed(2), ";\n      ", "--custom-theme-border-color-amount", ": 5%;\n      "),
-    w = S ? "\n      ".concat(o.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(_ + h * C, "%;\n      ").concat(o.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(E, "%;\n    ") : "\n      ".concat(o.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(m + g * n, "%;\n      ").concat(o.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(y, "%;\n    "),
-    R = "\n      ".concat(o.RB.DARK_THEME_BASE_COLOR, ": ").concat(T.dark.css(), ";\n      ").concat(o.RB.DARK_THEME_BASE_COLOR_HSL, ": ").concat((0, o.FT)(T.dark), ";\n      ").concat(o.RB.DARK_THEME_TEXT_COLOR, ": ").concat(i()(v).set("hsl.l", ((100 - b * C) / 100).toFixed(2)).css(), ";\n    "),
-    P = "\n      ".concat(o.RB.LIGHT_THEME_BASE_COLOR, ": ").concat(T.light.css(), ";\n      ").concat(o.RB.LIGHT_THEME_BASE_COLOR_HSL, ": ").concat((0, o.FT)(T.light), ";\n      ").concat(o.RB.LIGHT_THEME_TEXT_COLOR, ": ").concat(i()(A).set("hsl.l", (O * C / 100).toFixed(2)).css(), ";\n    ");
+    w = S ? "\n      ".concat(s.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(_ + h * C, "%;\n      ").concat(s.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(E, "%;\n    ") : "\n      ".concat(s.RB.THEME_BASE_MIX_AMOUNT, ": ").concat(m + g * n, "%;\n      ").concat(s.RB.THEME_TEXT_MIX_AMOUNT, ": ").concat(y, "%;\n    "),
+    R = "\n      ".concat(s.RB.DARK_THEME_BASE_COLOR, ": ").concat(T.dark.css(), ";\n      ").concat(s.RB.DARK_THEME_BASE_COLOR_HSL, ": ").concat((0, s.FT)(T.dark), ";\n      ").concat(s.RB.DARK_THEME_TEXT_COLOR, ": ").concat(i()(v).set("hsl.l", ((100 - b * C) / 100).toFixed(2)).css(), ";\n    "),
+    P = "\n      ".concat(s.RB.LIGHT_THEME_BASE_COLOR, ": ").concat(T.light.css(), ";\n      ").concat(s.RB.LIGHT_THEME_BASE_COLOR_HSL, ": ").concat((0, s.FT)(T.light), ";\n      ").concat(s.RB.LIGHT_THEME_TEXT_COLOR, ": ").concat(i()(A).set("hsl.l", (O * C / 100).toFixed(2)).css(), ";\n    ");
   return ".".concat(l, " {\n      ").concat(N, "\n      ").concat(w, "\n      ").concat(R, "\n      ").concat(P, "\n      }")
 }
 
@@ -55,11 +55,11 @@ function A(e, t) {
     r = a.A.unsafe_rawColors[e.colors[e.colors.length - 1].token].resolve({
       saturation: 1
     }).hex(),
-    i = (0, o.Zk)({
+    i = (0, s.Zk)({
       enabled: true,
       primaryColor: n,
       secondaryColor: r,
-      isDarkTheme: (0, s.Mw)(e.theme)
+      isDarkTheme: (0, o.Mw)(e.theme)
     }),
     c = "\n      ".concat(Object.entries(i).map(e => {
       let [t, n] = e;

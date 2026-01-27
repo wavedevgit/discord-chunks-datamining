@@ -34,23 +34,23 @@ function A(e, t, n, r, i) {
     let a = h.A.getChannel(e);
     if (null == a) return;
     let {
-      command: s,
-      application: o
+      command: o,
+      application: s
     } = u.EW({
       channel: a,
       type: "channel"
     }, n, i);
-    if (null != s && s.untranslatedName === t) {
+    if (null != o && o.untranslatedName === t) {
       var l, f;
       y._.dispatch(b.jej.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       });
-      let t = null != o ? {
+      let t = null != s ? {
         type: d.Hf.APPLICATION,
-        id: o.id,
-        icon: o.icon,
-        name: null != (l = null == o || null == (f = o.bot) ? true : f.username) ? l : o.name,
-        application: o
+        id: s.id,
+        icon: s.icon,
+        name: null != (l = null == s || null == (f = s.bot) ? true : f.username) ? l : s.name,
+        application: s
       } : null;
       c.Gf({
         channelId: e,
@@ -58,13 +58,13 @@ function A(e, t, n, r, i) {
         section: null
       }), c.Gf({
         channelId: e,
-        command: s,
+        command: o,
         section: t,
         location: r
       })
     }
   };
-  "" !== m.A.getDraft(e, m.C.ChannelMessage) ? (0, s.A)({
+  "" !== m.A.getDraft(e, m.C.ChannelMessage) ? (0, o.A)({
     title: v.intl.string(v.t.pe26Cj),
     subtitle: v.intl.string(v.t["+awCIy"]),
     confirmText: v.intl.string(v.t.VkKicb),
@@ -81,8 +81,8 @@ function I(e) {
   var t;
   let {
     node: n,
-    stateKey: s,
-    children: o
+    stateKey: o,
+    children: s
   } = e, l = (0, a.bG)([h.A, E.A], () => {
     var e;
     return h.A.getChannel(null != (e = n.channelId) ? e : E.A.getChannelId())
@@ -111,9 +111,9 @@ function I(e) {
   return S ? (0, r.jsxs)(f.A, {
     role: "link",
     onClick: T,
-    children: ["/", o]
-  }, s) : (0, r.jsxs)("span", {
-    children: ["/", o]
+    children: ["/", s]
+  }, o) : (0, r.jsxs)("span", {
+    children: ["/", s]
   })
 }
 
@@ -122,12 +122,12 @@ function S(e) {
     commandId: t,
     commandName: n,
     commandDescription: i,
-    applicationId: s,
+    applicationId: o,
     onClick: c
   } = e, u = (0, a.bG)([E.A], () => E.A.getChannelId()), f = e => {
-    null == e || e.stopPropagation(), A(u, n, t, d.Oh.POPULAR_COMMANDS, s), null == c || c(t)
+    null == e || e.stopPropagation(), A(u, n, t, d.Oh.POPULAR_COMMANDS, o), null == c || c(t)
   };
-  return (0, r.jsx)(o.m, {
+  return (0, r.jsx)(s.m, {
     text: i,
     position: "top",
     children: (0, r.jsx)(l.Button, {

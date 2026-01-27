@@ -60,7 +60,7 @@ async function _(e) {
     url: d.Rsh.VIDEO_FILTER_ASSET(e.id),
     rejectWithError: false
   });
-  let t = (0, l.i)(o.default.getCurrentUser());
+  let t = (0, l.i)(s.default.getCurrentUser());
   (0, c.d1)(t) && t.id === e.id && h(null), i.h.dispatch({
     type: "VIDEO_FILTER_ASSET_DELETE_SUCCESS",
     videoFilterAsset: e
@@ -85,14 +85,14 @@ async function h(e) {
 }
 
 function m(e) {
-  s.A.isSupported() && i.h.dispatch({
+  o.A.isSupported() && i.h.dispatch({
     type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS",
     settings: e
   })
 }
 
 function g() {
-  s.A.isSupported() && i.h.dispatch({
+  o.A.isSupported() && i.h.dispatch({
     type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_START"
   })
 }

@@ -1,13 +1,13 @@
 /** Chunk was on 20601 **/
 /** chunk id: 338724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $x: () => j,
+  $x: () => p,
   Qg: () => v,
-  dy: () => p,
+  dy: () => b,
   he: () => _,
-  x$: () => b
+  x$: () => j
 }), require("./896048.js"), require("./492834.js"), require("./733351.js"), require("./228524.js");
-var l, Chunk64700 = require("./64700.js"),
+var r, Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk555337 = require("./555337.js"),
   Chunk306846 = require("./306846.js"),
@@ -20,66 +20,66 @@ var l, Chunk64700 = require("./64700.js"),
   Chunk709977 = require("./709977.js"),
   Chunk890620 = require("./890620.js"),
   Chunk985018 = require("./985018.jsx"),
-  v = ((l = {})[l.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", l[l.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", l[l.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", l);
+  v = ((r = {})[r.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", r[r.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", r[r.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", r);
 
-function j(e, t, n) {
-  let [l, s] = r.useState(false), c = (0, i.bG)([m.A], () => m.A.get(e)), u = (0, i.bG)([a.A], () => a.A.pendingState);
-  r.useEffect(() => {
+function p(e, t, n) {
+  let [r, s] = l.useState(false), c = (0, i.bG)([m.A], () => m.A.get(e)), u = (0, i.bG)([a.A], () => a.A.pendingState);
+  l.useEffect(() => {
     t || d.Ay.fetchVerificationForm(e, n).finally(() => s(true))
   }, [e, n, t]);
-  let x = r.useMemo(() => {
+  let h = l.useMemo(() => {
     var e, n;
-    let l;
+    let r;
     if (!t || null == u) return null;
-    if (u.joinType === o.J.APPLY) l = null != u.pendingVerificationFields ? [...u.pendingVerificationFields] : true;
+    if (u.joinType === o.J.APPLY) r = null != u.pendingVerificationFields ? [...u.pendingVerificationFields] : true;
     else if (null != u.termRules) {
       let e = u.termRules.map(e => e.value.trim()).filter(e => "" !== e);
-      l = [{
+      r = [{
         field_type: f.rX.TERMS,
         label: g.intl.string(g.t["9suSIA"]),
         values: e,
         required: true
       }]
     }
-    return null == l ? null : {
+    return null == r ? null : {
       version: null != (e = null == c ? true : c.version) ? e : "",
       description: null != (n = null == c ? true : c.description) ? n : "",
-      formFields: l,
+      formFields: r,
       guild: null == c ? true : c.guild
     }
   }, [t, u, c]);
   return {
-    hasFetched: l,
-    verificationForm: null != x ? x : c
+    hasFetched: r,
+    verificationForm: null != h ? h : c
   }
 }
 
-function b(e, t, n) {
-  let l = (0, i.bG)([c.A], () => c.A.getGuild(e)),
+function j(e, t, n) {
+  let r = (0, i.bG)([c.A], () => c.A.getGuild(e)),
     a = (0, i.bG)([s.A], () => s.A.getGuild());
-  return r.useMemo(() => n && (null == a ? true : a.id) === e ? a : null != l ? l : null != t ? (0, u.Yh)(t) : null, [n, a, e, l, t])
+  return l.useMemo(() => n && (null == a ? true : a.id) === e ? a : null != r ? r : null != t ? (0, u.Yh)(t) : null, [n, a, e, r, t])
 }
 
-function p(e) {
+function b(e) {
   let t = !(null == e ? true : e.isClaimed()),
     n = null == e ? true : e.verified,
-    [l, i] = r.useState(2 * !t);
-  return r.useEffect(() => {
+    [r, i] = l.useState(2 * !t);
+  return l.useEffect(() => {
     null != e && e.isClaimed() && i(2)
-  }, [e]), r.useEffect(() => {
-    1 === l && n && i(2)
-  }, [l, n]), {
-    currentStep: l,
+  }, [e]), l.useEffect(() => {
+    1 === r && n && i(2)
+  }, [r, n]), {
+    currentStep: r,
     setCurrentStep: i
   }
 }
 
 function _(e) {
-  let t = (0, h.YN)(e => e.hasUnsubmittedChanges);
-  r.useEffect(() => ((0, h.Yb)(false), () => {
-    (0, h.Yb)(false)
-  }), []), r.useEffect(() => {
-    let n = e.some(e => e.field_type !== f.rX.TERMS && (0, x.Ge)(e));
-    n && !t ? (0, h.Yb)(true) : !n && t && (0, h.Yb)(false)
+  let t = (0, x.YN)(e => e.hasUnsubmittedChanges);
+  l.useEffect(() => ((0, x.Yb)(false), () => {
+    (0, x.Yb)(false)
+  }), []), l.useEffect(() => {
+    let n = e.some(e => e.field_type !== f.rX.TERMS && (0, h.Ge)(e));
+    n && !t ? (0, x.Yb)(true) : !n && t && (0, x.Yb)(false)
   }, [e, t])
 }

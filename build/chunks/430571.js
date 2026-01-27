@@ -2,13 +2,13 @@
 /** chunk id: 430571, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk64700 = require("./64700.js"),
   Chunk508425 = require("./508425.js"),
   Chunk397927 = require("./397927.js");
 
-function s(e) {
+function o(e) {
   let t = (0, a.rdh)(a.LU0.colors.TEXT_DEFAULT).int();
   return r.useMemo(() => {
     switch (e) {

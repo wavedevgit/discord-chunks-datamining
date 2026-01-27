@@ -88,20 +88,20 @@ function E(e) {
     similarApplications: r,
     loadId: i,
     page: a,
-    totalPages: s
-  } = e, o = _({
+    totalPages: o
+  } = e, s = _({
     applicationId: t,
     guildId: n,
     page: a
   });
-  h.set(o, {
+  h.set(s, {
     lastFetchTimeMs: Date.now(),
     applications: r,
     loadId: i,
     page: a,
-    totalPages: s
+    totalPages: o
   }), m = d(c({}, m), {
-    [o]: 2
+    [s]: 2
   })
 }
 

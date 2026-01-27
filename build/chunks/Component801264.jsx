@@ -30,12 +30,12 @@ function d(e) {
     look: i = "info"
   } = e, l = u[i];
   return (0, r.jsxs)("div", {
-    className: a()(o.zr, n, c[i]),
+    className: a()(s.zr, n, c[i]),
     children: [(0, r.jsx)(l, {
-      className: o.Kk,
+      className: s.Kk,
       color: "currentColor"
-    }), (0, r.jsx)(s.Text, {
-      className: o.Qq,
+    }), (0, r.jsx)(o.Text, {
+      className: s.Qq,
       variant: "text-sm/medium",
       color: "text-default",
       children: t

@@ -32,8 +32,8 @@ function c(e) {
   return e
 }
 let u = {
-  getActiveErrors: () => r.A.getAllActiveStreamKeys().map(e => r.A.getQuality(e) === o.bFR.BAD ? c({
+  getActiveErrors: () => r.A.getAllActiveStreamKeys().map(e => r.A.getQuality(e) === s.bFR.BAD ? c({
     type: a.iy.STREAM_BAD_NETWORK_QUALITY
-  }, (0, s.id)(e)) : null).filter(i.Vq),
+  }, (0, o.id)(e)) : null).filter(i.Vq),
   makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

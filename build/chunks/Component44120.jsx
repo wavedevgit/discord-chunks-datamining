@@ -96,12 +96,12 @@ function C(e) {
       onComplete: P,
       variantsReturnStyle: D
     } = e,
-    x = false,
-    L = (0, i.A)(),
-    j = e => {
+    L = false,
+    x = (0, i.A)(),
+    M = e => {
       t = e
     },
-    M = E ? S : I,
+    j = E ? S : I,
     k = f.default.getCurrentUser();
   if (!(null == k ? true : k.verified)) return void(0, a.mMO)(async () => {
     let {
@@ -118,8 +118,8 @@ function C(e) {
       }))
     }
   });
-  s.h.wait(() => {
-    s.h.dispatch({
+  o.h.wait(() => {
+    o.h.dispatch({
       type: "PAYMENT_MODAL_OPEN"
     })
   });
@@ -129,37 +129,37 @@ function C(e) {
     location: "openCollectiblesPaymentModal"
   }), G = () => {
     (0, h.S)({
-      checkoutSucceeded: x
-    }), x || p.default.track(g.HAw.PAYMENT_FLOW_CANCELED, {
-      load_id: L,
+      checkoutSucceeded: L
+    }), L || p.default.track(g.HAw.PAYMENT_FLOW_CANCELED, {
+      load_id: x,
       payment_type: g.frM[g.VVm.ONE_TIME],
       location: m,
       is_gift: E,
       sku_id: u,
       location_stack: _
-    }), (0, o.ET)(), (0, l.z)(), null == R || R(x), x && (0, d.gB)({
+    }), (0, s.ET)(), (0, l.z)(), null == R || R(L), L && (0, d.gB)({
       variantsReturnStyle: D
     })
-  }, V = () => {
-    null != t && T.has(t) && (0, a.OoC)(M)
-  }, F = {
-    loadId: L,
+  }, F = () => {
+    null != t && T.has(t) && (0, a.OoC)(j)
+  }, V = {
+    loadId: x,
     skuId: u,
     analyticsLocations: _,
-    onStepChange: j,
-    modalKey: M,
+    onStepChange: M,
+    modalKey: j,
     isGift: E,
     giftMessage: b,
     giftingOrigin: A,
     giftRecipient: C,
     onClose: R,
     onCloseCallback: G,
-    onCloseRequest: V,
+    onCloseRequest: F,
     onComplete: () => {
-      x = true, null == P || P()
+      L = true, null == P || P()
     }
   };
-  U ? N(F) : w(F)
+  U ? N(V) : w(V)
 }
 let N = e => {
     let {
@@ -168,8 +168,8 @@ let N = e => {
       analyticsLocations: r,
       onStepChange: i,
       modalKey: a,
-      isGift: s = false,
-      giftMessage: o,
+      isGift: o = false,
+      giftMessage: s,
       giftingOrigin: l,
       giftRecipient: c,
       onClose: d,
@@ -182,8 +182,8 @@ let N = e => {
       skuId: n,
       analyticsLocations: r,
       giftContextProps: {
-        isGift: s,
-        giftMessage: o,
+        isGift: o,
+        giftMessage: s,
         giftingOrigin: l,
         giftRecipient: c
       },
@@ -204,8 +204,8 @@ let N = e => {
       loadId: t,
       skuId: n,
       analyticsLocations: i,
-      onStepChange: s,
-      modalKey: o,
+      onStepChange: o,
+      modalKey: s,
       isGift: l = false,
       giftMessage: c,
       giftingOrigin: u,
@@ -218,7 +218,7 @@ let N = e => {
     return (0, a.mMO)(async () => e => {
       let {
         onClose: a,
-        returnRef: o
+        returnRef: s
       } = e, p = v(e, ["onClose", "returnRef"]);
       return (0, r.jsx)(m.Ay, O(y({}, p), {
         loadId: t,
@@ -232,11 +232,11 @@ let N = e => {
           a(), null == f || f(e)
         },
         onComplete: h,
-        returnRef: o,
-        onStepChange: s
+        returnRef: s,
+        onStepChange: o
       }))
     }, {
-      modalKey: o,
+      modalKey: s,
       onCloseCallback: p,
       onCloseRequest: _
     })

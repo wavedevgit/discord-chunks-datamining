@@ -30,7 +30,7 @@ class d extends Chunk972347.A {
   }
   destroy() {
     var e;
-    null == (e = this.audioElement) || e.pause(), null != this.videoStreamId && (0, s.it)(this.videoStreamId), null != this.streamSourceNode && (this.streamSourceNode.disconnect(), this.streamSourceNode = null), null != this.levelNode && (this.levelNode.disconnect(), this.levelNode.port.postMessage("close"), this.levelNode = null), this.setSpeakingFlags(o.ME.NONE), this.removeAllListeners()
+    null == (e = this.audioElement) || e.pause(), null != this.videoStreamId && (0, o.it)(this.videoStreamId), null != this.streamSourceNode && (this.streamSourceNode.disconnect(), this.streamSourceNode = null), null != this.levelNode && (this.levelNode.disconnect(), this.levelNode.port.postMessage("close"), this.levelNode = null), this.setSpeakingFlags(s.ME.NONE), this.removeAllListeners()
   }
   addTrack(e) {
     if (this.stream.getTracks().includes(e)) return this.stream.getTracks().length;
@@ -50,14 +50,14 @@ class d extends Chunk972347.A {
         c.warn("Output#Failed to setup speaking indicator: ".concat(e))
       }
     }
-    return "video" === e.kind && (null != this.videoStreamId && (0, s.it)(this.videoStreamId), this.stream.getVideoTracks().forEach(t => {
+    return "video" === e.kind && (null != this.videoStreamId && (0, o.it)(this.videoStreamId), this.stream.getVideoTracks().forEach(t => {
       e !== t && (t.discordIsTearingDown = true, this.stream.removeTrack(t))
-    }), this.videoStreamId = (0, s.ju)(this.stream), this.emit("video", this.videoStreamId)), "audio" === e.kind && this.stream.getAudioTracks().forEach(t => {
+    }), this.videoStreamId = (0, o.ju)(this.stream), this.emit("video", this.videoStreamId)), "audio" === e.kind && this.stream.getAudioTracks().forEach(t => {
       e !== t && (t.discordIsTearingDown = true, this.stream.removeTrack(t))
     }), this.stream.getTracks().length
   }
   removeTrack(e) {
-    return this.stream.removeTrack(e), "video" === e.kind && (null != this.videoStreamId && (0, s.it)(this.videoStreamId), this.emit("video", null)), this.stream.getTracks().length
+    return this.stream.removeTrack(e), "video" === e.kind && (null != this.videoStreamId && (0, o.it)(this.videoStreamId), this.emit("video", null)), this.stream.getTracks().length
   }
   setSinkId(e) {
     this.sinkId = e, this.updateAudioElement()
@@ -69,13 +69,13 @@ class d extends Chunk972347.A {
     this._mute = e || false, this.updateAudioElement()
   }
   get priority() {
-    return (this._speakingFlags & o.ME.PRIORITY) === o.ME.PRIORITY
+    return (this._speakingFlags & s.ME.PRIORITY) === s.ME.PRIORITY
   }
   get volume() {
     return this._volume
   }
   set volume(e) {
-    this._volume = Math.max(0, Math.min(Math.round(e), o.Hz)), this.updateAudioElement()
+    this._volume = Math.max(0, Math.min(Math.round(e), s.Hz)), this.updateAudioElement()
   }
   get speakingFlags() {
     return this._speakingFlags
@@ -92,6 +92,6 @@ class d extends Chunk972347.A {
     }
   }
   constructor(e, t) {
-    super(), l(this, "id", true), l(this, "_speakingFlags", o.ME.NONE), l(this, "_mute", false), l(this, "_volume", o.Hz), l(this, "sinkId", null), l(this, "audioElement", null), l(this, "stream", new MediaStream), l(this, "videoStreamId", null), l(this, "levelNode", null), l(this, "streamSourceNode", null), l(this, "audioContext", true), this.id = e, this.audioContext = t
+    super(), l(this, "id", true), l(this, "_speakingFlags", s.ME.NONE), l(this, "_mute", false), l(this, "_volume", s.Hz), l(this, "sinkId", null), l(this, "audioElement", null), l(this, "stream", new MediaStream), l(this, "videoStreamId", null), l(this, "levelNode", null), l(this, "streamSourceNode", null), l(this, "audioContext", true), this.id = e, this.audioContext = t
   }
 }

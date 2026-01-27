@@ -2,33 +2,33 @@
 /** chunk id: 315935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => o
+  default: () => s
 }), require("./65821.js");
 var Chunk734057 = require("./734057.js"),
   Chunk383501 = require("./383501.js"),
   Chunk652215 = require("./652215.js"),
   Chunk746080 = require("./746080.js");
 
-function o(e, t) {
+function s(e, t) {
   let n;
   switch (e) {
     case a.HAw.CHANNEL_OPENED_CLICKSTREAM:
-      var o, l;
+      var s, l;
       let c = (n = t).channelId;
       switch (c) {
-        case s.VV.CHANNEL_BROWSER:
-        case s.VV.GUILD_HOME:
-        case s.VV.GUILD_SHOP:
-        case s.VV.GAME_SHOP:
-        case s.VV.MEMBER_APPLICATIONS:
-        case s.VV.ROLE_SUBSCRIPTIONS:
-        case s.VV.CUSTOMIZE_COMMUNITY:
-        case s.VV.MEMBER_SAFETY:
-        case s.VV.GUILD_ONBOARDING:
-        case s.VV.GUILD_BOOSTS:
+        case o.VV.CHANNEL_BROWSER:
+        case o.VV.GUILD_HOME:
+        case o.VV.GUILD_SHOP:
+        case o.VV.GAME_SHOP:
+        case o.VV.MEMBER_APPLICATIONS:
+        case o.VV.ROLE_SUBSCRIPTIONS:
+        case o.VV.CUSTOMIZE_COMMUNITY:
+        case o.VV.MEMBER_SAFETY:
+        case o.VV.GUILD_ONBOARDING:
+        case o.VV.GUILD_BOOSTS:
           return
       }
-      let u = null != (o = null == (l = r.A.getChannel(c)) ? true : l.type) ? o : a.rbe.UNKNOWN;
+      let u = null != (s = null == (l = r.A.getChannel(c)) ? true : l.type) ? s : a.rbe.UNKNOWN;
       return {
         timestamp: new Date, rtc_state: i.A.getState(), channelId: c, channelType: u
       };

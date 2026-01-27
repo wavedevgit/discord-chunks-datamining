@@ -33,7 +33,7 @@ function p(e) {
     p = a.iu(null != d.permissions && "" !== d.permissions ? d.permissions : "0")
   } catch (e) {}
   let _ = d.channel_id,
-    h = f(null != (t = null != (n = d.guild_id) ? n : null == (u = s.A.getChannel(_)) ? true : u.guild_id) ? t : o.A.getGuildId());
+    h = f(null != (t = null != (n = d.guild_id) ? n : null == (u = o.A.getChannel(_)) ? true : u.guild_id) ? t : s.A.getGuildId());
   return {
     clientId: null != (i = d.client_id) ? i : "",
     scopes: (null != (c = d.scope) ? c : "").replace(/\+/g, " ").split(" ").filter(e => e.length > 0),

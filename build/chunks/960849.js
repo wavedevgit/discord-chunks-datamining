@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 960849, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 960849, original params: e,t,n (module,exports,require) **/
 module.exports = {
   kL: "container__90f2b",
   an: "outerBorder__90f2b",

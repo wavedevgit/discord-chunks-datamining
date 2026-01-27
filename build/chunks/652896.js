@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Iy: () => a,
-  _z: () => s,
+  _z: () => o,
   wL: () => i
 }), require("./747238.js"), require("./896048.js"), require("./65821.js");
 var Chunk502075 = require("./502075.js");
@@ -38,7 +38,7 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   let {
     streamType: t,
     guildId: n,

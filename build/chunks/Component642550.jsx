@@ -44,7 +44,7 @@ let _ = Chunk64700.forwardRef(function(e, t) {
     }
   }, [y]), (0, r.jsx)("div", {
     className: p.i,
-    children: (0, r.jsx)(o.IWV, {
+    children: (0, r.jsx)(s.IWV, {
       autoFocus: m,
       disabled: !m,
       query: E,
@@ -57,7 +57,7 @@ let _ = Chunk64700.forwardRef(function(e, t) {
         "aria-haspopup": "grid",
         "aria-controls": d.lq,
         "aria-expanded": true,
-        "aria-activedescendant": (0, s.Aq)(d.lq, O.columnIndex, O.rowIndex)
+        "aria-activedescendant": (0, o.Aq)(d.lq, O.columnIndex, O.rowIndex)
       }
     })
   })

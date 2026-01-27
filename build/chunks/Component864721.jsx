@@ -62,7 +62,7 @@ function h(e) {
   if (0 === i.length) return null;
   let b = y(),
     O = g ? f.t.PZpY9c : f.t["1Hz+Sl"],
-    v = h === s.b.USER_INSTALL && l.includes(o.F.APPLICATIONS_COMMANDS);
+    v = h === o.b.USER_INSTALL && l.includes(s.F.APPLICATIONS_COMMANDS);
   return (0, r.jsxs)("div", {
     className: a()(p.Wu, E ? p.bc : true),
     children: [(0, r.jsx)(c.Heading, {

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   bm: () => a,
-  yG: () => s
+  yG: () => o
 });
 let r = {
     emitDefaultValues: false,
@@ -19,6 +19,6 @@ function a(e) {
   return e ? Object.assign(Object.assign({}, i), e) : i
 }
 
-function s(e) {
+function o(e) {
   return e ? Object.assign(Object.assign({}, r), e) : r
 }

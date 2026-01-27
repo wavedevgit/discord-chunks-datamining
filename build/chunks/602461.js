@@ -18,14 +18,14 @@ function l(e) {
   } = e, c = 0, u = 0;
   for (let e of n.role_benefits.benefits)(0, a.B1)(e) ? c += 1 : (0, a.b1)(e) && (u += 1);
   let d = n.role_id,
-    f = (0, s.A)(l).filter(e => e.roles.includes(d)).length;
+    f = (0, o.A)(l).filter(e => e.roles.includes(d)).length;
   return r.useMemo(() => {
     let e = [];
-    returntrue === t && e.push(o.intl.string(o.t.EhdV2x)), 0 !== c && e.push(o.intl.formatToPlainString(o.t["p/l+BI"], {
+    returntrue === t && e.push(s.intl.string(s.t.EhdV2x)), 0 !== c && e.push(s.intl.formatToPlainString(s.t["p/l+BI"], {
       channelCount: c
-    })), 0 !== u && e.push(o.intl.formatToPlainString(o.t.eXP5vt, {
+    })), 0 !== u && e.push(s.intl.formatToPlainString(s.t.eXP5vt, {
       benefitCount: u
-    })), 0 !== f && e.push(o.intl.formatToPlainString(o.t.YjmQwW, {
+    })), 0 !== f && e.push(s.intl.formatToPlainString(s.t.YjmQwW, {
       emojiCount: f
     })), new i.A(e)
   }, [c, u, f, t])

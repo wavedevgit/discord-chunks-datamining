@@ -85,13 +85,13 @@ function _(e) {
   return (0, r.jsxs)(i.d, d(c({}, E), {
     size: t,
     paddingSize: "lg",
-    children: [(0, r.jsx)(o.V6, {
+    children: [(0, r.jsx)(s.V6, {
       gradientColor: n,
       graphic: l,
       badge: u,
       title: p,
       subtitle: _
-    }), (0, r.jsx)(s.c, {
+    }), (0, r.jsx)(o.c, {
       children: g
     }), (0, r.jsx)(a.H, {
       leading: h,

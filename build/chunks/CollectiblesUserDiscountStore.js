@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,8 +15,8 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = [],
-  l = o,
+let s = [],
+  l = s,
   c = e => {
     d(e.shopHome.userDiscounts)
   },
@@ -24,7 +24,7 @@ let o = [],
     d(e.categories.userDiscounts)
   },
   d = e => {
-    l = null != e && e.length > 0 ? e : o
+    l = null != e && e.length > 0 ? e : s
   },
   f = e => {
     let t = e.appliedUserDiscounts;
@@ -41,7 +41,7 @@ let o = [],
     }
   },
   _ = () => {
-    l = o
+    l = s
   };
 class h extends(r = Chunk311907.Ay.Store) {
   getUserDiscounts() {
@@ -51,7 +51,7 @@ class h extends(r = Chunk311907.Ay.Store) {
     return l.find(t => t.discountId === e)
   }
 }
-s(h, "displayName", "CollectiblesUserDiscountStore");
+o(h, "displayName", "CollectiblesUserDiscountStore");
 let m = new h(Chunk73153.h, {
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: c,
   COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: u,

@@ -2,20 +2,20 @@
 /** chunk id: 150189, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk559751 = require("./559751.js"),
   Chunk140851 = require("./140851.js");
 
 function a(e, t, n) {
   var a = (0, r.A)(e),
-    s = [i.kb, i.Mn].indexOf(a) >= 0 ? false : 1,
-    o = "function" == typeof n ? n(Object.assign({}, t, {
+    o = [i.kb, i.Mn].indexOf(a) >= 0 ? false : 1,
+    s = "function" == typeof n ? n(Object.assign({}, t, {
       placement: e
     })) : n,
-    l = o[0],
-    c = o[1];
-  return l = l || 0, c = (c || 0) * s, [i.kb, i.pG].indexOf(a) >= 0 ? {
+    l = s[0],
+    c = s[1];
+  return l = l || 0, c = (c || 0) * o, [i.kb, i.pG].indexOf(a) >= 0 ? {
     x: c,
     y: l
   } : {
@@ -23,7 +23,7 @@ function a(e, t, n) {
     y: c
   }
 }
-let s = {
+let o = {
   name: "offset",
   enabled: true,
   phase: "main",
@@ -32,10 +32,10 @@ let s = {
     var t = e.state,
       n = e.options,
       r = e.name,
-      s = n.offset,
-      o = true === s ? [0, 0] : s,
+      o = n.offset,
+      s = true === o ? [0, 0] : o,
       l = i.DD.reduce(function(e, n) {
-        return e[n] = a(n, t.rects, o), e
+        return e[n] = a(n, t.rects, s), e
       }, {}),
       c = l[t.placement],
       u = c.x,

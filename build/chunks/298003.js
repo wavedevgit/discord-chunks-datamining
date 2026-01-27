@@ -16,9 +16,9 @@ function i(e, t, n, r) {
   c.item.extent.extentLength = d;
   let f = e.getUint8(i.baseOffsetSize) >> 4;
   c.item.baseOffset = f;
-  let p = s(e, i.indexSize, t);
+  let p = o(e, i.indexSize, t);
   c.item.extent.extentIndex = true !== p ? p : 0;
-  let _ = o(e, i.itemCount, t);
+  let _ = s(e, i.itemCount, t);
   return {
     type: "iloc",
     items: l(e, t, i, c, u, d, p, _),
@@ -49,26 +49,26 @@ function a(e, t) {
   }
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   if (1 === n || 2 === n) return 15 & e.getUint8(t)
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   return n < 2 ? e.getUint16(t) : 2 === n ? e.getUint32(t) : true
 }
 
-function l(e, t, n, r, i, a, s, o) {
-  if (true === o) return [];
+function l(e, t, n, r, i, a, o, s) {
+  if (true === s) return [];
   let l = [],
     f = n.items;
-  for (let n = 0; n < o; n++) {
+  for (let n = 0; n < s; n++) {
     let n = {
       extents: []
     };
     n.itemId = c(e, f, t), f += r.item.itemId, n.constructionMethod = 1 === t || 2 === t ? 15 & e.getUint16(f) : true, f += r.item.constructionMethod, n.dataReferenceIndex = e.getUint16(f), n.baseOffset = d(e, f += r.item.dataReferenceIndex, r.item.baseOffset), f += r.item.baseOffset, n.extentCount = e.getUint16(f), f += r.item.extentCount;
-    for (let o = 0; o < n.extentCount; o++) {
-      let o = {};
-      o.extentIndex = u(e, t, f, s), o.extentOffset = d(e, f += r.item.extent.extentIndex, i), o.extentLength = d(e, f += r.item.extent.extentOffset, a), f += r.item.extent.extentLength, n.extents.push(o)
+    for (let s = 0; s < n.extentCount; s++) {
+      let s = {};
+      s.extentIndex = u(e, t, f, o), s.extentOffset = d(e, f += r.item.extent.extentIndex, i), s.extentLength = d(e, f += r.item.extent.extentOffset, a), f += r.item.extent.extentLength, n.extents.push(s)
     }
     l.push(n)
   }

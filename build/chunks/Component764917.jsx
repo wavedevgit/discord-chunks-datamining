@@ -82,7 +82,7 @@ function D(e) {
     if (null != e.match(new RegExp(":".concat(t, "(_tone[1-9])?")))) return t;
   return null
 }
-let x = {
+let L = {
   enter: {
     BEG: 0,
     END: 22
@@ -97,7 +97,7 @@ let x = {
   }
 };
 
-function L() {
+function x() {
   return n.e("98150").then(n.t.bind(n, 633343, 19)).then(e => {
     let {
       default: t
@@ -106,7 +106,7 @@ function L() {
   })
 }
 
-function j(e) {
+function M(e) {
   if (null == e) return "enter";
   switch (e) {
     case "enter":
@@ -117,12 +117,12 @@ function j(e) {
       return "enter"
   }
 }
-let M = Chunk64700.forwardRef(function(e, t) {
+let j = Chunk64700.forwardRef(function(e, t) {
   let {
     sprites: n
-  } = e, [s, l] = i.useState(null), {
+  } = e, [o, l] = i.useState(null), {
     confettiCanvas: c
-  } = i.useContext(o.x), u = (0, a.f9)(c, s);
+  } = i.useContext(s.x), u = (0, a.f9)(c, o);
   return i.useImperativeHandle(t, () => ({
     fireConfetti: (e, t) => {
       u.createMultipleConfetti(E(m({}, p.Mw), {
@@ -167,16 +167,16 @@ let M = Chunk64700.forwardRef(function(e, t) {
 function k(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [a, o] = i.useState(null), l = j(a), p = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, u.Us)(), y = i.useCallback(e => {
+  } = e, n = i.useRef({}), [a, s] = i.useState(null), l = M(a), p = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, u.Us)(), y = i.useCallback(e => {
     if (!h) {
       let t = D(e);
-      null != t && (g.current = t, m(true), o(null))
+      null != t && (g.current = t, m(true), s(null))
     }
   }, [h]), b = i.useMemo(() => ({
     triggerAnimation: y,
     untriggerAnimation: () => {}
   }), [y]), O = i.useCallback(e => {
-    o(e)
+    s(e)
   }, []), v = i.useCallback(e => {
     "exit" === e && m(false)
   }, []), A = i.useCallback(e => {
@@ -195,7 +195,7 @@ function k(e) {
     value: b,
     children: [t, Object.keys(P).map(e => {
       let t = P[e];
-      return (0, r.jsx)(M, {
+      return (0, r.jsx)(j, {
         ref: t => {
           null != t ? n.current[e] = t : delete n.current[e]
         },
@@ -204,14 +204,14 @@ function k(e) {
     }), h ? (0, r.jsx)(c.Ay, {
       children: (0, r.jsx)("div", {
         className: _.k,
-        children: (0, r.jsx)(s.tvC, {
+        children: (0, r.jsx)(o.tvC, {
           animationRef: A,
           className: _.I,
           nextScene: l,
-          sceneSegments: x,
+          sceneSegments: L,
           onScenePlay: O,
           onSceneComplete: v,
-          importData: L,
+          importData: x,
           pauseWhileUnfocused: false
         })
       })

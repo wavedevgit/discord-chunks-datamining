@@ -12,11 +12,11 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function c(e) {
-  let t = (0, r.bG)([o.Ay], () => o.Ay.getGuildScheduledEvent(e), [e]);
+  let t = (0, r.bG)([u.Ay], () => u.Ay.getGuildScheduledEvent(e), [e]);
   return null == e || null == t ? null : (0, l.jsx)(i.Drp, {
     id: "report-event",
     label: a.intl.string(a.t.IBA5wX),
-    action: () => (0, u.uA)(t),
+    action: () => (0, o.uA)(t),
     icon: i.iFK,
     color: "danger"
   })

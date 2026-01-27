@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
   Chunk635377 = require("./635377.js"),
-  o = require.n(Chunk635377),
+  s = require.n(Chunk635377),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk283047 = require("./283047.js"),
@@ -59,7 +59,7 @@ function v(e, t) {
   }), e
 }
 let A = [],
-  I = new(o())({
+  I = new(s())({
     max: Chunk980504.E7
   }),
   S = new Chunk283047.A({
@@ -74,7 +74,7 @@ function T(e) {
     sound: t,
     trigger: n
   } = e;
-  if (!j()) return;
+  if (!M()) return;
   let r = t.soundId.toString();
   n === h.Zm.SOUNDBOARD && w(r)
 }
@@ -85,7 +85,7 @@ function C(e) {
     soundId: n,
     userId: r
   } = e;
-  if (!L()) return;
+  if (!x()) return;
   let i = n.toString();
   r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && R(i) && N(i)
 }
@@ -115,32 +115,32 @@ function P(e) {
 
 function D() {
   var e;
-  if (!j()) return;
+  if (!M()) return;
   let t = null == (e = d.A.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : e.playedSounds;
   S.overwriteHistory(P(null != t ? t : {}), A)
 }
 
-function x(e) {
+function L(e) {
   let {
     settings: {
       type: t
     },
     wasSaved: n
   } = e;
-  j() && t === E.oD.FRECENCY_AND_FAVORITES_SETTINGS && n && (A = [])
+  M() && t === E.oD.FRECENCY_AND_FAVORITES_SETTINGS && n && (A = [])
 }
 
-function L() {
+function x() {
   return (0, p._)({
     location: "soundboard_event_store",
     autoTrackExposure: false
   }).canSeeRecentlyHeard
 }
 
-function j() {
+function M() {
   return (0, m.YK)("soundboard_event_store")
 }
-class M extends(r = Chunk311907.Ay.PersistedStore) {
+class j extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     this.waitFor(_.A, d.A, f.default), (null == e ? true : e.recentlyHeardCache) != null && I.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (A = e.playedEventsPendingFlush), this.syncWith([d.A], D)
   }
@@ -163,9 +163,9 @@ class M extends(r = Chunk311907.Ay.PersistedStore) {
     return S.frequently
   }
 }
-y(M, "displayName", "SoundboardEventStore"), y(M, "persistKey", "SoundboardEventStore");
-let k = new M(Chunk73153.h, {
+y(j, "displayName", "SoundboardEventStore"), y(j, "persistKey", "SoundboardEventStore");
+let k = new j(Chunk73153.h, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: T,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: C,
-  USER_SETTINGS_PROTO_UPDATE: x
+  USER_SETTINGS_PROTO_UPDATE: L
 })

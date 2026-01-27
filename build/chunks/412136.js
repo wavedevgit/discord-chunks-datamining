@@ -3,19 +3,19 @@
 "use strict";
 require.d(exports, {
   FW: () => a,
-  Lu: () => s,
+  Lu: () => o,
   TU: () => u,
   dv: () => l,
   fT: () => d,
-  jD: () => o,
+  jD: () => s,
   kx: () => c,
   sm: () => i
 }), require("./896048.js");
 var Chunk698279 = require("./698279.js");
 let i = "POLL_CREATION_MODAL_KEY",
   a = 1,
-  s = 10,
-  o = 300,
+  o = 10,
+  s = 300,
   l = 55,
   c = 3,
   u = 50;

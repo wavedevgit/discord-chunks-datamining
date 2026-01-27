@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
   Chunk635377 = require("./635377.js"),
-  s = require.n(Chunk635377);
+  o = require.n(Chunk635377);
 require("./228785.js");
 var Chunk280230 = require("./280230.js"),
   l = require.n(Chunk280230),
@@ -56,7 +56,7 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = new(s())({
+let E = new(o())({
   max: 50
 });
 
@@ -161,41 +161,41 @@ function w(e) {
 let R = g(h({}, l().defaultRules.link), {
   match: (e, t, n) => t.allowLinks ? l().defaultRules.link.match(e, t, n) : null,
   parse(e, t, n) {
-    let [r, a, s, o] = e, u = () => ({
+    let [r, a, o, s] = e, u = () => ({
       type: f.D.TEXT,
       content: r
     });
-    if (N(s)) return u();
-    let d = y(s),
+    if (N(o)) return u();
+    let d = y(o),
       p = y(a),
-      _ = y(null != o ? o : ""),
+      _ = y(null != s ? s : ""),
       m = d.whitespaceSanitized,
       E = p.fullySanitized,
       b = _.fullySanitized,
       R = E.trim();
     if (0 === m.trim().length || 0 === R.length) return u();
-    let P = w(l().unescapeUrl(s)),
+    let P = w(l().unescapeUrl(o)),
       D = null == P,
-      x = (0, c.Ay)(a).length > 0 || (0, c.Ay)(o).length > 0;
-    if (D || x) return u();
-    let L = g(h({}, n), {
+      L = (0, c.Ay)(a).length > 0 || (0, c.Ay)(s).length > 0;
+    if (D || L) return u();
+    let x = g(h({}, n), {
         allowEscape: false,
         parseInlineCodeChildContent: true
       }),
-      j = n.allowEmojiLinks ? v : O,
-      M = [...j, ...A],
+      M = n.allowEmojiLinks ? v : O,
+      j = [...M, ...A],
       k = [...I, ...S],
-      U = T(t(E, L), M, [f.D.EMOJI]),
-      G = T(t(b, L), k);
+      U = T(t(E, x), j, [f.D.EMOJI]),
+      G = T(t(b, x), k);
     if (null == U || null == G || 0 === C(U).trim().length) return u();
-    let V = i().pick(t.rules, j),
-      F = l().parserFor(V)(p.whitespaceSanitized, L),
+    let F = i().pick(t.rules, M),
+      V = l().parserFor(F)(p.whitespaceSanitized, x),
       B = _.whitespaceSanitized,
       {
         target: H
       } = P;
     return {
-      content: F,
+      content: V,
       target: H,
       title: B
     }

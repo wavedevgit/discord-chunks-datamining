@@ -18,19 +18,19 @@ var Chunk665260 = require("./665260.js"),
   Chunk985018 = require("./985018.jsx");
 let h = {
   open(e) {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "NOTIFICATION_SETTINGS_MODAL_OPEN",
       guildId: e
     })
   },
   close() {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "NOTIFICATION_SETTINGS_MODAL_CLOSE"
     })
   },
   updateGuildNotificationSettings(e, t, n, r) {
     let i = (0, c.CP)(e);
-    o.A.saveUserGuildSettings(e, t), s.h.dispatch({
+    s.A.saveUserGuildSettings(e, t), o.h.dispatch({
       type: "USER_GUILD_SETTINGS_GUILD_UPDATE",
       guildId: e,
       settings: t
@@ -40,7 +40,7 @@ let h = {
     let i = u.default.keys(t.channel_overrides),
       a = (0, c.CP)(e),
       l = (0, c.Xh)(e, i);
-    o.A.saveUserGuildSettings(e, t), s.h.dispatch({
+    s.A.saveUserGuildSettings(e, t), o.h.dispatch({
       type: "USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE",
       guildId: e,
       settings: t
@@ -63,7 +63,7 @@ let h = {
           [t]: n
         }
       };
-    o.A.saveUserGuildSettings(e, u), s.h.dispatch({
+    s.A.saveUserGuildSettings(e, u), o.h.dispatch({
       type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE",
       guildId: e,
       channelId: t,
@@ -83,7 +83,7 @@ let h = {
         channel_overrides: t
       },
       l = (0, c.Xh)(e, i);
-    o.A.saveUserGuildSettings(e, a), s.h.dispatch({
+    s.A.saveUserGuildSettings(e, a), o.h.dispatch({
       type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK",
       guildId: e,
       overrides: t
@@ -103,7 +103,7 @@ let h = {
           [t]: r
         }
       };
-    o.A.saveUserGuildSettings(e, u), s.h.dispatch({
+    s.A.saveUserGuildSettings(e, u), o.h.dispatch({
       type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE",
       guildId: e,
       channelId: t,
@@ -135,7 +135,7 @@ let h = {
         flags: a
       },
       rejectWithError: false
-    }), await s.h.dispatch({
+    }), await o.h.dispatch({
       type: "NOTIFICATION_SETTINGS_UPDATE",
       settings: {
         flags: a

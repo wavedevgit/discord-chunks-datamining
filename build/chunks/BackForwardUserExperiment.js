@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   J: () => l,
-  p: () => o
+  p: () => s
 });
 var Chunk600975 = require("./600975.js"),
   Chunk723702 = require("./723702.js");
@@ -41,20 +41,20 @@ let a = (0, Chunk600975.C)({
   }]
 });
 
-function s() {
+function o() {
   return {
     autoTrackExposure: true,
     disable: !(0, i.isDesktop)()
   }
 }
 
-function o(e) {
-  return a.useExperiment(e, s())
+function s(e) {
+  return a.useExperiment(e, o())
 }
 
 function l(e) {
   let {
     backForwardButtons: t
-  } = a.getCurrentConfig(e, s());
+  } = a.getCurrentConfig(e, o());
   return t
 }

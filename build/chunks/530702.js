@@ -62,10 +62,10 @@ class i {
       r.Children.forEach(e.element.props.children, e => {
         a.push(e)
       });
-      let s = null != (l = e.index) ? l : 0;
+      let o = null != (l = e.index) ? l : 0;
       for (let e of a) yield* this.getFullNode({
         element: e,
-        index: s++
+        index: o++
       }, t, n, i);
       return
     }
@@ -96,10 +96,10 @@ class i {
           ...r,
           key: c,
           index: l,
-          wrapper: s(e.wrapper, r.wrapper)
+          wrapper: o(e.wrapper, r.wrapper)
         }, this.getChildState(t, r), n ? `${n}${m.key}` : m.key, i)];
         for (let t of h) {
-          if (t.value = null != (f = null != (d = r.value) ? d : e.value) ? f : null, t.value && this.cache.set(t.value, t), e.type && t.type !== e.type) throw Error(`Unsupported type <${o(t.type)}> in <${o(null!=(p=null==i?true:i.type)?p:"unknown parent type")}>. Only <${o(e.type)}> is supported.`);
+          if (t.value = null != (f = null != (d = r.value) ? d : e.value) ? f : null, t.value && this.cache.set(t.value, t), e.type && t.type !== e.type) throw Error(`Unsupported type <${s(t.type)}> in <${s(null!=(p=null==i?true:i.type)?p:"unknown parent type")}>. Only <${s(e.type)}> is supported.`);
           l++, yield t
         }
         _ = a.next(h)
@@ -150,10 +150,10 @@ function a(e) {
   }
 }
 
-function s(e, t) {
+function o(e, t) {
   return e && t ? n => e(t(n)) : e || t || true
 }
 
-function o(e) {
+function s(e) {
   return e[0].toUpperCase() + e.slice(1)
 }

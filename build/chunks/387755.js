@@ -18,18 +18,18 @@ var Chunk562465 = require("./562465.js"),
   Chunk985018 = require("./985018.jsx");
 let h = {
   call(e, t, n, i, a) {
-    let s = n => {
+    let o = n => {
       f.default.selectVoiceChannel(e, t), n && this.ring(e), null == a || a(e)
     };
     if (null != i) {
-      if (o.A.isBlocked(i)) return;
+      if (s.A.isBlocked(i)) return;
       let t = l.default.getUser(i);
       r.Bo.get({
         url: p.Rsh.CALL(e),
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        s(n && e.body.ringable)
+        o(n && e.body.ringable)
       }, () => {
         c.default.track(p.HAw.OPEN_POPOUT, {
           type: "Not Friend",
@@ -51,13 +51,13 @@ let h = {
           }
         })
       })
-    } else s(n)
+    } else o(n)
   },
   ring(e, t, n) {
-    let o = s.A.getChannel(e);
-    if (null == o) return;
-    let l = (0, a.p)(o),
-      c = p.kvI.CALLABLE.has(o.type);
+    let s = o.A.getChannel(e);
+    if (null == s) return;
+    let l = (0, a.p)(s),
+      c = p.kvI.CALLABLE.has(s.type);
     if (l) {
       r.Bo.post({
         url: p.Rsh.CALL_RING(e),
@@ -67,10 +67,10 @@ let h = {
         },
         oldFormErrors: true,
         rejectWithError: true
-      }), o.type === p.rbe.GUILD_VOICE && null != t && i.h.dispatch({
+      }), s.type === p.rbe.GUILD_VOICE && null != t && i.h.dispatch({
         type: "GUILD_LOCAL_RING_START",
         ringing: t,
-        guildId: o.guild_id
+        guildId: s.guild_id
       });
       return
     }

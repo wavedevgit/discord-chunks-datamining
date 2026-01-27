@@ -35,20 +35,20 @@ function a(e, t) {
   return n
 }
 
-function s(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function o(e, t) {
+function s(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     {
       onBeforeBatch: r
     } = n,
     a = new Set;
 
-  function o(e) {
+  function s(e) {
     null != e.channel_id && a.has(e.channel_id) && t(e)
   }
 
@@ -67,7 +67,7 @@ function o(e, t) {
     let {
       message: t
     } = e;
-    null != t.channel_id && a.has(t.channel_id) && (null == r || r(), o(t))
+    null != t.channel_id && a.has(t.channel_id) && (null == r || r(), s(t))
   }
 
   function d(e) {
@@ -75,7 +75,7 @@ function o(e, t) {
       channelId: t,
       messages: n
     } = e;
-    a.add(t), null == r || r(), n.forEach(e => o(e))
+    a.add(t), null == r || r(), n.forEach(e => s(e))
   }
 
   function f(e) {
@@ -110,7 +110,7 @@ function o(e, t) {
       })
     })
   }
-  e.actions = s(i({}, e.actions), {
+  e.actions = o(i({}, e.actions), {
     POST_CONNECTION_OPEN: l,
     MESSAGE_CREATE: {
       callback: u,
@@ -130,5 +130,5 @@ function o(e, t) {
   })
 }
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./896048.js")

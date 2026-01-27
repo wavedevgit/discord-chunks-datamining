@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   l = require.n(Chunk284009),
   Chunk397927 = require("./397927.js"),
@@ -29,13 +29,13 @@ function b(e, t) {
 function O(e) {
   let {
     url: t
-  } = e, [n, a] = i.useState(false), o = i.useRef(true), l = i.useCallback(() => {
+  } = e, [n, a] = i.useState(false), s = i.useRef(true), l = i.useCallback(() => {
     n || (0, p.C)(t, () => {
-      a(true), o.current = setTimeout(() => a(false), 2e3)
+      a(true), s.current = setTimeout(() => a(false), 2e3)
     })
   }, [t, n]);
-  return i.useEffect(() => () => clearTimeout(o.current), []), p.p5 ? (0, r.jsxs)(c.DUT, {
-    className: s()(y.S, n ? y.pG : null),
+  return i.useEffect(() => () => clearTimeout(s.current), []), p.p5 ? (0, r.jsxs)(c.DUT, {
+    className: o()(y.S, n ? y.pG : null),
     onClick: l,
     children: [(0, r.jsx)(c.qYV, {
       size: "md",
@@ -50,7 +50,7 @@ function v() {
     children: [(0, r.jsxs)("div", {
       className: y.NT,
       children: [(0, r.jsx)("div", {
-        className: s()(y.Pz, y.w9)
+        className: o()(y.Pz, y.w9)
       }), (0, r.jsx)("div", {
         className: y.Pz
       })]
@@ -65,8 +65,8 @@ function A(e) {
     subHead: t,
     buildDetails: n,
     variant: a,
-    buttonClick: s,
-    buttonText: o,
+    buttonClick: o,
+    buttonText: s,
     disabled: l = false,
     submitting: u = false
   } = e;
@@ -82,10 +82,10 @@ function A(e) {
         children: n
       })]
     }), (0, r.jsx)(c.Button, {
-      text: o,
+      text: s,
       loading: u,
       variant: a,
-      onClick: s,
+      onClick: o,
       fullWidth: true,
       disabled: l
     })]
@@ -96,8 +96,8 @@ function I(e) {
   let t, n, r, {
       currentOverrides: i,
       linkMeta: a,
-      applyBuildOverride: s,
-      clearBuildOverride: o,
+      applyBuildOverride: o,
+      clearBuildOverride: s,
       submitting: c
     } = e,
     f = ["discord_web"];
@@ -109,7 +109,7 @@ function I(e) {
     discord_web: _,
     discord_developers: g
   } = a.targetBuildOverride, y = null != _ ? _ : g;
-  l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), b(y, i) ? (n = E.intl.string(E.t.tX4xrt), t = o, r = "critical-primary") : (n = E.intl.string(E.t.nOunHC), t = s, r = "primary");
+  l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), b(y, i) ? (n = E.intl.string(E.t.tX4xrt), t = s, r = "critical-primary") : (n = E.intl.string(E.t.nOunHC), t = o, r = "primary");
   let O = () => {
     d.A.isConnected() ? u.A.show({
       title: E.intl.string(E.t.tiu1ly),
@@ -168,17 +168,17 @@ let C = e => {
     loading: t = false,
     currentOverrides: n,
     linkMeta: a,
-    url: s,
-    applyBuildOverride: o,
+    url: o,
+    applyBuildOverride: s,
     clearBuildOverride: l
   } = e, [c, u] = i.useState(false), d = i.useCallback(() => {
-    c || (u(true), o().catch(() => u(false)))
-  }, [o, c]), p = i.useCallback(() => {
+    c || (u(true), s().catch(() => u(false)))
+  }, [s, c]), p = i.useCallback(() => {
     c || (u(true), l().catch(() => u(false)))
   }, [l, c]);
   return (0, r.jsxs)("div", {
     className: y.iE,
-    children: [T(a, s, t), (0, r.jsxs)("div", {
+    children: [T(a, o, t), (0, r.jsxs)("div", {
       className: y.Qs,
       children: [(0, r.jsx)(f.A, {
         className: y.Kk

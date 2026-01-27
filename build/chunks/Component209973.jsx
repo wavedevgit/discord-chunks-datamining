@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 209973, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 209973, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => R
+  A: () => N
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,10 +28,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk308021 = require("./308021.js"),
   Chunk86369 = require("./86369.js"),
   Chunk650000 = require("./650000.js");
-let N = 100,
-  w = 1;
 
-function R() {
+function N() {
   let {
     voice: {
       totalVoiceMinutes: e,
@@ -47,85 +44,85 @@ function R() {
         month: 0
       }
     }
-  } = (0, o.bG)([f.A], () => f.A.getCheckpointData()), {
-    duration: R,
-    unit: P
-  } = (0, p.oO)(e), D = P === l.pJ.HOURS, x = i.useContext(h.GD), L = i.useRef(null), j = i.useContext(y.Aq), M = i.useContext(d.P), k = (0, c.rdh)(M.primaryColor).hex(), U = (0, o.bG)([u.A], () => u.A.useReducedMotion), G = i.useCallback(e => {
-    let t = L.current;
+  } = (0, s.bG)([m.A], () => m.A.getCheckpointData()), {
+    duration: N,
+    unit: I
+  } = (0, f.oO)(e), P = I === o.pJ.HOURS, w = l.useContext(h.GD), T = l.useRef(null), R = l.useContext(y.Aq), L = l.useContext(d.P), D = (0, c.rdh)(L.primaryColor).hex(), k = (0, s.bG)([u.A], () => u.A.useReducedMotion), M = l.useCallback(e => {
+    let t = T.current;
     if (null == t || t.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) return;
     let n = 0,
       r = 1,
-      i = 0;
-    null == j || j((e, t) => (t === v.P7.VOICE && (n = Math.max(e.opacity.get(), 0), r = e.backgroundScale.get(), i = e.backgroundY.get()), null));
+      l = 0;
+    null == R || R((e, t) => (t === C.P7.VOICE && (n = Math.max(e.opacity.get(), 0), r = e.backgroundScale.get(), l = e.backgroundY.get()), null));
     let {
       canvas: a,
-      context: s
+      context: i
     } = e.detail;
-    s.save(), s.globalAlpha = n, s.globalCompositeOperation = "screen";
-    let o = a.width / 2,
-      l = a.height / 2;
-    s.translate(o, l), s.scale(r, r), s.translate(-o, -l), s.translate(0, i), (0, _.A)(t, a, s, N), s.restore()
-  }, [j]);
-  i.useEffect(() => (x.addEventListener("frame", G), () => x.removeEventListener("frame", G)), [x, G]), i.useEffect(() => {
-    null != L.current && U && (L.current.currentTime = w)
-  }, [U]);
+    i.save(), i.globalAlpha = n, i.globalCompositeOperation = "screen";
+    let s = a.width / 2,
+      o = a.height / 2;
+    i.translate(s, o), i.scale(r, r), i.translate(-s, -o), i.translate(0, l), (0, p.A)(t, a, i, 100), i.restore()
+  }, [R]);
+  l.useEffect(() => (w.addEventListener("frame", M), () => w.removeEventListener("frame", M)), [w, M]), l.useEffect(() => {
+    null != T.current && k && (T.current.currentTime = 1)
+  }, [k]);
   let {
-    monthName: V
-  } = (0, p.od)(n, I.intl.currentLocale), F = null != t;
-  return (0, r.jsxs)(E.A, {
+    monthName: H
+  } = (0, f.od)(n, A.intl.currentLocale);
+  return (0, r.jsxs)(x.A, {
     children: [(0, r.jsx)(a.A, {
-      autoPlay: !U,
+      autoPlay: !k,
       muted: true,
       loop: true,
       playsInline: true,
-      className: T.R,
-      ref: L,
+      className: E.R,
+      ref: T,
       "aria-hidden": true,
       children: (0, r.jsx)("source", {
-        src: C.A,
+        src: S.A,
         type: "video/webm"
       })
     }), (0, r.jsxs)("div", {
-      className: T.Qs,
+      className: E.Qs,
       children: [(0, r.jsxs)("div", {
-        className: S.DD,
-        children: [(0, r.jsx)(s.cNw, {
+        className: O.DD,
+        children: [(0, r.jsx)(i.cNw, {
           size: "refresh_sm",
-          color: k,
-          className: S.gr,
-          colorClass: S.d7
-        }), D ? (0, r.jsx)(b.A, {
+          color: D,
+          className: O.gr,
+          colorClass: O.d7
+        }), P ? (0, r.jsx)(v.A, {
           variant: "eyebrow",
-          className: S.UP,
-          children: I.intl.format(A.default.Xu0QsX, {
-            numHours: R
+          className: O.UP,
+          children: A.intl.format(_.default.Xu0QsX, {
+            numHours: N
           })
-        }) : (0, r.jsx)(b.A, {
+        }) : (0, r.jsx)(v.A, {
           variant: "eyebrow",
-          className: S.UP,
-          children: I.intl.format(A.default.UZbUtl, {
-            numMinutes: R
+          className: O.UP,
+          children: A.intl.format(_.default.UZbUtl, {
+            numMinutes: N
           })
         })]
-      }), (0, r.jsx)(O.A, {
-        end: R,
+      }), (0, r.jsx)(j.A, {
+        end: N,
         alignment: "center"
-      }), (0, r.jsx)(b.A, {
+      }), (0, r.jsx)(v.A, {
         variant: "heading-xxl/medium",
-        className: T.VA,
-        children: F ? I.intl.format(A.default["36PZwu"], {
+        className: E.VA,
+        children: null != t ? A.intl.format(_.default["36PZwu"], {
           percent: 100 - t,
-          percentHook: (e, t) => (0, r.jsx)(m.A, {
+          percentHook: (e, t) => (0, r.jsx)(b.A, {
             children: e
           }, t)
-        }) : I.intl.format(A.default.VaydtR, {
-          month: V,
-          monthHook: (e, t) => (0, r.jsx)(m.A, {
+        }) : A.intl.format(_.default.VaydtR, {
+          month: H,
+          monthHook: (e, t) => (0, r.jsx)(b.A, {
             children: e
           }, t)
         })
       }), (0, r.jsx)(g.e, {
-        slide: v.P7.VOICE
+        slide: C.P7.VOICE
       })]
     })]
   })

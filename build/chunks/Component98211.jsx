@@ -35,8 +35,8 @@ let p = e => {
         children: [!n && (0, r.jsx)(a.k, {}), (0, r.jsxs)(i.Text, {
           variant: "text-xs/normal",
           className: f.Us,
-          children: [(0, s.$g)(E.price, E.currency), " ", d.intl.format(d.t.isLGyX, {
-            period: (0, o.cV)({
+          children: [(0, o.$g)(E.price, E.currency), " ", d.intl.format(d.t.isLGyX, {
+            period: (0, s.cV)({
               interval: E.interval,
               interval_count: E.interval_count
             })

@@ -21,7 +21,7 @@ function c(e, t, n) {
 }
 
 function u() {
-  return (0, s.Lb)({
+  return (0, o.Lb)({
     location: "VoiceFiltersCatalogManager",
     autoTrackExposure: false
   })
@@ -40,7 +40,7 @@ class d extends Chunk439372.A {
   }
   _scheduleNextRollover() {
     clearTimeout(this.rolloverTimeout);
-    let e = o.A.getLimitedTimeVoices();
+    let e = s.A.getLimitedTimeVoices();
     if (null == e) return;
     let t = new Date(e.current_set_end).getTime() - new Date().getTime(),
       n = new Date(e.next_set_end).getTime() - new Date().getTime();

@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk122641 = require("./122641.jsx"),
   Chunk985018 = require("./985018.jsx"),
@@ -44,7 +44,7 @@ class _ extends(r = Chunk64700.PureComponent) {
       className: n,
       sliderWrapperClassName: r,
       sliderClassName: a,
-      currentWindow: s,
+      currentWindow: o,
       muted: f,
       minValue: _,
       maxValue: h,
@@ -57,7 +57,7 @@ class _ extends(r = Chunk64700.PureComponent) {
       dragging: O
     } = this.state, v = l.HKD;
     return f || m === _ ? v = l._RO : m < h / 2 && (v = l.S24), (0, i.jsxs)("div", {
-      className: o()(n, d.kL),
+      className: s()(n, d.kL),
       onMouseEnter: () => {
         clearTimeout(this._hoverTimeout), this.setState({
           hovered: true
@@ -75,7 +75,7 @@ class _ extends(r = Chunk64700.PureComponent) {
       }),
       onKeyDown: this.handleKeyDown,
       children: [(0, i.jsx)("div", {
-        className: o()(d.QS, r, {
+        className: s()(d.QS, r, {
           [d.OZ]: y || b || O
         }),
         onMouseEnter: () => {
@@ -96,7 +96,7 @@ class _ extends(r = Chunk64700.PureComponent) {
           onDrag: this.handleValueChange,
           onDragStart: this.handleDragStart,
           onDragEnd: this.handleDragEnd,
-          currentWindow: s,
+          currentWindow: o,
           ref: this._mediaBar
         })
       }), (0, i.jsx)(l.DUT, {

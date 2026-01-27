@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk235986 = require("./235986.jsx"),
   Chunk967626 = require("./967626.js");
@@ -20,7 +20,7 @@ class u extends Chunk64700.PureComponent {
       className: i
     } = this.props;
     return (0, r.jsx)("div", {
-      className: s()(c.iE, i),
+      className: o()(c.iE, i),
       children: (0, r.jsxs)(l.A, {
         className: c.Bo,
         direction: l.A.Direction.VERTICAL,
@@ -32,7 +32,7 @@ class u extends Chunk64700.PureComponent {
         }), (0, r.jsxs)(l.A.Child, {
           grow: 0,
           className: c.Qq,
-          children: [(0, r.jsx)(o.H, {
+          children: [(0, r.jsx)(s.H, {
             className: c.DD,
             children: t
           }), null != e ? (0, r.jsx)("div", {

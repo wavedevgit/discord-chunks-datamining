@@ -2,13 +2,13 @@
 /** chunk id: 261811, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk173618 = require("./173618.js"),
   Chunk952335 = require("./952335.js"),
   Chunk461213 = require("./461213.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk173618.A {
+class s extends Chunk173618.A {
   getInitialState() {
     return a.A.getLocalPresence()
   }
@@ -43,6 +43,6 @@ class o extends Chunk173618.A {
     this.switchingAccounts = true, this.reset(), this.emitPresenceUpdate(this.getState())
   }
   constructor(e) {
-    super(false), s(this, "socket", true), s(this, "switchingAccounts", true), s(this, "didCommit", true), this.socket = e, this.switchingAccounts = false, this.didCommit = (0, i.A)(5, 2e4, this.emitPresenceUpdate.bind(this))
+    super(false), o(this, "socket", true), o(this, "switchingAccounts", true), o(this, "didCommit", true), this.socket = e, this.switchingAccounts = false, this.didCommit = (0, i.A)(5, 2e4, this.emitPresenceUpdate.bind(this))
   }
 }

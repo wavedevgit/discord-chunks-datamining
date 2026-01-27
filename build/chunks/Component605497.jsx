@@ -15,12 +15,12 @@ function l(e) {
     body: t,
     dismissCallback: n,
     errorCodeMessage: l
-  } = e, c = (0, a.bG)([s.default], () => s.default.getRemoteSessionId());
+  } = e, c = (0, a.bG)([o.default], () => o.default.getRemoteSessionId());
   return (i.useEffect(() => {
     null != c && n()
   }, [c, n]), null == l) ? t : (0, r.jsxs)(r.Fragment, {
     children: [t, (0, r.jsx)("div", {
-      className: o.F,
+      className: s.F,
       children: l
     })]
   })

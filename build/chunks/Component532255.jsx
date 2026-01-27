@@ -3,54 +3,54 @@
 require.a(module, async function(e, r) {
   try {
     t.r(n), t.d(n, {
-      default: () => w
+      default: () => P
     });
     var l = t(627968),
       c = t(64700),
       a = t(223535),
       i = t(484030),
-      s = t(397927),
-      o = t(791606),
+      o = t(397927),
+      s = t(791606),
       u = t(728458),
       d = t(715764),
       h = t(614740),
-      m = t(440801),
+      p = t(440801),
       j = t(4837),
-      p = t(750854),
-      f = t(131765),
-      g = t(167507),
-      x = t(908347),
-      v = t(62849),
-      y = t(558447),
-      b = t(886609),
-      I = t(580019),
-      A = t(985018),
-      O = t(967615),
-      k = e([j, b, a]);
-    [j, b, a] = k.then ? (await k)() : k;
-    let N = {
+      f = t(750854),
+      m = t(131765),
+      y = t(167507),
+      b = t(908347),
+      g = t(62849),
+      v = t(558447),
+      x = t(886609),
+      O = t(580019),
+      w = t(985018),
+      I = t(967615),
+      A = e([j, x, a]);
+    [j, x, a] = A.then ? (await A)() : A;
+    let C = {
       text: d.EY,
       paragraph: d.fz,
       empty: d.Sv,
       emoji: j.z,
-      link: g.N,
-      list: x.B,
-      listItem: x.c,
+      link: y.N,
+      list: b.B,
+      listItem: b.c,
       code: h.C,
-      code_block: m.N,
-      quote: y.P,
-      bold: p.yN,
-      italic: p.J2,
-      underline: p.z2,
-      strikethrough: p.Gk,
-      mention: v.P,
-      heading: f.D,
-      small: f.O,
-      spoiler: b.d,
-      timestamp: I.D
+      code_block: p.N,
+      quote: v.P,
+      bold: f.yN,
+      italic: f.J2,
+      underline: f.z2,
+      strikethrough: f.Gk,
+      mention: g.P,
+      heading: m.D,
+      small: m.O,
+      spoiler: x.d,
+      timestamp: O.D
     };
 
-    function w(e) {
+    function P(e) {
       let {
         content: n
       } = e;
@@ -59,19 +59,19 @@ require.a(module, async function(e, r) {
           let {
             error: t
           } = e;
-          return (0, l.jsx)(P, {
+          return (0, l.jsx)(k, {
             content: n,
             error: t
           })
         },
         children: (0, l.jsx)(a.Ay, {
           content: n,
-          renderers: N
+          renderers: C
         })
       })
     }
 
-    function P(e) {
+    function k(e) {
       let {
         content: n,
         error: t
@@ -81,14 +81,14 @@ require.a(module, async function(e, r) {
       }, [t]), (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)("span", {
           children: n
-        }), (0, l.jsxs)(s.Text, {
+        }), (0, l.jsxs)(o.Text, {
           variant: "text-md/normal",
           color: "text-feedback-critical",
-          className: O.g,
-          children: [(0, l.jsx)(o.A, {
+          className: I.g,
+          children: [(0, l.jsx)(s.A, {
             width: 16,
             height: 16
-          }), A.intl.string(A.t.dpFK4M)]
+          }), w.intl.string(w.t.dpFK4M)]
         })]
       })
     }

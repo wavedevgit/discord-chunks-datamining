@@ -18,7 +18,7 @@ function l(e, t, n) {
     fpsThreshold: d,
     backoffTimeSec: f
   } = a.V.defaultConfig;
-  s.default.track(o.HAw.VIDEO_TOGGLED, {
+  o.default.track(s.HAw.VIDEO_TOGGLED, {
     video_toggle_reason: t,
     toggled_user_id: e,
     rtc_connection_id: null == r ? true : r(),

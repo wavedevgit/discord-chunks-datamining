@@ -2,15 +2,15 @@
 /** chunk id: 959462, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => o
+  J: () => s
 });
 var r, Chunk3388 = require("./3388.js"),
   Chunk64700 = require("./64700.js");
-let s = null != (r = Chunk64700.useInsertionEffect) ? r : Chunk3388.N;
+let o = null != (r = Chunk64700.useInsertionEffect) ? r : Chunk3388.N;
 
-function o(e) {
+function s(e) {
   let t = (0, a.useRef)(null);
-  return s(() => {
+  return o(() => {
     t.current = e
   }, [e]), (0, a.useCallback)((...e) => {
     let n = t.current;

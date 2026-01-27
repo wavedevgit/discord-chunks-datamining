@@ -2,22 +2,22 @@
 /** chunk id: 309954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => o
+  W: () => s
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk786953 = require("./786953.js"),
   Chunk505274 = require("./505274.js");
 
-function o() {
+function s() {
   let {
     balance: e,
     isFetching: t,
     error: n
-  } = (0, i.cf)([s.A], () => ({
-    balance: s.A.balance,
-    isFetching: s.A.isFetchingBalance,
-    error: s.A.fetchBalanceError
+  } = (0, i.cf)([o.A], () => ({
+    balance: o.A.balance,
+    isFetching: o.A.isFetchingBalance,
+    error: o.A.fetchBalanceError
   }));
   return (0, r.useEffect)(() => {
     null !== e || null !== n || t || (0, a.Bf)()

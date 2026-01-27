@@ -22,12 +22,12 @@ var Chunk734057 = require("./734057.js"),
 
 function p(e, t, n) {
   var i, a;
-  let s = null == n ? true : n.permissionOverwrites[e];
+  let o = null == n ? true : n.permissionOverwrites[e];
   return {
     id: e,
     type: t,
-    deny: null != (i = null == s ? true : s.deny) ? i : c.x3,
-    allow: r.TF(null != (a = null == s ? true : s.allow) ? a : c.x3, u.QY)
+    deny: null != (i = null == o ? true : o.deny) ? i : c.x3,
+    allow: r.TF(null != (a = null == o ? true : o.allow) ? a : c.x3, u.QY)
   }
 }
 
@@ -40,15 +40,15 @@ function _(e) {
 }
 
 function h(e) {
-  return (0, i.bG)([l.A, o.A, s.A], () => {
-    let t = s.A.getChannel(e),
-      n = o.A.getGuild(null == t ? true : t.getGuildId());
+  return (0, i.bG)([l.A, s.A, o.A], () => {
+    let t = o.A.getChannel(e),
+      n = s.A.getGuild(null == t ? true : t.getGuildId());
     return !!(l.A.can(f.xBc.ADMINISTRATOR, n) || l.A.can(f.xBc.MANAGE_ROLES, t, true, true, true) || l.A.can(u.Kn, t))
   }, [e])
 }
 
 function m(e) {
-  return (0, i.bG)([s.A, l.A], () => null != e && l.A.can(f.xBc.MUTE_MEMBERS, s.A.getChannel(e)), [e])
+  return (0, i.bG)([o.A, l.A], () => null != e && l.A.can(f.xBc.MUTE_MEMBERS, o.A.getChannel(e)), [e])
 }
 
 function g(e) {

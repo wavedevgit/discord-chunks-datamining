@@ -2,7 +2,7 @@
 /** chunk id: 545934, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk315069 = require("./315069.js");
 
@@ -38,4 +38,4 @@ class a extends Chunk315069.A {
     super(), i(this, "id", true), i(this, "subscriptionId", true), i(this, "premiumGuildSubscription", true), i(this, "canceled", true), i(this, "cooldownEndsAt", true), i(this, "subscription", true), this.id = e.id, this.subscriptionId = e.subscriptionId, this.premiumGuildSubscription = e.premiumGuildSubscription, this.canceled = e.canceled, this.cooldownEndsAt = e.cooldownEndsAt, this.subscription = e.subscription
   }
 }
-let s = a
+let o = a

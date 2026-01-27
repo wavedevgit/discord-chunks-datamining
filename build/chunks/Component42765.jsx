@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 42765, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 42765, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => b
 }), require("./667532.js");
@@ -21,23 +20,20 @@ var Chunk873298 = require("./873298.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
 
-function E(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function y(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
@@ -45,66 +41,66 @@ function y(e) {
 
 function b() {
   var e;
-  let t = null == (e = (0, f.A)()) || e,
-    n = (0, d.uM)(),
-    E = (0, u.G)(),
+  let t = null == (e = (0, _.A)()) || e,
+    n = (0, u.uM)(),
+    b = (0, d.G)(),
     {
-      goreContentGuilds: b,
-      goreContentFriendDm: O,
-      goreContentNonFriendDm: v
+      goreContentGuilds: E,
+      goreContentFriendDm: x,
+      goreContentNonFriendDm: O
     } = (0, c.g)(),
-    A = e => {
+    C = e => {
       let t = Object.values(e);
-      (0, o.hK)() && t.includes(i.TO.SHOW) ? a.A.showAgeVerificationGetStartedModal({
+      (0, a.hK)() && t.includes(i.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
-      }) : (0, l.qY)(e)
+      }) : (0, o.qY)(e)
     },
     I = [{
       value: i.TO.BLUR,
-      label: m.intl.string(m.t.S49Uad)
+      label: A.intl.string(A.t.S49Uad)
     }, {
       value: i.TO.BLOCK,
-      label: m.intl.string(m.t["D/157Y"])
+      label: A.intl.string(A.t["D/157Y"])
     }],
-    S = [{
+    T = [{
       value: i.TO.BLUR,
-      label: m.intl.string(m.t.S49Uad)
+      label: A.intl.string(A.t.S49Uad)
     }],
-    T = {
+    S = {
       value: i.TO.SHOW,
-      label: m.intl.string(m.t["5k5OFp"])
+      label: A.intl.string(A.t["5k5OFp"])
     };
-  t && (I.unshift(T), S.unshift(T));
-  let C = {
-    isDisabled: E,
-    tooltipText: n ? m.intl.string(g.default["6Af/cw"]) : true
+  t && (I.unshift(S), T.unshift(S));
+  let j = {
+    isDisabled: b,
+    tooltipText: n ? A.intl.string(f.default["6Af/cw"]) : true
   };
   return (0, r.jsxs)(p.E, {
-    setting: h.H.GORE_MEDIA_REDACTION,
-    description: m.intl.string(m.t.XgH9eh),
-    children: [(0, r.jsx)(_.A, y({
-      title: m.intl.string(m.t["+uI23H"]),
-      value: O,
-      onChange: e => A({
+    setting: g.H.GORE_MEDIA_REDACTION,
+    description: A.intl.string(A.t.XgH9eh),
+    children: [(0, r.jsx)(m.A, h({
+      title: A.intl.string(A.t["+uI23H"]),
+      value: x,
+      onChange: e => C({
         goreContentFriendDm: e
       }),
       options: I
-    }, C)), (0, r.jsx)(_.A, y({
-      title: m.intl.string(m.t["Yh+HX1"]),
-      value: v,
-      onChange: e => A({
+    }, j)), (0, r.jsx)(m.A, h({
+      title: A.intl.string(A.t["Yh+HX1"]),
+      value: O,
+      onChange: e => C({
         goreContentNonFriendDm: e
       }),
       options: I
-    }, C)), (0, r.jsx)(_.A, {
-      title: m.intl.string(m.t["FP+a42"]),
-      value: b,
-      onChange: e => A({
+    }, j)), (0, r.jsx)(m.A, {
+      title: A.intl.string(A.t["FP+a42"]),
+      value: E,
+      onChange: e => C({
         goreContentGuilds: e
       }),
-      isDisabled: !t || E,
-      options: S,
-      tooltipText: n ? m.intl.string(g.default["6Af/cw"]) : true
+      isDisabled: !t || b,
+      options: T,
+      tooltipText: n ? A.intl.string(f.default["6Af/cw"]) : true
     })]
   })
 }

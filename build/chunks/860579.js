@@ -10,9 +10,9 @@ require.d(exports, {
 var Chunk121894 = require("./121894.js");
 let i = new WeakMap,
   a = new Map,
-  s = new WeakMap;
+  o = new WeakMap;
 
-function o(e) {
+function s(e) {
   return new e.ResizeObserver(e => {
     (0, r.r)(() => {
       for (let t of e) {
@@ -30,8 +30,8 @@ function l(e, t, n) {
   var r, l;
   i.set(t, e), a.set(e, n);
   let c = null != (r = null == (l = t.ownerDocument) ? true : l.defaultView) ? r : window,
-    u = s.get(c);
-  return null == u && (u = o(c), s.set(c, u)), u
+    u = o.get(c);
+  return null == u && (u = s(c), o.set(c, u)), u
 }
 
 function c(e, t) {

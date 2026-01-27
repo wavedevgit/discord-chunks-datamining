@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 676286, original params: e (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 676286, original params: t (module,exports,require) **/
 "use strict";
-module.exports = function(e) {
-  if (true === (e = e || ("u" > typeof document ? document : true))) return null;
+module.exports = function(t) {
+  if (true === (t = t || ("u" > typeof document ? document : true))) return null;
   try {
-    return e.activeElement || e.body
-  } catch (t) {
-    return e.body
+    return t.activeElement || t.body
+  } catch (e) {
+    return t.body
   }
 }

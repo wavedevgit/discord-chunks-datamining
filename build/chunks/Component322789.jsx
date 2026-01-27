@@ -2,8 +2,8 @@
 /** chunk id: 322789, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => N,
-  n: () => T
+  A: () => w,
+  n: () => C
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,12 +20,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk263577 = require("./263577.jsx"),
   Chunk506326 = require("./506326.jsx"),
   Chunk868065 = require("./868065.jsx"),
+  Chunk424994 = require("./424994.js"),
   Chunk518477 = require("./518477.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk22589 = require("./22589.js"),
   Chunk332225 = require("./332225.js");
 
-function v(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +35,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,27 +59,28 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = [Chunk506326.iq, Chunk506326.Zc, Chunk506326.Xy, Chunk506326.$X, Chunk506326.tR, Chunk506326.K7, Chunk506326.fg, Chunk506326.sp, Chunk506326.MK],
-  C = e => {
+let C = [Chunk506326.iq, Chunk506326.Zc, Chunk506326.Xy, Chunk506326.$X, Chunk506326.tR, Chunk506326.K7, Chunk506326.fg, Chunk506326.sp, Chunk506326.MK],
+  N = e => {
     let {
       entry: t,
       channel: n,
       selected: i,
-      hovered: v,
-      isFirstApplicationOccurrence: I
+      hovered: A,
+      isFirstApplicationOccurrence: S,
+      trackRankingItemInteraction: N
     } = e, {
-      largeImage: C
+      largeImage: w
     } = (0, _.nO)({
       entry: t,
       showCoverImage: false
     }), {
-      data: N
-    } = (0, c.YY)(t.extra.application_id), w = (0, l.J)(N) && I, R = w ? [s.M.CLOUD_PLAY_NEW_BADGE] : [], [P] = (0, u.kn)(R);
+      data: R
+    } = (0, c.YY)(t.extra.application_id), P = (0, l.J)(R) && S, D = P ? [o.M.CLOUD_PLAY_NEW_BADGE] : [], [L] = (0, u.kn)(D);
     return (0, r.jsxs)(g.Zp, {
       selected: i,
       usesCardRows: true,
@@ -98,47 +100,47 @@ let T = [Chunk506326.iq, Chunk506326.Zc, Chunk506326.Xy, Chunk506326.$X, Chunk50
                 children: t.extra.game_name
               }), (0, r.jsx)(m.mG, {
                 location: m.N5.CARD,
-                children: T.map((e, n) => (0, r.jsx)(e, {
+                children: C.map((e, n) => (0, r.jsx)(e, {
                   entry: t,
-                  hovered: v
+                  hovered: A
                 }, n))
               })]
             }), (0, r.jsx)(h.V, {
-              alt: null != (i = null == C ? true : C.text) ? i : null == C ? true : C.alt,
-              src: null == C ? true : C.src,
+              alt: null != (i = null == w ? true : w.text) ? i : null == w ? true : w.alt,
+              src: null == w ? true : w.src,
               size: 48,
-              className: O.xn,
-              showTooltip: (null == C ? true : C.text) != null
+              className: v.xn,
+              showTooltip: (null == w ? true : w.text) != null
             })]
           })
         }
-      }), w && (0, r.jsxs)(r.Fragment, {
+      }), P && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.ik, {}), (0, r.jsxs)(g.dM, {
-          className: b.DK,
+          className: O.DK,
           children: [(0, r.jsxs)("div", {
-            className: b.tJ,
-            children: [(0, r.jsx)(o.hpF, {
-              color: o.LU0.colors.ICON_SUBTLE,
+            className: O.tJ,
+            children: [(0, r.jsx)(s.hpF, {
+              color: s.LU0.colors.ICON_SUBTLE,
               size: "xxs"
-            }), (0, r.jsx)(o.Text, {
+            }), (0, r.jsx)(s.Text, {
               variant: "text-xs/normal",
               color: "text-subtle",
-              children: y.intl.string(y.t["5HiF2i"])
+              children: b.intl.string(b.t["5HiF2i"])
             })]
-          }), P === s.M.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.LpS, {
-            text: y.intl.string(y.t.y2b7CA),
-            color: o.LU0.colors.BACKGROUND_BRAND.css
+          }), L === o.M.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(s.LpS, {
+            text: b.intl.string(b.t.y2b7CA),
+            color: s.LU0.colors.BACKGROUND_BRAND.css
           })]
         })]
-      }), "applicationWidgetPreview" in t && null != t.applicationWidgetPreview && (0, r.jsx)(p.F, S(A({}, t.applicationWidgetPreview), {
-        className: b.AB,
+      }), "applicationWidgetPreview" in t && null != t.applicationWidgetPreview && (0, r.jsx)(p.F, T(I({}, t.applicationWidgetPreview), {
+        className: O.AB,
         onClickViewMore: () => {
-          (0, f.openUserProfileModal)({
+          N(E.PA.APPLICATION_WIDGET_PREVIEW_VIEW_MORE), (0, f.openUserProfileModal)({
             userId: t.author_id,
-            tabSection: E.RP.WIDGETS
+            tabSection: y.RP.WIDGETS
           })
         }
       }))]
     })
   },
-  N = Chunk64700.memo(C)
+  w = Chunk64700.memo(N)

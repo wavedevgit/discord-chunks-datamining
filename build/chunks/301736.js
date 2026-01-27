@@ -19,7 +19,7 @@ function l() {
     analyticsLocations: t
   } = (0, r.Ay)();
   if ((0, a.Pi)()) return () => {
-    (0, s.A)(e ? o.J.MY_GAMES : o.J.ACTIVITY_PRIVACY, {
+    (0, o.A)(e ? s.J.MY_GAMES : s.J.ACTIVITY_PRIVACY, {
       analyticsLocations: t
     })
   }

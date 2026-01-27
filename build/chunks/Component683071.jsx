@@ -2,7 +2,7 @@
 /** chunk id: 683071, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => s
+  w: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,15 +21,15 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   let {
     type: t,
     hidden: n,
-    children: s
+    children: o
   } = e;
   return (0, r.jsx)(i.p, {
     messageType: a(t),
     hidden: n,
-    children: s
+    children: o
   })
 }

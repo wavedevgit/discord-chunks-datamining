@@ -9,7 +9,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk770178 = require("./770178.js"),
   Chunk765548 = require("./765548.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -60,10 +60,10 @@ let d = {
 
 function p(e) {
   return i.forwardRef(function(t, n) {
-    let [o, c] = i.useState({
+    let [s, c] = i.useState({
       width: 0,
       height: 0
-    }), p = (0, s.A)(e => {
+    }), p = (0, o.A)(e => {
       if (null != e) {
         let {
           width: t,
@@ -74,7 +74,7 @@ function p(e) {
           height: n
         })
       }
-    }), _ = (0, s.A)(e => {
+    }), _ = (0, o.A)(e => {
       p(e.contentRect)
     }), h = (0, a.w)(_);
     return i.useImperativeHandle(n, () => ({
@@ -86,8 +86,8 @@ function p(e) {
       ref: h,
       style: d,
       children: (0, r.jsx)(e, u(l({}, t), {
-        width: o.width,
-        height: o.height,
+        width: s.width,
+        height: s.height,
         style: f
       }))
     })

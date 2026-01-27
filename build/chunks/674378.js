@@ -4,7 +4,7 @@
 require.d(exports, {
   Tr: () => d,
   XZ: () => _,
-  gW: () => o,
+  gW: () => s,
   kv: () => c,
   r0: () => l,
   uA: () => u,
@@ -16,7 +16,7 @@ var Chunk253932 = require("./253932.js"),
   Chunk67480 = require("./67480.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t) {
+function s(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
@@ -29,9 +29,9 @@ function l(e) {
 }
 
 function c(e, t) {
-  if (!r.tz.getSetting() || r.jP.getSetting() === s.clD.INVISIBLE) returnfalse;
+  if (!r.tz.getSetting() || r.jP.getSetting() === o.clD.INVISIBLE) returnfalse;
   let n = t.getActiveLibraryApplication(e);
-  return null == n || !n.hasFlag(s.hM6.PRIVATE)
+  return null == n || !n.hasFlag(o.hM6.PRIVATE)
 }
 
 function u(e, t) {
@@ -39,17 +39,17 @@ function u(e, t) {
 }
 
 function d(e, t, n) {
-  return !(null == t || n.enabled && t.hasFlag(s.hM6.PRIVATE)) && !t.isHidden()
+  return !(null == t || n.enabled && t.hasFlag(o.hM6.PRIVATE)) && !t.isHidden()
 }
 
 function f(e) {
-  return null == e ? null : e.type === s.WTw.INSTALLING || e.type === s.WTw.UPDATING || e.type === s.WTw.UNINSTALLING ? e : null
+  return null == e ? null : e.type === o.WTw.INSTALLING || e.type === o.WTw.UPDATING || e.type === o.WTw.UNINSTALLING ? e : null
 }
 
 function p(e) {
   return e.reduce((e, t) => {
     let n = f(t);
-    return null == n || t.type === s.WTw.UP_TO_DATE ? e : {
+    return null == n || t.type === o.WTw.UP_TO_DATE ? e : {
       total: e.total + Number(n.total),
       progress: e.progress + Number(n.progress)
     }

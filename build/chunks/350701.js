@@ -12,7 +12,7 @@ var Chunk734057 = require("./734057.js"),
 
 function l(e, t, n) {
   var l, c;
-  s.default.track(o.HAw.VOICE_CALL_TRANSFER, {
+  o.default.track(s.HAw.VOICE_CALL_TRANSFER, {
     source_platform: null != n ? null == (l = a.A.getSessionById(n)) ? true : l.clientInfo.os : "discord_client",
     guild_id: null == (c = r.A.getChannel(e)) ? true : c.guild_id,
     channel_id: e,

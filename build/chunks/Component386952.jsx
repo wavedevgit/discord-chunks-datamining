@@ -1,40 +1,36 @@
-/** Chunk was on web.js **/
-/** chunk id: 386952, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93140 **/
+/** chunk id: 386952, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  e: () => c
+  e: () => s
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk968338 = require("./968338.js");
-let l = 2;
 
-function c() {
+function s() {
   let [e, t] = i.useState(false);
-
-  function n(e) {
-    let {
-      showAll: n = false,
-      className: i,
-      children: a,
-      lineClamp: c = l
-    } = e, u = {
-      lineClamp: c,
-      WebkitLineClamp: c
-    }, d = e => {
-      null != e && t(e.scrollHeight - e.clientHeight > 1)
-    };
-    return (0, r.jsx)("div", {
-      ref: d,
-      className: s()(o.I, i),
-      style: n ? true : u,
-      children: a
-    })
-  }
   return {
     isTruncated: e,
-    ExpandableTextContainer: i.memo(n)
+    ExpandableTextContainer: i.memo(function(e) {
+      let {
+        showAll: n = false,
+        className: i,
+        children: l,
+        lineClamp: s = 2
+      } = e;
+      return (0, r.jsx)("div", {
+        ref: e => {
+          null != e && t(e.scrollHeight - e.clientHeight > 1)
+        },
+        className: o()(a.I, i),
+        style: n ? true : {
+          lineClamp: s,
+          WebkitLineClamp: s
+        },
+        children: l
+      })
+    })
   }
 }

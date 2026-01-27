@@ -2,7 +2,7 @@
 /** chunk id: 792251, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => s,
+  M: () => o,
   w: () => a
 });
 let r = 2.8,
@@ -15,7 +15,7 @@ function a(e) {
   return (t = a < 1 ? Math.pow(a, r) : Math.pow(10, (a - 1) * i / 20)) * n
 }
 
-function s(e) {
+function o(e) {
   let t, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 100;
   if (0 === e) return 0;
   let a = e / n;

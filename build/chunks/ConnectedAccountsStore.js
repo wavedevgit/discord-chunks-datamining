@@ -58,7 +58,7 @@ let _ = new Set([require("./652215.js").fg2.CONTACTS]),
   b = {},
   O = {},
   v = e => {
-    m = e.filter(e => !_.has(e.type) && o.A.isSupported(e.type)), g = e.filter(e => _.has(e.type)), h = false
+    m = e.filter(e => !_.has(e.type) && s.A.isSupported(e.type)), g = e.filter(e => _.has(e.type)), h = false
   };
 
 function A(e) {
@@ -72,7 +72,7 @@ function I(e) {
         features: []
       }))
     }))
-  })))) : s.A.fetch()
+  })))) : o.A.fetch()
 }
 
 function S(e) {
@@ -101,7 +101,7 @@ function N(e) {
     openid_params: r,
     provider: i
   } = e;
-  s.A.callback(i, {
+  o.A.callback(i, {
     code: t,
     state: n,
     openid_params: r

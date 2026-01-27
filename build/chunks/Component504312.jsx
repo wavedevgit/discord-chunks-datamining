@@ -38,7 +38,7 @@ let f = {
         amount: false
       }), (0, r.jsx)("div", {
         className: d.SG,
-        children: (0, r.jsx)(o.Vm, {
+        children: (0, r.jsx)(s.Vm, {
           label: t,
           lineItems: a,
           currency: c.Yri.USD
@@ -81,37 +81,37 @@ let f = {
       } = e, [g, E] = i.useState(0);
       return (0, r.jsxs)("div", {
         className: d.Cd,
-        children: [(0, r.jsx)(o.q7, {
+        children: [(0, r.jsx)(s.q7, {
           selection: g,
           onChange: E,
           planOptions: [{
             id: 0,
-            title: (0, r.jsx)(o.ec, {
+            title: (0, r.jsx)(s.ec, {
               size: "sm",
               color: "text-strong",
               premiumType: t
             }),
             titleDescriber: n,
             primaryText: a,
-            subtext: c ? (0, r.jsx)(o.Lo, {
+            subtext: c ? (0, r.jsx)(s.Lo, {
               strikethrough: u,
               price: l
             }) : true
           }, {
             id: 1,
-            title: (0, r.jsx)(o.ec, {
+            title: (0, r.jsx)(s.ec, {
               size: "sm",
               color: "text-strong",
               premiumType: t
             }),
             titleDescriber: f,
             primaryText: p,
-            subtext: h ? (0, r.jsx)(o.Lo, {
+            subtext: h ? (0, r.jsx)(s.Lo, {
               strikethrough: m,
               price: _
             }) : true
           }]
-        }), (0, r.jsxs)(s.Text, {
+        }), (0, r.jsxs)(o.Text, {
           variant: "text-sm/normal",
           children: ["Selected plan index: ", g]
         })]
@@ -197,13 +197,13 @@ let f = {
         id: 2,
         label: "Server Boost",
         amount: 499,
-        icon: (0, r.jsx)(s.tvc, {
+        icon: (0, r.jsx)(o.tvc, {
           size: "xs"
         })
       }] : [];
       return (0, r.jsx)("div", {
         className: d.SG,
-        children: (0, r.jsx)(o._D, {
+        children: (0, r.jsx)(s._D, {
           label: t,
           lineItems: i,
           intervalType: u.WT.MONTH,
@@ -243,13 +243,13 @@ let f = {
       } = e;
 
       function m(e, d) {
-        return (0, r.jsx)(o.f7, {
+        return (0, r.jsx)(s.f7, {
           header: n ? t : true,
           headerIconSrc: "https://cdn.discordapp.com/embed/avatars/1.png",
           label: "".concat(i, " ").concat(d),
           description: a,
           price: l,
-          PriceIcon: c ? s.tvc : true,
+          PriceIcon: c ? o.tvc : true,
           strikethroughPrice: u ? f : true,
           graphic: (0, r.jsx)(e, {}),
           gift: p ? {
@@ -261,7 +261,7 @@ let f = {
       }
       return (0, r.jsxs)("div", {
         className: d.SG,
-        children: [m(o.JW, "Nitro"), m(o.DH, "Nitro Basic"), m(o.a6, "Boost"), m(o.jw, "App"), m(o.oo, "Nitro Credit")]
+        children: [m(s.JW, "Nitro"), m(s.DH, "Nitro Basic"), m(s.a6, "Boost"), m(s.jw, "App"), m(s.oo, "Nitro Credit")]
       })
     },
     controls: {
@@ -348,7 +348,7 @@ let f = {
         icon: l.Be.AMEX
       }], [f, p] = i.useState(d[0].id);
       return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.v7, {
+        children: [(0, r.jsx)(s.v7, {
           label: t,
           value: f,
           options: d,
@@ -356,7 +356,7 @@ let f = {
           onNew: a.noop,
           disabled: n,
           error: c ? u : true
-        }), (0, r.jsxs)(s.Text, {
+        }), (0, r.jsxs)(o.Text, {
           variant: "text-sm/normal",
           children: ["Selected payment: ", null != f ? f : "None"]
         })]

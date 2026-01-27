@@ -8,9 +8,9 @@ var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk508675 = require("./508675.js"),
   Chunk492494 = require("./492494.js");
-let o = [];
+let s = [];
 
 function l(e) {
   let t = (0, i.bG)([a.Ay], () => a.Ay.getGuildEmoji(e), [e]);
-  return r.useMemo(() => null == t ? o : t.filter(t => (0, s.Eg)(t, e)), [t, e])
+  return r.useMemo(() => null == t ? s : t.filter(t => (0, o.Eg)(t, e)), [t, e])
 }

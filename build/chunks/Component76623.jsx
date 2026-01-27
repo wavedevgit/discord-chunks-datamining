@@ -31,7 +31,7 @@ function d(e) {
       className: u.kL,
       children: (0, r.jsxs)("div", {
         className: u.g3,
-        children: [(0, r.jsx)(s.E, {
+        children: [(0, r.jsx)(o.E, {
           color: "text-default",
           className: a()(u.Qq, u.a3),
           variant: "text-sm/normal",
@@ -40,7 +40,7 @@ function d(e) {
           })
         }), (0, r.jsx)("div", {
           className: u.o1,
-          children: (0, r.jsx)(o.x, {
+          children: (0, r.jsx)(s.x, {
             onClick: d
           })
         })]

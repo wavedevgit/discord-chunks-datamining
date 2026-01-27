@@ -3,10 +3,10 @@
 "use strict";
 let r, i;
 require.r(exports), require.d(exports, {
-  default: () => Q
+  default: () => X
 }), require("./321073.js"), require("./896048.js");
 var a, Chunk735438 = require("./735438.js"),
-  o = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk824953 = require("./824953.js"),
@@ -86,11 +86,11 @@ function R(e) {
 function P() {
   r = null, g = [], E = [], y = null, b = null, O = null, I = _.XlH.CLOSED, T = false
 }
-let D = o().debounce(() => {
-  T && (null != b ? o().isEqual(b, z(b.id)) && (T = false) : null != O && o().isEqual(O, q(O.id)) && (T = false), T || X.emitChange())
+let D = s().debounce(() => {
+  T && (null != b ? s().isEqual(b, z(b.id)) && (T = false) : null != O && s().isEqual(O, q(O.id)) && (T = false), T || Q.emitChange())
 }, 500);
 
-function x(e) {
+function L(e) {
   let {
     settings: t
   } = e;
@@ -98,7 +98,7 @@ function x(e) {
   b = m({}, b), null != t.enableEmoticons && b.enable_emoticons !== t.enableEmoticons && (b.enable_emoticons = t.enableEmoticons, T = true), null != t.expireBehavior && b.expire_behavior !== t.expireBehavior && (b.expire_behavior = t.expireBehavior, T = true), null != t.expireGracePeriod && b.expire_grace_period !== t.expireGracePeriod && (b.expire_grace_period = t.expireGracePeriod, T = true), T && D()
 }
 
-function L(e) {
+function x(e) {
   let {
     settings: t
   } = e;
@@ -106,11 +106,11 @@ function L(e) {
   O = m({}, O), null != t.name && O.name !== t.name && (O.name = t.name, T = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, T = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, T = true), T && D()
 }
 
-function j() {
+function M() {
   I = _.XlH.SUBMITTING, S = {}
 }
 
-function M(e) {
+function j(e) {
   var t;
   if (I !== _.XlH.SUBMITTING) returnfalse;
   I = _.XlH.OPEN, S = null != (t = e.errors) ? t : {}
@@ -185,7 +185,7 @@ function G(e) {
   y = t, b = null, O = null, S = {}, T = true
 }
 
-function V(e) {
+function F(e) {
   let {
     commandId: t
   } = e;
@@ -193,7 +193,7 @@ function V(e) {
   y = null, S = {}, T = false
 }
 
-function F(e) {
+function V(e) {
   let {
     integrationId: t
   } = e, n = z(t);
@@ -300,24 +300,24 @@ class Z extends(a = Chunk311907.Ay.Store) {
   }
 }
 h(Z, "displayName", "GuildSettingsIntegrationsStore");
-let X = new Z(Chunk73153.h, __OVERLAY__ ? {} : {
+let Q = new Z(Chunk73153.h, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_INIT: W,
     INTEGRATION_SETTINGS_SAVE_SUCCESS: K,
     GUILD_SETTINGS_INIT: N,
     GUILD_SETTINGS_SET_SECTION: N,
     INTEGRATION_SETTINGS_SET_SECTION: w,
     INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
-    INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: V,
-    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: F,
+    INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: F,
+    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: V,
     INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: B,
-    INTEGRATION_SETTINGS_UPDATE_INTEGRATION: x,
-    INTEGRATION_SETTINGS_UPDATE_WEBHOOK: L,
+    INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
+    INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: H,
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: Y,
     GUILD_SETTINGS_CLOSE: P,
     GUILD_SETTINGS_LOADED_INTEGRATIONS: k,
     WEBHOOKS_UPDATE: U,
-    INTEGRATION_SETTINGS_SUBMITTING: j,
-    INTEGRATION_SETTINGS_SAVE_FAILURE: M
+    INTEGRATION_SETTINGS_SUBMITTING: M,
+    INTEGRATION_SETTINGS_SAVE_FAILURE: j
   }),
-  Q = X
+  X = Q

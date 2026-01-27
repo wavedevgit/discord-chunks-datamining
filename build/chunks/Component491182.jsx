@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk473193 = require("./473193.js"),
   Chunk397927 = require("./397927.js"),
@@ -100,25 +100,25 @@ let O = function(e) {
     hasThread: R,
     isSystemMessage: P,
     hasReply: D,
-    author: x,
-    onMouseEnter: L,
-    onMouseLeave: j
-  } = e, M = y(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]), k = (0, o.bG)([p.A], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : p.A.getRole(x.guildId, x.colorRoleId)), U = (0, f.jV)(null == x ? true : x.guildId, k) && (0, d.kz)(x), [G, V] = i.useState(false), F = i.useCallback(e => {
-    V(true), null == L || L(e)
-  }, [L]), B = i.useCallback(e => {
-    V(false), null == j || j(e)
-  }, [j]), H = (0, u.W)({
+    author: L,
+    onMouseEnter: x,
+    onMouseLeave: M
+  } = e, j = y(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]), k = (0, s.bG)([p.A], () => (null == L ? true : L.guildId) == null || (null == L ? true : L.colorRoleId) == null ? null : p.A.getRole(L.guildId, L.colorRoleId)), U = (0, f.jV)(null == L ? true : L.guildId, k) && (0, d.kz)(L), [G, F] = i.useState(false), V = i.useCallback(e => {
+    F(true), null == x || x(e)
+  }, [x]), B = i.useCallback(e => {
+    F(false), null == M || M(e)
+  }, [M]), H = (0, u.W)({
     location: "BaseMessage"
   }), Y = (0, r.jsx)(l.C.Provider, {
     value: {
       animate: G,
-      setAnimate: V
+      setAnimate: F
     },
     children: (0, r.jsx)(c.vN3, E(m({}, w), {
       children: (0, r.jsxs)("div", E(m({
-        className: s()(t, {
+        className: o()(t, {
           [_.D7]: U,
-          [_.e8]: H && (null == x ? true : x.displayNameStyles) != null && (null == x ? true : x.guildId) == null,
+          [_.e8]: H && (null == L ? true : L.displayNameStyles) != null && (null == L ? true : L.guildId) == null,
           [_.iE]: true,
           [_.kl]: a,
           [_.oE]: n,
@@ -130,9 +130,9 @@ let O = function(e) {
           [_.h8]: D
         }),
         ref: N
-      }, M), {
+      }, j), {
         role: "article",
-        onMouseEnter: F,
+        onMouseEnter: V,
         onMouseLeave: B,
         children: [O, v, (0, r.jsxs)("div", {
           className: _.PG,

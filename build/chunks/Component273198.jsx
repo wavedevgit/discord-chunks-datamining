@@ -26,10 +26,10 @@ function y(e) {
 }
 let b = (e, t, n, r) => {
     let i = y(r),
-      a = o.Ay.getName(t.guild_id, t.id, n),
-      s = e.extra.game_name;
+      a = s.Ay.getName(t.guild_id, t.id, n),
+      o = e.extra.game_name;
     return E.intl.formatToMarkdownString(i, {
-      gameName: s,
+      gameName: o,
       userName: a
     }).replaceAll("*", "")
   },
@@ -42,7 +42,7 @@ let b = (e, t, n, r) => {
       channel: t,
       entry: n,
       disableGameProfileLinks: a,
-      onReaction: o,
+      onReaction: s,
       onVoiceChannelPreview: y
     } = e, {
       largeImage: v
@@ -62,7 +62,7 @@ let b = (e, t, n, r) => {
         avatarSrcs: [A.getAvatarURL(null == t ? true : t.guild_id, 128)],
         description: b(n, t, A, w),
         timestamp: E.intl.formatToPlainString(E.t.YL7UE3, {
-          hours: Math.round(N / s.A.Seconds.HOUR)
+          hours: Math.round(N / o.A.Seconds.HOUR)
         }),
         colors: [T, C],
         channelId: e
@@ -90,7 +90,7 @@ let b = (e, t, n, r) => {
         disableGameProfileLinks: a
       }), (0, r.jsx)(h.Eh, {
         children: (0, r.jsx)(h.fD, {
-          onReaction: o,
+          onReaction: s,
           onVoiceChannelPreview: y,
           user: A,
           channel: t,

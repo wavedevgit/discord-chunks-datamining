@@ -76,7 +76,7 @@ function h(e) {
 }
 
 function m(e) {
-  return (0, i.bG)([s.A], () => (0, o.N8)(s.A.getSortedRoles(e.id)), [e]) ? (0, r.jsx)(a.Drp, {
+  return (0, i.bG)([o.A], () => (0, s.N8)(o.A.getSortedRoles(e.id)), [e]) ? (0, r.jsx)(a.Drp, {
     id: "guild-connection-roles",
     label: l.intl.string(l.t.ghtnss),
     icon: a.qYV,

@@ -49,24 +49,24 @@ function m(e, t) {
     }
     throw TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
   }
-  var i, a, s = true,
-    o = false;
+  var i, a, o = true,
+    s = false;
   return {
     s: function() {
       i = e[Symbol.iterator]()
     },
     n: function() {
       var e = i.next();
-      return s = e.done, e
+      return o = e.done, e
     },
     e: function(e) {
-      o = true, a = e
+      s = true, a = e
     },
     f: function() {
       try {
-        s || null == i.return || i.return()
+        o || null == i.return || i.return()
       } finally {
-        if (o) throw a
+        if (s) throw a
       }
     }
   }
@@ -100,25 +100,25 @@ function S(e, t, n, g) {
     v = (0, _.q)(),
     S = null != (w = null != (R = null == g ? true : g.locale) ? R : v.locale) ? w : r.A;
   if (!S.match) throw RangeError("locale must contain match property");
-  var C = (0, u.A)(null != (P = null != (D = null != (x = null != (L = null == g ? true : g.firstWeekContainsDate) ? L : null == g || null == (j = g.locale) || null == (M = j.options) ? true : M.firstWeekContainsDate) ? x : v.firstWeekContainsDate) ? D : null == (k = v.locale) || null == (U = k.options) ? true : U.firstWeekContainsDate) ? P : 1);
+  var C = (0, u.A)(null != (P = null != (D = null != (L = null != (x = null == g ? true : g.firstWeekContainsDate) ? x : null == g || null == (M = g.locale) || null == (j = M.options) ? true : j.firstWeekContainsDate) ? L : v.firstWeekContainsDate) ? D : null == (k = v.locale) || null == (U = k.options) ? true : U.firstWeekContainsDate) ? P : 1);
   if (!(C >= 1 && C <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
-  var N = (0, u.A)(null != (G = null != (V = null != (F = null != (B = null == g ? true : g.weekStartsOn) ? B : null == g || null == (H = g.locale) || null == (Y = H.options) ? true : Y.weekStartsOn) ? F : v.weekStartsOn) ? V : null == (W = v.locale) || null == (K = W.options) ? true : K.weekStartsOn) ? G : 0);
+  var N = (0, u.A)(null != (G = null != (F = null != (V = null != (B = null == g ? true : g.weekStartsOn) ? B : null == g || null == (H = g.locale) || null == (Y = H.options) ? true : Y.weekStartsOn) ? V : v.weekStartsOn) ? F : null == (W = v.locale) || null == (K = W.options) ? true : K.weekStartsOn) ? G : 0);
   if (!(N >= 0 && N <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   if ("" === O)
     if ("" === E) return (0, a.default)(n);
     else return new Date(NaN);
-  var w, R, P, D, x, L, j, M, k, U, G, V, F, B, H, Y, W, K, z, q = {
+  var w, R, P, D, L, x, M, j, k, U, G, F, V, B, H, Y, W, K, z, q = {
       firstWeekContainsDate: C,
       weekStartsOn: N,
       locale: S
     },
     Z = [new f.Je],
-    X = O.match(b).map(function(e) {
+    Q = O.match(b).map(function(e) {
       var t = e[0];
-      return t in o.A ? (0, o.A[t])(e, S.formatLong) : e
+      return t in s.A ? (0, s.A[t])(e, S.formatLong) : e
     }).join("").match(y),
-    Q = [],
-    J = m(X);
+    X = [],
+    J = m(Q);
   try {
     var $ = function() {
       var t = z.value;
@@ -128,20 +128,20 @@ function S(e, t, n, g) {
       if (r) {
         var i = r.incompatibleTokens;
         if (Array.isArray(i)) {
-          var a = Q.find(function(e) {
+          var a = X.find(function(e) {
             return i.includes(e.token) || e.token === n
           });
           if (a) throw RangeError("The format string mustn't contain `".concat(a.fullToken, "` and `").concat(t, "` at the same time"))
-        } else if ("*" === r.incompatibleTokens && Q.length > 0) throw RangeError("The format string mustn't contain `".concat(t, "` and any other token at the same time"));
-        Q.push({
+        } else if ("*" === r.incompatibleTokens && X.length > 0) throw RangeError("The format string mustn't contain `".concat(t, "` and any other token at the same time"));
+        X.push({
           token: n,
           fullToken: t
         });
-        var s = r.run(E, t, S.match, q);
-        if (!s) return {
+        var o = r.run(E, t, S.match, q);
+        if (!o) return {
           v: new Date(NaN)
         };
-        Z.push(s.setter), E = s.rest
+        Z.push(o.setter), E = o.rest
       } else {
         if (n.match(I)) throw RangeError("Format string contains an unescaped latin alphabet character `" + n + "`");
         if ("''" === t ? t = "'" : "'" === n && (t = T(t)), 0 !== E.indexOf(t)) return {
@@ -179,18 +179,18 @@ function S(e, t, n, g) {
   if (isNaN(en.getTime())) return new Date(NaN);
   var er, ei = (0, i.A)(en, (0, l.A)(en)),
     ea = {},
-    es = m(et);
+    eo = m(et);
   try {
-    for (es.s(); !(er = es.n()).done;) {
-      var eo = er.value;
-      if (!eo.validate(ei, q)) return new Date(NaN);
-      var el = eo.set(ei, ea, q);
-      Array.isArray(el) ? (ei = el[0], (0, s.A)(ea, el[1])) : ei = el
+    for (eo.s(); !(er = eo.n()).done;) {
+      var es = er.value;
+      if (!es.validate(ei, q)) return new Date(NaN);
+      var el = es.set(ei, ea, q);
+      Array.isArray(el) ? (ei = el[0], (0, o.A)(ea, el[1])) : ei = el
     }
   } catch (e) {
-    es.e(e)
+    eo.e(e)
   } finally {
-    es.f()
+    eo.f()
   }
   return ei
 }

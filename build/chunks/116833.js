@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   DynamicGraphicComponent: () => i,
-  Q: () => s,
+  Q: () => o,
   m: () => a
 });
 var Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ let a = {
     7: () => n.e("58407").then(n.bind(n, 939034)),
     8: () => n.e("823").then(n.bind(n, 713290))
   },
-  s = {
+  o = {
     0: Chunk64700.lazy(a[0]),
     1: Chunk64700.lazy(a[1]),
     2: Chunk64700.lazy(a[2]),

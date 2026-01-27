@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 8271, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 8271, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,22 +16,22 @@ var Chunk632553 = require("./632553.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
 
-function _() {
-  let e = o.vf.useSetting(),
-    t = o.H1.useSetting(),
-    n = (0, a.uM)(),
-    _ = (0, i.g)();
-  return (0, r.jsx)(l.h, {
-    setting: u.H.PRIVACY_DATA_QUESTS_3P,
+function m() {
+  let e = a.vf.useSetting(),
+    t = a.H1.useSetting(),
+    n = (0, l.uM)(),
+    m = (0, i.g)();
+  return (0, r.jsx)(o.h, {
+    setting: d.H.PRIVACY_DATA_QUESTS_3P,
     children: (0, r.jsx)(c.Ay, {
-      title: f.intl.string(f.t.CyLYKZ),
-      note: f.intl.format(f.t["2QFDU/"], {
-        helpdeskArticle: s.A.getArticleURL(d.MVz.QUESTS_PRIVACY_CONTROLS)
+      title: _.intl.string(_.t.CyLYKZ),
+      note: _.intl.format(_.t["2QFDU/"], {
+        helpdeskArticle: s.A.getArticleURL(u.MVz.QUESTS_PRIVACY_CONTROLS)
       }),
       value: !e,
-      onChange: e => o.vf.updateSetting(!e),
-      disabled: _ || t || n,
-      tooltipText: n ? f.intl.string(p.default["6Af/cw"]) : true
+      onChange: e => a.vf.updateSetting(!e),
+      disabled: m || t || n,
+      tooltipText: n ? _.intl.string(p.default["6Af/cw"]) : true
     })
   })
 }

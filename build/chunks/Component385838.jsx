@@ -11,5 +11,5 @@ var Chunk4005 = require("./4005.jsx"),
   Chunk878163 = require("./878163.jsx"),
   Chunk653239 = require("./653239.jsx");
 let l = () => (0, r.jsxs)(r.Fragment, {
-  children: [(0, r.jsx)(s.A, {}), (0, r.jsx)(i.A, {}), (0, r.jsx)(o.A, {}), (0, r.jsx)(a.A, {})]
+  children: [(0, r.jsx)(o.A, {}), (0, r.jsx)(i.A, {}), (0, r.jsx)(s.A, {}), (0, r.jsx)(a.A, {})]
 })

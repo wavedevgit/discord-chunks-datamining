@@ -2,13 +2,13 @@
 /** chunk id: 391622, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => o
+  e: () => s
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
   Chunk324861 = require("./324861.js"),
   Chunk749226 = require("./749226.js");
-let o = {
+let s = {
   title: "Orb Onboarding",
   stories: [{
     name: "Orb Onboarding Reset",
@@ -18,7 +18,7 @@ let o = {
         resetOnboardingExperience: e
       } = (0, a.A)();
       return (0, r.jsxs)("div", {
-        className: s.YG,
+        className: o.YG,
         children: [(0, r.jsx)(i.Text, {
           variant: "text-md/normal",
           color: "text-feedback-info",

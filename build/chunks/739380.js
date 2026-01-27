@@ -64,7 +64,7 @@ class f {
       skuId: n,
       premiumType: d === l.oA2 ? null : d,
       categorySkuId: p,
-      isCategoryReward: o.MS.some(e => {
+      isCategoryReward: s.MS.some(e => {
         let {
           rewardSkuId: t
         } = e;
@@ -73,7 +73,7 @@ class f {
       prices: (0, a.m)(_),
       items: (0, i.K)(I.items),
       bundledProducts: null == h ? true : h.map(r.A.fromServer),
-      variants: null == m ? true : m.map(s.x.fromServer),
+      variants: null == m ? true : m.map(o.x.fromServer),
       googleSkuIds: I.google_sku_ids,
       eligibleOffers: I.eligible_offers,
       baseVariantName: g,

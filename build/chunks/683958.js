@@ -5,7 +5,7 @@ require.d(exports, {
   CV: () => r,
   eB: () => i,
   fp: () => a,
-  zL: () => s
+  zL: () => o
 });
 let r = {
     domingo: 0,
@@ -69,7 +69,7 @@ let r = {
   },
   a = "[0-9]{1,4}(?![^\\s]\\d)(?:\\s*[a|d]\\.?\\s*c\\.?|\\s*a\\.?\\s*d\\.?)?";
 
-function s(e) {
+function o(e) {
   if (e.match(/^[0-9]{1,4}$/)) {
     let t = parseInt(e);
     return t < 100 && (t > 50 ? t += 1900 : t += 2e3), t

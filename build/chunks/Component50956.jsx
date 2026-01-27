@@ -19,8 +19,8 @@ function u(e) {
   } = e, {
     isGift: n,
     giftRecipient: u
-  } = (0, o.Pv)();
-  return !n || (0, s.Ik)(u) ? null : (0, r.jsx)(a.A, {
+  } = (0, s.Pv)();
+  return !n || (0, o.Ik)(u) ? null : (0, r.jsx)(a.A, {
     className: c.z,
     iconSize: a.A.Sizes.SMALL,
     icon: i.okO,

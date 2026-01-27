@@ -3,24 +3,24 @@
 "use strict";
 require.d(exports, {
   HD: () => l,
-  HS: () => o,
+  HS: () => s,
   M0: () => u,
   NJ: () => m,
   Qp: () => d,
   RQ: () => h,
   UN: () => f,
-  gY: () => s,
+  gY: () => o,
   pH: () => c
 });
 var Chunk573648 = require("./573648.js"),
   Chunk723702 = require("./723702.js"),
   Chunk652215 = require("./652215.js");
-let s = "spotify",
-  o = "spotify:",
+let o = "spotify",
+  s = "spotify:",
   l = Chunk573648.A.get(Chunk652215.fg2.SPOTIFY).name;
 
 function c(e) {
-  return null != e && e.startsWith(o)
+  return null != e && e.startsWith(s)
 }
 var u = function(e) {
     return e.TRACK = "track", e.ARTIST = "artist", e.ALBUM = "album", e.PLAYLIST = "playlist", e.EPISODE = "episode", e.SHOW = "show", e
@@ -50,7 +50,7 @@ let f = ["open.spotify.com", "www.spotify.com"],
     PLAYER_OPEN: function(e, t) {
       let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
         r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "desktop";
-      return "".concat(s, ":").concat(encodeURIComponent(e), ":").concat(encodeURIComponent(t)).concat(n ? _(r) : "")
+      return "".concat(o, ":").concat(encodeURIComponent(e), ":").concat(encodeURIComponent(t)).concat(n ? _(r) : "")
     },
     PREMIUM_SITE: "https://www.spotify.com/premium/".concat(_("desktop")),
     INSTALL_ATTRIBUTION: e => "https://app.adjust.com/bdyga9?campaign=".concat(e),

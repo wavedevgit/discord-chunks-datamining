@@ -2,21 +2,21 @@
 /** chunk id: 918831, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk361926 = require("./361926.js"),
   Chunk207371 = require("./207371.js"),
   Chunk177640 = require("./177640.js");
 
-function s(e) {
+function o(e) {
   let {
     context: t,
     application: n,
-    botUserId: s
-  } = e, o = (0, i.e)(n), l = (0, r.Vr)({
+    botUserId: o
+  } = e, s = (0, i.e)(n), l = (0, r.Vr)({
     context: t,
     applicationId: n.id,
-    botUserId: s
+    botUserId: o
   }), c = (0, a.A)("channel" === t.type ? t.channel : true);
-  return !o && l && null != s && !c
+  return !s && l && null != o && !c
 }

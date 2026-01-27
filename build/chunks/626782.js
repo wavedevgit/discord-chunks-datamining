@@ -6,7 +6,7 @@ let r = /url\((['"]?)([^'"]+?)\1\)/g,
   i = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,
   a = /src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;
 
-function s(e) {
+function o(e) {
   let t = e.replace(/([.*+?^${}()|\[\]\/\\])/g, "\\$1");
   return RegExp(`(url\\(['"]?)(${t})(['"]?\\))`, "g")
 }

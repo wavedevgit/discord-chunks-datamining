@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk565645 = require("./565645.jsx"),
@@ -36,10 +36,10 @@ function h(e) {
   let {
     trait: t,
     ellipsize: n
-  } = e, a = i.useRef(null), c = (0, d.M)(a), f = !(0, o.bG)([u.A], () => u.A.useReducedMotion) && c;
+  } = e, a = i.useRef(null), c = (0, d.M)(a), f = !(0, s.bG)([u.A], () => u.A.useReducedMotion) && c;
   return null == t.label || t.label.length <= 0 ? null : (0, r.jsxs)("div", {
     ref: a,
-    className: s()(p.Bj, {
+    className: o()(p.Bj, {
       [p.mc]: n
     }),
     children: [(0, r.jsx)(_, {
@@ -59,7 +59,7 @@ function m(e) {
   let {
     items: t
   } = e, n = i.useCallback((e, t) => "string" == typeof e ? (0, r.jsx)("div", {
-    className: s()(p.Bj, {
+    className: o()(p.Bj, {
       [p.mc]: t.ellipsize
     }),
     children: (0, r.jsx)(l.Text, {
@@ -73,12 +73,12 @@ function m(e) {
     ellipsize: t.ellipsize
   }, e.key), []), a = i.useCallback(e => n(e, {
     ellipsize: true
-  }), [n]), o = i.useCallback(e => n(e, {
+  }), [n]), s = i.useCallback(e => n(e, {
     ellipsize: false
   }), [n]), c = i.useCallback(e => (0, r.jsx)(l.g2v, {
     items: e,
-    renderItem: o
-  }), [o]);
+    renderItem: s
+  }), [s]);
   return 0 === t.length ? null : (0, r.jsx)(l.ZVu, {
     className: p.kL,
     items: t,

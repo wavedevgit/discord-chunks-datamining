@@ -12,20 +12,20 @@ function a(e) {
     id: t,
     label: n,
     "aria-labelledby": a,
-    "aria-label": s,
-    labelElementType: o = "label"
+    "aria-label": o,
+    labelElementType: s = "label"
   } = e;
   t = (0, r.Bi)(t);
   let l = (0, r.Bi)(),
     c = {};
   return n && (a = a ? `${l} ${a}` : l, c = {
     id: l,
-    htmlFor: "label" === o ? t : true
+    htmlFor: "label" === s ? t : true
   }), {
     labelProps: c,
     fieldProps: (0, i.b)({
       id: t,
-      "aria-label": s,
+      "aria-label": o,
       "aria-labelledby": a
     })
   }

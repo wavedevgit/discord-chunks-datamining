@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 817533, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 817533, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -10,12 +9,12 @@ var Chunk311907 = require("./311907.js"),
   Chunk775602 = require("./775602.js"),
   Chunk463469 = require("./463469.js");
 
-function o(e) {
+function s(e) {
   let {
     guildId: t,
     user: n,
-    className: o
-  } = e, l = (0, i.bG)([a.A], () => !a.A.useReducedMotion), c = n.getAvatarURL(t, 56, l), u = (0, r.jsx)("foreignObject", {
+    className: s
+  } = e, o = (0, i.bG)([l.A], () => !l.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), u = (0, r.jsx)("foreignObject", {
     x: "30",
     y: "68",
     width: "56",
@@ -23,19 +22,19 @@ function o(e) {
     transform: "skewX(12)",
     children: (0, r.jsx)("img", {
       src: c,
-      className: s.dj,
+      className: a.dj,
       alt: ""
     })
   });
   return (0, r.jsx)("div", {
-    className: o,
+    className: s,
     children: (0, r.jsxs)("svg", {
       width: "128",
       height: "200",
       viewBox: "0 0 128 200",
       fill: "none",
       xmlns: "http://www.w3.org/2000/svg",
-      className: s.JW,
+      className: a.JW,
       children: [(0, r.jsx)("path", {
         fillRule: "evenodd",
         clipRule: "evenodd",

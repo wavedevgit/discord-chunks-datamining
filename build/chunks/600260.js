@@ -16,8 +16,8 @@ function l(e, t) {
     c = (0, r.bG)([a.Ay], () => null != e ? a.Ay.getMember(e.id, t) : null, [e, t]),
     u = (0, r.bG)([i.A], () => i.A.getChannel(n), [n]),
     d = (0, r.bG)([i.A], () => i.A.getChannel(null == u ? true : u.parent_id), [u]),
-    f = (0, r.bG)([s.A], () => null != e ? s.A.getSortedRoles(e.id) : true);
-  return null == e || null == f || null == c ? null : (0, o._g)({
+    f = (0, r.bG)([o.A], () => null != e ? o.A.getSortedRoles(e.id) : true);
+  return null == e || null == f || null == c ? null : (0, s._g)({
     guild: e,
     sortedGuildRoles: f,
     guildMember: c,

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 433410, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 433410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,15 +12,15 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk139674 = require("./139674.js");
 
-function u() {
+function d() {
   return (0, r.jsx)(i.wx6, {
     type: "warning",
     children: (0, r.jsxs)(i.Text, {
       variant: "text-sm/normal",
-      children: [l.intl.format(l.t.pdYZyg, {}), " ", "", (0, r.jsx)(a.A, {
+      children: [o.intl.format(o.t.pdYZyg, {}), " ", "", (0, r.jsx)(l.A, {
         className: c.s6,
-        onClick: () => (0, s.A)(o.gg.USER_SETTINGS),
-        children: l.intl.string(l.t.LhlgY9)
+        onClick: () => (0, s.A)(a.gg.USER_SETTINGS),
+        children: o.intl.string(o.t.LhlgY9)
       })]
     })
   })

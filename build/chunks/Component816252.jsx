@@ -24,7 +24,7 @@ let f = e => {
     } = e, {
       discountedPrice: a,
       premiumSubscription: d
-    } = (0, s.X)();
+    } = (0, o.X)();
     return (0, r.jsxs)("div", {
       className: c.j2,
       children: [(0, r.jsx)("img", {
@@ -35,7 +35,7 @@ let f = e => {
         className: c.br,
         children: [(0, r.jsx)(i.EYj, {
           variant: "text-md/semibold",
-          children: d.status === o.Dmq.CANCELED ? l.intl.format(l.t["DC+nPC"], {
+          children: d.status === s.Dmq.CANCELED ? l.intl.format(l.t["DC+nPC"], {
             numMonths: t.discount.user_usage_limit,
             discountedPrice: a
           }) : l.intl.format(l.t.tQvNll, {
@@ -56,10 +56,10 @@ let f = e => {
       discountedPrice: c,
       fullPrice: u,
       premiumSubscription: d
-    } = (0, s.X)();
+    } = (0, o.X)();
     switch (n) {
       case "applied":
-        if (d.status === o.Dmq.CANCELED) return (0, r.jsx)(i.EYj, {
+        if (d.status === s.Dmq.CANCELED) return (0, r.jsx)(i.EYj, {
           variant: "text-md/normal",
           color: "text-subtle",
           children: l.intl.formatToPlainString(l.t.h2g1Ia, {
@@ -78,7 +78,7 @@ let f = e => {
           })
         });
       case "confirming":
-        if (d.status === o.Dmq.CANCELED) return (0, r.jsx)(i.EYj, {
+        if (d.status === s.Dmq.CANCELED) return (0, r.jsx)(i.EYj, {
           variant: "text-md/normal",
           color: "text-subtle",
           children: l.intl.formatToPlainString(l.t.iDFk3v, {

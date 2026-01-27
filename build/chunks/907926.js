@@ -38,49 +38,49 @@ class S extends Chunk439372.A {
   handleStats() {
     var e, t, n, r;
     if ((I += 1) % v != 0) return;
-    let s = c.A.getCurrentUserActiveStream();
-    if (null == s) return;
-    let h = f.A.getRTCConnection((0, m._z)(s)),
+    let o = c.A.getCurrentUserActiveStream();
+    if (null == o) return;
+    let h = f.A.getRTCConnection((0, m._z)(o)),
       y = d.A.getGoLiveSource();
     if (null == h || null == y || !h.hasActiveRemoteWants()) return;
     let S = l.A.getState();
     if (S.preset !== E.jQ.PRESET_AUTO) return;
     if ((null == (r = c.A.getStreamerActiveStreamMetadata()) ? true : r.id) != null) return void A.info("Skipping auto quality checker for game stream.");
-    let T = o.A.getAccumulatedPerformanceStats(h.getMediaEngineConnectionId(), s.ownerId, "long"),
+    let T = s.A.getAccumulatedPerformanceStats(h.getMediaEngineConnectionId(), o.ownerId, "long"),
       C = (null != (e = h.analyticsContext.getDuration()) ? e : 30) >= 30 * _.A.Millis.SECOND ? 30 : 15;
     if (null == T || T.numDatapoints < C) return;
     let N = p.default.getCurrentUser(),
-      w = u.A.getGuild(s.guildId),
+      w = u.A.getGuild(o.guildId),
       [R, P] = null != (t = (0, g.A)(E.jQ.PRESET_DOCUMENTS, N, null == w ? true : w.premiumTier)) ? t : [E.on.RESOLUTION_SOURCE, E.kn.FPS_5],
-      [D, x] = null != (n = (0, g.A)(E.jQ.PRESET_VIDEO, N, null == w ? true : w.premiumTier)) ? n : [E.on.RESOLUTION_720, E.kn.FPS_30],
-      L = null;
-    if (T.entropy < b && (S.resolution !== R || S.fps !== P) ? (A.info("Low entropy average, switching to screenshare preset."), L = {
+      [D, L] = null != (n = (0, g.A)(E.jQ.PRESET_VIDEO, N, null == w ? true : w.premiumTier)) ? n : [E.on.RESOLUTION_720, E.kn.FPS_30],
+      x = null;
+    if (T.entropy < b && (S.resolution !== R || S.fps !== P) ? (A.info("Low entropy average, switching to screenshare preset."), x = {
         qualityOptions: {
           preset: E.jQ.PRESET_AUTO,
           resolution: R,
           frameRate: P
         },
         context: i.x.STREAM
-      }) : T.entropy > O && (S.resolution !== D || S.fps !== x) && (A.info("High entropy average, switching to video preset."), L = {
+      }) : T.entropy > O && (S.resolution !== D || S.fps !== L) && (A.info("High entropy average, switching to video preset."), x = {
         qualityOptions: {
           preset: E.jQ.PRESET_AUTO,
           resolution: D,
-          frameRate: x
+          frameRate: L
         },
         context: i.x.STREAM
-      }), null != L) {
-      if (null != y.desktopSource) L.desktopSettings = {
+      }), null != x) {
+      if (null != y.desktopSource) x.desktopSettings = {
         sourceId: y.desktopSource.id,
         sound: S.soundshareEnabled
       };
       else {
         if (null == y.cameraSource) return;
-        L.cameraSettings = {
+        x.cameraSettings = {
           videoDeviceGuid: y.cameraSource.videoDeviceGuid,
           audioDeviceGuid: y.cameraSource.audioDeviceGuid
         }
       }
-      h.autoQualityChange(), a.A.setGoLiveSource(L)
+      h.autoQualityChange(), a.A.setGoLiveSource(x)
     }
   }
   handlePostConnectionOpen() {

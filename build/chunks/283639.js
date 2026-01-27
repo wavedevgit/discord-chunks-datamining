@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  h9: () => o
+  h9: () => s
 }), require("./896048.js");
 var Chunk626584 = require("./626584.js");
 
@@ -23,12 +23,12 @@ try {
 } catch (e) {
   r = null
 }
-let s = new Chunk626584.A("AssetMap");
-async function o(e) {
+let o = new Chunk626584.A("AssetMap");
+async function s(e) {
   let t = new l,
     n = Object.entries(e).map(e => {
       let [n, r] = e;
-      return t.loadRemoteImage(n, r).catch(e => s.warn("Failed to load canvas asset", e, n, r))
+      return t.loadRemoteImage(n, r).catch(e => o.warn("Failed to load canvas asset", e, n, r))
     });
   return await Promise.all(n), t
 }

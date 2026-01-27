@@ -2,7 +2,7 @@
 /** chunk id: 31717, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => j,
+  A: () => M,
   C: () => E
 }), require("./896048.js"), require("./733351.js");
 var r, Chunk735438 = require("./735438.js"),
@@ -76,12 +76,12 @@ function v(e) {
     draftType: i
   } = e, a = d.A.getChannel(n);
   r === (null == a ? true : a.template) && (r = "");
-  let s = u.default.getId();
-  if (null != s && null != r && "" !== r) {
-    var o;
-    let e = O(s),
+  let o = u.default.getId();
+  if (null != o && null != r && "" !== r) {
+    var s;
+    let e = O(o),
       t = e[n];
-    null == t && (t = e[n] = {}), (r = b(r)) !== (null == (o = t[i]) ? true : o.draft) && (t[i] = {
+    null == t && (t = e[n] = {}), (r = b(r)) !== (null == (s = t[i]) ? true : s.draft) && (t[i] = {
       timestamp: Date.now(),
       draft: r
     })
@@ -159,10 +159,10 @@ function R(e) {
   let a = i[1];
   if (null == a || a.parentMessageId !== c.default.castChannelIdAsMessageId(t.id)) returnfalse;
   {
-    var s, o;
+    var o, s;
     let e = r[t.parent_id];
     if (null == e) returnfalse;
-    let n = null != (s = null == (o = e[2]) ? true : o.draft) ? s : "";
+    let n = null != (o = null == (s = e[2]) ? true : s.draft) ? o : "";
     "" !== n && (r[t.id] = {
       0: {
         timestamp: Date.now(),
@@ -180,16 +180,16 @@ function D(e) {
   e.userId in y && delete y[e.userId]
 }
 
-function x() {
+function L() {
   for (let [e, t] of c.default.entries(y))
     for (let [n, r] of c.default.entries(t)) {
       let t = r[0];
       null != t && ("" === t.draft || "" === t.draft.trim()) && S(n, 0, e)
     }
 }
-class L extends(r = Chunk311907.Ay.PersistedStore) {
+class x extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    y = null != e ? e : {}, x(), this.waitFor(u.default, d.A, f.A)
+    y = null != e ? e : {}, L(), this.waitFor(u.default, d.A, f.A)
   }
   getState() {
     return y
@@ -242,7 +242,7 @@ class L extends(r = Chunk311907.Ay.PersistedStore) {
     return null == n ? null : n[1]
   }
 }
-p(L, "displayName", "DraftStore"), p(L, "persistKey", "DraftStore"), p(L, "migrations", [e => {
+p(x, "displayName", "DraftStore"), p(x, "persistKey", "DraftStore"), p(x, "migrations", [e => {
   if (null == e) return {};
   for (let t in e) "timestamp" in e[t] && (e[t] = {
     0: e[t]
@@ -256,7 +256,7 @@ p(L, "displayName", "DraftStore"), p(L, "persistKey", "DraftStore"), p(L, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let j = new L(Chunk73153.h, {
+let M = new x(Chunk73153.h, {
   CONNECTION_OPEN: C,
   LOGOUT: P,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,

@@ -21,8 +21,8 @@ module.exports = function(e) {
   v && (O = r(O, b > 2 ? arguments[2] : true));
   var A = f(E),
     I = 0;
-  if (A && !(this === p && o(A)))
-    for (n = y ? new this : [], m = (h = d(E, A)).next; !(_ = i(m, h)).done; I++) g = v ? s(h, O, [_.value, I], true) : _.value, u(n, I, g);
+  if (A && !(this === p && s(A)))
+    for (n = y ? new this : [], m = (h = d(E, A)).next; !(_ = i(m, h)).done; I++) g = v ? o(h, O, [_.value, I], true) : _.value, u(n, I, g);
   else
     for (t = c(E), n = y ? new this(t) : p(t); t > I; I++) g = v ? O(E[I], I) : E[I], u(n, I, g);
   return n.length = I, n

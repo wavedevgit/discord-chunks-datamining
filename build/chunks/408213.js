@@ -71,12 +71,12 @@ let S = {
   fetchVerificationForm: async (e, t) => {
     let n = null != t ? t : p.A.getInviteKeyForGuildId(e),
       a = _.default.getCurrentUser(),
-      s = !f.Ay.isMember(e, null == a ? true : a.id);
+      o = !f.Ay.isMember(e, null == a ? true : a.id);
     try {
       let t = await r.Bo.get({
         url: g.Rsh.GUILD_MEMBER_VERIFICATION(e),
         query: {
-          with_guild: s,
+          with_guild: o,
           invite_code: null != n ? (0, d.m0)(n) : true
         },
         oldFormErrors: true,
@@ -106,7 +106,7 @@ let S = {
   },
   updateVerificationForm: async (e, t, n, a) => {
     let {
-      body: s
+      body: o
     } = await r.Bo.patch({
       url: g.Rsh.GUILD_MEMBER_VERIFICATION(e),
       body: {
@@ -121,9 +121,9 @@ let S = {
       type: "MEMBER_VERIFICATION_FORM_UPDATE",
       guildId: e,
       form: {
-        version: s.version,
-        description: s.description,
-        formFields: s.form_fields
+        version: o.version,
+        description: o.description,
+        formFields: o.form_fields
       }
     })
   },
@@ -207,7 +207,7 @@ let S = {
       } = t;
       switch (e) {
         case 429:
-          throw (0, s.Z_)(), a.A.show({
+          throw (0, o.Z_)(), a.A.show({
             title: E.intl.string(E.t.MmIrpf),
             body: E.intl.string(E.t.yjpDQ3),
             confirmText: E.intl.string(E.t.XNGT1O)
@@ -221,7 +221,7 @@ let S = {
         default:
           var l, d;
           throw v(b({}, t), {
-            message: null != (l = (d = new o.LG(t), d.getAnyErrorMessage())) ? l : E.intl.string(E.t.R0RpRX)
+            message: null != (l = (d = new s.LG(t), d.getAnyErrorMessage())) ? l : E.intl.string(E.t.R0RpRX)
           })
       }
     }
@@ -238,7 +238,7 @@ let S = {
       guildJoinRequestUser: r,
       reason: i,
       reasonOther: a,
-      responses: s
+      responses: o
     } = e;
     h.default.track(g.HAw.GUILD_MEMBER_APPLICATION_REPORTED, {
       application_id: n.joinRequestId,
@@ -246,7 +246,7 @@ let S = {
       guild_id: t.id,
       reason: i,
       reason_other: a,
-      responses: s
+      responses: o
     })
   }
 }

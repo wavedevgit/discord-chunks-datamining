@@ -58,7 +58,7 @@ function f(e) {
     settings: e
   });
   let t = c({}, a.A.getState(), e);
-  (0, o.A)(t)
+  (0, s.A)(t)
 }
 
 function p(e) {
@@ -79,17 +79,17 @@ function _(e) {
 function h(e, t) {
   var n;
   let a = i.default.getId(),
-    o = s.Ay.getUserCombo(a, e);
-  null != o && r.h.dispatch({
+    s = o.Ay.getUserCombo(a, e);
+  null != s && r.h.dispatch({
     type: "POGGERMODE_UPDATE_MESSAGE_COMBO",
     comboMessage: {
-      combo: o,
+      combo: s,
       channelId: e,
       messageId: t,
       displayed: false
     }
   });
-  let l = null != o && (null == o ? true : o.value) > 0 ? (null != (n = null == o ? true : o.multiplier) ? n : 0) + 1 : 1;
+  let l = null != s && (null == s ? true : s.value) > 0 ? (null != (n = null == s ? true : s.multiplier) ? n : 0) + 1 : 1;
   r.h.dispatch({
     type: "POGGERMODE_UPDATE_COMBO",
     channelId: e,

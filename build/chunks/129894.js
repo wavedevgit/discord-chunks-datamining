@@ -19,7 +19,7 @@ function f(e) {
   if ((0, i.A)(e)) return r.A.get(u.fg2.CRUNCHYROLL);
   if ((0, c.A)(e)) return r.A.get(u.fg2.XBOX);
   if ((0, l.A)(e)) return r.A.get(u.fg2.PLAYSTATION);
-  if ((0, o.A)(e) || (0, s.A)(e)) return r.A.get(u.fg2.META_QUEST_OR_HORIZON);
+  if ((0, s.A)(e) || (0, o.A)(e)) return r.A.get(u.fg2.META_QUEST_OR_HORIZON);
   let t = r.A.find(t => {
     let {
       name: n

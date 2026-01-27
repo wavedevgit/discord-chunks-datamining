@@ -62,16 +62,16 @@ module.exports = function(e) {
       relevance: 0,
       contains: ["self", ...i]
     },
-    s = e.inherit(a, {
+    o = e.inherit(a, {
       relevance: 0,
       endsParent: true,
       contains: [a, ...i]
     }),
-    o = {
+    s = {
       begin: /\s+/,
       relevance: 0
     },
-    l = [s],
+    l = [o],
     c = [{
       begin: /\[/,
       end: /\]/,
@@ -81,7 +81,7 @@ module.exports = function(e) {
     }],
     u = function(e, t) {
       return {
-        contains: [o],
+        contains: [s],
         starts: {
           relevance: 0,
           contains: e,
@@ -97,7 +97,7 @@ module.exports = function(e) {
           keyword: "\\" + e
         },
         relevance: 0,
-        contains: [o],
+        contains: [s],
         starts: t
       }
     },

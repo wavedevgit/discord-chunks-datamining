@@ -28,37 +28,37 @@ let d = e => {
     tooltip: _
   } = {
     0: {
-      icon: s.m_x,
+      icon: o.m_x,
       description: l.intl.string(l.t.YbdEFK),
       color: i.A.unsafe_rawColors.RED_400.css,
       tooltip: l.intl.string(l.t.PanA4J)
     },
     4: {
-      icon: s.uC4,
+      icon: o.uC4,
       description: l.intl.string(l.t["01Papm"]),
       color: i.A.unsafe_rawColors.RED_400.css,
       tooltip: l.intl.string(l.t.PanA4J)
     },
     5: {
-      icon: o.A,
+      icon: s.A,
       description: l.intl.string(l.t.sp16MU),
       color: i.A.unsafe_rawColors.RED_400.css,
       tooltip: l.intl.string(l.t.PanA4J)
     },
     1: {
-      icon: s.$y7,
+      icon: o.$y7,
       description: l.intl.string(l.t["4rjikl"]),
       color: i.A.unsafe_rawColors.ORANGE_345.css,
       tooltip: l.intl.string(l.t.dq9aTi)
     },
     2: {
-      icon: s.mir,
+      icon: o.mir,
       description: l.intl.string(l.t["5VmbbF"]),
       color: i.A.unsafe_rawColors.RED_400.css,
       tooltip: l.intl.string(l.t.PanA4J)
     },
     3: {
-      icon: s.mir,
+      icon: o.mir,
       description: l.intl.string(l.t.rjFOZ2),
       color: i.A.unsafe_rawColors.RED_400.css,
       tooltip: l.intl.string(l.t.PanA4J)
@@ -71,11 +71,11 @@ let d = e => {
       color: i.A.unsafe_rawColors.PRIMARY_300.css
     }), (0, r.jsxs)("div", {
       className: c.XE,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         className: c.Md,
         children: u
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: f
@@ -84,7 +84,7 @@ let d = e => {
       asContainer: true,
       position: "right",
       text: _,
-      children: (0, r.jsx)(s.EpV, {
+      children: (0, r.jsx)(o.EpV, {
         size: "custom",
         width: 20,
         height: 20,

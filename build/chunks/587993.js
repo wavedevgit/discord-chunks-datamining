@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Qd: () => a,
-  Qg: () => s
+  Qg: () => o
 });
 let r = Object.prototype.toString;
 
@@ -15,6 +15,6 @@ function a(e) {
   return i(e, "Object")
 }
 
-function s(e) {
+function o(e) {
   return !!(e && e.then && "function" == typeof e.then)
 }

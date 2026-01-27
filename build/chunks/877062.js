@@ -8,7 +8,7 @@ var Chunk481613 = require("./481613.js"),
   i = require.n(Chunk481613),
   Chunk72290 = require("./72290.js");
 
-function s(e, t) {
+function o(e, t) {
   if (!e.startsWith("discord:")) return location.href = e, a.nextTick(() => t(true));
   let {
     body: n
@@ -27,7 +27,7 @@ function s(e, t) {
   }, 1e3)
 }
 
-function o(e, t) {
+function s(e, t) {
   let n = false;
 
   function r() {
@@ -48,6 +48,6 @@ function c(e, t) {
 let u = {
   launch: function() {
     var e, t;
-    return (null == (e = i().os) ? true : e.family) === "Android" || (null == (t = i().os) ? true : t.family) === "iOS" ? c : "Gecko" === i().layout ? s : null != i().ua && false !== i().ua.indexOf("Valve Steam GameOverlay") ? l : o
+    return (null == (e = i().os) ? true : e.family) === "Android" || (null == (t = i().os) ? true : t.family) === "iOS" ? c : "Gecko" === i().layout ? o : null != i().ua && false !== i().ua.indexOf("Valve Steam GameOverlay") ? l : s
   }()
 }

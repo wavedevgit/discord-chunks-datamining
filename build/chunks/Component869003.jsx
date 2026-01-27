@@ -48,10 +48,10 @@ let v = false,
   A = false;
 class I extends Chunk458664.A {
   _initialize() {
-    super._initialize(), o.A.addChangeListener(this.handlePopoutWindowUpdate), s.h.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+    super._initialize(), s.A.addChangeListener(this.handlePopoutWindowUpdate), o.h.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   _terminate() {
-    super._terminate(), o.A.removeChangeListener(this.handlePopoutWindowUpdate), s.h.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+    super._terminate(), s.A.removeChangeListener(this.handlePopoutWindowUpdate), o.h.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   showErrorModal(e) {
     let {
@@ -91,7 +91,7 @@ class I extends Chunk458664.A {
       showFeedback: r,
       shouldClosePopout: i = true
     } = e;
-    s.h.wait(() => {
+    o.h.wait(() => {
       (0, d._H)({
         location: t,
         applicationId: n,
@@ -131,7 +131,7 @@ class I extends Chunk458664.A {
       }
     }), b(this, "handlePopoutWindowUpdate", () => {
       let e = v,
-        t = o.A.getWindowOpen(E.MLl.ACTIVITY_POPOUT);
+        t = s.A.getWindowOpen(E.MLl.ACTIVITY_POPOUT);
       if (e && !t && !A) {
         let e = p.Ay.getCurrentEmbeddedActivity();
         null != e && this.leaveActivity({

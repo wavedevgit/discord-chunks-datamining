@@ -31,7 +31,7 @@ let _ = {
 };
 
 function h(e, t, n) {
-  if (m(e, t), (0, o.F)(e, t) || n <= 0) return;
+  if (m(e, t), (0, s.F)(e, t) || n <= 0) return;
   let r = n + Date.now();
   _[t][e.id] = {
     rateLimitPerUser: e.rateLimitPerUser,
@@ -39,7 +39,7 @@ function h(e, t, n) {
     cooldownEndTimestamp: r,
     timer: new a.Ep
   }, _[t][e.id].timer.start(1e3, () => {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "SLOWMODE_SET_COOLDOWN",
       channelId: e.id,
       slowmodeType: t,

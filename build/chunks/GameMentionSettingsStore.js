@@ -27,9 +27,9 @@ function u(e) {
 }
 
 function d() {
-  s.m.getCurrentConfig({
+  o.m.getCurrentConfig({
     location: "GameMentionSettingsStore"
-  }).enabled && (0, o.G)()
+  }).enabled && (0, s.G)()
 }
 
 function f() {

@@ -4,7 +4,7 @@
 var Chunk410323 = require("./410323.js"),
   i = 0,
   a = Math.random(),
-  s = Chunk410323(1..toString);
+  o = Chunk410323(1..toString);
 module.exports = function(e) {
-  return "Symbol(" + (true === e ? "" : e) + ")_" + s(++i + a, 36)
+  return "Symbol(" + (true === e ? "" : e) + ")_" + o(++i + a, 36)
 }

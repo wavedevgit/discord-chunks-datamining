@@ -10,18 +10,18 @@ require.d(exports, {
 let r = ["COLD_START"],
   i = "NO_REASONS",
   a = true,
-  s = new Map;
+  o = new Map;
 
-function o(e) {
+function s(e) {
   var t;
-  let n = null != (t = s.get(e)) ? t : 0;
-  s.set(e, n + 1)
+  let n = null != (t = o.get(e)) ? t : 0;
+  o.set(e, n + 1)
 }
 
 function l(e) {
   var t;
-  let n = (null != (t = s.get(e)) ? t : 0) - 1;
-  n <= 0 ? s.delete(e) : s.set(e, n)
+  let n = (null != (t = o.get(e)) ? t : 0) - 1;
+  n <= 0 ? o.delete(e) : o.set(e, n)
 }
 
 function c(e) {
@@ -29,17 +29,17 @@ function c(e) {
 }
 
 function u() {
-  return s.size > 0 || a
+  return o.size > 0 || a
 }
 
 function d() {
-  let e = [...a ? r : [], ...s.keys()].sort();
+  let e = [...a ? r : [], ...o.keys()].sort();
   return e.length > 0 ? e.join(",") : i
 }
 
 function f(e) {
   _(() => {
-    o(e), l(c(e))
+    s(e), l(c(e))
   })
 }
 

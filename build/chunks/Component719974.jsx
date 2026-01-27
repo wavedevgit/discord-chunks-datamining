@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
-  s = require.n(Chunk284009),
+  o = require.n(Chunk284009),
   Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438);
 
@@ -120,7 +120,7 @@ class h extends Chunk64700.Component {
         let t = e.lastDirection * e.intensity,
           n = l().random(-e.intensity, e.intensity, true),
           r = Math.max(0, Math.cbrt(e.duration - e.progress / 1e3));
-        e.intensity *= Math.min(1, r), e.lastDirection *= false, s()(null != this.ref.current, "Shakeable style set when not mounted"), this.ref.current.style.transform = "translate3d(".concat(t, "px,").concat(n, "px,0px)")
+        e.intensity *= Math.min(1, r), e.lastDirection *= false, o()(null != this.ref.current, "Shakeable style set when not mounted"), this.ref.current.style.transform = "translate3d(".concat(t, "px,").concat(n, "px,0px)")
       }
       e.frameCount += 1, this._animationFrame = requestAnimationFrame(this._animate)
     }), c(this, "_animationCleanup", () => {

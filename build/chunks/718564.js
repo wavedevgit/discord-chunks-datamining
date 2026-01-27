@@ -1,9 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 718564, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 98797 **/
+/** chunk id: 718564, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  W: () => r
+  W: () => i
 });
-var r = function(e) {
-  return e.RAID = "raid", e.MENTION_RAID = "mention_raid", e.ACTIVITY_ALERTS_ENABLED = "activity_alerts_enabled", e.INTERACTION_BLOCKED = "interaction_blocked", e
-}({})
+var r, i = ((r = {}).RAID = "raid", r.MENTION_RAID = "mention_raid", r.ACTIVITY_ALERTS_ENABLED = "activity_alerts_enabled", r.INTERACTION_BLOCKED = "interaction_blocked", r)

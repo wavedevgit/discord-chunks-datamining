@@ -10,16 +10,16 @@ require.d(exports, {
   cs: () => d,
   mk: () => p,
   nQ: () => f,
-  pc: () => o,
-  yN: () => s,
+  pc: () => s,
+  yN: () => o,
   yR: () => u
 }), require("./896048.js");
 var Chunk513461 = require("./513461.js");
 Chunk513461.rX.VERIFICATION, Chunk513461.rX.TERMS;
 let i = new Set([Chunk513461.rX.MULTIPLE_CHOICE, Chunk513461.rX.TEXT_INPUT, Chunk513461.rX.PARAGRAPH]),
   a = 5,
-  s = 16,
-  o = 300,
+  o = 16,
+  s = 300,
   l = 300,
   c = 8,
   u = 150,

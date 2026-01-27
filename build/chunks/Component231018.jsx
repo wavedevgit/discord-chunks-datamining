@@ -21,15 +21,15 @@ function d(e) {
     giftingOrigin: d
   } = e, {
     enabled: f
-  } = s.P.useExperiment({
+  } = o.P.useExperiment({
     location: "CollectiblesGiftPaymentModalHeader"
   }, {
     autoTrackExposure: false
-  }), p = (0, i.YW)(t).with(o.pn.REVIEW, () => c.intl.string(c.t.JbRd5s)).with(o.pn.ADD_PAYMENT_STEPS, () => c.intl.string(c.t.QiGOak)).with(o.pn.GIFT_CUSTOMIZATION, () => f && d === l.vQ.DM_CHANNEL ? c.intl.string(c.t["xU+d9M"]) : c.intl.string(c.t["JCFN/y"])).with(o.pn.AWAITING_PURCHASE_TOKEN_AUTH, () => c.intl.string(c.t.lDbi6H)).with(o.pn.CONFIRM, () => "").otherwise(() => null);
+  }), p = (0, i.YW)(t).with(s.pn.REVIEW, () => c.intl.string(c.t.JbRd5s)).with(s.pn.ADD_PAYMENT_STEPS, () => c.intl.string(c.t.QiGOak)).with(s.pn.GIFT_CUSTOMIZATION, () => f && d === l.vQ.DM_CHANNEL ? c.intl.string(c.t["xU+d9M"]) : c.intl.string(c.t["JCFN/y"])).with(s.pn.AWAITING_PURCHASE_TOKEN_AUTH, () => c.intl.string(c.t.lDbi6H)).with(s.pn.CONFIRM, () => "").otherwise(() => null);
   return null == p ? null : (0, r.jsxs)(a.rQ0, {
     "data-migration-pending": true,
     className: u.H,
-    separator: t !== o.pn.CONFIRM,
+    separator: t !== s.pn.CONFIRM,
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       children: p

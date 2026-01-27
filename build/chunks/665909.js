@@ -6,28 +6,28 @@ require.d(exports, {
   Wm: () => c,
   Wu: () => d,
   _$: () => u,
-  gN: () => o,
-  mO: () => s
+  gN: () => s,
+  mO: () => o
 });
 var Chunk287809 = require("./287809.js"),
   Chunk954571 = require("./954571.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e, t) {
+function o(e, t) {
   let {
     channelId: n,
     warningId: r,
     senderId: a,
-    warningType: s
+    warningType: o
   } = t;
   i.default.track(e, {
     channel_id: n,
     warning_id: null != r ? parseInt(r) : true,
-    warning_type: s,
+    warning_type: o,
     other_user_id: a
   })
 }
-var o = function(e) {
+var s = function(e) {
   return e.SAFETY_WARNING_BANNER = "safety_warning_banner", e.SAFETY_TAKEOVER_MODAL = "safety_takeover_modal", e.SAFETY_TOOLS_NUDGE_TOOLTIP = "safety_tools_nudge_tooltip", e.SAFETY_TOOLS_BUTTON = "safety_tools_button", e
 }({});
 
@@ -36,16 +36,16 @@ function l(e) {
     channelId: t,
     warningId: n,
     senderId: r,
-    warningType: s,
-    viewName: o,
+    warningType: o,
+    viewName: s,
     isNudgeWarning: l
   } = e;
   i.default.track(a.HAw.SAFETY_WARNING_VIEWED, {
     channel_id: t,
     warning_id: null != n ? parseInt(n) : true,
-    warning_type: s,
+    warning_type: o,
     other_user_id: r,
-    view_name: o,
+    view_name: s,
     is_nudge_warning: l
   })
 }
@@ -58,16 +58,16 @@ function u(e) {
     channelId: t,
     warningId: n,
     senderId: r,
-    warningType: s,
-    cta: o,
+    warningType: o,
+    cta: s,
     isNudgeWarning: l
   } = e;
   i.default.track(a.HAw.SAFETY_WARNING_CTA_CLICKED, {
     channel_id: t,
     warning_id: null != n ? parseInt(n) : true,
-    warning_type: s,
+    warning_type: o,
     other_user_id: r,
-    cta: o,
+    cta: s,
     is_nudge_warning: l
   })
 }

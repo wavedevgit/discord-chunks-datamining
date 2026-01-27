@@ -13,13 +13,13 @@ function a(e) {
     name: t,
     form: n,
     disabled: a,
-    autoComplete: s,
-    selectionMode: o,
+    autoComplete: o,
+    selectionMode: s,
     selectedItems: l,
     onSelectionChange: c,
     listItems: u
   } = e;
-  if (null == t && (null == s || "off" === s)) return null;
+  if (null == t && (null == o || "off" === o)) return null;
 
   function d(e) {
     let t = Array.from(e.target.selectedOptions).map(e => e.dataset.id);
@@ -32,8 +32,8 @@ function a(e) {
       disabled: a,
       name: t,
       form: n,
-      multiple: "multiple" === o,
-      autoComplete: s,
+      multiple: "multiple" === s,
+      autoComplete: o,
       onChange: d,
       children: null == u ? true : u.map(e => {
         let t = "object" == typeof e.value ? JSON.stringify(e.value) : String(e.value);

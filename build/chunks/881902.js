@@ -16,15 +16,15 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   i.P.refetch(e.user_id)
 }
-class o extends Chunk439372.A {
+class s extends Chunk439372.A {
   constructor(...e) {
     super(...e), a(this, "actions", {
-      USER_APPLICATION_IDENTITY_UPDATE: s,
-      USER_APPLICATION_IDENTITY_REMOVE: s
+      USER_APPLICATION_IDENTITY_UPDATE: o,
+      USER_APPLICATION_IDENTITY_REMOVE: o
     })
   }
 }
-let l = new o
+let l = new s

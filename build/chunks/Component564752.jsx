@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 564752, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 564752, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk871930 = require("./871930.jsx"),
@@ -13,16 +12,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d() {
+function u() {
   let {
     hasConsented: e,
     updateConsent: t
-  } = (0, o.lH)(l.YAq.USAGE_STATISTICS);
+  } = (0, a.lH)(o.YAq.USAGE_STATISTICS);
   return (0, r.jsx)(i.h, {
-    children: (0, r.jsx)(a.Ay, {
-      title: u.intl.string(c.default.HjstRR),
-      note: u.intl.format(c.default.Z5yJZy, {
-        helpdeskArticle: s.A.getArticleURL(l.MVz.DATA_PRIVACY_CONTROLS)
+    children: (0, r.jsx)(l.Ay, {
+      title: d.intl.string(c.default.HjstRR),
+      note: d.intl.format(c.default.Z5yJZy, {
+        helpdeskArticle: s.A.getArticleURL(o.MVz.DATA_PRIVACY_CONTROLS)
       }),
       value: e,
       onChange: t

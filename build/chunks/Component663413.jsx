@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk422998 = require("./422998.js"),
   Chunk960488 = require("./960488.js"),
   Chunk311907 = require("./311907.js"),
@@ -26,13 +26,13 @@ function y(e) {
     lang: t,
     style: n,
     className: a
-  } = (0, _.xb)(), o = (0, l.zy)(), u = i.useMemo(() => E.has(o.pathname), [o.pathname]);
+  } = (0, _.xb)(), s = (0, l.zy)(), u = i.useMemo(() => E.has(s.pathname), [s.pathname]);
   (0, m.A)(window, u);
   let d = (0, c.bG)([f.A, p.A], () => p.A.getWindowOpen(g.MLl.DEVTOOLS_POPOUT) ? 0 : f.A.sidebarWidth);
   return (0, r.jsx)("html", {
     lang: t,
     style: "".concat(n, " --devtools-sidebar-width: ").concat(d, "px;"),
-    className: s()(a, e, {
+    className: o()(a, e, {
       overlay: __OVERLAY__
     })
   })
@@ -68,11 +68,11 @@ function O(e) {
   });
   let {
     clientThemesClassName: a,
-    clientThemesCSS: s
+    clientThemesCSS: o
   } = (0, d.Ay)(), l = i.createElement("style", {
     [d.Vg]: true
-  }, s);
-  return (0, r.jsxs)(o.mg, {
+  }, o);
+  return (0, r.jsxs)(s.mg, {
     children: [y(a), b(), l, t]
   })
 }

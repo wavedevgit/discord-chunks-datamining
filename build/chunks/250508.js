@@ -10,11 +10,11 @@ module.exports = function(e) {
       built_in: "ac asnp cat cd CFS chdir clc clear clhy cli clp cls clv cnsn compare copy cp cpi cpp curl cvpa dbp del diff dir dnsn ebp echo|0 epal epcsv epsn erase etsn exsn fc fhx fl ft fw gal gbp gc gcb gci gcm gcs gdr gerr ghy gi gin gjb gl gm gmo gp gps gpv group gsn gsnp gsv gtz gu gv gwmi h history icm iex ihy ii ipal ipcsv ipmo ipsn irm ise iwmi iwr kill lp ls man md measure mi mount move mp mv nal ndr ni nmo npssc nsn nv ogv oh popd ps pushd pwd r rbp rcjb rcsn rd rdr ren ri rjb rm rmdir rmo rni rnp rp rsn rsnp rujb rv rvpa rwmi sajb sal saps sasv sbp sc scb select set shcm si sl sleep sls sort sp spjb spps spsv start stz sujb sv swmi tee trcm type wget where wjb write"
     },
     a = /\w[\w\d]*((-)[\w\d]+)*/,
-    s = {
+    o = {
       begin: "`[\\s\\S]",
       relevance: 0
     },
-    o = {
+    s = {
       className: "variable",
       variants: [{
         begin: /\$\B/
@@ -38,7 +38,7 @@ module.exports = function(e) {
         begin: /@"/,
         end: /^"@/
       }],
-      contains: [s, o, {
+      contains: [o, s, {
         className: "variable",
         begin: /\$[A-z]/,
         end: /[^A-z]/
@@ -106,7 +106,7 @@ module.exports = function(e) {
         end: /\)/,
         className: "params",
         relevance: 0,
-        contains: [o]
+        contains: [s]
       }]
     },
     m = {
@@ -148,7 +148,7 @@ module.exports = function(e) {
         endsParent: true
       })]
     },
-    b = [y, f, s, e.NUMBER_MODE, c, u, p, o, l, E],
+    b = [y, f, o, e.NUMBER_MODE, c, u, p, s, l, E],
     O = {
       begin: /\[/,
       end: /\]/,

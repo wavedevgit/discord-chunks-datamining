@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk814656 = require("./814656.jsx"),
   Chunk94576 = require("./94576.js");
 
@@ -56,7 +56,7 @@ function f(e) {
     },
     _ = "hidden" !== n && null != t.controls;
   return (0, r.jsxs)("div", {
-    className: s()(l.iW, {
+    className: o()(l.iW, {
       [l.vT]: "bottom" === n,
       [l.Ix]: "right" === n
     }),
@@ -67,11 +67,11 @@ function f(e) {
         children: p()
       })
     }), _ && null != t.controls && (0, r.jsx)("div", {
-      className: s()(l.ne, {
+      className: o()(l.ne, {
         [l.WK]: "bottom" === n,
         [l.BT]: "right" === n
       }),
-      children: (0, r.jsx)(o.i, {
+      children: (0, r.jsx)(s.i, {
         controls: t.controls,
         props: c,
         onPropsChange: f

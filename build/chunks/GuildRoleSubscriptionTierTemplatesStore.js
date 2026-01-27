@@ -32,13 +32,13 @@ function f(e) {
   let {
     selectedTemplate: t,
     guildId: n
-  } = e, r = Object.values(o.A.getMutableGuildChannelsForGuild(n));
+  } = e, r = Object.values(s.A.getMutableGuildChannelsForGuild(n));
   t.listings.forEach(e => {
     e.channels.forEach(e => {
       let t = r.find(t => t.name === e.name);
       if (true !== t) e.id = t.id;
       else if (!(e.id in u)) {
-        let t = (0, s.createChannelRecord)(e);
+        let t = (0, o.createChannelRecord)(e);
         u[e.id] = t
       }
     })
@@ -46,7 +46,7 @@ function f(e) {
 }
 class p extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A)
+    this.waitFor(s.A)
   }
   getTemplates(e) {
     return c[e]

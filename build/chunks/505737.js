@@ -107,13 +107,13 @@ var i = t,
       outlineColor: true
     }
   },
-  s = !!("u" > typeof window && window.document && window.document.createElement),
-  o = {
-    canUseDOM: s,
+  o = !!("u" > typeof window && window.document && window.document.createElement),
+  s = {
+    canUseDOM: o,
     canUseWorkers: "u" > typeof Worker,
-    canUseEventListeners: s && !!(window.addEventListener || window.attachEvent),
-    canUseViewport: s && !!window.screen,
-    isInWorker: !s
+    canUseEventListeners: o && !!(window.addEventListener || window.attachEvent),
+    canUseViewport: o && !!window.screen,
+    isInWorker: !o
   },
   l = i;
 
@@ -133,7 +133,7 @@ d.thatReturns = u, d.thatReturnsFalse = u(false), d.thatReturnsTrue = u(true), d
   return e
 };
 var f = false;
-if (o.canUseDOM) {
+if (s.canUseDOM) {
   var p = document.createElement("div").style;
   try {
     p.font = ""
@@ -147,10 +147,10 @@ module.exports = {
     var r = e.style;
     for (var i in t)
       if (t.hasOwnProperty(i)) {
-        var s = 0 === i.indexOf("--"),
-          o = c(i, t[i], s);
-        if ("float" === i && (i = "cssFloat"), s) r.setProperty(i, o);
-        else if (o) r[i] = o;
+        var o = 0 === i.indexOf("--"),
+          s = c(i, t[i], o);
+        if ("float" === i && (i = "cssFloat"), o) r.setProperty(i, s);
+        else if (s) r[i] = s;
         else {
           var l = f && a[i];
           if (l)

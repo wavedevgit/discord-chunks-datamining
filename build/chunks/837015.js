@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => l,
-  F: () => o
+  F: () => s
 });
 var Chunk575593 = require("./575593.js"),
   Chunk149807 = require("./149807.js");
@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,10 +29,10 @@ function s(e) {
   }
   return e
 }
-let o = e => e instanceof l;
+let s = e => e instanceof l;
 class l extends Chunk149807.A {
   static fromServer(e) {
-    return new l(s({}, super.fromServer(e), e))
+    return new l(o({}, super.fromServer(e), e))
   }
   constructor(e) {
     super(e), a(this, "asset", true), a(this, "label", true), a(this, "palette", true), this.type = r.R.NAMEPLATE, this.asset = e.asset, this.label = e.label, this.palette = e.palette

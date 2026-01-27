@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 633451, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 633451, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk417597 = require("./417597.js"),
@@ -11,13 +10,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk307973 = require("./307973.jsx"),
   Chunk660595 = require("./660595.js"),
   Chunk180894 = require("./180894.js");
-let u = e => {
+let d = e => {
   let {
     containerVisibilityPercentage: t
-  } = e, n = (0, i.bG)([a.A], () => a.A.useReducedMotion);
+  } = e, n = (0, i.bG)([l.A], () => l.A.useReducedMotion);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: l.BI,
+      className: o.BI,
       children: (0, r.jsx)(s.Ay, {
         scaleAnimationData: {
           startScale: .9,
@@ -41,18 +40,18 @@ let u = e => {
         children: (0, r.jsx)("img", {
           src: c.A,
           alt: "",
-          className: l.Q
+          className: o.Q
         })
       })
-    }), (0, r.jsx)(o.A, {
+    }), (0, r.jsx)(a.A, {
       isMotionReduced: n,
       containerVisibilityPercentage: t,
-      hammerContainerClassName: l.Gj,
-      keyContainerClassName: l.FV,
-      starContainerClassName: l.E1,
-      hammerAssetClassName: l.Wv,
-      keyAssetClassName: l.rs,
-      starAssetClassName: l.OY,
+      hammerContainerClassName: o.Gj,
+      keyContainerClassName: o.FV,
+      starContainerClassName: o.E1,
+      hammerAssetClassName: o.Wv,
+      keyAssetClassName: o.rs,
+      starAssetClassName: o.OY,
       animationSpeedScale: 2
     })]
   })

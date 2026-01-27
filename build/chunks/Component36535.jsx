@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 36535, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 36535, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 });
@@ -13,6 +12,6 @@ function s() {
   return (0, r.jsx)(i.po8, {
     icon: i.XAi,
     messageType: i.YCn.POSITIVE,
-    children: a.intl.string(a.t.FsmBy4)
+    children: l.intl.string(l.t.FsmBy4)
   })
 }

@@ -16,16 +16,16 @@ function c(e) {
   let {
     title: n,
     description: t,
-    headerImage: l,
+    headerImage: r,
     onDetails: c,
     onPurchase: d,
     PurchaseButton: p,
     GiftButton: m,
     availabilityLabel: b
   } = e;
-  return (0, r.jsx)(s.vN, {
-    children: (0, r.jsxs)("div", {
-      className: i()(u.iE, a.t),
+  return (0, l.jsx)(s.vN, {
+    children: (0, l.jsxs)("div", {
+      className: i()(o.iE, a.t),
       tabIndex: 0,
       onClick: () => {
         null != c ? c() : null != d && d()
@@ -33,42 +33,42 @@ function c(e) {
       onKeyUp: e => {
         "Enter" === e.key && (e.stopPropagation(), e.preventDefault(), null != c ? c() : null != d && d())
       },
-      children: [(0, r.jsx)("div", {
-        className: u.Td,
-        style: null != l ? {
-          backgroundImage: null != l ? "url(".concat(l.toString(), ")") : true
+      children: [(0, l.jsx)("div", {
+        className: o.Td,
+        style: null != r ? {
+          backgroundImage: null != r ? "url(".concat(r.toString(), ")") : true
         } : true,
-        children: null == l && (0, r.jsx)(o.qyI, {
+        children: null == r && (0, l.jsx)(u.qyI, {
           color: "white",
           size: "custom",
           height: 80,
           width: 80
         })
-      }), (0, r.jsxs)("div", {
-        className: u.zH,
-        children: [(0, r.jsx)(o.EYj, {
+      }), (0, l.jsxs)("div", {
+        className: o.zH,
+        children: [(0, l.jsx)(u.EYj, {
           color: "text-strong",
           variant: "text-md/semibold",
           children: n
-        }), null != t && (0, r.jsx)(o.EYj, {
-          className: u.h_,
+        }), null != t && (0, l.jsx)(u.EYj, {
+          className: o.h_,
           color: "text-muted",
           variant: "text-sm/normal",
           children: t
         })]
-      }), (null != p || null != m) && (0, r.jsxs)("div", {
-        className: u.qr,
-        children: [null != p && (0, r.jsx)(o.EYj, {
+      }), (null != p || null != m) && (0, l.jsxs)("div", {
+        className: o.qr,
+        children: [null != p && (0, l.jsx)(u.EYj, {
           color: "interactive-text-default",
           variant: "text-sm/normal",
           children: b
-        }), (0, r.jsxs)("div", {
-          className: u.GC,
-          children: [null != p && (0, r.jsx)(p, {
+        }), (0, l.jsxs)("div", {
+          className: o.GC,
+          children: [null != p && (0, l.jsx)(p, {
             onClick: e => {
               e.stopPropagation(), null == d || d()
             }
-          }), null != m && (0, r.jsx)(m, {})]
+          }), null != m && (0, l.jsx)(m, {})]
         })]
       })]
     })

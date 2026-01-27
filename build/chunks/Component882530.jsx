@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
   Chunk317097 = require("./317097.js"),
@@ -76,9 +76,9 @@ class v extends Chunk64700.PureComponent {
         className: i,
         children: a
       } = this.props,
-      o = O(n);
+      s = O(n);
     return t ? e = {
-      color: o,
+      color: s,
       background: null != n ? n : d.A.unsafe_rawColors.BRAND_500.css
     } : null != n && (e = {
       color: n
@@ -87,7 +87,7 @@ class v extends Chunk64700.PureComponent {
         left: 4
       },
       children: (0, r.jsxs)(p.A, {
-        className: s()(h.OR, i, {
+        className: o()(h.OR, i, {
           [h.wH]: t
         }),
         onClick: this.handleClick,
@@ -108,7 +108,7 @@ class v extends Chunk64700.PureComponent {
           shrink: 0,
           children: (0, r.jsx)(f.A9s, {
             size: "md",
-            color: o
+            color: s
           })
         })]
       })

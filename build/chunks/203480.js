@@ -19,7 +19,7 @@ var Chunk64700 = require("./64700.js"),
 
 function h(e) {
   let t = e.ctrlKey || e.altKey || e.metaKey;
-  e.key !== _.N$.Tab || t || __OVERLAY__ || (0, s.hasAnyModalOpen)() || d.A.maybeShowKeyboardNavigationExplainerModal()
+  e.key !== _.N$.Tab || t || __OVERLAY__ || (0, o.hasAnyModalOpen)() || d.A.maybeShowKeyboardNavigationExplainerModal()
 }
 
 function m(e) {
@@ -43,8 +43,8 @@ function g(e, t) {
   var n, r;
   let a = (0, i.Cw)(null == (r = (0, i.BF)(e)) ? true : r.activeElement);
   if (a && e.key !== _.N$.Tab || e.ctrlKey || e.altKey || e.metaKey || e.key !== _.N$.Tab && e.shiftKey) return;
-  let s = m(e);
-  null == s || f.Ay.hasExactKeybind(s) || l.A.hasBind(null != (n = p.Qd(s[0])) ? n : "") || ((0, c.uS)(), a && !t && e.preventDefault())
+  let o = m(e);
+  null == o || f.Ay.hasExactKeybind(o) || l.A.hasBind(null != (n = p.Qd(o[0])) ? n : "") || ((0, c.uS)(), a && !t && e.preventDefault())
 }
 
 function E() {
@@ -52,7 +52,7 @@ function E() {
 }
 let y = function(e, t) {
   let n = (0, a.bG)([u.A], () => u.A.keyboardModeEnabled);
-  (0, o.OpQ)(n);
+  (0, s.OpQ)(n);
   let i = (0, r.useCallback)(e => {
     g(e, t)
   }, [t]);

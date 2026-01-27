@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 619921, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 619921, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => b
 });
-var r, i, a, s, Chunk311907 = require("./311907.js"),
+var r, i, l, s, a, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk734057 = require("./734057.js"),
   Chunk650048 = require("./650048.js"),
@@ -12,78 +11,63 @@ var r, i, a, s, Chunk311907 = require("./311907.js"),
   Chunk309010 = require("./309010.js"),
   Chunk645959 = require("./645959.js"),
   Chunk652215 = require("./652215.js");
+let A = (null != (i = null == (s = window) || null == (l = s.location) ? true : l.pathname) ? i : "").startsWith(Chunk652215.BVt.ACTIVITIES) ? Chunk652215.BVt.ACTIVITIES : null;
 
-function h(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-let m = (null != (r = null == (a = window) || null == (i = a.location) ? true : i.pathname) ? r : "").startsWith(Chunk652215.BVt.ACTIVITIES) ? Chunk652215.BVt.ACTIVITIES : null;
-
-function g() {
-  let e = p.A.getPrivateChannelIds(),
-    t = f.A.getChannelId(_.ME);
-  (null != t || null != e[0]) && (m = _.BVt.CHANNEL(_.ME, null != t ? t : e[0]))
-}
-
-function E(e) {
+function f(e) {
   let {
     link: t
   } = e;
-  if (m === t) returnfalse;
-  m = t
+  if (A === t) returnfalse;
+  A = t
 }
-
-function y() {
-  if (null == m || !m.startsWith(_.BVt.APPLICATION_STORE)) returnfalse;
-  m = _.BVt.APPLICATION_STORE
-}
-
-function b(e) {
-  let {
-    location: t
-  } = e;
-  E({
-    link: t.pathname,
-    type: "APP_VIEW_SET_HOME_LINK"
-  })
-}
-
-function O(e) {
-  let {
-    guildId: t,
-    channelId: n
-  } = e;
-  if (null == t && null != n) {
-    let e = _.BVt.CHANNEL(_.ME, n);
-    if (e !== m) return m = e, true
-  }
-  returnfalse
-}
-
-function v(e) {
-  let {
-    channel: t
-  } = e;
-  null == t.guild_id && null != t.id && null != m && m === _.BVt.CHANNEL(_.ME, t.id) && (m = null)
-}
-class A extends(s = Chunk311907.Ay.Store) {
+class h extends(a = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(u.A, p.A, f.A, d.A, c.A)
+    this.waitFor(u.A, m.A, p.A, _.A, d.A)
   }
   getHomeLink() {
-    return null != m ? m : u.A.fallbackRoute
+    return null != A ? A : u.A.fallbackRoute
   }
-}
-h(A, "displayName", "AppViewStore");
-let I = new A(Chunk73153.h, {
-  OVERLAY_INITIALIZE: g,
-  APP_VIEW_SET_HOME_LINK: E,
-  APPLICATION_STORE_LOCATION_CHANGE: b,
-  APPLICATION_STORE_RESET_NAVIGATION: y,
-  CHANNEL_SELECT: O,
-  CHANNEL_DELETE: v
+}(r = "displayName") in h ? Object.defineProperty(h, r, {
+  value: "AppViewStore",
+  enumerable: true,
+  configurable: true,
+  writable: true
+}) : h[r] = "AppViewStore";
+let b = new h(Chunk73153.h, {
+  OVERLAY_INITIALIZE: function() {
+    let e = m.A.getPrivateChannelIds(),
+      t = p.A.getChannelId(g.ME);
+    (null != t || null != e[0]) && (A = g.BVt.CHANNEL(g.ME, null != t ? t : e[0]))
+  },
+  APP_VIEW_SET_HOME_LINK: f,
+  APPLICATION_STORE_LOCATION_CHANGE: function(e) {
+    let {
+      location: t
+    } = e;
+    f({
+      link: t.pathname,
+      type: "APP_VIEW_SET_HOME_LINK"
+    })
+  },
+  APPLICATION_STORE_RESET_NAVIGATION: function() {
+    if (null == A || !A.startsWith(g.BVt.APPLICATION_STORE)) returnfalse;
+    A = g.BVt.APPLICATION_STORE
+  },
+  CHANNEL_SELECT: function(e) {
+    let {
+      guildId: t,
+      channelId: n
+    } = e;
+    if (null == t && null != n) {
+      let e = g.BVt.CHANNEL(g.ME, n);
+      if (e !== A) return A = e, true
+    }
+    returnfalse
+  },
+  CHANNEL_DELETE: function(e) {
+    let {
+      channel: t
+    } = e;
+    null == t.guild_id && null != t.id && null != A && A === g.BVt.CHANNEL(g.ME, t.id) && (A = null)
+  }
 })

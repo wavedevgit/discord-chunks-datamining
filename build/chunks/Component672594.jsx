@@ -42,7 +42,7 @@ let f = Chunk64700.forwardRef(function(e, t) {
         var e;
         return null == (e = g.current) ? true : e.focus()
       }
-    })), (0, r.jsx)(o.IWV, {
+    })), (0, r.jsx)(s.IWV, {
       autoFocus: h,
       query: E,
       ref: g,
@@ -56,7 +56,7 @@ let f = Chunk64700.forwardRef(function(e, t) {
         "aria-haspopup": "grid",
         "aria-controls": f,
         "aria-expanded": true,
-        "aria-activedescendant": (0, s.Aq)(f, y.columnIndex, y.rowIndex)
+        "aria-activedescendant": (0, o.Aq)(f, y.columnIndex, y.rowIndex)
       }
     })
   }),

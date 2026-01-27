@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 347606, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 347606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
 }), require("./896048.js");
@@ -19,41 +18,41 @@ function p(e) {
   let {
     node: t,
     children: n
-  } = e, a = i.useRef(false), [p, _] = i.useState(false), h = (0, l.K)(e => {
-    a.current = e, e && _(false)
-  }, .5), m = i.useRef(null), g = i.useCallback(() => {
-    null != m.current && (cancelAnimationFrame(m.current), m.current = null)
+  } = e, l = i.useRef(false), [p, m] = i.useState(false), g = (0, o.K)(e => {
+    l.current = e, e && m(false)
+  }, .5), A = i.useRef(null), f = i.useCallback(() => {
+    null != A.current && (cancelAnimationFrame(A.current), A.current = null)
   }, []);
   return i.useEffect(() => {
-    let e = d.A.subscribe(e => {
+    let e = u.A.subscribe(e => {
       let {
         navTransition: t
       } = e;
       return t
     }, e => {
-      if (g(), null == e || e.targetKey !== t.key || null != e.targetAccordionKey) return;
+      if (f(), null == e || e.targetKey !== t.key || null != e.targetAccordionKey) return;
       let n = e.animateScroll && !c.A.useReducedMotion;
-      n || t.type === u.Z6.CATEGORY || _(true), m.current = requestAnimationFrame(() => {
+      n || t.type === d.Z6.CATEGORY || m(true), A.current = requestAnimationFrame(() => {
         var t, r;
         let i = null != (t = e.scrollBlock) ? t : "start";
-        null == (r = h.current) || r.scrollIntoView({
+        null == (r = g.current) || r.scrollIntoView({
           behavior: n ? "smooth" : "auto",
           block: i
-        }), d.A.setState({
+        }), u.A.setState({
           navTransition: true
-        }), a.current && _(false)
+        }), l.current && m(false)
       })
     }, {
-      equalityFn: o.x,
+      equalityFn: a.x,
       fireImmediately: true
     });
     return () => {
-      e(), g()
+      e(), f()
     }
-  }, [g, t.key, t.type, h]), (0, r.jsx)("div", {
-    ref: h,
+  }, [f, t.key, t.type, g]), (0, r.jsx)("div", {
+    ref: g,
     "data-debug-key": t.key,
-    className: s()(f.k, p && f.j),
+    className: s()(_.k, p && _.j),
     children: n
   })
 }

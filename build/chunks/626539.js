@@ -30,7 +30,7 @@ class c extends Chunk325639.V {
   asyncify(e, t, n) {
     let r = c.requestTypeLookup[t];
     if (true === r) return Promise.resolve(true);
-    let i = () => null == e ? Promise.resolve(o.F5.AUTHORIZED) : new Promise((t, n) => e(t, r));
+    let i = () => null == e ? Promise.resolve(s.F5.AUTHORIZED) : new Promise((t, n) => e(t, r));
     return this.requestAuthorization(t, i, n)
   }
   openSettings(e) {
@@ -48,14 +48,14 @@ class c extends Chunk325639.V {
       body: n,
       onConfirm: i,
       cancelText: a,
-      confirmText: s
+      confirmText: o
     } = e;
     r.A.show({
       title: t,
       body: n,
       onConfirm: i,
       cancelText: a,
-      confirmText: s
+      confirmText: o
     })
   }
   constructor(...e) {

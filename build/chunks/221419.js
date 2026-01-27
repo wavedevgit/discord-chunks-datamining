@@ -22,15 +22,15 @@ function c(e, t, n) {
 let u = new Map;
 class d extends Chunk439372.A {
   handleTrackStateChanged(e) {
-    o.A.getConfig({
+    s.A.getConfig({
       location: "tracking-manager"
-    }).enabled && (e.newState === s.AR.INITIALIZING && u.set(e.pid, (0, r.A)()), (0, a.z)(l.HAw.OVERLAY_STATE_CHANGED, {
+    }).enabled && (e.newState === o.AR.INITIALIZING && u.set(e.pid, (0, r.A)()), (0, a.z)(l.HAw.OVERLAY_STATE_CHANGED, {
       new_state: e.newState,
       old_state: e.oldState,
       pid: e.pid,
       init_session_id: u.get(e.pid),
       reason: e.reason
-    }), (e.newState === s.AR.OVERLAY_RENDERING || e.newState === s.AR.OVERLAY_DISABLED || e.newState === s.AR.OVERLAY_CRASHED_DISABLED || e.newState === s.AR.OVERLAY_TEARING_DOWN) && u.delete(e.pid))
+    }), (e.newState === o.AR.OVERLAY_RENDERING || e.newState === o.AR.OVERLAY_DISABLED || e.newState === o.AR.OVERLAY_CRASHED_DISABLED || e.newState === o.AR.OVERLAY_TEARING_DOWN) && u.delete(e.pid))
   }
   handleRunningGamesChange(e) {
     for (let t of e.removed) u.delete(t.pid)

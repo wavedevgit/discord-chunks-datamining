@@ -11,7 +11,7 @@ var Chunk192308 = require("./192308.js"),
   Chunk204925 = require("./204925.js"),
   Chunk818348 = require("./818348.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,7 +27,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -41,7 +41,7 @@ function c(e) {
     return t => (0, r.jsx)(e, l({}, t))
   }, {
     modalKey: a.jc,
-    onCloseRequest: s.tE,
+    onCloseRequest: o.tE,
     onCloseCallback: e
   })
 }
@@ -57,7 +57,7 @@ function u() {
       claimRequired: e
     }, n))
   }, {
-    onCloseRequest: e ? s.tE : null,
+    onCloseRequest: e ? o.tE : null,
     onCloseCallback: t
   })
 }

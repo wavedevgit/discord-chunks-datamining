@@ -4,16 +4,16 @@
 require.d(exports, {
   FM: () => y,
   L: () => E,
-  R_: () => L,
-  Un: () => j,
+  R_: () => x,
+  Un: () => M,
   XX: () => B,
   Y5: () => N,
   cv: () => A,
-  ef: () => M,
-  ew: () => x,
-  g1: () => V,
+  ef: () => j,
+  ew: () => L,
+  g1: () => F,
   mS: () => v,
-  nS: () => F,
+  nS: () => V,
   oc: () => D,
   qA: () => w,
   s1: () => R,
@@ -102,7 +102,7 @@ function A(e) {
 
 function I() {
   var e;
-  let t = o.default.getCurrentUser(),
+  let t = s.default.getCurrentUser(),
     n = null != t ? c.A.getUserProfile(t.id) : null;
   return null != (e = null == n ? true : n.widgets) ? e : []
 }
@@ -142,12 +142,12 @@ function R(e, t, n) {
   if (n.length > r) return;
   let a = T(e);
   if (null == a) return;
-  let s = a.games.find(e => e.applicationId === t);
-  if (null == s) return;
-  let o = g(h({}, s), {
+  let o = a.games.find(e => e.applicationId === t);
+  if (null == o) return;
+  let s = g(h({}, o), {
       tags: n
     }),
-    c = a.games.map(e => e.applicationId === t ? o : e),
+    c = a.games.map(e => e.applicationId === t ? s : e),
     d = C(new l.Yy(g(h({}, a), {
       games: c
     })));
@@ -171,22 +171,22 @@ function D(e, t, n) {
   let a = g(h({}, i), {
       comment: n
     }),
-    s = r.games.map(e => e.applicationId === t ? a : e),
-    o = C(new l.Yy(g(h({}, r), {
-      games: s
+    o = r.games.map(e => e.applicationId === t ? a : e),
+    s = C(new l.Yy(g(h({}, r), {
+      games: o
     })));
-  u.A.setPendingWidgets(o)
+  u.A.setPendingWidgets(s)
 }
 
-function x(e) {
+function L(e) {
   var t, n, r, i;
-  let s, {
-      widgetType: o,
+  let o, {
+      widgetType: s,
       game: c,
       ignoreMaxGames: d = false
     } = e,
-    f = T(o),
-    p = A(o);
+    f = T(s),
+    p = A(s);
   if (null != f) {
     let e = null != (t = null == (r = f.games) ? true : r.length) ? t : 0;
     if (!d && e >= p || (null != (n = f.games) ? n : []).some(e => e.applicationId === c.applicationId)) return
@@ -196,16 +196,16 @@ function x(e) {
     comment: c.comment,
     tags: c.tags
   };
-  s = null != f ? [_, ...null != (i = f.games) ? i : []] : [_];
+  o = null != f ? [_, ...null != (i = f.games) ? i : []] : [_];
   let m = C(new l.Yy(g(h({}, null != f ? f : {
-    type: o
+    type: s
   }), {
-    games: s
+    games: o
   })));
   u.A.setPendingWidgets(m), a.A.getDetectableGamesSupplemental([c.applicationId])
 }
 
-function L(e, t) {
+function x(e, t) {
   if (e === t) return;
   let n = S();
   if (e < 0 || e >= n.length || t < 0 || t >= n.length) return;
@@ -214,20 +214,20 @@ function L(e, t) {
   r.splice(t, 0, i), u.A.setPendingWidgets(r)
 }
 
-function j(e, t, n) {
+function M(e, t, n) {
   let r = T(e);
   if (null == r || null == r.games || t === n) return;
   let i = [...r.games];
   if (t < 0 || t >= i.length || n < 0 || n >= i.length) return;
   let [a] = i.splice(t, 1);
   i.splice(n, 0, a);
-  let s = C(new l.Yy(g(h({}, r), {
+  let o = C(new l.Yy(g(h({}, r), {
     games: i
   })));
-  u.A.setPendingWidgets(s)
+  u.A.setPendingWidgets(o)
 }
 
-function M(e, t) {
+function j(e, t) {
   let n = T(e);
   if (null == n) return;
   let r = (null != n.games ? n.games : []).filter(e => e.applicationId !== t),
@@ -256,14 +256,14 @@ function G(e, t, n) {
   returntrue
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   return e.length === t.length && e.every((e, r) => G(e, t[r], n))
 }
 
-function F(e) {
-  return (null == e ? true : e.themes) != null && e.themes.includes(s.q0.EROTIC)
+function V(e) {
+  return (null == e ? true : e.themes) != null && e.themes.includes(o.q0.EROTIC)
 }
 
 function B(e) {
-  return !F(e) && !r.Zk.has(e.id)
+  return !V(e) && !r.Zk.has(e.id)
 }

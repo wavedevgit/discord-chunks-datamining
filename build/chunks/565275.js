@@ -61,19 +61,19 @@ function p(e) {
     var R = (0, i.A)(l),
       P = "clientHeight",
       D = "clientWidth";
-    R === (0, a.A)(l) && (R = (0, s.A)(l), "static" !== (0, o.A)(R).position && "absolute" === h && (P = "scrollHeight", D = "scrollWidth")), (u === r.Mn || (u === r.kb || u === r.pG) && p === r._N) && (N = r.sQ, A -= (y && R === w && w.visualViewport ? w.visualViewport.height : R[P]) - c.height, A *= m ? 1 : false), (u === r.kb || (u === r.Mn || u === r.sQ) && p === r._N) && (C = r.pG, O -= (y && R === w && w.visualViewport ? w.visualViewport.width : R[D]) - c.width, O *= m ? 1 : false)
+    R === (0, a.A)(l) && (R = (0, o.A)(l), "static" !== (0, s.A)(R).position && "absolute" === h && (P = "scrollHeight", D = "scrollWidth")), (u === r.Mn || (u === r.kb || u === r.pG) && p === r._N) && (N = r.sQ, A -= (y && R === w && w.visualViewport ? w.visualViewport.height : R[P]) - c.height, A *= m ? 1 : false), (u === r.kb || (u === r.Mn || u === r.sQ) && p === r._N) && (C = r.pG, O -= (y && R === w && w.visualViewport ? w.visualViewport.width : R[D]) - c.width, O *= m ? 1 : false)
   }
-  var x = Object.assign({
+  var L = Object.assign({
       position: h
     }, g && d),
-    L = true === E ? f({
+    x = true === E ? f({
       x: O,
       y: A
     }, (0, a.A)(l)) : {
       x: O,
       y: A
     };
-  return (O = L.x, A = L.y, m) ? Object.assign({}, x, ((n = {})[N] = T ? "0" : "", n[C] = S ? "0" : "", n.transform = 1 >= (w.devicePixelRatio || 1) ? "translate(" + O + "px, " + A + "px)" : "translate3d(" + O + "px, " + A + "px, 0)", n)) : Object.assign({}, x, ((t = {})[N] = T ? A + "px" : "", t[C] = S ? O + "px" : "", t.transform = "", t))
+  return (O = x.x, A = x.y, m) ? Object.assign({}, L, ((n = {})[N] = T ? "0" : "", n[C] = S ? "0" : "", n.transform = 1 >= (w.devicePixelRatio || 1) ? "translate(" + O + "px, " + A + "px)" : "translate3d(" + O + "px, " + A + "px, 0)", n)) : Object.assign({}, L, ((t = {})[N] = T ? A + "px" : "", t[C] = S ? O + "px" : "", t.transform = "", t))
 }
 let _ = {
   name: "computeStyles",
@@ -85,9 +85,9 @@ let _ = {
       r = n.gpuAcceleration,
       i = true === r || r,
       a = n.adaptive,
-      s = true === a || a,
-      o = n.roundOffsets,
-      u = true === o || o,
+      o = true === a || a,
+      s = n.roundOffsets,
+      u = true === s || s,
       d = {
         placement: (0, l.A)(t.placement),
         variation: (0, c.A)(t.placement),
@@ -99,7 +99,7 @@ let _ = {
     null != t.modifiersData.popperOffsets && (t.styles.popper = Object.assign({}, t.styles.popper, p(Object.assign({}, d, {
       offsets: t.modifiersData.popperOffsets,
       position: t.options.strategy,
-      adaptive: s,
+      adaptive: o,
       roundOffsets: u
     })))), null != t.modifiersData.arrow && (t.styles.arrow = Object.assign({}, t.styles.arrow, p(Object.assign({}, d, {
       offsets: t.modifiersData.arrow,

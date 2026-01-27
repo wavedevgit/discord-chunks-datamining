@@ -79,8 +79,8 @@ function m(e) {
     centerButton: u = false
   } = e, f = _(e, ["location", "applicationId", "centerButton"]), {
     parentAnalyticsLocation: h
-  } = (0, s.Ay)(), m = u ? l.l : l.A, g = () => {
-    (0, o.X)(h, o.O.LEAVE_ACTIVITY), a.A.leaveActivity({
+  } = (0, o.Ay)(), m = u ? l.l : l.A, g = () => {
+    (0, s.X)(h, s.O.LEAVE_ACTIVITY), a.A.leaveActivity({
       location: t,
       applicationId: n,
       showFeedback: true

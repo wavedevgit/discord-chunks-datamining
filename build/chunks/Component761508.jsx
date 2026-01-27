@@ -84,16 +84,16 @@ let v = {
       className: n,
       onClick: r,
       children: i,
-      "aria-expanded": s,
-      "aria-controls": o
+      "aria-expanded": o,
+      "aria-controls": s
     } = e;
     return (0, a.jsx)(f.D, {
       innerRef: t,
       tabIndex: null == r ? false : 0,
       className: l()(h.wx, n),
       onClick: r,
-      "aria-expanded": s,
-      "aria-controls": o,
+      "aria-expanded": o,
+      "aria-controls": s,
       focusProps: {
         offset: {
           top: false
@@ -120,12 +120,12 @@ function I(e) {
 let S = Chunk64700.forwardRef(function(e, t) {
   let [n, ...r] = [e, t], {
     children: i,
-    id: s
-  } = n, o = b(n, ["children", "id"]), [l] = r;
-  return (0, a.jsx)("div", y(g({}, o), {
+    id: o
+  } = n, s = b(n, ["children", "id"]), [l] = r;
+  return (0, a.jsx)("div", y(g({}, s), {
     ref: l,
     role: "tabpanel",
-    id: T(s),
+    id: T(o),
     tabIndex: false,
     children: i
   }))
@@ -184,8 +184,8 @@ class N extends(r = Chunk64700.Component) {
       id: n,
       selectedItem: r,
       color: i,
-      variant: s,
-      disabled: o,
+      variant: o,
+      disabled: s,
       onContextMenu: c,
       clickableRef: u,
       clickableInnerRef: d,
@@ -198,14 +198,14 @@ class N extends(r = Chunk64700.Component) {
         [h.wk]: "brand" === p,
         [h.wH]: null == i && g,
         [h.Sp]: "grey" === p,
-        [h.r9]: null == i && o,
-        [h.RD]: "destructive" === s
+        [h.r9]: null == i && s,
+        [h.RD]: "destructive" === o
       }),
       style: this.getStyle(),
       role: "tab",
       "aria-selected": g,
       "aria-controls": g ? T("".concat(n)) : true,
-      "aria-disabled": o,
+      "aria-disabled": s,
       tabIndex: g ? 0 : false,
       onMouseEnter: null != i ? this.handleMouseOver : true,
       onClick: this.handleClick,
@@ -267,21 +267,21 @@ class w extends(i = Chunk64700.Component) {
       type: n = "side",
       style: r,
       "aria-label": i,
-      orientation: o = "horizontal"
+      orientation: s = "horizontal"
     } = this.props;
     return (0, a.jsx)("div", {
       ref: this.tabBarRef,
       className: l()(e, v[n]),
       style: r,
       role: "tablist",
-      "aria-orientation": o,
+      "aria-orientation": s,
       onKeyDown: this.handleKeyDown,
       "aria-label": i,
-      children: s.Children.map(t, this.renderChildren)
+      children: o.Children.map(t, this.renderChildren)
     })
   }
   constructor(...e) {
-    super(...e), m(this, "tabBarRef", s.createRef()), m(this, "focusManager", (0, c.C)({
+    super(...e), m(this, "tabBarRef", o.createRef()), m(this, "focusManager", (0, c.C)({
       getFocusableElements: () => {
         let e = this.tabBarRef.current;
         return null != e ? Array.from(e.querySelectorAll('[role="tab"][aria-disabled="false"]')) : []
@@ -297,7 +297,7 @@ class w extends(i = Chunk64700.Component) {
         type: r = "side",
         look: i = "grey"
       } = this.props;
-      return s.isValidElement(e) ? s.cloneElement(e, {
+      return o.isValidElement(e) ? o.cloneElement(e, {
         selectedItem: t,
         onItemSelect: n,
         itemType: r,

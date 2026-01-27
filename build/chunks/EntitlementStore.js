@@ -80,13 +80,13 @@ function D(e) {
   g = {}, t.forEach(N)
 }
 
-function x() {}
+function L() {}
 
-function L() {
+function x() {
   b = true
 }
 
-function j(e) {
+function M(e) {
   let {
     entitlements: t,
     excludeEnded: n
@@ -94,7 +94,7 @@ function j(e) {
   for (let e of (O = true, b = false, v = !n, t)) C(e)
 }
 
-function M() {
+function j() {
   O = false, b = false, v = false
 }
 
@@ -118,10 +118,10 @@ function G(e) {
   return C(e.entitlement)
 }
 
-function V(e) {
+function F(e) {
   return w(e.entitlement)
 }
-class F extends(r = Chunk311907.il) {
+class V extends(r = Chunk311907.il) {
   initialize() {
     this.syncWith([u.A], () => true)
   }
@@ -207,8 +207,8 @@ class F extends(r = Chunk311907.il) {
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, r = [], i = new Date;
     return null == (e = this.getForApplication(_.tv)) || e.forEach(e => {
       let a = null != e.endsAt && e.endsAt < i,
-        s = e.sourceType === p.GD.REVERSE_TRIAL && n;
-      e.type !== p.zF_.FRACTIONAL_REDEMPTION || a && !t || s || r.push(e)
+        o = e.sourceType === p.GD.REVERSE_TRIAL && n;
+      e.type !== p.zF_.FRACTIONAL_REDEMPTION || a && !t || o || r.push(e)
     }), r
   }
   isFractionalPremiumActive() {
@@ -224,24 +224,24 @@ class F extends(r = Chunk311907.il) {
     var e;
     let t = [];
     return null == (e = this.getForApplication(_.tv)) || e.forEach(e => {
-      s.I.ACTIVE_FRACTIONAL_PREMIUM_SKUS.has(e.skuId) && !e.consumed && t.push(e)
+      o.I.ACTIVE_FRACTIONAL_PREMIUM_SKUS.has(e.skuId) && !e.consumed && t.push(e)
     }), t
   }
 }
-h(F, "displayName", "EntitlementStore");
-let B = new F(Chunk73153.h, {
+h(V, "displayName", "EntitlementStore");
+let B = new V(Chunk73153.h, {
   ENTITLEMENT_FETCH_APPLICATION_START: R,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: P,
-  ENTITLEMENT_FETCH_APPLICATION_FAIL: x,
+  ENTITLEMENT_FETCH_APPLICATION_FAIL: L,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: D,
   SKU_PURCHASE_SUCCESS: k,
   VIRTUAL_CURRENCY_REDEEM_SUCCESS: k,
   LIBRARY_FETCH_SUCCESS: U,
   ENTITLEMENT_CREATE: G,
   ENTITLEMENT_UPDATE: G,
-  ENTITLEMENT_DELETE: V,
+  ENTITLEMENT_DELETE: F,
   LOGOUT: T,
-  ENTITLEMENTS_FETCH_FOR_USER_START: L,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: j,
-  ENTITLEMENTS_FETCH_FOR_USER_FAIL: M
+  ENTITLEMENTS_FETCH_FOR_USER_START: x,
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
+  ENTITLEMENTS_FETCH_FOR_USER_FAIL: j
 })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk115703 = require("./115703.js"),
   Chunk438842 = require("./438842.jsx"),
@@ -48,8 +48,8 @@ function _(e) {
     key: "trait-".concat(t)
   }, e)).filter(e => e.label.length > 0), [t]), m = t.description.length > 0;
   return m || a.length > 0 || h.length > 0 ? (0, r.jsxs)("div", {
-    className: s()(d.rf, n),
-    children: [m ? (0, r.jsx)(o.Text, {
+    className: o()(d.rf, n),
+    children: [m ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
       children: t.description

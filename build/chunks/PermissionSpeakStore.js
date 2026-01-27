@@ -43,11 +43,11 @@ function y(e) {
   let {
     forever: t
   } = e;
-  _ = true, t && (h = true, o.w.set(f, h))
+  _ = true, t && (h = true, s.w.set(f, h))
 }
 class b extends(a = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.A, u.A), h = o.w.get(f) || h
+    this.waitFor(c.A, u.A), h = s.w.get(f) || h
   }
   isAFKChannel() {
     let e = c.A.getChannel(i);

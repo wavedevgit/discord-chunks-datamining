@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js"),
   Chunk915089 = require("./915089.js"),
@@ -21,8 +21,8 @@ function f(e) {
     countryCode: r,
     forceMode: i,
     label: f,
-    error: y,
-    className: m,
+    error: m,
+    className: y,
     required: g,
     value: O,
     setRef: b,
@@ -30,29 +30,29 @@ function f(e) {
     autoFocus: w,
     maxLength: C,
     spellCheck: S,
-    autoComplete: v,
-    autoCapitalize: A,
+    autoComplete: A,
+    autoCapitalize: v,
     autoCorrect: E,
     onChange: x,
     inputClassName: P
   } = e, N = (0, c.GV)(), [k, T] = s.useState(false), _ = (0, u.Vl)(i, O);
   return (0, n.jsx)("div", {
-    className: null != m ? m : true,
+    className: null != y ? y : true,
     children: (0, n.jsx)(o.D0$, {
       label: f,
-      errorMessage: y,
+      errorMessage: m,
       required: g,
       id: N,
       children: (0, n.jsxs)("div", {
-        className: a()(p.hF, h.hF, P, {
-          [p.z3]: null != y,
+        className: l()(p.hF, d.hF, P, {
+          [p.z3]: null != m,
           [p.in]: k
         }),
-        children: [(0, n.jsx)(d.A, {
+        children: [(0, n.jsx)(h.A, {
           show: _,
           alpha2: t,
           countryCode: r
-        }), (0, n.jsx)(l.ob, {
+        }), (0, n.jsx)(a.ob, {
           id: N,
           name: "email",
           type: i === u.Pd.EMAIL ? "email" : "text",
@@ -65,14 +65,14 @@ function f(e) {
             let t = (0, u.Vl)(i, e) ? r : "";
             x(e, t)
           },
-          autoComplete: v,
-          autoCapitalize: A,
+          autoComplete: A,
+          autoCapitalize: v,
           autoCorrect: E,
           autoFocus: w,
           maxLength: C,
           spellCheck: S,
-          className: h.I6,
-          inputClassName: h.LF,
+          className: d.I6,
+          inputClassName: d.LF,
           onFocus: () => T(true),
           onBlur: () => T(false)
         })]

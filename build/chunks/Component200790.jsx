@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 200790, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 200790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js"),
   Chunk688810 = require("./688810.jsx"),
@@ -20,80 +19,79 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk223772 = require("./223772.js");
 
-function g(e) {
+function f(e) {
   let {
     user: t,
     guild: n,
     className: i,
-    sectionTitle: f,
-    forcedDivider: g = false,
-    withTutorial: E = false
+    sectionTitle: _,
+    forcedDivider: f = false,
+    withTutorial: b = false
   } = e, {
-    analyticsLocations: b
-  } = (0, l.Ay)(), O = (0, d.A)("enable_avatar_decoration_uploads"), v = (0, p.a4)({
+    analyticsLocations: E
+  } = (0, o.Ay)(), x = (0, u.A)("enable_avatar_decoration_uploads"), O = (0, p.a4)({
     user: t,
     guildId: null == n ? true : n.id
   }), {
-    pendingAvatarDecoration: A,
+    pendingAvatarDecoration: C,
     errors: I
-  } = (0, p.CP)(null == n ? true : n.id), S = true === A ? null != v : null != A, T = () => {
-    (0, u.L)({
-      analyticsLocations: b,
-      guild: n
-    })
-  }, C = () => {
-    (0, p.Dx)(null, null == n ? true : n.id)
-  }, N = E ? o.wLn : s.$n;
-  return (0, r.jsxs)(_.A, {
+  } = (0, p.CP)(null == n ? true : n.id), T = b ? a.wLn : s.$n;
+  return (0, r.jsxs)(m.A, {
     className: i,
-    forcedDivider: g,
+    forcedDivider: f,
     hasBackground: true,
-    title: f,
+    title: _,
     errors: I,
     children: [(0, r.jsxs)("div", {
-      className: m.NC,
-      children: [(0, r.jsx)(N, {
+      className: A.NC,
+      children: [(0, r.jsx)(T, {
         size: s.$n.Sizes.SMALL,
-        onClick: T,
-        className: a()({
-          [m.yj]: E
+        onClick: () => {
+          (0, d.L)({
+            analyticsLocations: E,
+            guild: n
+          })
+        },
+        className: l()({
+          [A.yj]: b
         }),
-        children: h.intl.string(h.t.BVcYCx)
-      }), S && (0, r.jsx)("div", {
+        children: g.intl.string(g.t.BVcYCx)
+      }), (true === C ? null != O : null != C) && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: m.DT,
-        children: (0, r.jsx)(o.Button, {
+        className: A.DT,
+        children: (0, r.jsx)(a.Button, {
           variant: "secondary",
           size: "sm",
-          text: (0, c.uZ)(t, n) ? h.intl.string(h.t.CHf9iJ) : h.intl.string(h.t.OrokWm),
-          onClick: C
+          text: (0, c.uZ)(t, n) ? g.intl.string(g.t.CHf9iJ) : g.intl.string(g.t.OrokWm),
+          onClick: () => {
+            (0, p.Dx)(null, null == n ? true : n.id)
+          }
         })
       })]
-    }), t.isStaff() && O && (0, r.jsx)(y, {
+    }), t.isStaff() && x && (0, r.jsx)(h, {
       user: t
     })]
   })
 }
-let E = "PALUE000000001",
-  y = e => {
-    let {
-      user: t
-    } = e;
-    return (0, r.jsxs)("div", {
-      className: m.J_,
-      children: [(0, r.jsx)(o.Text, {
-        variant: "text-xs/bold",
-        children: "STAFF ONLY and Experimental. Upload a decoration to view throughout the app."
-      }), (0, r.jsx)(f.A, {
-        onChange: e => {
-          null != e && (t.avatarDecoration = {
-            asset: e,
-            skuID: E
-          })
-        },
-        size: "sm",
-        variant: "primary",
-        text: h.intl.string(h.t.a9F1Qu)
-      })]
-    })
-  }
+let h = e => {
+  let {
+    user: t
+  } = e;
+  return (0, r.jsxs)("div", {
+    className: A.J_,
+    children: [(0, r.jsx)(a.Text, {
+      variant: "text-xs/bold",
+      children: "STAFF ONLY and Experimental. Upload a decoration to view throughout the app."
+    }), (0, r.jsx)(_.A, {
+      onChange: e => {
+        null != e && (t.avatarDecoration = {
+          asset: e,
+          skuID: "PALUE000000001"
+        })
+      },
+      size: "sm",
+      variant: "primary",
+      text: g.intl.string(g.t.a9F1Qu)
+    })]
+  })
+}

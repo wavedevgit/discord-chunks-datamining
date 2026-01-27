@@ -39,15 +39,15 @@ function h(e, t, n) {
   }, T = (0, u.lb)();
   "virtual" === T && "u" > typeof window && "ontouchstart" in window && (T = "pointer");
   let C = E && ("keyboard" === T || "virtual" === T) ? m.format("removeDescription") : "",
-    N = (0, s.I)(C),
+    N = (0, o.I)(C),
     w = h.key === t.selectionManager.focusedKey,
     R = null != t.selectionManager.focusedKey,
     P = false;
   I || !w && R || (P = 0);
-  let D = (0, o.$)(h.props),
-    x = (0, l.HI)(h.props),
+  let D = (0, s.$)(h.props),
+    L = (0, l.HI)(h.props),
     {
-      focusableProps: L
+      focusableProps: x
     } = (0, d.Wc)({
       isDisabled: I
     }, n);
@@ -59,7 +59,7 @@ function h(e, t, n) {
       id: g,
       onPress: () => E ? E(new Set([h.key])) : null
     },
-    rowProps: (0, c.v)(L, y, D, x, {
+    rowProps: (0, c.v)(x, y, D, L, {
       tabIndex: P,
       onKeyDown: E ? S : true,
       "aria-describedby": N["aria-describedby"]

@@ -2,7 +2,7 @@
 /** chunk id: 518009, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => o,
+  F: () => s,
   wL: () => i
 }), require("./896048.js"), require("./321073.js"), require("./627968.js");
 var Chunk64700 = require("./64700.js"),
@@ -11,16 +11,16 @@ var Chunk64700 = require("./64700.js"),
   }({});
 let a = {};
 
-function s(e) {
+function o(e) {
   return e
 }
 
-function o(e) {
+function s(e) {
   let {
     items: t,
     renderItem: n,
     getItemKey: i,
-    wrapChildren: o = s,
+    wrapChildren: s = o,
     lazyCleanUpDelay: l
   } = e, c = r.useRef(false);
   r.useLayoutEffect(() => {
@@ -32,8 +32,8 @@ function o(e) {
       a = new Map(d.current);
     for (let e of t) {
       let t = i(e),
-        s = a.get(t);
-      if (null == s) {
+        o = a.get(t);
+      if (null == o) {
         let r = +(null != d.current),
           i = () => {
             var e, n;
@@ -41,18 +41,18 @@ function o(e) {
             null == r || (2 === r.state ? (null == (n = d.current) || n.delete(t), null != l ? (clearTimeout(c.current), c.current = setTimeout(() => u({}), l)) : u({})) : __DEV__ && console.warn("SimpleTransitionGroup.cleanUp: Attempted to remove an item that isn't yeetable: ".concat(t)))
           },
           a = n(t, e, r, i);
-        s = {
+        o = {
           item: e,
           children: a,
           state: r,
           cleanUp: i,
           renderItem: n
         }
-      } else if (s.item !== e || s.renderItem !== n || 2 === s.state) {
+      } else if (o.item !== e || o.renderItem !== n || 2 === o.state) {
         let {
           cleanUp: r
-        } = s, i = 2 === s.state ? 1 : s.state, a = n(t, e, i, s.cleanUp);
-        s = {
+        } = o, i = 2 === o.state ? 1 : o.state, a = n(t, e, i, o.cleanUp);
+        o = {
           item: e,
           children: a,
           state: i,
@@ -60,7 +60,7 @@ function o(e) {
           renderItem: n
         }
       }
-      a.set(t, s), r.delete(t)
+      a.set(t, o), r.delete(t)
     }
     for (let e of r) {
       let t = a.get(e);
@@ -87,5 +87,5 @@ function o(e) {
   }), [f]);
   let p = [];
   for (let [, e] of f) p.push(e.children);
-  return p.length > 0 ? o(p, t) : null
+  return p.length > 0 ? s(p, t) : null
 }

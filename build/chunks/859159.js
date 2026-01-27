@@ -20,7 +20,7 @@ function l(e, t, n) {
 }
 class c {
   updateVoiceStates(e, t) {
-    t === this.channelId ? (this.totalParticipants.add(e), this.maxVoiceStateCount = Math.max(s.Ay.countVoiceStatesForChannel(t), this.maxVoiceStateCount)) : (null == t && e in this.totalSpeakers && (this.totalSpeakers[e] = o.ME.NONE), e === this.userId && null != t && this.setChannelId(t))
+    t === this.channelId ? (this.totalParticipants.add(e), this.maxVoiceStateCount = Math.max(o.Ay.countVoiceStatesForChannel(t), this.maxVoiceStateCount)) : (null == t && e in this.totalSpeakers && (this.totalSpeakers[e] = s.ME.NONE), e === this.userId && null != t && this.setChannelId(t))
   }
   getStats() {
     return {
@@ -42,17 +42,17 @@ class c {
     }
   }
   setSpeaking(e, t) {
-    if (t !== o.ME.NONE) {
+    if (t !== s.ME.NONE) {
       let n = a.A.getVoiceStateForChannel(this.channelId, e);
       if (null != n && !n.selfMute && !n.mute) {
         this.totalSpeakers[e] = t;
-        let n = Object.values(this.totalSpeakers).filter(e => e !== o.ME.NONE).length;
+        let n = Object.values(this.totalSpeakers).filter(e => e !== s.ME.NONE).length;
         this.maxSpeakerCount = Math.max(this.maxSpeakerCount, n)
       }
-    } else e in this.totalSpeakers && (this.totalSpeakers[e] = o.ME.NONE);
+    } else e in this.totalSpeakers && (this.totalSpeakers[e] = s.ME.NONE);
     if (this.userId === e) {
       if (t === this.speaking) return;
-      if (t !== o.ME.NONE) {
+      if (t !== s.ME.NONE) {
         let e = Object.values(a.A.getVoiceStatesForChannel(this.channelId)).filter(e => !e.selfDeaf && !e.deaf);
         e.forEach(e => this.totalListeners.add(e.userId)), this.maxListenerCount = Math.max(e.length, this.maxListenerCount)
       }
@@ -63,9 +63,9 @@ class c {
     if (e === this.channelId) return;
     this.channelId = e, this.totalParticipants = new Set([this.userId]);
     let t = Object.keys(a.A.getVoiceStatesForChannel(this.channelId));
-    t.forEach(e => this.totalParticipants.add(e)), this.maxVoiceStateCount = t.length, this.speaking = o.ME.NONE, this.maxListenerCount = 0, this.totalListeners = new Set, this.maxSpeakerCount = 0, this.totalSpeakers = {}
+    t.forEach(e => this.totalParticipants.add(e)), this.maxVoiceStateCount = t.length, this.speaking = s.ME.NONE, this.maxListenerCount = 0, this.totalListeners = new Set, this.maxSpeakerCount = 0, this.totalSpeakers = {}
   }
   constructor(e, t) {
-    l(this, "userId", true), l(this, "channelId", true), l(this, "maxVoiceStateCount", 1), l(this, "totalParticipants", new Set), l(this, "speaking", o.ME.NONE), l(this, "maxListenerCount", 0), l(this, "totalListeners", new Set), l(this, "maxSpeakerCount", 0), l(this, "totalSpeakers", {}), this.userId = e, this.setChannelId(t)
+    l(this, "userId", true), l(this, "channelId", true), l(this, "maxVoiceStateCount", 1), l(this, "totalParticipants", new Set), l(this, "speaking", s.ME.NONE), l(this, "maxListenerCount", 0), l(this, "totalListeners", new Set), l(this, "maxSpeakerCount", 0), l(this, "totalSpeakers", {}), this.userId = e, this.setChannelId(t)
   }
 }

@@ -9,10 +9,10 @@ var Chunk144914 = require("./144914.js"),
 
 function a(e, t, n) {
   let a = t.getState(e.id, e.branchId),
-    s = n.getQueuePosition(e.id, e.branchId),
-    o = n.paused;
+    o = n.getQueuePosition(e.id, e.branchId),
+    s = n.paused;
   if (null != a) {
-    if (null == s || false === s) switch (a.type) {
+    if (null == o || false === o) switch (a.type) {
       case i.WTw.INSTALLING:
         return i.Hf6.INSTALL;
       case i.WTw.UPDATING:
@@ -24,8 +24,8 @@ function a(e, t, n) {
       case i.WTw.UPDATING:
       case i.WTw.UPDATE_REQUIRED:
       case i.WTw.REPAIRING:
-        if (s > 0) return i.Hf6.MOVE_UP;
-        if (o) return i.Hf6.RESUME;
+        if (o > 0) return i.Hf6.MOVE_UP;
+        if (s) return i.Hf6.RESUME;
         return i.Hf6.PAUSE;
       case i.WTw.UP_TO_DATE:
         return i.Hf6.PLAY;
@@ -33,5 +33,5 @@ function a(e, t, n) {
         return null
     }
   }
-  return null != s && s > 0 ? i.Hf6.MOVE_UP : (0, r.S)() ? i.Hf6.INSTALL : null
+  return null != o && o > 0 ? i.Hf6.MOVE_UP : (0, r.S)() ? i.Hf6.INSTALL : null
 }

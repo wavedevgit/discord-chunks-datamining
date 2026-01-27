@@ -9,7 +9,7 @@ require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk283823 = require("./283823.jsx");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,14 +18,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -72,15 +72,15 @@ function f(e) {
   let {
     guildId: t,
     name: n,
-    position: s = "right",
+    position: o = "right",
     onClose: l,
     targetElementRef: d
   } = e, f = u(e, ["guildId", "name", "position", "onClose", "targetElementRef"]);
-  return (0, r.jsx)(i.YNO, o({
+  return (0, r.jsx)(i.YNO, s({
     targetElementRef: d,
-    position: s,
+    position: o,
     clickTrap: true,
-    renderPopout: e => (0, r.jsx)(a.A, c(o({}, e), {
+    renderPopout: e => (0, r.jsx)(a.A, c(s({}, e), {
       onClose: () => {
         e.closePopout(), null == l || l()
       },

@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 920064, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 22841 **/
+/** chunk id: 920064, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => s
 });
 var Chunk486020 = require("./486020.js"),
   Chunk954921 = require("./954921.jsx");
-let a = (e, t, n) => (0, r.F_)({
+let s = (e, t, a) => (0, i.F_)({
   avatarDecoration: {
     asset: e
   },
-  size: (0, i.Te)(t),
-  canAnimate: n
+  size: (0, n.Te)(t),
+  canAnimate: a
 })

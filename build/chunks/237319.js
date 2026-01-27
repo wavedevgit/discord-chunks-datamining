@@ -4,7 +4,7 @@
 require.d(exports, {
   CH: () => a,
   H5: () => i,
-  NQ: () => s
+  NQ: () => o
 });
 var Chunk64700 = require("./64700.js"),
   i = function(e) {
@@ -23,7 +23,7 @@ var Chunk64700 = require("./64700.js"),
       }
   };
 
-function s(e) {
+function o(e) {
   var t = (0, r.useRef)(true);
   return (0, r.useEffect)(function() {
     t.current = e

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 585052, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 585052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,20 +15,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function _() {
+function m() {
   let e = (0, c.o)(),
-    t = i.useMemo(() => (0, o.YS)(), []);
-  return (0, r.jsxs)(u.h, {
-    setting: d.H.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
-    children: [(0, r.jsx)(u._, {
+    t = i.useMemo(() => (0, a.YS)(), []);
+  return (0, r.jsxs)(d.h, {
+    setting: u.H.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
+    children: [(0, r.jsx)(d._, {
       header: p.intl.string(p.t.tiCXaH),
       description: p.intl.format(p.t.RvjRRI, {
-        appealLink: s.A.getArticleURL(f.MVz.SAFE_DIRECT_MESSAGING)
+        appealLink: s.A.getArticleURL(_.MVz.SAFE_DIRECT_MESSAGING)
       })
-    }), (0, r.jsx)(a.z6M, {
+    }), (0, r.jsx)(l.z6M, {
       value: e,
       options: t,
-      onChange: e => l.he.updateSetting(e)
+      onChange: e => o.he.updateSetting(e)
     })]
   })
 }

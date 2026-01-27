@@ -12,11 +12,11 @@ var Chunk469993 = require("./469993.js"),
 
 function l(e) {
   var t;
-  let n = e.ownerId === (null == (t = o.default.getCurrentUser()) ? true : t.id);
-  return (0, s.V9)({
+  let n = e.ownerId === (null == (t = s.default.getCurrentUser()) ? true : t.id);
+  return (0, o.V9)({
     guild: e,
     isOwner: n,
-    canManageGuildRoleSubscriptions: (0, s.X9)(e),
+    canManageGuildRoleSubscriptions: (0, o.X9)(e),
     isMonetizationWaitlistEnabledForGuild: (0, r.Kw)(e.id),
     isGuildEligibleForRoleSubscriptions: (0, a.OV)(e.id),
     isExpeditedMonetizationOnboardingGuild: (0, r.Sm)(e),

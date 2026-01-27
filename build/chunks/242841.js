@@ -13,7 +13,7 @@ var Chunk120858 = require("./120858.js"),
 module.exports = function(e) {
   var t = this;
   if ("Object" !== i(t)) throw TypeError("`this` value must be an object");
-  return c(t, s(a(e), function(e) {
+  return c(t, o(a(e), function(e) {
     var n = function(e) {
         return {
           status: "fulfilled",

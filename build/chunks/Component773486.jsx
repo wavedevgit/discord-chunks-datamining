@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk300296 = require("./300296.js"),
   Chunk788396 = require("./788396.js");
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -44,7 +44,7 @@ function P(e) {
   return e
 }
 
-function I(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,58 +74,58 @@ function x(e, t) {
     for (s = 0, r = Object.getOwnPropertySymbols(e); s < r.length; s++) n = r[s], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let w = e => {
+let E = e => {
     let t, {
         onInvite: r,
         onClose: c,
         subscriptionId: u
       } = e,
       b = x(e, ["onInvite", "onClose", "subscriptionId"]),
-      [y, v] = s.useState([]),
-      [w, E] = s.useState(""),
-      N = (0, o.A)(w, 400),
+      [y, P] = s.useState([]),
+      [E, w] = s.useState(""),
+      N = (0, o.A)(E, 400),
       C = (0, l.bG)([m.A], () => m.A.getNumAvailableInvites());
     s.useEffect(() => {
-      d.default.track(_.HAw.PREMIUM_GROUP_INVITE_FRIENDS_MODAL_VIEWED)
+      d.default.track(O.HAw.PREMIUM_GROUP_INVITE_FRIENDS_MODAL_VIEWED)
     }, []);
     let {
       eligibleUsers: M,
-      getNextRows: k,
-      hasError: R,
+      getNextRows: R,
+      hasError: k,
       isFetching: A
     } = (0, g.A)({
       subscriptionId: u,
       searchQuery: N
     }), [U, D] = s.useState(false), T = s.useCallback(e => {
-      v(t => t.filter(t => !e.has(t.id)))
-    }, [v]), z = s.useMemo(() => y.map(e => ({
+      P(t => t.filter(t => !e.has(t.id)))
+    }, [P]), z = s.useMemo(() => y.map(e => ({
       id: e.id,
       label: f.Ay.getName(e)
     })), [y]);
-    return R ? (0, n.jsx)(i.Modal, P({
+    return k ? (0, n.jsx)(i.Modal, I({
       size: "sm",
-      title: S.intl.string(O.default["54lM5y"]),
-      subtitle: S.intl.string(O.default.zrtwpV),
+      title: j.intl.string(S.default["54lM5y"]),
+      subtitle: j.intl.string(S.default.zrtwpV),
       onClose: c,
       actions: []
-    }, b)) : 0 !== M.length || A || 0 !== N.length ? (0, n.jsx)(i.Modal, I(P({
+    }, b)) : 0 !== M.length || A || 0 !== N.length ? (0, n.jsx)(i.Modal, _(I({
       size: "md",
-      title: S.intl.string(O.default["Um/7BM"]),
-      subtitle: S.intl.format(O.default.qSWXaf, {
+      title: j.intl.string(S.default["Um/7BM"]),
+      subtitle: j.intl.format(S.default.qSWXaf, {
         totalSeats: h.LM,
         premiumGroupProductName: (0, h.DP)(),
         helpCenterLink: h.TE
       }),
       onClose: c,
       input: (0, n.jsx)("div", {
-        className: j.c,
+        className: v.c,
         children: (0, n.jsx)(a.ksK, {
-          value: w,
-          onChange: E,
-          placeholder: 0 === y.length ? S.intl.string(O.default.wRS8vo) : "",
+          value: E,
+          onChange: w,
+          placeholder: 0 === y.length ? j.intl.string(S.default.wRS8vo) : "",
           leading: z.length > 0 ? {
             type: "tags",
-            label: S.intl.string(O.default["Um/7BM"]),
+            label: j.intl.string(S.default["Um/7BM"]),
             items: z,
             onRemove: T
           } : true
@@ -135,11 +135,11 @@ let w = e => {
       actionBarInput: (t = N.length > 0 && 0 === M.length, (0, n.jsx)(a.Button, {
         variant: "primary",
         disabled: 0 === y.length && !t || U,
-        text: S.intl.string(O.default["5fZHp3"]),
+        text: j.intl.string(S.default["5fZHp3"]),
         size: "md",
         fullWidth: true,
         onClick: async () => {
-          t ? c() : (d.default.track(_.HAw.PREMIUM_GROUP_INVITE_FRIENDS_CTA_CLICKED, {
+          t ? c() : (d.default.track(O.HAw.PREMIUM_GROUP_INVITE_FRIENDS_CTA_CLICKED, {
             invited_user_ids: y.map(e => e.id)
           }), D(true), await r(y), D(false))
         }
@@ -149,61 +149,61 @@ let w = e => {
         users: M,
         isUserSelected: e => y.some(t => t.id === e.id),
         onSelectionChange: (e, t) => {
-          v(r => t ? [...r, e] : r.filter(t => t.id !== e.id))
+          P(r => t ? [...r, e] : r.filter(t => t.id !== e.id))
         },
         isUserDisabled: e => y.length >= C && !y.some(t => t.id === e.id) || !e.eligible,
         isFetching: A,
-        onFetchMore: k,
+        onFetchMore: R,
         searchQuery: N,
         emptySearchContent: {
-          header: S.intl.string(O.default.gaamNe),
-          body: S.intl.string(O.default.nQcM39)
+          header: j.intl.string(S.default.gaamNe),
+          body: j.intl.string(S.default.nQcM39)
         },
-        className: j.p_,
+        className: v.p_,
         tooltipConfig: {
-          text: e => S.intl.formatToPlainString(O.default["5tzM9V"], {
+          text: e => j.intl.formatToPlainString(S.default["5tzM9V"], {
             disabledUserName: f.Ay.getName(e),
             premiumGroupProductName: (0, h.DP)()
           }),
           isActive: (e, t) => !!(t && !e.eligible)
         }
       })
-    })) : (0, n.jsx)(i.Modal, P({
+    })) : (0, n.jsx)(i.Modal, I({
       size: "sm",
-      title: S.intl.string(O.default.ONaJLH),
-      subtitle: S.intl.format(O.default["0LHbPc"], {
+      title: j.intl.string(S.default.ONaJLH),
+      subtitle: j.intl.format(S.default["0LHbPc"], {
         helpCenterLink: h.TE
       }),
       onClose: c,
       actions: []
     }, b))
   },
-  E = e => {
+  w = e => {
     let {
       onClose: t,
       inviteUsersResult: r
     } = e, s = x(e, ["onClose", "inviteUsersResult"]);
-    return (0, n.jsx)(i.ExpressiveModal, I(P({
+    return (0, n.jsx)(i.ExpressiveModal, _(I({
       graphic: {
         type: "image",
-        src: v.A
+        src: P.A
       },
       gradientColor: "nitro-pink",
-      title: S.intl.formatToPlainString(O.default.MIiPur, {
+      title: j.intl.formatToPlainString(S.default.MIiPur, {
         premiumGroupProductName: (0, h.DP)(),
         sentCount: r.filter(e => e.isSuccess).length
       }),
-      subtitle: S.intl.format(O.default.olkQkj, {
+      subtitle: j.intl.format(S.default.olkQkj, {
         onClick: () => {
           t(), (0, u.openUserSettings)(c.X.SUBSCRIPTIONS_PANEL, {
-            section: _.nc_.SUBSCRIPTIONS
+            section: O.nc_.SUBSCRIPTIONS
           })
         }
       }),
       onClose: t
     }, s), {
       children: (0, n.jsx)("div", {
-        className: j.yk,
+        className: v.yk,
         children: r.map(e => (0, n.jsx)(y.q, {
           recipient: e.user,
           isSuccess: e.isSuccess,
@@ -221,7 +221,7 @@ let w = e => {
       for (let t of e) r.set(t.id, t), n.push(t.id);
       let s = await (0, b.n2)(t.id, n);
       if (null == s) {
-        d.default.track(_.HAw.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
+        d.default.track(O.HAw.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
           successful_user_ids: [],
           failed_user_ids: n
         }), l(e.map(e => ({
@@ -234,7 +234,7 @@ let w = e => {
         invitedUsers: i,
         ineligibleUsers: a
       } = s;
-      d.default.track(_.HAw.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
+      d.default.track(O.HAw.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
         successful_user_ids: i,
         failed_user_ids: a
       }), l([...i.map(e => ({
@@ -245,10 +245,10 @@ let w = e => {
         isSuccess: false
       }))]), o(2)
     };
-    return 1 === a ? (0, n.jsx)(w, I(P({}, r), {
+    return 1 === a ? (0, n.jsx)(E, _(I({}, r), {
       onInvite: c,
       subscriptionId: t.id
-    })) : 2 === a ? (0, n.jsx)(E, I(P({}, r), {
+    })) : 2 === a ? (0, n.jsx)(w, _(I({}, r), {
       inviteUsersResult: i
     })) : true
   }

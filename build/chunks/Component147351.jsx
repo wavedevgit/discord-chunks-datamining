@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 147351, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 147351, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => N
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,145 +20,111 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk48447 = require("./48447.js");
 
-function y(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function b(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      y(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function O(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
 function A(e) {
-  let {
-    channel: t,
-    message: n,
-    currentUser: r
-  } = e;
-  return (0, a.bG)([f.A, d.Ay], () => {
-    var e;
-    let i = t.guild_id;
-    if (null == r || null == i) returnfalse;
-    let a = (0, u.UJ)(t),
-      s = f.A.can(g.xBc.SEND_MESSAGES, t),
-      o = null == (e = d.Ay.getMember(i, r.id)) ? true : e.isPending,
-      l = n.author.bot;
-    return s && !a && !o && !l
-  })
-}
-
-function I(e) {
   let {
     assets: t,
     currentUser: n,
     message: r
-  } = e, i = (h.default.extractTimestamp(n.id) + h.default.extractTimestamp(r.id)) % t.length;
+  } = e, i = (g.default.extractTimestamp(n.id) + g.default.extractTimestamp(r.id)) % t.length;
   return t[i]
 }
 
-function S(e) {
-  let {
-    channel: t,
-    message: n,
-    sticker: r
-  } = e, i = {
-    channel: t,
-    message: n,
-    shouldMention: true,
-    showMentionToggle: true
-  };
-  o.A.sendGreetMessage(t.id, r.id, o.A.getSendMessageOptionsForReply(i))
-}
-
-function T(e) {
-  let {
-    sticker: t,
-    event: n,
-    eventProperties: r
-  } = e;
-  null != n && _.default.track(n, v(b({}, r), {
-    sticker_id: t.id
-  }))
-}
-
-function C(e) {
+function y(e) {
   let {
     currentUser: t,
     channel: n,
-    message: a,
-    buttonLabels: o,
-    stickers: u,
-    event: d,
-    eventProperties: f
-  } = e, p = i.useMemo(() => I({
+    message: l,
+    buttonLabels: u,
+    stickers: d,
+    event: p,
+    eventProperties: m
+  } = e, g = i.useMemo(() => A({
+    assets: d,
+    currentUser: t,
+    message: l
+  }), [d, t, l]), _ = i.useMemo(() => A({
     assets: u,
     currentUser: t,
-    message: a
-  }), [u, t, a]), _ = i.useMemo(() => I({
-    assets: o,
-    currentUser: t,
-    message: a
-  }), [o, t, a]), h = i.useCallback(async () => {
+    message: l
+  }), [u, t, l]), b = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, m.i)({
-      type: l.oU.FORM,
+    } = await (0, h.i)({
+      type: o.oU.FORM,
       content: "",
       channel: n
     });
-    e && (S({
+    e && (! function(e) {
+      let {
+        channel: t,
+        message: n,
+        sticker: r
+      } = e;
+      s.A.sendGreetMessage(t.id, r.id, s.A.getSendMessageOptionsForReply({
+        channel: t,
+        message: n,
+        shouldMention: true,
+        showMentionToggle: true
+      }))
+    }({
       channel: n,
-      message: a,
-      sticker: p
-    }), T({
-      sticker: p,
-      event: d,
-      eventProperties: f
+      message: l,
+      sticker: g
+    }), function(e) {
+      var t, n;
+      let {
+        sticker: r,
+        event: i,
+        eventProperties: l
+      } = e;
+      null != i && f.default.track(i, (t = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({}, l), n = n = {
+        sticker_id: r.id
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t))
+    }({
+      sticker: g,
+      event: p,
+      eventProperties: m
     }))
-  }, [n, a, p, d, f]);
-  return (0, r.jsx)(s.$nd, {
+  }, [n, l, g, p, m]);
+  return (0, r.jsx)(a.$nd, {
     icon: {
       type: "sticker",
-      asset: p,
+      asset: g,
       component: c.A
     },
     text: _,
-    onClick: h,
+    onClick: b,
     variant: "secondary"
   })
 }
 
-function N(e) {
+function v(e) {
   let {
     channel: t,
     message: n,
@@ -167,15 +132,31 @@ function N(e) {
     stickers: a,
     event: s,
     eventProperties: o
-  } = e, l = p.default.getCurrentUser(), c = A({
+  } = e, c = m.default.getCurrentUser(), f = function(e) {
+    let {
+      channel: t,
+      message: n,
+      currentUser: r
+    } = e;
+    return (0, l.bG)([p.A, d.Ay], () => {
+      var e;
+      let i = t.guild_id;
+      if (null == r || null == i) returnfalse;
+      let l = (0, u.UJ)(t),
+        a = p.A.can(_.xBc.SEND_MESSAGES, t),
+        s = null == (e = d.Ay.getMember(i, r.id)) ? true : e.isPending,
+        o = n.author.bot;
+      return a && !l && !s && !o
+    })
+  }({
     channel: t,
     message: n,
-    currentUser: l
+    currentUser: c
   });
-  return null != l && c ? (0, r.jsx)("div", {
-    className: E.S,
-    children: (0, r.jsx)(C, {
-      currentUser: l,
+  return null != c && f ? (0, r.jsx)("div", {
+    className: b.S,
+    children: (0, r.jsx)(y, {
+      currentUser: c,
       channel: t,
       message: n,
       buttonLabels: i,

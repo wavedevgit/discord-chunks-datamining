@@ -10,7 +10,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -82,7 +82,7 @@ function y() {
 }
 class b extends(r = Chunk311907.Ay.Store) {
   shouldShowOnboarding(e) {
-    return e !== s.ME && e !== s.YYv && !!c(u[e])
+    return e !== o.ME && e !== o.YYv && !!c(u[e])
   }
   getOnboardingStatus(e) {
     return u[e]
@@ -95,7 +95,7 @@ class b extends(r = Chunk311907.Ay.Store) {
     return null != (t = d[e]) ? t : "cover"
   }
 }
-o(b, "displayName", "GuildOnboardingStore");
+s(b, "displayName", "GuildOnboardingStore");
 let O = new b(Chunk73153.h, {
   LOGOUT: f,
   GUILD_DELETE: g,

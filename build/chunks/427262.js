@@ -94,19 +94,19 @@ function b(e) {
 function O(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   switch (e) {
-    case s.clD.ONLINE:
-      return t ? o.intl.string(o.t["9hghLD"]) : o.intl.string(o.t.WbGtnH);
-    case s.clD.OFFLINE:
-      return o.intl.string(o.t.Vv0abJ);
-    case s.clD.IDLE:
-      return o.intl.string(o.t.qWbtVU);
-    case s.clD.DND:
-      return o.intl.string(o.t.jaNpQH);
-    case s.clD.INVISIBLE:
-      return o.intl.string(o.t.bg24HO);
-    case s.clD.STREAMING:
-      return o.intl.string(o.t.XKYej5);
-    case s.clD.UNKNOWN:
+    case o.clD.ONLINE:
+      return t ? s.intl.string(s.t["9hghLD"]) : s.intl.string(s.t.WbGtnH);
+    case o.clD.OFFLINE:
+      return s.intl.string(s.t.Vv0abJ);
+    case o.clD.IDLE:
+      return s.intl.string(s.t.qWbtVU);
+    case o.clD.DND:
+      return s.intl.string(s.t.jaNpQH);
+    case o.clD.INVISIBLE:
+      return s.intl.string(s.t.bg24HO);
+    case o.clD.STREAMING:
+      return s.intl.string(s.t.XKYej5);
+    case o.clD.UNKNOWN:
     default:
       return null
   }
@@ -120,8 +120,8 @@ function v(e, t) {
   if (null == e) returnfalse;
   let i = Date.now() - e.createdAt.getTime(),
     a = null == n || i <= u * n,
-    s = i >= u * r;
-  return !!a && !!s
+    o = i >= u * r;
+  return !!a && !!o
 }
 
 function A(e) {
@@ -139,10 +139,10 @@ function I(e) {
 }
 
 function S(e, t, n) {
-  if (null == e) return o.intl.string(o.t.sKdZ6U);
+  if (null == e) return s.intl.string(s.t.sKdZ6U);
   if (!h(e.username)) return d;
   let r = n;
-  if ("always" === t.identifiable ? r = false : "never" === t.identifiable && (r = true), "0" !== e.discriminator && e.discriminator !== s.h3J && !t.forcePomelo) return "username" === t.mode || r ? e.username : "".concat(e.username, "#").concat(e.discriminator);
+  if ("always" === t.identifiable ? r = false : "never" === t.identifiable && (r = true), "0" !== e.discriminator && e.discriminator !== o.h3J && !t.forcePomelo) return "username" === t.mode || r ? e.username : "".concat(e.username, "#").concat(e.discriminator);
   let i = r ? f(e.username) : e.username;
   return "never" !== t.decoration ? p(i) : i
 }

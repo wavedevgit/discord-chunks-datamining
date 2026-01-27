@@ -7,7 +7,7 @@ var Chunk655310 = require("./655310.js"),
   Chunk741623 = require("./741623.js");
 module.exports = Chunk655310 ? function(e, t) {
   if (r(e, t)) return e;
-  throw new s("Reflect.setPrototypeOf: failed to set [[Prototype]]")
+  throw new o("Reflect.setPrototypeOf: failed to set [[Prototype]]")
 } : Chunk594230 || (Chunk868089 ? function(e, t) {
   return a(e, t), e
 } : null)

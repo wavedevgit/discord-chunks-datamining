@@ -6,7 +6,7 @@ require.d(exports, {
 var n, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  l = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk492462 = require("./492462.js"),
   Chunk607399 = require("./607399.js"),
   Chunk311907 = require("./311907.js"),
@@ -46,25 +46,25 @@ class x extends(n = Chunk64700.PureComponent) {
       hasCancel: n,
       working: i
     } = this.state, {
-      theme: a,
-      authBoxClassName: l
+      theme: l,
+      authBoxClassName: a
     } = this.props, o = null != t ? t : this.renderError("password");
-    return (0, s.jsxs)(m.Ay, {
+    return (0, s.jsxs)(y.Ay, {
       onSubmit: this.handleSubmit,
       tag: "form",
-      theme: a,
-      className: l,
+      theme: l,
+      className: a,
       children: [(0, s.jsx)("img", {
         alt: "",
         src: null == o ? r(79418) : r(579656),
-        className: A.SX
-      }), (0, s.jsx)(m.hE, {
-        children: v.intl.string(v.t["1LV6Kq"])
-      }), (0, s.jsxs)(m.eB, {
-        className: A.QX,
-        children: [(0, s.jsx)(m.pd, {
-          label: v.intl.string(v.t["8dM4FO"]),
-          className: A.SX,
+        className: v.SX
+      }), (0, s.jsx)(y.hE, {
+        children: A.intl.string(A.t["1LV6Kq"])
+      }), (0, s.jsxs)(y.eB, {
+        className: v.QX,
+        children: [(0, s.jsx)(y.pd, {
+          label: A.intl.string(A.t["8dM4FO"]),
+          className: v.SX,
           name: "password",
           value: e,
           onChange: e => this.setState({
@@ -74,15 +74,15 @@ class x extends(n = Chunk64700.PureComponent) {
           type: "password",
           autoComplete: "new-password",
           required: true
-        }), (0, s.jsxs)(d.ButtonGroup, {
+        }), (0, s.jsxs)(h.ButtonGroup, {
           direction: "vertical",
           fullWidth: true,
-          children: [(0, s.jsx)(d.Button, {
-            text: v.intl.string(v.t["FRep5/"]),
+          children: [(0, s.jsx)(h.Button, {
+            text: A.intl.string(A.t["FRep5/"]),
             type: "submit",
             loading: i
-          }), n && (0, s.jsx)(d.Button, {
-            text: v.intl.string(v.t["ETE/oC"]),
+          }), n && (0, s.jsx)(h.Button, {
+            text: A.intl.string(A.t["ETE/oC"]),
             variant: "secondary",
             onClick: this.handleGoToLogin,
             loading: i
@@ -98,27 +98,27 @@ class x extends(n = Chunk64700.PureComponent) {
       theme: r,
       authBoxClassName: n,
       width: i
-    } = this.props, a = e => {
+    } = this.props, l = e => {
       let {
         mfaType: t,
         data: r
       } = e;
       return this.handleTokenSubmitMFAv2(t, r)
     };
-    return (0, s.jsx)(m.Ay, {
+    return (0, s.jsx)(y.Ay, {
       style: {
         padding: 0
       },
       theme: r,
       className: n,
       children: (0, s.jsx)(O.t, {
-        mfaFinish: a,
+        mfaFinish: l,
         mfaChallenge: {
           ticket: e,
           methods: t
         },
         onEarlyClose: () => {
-          h.h.dispatch({
+          d.h.dispatch({
             type: "LOGIN_RESET"
           })
         },
@@ -131,18 +131,18 @@ class x extends(n = Chunk64700.PureComponent) {
       theme: e,
       authBoxClassName: t
     } = this.props;
-    return (0, s.jsxs)(m.Ay, {
+    return (0, s.jsxs)(y.Ay, {
       theme: e,
       className: t,
       children: [(0, s.jsx)("img", {
         alt: "",
         src: r(79418),
-        className: l()(A.SX, c.Fr ? A.QX : "")
-      }), (0, s.jsx)(m.hE, {
-        className: A.C2,
-        children: v.intl.string(v.t.WAUOoK)
-      }), (0, s.jsx)(d.Button, {
-        text: v.intl.string(v.t["uJWIj/"]),
+        className: a()(v.SX, c.Fr ? v.QX : "")
+      }), (0, s.jsx)(y.hE, {
+        className: v.C2,
+        children: A.intl.string(A.t.WAUOoK)
+      }), (0, s.jsx)(h.Button, {
+        text: A.intl.string(A.t["uJWIj/"]),
         fullWidth: true,
         onClick: this.handleOpenApp
       })]
@@ -161,19 +161,19 @@ class x extends(n = Chunk64700.PureComponent) {
         resetToken: s
       } = this.props, {
         password: i,
-        error: a
+        error: l
       } = this.state;
       if (e.preventDefault(), 0 === i.length) {
         this.setState({
-          error: v.intl.string(v.t.R98xD5)
+          error: A.intl.string(A.t.R98xD5)
         }), C._.dispatch(S.jej.WAVE_EMPHASIZE);
         return
       }
-      null != a && this.setState({
+      null != l && this.setState({
         error: null
       });
-      let l = s;
-      if (null != t && (l = (0, f.A)(t)), null != l) {
+      let a = s;
+      if (null != t && (a = (0, f.A)(t)), null != a) {
         this.setState({
           working: true
         });
@@ -182,25 +182,25 @@ class x extends(n = Chunk64700.PureComponent) {
             result: e,
             sms: t,
             webauthn: s,
-            ticket: a,
+            ticket: l,
             token: o,
             totp: c,
             backup: u
-          } = await p.A.resetPassword(l, i, n);
-          e === p.W.MFA ? h.h.dispatch({
+          } = await p.A.resetPassword(a, i, n);
+          e === p.W.MFA ? d.h.dispatch({
             type: "LOGIN_MFA_STEP",
-            ticket: a,
+            ticket: l,
             sms: t,
             webauthn: s,
             totp: c,
             backup: u
-          }) : null != r ? r(o) : (h.h.dispatch({
+          }) : null != r ? r(o) : (d.h.dispatch({
             type: "LOGIN_SUCCESS",
             token: o
           }), this.handlePasswordChangeSuccess())
         } catch (e) {
           this.setState({
-            apiErrors: (0, y.p)(e)
+            apiErrors: (0, m.p)(e)
           })
         }
         this.setState({
@@ -213,15 +213,15 @@ class x extends(n = Chunk64700.PureComponent) {
         mfaTicket: n,
         onLoginSuccess: s,
         resetToken: i,
-        source: a
+        source: l
       } = this.props, {
-        password: l
+        password: a
       } = this.state;
-      if (0 === l.length) return h.h.dispatch({
+      if (0 === a.length) return d.h.dispatch({
         type: "LOGIN_RESET"
       }), Promise.reject();
       let o = i;
-      if (null != r && (o = (0, f.A)(r)), null == o) return h.h.dispatch({
+      if (null != r && (o = (0, f.A)(r)), null == o) return d.h.dispatch({
         type: "LOGIN_RESET"
       }), Promise.reject();
       this.setState({
@@ -232,12 +232,12 @@ class x extends(n = Chunk64700.PureComponent) {
           method: e,
           code: t,
           ticket: n,
-          password: l,
+          password: a,
           token: o,
-          source: a
+          source: l
         });
         if (null != s) return void s(r);
-        h.h.dispatch({
+        d.h.dispatch({
           type: "LOGIN_SUCCESS",
           token: r
         }), this.handlePasswordChangeSuccess()

@@ -165,14 +165,14 @@ class g extends(r = Chunk64700.PureComponent) {
       animationProgress: r,
       animationState: i,
       baseHeight: a,
-      targetHeight: s
-    } = this.state, o = null != (e = this.props.sideMargin) ? e : 0, l = null != (t = this.props.verticalMargin) ? t : 0, u = 1 === i, d = 0 === i;
+      targetHeight: o
+    } = this.state, s = null != (e = this.props.sideMargin) ? e : 0, l = null != (t = this.props.verticalMargin) ? t : 0, u = 1 === i, d = 0 === i;
     return m(_({}, {
       overflow: d || u ? "hidden" : "visible",
       position: u ? "absolute" : true,
       top: u ? l : true,
-      left: u ? o : true,
-      right: u ? o : true,
+      left: u ? s : true,
+      right: u ? s : true,
       bottom: u ? l : true
     }, this.getMotionAnimation()), {
       opacity: r.interpolate({
@@ -183,7 +183,7 @@ class g extends(r = Chunk64700.PureComponent) {
       }),
       height: d ? r.interpolate({
         inputRange: [0, 1],
-        outputRange: [a, s],
+        outputRange: [a, o],
         extrapolate: "clamp",
         easing: c.A.Easing.inOut(c.A.Easing.ease)
       }) : n ? "100%" : "auto"
@@ -224,7 +224,7 @@ class g extends(r = Chunk64700.PureComponent) {
       targetHeight: 0,
       baseHeight: 0,
       animationState: null
-    }), p(this, "direction", this.props.getDirection()), p(this, "_measureRef", s.createRef())
+    }), p(this, "direction", this.props.getDirection()), p(this, "_measureRef", o.createRef())
   }
 }
 p(g, "contextType", Chunk158954.CZY), p(g, "defaultProps", {
@@ -251,8 +251,8 @@ class E extends(i = Chunk64700.Component) {
       className: n,
       innerClassName: r,
       animatedNodeClassName: i,
-      staticClassName: s,
-      sideMargin: o,
+      staticClassName: o,
+      sideMargin: s,
       verticalMargin: c,
       children: u,
       fillParent: p,
@@ -263,14 +263,14 @@ class E extends(i = Chunk64700.Component) {
       className: l()(f.NK, n),
       children: (0, a.jsx)(g, {
         fillParent: p,
-        sideMargin: o,
+        sideMargin: s,
         animationMotionType: null != _ ? _ : "slide",
         verticalMargin: c,
         getDirection: this.getDirection,
         getBaseHeight: this.getBaseHeight,
         className: r,
         animatedNodeClassName: i,
-        staticClassName: s,
+        staticClassName: o,
         setHeight: this.setHeight,
         children: u
       }, null != e ? e : "".concat(t))

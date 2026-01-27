@@ -1,57 +1,44 @@
-/** Chunk was on web.js **/
-/** chunk id: 45722, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 45722, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk1140 = require("./1140.js"),
   Chunk505122 = require("./505122.js"),
   Chunk586348 = require("./586348.js"),
   Chunk797686 = require("./797686.js");
 
-function o(e) {
-  var t = getComputedStyle(e),
-    n = i(e),
-    r = n.createElement("div");
-  r.style.fontFamily = t.fontFamily, r.style.fontSize = t.fontSize, r.style.fontStyle = t.fontStyle, r.style.fontWeight = t.fontWeight, r.style.lineHeight = t.lineHeight, r.style.position = "absolute", r.textContent = "M";
-  var a = n.body;
-  a || s(false), a.appendChild(r);
-  var o = r.getBoundingClientRect();
-  return a.removeChild(r), o.height
-}
-
-function l(e, t) {
-  for (var n = 1 / 0, r = 1 / 0, i = false / 0, a = false / 0, s = 0; s < e.length; s++) {
-    var o = e[s];
-    0 !== o.width && 1 !== o.width && (n = Math.min(n, o.top), r = Math.min(r, o.bottom), i = Math.max(i, o.top), a = Math.max(a, o.bottom))
+function s(t, e) {
+  for (var r = 1 / 0, n = 1 / 0, i = false / 0, o = false / 0, a = 0; a < t.length; a++) {
+    var s = t[a];
+    0 !== s.width && 1 !== s.width && (r = Math.min(r, s.top), n = Math.min(n, s.bottom), i = Math.max(i, s.top), o = Math.max(o, s.bottom))
   }
-  return i <= r && i - n < t && a - r < t
+  return i <= n && i - r < e && o - n < e
 }
-
-function c(e) {
-  switch (e.nodeType) {
-    case Node.DOCUMENT_TYPE_NODE:
-      return 0;
-    case Node.TEXT_NODE:
-    case Node.PROCESSING_INSTRUCTION_NODE:
-    case Node.COMMENT_NODE:
-      return e.length;
-    default:
-      return e.childNodes.length
-  }
-}
-module.exports = function(e) {
-  e.collapsed || s(false);
-  var t = (e = e.cloneRange()).startContainer;
-  1 !== t.nodeType && (t = t.parentNode);
-  var n = o(t),
-    i = e.endContainer,
-    u = e.endOffset;
-  for (e.setStart(e.startContainer, 0); l(a(e), n) && (i = e.startContainer, u = e.startOffset, i.parentNode || s(false), e.setStartBefore(i), 1 !== i.nodeType || "inline" === getComputedStyle(i).display););
-  for (var d = i, f = u - 1;;) {
-    for (var p = d.nodeValue, _ = f; _ >= 0; _--)
-      if (!(null != p && _ > 0 && r.isSurrogatePair(p, _ - 1)))
-        if (e.setStart(d, _), l(a(e), n)) i = d, u = _;
+module.exports = function(t) {
+  t.collapsed || a(false);
+  var e, r, u, c, l, f, p = (t = t.cloneRange()).startContainer;
+  1 !== p.nodeType && (p = p.parentNode);
+  var h = (r = getComputedStyle(e = p), (c = (u = i(e)).createElement("div")).style.fontFamily = r.fontFamily, c.style.fontSize = r.fontSize, c.style.fontStyle = r.fontStyle, c.style.fontWeight = r.fontWeight, c.style.lineHeight = r.lineHeight, c.style.position = "absolute", c.textContent = "M", (l = u.body) || a(false), l.appendChild(c), f = c.getBoundingClientRect(), l.removeChild(c), f.height),
+    d = t.endContainer,
+    g = t.endOffset;
+  for (t.setStart(t.startContainer, 0); s(o(t), h) && (d = t.startContainer, g = t.startOffset, d.parentNode || a(false), t.setStartBefore(d), 1 !== d.nodeType || "inline" === getComputedStyle(d).display););
+  for (var y = d, v = g - 1;;) {
+    for (var m = y.nodeValue, _ = v; _ >= 0; _--)
+      if (!(null != m && _ > 0 && n.isSurrogatePair(m, _ - 1)))
+        if (t.setStart(y, _), s(o(t), h)) d = y, g = _;
         else break;
-    if (false === _ || 0 === d.childNodes.length) break;
-    f = c(d = d.childNodes[_])
+    if (false === _ || 0 === y.childNodes.length) break;
+    v = function(t) {
+      switch (t.nodeType) {
+        case Node.DOCUMENT_TYPE_NODE:
+          return 0;
+        case Node.TEXT_NODE:
+        case Node.PROCESSING_INSTRUCTION_NODE:
+        case Node.COMMENT_NODE:
+          return t.length;
+        default:
+          return t.childNodes.length
+      }
+    }(y = y.childNodes[_])
   }
-  return e.setStart(i, u), e
+  return t.setStart(d, g), t
 }

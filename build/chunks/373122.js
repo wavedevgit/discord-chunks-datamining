@@ -2,13 +2,13 @@
 /** chunk id: 373122, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk989479 = require("./989479.js"),
   Chunk374372 = require("./374372.js"),
   Chunk241738 = require("./241738.js"),
   Chunk632434 = require("./632434.js");
-class o extends Chunk241738.w {
+class s extends Chunk241738.w {
   innerPatternString(e) {
     return `(эти|последние|прошлые|следующие|после|спустя|через|\\+|-)\\s*(${r.Pl})`
   }
@@ -19,7 +19,7 @@ class o extends Chunk241738.w {
       case "последние":
       case "прошлые":
       case "-":
-        a = (0, s.x4)(a)
+        a = (0, o.x4)(a)
     }
     return i.BP.createRelativeFromReference(e.reference, a)
   }

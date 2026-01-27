@@ -11,17 +11,17 @@ module.exports = function(e) {
     r = "(0|[1-9][\\d_]*|\\d[\\d_]*|[\\d_]+?\\d)",
     i = "([\\da-fA-F][\\da-fA-F_]*|_[\\da-fA-F][\\da-fA-F_]*)",
     a = "([eE][+-]?" + r + ")",
-    s = "(" + r + "(\\.\\d*|" + a + ")|\\d+\\." + r + "|\\." + n + a + "?)",
-    o = "(" + n + "|0[bB][01_]+|0[xX]" + i + ")",
+    o = "(" + r + "(\\.\\d*|" + a + ")|\\d+\\." + r + "|\\." + n + a + "?)",
+    s = "(" + n + "|0[bB][01_]+|0[xX]" + i + ")",
     l = "\\\\(['\"\\?\\\\abfnrtv]|u[\\dA-Fa-f]{4}|[0-7]{1,3}|x[\\dA-Fa-f]{2}|U[\\dA-Fa-f]{8})|&[a-zA-Z\\d]{2,};",
     c = {
       className: "number",
-      begin: "\\b" + o + "(L|u|U|Lu|LU|uL|UL)?",
+      begin: "\\b" + s + "(L|u|U|Lu|LU|uL|UL)?",
       relevance: 0
     },
     u = {
       className: "number",
-      begin: "\\b(" + ("(" + ("(0[xX](" + i + "\\." + i + "|\\.?" + i + ")[pP][+-]?" + r) + ")|" + s) + ")([fF]|L|i|[fF]i|Li)?|" + o + "(i|[fF]i|Li))",
+      begin: "\\b(" + ("(" + ("(0[xX](" + i + "\\." + i + "|\\.?" + i + ")[pP][+-]?" + r) + ")|" + o) + ")([fF]|L|i|[fF]i|Li)?|" + s + "(i|[fF]i|Li))",
       relevance: 0
     },
     d = {

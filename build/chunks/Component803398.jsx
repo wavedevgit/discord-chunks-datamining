@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 803398, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 82575 **/
+/** chunk id: 803398, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,27 +12,27 @@ var Chunk627968 = require("./627968.js"),
   Chunk736653 = require("./736653.js"),
   Chunk351906 = require("./351906.js"),
   Chunk985018 = require("./985018.jsx");
-let f = () => {
-  let e = (0, a.bG)([u.A], () => u.A.hidePersonalInformation),
+let g = () => {
+  let e = (0, l.bG)([d.A], () => d.A.hidePersonalInformation),
     t = (0, c.Ay)();
-  return (i.useEffect(() => {
-    o.A.fetch()
-  }, []), e) ? (0, r.jsx)(l.A, {}) : (0, r.jsxs)(s.BJc, {
+  return (s.useEffect(() => {
+    a.A.fetch()
+  }, []), e) ? (0, i.jsx)(o.A, {}) : (0, i.jsxs)(r.BJc, {
     gap: 16,
-    children: [(0, r.jsx)(s.Heading, {
+    children: [(0, i.jsx)(r.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
-      children: d.intl.string(d.t["Ig/XFa"])
-    }), (0, r.jsxs)(s.ppr, {
+      children: u.intl.string(u.t["Ig/XFa"])
+    }), (0, i.jsxs)(r.ppr, {
       theme: t,
-      children: [(0, r.jsx)(s.G8R, {
+      children: [(0, i.jsx)(r.G8R, {
         darkSrc: n(289142),
         lightSrc: n(796614),
         width: 230,
         height: 220
-      }), (0, r.jsx)(s.SGT, {
-        note: d.intl.string(d.t.WenGZ2),
-        children: d.intl.string(d.t.aoLS84)
+      }), (0, i.jsx)(r.SGT, {
+        note: u.intl.string(u.t.WenGZ2),
+        children: u.intl.string(u.t.aoLS84)
       })]
     })]
   })

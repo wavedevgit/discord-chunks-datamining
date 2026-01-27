@@ -9,7 +9,7 @@ var Chunk810531 = require("./810531.js"),
   Chunk927813 = require("./927813.js"),
   Chunk842086 = require("./842086.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,10 +45,10 @@ function _(e) {
 function h(e, t) {
   let n = [];
   return n.push({
-    type: s.cG.STICKER_NAME,
+    type: o.cG.STICKER_NAME,
     value: e.name.trim().toLocaleLowerCase()
   }), null != t && n.push({
-    type: s.cG.PACK_NAME,
+    type: o.cG.PACK_NAME,
     value: t.name
   }), n
 }
@@ -66,11 +66,11 @@ class m extends Chunk952526.U {
     return l.get(e)
   }
   constructor(...e) {
-    super(...e), o(this, "getAllPackStickers", this.memoized(e => {
+    super(...e), s(this, "getAllPackStickers", this.memoized(e => {
       let t = new Map;
       for (let n in e) t.set(n, Object.values(e[n].root));
       return t
-    })), o(this, "getStickerMetadataMap", this.memoized(e => {
+    })), s(this, "getStickerMetadataMap", this.memoized(e => {
       let t = new Map;
       for (let n in e)
         for (let [r, i] of Object.entries(e[n].root)) {
@@ -78,14 +78,14 @@ class m extends Chunk952526.U {
           t.set(r, h(i, e))
         }
       return t
-    })), o(this, "getStickerById", this.memoizedSecondaryIndex()), o(this, "getPremiumPacks", this.memoized(e => Array.from(c.values())))
+    })), s(this, "getStickerById", this.memoizedSecondaryIndex()), s(this, "getPremiumPacks", this.memoized(e => Array.from(c.values())))
   }
 }
 
 function g(e, t, n) {
   l.set(e.id, e), n && c.set(e.id, e), t.setPartition(e.id, _(e.stickers))
 }
-o(m, "displayName", "StickersPackStore");
+s(m, "displayName", "StickersPackStore");
 let E = new m({
   LOGOUT: (e, t) => {
     l.clear(), c.clear(), t.reset()

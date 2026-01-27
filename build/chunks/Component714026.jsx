@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk752238 = require("./752238.js"),
   Chunk433904 = require("./433904.js");
 
@@ -17,8 +17,8 @@ function c(e) {
     onChange: n
   } = e, a = "json", c = i.useRef(null), [u, d] = i.useState("");
   i.useEffect(() => {
-    if (null != t && o.default.hasLanguage(a)) {
-      let e = o.default.highlight(a, t, true);
+    if (null != t && s.default.hasLanguage(a)) {
+      let e = s.default.highlight(a, t, true);
       null != e ? d(e.value + "\n") : d(t + "\n")
     } else d(t + "\n")
   }, [t, a]);
@@ -40,13 +40,13 @@ function c(e) {
           let e = t.lastIndexOf("\n", i - 1) + 1,
             r = t.indexOf("\n", i),
             a = t.substring(e, false === r ? t.length : r),
-            s = 0;
+            o = 0;
           for (let e = 0; e < Math.min(2, a.length); e++)
-            if (" " === a[e]) s++;
+            if (" " === a[e]) o++;
             else break;
-          s > 0 && (n(t.substring(0, e) + t.substring(e + s)), setTimeout(() => {
+          o > 0 && (n(t.substring(0, e) + t.substring(e + o)), setTimeout(() => {
             if (null != c.current) {
-              let t = Math.max(e, i - s);
+              let t = Math.max(e, i - o);
               c.current.selectionStart = c.current.selectionEnd = t
             }
           }, 0))
@@ -61,7 +61,7 @@ function c(e) {
       className: l.c5,
       "aria-hidden": "true",
       children: (0, r.jsx)("code", {
-        className: s()("hljs", a),
+        className: o()("hljs", a),
         dangerouslySetInnerHTML: {
           __html: null != u ? u : ""
         }

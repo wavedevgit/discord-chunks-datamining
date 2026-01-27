@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 734771, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 734771, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -10,34 +9,34 @@ var Chunk763754 = require("./763754.js"),
   Chunk888675 = require("./888675.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function o(e) {
+function s(e) {
   let t, {
-      message: o,
-      usernameHook: l,
+      message: s,
+      usernameHook: o,
       otherUser: c,
       otherUsernameHook: u,
       compact: d,
-      channel: f
+      channel: p
     } = e,
-    p = (0, i.Ay)(o),
-    _ = p.nick,
-    h = l(p),
-    m = (0, i.d8)(c, f);
-  if (null != m && null != u) {
-    let e = u(m);
-    t = s.intl.format(s.t.L2FyVq, {
-      username: _,
-      usernameHook: h,
-      otherUsername: m.nick,
+    m = (0, i.Ay)(s),
+    f = m.nick,
+    g = o(m),
+    h = (0, i.d8)(c, p);
+  if (null != h && null != u) {
+    let e = u(h);
+    t = a.intl.format(a.t.L2FyVq, {
+      username: f,
+      usernameHook: g,
+      otherUsername: h.nick,
       otherUsernameHook: e
     })
-  } else t = s.intl.format(s.t["5v2xa8"], {
-    username: _,
-    usernameHook: h
+  } else t = a.intl.format(a.t["5v2xa8"], {
+    username: f,
+    usernameHook: g
   });
-  return (0, r.jsx)(a.A, {
+  return (0, r.jsx)(l.A, {
     icon: n(884797),
-    timestamp: o.timestamp,
+    timestamp: s.timestamp,
     compact: d,
     children: t
   })

@@ -1,6 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 505122, original params: e (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 505122, original params: t (module,exports,require) **/
 "use strict";
-module.exports = function(e) {
-  return e && e.ownerDocument ? e.ownerDocument : document
+module.exports = function(t) {
+  return t && t.ownerDocument ? t.ownerDocument : document
 }

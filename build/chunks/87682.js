@@ -9,11 +9,11 @@ module.exports = function(e) {
       scope: "symbol",
       match: /%b[0-1]+(-[0-1]+|(\.[0-1]+)+)?/
     },
-    s = {
+    o = {
       scope: "symbol",
       match: /%d[0-9]+(-[0-9]+|(\.[0-9]+)+)?/
     },
-    o = {
+    s = {
       scope: "symbol",
       match: /%x[0-9A-F]+(-[0-9A-F]+|(\.[0-9A-F]+)+)?/
     },
@@ -31,6 +31,6 @@ module.exports = function(e) {
     }, {
       scope: "attribute",
       match: t.concat(n, /(?=\s*=)/)
-    }, i, a, s, o, l, e.QUOTE_STRING_MODE, e.NUMBER_MODE]
+    }, i, a, o, s, l, e.QUOTE_STRING_MODE, e.NUMBER_MODE]
   }
 }

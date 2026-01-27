@@ -27,7 +27,7 @@ function h(e) {
     mutualGuilds: m
   } = (0, l.A)(t), g = null != h && h.length > 0, E = null != m && m.length > 0, y = g && E ? "text-xs/normal" : "text-sm/normal";
   if (!g && !E) return null;
-  let b = () => g ? (0, r.jsxs)(s.DUT, {
+  let b = () => g ? (0, r.jsxs)(o.DUT, {
       className: p.uW,
       onClick: () => null == n ? true : n(d.RP.MUTUAL_FRIENDS),
       children: [(0, r.jsx)(i.A, {
@@ -42,7 +42,7 @@ function h(e) {
         hideOverflowCount: true,
         disableUsernameTooltip: true,
         "aria-hidden": true
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: p.Qq,
         variant: y,
         color: "interactive-text-default",
@@ -53,7 +53,7 @@ function h(e) {
       "aria-hidden": "true",
       className: p.jH
     }) : null,
-    v = () => E ? (0, r.jsxs)(s.DUT, {
+    v = () => E ? (0, r.jsxs)(o.DUT, {
       className: p.uW,
       onClick: () => null == n ? true : n(d.RP.MUTUAL_GUILDS),
       children: [!g && (0, r.jsx)(a.A, {
@@ -64,10 +64,10 @@ function h(e) {
           } = e;
           return t
         }),
-        size: o.A.Sizes.SMOL,
+        size: s.A.Sizes.SMOL,
         hideOverflowCount: true,
         disableGuildNameTooltip: true
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: p.Qq,
         variant: y,
         color: "interactive-text-default",

@@ -13,8 +13,8 @@ var r, i = "basil",
   a = function(e) {
     return 3 === e ? "v3" : e
   },
-  s = "https://js.stripe.com",
-  o = "".concat(s, "/").concat(i, "/stripe.js"),
+  o = "https://js.stripe.com",
+  s = "".concat(o, "/").concat(i, "/stripe.js"),
   l = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
   c = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/,
   u = "loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used",
@@ -22,7 +22,7 @@ var r, i = "basil",
     return l.test(e) || c.test(e)
   },
   f = function() {
-    for (var e = document.querySelectorAll('script[src^="'.concat(s, '"]')), t = 0; t < e.length; t++) {
+    for (var e = document.querySelectorAll('script[src^="'.concat(o, '"]')), t = 0; t < e.length; t++) {
       var n = e[t];
       if (d(n.src)) return n
     }
@@ -31,7 +31,7 @@ var r, i = "basil",
   p = function(e) {
     var t = e && !e.advancedFraudSignals ? "?advancedFraudSignals=false" : "",
       n = document.createElement("script");
-    n.src = "".concat(o).concat(t);
+    n.src = "".concat(s).concat(t);
     var r = document.head || document.body;
     if (!r) throw Error("Expected document.body not to be null. Stripe.js requires a <body> element.");
     return r.appendChild(n), n
@@ -76,9 +76,9 @@ var r, i = "basil",
   O = function(e, t, n) {
     if (null === e) return null;
     var r = t[0].match(/^pk_test/),
-      s = a(e.version),
-      o = i;
-    r && s !== o && console.warn("Stripe.js@".concat(s, " was loaded on the page, but @stripe/stripe-js@").concat("7.3.1", " expected Stripe.js@").concat(o, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
+      o = a(e.version),
+      s = i;
+    r && o !== s && console.warn("Stripe.js@".concat(o, " was loaded on the page, but @stripe/stripe-js@").concat("7.3.1", " expected Stripe.js@").concat(s, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
     var l = e.apply(true, t);
     return _(l, n), l
   },

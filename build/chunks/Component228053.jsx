@@ -1,12 +1,12 @@
-/** Chunk was on 42944 **/
-/** chunk id: 228053, original params: e,a,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 228053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => P
+  A: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk435371 = require("./435371.js"),
@@ -29,56 +29,56 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk30621 = require("./30621.js");
 
-function R(e) {
+function T(e) {
   let {
-    application: a,
+    application: t,
     sku: n,
-    handleOpenUserProfileModal: i,
-    analyticsLocations: r
-  } = e, o = l.useRef(null), {
-    analyticsLocations: m
-  } = (0, u.Ay)(null != r ? r : []), {
-    isHoveringOrFocusing: x
-  } = (0, f.A)(o), [j, h] = l.useState(false), I = l.useCallback(async e => {
-    if (e.stopPropagation(), !j) {
-      h(true);
+    handleOpenUserProfileModal: l,
+    analyticsLocations: a
+  } = e, o = i.useRef(null), {
+    analyticsLocations: p
+  } = (0, d.Ay)(null != a ? a : []), {
+    isHoveringOrFocusing: m
+  } = (0, g.A)(o), [b, E] = i.useState(false), O = i.useCallback(async e => {
+    if (e.stopPropagation(), !b) {
+      E(true);
       try {
-        await g.A.addSkuToWishlist(n.id, m), null == i || i({
-          tabSection: O.RP.WISHLIST
+        await A.A.addSkuToWishlist(n.id, p), null == l || l({
+          tabSection: S.RP.WISHLIST
         })
       } catch (e) {
-        (0, d.showToast)((0, d.createToast)(y.intl.string(y.t.F8FvUy), d.ToastType.FAILURE)), s.ORC.announce(y.intl.string(y.t.F8FvUy))
+        (0, u.showToast)((0, u.createToast)(C.intl.string(C.t.F8FvUy), u.ToastType.FAILURE)), s.ORC.announce(C.intl.string(C.t.F8FvUy))
       } finally {
-        h(false)
+        E(false)
       }
     }
-  }, [n.id, m, i, j]);
-  return (0, t.jsx)(c.un, {
-    title: y.intl.string(y.t["8DkMEQ"]),
+  }, [n.id, p, l, b]);
+  return (0, r.jsx)(c.un, {
+    title: C.intl.string(C.t["8DkMEQ"]),
     body: n.name,
-    asset: (0, t.jsx)(p.mW, {
-      application: a
+    asset: (0, r.jsx)(h.mW, {
+      application: t
     }),
-    assetSize: A.Q8,
-    children: (0, t.jsxs)(s.sqX, {
-      className: L.Nr,
+    assetSize: _.Q8,
+    children: (0, r.jsxs)(s.sqX, {
+      className: N.Nr,
       ref: o,
       "aria-label": n.name,
-      onClick: I,
-      children: [(0, t.jsx)(N.e, {
+      onClick: O,
+      children: [(0, r.jsx)(y.e, {
         shape: "custom",
-        containerClassName: L.Nr,
-        foregroundImageClassName: L.wP,
-        backgroundImageClassName: L.GC,
+        containerClassName: N.Nr,
+        foregroundImageClassName: N.wP,
+        backgroundImageClassName: N.GC,
         sku: n
-      }, n.id), (x || j) && (0, t.jsxs)(t.Fragment, {
-        children: [(0, t.jsx)("div", {
-          className: L.p0
-        }), (0, t.jsx)("div", {
-          className: L.R$,
-          children: j ? (0, t.jsx)(v.k, {}) : (0, t.jsx)(s.pa$, {
+      }, n.id), (m || b) && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)("div", {
+          className: N.p0
+        }), (0, r.jsx)("div", {
+          className: N.R$,
+          children: b ? (0, r.jsx)(f.k, {}) : (0, r.jsx)(s.pa$, {
             size: "lg",
-            color: d.LU0.unsafe_rawColors.WHITE_500
+            color: u.LU0.unsafe_rawColors.WHITE_500
           })
         })]
       })]
@@ -86,41 +86,41 @@ function R(e) {
   })
 }
 
-function P(e) {
+function j(e) {
   let {
-    wishlist: a,
+    wishlist: t,
     handleOpenUserProfileModal: n,
-    analyticsLocations: i,
+    analyticsLocations: l,
     numWishlistItemsToRecommend: s,
     maxWishlistItemsToShow: c = s,
-    className: d
-  } = e, u = (0, m.h)(E.XR), p = (0, o.bG)([j.default], () => j.default.getCurrentUser()), f = (0, o.bG)([j.default], () => j.default.getUser(null == a ? true : a.userId)), g = null == a || null != p && null != a && a.userId === p.id, A = l.useMemo(() => null == a ? null != p ? [p.id] : true : [a.userId], [a, p]), N = (0, I.A)({
-    guildId: (0, h.zf)(),
+    className: u
+  } = e, d = (0, p.h)(v.XR), h = (0, o.bG)([b.default], () => b.default.getCurrentUser()), g = (0, o.bG)([b.default], () => b.default.getUser(null == t ? true : t.userId)), A = null == t || null != h && null != t && t.userId === h.id, _ = i.useMemo(() => null == t ? null != h ? [h.id] : true : [t.userId], [t, h]), y = (0, O.A)({
+    guildId: (0, E.zf)(),
     numWishlistItems: s,
     location: "SocialLayerAddToWishlistGrid",
-    applicationId: E.XR,
-    userIds: A,
+    applicationId: v.XR,
+    userIds: _,
     includeWishlists: false
-  }), O = l.useMemo(() => {
+  }), S = i.useMemo(() => {
     var e;
-    return new Set(null != (e = null == a ? true : a.items.map(e => e.skuId)) ? e : [])
-  }, [a]), y = N.recommendations.filter(e => !O.has(e.skuId)).slice(0, c);
-  return "success" !== N.state ? (0, t.jsx)("div", {
-    className: L.g4,
-    children: (0, t.jsx)(v.k, {})
-  }) : 0 === y.length ? null : (0, t.jsx)("ul", {
-    className: r()(L.Vg, d),
-    children: y.map(e => g ? (0, t.jsx)(R, {
-      application: u,
+    return new Set(null != (e = null == t ? true : t.items.map(e => e.skuId)) ? e : [])
+  }, [t]), C = y.recommendations.filter(e => !S.has(e.skuId)).slice(0, c);
+  return "success" !== y.state ? (0, r.jsx)("div", {
+    className: N.g4,
+    children: (0, r.jsx)(f.k, {})
+  }) : 0 === C.length ? null : (0, r.jsx)("ul", {
+    className: a()(N.Vg, u),
+    children: C.map(e => A ? (0, r.jsx)(T, {
+      application: d,
       sku: e.sku,
       handleOpenUserProfileModal: n,
-      analyticsLocations: i
-    }, e.skuId) : (0, t.jsx)(b.A, {
+      analyticsLocations: l
+    }, e.skuId) : (0, r.jsx)(I.A, {
       item: e,
-      wishlistId: a.id,
+      wishlistId: t.id,
       isOwner: false,
-      profileOwner: f,
-      cardSize: x.Y.FLEX,
+      profileOwner: g,
+      cardSize: m.Y.FLEX,
       showOverlayButton: true,
       hideButtonIcon: true,
       isDragging: false

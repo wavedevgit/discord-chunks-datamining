@@ -13,11 +13,11 @@ var Chunk64700 = require("./64700.js"),
   Chunk688151 = require("./688151.js");
 
 function u(e, t) {
-  return "guild" === e ? (0, s.Ut)(t) : (0, s.wh)(t)
+  return "guild" === e ? (0, o.Ut)(t) : (0, o.wh)(t)
 }
 
 function d(e, t, n) {
-  return "guild" === e ? o.A.getGuildExperimentDescriptor(t, n.guildId) : o.A.getUserExperimentDescriptor(t)
+  return "guild" === e ? s.A.getGuildExperimentDescriptor(t, n.guildId) : s.A.getUserExperimentDescriptor(t)
 }
 
 function f(e, t, n, r) {
@@ -66,12 +66,12 @@ function p(e) {
 
   function h(e, t, r) {
     if (null != r) {
-      var i, o, l, u, d;
+      var i, s, l, u, d;
       let f = c.vf.MANUAL,
         p = false;
-      (0, s.LQ)(n.id, r, {
+      (0, o.LQ)(n.id, r, {
         location: null != (i = null == e ? true : e.location) ? i : "unknown",
-        analyticsLocations: null != (o = null == t ? true : t.analyticsLocations) ? o : [],
+        analyticsLocations: null != (s = null == t ? true : t.analyticsLocations) ? s : [],
         fingerprint: null != (l = null != (u = null == t ? true : t.fingerprint) ? u : a.default.getFingerprint()) ? l : true,
         excluded: (null == t ? true : t.excluded) || p,
         exposureType: null != (d = null == t ? true : t.exposureType) ? d : f
@@ -82,18 +82,18 @@ function p(e) {
   function m(n, r) {
     let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
       a = null != i.disable && i.disable,
-      s = d(e.kind, e.id, n),
-      l = null == s || a ? c.RE.NOT_ELIGIBLE : s.bucket,
-      u = null == s ? false : s.revision;
+      o = d(e.kind, e.id, n),
+      l = null == o || a ? c.RE.NOT_ELIGIBLE : o.bucket,
+      u = null == o ? false : o.revision;
 
     function p() {
       let i = d(e.kind, e.id, n),
-        s = null == i || a ? c.RE.NOT_ELIGIBLE : i.bucket,
-        o = null == i ? false : i.revision;
-      (s !== l || u !== o) && (r(f(e, s, t, i), s, o), l = s, u = o)
+        o = null == i || a ? c.RE.NOT_ELIGIBLE : i.bucket,
+        s = null == i ? false : i.revision;
+      (o !== l || u !== s) && (r(f(e, o, t, i), o, s), l = o, u = s)
     }
-    return r(f(e, l, t, s), l, u), o.A.addReactChangeListener(p), () => {
-      o.A.removeReactChangeListener(p)
+    return r(f(e, l, t, o), l, u), s.A.addReactChangeListener(p), () => {
+      s.A.removeReactChangeListener(p)
     }
   }
 
@@ -103,15 +103,15 @@ function p(e) {
   }
   return {
     useExperiment: function(n) {
-      var a, s, o;
+      var a, o, s;
       let l = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
           autoTrackExposure: true
         },
         u = null != (a = l.disable) && a,
         _ = false !== l.autoTrackExposure,
         h = d(e.kind, e.id, n),
-        g = null == l.trackExposureOptions ? true : (0, i.A)(null != (s = l.trackExposureOptions) ? s : {}),
-        E = null != (o = null == h ? true : h.triggerDebuggingEnabled) && o,
+        g = null == l.trackExposureOptions ? true : (0, i.A)(null != (o = l.trackExposureOptions) ? o : {}),
+        E = null != (s = null == h ? true : h.triggerDebuggingEnabled) && s,
         [
           [y, b, O], v
         ] = (0, r.useState)(() => {

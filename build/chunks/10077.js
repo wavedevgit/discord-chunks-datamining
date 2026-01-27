@@ -1,19 +1,16 @@
-/** Chunk was on web.js **/
-/** chunk id: 10077, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 10077, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => u,
-  c: () => l
+  c: () => c
 }), require("./638769.js"), require("./896048.js");
-var Chunk64700 = require("./64700.js"),
+var r, Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk253932 = require("./253932.js"),
   Chunk71393 = require("./71393.js"),
   Chunk711014 = require("./711014.js"),
-  l = function(e) {
-    return e.SERVER_ORDER = "server-order", e.RECENTLY_JOINED = "recently-joined", e.ACTIVITY_SHARING_ON = "activity-sharing-on", e.ACTIVITY_SHARING_OFF = "activity-sharing-off", e
-  }({});
-let c = {
+  c = ((r = {}).SERVER_ORDER = "server-order", r.RECENTLY_JOINED = "recently-joined", r.ACTIVITY_SHARING_ON = "activity-sharing-on", r.ACTIVITY_SHARING_OFF = "activity-sharing-off", r);
+let d = {
   "recently-joined": e => e.concat().sort((e, t) => null == e.joinedAt ? false : null == t.joinedAt ? 1 : e.joinedAt === t.joinedAt ? 0 : new Date(t.joinedAt).getTime() - new Date(e.joinedAt).getTime()),
   "activity-sharing-on": (e, t) => e.concat().sort((e, n) => {
     let r = t.includes(e.id),
@@ -29,35 +26,35 @@ let c = {
 };
 
 function u() {
-  let [e, t] = (0, r.useState)(""), [n, l] = (0, r.useState)("server-order"), u = (0, i.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), d = (0, i.bG)([s.A], () => s.A.getGuilds()), f = u.map(e => d[e]), p = a.Pw.useSetting(), [_, h] = (0, r.useState)(p), m = async e => {
-    h(e);
+  let [e, t] = (0, i.useState)(""), [n, r] = (0, i.useState)("server-order"), c = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), u = (0, l.bG)([a.A], () => a.A.getGuilds()), _ = c.map(e => u[e]), p = s.Pw.useSetting(), [m, g] = (0, i.useState)(p), A = async e => {
+    g(e);
     try {
-      await a.Pw.updateSetting(e)
+      await s.Pw.updateSetting(e)
     } catch (e) {
-      h(p)
+      g(p)
     }
-  }, g = e => {
-    let {
-      checked: t,
-      guildId: n
-    } = e, r = new Set(_);
-    t ? r.delete(n) : r.add(n), m([...r])
-  }, E = e => _.includes(e), y = 0 !== _.length, b = () => {
-    y ? m([]) : m(u)
-  }, [O, v] = (0, r.useState)(() => c[n](f, p)), A = O.map(e => d[e.id]).filter(Boolean);
+  }, f = 0 !== m.length, [h, b] = (0, i.useState)(() => d[n](_, p)), E = h.map(e => u[e.id]).filter(Boolean);
   return {
-    guilds: "" === e ? A : A.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
+    guilds: "" === e ? E : E.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
     sortOrder: n,
     searchQuery: e,
     setSortOrder: e => {
-      v(c[e](f, p)), l(e)
+      b(d[e](_, p)), r(e)
     },
     setSearchQuery: t,
-    onToggleActivityRestrictedGuild: g,
-    isActivityRestricted: E,
-    hasActivityRestrictedGuilds: y,
-    onToggleAllActivityRestrictedGuilds: b,
-    numTotalGuilds: u.length,
-    numActivityRestrictedGuilds: _.length
+    onToggleActivityRestrictedGuild: e => {
+      let {
+        checked: t,
+        guildId: n
+      } = e, r = new Set(m);
+      t ? r.delete(n) : r.add(n), A([...r])
+    },
+    isActivityRestricted: e => m.includes(e),
+    hasActivityRestrictedGuilds: f,
+    onToggleAllActivityRestrictedGuilds: () => {
+      f ? A([]) : A(c)
+    },
+    numTotalGuilds: c.length,
+    numActivityRestrictedGuilds: m.length
   }
 }

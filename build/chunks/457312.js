@@ -29,7 +29,7 @@ function d(e) {
     start: n,
     end: c
   } = e.highlightedRange || {} : n = c = null != (t = e.value) ? t : true;
-  let f = (0, s.i)({
+  let f = (0, o.i)({
       weekday: "long",
       month: "long",
       year: "numeric",
@@ -38,7 +38,7 @@ function d(e) {
       timeZone: e.timeZone
     }),
     _ = "anchorDate" in e ? e.anchorDate : null;
-  return (0, o.useMemo)(() => {
+  return (0, s.useMemo)(() => {
     if (!_ && n && c)
       if ((0, i.ro)(n, c)) {
         let t = f.format(n.toDate(e.timeZone));
@@ -57,14 +57,14 @@ function d(e) {
 function f(e, t, n, c) {
   let d = (0, a.o)(l(r.A), "@react-aria/calendar"),
     f = u(e) || u(t),
-    _ = (0, s.i)({
+    _ = (0, o.i)({
       month: "long",
       year: "numeric",
       era: f,
       calendar: e.calendar.identifier,
       timeZone: n
     }),
-    h = (0, s.i)({
+    h = (0, o.i)({
       month: "long",
       year: "numeric",
       day: "numeric",
@@ -72,7 +72,7 @@ function f(e, t, n, c) {
       calendar: e.calendar.identifier,
       timeZone: n
     });
-  return (0, o.useMemo)(() => {
+  return (0, s.useMemo)(() => {
     if ((0, i.ro)(e, (0, i.wH)(e))) {
       let r = e,
         a = t;
@@ -85,17 +85,17 @@ function f(e, t, n, c) {
 
 function p(e, t, n, r, i) {
   let a = e.formatRangeToParts(n.toDate(i), r.toDate(i)),
-    s = false;
+    o = false;
   for (let e = 0; e < a.length; e++) {
     let t = a[e];
-    if ("shared" === t.source && "literal" === t.type) s = e;
+    if ("shared" === t.source && "literal" === t.type) o = e;
     else if ("endRange" === t.source) break
   }
-  let o = "",
+  let s = "",
     l = "";
-  for (let e = 0; e < a.length; e++) e < s ? o += a[e].value : e > s && (l += a[e].value);
+  for (let e = 0; e < a.length; e++) e < o ? s += a[e].value : e > o && (l += a[e].value);
   return t.format("dateRange", {
-    startDate: o,
+    startDate: s,
     endDate: l
   })
 }

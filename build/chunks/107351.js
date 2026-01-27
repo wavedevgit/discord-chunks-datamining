@@ -8,16 +8,16 @@ require.d(exports, {
 var Chunk835245 = require("./835245.js"),
   Chunk506774 = require("./506774.js"),
   Chunk927813 = require("./927813.js");
-let s = "purchase_token",
-  o = 60 * Chunk927813.A.Millis.DAY;
+let o = "purchase_token",
+  s = 60 * Chunk927813.A.Millis.DAY;
 
 function l() {
-  let e = i.w.get(s);
+  let e = i.w.get(o);
   if (null != e && e.expires >= Date.now()) return e.purchaseToken;
   let t = (0, r.A)();
-  return i.w.set(s, {
+  return i.w.set(o, {
     purchaseToken: t,
-    expires: Date.now() + o
+    expires: Date.now() + s
   }), t
 }
 async function c() {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk297413 = require("./297413.jsx"),
   Chunk342296 = require("./342296.jsx"),
@@ -101,22 +101,22 @@ function g(e) {
       let {
         onClick: i
       } = e, a = h(e, ["onClick"]);
-      return (0, r.jsxs)(o.DUT, _(f({}, a), {
+      return (0, r.jsxs)(s.DUT, _(f({}, a), {
         innerRef: A,
-        className: s()(u.DV, p, {
+        className: o()(u.DV, p, {
           [u.YR]: g
         }),
         onContextMenu: b,
         onClick: e => {
           i(e), null == y || y(e)
         },
-        children: [(0, r.jsx)(o.euF, {
-          src: t.getAvatarURL(n, (0, o.FT9)(o._3J.SIZE_24)),
+        children: [(0, r.jsx)(s.euF, {
+          src: t.getAvatarURL(n, (0, s.FT9)(s._3J.SIZE_24)),
           className: u.my,
           "aria-label": t.username,
-          size: o._3J.SIZE_24
-        }), (0, r.jsx)(o.Text, {
-          className: s()(u.Ft, m),
+          size: s._3J.SIZE_24
+        }), (0, r.jsx)(s.Text, {
+          className: o()(u.Ft, m),
           variant: "text-sm/normal",
           children: (0, r.jsx)(l.A, {
             user: t,

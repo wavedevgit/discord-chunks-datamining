@@ -33,7 +33,7 @@ function T(e) {
     discoverableGuildId: t,
     closePopout: n,
     buttonType: a
-  } = e, s = i.useCallback(async () => {
+  } = e, o = i.useCallback(async () => {
     if (n(), null != t) try {
       await u.A.joinGuild(t), u.A.transitionToGuildSync(t)
     } catch (e) {}
@@ -56,7 +56,7 @@ function T(e) {
     size: "sm",
     text: I.intl.string(I.t.riu2R5),
     fullWidth: true,
-    onClick: s
+    onClick: o
   }) : null
 }
 
@@ -66,7 +66,7 @@ function C(e) {
     channel: n,
     closePopout: l,
     refreshPosition: u
-  } = e, E = t.guildId === A.mV, O = (0, s.bG)([g.A], () => g.A.getGuild(t.guildId)), v = !E && null != O, [C, N] = i.useState(), w = (0, y.tj)({
+  } = e, E = t.guildId === A.mV, O = (0, o.bG)([g.A], () => g.A.getGuild(t.guildId)), v = !E && null != O, [C, N] = i.useState(), w = (0, y.tj)({
     location: "SoundmojiGuildInfo"
   }), R = E || v || null != C || !w, [P, D] = i.useState(!R);
   i.useEffect(() => {
@@ -77,10 +77,10 @@ function C(e) {
     }))
   }, [u, R, t.guildId, t.soundId]);
   let {
-    buttonType: x,
-    description: L
-  } = (0, b.A)(t, n, v, C), j = x === b.E.JOIN_GUILD, M = !E && P, k = i.useMemo(() => v ? d.GO.createFromGuildRecord(O) : null != C ? d.GO.createFromDiscoverableGuild(C) : true, [O, v, C]);
-  return M ? (0, r.jsx)(p.Y0, {}) : (0, r.jsxs)("div", {
+    buttonType: L,
+    description: x
+  } = (0, b.A)(t, n, v, C), M = L === b.E.JOIN_GUILD, j = !E && P, k = i.useMemo(() => v ? d.GO.createFromGuildRecord(O) : null != C ? d.GO.createFromDiscoverableGuild(C) : true, [O, v, C]);
+  return j ? (0, r.jsx)(p.Y0, {}) : (0, r.jsxs)("div", {
     className: S.op,
     children: [(0, r.jsxs)(p.Uq, {
       children: [(0, r.jsxs)("div", {
@@ -93,7 +93,7 @@ function C(e) {
           onSelectItem: () => {}
         }), (0, r.jsx)(a.EYj, {
           variant: "text-sm/normal",
-          children: L
+          children: x
         })]
       }), null != k && (0, r.jsxs)("div", {
         className: S.Qe,
@@ -107,17 +107,17 @@ function C(e) {
           children: (0, r.jsx)(f.G7, {
             expressionSourceGuild: k,
             hasJoinedExpressionSourceGuild: v,
-            isDisplayingJoinGuildButtonInPopout: j
+            isDisplayingJoinGuildButtonInPopout: M
           })
         }), (0, r.jsx)(T, {
-          buttonType: x,
+          buttonType: L,
           discoverableGuildId: null == C ? true : C.id,
           closePopout: l
         })]
       })]
     }), (0, r.jsx)(c.LpS, {
       text: "BETA",
-      color: o.A.colors.BACKGROUND_BRAND.css,
+      color: s.A.colors.BACKGROUND_BRAND.css,
       className: S.aZ
     })]
   })

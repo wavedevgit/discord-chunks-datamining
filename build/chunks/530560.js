@@ -18,11 +18,11 @@ class i {
       i = null;
     for (let a = 1; a < t.length; a++) {
       i = t[a];
-      let s = e.text.substring(r.index + r.text.length, i.index);
-      if (this.shouldMergeResults(s, r, i, e)) {
+      let o = e.text.substring(r.index + r.text.length, i.index);
+      if (this.shouldMergeResults(o, r, i, e)) {
         let t = r,
           n = i,
-          a = this.mergeResults(s, t, n, e);
+          a = this.mergeResults(o, t, n, e);
         e.debug(() => {
           console.log(`${this.constructor.name} merged ${t} and ${n} into ${a}`)
         }), r = a

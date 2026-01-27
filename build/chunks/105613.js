@@ -22,8 +22,8 @@ function c(e, t, n) {
 }
 async function u() {
   if (!a.isPlatformEmbedded) returnfalse;
-  let e = await o.A.hasPermission();
-  return s.Ay.shouldDisplayNotifications() && e
+  let e = await s.A.hasPermission();
+  return o.Ay.shouldDisplayNotifications() && e
 }
 class d extends Chunk439372.A {
   async handlePostConnectionOpen() {

@@ -9,7 +9,7 @@ var Chunk143236 = require("./143236.js"),
   Chunk228272 = require("./228272.js"),
   Chunk731854 = require("./731854.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,7 +38,7 @@ class c extends Chunk143236.EventEmitter {
   }
   createOutput(e, t) {
     let n = this.outputs[e];
-    null == n && ((n = new a.A(this.userId, this.audioContext)).mute = false, n.volume = 100, n.setSpeakingFlags(s.ME.VOICE), n.setSinkId(this.sinkId), this.outputs[e] = n), n.addTrack(t), n.play()
+    null == n && ((n = new a.A(this.userId, this.audioContext)).mute = false, n.volume = 100, n.setSpeakingFlags(o.ME.VOICE), n.setSinkId(this.sinkId), this.outputs[e] = n), n.addTrack(t), n.play()
   }
   destroyOutput(e, t) {
     let n = this.outputs[e];
@@ -66,10 +66,10 @@ class c extends Chunk143236.EventEmitter {
     })
   }
   constructor(e, t, n, r = "") {
-    super(), o(this, "userId", true), o(this, "sinkId", true), o(this, "input", true), o(this, "pc1", true), o(this, "pc2", true), o(this, "senders", []), o(this, "outputs", {}), o(this, "audioContext", true), o(this, "handleStream", () => {
+    super(), s(this, "userId", true), s(this, "sinkId", true), s(this, "input", true), s(this, "pc1", true), s(this, "pc2", true), s(this, "senders", []), s(this, "outputs", {}), s(this, "audioContext", true), s(this, "handleStream", () => {
       let e = this.input.getDelayedStream();
       this.senders.forEach(e => this.pc1.removeTrack(e)), this.senders = [...e.getAudioTracks().map(t => this.pc1.addTrack(t, e))], this.handshake()
-    }), o(this, "handleTrack", e => {
+    }), s(this, "handleTrack", e => {
       e.streams[0].getTracks().forEach(e => {
         this.createOutput(e.id, e), e.onmute = () => {
           this.destroyOutput(e.id, e)

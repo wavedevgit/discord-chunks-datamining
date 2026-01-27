@@ -37,7 +37,7 @@ function E(e) {
     let {
       ownerId: t
     } = i.Iy(e);
-    if (t !== s.default.getId()) {
+    if (t !== o.default.getId()) {
       let e = l.A.getActivities(t).find(e => e.type === h.$pd.PLAYING);
       return {
         sourceName: null == e ? true : e.name,
@@ -62,7 +62,7 @@ function E(e) {
     b = c.A.getChannelId(),
     O = null == y && null != b;
   if (O) {
-    let e = null != b ? o.A.getChannel(b) : null;
+    let e = null != b ? s.A.getChannel(b) : null;
     y = null != (d = null == e ? true : e.name) ? d : ""
   }
   return {
@@ -80,13 +80,13 @@ function y(e) {
     i = arguments.length > 4 ? arguments[4] : true,
     {
       sourceName: a,
-      sourceApplicationId: o,
+      sourceApplicationId: s,
       activity: l,
       isVoiceOnly: u
     } = E(e),
     h = c.A.getChannelId(),
     g = c.A.getGuildId(),
-    y = new Set([s.default.getId()]);
+    y = new Set([o.default.getId()]);
   null != h && (y = y.union(new Set(Object.keys(d.A.getVoiceStatesForChannel(h)))));
   let b = "auto" === t;
   r.forEach(e => {
@@ -100,7 +100,7 @@ function y(e) {
     id: f.default.fromTimestamp(Date.now()),
     version: _.kd,
     applicationName: null != a ? a : m.intl.string(m.t.qtSJxb),
-    applicationId: o,
+    applicationId: s,
     activity: l,
     users: Array.from(y),
     clipMethod: t,

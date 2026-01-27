@@ -26,7 +26,7 @@ function d(e) {
     hideTooltip: m = false,
     canTruncate: g = true,
     showChannelName: E = false
-  } = e, y = (0, i.bG)([o.A], () => o.A.getChannel(t.channelId)), b = (0, s.Ay)(y), O = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, v = null != O ? O : u.intl.string(u.t.eXan7B), A = null != b ? "".concat(v, " (").concat(b, ")") : v, I = E ? A : v, S = A;
+  } = e, y = (0, i.bG)([s.A], () => s.A.getChannel(t.channelId)), b = (0, o.Ay)(y), O = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, v = null != O ? O : u.intl.string(u.t.eXan7B), A = null != b ? "".concat(v, " (").concat(b, ")") : v, I = E ? A : v, S = A;
   return (0, r.jsx)(c.A, {
     icon: _ ? true : (0, r.jsx)(l.A, {
       icon: a.Uk3,

@@ -23,7 +23,7 @@ async function a(e, t) {
   })).then(() => n)
 }
 
-function s(e) {
+function o(e) {
   if (null == e) return [];
   let t = [],
     n = /(\/\*[\s\S]*?\*\/)/gi,
@@ -36,27 +36,27 @@ function s(e) {
   }
   r = r.replace(i, "");
   let a = /@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi,
-    s = RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})", "gi");
+    o = RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})", "gi");
   for (;;) {
     let e = a.exec(r);
     if (null === e) {
-      if (null === (e = s.exec(r))) break;
-      a.lastIndex = s.lastIndex
-    } else s.lastIndex = a.lastIndex;
+      if (null === (e = o.exec(r))) break;
+      a.lastIndex = o.lastIndex
+    } else o.lastIndex = a.lastIndex;
     t.push(e[0])
   }
   return t
 }
-async function o(e, t) {
+async function s(e, t) {
   let n = [],
     r = [];
   return e.forEach(n => {
     if ("cssRules" in n) try {
-      toArray(n.cssRules || []).forEach((e, o) => {
+      toArray(n.cssRules || []).forEach((e, s) => {
         if (e.type === CSSRule.IMPORT_RULE) {
-          let l = o + 1,
+          let l = s + 1,
             c = e.href,
-            u = i(c).then(e => a(e, t)).then(e => s(e).forEach(e => {
+            u = i(c).then(e => a(e, t)).then(e => o(e).forEach(e => {
               try {
                 n.insertRule(e, e.startsWith("@import") ? l += 1 : n.cssRules.length)
               } catch (t) {
@@ -72,9 +72,9 @@ async function o(e, t) {
         }
       })
     } catch (l) {
-      let o = e.find(e => null == e.href) || document.styleSheets[0];
-      null != n.href && r.push(i(n.href).then(e => a(e, t)).then(e => s(e).forEach(e => {
-        o.insertRule(e, n.cssRules.length)
+      let s = e.find(e => null == e.href) || document.styleSheets[0];
+      null != n.href && r.push(i(n.href).then(e => a(e, t)).then(e => o(e).forEach(e => {
+        s.insertRule(e, n.cssRules.length)
       })).catch(e => {
         console.error("Error loading remote stylesheet", e)
       })), console.error("Error inlining remote css file", l)
@@ -96,5 +96,5 @@ function l(e) {
 async function c(e, t) {
   if (null == e.ownerDocument) throw Error("Provided element is not within a Document");
   let n = toArray(e.ownerDocument.styleSheets);
-  return l(await o(n, t))
+  return l(await s(n, t))
 }

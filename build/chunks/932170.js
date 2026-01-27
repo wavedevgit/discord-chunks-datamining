@@ -90,7 +90,7 @@ function _(e, t, n, a, l) {
     had_cache_at_startup: null != (f = e.analytics.hadCacheAtStartup) && f,
     used_cache_at_startup: null != (p = e.analytics.usedCacheAtStartup) && p
   });
-  i.A.attachReadyPayloadProperties(m), s.default.track(o.HAw.READY_PAYLOAD_RECEIVED, m, {
+  i.A.attachReadyPayloadProperties(m), o.default.track(s.HAw.READY_PAYLOAD_RECEIVED, m, {
     logEventProperties: true
   })
 }
@@ -145,7 +145,7 @@ function b(e) {
     if (e.unavailable) return;
     let t = "partial" === e.data_mode ? e.partial_updates.channels : e.channels;
     null != t && null != t.forEach && t.forEach(e => {
-      r++, e.type === o.rbe.GUILD_CATEGORY && n++
+      r++, e.type === s.rbe.GUILD_CATEGORY && n++
     })
   }), {
     num_guilds: t.length,
@@ -160,8 +160,8 @@ function O(e) {
     {
       guilds: i,
       merged_presences: a,
-      merged_members: s,
-      read_state: o,
+      merged_members: o,
+      read_state: s,
       private_channels: l,
       user_guild_settings: c,
       user_settings: u,
@@ -190,14 +190,14 @@ function O(e) {
       i = f(n, ["features"]),
       {
         threads: a,
-        guild_scheduled_events: s
+        guild_scheduled_events: o
       } = e,
-      o = f(e, ["threads", "guild_scheduled_events"]);
-    E.push("partial" === e.data_mode ? e.partial_updates.channels : e.channels), y.push("partial" === e.data_mode ? e.partial_updates.roles : e.roles), b.push("partial" === e.data_mode ? e.partial_updates.emojis : e.emojis), O.push(a), v.push("partial" === e.data_mode ? e.partial_updates.stickers : e.stickers), A.push(r), I.push(s), S.push(o, i)
+      s = f(e, ["threads", "guild_scheduled_events"]);
+    E.push("partial" === e.data_mode ? e.partial_updates.channels : e.channels), y.push("partial" === e.data_mode ? e.partial_updates.roles : e.roles), b.push("partial" === e.data_mode ? e.partial_updates.emojis : e.emojis), O.push(a), v.push("partial" === e.data_mode ? e.partial_updates.stickers : e.stickers), A.push(r), I.push(o), S.push(s, i)
   }), {
     presences_size: JSON.stringify(null != (t = null == a ? true : a.friends) ? t : []).length,
     users_size: JSON.stringify(m).length,
-    read_states_size: JSON.stringify(o).length,
+    read_states_size: JSON.stringify(s).length,
     private_channels_size: JSON.stringify(l).length,
     user_settings_size: JSON.stringify(null != u ? u : "").length + (null != d ? d : "").length,
     experiments_size: JSON.stringify(null != p ? p : []).length + JSON.stringify(null != _ ? _ : []).length,
@@ -205,7 +205,7 @@ function O(e) {
     relationships_size: JSON.stringify(h).length,
     remaining_data_size: JSON.stringify(null != g ? g : {}).length,
     guild_channels_size: JSON.stringify(E).length,
-    guild_members_size: JSON.stringify(null != s ? s : []).length,
+    guild_members_size: JSON.stringify(null != o ? o : []).length,
     guild_presences_size: JSON.stringify(null != (n = null == a ? true : a.guilds) ? n : []).length,
     guild_roles_size: JSON.stringify(y).length,
     guild_emojis_size: JSON.stringify(b).length,
@@ -233,7 +233,7 @@ function v(e) {
 
 function A(e) {
   var t;
-  !(null == (t = a.default.getCurrentUser()) ? true : t.isStaff()) && .5 > Math.random() || s.default.track(o.HAw.CONNECTION_RESUMED, {
+  !(null == (t = a.default.getCurrentUser()) ? true : t.isStaff()) && .5 > Math.random() || o.default.track(s.HAw.CONNECTION_RESUMED, {
     connect_time_ms: e.connectTime,
     resume_time_ms: Math.floor(performance.now() - e.startTime),
     num_events: e.numEvents,

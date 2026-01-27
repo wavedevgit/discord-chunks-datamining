@@ -52,12 +52,12 @@ class I extends Chunk439372.A {
   maybeSendGiftingPromptSystemMessage(e, t, n, r) {
     let i = m.A.getChannelId(),
       a = y.Ay.isGiftIntentMessageInCooldown(n),
-      s = h.A.isReady(e);
+      o = h.A.isReady(e);
     if (!a && e === i) {
-      if (!s) return void h.A.whenReady(e, () => {
+      if (!o) return void h.A.whenReady(e, () => {
         m.A.getChannelId() === e && this.maybeSendGiftingPromptSystemMessage(e, t, n, r)
       });
-      o.A.sendGiftingPromptSystemMessage(e, {
+      s.A.sendGiftingPromptSystemMessage(e, {
         giftIntentType: t,
         recipientUserId: n,
         giftIntentSecondaryAction: r
@@ -88,7 +88,7 @@ class I extends Chunk439372.A {
     if (!e || !t) return;
     let n = y.Ay.getNextRecipientUserIDForNotification();
     if (null != n) try {
-      let e = await s.A.getOrEnsurePrivateChannel(n),
+      let e = await o.A.getOrEnsurePrivateChannel(n),
         t = _.A.getChannel(e);
       if (null == t) return;
       if (h.A.isReady(t.id) || await d.A.fetchMessages({
@@ -100,7 +100,7 @@ class I extends Chunk439372.A {
       });
       let i = y.Ay.getNextRecipientUserIDForNotification();
       if (i !== n) return;
-      o.A.sendGiftingPromptSystemMessage(t.id, {
+      s.A.sendGiftingPromptSystemMessage(t.id, {
         giftIntentType: b.np.FRIEND_ANNIVERSARY,
         recipientUserId: i,
         giftIntentSecondaryAction: b.l1.SEND_MESSAGE

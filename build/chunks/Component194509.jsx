@@ -41,11 +41,11 @@ let _ = e => e === d.pe.TIER_0 ? f.intl.string(f.t.rk4Uu8) : f.intl.string(f.t.V
         let {
           onClick: u
         } = e;
-        return (0, r.jsxs)(o.$n, {
+        return (0, r.jsxs)(s.$n, {
           "data-migration-pending": true,
           innerClassName: p.Nq,
-          color: null != i ? i : (0, s.Mw)(y) ? o.XD.WHITE : o.XD.BRAND,
-          look: null != d ? d : o.pR.OUTLINED,
+          color: null != i ? i : (0, o.Mw)(y) ? s.XD.WHITE : s.XD.BRAND,
+          look: null != d ? d : s.pR.OUTLINED,
           className: a()(t, p.xP),
           onClick: u,
           children: [!f && (0, r.jsx)(l.okO, {

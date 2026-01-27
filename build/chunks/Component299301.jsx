@@ -27,8 +27,8 @@ let _ = e => {
       oneTimePurchaseNitroGiftInvoicePreview: r,
       trialInvoicePreview: i,
       proratedInvoicePreview: a,
-      renewalInvoicePreview: s,
-      planSwitchLoading: o
+      renewalInvoicePreview: o,
+      planSwitchLoading: s
     } = e;
     return null != t ? null : n && null != r ? {
       type: "PREMIUM_GIFT",
@@ -36,14 +36,14 @@ let _ = e => {
     } : null != i ? {
       type: "PREMIUM_WITH_TRIAL",
       invoicePreview: i,
-      renewalInvoicePreview: s
-    } : null == a || null == s || o ? {
+      renewalInvoicePreview: o
+    } : null == a || null == o || s ? {
       type: "LOADING",
       invoicePreview: null
     } : {
       type: "PREMIUM_DEFAULT",
       invoicePreview: a,
-      renewalInvoicePreview: s
+      renewalInvoicePreview: o
     }
   },
   h = e => {
@@ -81,13 +81,13 @@ let _ = e => {
         className: a()(f.SU, A),
         children: [(0, r.jsxs)("div", {
           className: f.W3,
-          children: [(0, r.jsx)(s.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-md/bold",
             children: d.intl.string(d.t.txajQG)
-          }), (0, r.jsx)(s.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             children: d.intl.format(d.t.hXcaLT, {
-              price: (0, o.$g)(0, I.currency, {
+              price: (0, s.$g)(0, I.currency, {
                 minimumFractionDigits: 0,
                 maximumFractionDigits: 0
               })
@@ -104,9 +104,9 @@ let _ = e => {
     });
     if ("PREMIUM_DEFAULT" === t.type) {
       let e, {
-        renewalInvoicePreview: s
+        renewalInvoicePreview: o
       } = t;
-      return h && I.subscriptionPeriodEnd !== s.subscriptionPeriodEnd && (e = I.subscriptionPeriodEnd), (0, r.jsxs)(r.Fragment, {
+      return h && I.subscriptionPeriodEnd !== o.subscriptionPeriodEnd && (e = I.subscriptionPeriodEnd), (0, r.jsxs)(r.Fragment, {
         children: [y && (0, r.jsx)(c.v, {
           fractionalPremiumInfo: g,
           enablePremiumBrandRefresh: v
@@ -120,7 +120,7 @@ let _ = e => {
             isPrepaidPaymentSource: b,
             referralTrialOfferId: _
           }), b ? null : (0, r.jsx)(u.m0, {
-            renewalInvoice: s,
+            renewalInvoice: o,
             isTrial: h,
             priceOptions: n,
             overrideRenewalDate: e,

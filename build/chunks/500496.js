@@ -38,9 +38,9 @@ class g extends Chunk173618.A {
     let i = 0,
       f = u.Q$.getSetting();
     i = (0, r.lA)(i, h.Ajs.ALLOW_VOICE_RECORDING, f);
-    let _ = (0, s.A)(p.A),
-      m = (0, o.TD)() && ((null == (e = d.A.getCurrentUserActiveStream()) ? true : e.state) === h.XYD.ACTIVE || (null == (t = d.A.getCurrentUserActiveStream()) ? true : t.state) === h.XYD.PAUSED),
-      g = (0, o.Ao)() && (null == (n = l.Ay.getVisibleGame()) ? true : n.windowHandle) != null;
+    let _ = (0, o.A)(p.A),
+      m = (0, s.TD)() && ((null == (e = d.A.getCurrentUserActiveStream()) ? true : e.state) === h.XYD.ACTIVE || (null == (t = d.A.getCurrentUserActiveStream()) ? true : t.state) === h.XYD.PAUSED),
+      g = (0, s.Ao)() && (null == (n = l.Ay.getVisibleGame()) ? true : n.windowHandle) != null;
     i = (0, r.lA)(i, h.Ajs.CLIPS_ENABLED, m || g);
     let {
       enableViewerClipping: E
@@ -91,19 +91,19 @@ class g extends Chunk173618.A {
       channelId: r,
       selfMute: i,
       selfDeaf: a,
-      selfVideo: s,
-      preferredRegion: o,
+      selfVideo: o,
+      preferredRegion: s,
       preferredRegions: l,
       videoStreamParameters: c,
       flags: u = 0
     } = e;
-    s && (null == (t = f.A.getChannel(r)) ? true : t.type) === h.rbe.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
+    o && (null == (t = f.A.getChannel(r)) ? true : t.type) === h.rbe.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
       guildId: n,
       channelId: r,
       selfMute: i,
       selfDeaf: a,
-      selfVideo: s,
-      preferredRegion: o,
+      selfVideo: o,
+      preferredRegion: s,
       preferredRegions: l,
       videoStreamParameters: c,
       flags: u
@@ -112,8 +112,8 @@ class g extends Chunk173618.A {
       channelId: r,
       selfMute: i,
       selfDeaf: a,
-      selfVideo: s,
-      preferredRegion: o,
+      selfVideo: o,
+      preferredRegion: s,
       preferredRegions: l,
       flags: u
     })

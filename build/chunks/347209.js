@@ -9,7 +9,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk17591 = require("./17591.js"),
   Chunk307731 = require("./307731.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,13 +22,13 @@ class l extends Chunk439372.A {
     let {
       interaction: t
     } = e;
-    if ([s.Vl.EmojiButtonMouseEntered].includes(t)) {
+    if ([o.Vl.EmojiButtonMouseEntered].includes(t)) {
       let e = i.A.getGuildId();
       (0, a.V)(e)
     }
   }
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), s(this, "actions", {
       EMOJI_INTERACTION_INITIATED: this.handleInteraction
     })
   }

@@ -2,8 +2,8 @@
 /** chunk id: 84483, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  uX: () => s,
-  v9: () => o
+  uX: () => o,
+  v9: () => s
 });
 var Chunk250105 = require("./250105.js");
 let i = {
@@ -30,7 +30,7 @@ let i = {
     }
   });
 
-function s(e) {
+function o(e) {
   var t;
   let n = null != (t = a.useConfig({
       location: e
@@ -43,7 +43,7 @@ function s(e) {
   }
 }
 
-function o(e) {
+function s(e) {
   var t;
   let n = null != (t = a.getConfig({
       location: e

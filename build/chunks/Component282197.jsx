@@ -20,7 +20,7 @@ function f(e) {
     entry: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: [s.$X, s.tR, s.K7, s.fg, s.sp, s.MK].map((e, n) => (0, r.jsx)(e, {
+    children: [o.$X, o.tR, o.K7, o.fg, o.sp, o.MK].map((e, n) => (0, r.jsx)(e, {
       entry: t
     }, "entry-".concat(n)))
   })
@@ -31,7 +31,7 @@ function p(e) {
     entry: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: [s.Xr].map((e, n) => (0, r.jsx)(e, {
+    children: [o.Xr].map((e, n) => (0, r.jsx)(e, {
       entry: t
     }, "entry-".concat(n)))
   })
@@ -42,7 +42,7 @@ function _(e) {
     entry: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: [s.Y8].map((e, n) => (0, r.jsx)(e, {
+    children: [o.Y8].map((e, n) => (0, r.jsx)(e, {
       entry: t
     }, "entry-".concat(n)))
   })
@@ -53,12 +53,12 @@ function h(e) {
     user: t,
     activity: n,
     className: l
-  } = e, c = (0, o.A)({
+  } = e, c = (0, s.A)({
     activity: n,
     user: t
   }), u = d(n);
-  return 0 === u.length ? null : (0, r.jsxs)(s.mG, {
-    location: s.N5.USER_PROFILE,
+  return 0 === u.length ? null : (0, r.jsxs)(o.mG, {
+    location: o.N5.USER_PROFILE,
     className: l,
     children: [u.map((e, t) => (0, r.jsx)(e, {
       activity: n

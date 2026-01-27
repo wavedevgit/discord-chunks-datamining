@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Yx: () => l,
-  vG: () => o,
+  vG: () => s,
   wI: () => c,
   yW: () => i.mo
 });
@@ -11,7 +11,7 @@ var Chunk562465 = require("./562465.js"),
   Chunk257474 = require("./257474.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-async function o(e) {
+async function s(e) {
   let t = a.Rsh.APPLICATION_DISCLOSURES(e),
     n = await r.Bo.get({
       url: t,
@@ -39,9 +39,9 @@ async function l(e, t) {
 function c(e) {
   switch (e) {
     case i.mo.IP_LOCATION:
-      return s.intl.string(s.t["6wPmjo"]);
+      return o.intl.string(o.t["6wPmjo"]);
     case i.mo.DISPLAYS_ADVERTISEMENTS:
-      return s.intl.string(s.t["/uOMKZ"]);
+      return o.intl.string(o.t["/uOMKZ"]);
     default:
       return null
   }

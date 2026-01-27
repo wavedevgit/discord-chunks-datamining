@@ -46,7 +46,7 @@ var r, Chunk624462 = require("./624462.js"),
   Chunk357522 = require("./357522.js"),
   P = {},
   D = "u" > typeof Uint8Array && Chunk428495 ? Chunk428495(Uint8Array) : r,
-  x = {
+  L = {
     __proto__: null,
     "%AggregateError%": "u" < typeof AggregateError ? r : AggregateError,
     "%Array%": Array,
@@ -132,10 +132,10 @@ var r, Chunk624462 = require("./624462.js"),
 if (Chunk428495) try {
   null.error
 } catch (e) {
-  var L = Chunk428495(Chunk428495(module));
-  x["%Error.prototype%"] = L
+  var x = Chunk428495(Chunk428495(module));
+  L["%Error.prototype%"] = x
 }
-var j = function e(t) {
+var M = function e(t) {
     var n;
     if ("%AsyncFunction%" === t) n = b("async function () {}");
     else if ("%GeneratorFunction%" === t) n = b("function* () {}");
@@ -147,9 +147,9 @@ var j = function e(t) {
       var i = e("%AsyncGenerator%");
       i && T && (n = T(i.prototype))
     }
-    return x[t] = n, n
+    return L[t] = n, n
   },
-  M = {
+  j = {
     __proto__: null,
     "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
     "%ArrayPrototype%": ["Array", "prototype"],
@@ -206,8 +206,8 @@ var j = function e(t) {
   Chunk94867 = require("./94867.js"),
   Chunk353841 = require("./353841.js"),
   G = Chunk94867.call(Chunk357522, Array.prototype.concat),
-  V = Chunk94867.call(Chunk343920, Array.prototype.splice),
-  F = Chunk94867.call(Chunk357522, String.prototype.replace),
+  F = Chunk94867.call(Chunk343920, Array.prototype.splice),
+  V = Chunk94867.call(Chunk357522, String.prototype.replace),
   B = Chunk94867.call(Chunk357522, String.prototype.slice),
   H = Chunk94867.call(Chunk357522, RegExp.prototype.exec),
   Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
@@ -218,15 +218,15 @@ var j = function e(t) {
     if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
     if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
     var r = [];
-    return F(e, Y, function(e, t, n, i) {
-      r[r.length] = n ? F(i, W, "$1") : t || e
+    return V(e, Y, function(e, t, n, i) {
+      r[r.length] = n ? V(i, W, "$1") : t || e
     }), r
   },
   z = function(e, t) {
     var n, r = e;
-    if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(x, r)) {
-      var i = x[r];
-      if (i === P && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
+    if (U(j, r) && (r = "%" + (n = j[r])[0] + "%"), U(L, r)) {
+      var i = L[r];
+      if (i === P && (i = M(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
         alias: n,
         name: r,
@@ -243,27 +243,27 @@ module.exports = function(e, t) {
     r = n.length > 0 ? n[0] : "",
     i = z("%" + r + "%", t),
     a = i.name,
-    s = i.value,
-    o = false,
+    o = i.value,
+    s = false,
     l = i.alias;
-  l && (r = l[0], V(n, G([0, 1], l)));
+  l && (r = l[0], F(n, G([0, 1], l)));
   for (var d = 1, f = true; d < n.length; d += 1) {
     var p = n[d],
       _ = B(p, 0, 1),
       h = B(p, false);
     if (('"' === _ || "'" === _ || "`" === _ || '"' === h || "'" === h || "`" === h) && _ !== h) throw new c("property names with quotes must have matching quotes");
-    if ("constructor" !== p && f || (o = true), r += "." + p, U(x, a = "%" + r + "%")) s = x[a];
-    else if (null != s) {
-      if (!(p in s)) {
+    if ("constructor" !== p && f || (s = true), r += "." + p, U(L, a = "%" + r + "%")) o = L[a];
+    else if (null != o) {
+      if (!(p in o)) {
         if (!t) throw new u("base intrinsic for " + e + " exists, but the property is not available.");
         return
       }
       if (O && d + 1 >= n.length) {
-        var m = O(s, p);
-        s = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : s[p]
-      } else f = U(s, p), s = s[p];
-      f && !o && (x[a] = s)
+        var m = O(o, p);
+        o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[p]
+      } else f = U(o, p), o = o[p];
+      f && !s && (L[a] = o)
     }
   }
-  return s
+  return o
 }

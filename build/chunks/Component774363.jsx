@@ -43,7 +43,7 @@ function y(e) {
     } = e,
     I = new Date(f.default.extractTimestamp(i.id)),
     S = (0, _.i4)(l),
-    T = (0, o.Lt)(null != (t = i.flags) ? t : 0, h.gfo.EMBEDDED);
+    T = (0, s.Lt)(null != (t = i.flags) ? t : 0, h.gfo.EMBEDDED);
   if (null != y && !T && !v) try {
     let e = new URL(y);
     n = null != e.host && e.host.length > 0 ? e.origin : e.href
@@ -70,7 +70,7 @@ function y(e) {
       text: m.intl.formatToPlainString(m.t["+1bjc8"], {
         date: I
       })
-    }), l.includes(s.F.BOT) && null != O ? (0, r.jsx)(b, {
+    }), l.includes(o.F.BOT) && null != O ? (0, r.jsx)(b, {
       icon: c.CnV,
       text: m.intl.formatToPlainString(m.t.UHGHSP, {
         guildCount: O

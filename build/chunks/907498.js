@@ -13,7 +13,7 @@ var Chunk397927 = require("./397927.js"),
 let c = new Chunk240233.A({
   onSwitchSuccess(e, t) {
     setTimeout(() => {
-      t && (0, i.pX)(o.BVt.ME), (0, r.showToast)((0, r.createToast)(l.intl.formatToPlainString(l.t.wx7O3L, {
+      t && (0, i.pX)(s.BVt.ME), (0, r.showToast)((0, r.createToast)(l.intl.formatToPlainString(l.t.wx7O3L, {
         username: e.username
       }), r.ToastType.SUCCESS))
     }, 100)
@@ -22,6 +22,6 @@ let c = new Chunk240233.A({
     (0, r.showToast)((0, r.createToast)(l.intl.string(l.t.pqvKWA), r.ToastType.FAILURE))
   },
   onTokenSet() {
-    (0, r.OoC)(s.ov), (0, r.OoC)(s.Gl)
+    (0, r.OoC)(o.ov), (0, r.OoC)(o.Gl)
   }
 })

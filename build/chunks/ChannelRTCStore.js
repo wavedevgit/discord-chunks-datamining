@@ -2,12 +2,12 @@
 /** chunk id: 313961, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => eF
+  A: () => eV
 }), require("./896048.js"), require("./321073.js");
 var r, Chunk284009 = require("./284009.js"),
   a = require.n(Chunk284009),
   Chunk735438 = require("./735438.js"),
-  o = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk933958 = require("./933958.js"),
@@ -68,27 +68,27 @@ function P(e, t) {
   }), e
 }
 let D = new Chunk626584.A("ChannelRTCStore"),
-  x = Object.freeze([]),
-  L = [],
-  j = {},
+  L = Object.freeze([]),
+  x = [],
   M = {},
+  j = {},
   k = {},
   U = {},
   G = {},
-  V = {},
   F = {},
+  V = {},
   B = {},
   H = {},
   Y = {},
   W = {};
 
 function K(e) {
-  let t = j[e];
-  return null == t && (t = new S.Ay(e), j[e] = t), t
+  let t = M[e];
+  return null == t && (t = new S.Ay(e), M[e] = t), t
 }
 
 function z() {
-  for (let e of L) ei(e);
+  for (let e of x) ei(e);
   ea()
 }
 
@@ -100,31 +100,31 @@ function q() {
   null == n || e.includes(n) || e.push(n);
   let r = f.default.getRemoteSessionId(),
     i = I.A.getVoiceStateForSession(m.default.getId(), r);
-  (null == i ? true : i.channelId) != null && e.push(null == i ? true : i.channelId), o().difference(L, e).forEach(ei);
-  let a = o().difference(e, L);
-  return L = e, a
+  (null == i ? true : i.channelId) != null && e.push(null == i ? true : i.channelId), s().difference(x, e).forEach(ei);
+  let a = s().difference(e, x);
+  return x = e, a
 }
 
 function Z(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : L;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : x;
   return t.reduce((t, n) => e(K(n)) ? (er(n), en(n), true) : t, false)
 }
 
-function X(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : L;
+function Q(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : x;
   return Z(t => t.updateParticipant(e), t)
 }
 
-function Q(e) {
+function X(e) {
   var t;
   let n = E.A.getChannel(e),
     r = (null == n ? true : n.isDM()) && 1 ? T.jd.AUTO : T.jd.NONE;
-  return null != (t = M[e]) ? t : [r, T.jd.NONE]
+  return null != (t = j[e]) ? t : [r, T.jd.NONE]
 }
 
 function J(e) {
-  if (null == M[e]) returnfalse;
-  let [t] = M[e];
+  if (null == j[e]) returnfalse;
+  let [t] = j[e];
   return t !== T.jd.NONE
 }
 
@@ -148,7 +148,7 @@ function $(e) {
 function ee(e, t) {
   $(e);
   let n = J(e);
-  null == t ? delete M[e] : M[e] = t, n !== J(e) && k[e].toggleCount++
+  null == t ? delete j[e] : j[e] = t, n !== J(e) && k[e].toggleCount++
 }
 
 function et(e) {
@@ -167,16 +167,16 @@ function en(e) {
     let [e] = n.toArray(S.r4.VIDEO);
     r = e.id
   } else {
-    var s;
+    var o;
     let e = n.toArray().find(e => e.type === T.lp.USER && e.id !== t && !e.ringing);
-    r = null != (s = null == e ? true : e.id) ? s : t
+    r = null != (o = null == e ? true : e.id) ? o : t
   }
-  let [o] = Q(e);
-  if (o !== T.jd.AUTO && o !== T.jd.NONE) {
-    let e = n.getParticipant(o);
-    (null == e || e.type === T.lp.STREAM && null == h.A.getActiveStreamForStreamKey(e.id)) && (o = T.jd.NONE)
+  let [s] = X(e);
+  if (s !== T.jd.AUTO && s !== T.jd.NONE) {
+    let e = n.getParticipant(s);
+    (null == e || e.type === T.lp.STREAM && null == h.A.getActiveStreamForStreamKey(e.id)) && (s = T.jd.NONE)
   }
-  ee(e, [o, r])
+  ee(e, [s, r])
 }
 
 function er(e) {
@@ -191,14 +191,14 @@ function er(e) {
 }
 
 function ei(e) {
-  delete j[e], delete M[e], delete U[e], delete G[e]
+  delete M[e], delete j[e], delete U[e], delete G[e]
 }
 
 function ea() {
   return Z(e => e.rebuild(), q())
 }
 
-function es(e) {
+function eo(e) {
   let {
     channelId: t,
     currentVoiceChannelId: n
@@ -206,7 +206,7 @@ function es(e) {
   return null != t ? delete k[t] : null != n && (delete B[n], delete Y[n], $(n)), ea()
 }
 
-function eo(e) {
+function es(e) {
   let {
     channelId: t,
     messageId: n
@@ -232,7 +232,7 @@ function el(e) {
       location: "voice_status_update"
     }, {
       autoTrackExposure: false
-    }).enabled && K(i).updateGuildRingingUsers(r, false), n && null != i && !L.includes(i)) ? e : X(r) || e
+    }).enabled && K(i).updateGuildRingingUsers(r, false), n && null != i && !x.includes(i)) ? e : Q(r) || e
   }, false)
 }
 
@@ -255,7 +255,7 @@ function ef(e) {
   let {
     user: t
   } = e;
-  return X(t.id)
+  return Q(t.id)
 }
 
 function ep(e) {
@@ -276,11 +276,11 @@ function eh(e) {
   let {
     guild: t
   } = e, n = [];
-  if (o().forEach(L, e => {
+  if (s().forEach(x, e => {
       let r = E.A.getChannel(e);
       (null == r || r.getGuildId() === t.id) && n.push(e)
     }), 0 === n.length) returnfalse;
-  o().forEach(n, e => ei(e))
+  s().forEach(n, e => ei(e))
 }
 
 function em(e) {
@@ -288,7 +288,7 @@ function em(e) {
     channelId: t,
     participantsOpen: n
   } = e;
-  V[t] = n
+  F[t] = n
 }
 
 function eg(e) {
@@ -296,7 +296,7 @@ function eg(e) {
     channelId: t,
     voiceParticipantsHidden: n
   } = e;
-  F[t] = n
+  V[t] = n
 }
 
 function eE(e) {
@@ -305,10 +305,10 @@ function eE(e) {
     selfStreamHidden: n
   } = e, r = m.default.getId();
   if (n) {
-    let [e] = Q(t);
+    let [e] = X(t);
     (0, p.wL)(e) && e.includes(r) && ee(t, null)
   }
-  X(r, [t])
+  Q(r, [t])
 }
 
 function ey(e) {
@@ -351,17 +351,17 @@ function eA(e) {
   null == n && r.toArray(S.r4.STREAM).forEach(e => {
     (0, T.Ay)(e) && r.updateParticipant(e.user.id)
   });
-  let [, i] = Q(t);
+  let [, i] = X(t);
   if (ee(t, [null != n ? n : T.jd.NONE, i]), (0, p.wL)(n)) {
     try {
       let {
         ownerId: e
       } = (0, p.Iy)(n);
-      e === m.default.getId() && X(e, [t])
+      e === m.default.getId() && Q(e, [t])
     } catch (e) {
       D.warn("INVALID STREAM KEY FORMAT ".concat(n), e)
     }
-    et(r) || (V[t] = false)
+    et(r) || (F[t] = false)
   }
 }
 
@@ -369,11 +369,11 @@ function eI(e) {
   let {
     channelId: t,
     participantId: n
-  } = e, [r] = Q(t);
+  } = e, [r] = X(t);
   r === n && ee(t, null);
   let i = K(t),
     a = i.getParticipant(n);
-  null == a || a.type !== T.lp.ACTIVITY && (i.updateParticipantPoppedOut(n, true), X(a.user.id, [t]))
+  null == a || a.type !== T.lp.ACTIVITY && (i.updateParticipantPoppedOut(n, true), Q(a.user.id, [t]))
 }
 
 function eS(e) {
@@ -383,7 +383,7 @@ function eS(e) {
   } = e, r = K(t);
   r.updateParticipantPoppedOut(n, false);
   let i = r.getParticipant(n);
-  null == i || i.type !== T.lp.ACTIVITY && X(i.user.id, [t])
+  null == i || i.type !== T.lp.ACTIVITY && Q(i.user.id, [t])
 }
 
 function eT(e) {
@@ -429,7 +429,7 @@ function ew(e) {
     channelId: n,
     ownerId: r
   } = (0, p.Iy)(t);
-  return X(r, [n])
+  return Q(r, [n])
 }
 
 function eR(e) {
@@ -439,7 +439,7 @@ function eR(e) {
     channelId: n,
     ownerId: r
   } = (0, p.Iy)(t);
-  return X(r, [n])
+  return Q(r, [n])
 }
 
 function eP(e) {
@@ -447,7 +447,7 @@ function eP(e) {
     channelId: t,
     userId: n
   } = e;
-  return X(n, [t])
+  return Q(n, [t])
 }
 
 function eD(e) {
@@ -455,17 +455,17 @@ function eD(e) {
     channelId: t,
     userId: n
   } = e;
-  return X(n, [t])
-}
-
-function ex(e) {
-  let {
-    userId: t
-  } = e;
-  return X(t)
+  return Q(n, [t])
 }
 
 function eL(e) {
+  let {
+    userId: t
+  } = e;
+  return Q(t)
+}
+
+function ex(e) {
   let {
     channelId: t,
     senderUserId: n,
@@ -475,7 +475,7 @@ function eL(e) {
   return Z(e => e.updateParticipantQuality(n, r, i), [t])
 }
 
-function ej(e) {
+function eM(e) {
   let {
     channelId: t,
     guildId: n,
@@ -489,7 +489,7 @@ function ej(e) {
   return r.forEach(e => i.updateGuildRingingUsers(e, true)), Z(e => e.rebuild(), [t])
 }
 
-function eM(e) {
+function ej(e) {
   let {
     channelId: t,
     guildId: n,
@@ -517,13 +517,13 @@ function eG(e) {
   var t;
   return !!(null == (t = E.A.getChannel(e)) ? true : t.isVocalThread())
 }
-class eV extends(r = Chunk311907.Ay.PersistedStore) {
+class eF extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.A, m.default, g.A, E.A, u.Ay, f.default, y.A, b.A, O.A, v.default, A.A, I.A), this.syncWith([u.Ay], ec), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(F, null == e ? true : e.voiceParticipantsHidden)
+    this.waitFor(h.A, m.default, g.A, E.A, u.Ay, f.default, y.A, b.A, O.A, v.default, A.A, I.A), this.syncWith([u.Ay], ec), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(V, null == e ? true : e.voiceParticipantsHidden)
   }
   getState() {
     return {
-      voiceParticipantsHidden: F
+      voiceParticipantsHidden: V
     }
   }
   getParticipantsVersion(e) {
@@ -531,28 +531,28 @@ class eV extends(r = Chunk311907.Ay.PersistedStore) {
   }
   getParticipants(e) {
     var t;
-    return null != (t = K(e).toArray()) ? t : x
+    return null != (t = K(e).toArray()) ? t : L
   }
   getSpeakingParticipants(e) {
     var t;
-    return null != (t = K(e).toArray(S.r4.SPEAKING)) ? t : x
+    return null != (t = K(e).toArray(S.r4.SPEAKING)) ? t : L
   }
   getFilteredParticipants(e) {
     var t;
     let n = K(e);
-    return null != (t = F[e]) && t ? n.toArray(S.r4.FILTERED) : n.toArray(S.r4.NOT_POPPED_OUT)
+    return null != (t = V[e]) && t ? n.toArray(S.r4.FILTERED) : n.toArray(S.r4.NOT_POPPED_OUT)
   }
   getVideoParticipants(e) {
     var t;
-    return null != (t = K(e).toArray(S.r4.VIDEO)) ? t : x
+    return null != (t = K(e).toArray(S.r4.VIDEO)) ? t : L
   }
   getStreamParticipants(e) {
     var t;
-    return null != (t = K(e).toArray(S.r4.STREAM)) ? t : x
+    return null != (t = K(e).toArray(S.r4.STREAM)) ? t : L
   }
   getActivityParticipants(e) {
     var t;
-    return null != (t = K(e).toArray(S.r4.ACTIVITY)) ? t : x
+    return null != (t = K(e).toArray(S.r4.ACTIVITY)) ? t : L
   }
   getParticipant(e, t) {
     return K(e).getParticipant(t)
@@ -563,14 +563,14 @@ class eV extends(r = Chunk311907.Ay.PersistedStore) {
   }
   getParticipantsOpen(e) {
     var t;
-    return null == (t = V[e]) || t
+    return null == (t = F[e]) || t
   }
   getVoiceParticipantsHidden(e) {
     var t;
-    return null != (t = F[e]) && t
+    return null != (t = V[e]) && t
   }
   getSelectedParticipantId(e) {
-    let [t, n] = Q(e);
+    let [t, n] = X(e);
     return t === T.jd.NONE ? null : t !== T.jd.AUTO ? t : n === T.jd.NONE || n === T.jd.AUTO ? null : n
   }
   getSelectedParticipant(e) {
@@ -626,14 +626,14 @@ class eV extends(r = Chunk311907.Ay.PersistedStore) {
     return null != n && "isPoppedOut" in n && n.isPoppedOut
   }
 }
-N(eV, "displayName", "ChannelRTCStore"), N(eV, "persistKey", "ChannelRTCStore");
-let eF = new eV(Chunk73153.h, {
+N(eF, "displayName", "ChannelRTCStore"), N(eF, "persistKey", "ChannelRTCStore");
+let eV = new eF(Chunk73153.h, {
   CONNECTION_OPEN: z,
   CONNECTION_OPEN_SUPPLEMENTAL: ea,
   THREAD_LIST_SYNC: ea,
   OVERLAY_INITIALIZE: ea,
-  VOICE_CHANNEL_SELECT: es,
-  CHANNEL_SELECT: eo,
+  VOICE_CHANNEL_SELECT: eo,
+  CHANNEL_SELECT: es,
   CHANNEL_RTC_ACTIVE_CHANNELS: ea,
   VOICE_STATE_UPDATES: el,
   CHANNEL_CREATE: eT,
@@ -655,8 +655,8 @@ let eF = new eV(Chunk73153.h, {
   CHANNEL_RTC_UPDATE_PARTCIPANTS_LIST_OPEN: ev,
   RTC_CONNECTION_VIDEO: eP,
   RTC_CONNECTION_PLATFORM: eD,
-  AUDIO_SET_LOCAL_VIDEO_DISABLED: ex,
-  MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: eL,
+  AUDIO_SET_LOCAL_VIDEO_DISABLED: eL,
+  MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: ex,
   STREAM_CLOSE: ew,
   STREAM_DELETE: ew,
   STREAM_WATCH: eR,
@@ -664,8 +664,8 @@ let eF = new eV(Chunk73153.h, {
   GUILD_SOUNDBOARD_SOUND_PLAY_START: eu,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: eu,
   PUSH_TO_TALK_STATE_CHANGE: ed,
-  GUILD_RING_START: ej,
-  GUILD_RING_STOP: eM,
+  GUILD_RING_START: eM,
+  GUILD_RING_STOP: ej,
   USER_UPDATE: ef,
   GUILD_MEMBER_UPDATE: ef,
   GUILD_DELETE: eh

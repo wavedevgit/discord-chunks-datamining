@@ -71,7 +71,7 @@ async function m() {
       let t = p(d({}, i), {
         gpus: null == (e = i.gpus) ? true : e.map(e => JSON.stringify(e))
       });
-      o.default.track(n, t), (_ = {
+      s.default.track(n, t), (_ = {
         hashes: d({}, _.hashes)
       }).hashes[n] = r
     }
@@ -86,7 +86,7 @@ class E extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     _ = null != e && "object" == typeof e.hashes ? e : {
       hashes: {}
-    }, this.waitFor(s.A)
+    }, this.waitFor(o.A)
   }
   getState() {
     return _

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk435371 = require("./435371.js"),
   Chunk397927 = require("./397927.js"),
@@ -101,18 +101,18 @@ let R = (e, t) => "".concat(e, ":").concat(t),
       allowAnimatedEmoji: w,
       selectedItemClassName: R,
       inNitroLockedSection: P
-    } = n, D = N(n, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]), [x] = i, L = (0, o.bG)([E.A], () => a.type === p.i.GUILD ? E.A.getGuild(a.guildId) : true, [a]), j = () => {
+    } = n, D = N(n, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]), [L] = i, x = (0, s.bG)([E.A], () => a.type === p.i.GUILD ? E.A.getGuild(a.guildId) : true, [a]), M = () => {
       let e = (0, y.N)(a);
-      return ((null == L ? true : L.name) != null && (e = v.intl.formatToPlainString(v.t["nXv4/B"], {
+      return ((null == x ? true : x.name) != null && (e = v.intl.formatToPlainString(v.t["nXv4/B"], {
         names: e,
-        guildName: L.name
+        guildName: x.name
       })), l) ? v.intl.formatToPlainString(v.t["9FI9Z0"], {
         names: e
       }) : e
-    }, M = _ && !P;
+    }, j = _ && !P;
     return (0, r.jsx)(c.vN3, {
       children: (0, r.jsx)("button", C(S({}, D), {
-        className: s()(A._X, {
+        className: o()(A._X, {
           [A.lG]: u,
           [A.Lh]: d,
           [A.Bx]: f,
@@ -124,16 +124,16 @@ let R = (e, t) => "".concat(e, ":").concat(t),
         "data-name": a.name,
         "data-surrogates": "surrogates" in a ? a.surrogates : null,
         "data-animated": a.animated ? "true" : null,
-        ref: x,
+        ref: L,
         children: (0, r.jsx)(O.A, {
-          "aria-label": j(),
+          "aria-label": M(),
           columnIndex: g,
           rowIndex: b,
           emoji: a,
           size: I,
           surrogateCodePoint: T,
           allowAnimatedEmoji: w,
-          isLocked: M
+          isLocked: j
         })
       }))
     })
@@ -143,7 +143,7 @@ function D(e) {
   var t;
   let {
     descriptor: a,
-    emojiItemKey: s,
+    emojiItemKey: o,
     isInspected: c,
     rowIndex: p,
     channelGuildId: h,
@@ -155,24 +155,24 @@ function D(e) {
     surrogateCodePoint: T,
     selectedItemClassName: w,
     getEmojiItemProps: D,
-    isMediumSize: x,
-    isLargeSize: L,
-    pulseItemKey: j,
-    allowAnimatedEmoji: M,
+    isMediumSize: L,
+    isLargeSize: x,
+    pulseItemKey: M,
+    allowAnimatedEmoji: j,
     setPulseItemKey: k,
     messageId: U,
     isBurstReaction: G,
-    rowPosition: V,
-    inNitroLockedSection: F
-  } = e, [B, H] = i.useState(""), Y = (0, o.bG)([d.A], () => d.A.useReducedMotion), W = (0, o.bG)([f.Ay], () => f.Ay.getDisambiguatedEmojiContext(h), [h]), K = i.useRef(null), {
+    rowPosition: F,
+    inNitroLockedSection: V
+  } = e, [B, H] = i.useState(""), Y = (0, s.bG)([d.A], () => d.A.useReducedMotion), W = (0, s.bG)([f.Ay], () => f.Ay.getDisambiguatedEmojiContext(h), [h]), K = i.useRef(null), {
     emoji: z,
     size: q,
     isDisabled: Z,
-    columnIndex: X
-  } = a, Q = e => {
+    columnIndex: Q
+  } = a, X = e => {
     if (e.stopPropagation(), O.current || A.current) return;
     let t = e.altKey;
-    t && !f.Ay.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(z) && k(s), (0, m.sF)(m._2.FAVORITE_EMOJI_TOOLTIP), y(a, {
+    t && !f.Ay.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(z) && k(o), (0, m.sF)(m._2.FAVORITE_EMOJI_TOOLTIP), y(a, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: t
     })
@@ -185,41 +185,41 @@ function D(e) {
       } = await n.e("46132").then(n.bind(n, 233503));
       return t => (0, r.jsx)(e, S({}, t))
     })
-  }, ee = null != (t = D(X, p)) ? t : {}, {
+  }, ee = null != (t = D(Q, p)) ? t : {}, {
     ref: et,
     tabIndex: en,
     onFocus: er
-  } = ee, ei = N(ee, ["ref", "tabIndex", "onFocus"]), ea = B !== R(X, p) ? (0, r.jsx)(P, {
+  } = ee, ei = N(ee, ["ref", "tabIndex", "onFocus"]), ea = B !== R(Q, p) ? (0, r.jsx)(P, {
     ref: et,
     emoji: z,
     isFavorite: W.isFavoriteEmojiWithoutFetchingLatest(z),
-    isLargeSize: L,
-    isMediumSize: x,
+    isLargeSize: x,
+    isMediumSize: L,
     isInspected: c,
     isDisabled: Z,
-    showPulse: j === s,
-    allowAnimatedEmoji: M,
+    showPulse: M === o,
+    allowAnimatedEmoji: j,
     onFocus: null != er ? er : J,
     onMouseMove: J,
     onClick: e => {
-      if (null != K.current && null != V && null != U && !e.shiftKey && null != z.name && G && !Y && M) {
+      if (null != K.current && null != F && null != U && !e.shiftKey && null != z.name && G && !Y && j) {
         let e = null == z.id ? _.Ay.convertNameToSurrogate(z.name) : z.name,
           t = K.current.getBoundingClientRect();
-        t.x = V.x + (X + 1) * q, H(R(X, p)), (0, g.h)(U, e, z.id, t)
+        t.x = F.x + (Q + 1) * q, H(R(Q, p)), (0, g.h)(U, e, z.id, t)
       }
-      Q(e)
+      X(e)
     },
     onContextMenu: $,
     tabIndex: en,
-    columnIndex: X,
+    columnIndex: Q,
     rowIndex: p,
     size: q,
     surrogateCodePoint: T,
     selectedItemClassName: w,
-    inNitroLockedSection: F
+    inNitroLockedSection: V
   }) : null;
   return (0, i.createElement)("li", C(S({}, ei), {
-    key: s,
+    key: o,
     ref: K
   }), I ? (0, r.jsx)(l.m_, {
     text: v.intl.formatToPlainString(v.t.glqNsf, {

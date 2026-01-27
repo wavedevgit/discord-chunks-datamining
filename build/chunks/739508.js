@@ -11,7 +11,7 @@ var Chunk184015 = require("./184015.js"),
   Chunk728458 = require("./728458.js"),
   Chunk818348 = require("./818348.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,14 +20,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -68,16 +68,16 @@ async function d(e) {
 }
 
 function f(e, t) {
-  i.A.captureException(e, c(o({}, t), {
-    tags: c(o({}, null == t ? true : t.tags), {
+  i.A.captureException(e, c(s({}, t), {
+    tags: c(s({}, null == t ? true : t.tags), {
       app_context: "billing"
     })
   }))
 }
 
 function p(e, t) {
-  i.A.captureMessage(e, c(o({}, t), {
-    tags: c(o({}, null == t ? true : t.tags), {
+  i.A.captureMessage(e, c(s({}, t), {
+    tags: c(s({}, null == t ? true : t.tags), {
       app_context: "billing"
     })
   }))

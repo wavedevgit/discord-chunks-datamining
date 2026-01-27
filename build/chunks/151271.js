@@ -37,7 +37,7 @@ let c = Object.freeze({
     })
   })),
   d = (e, t, n) => {
-    (0, o.r)(() => u.setState({
+    (0, s.r)(() => u.setState({
       activeView: e,
       activeViewType: t,
       activeChannelId: n,
@@ -46,7 +46,7 @@ let c = Object.freeze({
   },
   f = (e, t) => {
     let n = u.getState();
-    true !== e && e !== n.activeViewType || true !== t && t !== n.activeChannelId || null !== n.activeView && (0, o.r)(() => u.setState({
+    true !== e && e !== n.activeViewType || true !== t && t !== n.activeChannelId || null !== n.activeView && (0, s.r)(() => u.setState({
       activeView: null,
       activeViewType: null,
       activeChannelId: null,
@@ -64,14 +64,14 @@ let c = Object.freeze({
     u.getState().activeView === e ? f() : d(e, t, n)
   },
   h = e => {
-    (0, o.r)(() => u.setState({
+    (0, s.r)(() => u.setState({
       activeView: e,
       lastActiveView: u.getState().activeView
     }))
   },
   m = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    (0, o.r)(() => u.setState({
+    (0, s.r)(() => u.setState({
       searchQuery: e,
       isSearchSuggestion: t
     }))

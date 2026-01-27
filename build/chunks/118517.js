@@ -2,7 +2,7 @@
 /** chunk id: 118517, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Jx: () => s,
+  Jx: () => o,
   Yf: () => i,
   vz: () => a
 });
@@ -14,7 +14,7 @@ function i(e) {
     channel: n,
     shouldMention: i,
     showMentionToggle: a,
-    source: s
+    source: o
   } = e;
   r.h.dispatch({
     type: "CREATE_PENDING_REPLY",
@@ -22,7 +22,7 @@ function i(e) {
     channel: n,
     shouldMention: i,
     showMentionToggle: a,
-    source: s
+    source: o
   })
 }
 
@@ -34,7 +34,7 @@ function a(e, t) {
   })
 }
 
-function s(e) {
+function o(e) {
   r.h.dispatch({
     type: "DELETE_PENDING_REPLY",
     channelId: e

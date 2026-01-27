@@ -34,8 +34,8 @@ function b(e) {
     idle: I
   } = e, S = (0, l.h)(n), T = (0, d.Us)() === g.BRT.POPOUT, {
     parentAnalyticsLocation: C
-  } = (0, o.Ay)(), N = () => {
-    (0, c.X)(C, c.O.POPOUT, true), (0, s.A)({
+  } = (0, s.Ay)(), N = () => {
+    (0, c.X)(C, c.O.POPOUT, true), (0, o.A)({
       onConfirm: async () => {
         await h.A.refreshProxyTicket({
           applicationId: n

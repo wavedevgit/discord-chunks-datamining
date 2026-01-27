@@ -17,24 +17,24 @@ function c(e) {
     label: t,
     defaultExpanded: n = false,
     onExpandedChange: a,
-    isDisabled: s = false,
+    isDisabled: o = false,
     collapsedContent: c,
     children: u
   } = e, [d, f] = i.useState(n), p = i.useCallback(e => {
     f(e), null != a && a(e)
   }, [a]);
-  return (0, r.jsxs)(o.nD, {
+  return (0, r.jsxs)(s.nD, {
     defaultExpanded: n,
-    isDisabled: s,
+    isDisabled: o,
     onExpandedChange: p,
     children: [(0, r.jsxs)("div", {
       className: l.wx,
-      children: [(0, r.jsx)(o.$m, {
+      children: [(0, r.jsx)(s.$m, {
         variant: "text-md/medium",
         color: d ? "text-strong" : "text-muted",
         children: t
-      }), (!d || s) && c]
-    }), (0, r.jsx)(o.vr, {
+      }), (!d || o) && c]
+    }), (0, r.jsx)(s.vr, {
       children: (0, r.jsx)("div", {
         className: l.CS,
         children: u
@@ -48,26 +48,26 @@ function u(e) {
     label: t,
     value: n,
     color: i = "text-muted",
-    valueColor: o = "text-muted",
+    valueColor: s = "text-muted",
     icon: c,
     tooltip: u
   } = e;
   return (0, r.jsxs)("div", {
     className: l.Yn,
-    children: [(0, r.jsxs)(s.Text, {
+    children: [(0, r.jsxs)(o.Text, {
       variant: "text-md/normal",
       color: i,
       className: l.yB,
       children: [c, t, null != u && (0, r.jsx)(a.m_, {
         text: u,
-        children: (0, r.jsx)(s.cBN, {
+        children: (0, r.jsx)(o.cBN, {
           size: "xs",
           color: "currentColor"
         })
       })]
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
-      color: o,
+      color: s,
       children: n
     })]
   })

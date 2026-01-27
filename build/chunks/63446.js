@@ -8,7 +8,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk287809 = require("./287809.js"),
   Chunk38050 = require("./38050.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk439372.A {
+class s extends Chunk439372.A {
   constructor(...e) {
-    super(...e), s(this, "actions", {
+    super(...e), o(this, "actions", {
       HAVEN_DISCONNECT: e => this.handleHavenDisconnect(e)
-    }), s(this, "handleHavenDisconnect", e => {
+    }), o(this, "handleHavenDisconnect", e => {
       let t = i.default.getCurrentUser();
       e.userId === (null == t ? true : t.id) && a.n.getState().resetPlayback()
     })
   }
 }
-let l = new o
+let l = new s

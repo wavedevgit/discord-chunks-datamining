@@ -54,20 +54,20 @@ module.exports = function(e) {
         begin: /\.\.\./
       }, e.C_NUMBER_MODE, e.C_BLOCK_COMMENT_MODE, n, i]
     }],
-    s = {
+    o = {
       className: "title",
       begin: e.UNDERSCORE_IDENT_RE,
       relevance: 0
     },
-    o = function(t, r, i) {
-      let o = e.inherit({
+    s = function(t, r, i) {
+      let s = e.inherit({
         className: "function",
         beginKeywords: t,
         end: r,
         excludeEnd: true,
         contains: [].concat(a)
       }, {});
-      return o.contains.push(s), o.contains.push(e.C_NUMBER_MODE), o.contains.push(e.C_BLOCK_COMMENT_MODE), o.contains.push(n), o
+      return s.contains.push(o), s.contains.push(e.C_NUMBER_MODE), s.contains.push(e.C_BLOCK_COMMENT_MODE), s.contains.push(n), s
     },
     l = {
       className: "built_in",
@@ -112,7 +112,7 @@ module.exports = function(e) {
     contains: [e.C_NUMBER_MODE, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, n, c, r, {
       className: "keyword",
       begin: /\bexternal (matrix|string|array|sparse matrix|struct|proc|keyword|fn)/
-    }, o("proc keyword", ";"), o("fn", "="), {
+    }, s("proc keyword", ";"), s("fn", "="), {
       beginKeywords: "for threadfor",
       end: /;/,
       relevance: 0,

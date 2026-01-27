@@ -38,14 +38,14 @@ let _ = () => ({
   },
   [r.ZQ.OPTION_7]: {
     id: r.ZQ.OPTION_7,
-    source: s.A,
+    source: o.A,
     name: a.intl.string(a.t["PM+DU1"]),
     isVideo: true,
     hotspotLocation: i._.ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW
   },
   [r.ZQ.OPTION_8]: {
     id: r.ZQ.OPTION_8,
-    source: o.A,
+    source: s.A,
     name: a.intl.string(a.t["3zoBh1"]),
     isVideo: true,
     hotspotLocation: i._.ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW

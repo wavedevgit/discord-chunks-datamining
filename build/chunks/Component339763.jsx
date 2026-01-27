@@ -81,8 +81,8 @@ let m = {
       animationTypeRef: n,
       onSetAnimationDurationMS: r,
       play: a,
-      getDuration: s
-    } = e, o = s(), l = null != o ? 1e3 * o : g;
+      getDuration: o
+    } = e, s = o(), l = null != s ? 1e3 * s : g;
     (0, i.useEffect)(() => {
       null !== t && t !== n.current && (n.current = t, a())
     }, [t, a, n]), (0, i.useEffect)(() => {
@@ -92,7 +92,7 @@ let m = {
   y = e => {
     let {
       currentAnimationType: t
-    } = e, n = _(e, ["currentAnimationType"]), i = (0, s.N)(null != t ? t : "earn"), {
+    } = e, n = _(e, ["currentAnimationType"]), i = (0, o.N)(null != t ? t : "earn"), {
       Component: a
     } = i;
     return E(d({
@@ -107,11 +107,11 @@ let m = {
     let {
       currentAnimationType: t
     } = e, n = _(e, ["currentAnimationType"]), i = (0, a.q)(null != t ? t : "earn"), {
-      Component: s
+      Component: o
     } = i;
     return E(d({
       currentAnimationType: t
-    }, n, _(i, ["Component"]))), (0, r.jsx)(s, p(d({}, m), {
+    }, n, _(i, ["Component"]))), (0, r.jsx)(o, p(d({}, m), {
       size: "custom",
       className: c.E$,
       useLottieDefaultColors: true
@@ -119,5 +119,5 @@ let m = {
   },
   O = e => {
     let t = (0, l.Ay)();
-    return (0, o.qB)(t) ? (0, r.jsx)(b, d({}, e)) : (0, r.jsx)(y, d({}, e))
+    return (0, s.qB)(t) ? (0, r.jsx)(b, d({}, e)) : (0, r.jsx)(y, d({}, e))
   }

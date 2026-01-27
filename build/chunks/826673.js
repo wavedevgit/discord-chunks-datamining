@@ -23,7 +23,7 @@ var Chunk311907 = require("./311907.js"),
 function p(e) {
   let {
     bypassNewUserCheck: t = false,
-    cooldownDurationMs: n = o.A.Millis.WEEK,
+    cooldownDurationMs: n = s.A.Millis.WEEK,
     guildId: r
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   if (!t && (0, f.P3)(e)) returntrue;
@@ -44,7 +44,7 @@ function p(e) {
 
 function _(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-  return (0, r.bG)([a.A, s.A], () => p(e, t))
+  return (0, r.bG)([a.A, o.A], () => p(e, t))
 }
 async function h(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};

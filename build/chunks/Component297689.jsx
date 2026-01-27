@@ -88,14 +88,14 @@ function m(e) {
     children: t
   } = e, n = p(e, ["children"]), {
     isDisabled: i
-  } = (0, a.CC)(s.k, "trigger");
-  return (0, r.jsx)(o.vN3, {
-    children: (0, r.jsx)(s.$, {
+  } = (0, a.CC)(o.k, "trigger");
+  return (0, r.jsx)(s.vN3, {
+    children: (0, r.jsx)(o.$, {
       slot: "trigger",
       className: l.hZ,
-      children: (0, r.jsxs)(o.Text, f(u({}, n), {
+      children: (0, r.jsxs)(s.Text, f(u({}, n), {
         className: l.aQ,
-        children: [t, !i && (0, r.jsx)(o.abt, {
+        children: [t, !i && (0, r.jsx)(s.abt, {
           size: "xs",
           color: "currentColor",
           className: l.ai

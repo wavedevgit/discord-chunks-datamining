@@ -66,7 +66,7 @@ function v(e) {
 
 function A(e) {
   let t = (0, i.cf)([a.A], () => a.A.getState()),
-    n = (0, i.bG)([s.default], () => s.default.getId());
+    n = (0, i.bG)([o.default], () => o.default.getId());
   return r.useMemo(() => n === e.user.id ? {
     maxFrameRate: t.fps,
     maxResolution: {
@@ -81,10 +81,10 @@ function I(e, t, n) {
   let r = y(e, t, n),
     i = c.default.getCurrentUser(),
     a = l.A.getGuildId(),
-    s = null != a ? o.A.getGuild(a) : null;
+    o = null != a ? s.A.getGuild(a) : null;
   u.default.track(d.HAw.STREAM_SETTINGS_UPDATE, {
     user_premium_tier: null == i ? true : i.premiumType,
-    guild_premium_tier: null == s ? true : s.premiumTier,
+    guild_premium_tier: null == o ? true : o.premiumTier,
     stream_quality_user_premium_tier: (null == r ? true : r.quality) != null ? p.Kq[r.quality] : null,
     stream_quality_guild_premium_tier: null == r ? true : r.guildPremiumTier,
     stream_quality_preset: e,

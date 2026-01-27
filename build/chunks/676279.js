@@ -9,7 +9,7 @@ require.d(exports, {
   gm: () => I,
   nr: () => A
 });
-var r, i, a, s, o, l, Chunk481613 = require("./481613.js"),
+var r, i, a, o, s, l, Chunk481613 = require("./481613.js"),
   u = require.n(Chunk481613);
 let d = (null != (r = u().name) ? r : "unknown").toLowerCase(),
   f = "chrome" === d.toLowerCase() ? parseInt(null != (i = u().version) ? i : "", 10) : false;
@@ -22,12 +22,12 @@ let _ = "electron" === d.toLowerCase() ? parseInt(null != (a = u().version) ? a 
 function h() {
   return _
 }
-let m = "firefox" === d.toLowerCase() ? parseInt(null != (s = u().version) ? s : "", 10) : false;
+let m = "firefox" === d.toLowerCase() ? parseInt(null != (o = u().version) ? o : "", 10) : false;
 
 function g() {
   return m
 }
-let E = "edge" === d.toLowerCase() ? parseInt(null != (o = u().version) ? o : "", 10) : false;
+let E = "edge" === d.toLowerCase() ? parseInt(null != (s = u().version) ? s : "", 10) : false;
 
 function y() {
   return E

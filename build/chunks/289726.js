@@ -8,12 +8,12 @@ require.r(exports), require.d(exports, {
 var r, Chunk64700 = require("./64700.js"),
   Chunk340287 = require("./340287.js");
 
-function s(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, o(e, t)
+function o(e, t) {
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, s(e, t)
 }
 
-function o(e, t) {
-  return (o = Object.setPrototypeOf || function(e, t) {
+function s(e, t) {
+  return (s = Object.setPrototypeOf || function(e, t) {
     return e.__proto__ = t, e
   })(e, t)
 }
@@ -75,9 +75,9 @@ function y(e, t) {
   return false !== g.indexOf(t) && r && (n.passive = !e.props.preventDefault), n
 }
 let b = function(e, t) {
-  var n, o, u = e.displayName || e.name || "Component";
-  return o = n = function(n) {
-    function o(e) {
+  var n, s, u = e.displayName || e.name || "Component";
+  return s = n = function(n) {
+    function s(e) {
       var i;
       return (i = n.call(this, e) || this).__outsideClickHandler = function(e) {
         if ("function" == typeof i.__clickOutsideHandlerProp) return void i.__clickOutsideHandlerProp(e);
@@ -111,8 +111,8 @@ let b = function(e, t) {
         return i.instanceRef = e
       }, i._uid = _(), i.initTimeStamp = performance.now(), i
     }
-    s(o, n);
-    var g = o.prototype;
+    o(s, n);
+    var g = s.prototype;
     return g.getInstance = function() {
       if (e.prototype && !e.prototype.isReactComponent) return this;
       var t = this.instanceRef;
@@ -132,7 +132,7 @@ let b = function(e, t) {
       t.excludeScrollbar;
       var n = l(t, ["excludeScrollbar"]);
       return e.prototype && e.prototype.isReactComponent ? n.ref = this.getRef : n.wrappedRef = this.getRef, n.disableOnClickOutside = this.disableOnClickOutside, n.enableOnClickOutside = this.enableOnClickOutside, (0, i.createElement)(e, n)
-    }, o
+    }, s
   }(i.Component), n.displayName = "OnClickOutside(" + u + ")", n.defaultProps = {
     eventTypes: ["mousedown", "touchstart"],
     excludeScrollbar: t && t.excludeScrollbar || false,
@@ -141,5 +141,5 @@ let b = function(e, t) {
     stopPropagation: false
   }, n.getClass = function() {
     return e.getClass ? e.getClass() : e
-  }, o
+  }, s
 }

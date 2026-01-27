@@ -2,8 +2,8 @@
 /** chunk id: 821124, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  NK: () => s,
-  Oe: () => o,
+  NK: () => o,
+  Oe: () => s,
   ar: () => a,
   mf: () => i
 });
@@ -17,10 +17,10 @@ function a(e) {
   return e === r.B5.SUBMITTED
 }
 
-function s(e) {
+function o(e) {
   return e.applicationStatus === r.B5.APPROVED && null != e.lastSeen
 }
 
-function o(e) {
+function s(e) {
   return i(e.applicationStatus) && null == e.lastSeen
 }

@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  n: () => o
+  n: () => s
 }), require("./457529.js");
 var Chunk973117 = require("./973117.js");
 try {
@@ -21,7 +21,7 @@ function a() {
     returnfalse
   }
 }
-class s {
+class o {
   get(e, t) {
     let n = r.getItem(e);
     if (null != n) try {
@@ -41,4 +41,4 @@ class s {
     r.clear()
   }
 }
-let o = a() ? new s : new Chunk973117.J
+let s = a() ? new o : new Chunk973117.J

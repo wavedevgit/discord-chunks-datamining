@@ -14,10 +14,10 @@ function l(e) {
   let {
     applicationId: t,
     leavesCurrentFrame: n = true
-  } = e, l = r.A.getApplication(t), c = null != l && (0, s.x)(l);
+  } = e, l = r.A.getApplication(t), c = null != l && (0, o.x)(l);
   if (n) {
     let e = a.A.getConnectedFrame();
-    null != e && (0, o.A)().leaveFrame({
+    null != e && (0, s.A)().leaveFrame({
       applicationId: e.applicationId
     })
   }

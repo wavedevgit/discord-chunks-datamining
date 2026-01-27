@@ -56,17 +56,17 @@ function h(e, t) {
 function m(e) {
   return ({
     [u.oh.AUDIO_INPUT]: {
-      setDevice: s.A.setInputDevice,
+      setDevice: o.A.setInputDevice,
       getLabel: () => d.intl.string(d.t.ElbIXN),
       getLocation: e => "".concat(e, ".useInputDeviceMenuItems")
     },
     [u.oh.AUDIO_OUTPUT]: {
-      setDevice: s.A.setOutputDevice,
+      setDevice: o.A.setOutputDevice,
       getLabel: () => d.intl.string(d.t["6Ww0iH"]),
       getLocation: e => "".concat(e, ".useOutputDeviceMenuItems")
     },
     [u.oh.VIDEO_INPUT]: {
-      setDevice: s.A.setVideoDevice,
+      setDevice: o.A.setVideoDevice,
       getLabel: () => d.intl.string(d.t.F122Gz),
       getLocation: e => "".concat(e, ".useVideoDeviceMenuItems")
     }
@@ -77,7 +77,7 @@ function g(e) {
   var t;
   let {
     deviceType: n,
-    analyticsLocations: s,
+    analyticsLocations: o,
     asSubmenu: u = false,
     onDeviceSelect: f,
     showAllDevices: _ = false,
@@ -89,20 +89,20 @@ function g(e) {
     setDevice: O,
     getLabel: v,
     getLocation: A
-  } = m(n), [I, S] = i.useState(_), T = A(s[s.length - 1]), [C, N] = (0, l.tR)(n, {
+  } = m(n), [I, S] = i.useState(_), T = A(o[o.length - 1]), [C, N] = (0, l.tR)(n, {
     location: T
   }), w = I ? C.concat(N) : C, {
     id: R,
     name: P
-  } = (0, l.x5)(n), D = null != g ? g : R, x = i.useMemo(() => C.concat(N).find(e => {
+  } = (0, l.x5)(n), D = null != g ? g : R, L = i.useMemo(() => C.concat(N).find(e => {
     let {
       id: t
     } = e;
     return t === D
-  }), [C, N, D]), L = w.map(e => {
+  }), [C, N, D]), x = w.map(e => {
     let t, {
         id: i,
-        disabled: o,
+        disabled: s,
         name: c
       } = e,
       u = c,
@@ -110,40 +110,40 @@ function g(e) {
     return null != d && (u = d.prefix, t = d.subName), (0, r.jsx)(a.iDA, p({
       id: "".concat(n, "-").concat(i),
       group: "".concat(n, "-devices"),
-      disabled: o,
+      disabled: s,
       label: u,
       subtext: t,
       checked: i === D,
       action: () => {
         var e;
         (null == (e = null == f ? true : f(i)) || e) && O(i, {
-          analyticsLocations: s
+          analyticsLocations: o
         })
       }
     }, null == b ? true : b(i)), "".concat(n, "-").concat(i))
-  }), j = (0, r.jsx)(a.Drp, {
+  }), M = (0, r.jsx)(a.Drp, {
     id: "SHOW_MORE",
     label: d.intl.string(d.t.E99UMh),
     dontCloseOnAction: true,
     action: () => {
-      S(true), o.default.track(c.HAw.DEVICES_LIST_SHOW_MORE_CLICKED, {
+      S(true), s.default.track(c.HAw.DEVICES_LIST_SHOW_MORE_CLICKED, {
         device_type: n,
         location: T,
         shown_device_count: C.length,
         hidden_device_count: N.length,
-        location_stack: s
+        location_stack: o
       })
     }
-  }), M = !I && (null == N ? true : N.length) > 0;
+  }), j = !I && (null == N ? true : N.length) > 0;
   return u ? (0, r.jsxs)(a.Drp, h(p({
     id: "".concat(n, "-devices"),
     label: v(),
-    subtext: null != (t = null == x ? true : x.name) ? t : P
+    subtext: null != (t = null == L ? true : L.name) ? t : P
   }, y), {
-    children: [L, M && j]
+    children: [x, j && M]
   })) : (0, r.jsxs)(a.rXV, h(p({
     label: v()
   }, E), {
-    children: [L, M && j]
+    children: [x, j && M]
   }))
 }

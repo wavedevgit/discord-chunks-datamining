@@ -44,7 +44,7 @@ let u = Chunk64700.createContext(null),
       isLoaded: f = false
     } = e, {
       analyticsLocations: p
-    } = (0, s.Ay)(), _ = i.useRef(true), h = {
+    } = (0, o.Ay)(), _ = i.useRef(true), h = {
       analyticsLocations: p,
       value: t
     }, m = i.useRef(h);
@@ -57,10 +57,10 @@ let u = Chunk64700.createContext(null),
         analyticsLocations: t,
         value: n
       } = m.current;
-      (0, o.Wn)(c({
+      (0, s.Wn)(c({
         action: "VIEW",
         analyticsLocations: t
-      }, n)), (0, o.wd)(c({
+      }, n)), (0, s.wd)(c({
         profileUi: "USER_PROFILE",
         timeToInteractiveMs: _.current,
         timeToLoadMs: null != a ? e - a : true,
@@ -79,8 +79,8 @@ let u = Chunk64700.createContext(null),
     let {
       layout: n,
       userId: r,
-      guildId: s,
-      channelId: o,
+      guildId: o,
+      channelId: s,
       messageId: l,
       roleId: c,
       sourceSessionId: d,
@@ -91,37 +91,37 @@ let u = Chunk64700.createContext(null),
       sourceSessionId: null != d ? d : p,
       layout: n,
       userId: r,
-      guildId: s,
-      channelId: o,
+      guildId: o,
+      channelId: s,
       messageId: l,
       roleId: c,
       showGuildProfile: f
-    }), [p, n, r, s, o, l, c, d, f])
+    }), [p, n, r, o, s, l, c, d, f])
   },
   p = () => {
     let e = i.useContext(u),
       {
         analyticsLocations: t
-      } = (0, s.Ay)();
+      } = (0, o.Ay)();
     return {
       context: e,
       trackUserProfileAction: i.useCallback(n => {
-        null != e && (0, o.Wn)(c({
+        null != e && (0, s.Wn)(c({
           analyticsLocations: t
         }, e, n))
       }, [e, t]),
       trackUserProfileEditAction: i.useCallback(n => {
-        null != e && (0, o.un)(c({
+        null != e && (0, s.un)(c({
           analyticsLocations: t
         }, e, n))
       }, [e, t]),
       trackUserProfileEditSaved: i.useCallback(n => {
-        null != e && (0, o.pT)(c({
+        null != e && (0, s.pT)(c({
           analyticsLocations: t
         }, e, n))
       }, [e, t]),
       trackUserProfileWishlistAction: i.useCallback(n => {
-        null != e && (0, o.nR)(c({
+        null != e && (0, s.nR)(c({
           analyticsLocations: t
         }, e, n))
       }, [e, t])

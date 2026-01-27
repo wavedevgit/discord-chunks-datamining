@@ -42,7 +42,7 @@ var Chunk284009 = require("./284009.js"),
   Chunk751124 = require("./751124.js"),
   Chunk652215 = require("./652215.js");
 
-function V(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -51,14 +51,14 @@ function V(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -89,23 +89,23 @@ function K(e) {
     reason: n
   } = e;
   if (!(0, R.K)()) return;
-  let r = j.j(),
+  let r = M.j(),
     i = k.L7(),
     a = m.A.getState(),
-    s = i.length > 0 ? "".concat(n, " + ").concat(i) : n,
-    o = r ? "paused" : "request_state";
+    o = i.length > 0 ? "".concat(n, " + ").concat(i) : n,
+    s = r ? "paused" : "request_state";
   v.default.track(G.HAw.GATEWAY_CONNECT_SKIPPED, {
     actually_skipped: null != t ? t : r,
     client_app_state: a,
-    connect_reason: s,
-    skip_context: o
+    connect_reason: o,
+    skip_context: s
   }), (0, R.a)() && setTimeout(() => {
     v.default.track(G.HAw.POST_GATEWAY_CONNECT_SKIPPED, {
       actually_skipped: null != t ? t : r,
       original_client_app_state: a,
       client_app_state: m.A.getState(),
-      skip_context: o,
-      original_connect_reason: s,
+      skip_context: s,
+      original_connect_reason: o,
       gateway_connect_reasons: k.L7()
     })
   }, 200)
@@ -117,8 +117,8 @@ function z(e) {
     newCallback: r,
     onOpen: i,
     onMessage: a,
-    onError: s,
-    onClose: o
+    onError: o,
+    onClose: s
   } = e;
   Y.enableNativeLogger(true);
   let l = window._ws,
@@ -130,19 +130,19 @@ function z(e) {
     if (t = l.ws, l.state.gateway !== n) Y.verbose("[FAST CONNECT] gatewayURL mismatch: ".concat(l.state.gateway, " !== ").concat(n)), t.close(1e3), t = null;
     else {
       var p;
-      let e = F({}, l.state);
-      null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? H(F({}, e), {
+      let e = V({}, l.state);
+      null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? H(V({}, e), {
         data: e.data.substring(0, 100)
-      }) : e)), Y.log("[FAST CONNECT] successfully took over websocket, state:", H(F({}, e), {
+      }) : e)), Y.log("[FAST CONNECT] successfully took over websocket, state:", H(V({}, e), {
         messages: null == (p = e.messages) ? true : p.length
       })), c = l.state.open, u = l.state.identify, d = l.state.messages, f = l.state.clientState
-    } null == t && ((t = (0, U.A)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(a), t.onopen = () => i(u, f), t.onmessage = a, t.onclose = o, t.onerror = s
+    } null == t && ((t = (0, U.A)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(a), t.onopen = () => i(u, f), t.onmessage = a, t.onclose = s, t.onerror = o
 }
 
 function q() {}
 let Z = 4,
-  X = 1001,
-  Q = "Stream end encountered",
+  Q = 1001,
+  X = "Stream end encountered",
   J = 4004,
   $ = 30 * Chunk927813.A.Millis.SECOND,
   ee = 3 * Chunk927813.A.Millis.MINUTE,
@@ -181,7 +181,7 @@ class ea extends Chunk969091.A {
     Y.verbose("Setting connection state to ".concat(e)), this.connectionState_ = e
   }
   addAnalytics(e) {
-    this.analytics = F({}, this.analytics, e)
+    this.analytics = V({}, this.analytics, e)
   }
   setResumeUrl(e) {
     null != e && e.endsWith("/") && (e = e.substring(0, e.length - 1)), null !== e && Y.verbose("Updating resume url to ".concat(e)), this.resumeUrl = e
@@ -194,7 +194,7 @@ class ea extends Chunk969091.A {
     e.active && (r.active = true, r.reasons = [...new Set([...r.reasons, ...e.reasons])].sort(), n && this.isSessionEstablished() && this._sendHeartbeat()), this.heartbeatQOSState.upcomingState = e
   }
   handleUpdateTimeSpentSessionId(e, t, n) {
-    this.connectionState_ === C.A.SESSION_ESTABLISHED && (this.send(L.p.UPDATE_TIME_SPENT_SESSION_ID, {
+    this.connectionState_ === C.A.SESSION_ESTABLISHED && (this.send(x.p.UPDATE_TIME_SPENT_SESSION_ID, {
       initialization_timestamp: e,
       session_id: t,
       client_launch_id: n
@@ -202,7 +202,7 @@ class ea extends Chunk969091.A {
   }
   _connect(e) {
     if (!this.willReconnect()) return void Y.verbose("Skipping _connect because willReconnect is false");
-    let t = j.j();
+    let t = M.j();
     if ((t || !k.DQ()) && (Y.info("Skipping _connect because socket is paused"), K({
         reason: e
       }), t)) return;
@@ -211,20 +211,20 @@ class ea extends Chunk969091.A {
       r = W.getName(),
       i = this._getGatewayUrl(),
       a = window.GLOBAL_ENV.API_VERSION;
-    s.A.mark("\uD83C\uDF10", "Socket._connect"), Y.info("[CONNECT] ".concat(i, ", ") + "encoding: ".concat(r, ", ") + "version: ".concat(a, ", ") + "compression: ".concat(null != n ? n : "none")), null !== this.webSocket && (Y.error("_connect called with already existing websocket"), this._cleanup(e => e.close(4e3))), this.connectionStartTime = Date.now(), this.helloTimeout = setTimeout(() => {
+    o.A.mark("\uD83C\uDF10", "Socket._connect"), Y.info("[CONNECT] ".concat(i, ", ") + "encoding: ".concat(r, ", ") + "version: ".concat(a, ", ") + "compression: ".concat(null != n ? n : "none")), null !== this.webSocket && (Y.error("_connect called with already existing websocket"), this._cleanup(e => e.close(4e3))), this.connectionStartTime = Date.now(), this.helloTimeout = setTimeout(() => {
       let e = Date.now() - this.connectionStartTime;
       this._handleClose(false, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time.")), this.setResumeUrl(null)
     }, $);
-    let o = new URL(i);
-    o.searchParams.append("encoding", r), o.searchParams.append("v", a.toString()), null != n && o.searchParams.append("compress", n), z({
-      gatewayURL: o.toString(),
+    let s = new URL(i);
+    s.searchParams.append("encoding", r), s.searchParams.append("v", a.toString()), null != n && s.searchParams.append("compress", n), z({
+      gatewayURL: s.toString(),
       newCallback: e => {
         this.webSocket = e, this.compressionHandler.bindWebSocket(e)
       },
       onOpen: e => {
-        s.A.mark("\uD83C\uDF10", "GatewaySocket.onOpen ".concat(e));
+        o.A.mark("\uD83C\uDF10", "GatewaySocket.onOpen ".concat(e));
         let t = Date.now() - this.connectionStartTime;
-        Y.info("[CONNECTED] ".concat(o.toString(), " in ").concat(t, " ms")), this.isFastConnect = e, e ? this._doFastConnectIdentify() : this._doResumeOrIdentify()
+        Y.info("[CONNECTED] ".concat(s.toString(), " in ").concat(t, " ms")), this.isFastConnect = e, e ? this._doFastConnectIdentify() : this._doResumeOrIdentify()
       },
       onMessage: en(this.compressionHandler, this._handleClose.bind(this), (e, t) => {
         let n = Date.now(),
@@ -232,31 +232,31 @@ class ea extends Chunk969091.A {
             op: r,
             s: i,
             t: a,
-            d: o
+            d: s
           } = W.unpack(e);
-        if (r !== L.p.DISPATCH && s.A.mark("\uD83C\uDF10", "GatewaySocket.onMessage ".concat(r, " ").concat(L.p[r])), O.default.isLoggingGatewayEvents) {
+        if (r !== x.p.DISPATCH && o.A.mark("\uD83C\uDF10", "GatewaySocket.onMessage ".concat(r, " ").concat(x.p[r])), O.default.isLoggingGatewayEvents) {
           let e = [r];
-          r === L.p.DISPATCH && e.push(a), e.push(o), Y.verboseDangerously("<~", ...e)
+          r === x.p.DISPATCH && e.push(a), e.push(s), Y.verboseDangerously("<~", ...e)
         }
         let l = Date.now() - n;
-        switch ("READY" === a ? b.A.parseReady.set(n, l) : "READY_SUPPLEMENTAL" === a ? b.A.parseReadySupplemental.set(n, l) : l > 10 && s.A.mark("\uD83C\uDF10", "Parse " + a, l), null != i && (this.seq = i), r) {
-          case L.p.HELLO:
-            this._clearHelloTimeout(), this._handleHello(o);
+        switch ("READY" === a ? b.A.parseReady.set(n, l) : "READY_SUPPLEMENTAL" === a ? b.A.parseReadySupplemental.set(n, l) : l > 10 && o.A.mark("\uD83C\uDF10", "Parse " + a, l), null != i && (this.seq = i), r) {
+          case x.p.HELLO:
+            this._clearHelloTimeout(), this._handleHello(s);
             break;
-          case L.p.RECONNECT:
+          case x.p.RECONNECT:
             this._handleReconnect();
             break;
-          case L.p.INVALID_SESSION:
-            this._handleInvalidSession(o);
+          case x.p.INVALID_SESSION:
+            this._handleInvalidSession(s);
             break;
-          case L.p.HEARTBEAT:
+          case x.p.HEARTBEAT:
             this._handleHeartbeatReceive();
             break;
-          case L.p.HEARTBEAT_ACK:
-            this._handleHeartbeatAck(o);
+          case x.p.HEARTBEAT_ACK:
+            this._handleHeartbeatAck(s);
             break;
-          case L.p.DISPATCH:
-            this._handleDispatch(o, a, "READY" === a ? {
+          case x.p.DISPATCH:
+            this._handleDispatch(s, a, "READY" === a ? {
               compressed_byte_size: t,
               uncompressed_byte_size: er(e),
               compression_algorithm: this.compressionHandler.getAlgorithm(),
@@ -299,7 +299,7 @@ class ea extends Chunk969091.A {
       let t = e.session_id;
       this.sessionId = t;
       let n = (0, D.m6)(e);
-      s.A.setServerTrace(n), Y.info("[READY] took ".concat(r, "ms, as ").concat(t)), Y.verbose("".concat(n)), this.connectionState = C.A.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.setResumeUrl(e.resume_gateway_url)
+      o.A.setServerTrace(n), Y.info("[READY] took ".concat(r, "ms, as ").concat(t)), Y.verbose("".concat(n)), this.connectionState = C.A.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.setResumeUrl(e.resume_gateway_url)
     } else "READY_SUPPLEMENTAL" === t ? (Y.info("[READY_SUPPLEMENTAL] took ".concat(r, "ms")), this.connectionState = C.A.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0) : "RESUMED" === t && (Y.verbose((0, D.m6)(e)), this.connectionState = C.A.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0);
     this.dispatcher.receiveDispatch(e, t, n)
   }
@@ -336,7 +336,7 @@ class ea extends Chunk969091.A {
     }
   }
   _tryDetectInvalidIOSToken(e, t, n) {
-    (0, S.isIOS)() && null != this.token && e === X && t === Q && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && d.Bo.get({
+    (0, S.isIOS)() && null != this.token && e === Q && t === X && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && d.Bo.get({
       url: G.Rsh.ME,
       headers: {
         authorization: this.token
@@ -394,7 +394,7 @@ class ea extends Chunk969091.A {
   }
   _doResume() {
     var e;
-    this.connectionState = C.A.RESUMING, this.dispatcher.resumeAnalytics = (0, D.Qo)(Date.now() - this.connectionStartTime), Y.info("[RESUME] resuming session ".concat(null != (e = this.sessionId) ? e : "", ", seq: ").concat(this.seq)), this.send(L.p.RESUME, {
+    this.connectionState = C.A.RESUMING, this.dispatcher.resumeAnalytics = (0, D.Qo)(Date.now() - this.connectionStartTime), Y.info("[RESUME] resuming session ".concat(null != (e = this.sessionId) ? e : "", ", seq: ").concat(this.seq)), this.send(x.p.RESUME, {
       token: this.token,
       session_id: this.sessionId,
       seq: this.seq
@@ -407,7 +407,7 @@ class ea extends Chunk969091.A {
     this.connectionState = C.A.IDENTIFYING;
     let t = Date.now();
     this.identifyStartTime = t;
-    let [n, r, i] = await Promise.all([(0, g.O)() ? p.A.getCommittedVersions() : {}, (0, g.O)() ? h.A.getCommittedVersions() : {}, !!(0, g.O)() && _.A.canUseGuildVersions()]), s = i ? {
+    let [n, r, i] = await Promise.all([(0, g.O)() ? p.A.getCommittedVersions() : {}, (0, g.O)() ? h.A.getCommittedVersions() : {}, !!(0, g.O)() && _.A.canUseGuildVersions()]), o = i ? {
       guild_versions: n,
       highest_last_message_id: r.highest_last_message_id,
       read_state_version: r.read_state_version,
@@ -421,23 +421,23 @@ class ea extends Chunk969091.A {
     };
     if (this.connectionState !== C.A.IDENTIFYING || this.identifyStartTime !== t) return void Y.warn("Skipping identify because connectionState or identifyStartTime has changed");
     let {
-      token: o,
+      token: s,
       properties: l = {},
       presence: c
     } = e;
-    this.token = o, Y.verbose("[IDENTIFY]");
+    this.token = s, Y.verbose("[IDENTIFY]");
     let u = {
-        token: o,
+        token: s,
         capabilities: (0, N.O)({
-          useChannelObfuscation: (0, M.RK)("GatewaySocket")
+          useChannelObfuscation: (0, j.RK)("GatewaySocket")
         }),
         properties: l,
         presence: c,
         compress: this.compressionHandler.usesLegacyCompression(),
-        client_state: s
+        client_state: o
       },
       d = JSON.stringify(u);
-    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = a.deflate(d).length, this.identifyCount += 1, this.send(L.p.IDENTIFY, u, false), v.default.track(G.HAw.SESSION_START_CLIENT, {})
+    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = a.deflate(d).length, this.identifyCount += 1, this.send(x.p.IDENTIFY, u, false), v.default.track(G.HAw.SESSION_START_CLIENT, {})
   }
   _doFastConnectIdentify() {
     this.seq = 0, this.sessionId = null;
@@ -462,7 +462,7 @@ class ea extends Chunk969091.A {
   }
   _sendHeartbeat() {
     let e = this._consumeQOSPayload();
-    this.send(L.p.QOS_HEARTBEAT, {
+    this.send(x.p.QOS_HEARTBEAT, {
       seq: this.seq,
       qos: e
     }, false), this.lastHeartbeatTime = Date.now()
@@ -514,7 +514,7 @@ class ea extends Chunk969091.A {
   }
   resetSocketOnDispatchError(e) {
     let t = null != e.error.message && e.error.message.indexOf("Guild data was missing from store") >= 0;
-    this.resetSocketOnError(H(F({}, e), {
+    this.resetSocketOnError(H(V({}, e), {
       sentry: !t,
       clearCache: t
     }))
@@ -555,10 +555,10 @@ class ea extends Chunk969091.A {
     Y.verbose("Connection has reset backoff".concat(null != e && "" !== e ? " for reason: " + e : "")), this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.nextReconnectIsImmediate = true, this.willReconnect() ? this._connect(e) : t && this.connectionState !== C.A.SESSION_ESTABLISHED && this._handleClose(true, 0, e)
   }
   constructor() {
-    super(), V(this, "gatewayBackoff", true), V(this, "handleIdentify", true), V(this, "dispatchExceptionBackoff", new o.A(1e3, et)), V(this, "dispatchSuccessTimer", 0), V(this, "connectionState_", true), V(this, "webSocket", true), V(this, "seq", true), V(this, "sessionId", true), V(this, "token", true), V(this, "initialHeartbeatTimeout", true), V(this, "expeditedHeartbeatTimeout", true), V(this, "heartbeatInterval", true), V(this, "helloTimeout", true), V(this, "heartbeater", true), V(this, "lastHeartbeatTime", true), V(this, "lastHeartbeatAckTime", true), V(this, "heartbeatAck", true), V(this, "connectionStartTime", true), V(this, "identifyStartTime", true), V(this, "nextReconnectIsImmediate", true), V(this, "compressionHandler", true), V(this, "hasConnectedOnce", true), V(this, "isFastConnect", true), V(this, "didForceClearGuildHashes", false), V(this, "identifyUncompressedByteSize", 0), V(this, "identifyCompressedByteSize", 0), V(this, "analytics", {}), V(this, "identifyCount", 0), V(this, "resumeUrl", null), V(this, "iosGoingAwayEventCount", 0), V(this, "dispatcher", true), V(this, "heartbeatQOSState", {
+    super(), F(this, "gatewayBackoff", true), F(this, "handleIdentify", true), F(this, "dispatchExceptionBackoff", new s.A(1e3, et)), F(this, "dispatchSuccessTimer", 0), F(this, "connectionState_", true), F(this, "webSocket", true), F(this, "seq", true), F(this, "sessionId", true), F(this, "token", true), F(this, "initialHeartbeatTimeout", true), F(this, "expeditedHeartbeatTimeout", true), F(this, "heartbeatInterval", true), F(this, "helloTimeout", true), F(this, "heartbeater", true), F(this, "lastHeartbeatTime", true), F(this, "lastHeartbeatAckTime", true), F(this, "heartbeatAck", true), F(this, "connectionStartTime", true), F(this, "identifyStartTime", true), F(this, "nextReconnectIsImmediate", true), F(this, "compressionHandler", true), F(this, "hasConnectedOnce", true), F(this, "isFastConnect", true), F(this, "didForceClearGuildHashes", false), F(this, "identifyUncompressedByteSize", 0), F(this, "identifyCompressedByteSize", 0), F(this, "analytics", {}), F(this, "identifyCount", 0), F(this, "resumeUrl", null), F(this, "iosGoingAwayEventCount", 0), F(this, "dispatcher", true), F(this, "heartbeatQOSState", {
       currentPayload: null,
       upcomingState: null
-    }), V(this, "send", (e, t, n) => {
+    }), F(this, "send", (e, t, n) => {
       O.default.isLoggingGatewayEvents && Y.verboseDangerously("~>", e, t);
       let r = W.pack({
         op: e,
@@ -567,6 +567,6 @@ class ea extends Chunk969091.A {
       if (!n || this.isSessionEstablished()) try {
         null != this.webSocket && this.webSocket.send(r)
       } catch (e) {} else Y.warn("Attempted to send while not being in a connected state opcode: ".concat(e))
-    }), this.dispatcher = new x.A(this), this.gatewayBackoff = new o.A(1e3, 6e4), this.connectionState_ = C.A.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = true, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = false, this.compressionHandler = (0, w.Z)(W), this.hasConnectedOnce = false, this.isFastConnect = false, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
+    }), this.dispatcher = new L.A(this), this.gatewayBackoff = new s.A(1e3, 6e4), this.connectionState_ = C.A.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = true, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = false, this.compressionHandler = (0, w.Z)(W), this.hasConnectedOnce = false, this.isFastConnect = false, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
   }
 }

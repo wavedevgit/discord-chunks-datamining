@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 602902, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 602902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => A
 }), require("./321073.js"), require("./896048.js");
@@ -21,57 +20,18 @@ var Chunk192308 = require("./192308.js"),
   Chunk399925 = require("./399925.js"),
   Chunk696016 = require("./696016.js"),
   Chunk652215 = require("./652215.js");
-
-function y(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function b(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      y(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function O(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
 async function A(e, t) {
   let {
-    channelId: y,
-    analyticsLocations: O,
-    messageReference: A
-  } = t, I = l.A.getChannel(y);
-  if (null != I) {
-    if (null != A) {
-      let e = u.A.getMessage(A.channel_id, A.message_id);
-      null != e && (0, o.Yf)({
+    channelId: A,
+    analyticsLocations: y,
+    messageReference: v
+  } = t, x = o.A.getChannel(A);
+  if (null != x) {
+    if (null != v) {
+      let e = u.A.getMessage(v.channel_id, v.message_id);
+      null != e && (0, s.Yf)({
         message: e,
-        channel: I,
+        channel: x,
         shouldMention: false,
         showMentionToggle: false
       })
@@ -80,48 +40,77 @@ async function A(e, t) {
       let t = [],
         n = [];
       for (let r of e) {
-        var S;
-        let e = await (0, m.VO)(r),
-          i = null != (S = r.name) ? S : (0, g.cM)(f.default.extractTimestamp(r.id)),
-          a = (0, h.A)(i);
-        if (r.type === _.nQ.CLIP || r.type === _.nQ.VOICE_CLIP) {
-          let i = "".concat("" !== a ? a : "clip", ".mp4");
+        var O;
+        let e = await (0, h.VO)(r),
+          i = null != (O = r.name) ? O : (0, _.cM)(p.default.extractTimestamp(r.id)),
+          l = (0, g.A)(i);
+        if (r.type === f.nQ.CLIP || r.type === f.nQ.VOICE_CLIP) {
+          let i = "".concat("" !== l ? l : "clip", ".mp4");
           t.push(new File([e], i, {
             type: "video/mp4"
           })), n.push({
             clip: r
           })
-        } else if (r.type === _.nQ.SCREENSHOT) {
-          let r = "".concat("" !== a ? a : "screenshot", ".jpeg");
+        } else if (r.type === f.nQ.SCREENSHOT) {
+          let r = "".concat("" !== l ? l : "screenshot", ".jpeg");
           t.push(new File([e], r, {
             type: "image/jpeg"
           })), n.push({})
         }
-        d.default.track(E.HAw.CLIP_SHARED, {
-          location_stack: O,
-          guild_id: I.guild_id,
-          channel_id: I.id,
-          channel_type: I.type,
+        d.default.track(b.HAw.CLIP_SHARED, {
+          location_stack: y,
+          guild_id: x.guild_id,
+          channel_id: x.id,
+          channel_type: x.type,
           application_id: r.applicationId,
           clip_id: r.id
         })
-      }(0, p.R)(t, I, c.C.ChannelMessage, {
+      }(0, m.R)(t, x, c.C.ChannelMessage, {
         filesMetadata: n,
         origin: "unknown:clip_share"
       }), i.closeAllModals()
     } catch (e) {
-      throw g.nx.error(e), e
+      throw _.nx.error(e), e
     }
-  } else(0, a.mMO)(async () => {
+  } else(0, l.mMO)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("96758"), n.e("43622"), n.e("87102")]).then(n.bind(n, 243258));
-    return n => (0, r.jsx)(t, v(b({}, n), {
-      clips: e,
-      analyticsLocations: O
-    }))
+    } = await Promise.all([n.e("96758"), n.e("43622"), n.e("75838")]).then(n.bind(n, 243258));
+    return n => {
+      var i, l;
+      return (0, r.jsx)(t, (i = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({}, n), l = l = {
+        clips: e,
+        analyticsLocations: y
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+      }), i))
+    }
   }, {
     stackingBehavior: "stack",
-    modalKey: s.aU
+    modalKey: a.aU
   })
 }

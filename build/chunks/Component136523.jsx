@@ -33,7 +33,7 @@ function I(e) {
     transitionState: n,
     sourceAnalyticsLocations: I,
     onClose: S
-  } = e, T = (0, s.bG)([u.A], () => u.A.getChannelStatus(t)), C = (0, s.bG)([h.A], () => h.A.getMediaSessionId()), [N, w] = i.useState(null != T ? T : ""), [R, P] = i.useState(false), [D, x] = i.useState(null), L = (0, s.bG)([m.default], () => m.default.getCurrentUser()), j = N.length > A;
+  } = e, T = (0, o.bG)([u.A], () => u.A.getChannelStatus(t)), C = (0, o.bG)([h.A], () => h.A.getMediaSessionId()), [N, w] = i.useState(null != T ? T : ""), [R, P] = i.useState(false), [D, L] = i.useState(null), x = (0, o.bG)([m.default], () => m.default.getCurrentUser()), M = N.length > A;
   i.useEffect(() => {
     g.default.track(E.HAw.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -41,8 +41,8 @@ function I(e) {
       location_stack: I
     })
   }, [t.guild_id, I]);
-  let M = e => {
-      x(new o.LG(e, e.status).getAnyErrorMessage())
+  let j = e => {
+      L(new s.LG(e, e.status).getAnyErrorMessage())
     },
     k = e => {
       let {
@@ -51,8 +51,8 @@ function I(e) {
       if (null != n && n.length > 0) {
         let {
           errorMessage: e
-        } = c.A.validateMessage(n, L, t.id);
-        return x(e), P(false), {
+        } = c.A.validateMessage(n, x, t.id);
+        return L(e), P(false), {
           hasErrors: true
         }
       }
@@ -61,7 +61,7 @@ function I(e) {
       }
     },
     U = async e => {
-      N === T && S(), null == e || e.preventDefault(), x(null), P(true);
+      N === T && S(), null == e || e.preventDefault(), L(null), P(true);
       let n = N.length,
         r = N.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = _.Ay.parse(t, N),
@@ -78,15 +78,15 @@ function I(e) {
             raw_length: n,
             text_length: r,
             location_stack: I
-          }), S()) : M(e)
+          }), S()) : j(e)
         } catch (e) {
-          M(e)
+          j(e)
         }
         P(false)
       }
-    }, [G, V] = i.useState((0, f.x7)(N)), F = (e, t, n) => {
-      w(t), V(n)
-    }, B = async () => (j || R || await U(), Promise.resolve({
+    }, [G, F] = i.useState((0, f.x7)(N)), V = (e, t, n) => {
+      w(t), F(n)
+    }, B = async () => (M || R || await U(), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
     })), H = (0, r.jsx)(a.D0$, {
@@ -101,7 +101,7 @@ function I(e) {
         }),
         focused: true,
         channel: t,
-        onChange: F,
+        onChange: V,
         onSubmit: B,
         type: d.oU.VOICE_CHANNEL_STATUS,
         canMentionRoles: false,
@@ -129,7 +129,7 @@ function I(e) {
     }, {
       variant: "primary",
       loading: R,
-      disabled: j,
+      disabled: M,
       text: y.intl.string(y.t.XqK2I2),
       onClick: U
     }],

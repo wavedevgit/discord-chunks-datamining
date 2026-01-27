@@ -18,9 +18,9 @@ function d(e) {
     guild: t,
     message: n
   } = e, d = i.useRef(null);
-  return (0, o.HU)(t.id, n.author.id) ? (0, r.jsx)(s.YNO, {
+  return (0, s.HU)(t.id, n.author.id) ? (0, r.jsx)(o.YNO, {
     targetElementRef: d,
-    animation: s.YNO.Animation.TRANSLATE,
+    animation: o.YNO.Animation.TRANSLATE,
     align: "center",
     autoInvert: true,
     nudgeAlignIntoViewport: true,
@@ -39,7 +39,7 @@ function d(e) {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(s.DUT, {
+      return (0, r.jsx)(o.DUT, {
         onClick: t,
         tag: "span",
         innerRef: d,
@@ -47,7 +47,7 @@ function d(e) {
           text: c.intl.string(c.t["v/OYd2"]),
           children: (0, r.jsx)("div", {
             className: u.C,
-            children: (0, r.jsx)(s.NVf, {
+            children: (0, r.jsx)(o.NVf, {
               size: "custom",
               color: "currentColor",
               width: 20,

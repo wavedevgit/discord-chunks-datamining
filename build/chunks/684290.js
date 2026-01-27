@@ -1,24 +1,22 @@
-/** Chunk was on web.js **/
-/** chunk id: 684290, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 40396 **/
+/** chunk id: 684290, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  A: () => o,
-  k: () => s
+  A: () => s,
+  k: () => i
 });
 var Chunk567243 = require("./567243.js"),
   Chunk652215 = require("./652215.js");
-let a = "music.apple.com";
 
-function s(e) {
-  return e === a
+function i(e) {
+  return "music.apple.com" === e
 }
 
-function o(e) {
-  var t;
-  if (null == e.url || (null == (t = e.provider) ? true : t.name) !== "Apple Music" || e.type !== i.Auw.ARTICLE && e.type !== i.Auw.LINK) returnfalse;
+function s(e) {
+  var l;
+  if (null == e.url || (null == (l = e.provider) ? true : l.name) !== "Apple Music" || e.type !== n.Auw.ARTICLE && e.type !== n.Auw.LINK) returnfalse;
   try {
-    let t = r.parse(e.url, true).host;
-    return s(t)
+    let l = r.parse(e.url, true).host;
+    return i(l)
   } catch (e) {
     returnfalse
   }

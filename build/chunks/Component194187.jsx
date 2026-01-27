@@ -26,7 +26,7 @@ function p(e) {
     hideTooltip: h = false,
     canTruncate: m = true,
     showChannelName: g = false
-  } = e, E = (0, s.S31)(s.clD.ONLINE), y = (0, o.Ay)(t), b = t.isDM() || t.isGroupDM(), {
+  } = e, E = (0, o.S31)(o.clD.ONLINE), y = (0, s.Ay)(t), b = t.isDM() || t.isGroupDM(), {
     enableTopNavButton: O
   } = (0, l.tR)({
     location: "VoiceActivityStatusWithCombinedTooltip"

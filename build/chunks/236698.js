@@ -42,7 +42,7 @@ function f(e, t, n) {
 }
 
 function p(e) {
-  return !!s.Ay.shouldAllowSurveyAction() && r.M[e] >= 100 * Math.random()
+  return !!o.Ay.shouldAllowSurveyAction() && r.M[e] >= 100 * Math.random()
 }
 async function _(e, t) {
   if (!p(e)) return;
@@ -77,7 +77,7 @@ let h = {
         surveyDetails: t
       }), t
     } catch (e) {
-      return o.A.captureException(e), null
+      return s.A.captureException(e), null
     }
   },
   submitSurveyResponse: async function(e, t) {
@@ -97,7 +97,7 @@ let h = {
         })).body.responseId
       }
     } catch (e) {
-      return o.A.captureException(e), {
+      return s.A.captureException(e), {
         responseId: "null"
       }
     }

@@ -8,7 +8,7 @@ var Chunk643479 = require("./643479.js"),
   Chunk890167 = require("./890167.js"),
   Chunk105423 = require("./105423.js"),
   Chunk801765 = require("./801765.js");
-let o = "Exif IFD Pointer",
+let s = "Exif IFD Pointer",
   l = "GPS Info IFD Pointer",
   c = "Interoperability IFD Pointer",
   u = {
@@ -25,17 +25,17 @@ function d(e, t, n) {
 }
 
 function f(e, t, n, r) {
-  return (0, s.y)(e, a.eY, t, (0, s.x)(e, t, n), n, r)
+  return (0, o.y)(e, a.eY, t, (0, o.x)(e, t, n), n, r)
 }
 
 function p(e, t, n, i, l) {
-  return true !== e[o] ? (0, r.dP)(e, (0, s.y)(t, a.Ct, n, n + e[o].value, i, l)) : e
+  return true !== e[s] ? (0, r.dP)(e, (0, o.y)(t, a.Ct, n, n + e[s].value, i, l)) : e
 }
 
-function _(e, t, n, i, o) {
-  return true !== e[l] ? (0, r.dP)(e, (0, s.y)(t, a.eU, n, n + e[l].value, i, o)) : e
+function _(e, t, n, i, s) {
+  return true !== e[l] ? (0, r.dP)(e, (0, o.y)(t, a.eU, n, n + e[l].value, i, s)) : e
 }
 
-function h(e, t, n, i, o) {
-  return true !== e[c] ? (0, r.dP)(e, (0, s.y)(t, a.MJ, n, n + e[c].value, i, o)) : e
+function h(e, t, n, i, s) {
+  return true !== e[c] ? (0, r.dP)(e, (0, o.y)(t, a.MJ, n, n + e[c].value, i, s)) : e
 }

@@ -2,10 +2,10 @@
 /** chunk id: 587600, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C5: () => s,
+  C5: () => o,
   Sk: () => a,
   yX: () => i,
-  yg: () => o
+  yg: () => s
 }), require("./228524.js");
 var Chunk392107 = require("./392107.js");
 
@@ -29,7 +29,7 @@ function a(e) {
   return true !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), true !== e.pendingDisplayNameStyles && (t.displayNameStyles = e.pendingDisplayNameStyles), t
 }
 
-function s(e) {
+function o(e) {
   let t = {};
   if (true !== e.pendingAvatar) {
     let {
@@ -44,7 +44,7 @@ function s(e) {
   return true !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), true !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), true !== e.pendingDisplayNameStyles && (t.displayNameStyles = e.pendingDisplayNameStyles), t
 }
 
-function o(e) {
+function s(e) {
   let t = {};
   return true !== e.pendingPrimaryGuildId && (t.primaryGuildId = e.pendingPrimaryGuildId), t
 }

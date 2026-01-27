@@ -8,7 +8,7 @@ var Chunk626584 = require("./626584.js"),
   Chunk723176 = require("./723176.js"),
   Chunk194188 = require("./194188.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = new Chunk626584.A("KvCacheVersion");
+let s = new Chunk626584.A("KvCacheVersion");
 class l {
   async okAsync(e) {
     let t = await i.A.cache(e).get(a.WL);
@@ -30,7 +30,7 @@ class l {
     if (null == e) returnfalse;
     let t = await e.get(a.pE),
       n = null == t ? true : t.version;
-    return n === a.NI || (o.info("KVStore version mismatch: ".concat(n, " vs ").concat(a.NI)), false)
+    return n === a.NI || (s.info("KVStore version mismatch: ".concat(n, " vs ").concat(a.NI)), false)
   }
   handleClear() {
     this.hasSuccessfullyConnected = false
@@ -47,7 +47,7 @@ class l {
     this.hasSuccessfullyConnected = false
   }
   constructor() {
-    s(this, "hasSuccessfullyConnected", false), s(this, "actions", {
+    o(this, "hasSuccessfullyConnected", false), o(this, "actions", {
       BACKGROUND_SYNC: (e, t) => this.handleWrite(t),
       CONNECTION_OPEN: () => this.handleConnectionOpen(),
       WRITE_CACHES: (e, t) => this.handleWrite(t)

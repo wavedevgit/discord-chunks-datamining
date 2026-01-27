@@ -23,8 +23,8 @@ function l(e) {
     } = e, {
       renderModalProps: c,
       sharedCheckoutContext: u
-    } = (0, s.jP)();
-    if (a()(null != l, "Step config for ".concat(t, " is not set")), (0, o.O)(l)) {
+    } = (0, o.jP)();
+    if (a()(null != l, "Step config for ".concat(t, " is not set")), (0, s.O)(l)) {
       let e = l.StepController;
       return (0, r.jsx)(e, {
         renderStep: n,

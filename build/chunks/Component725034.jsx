@@ -1,7 +1,7 @@
-/** Chunk was on 52343 **/
-/** chunk id: 725034, original params: t,i,l (module,exports,require) **/
+/** Chunk was on 74724 **/
+/** chunk id: 725034, original params: t,l,n (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => M
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,43 +21,43 @@ var Chunk627968 = require("./627968.js"),
   Chunk340837 = require("./340837.js"),
   Chunk985018 = require("./985018.jsx");
 
-function k(t) {
-  var i;
+function M(t) {
+  var l;
   let {
-    onClose: l,
-    transitionState: k,
-    guildId: p
-  } = t, M = (0, a.bG)([A.default], () => A.default.getId()), T = (0, a.bG)([d.Ay], () => d.Ay.getMember(p, M), [p, M]), b = (0, a.bG)([_.A], () => _.A.getGuild(p), [p]), C = null != (i = null == b ? true : b.name) ? i : "", D = (0, f.wj)(T), {
-    analyticsLocations: I
-  } = (0, s.Ay)(u.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [P, R] = (0, g.j8)({
-    guildId: p,
-    analyticsLocations: I
-  }), S = D.has(O.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) ? h.intl.formatToPlainString(h.t.Oh20JS, {
-    guildName: C
-  }) : h.intl.formatToPlainString(h.t["+VAZ/Z"], {
-    guildName: C
+    onClose: n,
+    transitionState: M,
+    guildId: R
+  } = t, T = (0, r.bG)([o.default], () => o.default.getId()), U = (0, r.bG)([f.Ay], () => f.Ay.getMember(R, T), [R, T]), b = (0, r.bG)([s.A], () => s.A.getGuild(R), [R]), D = null != (l = null == b ? true : b.name) ? l : "", G = (0, _.wj)(U), {
+    analyticsLocations: C
+  } = (0, d.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [h, k] = (0, g.j8)({
+    guildId: R,
+    analyticsLocations: C
+  }), P = G.has(I.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) ? O.intl.formatToPlainString(O.t.Oh20JS, {
+    guildName: D
+  }) : O.intl.formatToPlainString(O.t["+VAZ/Z"], {
+    guildName: D
   });
-  R || (S = h.intl.formatToPlainString(h.t.tcrtME, {
-    guildName: C
+  k || (P = O.intl.formatToPlainString(O.t.tcrtME, {
+    guildName: D
   }));
-  let U = R ? h.intl.string(h.t.Viksoo) : h.intl.string(h.t.WikgZ1);
-  return ((0, o.Ay)(() => {
-    c.default.track(N.HAw.OPEN_MODAL, {
-      type: E.oN,
-      guild_id: p,
-      other_user_id: M
+  let m = k ? O.intl.string(O.t.Viksoo) : O.intl.string(O.t.WikgZ1);
+  return ((0, A.Ay)(() => {
+    E.default.track(N.HAw.OPEN_MODAL, {
+      type: c.oN,
+      guild_id: R,
+      other_user_id: T
     })
   }), e.useEffect(() => {
-    if (null == b) return void l()
-  }, [b, l]), null == b) ? null : (0, n.jsx)(r.Modal, {
-    transitionState: k,
-    onClose: l,
-    title: h.intl.string(h.t["P+6K9C"]),
-    subtitle: S,
+    if (null == b) return void n()
+  }, [b, n]), null == b) ? null : (0, i.jsx)(u.Modal, {
+    transitionState: M,
+    onClose: n,
+    title: O.intl.string(O.t["P+6K9C"]),
+    subtitle: P,
     actions: [{
-      text: U,
+      text: m,
       onClick: () => {
-        P(), l()
+        h(), n()
       }
     }]
   })

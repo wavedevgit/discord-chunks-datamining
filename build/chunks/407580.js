@@ -65,8 +65,8 @@ function y(e) {
   if (Math.random() > .1) return;
   let n = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     r = null == e.gatewaySeenTimestamp ? null : e.gatewaySeenTimestamp - e.initialSendTimestamp,
-    i = (0, o.O)();
-  d.default.track(f.HAw.SEND_MESSAGE_ROUNDTRIP, _(m(_({}, (0, s.A)()), {
+    i = (0, s.O)();
+  d.default.track(f.HAw.SEND_MESSAGE_ROUNDTRIP, _(m(_({}, (0, o.A)()), {
     api_latency_ms: n,
     gateway_latency_ms: r,
     channel_id: t.id,
@@ -93,14 +93,14 @@ class O extends Chunk311907.Ay.Store {
   }
   recordMessageSendAttempt(e, t) {
     var n, r, i, a;
-    let s = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
-      o = (null != (n = null == (i = s.attachments) ? true : i.length) ? n : 0) + (null != (r = null == (a = s.attachmentsToUpload) ? true : a.length) ? r : 0),
+    let o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
+      s = (null != (n = null == (i = o.attachments) ? true : i.length) ? n : 0) + (null != (r = null == (a = o.attachmentsToUpload) ? true : a.length) ? r : 0),
       l = {
         initialSendTimestamp: Date.now(),
         apiResponseTimestamp: null,
         gatewaySeenTimestamp: null,
         channelId: e,
-        attachmentCount: o
+        attachmentCount: s
       };
     this.pendingMessages.set(t, l), setTimeout(() => {
       let e = this.pendingMessages.get(t);

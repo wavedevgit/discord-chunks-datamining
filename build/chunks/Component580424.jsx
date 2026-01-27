@@ -9,7 +9,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   c = require.n(Chunk735438),
   Chunk837381 = require("./837381.jsx"),
@@ -39,7 +39,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk395410 = require("./395410.js");
 
-function M(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,7 +55,7 @@ function k(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -78,19 +78,19 @@ function G(e, t) {
   }), e
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = F(e, t), Object.getOwnPropertySymbols)
+  if (a = V(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -120,11 +120,11 @@ class W extends Chunk64700.PureComponent {
       props: {
         className: r,
         index: a,
-        selected: s
+        selected: o
       }
     } = this, l = this.isSelectable();
     return (0, i.jsx)(f.DUT, G(k({}, e), {
-      className: o()(j.vk, r, n),
+      className: s()(M.vk, r, n),
       id: null != (t = B(a)) ? t : true,
       onClick: l ? this.handleClick : true,
       onMouseMove: l ? () => {
@@ -137,9 +137,9 @@ class W extends Chunk64700.PureComponent {
       }) : true,
       role: "option",
       "aria-disabled": !l,
-      "aria-selected": l && s,
+      "aria-selected": l && o,
       children: (0, i.jsx)("div", {
-        className: j.E3,
+        className: M.E3,
         children: this.renderContent()
       })
     }))
@@ -154,14 +154,14 @@ class W extends Chunk64700.PureComponent {
     }) : this.renderClickable()
   }
   constructor(e) {
-    super(e), M(this, "selectable", true), M(this, "layoutClass", j.rT), M(this, "handleMouseEnter", () => {
+    super(e), j(this, "selectable", true), j(this, "layoutClass", M.rT), j(this, "handleMouseEnter", () => {
       let {
         onHover: e,
         index: t,
         selected: n
       } = this.props;
       null == e || n || "number" != typeof t || e(t)
-    }), M(this, "handleClick", e => {
+    }), j(this, "handleClick", e => {
       let {
         onClick: t,
         index: n
@@ -196,13 +196,13 @@ class K extends W {
 function z(e) {
   let t = a.useMemo(() => c().random(60, 120), []);
   return (0, i.jsx)("div", {
-    className: j.E3,
+    className: M.E3,
     "aria-busy": true,
     children: (0, i.jsx)(P.Mr, {
       children: (0, i.jsx)(P.oC, {
         children: (0, i.jsx)(P.dB, {
           children: (0, i.jsx)("div", {
-            className: j.M,
+            className: M.M,
             style: {
               width: t
             }
@@ -218,12 +218,12 @@ function q(e) {
     title: t,
     className: n,
     children: r
-  } = e, s = a.useContext(Y);
+  } = e, o = a.useContext(Y);
   return (0, i.jsx)("div", {
-    className: j.E3,
+    className: M.E3,
     children: (0, i.jsxs)(f.Heading, {
-      id: H(s.id),
-      className: o()(j.eu, n),
+      id: H(o.id),
+      className: s()(M.eu, n),
       variant: "heading-deprecated-12/semibold",
       children: [t, r]
     })
@@ -235,45 +235,11 @@ class Z extends W {
       className: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: o()(e, j.yF)
+      className: s()(e, M.yF)
     })
   }
   constructor(...e) {
-    super(...e), M(this, "layoutClass", j.fF), M(this, "selectable", false)
-  }
-}
-class X extends W {
-  renderContent() {
-    var e;
-    let {
-      user: t,
-      nick: n,
-      status: r,
-      hidePersonalInformation: a,
-      guildId: s
-    } = this.props, o = null == s ? C.A.getNickname(t.id) : null;
-    return (0, i.jsxs)(P.Mr, {
-      children: [(0, i.jsx)(P.Ch, {
-        children: (0, i.jsx)(f.euF, {
-          size: f._3J.SIZE_24,
-          src: t.getAvatarURL(s, 24),
-          "aria-hidden": true,
-          status: r
-        })
-      }), (0, i.jsx)(P.oC, {
-        children: (0, i.jsx)(P.dB, {
-          children: null != (e = null != n ? n : o) ? e : R.Ay.getName(t)
-        })
-      }), (0, i.jsxs)(P.Aq, {
-        children: [R.Ay.getUserTag(t, {
-          mode: "username",
-          identifiable: a ? "never" : "always"
-        }), a || t.hasUniqueUsername() ? null : (0, i.jsxs)("span", {
-          className: j.T,
-          children: ["#", t.discriminator]
-        })]
-      })]
-    })
+    super(...e), j(this, "layoutClass", M.fF), j(this, "selectable", false)
   }
 }
 class Q extends W {
@@ -282,16 +248,50 @@ class Q extends W {
     let {
       user: t,
       nick: n,
+      status: r,
+      hidePersonalInformation: a,
+      guildId: o
+    } = this.props, s = null == o ? C.A.getNickname(t.id) : null;
+    return (0, i.jsxs)(P.Mr, {
+      children: [(0, i.jsx)(P.Ch, {
+        children: (0, i.jsx)(f.euF, {
+          size: f._3J.SIZE_24,
+          src: t.getAvatarURL(o, 24),
+          "aria-hidden": true,
+          status: r
+        })
+      }), (0, i.jsx)(P.oC, {
+        children: (0, i.jsx)(P.dB, {
+          children: null != (e = null != n ? n : s) ? e : R.Ay.getName(t)
+        })
+      }), (0, i.jsxs)(P.Aq, {
+        children: [R.Ay.getUserTag(t, {
+          mode: "username",
+          identifiable: a ? "never" : "always"
+        }), a || t.hasUniqueUsername() ? null : (0, i.jsxs)("span", {
+          className: M.T,
+          children: ["#", t.discriminator]
+        })]
+      })]
+    })
+  }
+}
+class X extends W {
+  renderContent() {
+    var e;
+    let {
+      user: t,
+      nick: n,
       comparator: r,
       status: a,
-      hidePersonalInformation: s,
+      hidePersonalInformation: o,
       guildId: l,
       selected: c,
       layout: u = "horizontal"
     } = this.props, d = null == l ? C.A.getNickname(t.id) : null, p = null != (e = null != n ? n : d) ? e : R.Ay.getName(t);
     return (0, i.jsxs)(P.Mr, {
-      className: o()({
-        [j.DH]: "vertical-suggestion" === u
+      className: s()({
+        [M.DH]: "vertical-suggestion" === u
       }),
       children: [(0, i.jsx)(P.Ch, {
         children: (0, i.jsx)(f.euF, {
@@ -301,13 +301,13 @@ class Q extends W {
           status: a
         })
       }), (0, i.jsxs)("div", {
-        className: j.H5,
-        "aria-label": L.intl.formatToPlainString(L.t["9v/R+j"], {
+        className: M.H5,
+        "aria-label": x.intl.formatToPlainString(x.t["9v/R+j"], {
           name: p
         }),
         children: [(0, i.jsx)(P.oC, {
           children: (0, i.jsx)(f.Text, {
-            className: j.hf,
+            className: M.hf,
             color: "interactive-text-active",
             variant: "text-sm/medium",
             children: p
@@ -316,15 +316,15 @@ class Q extends W {
           children: null == r || r === p.toLocaleLowerCase() || r === t.username.toLocaleLowerCase() ? (0, i.jsxs)(i.Fragment, {
             children: [R.Ay.getUserTag(t, {
               mode: "username",
-              identifiable: s ? "never" : "always"
-            }), s || t.hasUniqueUsername() ? null : (0, i.jsxs)("span", {
-              className: j.T,
+              identifiable: o ? "never" : "always"
+            }), o || t.hasUniqueUsername() ? null : (0, i.jsxs)("span", {
+              className: M.T,
               children: ["#", t.discriminator]
             })]
           }) : r
         })]
       }), (0, i.jsx)("div", {
-        className: j.ti,
+        className: M.ti,
         children: c ? (0, i.jsx)(f.e7I, {
           shortcut: "tab",
           dim: true
@@ -333,7 +333,7 @@ class Q extends W {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "layoutClass", j.xF)
+    super(...e), j(this, "layoutClass", M.xF)
   }
 }
 class J extends W {
@@ -345,7 +345,7 @@ class J extends W {
     } = this.props, {
       colorString: r,
       colorStrings: a
-    } = e, s = "dot" === p.A.roleStyle, l = "username" === p.A.roleStyle && (null != r || null != a), c = (0, O.hH)(n, e, a), u = null != c && l, {
+    } = e, o = "dot" === p.A.roleStyle, l = "username" === p.A.roleStyle && (null != r || null != a), c = (0, O.hH)(n, e, a), u = null != c && l, {
       gradientStyle: d,
       gradientClassname: _
     } = (0, f.WqX)({
@@ -359,13 +359,13 @@ class J extends W {
     return (0, i.jsxs)(P.Mr, {
       children: [(0, i.jsx)(P.oC, {
         children: (0, i.jsxs)(P.dB, {
-          children: [s && (0, i.jsx)(f.WYI, {
-            className: j.m4,
+          children: [o && (0, i.jsx)(f.WYI, {
+            className: M.m4,
             color: r,
             colors: c,
             tooltip: false
           }), (0, i.jsxs)("span", {
-            className: o()({
+            className: s()({
               [_]: u
             }),
             style: h,
@@ -374,7 +374,7 @@ class J extends W {
           })]
         })
       }), t ? null : (0, i.jsx)(P.Aq, {
-        children: L.intl.string(L.t["/91tbr"])
+        children: x.intl.string(x.t["/91tbr"])
       })]
     })
   }
@@ -408,7 +408,7 @@ class ee extends W {
     return (0, i.jsxs)(P.Mr, {
       children: [null != n && (0, i.jsx)(P.Ch, {
         children: (0, i.jsx)(n, {
-          className: j.Kk
+          className: M.Kk
         })
       }), (0, i.jsx)(P.oC, {
         children: (0, i.jsx)(P.dB, {
@@ -430,8 +430,8 @@ class et extends W {
         children: (0, i.jsx)(f.Fb4, {
           size: "xs",
           color: "currentColor",
-          className: j.Kk,
-          colorClass: j.t4
+          className: M.Kk,
+          colorClass: M.t4
         })
       }), (0, i.jsx)(P.oC, {
         children: (0, i.jsx)(P.dB, {
@@ -455,15 +455,15 @@ class en extends W {
       section: r,
       selected: a
     } = this.props, {
-      hovered: s
-    } = this.state, o = this.isSelectable();
+      hovered: o
+    } = this.state, s = this.isSelectable();
     return e.inputType === _.y$.PLACEHOLDER ? (0, i.jsx)(m.A, {}) : (0, i.jsx)(h.A, {
       command: e,
       channel: t,
       showImage: n,
-      showOptions: s || o && a,
+      showOptions: o || s && a,
       section: r,
-      isSelectable: o
+      isSelectable: s
     })
   }
 }
@@ -475,16 +475,16 @@ class er extends W {
       guild: n
     } = this.props, r = S.Sf.getSetting(), a = null != e.id || "" !== e.url ? (0, i.jsx)("img", {
       alt: "",
-      className: j.mp,
+      className: M.mp,
       src: null != e.id ? w.Ay.getEmojiURL({
         id: e.id,
         animated: e.animated && r,
-        size: x.L4
+        size: L.L4
       }) : e.url
     }) : (0, i.jsx)("span", {
-      className: j.nT,
+      className: M.nT,
       children: e.surrogates
-    }), s = null != n ? (0, i.jsx)(P.Aq, {
+    }), o = null != n ? (0, i.jsx)(P.Aq, {
       children: n.name
     }) : null;
     return (0, i.jsxs)(P.Mr, {
@@ -494,11 +494,11 @@ class er extends W {
         children: (0, i.jsxs)(P.dB, {
           children: [t, e.name, t]
         })
-      }), s]
+      }), o]
     })
   }
   constructor(...e) {
-    super(...e), M(this, "layoutClass", o()(j.rT, j.Mf))
+    super(...e), j(this, "layoutClass", s()(M.rT, M.Mf))
   }
 }
 class ei extends W {
@@ -507,20 +507,20 @@ class ei extends W {
     let n, {
         queryMatch: r,
         renderSticker: a,
-        selected: s,
-        sticker: o
+        selected: o,
+        sticker: s
       } = this.props,
       {
         hovered: l
       } = this.state;
-    return (0, I.FD)(o) ? n = null == (e = A.A.getStickerPack(o.pack_id)) ? true : e.name : (0, I.Xw)(o) && (n = null == (t = T.A.getGuild(o.guild_id)) ? true : t.name), (0, i.jsxs)(P.Mr, {
+    return (0, I.FD)(s) ? n = null == (e = A.A.getStickerPack(s.pack_id)) ? true : e.name : (0, I.Xw)(s) && (n = null == (t = T.A.getGuild(s.guild_id)) ? true : t.name), (0, i.jsxs)(P.Mr, {
       children: [(0, i.jsx)(P.Ch, {
-        children: a(o, l || true === s)
+        children: a(s, l || true === o)
       }), (0, i.jsxs)(P.oC, {
         children: [(0, i.jsx)(P.dB, {
-          children: o.name
+          children: s.name
         }), null != r && (0, i.jsx)(P.Nd, {
-          children: L.intl.format(L.t.PAutaQ, {
+          children: x.intl.format(x.t.PAutaQ, {
             queryMatch: r
           })
         })]
@@ -530,7 +530,7 @@ class ei extends W {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "layoutClass", o()(j.rT, j.Mf))
+    super(...e), j(this, "layoutClass", s()(M.rT, M.Mf))
   }
 }
 class ea extends W {
@@ -548,17 +548,17 @@ class ea extends W {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "layoutClass", j.ju)
+    super(...e), j(this, "layoutClass", M.ju)
   }
 }
-class es extends W {
+class eo extends W {
   renderContent() {
     return (0, i.jsx)(y.A, {
       emojis: this.props.emojis
     })
   }
 }
-class eo extends W {
+class es extends W {
   renderContent() {
     return (0, i.jsx)(v.A, k({}, this.props))
   }
@@ -569,7 +569,7 @@ class el extends W {
       game: e
     } = this.props, t = (0, i.jsx)("img", {
       alt: "",
-      className: j.Kk,
+      className: M.Kk,
       src: w.Ay.getApplicationIconURL({
         id: e.id,
         icon: e.icon,
@@ -594,17 +594,17 @@ class ec extends(r = Chunk64700.PureComponent) {
         children: t,
         className: n,
         innerClassName: r,
-        id: s
+        id: o
       } = e,
-      l = V(e, ["children", "className", "innerClassName", "id"]);
+      l = F(e, ["children", "className", "innerClassName", "id"]);
     return a.Children.count(t) > 0 ? (0, i.jsx)(Y.Provider, {
       value: {
-        id: null != s ? s : ""
+        id: null != o ? o : ""
       },
       children: (0, i.jsx)("div", {
-        className: o()(j.nx, n),
+        className: s()(M.nx, n),
         children: (0, i.jsx)("div", G(k({
-          className: o()(j.Fv, r)
+          className: s()(M.Fv, r)
         }, l), {
           children: t
         }))
@@ -612,5 +612,5 @@ class ec extends(r = Chunk64700.PureComponent) {
     }) : null
   }
 }
-M(ec, "Generic", K), M(ec, "Loading", z), M(ec, "Title", q), M(ec, "Divider", Z), M(ec, "User", X), M(ec, "UserSuggestion", Q), M(ec, "Role", J), M(ec, "Channel", ee), M(ec, "Command", et), M(ec, "NewCommand", en), M(ec, "Emoji", er), M(ec, "GIFIntegration", ea), M(ec, "Sticker", ei), M(ec, "EmojiUpsell", es), M(ec, "Soundmoji", eo), M(ec, "Game", el), M(ec, "Timestamp", $);
+j(ec, "Generic", K), j(ec, "Loading", z), j(ec, "Title", q), j(ec, "Divider", Z), j(ec, "User", Q), j(ec, "UserSuggestion", X), j(ec, "Role", J), j(ec, "Channel", ee), j(ec, "Command", et), j(ec, "NewCommand", en), j(ec, "Emoji", er), j(ec, "GIFIntegration", ea), j(ec, "Sticker", ei), j(ec, "EmojiUpsell", eo), j(ec, "Soundmoji", es), j(ec, "Game", el), j(ec, "Timestamp", $);
 let eu = ec

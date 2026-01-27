@@ -2,7 +2,7 @@
 /** chunk id: 297987, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ng: () => s,
+  Ng: () => o,
   TW: () => r,
   mD: () => i
 });
@@ -16,6 +16,6 @@ function a(e) {
   return null !== e && "object" == typeof e && "nodeType" in e && "number" == typeof e.nodeType
 }
 
-function s(e) {
+function o(e) {
   return a(e) && e.nodeType === Node.DOCUMENT_FRAGMENT_NODE && "host" in e
 }

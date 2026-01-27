@@ -72,7 +72,7 @@ function v(e) {
 function A(e) {
   var t, n;
   if (null != b[e]) return;
-  let r = s.Ay.getGameOrTransformedSubgameForPID(e),
+  let r = o.Ay.getGameOrTransformedSubgameForPID(e),
     i = O(e);
   b[e] = {
     overlay_method: null != i ? u.Ue[i] : u.Ue[u.Ue.OutOfProcess],
@@ -105,7 +105,7 @@ function S(e, t) {
 }
 
 function T(e) {
-  o.default.track(h.HAw.OVERLAY_HOOK_RESULT, I(e))
+  s.default.track(h.HAw.OVERLAY_HOOK_RESULT, I(e))
 }
 
 function C(e, t) {
@@ -129,7 +129,7 @@ function w() {
 }
 
 function R(e, t) {
-  let n = s.Ay.getGameOrTransformedSubgameForPID(e);
+  let n = o.Ay.getGameOrTransformedSubgameForPID(e);
   return {
     crash_type: t,
     gameName: null == n ? true : n.name
@@ -158,7 +158,7 @@ function D(e) {
   }), true
 }
 
-function x(e) {
+function L(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
@@ -170,7 +170,7 @@ function x(e) {
   return S(r, a), true
 }
 
-function L(e) {
+function x(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
@@ -180,14 +180,14 @@ function L(e) {
   }), true
 }
 
-function j(e) {
+function M(e) {
   let {
     pid: t
   } = e;
   return A(t), true
 }
 
-function M(e) {
+function j(e) {
   let {
     lastAssociatedPID: t
   } = e;
@@ -206,7 +206,7 @@ function k(e) {
 }
 class U extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(d.default, p.A, s.Ay)
+    this.waitFor(d.default, p.A, o.Ay)
   }
   getData(e) {
     return I(e)
@@ -218,10 +218,10 @@ class U extends(r = Chunk311907.Ay.Store) {
 m(U, "displayName", "Overlay-v3-Native-Analytics-Store");
 let G = new U(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
   OVERLAY_V3_PRE_CREATE_POPOUT: D,
-  OVERLAY_V3_POST_CREATE_POPOUT: x,
-  OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: L,
-  OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: M,
+  OVERLAY_V3_POST_CREATE_POPOUT: L,
+  OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: x,
+  OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: j,
   OVERLAY_SUCCESSFULLY_SHOWN: k,
   OVERLAY_CRASHED: P,
-  OVERLAY_V3_NATIVE_TRACK_GAME: j
+  OVERLAY_V3_NATIVE_TRACK_GAME: M
 })

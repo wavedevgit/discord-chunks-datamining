@@ -37,7 +37,7 @@ function d(e) {
 }
 
 function f(e) {
-  return (0, s.zD)(e) ? c.intl.string(c.t["4f8iut"]) : (0, s.Lf)(e) ? c.intl.string(c.t.yX2hNy) : (0, s.fe)(e) ? c.intl.string(c.t.oSs8eg) : c.intl.string(c.t.bK9GT1)
+  return (0, o.zD)(e) ? c.intl.string(c.t["4f8iut"]) : (0, o.Lf)(e) ? c.intl.string(c.t.yX2hNy) : (0, o.fe)(e) ? c.intl.string(c.t.oSs8eg) : c.intl.string(c.t.bK9GT1)
 }
 
 function p(e) {
@@ -46,8 +46,8 @@ function p(e) {
     entry: c,
     display: u,
     onAction: p
-  } = e, _ = (0, l.A)(), h = (0, i.bG)([o.default], () => o.default.getCurrentUser());
-  if (t.id !== (null == h ? true : h.id) || "recent" !== u || !(0, s.$R)(c)) return null;
+  } = e, _ = (0, l.A)(), h = (0, i.bG)([s.default], () => s.default.getCurrentUser());
+  if (t.id !== (null == h ? true : h.id) || "recent" !== u || !(0, o.$R)(c)) return null;
   let m = () => {
     (0, a.mMO)(async () => {
       let {

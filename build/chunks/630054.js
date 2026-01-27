@@ -38,8 +38,8 @@ let p = {
   push(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : i()("modal"),
       r = arguments.length > 3 ? arguments[3] : true,
-      s = arguments.length > 4 && true !== arguments[4] ? arguments[4] : u.BRT.APP;
-    return (0, o.GR)(f({
+      o = arguments.length > 4 && true !== arguments[4] ? arguments[4] : u.BRT.APP;
+    return (0, s.GR)(f({
       key: n,
       modal: (0, c.A)(e, {}, t, n)
     }, r)), a.h.dispatch({
@@ -47,13 +47,13 @@ let p = {
       modal: e,
       props: t,
       key: n,
-      appContext: s
+      appContext: o
     }), n
   },
   pushLazy(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : i()("modal"),
       r = arguments.length > 3 ? arguments[3] : true,
-      a = (0, s.Y)();
+      a = (0, o.Y)();
     return null != a && a.isReady() ? (e instanceof Promise ? e.then(e => {
       let {
         default: t
@@ -71,20 +71,20 @@ let p = {
     })
   },
   pop() {
-    (0, o.tu)(), a.h.dispatch({
+    (0, s.tu)(), a.h.dispatch({
       type: "MODAL_POP"
     })
   },
   popWithKey(e, t) {
-    (0, o.tu)(e, t), a.h.dispatch({
+    (0, s.tu)(e, t), a.h.dispatch({
       type: "MODAL_POP",
       key: e,
       onExited: t
     })
   },
-  popAboveKey: e => (0, o.WR)(e),
+  popAboveKey: e => (0, s.WR)(e),
   popAll() {
-    (0, o.f3)(), a.h.dispatch({
+    (0, s.f3)(), a.h.dispatch({
       type: "MODAL_POP_ALL"
     }), a.h.dispatch({
       type: "EMAIL_VERIFICATION_MODAL_CLOSE"

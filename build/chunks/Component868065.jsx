@@ -39,12 +39,12 @@ function y(e) {
     children: t,
     selected: n,
     className: i,
-    usesCardRows: s = false
+    usesCardRows: o = false
   } = e;
   return (0, r.jsx)("div", {
     className: a()(g.kL, g.fi, {
       [g.wH]: n,
-      [g._V]: s
+      [g._V]: o
     }, i),
     children: t
   })
@@ -69,21 +69,21 @@ function O(e) {
   return (0, r.jsx)("div", {
     className: g.wn,
     children: t.map((e, a) => {
-      let s = (0, r.jsx)(o.euF, {
+      let o = (0, r.jsx)(s.euF, {
         src: e.getAvatarURL(n, 80),
-        size: o._3J.SIZE_16,
+        size: s._3J.SIZE_16,
         "aria-label": i ? true : e.username,
         "aria-hidden": i
       });
       return a === t.length - 1 ? (0, r.jsx)("div", {
         className: g.tr,
-        children: s
+        children: o
       }, e.id) : (0, r.jsx)(l.Ay, {
         width: 16,
         height: 16,
         className: g.tr,
         mask: l.Ay.Masks.CONTENT_INVENTORY_CARD_FACE_PILE_AVATAR,
-        children: s
+        children: o
       }, e.id)
     })
   })
@@ -96,14 +96,14 @@ function v(e) {
     channelId: i,
     entry: a,
     maxAvatars: l = 3
-  } = e, E = a.author_id, y = (0, s.bG)([p.default], () => p.default.getUser(E)), {
+  } = e, E = a.author_id, y = (0, o.bG)([p.default], () => p.default.getUser(E)), {
     displayParticipants: b,
     participant1: v,
     participant2: A,
     numOtherParticipants: I
-  } = (0, h.A)(a, l), S = (0, s.bG)([d.Ay], () => d.Ay.getMember(n, E)), T = (0, c.a)({
+  } = (0, h.A)(a, l), S = (0, o.bG)([d.Ay], () => d.Ay.getMember(n, E)), T = (0, c.a)({
     displayNameStyles: null == y ? true : y.displayNameStyles
-  }), C = (0, s.bG)([f.A], () => {
+  }), C = (0, o.bG)([f.A], () => {
     var e;
     return (null == S ? true : S.colorRoleId) != null ? null == (e = f.A.getRole(n, S.colorRoleId)) ? true : e.name : true
   }, [n, S]), N = (0, u.gn)(n, E, null != (t = null == S ? true : S.colorStrings) ? t : null);
@@ -116,7 +116,7 @@ function v(e) {
       users: b,
       guildId: n,
       "aria-hidden": true
-    }), (0, r.jsx)(o.gyj, {
+    }), (0, r.jsx)(s.gyj, {
       colorString: null != w ? w : null,
       roleName: C,
       colorStrings: N,
@@ -127,13 +127,13 @@ function v(e) {
     }), I > 0 ? (0, r.jsx)("div", {
       className: g.kx,
       "aria-hidden": true,
-      children: (0, r.jsxs)(o.Text, {
+      children: (0, r.jsxs)(s.Text, {
         variant: "text-xxs/medium",
         color: "text-default",
         className: g.b4,
         children: ["+", I]
       })
-    }) : null, (0, r.jsx)(o.AC4, {
+    }) : null, (0, r.jsx)(s.AC4, {
       children: m.intl.format(m.t.rH95Gu, {
         user0: _.Ay.getName(n, i, v),
         user1: _.Ay.getName(n, i, A),
@@ -156,7 +156,7 @@ function A(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(o.Heading, {
+  return (0, r.jsx)(s.Heading, {
     color: "text-default",
     variant: "heading-sm/medium",
     className: g.eu,

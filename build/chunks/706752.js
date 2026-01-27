@@ -70,10 +70,10 @@ function O(e, t, n) {
     C = null != T ? c.A.getChannel(T) : null;
   if (n !== m.VV.MEMBER_SAFETY && (null == C || C.getGuildId() !== e)) {
     let t = u.Ay.getDefaultChannel(e);
-    null == t || (0, r.qR)(t) || (0, s.pX)(h.BVt.CHANNEL(e, t.id))
+    null == t || (0, r.qR)(t) || (0, o.pX)(h.BVt.CHANNEL(e, t.id))
   }
   let N = n;
-  return (0, a.G9)(N, t) && (v = N), (0, f.e)(e, t, I, S), o.A.openGuildSidebar({
+  return (0, a.G9)(N, t) && (v = N), (0, f.e)(e, t, I, S), s.A.openGuildSidebar({
     guildId: e,
     baseChannelId: n,
     sidebarType: l.QV.GUILD_MEMBER_MOD_VIEW,

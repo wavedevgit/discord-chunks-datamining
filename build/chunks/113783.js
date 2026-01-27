@@ -2,7 +2,7 @@
 /** chunk id: 113783, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E5: () => o,
+  E5: () => s,
   J2: () => c,
   uy: () => u,
   zy: () => l
@@ -12,7 +12,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk63995 = require("./63995.js"),
   Chunk69407 = require("./69407.js");
 
-function o(e, t) {
+function s(e, t) {
   let [n] = (0, r.bG)([a.A], () => [a.A.getMutableParticipants(e, t), a.A.getParticipantsVersion(e)], [e, t], i.D);
   return n
 }
@@ -27,5 +27,5 @@ function c(e) {
 }
 
 function u(e) {
-  return (0, r.bG)([a.A], () => a.A.getMutableParticipants(e, s.ip.SPEAKER).filter(e => e.type === s.wY.VOICE).length, [e])
+  return (0, r.bG)([a.A], () => a.A.getMutableParticipants(e, o.ip.SPEAKER).filter(e => e.type === o.wY.VOICE).length, [e])
 }

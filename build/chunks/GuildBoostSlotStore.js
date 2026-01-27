@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk166403 = require("./166403.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -78,12 +78,12 @@ function g() {
 
 function E() {
   let e = {};
-  for (let t of Object.values(p)) e[t.id] = t, t.subscription = s.A.getSubscriptionById(t.subscriptionId);
+  for (let t of Object.values(p)) e[t.id] = t, t.subscription = o.A.getSubscriptionById(t.subscriptionId);
   p = e
 }
 class y extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([s.A], E)
+    this.syncWith([o.A], E)
   }
   get hasFetched() {
     return d
@@ -98,7 +98,7 @@ class y extends(r = Chunk311907.Ay.Store) {
     return p[e]
   }
 }
-o(y, "displayName", "GuildBoostSlotStore");
+s(y, "displayName", "GuildBoostSlotStore");
 let b = new y(Chunk73153.h, {
   GUILD_BOOST_SLOTS_FETCH: _,
   GUILD_BOOST_SLOTS_FETCH_SUCCESS: h,

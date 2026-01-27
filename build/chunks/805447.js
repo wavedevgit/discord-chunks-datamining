@@ -15,8 +15,8 @@ function l(e) {
     n = (0, a.bq)(t);
   if ("virtual" === (0, r.ME)()) {
     let r = n;
-    (0, s.v)(() => {
-      (0, a.bq)(t) === r && e.isConnected && (0, o.e)(e)
+    (0, o.v)(() => {
+      (0, a.bq)(t) === r && e.isConnected && (0, s.e)(e)
     })
-  } else(0, o.e)(e)
+  } else(0, s.e)(e)
 }

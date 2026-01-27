@@ -29,9 +29,9 @@ function a(e) {
   return "host" === e
 }
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
-class s {
+class o {
   handleDownloadingModule(e) {
     if (!a(e.name)) {
       if (null != this._downloadingModules[e.name]) return void console.warn("Duplicate downloading-module event for module ", e.name);
@@ -61,9 +61,9 @@ class s {
     let n = t.foreground ? "foreground" : "background",
       r = "".concat(n, "_download_ms_").concat(e.name),
       i = "".concat(n, "_bytes_").concat(e.name),
-      s = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6)),
-      o = false === e.receivedBytes ? 0 : e.receivedBytes;
-    t.foreground ? (this._report.foreground_download_ms_total += s, this._report.foreground_bytes_total += o) : (this._report.background_download_ms_total += s, this._report.background_bytes_total += o), this.incrementReportField(r, s), this.incrementReportField(i, o), delete this._downloadingModules[e.name]
+      o = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6)),
+      s = false === e.receivedBytes ? 0 : e.receivedBytes;
+    t.foreground ? (this._report.foreground_download_ms_total += o, this._report.foreground_bytes_total += s) : (this._report.background_download_ms_total += o, this._report.background_bytes_total += s), this.incrementReportField(r, o), this.incrementReportField(i, s), delete this._downloadingModules[e.name]
   }
   handleInstallingModule(e) {
     if (!a(e.name)) {
@@ -83,9 +83,9 @@ class s {
     let n = t.foreground ? "foreground" : "background",
       r = "".concat(n, "_install_ms_").concat(e.name),
       i = "min_version_".concat(e.name),
-      s = "max_version_".concat(e.name),
-      o = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6));
-    t.foreground ? this._report.foreground_install_ms_total += o : this._report.background_install_ms_total += o, this.incrementReportField(r, o), this.setReportFieldMinimum(i, t.oldVersion), e.succeeded ? (true === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(s, t.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
+      o = "max_version_".concat(e.name),
+      s = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6));
+    t.foreground ? this._report.foreground_install_ms_total += s : this._report.background_install_ms_total += s, this.incrementReportField(r, s), this.setReportFieldMinimum(i, t.oldVersion), e.succeeded ? (true === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(o, t.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
   }
   trackEvent(e) {
     switch (e.type) {

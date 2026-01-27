@@ -24,12 +24,12 @@ function p(e) {
     id: "video-settings",
     label: f.intl.string(f.t.LKzQSF),
     action: () => {
-      let n = (0, l.qz)("useVideoSettingsItem") ? o.X.CAMERA_CATEGORY : o.X.VOICE_AND_VIDEO_PANEL;
+      let n = (0, l.qz)("useVideoSettingsItem") ? s.X.CAMERA_CATEGORY : s.X.VOICE_AND_VIDEO_PANEL;
       (0, c.openUserSettings)(n, {
         section: u.nc_.VOICE,
         subsection: d.Ss,
         analyticsLocations: t
-      }), (0, s.A)(e, e === u.BRT.POPOUT)
+      }), (0, o.A)(e, e === u.BRT.POPOUT)
     },
     icon: i.Zes,
     leadingAccessory: {

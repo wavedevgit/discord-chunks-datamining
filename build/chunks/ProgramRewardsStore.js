@@ -40,7 +40,7 @@ function v() {
   for (let n of e.values()) {
     let e = new Date(n.next_reward_date),
       r = (0, i.default)(e, 1);
-    if ((0, s.default)(t, {
+    if ((0, o.default)(t, {
         start: e,
         end: r
       })) returntrue

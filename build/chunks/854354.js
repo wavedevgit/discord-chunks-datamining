@@ -14,14 +14,14 @@ let a = function(e) {
       manualLineItems: n,
       addTaxLineItem: a
     } = t,
-    s = [];
-  return s = null != n ? [...n] : e.invoiceItems.map(e => ({
+    o = [];
+  return o = null != n ? [...n] : e.invoiceItems.map(e => ({
     id: e.id,
     label: (0, r.Mn)(e.subscriptionPlanId),
     amount: e.amount * e.quantity
-  })), false !== a && s.push({
+  })), false !== a && o.push({
     id: "tax",
     label: i.intl.string(i.t.jiRvC7),
     amount: e.tax
-  }), s
+  }), o
 }

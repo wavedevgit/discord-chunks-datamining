@@ -16,7 +16,7 @@ var Chunk860511 = require("./860511.js"),
   h = Chunk339626(Chunk860511.PromiseRejectionEvent);
 module.exports = {
   CONSTRUCTOR: Chunk521351("Promise", function() {
-    var e = o(i),
+    var e = s(i),
       t = e !== String(i);
     if (!t && 66 === d || u && !(f.catch && f.finally)) returntrue;
     if (!d || d < 51 || !/native code/.test(e)) {

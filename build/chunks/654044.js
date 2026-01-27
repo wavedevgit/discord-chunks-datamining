@@ -2,7 +2,7 @@
 /** chunk id: 654044, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk315069 = require("./315069.js"),
   Chunk874638 = require("./874638.js");
@@ -15,10 +15,10 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends Chunk315069.A {
+class o extends Chunk315069.A {
   static createInvoiceFromServer(e) {
     var t;
-    return new s({
+    return new o({
       id: e.id,
       invoiceItems: null == (t = e.invoice_items) ? true : t.map(i.c),
       total: e.total,

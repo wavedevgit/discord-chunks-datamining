@@ -17,7 +17,7 @@ function a(e, t, n) {
   return t && i(e.prototype, t), n && i(e, n), e
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,11 +26,11 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  s: () => o
+  s: () => s
 });
-var o = function() {
+var s = function() {
   function e(t, n) {
-    r(this, e), s(this, "ownerDocument", null), s(this, "globalContext", true), s(this, "optionsArgs", true), this.globalContext = t, this.optionsArgs = n
+    r(this, e), o(this, "ownerDocument", null), o(this, "globalContext", true), o(this, "optionsArgs", true), this.globalContext = t, this.optionsArgs = n
   }
   return a(e, [{
     key: "window",

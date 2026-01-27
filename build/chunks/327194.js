@@ -83,11 +83,11 @@ class I {
     if (!h.OX) return void E.error("Attempted to load overlay on an unsupported platform.");
     E.info("Loading Out of Process Overlay Module");
     try {
-      await s.Ay.ensureModule("discord_desktop_overlay");
-      let e = s.Ay.requireModule("discord_desktop_overlay");
-      e.init(), e.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = e, (0, d._r)(null, "module_loaded"), (0, o.setOutOfProcessSupport)(true), A(this.module), (0, d.Mi)(), E.info("OverlayV3 Module Loaded")
+      await o.Ay.ensureModule("discord_desktop_overlay");
+      let e = o.Ay.requireModule("discord_desktop_overlay");
+      e.init(), e.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = e, (0, d._r)(null, "module_loaded"), (0, s.setOutOfProcessSupport)(true), A(this.module), (0, d.Mi)(), E.info("OverlayV3 Module Loaded")
     } catch (e) {
-      throw E.error("failed loading overlay module", e), (0, o.setOutOfProcessSupport)(false), (0, d.wK)(e), this.module = null, this.modulePromise = null, e
+      throw E.error("failed loading overlay module", e), (0, s.setOutOfProcessSupport)(false), (0, d.wK)(e), this.module = null, this.modulePromise = null, e
     }
   }
   async createOutOfProcessOverlayHostWindow(e) {
@@ -214,7 +214,7 @@ class I {
   }
   setLimitedInteraction(e) {
     var t, n;
-    null == (n = this.module) || null == (t = n.setLimitedInteraction) || t.call(n, e), s.Ay.setFocusable(m.f, !e)
+    null == (n = this.module) || null == (t = n.setLimitedInteraction) || t.call(n, e), o.Ay.setFocusable(m.f, !e)
   }
   setCaptureZoneCallback(e) {
     var t, n;

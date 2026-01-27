@@ -20,18 +20,18 @@ var Chunk64700 = require("./64700.js"),
 
 function f(e, t, n, i) {
   let a = arguments.length > 4 && true !== arguments[4] && arguments[4],
-    s = arguments.length > 5 ? arguments[5] : true;
+    o = arguments.length > 5 ? arguments[5] : true;
   r.useEffect(() => {
-    null != e && (1 === t && e !== l.pn.AWAITING_AUTHENTICATION ? n(l.pn.AWAITING_AUTHENTICATION) : e === l.pn.AWAITING_AUTHENTICATION && (2 === t ? n(l.pn.REVIEW) : 3 === t && (a ? null != s ? s() : n(l.pn.REVIEW) : (i(c.h.COMPLETED), n(l.pn.CONFIRM)))))
-  }, [e, t, n, i, a, s])
+    null != e && (1 === t && e !== l.pn.AWAITING_AUTHENTICATION ? n(l.pn.AWAITING_AUTHENTICATION) : e === l.pn.AWAITING_AUTHENTICATION && (2 === t ? n(l.pn.REVIEW) : 3 === t && (a ? null != o ? o() : n(l.pn.REVIEW) : (i(c.h.COMPLETED), n(l.pn.CONFIRM)))))
+  }, [e, t, n, i, a, o])
 }
 let p = 5e3;
 
 function _(e) {
   let t = (0, i.bG)([u.A], () => u.A.awaitingPaymentId),
-    n = (0, i.bG)([o.A], () => o.A.isConnected()),
+    n = (0, i.bG)([s.A], () => s.A.isConnected()),
     l = r.useRef(new a.IX);
   r.useEffect(() => {
-    n || null == t || 1 !== e ? l.current.stop() : l.current.start(p, () => (0, s.TK)(t))
+    n || null == t || 1 !== e ? l.current.stop() : l.current.start(p, () => (0, o.TK)(t))
   }, [t, e, n])
 }

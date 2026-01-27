@@ -7,29 +7,29 @@ require.d(exports, {
 var Chunk90727 = require("./90727.js"),
   Chunk391898 = require("./391898.js");
 
-function a(e, t, n, a, s, o) {
+function a(e, t, n, a, o, s) {
   var l = {
       lastyear: e,
       lastmonth: t,
       nwdaymask: []
     },
     c = [];
-  if (o.freq === r.p3.YEARLY)
-    if ((0, i.Ie)(o.bymonth)) c = [
+  if (s.freq === r.p3.YEARLY)
+    if ((0, i.Ie)(s.bymonth)) c = [
       [0, n]
     ];
     else
-      for (var u = 0; u < o.bymonth.length; u++) t = o.bymonth[u], c.push(a.slice(t - 1, t + 1));
-  else o.freq === r.p3.MONTHLY && (c = [a.slice(t - 1, t + 1)]);
+      for (var u = 0; u < s.bymonth.length; u++) t = s.bymonth[u], c.push(a.slice(t - 1, t + 1));
+  else s.freq === r.p3.MONTHLY && (c = [a.slice(t - 1, t + 1)]);
   if ((0, i.Ie)(c)) return l;
   l.nwdaymask = (0, i.ux)(0, n);
   for (var u = 0; u < c.length; u++)
-    for (var d = c[u], f = d[0], p = d[1] - 1, _ = 0; _ < o.bynweekday.length; _++) {
+    for (var d = c[u], f = d[0], p = d[1] - 1, _ = 0; _ < s.bynweekday.length; _++) {
       var h = true,
-        m = o.bynweekday[_],
+        m = s.bynweekday[_],
         g = m[0],
         E = m[1];
-      E < 0 ? (h = p + (E + 1) * 7, h -= (0, i._D)(s[h] - g, 7)) : (h = f + (E - 1) * 7, h += (0, i._D)(7 - s[h] + g, 7)), f <= h && h <= p && (l.nwdaymask[h] = 1)
+      E < 0 ? (h = p + (E + 1) * 7, h -= (0, i._D)(o[h] - g, 7)) : (h = f + (E - 1) * 7, h += (0, i._D)(7 - o[h] + g, 7)), f <= h && h <= p && (l.nwdaymask[h] = 1)
     }
   return l
 }

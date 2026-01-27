@@ -14,14 +14,14 @@ class l extends Chunk355418.c {
     super()
   }
   innerPattern() {
-    return RegExp(`(?:\\s*((?:n\xe4chste|kommende|folgende|letzte|vergangene|vorige|vor(?:her|an)gegangene)(?:s|n|m|r)?|vor|in)\\s*)?(${r.nj})?(?:\\s*(n\xe4chste|kommende|folgende|letzte|vergangene|vorige|vor(?:her|an)gegangene)(?:s|n|m|r)?)?\\s*(${(0,s.uJ)(r.EB)})`, "i")
+    return RegExp(`(?:\\s*((?:n\xe4chste|kommende|folgende|letzte|vergangene|vorige|vor(?:her|an)gegangene)(?:s|n|m|r)?|vor|in)\\s*)?(${r.nj})?(?:\\s*(n\xe4chste|kommende|folgende|letzte|vergangene|vorige|vor(?:her|an)gegangene)(?:s|n|m|r)?)?\\s*(${(0,o.uJ)(r.EB)})`, "i")
   }
   innerExtract(e, t) {
     let n = t[2] ? (0, r.zp)(t[2]) : 1,
       a = r.EB[t[4].toLowerCase()],
-      s = {};
-    s[a] = n;
+      o = {};
+    o[a] = n;
     let l = t[1] || t[3] || "";
-    if (l = l.toLowerCase()) return (/vor/.test(l) || /letzte/.test(l) || /vergangen/.test(l)) && (s = (0, o.x4)(s)), i.BP.createRelativeFromReference(e.reference, s)
+    if (l = l.toLowerCase()) return (/vor/.test(l) || /letzte/.test(l) || /vergangen/.test(l)) && (o = (0, s.x4)(o)), i.BP.createRelativeFromReference(e.reference, o)
   }
 }

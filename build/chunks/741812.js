@@ -19,7 +19,7 @@ function d() {
 
 function f() {
   d();
-  let e = s.A.getAllVoiceStates(),
+  let e = o.A.getAllVoiceStates(),
     t = false;
   for (let n of Object.values(e))
     for (let e of Object.values(n)) null != e.channelId && (t = h(e.channelId, e.userId) || t);
@@ -29,7 +29,7 @@ function f() {
 function p(e) {
   let {
     relationship: t
-  } = e, n = s.A.getVoiceStateForUser(t.id);
+  } = e, n = o.A.getVoiceStateForUser(t.id);
   return null != n && null != n.channelId && h(n.channelId, t.id)
 }
 
@@ -50,15 +50,15 @@ function h(e, t) {
   let n = false,
     r = false,
     i = new Set(l[e]),
-    s = a.A.isBlocked(t);
-  s && !i.has(t) ? (i.add(t), r = true, n = true) : s || (n = i.delete(t)), 0 === i.size && n ? delete l[e] : n && (l[e] = i);
+    o = a.A.isBlocked(t);
+  o && !i.has(t) ? (i.add(t), r = true, n = true) : o || (n = i.delete(t)), 0 === i.size && n ? delete l[e] : n && (l[e] = i);
   let u = new Set(c[e]),
     d = a.A.isIgnored(t);
-  return d && !u.has(t) ? (u.add(t), r = true, n = true) : d || (n = u.delete(t)), 0 === u.size && n ? delete c[e] : n && (c[e] = u), r && o.Ay.handleBlockedOrIgnoredUserVoiceChannelJoin(e, t), n
+  return d && !u.has(t) ? (u.add(t), r = true, n = true) : d || (n = u.delete(t)), 0 === u.size && n ? delete c[e] : n && (c[e] = u), r && s.Ay.handleBlockedOrIgnoredUserVoiceChannelJoin(e, t), n
 }
 class m extends Chunk311907.Ay.Store {
   initialize() {
-    this.waitFor(a.A, s.A)
+    this.waitFor(a.A, o.A)
   }
   getBlockedUsersForVoiceChannel(e) {
     var t;

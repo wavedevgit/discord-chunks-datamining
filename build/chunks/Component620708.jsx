@@ -25,10 +25,10 @@ let p = [Chunk506326.Y8],
       selected: i
     } = e, {
       largeImage: a
-    } = (0, o.nO)({
+    } = (0, s.nO)({
       entry: t
     }), h = (0, c.TQ)(t);
-    return null != h && (0, s.S1)(h, _) ? (0, r.jsxs)(d.Zp, {
+    return null != h && (0, o.S1)(h, _) ? (0, r.jsxs)(d.Zp, {
       selected: i,
       children: [(0, r.jsxs)(d.UA, {
         children: [(0, r.jsx)(d.Hp, {

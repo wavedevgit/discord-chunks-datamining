@@ -49,7 +49,7 @@ let E = e => {
       giftingOrigin: m.vQ.SHOP_PAGE,
       analyticsLocations: A,
       returnRef: y,
-      variantsReturnStyle: s.g.VARIANTS_GROUP,
+      variantsReturnStyle: o.g.VARIANTS_GROUP,
       onClose: null != b ? e => {
         e && b()
       } : true
@@ -61,7 +61,7 @@ let E = e => {
     onClick: C,
     text: g.intl.string(g.t.gmnzqM),
     fullWidth: true
-  }) : (0, r.jsx)(o.m, {
+  }) : (0, r.jsx)(s.m, {
     text: g.intl.string(g.t["JCFN/y"]),
     delay: O,
     children: (0, r.jsx)(l.K0, {

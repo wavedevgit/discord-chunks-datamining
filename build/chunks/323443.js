@@ -31,7 +31,7 @@ function E(e, t) {
   return new Promise(async i => {
     let a = c.A.getChannel(t);
     if (null != a) return y(a, n), i(a);
-    await (0, o.A)([e]), await r.A.joinGuild(e, {
+    await (0, s.A)([e]), await r.A.joinGuild(e, {
       lurker: true
     }), u.A.addConditionalChangeListener(() => {
       let e = c.A.getChannel(t);
@@ -55,7 +55,7 @@ function b(e) {
     n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = f.A.getVoiceChannelId();
-  !r && i !== e.id && (0, s.H)(e) && p.E9(e, () => b(e, t, n, true)) || y(e, t) && O(e, i)
+  !r && i !== e.id && (0, o.H)(e) && p.E9(e, () => b(e, t, n, true)) || y(e, t) && O(e, i)
 }
 
 function O(e, t) {

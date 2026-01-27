@@ -2,12 +2,12 @@
 /** chunk id: 55960, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  g: () => o
+  g: () => s
 });
 var Chunk64700 = require("./64700.js"),
   Chunk688807 = require("./688807.js"),
   Chunk73289 = require("./73289.js");
-let s = e => {
+let o = e => {
     let t = "translate(".concat(e.x.toFixed(1), "px, ").concat(e.y.toFixed(1), "px)");
     return {
       pointerEvents: "none",
@@ -18,7 +18,7 @@ let s = e => {
       WebkitTransform: t
     }
   },
-  o = () => {
+  s = () => {
     let e = (0, r.useRef)(null),
       t = (0, i.V)(t => ({
         currentOffset: (0, a.D)(t, e),
@@ -31,7 +31,7 @@ let s = e => {
       display: true,
       itemType: t.itemType,
       item: t.item,
-      style: s(t.currentOffset),
+      style: o(t.currentOffset),
       monitor: t.monitor,
       ref: e
     } : {

@@ -115,10 +115,10 @@ let _ = {
         return (0, i.useEffect)(() => {
           null == u && null != l.balance && p(l.balance)
         }, [l.balance, u]), (0, r.jsxs)("div", {
-          className: o.YG,
-          children: [(0, r.jsx)(s.Gy, d(c({}, l), {
+          className: s.YG,
+          children: [(0, r.jsx)(o.Gy, d(c({}, l), {
             balance: t ? null : u,
-            className: n ? o.jG : true
+            className: n ? s.jG : true
           })), (0, r.jsx)(a.$nd, {
             onClick: () => p(l.balance),
             text: "Update Balance"
@@ -143,10 +143,10 @@ let _ = {
         return (0, i.useEffect)(() => {
           p(l.balance)
         }, [l.balance]), (0, r.jsxs)("div", {
-          className: o.YG,
-          children: [(0, r.jsx)(s.Gy, d(c({}, l), {
+          className: s.YG,
+          children: [(0, r.jsx)(o.Gy, d(c({}, l), {
             balance: u,
-            className: n ? o.jG : true
+            className: n ? s.jG : true
           })), (0, r.jsx)(a.$nd, {
             onClick: () => {
               p(null), setTimeout(() => {

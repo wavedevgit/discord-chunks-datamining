@@ -4,7 +4,7 @@
 require.d(exports, {
   Bl: () => f,
   M5: () => l,
-  Qb: () => s,
+  Qb: () => o,
   gz: () => c,
   ip: () => d,
   j$: () => u
@@ -12,7 +12,7 @@ require.d(exports, {
 var Chunk600975 = require("./600975.js"),
   Chunk652215 = require("./652215.js"),
   Chunk349828 = require("./349828.js");
-let s = (0, Chunk600975.C)({
+let o = (0, Chunk600975.C)({
   kind: "guild",
   id: "2025-06_vanity_url_perk",
   label: "Vanity URL Standalone Perk",
@@ -37,13 +37,13 @@ let s = (0, Chunk600975.C)({
   }]
 });
 
-function o(e) {
+function s(e) {
   return null != e && e !== a.V && e !== i.YYv
 }
 
 function l(e, t) {
-  let n = o(e);
-  return s.useExperiment({
+  let n = s(e);
+  return o.useExperiment({
     guildId: e,
     location: t
   }, {
@@ -53,8 +53,8 @@ function l(e, t) {
 }
 
 function c(e, t) {
-  let n = o(e),
-    r = s.useExperiment({
+  let n = s(e),
+    r = o.useExperiment({
       guildId: e,
       location: t
     }, {
@@ -65,8 +65,8 @@ function c(e, t) {
 }
 
 function u(e, t) {
-  let n = o(e);
-  return s.useExperiment({
+  let n = s(e);
+  return o.useExperiment({
     guildId: e,
     location: t
   }, {
@@ -76,7 +76,7 @@ function u(e, t) {
 }
 
 function d(e, t) {
-  return !!o(e) && s.getCurrentConfig({
+  return !!s(e) && o.getCurrentConfig({
     guildId: e,
     location: t
   }, {
@@ -85,7 +85,7 @@ function d(e, t) {
 }
 
 function f(e, t) {
-  return !!o(e) && s.getCurrentConfig({
+  return !!s(e) && o.getCurrentConfig({
     guildId: e,
     location: t
   }, {

@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 212453, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 212453, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk378555 = require("./378555.js"),
   Chunk954055 = require("./954055.js"),
@@ -11,69 +11,63 @@ var Chunk378555 = require("./378555.js"),
   Chunk644485 = require("./644485.js"),
   Chunk197576 = require("./197576.js"),
   Chunk670200 = require("./670200.js"),
-  p = 20,
-  _ = false,
   h = false,
-  m = null;
-
-function g(e) {
-  m || (m = new r(c(e))).start()
-}
-var E = {
-  onCompositionStart: function(e) {
-    h = true, g(e)
-  },
-  onCompositionEnd: function(e) {
-    _ = false, h = false, setTimeout(function() {
-      _ || E.resolveComposition(e)
-    }, p)
-  },
-  onSelect: Chunk750240,
-  onKeyDown: function(e, t) {
-    if (!h) {
-      E.resolveComposition(e), e._onKeyDown(t);
-      return
-    }(t.which === o.RIGHT || t.which === o.LEFT) && t.preventDefault()
-  },
-  onKeyPress: function(e, t) {
-    t.which === o.RETURN && t.preventDefault()
-  },
-  resolveComposition: function(e) {
-    if (!h) {
-      var t = f(m).stopAndFlushMutations();
-      m = null, _ = true;
-      var n = s.set(e._latestEditorState, {
-        inCompositionMode: false
-      });
-      if (e.exitCurrentMode(), !t.size) return void e.update(n);
-      var r = n.getCurrentContent();
-      t.forEach(function(e, t) {
-        var o = a.decode(t),
-          l = o.blockKey,
-          c = o.decoratorKey,
-          u = o.leafKey,
-          f = n.getBlockTree(l).getIn([c, "leaves", u]),
-          p = f.start,
-          _ = f.end,
-          h = n.getSelection().merge({
-            anchorKey: l,
-            focusKey: l,
-            anchorOffset: p,
-            focusOffset: _,
-            isBackward: false
-          }),
-          m = d(r, h),
-          g = r.getBlockForKey(l).getInlineStyleAt(p);
-        r = i.replaceText(r, h, e, g, m), n = s.set(n, {
-          currentContent: r
-        })
-      });
-      var o = u(n, c(e)),
-        l = o.selectionState;
-      e.restoreEditorDOM();
-      var p = s.acceptSelection(n, l);
-      e.update(s.push(p, r, "insert-characters"))
+  d = false,
+  g = null,
+  y = {
+    onCompositionStart: function(t) {
+      d = true, g || (g = new n(c(t))).start()
+    },
+    onCompositionEnd: function(t) {
+      h = false, d = false, setTimeout(function() {
+        h || y.resolveComposition(t)
+      }, 20)
+    },
+    onSelect: Chunk750240,
+    onKeyDown: function(t, e) {
+      if (!d) {
+        y.resolveComposition(t), t._onKeyDown(e);
+        return
+      }(e.which === s.RIGHT || e.which === s.LEFT) && e.preventDefault()
+    },
+    onKeyPress: function(t, e) {
+      e.which === s.RETURN && e.preventDefault()
+    },
+    resolveComposition: function(t) {
+      if (!d) {
+        var e = p(g).stopAndFlushMutations();
+        g = null, h = true;
+        var r = a.set(t._latestEditorState, {
+          inCompositionMode: false
+        });
+        if (t.exitCurrentMode(), !e.size) return void t.update(r);
+        var n = r.getCurrentContent();
+        e.forEach(function(t, e) {
+          var s = o.decode(e),
+            u = s.blockKey,
+            c = s.decoratorKey,
+            l = s.leafKey,
+            p = r.getBlockTree(u).getIn([c, "leaves", l]),
+            h = p.start,
+            d = p.end,
+            g = r.getSelection().merge({
+              anchorKey: u,
+              focusKey: u,
+              anchorOffset: h,
+              focusOffset: d,
+              isBackward: false
+            }),
+            y = f(n, g),
+            v = n.getBlockForKey(u).getInlineStyleAt(h);
+          n = i.replaceText(n, g, t, v, y), r = a.set(r, {
+            currentContent: n
+          })
+        });
+        var s = l(r, c(t)).selectionState;
+        t.restoreEditorDOM();
+        var u = a.acceptSelection(r, s);
+        t.update(a.push(u, n, "insert-characters"))
+      }
     }
-  }
-};
-module.exports = E
+  };
+module.exports = y

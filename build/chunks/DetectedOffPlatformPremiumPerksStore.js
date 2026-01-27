@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 584584, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 584584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => N
+  A: () => j
 }), require("./896048.js"), require("./321073.js");
-var r, Chunk735438 = require("./735438.js"),
+var r, i, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk506774 = require("./506774.js"),
@@ -18,92 +17,81 @@ var r, Chunk735438 = require("./735438.js"),
   Chunk469778 = require("./469778.js"),
   Chunk67480 = require("./67480.js"),
   Chunk652215 = require("./652215.js");
+let A = "DetectedOffPlatformPremiumPerksStore",
+  y = {},
+  v = {},
+  x = [];
 
-function E(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-let y = "DetectedOffPlatformPremiumPerksStore",
-  b = {},
-  O = {},
-  v = [];
-
-function A() {
-  let e = false;
-  for (let {
-      id: t,
-      distributor: n
-    }
-    of p.Ay.getRunningGames())
-    if (null != t && n !== g.d3x.DISCORD)
-      for (let {
-          skuId: n,
-          applicationId: r
-        }
-        of g.m_i) r !== t || v.includes(n) || null == O[n] && (h.A.applicationIdsFetched.has(r) || h.A.applicationIdsFetching.has(r) || null != h.A.getForSku(n) || c.LM(r), O[n] = {
-        skuId: n,
-        applicationId: r
-      }, e = true);
-  return e && I(), e
-}
-
-function I() {
+function O() {
   let e = false;
   for (let {
       skuId: t,
       applicationId: n
     }
-    of a().values(O)) {
-    if (v.includes(t)) continue;
-    let r = f.A.getApplication(n);
+    of a().values(v)) {
+    if (x.includes(t)) continue;
+    let r = m.A.getApplication(n);
     if (null == r) {
-      f.A.isFetchingApplication(n) || f.A.didFetchingApplicationFail(n) || d.Ay.fetchApplication(n);
+      m.A.isFetchingApplication(n) || m.A.didFetchingApplicationFail(n) || p.Ay.fetchApplication(n);
       continue
     }
-    let i = m.A.get(t);
+    let i = _.A.get(t);
     if (null == i) {
-      m.A.isFetching(t) || m.A.didFetchingSkuFail(t) || u.EX(r.id, t);
+      _.A.isFetching(t) || _.A.didFetchingSkuFail(t) || d.EX(r.id, t);
       continue
     }
-    h.A.applicationIdsFetching.has(r.id) || h.A.isEntitledToSku(_.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != b[t] && (delete b[t], e = true) : (b[t] = {
+    h.A.applicationIdsFetching.has(r.id) || h.A.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != y[t] && (delete y[t], e = true) : (y[t] = {
       skuId: t,
       applicationId: n
     }, e = true)
   }
   return e
 }
-
-function S(e) {
-  let {
-    skuId: t
-  } = e;
-  if (delete b[t], v.includes(t)) returnfalse;
-  v.push(t), o.w.set(y, v)
-}
-
-function T() {
-  b = {}, O = {}
-}
-class C extends(r = Chunk311907.Ay.Store) {
+class E extends(r = Chunk311907.Ay.Store) {
   initialize() {
     var e;
-    this.waitFor(f.A, h.A, p.Ay, m.A, _.default), v = null != (e = o.w.get(y)) ? e : v
+    this.waitFor(m.A, h.A, f.Ay, _.A, g.default), x = null != (e = o.w.get(A)) ? e : x
   }
   getDetectedOffPlatformPremiumPerks() {
-    return a().values(b)
+    return a().values(y)
   }
-}
-E(C, "displayName", "DetectedOffPlatformPremiumPerksStore");
-let N = new C(Chunk73153.h, {
-  LOGOUT: T,
-  SKU_FETCH_SUCCESS: I,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: I,
-  ENTITLEMENT_CREATE: I,
-  APPLICATION_FETCH_SUCCESS: I,
-  DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: S,
-  RUNNING_GAMES_CHANGE: A
+}(i = "displayName") in E ? Object.defineProperty(E, i, {
+  value: "DetectedOffPlatformPremiumPerksStore",
+  enumerable: true,
+  configurable: true,
+  writable: true
+}) : E[i] = "DetectedOffPlatformPremiumPerksStore";
+let j = new E(Chunk73153.h, {
+  LOGOUT: function() {
+    y = {}, v = {}
+  },
+  SKU_FETCH_SUCCESS: O,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: O,
+  ENTITLEMENT_CREATE: O,
+  APPLICATION_FETCH_SUCCESS: O,
+  DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
+    let {
+      skuId: t
+    } = e;
+    if (delete y[t], x.includes(t)) returnfalse;
+    x.push(t), o.w.set(A, x)
+  },
+  RUNNING_GAMES_CHANGE: function() {
+    let e = false;
+    for (let {
+        id: t,
+        distributor: n
+      }
+      of f.Ay.getRunningGames())
+      if (null != t && n !== b.d3x.DISCORD)
+        for (let {
+            skuId: n,
+            applicationId: r
+          }
+          of b.m_i) r !== t || x.includes(n) || null == v[n] && (h.A.applicationIdsFetched.has(r) || h.A.applicationIdsFetching.has(r) || null != h.A.getForSku(n) || u.LM(r), v[n] = {
+          skuId: n,
+          applicationId: r
+        }, e = true);
+    return e && O(), e
+  }
 })

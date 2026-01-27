@@ -30,7 +30,7 @@ function f(e, t) {
   }, "called from wrong app context");
   r.default.subscribe(l.ZE4.OVERLAY, {
     token: t
-  }, t => e((0, o.$)(t)))
+  }, t => e((0, s.$)(t)))
 }
 
 function p(e, t) {
@@ -46,7 +46,7 @@ function p(e, t) {
       if (!t(r.token)) throw new i.A({
         errorCode: l.Lw6.INVALID_TOKEN
       }, "Invalid RPC auth token provided");
-      e((0, o.$)(r))
+      e((0, s.$)(r))
     }
   }), a.A.setEventHandler(l.ZE4.OVERLAY, {
     scope: c.LQ,
@@ -62,15 +62,15 @@ function p(e, t) {
 }
 
 function _(e) {
-  if (__OVERLAY__) return r.default.request(l.e$_.OVERLAY, (0, o.g)(e));
+  if (__OVERLAY__) return r.default.request(l.e$_.OVERLAY, (0, s.g)(e));
   try {
-    return a.A.dispatchToSubscriptions(l.ZE4.OVERLAY, {}, (0, o.g)(e)), Promise.resolve()
+    return a.A.dispatchToSubscriptions(l.ZE4.OVERLAY, {}, (0, s.g)(e)), Promise.resolve()
   } catch (i) {
     let t = e.type,
       n = [];
     t === l.kGV.DISPATCH && (n = e.payloads.map(e => e.type));
     let r = Error("Error dispatching overlay RPC: ".concat(i.message));
-    throw i.stack && (r.stack = i.stack), s.A.captureException(r, {
+    throw i.stack && (r.stack = i.stack), o.A.captureException(r, {
       tags: {
         source: "legacy-overlay"
       },

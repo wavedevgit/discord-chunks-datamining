@@ -53,10 +53,10 @@ function E(e) {
   i.useEffect(() => {
     n(53656)
   }, []);
-  let x = i.useCallback(() => {
-      (null == I ? true : I.id) != null && (c.A.open(I.id, m.BEX.INTEGRATIONS), o.A.setSection(m.wLn.APPLICATION, A), null == v || v())
+  let L = i.useCallback(() => {
+      (null == I ? true : I.id) != null && (c.A.open(I.id, m.BEX.INTEGRATIONS), s.A.setSection(m.wLn.APPLICATION, A), null == v || v())
     }, [A, null == I ? true : I.id, v]),
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       (0, f.openUserSettings)(u.X.AUTHORIZED_APPS_PANEL, {
         section: m.nc_.AUTHORIZED_APPS
       });
@@ -66,14 +66,14 @@ function E(e) {
       }), null == v || v()
     }, [y, v, E]);
   if (O === m.BRT.POPOUT) return null;
-  let j = [];
-  return D && S && j.push((0, r.jsx)(s.Drp, {
+  let M = [];
+  return D && S && M.push((0, r.jsx)(o.Drp, {
     id: "manage-server-integration",
     label: g.intl.string(g.t.IuSJT8),
-    action: x
-  }, "manage-server-integration")), P && R && j.push((0, r.jsx)(s.Drp, {
+    action: L
+  }, "manage-server-integration")), P && R && M.push((0, r.jsx)(o.Drp, {
     id: "manage-authorized-app",
     label: g.intl.string(g.t.V8ruvz),
-    action: L
-  }, "manage-authorized-app")), j
+    action: x
+  }, "manage-authorized-app")), M
 }

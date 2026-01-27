@@ -11,7 +11,7 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  wN: () => s
+  wN: () => o
 });
 class i {
   isFeatureTeenByDefault(e) {
@@ -37,7 +37,7 @@ class a {
     r(this, "gatedFeatures", true), this.gatedFeatures = e
   }
 }
-class s {
+class o {
   isFeatureAgeGated(e) {
     return this.ageVerification.isFeatureAgeGated(e)
   }
@@ -51,7 +51,7 @@ class s {
     return this.settings.hasTeenDefaults()
   }
   static fromConnectionOpen(e) {
-    return new s(new i(e.teen_by_default_settings), new a(e.age_gated_features))
+    return new o(new i(e.teen_by_default_settings), new a(e.age_gated_features))
   }
   constructor(e, t) {
     r(this, "settings", true), r(this, "ageVerification", true), this.settings = e, this.ageVerification = t

@@ -48,7 +48,7 @@ function y(e, t) {
   let {
     moreCount: n,
     profileOwner: a,
-    analyticsLocations: s,
+    analyticsLocations: o,
     onViewWishlist: c,
     isSingleCard: p = false,
     wishlistId: m,
@@ -58,10 +58,10 @@ function y(e, t) {
   } = t, O = null != e.bundleItems && e.bundleItems.length > 0, v = null != n && n > 0, A = E && !v, I = v ? _.intl.string(_.t.TxBQzD) : _.intl.string(_.t.pLPjsb), S = b === u.uS.POPULAR ? _.intl.string(_.t.Ig6VDH) : _.intl.string(_.t.ilhtIa), T = {
     title: A ? _.intl.string(_.t.HFhcqh) : I,
     body: A ? S : true,
-    renderIcon: A ? o.GM : true,
+    renderIcon: A ? s.GM : true,
     shouldShow: true
   }, C = () => {
-    v ? c() : g(e, a, s)
+    v ? c() : g(e, a, o)
   }, N = () => {
     if (O) {
       let t = {
@@ -101,13 +101,13 @@ function b(e, t) {
     profileOwner: n,
     analyticsLocations: i,
     wishlistId: a,
-    onViewWishlist: o
+    onViewWishlist: s
   } = t, l = null != e.bundleItems && e.bundleItems.length > 0, c = () => {
     g(e, n, i)
   }, u = y(e, {
     profileOwner: n,
     analyticsLocations: i,
-    onViewWishlist: o,
+    onViewWishlist: s,
     isSingleCard: true,
     wishlistId: a,
     index: 0
@@ -116,17 +116,17 @@ function b(e, t) {
     className: m.D5,
     children: [u, (0, r.jsxs)("div", {
       className: m.S7,
-      children: [(0, r.jsx)(s.DUT, {
+      children: [(0, r.jsx)(o.DUT, {
         onClick: c,
         className: m.Hh,
         "aria-label": _.intl.string(_.t.pLPjsb),
-        children: (0, r.jsx)(s.Text, {
+        children: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
           lineClamp: 2,
           children: e.skuName
         })
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: d

@@ -135,18 +135,18 @@ function D(e) {
   null != e.channelId && (N(), g.clear())
 }
 
-function x(e) {
+function L(e) {
   if (null === e.streamId) {
     let t = O(e.userId, e.context);
     g.set(t, d.r8.NO_OVERRIDE)
   }
 }
 
-function L(e) {
+function x(e) {
   h = e.section
 }
 
-function j(e) {
+function M(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Date.now(),
     r = {};
@@ -155,16 +155,16 @@ function j(e) {
     if (Array.isArray(a))
       if ("object" == typeof a[0]) {
         let t = Array.isArray(e) ? e : [],
-          s = r[i] = [];
+          o = r[i] = [];
         for (let e = 0; e < a.length; e++) {
           let r = t[e],
             i = "object" == typeof r ? r : {};
-          s.push(j(a[e], i, n))
+          o.push(M(a[e], i, n))
         }
       } else r[i] = a;
     else if ("object" == typeof a && null !== a) {
       let t = "object" == typeof e && null !== e ? e : {};
-      r[i] = j(a, t, n)
+      r[i] = M(a, t, n)
     } else if (i in E && "number" == typeof a) {
       let t = r[i] = Array.isArray(e) ? e : [];
       t.push({
@@ -176,7 +176,7 @@ function j(e) {
   return r
 }
 
-function M(e) {
+function j(e) {
   let {
     connectionStats: t
   } = e;
@@ -203,8 +203,8 @@ function k(e) {
     index: r
   } = e, i = m[t];
   if (null != n) {
-    let [e, a, s] = h.split(":");
-    if (e === t && parseInt(s) === r && null != c.default.getUser(a)) {
+    let [e, a, o] = h.split(":");
+    if (e === t && parseInt(o) === r && null != c.default.getUser(a)) {
       let {
         rtp: {
           inbound: e
@@ -212,12 +212,12 @@ function k(e) {
       } = n;
       Object.keys(e).includes(a) || (h = _)
     }
-    i[r] = j(n, i[r])
+    i[r] = M(n, i[r])
   } else delete i[r]
 }
 
 function U(e) {
-  o._w()
+  s._w()
 }
 
 function G(e) {
@@ -227,21 +227,21 @@ function G(e) {
   if (w(), !n.supports(d.O5.CONNECTION_REPLAY) || 0 === t.length) return;
   let r = n.createReplayConnection(d.x.DEFAULT, t);
   null != r && (S = r, r.on(a.yq.Video, (e, t, n, i, a) => {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT",
       mediaEngineConnectionId: r.mediaEngineConnectionId,
       userId: e,
       videoSsrc: null != i ? i : 0,
       streamId: null != t ? t : ""
     })
-  }), s.h.wait(() => o.ho()))
-}
-
-function V(e) {
-  A = A.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
+  }), o.h.wait(() => s.ho()))
 }
 
 function F(e) {
+  A = A.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
+}
+
+function V(e) {
   let {
     value: t
   } = e;
@@ -277,10 +277,10 @@ class H extends(r = Chunk311907.Ay.Store) {
   getOutboundStats(e) {
     var t, n, r;
     let i, a = this.getAllStats(e),
-      s = null == (t = a[0]) ? true : t.transport,
-      o = null == (r = a[0]) || null == (n = r.rtp) ? true : n.outbound,
-      l = null == o ? true : o.find(e => "video" === e.type);
-    return Array.isArray(null == s ? true : s.availableOutgoingBitrate) && s.availableOutgoingBitrate.length > 0 && (i = s.availableOutgoingBitrate[s.availableOutgoingBitrate.length - 1].value), {
+      o = null == (t = a[0]) ? true : t.transport,
+      s = null == (r = a[0]) || null == (n = r.rtp) ? true : n.outbound,
+      l = null == s ? true : s.find(e => "video" === e.type);
+    return Array.isArray(null == o ? true : o.availableOutgoingBitrate) && o.availableOutgoingBitrate.length > 0 && (i = o.availableOutgoingBitrate[o.availableOutgoingBitrate.length - 1].value), {
       codec: null == l ? true : l.codec.name,
       resolution: null == l ? true : l.resolution,
       bitrateEstimate: i
@@ -305,13 +305,13 @@ f(H, "displayName", "RTCDebugStore");
 let Y = new H(Chunk73153.h, {
   RTC_DEBUG_MODAL_OPEN: R,
   RTC_DEBUG_MODAL_CLOSE: P,
-  RTC_DEBUG_MODAL_SET_SECTION: L,
+  RTC_DEBUG_MODAL_SET_SECTION: x,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
-  RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: V,
-  RTC_DEBUG_SET_RECORDING_FLAG: F,
+  RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: F,
+  RTC_DEBUG_SET_RECORDING_FLAG: V,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: B,
   VOICE_CHANNEL_SELECT: D,
-  RTC_CONNECTION_VIDEO: x,
-  MEDIA_ENGINE_CONNECTION_STATS: M
+  RTC_CONNECTION_VIDEO: L,
+  MEDIA_ENGINE_CONNECTION_STATS: j
 })

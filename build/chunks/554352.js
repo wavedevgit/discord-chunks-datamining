@@ -4,17 +4,17 @@
 require.d(exports, {
   $$: () => a,
   kr: () => i,
-  mS: () => s
+  mS: () => o
 });
 var Chunk64700 = require("./64700.js"),
   i = Chunk64700.createContext(),
   a = Chunk64700.createContext();
 
-function s(e) {
+function o(e) {
   var t = e.children,
     n = r.useState(null),
-    s = n[0],
-    o = n[1],
+    o = n[0],
+    s = n[1],
     l = r.useRef(false);
   r.useEffect(function() {
     return function() {
@@ -22,10 +22,10 @@ function s(e) {
     }
   }, []);
   var c = r.useCallback(function(e) {
-    l.current || o(e)
+    l.current || s(e)
   }, []);
   return r.createElement(i.Provider, {
-    value: s
+    value: o
   }, r.createElement(a.Provider, {
     value: c
   }, t))

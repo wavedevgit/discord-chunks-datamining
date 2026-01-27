@@ -102,8 +102,8 @@ class b extends(r = Chunk64700.Component) {
       onRequestOpen: n,
       onRequestClose: r,
       align: a,
-      fixed: s,
-      useRawTargetDimensions: o,
+      fixed: o,
+      useRawTargetDimensions: s,
       onShiftClick: c,
       positionKey: u,
       popoutKey: d,
@@ -127,9 +127,9 @@ class b extends(r = Chunk64700.Component) {
       position: b,
       align: null != a ? a : y(b),
       autoInvert: O,
-      fixed: s,
+      fixed: o,
       nudgeAlignIntoViewport: v,
-      useRawTargetDimensions: o,
+      useRawTargetDimensions: s,
       renderPopout: this.renderPopout,
       spacing: A,
       shouldShow: null != g && t,
@@ -184,7 +184,7 @@ function O(e) {
       var e, t, n, i, a;
       null == (a = r.current) || null == (i = a.ref) || null == (n = i.current) || null == (t = n.layerRef) || null == (e = t.current) || e.updatePosition()
     }
-  }, [l]), (0, o.Ay)(() => {
+  }, [l]), (0, s.Ay)(() => {
     let e = setTimeout(t, 20 + 20 * Math.random());
     return () => clearTimeout(e)
   });
@@ -202,14 +202,14 @@ function O(e) {
 
   function g() {
     var e, t, n, a;
-    let o = null == (a = r.current) || null == (n = a.ref) || null == (t = n.current) || null == (e = t.domElementRef) ? true : e.current,
-      l = Math.max(100, null == o ? 100 : o.offsetWidth - 20);
+    let s = null == (a = r.current) || null == (n = a.ref) || null == (t = n.current) || null == (e = t.domElementRef) ? true : e.current,
+      l = Math.max(100, null == s ? 100 : s.offsetWidth - 20);
     return (0, i.jsx)("div", {
       className: u.w,
       style: {
         width: l
       },
-      children: (0, i.jsx)(s.y$y, {})
+      children: (0, i.jsx)(o.y$y, {})
     })
   }
   let [E, y] = a.useState(() => d), O = a.useRef(d);

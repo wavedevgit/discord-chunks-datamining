@@ -64,19 +64,19 @@ let h = "__DEBUG_PROFILE_EFFECTS_STORE",
     }
   },
   E = (0, Chunk265690.h)(e => _(f({}, m), {
-    upsertConfig: t => (0, o.r)(() => {
+    upsertConfig: t => (0, s.r)(() => {
       e(e => {
         let n = f({}, e);
         return n.profileEffects[t.skuId] = t, g(n), n
       })
     }),
-    deleteConfig: t => (0, o.r)(() => {
+    deleteConfig: t => (0, s.r)(() => {
       e(e => {
         let n = f({}, e);
         return delete n.profileEffects[t], g(n), n
       })
     }),
-    clearAll: () => (0, o.r)(() => {
+    clearAll: () => (0, s.r)(() => {
       e(() => (l.w.remove(h), {
         profileEffects: {}
       }))

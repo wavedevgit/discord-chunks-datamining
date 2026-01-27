@@ -2,7 +2,7 @@
 /** chunk id: 368854, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => s
+  P: () => o
 });
 var Chunk600975 = require("./600975.js");
 let i = {
@@ -22,7 +22,7 @@ let i = {
     }]
   });
 
-function s(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = true

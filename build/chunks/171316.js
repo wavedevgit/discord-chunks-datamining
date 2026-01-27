@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 171316, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 171316, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  KK: () => E,
-  NZ: () => y,
-  gr: () => g,
-  lH: () => A,
-  uM: () => b,
-  xs: () => m
+  KK: () => h,
+  NZ: () => b,
+  gr: () => f,
+  lH: () => x,
+  uM: () => E,
+  xs: () => A
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -22,81 +21,69 @@ var Chunk64700 = require("./64700.js"),
   Chunk500470 = require("./500470.js"),
   Chunk834981 = require("./834981.js"),
   Chunk835002 = require("./835002.js");
-let m = () => {
+let A = () => {
     let e = (0, p.x)(),
-      t = l.p7.useControlledSetting(null == e ? true : e.id);
+      t = o.p7.useControlledSetting(null == e ? true : e.id);
     return null == e ? null : {
-      explicitContentNonFriendDm: (0, f.J6)({
+      explicitContentNonFriendDm: (0, _.J6)({
         teenId: null == e ? true : e.id,
         setting: null == t ? true : t.explicitContentNonFriendDm
       }),
-      explicitContentFriendDm: (0, f.J6)({
+      explicitContentFriendDm: (0, _.J6)({
         teenId: null == e ? true : e.id,
         setting: null == t ? true : t.explicitContentFriendDm,
         isFriend: true
       }),
-      explicitContentGuilds: a.TO.BLUR
+      explicitContentGuilds: l.TO.BLUR
     }
   },
-  g = () => {
+  f = () => {
     let e = (0, p.x)(),
-      t = l.oQ.useControlledSetting(null == e ? true : e.id);
+      t = o.oQ.useControlledSetting(null == e ? true : e.id);
     if (null == e) return null;
     let {
       goreContentNonFriendDm: n,
       goreContentFriendDm: r
     } = null != t ? t : {};
     return {
-      goreContentNonFriendDm: (0, f.ky)(n) ? n : (0, s.jj)({
+      goreContentNonFriendDm: (0, _.ky)(n) ? n : (0, s.jj)({
         isDm: true
       }),
-      goreContentFriendDm: (0, f.ky)(r) ? r : (0, s.jj)({
+      goreContentFriendDm: (0, _.ky)(r) ? r : (0, s.jj)({
         isDm: true,
         isFriend: true
       }),
-      goreContentGuilds: a.TO.BLUR
+      goreContentGuilds: l.TO.BLUR
     }
   },
-  E = () => {
+  h = () => {
     let e = (0, p.x)(),
-      t = l.qz.useControlledSetting(null == e ? true : e.id),
-      n = l.yr.useControlledSetting(null == e ? true : e.id);
+      t = o.qz.useControlledSetting(null == e ? true : e.id),
+      n = o.yr.useControlledSetting(null == e ? true : e.id);
     return null != n ? n : !!t || t
   };
 
-function y() {
+function b() {
   let e = (0, p.x)(),
-    t = l.up.useControlledSetting(null == e ? true : e.id),
+    t = o.up.useControlledSetting(null == e ? true : e.id),
     n = r.useMemo(() => (0, c.Lx)(t), [t]);
   return n.mutualGuilds && !n.all
 }
 
-function b() {
-  return (0, _.Du)()
+function E() {
+  return (0, m.Du)()
 }
 
-function O(e) {
-  let t = (0, p.k)();
-  return (0, i.bG)([d.A], () => d.A.hasConsented(t, e))
-}
-
-function v(e) {
-  let t = (0, p.k)();
-  return r.useCallback(async n => {
-    if (null == t) return;
-    let r = n ? [e] : [],
-      i = n ? [] : [e];
-    try {
-      await u.Ay.updateTeenConsents(t, r, i)
-    } catch (e) {
-      o.A.showFailedToast(h.OB.GENERIC_ERROR)
-    }
-  }, [t, e])
-}
-
-function A(e) {
+function x(e) {
+  let t, n;
   return {
-    hasConsented: O(e),
-    updateConsent: v(e)
+    hasConsented: (t = (0, p.k)(), (0, i.bG)([u.A], () => u.A.hasConsented(t, e))),
+    updateConsent: (n = (0, p.k)(), r.useCallback(async t => {
+      if (null != n) try {
+        await d.Ay.updateTeenConsents(n, t ? [e] : [], t ? [] : [e])
+      } catch (e) {
+        a.A.showFailedToast(g.OB.GENERIC_ERROR)
+      }
+    }, [n, e]))
   }
 }

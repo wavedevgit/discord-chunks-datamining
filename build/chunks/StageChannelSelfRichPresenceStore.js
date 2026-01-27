@@ -32,12 +32,12 @@ function b(e, t, n) {
 let O = null;
 
 function v() {
-  var e, t, n, r, i, a, s;
-  let o = d.A.getVoiceChannelId();
-  if (null == o) return null;
-  let u = m.A.getStageInstanceByChannel(o);
+  var e, t, n, r, i, a, o;
+  let s = d.A.getVoiceChannelId();
+  if (null == s) return null;
+  let u = m.A.getStageInstanceByChannel(s);
   if (null == u) return null;
-  let b = l.A.getChannel(o);
+  let b = l.A.getChannel(s);
   if (null == b || !f.Ib(y.xBc.VIEW_CHANNEL, b)) return null;
   let v = c.A.getGuild(b.getGuildId());
   if (null == v || !v.features.has(y.GuildFeatures.DISCOVERABLE)) return null;
@@ -46,14 +46,14 @@ function v() {
     S = p.A.getMutableParticipants(b.id, _.ip.SPEAKER),
     T = S.filter(e => e.type === _.wY.STREAM).length,
     C = S.length - T,
-    N = p.A.getParticipantCount(o) - T,
+    N = p.A.getParticipantCount(s) - T,
     w = (null == I || null == (a = I.party) ? true : a.size) != null ? I.party.size[1] : 0;
   return {
     application_id: E.SS,
     name: null != (e = null != (t = u.topic) ? t : b.topic) ? e : b.name,
     type: (0, g.xn)(b.id) ? y.$pd.WATCHING : y.$pd.LISTENING,
     timestamps: {
-      start: null != (n = null == I || null == (s = I.timestamps) ? true : s.start) ? n : new Date().getTime()
+      start: null != (n = null == I || null == (o = I.timestamps) ? true : o.start) ? n : new Date().getTime()
     },
     assets: {
       small_image: null != (r = v.icon) ? r : true,

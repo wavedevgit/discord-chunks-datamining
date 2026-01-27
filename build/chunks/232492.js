@@ -14,7 +14,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js");
 
 function d(e, t) {
-  let n = (0, r.bG)([o.A], () => o.A.getChannel(t)),
+  let n = (0, r.bG)([s.A], () => s.A.getChannel(t)),
     {
       needSubscriptionToAccess: d
     } = (0, c.A)(null == n ? true : n.id);
@@ -27,7 +27,7 @@ function d(e, t) {
         connected: l.A.isInChannel(n.id),
         needSubscriptionToAccess: false,
         routeDirectlyToChannel: true
-      }) : (0, s.pX)(u.BVt.CHANNEL(e, n.id))
+      }) : (0, o.pX)(u.BVt.CHANNEL(e, n.id))
     },
     ariaLabel: (0, i.Ay)({
       channel: n

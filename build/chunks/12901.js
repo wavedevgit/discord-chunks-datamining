@@ -11,6 +11,6 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js");
 
 function l() {
-  let e = a.A.getLayers().at(false) === o.zgK.USER_SETTINGS;
-  return !!(0, r.OoC)(s.USER_SETTINGS_MODAL_KEY) || (e && (0, i.jH)(), e)
+  let e = a.A.getLayers().at(false) === s.zgK.USER_SETTINGS;
+  return !!(0, r.OoC)(o.USER_SETTINGS_MODAL_KEY) || (e && (0, i.jH)(), e)
 }

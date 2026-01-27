@@ -2,13 +2,13 @@
 /** chunk id: 914905, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => x,
+  A: () => L,
   J: () => D
 }), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
@@ -72,21 +72,21 @@ function w(e) {
     alt: t,
     spoiler: n,
     renderContent: a,
-    size: o
+    size: s
   } = e, [l, c] = i.useState(false);
   return (0, r.jsx)(m.Bs.Provider, {
     value: !n,
     children: (0, r.jsx)(m.Ay, {
-      containerStyles: o === O.L.CLIP ? {
+      containerStyles: s === O.L.CLIP ? {
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
         boxShadow: "none"
       } : true,
       type: m.Ay.Types.ATTACHMENT,
       onReveal: () => c(true),
-      className: s()(A.spoilerContainer, {
-        [A.sizeXSmall]: o === O.L.XSMALL,
-        [A.sizeXXSmall]: o === O.L.XXSMALL
+      className: o()(A.spoilerContainer, {
+        [A.sizeXSmall]: s === O.L.XSMALL,
+        [A.sizeXXSmall]: s === O.L.XXSMALL
       }),
       children: e => (0, r.jsxs)("div", {
         className: A.spoilerWrapper,
@@ -110,12 +110,12 @@ function R(e) {
     file: t,
     alt: n,
     spoiler: a,
-    size: o = O.L.MEDIUM,
+    size: s = O.L.MEDIUM,
     onMouseEnter: l
   } = e, [u, d] = i.useState(), [f, p] = i.useState({
     width: 0,
     height: 0
-  }), _ = o === O.L.SMALL;
+  }), _ = s === O.L.SMALL;
   i.useEffect(() => {
     if (null == t || false === N.includes(t.type)) return;
     let e = URL.createObjectURL(t);
@@ -141,17 +141,17 @@ function R(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
       return null == u ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)("img", {
         src: u,
-        className: s()(A.media, {
+        className: o()(A.media, {
           [A.spoiler]: e,
           [A.imageSmall]: _,
-          [A.sizeXSmall]: o === O.L.XSMALL,
-          [A.sizeXXSmall]: o === O.L.XXSMALL
+          [A.sizeXSmall]: s === O.L.XSMALL,
+          [A.sizeXXSmall]: s === O.L.XXSMALL
         }),
         "aria-hidden": true,
         alt: null != n ? n : "",
         style: t ? f : {}
       })
-    }, [u, _, o, n, f]),
+    }, [u, _, s, n, f]),
     g = i.useCallback(() => {
       null != u && (0, h.R)({
         location: "ChannelAttachmentUpload",
@@ -171,7 +171,7 @@ function R(e) {
     });
   return (0, r.jsx)("div", {
     onMouseEnter: l,
-    className: s()(A.mediaContainer, {
+    className: o()(A.mediaContainer, {
       [A.imageSmall]: _
     }),
     children: (0, r.jsx)(c.DUT, {
@@ -179,7 +179,7 @@ function R(e) {
       className: A.clickableMedia,
       "aria-label": b,
       children: (0, r.jsx)(w, {
-        size: o,
+        size: s,
         alt: n,
         spoiler: a,
         renderContent: m
@@ -193,7 +193,7 @@ function P(e) {
     file: t,
     alt: n,
     spoiler: a,
-    size: o = O.L.MEDIUM,
+    size: s = O.L.MEDIUM,
     onMouseEnter: l,
     onVideoLoadError: c
   } = e, [u, d] = i.useState(), f = i.useRef(null);
@@ -207,17 +207,17 @@ function P(e) {
     onMouseEnter: l,
     className: A.mediaContainer,
     children: (0, r.jsx)(w, {
-      size: o,
+      size: s,
       alt: n,
       spoiler: a,
       renderContent: e => (0, r.jsx)(_.A, {
         ref: f,
         src: u,
-        className: s()(A.media, {
+        className: o()(A.media, {
           [A.spoiler]: e,
-          [A.sizeClip]: o === O.L.CLIP,
-          [A.sizeXSmall]: o === O.L.XSMALL,
-          [A.sizeXXSmall]: o === O.L.XXSMALL
+          [A.sizeClip]: s === O.L.CLIP,
+          [A.sizeXSmall]: s === O.L.XSMALL,
+          [A.sizeXXSmall]: s === O.L.XXSMALL
         }),
         onError: c,
         preload: "none",
@@ -232,24 +232,24 @@ function D(e) {
   let {
     upload: n,
     size: a = O.L.MEDIUM,
-    onMouseEnter: o
+    onMouseEnter: s
   } = e, [l, c] = i.useState(false);
   return n.isImage && n.item.platform === f.xz.WEB ? (0, r.jsx)(R, {
     file: n.item.file,
     alt: n.description,
     spoiler: n.spoiler,
     size: a,
-    onMouseEnter: o
+    onMouseEnter: s
   }) : !l && n.isVideo && n.item.platform === f.xz.WEB ? (0, r.jsx)(P, {
     file: n.item.file,
     size: a,
     alt: n.description,
     spoiler: n.spoiler,
-    onMouseEnter: o,
+    onMouseEnter: s,
     onVideoLoadError: () => c(true)
   }) : (0, r.jsx)("div", {
-    onMouseEnter: o,
-    className: s()(A.icon, A[null != (t = n.classification) ? t : ""], {
+    onMouseEnter: s,
+    className: o()(A.icon, A[null != (t = n.classification) ? t : ""], {
       [A.imageSmall]: a === O.L.SMALL,
       [A.sizeXSmall]: a === O.L.XSMALL,
       [A.sizeXXSmall]: a === O.L.XXSMALL
@@ -264,7 +264,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     channelId: t,
     draftType: n,
@@ -275,7 +275,7 @@ function x(e) {
     canEdit: m = true,
     hideFileName: E = false,
     clip: I
-  } = e, T = null != I, N = (h = T ? O.L.CLIP : h) === O.L.SMALL, w = (0, o.bG)([g.A], () => {
+  } = e, T = null != I, N = (h = T ? O.L.CLIP : h) === O.L.SMALL, w = (0, s.bG)([g.A], () => {
     var e;
     return null == (e = g.A.getChannel(t)) ? true : e.guild_id
   }), R = e => {
@@ -287,12 +287,12 @@ function x(e) {
         let {
           name: r,
           description: i,
-          spoiler: s
+          spoiler: o
         } = e;
         u.A.update(t, a.id, n, {
           filename: r,
           description: i,
-          spoiler: s
+          spoiler: o
         })
       }
     })))
@@ -300,7 +300,7 @@ function x(e) {
   return (0, r.jsxs)(O.A, {
     actions: (0, r.jsxs)(i.Fragment, {
       children: [m ? (0, r.jsx)(b.A, {
-        className: s()({
+        className: o()({
           [A.action]: N
         }),
         tooltip: T ? v.intl.string(v.t.MYgdY2) : v.intl.string(v.t.cuurzA),
@@ -310,18 +310,18 @@ function x(e) {
         children: a.spoiler ? (0, r.jsx)(c.G3N, {
           size: "md",
           color: "currentColor",
-          className: s()({
+          className: o()({
             [A.actionBarIcon]: N
           })
         }) : (0, r.jsx)(c.bMW, {
           size: "xs",
           color: "currentColor",
-          className: s()({
+          className: o()({
             [A.actionBarIcon]: N
           })
         })
       }) : null, m && !T ? (0, r.jsx)(b.A, {
-        className: s()({
+        className: o()({
           [A.action]: N
         }),
         tooltip: v.intl.string(v.t.Y8ujqr),
@@ -329,12 +329,12 @@ function x(e) {
         children: (0, r.jsx)(c.R2l, {
           size: "xs",
           color: "currentColor",
-          className: s()({
+          className: o()({
             [A.actionBarIcon]: N
           })
         })
       }) : null, (0, r.jsx)(b.A, {
-        className: s()({
+        className: o()({
           [A.action]: N
         }),
         tooltip: T ? v.intl.string(v.t.MskAXa) : v.intl.string(v.t.vN7REz),
@@ -343,7 +343,7 @@ function x(e) {
         children: (0, r.jsx)(c.ucK, {
           size: "md",
           color: "currentColor",
-          className: s()({
+          className: o()({
             [A.actionBarIcon]: N
           })
         })
@@ -355,7 +355,7 @@ function x(e) {
     handleEditModal: R,
     keyboardModeEnabled: f,
     size: h,
-    className: s()({
+    className: o()({
       [A.attachmentItemSmall]: N
     }),
     children: [(0, r.jsx)(D, {

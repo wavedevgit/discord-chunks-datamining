@@ -11,15 +11,15 @@ var Chunk64700 = require("./64700.js"),
   Chunk485878 = require("./485878.js");
 
 function l() {
-  let e = (0, i.bG)([s.A], () => s.A.initialState(), []),
+  let e = (0, i.bG)([o.A], () => o.A.initialState(), []),
     t = (0, a.h)(null == e ? true : e.applicationId);
   return r.useMemo(() => {
     if (null == e) return;
     let n = [{
-      type: o.Wy.HOME
+      type: s.Wy.HOME
     }];
     return null != e.applicationId && null != t && n.push({
-      type: o.Wy.APPLICATION,
+      type: s.Wy.APPLICATION,
       application: t
     }), n
   }, [e, t])

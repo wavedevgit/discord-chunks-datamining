@@ -43,11 +43,11 @@ function h(e) {
     userId: r,
     emoji: i,
     reactionType: a
-  } = e, s = p.ensure(n, i, a);
+  } = e, o = p.ensure(n, i, a);
   if ("MESSAGE_REACTION_ADD" === t) {
     let e = u.default.getUser(r);
-    null != e && s.users.set(r, e)
-  } else s.users.delete(r)
+    null != e && o.users.set(r, e)
+  } else o.users.delete(r)
 }
 
 function m(e) {
@@ -61,15 +61,15 @@ function m(e) {
 }
 class g extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.A, s.A, u.default)
+    this.waitFor(c.A, o.A, u.default)
   }
   getReactions(e, t, n, r, i) {
     let a = p.ensure(t, n, i);
     if (!a.fetched) {
       let l = c.A.getChannel(e),
         u = null != l ? l.getGuildId() : null;
-      if (null != u && s.A.isLurking(u)) return;
-      o.ao({
+      if (null != u && o.A.isLurking(u)) return;
+      s.ao({
         channelId: e,
         messageId: t,
         emoji: n,

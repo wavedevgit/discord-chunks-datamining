@@ -35,7 +35,7 @@ class f {
     })
   }
   constructor() {
-    u(this, "_fetched", new Set), u(this, "_pending", new Set), u(this, "_flushHandler", new o.J_(32, () => this._flush()))
+    u(this, "_fetched", new Set), u(this, "_pending", new Set), u(this, "_flushHandler", new s.J_(32, () => this._flush()))
   }
 }
 let p = new f;
@@ -51,7 +51,7 @@ function h(e, t) {
   let n = r.useMemo(() => null != t ? {
     size: t.coverImageSize
   } : true, [t]);
-  return (0, s.cf)([c.A], () => null == e ? {
+  return (0, o.cf)([c.A], () => null == e ? {
     isFetching: false,
     localizedName: true,
     themes: true,

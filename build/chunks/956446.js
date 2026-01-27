@@ -34,16 +34,16 @@ class a {
   }
   constructor(e, t, n, i = .1, a = 10) {
     r(this, "threshold", true), r(this, "currentVolume", 0), r(this, "analyser", true), r(this, "interval", true), r(this, "fftBins", true), r(this, "source", true), r(this, "speakingHistory", true), r(this, "speakingHistoryIndex", 0), r(this, "speakingCounter", 0), r(this, "silenceThreshold", true), r(this, "silentFrames", true), r(this, "onProcess", null);
-    const s = e.createAnalyser();
-    s.fftSize = 512, s.smoothingTimeConstant = i;
-    const o = e.createMediaStreamSource(t);
-    o.connect(s);
+    const o = e.createAnalyser();
+    o.fftSize = 512, o.smoothingTimeConstant = i;
+    const s = e.createMediaStreamSource(t);
+    s.connect(o);
     const l = [];
     for (let e = 0; e < a; e++) l.push(false);
     const c = window.setInterval(() => {
       var e, t;
       this.update(), null == (e = (t = this).onProcess) || e.call(t, this.speaking, this.currentVolume)
     }, 20);
-    this.threshold = n, this.analyser = s, this.interval = c, this.fftBins = new Float32Array(s.fftSize), this.source = o, this.speakingHistory = l, this.silenceThreshold = this.speakingHistory.length, this.silentFrames = this.silenceThreshold
+    this.threshold = n, this.analyser = o, this.interval = c, this.fftBins = new Float32Array(o.fftSize), this.source = s, this.speakingHistory = l, this.silenceThreshold = this.speakingHistory.length, this.silentFrames = this.silenceThreshold
   }
 }

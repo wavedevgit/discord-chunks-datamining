@@ -35,7 +35,7 @@ class f extends Chunk439372.A {
         if (this.enabled === this.shouldEnable) return;
         null === i.A || true === i.A || null == (e = (t = i.A.window).setWindowContentProtection) || e.call(t, c.f, this.shouldEnable), this.enabled = this.shouldEnable
       } catch (e) {
-        d.error("Error setting content protection:", e), (0, o.pj)(e, l.Ue.OutOfProcess)
+        d.error("Error setting content protection:", e), (0, s.pj)(e, l.Ue.OutOfProcess)
       }
     }), u(this, "actions", {
       STREAM_START: e => {
@@ -46,7 +46,7 @@ class f extends Chunk439372.A {
         this.setContentProtection(r)
       },
       STREAM_STOP: () => {
-        null == s.A.getCurrentUserActiveStream() && this.setContentProtection(false)
+        null == o.A.getCurrentUserActiveStream() && this.setContentProtection(false)
       }
     })
   }

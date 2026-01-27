@@ -23,7 +23,7 @@ function l(e) {
   }, "content").trim() : "", p = t.required, _ = "" === f;
   if (null == n) return p ? {
     success: false,
-    error: o.intl.string(o.t.JZJQL2)
+    error: s.intl.string(s.t.JZJQL2)
   } : {
     success: true
   };
@@ -31,15 +31,15 @@ function l(e) {
     success: true
   } : p ? {
     success: false,
-    error: o.intl.string(o.t.JZJQL2)
+    error: s.intl.string(s.t.JZJQL2)
   } : {
     success: false,
-    error: (0, s.tE)(t)
+    error: (0, o.tE)(t)
   };
   let h = n.length > 1 ? {
       type: "text",
       text: f
     } : n[0],
     m = a.A[t.type](h, t, c, l, d);
-  return m.success || null != m.error || (m.error = (0, s.tE)(t)), m
+  return m.success || null != m.error || (m.error = (0, o.tE)(t)), m
 }

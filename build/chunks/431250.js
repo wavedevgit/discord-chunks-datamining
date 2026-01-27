@@ -3,7 +3,7 @@
 var Chunk765405 = require("./765405.js"),
   i = 1,
   a = Object.prototype.hasOwnProperty;
-module.exports = function(e, t, n, s, o, l) {
+module.exports = function(e, t, n, o, s, l) {
   var c = n & i,
     u = r(e),
     d = u.length;
@@ -19,8 +19,8 @@ module.exports = function(e, t, n, s, o, l) {
   for (var m = c; ++f < d;) {
     var g = e[p = u[f]],
       E = t[p];
-    if (s) var y = c ? s(E, g, p, t, e, l) : s(g, E, p, e, t, l);
-    if (!(true === y ? g === E || o(g, E, n, s, l) : y)) {
+    if (o) var y = c ? o(E, g, p, t, e, l) : o(g, E, p, e, t, l);
+    if (!(true === y ? g === E || s(g, E, n, o, l) : y)) {
       h = false;
       break
     }

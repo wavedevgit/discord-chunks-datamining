@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk812729 = require("./812729.js"),
   a = require.n(Chunk812729),
   Chunk735438 = require("./735438.js"),
-  o = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk713402 = require("./713402.js"),
   Chunk73153 = require("./73153.js"),
@@ -54,37 +54,37 @@ function P(e) {
 }
 
 function D(e) {
-  N.has(e) || (N.add(e), o()(_.A.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
-    j(e) && C.set(e.id, e)
+  N.has(e) || (N.add(e), s()(_.A.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
+    M(e) && C.set(e.id, e)
   }))
-}
-
-function x(e) {
-  let t = w[e];
-  if (null != t) return t;
-  let n = _.A.getChannel(e);
-  return null != n && n.isGuildStageVoice() && (D(n.guild_id), j(n)) ? L(e) : null
 }
 
 function L(e) {
   let t = w[e];
+  if (null != t) return t;
+  let n = _.A.getChannel(e);
+  return null != n && n.isGuildStageVoice() && (D(n.guild_id), M(n)) ? x(e) : null
+}
+
+function x(e) {
+  let t = w[e];
   return null == t && (t = new v.Ay(e), w[e] = t, t.rebuild()), t
 }
 
-function j(e) {
+function M(e) {
   return null != e && e.isGuildStageVoice() && O.Ay.countVoiceStatesForChannel(e.id) > 0
 }
 
-function M(e, t) {
+function j(e, t) {
   let n = _.A.getChannel(e);
-  return null != n && n.isGuildStageVoice() ? 0 === t.size() ? V(n.id) : null == C.get(n.id) && C.set(n.id, n) : V(e)
+  return null != n && n.isGuildStageVoice() ? 0 === t.size() ? F(n.id) : null == C.get(n.id) && C.set(n.id, n) : F(e)
 }
 
 function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : P();
   return t.reduce((t, n) => {
-    let r = L(n);
-    return e(r) ? (M(n, r), true) : t
+    let r = x(n);
+    return e(r) ? (j(n, r), true) : t
   }, false)
 }
 
@@ -98,11 +98,11 @@ function G(e) {
   N.delete(e)
 }
 
-function V(e) {
+function F(e) {
   return null != e && (delete w[e], C.delete(e), true)
 }
 
-function F() {
+function V() {
   N.clear(), C.clear(), w = {}
 }
 
@@ -134,7 +134,7 @@ function Y(e) {
 
 function W(e) {
   let t = false;
-  for (let n of P(e.guildId)) t = L(n).rebuild() || t;
+  for (let n of P(e.guildId)) t = x(n).rebuild() || t;
   return t
 }
 
@@ -168,7 +168,7 @@ function Z(e) {
   return null != n && !!N.has(n) && U(r, [t])
 }
 
-function X(e) {
+function Q(e) {
   let {
     streamKey: t
   } = e, {
@@ -179,13 +179,13 @@ function X(e) {
   return null != r && !!N.has(r) && U(i, [n])
 }
 
-function Q(e) {
+function X(e) {
   let {
     channel: {
       id: t
     }
   } = e;
-  return V(t)
+  return F(t)
 }
 
 function J(e) {
@@ -212,23 +212,23 @@ class et extends(r = Chunk311907.Ay.Store) {
   }
   getParticipantsVersion(e) {
     var t, n;
-    return null == e ? false : null != (t = null == (n = x(e)) ? true : n.version) ? t : false
+    return null == e ? false : null != (t = null == (n = L(e)) ? true : n.version) ? t : false
   }
   getMutableParticipants(e, t) {
     var n, r;
-    return null == e ? ee : null != (n = null == (r = x(e)) ? true : r.toArray(t)) ? n : ee
+    return null == e ? ee : null != (n = null == (r = L(e)) ? true : r.toArray(t)) ? n : ee
   }
   getMutableRequestToSpeakParticipants(e) {
     var t, n;
-    return null != (t = null == (n = x(e)) ? true : n.getRequestToSpeakParticipants()) ? t : ee
+    return null != (t = null == (n = L(e)) ? true : n.getRequestToSpeakParticipants()) ? t : ee
   }
   getRequestToSpeakParticipantsVersion(e) {
     var t, n;
-    return null != (t = null == (n = x(e)) ? true : n.requestToSpeakVersion) ? t : false
+    return null != (t = null == (n = L(e)) ? true : n.requestToSpeakVersion) ? t : false
   }
   getParticipantCount(e, t) {
     var n, r;
-    return null != (n = null == (r = x(e)) ? true : r.size(t)) ? n : 0
+    return null != (n = null == (r = L(e)) ? true : r.size(t)) ? n : 0
   }
   getChannels(e) {
     return D(null != e ? e : T), C.values(null != e ? e : T)
@@ -238,15 +238,15 @@ class et extends(r = Chunk311907.Ay.Store) {
   }
   getParticipant(e, t) {
     var n, r;
-    return null != (n = null == (r = x(e)) ? true : r.getParticipant(t)) ? n : null
+    return null != (n = null == (r = L(e)) ? true : r.getParticipant(t)) ? n : null
   }
 }
 S(et, "displayName", "StageChannelParticipantStore");
 let en = new et(Chunk73153.h, {
-  CONNECTION_OPEN: F,
-  OVERLAY_INITIALIZE: F,
+  CONNECTION_OPEN: V,
+  OVERLAY_INITIALIZE: V,
   VOICE_STATE_UPDATES: H,
-  CHANNEL_DELETE: Q,
+  CHANNEL_DELETE: X,
   GUILD_MEMBERS_CHUNK_BATCH: Y,
   USER_UPDATE: K,
   GUILD_MEMBER_REMOVE: K,
@@ -254,8 +254,8 @@ let en = new et(Chunk73153.h, {
   CHANNEL_UPDATES: J,
   GUILD_ROLE_UPDATE: $,
   RTC_CONNECTION_VIDEO: Z,
-  STREAM_CLOSE: X,
-  STREAM_DELETE: X,
+  STREAM_CLOSE: Q,
+  STREAM_DELETE: Q,
   RELATIONSHIP_ADD: z,
   RELATIONSHIP_REMOVE: z,
   RELATIONSHIP_UPDATE: z,

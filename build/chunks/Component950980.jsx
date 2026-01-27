@@ -24,16 +24,16 @@ function E(e) {
   let {
     url: t
   } = e, n = i.useCallback(() => {
-    (0, c.C)(t, () => (0, s.showToast)({
+    (0, c.C)(t, () => (0, o.showToast)({
       id: "experiment-link-copied",
       message: "Copied experiment link",
-      type: s.ToastType.SUCCESS
+      type: o.ToastType.SUCCESS
     }))
   }, [t]);
-  return (0, r.jsx)(s.DUT, {
+  return (0, r.jsx)(o.DUT, {
     className: g.wp,
     onClick: n,
-    children: (0, r.jsx)(s.qYV, {
+    children: (0, r.jsx)(o.qYV, {
       size: "sm",
       color: "currentColor"
     })
@@ -53,7 +53,7 @@ function y(e) {
     if (null == n);
     else if (null != b[n]) return b[n];
     else if (null != v[n]) return v[n]
-  }, [b, v, n]), S = o.default.getId(), T = (0, _.Fm)(A, S), C = i.useMemo(() => (0, u.GI)(A, T), [T, A]), N = (0, a.bG)([l.default], () => {
+  }, [b, v, n]), S = s.default.getId(), T = (0, _.Fm)(A, S), C = i.useMemo(() => (0, u.GI)(A, T), [T, A]), N = (0, a.bG)([l.default], () => {
     let e = l.default.getCurrentUser();
     return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
   });
@@ -64,15 +64,15 @@ function y(e) {
     D = () => {
       null != w && (P ? (0, d.t$)(A.system, n, null) : (0, d.t$)(A.system, n, w.value))
     },
-    x = (0, r.jsx)(E, {
+    L = (0, r.jsx)(E, {
       url: t
     }),
-    L = null;
-  return (R === m.Ps.EXPERIMENT_TREATMENT && null != w ? L = (0, r.jsx)(s.Text, {
+    x = null;
+  return (R === m.Ps.EXPERIMENT_TREATMENT && null != w ? x = (0, r.jsx)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: w.label
-  }) : null != T && (L = (0, r.jsxs)(s.Text, {
+  }) : null != T && (x = (0, r.jsxs)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: ["Server Config: ", C]
@@ -81,26 +81,26 @@ function y(e) {
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("div", {
         className: g.wx,
-        children: (0, r.jsxs)(s.BJc, {
+        children: (0, r.jsxs)(o.BJc, {
           direction: "horizontal",
           justify: "space-between",
-          children: [(0, r.jsxs)(s.BJc, {
+          children: [(0, r.jsxs)(o.BJc, {
             direction: "horizontal",
             gap: 8,
-            children: [(0, r.jsx)(s.gR_, {
+            children: [(0, r.jsx)(o.gR_, {
               size: "lg"
-            }), (0, r.jsxs)(s.BJc, {
+            }), (0, r.jsxs)(o.BJc, {
               direction: "vertical",
               gap: 0,
-              children: [(0, r.jsx)(s.Text, {
+              children: [(0, r.jsx)(o.Text, {
                 variant: "text-md/semibold",
                 children: A.title
-              }), L]
+              }), x]
             })]
-          }), x]
+          }), L]
         })
       })
-    }), null != w ? (0, r.jsx)(s.Button, {
+    }), null != w ? (0, r.jsx)(o.Button, {
       fullWidth: true,
       variant: P ? "critical-primary" : "primary",
       text: P ? "Clear Treatment ".concat(w.value) : "Apply Treatment ".concat(w.value),

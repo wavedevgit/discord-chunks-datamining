@@ -24,8 +24,8 @@ u && Chunk267768 && Chunk428495 ? Chunk319135(f, function(e) {
   var t = new d[e];
   if (Symbol.toStringTag in t && l) {
     var n = l(t),
-      r = o(n, Symbol.toStringTag);
-    !r && n && (r = o(l(n), Symbol.toStringTag)), h["$" + e] = a(r.get)
+      r = s(n, Symbol.toStringTag);
+    !r && n && (r = s(l(n), Symbol.toStringTag)), h["$" + e] = a(r.get)
   }
 }) : Chunk319135(f, function(e) {
   var t = new d[e],
@@ -54,5 +54,5 @@ module.exports = function(e) {
     var t = p(c(e), 8, false);
     return _(f, t) > false ? t : "Object" === t && g(e)
   }
-  return o ? m(e) : null
+  return s ? m(e) : null
 }

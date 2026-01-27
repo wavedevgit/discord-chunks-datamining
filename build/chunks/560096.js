@@ -2,7 +2,7 @@
 /** chunk id: 560096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = function(e, t, r) {
-  var i, a, s, o, l = this,
+  var i, a, o, s, l = this,
     c = {},
     u = 0,
     d = false;
@@ -15,5 +15,5 @@ module.exports = function(e, t, r) {
     }
     d || l.fireCallback(i[a].callback, r, i[a].combo)
   }
-  o = "keypress" === r.type && l.ignoreNextKeypress, s = n(921194), r.type !== l.nextExpectedAction || s(e) || o || l.resetSequences(c), l.ignoreNextKeypress = d && "keydown" === r.type
+  s = "keypress" === r.type && l.ignoreNextKeypress, o = n(921194), r.type !== l.nextExpectedAction || o(e) || s || l.resetSequences(c), l.ignoreNextKeypress = d && "keydown" === r.type
 }

@@ -58,7 +58,7 @@ function g(e) {
   let {
     token: t,
     onClose: n
-  } = e, [a, s] = i.useState("loading");
+  } = e, [a, o] = i.useState("loading");
   i.useEffect(() => {
     u.default.track(d.HAw.ONE_TIME_LOGIN_MODAL_OPENED, {
       has_token: null != t
@@ -67,21 +67,21 @@ function g(e) {
   let p = i.useCallback(async () => {
     try {
       if (null == t) {
-        s("error"), u.default.track(d.HAw.ONE_TIME_LOGIN_ERROR, {
+        o("error"), u.default.track(d.HAw.ONE_TIME_LOGIN_ERROR, {
           source: "web_modal",
           error_reason: "missing_token",
           error_message: "No token provided"
         });
         return
       }
-      s("loading"), u.default.track(d.HAw.ONE_TIME_LOGIN_ATTEMPTED, {
+      o("loading"), u.default.track(d.HAw.ONE_TIME_LOGIN_ATTEMPTED, {
         source: "web_modal"
-      }), await o.A.oneTimeLogin(t), s("success"), u.default.track(d.HAw.LOGIN_SUCCESSFUL, {
+      }), await s.A.oneTimeLogin(t), o("success"), u.default.track(d.HAw.LOGIN_SUCCESSFUL, {
         source: "web_modal",
         login_method: "one_time_login"
       })
     } catch (t) {
-      s("error");
+      o("error");
       let e = t instanceof Error ? t.message : "Login failed";
       u.default.track(d.HAw.ONE_TIME_LOGIN_ERROR, {
         source: "web_modal",
@@ -123,7 +123,7 @@ function E(e) {
     title: t,
     subtitle: n,
     body: i,
-    actions: s
+    actions: o
   } = g(e);
   return (0, r.jsxs)(a.dWK, m(_({}, e), {
     onClose: () => {
@@ -137,12 +137,12 @@ function E(e) {
     }), (0, r.jsx)(a.cwr, {
       children: i
     }), (0, r.jsx)(a.H7u, {
-      actions: null != s ? s : [],
+      actions: null != o ? o : [],
       actionsFullWidth: true
     })]
   }))
 }
 
 function y(e) {
-  (0, s.mMO)(() => Promise.resolve(t => (0, r.jsx)(E, _({}, t, e))))
+  (0, o.mMO)(() => Promise.resolve(t => (0, r.jsx)(E, _({}, t, e))))
 }

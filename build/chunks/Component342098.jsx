@@ -78,13 +78,13 @@ function v(e) {
     showBenefitsFirst: S,
     onComplete: T,
     forcesTransitionToGuild: C
-  } = e, N = (0, s.A)(), w = false;
-  (0, o.mMO)(async () => {
+  } = e, N = (0, o.A)(), w = false;
+  (0, s.mMO)(async () => {
     let {
       PaymentContextProvider: e
-    } = await Promise.resolve().then(n.bind(n, 156312)), s = (await n.e("72752").then(n.bind(n, 97491))).default, {
-      getApplicationPaymentSteps: o
-    } = await n.e("50243").then(n.bind(n, 107854)), c = o({
+    } = await Promise.resolve().then(n.bind(n, 156312)), o = (await n.e("50371").then(n.bind(n, 97491))).default, {
+      getApplicationPaymentSteps: s
+    } = await n.e("50243").then(n.bind(n, 107854)), c = s({
       guildId: v,
       showBenefitsFirst: S
     });
@@ -96,7 +96,7 @@ function v(e) {
       skuIDs: [b],
       children: (0, r.jsx)(m.Qt, {
         children: (0, r.jsx)(h.dX, {
-          children: (0, r.jsx)(s, O(y({}, n), {
+          children: (0, r.jsx)(o, O(y({}, n), {
             initialPlanId: t,
             skuId: b,
             analyticsLocations: d,
@@ -141,8 +141,8 @@ async function I(e) {
     applicationId: n,
     skuId: r,
     initialPlanId: i,
-    analyticsLocationObject: s,
-    analyticsLocations: o,
+    analyticsLocationObject: o,
+    analyticsLocations: s,
     renderHeader: l
   } = e, c = p.A.get(r), u = f.A.getForSKU(r);
   a()(null != c, "Failed to find SKU");
@@ -151,8 +151,8 @@ async function I(e) {
   let h = {
     initialPlanId: null != i ? i : null == (t = u[0]) ? true : t.id,
     activeSubscription: null,
-    analyticsLocations: o,
-    analyticsLocationObject: s,
+    analyticsLocations: s,
+    analyticsLocationObject: o,
     analyticsSubscriptionType: g.rzx.APPLICATION,
     renderHeader: l,
     planGroup: [],

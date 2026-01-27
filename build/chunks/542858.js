@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 542858, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 542858, original params: e,t,n (module,exports,require) **/
 module.exports = {
   iE: "wrapper__3425d",
   qd: "headerTitle__3425d",

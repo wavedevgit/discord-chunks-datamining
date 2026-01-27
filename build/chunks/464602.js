@@ -3,11 +3,11 @@
 "use strict";
 require.r(exports), require.d(exports, {
   Chrono: () => a.u,
-  Meridiem: () => o.FF,
-  ParsingComponents: () => s.BP,
-  ParsingResult: () => s.s4,
-  ReferenceWithTimezone: () => s.b5,
-  Weekday: () => o.Bw,
+  Meridiem: () => s.FF,
+  ParsingComponents: () => o.BP,
+  ParsingResult: () => o.s4,
+  ReferenceWithTimezone: () => o.b5,
+  Weekday: () => s.Bw,
   casual: () => g,
   createCasualConfiguration: () => O,
   createConfiguration: () => v,

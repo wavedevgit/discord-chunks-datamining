@@ -86,15 +86,15 @@ function P(e, t) {
   return i
 }
 let D = new Chunk626584.A("OverlayRenderStore"),
-  x = Chunk41984.V6.UNSET,
-  L = false,
-  j = false,
-  M = (0, Chunk723702.isWindows)() && Chunk723702.isPlatformEmbedded && !__OVERLAY__,
+  L = Chunk41984.V6.UNSET,
+  x = false,
+  M = false,
+  j = (0, Chunk723702.isWindows)() && Chunk723702.isPlatformEmbedded && !__OVERLAY__,
   k = null,
   U = {},
   G = {},
-  V = null,
   F = null,
+  V = null,
   B = new Set([Chunk56562.aI.FULLSCREEN, Chunk56562.aI.BORDERLESS_FULLSCREEN, Chunk56562.aI.UNKNOWN, Chunk56562.aI.MINIMIZED]),
   H = new Set([Chunk56562.aI.MINIMIZED, Chunk56562.aI.UNKNOWN]),
   Y = false,
@@ -112,7 +112,7 @@ function K(e, t, n) {
 }
 
 function z() {
-  return L
+  return x
 }
 
 function q() {
@@ -123,12 +123,12 @@ function Z() {
   return q() || z()
 }
 
-function X(e) {
+function Q(e) {
   var t;
   return null != (t = U[e]) ? t : null
 }
 
-function Q() {
+function X() {
   return Object.keys(U).map(Number)
 }
 
@@ -137,7 +137,7 @@ function J(e, t, n) {
   let i = null == (r = U[e]) ? true : r.state;
   U = w(C({}, U), {
     [e]: C({}, t)
-  }), i !== t.state && o.A.trackOverlayStateChanged(e, i, t.state, n)
+  }), i !== t.state && s.A.trackOverlayStateChanged(e, i, t.state, n)
 }
 
 function $(e) {
@@ -151,7 +151,7 @@ function ee(e) {
 }
 
 function et(e, t, n, r) {
-  let i = X(e);
+  let i = Q(e);
   if (null == i) return void D.error("Tried to set property ".concat(t, " to ").concat(n, " for untracked pid ").concat(e));
   let a = C({}, i);
   a[t] = n, J(e, a, r)
@@ -164,7 +164,7 @@ function en() {
 }
 
 function er(e, t) {
-  let n = X(e);
+  let n = Q(e);
   if (null == n) return;
   let r = n.timer;
   switch (t) {
@@ -181,19 +181,19 @@ function er(e, t) {
 }
 async function ei(e) {
   var t, n, r, i;
-  let a = X(e);
+  let a = Q(e);
   if (null != a) return a;
-  let s = f.Ay.getGameOrTransformedSubgameForPID(e),
-    o = Date.now();
-  if (null == s) return D.error("Tried to track game ".concat(e, " but it was not found in RunningGameStore")), null;
-  let l = (0, f.hw)(s),
+  let o = f.Ay.getGameOrTransformedSubgameForPID(e),
+    s = Date.now();
+  if (null == o) return D.error("Tried to track game ".concat(e, " but it was not found in RunningGameStore")), null;
+  let l = (0, f.hw)(o),
     {
       enabledOOP: c,
       enabledLegacy: u
     } = l,
     d = R(l, ["enabledOOP", "enabledLegacy"]),
-    p = _.A.getGameByName(s.name),
-    h = null != (t = await (0, O.E1)(e, 0)) ? t : s.fullscreenType,
+    p = _.A.getGameByName(o.name),
+    h = null != (t = await (0, O.E1)(e, 0)) ? t : o.fullscreenType,
     m = Date.now();
   D.verbose("Tracking game ".concat(e, " for overlay"));
   let g = w(C({}, d), {
@@ -201,7 +201,7 @@ async function ei(e) {
     oopEnabled: c,
     legacyEnabled: u,
     applicationId: null != (n = null == p ? true : p.id) ? n : null,
-    gameName: null != (r = s.name) ? r : null,
+    gameName: null != (r = o.name) ? r : null,
     state: E.AR.INITIALIZING,
     timer: en(),
     fullscreenType: h,
@@ -212,12 +212,12 @@ async function ei(e) {
     supportsOutOfProcess: null == (i = null == p ? true : p.supportsOutOfProcessOverlay) || i,
     successfullyShown: false
   });
-  return h !== s.fullscreenType && (g.fullscreenHistory[o] = s.fullscreenType), J(e, g, "initializeTrackedGame"), eU.emitChange(), g
+  return h !== o.fullscreenType && (g.fullscreenHistory[s] = o.fullscreenType), J(e, g, "initializeTrackedGame"), eU.emitChange(), g
 }
 
 function ea(e, t) {
   var n, r;
-  switch (x) {
+  switch (L) {
     case E.V6.UNSET:
       break;
     case E.V6.IN_PROCESS_V2:
@@ -282,8 +282,8 @@ function ea(e, t) {
     source: E.yp.LEGACY_ENABLED,
     reason: "Legacy overlay disabled"
   });
-  let s = null == (r = _.A.getGameByName(i.name)) ? true : r.id,
-    o = (0, O.zi)(i) || v.A.isLimitedInteractionOverrideEnabled(null != (n = i.id) ? n : s);
+  let o = null == (r = _.A.getGameByName(i.name)) ? true : r.id,
+    s = (0, O.zi)(i) || v.A.isLimitedInteractionOverrideEnabled(null != (n = i.id) ? n : o);
   switch (t) {
     case l.aI.MINIMIZED:
     case l.aI.WINDOWED:
@@ -291,7 +291,7 @@ function ea(e, t) {
     case l.aI.BORDERLESS_FULLSCREEN: {
       let e = a.enabledOOP && q(),
         n = a.enabledLegacy && z(),
-        r = o ? E.Ue.OutOfProcessLimitedInteraction : E.Ue.OutOfProcess;
+        r = s ? E.Ue.OutOfProcessLimitedInteraction : E.Ue.OutOfProcess;
       return w(C({}, a), {
         overlayMethod: e ? r : n ? (0, O.O4)(i).overlayMethod : E.Ue.Disabled,
         reason: "Normal case - overlayOOPEnabled: ".concat(e, ", overlayLegacyEnabled: ").concat(n, ", runningGameFullscreenType: ").concat(t)
@@ -316,7 +316,7 @@ function ea(e, t) {
       }
   }
 }
-async function es(e) {
+async function eo(e) {
   if (ee(e)) {
     D.verbose("Skipping track for pid ".concat(e, " - already tracked. Determining overlay method.")), await eh(new Set([e]));
     return
@@ -329,13 +329,13 @@ async function es(e) {
     fullscreen_type: t.fullscreenType
   }), et(e, "state", E.AR.WAITING_FOR_SCREEN_TYPE_RESOLUTION, "maybeTrackGame - 1"), eU.emitChange(), D.verbose("Determining initial overlay method for pid ".concat(e));
   let n = await ec(e);
-  D.verbose("Overlay method for pid ".concat(e, ": ").concat((0, O.gK)(n.overlayMethod))), er(e, E.sf.SCREEN_TYPE_RESOLUTION), await eu(e, n, "maybeTrackGame - 2"), em(O.T$), F = n.overlayMethod, eU.emitChange(), await o.A.updateTrackedGame(e, t)
+  D.verbose("Overlay method for pid ".concat(e, ": ").concat((0, O.gK)(n.overlayMethod))), er(e, E.sf.SCREEN_TYPE_RESOLUTION), await eu(e, n, "maybeTrackGame - 2"), em(O.T$), V = n.overlayMethod, eU.emitChange(), await s.A.updateTrackedGame(e, t)
 }
-async function eo(e) {
+async function es(e) {
   var t, n, r;
   if (!ee(e)) return void D.verbose("Skipping untrack for pid ".concat(e, " - not tracked"));
   D.verbose("Untracking game ".concat(e));
-  let i = X(e),
+  let i = Q(e),
     a = {
       source: null != (t = null == i ? true : i.source) ? t : E.yp.DEFAULT,
       enabledOOP: null != (n = null == i ? true : i.oopEnabled) && n,
@@ -343,7 +343,7 @@ async function eo(e) {
       overlayMethod: E.Ue.Disabled,
       reason: "Untracking game"
     };
-  await eu(e, a, "maybeUntrackGame", true), $(e), eU.emitChange(), await o.A.updateTrackedGame(e, null)
+  await eu(e, a, "maybeUntrackGame", true), $(e), eU.emitChange(), await s.A.updateTrackedGame(e, null)
 }
 async function el(e) {
   var t;
@@ -366,7 +366,7 @@ async function ec(e) {
     let n = await (0, O.E1)(e, (0, O.mk)("initial_status"));
     null != n && (t = n)
   }
-  let n = X(e);
+  let n = Q(e);
   return null == n ? (D.error("Tried to determine initial overlay method for untracked pid ".concat(e)), {
     source: E.yp.NO_TRACKED_GAME,
     enabledOOP: false,
@@ -379,19 +379,19 @@ async function eu(e, t, n) {
   var r;
   let i = arguments.length > 3 && true !== arguments[3] && arguments[3],
     a = t.overlayMethod,
-    s = a === E.Ue.Disabled ? i ? E.AR.OVERLAY_TEARING_DOWN : E.AR.OVERLAY_DISABLED : E.AR.WAITING_FOR_MODULE_TRACKING,
+    o = a === E.Ue.Disabled ? i ? E.AR.OVERLAY_TEARING_DOWN : E.AR.OVERLAY_DISABLED : E.AR.WAITING_FOR_MODULE_TRACKING,
     l = "".concat(n, ": ").concat(t.reason);
-  et(e, "state", s, l), et(e, "overlayMethod", a, l), et(e, "source", t.source, l), et(e, "oopEnabled", t.enabledOOP, l), et(e, "legacyEnabled", t.enabledLegacy, l), D.verbose("Updating overlay method for pid ".concat(e, ' "').concat(null == (r = X(e)) ? true : r.gameName, '" to ').concat((0, O.gK)(a))), eU.emitChange();
-  let c = X(e);
-  return null != c && await o.A.updateTrackedGame(e, c), o.A.updateOverlayMethod(e, a)
+  et(e, "state", o, l), et(e, "overlayMethod", a, l), et(e, "source", t.source, l), et(e, "oopEnabled", t.enabledOOP, l), et(e, "legacyEnabled", t.enabledLegacy, l), D.verbose("Updating overlay method for pid ".concat(e, ' "').concat(null == (r = Q(e)) ? true : r.gameName, '" to ').concat((0, O.gK)(a))), eU.emitChange();
+  let c = Q(e);
+  return null != c && await s.A.updateTrackedGame(e, c), s.A.updateOverlayMethod(e, a)
 }
 async function ed() {
   let e = new Set(f.Ay.getRunningGames().filter(e => f.Ay.getOverlayEnabledForGame(e)).map(e => e.pid)),
-    t = new Set(Q()),
+    t = new Set(X()),
     n = new Set([...t].filter(t => !e.has(t)));
-  for (let e of n) await eo(e), await (0, a.yy)(16);
+  for (let e of n) await es(e), await (0, a.yy)(16);
   let r = new Set([...e].filter(e => !t.has(e)));
-  for (let e of r) await es(e), await (0, a.yy)(16);
+  for (let e of r) await eo(e), await (0, a.yy)(16);
   let i = new Set([...t].filter(t => e.has(t)));
   await eh(i), (n.size > 0 || r.size > 0) && D.verbose("Tracked games have changes", {
     trackedPIDsNoLongerValid: n,
@@ -401,7 +401,7 @@ async function ed() {
 }
 async function ef(e) {
   let t = false,
-    n = X(e);
+    n = Q(e);
   if (null == n) return D.error("Tried to determine overlay method swap for untracked pid ".concat(e)), false;
   if (b.Q.has(n.state)) return D.verbose("Skipping overlay method swap for pid ".concat(e, " - state is ").concat(n.state)), false;
   let r = await (0, O.E1)(e, 0);
@@ -412,9 +412,9 @@ async function ef(e) {
   });
   let i = ea(n, r);
   if (n.overlayMethod === i.overlayMethod && n.oopEnabled === i.enabledOOP && n.legacyEnabled === i.enabledLegacy || (k === m.UNSET_PID || null === k) && n.state === E.AR.OVERLAY_RENDERING) return t;
-  let a = x === E.V6.OUT_OF_PROCESS_V3 || x === E.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
-    s = x === E.V6.IN_PROCESS_V2,
-    o = (0, O.e3)(r, q()),
+  let a = L === E.V6.OUT_OF_PROCESS_V3 || L === E.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
+    o = L === E.V6.IN_PROCESS_V2,
+    s = (0, O.e3)(r, q()),
     l = (0, O.Zj)(n, r, q());
   D.verbose("Overlay method different for pid ".concat(e), {
     oldOverlayMethod: n.overlayMethod,
@@ -422,8 +422,8 @@ async function ef(e) {
     fullscreenHistory: n.fullscreenHistory,
     newOverlayGameStatus: i,
     shouldSwitchToHook: l,
-    shouldSwitchToOutOfProcess: o,
-    isForcedInProcess: s,
+    shouldSwitchToOutOfProcess: s,
+    isForcedInProcess: o,
     isForcedOutOfProcess: a,
     legacyEnabled: z(),
     overlayEnabled: q()
@@ -439,10 +439,10 @@ async function ef(e) {
   switch (i.overlayMethod) {
     case E.Ue.OutOfProcess:
     case E.Ue.OutOfProcessLimitedInteraction:
-      (o && !s || a) && (c(), await e_(e, i));
+      (s && !o || a) && (c(), await e_(e, i));
       break;
     case E.Ue.Hook:
-      (l && !a || s || z()) && (c(), await ep(e, i));
+      (l && !a || o || z()) && (c(), await ep(e, i));
       break;
     case E.Ue.Disabled:
       c(), eu(e, i, "determineOverlayMethodSwap - disabled")
@@ -452,12 +452,12 @@ async function ef(e) {
 
 function ep(e, t) {
   var n;
-  return ee(e) ? (null == (n = X(e)) ? true : n.overlayMethod) === E.Ue.Hook ? (D.verbose("Hook requested for pid ".concat(e, " but already enabled")), Promise.resolve()) : (D.verbose("Enabling hook for pid ".concat(e)), et(e, "hasChangedRenderMode", true, "enableHook"), eu(e, t, "enableHook")) : (D.verbose("Hook requested for untracked pid ".concat(e)), Promise.resolve())
+  return ee(e) ? (null == (n = Q(e)) ? true : n.overlayMethod) === E.Ue.Hook ? (D.verbose("Hook requested for pid ".concat(e, " but already enabled")), Promise.resolve()) : (D.verbose("Enabling hook for pid ".concat(e)), et(e, "hasChangedRenderMode", true, "enableHook"), eu(e, t, "enableHook")) : (D.verbose("Hook requested for untracked pid ".concat(e)), Promise.resolve())
 }
 
 function e_(e, t) {
   var n;
-  return ee(e) ? (null == (n = X(e)) ? true : n.overlayMethod) === t.overlayMethod ? (D.verbose("OOP requested for pid ".concat(e, " but already enabled")), Promise.resolve()) : (D.verbose("Enabling OOP for pid ".concat(e)), et(e, "hasChangedRenderMode", true, "enableOutOfProcess"), eu(e, t, "enableOutOfProcess")) : (D.verbose("OOP requested for untracked pid ".concat(e)), Promise.resolve())
+  return ee(e) ? (null == (n = Q(e)) ? true : n.overlayMethod) === t.overlayMethod ? (D.verbose("OOP requested for pid ".concat(e, " but already enabled")), Promise.resolve()) : (D.verbose("Enabling OOP for pid ".concat(e)), et(e, "hasChangedRenderMode", true, "enableOutOfProcess"), eu(e, t, "enableOutOfProcess")) : (D.verbose("OOP requested for untracked pid ".concat(e)), Promise.resolve())
 }
 async function eh(e) {
   let t = false;
@@ -468,9 +468,9 @@ async function eh(e) {
 }
 
 function em(e) {
-  null == V && (__OVERLAY__ && D.error("Running Polling While in Overlay Context!"), V = setTimeout(async () => {
-    V = null;
-    let e = Q();
+  null == F && (__OVERLAY__ && D.error("Running Polling While in Overlay Context!"), F = setTimeout(async () => {
+    F = null;
+    let e = X();
     e.length > 0 && (em(O.T$), await eh(new Set(e)))
   }, e))
 }
@@ -479,18 +479,18 @@ async function eg(e, t) {
   if (D.info("setOverlayEnabled: supported", {
       newLegacyEnabled: e,
       newOopEnabled: t
-    }), L = e, g.x.update({
+    }), x = e, g.x.update({
       legacyEnabled: e,
       oopEnabled: t
     }), D.info("setOverlayEnabled", {
       newOopEnabled: t,
       newLegacyEnabled: e
     }), e || t) return void eA();
-  for (let e of Q()) await eo(e), await (0, a.yy)(16)
+  for (let e of X()) await es(e), await (0, a.yy)(16)
 }
 
 function eE() {
-  ed(), j = false, F = null, eL()
+  ed(), M = false, V = null, ex()
 }
 
 function ey(e) {
@@ -506,12 +506,12 @@ function ey(e) {
 
 function eb(e) {
   if (null != e.pids)
-    for (let t of e.pids) es(t)
+    for (let t of e.pids) eo(t)
 }
 
 function eO(e) {
-  for (let t of (__OVERLAY__ && D.error("Running handleRunningGamesChange While in Overlay Context!"), e.added)) es(t.pid);
-  for (let t of e.removed) eo(t.pid)
+  for (let t of (__OVERLAY__ && D.error("Running handleRunningGamesChange While in Overlay Context!"), e.added)) eo(t.pid);
+  for (let t of e.removed) es(t.pid)
 }
 
 function ev(e) {
@@ -520,7 +520,7 @@ function ev(e) {
     }), !Z()) {
     if (D.verbose("handleGameToggleOverlay: overlay not enabled"), "pid" in e.game) {
       let t = e.game.pid,
-        n = X(t);
+        n = Q(t);
       if (null != n) return eu(t, ea(n, n.fullscreenType), "handleGameToggleOverlay - global disabled"), true
     }
     returnfalse
@@ -532,7 +532,7 @@ function ev(e) {
       newOverlayV3EnabledValue: r
     } = e;
   if (ee(t)) {
-    let e = X(t);
+    let e = Q(t);
     (null == e ? true : e.legacyEnabled) !== n && et(t, "legacyEnabled", n, "handleGameToggleOverlay"), (null == e ? true : e.oopEnabled) !== r && et(t, "oopEnabled", null != r && r, "handleGameToggleOverlay")
   }
   let i = n && z(),
@@ -541,17 +541,17 @@ function ev(e) {
     pid: t,
     legacyEnabled: i,
     overlayV3Enabled: a
-  }), ee(t) ? eA() : es(t)) : eo(t), true
+  }), ee(t) ? eA() : eo(t)) : es(t), true
 }
 async function eA() {
   await eI(), await (0, a.yy)(2e3);
-  let e = Q(),
+  let e = X(),
     t = new Set([...f.Ay.getRunningGames().filter(e => f.Ay.getOverlayEnabledForGame(e)).map(e => e.pid), ...e]);
-  for (let n of (D.info("Retracking ".concat(t.size, " games (").concat(e.length, " already tracked)")), t)) await es(n), await (0, a.yy)(16);
+  for (let n of (D.info("Retracking ".concat(t.size, " games (").concat(e.length, " already tracked)")), t)) await eo(n), await (0, a.yy)(16);
   D.info("Retracked ".concat(e.length, " games"))
 }
 async function eI() {
-  for (let e of Q()) await eo(e), await (0, a.yy)(16)
+  for (let e of X()) await es(e), await (0, a.yy)(16)
 }
 
 function eS(e) {
@@ -565,11 +565,11 @@ function eT(e) {
 }
 
 function eC(e) {
-  return x = e.mode, eA(), true
+  return L = e.mode, eA(), true
 }
 
 function eN(e) {
-  if (null != X(e.pid)) return et(e.pid, "state", e.overlayState, e.reason), D.verbose("Updating overlay state for pid ".concat(e.pid, " to ").concat(e.overlayState)), e.overlayState === E.AR.WAITING_FOR_POPOUT_OPEN || e.overlayState === E.AR.WAITING_FOR_OVERLAY_OPEN ? er(e.pid, E.sf.MODULE_TRACKING) : e.overlayState === E.AR.OVERLAY_RENDERING && er(e.pid, E.sf.OVERLAY_RENDERING), true
+  if (null != Q(e.pid)) return et(e.pid, "state", e.overlayState, e.reason), D.verbose("Updating overlay state for pid ".concat(e.pid, " to ").concat(e.overlayState)), e.overlayState === E.AR.WAITING_FOR_POPOUT_OPEN || e.overlayState === E.AR.WAITING_FOR_OVERLAY_OPEN ? er(e.pid, E.sf.MODULE_TRACKING) : e.overlayState === E.AR.OVERLAY_RENDERING && er(e.pid, E.sf.OVERLAY_RENDERING), true
 }
 
 function ew() {
@@ -593,44 +593,44 @@ function eD(e) {
   return !(0, m.isValidGamePID)(e.pid) || ((0, m.setPID)(e.pid), true)
 }
 
-function ex(e) {
-  o.A.updateOverlayState(e.pid, E.AR.OVERLAY_RENDERING, "handleOverlaySuccessfullyShown"), ee(e.pid) && et(e.pid, "successfullyShown", true, "handleOverlaySuccessfullyShown"), K(e.pid, "overlay_successfully_shown", {
+function eL(e) {
+  s.A.updateOverlayState(e.pid, E.AR.OVERLAY_RENDERING, "handleOverlaySuccessfullyShown"), ee(e.pid) && et(e.pid, "successfullyShown", true, "handleOverlaySuccessfullyShown"), K(e.pid, "overlay_successfully_shown", {
     pid: e.pid
   });
-  let t = X(e.pid);
-  null != t && o.A.updateTrackedGame(e.pid, t)
+  let t = Q(e.pid);
+  null != t && s.A.updateTrackedGame(e.pid, t)
 }
 
-function eL() {
-  d.A.hasLoadedExperiments && !j && (j = true, eg(g.x.legacyEnabled, g.x.oopEnabled))
-}
-
-function ej() {
-  j = false, F = null
+function ex() {
+  d.A.hasLoadedExperiments && !M && (M = true, eg(g.x.legacyEnabled, g.x.oopEnabled))
 }
 
 function eM() {
-  j = false, F = null, eI()
+  M = false, V = null
+}
+
+function ej() {
+  M = false, V = null, eI()
 }
 class ek extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.default, d.A, _.A, v.A, f.Ay, I.A), this.syncWith([d.A], eL)
+    this.waitFor(p.default, d.A, _.A, v.A, f.Ay, I.A), this.syncWith([d.A], ex)
   }
   getDevToolsFocusedPidsWithTimestamp() {
     return W
   }
   getHasLoadedExperiments() {
-    return j
+    return M
   }
   getForcedRenderMode() {
-    return x
+    return L
   }
   isAnyOverlayRendering() {
     return this.getOverlayRenderingTrackedGames().length > 0
   }
   getOverlayMethod(e) {
     var t, n;
-    return __OVERLAY__ ? E.Ue.Hook : null != (t = null == (n = X(e)) ? true : n.overlayMethod) ? t : E.Ue.Disabled
+    return __OVERLAY__ ? E.Ue.Hook : null != (t = null == (n = Q(e)) ? true : n.overlayMethod) ? t : E.Ue.Disabled
   }
   isOverlayOOPEnabledForPid(e) {
     let t = this.getOverlayMethod(e);
@@ -638,10 +638,10 @@ class ek extends(r = Chunk311907.Ay.Store) {
   }
   hasChangedRenderMode(e) {
     var t, n;
-    return null != (t = null == (n = X(e)) ? true : n.hasChangedRenderMode) && t
+    return null != (t = null == (n = Q(e)) ? true : n.hasChangedRenderMode) && t
   }
   getTrackedGameByPid(e) {
-    return X(e)
+    return Q(e)
   }
   getTrackedGames() {
     return U
@@ -650,7 +650,7 @@ class ek extends(r = Chunk311907.Ay.Store) {
     return G
   }
   getGameOverlayStatus(e) {
-    let t = X(e.pid);
+    let t = Q(e.pid);
     return null == t ? null : C({
       enabledOOP: t.oopEnabled,
       enabledLegacy: t.legacyEnabled
@@ -670,7 +670,7 @@ class ek extends(r = Chunk311907.Ay.Store) {
       oopEnabled: false,
       legacyEnabled: false
     };
-    let t = X(e.pid);
+    let t = Q(e.pid);
     return null == t ? {
       oopEnabled: false,
       legacyEnabled: false
@@ -681,20 +681,20 @@ class ek extends(r = Chunk311907.Ay.Store) {
   }
   getRenderMethod(e) {
     var t, n;
-    if (null != e) return null != (t = null == (n = X(e)) ? true : n.overlayMethod) ? t : true
+    if (null != e) return null != (t = null == (n = Q(e)) ? true : n.overlayMethod) ? t : true
   }
   getMostRecentOverlayRenderMethod() {
-    return F
+    return V
   }
   getOverlayRenderingTrackedGames() {
     return Object.values(U).filter(e => e.overlayMethod !== E.Ue.Disabled && e.state === E.AR.OVERLAY_RENDERING)
   }
 }
 T(ek, "displayName", "OverlayRenderStore");
-let eU = new ek(Chunk73153.h, !M ? {} : {
+let eU = new ek(Chunk73153.h, !j ? {} : {
     CONNECTION_OPEN: eE,
-    LOGIN: ej,
-    LOGOUT: eM,
+    LOGIN: eM,
+    LOGOUT: ej,
     EXPERIMENT_OVERRIDE_BUCKET: eE,
     OVERLAY_SET_ENABLED: ey,
     GAME_LAUNCH_SUCCESS: eb,
@@ -706,7 +706,7 @@ let eU = new ek(Chunk73153.h, !M ? {} : {
     OVERLAY_CRASHED: eT,
     OVERLAY_RELOAD: eS,
     OVERLAY_FOCUSED: eD,
-    OVERLAY_SUCCESSFULLY_SHOWN: ex,
+    OVERLAY_SUCCESSFULLY_SHOWN: eL,
     OVERLAY_RENDER_DEBUG_MODE: eR,
     OVERLAY_RENDER_DEBUG_CLEAR_TRACKED_PIDS: eP
   }),

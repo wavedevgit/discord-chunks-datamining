@@ -25,7 +25,7 @@ function g(e) {
     disabled: t,
     channel: n,
     inputType: d
-  } = e, g = (0, u.p)(o.T);
+  } = e, g = (0, u.p)(s.T);
   return (0, i.bG)([l.A], () => n.isPrivate() || l.A.can(p.xBc.ATTACH_FILES, n) && l.A.can(p.xBc.SEND_MESSAGES, n)) && m.includes(d) ? (0, r.jsx)(a.m_, {
     shouldShow: !t && null != g,
     keyboardShortcut: g,
@@ -40,7 +40,7 @@ function g(e) {
           channelId: n.id
         })
       },
-      children: (0, r.jsx)(s.xfq, {
+      children: (0, r.jsx)(o.xfq, {
         size: "refresh_sm",
         color: "currentColor"
       })

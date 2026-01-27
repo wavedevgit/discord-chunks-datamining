@@ -46,20 +46,20 @@ let _ = Object.freeze(["en-CA", "en-AU", "en-NZ"]),
 
 function m(e, t, n) {
   var i;
-  let s = p({}, null != n ? n : {}),
+  let o = p({}, null != n ? n : {}),
     l = null != (i = null == n ? true : n.localeOverride) ? i : a.default.locale;
-  "en-US" === l && _.includes(a.default.systemLocale) && (s.currencyDisplay = "code"), "en-US" === l && (0, o.isWindows)() && "en-GB" === a.default.systemLocale && (s.currencyDisplay = "code");
+  "en-US" === l && _.includes(a.default.systemLocale) && (o.currencyDisplay = "code"), "en-US" === l && (0, s.isWindows)() && "en-GB" === a.default.systemLocale && (o.currencyDisplay = "code");
   let {
     maximumFractionDigits: c,
     minimumFractionDigits: u
-  } = s;
-  return 0 === c && null == u && (s.minimumFractionDigits = 0), (0, r.$g)(e, t, l, s)
+  } = o;
+  return 0 === c && null == u && (o.minimumFractionDigits = 0), (0, r.$g)(e, t, l, o)
 }
 
 function g(e) {
   if (Date.now() >= new Date("2026-08-05T22:00:00Z").getTime()) returnfalse;
   let t = null;
-  switch ((0, o.getPlatformName)()) {
+  switch ((0, s.getPlatformName)()) {
     case "android":
       t = n(5255).A.getUserCountry();
       break;
@@ -68,7 +68,7 @@ function g(e) {
       t = null == (r = i.A.getStoreFront()) ? true : r.country;
       break;
     default:
-      t = s.A.ipCountryCode
+      t = o.A.ipCountryCode
   }
   return "BG" === t && (null == e ? true : e.toLowerCase()) === u.Yr.EUR
 }

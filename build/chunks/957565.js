@@ -17,8 +17,8 @@ async function d(e, t, n) {
     return
   }
   try {
-    l ? o.Ay.copy(e) : await window.navigator.clipboard.writeText(e), null == t || t()
+    l ? s.Ay.copy(e) : await window.navigator.clipboard.writeText(e), null == t || t()
   } catch (e) {
-    null == n || n(e), s.A.captureException(e)
+    null == n || n(e), o.A.captureException(e)
   }
 }

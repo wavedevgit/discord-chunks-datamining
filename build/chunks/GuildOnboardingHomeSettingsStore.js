@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -91,7 +91,7 @@ function y(e) {
   if (null == i) returnfalse;
   i.resourceChannels = null != (t = i.resourceChannels) ? t : [];
   let a = i.resourceChannels.findIndex(e => e.channelId === r.channelId);
-  return false !== a && (i.resourceChannels[a] = o({}, r), true)
+  return false !== a && (i.resourceChannels[a] = s({}, r), true)
 }
 
 function b(e) {
@@ -103,7 +103,7 @@ function b(e) {
   if (null == i) returnfalse;
   i.newMemberActions = null != (t = i.newMemberActions) ? t : [];
   let a = i.newMemberActions.findIndex(e => e.channelId === r.channelId);
-  return false !== a && (i.newMemberActions[a] = o({}, r), true)
+  return false !== a && (i.newMemberActions[a] = s({}, r), true)
 }
 class O extends(r = Chunk311907.Ay.Store) {
   getSettings(e) {
@@ -150,7 +150,7 @@ class O extends(r = Chunk311907.Ay.Store) {
     return null == e || null == t ? null : null != (n = null == (i = u[e]) || null == (r = i.newMemberActions) ? true : r.find(e => e.channelId === t)) ? n : null
   }
 }
-s(O, "displayName", "GuildOnboardingHomeSettingsStore");
+o(O, "displayName", "GuildOnboardingHomeSettingsStore");
 let v = new O(Chunk73153.h, {
   GUILD_HOME_SETTINGS_FETCH_START: h,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: _,

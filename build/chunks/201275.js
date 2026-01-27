@@ -18,7 +18,7 @@ function l(e, t) {
   let {
     customIconSrc: r,
     unicodeEmoji: i
-  } = null != (n = (0, o.sE)(e, t)) ? n : {};
+  } = null != (n = (0, s.sE)(e, t)) ? n : {};
   if (null != r || null != i) return {
     src: r,
     name: e.name,
@@ -38,16 +38,16 @@ function c(e) {
   } = e, {
     guild: f,
     role: p
-  } = (0, i.cf)([s.A, a.A], () => ({
-    guild: null == d ? s.A.getGuild(t) : true,
+  } = (0, i.cf)([o.A, a.A], () => ({
+    guild: null == d ? o.A.getGuild(t) : true,
     role: null == u && null != n ? a.A.getRole(t, n) : true
   }), [t, n, u, d]), _ = null != d ? d : f, h = null != u ? u : p;
   return r.useMemo(() => {
-    if (null != _ && null != h && (0, o.fm)(_, h)) return l(h, c)
+    if (null != _ && null != h && (0, s.fm)(_, h)) return l(h, c)
   }, [_, h, c])
 }
 
 function u(e, t) {
-  let n = (0, i.bG)([s.A], () => s.A.getGuild(e));
-  if (null != n && (0, o.fm)(n, t)) return l(t)
+  let n = (0, i.bG)([o.A], () => o.A.getGuild(e));
+  if (null != n && (0, s.fm)(n, t)) return l(t)
 }

@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   J: () => a,
-  P: () => s
+  P: () => o
 });
 var Chunk600975 = require("./600975.js"),
   Chunk688151 = require("./688151.js"),
   a = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.POPULAR = 1] = "POPULAR", e[e.RECENT = 2] = "RECENT", e
   }({});
-let s = (0, Chunk600975.C)({
+let o = (0, Chunk600975.C)({
   kind: "user",
   id: "2024-10_shop_skus_in_gift_flow",
   label: "Gift Collectibles in DM",

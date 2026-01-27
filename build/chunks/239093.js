@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A8: () => E,
-  AT: () => o,
+  AT: () => s,
   Eb: () => v,
   Iv: () => f,
   M8: () => h,
@@ -11,7 +11,7 @@ require.d(exports, {
   V5: () => _,
   XN: () => d,
   ZU: () => u,
-  d$: () => s,
+  d$: () => o,
   g0: () => c,
   nY: () => m,
   qN: () => b,
@@ -32,10 +32,10 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s {}
-a(s, "TOS_LINK", "https://discord.com/terms"), a(s, "COMMUNITY_GUIDELINES", "https://discord.com/guidelines"), a(s, "APPEALS_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), a(s, "WARNING_SYSTEM_HELPCENTER_LINK", "https://support.discord.com/hc/articles/18210965981847"), a(s, "AGE_VERIFICATION_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), a(s, "SPAM_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731&tf_360055270593=__dc.ticket_form-tnsv1_appeals_other_questions__"), a(s, "LEARN_MORE_UU_APPEAL_LINK", "https://support.discord.com/hc/articles/360041820932");
 class o {}
-a(o, "CLASSIFICATION_ID", "classification_id"), a(o, "INCIDENT_TIMESTAMP", "incident_time");
+a(o, "TOS_LINK", "https://discord.com/terms"), a(o, "COMMUNITY_GUIDELINES", "https://discord.com/guidelines"), a(o, "APPEALS_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), a(o, "WARNING_SYSTEM_HELPCENTER_LINK", "https://support.discord.com/hc/articles/18210965981847"), a(o, "AGE_VERIFICATION_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), a(o, "SPAM_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731&tf_360055270593=__dc.ticket_form-tnsv1_appeals_other_questions__"), a(o, "LEARN_MORE_UU_APPEAL_LINK", "https://support.discord.com/hc/articles/360041820932");
+class s {}
+a(s, "CLASSIFICATION_ID", "classification_id"), a(s, "INCIDENT_TIMESTAMP", "incident_time");
 var l = function(e) {
   return e.POLICY_VIOLATION_DETAIL = "policy_violation_detail", e.LEARN_MORE_LINK = "learn_more_link", e
 }({});

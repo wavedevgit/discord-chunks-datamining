@@ -36,10 +36,10 @@ let u = 50,
   f = (e, t) => {
     let n = e.toRgb(),
       r = t.toRgb(),
-      [a, s, l] = (0, o.tJ)([n.r, n.g, n.b], [r.r, r.g, r.b], u);
+      [a, o, l] = (0, s.tJ)([n.r, n.g, n.b], [r.r, r.g, r.b], u);
     return i()({
       r: a,
-      g: s,
+      g: o,
       b: l
     })
   },
@@ -81,7 +81,7 @@ let u = 50,
     })
   },
   m = e => t => {
-    let n = (0, a.bG)([s.A], () => s.A.saturation);
+    let n = (0, a.bG)([o.A], () => o.A.saturation);
     if (null == t) return {};
     let r = {
       backgroundColors: p(e, t.backgroundColors),

@@ -17,10 +17,10 @@ module.exports = function(e) {
       scope: "symbol",
       match: RegExp(`<${i}(/${i})*>`)
     },
-    s = "[A-Za-z0-9_\\+\\.-]+",
-    o = {
+    o = "[A-Za-z0-9_\\+\\.-]+",
+    s = {
       scope: "symbol",
-      match: RegExp(`(\\.\\.|\\.|~)?/(${s})?(/${s})*(?=[\\s;])`)
+      match: RegExp(`(\\.\\.|\\.|~)?/(${o})?(/${o})*(?=[\\s;])`)
     },
     l = t.either("==", "=", "\\+\\+", "\\+", "<=", "<\\|", "<", ">=", ">", "->", "//", "/", "!=", "!", "\\|\\|", "\\|>", "\\?", "\\*", "&&"),
     c = {
@@ -102,7 +102,7 @@ module.exports = function(e) {
     g = [u, e.HASH_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.COMMENT(/\/\*\*(?!\/)/, /\*\//, {
       subLanguage: "markdown",
       relevance: 0
-    }), r, h, a, o, m, f, d, c];
+    }), r, h, a, s, m, f, d, c];
   return p.contains = g, {
     name: "Nix",
     aliases: ["nixos"],

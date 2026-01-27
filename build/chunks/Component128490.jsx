@@ -1,7 +1,7 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 128490, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => j
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,39 +20,39 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk195723 = require("./195723.js");
 
-function h(e) {
+function j(e) {
   let {
     user: t,
     displayProfile: n,
-    guildId: h,
-    onClose: g
-  } = e, v = (0, i.bG)([a.A], () => {
+    guildId: j,
+    onClose: h
+  } = e, b = (0, i.bG)([a.A], () => {
     var e;
     return null == (e = a.A.getUserProfile(t.id)) ? true : e.application
-  }), b = (0, i.bG)([s.A, o.A], () => s.A.getChannel(o.A.getChannelId()));
+  }), v = (0, i.bG)([s.A, o.A], () => s.A.getChannel(o.A.getChannelId()));
   return (0, l.jsxs)(r.IpV, {
     fade: true,
-    className: j.XG,
-    children: [(null == n ? true : n.bio) != null && (null == n ? true : n.bio) !== "" && (0, l.jsx)(d.A, {
+    className: g.XG,
+    children: [(null == n ? true : n.bio) != null && (null == n ? true : n.bio) !== "" && (0, l.jsx)(c.A, {
       userBio: n.bio,
       setLineClamp: false
-    }), (null == v ? true : v.popularApplicationCommandIds) != null && null != b && (0, l.jsx)(c.A, {
-      applicationId: v.id,
-      commandIds: v.popularApplicationCommandIds,
-      channel: b,
-      guildId: h,
-      onClick: g
-    }), (null == n ? true : n.guildId) != null && (0, l.jsx)(m.A, {
+    }), (null == b ? true : b.popularApplicationCommandIds) != null && null != v && (0, l.jsx)(d.A, {
+      applicationId: b.id,
+      commandIds: b.popularApplicationCommandIds,
+      channel: v,
+      guildId: j,
+      onClick: h
+    }), (null == n ? true : n.guildId) != null && (0, l.jsx)(f.A, {
       userId: t.id,
       guildId: n.guildId
     }), (0, l.jsx)(p.A, {
       heading: x.intl.string(x.t["A//N4k"]),
       children: (0, l.jsx)(u.A, {
         userId: t.id,
-        guildId: h,
+        guildId: j,
         tooltipDelay: A.In
       })
-    }), (0, l.jsx)(f.A, {
+    }), (0, l.jsx)(m.A, {
       userId: t.id
     })]
   })

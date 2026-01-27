@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 502060, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 502060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => l,
-  G: () => o
+  A: () => o,
+  G: () => a
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,24 +10,24 @@ var Chunk397927 = require("./397927.js"),
   Chunk195043 = require("./195043.jsx"),
   Chunk645022 = require("./645022.js");
 
-function o(e) {
+function a(e) {
   let {
     children: t,
     title: n,
-    description: a
+    description: l
   } = e;
   return (0, r.jsxs)("div", {
     className: s.L1,
-    children: [(null != n || null != a) && (0, r.jsxs)("div", {
+    children: [(null != n || null != l) && (0, r.jsxs)("div", {
       className: s.Km,
       children: [null != n && (0, r.jsx)(i.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: n
-      }), null != a && (0, r.jsx)(i.Text, {
+      }), null != l && (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: a
+        children: l
       })]
     }), (0, r.jsx)("div", {
       className: s.Yq,
@@ -39,16 +38,16 @@ function o(e) {
   })
 }
 
-function l(e) {
+function o(e) {
   let {
     children: t,
     title: n,
     description: i,
     webSetting: s
   } = e;
-  return (0, r.jsx)(a.x, {
+  return (0, r.jsx)(l.x, {
     setting: s,
-    children: (0, r.jsx)(o, {
+    children: (0, r.jsx)(a, {
       title: n,
       description: i,
       children: t

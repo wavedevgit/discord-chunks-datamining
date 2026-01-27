@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 590089, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 590089, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => c
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk397927 = require("./397927.js"),
   Chunk411809 = require("./411809.js");
@@ -18,38 +17,38 @@ function c(e) {
     leadingElement: n,
     primaryTrailingElement: i,
     secondaryTrailingElement: c,
-    title: u,
-    description: d,
-    onClick: f,
+    title: d,
+    description: u,
+    onClick: _,
     ref: p,
-    style: _
+    style: m
   } = e;
-  return (0, r.jsxs)(o.DUT, {
-    className: a()(l.EA, {
-      [l.vk]: null != f
+  return (0, r.jsxs)(a.DUT, {
+    className: l()(o.EA, {
+      [o.vk]: null != _
     }),
-    onClick: f,
+    onClick: _,
     innerRef: p,
-    style: _,
+    style: m,
     children: [null != n && (0, r.jsx)("div", {
-      className: l._y,
+      className: o._y,
       children: n
     }), (0, r.jsxs)("div", {
-      className: l.jw,
+      className: o.jw,
       children: [(0, r.jsx)("div", {
-        className: l.eg,
+        className: o.eg,
         children: (0, r.jsx)(s.DZT, {
           variant: "heading-md/medium",
           color: t,
-          children: u
+          children: d
         })
-      }), null != d && (0, r.jsx)(s.EYj, {
+      }), null != u && (0, r.jsx)(s.EYj, {
         variant: "text-sm/normal",
         color: "text-subtle",
-        children: d
+        children: u
       })]
     }), (null != i || null != c) && (0, r.jsxs)("div", {
-      className: l.fW,
+      className: o.fW,
       children: [i, c]
     })]
   })

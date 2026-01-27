@@ -8,7 +8,7 @@ var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
   Chunk524799 = require("./524799.js"),
   Chunk652215 = require("./652215.js");
-let o = 20;
+let s = 20;
 
 function l(e) {
   let {
@@ -24,7 +24,7 @@ function l(e) {
   let l = async e => {
     try {
       let t = await r.Bo.get({
-        url: s.Rsh.APPLICATIONS_GAMES_SUPPLEMENTAL,
+        url: o.Rsh.APPLICATIONS_GAMES_SUPPLEMENTAL,
         query: {
           application_ids: e
         },
@@ -42,5 +42,5 @@ function l(e) {
       })
     }
   };
-  for (; n.length > 0;) l(n.splice(0, o))
+  for (; n.length > 0;) l(n.splice(0, s))
 }

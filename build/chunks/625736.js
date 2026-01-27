@@ -10,7 +10,7 @@ var Chunk224507 = require("./224507.js"),
   Chunk547576 = require("./547576.js"),
   Chunk47276 = require("./47276.js");
 
-function o(e) {
+function s(e) {
   return e && e.__esModule ? e.default : e
 }
 
@@ -36,7 +36,7 @@ function c(e) {
   } = e.selectionManager;
   return {
     checkboxProps: {
-      "aria-label": (0, s.o)(o(i.A), "@react-aria/table").format("single" === r ? "select" : "selectAll"),
+      "aria-label": (0, o.o)(s(i.A), "@react-aria/table").format("single" === r ? "select" : "selectAll"),
       isSelected: n,
       isDisabled: "multiple" !== r || 0 === e.collection.size || 1 === e.collection.rows.length && "loader" === e.collection.rows[0].type,
       isIndeterminate: !t && !n,

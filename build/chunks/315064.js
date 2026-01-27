@@ -79,7 +79,7 @@ class p extends Chunk143236.EventEmitter {
     this._chosenLocale = e, this.loadPromise = this._loadMessagesForLocale(e), this.emit("locale", this._chosenLocale, t)
   }
   setUpdateRules(e) {
-    (0, o.Zs)(e)
+    (0, s.Zs)(e)
   }
   getLanguages() {
     return this._languages
@@ -118,7 +118,7 @@ class p extends Chunk143236.EventEmitter {
   }
   getDefaultLocale() {
     var e, t, n;
-    let r = null != (e = (0, s.c)()) ? e : c,
+    let r = null != (e = (0, o.c)()) ? e : c,
       i = this._languages.filter(e => {
         let {
           enabled: t
@@ -172,16 +172,16 @@ class p extends Chunk143236.EventEmitter {
         messages: r,
         defaultMessages: i,
         locale: a
-      } = e, s = r[t] || i[t];
-      if ("object" == typeof s) return n({
-        messages: s,
+      } = e, o = r[t] || i[t];
+      if ("object" == typeof o) return n({
+        messages: o,
         defaultMessages: i[t],
         locale: a
       });
       try {
-        return (0, o.I4)(s, a)
+        return (0, s.I4)(o, a)
       } catch (e) {
-        if (console.warn("Failed parsing intl key '".concat(String(t), "' in locale '").concat(a, "' defaulting to English"), e), "string" == typeof(s = i[t])) return (0, o.I4)(s, a)
+        if (console.warn("Failed parsing intl key '".concat(String(t), "' in locale '").concat(a, "' defaulting to English"), e), "string" == typeof(o = i[t])) return (0, s.I4)(o, a)
       }
       return ""
     }), l(this, "_handleNewListener", e => {

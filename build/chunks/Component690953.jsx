@@ -1,7 +1,7 @@
-/** Chunk was on 89209 **/
+/** Chunk was on 93952 **/
 /** chunk id: 690953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -50,22 +50,22 @@ function O(e, t) {
   }), e
 }
 
-function v(e) {
+function p(e) {
   let t = (0, l.bG)([o.A], () => o.A.getChannelId() === e.id),
-    v = (0, s.A)(),
-    b = (null == v ? true : v.channelId) === e.id,
-    p = (0, a.J)(e) && !e.isPrivate(),
-    N = (0, a.A)(e),
-    h = !(0, l.bG)([c.A], () => c.A.isInChannel(e.id)) && N || p,
-    _ = (0, f.A)();
-  return b || 0 !== _.length ? b ? (0, r.jsx)(i.Drp, {
+    p = (0, s.A)(),
+    v = (null == p ? true : p.channelId) === e.id,
+    b = (0, a.J)(e) && !e.isPrivate(),
+    h = (0, a.A)(e),
+    N = !(0, l.bG)([c.A], () => c.A.isInChannel(e.id)) && h || b,
+    _ = (0, A.A)();
+  return v || 0 !== _.length ? v ? (0, r.jsx)(i.Drp, {
     label: y.intl.string(y.t.PlwgdU),
     id: "handoff",
     action: () => {
-      (0, d.x)(v)
+      (0, d.x)(p)
     },
-    icon: (0, A.A)(true),
-    disabled: h
+    icon: (0, f.A)(true),
+    disabled: N
   }) : _.map(l => {
     var a, o;
     return (0, r.jsx)(i.Drp, {
@@ -92,8 +92,8 @@ function v(e) {
           }))
         })
       },
-      icon: (0, A.A)(l.type),
-      disabled: h
+      icon: (0, f.A)(l.type),
+      disabled: N
     }, l.id)
   }) : null
 }

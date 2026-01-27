@@ -47,7 +47,7 @@ class p extends Chunk143236.EventEmitter {
         overrideType: e.mimeType
       });
       this.filename = n.filename, this.isImage = n.isImage, this.isVideo = n.isVideo, this.mimeType = n.type, this.origin = e.origin, this.durationSecs = e.durationSecs, this.waveform = e.waveform
-    } else this.id = null != (n = e.id) ? n : a().uniqueId("upload"), this.classification = o.TX(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = e.file.type, this.origin = e.origin;
-    this.isThumbnail = e.isThumbnail, this.clip = e.clip, this.uniqueId = (0, s.A)(), this.spoiler = false, this.description = null
+    } else this.id = null != (n = e.id) ? n : a().uniqueId("upload"), this.classification = s.TX(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = e.file.type, this.origin = e.origin;
+    this.isThumbnail = e.isThumbnail, this.clip = e.clip, this.uniqueId = (0, o.A)(), this.spoiler = false, this.description = null
   }
 }

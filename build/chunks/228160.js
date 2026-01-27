@@ -29,7 +29,7 @@ let {
   pl: () => n.e("38632").then(n.t.bind(n, 7451, 19)),
   "pt-BR": () => n.e("32437").then(n.t.bind(n, 595796, 19)),
   ro: () => n.e("94893").then(n.t.bind(n, 967772, 19)),
-  ru: () => n.e("66863").then(n.t.bind(n, 978962, 19)),
+  ru: () => n.e("89244").then(n.t.bind(n, 978962, 19)),
   "sv-SE": () => n.e("68864").then(n.t.bind(n, 795395, 19)),
   th: () => n.e("78736").then(n.t.bind(n, 575283, 19)),
   tr: () => n.e("38386").then(n.t.bind(n, 333449, 19)),

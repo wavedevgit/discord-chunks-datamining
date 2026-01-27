@@ -27,8 +27,8 @@ function p(e) {
       return (0, d.p)();
     case i.M.ACTIVITIES_VOICE_LAUNCHER_BADGE:
       return (0, l.C)({
-        storeState: o.Ay.getState(),
-        surface: s.YI.VOICE_LAUNCHER
+        storeState: s.Ay.getState(),
+        surface: o.YI.VOICE_LAUNCHER
       });
     case i.M.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK:
       return 0;

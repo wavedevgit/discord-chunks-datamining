@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Eg: () => i,
-  JN: () => s,
+  JN: () => o,
   kT: () => a
 });
 var Chunk384684 = require("./384684.js");
@@ -20,7 +20,7 @@ function a(e) {
   return e.roles.some(e => t.has(e))
 }
 
-function s(e, t) {
+function o(e, t) {
   if ((null == e ? true : e.roles) == null || 0 === e.roles.length || null == e.guildId) returnfalse;
   if (a(e)) {
     let n = r.A.getUserSubscriptionRoles(e.guildId),

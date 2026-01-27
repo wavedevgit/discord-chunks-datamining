@@ -8,7 +8,7 @@ var Chunk626584 = require("./626584.js"),
   Chunk723702 = require("./723702.js"),
   Chunk77729 = require("./77729.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,18 +16,18 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = new Chunk626584.A("ProgressBarManager");
+let s = new Chunk626584.A("ProgressBarManager");
 class l {
   setProgress(e, t) {
     if (!(0, i.isDesktop)()) throw Error("cannot set progress from non-native");
-    null != this.taskID && this.taskID !== e ? o.warn("".concat(this.taskID, " is already running. cannot set ").concat(e)) : (this.taskID = e, a.A.window.setProgressBar(t))
+    null != this.taskID && this.taskID !== e ? s.warn("".concat(this.taskID, " is already running. cannot set ").concat(e)) : (this.taskID = e, a.A.window.setProgressBar(t))
   }
   clearProgress(e) {
     if (!(0, i.isDesktop)()) throw Error("cannot clear progress from non-native");
-    null == this.taskID ? o.warn("cannot clear progress. No current progress running.") : this.taskID !== e ? o.warn("cannot clear progress of ".concat(e, " when ").concat(this.taskID, " is running")) : (this.taskID = null, a.A.window.setProgressBar(false))
+    null == this.taskID ? s.warn("cannot clear progress. No current progress running.") : this.taskID !== e ? s.warn("cannot clear progress of ".concat(e, " when ").concat(this.taskID, " is running")) : (this.taskID = null, a.A.window.setProgressBar(false))
   }
   constructor() {
-    s(this, "taskID", true)
+    o(this, "taskID", true)
   }
 }
 let c = new l

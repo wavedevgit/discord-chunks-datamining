@@ -4,8 +4,8 @@
 var Chunk344815 = require("./344815.js"),
   Chunk339626 = require("./339626.js"),
   Chunk647055 = require("./647055.js"),
-  s = require("./380744.js")("toStringTag"),
-  o = Object,
+  o = require("./380744.js")("toStringTag"),
+  s = Object,
   l = "Arguments" === Chunk647055(function() {
     return arguments
   }()),
@@ -16,5 +16,5 @@ var Chunk344815 = require("./344815.js"),
   };
 module.exports = Chunk344815 ? Chunk647055 : function(e) {
   var t, n, r;
-  return true === e ? "Undefined" : null === e ? "Null" : "string" == typeof(n = c(t = o(e), s)) ? n : l ? a(t) : "Object" === (r = a(t)) && i(t.callee) ? "Arguments" : r
+  return true === e ? "Undefined" : null === e ? "Null" : "string" == typeof(n = c(t = s(e), o)) ? n : l ? a(t) : "Object" === (r = a(t)) && i(t.callee) ? "Arguments" : r
 }

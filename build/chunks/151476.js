@@ -14,12 +14,12 @@ function l() {
   let {
     enabled: e,
     cameraUnavailable: t
-  } = (0, a.cf)([s.A], () => {
+  } = (0, a.cf)([o.A], () => {
     var e, t;
-    let n = null == (e = null == (t = i()(s.A.getVideoDevices()).values().first()) ? true : t.disabled) || e;
+    let n = null == (e = null == (t = i()(o.A.getVideoDevices()).values().first()) ? true : t.disabled) || e;
     return {
-      enabled: s.A.isVideoEnabled(),
-      cameraUnavailable: n || !s.A.supports(o.O5.VIDEO)
+      enabled: o.A.isVideoEnabled(),
+      cameraUnavailable: n || !o.A.supports(s.O5.VIDEO)
     }
   });
   return {

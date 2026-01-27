@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 972982, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 972982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => C
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,29 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk978551 = require("./978551.jsx"),
   Chunk100817 = require("./100817.jsx"),
   Chunk531525 = require("./531525.js");
-
-function v(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function A(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      v(e, t, n[t])
-    })
-  }
-  return e
-}
-class I extends Chunk64700.PureComponent {
+class O extends Chunk64700.PureComponent {
   renderEnabled() {
     let {
       backupCodes: e,
@@ -54,48 +31,65 @@ class I extends Chunk64700.PureComponent {
       togglingSMS: i
     } = this.props;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(h.A, {
+      children: [(0, r.jsx)(g.A, {
         backupCodes: e,
         currentUser: n,
         hasTOTPEnabled: t
-      }), e.length > 0 && (0, r.jsxs)(l.BJc, {
+      }), e.length > 0 && (0, r.jsxs)(o.BJc, {
         gap: 16,
-        children: [(0, r.jsx)(m.A, {
+        children: [(0, r.jsx)(A.A, {
           backupCodes: e
-        }), (0, r.jsx)(l.cGx, {})]
+        }), (0, r.jsx)(o.cGx, {})]
       }), t && (0, r.jsx)(c.x, {
-        setting: O.H.ACCOUNT_SMS_BACKUP,
-        children: (0, r.jsx)(E.A, {
+        setting: x.H.ACCOUNT_SMS_BACKUP,
+        children: (0, r.jsx)(h.A, {
           currentUser: n,
           togglingSMS: i
         })
       }), (0, r.jsx)(c.x, {
-        setting: O.H.ACCOUNT_SECURITY_KEYS,
-        children: (0, r.jsx)(u.A, {})
+        setting: x.H.ACCOUNT_SECURITY_KEYS,
+        children: (0, r.jsx)(d.A, {})
       })]
     })
   }
   renderDisabled() {
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(g.A, {}), (0, r.jsx)(u.A, {})]
+      children: [(0, r.jsx)(f.A, {}), (0, r.jsx)(d.A, {})]
     })
   }
   render() {
     let {
       currentUser: e
     } = this.props;
-    return _.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(b.A, {}) : (0, r.jsx)(y.A, {})
+    return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(E.A, {}) : (0, r.jsx)(b.A, {})
   }
 }
 
-function S(e) {
-  let t = (0, o.bG)([p.default], () => p.default.getCurrentUser());
+function C(e) {
+  let t = (0, a.bG)([p.default], () => p.default.getCurrentUser());
   s()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-  let n = (0, o.cf)([f.A, d.default], () => ({
-    togglingSMS: f.A.togglingSMS,
-    hasTOTPEnabled: d.default.hasTOTPEnabled()
+  let n = (0, a.cf)([_.A, u.default], () => ({
+    togglingSMS: _.A.togglingSMS,
+    hasTOTPEnabled: u.default.hasTOTPEnabled()
   }));
-  return (0, r.jsx)(I, A({
+  return (0, r.jsx)(O, function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      })
+    }
+    return e
+  }({
     currentUser: t
   }, n, e))
 }

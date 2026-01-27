@@ -10,7 +10,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk835245 = require("./835245.js"),
   Chunk604238 = require("./604238.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -73,17 +73,17 @@ function p(e, t) {
   if ("string" == typeof e) return e;
   let {
     block: n
-  } = e, i = d(e, ["block"]), s = t[n];
-  if (null == s) return null;
-  let o = (() => {
+  } = e, i = d(e, ["block"]), o = t[n];
+  if (null == o) return null;
+  let s = (() => {
     if ("children" in e) {
       if (!Array.isArray(e.children) && null != e.children) return p(e.children, t);
       if (null != e.children && e.children.length > 0) return e.children.map(e => p(e, t))
     }
     return null
   })();
-  return (0, r.jsx)(s, u(l({}, i), {
-    children: o
+  return (0, r.jsx)(o, u(l({}, i), {
+    children: s
   }), (0, a.A)())
 }
 
@@ -92,7 +92,7 @@ function _(e, t) {
 }
 
 function h(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s.E;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : o.E;
   try {
     return _(e, t), true
   } catch (e) {
@@ -103,10 +103,10 @@ let m = e => {
   let {
     template: t,
     overrides: n
-  } = e, a = (0, s.e)({
+  } = e, a = (0, o.e)({
     overrides: n
-  }), o = i.useMemo(() => _(t, a), [t, a]);
+  }), s = i.useMemo(() => _(t, a), [t, a]);
   return (0, r.jsx)("div", {
-    children: o
+    children: s
   })
 }

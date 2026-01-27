@@ -10,7 +10,7 @@ require.d(exports, {
   V$: () => c,
   VA: () => E,
   Ve: () => g,
-  XU: () => o,
+  XU: () => s,
   Yw: () => f,
   j5: () => d,
   kR: () => b,
@@ -21,7 +21,7 @@ var Chunk927813 = require("./927813.js"),
   Chunk860689 = require("./860689.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let o = "Notifications Inbox",
+let s = "Notifications Inbox",
   l = 88,
   c = Chunk927813.A.Millis.WEEK,
   u = 50,
@@ -30,7 +30,7 @@ let o = "Notifications Inbox",
 function f(e) {
   return (0, i.yF)({
     id: a.gNP,
-    name: "bookmarks" === e ? s.intl.string(s.t["2pAkDA"]) : s.intl.string(s.t.HcoRu0),
+    name: "bookmarks" === e ? o.intl.string(o.t["2pAkDA"]) : o.intl.string(o.t.HcoRu0),
     description: "",
     icon: true,
     features: []

@@ -47,17 +47,17 @@ function p(e) {
 
 function _(e) {
   var t, n, i, a;
-  let o = (0, r.bG)([s.A], () => s.A.getGuild(e), [e]);
-  return null == e ? e : null == o ? o : {
-    identityGuildId: o.id,
+  let s = (0, r.bG)([o.A], () => o.A.getGuild(e), [e]);
+  return null == e ? e : null == s ? s : {
+    identityGuildId: s.id,
     identityEnabled: true,
-    tag: null != (t = null == (i = o.profile) ? true : i.tag) ? t : true,
-    badge: null != (n = null == (a = o.profile) ? true : a.badge) ? n : true
+    tag: null != (t = null == (i = s.profile) ? true : i.tag) ? t : true,
+    badge: null != (n = null == (a = s.profile) ? true : a.badge) ? n : true
   }
 }
 
 function h(e, t, n) {
-  let s = (0, r.bG)([o.default], () => o.default.getUser(e), [e]),
+  let o = (0, r.bG)([s.default], () => s.default.getUser(e), [e]),
     l = (0, r.bG)([a.Ay], () => {
       if (null == t || null == e) return null;
       let n = a.Ay.getMember(t, e);
@@ -66,6 +66,6 @@ function h(e, t, n) {
     {
       tag: c,
       guildId: u
-    } = p(true !== n ? n : null == s ? true : s.primaryGuild);
+    } = p(true !== n ? n : null == o ? true : o.primaryGuild);
   return null != u && null != c && !l
 }

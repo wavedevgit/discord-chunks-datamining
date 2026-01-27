@@ -23,7 +23,7 @@ module.exports = function(e) {
       className: "string",
       begin: "(#\\d+)+"
     },
-    s = {
+    o = {
       beginKeywords: "function constructor destructor procedure method",
       end: "[:;]",
       keywords: "function constructor|10 destructor|10 procedure|10 method|10",
@@ -37,7 +37,7 @@ module.exports = function(e) {
         contains: [i, a]
       }, n, r]
     },
-    o = {
+    s = {
       scope: "punctuation",
       match: /;/,
       relevance: 0
@@ -47,6 +47,6 @@ module.exports = function(e) {
     case_insensitive: true,
     keywords: t,
     illegal: '("|\\$[G-Zg-z]|\\/\\*|</|=>|->)',
-    contains: [n, r, e.C_LINE_COMMENT_MODE, i, a, e.NUMBER_MODE, s, o]
+    contains: [n, r, e.C_LINE_COMMENT_MODE, i, a, e.NUMBER_MODE, o, s]
   }
 }

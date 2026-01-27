@@ -94,7 +94,7 @@ let S = {
       totalAvailableBoostsCount: w
     } = e, {
       analyticsLocations: R
-    } = (0, c.Ay)(), P = (0, u.A)(), D = h.M2T[C], x = D - w, L = C <= N || b, j = L && C <= i.premiumTier, M = L && C < i.premiumTier, k = L && C === i.premiumTier, U = i.premiumTier < C && w >= D, {
+    } = (0, c.Ay)(), P = (0, u.A)(), D = h.M2T[C], L = D - w, x = C <= N || b, M = x && C <= i.premiumTier, j = x && C < i.premiumTier, k = x && C === i.premiumTier, U = i.premiumTier < C && w >= D, {
       scaleFactor: G
     } = (0, l.zhh)({
       from: {
@@ -107,8 +107,8 @@ let S = {
         tension: 360,
         friction: 12
       }
-    }), V = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.animated.div, {
+    }), F = (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(o.animated.div, {
         className: y.sO,
         style: {
           transform: G.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
@@ -124,8 +124,8 @@ let S = {
       }) : true]
     });
 
-    function F() {
-      !L || U || (0, p.g)({
+    function V() {
+      !x || U || (0, p.g)({
         analyticsLocations: R,
         analyticsLocation: {
           page: h.liQ.PREMIUM_GUILD_USER_MODAL,
@@ -133,16 +133,16 @@ let S = {
           object: h.ZSU.SUBSCRIBE_TO_TIER_BUTTON,
           objectType: I(C)
         },
-        numberOfBoostsToAdd: x,
+        numberOfBoostsToAdd: L,
         guild: i
       })
     }
-    let B = !j && P.fractionalState === m.xc.NONE,
+    let B = !M && P.fractionalState === m.xc.NONE,
       H = B ? l.DUT : "div",
       Y = B ? {
-        onClick: F
+        onClick: V
       } : {},
-      W = j ? g.intl.formatToPlainString(g.t["1o48ki"], {
+      W = M ? g.intl.formatToPlainString(g.t["1o48ki"], {
         tierName: (0, f.gb)(C, {
           useLevels: false
         })
@@ -151,40 +151,40 @@ let S = {
           useLevels: false
         })
       }) : g.intl.formatToPlainString(g.t.r6NN6Q, {
-        numBoostsRequired: x,
+        numBoostsRequired: L,
         tierName: (0, f.gb)(C, {
           useLevels: false
         })
       }),
       K = (0, r.jsxs)(H, A(O({
         className: a()(y.Ll, {
-          [y.kZ]: j,
+          [y.kZ]: M,
           [y.ng]: B,
-          [y.uZ]: M,
+          [y.uZ]: j,
           [y.Ue]: k
         }),
         style: {
           left: "".concat(100 * S[C], "%")
         }
       }, Y), {
-        children: [!j && (0, r.jsx)("div", {
+        children: [!M && (0, r.jsx)("div", {
           className: y.cj
-        }), j && C === h.TVA.TIER_3 ? (0, r.jsx)(_.H, {
+        }), M && C === h.TVA.TIER_3 ? (0, r.jsx)(_.H, {
           confettiTriggerRef: n,
           setConfettiCount: v,
           setShouldFireConfetti: T,
-          children: V
-        }) : V, (0, r.jsxs)(l.Text, {
+          children: F
+        }) : F, (0, r.jsxs)(l.Text, {
           className: y.Td,
           variant: "text-md/normal",
-          children: [j && C !== h.TVA.NONE && (0, r.jsx)(l.A9s, {
+          children: [M && C !== h.TVA.NONE && (0, r.jsx)(l.A9s, {
             size: "md",
             color: "currentColor",
             className: y.ZI
           }), t]
         })]
       }));
-    return C !== h.TVA.NONE ? (0, r.jsx)(o.m_, {
+    return C !== h.TVA.NONE ? (0, r.jsx)(s.m_, {
       text: W,
       children: K
     }) : K

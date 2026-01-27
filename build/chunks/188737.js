@@ -28,8 +28,8 @@ function p(e) {
     filteredIds: i
   } = (0, c.A)(t);
   return t = n, {
-    requestId: (0, a.bG)([o.A], () => o.A.getFeedRequestId(d.X1.GLOBAL_FEED)),
-    entries: t = (0, s.Ay)(t),
+    requestId: (0, a.bG)([s.A], () => s.A.getFeedRequestId(d.X1.GLOBAL_FEED)),
+    entries: t = (0, o.Ay)(t),
     impressionCappedEntryIds: i
   }
 }

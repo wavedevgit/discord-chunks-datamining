@@ -12,9 +12,9 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 let c = () => {
-  a.default.track(o.HAw.CHANGE_LOG_CTA_CLICKED, {
+  a.default.track(s.HAw.CHANGE_LOG_CTA_CLICKED, {
     cta_type: "profile_bio",
-    target: s.Do
+    target: o.Do
   })
 };
 
@@ -28,7 +28,7 @@ function u() {
           onClick: c,
           target: "_blank",
           rel: "noreferrer noopener",
-          href: s.Do,
+          href: o.Do,
           children: e
         }, t)
       })

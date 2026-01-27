@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk615300 = require("./615300.js"),
   Chunk397927 = require("./397927.js"),
   Chunk796032 = require("./796032.js");
@@ -92,7 +92,7 @@ class m extends(r = Chunk64700.Component) {
       children: t
     } = this.props;
     return (0, i.jsx)(l.A.div, {
-      className: o()(e, u.a),
+      className: s()(e, u.a),
       style: this.getAnimatedStyle(),
       children: t
     })

@@ -2,13 +2,13 @@
 /** chunk id: 102876, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk627968 = require("./627968.js"),
   Chunk769015 = require("./769015.jsx"),
   Chunk770182 = require("./770182.js");
 
-function s(e) {
+function o(e) {
   let {
     application: t,
     useComma: n = false

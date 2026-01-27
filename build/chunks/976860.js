@@ -70,7 +70,7 @@ function y(e, t) {
   if (E(e, "assign")) return;
   p.log("transitionTo - Transitioning to ".concat(e));
   let n = null == t ? true : t.source,
-    s = null == t ? true : t.sourceLocationStack;
+    o = null == t ? true : t.sourceLocationStack;
   if (null == t) r.push(e);
   else {
     let n = new URL(e, "https:".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT));
@@ -80,7 +80,7 @@ function y(e, t) {
       hash: n.hash
     }, t))
   }
-  i = n, a = s
+  i = n, a = o
 }
 
 function b(e, t, n, r) {

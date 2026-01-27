@@ -1,4 +1,4 @@
-/** Chunk was on 20725 **/
+/** Chunk was on 52390 **/
 /** chunk id: 311243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -21,7 +21,7 @@ let c = function(e) {
     location: p,
     sourceQuestContent: m,
     gameProfileSource: f
-  } = e, y = (0, a.mU)({
+  } = e, _ = (0, o.mU)({
     quest: l,
     taskDetails: d,
     location: p,
@@ -31,7 +31,7 @@ let c = function(e) {
   });
   return (0, r.jsxs)("div", {
     className: i()(u.iE, t),
-    children: [(0, r.jsx)(o.A, {
+    children: [(0, r.jsx)(s.A, {
       autoplay: n,
       className: u.Qq,
       quest: l,
@@ -39,10 +39,10 @@ let c = function(e) {
       sourceQuestContent: m
     }), (0, r.jsx)("div", {
       className: u.C,
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: y
+        children: _
       })
     })]
   })

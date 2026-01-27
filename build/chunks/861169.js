@@ -19,5 +19,5 @@ Chunk661495(String, "String", function(e) {
   var e, t = u(this),
     n = t.string,
     i = t.index;
-  return i >= n.length ? o(true, true) : (e = r(n, i), t.index += e.length, o(e, false))
+  return i >= n.length ? s(true, true) : (e = r(n, i), t.index += e.length, s(e, false))
 })

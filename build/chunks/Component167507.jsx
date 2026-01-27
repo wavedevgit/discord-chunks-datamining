@@ -1,7 +1,7 @@
 /** Chunk was on 72756 **/
 /** chunk id: 167507, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  N: () => p
+  N: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk62849 = require("./62849.jsx"),
   Chunk800344 = require("./800344.js");
 
-function p(e) {
+function f(e) {
   let {
     type: n,
     value: t,
@@ -40,28 +40,28 @@ function p(e) {
               guild_id: c,
               channel_id: a
             }
-          } = t, s = "message_id" in t.value ? t.value.message_id : true;
-          return (0, r.jsx)(m.A, {
+          } = t, o = "message_id" in t.value ? t.value.message_id : true;
+          return (0, r.jsx)(p.A, {
             channelId: a,
             guildId: c,
-            messageId: s
+            messageId: o
           });
         case "attachment":
           let {
             value: {
-              domain: o,
+              domain: s,
               ephemeral: u,
               channel_id: d,
               attachment_id: j,
-              name: p
+              name: f
             }
           } = t;
-          return (0, r.jsx)(f, {
-            domain: o,
+          return (0, r.jsx)(m, {
+            domain: s,
             ephemeral: u,
             channelId: d,
             attachmentId: j,
-            name: p
+            name: f
           });
         default:
           (0, h.xb)(t)
@@ -72,17 +72,17 @@ function p(e) {
   }
 }
 
-function f(e) {
+function m(e) {
   let {
     domain: n,
     ephemeral: i,
     channelId: h,
-    attachmentId: m,
-    name: p
-  } = e, f = "https://".concat(n, "/").concat(i ? "ephemeral-attachments" : "attachments", "/").concat(h, "/").concat(m, "/").concat(p), g = l.useCallback(async () => {
-    let e = await (0, d.AN)(f);
-    o.A.trackLinkClicked(e), (0, s.A)(e)
-  }, [f]), x = l.useCallback(e => {
+    attachmentId: p,
+    name: f
+  } = e, m = "https://".concat(n, "/").concat(i ? "ephemeral-attachments" : "attachments", "/").concat(h, "/").concat(p, "/").concat(f), y = l.useCallback(async () => {
+    let e = await (0, d.AN)(m);
+    s.A.trackLinkClicked(e), (0, o.A)(e)
+  }, [m]), b = l.useCallback(e => {
     (0, a.L3)(e, async () => {
       let {
         default: e
@@ -107,8 +107,8 @@ function f(e) {
           }
           return e
         }({}, n), l = l = {
-          attachmentUrl: f,
-          attachmentName: p
+          attachmentUrl: m,
+          attachmentName: f
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, n) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -121,17 +121,17 @@ function f(e) {
         }), t))
       }
     })
-  }, [p, f]);
+  }, [f, m]);
   return (0, r.jsxs)(u.A, {
     role: "link",
-    href: f,
-    onClick: g,
-    onContextMenu: x,
+    href: m,
+    onClick: y,
+    onContextMenu: b,
     className: "attachmentLink",
     children: [(0, r.jsx)(c.PtA, {
       size: "xs",
       className: j.Kk,
       color: "currentColor"
-    }), p]
+    }), f]
   })
 }

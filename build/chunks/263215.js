@@ -13,11 +13,11 @@ var Chunk64700 = require("./64700.js"),
 let c = new Set([...Array.from(Chunk568065.aH), Chunk512750.FB]);
 
 function u(e) {
-  let t = (0, a.bG)([o.A], () => {
+  let t = (0, a.bG)([s.A], () => {
       var t, n;
-      return null == (n = o.A.getStateForGuild(e)) || null == (t = n.powerupCatalog) ? true : t[l.o9.PERK]
+      return null == (n = s.A.getStateForGuild(e)) || null == (t = n.powerupCatalog) ? true : t[l.o9.PERK]
     }),
-    n = (0, s.A)(e);
+    n = (0, o.A)(e);
   return r.useMemo(() => {
     let e = [...null != t ? t : []];
     return null != n && e.push(n), e.filter(e => !c.has(e.skuId))

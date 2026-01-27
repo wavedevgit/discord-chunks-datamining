@@ -3,21 +3,21 @@
 "use strict";
 require.d(exports, {
   iP: () => a,
-  pA: () => s
+  pA: () => o
 });
 let r = 7e3,
   i = null;
 
 function a(e, t = "assertive", n = r) {
-  i ? i.announce(e, t, n) : (i = new o, ("boolean" == typeof IS_REACT_ACT_ENVIRONMENT ? IS_REACT_ACT_ENVIRONMENT : "u" > typeof jest) ? i.announce(e, t, n) : setTimeout(() => {
+  i ? i.announce(e, t, n) : (i = new s, ("boolean" == typeof IS_REACT_ACT_ENVIRONMENT ? IS_REACT_ACT_ENVIRONMENT : "u" > typeof jest) ? i.announce(e, t, n) : setTimeout(() => {
     (null == i ? true : i.isAttached()) && (null == i || i.announce(e, t, n))
   }, 100))
 }
 
-function s(e) {
+function o(e) {
   i && i.clear(e)
 }
-class o {
+class s {
   isAttached() {
     var e;
     return null == (e = this.node) ? true : e.isConnected
@@ -32,9 +32,9 @@ class o {
   announce(e, t = "assertive", n = r) {
     var i, a;
     if (!this.node) return;
-    let s = document.createElement("div");
-    "object" == typeof e ? (s.setAttribute("role", "img"), s.setAttribute("aria-labelledby", e["aria-labelledby"])) : s.textContent = e, "assertive" === t ? null == (i = this.assertiveLog) || i.appendChild(s) : null == (a = this.politeLog) || a.appendChild(s), "" !== e && setTimeout(() => {
-      s.remove()
+    let o = document.createElement("div");
+    "object" == typeof e ? (o.setAttribute("role", "img"), o.setAttribute("aria-labelledby", e["aria-labelledby"])) : o.textContent = e, "assertive" === t ? null == (i = this.assertiveLog) || i.appendChild(o) : null == (a = this.politeLog) || a.appendChild(o), "" !== e && setTimeout(() => {
+      o.remove()
     }, n)
   }
   clear(e) {

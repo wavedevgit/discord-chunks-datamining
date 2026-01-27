@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk118952 = require("./118952.js"),
   Chunk129844 = require("./129844.js"),
   Chunk426333 = require("./426333.js"),
@@ -80,15 +80,15 @@ function b(e) {
   let {
     disabled: t,
     isSelected: n
-  } = e, [a, o] = (0, i.useState)(true), l = (0, i.useRef)(false);
+  } = e, [a, s] = (0, i.useState)(true), l = (0, i.useRef)(false);
   return (0, i.useEffect)(() => {
     if (!l.current) {
       l.current = true;
       return
     }
-    o(n ? "animateIn" : "animateOut")
+    s(n ? "animateIn" : "animateOut")
   }, [n]), (0, r.jsx)("div", {
-    className: s()([p.standaloneRadioIndicator, "string" == typeof a && p[a]]),
+    className: o()([p.standaloneRadioIndicator, "string" == typeof a && p[a]]),
     "data-selected": n,
     "data-disabled": t,
     children: (0, r.jsx)(O, {})
@@ -141,8 +141,8 @@ function v(e) {
     focusTarget: m,
     ringTarget: m,
     within: true,
-    children: (0, r.jsxs)(o.sx, {
-      className: s()([p.radioGroupOption, "string" == typeof E && p[E]]),
+    children: (0, r.jsxs)(s.sx, {
+      className: o()([p.radioGroupOption, "string" == typeof E && p[E]]),
       value: _,
       isDisabled: n,
       inputRef: g,
@@ -177,18 +177,18 @@ function A(e) {
     options: n,
     value: i,
     disabled: a = false,
-    "aria-labelledby": s
+    "aria-labelledby": o
   } = e, l = E(e, ["onChange", "options", "value", "disabled", "aria-labelledby"]), c = null != t ? e => {
     let r = n.find(t => String(t.value) === e);
     null != r && t(r.value)
   } : true;
   return (0, r.jsx)(u.D, g(h({}, l), {
-    children: e => (0, r.jsx)(o.z6, {
+    children: e => (0, r.jsx)(s.z6, {
       id: e.controlId,
       className: p.group,
       isDisabled: a,
       onChange: c,
-      "aria-labelledby": null != s ? s : e.labelId,
+      "aria-labelledby": null != o ? o : e.labelId,
       "aria-describedby": e.describedById,
       "aria-errormessage": e.errorMessageId,
       "data-mana-component": "BaseRadioGroup",

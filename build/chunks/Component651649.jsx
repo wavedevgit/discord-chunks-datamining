@@ -96,16 +96,16 @@ class A extends Chunk37962.A {
     }), y(this, "handleStreamClose", e => {
       var t, i;
       let {
-        streamKey: s,
-        canShowFeedback: o
-      } = e, u = (0, l.Iy)(s), f = (0, c.Ee)(u, p.A), _ = null != (t = h.A.getVideoStats(s)) ? t : {}, m = b({
-        media_session_id: h.A.getMediaSessionId(s),
-        rtc_connection_id: h.A.getRtcConnectionId(s),
-        stream_region: h.A.getRegion(s),
-        max_viewers: h.A.getMaxViewers(s),
-        parent_media_session_id: null == (i = h.A.getRTCConnection(s)) ? true : i.parentMediaSessionId
+        streamKey: o,
+        canShowFeedback: s
+      } = e, u = (0, l.Iy)(o), f = (0, c.Ee)(u, p.A), _ = null != (t = h.A.getVideoStats(o)) ? t : {}, m = b({
+        media_session_id: h.A.getMediaSessionId(o),
+        rtc_connection_id: h.A.getRtcConnectionId(o),
+        stream_region: h.A.getRegion(o),
+        max_viewers: h.A.getMaxViewers(o),
+        parent_media_session_id: null == (i = h.A.getRTCConnection(o)) ? true : i.parentMediaSessionId
       }, _);
-      o && this.possiblyShowFeedbackModal(g.MW.STREAM, () => {
+      s && this.possiblyShowFeedbackModal(g.MW.STREAM, () => {
         (0, a.mMO)(async () => {
           let {
             default: e
@@ -138,7 +138,7 @@ class A extends Chunk37962.A {
         applicationId: t,
         location: i,
         showFeedback: l
-      } = e, c = o.A.getApplication(t), d = (0, s.H)(i), p = f.A.getChannel(d), h = {
+      } = e, c = s.A.getApplication(t), d = (0, o.H)(i), p = f.A.getChannel(d), h = {
         rtc_connection_id: _.A.getRTCConnectionId(),
         media_session_id: _.A.getMediaSessionId()
       }, m = u.A.getWindowOpen(E.MLl.CHANNEL_CALL_POPOUT) ? a.KX8 : a.SYi;
@@ -178,7 +178,7 @@ class A extends Chunk37962.A {
         (0, a.mMO)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("16833"), n.e("26484"), n.e("38008")]).then(n.bind(n, 307750));
+          } = await Promise.all([n.e("16833"), n.e("26484"), n.e("15627")]).then(n.bind(n, 307750));
           return t => (0, r.jsx)(e, b({}, t))
         })
       })

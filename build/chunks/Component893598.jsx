@@ -23,24 +23,24 @@ let d = e => {
     messageId: p,
     channelId: _
   } = e;
-  return (0, r.jsx)(o.Y.Consumer, {
+  return (0, r.jsx)(s.Y.Consumer, {
     children: e => (0, r.jsxs)("div", {
       className: a()(i, u.iE, {
         [u.y7]: e.disableInteractions
       }),
       children: [f && null == t ? (0, r.jsx)("div", {
         className: u.P0,
-        children: (0, r.jsx)(s.udU, {
+        children: (0, r.jsx)(o.udU, {
           size: "xs",
           color: "currentColor",
           className: u._R
         })
-      }) : null, null != t ? (0, r.jsx)(s.DUT, {
+      }) : null, null != t ? (0, r.jsx)(o.DUT, {
         onClick: t,
         className: u.Rw,
         tabIndex: f ? false : 0,
         "aria-label": c.intl.string(c.t.RscU7I),
-        children: (0, r.jsx)(s.udU, {
+        children: (0, r.jsx)(o.udU, {
           size: "xs",
           color: "currentColor",
           className: u._R

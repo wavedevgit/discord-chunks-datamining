@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk52133 = require("./52133.js"),
   Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,9 +36,9 @@ function f(e) {
     scrollTop: n,
     scrollHeight: r,
     offsetHeight: i
-  } = e, s = l[t];
+  } = e, o = l[t];
   if (null == n || null == r || null == i) {
-    if (null == s) returnfalse;
+    if (null == o) returnfalse;
     delete l[t]
   } else {
     let e = {
@@ -47,7 +47,7 @@ function f(e) {
       scrollHeight: r,
       offsetHeight: i
     };
-    if (null != s && (0, a.A)(s, e)) returnfalse;
+    if (null != o && (0, a.A)(o, e)) returnfalse;
     l[t] = e
   }
 }
@@ -111,7 +111,7 @@ class g extends(r = Chunk311907.Ay.Store) {
     return h(e)
   }
 }
-o(g, "displayName", "DimensionStore");
+s(g, "displayName", "DimensionStore");
 let E = new g(Chunk73153.h, {
   UPDATE_CHANNEL_DIMENSIONS: f,
   UPDATE_CHANNEL_LIST_DIMENSIONS: m,

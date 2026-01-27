@@ -17,8 +17,8 @@ if (a) {
     };
   "symbol" == typeof Symbol.toPrimitive && (d[Symbol.toPrimitive] = u), r = function(e) {
     if (!e || "object" != typeof e) returnfalse;
-    var t = o(e, "lastIndex");
-    if (!(t && s(t, "value"))) returnfalse;
+    var t = s(e, "lastIndex");
+    if (!(t && o(t, "value"))) returnfalse;
     try {
       l(e, d)
     } catch (e) {

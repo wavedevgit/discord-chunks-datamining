@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 906688, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 41727 **/
+/** chunk id: 906688, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,23 +13,20 @@ var Chunk827734 = require("./827734.js"),
   Chunk927018 = require("./927018.js"),
   Chunk715438 = require("./715438.js");
 
-function d(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function f(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
@@ -40,75 +36,72 @@ let p = {
     locked: Chunk827734.A.unsafe_rawColors.PRIMARY_400.css,
     unlocked: Chunk827734.A.unsafe_rawColors.GREEN_330.css
   },
-  _ = {
+  h = {
     trophy: Chunk827734.A.unsafe_rawColors.PRIMARY_400.css,
     locked: Chunk827734.A.unsafe_rawColors.PRIMARY_400.css,
     unlocked: Chunk827734.A.unsafe_rawColors.GREEN_330.css
-  },
-  h = .8,
-  m = .4,
-  g = 1;
+  };
 
-function E(e) {
+function f(e) {
   var t;
   let {
     achievementId: n,
-    unlocked: i,
-    size: d = s._3J.SIZE_40
-  } = e, E = (0, o.Ay)(), y = (0, c.vM)(n);
-  if (null == y) return null;
-  let b = (0, s.KjH)(d),
+    unlocked: l,
+    size: f = s._3J.SIZE_40
+  } = e, g = (0, a.Ay)(), m = (0, c.vM)(n);
+  if (null == m) return null;
+  let b = (0, s.KjH)(f),
     {
-      name: O,
-      rarity: v
-    } = y,
+      name: A,
+      rarity: y
+    } = m,
     {
-      color: A
-    } = (0, c.ag)(v),
-    I = (0, a.Mw)(E) ? p : _,
-    S = (b.size - b.offset - 2 * b.stroke) * h,
-    T = b.size - b.stroke,
-    C = {
-      width: S * m,
-      height: S * m
+      color: _
+    } = (0, c.ag)(y),
+    O = (0, i.Mw)(g) ? p : h,
+    j = (b.size - b.offset - 2 * b.stroke) * .8,
+    v = b.size - b.stroke,
+    x = {
+      width: .4 * j,
+      height: .4 * j
     },
-    N = {
-      width: C.width + g,
-      height: C.height + g,
-      right: b.stroke + g,
-      bottom: b.stroke + g,
+    E = {
+      width: x.width + 1,
+      height: x.height + 1,
+      right: b.stroke + 1,
+      bottom: b.stroke + 1,
       padding: 0
     };
   return (0, r.jsxs)("div", {
     className: u.kL,
     style: {
-      width: T,
-      height: T,
+      width: v,
+      height: v,
       padding: b.stroke
     },
-    "aria-label": "".concat(null != (t = O()) ? t : ""),
+    "aria-label": "".concat(null != (t = A()) ? t : ""),
     children: [(0, r.jsx)("div", {
       className: u.r5,
       children: (0, r.jsx)(s.OR, {
         size: "custom",
-        color: i ? A : I.trophy,
-        width: S,
-        height: S
+        color: l ? _ : O.trophy,
+        width: j,
+        height: j
       })
-    }), !i && (0, r.jsx)("div", {
+    }), !l && (0, r.jsx)("div", {
       className: u.dq,
-      style: N,
-      children: (0, r.jsx)(s.XAi, f({
+      style: E,
+      children: (0, r.jsx)(s.XAi, d({
         size: "custom",
-        color: I.locked
-      }, C))
-    }), i && v === c.md.LEGENDARY && (0, r.jsx)("div", {
+        color: O.locked
+      }, x))
+    }), l && y === c.md.LEGENDARY && (0, r.jsx)("div", {
       className: u.dq,
-      style: N,
-      children: (0, r.jsx)(l.A, f({
+      style: E,
+      children: (0, r.jsx)(o.A, d({
         className: u.ox
-      }, C))
+      }, x))
     })]
   })
 }
-E.Sizes = Chunk397927._3J
+f.Sizes = Chunk397927._3J

@@ -19,7 +19,7 @@ function p(e) {
   let {
     padding: t = false
   } = e, n = i.useCallback(() => {
-    (0, s.A)(o.A.getAppsSupportURL(u.MVz.APPS_LEARN_MORE))
+    (0, o.A)(s.A.getAppsSupportURL(u.MVz.APPS_LEARN_MORE))
   }, []), {
     trackSectionImpressionRef: p
   } = (0, c.A)({

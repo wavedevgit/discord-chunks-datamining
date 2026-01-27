@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 58262, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 58262, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,67 +21,67 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk563111 = require("./563111.js");
 
-function b(e) {
+function y(e) {
   var t;
   let {
     invite: n,
-    message: b,
-    getAcceptInviteContext: O
-  } = e, v = (0, s.bG)([p.default], () => p.default.getId()), A = (null == (t = n.inviter) ? true : t.id) === v, I = n.state === g.elq.ACCEPTING, {
-    analyticsLocations: S
-  } = (0, u.Ay)(c.A.INVITE_EMBED), T = (0, s.bG)([h.A], () => {
+    message: y,
+    getAcceptInviteContext: v
+  } = e, x = (0, a.bG)([m.default], () => m.default.getId()), O = (null == (t = n.inviter) ? true : t.id) === x, E = n.state === _.elq.ACCEPTING, {
+    analyticsLocations: j
+  } = (0, u.Ay)(c.A.INVITE_EMBED), C = (0, a.bG)([g.A], () => {
     var e;
-    return null != n.inviter && h.A.isFriend(null == (e = n.inviter) ? true : e.id)
-  }), C = i.useCallback(() => {
+    return null != n.inviter && g.A.isFriend(null == (e = n.inviter) ? true : e.id)
+  }), I = i.useCallback(() => {
     let e = "noop";
-    null != n.inviter && null != _.A.getDMFromUserId(n.inviter.id) && (e = "transition", o.A.openPrivateChannel({
+    null != n.inviter && null != f.A.getDMFromUserId(n.inviter.id) && (e = "transition", s.A.openPrivateChannel({
       recipientIds: [n.inviter.id]
-    })), (0, l.he)({
+    })), (0, o.he)({
       invite: n,
       action: e,
-      inviter_id: b.author.id,
-      invite_message_id: b.id
-    }, S)
-  }, [n, b, S]), N = i.useCallback(() => {
-    (0, l.he)({
+      inviter_id: y.author.id,
+      invite_message_id: y.id
+    }, j)
+  }, [n, y, j]), S = i.useCallback(() => {
+    (0, o.he)({
       invite: n,
       action: "accept",
-      inviter_id: b.author.id,
-      invite_message_id: b.id
-    }, S);
-    let e = O("Invite Button Embed");
-    l.Ay.acceptInviteAndTransitionToInviteChannel({
+      inviter_id: y.author.id,
+      invite_message_id: y.id
+    }, j);
+    let e = v("Invite Button Embed");
+    o.Ay.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, b, S, O]);
+  }, [n, y, j, v]);
   if (null == n.inviter) return null;
-  let w = T ? C : N,
-    R = E.intl.string(E.t.ib7Ng1),
+  let T = C ? I : S,
+    N = b.intl.string(b.t.ib7Ng1),
     P = "active";
-  T ? (R = E.intl.string(E.t.xhxnPn), P = "secondary") : A && (R = E.intl.string(E.t.ib7Ng1), P = "secondary");
-  let D = A ? E.intl.string(E.t.eQyu1F) : E.intl.string(E.t.PYJHW6),
-    x = null != n.inviter ? "".concat(n.inviter.username) : "",
-    L = null != n.inviter ? m.Ay.getUserTag(n.inviter) : "";
+  C ? (N = b.intl.string(b.t.xhxnPn), P = "secondary") : O && (N = b.intl.string(b.t.ib7Ng1), P = "secondary");
+  let w = O ? b.intl.string(b.t.eQyu1F) : b.intl.string(b.t.PYJHW6),
+    R = null != n.inviter ? "".concat(n.inviter.username) : "",
+    D = null != n.inviter ? h.Ay.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(d.A, {
     children: [(0, r.jsx)(d.A.Header, {
-      text: D
+      text: w
     }), (0, r.jsxs)(d.A.Body, {
       children: [(0, r.jsxs)("div", {
-        className: y.iH,
+        className: A.iH,
         children: [(0, r.jsx)(d.A.Icon, {
-          user: new f.A(n.inviter),
-          onClick: T ? w : true
+          user: new p.A(n.inviter),
+          onClick: C ? T : true
         }), (0, r.jsx)(d.A.Info, {
-          title: x,
-          onClick: T ? w : true,
-          children: L
+          title: R,
+          onClick: C ? T : true,
+          children: D
         })]
-      }), (0, r.jsx)(a.$nd, {
-        onClick: w,
-        text: R,
-        loading: I,
-        disabled: A,
+      }), (0, r.jsx)(l.$nd, {
+        onClick: T,
+        text: N,
+        loading: E,
+        disabled: O,
         variant: P
       })]
     })]

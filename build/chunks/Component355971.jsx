@@ -25,10 +25,10 @@ function f(e) {
       tooltipText: m
     } = e,
     [g, E] = (0, a.yK)([c.A], () => [c.A.desaturateUserColors, c.A.saturation]),
-    y = (0, l.rdh)(s.A.unsafe_rawColors.PRIMARY_300).hex(),
+    y = (0, l.rdh)(o.A.unsafe_rawColors.PRIMARY_300).hex(),
     b = (0, i.LX)(null != n ? n : y),
     O = (0, i.$k)(b, false, g ? E : null);
-  return t = null != p ? p : .3 > (0, i.OK)(b) ? s.A.unsafe_rawColors.PRIMARY_630.css : s.A.unsafe_rawColors.WHITE.css, (0, r.jsx)(o.m, {
+  return t = null != p ? p : .3 > (0, i.OK)(b) ? o.A.unsafe_rawColors.PRIMARY_630.css : o.A.unsafe_rawColors.WHITE.css, (0, r.jsx)(s.m, {
     text: null != m ? m : d.intl.string(d.t.T3PvV4),
     children: (0, r.jsx)(u.A, {
       className: _,

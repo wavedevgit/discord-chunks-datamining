@@ -14,7 +14,7 @@ var Chunk934551 = require("./934551.js"),
 let A = (0, Chunk419954.t_)(Chunk780964.X.ADVANCED_PANEL, {
     useTitle: () => T.intl.string(T.t["8/udY0"]),
     usePredicate: () => !(0, r.dk)("LegacyAdvancedPanel"),
-    StronglyDiscouragedCustomComponent: Chunk69435.Ay,
+    StronglyDiscouragedCustomComponent: Chunk69435.A,
     buildLayout: () => []
   }),
   d = (0, Chunk419954.t_)(Chunk780964.X.ADVANCED_PANEL, {

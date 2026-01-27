@@ -67,32 +67,32 @@ let E = {
 };
 
 function y(e, t, n, a) {
-  let s, l = false,
+  let o, l = false,
     c = false;
   switch (t) {
     case "hero":
-      s = g(e.config.assets.heroVideo, e.config.assets.hero);
+      o = g(e.config.assets.heroVideo, e.config.assets.hero);
       break;
     case "hero_image":
-      s = e.config.assets.hero;
+      o = e.config.assets.hero;
       break;
     case "hero_video": {
       let t = e.config.assets.heroVideo;
       if (null == t) return null;
-      s = t;
+      o = t;
       break
     }
     case "quest_bar_hero":
-      s = g(e.config.assets.questBarHeroVideo, e.config.assets.questBarHero);
+      o = g(e.config.assets.questBarHeroVideo, e.config.assets.questBarHero);
       break;
     case "quest_bar_hero_video": {
       let t = e.config.assets.questBarHeroVideo;
       if (null == t) return null;
-      s = t;
+      o = t;
       break
     }
     case "reward": {
-      let t = (0, o.sn)(e);
+      let t = (0, s.sn)(e);
       if (t.type === i.l.VIRTUAL_CURRENCY) return a ? {
         url: d.A,
         mimetype: "video/mp4",
@@ -102,24 +102,24 @@ function y(e, t, n, a) {
         mimetype: "video/webm",
         isAnimated: true
       };
-      s = g(t.assetVideo, t.asset);
+      o = g(t.assetVideo, t.asset);
       break
     }
     case "reward_image": {
-      let t = (0, o.sn)(e);
+      let t = (0, s.sn)(e);
       if (t.type === i.l.VIRTUAL_CURRENCY) return null;
-      s = t.asset;
+      o = t.asset;
       break
     }
     case "game_tile":
-      "dark" === n && null != e.config.assets.gameTileDark ? s = e.config.assets.gameTileDark : "light" === n && null != e.config.assets.gameTileLight ? s = e.config.assets.gameTileLight : (s = e.config.assets.gameTile, l = true);
+      "dark" === n && null != e.config.assets.gameTileDark ? o = e.config.assets.gameTileDark : "light" === n && null != e.config.assets.gameTileLight ? o = e.config.assets.gameTileLight : (o = e.config.assets.gameTile, l = true);
       break;
     case "logo_type":
-      "dark" === n && null != e.config.assets.logotypeDark ? s = e.config.assets.logotypeDark : "light" === n && null != e.config.assets.logotypeLight ? s = e.config.assets.logotypeLight : (s = e.config.assets.logotype, l = true);
+      "dark" === n && null != e.config.assets.logotypeDark ? o = e.config.assets.logotypeDark : "light" === n && null != e.config.assets.logotypeLight ? o = e.config.assets.logotypeLight : (o = e.config.assets.logotype, l = true);
       break;
     case "cosponsor_logo_type":
       if (null == e.config.cosponsorMetadata) return null;
-      "dark" === n && null != e.config.cosponsorMetadata.logotypeDark ? s = e.config.cosponsorMetadata.logotypeDark : "light" === n && null != e.config.cosponsorMetadata.logotypeLight ? s = e.config.cosponsorMetadata.logotypeLight : (s = e.config.cosponsorMetadata.logotype, l = true);
+      "dark" === n && null != e.config.cosponsorMetadata.logotypeDark ? o = e.config.cosponsorMetadata.logotypeDark : "light" === n && null != e.config.cosponsorMetadata.logotypeLight ? o = e.config.cosponsorMetadata.logotypeLight : (o = e.config.cosponsorMetadata.logotype, l = true);
       break;
     case "video_player_video":
     case "video_player_video_low_res":
@@ -131,12 +131,12 @@ function y(e, t, n, a) {
       if (!("taskConfigV2" in e.config)) return null;
       let n = e.config.taskConfigV2.tasks[a ? r.n.WATCH_VIDEO_ON_MOBILE : r.n.WATCH_VIDEO],
         i = E[t],
-        o = null == n || null == (f = n.assets[i.variant]) ? true : f[i.property];
-      if (null == o) return null;
-      s = o, c = true
+        s = null == n || null == (f = n.assets[i.variant]) ? true : f[i.property];
+      if (null == s) return null;
+      o = s, c = true
     }
   }
-  let p = m(e.id, s, {
+  let p = m(e.id, o, {
     theme: l ? n : true
   });
   return c && null == p.mimetype ? null : p
@@ -193,7 +193,7 @@ function A(e) {
 }
 
 function I(e, t) {
-  let n = (0, s.A)();
+  let n = (0, o.A)();
   return n < f ? {
     width: e,
     height: t

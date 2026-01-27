@@ -19,10 +19,10 @@ async function d(e) {
   try {
     var t;
     let n = await i.Bo.put({
-      url: (0, o.i_)(l),
+      url: (0, s.i_)(l),
       body: {
         overrides: e,
-        version: o.hl
+        version: s.hl
       },
       headers: {
         Authorization: null != (t = a.default.getToken()) ? t : ""
@@ -38,11 +38,11 @@ async function d(e) {
 async function f(e) {
   try {
     let t = await i.Bo.put({
-      url: (0, o.i_)(u),
+      url: (0, s.i_)(u),
       body: {
         payload: e,
         token: a.default.getToken(),
-        version: o.hl
+        version: s.hl
       },
       oldFormErrors: true,
       rejectWithError: false
@@ -54,7 +54,7 @@ async function f(e) {
 }
 async function p() {
   let e = await i.Bo.del({
-    url: (0, o.i_)(l),
+    url: (0, s.i_)(l),
     oldFormErrors: true,
     rejectWithError: false
   });
@@ -64,7 +64,7 @@ async function p() {
 function _(e) {
   var t;
   return i.Bo.post({
-    url: (0, o.i_)(c),
+    url: (0, s.i_)(c),
     body: e,
     headers: {
       Authorization: null != (t = a.default.getToken()) ? t : ""
@@ -84,6 +84,6 @@ function _(e) {
 }
 r = async e => {
   try {
-    await s.A.flushCookies()
+    await o.A.flushCookies()
   } catch (e) {}
 }

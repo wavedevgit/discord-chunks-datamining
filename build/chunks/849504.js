@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 849504, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 849504, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => u
 });
@@ -13,14 +12,14 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js");
 
 function u() {
-  let e = (0, i.bG)([l.A], () => l.A.getFetchState()),
-    t = (0, i.bG)([l.A], () => l.A.getCheckpointData()),
+  let e = (0, l.bG)([o.A], () => o.A.getFetchState()),
+    t = (0, l.bG)([o.A], () => o.A.getCheckpointData()),
     n = (0, r.useMemo)(() => null != t.applications ? t.applications.applications.map(e => e.game.id) : [], [t.applications]);
   return (0, r.useEffect)(() => {
-    e === l.$.INIT && ((0, o.nX)(), (0, a.qw)({
+    e === o.$.INIT && ((0, s.nX)(), (0, a.qw)({
       entitlementType: c.zF_.FREE_PURCHASE
     }))
   }, [e]), (0, r.useEffect)(() => {
-    s.A.getDetectableGamesSupplemental(n)
+    i.A.getDetectableGamesSupplemental(n)
   }, [n]), e
 }

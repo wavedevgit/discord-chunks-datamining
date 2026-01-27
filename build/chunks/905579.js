@@ -27,10 +27,10 @@ let _ = false,
   h = false;
 class m extends Chunk367348.A {
   _initialize() {
-    super._initialize(), s.A.addChangeListener(this.handlePopoutWindowUpdate), i.h.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+    super._initialize(), o.A.addChangeListener(this.handlePopoutWindowUpdate), i.h.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   _terminate() {
-    super._terminate(), s.A.removeChangeListener(this.handlePopoutWindowUpdate), i.h.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+    super._terminate(), o.A.removeChangeListener(this.handlePopoutWindowUpdate), i.h.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   showRPCDisconnectErrorUI(e) {
     let {
@@ -45,7 +45,7 @@ class m extends Chunk367348.A {
     let {
       applicationId: t
     } = e;
-    o.A.stopFrame({
+    s.A.stopFrame({
       applicationId: t
     })
   }
@@ -57,10 +57,10 @@ class m extends Chunk367348.A {
       t === d.MLl.ACTIVITY_POPOUT && (h = false)
     }), p(this, "handlePopoutWindowUpdate", () => {
       let e = _,
-        t = s.A.getWindowOpen(d.MLl.ACTIVITY_POPOUT);
+        t = o.A.getWindowOpen(d.MLl.ACTIVITY_POPOUT);
       if (e && !t && !h) {
         let e = c.A.getConnectedFrame();
-        null != e && o.A.stopFrame({
+        null != e && s.A.stopFrame({
           applicationId: e.applicationId
         })
       }
@@ -68,7 +68,7 @@ class m extends Chunk367348.A {
     }), p(this, "popInFrame", () => {
       h = true, a.close(d.MLl.ACTIVITY_POPOUT);
       let e = c.A.getConnectedFrame();
-      null != e && o.A.updateFrameLayoutMode({
+      null != e && s.A.updateFrameLayoutMode({
         applicationId: e.applicationId,
         layoutMode: u.y.FOCUSED
       })

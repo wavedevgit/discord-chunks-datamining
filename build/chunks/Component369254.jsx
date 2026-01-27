@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk930125 = require("./930125.js"),
   Chunk338717 = require("./338717.js"),
@@ -39,8 +39,8 @@ function C(e) {
     hasMultiple: i = false,
     options: a
   } = e, {
-    width: s,
-    height: o
+    width: o,
+    height: s
   } = (0, y.z)(i, {
     width: n,
     height: r
@@ -48,8 +48,8 @@ function C(e) {
   f.Ay.preloadImage({
     src: t,
     dimensions: {
-      maxWidth: s,
-      maxHeight: o,
+      maxWidth: o,
+      maxHeight: s,
       imageWidth: n,
       imageHeight: r
     },
@@ -66,11 +66,11 @@ function w(e) {
     children: t,
     isObscured: n,
     src: a
-  } = e, [o, l] = i.useState(false), u = i.useCallback(() => {
+  } = e, [s, l] = i.useState(false), u = i.useCallback(() => {
     l(e => !e)
   }, []);
   return n ? (0, r.jsx)(p.Bs.Provider, {
-    value: o,
+    value: s,
     children: (0, r.jsx)(p.Ay, {
       type: p.Ay.Types.ATTACHMENT,
       reason: c.Oc.EXPLICIT_CONTENT,
@@ -78,7 +78,7 @@ function w(e) {
       isSingleMosaicItem: true,
       onToggleObscurity: u,
       children: e => (0, r.jsx)("div", {
-        className: s()(T.JT, {
+        className: o()(T.JT, {
           [T.Qr]: e
         }),
         children: t(e)
@@ -127,27 +127,27 @@ function P(e) {
       type: l.D.GenericMedia,
       media: P
     }, c),
-    x = d ? e => {
+    L = d ? e => {
       e.stopPropagation(), e.preventDefault()
     } : () => (0, g.Yq)(g.NJ.CONTEXT_MENU_OPENED),
-    L = t.length > 1;
+    x = t.length > 1;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.Ay, {
-      children: e => L ? (0, r.jsxs)(r.Fragment, {
+      children: e => x ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(v.A, {
           onClick: e => {
             e.stopPropagation(), h._.dispatch(I.jej.MODAL_CAROUSEL_PREV)
           },
-          icon: o.Zge,
+          icon: s.Zge,
           tooltip: S.intl.string(S.t.vgfxaA),
-          className: s()(T.vi, e)
+          className: o()(T.vi, e)
         }), (0, r.jsx)(v.A, {
           onClick: e => {
             e.stopPropagation(), h._.dispatch(I.jej.MODAL_CAROUSEL_NEXT)
           },
-          icon: o.KS6,
+          icon: s.KS6,
           tooltip: S.intl.string(S.t.XiOHRX),
-          className: s()(T.f8, e)
+          className: o()(T.f8, e)
         })]
       }) : true
     }), (0, r.jsx)(y.A, {
@@ -161,10 +161,10 @@ function P(e) {
           maxWidth: e,
           maxHeight: t,
           obscured: n,
-          onContextMenu: x
+          onContextMenu: L
         })
       })
-    }), L && (0, r.jsx)(b.Ay, {
+    }), x && (0, r.jsx)(b.Ay, {
       children: e => (0, r.jsx)(O.A, {
         items: t,
         currentIndex: f,

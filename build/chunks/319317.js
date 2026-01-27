@@ -98,7 +98,7 @@ class f extends Chunk315069.A {
     return this.sku.id
   }
   getAnalyticsData() {
-    let e = o.A.getApplication(this.id);
+    let e = s.A.getApplication(this.id);
     return {
       application_id: null != e ? e.id : null,
       application_name: null != e ? e.name : null,

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 501496, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 501496, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
 });
@@ -17,22 +16,22 @@ var Chunk417597 = require("./417597.js"),
   Chunk835818 = require("./835818.js");
 
 function p() {
-  return (0, i.bG)([o.A], () => o.A.supports(u.O5.LOOPBACK)) ? (0, r.jsx)("div", {
-    className: f.a,
+  return (0, i.bG)([a.A], () => a.A.supports(d.O5.LOOPBACK)) ? (0, r.jsx)("div", {
+    className: _.a,
     children: (0, r.jsx)(s.A, {
-      title: d.intl.string(d.t.gyljWE),
-      description: d.intl.string(d.t["8hhsCU"]),
+      title: u.intl.string(u.t.gyljWE),
+      description: u.intl.string(u.t["8hhsCU"]),
       notchBackground: s.V.GRAY,
-      captionVoice: d.intl.string(d.t.bp3JOV),
+      captionVoice: u.intl.string(u.t.bp3JOV),
       captionNoVoice: (0, r.jsxs)(r.Fragment, {
-        children: [d.intl.string(d.t["MA+OZh"]), (0, r.jsx)(a.MzZ, {
-          className: f.X,
-          href: l.A.getArticleURL(c.MVz.NO_INPUT_DETECTED),
-          children: d.intl.string(d.t.RYKKox)
+        children: [u.intl.string(u.t["MA+OZh"]), (0, r.jsx)(l.MzZ, {
+          className: _.X,
+          href: o.A.getArticleURL(c.MVz.NO_INPUT_DETECTED),
+          children: u.intl.string(u.t.RYKKox)
         })]
       }),
-      buttonTest: d.intl.string(d.t.c4qHt6),
-      buttonStop: d.intl.string(d.t.I6OnJ3),
+      buttonTest: u.intl.string(u.t.c4qHt6),
+      buttonStop: u.intl.string(u.t.I6OnJ3),
       buttonVariant: "primary",
       location: {
         page: c.liQ.USER_SETTINGS,

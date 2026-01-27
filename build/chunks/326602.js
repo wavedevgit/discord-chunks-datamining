@@ -3,13 +3,13 @@
 var Chunk634622 = require("./634622.js"),
   Chunk585022 = require("./585022.js"),
   Chunk581006 = require("./581006.js"),
-  s = 200;
+  o = 200;
 module.exports = function(e, t) {
   var n = this.__data__;
   if (n instanceof r) {
-    var o = n.__data__;
-    if (!i || o.length < s - 1) return o.push([e, t]), this.size = ++n.size, this;
-    n = this.__data__ = new a(o)
+    var s = n.__data__;
+    if (!i || s.length < o - 1) return s.push([e, t]), this.size = ++n.size, this;
+    n = this.__data__ = new a(s)
   }
   return n.set(e, t), this.size = n.size, this
 }

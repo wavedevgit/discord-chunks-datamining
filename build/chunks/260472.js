@@ -77,7 +77,7 @@ class E {
     this._dispatchWithLogging(e)
   }
   _dispatchWithLogging(e) {
-    a()(null == this._currentDispatchActionType, "Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch. Action: ".concat(e.type, " Already dispatching: ").concat(this._currentDispatchActionType)), a()(e.type, "Dispatch.dispatch(...) called without an action type"), p.has(e.type) && _.log("Dispatching ".concat(e.type)), (0, o.Gy)(e.type), u.WQ(e.type);
+    a()(null == this._currentDispatchActionType, "Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch. Action: ".concat(e.type, " Already dispatching: ").concat(this._currentDispatchActionType)), a()(e.type, "Dispatch.dispatch(...) called without an action type"), p.has(e.type) && _.log("Dispatching ".concat(e.type)), (0, s.Gy)(e.type), u.WQ(e.type);
     let t = this.actionLogger.log(e, t => {
       try {
         this._currentDispatchActionType = e.type, this._dispatch(e, t)
@@ -87,7 +87,7 @@ class E {
     });
     t.totalTime > h && _.verbose("Slow dispatch on ".concat(e.type, ": ").concat(t.totalTime, "ms"));
     try {
-      (0, o.xP)("DISPATCH[".concat(e.type, "]"), e.type)
+      (0, s.xP)("DISPATCH[".concat(e.type, "]"), e.type)
     } catch (e) {}
   }
   _dispatch(e, t) {
@@ -98,9 +98,9 @@ class E {
       let {
         name: i,
         actionHandler: a,
-        storeDidChange: s
+        storeDidChange: o
       } = n[r];
-      false !== t(i, () => a(e)) && s(e)
+      false !== t(i, () => a(e)) && o(e)
     }
     let r = this._subscriptions[e.type];
     null != r && t(g, () => {
@@ -132,7 +132,7 @@ class E {
   }
   constructor(e = 0, t, n) {
     f(this, "_defaultBand", true), f(this, "_interceptors", []), f(this, "_subscriptions", {}), f(this, "_waitQueue", []), f(this, "_processingWaitQueue", false), f(this, "_currentDispatchActionType", null), f(this, "_actionHandlers", new y), f(this, "_sentryUtils", true), f(this, "actionLogger", true), f(this, "functionCache", {}), this._defaultBand = e, this._sentryUtils = n, null != t ? this.actionLogger = t : this.actionLogger = new d.T, this.actionLogger.on("trace", (e, t, n) => {
-      s.A.isTracing && n >= m && s.A.mark("\uD83E\uDDA5", t, n)
+      o.A.isTracing && n >= m && o.A.mark("\uD83E\uDDA5", t, n)
     })
   }
 }
@@ -144,16 +144,16 @@ class y {
   register(e, t, n, r) {
     let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : this.createToken();
     a()(r >= 0 && Number.isInteger(r), "band must be a non-negative integer.");
-    let s = {};
+    let o = {};
     for (let n in t) {
       let r = t[n],
         i = e => r(e);
-      b(i, "".concat(e, "_").concat(n)), s[n] = i
+      b(i, "".concat(e, "_").concat(n)), o[n] = i
     }
     return this._dependencyGraph.addNode(i, {
       name: e,
       band: r,
-      actionHandler: s,
+      actionHandler: o,
       storeDidChange: n
     }), this._addToBand(i, r), this._invalidateCaches(), i
   }
@@ -188,12 +188,12 @@ class y {
       let {
         name: i,
         actionHandler: a,
-        storeDidChange: s
-      } = this._dependencyGraph.getNodeData(n[t]), o = a[e];
-      null != o && r.push({
+        storeDidChange: o
+      } = this._dependencyGraph.getNodeData(n[t]), s = a[e];
+      null != s && r.push({
         name: i,
-        actionHandler: o,
-        storeDidChange: s
+        actionHandler: s,
+        storeDidChange: o
       })
     }
     return this._orderedActionHandlers[e] = r, r

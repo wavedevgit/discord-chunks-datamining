@@ -17,7 +17,7 @@ function u(e) {
   let {
     guildId: t,
     name: n
-  } = e, u = (0, o.b2)(), d = (0, o.n6)(u.hex());
+  } = e, u = (0, s.b2)(), d = (0, s.n6)(u.hex());
   return (0, r.jsxs)("div", {
     className: c.kL,
     children: [(0, r.jsx)("div", {
@@ -33,7 +33,7 @@ function u(e) {
         height: 70,
         children: (0, r.jsx)("div", {
           className: c.R3,
-          children: (0, r.jsx)(s.j, {
+          children: (0, r.jsx)(o.j, {
             guildId: t,
             guildName: null != n ? n : "?",
             guildIcon: null,

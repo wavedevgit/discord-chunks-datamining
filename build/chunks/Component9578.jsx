@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk280230 = require("./280230.js"),
-  s = require.n(Chunk280230),
+  o = require.n(Chunk280230),
   Chunk397927 = require("./397927.js"),
   Chunk793574 = require("./793574.js"),
   Chunk688810 = require("./688810.jsx"),
@@ -85,8 +85,8 @@ let g = 1,
       analyticsLocations: b
     } = (0, c.Ay)(l.A.MASKED_LINK), O = i.useCallback(t => (0, u.h)(e, t, b), [b, e]), v = i.useCallback(e => {
       e.button === g && O(e)
-    }, [O]), A = s().sanitizeUrl(d);
-    return (0, r.jsx)(o.MzZ, _(f({}, y), {
+    }, [O]), A = o().sanitizeUrl(d);
+    return (0, r.jsx)(s.MzZ, _(f({}, y), {
       title: a,
       target: "_blank",
       rel: "noreferrer noopener",

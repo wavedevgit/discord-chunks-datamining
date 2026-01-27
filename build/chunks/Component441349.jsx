@@ -100,10 +100,10 @@ function I(e) {
   } = N, D = {
     hasError: null != R && "" !== R
   }, {
-    refs: x,
-    floatingStyles: L,
-    isOpen: j,
-    setIsOpen: M,
+    refs: L,
+    floatingStyles: x,
+    isOpen: M,
+    setIsOpen: j,
     context: k,
     getFloatingProps: U,
     getReferenceProps: G
@@ -111,8 +111,8 @@ function I(e) {
     matchReferenceWidth: false,
     placement: "bottom-start"
   }), {
-    isMounted: V,
-    styles: F
+    isMounted: F,
+    styles: V
   } = (0, d.D)(k, {
     common: e => {
       let {
@@ -128,15 +128,15 @@ function I(e) {
     },
     duration: 100
   }), B = e => {
-    null == n || n(e), M(false)
+    null == n || n(e), j(false)
   };
   return (0, r.jsx)(p.D, O(y({}, N), {
     children: e => (0, r.jsx)(h.F, O(y({
       className: g.LF,
       validation: D,
-      ref: x.setReference
+      ref: L.setReference
     }, G()), {
-      children: (0, r.jsxs)(s.lr, {
+      children: (0, r.jsxs)(o.lr, {
         id: e.controlId,
         "aria-labelledby": e.labelId,
         "aria-describedby": e.describedById,
@@ -154,7 +154,7 @@ function I(e) {
         hideTimeZone: S,
         "data-mana-component": "date-picker",
         className: g.dn,
-        children: [(0, r.jsxs)(o.Y, {
+        children: [(0, r.jsxs)(s.Y, {
           className: g.wO,
           children: [(0, r.jsx)(l.J3, {
             children: e => (0, r.jsx)(l.Eu, {
@@ -163,19 +163,19 @@ function I(e) {
             })
           }), (0, r.jsx)(c.$, {
             className: g.B7,
-            onClick: () => M(!j),
+            onClick: () => j(!M),
             "aria-label": C.DATE_INPUT_OPEN_CALENDAR_LABEL,
             children: (0, r.jsx)(_.CalendarIcon, {
               size: "sm",
               color: "currentColor"
             })
           })]
-        }), j && V && (0, r.jsx)("div", O(y({}, U()), {
-          ref: x.setFloating,
-          style: L,
+        }), M && F && (0, r.jsx)("div", O(y({}, U()), {
+          ref: L.setFloating,
+          style: x,
           className: g.oO,
           children: (0, r.jsx)(u.lG, {
-            style: F,
+            style: V,
             className: g.r3,
             children: (0, r.jsx)(f.V, {
               value: t,

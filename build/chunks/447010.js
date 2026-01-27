@@ -38,8 +38,8 @@ let u = {
       voiceState: n
     } = e, l = r.A.getChannel(t), u = (null == l ? true : l.isGuildStageVoice()) && (null == n ? true : n.suppress), d = 0 === Object.keys(i.A.getInputDevices()).length, f = a.A.getMediaSessionId();
     if (d && null != l && null != f && !u) return [c({
-      type: s.iy.NO_INPUT_DEVICES
-    }, (0, o.jY)())]
+      type: o.iy.NO_INPUT_DEVICES
+    }, (0, s.jY)())]
   },
   makeErrorContextKey: e => "".concat(e.mediaSessionId)
 }

@@ -12,18 +12,18 @@ var Chunk735438 = require("./735438.js"),
 let l = ["Spidey Bot", "Captain Hook"],
   c = {
     fetchForGuild(e) {
-      s.h.dispatch({
+      o.h.dispatch({
         type: "WEBHOOKS_FETCHING",
         guildId: e
       }), a.Bo.get({
-        url: o.Rsh.GUILD_WEBHOOKS(e),
+        url: s.Rsh.GUILD_WEBHOOKS(e),
         oldFormErrors: true,
         rejectWithError: false
       }).then(t => {
         let {
           body: n
         } = t;
-        return s.h.dispatch({
+        return o.h.dispatch({
           type: "WEBHOOKS_UPDATE",
           guildId: e,
           webhooks: n
@@ -32,7 +32,7 @@ let l = ["Spidey Bot", "Captain Hook"],
         let {
           body: n
         } = t;
-        s.h.dispatch({
+        o.h.dispatch({
           type: "WEBHOOKS_UPDATE",
           guildId: e,
           error: n.message
@@ -40,19 +40,19 @@ let l = ["Spidey Bot", "Captain Hook"],
       })
     },
     fetchForChannel(e, t) {
-      s.h.dispatch({
+      o.h.dispatch({
         type: "WEBHOOKS_FETCHING",
         guildId: e,
         channelId: t
       }), a.Bo.get({
-        url: o.Rsh.CHANNEL_WEBHOOKS(t),
+        url: s.Rsh.CHANNEL_WEBHOOKS(t),
         oldFormErrors: true,
         rejectWithError: true
       }).then(n => {
         let {
           body: r
         } = n;
-        return s.h.dispatch({
+        return o.h.dispatch({
           type: "WEBHOOKS_UPDATE",
           guildId: e,
           channelId: t,
@@ -62,7 +62,7 @@ let l = ["Spidey Bot", "Captain Hook"],
         let {
           body: n
         } = t;
-        s.h.dispatch({
+        o.h.dispatch({
           type: "WEBHOOKS_UPDATE",
           guildId: e,
           error: n.message
@@ -70,7 +70,7 @@ let l = ["Spidey Bot", "Captain Hook"],
       })
     },
     create: (e, t, n) => (null == n && (n = l[i().random(0, l.length - 1)]), a.Bo.post({
-      url: o.Rsh.CHANNEL_WEBHOOKS(t),
+      url: s.Rsh.CHANNEL_WEBHOOKS(t),
       body: {
         name: n
       },
@@ -80,25 +80,25 @@ let l = ["Spidey Bot", "Captain Hook"],
       let {
         body: n
       } = t;
-      return s.h.dispatch({
+      return o.h.dispatch({
         type: "WEBHOOK_CREATE",
         guildId: e,
         webhook: n
       }), n
     })),
     delete: (e, t) => a.Bo.del({
-      url: o.Rsh.WEBHOOK(t),
+      url: s.Rsh.WEBHOOK(t),
       oldFormErrors: true,
       rejectWithError: false
     }).then(() => {
-      s.h.dispatch({
+      o.h.dispatch({
         type: "WEBHOOK_DELETE",
         guildId: e,
         webhookId: t
       })
     }),
     update: (e, t, n) => a.Bo.patch({
-      url: o.Rsh.WEBHOOK(t),
+      url: s.Rsh.WEBHOOK(t),
       body: n,
       oldFormErrors: true,
       rejectWithError: false
@@ -106,7 +106,7 @@ let l = ["Spidey Bot", "Captain Hook"],
       let {
         body: n
       } = t;
-      return s.h.dispatch({
+      return o.h.dispatch({
         type: "WEBHOOK_UPDATE",
         guildId: e,
         webhook: n

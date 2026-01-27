@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 601193, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 601193, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => l
 });
 var Chunk839214 = require("./839214.js");
 let i = Object.freeze({
@@ -11,4 +10,4 @@ let i = Object.freeze({
     entrypoint: null,
     searchBarState: require("./488995.js").GlobalDiscoverySearchBarState.DEFAULT
   }),
-  a = (0, Chunk839214.D)(() => i)
+  l = (0, Chunk839214.D)(() => i)

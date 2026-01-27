@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk545442 = require("./545442.jsx"),
   Chunk935154 = require("./935154.jsx"),
@@ -92,7 +92,7 @@ function y(e) {
     isFocused: n
   } = e, {
     reducedMotion: a
-  } = i.useContext(o.CZY);
+  } = i.useContext(s.CZY);
   switch (t.type) {
     case "icon": {
       let {
@@ -100,14 +100,14 @@ function y(e) {
         icon: n,
         color: i = "currentColor",
         className: a
-      } = t, o = m(t, ["type", "icon", "color", "className"]);
+      } = t, s = m(t, ["type", "icon", "color", "className"]);
       return (0, r.jsx)("div", {
         className: d.iconContainerLeft,
         children: (0, r.jsx)(n, h(p({
           "aria-hidden": true,
           color: i
-        }, o), {
-          className: s()(d.icon, a)
+        }, s), {
+          className: o()(d.icon, a)
         }))
       })
     }

@@ -26,19 +26,19 @@ function f(e, t, n) {
   });
   if (a) returntrue;
   if (!r) returnfalse;
-  let s = e.getFavoriteChannels();
-  if (i().isEmpty(s)) returnfalse;
-  let o = l.default.keys(s).filter(e => {
+  let o = e.getFavoriteChannels();
+  if (i().isEmpty(o)) returnfalse;
+  let s = l.default.keys(o).filter(e => {
     let r = t.getChannel(e);
     return null != r && (!!r.isPrivate() || n.can(d.xB.VIEW_CHANNEL, r))
   });
-  return !i().isEmpty(o)
+  return !i().isEmpty(s)
 }
 
 function p() {
   let {
     canShow: e,
     isFavoritesPerk: t
-  } = (0, u.l)("useIsFavoritesGuildVisible"), n = (0, a.bG)([c.A, s.A, o.A], () => e && f(c.A, s.A, o.A));
+  } = (0, u.l)("useIsFavoritesGuildVisible"), n = (0, a.bG)([c.A, o.A, s.A], () => e && f(c.A, o.A, s.A));
   return !!t || n
 }

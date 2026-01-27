@@ -42,7 +42,7 @@ function b() {
 }
 
 function O() {
-  let e = (0, r.bG)([o.Ay], () => o.Ay.canShowAdminWarning),
+  let e = (0, r.bG)([s.Ay], () => s.Ay.canShowAdminWarning),
     t = b();
   return !!c.isPlatformEmbedded && e && !E() && t
 }

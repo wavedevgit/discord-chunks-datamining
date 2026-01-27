@@ -16,13 +16,13 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js");
 
 function d() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : o.A,
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : s.A,
     {
       darkSidebar: t
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : l.Ay,
     {
       gradientPreset: n
-    } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.A,
+    } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.A,
     r = arguments.length > 3 ? arguments[3] : true,
     a = arguments.length > 4 ? arguments[4] : true,
     c = null != r.customUserThemeSettings || a;
@@ -32,13 +32,13 @@ function d() {
 function f() {
   let e = c.eh.getSetting(),
     t = a.ko.getState().isEditorActive();
-  return d(o.A, l.Ay, s.A, e, t)
+  return d(s.A, l.Ay, o.A, e, t)
 }
 
 function p() {
   let e = c.eh.useSetting(),
     t = (0, a.ko)(e => e.isEditorActive());
-  return (0, r.bG)([o.A, l.Ay, s.A], () => d(o.A, l.Ay, s.A, e, t))
+  return (0, r.bG)([s.A, l.Ay, o.A], () => d(s.A, l.Ay, o.A, e, t))
 }
 
 function _() {

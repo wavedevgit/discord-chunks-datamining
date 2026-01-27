@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 411121, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 411121, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => U
+  A: () => M
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
   s = require.n(Chunk503698),
   Chunk989349 = require("./989349.js"),
-  l = require.n(Chunk989349),
+  o = require.n(Chunk989349),
   Chunk311907 = require("./311907.js"),
   Chunk451988 = require("./451988.js"),
   Chunk421380 = require("./421380.js"),
@@ -35,7 +34,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk539785 = require("./539785.js");
 
-function x(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,17 +42,15 @@ function x(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let L = 512,
-  j = 1e3;
-class M extends Chunk64700.PureComponent {
+class w extends Chunk64700.PureComponent {
   componentWillUnmount() {
     this._copyModeTimeout.stop()
   }
   get copyButtonText() {
     switch (this.state.copyMode) {
-      case f.qCr.SUCCESS:
+      case _.qCr.SUCCESS:
         return P.intl.string(P.t.XVvPjU);
-      case f.qCr.ERROR:
+      case _.qCr.ERROR:
         return P.intl.string(P.t.i4GM3L);
       default:
         return P.intl.string(P.t.OpuAlK)
@@ -69,26 +66,26 @@ class M extends Chunk64700.PureComponent {
     } = this.props, {
       copyMode: n
     } = this.state;
-    return (0, r.jsxs)(m.A, {
-      direction: m.A.Direction.VERTICAL,
-      className: D.Gj,
-      children: [(0, r.jsx)(f.e2O, {
-        className: D.ph,
-        value: (0, N.Zq)(t.code),
+    return (0, r.jsxs)(A.A, {
+      direction: A.A.Direction.VERTICAL,
+      className: R.Gj,
+      children: [(0, r.jsx)(_.e2O, {
+        className: R.ph,
+        value: (0, v.Zq)(t.code),
         text: this.copyButtonText,
         mode: n,
-        supportsCopy: C.p5,
+        supportsCopy: j.p5,
         hideMessage: e ? P.intl.string(P.t["0RLn47"]) : null,
         onCopy: this.handleCopy,
-        buttonColor: d.XD.BRAND,
-        buttonLook: d.pR.FILLED
+        buttonColor: u.XD.BRAND,
+        buttonLook: u.pR.FILLED
       }), (0, r.jsxs)("div", {
-        className: D.KB,
+        className: R.KB,
         children: [null != t.expiresAt ? (0, r.jsxs)(i.Fragment, {
           children: [P.intl.format(P.t.ltVZcJ, {
-            hours: t.expiresAt.diff(l()(), "h")
+            hours: t.expiresAt.diff(o()(), "h")
           }), " —\xa0"]
-        }) : null, (0, r.jsx)(f.DUT, {
+        }) : null, (0, r.jsx)(_.DUT, {
           tag: "a",
           onClick: () => this.handleRevoke(t.code),
           children: P.intl.string(P.t.v6Yazx)
@@ -97,26 +94,26 @@ class M extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "_copyModeTimeout", new u.Ep), x(this, "state", {
-      copyMode: f.qCr.DEFAULT
-    }), x(this, "handleCopy", e => {
+    super(...e), D(this, "_copyModeTimeout", new d.Ep), D(this, "state", {
+      copyMode: _.qCr.DEFAULT
+    }), D(this, "handleCopy", e => {
       let {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, N.AK)(t, n), (0, C.C)(e, () => this.setState({
-        copyMode: f.qCr.SUCCESS
+      (0, v.AK)(t, n), (0, j.C)(e, () => this.setState({
+        copyMode: _.qCr.SUCCESS
       }), () => this.setState({
-        copyMode: f.qCr.ERROR
-      })), this._copyModeTimeout.start(j, () => {
+        copyMode: _.qCr.ERROR
+      })), this._copyModeTimeout.start(1e3, () => {
         this.setState({
-          copyMode: f.qCr.DEFAULT
+          copyMode: _.qCr.DEFAULT
         })
       })
     })
   }
 }
-class k extends Chunk64700.PureComponent {
+class L extends Chunk64700.PureComponent {
   componentDidMount() {
     this._loadedAt = Date.now()
   }
@@ -126,17 +123,17 @@ class k extends Chunk64700.PureComponent {
       giftStyle: t,
       application: n
     } = this.props;
-    return (0, y.bF)(e) ? (0, r.jsx)(b.e, {
+    return (0, b.bF)(e) ? (0, r.jsx)(E.e, {
       shape: "square",
       sku: e,
-      containerClassName: D.ez
-    }) : null != t ? (0, r.jsx)(E.A, {
+      containerClassName: R.ez
+    }) : null != t ? (0, r.jsx)(h.A, {
       giftStyle: t,
-      className: D.ez,
+      className: R.ez,
       shouldAnimate: this.state.isHovered
-    }) : (0, r.jsx)(g.A, {
+    }) : (0, r.jsx)(f.A, {
       game: n,
-      size: g.M.MEDIUM,
+      size: f.M.MEDIUM,
       skuId: e.id
     })
   }
@@ -146,19 +143,19 @@ class k extends Chunk64700.PureComponent {
       entitlements: t,
       application: n
     } = this.props;
-    return (0, y.bF)(e) ? (0, r.jsxs)("div", {
-      className: s()(D.Oc, D.ic),
-      children: [(0, r.jsx)(g.A, {
+    return (0, b.bF)(e) ? (0, r.jsxs)("div", {
+      className: s()(R.Oc, R.ic),
+      children: [(0, r.jsx)(f.A, {
         game: n,
-        size: g.M.XSMALL,
+        size: f.M.XSMALL,
         skuId: e.id,
-        className: D._u
+        className: R._u
       }), P.intl.format(P.t["6plpZi"], {
         applicationName: n.name,
         copies: t.length
       })]
     }) : (0, r.jsx)("div", {
-      className: D.Oc,
+      className: R.Oc,
       children: P.intl.format(P.t.zMcvcA, {
         copies: t.length
       })
@@ -170,26 +167,26 @@ class k extends Chunk64700.PureComponent {
       subscriptionPlan: n,
       giftCodeBatchId: i
     } = this.props;
-    return e = i === R.FB ? P.intl.string(P.t.odsU6W) : i === R.Bu && null != n ? P.intl.formatToPlainString(n.interval === R.WT.MONTH ? P.t.uZjpiJ : P.t.bJW1EA, {
+    return e = i === y.FB ? P.intl.string(P.t.odsU6W) : i === y.Bu && null != n ? P.intl.formatToPlainString(n.interval === y.WT.MONTH ? P.t.uZjpiJ : P.t.bJW1EA, {
       skuName: t.name,
       intervalCount: n.intervalCount
-    }) : null == n ? t.name : P.intl.formatToPlainString(n.interval === R.WT.MONTH ? P.t.rCJvqo : P.t.Vd3Iu8, {
+    }) : null == n ? t.name : P.intl.formatToPlainString(n.interval === y.WT.MONTH ? P.t.rCJvqo : P.t.Vd3Iu8, {
       skuName: t.name,
       intervalCount: n.intervalCount
     }), (0, r.jsx)("div", {
-      className: D.mO,
+      className: R.mO,
       children: e
     })
   }
   renderGenerateGiftCodeRow() {
-    return (0, r.jsxs)(m.A, {
-      justify: m.A.Justify.BETWEEN,
-      align: m.A.Align.CENTER,
-      className: D.pe,
-      children: [(0, r.jsx)(f.Text, {
+    return (0, r.jsxs)(A.A, {
+      justify: A.A.Justify.BETWEEN,
+      align: A.A.Align.CENTER,
+      className: R.pe,
+      children: [(0, r.jsx)(_.Text, {
         variant: "text-md/normal",
         children: P.intl.string(P.t.lELyPj)
-      }), (0, r.jsx)(f.Button, {
+      }), (0, r.jsx)(_.Button, {
         variant: "primary",
         size: "sm",
         text: P.intl.string(P.t.Q3Qguo),
@@ -208,55 +205,55 @@ class k extends Chunk64700.PureComponent {
       entitlements: e,
       application: t,
       giftCodes: n,
-      className: a,
+      className: l,
       sku: s,
-      isFetching: o,
-      hideCodes: l
+      isFetching: a,
+      hideCodes: o
     } = this.props, {
       isOpen: c
     } = this.state;
-    return (0, r.jsxs)(_.A, {
-      className: a,
-      children: [(0, r.jsx)(f.DUT, {
+    return (0, r.jsxs)(m.A, {
+      className: l,
+      children: [(0, r.jsx)(_.DUT, {
         onClick: this.handleToggleOpen,
-        className: D.Nr,
+        className: R.Nr,
         onMouseEnter: () => this.setIsHovered(true),
         onMouseLeave: () => this.setIsHovered(false),
-        children: (0, r.jsx)(_.A.Header, {
-          splashArtURL: t.getSplashURL(L),
+        children: (0, r.jsx)(m.A.Header, {
+          splashArtURL: t.getSplashURL(512),
           children: (0, r.jsxs)("div", {
-            className: D.MY,
-            children: [(0, r.jsxs)(m.A, {
-              align: m.A.Align.CENTER,
+            className: R.MY,
+            children: [(0, r.jsxs)(A.A, {
+              align: A.A.Align.CENTER,
               children: [this.renderGiftIcon(), (0, r.jsxs)("div", {
-                className: D.TK,
+                className: R.TK,
                 children: [this.renderTitle(), this.renderSubtitle()]
               })]
-            }), (0, r.jsx)(T.A, {
-              direction: c ? T.A.Directions.UP : T.A.Directions.DOWN,
-              className: D.eO
+            }), (0, r.jsx)(S.A, {
+              direction: c ? S.A.Directions.UP : S.A.Directions.DOWN,
+              className: R.eO
             })]
           })
         })
-      }), c ? (0, r.jsx)(_.A.Body, {
-        children: o ? (0, r.jsx)(f.y$y, {
-          className: D.u1
+      }), c ? (0, r.jsx)(m.A.Body, {
+        children: a ? (0, r.jsx)(_.y$y, {
+          className: R.u1
         }) : (0, r.jsxs)(i.Fragment, {
-          children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, r.jsx)(M, {
+          children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, r.jsx)(w, {
             giftCode: e,
             sku: s,
-            hideCode: l
+            hideCode: o
           }, e.code))]
         })
       }) : null]
     })
   }
   constructor(...e) {
-    super(...e), x(this, "_loadedAt", null), x(this, "state", {
+    super(...e), D(this, "_loadedAt", null), D(this, "state", {
       isOpen: false,
       isCreating: false,
       isHovered: false
-    }), x(this, "handleGenerateGiftCode", async e => {
+    }), D(this, "handleGenerateGiftCode", async e => {
       e.stopPropagation();
       let {
         skuId: t,
@@ -269,7 +266,7 @@ class k extends Chunk64700.PureComponent {
         isCreating: false,
         isOpen: true
       })
-    }), x(this, "handleToggleOpen", () => {
+    }), D(this, "handleToggleOpen", () => {
       let {
         skuId: e,
         subscriptionPlanId: t,
@@ -281,21 +278,21 @@ class k extends Chunk64700.PureComponent {
     })
   }
 }
-let U = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk351906.A, Chunk30793.A, Chunk587895.A, Chunk97352.A, Chunk961350.default], e => {
+let M = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk351906.A, Chunk30793.A, Chunk587895.A, Chunk97352.A, Chunk961350.default], e => {
   let {
     skuId: t,
     subscriptionPlanId: n,
     giftStyle: r
-  } = e, i = S.A.get(t);
+  } = e, i = T.A.get(t);
   if (null == i) throw Error("SKU was unavailable while rendering gift.");
-  let a = v.A.getForGifterSKUAndPlan(O.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
+  let l = O.A.getForGifterSKUAndPlan(x.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
   return {
     sku: i,
-    hideCodes: A.A.enabled,
-    isFetching: v.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
-    loadedAt: v.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
-    application: h.A.getApplication(i.applicationId),
-    subscriptionPlan: null != n ? (0, w.c9)(n) : null,
-    giftCodes: a
+    hideCodes: C.A.enabled,
+    isFetching: O.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
+    loadedAt: O.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
+    application: g.A.getApplication(i.applicationId),
+    subscriptionPlan: null != n ? (0, N.c9)(n) : null,
+    giftCodes: l
   }
-})(k)
+})(L)

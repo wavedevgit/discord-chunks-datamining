@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk435371 = require("./435371.js"),
   Chunk397927 = require("./397927.js"),
   Chunk594832 = require("./594832.js"),
@@ -44,9 +44,9 @@ function O(e) {
     dragHandle: R,
     giftingOrigin: P,
     source: D
-  } = e, x = i.useRef(null), L = i.useRef(null), j = null != v ? v : L, {
-    trackUserProfileWishlistAction: M
-  } = (0, p.NJ)(), k = a && true === t.isOwned && null != t.gifterUserId, U = null != t.gifterUserId ? u.default.getUser(t.gifterUserId) : null, G = null != U ? f.Ay.getName(U) : null, V = k && null != U && null != G && "" !== G, F = V ? (0, r.jsx)(l.euF, {
+  } = e, L = i.useRef(null), x = i.useRef(null), M = null != v ? v : x, {
+    trackUserProfileWishlistAction: j
+  } = (0, p.NJ)(), k = a && true === t.isOwned && null != t.gifterUserId, U = null != t.gifterUserId ? u.default.getUser(t.gifterUserId) : null, G = null != U ? f.Ay.getName(U) : null, F = k && null != U && null != G && "" !== G, V = F ? (0, r.jsx)(l.euF, {
     src: U.getAvatarURL(true, 48),
     size: l._3J.SIZE_48,
     "aria-label": G
@@ -57,14 +57,14 @@ function O(e) {
       color: l.LU0.colors.WHITE,
       width: 38,
       height: 38,
-      className: s()(y.x6, y.AI),
+      className: o()(y.x6, y.AI),
       "aria-label": E.intl.string(E.t.L5Pt9L)
     })
   }), H = (0, r.jsx)("div", {
     className: y.Lw,
     children: (0, r.jsx)(l.Button, {
       focusProps: {
-        ringTarget: j
+        ringTarget: M
       },
       variant: "primary",
       size: "sm",
@@ -84,7 +84,7 @@ function O(e) {
         wishlist_id: D === c.uS.WISHLIST ? n : null,
         product_line: t.skuProductLine
       })
-    } else null != n && M({
+    } else null != n && j({
       wishlistId: n,
       action: h.Mq.WISHLIST_ITEM_CLICKED,
       skuId: t.skuId,
@@ -92,11 +92,11 @@ function O(e) {
     });
     S()
   }, W = (0, r.jsxs)("div", {
-    ref: x,
+    ref: L,
     className: y.kL,
     children: [(0, r.jsxs)("div", {
-      ref: j,
-      className: s()(y.Nr, {
+      ref: M,
+      className: o()(y.Nr, {
         [y.go]: N,
         [y.tM]: "small-square" === b,
         [y.IU]: "small" === b,
@@ -114,7 +114,7 @@ function O(e) {
       }), N && B, O ? H : (0, r.jsx)(l.DUT, {
         "aria-label": T,
         focusProps: {
-          ringTarget: j
+          ringTarget: M
         },
         onClick: e => {
           e.stopPropagation(), Y()
@@ -127,13 +127,13 @@ function O(e) {
       className: y.eP
     })]
   });
-  return V ? (0, r.jsx)(o.un, {
+  return F ? (0, r.jsx)(s.un, {
     asContainer: true,
     title: E.intl.formatToPlainString(E.t.TL4ktE, {
       username: G
     }),
     body: t.skuName,
-    asset: F,
+    asset: V,
     children: W
   }) : W
 }

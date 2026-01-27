@@ -75,9 +75,9 @@ let S = e => {
     i.useEffect(() => {
       (c.current !== t || d.current !== n) && (h((0, a.A)()), c.current = t, d.current = n)
     }, [t, n]);
-    let [m, g] = (0, o.yK)([y.A], () => [y.A.isFetching(t), y.A.get(t)]);
+    let [m, g] = (0, s.yK)([y.A], () => [y.A.isFetching(t), y.A.get(t)]);
     return i.useEffect(() => {
-      null != g || m || (0, u.EX)(r, t, s.g.VARIANTS_GROUP).catch(e => {})
+      null != g || m || (0, u.EX)(r, t, o.g.VARIANTS_GROUP).catch(e => {})
     }, [r, t, g, m]), {
       loadId: _,
       analyticsLocations: l,
@@ -96,9 +96,9 @@ let S = e => {
     i.useEffect(() => {
       E.A.isLoadedForPremiumSKUs() || c.h.wait(() => (0, d.zS)())
     }, []);
-    let n = (0, o.bG)([E.A], () => null != t ? E.A.get(t) : null);
+    let n = (0, s.bG)([E.A], () => null != t ? E.A.get(t) : null);
     return {
-      isLoadedForPremiumSKUs: (0, o.bG)([E.A], () => E.A.isLoadedForPremiumSKUs()),
+      isLoadedForPremiumSKUs: (0, s.bG)([E.A], () => E.A.isLoadedForPremiumSKUs()),
       selectedPlan: n
     }
   },
@@ -125,8 +125,8 @@ let S = e => {
       applicationId: n,
       skuId: i,
       isGift: a,
-      onClose: s,
-      onComplete: o,
+      onClose: o,
+      onComplete: s,
       initialPlanId: c,
       purchaseType: u,
       stepConfigs: d,
@@ -156,8 +156,8 @@ let S = e => {
             isGift: a,
             children: (0, r.jsx)(g.PaymentModal, {
               transitionState: l.ip4.ENTERED,
-              onClose: s,
-              onComplete: o,
+              onClose: o,
+              onComplete: s,
               applicationId: n,
               skuId: i,
               initialPlanId: c,

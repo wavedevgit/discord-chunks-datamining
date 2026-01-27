@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 517235, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 82575 **/
+/** chunk id: 517235, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,7 +12,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk927578 = require("./927578.js"),
   Chunk788868 = require("./788868.js");
 
-function u() {
-  let e = (0, i.bG)([o.default], () => o.default.getCurrentUser());
-  return (0, l.YE)(e, c.PremiumTypes.TIER_2) ? (0, r.jsx)(a.A, {}) : (0, r.jsx)(s.A, {})
+function d() {
+  let e = (0, s.bG)([a.default], () => a.default.getCurrentUser());
+  return (0, o.YE)(e, c.PremiumTypes.TIER_2) ? (0, i.jsx)(l.A, {}) : (0, i.jsx)(r.A, {})
 }

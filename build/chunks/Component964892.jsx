@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
@@ -94,14 +94,14 @@ function R() {
   if ("center" === e || "custom" === e) return 0;
   let i = "left" === t || "right" === t,
     a = i ? r : null != n ? n : T,
-    s = i ? S : I;
+    o = i ? S : I;
   if (0 === a) return 0;
-  let o = a / 2 - s;
+  let s = a / 2 - o;
   switch (e) {
     case "start":
-      return o;
+      return s;
     case "end":
-      return -o;
+      return -s;
     default:
       return 0
   }
@@ -118,24 +118,24 @@ function P(e) {
     align: v,
     alignmentStrategy: P = "trigger-center",
     caretConfig: D,
-    hasVideo: x = false,
-    gradientColor: L,
-    gradientOffsetBottom: j = .4,
-    onPositionChange: M,
+    hasVideo: L = false,
+    gradientColor: x,
+    gradientOffsetBottom: M = .4,
+    onPositionChange: j,
     onNudgeChange: k,
     scrollBehavior: U = "sticky",
     modal: G = false,
-    returnRef: V,
-    experimental_ignoreModalClicks: F = true,
+    returnRef: F,
+    experimental_ignoreModalClicks: V = true,
     closeOnClickOutside: B = false
   } = e, [H, Y] = i.useState(h), [W, K] = i.useState(y), z = i.useRef(y), q = i.useRef(0), {
     ref: Z,
-    width: X,
-    height: Q
-  } = (0, d.Ay)(), J = (0, c.bG)([f.A], () => f.A.getLayers()), $ = null != (t = J[J.length - 1]) ? t : "base", ee = i.useRef(M);
+    width: Q,
+    height: X
+  } = (0, d.Ay)(), J = (0, c.bG)([f.A], () => f.A.getLayers()), $ = null != (t = J[J.length - 1]) ? t : "base", ee = i.useRef(j);
   i.useEffect(() => {
-    ee.current = M
-  }, [M]);
+    ee.current = j
+  }, [j]);
   let et = i.useCallback(e => {
       var t;
       null != e && e !== z.current && (z.current = e, K(e), null == (t = ee.current) || t.call(ee, e))
@@ -167,11 +167,11 @@ function P(e) {
       }
       return "center"
     }, [P, v, W]),
-    es = i.useMemo(() => {
+    eo = i.useMemo(() => {
       var e;
-      if ("edge" !== P) return R(null != (e = null == D ? true : D.align) ? e : "center", W, X, Q)
-    }, [P, D, W, X, Q]),
-    eo = i.useMemo(() => ({
+      if ("edge" !== P) return R(null != (e = null == D ? true : D.align) ? e : "center", W, Q, X)
+    }, [P, D, W, Q, X]),
+    es = i.useMemo(() => ({
       position: W,
       caretConfig: null != D ? D : {
         align: "center"
@@ -188,16 +188,16 @@ function P(e) {
         let u = (0, r.jsx)(l.lGe, b(E({}, c), {
           setDialogRef: t,
           modal: G,
-          className: s()(null != L ? m.popoverContentWithGradient : m.popover, {
-            [m["popover--video"]]: x
+          className: o()(null != x ? m.popoverContentWithGradient : m.popover, {
+            [m["popover--video"]]: L
           }),
-          returnRef: V,
+          returnRef: F,
           children: (0, r.jsx)(A.Provider, {
-            value: eo,
+            value: es,
             children: n
           })
         }));
-        return (0, r.jsx)(o.animated.div, {
+        return (0, r.jsx)(s.animated.div, {
           ref: Z,
           "data-mana-component": "popover",
           style: b(E({}, e), {
@@ -206,9 +206,9 @@ function P(e) {
             "--custom-caret-edge-offset-horizontal-nudge": "".concat(a, "px"),
             "--custom-popover-width": "".concat(T, "px")
           }),
-          children: null != L ? (0, r.jsx)(l.hLv, {
-            offsetBottom: j,
-            color: L,
+          children: null != x ? (0, r.jsx)(l.hLv, {
+            offsetBottom: M,
+            color: x,
             className: m.popoverGradientWrapper,
             children: u
           }) : u
@@ -222,15 +222,15 @@ function P(e) {
     position: W,
     align: ea,
     spacing: C + N,
-    offset: es,
+    offset: eo,
     layerContext: true,
-    positionKey: null != es ? "".concat(W, "-").concat(es) : true,
+    positionKey: null != eo ? "".concat(W, "-").concat(eo) : true,
     popoutKey: true,
     fixed: false,
     autoInvert: true,
     nudgeAlignIntoViewport: "top" === W || "bottom" === W,
     closeOnClickOutside: B,
-    ignoreModalClicks: F,
+    ignoreModalClicks: V,
     scrollBehavior: U,
     renderPopout: el,
     children: w

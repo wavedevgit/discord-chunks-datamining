@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 607205, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 73169 **/
+/** chunk id: 607205, original params: e,t,r (module,exports,require) **/
 module.exports = {
   $P: "search_c322aa",
   ON: "searchBar_c322aa",

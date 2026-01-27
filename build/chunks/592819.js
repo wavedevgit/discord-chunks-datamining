@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk310784 = require("./310784.js"),
   i = require.n(Chunk310784),
   Chunk563304 = require("./563304.js"),
-  s = require.n(Chunk563304),
+  o = require.n(Chunk563304),
   Chunk907211 = require("./907211.js"),
   Chunk93132 = require("./93132.js"),
   Chunk199222 = require("./199222.js"),
@@ -37,11 +37,11 @@ function b(e) {
 }
 let O = {
   themes: _,
-  colors: s()(h, (e, t) => ({
+  colors: o()(h, (e, t) => ({
     [y]: t
   })),
   unsafe_rawColors: m,
-  shadows: s()(g, e => {
+  shadows: o()(g, e => {
     function t(t) {
       return {
         resolve: (n, r) => t(e[n].nativeStyles, r)
@@ -63,15 +63,15 @@ let O = {
     resolveSemanticColor(e, t, n) {
       var r, a;
       e = b(e);
-      let s = h[t[y]],
+      let o = h[t[y]],
         {
-          category: o
-        } = s,
-        l = s[e],
+          category: s
+        } = o,
+        l = o[e],
         c = m[l.raw],
         u = l.opacity;
-      if ((null == n ? true : n.gradient) != null && "gradient" in s) {
-        let e = s.gradient[null == n ? true : n.gradient.theme];
+      if ((null == n ? true : n.gradient) != null && "gradient" in o) {
+        let e = o.gradient[null == n ? true : n.gradient.theme];
         if (null != e) {
           let t = i()(e.color in m ? m[e.color] : null == n ? true : n.gradient.colors[e.color]);
           "saturation" in e && (t = t.set("hsl.s", e.saturation)), "lightness" in e && (t = t.set("hsl.l", e.lightness)), c = t.hex(), u = "opacity" in e ? e.opacity : 1
@@ -79,7 +79,7 @@ let O = {
       }
       let d = null != (r = null == n ? true : n.contrast) ? r : 1,
         f = null != (a = null == n ? true : n.saturation) ? a : 1;
-      return (f < 1 && (c = (0, p.d)(c, o, f)), 1 !== d && (c = (0, p.yq)(c, o, e, d)), 1 === u) ? c : i()(c).alpha(u).hex()
+      return (f < 1 && (c = (0, p.d)(c, s, f)), 1 !== d && (c = (0, p.yq)(c, s, e, d)), 1 === u) ? c : i()(c).alpha(u).hex()
     },
     adjustColorSaturation: (e, t, n) => (0, p.d)(e, n, t),
     adjustColorContrast: (e, t, n, r) => (0, p.yq)(e, n, r, t)

@@ -28,19 +28,19 @@ function p(e) {
     GuildStore: r,
     PermissionStore: i,
     VoiceStateStore: a
-  } = e, s = n.getChannel(t);
-  if (null == s) return 3;
-  if (!c.H5.includes(s.type)) return 7;
+  } = e, o = n.getChannel(t);
+  if (null == o) return 3;
+  if (!c.H5.includes(o.type)) return 7;
   if (!(0, l.A)()) return 6;
-  if (null != s && !s.isPrivate()) {
-    let e = s.getGuildId();
+  if (null != o && !o.isPrivate()) {
+    let e = o.getGuildId();
     if (null == e) return 4;
     let n = r.getGuild(e);
-    if ((null == n ? true : n.afkChannelId) === s.id) return 5;
-    let o = i.can(u.xBc.CONNECT, s);
-    if (!i.can(u.xBc.USE_EMBEDDED_ACTIVITIES, s)) return 1;
-    let l = a.getCurrentClientVoiceChannelId(s.getGuildId()) === t;
-    if (s.isVocal() && !l && !o) return 2
+    if ((null == n ? true : n.afkChannelId) === o.id) return 5;
+    let s = i.can(u.xBc.CONNECT, o);
+    if (!i.can(u.xBc.USE_EMBEDDED_ACTIVITIES, o)) return 1;
+    let l = a.getCurrentClientVoiceChannelId(o.getGuildId()) === t;
+    if (o.isVocal() && !l && !s) return 2
   }
   return 0
 }
@@ -50,18 +50,18 @@ function _(e) {
     channelId: e,
     ChannelStore: i.A,
     GuildStore: a.A,
-    PermissionStore: s.A,
-    VoiceStateStore: o.A
+    PermissionStore: o.A,
+    VoiceStateStore: s.A
   })
 }
 
 function h(e) {
-  return (0, r.bG)([i.A, a.A, s.A, o.A], () => p({
+  return (0, r.bG)([i.A, a.A, o.A, s.A], () => p({
     channelId: e,
     ChannelStore: i.A,
     GuildStore: a.A,
-    PermissionStore: s.A,
-    VoiceStateStore: o.A
+    PermissionStore: o.A,
+    VoiceStateStore: s.A
   }), [e])
 }
 

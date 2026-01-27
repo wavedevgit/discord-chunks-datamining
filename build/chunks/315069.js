@@ -35,22 +35,22 @@ function a(e, t) {
   return n
 }
 
-function s(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./896048.js");
-class o {
+class s {
   toJS() {
     return i({}, this)
   }
   set(e, t) {
     let n = this,
       r = n[e];
-    return t instanceof Date && r instanceof Date && t.getTime() === r.getTime() ? this : r !== t ? new this.constructor(s(i({}, this), {
+    return t instanceof Date && r instanceof Date && t.getTime() === r.getTime() ? this : r !== t ? new this.constructor(o(i({}, this), {
       [e]: t
     })) : this
   }
@@ -60,8 +60,8 @@ class o {
     for (let r in e) {
       if (!e.hasOwnProperty(r)) continue;
       let a = t[r],
-        s = e[r];
-      s instanceof Date && a instanceof Date && s.getTime() === a.getTime() || a !== s && (null == n && (n = i({}, this)), n[r] = e[r])
+        o = e[r];
+      o instanceof Date && a instanceof Date && o.getTime() === a.getTime() || a !== o && (null == n && (n = i({}, this)), n[r] = e[r])
     }
     return null != n ? new this.constructor(n) : this
   }
@@ -69,6 +69,6 @@ class o {
     null == n && (n = t, t = true);
     let r = this,
       a = r[e];
-    return a instanceof o || (a instanceof Array ? a = [...a] : a instanceof Object && (a = i({}, a))), true === a && (a = t), this.set(e, n(a))
+    return a instanceof s || (a instanceof Array ? a = [...a] : a instanceof Object && (a = i({}, a))), true === a && (a = t), this.set(e, n(a))
   }
 }

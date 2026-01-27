@@ -2,13 +2,13 @@
 /** chunk id: 50016, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => o
+  W: () => s
 });
 var Chunk852015 = require("./852015.js"),
   Chunk124651 = require("./124651.js"),
   Chunk716115 = require("./716115.js"),
   Chunk960731 = require("./960731.js");
-class o {
+class s {
   constructor(e) {
     this.info = e
   }
@@ -21,29 +21,29 @@ class o {
   }
   read(e, t, n, a) {
     this.prepare();
-    let s = true === a ? e.len : e.pos + a;
-    for (; e.pos < s;) {
-      let [a, s] = e.tag(), o = this.fieldNoToField.get(a);
-      if (!o) {
+    let o = true === a ? e.len : e.pos + a;
+    for (; e.pos < o;) {
+      let [a, o] = e.tag(), s = this.fieldNoToField.get(a);
+      if (!s) {
         let i = n.readUnknownField;
-        if ("throw" == i) throw Error(`Unknown field ${a} (wire type ${s}) for ${this.info.typeName}`);
-        let o = e.skip(s);
-        false !== i && (true === i ? r.f$.onRead : i)(this.info.typeName, t, a, s, o);
+        if ("throw" == i) throw Error(`Unknown field ${a} (wire type ${o}) for ${this.info.typeName}`);
+        let s = e.skip(o);
+        false !== i && (true === i ? r.f$.onRead : i)(this.info.typeName, t, a, o, s);
         continue
       }
       let l = t,
-        c = o.repeat,
-        u = o.localName;
-      switch (o.oneof && (l = l[o.oneof]).oneofKind !== u && (l = t[o.oneof] = {
+        c = s.repeat,
+        u = s.localName;
+      switch (s.oneof && (l = l[s.oneof]).oneofKind !== u && (l = t[s.oneof] = {
           oneofKind: u
-        }), o.kind) {
+        }), s.kind) {
         case "scalar":
         case "enum":
-          let d = "enum" == o.kind ? i.LN.INT32 : o.T,
-            f = "scalar" == o.kind ? o.L : true;
+          let d = "enum" == s.kind ? i.LN.INT32 : s.T,
+            f = "scalar" == s.kind ? s.L : true;
           if (c) {
             let t = l[u];
-            if (s == r.O0.LengthDelimited && d != i.LN.STRING && d != i.LN.BYTES) {
+            if (o == r.O0.LengthDelimited && d != i.LN.STRING && d != i.LN.BYTES) {
               let n = e.uint32() + e.pos;
               for (; e.pos < n;) t.push(this.scalar(e, d, f))
             } else t.push(this.scalar(e, d, f))
@@ -52,22 +52,22 @@ class o {
         case "message":
           if (c) {
             let t = l[u],
-              r = o.T().internalBinaryRead(e, e.uint32(), n);
+              r = s.T().internalBinaryRead(e, e.uint32(), n);
             t.push(r)
-          } else l[u] = o.T().internalBinaryRead(e, e.uint32(), n, l[u]);
+          } else l[u] = s.T().internalBinaryRead(e, e.uint32(), n, l[u]);
           break;
         case "map":
-          let [p, _] = this.mapEntry(o, e, n);
+          let [p, _] = this.mapEntry(s, e, n);
           l[u][p] = _
       }
     }
   }
   mapEntry(e, t, n) {
-    let r, a, o = t.uint32(),
-      l = t.pos + o;
+    let r, a, s = t.uint32(),
+      l = t.pos + s;
     for (; t.pos < l;) {
-      let [s, o] = t.tag();
-      switch (s) {
+      let [o, s] = t.tag();
+      switch (o) {
         case 1:
           r = e.K == i.LN.BOOL ? t.bool().toString() : this.scalar(t, e.K, i.rO.STRING);
           break;
@@ -84,16 +84,16 @@ class o {
           }
           break;
         default:
-          throw Error(`Unknown field ${s} (wire type ${o}) in map entry for ${this.info.typeName}#${e.name}`)
+          throw Error(`Unknown field ${o} (wire type ${s}) in map entry for ${this.info.typeName}#${e.name}`)
       }
     }
     if (true === r) {
-      let t = (0, s.V)(e.K);
+      let t = (0, o.V)(e.K);
       r = e.K == i.LN.BOOL ? t.toString() : t
     }
     if (true === a) switch (e.V.kind) {
       case "scalar":
-        a = (0, s.V)(e.V.T, e.V.L);
+        a = (0, o.V)(e.V.T, e.V.L);
         break;
       case "enum":
         a = 0;

@@ -35,13 +35,13 @@ let c = {
         throw a.h.dispatch({
           type: "USER_APPLICATION_IDENTITY_FETCH_USER_FAILURE",
           userId: e
-        }), s.A.captureException(t), t
+        }), o.A.captureException(t), t
       }
     }
   },
   u = c,
   d = (0, Chunk311907.UT)(Chunk339580.A, {
     getQueryId: Chunk652215.fic.USER_APPLICATION_IDENTITIES,
-    get: e => o.A.getUserIdentities(e),
+    get: e => s.A.getUserIdentities(e),
     load: e => c.fetchUserApplicationIdentitiesWithProfiles(e)
   })

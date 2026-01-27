@@ -18,7 +18,7 @@ var Chunk64700 = require("./64700.js"),
 let u = "no primary app command for application",
   d = [Chunk155718.kc.PRIMARY_ENTRY_POINT];
 async function f(e, t) {
-  let n, r = s.A.getChannel(e);
+  let n, r = o.A.getChannel(e);
   if (null != r && null == (n = p({
       channel: r,
       type: "channel"
@@ -48,13 +48,13 @@ function _(e, t) {
   let {
     commands: n,
     loading: i
-  } = h(e, t), a = n[0], s = null != a;
+  } = h(e, t), a = n[0], o = null != a;
   return r.useEffect(() => {
-    s || i || (0, o.$)({
+    o || i || (0, s.$)({
       type: "application",
       applicationId: t
     })
-  }, [t, s, i]), a
+  }, [t, o, i]), a
 }
 
 function h(e, t) {

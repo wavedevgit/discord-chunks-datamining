@@ -2,7 +2,7 @@
 /** chunk id: 556022, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => s
+  m: () => o
 }), require("./896048.js"), require("./591487.js"), require("./727858.js"), require("./747238.js");
 var Chunk998218 = require("./998218.js");
 let i = new Set(require("./468983.js")),
@@ -12,18 +12,18 @@ let i = new Set(require("./468983.js")),
     "gitlab.com": RegExp("/downloads\\S*/[^/]*")
   };
 
-function s(e) {
+function o(e) {
   var t, n;
   let {
-    pathname: s,
-    hostname: o
+    pathname: o,
+    hostname: s
   } = null != (t = r.A.toURLSafe(e)) ? t : {};
-  if (null == o) return null;
-  let l = a[o];
-  if (null != l && null != s && !l.test(s) || null == s) return null;
-  let c = s;
+  if (null == s) return null;
+  let l = a[s];
+  if (null != l && null != o && !l.test(o) || null == o) return null;
+  let c = o;
   try {
-    c = decodeURIComponent(s)
+    c = decodeURIComponent(o)
   } catch (e) {}
   let u = c.split("/"),
     d = null,

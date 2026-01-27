@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk575593 = require("./575593.js"),
   Chunk230109 = require("./230109.js"),
   Chunk397927 = require("./397927.js"),
@@ -81,15 +81,15 @@ let P = Chunk64700.memo(function(e) {
       hideSecondaryCTA: R,
       badgeOverride: P,
       skipLimitedTimeCheck: D,
-      onClickCard: x,
-      onClickPrimaryCTA: L,
-      onClickSecondaryCTA: j,
-      onMouseEnter: M,
+      onClickCard: L,
+      onClickPrimaryCTA: x,
+      onClickSecondaryCTA: M,
+      onMouseEnter: j,
       onMouseLeave: k,
       onFocus: U,
       onBlur: G,
-      primaryCTAText: V,
-      secondaryCTAIcon: F,
+      primaryCTAText: F,
+      secondaryCTAIcon: V,
       productNameClassName: B,
       badgeClassName: H,
       cardClassName: Y,
@@ -99,31 +99,31 @@ let P = Chunk64700.memo(function(e) {
       previewingVariantIndex: z,
       handleEntering: q,
       handleLeaving: Z
-    } = (0, I.f)(t), X = (0, O.sC)(), Q = (0, f.Mk)(), J = null == Q ? true : Q.tab, $ = (0, p.ho)(t), ee = i.useRef(null), {
+    } = (0, I.f)(t), Q = (0, O.sC)(), X = (0, f.Mk)(), J = null == X ? true : X.tab, $ = (0, p.ho)(t), ee = i.useRef(null), {
       isHoveringOrFocusing: et
     } = (0, d.A)(ee), {
       handleCardVisibilityChange: en
-    } = (0, _.Z)(t.skuId, J === S.G2.CATALOG ? "full" : J), er = (0, O.ql)(t, u.A.COLLECTIBLES_SHOP_CARD, K, X), ei = t.type === o.R.VARIANTS_GROUP && !C, ea = !w || !R, es = !(N && a) || ei, eo = es || ea, el = ea || ei;
+    } = (0, _.Z)(t.skuId, J === S.G2.CATALOG ? "full" : J), er = (0, O.ql)(t, u.A.COLLECTIBLES_SHOP_CARD, K, Q), ei = t.type === s.R.VARIANTS_GROUP && !C, ea = !w || !R, eo = !(N && a) || ei, es = eo || ea, el = ea || ei;
     return (0, r.jsx)(l.L, {
       innerRef: ee,
       onChange: en,
       threshold: 0,
       children: (0, r.jsx)(c.sqX, {
         ref: ee,
-        onClick: null != x ? x : er,
+        onClick: null != L ? L : er,
         "aria-label": $,
-        className: s()(Y, T.ty, {
+        className: o()(Y, T.ty, {
           [T.yo]: et
         }),
         onFocus: () => null == U ? true : U(t.skuId),
         onBlur: () => null == G ? true : G(t.skuId),
-        onMouseEnter: () => null == M ? true : M(t.skuId),
+        onMouseEnter: () => null == j ? true : j(t.skuId),
         onMouseLeave: () => null == k ? true : k(t.skuId),
         children: (0, r.jsxs)("div", {
           className: T.qt,
           children: [(0, r.jsx)("div", {
-            className: s()(T.Dq, {
-              [T.$r]: !a || es || el
+            className: o()(T.Dq, {
+              [T.$r]: !a || eo || el
             }),
             children: (0, r.jsx)(g.A, {
               skuId: t.skuId,
@@ -142,18 +142,18 @@ let P = Chunk64700.memo(function(e) {
               skuId: t.skuId,
               isCardHovered: et
             })]
-          }), eo && (0, r.jsxs)(r.Fragment, {
+          }), es && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
               className: T.wY
             }), (0, r.jsxs)("div", {
               className: T.xQ,
-              children: [es && (0, r.jsxs)("div", {
+              children: [eo && (0, r.jsxs)("div", {
                 className: T.xE,
                 children: [!(a && N) && (0, r.jsxs)("div", {
                   className: T.Ly,
                   children: [!a && (0, r.jsx)(m.A, {
                     skuId: t.skuId,
-                    className: s()(B, T.tZ)
+                    className: o()(B, T.tZ)
                   }), !N && (0, r.jsx)("div", {
                     className: T.oh,
                     "aria-hidden": true,
@@ -177,15 +177,15 @@ let P = Chunk64700.memo(function(e) {
                   children: [!w && (0, r.jsx)(y.A, {
                     skuId: t.skuId,
                     cardRef: ee,
-                    onClick: L,
-                    text: V,
+                    onClick: x,
+                    text: F,
                     prioritizedCurrency: W,
                     onClickAnalytics: K
                   }), !R && (0, r.jsx)(b.A, {
                     skuId: t.skuId,
                     cardRef: ee,
-                    onClick: j,
-                    icon: F,
+                    onClick: M,
+                    icon: V,
                     prioritizedCurrency: W,
                     onClickAnalytics: K
                   })]

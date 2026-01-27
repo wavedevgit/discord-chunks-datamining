@@ -22,7 +22,7 @@ function c(e, t, n) {
 let u = new Set;
 
 function d() {
-  for (let e of [r.du.HasRTCConnection, r.du.IsSendingVideo, r.du.IsSendingStream, r.du.IsReceivingVideo, r.du.IsReceivingStream]) o.Ay.setCrashInformation(e, 0)
+  for (let e of [r.du.HasRTCConnection, r.du.IsSendingVideo, r.du.IsSendingStream, r.du.IsReceivingVideo, r.du.IsReceivingStream]) s.Ay.setCrashInformation(e, 0)
 }
 
 function f(e) {
@@ -36,7 +36,7 @@ function f(e) {
 
 function p(e) {
   var t;
-  o.Ay.setCrashInformation(f(e.context), null != (t = e.mediaSessionId) ? t : null)
+  s.Ay.setCrashInformation(f(e.context), null != (t = e.mediaSessionId) ? t : null)
 }
 
 function _(e) {
@@ -44,15 +44,15 @@ function _(e) {
   let n = (null != (t = e.channelId) ? t : "unknown") + e.context;
   switch (e.state) {
     case l.S7L.RTC_CONNECTED:
-      u.add(n), o.Ay.setCrashInformation(r.du.HasRTCConnection, 1);
+      u.add(n), s.Ay.setCrashInformation(r.du.HasRTCConnection, 1);
       break;
     case l.S7L.DISCONNECTED:
-      o.Ay.setCrashInformation(f(e.context), null), u.delete(n), 0 === u.size && d()
+      s.Ay.setCrashInformation(f(e.context), null), u.delete(n), 0 === u.size && d()
   }
 }
 
 function h(e) {
-  let t = e.userId === s.default.getId(),
+  let t = e.userId === o.default.getId(),
     n = null != e.streamId,
     a = null;
   switch (e.context) {
@@ -62,7 +62,7 @@ function h(e) {
     case i.x.STREAM:
       a = t ? r.du.IsSendingStream : r.du.IsReceivingStream
   }
-  o.Ay.setCrashInformation(a, +!!n)
+  s.Ay.setCrashInformation(a, +!!n)
 }
 class m extends Chunk439372.A {
   constructor(...e) {

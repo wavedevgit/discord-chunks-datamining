@@ -3,18 +3,18 @@
 "use strict";
 require.d(exports, {
   D: () => i.DL,
-  u: () => o
+  u: () => s
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk862019 = require("./862019.jsx"),
   Chunk879821 = require("./879821.js"),
   Chunk193439 = require("./193439.js");
 
-function o(e) {
+function s(e) {
   let {
     defaultOpen: t,
     offset: n = 4,
-    placement: o,
+    placement: s,
     matchReferenceWidth: l = true,
     setHeight: c,
     setWidth: u,
@@ -39,7 +39,7 @@ function o(e) {
     open: f,
     onOpenChange: p,
     transform: d,
-    middleware: [null == o ? (0, a.RK)() : true, (0, a.Ej)({
+    middleware: [null == s ? (0, a.RK)() : true, (0, a.Ej)({
       apply(e) {
         let {
           rects: t,
@@ -55,8 +55,8 @@ function o(e) {
         })
       }
     }), (0, a.UU)(), (0, a.cY)(n), (0, a.BN)()],
-    whileElementsMounted: s.ll,
-    placement: o,
+    whileElementsMounted: o.ll,
+    placement: s,
     strategy: "fixed"
   }), b = (0, i.s9)(y, {
     bubbles: {

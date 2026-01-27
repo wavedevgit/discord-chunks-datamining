@@ -2,17 +2,17 @@
 /** chunk id: 744216, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  p: () => s
+  p: () => o
 });
 var Chunk73153 = require("./73153.js"),
   Chunk661191 = require("./661191.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   r.h.dispatch({
     type: "MESSAGE_CREATE",
     channelId: e,
-    message: o({
+    message: s({
       channelId: e,
       requesterUser: t,
       requestToSpeakTimestamp: n
@@ -23,7 +23,7 @@ function s(e, t, n) {
   })
 }
 
-function o(e) {
+function s(e) {
   let {
     channelId: t,
     requesterUser: n,

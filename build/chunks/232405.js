@@ -3,5 +3,5 @@
 var Chunk72885 = require("./72885.js"),
   Chunk517688 = require("./517688.js"),
   Chunk984638 = require("./984638.js"),
-  s = Chunk984638 && Chunk984638.isMap;
-module.exports = s ? Chunk517688(s) : Chunk72885
+  o = Chunk984638 && Chunk984638.isMap;
+module.exports = o ? Chunk517688(o) : Chunk72885

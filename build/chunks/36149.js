@@ -4,11 +4,11 @@
 require.d(exports, {
   $8: () => P,
   NI: () => w,
-  Q9: () => M,
-  ST: () => F,
-  Sr: () => V,
-  Wv: () => L,
-  YU: () => j,
+  Q9: () => j,
+  ST: () => V,
+  Sr: () => F,
+  Wv: () => x,
+  YU: () => M,
   b8: () => k,
   dZ: () => G,
   i2: () => N,
@@ -17,7 +17,7 @@ require.d(exports, {
   nn: () => U,
   p9: () => C,
   uE: () => D,
-  uN: () => x,
+  uN: () => L,
   yM: () => R
 }), require("./896048.js"), require("./747238.js");
 var Chunk64700 = require("./64700.js"),
@@ -47,63 +47,63 @@ let I = new Set([Chunk847599.q1.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT, Chunk8475
 
 function C() {
   let e = p.default.getCurrentUser();
-  return (null == e ? true : e.ageVerificationStatus) !== s.Tk.VERIFIED_ADULT
+  return (null == e ? true : e.ageVerificationStatus) !== o.Tk.VERIFIED_ADULT
 }
 
 function N() {
   let e = (0, i.bG)([p.default], () => p.default.getCurrentUser());
-  return (null == e ? true : e.ageVerificationStatus) !== s.Tk.VERIFIED_ADULT
+  return (null == e ? true : e.ageVerificationStatus) !== o.Tk.VERIFIED_ADULT
 }
 
 function w() {
   let e = p.default.getCurrentUser();
-  return (null == e ? true : e.ageVerificationStatus) === s.Tk.VERIFIED_TEEN
+  return (null == e ? true : e.ageVerificationStatus) === o.Tk.VERIFIED_TEEN
 }
 
 function R() {
   let e = (0, i.bG)([p.default], () => p.default.getCurrentUser());
-  return (null == e ? true : e.ageVerificationStatus) === s.Tk.VERIFIED_TEEN
+  return (null == e ? true : e.ageVerificationStatus) === o.Tk.VERIFIED_TEEN
 }
 
 function P() {
   let e = p.default.getCurrentUser();
-  return (null == e ? true : e.ageVerificationStatus) === s.Tk.VERIFIED_ADULT
+  return (null == e ? true : e.ageVerificationStatus) === o.Tk.VERIFIED_ADULT
 }
 
 function D() {
   let e = (0, i.bG)([p.default], () => p.default.getCurrentUser());
-  return (null == e ? true : e.ageVerificationStatus) === s.Tk.VERIFIED_ADULT
+  return (null == e ? true : e.ageVerificationStatus) === o.Tk.VERIFIED_ADULT
 }
-var x = function(e) {
+var L = function(e) {
     return e.CTAS = "ctas", e.CONTENT_TYPE = "content_type", e
   }({}),
-  L = function(e) {
+  x = function(e) {
     return e.VERIFIED_ADULT = "verified_adult", e.VERIFIED_TEEN = "verified_teen", e.ERROR = "error", e
   }({});
 
-function j(e, t) {
+function M(e, t) {
   let n = f.A.getMessage(e, t);
   if (null == n || null == n.embeds || 0 === n.embeds.length || null == n.embeds[0].fields || n.embeds[0].type !== y.Auw.AGE_VERIFICATION_SYSTEM_NOTIFICATION) returnfalse;
   let r = n.embeds[0].fields.find(e => "ctas" === e.rawName);
   return null == r ? true : r.rawValue.split(",").includes("retry")
 }
 
-function M() {
+function j() {
   let e = p.default.getCurrentUser();
-  return (null == e ? true : e.ageVerificationStatus) !== s.Tk.UNVERIFIED && (null == e ? true : e.ageVerificationStatus) !== s.Tk.CLIENT_ONLY_PENDING
+  return (null == e ? true : e.ageVerificationStatus) !== o.Tk.UNVERIFIED && (null == e ? true : e.ageVerificationStatus) !== o.Tk.CLIENT_ONLY_PENDING
 }
 
 function k() {
   let e = (0, i.bG)([p.default], () => p.default.getCurrentUser());
-  return (null == e ? true : e.ageVerificationStatus) !== s.Tk.UNVERIFIED && (null == e ? true : e.ageVerificationStatus) !== s.Tk.CLIENT_ONLY_PENDING
+  return (null == e ? true : e.ageVerificationStatus) !== o.Tk.UNVERIFIED && (null == e ? true : e.ageVerificationStatus) !== o.Tk.CLIENT_ONLY_PENDING
 }
 
 function U(e) {
   let {
     onComplete: t,
     entryPoint: n,
-    isRetry: s = false,
-    visibleContent: o = null,
+    isRetry: o = false,
+    visibleContent: s = null,
     shouldShowExpressiveModal: d = false,
     classificationId: f = null
   } = e, [h, m] = r.useState(false), E = (0, i.bG)([p.default], () => p.default.getCurrentUser()), {
@@ -112,11 +112,11 @@ function U(e) {
     a.h.dispatch({
       type: "CLOSE_AGE_VERIFICATION_MODAL",
       status: y
-    }), s || b || u.A.maybeOpenAgeVerificationUserFeedback({
+    }), o || b || u.A.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_intro_screen",
-      visibleContent: o
+      visibleContent: s
     })
-  }, [y, s, o, b]), A = r.useCallback(async e => {
+  }, [y, o, s, b]), A = r.useCallback(async e => {
     m(true);
     try {
       a.h.dispatch({
@@ -153,21 +153,21 @@ function G(e) {
       var e;
       return null == (e = p.default.getCurrentUser()) ? true : e.ageVerificationStatus
     }),
-    n = (0, o.A)(t),
+    n = (0, s.A)(t),
     a = (0, i.bG)([d.default], () => null != d.default.getSuspendedUserToken()),
-    s = (0, i.bG)([d.default], () => d.default.isAuthenticated()),
+    o = (0, i.bG)([d.default], () => d.default.isAuthenticated()),
     l = null != n && null != t && n !== t,
-    c = !a && !s;
+    c = !a && !o;
   r.useEffect(() => {
     (l || c) && e()
   }, [e, l, c])
 }
 
-function V(e) {
+function F(e) {
   return null != e && E.zn.has(e)
 }
 
-function F(e) {
+function V(e) {
   return I.has(e) ? A.intl.string(A.t.lSWVTM) : (0, m.H)(A.intl.string(A.t.JHNunj), A.intl.string(A.t.xYXsr6))
 }
 

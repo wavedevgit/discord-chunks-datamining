@@ -32,7 +32,7 @@ function p(e, t, n) {
     }
   } = r.B.get(t), A = (0, u.useRef)(null), I = () => {
     if (n.current) {
-      let e = (0, s.N$)(n.current);
+      let e = (0, o.N$)(n.current);
       if ("child" === g) {
         if (n.current.contains(document.activeElement) && n.current !== document.activeElement) return;
         let r = "last" === t.selectionManager.childFocusStrategy ? _(e) : e.firstChild();
@@ -54,11 +54,11 @@ function p(e, t, n) {
   }), C = e => {
     var r, a, c, u, d;
     if (!e.currentTarget.contains(e.target) || t.isKeyboardNavigationDisabled || !n.current || !document.activeElement) return;
-    let f = (0, s.N$)(n.current);
+    let f = (0, o.N$)(n.current);
     switch (f.currentNode = document.activeElement, e.key) {
       case "ArrowLeft": {
         let t = "rtl" === b ? f.nextNode() : f.previousNode();
-        if ("child" === g && t === n.current && (t = null), e.preventDefault(), e.stopPropagation(), t)(0, i.l)(t), (0, o.o)(t, {
+        if ("child" === g && t === n.current && (t = null), e.preventDefault(), e.stopPropagation(), t)(0, i.l)(t), (0, s.o)(t, {
           containingElement: (0, l.m)(n.current)
         });
         else {
@@ -66,9 +66,9 @@ function p(e, t, n) {
             null == (a = n.current.parentElement) || a.dispatchEvent(new KeyboardEvent(e.nativeEvent.type, e.nativeEvent));
             break
           }
-          "cell" === g && "rtl" === b ? ((0, i.l)(n.current), (0, o.o)(n.current, {
+          "cell" === g && "rtl" === b ? ((0, i.l)(n.current), (0, s.o)(n.current, {
             containingElement: (0, l.m)(n.current)
-          })) : (f.currentNode = n.current, (t = "rtl" === b ? f.firstChild() : _(f)) && ((0, i.l)(t), (0, o.o)(t, {
+          })) : (f.currentNode = n.current, (t = "rtl" === b ? f.firstChild() : _(f)) && ((0, i.l)(t), (0, s.o)(t, {
             containingElement: (0, l.m)(n.current)
           })))
         }
@@ -76,7 +76,7 @@ function p(e, t, n) {
       }
       case "ArrowRight": {
         let t = "rtl" === b ? f.previousNode() : f.nextNode();
-        if ("child" === g && t === n.current && (t = null), e.preventDefault(), e.stopPropagation(), t)(0, i.l)(t), (0, o.o)(t, {
+        if ("child" === g && t === n.current && (t = null), e.preventDefault(), e.stopPropagation(), t)(0, i.l)(t), (0, s.o)(t, {
           containingElement: (0, l.m)(n.current)
         });
         else {
@@ -84,9 +84,9 @@ function p(e, t, n) {
             null == (u = n.current.parentElement) || u.dispatchEvent(new KeyboardEvent(e.nativeEvent.type, e.nativeEvent));
             break
           }
-          "cell" === g && "ltr" === b ? ((0, i.l)(n.current), (0, o.o)(n.current, {
+          "cell" === g && "ltr" === b ? ((0, i.l)(n.current), (0, s.o)(n.current, {
             containingElement: (0, l.m)(n.current)
-          })) : (f.currentNode = n.current, (t = "rtl" === b ? _(f) : f.firstChild()) && ((0, i.l)(t), (0, o.o)(t, {
+          })) : (f.currentNode = n.current, (t = "rtl" === b ? _(f) : f.firstChild()) && ((0, i.l)(t), (0, s.o)(t, {
             containingElement: (0, l.m)(n.current)
           })))
         }

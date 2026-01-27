@@ -8,7 +8,7 @@ require.d(exports, {
   W0: () => u,
   eZ: () => h,
   pJ: () => _,
-  tB: () => o,
+  tB: () => s,
   w6: () => d,
   yy: () => p
 }), require("./65821.js"), require("./140667.js");
@@ -16,7 +16,7 @@ var Chunk682572 = require("./682572.js"),
   i = require.n(Chunk682572),
   Chunk547830 = require("./547830.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,10 +24,10 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = () => Math.floor(a.u5 + a.FO.now()),
+let s = () => Math.floor(a.u5 + a.FO.now()),
   l = new class {
     now() {
-      return o()
+      return s()
     }
   };
 class c {
@@ -38,10 +38,10 @@ class c {
     return this.milliseconds >= e.milliseconds
   }
   constructor(e, t, n, r) {
-    s(this, "milliseconds", 0), s(this, "asMilliseconds", () => this.milliseconds), s(this, "asSeconds", () => this.milliseconds / 1e3), s(this, "asMinutes", () => this.milliseconds / 1e3 / 60), s(this, "asHours", () => this.milliseconds / 1e3 / 60 / 60), s(this, "add", e => c.fromMilliseconds(this.milliseconds + e.milliseconds)), s(this, "subtract", e => c.fromMilliseconds(this.milliseconds - e.milliseconds)), s(this, "subtractOrZero", e => c.fromMilliseconds(Math.max(this.milliseconds - e.milliseconds, 0))), this.milliseconds += r || 0, this.milliseconds += 1e3 * (n || 0), this.milliseconds += 1e3 * (t || 0) * 60, this.milliseconds += 1e3 * (e || 0) * 3600
+    o(this, "milliseconds", 0), o(this, "asMilliseconds", () => this.milliseconds), o(this, "asSeconds", () => this.milliseconds / 1e3), o(this, "asMinutes", () => this.milliseconds / 1e3 / 60), o(this, "asHours", () => this.milliseconds / 1e3 / 60 / 60), o(this, "add", e => c.fromMilliseconds(this.milliseconds + e.milliseconds)), o(this, "subtract", e => c.fromMilliseconds(this.milliseconds - e.milliseconds)), o(this, "subtractOrZero", e => c.fromMilliseconds(Math.max(this.milliseconds - e.milliseconds, 0))), this.milliseconds += r || 0, this.milliseconds += 1e3 * (n || 0), this.milliseconds += 1e3 * (t || 0) * 60, this.milliseconds += 1e3 * (e || 0) * 3600
   }
 }
-s(c, "fromMilliseconds", e => new c(0, 0, 0, e)), s(c, "fromSeconds", e => new c(0, 0, e)), s(c, "fromMinutes", e => new c(0, e)), s(c, "fromHours", e => new c(e));
+o(c, "fromMilliseconds", e => new c(0, 0, 0, e)), o(c, "fromSeconds", e => new c(0, 0, e)), o(c, "fromMinutes", e => new c(0, e)), o(c, "fromHours", e => new c(e));
 class u {
   get lastElapsed() {
     return this.timePassed
@@ -77,7 +77,7 @@ class u {
     return e.start(), e
   }
   constructor(e = l) {
-    s(this, "timestampProducer", true), s(this, "startTime", true), s(this, "timePassed", true), this.timestampProducer = e, this.startTime = true, this.timePassed = 0
+    o(this, "timestampProducer", true), o(this, "startTime", true), o(this, "timePassed", true), this.timestampProducer = e, this.startTime = true, this.timePassed = 0
   }
 }
 class d {
@@ -97,7 +97,7 @@ class d {
     return this.stopwatch.elapsed().asSeconds()
   }
   constructor(e, t = l) {
-    s(this, "stopwatch", true), s(this, "state", true), this.stopwatch = new u(t), this.state = e, this.stopwatch.toggle(e)
+    o(this, "stopwatch", true), o(this, "state", true), this.stopwatch = new u(t), this.state = e, this.stopwatch.toggle(e)
   }
 }
 class f {
@@ -123,7 +123,7 @@ class f {
     returnfalse
   }
   constructor(e) {
-    s(this, "timeout", true), s(this, "watch", true), this.timeout = e, this.watch = new u
+    o(this, "timeout", true), o(this, "watch", true), this.timeout = e, this.watch = new u
   }
 }
 

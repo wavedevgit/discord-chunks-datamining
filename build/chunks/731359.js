@@ -62,15 +62,15 @@ function d(e, t, n) {
   null != t.selectedValue ? t.selectedValue === d && (P = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (P = 0), O && (P = true);
   let {
     name: D,
-    form: x,
-    descriptionId: L,
-    errorMessageId: j,
-    validationBehavior: M
+    form: L,
+    descriptionId: x,
+    errorMessageId: M,
+    validationBehavior: j
   } = r.V.get(t);
-  return (0, s.F)(n, t.defaultSelectedValue, t.setSelectedValue), (0, u.X)({
-    validationBehavior: M
+  return (0, o.F)(n, t.defaultSelectedValue, t.setSelectedValue), (0, u.X)({
+    validationBehavior: j
   }, t, n), {
-    labelProps: (0, i.v)(T, (0, o.useMemo)(() => ({
+    labelProps: (0, i.v)(T, (0, s.useMemo)(() => ({
       onClick: e => e.preventDefault(),
       onMouseDown: e => e.preventDefault()
     }), [])),
@@ -78,14 +78,14 @@ function d(e, t, n) {
       ...w,
       type: "radio",
       name: D,
-      form: x,
+      form: L,
       tabIndex: P,
       disabled: O,
-      required: t.isRequired && "native" === M,
+      required: t.isRequired && "native" === j,
       checked: v,
       value: d,
       onChange: A,
-      "aria-describedby": [e["aria-describedby"], t.isInvalid ? j : null, L].filter(Boolean).join(" ") || true
+      "aria-describedby": [e["aria-describedby"], t.isInvalid ? M : null, x].filter(Boolean).join(" ") || true
     }),
     isDisabled: O,
     isSelected: v,

@@ -7,7 +7,7 @@ require.d(exports, {
   Zs: () => h
 }), require("./896048.js"), require("./747238.js"), require("./812715.js");
 var Chunk424899 = require("./424899.js"),
-  s = require.n(Chunk424899),
+  o = require.n(Chunk424899),
   Chunk280230 = require("./280230.js"),
   l = require.n(Chunk280230),
   Chunk473598 = require("./473598.js"),
@@ -45,7 +45,7 @@ class f {
     return [t, r]
   }
   constructor(e, t, n) {
-    d(this, "message", true), d(this, "hasMarkdown", true), d(this, "intlMessage", true), this.message = n ? e : e.replace(u.jx, ""), this.hasMarkdown = n, this.intlMessage = new(s())(this.message, t)
+    d(this, "message", true), d(this, "hasMarkdown", true), d(this, "intlMessage", true), this.message = n ? e : e.replace(u.jx, ""), this.hasMarkdown = n, this.intlMessage = new(o())(this.message, t)
   }
 }
 

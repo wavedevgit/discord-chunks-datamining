@@ -46,8 +46,8 @@ let f = Object.freeze({
   }),
   p = function(e, t, n) {
     let l = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0,
-      c = (0, i.bG)([s.A], () => s.A.useReducedMotion),
-      u = (0, i.bG)([o.A], () => o.A.getScrollPosition());
+      c = (0, i.bG)([o.A], () => o.A.useReducedMotion),
+      u = (0, i.bG)([s.A], () => s.A.getScrollPosition());
     (0, r.useEffect)(() => {
       let r = e.current;
       null != r && t === u && setTimeout(() => {

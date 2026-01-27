@@ -10,7 +10,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk484702 = require("./484702.js"),
   Chunk403431 = require("./403431.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -59,7 +59,7 @@ function f(e) {
   let {
     sections: t,
     sectionHeight: n,
-    rowHeight: o,
+    rowHeight: s,
     footerHeight: c,
     sidebarHeight: f,
     listHeaderHeight: p,
@@ -73,7 +73,7 @@ function f(e) {
     chunkStart: A,
     chunkEnd: I,
     forceUpdateOnChunkChange: S
-  } = (0, s.A)({
+  } = (0, o.A)({
     chunkSize: _,
     getScrollerState: g,
     forceUpdate: y
@@ -102,14 +102,14 @@ function f(e) {
     }, [_, A, f]),
     R = (0, r.useMemo)(() => v > 0 ? b.current : (O.mergeProps({
       sectionHeight: n,
-      rowHeight: o,
+      rowHeight: s,
       footerHeight: c,
       listHeaderHeight: p,
       paddingBottom: m,
       paddingTop: h,
       sections: t,
       getAnchorId: E
-    }), O.compute(Math.max(0, A * _), I * _)), [v, A, I, n, o, c, p, m, h, t, O, _, E]);
+    }), O.compute(Math.max(0, A * _), I * _)), [v, A, I, n, s, c, p, m, h, t, O, _, E]);
   return (0, r.useLayoutEffect)(() => void(b.current = R)), u(l({}, R), {
     listComputer: O,
     forceUpdateOnChunkChange: S,
@@ -124,8 +124,8 @@ function p(e) {
     anchor: n,
     getScrollerState: i,
     listComputer: a,
-    getAnchorId: s,
-    totalHeight: o
+    getAnchorId: o,
+    totalHeight: s
   } = e;
   (0, r.useLayoutEffect)(() => {
     let {
@@ -133,12 +133,12 @@ function p(e) {
     } = t, {
       scrollTop: r
     } = i();
-    if (null == n || null == n.row || null == e || null == s || 0 === r) return;
-    let o = t => {
-      if (t < 0 || t >= a.sections[n.section] || s(n.section, n.row) !== n.id) returnfalse;
-      let [i] = a.computeScrollPosition(n.section, t), o = i - n.scrollOffset;
-      return r !== o && (e.scrollTop = o), true
+    if (null == n || null == n.row || null == e || null == o || 0 === r) return;
+    let s = t => {
+      if (t < 0 || t >= a.sections[n.section] || o(n.section, n.row) !== n.id) returnfalse;
+      let [i] = a.computeScrollPosition(n.section, t), s = i - n.scrollOffset;
+      return r !== s && (e.scrollTop = s), true
     };
-    o(n.row) || o(n.row - 1) || o(n.row + 1)
-  }, [o])
+    s(n.row) || s(n.row - 1) || s(n.row + 1)
+  }, [s])
 }

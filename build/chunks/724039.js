@@ -28,11 +28,11 @@ module.exports = ! function() {
     returnfalse
   }
 }() ? function(e, a) {
-  for (var s, o, l = i(e), c = 1; c < arguments.length; c++) {
-    for (var u in s = Object(arguments[c])) n.call(s, u) && (l[u] = s[u]);
+  for (var o, s, l = i(e), c = 1; c < arguments.length; c++) {
+    for (var u in o = Object(arguments[c])) n.call(o, u) && (l[u] = o[u]);
     if (t) {
-      o = t(s);
-      for (var d = 0; d < o.length; d++) r.call(s, o[d]) && (l[o[d]] = s[o[d]])
+      s = t(o);
+      for (var d = 0; d < s.length; d++) r.call(o, s[d]) && (l[s[d]] = o[s[d]])
     }
   }
   return l

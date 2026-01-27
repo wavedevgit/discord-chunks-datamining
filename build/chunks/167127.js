@@ -8,7 +8,7 @@ var Chunk499979 = require("./499979.js"),
   Chunk544180 = require("./544180.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
   return null != e ? Math.round(e) : t
 }
@@ -38,18 +38,18 @@ class l {
       _networkStats: e
     } = this;
     return {
-      duration_connection_type_wifi: o(e.connectionTypeBuckets[a.wY_.WIFI]),
-      duration_connection_type_cellular: o(e.connectionTypeBuckets[a.wY_.CELLULAR]),
-      duration_connection_type_ethernet: o(e.connectionTypeBuckets[a.wY_.ETHERNET]),
-      duration_connection_type_bluetooth: o(e.connectionTypeBuckets[a.wY_.BLUETOOTH]),
-      duration_connection_type_other: o(e.connectionTypeBuckets[a.wY_.OTHER]),
-      duration_connection_type_unknown: o(e.connectionTypeBuckets[a.wY_.UNKNOWN]),
-      duration_connection_type_none: o(e.connectionTypeBuckets[a.wY_.NONE]),
-      duration_effective_connection_speed_2g: o(e.effectiveConnectionSpeedBuckets[a.NKC.TWO_G]),
-      duration_effective_connection_speed_3g: o(e.effectiveConnectionSpeedBuckets[a.NKC.THREE_G]),
-      duration_effective_connection_speed_4g: o(e.effectiveConnectionSpeedBuckets[a.NKC.FOUR_G]),
-      duration_effective_connection_speed_5g: o(e.effectiveConnectionSpeedBuckets[a.NKC.FIVE_G]),
-      duration_effective_connection_speed_unknown: o(e.effectiveConnectionSpeedBuckets[a.NKC.UNKNOWN])
+      duration_connection_type_wifi: s(e.connectionTypeBuckets[a.wY_.WIFI]),
+      duration_connection_type_cellular: s(e.connectionTypeBuckets[a.wY_.CELLULAR]),
+      duration_connection_type_ethernet: s(e.connectionTypeBuckets[a.wY_.ETHERNET]),
+      duration_connection_type_bluetooth: s(e.connectionTypeBuckets[a.wY_.BLUETOOTH]),
+      duration_connection_type_other: s(e.connectionTypeBuckets[a.wY_.OTHER]),
+      duration_connection_type_unknown: s(e.connectionTypeBuckets[a.wY_.UNKNOWN]),
+      duration_connection_type_none: s(e.connectionTypeBuckets[a.wY_.NONE]),
+      duration_effective_connection_speed_2g: s(e.effectiveConnectionSpeedBuckets[a.NKC.TWO_G]),
+      duration_effective_connection_speed_3g: s(e.effectiveConnectionSpeedBuckets[a.NKC.THREE_G]),
+      duration_effective_connection_speed_4g: s(e.effectiveConnectionSpeedBuckets[a.NKC.FOUR_G]),
+      duration_effective_connection_speed_5g: s(e.effectiveConnectionSpeedBuckets[a.NKC.FIVE_G]),
+      duration_effective_connection_speed_unknown: s(e.effectiveConnectionSpeedBuckets[a.NKC.UNKNOWN])
     }
   }
   incrementNetworkStats(e) {
@@ -60,6 +60,6 @@ class l {
     r === a.wY_.WIMAX && (r = a.wY_.WIFI), this._networkStats.effectiveConnectionSpeedBuckets[n] += t, this._networkStats.connectionTypeBuckets[r] += t, this._lastSampleTimestamp = e
   }
   constructor() {
-    s(this, "_networkStats", true), s(this, "_lastSampleTimestamp", true), this._networkStats = this._initStats(), this._lastSampleTimestamp = (0, r.tB)()
+    o(this, "_networkStats", true), o(this, "_lastSampleTimestamp", true), this._networkStats = this._initStats(), this._lastSampleTimestamp = (0, r.tB)()
   }
 }

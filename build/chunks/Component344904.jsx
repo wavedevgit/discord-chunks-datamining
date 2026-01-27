@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 344904, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 344904, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => g,
-  BN: () => h
+  Ay: () => h,
+  BN: () => A
 });
-var Chunk627968 = require("./627968.js"),
+var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk775602 = require("./775602.js"),
@@ -17,79 +16,77 @@ var Chunk627968 = require("./627968.js"),
   Chunk468052 = require("./468052.jsx"),
   Chunk769411 = require("./769411.jsx"),
   Chunk242142 = require("./242142.js"),
-  h = function(e) {
-    return e[e.NITRO_GEM = 0] = "NITRO_GEM", e[e.NITRO_LOGO = 1] = "NITRO_LOGO", e[e.AVATAR_DECO = 2] = "AVATAR_DECO", e
-  }({});
-let m = e => {
+  A = ((r = {})[r.NITRO_GEM = 0] = "NITRO_GEM", r[r.NITRO_LOGO = 1] = "NITRO_LOGO", r[r.AVATAR_DECO = 2] = "AVATAR_DECO", r);
+let f = e => {
     let {
       avatarDecoAssetId: t,
       avatarDecoAssetDescription: n
-    } = e, a = i.useMemo(() => (0, u.A)(t, l._3J.SIZE_120, false), [t]);
-    return (0, r.jsx)("div", {
-      className: _.Q7,
-      children: (0, r.jsx)("div", {
-        className: _.Nk,
-        children: (0, r.jsx)("img", {
-          className: _.CH,
+    } = e, r = l.useMemo(() => (0, u.A)(t, c._3J.SIZE_120, false), [t]);
+    return (0, i.jsx)("div", {
+      className: g.Q7,
+      children: (0, i.jsx)("div", {
+        className: g.Nk,
+        children: (0, i.jsx)("img", {
+          className: g.CH,
           alt: n,
-          src: a
+          src: r
         })
       })
     })
   },
-  g = e => {
+  h = e => {
     let {
       showAnimations: t = true,
       iconClassName: n,
-      staticPercentage: i,
-      innerCircleClassName: a,
-      progressCircleStrokeSize: l,
-      backgroundCircleSize: u,
-      percentage: h,
-      initialPercentage: g,
-      progressCircleVariation: E = 0,
-      avatarDecoAssetId: y,
-      avatarDecoAssetDescription: b,
-      ellipseOpacity: O,
-      customAnimationClassName: v,
-      circleColor: A,
+      staticPercentage: r,
+      innerCircleClassName: l,
+      progressCircleStrokeSize: s,
+      backgroundCircleSize: c,
+      percentage: u,
+      initialPercentage: A,
+      progressCircleVariation: h = 0,
+      avatarDecoAssetId: b,
+      avatarDecoAssetDescription: E,
+      ellipseOpacity: x,
+      customAnimationClassName: O,
+      circleColor: C,
       circleStroke: I
-    } = e, S = (0, o.bG)([c.A], () => c.A.useReducedMotion), T = t && !S, C = () => {
-      switch (E) {
-        case 0:
-          return (0, r.jsx)(d.A, {
-            className: T ? _.Ow : true,
-            backgroundColor: s()(_.vH, a),
-            backgroundCircleSize: u
-          });
-        case 1:
-          return (0, r.jsx)(f.A, {
-            circleColor: A,
-            ellipseOpacity: O
-          });
-        case 2:
-          if (null != y) return (0, r.jsx)(m, {
-            avatarDecoAssetId: y,
-            avatarDecoAssetDescription: b
-          });
-          return null;
-        default:
-          return null
-      }
-    };
-    return (0, r.jsx)("div", {
-      className: s()(_.G3, n),
-      children: (0, r.jsx)(p.A, {
-        animationClassName: s()(_._0, {
-          [_.uJ]: T,
-          [null != v ? v : ""]: T
+    } = e, T = (0, o.bG)([d.A], () => d.A.useReducedMotion), S = t && !T;
+    return (0, i.jsx)("div", {
+      className: a()(g.G3, n),
+      children: (0, i.jsx)(m.A, {
+        animationClassName: a()(g._0, {
+          [g.uJ]: S,
+          [null != O ? O : ""]: S
         }),
         progressCircleStroke: I,
-        progressCircleStrokeSize: l,
-        percentage: null != i ? i : h,
-        initialPercentage: null != i ? i : g,
-        progressCircleVariation: E,
-        children: C()
+        progressCircleStrokeSize: s,
+        percentage: null != r ? r : u,
+        initialPercentage: null != r ? r : A,
+        progressCircleVariation: h,
+        children: (() => {
+          switch (h) {
+            case 0:
+              return (0, i.jsx)(_.A, {
+                className: S ? g.Ow : true,
+                backgroundColor: a()(g.vH, l),
+                backgroundCircleSize: c
+              });
+            case 1:
+              return (0, i.jsx)(p.A, {
+                circleColor: C,
+                ellipseOpacity: x
+              });
+            case 2:
+              if (null != b) return (0, i.jsx)(f, {
+                avatarDecoAssetId: b,
+                avatarDecoAssetDescription: E
+              });
+              return null;
+            default:
+              return null
+          }
+        })()
       })
     })
   }

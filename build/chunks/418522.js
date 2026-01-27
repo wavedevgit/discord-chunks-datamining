@@ -44,12 +44,12 @@ function C(e, t, n) {
 
 function N(e = false) {
   let t = w(false, e);
-  return t.parsers.unshift(new h.A), t.parsers.unshift(new m.A), t.parsers.unshift(new s.A), t.parsers.unshift(new E.A), t.parsers.unshift(new O.A), t
+  return t.parsers.unshift(new h.A), t.parsers.unshift(new m.A), t.parsers.unshift(new o.A), t.parsers.unshift(new E.A), t.parsers.unshift(new O.A), t
 }
 
 function w(e = true, t = false) {
   return (0, _.i)({
-    parsers: [new b.A(t), new r.A, new i.A, new a.A, new g.A, new o.A, new l.A, new c.A(e), new u.A(e), new d.A(e)],
+    parsers: [new b.A(t), new r.A, new i.A, new a.A, new g.A, new s.A, new l.A, new c.A(e), new u.A(e), new d.A(e)],
     refiners: [new v.A, new p.A, new f.A]
   }, e)
 }

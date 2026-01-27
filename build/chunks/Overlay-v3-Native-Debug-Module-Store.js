@@ -103,32 +103,32 @@ function D() {
   0 !== b.length && (O = [...b], b = [], T([], "store_click_zones"))
 }
 
-function x() {
+function L() {
   b.length > 0 || T(b = [...O], "refresh_click_zones")
 }
 
-function L(e, t, n, r) {
+function x(e, t, n, r) {
   let i = c.A.getWindow(h.f);
   if (null == i) return;
   let a = Math.ceil(n * i.innerWidth),
-    s = Math.ceil(r * i.innerHeight),
-    o = new MouseEvent((0, p.Br)(t), {
+    o = Math.ceil(r * i.innerHeight),
+    s = new MouseEvent((0, p.Br)(t), {
       screenX: a,
-      screenY: s,
+      screenY: o,
       clientX: a,
-      clientY: s,
+      clientY: o,
       bubbles: true,
       view: i
     }),
-    l = i.document.elementFromPoint(a, s);
-  null != l && l.dispatchEvent(o)
-}
-
-function j(e) {
-  return P("crashed"), true
+    l = i.document.elementFromPoint(a, o);
+  null != l && l.dispatchEvent(s)
 }
 
 function M(e) {
+  return P("crashed"), true
+}
+
+function j(e) {
   let {
     zones: t
   } = e;
@@ -140,20 +140,20 @@ function k() {
 }
 
 function U() {
-  return null == (y = f.A.getNativeModule()) || !!A || (A = true, y.setCaptureZoneCallback(L), true)
+  return null == (y = f.A.getNativeModule()) || !!A || (A = true, y.setCaptureZoneCallback(x), true)
 }
 
 function G() {
   return y = null, true
 }
 
-function V(e) {
+function F(e) {
   let {
     pid: t
   } = e;
-  return 0 === t ? D() : x(), true
+  return 0 === t ? D() : L(), true
 }
-class F extends(r = Chunk311907.Ay.Store) {
+class V extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(f.A, c.A)
   }
@@ -164,12 +164,12 @@ class F extends(r = Chunk311907.Ay.Store) {
     return O
   }
 }
-m(F, "displayName", "Overlay-v3-Native-Debug-Module-Store");
-let B = new F(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
+m(V, "displayName", "Overlay-v3-Native-Debug-Module-Store");
+let B = new V(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
   OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: U,
   OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: G,
-  OVERLAY_SET_CLICK_ZONES: M,
-  OVERLAY_FOCUSED: V,
+  OVERLAY_SET_CLICK_ZONES: j,
+  OVERLAY_FOCUSED: F,
   OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: k,
-  OVERLAY_CRASHED: j
+  OVERLAY_CRASHED: M
 })

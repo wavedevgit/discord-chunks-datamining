@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 210742, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 7803 **/
+/** chunk id: 210742, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,32 +21,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk589896 = require("./589896.js");
 
-function b() {
-  let e = (0, _.A)(),
-    t = (0, p.v)(),
-    n = (0, d.K)(),
-    b = (0, f.b)();
-  (0, o.Ay)(() => {
-    u.Yn()
+function p() {
+  let t = (0, h.A)(),
+    e = (0, x.v)(),
+    s = (0, u.K)(),
+    p = (0, m.b)();
+  (0, r.Ay)(() => {
+    d.Yn()
   });
-  let O = i.useRef(n);
-  return (i.useEffect(() => {
-    O.current = n
-  }), i.useEffect(() => {
-    t && (c.default.track(g.HAw.SAFETY_HUB_VIEWED, {
-      account_standing: O.current.state
-    }), l.A.increment({
+  let E = n.useRef(s);
+  return (n.useEffect(() => {
+    E.current = s
+  }), n.useEffect(() => {
+    e && (o.default.track(v.HAw.SAFETY_HUB_VIEWED, {
+      account_standing: E.current.state
+    }), c.A.increment({
       name: a.K.SAFETY_HUB_VIEW
     }))
-  }, [t]), e) ? (0, r.jsx)(s.y$y, {}) : null != b ? (0, r.jsxs)(s.$Td, {
-    color: s.Hv$.DANGER,
-    className: y.aL,
-    children: [E.intl.string(E.t.TDRvqs), (0, r.jsx)(s.zr9, {
-      onClick: () => u.Yn(),
-      children: E.intl.string(E.t.R1AN4F)
+  }, [e]), t) ? (0, i.jsx)(l.y$y, {}) : null != p ? (0, i.jsxs)(l.$Td, {
+    color: l.Hv$.DANGER,
+    className: f.aL,
+    children: [N.intl.string(N.t.TDRvqs), (0, i.jsx)(l.zr9, {
+      onClick: () => d.Yn(),
+      children: N.intl.string(N.t.R1AN4F)
     })]
-  }) : (0, r.jsxs)("div", {
-    className: y.kL,
-    children: [(0, r.jsx)(h.A, {}), (0, r.jsx)(m.q, {})]
+  }) : (0, i.jsxs)("div", {
+    className: f.kL,
+    children: [(0, i.jsx)(g.A, {}), (0, i.jsx)(j.q, {})]
   })
 }

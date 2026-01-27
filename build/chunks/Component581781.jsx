@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 581781, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 581781, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,53 +13,53 @@ var Chunk627968 = require("./627968.js"),
   Chunk743981 = require("./743981.js"),
   Chunk996373 = require("./996373.js");
 
-function f(e) {
+function _(e) {
   let {
     className: t,
     guildTag: n,
-    guildBadge: a,
-    guildId: f,
+    guildBadge: l,
+    guildId: _,
     guildName: p,
-    guildIcon: _,
-    guildIconSize: h
-  } = e, m = i.useRef(null), [g, E] = i.useState(false);
+    guildIcon: m,
+    guildIconSize: g
+  } = e, A = i.useRef(null), [f, h] = i.useState(false);
   return i.useEffect(() => {
-    let e = m.current;
-    null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
+    let e = A.current;
+    null != e && null != e.offsetWidth && null != e.scrollWidth && h(e.offsetWidth < e.scrollWidth)
   }, []), (0, r.jsxs)("div", {
-    className: s()(d.kL, t),
+    className: s()(u.kL, t),
     children: [(0, r.jsxs)("div", {
-      className: d.v2,
-      children: [(0, r.jsx)(l.j, {
-        guildId: f,
+      className: u.v2,
+      children: [(0, r.jsx)(o.j, {
+        guildId: _,
         guildName: p,
-        guildIcon: _,
-        iconSize: h,
-        className: d.rr,
+        guildIcon: m,
+        iconSize: g,
+        className: u.rr,
         animate: false
       }), (0, r.jsx)("div", {
-        className: d.zH,
-        children: (0, r.jsx)(o.m, {
+        className: u.zH,
+        children: (0, r.jsx)(a.m, {
           __unsupportedReactNodeAsText: p,
-          shouldShow: g,
+          shouldShow: f,
           children: (0, r.jsx)("span", {
-            ref: m,
-            className: d.J5,
+            ref: A,
+            className: u.J5,
             children: p
           })
         })
       })]
     }), (0, r.jsx)("div", {
-      className: d.I8,
+      className: u.I8,
       children: (0, r.jsx)(c.o9, {
-        guildId: f,
-        className: d.Tc,
+        guildId: _,
+        className: u.Tc,
         guildTag: n,
-        guildBadge: a,
-        badgeSize: u.Sl.SIZE_16,
+        guildBadge: l,
+        badgeSize: d.Sl.SIZE_16,
         textColor: "interactive-text-default",
         textVariant: "text-sm/semibold",
-        badgeClassName: d.qS
+        badgeClassName: u.qS
       })
     })]
   })

@@ -98,19 +98,19 @@ class P extends(r = Chunk64700.Component) {
       animated: r,
       srcIsAnimated: i,
       freeze: a = false
-    } = e, s = null, o = null;
+    } = e, o = null, s = null;
     return g.QB && (a || !P.isAnimated({
       src: t,
       original: n,
       animated: r,
       srcIsAnimated: i
-    })) ? (s = "webp", (P.isSrcPNG({
+    })) ? (o = "webp", (P.isSrcPNG({
       src: t
     }) || P.isSrcAVIF({
       src: t
-    })) && (o = "lossless")) : a && (s = "png"), {
-      format: s,
-      quality: o
+    })) && (s = "lossless")) : a && (o = "png"), {
+      format: o,
+      quality: s
     }
   }
   static preloadImage(e) {
@@ -123,8 +123,8 @@ class P extends(r = Chunk64700.Component) {
         imageHeight: a
       },
       options: {
-        srcIsAnimated: s,
-        original: o,
+        srcIsAnimated: o,
+        original: s,
         animated: l,
         sourceMetadata: c,
         freeze: u
@@ -137,9 +137,9 @@ class P extends(r = Chunk64700.Component) {
       quality: _
     } = P.getFormatQuality({
       src: t,
-      original: o,
+      original: s,
       animated: l,
-      srcIsAnimated: s,
+      srcIsAnimated: o,
       freeze: u
     }), h = (0, f.AE)({
       src: t,
@@ -147,7 +147,7 @@ class P extends(r = Chunk64700.Component) {
       height: a,
       maxWidth: n,
       maxHeight: r,
-      srcIsAnimated: s,
+      srcIsAnimated: o,
       format: p,
       quality: _
     }), m = Date.now();
@@ -165,7 +165,7 @@ class P extends(r = Chunk64700.Component) {
           width: i,
           height: a,
           sourceMetadata: c,
-          original: o
+          original: s
         }
       }), null == d || d(e, n)
     })
@@ -175,7 +175,7 @@ class P extends(r = Chunk64700.Component) {
     let {
       error: i,
       imageData: a,
-      trigger: s,
+      trigger: o,
       startLoadingTime: l,
       readyState: c,
       format: u,
@@ -189,7 +189,7 @@ class P extends(r = Chunk64700.Component) {
       }
     } = e;
     if (i && p.A.increment({
-        name: o.K.IMAGE_LOAD_ERROR
+        name: s.K.IMAGE_LOAD_ERROR
       }), !D.getCurrentConfig({
         location: "lazy_image"
       }).enabled) return;
@@ -211,7 +211,7 @@ class P extends(r = Chunk64700.Component) {
       state: i ? y.Rv1.ERROR : c,
       data_saving_mode: _.Ay.dataSavingMode,
       low_quality_image_mode: _.Ay.dataSavingMode,
-      trigger: s,
+      trigger: o,
       size: I,
       message_id: null == O || null == (n = O.message) ? true : n.id,
       message_sent_timestamp: null == O || null == (r = O.message) ? true : r.timestamp.getTime(),
@@ -240,8 +240,8 @@ class P extends(r = Chunk64700.Component) {
         width: r,
         height: i,
         maxWidth: a,
-        maxHeight: s,
-        mediaLayoutType: o
+        maxHeight: o,
+        mediaLayoutType: s
       } = this.props,
       {
         format: l,
@@ -254,8 +254,8 @@ class P extends(r = Chunk64700.Component) {
       width: r,
       height: i,
       ratio: e,
-      maxWidth: o === b.dG.MOSAIC ? a : true,
-      maxHeight: o === b.dG.MOSAIC ? s : true,
+      maxWidth: s === b.dG.MOSAIC ? a : true,
+      maxHeight: s === b.dG.MOSAIC ? o : true,
       format: l,
       quality: c,
       animated: !t,
@@ -308,7 +308,7 @@ class P extends(r = Chunk64700.Component) {
       onZoom: n,
       shouldLink: r,
       onContextMenu: a,
-      autoPlay: o,
+      autoPlay: s,
       original: l,
       className: u,
       imageClassName: d,
@@ -331,14 +331,14 @@ class P extends(r = Chunk64700.Component) {
       dataSafeSrc: R,
       srcIsAnimated: D
     } = this.props, {
-      readyState: x,
-      hasMouseOver: L,
-      hasFocus: j
-    } = this.state, M = null != n, k = this.getRatio(), U = (0, s.clamp)(Math.round(h * k), null != g ? g : 0, null != b ? b : 1 / 0), G = (0, s.clamp)(Math.round(m * k), null != E ? E : 0, null != O ? O : 1 / 0), V = {
+      readyState: L,
+      hasMouseOver: x,
+      hasFocus: M
+    } = this.state, j = null != n, k = this.getRatio(), U = (0, o.clamp)(Math.round(h * k), null != g ? g : 0, null != b ? b : 1 / 0), G = (0, o.clamp)(Math.round(m * k), null != E ? E : 0, null != O ? O : 1 / 0), F = {
       alt: e,
-      readyState: x,
+      readyState: L,
       onContextMenu: null != a ? a : true,
-      zoomable: M,
+      zoomable: j,
       className: u,
       imageClassName: d,
       minWidth: g,
@@ -373,16 +373,16 @@ class P extends(r = Chunk64700.Component) {
       onFocus: this.onFocus,
       onBlur: this.onBlur
     };
-    if (1 === V.width && 1 === V.height) return null;
-    switch ((M || null != A) && (V.onClick = this.onClick), r && (V.original = null != l && "" !== l ? l : V.src), x) {
+    if (1 === F.width && 1 === F.height) return null;
+    switch ((j || null != A) && (F.onClick = this.onClick), r && (F.original = null != l && "" !== l ? l : F.src), L) {
       case y.Rv1.LOADING:
-        null != t && (V.src = t);
+        null != t && (F.src = t);
         break;
       case y.Rv1.READY:
         if (P.isAnimated(this.props)) {
-          V.onMouseLeave = this.onMouseLeave;
-          let e = (o || L || j) && (null == _ || _) && P.visibilityObserver.isVisible(this);
-          e ? (V.src = this.getSrc(k), V.renderAccessory = I) : (V.src = this.getSrc(k, !p || !o), V.renderAccessory = this.renderAccessory), null != f && (V.children = t => {
+          F.onMouseLeave = this.onMouseLeave;
+          let e = (s || x || M) && (null == _ || _) && P.visibilityObserver.isVisible(this);
+          e ? (F.src = this.getSrc(k), F.renderAccessory = I) : (F.src = this.getSrc(k, !p || !s), F.renderAccessory = this.renderAccessory), null != f && (F.children = t => {
             let {
               src: n,
               size: r,
@@ -397,11 +397,11 @@ class P extends(r = Chunk64700.Component) {
               mediaLayoutType: a
             })
           })
-        } else V.src = this.getSrc(k)
+        } else F.src = this.getSrc(k)
     }
     return (0, i.jsx)(c._, v({
       ref: this._imageRef
-    }, V))
+    }, F))
   }
   constructor(e) {
     super(e), O(this, "state", {

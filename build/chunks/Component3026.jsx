@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk537808 = require("./537808.js");
 
@@ -79,7 +79,7 @@ function m(e) {
     position: c,
     delay: d
   } = e, _ = p(e, ["children", "aria-label", "className", "position", "delay"]), m = i.useRef(null), g = null != n ? n : "string" == typeof t && t;
-  return (0, r.jsx)(o.STz, f(u({}, _), {
+  return (0, r.jsx)(s.STz, f(u({}, _), {
     position: null != c ? c : "top",
     delay: null != d ? d : h,
     text: t,
@@ -87,10 +87,10 @@ function m(e) {
     children: n => {
       let {
         onMouseEnter: i,
-        onMouseLeave: o
+        onMouseLeave: s
       } = n;
       return (0, r.jsx)("div", {
-        className: s()(a, l.j),
+        className: o()(a, l.j),
         ref: m,
         "aria-hidden": e["aria-hidden"],
         onMouseEnter: () => {
@@ -99,7 +99,7 @@ function m(e) {
           } = m;
           null != e && e.offsetWidth < e.scrollWidth && (null == i || i())
         },
-        onMouseLeave: o,
+        onMouseLeave: s,
         children: t
       })
     }

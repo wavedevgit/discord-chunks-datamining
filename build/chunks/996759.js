@@ -2,13 +2,13 @@
 /** chunk id: 996759, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => s
+  V: () => o
 });
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e) {
+function o(e) {
   return i.h.dispatch({
     type: "APPLICATION_STORE_DIRECTORY_LAYOUT_FETCHING",
     applicationId: e

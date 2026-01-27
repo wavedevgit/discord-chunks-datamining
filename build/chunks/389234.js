@@ -13,7 +13,7 @@ var Chunk643501 = require("./643501.js"),
 function l(e) {
   if (i.Ay.disableVoiceChannelChangeAlert) returnfalse;
   let t = r.default.getRemoteSessionId();
-  if (null != o.A.getVoiceStateForSession(a.default.getId(), t) || !o.A.isCurrentClientInVoiceChannel() || o.A.isInChannel(e.id)) returnfalse;
-  let n = s.A.getGuild(e.getGuildId());
-  return !((null == n ? true : n.afkChannelId) != null && o.A.isInChannel(n.afkChannelId))
+  if (null != s.A.getVoiceStateForSession(a.default.getId(), t) || !s.A.isCurrentClientInVoiceChannel() || s.A.isInChannel(e.id)) returnfalse;
+  let n = o.A.getGuild(e.getGuildId());
+  return !((null == n ? true : n.afkChannelId) != null && s.A.isInChannel(n.afkChannelId))
 }

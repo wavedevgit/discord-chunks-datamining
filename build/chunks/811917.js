@@ -27,7 +27,7 @@ function _(e, t, n) {
 let h = 5 * Chunk927813.A.Millis.MINUTE;
 
 function m(e) {
-  return e.distributor === p.d3x.ROBLOX ? (0, s.hD)(e) : null
+  return e.distributor === p.d3x.ROBLOX ? (0, o.hD)(e) : null
 }
 
 function g(e) {
@@ -52,13 +52,13 @@ class E extends Chunk439372.A {
     let a = e.runningGame,
       u = performance.now(),
       _ = t ? 0 : Math.round(u - e.lastHeartbeatTime),
-      h = null != (r = a.id) ? r : null == (i = o.A.getGameByName(a.name)) ? true : i.id;
+      h = null != (r = a.id) ? r : null == (i = s.A.getGameByName(a.name)) ? true : i.id;
     c.default.track(p.HAw.RUNNING_GAME_HEARTBEAT, {
       game_id: h,
       game_name: a.name,
       game_distributor: a.distributor,
       game_distributor_game_id: a.sku,
-      game_metadata: (0, s.MT)(a),
+      game_metadata: (0, o.MT)(a),
       game_executable: (0, d.Ic)(a.exePath),
       game_detection_enabled: (0, f.Xr)(a),
       initial_heartbeat: t,

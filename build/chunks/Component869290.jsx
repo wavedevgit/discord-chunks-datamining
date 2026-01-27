@@ -51,15 +51,15 @@ function d(e, t) {
 }
 let f = {
   openDmSettingsUpsellModal(e) {
-    let t = i.w.get(o.J),
+    let t = i.w.get(s.J),
       l = Date.now();
-    null == t || l - t > o.z ? (i.w.set(o.J, l), (0, a.mMO)(async () => {
+    null == t || l - t > s.z ? (i.w.set(s.J, l), (0, a.mMO)(async () => {
       let {
         default: t
       } = await n.e("62684").then(n.bind(n, 228855));
       return n => (0, r.jsx)(t, d(c({}, n), {
         guildId: e
       }))
-    })) : (0, s.$)(s.s.SUPPRESSED_BY_COOLDOWN, e)
+    })) : (0, o.$)(o.s.SUPPRESSED_BY_COOLDOWN, e)
   }
 }

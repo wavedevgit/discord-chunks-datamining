@@ -25,7 +25,7 @@ function _(e) {
     case r.r.GUILD_VOICE:
     case r.r.GUILD_STAGE_VOICE:
     case r.r.GUILD_CATEGORY:
-      return '#"'.concat((0, s.Eq)(e.name), '"');
+      return '#"'.concat((0, o.Eq)(e.name), '"');
     default:
       let t = l.Ay.getTextChannelNameDisambiguations(e.guild_id)[e.id];
       return "#".concat(null != t ? t.name : e.name)
@@ -39,21 +39,21 @@ let m = {
   sentinel: "#",
   matches: (e, t, n, r, i) => i.mentions.channel !== d.xS.DENY && !e.isPrivate(),
   queryResults(e, t, n, r, a) {
-    let s, o, u = l.I6;
-    return n.charAt(0) === i.AT.VOICE_CHANNEL && (u = l.vM, n = n.substring(1)), r.forNonStringCommandOption ? s = c.Ay.queryApplicationCommandChannelResults({
+    let o, s, u = l.I6;
+    return n.charAt(0) === i.AT.VOICE_CHANNEL && (u = l.vM, n = n.substring(1)), r.forNonStringCommandOption ? o = c.Ay.queryApplicationCommandChannelResults({
       query: n,
       channel: e,
       channelTypes: r.allowedChannelTypes
-    }) : (s = c.Ay.queryChannelResults({
+    }) : (o = c.Ay.queryChannelResults({
       query: n,
       channel: e,
       type: u
-    }), null != t && (o = c.Ay.queryStaticRouteChannels({
+    }), null != t && (s = c.Ay.queryStaticRouteChannels({
       query: n,
       guild: t
-    }), s.channels.unshift(...o))), {
-      results: s,
-      staticRouteChannels: o
+    }), o.channels.unshift(...s))), {
+      results: o,
+      staticRouteChannels: s
     }
   },
   renderResults(e) {
@@ -61,7 +61,7 @@ let m = {
         results: {
           channels: r
         },
-        selectedIndex: s,
+        selectedIndex: o,
         query: l,
         options: c,
         onHover: d,
@@ -70,7 +70,7 @@ let m = {
       _ = l.charAt(0) === i.AT.VOICE_CHANNEL;
     return _ ? (t = p.t["rMUL3+"], n = p.intl.string(p.t.CYnO4s), l = l.substring(1)) : c.forNonStringCommandOption ? (t = p.t.upNFT5, n = p.intl.string(p.t.OGiMXJ)) : (t = p.t.UhnmJD, n = p.intl.string(p.t.nIfr0Y)), (0, u.GM)({
       query: l,
-      selectedIndex: s,
+      selectedIndex: o,
       autocompletes: r,
       onHover: d,
       onClick: f,
@@ -80,7 +80,7 @@ let m = {
       getProps: e => ({
         channel: e,
         key: e.id,
-        category: o.A.getChannel(e.parent_id)
+        category: s.A.getChannel(e.parent_id)
       }),
       getQuery: e => _ ? "".concat("#").concat(i.AT.VOICE_CHANNEL).concat(e) : "".concat("#").concat(e),
       key: "channels"

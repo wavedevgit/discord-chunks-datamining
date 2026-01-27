@@ -18,7 +18,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js");
 let _ = 2592e5;
 async function h(e) {
-  let t = s.default.getCurrentUser(),
+  let t = o.default.getCurrentUser(),
     n = (0, u.ki)(t);
   null == t || n || c.A.fetchedEndedEntitlements || await (0, i.qw)({
     entitlementType: p.zF_.FRACTIONAL_REDEMPTION,
@@ -29,8 +29,8 @@ async function h(e) {
 }
 
 function m() {
-  let e = (0, r.bG)([s.default], () => s.default.getCurrentUser()),
-    t = o.A.getPremiumTypeSubscription(),
+  let e = (0, r.bG)([o.default], () => o.default.getCurrentUser()),
+    t = s.A.getPremiumTypeSubscription(),
     n = null != t && !t.isBoostOnly,
     l = (0, r.bG)([c.A], () => c.A.getReverseTrialEntitlement(false));
   return (0, a.Ay)(() => {

@@ -13,8 +13,8 @@ function i(e, t, n, r) {
 function a(e, t) {
   return RegExp(`^(${e})(\\d{1,4})(?:(?:\\.|\\:|\\：)(\\d{1,2})(?:(?:\\.|\\:|\\：)(\\d{1,2})(?:\\.(\\d{1,6}))?)?)?(?:\\s*(a\\.m\\.|p\\.m\\.|am?|pm?))?${t}`, "i")
 }
-let s = 2,
-  o = 3,
+let o = 2,
+  s = 3,
   l = 4,
   c = 5,
   u = 6;
@@ -45,23 +45,23 @@ class d {
       i = t[0].substring(t[1].length),
       a = e.createParsingResult(r, i, n);
     t.index += t[0].length;
-    let s = e.text.substring(t.index),
-      o = this.getFollowingTimePatternThroughCache().exec(s);
-    return i.match(/^\d{3,4}/) && o && (o[0].match(/^\s*([+-])\s*\d{2,4}$/) || o[0].match(/^\s*([+-])\s*\d{2}\W\d{2}/)) ? null : !o || o[0].match(/^\s*([+-])\s*\d{3,4}$/) ? this.checkAndReturnWithoutFollowingPattern(a) : (a.end = this.extractFollowingTimeComponents(e, o, a), a.end && (a.text += o[0]), this.checkAndReturnWithFollowingPattern(a))
+    let o = e.text.substring(t.index),
+      s = this.getFollowingTimePatternThroughCache().exec(o);
+    return i.match(/^\d{3,4}/) && s && (s[0].match(/^\s*([+-])\s*\d{2,4}$/) || s[0].match(/^\s*([+-])\s*\d{2}\W\d{2}/)) ? null : !s || s[0].match(/^\s*([+-])\s*\d{3,4}$/) ? this.checkAndReturnWithoutFollowingPattern(a) : (a.end = this.extractFollowingTimeComponents(e, s, a), a.end && (a.text += s[0]), this.checkAndReturnWithFollowingPattern(a))
   }
   extractPrimaryTimeComponents(e, t, n = false) {
     let i = e.createParsingComponents(),
       a = 0,
       d = null,
-      f = parseInt(t[s]);
+      f = parseInt(t[o]);
     if (f > 100) {
-      if (4 == t[s].length && null == t[o] && !t[u] || this.strictMode || null != t[o]) return null;
+      if (4 == t[o].length && null == t[s] && !t[u] || this.strictMode || null != t[s]) return null;
       a = f % 100, f = Math.floor(f / 100)
     }
     if (f > 24) return null;
-    if (null != t[o]) {
-      if (1 == t[o].length && !t[u]) return null;
-      a = parseInt(t[o])
+    if (null != t[s]) {
+      if (1 == t[s].length && !t[u]) return null;
+      a = parseInt(t[s])
     }
     if (a >= 60) return null;
     if (f > 12 && (d = r.FF.PM), null != t[u]) {
@@ -93,10 +93,10 @@ class d {
       if (e >= 60) return null;
       i.assign("second", e)
     }
-    let a = parseInt(t[s]),
+    let a = parseInt(t[o]),
       d = 0,
       f = false;
-    if (null != t[o] ? d = parseInt(t[o]) : a > 100 && (d = a % 100, a = Math.floor(a / 100)), d >= 60 || a > 24) return null;
+    if (null != t[s] ? d = parseInt(t[s]) : a > 100 && (d = a % 100, a = Math.floor(a / 100)), d >= 60 || a > 24) return null;
     if (a >= 12 && (f = r.FF.PM), null != t[u]) {
       if (a > 12) return null;
       let e = t[u][0].toLowerCase();

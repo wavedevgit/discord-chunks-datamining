@@ -54,7 +54,7 @@ function g(e) {
     rowSize: _,
     isBurstReaction: m,
     analyticsObject: g
-  } = e, E = s.A.getChannel(o.A.getChannelId()), y = null == E ? true : E.getGuildId(), b = n === f.b_.REACTION ? a.Ay.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : a.Ay.emojiFrecencyWithoutFetchingLatest.frequently.slice(), O = null != E ? a.Ay.getDisambiguatedEmojiContext(E.getGuildId()).favoriteEmojisWithoutFetchingLatest : [], v = n === f.b_.REACTION ? a.Ay.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : a.Ay.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems, A = b.slice(0, v), I = null != y ? a.Ay.getGuildEmoji(y) : [], S = Object.values(null != (t = a.Ay.getDisambiguatedEmojiContext(null == E ? true : E.getGuildId()).groupedCustomEmojis) ? t : {}).reduce((e, t) => e += t.length, 0), {
+  } = e, E = o.A.getChannel(s.A.getChannelId()), y = null == E ? true : E.getGuildId(), b = n === f.b_.REACTION ? a.Ay.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : a.Ay.emojiFrecencyWithoutFetchingLatest.frequently.slice(), O = null != E ? a.Ay.getDisambiguatedEmojiContext(E.getGuildId()).favoriteEmojisWithoutFetchingLatest : [], v = n === f.b_.REACTION ? a.Ay.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : a.Ay.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems, A = b.slice(0, v), I = null != y ? a.Ay.getGuildEmoji(y) : [], S = Object.values(null != (t = a.Ay.getDisambiguatedEmojiContext(null == E ? true : E.getGuildId()).groupedCustomEmojis) ? t : {}).reduce((e, t) => e += t.length, 0), {
     topEmojis: T,
     newlyAddedEmojis: C
   } = (0, u.b)({

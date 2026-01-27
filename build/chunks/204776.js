@@ -2,15 +2,15 @@
 /** chunk id: 204776, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ie: () => s,
-  Kp: () => o,
+  Ie: () => o,
+  Kp: () => s,
   Rx: () => l
 });
 var Chunk485845 = require("./485845.js"),
   Chunk264322 = require("./264322.js"),
   Chunk73510 = require("./73510.js");
 
-function s(e) {
+function o(e) {
   let {
     customInstallUrl: t,
     installParams: n,
@@ -19,13 +19,13 @@ function s(e) {
   return null != t || null != n || null != r && Object.values(r).some(e => (null == e ? true : e.oauth2_install_params) != null || (null == e ? true : e.oauth2InstallParams) != null)
 }
 
-function o(e) {
+function s(e) {
   let {
     customInstallUrl: t,
     installParams: n,
     integrationTypesConfig: i
   } = e;
-  return s({
+  return o({
     customInstallUrl: t,
     installParams: n,
     integrationTypesConfig: i
@@ -36,9 +36,9 @@ function l(e) {
   let {
     applicationId: t,
     channel: n,
-    commandIntegrationTypes: s
+    commandIntegrationTypes: o
   } = e;
-  return !(null != s && !s.includes(r.b.USER_INSTALL) || t === a.Ik.BUILT_IN || i.Ay.hasUserStateApplication(t) || null != n && i.Ay.hasContextStateApplication({
+  return !(null != o && !o.includes(r.b.USER_INSTALL) || t === a.Ik.BUILT_IN || i.Ay.hasUserStateApplication(t) || null != n && i.Ay.hasContextStateApplication({
     applicationId: t,
     channelId: n.id,
     guildId: n.guild_id

@@ -52,16 +52,16 @@ module.exports = function(e) {
       end: /\}/,
       contains: [e.C_NUMBER_MODE]
     },
-    s = {
+    o = {
       className: "variable",
       begin: "\\$" + e.UNDERSCORE_IDENT_RE
     },
-    o = {
+    s = {
       className: "string",
       variants: [{
         begin: '"""',
         end: '"""(?=[^"])',
-        contains: [s, a]
+        contains: [o, a]
       }, {
         begin: "'",
         end: "'",
@@ -71,10 +71,10 @@ module.exports = function(e) {
         begin: '"',
         end: '"',
         illegal: /\n/,
-        contains: [e.BACKSLASH_ESCAPE, s, a]
+        contains: [e.BACKSLASH_ESCAPE, o, a]
       }]
     };
-  a.contains.push(o);
+  a.contains.push(s);
   let l = {
       className: "meta",
       begin: "@(?:file|property|field|get|set|receiver|param|setparam|delegate)\\s*:(?:\\s*" + e.UNDERSCORE_IDENT_RE + ")?"
@@ -85,7 +85,7 @@ module.exports = function(e) {
       contains: [{
         begin: /\(/,
         end: /\)/,
-        contains: [e.inherit(o, {
+        contains: [e.inherit(s, {
           className: "string"
         }), "self"]
       }]
@@ -147,7 +147,7 @@ module.exports = function(e) {
           endsWithParent: true,
           contains: [f, e.C_LINE_COMMENT_MODE, d],
           relevance: 0
-        }, e.C_LINE_COMMENT_MODE, d, l, c, o, e.C_NUMBER_MODE]
+        }, e.C_LINE_COMMENT_MODE, d, l, c, s, e.C_NUMBER_MODE]
       }, d]
     }, {
       begin: [/class|interface|trait/, /\s+/, e.UNDERSCORE_IDENT_RE],
@@ -174,7 +174,7 @@ module.exports = function(e) {
         excludeBegin: true,
         returnEnd: true
       }, l, c]
-    }, o, {
+    }, s, {
       className: "meta",
       begin: "^#!/usr/bin/env",
       end: "$",

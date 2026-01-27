@@ -48,11 +48,11 @@ async function v(e) {
     case O.VV.CHANNEL_BROWSER:
       return null != v && v.features.has(b.GuildFeatures.COMMUNITY);
     case O.VV.GUILD_ONBOARDING:
-      return o.Ay.shouldShowOnboarding(t);
+      return s.Ay.shouldShowOnboarding(t);
     case O.VV.CUSTOMIZE_COMMUNITY:
       return null != v && v.features.has(b.GuildFeatures.COMMUNITY);
     case O.VV.MEMBER_SAFETY:
-      return (0, s.Ml)(t);
+      return (0, o.Ml)(t);
     case O.VV.GUILD_BOOSTS:
       returntrue;
     case O.VV.REPORT_TO_MOD:

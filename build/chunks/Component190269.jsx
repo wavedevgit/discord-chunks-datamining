@@ -1,7 +1,7 @@
-/** Chunk was on 5241 **/
+/** Chunk was on 86819 **/
 /** chunk id: 190269, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  B: () => f
+  B: () => S
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,51 +21,51 @@ var Chunk627968 = require("./627968.js"),
 function g(e) {
   let {
     onClose: t
-  } = e, r = (0, n.jsx)(i.Text, {
+  } = e, r = (0, n.jsx)(o.Text, {
     className: y.h,
     variant: "text-md/normal",
-    children: m.intl.string(m.t.FCsTCk)
+    children: _.intl.string(_.t.FCsTCk)
   });
-  return (0, n.jsx)(b.A, {
+  return (0, n.jsx)(p.A, {
     type: d.Ay.Types.PREMIUM_ACTIVATED,
     text: r,
-    buttonText: m.intl.string(m.t.TkTvBz),
+    buttonText: _.intl.string(_.t.TkTvBz),
     hideClose: false,
     onClose: t
   })
 }
 
-function S(e) {
+function f(e) {
   let {
     onClose: t
   } = e;
-  return (0, n.jsx)(_.Ay, {
-    planId: p.gD.PREMIUM_MONTH_TIER_0,
+  return (0, n.jsx)(u.Ay, {
+    planId: b.gD.PREMIUM_MONTH_TIER_0,
     onClose: t
   })
 }
-let f = e => {
+let S = e => {
   let {
     transitionState: t,
     onClose: r,
     premiumType: d
-  } = e, b = d === p.PremiumTypes.TIER_0, _ = a.useCallback(() => {
-    c._.dispatch(u.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), l.A.isDisplayingWowMomentConfirmation && l.A.isAnimated ? setTimeout(() => {
+  } = e, p = d === b.PremiumTypes.TIER_0, u = a.useCallback(() => {
+    l._.dispatch(m.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), s.A.isDisplayingWowMomentConfirmation && s.A.isAnimated ? setTimeout(() => {
       r()
-    }, o.K) : r()
+    }, i.K) : r()
   }, [r]);
-  return (0, n.jsxs)(i.EOs, {
+  return (0, n.jsxs)(o.EOs, {
     "data-migration-pending": true,
     className: y.z,
     transitionState: t,
     parentComponent: "ResubscribeSuccessStep",
-    children: [(0, n.jsx)(s.A, {
-      onClose: _,
+    children: [(0, n.jsx)(c.A, {
+      onClose: u,
       upgradeToPremiumType: d
-    }), (0, n.jsx)(i.$mQ, {
+    }), (0, n.jsx)(o.$mQ, {
       "data-migration-pending": true,
-      children: (0, n.jsx)(b ? S : g, {
-        onClose: _
+      children: (0, n.jsx)(p ? f : g, {
+        onClose: u
       })
     })]
   })

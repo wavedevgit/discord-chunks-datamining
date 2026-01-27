@@ -32,10 +32,10 @@ function f(e) {
     iconClassName: i,
     size: l
   } = e;
-  return (0, r.jsx)(s.A, {
+  return (0, r.jsx)(o.A, {
     className: a()(n, u[t]),
     size: l,
-    children: (0, r.jsx)(o.A, {
+    children: (0, r.jsx)(s.A, {
       tier: t,
       color: "currentColor",
       className: a()(i, c.AH, d[t])

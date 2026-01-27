@@ -5,16 +5,16 @@ require.d(exports, {
   $P: () => a,
   Ai: () => u,
   H8: () => c,
-  Mm: () => o,
-  VL: () => s,
+  Mm: () => s,
+  VL: () => o,
   w5: () => i,
   xG: () => l
 }), require("./896048.js");
 var Chunk652215 = require("./652215.js");
 let i = 15,
   a = 3,
-  s = "1312632705086787756";
-var o = function(e) {
+  o = "1312632705086787756";
+var s = function(e) {
   return e[e.MESSAGE = 0] = "MESSAGE", e[e.ACTIVITY = 2] = "ACTIVITY", e[e.CUSTOM_STATUS = 3] = "CUSTOM_STATUS", e[e.GENERATED_CANDIDATE = 4] = "GENERATED_CANDIDATE", e[e.GUILD_EVENT = 5] = "GUILD_EVENT", e[e.RECOMMENDED_GUILDS = 6] = "RECOMMENDED_GUILDS", e
 }({});
 

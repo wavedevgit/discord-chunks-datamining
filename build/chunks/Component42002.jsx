@@ -146,18 +146,18 @@ function g(e) {
         style: e,
         children: y && i === O ? (0, r.jsx)("div", {
           className: d.mB,
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(s.Text, {
             variant: "text-xxs/semibold",
             lineClamp: 1,
             children: (0, r.jsx)(a.A, {
               children: b > 99 ? ">99" : "+".concat(b)
             })
           })
-        }) : (0, r.jsx)(s.m, {
+        }) : (0, r.jsx)(o.m, {
           text: l.Ay.getName(n.guild_id, n.id, c),
           children: (0, r.jsx)("img", {
             className: d.my,
-            src: c.getAvatarURL(n.guild_id, (0, o.FT9)(o._3J.SIZE_80)),
+            src: c.getAvatarURL(n.guild_id, (0, s.FT9)(s._3J.SIZE_80)),
             alt: ""
           })
         })

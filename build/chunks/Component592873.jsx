@@ -88,7 +88,7 @@ function E(e) {
   } = f, T = m(f, ["isUsingKeyboardNavigation", "focusIndex"]);
   i.useLayoutEffect(() => {
     var e;
-    n && ((0, o.Y)(b), null == (e = v.current) || e.focus())
+    n && ((0, s.Y)(b), null == (e = v.current) || e.focus())
   }, [n]), i.useEffect(() => {
     if (n && S >= 0 && I) {
       var e;
@@ -96,7 +96,7 @@ function E(e) {
     }
   }, [n, I, S]);
   let C = i.useCallback(e => _[e], [_]),
-    N = (0, s.D)("MenuSubmenuListItem"),
+    N = (0, o.D)("MenuSubmenuListItem"),
     w = () => _.length > 0 && (0, r.jsx)("div", {
       className: d.submenuPaddingContainer,
       children: (0, r.jsx)("div", h(p({

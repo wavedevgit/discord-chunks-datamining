@@ -16,7 +16,7 @@ let u = Chunk64700.createContext(null);
 
 function d(e) {
   let t = (0, c.useContext)(u) || {};
-  (0, s.w)(t, e);
+  (0, o.w)(t, e);
   let {
     ref: n,
     ...r
@@ -28,15 +28,15 @@ function f(e, t) {
   let {
     focusProps: n
   } = (0, i.i)(e), {
-    keyboardProps: s
-  } = (0, a.d)(e), o = (0, l.v)(n, s), u = d(t), f = e.isDisabled ? {} : u, p = (0, c.useRef)(e.autoFocus);
+    keyboardProps: o
+  } = (0, a.d)(e), s = (0, l.v)(n, o), u = d(t), f = e.isDisabled ? {} : u, p = (0, c.useRef)(e.autoFocus);
   (0, c.useEffect)(() => {
     p.current && t.current && (0, r.l)(t.current), p.current = false
   }, [t]);
   let _ = e.excludeFromTabOrder ? false : 0;
   return e.isDisabled && (_ = true), {
     focusableProps: (0, l.v)({
-      ...o,
+      ...s,
       tabIndex: _
     }, f)
   }
@@ -45,7 +45,7 @@ Chunk64700.forwardRef(function(e, t) {
   let {
     children: n,
     ...r
-  } = e, i = (0, o.U)(t), a = {
+  } = e, i = (0, s.U)(t), a = {
     ...r,
     ref: i
   };

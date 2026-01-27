@@ -1,5 +1,5 @@
-/** Chunk was on 71287 **/
-/** chunk id: 74114, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 96430 **/
+/** chunk id: 74114, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   l: () => c
 });
@@ -12,13 +12,13 @@ var Chunk311907 = require("./311907.js"),
   Chunk840387 = require("./840387.js"),
   Chunk168447 = require("./168447.js");
 
-function c(e) {
-  let t = (0, i.bG)([l.default], () => l.default.getCurrentUser()),
-    n = (0, r.z)(e),
-    c = (0, a.O)(e),
-    f = (0, d.F)(e, u._j.STRANGER_DANGER),
-    A = (0, o.Z)(),
-    _ = (null == t ? true : t.isStaff()) !== true,
-    v = (0, s.Y)(e).length > 0;
-  if (!(!A && _) && !n && !c && !v) return f
+function c(t) {
+  let e = (0, r.bG)([l.default], () => l.default.getCurrentUser()),
+    n = (0, a.z)(t),
+    c = (0, i.O)(t),
+    E = (0, u.F)(t, o._j.STRANGER_DANGER),
+    A = (0, d.Z)(),
+    _ = (null == e ? true : e.isStaff()) !== true,
+    f = (0, s.Y)(t).length > 0;
+  if (!(!A && _) && !n && !c && !f) return E
 }

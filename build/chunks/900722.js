@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 900722, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 66708 **/
+/** chunk id: 900722, original params: e,t,n (module,exports,require) **/
 "use strict";
 module.exports = {
   oJ: "avatarBackground_eb2508",

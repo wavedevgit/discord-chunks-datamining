@@ -9,7 +9,7 @@ var Chunk28728 = require("./28728.js"),
   a = require.n(Chunk735438),
   Chunk319888 = require("./319888.js");
 Chunk28728.A.registerLanguage("ansi", Chunk319888.A);
-let o = /(<script\/?\\?>)|(html\\?`)/g,
+let s = /(<script\/?\\?>)|(html\\?`)/g,
   l = new Set(["html", "xml", "javascript", "typescript", "handlebars"]),
   c = /^[a-z0-9_+\-.#]+$/,
   u = Chunk28728.A.listLanguages(),
@@ -56,7 +56,7 @@ function h(e, t) {
   let r = f(t);
   if (null != r && l.has(r)) {
     var i;
-    let t = e.replace(/\s*/g, "").match(o);
+    let t = e.replace(/\s*/g, "").match(s);
     if ((null != (i = null == t ? true : t.length) ? i : 0) > 10) returnfalse
   }
   returntrue

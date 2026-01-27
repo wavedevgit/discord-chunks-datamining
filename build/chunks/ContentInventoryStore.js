@@ -95,7 +95,7 @@ class b extends(i = Chunk311907.Ay.Store) {
     } = e, i = this.getFeed(r);
     if (null == i || null == t) return;
     let a = i.entries.reduce((e, t) => t.content.author_id === n ? [...e, t.content] : [...e], []);
-    return (0, o.nU)(a, t)
+    return (0, s.nU)(a, t)
   }
 }
 l(b, "displayName", "ContentInventoryStore");

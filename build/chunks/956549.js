@@ -79,7 +79,7 @@ async function h(e) {
     inviterUserId: g,
     onConfirmActivityLaunchChecksAlertOpen: E
   } = e, y = (0, c.A)(), b = i.default.getCurrentUser();
-  return null != a && null != r.A.getChannel(a) && null != b && null != t && (s.MJ(t.id), await (0, o.su)({
+  return null != a && null != r.A.getChannel(a) && null != b && null != t && (o.MJ(t.id), await (0, s.su)({
     channelId: a,
     applicationId: t.id,
     isStart: true,

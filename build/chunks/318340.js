@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk355418 = require("./355418.js");
 let i = 1,
   a = 2,
-  s = 3,
-  o = 4,
+  o = 3,
+  s = 4,
   l = 5,
   c = 6;
 class u extends Chunk355418.c {
@@ -23,10 +23,10 @@ class u extends Chunk355418.c {
     if (t[i]) r.start.imply("hour", u.getHours()), r.start.imply("minute", u.getMinutes()), r.start.imply("second", u.getSeconds()), r.start.imply("millisecond", u.getMilliseconds());
     else if (t[a]) {
       let e = t[a],
-        n = t[s];
+        n = t[o];
       "明" == e || "聽" == e ? u.getHours() > 1 && d.setDate(d.getDate() + 1) : "昨" == e || "尋" == e || "琴" == e ? d.setDate(d.getDate() - 1) : "前" == e ? d.setDate(d.getDate() - 2) : "大前" == e ? d.setDate(d.getDate() - 3) : "後" == e ? d.setDate(d.getDate() + 2) : "大後" == e && d.setDate(d.getDate() + 3), "早" == n || "朝" == n ? r.start.imply("hour", 6) : "晚" == n && (r.start.imply("hour", 22), r.start.imply("meridiem", 1))
-    } else if (t[o]) {
-      let e = t[o][0];
+    } else if (t[s]) {
+      let e = t[s][0];
       "早" == e || "朝" == e || "上" == e ? r.start.imply("hour", 6) : "下" == e || "晏" == e ? (r.start.imply("hour", 15), r.start.imply("meridiem", 1)) : "中" == e ? (r.start.imply("hour", 12), r.start.imply("meridiem", 1)) : "夜" == e || "晚" == e ? (r.start.imply("hour", 22), r.start.imply("meridiem", 1)) : "凌" == e && r.start.imply("hour", 0)
     } else if (t[l]) {
       let e = t[l];

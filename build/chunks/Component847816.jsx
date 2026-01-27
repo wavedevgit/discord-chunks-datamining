@@ -1,7 +1,7 @@
 /** Chunk was on 48654 **/
 /** chunk id: 847816, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => E
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,31 +19,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk597351 = require("./597351.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk70438 = require("./70438.js");
-let g = Chunk64700.memo(function(e) {
+let _ = Chunk64700.memo(function(e) {
   let {
     message: t
   } = e, n = (0, a.bG)([f.A], () => f.A.getChannel(t.channel_id));
-  return null == n ? null : (0, i.jsx)(O.Ay, {
-    children: e => (0, i.jsxs)(u.A.Provider, {
+  return null == n ? null : (0, r.jsx)(m.Ay, {
+    children: e => (0, r.jsxs)(u.A.Provider, {
       value: n.guild_id,
-      children: [(0, i.jsx)(c.A, {
+      children: [(0, r.jsx)(c.A, {
         user: t.author,
         size: s._3J.SIZE_40,
-        className: o()(E.Du, e)
-      }), (0, i.jsxs)("div", {
-        className: o()(E.cy, e),
-        children: [(0, i.jsx)(s.M1G, {
-          children: (0, i.jsx)("div", {
-            className: E.mG,
-            children: (0, i.jsx)(p.A, {
-              className: E.fh,
+        className: o()(g.Du, e)
+      }), (0, r.jsxs)("div", {
+        className: o()(g.cy, e),
+        children: [(0, r.jsx)(s.M1G, {
+          children: (0, r.jsx)("div", {
+            className: g.mG,
+            children: (0, r.jsx)(p.A, {
+              className: g.fh,
               message: t,
               channel: n
             })
           })
-        }), (0, i.jsx)(d.A, {
+        }), (0, r.jsx)(d.A, {
           timestamp: t.timestamp,
-          className: E.vE,
+          className: g.vE,
           tooltipPosition: "bottom"
         })]
       })]
@@ -51,27 +51,27 @@ let g = Chunk64700.memo(function(e) {
   })
 });
 
-function h(e) {
+function E(e) {
   var t;
   let {
     item: n,
-    hideMediaOptions: l,
-    onClose: r
+    hideMediaOptions: i,
+    onClose: l
   } = e, a = null == (t = n.sourceMetadata) ? true : t.message;
-  return (0, i.jsxs)("div", {
-    className: E.XV,
-    children: [null != a && (0, i.jsx)(g, {
+  return (0, r.jsxs)("div", {
+    className: g.XV,
+    children: [null != a && (0, r.jsx)(_, {
       message: a
-    }), (0, i.jsx)(m.A, {
+    }), (0, r.jsx)(O.A, {
       item: n,
-      hideMediaOptions: l
-    }), (0, i.jsx)(O.Ay, {
-      mode: O.nY.PINNED,
-      children: e => (0, i.jsx)(y.A, {
-        onClick: r,
+      hideMediaOptions: i
+    }), (0, r.jsx)(m.Ay, {
+      mode: m.nY.PINNED,
+      children: e => (0, r.jsx)(b.A, {
+        onClick: l,
         icon: s.PGe,
-        tooltip: b.intl.string(b.t.cpT0Cq),
-        className: o()(E.b, e)
+        tooltip: y.intl.string(y.t.cpT0Cq),
+        className: o()(g.b, e)
       })
     })]
   })

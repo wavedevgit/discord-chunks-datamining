@@ -70,7 +70,7 @@ function I(e) {
     onClose: I
   } = e, {
     analyticsLocations: S
-  } = (0, o.Ay)(), {
+  } = (0, s.Ay)(), {
     trackUserProfileAction: T
   } = (0, u.NJ)(), {
     live: C,
@@ -85,10 +85,10 @@ function I(e) {
     let e = P ? c.A.getStatus() : l.A.getStatus(t.id, b);
     return e === E.cl.OFFLINE || e === E.cl.INVISIBLE
   }), {
-    voiceActivityStatusEnabled: x
-  } = (0, s.G)({
+    voiceActivityStatusEnabled: L
+  } = (0, o.G)({
     location: "UserProfileStackedActivity"
-  }), L = x && null == N && null == R && null != w, j = i.useCallback(e => {
+  }), x = L && null == N && null == R && null != w, M = i.useCallback(e => {
     let i = [],
       a = A(O({}, e), {
         user: t,
@@ -101,12 +101,12 @@ function I(e) {
       i.push((0, r.jsx)(_.A, O({
         activity: e
       }, a), "live-".concat(t)))
-    }), L && i.push((0, r.jsx)(m.A, O({
+    }), x && i.push((0, r.jsx)(m.A, O({
       voiceChannel: w
     }, a), "voice")), i
-  }, [n, L, C, I, N, t, w]);
+  }, [n, x, C, I, N, t, w]);
   return D ? null : (0, r.jsx)(p.A, {
-    renderCards: j,
+    renderCards: M,
     heading: y.intl.string(y.t.J6STd9),
     onExpand: () => {
       T({

@@ -7,14 +7,14 @@ require.r(exports), require.d(exports, {
   AnalyticsSchema: () => _,
   addExtraAnalyticsDecorator: () => B,
   clearAnalyticsEventsRecording: () => er,
-  debugLogEvent: () => Q,
+  debugLogEvent: () => X,
   default: () => eu,
-  expandEventProperties: () => X,
+  expandEventProperties: () => Q,
   expandLocation: () => Y,
   getAnalyticsEventsRecording: () => en,
   getNewAnalyticsLoadId: () => ec,
-  isGameApplicationType: () => eo,
-  launchSignature: () => V,
+  isGameApplicationType: () => es,
+  launchSignature: () => F,
   setUTMContext: () => Z,
   startRecordingAnalyticsEvents: () => ee,
   stopRecordingAnalyticsEvents: () => et,
@@ -105,57 +105,57 @@ let C = {
   R = 1e3,
   P = 1e4,
   D = 6e4,
-  x = 12e4,
-  L = 3e5,
-  j = 9e5,
-  M = 36e5,
+  L = 12e4,
+  x = 3e5,
+  M = 9e5,
+  j = 36e5,
   k = 864e5,
   U = .001,
   G = performance.now(),
-  V = (0, Chunk306173.xd)() ? (0, Chunk306173.xy)((0, Chunk613345.V)()) : null;
+  F = (0, Chunk306173.xd)() ? (0, Chunk306173.xy)((0, Chunk613345.V)()) : null;
 Chunk110259.extendSuperProperties({
-  launch_signature: V
+  launch_signature: F
 });
-let F = [];
+let V = [];
 
 function B(e) {
-  F.push(e)
+  V.push(e)
 }
 let H = {
   [Chunk652215.HAw.APP_OPENED]: {
-    throttlePeriod: L,
-    throttleKeys: () => []
-  },
-  [Chunk652215.HAw.APP_BACKGROUND]: {
     throttlePeriod: x,
     throttleKeys: () => []
   },
+  [Chunk652215.HAw.APP_BACKGROUND]: {
+    throttlePeriod: L,
+    throttleKeys: () => []
+  },
   [Chunk652215.HAw.ACK_MESSAGES]: e => e.location_object_type === g.AnalyticsObjectTypes.ACK_MANUAL ? true : {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.guild_id, e.channel_id, e.location_section]
   },
   [Chunk652215.HAw.GUILD_VIEWED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.guild_id, e.is_pending]
   },
   [Chunk652215.HAw.FRIENDS_LIST_CLICKED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk652215.HAw.FRIENDS_LIST_VIEWED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk652215.HAw.NOW_PLAYING_CARD_HOVERED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk652215.HAw.START_SPEAKING]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.server]
   },
   [Chunk652215.HAw.START_LISTENING]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.server]
   },
   [Chunk652215.HAw.ACTIVITY_UPDATED]: {
@@ -164,7 +164,7 @@ let H = {
     deduplicate: true
   },
   [Chunk652215.HAw.CHANNEL_OPENED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => null != e.channel_static_route ? [e.guild_id, e.channel_static_route, e.channel_view] : null != e.location && e.location.startsWith(c.A.FREQUENT_FRIENDS_ROW) ? [e.channel_id, e.channel_view, e.location] : [e.channel_id, e.channel_view]
   },
   [Chunk652215.HAw.TEXT_IN_VOICE_OPENED]: {
@@ -172,23 +172,23 @@ let H = {
     throttleKeys: e => [e.channel_id]
   },
   [Chunk652215.HAw.NOTIFICATION_VIEWED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.notif_type]
   },
   [Chunk652215.HAw.MEMBER_LIST_VIEWED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk652215.HAw.DM_LIST_VIEWED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk652215.HAw.NAV_DRAWER_OPENED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: () => []
   },
   [Chunk652215.HAw.KEYBOARD_SHORTCUT_USED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => {
       var t;
       return [e.shortcut_name, e.location_object, ...null != (t = e.source_class_list) ? t : []]
@@ -199,27 +199,27 @@ let H = {
     throttleKeys: () => []
   },
   [Chunk652215.HAw.CHAT_INPUT_COMPONENT_VIEWED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.type]
   },
   [Chunk652215.HAw.ROLE_PAGE_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.role_id, e.tab_opened]
   },
   [Chunk652215.HAw.VIDEO_INPUT_INITIALIZED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk652215.HAw.AUDIO_INPUT_INITIALIZED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk652215.HAw.HUB_ONBOARDING_CAROUSEL_SCROLLED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: () => []
   },
   [Chunk652215.HAw.HUB_STUDENT_PROMPT_CLICKED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: () => []
   },
   [Chunk652215.HAw.RPC_SERVER_ERROR_CAUGHT]: {
@@ -253,7 +253,7 @@ let H = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk652215.HAw.FORUM_CHANNEL_SCROLLED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk652215.HAw.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
@@ -265,27 +265,27 @@ let H = {
     throttleKeys: () => []
   },
   [Chunk652215.HAw.SUMMARIES_UNREAD_BAR_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk652215.HAw.ACTIVITY_CARDS_VIEWED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.context, e.guild_id]
   },
   [Chunk652215.HAw.GUILD_TOOLTIP_SHOWN]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk652215.HAw.ACK_COMMUNITY_MESSAGES]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk652215.HAw.REDESIGN_NAV_BAR_CLICKED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.tab]
   },
   [Chunk652215.HAw.CHANNEL_LIST_END_REACHED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk652215.HAw.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
@@ -293,28 +293,28 @@ let H = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk652215.HAw.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
-    throttlePeriod: M,
+    throttlePeriod: j,
     throttleKeys: () => []
   },
   [Chunk652215.HAw.MEDIA_INPUT_VOLUME_CHANGED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.location_stack]
   },
   [Chunk652215.HAw.MEDIA_OUTPUT_VOLUME_CHANGED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.location_stack]
   },
   [Chunk652215.HAw.APP_DMS_QUICK_LAUNCHER_IMPRESSION]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk652215.HAw.USER_VOICE_ACTIVITY_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.activity_user_id, e.surface],
     deduplicate: true
   },
   [Chunk652215.HAw.PARTY_VOICE_ACTIVITY_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.voice_channel_id],
     deduplicate: true
   },
@@ -323,7 +323,7 @@ let H = {
     throttleKeys: e => [e.channel_id]
   },
   [Chunk652215.HAw.REDACTABLE_MESSAGE_LOADED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.channel_id, e.message_id]
   },
   [Chunk652215.HAw.OPEN_MODAL]: e => e.type === g.JJy.MEDIA_VIEWER ? {
@@ -335,11 +335,11 @@ let H = {
     throttleKeys: e => [e.guild_id]
   },
   [Chunk652215.HAw.NOTIFICATION_PERMISSION_STATUS]: {
-    throttlePeriod: 12 * M,
+    throttlePeriod: 12 * j,
     throttleKeys: e => [e.os_enabled, e.notification_authorization_status, e.foreground_app_enabled, e.background_app_enabled]
   },
   [Chunk652215.HAw.SEARCH_BAR_VIEWED]: {
-    throttlePeriod: M,
+    throttlePeriod: j,
     throttleKeys: e => [e.search_type]
   },
   [Chunk652215.HAw.AD_IDENTIFIER_FETCHED]: {
@@ -351,11 +351,11 @@ let H = {
     throttleKeys: e => [e.application_id]
   },
   [Chunk652215.HAw.LIBDISCORE_SLOW_TIMERS]: {
-    throttlePeriod: M,
+    throttlePeriod: j,
     throttleKeys: () => []
   },
   [Chunk652215.HAw.DEBUG_MISSING_STRING]: {
-    throttlePeriod: M,
+    throttlePeriod: j,
     throttleKeys: () => []
   },
   [Chunk652215.HAw.VIDEO_STREAM_ZOOM_CHANGED]: {
@@ -363,7 +363,7 @@ let H = {
     throttleKeys: () => []
   },
   [Chunk652215.HAw.CACHE_STATS_RECORDED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: () => []
   }
 };
@@ -406,7 +406,7 @@ function Z(e) {
   return w = e
 }
 
-function X(e) {
+function Q(e) {
   var t, n, r, i;
   let a = null != e ? e : {};
   if (null != a.location) {
@@ -422,18 +422,18 @@ function X(e) {
     a = v({}, S(a, ["source"]), W(e))
   }
   a.client_performance_cpu = h.A.getCurrentCPUUsagePercent(), a.client_performance_memory = h.A.getCurrentMemoryUsageKB(), a.cpu_core_count = h.A.getCPUCoreCount(), a.accessibility_features = K(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - G) / R);
-  let s = h.A.getProcessUptime();
-  null != s && (a.uptime_process_renderer = Math.floor(s));
+  let o = h.A.getProcessUptime();
+  null != o && (a.uptime_process_renderer = Math.floor(o));
   let {
-    utmSource: o,
+    utmSource: s,
     utmMedium: l,
     utmCampaign: c,
     utmContent: u
   } = w;
-  return a.utm_source = null != (t = a.utm_source) ? t : o, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, a.launch_signature = V, F.forEach(e => e(a)), a
+  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, a.launch_signature = F, V.forEach(e => e(a)), a
 }
 
-function Q(e, t) {
+function X(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   p.default.isLoggingAnalyticsEvents && console.info("AnalyticsUtils.track(...):", e, t), n ? d.z8("Analytics", e, t) : d.z8("Analytics", e)
 }
@@ -469,29 +469,29 @@ function ea(e, t) {
       category: "analytics",
       message: "".concat(r)
     }), ei(e, t), null != n.throttlePercent && Math.random() > n.throttlePercent) return Promise.resolve();
-  let i = X(t);
-  return Q(r, i, n.logEventProperties), q(e, i, {
+  let i = Q(t);
+  return X(r, i, n.logEventProperties), q(e, i, {
     flush: n.flush,
     fingerprint: n.fingerprint
   })
 }
-let es = (0, Chunk110259.trackMaker)({
+let eo = (0, Chunk110259.trackMaker)({
   analyticEventConfigs: H,
   dispatcher: Chunk73153.h,
   TRACK_ACTION_NAME: "TRACK"
 });
 
-function eo(e) {
+function es(e) {
   return e === y.S7.GAME || e === y.S7.DEPRECATED_GAME
 }
 
 function el(e, t) {
-  let n = X(v({
+  let n = Q(v({
     location: (0, u.g$)()
   }, t));
   (0, u.eE)(e, v({
     type: "action"
-  }, t)), Q(e, n), es(e, n)
+  }, t)), X(e, n), eo(e, n)
 }
 
 function ec() {
@@ -500,6 +500,6 @@ function ec() {
 let eu = I(v({}, Chunk110259), {
   getCampaignParams: Chunk110259.getCampaignParams,
   setSystemAccessibilityFeatures: z,
-  expandEventProperties: X,
+  expandEventProperties: Q,
   track: ea
 })

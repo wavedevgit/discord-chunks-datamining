@@ -20,12 +20,12 @@ let c = {
         selectionMode: t,
         removeable: n,
         layout: c
-      } = e, u = (0, s.bG)([l.default], () => l.default.getCurrentUser()), d = i.useMemo(() => {
+      } = e, u = (0, o.bG)([l.default], () => l.default.getCurrentUser()), d = i.useMemo(() => {
         var e;
         return [{
           id: "strength",
           label: "Strength",
-          icon: o.rYc
+          icon: s.rYc
         }, {
           id: "dexterity",
           label: "Dexterity",
@@ -54,12 +54,12 @@ let c = {
         layout: c,
         items: f,
         onRemove: n ? _ : true
-      }), g = n && (0, r.jsx)(o.Button, {
+      }), g = n && (0, r.jsx)(s.Button, {
         disabled: f.length === d.length,
         text: "Reset",
         onClick: h
       });
-      return "inline" === c ? (0, r.jsxs)(o.BJc, {
+      return "inline" === c ? (0, r.jsxs)(s.BJc, {
         gap: 24,
         children: [(0, r.jsx)("div", {
           style: {
@@ -68,7 +68,7 @@ let c = {
           },
           children: m
         }), g]
-      }) : (0, r.jsxs)(o.BJc, {
+      }) : (0, r.jsxs)(s.BJc, {
         gap: 24,
         children: [m, g]
       })

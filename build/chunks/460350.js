@@ -33,7 +33,7 @@ function _(e) {
   var t;
   let {
     openWarningPopout: n,
-    type: o,
+    type: s,
     content: l,
     stickers: u,
     uploads: _,
@@ -43,7 +43,7 @@ function _(e) {
     userCanUsePremiumMessageLength: E,
     resolve: y
   } = e;
-  if (0 === l.length && !(null == (t = o.submit) ? true : t.allowEmptyMessage) && (null == u || 0 === u.length) && (null == _ || 0 === _.length)) return void y({
+  if (0 === l.length && !(null == (t = s.submit) ? true : t.allowEmptyMessage) && (null == u || 0 === u.length) && (null == _ || 0 === _.length)) return void y({
     valid: false,
     failureReason: d.X8x.EMPTY_MESSAGE
   });
@@ -61,7 +61,7 @@ function _(e) {
     return
   }
   if (null != h) {
-    if (null != h.getGuildId() && g && s.A.getSlowmodeCooldownGuess(h.id) > 0) return void y({
+    if (null != h.getGuildId() && g && o.A.getSlowmodeCooldownGuess(h.id) > 0) return void y({
       valid: false,
       failureReason: d.X8x.SLOWMODE_COOLDOWN
     });
@@ -111,17 +111,17 @@ function h(e) {
     content: r,
     stickers: i,
     uploads: a,
-    channel: s,
+    channel: o,
     restrictMentions: l = true,
     respectCooldown: c = true
-  } = e, d = u.Ay.canUseIncreasedMessageLength(o.default.getCurrentUser());
+  } = e, d = u.Ay.canUseIncreasedMessageLength(s.default.getCurrentUser());
   return new Promise(e => _({
     openWarningPopout: t,
     type: n,
     content: r,
     stickers: i,
     uploads: a,
-    channel: s,
+    channel: o,
     restrictMentions: l,
     respectCooldown: c,
     userCanUsePremiumMessageLength: d,

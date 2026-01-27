@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 638130, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 638130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => h
+  f: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,33 +17,33 @@ var Chunk444802 = require("./444802.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk456144 = require("./456144.js");
 
-function h() {
+function g() {
   let e = (0, i.WX)(),
     t = [{
       title: p.intl.string(p.t.GYpoAq),
-      component: o.Z,
+      component: a.Z,
       orientation: "vertical",
-      setting: d.H.SEXUALLY_EXPLICIT_MEDIA_REDACTION
+      setting: u.H.SEXUALLY_EXPLICIT_MEDIA_REDACTION
     }, {
       title: p.intl.string(p.t["16/3Bi"]),
-      component: l.q,
+      component: o.q,
       orientation: "vertical",
-      setting: d.H.GORE_MEDIA_REDACTION
+      setting: u.H.GORE_MEDIA_REDACTION
     }];
   return (0, r.jsxs)(c.h, {
-    setting: d.H.SENSITIVE_CONTENT_FILTERS,
-    scrollPosition: u.d1.EXPLICIT_MEDIA_REDACTION_V2,
+    setting: u.H.SENSITIVE_CONTENT_FILTERS,
+    scrollPosition: d.d1.EXPLICIT_MEDIA_REDACTION_V2,
     children: [(0, r.jsx)(c._, {
       header: p.intl.string(p.t["Hj/But"]),
       description: p.intl.format(p.t.dliU4j, {
-        learnMoreLink: a.A.getArticleURL(e)
+        learnMoreLink: l.A.getArticleURL(e)
       })
     }), (0, r.jsx)(s.A, {
-      parentSetting: d.H.CONTENT_SOCIAL,
-      settingsSection: f.nc_.CONTENT_AND_SOCIAL,
+      parentSetting: u.H.CONTENT_SOCIAL,
+      settingsSection: _.nc_.CONTENT_AND_SOCIAL,
       tabs: t,
       orientation: "vertical",
-      tabsClassName: _.v
+      tabsClassName: m.v
     })]
   })
 }

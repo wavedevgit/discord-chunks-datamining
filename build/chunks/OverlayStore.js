@@ -6,7 +6,7 @@ require.d(exports, {
   A: () => q
 }), require("./321073.js"), require("./896048.js"), require("./638769.js"), require("./65821.js");
 var a, Chunk735438 = require("./735438.js"),
-  o = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk835245 = require("./835245.js"),
   Chunk311907 = require("./311907.js"),
   Chunk506774 = require("./506774.js"),
@@ -382,22 +382,22 @@ function S(e) {
     layoutId: t,
     widgets: n,
     version: a,
-    defaultResolution: s
+    defaultResolution: o
   } = e;
   if (null != r[t] && r[t].version === a) returnfalse;
-  let o = [];
+  let s = [];
   n.forEach((e, t) => {
     let n = T(e.type),
       r = b(E({}, e), {
         zIndex: t
       });
-    "" === r.id && (r.id = (0, l.A)()), null != n && (r.pinned = n.pinned, false !== n.anchor.left && (r.anchor = (0, _.NO)(n.anchor, s)), false !== n.size.width && (r.size = (0, _.R9)(n.size, s))), i = b(E({}, i), {
+    "" === r.id && (r.id = (0, l.A)()), null != n && (r.pinned = n.pinned, false !== n.anchor.left && (r.anchor = (0, _.NO)(n.anchor, o)), false !== n.size.width && (r.size = (0, _.R9)(n.size, o))), i = b(E({}, i), {
       [r.id]: new p.A(r)
-    }), o.push(r.id)
+    }), s.push(r.id)
   }), r = b(E({}, r), {
     [t]: new f.A({
       id: t,
-      widgets: o,
+      widgets: s,
       version: a
     })
   })
@@ -427,15 +427,15 @@ function N(e) {
     size: r,
     opacity: i,
     minSize: a,
-    defaultSize: s
+    defaultSize: o
   } = e;
-  return C(t, (e, t) => L({
+  return C(t, (e, t) => x({
     widget: e,
     anchor: n,
     size: r,
     opacity: i,
     minSize: a,
-    defaultSize: s
+    defaultSize: o
   }))
 }
 
@@ -452,7 +452,7 @@ function R(e, t) {
   let r = n.findIndex(e => e.id === t);
   if (r === n.length - 1) returnfalse;
   n.push(n.splice(r, 1)[0]);
-  for (let e = 0; e < n.length; e++) F(n[e], e);
+  for (let e = 0; e < n.length; e++) V(n[e], e);
   returntrue
 }
 
@@ -475,7 +475,7 @@ function D(e, t) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     widgetId: t,
     pinned: n
@@ -485,31 +485,31 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     widget: t,
     anchor: n,
     size: r,
     opacity: a,
-    minSize: s,
-    defaultSize: o
+    minSize: o,
+    defaultSize: s
   } = e;
   if (i = b(E({}, i), {
       [t.id]: t.merge({
         anchor: null != n ? n : t.anchor,
         size: null != r ? r : t.size,
         opacity: null != a ? a : t.opacity,
-        minSize: null != s ? s : t.minSize
+        minSize: null != o ? o : t.minSize
       })
-    }), null != o) {
+    }), null != s) {
     let e = I[t.type];
     null != e && (e.defaultSettings.size = E({
       fixed: e.defaultSettings.size.fixed
-    }, o))
+    }, s))
   }
 }
 
-function j(e) {
+function M(e) {
   i = b(E({}, i), {
     [e.id]: e.merge({
       showExtrasHintTimestamp: Date.now()
@@ -517,12 +517,12 @@ function j(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   let {
     widgetId: t
   } = e;
   return C(t, (e, t) => {
-    j(e)
+    M(e)
   })
 }
 
@@ -530,7 +530,7 @@ function k(e) {
   let {
     widgetId: t
   } = e;
-  i = E({}, i), delete i[t], o().forEach(r, (e, n) => {
+  i = E({}, i), delete i[t], s().forEach(r, (e, n) => {
     if (n === O) return;
     let i = e.widgets.indexOf(t);
     if (i >= 0) {
@@ -572,7 +572,7 @@ function G(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     widgetType: t,
     defaultConfig: n
@@ -580,7 +580,7 @@ function V(e) {
   I[t] = E({}, I[t], n)
 }
 
-function F(e, t) {
+function V(e, t) {
   i = b(E({}, i), {
     [e.id]: e.set("zIndex", t)
   })
@@ -602,14 +602,14 @@ function H(e) {
 
 function Y(e) {
   let t = {};
-  return o().forEach(e, (e, n) => {
+  return s().forEach(e, (e, n) => {
     t[n] = new f.A(e)
   }), t
 }
 
 function W(e) {
   let t = {};
-  return o().forEach(e, (e, n) => {
+  return s().forEach(e, (e, n) => {
     t[n] = new p.A(e)
   }), t
 }
@@ -623,15 +623,15 @@ class z extends(a = Chunk311907.Ay.PersistedStore) {
     null != e && null != e.layouts && null != e.widgets ? (r = Y(e.layouts), i = W(e.widgets)) : (r = {}, i = {});
     let t = false,
       n = [];
-    o().forEach(I, (e, t) => {
+    s().forEach(I, (e, t) => {
       e.layoutPolicy === h.X.REQUIRED && n.push(t)
-    }), o().forEach(r, (e, a) => {
-      let s = this.getWidgetsForLayout(a),
-        o = false;
+    }), s().forEach(r, (e, a) => {
+      let o = this.getWidgetsForLayout(a),
+        s = false;
       for (let r of n) {
-        let n = s.find(e => e.type === r);
+        let n = o.find(e => e.type === r);
         if (null != n || I[r].version !== e.version) continue;
-        o = t = true;
+        s = t = true;
         let c = (0, l.A)(),
           u = K(r);
         if (null == u) return;
@@ -639,12 +639,12 @@ class z extends(a = Chunk311907.Ay.PersistedStore) {
           type: r,
           id: c,
           layoutId: a,
-          zIndex: s.length
-        })), s.push(n), i = b(E({}, i), {
+          zIndex: o.length
+        })), o.push(n), i = b(E({}, i), {
           [c]: n
         })
       }
-      o && (e = e.set("widgets", s.map(e => {
+      s && (e = e.set("widgets", o.map(e => {
         let {
           id: t
         } = e;
@@ -652,7 +652,7 @@ class z extends(a = Chunk311907.Ay.PersistedStore) {
       })), r = b(E({}, r), {
         [a]: e
       }))
-    }), o().forEach(i, (e, n) => {
+    }), s().forEach(i, (e, n) => {
       let a = r[e.layoutId];
       (null == a || 0 > a.widgets.indexOf(n)) && (i = E({}, i), delete i[n], t = true)
     }), t && (this.persist(), this.emitChange())
@@ -716,7 +716,7 @@ class z extends(a = Chunk311907.Ay.PersistedStore) {
   getDefaultLayout(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
       n = [];
-    return o().forEach(this.getRegisteredWidgets(), (r, i) => {
+    return s().forEach(this.getRegisteredWidgets(), (r, i) => {
       switch (r.layoutPolicy) {
         case h.X.REQUIRED:
         case h.X.OPTIONAL_DEFAULT:
@@ -746,8 +746,8 @@ g(z, "displayName", "LayoutStore"), g(z, "persistKey", "LayoutStore"), g(z, "mig
       i = [],
       a = e.map(e => {
         let a = null != t ? t[e] : null,
-          s = null != n ? n[e] : null,
-          o = {
+          o = null != n ? n[e] : null,
+          s = {
             id: e,
             layoutId: r,
             type: e,
@@ -757,22 +757,22 @@ g(z, "displayName", "LayoutStore"), g(z, "persistKey", "LayoutStore"), g(z, "mig
               bottom: null,
               right: null
             },
-            size: s || {
+            size: o || {
               width: false,
               height: false
             },
             pinned: true,
             zIndex: 0
           };
-        return i.push([o.id, o]), o.id
+        return i.push([s.id, s]), s.id
       }),
-      s = {
+      o = {
         id: r,
         widgets: a
       };
     return {
       layouts: [
-        [r, s]
+        [r, o]
       ],
       widgets: i
     }
@@ -801,12 +801,12 @@ g(z, "displayName", "LayoutStore"), g(z, "persistKey", "LayoutStore"), g(z, "mig
         });
         return null != n && (null == a && n[1].type === m.uss.VOICE && (a = n[0]), null == r && n[1].type === m.uss.TEXT && (r = n[1].pinned), null != r && null != a || true)
       }), r || null == a) return;
-    let s = (0, l.A)();
-    n.widgets = [a, s];
-    let o = K(m.uss.GUILDS_TEXT);
-    null != o && i.push([s, b(E({}, o), {
+    let o = (0, l.A)();
+    n.widgets = [a, o];
+    let s = K(m.uss.GUILDS_TEXT);
+    null != s && i.push([o, b(E({}, s), {
       type: m.uss.GUILDS_TEXT,
-      id: s,
+      id: o,
       layoutId: t,
       zIndex: 2
     })])
@@ -847,13 +847,13 @@ g(z, "displayName", "LayoutStore"), g(z, "persistKey", "LayoutStore"), g(z, "mig
 }]);
 let q = new z(Chunk73153.h, {
   LAYOUT_CREATE: S,
-  LAYOUT_SET_PINNED: x,
+  LAYOUT_SET_PINNED: L,
   LAYOUT_UPDATE_WIDGET: N,
   LAYOUT_SET_TOP_WIDGET: w,
   LAYOUT_DELETE_WIDGET: k,
   LAYOUT_DELETE_ALL_WIDGETS: U,
   LAYOUT_CREATE_WIDGETS: G,
   LAYOUT_SET_WIDGET_META: P,
-  LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: M,
-  LAYOUT_SET_DEFAULT_CONFIG: V
+  LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: j,
+  LAYOUT_SET_DEFAULT_CONFIG: F
 })

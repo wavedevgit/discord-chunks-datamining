@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk485878 = require("./485878.js"),
   Chunk985018 = require("./985018.jsx"),
@@ -21,13 +21,13 @@ function d(e) {
   } = (0, l.uM)(), a = i.useCallback(() => {
     n()
   }, [n]);
-  return (0, r.jsx)(o.DUT, {
+  return (0, r.jsx)(s.DUT, {
     onClick: a,
-    className: s()(u.v, t),
+    className: o()(u.v, t),
     "aria-label": c.intl.string(c.t.ybUZql),
-    children: (0, r.jsx)(o.Zge, {
+    children: (0, r.jsx)(s.Zge, {
       size: "sm",
-      color: o.LU0.colors.INTERACTIVE_TEXT_ACTIVE
+      color: s.LU0.colors.INTERACTIVE_TEXT_ACTIVE
     })
   })
 }

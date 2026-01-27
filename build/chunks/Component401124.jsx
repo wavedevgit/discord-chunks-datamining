@@ -103,7 +103,7 @@ function C() {
   return S() ? Promise.resolve(false) : (p.default.track(m.HAw.PERMISSIONS_REQUESTED, {
     type: "audio"
   }), c.A.getMediaEngine().enable().then(() => {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "MEDIA_ENGINE_SET_AUDIO_ENABLED",
       enabled: true,
       unmute: e

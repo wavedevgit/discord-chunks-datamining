@@ -10,7 +10,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk217222 = require("./217222.js"),
   Chunk128319 = require("./128319.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -67,7 +67,7 @@ function p(e) {
     location: t
   } = e, {
     isInHoldout: n
-  } = s.p.getCurrentConfig({
+  } = o.p.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: true

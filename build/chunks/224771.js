@@ -11,7 +11,7 @@ require("./73153.js");
 var Chunk626584 = require("./626584.js"),
   Chunk739508 = require("./739508.js"),
   Chunk652215 = require("./652215.js");
-let o = new Chunk626584.A("OrderActionCreators");
+let s = new Chunk626584.A("OrderActionCreators");
 var l = function(e) {
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DRAFT = 1] = "DRAFT", e[e.SIGNED = 2] = "SIGNED", e[e.DISCARDED = 3] = "DISCARDED", e[e.SIGNING_IN_PROGRESS = 4] = "SIGNING_IN_PROGRESS", e
   }({}),
@@ -21,11 +21,11 @@ var l = function(e) {
 async function u(e) {
   try {
     return (await r.Bo.get({
-      url: s.Rsh.ORDER_GET(e),
+      url: o.Rsh.ORDER_GET(e),
       rejectWithError: true
     })).body || null
   } catch (t) {
-    return o.error("failed to fetch order", {
+    return s.error("failed to fetch order", {
       error: t,
       orderId: e
     }), (0, a.pM)(t, {

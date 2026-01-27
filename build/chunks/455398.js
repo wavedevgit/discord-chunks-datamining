@@ -6,7 +6,7 @@ module.exports = function(e) {
     r = "add remove enable disable set get print export edit find run debug error info warning",
     i = "true false yes no nothing nil null",
     a = "traffic-flow traffic-generator firewall scheduler aaa accounting address-list address align area bandwidth-server bfd bgp bridge client clock community config connection console customer default dhcp-client dhcp-server discovery dns e-mail ethernet filter firmware gps graphing group hardware health hotspot identity igmp-proxy incoming instance interface ip ipsec ipv6 irq l2tp-server lcd ldp logging mac-server mac-winbox mangle manual mirror mme mpls nat nd neighbor network note ntp ospf ospf-v3 ovpn-server page peer pim ping policy pool port ppp pppoe-client pptp-server prefix profile proposal proxy queue radius resource rip ripng route routing screen script security-profiles server service service-port settings shares smb sms sniffer snmp snooper socks sstp-server system tool tracking type upgrade upnp user-manager users user vlan secret vrrp watchdog web-access wireless pptp pppoe lan wan layer7-protocol lease simple raw",
-    s = {
+    o = {
       className: "variable",
       variants: [{
         begin: /\$[\w\d#@][\w\d_]*/
@@ -14,11 +14,11 @@ module.exports = function(e) {
         begin: /\$\{(.*?)\}/
       }]
     },
-    o = {
+    s = {
       className: "string",
       begin: /"/,
       end: /"/,
-      contains: [e.BACKSLASH_ESCAPE, s, {
+      contains: [e.BACKSLASH_ESCAPE, o, {
         className: "variable",
         begin: /\$\(/,
         end: /\)/,
@@ -51,7 +51,7 @@ module.exports = function(e) {
         end: />/
       }],
       illegal: /./
-    }, e.COMMENT("^#", "$"), o, l, s, {
+    }, e.COMMENT("^#", "$"), s, l, o, {
       begin: /[\w-]+=([^\s{}[\]()>]+)/,
       relevance: 0,
       returnBegin: true,
@@ -62,7 +62,7 @@ module.exports = function(e) {
         begin: /=/,
         endsWithParent: true,
         relevance: 0,
-        contains: [o, l, s, {
+        contains: [s, l, o, {
           className: "literal",
           begin: "\\b(" + i.split(" ").join("|") + ")\\b"
         }, {

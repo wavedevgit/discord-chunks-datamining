@@ -68,7 +68,7 @@ function I() {
 
 function S() {
   var e;
-  let t = s.Ay.PersistedStore.migrateAndReadStoreState("AccessibilityStore", []).state;
+  let t = o.Ay.PersistedStore.migrateAndReadStoreState("AccessibilityStore", []).state;
   return null != (e = null == t ? true : t.darkSidebar) && e
 }
 class T extends(r = Chunk311907.Ay.DeviceSettingsStore) {
@@ -191,8 +191,8 @@ class T extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   }
 }
 p(T, "displayName", "UnsyncedUserSettingsStore"), p(T, "persistKey", "UnsyncedUserSettingsStore"), p(T, "migrations", [() => {
-  let e = o.w.get("UserSettingsStore");
-  return o.w.remove("UserSettingsStore"), a().pick(e, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations")
+  let e = s.w.get("UserSettingsStore");
+  return s.w.remove("UserSettingsStore"), a().pick(e, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations")
 }, e => {
   delete e.disableVisualRefresh
 }]);

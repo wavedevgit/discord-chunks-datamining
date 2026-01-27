@@ -25,7 +25,7 @@
     var n = t || {};
     if ("function" != typeof e) throw Error("callback must be a function");
     if (n.root && 1 != n.root.nodeType) throw Error("root must be an Element");
-    this._checkForIntersections = s(this._checkForIntersections.bind(this), this.THROTTLE_TIMEOUT), this._callback = e, this._observationTargets = [], this._queuedEntries = [], this._rootMarginValues = this._parseRootMargin(n.rootMargin), this.thresholds = this._initThresholds(n.threshold), this.root = n.root || null, this.rootMargin = this._rootMarginValues.map(function(e) {
+    this._checkForIntersections = o(this._checkForIntersections.bind(this), this.THROTTLE_TIMEOUT), this._callback = e, this._observationTargets = [], this._queuedEntries = [], this._rootMarginValues = this._parseRootMargin(n.rootMargin), this.thresholds = this._initThresholds(n.threshold), this.root = n.root || null, this.rootMargin = this._rootMarginValues.map(function(e) {
       return e.value + e.unit
     }).join(" ")
   }
@@ -34,7 +34,7 @@
     return e.performance && performance.now && performance.now()
   }
 
-  function s(e, t) {
+  function o(e, t) {
     var n = null;
     return function() {
       n || (n = setTimeout(function() {
@@ -43,7 +43,7 @@
     }
   }
 
-  function o(e, t, n, r) {
+  function s(e, t, n, r) {
     "function" == typeof e.addEventListener ? e.addEventListener(t, n, r || false) : "function" == typeof e.attachEvent && e.attachEvent("on" + t, n)
   }
 
@@ -56,15 +56,15 @@
       r = Math.min(e.bottom, t.bottom),
       i = Math.max(e.left, t.left),
       a = Math.min(e.right, t.right),
-      s = a - i,
-      o = r - n;
-    return s >= 0 && o >= 0 && {
+      o = a - i,
+      s = r - n;
+    return o >= 0 && s >= 0 && {
       top: n,
       bottom: r,
       left: i,
       right: a,
-      width: s,
-      height: o
+      width: o,
+      height: s
     }
   }
 
@@ -142,7 +142,7 @@
     });
     return t[1] = t[1] || t[0], t[2] = t[2] || t[0], t[3] = t[3] || t[1], t
   }, i.prototype._monitorIntersections = function() {
-    !this._monitoringIntersections && (this._monitoringIntersections = true, this.POLL_INTERVAL ? this._monitoringInterval = setInterval(this._checkForIntersections, this.POLL_INTERVAL) : (o(e, "resize", this._checkForIntersections, true), o(t, "scroll", this._checkForIntersections, true), this.USE_MUTATION_OBSERVER && "MutationObserver" in e && (this._domObserver = new MutationObserver(this._checkForIntersections), this._domObserver.observe(t, {
+    !this._monitoringIntersections && (this._monitoringIntersections = true, this.POLL_INTERVAL ? this._monitoringInterval = setInterval(this._checkForIntersections, this.POLL_INTERVAL) : (s(e, "resize", this._checkForIntersections, true), s(t, "scroll", this._checkForIntersections, true), this.USE_MUTATION_OBSERVER && "MutationObserver" in e && (this._domObserver = new MutationObserver(this._checkForIntersections), this._domObserver.observe(t, {
       attributes: true,
       childList: true,
       characterData: true,
@@ -155,27 +155,27 @@
       t = e ? this._getRootRect() : d();
     this._observationTargets.forEach(function(n) {
       var i = n.element,
-        s = u(i),
-        o = this._rootContainsTarget(i),
+        o = u(i),
+        s = this._rootContainsTarget(i),
         l = n.entry,
-        c = e && o && this._computeTargetAndRootIntersection(i, t),
+        c = e && s && this._computeTargetAndRootIntersection(i, t),
         d = n.entry = new r({
           time: a(),
           target: i,
-          boundingClientRect: s,
+          boundingClientRect: o,
           rootBounds: t,
           intersectionRect: c
         });
-      l ? e && o ? this._hasCrossedThreshold(l, d) && this._queuedEntries.push(d) : l && l.isIntersecting && this._queuedEntries.push(d) : this._queuedEntries.push(d)
+      l ? e && s ? this._hasCrossedThreshold(l, d) && this._queuedEntries.push(d) : l && l.isIntersecting && this._queuedEntries.push(d) : this._queuedEntries.push(d)
     }, this), this._queuedEntries.length && this._callback(this.takeRecords(), this)
   }, i.prototype._computeTargetAndRootIntersection = function(n, r) {
     if ("none" != e.getComputedStyle(n).display) {
-      for (var i = u(n), a = i, s = p(n), o = false; !o;) {
+      for (var i = u(n), a = i, o = p(n), s = false; !s;) {
         var l = null,
-          d = 1 == s.nodeType ? e.getComputedStyle(s) : {};
+          d = 1 == o.nodeType ? e.getComputedStyle(o) : {};
         if ("none" == d.display) return;
-        if (s == this.root || s == t ? (o = true, l = r) : s != t.body && s != t.documentElement && "visible" != d.overflow && (l = u(s)), l && !(a = c(l, a))) break;
-        s = p(s)
+        if (o == this.root || o == t ? (s = true, l = r) : o != t.body && o != t.documentElement && "visible" != d.overflow && (l = u(o)), l && !(a = c(l, a))) break;
+        o = p(o)
       }
       return a
     }

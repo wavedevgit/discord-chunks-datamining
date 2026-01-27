@@ -13,11 +13,11 @@ var Chunk64700 = require("./64700.js"),
   Chunk259248 = require("./259248.js");
 let u = e => {
   let t = (0, i.bG)([c.A], () => c.A.getProfileEffect(e)),
-    n = (0, i.bG)([s.A, o.A], () => {
+    n = (0, i.bG)([o.A, s.A], () => {
       if (null == e) return;
-      let t = s.A.getProduct(e);
+      let t = o.A.getProduct(e);
       if ((0, l.C)(null == t ? true : t.items[0])) return t.items[0];
-      let n = o.A.getPurchase(e);
+      let n = s.A.getPurchase(e);
       if ((0, l.C)(null == n ? true : n.items[0])) return n.items[0]
     }),
     u = r.useMemo(() => null != n ? {

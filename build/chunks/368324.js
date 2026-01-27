@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk355418 = require("./355418.js");
 let i = RegExp("([0-9]{4})\\-([0-9]{1,2})\\-([0-9]{1,2})(?:T([0-9]{1,2}):([0-9]{1,2})(?::([0-9]{1,2})(?:\\.(\\d{1,4}))?)?(Z|([+-]\\d{2}):?(\\d{2})?)?)?(?=\\W|$)", "i"),
   a = 1,
-  s = 2,
-  o = 3,
+  o = 2,
+  s = 3,
   l = 4,
   c = 5,
   u = 6,
@@ -23,8 +23,8 @@ class h extends Chunk355418.c {
   innerExtract(e, t) {
     let n = e.createParsingComponents({
       year: parseInt(t[a]),
-      month: parseInt(t[s]),
-      day: parseInt(t[o])
+      month: parseInt(t[o]),
+      day: parseInt(t[s])
     });
     if (null != t[l] && (n.assign("hour", parseInt(t[l])), n.assign("minute", parseInt(t[c])), null != t[u] && n.assign("second", parseInt(t[u])), null != t[d] && n.assign("millisecond", parseInt(t[d])), null != t[f])) {
       let e = 0;

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk879378 = require("./879378.js"),
   l = require.n(Chunk879378),
   Chunk612324 = require("./612324.js"),
@@ -75,16 +75,16 @@ function O(e) {
     children: n,
     listProps: i,
     onScroll: a,
-    scrollerRef: s
+    scrollerRef: o
   } = e;
   if (!y(n) && null == t && null == i) return null;
-  let o = b(n);
+  let s = b(n);
   return (0, r.jsx)(v, {
     controls: t,
-    children: o,
+    children: s,
     listProps: i,
     onScroll: a,
-    scrollerRef: s
+    scrollerRef: o
   })
 }
 
@@ -92,7 +92,7 @@ function v(e) {
   var t, n;
   let {
     controls: a,
-    children: o,
+    children: s,
     listProps: p,
     onScroll: h,
     scrollerRef: g
@@ -122,11 +122,11 @@ function v(e) {
     return null != r && n.observe(r), (null == S ? true : S.current) != null && n.observe(S.current), () => n.disconnect()
   }, [N]), (0, r.jsxs)(u.F, {
     children: [(0, r.jsx)("div", {
-      className: s()(_.bodySpacerTop, {
+      className: o()(_.bodySpacerTop, {
         [_.bodySpacerTopBorder]: O && null == a
       })
     }), null != a && (0, r.jsx)("header", {
-      className: s()(_.bodyControls, {
+      className: o()(_.bodyControls, {
         [_.bodyControlsWithFade]: y
       }),
       children: a
@@ -146,13 +146,13 @@ function v(e) {
       disableFocusRingScope: true,
       children: (0, r.jsx)("main", {
         ref: S,
-        className: s()(_.bodyInner, {
+        className: o()(_.bodyInner, {
           [_.bodyInnerShouldScroll]: O
         }),
-        children: o
+        children: s
       })
     }), (0, r.jsx)("div", {
-      className: s()(_.bodySpacerBottom, {
+      className: o()(_.bodySpacerBottom, {
         [_.bodySpacerBottomBorder]: O
       })
     })]

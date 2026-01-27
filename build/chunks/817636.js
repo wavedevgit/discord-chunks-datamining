@@ -14,11 +14,11 @@ async function c(e, t) {
   var n;
   let c = r.A.getApplication(e);
   if (u(c)) return c;
-  let d = null == (n = s.A.getChannel(t)) ? true : n.guild_id,
+  let d = null == (n = o.A.getChannel(t)) ? true : n.guild_id,
     {
       activityConfigs: f,
       applications: p
-    } = await (0, o.LV)({
+    } = await (0, s.LV)({
       guildId: d
     }),
     _ = (0, l.A)({

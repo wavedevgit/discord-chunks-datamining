@@ -1,7 +1,7 @@
-/** Chunk was on 55926 **/
-/** chunk id: 653813, original params: i,e,t (module,exports,require) **/
+/** Chunk was on 91075 **/
+/** chunk id: 653813, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,93 +15,93 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk431389 = require("./431389.js");
 
-function p(i) {
+function f(e) {
   let {
-    giftRecipient: e,
-    onClose: t,
-    transitionState: r,
-    analyticsLocations: p,
-    analyticsLocation: g,
-    analyticsObject: I,
-    giftMessage: f
-  } = i, {
-    priceOptions: j
-  } = (0, a.P5)(), x = s.useCallback(i => {
+    giftRecipient: t,
+    onClose: i,
+    transitionState: l,
+    analyticsLocations: f,
+    analyticsLocation: p,
+    analyticsObject: g,
+    giftMessage: h
+  } = e, {
+    priceOptions: I
+  } = (0, s.P5)(), C = n.useCallback(e => {
     (0, o.A)({
       isGift: true,
-      giftRecipient: e,
-      subscriptionTier: i,
-      giftingOrigin: d.vQ.DM_CHANNEL,
-      analyticsLocations: null != p ? p : [],
-      analyticsLocation: g,
-      analyticsObject: null != I ? I : {
+      giftRecipient: t,
+      subscriptionTier: e,
+      giftingOrigin: c.vQ.DM_CHANNEL,
+      analyticsLocations: null != f ? f : [],
+      analyticsLocation: p,
+      analyticsObject: null != g ? g : {
         page: u.liQ.DM_CHANNEL,
         section: u.JJy.CHANNEL_TEXT_AREA,
         object: u.ZSU.BUTTON_ICON,
         objectType: u.AnalyticsObjectTypes.GIFT
       },
-      giftMessage: f
-    }), t()
-  }, [e, p, g, I, f, t]);
-  return (0, n.jsxs)(l.EOs, {
-    transitionState: r,
-    size: l.rIJ.DYNAMIC,
-    className: h.jT,
+      giftMessage: h
+    }), i()
+  }, [t, f, p, g, h, i]);
+  return (0, r.jsxs)(a.EOs, {
+    transitionState: l,
+    size: a.rIJ.DYNAMIC,
+    className: _.jT,
     parentComponent: "GiftOptionSelectModal",
     "data-migration-pending": true,
-    children: [(0, n.jsx)(l.rQ0, {
-      className: h.Hc,
+    children: [(0, r.jsx)(a.rQ0, {
+      className: _.Hc,
       "data-migration-pending": true,
-      children: (0, n.jsxs)(l.BJc, {
+      children: (0, r.jsxs)(a.BJc, {
         direction: "horizontal",
         justify: "space-between",
-        children: [(0, n.jsx)(l.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           children: m.intl.string(m.t["wg/30i"])
-        }), (0, n.jsx)(l.s_y, {
-          onClick: t,
+        }), (0, r.jsx)(a.s_y, {
+          onClick: i,
           "data-migration-pending": true
         })]
       })
-    }), (0, n.jsx)(l.$mQ, {
-      className: h.S3,
+    }), (0, r.jsx)(a.$mQ, {
+      className: _.S3,
       "data-migration-pending": true,
-      children: (0, n.jsx)(c.A, {
-        onSelectSku: x,
-        giftRecipient: e,
-        priceOptions: j,
-        onWishlistItemClick: t
+      children: (0, r.jsx)(d.A, {
+        onSelectSku: C,
+        giftRecipient: t,
+        priceOptions: I,
+        onWishlistItemClick: i
       })
     })]
   })
 }
 
-function g(i) {
+function p(e) {
   let {
-    giftRecipient: e,
-    onClose: t,
-    transitionState: s,
-    analyticsLocations: l,
+    giftRecipient: t,
+    onClose: i,
+    transitionState: n,
+    analyticsLocations: a,
     analyticsLocation: o,
-    analyticsObject: c,
+    analyticsObject: d,
     giftMessage: u
-  } = i;
-  return (0, n.jsx)(a.PaymentContextProvider, {
+  } = e;
+  return (0, r.jsx)(s.PaymentContextProvider, {
     activeSubscription: null,
     stepConfigs: [],
-    skuIDs: d.T7,
+    skuIDs: c.T7,
     isGift: true,
-    children: (0, n.jsx)(r.dX, {
+    children: (0, r.jsx)(l.dX, {
       isGift: true,
-      giftRecipient: e,
-      giftingOrigin: d.vQ.DM_CHANNEL,
-      children: (0, n.jsx)(p, {
-        giftRecipient: e,
-        onClose: t,
-        transitionState: s,
-        analyticsLocations: l,
+      giftRecipient: t,
+      giftingOrigin: c.vQ.DM_CHANNEL,
+      children: (0, r.jsx)(f, {
+        giftRecipient: t,
+        onClose: i,
+        transitionState: n,
+        analyticsLocations: a,
         analyticsLocation: o,
-        analyticsObject: c,
+        analyticsObject: d,
         giftMessage: u
       })
     })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk990078 = require("./990078.jsx"),
   Chunk565645 = require("./565645.jsx"),
   Chunk7584 = require("./7584.js"),
@@ -47,11 +47,11 @@ function h(e) {
     tooltipDelay: h = 150
   } = e, m = u.Sf.useSetting(), g = i.useRef(null), E = null != t.id ? ":".concat(t.name, ":") : c.Ay.translateSurrogatesToInlineEmoji(t.name);
   if (null == t.id && d.V.has(t.name)) return (0, r.jsx)("span", {
-    className: s()(f.Zg, n),
+    className: o()(f.Zg, n),
     children: t.name
   });
   let y = {
-    className: s()(f.Zg, n),
+    className: o()(f.Zg, n),
     emojiId: t.id,
     emojiName: t.name,
     autoplay: true,
@@ -60,7 +60,7 @@ function h(e) {
       g.current = e
     }
   };
-  return p ? (0, r.jsx)(l.A, _({}, y)) : (0, r.jsx)(o.m, {
+  return p ? (0, r.jsx)(l.A, _({}, y)) : (0, r.jsx)(s.m, {
     targetElementRef: g,
     text: E,
     delay: h,

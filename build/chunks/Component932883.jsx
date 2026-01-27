@@ -53,8 +53,8 @@ function E(e) {
     totalMessagesCount: r,
     viewId: i,
     unreadsBadgeMentionCount: a,
-    unreadsBadgeChannelCount: s,
-    unreadMessageItemsCount: o,
+    unreadsBadgeChannelCount: o,
+    unreadMessageItemsCount: s,
     unreadMentionsCount: l
   } = e;
   c.default.track(p.HAw.NOTIFICATIONS_INBOX_READY, {
@@ -63,8 +63,8 @@ function E(e) {
     total_messages_count: r,
     view_id: i,
     unreads_badge_mention_count: a,
-    unreads_badge_channel_count: s,
-    unread_message_items_count: o,
+    unreads_badge_channel_count: o,
+    unread_message_items_count: s,
     unread_mentions_count: l
   })
 }
@@ -127,8 +127,8 @@ function A(e) {
     unreadMessagesCount: r,
     channelsFetched: i,
     mentionsFetched: a,
-    loadingTrigger: s,
-    viewId: o
+    loadingTrigger: o,
+    viewId: s
   } = e;
   c.default.track(p.HAw.NOTIFICATIONS_INBOX_DATA_LOADED, {
     time_to_load: t,
@@ -136,8 +136,8 @@ function A(e) {
     unread_messages_count: r,
     channels_fetched: i,
     mentions_fetched: a,
-    loading_trigger: null != s ? s : f.VA.UNKNOWN,
-    view_id: o
+    loading_trigger: null != o ? o : f.VA.UNKNOWN,
+    view_id: s
   })
 }
 
@@ -149,14 +149,14 @@ function I(e) {
     unreadMessages: a,
     viewId: c,
     messagesByCategory: p
-  } = e, _ = i.useRef(null), h = i.useRef(false), m = (0, s.bG)([u.A], () => u.A.isLoading), y = (0, l.A)(m), b = (0, s.bG)([u.A], () => {
+  } = e, _ = i.useRef(null), h = i.useRef(false), m = (0, o.bG)([u.A], () => u.A.isLoading), y = (0, l.A)(m), b = (0, o.bG)([u.A], () => {
     var e;
     return null != (e = u.A.currentRequestAnalyticsPayload) ? e : null
   }), {
     unreadRecentMentionsCount: O,
     unreadChannelIds: I
   } = (0, d.U4)();
-  (0, o.Ay)(() => {
+  (0, s.Ay)(() => {
     g({
       variant: t,
       viewId: c,
@@ -190,7 +190,7 @@ function I(e) {
         mentionsFetched: null == b ? true : b.mentionsFetched
       })
     }
-  }, [m, r, a, c, y, b]), (0, o.l0)(() => {
+  }, [m, r, a, c, y, b]), (0, s.l0)(() => {
     var e, t;
     v({
       unreadsCount: null != (e = null == a ? true : a.length) ? e : 0,

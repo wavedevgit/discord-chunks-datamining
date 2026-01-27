@@ -2,7 +2,7 @@
 /** chunk id: 969628, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => s
+  t: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,7 +14,7 @@ let a = {
     SparklesIcon: Chunk158954.BZI,
     ClockIcon: Chunk158954.O4
   },
-  s = {
+  o = {
     title: "Badge",
     stories: [{
       name: "Badge",
@@ -23,14 +23,14 @@ let a = {
         let {
           type: t,
           customText: n,
-          variant: s,
-          iconName: o
+          variant: o,
+          iconName: s
         } = e, l = "custom" === t && null != n && "" !== n ? {
           text: n
-        } : t, c = null != o && "" !== o && "none" !== o ? a[o] : true;
+        } : t, c = null != s && "" !== s && "none" !== s ? a[s] : true;
         return (0, r.jsx)(i.Exy, {
           type: l,
-          variant: s,
+          variant: o,
           icon: c
         })
       },

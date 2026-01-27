@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 796497, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 796497, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,44 +12,38 @@ var Chunk397927 = require("./397927.js"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx");
 
-function u(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function d(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      u(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function f() {
-  let e = c.intl.string(l.default["8SLtqb"]),
-    t = () => {
-      (0, i.mMO)(async () => {
-        let {
-          default: e
-        } = await Promise.all([n.e("14882"), n.e("84268")]).then(n.bind(n, 320742));
-        return t => (0, r.jsx)(e, d({}, t))
-      }), a.default.track(o.HAw.FAMILY_CENTER_ACTION, {
-        action: s.qb.ShowQRCodeModal
-      })
-    };
+function d() {
+  let e = c.intl.string(o.default["8SLtqb"]);
   return (0, r.jsx)(i.Button, {
     icon: i.yVk,
     variant: "primary",
     text: e,
-    onClick: t
+    onClick: () => {
+      (0, i.mMO)(async () => {
+        let {
+          default: e
+        } = await Promise.all([n.e("14882"), n.e("84268")]).then(n.bind(n, 320742));
+        return t => (0, r.jsx)(e, function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, t))
+      }), l.default.track(a.HAw.FAMILY_CENTER_ACTION, {
+        action: s.qb.ShowQRCodeModal
+      })
+    }
   })
 }

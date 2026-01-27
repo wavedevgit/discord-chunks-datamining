@@ -16,11 +16,11 @@ module.exports = function(e) {
         illegal: /\n/
       }]
     },
-    s = e.inherit(a, {
+    o = e.inherit(a, {
       begin: /\(/,
       end: /\)/
     }),
-    o = e.inherit(e.APOS_STRING_MODE, {
+    s = e.inherit(e.APOS_STRING_MODE, {
       className: "string"
     }),
     l = e.inherit(e.QUOTE_STRING_MODE, {
@@ -64,14 +64,14 @@ module.exports = function(e) {
       begin: /<![a-z]/,
       end: />/,
       relevance: 10,
-      contains: [a, l, o, s, {
+      contains: [a, l, s, o, {
         begin: /\[/,
         end: /\]/,
         contains: [{
           className: "meta",
           begin: /<![a-z]/,
           end: />/,
-          contains: [a, s, l, o]
+          contains: [a, o, l, s]
         }]
       }]
     }, e.COMMENT(/<!--/, /-->/, {

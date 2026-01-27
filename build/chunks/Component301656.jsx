@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 301656, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 301656, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 }), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,78 +16,78 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk872722 = require("./872722.js");
 
-function h(e) {
+function g(e) {
   let {
     onBackClick: t
-  } = e, n = (0, a.bG)([u.A], () => u.A.getAllUnlockedAchievements()), h = i.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), m = i.useMemo(() => Object.values(d.l0).filter(c.Vq).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
+  } = e, n = (0, l.bG)([d.A], () => d.A.getAllUnlockedAchievements()), g = i.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), A = i.useMemo(() => Object.values(u.l0).filter(c.Vq).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(o.DUT, {
+    children: [(0, r.jsxs)(a.DUT, {
       onClick: t,
-      className: _.vv,
-      children: [(0, r.jsx)(l.A, {
-        direction: l.A.Directions.LEFT,
-        className: _.Kk
-      }), (0, r.jsx)(o.Text, {
+      className: m.vv,
+      children: [(0, r.jsx)(o.A, {
+        direction: o.A.Directions.LEFT,
+        className: m.Kk
+      }), (0, r.jsx)(a.Text, {
         variant: "text-lg/normal",
         color: "text-default",
         children: p.intl.string(p.t["13/7kX"])
       })]
     }), (0, r.jsxs)("div", {
-      className: _.N1,
+      className: m.N1,
       children: [(0, r.jsxs)("div", {
-        className: _.if,
-        children: [(0, r.jsx)(o.Heading, {
+        className: m.if,
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-lg/extrabold",
           color: "text-strong",
           children: p.intl.string(p.t["6jI0hd"])
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-default",
           children: p.intl.string(p.t.GuUItX)
         })]
       }), (0, r.jsx)("div", {
-        className: _.nr,
-        children: (0, r.jsx)(o.OR, {
+        className: m.nr,
+        children: (0, r.jsx)(a.OR, {
           size: "custom",
           color: s.A.unsafe_rawColors.ORANGE_345.css,
           width: 40,
           height: 40
         })
       })]
-    }), h.length > 0 && (0, r.jsx)("div", {
-      className: _.yF,
+    }), g.length > 0 && (0, r.jsx)("div", {
+      className: m.yF,
       children: (0, r.jsx)("div", {
-        className: _.Eh,
-        children: h.map(e => {
+        className: m.Eh,
+        children: g.map(e => {
           let {
             achievementId: t,
             dateUnlocked: n
           } = e;
-          return (0, r.jsx)(f.A, {
+          return (0, r.jsx)(_.A, {
             achievementId: t,
             dateUnlocked: n
           }, t)
         })
       })
-    }), m.length > 0 && (0, r.jsxs)("div", {
-      className: _.yF,
+    }), A.length > 0 && (0, r.jsxs)("div", {
+      className: m.yF,
       children: [(0, r.jsx)("div", {
-        className: _.if,
-        children: (0, r.jsx)(o.Text, {
+        className: m.if,
+        children: (0, r.jsx)(a.Text, {
           variant: "text-md/bold",
           color: "text-default",
           children: p.intl.string(p.t.GFyMg1)
         })
       }), (0, r.jsx)("div", {
-        className: _.Eh,
-        children: m.map(e => (0, r.jsx)(f.A, {
+        className: m.Eh,
+        children: A.map(e => (0, r.jsx)(_.A, {
           achievementId: e.id
         }, e.id))
       })]
     }), (0, r.jsx)("div", {
-      className: _.yF,
+      className: m.yF,
       children: (0, r.jsx)("div", {
-        className: _.F3
+        className: m.F3
       })
     })]
   })

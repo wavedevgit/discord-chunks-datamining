@@ -18,16 +18,16 @@ function c(e) {
     children: n
   } = e;
   return (0, r.jsx)(i.un, {
-    asset: (0, r.jsx)(s.A, {
-      size: s.M.MEDIUM_LARGE,
+    asset: (0, r.jsx)(o.A, {
+      size: o.M.MEDIUM_LARGE,
       game: t
     }),
-    body: o.intl.format(o.t.J3s8JP, {
+    body: s.intl.format(s.t.J3s8JP, {
       applicationName: t.name
     }),
     position: "top",
     asContainer: true,
-    "aria-label": o.intl.string(o.t["5nMcv1"]),
+    "aria-label": s.intl.string(s.t["5nMcv1"]),
     children: (0, r.jsx)(a.DUT, {
       tag: "span",
       children: n

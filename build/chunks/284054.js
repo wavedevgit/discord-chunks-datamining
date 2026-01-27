@@ -2,16 +2,16 @@
 /** chunk id: 284054, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  s: () => o
+  s: () => s
 });
 var Chunk803082 = require("./803082.js"),
   Chunk290424 = require("./290424.js"),
   Chunk8321 = require("./8321.js"),
   Chunk946020 = require("./946020.js");
 
-function o(e, t) {
+function s(e, t) {
   let n, {
-    elementType: o = "button",
+    elementType: s = "button",
     isDisabled: l,
     onPress: c,
     onPressStart: u,
@@ -26,7 +26,7 @@ function o(e, t) {
     rel: y,
     type: b = "button"
   } = e;
-  n = "button" === o ? {
+  n = "button" === s ? {
     type: b,
     disabled: l,
     form: e.form,
@@ -39,12 +39,12 @@ function o(e, t) {
     value: e.value
   } : {
     role: "button",
-    href: "a" !== o || l ? true : g,
-    target: "a" === o ? E : true,
-    type: "input" === o ? b : true,
-    disabled: "input" === o ? l : true,
-    "aria-disabled": l && "input" !== o ? l : true,
-    rel: "a" === o ? y : true
+    href: "a" !== s || l ? true : g,
+    target: "a" === s ? E : true,
+    type: "input" === s ? b : true,
+    disabled: "input" === s ? l : true,
+    "aria-disabled": l && "input" !== s ? l : true,
+    rel: "a" === s ? y : true
   };
   let {
     pressProps: O,
@@ -61,7 +61,7 @@ function o(e, t) {
     ref: t
   }), {
     focusableProps: A
-  } = (0, s.Wc)(e, t);
+  } = (0, o.Wc)(e, t);
   h && (A.tabIndex = l ? false : A.tabIndex);
   let I = (0, r.v)(A, O, (0, i.$)(e, {
     labelable: true

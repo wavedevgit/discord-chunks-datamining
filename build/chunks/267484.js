@@ -3,12 +3,12 @@
 var Chunk111898 = require("./111898.js"),
   Chunk59221 = require("./59221.js");
 module.exports = function(e, t, n, a) {
-  var s = !n;
+  var o = !n;
   n || (n = {});
-  for (var o = false, l = t.length; ++o < l;) {
-    var c = t[o],
+  for (var s = false, l = t.length; ++s < l;) {
+    var c = t[s],
       u = a ? a(n[c], e[c], c, n, e) : true;
-    true === u && (u = e[c]), s ? i(n, c, u) : r(n, c, u)
+    true === u && (u = e[c]), o ? i(n, c, u) : r(n, c, u)
   }
   return n
 }

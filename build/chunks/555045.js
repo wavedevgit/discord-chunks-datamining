@@ -2,7 +2,7 @@
 /** chunk id: 555045, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => s
+  e: () => o
 });
 var Chunk64700 = require("./64700.js"),
   Chunk71393 = require("./71393.js");
@@ -17,6 +17,6 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   return r.useMemo(() => a(e), [e])
 }

@@ -2,7 +2,7 @@
 /** chunk id: 254160, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => s
+  f: () => o
 });
 var Chunk887924 = require("./887924.js");
 let i = new(require("./626584.js")).A("codedLinkQueue"),
@@ -12,7 +12,7 @@ let i = new(require("./626584.js")).A("codedLinkQueue"),
     interval: 2e3
   });
 
-function s(e) {
+function o(e) {
   a.add(e)
 }
 a.on("add", () => {

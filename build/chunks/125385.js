@@ -51,8 +51,8 @@ class d {
   }
   checkForLeaks(e, t) {
     var n, r, i, a;
-    let o = (null != (n = null == (i = this._subscriptions[e]) ? true : i[t]) ? n : 0) - (null != (r = null == (a = this._unsubscriptions[e]) ? true : a[t]) ? r : 0);
-    o > 5 && new s.A("GuildMemberSubscriptions").warn("GuildMemberSubscriptions.subscribe(...): Potential reference leak! (".concat(o, " subscriptions)"))
+    let s = (null != (n = null == (i = this._subscriptions[e]) ? true : i[t]) ? n : 0) - (null != (r = null == (a = this._unsubscriptions[e]) ? true : a[t]) ? r : 0);
+    s > 5 && new o.A("GuildMemberSubscriptions").warn("GuildMemberSubscriptions.subscribe(...): Potential reference leak! (".concat(s, " subscriptions)"))
   }
   flushUnsubscriptions() {
     i().isEmpty(this._unsubscriptions) || (i().forEach(this._unsubscriptions, (e, t) => {

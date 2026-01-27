@@ -40,9 +40,9 @@ let S = new Chunk626584.A("GameConsoleManager"),
   N = 18e4;
 async function w(e) {
   let t = f.A.getChannelId();
-  i()(null == t, "Syncing to remote while in voice!"), e.selfMute !== d.A.isSelfMute() && await o.A.toggleSelfMute({
+  i()(null == t, "Syncing to remote while in voice!"), e.selfMute !== d.A.isSelfMute() && await s.A.toggleSelfMute({
     syncRemote: false
-  }), e.selfDeaf !== d.A.isSelfDeaf() && o.A.toggleSelfDeaf({
+  }), e.selfDeaf !== d.A.isSelfDeaf() && s.A.toggleSelfDeaf({
     syncRemote: false
   })
 }
@@ -83,14 +83,14 @@ class P extends Chunk439372.A {
       let r = d.A.isSelfDeaf(),
         i = d.A.isSelfMute(),
         a = u.default.getId(),
-        s = E.default.getRemoteSessionId();
-      if (null == s) return;
-      let o = _.A.getVoiceStateForSession(a, s);
-      null == o || (o.selfDeaf !== r || o.selfMute !== i) && ((0, m.JS)(s, {
+        o = E.default.getRemoteSessionId();
+      if (null == o) return;
+      let s = _.A.getVoiceStateForSession(a, o);
+      null == s || (s.selfDeaf !== r || s.selfMute !== i) && ((0, m.JS)(o, {
         selfDeaf: r,
         selfMute: i
       }), this.rollbackCommandTimeout.start(T, () => {
-        w(o)
+        w(s)
       }))
     }), I(this, "handleVoiceStateUpdates", e => {
       let t = e.voiceStates,
@@ -116,7 +116,7 @@ class P extends Chunk439372.A {
       null != e && null == p.A.getSessionById(e) && (0, m.ZG)(), null == e && this.maybeConnect(Object.values(p.A.getSessions()))
     }), I(this, "handleWaitForRemoteSession", () => {
       this.awaitRemoteTimeout.start(C, () => {
-        (0, m.ZG)(), s.A.show({
+        (0, m.ZG)(), o.A.show({
           title: A.intl.string(A.t.wGMxr3),
           body: A.intl.string(A.t.i5k8b5)
         })
@@ -132,17 +132,17 @@ class P extends Chunk439372.A {
       S.info("Console command Error result:", r, i);
       let a = E.default.getAwaitingRemoteSessionInfo();
       if ((null == a ? true : a.commandId) !== n) return;
-      let s = E.default.getDevice(a.type, null != (t = a.deviceId) ? t : ""),
-        o = (0, b.A)(null != s ? s : {
+      let o = E.default.getDevice(a.type, null != (t = a.deviceId) ? t : ""),
+        s = (0, b.A)(null != o ? o : {
           id: "id",
           platform: A.intl.string(A.t["UQMV/E"]),
           name: A.intl.string(A.t["UQMV/E"])
         }, r, i);
-      null != o && g.A.showSelfDismissableAlert({
-        title: o.title,
-        body: o.body,
-        errorCodeMessage: o.errorCodeMessage,
-        reconnectPlatformType: o.isAccountLinkError ? a.type : true
+      null != s && g.A.showSelfDismissableAlert({
+        title: s.title,
+        body: s.body,
+        errorCodeMessage: s.errorCodeMessage,
+        reconnectPlatformType: s.isAccountLinkError ? a.type : true
       }), O.v_.has(i.code) && this.awaitRemoteTimeout.isStarted() ? this.awaitRemoteTimeout.start(N, () => (0, m.ZG)(), true) : "failed" === r && (0, m.ZG)()
     }), I(this, "handleRemoteSessionDisconnect", () => {
       this.awaitRemoteTimeout.stop()

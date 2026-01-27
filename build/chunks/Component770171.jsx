@@ -33,28 +33,28 @@ let f = 20,
       sectionFooterHeight: S,
       renderUpsell: T,
       onScroll: C
-    } = e, N = i.useRef(false), w = i.useRef(null), R = (0, l.RQ)(e => e.searchQuery), P = a.useStore(e => e.activeCategoryIndex), D = i.useMemo(() => n.map(e => (0, o.Em)(e.categoryInfo) ? {
+    } = e, N = i.useRef(false), w = i.useRef(null), R = (0, l.RQ)(e => e.searchQuery), P = a.useStore(e => e.activeCategoryIndex), D = i.useMemo(() => n.map(e => (0, s.Em)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: false
-    }), [n]), x = (0, u.Fk)({
+    }), [n]), L = (0, u.Fk)({
       activeCategoryIndex: P,
       isScrolling: N,
       listRef: w,
       onActiveCategoryIndexChange: a.setActiveCategoryIndex,
       scrollOffset: f,
       searchQuery: R
-    }), L = i.useCallback(e => {
-      x(e), _({
+    }), x = i.useCallback(e => {
+      L(e), _({
         listRef: w,
         searchQuery: R,
         nitroLockedSectionStates: D,
         scrollTop: e
       }), null == C || C(e)
-    }, [x, R, D, C]);
+    }, [L, R, D, C]);
     return i.useEffect(() => {
-      null != w.current && L(0)
-    }, [L, w]), (0, u.FV)({
+      null != w.current && x(0)
+    }, [x, w]), (0, u.FV)({
       searchQuery: R,
       activeCategoryIndex: P,
       listRef: w
@@ -96,10 +96,10 @@ let f = 20,
       }
     }), []), (0, r.jsxs)("div", {
       className: d.i,
-      children: [R.length > 0 && !c && null != b ? b() : (0, r.jsx)(s.A, {
+      children: [R.length > 0 && !c && null != b ? b() : (0, r.jsx)(o.A, {
         role: "none presentation",
         listPadding: p,
-        onScroll: L,
+        onScroll: x,
         renderRow: h,
         renderSection: m,
         renderSectionHeader: g,

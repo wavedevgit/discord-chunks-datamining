@@ -115,8 +115,8 @@ class d {
       [n, r] = t instanceof f ? [t.getScopeData(), t.getRequestSession()] : (0, i.Qd)(t) ? [e, e.requestSession] : [],
       {
         tags: a,
-        extra: s,
-        user: o,
+        extra: o,
+        user: s,
         contexts: l,
         level: c,
         fingerprint: u = [],
@@ -127,11 +127,11 @@ class d {
       ...a
     }, this._extra = {
       ...this._extra,
-      ...s
+      ...o
     }, this._contexts = {
       ...this._contexts,
       ...l
-    }, o && Object.keys(o).length && (this._user = o), c && (this._level = c), u.length && (this._fingerprint = u), d && (this._propagationContext = d), r && (this._requestSession = r), this
+    }, s && Object.keys(s).length && (this._user = s), c && (this._level = c), u.length && (this._fingerprint = u), d && (this._propagationContext = d), r && (this._requestSession = r), this
   }
   clear() {
     return this._breadcrumbs = [], this._tags = {}, this._extra = {}, this._user = {}, this._contexts = {}, this._level = true, this._transactionName = true, this._fingerprint = true, this._requestSession = true, this._session = true, (0, c.r)(this, true), this._attachments = [], this._propagationContext = (0, r.J)(), this._notifyScopeListeners(), this
@@ -188,8 +188,8 @@ class d {
     return this._propagationContext
   }
   captureException(e, t) {
-    let n = t && t.event_id ? t.event_id : (0, s.eJ)();
-    if (!this._client) return o.vF.warn("No client configured on scope - will not capture exception!"), n;
+    let n = t && t.event_id ? t.event_id : (0, o.eJ)();
+    if (!this._client) return s.vF.warn("No client configured on scope - will not capture exception!"), n;
     let r = Error("Sentry syntheticException");
     return this._client.captureException(e, {
       originalException: e,
@@ -199,8 +199,8 @@ class d {
     }, this), n
   }
   captureMessage(e, t, n) {
-    let r = n && n.event_id ? n.event_id : (0, s.eJ)();
-    if (!this._client) return o.vF.warn("No client configured on scope - will not capture message!"), r;
+    let r = n && n.event_id ? n.event_id : (0, o.eJ)();
+    if (!this._client) return s.vF.warn("No client configured on scope - will not capture message!"), r;
     let i = Error(e);
     return this._client.captureMessage(e, t, {
       originalException: e,
@@ -210,11 +210,11 @@ class d {
     }, this), r
   }
   captureEvent(e, t) {
-    let n = t && t.event_id ? t.event_id : (0, s.eJ)();
+    let n = t && t.event_id ? t.event_id : (0, o.eJ)();
     return this._client ? this._client.captureEvent(e, {
       ...t,
       event_id: n
-    }, this) : o.vF.warn("No client configured on scope - will not capture event!"), n
+    }, this) : s.vF.warn("No client configured on scope - will not capture event!"), n
   }
   _notifyScopeListeners() {
     this._notifyingListeners || (this._notifyingListeners = true, this._scopeListeners.forEach(e => {

@@ -5,8 +5,8 @@
   var n, r = Object.prototype,
     i = r.hasOwnProperty,
     a = "function" == typeof Symbol ? Symbol : {},
-    s = a.iterator || "@@iterator",
-    o = a.asyncIterator || "@@asyncIterator",
+    o = a.iterator || "@@iterator",
+    s = a.asyncIterator || "@@asyncIterator",
     l = a.toStringTag || "@@toStringTag",
     c = true,
     u = t.regeneratorRuntime;
@@ -45,12 +45,12 @@
 
   function b() {}
   var O = {};
-  O[s] = function() {
+  O[o] = function() {
     return this
   };
   var v = Object.getPrototypeOf,
     A = v && v(v(D([])));
-  A && A !== r && i.call(A, s) && (O = A);
+  A && A !== r && i.call(A, o) && (O = A);
   var I = b.prototype = E.prototype = Object.create(O);
 
   function S(e) {
@@ -64,20 +64,20 @@
   function T(e) {
     var t;
 
-    function n(t, r, a, s) {
-      var o = f(e[t], e, r);
-      if ("throw" === o.type) s(o.arg);
+    function n(t, r, a, o) {
+      var s = f(e[t], e, r);
+      if ("throw" === s.type) o(s.arg);
       else {
-        var l = o.arg,
+        var l = s.arg,
           c = l.value;
         return c && "object" == typeof c && i.call(c, "__await") ? Promise.resolve(c.__await).then(function(e) {
-          n("next", e, a, s)
+          n("next", e, a, o)
         }, function(e) {
-          n("throw", e, a, s)
+          n("throw", e, a, o)
         }) : Promise.resolve(c).then(function(e) {
           l.value = e, a(l)
         }, function(e) {
-          return n("throw", e, a, s)
+          return n("throw", e, a, o)
         })
       }
     }
@@ -99,15 +99,15 @@
       if (r === h) throw Error("Generator is already running");
       if (r === m) {
         if ("throw" === i) throw a;
-        return x()
+        return L()
       }
       for (n.method = i, n.arg = a;;) {
-        var s = n.delegate;
-        if (s) {
-          var o = N(s, n);
-          if (o) {
-            if (o === g) continue;
-            return o
+        var o = n.delegate;
+        if (o) {
+          var s = N(o, n);
+          if (s) {
+            if (s === g) continue;
+            return s
           }
         }
         if ("next" === n.method) n.sent = n._sent = n.arg;
@@ -164,7 +164,7 @@
 
   function D(e) {
     if (e) {
-      var t = e[s];
+      var t = e[o];
       if (t) return t.call(e);
       if ("function" == typeof e.next) return e;
       if (!isNaN(e.length)) {
@@ -178,11 +178,11 @@
       }
     }
     return {
-      next: x
+      next: L
     }
   }
 
-  function x() {
+  function L() {
     return {
       value: n,
       done: true
@@ -197,14 +197,14 @@
     return {
       __await: e
     }
-  }, S(T.prototype), T.prototype[o] = function() {
+  }, S(T.prototype), T.prototype[s] = function() {
     return this
   }, u.AsyncIterator = T, u.async = function(e, t, n, r) {
     var i = new T(d(e, t, n, r));
     return u.isGeneratorFunction(t) ? i : i.next().then(function(e) {
       return e.done ? e.value : i.next()
     })
-  }, S(I), I[l] = "Generator", I[s] = function() {
+  }, S(I), I[l] = "Generator", I[o] = function() {
     return this
   }, I.toString = function() {
     return "[object Generator]"
@@ -236,22 +236,22 @@
       var t = this;
 
       function r(r, i) {
-        return o.type = "throw", o.arg = e, t.next = r, i && (t.method = "next", t.arg = n), !!i
+        return s.type = "throw", s.arg = e, t.next = r, i && (t.method = "next", t.arg = n), !!i
       }
       for (var a = this.tryEntries.length - 1; a >= 0; --a) {
-        var s = this.tryEntries[a],
-          o = s.completion;
-        if ("root" === s.tryLoc) return r("end");
-        if (s.tryLoc <= this.prev) {
-          var l = i.call(s, "catchLoc"),
-            c = i.call(s, "finallyLoc");
+        var o = this.tryEntries[a],
+          s = o.completion;
+        if ("root" === o.tryLoc) return r("end");
+        if (o.tryLoc <= this.prev) {
+          var l = i.call(o, "catchLoc"),
+            c = i.call(o, "finallyLoc");
           if (l && c) {
-            if (this.prev < s.catchLoc) return r(s.catchLoc, true);
-            else if (this.prev < s.finallyLoc) return r(s.finallyLoc)
+            if (this.prev < o.catchLoc) return r(o.catchLoc, true);
+            else if (this.prev < o.finallyLoc) return r(o.finallyLoc)
           } else if (l) {
-            if (this.prev < s.catchLoc) return r(s.catchLoc, true)
+            if (this.prev < o.catchLoc) return r(o.catchLoc, true)
           } else if (c) {
-            if (this.prev < s.finallyLoc) return r(s.finallyLoc)
+            if (this.prev < o.finallyLoc) return r(o.finallyLoc)
           } else throw Error("try statement without catch or finally")
         }
       }
@@ -265,8 +265,8 @@
         }
       }
       a && ("break" === e || "continue" === e) && a.tryLoc <= t && t <= a.finallyLoc && (a = null);
-      var s = a ? a.completion : {};
-      return (s.type = e, s.arg = t, a) ? (this.method = "next", this.next = a.finallyLoc, g) : this.complete(s)
+      var o = a ? a.completion : {};
+      return (o.type = e, o.arg = t, a) ? (this.method = "next", this.next = a.finallyLoc, g) : this.complete(o)
     },
     complete: function(e, t) {
       if ("throw" === e.type) throw e.arg;

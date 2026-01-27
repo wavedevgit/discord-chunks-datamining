@@ -31,7 +31,7 @@ function p() {
 class _ extends(r = Chunk311907.Ay.Store) {
   initialize() {
     let e = a.w.get(u);
-    null != e && (d = e.enabled, f = new Set(e.learnedWords), (0, l.kv)(d), (0, l.d1)(f)), (0, o.I)(l.Av)
+    null != e && (d = e.enabled, f = new Set(e.learnedWords), (0, l.kv)(d), (0, l.d1)(f)), (0, s.I)(l.Av)
   }
   isEnabled() {
     return d

@@ -32,25 +32,25 @@ function _() {
   return new Promise((e, t) => {
     let n = 5e3,
       r = Date.now(),
-      s = () => {
-        Date.now() - r >= n ? t(Error("Timeout waiting for Braintree client to be initialized in store")) : null != a.A.getClient() ? e() : setTimeout(s, 1e3)
-      },
       o = () => {
-        i.h.unsubscribe("BRAINTREE_CREATE_CLIENT_SUCCESS", o), setTimeout(s, 0)
+        Date.now() - r >= n ? t(Error("Timeout waiting for Braintree client to be initialized in store")) : null != a.A.getClient() ? e() : setTimeout(o, 1e3)
+      },
+      s = () => {
+        i.h.unsubscribe("BRAINTREE_CREATE_CLIENT_SUCCESS", s), setTimeout(o, 0)
       };
-    i.h.subscribe("BRAINTREE_CREATE_CLIENT_SUCCESS", o)
+    i.h.subscribe("BRAINTREE_CREATE_CLIENT_SUCCESS", s)
   })
 }
 
 function h() {
-  (0, o.j)().then(e => {
+  (0, s.j)().then(e => {
     e.client.create({
       authorization: u.Gg3.BRAINTREE.KEY
     }).then(e => {
       _().then(() => {
         g(), m()
       }).catch(e => {
-        s.pM(e)
+        o.pM(e)
       }), i.h.dispatch({
         type: "BRAINTREE_CREATE_CLIENT_SUCCESS",
         client: e
@@ -64,7 +64,7 @@ function h() {
 function m() {
   let e = a.A.getClient();
   if (null == e) throw Error("Braintree client must be initialized before creating Venmo client.");
-  (0, o.j)().then(t => {
+  (0, s.j)().then(t => {
     t.venmo.create({
       client: e,
       allowDesktop: true,
@@ -85,7 +85,7 @@ function m() {
 function g() {
   let e = a.A.getClient();
   if (null == e) throw Error("braintree client must be initialized before calling this");
-  (0, o.j)().then(t => {
+  (0, s.j)().then(t => {
     t.paypal.create({
       client: e
     }).then(e => {
@@ -160,7 +160,7 @@ function E() {
       type: "BRAINTREE_TOKENIZE_PAYPAL_FAIL",
       message: t,
       code: n
-    }), s.pM(Error("Braintree Paypal Error: ".concat(t, " ").concat(n, " ").concat(r))))
+    }), o.pM(Error("Braintree Paypal Error: ".concat(t, " ").concat(n, " ").concat(r))))
   })
 }
 
@@ -190,7 +190,7 @@ function y() {
       type: "BRAINTREE_TOKENIZE_VENMO_FAIL",
       message: t,
       code: n
-    }), s.pM(Error("Braintree Venmo Error: ".concat(t, " ").concat(n, " ").concat(r))))
+    }), o.pM(Error("Braintree Venmo Error: ".concat(t, " ").concat(n, " ").concat(r))))
   })
 }
 

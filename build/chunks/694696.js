@@ -10,8 +10,8 @@ module.exports = function(e) {
     r = "decltype\\(auto\\)",
     i = "[a-zA-Z_]\\w*::",
     a = "<[^<>]+>",
-    s = "(" + r + "|" + t.optional(i) + "[a-zA-Z_]\\w*" + t.optional(a) + ")",
-    o = {
+    o = "(" + r + "|" + t.optional(i) + "[a-zA-Z_]\\w*" + t.optional(a) + ")",
+    s = {
       className: "type",
       variants: [{
         begin: "\\b[a-z\\d_]*_t\\b"
@@ -78,7 +78,7 @@ module.exports = function(e) {
       literal: "true false NULL",
       built_in: "std string wstring cin cout cerr clog stdin stdout stderr stringstream istringstream ostringstream auto_ptr deque list queue stack vector map set pair bitset multiset multimap unordered_set unordered_map unordered_multiset unordered_multimap priority_queue make_pair array shared_ptr abort terminate abs acos asin atan2 atan calloc ceil cosh cos exit exp fabs floor fmod fprintf fputs free frexp fscanf future isalnum isalpha iscntrl isdigit isgraph islower isprint ispunct isspace isupper isxdigit tolower toupper labs ldexp log10 log malloc realloc memchr memcmp memcpy memset modf pow printf putchar puts scanf sinh sin snprintf sprintf sqrt sscanf strcat strchr strcmp strcpy strcspn strlen strncat strncmp strncpy strpbrk strrchr strspn strstr tanh tan vfprintf vprintf vsprintf endl initializer_list unique_ptr"
     },
-    h = [d, o, n, e.C_BLOCK_COMMENT_MODE, u, c],
+    h = [d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
     m = {
       variants: [{
         begin: /=/,
@@ -101,7 +101,7 @@ module.exports = function(e) {
       relevance: 0
     },
     g = {
-      begin: "(" + s + "[\\*&\\s]+)+" + p,
+      begin: "(" + o + "[\\*&\\s]+)+" + p,
       returnBegin: true,
       end: /[{;=]/,
       excludeEnd: true,
@@ -127,14 +127,14 @@ module.exports = function(e) {
         end: /\)/,
         keywords: _,
         relevance: 0,
-        contains: [n, e.C_BLOCK_COMMENT_MODE, c, u, o, {
+        contains: [n, e.C_BLOCK_COMMENT_MODE, c, u, s, {
           begin: /\(/,
           end: /\)/,
           keywords: _,
           relevance: 0,
-          contains: ["self", n, e.C_BLOCK_COMMENT_MODE, c, u, o]
+          contains: ["self", n, e.C_BLOCK_COMMENT_MODE, c, u, s]
         }]
-      }, o, n, e.C_BLOCK_COMMENT_MODE, d]
+      }, s, n, e.C_BLOCK_COMMENT_MODE, d]
     };
   return {
     name: "C",

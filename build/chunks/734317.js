@@ -2,7 +2,7 @@
 /** chunk id: 734317, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => s,
+  default: () => o,
   messagesLoader: () => i
 });
 let {
@@ -41,4 +41,4 @@ let {
   "en-US": () => n.e("21627").then(n.bind(n, 776758))
 }, "en-US"), {
   makeMessagesProxy: a
-} = require("./932433.js"), s = a(i)
+} = require("./932433.js"), o = a(i)

@@ -15,7 +15,7 @@ function l(e) {
     beginDrag: (0, r.S)(e),
     publishDragSource: (0, i.n)(e),
     hover: (0, a.p)(e),
-    drop: (0, s.q)(e),
-    endDrag: (0, o.K)(e)
+    drop: (0, o.q)(e),
+    endDrag: (0, s.K)(e)
   }
 }

@@ -86,7 +86,7 @@ function O(e) {
     trackEntryPointImpression: true,
     sourceUserId: O.author_id
   });
-  return (0, r.jsx)(s.YNO, {
+  return (0, r.jsx)(o.YNO, {
     targetElementRef: I,
     align: "top",
     position: "right",
@@ -95,24 +95,24 @@ function O(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(s.W1t, {
+      return (0, r.jsx)(o.W1t, {
         "data-menu-mixed": true,
         navId: b,
         onClose: () => {
-          (0, o.Z_)(), t()
+          (0, s.Z_)(), t()
         },
         "aria-label": _.intl.string(_.t.liqwPJ),
         onSelect: v,
         children: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsxs)(s.rXV, {
-            children: [T, null != P && (0, r.jsx)(s.Drp, {
+          children: [(0, r.jsxs)(o.rXV, {
+            children: [T, null != P && (0, r.jsx)(o.Drp, {
               id: "game-profile",
               label: _.intl.string(_.t.f7aVGn),
               action: e => {
                 P(e), null == S || S()
               }
             })]
-          }), (0, r.jsxs)(s.rXV, {
+          }), (0, r.jsxs)(o.rXV, {
             children: [C, w]
           })]
         })
@@ -121,11 +121,11 @@ function O(e) {
     children: e => (0, r.jsx)(a.m, {
       asContainer: true,
       text: _.intl.string(_.t["UKOtz+"]),
-      children: (0, r.jsx)(s.DUT, y(g({
+      children: (0, r.jsx)(o.DUT, y(g({
         innerRef: I,
         className: h.r
       }, e), {
-        children: (0, r.jsx)(s.jNK, {
+        children: (0, r.jsx)(o.jNK, {
           color: "currentColor",
           size: "custom",
           width: 16,

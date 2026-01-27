@@ -8,11 +8,11 @@ var Chunk496092 = require("./496092.js");
 function r(e, t, n, r) {
   let {
     scheduled_start_time: i,
-    scheduled_end_time: u
+    scheduled_end_time: o
   } = e;
-  return null == i && null == u ? l.A.deleteGuildEventException(t, n, r) : l.A.updateGuildEventException({
+  return null == i && null == o ? l.A.deleteGuildEventException(t, n, r) : l.A.updateGuildEventException({
     scheduled_start_time: i,
-    scheduled_end_time: u,
+    scheduled_end_time: o,
     is_canceled: false
   }, t, n, r)
 }

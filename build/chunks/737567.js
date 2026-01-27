@@ -1,9 +1,9 @@
 /** Chunk was on 42978 **/
-/** chunk id: 737567, original params: e,t,n (module,exports,require) **/
+/** chunk id: 737567, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  I: () => s
+  I: () => o
 });
-let i = (0, require("./945810.js").mj)({
+let n = (0, require("./945810.js").mj)({
     kind: "user",
     name: "2025-11-hide-manual-link",
     defaultConfig: {
@@ -15,6 +15,6 @@ let i = (0, require("./945810.js").mj)({
       }
     }
   }),
-  s = e => i.useConfig({
+  o = e => n.useConfig({
     location: e
   }).isHidden

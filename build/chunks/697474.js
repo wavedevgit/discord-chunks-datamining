@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 697474, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-
-function r(e, t) {
-  return null != t && !!e.mentions.includes(t.author.id)
-}
+/** Chunk was on 94857 **/
+/** chunk id: 697474, original params: e,s,t (module,exports,require) **/
 require.d(exports, {
-  A: () => r
-})
+  A: () => n
+});
+
+function n(e, s) {
+  return null != s && !!e.mentions.includes(s.author.id)
+}

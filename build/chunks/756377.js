@@ -4,8 +4,8 @@
 require.d(exports, {
   Dd: () => a,
   Yf: () => i,
-  iz: () => s,
-  x6: () => o
+  iz: () => o,
+  x6: () => s
 });
 var Chunk141468 = require("./141468.js"),
   i = function(e) {
@@ -27,14 +27,14 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   return {
     message: null != e.message ? (0, r.rh)(e.message) : null,
     saveData: a(e.save_data)
   }
 }
 
-function o(e) {
+function s(e) {
   return {
     channelId: e.channel_id,
     messageId: e.message_id

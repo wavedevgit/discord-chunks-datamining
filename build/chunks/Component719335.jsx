@@ -1,7 +1,7 @@
-/** Chunk was on 94073 **/
+/** Chunk was on 87916 **/
 /** chunk id: 719335, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => N
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,24 +20,24 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk560207 = require("./560207.js");
 
-function g(e) {
+function N(e) {
   let {
     analyticsSection: t,
     type: n
-  } = e, g = (0, o.bG)([_.default], () => _.default.getCurrentUser()), x = f.Ay.canUseAnimatedAvatar(g), v = f.Ay.canUsePremiumProfileCustomization(g), E = n === b.HL.BANNER && v || n === b.HL.AVATAR && x, {
-    sourceAnalyticsLocations: L
-  } = (0, s.Ay)(l.A.PREMIUM_PREVIEW_UPSELL_HEADER);
-  if (a.useEffect(() => {
-      E || d.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
+  } = e, N = (0, l.bG)([u.default], () => u.default.getCurrentUser()), b = A.Ay.canUseAnimatedAvatar(N), h = A.Ay.canUsePremiumProfileCustomization(N), y = n === g.HL.BANNER && h || n === g.HL.AVATAR && b, {
+    sourceAnalyticsLocations: E
+  } = (0, o.Ay)(s.A.PREMIUM_PREVIEW_UPSELL_HEADER);
+  if (i.useEffect(() => {
+      y || _.default.track(f.HAw.PREMIUM_UPSELL_VIEWED, {
         type: t,
-        location_stack: L
+        location_stack: E
       })
-    }, [E, t, L]), E) return null;
-  let N = (0, r.jsx)(c.A, {
-    className: y.__invalid_getNitroLink,
-    size: i.$n.Sizes.SMALL,
-    look: i.$n.Looks.LINK,
-    color: i.$n.Colors.LINK,
+    }, [y, t, E]), y) return null;
+  let R = (0, a.jsx)(c.A, {
+    className: x.__invalid_getNitroLink,
+    size: r.$n.Sizes.SMALL,
+    look: r.$n.Looks.LINK,
+    color: r.$n.Colors.LINK,
     subscriptionTier: m.pe.TIER_2,
     textOptions: {
       textOverride: p.intl.format(p.t["944tDv"], {})
@@ -45,14 +45,14 @@ function g(e) {
     showIcon: false,
     premiumModalAnalyticsLocation: {
       section: t,
-      object: A.ZSU.BUTTON_CTA
+      object: f.ZSU.BUTTON_CTA
     },
     disableShine: true
   });
-  return (0, r.jsx)(u.A, {
+  return (0, a.jsx)(d.A, {
     reducedRightPadding: true,
-    className: y.C,
+    className: x.C,
     text: p.intl.format(p.t.Og803x, {}),
-    button: N
+    button: R
   })
 }

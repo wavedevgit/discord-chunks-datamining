@@ -16,17 +16,17 @@ let c = e => {
       subscriptionTier: n,
       trialDurationCopy: i,
       isPersistentCTA: a,
-      shouldShowReferralTrialCopy: s,
+      shouldShowReferralTrialCopy: o,
       subscriptionTrial: c
     } = e;
-    return t && s ? l.intl.string(l.t.bXTClc) : t && (n === o.pe.TIER_2 || a) ? (0, r.FY)({
+    return t && o ? l.intl.string(l.t.bXTClc) : t && (n === s.pe.TIER_2 || a) ? (0, r.FY)({
       intervalType: null == c ? true : c.interval,
       intervalCount: null == c ? true : c.interval_count
     }) : t ? l.intl.formatToPlainString(l.t.nTmm2v, {
       freeTrialText: i
     }) : true
   },
-  u = (e, t, n, r) => t || n ? l.intl.string(l.t.fkPGat) : e === o.pe.TIER_2 ? l.intl.formatToPlainString(l.t.bkQ4bH, {
+  u = (e, t, n, r) => t || n ? l.intl.string(l.t.fkPGat) : e === s.pe.TIER_2 ? l.intl.formatToPlainString(l.t.bkQ4bH, {
     percent: r
   }) : true,
   d = e => {
@@ -36,10 +36,10 @@ let c = e => {
       hasActivePromotion: f = false,
       useShorterCTA: p = false,
       isPersistentCTA: _ = false
-    } = e, h = (0, a.V)(), m = null == h ? true : h.subscription_trial, g = (0, i.O)(), E = (0, s.U9)(g, o.pe.TIER_2) ? o.pe.TIER_2 : true, y = (0, r.tS)({
+    } = e, h = (0, a.V)(), m = null == h ? true : h.subscription_trial, g = (0, i.O)(), E = (0, o.U9)(g, s.pe.TIER_2) ? s.pe.TIER_2 : true, y = (0, r.tS)({
       intervalType: null == m ? true : m.interval,
       intervalCount: null == m ? true : m.interval_count
-    }), b = null != (t = null != d ? d : null == h || null == (n = h.subscription_trial) ? true : n.sku_id) ? t : E, O = null != m && b === m.sku_id, v = (null == h ? true : h.trial_id) === o.Dw;
+    }), b = null != (t = null != d ? d : null == h || null == (n = h.subscription_trial) ? true : n.sku_id) ? t : E, O = null != m && b === m.sku_id, v = (null == h ? true : h.trial_id) === s.Dw;
     return {
       buttonText: f ? l.intl.string(l.t.J61px0) : null != g ? u(b, p, _, g.discount.amount) : c({
         showTrialCTA: O,

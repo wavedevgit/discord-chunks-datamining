@@ -7,13 +7,13 @@ require.d(exports, {
 var r = 'input:not([inert]),select:not([inert]),textarea:not([inert]),a[href]:not([inert]),button:not([inert]),[tabindex]:not(slot):not([inert]),audio[controls]:not([inert]),video[controls]:not([inert]),[contenteditable]:not([contenteditable="false"]):not([inert]),details>summary:first-of-type:not([inert]),details:not([inert])',
   i = "u" < typeof Element,
   a = i ? function() {} : Element.prototype.matches || Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector,
-  s = !i && Element.prototype.getRootNode ? function(e) {
+  o = !i && Element.prototype.getRootNode ? function(e) {
     var t;
     return null == e || null == (t = e.getRootNode) ? true : t.call(e)
   } : function(e) {
     return null == e ? true : e.ownerDocument
   },
-  o = function e(t, n) {
+  s = function e(t, n) {
     true === n && (n = true);
     var r, i = null == t || null == (r = t.getAttribute) ? true : r.call(t, "inert");
     return "" === i || "true" === i || n && t && e(t.parentNode)
@@ -23,35 +23,35 @@ var r = 'input:not([inert]),select:not([inert]),textarea:not([inert]),a[href]:no
     return "" === n || "true" === n
   },
   c = function(e, t, n) {
-    if (o(e)) return [];
+    if (s(e)) return [];
     var i = Array.prototype.slice.apply(e.querySelectorAll(r));
     return t && a.call(e, r) && i.unshift(e), i = i.filter(n)
   },
   u = function e(t, n, i) {
-    for (var s = [], l = Array.from(t); l.length;) {
+    for (var o = [], l = Array.from(t); l.length;) {
       var c = l.shift();
-      if (!o(c, false))
+      if (!s(c, false))
         if ("SLOT" === c.tagName) {
           var u = c.assignedElements(),
             d = e(u.length ? u : c.children, true, i);
-          i.flatten ? s.push.apply(s, d) : s.push({
+          i.flatten ? o.push.apply(o, d) : o.push({
             scopeParent: c,
             candidates: d
           })
         } else {
-          a.call(c, r) && i.filter(c) && (n || !t.includes(c)) && s.push(c);
+          a.call(c, r) && i.filter(c) && (n || !t.includes(c)) && o.push(c);
           var f = c.shadowRoot || "function" == typeof i.getShadowRoot && i.getShadowRoot(c),
-            p = !o(f, false) && (!i.shadowRootFilter || i.shadowRootFilter(c));
+            p = !s(f, false) && (!i.shadowRootFilter || i.shadowRootFilter(c));
           if (f && p) {
             var _ = e(true === f ? c.children : f.children, true, i);
-            i.flatten ? s.push.apply(s, _) : s.push({
+            i.flatten ? o.push.apply(o, _) : o.push({
               scopeParent: c,
               candidates: _
             })
           } else l.unshift.apply(l, c.children)
         }
     }
-    return s
+    return o
   },
   d = function(e) {
     return !isNaN(parseInt(e.getAttribute("tabindex"), 10))
@@ -84,7 +84,7 @@ var r = 'input:not([inert]),select:not([inert]),textarea:not([inert]),a[href]:no
   },
   y = function(e) {
     if (!e.name) returntrue;
-    var t, n = e.form || s(e),
+    var t, n = e.form || o(e),
       r = function(e) {
         return n.querySelectorAll('input[type="radio"][name="' + e + '"]')
       };
@@ -104,11 +104,11 @@ var r = 'input:not([inert]),select:not([inert]),textarea:not([inert]),a[href]:no
     return b(e) && !y(e)
   },
   v = function(e) {
-    var t, n, r, i, a, o, l, c = e && s(e),
+    var t, n, r, i, a, s, l, c = e && o(e),
       u = null == (t = c) ? true : t.host,
       d = false;
     if (c && c !== e)
-      for (d = !!(null != (n = u) && null != (r = n.ownerDocument) && r.contains(u) || null != e && null != (i = e.ownerDocument) && i.contains(e)); !d && u;) d = !!(null != (o = u = null == (a = c = s(u)) ? true : a.host) && null != (l = o.ownerDocument) && l.contains(u));
+      for (d = !!(null != (n = u) && null != (r = n.ownerDocument) && r.contains(u) || null != e && null != (i = e.ownerDocument) && i.contains(e)); !d && u;) d = !!(null != (s = u = null == (a = c = o(u)) ? true : a.host) && null != (l = s.ownerDocument) && l.contains(u));
     return d
   },
   A = function(e) {
@@ -127,13 +127,13 @@ var r = 'input:not([inert]),select:not([inert]),textarea:not([inert]),a[href]:no
       if ("non-zero-area" === n) return A(e)
     } else {
       if ("function" == typeof r) {
-        for (var o = e; e;) {
+        for (var s = e; e;) {
           var l = e.parentElement,
-            c = s(e);
+            c = o(e);
           if (l && !l.shadowRoot && true === r(l)) return A(e);
           e = e.assignedSlot ? e.assignedSlot : l || c === e.ownerDocument ? l : c.host
         }
-        e = o
+        e = s
       }
       if (v(e)) return !e.getClientRects().length;
       if ("legacy-full" !== n) returntrue
@@ -155,7 +155,7 @@ var r = 'input:not([inert]),select:not([inert]),textarea:not([inert]),a[href]:no
     returnfalse
   },
   T = function(e, t) {
-    return !(t.disabled || o(t) || m(t) || I(t, e) || g(t) || S(t))
+    return !(t.disabled || s(t) || m(t) || I(t, e) || g(t) || S(t))
   },
   C = function(e, t) {
     return !(O(t) || 0 > f(t)) && !!T(e, t)
@@ -169,12 +169,12 @@ var r = 'input:not([inert]),select:not([inert]),textarea:not([inert]),a[href]:no
       r = [];
     return t.forEach(function(t, i) {
       var a = !!t.scopeParent,
-        s = a ? t.scopeParent : t,
-        o = p(s, a),
-        l = a ? e(t.candidates) : s;
-      0 === o ? a ? n.push.apply(n, l) : n.push(s) : r.push({
+        o = a ? t.scopeParent : t,
+        s = p(o, a),
+        l = a ? e(t.candidates) : o;
+      0 === s ? a ? n.push.apply(n, l) : n.push(o) : r.push({
         documentOrder: i,
-        tabIndex: o,
+        tabIndex: s,
         item: t,
         isScope: a,
         content: l

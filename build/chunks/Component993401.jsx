@@ -96,15 +96,15 @@ function E(e) {
     onClick: n,
     variant: i = "secondary",
     size: a = "sm"
-  } = e, s = h(e, ["action", "onClick", "variant", "size"]), o = g({
+  } = e, o = h(e, ["action", "onClick", "variant", "size"]), s = g({
     action: t,
     onClick: n
   });
   return (0, r.jsx)(l.Button, f({
-    onClick: o,
+    onClick: s,
     variant: i,
     size: a
-  }, s))
+  }, o))
 }
 
 function y(e) {
@@ -113,7 +113,7 @@ function y(e) {
     onClick: n,
     variant: i = "secondary",
     size: a = "sm",
-    "aria-label": o,
+    "aria-label": s,
     tooltipText: c,
     __unsupportedReactNodeAsText: u,
     tooltipPosition: d,
@@ -123,7 +123,7 @@ function y(e) {
     action: t,
     onClick: n
   });
-  return (0, r.jsx)(s.m, {
+  return (0, r.jsx)(o.m, {
     asContainer: true,
     targetElementRef: _,
     text: c,
@@ -134,7 +134,7 @@ function y(e) {
       onClick: E,
       variant: i,
       size: a,
-      "aria-label": null != o ? o : c
+      "aria-label": null != s ? s : c
     }, m))
   })
 }
@@ -157,13 +157,13 @@ function b(e) {
     action: p,
     onClick: m
   });
-  return (0, r.jsx)(s.m, {
+  return (0, r.jsx)(o.m, {
     asContainer: true,
     text: n,
     __unsupportedReactNodeAsText: i,
     position: l,
     align: c,
-    children: (0, r.jsx)(o.DUT, _(f({
+    children: (0, r.jsx)(s.DUT, _(f({
       innerRef: E,
       className: a()(u.X, {
         [u.r]: y

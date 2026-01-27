@@ -19,7 +19,7 @@ function u(e, t) {
     action: () => (0, i.mMO)(async () => {
       let {
         default: c
-      } = await Promise.all([n.e("72271"), n.e("64233"), n.e("7211")]).then(n.bind(n, 409200));
+      } = await Promise.all([n.e("72271"), n.e("64233"), n.e("29592")]).then(n.bind(n, 409200));
       return n => {
         var i, l;
         return (0, r.jsx)(c, (i = function(e) {

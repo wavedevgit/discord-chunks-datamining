@@ -29,7 +29,7 @@ function p(e) {
     targetElementRef: b
   } = e, [O, v] = i.useState(false), {
     analyticsLocations: A
-  } = (0, o.Ay)(s.A.USER_PROFILE_ACTIVITY_CONTEXT_MENU), I = (0, c.A)({
+  } = (0, s.Ay)(o.A.USER_PROFILE_ACTIVITY_CONTEXT_MENU), I = (0, c.A)({
     display: m,
     user: p,
     activity: _,

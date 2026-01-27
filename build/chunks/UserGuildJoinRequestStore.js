@@ -75,7 +75,7 @@ function y(e) {
   } = e;
   if (null == n) return;
   let r = h(n),
-    i = s.default.getCurrentUser();
+    i = o.default.getCurrentUser();
   if (null != i && r.userId !== i.id) returnfalse;
   (0, l.NK)(r) ? m(t): d[t] = r
 }
@@ -110,15 +110,15 @@ function v(e) {
       id: t,
       name: i,
       icon: a,
-      features: s,
-      splash: o
+      features: o,
+      splash: s
     } = n;
     p[t] = {
       id: t,
       name: i,
       icon: a,
-      features: null != s ? s : [],
-      splash: o
+      features: null != o ? o : [],
+      splash: s
     }
   }
 }
@@ -164,14 +164,14 @@ function S(e) {
       name: r,
       icon: i,
       features: a,
-      splash: s
+      splash: o
     } = t.guild;
     p[n] = {
       id: e,
       name: r,
       icon: i,
       features: null != a ? a : [],
-      splash: s
+      splash: o
     }
   }
 }
@@ -195,7 +195,7 @@ function N() {
 }
 class w extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.default)
+    this.waitFor(o.default)
   }
   getRequest(e) {
     return d[e]
@@ -204,7 +204,7 @@ class w extends(r = Chunk311907.Ay.Store) {
     return Object.values(d).map(e => null == e ? true : e.guildId).filter(e => null != e)
   }
   getJoinRequestGuild(e) {
-    return null != p[e] ? (0, o.yF)(p[e]) : null
+    return null != p[e] ? (0, s.yF)(p[e]) : null
   }
   get hasFetchedRequestToJoinGuilds() {
     return f

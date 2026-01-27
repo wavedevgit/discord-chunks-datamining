@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk158954 = require("./158954.js"),
   Chunk863610 = require("./863610.jsx"),
@@ -97,12 +97,12 @@ function N(e) {
     size: t,
     isMobile: n,
     isTyping: i
-  } = e, a = I(e, ["size", "isMobile", "isTyping"]), s = (0, g.Kj)(t), o = s.status * (n && !i ? g.jo : 1), l = s.status * (i ? g.x : 1), c = i ? (s.status * g.x - s.status) / 2 : 0, u = s.size - s.status - c - s.offset, d = s.size - o - s.offset;
+  } = e, a = I(e, ["size", "isMobile", "isTyping"]), o = (0, g.Kj)(t), s = o.status * (n && !i ? g.jo : 1), l = o.status * (i ? g.x : 1), c = i ? (o.status * g.x - o.status) / 2 : 0, u = o.size - o.status - c - o.offset, d = o.size - s - o.offset;
   return (0, r.jsx)("rect", O({
     x: u,
     y: d,
     width: l,
-    height: o,
+    height: s,
     fill: "transparent",
     "aria-hidden": true
   }, a))
@@ -292,31 +292,31 @@ function D(e, t, n) {
   })
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   let {
     size: r,
     status: i,
     stroke: a,
-    offset: s
-  } = e, o = n ? i * g.x : i, l = (o - i) / 2, c = t ? i * g.jo : i;
+    offset: o
+  } = e, s = n ? i * g.x : i, l = (s - i) / 2, c = t ? i * g.jo : i;
   return {
-    avatarCutoutX: r - o + l - a - s,
-    avatarCutoutY: r - c - a - s,
-    avatarCutoutWidth: o + 2 * a,
+    avatarCutoutX: r - s + l - a - o,
+    avatarCutoutY: r - c - a - o,
+    avatarCutoutWidth: s + 2 * a,
     avatarCutoutHeight: c + 2 * a,
     avatarCutoutRadius: t ? (c + 2 * a) * g.hn : (i + 2 * a) / 2
   }
 }
 
-function L(e, t, n, i) {
+function x(e, t, n, i) {
   let a = D(n, i, t, false),
-    s = (0, u.yi)(i, e);
+    o = (0, u.yi)(i, e);
   if (!t) {
     let t = a.height / 2 + n.stroke,
       i = a.x + n.status / 2;
     return (0, r.jsx)("circle", {
       style: {
-        opacity: s
+        opacity: o
       },
       fill: e,
       r: t,
@@ -324,34 +324,34 @@ function L(e, t, n, i) {
       cy: i
     })
   }
-  let o = a.height + 2 * n.stroke,
+  let s = a.height + 2 * n.stroke,
     l = a.width + 2 * n.stroke,
     c = a.x - n.stroke,
     d = a.y - n.stroke;
   return (0, r.jsx)("rect", {
     fill: e,
-    height: o,
+    height: s,
     width: l,
     style: {
-      opacity: s
+      opacity: o
     },
     x: c,
     y: d,
     rx: n.stroke
   })
 }
-let j = {
+let M = {
   "\uD83D\uDD25": "M3 14a9 9 0 1 0 18 0c0-2.63-.61-5.22-1.79-7.58L18.2 4.38a.7.7 0 0 0-1.3.18l-.78 3.9a.66.66 0 0 1-1.27.11L12.22 1.6a.9.9 0 0 0-1.48-.33l-4.2 4.2A12.07 12.07 0 0 0 3 14Zm9.26-.84a.57.57 0 0 0-1-.23L9.6 15a3.08 3.08 0 1 0 5.12.48c-.14-.26-.5-.28-.71-.06L13 16.5l-.74-3.34Z"
 };
 
-function M(e, t, n, i, a) {
-  let s = j[i];
-  if (null != s) {
+function j(e, t, n, i, a) {
+  let o = M[i];
+  if (null != o) {
     let i = n / 20;
     return (0, r.jsx)("g", {
       transform: "translate(".concat(e - 1, ", ").concat(t - 1, ") scale(").concat(i, ")"),
       children: (0, r.jsx)("path", {
-        d: s,
+        d: o,
         fill: "black",
         stroke: "black",
         strokeWidth: "10",
@@ -360,14 +360,14 @@ function M(e, t, n, i, a) {
       })
     })
   }
-  let o = x(a, false, false);
+  let s = L(a, false, false);
   return (0, r.jsx)("rect", {
-    x: o.avatarCutoutX,
+    x: s.avatarCutoutX,
     y: 0 - a.stroke,
-    width: o.avatarCutoutWidth,
-    height: o.avatarCutoutHeight,
-    rx: o.avatarCutoutRadius - 1,
-    ry: o.avatarCutoutRadius - 1,
+    width: s.avatarCutoutWidth,
+    height: s.avatarCutoutHeight,
+    rx: s.avatarCutoutRadius - 1,
+    ry: s.avatarCutoutRadius - 1,
     fill: "black"
   })
 }
@@ -375,9 +375,9 @@ function M(e, t, n, i, a) {
 function k(e, t, n, i) {
   let {
     status: a,
-    isMobile: s,
-    isTyping: o
-  } = n, l = t.size - t.status - t.offset, c = t.offset, u = x(t, s, o);
+    isMobile: o,
+    isTyping: s
+  } = n, l = t.size - t.status - t.offset, c = t.offset, u = L(t, o, s);
   return (0, r.jsxs)("mask", {
     id: e,
     width: t.size,
@@ -395,7 +395,7 @@ function k(e, t, n, i) {
       rx: u.avatarCutoutRadius,
       ry: u.avatarCutoutRadius,
       fill: "black"
-    }), null != i && M(l, c, t.status, i, t)]
+    }), null != i && j(l, c, t.status, i, t)]
   })
 }
 
@@ -425,11 +425,11 @@ function G(e) {
     i = arguments.length > 3 ? arguments[3] : true,
     a = arguments.length > 4 ? arguments[4] : true,
     {
-      avatarTooltipTitle: s,
-      avatarTooltipText: o
+      avatarTooltipTitle: o,
+      avatarTooltipText: s
     } = i,
     l = e.size - e.status - e.offset - e.stroke,
-    c = x(e, t, n),
+    c = L(e, t, n),
     u = l,
     f = 0,
     p = c.avatarCutoutWidth,
@@ -451,22 +451,22 @@ function G(e) {
         className: y.Hs
       })]
     });
-  return null == o ? (0, r.jsx)(d.m_, {
-    text: s,
+  return null == s ? (0, r.jsx)(d.m_, {
+    text: o,
     align: "center",
     position: "top",
     spacing: 12,
     delay: 0,
     children: h
   }) : (0, r.jsx)(d.un, {
-    title: s,
-    body: o,
+    title: o,
+    body: s,
     align: "center",
     position: "top",
     delay: 0,
     asset: (0, r.jsx)("span", {
       role: "img",
-      "aria-label": o,
+      "aria-label": s,
       className: y.mh,
       children: a
     }),
@@ -474,16 +474,16 @@ function G(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     status: t,
     isMobile: n,
     isTyping: r,
     size: i
-  } = e, a = n && !r && t === h.clD.ONLINE, s = (0, g.Kj)(i);
-  return O({}, x(s, a, r), (0, u.v)({
+  } = e, a = n && !r && t === h.clD.ONLINE, o = (0, g.Kj)(i);
+  return O({}, L(o, a, r), (0, u.v)({
     status: t,
-    size: s.status,
+    size: o.status,
     isMobile: a,
     isTyping: r,
     topOffset: 2,
@@ -491,13 +491,13 @@ function V(e) {
   }))
 }
 
-function F(e) {
+function V(e) {
   let {
     children: t,
     size: n,
     onClick: i,
     onMouseDown: a,
-    onKeyDown: o,
+    onKeyDown: s,
     onContextMenu: c,
     onMouseEnter: u,
     onMouseLeave: d,
@@ -535,20 +535,20 @@ function F(e) {
     })
   });
   return null != i || null != a ? (0, r.jsxs)(l.DUT, {
-    className: s()(y.iE, y.Wn, f),
+    className: o()(y.iE, y.Wn, f),
     style: S,
     onClick: i,
     tabIndex: p,
     onContextMenu: c,
     onMouseDown: a,
-    onKeyDown: o,
+    onKeyDown: s,
     onMouseEnter: null != u ? u : true,
     onMouseLeave: null != d ? d : true,
     "aria-label": T,
     "aria-hidden": h,
     children: [t, P]
   }) : (0, r.jsxs)("div", {
-    className: s()(y.iE, f),
+    className: o()(y.iE, f),
     style: S,
     onContextMenu: null != c ? c : true,
     onMouseEnter: null != u ? u : true,
@@ -564,7 +564,7 @@ let B = Chunk64700.forwardRef((e, t) => {
     src: n,
     isSpeaking: i,
     isLatched: a,
-    className: o,
+    className: s,
     voiceDb: l = false / 0,
     speakingStylesConfig: c
   } = e, u = (0, f.v)(O({
@@ -576,7 +576,7 @@ let B = Chunk64700.forwardRef((e, t) => {
   }, c));
   return (0, r.jsxs)("div", {
     ref: t,
-    className: s()(y.yA, o),
+    className: o()(y.yA, s),
     children: [(0, r.jsx)("img", {
       src: null != n ? n : true,
       alt: " ",
@@ -594,7 +594,7 @@ function H(e) {
     src: t,
     status: n,
     size: a,
-    statusColor: o,
+    statusColor: s,
     isMobile: l = false,
     isTyping: f = false,
     typingIndicatorRef: p,
@@ -609,35 +609,35 @@ function H(e) {
     "aria-hidden": N = false,
     "aria-label": w,
     imageClassName: R,
-    ref: x,
-    CutoutIcon: j,
-    avatarTooltipAsset: M,
-    avatarTooltipText: V,
+    ref: L,
+    CutoutIcon: M,
+    avatarTooltipAsset: j,
+    avatarTooltipText: F,
     avatarTooltipTitle: H
-  } = e, Y = n !== h.clD.UNKNOWN ? n : null, W = (0, g.Kj)(a), K = null != Y ? Math.ceil((W.status * g.x - W.status) / 2) : 0, z = W.size + K, q = (0, u.S3)(Y, o), Z = i.useId();
-  return (0, r.jsx)(F, A(O({}, e), {
+  } = e, Y = n !== h.clD.UNKNOWN ? n : null, W = (0, g.Kj)(a), K = null != Y ? Math.ceil((W.status * g.x - W.status) / 2) : 0, z = W.size + K, q = (0, u.S3)(Y, s), Z = i.useId();
+  return (0, r.jsx)(V, A(O({}, e), {
     ariaLabel: w,
     ariaHidden: N,
     status: Y,
     specs: W,
     typingOffset: K,
     children: (0, r.jsxs)("svg", {
-      ref: x,
+      ref: L,
       width: z,
       height: z,
       viewBox: "0 0 ".concat(z, " ").concat(z),
-      className: s()(y.dK, y.JW),
+      className: o()(y.dK, y.JW),
       "aria-hidden": true,
-      children: [null != M && k(Z, W, {
+      children: [null != j && k(Z, W, {
         status: Y,
         isMobile: l,
         isTyping: f
-      }, M), (0, r.jsx)("foreignObject", {
+      }, j), (0, r.jsx)("foreignObject", {
         x: 0,
         y: 0,
         width: W.size,
         height: W.size,
-        mask: null != M ? "url(#".concat(Z, ")") : "url(#".concat(P(Y, a, l, f), ")"),
+        mask: null != j ? "url(#".concat(Z, ")") : "url(#".concat(P(Y, a, l, f), ")"),
         children: (0, r.jsx)(B, {
           ref: m,
           src: t,
@@ -647,7 +647,7 @@ function H(e) {
           speakingStylesConfig: I,
           className: R
         })
-      }), null != Y && null != C ? L(C, l, W, Y) : null, null != Y ? (0, r.jsx)(d.m_, {
+      }), null != Y && null != C ? x(C, l, W, Y) : null, null != Y ? (0, r.jsx)(d.m_, {
         text: S ? (0, _.MU)(Y) : null,
         ariaHidden: true,
         position: "top",
@@ -665,10 +665,10 @@ function H(e) {
             y: W.size - W.status / 1.333 - W.offset
           }) : null]
         })
-      }) : null, null != j && U(W, j), null != H && G(W, l, f, {
+      }) : null, null != M && U(W, M), null != H && G(W, l, f, {
         avatarTooltipTitle: H,
-        avatarTooltipText: V
-      }, M)]
+        avatarTooltipText: F
+      }, j)]
     })
   }))
 }
@@ -682,10 +682,10 @@ function W(e, t, n) {
   let r = e.status * t,
     i = null != n ? (r * g.x - r) / 2 : 0,
     a = (e.status - r) / 2,
-    s = e.size - r - i - e.offset - a,
-    o = e.size - r * g.jo - e.offset - a,
-    l = Math.round(s / t * 100) / 100,
-    c = Math.round(o / t * 100) / 100;
+    o = e.size - r - i - e.offset - a,
+    s = e.size - r * g.jo - e.offset - a,
+    l = Math.round(o / t * 100) / 100,
+    c = Math.round(s / t * 100) / 100;
   return "translate(".concat(l, ", ").concat(c, ")")
 }
 
@@ -706,26 +706,26 @@ function K(e) {
     status: R,
     statusColor: P,
     statusTooltip: D = false,
-    statusTooltipDelay: x,
-    statusBackdropColor: j,
+    statusTooltipDelay: L,
+    statusBackdropColor: M,
     "aria-hidden": k = false,
     "aria-label": H,
     imageClassName: K,
     pulseStatusIcon: z,
     CutoutIcon: q,
     avatarTooltipAsset: Z,
-    avatarTooltipText: X,
-    avatarTooltipTitle: Q
+    avatarTooltipText: Q,
+    avatarTooltipTitle: X
   } = e, J = (0, u.S3)(R, P), $ = i.useId(), ee = i.useId(), [et] = i.useState(() => O({
     fill: a
-  }, V({
+  }, F({
     size: S,
     status: n,
     isMobile: t,
     isTyping: false
   }))), en = i.useMemo(() => O({
     fill: J
-  }, V({
+  }, F({
     size: S,
     status: R,
     isMobile: f,
@@ -737,8 +737,8 @@ function K(e) {
   }, C() ? "animate-always" : "animate-never"), {
     avatarCutoutX: ei,
     avatarCutoutY: ea,
-    avatarCutoutWidth: es,
-    avatarCutoutHeight: eo,
+    avatarCutoutWidth: eo,
+    avatarCutoutHeight: es,
     avatarCutoutRadius: el,
     fill: ec
   } = er, eu = I(er, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), ed = (0, g.FT)(S), ef = (0, g.Kj)(S), ep = ef.status * g.x, e_ = ef.status * g.jo, eh = null != R ? (ef.status * g.x - ef.status) / 2 : 0, em = ef.size + Math.ceil(eh), [eg, eE, ey] = (0, l.zhh)({
@@ -758,7 +758,7 @@ function K(e) {
       scale: 1
     }] : []
   }, C() ? "animate-always" : "animate-never", [z, R]);
-  return (0, r.jsx)(F, A(O({}, e), {
+  return (0, r.jsx)(V, A(O({}, e), {
     ariaLabel: H,
     ariaHidden: k,
     typingOffset: eh,
@@ -767,7 +767,7 @@ function K(e) {
       width: em,
       height: em,
       viewBox: "0 0 ".concat(em, " ").concat(em),
-      className: s()(y.dK, y.JW),
+      className: o()(y.dK, y.JW),
       "aria-hidden": true,
       children: [(0, r.jsxs)("mask", {
         id: $,
@@ -778,15 +778,15 @@ function K(e) {
           cy: ed / 2,
           r: ed / 2,
           fill: "white"
-        }), (0, r.jsx)(o.animated.rect, {
+        }), (0, r.jsx)(s.animated.rect, {
           color: "black",
           x: ei,
           y: ea,
-          width: es,
-          height: eo,
+          width: eo,
+          height: es,
           rx: el,
           ry: el
-        }), null != Z && M(ef.size - ef.status - ef.offset, ef.offset, ef.status, Z, ef)]
+        }), null != Z && j(ef.size - ef.status - ef.offset, ef.offset, ef.status, Z, ef)]
       }), (0, r.jsx)("foreignObject", {
         className: y.__invalid_foreignObject,
         x: 0,
@@ -802,20 +802,20 @@ function K(e) {
           className: K,
           speakingStylesConfig: v
         })
-      }), null != j && L(j, f, ef, R), (0, r.jsx)(d.m_, {
+      }), null != M && x(M, f, ef, R), (0, r.jsx)(d.m_, {
         text: D ? (0, _.MU)(R) : null,
         ariaHidden: true,
         position: "top",
         spacing: Y(ef.status, ef.stroke, f, p),
-        delay: x,
-        children: (0, r.jsxs)(o.animated.g, {
+        delay: L,
+        children: (0, r.jsxs)(s.animated.g, {
           transform: eg.scale.to(e => "scale(".concat(e, ") ").concat(W(ef, e, R))),
           children: [(0, r.jsxs)("svg", {
             width: ep,
             height: e_,
             viewBox: "0 0 ".concat(ep, " ").concat(e_),
             className: D ? y.Oi : true,
-            children: [(0, u.pF)(eu, ef.status, ee), (0, r.jsx)(o.animated.rect, {
+            children: [(0, u.pF)(eu, ef.status, ee), (0, r.jsx)(s.animated.rect, {
               fill: ec,
               width: ep,
               height: e_,
@@ -834,9 +834,9 @@ function K(e) {
             className: y.Hs
           })]
         })
-      }), null != q && U(ef, q), null != Q && G(ef, f, p, {
-        avatarTooltipTitle: Q,
-        avatarTooltipText: X
+      }), null != q && U(ef, q), null != X && G(ef, f, p, {
+        avatarTooltipTitle: X,
+        avatarTooltipText: Q
       }, Z)]
     })
   }))
@@ -851,12 +851,12 @@ let q = Chunk64700.memo(function(e) {
     statusColor: t,
     status: n
   } = e, a = I(e, ["statusColor", "status"]), {
-    isMobile: s = false,
-    isTyping: o = false
-  } = a, l = i.useRef(n), c = i.useRef(s), d = (0, u.S3)(n, t), f = i.useRef(d), p = i.useRef(false), _ = p.current || z(o, n, l.current, s, c.current);
+    isMobile: o = false,
+    isTyping: s = false
+  } = a, l = i.useRef(n), c = i.useRef(o), d = (0, u.S3)(n, t), f = i.useRef(d), p = i.useRef(false), _ = p.current || z(s, n, l.current, o, c.current);
   return i.useLayoutEffect(() => {
-    p.current = _, l.current = n, c.current = s, f.current = d
-  }, [n, s, d, _]), null != n && null != l.current && _ ? (0, r.jsx)(K, A(O({}, a), {
+    p.current = _, l.current = n, c.current = o, f.current = d
+  }, [n, o, d, _]), null != n && null != l.current && _ ? (0, r.jsx)(K, A(O({}, a), {
     status: n,
     statusColor: d,
     fromStatus: l.current,

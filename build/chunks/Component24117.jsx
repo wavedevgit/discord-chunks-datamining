@@ -38,6 +38,6 @@ let u = new Chunk723765.A(() => (0, i.mMO)(async () => {
   } = await n.e("88077").then(n.bind(n, 187964));
   return t => (0, r.jsx)(e, c({}, t))
 }, {
-  modalKey: s.r,
-  onCloseRequest: o.FXj
+  modalKey: o.r,
+  onCloseRequest: s.FXj
 }))

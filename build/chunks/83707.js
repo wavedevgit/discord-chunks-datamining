@@ -15,11 +15,11 @@ class r {
         n.push(r), r = a;
         continue
       }
-      let s = null,
-        o = null;
-      a.text.length > r.text.length ? (s = a, o = r) : (s = r, o = a), e.debug(() => {
-        console.log(`${this.constructor.name} remove ${o} by ${s}`)
-      }), r = s
+      let o = null,
+        s = null;
+      a.text.length > r.text.length ? (o = a, s = r) : (o = r, s = a), e.debug(() => {
+        console.log(`${this.constructor.name} remove ${s} by ${o}`)
+      }), r = o
     }
     return null != r && n.push(r), n
   }

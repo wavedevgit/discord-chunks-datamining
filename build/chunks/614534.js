@@ -2,7 +2,7 @@
 /** chunk id: 614534, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk140851 = require("./140851.js"),
   Chunk528346 = require("./528346.js");
@@ -19,12 +19,12 @@ function a(e, t, n) {
   }
 }
 
-function s(e) {
+function o(e) {
   return [r.Mn, r.pG, r.sQ, r.kb].some(function(t) {
     return e[t] >= 0
   })
 }
-let o = {
+let s = {
   name: "hide",
   enabled: true,
   phase: "main",
@@ -33,7 +33,7 @@ let o = {
     var t = e.state,
       n = e.name,
       r = t.rects.reference,
-      o = t.rects.popper,
+      s = t.rects.popper,
       l = t.modifiersData.preventOverflow,
       c = (0, i.A)(t, {
         elementContext: "reference"
@@ -42,9 +42,9 @@ let o = {
         altBoundary: true
       }),
       d = a(c, r),
-      f = a(u, o, l),
-      p = s(d),
-      _ = s(f);
+      f = a(u, s, l),
+      p = o(d),
+      _ = o(f);
     t.modifiersData[n] = {
       referenceClippingOffsets: d,
       popperEscapeOffsets: f,

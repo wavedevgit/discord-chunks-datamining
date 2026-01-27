@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Hf: () => r,
-  Oh: () => s,
+  Oh: () => o,
   RA: () => a,
-  gK: () => o,
+  gK: () => s,
   iw: () => l,
   y$: () => i
 });
@@ -18,10 +18,10 @@ var r = function(e) {
   a = function(e) {
     return e[e.ROLE = 1] = "ROLE", e[e.USER = 2] = "USER", e[e.CHANNEL = 3] = "CHANNEL", e
   }({}),
-  s = function(e) {
+  o = function(e) {
     return e.DISCOVERY = "discovery", e.SUGGESTION = "suggestion", e.MENTION = "mention", e.PASTE = "paste", e.RECALL = "recall", e.POPULAR_COMMANDS = "popular_commands", e.MJ_CHAT_BAR = "mj_chat_bar", e.QUERY = "query", e.SLASH_UI = "slash_ui", e.APP_LAUNCHER = "app_launcher", e.APP_LAUNCHER_HOME = "app_launcher_home", e.APP_LAUNCHER_HOME_SEARCH = "app_launcher_home_search", e.APP_LAUNCHER_LIST_VIEW_ALL = "app_launcher_list_view_all", e.APP_LAUNCHER_APPLICATION_VIEW = "app_launcher_application_view", e.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT = "app_launcher_application_view_frecent", e.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU = "app_launcher_application_view_more_menu", e.APP_LAUNCHER_SLASH_SEARCH = "app_launcher_slash_search", e.APP_LAUNCHER_FRECENTS_VIEW_ALL = "app_launcher_frecents_view_all", e.IMAGE_RECS_MENU = "image_recs_menu", e.IMAGE_RECS_SUBMENU = "image_recs_submenu", e.ACTIVITY_INSTANCE_EMBED = "activity_instance_embed", e.ACTIVITY_BOOKMARK_EMBED = "activity_bookmark_embed", e.ACTIVITIES_MINI_SHELF = "activities_mini_shelf", e.VC_TILE_ACTIVITY_SUGGESTION = "vc_tile_activity_suggestion", e.APP_DMS_ENTRY_POINT_COMMAND_BUTTON = "app_dms_entry_point_command_button", e
   }({}),
-  o = function(e) {
+  s = function(e) {
     return e[e.BUILT_IN = 1] = "BUILT_IN", e[e.FRECENCY = 2] = "FRECENCY", e[e.APP = 3] = "APP", e
   }({}),
   l = function(e) {

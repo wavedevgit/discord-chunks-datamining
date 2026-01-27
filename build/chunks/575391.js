@@ -13,7 +13,7 @@ module.exports = function(e) {
     a = e.COMMENT("\x3c!--", "--\x3e", {
       relevance: 0
     }),
-    s = {
+    o = {
       className: "meta",
       begin: "\\[noprocess\\]",
       starts: {
@@ -22,7 +22,7 @@ module.exports = function(e) {
         contains: [a]
       }
     },
-    o = {
+    s = {
       className: "meta",
       begin: "\\[/noprocess|" + n
     },
@@ -89,7 +89,7 @@ module.exports = function(e) {
         relevance: 0,
         contains: [a]
       }
-    }, s, o, {
+    }, o, s, {
       className: "meta",
       begin: "\\[no_square_brackets",
       starts: {
@@ -104,7 +104,7 @@ module.exports = function(e) {
             returnEnd: true,
             contains: [a]
           }
-        }, s, o].concat(c)
+        }, o, s].concat(c)
       }
     }, {
       className: "meta",

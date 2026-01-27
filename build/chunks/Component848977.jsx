@@ -1,7 +1,7 @@
 /** Chunk was on 86901 **/
 /** chunk id: 848977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,8 +17,8 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
-  let t, n, p = (t = (0, o.ed)(e.guild_id, e.id), n = (0, i.bG)([f.Ay, d.A, s.A, c.A], () => {
+function b(e) {
+  let t, n, b = (t = (0, o.ed)(e.guild_id, e.id), n = (0, i.bG)([f.Ay, d.A, c.A, s.A], () => {
     if (e.isForumPost()) return f.Ay.isForumPostUnread(e.id);
     if (e.type !== A.rbe.GUILD_CATEGORY) return f.Ay.hasUnreadOrMentions(e.id);
     {
@@ -31,17 +31,17 @@ function p(e) {
           return (0, u.Z_)(t.type) && f.Ay.hasUnreadOrMentions(t.id)
         })) returntrue;
       let n = new Set(t[e.id].map(e => e.channel.id)),
-        r = s.A.getThreadsForGuild(e.guild_id);
+        r = c.A.getThreadsForGuild(e.guild_id);
       for (let e in r)
         if (n.has(e)) {
           for (let t in r[e])
-            if (c.A.hasJoined(t) && !c.A.isMuted(t) && f.Ay.hasUnreadOrMentions(t)) returntrue
+            if (s.A.hasJoined(t) && !s.A.isMuted(t) && f.Ay.hasUnreadOrMentions(t)) returntrue
         } returnfalse
     }
   }, [e]), e.isForumLikeChannel() ? t > 0 : n);
   return (0, r.jsx)(l.Drp, {
     id: "mark-channel-read",
-    label: b.intl.string(b.t.e6RscS),
+    label: p.intl.string(p.t.e6RscS),
     action: function() {
       (0, a.hS)(e, {
         section: A.JJy.CHANNEL_CONTEXT_MENU,
@@ -49,6 +49,6 @@ function p(e) {
         objectType: A.AnalyticsObjectTypes.ACK_MANUAL
       })
     },
-    disabled: !p
+    disabled: !b
   })
 }

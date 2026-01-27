@@ -9,19 +9,19 @@ var Chunk64700 = require("./64700.js"),
   Chunk860579 = require("./860579.js"),
   Chunk964486 = require("./964486.js");
 
-function s(e, t) {
+function o(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = o(e, t), Object.getOwnPropertySymbols)
+  if (a = s(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function o(e, t) {
+function s(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -39,10 +39,10 @@ function l(e, t) {
 }
 
 function c(e) {
-  var t, n, r, i, a, o;
+  var t, n, r, i, a, s;
   let l = e,
     c = e.getBoundingClientRect(),
-    u = null == (o = l.parentElement) ? true : o.getBoundingClientRect(),
+    u = null == (s = l.parentElement) ? true : s.getBoundingClientRect(),
     d = {
       x: c.x - (null != (t = null == u ? true : u.x) ? t : 0),
       y: c.y - (null != (n = null == u ? true : u.y) ? n : 0),
@@ -56,7 +56,7 @@ function c(e) {
         let {
           toJSON: e
         } = d;
-        return s(d, ["toJSON"])
+        return o(d, ["toJSON"])
       }
     },
     f = getComputedStyle(l),
@@ -86,19 +86,19 @@ function u(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
     i = arguments.length > 3 ? arguments[3] : true,
     {
-      enabled: s = true,
-      fireOnMount: o = true,
+      enabled: o = true,
+      fireOnMount: s = true,
       fireOnDepsChange: l = false
     } = i,
     u = (0, r.useRef)(false);
   (0, a.u5)(() => {
     let n = e.current;
-    s && o && null != n && (t(c(n)), setImmediate(() => {
+    o && s && null != n && (t(c(n)), setImmediate(() => {
       u.current = true
     }))
   }), (0, r.useLayoutEffect)(() => {
     let n = e.current;
-    s && l && u.current && null != n && t(c(n))
+    o && l && u.current && null != n && t(c(n))
   }, [t, e, ...n])
 }
 
@@ -114,18 +114,18 @@ function d(e) {
 function f(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
     a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
-    s = (0, r.useId)(),
+    o = (0, r.useId)(),
     {
-      enabled: o = true
+      enabled: s = true
     } = a,
     c = (0, r.useRef)(null);
-  l(s, e.current), u(e, t, n, a), (0, r.useEffect)(() => {
-    if (!o) return;
+  l(o, e.current), u(e, t, n, a), (0, r.useEffect)(() => {
+    if (!s) return;
     let n = e.current;
     if (null == n) return;
-    let r = (0, i.NQ)(s, n, t);
+    let r = (0, i.NQ)(o, n, t);
     if (c.current = r, null != r) return (0, i.wB)(r, n), () => (0, i.$v)(r, n)
-  }, [o, s, t, e, ...n])
+  }, [s, o, t, e, ...n])
 }
 
 function p(e) {
@@ -134,11 +134,11 @@ function p(e) {
     {
       enabled: a = true
     } = n,
-    [s, o] = d(e);
-  return u(o, e, t, n), (0, r.useEffect)(() => {
+    [o, s] = d(e);
+  return u(s, e, t, n), (0, r.useEffect)(() => {
     if (!a) return;
-    let e = o.current,
-      t = s.current;
+    let e = s.current,
+      t = o.current;
     if (null != e && null != t) return (0, i.wB)(t, e), () => (0, i.$v)(t, e)
-  }, [a, o, s, ...t]), o
+  }, [a, s, o, ...t]), s
 }

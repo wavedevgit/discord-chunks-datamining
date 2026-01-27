@@ -28,15 +28,15 @@ async function m(e, t) {
   let {
     level: n,
     message: r,
-    context: o
+    context: s
   } = e, u = null;
-  if (null != o) try {
-    u = (0, a.g)(o)
+  if (null != s) try {
+    u = (0, a.g)(s)
   } catch (e) {
     try {
       u = {
         _error: "Failed to serialize context",
-        _type: Object.prototype.toString.call(o)
+        _type: Object.prototype.toString.call(s)
       }
     } catch (e) {
       u = {
@@ -47,7 +47,7 @@ async function m(e, t) {
   let d = {
     type: l.kGV.LOG_MESSAGES,
     token: t,
-    pid: (0, s.getPID)(),
+    pid: (0, o.getPID)(),
     payload: {
       level: n,
       message: r,
@@ -180,7 +180,7 @@ function E(e) {
       null != u && u.info("Overlay unloading"), null != f && clearInterval(f)
     }), f = window.setInterval(() => {
       if (null != u) try {
-        u.log(o.VD, {
+        u.log(s.VD, {
           timestamp: Date.now(),
           memory: performance.memory ? {
             usedJSHeapSize: performance.memory.usedJSHeapSize,
@@ -190,7 +190,7 @@ function E(e) {
       } catch (e) {
         p.error("[Heartbeat Error]", e)
       }
-    }, o.sU), p.log("Overlay error handlers and console interception set up")
+    }, s.sU), p.log("Overlay error handlers and console interception set up")
   }
 }
 

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
@@ -37,126 +37,126 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk381907 = require("./381907.js");
-let M = 1500;
+let j = 1500;
 
 function k(e) {
   let {
     giftCode: t,
     application: n,
     sku: a,
-    subscriptionPlan: o,
+    subscriptionPlan: s,
     selectedGiftStyle: l,
     onClose: u,
     hasSentMessage: p,
     giftRecipient: _,
     giftMessageError: E,
     isSendingMessage: O
-  } = e, [v, I] = i.useState(f.e2O.Modes.DEFAULT), T = (0, c.bG)([S.A], () => S.A.enabled), k = p || null != l && null != _, G = (null == a ? true : a.productLine) === D.EZt.COLLECTIBLES, V = (0, y.A)(), {
-    selectedGiftingPromotionReward: F
-  } = (0, P.Pv)(), B = null == V ? true : V.giftPurchaseConfirmation, H = (0, m.Mv)(null == F ? true : F.skuId), Y = (0, b.Mq)(o) && null != H && null != B, W = () => null != o ? o.skuId : null != a ? a.id : null, K = () => {
+  } = e, [v, I] = i.useState(f.e2O.Modes.DEFAULT), T = (0, c.bG)([S.A], () => S.A.enabled), k = p || null != l && null != _, G = (null == a ? true : a.productLine) === D.EZt.COLLECTIBLES, F = (0, y.A)(), {
+    selectedGiftingPromotionReward: V
+  } = (0, P.Pv)(), B = null == F ? true : F.giftPurchaseConfirmation, H = (0, m.Mv)(V), Y = (0, b.Mq)(s) && null != H && null != B, W = () => null != s ? s.skuId : null != a ? a.id : null, K = () => {
     let e;
-    return null != E ? L.intl.string(L.t.qB8aya) : null == o ? null : (e = o.interval === x.WT.MONTH ? k ? Y ? B.monthGiftText : L.t["4ZJ+7Z"] : L.t["P+z55d"] : k ? Y ? B.yearGiftText : L.t.p0pZXP : L.t.bXqk3o, L.intl.format(e, {
-      skuName: (0, w.RH)(o.id),
-      intervalCount: o.intervalCount
+    return null != E ? x.intl.string(x.t.qB8aya) : null == s ? null : (e = s.interval === L.WT.MONTH ? k ? Y ? B.monthGiftText : x.t["4ZJ+7Z"] : x.t["P+z55d"] : k ? Y ? B.yearGiftText : x.t.p0pZXP : x.t.bXqk3o, x.intl.format(e, {
+      skuName: (0, w.RH)(s.id),
+      intervalCount: s.intervalCount
     }))
-  }, z = () => null != _ || p && null == E ? L.intl.string(L.t.zOmK9N) : null != E ? L.intl.string(L.t.d1lrmU) : L.intl.string(L.t["/s1xR7"]), q = (e, t) => {
+  }, z = () => null != _ || p && null == E ? x.intl.string(x.t.zOmK9N) : null != E ? x.intl.string(x.t.d1lrmU) : x.intl.string(x.t["/s1xR7"]), q = (e, t) => {
     null != a && (0, N.AK)(new A.A({
       code: t,
       maxUses: 1
     }), a), (0, C.C)(e, () => I(f.e2O.Modes.SUCCESS), () => I(f.e2O.Modes.ERROR)), setTimeout(() => {
       I(f.e2O.Modes.DEFAULT)
-    }, M)
+    }, j)
   }, Z = () => {
     let e;
     if (null == t) return null;
     switch (v) {
       case f.e2O.Modes.SUCCESS:
-        e = L.intl.string(L.t.XVvPjU);
+        e = x.intl.string(x.t.XVvPjU);
         break;
       case f.e2O.Modes.ERROR:
-        e = L.intl.string(L.t.i4GM3L);
+        e = x.intl.string(x.t.i4GM3L);
         break;
       default:
-        e = L.intl.string(L.t.OpuAlK)
+        e = x.intl.string(x.t.OpuAlK)
     }
     return (0, r.jsxs)("div", {
-      className: j.PN,
+      className: M.PN,
       children: [null != t && (0, r.jsx)(f.D0$, {
-        label: L.intl.string(L.t["/dG4NA"]),
+        label: x.intl.string(x.t["/dG4NA"]),
         children: (0, r.jsx)(f.e2O, {
-          hideMessage: T ? L.intl.string(L.t["0RLn47"]) : null,
+          hideMessage: T ? x.intl.string(x.t["0RLn47"]) : null,
           value: (0, N.Zq)(t),
           mode: v,
           text: e,
           onCopy: e => q(e, t),
           supportsCopy: C.p5,
-          className: j.__invalid_copyInput,
+          className: M.__invalid_copyInput,
           buttonColor: d.XD.LINK,
           buttonLook: d.pR.LINK
         })
       }), (0, r.jsx)("div", {
-        className: j.W$,
-        children: L.intl.string(L.t.QWKUpn)
+        className: M.W$,
+        children: x.intl.string(x.t.QWKUpn)
       })]
     })
-  }, X = () => (0, r.jsxs)(r.Fragment, {
+  }, Q = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: j.I0,
+      className: M.I0,
       children: K()
     }), null == E && (0, r.jsx)(U, {
       giftCode: t,
       onClose: u
     }), (0, r.jsx)("div", {
-      className: j.yF
+      className: M.yF
     }), Z()]
-  }), Q = () => (0, r.jsxs)(r.Fragment, {
+  }), X = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: j.jx,
+      className: M.jx,
       children: [(0, r.jsx)(h.A, {
         user: _,
         size: f._3J.SIZE_40
       }), (0, r.jsxs)("div", {
-        className: j.gn,
+        className: M.gn,
         children: [(0, r.jsx)(f.Heading, {
           variant: "heading-md/semibold",
           children: R.Ay.getName(_)
         }), (0, r.jsxs)("div", {
-          className: j.Ik,
+          className: M.Ik,
           children: [" ", R.Ay.getUserTag(_)]
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: j._c,
+      className: M._c,
       children: K()
     })]
   });
   return O ? (0, r.jsxs)("div", {
-    className: j.EL,
+    className: M.EL,
     children: [null != n ? (0, r.jsx)(g.A, {
       game: n,
-      className: j.__invalid_icon,
+      className: M.__invalid_icon,
       size: g.M.LARGE,
       skuId: W()
     }) : null, (0, r.jsx)(f.y$y, {
       type: f.tVU.PULSING_ELLIPSIS
     })]
   }) : (0, r.jsxs)("div", {
-    className: s()(j.EL, {
-      [j.L1]: Y
+    className: o()(M.EL, {
+      [M.L1]: Y
     }),
     children: [null != n ? (0, r.jsx)(g.A, {
       game: n,
-      className: j.__invalid_icon,
+      className: M.__invalid_icon,
       size: g.M.LARGE,
       skuId: W()
     }) : null, (0, r.jsx)(f.Heading, {
       variant: "heading-lg/semibold",
-      className: s()({
-        [j.wx]: null == l && !G,
-        [j.$A]: null != l && !G
+      className: o()({
+        [M.wx]: null == l && !G,
+        [M.$A]: null != l && !G
       }),
       children: z()
-    }), p && null != _ && null == E || k ? Q() : X()]
+    }), p && null != _ && null == E || k ? X() : Q()]
   })
 }
 let U = e => {
@@ -167,7 +167,7 @@ let U = e => {
   i.useEffect(() => {
     _.A.fetchRelationships(), (0, O.u)()
   }, []);
-  let [a, s] = i.useState(), [o, d] = i.useState(false), [m, g] = i.useState(false), {
+  let [a, o] = i.useState(), [s, d] = i.useState(false), [m, g] = i.useState(false), {
     userAffinities: y,
     isLoading: b
   } = (0, c.cf)([v.A], () => ({
@@ -177,17 +177,17 @@ let U = e => {
   if (null == w || 0 === w.length) return null;
   let P = l().sortBy(w, e => N.indexOf(e.id));
   return (0, r.jsxs)("div", {
-    className: j.vt,
+    className: M.vt,
     children: [(0, r.jsxs)("div", {
-      className: j.AQ,
+      className: M.AQ,
       children: [(0, r.jsx)(f.ZiE, {
         selectionMode: "single",
-        label: L.intl.string(L.t.MJw05f),
-        placeholder: L.intl.string(L.t.J019jZ),
+        label: x.intl.string(x.t.MJw05f),
+        placeholder: x.intl.string(x.t.J019jZ),
         loading: b,
         value: a,
         onSelectionChange: e => {
-          s(e), d(false)
+          o(e), d(false)
         },
         options: P.map(e => ({
           id: e.id,
@@ -199,7 +199,7 @@ let U = e => {
           })
         }))
       }), (0, r.jsx)("div", {
-        className: j.Qg,
+        className: M.Qg,
         children: (0, r.jsx)(u.$nd, {
           disabled: null == a,
           loading: m,
@@ -210,12 +210,12 @@ let U = e => {
               d(true), g(false)
             })
           },
-          text: L.intl.string(L.t["+EgwQn"])
+          text: x.intl.string(x.t["+EgwQn"])
         })
       })]
     }), (0, r.jsx)("div", {
-      className: o ? j.Sc : j.W$,
-      children: o ? L.intl.string(L.t.jo5Vbl) : L.intl.string(L.t["8/N3v3"])
+      className: s ? M.Sc : M.W$,
+      children: s ? x.intl.string(x.t.jo5Vbl) : x.intl.string(x.t["8/N3v3"])
     })]
   })
 }

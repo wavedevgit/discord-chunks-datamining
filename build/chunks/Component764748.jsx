@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = "file-input",
+let s = "file-input",
   l = e => ({
     position: "absolute",
     top: 0,
@@ -34,13 +34,13 @@ class c extends(r = Chunk64700.Component) {
       className: n,
       name: r,
       "aria-label": a,
-      "aria-hidden": s,
+      "aria-hidden": o,
       id: c
     } = this.props, u = "";
     return this.props.filters && (u = this.props.filters.map(e => e.extensions.map(e => ".".concat(e)).join(",")).join(",")), (0, i.jsx)("input", {
       id: c,
       style: l(e),
-      className: n || o,
+      className: n || s,
       disabled: e,
       type: "file",
       tabIndex: t,
@@ -51,7 +51,7 @@ class c extends(r = Chunk64700.Component) {
       accept: u,
       name: r,
       "aria-label": a,
-      "aria-hidden": s || true,
+      "aria-hidden": o || true,
       ref: e => {
         this._input = e
       },
@@ -59,18 +59,18 @@ class c extends(r = Chunk64700.Component) {
     })
   }
   constructor(...e) {
-    super(...e), s(this, "_input", null), s(this, "activateUploadDialogue", () => {
+    super(...e), o(this, "_input", null), o(this, "activateUploadDialogue", () => {
       this._input && this._input.click()
-    }), s(this, "handleNativeClick", () => {
+    }), o(this, "handleNativeClick", () => {
       this.props.handleNativeClick && this.props.handleNativeClick(this.props)
-    }), s(this, "handleNativeKeyDown", e => {
+    }), o(this, "handleNativeKeyDown", e => {
       (" " === e.key || "Enter" === e.key) && this.handleNativeClick()
-    }), s(this, "handleBrowserInputMouseDown", e => {
+    }), o(this, "handleBrowserInputMouseDown", e => {
       e.currentTarget.value = null
     })
   }
 }
-s(c, "defaultProps", {
+o(c, "defaultProps", {
   multiple: false,
   disabled: false,
   tabIndex: 0

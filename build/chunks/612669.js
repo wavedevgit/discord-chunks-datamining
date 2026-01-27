@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 612669, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96126 **/
+/** chunk id: 612669, original params: e,r,a (module,exports,require) **/
 require.d(exports, {
-  O9: () => y,
-  PA: () => E,
-  bf: () => b,
-  o1: () => g
+  O9: () => x,
+  PA: () => C,
+  bf: () => g,
+  o1: () => b
 });
 var Chunk311907 = require("./311907.js"),
   Chunk780964 = require("./780964.js"),
@@ -20,45 +19,44 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk519412 = require("./519412.js"),
   Chunk985018 = require("./985018.jsx");
-let m = (e, t) => {
-    var n;
-    if (null == t) return null;
-    let r = null == (n = t.recipients) ? true : n.find(t => t !== e.id),
-      i = s.default.getUser(r);
-    return null == i ? null : (0, c.$3)(i)
-  },
-  g = e => {
-    let t, n, {
-        sender: r,
-        channel: s,
+let b = e => {
+    let r, a, {
+        sender: t,
+        channel: _,
         isSender: o,
-        inviteState: l
+        inviteState: u
       } = e,
-      u = (0, f.DP)();
+      m = (0, f.DP)();
     if (o) {
-      let e = m(r, s);
+      let e = ((e, r) => {
+        var a;
+        if (null == r) return null;
+        let t = null == (a = r.recipients) ? true : a.find(r => r !== e.id),
+          i = n.default.getUser(t);
+        return null == i ? null : (0, l.$3)(i)
+      })(t, _);
       if (null == e) return null;
-      let o = h.intl.format(_.default.MkcFjx, {
+      let o = c.intl.format(s.default.MkcFjx, {
         receiverName: e,
-        premiumGroupProductName: u
+        premiumGroupProductName: m
       });
-      switch (l) {
+      switch (u) {
         case f.xI.ACCEPTED:
-          t = h.intl.formatToPlainString(_.default["5uwv8J"], {
-            premiumGroupProductName: u
-          }), n = h.intl.formatToPlainString(_.default["W7e/z1"], {
+          r = c.intl.formatToPlainString(s.default["5uwv8J"], {
+            premiumGroupProductName: m
+          }), a = c.intl.formatToPlainString(s.default["W7e/z1"], {
             receiverName: e
           });
           break;
         case f.xI.REMOVED:
         case f.xI.NOT_FOUND:
         case f.xI.ERROR:
-          t = h.intl.formatToPlainString(_.default.YLvraS, {
-            premiumGroupProductName: u
-          }), n = h.intl.format(_.default.BHxlIR, {
-            premiumGroupProductName: u,
+          r = c.intl.formatToPlainString(s.default.YLvraS, {
+            premiumGroupProductName: m
+          }), a = c.intl.format(s.default.BHxlIR, {
+            premiumGroupProductName: m,
             onClick: () => {
-              (0, a.openUserSettings)(i.X.SUBSCRIPTIONS_PANEL, {
+              (0, d.openUserSettings)(i.X.SUBSCRIPTIONS_PANEL, {
                 section: p.nc_.SUBSCRIPTIONS
               })
             }
@@ -66,72 +64,72 @@ let m = (e, t) => {
           break;
         case f.xI.PENDING:
         default:
-          t = h.intl.formatToPlainString(_.default["5uwv8J"], {
-            premiumGroupProductName: u
-          }), n = h.intl.formatToPlainString(_.default["AmE0B/"], {
+          r = c.intl.formatToPlainString(s.default["5uwv8J"], {
+            premiumGroupProductName: m
+          }), a = c.intl.formatToPlainString(s.default["AmE0B/"], {
             receiverName: e
           })
       }
       return {
         message: o,
-        header: t,
-        body: n
+        header: r,
+        body: a
       }
     } {
-      let e = (0, c.$3)(r),
-        i = h.intl.format(_.default["51Kv/4"], {
+      let e = (0, l.$3)(t),
+        i = c.intl.format(s.default["51Kv/4"], {
           senderName: e,
-          premiumGroupProductName: u,
+          premiumGroupProductName: m,
           helpCenterLink: f.TE
         });
-      switch (l) {
+      switch (u) {
         case f.xI.ACCEPTED:
-          t = h.intl.string(_.default.ssge1y), n = h.intl.formatToPlainString(_.default.fTAcw3, {
+          r = c.intl.string(s.default.ssge1y), a = c.intl.formatToPlainString(s.default.fTAcw3, {
             senderName: e
           });
           break;
         case f.xI.REMOVED:
         case f.xI.NOT_FOUND:
         case f.xI.ERROR:
-          t = h.intl.formatToPlainString(_.default["AmLUw+"], {
-            premiumGroupProductName: u
-          }), n = h.intl.formatToPlainString(_.default["7XAuyg"], {
-            premiumGroupProductName: u
+          r = c.intl.formatToPlainString(s.default["AmLUw+"], {
+            premiumGroupProductName: m
+          }), a = c.intl.formatToPlainString(s.default["7XAuyg"], {
+            premiumGroupProductName: m
           });
           break;
         case f.xI.PENDING:
         default:
-          t = h.intl.string(_.default.ssge1y), n = h.intl.formatToPlainString(_.default.MkcdX8, {
+          r = c.intl.string(s.default.ssge1y), a = c.intl.formatToPlainString(s.default.MkcdX8, {
             senderName: e,
-            premiumGroupProductName: u
+            premiumGroupProductName: m
           })
       }
       return {
         message: i,
-        header: t,
-        body: n
+        header: r,
+        body: a
       }
     }
   },
-  E = () => {
+  C = () => {
     var e;
-    let t = (0, u.A)({
+    let r = (0, u.A)({
         location: "PremiumGroupPurchase"
       }),
-      n = (0, r.bG)([o.A], () => o.A.getPremiumSubscription()),
-      i = (0, r.bG)([s.default], () => s.default.getCurrentUser());
-    return (null == i || !i.isPremiumWithFractionalPremiumOnly()) && !!t && (null == n || d.BL.has(null != (e = n.premiumPlanIdFromItems) ? e : "") && !n.isPurchasedExternally)
+      a = (0, t.bG)([_.A], () => _.A.getPremiumSubscription()),
+      i = (0, t.bG)([n.default], () => n.default.getCurrentUser());
+    return (null == i || !i.isPremiumWithFractionalPremiumOnly()) && !!r && (null == a || m.BL.has(null != (e = a.premiumPlanIdFromItems) ? e : "") && !a.isPurchasedExternally)
   },
-  y = () => {
+  x = () => {
     let e = (0, u.A)({
         location: "PremiumGroupPurchase"
       }),
-      t = E(),
-      n = (0, r.bG)([s.default], () => s.default.getCurrentUser());
-    return !!e && !!t && (null == n || !n.isPremiumWithPremiumGroup())
+      r = C(),
+      a = (0, t.bG)([n.default], () => n.default.getCurrentUser());
+    return !!e && !!r && (null == a || !a.isPremiumWithPremiumGroup())
   },
-  b = () => {
-    let e = y(),
-      t = (0, r.bG)([s.default], () => s.default.getCurrentUser());
-    return e && ((0, l.TW)(t) || !(0, l.mv)(t))
+  g = () => {
+    let e = x(),
+      r = (0, t.bG)([n.default], () => n.default.getCurrentUser());
+    return e && ((0, o.TW)(r) || !(0, o.mv)(r))
   }

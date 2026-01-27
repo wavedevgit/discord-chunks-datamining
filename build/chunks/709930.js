@@ -6,17 +6,17 @@ var Chunk626800 = require("./626800.js"),
   Chunk356681 = require("./356681.js"),
   Chunk634587 = require("./634587.js");
 
-function o(e) {
+function s(e) {
   return e.call.bind(e)
 }
 var l = "u" > typeof BigInt,
   c = "u" > typeof Symbol,
-  u = o(Object.prototype.toString),
-  d = o(Number.prototype.valueOf),
-  f = o(String.prototype.valueOf),
-  p = o(Boolean.prototype.valueOf);
-if (l) var _ = o(BigInt.prototype.valueOf);
-if (c) var h = o(Symbol.prototype.valueOf);
+  u = s(Object.prototype.toString),
+  d = s(Number.prototype.valueOf),
+  f = s(String.prototype.valueOf),
+  p = s(Boolean.prototype.valueOf);
+if (l) var _ = s(BigInt.prototype.valueOf);
+if (c) var h = s(Symbol.prototype.valueOf);
 
 function m(e, t) {
   if ("object" != typeof e) returnfalse;
@@ -61,7 +61,7 @@ function I(e) {
 exports.isArgumentsObject = Chunk626800, exports.isGeneratorFunction = Chunk133491, exports.isTypedArray = Chunk634587, exports.isPromise = function(e) {
   return "u" > typeof Promise && e instanceof Promise || null !== e && "object" == typeof e && "function" == typeof e.then && "function" == typeof e.catch
 }, exports.isArrayBufferView = function(e) {
-  return "u" > typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : s(e) || I(e)
+  return "u" > typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : o(e) || I(e)
 }, exports.isUint8Array = function(e) {
   return "Uint8Array" === a(e)
 }, exports.isUint8ClampedArray = function(e) {

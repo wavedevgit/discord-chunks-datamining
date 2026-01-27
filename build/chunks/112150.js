@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 112150, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 112150, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => c
 });
@@ -14,25 +13,25 @@ var Chunk64700 = require("./64700.js"),
 function c(e) {
   let {
     bot: t
-  } = e, n = (0, s.Ag)(e), {
+  } = e, n = (0, a.Ag)(e), {
     url: c
-  } = (0, a.A)({
+  } = (0, l.A)({
     applicationId: n ? e.id : true,
     size: 600,
     names: ["embedded_cover"]
   });
   return r.useMemo(() => {
-    let r, a, u = l.u.BOT;
+    let r, l, u = o.u.BOT;
     if (null != t) {
       let {
         banner: e
       } = t;
-      r = (0, o.z)({
+      r = (0, s.z)({
         id: t.id,
         banner: e,
         size: 512,
         canAnimate: false
-      }), (0, o.VI)(e) && null == c && (a = (0, o.z)({
+      }), (0, s.VI)(e) && null == c && (l = (0, s.z)({
         id: t.id,
         banner: e,
         size: 512,
@@ -40,14 +39,14 @@ function c(e) {
       }))
     }
     if (n) {
-      let t = (0, s.Cx)(e);
-      null != c && (r = c, u = l.u.ACTIVITY);
+      let t = (0, a.Cx)(e);
+      null != c && (r = c, u = o.u.ACTIVITY);
       let n = null == t ? true : t.activity_preview_video_asset_id;
-      null != n && (a = (0, i.A)(e.id, n), u = l.u.ACTIVITY)
+      null != n && (l = (0, i.A)(e.id, n), u = o.u.ACTIVITY)
     }
     return {
       staticBannerSrc: r,
-      videoBannerSrc: a,
+      videoBannerSrc: l,
       bannerAspectRatio: u
     }
   }, [c, t, n, e])

@@ -2,7 +2,7 @@
 /** chunk id: 869014, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => L
 }), require("./896048.js");
 var Chunk439372 = require("./439372.js"),
   Chunk626584 = require("./626584.js"),
@@ -61,8 +61,8 @@ let b = null,
       if (!v) return b = "MainWindowFocused", m(e);
       if (!y(true)) return b = "NoOverlayRendering", m(e);
       let n = null !== f.A.getFocusedRunningGame(),
-        r = s.A.isFocused((0, o.Q2)(t));
-      if (s.A.isFocused() && h.error("Main window is reported as focused when it should not be!"), n || r) {
+        r = o.A.isFocused((0, s.Q2)(t));
+      if (o.A.isFocused() && h.error("Main window is reported as focused when it should not be!"), n || r) {
         b = n ? "OverlayGameFocused" : "OverlayWindowFocused";
         let r = t.requestAnimationFrame(t => {
           S(r), e(t)
@@ -76,7 +76,7 @@ let b = null,
   };
 
 function w() {
-  return !s.A.isFocused() || !s.A.isVisible()
+  return !o.A.isFocused() || !o.A.isVisible()
 }
 
 function R() {
@@ -137,4 +137,4 @@ class D extends Chunk439372.A {
     })
   }
 }
-let x = new D
+let L = new D

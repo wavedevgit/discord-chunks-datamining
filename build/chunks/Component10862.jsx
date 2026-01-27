@@ -57,9 +57,9 @@ function f(e, t) {
 function p(e) {
   let {
     channel: t
-  } = e, n = d(e, ["channel"]), c = (0, i.bG)([o.A], () => t.isPrivate() || o.A.can(l.xB.CONNECT, t));
+  } = e, n = d(e, ["channel"]), c = (0, i.bG)([s.A], () => t.isPrivate() || s.A.can(l.xB.CONNECT, t));
   if (t.isDM() || t.isGroupDM()) return (0, r.jsx)(a._jp, u({}, n));
   let f = t.isGuildStageVoice(),
-    p = !c || (0, s.A)(t);
+    p = !c || (0, o.A)(t);
   return f && p ? (0, r.jsx)(a.DC, u({}, n)) : f ? (0, r.jsx)(a.qux, u({}, n)) : t.isNSFW() ? (0, r.jsx)(a.Ob$, u({}, n)) : p ? (0, r.jsx)(a.trU, u({}, n)) : (0, r.jsx)(a.HKD, u({}, n))
 }

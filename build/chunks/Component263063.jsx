@@ -2,12 +2,12 @@
 /** chunk id: 263063, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => L
 });
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk758879 = require("./758879.js"),
   Chunk311907 = require("./311907.js"),
   Chunk827734 = require("./827734.js"),
@@ -143,7 +143,7 @@ class R extends Chunk64700.PureComponent {
       {
         guild: r,
         className: a,
-        showBadge: s,
+        showBadge: o,
         active: l,
         size: c,
         style: u = {},
@@ -162,17 +162,17 @@ class R extends Chunk64700.PureComponent {
       } = n,
       P = S(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
       D = w[c],
-      x = null != h ? f.DUT : "div",
-      L = (0, m.Rb)(r);
-    return (0, i.jsxs)(x, I(v({
-      className: o()(b.icon, a, (0, y.t)(b, "iconSize", c), {
+      L = null != h ? f.DUT : "div",
+      x = (0, m.Rb)(r);
+    return (0, i.jsxs)(L, I(v({
+      className: s()(b.icon, a, (0, y.t)(b, "iconSize", c), {
         [null != (e = (0, y.t)(b, "iconActive", c)) ? e : ""]: l,
         [b.iconInactive]: !l,
         [b.noIcon]: null == r.icon
       }),
       "aria-hidden": C,
       style: null == r.icon ? v({
-        fontSize: (null != (t = D[L.length]) ? t : D[D.length - 1]) * d
+        fontSize: (null != (t = D[x.length]) ? t : D[D.length - 1]) * d
       }, u) : u,
       onClick: null != g || null == h ? true : h,
       tabIndex: A
@@ -222,10 +222,10 @@ let P = Chunk311907.Ay.connectStores([Chunk531685.A], e => {
     iconSrc: r,
     style: i,
     size: a,
-    iconSize: s,
-    lossless: o
+    iconSize: o,
+    lossless: s
   } = e;
-  return null == r && (r = t instanceof _.GO ? t.getIconURL(null != s ? s : N[a], n && g.A.isFocused()) : (0, m.Iv)(t, null != s ? s : N[a], n && g.A.isFocused(), o)), {
+  return null == r && (r = t instanceof _.GO ? t.getIconURL(null != o ? o : N[a], n && g.A.isFocused()) : (0, m.Iv)(t, null != o ? o : N[a], n && g.A.isFocused(), s)), {
     style: I(v({}, i), {
       backgroundImage: (0, E.wU)(r)
     })
@@ -246,4 +246,4 @@ O(D, "Sizes", C), O(D, "defaultProps", {
   badgeStrokeColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
   animate: false
 });
-let x = D
+let L = D

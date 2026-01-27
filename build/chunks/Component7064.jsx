@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 7064, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 7064, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,35 +13,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk943626 = require("./943626.js");
 
-function f(e) {
+function _(e) {
   let {
     currentUser: t,
     disabled: n,
-    handleDisableAccount: f,
+    handleDisableAccount: _,
     handleDeleteAccount: p
-  } = e, _ = t.isClaimed(), h = i.useRef(null);
-  return (0, o.A)(h, l.Ew.AccountScrollPositions.DISABLE_ACCOUNT), (0, r.jsx)(s.x, {
+  } = e, m = t.isClaimed(), g = i.useRef(null);
+  return (0, a.A)(g, o.Ew.AccountScrollPositions.DISABLE_ACCOUNT), (0, r.jsx)(s.x, {
     setting: c.H.ACCOUNT_DISABLE_ACCOUNT,
     children: (0, r.jsx)("div", {
-      ref: h,
-      children: (0, r.jsx)(a.D0$, {
-        label: u.intl.string(u.t.ZKsIks),
-        description: _ ? u.intl.string(u.t.TIh3Yj) : u.intl.string(u.t.czsGA8),
-        children: (0, r.jsxs)(a.ButtonGroup, {
+      ref: g,
+      children: (0, r.jsx)(l.D0$, {
+        label: d.intl.string(d.t.ZKsIks),
+        description: m ? d.intl.string(d.t.TIh3Yj) : d.intl.string(d.t.czsGA8),
+        children: (0, r.jsxs)(l.ButtonGroup, {
           size: "sm",
-          className: d.U,
-          children: [_ ? (0, r.jsx)(a.Button, {
+          className: u.U,
+          children: [m ? (0, r.jsx)(l.Button, {
             variant: "critical-primary",
             size: "sm",
-            text: u.intl.string(u.t.jf5GGb),
+            text: d.intl.string(d.t.jf5GGb),
             disabled: n,
-            onClick: f
+            onClick: _
           }) : null, (0, r.jsx)(s.x, {
             setting: c.H.ACCOUNT_DELETE_ACCOUNT,
-            children: (0, r.jsx)(a.Button, {
+            children: (0, r.jsx)(l.Button, {
               variant: "critical-secondary",
               size: "sm",
-              text: u.intl.string(u.t["8lQ2rR"]),
+              text: d.intl.string(d.t["8lQ2rR"]),
               disabled: n,
               onClick: p
             })

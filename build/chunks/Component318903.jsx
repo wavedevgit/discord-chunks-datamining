@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 318903, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 318903, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
@@ -12,28 +11,28 @@ var Chunk627968 = require("./627968.js"),
   Chunk590089 = require("./590089.jsx"),
   Chunk191563 = require("./191563.js");
 
-function u(e) {
-  var t, n, u, d;
+function d(e) {
+  var t, n, d, u;
   let {
-    node: f
+    node: _
   } = e, {
     destinationKey: p
-  } = f, _ = null == (t = f.useSubtitle) ? true : t.call(f), {
-    accessibleDirectory: h
-  } = (0, a._)(), m = h.entry(p), g = (null == m ? true : m.parentPanelKey) != null ? h.get(m.parentPanelKey) : true, E = null == (n = f.useTitle) ? true : n.call(f), y = null == g || null == (u = g.useTitle) ? true : u.call(g);
-  if (null == g) return null;
-  let b = (null == (d = g.parent) ? true : d.type) === s.Z6.SIDEBAR_ITEM ? g.parent.icon : true;
-  return (0, r.jsx)(l.U, {
-    title: null != E ? E : y,
-    description: _,
-    leadingElement: null != b && (0, r.jsx)("div", {
+  } = _, m = null == (t = _.useSubtitle) ? true : t.call(_), {
+    accessibleDirectory: g
+  } = (0, l._)(), A = g.entry(p), f = (null == A ? true : A.parentPanelKey) != null ? g.get(A.parentPanelKey) : true, h = null == (n = _.useTitle) ? true : n.call(_), b = null == f || null == (d = f.useTitle) ? true : d.call(f);
+  if (null == f) return null;
+  let E = (null == (u = f.parent) ? true : u.type) === s.Z6.SIDEBAR_ITEM ? f.parent.icon : true;
+  return (0, r.jsx)(o.U, {
+    title: null != h ? h : b,
+    description: m,
+    leadingElement: null != E && (0, r.jsx)("div", {
       className: c.z,
-      children: (0, r.jsx)(b, {
+      children: (0, r.jsx)(E, {
         color: "currentColor"
       })
     }),
     primaryTrailingElement: (0, r.jsx)(i.uhT, {}),
-    onClick: () => o.A.setState({
+    onClick: () => a.A.setState({
       requestedTargetKey: p
     })
   })

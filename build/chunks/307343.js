@@ -15,12 +15,12 @@ var Chunk427778 = require("./427778.js"),
   Chunk80292 = require("./80292.js"),
   d = function(e, t) {
     return e && t && t.split(" ").forEach(function(t) {
-      return (0, s.A)(e, t)
+      return (0, o.A)(e, t)
     })
   },
   f = function(e, t) {
     return e && t && t.split(" ").forEach(function(t) {
-      return (0, o.A)(e, t)
+      return (0, s.A)(e, t)
     })
   },
   p = function(e) {
@@ -61,12 +61,12 @@ var Chunk427778 = require("./427778.js"),
           r = "string" == typeof n,
           i = r && n ? n + "-" : "",
           a = r ? "" + i + e : n[e],
-          s = r ? a + "-active" : n[e + "Active"],
-          o = r ? a + "-done" : n[e + "Done"];
+          o = r ? a + "-active" : n[e + "Active"],
+          s = r ? a + "-done" : n[e + "Done"];
         return {
           baseClassName: a,
-          activeClassName: s,
-          doneClassName: o
+          activeClassName: o,
+          doneClassName: s
         }
       }, t
     }(0, a.A)(t, e);

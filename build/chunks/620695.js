@@ -2,12 +2,12 @@
 /** chunk id: 620695, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk322811 = require("./322811.js"),
   Chunk355418 = require("./355418.js"),
   Chunk658809 = require("./658809.js");
-class s extends Chunk355418.c {
+class o extends Chunk355418.c {
   innerPattern(e) {
     return /(diesen)?\s*(morgen|vormittag|mittags?|nachmittag|abend|nacht|mitternacht)(?=\W|$)/i
   }
@@ -15,7 +15,7 @@ class s extends Chunk355418.c {
     let n = e.refDate,
       r = t[2].toLowerCase(),
       i = e.createParsingComponents();
-    return (0, a.A4)(i, n), s.extractTimeComponents(i, r)
+    return (0, a.A4)(i, n), o.extractTimeComponents(i, r)
   }
   static extractTimeComponents(e, t) {
     switch (t) {

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 897518, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 897518, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
@@ -14,35 +13,30 @@ var Chunk284009 = require("./284009.js"),
   Chunk179499 = require("./179499.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f(e) {
+function p(e) {
   let {
     guildId: t,
     guildProductListingId: n,
     sourceAnalyticsLocations: r
-  } = e, f = (0, a.bG)([l.A], () => l.A.getGuildProduct(n)), p = (0, a.bG)([s.A], () => s.A.getGuild(t), [t]), _ = (0, u.A)({
+  } = e, p = (0, l.bG)([o.A], () => o.A.getGuildProduct(n)), m = (0, l.bG)([a.A], () => a.A.getGuild(t), [t]), f = (0, u.A)({
     guildId: t,
     productId: n
   });
-  if (i()(null != p, "guild cannot be null"), i()(null != f, "guildProductListing cannot be null"), (0, o.BB)(p)) return {
+  return (i()(null != m, "guild cannot be null"), i()(null != p, "guildProductListing cannot be null"), (0, s.BB)(m)) ? {
     variant: "primary",
     text: d.intl.string(d.t.xUi3BL),
     disabled: true
-  };
-  if (f.has_entitlement) return null != f.attachments ? _ : {
+  } : p.has_entitlement ? null != p.attachments ? f : {
     variant: "secondary",
     text: d.intl.string(d.t.RcTOGF),
     disabled: true
-  };
-  {
-    let e = () => (0, c.N)({
-      guildProductListing: f,
-      guildId: p.id,
+  } : {
+    variant: "primary",
+    text: d.intl.string(d.t.xUi3BL),
+    onClick: () => (0, c.N)({
+      guildProductListing: p,
+      guildId: m.id,
       sourceAnalyticsLocations: r
-    });
-    return {
-      variant: "primary",
-      text: d.intl.string(d.t.xUi3BL),
-      onClick: e
-    }
+    })
   }
 }

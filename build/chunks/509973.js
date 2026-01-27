@@ -10,11 +10,11 @@ function a(e, t) {
   return e.mean > t.mean ? 1 : e.mean < t.mean ? false : 0
 }
 
-function s(e, t) {
+function o(e, t) {
   return e.mean_cumn - t.mean_cumn
 }
 
-function o(e) {
+function s(e) {
   var t = Math.floor(Math.random() * e.length);
   return e.splice(t, 1)[0]
 }
@@ -106,7 +106,7 @@ i.prototype.reset = function() {
     return n !== r && (i += (e - n.mean) * (r.mean_cumn - n.mean_cumn) / (r.mean - n.mean)), i / this.n
   }
 }, i.prototype.bound_mean_cumn = function(e) {
-  this.centroids._comparator = s;
+  this.centroids._comparator = o;
   var t = this.centroids.upperBound({
     mean_cumn: e
   });
@@ -125,13 +125,13 @@ i.prototype.reset = function() {
       r = this.n * e,
       i = this.bound_mean_cumn(r),
       a = i[0],
-      s = i[1];
-    return s === a || null === a || null === s ? (a || s).mean : this.discrete ? r <= a.cumn ? a.mean : s.mean : a.mean + (r - a.mean_cumn) * (s.mean - a.mean) / (s.mean_cumn - a.mean_cumn)
+      o = i[1];
+    return o === a || null === a || null === o ? (a || o).mean : this.discrete ? r <= a.cumn ? a.mean : o.mean : a.mean + (r - a.mean_cumn) * (o.mean - a.mean) / (o.mean_cumn - a.mean_cumn)
   }
 }, i.prototype.compress = function() {
   if (!this.compressing) {
     var e = this.toArray();
-    for (this.reset(), this.compressing = true; e.length > 0;) this.push_centroid(o(e));
+    for (this.reset(), this.compressing = true; e.length > 0;) this.push_centroid(s(e));
     this._cumulate(true), this.compressing = false
   }
 }, l.prototype = Object.create(i.prototype), l.prototype.constructor = l, l.prototype.push = function(e) {

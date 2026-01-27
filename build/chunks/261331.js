@@ -5,8 +5,8 @@ require.d(exports, {
   Q6: () => r,
   SB: () => i,
   TJ: () => a,
-  n4: () => o,
-  oA: () => s
+  n4: () => s,
+  oA: () => o
 });
 var r = function(e) {
     return e.PLAYING = "playing", e.PAUSED = "paused", e.ENDED = "ended", e
@@ -17,9 +17,9 @@ var r = function(e) {
   a = function(e) {
     return e.PLAYBACK = "k", e.SPACE = " ", e.SEEK_BACK = "j", e.SEEK_FORWARD = "l", e.CAPTION = "c", e.FULLSCREEN = "f", e.MUTE = "m", e
   }({}),
-  s = function(e) {
+  o = function(e) {
     return e.MD = "md", e.LG = "lg", e
   }({}),
-  o = function(e) {
+  s = function(e) {
     return e.MD = "md", e.LG = "lg", e
   }({})

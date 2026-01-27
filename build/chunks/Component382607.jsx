@@ -19,9 +19,9 @@ function d(e) {
     applicationId: n,
     analyticsLocations: d
   } = e, [f, p] = i.useState(false), _ = i.useRef(null), h = i.useCallback(async () => {
-    s.default.track(c.HAw.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+    o.default.track(c.HAw.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
       application_id: n,
-      button_action: o.F5.OPEN_APP_DM
+      button_action: s.F5.OPEN_APP_DM
     }), p(true);
     try {
       await (0, l.Q)({

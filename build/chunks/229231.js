@@ -2,16 +2,16 @@
 /** chunk id: 229231, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ok: () => o,
-  Zc: () => s,
+  Ok: () => s,
+  Zc: () => o,
   _u: () => l,
   gk: () => c
 });
 var Chunk540185 = require("./540185.js"),
   Chunk587895 = require("./587895.js"),
   Chunk985018 = require("./985018.jsx");
-let s = [Chunk540185.x.APPLICATION, Chunk540185.x.FAVORITE_GAMES, Chunk540185.x.PLAYED_GAMES, Chunk540185.x.CURRENT_GAMES, Chunk540185.x.WANT_TO_PLAY_GAMES],
-  o = {
+let o = [Chunk540185.x.APPLICATION, Chunk540185.x.FAVORITE_GAMES, Chunk540185.x.PLAYED_GAMES, Chunk540185.x.CURRENT_GAMES, Chunk540185.x.WANT_TO_PLAY_GAMES],
+  s = {
     [Chunk540185.x.FAVORITE_GAMES]: () => a.intl.string(a.t.sUQar8),
     [Chunk540185.x.CURRENT_GAMES]: () => a.intl.string(a.t.SqNnus),
     [Chunk540185.x.WANT_TO_PLAY_GAMES]: () => a.intl.string(a.t.bWSQwW),

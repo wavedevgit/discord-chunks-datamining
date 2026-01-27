@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk253018 = require("./253018.js"),
   Chunk311907 = require("./311907.js"),
   Chunk155718 = require("./155718.js"),
@@ -63,17 +63,17 @@ function v(e, t, n) {
   let {
     attributes: i,
     children: a,
-    element: s
+    element: o
   } = t;
-  switch (s.type) {
+  switch (o.type) {
     case "applicationCommand":
-      let o = u.A.getActiveCommand(n),
+      let s = u.A.getActiveCommand(n),
         l = 0,
         c = 0;
-      if (null != o && o.id === s.command.id) {
+      if (null != s && s.id === o.command.id) {
         var d;
         let t = p.O7(e);
-        for (let e of null != (d = o.options) ? d : []) t.includes(e.name) ? c++ : l++
+        for (let e of null != (d = s.options) ? d : []) t.includes(e.name) ? c++ : l++
       }
       let f = {};
       if (l > 0) {
@@ -93,7 +93,7 @@ function v(e, t, n) {
       return (0, r.jsx)(A, {
         attributes: i,
         channelId: n,
-        element: s,
+        element: o,
         children: a
       });
     default:
@@ -107,9 +107,9 @@ let A = e => {
       attributes: p,
       children: E
     } = e,
-    b = (0, o.f7)(),
-    v = (0, o.zL)(),
-    A = (0, o.RV)(),
+    b = (0, s.f7)(),
+    v = (0, s.zL)(),
+    A = (0, s.RV)(),
     {
       optionType: I,
       errored: S
@@ -123,7 +123,7 @@ let A = e => {
     T = (0, l.bG)([f.A], () => f.A.getUpload(n, a.optionName, d.C.SlashCommand), [n, a.optionName]),
     C = a.children[a.children.length - 1],
     N = null != C && h.l5.isText(C) && C.text.endsWith("\n"),
-    w = s()(g.S0, g.xP, {
+    w = o()(g.S0, g.xP, {
       [g.t$]: v && b,
       [g.$2]: (!v || !b) && S
     }),
@@ -131,11 +131,11 @@ let A = e => {
       h.VW.isVoid(A, a) || _.b.selectCommandOption(A, a.optionName, true)
     }, [A, a]);
   return t = I === c.n4.ATTACHMENT ? (null == T ? true : T.filename) != null ? (0, r.jsxs)("span", {
-    className: s()(g._K, g.dU),
+    className: o()(g._K, g.dU),
     contentEditable: false,
     children: [T.filename, E]
   }) : (0, r.jsxs)("span", {
-    className: s()(g._K, g.ZI),
+    className: o()(g._K, g.ZI),
     contentEditable: false,
     children: [m.intl.string(m.t.GRdFni), E]
   }) : (0, r.jsxs)("span", {

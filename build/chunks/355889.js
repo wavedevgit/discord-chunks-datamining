@@ -2,7 +2,7 @@
 /** chunk id: 355889, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => s
+  x: () => o
 });
 var Chunk510801 = require("./510801.js"),
   Chunk419709 = require("./419709.js");
@@ -15,9 +15,9 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s {
+class o {
   static fromServer(e) {
-    return new s(e)
+    return new o(e)
   }
   constructor(e) {
     var t;

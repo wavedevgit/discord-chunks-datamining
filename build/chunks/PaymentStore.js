@@ -1,57 +1,47 @@
-/** Chunk was on web.js **/
-/** chunk id: 933392, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 933392, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => u
 }), require("./321073.js"), require("./896048.js"), require("./638769.js");
-var r, Chunk311907 = require("./311907.js"),
+var r, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk380098 = require("./380098.js");
-
-function o(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-let l = [];
+let o = [];
 
 function c(e) {
   let {
-    payments: t
-  } = e;
-  for (let e of t) {
-    let t = s.A.createFromServer(e),
-      n = l.findIndex(t => t.id === e.id);
-    false !== n ? l[n] = t : l.push(t)
-  }
-  l.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime()), l = [...l]
-}
-
-function u(e) {
-  let {
     payment: t
-  } = e, n = s.A.createFromServer(t), r = l.findIndex(e => e.id === t.id);
-  false === r ? (l.push(n), l.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime())) : l[r] = n, l = [...l]
+  } = e, n = a.A.createFromServer(t), r = o.findIndex(e => e.id === t.id);
+  false === r ? (o.push(n), o.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime())) : o[r] = n, o = [...o]
 }
-
-function d() {
-  l = []
-}
-class f extends(r = Chunk311907.Ay.Store) {
+class d extends(r = Chunk311907.Ay.Store) {
   getPayment(e) {
-    return l.find(t => t.id === e)
+    return o.find(t => t.id === e)
   }
   getPayments() {
-    return l
+    return o
   }
-}
-o(f, "displayName", "PaymentStore");
-let p = new f(Chunk73153.h, {
-  BILLING_PAYMENTS_FETCH_SUCCESS: c,
-  PAYMENT_UPDATE: u,
-  BILLING_PAYMENT_FETCH_SUCCESS: u,
-  LOGOUT: d
+}(i = "displayName") in d ? Object.defineProperty(d, i, {
+  value: "PaymentStore",
+  enumerable: true,
+  configurable: true,
+  writable: true
+}) : d[i] = "PaymentStore";
+let u = new d(Chunk73153.h, {
+  BILLING_PAYMENTS_FETCH_SUCCESS: function(e) {
+    let {
+      payments: t
+    } = e;
+    for (let e of t) {
+      let t = a.A.createFromServer(e),
+        n = o.findIndex(t => t.id === e.id);
+      false !== n ? o[n] = t : o.push(t)
+    }
+    o.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime()), o = [...o]
+  },
+  PAYMENT_UPDATE: c,
+  BILLING_PAYMENT_FETCH_SUCCESS: c,
+  LOGOUT: function() {
+    o = []
+  }
 })

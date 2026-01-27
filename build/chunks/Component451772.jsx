@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk860923 = require("./860923.js"),
   Chunk816790 = require("./816790.js");
@@ -24,12 +24,12 @@ let u = 5500,
       skipNewUserEducation: h = false,
       shadowPosition: m
     } = e, g = (0, l.A)(), E = i.useMemo(() => null == g ? true : g.seats[p], [g, p]), y = i.useMemo(() => null == E ? true : E.seat, [E]), b = i.useMemo(() => null == E ? true : E.shadow, [E]);
-    return (0, r.jsx)(o.DUT, {
+    return (0, r.jsx)(s.DUT, {
       "aria-label": "claim seat",
       onClick: null != _ ? e => {
         e.preventDefault(), e.stopPropagation(), _(t)
       } : true,
-      className: s()(c.am, {
+      className: o()(c.am, {
         [c.Sf]: null != n
       }),
       style: {
@@ -38,7 +38,7 @@ let u = 5500,
       children: (0, r.jsxs)("div", {
         className: c.LU,
         children: [null != b && null != m && (0, r.jsx)("img", {
-          className: s()(c.Sl, c.r7),
+          className: o()(c.Sl, c.r7),
           style: {
             transform: "translate(".concat(m.x, "px, ").concat(m.y, "px)")
           },
@@ -46,7 +46,7 @@ let u = 5500,
           alt: ""
         }), null != y && (0, r.jsx)("img", {
           onDragStart: e => e.preventDefault(),
-          className: s()(c.Sl, {
+          className: o()(c.Sl, {
             [c.Sf]: null != n,
             [c.cb]: h
           }),

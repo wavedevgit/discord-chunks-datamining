@@ -55,7 +55,7 @@ let _ = 6e5,
 
 function m(e, t, n) {
   (0, c.n)("useMaybeFetchCollectiblesCategoriesShared");
-  let u = (0, a.bG)([s.A], () => s.A.hasLoadedExperiments),
+  let u = (0, a.bG)([o.A], () => o.A.hasLoadedExperiments),
     f = null == e ? true : e.includeBundles,
     m = i.g.VARIANTS_GROUP,
     [g, E, y, b, O, v, A] = (0, a.yK)([l.A], () => {
@@ -71,9 +71,9 @@ function m(e, t, n) {
         includeBundles: f,
         skipNumCategories: A
       }),
-      a = !(0, o.gn)(E, i),
-      s = Date.now() - O < _;
-    (a || !s) && (0, o.CK)(i, t, n)
+      a = !(0, s.gn)(E, i),
+      o = Date.now() - O < _;
+    (a || !o) && (0, s.CK)(i, t, n)
   }, [u, g, E, O, e, y, f, b, t, n, A, m]), {
     isFetching: g,
     categories: v,
@@ -84,7 +84,7 @@ function m(e, t, n) {
         includeBundles: f,
         skipNumCategories: A
       });
-      (0, o.CK)(t, true, n)
+      (0, s.CK)(t, true, n)
     }, [e, f, n, A, m])
   }
 }

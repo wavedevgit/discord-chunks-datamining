@@ -35,13 +35,13 @@ function a(e, t) {
   return n
 }
 
-function s(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function o(e, t) {
+function s(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -97,7 +97,7 @@ let f = (0, require("./353640.js").v)(() => ({
       },
       setImgCache: (t, n, r) => {
         e.setState(e => ({
-          imgCache: s(i({}, e.imgCache), {
+          imgCache: o(i({}, e.imgCache), {
             [t]: {
               animatedUrl: n,
               staticUrl: r
@@ -113,7 +113,7 @@ let f = (0, require("./353640.js").v)(() => ({
       toolsCache: e.getState().toolsCache,
       setToolsCache: (t, n, r) => {
         e.setState(e => ({
-          toolsCache: s(i({}, e.toolsCache), {
+          toolsCache: o(i({}, e.toolsCache), {
             [t]: {
               url: n,
               palette: r
@@ -127,7 +127,7 @@ let f = (0, require("./353640.js").v)(() => ({
             toolsCache: n
           } = e, {
             [t]: r
-          } = n, i = o(n, [u(t)]);
+          } = n, i = s(n, [u(t)]);
           return {
             imgCache: e.imgCache,
             toolsCache: i

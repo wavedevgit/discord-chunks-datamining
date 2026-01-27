@@ -49,7 +49,7 @@ function d(e, t) {
   }), e
 }
 let f = Chunk64700.forwardRef((e, t) => {
-  let n = (0, s.bG)([o.A], () => o.A.useReducedMotion);
+  let n = (0, o.bG)([s.A], () => s.A.useReducedMotion);
   return (0, r.jsx)(a.A, d(c({}, e), {
     ref: t,
     useReducedMotion: n

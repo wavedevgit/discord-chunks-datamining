@@ -72,7 +72,7 @@ function m(e) {
     let {
       closePopout: t
     } = e;
-    return (0, r.jsx)(o.A, {
+    return (0, r.jsx)(s.A, {
       persistSearch: true,
       channel: _,
       closePopout: t,
@@ -110,7 +110,7 @@ function m(e) {
         let {
           isShown: n
         } = t;
-        return (0, r.jsx)(s.A, h(p({}, e), {
+        return (0, r.jsx)(o.A, h(p({}, e), {
           ref: g,
           active: n,
           className: d.Z8,

@@ -10,7 +10,7 @@ var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,7 +18,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = 6e4,
+let s = 6e4,
   l = 3e3;
 var c = function(e) {
     return e.FORUM_CHANNEL = "forum_channel", e
@@ -61,12 +61,12 @@ class d {
     return i()(n.length < 2, "there should only be a single left over data"), this.seenIntervals = n, Math.round(t)
   }
   constructor() {
-    s(this, "seenIntervals", true), this.seenIntervals = []
+    o(this, "seenIntervals", true), this.seenIntervals = []
   }
 }
 class f {
   maybeFlushSeenItems(e) {
-    if (null == e && Date.now() - this._lastFlushTimeMillis < o || 1 === e && Date.now() - this._lastFlushTimeMillis < l) return Promise.resolve();
+    if (null == e && Date.now() - this._lastFlushTimeMillis < s || 1 === e && Date.now() - this._lastFlushTimeMillis < l) return Promise.resolve();
     let t = this.createFlushSeenItemsFunction(e);
     return null == t ? Promise.resolve() : new Promise((this._lastFlushTimeMillis = Date.now(), 0 === e || 1 === e) ? async e => {
       await t(), e()
@@ -81,47 +81,47 @@ class f {
     windowId: t,
     isPaused: n
   }) {
-    s(this, "trackedFeedItems", true), s(this, "_lastFlushTimeMillis", true), s(this, "_pausedFeedItemIds", true), s(this, "_paused", true), s(this, "_windowId", true), s(this, "_isReactNavigationFocused", true), s(this, "_id", true), s(this, "onInitialize", true), s(this, "onTerminate", true), s(this, "onFeedItemSeen", true), s(this, "onFeedItemUnseen", true), s(this, "initialize", () => {
+    o(this, "trackedFeedItems", true), o(this, "_lastFlushTimeMillis", true), o(this, "_pausedFeedItemIds", true), o(this, "_paused", true), o(this, "_windowId", true), o(this, "_isReactNavigationFocused", true), o(this, "_id", true), o(this, "onInitialize", true), o(this, "onTerminate", true), o(this, "onFeedItemSeen", true), o(this, "onFeedItemUnseen", true), o(this, "initialize", () => {
       var e, t;
       a.h.subscribe("ANALYTICS_FEED_ITEM_SEEN", this.handleFeedItemSeen), a.h.subscribe("ANALYTICS_FEED_ITEM_UNSEEN", this.handleFeedItemUnseen), a.h.subscribe("ANALYTICS_FEED_FLUSH", this.handleFeedItemFlush), a.h.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), a.h.subscribe("WINDOW_FOCUS", this.handleWindowFocus), null == (e = (t = this).onInitialize) || e.call(t)
-    }), s(this, "terminate", () => {
+    }), o(this, "terminate", () => {
       var e, t;
       a.h.unsubscribe("ANALYTICS_FEED_ITEM_SEEN", this.handleFeedItemSeen), a.h.unsubscribe("ANALYTICS_FEED_ITEM_UNSEEN", this.handleFeedItemUnseen), a.h.unsubscribe("ANALYTICS_FEED_FLUSH", this.handleFeedItemFlush), a.h.unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), a.h.unsubscribe("WINDOW_FOCUS", this.handleWindowFocus), null == (e = (t = this).onTerminate) || e.call(t), this.maybeFlushSeenItems(0)
-    }), s(this, "handleFeedItemFlush", e => {
+    }), o(this, "handleFeedItemFlush", e => {
       let {
         id: t,
         force: n
       } = e;
       this._id === t && this.maybeFlushSeenItems(n)
-    }), s(this, "handleFeedItemSeen", e => {
+    }), o(this, "handleFeedItemSeen", e => {
       var t, n;
       let r = e.id,
         i = e.timestampMillis,
         a = e.feedItemId;
       if (r !== this._id) return;
       if (this._paused) return void this._pausedFeedItemIds.add(a);
-      let s = this.getTrackedFeedItem(a).maybeMarkSeen(i);
-      null == (t = (n = this).onFeedItemSeen) || t.call(n, a, s)
-    }), s(this, "handleFeedItemUnseen", e => {
+      let o = this.getTrackedFeedItem(a).maybeMarkSeen(i);
+      null == (t = (n = this).onFeedItemSeen) || t.call(n, a, o)
+    }), o(this, "handleFeedItemUnseen", e => {
       var t, n;
       let r = e.id,
         i = e.timestampMillis,
         a = e.feedItemId;
       if (r !== this._id) return;
       this._paused && this._pausedFeedItemIds.delete(a);
-      let s = this.getTrackedFeedItem(a).maybeMarkUnseen(i);
-      null == (t = (n = this).onFeedItemUnseen) || t.call(n, a, s), this.maybeFlushSeenItems()
-    }), s(this, "getTrackedFeedItem", e => (null == this.trackedFeedItems[e] && (this.trackedFeedItems[e] = new d), this.trackedFeedItems[e])), s(this, "getVisibleFeedItemIds", () => new Set(Object.keys(this.trackedFeedItems).filter(e => {
+      let o = this.getTrackedFeedItem(a).maybeMarkUnseen(i);
+      null == (t = (n = this).onFeedItemUnseen) || t.call(n, a, o), this.maybeFlushSeenItems()
+    }), o(this, "getTrackedFeedItem", e => (null == this.trackedFeedItems[e] && (this.trackedFeedItems[e] = new d), this.trackedFeedItems[e])), o(this, "getVisibleFeedItemIds", () => new Set(Object.keys(this.trackedFeedItems).filter(e => {
       var t;
       return null == (t = this.trackedFeedItems[e]) ? true : t.isVisible()
-    }))), s(this, "handleAppStateUpdate", e => {
+    }))), o(this, "handleAppStateUpdate", e => {
       let {
         state: t
       } = e;
       "active" === t && this._isReactNavigationFocused && this.resume(), "background" === t && (this._isReactNavigationFocused && this.pause(), this.maybeFlushSeenItems(0))
-    }), s(this, "clearPausedFeedItemIds", () => {
+    }), o(this, "clearPausedFeedItemIds", () => {
       this._pausedFeedItemIds = new Set, this._paused = false
-    }), s(this, "pause", () => {
+    }), o(this, "pause", () => {
       if (this._paused) return;
       let e = this.getVisibleFeedItemIds();
       e.forEach(e => {
@@ -132,7 +132,7 @@ class f {
           type: "ANALYTICS_FEED_ITEM_UNSEEN"
         })
       }), this._paused = true, this._pausedFeedItemIds = e
-    }), s(this, "resume", () => {
+    }), o(this, "resume", () => {
       this._paused && (this._paused = false, this._pausedFeedItemIds.forEach(e => {
         this.handleFeedItemSeen({
           id: this._id,
@@ -141,9 +141,9 @@ class f {
           type: "ANALYTICS_FEED_ITEM_SEEN"
         })
       }), this.clearPausedFeedItemIds())
-    }), s(this, "handleReactNavigationFocus", e => {
+    }), o(this, "handleReactNavigationFocus", e => {
       this._isReactNavigationFocused = e, this._isReactNavigationFocused ? this.resume() : this.pause()
-    }), s(this, "handleWindowFocus", e => {
+    }), o(this, "handleWindowFocus", e => {
       this._windowId === e.windowId && (e.focused ? this.resume() : this.pause())
     }), this.trackedFeedItems = {}, this._id = e, this._windowId = t, this._pausedFeedItemIds = new Set, this._paused = null != n && n, this._isReactNavigationFocused = true, this._lastFlushTimeMillis = Date.now()
   }

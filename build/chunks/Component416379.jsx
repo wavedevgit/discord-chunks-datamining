@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
@@ -30,7 +30,7 @@ let A = 2,
 function S(e, t) {
   let n = e.id,
     r = t.id;
-  return (0, o.bG)([E.A], () => {
+  return (0, s.bG)([E.A], () => {
     let e = r;
     for (let t = 0; t < I; t++) {
       let r = E.A.getMessage(n, e);
@@ -48,21 +48,21 @@ function T(e) {
     replyChainLength: a
   } = e;
 
-  function s() {
+  function o() {
     (0, _.Jx)(t.id), (0, g.Tv)(t, n, "Reply Chain Nudge")
   }
-  let o = i.useRef(a);
+  let s = i.useRef(a);
   return i.useEffect(() => {
-    o.current = a
+    s.current = a
   }), i.useEffect(() => {
     (0, u.zV)(b.HAw.THREAD_NUDGE_SHOWN, {
       type: "Reply Chain (".concat(A + 1, ")"),
-      reply_chain_length: o.current + 1,
+      reply_chain_length: s.current + 1,
       channel_id: t.id,
       guild_id: t.guild_id
     })
   }, [t]), (0, r.jsxs)(c.DUT, {
-    onClick: s,
+    onClick: o,
     className: v._r,
     focusProps: {
       offset: {
@@ -93,7 +93,7 @@ function C(e) {
   } = e, {
     channel: i,
     message: a,
-    shouldMention: o,
+    shouldMention: s,
     showMentionToggle: u
   } = t, {
     guildId: g,
@@ -105,10 +105,10 @@ function C(e) {
     displayNameStyles: R
   } = (0, f.Ay)(a), P = (0, p.gn)(g, w, C), D = (0, d.a)({
     displayNameStyles: R
-  }), x = S(i, a), L = (0, m.n)(i, a), j = n.showThreadPromptOnReply && x >= A && L, M = () => (0, h.pX)(b.BVt.CHANNEL(i.getGuildId(), i.id, a.id));
+  }), L = S(i, a), x = (0, m.n)(i, a), M = n.showThreadPromptOnReply && L >= A && x, j = () => (0, h.pX)(b.BVt.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function k(e) {
-    e.stopPropagation(), (0, _.vz)(i.id, !o)
+    e.stopPropagation(), (0, _.vz)(i.id, !s)
   }
 
   function U(e) {
@@ -121,7 +121,7 @@ function C(e) {
       children: [(0, r.jsxs)("div", {
         className: v.eU,
         children: [(0, r.jsx)(c.DUT, {
-          onClick: M,
+          onClick: j,
           focusProps: {
             offset: {
               top: false,
@@ -132,7 +132,7 @@ function C(e) {
           },
           children: (0, r.jsx)(c.Text, {
             color: "text-default",
-            className: s()(v.Qq, v.Fn),
+            className: o()(v.Qq, v.Fn),
             variant: "text-sm/normal",
             children: O.intl.format(O.t["8E4GxS"], {
               userHook: (e, t) => (0, r.jsx)(c.gyj, {
@@ -150,21 +150,21 @@ function C(e) {
           children: [u && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(l.m, {
               asContainer: true,
-              text: o ? O.intl.string(O.t.DH2o6R) : O.intl.string(O.t.utGGIY),
+              text: s ? O.intl.string(O.t.DH2o6R) : O.intl.string(O.t.utGGIY),
               children: (0, r.jsx)(c.DUT, {
                 role: "switch",
-                "aria-checked": o,
+                "aria-checked": s,
                 onClick: k,
                 children: (0, r.jsxs)(c.Text, {
                   variant: "text-sm/bold",
-                  color: o ? "text-link" : "text-muted",
+                  color: s ? "text-link" : "text-muted",
                   className: v.Z4,
                   children: [(0, r.jsx)(c.XxR, {
                     size: "md",
                     color: "currentColor",
                     "aria-label": O.intl.string(O.t.P8tvKG),
                     className: v.mM
-                  }), o ? O.intl.string(O.t.p9jC2r) : O.intl.string(O.t.U7f3bK)]
+                  }), s ? O.intl.string(O.t.p9jC2r) : O.intl.string(O.t.U7f3bK)]
                 })
               })
             }), (0, r.jsx)("div", {
@@ -175,10 +175,10 @@ function C(e) {
             onClick: U
           })]
         })]
-      }), j && (0, r.jsx)(T, {
+      }), M && (0, r.jsx)(T, {
         channel: i,
         message: a,
-        replyChainLength: x
+        replyChainLength: L
       })]
     })
   })

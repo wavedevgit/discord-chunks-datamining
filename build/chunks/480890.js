@@ -23,7 +23,7 @@ function c(e, t) {
     menuItemProps: n,
     menuName: e,
     location: t,
-    entrypoint: null != a ? a : o.GK.CONTEXT_MENU,
+    entrypoint: null != a ? a : s.GK.CONTEXT_MENU,
     targetUserId: r,
     tileType: i
   })
@@ -35,15 +35,15 @@ function u(e) {
     menuItemProps: {
       type: n
     },
-    menuName: o,
+    menuName: s,
     location: c,
     entrypoint: u,
     targetUserId: d,
     tileType: f
   } = e, p = a.A.getChannelId(), _ = a.A.getGuildId(), h = null == (t = i.A.getChannel(p)) ? true : t.type, m = r.default.getId();
-  s.default.track(l.HAw.CALL_MENU_ITEM_INTERACTED, {
+  o.default.track(l.HAw.CALL_MENU_ITEM_INTERACTED, {
     location: c,
-    menu_name: o,
+    menu_name: s,
     menu_item_type: n,
     entrypoint: u,
     targets_self: null == d ? true : d === m,

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 511968, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 511968, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,30 +18,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk689296 = require("./689296.jsx"),
   Chunk542858 = require("./542858.js");
 
-function g(e) {
+function f(e) {
   let {
     cta: t,
     storeListing: n,
-    className: a
+    className: l
   } = e, {
-    applicationId: g,
-    benefits: E,
-    description: y
-  } = n, b = i.useMemo(() => null == n.thumbnail ? null : (0, _.t)(g, n.thumbnail, 256), [g, n.thumbnail]), {
-    data: O
-  } = (0, u.j)(n.skuId), v = i.useMemo(() => {
-    if (null == O || 0 === O.length) return null;
-    let e = O[0];
-    return (0, f._J)(e)
-  }, [O]);
-  return null == v ? null : (0, r.jsxs)(o.q, {
-    className: s()(m.iE, a),
+    applicationId: f,
+    benefits: h,
+    description: b
+  } = n, E = i.useMemo(() => null == n.thumbnail ? null : (0, m.t)(f, n.thumbnail, 256), [f, n.thumbnail]), {
+    data: x
+  } = (0, d.j)(n.skuId), O = i.useMemo(() => {
+    if (null == x || 0 === x.length) return null;
+    let e = x[0];
+    return (0, _._J)(e)
+  }, [x]);
+  return null == O ? null : (0, r.jsxs)(a.q, {
+    className: s()(A.iE, l),
     header: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: m.qd,
-        children: [null != b && (0, r.jsx)(c._V3, {
-          src: b.href,
-          imageClassName: m.rW,
+        className: A.qd,
+        children: [null != E && (0, r.jsx)(c._V3, {
+          src: E.href,
+          imageClassName: A.rW,
           width: 48,
           height: 48
         }), (0, r.jsxs)("div", {
@@ -51,29 +50,29 @@ function g(e) {
             children: n.summary
           }), (0, r.jsx)(c.Text, {
             variant: "text-md/medium",
-            children: v
+            children: O
           })]
         })]
       }), t]
     }),
-    children: [!(0, p.uJ)(y) && (0, r.jsx)("div", {
-      className: m.h_,
-      children: (0, r.jsx)(h.A, {
+    children: [!(0, p.uJ)(b) && (0, r.jsx)("div", {
+      className: A.h_,
+      children: (0, r.jsx)(g.A, {
         variant: "text-sm/medium",
-        children: y
+        children: b
       })
-    }), null != E && E.length > 0 && (0, r.jsx)("div", {
-      className: m.PX,
-      children: E.map(e => {
+    }), null != h && h.length > 0 && (0, r.jsx)("div", {
+      className: A.PX,
+      children: h.map(e => {
         let {
           id: t,
           name: n,
           description: i,
-          icon: a
+          icon: l
         } = e;
-        return (0, r.jsx)(l.FY, {
+        return (0, r.jsx)(o.FY, {
           header: n,
-          icon: (0, d.N)(g, a),
+          icon: (0, u.N)(f, l),
           description: i
         }, t)
       })

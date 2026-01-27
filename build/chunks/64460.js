@@ -23,6 +23,6 @@ let f = {
   comboKeysBindGlobal: true,
   action(e, t) {
     let n, f = parseInt(t.split("+")[1], 10);
-    if ((0 === f && (f = 10), !isNaN(f) && 0 !== f) && null != (n = 1 === f ? d.ME : (0, i.J)(r.A, o.A, l.A) ? 2 === f ? d.YYv : u.Ay.getFlattenedGuildIds()[f - 3] : u.Ay.getFlattenedGuildIds()[f - 2])) return n === d.ME && null == c.A.getGuildId() ? (0, a.pX)(d.BVt.CHANNEL(n)) : (0, s.u)(n), false
+    if ((0 === f && (f = 10), !isNaN(f) && 0 !== f) && null != (n = 1 === f ? d.ME : (0, i.J)(r.A, s.A, l.A) ? 2 === f ? d.YYv : u.Ay.getFlattenedGuildIds()[f - 3] : u.Ay.getFlattenedGuildIds()[f - 2])) return n === d.ME && null == c.A.getGuildId() ? (0, a.pX)(d.BVt.CHANNEL(n)) : (0, o.u)(n), false
   }
 }

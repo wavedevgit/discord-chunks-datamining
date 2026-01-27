@@ -36,7 +36,7 @@ function E() {
       useForcedColors: c.A.useForcedColors
     })),
     b = _.Xi.useSetting(),
-    O = (e, i) => (0, r.jsx)(s.iDA, {
+    O = (e, i) => (0, r.jsx)(o.iDA, {
       id: e,
       group: "input-modes",
       label: i,
@@ -47,17 +47,17 @@ function E() {
           isPersisted: true,
           analyticsLocations: t,
           themeName: "default ".concat(e)
-        }), (0, o.u_)({
+        }), (0, s.u_)({
           theme: e
         })
       }
     }),
-    v = [(0, r.jsxs)(s.rXV, {
+    v = [(0, r.jsxs)(o.rXV, {
       children: [O(m.NJ8.LIGHT, g.intl.string(g.t.K2sFfo)), O(m.NJ8.DARK, g.intl.string(g.t.SMPT1k)), O(m.NJ8.DARKER, g.intl.string(g.t.b8Cei3)), O(m.NJ8.MIDNIGHT, g.intl.string(g.t.Do4ZJx)), O("system", g.intl.string(g.t["7rOU6j"]))]
     }, "theme-items")];
-  return v.push((0, r.jsxs)(s.rXV, {
+  return v.push((0, r.jsxs)(o.rXV, {
     label: "UI Density",
-    children: [(0, r.jsx)(s.iDA, {
+    children: [(0, r.jsx)(o.iDA, {
       id: "compact-ui",
       group: "list-density",
       label: g.intl.string(g.t["7iegX4"]),
@@ -65,7 +65,7 @@ function E() {
       action: () => {
         _.Xi.updateSetting(a.NS.COMPACT)
       }
-    }), (0, r.jsx)(s.iDA, {
+    }), (0, r.jsx)(o.iDA, {
       id: "default-ui",
       group: "list-density",
       label: g.intl.string(g.t.bBvAEH),
@@ -73,7 +73,7 @@ function E() {
       action: () => {
         _.Xi.updateSetting(a.NS.DEFAULT)
       }
-    }), (0, r.jsx)(s.iDA, {
+    }), (0, r.jsx)(o.iDA, {
       id: "cozy-ui",
       group: "list-density",
       label: g.intl.string(g.t["4cuYHx"]),
@@ -82,9 +82,9 @@ function E() {
         _.Xi.updateSetting(a.NS.COZY)
       }
     })]
-  }, "list-density")), v.push((0, r.jsxs)(s.rXV, {
+  }, "list-density")), v.push((0, r.jsxs)(o.rXV, {
     label: "Message Display",
-    children: [(0, r.jsx)(s.iDA, {
+    children: [(0, r.jsx)(o.iDA, {
       id: "cozy-chat",
       group: "chat-density",
       label: g.intl.string(g.t.Jqj4cZ),
@@ -92,7 +92,7 @@ function E() {
       action: () => {
         _.hH.updateSetting(false), (0, l.AC)()
       }
-    }), (0, r.jsx)(s.iDA, {
+    }), (0, r.jsx)(o.iDA, {
       id: "compact-chat",
       group: "chat-density",
       label: g.intl.string(g.t["1JNcPS"]),

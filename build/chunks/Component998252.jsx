@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 998252, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 998252, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
@@ -20,11 +19,11 @@ function c(e) {
     type: "warning",
     children: [(0, r.jsx)(i.Heading, {
       variant: "heading-md/medium",
-      children: o.intl.string(o.t.tuGzBT)
+      children: a.intl.string(a.t.tuGzBT)
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      className: l.PA,
-      children: o.intl.string(o.t.NAzplE)
+      className: o.PA,
+      children: a.intl.string(a.t.NAzplE)
     }), (0, r.jsx)(s.A, {
       size: "sm",
       variant: "secondary"
@@ -33,16 +32,16 @@ function c(e) {
     type: "critical",
     children: [(0, r.jsx)(i.Heading, {
       variant: "heading-md/medium",
-      children: o.intl.string(o.t["/3qnL/"])
+      children: a.intl.string(a.t["/3qnL/"])
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      className: l.PA,
-      children: o.intl.string(o.t.qKs3vg)
+      className: o.PA,
+      children: a.intl.string(a.t.qKs3vg)
     }), (0, r.jsx)(i.Button, {
       variant: "secondary",
       size: "sm",
-      text: o.intl.string(o.t["7psymi"]),
-      onClick: () => a.A.openClaimAccountModal()
+      text: a.intl.string(a.t["7psymi"]),
+      onClick: () => l.A.openClaimAccountModal()
     })]
   })
 }

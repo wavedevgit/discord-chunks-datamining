@@ -8,7 +8,7 @@ var Chunk451988 = require("./451988.js"),
   Chunk73153 = require("./73153.js"),
   Chunk439372 = require("./439372.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,16 +16,16 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = 3e3;
+let s = 3e3;
 class l extends Chunk439372.A {
   _terminate() {
     this.clearErrorTimeout.stop()
   }
   constructor(...e) {
-    super(...e), s(this, "clearErrorTimeout", new r.Ep), s(this, "actions", {
+    super(...e), o(this, "clearErrorTimeout", new r.Ep), o(this, "actions", {
       MEDIA_ENGINE_NOISE_CANCELLATION_ERROR: () => this.handleNoiseCancellationError()
-    }), s(this, "handleNoiseCancellationError", () => {
-      this.clearErrorTimeout.start(o, () => i.h.dispatch({
+    }), o(this, "handleNoiseCancellationError", () => {
+      this.clearErrorTimeout.start(s, () => i.h.dispatch({
         type: "MEDIA_ENGINE_NOISE_CANCELLATION_ERROR_RESET"
       }))
     })

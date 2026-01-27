@@ -10,7 +10,7 @@ var Chunk416696 = require("./416696.jsx"),
   Chunk709562 = require("./709562.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -53,15 +53,15 @@ function u(e, t) {
 }
 
 function d(e) {
-  return e ? s.intl.string(s.t.S5anIc) : s.intl.string(s.t.q3O3J8)
+  return e ? o.intl.string(o.t.S5anIc) : o.intl.string(o.t.q3O3J8)
 }
 
 function f(e) {
   let {
     isSelfStream: t,
     centerButton: n = false,
-    onMouseEnter: s,
-    onMouseLeave: o
+    onMouseEnter: o,
+    onMouseLeave: s
   } = e, u = c(e, ["isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave"]), f = n ? a.l : a.A, {
     Component: p,
     events: _
@@ -71,10 +71,10 @@ function f(e) {
     isTrayButton: false,
     iconComponent: p,
     onMouseEnter: e => {
-      null == s || s(e), _.onMouseEnter()
+      null == o || o(e), _.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == o || o(e), _.onMouseLeave()
+      null == s || s(e), _.onMouseLeave()
     }
   }, u))
 }

@@ -37,19 +37,19 @@ function f(e) {
     assetLoader: w,
     onLoad: R,
     stateMachine: P
-  } = e, D = i.useContext(l.C), x = (0, o.R)(), L = null != (t = null == (n = (a = (0, c.G9)()).isWindowFocused) ? true : n.call(a)) ? t : x, [j, M] = i.useState(true), k = i.useRef(null), {
+  } = e, D = i.useContext(l.C), L = (0, s.R)(), x = null != (t = null == (n = (a = (0, c.G9)()).isWindowFocused) ? true : n.call(a)) ? t : L, [M, j] = i.useState(true), k = i.useRef(null), {
     rive: U,
     RiveComponent: G
-  } = (0, s.useRive)({
+  } = (0, o.useRive)({
     eventTarget: null == E ? true : E.current,
     buffer: f,
     autoplay: p,
-    stateMachines: null != P ? [P] : j,
+    stateMachines: null != P ? [P] : M,
     artboard: y,
     useOffscreenRenderer: true,
-    layout: new s.Layout({
-      fit: null != h ? u.i[h] : s.Fit.Cover,
-      alignment: null != m ? u.y[m] : s.Alignment.Center
+    layout: new o.Layout({
+      fit: null != h ? u.i[h] : o.Fit.Cover,
+      alignment: null != m ? u.y[m] : o.Alignment.Center
     }),
     isTouchScrollEnabled: S,
     listenOnDocumentBody: C,
@@ -64,8 +64,8 @@ function f(e) {
     getProperties: () => {
       var e, t;
       return null != (e = null == U || null == (t = U.viewModelInstance) ? true : t.properties.reduce((e, t) => {
-        var n, r, i, a, s;
-        return "viewModel" === t.type && (null == U || null == (s = U.viewModelInstance) || null == (a = s.viewModel(t.name)) || a.properties.forEach(n => {
+        var n, r, i, a, o;
+        return "viewModel" === t.type && (null == U || null == (o = U.viewModelInstance) || null == (a = o.viewModel(t.name)) || a.properties.forEach(n => {
           var r, i, a;
           e[t.name + "/" + n.name] = {
             type: n.type,
@@ -104,8 +104,8 @@ function f(e) {
         t = () => {
           clearTimeout(k.current)
         };
-      return U.on(s.EventType.Play, e), U.on(s.EventType.Pause, t), U.on(s.EventType.Stop, t), () => {
-        U.off(s.EventType.Play, e), U.off(s.EventType.Pause, t), U.off(s.EventType.Stop, t)
+      return U.on(o.EventType.Play, e), U.on(o.EventType.Pause, t), U.on(o.EventType.Stop, t), () => {
+        U.off(o.EventType.Play, e), U.off(o.EventType.Pause, t), U.off(o.EventType.Stop, t)
       }
     }
   }, [U, b, D.reducedMotion.enabled]), i.useLayoutEffect(() => {
@@ -117,29 +117,29 @@ function f(e) {
       return () => clearTimeout(e)
     }
   }, [U, h]), i.useEffect(() => {
-    null != U && null == j && null == P && (M(U.stateMachineNames), U.reset({
+    null != U && null == M && null == P && (j(U.stateMachineNames), U.reset({
       stateMachines: U.stateMachineNames,
       autoplay: p,
       artboard: y,
       autoBind: true
     }), U.setupRiveListeners())
-  }, [U, p, j, y, P]);
-  let V = i.useRef(0);
+  }, [U, p, M, y, P]);
+  let F = i.useRef(0);
   i.useEffect(() => {
     if (null == U) return;
     let e = t => {
-      null != t.data && "number" == typeof t.data && (V.current = t.data, t.data > 0 && ("halt" === b && D.reducedMotion.enabled && U.isPlaying && U.pause(), U.off(s.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (F.current = t.data, t.data > 0 && ("halt" === b && D.reducedMotion.enabled && U.isPlaying && U.pause(), U.off(o.EventType.Advance, e)))
     };
-    return U.on(s.EventType.Advance, e), p && U.play(), () => {
-      U.off(s.EventType.Advance, e)
+    return U.on(o.EventType.Advance, e), p && U.play(), () => {
+      U.off(o.EventType.Advance, e)
     }
   }, [U, D.reducedMotion.enabled, b, p]);
-  let F = i.useRef(false);
+  let V = i.useRef(false);
   return i.useEffect(() => {
-    if (null != U) return !L && F.current && U.isPlaying && V.current > 0 ? U.pause() : L && !U.isPlaying && F.current && U.play(), () => {
-      null != U && L && (F.current = null != U.frameRequestId)
+    if (null != U) return !x && V.current && U.isPlaying && F.current > 0 ? U.pause() : x && !U.isPlaying && V.current && U.play(), () => {
+      null != U && x && (V.current = null != U.frameRequestId)
     }
-  }, [U, L]), (0, r.jsx)(G, {
+  }, [U, x]), (0, r.jsx)(G, {
     className: _,
     style: g
   })

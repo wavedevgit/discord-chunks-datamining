@@ -2,12 +2,12 @@
 /** chunk id: 946318, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk355418 = require("./355418.js"),
   Chunk11947 = require("./11947.js");
 let a = RegExp("(?<prefix>上|下|这)(?:个)?(?:星期|礼拜|周)(?<weekday>" + Object.keys(Chunk11947.tS).join("|") + ")");
-class s extends Chunk355418.c {
+class o extends Chunk355418.c {
   innerPattern() {
     return a
   }
@@ -16,15 +16,15 @@ class s extends Chunk355418.c {
       r = t.groups.weekday,
       a = i.tS[r];
     if (true === a) return null;
-    let s = null,
-      o = t.groups.prefix;
-    "上" == o ? s = "last" : "下" == o ? s = "next" : "这" == o && (s = "this");
+    let o = null,
+      s = t.groups.prefix;
+    "上" == s ? o = "last" : "下" == s ? o = "next" : "这" == s && (o = "this");
     let l = new Date(e.refDate.getTime()),
       c = false,
       u = l.getDay();
-    if ("last" == s || "past" == s) l.setDate(l.getDate() + (a - 7 - u)), c = true;
-    else if ("next" == s) l.setDate(l.getDate() + (a + 7 - u)), c = true;
-    else if ("this" == s) l.setDate(l.getDate() + (a - u));
+    if ("last" == o || "past" == o) l.setDate(l.getDate() + (a - 7 - u)), c = true;
+    else if ("next" == o) l.setDate(l.getDate() + (a + 7 - u)), c = true;
+    else if ("this" == o) l.setDate(l.getDate() + (a - u));
     else {
       let e = a - u;
       Math.abs(e - 7) < Math.abs(e) && (e -= 7), Math.abs(e + 7) < Math.abs(e) && (e += 7), l.setDate(l.getDate() + e)

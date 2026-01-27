@@ -12,7 +12,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js");
 
 function c(e) {
-  let t = (0, i.bG)([o.A], () => o.A.getNote(e));
+  let t = (0, i.bG)([s.A], () => s.A.getNote(e));
   return r.useEffect(() => {
     null == t && u(e)
   }, [t, e]), null != t ? t : {
@@ -21,7 +21,7 @@ function c(e) {
   }
 }
 async function u(e) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_NOTE_LOAD_START",
     userId: e
   });
@@ -34,13 +34,13 @@ async function u(e) {
       rejectWithError: true
     });
     if (t.note_user_id !== e) throw Error("Invalid response from server");
-    s.h.dispatch({
+    o.h.dispatch({
       type: "USER_NOTE_UPDATE",
       id: e,
       note: t.note
     })
   } catch (t) {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "USER_NOTE_UPDATE",
       id: e
     })

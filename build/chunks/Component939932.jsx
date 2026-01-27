@@ -1,4 +1,4 @@
-/** Chunk was on 17050 **/
+/** Chunk was on 65715 **/
 /** chunk id: 939932, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,14 +22,14 @@ function f(e) {
   })(e)
 }
 
-function l(e, t) {
+function h(e, t) {
   (null == t || t > e.length) && (t = e.length);
   for (var r = 0, n = Array(t); r < t; r++) n[r] = e[r];
   return n
 }
 
-function h(e, t) {
-  return (h = Object.setPrototypeOf || function(e, t) {
+function l(e, t) {
+  return (l = Object.setPrototypeOf || function(e, t) {
     return e.__proto__ = t, e
   })(e, t)
 }
@@ -62,20 +62,20 @@ function b(e) {
     m = e.registerHandler,
     D = e.containerDisplayName,
     k = e.getType,
-    w = e.collect,
-    j = e.options.arePropsEqual,
-    C = true === j ? i.b : j,
+    C = e.collect,
+    w = e.options.arePropsEqual,
+    j = true === w ? i.b : w,
     I = t.displayName || t.name || "Component",
-    O = function(e) {
+    A = function(e) {
       if ("function" != typeof e && null !== e) throw TypeError("Super expression must either be null or a function");
-      O.prototype = Object.create(e && e.prototype, {
+      A.prototype = Object.create(e && e.prototype, {
         constructor: {
-          value: O,
+          value: A,
           writable: true,
           configurable: true
         }
-      }), e && h(O, e);
-      var p, D, j = (p = function() {
+      }), e && l(A, e);
+      var p, D, w = (p = function() {
         if ("u" < typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
         if ("function" == typeof Proxy) returntrue;
         try {
@@ -84,7 +84,7 @@ function b(e) {
           returnfalse
         }
       }(), function() {
-        var e, t = y(O);
+        var e, t = y(A);
         return e = p ? Reflect.construct(t, arguments, y(this).constructor) : t.apply(this, arguments),
           function(e, t) {
             if (t && ("object" === f(t) || "function" == typeof t)) return t;
@@ -93,10 +93,10 @@ function b(e) {
           }(this, e)
       });
 
-      function O(e) {
+      function A(e) {
         var t;
-        if (!(this instanceof O)) throw TypeError("Cannot call a class as a function");
-        return g(v(t = j.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", true), g(v(t), "manager", true), g(v(t), "handlerMonitor", true), g(v(t), "handlerConnector", true), g(v(t), "handler", true), g(v(t), "disposable", true), g(v(t), "rafId", true), g(v(t), "currentType", true), g(v(t), "handleChange", function() {
+        if (!(this instanceof A)) throw TypeError("Cannot call a class as a function");
+        return g(v(t = w.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", true), g(v(t), "manager", true), g(v(t), "handlerMonitor", true), g(v(t), "handlerConnector", true), g(v(t), "handler", true), g(v(t), "disposable", true), g(v(t), "rafId", true), g(v(t), "currentType", true), g(v(t), "handleChange", function() {
           var e = t.getCurrentState();
           (0, i.b)(e, t.state) || t.setState(e)
         }), t.disposable = new c.DS, t.receiveProps(e), t.dispose(), t
@@ -114,7 +114,7 @@ function b(e) {
         }, {
           key: "shouldComponentUpdate",
           value: function(e, t) {
-            return !C(e, this.props) || !(0, i.b)(t, this.state)
+            return !j(e, this.props) || !(0, i.b)(t, this.state)
           }
         }, {
           key: "componentDidMount",
@@ -124,7 +124,7 @@ function b(e) {
         }, {
           key: "componentDidUpdate",
           value: function(e) {
-            C(this.props, e) || (this.receiveProps(this.props), this.handleChange())
+            j(this.props, e) || (this.receiveProps(this.props), this.handleChange())
           }
         }, {
           key: "componentWillUnmount",
@@ -164,10 +164,10 @@ function b(e) {
                   }
                 }(t, 2) || function(e, t) {
                   if (e) {
-                    if ("string" == typeof e) return l(e, 2);
+                    if ("string" == typeof e) return h(e, 2);
                     var r = Object.prototype.toString.call(e).slice(8, false);
                     if ("Object" === r && e.constructor && (r = e.constructor.name), "Map" === r || "Set" === r) return Array.from(e);
-                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return l(e, 2)
+                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return h(e, 2)
                   }
                 }(t, 2) || function() {
                   throw TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
@@ -189,7 +189,7 @@ function b(e) {
         }, {
           key: "getCurrentState",
           value: function() {
-            return this.handlerConnector ? w(this.handlerConnector.hooks, this.handlerMonitor, this.props) : {}
+            return this.handlerConnector ? C(this.handlerConnector.hooks, this.handlerMonitor, this.props) : {}
           }
         }, {
           key: "render",
@@ -218,7 +218,7 @@ function b(e) {
             var n = t[r];
             n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(e, n.key, n)
           }
-        }(O.prototype, D), O
+        }(A.prototype, D), A
     }(o.Component);
-  return g(O, "DecoratedComponent", t), g(O, "displayName", "".concat(D, "(").concat(I, ")")), p()(O, t)
+  return g(A, "DecoratedComponent", t), g(A, "displayName", "".concat(D, "(").concat(I, ")")), p()(A, t)
 }

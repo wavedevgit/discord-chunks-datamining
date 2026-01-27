@@ -20,9 +20,9 @@ function i(e) {
 function a(...e) {
   return "(" + (i(e).capture ? "" : "?:") + e.map(e => t(e)).join("|") + ")"
 }
-let s = e => r(/\b/, e, /\w$/.test(e) ? /\b/ : /\B/),
-  o = ["Protocol", "Type"].map(s),
-  l = ["init", "self"].map(s),
+let o = e => r(/\b/, e, /\w$/.test(e) ? /\b/ : /\B/),
+  s = ["Protocol", "Type"].map(o),
+  l = ["init", "self"].map(o),
   c = ["Any", "Self"],
   u = ["actor", "any", "associatedtype", "async", "await", /as\?/, /as!/, "as", "borrowing", "break", "case", "catch", "class", "consume", "consuming", "continue", "convenience", "copy", "default", "defer", "deinit", "didSet", "distributed", "do", "dynamic", "each", "else", "enum", "extension", "fallthrough", /fileprivate\(set\)/, "fileprivate", "final", "for", "func", "get", "guard", "if", "import", "indirect", "infix", /init\?/, /init!/, "inout", /internal\(set\)/, "internal", "in", "is", "isolated", "nonisolated", "lazy", "let", "macro", "mutating", "nonmutating", /open\(set\)/, "open", "operator", "optional", "override", "package", "postfix", "precedencegroup", "prefix", /private\(set\)/, "private", "protocol", /public\(set\)/, "public", "repeat", "required", "rethrows", "return", "set", "some", "static", "struct", "subscript", "super", "switch", "throws", "throw", /try\?/, /try!/, "try", "typealias", /unowned\(safe\)/, /unowned\(unsafe\)/, "unowned", "var", "weak", "where", "while", "willSet"],
   d = ["false", "nil", "true"],
@@ -48,7 +48,7 @@ module.exports = function(e) {
     }),
     h = [e.C_LINE_COMMENT_MODE, i],
     E = {
-      match: [/\./, a(...o, ...l)],
+      match: [/\./, a(...s, ...l)],
       className: {
         2: "keyword"
       }
@@ -61,7 +61,7 @@ module.exports = function(e) {
     T = {
       variants: [{
         className: "keyword",
-        match: a(...u.filter(e => "string" != typeof e).concat(c).map(s), ...l)
+        match: a(...u.filter(e => "string" != typeof e).concat(c).map(o), ...l)
       }]
     },
     C = {
@@ -91,21 +91,21 @@ module.exports = function(e) {
       }]
     }],
     D = "([0-9]_*)+",
-    x = "([0-9a-fA-F]_*)+",
-    L = {
+    L = "([0-9a-fA-F]_*)+",
+    x = {
       className: "number",
       relevance: 0,
       variants: [{
         match: `\\b(${D})(\\.(${D}))?([eE][+-]?(${D}))?\\b`
       }, {
-        match: `\\b0x(${x})(\\.(${x}))?([pP][+-]?(${D}))?\\b`
+        match: `\\b0x(${L})(\\.(${L}))?([pP][+-]?(${D}))?\\b`
       }, {
         match: /\b0o([0-7]_*)+\b/
       }, {
         match: /\b0b([01]_*)+\b/
       }]
     },
-    j = (e = "") => ({
+    M = (e = "") => ({
       className: "subst",
       variants: [{
         match: r(/\\/, e, /[0\\tnr"']/)
@@ -113,7 +113,7 @@ module.exports = function(e) {
         match: r(/\\/, e, /u\{[0-9a-fA-F]{1,8}\}/)
       }]
     }),
-    M = (e = "") => ({
+    j = (e = "") => ({
       className: "subst",
       match: r(/\\/, e, /[\t ]*(?:[\r\n]|\r\n)/)
     }),
@@ -126,18 +126,18 @@ module.exports = function(e) {
     U = (e = "") => ({
       begin: r(e, /"""/),
       end: r(/"""/, e),
-      contains: [j(e), M(e), k(e)]
+      contains: [M(e), j(e), k(e)]
     }),
     G = (e = "") => ({
       begin: r(e, /"/),
       end: r(/"/, e),
-      contains: [j(e), k(e)]
+      contains: [M(e), k(e)]
     }),
-    V = {
+    F = {
       className: "string",
       variants: [U(), U("#"), U("##"), U("###"), G(), G("#"), G("##"), G("###")]
     },
-    F = [e.BACKSLASH_ESCAPE, {
+    V = [e.BACKSLASH_ESCAPE, {
       begin: /\[/,
       end: /\]/,
       relevance: 0,
@@ -146,7 +146,7 @@ module.exports = function(e) {
     B = {
       begin: /\/[^\s](?=[^/\n]*\/)/,
       end: /\//,
-      contains: F
+      contains: V
     },
     H = e => {
       let t = r(e, /\//),
@@ -154,7 +154,7 @@ module.exports = function(e) {
       return {
         begin: t,
         end: n,
-        contains: [...F, {
+        contains: [...V, {
           scope: "comment",
           begin: `#(?!.*${n})`,
           end: /$/
@@ -183,7 +183,7 @@ module.exports = function(e) {
           begin: /\(/,
           end: /\)/,
           keywords: A,
-          contains: [...P, L, V]
+          contains: [...P, x, F]
         }]
       }
     }, {
@@ -221,7 +221,7 @@ module.exports = function(e) {
       contains: [...h, ...N, ...z, R, q]
     };
   q.contains.push(Z);
-  let X = {
+  let Q = {
       begin: /\(/,
       end: /\)/,
       relevance: 0,
@@ -230,9 +230,9 @@ module.exports = function(e) {
         match: r(b, /\s*:/),
         keywords: "_|0",
         relevance: 0
-      }, ...h, Y, ...N, ...w, ...P, L, V, ...K, ...z, q]
+      }, ...h, Y, ...N, ...w, ...P, x, F, ...K, ...z, q]
     },
-    Q = {
+    X = {
       begin: /</,
       end: />/,
       keywords: "repeat each",
@@ -253,7 +253,7 @@ module.exports = function(e) {
           className: "params",
           match: b
         }]
-      }, ...h, ...N, ...P, L, V, ...z, q, X],
+      }, ...h, ...N, ...P, x, F, ...z, q, Q],
       endsParent: true,
       illegal: /["']/
     },
@@ -263,7 +263,7 @@ module.exports = function(e) {
         1: "keyword",
         3: "title.function"
       },
-      contains: [Q, J, t],
+      contains: [X, J, t],
       illegal: [/\[/, /%/]
     },
     ee = {
@@ -271,7 +271,7 @@ module.exports = function(e) {
       className: {
         1: "keyword"
       },
-      contains: [Q, J, t],
+      contains: [X, J, t],
       illegal: /\[|%/
     },
     et = {
@@ -313,7 +313,7 @@ module.exports = function(e) {
         3: "title.class"
       },
       keywords: C,
-      contains: [Q, ...N, {
+      contains: [X, ...N, {
         begin: /:/,
         end: /\{/,
         keywords: C,
@@ -324,10 +324,10 @@ module.exports = function(e) {
         relevance: 0
       }]
     };
-  for (let e of V.variants) {
+  for (let e of F.variants) {
     let t = e.contains.find(e => "interpol" === e.label);
     t.keywords = C;
-    let n = [...N, ...w, ...P, L, V, ...K];
+    let n = [...N, ...w, ...P, x, F, ...K];
     t.contains = [...n, {
       begin: /\(/,
       end: /\)/,
@@ -342,6 +342,6 @@ module.exports = function(e) {
       end: /$/,
       contains: [...h],
       relevance: 0
-    }, Y, ...N, ...w, ...P, L, V, ...K, ...z, q, X]
+    }, Y, ...N, ...w, ...P, x, F, ...K, ...z, q, Q]
   }
 }

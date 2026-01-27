@@ -21,19 +21,19 @@ module.exports = function(e) {
       className: "string",
       begin: /'(.|\\[xXuU][a-zA-Z0-9]+)'/
     },
-    s = {
+    o = {
       className: "subst",
       begin: /\$\(/,
       end: /\)/,
       keywords: n
     },
-    o = {
+    s = {
       className: "variable",
       begin: "\\$" + t
     },
     l = {
       className: "string",
-      contains: [e.BACKSLASH_ESCAPE, s, o],
+      contains: [e.BACKSLASH_ESCAPE, o, s],
       variants: [{
         begin: /\w*"""/,
         end: /"""\w*/,
@@ -45,7 +45,7 @@ module.exports = function(e) {
     },
     c = {
       className: "string",
-      contains: [e.BACKSLASH_ESCAPE, s, o],
+      contains: [e.BACKSLASH_ESCAPE, o, s],
       begin: "`",
       end: "`"
     },
@@ -69,5 +69,5 @@ module.exports = function(e) {
     begin: "\\b(((abstract|primitive)\\s+)type|(mutable\\s+)?struct)\\b"
   }, {
     begin: /<:/
-  }], s.contains = r.contains, r
+  }], o.contains = r.contains, r
 }

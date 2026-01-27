@@ -1,60 +1,58 @@
-/** Chunk was on web.js **/
-/** chunk id: 914887, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 914887, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => o
+  a: () => a
 });
 var Chunk64700 = require("./64700.js"),
   Chunk954571 = require("./954571.js"),
   Chunk652215 = require("./652215.js");
-let s = 1e3;
 
-function o(e, t, n, o) {
-  let l = r.useRef(null),
-    c = r.useRef(t),
-    u = r.useRef({
+function a(e, t, n, a) {
+  let s = r.useRef(null),
+    o = r.useRef(t),
+    c = r.useRef({
       positionInSection: n,
-      analyticsLocations: o
+      analyticsLocations: a
     });
   r.useEffect(() => {
-    c.current = t
+    o.current = t
   }, [t]);
-  let d = r.useCallback(() => {
+  let u = r.useCallback(() => {
       let {
         sessionId: t,
         guildId: n,
         pageIndex: r,
-        pageTitle: s,
-        pageSection: o,
-        pageSectionTitle: l,
+        pageTitle: a,
+        pageSection: s,
+        pageSectionTitle: u,
         isUserGuildMember: d,
-        pageHasLeaderboard: f
-      } = c.current, {
-        positionInSection: p,
-        analyticsLocations: _
-      } = u.current;
-      i.default.track(a.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
+        pageHasLeaderboard: p
+      } = o.current, {
+        positionInSection: m,
+        analyticsLocations: f
+      } = c.current;
+      i.default.track(l.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
         slayer_storefront_session_id: t,
         sku_id: e,
         guild_id: n,
         page_index: r,
-        page_title: s,
-        page_section: o,
-        page_section_title: l,
-        position_in_section: p,
+        page_title: a,
+        page_section: s,
+        page_section_title: u,
+        position_in_section: m,
         is_user_guild_member: d,
-        page_has_leaderboard: f,
-        location_stack: _
+        page_has_leaderboard: p,
+        location_stack: f
       })
     }, [e]),
-    f = r.useCallback(e => {
-      e ? null === l.current && (l.current = window.setTimeout(() => {
-        d(), l.current = null
-      }, s)) : null !== l.current && (clearTimeout(l.current), l.current = null)
-    }, [d]);
+    d = r.useCallback(e => {
+      e ? null === s.current && (s.current = window.setTimeout(() => {
+        u(), s.current = null
+      }, 1e3)) : null !== s.current && (clearTimeout(s.current), s.current = null)
+    }, [u]);
   return r.useEffect(() => () => {
-    null !== l.current && (clearTimeout(l.current), l.current = null)
+    null !== s.current && (clearTimeout(s.current), s.current = null)
   }, []), {
-    handleCardVisibilityChange: f
+    handleCardVisibilityChange: d
   }
 }

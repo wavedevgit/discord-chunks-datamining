@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk793574 = require("./793574.js"),
   Chunk688810 = require("./688810.jsx"),
@@ -48,12 +48,12 @@ function h(e) {
     v || (0, u.Ri)("")
   }, [v]), (0, r.jsx)(c.f5, {
     value: R,
-    children: (0, r.jsx)(o.lGe, {
-      className: s()(_.Nz, {
+    children: (0, r.jsx)(s.lGe, {
+      className: o()(_.Nz, {
         [_.Bg]: C,
         [_.yV]: v
       }),
-      children: C ? (0, r.jsx)(o.y$y, {}) : (0, r.jsx)(p.A, {
+      children: C ? (0, r.jsx)(s.y$y, {}) : (0, r.jsx)(p.A, {
         guildId: t,
         channel: n,
         onClose: h,

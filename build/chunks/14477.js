@@ -35,29 +35,29 @@ for (let e of g.allow_list) "name" in module && h.push(module.name.toLowerCase()
 
 function E() {
   var e;
-  if (!(0, c.isMac)() && !(0, c.isWindows)() || !o.A.getKrispModels().includes(p)) return;
-  let t = o.A.getInputDeviceId(),
-    n = o.A.getInputDevices()[t],
+  if (!(0, c.isMac)() && !(0, c.isWindows)() || !s.A.getKrispModels().includes(p)) return;
+  let t = s.A.getInputDeviceId(),
+    n = s.A.getInputDevices()[t],
     r = null != l.A.getChannelId();
   if (null == n) return;
   let a = null == (e = l.A.getRTCConnection()) ? true : e.getInputDeviceSampleRate(),
-    s = u._.getCurrentConfig({
+    o = u._.getCurrentConfig({
       location: "KrispBVCDeviceManager"
     }, {
       autoTrackExposure: false
     }).allowBVC;
   if (null != a && a < 16e3) {
-    o.A.getKrispModelOverride() && (_.info("BVC model doesn't support <16kHz sample rate, disabling BVC."), i.A.setKrispModelOverride(""));
+    s.A.getKrispModelOverride() && (_.info("BVC model doesn't support <16kHz sample rate, disabling BVC."), i.A.setKrispModelOverride(""));
     return
   }
   let d = n.name.toLowerCase();
   if (m.some(e => d.includes(e))) {
-    o.A.getKrispModelOverride() && (_.info("BVC not compatible with device, disabling BVC."), i.A.setKrispModelOverride(""));
+    s.A.getKrispModelOverride() && (_.info("BVC not compatible with device, disabling BVC."), i.A.setKrispModelOverride(""));
     return
   }
   h.some(e => d.includes(e)) ? (r && u._.trackExposure({
     location: "KrispBVCDeviceManager"
-  }), s) ? o.A.getKrispModelOverride() !== p && (_.info("BVC compatible with device, enabling BVC."), i.A.setKrispModelOverride(p)) : i.A.setKrispModelOverride("") : o.A.getKrispModelOverride() && (_.info("Unknown BVC compatibility with device, disabling BVC."), i.A.setKrispModelOverride(""))
+  }), o) ? s.A.getKrispModelOverride() !== p && (_.info("BVC compatible with device, enabling BVC."), i.A.setKrispModelOverride(p)) : i.A.setKrispModelOverride("") : s.A.getKrispModelOverride() && (_.info("Unknown BVC compatibility with device, disabling BVC."), i.A.setKrispModelOverride(""))
 }
 class y extends Chunk439372.A {
   constructor(...e) {

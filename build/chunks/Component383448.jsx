@@ -26,28 +26,28 @@ function h(e) {
     isPendingIncoming: i,
     isBlocked: h,
     isIgnored: m
-  } = (0, o.cf)([u.A], () => ({
+  } = (0, s.cf)([u.A], () => ({
     isPendingIncoming: u.A.getRelationshipType(t.id) === f.eA$.PENDING_INCOMING,
     isBlocked: u.A.isBlocked(t.id),
     isIgnored: u.A.isIgnored(t.id)
   }));
   return h || m && !i ? (0, r.jsxs)(d.A.Overlay, {
     className: a()(_.k, n),
-    children: [h && (0, r.jsx)(s.EYj, {
+    children: [h && (0, r.jsx)(o.EYj, {
       variant: "text-sm/semibold",
       color: "text-default",
       children: p.intl.string(p.t["oC/fU6"])
     }), m && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.EYj, {
+      children: [(0, r.jsx)(o.EYj, {
         variant: "text-sm/semibold",
         color: "text-default",
         children: p.intl.string(p.t.HXz5An)
       }), (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(s.EYj, {
+        children: [(0, r.jsx)(o.EYj, {
           variant: "text-sm/semibold",
           color: "text-default",
           children: "•"
-        }), (0, r.jsx)(s.EYj, {
+        }), (0, r.jsx)(o.EYj, {
           variant: "text-sm/semibold",
           color: "text-default",
           children: p.intl.format(p.t.PrtAqy, {

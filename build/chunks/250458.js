@@ -47,8 +47,8 @@ class p extends Chunk439372.A {
           }), null == a || true !== t[a].show_on_startup) return;
         let d = l.A.lastSeenChangelogId(),
           p = l.A.lastSeenChangelogDate();
-        if (null != d && 0 >= o.default.compare(a, d)) return;
-        let _ = await i.A.fetchChangelog(a, s.default.locale);
+        if (null != d && 0 >= s.default.compare(a, d)) return;
+        let _ = await i.A.fetchChangelog(a, o.default.locale);
         if (null == _) return;
         if (null == p || null == l.A.lastSeenChangelogDate()) return void i.A.markChangelogAsSeen(a, _.date);
         if (l.A.isLocked()) return;

@@ -52,8 +52,8 @@ function E(e) {
     query: a
   } = e;
   if (t !== u.hes.PAYPAL || n !== r) return;
-  let s = window.popupBridge.onComplete;
-  "function" == typeof s && s(null, {
+  let o = window.popupBridge.onComplete;
+  "function" == typeof o && o(null, {
     path: i,
     queryItems: a
   })
@@ -76,7 +76,7 @@ function O() {
 }(0, Chunk723702.isDesktop)() && (window.popupBridge = {
   getReturnUrlPrefix: () => {
     if (null == r) throw Error("popupBridgeState is unset");
-    return (0, o.TP)() + u.Rsh.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(u.kM_.BRAINTREE, r)
+    return (0, s.TP)() + u.Rsh.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(u.kM_.BRAINTREE, r)
   },
   open: e => {
     i = e, window.open(e), A.emitChange()

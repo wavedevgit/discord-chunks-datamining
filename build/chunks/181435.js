@@ -24,20 +24,20 @@ function i(e) {
   return e
 }
 require.d(exports, {
-  $8: () => o,
+  $8: () => s,
   ON: () => a,
-  QJ: () => s,
+  QJ: () => o,
   Vx: () => l,
   tn: () => f
 }), require("./896048.js");
 var a = function(e) {
     return e.NativeOOP = "native_oop", e.NativeLegacy = "native_legacy", e.OOPModule = "oop_module", e.LegacyModule = "legacy_module", e.Flux = "flux", e.Renderer = "renderer", e
   }({}),
-  s = function(e) {
+  o = function(e) {
     return e.Info = "info", e.Error = "error", e.Warning = "warn", e
   }({});
 
-function o(e, t) {
+function s(e, t) {
   return e.name === t
 }
 
@@ -58,13 +58,13 @@ function c(e) {
 }
 
 function u(e, t) {
-  var n, r, a, s;
-  let o = e.reduce((e, t) => (e[t.timestamp] = t.data, e), {});
+  var n, r, a, o;
+  let s = e.reduce((e, t) => (e[t.timestamp] = t.data, e), {});
   return {
     type: null != (n = null == t ? true : t.type) ? n : e[0].type,
     pid: null != (r = null == t ? true : t.pid) ? r : e[0].pid,
     name: null != (a = null == t ? true : t.name) ? a : e[0].name,
-    batchedData: i({}, null != (s = null == t ? true : t.batchedData) ? s : {}, o)
+    batchedData: i({}, null != (o = null == t ? true : t.batchedData) ? o : {}, s)
   }
 }
 

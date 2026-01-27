@@ -1,19 +1,19 @@
-/** Chunk was on web.js **/
-/** chunk id: 197576, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 197576, original params: t,e,r (module,exports,require) **/
 "use strict";
-var r = require("./611122.js").notEmptyKey;
+var n = require("./611122.js").notEmptyKey;
 
-function i(e, t) {
-  return r(t) && "MUTABLE" === e.__get(t).getMutability() ? t : null
+function i(t, e) {
+  return n(e) && "MUTABLE" === t.__get(e).getMutability() ? e : null
 }
-module.exports = function(e, t) {
-  if (t.isCollapsed()) {
-    var n, r = t.getAnchorKey(),
-      a = t.getAnchorOffset();
-    return a > 0 ? (n = e.getBlockForKey(r).getEntityAt(a - 1)) !== e.getBlockForKey(r).getEntityAt(a) ? null : i(e.getEntityMap(), n) : null
+module.exports = function(t, e) {
+  if (e.isCollapsed()) {
+    var r, n = e.getAnchorKey(),
+      o = e.getAnchorOffset();
+    return o > 0 ? (r = t.getBlockForKey(n).getEntityAt(o - 1)) !== t.getBlockForKey(n).getEntityAt(o) ? null : i(t.getEntityMap(), r) : null
   }
-  var s = t.getStartKey(),
-    o = t.getStartOffset(),
-    l = e.getBlockForKey(s);
-  return n = o === l.getLength() ? null : l.getEntityAt(o), i(e.getEntityMap(), n)
+  var a = e.getStartKey(),
+    s = e.getStartOffset(),
+    u = t.getBlockForKey(a);
+  return r = s === u.getLength() ? null : u.getEntityAt(s), i(t.getEntityMap(), r)
 }

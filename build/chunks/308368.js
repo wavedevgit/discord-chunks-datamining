@@ -19,8 +19,8 @@ let f = {
       applicationId: t,
       distributor: n,
       shareActivity: a,
-      token: s = null,
-      duration: o = 0,
+      token: o = null,
+      duration: s = 0,
       closed: l = false,
       exePath: c = null,
       voiceChannelId: d = null,
@@ -30,14 +30,14 @@ let f = {
     i.h.wait(() => i.h.dispatch({
       type: "ACTIVITY_UPDATE_START",
       applicationId: t,
-      duration: o,
+      duration: s,
       distributor: n
     })), r.Bo.post({
       url: u.Rsh.ACTIVITIES,
       body: {
         application_id: t,
-        token: s,
-        duration: o,
+        token: o,
+        duration: s,
         share_activity: a,
         distributor: n,
         closed: l,
@@ -59,7 +59,7 @@ let f = {
         type: "ACTIVITY_UPDATE_SUCCESS",
         applicationId: t,
         token: r,
-        duration: o,
+        duration: s,
         distributor: n
       })
     }).catch(() => {
@@ -77,9 +77,9 @@ let f = {
       content: i,
       targetUserId: l,
       location: f
-    } = e, p = o.A.getChannel(t);
+    } = e, p = s.A.getChannel(t);
     if (null == p) return Promise.resolve(null);
-    let _ = s.Ay.parse(p, null != i ? i : "");
+    let _ = o.Ay.parse(p, null != i ? i : "");
     return c.A.sendMessage(p.id, _, false, {
       activityAction: {
         type: n,
@@ -113,11 +113,11 @@ let f = {
     }))
   },
   async getJoinSecret(e, t, n, i, a) {
-    let s = {};
-    return null != i && (s.channel_id = i), null != a && (s.message_id = a), (await r.Bo.get({
+    let o = {};
+    return null != i && (o.channel_id = i), null != a && (o.message_id = a), (await r.Bo.get({
       url: u.Rsh.USER_ACTIVITY_JOIN(e, t, n),
       retries: 3,
-      query: s,
+      query: o,
       rejectWithError: false
     })).body.secret
   },

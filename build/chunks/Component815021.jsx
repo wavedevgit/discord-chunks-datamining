@@ -10,7 +10,7 @@ var Chunk934551 = require("./934551.js"),
   Chunk460890 = require("./460890.jsx"),
   Chunk657718 = require("./657718.jsx");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -73,10 +73,10 @@ function p(e) {
   let {
     variant: t = "icon-only",
     "aria-label": n
-  } = e, o = d(e, ["variant", "aria-label"]), {
+  } = e, s = d(e, ["variant", "aria-label"]), {
     i18n: c
   } = (0, a.G9)();
-  return (0, r.jsx)(s.S, u(l({}, o), {
+  return (0, r.jsx)(o.S, u(l({}, s), {
     "aria-label": null != n ? n : c.CLOSE_BUTTON_LABEL,
     icon: i.XLargeIcon,
     variant: t,

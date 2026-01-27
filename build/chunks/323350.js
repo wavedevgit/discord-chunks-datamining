@@ -62,11 +62,11 @@ function y(e, t) {
     mode: n,
     ignoreTrailingEmptyNodes: r,
     preventEmojiSurrogates: i
-  } = null != t ? t : {}, [a, s] = (null == t ? true : t.range) != null ? _.ZF.edges(t.range) : [true, true];
+  } = null != t ? t : {}, [a, o] = (null == t ? true : t.range) != null ? _.ZF.edges(t.range) : [true, true];
   return b(e, {
     mode: n,
     start: a,
-    end: s,
+    end: o,
     ignoreTrailingEmptyNodes: r,
     preventEmojiSurrogates: i
   })
@@ -77,15 +77,15 @@ function b(e, t) {
   let {
     mode: i,
     start: a,
-    end: s,
-    separator: o,
+    end: o,
+    separator: s,
     ignoreEmptyNodes: l,
     ignoreTrailingEmptyNodes: c,
     preventEmojiSurrogates: u
   } = null != t ? t : {}, d = e.length > 0 && !_.l5.isText(e[0]);
-  null == o && (o = d ? "\n" : "");
+  null == s && (s = d ? "\n" : "");
   let f = null != (n = null == a ? true : a.path[0]) ? n : 0,
-    p = null != (r = null == s ? true : s.path[0]) ? r : e.length - 1;
+    p = null != (r = null == o ? true : o.path[0]) ? r : e.length - 1;
   if (c)
     for (let t = p; t >= f; t--) {
       let n = e[t];
@@ -113,16 +113,16 @@ function b(e, t) {
         path: a.path.slice(1),
         offset: a.offset
       } : true,
-      end: null != s && t === p ? {
-        path: s.path.slice(1),
-        offset: s.offset
+      end: null != o && t === p ? {
+        path: o.path.slice(1),
+        offset: o.offset
       } : true,
-      allowBlockQuotePrefix: null == a || null == s || !h && (!m || g),
+      allowBlockQuotePrefix: null == a || null == o || !h && (!m || g),
       preventEmojiSurrogates: u
     });
     (!l || r.length > 0) && E.push(r)
   }
-  return E.join(o)
+  return E.join(s)
 }
 
 function O(e, t) {
@@ -172,7 +172,7 @@ function O(e, t) {
     case "soundboard": {
       let t = "<sound:".concat(e.guildId, ":").concat(e.soundId, ">");
       if ("raw" === n) return t;
-      let r = o.A.getSoundById(e.soundId);
+      let r = s.A.getSoundById(e.soundId);
       if (null == r) return t;
       return r.name
     }
@@ -198,7 +198,7 @@ function O(e, t) {
     case "commandMention":
       return "</".concat(e.commandName, ":").concat(e.commandId, ">");
     case "timestamp":
-      return (0, s.tf)(e.parsed.timestamp, e.parsed.format);
+      return (0, o.tf)(e.parsed.timestamp, e.parsed.format);
     case "gameMention":
       return "<@$".concat(e.applicationId, ">");
     case "timestampMentionInput": {
@@ -223,7 +223,7 @@ function v(e, t) {
   var n, r;
   let {
     start: a,
-    end: s
+    end: o
   } = null != t ? t : {};
-  return i()(null == a || 0 === a.path.length, "Invalid start provided to serializeText"), i()(null == s || 0 === s.path.length, "Invalid end provided to serializeText"), e.substring(null != (n = null == a ? true : a.offset) ? n : 0, null != (r = null == s ? true : s.offset) ? r : e.length)
+  return i()(null == a || 0 === a.path.length, "Invalid start provided to serializeText"), i()(null == o || 0 === o.path.length, "Invalid end provided to serializeText"), e.substring(null != (n = null == a ? true : a.offset) ? n : 0, null != (r = null == o ? true : o.offset) ? r : e.length)
 }

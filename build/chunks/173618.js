@@ -2,7 +2,7 @@
 /** chunk id: 173618, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./896048.js");
 var Chunk812729 = require("./812729.js"),
   i = require.n(Chunk812729);
@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -28,12 +28,12 @@ function s(e) {
   }
   return e
 }
-class o {
+class s {
   shouldCommit() {
     returntrue
   }
   setState(e) {
-    this.state = s({}, this.state, e)
+    this.state = o({}, this.state, e)
   }
   getState() {
     return this.state
@@ -44,7 +44,7 @@ class o {
   update() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = this.getNextState(s({}, this.state, e));
+      n = this.getNextState(o({}, this.state, e));
     if (t) this.dirty = !i()(n, this.getInitialState());
     else
       for (let e of Object.keys(n)) this.dirty = this.dirty || !i()(this.state[e], n[e]);

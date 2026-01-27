@@ -29,12 +29,12 @@ function d(e) {
     children: f
   }) : (0, r.jsxs)("div", {
     className: u.wx,
-    children: [(0, r.jsxs)(o.Text, {
+    children: [(0, r.jsxs)(s.Text, {
       className: u.TK,
       variant: p === c.d.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
       color: "text-strong",
       id: n,
-      children: [(0, r.jsx)(s.A, {
+      children: [(0, r.jsx)(o.A, {
         children: t
       }), null != d && (0, r.jsx)("div", {
         className: u.tV,

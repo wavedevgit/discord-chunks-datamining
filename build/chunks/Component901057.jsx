@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 901057, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 901057, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -23,44 +22,42 @@ var Chunk311907 = require("./311907.js"),
   Chunk449054 = require("./449054.js"),
   Chunk652215 = require("./652215.js");
 
-function b(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  if (null == e || null == t) return;
-  let r = _.A.getGuild(e);
-  if ((null == r ? true : r.joinedAt) == null) return void E.Z2(e, {}, {
-    channelId: t
-  });
-  let i = p.A.getChannel(t);
-  if (null != i && (0, f.ay)(i.type)) {
-    if (n) {
-      o.A.updateChatOpen(i.id, true), (0, d.pX)(y.BVt.CHANNEL(e, t));
-      return
-    }
-    l.default.selectVoiceChannel(i.id);
-    return
-  }(0, d.pX)(y.BVt.CHANNEL(e, t))
-}
-
-function O(e) {
+function y(e) {
   let {
     channel: t,
     onClick: n,
-    beforeTransition: o,
-    className: l,
-    openChatWithoutConnecting: d
-  } = e, f = (0, i.bG)([m.default, h.A], () => null == t ? "" : (0, c.m1)(t, m.default, h.A), [t]);
-  return (0, r.jsx)(a.m, {
+    beforeTransition: y,
+    className: v,
+    openChatWithoutConnecting: x
+  } = e, O = (0, i.bG)([h.default, g.A], () => null == t ? "" : (0, c.m1)(t, h.default, g.A), [t]);
+  return (0, r.jsx)(l.m, {
     "data-pending-richtooltip-migration": true,
-    __unsupportedReactNodeAsText: f,
+    __unsupportedReactNodeAsText: O,
     position: "top",
     children: (0, r.jsx)(u.A, {
       role: "link",
-      className: l,
+      className: v,
       onClick: e => {
-        e.stopPropagation(), null != n ? n() : (null != o && o(), (0, s.s7G)(), b(null == t ? true : t.guild_id, null == t ? true : t.id, d))
+        e.stopPropagation(), null != n ? n() : (null != y && y(), (0, a.s7G)(), function(e, t) {
+          let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
+          if (null == e || null == t) return;
+          let r = f.A.getGuild(e);
+          if ((null == r ? true : r.joinedAt) == null) return b.Z2(e, {}, {
+            channelId: t
+          });
+          let i = m.A.getChannel(t);
+          if (null != i && (0, p.ay)(i.type)) {
+            if (n) {
+              s.A.updateChatOpen(i.id, true), (0, d.pX)(A.BVt.CHANNEL(e, t));
+              return
+            }
+            o.default.selectVoiceChannel(i.id);
+            return
+          }(0, d.pX)(A.BVt.CHANNEL(e, t))
+        }(null == t ? true : t.guild_id, null == t ? true : t.id, x))
       },
-      iconType: (0, g.QG)(t),
-      children: f
+      iconType: (0, _.QG)(t),
+      children: O
     })
   })
 }

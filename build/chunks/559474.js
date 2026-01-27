@@ -18,7 +18,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk77350 = require("./77350.js"),
   Chunk940622 = require("./940622.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -165,7 +165,7 @@ let m = e => {
     })), {
       upsertCollectionAsset: n,
       upsertAvatarDecorationAsset: i
-    } = (0, s.JE)(), a = r.useCallback(async e => {
+    } = (0, o.JE)(), a = r.useCallback(async e => {
       let r = await w(e);
       t(r), (0 !== r.collectionFiles.length || 0 !== r.avatarDecorationFiles.length) && (r.collectionFiles.forEach(e => {
         E(e, e => {
@@ -177,7 +177,7 @@ let m = e => {
           i(e)
         })
       }))
-    }, [n, i]), o = r.useCallback(() => {
+    }, [n, i]), s = r.useCallback(() => {
       t(e => u(l({}, e), {
         collectionFiles: [],
         avatarDecorationFiles: [],
@@ -190,7 +190,7 @@ let m = e => {
     }, []);
     return {
       ignoredFilenames: e.ignoredFilenames,
-      clearAssets: o,
+      clearAssets: s,
       clearIgnoredFilenames: c,
       processAndUpsertAssets: a
     }

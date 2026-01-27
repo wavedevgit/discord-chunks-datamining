@@ -1,32 +1,32 @@
-/** Chunk was on web.js **/
-/** chunk id: 278089, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 278089, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk954055 = require("./954055.js"),
   Chunk869639 = require("./869639.js"),
   Chunk410475 = require("./410475.js"),
   Chunk670200 = require("./670200.js"),
-  o = null;
+  s = null;
 module.exports = {
-  cut: function(e) {
-    var t = e.getCurrentContent(),
-      n = e.getSelection(),
-      l = null;
-    if (n.isCollapsed()) {
-      var c = n.getAnchorKey(),
-        u = t.getBlockForKey(c).getLength();
-      if (u === n.getAnchorOffset()) {
-        var d = t.getKeyAfter(c);
-        if (null == d) return e;
-        l = n.set("focusKey", d).set("focusOffset", 0)
-      } else l = n.set("focusOffset", u)
-    } else l = n;
-    o = a(t, l = s(l));
-    var f = r.removeRange(t, l, "forward");
-    return f === t ? e : i.push(e, f, "remove-range")
+  cut: function(t) {
+    var e = t.getCurrentContent(),
+      r = t.getSelection(),
+      u = null;
+    if (r.isCollapsed()) {
+      var c = r.getAnchorKey(),
+        l = e.getBlockForKey(c).getLength();
+      if (l === r.getAnchorOffset()) {
+        var f = e.getKeyAfter(c);
+        if (null == f) return t;
+        u = r.set("focusKey", f).set("focusOffset", 0)
+      } else u = r.set("focusOffset", l)
+    } else u = r;
+    s = o(e, u = a(u));
+    var p = n.removeRange(e, u, "forward");
+    return p === e ? t : i.push(t, p, "remove-range")
   },
-  paste: function(e) {
-    if (!o) return e;
-    var t = r.replaceWithFragment(e.getCurrentContent(), e.getSelection(), o);
-    return i.push(e, t, "insert-fragment")
+  paste: function(t) {
+    if (!s) return t;
+    var e = n.replaceWithFragment(t.getCurrentContent(), t.getSelection(), s);
+    return i.push(t, e, "insert-fragment")
   }
 }

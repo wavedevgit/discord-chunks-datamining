@@ -19,7 +19,7 @@ function l(e) {
     onFocus: f
   } = e, {
     renderWindow: p
-  } = r.useContext(s.Ay), _ = (e, t) => {
+  } = r.useContext(o.Ay), _ = (e, t) => {
     let n = p.document.querySelector(e);
     if (null != n) {
       var r;
@@ -32,7 +32,7 @@ function l(e) {
     var r;
     if (null == (r = u.current) || r.scrollToTop(), e && null != d.query) {
       let e = d.query.typeInfo.focusMode,
-        r = e !== o.e.MANUAL && (e !== o.e.AUTO_WHEN_FILTERED || 0 !== d.query.queryText.length);
+        r = e !== s.e.MANUAL && (e !== s.e.AUTO_WHEN_FILTERED || 0 !== d.query.queryText.length);
       d.isVisible && (true !== t || false !== r) && true !== n ? (g.setFocus("0"), null == f || f(0)) : (g.setFocus(null), null == f || f(null))
     }
   }, m = e => {

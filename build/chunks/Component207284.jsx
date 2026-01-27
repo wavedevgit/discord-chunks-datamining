@@ -21,7 +21,7 @@ function d(e) {
     null == (e = n.current) || e.activateUploadDialogue()
   }, E = i.useCallback(async (e, n, r) => {
     var i;
-    h(true), await (0, s.f)({
+    h(true), await (0, o.f)({
       userImage: {
         data: e,
         file: n,
@@ -42,7 +42,7 @@ function d(e) {
       disabled: m
     }), (0, r.jsx)("div", {
       className: u.F,
-      children: (0, r.jsx)(o.Ay, {
+      children: (0, r.jsx)(s.Ay, {
         ref: n,
         onChange: E,
         setLoading: p,

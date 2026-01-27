@@ -1,7 +1,7 @@
-/** Chunk was on 83006 **/
+/** Chunk was on 15646 **/
 /** chunk id: 137508, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  t: () => b
+  t: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,28 +14,28 @@ var Chunk627968 = require("./627968.js"),
   Chunk457417 = require("./457417.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk316582 = require("./316582.js");
-let b = () => {
+let p = () => {
   let {
     message: e,
     channel: t,
     updateMessageText: r
-  } = (0, d.Vw)(), b = (0, l.bG)([u.A], () => u.A.getDraft(e.channel_id, u.C.ChannelMessage)), [g, h] = a.useState(() => (0, i.ur)(b)), {
+  } = (0, d.Vw)(), p = (0, a.bG)([u.A], () => u.A.getDraft(e.channel_id, u.C.ChannelMessage)), [g, _] = l.useState(() => (0, i.ur)(p)), {
     textValue: y,
-    richValue: O
+    richValue: h
   } = g;
-  (0, a.useEffect)(() => {
+  (0, l.useEffect)(() => {
     r(y)
   }, [r, y]);
-  let _ = a.useCallback((t, r, n) => {
-      h({
+  let m = l.useCallback((t, r, n) => {
+      _({
         textValue: r,
         richValue: n
       }), o.A.saveDraft(e.channel_id, r, u.C.ChannelMessage)
     }, [e]),
-    [m, j] = a.useState(false),
-    w = a.useCallback(() => j(true), []),
-    C = a.useCallback(() => j(false), []);
-  (0, a.useEffect)(() => () => {
+    [O, w] = l.useState(false),
+    j = l.useCallback(() => w(true), []),
+    C = l.useCallback(() => w(false), []);
+  (0, l.useEffect)(() => () => {
     o.A.clearDraft(e.channel_id, u.C.ChannelMessage)
   }, [e]);
   let v = async () => ({
@@ -43,16 +43,16 @@ let b = () => {
     shouldRefocus: false
   });
   return (0, n.jsx)(c.Ay, {
-    innerClassName: p.O,
-    onChange: _,
+    innerClassName: b.O,
+    onChange: m,
     placeholder: f.intl.string(f.t.ZroO3G),
     channel: t,
     textValue: y,
-    richValue: O,
+    richValue: h,
     type: s.oU.SHARE_CUSTOM_CLIENT_THEME_INPUT,
     onBlur: C,
-    onFocus: w,
-    focused: m,
+    onFocus: j,
+    focused: O,
     onSubmit: v,
     parentModalKey: d.dJ,
     autoCompletePosition: "bottom",

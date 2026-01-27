@@ -36,14 +36,14 @@ let g = {
     let {
       isSelected: n,
       giftStyle: i,
-      setSelectedGiftStyle: s,
+      setSelectedGiftStyle: o,
       onFocus: l,
       onBlur: c
     } = e;
     return (0, r.jsx)(a.DUT, {
-      className: o.x6,
+      className: s.x6,
       innerRef: t,
-      onClick: () => s(i),
+      onClick: () => o(i),
       onFocus: l,
       onBlur: c,
       children: (0, r.jsx)("img", {
@@ -53,7 +53,7 @@ let g = {
         },
         alt: "",
         src: g[i],
-        className: n ? o.MY : o.dk
+        className: n ? s.MY : s.dk
       })
     })
   })

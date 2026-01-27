@@ -22,16 +22,16 @@ let u = 3,
   });
 
 function f(e) {
-  return (0, s.vq)(e, HTMLImageElement) ? e.complete : (0, s.vq)(e, HTMLVideoElement) ? e.readyState >= 2 : !!(0, s.vq)(e, HTMLDivElement) || true
+  return (0, o.vq)(e, HTMLImageElement) ? e.complete : (0, o.vq)(e, HTMLVideoElement) ? e.readyState >= 2 : !!(0, o.vq)(e, HTMLDivElement) || true
 }
 
 function p(e) {
-  return (0, s.vq)(e, HTMLImageElement) ? "load" : (0, s.vq)(e, HTMLVideoElement) ? "canplaythrough" : ((0, s.vq)(e, HTMLDivElement), "load")
+  return (0, o.vq)(e, HTMLImageElement) ? "load" : (0, o.vq)(e, HTMLVideoElement) ? "canplaythrough" : ((0, o.vq)(e, HTMLDivElement), "load")
 }
 
 function _(e) {
   var t, n;
-  return (0, s.vq)(e, HTMLImageElement) ? e.getAttribute("src") : (0, s.vq)(e, HTMLVideoElement) ? null != (t = null == (n = e.querySelectorAll("source")[0]) ? true : n.getAttribute("src")) ? t : "video" : ((0, s.vq)(e, HTMLDivElement), e.tagName)
+  return (0, o.vq)(e, HTMLImageElement) ? e.getAttribute("src") : (0, o.vq)(e, HTMLVideoElement) ? null != (t = null == (n = e.querySelectorAll("source")[0]) ? true : n.getAttribute("src")) ? t : "video" : ((0, o.vq)(e, HTMLDivElement), e.tagName)
 }
 
 function h(e) {
@@ -56,8 +56,8 @@ function h(e) {
         errorMessage: a
       } = e;
       if (n || null == h) return;
-      let u = (0, s.vq)(t, HTMLVideoElement) ? t.networkState : true;
-      o.default.track(c.HAw.QUEST_ASSET_LOADING_FAILURE, {
+      let u = (0, o.vq)(t, HTMLVideoElement) ? t.networkState : true;
+      s.default.track(c.HAw.QUEST_ASSET_LOADING_FAILURE, {
         source: h,
         quest_id: m,
         asset_id: _(t),
@@ -80,8 +80,8 @@ function h(e) {
         r = new AbortController,
         i = new a.A;
 
-      function o() {
-        i.succeed(), C(e), e.removeEventListener(n, o)
+      function s() {
+        i.succeed(), C(e), e.removeEventListener(n, s)
       }
 
       function l(n) {
@@ -94,16 +94,16 @@ function h(e) {
       }
 
       function c(t) {
-        E && i.fails < u && (0, s.vq)(e, HTMLVideoElement) ? i.fail(() => {
+        E && i.fails < u && (0, o.vq)(e, HTMLVideoElement) ? i.fail(() => {
           e.load()
         }) : l(t)
       }
       if (f(e) || (v(t => {
           let n = new Set(t);
           return n.add(e), n
-        }), e.addEventListener(n, o)), e.addEventListener("error", l, {
+        }), e.addEventListener(n, s)), e.addEventListener("error", l, {
           signal: r.signal
-        }), g && (0, s.vq)(e, HTMLVideoElement)) {
+        }), g && (0, o.vq)(e, HTMLVideoElement)) {
         let t = e.querySelectorAll("source"),
           n = t[t.length - 1];
         null == n || n.addEventListener("error", c, {
@@ -112,7 +112,7 @@ function h(e) {
       }
 
       function d() {
-        if (i.cancel(), r.abort(), e.removeEventListener(n, o), e.removeEventListener("error", l), g && (0, s.vq)(e, HTMLVideoElement)) {
+        if (i.cancel(), r.abort(), e.removeEventListener(n, s), e.removeEventListener("error", l), g && (0, o.vq)(e, HTMLVideoElement)) {
           let t = e.querySelectorAll("source"),
             n = t[t.length - 1];
           null == n || n.removeEventListener("error", c)
@@ -143,13 +143,13 @@ function m(e) {
   } = e, {
     registerAsset: r,
     unregisterAsset: a
-  } = i.useContext(d), s = i.useRef(null);
+  } = i.useContext(d), o = i.useRef(null);
   return i.useEffect(() => {
-    let e, n = s.current;
+    let e, n = o.current;
     return null != n && (e = r(n, t)), () => {
       null == e || e(), null != n && a(n)
     }
-  }, [r, a, t]), n(s)
+  }, [r, a, t]), n(o)
 }
 
 function g() {

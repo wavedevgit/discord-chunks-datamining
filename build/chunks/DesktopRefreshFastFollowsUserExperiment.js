@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   k5: () => a,
-  lV: () => s,
+  lV: () => o,
   qK: () => i
 });
 let r = (0, require("./600975.js").C)({
@@ -68,7 +68,7 @@ function a(e) {
   }).darkerGuildListBackground
 }
 
-function s(e) {
+function o(e) {
   return r.useExperiment({
     location: e
   }).distinctBorders

@@ -11,8 +11,8 @@ var Chunk257943 = require("./257943.js"),
   Chunk804272 = require("./804272.js"),
   d = Object.getOwnPropertyDescriptor;
 exports.f = Chunk257943 ? d : function(e, t) {
-  if (e = o(e), t = l(t), u) try {
+  if (e = s(e), t = l(t), u) try {
     return d(e, t)
   } catch (e) {}
-  if (c(e, t)) return s(!i(a.f, e, t), e[t])
+  if (c(e, t)) return o(!i(a.f, e, t), e[t])
 }

@@ -16,13 +16,13 @@ function l(e) {
     user: n,
     channel: l
   } = e;
-  if (null == n || (null == t ? true : t.type) !== o.$pd.CUSTOM_STATUS || null == t.emoji) returnfalse;
+  if (null == n || (null == t ? true : t.type) !== s.$pd.CUSTOM_STATUS || null == t.emoji) returnfalse;
   let c = t.emoji;
   if (null == c.id || null == l || !(0, i.ke)(l.type)) returntrue;
   let u = r.Ay.getUsableCustomEmojiById(c.id),
     d = a.Ay.isInternalEmojiForGuildId(u, l.getGuildId()),
-    f = s.$3({
-      permission: o.xBc.USE_EXTERNAL_EMOJIS,
+    f = o.$3({
+      permission: s.xBc.USE_EXTERNAL_EMOJIS,
       user: n,
       context: l
     });

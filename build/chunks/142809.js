@@ -2,32 +2,32 @@
 /** chunk id: 142809, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Hd: () => s
+  Hd: () => o
 });
 var Chunk550505 = require("./550505.js");
 let i = require("./627354.js").O,
   a = 80;
 
-function s(e, t = {}) {
+function o(e, t = {}) {
   if (!e) return "<unknown>";
   try {
     let n, r = e,
       i = 5,
-      s = [],
+      o = [],
       l = 0,
       c = 0,
       u = " > ",
       d = u.length,
       f = Array.isArray(t) ? t : t.keyAttrs,
       p = !Array.isArray(t) && t.maxStringLength || a;
-    for (; r && l++ < i && (n = o(r, f), "html" !== n && (!(l > 1) || !(c + s.length * d + n.length >= p)));) s.push(n), c += n.length, r = r.parentNode;
-    return s.reverse().join(u)
+    for (; r && l++ < i && (n = s(r, f), "html" !== n && (!(l > 1) || !(c + o.length * d + n.length >= p)));) o.push(n), c += n.length, r = r.parentNode;
+    return o.reverse().join(u)
   } catch (e) {
     return "<unknown>"
   }
 }
 
-function o(e, t) {
+function s(e, t) {
   let n = e,
     a = [];
   if (!n || !n.tagName) return "";
@@ -36,8 +36,8 @@ function o(e, t) {
     if (n.dataset.sentryElement) return n.dataset.sentryElement
   }
   a.push(n.tagName.toLowerCase());
-  let s = t && t.length ? t.filter(e => n.getAttribute(e)).map(e => [e, n.getAttribute(e)]) : null;
-  if (s && s.length) s.forEach(e => {
+  let o = t && t.length ? t.filter(e => n.getAttribute(e)).map(e => [e, n.getAttribute(e)]) : null;
+  if (o && o.length) o.forEach(e => {
     a.push(`[${e[0]}="${e[1]}"]`)
   });
   else {

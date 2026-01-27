@@ -60,7 +60,7 @@ class _ extends(r = Chunk64700.PureComponent) {
       i = !(arguments.length > 4) || true === arguments[4] || arguments[4];
     i && this.grabDimensions();
     let a = this.translate(e, t);
-    o.A.spring(this.state.position, d({
+    s.A.spring(this.state.position, d({
       toValue: {
         x: a.x,
         y: a.y
@@ -97,22 +97,22 @@ class _ extends(r = Chunk64700.PureComponent) {
     } = this.state, {
       className: n,
       children: r
-    } = this.props, a = [0, 1], s = ["0px", "1px"], l = o.A.accelerate(d({
+    } = this.props, a = [0, 1], o = ["0px", "1px"], l = s.A.accelerate(d({
       pointerEvents: e ? "none" : "auto",
       cursor: e ? "grabbing" : "grab",
       transform: [{
         translateX: t.x.interpolate({
           inputRange: a,
-          outputRange: s
+          outputRange: o
         })
       }, {
         translateY: t.y.interpolate({
           inputRange: a,
-          outputRange: s
+          outputRange: o
         })
       }]
     }, this.props.style));
-    return (0, i.jsx)(o.A.div, {
+    return (0, i.jsx)(s.A.div, {
       ref: this._ref,
       className: n,
       onMouseDown: this.handleMouseDown,
@@ -158,20 +158,20 @@ class _ extends(r = Chunk64700.PureComponent) {
       let {
         dragging: i,
         dragging: a
-      } = this.state, o = i;
+      } = this.state, s = i;
       !i && f(this._dragStart, {
         x: e.clientX,
         y: e.clientY
-      }) > p && (o = true), o && (this.animateToPosition(e.clientX - this._offsetX, e.clientY - this._offsetY, {
+      }) > p && (s = true), s && (this.animateToPosition(e.clientX - this._offsetX, e.clientY - this._offsetY, {
         tension: 80,
         friction: 8
-      }, null, false), (0, s.flushSync)(() => {
+      }, null, false), (0, o.flushSync)(() => {
         this.setState({
-          dragging: o
+          dragging: s
         }), a || null == t || t(e.clientX, e.clientY), null == n || n(e.clientX, e.clientY)
       }))
     }), u(this, "handleMouseUp", e => {
-      this._removeListeners(), this.state.dragging && (0, s.flushSync)(() => {
+      this._removeListeners(), this.state.dragging && (0, o.flushSync)(() => {
         this.setState({
           dragging: false
         });
@@ -181,11 +181,11 @@ class _ extends(r = Chunk64700.PureComponent) {
         null == t || t(e.clientX, e.clientY)
       })
     });
-    const t = new o.A.Value(e.initialX),
-      n = new o.A.Value(e.initialY);
+    const t = new s.A.Value(e.initialX),
+      n = new s.A.Value(e.initialY);
     this.state = {
       dragging: false,
-      position: new o.A.ValueXY({
+      position: new s.A.ValueXY({
         x: t,
         y: n
       })

@@ -28,7 +28,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -39,8 +39,8 @@ function s(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function s(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -69,7 +69,7 @@ class u extends Chunk315069.A {
     let {
       sku_id: t
     } = e;
-    return new u(o(a({}, l(e, ["sku_id"])), {
+    return new u(s(a({}, l(e, ["sku_id"])), {
       skuId: t
     }))
   }

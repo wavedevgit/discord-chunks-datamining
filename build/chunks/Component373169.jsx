@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 373169, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 373169, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  p: () => h
+  p: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,10 +16,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk58477 = require("./58477.js"),
   Chunk72290 = require("./72290.js");
 
-function h() {
-  let e = (0, a.bG)([l.default], () => l.default.locale),
-    [t, h] = i.useState(e),
-    m = i.useMemo(() => (0, f.getAvailableLocales)().map(e => {
+function g() {
+  let e = (0, l.bG)([o.default], () => o.default.locale),
+    [t, g] = i.useState(e),
+    A = i.useMemo(() => (0, _.getAvailableLocales)().map(e => {
       let t;
       try {
         t = n(579832)("./".concat(e.value, ".png"))
@@ -42,23 +41,23 @@ function h() {
         }),
         trailing: (0, r.jsx)("span", {
           className: p.hI,
-          children: f.intl.string(e.localizedName)
+          children: _.intl.string(e.localizedName)
         })
       }
     }), []),
-    g = i.useCallback(e => {
-      h(e), _.nextTick(() => {
-        o.Ay.updateLocale(e), (0, s.OoC)(u.USER_SETTINGS_MODAL_KEY) && (0, u.openUserSettings)(c.X.LANGUAGE_AND_TIME_PANEL, {
-          section: d.nc_.LANGUAGE
+    f = i.useCallback(e => {
+      g(e), m.nextTick(() => {
+        a.Ay.updateLocale(e), (0, s.OoC)(d.USER_SETTINGS_MODAL_KEY) && (0, d.openUserSettings)(c.X.LANGUAGE_AND_TIME_PANEL, {
+          section: u.nc_.LANGUAGE
         })
       })
     }, []);
   return (0, r.jsx)(s.ZiE, {
     selectionMode: "single",
-    label: f.intl.string(f.t["mx+sp7"]),
-    description: f.intl.string(f.t.rTPlcq),
+    label: _.intl.string(_.t["mx+sp7"]),
+    description: _.intl.string(_.t.rTPlcq),
     value: t,
-    options: m,
-    onSelectionChange: g
+    options: A,
+    onSelectionChange: f
   })
 }

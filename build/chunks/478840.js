@@ -1,98 +1,95 @@
-/** Chunk was on web.js **/
-/** chunk id: 478840, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 7034 **/
+/** chunk id: 478840, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V: () => f
+  V: () => c
 });
 var Chunk310784 = require("./310784.js"),
-  i = require.n(Chunk310784),
+  l = require.n(Chunk310784),
   Chunk325335 = require("./325335.js"),
   Chunk998304 = require("./998304.js"),
   Chunk300703 = require("./300703.js");
-let l = "#ffffff",
-  c = "#36393e",
-  u = e => {
-    var t, n;
-    let {
-      colors: r,
-      saturationFactor: o = 1
-    } = e;
-    if (null == r || r.length < 1) return null;
-    let u = (0, s.h6)(r),
-      d = a.A.parseString(u);
-    if (null == d) return null;
-    let f = (0, s.IB)(d.red, d.blue, d.green),
-      p = null != (t = (0, s.lZ)({
-        foreground: i()((0, s.fE)(d, .6, true).toHexString()),
-        background: i()(l),
-        ratio: 3,
-        saturationFactor: o
-      })) ? t : d,
-      _ = null != (n = (0, s.lZ)({
-        foreground: i()((0, s.fE)(d, .6, false).toHexString()),
-        background: i()(c),
-        ratio: 5,
-        saturationFactor: o
-      })) ? n : d,
-      h = (0, s.lZ)({
-        foreground: i()(u),
-        background: i()(l),
-        ratio: 7,
-        saturationFactor: o
-      }),
-      m = (0, s.lZ)({
-        foreground: i()(u),
-        background: i()(c),
-        ratio: 7,
-        saturationFactor: o
-      });
-    return {
-      LIGHT: {
-        accentColor: null == h ? true : h.hex(),
-        backgroundColor: (0, s.WN)({
-          colorRGB: p,
-          saturationFactor: o
-        }),
-        highlightColor: null == d ? true : d.toHexString(),
-        opacity: (null == f ? true : f.saturation) < .1 ? .35 : .1
-      },
-      DARK: {
-        accentColor: null == m ? true : m.hex(),
-        backgroundColor: (0, s.WN)({
-          colorRGB: _,
-          saturationFactor: o
-        }),
-        highlightColor: null == d ? true : d.toHexString(),
-        opacity: (null == f ? true : f.saturation) < .1 ? .5 : .2
-      }
-    }
-  },
-  d = e => {
-    let {
-      colors: t,
-      saturationFactor: n = 1,
-      shouldProcessMobileColors: r = false
-    } = e, i = u({
-      colors: t,
-      saturationFactor: n
-    });
-    return o.A.applyPlatformToThemedEmojiColorPalette({
-      palette: i,
-      shouldProcessMobileColors: r
-    })
-  },
-  f = (e, t, n) => {
-    var r;
+let s = "#ffffff",
+  u = "#36393e",
+  c = (e, t, n) => {
+    var i;
     if (null == e || e.length < 1) return null;
-    let i = d({
+    let c = (e => {
+        let {
+          colors: t,
+          saturationFactor: n = 1,
+          shouldProcessMobileColors: i = false
+        } = e, c = (e => {
+          var t, n;
+          let {
+            colors: i,
+            saturationFactor: a = 1
+          } = e;
+          if (null == i || i.length < 1) return null;
+          let c = (0, o.h6)(i),
+            d = r.A.parseString(c);
+          if (null == d) return null;
+          let p = (0, o.IB)(d.red, d.blue, d.green),
+            h = null != (t = (0, o.lZ)({
+              foreground: l()((0, o.fE)(d, .6, true).toHexString()),
+              background: l()(s),
+              ratio: 3,
+              saturationFactor: a
+            })) ? t : d,
+            m = null != (n = (0, o.lZ)({
+              foreground: l()((0, o.fE)(d, .6, false).toHexString()),
+              background: l()(u),
+              ratio: 5,
+              saturationFactor: a
+            })) ? n : d,
+            f = (0, o.lZ)({
+              foreground: l()(c),
+              background: l()(s),
+              ratio: 7,
+              saturationFactor: a
+            }),
+            g = (0, o.lZ)({
+              foreground: l()(c),
+              background: l()(u),
+              ratio: 7,
+              saturationFactor: a
+            });
+          return {
+            LIGHT: {
+              accentColor: null == f ? true : f.hex(),
+              backgroundColor: (0, o.WN)({
+                colorRGB: h,
+                saturationFactor: a
+              }),
+              highlightColor: null == d ? true : d.toHexString(),
+              opacity: (null == p ? true : p.saturation) < .1 ? .35 : .1
+            },
+            DARK: {
+              accentColor: null == g ? true : g.hex(),
+              backgroundColor: (0, o.WN)({
+                colorRGB: m,
+                saturationFactor: a
+              }),
+              highlightColor: null == d ? true : d.toHexString(),
+              opacity: (null == p ? true : p.saturation) < .1 ? .5 : .2
+            }
+          }
+        })({
+          colors: t,
+          saturationFactor: n
+        });
+        return a.A.applyPlatformToThemedEmojiColorPalette({
+          palette: c,
+          shouldProcessMobileColors: i
+        })
+      })({
         colors: e,
         saturationFactor: t
       }),
-      a = n ? null == i ? true : i.DARK : null == i ? true : i.LIGHT;
+      d = n ? null == c ? true : c.DARK : null == c ? true : c.LIGHT;
     return {
-      backgroundColor: null == a ? true : a.backgroundColor,
-      accentColor: null == a ? true : a.accentColor,
-      highlightColor: null == a ? true : a.highlightColor,
-      opacity: null != (r = null == a ? true : a.opacity) ? r : .15
+      backgroundColor: null == d ? true : d.backgroundColor,
+      accentColor: null == d ? true : d.accentColor,
+      highlightColor: null == d ? true : d.highlightColor,
+      opacity: null != (i = null == d ? true : d.opacity) ? i : .15
     }
   }

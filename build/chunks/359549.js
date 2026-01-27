@@ -54,7 +54,7 @@ function y(e) {
   return null != e && ((null == e ? true : e.embeddedActivityConfig) == null || !!g({
     countryCode: null == t ? true : t.alpha2,
     activity: e.embeddedActivityConfig
-  })) && (!!m(e) || null != r && null != n && !!(0, o.Ag)(n) && ((null == n ? true : n.embeddedActivityConfig) == null || !!g({
+  })) && (!!m(e) || null != r && null != n && !!(0, s.Ag)(n) && ((null == n ? true : n.embeddedActivityConfig) == null || !!g({
     countryCode: null == t ? true : t.alpha2,
     activity: n.embeddedActivityConfig
   })))
@@ -65,7 +65,7 @@ function b(e) {
     application: t,
     analyticsLocations: n
   } = e, i = y(t), {
-    bot: o
+    bot: s
   } = null != t ? t : {
     bot: null
   }, l = E(t), {
@@ -82,14 +82,14 @@ function b(e) {
         dismissAction: _.i.TAKE_ACTION
       })
     };
-    return m(t) && null != o ? () => {
+    return m(t) && null != s ? () => {
       e(), d.default.track(p.HAw.CLOUD_PLAY_CTA_CLICKED, {
         source_application_id: t.id,
         launching_application_id: t.id,
         location_stack: n
-      }), (0, s.Q)({
+      }), (0, o.Q)({
         appId: t.id,
-        botId: o.id,
+        botId: s.id,
         analyticsLocations: null != n ? n : []
       })
     } : null != f && null != h ? () => {
@@ -97,11 +97,11 @@ function b(e) {
         source_application_id: t.id,
         launching_application_id: f,
         location_stack: n
-      }), (0, s.Q)({
+      }), (0, o.Q)({
         appId: f,
         botId: h,
         analyticsLocations: null != n ? n : []
       })
     } : true
-  }, [i, t, o, f, h, n])
+  }, [i, t, s, f, h, n])
 }

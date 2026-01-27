@@ -111,8 +111,8 @@ function E(e, t, n) {
   let {
     toAST: i = false,
     hideSimpleEmbedContent: a = true,
-    formatInline: s = false,
-    postProcessor: o,
+    formatInline: o = false,
+    postProcessor: s,
     contentMessage: l
   } = n, c = false, u = false, d = (null != l ? l : t).content, f = e(d, true, m(t, n), (e, n) => (Array.isArray(e) || (e = [e]), e.length >= r.t9 - 10 && (u = true, e = [{
     type: "text",
@@ -121,7 +121,7 @@ function E(e, t, n) {
       index: 0,
       0: d
     }
-  }]), a && (e = R(e, (null != l ? l : t).embeds)), s || (e = S(e, n)), e = y(e), t.embeds.length > 0 && (c = C(e, n)), s && (e = P(e)), null != o && (e = o(e, n)), e));
+  }]), a && (e = R(e, (null != l ? l : t).embeds)), o || (e = S(e, n)), e = y(e), t.embeds.length > 0 && (c = C(e, n)), o && (e = P(e)), null != s && (e = s(e, n)), e));
   return {
     hasSpoilerEmbeds: c,
     content: f,
@@ -234,11 +234,11 @@ function R(e, t) {
   if (1 !== e.length || 1 !== t.length) return e;
   let n = e[0],
     r = t[0];
-  return ("link" === n.type || "attachmentLink" === n.type) && _.has(r.type) && (0, s.NV)(r) ? [] : e
+  return ("link" === n.type || "attachmentLink" === n.type) && _.has(r.type) && (0, o.NV)(r) ? [] : e
 }
 
 function P(e) {
   return e.forEach(e => {
-    h.has(e.type) && null != e.content && (Array.isArray(e.content) ? P(e.content) : "string" == typeof e.content ? e.content = e.content.replace(/\n/g, " ") : o.A.captureMessage("AST node type:".concat(e.type, " with content typeof ").concat(typeof e.content, ". Keys ").concat(Object.keys(e))))
+    h.has(e.type) && null != e.content && (Array.isArray(e.content) ? P(e.content) : "string" == typeof e.content ? e.content = e.content.replace(/\n/g, " ") : s.A.captureMessage("AST node type:".concat(e.type, " with content typeof ").concat(typeof e.content, ". Keys ").concat(Object.keys(e))))
   }), e
 }

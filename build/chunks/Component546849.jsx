@@ -1,40 +1,36 @@
-/** Chunk was on web.js **/
-/** chunk id: 546849, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 546849, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => a
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk128450 = require("./128450.jsx"),
   Chunk985018 = require("./985018.jsx");
-let o = 40;
 
-function l(e) {
+function a(e) {
   let {
     sectionTitle: t,
     errors: n,
-    onPronounsChange: l,
-    pendingPronouns: c,
-    placeholder: u,
+    onPronounsChange: a,
+    pendingPronouns: o,
+    placeholder: c,
     currentPronouns: d,
-    disabled: f = false
+    disabled: u = false
   } = e;
-
-  function p(e) {
-    l(e === d ? true : e)
-  }
-  return (0, r.jsx)(a.A, {
+  return (0, r.jsx)(l.A, {
     title: t,
     errors: n,
-    disabled: f,
+    disabled: u,
     children: (0, r.jsx)(i.ksK, {
-      placeholder: null != u ? u : s.intl.string(s.t.NPEUUu),
-      maxLength: o,
-      value: null != c ? c : d,
-      onChange: p,
-      disabled: f
+      placeholder: null != c ? c : s.intl.string(s.t.NPEUUu),
+      maxLength: 40,
+      value: null != o ? o : d,
+      onChange: function(e) {
+        a(e === d ? true : e)
+      },
+      disabled: u
     })
   })
 }

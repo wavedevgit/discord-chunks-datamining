@@ -17,9 +17,9 @@ function c(e) {
 }
 
 function u(e) {
-  let t = (0, i.bG)([o.A], () => o.A.getUserTrialOffer(e)),
+  let t = (0, i.bG)([s.A], () => s.A.getUserTrialOffer(e)),
     [n, u] = r.useState(c(t)),
-    d = !(0, i.bG)([s.default], () => (0, l.TW)(s.default.getCurrentUser())) || o.A.canFractionalPremiumUserUseOffer();
+    d = !(0, i.bG)([o.default], () => (0, l.TW)(o.default.getCurrentUser())) || s.A.canFractionalPremiumUserUseOffer();
   return r.useEffect(() => {
     if (null != t && null != t.expires_at) {
       let e = new a.Ep,

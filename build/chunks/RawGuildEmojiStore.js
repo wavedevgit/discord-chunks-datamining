@@ -8,7 +8,7 @@ var Chunk810531 = require("./810531.js"),
   Chunk952526 = require("./952526.js"),
   Chunk770335 = require("./770335.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e, t) {
+function s(e, t) {
   let n = {};
   for (let i of t) n[i.id] = {
     [r.L]: "RawGuildEmoji",
@@ -39,35 +39,35 @@ class l extends Chunk952526.U {
     return this.getNullablePartition(e)
   }
 }
-s(l, "displayName", "RawGuildEmojiStore");
+o(l, "displayName", "RawGuildEmojiStore");
 let c = new l({
   LOGOUT: (e, t) => t.reset(),
   BACKGROUND_SYNC: (e, t) => t.reset(),
   CONNECTION_OPEN: (e, t) => {
     t.reset(t => {
-      for (let n of e.guilds) null != n.emojis.items && (t[n.id] = o(n.id, n.emojis.items))
+      for (let n of e.guilds) null != n.emojis.items && (t[n.id] = s(n.id, n.emojis.items))
     })
   },
   OVERLAY_INITIALIZE: (e, t) => {
     t.reset(t => {
       Object.entries(e.emojis).forEach(e => {
         let [n, r] = e;
-        t[n] = o(n, r)
+        t[n] = s(n, r)
       })
     })
   },
   CACHED_EMOJIS_LOADED: (e, t) => {
-    for (let [n, r] of e.emojis) t.setPartition(n, o(n, r))
+    for (let [n, r] of e.emojis) t.setPartition(n, s(n, r))
   },
   GUILD_CREATE: (e, t) => {
     var n;
-    t.setPartition(e.guild.id, o(e.guild.id, null != (n = e.guild.emojis.items) ? n : []))
+    t.setPartition(e.guild.id, s(e.guild.id, null != (n = e.guild.emojis.items) ? n : []))
   },
   GUILD_UPDATE: (e, t) => {
-    t.setPartition(e.guild.id, o(e.guild.id, e.guild.emojis))
+    t.setPartition(e.guild.id, s(e.guild.id, e.guild.emojis))
   },
   GUILD_EMOJIS_UPDATE: (e, t) => {
-    t.setPartition(e.guildId, o(e.guildId, e.emojis))
+    t.setPartition(e.guildId, s(e.guildId, e.emojis))
   },
   GUILD_DELETE: (e, t) => {
     t.removePartition(e.guild.id)

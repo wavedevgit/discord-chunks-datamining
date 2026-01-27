@@ -8,7 +8,7 @@ var Chunk321733 = require("./321733.js"),
   Chunk420563 = require("./420563.js"),
   Chunk988440 = require("./988440.js"),
   Chunk317374 = require("./317374.js"),
-  o = {
+  s = {
     type: Chunk317374.KR,
     payload: {
       clientOffset: null,
@@ -30,7 +30,7 @@ function l(e) {
       h = e.getRegistry();
     e.dispatch((0, i.P)(l)), c(t, _, h);
     var m = f(t, _);
-    if (null === m) return void e.dispatch(o);
+    if (null === m) return void e.dispatch(s);
     var g = null;
     if (l) {
       if (!p) throw Error("getSourceClientOffset must be defined");
@@ -42,7 +42,7 @@ function l(e) {
       d(E), h.pinSource(m);
       var y = h.getSourceType(m);
       return {
-        type: s.Vw,
+        type: o.Vw,
         payload: {
           itemType: y,
           item: E,

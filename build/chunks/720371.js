@@ -9,7 +9,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk927813 = require("./927813.js"),
   Chunk60809 = require("./60809.js");
 
-function o(e) {
+function s(e) {
   let {
     alphabeticalSortedCommands: t
   } = e;
@@ -50,13 +50,13 @@ function l(e) {
   let {
     sectionId: t,
     commandsByActiveSection: n
-  } = e, [l, c] = r.useState(s.Ug.ALPHABETICAL), u = r.useMemo(() => {
+  } = e, [l, c] = r.useState(o.Ug.ALPHABETICAL), u = r.useMemo(() => {
     var e, r;
     return null != (e = null == (r = n.find(e => e.section.id === t)) ? true : r.data) ? e : []
   }, [n, t]), {
     popularSortedCommands: d,
     canSort: f
-  } = o({
+  } = s({
     alphabeticalSortedCommands: u
   });
   r.useEffect(() => {
@@ -65,14 +65,14 @@ function l(e) {
       dontRefetchMs: a.A.Millis.DAY
     })
   }, [t]), r.useLayoutEffect(() => {
-    f && c(s.Ug.POPULAR)
+    f && c(o.Ug.POPULAR)
   }, [f]);
   let p = u;
   switch (l) {
-    case s.Ug.POPULAR:
+    case o.Ug.POPULAR:
       p = d;
       break;
-    case s.Ug.ALPHABETICAL:
+    case o.Ug.ALPHABETICAL:
       p = u
   }
   return {

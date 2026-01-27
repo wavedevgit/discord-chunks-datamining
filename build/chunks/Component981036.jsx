@@ -77,7 +77,7 @@ let g = e => {
     let {
       message: t
     } = e;
-    return (0, r.jsx)(s.wx6, {
+    return (0, r.jsx)(o.wx6, {
       type: "critical",
       children: t
     })
@@ -86,16 +86,16 @@ let g = e => {
     let {
       onClick: t,
       loading: n,
-      disabled: s,
-      text: o,
+      disabled: o,
+      text: s,
       tooltipText: l
     } = e, c = f({
-      text: o
+      text: s
     }, h(e, ["onClick", "loading", "disabled", "text", "tooltipText"])), u = (0, r.jsx)(a.$nd, _(f({}, c), {
       onClick: t,
       loading: n,
-      disabled: s,
-      text: o
+      disabled: o,
+      text: s
     }));
     return null != l ? (0, r.jsx)(i.m, {
       text: l,
@@ -109,10 +109,10 @@ let g = e => {
       showLockIcon: n,
       onBackClick: i
     } = e, a = h(e, ["primaryCTAButtonProps", "showLockIcon", "onBackClick"]);
-    return (0, r.jsxs)(s.jlY, _(f({
+    return (0, r.jsxs)(o.jlY, _(f({
       className: u.B,
-      direction: o.A.Direction.HORIZONTAL,
-      justify: null != i ? o.A.Justify.BETWEEN : o.A.Justify.END,
+      direction: s.A.Direction.HORIZONTAL,
+      justify: null != i ? s.A.Justify.BETWEEN : s.A.Justify.END,
       "data-migration-pending": true
     }, a), {
       children: [null != i ? (0, r.jsx)(c.A, {

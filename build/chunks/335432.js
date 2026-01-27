@@ -16,7 +16,7 @@ var Chunk209932 = require("./209932.js"),
 let d = /^<sound:(\d+):(\d+)>/;
 
 function f(e, t, n, a, l) {
-  if (!s.UL.getCurrentConfig({
+  if (!o.UL.getCurrentConfig({
       location: "getSoundmojiASTFromString"
     }, {
       autoTrackExposure: false
@@ -24,7 +24,7 @@ function f(e, t, n, a, l) {
   let d = r.A.getSoundById(a),
     f = (0, c.A)(d, e, t);
   if (null != n && null != t) {
-    let e = (0, o.A)(t, n, a, l);
+    let e = (0, s.A)(t, n, a, l);
     if (f && null == e) {
       let e = i.A.getMessage(t, n);
       if ((null == e ? true : e.state) !== u.cmJ.SENT) return d
@@ -39,11 +39,11 @@ function p(e, t) {
   let r = e[1],
     i = e[2],
     {
-      guildId: s,
-      channelId: o,
+      guildId: o,
+      channelId: s,
       messageId: c
     } = t,
-    u = f(s, o, c, i, t.soundboardSounds);
+    u = f(o, s, c, i, t.soundboardSounds);
   if (null == u) return {
     type: "text",
     content: (0, l.A)(r, i)

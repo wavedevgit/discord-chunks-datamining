@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk187322 = require("./187322.jsx"),
   Chunk331322 = require("./331322.jsx"),
   Chunk842867 = require("./842867.js");
@@ -90,13 +90,13 @@ function m(e, t, n) {
     } = h, w = _(h, ["children", "className", "dir", "orientation", "overflow", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack", "disableFocusRingScope"]), [R] = m, {
       scrollerRef: P,
       getScrollerState: D
-    } = (0, c.s$)(), x = (0, c.kR)(P, b);
+    } = (0, c.s$)(), L = (0, c.kR)(P, b);
     i.useImperativeHandle(R, () => d({
       getScrollerNode: () => P.current,
       getScrollerState: D
-    }, (0, c.cJ)(P, D, x, b)), [P, D, b, x]);
-    let L = N ? i.Fragment : o.xp,
-      j = (0, c._I)({
+    }, (0, c.cJ)(P, D, L, b)), [P, D, b, L]);
+    let x = N ? i.Fragment : s.xp,
+      M = (0, c._I)({
         paddingFix: I,
         orientation: b,
         dir: y,
@@ -107,7 +107,7 @@ function m(e, t, n) {
     return C ? (0, r.jsx)(l.B, p(d({
       gap: T,
       ref: P,
-      className: s()(E, {
+      className: o()(E, {
         [e]: true,
         [t]: v,
         [n]: A
@@ -115,13 +115,13 @@ function m(e, t, n) {
       style: (0, c.Ze)(S, b, O),
       dir: y
     }, w), {
-      children: (0, r.jsxs)(L, {
+      children: (0, r.jsxs)(x, {
         containerRef: P,
-        children: [g, j]
+        children: [g, M]
       })
     })) : (0, r.jsx)("div", p(d({
       ref: P,
-      className: s()(E, {
+      className: o()(E, {
         [e]: true,
         [t]: v,
         [n]: A
@@ -129,9 +129,9 @@ function m(e, t, n) {
       style: (0, c.Ze)(S, b, O),
       dir: y
     }, w), {
-      children: (0, r.jsxs)(L, {
+      children: (0, r.jsxs)(x, {
         containerRef: P,
-        children: [g, j]
+        children: [g, M]
       })
     }))
   })

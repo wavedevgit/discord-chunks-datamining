@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 947089, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   ZF: "qrLogin_e16417",
   vP: "qrLoginInner_e16417",

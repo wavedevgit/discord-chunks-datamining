@@ -15,7 +15,7 @@ var Chunk439626 = require("./439626.js"),
   Chunk834730 = require("./834730.jsx"),
   Chunk364309 = require("./364309.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,7 +31,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -76,7 +76,7 @@ function f(e, t) {
 
 function p(e) {
   return (0, r.jsx)(i.fh, u(l({}, e), {
-    className: s.Hn
+    className: o.Hn
   }))
 }
 
@@ -85,10 +85,10 @@ function _(e) {
     children: t
   } = e, n = d(e, ["children"]);
   return (0, r.jsx)(i.VP, u(l({}, n), {
-    className: s.fi,
+    className: o.fi,
     children: (0, r.jsx)(a.E, {
       variant: "eyebrow",
-      className: s.QP,
+      className: o.QP,
       children: t
     })
   }))
@@ -96,19 +96,19 @@ function _(e) {
 
 function h(e) {
   return (0, r.jsx)(i.fI, u(l({}, e), {
-    className: s.nM
+    className: o.nM
   }))
 }
 
 function m(e) {
   return (0, r.jsx)(i.BF, u(l({}, e), {
-    className: s.rf
+    className: o.rf
   }))
 }
 
 function g(e) {
   return (0, r.jsx)(i.A0, u(l({}, e), {
-    className: s.wx
+    className: o.wx
   }))
 }
 
@@ -117,16 +117,16 @@ function E(e) {
     header: t,
     footer: n,
     children: a
-  } = e, o = d(e, ["header", "footer", "children"]);
+  } = e, s = d(e, ["header", "footer", "children"]);
   return (0, r.jsx)("div", {
-    className: s.kL,
-    children: (0, r.jsxs)(i.XI, u(l({}, o), {
-      className: s.tp,
+    className: o.kL,
+    children: (0, r.jsxs)(i.XI, u(l({}, s), {
+      className: o.tp,
       children: [null != t && (0, r.jsx)("div", {
-        className: s.wx,
+        className: o.wx,
         children: t
       }), a, null != n && (0, r.jsx)("div", {
-        className: s.qr,
+        className: o.qr,
         children: n
       })]
     }))

@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 644485, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 644485, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk241976 = require("./241976.js");
-module.exports = function(e, t) {
-  var n = t.ownerDocument.defaultView.getSelection();
-  return 0 === n.rangeCount ? {
-    selectionState: e.getSelection().set("hasFocus", false),
+module.exports = function(t, e) {
+  var r = e.ownerDocument.defaultView.getSelection();
+  return 0 === r.rangeCount ? {
+    selectionState: t.getSelection().set("hasFocus", false),
     needsRecovery: false
-  } : r(e, t, n.anchorNode, n.anchorOffset, n.focusNode, n.focusOffset)
+  } : n(t, e, r.anchorNode, r.anchorOffset, r.focusNode, r.focusOffset)
 }

@@ -39,7 +39,7 @@ async function b(e, t) {
     requestedAt: i
   });
   try {
-    let n = await o.Bo.get({
+    let n = await s.Bo.get({
       url: h.BVt.CHANNEL_SUMMARY(e, t),
       rejectWithError: false
     });
@@ -60,14 +60,14 @@ async function O(e) {
   var t, n;
   let r, i;
   if (!_.A.shouldFetch(e)) return;
-  let s = Date.now();
+  let o = Date.now();
   l.h.dispatch({
     type: "REQUEST_CHANNEL_SUMMARIES",
     channelId: e,
-    requestedAt: s
+    requestedAt: o
   });
   try {
-    i = await o.Bo.get({
+    i = await s.Bo.get({
       url: h.BVt.CHANNEL_SUMMARIES(e),
       rejectWithError: false
     })
@@ -80,7 +80,7 @@ async function O(e) {
     channelId: e,
     summaries: u,
     error: null != r ? r : true,
-    requestedAt: s,
+    requestedAt: o,
     receivedAt: Date.now()
   })
 }
@@ -132,7 +132,7 @@ async function C() {
     requestedAt: r
   });
   try {
-    n = await o.Bo.get({
+    n = await s.Bo.get({
       url: "/users/@me/affinities/channels",
       rejectWithError: false
     })
@@ -174,7 +174,7 @@ async function N(e) {
     requestedAt: a
   });
   try {
-    n = await o.Bo.post({
+    n = await s.Bo.post({
       url: h.BVt.USER_SUMMARIES,
       body: {
         channel_ids: e
@@ -184,12 +184,12 @@ async function N(e) {
   } catch (e) {
     t = new c.LG(e)
   }
-  let s = null == n ? true : n.body.summaries;
+  let o = null == n ? true : n.body.summaries;
   l.h.dispatch({
     type: "RECEIVE_CHANNEL_SUMMARIES_BULK",
     requestedAt: a,
     receivedAt: Date.now(),
-    summaries: s,
+    summaries: o,
     requestArgs: {
       channelIds: e
     },
@@ -199,7 +199,7 @@ async function N(e) {
 
 function w() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
-    t = (0, s.bG)([d.A], () => d.A.isConnected()),
+    t = (0, o.bG)([d.A], () => d.A.isConnected()),
     n = r.useMemo(() => e.join(","), [e]);
   r.useEffect(() => {
     t && e();
@@ -213,7 +213,7 @@ function w() {
 }
 async function R(e) {
   try {
-    await o.Bo.del({
+    await s.Bo.del({
       url: h.BVt.CHANNEL_SUMMARY(e.channelId, e.id),
       rejectWithError: false
     }), l.h.dispatch({
@@ -235,7 +235,7 @@ let P = {
     let {
       channelIds: t = []
     } = e;
-    return w(t), (0, s.yK)([_.A], () => _.A.topSummaries(), [])
+    return w(t), (0, o.yK)([_.A], () => _.A.topSummaries(), [])
   },
   deleteSummary: R
 }

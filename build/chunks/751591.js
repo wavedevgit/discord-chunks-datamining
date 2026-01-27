@@ -30,11 +30,11 @@ let a = Object.freeze({
     overflowY: "scroll",
     overflowX: "hidden"
   }),
-  s = Object.freeze({
+  o = Object.freeze({
     overflowY: "auto",
     overflowX: "hidden"
   }),
-  o = Object.freeze({
+  s = Object.freeze({
     overflowX: "scroll",
     overflowY: "hidden"
   }),
@@ -49,6 +49,6 @@ let a = Object.freeze({
 function u(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "vertical",
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "scroll",
-    r = "vertical" === t ? "auto" === n ? s : a : "horizontal" === t ? "auto" === n ? l : o : c;
+    r = "vertical" === t ? "auto" === n ? o : a : "horizontal" === t ? "auto" === n ? l : s : c;
   return null != e ? i({}, r, e) : r
 }

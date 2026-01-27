@@ -8,7 +8,7 @@ var r, Chunk64700 = require("./64700.js"),
   Chunk835245 = require("./835245.js"),
   Chunk313271 = require("./313271.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -51,7 +51,7 @@ class d extends(r = Chunk64700.Component) {
     return i.Children.only(this.props.children)
   }
   constructor(e) {
-    super(e), o(this, "elementId", true), o(this, "isVisible", false);
+    super(e), s(this, "elementId", true), s(this, "isVisible", false);
     const {
       root: t,
       rootMargin: n,
@@ -59,14 +59,14 @@ class d extends(r = Chunk64700.Component) {
     } = e;
     t ? c.has(t) ? this.elementId = c.get(t) || "" : c.set(t, (0, a.A)()) : this.elementId = l;
     const i = this.getVisibilityObserverId();
-    u.has(i) || u.set(i, new s.j({
+    u.has(i) || u.set(i, new o.j({
       root: t,
       rootMargin: n,
       threshold: r
     }))
   }
 }
-o(d, "defaultProps", {
+s(d, "defaultProps", {
   active: true,
   children: Chunk64700.createElement("span"),
   root: null,

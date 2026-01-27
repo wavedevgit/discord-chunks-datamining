@@ -12,7 +12,7 @@ var Chunk499867 = require("./499867.js"),
   Chunk121894 = require("./121894.js"),
   Chunk506774 = require("./506774.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,7 +28,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -116,8 +116,8 @@ let y = (0, Chunk265690.h)()((0, Chunk499867.Zr)((e, t) => ({
       }))
     },
     setVideoProgress: (n, r, i) => {
-      var s, o;
-      let c = Math.max(null != (s = null == (o = t().videoProgress[n]) ? true : o.maxTimestampSec) ? s : 0, Math.floor(r));
+      var o, s;
+      let c = Math.max(null != (o = null == (s = t().videoProgress[n]) ? true : s.maxTimestampSec) ? o : 0, Math.floor(r));
       (0, a.r)(() => e({
         videoProgress: u(l({}, t().videoProgress), {
           [n]: {
@@ -171,10 +171,10 @@ let y = (0, Chunk265690.h)()((0, Chunk499867.Zr)((e, t) => ({
     storage: (0, Chunk499867.KU)(() => ({
       getItem: e => {
         var t;
-        return null != (t = s.w.get(e)) ? t : null
+        return null != (t = o.w.get(e)) ? t : null
       },
-      setItem: (e, t) => s.w.set(e, t),
-      removeItem: e => s.w.remove(e)
+      setItem: (e, t) => o.w.set(e, t),
+      removeItem: e => o.w.remove(e)
     })),
     partialize: e => ({
       volume: e.volume,

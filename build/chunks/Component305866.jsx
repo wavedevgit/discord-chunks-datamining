@@ -10,7 +10,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
   Chunk989395 = require("./989395.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -74,15 +74,15 @@ let p = Chunk64700.createContext({
   _ = Chunk64700.forwardRef(function(e, t) {
     let {
       children: n,
-      impressionType: o,
+      impressionType: s,
       impression: c,
       disableTrack: f,
       returnRef: _
     } = e, h = d(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), m = i.useRef(null), g = i.useRef(null), [E, y] = i.useState(false), b = E ? g : m;
     (0, a.tjt)(b, {
       returnRef: _
-    }), i.useContext(s.A)({
-      type: o,
+    }), i.useContext(o.A)({
+      type: s,
       name: null == c ? true : c.impressionName,
       properties: null == c ? true : c.impressionProperties
     }, {

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => c,
-  Sv: () => o
+  Sv: () => s
 }), require("./65821.js");
 var Chunk64700 = require("./64700.js"),
   Chunk143236 = require("./143236.js");
@@ -24,9 +24,9 @@ class a extends Chunk143236.EventEmitter {
     returnfalse
   }
 }
-let s = Chunk64700.createContext(new a),
+let o = Chunk64700.createContext(new a),
   {
-    Provider: o,
+    Provider: s,
     Consumer: l
-  } = s,
-  c = s
+  } = o,
+  c = o

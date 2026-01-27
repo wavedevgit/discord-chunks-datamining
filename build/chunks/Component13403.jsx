@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 13403, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 13403, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => R
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -35,153 +34,160 @@ var Chunk627968 = require("./627968.js"),
   Chunk49999 = require("./49999.js"),
   Chunk985018 = require("./985018.jsx");
 
-function x(e, t) {
-  var n;
-  let r = (0, y.d)(e),
-    i = (0, a.bG)([p.A, b.A], () => {
-      let t = p.A.getApplication(e);
-      return null != t ? b.A.getGameByApplication(t) : null
-    }, [e]);
-  return {
-    openGameProfileModal: (0, E.A)({
-      location: "Rich Presence Activity Invite Embed",
-      applicationId: null != (n = null == i ? true : i.id) ? n : true,
-      source: g.Ob.Embed,
-      trackEntryPointImpression: true,
-      sourceUserId: t
-    }),
-    launchableAppId: r
-  }
-}
-
-function L(e, t) {
-  var n, r, i, a;
-  let {
-    bot: s
-  } = t, o = (null == (r = e.activity) ? true : r.icon_override) != null ? (0, v.uD)(t.id, null == (i = e.activity) ? true : i.icon_override) : null;
-  return {
-    iconSrc: null != o ? o : A.Ay.getApplicationIconURL({
-      id: t.id,
-      icon: t.icon,
-      bot: s
-    }),
-    name: null != (n = null == (a = e.activity) ? true : a.name_override) ? n : t.name
-  }
-}
-
-function j(e) {
-  var t, n;
-  let {
-    analyticsLocations: p,
-    application: g,
-    channel: E,
-    currentUserId: y,
-    currentUserPresenceActivity: b,
-    hideParty: v,
-    message: A,
-    onView: j,
-    partyStatusElement: M,
-    presenceActivity: k
-  } = e, U = (0, c.Ag)(g), {
-    iconSrc: G,
-    name: V
-  } = L(A, g), F = null != (t = (0, N.I)({
-    messageId: A.id,
-    presenceActivity: k,
-    application: g
-  })) ? t : true, {
-    openGameProfileModal: B,
-    launchableAppId: H
-  } = x(g.id, A.author.id), Y = (0, C.A)({
-    application: g,
-    analyticsLocations: p
-  }), W = i.useMemo(() => {
-    if (null != Y) return {
-      label: D.intl.string(D.t["jaYS/h"]),
-      icon: l.hpF,
-      trackingArea: _.kY.CLOUD_PLAY,
-      onClick: Y
-    }
-  }, [Y]), K = (0, h.F)(g), z = i.useMemo(() => null != B ? B : null != K && U ? K : true, [U, B, K]), q = u.A.useConfig({
-    location: "RichPresenceGameActivityInviteEmbed"
-  }), {
-    canStartAuthorization: Z,
-    hasAlreadyLinked: X,
-    startAuthorization: Q
-  } = (0, f.RD)(g), J = (0, d.z)(Q, X), $ = !(0, S.A)(k, A, g.id), ee = (0, I.n$)(V, null == (n = A.activity) ? true : n.type, $), et = i.useRef(null), en = (0, a.bG)([O.A], () => O.A.getMessages(E.id)), er = () => {
-    let e = [];
-    return (0, T.G)(A.id, en) && Z && !X && q.enabled && e.push(s.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, r.jsx)(m.Ay, {
-      contentTypes: e,
-      children: e => {
-        let {
-          visibleContent: t,
-          markAsDismissed: n
-        } = e;
-        if (t === s.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, r.jsx)(o.AM, {
-          graphic: {
-            type: "dynamic",
-            component: l.Z86.ACCOUNT_LINK_DISPLAY,
-            props: {
-              application: g
-            }
-          },
-          title: D.intl.formatToPlainString(D.t["lo6H6+"], {
-            gameName: g.name
-          }),
-          body: D.intl.string(D.t.qYAzOp),
-          targetElementRef: et,
-          caretConfig: {
-            align: "start"
-          },
-          shouldShow: true,
-          gradientColor: "purple",
-          onRequestClose: () => n(P.i.USER_DISMISS)
-        })
+function R(e) {
+  var t, n, R, D, L;
+  let M, k, {
+      analyticsLocations: U,
+      application: G,
+      channel: B,
+      currentUserId: F,
+      currentUserPresenceActivity: H,
+      hideParty: V,
+      message: z,
+      onView: W,
+      partyStatusElement: K,
+      presenceActivity: Y
+    } = e,
+    q = (0, c.Ag)(G),
+    {
+      iconSrc: J,
+      name: Q
+    } = function(e, t) {
+      var n, r, i, l;
+      let {
+        bot: a
+      } = t, s = (null == (r = e.activity) ? true : r.icon_override) != null ? (0, x.uD)(t.id, null == (i = e.activity) ? true : i.icon_override) : null;
+      return {
+        iconSrc: null != s ? s : O.Ay.getApplicationIconURL({
+          id: t.id,
+          icon: t.icon,
+          bot: a
+        }),
+        name: null != (n = null == (l = e.activity) ? true : l.name_override) ? n : t.name
       }
-    })
-  };
-  return $ ? (0, r.jsx)(w.A, {
-    message: A,
-    application: g,
-    applicationName: V,
-    channel: E,
-    header: ee,
-    currentUserId: y,
-    launchableAppId: H,
-    isEmbeddedApplication: U,
-    tryWithGdnAction: W,
-    staticBannerSrc: F,
-    onClickContent: z,
-    iconSrc: G,
-    onView: j,
-    presenceActivity: k,
-    analyticsLocations: p,
-    showAuthButton: Z && !X && q.enabled,
-    startAuthorization: J,
-    accountLinkButtonRef: et,
-    renderAccountLinkUpsell: er
-  }) : (0, r.jsx)(R.A, {
-    message: A,
-    application: g,
-    applicationName: V,
-    channel: E,
-    header: ee,
-    currentUserId: y,
-    launchableAppId: H,
-    isEmbeddedApplication: U,
-    tryWithGdnAction: W,
-    staticBannerSrc: F,
-    onClickContent: z,
-    iconSrc: G,
-    onView: j,
-    presenceActivity: k,
-    currentUserPresenceActivity: b,
-    hideParty: v,
-    partyStatusElement: M,
-    analyticsLocations: p,
-    showAuthButton: Z && !X && q.enabled,
-    startAuthorization: J,
-    accountLinkButtonRef: et,
-    renderAccountLinkUpsell: er
+    }(z, G),
+    Z = null != (t = (0, S.I)({
+      messageId: z.id,
+      presenceActivity: Y,
+      application: G
+    })) ? t : true,
+    {
+      openGameProfileModal: X,
+      launchableAppId: $
+    } = (R = G.id, D = z.author.id, M = (0, A.d)(R), k = (0, l.bG)([m.A, y.A], () => {
+      let e = m.A.getApplication(R);
+      return null != e ? y.A.getGameByApplication(e) : null
+    }, [R]), {
+      openGameProfileModal: (0, b.A)({
+        location: "Rich Presence Activity Invite Embed",
+        applicationId: null != (L = null == k ? true : k.id) ? L : true,
+        source: _.Ob.Embed,
+        trackEntryPointImpression: true,
+        sourceUserId: D
+      }),
+      launchableAppId: M
+    }),
+    ee = (0, I.A)({
+      application: G,
+      analyticsLocations: U
+    }),
+    et = i.useMemo(() => {
+      if (null != ee) return {
+        label: w.intl.string(w.t["jaYS/h"]),
+        icon: o.hpF,
+        trackingArea: f.kY.CLOUD_PLAY,
+        onClick: ee
+      }
+    }, [ee]),
+    en = (0, g.F)(G),
+    er = i.useMemo(() => null != X ? X : null != en && q ? en : true, [q, X, en]),
+    ei = u.A.useConfig({
+      location: "RichPresenceGameActivityInviteEmbed"
+    }),
+    {
+      canStartAuthorization: el,
+      hasAlreadyLinked: ea,
+      startAuthorization: es
+    } = (0, p.RD)(G),
+    eo = (0, d.z)(es, ea),
+    ec = !(0, j.A)(Y, z, G.id),
+    eu = (0, E.n$)(Q, null == (n = z.activity) ? true : n.type, ec),
+    ed = i.useRef(null),
+    ep = (0, l.bG)([v.A], () => v.A.getMessages(B.id)),
+    em = () => {
+      let e = [];
+      return (0, C.G)(z.id, ep) && el && !ea && ei.enabled && e.push(a.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, r.jsx)(h.Ay, {
+        contentTypes: e,
+        children: e => {
+          let {
+            visibleContent: t,
+            markAsDismissed: n
+          } = e;
+          if (t === a.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, r.jsx)(s.AM, {
+            graphic: {
+              type: "dynamic",
+              component: o.Z86.ACCOUNT_LINK_DISPLAY,
+              props: {
+                application: G
+              }
+            },
+            title: w.intl.formatToPlainString(w.t["lo6H6+"], {
+              gameName: G.name
+            }),
+            body: w.intl.string(w.t.qYAzOp),
+            targetElementRef: ed,
+            caretConfig: {
+              align: "start"
+            },
+            shouldShow: true,
+            gradientColor: "purple",
+            onRequestClose: () => n(P.i.USER_DISMISS)
+          })
+        }
+      })
+    };
+  return ec ? (0, r.jsx)(T.A, {
+    message: z,
+    application: G,
+    applicationName: Q,
+    channel: B,
+    header: eu,
+    currentUserId: F,
+    launchableAppId: $,
+    isEmbeddedApplication: q,
+    tryWithGdnAction: et,
+    staticBannerSrc: Z,
+    onClickContent: er,
+    iconSrc: J,
+    onView: W,
+    presenceActivity: Y,
+    analyticsLocations: U,
+    showAuthButton: el && !ea && ei.enabled,
+    startAuthorization: eo,
+    accountLinkButtonRef: ed,
+    renderAccountLinkUpsell: em
+  }) : (0, r.jsx)(N.A, {
+    message: z,
+    application: G,
+    applicationName: Q,
+    channel: B,
+    header: eu,
+    currentUserId: F,
+    launchableAppId: $,
+    isEmbeddedApplication: q,
+    tryWithGdnAction: et,
+    staticBannerSrc: Z,
+    onClickContent: er,
+    iconSrc: J,
+    onView: W,
+    presenceActivity: Y,
+    currentUserPresenceActivity: H,
+    hideParty: V,
+    partyStatusElement: K,
+    analyticsLocations: U,
+    showAuthButton: el && !ea && ei.enabled,
+    startAuthorization: eo,
+    accountLinkButtonRef: ed,
+    renderAccountLinkUpsell: em
   })
 }

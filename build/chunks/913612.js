@@ -2,20 +2,20 @@
 /** chunk id: 913612, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => o,
+  C: () => s,
   K: () => l
 });
 var Chunk64700 = require("./64700.js"),
   Chunk506774 = require("./506774.js"),
   Chunk942405 = require("./942405.js");
-let s = "systemServiceAutoInstall";
+let o = "systemServiceAutoInstall";
 
-function o() {
-  i.w.set(s, true)
+function s() {
+  i.w.set(o, true)
 }
 
 function l() {
   r.useEffect(() => {
-    null == i.w.get(s) && (o(), (0, a.sL)("first-start", false))
+    null == i.w.get(o) && (s(), (0, a.sL)("first-start", false))
   }, [])
 }

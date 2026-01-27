@@ -80,7 +80,7 @@ class y extends(r = Chunk311907.Ay.Store) {
           }
         }), c.default.track(p.HAw.PREMIUM_FEATURE_ERROR, {
           error_message: e instanceof Error ? e.message : JSON.stringify(e),
-          error_source: o.q.PRIVATE_BROWSING_PERK_CONFIGURE_LICENSE
+          error_source: s.q.PRIVATE_BROWSING_PERK_CONFIGURE_LICENSE
         }), !t) throw e
     }
   }

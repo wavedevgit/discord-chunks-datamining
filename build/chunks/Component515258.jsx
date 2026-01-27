@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 515258, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 84704 **/
+/** chunk id: 515258, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => R
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk603344 = require("./603344.js");
 
-function f(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,82 +21,82 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class p extends Chunk64700.PureComponent {
+class h extends Chunk64700.PureComponent {
   render() {
-    let e, t, n, i, {
-        error: f,
-        working: p,
-        transitionState: _,
-        validPhone: h,
-        layerContext: m
+    let e, t, n, s, {
+        error: d,
+        working: h,
+        transitionState: R,
+        validPhone: I,
+        layerContext: p
       } = this.props,
       {
-        phone: g
+        phone: _
       } = this.state,
-      E = [];
-    return h ? e = u.intl.string(u.t["4qMI6A"]) : (e = u.intl.string(u.t.Vp9je2), t = (0, r.jsx)(o.Text, {
+      f = [];
+    return I ? e = E.intl.string(E.t["4qMI6A"]) : (e = E.intl.string(E.t.Vp9je2), t = (0, l.jsx)(o.Text, {
       variant: "text-sm/normal",
-      children: u.intl.format(u.t["3BTmqX"], {})
-    })), h ? (n = (0, r.jsx)(o.D0$, {
-      label: u.intl.string(u.t.Xclkxp),
+      children: E.intl.format(E.t["3BTmqX"], {})
+    })), I ? (n = (0, l.jsx)(o.D0$, {
+      label: E.intl.string(E.t.Xclkxp),
       hideLabel: true,
-      errorMessage: null != f ? f : true,
-      children: (0, r.jsx)(l.A, {
+      errorMessage: null != d ? d : true,
+      children: (0, l.jsx)(r.A, {
         onSubmit: this.handleVerifyPhone
       })
-    }), E = [{
+    }), f = [{
       variant: "secondary",
-      text: u.intl.string(u.t["5b60gi"]),
+      text: E.intl.string(E.t["5b60gi"]),
       onClick: this.handleResendCode,
-      loading: p
-    }]) : (n = (0, r.jsx)(c.A, {
-      label: u.intl.string(u.t["64bX0M"]),
-      errorMessage: null != f ? f : true,
-      className: d.ZZ,
+      loading: h
+    }]) : (n = (0, l.jsx)(u.A, {
+      label: E.intl.string(E.t["64bX0M"]),
+      errorMessage: null != d ? d : true,
+      className: c.ZZ,
       onChange: this.handlePhoneChange,
-      submitting: p,
-      layerContext: m
-    }), E = [{
-      text: u.intl.string(u.t.TXNS7S),
-      disabled: "" === g,
-      loading: p,
+      submitting: h,
+      layerContext: p
+    }), f = [{
+      text: E.intl.string(E.t.TXNS7S),
+      disabled: "" === _,
+      loading: h,
       onClick: this.handleAddPhone
-    }]), i = h ? u.intl.string(u.t.Xclkxp) : u.intl.string(u.t.uR76s6), (0, r.jsx)(s.Modal, {
-      size: h ? "sm" : "md",
-      title: i,
+    }]), s = I ? E.intl.string(E.t.Xclkxp) : E.intl.string(E.t.uR76s6), (0, l.jsx)(i.Modal, {
+      size: I ? "sm" : "md",
+      title: s,
       subtitle: e,
-      actions: E,
+      actions: f,
       onClose: this.props.onClose,
       trackingProps: {
         impression: {
           impressionName: a.ImpressionNames.USER_VERIFY_PHONE
         }
       },
-      transitionState: _,
-      children: (0, r.jsxs)(o.BJc, {
+      transitionState: R,
+      children: (0, l.jsxs)(o.BJc, {
         gap: 8,
         children: [n, t]
       })
     })
   }
   constructor(e) {
-    super(e), f(this, "handlePhoneChange", e => {
+    super(e), d(this, "handlePhoneChange", e => {
       this.setState({
         phone: e
       })
-    }), f(this, "handleAddPhone", () => {
+    }), d(this, "handleAddPhone", () => {
       let {
         phone: e
       } = this.state, {
         onAddPhone: t
       } = this.props;
       null == t || t(e)
-    }), f(this, "handleVerifyPhone", e => {
+    }), d(this, "handleVerifyPhone", e => {
       let {
         onVerifyPhone: t
       } = this.props;
       null == t || t(e)
-    }), f(this, "handleResendCode", () => {
+    }), d(this, "handleResendCode", () => {
       let {
         onAddPhone: e
       } = this.props;
@@ -107,4 +106,4 @@ class p extends Chunk64700.PureComponent {
     }
   }
 }
-let _ = p
+let R = h

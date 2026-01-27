@@ -34,7 +34,7 @@ class O extends Chunk439372.A {
   _fetch(e) {
     if (!(0, p.s)({
         location: _.rE.QUESTS_MANAGER
-      }) || l.A.isFetchingCurrentQuests || (0, s.I)() || ((0, o.N1)(), u.Bw.getConfig({
+      }) || l.A.isFetchingCurrentQuests || (0, o.I)() || ((0, s.N1)(), u.Bw.getConfig({
         location: _.rE.QUESTS_MANAGER
       }).enabled && "focused" !== i.A.getState())) return;
     let {
@@ -42,7 +42,7 @@ class O extends Chunk439372.A {
     } = f.A.getConfig({
       location: "QuestFetchManager"
     });
-    t || (0, o.r8)(c.yW.DESKTOP_ACCOUNT_PANEL_AREA, e)
+    t || (0, s.r8)(c.yW.DESKTOP_ACCOUNT_PANEL_AREA, e)
   }
   constructor(...e) {
     super(...e), h(this, "instantiatedAt", Date.now()), h(this, "initialFetchTimerId", null), h(this, "recurringFetchTimerId", null), h(this, "lastFetchAttemptedAt", 0), h(this, "lastFetchedQuestForLocaleChangeAt", 0), h(this, "handleQuestsFetchCurrentQuestsBegin", () => {

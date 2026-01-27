@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   getKrispModel: () => i,
-  setKrispModelOverride: () => s,
+  setKrispModelOverride: () => o,
   setKrispSuppressionLevel: () => a
 });
 var Chunk77729 = require("./77729.js");
@@ -23,7 +23,7 @@ function a(e) {
   } catch (e) {}
 }
 
-function s(e) {
+function o(e) {
   try {
     r.A.nativeModules.requireModule("discord_krisp").setNcModel(e)
   } catch (e) {}

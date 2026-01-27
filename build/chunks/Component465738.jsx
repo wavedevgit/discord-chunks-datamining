@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk91871 = require("./91871.js"),
   l = require.n(Chunk91871),
   Chunk735438 = require("./735438.js"),
@@ -48,10 +48,10 @@ let v = function(e) {
     className: t,
     guild: n,
     roleStyle: a,
-    roleFilter: o,
+    roleFilter: s,
     onSelect: c,
     onClose: b
-  } = e, v = (0, d.bG)([m.A], () => m.A.getSortedRoles(n.id)), A = (0, h.Ay)(n.id, null), I = i.useMemo(() => u()(v).filter(o).map(e => {
+  } = e, v = (0, d.bG)([m.A], () => m.A.getSortedRoles(n.id)), A = (0, h.Ay)(n.id, null), I = i.useMemo(() => u()(v).filter(s).map(e => {
     var t, n;
     return {
       id: e.id,
@@ -69,9 +69,9 @@ let v = function(e) {
         colors: A ? e.colorStrings : null
       })
     }
-  }).value(), [v, o, a, A]), S = i.useCallback((e, t) => "" === t.trim() ? e : e.filter(e => l()(t.toLowerCase(), e.label.toLowerCase())), []);
+  }).value(), [v, s, a, A]), S = i.useCallback((e, t) => "" === t.trim() ? e : e.filter(e => l()(t.toLowerCase(), e.label.toLowerCase())), []);
   return (0, r.jsx)(_.lGe, {
-    className: s()(y.kL, t),
+    className: o()(y.kL, t),
     "aria-label": E.intl.string(E.t.ljnBlo),
     children: (0, r.jsxs)(f.iS, {
       selectionMode: "single",

@@ -17,7 +17,7 @@ function i(e) {
 
 function a(e, t, n) {
   let a = `.${e}:${t}`,
-    s = n.cssText ? r(n) : i(n);
-  return document.createTextNode(`${a}{${s}}`)
+    o = n.cssText ? r(n) : i(n);
+  return document.createTextNode(`${a}{${o}}`)
 }
 require("./186659.js")

@@ -28,14 +28,14 @@ function h() {
     {
       withAnalyticsToken: t = false
     } = e;
-  return s.Bo.get({
+  return o.Bo.get({
     url: p.Rsh.ME,
     query: {
       with_analytics_token: t
     },
     oldFormErrors: true,
     rejectWithError: false
-  }).then(e => (o.h.dispatch({
+  }).then(e => (s.h.dispatch({
     type: "CURRENT_USER_UPDATE",
     user: e.body,
     analyticsToken: t ? e.body.analytics_token : true
@@ -63,7 +63,7 @@ function g(e, t) {
   let n = d.default.getCurrentUser();
   i()(null != n, "setFlag: user cannot be undefined");
   let r = t ? n.flags | e : n.flags & ~e;
-  return s.Bo.patch({
+  return o.Bo.patch({
     url: p.Rsh.ME,
     oldFormErrors: true,
     body: {
@@ -75,18 +75,18 @@ function g(e, t) {
 
 function E(e) {
   let t = d.default.getUser(e);
-  return null != t ? Promise.resolve(t) : s.Bo.get({
+  return null != t ? Promise.resolve(t) : o.Bo.get({
     url: p.Rsh.USER(e),
     oldFormErrors: true,
     rejectWithError: false
-  }).then(t => (o.h.dispatch({
+  }).then(t => (s.h.dispatch({
     type: "USER_UPDATE",
     user: t.body
   }), d.default.getUser(e)))
 }
 
 function y(e) {
-  return o.h.dispatch({
+  return s.h.dispatch({
     type: "USER_UPDATE",
     user: e
   }), d.default.getUser(e.id)
@@ -102,14 +102,14 @@ async function b(e) {
     joinRequestId: u,
     abortSignal: d
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, f = arguments.length > 2 ? arguments[2] : true, h = Date.now();
-  o.h.dispatch({
+  s.h.dispatch({
     type: "USER_PROFILE_FETCH_START",
     userId: e,
     guildId: a,
     withMutualFriends: i
   });
   try {
-    let l = await s.Bo.get({
+    let l = await o.Bo.get({
       url: p.Rsh.USER_PROFILE(e),
       query: {
         type: t,
@@ -123,20 +123,20 @@ async function b(e) {
       signal: d,
       rejectWithError: true
     });
-    null == f || f(l.body, a), o.h.dispatch({
+    null == f || f(l.body, a), s.h.dispatch({
       type: "USER_UPDATE",
       user: l.body.user
-    }), o.h.dispatch({
+    }), s.h.dispatch({
       type: "USER_PROFILE_FETCH_SUCCESS",
       userProfile: l.body,
       fetchStartedAt: h
-    }), null != a && null != l.body.guild_member && o.h.dispatch({
+    }), null != a && null != l.body.guild_member && s.h.dispatch({
       type: "GUILD_MEMBER_PROFILE_UPDATE",
       guildId: a,
       guildMember: l.body.guild_member
     })
   } catch (t) {
-    throw null != t && (null == t ? true : t.body) != null && _.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), o.h.dispatch({
+    throw null != t && (null == t ? true : t.body) != null && _.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), s.h.dispatch({
       type: "USER_PROFILE_FETCH_FAILURE",
       apiError: new l.LG(t),
       fetchStartedAt: h,
@@ -146,24 +146,24 @@ async function b(e) {
   }
 }
 async function O(e, t) {
-  o.h.dispatch({
+  s.h.dispatch({
     type: "MUTUAL_FRIENDS_FETCH_START",
     userId: e
   });
   try {
-    let n = await s.Bo.get({
+    let n = await o.Bo.get({
       url: p.Rsh.USER_RELATIONSHIPS(e),
       oldFormErrors: true,
       signal: t,
       rejectWithError: false
     });
-    o.h.dispatch({
+    s.h.dispatch({
       type: "MUTUAL_FRIENDS_FETCH_SUCCESS",
       userId: e,
       mutualFriends: n.body
     })
   } catch (t) {
-    throw (null == t ? true : t.body) != null && _.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), o.h.dispatch({
+    throw (null == t ? true : t.body) != null && _.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), s.h.dispatch({
       type: "MUTUAL_FRIENDS_FETCH_FAILURE",
       userId: e
     }), t

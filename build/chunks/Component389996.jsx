@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk797637 = require("./797637.jsx"),
   Chunk311016 = require("./311016.js"),
@@ -29,14 +29,14 @@ function h(e) {
     userId: y
   } = e, b = (0, d.GV)(), O = i.useMemo(() => (0, c.A)(y) ? (0, r.jsx)(l.A, {}) : null == t || "" === t ? null : (0, f.parseBioReact)(t), [y, t]);
   return null == O ? null : (0, r.jsxs)("section", {
-    className: s()(n, _.PT),
+    className: o()(n, _.PT),
     "aria-labelledby": b,
-    children: [(0, r.jsx)(o.AC4, {
-      children: (0, r.jsx)(o.H, {
+    children: [(0, r.jsx)(s.AC4, {
+      children: (0, r.jsx)(s.H, {
         id: b,
         children: p.intl.string(p.t.jGoPJT)
       })
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       lineClamp: g ? m : true,
       color: true !== E ? E : true,

@@ -99,13 +99,13 @@ function y(e) {
     children: t,
     className: n,
     minor: i = false
-  } = e, s = m(e, ["children", "className", "minor"]);
-  return (0, r.jsx)(o.vN3, {
+  } = e, o = m(e, ["children", "className", "minor"]);
+  return (0, r.jsx)(s.vN3, {
     children: (0, r.jsx)("button", h(p({
       className: a()(d.x6, n, {
         [d.oy]: i
       })
-    }, s), {
+    }, o), {
       children: t
     }))
   })
@@ -149,7 +149,7 @@ function I(e) {
     href: n,
     noticeType: i
   } = e, a = m(e, ["children", "href", "noticeType"]);
-  return (0, r.jsx)(o.MzZ, h(p({}, a), {
+  return (0, r.jsx)(s.MzZ, h(p({}, a), {
     className: d.x6,
     href: n,
     onClick: e => {
@@ -166,7 +166,7 @@ function S(e) {
     noticeType: n,
     className: i
   } = e;
-  return (0, r.jsx)(o.DUT, {
+  return (0, r.jsx)(s.DUT, {
     focusProps: {
       offset: 6
     },
@@ -175,7 +175,7 @@ function S(e) {
       t(), O(n)
     },
     "aria-label": u.intl.string(u.t.WAI6xu),
-    children: (0, r.jsx)(o.PGe, {
+    children: (0, r.jsx)(s.PGe, {
       size: "sm",
       color: "currentColor",
       className: d.ut
@@ -188,13 +188,13 @@ function T(e) {
     color: t = E.DEFAULT,
     className: n,
     style: i,
-    ref: o,
+    ref: s,
     children: l
   } = e;
   return (0, r.jsx)("div", {
-    ref: o,
+    ref: s,
     className: a()(d.lm, {
-      [d.Fr]: s.Fr
+      [d.Fr]: o.Fr
     }, n, t),
     style: null != i ? i : true,
     children: l

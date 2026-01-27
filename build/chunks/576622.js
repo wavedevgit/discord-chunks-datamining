@@ -38,13 +38,13 @@ function p(e, t) {
     R = u.A.getMutualFriends(e),
     P = u.A.getMutualFriendsCount(e),
     D = null == R && y,
-    x = null == P && E,
-    L = null == w && g || D || x,
-    j = null == v ? null == T : null == N,
-    M = !j && (C || L);
-  if (!j && !M) return Promise.resolve();
+    L = null == P && E,
+    x = null == w && g || D || L,
+    M = null == v ? null == T : null == N,
+    j = !M && (C || x);
+  if (!M && !j) return Promise.resolve();
   let k = null != v ? null == N ? true : N.profileEffect : null == T ? true : T.profileEffect;
-  null != k && (0, s.RE)(k.skuId), null != t && (0, a.l0)(t);
+  null != k && (0, o.RE)(k.skuId), null != t && (0, a.l0)(t);
   let U = {
     type: m,
     withMutualGuilds: g,
@@ -53,12 +53,12 @@ function p(e, t) {
     guildId: v,
     joinRequestId: I,
     abortSignal: S,
-    connectionsRoleId: null == v || null == (h = (0, o._g)({
+    connectionsRoleId: null == v || null == (h = (0, s._g)({
       guildMember: c.Ay.getMember(v, e),
       channel: l.A.getChannel(A)
     })) ? true : h.id
   };
   if (b) return r.h.wait(() => (0, i.eO)(e, U, d.A)), Promise.resolve();
   let G = (0, i.eO)(e, U, d.A);
-  return M && !O ? Promise.resolve() : G
+  return j && !O ? Promise.resolve() : G
 }

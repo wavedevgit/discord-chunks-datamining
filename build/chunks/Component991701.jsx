@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk654107 = require("./654107.js"),
@@ -89,14 +89,14 @@ let S = function(e) {
     guildId: w,
     pulseSpeakingIndicator: R = false,
     speaking: P = false
-  } = e, D = A(e, ["style", "src", "backgroundSrc", "userId", "guildId", "pulseSpeakingIndicator", "speaking"]), x = null != C ? C : T, L = (0, c.Ay)(x, o.A.unsafe_rawColors.PRIMARY_800.css), j = (0, f.Ay)(null != N ? N : m.dJq, w), M = null != (t = (0, d.tM)(null == j || null == (y = j.themeColors) ? true : y[0])) ? t : m.NJ8.DARK, {
+  } = e, D = A(e, ["style", "src", "backgroundSrc", "userId", "guildId", "pulseSpeakingIndicator", "speaking"]), L = null != C ? C : T, x = (0, c.Ay)(L, s.A.unsafe_rawColors.PRIMARY_800.css), M = (0, f.Ay)(null != N ? N : m.dJq, w), j = null != (t = (0, d.tM)(null == M || null == (y = M.themeColors) ? true : y[0])) ? t : m.NJ8.DARK, {
     profileThemeStyle: k,
     profileThemeClassName: U
   } = (0, p.A)({
-    theme: M,
+    theme: j,
     themeType: g.d.VIDEO_TILE_BACKGROUND,
-    primaryColor: null != (n = null == j || null == (O = j.themeColors) ? true : O[0]) ? n : null,
-    secondaryColor: null != (a = null == j || null == (I = j.themeColors) ? true : I[1]) ? a : null
+    primaryColor: null != (n = null == M || null == (O = M.themeColors) ? true : O[0]) ? n : null,
+    secondaryColor: null != (a = null == M || null == (I = M.themeColors) ? true : I[1]) ? a : null
   }), {
     useProfileColors: G
   } = (0, h.a5)("VideoBackground-web");
@@ -106,21 +106,21 @@ let S = function(e) {
         dispatchWait: true
       })
     }, [G, N, w]), null == T) return null;
-  let V = (0, r.jsx)(l.euF, b({
+  let F = (0, r.jsx)(l.euF, b({
       className: E.R,
       src: T
     }, D)),
-    F = v(b({}, S), {
-      backgroundColor: L
+    V = v(b({}, S), {
+      backgroundColor: x
     });
   return (0, r.jsx)("div", {
-    style: G ? b({}, S, k) : b({}, F),
-    className: s()(E.T, {
+    style: G ? b({}, S, k) : b({}, V),
+    className: o()(E.T, {
       [U]: G
     }),
     children: R ? (0, r.jsx)(u.A, {
       shouldAnimate: P,
-      children: V
-    }) : V
+      children: F
+    }) : F
   })
 }

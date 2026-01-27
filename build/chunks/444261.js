@@ -40,9 +40,9 @@ class u extends Chunk439372.A {
       channelId: i,
       message: a
     } = e, c = l.A.getChannel(i);
-    if ((null == (n = a.author) ? true : n.id) !== o.default.getId() || !(null == c ? true : c.isActiveThread())) return;
+    if ((null == (n = a.author) ? true : n.id) !== s.default.getId() || !(null == c ? true : c.isActiveThread())) return;
     let u = new Date(null != (t = null == (r = c.threadMetadata) ? true : r.archiveTimestamp) ? t : 0).getTime();
-    Date.now() - u < 5e3 && s.A.resort(c.parent_id)
+    Date.now() - u < 5e3 && o.A.resort(c.parent_id)
   }
   handleGuildDelete(e) {
     let {

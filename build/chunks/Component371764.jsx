@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 371764, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 371764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  x: () => b
+  x: () => E
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,65 +21,64 @@ var Chunk110259 = require("./110259.js"),
   Chunk895163 = require("./895163.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk122506 = require("./122506.js");
-let b = e => {
+let E = e => {
   var t, n;
   let {
-    componentId: b,
-    promotionBannerMarketingComponentFields: O
+    componentId: E,
+    promotionBannerMarketingComponentFields: x
   } = e, {
-    analyticsLocations: v
-  } = (0, f.Ay)(), A = (0, d.p)();
+    analyticsLocations: O
+  } = (0, _.Ay)(), C = (0, u.p)();
   (0, p.A)({
     type: i.ImpressionTypes.VIEW,
     name: i.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
-      component_type: a.C.MARKETING_PAGE_BANNER,
-      component_id: b
+      component_type: l.C.MARKETING_PAGE_BANNER,
+      component_id: E
     }
   });
-  let I = O,
-    S = (0, g.Xn)("marketing_page_banner"),
-    T = (0, h.h)({
-      buttonAction: S.treatment === g.tz.PLAN_SELECTION ? l.dz.OPEN_PLAN_SELECTION_MODAL : null != (t = null == (n = I.button) ? true : n.buttonAction) ? t : l.dz.OPEN_TIER_2_PAYMENT_MODAL,
-      analyticsLocations: v,
-      analyticsLocation: A.location
+  let I = (0, f.Xn)("marketing_page_banner"),
+    T = (0, g.h)({
+      buttonAction: I.treatment === f.tz.PLAN_SELECTION ? o.dz.OPEN_PLAN_SELECTION_MODAL : null != (t = null == (n = x.button) ? true : n.buttonAction) ? t : o.dz.OPEN_TIER_2_PAYMENT_MODAL,
+      analyticsLocations: O,
+      analyticsLocation: C.location
     }),
-    C = (0, m.a)(I.body);
+    S = (0, A.a)(x.body);
   return (0, r.jsxs)("div", {
-    className: y.kL,
+    className: b.kL,
     children: [(0, r.jsx)("div", {
-      className: y.LY,
-      children: (0, r.jsx)(u._V3, {
-        src: I.assetUrl,
+      className: b.LY,
+      children: (0, r.jsx)(d._V3, {
+        src: x.assetUrl,
         width: 96,
         height: 96,
-        className: y.ot
+        className: b.ot
       })
     }), (0, r.jsxs)("div", {
-      className: y.IH,
-      children: [(0, r.jsx)(o.DZT, {
+      className: b.IH,
+      children: [(0, r.jsx)(a.DZT, {
         variant: "heading-md/semibold",
         color: "text-strong",
-        children: I.header
-      }), (0, r.jsxs)(o.EYj, {
+        children: x.header
+      }), (0, r.jsxs)(a.EYj, {
         variant: "text-md/medium",
         color: "text-subtle",
-        className: y.tb,
-        children: [C, "" !== I.helpArticleId && (0, r.jsxs)(r.Fragment, {
-          children: ["\xa0", (0, r.jsx)(u.MzZ, {
-            className: y.$T,
-            href: _.A.getArticleURL(I.helpArticleId),
-            children: E.intl.string(E.t["sBp+u0"])
+        className: b.tb,
+        children: [S, "" !== x.helpArticleId && (0, r.jsxs)(r.Fragment, {
+          children: ["\xa0", (0, r.jsx)(d.MzZ, {
+            className: b.$T,
+            href: m.A.getArticleURL(x.helpArticleId),
+            children: h.intl.string(h.t["sBp+u0"])
           })]
         })]
       })]
-    }), null != I.button && (0, r.jsx)("div", {
-      className: y.UD,
+    }), null != x.button && (0, r.jsx)("div", {
+      className: b.UD,
       children: (0, r.jsx)(c.$nd, {
         variant: "expressive",
         size: "md",
         onClick: T,
-        text: I.button.copy,
+        text: x.button.copy,
         icon: s.NitroWheelIcon
       })
     })]

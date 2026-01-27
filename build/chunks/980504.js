@@ -5,22 +5,22 @@ require.d(exports, {
   Ah: () => r,
   E7: () => u,
   SC: () => d,
-  XF: () => o,
+  XF: () => s,
   XH: () => c,
   cT: () => i,
-  ed: () => s,
+  ed: () => o,
   mV: () => a,
   pD: () => l
 }), require("./896048.js");
 let r = 32,
   i = 5,
   a = "0",
-  s = {
+  o = {
     width: 424,
     height: 424,
     padding: 100
   },
-  o = "ctrl+`",
+  s = "ctrl+`",
   l = [],
   c = "0",
   u = 6,

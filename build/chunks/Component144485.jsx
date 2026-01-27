@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 144485, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97283 **/
+/** chunk id: 144485, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
 }), require("./65821.js");
@@ -11,15 +10,6 @@ var Chunk314116 = require("./314116.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function l(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
@@ -27,7 +17,13 @@ function c(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      l(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
@@ -42,7 +38,7 @@ let u = {
       }, n))
     })
   },
-  openSecureFramesUserVerificationModal: function(e, t, i, o) {
+  openSecureFramesUserVerificationModal: function(e, t, i, l) {
     i() && (0, a.mMO)(async () => {
       let i = (await n.e("16674").then(n.bind(n, 632441))).default;
       return n => (0, r.jsx)(i, c({
@@ -50,14 +46,14 @@ let u = {
         channelId: t
       }, n))
     }, {
-      contextKey: o === s.BRT.POPOUT ? a.KX8 : a.SYi
+      contextKey: l === o.BRT.POPOUT ? a.KX8 : a.SYi
     })
   },
   openSecureFramesUpdateConfirmation: function(e) {
     let {
       title: t,
       subtitle: n,
-      confirmText: r = o.intl.string(o.t["cY+Oob"]),
+      confirmText: r = l.intl.string(l.t["cY+Oob"]),
       onConfirm: a
     } = e;
     (0, i.A)({

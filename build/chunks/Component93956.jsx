@@ -13,9 +13,9 @@ var Chunk990078 = require("./990078.jsx"),
 
 function l() {
   return (0, r.jsx)(i.m, {
-    text: s.intl.string(s.t["RO/KYj"]),
+    text: o.intl.string(o.t["RO/KYj"]),
     children: (0, r.jsx)("div", {
-      className: o.q,
+      className: s.q,
       children: (0, r.jsx)(a.Rf2, {
         color: "currentColor",
         size: "custom",

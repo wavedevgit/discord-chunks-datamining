@@ -6,7 +6,7 @@ require.d(exports, {
   A: () => el
 }), require("./321073.js"), require("./896048.js"), require("./264879.js"), require("./667532.js"), require("./733351.js"), require("./747238.js");
 var i, Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk506774 = require("./506774.js"),
   Chunk73153 = require("./73153.js"),
@@ -41,15 +41,15 @@ function R(e, t, n) {
 }
 let P = "seenQSTutorial",
   D = 5,
-  x = 7,
-  L = 3,
-  j = 100,
-  M = [Chunk629357.rD.USER, Chunk629357.rD.GROUP_DM, Chunk629357.rD.TEXT_CHANNEL, Chunk629357.rD.GUILD, Chunk629357.rD.APPLICATION, Chunk629357.rD.LINK, Chunk629357.rD.IN_APP_NAVIGATION],
+  L = 7,
+  x = 3,
+  M = 100,
+  j = [Chunk629357.rD.USER, Chunk629357.rD.GROUP_DM, Chunk629357.rD.TEXT_CHANNEL, Chunk629357.rD.GUILD, Chunk629357.rD.APPLICATION, Chunk629357.rD.LINK, Chunk629357.rD.IN_APP_NAVIGATION],
   k = 0,
   U = false,
   G = false,
-  V = null,
-  F = [],
+  F = null,
+  V = [],
   B = null,
   H = 0,
   Y = [],
@@ -57,7 +57,7 @@ let P = "seenQSTutorial",
   K = null;
 
 function z() {
-  G = b.A.getGuildCount() >= 3 || s().size(m.A.getMutablePrivateChannels()) >= 20, Y = []
+  G = b.A.getGuildCount() >= 3 || o().size(m.A.getMutablePrivateChannels()) >= 20, Y = []
 }
 
 function q(e) {
@@ -80,14 +80,14 @@ function q(e) {
 
 function Z(e) {
   let t = (0, d.A)(e);
-  return null == t || null != V && V !== t.type ? null : t
+  return null == t || null != F && F !== t.type ? null : t
 }
 
-function X() {
+function Q() {
   var e, t;
   let n = null != (e = I.A.getGuildId()) ? e : true,
     r = null != (t = A.A.getChannelId()) ? t : true;
-  switch (V) {
+  switch (F) {
     case u.rD.USER: {
       let e = h.default.getId();
       return T.Ay.getRecentlyTalked(r, 100).filter(t => {
@@ -130,12 +130,12 @@ function X() {
   }
   let i = [],
     a = new Set,
-    s = q(e => e === r || W.includes(e) || a.has(e));
-  if (s.length > 0)
-    for (let e of (i.push((0, u.jF)(w.intl.string(w.t["4B63jZ"]))), s)) a.add(e.channelId), i.push(e.record);
-  let o = v.Ay.getMentionChannelIds().filter(e => e !== r && !W.includes(e) && !a.has(e)).map(e => Z(e)).filter(C.Vq).reverse();
+    o = q(e => e === r || W.includes(e) || a.has(e));
   if (o.length > 0)
-    for (let e of (i.push((0, u.jF)(w.intl.string(w.t["61Df13"]))), o)) a.add(e.record.id), i.push(e);
+    for (let e of (i.push((0, u.jF)(w.intl.string(w.t["4B63jZ"]))), o)) a.add(e.channelId), i.push(e.record);
+  let s = v.Ay.getMentionChannelIds().filter(e => e !== r && !W.includes(e) && !a.has(e)).map(e => Z(e)).filter(C.Vq).reverse();
+  if (s.length > 0)
+    for (let e of (i.push((0, u.jF)(w.intl.string(w.t["61Df13"]))), s)) a.add(e.record.id), i.push(e);
   if (null != n) {
     let e = E.Ay.getSelectableChannelIds(n).filter(e => {
       let t = m.A.getChannel(e);
@@ -148,7 +148,7 @@ function X() {
       }
     }), e.length > 0 && (i.push((0, u.jF)(w.intl.string(w.t.ieCAhD))), i = i.concat(e))
   }
-  let l = Math.min((i.length > 0 ? L : x) + 1, W.length),
+  let l = Math.min((i.length > 0 ? x : L) + 1, W.length),
     c = [];
   for (let e = 1; e < l; e += 1) {
     let t = Z(W[e]);
@@ -157,36 +157,36 @@ function X() {
   return c.length > 0 && (i = [(0, u.jF)(w.intl.string(w.t["80lOZ1"])), ...c, ...i]), i
 }
 
-function Q(e, t) {
-  switch (V) {
+function X(e, t) {
+  switch (F) {
     case u.rD.USER: {
       let t = b.A.getGuild(I.A.getGuildId());
       e.unshift((0, u.jF)(null != t ? w.intl.formatToPlainString(w.t.FREzQs, {
         name: t.name
-      }) : w.intl.string(w.t.XFYW1o))), F = e;
+      }) : w.intl.string(w.t.XFYW1o))), V = e;
       break
     }
     case u.rD.TEXT_CHANNEL:
-      e.unshift((0, u.jF)(w.intl.string(w.t.W26k4V))), F = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.W26k4V))), V = e;
       break;
     case u.rD.VOICE_CHANNEL:
-      e.unshift((0, u.jF)(w.intl.string(w.t.zUoI5C))), F = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.zUoI5C))), V = e;
       break;
     case u.rD.GUILD:
-      e.unshift((0, u.jF)(w.intl.string(w.t.olADPs))), F = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.olADPs))), V = e;
       break;
     case u.rD.APPLICATION:
-      e.unshift((0, u.jF)(w.intl.string(w.t.VwK1ld))), F = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.VwK1ld))), V = e;
       break;
     default:
-      F = e
+      V = e
   }
-  if (t !== B) B = t, H = Math.max(t.length, H), k = (0, u.Vv)(u.vB.DOWN, false, F);
+  if (t !== B) B = t, H = Math.max(t.length, H), k = (0, u.Vv)(u.vB.DOWN, false, V);
   else {
-    let e = F[k];
-    null != e && e.type === u.rD.HEADER && (k = (0, u.Vv)(u.vB.DOWN, k, F))
+    let e = V[k];
+    null != e && e.type === u.rD.HEADER && (k = (0, u.Vv)(u.vB.DOWN, k, V))
   }
-  eo.emitChange()
+  es.emitChange()
 }
 
 function J(e) {
@@ -194,12 +194,12 @@ function J(e) {
   let {
     query: n,
     queryMode: i
-  } = e, a = n.trim(), s = null != (t = I.A.getGuildId()) ? t : true, o = new Set(["user:".concat(h.default.getId())]);
-  null != s && o.add("guild:".concat(s)), K = Date.now(), r = null != r ? r : new u.Ay(et, M, null != i ? j : D, {
+  } = e, a = n.trim(), o = null != (t = I.A.getGuildId()) ? t : true, s = new Set(["user:".concat(h.default.getId())]);
+  null != o && s.add("guild:".concat(o)), K = Date.now(), r = null != r ? r : new u.Ay(et, j, null != i ? M : D, {
     frecencyBoosters: true,
-    blacklist: o,
+    blacklist: s,
     allowSnowflake: true
-  }, j), B = null, H = a.length, V = i, r.search(a)
+  }, M), B = null, H = a.length, F = i, r.search(a)
 }
 
 function $(e) {
@@ -207,7 +207,7 @@ function $(e) {
     channelId: t
   } = e;
   if (null == t) returnfalse;
-  (W = W.filter(e => e !== t)).unshift(t), W.length > x + 1 && (W.length = x + 1)
+  (W = W.filter(e => e !== t)).unshift(t), W.length > L + 1 && (W.length = L + 1)
 }
 
 function ee(e, t) {
@@ -221,7 +221,7 @@ function ee(e, t) {
 }
 
 function et(e, t) {
-  ee(e = "" === (t = t.trim()).trim() ? X() : e, Y) || (Y = e, Q(e, t))
+  ee(e = "" === (t = t.trim()).trim() ? Q() : e, Y) || (Y = e, X(e, t))
 }
 
 function en() {
@@ -233,10 +233,10 @@ function er(e) {
   let {
     query: i,
     queryMode: a
-  } = e, s = i.trim();
+  } = e, o = i.trim();
   if (null == r) returnfalse;
-  if (V !== a) {
-    r.setResultTypes(null != a ? [a] : M), r.setLimit(null != a ? j : D);
+  if (F !== a) {
+    r.setResultTypes(null != a ? [a] : j), r.setLimit(null != a ? M : D);
     let e = null != (t = I.A.getGuildId()) ? t : true;
     a === u.rD.USER && null != e ? r.setOptions({
       userFilters: {
@@ -250,10 +250,10 @@ function er(e) {
       voiceChannelGuildFilter: true
     }, true)
   }
-  if ((V = a) === u.rD.USER) {
+  if ((F = a) === u.rD.USER) {
     let e = null != (n = I.A.getGuildId()) ? n : null;
-    r.search(s, e)
-  } else r.search(s, true)
+    r.search(o, e)
+  } else r.search(o, true)
 }
 
 function ei(e) {
@@ -264,7 +264,7 @@ function ea() {
   if (U) returnfalse;
   U = true, l.w.set(P, true)
 }
-class es extends(i = Chunk311907.Ay.PersistedStore) {
+class eo extends(i = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
     this.waitFor(p.A, h.default, m.A, g.A, E.Ay, y.Ay, b.A, O.A, v.Ay, A.A, I.A, _.A, S.Ay), this.syncWith([_.A], () => true), U = l.w.get(P) || false, W = null != (t = null == e ? true : e.channelHistory) ? t : []
@@ -300,16 +300,16 @@ class es extends(i = Chunk311907.Ay.PersistedStore) {
     return {
       theme: _.A.theme,
       query: null != r ? r.query : "",
-      queryMode: V,
-      results: F,
+      queryMode: F,
+      results: V,
       selectedIndex: k,
       seenTutorial: U,
       maxQueryLength: H
     }
   }
 }
-R(es, "displayName", "QuickSwitcherStore"), R(es, "persistKey", "QuickSwitcherStore");
-let eo = new es(Chunk73153.h, {
+R(eo, "displayName", "QuickSwitcherStore"), R(eo, "persistKey", "QuickSwitcherStore");
+let es = new eo(Chunk73153.h, {
     CONNECTION_OPEN: z,
     CONNECTION_OPEN_SUPPLEMENTAL: z,
     QUICKSWITCHER_SHOW: J,
@@ -322,4 +322,4 @@ let eo = new es(Chunk73153.h, {
     QUICKSWITCHER_SWITCH_TO: ea,
     CHANNEL_SELECT: $
   }),
-  el = eo
+  el = es

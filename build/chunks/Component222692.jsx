@@ -51,14 +51,14 @@ function d(e, t) {
 }
 
 function f(e) {
-  a.A.supports(s.O5.VIDEO) ? (0, i.mMO)(async () => {
+  a.A.supports(o.O5.VIDEO) ? (0, i.mMO)(async () => {
     let {
       default: t
     } = await n.e("11487").then(n.bind(n, 792866));
     return n => (0, r.jsx)(t, d(c({}, n), {
-      header: o.intl.string(o.t["8jSzSe"]),
-      body: o.intl.string(o.t.bhqSWl),
-      confirmText: o.intl.string(o.t.BddRzS),
+      header: s.intl.string(s.t["8jSzSe"]),
+      body: s.intl.string(s.t.bhqSWl),
+      confirmText: s.intl.string(s.t.BddRzS),
       onConfirm: e
     }))
   }) : (0, i.mMO)(async () => {
@@ -66,9 +66,9 @@ function f(e) {
       default: t
     } = await n.e("11487").then(n.bind(n, 792866));
     return a => (0, r.jsx)(t, d(c({}, a), {
-      header: o.intl.string(o.t.XLw6FF),
-      body: o.intl.string(o.t.wVjKGi),
-      confirmText: o.intl.string(o.t["BK8LK+"]),
+      header: s.intl.string(s.t.XLw6FF),
+      body: s.intl.string(s.t.wVjKGi),
+      confirmText: s.intl.string(s.t["BK8LK+"]),
       onConfirm: () => {
         null == e || e(), (0, i.mMO)(async () => {
           let {

@@ -30,7 +30,7 @@ function c(e) {
           name: r.name
         };
         null !== r.description && (i.description = r.description);
-        let a = null !== r.icon && null != (n = o.Ay.getGuildIconURL({
+        let a = null !== r.icon && null != (n = s.Ay.getGuildIconURL({
           id: r.id,
           icon: r.icon,
           size: 44,
@@ -39,7 +39,7 @@ function c(e) {
         return null !== a && (i.icon_url = a), i
       }).filter(e => null !== e)
     },
-    p = s.A.getGuildId(),
+    p = o.A.getGuildId(),
     _ = null != p ? a.A.getGuild(p) : null,
     h = () => null == _ ? [] : d().map(e => {
       let t = i.A.getChannel(e);
@@ -55,7 +55,7 @@ function c(e) {
       channels: h()
     };
   null != p && (m.selected_guild_id = p);
-  let g = (null == _ ? true : _.banner) !== null && (null == _ ? true : _.banner) !== true && null != (t = o.Ay.getGuildBannerURL({
+  let g = (null == _ ? true : _.banner) !== null && (null == _ ? true : _.banner) !== true && null != (t = s.Ay.getGuildBannerURL({
     id: _.id,
     banner: _.banner
   }, true)) ? t : null;

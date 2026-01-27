@@ -15,8 +15,8 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 let a = 1.5,
-  s = 5,
-  o = 1,
+  o = 5,
+  s = 1,
   l = 1e3;
 class c {
   async fetchCodecInfo() {
@@ -66,9 +66,9 @@ class c {
       else {
         let e = b - this.baselineFrames,
           t = p.currentTime - this.baselineTime;
-        if (t >= o && e > 0) {
+        if (t >= s && e > 0) {
           let n = e / t;
-          this.recentFrameRates.push(n), this.recentFrameRates.length > s && this.recentFrameRates.shift(), v = Math.round(this.recentFrameRates.reduce((e, t) => e + t, 0) / this.recentFrameRates.length), this.lastKnownFrameRate = v
+          this.recentFrameRates.push(n), this.recentFrameRates.length > o && this.recentFrameRates.shift(), v = Math.round(this.recentFrameRates.reduce((e, t) => e + t, 0) / this.recentFrameRates.length), this.lastKnownFrameRate = v
         } else null !== this.lastKnownFrameRate && (v = this.lastKnownFrameRate)
       }
       this.lastCurrentTime = p.currentTime

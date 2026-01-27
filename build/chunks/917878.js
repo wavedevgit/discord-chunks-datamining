@@ -11,7 +11,7 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  A: () => o,
+  A: () => s,
   a: () => i
 }), require("./134528.js"), require("./947204.js"), require("./896048.js");
 let i = "NativeAppStartup";
@@ -19,7 +19,7 @@ let i = "NativeAppStartup";
 function a(e, t, n, r, i) {
   return "".concat(e, ":").concat(t, ":").concat(n, ":").concat(r, ":").concat(i)
 }
-class s {
+class o {
   recordChannelFetchStart(e, t, n, r, i) {
     this.channelsFetchStarted.add(e), this.fetchLogs.set(a(e, t, null != n ? n : null, null != r ? r : null, i), {
       channelId: e,
@@ -29,28 +29,28 @@ class s {
       startTime: Date.now()
     })
   }
-  recordChannelFetchedLocal(e, t, n, r, i, s) {
-    var o;
+  recordChannelFetchedLocal(e, t, n, r, i, o) {
+    var s;
     this.channelsFetchedWithLocalMessages.add(e);
     let l = this.fetchLogs.get(a(e, t, null != n ? n : null, null != r ? r : null, i));
     null != l && (l.localMessageDetails = {
       loadTime: Date.now(),
-      count: s.length,
-      lastMessageId: null == (o = s.at(false)) ? true : o.id
+      count: o.length,
+      lastMessageId: null == (s = o.at(false)) ? true : s.id
     })
   }
-  recordChannelFetchedNetwork(e, t, n, r, i, s) {
-    var o;
+  recordChannelFetchedNetwork(e, t, n, r, i, o) {
+    var s;
     this.channelsFetchedNetwork.add(e);
     let l = this.fetchLogs.get(a(e, t, null != n ? n : null, null != r ? r : null, i));
     null != l && (l.networkMessageDetails = {
       loadTime: Date.now(),
-      count: s.length,
-      lastMessageId: null == (o = s.at(false)) ? true : o.id
+      count: o.length,
+      lastMessageId: null == (s = o.at(false)) ? true : s.id
     })
   }
   constructor() {
     r(this, "channelsFetchStarted", new Set), r(this, "channelsFetchedWithLocalMessages", new Set), r(this, "channelsFetchedNetwork", new Set), r(this, "fetchLogs", new Map)
   }
 }
-let o = new s
+let s = new o

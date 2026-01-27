@@ -45,20 +45,20 @@ function E(e) {
 
 function y(e, t, n, r, i) {
   var a;
-  let s = T(t),
-    l = s[0],
-    c = s[s.length - 1],
+  let o = T(t),
+    l = o[0],
+    c = o[o.length - 1],
     u = null;
   if (null != c) {
     let [t] = d.VW.node(e, c.path);
     u = t.text.substring(c.offset + 3)
   }
   let f = n && null != l,
-    p = n && 0 === s.length,
-    h = r && 0 === s.length,
-    m = (f ? s.slice(1) : s).length % 2 == 1,
+    p = n && 0 === o.length,
+    h = r && 0 === o.length,
+    m = (f ? o.slice(1) : o).length % 2 == 1,
     g = m && (null == u || "" === u || null != u.match(_)),
-    E = g && null != u && null != (a = o.default.resolveLanguageName(u)) ? a : null;
+    E = g && null != u && null != (a = s.default.resolveLanguageName(u)) ? a : null;
   return {
     blockEntry: t,
     wasInCodeBlock: n,
@@ -107,27 +107,27 @@ function v(e) {
           let e = [];
           for (let n = 0; n < t.length; n++) {
             let i, a = r[n].replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#x27;/g, "'"),
-              s = [],
-              o = 0,
+              o = [],
+              s = 0,
               l = 0;
             for (; null != (i = g.exec(a));) {
               let t = i.index + i[0].length,
                 n = i.index - l;
-              i.index > l && (e.length > 0 && s.push({
+              i.index > l && (e.length > 0 && o.push({
                 types: [...e],
-                start: o,
-                end: o + n
-              }), o += n), "</span>" === i[0] ? e.pop() : e.push(i[1]), l = t
+                start: s,
+                end: s + n
+              }), s += n), "</span>" === i[0] ? e.pop() : e.push(i[1]), l = t
             }
             if (e.length > 0) {
               let t = a.length - l;
-              s.push({
+              o.push({
                 types: [...e],
-                start: o,
-                end: o + t
+                start: s,
+                end: s + t
               })
             }
-            t[n].hljsTypes = s
+            t[n].hljsTypes = o
           }
         } else
           for (let e = 0; e < t.length; e++) t[e].hljsTypes = null
@@ -148,7 +148,7 @@ function S(e, t) {
   let n = "".concat(e, "-").concat(t),
     r = I.get(n);
   if (null != r) return r;
-  let i = o.default.highlight(t, e, false);
+  let i = s.default.highlight(t, e, false);
   if (null == i || i.illegal) return null;
   let a = i.value.split("\n");
   return I.set(n, a), a
@@ -160,9 +160,9 @@ function T(e) {
   let i = [],
     a = /\\|```/g;
   for (let e = 0; e < n.children.length; e++) {
-    let s = n.children[e];
-    if (d.l5.isText(s))
-      for (a.lastIndex = 0; null != (t = a.exec(s.text));) {
+    let o = n.children[e];
+    if (d.l5.isText(o))
+      for (a.lastIndex = 0; null != (t = a.exec(o.text));) {
         if ("\\" === t[0]) {
           a.lastIndex += 1;
           continue

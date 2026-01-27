@@ -21,8 +21,8 @@ function u(e) {
     sectionOverallPosition: f,
     promotionalLabel: p,
     numFriendsWhoPlay: _
-  } = e, h = (0, a.bG)([o.A], () => o.A.entrypoint()), m = r.useCallback(() => {
-    (0, s.x)({
+  } = e, h = (0, a.bG)([s.A], () => s.A.entrypoint()), m = r.useCallback(() => {
+    (0, o.x)({
       type: i.ImpressionTypes.VIEW,
       name: i.ImpressionNames.APP_LAUNCHER_ITEM,
       properties: {

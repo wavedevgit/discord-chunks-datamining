@@ -9,7 +9,7 @@ require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,14 +18,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -58,11 +58,11 @@ function u(e) {
   switch (t) {
     case a.TVA.NONE:
     case a.TVA.TIER_1:
-      return (0, r.jsx)(i.EX7, o({}, n));
+      return (0, r.jsx)(i.EX7, s({}, n));
     case a.TVA.TIER_2:
-      return (0, r.jsx)(i.vRF, o({}, n));
+      return (0, r.jsx)(i.vRF, s({}, n));
     case a.TVA.TIER_3:
-      return (0, r.jsx)(i.q1I, o({}, n));
+      return (0, r.jsx)(i.q1I, s({}, n));
     default:
       throw Error("Not a valid tier type")
   }

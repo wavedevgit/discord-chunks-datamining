@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends(r = Chunk311907.Ay.Store) {
+class s extends(r = Chunk311907.Ay.Store) {
   get isCreatingOrder() {
     return this._isCreatingOrder
   }
@@ -79,8 +79,8 @@ class o extends(r = Chunk311907.Ay.Store) {
       ORDER_UPDATE_FAIL: e => this.handleOrderUpdateFail(e),
       ORDER_DISCARD_SUCCESS: e => this.handleOrderDiscardSuccess(e),
       PAYMENT_MODAL_OPEN: e => this.handlePaymentModalOpen(e)
-    }), s(this, "_isCreatingOrder", false), s(this, "_isUpdatingOrder", false), s(this, "_order", null)
+    }), o(this, "_isCreatingOrder", false), o(this, "_isUpdatingOrder", false), o(this, "_order", null)
   }
 }
-s(o, "displayName", "OrderStore");
-let l = new o
+o(s, "displayName", "OrderStore");
+let l = new s

@@ -111,22 +111,22 @@ let h = e => {
       A = async e => {
         null == g || g(true), await _(e, l), O(true), null == g || g(false)
       }, I = async e => {
-        var t, i, s;
-        if (e.stopPropagation(), e.preventDefault(), (null == (t = e.currentTarget) ? true : t.files) == null || (null == (s = e.currentTarget) || null == (i = s.files) ? true : i.length) === 0) return;
-        let o = e.currentTarget.files;
+        var t, i, o;
+        if (e.stopPropagation(), e.preventDefault(), (null == (t = e.currentTarget) ? true : t.files) == null || (null == (o = e.currentTarget) || null == (i = o.files) ? true : i.length) === 0) return;
+        let s = e.currentTarget.files;
         y.current = await (0, a.mMO)(async () => {
           let {
             default: e
           } = await n.e("17259").then(n.bind(n, 897126));
           return t => (0, r.jsx)(e, d({
-            processFiles: () => A(o)
+            processFiles: () => A(s)
           }, t))
         })
       };
-    return (0, r.jsx)(s.A, {
+    return (0, r.jsx)(o.A, {
       ref: t,
       onChange: I,
-      filters: null != m ? m : (0, o.gA)(),
+      filters: null != m ? m : (0, s.gA)(),
       multiple: c,
       disabled: u,
       className: f,

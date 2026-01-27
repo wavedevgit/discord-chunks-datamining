@@ -6,17 +6,17 @@ require.d(exports, {
   Yd: () => r,
   iS: () => u,
   n_: () => a,
-  pM: () => o,
+  pM: () => s,
   sn: () => c,
-  v4: () => s,
+  v4: () => o,
   z9: () => l
 });
 var r = "dnd-core/ADD_SOURCE",
   i = "dnd-core/ADD_TARGET",
   a = "dnd-core/REMOVE_SOURCE",
-  s = "dnd-core/REMOVE_TARGET";
+  o = "dnd-core/REMOVE_TARGET";
 
-function o(e) {
+function s(e) {
   return {
     type: r,
     payload: {
@@ -45,7 +45,7 @@ function c(e) {
 
 function u(e) {
   return {
-    type: s,
+    type: o,
     payload: {
       targetId: e
     }

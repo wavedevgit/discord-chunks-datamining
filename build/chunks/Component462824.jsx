@@ -28,7 +28,7 @@ function f(e) {
     disabled: d = false,
     disablePointerEvents: f = false
   } = e;
-  return (0, o.p)(l, {
+  return (0, s.p)(l, {
     keys: e => e ? "scrim" : "empty",
     config: c.hP,
     from: {
@@ -40,7 +40,7 @@ function f(e) {
     leave: {
       opacity: 0
     }
-  }, "instant" === n ? "animate-never" : "animate-always")((e, n) => n ? (0, r.jsx)(s.animated.div, {
+  }, "instant" === n ? "animate-never" : "animate-always")((e, n) => n ? (0, r.jsx)(o.animated.div, {
     role: "none",
     className: a()(u.f5, {
       [u.Et]: "lightbox" === t,

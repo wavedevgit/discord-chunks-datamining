@@ -35,11 +35,11 @@ class m extends Chunk439372.A {
       POST_CONNECTION_OPEN: () => this._handleConnectionOpen()
     }), d(this, "_handleTestRegionsResponse", e => {
       let t = e.map(e => e.region);
-      o.A.shouldPerformLatencyTest(t) ? s.A.getMediaEngine().rankRtcRegions(e).then(e => {
+      s.A.shouldPerformLatencyTest(t) ? o.A.getMediaEngine().rankRtcRegions(e).then(e => {
         h.verbose("RTC region latency test completed, ranked regions are: ", e), (0, r.b)(e, t)
-      }).catch(e => h.warn(e)) : h.verbose("RTC cached ranked preferred regions are ".concat(o.A.getPreferredRegions()))
+      }).catch(e => h.warn(e)) : h.verbose("RTC cached ranked preferred regions are ".concat(s.A.getPreferredRegions()))
     }), d(this, "_fetchAndScheduleRefetch", () => {
-      let e = s.A.supports(u.O5.PORT_AWARE_LATENCY_TESTING) ? 2 : 1;
+      let e = o.A.supports(u.O5.PORT_AWARE_LATENCY_TESTING) ? 2 : 1;
       (0, r.B)(e).then(e => this._handleTestRegionsResponse(e.body)).catch(e => h.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, _ * l.A.Millis.MINUTE)
     }), d(this, "_handleConnectionOpen", () => {
       if (c.isPlatformEmbedded && !__OVERLAY__) {

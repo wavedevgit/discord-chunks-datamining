@@ -75,13 +75,13 @@ class A extends Chunk439372.A {
     }), y(this, "handleGuildMemberUpdate", e => {
       let {
         flags: t,
-        user: s,
-        guildId: o
+        user: o,
+        guildId: s
       } = e;
-      if (s.id === l.default.getId() && !this.onboardingCompleteGuilds.has(o) && (0, i.Lt)(null != t ? t : 0, E.D.COMPLETED_HOME_ACTIONS)) {
+      if (o.id === l.default.getId() && !this.onboardingCompleteGuilds.has(s) && (0, i.Lt)(null != t ? t : 0, E.D.COMPLETED_HOME_ACTIONS)) {
         var c, u;
-        this.onboardingCompleteGuilds.add(o);
-        let e = null != (c = null == (u = p.h.getNewMemberActions(o)) ? true : u.length) ? c : 0;
+        this.onboardingCompleteGuilds.add(s);
+        let e = null != (c = null == (u = p.h.getNewMemberActions(s)) ? true : u.length) ? c : 0;
         if (0 === e) return;
         (0, a.mMO)(async () => {
           let {
@@ -134,7 +134,7 @@ class A extends Chunk439372.A {
       (null == r ? true : r[t]) !== true && null != i && i.actionType === _.NewMemberActionTypes.CHAT && (0, f.eC)(e, t)
     }), y(this, "_getOrLoadOnboardingMemberActions", async e => {
       let t = (0, m.K)(e),
-        n = o.A.isFullServerPreview(e);
+        n = s.A.isFullServerPreview(e);
       if (!t && !n) return {};
       let r = u.Ay.getSelfMember(e);
       if (null == r || !(0, g.j)(e)) return {};

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 747625, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 747625, original params: e,t,n (module,exports,require) **/
 module.exports = {
   bW: "triggerButton__64c86",
   nd: "panel__64c86",

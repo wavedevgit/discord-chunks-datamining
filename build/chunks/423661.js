@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk872863 = require("./872863.js");
 let i = {
   isHeicFile: a,
-  findHeicOffsets: s
+  findHeicOffsets: o
 };
 
 function a(e) {
@@ -21,6 +21,6 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   return (0, r.OH)(e)
 }

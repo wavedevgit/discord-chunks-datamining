@@ -14,7 +14,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js");
 
 function u(e, t) {
-  let [n, r, u] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.default, a.A, s.A], d = r.getGuild(e), f = n.getUser(t);
+  let [n, r, u] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.default, a.A, o.A], d = r.getGuild(e), f = n.getUser(t);
   return !(null == d || null == f || f.isNonUserBot() || (0, i.bM)(d, f) || l.$3({
     permission: c.xBc.ADMINISTRATOR,
     user: f,
@@ -23,5 +23,5 @@ function u(e, t) {
 }
 
 function d(e, t) {
-  return (0, r.bG)([o.default, a.A, s.A], () => u(e, t, [o.default, a.A, s.A]), [e, t])
+  return (0, r.bG)([s.default, a.A, o.A], () => u(e, t, [s.default, a.A, o.A]), [e, t])
 }

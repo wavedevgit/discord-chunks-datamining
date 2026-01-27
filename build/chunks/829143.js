@@ -6,7 +6,7 @@ require.d(exports, {
   E9: () => d,
   Pl: () => g,
   d2: () => E,
-  eB: () => s,
+  eB: () => o,
   zL: () => b
 });
 var Chunk476858 = require("./476858.js"),
@@ -34,7 +34,7 @@ let a = {
     lör: 6,
     lö: 6
   },
-  s = {
+  o = {
     januari: 1,
     jan: 1,
     "jan.": 1,
@@ -71,7 +71,7 @@ let a = {
     dec: 12,
     "dec.": 12
   },
-  o = {
+  s = {
     första: 1,
     andra: 2,
     tredje: 3,
@@ -187,7 +187,7 @@ function f(e, t) {
   e[c[t[2].toLowerCase()]] = n
 }
 let p = `(?:${(0,Chunk476858.uJ)(l)}|\\d+)`;
-(0, Chunk476858.uJ)(o), (0, Chunk476858.uJ)(c);
+(0, Chunk476858.uJ)(s), (0, Chunk476858.uJ)(c);
 let _ = `(${p})\\s{0,5}(${(0,Chunk476858.uJ)(c)})\\s{0,5}`,
   h = RegExp(_, "i"),
   m = `(${p})\\s{0,5}(${(0,Chunk476858.uJ)(u)})\\s{0,5}`,

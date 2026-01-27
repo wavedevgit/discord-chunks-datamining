@@ -6,9 +6,9 @@ require.d(exports, {
   E9: () => I,
   EB: () => d,
   Pl: () => v,
-  Wp: () => s,
+  Wp: () => o,
   d2: () => A,
-  eB: () => o,
+  eB: () => s,
   fp: () => m,
   k8: () => h,
   lT: () => _,
@@ -43,7 +43,7 @@ let a = {
     sat: 6,
     "sat.": 6
   },
-  s = {
+  o = {
     january: 1,
     february: 2,
     march: 3,
@@ -57,8 +57,8 @@ let a = {
     november: 11,
     december: 12
   },
-  o = {
-    ...s,
+  s = {
+    ...o,
     jan: 1,
     "jan.": 1,
     feb: 2,

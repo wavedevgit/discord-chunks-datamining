@@ -49,9 +49,9 @@ class b extends Chunk439372.A {
           for (let e of Object.keys(f)) {
             var i, a;
             if (g(e)) continue;
-            let t = s.A.getWidget(e);
+            let t = o.A.getWidget(e);
             if (null == t || !h.has(t.type)) continue;
-            let n = null != (i = null == (a = s.A.getWidgetDefaultSettings(t.type)) ? true : a.pinned) ? i : _;
+            let n = null != (i = null == (a = o.A.getWidgetDefaultSettings(t.type)) ? true : a.pinned) ? i : _;
             t.pinned !== n && (d.verbose("Widget ".concat(t.type, " is ").concat(t.pinned ? "pinned" : "unpinned", ", toggling to ").concat(n ? "pinned" : "unpinned")), (0, r.v0)(e), y(e))
           }
       },
@@ -63,7 +63,7 @@ class b extends Chunk439372.A {
           enabled: r
         } = (0, l.Fg)("OverlayWidgetPinManager");
         if (!r) return;
-        let i = s.A.getWidget(t);
+        let i = o.A.getWidget(t);
         null != i && h.has(i.type) && null != n && (n ? E(t) : y(t))
       }
     })

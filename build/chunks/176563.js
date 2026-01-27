@@ -17,18 +17,18 @@ var Chunk311907 = require("./311907.js"),
 let f = 8,
   p = .725,
   _ = e => {
-    let t = (0, s.bG)([l.A], () => l.A.saturation),
-      n = (0, s.bG)([u.A], () => u.A.theme),
+    let t = (0, o.bG)([l.A], () => l.A.saturation),
+      n = (0, o.bG)([u.A], () => u.A.theme),
       i = (0, d.W)(n, t),
       [_, h] = (0, c.rh)(e, i);
     return r.useMemo(() => {
-      let e = (0, o.LX)(_),
-        t = (0, o.LX)(h);
-      for (let t = 1; t < f && !((0, o.OK)(e) >= p); t++) e = a()(e).darken(.5).num();
-      for (let e = 1; e < f && !((0, o.OK)(t) >= p); e++) t = a()(t).darken(.5).num();
+      let e = (0, s.LX)(_),
+        t = (0, s.LX)(h);
+      for (let t = 1; t < f && !((0, s.OK)(e) >= p); t++) e = a()(e).darken(.5).num();
+      for (let e = 1; e < f && !((0, s.OK)(t) >= p); e++) t = a()(t).darken(.5).num();
       return {
-        primaryColor: (0, o.Hl)(e),
-        secondaryColor: (0, o.Hl)(t)
+        primaryColor: (0, s.Hl)(e),
+        secondaryColor: (0, s.Hl)(t)
       }
     }, [_, h])
   }

@@ -2,9 +2,9 @@
 /** chunk id: 930958, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  k: () => s
+  k: () => o
 }), require("./747238.js"), require("./812715.js"), require("./733351.js");
 let r = /(!|\.|;|,|-|—|–|\?|"|')/g,
   i = /(\n|\t|\s)/g,
   a = e => e.replace(r, "").replace(i, " "),
-  s = e => null == e ? [] : a(e).trim().split(" ")
+  o = e => null == e ? [] : a(e).trim().split(" ")

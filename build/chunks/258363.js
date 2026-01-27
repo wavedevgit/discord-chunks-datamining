@@ -54,9 +54,9 @@ function f(e, t) {
     a = e;
     let {
       group: t,
-      decimal: s
-    } = null != (n = o.i[e]) ? n : o.i["en-US"];
-    r = RegExp(l.A.escape(t), "g"), i = RegExp(l.A.escape(s), "g")
+      decimal: o
+    } = null != (n = s.i[e]) ? n : s.i["en-US"];
+    r = RegExp(l.A.escape(t), "g"), i = RegExp(l.A.escape(o), "g")
   }
   return t.replace(r, "").replace(i, ".")
 }
@@ -66,7 +66,7 @@ function p(e, t) {
   for (let i of t) {
     var r;
     let t = null == (r = e.options) ? true : r.find(e => e.name === i.name);
-    i.type !== s.n4.ATTACHMENT && (null != t && t.autocomplete || (n[i.name] = i))
+    i.type !== o.n4.ATTACHMENT && (null != t && t.autocomplete || (n[i.name] = i))
   }
   return n
 }

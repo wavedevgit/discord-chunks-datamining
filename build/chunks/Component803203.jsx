@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 803203, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 7034 **/
+/** chunk id: 803203, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
 }), require("./896048.js");
@@ -17,49 +16,47 @@ var Chunk627968 = require("./627968.js"),
   Chunk60317 = require("./60317.js"),
   Chunk859751 = require("./859751.js"),
   Chunk113520 = require("./113520.js");
-
-function m(e) {
+let g = Chunk64700.memo(function(e) {
   let {
     channelId: t,
     messageId: n,
-    emoji: m,
-    useChatFontScaling: g,
-    color: E,
-    count: y,
-    emojiSize: b
-  } = e, O = (0, a.bG)([u.A], () => u.A.getEffectForEmojiId(t, n, m)), v = g ? h : _, A = i.useMemo(() => (0, p.eT)(m, E, t, {
-    key: O,
+    emoji: g,
+    useChatFontScaling: b,
+    color: y,
+    count: O,
+    emojiSize: v
+  } = e, j = (0, r.bG)([c.A], () => c.A.getEffectForEmojiId(t, n, g)), A = l.useMemo(() => (0, h.eT)(g, y, t, {
+    key: j,
     messageId: n
-  }), [E, O, m, t, n]), [I, S] = i.useState(false), T = (0, a.bG)([o.A], () => o.A.useReducedMotion), C = c.Sf.useSetting(), N = i.useCallback(() => {
-    s.h.dispatch({
+  }), [y, j, g, t, n]), [T, E] = l.useState(false), I = (0, r.bG)([a.A], () => a.A.useReducedMotion), S = u.Sf.useSetting(), x = l.useCallback(() => {
+    o.h.dispatch({
       type: "BURST_REACTION_EFFECT_CLEAR",
       channelId: t,
       messageId: n,
-      emoji: m
+      emoji: g
     })
-  }, [m, t, n]);
-  return (i.useEffect(() => {
+  }, [g, t, n]);
+  return (l.useEffect(() => {
     let e = () => {
-      if (I) return;
-      let e = (0, d.H4)("".concat(Date.now()).concat(t).concat(n).concat(m.name)) % 10;
-      (e += y > 4 ? 4 : y - 1) > 7 && (S(true), (0, l.on)({
+      if (T) return;
+      let e = (0, d.H4)("".concat(Date.now()).concat(t).concat(n).concat(g.name)) % 10;
+      (e += O > 4 ? 4 : O - 1) > 7 && (E(true), (0, s.on)({
         channelId: t,
         messageId: n,
-        emoji: m,
-        key: u.W.RANDOM
+        emoji: g,
+        key: c.W.RANDOM
       }))
     };
-    if (I || T && !C || !C) return;
+    if (T || I && !S || !S) return;
     e();
-    let r = setInterval(e, 5e3);
+    let i = setInterval(e, 5e3);
     return () => {
-      clearInterval(r)
+      clearInterval(i)
     }
-  }, [C, t, y, m, m.name, I, n, T]), null == O) ? null : (0, r.jsx)(f.A, {
-    className: v.effect,
+  }, [S, t, O, g, g.name, T, n, I]), null == j) ? null : (0, i.jsx)(p.A, {
+    className: (b ? f : m).effect,
     effect: A,
-    onComplete: N,
-    emojiSize: b
+    onComplete: x,
+    emojiSize: v
   })
-}
-let g = Chunk64700.memo(m)
+})

@@ -2,12 +2,12 @@
 /** chunk id: 858662, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => o
+  l: () => s
 });
 var r, Chunk41010 = require("./41010.js"),
   Chunk653587 = require("./653587.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var o = (s(r = {}, Chunk41010.FILE, {
+var s = (o(r = {}, Chunk41010.FILE, {
   exposeProperties: {
     files: function(e) {
       return Array.prototype.slice.call(e.files)
@@ -25,21 +25,21 @@ var o = (s(r = {}, Chunk41010.FILE, {
     }
   },
   matchesTypes: ["Files"]
-}), s(r, Chunk41010.HTML, {
+}), o(r, Chunk41010.HTML, {
   exposeProperties: {
     html: function(e, t) {
       return (0, a.W)(e, t, "")
     }
   },
   matchesTypes: ["Html", "text/html"]
-}), s(r, Chunk41010.URL, {
+}), o(r, Chunk41010.URL, {
   exposeProperties: {
     urls: function(e, t) {
       return (0, a.W)(e, t, "").split("\n")
     }
   },
   matchesTypes: ["Url", "text/uri-list"]
-}), s(r, Chunk41010.TEXT, {
+}), o(r, Chunk41010.TEXT, {
   exposeProperties: {
     text: function(e, t) {
       return (0, a.W)(e, t, "")

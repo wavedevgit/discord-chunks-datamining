@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk415955 = require("./415955.js"),
   i = require.n(Chunk415955),
   Chunk241899 = require("./241899.js"),
-  s = require.n(Chunk241899),
+  o = require.n(Chunk241899),
   Chunk972347 = require("./972347.js"),
   Chunk935172 = require("./935172.js"),
   Chunk466376 = require("./466376.js"),
@@ -58,8 +58,8 @@ class _ extends Chunk972347.A {
     let i = this.getHasActiveVideoOutputSink(e),
       a = null != (r = this.activeOutputSinks.get(e)) ? r : new Set;
     t ? a.add(n) : a.delete(n), this.activeOutputSinks.set(e, a);
-    let s = this.getHasActiveVideoOutputSink(e);
-    this.isActiveOutputSinksEnabled = true, i !== s && this.emit(l.y.ActiveSinksChange, e, s)
+    let o = this.getHasActiveVideoOutputSink(e);
+    this.isActiveOutputSinksEnabled = true, i !== o && this.emit(l.y.ActiveSinksChange, e, o)
   }
   getActiveOutputSinkTrackingEnabled() {
     return this.isActiveOutputSinksEnabled
@@ -88,7 +88,7 @@ class _ extends Chunk972347.A {
     false === r && (r = 0);
     let {
       quality: a,
-      constraints: o
+      constraints: s
     } = this.applyQualityConstraints({}, this.videoStreamParameters[r].ssrc), l = i()(this.videoStreamParameters);
     null != a && (l[r].maxBitrate = a.bitrateMax, l[r].minBitrate = a.bitrateMin, l[r].targetBitrate = null != (t = a.bitrateTarget) ? t : 0, null != a.encode && (l[r].maxPixelCount = a.encode.pixelCount, l[r].maxFrameRate = a.encode.framerate)), this.videoStreamParameters = l;
     for (let e = 0; e < this.videoStreamParameters.length; e++) {
@@ -97,13 +97,13 @@ class _ extends Chunk972347.A {
         quality: t,
         constraints: i
       } = this.applyQualityConstraints({}, this.videoStreamParameters[e].ssrc);
-      null != t && (this.videoStreamParameters[e].maxBitrate = t.bitrateMax, this.videoStreamParameters[e].minBitrate = t.bitrateMin, this.videoStreamParameters[e].targetBitrate = null != (n = t.bitrateTarget) ? n : 0, null != t.encode && (this.videoStreamParameters[e].maxPixelCount = t.encode.pixelCount, this.videoStreamParameters[e].maxFrameRate = t.encode.framerate)), 100 === this.videoStreamParameters[e].quality && (o = i, a = t)
+      null != t && (this.videoStreamParameters[e].maxBitrate = t.bitrateMax, this.videoStreamParameters[e].minBitrate = t.bitrateMin, this.videoStreamParameters[e].targetBitrate = null != (n = t.bitrateTarget) ? n : 0, null != t.encode && (this.videoStreamParameters[e].maxPixelCount = t.encode.pixelCount, this.videoStreamParameters[e].maxFrameRate = t.encode.framerate)), 100 === this.videoStreamParameters[e].quality && (s = i, a = t)
     }
-    o.streamParameters = i()(this.videoStreamParameters), o.remoteSinkWantsPixelCount = Math.max(...this.videoStreamParameters.map(e => {
+    s.streamParameters = i()(this.videoStreamParameters), s.remoteSinkWantsPixelCount = Math.max(...this.videoStreamParameters.map(e => {
       var t;
       return null != (t = e.maxPixelCount) ? t : 0
     }));
-    let c = null != e ? s()(o, e) : f({}, o);
+    let c = null != e ? o()(s, e) : f({}, s);
     this.logger.verbose("updateVideoQuality: ".concat(JSON.stringify(c))), this.updateVideoQualityCore(c, a)
   }
   applyVideoQualityMode(e) {
@@ -149,8 +149,8 @@ class _ extends Chunk972347.A {
       i = this.context === u.x.DEFAULT || r,
       a = this.remoteVideoSinkWants[null != (t = null != e ? e : null == (n = this.videoStreamParameters[0]) ? true : n.ssrc) ? t : 0];
     if (null != a && a > 0) return a;
-    let s = this.remoteVideoSinkWants.any;
-    return null != s && s > 0 && i ? s : 100 * !!i
+    let o = this.remoteVideoSinkWants.any;
+    return null != o && o > 0 && i ? o : 100 * !!i
   }
   getRemoteVideoSinkWants(e) {
     return this.remoteVideoSinkWants[e]

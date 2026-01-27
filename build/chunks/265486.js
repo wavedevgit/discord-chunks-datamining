@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   At: () => l,
-  BZ: () => o,
+  BZ: () => s,
   K: () => m,
   YQ: () => c
 });
@@ -34,7 +34,7 @@ function a(e) {
   return e
 }
 
-function s(e) {
+function o(e) {
   if (e.startsWith("mp4a.40.2")) return "AAC-LC";
   if (e.startsWith("mp4a.40.5")) return "HE-AAC";
   if (e.startsWith("mp4a.40.29")) return "HE-AACv2";
@@ -44,7 +44,7 @@ function s(e) {
   return e
 }
 
-function o(e) {
+function s(e) {
   return null === e ? "N/A" : e < 1e3 ? "".concat(e, " bps") : e < 1e6 ? "".concat((e / 1e3).toFixed(1), " Kbps") : "".concat((e / 1e6).toFixed(2), " Mbps")
 }
 
@@ -100,7 +100,7 @@ async function m(e) {
     let t;
     if ("u" < typeof fetch) return i;
     let {
-      default: o
+      default: s
     } = await n.e("25777").then(n.t.bind(n, 293384, 19)), l = null;
     try {
       let t = await fetch(e, {
@@ -124,10 +124,10 @@ async function m(e) {
     if (!t.ok && 206 !== t.status) return r.warn("Unexpected response status:", t.status), i;
     if ("opaque" === t.type) return r.warn("Opaque response, CORS headers may be missing"), i;
     let c = await t.arrayBuffer(),
-      m = o.createFile();
+      m = s.createFile();
     return new Promise(t => {
       let n = false,
-        o = false,
+        s = false,
         g = null,
         E = null,
         y = () => {
@@ -137,7 +137,7 @@ async function m(e) {
           r.warn("Timeout after", _, "ms, moov atom not found"), y()
         }, _);
       m.onReady = e => {
-        var r, i, o, l, c, f, p, _, h, m, g, y, O, v, A;
+        var r, i, s, l, c, f, p, _, h, m, g, y, O, v, A;
         if (n) return;
         n = true, clearTimeout(b), null != E && clearTimeout(E);
         let I = e.videoTracks[0],
@@ -146,8 +146,8 @@ async function m(e) {
             videoCodec: null != (r = null == I ? true : I.codec) ? r : null,
             audioCodec: null != (i = null == S ? true : S.codec) ? i : null,
             videoCodecDescription: null != I ? a(I.codec) : null,
-            audioCodecDescription: null != S ? s(S.codec) : null,
-            videoBitrate: null != (o = null == I ? true : I.bitrate) ? o : null,
+            audioCodecDescription: null != S ? o(S.codec) : null,
+            videoBitrate: null != (s = null == I ? true : I.bitrate) ? s : null,
             audioBitrate: null != (l = null == S ? true : S.bitrate) ? l : null,
             audioChannels: null != (c = null == S || null == (y = S.audio) ? true : y.channel_count) ? c : null,
             audioSampleRate: null != (f = null == S || null == (O = S.audio) ? true : O.sample_rate) ? f : null,
@@ -162,14 +162,14 @@ async function m(e) {
       }, m.onError = () => {
         y()
       }, m.onSeek = async t => {
-        if (n || o || null == l || !(l > f)) {
-          if (o) {
+        if (n || s || null == l || !(l > f)) {
+          if (s) {
             if (null != g && performance.now() - g < h) return;
             y();
             return
           }
         } else {
-          o = true, r.log("Fetching end chunk for moov atom");
+          s = true, r.log("Fetching end chunk for moov atom");
           try {
             let t = await fetch(e, {
               method: "GET",
@@ -201,7 +201,7 @@ async function m(e) {
       O.fileStart = 0;
       try {
         m.appendBuffer(O), m.flush(), E = setTimeout(() => {
-          n || o || null == m.onSeek || m.onSeek({
+          n || s || null == m.onSeek || m.onSeek({
             offset: 0,
             isLast: false
           })

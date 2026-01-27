@@ -1,117 +1,115 @@
-/** Chunk was on web.js **/
-/** chunk id: 311610, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 311610, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk617179 = require("./617179.js"),
   Chunk27395 = require("./27395.js"),
   Chunk116740 = require("./116740.js"),
   Chunk797686 = require("./797686.js"),
-  o = Chunk116740.OrderedMap,
-  l = Chunk116740.List,
-  c = function(e, t, n) {
-    if (e) {
-      var r = t.get(e);
-      r && t.set(e, n(r))
+  s = Chunk116740.OrderedMap,
+  u = Chunk116740.List,
+  c = function(t, e, r) {
+    if (t) {
+      var n = e.get(t);
+      n && e.set(t, r(n))
     }
   },
-  u = function(e, t, n, r, i) {
-    if (!i) return e;
-    var a = "after" === r,
-      s = t.getKey(),
-      o = n.getKey(),
-      u = t.getParentKey(),
-      d = t.getNextSiblingKey(),
-      f = t.getPrevSiblingKey(),
-      p = n.getParentKey(),
-      _ = a ? n.getNextSiblingKey() : o,
-      h = a ? o : n.getPrevSiblingKey();
-    return e.withMutations(function(e) {
-      c(u, e, function(e) {
-        var t = e.getChildKeys();
-        return e.merge({
-          children: t.delete(t.indexOf(s))
+  l = function(t, e, r, n, i) {
+    if (!i) return t;
+    var o = "after" === n,
+      a = e.getKey(),
+      s = r.getKey(),
+      l = e.getParentKey(),
+      f = e.getNextSiblingKey(),
+      p = e.getPrevSiblingKey(),
+      h = r.getParentKey(),
+      d = o ? r.getNextSiblingKey() : s,
+      g = o ? s : r.getPrevSiblingKey();
+    return t.withMutations(function(t) {
+      c(l, t, function(t) {
+        var e = t.getChildKeys();
+        return t.merge({
+          children: e.delete(e.indexOf(a))
         })
-      }), c(f, e, function(e) {
-        return e.merge({
-          nextSibling: d
+      }), c(p, t, function(t) {
+        return t.merge({
+          nextSibling: f
         })
-      }), c(d, e, function(e) {
-        return e.merge({
-          prevSibling: f
+      }), c(f, t, function(t) {
+        return t.merge({
+          prevSibling: p
         })
-      }), c(_, e, function(e) {
-        return e.merge({
-          prevSibling: s
+      }), c(d, t, function(t) {
+        return t.merge({
+          prevSibling: a
         })
-      }), c(h, e, function(e) {
-        return e.merge({
-          nextSibling: s
+      }), c(g, t, function(t) {
+        return t.merge({
+          nextSibling: a
         })
-      }), c(p, e, function(e) {
-        var t = e.getChildKeys(),
-          n = t.indexOf(o),
-          r = a ? n + 1 : 0 !== n ? n - 1 : 0,
-          i = t.toArray();
-        return i.splice(r, 0, s), e.merge({
-          children: l(i)
+      }), c(h, t, function(t) {
+        var e = t.getChildKeys(),
+          r = e.indexOf(s),
+          n = e.toArray();
+        return n.splice(o ? r + 1 : 0 !== r ? r - 1 : 0, 0, a), t.merge({
+          children: u(n)
         })
-      }), c(s, e, function(e) {
-        return e.merge({
-          nextSibling: _,
-          prevSibling: h,
-          parent: p
+      }), c(a, t, function(t) {
+        return t.merge({
+          nextSibling: d,
+          prevSibling: g,
+          parent: h
         })
       })
     })
   };
-module.exports = function(e, t, n, a) {
-  "replace" === a && s(false);
-  var l = n.getKey(),
-    c = t.getKey();
-  c === l && s(false);
-  var d = e.getBlockMap(),
-    f = t instanceof r,
-    p = [t],
-    _ = d.delete(c);
-  f && (p = [], _ = d.withMutations(function(e) {
-    var n = t.getNextSiblingKey(),
-      r = i(t, e);
-    e.toSeq().skipUntil(function(e) {
-      return e.getKey() === c
-    }).takeWhile(function(e) {
-      var t = e.getKey(),
-        i = t === c,
-        a = n && t !== n,
-        s = !n && e.getParentKey() && (!r || t !== r);
-      return !!(i || a || s)
-    }).forEach(function(t) {
-      p.push(t), e.delete(t.getKey())
+module.exports = function(t, e, r, o) {
+  "replace" === o && a(false);
+  var u = r.getKey(),
+    c = e.getKey();
+  c === u && a(false);
+  var f = t.getBlockMap(),
+    p = e instanceof n,
+    h = [e],
+    d = f.delete(c);
+  p && (h = [], d = f.withMutations(function(t) {
+    var r = e.getNextSiblingKey(),
+      n = i(e, t);
+    t.toSeq().skipUntil(function(t) {
+      return t.getKey() === c
+    }).takeWhile(function(t) {
+      var e = t.getKey(),
+        i = e === c,
+        o = !r && t.getParentKey() && (!n || e !== n);
+      return !!(i || r && e !== r || o)
+    }).forEach(function(e) {
+      h.push(e), t.delete(e.getKey())
     })
   }));
-  var h = _.toSeq().takeUntil(function(e) {
-      return e === n
+  var g = d.toSeq().takeUntil(function(t) {
+      return t === r
     }),
-    m = _.toSeq().skipUntil(function(e) {
-      return e === n
+    y = d.toSeq().skipUntil(function(t) {
+      return t === r
     }).skip(1),
-    g = p.map(function(e) {
-      return [e.getKey(), e]
+    v = h.map(function(t) {
+      return [t.getKey(), t]
     }),
-    E = o();
-  if ("before" === a) {
-    var y = e.getBlockBefore(l);
-    y && y.getKey() === t.getKey() && s(false), E = h.concat([].concat(g, [
-      [l, n]
-    ]), m).toOrderedMap()
-  } else if ("after" === a) {
-    var b = e.getBlockAfter(l);
-    b && b.getKey() === c && s(false), E = h.concat([
-      [l, n]
-    ].concat(g), m).toOrderedMap()
+    m = s();
+  if ("before" === o) {
+    var _ = t.getBlockBefore(u);
+    _ && _.getKey() === e.getKey() && a(false), m = g.concat([].concat(v, [
+      [u, r]
+    ]), y).toOrderedMap()
+  } else if ("after" === o) {
+    var b = t.getBlockAfter(u);
+    b && b.getKey() === c && a(false), m = g.concat([
+      [u, r]
+    ].concat(v), y).toOrderedMap()
   }
-  return e.merge({
-    blockMap: u(E, t, n, a, f),
-    selectionBefore: e.getSelectionAfter(),
-    selectionAfter: e.getSelectionAfter().merge({
+  return t.merge({
+    blockMap: l(m, e, r, o, p),
+    selectionBefore: t.getSelectionAfter(),
+    selectionAfter: t.getSelectionAfter().merge({
       anchorKey: c,
       focusKey: c
     })

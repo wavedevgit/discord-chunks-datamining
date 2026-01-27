@@ -74,16 +74,16 @@ let I = e => {
     w = (0, c.RQ)(e => e.searchQuery),
     {
       analyticsLocations: R
-    } = (0, l.Ay)(o.A.EMOJI_PICKER);
+    } = (0, l.Ay)(s.A.EMOJI_PICKER);
   t = I === g.b_.REACTION ? E.e.EMOJI_PICKER_REACTION_EMOJI_CLICKED : null == v ? E.e.EMOJI_PICKER_FLOATING_UPSELL : v.subCategory === h.tm.TOP_GUILD_EMOJI ? E.e.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : v.subCategory === h.tm.NEWLY_ADDED_EMOJI ? E.e.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : E.e.EMOJI_PICKER_EMOJI_CLICKED;
   let P = null != v ? v.emoji : true,
     D = null != P && P.animated,
-    x = null != P && !p.Ay.isInternalEmojiForGuildId(P, null == b ? true : b.getGuildId()),
-    L = null != P ? m.ZSU.EMOJI : m.ZSU.EMOJI_PICKER_FLOATING_UPSELL,
-    j = (0, a.bG)([u.A], () => u.A.hasFetched);
+    L = null != P && !p.Ay.isInternalEmojiForGuildId(P, null == b ? true : b.getGuildId()),
+    x = null != P ? m.ZSU.EMOJI : m.ZSU.EMOJI_PICKER_FLOATING_UPSELL,
+    M = (0, a.bG)([u.A], () => u.A.hasFetched);
   return i.useEffect(() => {
-    j || s.xG()
-  }, [j]), (0, r.jsx)(d.A, {
+    M || o.xG()
+  }, [M]), (0, r.jsx)(d.A, {
     containerContext: T,
     image: {
       url: N,
@@ -97,9 +97,9 @@ let I = e => {
     onClose: n,
     upsellViewedTrackingData: {
       type: t,
-      is_external: x,
+      is_external: L,
       location: A(O({}, S), {
-        object: L
+        object: x
       }),
       location_stack: R,
       sku_id: (0, _.mH)(_.Ay.getSkuIdForPremiumType(E.PremiumTypes.TIER_2)),

@@ -1,58 +1,44 @@
-/** Chunk was on web.js **/
-/** chunk id: 437959, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 437959, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => f
 });
-var r, Chunk311907 = require("./311907.js"),
+var r, i, Chunk311907 = require("./311907.js"),
   Chunk506774 = require("./506774.js"),
   Chunk73153 = require("./73153.js"),
   Chunk785796 = require("./785796.js");
-
-function l(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
 let c = "MaintenanceStore",
   u = null,
   d = null,
-  f = null;
-
-function p() {
-  u = null, o.A.checkScheduledMaintenances()
-}
-
-function _(e) {
-  u = e.incident
-}
-
-function h(e) {
-  d = e.maintenance
-}
-
-function m() {
-  if (null == d) returnfalse;
-  f = d.id, a.w.set(c, f)
-}
-class g extends(r = Chunk311907.Ay.Store) {
+  p = null;
+class m extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    f = a.w.get(c)
+    p = a.w.get(c)
   }
   getIncident() {
     return u
   }
   getScheduledMaintenance() {
-    return null != d && d.id !== f ? d : null
+    return null != d && d.id !== p ? d : null
   }
-}
-l(g, "displayName", "MaintenanceStore");
-let E = new g(Chunk73153.h, {
-  CONNECTION_OPEN: p,
-  STATUS_PAGE_INCIDENT: _,
-  STATUS_PAGE_SCHEDULED_MAINTENANCE: h,
-  STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: m
+}(r = "displayName") in m ? Object.defineProperty(m, r, {
+  value: "MaintenanceStore",
+  enumerable: true,
+  configurable: true,
+  writable: true
+}) : m[r] = "MaintenanceStore";
+let f = new m(Chunk73153.h, {
+  CONNECTION_OPEN: function() {
+    u = null, o.A.checkScheduledMaintenances()
+  },
+  STATUS_PAGE_INCIDENT: function(e) {
+    u = e.incident
+  },
+  STATUS_PAGE_SCHEDULED_MAINTENANCE: function(e) {
+    d = e.maintenance
+  },
+  STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: function() {
+    if (null == d) returnfalse;
+    p = d.id, a.w.set(c, p)
+  }
 })

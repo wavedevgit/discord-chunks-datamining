@@ -73,11 +73,11 @@ function _(e) {
   let {
     className: t,
     onClick: n
-  } = e, i = f(e, ["className", "onClick"]), l = (0, r.jsx)(s.DUT, d(c({}, i), {
-    className: a()(null != n && o.v, t),
+  } = e, i = f(e, ["className", "onClick"]), l = (0, r.jsx)(o.DUT, d(c({}, i), {
+    className: a()(null != n && s.v, t),
     onClick: n
   }));
-  return null == n ? (0, r.jsx)(s.RDc, {
+  return null == n ? (0, r.jsx)(o.RDc, {
     children: l
   }) : l
 }

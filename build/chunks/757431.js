@@ -11,9 +11,9 @@ var r = require("./439619.js")("%Symbol.species%", true),
   Chunk227106 = require("./227106.js");
 module.exports = function(e, t) {
   if (!a(t) || t < 0) throw new i("Assertion failed: length must be an integer >= 0");
-  if (!l(e)) return s(t);
-  var n = o(e, "constructor");
-  if (r && u(n) && null === (n = o(n, r)) && (n = true), true === n) return s(t);
+  if (!l(e)) return o(t);
+  var n = s(e, "constructor");
+  if (r && u(n) && null === (n = s(n, r)) && (n = true), true === n) return o(t);
   if (!c(n)) throw new i("C must be a constructor");
   return new n(t)
 }

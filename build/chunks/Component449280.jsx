@@ -23,7 +23,7 @@ function u(e) {
     className: a()(l.Nr, t),
     children: [(0, r.jsx)(n, {
       className: l.Kk
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       className: l.__invalid_description,
       variant: "text-sm/medium",
       children: i
@@ -38,17 +38,17 @@ let d = function(e) {
     className: l.iE,
     children: [(0, r.jsxs)("div", {
       className: l.Qs,
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         className: l.R_,
         color: "always-white",
         variant: "heading-xxl/bold",
-        children: o.intl.string(o.t.IzKs3o)
+        children: s.intl.string(s.t.IzKs3o)
       }), (0, r.jsxs)("ul", {
         className: l.kR,
         children: [(0, r.jsx)(u, {
           className: t,
-          icon: s.vRF,
-          children: o.intl.string(o.t.TZigSO)
+          icon: o.vRF,
+          children: s.intl.string(s.t.TZigSO)
         }), (0, r.jsx)(u, {
           className: t,
           icon: e => (0, r.jsx)("img", {
@@ -56,15 +56,15 @@ let d = function(e) {
             src: c,
             alt: ""
           }),
-          children: o.intl.string(o.t.hjQuV2)
+          children: s.intl.string(s.t.hjQuV2)
         }), (0, r.jsx)(u, {
           className: t,
-          icon: s.iTF,
-          children: o.intl.string(o.t["2RUcaM"])
+          icon: o.iTF,
+          children: s.intl.string(s.t["2RUcaM"])
         }), (0, r.jsx)(u, {
           className: t,
-          icon: s.C3E,
-          children: o.intl.string(o.t.bJoZKV)
+          icon: o.C3E,
+          children: s.intl.string(s.t.bJoZKV)
         })]
       })]
     }), (0, r.jsx)("div", {

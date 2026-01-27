@@ -23,7 +23,7 @@ function d(e) {
     imageSize: m,
     onLoadComplete: g,
     assetRef: E
-  } = e, y = (0, a.bG)([s.A], () => s.A.useReducedMotion), b = null == _ || _.asset.isAnimated ? null : _.asset.url, O = null != h && h.asset.isAnimated ? h.asset.url : null, v = null == m ? true : m.width, A = null == m ? true : m.height, I = i.useMemo(() => {
+  } = e, y = (0, a.bG)([o.A], () => o.A.useReducedMotion), b = null == _ || _.asset.isAnimated ? null : _.asset.url, O = null != h && h.asset.isAnimated ? h.asset.url : null, v = null == m ? true : m.width, A = null == m ? true : m.height, I = i.useMemo(() => {
     let e = null != v && null != A ? (0, l.Yt)(v, A) : null;
     return null != b ? (0, l.UX)(b, {
       format: "webp",
@@ -40,7 +40,7 @@ function d(e) {
       src: I,
       onLoad: g,
       ref: S ? true : E
-    }), S && f && (0, r.jsx)(o.A, {
+    }), S && f && (0, r.jsx)(s.A, {
       autoPlay: true,
       loop: true,
       muted: true,

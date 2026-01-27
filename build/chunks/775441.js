@@ -10,8 +10,8 @@ module.exports = function(e) {
   if (!(e && e.length)) return [];
   var t = 0;
   return e = r(e, function(e) {
-    if (o(e)) return t = l(e.length, t), true
-  }), s(t, function(t) {
+    if (s(e)) return t = l(e.length, t), true
+  }), o(t, function(t) {
     return i(e, a(t))
   })
 }

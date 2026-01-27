@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 550732, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 70104 **/
+/** chunk id: 550732, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  C: () => y
+  C: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,88 +21,88 @@ var Chunk991660 = require("./991660.jsx"),
   Chunk356426 = require("./356426.js"),
   Chunk22789 = require("./22789.js");
 
-function y(e) {
+function g(t) {
   let {
-    appId: t,
-    skuId: n,
-    transitionState: y,
-    onClose: b,
-    children: O,
-    footer: v
-  } = e, A = (0, s.bG)([l.A, c.A], () => {
-    var e;
-    return null != (e = l.A.getApplication(t)) ? e : c.A.getApplicationRecord(t)
-  }, [t]), {
-    data: I
-  } = (0, u.d)(n);
-  if (null == A) return null;
-  let S = (0, f.A)(A, 25),
+    appId: e,
+    skuId: r,
+    transitionState: g,
+    onClose: h,
+    children: y,
+    footer: E
+  } = t, b = (0, i.bG)([o.A, c.A], () => {
+    var t;
+    return null != (t = o.A.getApplication(e)) ? t : c.A.getApplicationRecord(e)
+  }, [e]), {
+    data: A
+  } = (0, d.d)(r);
+  if (null == b) return null;
+  let I = (0, x.A)(b, 25),
     {
-      termsOfServiceUrl: T,
-      privacyPolicyUrl: C
-    } = A;
-  if ((null == I ? true : I.applicationId) !== t) return (0, r.jsx)(a.Modal, {
+      termsOfServiceUrl: O,
+      privacyPolicyUrl: S
+    } = b;
+  if ((null == A ? true : A.applicationId) !== e) return (0, n.jsx)(s.Modal, {
     actions: [{
-      onClick: b,
-      text: m.intl.string(m.t.BddRzS),
+      onClick: h,
+      text: _.intl.string(_.t.BddRzS),
       variant: "primary"
     }],
-    onClose: b,
+    onClose: h,
     size: "sm",
-    transitionState: y,
-    title: m.intl.string(m.t["0Bf80I"]),
-    children: (0, r.jsx)(o.Text, {
+    transitionState: g,
+    title: _.intl.string(_.t["0Bf80I"]),
+    children: (0, n.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      className: g.$r,
-      children: m.intl.string(m.t.omH3bq)
+      className: j.$r,
+      children: _.intl.string(_.t.omH3bq)
     })
   });
-  let N = null != S ? (0, r.jsx)("img", {
-    src: S.href,
+  let T = null != I ? (0, n.jsx)("img", {
+    src: I.href,
     alt: "",
-    className: g.Z2
+    className: j.Z2
   }) : true;
-  return (0, r.jsxs)(a.dWK, {
-    onClose: b,
+  return (0, n.jsxs)(s.dWK, {
+    onClose: h,
     size: "lg",
-    transitionState: y,
-    children: [(0, r.jsx)(a.rQ0, {
-      leading: N,
-      title: A.name
-    }), (0, r.jsx)(i.A, {
-      children: (0, r.jsx)("main", {
-        className: E.bodyInner,
-        children: O
+    transitionState: g,
+    children: [(0, n.jsx)(s.rQ0, {
+      leading: T,
+      title: b.name
+    }), (0, n.jsx)(l.A, {
+      children: (0, n.jsx)("main", {
+        className: f.bodyInner,
+        children: y
       })
-    }), (0, r.jsx)(a.jlY, {
-      children: (0, r.jsxs)("div", {
-        className: g.qr,
-        children: [null != T || null != C ? (0, r.jsx)(o.Text, {
+    }), (0, n.jsx)(s.jlY, {
+      children: (0, n.jsxs)("div", {
+        className: j.qr,
+        children: [null != O || null != S ? (0, n.jsx)(a.Text, {
           color: "text-strong",
           variant: "text-sm/normal",
-          children: (0, r.jsx)(_.A, {
-            termsOfServiceUrl: T,
-            privacyPolicyUrl: C
+          children: (0, n.jsx)(m.A, {
+            termsOfServiceUrl: O,
+            privacyPolicyUrl: S
           })
-        }) : (0, r.jsx)(o.Text, {
+        }) : (0, n.jsx)(a.Text, {
           color: "text-strong",
           variant: "text-xs/normal",
-          children: m.intl.string(m.t["3ZY+0D"])
-        }), (0, r.jsxs)("div", {
-          className: g.Hq,
-          children: [d.p5 && (0, r.jsx)(o.K0, {
-            "aria-label": m.intl.string(m.t.WqhZss),
-            icon: () => (0, r.jsx)(o.qYV, {
+          children: _.intl.string(_.t["3ZY+0D"])
+        }), (0, n.jsxs)("div", {
+          className: j.Hq,
+          children: [u.p5 && (0, n.jsx)(a.K0, {
+            "aria-label": _.intl.string(_.t.WqhZss),
+            icon: () => (0, n.jsx)(a.qYV, {
               size: "xs",
               color: "currentColor"
             }),
             onClick: () => {
-              let e = "".concat(location.protocol, "//").concat(location.host).concat(h.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t, n));
-              (0, d.C)(e, () => (0, o.showToast)((0, o.createToast)(m.intl.string(m.t["L/PwZf"]), o.ToastType.SUCCESS))), (0, p.K)(t, p.C.DETAILS_MODAL, n)
+              let t = "".concat(location.protocol, "//").concat(location.host).concat(v.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(e, r));
+              (0, u.C)(t, () => (0, a.showToast)((0, a.createToast)(_.intl.string(_.t["L/PwZf"]), a.ToastType.SUCCESS))), (0, p.K)(e, p.C.DETAILS_MODAL, r)
             },
             variant: "icon-only"
-          }), v]
+          }), E]
         })]
       })
     })]

@@ -11,9 +11,9 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  BK: () => o,
+  BK: () => s,
   Ep: () => i,
-  IX: () => s,
+  IX: () => o,
   J_: () => a
 });
 class i {
@@ -51,7 +51,7 @@ class a {
     r(this, "_timeout", true), r(this, "_delay", true), r(this, "_handler", true), this._delay = e, this._handler = t, this._timeout = new i
   }
 }
-class s {
+class o {
   start(e, t) {
     this.stop(), this._ref = window.setInterval(t, e)
   }
@@ -66,7 +66,7 @@ class s {
   }
 }
 
-function o(e) {
+function s(e) {
   return new Promise(t => {
     setTimeout(() => t(), e)
   })

@@ -8,12 +8,12 @@ var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk734057 = require("./734057.js"),
   Chunk543465 = require("./543465.js");
-let o = null;
+let s = null;
 
 function l(e) {
   let t = (0, i.bG)([a.A], () => a.A.getPrivateChannelsVersion()),
     n = (0, i.bG)([a.A], () => a.A.getMutableDMsByUserIds(), [t]),
-    l = (0, i.bG)([s.Ay], () => s.Ay.getMutedChannels(o)),
+    l = (0, i.bG)([o.Ay], () => o.Ay.getMutedChannels(s)),
     c = r.useMemo(() => {
       let e = new Set;
       for (let t in n) {

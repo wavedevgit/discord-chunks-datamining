@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk253018 = require("./253018.js"),
   Chunk442433 = require("./442433.js"),
   Chunk267102 = require("./267102.jsx"),
@@ -106,15 +106,15 @@ class N extends Chunk64700.PureComponent {
       channelId: i,
       renderExtraElement: a
     } = this.props, {
-      attributes: s,
-      children: o
+      attributes: o,
+      children: s
     } = e;
-    "rtl" === s.dir && (s.style = S(A({}, s.style), {
+    "rtl" === o.dir && (o.style = S(A({}, o.style), {
       textAlign: "right"
     }));
     let l = null != (t = null == a ? true : a(e)) ? t : (0, g.A)(e, n, i);
-    return null != l ? l : (0, r.jsx)("div", S(A({}, s), {
-      children: o
+    return null != l ? l : (0, r.jsx)("div", S(A({}, o), {
+      children: s
     }))
   }
   renderLeaf(e) {
@@ -124,10 +124,10 @@ class N extends Chunk64700.PureComponent {
       renderExtraLeaf: i
     } = this.props, {
       attributes: a,
-      children: s
-    } = e, o = null != (t = null == i ? true : i(e)) ? t : (0, E.A)(n, e);
-    return null != o ? o : (0, r.jsx)("span", S(A({}, a), {
-      children: s
+      children: o
+    } = e, s = null != (t = null == i ? true : i(e)) ? t : (0, E.A)(n, e);
+    return null != s ? s : (0, r.jsx)("span", S(A({}, a), {
+      children: o
     }))
   }
   handleOnChange() {
@@ -138,7 +138,7 @@ class N extends Chunk64700.PureComponent {
     if (r !== this.state.showPlaceholder && this.setState({
         showPlaceholder: r
       }), null == (e = (t = this.props).onChange) || e.call(t, m.VW.richValue(n)), false === this.props.canFocus) {
-      let e = o.rL.findDocumentOrShadowRoot(n).getSelection();
+      let e = s.rL.findDocumentOrShadowRoot(n).getSelection();
       null != e && this.isSelectionPartiallyInside(e) && (null == e || e.removeAllRanges())
     }
   }
@@ -162,7 +162,7 @@ class N extends Chunk64700.PureComponent {
     var t;
     let {
       editor: n
-    } = this.props, r = o.rL.findDocumentOrShadowRoot(n).getSelection(), i = null != r && r.rangeCount > 0 ? r.getRangeAt(0) : null, a = null != (t = e.getTargetRanges()[0]) ? t : null;
+    } = this.props, r = s.rL.findDocumentOrShadowRoot(n).getSelection(), i = null != r && r.rangeCount > 0 ? r.getRangeAt(0) : null, a = null != (t = e.getTargetRanges()[0]) ? t : null;
     if (null == n.composition) {
       if (("insertText" === e.inputType || "insertReplacementText" === e.inputType) && (null == a && (a = i), null != a)) {
         let t = m.VW.toSlateRange(n, a, {
@@ -210,13 +210,13 @@ class N extends Chunk64700.PureComponent {
       }), r.insertedPrefix = true, n.composition = r;
       return
     }
-    let a = o.rL.findDocumentOrShadowRoot(this.props.editor).getSelection(),
-      s = (null != (e = null == a ? true : a.rangeCount) ? e : 0) > 0 ? null == a ? true : a.getRangeAt(0) : null;
-    if (null == (null != s ? m.VW.toSlateRange(n, s, {
+    let a = s.rL.findDocumentOrShadowRoot(this.props.editor).getSelection(),
+      o = (null != (e = null == a ? true : a.rangeCount) ? e : 0) > 0 ? null == a ? true : a.getRangeAt(0) : null;
+    if (null == (null != o ? m.VW.toSlateRange(n, o, {
         exactMatch: true,
         suppressThrow: true
-      }) : null) && null != s) {
-      let e = m.VW.toSlateRange(n, s, {
+      }) : null) && null != o) {
+      let e = m.VW.toSlateRange(n, o, {
         exactMatch: false,
         suppressThrow: true
       });
@@ -256,9 +256,9 @@ class N extends Chunk64700.PureComponent {
     let {
       editor: t,
       onBlur: n
-    } = this.props, r = e.relatedTarget, i = o.rL.findDocumentOrShadowRoot(this.props.editor), a = i.getElementById("textarea-context"), s = i.getElementById("slate-toolbar");
-    if (null != r && !(0, _.hasDomParent)(r, a) && !(0, _.hasDomParent)(r, s)) {
-      let e = o.rL.findDocumentOrShadowRoot(t).getSelection();
+    } = this.props, r = e.relatedTarget, i = s.rL.findDocumentOrShadowRoot(this.props.editor), a = i.getElementById("textarea-context"), o = i.getElementById("slate-toolbar");
+    if (null != r && !(0, _.hasDomParent)(r, a) && !(0, _.hasDomParent)(r, o)) {
+      let e = s.rL.findDocumentOrShadowRoot(t).getSelection();
       null != e && this.isSelectionEscaping(e) && e.removeAllRanges()
     }
     null == n || n(e)
@@ -270,9 +270,9 @@ class N extends Chunk64700.PureComponent {
         let r = e.getRangeAt(n),
           i = r.startContainer,
           a = r.endContainer,
-          s = r.startOffset,
-          o = r.endOffset;
-        if ((0, _.hasDomParent)(i, t) || !(0, _.isDOMRangeCollapsed)(i, s, a, o) && (0, _.hasDomParent)(a, t)) returntrue
+          o = r.startOffset,
+          s = r.endOffset;
+        if ((0, _.hasDomParent)(i, t) || !(0, _.isDOMRangeCollapsed)(i, o, a, s) && (0, _.hasDomParent)(a, t)) returntrue
       }
     returnfalse
   }
@@ -283,19 +283,19 @@ class N extends Chunk64700.PureComponent {
     if (null != e && null != t)
       for (let i = e.rangeCount - 1; i >= 0; i--) {
         let a = e.getRangeAt(i),
-          s = a.startContainer,
-          o = a.endContainer,
+          o = a.startContainer,
+          s = a.endContainer,
           l = a.startOffset,
           c = a.endOffset;
-        if ((0, _.hasDomParent)(s, t)) {
+        if ((0, _.hasDomParent)(o, t)) {
           if (r) returntrue;
           n = true
         } else {
           if (n) returntrue;
           r = true
         }
-        if (!(0, _.isDOMRangeCollapsed)(s, l, o, c))
-          if ((0, _.hasDomParent)(s, t)) {
+        if (!(0, _.isDOMRangeCollapsed)(o, l, s, c))
+          if ((0, _.hasDomParent)(o, t)) {
             if (r) returntrue;
             n = true
           } else {
@@ -308,7 +308,7 @@ class N extends Chunk64700.PureComponent {
   handleContextMenu(e) {
     let {
       editor: t
-    } = this.props, i = e.pageY, a = window.innerHeight, s = null != i && null != a && i < a / 2 ? "top" : "bottom";
+    } = this.props, i = e.pageY, a = window.innerHeight, o = null != i && null != a && i < a / 2 ? "top" : "bottom";
     if (u.isPlatformEmbedded) {
       let i = (0, c.zd)();
       (0, l.L3)(e, async () => {
@@ -320,7 +320,7 @@ class N extends Chunk64700.PureComponent {
           text: m.VW.getSelectedText(t, true)
         }))
       }, {
-        align: s,
+        align: o,
         enableSpellCheck: i === y.BRT.APP
       })
     } else blur()
@@ -358,14 +358,14 @@ class N extends Chunk64700.PureComponent {
       ref: this.containerRef,
       className: i,
       children: [this.state.showPlaceholder ? (0, r.jsx)("div", {
-        className: s()(b.q, n),
+        className: o()(b.q, n),
         "aria-hidden": true,
         children: c
-      }) : null, (0, r.jsx)(o.A, {
+      }) : null, (0, r.jsx)(s.A, {
         editor: t,
         value: [...this.state.initialValue],
-        children: (0, r.jsx)(o.Fo, S(A({}, v), {
-          className: s()(O.PT, b.E, n),
+        children: (0, r.jsx)(s.Fo, S(A({}, v), {
+          className: o()(O.PT, b.E, n),
           decorate: u,
           renderElement: this.renderElement,
           renderLeaf: this.renderLeaf,

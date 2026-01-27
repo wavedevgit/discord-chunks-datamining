@@ -69,25 +69,25 @@ function D(e) {
   (0, l.xM)(), E.set(t.id, t), p.add(t.user_id)
 }
 
-function x(e) {
+function L(e) {
   let {
     userTrialOffers: t
   } = e;
   for (let e of ((0, l.xM)(), t)) E.set(e.id, e), p.add(e.user_id)
 }
 
-function L(e) {
+function x(e) {
   m.add(e)
 }
 
-function j(e) {
+function M(e) {
   let {
     userTrialOffer: t
   } = e;
   null != t && (m.delete(t.id), g.add(t.id), E.set(t.id, t))
 }
 
-function M(e) {
+function j(e) {
   let {
     userTrialOfferId: t
   } = e;
@@ -98,30 +98,30 @@ function k(e) {
   let {
     message: t
   } = e;
-  V(t)
+  F(t)
 }
 
 function U(e) {
   let {
     messages: t
   } = e;
-  t.forEach(e => V(e))
+  t.forEach(e => F(e))
 }
 
 function G(e) {
   let {
     userTrialOfferId: t
   } = e;
-  h || (0, l.xM)(), m.has(t) || (L(t), s.h.wait(() => (0, l.kZ)(t).catch(c.FXj)))
+  h || (0, l.xM)(), m.has(t) || (x(t), o.h.wait(() => (0, l.kZ)(t).catch(c.FXj)))
 }
 
-function V(e) {
+function F(e) {
   let t = e.type === i.l.PREMIUM_REFERRAL ? e.content : null;
   if (null == t) returnfalse;
-  g.has(t) || m.has(t) || (L(t), s.h.wait(() => (0, l.kZ)(t).catch(c.FXj)))
+  g.has(t) || m.has(t) || (x(t), o.h.wait(() => (0, l.kZ)(t).catch(c.FXj)))
 }
 
-function F() {
+function V() {
   v = true
 }
 
@@ -138,7 +138,7 @@ function H() {
 }
 class Y extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.default), this.syncWith([o.default], N)
+    this.waitFor(s.default), this.syncWith([s.default], N)
   }
   checkAndFetchReferralsRemaining() {
     null == f && !h && y < d && (null == b || b < Date.now()) && (0, l.xM)()
@@ -190,10 +190,10 @@ let W = new Y(Chunk73153.h, {
   BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: R,
   BILLING_REFERRALS_REMAINING_FETCH_FAIL: P,
   BILLING_CREATE_REFERRAL_SUCCESS: D,
-  CREATE_REFERRALS_SUCCESS: x,
-  BILLING_REFERRAL_RESOLVE_SUCCESS: j,
-  BILLING_REFERRAL_RESOLVE_FAIL: M,
-  REFERRALS_FETCH_ELIGIBLE_USER_START: F,
+  CREATE_REFERRALS_SUCCESS: L,
+  BILLING_REFERRAL_RESOLVE_SUCCESS: M,
+  BILLING_REFERRAL_RESOLVE_FAIL: j,
+  REFERRALS_FETCH_ELIGIBLE_USER_START: V,
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: B,
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: H,
   LOAD_MESSAGES_SUCCESS: U,

@@ -35,21 +35,21 @@ function a(e, t) {
   return n
 }
 
-function s(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 require.d(exports, {
-  i: () => o
+  i: () => s
 }), require("./896048.js");
-let o = (0, require("./353640.js").v)((e, t) => ({
+let s = (0, require("./353640.js").v)((e, t) => ({
   responses: {},
   displayedQuestions: {},
   setResponse: (t, n, r) => {
     e(e => ({
-      responses: s(i({}, e.responses), {
-        [t]: s(i({}, e.responses[t]), {
+      responses: o(i({}, e.responses), {
+        [t]: o(i({}, e.responses[t]), {
           [n]: r
         })
       })
@@ -75,7 +75,7 @@ let o = (0, require("./353640.js").v)((e, t) => ({
       var r;
       let a = new Set(null != (r = e.displayedQuestions[t]) ? r : new Set);
       return n.forEach(e => a.add(e)), {
-        displayedQuestions: s(i({}, e.displayedQuestions), {
+        displayedQuestions: o(i({}, e.displayedQuestions), {
           [t]: a
         })
       }

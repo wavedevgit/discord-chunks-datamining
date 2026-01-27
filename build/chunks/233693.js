@@ -20,7 +20,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,7 +45,7 @@ function o(e, t) {
 }
 
 function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -93,7 +93,7 @@ class h {
     return this._paginationState
   }
   updatePaginationToken(e) {
-    return e !== this._paginationState.continuationToken && (this._paginationState = l(s({}, this._paginationState), {
+    return e !== this._paginationState.continuationToken && (this._paginationState = l(o({}, this._paginationState), {
       continuationToken: e
     }), true)
   }
@@ -110,7 +110,7 @@ class h {
       var n;
       t = true, e.currentPage = this._calculateNewPageFromPageSizeChange(null != (n = e.pageSize) ? n : this._paginationState.pageSize, e.currentPage)
     }
-    return this._paginationState = s({}, this._paginationState, e), t && this._rebuildPaginationChunksFromStoredMembers(), [true, t]
+    return this._paginationState = o({}, this._paginationState, e), t && this._rebuildPaginationChunksFromStoredMembers(), [true, t]
   }
   updateSortedMembers(e) {
     let [t, n] = this._initPaginationFromRawMembers(e);

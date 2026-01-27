@@ -2,7 +2,7 @@
 /** chunk id: 184989, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./896048.js");
 var Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
@@ -15,7 +15,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends Chunk311907.Ay.Store {
+class o extends Chunk311907.Ay.Store {
   allGuildIds() {
     return this.guildIds
   }
@@ -47,4 +47,4 @@ class s extends Chunk311907.Ay.Store {
     }, i.A.Early), a(this, "guildIds", new Set)
   }
 }
-let o = new s
+let s = new o

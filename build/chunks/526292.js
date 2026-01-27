@@ -32,13 +32,13 @@ function h() {
 }
 let m = () => {
     var e;
-    let t = (0, s.bG)([l.A], () => l.A.getPremiumTypeSubscription()),
+    let t = (0, o.bG)([l.A], () => l.A.getPremiumTypeSubscription()),
       n = null == t || null == (e = t.metadata) ? true : e.active_discount_expires_at;
     return null != n && a()(Date.now()) <= a()(n)
   },
   g = () => {
     var e;
-    let t = (0, s.bG)([l.A], () => l.A.getPremiumTypeSubscription()),
+    let t = (0, o.bG)([l.A], () => l.A.getPremiumTypeSubscription()),
       n = null == t || null == (e = t.metadata) ? true : e.active_discount_id;
     switch (n) {
       case _.q:
@@ -69,25 +69,25 @@ let m = () => {
     }
   },
   E = e => {
-    let [t, n] = r.useState(false), [i, a] = r.useState(false), [s, o] = r.useState(null);
+    let [t, n] = r.useState(false), [i, a] = r.useState(false), [o, s] = r.useState(null);
     if (e) return {
-      churnUserDiscountOffer: s,
+      churnUserDiscountOffer: o,
       isFetchingChurnDiscountOffer: i
     };
     let l = () => {
       n(true), a(false)
     };
     return i || t || (a(true), (0, d.qz)().then(e => {
-      o(e), l()
+      s(e), l()
     }).catch(e => {
       l()
     })), {
-      churnUserDiscountOffer: s,
+      churnUserDiscountOffer: o,
       isFetchingChurnDiscountOffer: i
     }
   },
   y = () => {
-    let e = (0, s.bG)([l.A], () => l.A.getPremiumTypeSubscription()),
+    let e = (0, o.bG)([l.A], () => l.A.getPremiumTypeSubscription()),
       t = m(),
       n = null !== e && e.hasPremiumNitroMonthly,
       r = !!(null == e ? true : e.hasActiveTrial);
@@ -95,7 +95,7 @@ let m = () => {
   },
   b = e => {
     for (let t of e.invoiceItems) {
-      let e = t.discounts.find(e => e.type === o.iS.SUBSCRIPTION_PLAN);
+      let e = t.discounts.find(e => e.type === s.iS.SUBSCRIPTION_PLAN);
       if (null != e) switch (e.discount_id) {
         case _.q:
           return {

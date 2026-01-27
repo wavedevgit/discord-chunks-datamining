@@ -15,13 +15,13 @@ function a(e, t, n) {
   return t.includes(n) ? r = t.filter(e => e.id !== n.id) : "multiple" === e ? r.push(n) : r = [n], r
 }
 
-function s() {
+function o() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "listbox",
     t = arguments.length > 1 ? arguments[1] : true;
   return "".concat(e, "-option-").concat(t)
 }
 require.d(exports, {
-  ZN: () => s,
+  ZN: () => o,
   fI: () => i,
   qH: () => a
 }), require("./457529.js"), require("./896048.js"), require("./321073.js")

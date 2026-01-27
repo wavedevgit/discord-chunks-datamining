@@ -14,9 +14,9 @@ var Chunk64700 = require("./64700.js"),
 function c() {
   let e = (0, l.zZ)("useFetchSoundboardData");
   return {
-    fetching: (0, i.bG)([o.A], () => o.A.isFetchingAnySounds()),
+    fetching: (0, i.bG)([s.A], () => s.A.isFetchingAnySounds()),
     maybeFetchData: r.useCallback(() => {
-      s.E7(), a.bW.loadIfNecessary()
+      o.E7(), a.bW.loadIfNecessary()
     }, [e.sortingStrategy])
   }
 }

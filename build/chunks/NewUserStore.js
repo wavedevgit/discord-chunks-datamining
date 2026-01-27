@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,33 +15,33 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = null;
+let s = null;
 
 function l() {
-  o = null, d.persist()
+  s = null, d.persist()
 }
 
 function c(e) {
   let {
     newUserType: t
   } = e;
-  o = t, d.persist()
+  s = t, d.persist()
 }
 class u extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
-    o = null != (t = null == e ? true : e.type) ? t : null
+    s = null != (t = null == e ? true : e.type) ? t : null
   }
   getType() {
-    return o
+    return s
   }
   getState() {
     return {
-      type: o
+      type: s
     }
   }
 }
-s(u, "displayName", "NewUserStore"), s(u, "persistKey", "nuf");
+o(u, "displayName", "NewUserStore"), o(u, "persistKey", "nuf");
 let d = new u(Chunk73153.h, {
     NUF_NEW_USER: c,
     NUF_COMPLETE: l

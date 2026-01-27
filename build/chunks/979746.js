@@ -2,7 +2,7 @@
 /** chunk id: 979746, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk385987 = require("./385987.js"),
   i = {
@@ -17,13 +17,13 @@ var Chunk385987 = require("./385987.js"),
     medium: "h:mm:ss a",
     short: "h:mm a"
   },
-  s = {
+  o = {
     full: "{{date}} 'at' {{time}}",
     long: "{{date}} 'at' {{time}}",
     medium: "{{date}}, {{time}}",
     short: "{{date}}, {{time}}"
   };
-let o = {
+let s = {
   date: (0, Chunk385987.A)({
     formats: i,
     defaultWidth: "full"
@@ -33,7 +33,7 @@ let o = {
     defaultWidth: "full"
   }),
   dateTime: (0, Chunk385987.A)({
-    formats: s,
+    formats: o,
     defaultWidth: "full"
   })
 }

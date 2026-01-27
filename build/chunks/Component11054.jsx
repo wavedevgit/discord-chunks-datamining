@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
-  s = require.n(Chunk284009),
+  o = require.n(Chunk284009),
   Chunk732955 = require("./732955.js"),
   Chunk397927 = require("./397927.js"),
   Chunk688810 = require("./688810.jsx"),
@@ -36,9 +36,9 @@ function b(e) {
     isGift: A,
     giftRecipient: I
   } = (0, u.Pv)();
-  s()(null != O, "Expected selectedSkuId"), s()(null != v, "Expected application");
+  o()(null != O, "Expected selectedSkuId"), o()(null != v, "Expected application");
   let S = b[O];
-  return (s()(null != S, "Expected sku"), i.useEffect(() => {
+  return (o()(null != S, "Expected sku"), i.useEffect(() => {
     A || ((0, m.j)(), n(), (0, h.n)({
       sku: S,
       application: v,
@@ -62,7 +62,7 @@ function b(e) {
           itemName: S.name,
           giftRecipient: null != (t = null == I ? true : I.username) ? t : "your recipient"
         })
-      }), (0, r.jsx)(o.$nd, {
+      }), (0, r.jsx)(s.$nd, {
         onClick: n,
         text: E.intl.string(E.t.cpT0Cq),
         fullWidth: true

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   gN: () => a,
-  kj: () => s,
-  r_: () => o
+  kj: () => o,
+  r_: () => s
 });
 var Chunk311907 = require("./311907.js"),
   Chunk505274 = require("./505274.js");
@@ -13,13 +13,13 @@ function a() {
   return (0, r.bG)([i.A], () => i.A.balance)
 }
 
-function s(e) {
+function o(e) {
   return (0, r.bG)([i.A], () => {
     var t;
     return null != e && (null != (t = i.A.balance) ? t : 0) >= e
   })
 }
 
-function o() {
+function s() {
   return i.A.getCurrentBalance()
 }

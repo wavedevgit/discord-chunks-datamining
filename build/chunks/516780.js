@@ -7,11 +7,11 @@ require.d(exports, {
 });
 var r, Chunk723702 = require("./723702.js");
 let a = false,
-  s = null,
   o = null,
+  s = null,
   l = null,
   c = null;
 
 function u() {
-  return a ? o : (0, i.isAndroid)() ? s : l
+  return a ? s : (0, i.isAndroid)() ? o : l
 }

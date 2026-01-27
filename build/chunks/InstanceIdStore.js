@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,14 +22,14 @@ function c(e) {
   let {
     port: t
   } = e;
-  l = s.xEi - t
+  l = o.xEi - t
 }
 class u extends(r = Chunk311907.Ay.Store) {
   getId() {
     return l
   }
 }
-o(u, "displayName", "InstanceIdStore");
+s(u, "displayName", "InstanceIdStore");
 let d = new u(Chunk73153.h, {
   RPC_SERVER_READY: c
 })

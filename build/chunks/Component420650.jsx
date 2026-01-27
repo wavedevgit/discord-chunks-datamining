@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 420650, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 420650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 }), require("./228524.js");
@@ -13,14 +12,14 @@ function s(e) {
     volume: t,
     description: n,
     label: s,
-    onVolumeChange: o
+    onVolumeChange: a
   } = e;
   return (0, r.jsx)(i.Apm, {
     label: s,
     description: n,
-    initialValue: (0, a.M)(t),
+    initialValue: (0, l.M)(t),
     maxValue: 100,
     onValueRender: e => "".concat(e.toFixed(0), "%"),
-    onValueChange: o
+    onValueChange: a
   })
 }

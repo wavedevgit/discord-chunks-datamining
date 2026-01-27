@@ -32,8 +32,8 @@ let r = function() {
     r = /\uFE0F/g,
     i = String.fromCharCode(8205),
     a = /[&<>'"]/g,
-    s = /^(?:iframe|noframes|noscript|script|select|style|textarea)$/,
-    o = String.fromCharCode;
+    o = /^(?:iframe|noframes|noscript|script|select|style|textarea)$/,
+    s = String.fromCharCode;
   return e;
 
   function l(e, t) {
@@ -49,7 +49,7 @@ let r = function() {
   }
 
   function d(e, t) {
-    for (var n, r, i = e.childNodes, a = i.length; a--;) 3 === (r = (n = i[a]).nodeType) ? t.push(n) : 1 !== r || "ownerSVGElement" in n || s.test(n.nodeName.toLowerCase()) || d(n, t);
+    for (var n, r, i = e.childNodes, a = i.length; a--;) 3 === (r = (n = i[a]).nodeType) ? t.push(n) : 1 !== r || "ownerSVGElement" in n || o.test(n.nodeName.toLowerCase()) || d(n, t);
     return t
   }
 
@@ -58,15 +58,15 @@ let r = function() {
   }
 
   function p(e, t) {
-    for (var r, i, a, s, o, c, u, p, _, h, m, g, E, y = d(e, []), b = y.length; b--;) {
-      for (a = false, s = document.createDocumentFragment(), c = (o = y[b]).nodeValue, p = 0; u = n.exec(c);) {
-        if ((_ = u.index) !== p && s.appendChild(l(c.slice(p, _), true)), g = f(m = u[0]), p = _ + m.length, E = t.callback(g, t), g && E) {
+    for (var r, i, a, o, s, c, u, p, _, h, m, g, E, y = d(e, []), b = y.length; b--;) {
+      for (a = false, o = document.createDocumentFragment(), c = (s = y[b]).nodeValue, p = 0; u = n.exec(c);) {
+        if ((_ = u.index) !== p && o.appendChild(l(c.slice(p, _), true)), g = f(m = u[0]), p = _ + m.length, E = t.callback(g, t), g && E) {
           for (i in (h = new Image).onerror = t.onerror, h.setAttribute("draggable", "false"), r = t.attributes(m, g)) r.hasOwnProperty(i) && 0 !== i.indexOf("on") && !h.hasAttribute(i) && h.setAttribute(i, r[i]);
-          h.className = t.className, h.alt = m, h.src = E, a = true, s.appendChild(h)
+          h.className = t.className, h.alt = m, h.src = E, a = true, o.appendChild(h)
         }
-        h || s.appendChild(l(m, false)), h = null
+        h || o.appendChild(l(m, false)), h = null
       }
-      a && (p < c.length && s.appendChild(l(c.slice(p), true)), o.parentNode.replaceChild(s, o))
+      a && (p < c.length && o.appendChild(l(c.slice(p), true)), s.parentNode.replaceChild(o, s))
     }
     return e
   }
@@ -75,9 +75,9 @@ let r = function() {
     return b(e, function(e) {
       var n, r, i = e,
         a = f(e),
-        s = t.callback(a, t);
-      if (a && s) {
-        for (r in i = "<img ".concat('class="', t.className, '" ', 'draggable="false" ', 'alt="', e, '"', ' src="', s, '"'), n = t.attributes(e, a)) n.hasOwnProperty(r) && 0 !== r.indexOf("on") && false === i.indexOf(" " + r + "=") && (i = i.concat(" ", r, '="', c(n[r]), '"'));
+        o = t.callback(a, t);
+      if (a && o) {
+        for (r in i = "<img ".concat('class="', t.className, '" ', 'draggable="false" ', 'alt="', e, '"', ' src="', o, '"'), n = t.attributes(e, a)) n.hasOwnProperty(r) && 0 !== r.indexOf("on") && false === i.indexOf(" " + r + "=") && (i = i.concat(" ", r, '="', c(n[r]), '"'));
         i = i.concat("/>")
       }
       return i
@@ -98,7 +98,7 @@ let r = function() {
 
   function E(e) {
     var t = "string" == typeof e ? parseInt(e, 16) : e;
-    return t < 65536 ? o(t) : o(55296 + ((t -= 65536) >> 10), 56320 + (1023 & t))
+    return t < 65536 ? s(t) : s(55296 + ((t -= 65536) >> 10), 56320 + (1023 & t))
   }
 
   function y(t, n) {

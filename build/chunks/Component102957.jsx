@@ -78,7 +78,7 @@ function E() {
       let t = JSON.parse(e),
         n = JSON.parse(p);
       I(null), I((0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)(o.Text, {
+        children: [(0, r.jsxs)(s.Text, {
           variant: "text-md/normal",
           className: d.cW,
           children: ["Element updated at: ", new Date().toString()]
@@ -98,11 +98,11 @@ function E() {
     }
   };
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsxs)(o.Text, {
+    children: [(0, r.jsxs)(s.Text, {
       variant: "text-md/normal",
       className: d.cW,
       children: ["Try configuring options for the Stripe Element container and Express Checkout Element here. Not all settings will change the appearance or functionality of the checkout button - use this to figure out the customizability of the Express Checkout Element.", (0, r.jsx)("br", {}), (0, r.jsx)("br", {}), "Start by changing the `borderRadius` or `buttonHeight` as a test!"]
-    }), (0, r.jsxs)(o.Text, {
+    }), (0, r.jsxs)(s.Text, {
       variant: "text-md/normal",
       className: d.cW,
       children: [(0, r.jsx)("b", {
@@ -112,14 +112,14 @@ function E() {
       })]
     }), (0, r.jsx)("div", {
       className: d.PC,
-      children: (0, r.jsx)(o.fs1, {
+      children: (0, r.jsx)(s.fs1, {
         placeholder: "Stripe Elements Container Options",
         showCharacterCount: true,
         value: e,
         onChange: t,
         rows: 7
       })
-    }), (0, r.jsxs)(o.Text, {
+    }), (0, r.jsxs)(s.Text, {
       variant: "text-md/normal",
       className: d.cW,
       children: [(0, r.jsx)("b", {
@@ -131,41 +131,41 @@ function E() {
       })]
     }), (0, r.jsx)("div", {
       className: d.PC,
-      children: (0, r.jsx)(o.fs1, {
+      children: (0, r.jsx)(s.fs1, {
         placeholder: "Stripe Express Checkout Element Options",
         showCharacterCount: true,
         value: p,
         onChange: E,
         rows: 7
       })
-    }), null != O && (0, r.jsx)(o.Text, {
+    }), null != O && (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-feedback-critical",
       children: O
     }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: d.Ut,
-      children: (0, r.jsx)(s.$nd, {
+      children: (0, r.jsx)(o.$nd, {
         variant: "primary",
         size: "sm",
         text: "Apply Changes",
         onClick: S
       })
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       className: d.cW,
       children: "Current Element Options:"
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       children: (0, r.jsx)(l.A, {
         className: d.wD,
         children: "".concat(g, " ").concat(m(n), " ").concat(g)
       })
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       className: d.cW,
       children: "Current Express Checkout Element Options:"
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       children: (0, r.jsx)(l.A, {
         className: d.wD,
@@ -183,7 +183,7 @@ let y = {
       skuIDs: [],
       activeSubscription: null,
       children: (0, r.jsxs)(u.wn, {
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xl/semibold",
           children: "Stripe Express Checkout Buttons"
         }), (0, r.jsx)(u.Hq, {
@@ -204,11 +204,11 @@ let y = {
           return (0, r.jsx)(u.Hq, {
             label: t,
             children: (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(o.Text, {
+              children: [(0, r.jsx)(s.Text, {
                 variant: "text-md/normal",
                 className: d.cW,
                 children: "expressCheckoutElement.options:"
-              }), (0, r.jsx)(o.Text, {
+              }), (0, r.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: (0, r.jsx)(l.A, {
                   className: d.wD,

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 510790, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 510790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => T
+  f: () => C
 }), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,87 +25,91 @@ var Chunk627968 = require("./627968.js"),
   Chunk520650 = require("./520650.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk294456 = require("./294456.js");
-let S = e => e.map(e => "#".concat(e)),
-  T = e => {
+let j = e => e.map(e => "#".concat(e)),
+  C = e => {
     let {
       message: t
     } = e, {
       sharedClientTheme: n
     } = t, {
       setAll: i
-    } = (0, E.ko)();
+    } = (0, b.ko)();
     return true === n ? null : (0, r.jsxs)("div", {
-      className: I.kL,
-      children: [(0, r.jsx)(N, {
+      className: E.kL,
+      children: [(0, r.jsx)(I, {
         message: t
       }), (0, r.jsx)(u.$nd, {
-        text: A.intl.string(A.t.SKNnqq),
+        text: O.intl.string(O.t.SKNnqq),
         fullWidth: true,
         variant: "primary",
         onClick: () => {
-          g.default.track(O.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, _.nf)(_.HP.CUSTOM_THEME, {
-            from: _.xv.SHARE_MESSAGE
+          _.default.track(v.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, f.nf)(f.HP.CUSTOM_THEME, {
+            from: f.xv.SHARE_MESSAGE
           }), i({
-            colors: S(n.colors),
+            colors: j(n.colors),
             chassisMixAmount: n.base_mix,
             gradientAngle: n.gradient_angle
-          }), (0, m.GQ)((0, y.PC)(n.base_theme))
+          }), (0, h.GQ)((0, A.PC)(n.base_theme))
         }
       })]
     })
   },
-  C = (e, t, n) => e.split(" ").map((e, a) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
-    children: [e, " "]
-  }, a) : (0, r.jsxs)("span", {
-    className: I.H,
-    children: [(0, r.jsx)(c.eu, {
-      "aria-label": n,
-      src: t.getAvatarURL(null, 20),
-      size: d._3J.SIZE_20
-    }), " ", n, " "]
-  }, a)),
-  N = e => {
-    let {
-      message: t
-    } = e, {
-      sharedClientTheme: n
-    } = t, c = (0, h.Ay)(t), u = i.useMemo(() => (0, a.once)(() => {
-      (0, f.x)({
-        type: s.ImpressionTypes.VIEW,
-        name: o.I.CUSTOM_THEME_SHARE,
-        properties: {}
-      })
-    }), []), _ = (0, p.A)({
-      onVisible: () => {
-        u()
-      },
-      threshold: 1,
-      minTimeVisibleMs: 200
-    }), m = i.useMemo(() => {
-      var e;
-      return true === n ? "" : (0, b.V9)(S(n.colors), null != (e = n.gradient_angle) ? e : 0)
-    }, [n]);
-    return true === n ? null : (0, r.jsxs)("div", {
-      className: I.pS,
-      ref: _,
+  I = e => {
+    let t, n, u, {
+        message: f
+      } = e,
+      {
+        sharedClientTheme: h
+      } = f,
+      _ = (0, g.Ay)(f),
+      b = i.useMemo(() => (0, l.once)(() => {
+        (0, p.x)({
+          type: a.ImpressionTypes.VIEW,
+          name: s.I.CUSTOM_THEME_SHARE,
+          properties: {}
+        })
+      }), []),
+      A = (0, m.A)({
+        onVisible: () => {
+          b()
+        },
+        threshold: 1,
+        minTimeVisibleMs: 200
+      }),
+      v = i.useMemo(() => {
+        var e;
+        return true === h ? "" : (0, y.V9)(j(h.colors), null != (e = h.gradient_angle) ? e : 0)
+      }, [h]);
+    return true === h ? null : (0, r.jsxs)("div", {
+      className: E.pS,
+      ref: A,
       children: [(0, r.jsx)("div", {
-        className: I.sl,
+        className: E.sl,
         style: {
-          background: "".concat(m)
+          background: "".concat(v)
         }
       }), (0, r.jsxs)("div", {
-        className: I.Ix,
+        className: E.Ix,
         children: [(0, r.jsxs)(d.Heading, {
           variant: "heading-md/semibold",
-          className: I.qP,
-          children: [A.intl.string(v.default.KSBBpC), " ", (0, r.jsx)(l.NitroWheelIcon, {})]
+          className: E.qP,
+          children: [O.intl.string(x.default.KSBBpC), " ", (0, r.jsx)(o.NitroWheelIcon, {})]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: "text-subtle",
-          className: I.Tb,
-          children: C("".concat(A.intl.format(v.default.fQPSEf, {
+          className: E.Tb,
+          children: (t = "".concat(O.intl.format(x.default.fQPSEf, {
             username: "__USERNAME__"
-          })), t.author, c.nick)
+          })), n = f.author, u = _.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
+            children: [e, " "]
+          }, t) : (0, r.jsxs)("span", {
+            className: E.H,
+            children: [(0, r.jsx)(c.eu, {
+              "aria-label": u,
+              src: n.getAvatarURL(null, 20),
+              size: d._3J.SIZE_20
+            }), " ", u, " "]
+          }, t)))
         })]
       })]
     })

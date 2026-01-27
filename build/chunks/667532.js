@@ -31,10 +31,10 @@ Chunk557939({
       l(n + r);
       for (var c = n; c--;) {
         var u = c + r;
-        c in t ? t[u] = t[c] : o(t, u)
+        c in t ? t[u] = t[c] : s(t, u)
       }
       for (var d = 0; d < r; d++) t[d] = arguments[d]
     }
-    return s(t, n + r)
+    return o(t, n + r)
   }
 })

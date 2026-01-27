@@ -2,7 +2,7 @@
 /** chunk id: 564004, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U7: () => s,
+  U7: () => o,
   jZ: () => a
 });
 var Chunk64700 = require("./64700.js");
@@ -28,7 +28,7 @@ function a(e) {
   }, t)
 }
 
-function s(e) {
+function o(e) {
   let t = (t, n) => (0, r.useContext)(i) ? null : e(t, n);
   return t.displayName = e.displayName || e.name, (0, r.forwardRef)(t)
 }

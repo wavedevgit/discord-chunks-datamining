@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 81107, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 82575 **/
+/** chunk id: 81107, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => u
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -12,80 +11,80 @@ var Chunk397927 = require("./397927.js"),
   Chunk443935 = require("./443935.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk513167 = require("./513167.js");
-let u = {
+let d = {
   offset: {
     top: false
   }
 };
 
-function d() {
-  return (0, r.jsxs)("div", {
+function u() {
+  return (0, i.jsxs)("div", {
     className: c.lj,
-    children: [(0, r.jsx)(i.MzZ, {
+    children: [(0, i.jsx)(s.MzZ, {
       target: "_blank",
       tabIndex: false,
       rel: "author",
       title: "X",
-      href: (0, a.A)(l.Pq7.TWITTER),
+      href: (0, l.A)(o.Pq7.TWITTER),
       className: c.nf,
-      focusProps: u,
-      children: (0, r.jsx)(i.p3p, {
+      focusProps: d,
+      children: (0, i.jsx)(s.p3p, {
         size: "xs",
         color: "currentColor",
         colorClass: c.CU,
         "aria-hidden": true
       })
-    }), (0, r.jsx)(i.MzZ, {
+    }), (0, i.jsx)(s.MzZ, {
       target: "_blank",
       rel: "author",
       title: "Instagram",
       tabIndex: false,
-      href: l.w7I.INSTAGRAM_URL,
+      href: o.w7I.INSTAGRAM_URL,
       className: c.nf,
-      focusProps: u,
-      children: (0, r.jsx)(i.LyU, {
+      focusProps: d,
+      children: (0, i.jsx)(s.LyU, {
         size: "xs",
         color: "currentColor",
         colorClass: c.CU,
         "aria-hidden": true
       })
-    }), (0, r.jsx)(i.MzZ, {
+    }), (0, i.jsx)(s.MzZ, {
       target: "_blank",
       rel: "author",
       title: "Facebook",
       tabIndex: false,
-      href: l.w7I.FACEBOOK_URL,
+      href: o.w7I.FACEBOOK_URL,
       className: c.nf,
-      focusProps: u,
-      children: (0, r.jsx)(i.Zc1, {
+      focusProps: d,
+      children: (0, i.jsx)(s.Zc1, {
         size: "xs",
         color: "currentColor",
         colorClass: c.CU,
         "aria-hidden": true
       })
-    }), (0, r.jsx)(i.MzZ, {
+    }), (0, i.jsx)(s.MzZ, {
       target: "_blank",
       rel: "author",
       title: "YouTube",
       tabIndex: false,
-      href: l.w7I.YOUTUBE_URL,
+      href: o.w7I.YOUTUBE_URL,
       className: c.nf,
-      focusProps: u,
-      children: (0, r.jsx)(o.A, {
+      focusProps: d,
+      children: (0, i.jsx)(a.A, {
         width: 16,
         height: 16,
         foreground: c.CU,
         "aria-hidden": true
       })
-    }), (0, r.jsx)(i.MzZ, {
+    }), (0, i.jsx)(s.MzZ, {
       target: "_blank",
       rel: "author",
       title: "TikTok",
       tabIndex: false,
-      href: l.w7I.TIKTOK_URL,
+      href: o.w7I.TIKTOK_URL,
       className: c.nf,
-      focusProps: u,
-      children: (0, r.jsx)(s.A, {
+      focusProps: d,
+      children: (0, i.jsx)(r.A, {
         width: 16,
         height: 16,
         foreground: c.CU,

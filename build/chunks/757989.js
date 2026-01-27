@@ -2,7 +2,7 @@
 /** chunk id: 757989, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => j
+  A: () => M
 }), require("./896048.js");
 var Chunk118356 = require("./118356.js"),
   Chunk506774 = require("./506774.js"),
@@ -151,8 +151,8 @@ class R {
       let n = this._storage.getWidgetSetting(e),
         r = this._config.getDefaultWidgetPinned(e),
         i = null != (t = null == n ? true : n.pinned) ? t : r,
-        s = C(e);
-      null == s || (e === _.uss.VOICE && (i = true), __OVERLAY__ || await this._config.restoreDefaultWidgetPinned(e), null != i && await (0, a.v0)(s.id, {
+        o = C(e);
+      null == o || (e === _.uss.VOICE && (i = true), __OVERLAY__ || await this._config.restoreDefaultWidgetPinned(e), null != i && await (0, a.v0)(o.id, {
         forcedPinnedState: i,
         shouldTrack: v
       }))
@@ -165,12 +165,12 @@ class R {
       let t = f.A.isNotificationDisabledBySetting(e);
       this.updateNotificationSetting(e, t)
     }), h(this, "disableNotification", async e => {
-      this.initializeNotification(e), await s.A.setNotificationDisabledSetting(e, A, v)
+      this.initializeNotification(e), await o.A.setNotificationDisabledSetting(e, A, v)
     }), h(this, "restoreNotification", async e => {
       var t;
       let n = this._storage.getNotificationSetting(e),
         r = null != (t = null == n ? true : n.disabled) && t;
-      null != r && await s.A.setNotificationDisabledSetting(e, r, v)
+      null != r && await o.A.setNotificationDisabledSetting(e, r, v)
     }), this._config.initializeAllDefaultWidgetConfigs()
   }
 }
@@ -179,19 +179,19 @@ function P() {
   return Object.values(u.M)
 }
 let D = new Set([Chunk93465.M.WELCOME_GENERAL, Chunk93465.M.GO_LIVE_NUDGE, Chunk93465.M.GAME_ACTIVITY]),
-  x = "overlay-negative-widget-experiment-bucket";
-class L extends Chunk439372.A {
+  L = "overlay-negative-widget-experiment-bucket";
+class x extends Chunk439372.A {
   constructor() {
     var e, t;
     super(), e = this, h(this, "_settings", new R), h(this, "_hasInitialized", false), h(this, "_isProcessing", false), h(this, "_appliedExperimentBucket", "control"), h(this, "setAppliedExperimentBucket", e => {
-      this._appliedExperimentBucket = e, i.w.set(x, e)
+      this._appliedExperimentBucket = e, i.w.set(L, e)
     }), h(this, "getRawAppliedExperimentBucket", () => (0, d.H)("applied-experiment-bucket")), h(this, "getWidgetExperimentSettings", e => {
       let {
         voiceWidgetDefaultUnpinned: t,
         videoWidgetDefaultUnpinned: n,
         unlockedOnlyDefaultOverlay: r
-      } = (0, d.aS)("".concat(__OVERLAY__ ? "LegacyOverlay" : "MainApp", "_ExperimentManager_WidgetSettings"), e), i = new Set, a = new Set, s = t || r, o = n || r;
-      return s ? (i.add(_.uss.VOICE_V3), i.add(_.uss.VOICE)) : (a.add(_.uss.VOICE_V3), a.add(_.uss.VOICE)), o ? i.add(_.uss.VIDEO) : a.add(_.uss.VIDEO), {
+      } = (0, d.aS)("".concat(__OVERLAY__ ? "LegacyOverlay" : "MainApp", "_ExperimentManager_WidgetSettings"), e), i = new Set, a = new Set, o = t || r, s = n || r;
+      return o ? (i.add(_.uss.VOICE_V3), i.add(_.uss.VOICE)) : (a.add(_.uss.VOICE_V3), a.add(_.uss.VOICE)), s ? i.add(_.uss.VIDEO) : a.add(_.uss.VIDEO), {
         widgetsToOverride: i,
         widgetsToRestore: a
       }
@@ -272,7 +272,7 @@ class L extends Chunk439372.A {
       EXPERIMENT_OVERRIDE_BUCKET: this.handleExperimentOverrideBucket,
       OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: this.handleSetNotificationDisabledSetting,
       LAYOUT_SET_PINNED: this.handleSetPinned
-    }), this._appliedExperimentBucket = null != (t = i.w.get(x)) ? t : "control"
+    }), this._appliedExperimentBucket = null != (t = i.w.get(L)) ? t : "control"
   }
 }
-let j = new L
+let M = new x

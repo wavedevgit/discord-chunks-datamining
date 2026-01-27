@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk397927 = require("./397927.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk64700.PureComponent {
+class s extends Chunk64700.PureComponent {
   render() {
     let {
       text: e,
@@ -32,7 +32,7 @@ class o extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), s(this, "handleClick", () => {
+    super(...e), o(this, "handleClick", () => {
       let {
         onClick: e,
         index: t
@@ -46,7 +46,7 @@ class l extends Chunk64700.PureComponent {
     let e = this.props.artists.split("; ");
     if (!this.props.canOpen) return e.join(", ");
     let t = e.length - 1;
-    return e.map((e, n) => (0, r.jsx)(o, {
+    return e.map((e, n) => (0, r.jsx)(s, {
       text: e,
       index: n,
       lastItem: n === t,
@@ -55,7 +55,7 @@ class l extends Chunk64700.PureComponent {
     }, "spotify-artist-".concat(n)))
   }
   constructor(...e) {
-    super(...e), s(this, "handleOpenSpotifyArtist", e => {
+    super(...e), o(this, "handleOpenSpotifyArtist", e => {
       let {
         onOpenSpotifyArtist: t
       } = this.props;

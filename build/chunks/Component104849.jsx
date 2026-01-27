@@ -1,7 +1,7 @@
 /** Chunk was on 12970 **/
 /** chunk id: 104849, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => I
+  default: () => T
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,78 +29,78 @@ var Chunk627968 = require("./627968.js"),
   Chunk180798 = require("./180798.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
+let T = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   var t;
   let {
     user: n,
     guildId: u,
     channelId: c,
-    context: P,
-    onSelect: I,
-    moderationAlertId: D,
-    analyticsLocation: T,
-    analyticsLocations: x,
-    onCloseContextMenu: N,
-    showTransferOwnershipItem: w
+    context: h,
+    onSelect: T,
+    moderationAlertId: N,
+    analyticsLocation: C,
+    analyticsLocations: P,
+    onCloseContextMenu: R,
+    showTransferOwnershipItem: U
   } = e, {
-    analyticsLocations: G
-  } = (0, A.Ay)(d.A.CONTEXT_MENU), R = (0, s.p)(), U = null != (t = null == x ? true : x[0]) ? t : G[0], L = (0, O.$9)(u, {
-    location: U,
+    analyticsLocations: L
+  } = (0, A.Ay)(d.A.CONTEXT_MENU), w = (0, s.p)(), G = null != (t = null == P ? true : P[0]) ? t : L[0], x = (0, E.$9)(u, {
+    location: G,
     targetUserId: n.id
   }), B = (0, i.bG)([y.A], () => {
     var e;
     return null != (e = y.A.getUserVoiceChannelId(u, n.id)) ? e : true
   }, [u, n.id]), k = l.useCallback(() => {
-    L(O.Nj.COPY_ID)
-  }, [L]), V = (0, i.bG)([g.Ay], () => g.Ay.isMember(u, n.id), [u, n.id]), F = (0, S.A)({
+    x(E.Nj.COPY_ID)
+  }, [x]), V = (0, i.bG)([g.Ay], () => g.Ay.isMember(u, n.id), [u, n.id]), F = (0, I.A)({
     userId: n.id,
     guildId: u,
-    sourceAnalyticsLocations: x
-  }), H = (0, m.A)(n.id, P), K = (0, f.A)({
+    sourceAnalyticsLocations: P
+  }), W = (0, m.A)(n.id, h), K = (0, b.A)({
     guildId: u,
     userId: n.id,
-    analyticsLocation: null != T ? T : R.location,
-    analyticsLocations: [U],
-    context: P
-  }), Y = (0, E.A)({
+    analyticsLocation: null != C ? C : w.location,
+    analyticsLocations: [G],
+    context: h
+  }), H = (0, p.A)({
     user: n,
     guildId: u,
-    location: U,
+    location: G,
     channelId: c
-  }), W = (0, j.A)({
+  }), Y = (0, _.A)({
     user: n,
     guildId: u,
-    location: U,
+    location: G,
     channelId: c
-  }), X = (0, p.A)(n, u, null != c ? c : B, U), Z = (0, _.A)(c, D), $ = (0, h.A)(n, u), q = (0, M.A)(n.id, u, false, U), z = (0, b.A)({
+  }), X = (0, f.A)(n, u, null != c ? c : B, G), q = (0, M.A)(c, N), Q = (0, j.A)(n, u), Z = (0, v.A)(n.id, u, false, G), $ = (0, O.A)({
     id: n.id,
-    label: C.intl.string(C.t["/AXYnE"]),
+    label: D.intl.string(D.t["/AXYnE"]),
     onSuccess: k
-  }), Q = (0, v.A)(n, u), J = !!(null == n ? true : n.isNonUserBot());
+  }), z = (0, S.A)(n, u), J = !!(null == n ? true : n.isNonUserBot());
   return (0, r.jsxs)(a.W1t, {
     "data-menu-mixed": true,
     navId: "user-context",
     onClose: () => {
-      (0, o.Z_)(), null == N || N()
+      (0, o.Z_)(), null == R || R()
     },
-    "aria-label": C.intl.string(C.t.liqwPJ),
-    onSelect: I,
+    "aria-label": D.intl.string(D.t.liqwPJ),
+    onSelect: T,
     children: [!J && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(a.rXV, {
-        children: [F, H]
+        children: [F, W]
       }), (0, r.jsxs)(a.rXV, {
-        children: [K, W, Y]
+        children: [K, Y, H]
       }), V && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.rXV, {
           children: X
         }), (0, r.jsxs)(a.rXV, {
-          children: [q, Q]
+          children: [Z, z]
         })]
-      }), null != D ? Z : null, w && null != $ ? (0, r.jsx)(a.rXV, {
-        children: $
+      }), null != N ? q : null, U && null != Q ? (0, r.jsx)(a.rXV, {
+        children: Q
       }) : null]
     }), (0, r.jsx)(a.rXV, {
-      children: z
+      children: $
     })]
   })
 }, {

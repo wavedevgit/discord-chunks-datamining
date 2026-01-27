@@ -1,15 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 895163, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 895163, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Xn: () => s,
-  tz: () => i
+  Xn: () => a,
+  tz: () => l
 });
-var Chunk250105 = require("./250105.js"),
-  i = function(e) {
-    return e.PAYMENT_REVIEW = "control", e.PLAN_SELECTION = "plan_selection", e
-  }({});
-let a = (0, Chunk250105.Ay)({
+var r, Chunk250105 = require("./250105.js"),
+  l = ((r = {}).PAYMENT_REVIEW = "control", r.PLAN_SELECTION = "plan_selection", r);
+let s = (0, Chunk250105.Ay)({
   name: "2026-01-marketing-banner-cta-action",
   kind: "user",
   defaultConfig: {
@@ -25,8 +22,8 @@ let a = (0, Chunk250105.Ay)({
   }
 });
 
-function s(e) {
-  return a.useConfig({
+function a(e) {
+  return s.useConfig({
     location: e
   })
 }

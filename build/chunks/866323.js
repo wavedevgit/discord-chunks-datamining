@@ -9,7 +9,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk844222 = require("./844222.js"),
   Chunk384494 = require("./384494.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -33,10 +33,10 @@ function l(e) {
 
 function c(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "respect-motion-settings",
-    o = arguments.length > 3 ? arguments[3] : true,
+    s = arguments.length > 3 ? arguments[3] : true,
     c = r.useContext(a.C).reducedMotion.enabled,
     u = t;
-  "animate-always" !== n && ("respect-motion-settings" !== n || c) && (u = l({}, t, s.W));
-  let [d, f, p] = (0, i.useTransition)(e, u, o);
+  "animate-always" !== n && ("respect-motion-settings" !== n || c) && (u = l({}, t, o.W));
+  let [d, f, p] = (0, i.useTransition)(e, u, s);
   return 4 == arguments.length ? [d, f, p] : d
 }

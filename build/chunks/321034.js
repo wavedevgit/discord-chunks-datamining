@@ -9,7 +9,7 @@ var Chunk77729 = require("./77729.js"),
   Chunk832213 = require("./832213.js"),
   Chunk837921 = require("./837921.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,7 +53,7 @@ class c extends Chunk832213.D {
   }
   static getCurrentMemoryUsageKBCore() {
     try {
-      let e = s.Ay.getDiscordMemoryUsage();
+      let e = o.Ay.getDiscordMemoryUsage();
       if (null == e) return 0;
       let t = Object.values(e).reduce((e, t) => e + t, 0);
       return Math.ceil(t / 1024)
@@ -62,18 +62,18 @@ class c extends Chunk832213.D {
     }
   }
   getMemoryUsageDetails() {
-    return s.Ay.getDiscordMemoryUsage()
+    return o.Ay.getDiscordMemoryUsage()
   }
   getMemoryUsageElectronRenderer() {
     try {
-      return s.Ay.getDiscordMemoryUsageElectronRenderer()
+      return o.Ay.getDiscordMemoryUsageElectronRenderer()
     } catch (e) {
       return null
     }
   }
   getMemoryPrivateUsageElectronRenderer() {
     try {
-      return s.Ay.getDiscordMemoryPrivateUsageElectronRenderer()
+      return o.Ay.getDiscordMemoryPrivateUsageElectronRenderer()
     } catch (e) {
       return null
     }
@@ -92,42 +92,42 @@ class c extends Chunk832213.D {
   }
   getMemoryUsageElectronProcessTypeDetails() {
     try {
-      return s.Ay.getDiscordMemoryUsageElectronProcessTypeDetails()
+      return o.Ay.getDiscordMemoryUsageElectronProcessTypeDetails()
     } catch (e) {
       return null
     }
   }
   enablePerfMemoryHooks(e) {
     try {
-      return s.Ay.enablePerfMemoryHooks(e)
+      return o.Ay.enablePerfMemoryHooks(e)
     } catch (e) {
       return null
     }
   }
   disablePerfMemoryHooks() {
     try {
-      return s.Ay.disablePerfMemoryHooks()
+      return o.Ay.disablePerfMemoryHooks()
     } catch (e) {
       return null
     }
   }
   getPerfAttributedMemory() {
     try {
-      return s.Ay.getPerfAttributedMemory()
+      return o.Ay.getPerfAttributedMemory()
     } catch (e) {
       return null
     }
   }
   getPerfAttributedMemoryCallstacks(e) {
     try {
-      return s.Ay.getPerfAttributedMemoryCallstacks(e)
+      return o.Ay.getPerfAttributedMemoryCallstacks(e)
     } catch (e) {
       return null
     }
   }
   getPerfAttributedMemoryStats() {
     try {
-      return s.Ay.getPerfAttributedMemoryStats()
+      return o.Ay.getPerfAttributedMemoryStats()
     } catch (e) {
       return null
     }
@@ -202,7 +202,7 @@ class c extends Chunk832213.D {
   }
   constructor() {
     var e, t;
-    super(), o(this, "lastMemoryUsageKB", true), this.cpuCoreCount = null === r.A || true === r.A || null == (t = r.A.processUtils) || null == (e = t.getCPUCoreCount) ? true : e.call(t), this.setupReportingTimer()
+    super(), s(this, "lastMemoryUsageKB", true), this.cpuCoreCount = null === r.A || true === r.A || null == (t = r.A.processUtils) || null == (e = t.getCPUCoreCount) ? true : e.call(t), this.setupReportingTimer()
   }
 }
 let u = new c

@@ -13,7 +13,7 @@ function i(e) {
 }
 
 function a() {}
-var s = {
+var o = {
     d: {
       f: a,
       r: function() {
@@ -30,12 +30,12 @@ var s = {
     p: 0,
     findDOMNode: null
   },
-  o = Symbol.for("react.portal");
+  s = Symbol.for("react.portal");
 
 function l(e, t, n) {
   var r = 3 < arguments.length && true !== arguments[3] ? arguments[3] : null;
   return {
-    $$typeof: o,
+    $$typeof: s,
     key: null == r ? null : "" + r,
     children: e,
     containerInfo: t,
@@ -47,33 +47,33 @@ var c = Chunk64700.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRA
 function u(e, t) {
   return "font" === e ? "" : "string" == typeof t ? "use-credentials" === t ? t : "" : true
 }
-exports.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = s, exports.createPortal = function(e, t) {
+exports.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = o, exports.createPortal = function(e, t) {
   var n = 2 < arguments.length && true !== arguments[2] ? arguments[2] : null;
   if (!t || 1 !== t.nodeType && 9 !== t.nodeType && 11 !== t.nodeType) throw Error(i(299));
   return l(e, t, null, n)
 }, exports.flushSync = function(e) {
   var t = c.T,
-    n = s.p;
+    n = o.p;
   try {
-    if (c.T = null, s.p = 2, e) return e()
+    if (c.T = null, o.p = 2, e) return e()
   } finally {
-    c.T = t, s.p = n, s.d.f()
+    c.T = t, o.p = n, o.d.f()
   }
 }, exports.preconnect = function(e, t) {
-  "string" == typeof e && (t = t ? "string" == typeof(t = t.crossOrigin) ? "use-credentials" === t ? t : "" : true : null, s.d.C(e, t))
+  "string" == typeof e && (t = t ? "string" == typeof(t = t.crossOrigin) ? "use-credentials" === t ? t : "" : true : null, o.d.C(e, t))
 }, exports.prefetchDNS = function(e) {
-  "string" == typeof e && s.d.D(e)
+  "string" == typeof e && o.d.D(e)
 }, exports.preinit = function(e, t) {
   if ("string" == typeof e && t && "string" == typeof t.as) {
     var n = t.as,
       r = u(n, t.crossOrigin),
       i = "string" == typeof t.integrity ? t.integrity : true,
       a = "string" == typeof t.fetchPriority ? t.fetchPriority : true;
-    "style" === n ? s.d.S(e, "string" == typeof t.precedence ? t.precedence : true, {
+    "style" === n ? o.d.S(e, "string" == typeof t.precedence ? t.precedence : true, {
       crossOrigin: r,
       integrity: i,
       fetchPriority: a
-    }) : "script" === n && s.d.X(e, {
+    }) : "script" === n && o.d.X(e, {
       crossOrigin: r,
       integrity: i,
       fetchPriority: a,
@@ -85,18 +85,18 @@ exports.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = s, export
     if ("object" == typeof t && null !== t) {
       if (null == t.as || "script" === t.as) {
         var n = u(t.as, t.crossOrigin);
-        s.d.M(e, {
+        o.d.M(e, {
           crossOrigin: n,
           integrity: "string" == typeof t.integrity ? t.integrity : true,
           nonce: "string" == typeof t.nonce ? t.nonce : true
         })
       }
-    } else null == t && s.d.M(e)
+    } else null == t && o.d.M(e)
 }, exports.preload = function(e, t) {
   if ("string" == typeof e && "object" == typeof t && null !== t && "string" == typeof t.as) {
     var n = t.as,
       r = u(n, t.crossOrigin);
-    s.d.L(e, n, {
+    o.d.L(e, n, {
       crossOrigin: r,
       integrity: "string" == typeof t.integrity ? t.integrity : true,
       nonce: "string" == typeof t.nonce ? t.nonce : true,
@@ -112,14 +112,14 @@ exports.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = s, export
   if ("string" == typeof e)
     if (t) {
       var n = u(t.as, t.crossOrigin);
-      s.d.m(e, {
+      o.d.m(e, {
         as: "string" == typeof t.as && "script" !== t.as ? t.as : true,
         crossOrigin: n,
         integrity: "string" == typeof t.integrity ? t.integrity : true
       })
-    } else s.d.m(e)
+    } else o.d.m(e)
 }, exports.requestFormReset = function(e) {
-  s.d.r(e)
+  o.d.r(e)
 }, exports.unstable_batchedUpdates = function(e, t) {
   return e(t)
 }, exports.useFormState = function(e, t, n) {

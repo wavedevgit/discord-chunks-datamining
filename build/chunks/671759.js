@@ -8,7 +8,7 @@ var Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
   Chunk315069 = require("./315069.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -49,7 +49,7 @@ function c(e, t) {
 class u extends Chunk315069.A {
   static createFromServer(e) {
     var t;
-    return new u(c(o({}, e), {
+    return new u(c(s({}, e), {
       maxUses: e.max_uses,
       maxAge: e.max_age,
       createdAt: i()(null != (t = e.created_at) ? t : true),
@@ -69,6 +69,6 @@ class u extends Chunk315069.A {
     return this.code
   }
   constructor(e) {
-    super(), s(this, "code", true), s(this, "temporary", true), s(this, "revoked", true), s(this, "uses", true), s(this, "maxUses", true), s(this, "maxAge", true), s(this, "createdAt", true), s(this, "channel", true), s(this, "guild", true), s(this, "inviter", true), s(this, "targetType", true), s(this, "targetUser", true), s(this, "targetApplication", true), s(this, "type", true), s(this, "flags", true), s(this, "roles", true), this.code = e.code || "", this.temporary = e.temporary || false, this.revoked = e.revoked || false, this.uses = e.uses || 0, this.maxUses = e.maxUses || 0, this.maxAge = e.maxAge || 0, this.createdAt = e.createdAt || new Date, this.channel = e.channel, this.guild = e.guild, this.inviter = e.inviter || null, this.targetType = e.targetType || null, this.targetUser = e.targetUser || null, this.targetApplication = e.targetApplication || null, this.type = e.type || null, this.flags = e.flags || 0, this.roles = e.roles || []
+    super(), o(this, "code", true), o(this, "temporary", true), o(this, "revoked", true), o(this, "uses", true), o(this, "maxUses", true), o(this, "maxAge", true), o(this, "createdAt", true), o(this, "channel", true), o(this, "guild", true), o(this, "inviter", true), o(this, "targetType", true), o(this, "targetUser", true), o(this, "targetApplication", true), o(this, "type", true), o(this, "flags", true), o(this, "roles", true), this.code = e.code || "", this.temporary = e.temporary || false, this.revoked = e.revoked || false, this.uses = e.uses || 0, this.maxUses = e.maxUses || 0, this.maxAge = e.maxAge || 0, this.createdAt = e.createdAt || new Date, this.channel = e.channel, this.guild = e.guild, this.inviter = e.inviter || null, this.targetType = e.targetType || null, this.targetUser = e.targetUser || null, this.targetApplication = e.targetApplication || null, this.type = e.type || null, this.flags = e.flags || 0, this.roles = e.roles || []
   }
 }

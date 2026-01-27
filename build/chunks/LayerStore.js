@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,33 +15,33 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = [];
+let s = [];
 
 function l(e) {
   let {
     component: t
   } = e;
-  if (o.indexOf(t) >= 0) returnfalse;
-  o = [...o, t]
+  if (s.indexOf(t) >= 0) returnfalse;
+  s = [...s, t]
 }
 
 function c() {
-  if (0 === o.length) returnfalse;
-  o = o.slice(0, false)
+  if (0 === s.length) returnfalse;
+  s = s.slice(0, false)
 }
 
 function u() {
-  o = []
+  s = []
 }
 class d extends(r = Chunk311907.Ay.Store) {
   hasLayers() {
-    return o.length > 0
+    return s.length > 0
   }
   getLayers() {
-    return o
+    return s
   }
 }
-s(d, "displayName", "LayerStore");
+o(d, "displayName", "LayerStore");
 let f = new d(Chunk73153.h, {
   LAYER_PUSH: l,
   LAYER_POP: c,

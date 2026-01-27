@@ -30,22 +30,22 @@ let d = async () => {
     if (e instanceof Object && "code" in e && "MissingRegistration" === e.code) return l.Lk.WAITING_FOR_TERMS;
     return i.default.track(u.HAw.PREMIUM_FEATURE_ERROR, {
       error_message: e instanceof Error ? e.message : JSON.stringify(e),
-      error_source: o.q.PRIVATE_BROWSING_PERK_INSTALLATION_STATUS
+      error_source: s.q.PRIVATE_BROWSING_PERK_INSTALLATION_STATUS
     }), a.A.captureException(e instanceof Error ? e : Error(JSON.stringify(e)), {
       tags: {
-        source: o.q.PRIVATE_BROWSING_PERK_INSTALLATION_STATUS
+        source: s.q.PRIVATE_BROWSING_PERK_INSTALLATION_STATUS
       }
     }), l.Lk.ERROR
   }
 }, f = () => new Promise(async (e, t) => {
   try {
     var n, r, i;
-    let a = await (null === s.Ay || true === s.Ay || null == (i = s.Ay.getDiscordUtils) || null == (r = i.call(s.Ay)) || null == (n = r.runWarpCommand) ? true : n.call(r, "registration", "show"));
+    let a = await (null === o.Ay || true === o.Ay || null == (i = o.Ay.getDiscordUtils) || null == (r = i.call(o.Ay)) || null == (n = r.runWarpCommand) ? true : n.call(r, "registration", "show"));
     if (null != a.error) return void t(a);
     e(a)
   } catch (e) {
     t(e)
   }
 }), p = async () => {
-  await (0, c.K)(true), await s.Ay.getDiscordUtils().installWarp()
+  await (0, c.K)(true), await o.Ay.getDiscordUtils().installWarp()
 }, _ = e => e.includes("Unexpected token") || e.includes("Cannot read properties of undefined") || e.includes("Unexpected end of JSON input")

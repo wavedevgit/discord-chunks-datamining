@@ -13,7 +13,7 @@ var Chunk398590 = require("./398590.js"),
   Chunk652215 = require("./652215.js");
 
 function c(e) {
-  for (let t of s.componentPlaygroundConfigs) {
+  for (let t of o.componentPlaygroundConfigs) {
     let n = t.collections.find(t => t.id.toLowerCase() === e.toLowerCase());
     if (null != n) return n.id
   }
@@ -21,7 +21,7 @@ function c(e) {
 }
 
 function u(e, t) {
-  for (let n of s.componentPlaygroundConfigs) {
+  for (let n of o.componentPlaygroundConfigs) {
     let r = n.collections.find(t => t.id.toLowerCase() === e.toLowerCase());
     if (null != r)
       for (let e of r.groups) {
@@ -35,10 +35,10 @@ function u(e, t) {
 function d(e, t) {
   let n = a.default.getCurrentUser();
   if (!(null == n ? true : n.isStaff()) && !(null == n ? true : n.isStaffPersonal())) returnfalse;
-  let s = null != e ? c(e) : null,
-    d = null != s && null != t ? u(s, t) : null;
-  return o.PlaygroundStore.setState({
-    selectedCollection: s,
+  let o = null != e ? c(e) : null,
+    d = null != o && null != t ? u(o, t) : null;
+  return s.PlaygroundStore.setState({
+    selectedCollection: o,
     selectedStory: d
   }), i.A.getLayers().includes(l.zgK.COMPONENT_PLAYGROUND) || (0, r.id)(l.zgK.COMPONENT_PLAYGROUND), true
 }

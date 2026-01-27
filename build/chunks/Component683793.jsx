@@ -19,7 +19,7 @@ let f = function(e) {
     churnUserDiscountOffer: t,
     onDiscountClaim: n,
     onContinue: f
-  } = e, p = (0, o.Ay)(), _ = (0, i.Mw)(p) ? u : d;
+  } = e, p = (0, s.Ay)(), _ = (0, i.Mw)(p) ? u : d;
   return null == t ? null : (0, r.jsxs)("div", {
     className: c.bR,
     children: [(0, r.jsx)("div", {
@@ -36,7 +36,7 @@ let f = function(e) {
           className: c.lR
         }), (0, r.jsxs)("div", {
           className: c.t2,
-          children: [(0, r.jsx)(s.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             className: c.PU,
             children: l.intl.format(l.t["2gem05"], {
@@ -45,23 +45,23 @@ let f = function(e) {
             })
           }), (0, r.jsxs)("div", {
             className: c.$t,
-            children: [(0, r.jsxs)(s.wLn, {
+            children: [(0, r.jsxs)(o.wLn, {
               "data-migration-pending": true,
               className: c.Oy,
               innerClassName: c.iO,
               look: a.pR.OUTLINED,
               color: a.XD.CUSTOM,
               onClick: () => null == n ? true : n(),
-              children: [(0, r.jsx)(s.tvc, {
+              children: [(0, r.jsx)(o.tvc, {
                 size: "xs",
                 color: "currentColor",
                 className: c.Fl
-              }), (0, r.jsx)(s.Text, {
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/semibold",
                 className: c.H0,
                 children: l.intl.string(l.t.zrCzVB)
               })]
-            }), (0, r.jsx)(s.Button, {
+            }), (0, r.jsx)(o.Button, {
               variant: "primary",
               text: l.intl.string(l.t["3PatSz"]),
               onClick: () => null == f ? true : f()

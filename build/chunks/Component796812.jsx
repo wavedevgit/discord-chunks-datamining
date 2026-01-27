@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk990078 = require("./990078.jsx"),
@@ -81,17 +81,17 @@ function A(e) {
   let {
     application: n,
     detectedGame: a
-  } = e, s = i.useMemo(() => null == a ? true : a.genres.map(h.du).join(", "), [a]), l = null != (t = a.name) ? t : null == n ? true : n.name;
+  } = e, o = i.useMemo(() => null == a ? true : a.genres.map(h.du).join(", "), [a]), l = null != (t = a.name) ? t : null == n ? true : n.name;
   return (0, r.jsxs)("div", {
     className: b.wR,
-    children: [(0, r.jsx)(o.DZT, {
+    children: [(0, r.jsx)(s.DZT, {
       variant: "heading-lg/bold",
       color: "text-strong",
       children: l
-    }), (0, r.jsx)(o.EYj, {
+    }), (0, r.jsx)(s.EYj, {
       variant: "text-xs/medium",
       color: "text-subtle",
-      children: s
+      children: o
     })]
   })
 }
@@ -106,7 +106,7 @@ function I(e) {
     className: b.IP,
     children: [(0, r.jsxs)("div", {
       className: b.I8,
-      children: [(0, r.jsx)(o.EYj, {
+      children: [(0, r.jsx)(s.EYj, {
         variant: "text-sm/medium",
         color: "text-strong",
         lineClamp: 3,
@@ -114,7 +114,7 @@ function I(e) {
       }), (0, r.jsx)(u.DUT, {
         className: b.vk,
         onClick: i,
-        children: (0, r.jsx)(o.EYj, {
+        children: (0, r.jsx)(s.EYj, {
           variant: "text-xs/normal",
           color: "text-subtle",
           children: y.intl.string(y.t.lBeKY2)
@@ -173,7 +173,7 @@ function T(e) {
     application: t,
     detectedGame: n,
     className: a,
-    onClose: o
+    onClose: s
   } = e, l = (0, g.A)({
     location: "MiniGameProfile",
     applicationId: t.id,
@@ -181,10 +181,10 @@ function T(e) {
     trackEntryPointImpression: true,
     sourceUserId: true
   }, {}), c = i.useCallback(e => {
-    null == o || o(), null == l || l(e)
-  }, [o, l]);
+    null == s || s(), null == l || l(e)
+  }, [s, l]);
   return (0, r.jsxs)("div", {
-    className: s()(b.kL, a),
+    className: o()(b.kL, a),
     children: [(0, r.jsx)(O, {
       detectedGame: n
     }), (0, r.jsx)(S, {

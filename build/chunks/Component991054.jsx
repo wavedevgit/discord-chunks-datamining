@@ -47,18 +47,18 @@ function y(e) {
     onSelect: n
   } = e, c = (0, d.i)(), {
     iconURL: _
-  } = i.useMemo(() => (0, o.X2)(t, {
+  } = i.useMemo(() => (0, s.X2)(t, {
     fakeAppIconURL: h,
     size: E
   }), [t]), m = i.useMemo(() => [{
     type: a.b.USER_INSTALL,
-    icon: s.Rvf,
+    icon: o.Rvf,
     title: f.intl.string(f.t.aCg60P),
     subtitle: f.intl.string(f.t.YeiIUZ),
     beta: false
   }, {
     type: a.b.GUILD_INSTALL,
-    icon: s.RR9,
+    icon: o.RR9,
     title: f.intl.string(f.t.E64YCz),
     subtitle: f.intl.string(f.t.bbtoKm),
     beta: false
@@ -82,7 +82,7 @@ function y(e) {
       })]
     }), (0, r.jsx)("ul", {
       className: p.Ge,
-      children: m.map(e => (0, r.jsxs)(s.DUT, {
+      children: m.map(e => (0, r.jsxs)(o.DUT, {
         tag: "li",
         className: p.nM,
         onClick: () => n(e.type),
@@ -94,16 +94,16 @@ function y(e) {
           className: p.bL,
           children: [(0, r.jsxs)("div", {
             className: p.pt,
-            children: [(0, r.jsx)(s.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/medium",
               color: "interactive-text-active",
               children: e.title
-            }), (0, r.jsx)(s.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-xs/medium",
               color: "text-muted",
               children: e.subtitle
             })]
-          }), e.beta && (0, r.jsx)(u.A, {}), (0, r.jsx)(s._BQ, {
+          }), e.beta && (0, r.jsx)(u.A, {}), (0, r.jsx)(o._BQ, {
             size: "md",
             color: "currentColor",
             className: p.gN
@@ -132,16 +132,16 @@ function b(e) {
 function O(e) {
   let {
     application: t
-  } = e, n = t.name, i = (0, o.b7)(t);
+  } = e, n = t.name, i = (0, s.b7)(t);
   return (0, r.jsxs)("div", {
     className: p.gn,
-    children: [(0, r.jsx)(s.Heading, {
+    children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
       children: n
     }), i ? (0, r.jsx)("div", {
       className: p.s3,
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: f.intl.string(f.t.LO4f0P)
@@ -154,8 +154,8 @@ let v = 3;
 function A(e) {
   let {
     description: t
-  } = e, [a, o] = i.useState(true);
-  i.useLayoutEffect(() => o(false), []);
+  } = e, [a, s] = i.useState(true);
+  i.useLayoutEffect(() => s(false), []);
   let l = i.useMemo(() => {
       let {
         parseBioReact: e
@@ -192,7 +192,7 @@ function A(e) {
       ref: E,
       className: p.ZT,
       onTransitionEnd: b,
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(o.Text, {
         ref: u,
         className: _.PT,
         variant: "text-sm/medium",
@@ -202,19 +202,19 @@ function A(e) {
         },
         children: l
       })
-    }), null != h && h > v ? (0, r.jsxs)(s.DUT, {
+    }), null != h && h > v ? (0, r.jsxs)(o.DUT, {
       className: p.lP,
-      onClick: () => o(e => !e),
-      children: [(0, r.jsx)(s.Text, {
+      onClick: () => s(e => !e),
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
         children: O ? f.intl.string(f.t.u4YJ8g) : f.intl.string(f.t["N/tajD"])
-      }), O ? (0, r.jsx)(s.tN5, {
+      }), O ? (0, r.jsx)(o.tN5, {
         size: "sm",
-        color: s.LU0.colors.TEXT_BRAND
-      }) : (0, r.jsx)(s.abt, {
+        color: o.LU0.colors.TEXT_BRAND
+      }) : (0, r.jsx)(o.abt, {
         size: "sm",
-        color: s.LU0.colors.TEXT_BRAND
+        color: o.LU0.colors.TEXT_BRAND
       })]
     }) : null]
   })

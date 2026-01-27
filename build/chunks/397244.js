@@ -12,10 +12,10 @@ function a(e) {
   let {
     activities: n,
     status: a,
-    applicationStream: s,
-    voiceChannel: o
+    applicationStream: o,
+    voiceChannel: s
   } = e;
   if (a === i.cl.OFFLINE || a === i.cl.INVISIBLE) returnfalse;
-  let l = null == n ? true : n.filter(e => e.type !== r.$pd.HANG_STATUS || null != o);
-  return null != s || null != o || (null != (t = null == l ? true : l.length) ? t : 0) > 0
+  let l = null == n ? true : n.filter(e => e.type !== r.$pd.HANG_STATUS || null != s);
+  return null != o || null != s || (null != (t = null == l ? true : l.length) ? t : 0) > 0
 }

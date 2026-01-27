@@ -10,12 +10,12 @@ require.d(exports, {
 var Chunk998218 = require("./998218.js");
 let i = RegExp("\\p{Cf}|\\p{Zl}|\\p{Zp}|[^\\P{Cc}\\n]|[^\\P{Zs} ]", "gu"),
   a = RegExp("\\p{Cf}|\\p{Zl}|\\p{Zp}|[^\\P{Cc}\\n\\t]|[^\\P{Zs} ]", "gu"),
-  s = ["͏", "឴", "឵", "ᅠ", "ㅤ", "ﾠ"],
-  o = RegExp("".concat(i.source, "|").concat(s.join("|")), "gu"),
-  l = RegExp("".concat(a.source, "|").concat(s.join("|")), "gu");
+  o = ["͏", "឴", "឵", "ᅠ", "ㅤ", "ﾠ"],
+  s = RegExp("".concat(i.source, "|").concat(o.join("|")), "gu"),
+  l = RegExp("".concat(a.source, "|").concat(o.join("|")), "gu");
 
 function c(e) {
-  return e.replace(o, "")
+  return e.replace(s, "")
 }
 
 function u(e) {
@@ -77,9 +77,9 @@ function g(e) {
       continue
     }
     let r = String.fromCodePoint(t),
-      s = encodeURIComponent(r),
-      o = s === r ? 3 : s.length;
-    n += h(t) ? r : s, i = i.substring(o), a = a.substring(r.length)
+      o = encodeURIComponent(r),
+      s = o === r ? 3 : o.length;
+    n += h(t) ? r : o, i = i.substring(s), a = a.substring(r.length)
   }
   return n
 }

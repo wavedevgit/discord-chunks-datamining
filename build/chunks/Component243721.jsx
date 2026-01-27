@@ -52,14 +52,14 @@ function f(e, t) {
 
 function p(e) {
   var t, n;
-  let c = i.useContext(s.VO),
+  let c = i.useContext(o.VO),
     d = null == c || null == (n = c.experiments) || null == (t = n.enabledExperiments) ? true : t.includes("mana-toggle-inputs"),
     {
       switchIconsEnabled: p
     } = i.useContext(a.C);
   if (d) {
     let t = true !== e.hasIcon ? e.hasIcon : p;
-    return (0, r.jsx)(o.A, f(u({}, e), {
+    return (0, r.jsx)(s.A, f(u({}, e), {
       hasIcon: t
     }))
   }

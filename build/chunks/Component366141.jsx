@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 366141, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 7803 **/
+/** chunk id: 366141, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => j
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,143 +16,142 @@ var Chunk627968 = require("./627968.js"),
   Chunk239093 = require("./239093.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk941708 = require("./941708.js");
-let m = 36;
 
-function g() {
-  let e = (0, d.K)(),
-    t = (0, s.bG)([c.default], () => c.default.getCurrentUser()),
-    [n, g] = i.useState(m),
-    E = i.useRef({
-      [u.PN.ALL_GOOD]: null,
-      [u.PN.LIMITED]: null,
-      [u.PN.VERY_LIMITED]: null,
-      [u.PN.AT_RISK]: null,
-      [u.PN.SUSPENDED]: null
+function j() {
+  let t = (0, u.K)(),
+    e = (0, l.bG)([o.default], () => o.default.getCurrentUser()),
+    [s, j] = n.useState(36),
+    v = n.useRef({
+      [d.PN.ALL_GOOD]: null,
+      [d.PN.LIMITED]: null,
+      [d.PN.VERY_LIMITED]: null,
+      [d.PN.AT_RISK]: null,
+      [d.PN.SUSPENDED]: null
     }),
-    y = i.useCallback(() => {
-      g(Math.max(Math.max(...Object.values(E.current).map(e => {
-        var t;
-        return null != (t = null == e ? true : e.getBoundingClientRect().height) ? t : m
-      })), m))
+    N = n.useCallback(() => {
+      j(Math.max(Math.max(...Object.values(v.current).map(t => {
+        var e;
+        return null != (e = null == t ? true : t.getBoundingClientRect().height) ? e : 36
+      })), 36))
     }, []);
-  i.useEffect(() => {
-    y();
-    let e = (0, a.debounce)(y, 100);
-    return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, [y]);
-  let b = {
-      [u.PN.ALL_GOOD]: {
-        title: _.t.uaKrRi,
-        description: _.intl.format(_.t.pEdBD4, {
-          termsOfService: p.d$.TOS_LINK,
-          communityGuidelines: p.d$.COMMUNITY_GUIDELINES
+  n.useEffect(() => {
+    N();
+    let t = (0, a.debounce)(N, 100);
+    return window.addEventListener("resize", t), () => window.removeEventListener("resize", t)
+  }, [N]);
+  let f = {
+      [d.PN.ALL_GOOD]: {
+        title: h.t.uaKrRi,
+        description: h.intl.format(h.t.pEdBD4, {
+          termsOfService: x.d$.TOS_LINK,
+          communityGuidelines: x.d$.COMMUNITY_GUIDELINES
         }),
-        status: _.t["/Idfao"],
-        Icon: l.yr3,
-        color: o.A.colors.STATUS_POSITIVE
+        status: h.t["/Idfao"],
+        Icon: c.yr3,
+        color: r.A.colors.STATUS_POSITIVE
       },
-      [u.PN.LIMITED]: {
-        title: _.t.epkcmS,
-        description: _.intl.string(_.t["774juc"]),
-        status: _.t.umleq4,
-        Icon: l.EpV,
-        color: o.A.colors.STATUS_WARNING
+      [d.PN.LIMITED]: {
+        title: h.t.epkcmS,
+        description: h.intl.string(h.t["774juc"]),
+        status: h.t.umleq4,
+        Icon: c.EpV,
+        color: r.A.colors.STATUS_WARNING
       },
-      [u.PN.VERY_LIMITED]: {
-        title: _.t.crzE2X,
-        description: _.intl.string(_.t["T/Ufh9"]),
-        status: _.t.WBtMHf,
-        Icon: l.EpV,
-        color: o.A.unsafe_rawColors.ORANGE_345
+      [d.PN.VERY_LIMITED]: {
+        title: h.t.crzE2X,
+        description: h.intl.string(h.t["T/Ufh9"]),
+        status: h.t.WBtMHf,
+        Icon: c.EpV,
+        color: r.A.unsafe_rawColors.ORANGE_345
       },
-      [u.PN.AT_RISK]: {
-        title: _.t.XRNVzO,
-        description: _.intl.string(_.t["hbH+9S"]),
-        status: _.t["7f+4Lg"],
-        Icon: l.EpV,
-        color: o.A.colors.ICON_FEEDBACK_CRITICAL
+      [d.PN.AT_RISK]: {
+        title: h.t.XRNVzO,
+        description: h.intl.string(h.t["hbH+9S"]),
+        status: h.t["7f+4Lg"],
+        Icon: c.EpV,
+        color: r.A.colors.ICON_FEEDBACK_CRITICAL
       },
-      [u.PN.SUSPENDED]: {
-        title: _.t.MExFkz,
-        description: _.intl.string(_.t["2liUvt"]),
-        status: _.t["0OONGB"],
-        Icon: l.aXh,
-        color: o.A.colors.ICON_MUTED
+      [d.PN.SUSPENDED]: {
+        title: h.t.MExFkz,
+        description: h.intl.string(h.t["2liUvt"]),
+        status: h.t["0OONGB"],
+        Icon: c.aXh,
+        color: r.A.colors.ICON_MUTED
       }
     },
     {
-      title: O,
-      description: v,
-      color: A,
-      Icon: I
-    } = b[e.state],
-    S = Object.keys(b).length;
-  return (0, r.jsxs)(l.ZpM, {
-    className: h.kL,
+      title: p,
+      description: E,
+      color: b,
+      Icon: O
+    } = f[t.state],
+    T = Object.keys(f).length;
+  return (0, i.jsxs)(c.ZpM, {
+    className: g.kL,
     outline: false,
-    children: [(0, r.jsx)("div", {
-      className: h.ME,
-      children: (0, r.jsx)(f.A, {
-        user: t,
-        size: l._3J.SIZE_80
+    children: [(0, i.jsx)("div", {
+      className: g.ME,
+      children: (0, i.jsx)(m.A, {
+        user: e,
+        size: c._3J.SIZE_80
       })
-    }), (0, r.jsxs)("div", {
-      className: h.h5,
-      children: [(0, r.jsxs)("div", {
-        className: h.DD,
-        children: [(0, r.jsx)(l.Heading, {
+    }), (0, i.jsxs)("div", {
+      className: g.h5,
+      children: [(0, i.jsxs)("div", {
+        className: g.DD,
+        children: [(0, i.jsx)(c.Heading, {
           color: "text-strong",
           variant: "heading-lg/normal",
-          children: _.intl.format(O, {
-            hook: e => (0, r.jsx)(l.Text, {
+          children: h.intl.format(p, {
+            hook: t => (0, i.jsx)(c.Text, {
               style: {
-                color: A.css
+                color: b.css
               },
               variant: "heading-lg/bold",
               tag: "span",
-              children: e
+              children: t
             })
           })
-        }), (0, r.jsx)(l.Text, {
+        }), (0, i.jsx)(c.Text, {
           color: "text-default",
           variant: "text-sm/normal",
-          children: v
+          children: E
         })]
-      }), (0, r.jsxs)("div", {
-        className: h.vK,
+      }), (0, i.jsxs)("div", {
+        className: g.vK,
         style: {
-          height: n
+          height: s
         },
-        children: [(0, r.jsx)("div", {
-          className: h.n8
-        }), Object.entries(b).map((t, n) => {
-          let [i, a] = t, s = parseInt(i) === e.state;
-          return (0, r.jsxs)("div", {
-            className: h.Kx,
-            ref: e => {
-              E.current[parseInt(i)] = e
+        children: [(0, i.jsx)("div", {
+          className: g.n8
+        }), Object.entries(f).map((e, s) => {
+          let [n, a] = e, l = parseInt(n) === t.state;
+          return (0, i.jsxs)("div", {
+            className: g.Kx,
+            ref: t => {
+              v.current[parseInt(n)] = t
             },
-            children: [s ? (0, r.jsx)(I, {
-              className: h.xL,
+            children: [l ? (0, i.jsx)(O, {
+              className: g.xL,
               color: a.color
-            }) : (0, r.jsx)("div", {
-              className: h.xL,
+            }) : (0, i.jsx)("div", {
+              className: g.xL,
               style: {
-                marginLeft: 0 === n ? false : 0,
-                marginRight: n === S - 1 ? false : 0
+                marginLeft: 0 === s ? false : 0,
+                marginRight: s === T - 1 ? false : 0
               },
-              children: (0, r.jsx)("div", {
-                className: h.Ie
+              children: (0, i.jsx)("div", {
+                className: g.Ie
               })
-            }), _.intl.format(a.status, {
-              hook: e => (0, r.jsx)(l.Text, {
+            }), h.intl.format(a.status, {
+              hook: t => (0, i.jsx)(c.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                className: h.Rh,
-                children: e
+                className: g.Rh,
+                children: t
               })
             })]
-          }, n)
+          }, s)
         })]
       })]
     })]

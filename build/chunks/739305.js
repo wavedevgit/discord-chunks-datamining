@@ -28,10 +28,10 @@ var r, i, a, Chunk593858 = require("./593858.js"),
   R = T && Chunk42756(T),
   P = Object.prototype,
   D = Chunk860511.TypeError,
-  x = Chunk380744("toStringTag"),
-  L = Chunk753891("TYPED_ARRAY_TAG"),
-  j = "TypedArrayConstructor",
-  M = Chunk593858 && !!Chunk458680 && "Opera" !== Chunk324988(Chunk860511.opera),
+  L = Chunk380744("toStringTag"),
+  x = Chunk753891("TYPED_ARRAY_TAG"),
+  M = "TypedArrayConstructor",
+  j = Chunk593858 && !!Chunk458680 && "Opera" !== Chunk324988(Chunk860511.opera),
   k = false,
   U = {
     Int8Array: 1,
@@ -48,16 +48,16 @@ var r, i, a, Chunk593858 = require("./593858.js"),
     BigInt64Array: 8,
     BigUint64Array: 8
   },
-  V = function(e) {
+  F = function(e) {
     if (!u(e)) returnfalse;
     var t = f(e);
     return "DataView" === t || d(U, t) || d(G, t)
   },
-  F = function(e) {
+  V = function(e) {
     var t = E(e);
     if (u(t)) {
       var n = I(t);
-      return n && d(n, j) ? n[j] : F(t)
+      return n && d(n, M) ? n[M] : V(t)
     }
   },
   B = function(e) {
@@ -74,7 +74,7 @@ var r, i, a, Chunk593858 = require("./593858.js"),
     throw new D(p(e) + " is not a typed array constructor")
   },
   W = function(e, t, n, r) {
-    if (o) {
+    if (s) {
       if (n)
         for (var i in U) {
           var a = l[i];
@@ -85,12 +85,12 @@ var r, i, a, Chunk593858 = require("./593858.js"),
               a.prototype[e] = t
             } catch (e) {}
           }
-        }(!R[e] || n) && h(R, e, n ? t : M && T[e] || t, r)
+        }(!R[e] || n) && h(R, e, n ? t : j && T[e] || t, r)
     }
   },
   K = function(e, t, n) {
     var r, i;
-    if (o) {
+    if (s) {
       if (y) {
         if (n) {
           for (r in U)
@@ -100,36 +100,36 @@ var r, i, a, Chunk593858 = require("./593858.js"),
         }
         if (w[e] && !n) return;
         try {
-          return h(w, e, n ? t : M && w[e] || t)
+          return h(w, e, n ? t : j && w[e] || t)
         } catch (e) {}
       }
       for (r in U)(i = l[r]) && (!i[e] || n) && h(i, e, t)
     }
   };
-for (r in U)(a = (i = Chunk860511[r]) && i.prototype) ? A(a)[j] = i : M = false;
-for (r in G)(a = (i = Chunk860511[r]) && i.prototype) && (A(a)[j] = i);
-if ((!M || !Chunk339626(w) || w === Function.prototype) && (w = function() {
+for (r in U)(a = (i = Chunk860511[r]) && i.prototype) ? A(a)[M] = i : j = false;
+for (r in G)(a = (i = Chunk860511[r]) && i.prototype) && (A(a)[M] = i);
+if ((!j || !Chunk339626(w) || w === Function.prototype) && (w = function() {
     throw new D("Incorrect invocation")
-  }, M))
+  }, j))
   for (r in U) Chunk860511[r] && Chunk458680(Chunk860511[r], w);
-if ((!M || !R || R === P) && (R = w.prototype, M))
+if ((!j || !R || R === P) && (R = w.prototype, j))
   for (r in U) Chunk860511[r] && Chunk458680(Chunk860511[r].prototype, R);
-if (M && Chunk42756(N) !== R && Chunk458680(N, R), Chunk257943 && !Chunk210140(R, x))
-  for (r in k = true, Chunk485155(R, x, {
+if (j && Chunk42756(N) !== R && Chunk458680(N, R), Chunk257943 && !Chunk210140(R, L))
+  for (r in k = true, Chunk485155(R, L, {
       configurable: true,
       get: function() {
-        return u(this) ? this[L] : true
+        return u(this) ? this[x] : true
       }
-    }), U) Chunk860511[r] && Chunk706938(Chunk860511[r], L, r);
+    }), U) Chunk860511[r] && Chunk706938(Chunk860511[r], x, r);
 module.exports = {
-  NATIVE_ARRAY_BUFFER_VIEWS: M,
-  TYPED_ARRAY_TAG: k && L,
+  NATIVE_ARRAY_BUFFER_VIEWS: j,
+  TYPED_ARRAY_TAG: k && x,
   aTypedArray: H,
   aTypedArrayConstructor: Y,
   exportTypedArrayMethod: W,
   exportTypedArrayStaticMethod: K,
-  getTypedArrayConstructor: F,
-  isView: V,
+  getTypedArrayConstructor: V,
+  isView: F,
   isTypedArray: B,
   TypedArray: w,
   TypedArrayPrototype: R

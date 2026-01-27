@@ -65,11 +65,11 @@ function g(e, t, n) {
   if (Math.random() > h) return;
   let g = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     E = (0, a.O)();
-  o.default.track(u.HAw.QUEST_DECISION_ROUNDTRIP, _(f(_(f({}, (0, i.A)()), {
+  s.default.track(u.HAw.QUEST_DECISION_ROUNDTRIP, _(f(_(f({}, (0, i.A)()), {
     endpoint: e.endpoint,
     was_successful: e.wasSuccessful,
     api_latency_ms: g,
-    mobile_network_type: s.A.getType()
+    mobile_network_type: o.A.getType()
   }), null != E && {
     mobile_signal_strength_level: E
   }), {
@@ -92,7 +92,7 @@ class E {
         location: "recordQuestRequestAttempt"
       }),
       a = i && null != r && null != (n = l.A.questAdDecisionByPlacement.get(r)) ? n : null,
-      s = {
+      o = {
         initialSendTimestamp: Date.now(),
         endpoint: e,
         apiResponseTimestamp: null,
@@ -102,7 +102,7 @@ class E {
         previousAdDecision: a,
         placement: r
       };
-    this.pendingRequests.set(e, s), setTimeout(() => {
+    this.pendingRequests.set(e, o), setTimeout(() => {
       let t = this.pendingRequests.get(e);
       null != t && (g(t, "timeout", null), this.pendingRequests.delete(e))
     }, 3e4)
@@ -113,9 +113,9 @@ class E {
       adRequestId: r = null,
       currentQuestId: i = null,
       currentFetchedAt: a = null
-    } = t, s = this.pendingRequests.get(e);
-    if (null != s) {
-      let t, o, {
+    } = t, o = this.pendingRequests.get(e);
+    if (null != o) {
+      let t, s, {
         enableNewRequestBehavior: l
       } = c.A.getConfig({
         location: "recordQuestRequestApiResponse"
@@ -129,13 +129,13 @@ class E {
             decision_id: r
           } : true
         } : null;
-        t = m(s.previousAdDecision, e), o = a
-      } else t = "legacy", o = null;
-      g(_(f({}, s), {
+        t = m(o.previousAdDecision, e), s = a
+      } else t = "legacy", s = null;
+      g(_(f({}, o), {
         apiResponseTimestamp: Date.now(),
         wasSuccessful: n,
         adRequestId: r
-      }), t, o), this.pendingRequests.delete(e)
+      }), t, s), this.pendingRequests.delete(e)
     }
   }
   constructor() {

@@ -32,9 +32,9 @@ function I(e) {
 let S = (e, t, n, r) => {
     let i = I(r),
       a = f.Ay.getName(t.guild_id, t.id, n),
-      s = e.extra.artist.name;
+      o = e.extra.artist.name;
     return A.intl.formatToMarkdownString(i, {
-      artist: s,
+      artist: o,
       userName: a
     }).replaceAll("*", "")
   },
@@ -52,12 +52,12 @@ let S = (e, t, n, r) => {
       parent_title: I,
       provider: C,
       image_url: N
-    } = n.extra.media, w = n.extra.artist.name, R = (0, o.bG)([c.default], () => c.default.getUser(n.author_id)), {
+    } = n.extra.media, w = n.extra.artist.name, R = (0, s.bG)([c.default], () => c.default.getUser(n.author_id)), {
       primaryColor: P,
       secondaryColor: D
-    } = (0, m.A)(N), x = (0, p.TQ)(n), L = i.useCallback(() => {
-      if (null == t || null == R || !(0, d.S1)(x, g.wE)) return;
-      let e = S(n, t, R, x);
+    } = (0, m.A)(N), L = (0, p.TQ)(n), x = i.useCallback(() => {
+      if (null == t || null == R || !(0, d.S1)(L, g.wE)) return;
+      let e = S(n, t, R, L);
       return (0, _.Lu)({
         user: R,
         channel: t,
@@ -67,9 +67,9 @@ let S = (e, t, n, r) => {
         colors: [P, D],
         badges: (0, _.KR)(n)
       })
-    }, [N, w, t, n, P, x, D, R]), j = (0, h.A)(O.fg2.SPOTIFY);
-    if (null == R || !(0, d.S1)(x, g.wE)) return null;
-    let M = () => {
+    }, [N, w, t, n, P, L, D, R]), M = (0, h.A)(O.fg2.SPOTIFY);
+    if (null == R || !(0, d.S1)(L, g.wE)) return null;
+    let j = () => {
         let e = v.M0.ALBUM,
           t = l.A.isProtocolRegistered() ? v.RQ.PLAYER_OPEN(e, n.extra.media.external_parent_id) : v.RQ.WEB_OPEN(e, n.extra.media.external_parent_id);
         window.open(t)
@@ -81,13 +81,13 @@ let S = (e, t, n, r) => {
       };
     return (0, r.jsxs)(y.YN, {
       children: [(0, r.jsx)(y.BC, {
-        onClickTitle: M,
+        onClickTitle: j,
         onClickSubtitle: k,
-        onClickThumbnail: M,
+        onClickThumbnail: j,
         channel: t,
         entry: n,
-        headerIcons: C === s.X.SPOTIFY ? (0, r.jsx)(b.A, {
-          onClick: j,
+        headerIcons: C === o.X.SPOTIFY ? (0, r.jsx)(b.A, {
+          onClick: M,
           Icon: u.A,
           "aria-label": A.intl.string(A.t["0ZB/XE"])
         }) : null,
@@ -106,7 +106,7 @@ let S = (e, t, n, r) => {
           onVoiceChannelPreview: f,
           user: R,
           channel: t,
-          generateReactionImage: L,
+          generateReactionImage: x,
           reactionImageAltText: T(n, R),
           entry: n
         })

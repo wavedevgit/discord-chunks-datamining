@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk237528 = require("./237528.jsx"),
   Chunk121327 = require("./121327.js");
-let s = {
+let o = {
     name: "Chip",
     id: "chip",
     component: Chunk237528.v,
@@ -97,11 +97,11 @@ let s = {
       }
     }
   },
-  o = ["blurple", "purple", "green", "orange", "yellow", "pink", "red", "gray"],
+  s = ["blurple", "purple", "green", "orange", "yellow", "pink", "red", "gray"],
   l = ["Light", "Medium", "Dark"],
   c = {
     title: "Chip",
-    stories: [s, {
+    stories: [o, {
       name: "All Variants",
       id: "chip-all-variants",
       component: function() {
@@ -114,7 +114,7 @@ let s = {
               children: e
             }), (0, r.jsx)("div", {
               className: a.f2,
-              children: o.map(t => {
+              children: s.map(t => {
                 let n = "".concat(t).concat(e);
                 return (0, r.jsx)(i.v, {
                   text: t,

@@ -9,7 +9,7 @@ var Chunk627968 = require("./627968.js"),
   a = require.n(Chunk284009),
   Chunk397927 = require("./397927.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -52,23 +52,23 @@ let d = {
     let {
       applicationId: t,
       gameProfileModalChecks: i,
-      source: o,
+      source: s,
       sourceUserId: c,
       appContext: d
     } = e;
-    a()(i.shouldOpenGameProfile, "Passed a false value for [gameProfileModalChecks]. Are you using the useShouldOpenGameProfile hook correctly?"), a()(i.applicationId === t, "Passed an unexpected [applicationId]. Are you passing a different one than you passed to useShouldOpenGameProfileModal?"), (0, s.mMO)(async () => {
+    a()(i.shouldOpenGameProfile, "Passed a false value for [gameProfileModalChecks]. Are you using the useShouldOpenGameProfile hook correctly?"), a()(i.applicationId === t, "Passed an unexpected [applicationId]. Are you passing a different one than you passed to useShouldOpenGameProfileModal?"), (0, o.mMO)(async () => {
       let {
         default: e
       } = await n.e("13530").then(n.bind(n, 225732));
       return n => (0, r.jsx)(e, u(l({
         applicationId: t,
-        source: o,
+        source: s,
         sourceUserId: c
       }, n), {
         appContext: d
       }))
     }, {
-      contextKey: null != d ? (0, s.TId)(d) : true
+      contextKey: null != d ? (0, o.TId)(d) : true
     })
   }
 }

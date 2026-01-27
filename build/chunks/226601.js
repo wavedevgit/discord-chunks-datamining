@@ -16,38 +16,38 @@ let l = {
 
 function u(e, t, n) {
   let i = r.A.getByteOrder(e, t),
-    s = (0, o.y)(e, a.dA, t, (0, o.x)(e, t, i), i, n);
-  return d(e, t, s, i)
+    o = (0, s.y)(e, a.dA, t, (0, s.x)(e, t, i), i, n);
+  return d(e, t, o, i)
 }
 
 function d(e, t, n, r) {
   if (!n.MPEntry) return n;
   let a = [];
-  for (let o = 0; o < Math.ceil(n.MPEntry.value.length / c); o++) {
-    a[o] = {};
-    let l = f(n.MPEntry.value, o * c, i.A.getTypeSize("LONG"), r);
-    a[o].ImageFlags = p(l), a[o].ImageFormat = _(l), a[o].ImageType = h(l);
-    let u = f(n.MPEntry.value, o * c + 4, i.A.getTypeSize("LONG"), r);
-    a[o].ImageSize = {
+  for (let s = 0; s < Math.ceil(n.MPEntry.value.length / c); s++) {
+    a[s] = {};
+    let l = f(n.MPEntry.value, s * c, i.A.getTypeSize("LONG"), r);
+    a[s].ImageFlags = p(l), a[s].ImageFormat = _(l), a[s].ImageType = h(l);
+    let u = f(n.MPEntry.value, s * c + 4, i.A.getTypeSize("LONG"), r);
+    a[s].ImageSize = {
       value: u,
       description: "" + u
     };
-    let d = m(o, n.MPEntry, r, t);
-    a[o].ImageOffset = {
+    let d = m(s, n.MPEntry, r, t);
+    a[s].ImageOffset = {
       value: d,
       description: "" + d
     };
-    let g = f(n.MPEntry.value, o * c + 12, i.A.getTypeSize("SHORT"), r);
-    a[o].DependentImage1EntryNumber = {
+    let g = f(n.MPEntry.value, s * c + 12, i.A.getTypeSize("SHORT"), r);
+    a[s].DependentImage1EntryNumber = {
       value: g,
       description: "" + g
     };
-    let E = f(n.MPEntry.value, o * c + 14, i.A.getTypeSize("SHORT"), r);
-    a[o].DependentImage2EntryNumber = {
+    let E = f(n.MPEntry.value, s * c + 14, i.A.getTypeSize("SHORT"), r);
+    a[s].DependentImage2EntryNumber = {
       value: E,
       description: "" + E
-    }, a[o].image = e.buffer.slice(d, d + u), (0, s.L$)(a[o], "base64", function() {
-      return (0, s.Zo)(this.image)
+    }, a[s].image = e.buffer.slice(d, d + u), (0, o.L$)(a[s], "base64", function() {
+      return (0, o.Zo)(this.image)
     })
   }
   return n.Images = a, n

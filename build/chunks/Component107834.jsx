@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 107834, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 107834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk582754 = require("./582754.js"),
   Chunk397927 = require("./397927.js"),
@@ -21,33 +20,32 @@ var Chunk503698 = require("./503698.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk187585 = require("./187585.js");
-let y = e => {
-    let {
-      isAuthenticated: t,
-      user: n
-    } = e, i = (0, _.TW)(n, m.PremiumTypes.TIER_2), s = (0, d.Ay)();
-    return (0, r.jsx)(c.A, {
-      section: h.JJy.NAVIGATION,
-      children: (0, r.jsx)(l.NPJ, {
-        theme: s,
-        children: e => (0, r.jsxs)(f.A, {
-          isAuthenticated: t,
-          className: a()(e, {
-            [E.xD]: !i && !(0, o.Mw)(s),
-            [E.lO]: !i && (0, o.Mw)(s)
-          }),
-          role: "navigation",
-          children: [(0, r.jsx)(f.A.Icon, {
-            icon: l.tvc,
-            "aria-hidden": true,
-            color: i ? true : l.LU0.unsafe_rawColors.PREMIUM_TIER_2_PINK.css
-          }), (0, r.jsx)(f.A.Title, {
-            children: g.intl.string(g.t.Ipxkog)
-          })]
-        })
+let b = Chunk311907.Ay.connectStores([Chunk287809.default], () => ({
+  user: p.default.getCurrentUser()
+}))((0, Chunk490415.A)(e => {
+  let {
+    isAuthenticated: t,
+    user: n
+  } = e, i = (0, m.TW)(n, A.PremiumTypes.TIER_2), s = (0, u.Ay)();
+  return (0, r.jsx)(c.A, {
+    section: g.JJy.NAVIGATION,
+    children: (0, r.jsx)(o.NPJ, {
+      theme: s,
+      children: e => (0, r.jsxs)(_.A, {
+        isAuthenticated: t,
+        className: l()(e, {
+          [h.xD]: !i && !(0, a.Mw)(s),
+          [h.lO]: !i && (0, a.Mw)(s)
+        }),
+        role: "navigation",
+        children: [(0, r.jsx)(_.A.Icon, {
+          icon: o.tvc,
+          "aria-hidden": true,
+          color: i ? true : o.LU0.unsafe_rawColors.PREMIUM_TIER_2_PINK.css
+        }), (0, r.jsx)(_.A.Title, {
+          children: f.intl.string(f.t.Ipxkog)
+        })]
       })
     })
-  },
-  b = Chunk311907.Ay.connectStores([Chunk287809.default], () => ({
-    user: p.default.getCurrentUser()
-  }))((0, Chunk490415.A)(y))
+  })
+}))

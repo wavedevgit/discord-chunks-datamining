@@ -37,7 +37,7 @@ let u = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk
     let {
       user: t,
       guildId: n,
-      avatarDecorationOverride: s,
+      avatarDecorationOverride: o,
       status: l,
       avatarSize: d = i._3J.SIZE_120,
       "aria-hidden": f = false,
@@ -53,7 +53,7 @@ let u = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk
       guildId: n,
       size: d,
       showPending: true,
-      avatarDecorationOverride: s,
+      avatarDecorationOverride: o,
       animateOnHover: _
     });
     return (0, r.jsx)(u, c({
@@ -61,7 +61,7 @@ let u = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk
       src: g,
       size: d,
       status: l,
-      "aria-label": f ? true : o.intl.string(o.t.lqaIxI),
+      "aria-label": f ? true : s.intl.string(s.t.lqaIxI),
       "aria-hidden": f,
       className: p
     }, E))

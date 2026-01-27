@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk258873 = require("./258873.js"),
   Chunk622242 = require("./622242.js"),
   Chunk731738 = require("./731738.js"),
@@ -57,10 +57,10 @@ function T() {
     loading: e
   })
 }
-let C = s().throttle(e => {
+let C = o().throttle(e => {
   m.A.increment({
     name: c.K.APP_CRASHED,
-    tags: ["reason:".concat(o.J.UNHANDLED_JS_ERROR), "level:".concat(l.k.FATAL), "modded_client:".concat(e)]
+    tags: ["reason:".concat(s.J.UNHANDLED_JS_ERROR), "level:".concat(l.k.FATAL), "modded_client:".concat(e)]
   }, true)
 }, 100, {
   trailing: false

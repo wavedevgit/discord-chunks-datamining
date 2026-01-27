@@ -84,7 +84,7 @@ function h(e) {
     className: g,
     style: E
   } = e, y = p(e, ["focusProps", "lineClamp", "role", "text", "textVariant", "type", "variant", "buttonRef", "className", "style"]);
-  return (0, r.jsx)(s.vN, f(u({}, t), {
+  return (0, r.jsx)(o.vN, f(u({}, t), {
     children: (0, r.jsx)("button", f(u({
       className: a()(l.textButton, l[h]),
       "data-mana-component": "text-button",
@@ -92,7 +92,7 @@ function h(e) {
       type: _,
       ref: m
     }, y), {
-      children: (0, r.jsx)(o.E, {
+      children: (0, r.jsx)(s.E, {
         tag: "span",
         variant: d,
         color: "none",

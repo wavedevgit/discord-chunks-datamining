@@ -1,8 +1,8 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 982985, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  e: () => m,
-  l: () => f
+  e: () => f,
+  l: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,7 +12,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk518477 = require("./518477.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -62,22 +62,8 @@ function p(e) {
     action: a.pt.SEND_MESSAGE,
     icon: r.oyn,
     onClick: l,
-    text: c.intl.string(c.t.zROXEV)
+    text: d.intl.string(d.t.zROXEV)
   }
-}
-
-function m(e) {
-  let {
-    userId: t,
-    onClose: n,
-    variant: i = "primary"
-  } = e, r = u(e, ["userId", "onClose", "variant"]), s = p({
-    userId: t,
-    onClose: n
-  });
-  return (0, l.jsx)(o.FD, d({
-    variant: i
-  }, s, r))
 }
 
 function f(e) {
@@ -88,12 +74,26 @@ function f(e) {
   } = e, r = u(e, ["userId", "onClose", "variant"]), s = p({
     userId: t,
     onClose: n
+  });
+  return (0, l.jsx)(o.FD, c({
+    variant: i
+  }, s, r))
+}
+
+function m(e) {
+  let {
+    userId: t,
+    onClose: n,
+    variant: i = "primary"
+  } = e, r = u(e, ["userId", "onClose", "variant"]), s = p({
+    userId: t,
+    onClose: n
   }), {
     text: a
-  } = s, c = u(s, ["text"]);
-  return (0, l.jsx)(o.q3, d({
+  } = s, d = u(s, ["text"]);
+  return (0, l.jsx)(o.q3, c({
     tooltipText: a,
     "aria-label": a,
     variant: i
-  }, c, r))
+  }, d, r))
 }

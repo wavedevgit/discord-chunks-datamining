@@ -12,7 +12,7 @@ var Chunk985018 = require("./985018.jsx");
 require("./333354.js");
 var Chunk329431 = require("./329431.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,7 +28,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -58,31 +58,31 @@ function d(e) {
   let {
     heading: t,
     description: n,
-    label: o,
+    label: s,
     isEnabled: l
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.Heading, {
-      className: s.zQ,
+      className: o.zQ,
       variant: "heading-lg/extrabold",
       children: t
     }), (0, r.jsx)(i.Text, {
-      className: s.LW,
+      className: o.LW,
       variant: "text-sm/normal",
       children: n
     }), (0, r.jsxs)("div", {
-      className: s.XN,
-      children: [null != o && (0, r.jsxs)("div", {
-        className: s.qB,
+      className: o.XN,
+      children: [null != s && (0, r.jsxs)("div", {
+        className: o.qB,
         children: [(0, r.jsx)(i._Jp, {
           size: "sm",
           color: i.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/semibold",
-          children: o
+          children: s
         })]
       }), l && (0, r.jsxs)("div", {
-        className: s.qB,
+        className: o.qB,
         children: [(0, r.jsx)(i.yr3, {
           size: "custom",
           height: 14,

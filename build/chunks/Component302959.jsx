@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 302959, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 302959, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => R,
-  M: () => w
+  A: () => I,
+  M: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,15 +23,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk654471 = require("./654471.js");
 
-function O(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
@@ -40,116 +30,112 @@ function v(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function A(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function O(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
-  if (null == e) return {};
-  var n, r, i, a = {};
-  if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-  }
-  if (a = T(e, t), Object.getOwnPropertySymbols)
-    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-  return a
-}
-
-function T(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.getOwnPropertyNames(e);
-  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-  return i
-}
-
-function C(e) {
+function j(e) {
   let {
     type: t,
     source: n,
     activity: i,
-    applicationStream: a,
-    user: s,
-    guildId: o,
+    applicationStream: l,
+    user: a,
+    guildId: s,
     channelId: c,
     onAction: u
   } = e;
-  return (0, r.jsx)(l.A, {
-    className: (0, E.t)(b, "actions", t),
+  return (0, r.jsx)(o.A, {
+    className: (0, b.t)(h, "actions", t),
     type: t,
     source: n,
     activity: i,
-    applicationStream: a,
-    user: s,
-    guildId: o,
+    applicationStream: l,
+    user: a,
+    guildId: s,
     buttonVariant: "primary",
     channelId: c,
     onAction: u
   })
 }
-
-function N(e) {
-  let {
-    activity: t,
-    user: n,
-    useStoreStream: l = true,
-    showActions: E = true,
-    hideHeader: b = false,
-    showChannelDetails: O = false
-  } = e, A = S(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]), T = (0, a.bG)([m.A, _.A], () => {
-    var e;
-    return _.A.getChannel(null == (e = m.A.getVoiceStateForUser(n.id)) ? true : e.channelId)
-  }), N = (0, d.v)("UserActivityContainer", T), w = (0, a.bG)([p.A], () => l ? p.A.getAnyStreamForUser(n.id) : null), R = (null == t ? true : t.type) === y.$pd.HANG_STATUS && N ? T : null, P = (0, a.bG)([h.A, m.A, _.A], () => {
-    var e, r;
-    return (0, s.A)(t, y.jUm.EMBEDDED) ? h.A.getGuild(null == (e = _.A.getChannel(null == (r = m.A.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != R ? h.A.getGuild(R.getGuildId()) : null
-  }), D = (0, a.bG)([h.A], () => null != w ? h.A.getGuild(w.guildId) : null), x = (0, a.bG)([c.A], () => {
-    if (null != t)
-      if (null != t.application_id) return c.A.getApplication(t.application_id);
-      else return c.A.getApplicationByName(t.name);
-    return null
-  });
-  return (i.useEffect(() => {
-    (null == t ? true : t.type) === y.$pd.HANG_STATUS && N && g.default.track(y.HAw.VIEW_HANG_STATUS, v({
-      source: "UserActivity",
-      other_user_id: n.id
-    }, (0, u.A)(null == R ? true : R.id)))
-  }, [null == t ? true : t.type, N, R, n.id]), (null == t ? true : t.type) !== y.$pd.HANG_STATUS || N) ? (0, r.jsx)(o.A, I(v({}, A), {
-    activity: t,
-    user: n,
-    application: x,
-    hideHeader: b,
-    activityGuild: null != P ? P : D,
-    showChannelDetails: O,
-    channel: O ? T : true,
-    renderActions: E ? () => (0, r.jsx)(C, I(v({}, A), {
-      applicationStream: w,
+let S = Chunk153331.A.Types,
+  I = function(e) {
+    let {
       activity: t,
-      user: n
-    })) : null,
-    onOpenSpotifyTrack: f.Mp,
-    onOpenSpotifyArtist: f.mN,
-    onOpenSpotifyAlbum: f.QX
-  })) : null
-}
-let w = Chunk153331.A.Types,
-  R = N
+      user: n,
+      useStoreStream: o = true,
+      showActions: b = true,
+      hideHeader: h = false,
+      showChannelDetails: S = false
+    } = e, I = function(e, t) {
+      if (null == e) return {};
+      var n, r, i, l = {};
+      if ("u" > typeof Reflect && Reflect.ownKeys) {
+        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+        return l
+      }
+      if (l = function(e, t) {
+          if (null == e) return {};
+          var n, r, i = {},
+            l = Object.getOwnPropertyNames(e);
+          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+          return i
+        }(e, t), Object.getOwnPropertySymbols)
+        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+      return l
+    }(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]), x = (0, l.bG)([y.A, m.A], () => {
+      var e;
+      return m.A.getChannel(null == (e = y.A.getVoiceStateForUser(n.id)) ? true : e.channelId)
+    }), E = (0, d.v)("UserActivityContainer", x), P = (0, l.bG)([f.A], () => o ? f.A.getAnyStreamForUser(n.id) : null), T = (null == t ? true : t.type) === A.$pd.HANG_STATUS && E ? x : null, N = (0, l.bG)([g.A, y.A, m.A], () => {
+      var e, r;
+      return (0, a.A)(t, A.jUm.EMBEDDED) ? g.A.getGuild(null == (e = m.A.getChannel(null == (r = y.A.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != T ? g.A.getGuild(T.getGuildId()) : null
+    }), w = (0, l.bG)([g.A], () => null != P ? g.A.getGuild(P.guildId) : null), C = (0, l.bG)([c.A], () => {
+      if (null != t)
+        if (null != t.application_id) return c.A.getApplication(t.application_id);
+        else return c.A.getApplicationByName(t.name);
+      return null
+    });
+    return (i.useEffect(() => {
+      (null == t ? true : t.type) === A.$pd.HANG_STATUS && E && _.default.track(A.HAw.VIEW_HANG_STATUS, v({
+        source: "UserActivity",
+        other_user_id: n.id
+      }, (0, u.A)(null == T ? true : T.id)))
+    }, [null == t ? true : t.type, E, T, n.id]), (null == t ? true : t.type) !== A.$pd.HANG_STATUS || E) ? (0, r.jsx)(s.A, O(v({}, I), {
+      activity: t,
+      user: n,
+      application: C,
+      hideHeader: h,
+      activityGuild: null != N ? N : w,
+      showChannelDetails: S,
+      channel: S ? x : true,
+      renderActions: b ? () => (0, r.jsx)(j, O(v({}, I), {
+        applicationStream: P,
+        activity: t,
+        user: n
+      })) : null,
+      onOpenSpotifyTrack: p.Mp,
+      onOpenSpotifyArtist: p.mN,
+      onOpenSpotifyAlbum: p.QX
+    })) : null
+  }

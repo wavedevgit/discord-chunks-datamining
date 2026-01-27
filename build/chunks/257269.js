@@ -11,7 +11,7 @@ var Chunk526218 = require("./526218.js"),
   Chunk73153 = require("./73153.js");
 require("./346835.js");
 var Chunk652215 = require("./652215.js");
-async function o(e, t) {
+async function s(e, t) {
   if (null == e || null == t) return null;
   let n = (0, r.t)(t);
   if (null == n) return null;
@@ -19,7 +19,7 @@ async function o(e, t) {
     let {
       body: t
     } = await i.Bo.get({
-      url: s.Rsh.APPLICATION_MANAGED_ACTIVITY_LINK(e, n.decodedLinkId),
+      url: o.Rsh.APPLICATION_MANAGED_ACTIVITY_LINK(e, n.decodedLinkId),
       rejectWithError: false
     });
     return t
@@ -28,7 +28,7 @@ async function o(e, t) {
     let {
       body: t
     } = await i.Bo.get({
-      url: s.Rsh.APPLICATION_QUICK_ACTIVITY_LINK(e, n.decodedLinkId),
+      url: o.Rsh.APPLICATION_QUICK_ACTIVITY_LINK(e, n.decodedLinkId),
       rejectWithError: false
     });
     return t
@@ -41,7 +41,7 @@ async function l(e, t, n) {
     customId: r
   };
   try {
-    let n = await o(e, t);
+    let n = await s(e, t);
     if (null == n) return {
       customId: r
     };
@@ -60,7 +60,7 @@ function c(e) {
 }
 async function u(e, t) {
   if (null == e || null == t) return Promise.reject("appId or linkId null");
-  let n = await o(e, t);
+  let n = await s(e, t);
   if (null == n) return Promise.reject("fetchCustomActivityLink body is null");
   a.h.dispatch({
     type: "CUSTOM_ACTIVITY_LINK_FETCH_SUCCESS",

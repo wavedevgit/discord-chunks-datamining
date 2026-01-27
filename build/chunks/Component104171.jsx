@@ -9,7 +9,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk573435 = require("./573435.jsx"),
   Chunk342296 = require("./342296.jsx"),
@@ -83,7 +83,7 @@ function T(e) {
 
 function C(e) {
   return (0, i.jsx)("div", {
-    className: o()(_.In, _.iq),
+    className: s()(_.In, _.iq),
     children: e
   })
 }
@@ -127,46 +127,46 @@ class R extends(r = Chunk64700.PureComponent) {
       renderUser: n = this.defaultRenderUser,
       size: r,
       extraDetail: a
-    } = this.props, s = [], o = e.length === t ? e.length : t - 1, l = this.renderMoreUsers(o), u = 0;
-    for (; u < o && u < e.length;) {
+    } = this.props, o = [], s = e.length === t ? e.length : t - 1, l = this.renderMoreUsers(s), u = 0;
+    for (; u < s && u < e.length;) {
       var d;
       let t = null == l && null == a && u === e.length - 1,
-        o = n(e[u], t, u);
-      s.push(t ? (0, i.jsx)("div", {
+        s = n(e[u], t, u);
+      o.push(t ? (0, i.jsx)("div", {
         className: _.H,
-        children: o
+        children: s
       }, S(null != (d = e[u]) ? d : null, u)) : (0, i.jsx)(c.Ay, {
         className: _.aV,
         height: r,
         width: r,
         mask: c.Ay.Masks.VOICE_USER_SUMMARY_ITEM,
-        children: o
+        children: s
       }, S(e[u], u))), u++
     }
-    return null != a ? s.push(a) : null != l && s.push(l), s
+    return null != a ? o.push(a) : null != l && o.push(l), o
   }
   renderMoreUsers(e) {
     let {
       max: t,
       count: n,
       hideMoreUsers: r,
-      renderMoreUsers: s,
-      users: o,
+      renderMoreUsers: o,
+      users: s,
       dimEmptyUsers: l
-    } = this.props, c = Math.min(e, o.length), u = l ? C : s;
+    } = this.props, c = Math.min(e, s.length), u = l ? C : o;
     if (!r) {
       if (null != n) {
         if (n >= t) return (0, i.jsx)(a.Fragment, {
           children: u("".concat(t, "+"), t)
         }, "more-users");
-        else if (n > o.length) {
-          let e = n - o.length;
+        else if (n > s.length) {
+          let e = n - s.length;
           return (0, i.jsx)(a.Fragment, {
             children: u("+".concat(e), e)
           }, "more-users")
         }
-      } else if (c < o.length) {
-        let e = Math.min(o.length - c, 99);
+      } else if (c < s.length) {
+        let e = Math.min(s.length - c, 99);
         return (0, i.jsx)(a.Fragment, {
           children: u("+".concat(e), e)
         }, "more-users")
@@ -192,16 +192,16 @@ class R extends(r = Chunk64700.PureComponent) {
       users: n,
       guildId: r,
       showUserPopout: a,
-      useFallbackUserForPopout: s
+      useFallbackUserForPopout: o
     } = this.props, {
       popoutUserId: l
     } = this.state;
     if (null == l) return (0, i.jsxs)("div", {
-      className: o()(e, _.kL, N(t)),
+      className: s()(e, _.kL, N(t)),
       children: [this.renderIcon(), this.renderUsers()]
     });
     let c = n.find(e => e instanceof d.A && e.id === l),
-      p = s && null == f.default.getUser(l);
+      p = o && null == f.default.getUser(l);
     return (0, i.jsx)(u.A, {
       targetElementRef: this._ref,
       userId: l,
@@ -214,7 +214,7 @@ class R extends(r = Chunk64700.PureComponent) {
       }),
       clickTrap: true,
       children: n => (0, i.jsxs)("div", E(m({
-        className: o()(e, _.kL, N(t)),
+        className: s()(e, _.kL, N(t)),
         ref: this._ref
       }, n), {
         children: [this.renderIcon(), this.renderUsers()]
@@ -227,13 +227,13 @@ class R extends(r = Chunk64700.PureComponent) {
     }), h(this, "_ref", a.createRef()), h(this, "defaultRenderUser", (e, t, n) => {
       let r, {
         showUserPopout: a,
-        guildId: s,
+        guildId: o,
         size: c,
         dimEmptyUsers: u
       } = this.props;
       if (null == e)
         if (!this.props.showDefaultAvatarsForNullUsers) return (0, i.jsx)("div", {
-          className: o()(_.F2, {
+          className: s()(_.F2, {
             [_.F_]: u
           })
         });
@@ -254,7 +254,7 @@ class R extends(r = Chunk64700.PureComponent) {
           height: e
         })
       } else r = (0, i.jsx)("img", {
-        src: e.getAvatarURL(s, c),
+        src: e.getAvatarURL(o, c),
         alt: e.username,
         className: _.my
       });

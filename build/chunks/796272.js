@@ -2,7 +2,7 @@
 /** chunk id: 796272, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  getForceSdrEmojisStickersConfig: () => s
+  getForceSdrEmojisStickersConfig: () => o
 });
 var Chunk945810 = require("./945810.js"),
   Chunk332628 = require("./332628.js");
@@ -22,7 +22,7 @@ let a = (0, Chunk945810.mj)({
   }
 });
 
-function s(e) {
+function o(e) {
   let {
     location: t
   } = e, {

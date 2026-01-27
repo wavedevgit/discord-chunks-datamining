@@ -19,10 +19,10 @@ async function a(e, t) {
   n.volume = 0, n.src = e, n.currentTime = t, await n.play(), n.pause();
   let i = Math.min(r.vZ / n.videoWidth, r.s3 / n.videoHeight),
     a = n.videoWidth * i,
-    s = n.videoHeight * i,
-    o = document.createElement("canvas");
-  o.width = a, o.height = s;
-  let l = o.getContext("2d");
+    o = n.videoHeight * i,
+    s = document.createElement("canvas");
+  s.width = a, s.height = o;
+  let l = s.getContext("2d");
   if (null == l) throw Error("Could not create canvas context");
-  return l.drawImage(n, 0, 0, n.videoWidth, n.videoHeight, 0, 0, a, s), o.toDataURL("image/jpeg", .9)
+  return l.drawImage(n, 0, 0, n.videoWidth, n.videoHeight, 0, 0, a, o), s.toDataURL("image/jpeg", .9)
 }

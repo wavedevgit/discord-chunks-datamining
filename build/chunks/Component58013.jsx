@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 58013, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  A: () => d
+  A: () => u
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,12 +12,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk528685 = require("./528685.jsx"),
   Chunk524832 = require("./524832.js");
 
-function d(e) {
+function u(e) {
   let {
     transitionTo: t,
     token: n,
-    width: d
-  } = e, [h, p] = i.useState(u.k.START), [g, m] = i.useState(null), [f, _] = i.useState(""), A = {
+    width: u
+  } = e, [h, p] = i.useState(d.k.START), [g, _] = i.useState(null), [f, m] = i.useState(""), A = {
     impression_group: s.ImpressionGroups.ACCOUNT_REVERT_FLOW
   };
   return (0, r.jsx)("div", {
@@ -27,10 +26,10 @@ function d(e) {
     },
     children: (0, r.jsxs)(l.tN_, {
       activeSlide: h,
-      width: d,
-      onSlideReady: m,
+      width: u,
+      onSlideReady: _,
       children: [(0, r.jsx)(l.q7S, {
-        id: u.k.START,
+        id: d.k.START,
         impressionProperties: A,
         impressionName: s.ImpressionNames.ACCOUNT_REVERT_EXPLAINER,
         children: (0, r.jsx)(o.A, {
@@ -38,18 +37,18 @@ function d(e) {
           transitionTo: t
         })
       }), (0, r.jsx)(l.q7S, {
-        id: u.k.PASSWORD,
+        id: d.k.PASSWORD,
         impressionProperties: A,
         impressionName: s.ImpressionNames.ACCOUNT_REVERT_CHANGE_PASSWORD,
         children: (0, r.jsx)(a.A, {
-          setOriginalEmail: _,
+          setOriginalEmail: m,
           setSlide: p,
           transitionTo: t,
-          ready: g === u.k.PASSWORD,
+          ready: g === d.k.PASSWORD,
           token: n
         })
       }), (0, r.jsx)(l.q7S, {
-        id: u.k.SUCCESS,
+        id: d.k.SUCCESS,
         impressionProperties: A,
         impressionName: s.ImpressionNames.ACCOUNT_REVERT_SUCCESS,
         children: (0, r.jsx)(c.A, {

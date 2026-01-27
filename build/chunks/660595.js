@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 660595, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 660595, original params: e,t,n (module,exports,require) **/
 module.exports = {
   BI: "jumpingWumpusContainer_cc63c7",
   Q: "jumpingWumpus_cc63c7",

@@ -62,10 +62,10 @@ function E(e, t, n) {
 function y(e, t, n, r) {
   let i = n.find(e => null != e.party && e.party.id),
     a = null != i && null != i.party ? i.party.id : null,
-    s = m(t, e);
-  if (null == a || r === d.clD.OFFLINE) return null != s && void g(t, e);
-  if (null != s) {
-    if (s === a) returnfalse;
+    o = m(t, e);
+  if (null == a || r === d.clD.OFFLINE) return null != o && void g(t, e);
+  if (null != o) {
+    if (o === a) returnfalse;
     g(t, e)
   }
   E(t, e, a)

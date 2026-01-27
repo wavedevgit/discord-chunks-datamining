@@ -1,4 +1,4 @@
-/** Chunk was on 67564 **/
+/** Chunk was on 41727 **/
 /** chunk id: 223938, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => ee
@@ -238,8 +238,8 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
     handleResize: e1
   } = (0, H.ck)(ei), {
     handleTab: e9,
-    handleEnter: e2,
-    handleMoveSelection: e7
+    handleEnter: e7,
+    handleMoveSelection: e2
   } = (p = l.useCallback(() => {
     var e, t;
     return !!(!eB && (null == (e = eN.current) ? true : e.onTabOrEnter(false))) || (null == (t = eJ.current) ? true : t.onTabOrEnter(false)) || false
@@ -375,8 +375,8 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
                     onKeyDown: eo,
                     onSubmit: eq,
                     onTab: e9,
-                    onEnter: e2,
-                    onMoveSelection: e7,
+                    onEnter: e7,
+                    onMoveSelection: e2,
                     onSelectionChanged: ez,
                     onMaybeShowAutocomplete: eQ,
                     onHideAutocomplete: eZ,

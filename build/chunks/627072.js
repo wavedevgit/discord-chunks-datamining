@@ -3,7 +3,7 @@
 "use strict";
 
 function r(e) {
-  var t, n, r, i, a, s, o, l, c, u, d, f, p;
+  var t, n, r, i, a, o, s, l, c, u, d, f, p;
   let _ = e.skus.map(e => {
       let t = e.tenant_metadata.plan_features.map(e => ({
         title: e.title,
@@ -21,7 +21,7 @@ function r(e) {
     id: e.id,
     name: e.name,
     gameId: null != (t = null == (i = e.tenant_metadata) || null == (r = i.guild_monetization) || null == (n = r.game_server) ? true : n.game_application_id) ? t : "",
-    provider: null == (o = e.tenant_metadata) || null == (s = o.guild_monetization) || null == (a = s.game_server) ? true : a.provider,
+    provider: null == (s = e.tenant_metadata) || null == (o = s.guild_monetization) || null == (a = o.game_server) ? true : a.provider,
     plans: _,
     baseCost: h,
     disabled: null == (u = e.tenant_metadata) || null == (c = u.guild_monetization) || null == (l = c.game_server) ? true : l.disabled,

@@ -15,17 +15,17 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = "formGuidelinesStorageKey";
-class o extends Chunk439372.A {
+let o = "formGuidelinesStorageKey";
+class s extends Chunk439372.A {
   _initialize() {
-    let e = r.w.get(s);
+    let e = r.w.get(o);
     null != e && (this.seenForumGuidelines = new Set(e))
   }
   _terminate() {
-    r.w.set(s, this.seenForumGuidelines)
+    r.w.set(o, this.seenForumGuidelines)
   }
   markAsSeen(e) {
-    this.seenForumGuidelines.add(e), r.w.set(s, this.seenForumGuidelines)
+    this.seenForumGuidelines.add(e), r.w.set(o, this.seenForumGuidelines)
   }
   hasSeen(e) {
     return this.seenForumGuidelines.has(e)
@@ -34,4 +34,4 @@ class o extends Chunk439372.A {
     super(...e), a(this, "seenForumGuidelines", new Set)
   }
 }
-let l = new o
+let l = new s

@@ -26,11 +26,11 @@ function h(e) {
     onAction: m,
     onClose: g
   } = e, E = (0, i.bG)([f.A], () => null != f.A.getAccount(null, p.fg2.CRUNCHYROLL));
-  if (!(0, o.A)(t) && !(0, c.CU)(n)) return null;
+  if (!(0, s.A)(t) && !(0, c.CU)(n)) return null;
   if (!E) return (0, r.jsx)(a.Drp, {
     id: "connect-crunchyroll",
     label: _.intl.formatToPlainString(_.t.XWSHTb, {
-      platform: s.A.get(p.fg2.CRUNCHYROLL).name
+      platform: o.A.get(p.fg2.CRUNCHYROLL).name
     }),
     action: () => {
       null == m || m({

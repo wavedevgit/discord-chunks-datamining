@@ -149,12 +149,12 @@ let g = [{
         let {
           selectionMode: t,
           withLeadingAndTrailing: n
-        } = e, a = h(e, ["selectionMode", "withLeadingAndTrailing"]), [s, o] = i.useState(true), [l, u] = i.useState([]), d = b(n, a.asyncOptions);
+        } = e, a = h(e, ["selectionMode", "withLeadingAndTrailing"]), [o, s] = i.useState(true), [l, u] = i.useState([]), d = b(n, a.asyncOptions);
         return "single" === t ? (0, r.jsx)(c.l, _(f({}, a), {
           selectionMode: t,
           options: d,
-          onSelectionChange: o,
-          value: s
+          onSelectionChange: s,
+          value: o
         })) : (0, r.jsx)(c.l, _(f({}, a), {
           selectionMode: t,
           options: d,
@@ -284,13 +284,13 @@ let g = [{
           selectionMode: t,
           withLeadingAndTrailing: n,
           asyncOptions: a
-        } = e, s = h(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]), [o, c] = i.useState(true), [u, d] = i.useState([]), p = b(n, a);
-        return "single" === t ? (0, r.jsx)(l.Z, _(f({}, s), {
+        } = e, o = h(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]), [s, c] = i.useState(true), [u, d] = i.useState([]), p = b(n, a);
+        return "single" === t ? (0, r.jsx)(l.Z, _(f({}, o), {
           selectionMode: t,
           onSelectionChange: c,
-          value: o,
+          value: s,
           options: p
-        })) : (0, r.jsx)(l.Z, _(f({}, s), {
+        })) : (0, r.jsx)(l.Z, _(f({}, o), {
           selectionMode: t,
           onSelectionChange: d,
           value: u,
@@ -399,7 +399,7 @@ let g = [{
           selectionMode: t,
           label: n,
           hideLabel: a,
-          description: s,
+          description: o,
           helperText: l,
           errorMessage: c,
           successMessage: u,
@@ -410,24 +410,24 @@ let g = [{
           required: E,
           disabled: y
         } = g, O = b(p, g.asyncOptions), [v, A] = i.useState(null);
-        return (0, r.jsxs)(o.iS, _(f({
+        return (0, r.jsxs)(s.iS, _(f({
           selectionMode: t,
           onSelectionChange: A,
           options: O,
           value: v
         }, g), {
-          children: [(0, r.jsx)(o.a3, {
+          children: [(0, r.jsx)(s.a3, {
             label: n,
             hideLabel: a,
             placeholder: m,
             required: E,
             disabled: y,
-            description: s,
+            description: o,
             helperText: l,
             errorMessage: c,
             successMessage: u,
             wrapTags: d
-          }), (0, r.jsx)(o.X2, {})]
+          }), (0, r.jsx)(s.X2, {})]
         }))
       },
       controls: {
@@ -526,14 +526,14 @@ let g = [{
         let {
           selectionMode: t,
           required: n,
-          shouldFocusWrap: s,
-          withLeadingAndTrailing: o
+          shouldFocusWrap: o,
+          withLeadingAndTrailing: s
         } = e, [l, c] = i.useState(null);
         return (0, r.jsx)(a.q, {
           selectionMode: t,
           required: n,
-          shouldFocusWrap: s,
-          items: o ? E : g,
+          shouldFocusWrap: o,
+          items: s ? E : g,
           onSelectionChange: c,
           selectedItems: l
         })

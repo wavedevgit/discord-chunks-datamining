@@ -26,11 +26,11 @@ function d(e, t) {
   a.h.dispatch({
     type: "SURVEY_HIDE",
     key: e
-  }), t ? o.default.track(c.HAw.APP_NOTICE_CLOSED, {
+  }), t ? s.default.track(c.HAw.APP_NOTICE_CLOSED, {
     notice_type: c.kqX.SURVEY,
     survey_id: e,
     dismissed: t
-  }) : o.default.track(c.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+  }) : s.default.track(c.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
     notice_type: c.kqX.SURVEY
   })
 }
@@ -66,8 +66,8 @@ function f(e, t) {
 }
 
 function p(e) {
-  let t = s.Ay.getLastSeenTimestamp();
-  if (null === t || null != t && Date.now() - t >= s.bh) return a.h.dispatch({
+  let t = o.Ay.getLastSeenTimestamp();
+  if (null === t || null != t && Date.now() - t >= o.bh) return a.h.dispatch({
     type: "SURVEY_SEEN",
     key: e
   }), l.A.post({

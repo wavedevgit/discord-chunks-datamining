@@ -66,7 +66,7 @@ async function E(e) {
   var t;
   let {
     userId: a,
-    tabSection: s,
+    tabSection: o,
     scrollTarget: f,
     guildId: h,
     channelId: E,
@@ -80,12 +80,12 @@ async function E(e) {
   if (null == S) return;
   let T = g(a, y ? h : true);
   m.add(await (0, i.mMO)(async () => {
-    let e = (await Promise.all([n.e("10614"), n.e("42944"), n.e("10117"), n.e("13696"), n.e("38663"), n.e("64228")]).then(n.bind(n, 293071))).default;
+    let e = (await Promise.all([n.e("10614"), n.e("28936"), n.e("17122"), n.e("10117"), n.e("13696"), n.e("94682"), n.e("49282"), n.e("63974")]).then(n.bind(n, 293071))).default;
     return t => (0, r.jsx)(e, p({
       user: I,
       currentUser: S,
       guildId: h,
-      initialTabSection: s,
+      initialTabSection: o,
       initialScrollTarget: f,
       channelId: E,
       showGuildProfile: y,
@@ -94,7 +94,7 @@ async function E(e) {
     }, t, A))
   }, {
     modalKey: T,
-    contextKey: (0, i.TId)(null != (t = null != b ? b : (0, o.zd)()) ? t : d.BRT.APP),
+    contextKey: (0, i.TId)(null != (t = null != b ? b : (0, s.zd)()) ? t : d.BRT.APP),
     onCloseRequest: () => {
       u.A.hasUnsavedChanges() ? c.A.notifyUnsavedWidgets() : ((0, i.OoC)(T), m.delete(T), c.A.clearPendingWidgets())
     }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk688810 = require("./688810.jsx"),
   Chunk429913 = require("./429913.js"),
@@ -52,8 +52,8 @@ function E(e) {
     })
   }, [C, y, I]), R = null != E, P = (0, c.h)(E);
   return R && null == P ? null : (0, r.jsxs)("div", {
-    className: s()(g.kL, b),
-    children: [R ? (0, r.jsx)(o.Text, {
+    className: o()(g.kL, b),
+    children: [R ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: m.intl.format(y ? m.t.syHjLL : m.t.V15uUI, {
         username: A,
@@ -64,19 +64,19 @@ function E(e) {
         }, null == P ? true : P.id),
         applicationName: null == P ? true : P.name
       })
-    }) : (0, r.jsx)(o.Text, {
+    }) : (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: m.intl.format(m.t.uIomXw, {
         username: A
       })
     }), (0, r.jsxs)("div", {
       className: g.UD,
-      children: [(0, r.jsx)(o.Button, {
+      children: [(0, r.jsx)(s.Button, {
         variant: v ? "secondary" : "primary",
         size: "sm",
         onClick: N,
         text: m.intl.string(m.t.Zcibdf)
-      }), (0, r.jsx)(o.Button, {
+      }), (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
         onClick: w,

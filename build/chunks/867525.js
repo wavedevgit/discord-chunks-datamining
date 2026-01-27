@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 867525, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 867525, original params: e,t,n (module,exports,require) **/
 module.exports = {
   kL: "container_b7e1cb",
   jj: "gifFavoriteButton_b7e1cb",

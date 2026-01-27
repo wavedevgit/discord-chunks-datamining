@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 746706, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 746706, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
 });
@@ -21,61 +20,59 @@ var Chunk627968 = require("./627968.js"),
   Chunk896237 = require("./896237.js"),
   Chunk448085 = require("./448085.js");
 
-function y(e) {
-  switch (e) {
-    case p.NJ8.DARK:
-    case p.NJ8.DARKER:
-    case p.NJ8.MIDNIGHT:
-      return g;
-    case p.NJ8.LIGHT:
-      return E;
-    default:
-      return g
-  }
-}
-
 function b(e) {
   let {
     user: t,
     showOverlay: n,
-    children: g
-  } = e, E = (0, o.Ay)(), {
-    analyticsLocations: b
-  } = (0, c.Ay)(l.A.PREMIUM_UPSELL_OVERLAY);
+    children: b
+  } = e, E = (0, a.Ay)(), {
+    analyticsLocations: x
+  } = (0, c.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
   return (i.useEffect(() => {
-    n && d.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
-      location_stack: b,
-      type: _.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
+    n && u.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
+      location_stack: x,
+      type: m.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
     })
-  }, [n, b]), n) ? (0, r.jsxs)("div", {
-    className: m.ry,
+  }, [n, x]), n) ? (0, r.jsxs)("div", {
+    className: A.ry,
     children: [(0, r.jsx)("div", {
-      children: g
+      children: b
     }), (0, r.jsxs)("div", {
-      className: m.Wc,
+      className: A.Wc,
       children: [(0, r.jsx)("img", {
-        className: m.Tn,
-        alt: h.intl.string(h.t.LHFZQy),
-        src: y(E)
+        className: A.Tn,
+        alt: g.intl.string(g.t.LHFZQy),
+        src: function(e) {
+          switch (e) {
+            case p.NJ8.DARK:
+            case p.NJ8.DARKER:
+            case p.NJ8.MIDNIGHT:
+              return f;
+            case p.NJ8.LIGHT:
+              return h;
+            default:
+              return f
+          }
+        }(E)
       }), (0, r.jsxs)("div", {
-        className: m._9,
+        className: A._9,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-lg/semibold",
           color: "always-white",
-          children: h.intl.string(h.t.dMaDFX)
+          children: g.intl.string(g.t.dMaDFX)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "always-white",
-          children: h.intl.string(h.t.F7sgFH)
+          children: g.intl.string(g.t.F7sgFH)
         })]
-      }), (0, r.jsx)(u.A, {
-        size: a.$n.Sizes.LARGE,
-        color: a.$n.Colors.GREEN,
+      }), (0, r.jsx)(d.A, {
+        size: l.$n.Sizes.LARGE,
+        color: l.$n.Colors.GREEN,
         textOptions: {
-          textOverride: f.Ay.isPremium(t) ? h.intl.string(h.t.AfRWI8) : h.intl.string(h.t.nkdUym)
+          textOverride: _.Ay.isPremium(t) ? g.intl.string(g.t.AfRWI8) : g.intl.string(g.t.nkdUym)
         },
-        subscriptionTier: _.pe.TIER_2
+        subscriptionTier: m.pe.TIER_2
       })]
     })]
-  }) : g
+  }) : b
 }

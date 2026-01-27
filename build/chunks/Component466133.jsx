@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 466133, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   A: () => x
 }), require("./896048.js");
@@ -24,29 +23,29 @@ Chunk311907.Ay.initialize();
 let x = e => {
   let {
     location: t
-  } = e, n = (0, s.bG)([m.default], () => m.default.isAuthenticated()), x = (0, s.bG)([d.A], () => d.A.hasLoadedExperiments), E = (0, p.Jp)("RSL - Landing Page"), [v, j] = i.useState(false), [y, b] = i.useState(_.intl.string(_.t["9exy+V"])), [S, I] = i.useState(true), N = e => {
+  } = e, n = (0, s.bG)([_.default], () => _.default.isAuthenticated()), x = (0, s.bG)([u.A], () => u.A.hasLoadedExperiments), E = (0, p.Jp)("RSL - Landing Page"), [v, b] = i.useState(false), [y, j] = i.useState(m.intl.string(m.t["9exy+V"])), [I, O] = i.useState(true), S = e => {
     switch (e) {
       case f.t02.INVALID_FORM_BODY:
       case f.t02.DSA_RSL_REPORT_NOT_FOUND:
-        b(_.intl.string(_.t.bzXDfc));
+        j(m.intl.string(m.t.bzXDfc));
         break;
       case f.t02.DSA_RSL_ALREADY_REQUESTED:
-        b(_.intl.string(_.t.rV00wq));
+        j(m.intl.string(m.t.rV00wq));
         break;
       case f.t02.DSA_RSL_LIMITED_TIME:
-        b(_.intl.string(_.t["0dI29h"]));
+        j(m.intl.string(m.t["0dI29h"]));
         break;
       case f.t02.DSA_RSL_REPORT_INELIGIBLE:
-        b(_.intl.string(_.t["RGa/Gb"]));
+        j(m.intl.string(m.t["RGa/Gb"]));
         break;
       default:
-        b(_.intl.string(_.t["0QLzfv"]))
+        j(m.intl.string(m.t["0QLzfv"]))
     }
   };
   return i.useEffect(() => {
-    n ? (I(true), o.rQ({
+    n ? (O(true), o.rQ({
       withAnalyticsToken: true
-    }).then(() => I(false)).catch(() => I(false))) : I(false)
+    }).then(() => O(false)).catch(() => O(false))) : O(false)
   }, [n]), i.useEffect(() => {
     x || E || a.A.getExperiments()
   }, [x, E]), i.useEffect(() => {
@@ -54,16 +53,16 @@ let x = e => {
       var t, n;
       try {
         let n = null != e ? await (0, h.q)(e) : true;
-        null != n ? b(_.intl.string(_.t.e6mZMt)) : N(null == (t = n.body) ? true : t.code)
+        null != n ? j(m.intl.string(m.t.e6mZMt)) : S(null == (t = n.body) ? true : t.code)
       } catch (e) {
-        N(null == (n = e.body) ? true : n.code)
+        S(null == (n = e.body) ? true : n.code)
       } finally {
-        j(false)
+        b(false)
       }
     };
-    j(true), e((0, c.A)(t)), (0, g.d)("report_second_look")
-  }, [t]), E && !S && (0, r.jsxs)(u.Ay, {
-    children: [(0, r.jsx)(u.hE, {
+    b(true), e((0, c.A)(t)), (0, g.d)("report_second_look")
+  }, [t]), E && !I && (0, r.jsxs)(d.Ay, {
+    children: [(0, r.jsx)(d.hE, {
       className: A.QB,
       children: y
     }), v && (0, r.jsx)(l.y$y, {})]

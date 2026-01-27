@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk907961 = require("./907961.js");
 
 function c(e, t, n) {
@@ -65,8 +65,8 @@ class d extends(r = Chunk64700.PureComponent) {
     let {
       children: n,
       mirror: r,
-      paused: s,
-      component: o
+      paused: o,
+      component: s
     } = this.props;
     if (null == e) {
       if (null == n) return null;
@@ -77,8 +77,8 @@ class d extends(r = Chunk64700.PureComponent) {
         }
       }, e.props))
     }
-    return (0, i.jsx)(o, {
-      paused: s,
+    return (0, i.jsx)(s, {
+      paused: o,
       className: l.$_,
       streamId: e,
       onReady: t ? null : this.handleReady
@@ -90,7 +90,7 @@ class d extends(r = Chunk64700.PureComponent) {
       className: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: o()(l.Ki, t, {
+      className: s()(l.Ki, t, {
         [l.e7]: e
       }),
       onDoubleClick: this.handleDoubleClick,

@@ -2,7 +2,7 @@
 /** chunk id: 17118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => o
+  v: () => s
 });
 let r = new Map,
   i = new Set;
@@ -31,13 +31,13 @@ function a() {
   document.body.addEventListener("transitionrun", t), document.body.addEventListener("transitionend", n)
 }
 
-function s() {
+function o() {
   for (let [e] of r) "isConnected" in e && !e.isConnected && r.delete(e)
 }
 
-function o(e) {
+function s(e) {
   requestAnimationFrame(() => {
-    s(), 0 === r.size ? e() : i.add(e)
+    o(), 0 === r.size ? e() : i.add(e)
   })
 }
 "u" > typeof document && ("loading" !== document.readyState ? a() : document.addEventListener("DOMContentLoaded", a))

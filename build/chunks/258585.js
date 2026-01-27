@@ -95,7 +95,7 @@ function b(e) {
   let {
     location: t
   } = e;
-  return (0, r.bG)([o.A], () => y({
+  return (0, r.bG)([s.A], () => y({
     location: t
   }))
 }

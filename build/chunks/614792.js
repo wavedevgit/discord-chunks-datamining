@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +29,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -41,7 +41,7 @@ function o(e, t) {
 }
 
 function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -215,15 +215,15 @@ class m extends h {
           return
         }
         if (e === this.cachedChannelId) {
-          var s;
+          var o;
           let n = this.cachedMessageIds.sort(a.compare).reverse()[0],
             r = t.sort(a.compare).reverse()[0];
           this.messageCacheAgeSeconds = Math.floor((a.extractTimestamp(r) - a.extractTimestamp(n)) / 1e3);
-          let o = t.filter(e => {
+          let s = t.filter(e => {
             var t;
             return null == (t = this.cachedMessageIds) ? true : t.includes(e)
           }).length;
-          this.messageCacheCount = null != (s = this.cachedChannelCounts.get(e)) ? s : null, this.messageCacheHavingCount = o, this.messageCacheMissingCount = t.length - o, this.messageRenderFullCount = t.length, this.messageRenderCachedCount = this.cachedMessageIds.length, this.messageRenderHasMoreAfter = i
+          this.messageCacheCount = null != (o = this.cachedChannelCounts.get(e)) ? o : null, this.messageCacheHavingCount = s, this.messageCacheMissingCount = t.length - s, this.messageRenderFullCount = t.length, this.messageRenderCachedCount = this.cachedMessageIds.length, this.messageRenderHasMoreAfter = i
         }
       } else(null == this.cachedChannelId || e === this.cachedChannelId) && (this.cachedChannelId = e, this.cachedMessageIds = t, t.length > 0 && (this.messageCacheMissingReason = null))
   }
@@ -291,20 +291,20 @@ class m extends h {
     }
   }
   serializeWebPerfStartupMetrics(e) {
-    return l(s({}, this.serializeAppStartupMetrics()), {
+    return l(o({}, this.serializeAppStartupMetrics()), {
       was_authenticated: this.wasAuthenticated,
       time_first_render_after_ready_end: this.firstRenderAfterReadyPayload.serialize(e)
     })
   }
   serializeTTITracker(e) {
-    var t, i, a, o, c, u;
+    var t, i, a, s, c, u;
     let d = this.getStartTime(e),
       f = n(735438)(r.A.logGroups["0"].logs).filter(e => e.log.startsWith("Require ")).map(e => {
         var t;
         return null != (t = e.delta) ? t : 0
       }).sum(),
       p = this.serializeAppStartupMetrics();
-    return l(s({}, this.extraProperties, p), {
+    return l(o({}, this.extraProperties, p), {
       time_load_index_start: this.loadIndex.serializeStart(d),
       time_load_index_end: this.loadIndex.serializeEnd(d),
       time_begin_fast_connect_start: this.beginFastConnect.serializeStart(d),
@@ -419,7 +419,7 @@ class m extends h {
       cache_num_guilds: null == (t = this.cacheInfo) ? true : t.guilds,
       cache_num_private_channels: null == (i = this.cacheInfo) ? true : i.privateChannels,
       cache_num_basic_channels: null == (a = this.cacheInfo) ? true : a.basicChannels,
-      cache_num_basic_channels_stale: null == (o = this.cacheInfo) ? true : o.basicChannelsStale,
+      cache_num_basic_channels_stale: null == (s = this.cacheInfo) ? true : s.basicChannelsStale,
       cache_num_full_channels: null == (c = this.cacheInfo) ? true : c.fullChannels,
       cache_num_full_channel_guilds: null == (u = this.cacheInfo) ? true : u.fullChannelGuilds,
       num_imports_at_load_index_end: this.loadIndex.endNumImports,

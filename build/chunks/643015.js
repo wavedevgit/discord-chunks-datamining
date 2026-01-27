@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 643015, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 643015, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
 }), require("./896048.js");
@@ -9,15 +8,15 @@ var Chunk64700 = require("./64700.js"),
   Chunk287809 = require("./287809.js"),
   Chunk966107 = require("./966107.js"),
   Chunk380335 = require("./380335.js");
-let l = new Set(["GB"]);
+let o = new Set(["GB"]);
 
 function c() {
-  let e = (0, i.bG)([o.A], () => o.A.getUserCountryCode()),
-    t = false === (0, i.bG)([a.default], () => {
+  let e = (0, i.bG)([a.A], () => a.A.getUserCountryCode()),
+    t = false === (0, i.bG)([l.default], () => {
       var e;
-      return null == (e = a.default.getCurrentUser()) ? true : e.nsfwAllowed
+      return null == (e = l.default.getCurrentUser()) ? true : e.nsfwAllowed
     });
   return r.useEffect(() => {
     null == e && (0, s.xf)()
-  }, [e]), null != e && !!l.has(e.alpha2) && !!t
+  }, [e]), null != e && !!o.has(e.alpha2) && !!t
 }

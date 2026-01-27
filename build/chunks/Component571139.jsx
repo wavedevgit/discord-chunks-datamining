@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 571139, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93140 **/
+/** chunk id: 571139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => P
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk960488 = require("./960488.js"),
   Chunk311907 = require("./311907.js"),
   Chunk314116 = require("./314116.jsx"),
@@ -24,84 +23,76 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk121615 = require("./121615.js"),
   Chunk1624 = require("./1624.js");
-
-function v(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function A(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      v(e, t, n[t])
-    })
-  }
-  return e
-}
-let I = () => {
+let P = () => {
   var e, t;
-  let i = (0, o.bG)([d.A], () => d.A.getGuildId(), []),
-    v = (0, o.bG)([u.A], () => u.A.getGuild(i), [i]),
-    I = (0, o.bG)([m.A], () => null != i ? m.A.getRequest(i) : null, [i]),
-    S = (0, s.zy)(),
-    T = (null == (t = (0, s.B6)(S.pathname, g.BVt.CHANNEL(null == v ? true : v.id, E.VV.GUILD_ONBOARDING))) ? true : t.isExact) === true;
-  if (null == v || !(0, h.Qd)(v) || T) return null;
-  let C = () => {
-      (0, p.Ze)(v.id)
-    },
-    N = () => {
-      (0, l.A)({
-        title: y.intl.string(y.t.aIz1oV),
-        subtitle: y.intl.string(y.t["13tjTU"]),
-        variant: "primary",
-        confirmText: y.intl.string(y.t["cY+Oob"]),
-        onConfirm: () => f.A.removeGuildJoinRequest(v.id)
-      })
-    },
-    w = () => {
-      (0, c.mMO)(async () => {
-        let {
-          default: e
-        } = await n.e("37548").then(n.bind(n, 856103));
-        return t => (0, r.jsx)(e, A({
-          guildId: v.id
-        }, t))
-      })
-    },
-    R = null != (e = null == I ? true : I.applicationStatus) ? e : _.B5.STARTED,
-    P = null,
+  let i = (0, a.bG)([E.A], () => E.A.getGuildId(), []),
+    P = (0, a.bG)([u.A], () => u.A.getGuild(i), [i]),
+    y = (0, a.bG)([I.A], () => null != i ? I.A.getRequest(i) : null, [i]),
+    f = (0, o.zy)(),
+    C = (null == (t = (0, o.B6)(f.pathname, O.BVt.CHANNEL(null == P ? true : P.id, N.VV.GUILD_ONBOARDING))) ? true : t.isExact) === true;
+  if (null == P || !(0, T.Qd)(P) || C) return null;
+  let m = null != (e = null == y ? true : y.applicationStatus) ? e : A.B5.STARTED,
     D = null,
-    x = null,
-    L = [b.lm, O.lm];
-  switch (R) {
-    case _.B5.SUBMITTED:
-      P = y.intl.string(y.t["5iLvSx"]), D = y.intl.string(y.t.mqtdmQ), x = N;
+    g = null,
+    h = null,
+    b = [R.lm, S.lm];
+  switch (m) {
+    case A.B5.SUBMITTED:
+      D = p.intl.string(p.t["5iLvSx"]), g = p.intl.string(p.t.mqtdmQ), h = () => {
+        (0, s.A)({
+          title: p.intl.string(p.t.aIz1oV),
+          subtitle: p.intl.string(p.t["13tjTU"]),
+          variant: "primary",
+          confirmText: p.intl.string(p.t["cY+Oob"]),
+          onConfirm: () => d.A.removeGuildJoinRequest(P.id)
+        })
+      };
       break;
-    case _.B5.REJECTED:
-      P = y.intl.string(y.t.lk30cY), D = y.intl.string(y.t["8RrsHr"]), x = w, L.push(b.z3);
+    case A.B5.REJECTED:
+      D = p.intl.string(p.t.lk30cY), g = p.intl.string(p.t["8RrsHr"]), h = () => {
+        (0, c.mMO)(async () => {
+          let {
+            default: e
+          } = await n.e("37548").then(n.bind(n, 856103));
+          return t => (0, r.jsx)(e, function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({
+            guildId: P.id
+          }, t))
+        })
+      }, b.push(R.z3);
       break;
     default:
-      P = y.intl.string(y.t.G5YKXP), D = y.intl.string(y.t["r8/DT+"]), x = C
+      D = p.intl.string(p.t.G5YKXP), g = p.intl.string(p.t["r8/DT+"]), h = () => {
+        (0, _.Ze)(P.id)
+      }
   }
   return (0, r.jsxs)("div", {
-    className: a()(...L),
+    className: l()(...b),
     children: [(0, r.jsx)(c.Text, {
-      className: b.wx,
+      className: R.wx,
       variant: "text-sm/normal",
-      children: P
+      children: D
     }), (0, r.jsx)(c.Button, {
       variant: "overlay-primary",
       size: "sm",
-      onClick: x,
-      text: D
+      onClick: h,
+      text: g
     })]
   })
 }

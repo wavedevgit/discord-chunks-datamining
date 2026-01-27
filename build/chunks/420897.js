@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk668459 = require("./668459.js"),
   Chunk643479 = require("./643479.js");
 let a = 0,
-  s = 1,
-  o = 2,
+  o = 1,
+  s = 2,
   l = 3,
   c = 4,
   u = 5,
@@ -35,10 +35,10 @@ function m(e) {
     n = {},
     i = [];
   for (let a = 0; a < e.byteLength; a += t + _) {
-    let s = r.A.getShortAt(e, a);
-    g[s] && (n[s] || (n[s] = g[s].description), i.push({
-      type: s,
-      path: g[s].path(e, a + t)
+    let o = r.A.getShortAt(e, a);
+    g[o] && (n[o] || (n[o] = g[o].description), i.push({
+      type: o,
+      path: g[o].path(e, a + t)
     }))
   }
   return JSON.stringify({
@@ -51,11 +51,11 @@ let g = {
     description: "Closed subpath length",
     path: (e, t) => [r.A.getShortAt(e, t)]
   },
-  [s]: {
+  [o]: {
     description: "Closed subpath Bezier knot, linked",
     path: E
   },
-  [o]: {
+  [s]: {
     description: "Closed subpath Bezier knot, unlinked",
     path: E
   },
@@ -105,8 +105,8 @@ function b(e, t) {
 
 function O(e, t, n) {
   let a = r.A.getLongAt(e, t),
-    s = a >>> 31 == 0 ? 1 : false,
-    o = (0x7f000000 & a) >>> 32 - n,
+    o = a >>> 31 == 0 ? 1 : false,
+    s = (0x7f000000 & a) >>> 32 - n,
     l = a & parseInt((0, i.tp)("1", 32 - n), 2);
-  return s * (0, i.Aj)(o.toString(2) + "." + (0, i.CF)(l.toString(2), 32 - n, "0"), 2)
+  return o * (0, i.Aj)(s.toString(2) + "." + (0, i.CF)(l.toString(2), 32 - n, "0"), 2)
 }

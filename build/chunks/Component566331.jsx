@@ -23,13 +23,13 @@ function h(e) {
   let {
     stream: n,
     width: i
-  } = e, h = (0, s.bG)([d.A], () => d.A.getChannel(n.channelId));
+  } = e, h = (0, o.bG)([d.A], () => d.A.getChannel(n.channelId));
   (0, c.Ay)(() => {
     (null == h ? true : h.isGuildStageVoice()) && (0, l.Xi)((0, u._z)(n), false)
   });
   let m = () => (0, l.Xi)((0, u._z)(n)),
     g = (t = i) < 550 ? "small" : t < 1e3 ? "medium" : "large";
-  return (0, r.jsx)(o.NPJ, {
+  return (0, r.jsx)(s.NPJ, {
     disableAdaptiveTheme: true,
     theme: f.NJ.MIDNIGHT,
     children: e => (0, r.jsx)("div", {
@@ -43,12 +43,12 @@ function h(e) {
           })
         }), (0, r.jsxs)("div", {
           className: _.cta,
-          children: [(0, r.jsx)(o.Heading, {
+          children: [(0, r.jsx)(s.Heading, {
             color: "none",
             variant: "small" === g ? "heading-md/normal" : "heading-lg/normal",
             className: _.header,
             children: p.intl.formatToMarkdownString(p.t.Kb4Ukp, {})
-          }), (0, r.jsx)(o.Button, {
+          }), (0, r.jsx)(s.Button, {
             variant: "secondary",
             size: "small" === g ? "sm" : "md",
             onClick: e => {

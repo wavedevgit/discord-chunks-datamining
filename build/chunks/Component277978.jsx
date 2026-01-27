@@ -1,7 +1,7 @@
-/** Chunk was on 83006 **/
+/** Chunk was on 15646 **/
 /** chunk id: 277978, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  CustomThemesShareModalWrapper: () => _
+  CustomThemesShareModalWrapper: () => m
 }), require("./896048.js"), require("./747238.js"), require("./812715.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,30 +19,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk567951 = require("./567951.jsx"),
   Chunk285188 = require("./285188.js"),
   Chunk652215 = require("./652215.js");
-let _ = e => {
+let m = e => {
   let {
     transitionState: t,
     onClose: r
-  } = e, _ = (0, a.useRef)((0, g.E3)()).current, {
-    selectedDestinations: m,
-    messageText: j,
-    canSend: w,
+  } = e, m = (0, l.useRef)((0, g.E3)()).current, {
+    selectedDestinations: O,
+    messageText: w,
+    canSend: j,
     setSend: C,
     updateMessage: v,
     updateChannel: P
-  } = (0, l.P)(_), [S, x] = a.useState(false), {
+  } = (0, a.P)(m), [S, k] = l.useState(false), {
     colors: E,
-    chassisMixAmount: k,
-    gradientAngle: D
-  } = (0, p.ko)(), M = (0, s.bG)([u.A], () => u.A.theme), A = (0, a.useMemo)(() => ({
+    chassisMixAmount: x,
+    gradientAngle: A
+  } = (0, b.ko)(), M = (0, s.bG)([u.A], () => u.A.theme), D = (0, l.useMemo)(() => ({
     colors: E.map(e => e.replace("#", "")),
-    gradient_angle: D,
-    base_mix: k,
-    base_theme: (0, b.O)(M)
-  }), [E, D, k, M]), R = a.useMemo(() => (0, d.createChannelRecord)({
+    gradient_angle: A,
+    base_mix: x,
+    base_theme: (0, p.O)(M)
+  }), [E, A, x, M]), I = l.useMemo(() => (0, d.createChannelRecord)({
     id: "1",
     type: o.r.DM
-  }), []), I = a.useMemo(() => (0, i.rh)(function(e) {
+  }), []), R = l.useMemo(() => (0, i.rh)(function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -60,23 +60,23 @@ let _ = e => {
     }
     return e
   }({}, (0, c.Ay)({
-    channelId: R.id,
+    channelId: I.id,
     content: ""
-  }))), [R]);
-  (0, a.useEffect)(() => {
-    v(I), P(R), x(true)
-  }, [I, R, v, P]);
-  let T = a.useCallback(async () => {
-    if (!w()) return Promise.reject();
-    await (0, y.N)(m, A, j), f.default.track(O.HAw.CUSTOM_THEME_SHARED, {
-      num_destinations: m.length
+  }))), [I]);
+  (0, l.useEffect)(() => {
+    v(R), P(I), k(true)
+  }, [R, I, v, P]);
+  let T = l.useCallback(async () => {
+    if (!j()) return Promise.reject();
+    await (0, y.N)(O, D, w), f.default.track(h.HAw.CUSTOM_THEME_SHARED, {
+      num_destinations: O.length
     }), await r()
-  }, [A, m, j, w, r]);
-  return ((0, a.useEffect)(() => {
+  }, [D, O, w, j, r]);
+  return ((0, l.useEffect)(() => {
     C(T)
   }, [T, C]), S) ? (0, n.jsx)(g.KH.Provider, {
-    value: _,
-    children: (0, n.jsx)(h.y, {
+    value: m,
+    children: (0, n.jsx)(_.y, {
       transitionState: t,
       onClose: r
     })

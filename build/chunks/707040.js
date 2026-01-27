@@ -18,8 +18,8 @@ module.exports = function e(t, n) {
     for (i = r; 0 != i--;)
       if (!Object.prototype.hasOwnProperty.call(n, a[i])) returnfalse;
     for (i = r; 0 != i--;) {
-      var r, i, a, s = a[i];
-      if (!e(t[s], n[s])) returnfalse
+      var r, i, a, o = a[i];
+      if (!e(t[o], n[o])) returnfalse
     }
     returntrue
   }

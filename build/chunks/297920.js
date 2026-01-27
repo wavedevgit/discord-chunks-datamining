@@ -17,18 +17,18 @@ function r(e, t, r) {
 var i = "[-+]?\\d*\\.?\\d+",
   a = i + "%";
 
-function s(e) {
+function o(e) {
   return Array.prototype.slice.call(e, 0)
 }
 
-function o() {
-  return "\\(\\s*(" + s(arguments).join(")\\s*,\\s*(") + ")\\s*\\)"
+function s() {
+  return "\\(\\s*(" + o(arguments).join(")\\s*,\\s*(") + ")\\s*\\)"
 }
 var l = {
-  rgb: RegExp("rgb" + o(i, i, i)),
-  rgba: RegExp("rgba" + o(i, i, i, i)),
-  hsl: RegExp("hsl" + o(i, a, a)),
-  hsla: RegExp("hsla" + o(i, a, a, i)),
+  rgb: RegExp("rgb" + s(i, i, i)),
+  rgba: RegExp("rgba" + s(i, i, i, i)),
+  hsl: RegExp("hsl" + s(i, a, a)),
+  hsla: RegExp("hsla" + s(i, a, a, i)),
   hex3: /^#([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
   hex4: /^#([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
   hex6: /^#([0-9a-fA-F]{6})$/,

@@ -21,14 +21,14 @@ function d(e) {
     onAction: d
   } = e, {
     themeType: f
-  } = (0, s.E)(), p = f === c.d.MODAL_V2;
+  } = (0, o.E)(), p = f === c.d.MODAL_V2;
   if (!(0, i.A)(n, l.jUm.INSTANCE)) return null;
   let _ = e => {
     e.stopPropagation(), null == d || d({
       action: "PRESS_NOTIFY_BUTTON"
     }), new a.A("UserActivityActions").log("notify", t.id, n)
   };
-  return (0, r.jsx)(o.FD, {
+  return (0, r.jsx)(s.FD, {
     text: u.intl.string(u.t.vwl1PK),
     fullWidth: !p,
     onClick: _

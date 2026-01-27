@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk98115 = require("./98115.jsx"),
   Chunk556309 = require("./556309.js");
 
@@ -81,12 +81,12 @@ function h(e) {
     height: n
   }, m = !e.allowFullSizedIcon;
   return (0, r.jsxs)("div", {
-    className: s()(l.jH, a),
+    className: o()(l.jH, a),
     style: h,
-    children: [(0, r.jsx)(o.A, f(u({}, d), {
-      className: s()(c, l.mP)
+    children: [(0, r.jsx)(s.A, f(u({}, d), {
+      className: o()(c, l.mP)
     })), (0, r.jsx)("div", {
-      className: s()(l.sn, {
+      className: o()(l.sn, {
         [l.Qu]: m
       }),
       children: _

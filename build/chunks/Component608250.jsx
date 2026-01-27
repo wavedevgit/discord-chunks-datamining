@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk941861 = require("./941861.js"),
   Chunk844222 = require("./844222.js"),
   Chunk604121 = require("./604121.jsx"),
@@ -122,8 +122,8 @@ function I(e) {
     ref: t,
     src: n,
     fallbackImageSrc: a,
-    loop: s,
-    loopAt: o = 0,
+    loop: o,
+    loopAt: s = 0,
     playbackRate: c,
     isWindowFocused: u
   } = e, {
@@ -131,14 +131,14 @@ function I(e) {
   } = i.useContext(l.C), f = i.useRef(null);
   return (i.useImperativeHandle(t, () => f.current), i.useEffect(() => {
     let e = f.current;
-    if (null != e) return null != c && (e.playbackRate = c), null != s && (e.loop = 0 === o && s), e.addEventListener("ended", t), () => {
+    if (null != e) return null != c && (e.playbackRate = c), null != o && (e.loop = 0 === s && o), e.addEventListener("ended", t), () => {
       e.removeEventListener("ended", t)
     };
 
     function t() {
-      null != e && true === s && 0 !== o && (e.currentTime = o, e.play())
+      null != e && true === o && 0 !== s && (e.currentTime = s, e.play())
     }
-  }, [s, o, c]), i.useEffect(() => {
+  }, [o, s, c]), i.useEffect(() => {
     var e, t;
     null != f.current && (!d.enabled && u ? null == (e = f.current) || e.play().catch(p.tE) : null == (t = f.current) || t.pause())
   }, [u, d.enabled]), d.enabled && null != a) ? (0, r.jsx)(O, {
@@ -160,7 +160,7 @@ function S(e) {
   var t, n;
   let {
     aspectRatio: i = "16/9"
-  } = e, a = y(e, ["aspectRatio"]), l = (0, u.G9)(), c = (0, o.R)(), p = null != (t = null == (n = l.isWindowFocused) ? true : n.call(l)) ? t : c;
+  } = e, a = y(e, ["aspectRatio"]), l = (0, u.G9)(), c = (0, s.R)(), p = null != (t = null == (n = l.isWindowFocused) ? true : n.call(l)) ? t : c;
 
   function h() {
     if ((0, f.wu)(a)) return (0, r.jsx)(O, m({}, a));
@@ -177,7 +177,7 @@ function S(e) {
     return null
   }
   return null == a ? null : (0, r.jsx)("div", {
-    className: s()(_.container, _["aspect-ratio-".concat(i)]),
+    className: o()(_.container, _["aspect-ratio-".concat(i)]),
     children: h()
   })
 }

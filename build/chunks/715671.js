@@ -21,14 +21,14 @@ var Chunk92077 = require("./92077.js"),
 function f(e, t, n) {
   let r = a.A.getApplication(e);
   if (null == r) return;
-  let i = s.A.getTargetBuildId(r.id, t),
-    o = s.A.getTargetManifests(r.id, t);
-  null != i && null != o && null != u.o && (0, u.o)(r, t, i, o, n)
+  let i = o.A.getTargetBuildId(r.id, t),
+    s = o.A.getTargetManifests(r.id, t);
+  null != i && null != s && null != u.o && (0, u.o)(r, t, i, s, n)
 }
 
 function p(e, t) {
   let n = a.A.getApplication(e);
-  if (null != n) return r.K3(n, t, s.A.getTargetBuildId(n.id, t), s.A.getTargetManifests(n.id, t))
+  if (null != n) return r.K3(n, t, o.A.getTargetBuildId(n.id, t), o.A.getTargetManifests(n.id, t))
 }
 
 function _(e, t, n) {
@@ -37,7 +37,7 @@ function _(e, t, n) {
 }
 
 function h(e, t) {
-  let n = (0, o.F)(e, l.A, c.A),
+  let n = (0, s.F)(e, l.A, c.A),
     {
       analyticsParams: r
     } = t;

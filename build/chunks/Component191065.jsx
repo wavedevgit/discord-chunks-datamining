@@ -1,22 +1,22 @@
-/** Chunk was on 20725 **/
+/** Chunk was on 52390 **/
 /** chunk id: 191065, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk170985 = require("./170985.js");
-let o = Chunk64700.forwardRef(function(e, t) {
+let s = Chunk64700.forwardRef(function(e, t) {
   let {
     isInventory: n,
     style: l,
-    children: o
+    children: s
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: a.Q,
+    className: o.Q,
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -37,16 +37,16 @@ let o = Chunk64700.forwardRef(function(e, t) {
     }({
       marginTop: 8 * !!n
     }, l),
-    children: [(0, r.jsx)(s.mir, {
+    children: [(0, r.jsx)(a.mir, {
       size: "custom",
-      className: a.G,
+      className: o.G,
       height: n ? 16 : 12,
       width: n ? 16 : 12,
       color: n ? i.A.colors.TEXT_MUTED.css : i.A.colors.WHITE.css
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(a.Text, {
       color: n ? "text-muted" : "always-white",
       variant: n ? "text-xs/normal" : "text-xxs/normal",
-      children: o
+      children: s
     })]
   })
 })

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 536189, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 536189, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
 });
@@ -18,31 +17,31 @@ function u(e) {
     application: n,
     currentUserPresenceActivity: u,
     hideParty: d,
-    message: f,
-    onView: p,
-    partyStatusElement: _,
-    presenceActivity: h,
-    guildId: m
-  } = e, g = !(0, o.A)(h, f, n.id), E = (0, s.n$)(n.name, null == (t = f.activity) ? true : t.type, g), y = i.useMemo(() => {
-    if (null != h) return () => (0, a.Mp)(h)
-  }, [h]);
-  return g ? (0, r.jsx)(l.A, {
+    message: p,
+    onView: m,
+    partyStatusElement: f,
+    presenceActivity: g,
+    guildId: h
+  } = e, _ = !(0, s.A)(g, p, n.id), b = (0, a.n$)(n.name, null == (t = p.activity) ? true : t.type, _), A = i.useMemo(() => {
+    if (null != g) return () => (0, l.Mp)(g)
+  }, [g]);
+  return _ ? (0, r.jsx)(o.A, {
     application: n,
-    message: f,
-    header: E,
-    onClickContent: y,
-    onView: p,
-    guildId: m
+    message: p,
+    header: b,
+    onClickContent: A,
+    onView: m,
+    guildId: h
   }) : (0, r.jsx)(c.A, {
     application: n,
-    message: f,
-    header: E,
-    presenceActivity: h,
+    message: p,
+    header: b,
+    presenceActivity: g,
     hideParty: d,
-    partyStatusElement: _,
+    partyStatusElement: f,
     currentUserPresenceActivity: u,
-    onClickContent: y,
-    onView: p,
-    guildId: m
+    onClickContent: A,
+    onView: m,
+    guildId: h
   })
 }

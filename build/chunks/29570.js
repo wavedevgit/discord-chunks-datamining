@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 29570, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 29570, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => i
 }), require("./896048.js");
@@ -8,23 +7,23 @@ var Chunk64700 = require("./64700.js");
 let i = function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 5,
     [t, n] = r.useState(false),
-    [i, a] = r.useState(0),
-    [s, o] = r.useState(false),
-    [l, c] = r.useState(0);
+    [i, l] = r.useState(0),
+    [s, a] = r.useState(false),
+    [o, c] = r.useState(0);
   return r.useEffect(() => {
-    i >= e && (o(true), c(Math.floor(i / e)));
+    i >= e && (a(true), c(Math.floor(i / e)));
     let t = setTimeout(() => {
-      a(0)
+      l(0)
     }, 1e3);
     return () => clearTimeout(t)
   }, [i, e]), r.useEffect(() => {
     if (!t) {
       let e = setTimeout(() => {
-        o(false), c(0)
+        a(false), c(0)
       }, 1e3);
       return () => clearTimeout(e)
     }
-    a(e => e + 1)
+    l(e => e + 1)
   }, [t]), {
     onHover: () => {
       n(true)
@@ -33,6 +32,6 @@ let i = function() {
       n(false)
     },
     isEasterEggTriggered: s,
-    easterEggLevel: l
+    easterEggLevel: o
   }
 }

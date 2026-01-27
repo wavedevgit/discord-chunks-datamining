@@ -360,7 +360,7 @@ class b {
       r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null,
       i = arguments.length > 4 ? arguments[4] : true;
     return this.mutate(a => {
-      a.jumped = true, a.jumpedToPresent = false, a.jumpType = null != i ? i : s.US.ANIMATED, a.jumpTargetId = e, a.jumpTargetOffset = null != e && null != n ? n : 0, a.jumpSequenceId = a.jumpSequenceId + 1, a.jumpFlash = t, a.jumpReturnTargetId = r, a.ready = true, a.loadingMore = false
+      a.jumped = true, a.jumpedToPresent = false, a.jumpType = null != i ? i : o.US.ANIMATED, a.jumpTargetId = e, a.jumpTargetOffset = null != e && null != n ? n : 0, a.jumpSequenceId = a.jumpSequenceId + 1, a.jumpFlash = t, a.jumpReturnTargetId = r, a.ready = true, a.loadingMore = false
     }, false)
   }
   focusOnMessage(e) {
@@ -424,12 +424,12 @@ class b {
     })
   }
   loadComplete(e) {
-    var t, n, r, o, l, u, d, p, _, m, g, y;
+    var t, n, r, s, l, u, d, p, _, m, g, y;
     let b = [...e.newMessages],
       O = null != (t = e.isBefore) && t,
       v = null != (n = e.isAfter) && n,
       A = null != (r = e.jump) ? r : null,
-      I = null != (o = e.hasMoreBefore) && o,
+      I = null != (s = e.hasMoreBefore) && s,
       S = null != (l = e.hasMoreAfter) && l,
       T = null != (u = e.avoidInitialScroll) && u,
       C = null != (d = e.cached) && d,
@@ -450,7 +450,7 @@ class b {
     return w.mutate({
       ready: true,
       loadingMore: false,
-      jumpType: null != (p = null == A ? true : A.jumpType) ? p : s.US.ANIMATED,
+      jumpType: null != (p = null == A ? true : A.jumpType) ? p : o.US.ANIMATED,
       jumpFlash: null != (_ = null == A ? true : A.flash) && _,
       jumped: null != A,
       jumpedToPresent: null != (m = null == A ? true : A.present) && m,
@@ -467,7 +467,7 @@ class b {
     })
   }
   addCachedMessages(e, t) {
-    (0, o.D)(e);
+    (0, s.D)(e);
     let n = e.map(e => E(this, e)).reverse();
     this._array.filter(e => !n.some(t => t.id === e.id)).forEach(e => d.Y(n, e, (e, t) => u.default.compare(e.id, t.id)));
     let r = !t && this.cached;
@@ -479,7 +479,7 @@ class b {
     })
   }
   constructor(e) {
-    p(this, "channelId", true), p(this, "ready", false), p(this, "cached", false), p(this, "jumpType", s.US.ANIMATED), p(this, "jumpTargetId", null), p(this, "jumpTargetOffset", 0), p(this, "jumpSequenceId", 1), p(this, "jumped", false), p(this, "jumpedToPresent", false), p(this, "jumpFlash", true), p(this, "jumpReturnTargetId", null), p(this, "focusTargetId", null), p(this, "focusSequenceId", 1), p(this, "initialScrollSequenceId", 0), p(this, "hasMoreBefore", true), p(this, "hasMoreAfter", false), p(this, "loadingMore", false), p(this, "revealedMessageId", null), p(this, "hasFetched", false), p(this, "error", false), p(this, "_array", []), p(this, "_before", new y(true)), p(this, "_after", new y(false)), p(this, "_map", {}), this.channelId = e
+    p(this, "channelId", true), p(this, "ready", false), p(this, "cached", false), p(this, "jumpType", o.US.ANIMATED), p(this, "jumpTargetId", null), p(this, "jumpTargetOffset", 0), p(this, "jumpSequenceId", 1), p(this, "jumped", false), p(this, "jumpedToPresent", false), p(this, "jumpFlash", true), p(this, "jumpReturnTargetId", null), p(this, "focusTargetId", null), p(this, "focusSequenceId", 1), p(this, "initialScrollSequenceId", 0), p(this, "hasMoreBefore", true), p(this, "hasMoreAfter", false), p(this, "loadingMore", false), p(this, "revealedMessageId", null), p(this, "hasFetched", false), p(this, "error", false), p(this, "_array", []), p(this, "_before", new y(true)), p(this, "_after", new y(false)), p(this, "_map", {}), this.channelId = e
   }
 }
 p(b, "_channelMessages", {});

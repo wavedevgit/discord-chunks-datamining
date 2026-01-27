@@ -21,7 +21,7 @@ let d = {
   },
   async savePendingWidgets(e) {
     var t;
-    let n = null == (t = s.default.getCurrentUser()) ? true : t.id;
+    let n = null == (t = o.default.getCurrentUser()) ? true : t.id;
     if (null == n) return;
     a.h.dispatch({
       type: "WIDGET_PENDING_SAVE_START"
@@ -57,15 +57,15 @@ let d = {
       type: "WIDGET_SUGGESTED_FETCH_START"
     });
     try {
-      var e, t, n, i, s, o;
+      var e, t, n, i, o, s;
       let u = await r.Bo.get({
         url: c.Rsh.USER_PROFILE_SUGGESTED_GAMES,
         rejectWithError: true
       });
       ((null == (n = u.body) ? true : n.suggested_games) == null || (null == (i = u.body) ? true : i.suggested_wishlist_games) == null) && l.A.captureMessage("Suggested games or wishlist games not found"), a.h.dispatch({
         type: "WIDGET_SUGGESTED_FETCH_SUCCESS",
-        suggestedGamesIds: null != (e = null == (s = u.body) ? true : s.suggested_games) ? e : [],
-        suggestedWishlistGamesIds: null != (t = null == (o = u.body) ? true : o.suggested_wishlist_games) ? t : []
+        suggestedGamesIds: null != (e = null == (o = u.body) ? true : o.suggested_games) ? e : [],
+        suggestedWishlistGamesIds: null != (t = null == (s = u.body) ? true : s.suggested_wishlist_games) ? t : []
       })
     } catch (e) {
       throw a.h.dispatch({
@@ -80,6 +80,6 @@ let d = {
     })
   },
   notifyUnsavedWidgets() {
-    o._.dispatch(c.jej.SHAKE_PROFILE_MODAL), o._.dispatch(c.jej.EMPHASIZE_NOTICE), i.OR.announce("".concat(u.intl.string(u.t.GP7JLE), " ").concat(u.intl.string(u.t.gKoO1D)))
+    s._.dispatch(c.jej.SHAKE_PROFILE_MODAL), s._.dispatch(c.jej.EMPHASIZE_NOTICE), i.OR.announce("".concat(u.intl.string(u.t.GP7JLE), " ").concat(u.intl.string(u.t.gKoO1D)))
   }
 }

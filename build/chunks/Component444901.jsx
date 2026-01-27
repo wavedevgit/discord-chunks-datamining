@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 444901, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 444901, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => j
 }), require("./321073.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk544420 = require("./544420.js"),
@@ -26,35 +25,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk609653 = require("./609653.js"),
   Chunk103467 = require("./103467.js");
 
-function I(e) {
+function E(e) {
   let {
     message: t,
     applicationName: n,
     iconSrc: i,
-    channel: a,
-    currentUserId: o,
+    channel: l,
+    currentUserId: s,
     viewAction: c
-  } = e, u = (0, p.Ay)(t), d = (0, _.P)({
+  } = e, u = (0, m.Ay)(t), d = (0, f.P)({
     user: t.author,
-    channelId: a.id,
-    guildId: a.guild_id,
+    channelId: l.id,
+    guildId: l.guild_id,
     messageId: t.id
   })(u);
-  return (0, r.jsx)(h.A, {
+  return (0, r.jsx)(g.A, {
     compact: false,
-    children: O.intl.format(o === t.author.id ? O.t.anvg2q : O.t.AxVbYF, {
+    children: v.intl.format(s === t.author.id ? v.t.anvg2q : v.t.AxVbYF, {
       username: u.nick,
       usernameHook: d,
       applicationHook: () => {
-        let e = null != c ? l.MzZ : "div";
+        let e = null != c ? o.MzZ : "div";
         return (0, r.jsxs)(e, {
           onClick: c,
-          className: v.Lf,
+          className: x.Lf,
           children: [(0, r.jsx)("img", {
-            alt: O.intl.string(O.t["2B/phM"]),
+            alt: v.intl.string(v.t["2B/phM"]),
             src: i,
-            className: s()(A.Gt, f.M.XSMALL)
-          }), (0, r.jsx)(l.Text, {
+            className: a()(O.Gt, p.M.XSMALL)
+          }), (0, r.jsx)(o.Text, {
             variant: "text-sm/semibold",
             color: "text-muted",
             children: n
@@ -65,104 +64,104 @@ function I(e) {
   })
 }
 
-function S(e) {
+function j(e) {
   let {
     message: t,
     application: n,
-    applicationName: a,
-    channel: s,
-    header: f,
-    currentUserId: p,
-    launchableAppId: _,
-    isEmbeddedApplication: h,
-    tryWithGdnAction: A,
-    staticBannerSrc: S,
-    onClickContent: T,
-    iconSrc: C,
-    onView: N,
-    presenceActivity: w,
-    analyticsLocations: R,
+    applicationName: l,
+    channel: a,
+    header: p,
+    currentUserId: m,
+    launchableAppId: f,
+    isEmbeddedApplication: g,
+    tryWithGdnAction: O,
+    staticBannerSrc: j,
+    onClickContent: C,
+    iconSrc: I,
+    onView: S,
+    presenceActivity: T,
+    analyticsLocations: N,
     showAuthButton: P,
-    startAuthorization: D,
-    accountLinkButtonRef: x,
-    renderAccountLinkUpsell: L
-  } = e, j = (0, o.bG)([m.A], () => m.A.getMessages(s.id)), {
+    startAuthorization: w,
+    accountLinkButtonRef: R,
+    renderAccountLinkUpsell: D
+  } = e, L = (0, s.bG)([h.A], () => h.A.getMessages(a.id)), {
     actions: M,
     hasAccountLinkButton: k
   } = i.useMemo(() => {
     let e = [],
       r = true,
       i = false;
-    if (null != _ ? e = [{
-        label: O.intl.string(O.t["s+J8Dl"]),
+    if (null != f ? e = [{
+        label: v.intl.string(v.t["s+J8Dl"]),
         trackingArea: d.kY.PLAY,
         isDeadEnd: true,
         onClick: () => {
           c.A.launch({
-            applicationId: _,
-            embedded: h
+            applicationId: f,
+            embedded: g
           })
         }
-      }] : null != A && (e = [A], r = false), e.length > 0)
-      if (!(0, E.p)(t.id, j, n.id, w)) return {
+      }] : null != O && (e = [O], r = false), e.length > 0)
+      if (!(0, b.p)(t.id, L, n.id, T)) return {
         actions: [],
         hasAccountLinkButton: false
       };
       else P && r && (e.push({
-        label: O.intl.string(O.t.lw71Nf),
+        label: v.intl.string(v.t.lw71Nf),
         trackingArea: d.kY.CONNECT_ACCOUNT,
         onClick: () => {
-          D({
-            analyticsLocations: R
+          w({
+            analyticsLocations: N
           })
         },
-        icon: l.A5T,
+        icon: o.A5T,
         iconButton: true,
-        buttonRef: x
+        buttonRef: R
       }), i = true);
     return {
       actions: e,
       hasAccountLinkButton: i
     }
-  }, [h, _, A, j, w, n.id, t.id, P, D, R, x]), U = M.some(e => e.trackingArea === d.kY.CLOUD_PLAY);
-  (0, y.A)(U, R);
+  }, [g, f, O, L, T, n.id, t.id, P, w, N, R]), U = M.some(e => e.trackingArea === d.kY.CLOUD_PLAY);
+  (0, A.A)(U, N);
   let G = M.length > 0,
-    V = i.useMemo(() => (0, r.jsx)(l.Text, {
+    B = i.useMemo(() => (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
-      className: v.h_,
+      className: x.h_,
       color: "none",
       lineClamp: 3,
-      children: (0, g.BE)(t, a, s, p, G)
-    }), [t, a, s, p, G]);
-  return 0 === M.length ? (0, r.jsx)(I, {
+      children: (0, _.BE)(t, l, a, m, G)
+    }), [t, l, a, m, G]);
+  return 0 === M.length ? (0, r.jsx)(E, {
     message: t,
-    applicationName: a,
-    iconSrc: C,
-    channel: s,
-    currentUserId: p,
-    viewAction: T
+    applicationName: l,
+    iconSrc: I,
+    channel: a,
+    currentUserId: m,
+    viewAction: C
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.h, {
-      header: f,
-      title: a,
-      staticBannerSrc: S,
-      onClickBanner: T,
+      header: p,
+      title: l,
+      staticBannerSrc: j,
+      onClickBanner: C,
       bannerAspectRatio: u.u.ACTIVITY,
-      iconSrc: null != C ? C : true,
-      info: V,
+      iconSrc: null != I ? I : true,
+      info: B,
       actions: M,
       primaryActionFirst: true,
-      onClickContent: T,
+      onClickContent: C,
       trackingConfig: {
         id: n.id,
-        linkType: b.J.RICH_PRESENCE_INVITE,
-        onView: N,
+        linkType: y.J.RICH_PRESENCE_INVITE,
+        onView: S,
         referrerId: t.author.id,
-        guildId: s.guild_id,
+        guildId: a.guild_id,
         channelId: t.channel_id,
         messageId: t.id,
         isDeadEnd: true
       }
-    }), k ? L() : null]
+    }), k ? D() : null]
   })
 }

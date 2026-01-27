@@ -2,8 +2,8 @@
 /** chunk id: 861638, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ht: () => es,
-  Vc: () => eo,
+  Ht: () => eo,
+  Vc: () => es,
   as: () => ea
 }), require("./65821.js"), require("./321073.js");
 var Chunk835245 = require("./835245.js"),
@@ -56,17 +56,17 @@ let I = 27,
   R = null,
   P = null,
   D = 0,
-  x = 0,
-  L = {
+  L = 0,
+  x = {
     state: "uninitialized"
   },
-  j = Chunk383501.A.getState(),
-  M = (0, Chunk789999.R)(),
+  M = Chunk383501.A.getState(),
+  j = (0, Chunk789999.R)(),
   k = Chunk961350.default.getToken();
 
 function U() {
   if (null != R) return;
-  let e = 0 === x ? 0 : S - (performance.now() - x);
+  let e = 0 === L ? 0 : S - (performance.now() - L);
   m.A.addBreadcrumb({
     message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(e / 1e3, " seconds. Scheduling Heartbeat")
   }), R = {
@@ -97,14 +97,14 @@ function G() {
   return R = null, true
 }
 
-function V() {
+function F() {
   G() && (m.A.addBreadcrumb({
     category: N,
     message: "Stopping Analytics Heartbeat"
   }), (0, l.p)())
 }
 
-function F() {
+function V() {
   var e;
   let t = null != (e = f.A.getIdleSince()) ? e : 0;
   return {
@@ -117,7 +117,7 @@ function F() {
 }
 async function B() {
   let e = Date.now(),
-    t = await es(),
+    t = await eo(),
     n = Date.now();
   if (null == t) return void m.A.captureException(Error("Null session when tracking session heartbeat. Waited ".concat(n - e, "ms")));
   m.A.addBreadcrumb({
@@ -130,12 +130,12 @@ async function B() {
   let r = A({
     client_heartbeat_initialization_timestamp: t.createdAtTimestamp,
     client_heartbeat_version: I
-  }, (0, g.Q)(), F());
-  _.default.track(O.HAw.CLIENT_HEARTBEAT, r), x = performance.now(), (0, l.p)()
+  }, (0, g.Q)(), V());
+  _.default.track(O.HAw.CLIENT_HEARTBEAT, r), L = performance.now(), (0, l.p)()
 }
 
 function H() {
-  if (!(null != k && (0, b.$)()) || performance.now() - x <= S) return;
+  if (!(null != k && (0, b.$)()) || performance.now() - L <= S) return;
   let e = {
     client_heartbeat_version: I
   };
@@ -146,7 +146,7 @@ function Y() {}
 
 function W() {
   let e = [];
-  return null != k && (M && e.push("foregrounded"), j === O.S7L.RTC_CONNECTED && e.push("rtc_connected")), {
+  return null != k && (j && e.push("foregrounded"), M === O.S7L.RTC_CONNECTED && e.push("rtc_connected")), {
     active: e.length > 0,
     ver: I,
     reasons: e
@@ -158,7 +158,7 @@ function K() {
 }
 
 function z() {
-  K() ? U() : V(), J()
+  K() ? U() : F(), J()
 }
 
 function q() {
@@ -173,21 +173,21 @@ function q() {
 function Z(e) {
   let t = performance.now();
   if (!(t - D < T)) try {
-    s.w.set(C, e), D = t
+    o.w.set(C, e), D = t
   } catch (e) {
     m.A.captureException(e)
   }
 }
 
-function X(e) {
+function Q(e) {
   return null == e ? null : e.version !== y.Ir ? (w.warn("Throwing away client session with invalid version: ".concat(e.version, ", expected ").concat(y.Ir)), null) : e
 }
 
-function Q() {
-  s.w.remove(C), L = {
+function X() {
+  o.w.remove(C), x = {
     state: "loaded",
     session: null
-  }, V(), x = 0
+  }, F(), L = 0
 }
 
 function J() {
@@ -195,7 +195,7 @@ function J() {
   null == (e = u.A.getSocket()) || e.handleActiveStateChange(W())
 }
 async function $() {
-  let e = await es(false);
+  let e = await eo(false);
   if (null != e) {
     var t;
     null == (t = u.A.getSocket()) || t.handleUpdateTimeSpentSessionId(e.createdAtTimestamp, e.uuid, i.C)
@@ -204,44 +204,44 @@ async function $() {
 
 function ee() {
   let e = d.default.getToken();
-  k !== e && (k = e, Q()), z()
+  k !== e && (k = e, X()), z()
 }
 
 function et() {
   let e = p.A.getState();
-  j !== e && (j = e, z())
+  M !== e && (M = e, z())
 }
 
 function en(e) {
   let {
     focused: t
   } = e;
-  M !== t && (M = t, z())
+  j !== t && (j = t, z())
 }
 
 function er(e) {
   let {
     state: t
   } = e, n = t === O.g6G.ACTIVE;
-  M !== n && (M = n, z())
+  j !== n && (j = n, z())
 }
 
 function ei() {
-  j = p.A.getState(), M = (0, E.R)(), ee()
+  M = p.A.getState(), j = (0, E.R)(), ee()
 }
 
 function ea() {
   m.A.addBreadcrumb({
     message: "Initializing SessionHeartbeatScheduler"
-  }), p.A.addChangeListener(et), d.default.addChangeListener(ee), o.h.subscribe("WINDOW_FOCUS", en), o.h.subscribe("APP_STATE_UPDATE", er), o.h.subscribe("CONNECTION_OPEN", $), z(), q(), a.Ay.initialized.then(ei)
+  }), p.A.addChangeListener(et), d.default.addChangeListener(ee), s.h.subscribe("WINDOW_FOCUS", en), s.h.subscribe("APP_STATE_UPDATE", er), s.h.subscribe("CONNECTION_OPEN", $), z(), q(), a.Ay.initialized.then(ei)
 }
-async function es() {
+async function eo() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     n = null,
-    a = "loaded" === L.state ? null == (e = L.session) ? true : e.uuid : null;
+    a = "loaded" === x.state ? null == (e = x.session) ? true : e.uuid : null;
   try {
-    n = "uninitialized" === L.state ? X(await s.w.getAfterRefresh(C)) : L.session
+    n = "uninitialized" === x.state ? Q(await o.w.getAfterRefresh(C)) : x.session
   } catch (e) {
     m.A.captureException(e)
   }
@@ -252,18 +252,18 @@ async function es() {
         createdAtTimestamp: e,
         lastUsedTimestamp: e,
         version: y.Ir
-      }, D = 0), n.lastUsedTimestamp = e, Z(n)) : null != n && (0, y.aE)(n) && (n = null), L = {
+      }, D = 0), n.lastUsedTimestamp = e, Z(n)) : null != n && (0, y.aE)(n) && (n = null), x = {
         state: "loaded",
         session: n
       }, null != n && a !== n.uuid && t) {
-      var s;
-      null == (s = u.A.getSocket()) || s.handleUpdateTimeSpentSessionId(n.createdAtTimestamp, n.uuid, i.C)
+      var o;
+      null == (o = u.A.getSocket()) || o.handleUpdateTimeSpentSessionId(n.createdAtTimestamp, n.uuid, i.C)
     }
     return n
   })()
 }
 
-function eo() {
-  let e = "uninitialized" === L.state ? X(s.w.get(C)) : L.session;
+function es() {
+  let e = "uninitialized" === x.state ? Q(o.w.get(C)) : x.session;
   return null == e || (0, y.aE)(e) ? null : e
 }

@@ -77,7 +77,7 @@ function m(e) {
     onCancel: n
   } = e, l = _(e, ["onConfirm", "onCancel"]), [u, f] = i.useState(false);
   i.useEffect(() => {
-    o.Ay.updatedUnsyncedSettings({
+    s.Ay.updatedUnsyncedSettings({
       disableEmbeddedActivityPopOutAlert: u
     })
   }, [u]);
@@ -100,7 +100,7 @@ function m(e) {
       onClick: m,
       variant: "primary"
     }],
-    actionBarInput: (0, r.jsx)(s.Checkbox, {
+    actionBarInput: (0, r.jsx)(o.Checkbox, {
       checked: u,
       onChange: e => f(e),
       label: c.intl.string(c.t.wGAwOS)
@@ -114,8 +114,8 @@ function g(e) {
     onCancel: n,
     usesPopoutContext: i = false
   } = e;
-  l.Ay.disableEmbeddedActivityPopOutAlert ? t() : (0, s.qfG)(e => (0, r.jsx)(m, p(d({}, e), {
+  l.Ay.disableEmbeddedActivityPopOutAlert ? t() : (0, o.qfG)(e => (0, r.jsx)(m, p(d({}, e), {
     onConfirm: t,
     onCancel: n
-  })), {}, i ? s.KX8 : true)
+  })), {}, i ? o.KX8 : true)
 }

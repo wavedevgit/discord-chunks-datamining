@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 300542, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 2292 **/
+/** chunk id: 300542, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,57 +12,52 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk521512 = require("./521512.js");
 
-function d(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function f(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      d(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function p() {
-  let e = (0, a.bG)([l.A], () => l.A.affinities.slice(0, 3)),
+function d() {
+  let e = (0, l.bG)([o.A], () => o.A.affinities.slice(0, 3)),
     t = e[0],
     {
-      avatarSrc: n,
+      avatarSrc: r,
       eventHandlers: d
-    } = (0, o.A)({
+    } = (0, s.A)({
       userId: null == t ? true : t.id,
-      size: s._3J.SIZE_24,
+      size: a._3J.SIZE_24,
       animateOnHover: true
     }),
-    p = e => null != e.globalName ? e.globalName : e.username,
-    _ = i.useMemo(() => e.length >= 2 ? c.intl.formatToPlainString(c.t.c7ETJH, {
-      username: p(e[0])
+    m = e => null != e.globalName ? e.globalName : e.username,
+    p = i.useMemo(() => e.length >= 2 ? c.intl.formatToPlainString(c.t.c7ETJH, {
+      username: m(e[0])
     }) : 1 === e.length ? c.intl.formatToPlainString(c.t.dpjXPL, {
-      username: p(e[0])
+      username: m(e[0])
     }) : "", [e]);
-  return 0 === e.length ? null : (0, r.jsxs)("div", {
+  return 0 === e.length ? null : (0, n.jsxs)("div", {
     className: u.kL,
-    children: [(0, r.jsx)(s.euF, f({
+    children: [(0, n.jsx)(a.euF, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var r = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+          var n;
+          n = r[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = n
+        })
+      }
+      return e
+    }({
       className: u.__invalid_icon,
-      src: n,
+      src: r,
       "aria-label": t.username,
-      size: s._3J.SIZE_24
-    }, d)), (0, r.jsx)(s.Text, {
+      size: a._3J.SIZE_24
+    }, d)), (0, n.jsx)(a.Text, {
       className: u.Qq,
       variant: "text-sm/normal",
       color: "always-white",
-      children: _
+      children: p
     })]
   })
 }

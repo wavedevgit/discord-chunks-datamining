@@ -2,23 +2,23 @@
 /** chunk id: 565579, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => s
+  m: () => o
 }), require("./747238.js");
 var Chunk76522 = require("./76522.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let s = [{
+let o = [{
   check(e, t, n) {
     if (!n || null == t.getGuildId()) returnfalse;
     let i = r.A.extractEveryoneRole(e, t);
     if (null == i || !r.A.shouldShowEveryoneGuard(i, t)) returnfalse;
-    let s = r.A.everyoneMemberCount(i, t),
-      o = Math.pow(10, Math.floor(Math.log10(s))),
+    let o = r.A.everyoneMemberCount(i, t),
+      s = Math.pow(10, Math.floor(Math.log10(o))),
       l = a.t["47E5Rz"];
     return t.isForumPost() ? l = a.t.sYW2cy : t.isThread() && (l = a.t["2YaiQ1"]), {
       body: a.intl.formatToPlainString(l, {
         role: i,
-        count: (Math.trunc(s / o) * o).toLocaleString()
+        count: (Math.trunc(o / s) * s).toLocaleString()
       }),
       footer: a.intl.string(a.t.mVyrtu)
     }

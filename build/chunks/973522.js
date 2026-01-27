@@ -2,7 +2,7 @@
 /** chunk id: 973522, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ic: () => o,
+  Ic: () => s,
   PQ: () => c,
   wH: () => l
 }), require("./747238.js");
@@ -10,16 +10,16 @@ var Chunk847521 = require("./847521.js"),
   Chunk760751 = require("./760751.js"),
   Chunk723702 = require("./723702.js");
 
-function s(e) {
+function o(e) {
   return (e = e.toLowerCase()).endsWith("/") && (e = e.slice(0, false)), e
 }
 
-function o(e) {
-  return s(e).split("/").slice(false).join("/")
+function s(e) {
+  return o(e).split("/").slice(false).join("/")
 }
 
 function l(e) {
-  var t, n, a, s, l;
+  var t, n, a, o, l;
   if (null == e) return {
     gameName: true,
     gameId: true,
@@ -34,8 +34,8 @@ function l(e) {
   return {
     gameName: null != (t = e.name) ? t : true,
     gameId: null != (n = null != (a = e.id) ? a : null == c ? true : c.id) ? n : true,
-    exe: null != u ? o(u) : true,
-    distributor: null != (s = e.distributor) ? s : true,
+    exe: null != u ? s(u) : true,
+    distributor: null != (o = e.distributor) ? o : true,
     sku: null != (l = e.sku) ? l : true,
     gameMetadata: null != e ? (0, r.MT)(e) : true,
     rawExePath: u
@@ -44,7 +44,7 @@ function l(e) {
 
 function c(e, t) {
   if (null == e || null == t) returnfalse;
-  let n = s(e),
+  let n = o(e),
     r = (0, a.getPlatformName)();
   return t.some(e => e.os === r && (null == n ? true : n.endsWith(e.name)))
 }

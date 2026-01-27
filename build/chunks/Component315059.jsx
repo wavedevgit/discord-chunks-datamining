@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 315059, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 52199 **/
+/** chunk id: 315059, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
@@ -14,30 +13,30 @@ var Chunk397927 = require("./397927.js"),
 let c = function(e) {
   let {
     channel: t,
-    avatarSize: n,
+    avatarSize: r,
     iconSize: c,
     iconClassName: u
   } = e;
   if (t.isDM()) {
     let e = t.getRecipientId(),
-      a = o.default.getUser(e);
-    if (null == a) return null;
-    let s = a.getAvatarURL(null, i.vCh[n].size);
-    return (0, r.jsx)(i.euF, {
+      s = i.default.getUser(e);
+    if (null == s) return null;
+    let a = s.getAvatarURL(null, l.vCh[r].size);
+    return (0, n.jsx)(l.euF, {
       "aria-hidden": true,
-      className: l.B7,
-      size: n,
-      src: s
+      className: o.B7,
+      size: r,
+      src: a
     })
   }
-  if (t.isGroupDM()) return (0, r.jsx)(s.A, {
+  if (t.isGroupDM()) return (0, n.jsx)(a.A, {
     "aria-hidden": true,
-    className: l.w$,
+    className: o.w$,
     channel: t,
-    size: n
+    size: r
   });
-  let d = (0, a.gU)(t);
-  return null == d ? null : (0, r.jsx)(d, {
+  let d = (0, s.gU)(t);
+  return null == d ? null : (0, n.jsx)(d, {
     className: u,
     color: "currentColor",
     size: c

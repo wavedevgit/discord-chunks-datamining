@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 773349, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 773349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,20 +18,20 @@ let p = Chunk64700.memo(e => {
     userId: t,
     subText: n,
     className: i
-  } = e, a = (0, o.bG)([c.default], () => c.default.getUser(t));
-  return true === a ? null : (0, r.jsxs)("div", {
-    className: s()(f.k, i),
-    children: [(0, r.jsx)(d.H, {
-      user: a,
-      avatarSize: l._3J.SIZE_40
+  } = e, l = (0, a.bG)([c.default], () => c.default.getUser(t));
+  return true === l ? null : (0, r.jsxs)("div", {
+    className: s()(_.k, i),
+    children: [(0, r.jsx)(u.H, {
+      user: l,
+      avatarSize: o._3J.SIZE_40
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: f.$,
-        children: [(0, r.jsx)(l.Text, {
+        className: _.$,
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "interactive-text-active",
-          children: u.Ay.getName(a)
-        }), null != n && (0, r.jsx)(l.Text, {
+          children: d.Ay.getName(l)
+        }), null != n && (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-subtle",
           children: n
@@ -42,4 +41,4 @@ let p = Chunk64700.memo(e => {
   })
 });
 p.displayName = "FamilyCenterActivityUserRow";
-let _ = p
+let m = p

@@ -10,7 +10,7 @@ var Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
   Chunk405269 = require("./405269.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,13 +18,13 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = /^[0]+/,
+let s = /^[0]+/,
   l = /:00/,
   c = /(AM|ΠΜ|सुबह)/i,
   u = /(PM|ΜΜ|शाम)/i,
   d = /\s+/,
-  f = e => e.replace(o, "").replace(l, "").replace(c, "").replace(d, ""),
-  p = e => e.replace(o, "").replace(u, "").replace(d, ""),
+  f = e => e.replace(s, "").replace(l, "").replace(c, "").replace(d, ""),
+  p = e => e.replace(s, "").replace(u, "").replace(d, ""),
   _ = (e, t) => {
     let n = t.toUpperCase().trim();
     if (n.length > 0) {
@@ -108,7 +108,7 @@ class b {
     intervalInMinutes: e = m,
     labelFormat: t = g
   } = {}) {
-    if (s(this, "intervalInMinutes", true), s(this, "labelFormat", true), s(this, "options", []), s(this, "_index", {}), e <= 0) throw Error("intervalInMinutes should be positive number, got ".concat(e));
+    if (o(this, "intervalInMinutes", true), o(this, "labelFormat", true), o(this, "options", []), o(this, "_index", {}), e <= 0) throw Error("intervalInMinutes should be positive number, got ".concat(e));
     this.intervalInMinutes = e, this.labelFormat = t, this._generateTimeOptions()
   }
 }

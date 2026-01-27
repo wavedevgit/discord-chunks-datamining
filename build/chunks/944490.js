@@ -15,10 +15,10 @@ class a {
     let i = t["=" + e];
     if (i) return "function" == typeof i ? i() : i;
     let a = this.locale + ":" + n,
-      s = r.get(a);
-    return s || (s = new Intl.PluralRules(this.locale, {
+      o = r.get(a);
+    return o || (o = new Intl.PluralRules(this.locale, {
       type: n
-    }), r.set(a, s)), "function" == typeof(i = t[s.select(e)] || t.other) ? i() : i
+    }), r.set(a, o)), "function" == typeof(i = t[o.select(e)] || t.other) ? i() : i
   }
   number(e) {
     let t = i.get(this.locale);

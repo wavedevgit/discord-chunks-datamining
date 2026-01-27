@@ -33,12 +33,12 @@ function p() {
 function _() {
   if (!p() || !l.A.getVoiceFilterPlaybackEnabled() || !c.A.isConnected() || null == l.A.getActiveVoiceFilter()) returnfalse;
   let e = c.A.getChannelId(),
-    t = null != e ? o.A.getChannel(e) : null,
+    t = null != e ? s.A.getChannel(e) : null,
     {
       mute: n,
       selfMute: r,
       suppress: i
-    } = (0, s.k)({
+    } = (0, o.k)({
       channel: t
     });
   return !(n || r || i)

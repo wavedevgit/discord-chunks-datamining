@@ -1,7 +1,7 @@
-/** Chunk was on 94073 **/
+/** Chunk was on 87916 **/
 /** chunk id: 515598, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,46 +17,46 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk234518 = require("./234518.js");
 
-function b(e) {
+function g(e) {
   let {
     analyticsSection: t,
     analyticsPage: n,
-    isGIF: b,
+    isGIF: g,
     banner: m
-  } = e, p = (0, a.bG)([u.A], () => u.A.getGuildId()), y = (0, a.bG)([c.A], () => c.A.getGuild(p)), {
-    analyticsLocations: g
-  } = (0, i.Ay)();
-  return null == y || y.features.has(_.GuildFeatures.ANIMATED_BANNER) || !b && y.features.has(_.GuildFeatures.BANNER) ? null : (0, r.jsxs)("div", {
-    className: A.kL,
-    children: [(0, r.jsx)(o._Jp, {
-      color: o.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: A.qC
-    }), (0, r.jsx)(o.Text, {
+  } = e, p = (0, i.bG)([d.A], () => d.A.getGuildId()), x = (0, i.bG)([c.A], () => c.A.getGuild(p)), {
+    analyticsLocations: N
+  } = (0, r.Ay)();
+  return null == x || x.features.has(u.GuildFeatures.ANIMATED_BANNER) || !g && x.features.has(u.GuildFeatures.BANNER) ? null : (0, a.jsxs)("div", {
+    className: f.kL,
+    children: [(0, a.jsx)(l._Jp, {
+      color: l.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+      className: f.qC
+    }), (0, a.jsx)(l.Text, {
       color: "text-strong",
       variant: "text-sm/semibold",
-      children: f.intl.string(f.t["56M7xe"])
-    }), (0, r.jsx)("div", {
-      className: A.xF,
-      children: (0, r.jsx)(o.QWc, {
-        text: f.intl.string(f.t.WUHdZV),
+      children: A.intl.string(A.t["56M7xe"])
+    }), (0, a.jsx)("div", {
+      className: f.xF,
+      children: (0, a.jsx)(l.QWc, {
+        text: A.intl.string(A.t.WUHdZV),
         onClick: () => {
-          if (null == y) return;
+          if (null == x) return;
           let e = {
             section: t,
             page: n,
-            object: _.ZSU.UPSELL_HEADER
+            object: u.ZSU.UPSELL_HEADER
           };
-          null != m ? (0, l._)({
-            analyticsLocations: g,
+          null != m ? (0, s._)({
+            analyticsLocations: N,
             analyticsLocation: e,
-            guild: y,
-            isGIF: b,
+            guild: x,
+            isGIF: g,
             banner: m
-          }) : (0, s.A)({
-            analyticsLocations: g,
+          }) : (0, o.A)({
+            analyticsLocations: N,
             analyticsSourceLocation: e,
-            guild: y,
-            perks: b ? (0, d.Pf)() : (0, d.QR)()
+            guild: x,
+            perks: g ? (0, _.Pf)() : (0, _.QR)()
           })
         },
         textVariant: "text-sm/semibold"

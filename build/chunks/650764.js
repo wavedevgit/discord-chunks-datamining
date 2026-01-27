@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 650764, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96430 **/
+/** chunk id: 650764, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   u: () => i
 });
 var Chunk85526 = require("./85526.js");
 
-function i(e) {
-  return r.fromByteArray(e)
+function i(t) {
+  return r.fromByteArray(t)
 }

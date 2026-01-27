@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 252711, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 252711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js"),
@@ -16,43 +15,43 @@ var Chunk503698 = require("./503698.js"),
   Chunk396375 = require("./396375.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk41099 = require("./41099.js");
-let _ = function(e) {
+let m = function(e) {
   let {
     isVisible: t,
     subscriptionTier: n,
     isApplicationHome: i,
-    isEligibleForBogoPromotion: _
-  } = e, h = (0, l.zhh)({
+    isEligibleForBogoPromotion: m
+  } = e, g = (0, o.zhh)({
     transform: t ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!t,
     config: {
       tension: 120,
       friction: 12
     }
-  }), m = {
-    section: f.JJy.MARKETING_FLOATING_CTA
-  }, g = (0, c.Ay)(), E = (0, l.Mwr)(g);
+  }), A = {
+    section: _.JJy.MARKETING_FLOATING_CTA
+  }, f = (0, c.Ay)(), h = (0, o.Mwr)(f);
   return (0, r.jsx)(s.animated.div, {
-    className: a()(p.iE, {
+    className: l()(p.iE, {
       [p.H8]: i,
       [p.q4]: !t
     }),
-    style: h,
+    style: g,
     children: (0, r.jsxs)("div", {
       className: i ? p.zW : p.iJ,
-      children: [(0, r.jsx)(d.A, {
-        color: E ? o.XD.BRAND_INVERTED : true,
-        className: a()(p.x6, {
-          [p.Ph]: E
+      children: [(0, r.jsx)(u.A, {
+        color: h ? a.XD.BRAND_INVERTED : true,
+        className: l()(p.x6, {
+          [p.Ph]: h
         }),
         subscriptionTier: n,
-        premiumModalAnalyticsLocation: m,
+        premiumModalAnalyticsLocation: A,
         isPersistentCTA: true,
-        hasActivePromotion: _,
-        shinyButtonClassName: E ? true : p.PJ
-      }), (0, r.jsx)(u.A, {
+        hasActivePromotion: m,
+        shinyButtonClassName: h ? true : p.PJ
+      }), (0, r.jsx)(d.A, {
         className: p.x6,
-        premiumModalAnalyticsLocation: m
+        premiumModalAnalyticsLocation: A
       })]
     })
   })

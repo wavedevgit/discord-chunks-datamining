@@ -32,14 +32,14 @@ let h = 2,
   },
   g = true,
   E = () => {
-    (g = !c.Ay.canUsePremiumAppIcons(o.default.getCurrentUser())) && y(u.LW.DEFAULT)
+    (g = !c.Ay.canUsePremiumAppIcons(s.default.getCurrentUser())) && y(u.LW.DEFAULT)
   },
   y = e => {
     if (m.client.desktop = e, !g) {
       var t;
       l.default.track(d.HAw.APP_ICON_UPDATED, {
         icon_id: e,
-        user_premium_tier: null == (t = o.default.getCurrentUser()) ? true : t.premiumType,
+        user_premium_tier: null == (t = s.default.getCurrentUser()) ? true : t.premiumType,
         icon_premium_tier: e !== u.LW.DEFAULT ? p.PremiumTypes.TIER_2 : null
       })
     }
@@ -63,11 +63,11 @@ function v(e) {
   let {
     markAsDismissed: t
   } = e;
-  m.client.coachmarkImpressions += 1, m.client.coachmarkImpressions >= h && (null == t || t(f.i.UNKNOWN), O(), (0, s.Jp)())
+  m.client.coachmarkImpressions += 1, m.client.coachmarkImpressions >= h && (null == t || t(f.i.UNKNOWN), O(), (0, o.Jp)())
 }
 class A extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (m = e), this.waitFor(o.default), this.syncWith([o.default], E)
+    null != e && (m = e), this.waitFor(s.default), this.syncWith([s.default], E)
   }
   get isUpsellPreview() {
     return g

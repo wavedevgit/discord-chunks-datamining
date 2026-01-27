@@ -42,15 +42,15 @@ let h = 20 * Chunk927813.A.Millis.SECOND,
       let e = a.A.getCurrentUserActiveStream();
       if (null == e || e.state === f.XYD.PAUSED || 0 === a.A.getViewerIds(e).length) return null;
       let t = (0, i._z)(e),
-        n = s.A.getRTCConnection(t);
+        n = o.A.getRTCConnection(t);
       if (null == n) return null;
-      let o = n.getMediaEngineConnectionId();
-      if (null == o) return null;
-      let p = s.A.getLastNonZeroRemoteVideoSinkWantsTime(t);
+      let s = n.getMediaEngineConnectionId();
+      if (null == s) return null;
+      let p = o.A.getLastNonZeroRemoteVideoSinkWantsTime(t);
       if (null != p && performance.now() - p < h || !n.hasActiveRemoteWants()) return null;
       let m = r.A.getParticipant(e.channelId, (0, i._z)(e));
       if (null == m) return null;
-      let g = (0, d.xA)(o, e.ownerId);
+      let g = (0, d.xA)(s, e.ownerId);
       if (null == g) return null;
       let E = (0, l.wz)(m);
       return null == E ? null : g.short.frameRate < (0, d.s1)(E.maxFrameRate) || g.long.frameRate < (0, d.s1)(E.maxFrameRate) ? [_({

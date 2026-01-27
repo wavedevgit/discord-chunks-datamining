@@ -15,22 +15,22 @@ require.d(exports, {
 var Chunk723702 = require("./723702.js"),
   Chunk389512 = require("./389512.js"),
   Chunk334278 = require("./334278.js");
-let s = (e, t) => {
+let o = (e, t) => {
     if (null == e) returnfalse;
     let [n, r] = e.split(/\?/, 1);
     return t.test(n)
   },
-  o = (e, t) => {
+  s = (e, t) => {
     if (null == e) returnfalse;
     let [n, r] = e.split("/");
     return n === t
   },
   l = /\.(png|jpe?g|jfif|webp|gif|heic|heif|dng|avif)$/i,
-  c = e => s(e, l),
+  c = e => o(e, l),
   u = e => null != e && l.test(e),
-  d = e => o(e, "image"),
+  d = e => s(e, "image"),
   f = /\.(webp|gif|avif)$/i,
-  p = e => s(e, f),
+  p = e => o(e, f),
   _ = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
   h = /\.(mp3|m4a|wav|ogg|opus|flac)$/i,
   m = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
@@ -44,11 +44,11 @@ let s = (e, t) => {
   I = (0, Chunk723702.isIOS)() ? b : (0, Chunk723702.isAndroid)() ? O : v,
   S = e => (0, a.D)() && i.A.getConfig({
     location: "isWebPlayerVideoUrl"
-  }).enabled && s(e, y),
-  T = e => s(e, I) || S(e),
+  }).enabled && o(e, y),
+  T = e => o(e, I) || S(e),
   C = e => null != e && (0, a.D)() && i.A.getConfig({
     location: "isWebPlayerVideoFile"
   }).enabled && y.test(e),
   N = e => null != e && (I.test(e) || C(e)),
   w = e => null != e && A.test(e),
-  R = e => o(e, "video")
+  R = e => s(e, "video")

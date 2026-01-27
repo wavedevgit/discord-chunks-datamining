@@ -7,10 +7,10 @@ require.d(exports, {
   Ik: () => l,
   NH: () => a,
   Ob: () => u,
-  Ss: () => o,
+  Ss: () => s,
   YC: () => _,
   iW: () => f,
-  oW: () => s,
+  oW: () => o,
   tE: () => m,
   uA: () => p,
   v4: () => d
@@ -18,14 +18,14 @@ require.d(exports, {
 var Chunk155718 = require("./155718.js"),
   Chunk985018 = require("./985018.jsx");
 let a = "True",
-  s = "False",
-  o = [{
+  o = "False",
+  s = [{
     name: a,
     displayName: a,
     value: "true"
   }, {
-    name: s,
-    displayName: s,
+    name: o,
+    displayName: o,
     value: "false"
   }];
 var l = function(e) {

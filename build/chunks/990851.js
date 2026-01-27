@@ -9,7 +9,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk760751 = require("./760751.js"),
   Chunk667269 = require("./667269.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,12 +22,12 @@ function l(e) {
   var t, n;
   let {
     game: r
-  } = e, o = i.Ay.isDetectionEnabled(r), l = null != (t = r.id) ? t : null == (n = a.A.getGameByName(r.name)) ? true : n.id;
-  null != l && (0, s.J)(l, o)
+  } = e, s = i.Ay.isDetectionEnabled(r), l = null != (t = r.id) ? t : null == (n = a.A.getGameByName(r.name)) ? true : n.id;
+  null != l && (0, o.J)(l, s)
 }
 class c extends Chunk439372.A {
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), s(this, "actions", {
       RUNNING_GAME_TOGGLE_DETECTION: l,
       RUNNING_GAME_DELETE_ENTRY: l
     })

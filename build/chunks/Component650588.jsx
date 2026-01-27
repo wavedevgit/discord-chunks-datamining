@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk170887 = require("./170887.js"),
@@ -23,7 +23,7 @@ function h(e) {
     sound: n
   } = e, [a, h] = i.useState(false), m = i.useRef(null), g = (0, c.A)({
     location: "GiftSoundboard"
-  }), E = s()(p.Qq, g && p.Ow);
+  }), E = o()(p.Qq, g && p.Ow);
 
   function y(e) {
     h(false), null == t || t(e)
@@ -71,14 +71,14 @@ function h(e) {
       })
     },
     children: () => (0, r.jsx)(l.DUT, {
-      className: s()(p.kL, g && p.Ow),
+      className: o()(p.kL, g && p.Ow),
       onClick: () => h(true),
       innerRef: m,
       children: null == n ? (0, r.jsxs)("div", {
         className: p.hQ,
         children: [(0, r.jsx)(l.JMI, {
           size: "custom",
-          color: g ? o.A.colors.ICON_STRONG : o.A.colors.WHITE,
+          color: g ? s.A.colors.ICON_STRONG : s.A.colors.WHITE,
           className: p.tc,
           width: 14,
           height: 14

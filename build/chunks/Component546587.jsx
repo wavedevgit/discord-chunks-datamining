@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk850992 = require("./850992.js"),
@@ -39,10 +39,10 @@ function E(e) {
   }, [a]), S = i.useCallback((e, t) => {
     let i = a[t];
     if (null == i) return;
-    let s = (0, f.Rg)(i),
+    let o = (0, f.Rg)(i),
       c = i.type === d.Hf.BUILT_IN ? m : 0,
       u = h - 2 * c,
-      _ = (0, r.jsx)(s, {
+      _ = (0, r.jsx)(o, {
         channel: n,
         section: i,
         isSelected: null != y ? i.id === y : E === t,
@@ -54,7 +54,7 @@ function E(e) {
       g = i.type !== d.Hf.BUILT_IN && t < a.length - 1 && a[t + 1].type === d.Hf.BUILT_IN;
     return (0, r.jsxs)("div", {
       className: p.uW,
-      children: [(0, r.jsx)(o.m, {
+      children: [(0, r.jsx)(s.m, {
         text: i.name,
         position: "right",
         asContainer: true,
@@ -71,7 +71,7 @@ function E(e) {
     }, i.id)
   }, [E, n, b, a, y]);
   return 0 === a.length ? null : (0, r.jsx)("div", {
-    className: s()(t, p.iE),
+    className: o()(t, p.iE),
     children: (0, r.jsx)(u.A, {
       categoryListRef: v,
       expressionsListRef: O,

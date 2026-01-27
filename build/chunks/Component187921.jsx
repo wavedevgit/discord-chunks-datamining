@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk478437 = require("./478437.js"),
   Chunk305866 = require("./305866.jsx"),
   Chunk355622 = require("./355622.js"),
@@ -41,13 +41,13 @@ let I = (0, Chunk95701.createChannelRecord)({
         let a = v.intl.formatToPlainString(v.t.WmvMCo, {
             username: n
           }),
-          s = "\n> ".concat(i);
-        return null != i ? "".concat(E.c5).concat(a, "*").concat(s, "\n").concat(t) : "".concat(E.c5).concat(a, "*\n").concat(t);
+          o = "\n> ".concat(i);
+        return null != i ? "".concat(E.c5).concat(a, "*").concat(o, "\n").concat(t) : "".concat(E.c5).concat(a, "*\n").concat(t);
       case b.dS.AVATAR:
-        let o = v.intl.formatToPlainString(v.t.lpaBsB, {
+        let s = v.intl.formatToPlainString(v.t.lpaBsB, {
           username: n
         });
-        return "".concat(E.c5).concat(o, "*\n").concat(t);
+        return "".concat(E.c5).concat(s, "*\n").concat(t);
       case b.dS.STATUS:
         let l = v.intl.formatToPlainString(v.t.lFXgFV, {
             username: n
@@ -76,7 +76,7 @@ function C(e) {
     user: t,
     guildId: n,
     channelId: a,
-    sourceType: o,
+    sourceType: s,
     sourceDetails: f,
     setPopoutRef: p,
     modalKey: E,
@@ -88,17 +88,17 @@ function C(e) {
     setInteractionToast: P
   } = (0, g.Pq)(), {
     primaryColor: D
-  } = (0, y.E)(), [x, L] = i.useState(""), [j, M] = i.useState((0, u.x7)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
+  } = (0, y.E)(), [L, x] = i.useState(""), [M, j] = i.useState((0, u.x7)(L)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
     e.key === O.dh.ESCAPE && (e.stopPropagation(), R())
   }, [R]);
   i.useEffect(() => {
     null == p || p(null == U ? true : U.current)
   }, [U, p]);
-  let V = async e => {
+  let F = async e => {
     if (null == e) return;
-    o === b.dS.AVATAR ? C({
+    s === b.dS.AVATAR ? C({
       action: "SEND_REPLY_AVATAR"
-    }) : o === b.dS.STATUS ? C({
+    }) : s === b.dS.STATUS ? C({
       action: "SEND_REPLY_CUSTOM_STATUS"
     }) : C({
       action: "SEND_REPLY_ACTIVITY"
@@ -106,7 +106,7 @@ function C(e) {
     let n = S({
       input: e,
       username: h.Ay.getName(t),
-      sourceType: o,
+      sourceType: s,
       sourceDetails: f
     });
     P(null);
@@ -121,16 +121,16 @@ function C(e) {
       })
     } catch (e) {}
     P(b.AQ.REPLY)
-  }, F = {
-    [A.h5]: o === b.dS.STATUS,
-    [A.my]: o === b.dS.AVATAR,
-    [A.Eb]: o === b.dS.ACTIVITY
+  }, V = {
+    [A.h5]: s === b.dS.STATUS,
+    [A.my]: s === b.dS.AVATAR,
+    [A.Eb]: s === b.dS.ACTIVITY
   };
   return (0, r.jsx)(l.l, {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: s()(A.kL, F, {
+      className: o()(A.kL, V, {
         [A.GE]: null != D
       }),
       children: (0, r.jsx)(d.Ay, {
@@ -140,14 +140,14 @@ function C(e) {
         innerClassName: A.rn,
         editorClassName: A.EN,
         type: c.oU.USER_PROFILE_REPLY,
-        placeholder: v.intl.formatToPlainString(T(o), {
+        placeholder: v.intl.formatToPlainString(T(s), {
           username: _.Ay.getName(n, a, t)
         }),
         channel: I,
-        textValue: x,
-        richValue: j,
+        textValue: L,
+        richValue: M,
         onChange: (e, t, n) => {
-          t !== x && (L(t), M(n))
+          t !== L && (x(t), j(n))
         },
         focused: k.current,
         onFocus: () => {
@@ -162,7 +162,7 @@ function C(e) {
             shouldRefocus: false
           };
           try {
-            return await V(n), R(), null == N || N(), {
+            return await F(n), R(), null == N || N(), {
               shouldClear: true,
               shouldRefocus: false
             }

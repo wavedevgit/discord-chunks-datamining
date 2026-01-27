@@ -38,10 +38,10 @@ function I(e) {
   var t, n, r;
   let {
     channelId: a,
-    message: s
-  } = e, o = h.A.getMessage(a, s.id);
-  if ((null == o || null == (n = o.embeds) || null == (t = n[0]) ? true : t.type) === i.A.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
-    let e = null == (r = o.embeds[0].fields) ? true : r.find(e => e.rawName === y.uN.CONTENT_TYPE);
+    message: o
+  } = e, s = h.A.getMessage(a, o.id);
+  if ((null == s || null == (n = s.embeds) || null == (t = n[0]) ? true : t.type) === i.A.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
+    let e = null == (r = s.embeds[0].fields) ? true : r.find(e => e.rawName === y.uN.CONTENT_TYPE);
     (null == e ? true : e.rawValue) === y.Wv.ERROR ? (f.A.showFailedToast(O.OB.TIGGER_PAWTECT_ERROR), (0, E.Vh)(E.oQ.ERROR)) : (null == e ? true : e.rawValue) === y.Wv.VERIFIED_ADULT ? (f.A.showSuccessToast(O.OB.TIGGER_PAWTECT_VERIFIED), (0, E.Vh)(E.oQ.VERIFIED_ADULT)) : (null == e ? true : e.rawValue) === y.Wv.VERIFIED_TEEN && (f.A.showSuccessToast(O.OB.TIGGER_PAWTECT_VERIFIED), (0, E.Vh)(E.oQ.VERIFIED_TEEN))
   }
 }
@@ -66,7 +66,7 @@ class C extends Chunk439372.A {
       var t;
       let {
         user: n
-      } = e, i = null != (t = (0, g.transformUser)(n).ageVerificationStatus) ? t : null, a = this._previousAgeVerificationStatus !== i && i === s.Tk.VERIFIED_ADULT, o = (0, p.o)("age-verification-manager"), c = a && ((0, d.d6)(r.t.AGE_GATED_SPACES) || o);
+      } = e, i = null != (t = (0, g.transformUser)(n).ageVerificationStatus) ? t : null, a = this._previousAgeVerificationStatus !== i && i === o.Tk.VERIFIED_ADULT, s = (0, p.o)("age-verification-manager"), c = a && ((0, d.d6)(r.t.AGE_GATED_SPACES) || s);
       try {
         if (c) {
           let e = m.A.getChannelId(),

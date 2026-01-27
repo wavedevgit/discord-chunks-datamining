@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 727353, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 727353, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk302959 = require("./302959.jsx"),
@@ -21,109 +20,109 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk573073 = require("./573073.js");
 
-function E(e) {
+function b(e) {
   let {
     stream: t,
     activeStream: n,
     streamActivity: i,
-    streamApplication: E,
-    user: y,
-    currentUserId: b,
-    canWatch: O,
-    unavailableReason: v,
-    onWatchStream: A,
-    onAction: I,
-    showHeader: S = false,
-    hideTip: T = false,
-    className: C,
-    wrapperClassName: N,
-    skipContainer: w = false
-  } = e, R = (0, s.bG)([u.A], () => {
-    if (null != E) {
-      if (null != E.id) return u.A.getApplication(E.id);
-      else if (null != E.name) return u.A.getApplicationByName(E.name)
+    streamApplication: b,
+    user: A,
+    currentUserId: h,
+    canWatch: v,
+    unavailableReason: O,
+    onWatchStream: j,
+    onAction: S,
+    showHeader: I = false,
+    hideTip: x = false,
+    className: E,
+    wrapperClassName: P,
+    skipContainer: T = false
+  } = e, N = (0, a.bG)([u.A], () => {
+    if (null != b) {
+      if (null != b.id) return u.A.getApplication(b.id);
+      else if (null != b.name) return u.A.getApplicationByName(b.name)
     }
     return null
-  }, [E]), P = null != i && null != i.name ? m.intl.formatToPlainString(m.t["4CQq9Q"], {
+  }, [b]), w = null != i && null != i.name ? y.intl.formatToPlainString(y.t["4CQq9Q"], {
     name: i.name
-  }) : m.intl.string(m.t["Jpkr/q"]), D = (0, r.jsxs)(r.Fragment, {
-    children: [S && (0, r.jsxs)("div", {
-      className: g.WG,
-      children: [null != R && (0, r.jsx)(f.A, {
-        game: R,
-        className: g.lK
-      }), (0, r.jsx)(o.Text, {
+  }) : y.intl.string(y.t["Jpkr/q"]), C = (0, r.jsxs)(r.Fragment, {
+    children: [I && (0, r.jsxs)("div", {
+      className: _.WG,
+      children: [null != N && (0, r.jsx)(p.A, {
+        game: N,
+        className: _.lK
+      }), (0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
-        children: P
+        children: w
       })]
-    }), null != A ? (0, r.jsxs)(o.DUT, {
-      onClick: A,
-      className: g.i1,
-      children: [(0, r.jsx)(_.A, {
-        className: g.oz,
+    }), null != j ? (0, r.jsxs)(s.DUT, {
+      onClick: j,
+      className: _.i1,
+      children: [(0, r.jsx)(m.A, {
+        className: _.oz,
         stream: t
-      }), O ? (0, r.jsx)("div", {
-        className: g.xD,
-        children: (0, r.jsx)(o.Text, {
+      }), v ? (0, r.jsx)("div", {
+        className: _.xD,
+        children: (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
-          className: g.ON,
-          children: (0, p.A)(t, n, b, v)
+          className: _.ON,
+          children: (0, f.A)(t, n, h, O)
         })
       }) : null]
     }) : (0, r.jsxs)("div", {
-      className: g.i1,
-      children: [(0, r.jsx)(_.A, {
-        className: g.oz,
+      className: _.i1,
+      children: [(0, r.jsx)(m.A, {
+        className: _.oz,
         stream: t
-      }), O ? (0, r.jsx)("div", {
-        className: g.xD,
-        children: (0, r.jsx)(o.Text, {
+      }), v ? (0, r.jsx)("div", {
+        className: _.xD,
+        children: (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
-          className: g.ON,
-          children: (0, p.A)(t, n, b, v)
+          className: _.ON,
+          children: (0, f.A)(t, n, h, O)
         })
       }) : null]
     }), (0, r.jsxs)("div", {
-      className: g.rf,
-      children: [null != i ? (0, r.jsx)(l.A, {
+      className: _.rf,
+      children: [null != i ? (0, r.jsx)(o.A, {
         hideHeader: true,
-        type: l.M.STREAM_PREVIEW,
+        type: o.M.STREAM_PREVIEW,
         activity: i,
-        user: y,
+        user: A,
         guildId: t.guildId,
         channelId: t.channelId,
         analyticsParams: {
           location: {
-            page: h.liQ.GO_LIVE_MODAL,
-            section: h.JJy.STREAM_VIEWER_POPOUT
+            page: g.liQ.GO_LIVE_MODAL,
+            section: g.JJy.STREAM_VIEWER_POPOUT
           }
         },
-        onAction: I
+        onAction: S
       }) : (0, r.jsx)(c.A, {
-        type: l.M.STREAM_PREVIEW,
+        type: o.M.STREAM_PREVIEW,
         applicationStream: t,
-        user: y,
+        user: A,
         guildId: t.guildId,
         channelId: t.channelId,
-        className: g.lx,
-        onAction: I
-      }), !T && (0, r.jsx)(d.A, {
+        className: _.lx,
+        onAction: S
+      }), !x && (0, r.jsx)(d.A, {
         type: d.A.Types.INLINE,
-        className: g.PP,
-        children: __OVERLAY__ ? m.intl.string(m.t.YRdw70) : m.intl.string(m.t.CCTgbF)
+        className: _.PP,
+        children: __OVERLAY__ ? y.intl.string(y.t.YRdw70) : y.intl.string(y.t.CCTgbF)
       })]
     })]
   });
-  return w ? (0, r.jsx)("div", {
-    className: a()(g.yt, g.Tb, N),
-    children: D
+  return T ? (0, r.jsx)("div", {
+    className: l()(_.yt, _.Tb, P),
+    children: C
   }) : (0, r.jsx)("div", {
-    className: a()(g.yt, N),
+    className: l()(_.yt, P),
     children: (0, r.jsx)("div", {
-      className: a()(g.Rh, C),
-      children: D
+      className: l()(_.Rh, E),
+      children: C
     })
   })
 }

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk796873 = require("./796873.js"),
   l = require.n(Chunk796873),
   Chunk397927 = require("./397927.js"),
@@ -39,9 +39,9 @@ function h(e) {
     return null == e ? f.intl.string(f.t.jfKTes) : 1 === e.length && null != e[0].filename ? e[0].filename : f.intl.formatToPlainString(f.t.D0noUt, {
       count: e.length
     })
-  }, [n.items]), s = i.useCallback(() => {
+  }, [n.items]), o = i.useCallback(() => {
     u.A.cancel(t, n)
-  }, [t, n]), o = 100 === n.progress, d = !o && n.currentSize > 0;
+  }, [t, n]), s = 100 === n.progress, d = !s && n.currentSize > 0;
   return (0, r.jsx)("div", {
     className: p.Ig,
     children: (0, r.jsxs)("div", {
@@ -61,13 +61,13 @@ function h(e) {
           }) : null]
         }), (0, r.jsx)("div", {
           className: p.L$,
-          children: o ? f.intl.string(f.t.jfKTes) : (0, r.jsx)(c.kej, {
+          children: s ? f.intl.string(f.t.jfKTes) : (0, r.jsx)(c.kej, {
             className: p.qB,
             percent: n.progress
           })
         })]
-      }), o ? null : (0, r.jsx)(c.DUT, {
-        onClick: s,
+      }), s ? null : (0, r.jsx)(c.DUT, {
+        onClick: o,
         children: (0, r.jsx)(c.PGe, {
           size: "md",
           color: "currentColor",
@@ -83,12 +83,12 @@ let m = e => {
     url: n,
     fileName: i,
     fileSize: a,
-    onClick: o,
+    onClick: s,
     onContextMenu: u,
     renderAdjacentContent: d
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(p.Ig, t),
+    className: o()(p.Ig, t),
     children: [(0, r.jsxs)("div", {
       className: p.NJ,
       children: [(0, r.jsx)(_, {
@@ -100,7 +100,7 @@ let m = e => {
           children: (0, r.jsx)(c.MzZ, {
             className: p.AD,
             href: n,
-            onClick: o,
+            onClick: s,
             onContextMenu: u,
             children: i
           })

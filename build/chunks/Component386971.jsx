@@ -18,15 +18,15 @@ function u(e) {
     applicationId: n,
     storeListingBenefits: i,
     skuBenefits: a,
-    className: s
+    className: o
   } = e;
   return null != i ? t = i.map(e => (0, r.jsx)(f, {
     applicationId: n,
     benefit: e,
-    className: s
+    className: o
   }, e.id)) : null != a && (t = a.map((e, t) => (0, r.jsx)(d, {
     benefit: e,
-    className: s
+    className: o
   }, t))), t
 }
 
@@ -43,19 +43,19 @@ function d(e) {
     className: a()(c.kL, n),
     children: [null != t.emoji && (0, r.jsx)("div", {
       className: a()(c.qq, i),
-      children: (0, r.jsx)(o.A, {
+      children: (0, r.jsx)(s.A, {
         emojiId: t.emoji.id,
         emojiName: t.emoji.name,
         animated: t.emoji.animated
       })
     }), (0, r.jsxs)("div", {
       className: c.op,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: u,
         color: d,
         className: c.UU,
         children: t.name
-      }), l && (0, r.jsx)(s.Text, {
+      }), l && (0, r.jsx)(o.Text, {
         color: "interactive-text-default",
         variant: "text-sm/normal",
         children: t.description
@@ -69,7 +69,7 @@ function f(e) {
     applicationId: t,
     benefit: n,
     className: i,
-    emojiContainerClassName: o,
+    emojiContainerClassName: s,
     showsDescription: u = true,
     nameTextVariant: d = "text-md/medium",
     nameTextColor: f = "text-strong"
@@ -77,16 +77,16 @@ function f(e) {
   return (0, r.jsxs)("div", {
     className: a()(c.kL, i),
     children: [(0, r.jsx)("div", {
-      className: a()(c.qq, o),
+      className: a()(c.qq, s),
       children: (0, l.N)(t, n.icon)
     }), (0, r.jsxs)("div", {
       className: c.op,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: d,
         color: f,
         className: c.UU,
         children: n.name
-      }), u && (0, r.jsx)(s.Text, {
+      }), u && (0, r.jsx)(o.Text, {
         color: "interactive-text-default",
         variant: "text-sm/normal",
         children: n.description

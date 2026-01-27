@@ -1,12 +1,12 @@
-/** Chunk was on 21940 **/
-/** chunk id: 362205, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 51901 **/
+/** chunk id: 362205, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   c = require.n(Chunk284009),
   Chunk108531 = require("./108531.js"),
@@ -17,79 +17,79 @@ var Chunk627968 = require("./627968.js"),
   Chunk890690 = require("./890690.js"),
   Chunk637577 = require("./637577.js");
 
-function g(e) {
+function y(e) {
   let {
     category: t,
-    onClick: r,
-    active: l
+    onClick: n,
+    active: o
   } = e, {
-    useTitle: o,
+    useTitle: a,
     useSubnavLabel: i,
     key: s
-  } = t, f = null == o ? true : o(), b = null == i ? true : i(), d = null != b ? b : f;
-  return c()(null != d, "[SettingsSubnavigationCategory] Category must have a title"), (0, n.jsx)(u.tG, {
+  } = t, b = null == a ? true : a(), f = null == i ? true : i(), p = null != f ? f : b;
+  return c()(null != p, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.tG, {
     id: s,
     children: e => {
-      var t, o;
-      return (0, n.jsx)(y.DUT, (t = function(e) {
+      var t, a;
+      return (0, r.jsx)(d.DUT, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : e[t] = r
           })
         }
         return e
       }({
-        onClick: r,
-        className: a()(p.AS, {
-          [p.vu]: l
+        onClick: n,
+        className: l()(_.AS, {
+          [_.vu]: o
         })
-      }, e), o = o = {
-        children: d
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-        var r = Object.keys(e);
+      }, e), a = a = {
+        children: p
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
-        return r
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
+        return n
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
       }), t), s)
     }
   })
 }
 
-function O(e) {
+function m(e) {
   let {
     categories: t
-  } = e, r = b.A.useField("currentCategoryKey");
-  (0, f.Ay)(() => {
-    t.some(e => e.key === r) || b.A.setState({
+  } = e, n = f.A.useField("currentCategoryKey");
+  (0, b.Ay)(() => {
+    t.some(e => e.key === n) || f.A.setState({
       currentCategoryKey: t[0].key
     })
   });
-  let o = l.useMemo(() => Math.max(t.findIndex(e => e.key === r), 0), [t, r]),
+  let a = o.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
     {
-      thumbRef: a,
+      thumbRef: l,
       trackRef: i,
       thumbAnchorRef: c,
       springs: u
     } = function(e) {
-      let t = l.useRef(null),
-        r = l.useRef(null),
-        n = l.useRef(null),
-        o = l.useRef(true),
-        [a, i] = (0, y.zhh)(() => ({
+      let t = o.useRef(null),
+        n = o.useRef(null),
+        r = o.useRef(null),
+        a = o.useRef(true),
+        [l, i] = (0, d.zhh)(() => ({
           y: 0,
           height: 0,
           config: {
@@ -98,53 +98,53 @@ function O(e) {
             tension: 300
           }
         }));
-      return l.useLayoutEffect(() => {
-        if (null == t.current || null == r.current || null == n.current) return;
-        let [e, l] = [t.current.getBoundingClientRect(), n.current.getBoundingClientRect()];
-        if (o.current) {
-          o.current = false, a.y.set(l.y - e.y), a.height.set(l.height);
+      return o.useLayoutEffect(() => {
+        if (null == t.current || null == n.current || null == r.current) return;
+        let [e, o] = [t.current.getBoundingClientRect(), r.current.getBoundingClientRect()];
+        if (a.current) {
+          a.current = false, l.y.set(o.y - e.y), l.height.set(o.height);
           return
         }
         i({
-          y: l.y - e.y,
-          height: l.height
+          y: o.y - e.y,
+          height: o.height
         })
-      }, [e, i, a.y, a.height]), {
-        thumbRef: r,
+      }, [e, i, l.y, l.height]), {
+        thumbRef: n,
         trackRef: t,
-        thumbAnchorRef: n,
-        springs: a
+        thumbAnchorRef: r,
+        springs: l
       }
-    }(o);
-  return (0, d.o)(), (0, n.jsxs)("div", {
-    className: p.o8,
+    }(a);
+  return (0, p.o)(), (0, r.jsxs)("div", {
+    className: _.o8,
     role: "list",
     style: {
       "--custom-nav-count": t.length,
-      "--custom-nav-index": o
+      "--custom-nav-index": a
     },
-    children: [(0, n.jsx)("div", {
-      className: p.u4,
+    children: [(0, r.jsx)("div", {
+      className: _.u4,
       "aria-hidden": "true",
       ref: i,
-      children: (0, n.jsx)(s.animated.div, {
-        className: p.FF,
+      children: (0, r.jsx)(s.animated.div, {
+        className: _.FF,
         style: u,
-        ref: a
+        ref: l
       })
-    }), (0, n.jsx)("div", {
-      className: p.gu,
+    }), (0, r.jsx)("div", {
+      className: _.gu,
       "aria-hidden": "true",
       ref: c
-    }), t.map(e => (0, n.jsx)(g, {
+    }), t.map(e => (0, r.jsx)(y, {
       onClick: () => {
         var t;
-        return t = e.key, void b.A.setState({
+        return t = e.key, void f.A.setState({
           requestedTargetKey: t,
           showNavigationMobile: false
         })
       },
-      active: e.key === r,
+      active: e.key === n,
       category: e
     }, e.key))]
   })

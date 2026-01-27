@@ -23,8 +23,8 @@ function m(e) {
   let {
     guildId: t,
     ctaType: n,
-    submitting: s,
-    onGoToGuild: o,
+    submitting: o,
+    onGoToGuild: s,
     onAcceptInvite: u,
     onStartApplication: f,
     onComplete: m
@@ -41,7 +41,7 @@ function m(e) {
     switch (n) {
       case p.SP.IS_MEMBER:
         return {
-          text: h.intl.string(h.t.IRoQXr), onClick: o
+          text: h.intl.string(h.t.IRoQXr), onClick: s
         };
       case p.SP.ADOPT_TAG:
         return {
@@ -72,7 +72,7 @@ function m(e) {
           text: null, onClick: null
         }
     }
-  }, [n, b, O, u, o, f, y]), I = i.useCallback(async e => {
+  }, [n, b, O, u, s, f, y]), I = i.useCallback(async e => {
     e.stopPropagation(), E(true);
     try {
       await (null == A ? true : A())
@@ -85,7 +85,7 @@ function m(e) {
     size: "sm",
     text: v,
     fullWidth: true,
-    loading: g || s,
+    loading: g || o,
     onClick: I
   })
 }
@@ -99,14 +99,14 @@ function g(e) {
     validInviteKey: l,
     ctaType: c
   } = (0, p.Ay)(t), d = i.useCallback(() => (0, u.u)(a), [a]), _ = i.useCallback(() => {
-    null != l && s.Ay.acceptInvite({
+    null != l && o.Ay.acceptInvite({
       inviteKey: l,
       context: {
         location: "guild_profile"
       }
     })
   }, [l]), h = i.useCallback(() => {
-    t.visibility !== f.n.PUBLIC_WITH_RECRUITMENT && null != l ? _() : o.A.openMemberVerificationModal(a, true, l)
+    t.visibility !== f.n.PUBLIC_WITH_RECRUITMENT && null != l ? _() : s.A.openMemberVerificationModal(a, true, l)
   }, [_, a, t.visibility, l]);
   return null == c ? null : (0, r.jsx)(m, {
     guildId: a,

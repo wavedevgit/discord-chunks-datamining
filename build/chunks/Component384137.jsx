@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 384137, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 384137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk485508 = require("./485508.js"),
   Chunk656122 = require("./656122.js");
 
-function I() {
+function A() {
   let {
     messages: {
       numMessagesSent: e,
@@ -41,48 +40,48 @@ function I() {
         month: 0
       }
     }
-  } = (0, s.bG)([c.A], () => c.A.getCheckpointData()), I = i.useContext(l.P), S = (0, o.rdh)(I.primaryColor).hex(), {
-    monthName: T
-  } = (0, u.od)(n, y.intl.currentLocale), C = null != t;
-  return (0, r.jsxs)(_.A, {
-    className: O.kL,
+  } = (0, i.bG)([c.A], () => c.A.getCheckpointData()), A = l.useContext(o.P), O = (0, s.rdh)(A.primaryColor).hex(), {
+    monthName: E
+  } = (0, u.od)(n, y.intl.currentLocale);
+  return (0, r.jsxs)(p.A, {
+    className: j.kL,
     children: [(0, r.jsx)(d.A, {
-      className: O.Ki,
+      className: j.Ki,
       slide: g.P7.MESSAGES,
-      videoEntrySrc: v.A,
-      videoLoopSrc: A.A
+      videoEntrySrc: C.A,
+      videoLoopSrc: _.A
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
-        className: b.DD,
+        className: v.DD,
         children: [(0, r.jsx)(a.oyn, {
           size: "refresh_sm",
-          color: S,
-          colorClass: b.d7,
-          className: b.gr
+          color: O,
+          colorClass: v.d7,
+          className: v.gr
         }), (0, r.jsx)(h.A, {
           variant: "eyebrow",
-          className: b.UP,
-          children: y.intl.format(E.default.nPTMHj, {
+          className: v.UP,
+          children: y.intl.format(x.default.nPTMHj, {
             numMessages: e
           })
         })]
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(b.A, {
         end: e
       }), (0, r.jsx)(h.A, {
         variant: "heading-xxl/medium",
-        className: O.VA,
-        children: C ? y.intl.format(E.default.ixvOza, {
+        className: j.VA,
+        children: null != t ? y.intl.format(x.default.ixvOza, {
           percent: 100 - t,
-          percentHook: (e, t) => (0, r.jsx)(f.A, {
+          percentHook: (e, t) => (0, r.jsx)(m.A, {
             children: e
           }, t)
-        }) : y.intl.format(E.default["Zd+Ej+"], {
-          month: T,
-          monthHook: (e, t) => (0, r.jsx)(f.A, {
+        }) : y.intl.format(x.default["Zd+Ej+"], {
+          month: E,
+          monthHook: (e, t) => (0, r.jsx)(m.A, {
             children: e
           }, t)
         })
-      }), (0, r.jsx)(p.e, {
+      }), (0, r.jsx)(f.e, {
         slide: g.P7.MESSAGES
       })]
     })]

@@ -4,7 +4,7 @@
 require.d(exports, {
   KZ: () => c,
   Lf: () => l,
-  YD: () => s,
+  YD: () => o,
   cX: () => h
 });
 var Chunk64700 = require("./64700.js");
@@ -26,12 +26,12 @@ let i = {
     customError: true,
     valid: false
   },
-  s = {
+  o = {
     isInvalid: false,
     validationDetails: i,
     validationErrors: []
   },
-  o = (0, Chunk64700.createContext)({}),
+  s = (0, Chunk64700.createContext)({}),
   l = "__formValidationState" + Date.now();
 
 function c(e) {
@@ -72,15 +72,15 @@ function u(e) {
     } : null,
     g = (0, r.useMemo)(() => u && null != l ? p(f(u, l)) : null, [u, l]);
   (null == c ? true : c.validationDetails.valid) && (c = true);
-  let E = (0, r.useContext)(o),
+  let E = (0, r.useContext)(s),
     y = (0, r.useMemo)(() => i ? Array.isArray(i) ? i.flatMap(e => d(E[e])) : d(E[i]) : [], [E, i]),
     [b, O] = (0, r.useState)(E),
     [v, A] = (0, r.useState)(false);
   E !== b && (O(E), A(false));
   let I = (0, r.useMemo)(() => p(v ? [] : y), [v, y]),
-    S = (0, r.useRef)(s),
-    [T, C] = (0, r.useState)(s),
-    N = (0, r.useRef)(s),
+    S = (0, r.useRef)(o),
+    [T, C] = (0, r.useState)(o),
+    N = (0, r.useRef)(o),
     w = () => {
       if (!R) return;
       P(false);
@@ -89,13 +89,13 @@ function u(e) {
     },
     [R, P] = (0, r.useState)(false);
   return (0, r.useEffect)(w), {
-    realtimeValidation: m || I || g || c || s,
+    realtimeValidation: m || I || g || c || o,
     displayValidation: "native" === h ? m || I || T : m || I || g || c || T,
     updateValidation(e) {
       "aria" !== h || _(T, e) ? S.current = e : C(e)
     },
     resetValidation() {
-      let e = s;
+      let e = o;
       _(e, N.current) || (N.current = e, C(e)), "native" === h && P(false), A(true)
     },
     commitValidation() {
@@ -135,9 +135,9 @@ function h(...e) {
       ...i
     };
   for (let i of e) {
-    var a, s;
+    var a, o;
     for (let e of i.validationErrors) t.add(e);
-    for (let e in n || (n = i.isInvalid), r)(a = r)[s = e] || (a[s] = i.validationDetails[e])
+    for (let e in n || (n = i.isInvalid), r)(a = r)[o = e] || (a[o] = i.validationDetails[e])
   }
   return r.valid = !n, {
     isInvalid: n,

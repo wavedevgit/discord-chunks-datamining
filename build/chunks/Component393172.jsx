@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 393172, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 393172, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => q,
+  Ay: () => z,
   DH: () => K
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk717558 = require("./717558.js"),
@@ -43,15 +42,6 @@ var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk585990 = require("./585990.js");
 
-function G(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
@@ -59,221 +49,218 @@ function V(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      G(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function F(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function B(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
+function U(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let H = e => {
-  let t = (null != e ? e : 0) % w.A.DEFAULT_AVATARS.length;
-  return w.A.DEFAULT_AVATARS[t]
+let W = e => {
+  let t = (null != e ? e : 0) % T.A.DEFAULT_AVATARS.length;
+  return T.A.DEFAULT_AVATARS[t]
 };
 
-function Y(e) {
+function F(e) {
   var t, n;
   let {
     hiddenVoiceStates: i,
-    voiceStateMap: a,
+    voiceStateMap: l,
     size: c,
     locked: u,
-    flipped: f
-  } = e, p = (0, L.Ob)(c), _ = (0, o.yK)([A.default, b.A], () => i.map(e => {
+    flipped: p
+  } = e, f = (0, L.Ob)(c), m = (0, s.yK)([j.default, h.A], () => i.map(e => {
     var t;
-    let n = A.default.getUser(e);
+    let n = j.default.getUser(e);
     if (null == n) return;
-    let r = b.A.getChannel(null == (t = a.get(e)) ? true : t.voiceState.channelId);
-    return n.getAvatarURL(null == r ? true : r.getGuildId(), p, false)
-  }).filter(C.Vq), [i, a, p]), h = null != (t = _[0]) ? t : H(0), m = null != (n = _[1]) ? n : H(1);
+    let r = h.A.getChannel(null == (t = l.get(e)) ? true : t.voiceState.channelId);
+    return n.getAvatarURL(null == r ? true : r.getGuildId(), f, false)
+  }).filter(E.Vq), [i, l, f]), g = null != (t = m[0]) ? t : W(0), y = null != (n = m[1]) ? n : W(1);
   return (0, r.jsxs)("div", {
-    className: s()(U.ZR, u && U.xt, f && U.zq),
+    className: a()(M.ZR, u && M.xt, p && M.zq),
     children: [(0, r.jsx)("div", {
-      className: U.e5,
+      className: M.e5,
       children: (0, r.jsx)(d.A, {
         size: c,
-        backSrc: h,
-        frontSrc: m,
+        backSrc: g,
+        frontSrc: y,
         isTyping: false
       })
     }), (0, r.jsx)("div", {
-      className: U.AP,
-      children: (0, r.jsxs)(l.Text, {
+      className: M.AP,
+      children: (0, r.jsxs)(o.Text, {
         variant: "text-xs/medium",
         children: ["+", i.length, " others in voice"]
       })
     })]
   })
 }
-
-function W(e) {
-  let [t, n] = e;
-  return new Set(n)
-}
 let K = Chunk64700.memo(function(e) {
   let {
     id: t,
-    context: n = M.x.DEFAULT,
-    channel: a,
-    overlayVoiceStates: s,
+    context: n = G.x.DEFAULT,
+    channel: l,
+    overlayVoiceStates: a,
     displayNameMode: c,
     displayUserMode: u,
     locked: d,
-    pinned: f,
-    guildId: p,
-    showEmpty: _ = true,
-    isPreviewingInGame: h,
-    isSettingsPreview: m = false,
-    anchorLeft: g,
-    avatarSizeMode: y,
-    maxDisplayedVoiceStates: b = 8
-  } = e, O = (0, R.Dk)(() => W(s), [s]), [v, A] = s, I = A.length > 0 && null != n && null != a && (!d || f), S = (0, o.yK)([E.A], () => Array.from(O).map(e => E.A.getStreamForUser(e, p)).filter(C.Vq).map(e => e.ownerId), [p, O]);
+    pinned: p,
+    guildId: f,
+    showEmpty: m = true,
+    isPreviewingInGame: g,
+    isSettingsPreview: y = false,
+    anchorLeft: _,
+    avatarSizeMode: A,
+    maxDisplayedVoiceStates: h = 8
+  } = e, v = (0, N.Dk)(() => (function(e) {
+    let [t, n] = e;
+    return new Set(n)
+  })(a), [a]), [O, j] = a, S = j.length > 0 && null != n && null != l && (!d || p), I = (0, s.yK)([b.A], () => Array.from(v).map(e => b.A.getStreamForUser(e, f)).filter(E.Vq).map(e => e.ownerId), [f, v]);
   i.useEffect(() => {
-    I && (0, R.Y)(j.uss.VOICE_V3, {
-      locked: T.default.isInstanceLocked(),
-      shownUserIds: Array.from(O),
-      liveUserIds: S,
+    S && (0, N.Y)(k.uss.VOICE_V3, {
+      locked: x.default.isInstanceLocked(),
+      shownUserIds: Array.from(v),
+      liveUserIds: I,
       contentInventoryIds: []
     })
-  }, [O, S, I]);
-  let N = () => d || !_ ? null : (0, r.jsx)(P.g, {
-      emptyText: k.intl.string(k.t.hEh0l1),
-      icon: l.HKD
-    }),
-    w = false !== b ? A.slice(0, b) : A,
-    D = false !== b ? A.slice(b) : [],
-    x = v.get(D[0]),
-    G = u === j.f5z.ALWAYS && false !== b;
-  return I ? (0, r.jsxs)("div", {
-    className: U.h8,
-    children: [w.map(e => {
-      let i = v.get(e);
+  }, [v, I, S]);
+  let P = false !== h ? j.slice(0, h) : j,
+    T = false !== h ? j.slice(h) : [],
+    C = O.get(T[0]),
+    D = u === k.f5z.ALWAYS && false !== h;
+  return S ? (0, r.jsxs)("div", {
+    className: M.h8,
+    children: [P.map(e => {
+      let i = O.get(e);
       return null == i ? null : (0, r.jsx)(L.Ay, {
         sortedVoiceState: i,
-        channel: a,
+        channel: l,
         widgetId: t,
-        flipped: !g,
-        isPreviewingInGame: h,
-        isSettingsPreview: m,
+        flipped: !_,
+        isPreviewingInGame: g,
+        isSettingsPreview: y,
         context: n,
-        size: y,
+        size: A,
         displayNameMode: c,
         displayUserMode: u,
         locked: d
       }, e)
-    }), G && 1 === D.length && null != x && (0, r.jsx)(L.Ay, {
-      sortedVoiceState: x,
-      channel: a,
+    }), D && 1 === T.length && null != C && (0, r.jsx)(L.Ay, {
+      sortedVoiceState: C,
+      channel: l,
       widgetId: t,
-      flipped: !g,
-      isPreviewingInGame: h,
-      isSettingsPreview: m,
+      flipped: !_,
+      isPreviewingInGame: g,
+      isSettingsPreview: y,
       context: n,
-      size: y,
+      size: A,
       displayNameMode: c,
       displayUserMode: u,
       locked: d
-    }, D[0]), G && D.length > 1 && (0, r.jsx)(Y, {
-      hiddenVoiceStates: D,
-      voiceStateMap: v,
-      size: (0, L.FT)(y),
+    }, T[0]), D && T.length > 1 && (0, r.jsx)(F, {
+      hiddenVoiceStates: T,
+      voiceStateMap: O,
+      size: (0, L.FT)(A),
       locked: d,
-      flipped: !g
+      flipped: !_
     })]
-  }) : N()
+  }) : d || !m ? null : (0, r.jsx)(w.g, {
+    emptyText: R.intl.string(R.t.hEh0l1),
+    icon: o.HKD
+  })
 });
 
-function z(e, t) {
-  let n = (0, o.bG)([O.A, b.A], () => b.A.getChannel(O.A.getVoiceChannelId())),
-    [r] = (0, o.bG)([S.Ay, h.A, O.A, b.A], () => {
-      let e = b.A.getChannel(O.A.getVoiceChannelId());
-      return null == e ? [
-        [], false
-      ] : e.isGuildStageVoice() ? [h.A.getMutableParticipants(e.id, m.ip.SPEAKER), h.A.getParticipantsVersion(e.id)] : [S.Ay.getVoiceStatesForChannel(e), S.Ay.getVoiceStateVersion(e.getGuildId())]
-    }, [], N.D),
-    a = (0, g.$n)(null == n ? true : n.id, r),
-    s = i.useMemo(() => new Map(a.map(e => [e.user.id, e])), [a]),
-    l = (0, o.bG)([y.default], () => y.default.getId());
-  return [s, (0, o.yK)([I.A, O.A, v.A, _.A], () => {
-    let n = Array.from(new Set(a.map(e => {
-      let {
-        user: t
-      } = e;
-      return t.id
-    })));
-    if (false === t || n.length <= t) return n;
-    let r = new Map;
-    for (let t of n) {
-      let n = (0, c.R)({
-          userId: t,
-          checkSoundSharing: true,
-          checkSoundboardSounds: false,
-          checkIsMuted: true,
-          context: e
-        }, [I.A, O.A, v.A, _.A]),
-        i = t === l;
-      (n || i) && r.set(t, {
-        isSpeaking: n,
-        isCurrentUser: i
-      })
-    }
-    let i = [],
-      s = [],
-      o = [];
-    for (let e = 0; e < n.length; e++) {
-      let a = n[e],
-        l = r.get(a);
-      e < t ? i.push(a) : l && (l.isSpeaking || l.isCurrentUser) ? o.push(a) : s.push(a)
-    }
-    if (o.length > 0) {
-      let e = i.slice(0, t - o.length),
-        n = i.slice(t - o.length);
-      return [...e, ...o, ...n, ...s]
-    }
-    return n
-  }, [a, e, l, t])]
-}
-
-function q(e) {
+function z(e) {
   var t;
   let {
     isSettingsPreview: n
-  } = e, i = (0, o.bG)([O.A, b.A], () => b.A.getChannel(O.A.getVoiceChannelId())), a = (0, f.Ay)(i), s = z(M.x.DEFAULT, e.maxDisplayedVoiceStates), l = (0, o.bG)([E.A], () => E.A.getStreamerActiveStreamMetadata()), c = (0, x.b4)(), d = (0, u.h)(null == c ? true : c.id), _ = (0, o.cf)([E.A, T.default, D.A], () => {
-    let e = E.A.getCurrentUserActiveStream();
+  } = e, l = (0, s.bG)([v.A, h.A], () => h.A.getChannel(v.A.getVoiceChannelId())), a = (0, p.Ay)(l), o = function(e, t) {
+    let n = (0, s.bG)([v.A, h.A], () => h.A.getChannel(v.A.getVoiceChannelId())),
+      [r] = (0, s.bG)([I.Ay, g.A, v.A, h.A], () => {
+        let e = h.A.getChannel(v.A.getVoiceChannelId());
+        return null == e ? [
+          [], false
+        ] : e.isGuildStageVoice() ? [g.A.getMutableParticipants(e.id, y.ip.SPEAKER), g.A.getParticipantsVersion(e.id)] : [I.Ay.getVoiceStatesForChannel(e), I.Ay.getVoiceStateVersion(e.getGuildId())]
+      }, [], P.D),
+      l = (0, _.$n)(null == n ? true : n.id, r),
+      a = i.useMemo(() => new Map(l.map(e => [e.user.id, e])), [l]),
+      o = (0, s.bG)([A.default], () => A.default.getId());
+    return [a, (0, s.yK)([S.A, v.A, O.A, m.A], () => {
+      let n = Array.from(new Set(l.map(e => {
+        let {
+          user: t
+        } = e;
+        return t.id
+      })));
+      if (false === t || n.length <= t) return n;
+      let r = new Map;
+      for (let t of n) {
+        let n = (0, c.R)({
+            userId: t,
+            checkSoundSharing: true,
+            checkSoundboardSounds: false,
+            checkIsMuted: true,
+            context: e
+          }, [S.A, v.A, O.A, m.A]),
+          i = t === o;
+        (n || i) && r.set(t, {
+          isSpeaking: n,
+          isCurrentUser: i
+        })
+      }
+      let i = [],
+        a = [],
+        s = [];
+      for (let e = 0; e < n.length; e++) {
+        let l = n[e],
+          o = r.get(l);
+        e < t ? i.push(l) : o && (o.isSpeaking || o.isCurrentUser) ? s.push(l) : a.push(l)
+      }
+      if (s.length > 0) {
+        let e = i.slice(0, t - s.length),
+          n = i.slice(t - s.length);
+        return [...e, ...s, ...n, ...a]
+      }
+      return n
+    }, [l, e, o, t])]
+  }(G.x.DEFAULT, e.maxDisplayedVoiceStates), d = (0, s.bG)([b.A], () => b.A.getStreamerActiveStreamMetadata()), j = (0, D.b4)(), E = (0, u.h)(null == j ? true : j.id), T = (0, s.cf)([b.A, x.default, C.A], () => {
+    let e = b.A.getCurrentUserActiveStream();
     return {
-      displayUserMode: T.default.getDisplayUserMode(),
-      displayNameMode: T.default.getDisplayNameMode(),
-      avatarSizeMode: T.default.getAvatarSizeMode(),
-      streamApplication: (null == l ? true : l.pid) === D.A.getTargetPID() ? (0, p.A)(c) : null,
+      displayUserMode: x.default.getDisplayUserMode(),
+      displayNameMode: x.default.getDisplayNameMode(),
+      avatarSizeMode: x.default.getAvatarSizeMode(),
+      streamApplication: (null == d ? true : d.pid) === C.A.getTargetPID() ? (0, f.A)(j) : null,
       stream: e
     }
   });
-  return (0, r.jsx)(K, B(V(B(V({}, _), {
-    application: d
+  return (0, r.jsx)(K, U(V(U(V({}, T), {
+    application: E
   }), e), {
-    overlayVoiceStates: s,
-    channel: i,
-    guildId: null == i ? true : i.guild_id,
+    overlayVoiceStates: o,
+    channel: l,
+    guildId: null == l ? true : l.guild_id,
     title: null != a ? a : "",
-    streamMetadata: l,
-    streamApplication: null != (t = _.streamApplication) ? t : {
+    streamMetadata: d,
+    streamApplication: null != (t = T.streamApplication) ? t : {
       id: null,
-      name: null == l ? true : l.sourceName
+      name: null == d ? true : d.sourceName
     },
     isSettingsPreview: n
   }))

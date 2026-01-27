@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk331322 = require("./331322.jsx"),
   Chunk834730 = require("./834730.jsx"),
   Chunk64584 = require("./64584.js"),
@@ -81,7 +81,7 @@ function g(e) {
     spacing: p
   } = i.useContext(c.c), m = i.useId(), g = null != a && "" !== a;
   return (0, r.jsxs)("fieldset", _(f({}, d), {
-    className: s()(u.lI, d.className),
+    className: o()(u.lI, d.className),
     "aria-describedby": g ? m : true,
     children: [null != n ? (0, r.jsx)(l.E, {
       tag: "legend",
@@ -95,7 +95,7 @@ function g(e) {
       className: u.h_,
       id: m,
       children: a
-    }) : null, (0, r.jsx)(o.B, {
+    }) : null, (0, r.jsx)(s.B, {
       direction: "vertical",
       gap: p,
       children: t

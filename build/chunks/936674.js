@@ -2,10 +2,10 @@
 /** chunk id: 936674, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  KQ: () => s,
+  KQ: () => o,
   Kw: () => p,
   Wg: () => l,
-  YE: () => o
+  YE: () => s
 }), require("./896048.js");
 var Chunk735438 = require("./735438.js");
 
@@ -30,10 +30,10 @@ function a(e) {
   }
   return e
 }
-var s = function(e) {
+var o = function(e) {
     return e.LONGER_DISPATCH = "longer_dispatch", e.EXCEEDED_MAX_CONSECUTIVE_FLUSHES = "exceeded_max_consecutive_flushes", e.FIRED_DUE_TO_MAX_TIMEOUT = "fired_due_to_max_timeout", e.SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED = "skip_idle_callback_due_to_backgrounded", e
   }({}),
-  o = function(e) {
+  s = function(e) {
     return e.TIME_TO_FIRE_IDLE_CALLBACK = "time_to_fire_idle_callback", e.TIME_TO_QUEUE_EMPTY = "time_to_flush_all_work", e.TIME_OVER_DEADLINE = "time_over_deadline", e.DEADLINE_INITIAL_TIME_REMAINING = "initial_time_of_deadline", e
   }({}),
   l = function(e) {

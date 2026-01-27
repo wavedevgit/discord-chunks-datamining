@@ -1,18 +1,18 @@
-/** Chunk was on web.js **/
-/** chunk id: 631735, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 631735, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk869639 = require("./869639.js");
-module.exports = function(e, t, n) {
-  var i = r.undo(t);
-  if ("spellcheck-change" === t.getLastChangeType()) {
-    var a = i.getCurrentContent();
-    n(r.set(i, {
-      nativelyRenderedContent: a
+module.exports = function(t, e, r) {
+  var i = n.undo(e);
+  if ("spellcheck-change" === e.getLastChangeType()) {
+    var o = i.getCurrentContent();
+    r(n.set(i, {
+      nativelyRenderedContent: o
     }));
     return
-  }(e.preventDefault(), t.getNativelyRenderedContent()) ? (n(r.set(t, {
+  }(t.preventDefault(), e.getNativelyRenderedContent()) ? (r(n.set(e, {
     nativelyRenderedContent: null
   })), setTimeout(function() {
-    n(i)
-  }, 0)) : n(i)
+    r(i)
+  }, 0)) : r(i)
 }

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 818947, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 818947, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
@@ -14,11 +13,11 @@ var Chunk627968 = require("./627968.js"),
 function c(e) {
   let {
     children: t
-  } = e, n = (0, i.useContext)(o.P), c = (0, s.rdh)(n.primaryColor).hex();
+  } = e, n = (0, l.useContext)(s.P), c = (0, i.rdh)(n.primaryColor).hex();
   return (0, r.jsx)(a.EYj, {
     variant: "heading-xxl/medium",
     color: "none",
-    className: l.Q,
+    className: o.Q,
     style: {
       backgroundColor: c
     },

@@ -11,7 +11,7 @@ var Chunk214958 = require("./214958.js"),
   Chunk835245 = require("./835245.js"),
   Chunk383859 = require("./383859.js");
 
-function o(e, t) {
+function s(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -38,8 +38,8 @@ function d() {
   let n = ["WebView", "(iPhone|iPod|iPad)(?!.*Safari/)"],
     r = RegExp("(".concat(n.join("|"), ")"), "ig"),
     a = (null === i() || true === i() || null == (e = i().ua) ? true : e.match(r)) != null,
-    s = (null === i() || true === i() ? true : i().name) === "Safari" && !a;
-  return (null === i() || true === i() || null == (t = i().os) ? true : t.family) !== "iOS" || s
+    o = (null === i() || true === i() ? true : i().name) === "Safari" && !a;
+  return (null === i() || true === i() || null == (t = i().os) ? true : t.family) !== "iOS" || o
 }
 
 function f() {
@@ -55,11 +55,11 @@ function p(e) {
     let r = decodeURIComponent(n),
       i = new URL(r).searchParams,
       a = t.get("pid"),
-      s = {
+      o = {
         utmSource: null != a ? a : true
       };
-    for (let [e, t] of i.entries()) s[e] = t;
-    return s
+    for (let [e, t] of i.entries()) o[e] = t;
+    return o
   } catch (e) {
     return null
   }
@@ -70,14 +70,14 @@ function _(e, t) {
     utmSource: n,
     androidFallbackLink: r,
     iosFallbackLink: i
-  } = t, a = o(t, ["utmSource", "androidFallbackLink", "iosFallbackLink"]), l = new URL(e);
+  } = t, a = s(t, ["utmSource", "androidFallbackLink", "iosFallbackLink"]), l = new URL(e);
   for (let e in a) {
     let t = a[e];
     null != t && l.searchParams.set(e, t)
   }
   let f = encodeURIComponent(l.toString()),
     p = encodeURIComponent("discord://app/open#".concat(l.toString())),
-    _ = encodeURIComponent((0, s.A)()),
+    _ = encodeURIComponent((0, o.A)()),
     h = d() ? "true" : "false",
     m = null != r ? encodeURIComponent(r) : null,
     g = null != i ? encodeURIComponent(i) : null,

@@ -12,12 +12,12 @@ function a(e) {
     wishlistId: t,
     onAction: n,
     productLines: a
-  } = e, [s, o] = (0, r.useState)(false), l = (0, r.useCallback)(e => {
+  } = e, [o, s] = (0, r.useState)(false), l = (0, r.useCallback)(e => {
     e && null != t && (n({
       action: "VIEW_WISHLIST",
       wishlistId: t,
       productLines: null != a ? a : true
-    }), o(true))
+    }), s(true))
   }, [t, n, a]);
-  return (0, i.K)(l, true, null != t && !s)
+  return (0, i.K)(l, true, null != t && !o)
 }

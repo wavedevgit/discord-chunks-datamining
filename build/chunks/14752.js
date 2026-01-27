@@ -21,7 +21,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function s(e) {
   }
   return e
 }
-let o = 22,
+let s = 22,
   l = e => i().decode(e),
   c = e => Math.round(e.frames.reduce((e, t) => e + t.delay, 0)),
   u = async (e, t, n) => ({
@@ -73,7 +73,7 @@ let f = (e, t) => ({
     let n = _(e);
     return "PASTE THIS INTO THE DROP JSON:\n\n" + t.map(e => {
       let t = h(e.name);
-      return JSON.stringify(s({
+      return JSON.stringify(o({
         path: "effects/".concat(n, "/").concat(t, ".png"),
         loop: e.loop,
         start: e.start,
@@ -82,7 +82,7 @@ let f = (e, t) => ({
         z_index: e.zIndex
       }, null != e.randomizedSources ? {
         randomized_paths: e.randomizedSources.map(e => e.src)
-      } : {}), null, 4).split("\n").map(e => " ".repeat(o) + e).join("\n")
+      } : {}), null, 4).split("\n").map(e => " ".repeat(s) + e).join("\n")
     }).join(",\n") + "\n\nPASTE THIS INTO profile_effect_metadata.py:\n\n" + g(t)
   },
   g = e => {

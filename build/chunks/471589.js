@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk322811 = require("./322811.js"),
   Chunk355418 = require("./355418.js"),
   Chunk658809 = require("./658809.js");
-let s = 1,
-  o = 2;
+let o = 1,
+  s = 2;
 class l extends Chunk355418.c {
   innerPattern() {
     return /(deze)?\s*(namiddag|avond|middernacht|ochtend|middag|'s middags|'s avonds|'s ochtends)(?=\W|$)/i
@@ -16,7 +16,7 @@ class l extends Chunk355418.c {
   innerExtract(e, t) {
     let n = e.refDate,
       i = e.createParsingComponents();
-    switch ("deze" === t[s] && (i.assign("day", e.refDate.getDate()), i.assign("month", e.refDate.getMonth() + 1), i.assign("year", e.refDate.getFullYear())), t[o].toLowerCase()) {
+    switch ("deze" === t[o] && (i.assign("day", e.refDate.getDate()), i.assign("month", e.refDate.getMonth() + 1), i.assign("year", e.refDate.getFullYear())), t[s].toLowerCase()) {
       case "namiddag":
       case "'s namiddags":
         i.imply("meridiem", r.FF.PM), i.imply("hour", 15);

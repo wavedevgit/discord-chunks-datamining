@@ -32,7 +32,7 @@ var r, Chunk101968 = require("./101968.js"),
       r = new ActiveXObject("htmlfile")
     } catch (e) {}
     b = "u" > typeof document ? document.domain && r ? E(r) : y() : E(r);
-    for (var e = s.length; e--;) delete b[p][s[e]];
+    for (var e = o.length; e--;) delete b[p][o[e]];
     return b()
   };
 Chunk239586[h] = true, module.exports = Object.create || function(e, t) {

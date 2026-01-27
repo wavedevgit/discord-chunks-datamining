@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk73153 = require("./73153.js"),
@@ -42,7 +42,7 @@ class y extends(r = Chunk311907.Ay.PersistedStore) {
 }
 g(y, "displayName", "PTOStore"), g(y, "persistKey", "PTOStore");
 let b = new y(Chunk73153.h, {}),
-  O = e => (0, o.bG)([f.Ay, _.default, b], () => {
+  O = e => (0, s.bG)([f.Ay, _.default, b], () => {
     let t = _.default.getCurrentUser();
     if (null == t || !t.isStaff() || !e.isDM()) returnfalse;
     let n = _.default.getUser(e.getRecipientId());
@@ -60,7 +60,7 @@ let b = new y(Chunk73153.h, {}),
     className: m.eU,
     children: [(0, i.jsx)(l.Text, {
       variant: "text-sm/medium",
-      className: s()(m.Qq, m.Fn),
+      className: o()(m.Qq, m.Fn),
       children: h.intl.string(h.t["2UvR1E"])
     }), (0, i.jsx)("div", {
       className: m.o1,

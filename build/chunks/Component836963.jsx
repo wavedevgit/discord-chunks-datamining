@@ -76,50 +76,50 @@ function _(e) {
     sectionHeaderHeight: R,
     sectionFooterHeight: P,
     itemNodeWidth: D,
-    listPaddingRight: x,
-    itemNodeMargin: L,
-    listPadding: j,
-    gridNavigatorId: M,
+    listPaddingRight: L,
+    itemNodeMargin: x,
+    listPadding: M,
+    gridNavigatorId: j,
     gridNotice: k,
     renderHeader: U,
     renderUpsell: G
-  } = e, V = i.useRef(null), F = i.useRef(null), B = i.useRef(null), H = 0 === t.length, Y = (0, a.RQ)(e => e.searchQuery), W = f.useStore(e => e.inspectedExpressionPosition), K = (0, s.oV)({
-    gridWrapperRef: V,
+  } = e, F = i.useRef(null), V = i.useRef(null), B = i.useRef(null), H = 0 === t.length, Y = (0, a.RQ)(e => e.searchQuery), W = f.useStore(e => e.inspectedExpressionPosition), K = (0, o.oV)({
+    gridWrapperRef: F,
     containerWidth: u,
     showingEmptyState: H
   }), {
     expressionsGrid: z,
     rowCount: q,
     rowCountBySection: Z,
-    columnCounts: X,
-    gutterWidth: Q
-  } = (0, s.se)({
+    columnCounts: Q,
+    gutterWidth: X
+  } = (0, o.se)({
     categories: t,
     collapsedCategories: n,
     gridWidth: K,
-    listPaddingRight: x,
+    listPaddingRight: L,
     itemNodeWidth: D,
-    itemNodeMargin: L
+    itemNodeMargin: x
   }), {
     getItemProps: J,
     getRowProps: $,
     gridContainerProps: ee,
     handleGridContainerKeyDown: et,
     isUsingKeyboardNavigation: en
-  } = (0, s.JZ)({
-    columnCounts: X,
-    expressionsListRef: F,
+  } = (0, o.JZ)({
+    columnCounts: Q,
+    expressionsListRef: V,
     expressionsGrid: z,
     onSelectItem: _,
     store: f,
-    gridNavigatorId: M
+    gridNavigatorId: j
   }), er = i.useCallback((e, t) => O(z[e], $(e), {
     isUsingKeyboardNavigation: en.current,
-    gutterWidth: Q,
+    gutterWidth: X,
     rowIndex: e,
     totalRowCount: q,
     sectionIndex: t.sectionIndex
-  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [z, J, $, Q, en, O, f, q]), ei = i.useCallback(e => null == A ? true : A(t[e], e), [t, A]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), es = i.useCallback(() => {
+  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [z, J, $, X, en, O, f, q]), ei = i.useCallback(e => null == A ? true : A(t[e], e), [t, A]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), eo = i.useCallback(() => {
     var e;
     return null == S ? true : S(null == z || null == (e = z[W.rowIndex]) ? true : e[W.columnIndex])
   }, [z, W.columnIndex, W.rowIndex, S]);
@@ -127,47 +127,47 @@ function _(e) {
     h(Y)
   }, [h, Y]), i.useEffect(() => {
     var e, t;
-    f.setBottomPosition(null != (e = null == (t = V.current) ? true : t.getBoundingClientRect().bottom) ? e : null)
+    f.setBottomPosition(null != (e = null == (t = F.current) ? true : t.getBoundingClientRect().bottom) ? e : null)
   }), i.useEffect(() => f.resetStoreState, [f.resetStoreState]), i.useLayoutEffect(() => {
     var e;
     null == (e = B.current) || e.focus()
   }, []);
-  let eo = (0, r.jsxs)(r.Fragment, {
+  let es = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.A, {
       ref: B,
       store: f,
       hasSendableExpressions: true,
       onKeyDown: et,
-      expressionsListRef: F,
-      gridNavigatorId: M,
+      expressionsListRef: V,
+      gridNavigatorId: j,
       defaultSearchPlaceholder: E,
       emptySearchPlaceholder: y
     }), null == N ? true : N()]
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [null != U ? U(eo) : (0, r.jsxs)("div", {
+    children: [null != U ? U(es) : (0, r.jsxs)("div", {
       className: c.wx,
-      children: [" ", eo, " "]
+      children: [" ", es, " "]
     }), H && null != b ? b(c.p$) : (0, r.jsxs)(r.Fragment, {
-      children: [C(F), null != k && (0, r.jsx)("div", {
+      children: [C(V), null != k && (0, r.jsx)("div", {
         className: c.Eb,
         children: k
       }), (0, r.jsx)("div", p(d({
-        ref: V,
+        ref: F,
         className: c.AD,
-        id: M
+        id: j
       }, ee), {
-        children: null != K ? (0, r.jsx)(o.A, {
+        children: null != K ? (0, r.jsx)(s.A, {
           categories: t,
-          ref: F,
+          ref: V,
           store: f,
           hasSearchResults: g,
-          listPadding: j,
+          listPadding: M,
           renderRow: er,
           renderSection: v,
           renderSectionHeader: null != A ? ei : true,
           renderSectionFooter: null != I ? ea : true,
-          renderInspector: null != S ? es : true,
+          renderInspector: null != S ? eo : true,
           renderEmptySearchState: T,
           rowCount: q,
           rowCountBySection: Z,

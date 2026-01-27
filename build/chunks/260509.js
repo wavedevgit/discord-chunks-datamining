@@ -74,7 +74,7 @@ function f(e, t) {
 }
 
 function p(e) {
-  return (0, o.oN)(e.name)
+  return (0, s.oN)(e.name)
 }
 
 function _(e, t) {
@@ -91,7 +91,7 @@ function m(e) {
 }
 
 function g(e) {
-  return s.default.castGuildIdAsEveryoneGuildRoleId(e.id)
+  return o.default.castGuildIdAsEveryoneGuildRoleId(e.id)
 }
 
 function E(e, t) {

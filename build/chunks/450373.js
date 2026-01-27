@@ -11,20 +11,20 @@ var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk775602 = require("./775602.js");
 let c = e => {
-  let t = (0, o.bG)([l.A], () => l.A.desaturateUserColors ? l.A.saturation : 1);
+  let t = (0, s.bG)([l.A], () => l.A.desaturateUserColors ? l.A.saturation : 1);
   return (0, r.useMemo)(() => {
     let {
       h: n,
       s: r,
       l: i
-    } = a()((0, s.Hl)(e)).toHsl(), o = a()({
+    } = a()((0, o.Hl)(e)).toHsl(), s = a()({
       h: n,
       s: r * t,
       l: i
     });
     return {
-      hex: o.toHexString(),
-      hsl: o.toHslString()
+      hex: s.toHexString(),
+      hsl: s.toHslString()
     }
   }, [e, t])
 }

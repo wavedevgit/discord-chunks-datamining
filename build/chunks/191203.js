@@ -4,8 +4,8 @@
 var Chunk72290 = require("./72290.js");
 let Chunk159093 = require("./159093.js"),
   Chunk17101 = require("./17101.js"),
-  s = Chunk17101.isObject,
-  o = Chunk17101.hasOwn;
+  o = Chunk17101.isObject,
+  s = Chunk17101.hasOwn;
 
 function l() {}
 module.exports = l, l.prototype.clearTimeout = function() {
@@ -19,7 +19,7 @@ module.exports = l, l.prototype.clearTimeout = function() {
 }, l.prototype.timeout = function(e) {
   if (!e || "object" != typeof e) return this._timeout = e, this._responseTimeout = 0, this._uploadTimeout = 0, this;
   for (let t in e)
-    if (o(e, t)) switch (t) {
+    if (s(e, t)) switch (t) {
       case "deadline":
         this._timeout = e.deadline;
         break;
@@ -77,8 +77,8 @@ l.prototype._shouldRetry = function(e, t) {
 }, l.prototype.get = function(e) {
   return this._header[e.toLowerCase()]
 }, l.prototype.getHeader = l.prototype.get, l.prototype.set = function(e, t) {
-  if (s(e)) {
-    for (let t in e) o(e, t) && this.set(t, e[t]);
+  if (o(e)) {
+    for (let t in e) s(e, t) && this.set(t, e[t]);
     return this
   }
   return this._header[e.toLowerCase()] = t, this.header[e] = t, this
@@ -87,12 +87,12 @@ l.prototype._shouldRetry = function(e, t) {
 }, l.prototype.field = function(e, t, n) {
   if (null == e) throw Error(".field(name, val) name can not be empty");
   if (this._data) throw Error(".field() can't be used if .send() is used. Please use only .send() or only .field() & .attach()");
-  if (s(e)) {
-    for (let t in e) o(e, t) && this.field(t, e[t]);
+  if (o(e)) {
+    for (let t in e) s(e, t) && this.field(t, e[t]);
     return this
   }
   if (Array.isArray(t)) {
-    for (let n in t) o(t, n) && this.field(e, t[n]);
+    for (let n in t) s(t, n) && this.field(e, t[n]);
     return this
   }
   if (null == t) throw Error(".field(name, val) val can not be empty");
@@ -131,15 +131,15 @@ l.prototype._shouldRetry = function(e, t) {
     headers: this._header
   }
 }, l.prototype.send = function(e) {
-  let t = s(e),
+  let t = o(e),
     n = this._header["content-type"];
   if (this._formData) throw Error(".send() can't be used if .attach() or .field() is used. Please use only .send() or only .field() & .attach()");
   if (t && !this._data) Array.isArray(e) ? this._data = [] : this._isHost(e) || (this._data = {});
   else if (e && this._data && this._isHost(this._data)) throw Error("Can't merge these send calls");
-  if (t && s(this._data))
+  if (t && o(this._data))
     for (let t in e) {
       if ("bigint" == typeof e[t] && !e[t].toJSON) throw Error("Cannot serialize BigInt value to json");
-      o(e, t) && (this._data[t] = e[t])
+      s(e, t) && (this._data[t] = e[t])
     } else if ("bigint" == typeof e) throw Error("Cannot send value of type BigInt");
     else "string" == typeof e ? (n || this.type("form"), (n = this._header["content-type"]) && (n = n.toLowerCase().trim()), "application/x-www-form-urlencoded" === n ? this._data = this._data ? `${this._data}&${e}` : e : this._data = (this._data || "") + e) : this._data = e;
   return !t || this._isHost(e) || n || this.type("json"), this

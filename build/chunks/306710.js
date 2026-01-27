@@ -8,7 +8,7 @@ var Chunk440745 = require("./440745.js"),
   i = require.n(Chunk440745),
   Chunk827734 = require("./827734.js"),
   Chunk558394 = require("./558394.js");
-let o = i()(Chunk827734.A.unsafe_rawColors.WHITE.resolve({
+let s = i()(Chunk827734.A.unsafe_rawColors.WHITE.resolve({
     saturation: 1
   }).hex()),
   l = i()(Chunk827734.A.unsafe_rawColors.BLACK.resolve({
@@ -16,5 +16,5 @@ let o = i()(Chunk827734.A.unsafe_rawColors.WHITE.resolve({
   }).hex()),
   c = (0, Chunk558394.A)({
     dark: l,
-    light: o
+    light: s
   })

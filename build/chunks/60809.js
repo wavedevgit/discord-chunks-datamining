@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   $V: () => f,
-  Gu: () => o,
-  KG: () => s,
+  Gu: () => s,
+  KG: () => o,
   TY: () => c,
   Ug: () => r,
   Wx: () => i,
@@ -17,8 +17,8 @@ var r = function(e) {
 }({});
 let i = "app-launcher-element",
   a = "app-launcher-modal",
-  s = "app-launcher-entrypoint",
-  o = "app-launcher-app-dm-entrypoint",
+  o = "app-launcher-entrypoint",
+  s = "app-launcher-app-dm-entrypoint",
   l = "app-launcher-app-details-more-menu",
   c = "app-launcher-profile-friend-activity-entry",
   u = 500,

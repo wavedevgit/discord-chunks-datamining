@@ -16,9 +16,9 @@ function c(e) {
   let {
     userId: t,
     className: n
-  } = e, c = (0, s.f1)(t), u = (0, s.fi)(t), d = (0, i.bG)([o.A], () => {
+  } = e, c = (0, o.f1)(t), u = (0, o.fi)(t), d = (0, i.bG)([s.A], () => {
     var e;
-    return null == (e = o.A.getUserProfile(t)) ? true : e.fetchError
+    return null == (e = s.A.getUserProfile(t)) ? true : e.fetchError
   });
   return c.length > 0 || u.length > 0 || null == d ? null : (0, r.jsx)("div", {
     className: n,

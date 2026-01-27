@@ -53,13 +53,13 @@ function p(e, t) {
 
 function _(e) {
   let t = i.useRef(null);
-  return (0, r.jsx)(o.A, p(d({}, e), {
+  return (0, r.jsx)(s.A, p(d({}, e), {
     targetElementRef: t,
     children: e => (0, r.jsx)(a.m, {
       targetElementRef: t,
       text: l.intl.string(l.t["UKOtz+"]),
       "aria-label": false,
-      children: (0, r.jsx)(s.DUT, p(d({}, e), {
+      children: (0, r.jsx)(o.DUT, p(d({}, e), {
         innerRef: t,
         "aria-label": l.intl.string(l.t["UKOtz+"]),
         onClick: t => {
@@ -69,8 +69,8 @@ function _(e) {
           t.preventDefault(), e.onClick(t)
         },
         className: c.He,
-        children: (0, r.jsx)(s.jNK, {
-          color: s.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
+        children: (0, r.jsx)(o.jNK, {
+          color: o.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
           size: "xs"
         })
       }))

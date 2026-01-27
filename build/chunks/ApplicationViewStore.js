@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk91871 = require("./91871.js"),
   a = require.n(Chunk91871),
   Chunk735438 = require("./735438.js"),
-  o = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk989349 = require("./989349.js"),
   c = require.n(Chunk989349),
   Chunk311907 = require("./311907.js"),
@@ -34,7 +34,7 @@ var r, Chunk91871 = require("./91871.js"),
   Chunk227841 = require("./227841.js"),
   Chunk652215 = require("./652215.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,9 +42,9 @@ function x(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let L = 5,
-  j = c()().subtract(1, "week"),
-  M = [],
+let x = 5,
+  M = c()().subtract(1, "week"),
+  j = [],
   k = "",
   U = false;
 
@@ -54,10 +54,10 @@ function G(e, t) {
   })
 }
 
-function V(e, t) {
-  return null != e && c()(e.createdAt).isAfter(j) && 0 === t
+function F(e, t) {
+  return null != e && c()(e.createdAt).isAfter(M) && 0 === t
 }
-let F = {
+let V = {
     [Chunk652215.DpB.NAME]: G,
     [Chunk652215.DpB.PLATFORM]: (e, t, n) => {
       let r = e.libraryApplication.getDistributor(),
@@ -71,7 +71,7 @@ let F = {
   H = (0, Chunk583613.L_)(e => e.filter(e => null != e.libraryApplication && v.A.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
   Y = (0, Chunk583613.L_)((e, t) => e.filter(e => a()(t.toLowerCase(), e.application.name.toLowerCase()))),
   W = (0, Chunk583613.L_)((e, t, n, r) => {
-    let i = F[t];
+    let i = V[t];
     if (null == i) return e;
     let a = [...e].sort(i);
     return n === D.tSW.DESCENDING ? a.reverse() : a
@@ -96,14 +96,14 @@ function Z(e, t, n, r, i) {
   if (!i && t.has(e.id)) return null;
   let a = f.A.getApplication(e.id);
   if (null == a) return null;
-  let s = z(a, n);
+  let o = z(a, n);
   return (t.add(e.id), (0, C.XZ)(e) || v.A.isInstalled(e.id, e.branchId)) ? {
     key: "".concat(e.id, "-").concat(e.branchId),
     application: a,
     libraryApplication: e,
-    lastPlayed: s,
+    lastPlayed: o,
     supportsCloudSync: null != e && v.A.supportsCloudSync(e.id, e.branchId),
-    isNew: V(e, s),
+    isNew: F(e, o),
     isLaunching: _.A.launchingGames.has(e.id),
     isRunning: r.has(e.id),
     isLaunchable: (0, R.A)({
@@ -120,7 +120,7 @@ function Z(e, t, n, r, i) {
   } : null
 }
 
-function X(e, t, n, r) {
+function Q(e, t, n, r) {
   let i = null != e ? f.A.getApplication(e) : null;
   if (null == i || null == e || t.has(e)) return null;
   let a = z(i, n);
@@ -147,7 +147,7 @@ function X(e, t, n, r) {
   }
 }
 
-function Q() {
+function X() {
   let e = new Set(p.Ay.getRunningVerifiedApplicationIds()),
     t = {},
     n = new Set,
@@ -156,24 +156,24 @@ function Q() {
       return null != n ? (t[n.id] = e.lastFocused * I.A.Millis.SECOND, n.id) : null
     }),
     i = Object.values(E.A.getAllLibraryApplications()).map(r => Z(r, n, t, e, true)).filter(T.Vq),
-    a = [...r.map(r => X(r, n, t, e)).filter(T.Vq), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
-  return U = null != g.A.lastFetched && E.A.fetched, !o().isEqual(a, M) && (M = a, N.isPlatformEmbedded && w.Ay.setSystemTrayApplications(H(M).map(e => e.application).slice(0, L)), true)
+    a = [...r.map(r => Q(r, n, t, e)).filter(T.Vq), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
+  return U = null != g.A.lastFetched && E.A.fetched, !s().isEqual(a, j) && (j = a, N.isPlatformEmbedded && w.Ay.setSystemTrayApplications(H(j).map(e => e.application).slice(0, x)), true)
 }
 class J extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([f.A, g.A, _.A, p.Ay, v.A, A.A, E.A, b.A, y.A, m.A], Q, 200), this.syncWith([O.A, h.default], () => true)
+    this.syncWith([f.A, g.A, _.A, p.Ay, v.A, A.A, E.A, b.A, y.A, m.A], X, 200), this.syncWith([O.A, h.default], () => true)
   }
   get applicationFilterQuery() {
     return k
   }
   get applicationViewItems() {
-    return M
+    return j
   }
   get launchableApplicationViewItems() {
-    return H(M)
+    return H(j)
   }
   get libraryApplicationViewItems() {
-    return B(M)
+    return B(j)
   }
   get filteredLibraryApplicationViewItems() {
     return Y(this.libraryApplicationViewItems, k)
@@ -182,13 +182,13 @@ class J extends(r = Chunk311907.Ay.Store) {
     return W(this.filteredLibraryApplicationViewItems, O.A.sortKey, O.A.sortDirection, h.default.locale)
   }
   get hiddenLibraryApplicationViewItems() {
-    return K(M)
+    return K(j)
   }
   get hasFetchedApplications() {
     return U
   }
 }
-x(J, "displayName", "ApplicationViewStore");
+L(J, "displayName", "ApplicationViewStore");
 let $ = new J(Chunk73153.h, {
   LIBRARY_APPLICATION_FILTER_UPDATE: q
 })

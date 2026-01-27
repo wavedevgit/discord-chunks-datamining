@@ -22,7 +22,7 @@ let m = () => {
     let {
       transitionState: t,
       onClose: n,
-      premiumType: o,
+      premiumType: s,
       setStep: f,
       premiumSubscription: p,
       paymentsBlocked: m,
@@ -71,10 +71,10 @@ let m = () => {
       size: "md",
       transitionState: t,
       title: N,
-      subtitle: g(m, o, p, C),
+      subtitle: g(m, s, p, C),
       actions: T,
       onClose: async () => n(),
-      children: v ? (0, r.jsx)(s.wx6, {
+      children: v ? (0, r.jsx)(o.wx6, {
         type: "critical",
         children: h.intl.string(h.t["5mlOCW"])
       }) : null
@@ -95,21 +95,21 @@ let m = () => {
           case d.PremiumTypes.TIER_0:
             return e ? h.intl.format(h.t["l+A50F"], {
               date: n.currentPeriodEnd,
-              helpdeskArticle: o.A.getArticleURL(p.MVz.BLOCKED_PAYMENTS)
+              helpdeskArticle: s.A.getArticleURL(p.MVz.BLOCKED_PAYMENTS)
             }) : h.intl.format(h.t.Y6Wfaw, {
               date: n.currentPeriodEnd
             });
           case d.PremiumTypes.TIER_1:
             return e ? h.intl.format(h.t.QN7eIt, {
               date: n.currentPeriodEnd,
-              helpdeskArticle: o.A.getArticleURL(p.MVz.BLOCKED_PAYMENTS)
+              helpdeskArticle: s.A.getArticleURL(p.MVz.BLOCKED_PAYMENTS)
             }) : h.intl.format(h.t.X7i9D8, {
               date: n.currentPeriodEnd
             });
           default:
             return e ? h.intl.format(h.t.vuSNhj, {
               date: n.currentPeriodEnd,
-              helpdeskArticle: o.A.getArticleURL(p.MVz.BLOCKED_PAYMENTS)
+              helpdeskArticle: s.A.getArticleURL(p.MVz.BLOCKED_PAYMENTS)
             }) : h.intl.format(h.t.fCdmNs, {
               date: n.currentPeriodEnd
             })

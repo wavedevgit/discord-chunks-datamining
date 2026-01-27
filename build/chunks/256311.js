@@ -33,7 +33,7 @@ let u = {
       type: "CHANGE_LOG_MARK_SEEN",
       changelogId: e,
       changelogDate: t
-    }), s.pK.updateSetting(e)
+    }), o.pK.updateSetting(e)
   },
   setChangelogOverride(e) {
     i.h.dispatch({
@@ -43,7 +43,7 @@ let u = {
   },
   sendChangelogMessage(e) {
     r.Bo.post({
-      url: o.Rsh.CHANGELOG_MESSAGES,
+      url: s.Rsh.CHANGELOG_MESSAGES,
       body: {
         changelog_id: e
       },
@@ -61,11 +61,11 @@ let u = {
     arguments.length > 2 && true !== arguments[2] && arguments[2];
     let n = arguments.length > 3 && true !== arguments[3] && arguments[3];
     if (null != a.A.getChangelog(e, t)) return null;
-    let s = l.V5.DESKTOP,
-      o = n ? "" : "?".concat(c());
+    let o = l.V5.DESKTOP,
+      s = n ? "" : "?".concat(c());
     try {
       let n = await r.Bo.get({
-        url: "https://cdn.discordapp.com/changelogs/".concat(s, "/").concat(e, "/").concat(t, ".json").concat(o),
+        url: "https://cdn.discordapp.com/changelogs/".concat(o, "/").concat(e, "/").concat(t, ".json").concat(s),
         rejectWithError: true
       });
       return i.h.dispatch({

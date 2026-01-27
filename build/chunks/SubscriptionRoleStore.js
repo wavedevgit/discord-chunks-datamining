@@ -37,11 +37,11 @@ function O(e) {
   let r = new Set,
     i = new Set,
     a = new Set;
-  if (y.set(e, (0, s.bM)(n, t)), n.features.has(p.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) {
+  if (y.set(e, (0, o.bM)(n, t)), n.features.has(p.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) {
     var _;
-    let s = l.Ay.getMember(e, t.id),
-      u = new Set(null != (_ = null == s ? true : s.roles) ? _ : []);
-    for (let t of c.A.getSortedRoles(n.id))(0, f.U)(t) && (r.add(t.id), (0, f.X)(t) && (i.add(t.id), u.has(t.id) && a.add(t.id))), u.has(t.id) && (0, o._m)(t, p.xBc.ADMINISTRATOR) && y.set(e, true)
+    let o = l.Ay.getMember(e, t.id),
+      u = new Set(null != (_ = null == o ? true : o.roles) ? _ : []);
+    for (let t of c.A.getSortedRoles(n.id))(0, f.U)(t) && (r.add(t.id), (0, f.X)(t) && (i.add(t.id), u.has(t.id) && a.add(t.id))), u.has(t.id) && (0, s._m)(t, p.xBc.ADMINISTRATOR) && y.set(e, true)
   }
   return m.set(e, r), E.set(e, a), g.set(e, i), true
 }

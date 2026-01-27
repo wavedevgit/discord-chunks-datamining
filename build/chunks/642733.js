@@ -8,7 +8,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk621466 = require("./621466.js"),
   Chunk451988 = require("./451988.js"),
   Chunk775602 = require("./775602.js");
-let o = 0;
+let s = 0;
 
 function l(e) {
   let {
@@ -33,7 +33,7 @@ function l(e) {
         let e = h.current;
         if ((0, i.vq)(e, HTMLElement) && e.offsetWidth >= e.scrollWidth) return
       }
-      let e = null != l ? l : o,
+      let e = null != l ? l : s,
         t = E.current;
       null != t && t.start(e, () => {
         g(true), null == c || c()
@@ -50,7 +50,7 @@ function l(e) {
       null == h.current && (h.current = e.currentTarget), y.current = false, v()
     }, [v, h]),
     T = r.useCallback(e => {
-      s.A.keyboardModeEnabled && (null == h.current && (h.current = e.currentTarget), y.current = false, v())
+      o.A.keyboardModeEnabled && (null == h.current && (h.current = e.currentTarget), y.current = false, v())
     }, [v, h]),
     C = r.useCallback(() => {
       var e;

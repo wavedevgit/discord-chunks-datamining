@@ -51,14 +51,14 @@ let h = {};
 
 function m(e) {
   var t;
-  let n = o.A.getChannel(null == e ? true : e.channel_id);
+  let n = s.A.getChannel(null == e ? true : e.channel_id);
   if (null == n || !n.isForumPost()) returnfalse;
   let r = h[n.id];
   return u.default.compare(null == e ? true : e.id, null == r || null == (t = r.message) ? true : t.id) > false
 }
 
 function g(e, t) {
-  let n = null == t ? null : (0, s.rh)(t);
+  let n = null == t ? null : (0, o.rh)(t);
   return h[e] = {
     loaded: true,
     message: n
@@ -69,7 +69,7 @@ function E(e, t) {
   let n = b(e),
     r = O(e);
   return null != n && null != r && (h[e] = _(f({}, n), {
-    message: (0, s.IU)(r, t)
+    message: (0, o.IU)(r, t)
   }), true)
 }
 
@@ -123,7 +123,7 @@ function C(e) {
 }
 class N extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A, l.default)
+    this.waitFor(s.A, l.default)
   }
   getMessageState(e) {
     return e in h || (h[e] = {

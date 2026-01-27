@@ -9,7 +9,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk783420 = require("./783420.jsx"),
   Chunk938973 = require("./938973.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -71,7 +71,7 @@ let p = function(e) {
   let {
     subscriptionTier: t,
     onClick: n,
-    postSuccessGuild: o,
+    postSuccessGuild: s,
     onSubscribeModalClose: c,
     premiumModalAnalyticsLocation: f,
     applicationId: p,
@@ -83,14 +83,14 @@ let p = function(e) {
   } = e, y = d(e, ["subscriptionTier", "onClick", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "applicationId", "confirmationFooter", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]), b = {
     onClick: n,
     subscriptionTier: t,
-    postSuccessGuild: o,
+    postSuccessGuild: s,
     onSubscribeModalClose: c,
     premiumModalAnalyticsLocation: f,
     applicationId: p,
     confirmationFooter: _
   }, {
     subscribeButtonProps: O
-  } = (0, s.B)({
+  } = (0, o.B)({
     subscriptionTier: t,
     buttonTextOverride: h,
     defaultTextOverride: m,

@@ -88,7 +88,7 @@ let y = function(e) {
     }
   },
   O = e => {
-    let t = s.A.get((0, o.ML)(e)),
+    let t = o.A.get((0, s.ML)(e)),
       n = (0, a.Ay)();
     return null != t && ["twitch", "youtube"].includes(e) ? "url('".concat((0, i.Mw)(n) ? t.icon.darkSVG : t.icon.lightSVG, "')") : null
   };
@@ -117,17 +117,17 @@ async function A(e, t) {
     });
     if (!Array.isArray(t.body)) return h(n, 0), [];
     let a = t.body.map(v),
-      s = [];
+      o = [];
     a.forEach(e => {
       let {
         userId: t
       } = e;
-      return s.push(t)
+      return o.push(t)
     });
-    let o = f(e, s),
-      c = i.filter(e => !s.includes(e)),
+    let s = f(e, o),
+      c = i.filter(e => !o.includes(e)),
       u = f(e, c);
-    return h(o, 3), h(u, 0), a
+    return h(s, 3), h(u, 0), a
   } catch (e) {
     h(n, 0)
   }

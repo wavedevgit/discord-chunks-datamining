@@ -19,14 +19,14 @@ function l(e) {
 }
 
 function c(e, t) {
-  if ((0, s.A)(2, arguments), !t || "object" !== l(t)) return new Date(NaN);
-  var n = t.years ? (0, o.A)(t.years) : 0,
-    c = t.months ? (0, o.A)(t.months) : 0,
-    u = t.weeks ? (0, o.A)(t.weeks) : 0,
-    d = t.days ? (0, o.A)(t.days) : 0,
-    f = t.hours ? (0, o.A)(t.hours) : 0,
-    p = t.minutes ? (0, o.A)(t.minutes) : 0,
-    _ = t.seconds ? (0, o.A)(t.seconds) : 0,
+  if ((0, o.A)(2, arguments), !t || "object" !== l(t)) return new Date(NaN);
+  var n = t.years ? (0, s.A)(t.years) : 0,
+    c = t.months ? (0, s.A)(t.months) : 0,
+    u = t.weeks ? (0, s.A)(t.weeks) : 0,
+    d = t.days ? (0, s.A)(t.days) : 0,
+    f = t.hours ? (0, s.A)(t.hours) : 0,
+    p = t.minutes ? (0, s.A)(t.minutes) : 0,
+    _ = t.seconds ? (0, s.A)(t.seconds) : 0,
     h = (0, a.default)(e),
     m = c || n ? (0, i.default)(h, c + 12 * n) : h,
     g = d || u ? (0, r.default)(m, d + 7 * u) : m,

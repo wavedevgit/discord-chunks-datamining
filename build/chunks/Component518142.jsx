@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 518142, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 518142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => u
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,7 +11,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk876692 = require("./876692.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,7 +19,7 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class d extends Chunk64700.PureComponent {
+class u extends Chunk64700.PureComponent {
   render() {
     let {
       transitionState: e
@@ -28,23 +27,23 @@ class d extends Chunk64700.PureComponent {
       code: t,
       errorMessage: n,
       retrySuccess: i
-    } = this.state, o = i ? (0, r.jsx)(s.ZpM, {
+    } = this.state, a = i ? (0, r.jsx)(s.ZpM, {
       type: s.ZpM.Types.SUCCESS,
       className: c.Nr,
       children: (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        children: l.intl.string(l.t.j4qu8n)
+        children: o.intl.string(o.t.j4qu8n)
       })
     }) : null;
-    return (0, r.jsx)(a.Modal, {
-      title: l.intl.string(l.t["mGppp/"]),
+    return (0, r.jsx)(l.Modal, {
+      title: o.intl.string(o.t["mGppp/"]),
       actions: [{
-        text: l.intl.string(l.t["ETE/oC"]),
+        text: o.intl.string(o.t["ETE/oC"]),
         onClick: this.props.onClose,
         variant: "secondary",
         disabled: this.state.isLoading
       }, {
-        text: l.intl.string(l.t.piW6YS),
+        text: o.intl.string(o.t.piW6YS),
         type: "submit",
         disabled: this.state.isLoading || 0 === t.length,
         onClick: this.handleSubmit
@@ -58,10 +57,10 @@ class d extends Chunk64700.PureComponent {
           color: "text-default",
           variant: "text-md/normal",
           className: c.YK,
-          children: l.intl.string(l.t["37S9yU"])
-        }), o, (0, r.jsx)(s.ksK, {
+          children: o.intl.string(o.t["37S9yU"])
+        }), a, (0, r.jsx)(s.ksK, {
           inputRef: this.setRef,
-          label: l.intl.string(l.t.TjGb4Q),
+          label: o.intl.string(o.t.TjGb4Q),
           onChange: this.handleCodeChange,
           maxLength: 8,
           value: t,
@@ -73,7 +72,7 @@ class d extends Chunk64700.PureComponent {
           children: (0, r.jsx)(s.DUT, {
             onClick: this.handleRetry,
             children: (0, r.jsx)(s.MzZ, {
-              children: l.intl.string(l.t.PZgmxv)
+              children: o.intl.string(o.t.PZgmxv)
             })
           })
         })]
@@ -81,23 +80,23 @@ class d extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), u(this, "_input", true), u(this, "state", {
+    super(...e), d(this, "_input", true), d(this, "state", {
       code: "",
       errorMessage: "",
       retrySuccess: false,
       isLoading: false
-    }), u(this, "setRef", e => {
+    }), d(this, "setRef", e => {
       this._input = e
-    }), u(this, "handleRetry", async () => {
-      await o.A.sendMFABackupCodesVerificationKeyEmail(this.props.password), this.setState({
+    }), d(this, "handleRetry", async () => {
+      await a.A.sendMFABackupCodesVerificationKeyEmail(this.props.password), this.setState({
         retrySuccess: true
       })
-    }), u(this, "handleSubmit", async e => {
+    }), d(this, "handleSubmit", async e => {
       e.preventDefault(), this.setState({
         isLoading: true
       });
       try {
-        await o.A.confirmViewBackupCodes(this.state.code, false), this.props.onClose()
+        await a.A.confirmViewBackupCodes(this.state.code, false), this.props.onClose()
       } catch (e) {
         if (null == e.body) return;
         e.body.message && this.setState({
@@ -108,7 +107,7 @@ class d extends Chunk64700.PureComponent {
           isLoading: false
         })
       }
-    }), u(this, "handleCodeChange", e => {
+    }), d(this, "handleCodeChange", e => {
       this.setState({
         code: e
       })

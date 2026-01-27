@@ -53,7 +53,7 @@ function m(e, t) {
       } = n(550997);
       return t(e, _, {
         track: (e, t) => {
-          s.default.track(e, t)
+          o.default.track(e, t)
         }
       })
     }
@@ -64,7 +64,7 @@ function m(e, t) {
             messageId: e.id,
             channelId: e.channel_id,
             viewingChannelId: S,
-            guildId: (0, o.U)(e),
+            guildId: (0, s.U)(e),
             setHasSpoilerEmbeds: R
           },
           children: (0, r.jsx)(h, {

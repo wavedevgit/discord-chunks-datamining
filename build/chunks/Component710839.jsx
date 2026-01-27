@@ -9,7 +9,7 @@ require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk851907 = require("./851907.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,14 +18,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -52,19 +52,19 @@ let u = "activity-age-gate";
 function d(e) {
   let {
     application: t,
-    channelId: s,
+    channelId: o,
     onAgree: l,
     onDisagree: d
   } = e, f = null != (0, a.Ay)({
     application: t,
-    channelId: s
+    channelId: o
   }) ? i.KX8 : i.SYi;
   return (0, i.mMO)(async () => {
     let {
       ActivityAgeGateModal: e
     } = await n.e("75710").then(n.bind(n, 89805));
-    return n => (0, r.jsx)(e, c(o({}, n), {
-      channelId: s,
+    return n => (0, r.jsx)(e, c(s({}, n), {
+      channelId: o,
       application: t,
       onAgree: l,
       onDisagree: d

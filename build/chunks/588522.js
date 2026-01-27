@@ -10,6 +10,6 @@ let r = globalThis;
 function i(e, t, n) {
   let i = n || r,
     a = i.__SENTRY__ = i.__SENTRY__ || {},
-    s = a["8.31.0"] = a["8.31.0"] || {};
-  return s[e] || (s[e] = t())
+    o = a["8.31.0"] = a["8.31.0"] || {};
+  return o[e] || (o[e] = t())
 }

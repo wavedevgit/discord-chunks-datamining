@@ -59,10 +59,10 @@ function _(e, t) {
 function h(e) {
   let {
     enabled: t
-  } = e, n = p(e, ["enabled"]), i = t ? u.intl.string(u.t.Z7MyNB) : u.intl.string(u.t.OIDkcp), s = t ? a.z7w : a.TM1;
+  } = e, n = p(e, ["enabled"]), i = t ? u.intl.string(u.t.Z7MyNB) : u.intl.string(u.t.OIDkcp), o = t ? a.z7w : a.TM1;
   return (0, r.jsx)(c.A, f({
     label: i,
-    iconComponent: s
+    iconComponent: o
   }, n))
 }
 let m = Chunk311907.Ay.connectStores([Chunk531685.A, Chunk869146.A], e => {

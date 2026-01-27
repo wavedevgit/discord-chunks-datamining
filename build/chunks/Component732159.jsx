@@ -73,7 +73,7 @@ function f(e) {
   let [v, A] = i.useState(true), I = e => {
     A(e)
   };
-  return (0, r.jsx)(s.Modal, c({
+  return (0, r.jsx)(o.Modal, c({
     actions: [{
       text: null != n ? n : g,
       variant: "secondary",
@@ -94,7 +94,7 @@ function f(e) {
       disabled: y,
       loading: y
     }],
-    actionBarInput: null != l ? (0, r.jsx)(o.e, c({}, l)) : true,
+    actionBarInput: null != l ? (0, r.jsx)(s.e, c({}, l)) : true,
     role: "alertdialog",
     notice: null != v ? {
       message: v,

@@ -113,9 +113,9 @@ function w(e) {
   } = e, p = i.useRef(null), {
     renderWindow: b,
     windowDispatch: O
-  } = i.useContext(u.Ay), v = null != c, A = (0, s.useIsModalAtTop)(null != c ? c : ""), I = i.useCallback(e => {
+  } = i.useContext(u.Ay), v = null != c, A = (0, o.useIsModalAtTop)(null != c ? c : ""), I = i.useCallback(e => {
     var t;
-    if (!v && (0, s.hasAnyModalOpen)() || v && !(A && n) || d.A.isOpen() || e.defaultPrevented) return;
+    if (!v && (0, o.hasAnyModalOpen)() || v && !(A && n) || d.A.isOpen() || e.defaultPrevented) return;
     let {
       target: r
     } = e;
@@ -135,8 +135,8 @@ function w(e) {
   }, [n, A, v]);
   i.useLayoutEffect(() => (b.addEventListener("mousedown", I), b.addEventListener("contextmenu", I), O.subscribe(E.jej.POPOUT_CLOSE, N), () => {
     b.removeEventListener("mousedown", I), b.removeEventListener("contextmenu", I), O.unsubscribe(E.jej.POPOUT_CLOSE, N)
-  }), [I, b, O]), (0, o.tjt)(p), i.useEffect(() => {
-    (!v && (0, s.hasAnyModalOpen)() || v && !A) && N()
+  }), [I, b, O]), (0, s.tjt)(p), i.useEffect(() => {
+    (!v && (0, o.hasAnyModalOpen)() || v && !A) && N()
   }, [A, v]);
   let S = (0, m.A)();
   return (0, r.jsx)(h.A, {

@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk64700 = require("./64700.js"),
   Chunk429913 = require("./429913.js"),
   Chunk403362 = require("./403362.js");
-let s = 5;
+let o = 5;
 
-function o(e) {
+function s(e) {
   return (t, n) => {
-    var r, i, a, s;
-    let o = null != (r = null == (a = e[t.id]) ? true : a.score) ? r : 0,
-      l = null != (i = null == (s = e[n.id]) ? true : s.score) ? i : 0;
-    return o !== l ? l - o : 0
+    var r, i, a, o;
+    let s = null != (r = null == (a = e[t.id]) ? true : a.score) ? r : 0,
+      l = null != (i = null == (o = e[n.id]) ? true : o.score) ? i : 0;
+    return s !== l ? l - s : 0
   }
 }
 
@@ -27,16 +27,16 @@ function c(e) {
   let t = e.gameActivity,
     n = l(e),
     i = r.useMemo(() => {
-      let e = o(t);
+      let e = s(t);
       return n.sort(e), n
     }, [n, t]),
-    a = r.useMemo(() => i.slice(0, s), [i]);
+    a = r.useMemo(() => i.slice(0, o), [i]);
   return {
     gamesToDisplay: a,
     lastGameToDisplay: r.useMemo(() => {
       var e;
-      return null != (e = i[s]) ? e : null
+      return null != (e = i[o]) ? e : null
     }, [i]),
-    remainingGames: r.useMemo(() => i.slice(s), [i])
+    remainingGames: r.useMemo(() => i.slice(o), [i])
   }
 }

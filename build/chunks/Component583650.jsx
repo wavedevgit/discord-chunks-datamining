@@ -14,7 +14,7 @@ let l = Chunk64700.forwardRef(function(e, t) {
     query: n,
     onChange: l,
     disabled: c = false,
-    placeholder: u = o.intl.string(o.t["5h0QOP"]),
+    placeholder: u = s.intl.string(s.t["5h0QOP"]),
     "aria-label": d,
     onInteraction: f
   } = e, p = i.useRef(null);
@@ -35,7 +35,7 @@ let l = Chunk64700.forwardRef(function(e, t) {
     h = () => {
       l(""), null == f || f(a.Q.SEARCH)
     };
-  return (0, r.jsx)(s.IWV, {
+  return (0, r.jsx)(o.IWV, {
     size: "sm",
     disabled: c,
     onChange: _,

@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 703982, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 703982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk397927 = require("./397927.js"),
   Chunk793574 = require("./793574.js"),
@@ -17,106 +16,94 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk677300 = require("./677300.js"),
   Chunk67423 = require("./67423.js");
-
-function h(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function m(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      h(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function g(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let y = function(e) {
+let g = function(e) {
   let {
     isVisible: t,
     premiumSubscription: i,
-    churnDiscountOffer: h,
-    discountedPrice: g
+    churnDiscountOffer: g,
+    discountedPrice: A
   } = e, {
-    analyticsLocations: y
-  } = (0, c.Ay)(l.A.CHURN_DISCOUNT_PERSISTENT_CTA), b = (0, o.zhh)({
+    analyticsLocations: f
+  } = (0, c.Ay)(o.A.CHURN_DISCOUNT_PERSISTENT_CTA), h = (0, a.zhh)({
     transform: t ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!t,
     config: {
       tension: 120,
       friction: 12
     }
-  }), O = () => {
-    (0, o.mMO)(async () => {
-      let {
-        PremiumBrandRefreshSubscriptionCancellationModal: e
-      } = await n.e("72820").then(n.bind(n, 281439));
-      return t => (0, r.jsx)(e, E(m({}, t), {
-        premiumSubscription: i,
-        analyticsLocations: y,
-        initialStep: d.g.CONFIRM_DISCOUNT
-      }))
-    })
-  };
+  });
   return (0, r.jsx)(s.animated.div, {
-    className: a()(p.iE, {
+    className: l()(p.iE, {
       [p.q4]: !t
     }),
-    style: b,
+    style: h,
     children: (0, r.jsxs)("div", {
       className: p.iJ,
       children: [(0, r.jsx)("img", {
         alt: "",
-        src: _,
+        src: m,
         className: p.oU
       }), (0, r.jsxs)("div", {
         className: p.iQ,
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "text-strong",
-          children: f.intl.format(f.t["3yZP0G"], {
-            percent: h.discount.amount
+          children: _.intl.format(_.t["3yZP0G"], {
+            percent: g.discount.amount
           })
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: f.intl.format(f.t["3Q4wCy"], {
-            numMonths: h.discount.user_usage_limit,
-            discountedPrice: g,
-            billingPeriod: (0, u.Ke)(h.discount.user_usage_limit_interval)
+          children: _.intl.format(_.t["3Q4wCy"], {
+            numMonths: g.discount.user_usage_limit,
+            discountedPrice: A,
+            billingPeriod: (0, d.Ke)(g.discount.user_usage_limit_interval)
           })
         })]
-      }), (0, r.jsx)(o.Button, {
+      }), (0, r.jsx)(a.Button, {
         variant: "expressive",
-        icon: o.tvc,
+        icon: a.tvc,
         size: "md",
-        text: f.intl.string(f.t.zrCzVB),
-        onClick: () => O()
+        text: _.intl.string(_.t.zrCzVB),
+        onClick: () => void(0, a.mMO)(async () => {
+          let {
+            PremiumBrandRefreshSubscriptionCancellationModal: e
+          } = await n.e("72820").then(n.bind(n, 281439));
+          return t => {
+            var n, l;
+            return (0, r.jsx)(e, (n = function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {},
+                  r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), r.forEach(function(t) {
+                  var r;
+                  r = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: r,
+                    enumerable: true,
+                    configurable: true,
+                    writable: true
+                  }) : e[t] = r
+                })
+              }
+              return e
+            }({}, t), l = l = {
+              premiumSubscription: i,
+              analyticsLocations: f,
+              initialStep: u.g.CONFIRM_DISCOUNT
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+              var n = Object.keys(e);
+              if (Object.getOwnPropertySymbols) {
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
+              }
+              return n
+            })(Object(l)).forEach(function(e) {
+              Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+            }), n))
+          }
+        })
       })]
     })
   })

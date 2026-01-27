@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -55,7 +55,7 @@ let c = function(e) {
     var a, l, c, u, d;
     let {
       color: f
-    } = n, p = o(n, ["color"]), _ = "currentColor";
+    } = n, p = s(n, ["color"]), _ = "currentColor";
     null != f && (_ = "string" != typeof f && "css" in f ? f.css : f);
     let h = null != (a = p.size) ? a : "md",
       m = (0, i.J)(h),
@@ -66,6 +66,6 @@ let c = function(e) {
         foreground: p.colorClass
       };
     for (let [e, n] of Object.entries(t)) null != p[e] && (g[n] = p[e]);
-    return (0, r.jsx)(e, s({}, p, g))
+    return (0, r.jsx)(e, o({}, p, g))
   }
 }

@@ -12,8 +12,8 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js");
 
 function c(e, t) {
-  let n = (0, r.bG)([o.A], () => o.A.getVoiceChannelId()),
-    c = (0, r.bG)([s.A], () => null != n ? s.A.getMode(n) : null),
+  let n = (0, r.bG)([s.A], () => s.A.getVoiceChannelId()),
+    c = (0, r.bG)([o.A], () => null != n ? o.A.getMode(n) : null),
     u = (0, a.Ay)();
   return null != e ? e : c === l._Of.VOICE && (0, i.qB)(u) ? t ? "activeLight" : "primaryLight" : t ? "white" : "primaryDark"
 }

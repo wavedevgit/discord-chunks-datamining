@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk322925 = require("./322925.js"),
   l = require.n(Chunk322925),
   Chunk827734 = require("./827734.js"),
@@ -76,7 +76,7 @@ let E = Object.fromEntries(Object.keys(Chunk827734.A.colors).map(e => [l()(e), e
   y = Chunk64700.forwardRef(function(e, t) {
     let n, [i, ...a] = [e, t],
       {
-        variant: o,
+        variant: s,
         tag: l = "div",
         selectable: f = false,
         className: _,
@@ -112,14 +112,14 @@ let E = Object.fromEntries(Object.keys(Chunk827734.A.colors).map(e => [l()(e), e
     }, T, v.style);
     return (0, r.jsx)(I, h(p({
       ref: A,
-      className: s()({
+      className: o()({
         [u.fT]: true === y,
         [u.rb]: f,
         [u.w9]: b,
         [d.fontScaling]: O
-      }, S, d[o], _)
+      }, S, d[s], _)
     }, v), {
       style: Object.values(N).filter(Boolean).length > 0 ? N : true,
-      "data-text-variant": o
+      "data-text-variant": s
     }))
   })

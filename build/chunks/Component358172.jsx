@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 358172, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 358172, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk417597 = require("./417597.js"),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js"),
@@ -20,73 +19,73 @@ var Chunk503698 = require("./503698.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk246930 = require("./246930.js");
-let E = function(e) {
+let h = function(e) {
   let {
     className: t,
     guildId: n,
     boostingVariant: i
-  } = e, E = (0, s.bG)([p.A], () => p.A.getGuild(n), [n]), y = (0, f.A)(null == E ? true : E.id).total;
-  return null == E ? (0, r.jsx)("div", {
-    className: a()(t, g.bo),
+  } = e, h = (0, s.bG)([p.A], () => p.A.getGuild(n), [n]), b = (0, _.A)(null == h ? true : h.id).total;
+  return null == h ? (0, r.jsx)("div", {
+    className: l()(t, f.bo),
     children: (0, r.jsx)("div", {
-      className: g.$g,
-      children: (0, r.jsx)(l.Text, {
+      className: f.$g,
+      children: (0, r.jsx)(o.Text, {
         variant: "text-lg/bold",
-        children: m.intl.string(m.t["6Kwwuo"])
+        children: A.intl.string(A.t["6Kwwuo"])
       })
     })
   }) : (0, r.jsxs)("div", {
-    className: a()(t, g.bo),
+    className: l()(t, f.bo),
     children: [(0, r.jsx)(c.A, {
-      className: g.__invalid_guildIcon,
-      guild: E,
+      className: f.__invalid_guildIcon,
+      guild: h,
       size: c.A.Sizes.LARGER
     }), (0, r.jsxs)("div", {
-      className: g.$g,
-      children: [(0, r.jsx)(l.Text, {
+      className: f.$g,
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-lg/bold",
-        children: E.name
+        children: h.name
       }), (0, r.jsxs)("div", {
-        className: g.TZ,
-        children: [(0, r.jsx)(l._Jp, {
-          color: l.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-          className: g.Me
-        }), (0, r.jsx)(l.Text, {
+        className: f.TZ,
+        children: [(0, r.jsx)(o._Jp, {
+          color: o.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+          className: f.Me
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
-          children: m.intl.format(m.t["pob/cL"], {
-            subscriptions: y
+          children: A.intl.format(A.t["pob/cL"], {
+            subscriptions: b
           })
         }), (0, r.jsx)("div", {
-          className: g.me
-        }), (0, r.jsx)(l.Text, {
+          className: f.me
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
-          children: (0, _.gb)(E.premiumTier, {
+          children: (0, m.gb)(h.premiumTier, {
             useLevels: false
           })
         })]
       })]
-    }), i ? (0, r.jsx)(d.A, {
-      guild: E,
+    }), i ? (0, r.jsx)(u.A, {
+      guild: h,
       analyticsLocation: {
-        page: h.liQ.GUILD_BOOSTING_USER_SETTINGS,
-        section: h.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
-        object: h.ZSU.BUTTON_CTA,
-        objectType: h.AnalyticsObjectTypes.BUY
+        page: g.liQ.GUILD_BOOSTING_USER_SETTINGS,
+        section: g.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
+        object: g.ZSU.BUTTON_CTA,
+        objectType: g.AnalyticsObjectTypes.BUY
       },
       pauseAnimation: true,
-      size: o.$n.Sizes.MEDIUM,
-      color: o.$n.Colors.PRIMARY,
-      buttonText: m.intl.string(m.t.aBHecF)
-    }) : (0, r.jsx)(l.Button, {
+      size: a.$n.Sizes.MEDIUM,
+      color: a.$n.Colors.PRIMARY,
+      buttonText: A.intl.string(A.t.aBHecF)
+    }) : (0, r.jsx)(o.Button, {
       variant: "secondary",
-      text: m.intl.string(m.t.KLOhbO),
+      text: A.intl.string(A.t.KLOhbO),
       onClick: () => {
-        (0, u.K)({
-          guildId: E.id,
+        (0, d.K)({
+          guildId: h.id,
           location: {
-            section: h.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
+            section: g.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
           }
         })
       }

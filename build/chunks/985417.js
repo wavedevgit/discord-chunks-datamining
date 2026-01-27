@@ -67,7 +67,7 @@ function f(e) {
   } = e, O = i.LW.useStore(e => e.inspectedExpressionPosition), v = "".concat(l, "-").concat(u), A = f && O.rowIndex === l && O.columnIndex === u;
   switch (t.item.type) {
     case a.uq.SOUND:
-      return (0, r.createElement)(s.Ay, d(c({}, _(u), n), {
+      return (0, r.createElement)(o.Ay, d(c({}, _(u), n), {
         key: v,
         sound: t.item.sound,
         suppressPlaySound: p,
@@ -81,7 +81,7 @@ function f(e) {
         isSoundmoji: true === b
       }));
     case a.uq.ADD_SOUND:
-      return (0, r.createElement)(o.A, d(c({}, _(u)), {
+      return (0, r.createElement)(s.A, d(c({}, _(u)), {
         key: v,
         guild: t.item.guild,
         focused: A,

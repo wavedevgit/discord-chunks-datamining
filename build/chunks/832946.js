@@ -4,7 +4,7 @@
 require.d(exports, {
   Ay: () => c,
   m1: () => l,
-  n_: () => o
+  n_: () => s
 }), require("./896048.js");
 var Chunk315069 = require("./315069.js"),
   Chunk788868 = require("./788868.js");
@@ -17,7 +17,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends Chunk315069.A {
+class o extends Chunk315069.A {
   static createFromServer(e) {
     let t = {};
     return null != e.prices && (t = Object.keys(e.prices).reduce((t, n) => {
@@ -26,14 +26,14 @@ class s extends Chunk315069.A {
       return t[n] = {
         countryPrices: {
           countryCode: r.country_prices.country_code,
-          prices: r.country_prices.prices.map(t => o(t, e.tax_inclusive))
+          prices: r.country_prices.prices.map(t => s(t, e.tax_inclusive))
         },
         paymentSourcePrices: Object.entries(r.payment_source_prices).reduce((t, n) => {
           let [r, i] = n;
-          return t[r] = i.map(t => o(t, e.tax_inclusive)), t
+          return t[r] = i.map(t => s(t, e.tax_inclusive)), t
         }, {})
       }, t
-    }, {})), new s({
+    }, {})), new o({
       id: e.id,
       name: e.name,
       interval: e.interval,
@@ -87,7 +87,7 @@ class s extends Chunk315069.A {
   }
 }
 
-function o(e, t) {
+function s(e, t) {
   return {
     amount: e.amount,
     currency: e.currency,
@@ -99,4 +99,4 @@ function o(e, t) {
 function l(e) {
   return [i.gD.NONE_MONTH, i.gD.NONE_3_MONTH, i.gD.NONE_6_MONTH, i.gD.NONE_YEAR].includes(e)
 }
-let c = s
+let c = o

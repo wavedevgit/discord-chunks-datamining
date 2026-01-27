@@ -1,4 +1,4 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 280645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -22,8 +22,8 @@ function x(e) {
   var t, n;
   let {
     userId: x,
-    guildId: j
-  } = e, h = function(e, t) {
+    guildId: g
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, l, i, r = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -40,10 +40,10 @@ function x(e) {
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
     return r
   }(e, ["userId", "guildId"]), {
-    trackUserProfileAction: g
-  } = (0, c.NJ)(), v = (0, i.bG)([o.A], () => o.A.getGuild(j)), b = (0, i.bG)([r.Ay], () => r.Ay.getMember(j, x)), I = null == b ? true : b.roles, y = (0, i.yK)([s.A], () => s.A.getManyRoles(j, null != I ? I : []).sort(d.m), [I, j]), [_] = (0, i.yK)([a.A], () => [a.A.can(f.xBc.MANAGE_ROLES, v), a.A.getGuildVersion(j)]);
-  if (null == v) return null;
-  let O = _ && null != b;
+    trackUserProfileAction: h
+  } = (0, d.NJ)(), b = (0, i.bG)([o.A], () => o.A.getGuild(g)), v = (0, i.bG)([r.Ay], () => r.Ay.getMember(g, x)), I = null == v ? true : v.roles, y = (0, i.yK)([s.A], () => s.A.getManyRoles(g, null != I ? I : []).sort(c.m), [I, g]), [_] = (0, i.yK)([a.A], () => [a.A.can(m.xBc.MANAGE_ROLES, b), a.A.getGuildVersion(g)]);
+  if (null == b) return null;
+  let O = _ && null != v;
   return 0 !== y.length || O ? (0, l.jsx)(p.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -63,19 +63,19 @@ function x(e) {
     return e
   }({
     heading: A.intl.string(A.t["LPJmL/"]),
-    scrollTargetId: m.bk.ROLES
-  }, h), n = n = {
+    scrollTargetId: f.bk.ROLES
+  }, j), n = n = {
     children: (0, l.jsx)(u.Y, {
       userId: x,
-      guild: v,
+      guild: b,
       roles: y,
       onAddRole: () => {
-        g({
+        h({
           action: "ADD_ROLE"
         })
       },
       onRemoveRole: () => {
-        g({
+        h({
           action: "REMOVE_ROLE"
         })
       },

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 66004, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 66004, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,65 +14,64 @@ var Chunk627968 = require("./627968.js"),
   Chunk407781 = require("./407781.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk6694 = require("./6694.js");
-let _ = 50;
 
-function h(e) {
+function m(e) {
   let {
     channelId: t,
     guildId: n,
-    userId: h,
-    containerDimensions: m
-  } = e, g = (0, s.bG)([l.A], () => l.A.useReducedMotion), [E, y] = i.useState([]), b = E.length < _;
+    userId: m,
+    containerDimensions: g
+  } = e, y = (0, a.bG)([o.A], () => o.A.useReducedMotion), [_, b] = i.useState([]), A = _.length < 50;
   i.useEffect(() => {
     function e(e) {
       let {
         channelId: r,
         userId: i,
-        emoji: s,
-        animationType: o,
-        animationId: l
+        emoji: a,
+        animationType: s,
+        animationId: o
       } = e;
-      if (null != h && h !== i) return;
-      let d = null != s && null != o && null != l;
-      if (r === t && !g && b && d) {
-        let e = (0, u.Br)(s),
-          r = null != s.id && !s.animated,
+      if (null != m && m !== i) return;
+      let d = null != a && null != s && null != o;
+      if (r === t && !y && A && d) {
+        let e = (0, u.Br)(a),
+          r = null != a.id && !a.animated,
           d = {
-            id: (0, a.A)(),
-            animationType: o,
-            animationId: l,
+            id: (0, l.A)(),
+            animationType: s,
+            animationId: o,
             shouldResize: r,
             url: e,
             userId: i
           };
-        y(e => [...e, d]), c.Ay.trackWithMetadata(f.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
+        b(e => [...e, d]), c.Ay.trackWithMetadata(p.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
           channel_id: t,
           guild_id: n
         })
       }
     }
-    return o.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
-      o.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
+    return s.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
+      s.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
-  }, [t, n, h, g, b]);
-  let O = i.useCallback(e => {
-    y(t => {
+  }, [t, n, m, y, A]);
+  let h = i.useCallback(e => {
+    b(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n
     })
   }, []);
-  return g ? null : (0, r.jsx)("div", {
-    className: p.Y,
+  return y ? null : (0, r.jsx)("div", {
+    className: f.Y,
     style: {
-      width: m.width
+      width: g.width
     },
     children: (0, r.jsx)("div", {
-      className: p.z,
-      children: E.map(e => (0, r.jsx)(d.A, {
-        containerDimensions: m,
+      className: f.z,
+      children: _.map(e => (0, r.jsx)(d.A, {
+        containerDimensions: g,
         effect: e,
-        onComplete: O
+        onComplete: h
       }, e.id))
     })
   })

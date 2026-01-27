@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 168917, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 168917, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -17,33 +16,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk131025 = require("./131025.js");
 
-function h(e) {
+function g(e) {
   let {
     errors: t,
     pendingNick: n,
-    currentNick: h,
-    username: m,
-    user: g,
-    guild: E
-  } = e, y = null != n ? n : h, b = (0, i.bG)([c.A], () => c.A.can(d.xBc.CHANGE_NICKNAME, E) || c.A.can(d.xBc.MANAGE_NICKNAMES, E)), O = (0, s.L)(f.PremiumTypes.TIER_2);
-
-  function v(e) {
-    (0, u.o_)(e, h)
-  }
-  return (0, r.jsxs)(o.A, {
+    currentNick: g,
+    username: A,
+    user: f,
+    guild: h
+  } = e, b = null != n ? n : g, E = (0, i.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, h) || c.A.can(u.xBc.MANAGE_NICKNAMES, h)), x = (0, s.L)(_.PremiumTypes.TIER_2);
+  return (0, r.jsxs)(a.A, {
     title: p.intl.string(p.t.me1lRk),
     errors: t,
-    children: [(0, r.jsx)(a.ksK, {
-      value: null != y ? y : "",
-      placeholder: m,
-      maxLength: d.d0r,
-      onChange: v,
-      disabled: !b,
-      helperText: b ? true : p.intl.string(p.t.gzjxQi)
-    }), O && (0, r.jsx)(l.A, {
-      user: g,
-      guildId: E.id,
-      className: _.F
+    children: [(0, r.jsx)(l.ksK, {
+      value: null != b ? b : "",
+      placeholder: A,
+      maxLength: u.d0r,
+      onChange: function(e) {
+        (0, d.o_)(e, g)
+      },
+      disabled: !E,
+      helperText: E ? true : p.intl.string(p.t.gzjxQi)
+    }), x && (0, r.jsx)(o.A, {
+      user: f,
+      guildId: h.id,
+      className: m.F
     })]
   })
 }

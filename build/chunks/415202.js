@@ -9,7 +9,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk961250 = require("./961250.js"),
   Chunk895944 = require("./895944.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ class l extends Chunk439372.A {
     null != this.intervalId && (clearInterval(this.intervalId), this.intervalId = true)
   }
   constructor(...e) {
-    super(...e), o(this, "intervalId", true), o(this, "actions", {
+    super(...e), s(this, "intervalId", true), s(this, "actions", {
       POST_CONNECTION_OPEN: () => {
         (0, a.A)(), null != this.intervalId && clearInterval(this.intervalId), this.intervalId = setInterval(() => {
           (0, a.A)()
@@ -30,8 +30,8 @@ class l extends Chunk439372.A {
       },
       BILLING_SUBSCRIPTION_UPDATE_SUCCESS: () => this._handleUserStateUpdate(),
       CURRENT_USER_UPDATE: () => this._handleUserStateUpdate()
-    }), o(this, "_handleUserStateUpdate", () => {
-      s.A.isInProperTreatments() && s.A.hasNecessaryPremiumSubscriptionStatus() && (0, a.t)()
+    }), s(this, "_handleUserStateUpdate", () => {
+      o.A.isInProperTreatments() && o.A.hasNecessaryPremiumSubscriptionStatus() && (0, a.t)()
     })
   }
 }

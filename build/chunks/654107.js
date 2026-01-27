@@ -69,7 +69,7 @@ async function E(e) {
 }
 async function y(e) {
   if (!m.getState().fetching[e]) {
-    (0, o.r)(() => m.setState(t => ({
+    (0, s.r)(() => m.setState(t => ({
       fetching: h(p({}, t.fetching), {
         [e]: true
       })
@@ -77,7 +77,7 @@ async function y(e) {
     try {
       let t = await (0, d.S4)(e),
         n = (0, u.Q7)(t[0]);
-      (0, o.r)(() => {
+      (0, s.r)(() => {
         m.setState(r => ({
           fetching: h(p({}, r.fetching), {
             [e]: false
@@ -88,7 +88,7 @@ async function y(e) {
         }))
       })
     } catch (t) {
-      (0, o.r)(() => m.setState(t => ({
+      (0, s.r)(() => m.setState(t => ({
         fetching: h(p({}, t.fetching), {
           [e]: false
         })
@@ -110,14 +110,14 @@ function O(e, t) {
 function v(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     i = m(t => null == e ? true : t.palette[e]),
-    s = (0, l.bG)([c.A], () => n && c.A.desaturateUserColors ? c.A.saturation : 1);
+    o = (0, l.bG)([c.A], () => n && c.A.desaturateUserColors ? c.A.saturation : 1);
   r.useEffect(() => {
     null != e && null == i && y(e)
   }, [e, i]);
-  let o = r.useMemo(() => null == i ? true : i.map(e => {
+  let s = r.useMemo(() => null == i ? true : i.map(e => {
     let [t, n, r] = e, {
       h: i,
-      s: o,
+      s,
       l
     } = a()({
       r: t,
@@ -126,9 +126,9 @@ function v(e, t) {
     }).toHsl();
     return a()({
       h: i,
-      s: o * s,
+      s: s * o,
       l
     }).toHexString()
-  }), [i, s]);
-  return null != o ? o : [t, t]
+  }), [i, o]);
+  return null != s ? s : [t, t]
 }

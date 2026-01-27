@@ -139,15 +139,15 @@ function O(e) {
   if (r) returntrue;
   let i = null != (t = d.A.getFeedbackConfig(e)) ? t : b[e],
     a = [A, v, S],
-    s = null != (n = i.eligibilityChecks) ? n : [];
-  return a.every(e => e(i)) && s.every(e => e(i))
+    o = null != (n = i.eligibilityChecks) ? n : [];
+  return a.every(e => e(i)) && o.every(e => e(i))
 }
 
 function v(e) {
   var t;
   let n = null == (t = c.Yt.getSetting()[e.feedbackType]) ? true : t.optOutExpiryTime,
     r = null != n && !Number.isNaN(n) && Date.now() < n,
-    i = !o.A.hasHotspot(e.hotspot);
+    i = !s.A.hasHotspot(e.hotspot);
   return i && !r && c.Yt.updateSetting(t => g(h({}, t), {
     [e.feedbackType]: g(h({}, t[e.feedbackType]), {
       optOutExpiryTime: p.fs
@@ -160,13 +160,13 @@ function A(e) {
 }
 
 function I(e, t) {
-  var n, a, s;
-  let o, l = null == (a = c.Yt.getSetting()[t.feedbackType]) ? true : a.lastImpressionTime;
-  return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (o = null != (s = i.w.get(t.storageKey)) ? s : true) || Number.isNaN(o) || c.Yt.updateSetting(e => g(h({}, e), {
+  var n, a, o;
+  let s, l = null == (a = c.Yt.getSetting()[t.feedbackType]) ? true : a.lastImpressionTime;
+  return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (s = null != (o = i.w.get(t.storageKey)) ? o : true) || Number.isNaN(s) || c.Yt.updateSetting(e => g(h({}, e), {
     [t.feedbackType]: g(h({}, e[t.feedbackType]), {
-      lastImpressionTime: o
+      lastImpressionTime: s
     })
-  }))), (null != (n = (0, r.max)([l, o])) ? n : 0) + e.cooldown < Date.now()
+  }))), (null != (n = (0, r.max)([l, s])) ? n : 0) + e.cooldown < Date.now()
 }
 
 function S(e) {

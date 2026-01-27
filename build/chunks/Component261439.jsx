@@ -2,12 +2,12 @@
 /** chunk id: 261439, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  a: () => s
+  a: () => o
 });
 var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
   Chunk67098 = require("./67098.js");
-let s = {
+let o = {
   title: "HelpMessage",
   stories: [{
     name: "HelpMessage",

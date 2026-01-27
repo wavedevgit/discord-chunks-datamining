@@ -5,8 +5,8 @@ var Chunk795456 = require("./795456.js"),
 module.exports = function(e) {
   for (var t = i(e), n = t.length; n--;) {
     var a = t[n],
-      s = e[a];
-    t[n] = [a, s, r(s)]
+      o = e[a];
+    t[n] = [a, o, r(o)]
   }
   return t
 }

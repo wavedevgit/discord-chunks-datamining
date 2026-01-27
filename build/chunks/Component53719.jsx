@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 53719, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 53719, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk290223 = require("./290223.js");
@@ -18,17 +17,17 @@ function c(e) {
     tooltip: n,
     onClick: i,
     className: c
-  } = e, u = e => {
-    e.preventDefault(), e.stopPropagation(), i(e)
-  };
+  } = e;
   return (0, r.jsx)(s.m, {
     text: n,
-    children: (0, r.jsx)(o.DUT, {
+    children: (0, r.jsx)(a.DUT, {
       "aria-label": n,
-      onClick: u,
-      className: a()(l.hP, c),
+      onClick: e => {
+        e.preventDefault(), e.stopPropagation(), i(e)
+      },
+      className: l()(o.hP, c),
       children: (0, r.jsx)(t, {
-        className: l.Kk,
+        className: o.Kk,
         color: "currentColor"
       })
     })

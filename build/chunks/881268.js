@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 881268, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 881268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => s
+  X: () => a
 });
 var Chunk562465 = require("./562465.js"),
   Chunk198982 = require("./198982.js"),
   Chunk652215 = require("./652215.js");
-let s = async (e, t) => {
+let a = async (e, t) => {
   try {
     return (await r.Bo.get({
-      url: a.Rsh.PRICE_TIERS,
+      url: l.Rsh.PRICE_TIERS,
       query: {
         price_tier_type: t,
         guild_id: e

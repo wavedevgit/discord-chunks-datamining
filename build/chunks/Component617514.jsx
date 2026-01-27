@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 617514, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 617514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -18,26 +17,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk518477 = require("./518477.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk133788 = require("./133788.js");
-let g = () => {
-  let [e, t] = (0, l.kn)([a.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = e === a.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, g = (0, i.bG)([u.default], () => u.default.getId());
-  return (0, r.jsx)(d.A, {
-    title: h.intl.string(h.t.Jzj9q4),
-    description: h.intl.string(h.t.lfF1Sp),
+let f = () => {
+  let [e, t] = (0, o.kn)([l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = e === l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, f = (0, i.bG)([d.default], () => d.default.getId());
+  return (0, r.jsx)(u.A, {
+    title: g.intl.string(g.t.Jzj9q4),
+    description: g.intl.string(g.t.lfF1Sp),
     titleIcon: n ? (0, r.jsx)(s.LpS, {
-      className: m.A,
-      text: h.intl.string(h.t.y2b7CA)
+      className: A.A,
+      text: g.intl.string(g.t.y2b7CA)
     }) : null,
-    borderType: f.i.LIMITED,
+    borderType: _.i.LIMITED,
     showBorder: n,
     hasBackground: n,
     children: (0, r.jsx)(s.Button, {
-      text: h.intl.string(h.t.Geikwq),
+      text: g.intl.string(g.t.Geikwq),
       onClick: () => {
         n && t(p.i.TAKE_ACTION), (0, c.openUserProfileModal)({
-          userId: g,
-          sourceAnalyticsLocations: [o.A.USER_SETTINGS_USER_PROFILE],
+          userId: f,
+          sourceAnalyticsLocations: [a.A.USER_SETTINGS_USER_PROFILE],
           hideRestrictedProfile: true,
-          tabSection: _.RP.WIDGETS
+          tabSection: m.RP.WIDGETS
         })
       },
       size: "sm"

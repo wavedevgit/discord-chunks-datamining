@@ -8,7 +8,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk77729 = require("./77729.js"),
   Chunk351906 = require("./351906.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,18 +16,18 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = false;
+let s = false;
 
 function l() {
   var e;
   let t = null === i.A || true === i.A || null == (e = i.A.window) ? true : e.setContentProtection;
   if (null == t) return;
   let n = a.A.enableContentProtection;
-  n !== o && (t(n), o = n)
+  n !== s && (t(n), s = n)
 }
 class c extends Chunk439372.A {
   constructor() {
-    l(), super(), s(this, "stores", new Map().set(a.A, l))
+    l(), super(), o(this, "stores", new Map().set(a.A, l))
   }
 }
 let u = new c

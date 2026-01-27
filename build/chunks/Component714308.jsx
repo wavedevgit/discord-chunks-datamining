@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 714308, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 714308, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk327479 = require("./327479.jsx"),
   Chunk985018 = require("./985018.jsx"),
@@ -15,7 +14,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk595654 = require("./595654.js"),
   Chunk193921 = require("./193921.js");
 
-function f(e) {
+function _(e) {
   let {
     onClickManageSubscription: t,
     count: n
@@ -23,19 +22,19 @@ function f(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-md/bold",
-      children: l.intl.string(l.t["48ywCu"])
+      children: o.intl.string(o.t["48ywCu"])
     }), (0, r.jsx)(s.hKd, {
       size: 4
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       className: c.yV,
-      children: l.intl.string(l.t.VWxmSo)
+      children: o.intl.string(o.t.VWxmSo)
     }), (0, r.jsx)(s.hKd, {
       size: 24
     }), (0, r.jsxs)("div", {
-      className: a()(u.Qn, c.Nr),
+      className: l()(d.Qn, c.Nr),
       children: [(0, r.jsx)("img", {
-        src: d,
+        src: u,
         alt: "",
         className: c._e
       }), (0, r.jsxs)("div", {
@@ -43,17 +42,17 @@ function f(e) {
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xl/semibold",
           className: c.wx,
-          children: l.intl.string(l.t["48ywCu"])
+          children: o.intl.string(o.t["48ywCu"])
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           className: c.h_,
-          children: l.intl.format(l.t["/esXLj"], {
+          children: o.intl.format(o.t["/esXLj"], {
             numSubscriptions: n
           })
         })]
-      }), (0, r.jsx)(o.A, {
+      }), (0, r.jsx)(a.A, {
         onClick: t,
-        text: l.intl.string(l.t["z5YcJ+"])
+        text: o.intl.string(o.t["z5YcJ+"])
       })]
     })]
   })

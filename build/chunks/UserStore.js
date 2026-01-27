@@ -77,12 +77,12 @@ function C(e) {
   null != i && (e.ageVerificationStatus = i, delete e.age_verification_status);
   let a = e.public_flags;
   null != a && (e.publicFlags = a, delete e.public_flags);
-  let s = e.purchased_flags;
-  true !== s && (e.purchasedFlags = s, delete e.purchased_flags);
+  let o = e.purchased_flags;
+  true !== o && (e.purchasedFlags = o, delete e.purchased_flags);
   let d = e.premium_usage_flags;
   true !== d && (e.premiumUsageFlags = d, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
   let _ = e.avatar_decoration_data;
-  true !== _ && (e.avatarDecorationData = (0, o.Xq)(_), delete e.avatar_decoration_data);
+  true !== _ && (e.avatarDecorationData = (0, s.Xq)(_), delete e.avatar_decoration_data);
   let h = e.collectibles;
   true !== h && (delete e.collectibles, e.collectibles = (0, l.t)(h));
   let m = e.global_name;
@@ -109,8 +109,8 @@ function w(e) {
     let n = C(e);
     true !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, p._D)(n) && (n = R(n)), n = T(r, n), r = r.merge(n)
   }(0, p.gX)((0, p.I9)(r), t, r.premiumType);
-  let s = O[e.id] !== r;
-  return O[e.id] = r, s && v++, s
+  let o = O[e.id] !== r;
+  return O[e.id] = r, o && v++, o
 }
 
 function R(e) {
@@ -135,8 +135,8 @@ function D(e, t) {
   }
 }
 
-function x(e, t) {
-  var n, r, i, a, s;
+function L(e, t) {
+  var n, r, i, a, o;
   null != e.author && "SENDING" !== e.state && N(e.author) && w(e.author, t), null == (n = e.mentions) || n.forEach(e => {
     N(e) && w(e, t)
   }), (null == (r = e.interaction) ? true : r.user) != null && N(null == (i = e.interaction) ? true : i.user) && w(e.interaction.user, t), null == (a = e.attachments) || a.forEach(e => {
@@ -144,15 +144,15 @@ function x(e, t) {
     null == (n = e.clip_participants) || n.forEach(e => {
       N(e) && w(e, t)
     })
-  }), D(e.resolved, t), (null == (s = e.interaction_metadata) ? true : s.user) != null && N(e.interaction_metadata.user) && w(e.interaction_metadata.user, t), null != e.message_snapshots && e.message_snapshots.forEach(e => {
-    var n, r, i, a, s, o, l;
-    (null == (i = e.moderator_report) || null == (r = i.reported_member) ? true : r.user) != null && w(e.moderator_report.reported_member.user, t), (null == (s = e.moderator_report) || null == (a = s.reporting_member) ? true : a.user) != null && w(e.moderator_report.reporting_member.user, t), Object.values(null != (n = null == (l = e.message) || null == (o = l.resolved) ? true : o.users) ? n : {}).forEach(e => {
+  }), D(e.resolved, t), (null == (o = e.interaction_metadata) ? true : o.user) != null && N(e.interaction_metadata.user) && w(e.interaction_metadata.user, t), null != e.message_snapshots && e.message_snapshots.forEach(e => {
+    var n, r, i, a, o, s, l;
+    (null == (i = e.moderator_report) || null == (r = i.reported_member) ? true : r.user) != null && w(e.moderator_report.reported_member.user, t), (null == (o = e.moderator_report) || null == (a = o.reporting_member) ? true : a.user) != null && w(e.moderator_report.reporting_member.user, t), Object.values(null != (n = null == (l = e.message) || null == (s = l.resolved) ? true : s.users) ? n : {}).forEach(e => {
       N(e) && w(e, t)
     })
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     user: t,
     users: n,
@@ -173,7 +173,7 @@ function L(e) {
   }))
 }
 
-function j(e) {
+function M(e) {
   let {
     guilds: t,
     lazyPrivateChannels: n
@@ -190,13 +190,13 @@ function j(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   return !("incomplete" in e)
 }
 
 function k(e) {
   if (null != e.users)
-    for (let t of e.users) t.id in O && M(t) || (O[t.id] = new _.A(t))
+    for (let t of e.users) t.id in O && j(t) || (O[t.id] = new _.A(t))
 }
 
 function U(e) {
@@ -215,14 +215,14 @@ function G(e) {
   w(t.user)
 }
 
-function V(e) {
+function F(e) {
   let {
     user: t
   } = e;
   w(t)
 }
 
-function F(e) {
+function V(e) {
   let {
     user: t
   } = e;
@@ -236,7 +236,7 @@ function B(e) {
   let {
     messages: t
   } = e;
-  return t.forEach(e => x(e, true)), false
+  return t.forEach(e => L(e, true)), false
 }
 
 function H(e) {
@@ -247,7 +247,7 @@ function H(e) {
     let {
       message: t
     } = e;
-    return x(t, true)
+    return L(t, true)
   }), false
 }
 
@@ -255,7 +255,7 @@ function Y(e) {
   let {
     mostRecentMessages: t
   } = e;
-  return null == t || t.forEach(e => x(e, false)), false
+  return null == t || t.forEach(e => L(e, false)), false
 }
 
 function W(e) {
@@ -269,7 +269,7 @@ function W(e) {
     } = e;
     t.forEach(e => {
       e.forEach(e => {
-        x(e, true)
+        L(e, true)
       })
     }), n.forEach(e => {
       if (e.type === E.rbe.DM || e.type === E.rbe.GROUP_DM) {
@@ -285,7 +285,7 @@ function K(e) {
     firstMessages: t,
     owners: n
   } = e;
-  null != t && t.forEach(e => x(e, true)), null != n && n.forEach(e => w(e.user, true))
+  null != t && t.forEach(e => L(e, true)), null != n && n.forEach(e => w(e.user, true))
 }
 
 function z(e) {
@@ -298,7 +298,7 @@ function z(e) {
       most_recent_message: n,
       owner: r
     } = e;
-    null != t && x(t, true), null != n && x(n, true), null != r && null != r.user && w(r.user, true)
+    null != t && L(t, true), null != n && L(n, true), null != r && null != r.user && w(r.user, true)
   })
 }
 
@@ -310,7 +310,7 @@ function q(e) {
     let {
       message_preview: t
     } = e;
-    null != t && x(t, true)
+    null != t && L(t, true)
   })
 }
 
@@ -331,7 +331,7 @@ function Z(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   let {
     items: t
   } = e;
@@ -340,7 +340,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   let {
     item: t
   } = e;
@@ -351,7 +351,7 @@ function J(e) {
   let {
     message: t
   } = e;
-  if (x(t, true), null != t.flags && i.Lt(t.flags, E.pr7.URGENT)) {
+  if (L(t, true), null != t.flags && i.Lt(t.flags, E.pr7.URGENT)) {
     let e = O[m.default.getId()];
     return null != e && (O[m.default.getId()] = e.set("flags", i.lA(e.flags, E.nhx.HAS_UNREAD_URGENT_MESSAGES, true)), true)
   }
@@ -415,11 +415,11 @@ function ea(e) {
   return w(e.user)
 }
 
-function es(e) {
+function eo(e) {
   return !!e.isMember && w(e.user)
 }
 
-function eo(e) {
+function es(e) {
   let t = w(e.user);
   return I(e.user.id, e.guildId, e.avatar) || t
 }
@@ -490,17 +490,17 @@ function e_(e) {
         username: r,
         avatar: i,
         discriminator: a,
-        bot: s
+        bot: o
       },
-      avatar: o
+      avatar: s
     } = e;
     n !== m.default.getId() && w({
       id: n,
       username: r,
       avatar: i,
       discriminator: a,
-      bot: s
-    }), I(n, t.id, o)
+      bot: o
+    }), I(n, t.id, s)
   })
 }
 
@@ -624,7 +624,7 @@ function eR(e) {
     messageItems: t
   } = e;
   t.forEach(e => {
-    null != e.message && x(e.message, true)
+    null != e.message && L(e.message, true)
   }, false)
 }
 
@@ -632,7 +632,7 @@ function eP(e) {
   let {
     participants: t
   } = e;
-  return t.reduce((e, t) => (0, s.A)(t) && w(t.member.user) || e, false)
+  return t.reduce((e, t) => (0, o.A)(t) && w(t.member.user) || e, false)
 }
 
 function eD(e) {
@@ -640,45 +640,45 @@ function eD(e) {
   return null != t && (O[m.default.getId()] = t.set("ageVerificationStatus", a.Tk.CLIENT_ONLY_PENDING), true)
 }
 
-function ex(e) {
+function eL(e) {
   let {
     status: t
   } = e, n = O[m.default.getId()];
   return null != n && n.ageVerificationStatus === a.Tk.CLIENT_ONLY_PENDING && (O[m.default.getId()] = n.set("ageVerificationStatus", t), true)
 }
 
-function eL(e) {
+function ex(e) {
   let {
     resolved: t
   } = e;
   return D(t, true)
 }
 
-function ej(e) {
+function eM(e) {
   let {
     stickers: t
   } = e;
   return t.reduce((e, t) => null != t.user && w(t.user) || e, false)
 }
-class eM extends Chunk536802.A {
+class ej extends Chunk536802.A {
   initialize() {
     this.waitFor(m.default, d.A)
   }
   takeSnapshot() {
     let e = this.getCurrentUser();
     return {
-      version: eM.LATEST_SNAPSHOT_VERSION,
+      version: ej.LATEST_SNAPSHOT_VERSION,
       data: {
         users: [e].filter(h.Vq)
       }
     }
   }
   handleLoadCache(e) {
-    let t = this.readSnapshot(eM.LATEST_SNAPSHOT_VERSION);
+    let t = this.readSnapshot(ej.LATEST_SNAPSHOT_VERSION);
     if (null != t)
       for (let e of t.users) O[e.id] = new _.A(e);
     if (null != e.users)
-      for (let t of e.users) t.id in O && M(t) || (O[t.id] = new _.A(t));
+      for (let t of e.users) t.id in O && j(t) || (O[t.id] = new _.A(t));
     for (let t of [e.privateChannels, e.initialGuildChannels])
       for (let e of t) {
         var n;
@@ -718,14 +718,14 @@ class eM extends Chunk536802.A {
   }
   constructor() {
     super({
-      CONNECTION_OPEN: L,
-      CONNECTION_OPEN_SUPPLEMENTAL: j,
-      UPDATE_CLIENT_PREMIUM_TYPE: F,
+      CONNECTION_OPEN: x,
+      CONNECTION_OPEN_SUPPLEMENTAL: M,
+      UPDATE_CLIENT_PREMIUM_TYPE: V,
       OVERLAY_INITIALIZE: k,
       CACHE_LOADED: e => this.handleLoadCache(e),
       USER_UPDATE: U,
       USER_PROFILE_FETCH_SUCCESS: G,
-      CURRENT_USER_UPDATE: V,
+      CURRENT_USER_UPDATE: F,
       PRESENCE_UPDATES: en,
       SEARCH_MESSAGES_SUCCESS: W,
       MOD_VIEW_SEARCH_MESSAGES_SUCCESS: W,
@@ -741,13 +741,13 @@ class eM extends Chunk536802.A {
       GUILD_CREATE: e_,
       GUILD_BAN_ADD: ea,
       GUILD_BAN_REMOVE: ea,
-      CHANNEL_RECIPIENT_ADD: es,
-      CHANNEL_RECIPIENT_REMOVE: es,
-      GUILD_STICKERS_FETCH_SUCCESS: ej,
+      CHANNEL_RECIPIENT_ADD: eo,
+      CHANNEL_RECIPIENT_REMOVE: eo,
+      GUILD_STICKERS_FETCH_SUCCESS: eM,
       GUILD_JOIN_REQUEST_CREATE: eA,
       GUILD_JOIN_REQUEST_UPDATE: eA,
-      GUILD_MEMBER_ADD: eo,
-      GUILD_MEMBER_UPDATE: eo,
+      GUILD_MEMBER_ADD: es,
+      GUILD_MEMBER_UPDATE: es,
       GUILD_MEMBERS_CHUNK_BATCH: ec,
       GUILD_MEMBER_LIST_UPDATE: el,
       THREAD_MEMBER_LIST_UPDATE: ef,
@@ -767,8 +767,8 @@ class eM extends Chunk536802.A {
       LOAD_ARCHIVED_THREADS_SUCCESS: K,
       LOAD_FORUM_POSTS: z,
       GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: Z,
-      LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: X,
-      NOTIFICATION_CENTER_ITEM_CREATE: Q,
+      LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: Q,
+      NOTIFICATION_CENTER_ITEM_CREATE: X,
       LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: q,
       PASSIVE_UPDATE_V2: eu,
       LOCAL_MESSAGES_LOADED: ed,
@@ -781,10 +781,10 @@ class eM extends Chunk536802.A {
       LOAD_ICYMI_HYDRATED: eR,
       EMBEDDED_ACTIVITY_UPDATE_V2: eP,
       INITIATE_AGE_VERIFICATION: eD,
-      CLOSE_AGE_VERIFICATION_MODAL: ex,
-      INTERACTION_MODAL_CREATE: eL
+      CLOSE_AGE_VERIFICATION_MODAL: eL,
+      INTERACTION_MODAL_CREATE: ex
     })
   }
 }
-b(eM, "displayName", "UserStore"), b(eM, "LATEST_SNAPSHOT_VERSION", 1);
-let ek = new eM
+b(ej, "displayName", "UserStore"), b(ej, "LATEST_SNAPSHOT_VERSION", 1);
+let ek = new ej

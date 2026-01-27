@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 613760, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 613760, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,62 +19,62 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk616078 = require("./616078.js");
 
-function E(e) {
+function b(e) {
   let {
     code: t,
     message: n
-  } = e, [E, y, b] = (0, o.yK)([_.A], () => [_.A.getApplication(t), _.A.isInvalidApplication(t), _.A.getApplicationFetchState(t)], [t]), O = (0, o.bG)([d.A], () => {
+  } = e, [b, A, y] = (0, s.yK)([f.A], () => [f.A.getApplication(t), f.A.isInvalidApplication(t), f.A.getApplicationFetchState(t)], [t]), v = (0, s.bG)([d.A], () => {
     var e;
     return null != (e = d.A.getGuildId()) ? e : true
-  }), [v, A] = i.useState(false), I = i.useCallback(e => {
-    e && A(true)
-  }, []), S = (0, a.K)(I), T = i.useCallback(() => {
-    f.default.track(h.HAw.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
+  }), [x, O] = i.useState(false), E = i.useCallback(e => {
+    e && O(true)
+  }, []), j = (0, l.K)(E), C = i.useCallback(() => {
+    p.default.track(g.HAw.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
-      device_platform: s.Fr ? "mobile_web" : "desktop_web",
+      device_platform: a.Fr ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
-      guild_id: O,
+      guild_id: v,
       channel_id: n.channel_id
     })
-  }, [t, O, n.author.id, n.channel_id]);
+  }, [t, v, n.author.id, n.channel_id]);
   return (i.useEffect(() => {
-    (0, p.eP)(t)
+    (0, m.eP)(t)
   }, [t]), i.useEffect(() => {
-    v && b === _.e.FETCHED && T()
-  }, [v, b, T]), i.useEffect(() => {
-    v && y && f.default.track(h.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
-      device_platform: s.Fr ? "mobile_web" : "desktop_web",
+    x && y === f.e.FETCHED && C()
+  }, [x, y, C]), i.useEffect(() => {
+    x && A && p.default.track(g.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+      device_platform: a.Fr ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
-      guild_id: O,
+      guild_id: v,
       channel_id: n.channel_id
     })
-  }, [v, O, y, n.author.id, n.channel_id]), y) ? (0, r.jsxs)(c.A, {
-    containerRef: S,
+  }, [x, v, A, n.author.id, n.channel_id]), A) ? (0, r.jsxs)(c.A, {
+    containerRef: j,
     children: [(0, r.jsx)(c.A.Header, {
-      text: m.intl.string(m.t.j4KtLa)
+      text: h.intl.string(h.t.j4KtLa)
     }), (0, r.jsx)(c.A.Body, {
       children: (0, r.jsxs)("div", {
-        className: g.k,
+        className: _.k,
         children: [(0, r.jsx)(c.A.Icon, {
           expired: true
         }), (0, r.jsx)(c.A.Info, {
           expired: true,
-          title: m.intl.string(m.t.NaQLEx),
-          children: m.intl.string(m.t["0H5OT2"])
+          title: h.intl.string(h.t.NaQLEx),
+          children: h.intl.string(h.t["0H5OT2"])
         })]
       })
     })]
-  }) : null == E || b === _.e.FETCHING ? (0, r.jsxs)(c.A, {
-    containerRef: S,
+  }) : null == b || y === f.e.FETCHING ? (0, r.jsxs)(c.A, {
+    containerRef: j,
     children: [(0, r.jsx)(c.A.Header, {
-      text: m.intl.string(m.t.m9hXGR)
+      text: h.intl.string(h.t.m9hXGR)
     }), (0, r.jsx)(c.A.Body, {
       resolving: true
     })]
-  }) : (0, r.jsx)(l.W, {
-    app: u.Ay.createFromServer(E),
-    linkType: l.J.APP_DISCOVERY,
-    onView: T,
+  }) : (0, r.jsx)(o.W, {
+    app: u.Ay.createFromServer(b),
+    linkType: o.J.APP_DISCOVERY,
+    onView: C,
     message: n
   })
 }

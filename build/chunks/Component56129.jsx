@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Mp: () => k,
-  gE: () => M,
+  gE: () => j,
   ll: () => U,
   tM: () => G
 });
@@ -21,7 +21,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk235986 = require("./235986.jsx"),
   Chunk267102 = require("./267102.jsx"),
   Chunk574172 = require("./574172.js"),
-  Chunk927258 = require("./927258.js"),
+  Chunk704877 = require("./704877.js"),
   Chunk222692 = require("./222692.jsx"),
   Chunk447404 = require("./447404.jsx"),
   Chunk271195 = require("./271195.jsx"),
@@ -41,70 +41,70 @@ var Chunk503698 = require("./503698.js"),
   Chunk31545 = require("./31545.js"),
   Chunk319567 = require("./319567.js");
 
-function j(e) {
+function M(e) {
   let {
     onClick: t,
     isExpanded: n
   } = e;
   return (0, r.jsx)(b.A, {
-    iconClassName: a()(x.D6, {
-      [x.S7]: n
+    iconClassName: a()(L.D6, {
+      [L.S7]: n
     }),
     onClick: t,
-    iconComponent: o.abt,
+    iconComponent: s.abt,
     label: n ? D.intl.string(D.t["2TiKgS"]) : D.intl.string(D.t.oN8bqe)
   })
 }
 
-function M(e) {
+function j(e) {
   var t, n, i;
   let {
     channel: a,
-    applicationId: o,
+    applicationId: s,
     onMouseDown: b,
     onMouseMove: A,
     onMouseLeave: N,
     onJumpToChannel: D,
-    idle: j,
-    selectedParticipant: M,
+    idle: M,
+    selectedParticipant: j,
     embeddedActivity: k
-  } = e, U = (0, _.Us)() === R.BRT.POPOUT, G = (0, s.bG)([S.A], () => S.A.isVideoEnabled()), V = (0, s.bG)([S.A], () => Object.values(S.A.getVideoDevices())[0]), F = false === (null == (t = null == V ? true : V.disabled) || t), B = (0, u.A)([o])[0], H = (0, m.A)(a), {
+  } = e, U = (0, _.Us)() === R.BRT.POPOUT, G = (0, o.bG)([S.A], () => S.A.isVideoEnabled()), F = (0, o.bG)([S.A], () => Object.values(S.A.getVideoDevices())[0]), V = false === (null == (t = null == F ? true : F.disabled) || t), B = (0, u.A)([s])[0], H = (0, m.A)(a), {
     parentAnalyticsLocation: Y
   } = (0, c.Ay)(), W = e => {
     (0, f.X)(Y, f.O.CAMERA, e), l.A.setVideoEnabled(e)
   }, K = () => {
-    F ? W(true) : (0, g.A)()
+    V ? W(true) : (0, g.A)()
   }, z = () => {
     (0, f.X)(Y, f.O.POPOUT, true), null != a && (0, w.A)({
       onConfirm: async () => {
-        await (0, C.od)(o, a.id), h.openChannelCallPopout(a)
+        await (0, C.od)(s, a.id), h.openChannelCallPopout(a)
       }
     })
   };
   return (0, r.jsxs)("div", {
-    className: L._v,
+    className: x._v,
     onMouseMove: A,
     onMouseDown: b,
     onMouseLeave: N,
     children: [(0, r.jsx)("div", {
-      className: L.K1,
+      className: x.K1,
       children: (0, r.jsx)(y.X, {
-        idle: j,
+        idle: M,
         title: null != (n = null != (i = null == B ? true : B.name) ? i : null == a ? true : a.name) ? n : "",
         onJumpToChannel: D,
         preventIdleComponent: E.A
       })
     }), (0, r.jsxs)("div", {
-      className: L.q6,
+      className: x.q6,
       children: [(0, r.jsxs)(p.A, {
         grow: 0,
         shrink: 1,
         basis: "50%",
         align: p.A.Align.CENTER,
         children: [(0, r.jsx)(I.A, {
-          className: x.Oc,
+          className: L.Oc,
           enabled: G,
-          cameraUnavailable: !F,
+          cameraUnavailable: !V,
           hasPermission: H,
           onChange: W,
           onCameraUnavailable: K
@@ -112,8 +112,8 @@ function M(e) {
           children: (0, r.jsx)(d.A, {
             channelId: a.id,
             guildId: a.getGuildId(),
-            className: L.__invalid_leftTrayIcon,
-            participant: M,
+            className: x.__invalid_leftTrayIcon,
+            participant: j,
             compact: true
           })
         })]
@@ -124,14 +124,14 @@ function M(e) {
         basis: "50%",
         align: p.A.Align.CENTER,
         children: [U || (0, T.f)() ? null : (0, r.jsx)(v.A, {
-          className: x.BD,
+          className: L.BD,
           popoutOpen: false,
           onOpenPopout: z,
           onClosePopout: P.FX
         }), (0, r.jsx)(O.A, {
-          applicationId: o,
+          applicationId: s,
           location: k.location,
-          className: x.BD
+          className: L.BD
         })]
       })]
     })]
@@ -142,7 +142,7 @@ function k(e) {
   var t, n;
   let {
     channel: i,
-    applicationId: s,
+    applicationId: o,
     onMouseDown: l,
     onMouseMove: c,
     onMouseLeave: d,
@@ -150,15 +150,15 @@ function k(e) {
     idle: p,
     users: _,
     embeddedActivity: h
-  } = e, m = (0, u.A)([s])[0];
-  return (0, r.jsxs)(o.DUT, {
-    className: a()(L._v, L.ob),
+  } = e, m = (0, u.A)([o])[0];
+  return (0, r.jsxs)(s.DUT, {
+    className: a()(x._v, x.ob),
     onMouseMove: c,
     onMouseDown: l,
     onMouseLeave: d,
     onDoubleClick: f,
     children: [(0, r.jsx)("div", {
-      className: L.K1,
+      className: x.K1,
       children: (0, r.jsx)(y.X, {
         idle: p,
         title: null != (t = null != (n = null == m ? true : m.name) ? n : null == i ? true : i.name) ? t : "",
@@ -166,17 +166,17 @@ function k(e) {
         preventIdleComponent: E.A
       })
     }), (0, r.jsxs)("div", {
-      className: L.q6,
+      className: x.q6,
       children: [(0, r.jsx)(N.Ay, {
         renderIcon: false,
         users: _,
         size: 24,
         max: 3,
-        className: x.__invalid_userSummaryContainer
+        className: L.__invalid_userSummaryContainer
       }), (0, r.jsx)(O.A, {
-        applicationId: s,
+        applicationId: o,
         location: h.location,
-        iconClassName: x.Gu,
+        iconClassName: L.Gu,
         isActive: true
       })]
     })]
@@ -192,7 +192,7 @@ function U(e) {
   return i ? (0, r.jsx)(A.A, {
     channelId: t,
     isParticipantsOpen: n,
-    className: x.N9
+    className: L.N9
   }) : null
 }
 
@@ -200,7 +200,7 @@ function G(e) {
   var t, n;
   let {
     onMouseDown: i,
-    onMouseMove: s,
+    onMouseMove: o,
     onMouseLeave: l,
     showControls: c,
     applicationId: d,
@@ -212,18 +212,18 @@ function G(e) {
     embeddedActivity: g
   } = e, b = (0, u.A)([d])[0];
   return (0, r.jsx)("div", {
-    className: x.LO,
-    onMouseMove: s,
+    className: L.LO,
+    onMouseMove: o,
     onMouseDown: i,
     onMouseLeave: l,
     children: (0, r.jsxs)("div", {
-      className: a()(L.K1, x.eA, {
-        [x.eo]: c
+      className: a()(x.K1, L.eA, {
+        [L.eo]: c
       }),
-      children: [!c && (0, r.jsx)(o.jNK, {
+      children: [!c && (0, r.jsx)(s.jNK, {
         size: "xxs",
         color: "currentColor",
-        className: x.ro
+        className: L.ro
       }), c && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(y.X, {
           idle: !c,
@@ -231,14 +231,14 @@ function G(e) {
           onJumpToChannel: p,
           preventIdleComponent: E.A
         }), (0, r.jsxs)("div", {
-          className: x.QS,
-          children: [m ? null : (0, r.jsx)(j, {
+          className: L.QS,
+          children: [m ? null : (0, r.jsx)(M, {
             isExpanded: h,
             onClick: _
           }), (0, r.jsx)(O.A, {
             applicationId: d,
             location: g.location,
-            iconClassName: x.Gu
+            iconClassName: L.Gu
           })]
         })]
       })]

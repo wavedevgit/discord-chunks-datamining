@@ -2,13 +2,13 @@
 /** chunk id: 425059, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./65821.js");
 var Chunk743445 = require("./743445.js"),
   Chunk407876 = require("./407876.js"),
   Chunk358579 = require("./358579.js"),
   Chunk381941 = require("./381941.js");
-class o extends Chunk407876.A {
+class s extends Chunk407876.A {
   async uploadFiles(e) {
     super.upload(e);
     let t = new Promise((e, t) => {
@@ -32,7 +32,7 @@ class o extends Chunk407876.A {
         t = null == e ? true : e.error,
         n = a instanceof Error ? a.message : String(a),
         i = {
-          type: s.ty.ERROR_SOURCE_UNKNOWN,
+          type: o.ty.ERROR_SOURCE_UNKNOWN,
           msg: n
         };
       throw this._handleError({

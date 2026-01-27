@@ -149,7 +149,7 @@ class g extends Chunk143236.EventEmitter {
     if (null == this.props.editorRef.current) return;
     let p = (0, u.$E)(this.props, this.state),
       _ = this.props.editorRef.current.getSlateEditor();
-    null != _ && (i = null != (r = s.VW.getSelectedParentOfType(_, h)) ? s.VW.getTextFromRange(_, s.VW.range(_, r[1])) : null);
+    null != _ && (i = null != (r = o.VW.getSelectedParentOfType(_, h)) ? o.VW.getTextFromRange(_, o.VW.range(_, r[1])) : null);
     let m = (0, u.Ny)({
         channel: this.props.channel,
         guild: this.props.guild,
@@ -181,7 +181,7 @@ class g extends Chunk143236.EventEmitter {
       N = this.shouldShow(T, C, y),
       w = this.state.selectedIndex;
     !N || C ? w = null : null != w && w >= T && (w = T - 1);
-    let R = null != this.props.guild && o.M.getCurrentConfig({
+    let R = null != this.props.guild && s.M.getCurrentConfig({
       guildId: this.props.guild.id,
       location: "mention autocomplete"
     }, {
@@ -207,10 +207,10 @@ class g extends Chunk143236.EventEmitter {
     return this.props.focused && null == this.props.expressionPickerView && (e > 0 || t || n.showEmpty)
   }
   selectResult(e, t, n) {
-    var r, i, s;
+    var r, i, o;
     if (!this.state.isVisible) returnfalse;
     let {
-      type: o,
+      type: s,
       typeInfo: l,
       results: u,
       resultCount: d,
@@ -227,7 +227,7 @@ class g extends Chunk143236.EventEmitter {
       tabOrEnter: n,
       queryText: null == (r = this.state.query) ? true : r.queryText
     });
-    return null != p && (0, a.So)(o, null != (s = p.type) ? s : null, this.props.channel, p.metadata), true
+    return null != p && (0, a.So)(s, null != (o = p.type) ? o : null, this.props.channel, p.metadata), true
   }
   setState(e) {
     for (let t in e)

@@ -6,12 +6,12 @@ require.d(exports, {
   Jd: () => K,
   Oo: () => W,
   bG: () => U,
-  h9: () => F
+  h9: () => V
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk837381 = require("./837381.jsx"),
   Chunk681154 = require("./681154.js"),
   Chunk311907 = require("./311907.js"),
@@ -47,7 +47,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,13 +71,13 @@ function L(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -98,38 +98,38 @@ function k(e, t) {
 }
 let U = 72,
   G = 32,
-  V = 2e3;
+  F = 2e3;
 
-function F(e) {
+function V(e) {
   return (null == e ? true : e.type) === _.S9.CONTENT_INVENTORY ? e.entry.content_type === l.ContentInventoryEntryType.PLAYED_GAME && null != e.entry.applicationWidgetPreview ? U + G : U : 0
 }
 let B = e => {
     let {
       entry: t
-    } = e, n = M(e, ["entry"]);
+    } = e, n = j(e, ["entry"]);
     switch (t.content_type) {
       case l.ContentInventoryEntryType.PLAYED_GAME:
-        return (0, r.jsx)(y.A, j(x({}, n), {
+        return (0, r.jsx)(y.A, M(L({}, n), {
           entry: t
         }));
       case l.ContentInventoryEntryType.WATCHED_MEDIA:
-        return (0, r.jsx)(N.A, j(x({}, n), {
+        return (0, r.jsx)(N.A, M(L({}, n), {
           entry: t
         }));
       case l.ContentInventoryEntryType.TOP_GAME:
-        return (0, r.jsx)(T.Ay, j(x({}, n), {
+        return (0, r.jsx)(T.Ay, M(L({}, n), {
           entry: t
         }));
       case l.ContentInventoryEntryType.TOP_ARTIST:
-        return (0, r.jsx)(I.Ay, j(x({}, n), {
+        return (0, r.jsx)(I.Ay, M(L({}, n), {
           entry: t
         }));
       case l.ContentInventoryEntryType.LISTENED_SESSION:
-        return (0, r.jsx)(v.Ay, j(x({}, n), {
+        return (0, r.jsx)(v.Ay, M(L({}, n), {
           entry: t
         }));
       case l.ContentInventoryEntryType.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(g.A, j(x({}, n), {
+        return (0, r.jsx)(g.A, M(L({}, n), {
           entry: t
         }));
       default:
@@ -141,7 +141,7 @@ let B = e => {
     let {
       entry: n,
       targetElementRef: i
-    } = e, a = M(e, ["entry", "targetElementRef"]);
+    } = e, a = j(e, ["entry", "targetElementRef"]);
     return n.content_type !== l.ContentInventoryEntryType.PLAYED_GAME ? null : (0, r.jsx)(O.A, {
       entry: n,
       targetElementRef: i,
@@ -151,8 +151,8 @@ let B = e => {
   Y = e => {
     let {
       closePopout: t
-    } = e, n = M(e, ["closePopout"]);
-    return (0, r.jsx)(W, x({
+    } = e, n = j(e, ["closePopout"]);
+    return (0, r.jsx)(W, L({
       onReaction: (e, r) => {
         n.trackRankingItemInteraction(e, {
           destinationChannelId: r.id,
@@ -171,30 +171,30 @@ let B = e => {
   W = e => {
     let {
       entry: t
-    } = e, n = M(e, ["entry"]);
+    } = e, n = j(e, ["entry"]);
     switch (t.content_type) {
       case l.ContentInventoryEntryType.PLAYED_GAME:
-        return (0, r.jsx)(b.A, j(x({}, n), {
+        return (0, r.jsx)(b.A, M(L({}, n), {
           entry: t
         }));
       case l.ContentInventoryEntryType.WATCHED_MEDIA:
-        return (0, r.jsx)(w.A, j(x({}, n), {
+        return (0, r.jsx)(w.A, M(L({}, n), {
           entry: t
         }));
       case l.ContentInventoryEntryType.TOP_GAME:
-        return (0, r.jsx)(C.A, j(x({}, n), {
+        return (0, r.jsx)(C.A, M(L({}, n), {
           entry: t
         }));
       case l.ContentInventoryEntryType.TOP_ARTIST:
-        return (0, r.jsx)(S.A, j(x({}, n), {
+        return (0, r.jsx)(S.A, M(L({}, n), {
           entry: t
         }));
       case l.ContentInventoryEntryType.LISTENED_SESSION:
-        return (0, r.jsx)(A.A, j(x({}, n), {
+        return (0, r.jsx)(A.A, M(L({}, n), {
           entry: t
         }));
       case l.ContentInventoryEntryType.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(E.Ay, j(x({}, n), {
+        return (0, r.jsx)(E.Ay, M(L({}, n), {
           entry: t
         }));
       default:
@@ -207,7 +207,7 @@ let B = e => {
     let {
       index: a,
       ref: l
-    } = e, _ = M(e, ["index", "ref"]), g = i.useRef(null), [E, y] = i.useState("default"), [b, O] = i.useState(false), v = (0, o.rm)("".concat(a)), A = null == (t = h.default.getCurrentUser()) ? true : t.isStaff(), {
+    } = e, _ = j(e, ["index", "ref"]), g = i.useRef(null), [E, y] = i.useState("default"), [b, O] = i.useState(false), v = (0, s.rm)("".concat(a)), A = null == (t = h.default.getCurrentUser()) ? true : t.isStaff(), {
       isRich: I,
       appName: S
     } = (0, R.u)(_.entry);
@@ -221,10 +221,10 @@ let B = e => {
       }), [S, _.channel.guild_id, _.channel.id, _.entry, _.requestId, I]),
       C = i.useRef(false),
       [N, w] = i.useState(false),
-      [D, L] = i.useState(false),
+      [D, x] = i.useState(false),
       k = (0, c.bG)([f.A], () => f.A.keyboardModeEnabled);
     i.useEffect(() => {
-      N && k && L(true)
+      N && k && x(true)
     }, [N, k]), i.useLayoutEffect(() => {
       null != g.current && O(true)
     }, []);
@@ -242,23 +242,23 @@ let B = e => {
       G = i.useCallback(() => {
         y(String(Date.now()))
       }, []),
-      F = i.useCallback(function(e) {
+      V = i.useCallback(function(e) {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-        (0, m.I)(e, x({}, T, t))
+        (0, m.I)(e, L({}, T, t))
       }, [T]),
-      W = i.useMemo(() => s().throttle(e => {
+      W = i.useMemo(() => o().throttle(e => {
         (0, m.I)(P.PA.CARD_POPOUT_OPEN, e)
-      }, V, {
+      }, F, {
         leading: true,
         trailing: false
       }), []),
       z = () => {
         C.current = false, setTimeout(() => {
-          C.current || (w(false), L(k))
+          C.current || (w(false), x(k))
         }, 100)
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [b && (0, r.jsx)(H, j(x({}, _), {
+      children: [b && (0, r.jsx)(H, M(L({}, _), {
         targetElementRef: g
       })), (0, r.jsx)("div", {
         ref: l,
@@ -276,10 +276,10 @@ let B = e => {
             } = e;
             return (0, r.jsx)(K.Provider, {
               value: z,
-              children: (0, r.jsx)(Y, x({
+              children: (0, r.jsx)(Y, L({
                 closePopout: t,
                 updatePopoutPosition: G,
-                trackRankingItemInteraction: F
+                trackRankingItemInteraction: V
               }, _))
             })
           },
@@ -295,7 +295,7 @@ let B = e => {
             let {
               isShown: n
             } = t;
-            return (0, r.jsx)(u.DUT, j(x({}, e, v), {
+            return (0, r.jsx)(u.DUT, M(L({}, e, v), {
               innerRef: g,
               focusProps: {
                 offset: {
@@ -309,9 +309,10 @@ let B = e => {
                 N || w(true)
               },
               onContextMenu: U,
-              children: (0, r.jsx)(B, j(x({}, _), {
+              children: (0, r.jsx)(B, M(L({}, _), {
                 selected: n,
-                hovered: C.current
+                hovered: C.current,
+                trackRankingItemInteraction: V
               }))
             }))
           }

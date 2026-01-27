@@ -21,7 +21,7 @@ function a(e) {
   return "object" == typeof t && t.constructor === Object ? (e.splice(e.length - 1, 1), t) : {}
 }
 
-function s(...e) {
+function o(...e) {
   return "(" + (a(e).capture ? "" : "?:") + e.map(e => n(e)).join("|") + ")"
 }
 module.exports = function(e) {
@@ -30,7 +30,7 @@ module.exports = function(e) {
       match: /\b(yield|return|let|do|match|use)!/
     },
     a = ["if", "else", "endif", "line", "nowarn", "light", "r", "i", "I", "load", "time", "help", "quit"],
-    o = ["bool", "byte", "sbyte", "int8", "int16", "int32", "uint8", "uint16", "uint32", "int", "uint", "int64", "uint64", "nativeint", "unativeint", "decimal", "float", "double", "float32", "single", "char", "string", "unit", "bigint", "option", "voption", "list", "array", "seq", "byref", "exn", "inref", "nativeptr", "obj", "outref", "voidptr", "Result"],
+    s = ["bool", "byte", "sbyte", "int8", "int16", "int32", "uint8", "uint16", "uint32", "int", "uint", "int64", "uint64", "nativeint", "unativeint", "decimal", "float", "double", "float32", "single", "char", "string", "unit", "bigint", "option", "voption", "list", "array", "seq", "byref", "exn", "inref", "nativeptr", "obj", "outref", "voidptr", "Result"],
     l = {
       keyword: ["abstract", "and", "as", "assert", "base", "begin", "class", "default", "delegate", "do", "done", "downcast", "downto", "elif", "else", "end", "exception", "extern", "finally", "fixed", "for", "fun", "function", "global", "if", "in", "inherit", "inline", "interface", "internal", "lazy", "let", "match", "member", "module", "mutable", "namespace", "new", "of", "open", "or", "override", "private", "public", "rec", "return", "static", "struct", "then", "to", "try", "type", "upcast", "use", "val", "void", "when", "while", "with", "yield"],
       literal: ["true", "false", "null", "Some", "None", "Ok", "Error", "infinity", "infinityf", "nan", "nanf"],
@@ -62,12 +62,12 @@ module.exports = function(e) {
       includeEqual: e
     }) {
       let n, a = i("[", ...Array.from(n = e ? "!%&*+-/<=>@^|~?" : "!%&*+-/<>@^|~?").map(t), "]"),
-        o = s(a, /\./),
-        l = i(o, r(o)),
-        c = s(i(l, o, "*"), i(a, "+"));
+        s = o(a, /\./),
+        l = i(s, r(s)),
+        c = o(i(l, s, "*"), i(a, "+"));
       return {
         scope: "operator",
-        match: s(c, /:\?>/, /:\?/, /:>/, /:=/, /::?/, /\$/),
+        match: o(c, /:\?>/, /:\?/, /:>/, /:=/, /::?/, /\$/),
         relevance: 0
       }
     },
@@ -79,12 +79,12 @@ module.exports = function(e) {
     }),
     g = function(t, n) {
       return {
-        begin: i(t, r(i(/\s*/, s(/\w/, /'/, /\^/, /#/, /``/, /\(/, /{\|/)))),
+        begin: i(t, r(i(/\s*/, o(/\w/, /'/, /\^/, /#/, /``/, /\(/, /{\|/)))),
         beginScope: n,
-        end: r(s(/\n/, /=/)),
+        end: r(o(/\n/, /=/)),
         relevance: 0,
         keywords: e.inherit(l, {
-          type: o
+          type: s
         }),
         contains: [c, p, e.inherit(d, {
           scope: null
@@ -113,7 +113,7 @@ module.exports = function(e) {
       match: /\b[_a-z]\w*(?=\s*\{)/
     },
     v = {
-      begin: [/^\s*/, i(/#/, s(...a)), /\b/],
+      begin: [/^\s*/, i(/#/, o(...a)), /\b/],
       beginScope: {
         2: "meta"
       },
@@ -183,7 +183,7 @@ module.exports = function(e) {
     },
     P = {
       scope: "string",
-      match: i(/'/, s(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
+      match: i(/'/, o(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
     };
   return C.contains = [w, N, S, I, P, n, c, d, E, O, v, A, p, h], {
     name: "F#",

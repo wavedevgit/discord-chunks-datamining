@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk714026 = require("./714026.jsx"),
   Chunk723666 = require("./723666.jsx");
-let o = e => e,
+let s = e => e,
   l = {
     id: "playground",
     children: [{
@@ -20,28 +20,28 @@ let o = e => e,
         block: "InteractiveHScroll",
         children: [{
           block: "ShopProductCard",
-          skuId: o("1458472704079434020")
+          skuId: s("1458472704079434020")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704167379109")
+          skuId: s("1458472704167379109")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704192811088")
+          skuId: s("1458472704192811088")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704222171347")
+          skuId: s("1458472704222171347")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704272498709")
+          skuId: s("1458472704272498709")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704306053202")
+          skuId: s("1458472704306053202")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704087818312")
+          skuId: s("1458472704087818312")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704096075816")
+          skuId: s("1458472704096075816")
         }]
       }]
     }, {
@@ -81,94 +81,94 @@ let o = e => e,
         columns: 6,
         children: [{
           block: "ShopProductCard",
-          skuId: o("1458472704167379109")
+          skuId: s("1458472704167379109")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704079434020")
+          skuId: s("1458472704079434020")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704251396148")
+          skuId: s("1458472704251396148")
         }, {
           block: "ShopProductCard",
-          skuId: o("1436367668788592782")
+          skuId: s("1436367668788592782")
         }, {
           block: "ShopProductCard",
-          skuId: o("1447654090439004170")
+          skuId: s("1447654090439004170")
         }, {
           block: "ShopProductCard",
-          skuId: o("1428438925021548544")
+          skuId: s("1428438925021548544")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704435945653")
+          skuId: s("1458472704435945653")
         }, {
           block: "ShopProductCard",
-          skuId: o("1428438924564631663")
+          skuId: s("1428438924564631663")
         }, {
           block: "ShopProductCard",
-          skuId: o("1144308439720394944")
+          skuId: s("1144308439720394944")
         }, {
           block: "ShopProductCard",
-          skuId: o("1432550258478682222")
+          skuId: s("1432550258478682222")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458483484598337682")
+          skuId: s("1458483484598337682")
         }, {
           block: "ShopProductCard",
-          skuId: o("1432550258126229565")
+          skuId: s("1432550258126229565")
         }, {
           block: "ShopProductCard",
-          skuId: o("1428438924539334718")
+          skuId: s("1428438924539334718")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704721158372")
+          skuId: s("1458472704721158372")
         }, {
           block: "ShopProductCard",
-          skuId: o("1447654090539667609")
+          skuId: s("1447654090539667609")
         }, {
           block: "ShopProductCard",
-          skuId: o("1333866045236314327")
+          skuId: s("1333866045236314327")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704524156959")
+          skuId: s("1458472704524156959")
         }, {
           block: "ShopProductCard",
-          skuId: o("1447654090556571799")
+          skuId: s("1447654090556571799")
         }, {
           block: "ShopProductCard",
-          skuId: o("1428438924648382626")
+          skuId: s("1428438924648382626")
         }, {
           block: "ShopProductCard",
-          skuId: o("1417311919643299840")
+          skuId: s("1417311919643299840")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704192811088")
+          skuId: s("1458472704192811088")
         }, {
           block: "ShopProductCard",
-          skuId: o("1432550258247995533")
+          skuId: s("1432550258247995533")
         }, {
           block: "ShopProductCard",
-          skuId: o("1212569433839636530")
+          skuId: s("1212569433839636530")
         }, {
           block: "ShopProductCard",
-          skuId: o("1447654090661302343")
+          skuId: s("1447654090661302343")
         }, {
           block: "ShopProductCard",
-          skuId: o("1432550258465837086")
+          skuId: s("1432550258465837086")
         }, {
           block: "ShopProductCard",
-          skuId: o("1447654090573217912")
+          skuId: s("1447654090573217912")
         }, {
           block: "ShopProductCard",
-          skuId: o("1280621222496964630")
+          skuId: s("1280621222496964630")
         }, {
           block: "ShopProductCard",
-          skuId: o("1447654090623549471")
+          skuId: s("1447654090623549471")
         }, {
           block: "ShopProductCard",
-          skuId: o("1436367668897775757")
+          skuId: s("1436367668897775757")
         }, {
           block: "ShopProductCard",
-          skuId: o("1458472704222171347")
+          skuId: s("1458472704222171347")
         }]
       }]
     }]
@@ -179,16 +179,16 @@ let o = e => e,
       name: "Template Builder",
       id: "template-builder",
       component: () => {
-        let [e, t] = i.useState(JSON.stringify(l, null, 2)), [n, o] = i.useState(e);
+        let [e, t] = i.useState(JSON.stringify(l, null, 2)), [n, s] = i.useState(e);
         return i.useEffect(() => {
           try {
-            (0, s.d)(JSON.parse(e)) && o(e)
+            (0, o.d)(JSON.parse(e)) && s(e)
           } catch (e) {}
         }, [e]), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(a.A, {
             value: e,
             onChange: e => t(e)
-          }), (0, r.jsx)("hr", {}), (0, r.jsx)(s.A, {
+          }), (0, r.jsx)("hr", {}), (0, r.jsx)(o.A, {
             template: JSON.parse(n)
           })]
         })

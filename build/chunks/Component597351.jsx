@@ -24,10 +24,10 @@ function c(e) {
     width: 20,
     height: 20
   });
-  return (0, r.jsx)(s.m, {
+  return (0, r.jsx)(o.m, {
     text: i,
     position: "bottom",
-    children: (0, r.jsx)(o.sqX, {
+    children: (0, r.jsx)(s.sqX, {
       onClick: e => {
         t(e)
       },

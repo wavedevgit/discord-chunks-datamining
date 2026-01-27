@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   Chunk761929 = require("./761929.js"),
   Chunk483517 = require("./483517.jsx"),
@@ -66,11 +66,11 @@ function S(e) {
     resizableNode: t,
     onResize: n,
     onResizeEnd: r,
-    resizeConfig: s,
+    resizeConfig: o,
     position: l
   } = e, u = (0, c.A)({
-    minDimension: s.minWidth,
-    maxDimension: s.maxWidth + E / 2,
+    minDimension: o.minWidth,
+    maxDimension: o.maxWidth + E / 2,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
@@ -81,7 +81,7 @@ function S(e) {
   }, [u]);
   return (0, i.jsx)("div", {
     onMouseDown: d,
-    className: o()(_.Di, v[l])
+    className: s()(_.Di, v[l])
   })
 }
 class T extends(r = Chunk64700.PureComponent) {
@@ -110,11 +110,11 @@ class T extends(r = Chunk64700.PureComponent) {
       edgeOffsetLeft: r,
       edgeOffsetBottom: i,
       edgeOffsetRight: a,
-      maxX: s,
-      maxY: o,
+      maxX: o,
+      maxY: s,
       dockedRect: l,
       getDockedRectPositionY: c
-    } = this.props, u = Math.round(n), d = Math.round(o - i - this._boundHeight), p = Math.round(r), _ = Math.round(s - a - this._boundWidth);
+    } = this.props, u = Math.round(n), d = Math.round(s - i - this._boundHeight), p = Math.round(r), _ = Math.round(o - a - this._boundWidth);
     if (null != l) {
       var h, m, g;
       return {
@@ -208,7 +208,7 @@ class T extends(r = Chunk64700.PureComponent) {
       dockedRect: n,
       hidden: r,
       roundCorners: a,
-      className: s,
+      className: o,
       position: l,
       resizeConfig: c
     } = this.props, d = this.getWidth(), f = {};
@@ -222,7 +222,7 @@ class T extends(r = Chunk64700.PureComponent) {
     }), (0, i.jsxs)(u.A, {
       dragAnywhere: true,
       ref: this.handleSetDraggableRef,
-      className: o()(_.GE, s, {
+      className: s()(_.GE, o, {
         [_.R]: r,
         [_.Vq]: a
       }),
@@ -295,12 +295,12 @@ class T extends(r = Chunk64700.PureComponent) {
       var n, r;
       let i, {
           maxX: a,
-          maxY: s
+          maxY: o
         } = this.props,
-        o = this.calculateDecayingPosition(e, t, this._velocityX, this._velocityY),
+        s = this.calculateDecayingPosition(e, t, this._velocityX, this._velocityY),
         l = true,
         c = true;
-      if (o.x > a / 2 && (c = false), o.y > s / 2 && (l = false), i = l && c ? f.CUs.TOP_LEFT : l && !c ? f.CUs.TOP_RIGHT : !l && c ? f.CUs.BOTTOM_LEFT : f.CUs.BOTTOM_RIGHT, this.animateToPosition(i, this.ensureIsInPosition), i !== this.props.position) {
+      if (s.x > a / 2 && (c = false), s.y > o / 2 && (l = false), i = l && c ? f.CUs.TOP_LEFT : l && !c ? f.CUs.TOP_RIGHT : !l && c ? f.CUs.BOTTOM_LEFT : f.CUs.BOTTOM_RIGHT, this.animateToPosition(i, this.ensureIsInPosition), i !== this.props.position) {
         let {
           id: e,
           onMove: t
@@ -320,7 +320,7 @@ let C = e => {
       selectedPIPWindow: t,
       pipWindows: n,
       pipWidth: r,
-      maxX: s,
+      maxX: o,
       maxY: l,
       onWindowMove: c,
       onWindowResize: u,
@@ -348,7 +348,7 @@ let C = e => {
       })
     }) : (0, i.jsx)(d.Ay, {
       children: (0, i.jsx)("div", {
-        className: o()(_._I, {
+        className: s()(_._I, {
           [_.cB]: S
         }, A),
         children: (0, i.jsx)(T, {
@@ -360,7 +360,7 @@ let C = e => {
           onResize: u,
           onDragStart: w,
           onDragEnd: R,
-          maxX: s,
+          maxX: o,
           maxY: l,
           width: r,
           dockedRect: p,

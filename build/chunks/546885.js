@@ -8,7 +8,7 @@ var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
   Chunk451988 = require("./451988.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class s {
   acknowledge(e) {
     this._unacknowledgedRequests.delete(e), this._pendingRequests.delete(e)
   }
@@ -37,7 +37,7 @@ class o {
     this._pendingRequests.add(e)
   }
   constructor(e, t) {
-    s(this, "_guildId", true), s(this, "_pendingRequests", new Set), s(this, "_sentRequests", new Set), s(this, "_unacknowledgedRequests", new Set), s(this, "_guildMemberExists", true), this._guildId = e, this._guildMemberExists = n => t(e, n)
+    o(this, "_guildId", true), o(this, "_pendingRequests", new Set), o(this, "_sentRequests", new Set), o(this, "_unacknowledgedRequests", new Set), o(this, "_guildMemberExists", true), this._guildId = e, this._guildMemberExists = n => t(e, n)
   }
 }
 class l {
@@ -58,7 +58,7 @@ class l {
   }
   _getGuildState(e) {
     let t = this._guildStates[e];
-    return null == t && (t = this._guildStates[e] = new o(e, this._guildMemberExists)), t
+    return null == t && (t = this._guildStates[e] = new s(e, this._guildMemberExists)), t
   }
   getDebugState(e) {
     let t = [],
@@ -73,6 +73,6 @@ class l {
     }
   }
   constructor(e, t) {
-    s(this, "_onChange", true), s(this, "_guildMemberExists", true), s(this, "_guildStates", {}), s(this, "_flush", new a.J_(0, () => this.flushRequests())), this._guildMemberExists = e, this._onChange = t
+    o(this, "_onChange", true), o(this, "_guildMemberExists", true), o(this, "_guildStates", {}), o(this, "_flush", new a.J_(0, () => this.flushRequests())), this._guildMemberExists = e, this._onChange = t
   }
 }

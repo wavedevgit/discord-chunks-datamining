@@ -10,10 +10,10 @@ var Chunk354328 = require("./354328.js"),
 function a(e, t) {
   let n = null == e ? true : e.paymentGateway,
     a = (0, r.A)("shop_disable_cache"),
-    s = (0, r.A)("shop_include_unpublished");
+    o = (0, r.A)("shop_include_unpublished");
   return (0, i.i)({
     noCache: a,
-    includeUnpublished: s,
+    includeUnpublished: o,
     paymentGateway: n,
     includeBundles: true,
     logPerf: null == e ? true : e.logPerf

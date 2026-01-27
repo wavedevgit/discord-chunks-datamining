@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 636184, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 636184, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => C
+  h: () => E
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk582754 = require("./582754.js"),
@@ -24,121 +23,111 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk185914 = require("./185914.js"),
   Chunk299148 = require("./299148.js");
-
-function A(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function I(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      A(e, t, n[t])
-    })
-  }
-  return e
-}
-let S = (e, t) => {
-    (0, p.default)(), d.A.openPrivateChannel({
-      recipientIds: e
-    }), t()
-  },
-  T = e => {
+let O = e => {
     let {
       recipient: t,
       status: n,
       onClose: i
     } = e, {
-      avatarSrc: a,
-      eventHandlers: o
-    } = (0, f.A)({
+      avatarSrc: l,
+      eventHandlers: s
+    } = (0, p.A)({
       userId: null == t ? true : t.id,
       size: u._3J.SIZE_56
-    }), l = m.Ay.getName(t), c = n === g.o.FAIL;
+    }), o = h.Ay.getName(t), c = n === _.o.FAIL;
     return (0, r.jsxs)("div", {
-      className: O.w4,
-      children: [(0, r.jsx)(u.euF, I({
-        imageClassName: s()({
-          [O.jN]: c
+      className: v.w4,
+      children: [(0, r.jsx)(u.euF, function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({
+        imageClassName: a()({
+          [v.jN]: c
         }),
-        src: a,
-        "aria-label": l,
+        src: l,
+        "aria-label": o,
         size: u._3J.SIZE_32
-      }, o)), c ? (0, r.jsxs)(r.Fragment, {
+      }, s)), c ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(u.Text, {
-          className: O.E0,
+          className: v.E0,
           variant: "text-md/medium",
           color: "text-strong",
-          children: l
+          children: o
         }), (0, r.jsx)(u.Text, {
           variant: "text-md/medium",
-          className: O.nT,
+          className: v.nT,
           color: "text-strong",
-          children: b.intl.format(b.t.RO3T4B, {
-            userName: l
+          children: y.intl.format(y.t.RO3T4B, {
+            userName: o
           })
         })]
       }) : (0, r.jsx)(u.Text, {
         variant: "text-md/medium",
-        className: O.Pm,
+        className: v.Pm,
         color: "text-strong",
-        children: l
+        children: o
       }), (0, r.jsx)(u.Button, {
         variant: "secondary",
         size: "sm",
-        text: b.intl.string(b.t["g33r/P"]),
+        text: y.intl.string(y.t["g33r/P"]),
         icon: u.oyn,
-        onClick: () => S(t.id, i)
+        onClick: () => {
+          var e;
+          return e = t.id, void((0, m.default)(), d.A.openPrivateChannel({
+            recipientIds: e
+          }), i())
+        }
       })]
     })
   },
-  C = e => {
+  E = e => {
     let {
       results: t,
       onClose: n,
-      isReminderConfirmation: a
-    } = e, s = (0, l.bG)([E.A], () => E.A.getReferralsRemaining());
-    _.default.track(y.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
+      isReminderConfirmation: l
+    } = e, a = (0, o.bG)([b.A], () => b.A.getReferralsRemaining());
+    f.default.track(A.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
     let {
       reducedMotion: d
     } = i.useContext(c.CZ);
-    if (null === s) return (0, r.jsx)(u.y$y, {});
-    let f = () => d.enabled ? {
-        src: v.A,
+    return null === a ? (0, r.jsx)(u.y$y, {}) : (0, r.jsx)(s.ExpressiveModal, {
+      graphic: d.enabled ? {
+        src: x.A,
         type: "image"
       } : {
         rive: u.lBW,
         type: "rive"
       },
-      p = () => 0 === t.filter(e => e.status === g.o.SUCCESS).length ? b.intl.string(b.t["7VBEue"]) : true === a ? b.intl.string(b.t.GP5lbq) : b.intl.string(b.t.tKCltd),
-      m = () => true === a ? b.intl.format(b.t["4gJJfD"], {
-        helpdeskArticle: h.A.getArticleURL(y.MVz.REFERRAL_PROGRAM)
-      }) : b.intl.format(b.t.AwGSWl, {
-        helpdeskArticle: h.A.getArticleURL(y.MVz.REFERRAL_PROGRAM)
+      gradientColor: "nitro-pink",
+      title: 0 === t.filter(e => e.status === _.o.SUCCESS).length ? y.intl.string(y.t["7VBEue"]) : true === l ? y.intl.string(y.t.GP5lbq) : y.intl.string(y.t.tKCltd),
+      subtitle: true === l ? y.intl.format(y.t["4gJJfD"], {
+        helpdeskArticle: g.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
+      }) : y.intl.format(y.t.AwGSWl, {
+        helpdeskArticle: g.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
       }),
-      A = () => (0, r.jsx)("div", {
-        className: O.Hz,
-        children: t.map(e => (0, r.jsx)(T, {
+      onClose: n,
+      transitionState: s.ip4.ENTERED,
+      children: (0, r.jsx)("div", {
+        className: v.Hz,
+        children: t.map(e => (0, r.jsx)(O, {
           recipient: e.recipient,
           status: e.status,
           onClose: n
         }, e.recipient.id))
-      });
-    return (0, r.jsx)(o.ExpressiveModal, {
-      graphic: f(),
-      gradientColor: "nitro-pink",
-      title: p(),
-      subtitle: m(),
-      onClose: n,
-      transitionState: o.ip4.ENTERED,
-      children: A()
+      })
     })
   }

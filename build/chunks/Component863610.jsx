@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk397927 = require("./397927.js"),
   Chunk611635 = require("./611635.jsx"),
@@ -99,7 +99,7 @@ let A = Chunk64700.memo(function(e) {
       dotRadius: t,
       dotPosition: n,
       fill: a = "currentColor",
-      spacing: s = 2.5
+      spacing: o = 2.5
     } = e, {
       focused: u
     } = (0, c.xb)(), d = i.useRef(true);
@@ -119,8 +119,8 @@ let A = Chunk64700.memo(function(e) {
     return (0, r.jsx)(r.Fragment, {
       children: [0, 1, 2].map(e => {
         let i = m * e,
-          l = t + t * s * e;
-        return (0, r.jsx)(o.animated.circle, {
+          l = t + t * o * e;
+        return (0, r.jsx)(s.animated.circle, {
           cx: n ? n.to([0, 1], [b, l]) : l,
           cy: t,
           r: p.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.8 * t, .8 * t, t, t]).to(e => u ? e : t),
@@ -158,8 +158,8 @@ let A = Chunk64700.memo(function(e) {
         y: i,
         width: 2 * t * 3 + t / 2 * 2,
         height: 2 * t,
-        className: s()(p, u.r, d ? u.S : null),
-        children: (0, r.jsx)(o.animated.g, {
+        className: o()(p, u.r, d ? u.S : null),
+        children: (0, r.jsx)(s.animated.g, {
           style: {
             opacity: c.to(e => Math.min(1, Math.max(e, 0)))
           },

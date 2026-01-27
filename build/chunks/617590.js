@@ -27,10 +27,10 @@ async function d() {
 
 function f() {
   let e = [];
-  o.ML.forEach(t => {
+  s.ML.forEach(t => {
     let n = t.getEnabledFeatureName();
     null != n && e.push(n)
-  }), s.default.track(l.HAw.LIBDISCORE_LOADED, {
+  }), o.default.track(l.HAw.LIBDISCORE_LOADED, {
     success: true,
     experimental_features: e
   })
@@ -45,7 +45,7 @@ function p(e) {
 function _(e) {
   c.error("Failed to execute smoke test:", e);
   let t = p(e);
-  s.default.track(l.HAw.LIBDISCORE_LOADED, {
+  o.default.track(l.HAw.LIBDISCORE_LOADED, {
     success: false,
     error: t
   })

@@ -9,7 +9,7 @@ var Chunk284009 = require("./284009.js"),
 require("./273946.js");
 var Chunk583954 = require("./583954.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class s {
   getCanvas() {
     return this.canvas
   }
@@ -29,8 +29,8 @@ class o {
     this.font.style = null != (t = e.style) ? t : this.font.style, this.font.size = null != (n = e.size) ? n : this.font.size, this.font.weight = null != (r = e.weight) ? r : this.font.weight, this.font.family = null != (i = e.family) ? i : this.font.family, this.font.truncate = null != (a = e.truncate) ? a : this.font.truncate
   }
   setFilter(e) {
-    var t, n, r, i, a, s, o, l, c;
-    this.filter.blur = null != (t = e.blur) ? t : this.filter.blur, this.filter.brightness = null != (n = e.brightness) ? n : this.filter.brightness, this.filter.contrast = null != (r = e.contrast) ? r : this.filter.contrast, this.filter.grayscale = null != (i = e.grayscale) ? i : this.filter.grayscale, this.filter.hueRotation = null != (a = e.hueRotation) ? a : this.filter.hueRotation, this.filter.invert = null != (s = e.invert) ? s : this.filter.invert, this.filter.opacity = null != (o = e.opacity) ? o : this.filter.opacity, this.filter.saturate = null != (l = e.saturate) ? l : this.filter.saturate, this.filter.sepia = null != (c = e.sepia) ? c : this.filter.sepia
+    var t, n, r, i, a, o, s, l, c;
+    this.filter.blur = null != (t = e.blur) ? t : this.filter.blur, this.filter.brightness = null != (n = e.brightness) ? n : this.filter.brightness, this.filter.contrast = null != (r = e.contrast) ? r : this.filter.contrast, this.filter.grayscale = null != (i = e.grayscale) ? i : this.filter.grayscale, this.filter.hueRotation = null != (a = e.hueRotation) ? a : this.filter.hueRotation, this.filter.invert = null != (o = e.invert) ? o : this.filter.invert, this.filter.opacity = null != (s = e.opacity) ? s : this.filter.opacity, this.filter.saturate = null != (l = e.saturate) ? l : this.filter.saturate, this.filter.sepia = null != (c = e.sepia) ? c : this.filter.sepia
   }
   getFilterString() {
     let e = ["brightness", "contrast", "grayscale", "invert", "opacity", "saturate", "sepia"];
@@ -42,20 +42,20 @@ class o {
     return true === t ? void console.error("DiscordCanvas: AssetMap hasn't loaded ".concat(e, ".  Make sure to load it before trying to render.")) : t
   }
   drawRoundedImageWithFallbacks(e, t, n, r, i) {
-    for (let s of e) {
-      let e = this.drawRoundedImage(s, t, n, r, i);
+    for (let o of e) {
+      let e = this.drawRoundedImage(o, t, n, r, i);
       if (e !== a.uS.Failure) return e
     }
     return a.uS.Failure
   }
   constructor(e, t) {
-    s(this, "color", "black"), s(this, "font", {
+    o(this, "color", "black"), o(this, "font", {
       style: "normal",
       weight: 300,
       size: 24,
       family: ["serif"],
       truncate: a.Kq.None
-    }), s(this, "filter", {
+    }), o(this, "filter", {
       blur: 0,
       brightness: 1,
       contrast: 1,
@@ -65,7 +65,7 @@ class o {
       opacity: 1,
       saturate: 1,
       sepia: 0
-    }), s(this, "assetMap", true), s(this, "canvas", true), this.canvas = e, this.assetMap = t
+    }), o(this, "assetMap", true), o(this, "canvas", true), this.canvas = e, this.assetMap = t
   }
 }
-let l = o
+let l = s

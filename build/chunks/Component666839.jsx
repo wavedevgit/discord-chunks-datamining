@@ -16,21 +16,21 @@ let l = e => {
       selectedVariantIndex: n,
       isCardHovered: i
     } = e;
-    return (0, r.jsx)(s.R, {
+    return (0, r.jsx)(o.R, {
       product: t,
       selectedVariantIndex: n,
       isCardHovered: i,
-      className: o.i
+      className: s.i
     })
   },
   c = e => {
     let {
       skuId: t,
       isCardHovered: n
-    } = e, s = (0, a.Vm)(t), o = (0, i.Q)(s);
-    return null == s ? null : (0, r.jsx)(l, {
-      product: s,
-      selectedVariantIndex: o,
+    } = e, o = (0, a.Vm)(t), s = (0, i.Q)(o);
+    return null == o ? null : (0, r.jsx)(l, {
+      product: o,
+      selectedVariantIndex: s,
       isCardHovered: n
     })
   }

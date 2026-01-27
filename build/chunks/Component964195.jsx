@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk975460 = require("./975460.js"),
@@ -44,7 +44,7 @@ function E(e) {
 
 function y(e, t) {
   let n = (0, u.A)(e, i.useMemo(() => null != t ? [t.id] : [], [t])),
-    r = (0, o.bG)([p.A], () => p.A.getUserProfile(e));
+    r = (0, s.bG)([p.A], () => p.A.getUserProfile(e));
   i.useEffect(() => {
     let t = new AbortController;
     return (0, _.A)(e, true, {
@@ -73,7 +73,7 @@ function O(e) {
     hasWidget: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(m.kL, e.className),
+    className: o()(m.kL, e.className),
     children: [(0, r.jsx)("div", {
       className: m.Qs,
       children: (0, r.jsxs)(l.Text, {

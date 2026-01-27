@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk544420 = require("./544420.js"),
@@ -28,12 +28,12 @@ function y(e) {
     setPopoutRef: a,
     onClose: y,
     source: b
-  } = e, O = (0, p.h)(t), v = (0, o.bG)([_.A], () => _.A.getGame(t)), {
+  } = e, O = (0, p.h)(t), v = (0, s.bG)([_.A], () => _.A.getGame(t)), {
     isFetching: A,
     fetchFailed: I,
     isFetchingDetectable: S,
     detectableFetchFailed: T
-  } = (0, o.cf)([f.A, _.A], () => ({
+  } = (0, s.cf)([f.A, _.A], () => ({
     isFetching: f.A.isFetchingApplication(t),
     fetchFailed: f.A.didFetchingApplicationFail(t),
     isFetchingDetectable: _.A.isFetching(t),
@@ -58,7 +58,7 @@ function y(e) {
     })
   });
   let R = i.useMemo(() => A || S ? (0, r.jsx)("div", {
-    className: s()(E.k, E.d),
+    className: o()(E.k, E.d),
     children: (0, r.jsx)(l.y$y, {})
   }) : I || T || null == O || null == v ? (0, r.jsx)("div", {
     className: E.k,

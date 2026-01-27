@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 419205, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 419205, original params: e,t,n (module,exports,require) **/
 module.exports = {
   wx: "header_de8069",
   kX: "gameNamesHeader_de8069",

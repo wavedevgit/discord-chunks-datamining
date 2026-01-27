@@ -8,7 +8,7 @@ require.d(exports, {
 var i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -76,7 +76,7 @@ class _ extends(i = Chunk311907.Ay.PersistedStore) {
     return r.hasAcceptedEulaIds.includes(e)
   }
 }
-o(_, "displayName", "ApplicationStoreUserSettingsStore"), o(_, "persistKey", "ApplicationStoreUserSettingsStore"), o(_, "migrations", [e => null == e.hasAcceptedEulaIds ? u(l({}, e), {
+s(_, "displayName", "ApplicationStoreUserSettingsStore"), s(_, "persistKey", "ApplicationStoreUserSettingsStore"), s(_, "migrations", [e => null == e.hasAcceptedEulaIds ? u(l({}, e), {
   hasAcceptedEulaIds: []
 }) : e]);
 let h = new _(Chunk73153.h, {

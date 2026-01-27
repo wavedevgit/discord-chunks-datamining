@@ -27,11 +27,11 @@ let O = (0, Chunk64700.createContext)(null),
   v = (0, Chunk64700.createContext)(null),
   A = (0, Chunk64700.createContext)(null),
   I = (0, Chunk64700.forwardRef)(function(e, t) {
-    var n, o;
+    var n, s;
     [e, t] = (0, r.JT)(e, t, O);
     let {
       validationBehavior: d
-    } = (0, r.CC)(a.c) || {}, f = null != (o = null != (n = e.validationBehavior) ? n : d) ? o : "native", p = (0, y.Z)({
+    } = (0, r.CC)(a.c) || {}, f = null != (s = null != (n = e.validationBehavior) ? n : d) ? s : "native", p = (0, y.Z)({
       ...e,
       validationBehavior: f
     }), [_, g] = (0, r._E)(!e["aria-label"] && !e["aria-labelledby"]), {
@@ -70,7 +70,7 @@ let O = (0, Chunk64700.createContext)(null),
     }, b.createElement(r.Kq, {
       values: [
         [A, p],
-        [s.I, {
+        [o.I, {
           ...v,
           ref: _,
           elementType: "span"
@@ -92,7 +92,7 @@ let O = (0, Chunk64700.createContext)(null),
     } = e;
     [e, t] = (0, r.JT)(i, t, v);
     let a = b.useContext(A),
-      s = (0, g.U)((0, b.useMemo)(() => (0, E.P)(n, true !== e.inputRef ? e.inputRef : null), [n, e.inputRef])),
+      o = (0, g.U)((0, b.useMemo)(() => (0, E.P)(n, true !== e.inputRef ? e.inputRef : null), [n, e.inputRef])),
       {
         labelProps: l,
         inputProps: c,
@@ -102,7 +102,7 @@ let O = (0, Chunk64700.createContext)(null),
       } = (0, d.z)({
         ...(0, r.SK)(e),
         children: "function" == typeof e.children || e.children
-      }, a, s),
+      }, a, o),
       {
         isFocused: I,
         isFocusVisible: S,
@@ -150,8 +150,8 @@ let O = (0, Chunk64700.createContext)(null),
       elementType: "span"
     }, b.createElement("input", {
       ...(0, m.v)(c, T),
-      ref: s
-    })), b.createElement(o.r.Provider, {
+      ref: o
+    })), b.createElement(s.r.Provider, {
       value: {
         isSelected: u
       }

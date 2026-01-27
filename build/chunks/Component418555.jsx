@@ -18,15 +18,15 @@ function l(e) {
     hideExampleButton: l
   } = e;
   return n ? l ? null : (0, r.jsx)("div", {
-    className: o.qr,
+    className: s.qr,
     children: (0, r.jsx)(i.FD, {
       variant: "primary",
-      text: s.intl.string(s.t.hZkfwY),
+      text: o.intl.string(o.t.hZkfwY),
       onClick: () => {},
       fullWidth: true
     })
   }) : (0, r.jsx)("div", {
-    className: o.qr,
+    className: s.qr,
     inert: true,
     children: (0, r.jsx)(a.A, {
       user: t

@@ -17,18 +17,18 @@ module.exports = function(e) {
     },
     i = /\d{1,2}\/\d{1,2}\/\d{4}/,
     a = /\d{4}-\d{1,2}-\d{1,2}/,
-    s = /(\d|1[012])(:\d+){0,2} *(AM|PM)/,
-    o = /\d{1,2}(:\d{1,2}){1,2}/,
+    o = /(\d|1[012])(:\d+){0,2} *(AM|PM)/,
+    s = /\d{1,2}(:\d{1,2}){1,2}/,
     l = {
       className: "literal",
       variants: [{
         begin: t.concat(/# */, t.either(a, i), / *#/)
       }, {
-        begin: t.concat(/# */, o, / *#/)
-      }, {
         begin: t.concat(/# */, s, / *#/)
       }, {
-        begin: t.concat(/# */, t.either(a, i), / +/, t.either(s, o), / *#/)
+        begin: t.concat(/# */, o, / *#/)
+      }, {
+        begin: t.concat(/# */, t.either(a, i), / +/, t.either(o, s), / *#/)
       }]
     },
     c = {

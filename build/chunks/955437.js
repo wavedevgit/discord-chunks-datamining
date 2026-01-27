@@ -1,9 +1,8 @@
 /** Chunk was on 86142 **/
 /** chunk id: 955437, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  $2: () => d,
-  Xv: () => u,
+  $2: () => u,
+  Xv: () => d,
   n7: () => c
 });
 var Chunk562465 = require("./562465.js"),
@@ -36,7 +35,7 @@ function c(e, t) {
   })
 }
 
-function u(e) {
+function d(e) {
   i.h.dispatch({
     type: "AGE_GATE_PREVENT_UNDERAGE_REGISTRATION"
   }), l.default.track(o.HAw.AGE_GATE_ACTION, {
@@ -45,7 +44,7 @@ function u(e) {
   })
 }
 
-function d(e) {
+function u(e) {
   i.h.dispatch({
     type: "AGE_GATE_LOGOUT_UNDERAGE_NEW_USER"
   }), l.default.track(o.HAw.AGE_GATE_ACTION, {

@@ -13,22 +13,22 @@ function a(e) {
   for (var t = e.split(i.R).filter(function(e) {
       return e.length > 0
     }), n = [], r = 0, a = t; r < a.length; r++) {
-    var s = a[r].split("/");
-    if (0 === s.length) throw Error("Invalid number skeleton");
-    for (var o = s[0], l = s.slice(1), c = 0, u = l; c < u.length; c++)
+    var o = a[r].split("/");
+    if (0 === o.length) throw Error("Invalid number skeleton");
+    for (var s = o[0], l = o.slice(1), c = 0, u = l; c < u.length; c++)
       if (0 === u[c].length) throw Error("Invalid number skeleton");
     n.push({
-      stem: o,
+      stem: s,
       options: l
     })
   }
   return n
 }
 
-function s(e) {
+function o(e) {
   return e.replace(/^(.*?)-/, "")
 }
-var o = /^\.(?:(0+)(\*)?|(#+)|(0+)(#+))$/g,
+var s = /^\.(?:(0+)(\*)?|(#+)|(0+)(#+))$/g,
   l = /^(@+)?(\+|#+)?[rs]?$/g,
   c = /(\*)(0+)|(#+)(0+)|(0+)/g,
   u = /^(0+)$/;
@@ -123,7 +123,7 @@ function h(e) {
         continue;
       case "measure-unit":
       case "unit":
-        t.style = "unit", t.unit = s(a.options[0]);
+        t.style = "unit", t.unit = o(a.options[0]);
         continue;
       case "compact-short":
       case "K":
@@ -188,10 +188,10 @@ function h(e) {
         continue;
       case "integer-width":
         if (a.options.length > 1) throw RangeError("integer-width stems only accept a single optional option");
-        a.options[0].replace(c, function(e, n, r, i, a, s) {
+        a.options[0].replace(c, function(e, n, r, i, a, o) {
           if (n) t.minimumIntegerDigits = r.length;
           else if (i && a) throw Error("We currently do not support maximum integer digits");
-          else if (s) throw Error("We currently do not support exact integer digits");
+          else if (o) throw Error("We currently do not support exact integer digits");
           return ""
         });
         continue
@@ -200,10 +200,10 @@ function h(e) {
       t.minimumIntegerDigits = a.stem.length;
       continue
     }
-    if (o.test(a.stem)) {
+    if (s.test(a.stem)) {
       if (a.options.length > 1) throw RangeError("Fraction-precision stems only accept a single optional option");
-      a.stem.replace(o, function(e, n, r, i, a, s) {
-        return "*" === r ? t.minimumFractionDigits = n.length : i && "#" === i[0] ? t.maximumFractionDigits = i.length : a && s ? (t.minimumFractionDigits = a.length, t.maximumFractionDigits = a.length + s.length) : (t.minimumFractionDigits = n.length, t.maximumFractionDigits = n.length), ""
+      a.stem.replace(s, function(e, n, r, i, a, o) {
+        return "*" === r ? t.minimumFractionDigits = n.length : i && "#" === i[0] ? t.maximumFractionDigits = i.length : a && o ? (t.minimumFractionDigits = a.length, t.maximumFractionDigits = a.length + o.length) : (t.minimumFractionDigits = n.length, t.maximumFractionDigits = n.length), ""
       });
       var h = a.options[0];
       "w" === h ? t = (0, r.Cl)((0, r.Cl)({}, t), {

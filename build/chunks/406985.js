@@ -15,10 +15,10 @@ function l(e) {
 }
 
 function c(e) {
-  let t = (0, s.o)(l(r.A), "@react-aria/grid"),
+  let t = (0, o.o)(l(r.A), "@react-aria/grid"),
     n = (0, a.lb)(),
     c = ("pointer" === n || "virtual" === n || null == n) && "u" > typeof window && "ontouchstart" in window,
-    u = (0, o.useMemo)(() => {
+    u = (0, s.useMemo)(() => {
       let n, r = e.selectionManager.selectionMode,
         i = e.selectionManager.selectionBehavior;
       return c && (n = t.format("longPressToSelect")), "replace" === i && "none" !== r && e.hasItemActions ? n : true

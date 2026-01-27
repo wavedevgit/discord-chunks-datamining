@@ -96,25 +96,25 @@ function C(e) {
     analyticsLocation: R,
     analyticsSourceLocation: P,
     confirmationFooter: D,
-    isGift: x = false,
-    giftMessage: L,
-    giftStyle: j,
-    giftingOrigin: M,
+    isGift: L = false,
+    giftMessage: x,
+    giftStyle: M,
+    giftingOrigin: j,
     subscriptionTier: k,
     trialId: U,
     postSuccessGuild: G,
-    openInvoiceId: V,
-    applicationId: F,
+    openInvoiceId: F,
+    applicationId: V,
     referralTrialOfferId: B,
     giftRecipient: H,
     returnRef: Y,
     subscription: W,
     skipConfirm: K
-  } = null != e ? e : {}, z = false, q = null != (t = (0, g.A)()) ? t : (0, s.A)(), Z = p.default.getCurrentUser(), X = (0, m.YE)(Z, b.PremiumTypes.TIER_2), Q = a()("payment-modal"), J = (0, m.mH)(k), $ = false;
-  return (0, o.mMO)(async () => {
+  } = null != e ? e : {}, z = false, q = null != (t = (0, g.A)()) ? t : (0, o.A)(), Z = p.default.getCurrentUser(), Q = (0, m.YE)(Z, b.PremiumTypes.TIER_2), X = a()("payment-modal"), J = (0, m.mH)(k), $ = false;
+  return (0, s.mMO)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("14704"), n.e("29716"), n.e("2824"), n.e("15050")]).then(n.bind(n, 674619));
+    } = await Promise.all([n.e("62175"), n.e("2292"), n.e("14704"), n.e("29716"), n.e("2824"), n.e("96126")]).then(n.bind(n, 674619));
     return t => {
       let {
         onClose: n
@@ -123,10 +123,10 @@ function C(e) {
         loadId: q,
         subscriptionTier: k,
         skuId: J,
-        isGift: x,
-        giftMessage: L,
-        giftStyle: j,
-        giftingOrigin: M,
+        isGift: L,
+        giftMessage: x,
+        giftStyle: M,
+        giftingOrigin: j,
         giftRecipient: H,
         initialPlanId: i,
         followupSKUInfo: O,
@@ -155,22 +155,22 @@ function C(e) {
         trialId: U,
         postSuccessGuild: G,
         planGroup: b.LE,
-        openInvoiceId: V,
-        applicationId: F,
+        openInvoiceId: F,
+        applicationId: V,
         referralTrialOfferId: B,
         returnRef: Y,
         subscription: W,
         skipConfirm: !!K,
-        wasTier2PremiumBeforePurchase: X
+        wasTier2PremiumBeforePurchase: Q
       }))
     }
   }, {
     onCloseRequest: () => {
       $ || ($ = true, h._.dispatch(y.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), f.A.isDisplayingWowMomentConfirmation && f.A.isAnimated ? setTimeout(() => {
-        (0, o.OoC)(Q)
-      }, E.K) : (0, o.OoC)(Q))
+        (0, s.OoC)(X)
+      }, E.K) : (0, s.OoC)(X))
     },
-    modalKey: Q,
+    modalKey: X,
     onCloseCallback: () => {
       z || _.default.track(y.HAw.PAYMENT_FLOW_CANCELED, {
         load_id: q,
@@ -178,10 +178,10 @@ function C(e) {
         location: null != R ? R : w,
         source: P,
         subscription_type: y.rzx.PREMIUM,
-        is_gift: x,
+        is_gift: L,
         sku_id: J,
         eligible_for_trial: null != U,
-        application_id: F,
+        application_id: V,
         location_stack: N
       }), (0, u.ET)(), (0, c.ET)(), (0, d.z)(), null == A || A(z), z && (null == C || C())
     }

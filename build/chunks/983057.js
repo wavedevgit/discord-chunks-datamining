@@ -12,8 +12,8 @@ function i(e) {
     applicationId: n,
     intent: i,
     inviterUserId: a,
-    analyticsLocations: s,
-    commandOrigin: o
+    analyticsLocations: o,
+    commandOrigin: s
   } = e;
   r.h.dispatch({
     type: "EMBEDDED_ACTIVITY_DEFERRED_OPEN",
@@ -21,7 +21,7 @@ function i(e) {
     applicationId: n,
     intent: i,
     inviterUserId: a,
-    analyticsLocations: s,
-    commandOrigin: o
+    analyticsLocations: o,
+    commandOrigin: s
   })
 }

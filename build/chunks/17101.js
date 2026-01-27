@@ -27,7 +27,7 @@ function n(e, t) {
     }
     throw TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
   }
-  var s, o = true,
+  var o, s = true,
     l = false;
   return {
     s: function() {
@@ -35,16 +35,16 @@ function n(e, t) {
     },
     n: function() {
       var e = n.next();
-      return o = e.done, e
+      return s = e.done, e
     },
     e: function(e) {
-      l = true, s = e
+      l = true, o = e
     },
     f: function() {
       try {
-        o || null == n.return || n.return()
+        s || null == n.return || n.return()
       } finally {
-        if (l) throw s
+        if (l) throw o
       }
     }
   }

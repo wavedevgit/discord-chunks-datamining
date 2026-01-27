@@ -10,7 +10,7 @@ var Chunk27989 = require("./27989.js"),
   Chunk827734 = require("./827734.js"),
   Chunk953727 = require("./953727.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -72,13 +72,13 @@ function f(e, t) {
 function p(e) {
   var t, n;
   let {
-    size: o = "md",
+    size: s = "md",
     width: c,
     height: f,
     color: p = a.A.colors.INTERACTIVE_TEXT_DEFAULT,
     colorClass: _ = ""
-  } = e, h = d(e, ["size", "width", "height", "color", "colorClass"]), m = (0, i.J)(o), g = null != (t = null == m ? true : m.width) ? t : c, E = null != (n = null == m ? true : m.height) ? n : f;
-  return (0, r.jsx)("svg", u(l({}, (0, s.A)(h)), {
+  } = e, h = d(e, ["size", "width", "height", "color", "colorClass"]), m = (0, i.J)(s), g = null != (t = null == m ? true : m.width) ? t : c, E = null != (n = null == m ? true : m.height) ? n : f;
+  return (0, r.jsx)("svg", u(l({}, (0, o.A)(h)), {
     width: g,
     height: E,
     viewBox: "0 0 16 16",

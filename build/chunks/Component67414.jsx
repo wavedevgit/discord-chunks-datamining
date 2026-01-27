@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 67414, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 67414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => R
+  A: () => C
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,176 +27,163 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk989712 = require("./989712.js");
 
-function T(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function C(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      T(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function N(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function R(e) {
   let {
     giftIntentType: t,
-    recipientUser: T,
-    analyticsPage: N,
-    analyticsSection: R,
-    innerRef: P
-  } = e, D = (0, s.bG)([h.default], () => h.default.getCurrentUser()), {
-    analyticsLocations: x
-  } = (0, u.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), L = (0, s.bG)([y.Ay], () => y.Ay.getFriendAnniversaryYears(T.id)), j = (0, _.tA)({
+    recipientUser: C,
+    analyticsPage: I,
+    analyticsSection: S,
+    innerRef: T
+  } = e, N = (0, a.bG)([g.default], () => g.default.getCurrentUser()), {
+    analyticsLocations: P
+  } = (0, u.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), w = (0, a.bG)([A.Ay], () => A.Ay.getFriendAnniversaryYears(C.id)), R = (0, f.tA)({
     location: "gift-intent-card",
     isGift: true,
-    giftRecipient: T
+    giftRecipient: C
   });
   i.useEffect(() => {
     (0, d.x)({
-      name: a.ImpressionNames.GIFT_INTENT_CARD,
-      type: a.ImpressionTypes.VIEW,
+      name: l.ImpressionNames.GIFT_INTENT_CARD,
+      type: l.ImpressionTypes.VIEW,
       properties: {
         gift_intent_type: t,
-        num_friend_anniversaries: y.Ay.getFriendAnniversaries().length
+        num_friend_anniversaries: A.Ay.getFriendAnniversaries().length
       }
     })
   }, [t]);
-  let M = () => t === O.np.FRIEND_ANNIVERSARY ? I.intl.string(I.t.CeQIwZ) : (0, g.yE)(t),
-    k = () => t === O.np.FRIEND_ANNIVERSARY ? I.intl.formatToPlainString(I.t.PpG27s, {
-      numberOfYears: L
-    }) : (0, g.yE)(t),
-    U = () => t === O.np.FRIEND_ANNIVERSARY ? I.intl.string(I.t.ilhtIa) : (0, g.yE)(t),
-    G = e => {
-      e.stopPropagation();
-      let n = p.A.getUserAffinity(T.id);
-      m.default.track(v.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
-        gift_intent_type: t,
-        affinity: null == n ? true : n.dmProbability,
-        location_stack: x
-      });
-      let r = (0, b.$)(t);
-      j ? (0, E.A)({
-        giftRecipient: T,
-        analyticsLocations: x,
-        analyticsLocation: r.chat,
-        analyticsObject: {
-          page: N,
-          section: R,
-          object: v.ZSU.BUTTON_CTA,
-          objectType: v.AnalyticsObjectTypes.GIFT
-        }
-      }) : (0, f.A)({
-        isGift: true,
-        initialPlanId: null,
-        giftRecipient: T,
-        analyticsLocation: r.chat,
-        analyticsLocations: x,
-        analyticsObject: {
-          page: N,
-          section: R,
-          object: v.ZSU.BUTTON_CTA,
-          objectType: v.AnalyticsObjectTypes.GIFT
-        }
-      })
-    };
+  let D = () => t === v.np.FRIEND_ANNIVERSARY ? E.intl.string(E.t.ilhtIa) : (0, _.yE)(t);
   return (0, r.jsx)("div", {
-    ref: P,
-    className: S.Qs,
+    ref: T,
+    className: j.Qs,
     children: (0, r.jsxs)("div", {
-      className: S.gx,
+      className: j.gx,
       children: [(0, r.jsxs)("div", {
-        className: S.ou,
+        className: j.ou,
         children: [(0, r.jsxs)("div", {
-          className: S.HD,
-          children: [(0, r.jsx)(l.A, {
-            className: S.A6,
-            user: T,
-            "aria-label": T.username,
-            size: A._3.SIZE_56
-          }), null != D && (0, r.jsx)(l.A, {
-            className: S.GM,
-            user: D,
-            "aria-label": T.username,
-            size: A._3.SIZE_24
+          className: j.HD,
+          children: [(0, r.jsx)(o.A, {
+            className: j.A6,
+            user: C,
+            "aria-label": C.username,
+            size: O._3.SIZE_56
+          }), null != N && (0, r.jsx)(o.A, {
+            className: j.GM,
+            user: N,
+            "aria-label": C.username,
+            size: O._3.SIZE_24
           })]
         }), (0, r.jsxs)("div", {
-          className: S.FS,
-          children: [(0, r.jsx)(o.Text, {
+          className: j.FS,
+          children: [(0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-strong",
             lineClamp: 3,
-            children: M()
+            children: t === v.np.FRIEND_ANNIVERSARY ? E.intl.string(E.t.CeQIwZ) : (0, _.yE)(t)
           }), (0, r.jsxs)("div", {
-            className: S.jA,
-            children: [(0, r.jsx)(o.$yI, {
+            className: j.jA,
+            children: [(0, r.jsx)(s.$yI, {
               size: "xs"
-            }), (0, r.jsx)(o.Text, {
-              className: S.Tm,
+            }), (0, r.jsx)(s.Text, {
+              className: j.Tm,
               variant: "text-md/normal",
               color: "text-subtle",
               lineClamp: 1,
-              children: k()
+              children: t === v.np.FRIEND_ANNIVERSARY ? E.intl.formatToPlainString(E.t.PpG27s, {
+                numberOfYears: w
+              }) : (0, _.yE)(t)
             })]
           })]
         })]
       }), (0, r.jsxs)("div", {
-        className: S.UD,
-        children: [(0, r.jsx)(o.Button, {
+        className: j.UD,
+        children: [(0, r.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
-          text: I.intl.string(I.t.nffuyb),
-          "aria-label": I.intl.string(I.t.nffuyb),
+          text: E.intl.string(E.t.nffuyb),
+          "aria-label": E.intl.string(E.t.nffuyb),
           onClick: e => {
-            e.stopPropagation(), m.default.track(v.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), h.default.track(x.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: "send_message",
-              location_stack: x
-            }), (0, o.mMO)(async () => {
+              location_stack: P
+            }), (0, s.mMO)(async () => {
               let {
                 default: e
               } = await n.e("95501").then(n.bind(n, 367516));
-              return n => (0, r.jsx)(e, w(C({}, n), {
-                giftIntentType: t,
-                analyticsLocationHistory: x
-              }))
+              return n => {
+                var i, l;
+                return (0, r.jsx)(e, (i = function(e) {
+                  for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {},
+                      r = Object.keys(n);
+                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                      return Object.getOwnPropertyDescriptor(n, e).enumerable
+                    }))), r.forEach(function(t) {
+                      var r;
+                      r = n[t], t in e ? Object.defineProperty(e, t, {
+                        value: r,
+                        enumerable: true,
+                        configurable: true,
+                        writable: true
+                      }) : e[t] = r
+                    })
+                  }
+                  return e
+                }({}, n), l = l = {
+                  giftIntentType: t,
+                  analyticsLocationHistory: P
+                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+                  var n = Object.keys(e);
+                  if (Object.getOwnPropertySymbols) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    n.push.apply(n, r)
+                  }
+                  return n
+                })(Object(l)).forEach(function(e) {
+                  Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+                }), i))
+              }
             })
           }
-        }), (0, r.jsx)(o.Button, {
+        }), (0, r.jsx)(s.Button, {
           size: "sm",
           variant: "expressive",
-          text: U(),
-          icon: o.okO,
-          "aria-label": U(),
-          onClick: G
+          text: D(),
+          icon: s.okO,
+          "aria-label": D(),
+          onClick: e => {
+            e.stopPropagation();
+            let n = m.A.getUserAffinity(C.id);
+            h.default.track(x.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+              gift_intent_type: t,
+              affinity: null == n ? true : n.dmProbability,
+              location_stack: P
+            });
+            let r = (0, y.$)(t);
+            R ? (0, b.A)({
+              giftRecipient: C,
+              analyticsLocations: P,
+              analyticsLocation: r.chat,
+              analyticsObject: {
+                page: I,
+                section: S,
+                object: x.ZSU.BUTTON_CTA,
+                objectType: x.AnalyticsObjectTypes.GIFT
+              }
+            }) : (0, p.A)({
+              isGift: true,
+              initialPlanId: null,
+              giftRecipient: C,
+              analyticsLocation: r.chat,
+              analyticsLocations: P,
+              analyticsObject: {
+                page: I,
+                section: S,
+                object: x.ZSU.BUTTON_CTA,
+                objectType: x.AnalyticsObjectTypes.GIFT
+              }
+            })
+          }
         })]
       })]
     })

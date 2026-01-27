@@ -70,8 +70,8 @@ function E(e, t, n, r) {
       authorization: "Bearer ".concat(n)
     }
   })).then(e => 202 === e.status ? Promise.reject(e) : e).catch(n => {
-    let s = true !== r.onlyRetryOnAuthorizationErrors && 202 === n.status;
-    return (401 === n.status || s) && a > 0 ? (202 === n.status ? (0, i.BK)(m) : Promise.resolve()).then(() => b(t)).then(n => {
+    let o = true !== r.onlyRetryOnAuthorizationErrors && 202 === n.status;
+    return (401 === n.status || o) && a > 0 ? (202 === n.status ? (0, i.BK)(m) : Promise.resolve()).then(() => b(t)).then(n => {
       let {
         body: {
           access_token: i
@@ -98,7 +98,7 @@ function b(e) {
       accountId: e
     });
     else if (429 === t.status) {
-      let n = t.headers["retry-after"] * s.A.Millis.SECOND,
+      let n = t.headers["retry-after"] * o.A.Millis.SECOND,
         r = isNaN(n) || 0 === n ? g : n;
       return (0, i.BK)(r).then(() => b(e))
     }
@@ -147,9 +147,9 @@ function A(e, t) {
 
 function I(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {},
-    s = u.RQ.PLAYER_OPEN(r, n, false),
+    o = u.RQ.PLAYER_OPEN(r, n, false),
     {
-      deviceId: o,
+      deviceId: s,
       position: l,
       contextUri: c,
       repeat: d
@@ -157,20 +157,20 @@ function I(e, t, n, r) {
   return y.put(e, t, {
     url: u.RQ.PLAYER_PLAY,
     query: {
-      device_id: o
+      device_id: s
     },
     body: {
       context_uri: null != c ? c : true,
-      uris: null == c ? [s] : true,
+      uris: null == c ? [o] : true,
       offset: null != c ? {
-        uri: s
+        uri: o
       } : true,
       position_ms: null != l ? l : 0
     }
   }).then(n => null == d ? n : y.put(e, t, {
     url: u.RQ.PLAYER_REPEAT,
     query: {
-      device_id: o,
+      device_id: s,
       state: d ? "context" : "off"
     }
   })).then(e => (a.h.dispatch({
@@ -189,7 +189,7 @@ function S(e, t) {
 }
 
 function T() {
-  !c.A.isProtocolRegistered() && (0, l.isDesktop)() && o.A.isProtocolRegistered(u.gY).then(e => {
+  !c.A.isProtocolRegistered() && (0, l.isDesktop)() && s.A.isProtocolRegistered(u.gY).then(e => {
     a.h.dispatch({
       type: "SPOTIFY_SET_PROTOCOL_REGISTERED",
       isRegistered: e

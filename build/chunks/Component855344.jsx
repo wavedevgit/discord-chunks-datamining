@@ -72,7 +72,7 @@ let C = 40,
     } = e, {
       name: A
     } = t;
-    (0, o.Ay)(() => {
+    (0, s.Ay)(() => {
       g.default.track(y.HAw.OPEN_POPOUT, I({
         type: "Role Icon Popout",
         guild_id: n.id
@@ -100,8 +100,8 @@ let C = 40,
       D = () => {
         (0, p.pX)(y.BVt.CHANNEL(n.id, b.VV.ROLE_SUBSCRIPTIONS))
       },
-      x = N ? D : P;
-    return (0, r.jsx)(s.lGe, {
+      L = N ? D : P;
+    return (0, r.jsx)(o.lGe, {
       children: (0, r.jsx)(E.Uq, {
         children: (0, r.jsxs)("div", {
           className: v.jC,
@@ -116,23 +116,23 @@ let C = 40,
               }))
             }), (0, r.jsxs)("div", {
               className: v.bM,
-              children: [(0, r.jsx)(s.Heading, {
+              children: [(0, r.jsx)(o.Heading, {
                 variant: "heading-md/semibold",
                 className: v.S3,
                 children: (0, r.jsx)(a.A, {
                   children: A
                 })
-              }), (0, r.jsx)(s.Text, {
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 children: w
               })]
             })]
-          }), (0, r.jsx)(s.Button, {
+          }), (0, r.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
             text: O.intl.string(O.t["H930+H"]),
-            onClick: x,
-            icon: s._Jp,
+            onClick: L,
+            icon: o._Jp,
             fullWidth: true,
             autoFocus: true
           })]

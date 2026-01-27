@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 670566, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 670566, original params: e,t,n (module,exports,require) **/
 module.exports = {
   zc: "formError_f0c2ea",
   Nr: "card_f0c2ea",

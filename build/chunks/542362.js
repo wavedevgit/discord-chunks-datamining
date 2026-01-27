@@ -8,12 +8,12 @@ var Chunk64700 = require("./64700.js"),
   Chunk340287 = require("./340287.js"),
   Chunk669507 = require("./669507.js"),
   Chunk412700 = require("./412700.js"),
-  o = require.n(Chunk412700),
+  s = require.n(Chunk412700),
   Chunk418034 = require("./418034.js"),
   c = [],
   u = function(e, t, n) {
     true === n && (n = {});
-    var s = r.useRef(null),
+    var o = r.useRef(null),
       u = {
         onFirstUpdate: n.onFirstUpdate,
         placement: n.placement || "bottom",
@@ -67,7 +67,7 @@ var Chunk64700 = require("./64700.js"),
             enabled: false
           }])
         };
-        return o()(s.current, e) ? s.current || e : (s.current = e, e)
+        return s()(o.current, e) ? o.current || e : (o.current = e, e)
       }, [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, _]),
       m = r.useRef();
     return (0, l.Es)(function() {

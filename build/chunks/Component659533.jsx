@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 659533, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 659533, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => L
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,74 +27,54 @@ var Chunk627968 = require("./627968.js"),
   Chunk509117 = require("./509117.js"),
   Chunk6336 = require("./6336.js");
 
-function T(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function C(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
-
-function N(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let R = e => {
+let j = e => {
     let {
       userRecord: t,
       placement: n
     } = e, {
       avatarSrc: i,
-      eventHandlers: a
+      eventHandlers: l
     } = (0, p.A)({
       userId: null == t ? true : t.id,
-      size: u._3J.SIZE_32,
+      size: d._3J.SIZE_32,
       animateOnHover: true
-    }), s = null != t, o = s ? (0, r.jsx)(u.euF, C({
+    }), s = null != t, a = s ? (0, r.jsx)(d.euF, S({
       src: i,
       "aria-label": t.username,
-      size: u._3J.SIZE_32
-    }, a)) : (0, r.jsx)(u.Heading, {
+      size: d._3J.SIZE_32
+    }, l)) : (0, r.jsx)(d.Heading, {
       variant: "heading-md/semibold",
       className: I.n5,
       children: n
     });
-    return (0, r.jsx)(l.m_, {
-      text: A.intl.string(A.t.UnKHdo),
+    return (0, r.jsx)(o.m_, {
+      text: C.intl.string(C.t.UnKHdo),
       shouldShow: !s,
       children: (0, r.jsx)("div", {
         className: I.Lg,
-        children: o
+        children: a
       })
     })
   },
-  P = e => {
+  v = e => {
     let {
       numSentReferrals: t,
       placement: n
@@ -112,132 +91,143 @@ let R = e => {
       })]
     })
   },
-  D = e => {
+  N = e => {
     let {
       userRecords: t
-    } = e, n = t.length, i = n < 1 ? null : t[0], a = n < 2 ? null : t[1], s = n < 3 ? null : t[2];
+    } = e, n = t.length, i = n < 1 ? null : t[0], l = n < 2 ? null : t[1], s = n < 3 ? null : t[2];
     return (0, r.jsxs)("div", {
       className: I.ZM,
-      children: [(0, r.jsx)(R, {
+      children: [(0, r.jsx)(j, {
         userRecord: i,
         placement: 1
-      }), (0, r.jsx)(P, {
+      }), (0, r.jsx)(v, {
         numSentReferrals: n,
         placement: 1
-      }), (0, r.jsx)(R, {
-        userRecord: a,
+      }), (0, r.jsx)(j, {
+        userRecord: l,
         placement: 2
-      }), (0, r.jsx)(P, {
+      }), (0, r.jsx)(v, {
         numSentReferrals: n,
         placement: 2
-      }), (0, r.jsx)(R, {
+      }), (0, r.jsx)(j, {
         userRecord: s,
         placement: 3
       })]
     })
   },
-  x = e => {
-    let {
-      analyticsLocations: t
-    } = e;
-    h.default.track(v.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
-      location_stack: t
-    }), (0, u.mMO)(async () => {
-      let {
-        default: e
-      } = await n.e("26489").then(n.bind(n, 477088));
-      return n => (0, r.jsx)(e, w(C({}, n), {
-        sourceAnalyticsLocations: t
-      }))
-    })
-  },
-  L = e => {
+  y = e => {
     let {
       isInSettings: t = false
-    } = e, n = (0, o.bG)([E.A], () => E.A.getRecipientStatus()), {
-      referralSentUsers: a
-    } = (0, y.J)(), l = i.useMemo(() => a.map(e => new _.A(e)), [a]), p = {
+    } = e, l = (0, a.bG)([h.A], () => h.A.getRecipientStatus()), {
+      referralSentUsers: o
+    } = (0, b.J)(), p = i.useMemo(() => o.map(e => new m.A(e)), [o]), j = {
       redeemed: 0,
       converted: 0,
-      sent: n.size
+      sent: l.size
     };
-    n.forEach(e => {
-      e === g.aK.REDEEMED && p.redeemed++, e === g.aK.CONVERTED && (p.redeemed++, p.converted++)
+    l.forEach(e => {
+      e === f.aK.REDEEMED && j.redeemed++, e === f.aK.CONVERTED && (j.redeemed++, j.converted++)
     });
-    let h = p.sent === y.Z,
-      T = m.A.getArticleURL(v.MVz.REFERRAL_PROGRAM),
+    let v = j.sent === b.Z,
+      y = A.A.getArticleURL(O.MVz.REFERRAL_PROGRAM),
       {
-        analyticsLocations: C
-      } = (0, f.Ay)(d.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
-      N = i.useRef(null),
-      w = p.sent / y.Z * 100,
-      R = (0, r.jsxs)("div", {
+        analyticsLocations: P
+      } = (0, _.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
+      R = i.useRef(null),
+      D = j.sent / b.Z * 100,
+      w = (0, r.jsxs)("div", {
         className: I.hE,
-        children: [(0, r.jsx)(b.Ay, {
-          percentage: w,
-          progressCircleVariation: b.BN.NITRO_LOGO,
+        children: [(0, r.jsx)(E.Ay, {
+          percentage: D,
+          progressCircleVariation: E.BN.NITRO_LOGO,
           iconClassName: s()({
             [I.VC]: !t,
             [I.ER]: t
           })
         }), (0, r.jsxs)("div", {
           className: I.Ns,
-          children: [(0, r.jsx)(u.Heading, {
+          children: [(0, r.jsx)(d.Heading, {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
             className: I.R0,
-            children: (0, O.X8)({
-              hasSentAll: h
+            children: (0, x.X8)({
+              hasSentAll: v
             })
-          }), (0, r.jsx)(D, {
-            userRecords: l
-          }), (0, r.jsx)(u.Text, {
+          }), (0, r.jsx)(N, {
+            userRecords: p
+          }), (0, r.jsx)(d.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
-            children: (0, O.dB)({
-              helpdeskArticle: T,
-              referralsStatuses: p
+            children: (0, x.dB)({
+              helpdeskArticle: y,
+              referralsStatuses: j
             })
           }), (0, r.jsx)("div", {
             className: s()(I.Fb, {
               [I.jv]: !t
             }),
-            children: (0, r.jsx)(u.wLn, {
+            children: (0, r.jsx)(d.wLn, {
               "data-migration-pending": true,
               className: I.r$,
               color: c.XD.CUSTOM,
-              onClick: () => x({
-                analyticsLocations: C
+              onClick: () => (e => {
+                let {
+                  analyticsLocations: t
+                } = e;
+                g.default.track(O.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                  location_stack: t
+                }), (0, d.mMO)(async () => {
+                  let {
+                    default: e
+                  } = await n.e("26489").then(n.bind(n, 477088));
+                  return n => {
+                    var i, l;
+                    return (0, r.jsx)(e, (i = S({}, n), l = l = {
+                      sourceAnalyticsLocations: t
+                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+                      var n = Object.keys(e);
+                      if (Object.getOwnPropertySymbols) {
+                        var r = Object.getOwnPropertySymbols(e);
+                        n.push.apply(n, r)
+                      }
+                      return n
+                    })(Object(l)).forEach(function(e) {
+                      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+                    }), i))
+                  }
+                })
+              })({
+                analyticsLocations: P
               }),
               onlyShineOnHover: true,
               children: (0, r.jsxs)("div", {
                 className: I.Zn,
                 children: [(0, r.jsx)("img", {
-                  src: S,
+                  src: T,
                   alt: "",
                   className: I.QH
-                }), h ? A.intl.string(A.t.SY9tyI) : A.intl.string(A.t.Lm2nFc)]
+                }), v ? C.intl.string(C.t.SY9tyI) : C.intl.string(C.t.Lm2nFc)]
               })
             })
           })]
         })]
       }),
-      P = p.redeemed === y.Z;
-    return (0, r.jsx)(f.f5, {
-      value: C,
+      L = j.redeemed === b.Z;
+    return (0, r.jsx)(_.f5, {
+      value: P,
       children: (0, r.jsx)("div", {
         className: s()({
-          [I.f5]: P,
-          [I.JY]: !P,
+          [I.f5]: L,
+          [I.JY]: !L,
           [I.VX]: !t,
-          [I.m$]: P && t
+          [I.m$]: L && t
         }),
         children: (0, r.jsx)("div", {
-          ref: N,
+          ref: R,
           className: s()({
             [I.dn]: !t,
             [I.d_]: t,
-            [I.kS]: P
+            [I.kS]: L
           }),
-          children: R
+          children: w
         })
       })
     })

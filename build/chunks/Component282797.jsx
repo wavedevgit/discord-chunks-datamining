@@ -50,17 +50,17 @@ function N(e) {
     voiceChannelId: i.id,
     user: t,
     analyticsLocations: P
-  }), x = (0, m.A)({
+  }), L = (0, m.A)({
     userId: t.id,
     onAction: D
-  }), L = (0, s.bG)([f.A], () => f.A.getGuild(i.guild_id)), j = (0, _.A)(i), M = (0, d.Ay)(i), {
+  }), x = (0, o.bG)([f.A], () => f.A.getGuild(i.guild_id)), M = (0, _.A)(i), j = (0, d.Ay)(i), {
     channelStatusEnabled: k
   } = (0, p.e)({
     location: "UserProfileVoiceActivityCard"
   }), U = () => {
     if (t.id !== n.id) return null;
     let e = i.isDM() || i.isGroupDM() ? T.intl.string(T.t["+DsWbX"]) : T.intl.string(T.t.xOVEjc);
-    return (0, r.jsx)(o.m, {
+    return (0, r.jsx)(s.m, {
       text: e,
       children: (0, r.jsx)(l.mir, {
         size: "xxs"
@@ -73,17 +73,17 @@ function N(e) {
       onAction: D,
       onClose: w
     })
-  }), V = i.isDM() || i.isGroupDM() ? T.intl.string(T.t["9FaEzi"]) : i.isGuildStageVoice() ? T.intl.string(T.t.QygGCN) : T.intl.string(T.t.msxteM);
+  }), F = i.isDM() || i.isGroupDM() ? T.intl.string(T.t["9FaEzi"]) : i.isGuildStageVoice() ? T.intl.string(T.t.QygGCN) : T.intl.string(T.t.msxteM);
   return (0, r.jsx)(u.f5, {
     value: P,
     children: (0, r.jsxs)(E.A, {
-      ref: x,
+      ref: L,
       className: a()(C.Nr, N),
       onAction: D,
       onClose: w,
-      "aria-label": "".concat(V, ", ").concat(M),
+      "aria-label": "".concat(F, ", ").concat(j),
       children: [(0, r.jsx)(y.A, {
-        text: V,
+        text: F,
         tags: U(),
         contextMenu: (0, r.jsx)(I.A, {
           display: "voice",
@@ -95,13 +95,13 @@ function N(e) {
         children: (0, r.jsxs)("div", {
           className: C.Qs,
           children: [(0, r.jsx)(O.A, {
-            users: j,
+            users: M,
             channel: i
           }), (0, r.jsxs)("div", {
             className: C.zH,
             children: [(0, r.jsx)(b.A, {
               channel: i,
-              guild: L,
+              guild: x,
               onAction: D,
               onClose: w
             }), k && i.isGuildVoice() && (0, r.jsx)(v.A, {

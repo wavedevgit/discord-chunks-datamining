@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk734057 = require("./734057.js"),
@@ -23,13 +23,13 @@ function h(e) {
     noText: n,
     noImage: i,
     previewText: a,
-    className: o
+    className: s
   } = e;
   return (0, r.jsx)("div", {
-    className: s()(_.Hd, o),
+    className: o()(_.Hd, s),
     children: t ? (0, r.jsx)(l.y$y, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: s()(_.js, {
+        className: o()(_.js, {
           [_.$0]: i
         })
       }), n ? null : (0, r.jsx)(l.Text, {
@@ -47,8 +47,8 @@ function m(e) {
     stream: t,
     className: n,
     noText: a = false,
-    noImage: s = false
-  } = e, l = (0, o.bG)([c.A], () => c.A.getBasicChannel(t.channelId)), m = (0, o.bG)([u.A], () => null != l && u.A.canBasicChannel(f.hVb.CONNECT, l)), {
+    noImage: o = false
+  } = e, l = (0, s.bG)([c.A], () => c.A.getBasicChannel(t.channelId)), m = (0, s.bG)([u.A], () => null != l && u.A.canBasicChannel(f.hVb.CONNECT, l)), {
     previewUrl: g,
     isLoading: E
   } = (0, d.A)(t.guildId, t.channelId, t.ownerId), y = i.useRef(E ? null : g);
@@ -60,7 +60,7 @@ function m(e) {
     className: n,
     isLoading: E,
     noText: a,
-    noImage: s,
+    noImage: o,
     previewText: m ? true : p.intl.string(p.t.pgUTZC)
   }) : (0, r.jsx)("div", {
     className: n,

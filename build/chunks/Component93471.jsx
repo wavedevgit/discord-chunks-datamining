@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 93471, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 82575 **/
+/** chunk id: 93471, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
@@ -15,10 +14,10 @@ var Chunk641324 = require("./641324.jsx"),
 function c() {
   let {
     node: e
-  } = (0, a.Ay)(o.F, "");
-  return (0, r.jsx)(s.A, {
-    title: l.intl.string(l.t.KyFVyi),
-    children: (0, r.jsx)(i.A, {
+  } = (0, l.Ay)(a.F, "");
+  return (0, i.jsx)(r.A, {
+    title: o.intl.string(o.t.KyFVyi),
+    children: (0, i.jsx)(s.A, {
       node: e
     }, e.key)
   })

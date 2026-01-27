@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 85200, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 85200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,31 +14,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk637462 = require("./637462.js");
-let _ = Chunk723702.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
+let m = Chunk723702.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
-function h() {
+function g() {
   var e, t;
   let {
     canSetInputDevice: n,
     canSetOutputDevice: c
-  } = (0, a.cf)([l.A], () => ({
-    canSetInputDevice: l.A.supports(d.O5.AUDIO_INPUT_DEVICE),
-    canSetOutputDevice: l.A.supports(d.O5.AUDIO_OUTPUT_DEVICE)
-  })), h = (0, o.x5)(d.oh.AUDIO_INPUT), m = (0, o.x5)(d.oh.AUDIO_OUTPUT), [g, E] = (0, o.tR)(d.oh.AUDIO_INPUT, {
+  } = (0, l.cf)([o.A], () => ({
+    canSetInputDevice: o.A.supports(u.O5.AUDIO_INPUT_DEVICE),
+    canSetOutputDevice: o.A.supports(u.O5.AUDIO_OUTPUT_DEVICE)
+  })), g = (0, a.x5)(u.oh.AUDIO_INPUT), A = (0, a.x5)(u.oh.AUDIO_OUTPUT), [f, h] = (0, a.tR)(u.oh.AUDIO_INPUT, {
     location: "UserSettingsDevices"
-  }), [y, b] = (0, o.tR)(d.oh.AUDIO_OUTPUT, {
+  }), [b, E] = (0, a.tR)(u.oh.AUDIO_OUTPUT, {
     location: "UserSettingsDevices"
-  }), O = g.concat(E), v = y.concat(b), A = i.useMemo(() => {
-    let e = _.some(e => {
+  }), x = f.concat(h), O = b.concat(E), C = i.useMemo(() => {
+    let e = m.some(e => {
         var t;
-        return null == h || null == (t = h.hardwareId) ? true : t.startsWith(e)
+        return null == g || null == (t = g.hardwareId) ? true : t.startsWith(e)
       }),
-      t = _.some(e => {
+      t = m.some(e => {
         var t;
-        return null == m || null == (t = m.hardwareId) ? true : t.startsWith(e)
+        return null == A || null == (t = A.hardwareId) ? true : t.startsWith(e)
       });
-    return e && t && (null == h ? true : h.containerId) != null && h.containerId === (null == m ? true : m.containerId)
-  }, [h, m]), I = O[0], S = v[0], T = null != (e = null == I ? true : I.disabled) ? e : !n, C = null != (t = null == S ? true : S.disabled) ? t : !c;
+    return e && t && (null == g ? true : g.containerId) != null && g.containerId === (null == A ? true : A.containerId)
+  }, [g, A]), I = x[0], T = O[0], S = null != (e = null == I ? true : I.disabled) ? e : !n, j = null != (t = null == T ? true : T.disabled) ? t : !c;
   return (0, r.jsxs)("div", {
     className: p.y0,
     children: [(0, r.jsxs)("div", {
@@ -47,25 +46,25 @@ function h() {
       children: [(0, r.jsx)("div", {
         className: p.fi,
         children: (0, r.jsx)(s.U, {
-          label: f.intl.string(f.t.hHMYbb),
-          deviceType: d.oh.AUDIO_INPUT,
+          label: _.intl.string(_.t.hHMYbb),
+          deviceType: u.oh.AUDIO_INPUT,
           location: "UserSettingsDevices",
           hideDeviceTypeIcon: true,
-          isDisabled: T
+          isDisabled: S
         })
       }), (0, r.jsx)("div", {
         className: p.fi,
         children: (0, r.jsx)(s.U, {
-          label: f.intl.string(f.t.dl18zb),
-          deviceType: d.oh.AUDIO_OUTPUT,
+          label: _.intl.string(_.t.dl18zb),
+          deviceType: u.oh.AUDIO_OUTPUT,
           location: "UserSettingsDevices",
           hideDeviceTypeIcon: true,
-          isDisabled: C
+          isDisabled: j
         })
       })]
-    }), A && (0, r.jsx)(u.A, {
-      look: u.k.WARNING,
-      children: f.intl.string(f.t.Ioz3gx)
+    }), C && (0, r.jsx)(d.A, {
+      look: d.k.WARNING,
+      children: _.intl.string(_.t.Ioz3gx)
     })]
   })
 }

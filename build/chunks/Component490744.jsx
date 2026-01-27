@@ -23,10 +23,10 @@ let h = e => {
     let {
       step: t,
       onClose: n
-    } = e, o = (0, a.A)(u.T);
-    return t === s.pn.CONFIRM || t === s.pn.BENEFITS ? (0, r.jsx)("div", {}) : (0, r.jsxs)("div", {
+    } = e, s = (0, a.A)(u.T);
+    return t === o.pn.CONFIRM || t === o.pn.BENEFITS ? (0, r.jsx)("div", {}) : (0, r.jsxs)("div", {
       className: f.N1,
-      children: [!o && (0, r.jsx)("div", {
+      children: [!s && (0, r.jsx)("div", {
         className: f.oZ,
         "aria-hidden": "true",
         children: (0, r.jsx)("img", {
@@ -52,8 +52,8 @@ let h = e => {
       storeListingBenefits: n,
       skuBenefits: i,
       application: a,
-      title: s,
-      subtitle: o,
+      title: o,
+      subtitle: s,
       description: l
     } = e;
     return null == a ? null : (0, r.jsx)("div", {
@@ -63,9 +63,9 @@ let h = e => {
           application: a,
           asset: t
         }), (0, r.jsx)(c.kj, {
-          children: s
+          children: o
         }), (0, r.jsx)(c.ri, {}), (0, r.jsx)(c.Mx, {
-          title: o,
+          title: s,
           description: l
         }), (0, r.jsx)(c.iH, {
           applicationId: a.id,
@@ -104,9 +104,9 @@ function g(e) {
         timestamp: null == a ? true : a.currentPeriodEnd
       })
     }), (0, r.jsx)(l.UX, {
-      children: (0, r.jsx)(o.A, {
+      children: (0, r.jsx)(s.A, {
         onPrimary: n,
-        primaryCTA: o.t.CONTINUE,
+        primaryCTA: s.t.CONTINUE,
         primaryText: d.intl.string(d.t["JtWl+a"])
       })
     })]

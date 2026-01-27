@@ -17,17 +17,17 @@ var Chunk64700 = require("./64700.js"),
 let d = e => {
     let t = (0, a.A)();
     r.useEffect(() => {
-      null != e && e.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED) && o.A.getMonetizationRestrictionsFetchState(e.id) === o.e.NOT_FETCHED && s.LJ(e.id, {
+      null != e && e.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED) && s.A.getMonetizationRestrictionsFetchState(e.id) === s.e.NOT_FETCHED && o.LJ(e.id, {
         signal: t
       })
     }, [e, t]);
     let n = null == e ? true : e.id;
     return {
-      restrictions: (0, i.yK)([o.A], () => {
+      restrictions: (0, i.yK)([s.A], () => {
         var e;
-        return null != (e = o.A.getMonetizationRestrictions(null != n ? n : u.dJq)) ? e : []
+        return null != (e = s.A.getMonetizationRestrictions(null != n ? n : u.dJq)) ? e : []
       }),
-      restrictionsLoading: (0, i.bG)([o.A], () => o.A.getMonetizationRestrictionsFetchState(null != n ? n : u.dJq) === o.e.FETCHING)
+      restrictionsLoading: (0, i.bG)([s.A], () => s.A.getMonetizationRestrictionsFetchState(null != n ? n : u.dJq) === s.e.FETCHING)
     }
   },
   f = e => {
@@ -49,11 +49,11 @@ let d = e => {
         restrictions: r,
         restrictionsLoading: a
       } = d(n),
-      s = a ? null == (t = null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.a1)(r),
-      o = !!(null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING));
+      o = a ? null == (t = null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.a1)(r),
+      s = !!(null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING));
     return {
-      shouldRestrictUpdatingCreatorMonetizationSettings: s || o,
-      allowSelfRemoveMonetization: !s,
+      shouldRestrictUpdatingCreatorMonetizationSettings: o || s,
+      allowSelfRemoveMonetization: !o,
       restrictionsLoading: a
     }
   },

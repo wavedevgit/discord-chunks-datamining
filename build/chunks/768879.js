@@ -53,7 +53,7 @@ function p(e, t) {
 
 function _(e, t) {
   r.useEffect(() => {
-    s.bW.loadIfUncached(c.oD.FRECENCY_AND_FAVORITES_SETTINGS)
+    o.bW.loadIfUncached(c.oD.FRECENCY_AND_FAVORITES_SETTINGS)
   }, []);
   let n = (0, i.bG)([l.A], () => l.A.getApplicationFrecencyWithoutLoadingLatest()),
     u = r.useMemo(() => null == t || 0 === t.length ? e : e.map(e => {
@@ -66,7 +66,7 @@ function _(e, t) {
     _ = r.useMemo(() => {
       var e;
       null == f || f.forEach(e => {
-        let t = o.default.extractTimestamp(e.id);
+        let t = s.default.extractTimestamp(e.id);
         null == n.getEntry(e.application.id) && n.track(e.application.id, {
           timestamp: t
         })
@@ -83,14 +83,14 @@ function _(e, t) {
     var e, r;
     let i, a;
     null == t || t.forEach(e => {
-      let t = o.default.extractTimestamp(e.id);
+      let t = s.default.extractTimestamp(e.id);
       (null == a || t > a) && (i = e, a = t)
     }), u.forEach(e => {
       var t, r;
-      let s = Math.max(...null != (t = null == (r = n.getEntry(e.id)) ? true : r.recentUses) ? t : []);
-      (null == a || s > a) && (i = e, a = s)
+      let o = Math.max(...null != (t = null == (r = n.getEntry(e.id)) ? true : r.recentUses) ? t : []);
+      (null == a || o > a) && (i = e, a = o)
     });
-    let s = null != (e = null == i || null == (r = i.application) ? true : r.id) ? e : "";
-    return [..._.filter(e => e.id === s), ..._.filter(e => e.id !== s)]
+    let o = null != (e = null == i || null == (r = i.application) ? true : r.id) ? e : "";
+    return [..._.filter(e => e.id === o), ..._.filter(e => e.id !== o)]
   }, [_, u, n, t])
 }

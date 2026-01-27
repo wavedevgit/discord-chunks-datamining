@@ -28,7 +28,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -39,22 +39,22 @@ function s(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function s(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function l(e, t, n, i) {
-  let s = (0, r.A)(e, t, i),
+  let o = (0, r.A)(e, t, i),
     l = (e, t) => n.computeScrollPosition(e, t);
-  return o(a({}, s), {
+  return s(a({}, o), {
     getScrollPosition: l,
     isItemVisible(e, n) {
       let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
         [i, a] = l(e, n),
-        s = t();
-      return r ? i >= s.scrollTop && i + a <= s.scrollTop + s.offsetHeight : i + a >= s.scrollTop && i <= s.scrollTop + s.offsetHeight
+        o = t();
+      return r ? i >= o.scrollTop && i + a <= o.scrollTop + o.offsetHeight : i + a >= o.scrollTop && i <= o.scrollTop + o.offsetHeight
     },
     scrollToIndex(e) {
       let {
@@ -63,10 +63,10 @@ function l(e, t, n, i) {
         animate: r,
         callback: i,
         padding: a = 0
-      } = e, [o, c] = l(t, n);
-      s.scrollIntoViewRect({
-        start: o,
-        end: o + c,
+      } = e, [s, c] = l(t, n);
+      o.scrollIntoViewRect({
+        start: s,
+        end: s + c,
         padding: a,
         animate: r,
         callback: i

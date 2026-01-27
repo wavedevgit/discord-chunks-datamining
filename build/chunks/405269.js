@@ -57,21 +57,21 @@ function y(e, t) {
   let n = A(e).locale(),
     r = l.PZ.getSetting(),
     i = "".concat(n, ":").concat(t, ":").concat(r),
-    s = p[i];
-  return null == s && (s = p[i] = (0, a.A)(t)), s(I(e))
+    o = p[i];
+  return null == o && (o = p[i] = (0, a.A)(t)), o(I(e))
 }
 
 function b(e) {
   let t, n = arguments.length > 1 && true !== arguments[1] && arguments[1],
     r = i().localeData(),
     a = i()(),
-    s = h(I(e), a.toDate());
-  if (s < false) return y(e, "L LT");
-  if (s < 0) t = "lastDay";
-  else if (s < 1) {
+    o = h(I(e), a.toDate());
+  if (o < false) return y(e, "L LT");
+  if (o < 0) t = "lastDay";
+  else if (o < 1) {
     if (n) return y(e, "LT");
     t = "sameDay"
-  } else t = s < 2 ? "nextDay" : "sameElse";
+  } else t = o < 2 ? "nextDay" : "sameElse";
   return y(e, r.calendar(t, A(e), a))
 }
 

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   Chunk23339 = require("./23339.js"),
   Chunk397927 = require("./397927.js"),
@@ -95,46 +95,46 @@ let w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
       gutterWidth: S,
       inspectedStickerPosition: N,
       isScrolling: D,
-      isUsingKeyboardNavigation: x,
-      onInspect: L,
-      onSelect: j,
-      rowIndex: M,
+      isUsingKeyboardNavigation: L,
+      onInspect: x,
+      onSelect: M,
+      rowIndex: j,
       stickerClassName: k,
       stickerDescriptors: U,
       stickerPadding: G = R,
-      stickerSize: V = w,
-      ownedStickerPacks: F,
+      stickerSize: F = w,
+      ownedStickerPacks: V,
       enlargeOnInteraction: B = false,
       channel: H,
       currentUser: Y,
       checkSendability: W = true
     } = e, {
       location: K
-    } = (0, d.p)(), z = V + 2 * G, q = i.useMemo(() => ({
+    } = (0, d.p)(), z = F + 2 * G, q = i.useMemo(() => ({
       gridColumnGap: S,
       gridTemplateColumns: "repeat(auto-fill, ".concat(z, "px)"),
       height: z,
       paddingRight: t ? true : z
     }), [t, S, z]), Z = i.useMemo(() => ({
-      width: V,
-      height: V,
+      width: F,
+      height: F,
       padding: G
-    }), [G, V]), [X, Q] = (0, f.A)(null, 300);
+    }), [G, F]), [Q, X] = (0, f.A)(null, 300);
     return (0, r.jsx)("div", T(I({
       className: v.nM,
       style: q
-    }, null == A ? true : A(M)), {
+    }, null == A ? true : A(j)), {
       children: U.map(e => {
         var d;
         let f = e.visibleRowIndex === (null == N ? true : N.rowIndex) && e.columnIndex === (null == N ? true : N.columnIndex),
           A = e.type === m.op.STICKER && B && f,
           S = t => {
-            if ((null == D ? true : D.current) === true || (null == x ? true : x.current) === true) return;
+            if ((null == D ? true : D.current) === true || (null == L ? true : L.current) === true) return;
             let n = t.altKey;
-            n && e.type === m.op.STICKER && !(0, g.o1)(e.sticker.id) && Q(e.sticker.id), null == j || j(e, n)
+            n && e.type === m.op.STICKER && !(0, g.o1)(e.sticker.id) && X(e.sticker.id), null == M || M(e, n)
           },
-          w = (0, o.throttle)(() => {
-            (null == D ? true : D.current) === true || (null == x ? true : x.current) === true || f || null == L || L(e)
+          w = (0, s.throttle)(() => {
+            (null == D ? true : D.current) === true || (null == L ? true : L.current) === true || f || null == x || x(e)
           }, P),
           R = () => {
             e.type === m.op.CREATE_STICKER && (_.default.track(b.HAw.OPEN_MODAL, {
@@ -143,13 +143,13 @@ let w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
             }), (0, c.mMO)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("29143"), n.e("97010")]).then(n.bind(n, 445002));
+              } = await Promise.all([n.e("29143"), n.e("64800")]).then(n.bind(n, 445002));
               return n => (0, r.jsx)(t, I({
                 guildId: e.guild_id
               }, n))
             }))
           },
-          U = null != (d = null == l ? true : l(e.columnIndex, M)) ? d : {},
+          U = null != (d = null == l ? true : l(e.columnIndex, j)) ? d : {},
           {
             ref: G,
             tabIndex: z,
@@ -161,7 +161,7 @@ let w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
             return (0, r.jsx)("div", T(I({}, J), {
               children: (0, r.jsxs)(c.DUT, {
                 "aria-label": e.name,
-                className: s()(v.wP, k, {
+                className: o()(v.wP, k, {
                   [v.Kj]: f
                 }),
                 innerRef: G,
@@ -187,7 +187,7 @@ let w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
               })
             }), e.guild_id);
           case m.op.STICKER: {
-            let o = t && null != F && (0, g.FD)(e.sticker) && !F.has(e.sticker.pack_id),
+            let s = t && null != V && (0, g.FD)(e.sticker) && !V.has(e.sticker.pack_id),
               l = e => {
                 (0, u.L3)(e, async () => {
                   let {
@@ -199,9 +199,9 @@ let w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
             return (0, i.createElement)("div", T(I({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.DUT, {
-              className: s()(v.yI, k, {
+              className: o()(v.yI, k, {
                 [v.PV]: f,
-                [v.TV]: X === e.sticker.id
+                [v.TV]: Q === e.sticker.id
               }),
               innerRef: G,
               tabIndex: z,
@@ -221,7 +221,7 @@ let w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
                 children: [!B && (0, r.jsx)("div", {
                   className: v.fw
                 }), (0, r.jsx)(E.A, {
-                  className: s()(v.SI, {
+                  className: o()(v.SI, {
                     [v.ot]: B && !f && null != N && false !== N.rowIndex && false !== N.columnIndex,
                     [v.Q$]: A,
                     [v.No]: W && !(0, h.G7)(e.sticker, Y, H)
@@ -231,8 +231,8 @@ let w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
                   isInteracting: f,
                   maskAsset: f,
                   sticker: e.sticker,
-                  size: V
-                }), o ? (0, r.jsx)(y.A, {
+                  size: F
+                }), s ? (0, r.jsx)(y.A, {
                   size: 20
                 }) : null]
               })]

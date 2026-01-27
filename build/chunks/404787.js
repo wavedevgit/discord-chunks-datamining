@@ -20,9 +20,9 @@ function d(e) {
 
 function f() {
   return r.useEffect(() => {
-    window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && true !== a.w.get(i.qx) && l.Ay.supportsFeature(u.BYE.USER_DATA_CACHE) && (c._r(), s.A.userDataCache.getCached().then(e => {
+    window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && true !== a.w.get(i.qx) && l.Ay.supportsFeature(u.BYE.USER_DATA_CACHE) && (c._r(), o.A.userDataCache.getCached().then(e => {
       if (null == e) {
-        c.Py(), o.default.track(u.HAw.DOMAIN_MIGRATED, {
+        c.Py(), s.default.track(u.HAw.DOMAIN_MIGRATED, {
           success: false,
           has_data: false
         }, {
@@ -40,13 +40,13 @@ function f() {
         try {
           a.w.set(t, JSON.parse(n))
         } catch (e) {}
-      })), o.default.track(u.HAw.DOMAIN_MIGRATED, {
+      })), s.default.track(u.HAw.DOMAIN_MIGRATED, {
         success: true,
         current_is_newer: f,
         has_data: n
       }, {
         flush: true
-      }), a.w.set(i.qx, true), s.A.userDataCache.deleteCache(), c.Yw()
+      }), a.w.set(i.qx, true), o.A.userDataCache.deleteCache(), c.Yw()
     }))
   }, []), null
 }

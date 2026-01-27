@@ -26,20 +26,20 @@ function u(e) {
 function d(e) {
   let t, {
       channel: n,
-      unread: s = false,
+      unread: o = false,
       mentionCount: d = 0,
       userCount: f,
       embeddedActivitiesCount: p,
       isSubscriptionGated: _,
       needSubscriptionToAccess: h
     } = e,
-    m = (0, o.m1)(n, a.default, i.A);
+    m = (0, s.m1)(n, a.default, i.A);
   switch (n.type) {
     case l.rbe.DM:
-      t = s ? c.t.F2MZsu : c.t.fYqXVY;
+      t = o ? c.t.F2MZsu : c.t.fYqXVY;
       break;
     case l.rbe.GROUP_DM:
-      t = s ? c.t["fxxUo/"] : c.t.lts3Ld;
+      t = o ? c.t["fxxUo/"] : c.t.lts3Ld;
       break;
     case l.rbe.GUILD_STORE:
       t = c.t.Bo4msg;
@@ -48,7 +48,7 @@ function d(e) {
       t = c.t["92EAF2"];
       break;
     case l.rbe.GUILD_ANNOUNCEMENT:
-      t = d > 0 ? c.t.sDKIpm : s ? c.t.VM7z8f : c.t.WJ3MPt;
+      t = d > 0 ? c.t.sDKIpm : o ? c.t.VM7z8f : c.t.WJ3MPt;
       break;
     case l.rbe.GUILD_VOICE:
       let g = [c.intl.formatToPlainString(c.t.bkpadO, {
@@ -56,7 +56,7 @@ function d(e) {
       })];
       if (d > 0 && g.push(c.intl.formatToPlainString(c.t["3l1GOx"], {
           mentionCount: d
-        })), s && g.push(c.intl.string(c.t.x5zAGZ)), null != f) {
+        })), o && g.push(c.intl.string(c.t.x5zAGZ)), null != f) {
         let e = n.userLimit;
         null != e && e > 0 ? g.push(c.intl.formatToPlainString(c.t["6qgTOF"], {
           userCount: f,
@@ -77,7 +77,7 @@ function d(e) {
       t = c.t.TPPk2T;
       break;
     default:
-      t = r.Le.has(n.type) ? d > 0 ? c.t["ZL7+I6"] : s ? c.t.YlVvmc : c.t["0nZpiF"] : d > 0 ? c.t.g8ONM0 : s ? c.t.smf1CZ : c.t.s0JADj
+      t = r.Le.has(n.type) ? d > 0 ? c.t["ZL7+I6"] : o ? c.t.YlVvmc : c.t["0nZpiF"] : d > 0 ? c.t.g8ONM0 : o ? c.t.smf1CZ : c.t.s0JADj
   }
   let y = [c.intl.formatToPlainString(t, {
       channelName: m,
@@ -93,13 +93,13 @@ function d(e) {
 function f(e) {
   switch (e) {
     case l.clD.ONLINE:
-      return (0, s.MU)(l.clD.ONLINE);
+      return (0, o.MU)(l.clD.ONLINE);
     case l.clD.IDLE:
-      return (0, s.MU)(l.clD.IDLE);
+      return (0, o.MU)(l.clD.IDLE);
     case l.clD.DND:
-      return (0, s.MU)(l.clD.DND);
+      return (0, o.MU)(l.clD.DND);
     case l.clD.INVISIBLE:
-      return (0, s.MU)(l.clD.INVISIBLE);
+      return (0, o.MU)(l.clD.INVISIBLE);
     default:
       return ""
   }

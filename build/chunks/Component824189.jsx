@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 824189, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 824189, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -15,7 +14,7 @@ function c() {
   (0, s.sL)("overlay-settings")
 }
 
-function u(e) {
+function d(e) {
   let {
     className: t,
     game: n
@@ -27,11 +26,11 @@ function u(e) {
       action: (0, r.jsx)(i.Button, {
         variant: "secondary",
         size: "sm",
-        text: l.intl.string(l.t["1iI46O"]),
+        text: o.intl.string(o.t["1iI46O"]),
         onClick: c
       }),
-      children: l.intl.format(l.t["LJzl+0"], {
-        helpCenterLink: a.A.getArticleURL(o.MVz.SYSTEM_SERVICE)
+      children: o.intl.format(o.t["LJzl+0"], {
+        helpCenterLink: l.A.getArticleURL(a.MVz.SYSTEM_SERVICE)
       })
     })
   }) : null

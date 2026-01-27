@@ -40,28 +40,28 @@ function R(e) {
     activity: R,
     onAction: P,
     onClose: D,
-    application: x,
-    containerClassName: L
+    application: L,
+    containerClassName: x
   } = e, {
-    themeType: j
-  } = (0, y.E)(), M = (0, i.bG)([m.default], () => m.default.getId() === n.id), k = (0, u.J)(x), U = (0, _.o)(null != (t = null == R ? true : R.application_id) ? t : null == x ? true : x.id), {
+    themeType: M
+  } = (0, y.E)(), j = (0, i.bG)([m.default], () => m.default.getId() === n.id), k = (0, u.J)(L), U = (0, _.o)(null != (t = null == R ? true : R.application_id) ? t : null == L ? true : L.id), {
     analyticsLocations: G
-  } = (0, p.Ay)(f.A.USER_PROFILE_ACTIVITY_BUTTONS), V = j === w.d.MODAL || j === w.d.MODAL_V2, F = j === w.d.POPOUT, B = (() => M ? F && (null == R ? true : R.type) === N.$pd.PLAYING && (null == x ? true : x.id) != null ? (0, r.jsx)(d.A, {
-    applicationId: x.id,
+  } = (0, p.Ay)(f.A.USER_PROFILE_ACTIVITY_BUTTONS), F = M === w.d.MODAL || M === w.d.MODAL_V2, V = M === w.d.POPOUT, B = (() => j ? V && (null == R ? true : R.type) === N.$pd.PLAYING && (null == L ? true : L.id) != null ? (0, r.jsx)(d.A, {
+    applicationId: L.id,
     onAction: P,
     onClose: D
-  }) : null : U || !k || null == x || V ? (0, l.A)(R) ? (0, r.jsx)(I.A, {
+  }) : null : U || !k || null == L || F ? (0, l.A)(R) ? (0, r.jsx)(I.A, {
     platformType: N.fg2.XBOX,
     icon: () => (0, r.jsx)(E.A, {}),
     onAction: P
-  }) : (0, o.A)(R) ? (0, r.jsx)(I.A, {
+  }) : (0, s.A)(R) ? (0, r.jsx)(I.A, {
     platformType: N.fg2.PLAYSTATION,
     icon: () => (0, r.jsx)(g.A, {}),
     onAction: P
   }) : (0, c.A)(R) ? (0, r.jsx)(T.A, {
     activity: R,
     onAction: P
-  }) : (0, a.A)(R, N.jUm.JOIN) || (0, s.A)(R) ? (0, r.jsx)(v.A, {
+  }) : (0, a.A)(R, N.jUm.JOIN) || (0, o.A)(R) ? (0, r.jsx)(v.A, {
     user: n,
     activity: R,
     onAction: P,
@@ -84,13 +84,13 @@ function R(e) {
     onAction: P,
     onClose: D
   }) : null : (0, r.jsx)(C.A, {
-    application: x,
+    application: L,
     onAction: P,
     onClose: D,
     analyticsLocations: G
   }))();
   return null == B ? null : (0, r.jsx)("div", {
-    className: L,
+    className: x,
     children: B
   })
 }

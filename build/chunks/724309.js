@@ -12,7 +12,7 @@ module.exports = function(e) {
       begin: n,
       relevance: 0
     },
-    s = {
+    o = {
       scope: "number",
       relevance: 0,
       variants: [{
@@ -29,7 +29,7 @@ module.exports = function(e) {
         match: /[-+]?([1-9][0-9]*|0)N?/
       }]
     },
-    o = {
+    s = {
       scope: "character",
       variants: [{
         match: /\\o[0-3]?[0-7]{1,2}/
@@ -87,7 +87,7 @@ module.exports = function(e) {
       relevance: 0,
       starts: m
     },
-    E = [u, h, o, l, c, d, _, p, s, f, a];
+    E = [u, h, s, l, c, d, _, p, o, f, a];
   return h.contains = [{
     beginKeywords: r,
     keywords: {
@@ -106,6 +106,6 @@ module.exports = function(e) {
     name: "Clojure",
     aliases: ["clj", "edn"],
     illegal: /\S/,
-    contains: [u, h, o, l, c, d, _, p, s, f]
+    contains: [u, h, s, l, c, d, _, p, o, f]
   }
 }

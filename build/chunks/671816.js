@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 671816, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92201 **/
+/** chunk id: 671816, original params: e,t,r (module,exports,require) **/
 module.exports = {
   t: "hoverCard_fdda30"
 }

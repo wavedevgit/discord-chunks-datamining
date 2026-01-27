@@ -35,8 +35,8 @@ function h(e) {
   if (null == t) return;
   let n = i.A.getChannel(t);
   if (null != n && n.isGroupDM()) {
-    let e = n.recipients.filter(e => s.A.isBlocked(e)),
-      r = n.recipients.filter(e => s.A.isIgnored(e));
+    let e = n.recipients.filter(e => o.A.isBlocked(e)),
+      r = n.recipients.filter(e => o.A.isIgnored(e));
     (e.length > 0 || r.length > 0) && !n.blockedUserWarningDismissed && !b(t) && (0, c.y)({
       channelId: t,
       blockedUserIds: e,

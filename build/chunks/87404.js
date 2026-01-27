@@ -6,9 +6,9 @@ require.d(exports, {
   H1: () => c,
   Pr: () => u,
   Q9: () => r,
-  _s: () => o,
+  _s: () => s,
   i$: () => l,
-  kP: () => s,
+  kP: () => o,
   qr: () => a
 }), require("./896048.js");
 var r = function(e) {
@@ -16,8 +16,8 @@ var r = function(e) {
 }({});
 let i = [0, 1, 2, 3],
   a = new Set([0, 1]),
-  s = "https://discord.com/safety/understanding-and-avoiding-common-scams",
-  o = "verification",
+  o = "https://discord.com/safety/understanding-and-avoiding-common-scams",
+  s = "verification",
   l = "AGREEMENTS_MODAL_KEY",
   c = "Email Verification",
   u = "PHONE_THEN_EMAIL_INTERSTITIAL_MODAL_KEY"

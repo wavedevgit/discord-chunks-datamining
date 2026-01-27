@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 251494, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 251494, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   X: () => s
 });
@@ -10,6 +9,6 @@ var Chunk775602 = require("./775602.js"),
 let s = {
   binds: ["return"],
   action() {
-    if (!r.A.keyboardModeEnabled && i._.hasSubscribers(a.jej.MODAL_SUBMIT)) return i._.dispatch(a.jej.MODAL_SUBMIT), false
+    if (!r.A.keyboardModeEnabled && i._.hasSubscribers(l.jej.MODAL_SUBMIT)) return i._.dispatch(l.jej.MODAL_SUBMIT), false
   }
 }

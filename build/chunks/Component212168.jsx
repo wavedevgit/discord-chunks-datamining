@@ -1,19 +1,16 @@
-/** Chunk was on web.js **/
-/** chunk id: 212168, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 82220 **/
+/** chunk id: 212168, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => u,
-  i: () => l
+  A: () => s,
+  i: () => u
 });
-var Chunk627968 = require("./627968.js"),
+var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  d = require.n(Chunk503698),
   Chunk446958 = require("./446958.js"),
-  l = function(e) {
-    return e.PREMIUM = "premium", e.LIMITED = "limited", e
-  }({});
-let c = {
+  u = ((r = {}).PREMIUM = "premium", r.LIMITED = "limited", r);
+let o = {
     premium: {
       border: Chunk446958.wU,
       background: Chunk446958.gI
@@ -23,26 +20,26 @@ let c = {
       background: Chunk446958.pm
     }
   },
-  u = Chunk64700.forwardRef(function(e, t) {
+  s = Chunk64700.forwardRef(function(e, n) {
     let {
-      children: n,
-      type: i = "premium",
-      isShown: a,
-      hasBackground: l = false,
+      children: t,
+      type: r = "premium",
+      isShown: l,
+      hasBackground: a = false,
       className: u,
-      backgroundClassName: d
+      backgroundClassName: s
     } = e;
-    if (!a) return n;
+    if (!l) return t;
     let {
       border: f,
-      background: p
-    } = c[i];
-    return (0, r.jsx)("div", {
-      ref: t,
-      className: s()(f, u),
-      children: (0, r.jsx)("div", {
-        className: s()(l ? p : o.Tp, d),
-        children: n
+      background: h
+    } = o[r];
+    return (0, i.jsx)("div", {
+      ref: n,
+      className: d()(f, u),
+      children: (0, i.jsx)("div", {
+        className: d()(a ? h : c.Tp, s),
+        children: t
       })
     })
   })

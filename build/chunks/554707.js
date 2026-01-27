@@ -9,35 +9,35 @@ var Chunk181370 = require("./181370.js"),
   i = require.n(Chunk181370),
   Chunk626584 = require("./626584.js"),
   Chunk910021 = require("./910021.js");
-let o = new Chunk626584.A("WebP");
+let s = new Chunk626584.A("WebP");
 var l = function(e) {
   return e.ALREADY_WEBP = "already_webp", e.UNSUPPORTED_FORMAT = "unsupported_format", e.ANIMATED_IMAGE = "animated_image", e.HAS_TRANSPARENCY = "has_transparency", e.PNG8_FORMAT = "png8_format", e.INSUFFICIENT_SAVINGS = "insufficient_savings", e.CONVERSION_FAILED = "conversion_failed", e.CORRUPTED_FILE = "corrupted_file", e.PIXEL_HASH_MISMATCH = "pixel_hash_mismatch", e.ICC_NON_SRGB_PROFILE = "icc_non_srgb_profile", e.ICC_DETECTION_FAILED = "icc_detection_failed", e.UNKNOWN_ERROR = "unknown_error", e
 }({});
 let c = 0;
 async function u(e) {
   let t, n;
-  if ("image/webp" === e.type) return o.verbose("[WebP] File already WebP format"), "already_webp";
-  if (!["image/png"].includes(e.type)) return o.verbose("[WebP] Unsupported format: ".concat(e.type)), "unsupported_format";
+  if ("image/webp" === e.type) return s.verbose("[WebP] File already WebP format"), "already_webp";
+  if (!["image/png"].includes(e.type)) return s.verbose("[WebP] Unsupported format: ".concat(e.type)), "unsupported_format";
   try {
     t = "function" == typeof e.arrayBuffer ? await e.arrayBuffer() : await new Promise((t, n) => {
       let r = new FileReader;
       r.onload = () => t(r.result), r.onerror = () => n(Error("Failed to read file as ArrayBuffer")), r.readAsArrayBuffer(e)
     })
   } catch (e) {
-    return o.warn("[WebP] Failed to read file data:", e), "conversion_failed"
+    return s.warn("[WebP] Failed to read file data:", e), "conversion_failed"
   }
   try {
-    if (n = s.W.create(t), null == n) throw Error("DiscordImage.create returned null");
-    if (n.hasTransparency()) return o.verbose("[webp] png uses actual transparency - skipping conversion"), "has_transparency";
-    if (n.isAnimated()) return o.verbose("[webp] png is animated (apng) - skipping conversion"), "animated_image";
-    if (n.isPng8()) return o.verbose("[webp] png is PNG8 format (indexed color) - skipping conversion"), "png8_format"
+    if (n = o.W.create(t), null == n) throw Error("DiscordImage.create returned null");
+    if (n.hasTransparency()) return s.verbose("[webp] png uses actual transparency - skipping conversion"), "has_transparency";
+    if (n.isAnimated()) return s.verbose("[webp] png is animated (apng) - skipping conversion"), "animated_image";
+    if (n.isPng8()) return s.verbose("[webp] png is PNG8 format (indexed color) - skipping conversion"), "png8_format"
   } catch (e) {
-    return o.warn("[WebP] PNG analysis failed:", e), "corrupted_file"
+    return s.warn("[WebP] PNG analysis failed:", e), "corrupted_file"
   }
   try {
     if (!await n.hasSrgbIccProfile()) return "icc_non_srgb_profile"
   } catch (e) {
-    return o.warn("[WebP] ICC profile detection failed:", e), "icc_detection_failed"
+    return s.warn("[WebP] ICC profile detection failed:", e), "icc_detection_failed"
   }
   return null
 }
@@ -63,7 +63,7 @@ async function f(e) {
     t.toBlob(e, "image/webp", 1)
   });
   if (null == a) throw Error("failed to convert to webp");
-  let s = performance.now(),
+  let o = performance.now(),
     l = await n.getImageData(0, 0, t.width, t.height);
   n.clearRect(0, 0, t.width, t.height);
   let c = new Image,
@@ -79,8 +79,8 @@ async function f(e) {
     p = d(l),
     _ = d(f),
     h = p === _,
-    m = performance.now() - s;
-  return (o.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(c.width, " ") + "height=".concat(c.height, " ") + "pixelHash=".concat(p, " ") + "mezzanineFileLength={".concat(a.size, "} ") + "mezzaninePixelHash=".concat(_, " ") + "match=".concat(h, " ") + "elapsed_ms=".concat(Math.round(m))), h) ? {
+    m = performance.now() - o;
+  return (s.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(c.width, " ") + "height=".concat(c.height, " ") + "pixelHash=".concat(p, " ") + "mezzanineFileLength={".concat(a.size, "} ") + "mezzaninePixelHash=".concat(_, " ") + "match=".concat(h, " ") + "elapsed_ms=".concat(Math.round(m))), h) ? {
     success: true,
     webpBlob: a,
     pixelHashTimeMs: m
@@ -93,7 +93,7 @@ async function f(e) {
 async function p(e) {
   let t;
   if (null == e) throw Error("file is null or undefined");
-  o.verbose("[WebP] Starting conversion for: ".concat(e.name));
+  s.verbose("[WebP] Starting conversion for: ".concat(e.name));
   let n = performance.now(),
     r = function(t) {
       let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : e.size;
@@ -109,27 +109,27 @@ async function p(e) {
     };
   try {
     let a = await u(e);
-    if (null != a) return o.verbose("[WebP] Conversion rejected: ".concat(a)), r(a);
-    let s = await f(e);
-    if (!s.success || null == s.webpBlob) {
+    if (null != a) return s.verbose("[WebP] Conversion rejected: ".concat(a)), r(a);
+    let o = await f(e);
+    if (!o.success || null == o.webpBlob) {
       var i;
-      return r(null != (i = s.reason) ? i : "unknown_error")
+      return r(null != (i = o.reason) ? i : "unknown_error")
     }
-    let l = s.webpBlob,
+    let l = o.webpBlob,
       d = e.size > 0 ? l.size / e.size : 1,
       p = 1 - d;
-    if (p < c) return o.verbose("[WebP] Insufficient savings: ".concat(Math.round(100 * p), "% < ").concat(100 * c, "% (").concat(e.size, " -> ").concat(l.size, " bytes)")), r("insufficient_savings", l.size);
-    return t = performance.now() - n, o.verbose("[WebP] Conversion successful: ".concat(e.name, " to WebP in ").concat(Math.round(t), "ms")), {
+    if (p < c) return s.verbose("[WebP] Insufficient savings: ".concat(Math.round(100 * p), "% < ").concat(100 * c, "% (").concat(e.size, " -> ").concat(l.size, " bytes)")), r("insufficient_savings", l.size);
+    return t = performance.now() - n, s.verbose("[WebP] Conversion successful: ".concat(e.name, " to WebP in ").concat(Math.round(t), "ms")), {
       success: true,
       originalFile: e,
       convertedBlob: l,
       sizeBefore: e.size,
       sizeAfter: l.size,
       compressionRatio: d,
-      hashTimeMs: s.pixelHashTimeMs,
+      hashTimeMs: o.pixelHashTimeMs,
       compressTimeMs: Math.round(t)
     }
   } catch (t) {
-    return o.error("[WebP] Conversion failed for ".concat(e.name, ":"), t), r("conversion_failed")
+    return s.error("[WebP] Conversion failed for ".concat(e.name, ":"), t), r("conversion_failed")
   }
 }

@@ -58,9 +58,9 @@ function O(e, t, n) {
 }
 
 function v(e) {
-  let t = (0, i.bG)([s.A], () => s.A.getGuildId()),
+  let t = (0, i.bG)([o.A], () => o.A.getGuildId()),
     n = (0, d.JZ)(e, {
-      cooldownDurationMs: o.A.Millis.WEEK,
+      cooldownDurationMs: s.A.Millis.WEEK,
       guildId: t
     }),
     a = (0, r.useCallback)(() => {

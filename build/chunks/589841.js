@@ -4,11 +4,11 @@
 var Chunk404312 = require("./404312.js"),
   i = Object.prototype.hasOwnProperty,
   a = Array.isArray,
-  s = function() {
+  o = function() {
     for (var e = [], t = 0; t < 256; ++t) e.push("%" + ((t < 16 ? "0" : "") + t.toString(16)).toUpperCase());
     return e
   }(),
-  o = function(e) {
+  s = function(e) {
     for (; e.length > 1;) {
       var t = e.pop(),
         n = t.obj[t.prop];
@@ -35,16 +35,16 @@ var Chunk404312 = require("./404312.js"),
       return t
     }
     if (!t || "object" != typeof t) return [t].concat(n);
-    var s = t;
-    return (a(t) && !a(n) && (s = l(t, r)), a(t) && a(n)) ? (n.forEach(function(n, a) {
+    var o = t;
+    return (a(t) && !a(n) && (o = l(t, r)), a(t) && a(n)) ? (n.forEach(function(n, a) {
       if (i.call(t, a)) {
-        var s = t[a];
-        s && "object" == typeof s && n && "object" == typeof n ? t[a] = e(s, n, r) : t.push(n)
+        var o = t[a];
+        o && "object" == typeof o && n && "object" == typeof n ? t[a] = e(o, n, r) : t.push(n)
       } else t[a] = n
     }), t) : Object.keys(n).reduce(function(t, a) {
-      var s = n[a];
-      return i.call(t, a) ? t[a] = e(t[a], s, r) : t[a] = s, t
-    }, s)
+      var o = n[a];
+      return i.call(t, a) ? t[a] = e(t[a], o, r) : t[a] = o, t
+    }, o)
   },
   u = 1024;
 module.exports = {
@@ -64,15 +64,15 @@ module.exports = {
         },
         prop: "o"
       }], n = [], r = 0; r < t.length; ++r)
-      for (var i = t[r], a = i.obj[i.prop], s = Object.keys(a), l = 0; l < s.length; ++l) {
-        var c = s[l],
+      for (var i = t[r], a = i.obj[i.prop], o = Object.keys(a), l = 0; l < o.length; ++l) {
+        var c = o[l],
           u = a[c];
         "object" == typeof u && null !== u && false === n.indexOf(u) && (t.push({
           obj: a,
           prop: c
         }), n.push(u))
       }
-    return o(t), e
+    return s(t), e
   },
   decode: function(e, t, n) {
     var r = e.replace(/\+/g, " ");
@@ -85,30 +85,30 @@ module.exports = {
   },
   encode: function(e, t, n, i, a) {
     if (0 === e.length) return e;
-    var o = e;
-    if ("symbol" == typeof e ? o = Symbol.prototype.toString.call(e) : "string" != typeof e && (o = String(e)), "iso-8859-1" === n) return escape(o).replace(/%u[0-9a-f]{4}/gi, function(e) {
+    var s = e;
+    if ("symbol" == typeof e ? s = Symbol.prototype.toString.call(e) : "string" != typeof e && (s = String(e)), "iso-8859-1" === n) return escape(s).replace(/%u[0-9a-f]{4}/gi, function(e) {
       return "%26%23" + parseInt(e.slice(2), 16) + "%3B"
     });
-    for (var l = "", c = 0; c < o.length; c += u) {
-      for (var d = o.length >= u ? o.slice(c, c + u) : o, f = [], p = 0; p < d.length; ++p) {
+    for (var l = "", c = 0; c < s.length; c += u) {
+      for (var d = s.length >= u ? s.slice(c, c + u) : s, f = [], p = 0; p < d.length; ++p) {
         var _ = d.charCodeAt(p);
         if (45 === _ || 46 === _ || 95 === _ || 126 === _ || _ >= 48 && _ <= 57 || _ >= 65 && _ <= 90 || _ >= 97 && _ <= 122 || a === r.RFC1738 && (40 === _ || 41 === _)) {
           f[f.length] = d.charAt(p);
           continue
         }
         if (_ < 128) {
-          f[f.length] = s[_];
+          f[f.length] = o[_];
           continue
         }
         if (_ < 2048) {
-          f[f.length] = s[192 | _ >> 6] + s[128 | 63 & _];
+          f[f.length] = o[192 | _ >> 6] + o[128 | 63 & _];
           continue
         }
         if (_ < 55296 || _ >= 57344) {
-          f[f.length] = s[224 | _ >> 12] + s[128 | _ >> 6 & 63] + s[128 | 63 & _];
+          f[f.length] = o[224 | _ >> 12] + o[128 | _ >> 6 & 63] + o[128 | 63 & _];
           continue
         }
-        p += 1, _ = 65536 + ((1023 & _) << 10 | 1023 & d.charCodeAt(p)), f[f.length] = s[240 | _ >> 18] + s[128 | _ >> 12 & 63] + s[128 | _ >> 6 & 63] + s[128 | 63 & _]
+        p += 1, _ = 65536 + ((1023 & _) << 10 | 1023 & d.charCodeAt(p)), f[f.length] = o[240 | _ >> 18] + o[128 | _ >> 12 & 63] + o[128 | _ >> 6 & 63] + o[128 | 63 & _]
       }
       l += f.join("")
     }

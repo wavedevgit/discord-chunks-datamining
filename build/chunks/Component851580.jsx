@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 851580, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 52199 **/
+/** chunk id: 851580, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  v: () => f
+  v: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk554146 = require("./554146.js"),
@@ -14,20 +13,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk936037 = require("./936037.js");
 let d = Chunk554146.M.FOR_LATER_POPOUT_COACHMARK;
 
-function f(e) {
+function h(e) {
   let {
     location: t,
-    targetElementRef: n
+    targetElementRef: r
   } = e, {
-    enabled: i,
-    inInbox: f
-  } = o.A.useExperiment({
+    enabled: l,
+    inInbox: h
+  } = i.A.useExperiment({
     location: "ForLaterCoachmarkWeb"
   }, {
     autoTrackExposure: false
-  }), p = t === (f ? "inbox-button" : "bookmarks-button"), _ = i && p ? [d] : [], [h, m] = (0, s.kn)(_, true);
-  return h !== d ? null : (0, r.jsx)(a.AM, {
-    targetElementRef: n,
+  }), [p, f] = (0, a.kn)(l && t === (h ? "inbox-button" : "bookmarks-button") ? [d] : [], true);
+  return p !== d ? null : (0, n.jsx)(s.AM, {
+    targetElementRef: r,
     gradientColor: "purple",
     position: "bottom",
     align: "right",
@@ -35,12 +34,12 @@ function f(e) {
     caretConfig: {
       align: "end"
     },
-    onRequestClose: () => m(l.i.USER_DISMISS),
+    onRequestClose: () => f(o.i.USER_DISMISS),
     title: c.intl.string(c.t.qPbFK2),
     body: c.intl.string(c.t.URrJq1),
     actions: [{
       text: c.intl.string(c.t["NX+WJN"]),
-      onClick: () => m(l.i.USER_DISMISS)
+      onClick: () => f(o.i.USER_DISMISS)
     }],
     graphic: {
       type: "image",

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk3203 = require("./3203.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk308528 = require("./308528.js"),
@@ -83,9 +83,9 @@ function R(e) {
     analyticsLocations: P
   } = (0, u.Ay)(), {
     trackUserProfileAction: D
-  } = (0, E.NJ)(), [x, L] = i.useState(""), [j, M] = i.useState((0, f.x7)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useRef(null), {
-    Component: V
-  } = (0, o.V)(), F = i.useMemo(() => N(T({}, d.oU.USER_PROFILE), {
+  } = (0, E.NJ)(), [L, x] = i.useState(""), [M, j] = i.useState((0, f.x7)(L)), k = i.useRef(false), U = i.useRef(null), G = i.useRef(null), {
+    Component: F
+  } = (0, s.V)(), V = i.useMemo(() => N(T({}, d.oU.USER_PROFILE), {
     disableAutoFocus: S
   }), [S]), B = i.useCallback(async () => {
     (0, h.xs)(t.id), await c.A.openPrivateChannel({
@@ -104,28 +104,28 @@ function R(e) {
     children: [(0, r.jsx)(l.K0, {
       size: "sm",
       variant: "icon-only",
-      icon: V,
+      icon: F,
       "aria-label": A.intl.string(A.t.I61IsE),
       onClick: B
     }), (0, r.jsx)(b.A, {
       user: t,
       analyticsLocations: P
     })]
-  }), [V, B, t, P]);
+  }), [F, B, t, P]);
   return (0, r.jsx)(p.Ay, {
-    className: s()(I.kL, {
+    className: o()(I.kL, {
       [I.UX]: C
     }),
     editorClassName: I.EN,
-    type: F,
+    type: V,
     placeholder: A.intl.formatToPlainString(A.t["0ZQw/X"], {
       name: g.Ay.getName(a, m, t)
     }),
     channel: w,
-    textValue: x,
-    richValue: j,
+    textValue: L,
+    richValue: M,
     onChange: (e, t, n) => {
-      t !== x && (L(t), M(n))
+      t !== L && (x(t), j(n))
     },
     focused: k.current,
     onFocus: () => {

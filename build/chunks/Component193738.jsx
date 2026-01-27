@@ -21,7 +21,7 @@ function f(e) {
     themeType: n
   } = e, {
     newestAnalyticsLocation: f
-  } = (0, a.Ay)(), p = (0, i.bG)([s.default], () => s.default.getId() === t.id), _ = (0, i.bG)([o.A], () => o.A.getRelationshipType(t.id)), {
+  } = (0, a.Ay)(), p = (0, i.bG)([o.default], () => o.default.getId() === t.id), _ = (0, i.bG)([s.A], () => s.A.getRelationshipType(t.id)), {
     gameFriends: h,
     hasOutgoingPendingGameFriends: m,
     hasIncomingPendingGameFriends: g

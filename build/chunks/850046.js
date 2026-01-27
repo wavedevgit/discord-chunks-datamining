@@ -44,11 +44,11 @@ function _(e, t, n) {
 }
 let h = {
   [Chunk205338.A.MARVEL_RIVALS]: e => {
-    var t, n, r, i, a, s, o, l;
+    var t, n, r, i, a, o, s, l;
     let c = null == (n = e.data) || null == (t = n.primary) ? true : t.season,
       d = null == (i = e.data) || null == (r = i.primary) ? true : r.rank_name,
-      f = (0, u.a)(null == (s = e.data) || null == (a = s.primary) ? true : a.rank_image),
-      p = (0, u.a)(null == (l = e.data) || null == (o = l.primary) ? true : o.featured_played_character_image);
+      f = (0, u.a)(null == (o = e.data) || null == (a = o.primary) ? true : a.rank_image),
+      p = (0, u.a)(null == (l = e.data) || null == (s = l.primary) ? true : s.featured_played_character_image);
     return null == c || null == d || null == p ? null : {
       previewText: "".concat(c, ": ").concat(d),
       previewTextShort: d,
@@ -59,13 +59,13 @@ let h = {
   [Chunk205338.A.WUTHERING_WAVES]: (e, t) => {
     var n, r;
     let i = e.username,
-      s = _(e, "union_level", a.f.NUMBER),
-      o = (0, u.a)(null == (r = e.data) || null == (n = r.primary) ? true : n.featured_played_character_image);
-    return null == i || null == s || null == o ? null : {
-      previewText: "".concat(i, ": Level ").concat(t.format(s)),
-      previewTextShort: "Level ".concat(t.format(s)),
+      o = _(e, "union_level", a.f.NUMBER),
+      s = (0, u.a)(null == (r = e.data) || null == (n = r.primary) ? true : n.featured_played_character_image);
+    return null == i || null == o || null == s ? null : {
+      previewText: "".concat(i, ": Level ").concat(t.format(o)),
+      previewTextShort: "Level ".concat(t.format(o)),
       previewIcon: null,
-      previewImage: o
+      previewImage: s
     }
   }
 };
@@ -88,21 +88,21 @@ function g(e, t, n, r) {
 }
 
 function E(e, t) {
-  let n = (0, s.A)(t),
+  let n = (0, o.A)(t),
     {
       data: i
     } = (0, l.FY)(),
     {
       data: a
-    } = (0, o.P)(e),
+    } = (0, s.P)(e),
     u = (0, d.A)();
   return r.useMemo(() => Object.fromEntries(t.map(e => {
     var t;
     let r = null == i ? true : i.find(t => t.applicationId === e),
-      s = n.find(t => (null == t ? true : t.id) === e),
-      o = null == a || null == (t = a.find(t => t.application_id === e)) ? true : t.profile;
-    if (null == r || null == s || null == o) return null;
-    let l = m(r, s, o, u);
+      o = n.find(t => (null == t ? true : t.id) === e),
+      s = null == a || null == (t = a.find(t => t.application_id === e)) ? true : t.profile;
+    if (null == r || null == o || null == s) return null;
+    let l = m(r, o, s, u);
     return null == l ? null : [e, l]
   }).filter(c.Vq)), [n, i, a, u, t])
 }

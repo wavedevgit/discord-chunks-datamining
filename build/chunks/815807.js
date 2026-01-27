@@ -23,11 +23,11 @@ function u(e) {
 }
 
 function d(e, t, n, r) {
-  var i, a, s;
-  let o;
-  return o = r ? e ? c.t.i9DXqM : c.t["Z/l+qu"] : e ? c.t.CLuzw5 : c.t.PirBBE, c.intl.formatToPlainString(o, {
+  var i, a, o;
+  let s;
+  return s = r ? e ? c.t.i9DXqM : c.t["Z/l+qu"] : e ? c.t.CLuzw5 : c.t.PirBBE, c.intl.formatToPlainString(s, {
     reactions: t,
-    emojiName: null != (i = null == (s = u(n)) || null == (a = s.replace(/[:_]/g, " ")) ? true : a.trim()) ? i : ""
+    emojiName: null != (i = null == (o = u(n)) || null == (a = o.replace(/[:_]/g, " ")) ? true : a.trim()) ? i : ""
   })
 }
 
@@ -49,7 +49,7 @@ function p(e, t) {
 }
 
 function _(e) {
-  return e.isThread() ? o.JJy.THREAD_TEXT_AREA : e.isForumPost() ? o.JJy.FORUM_CHANNEL_TEXT_AREA : e.isGuildVocal() ? o.JJy.TEXT_IN_VOICE : o.JJy.CHANNEL_TEXT_AREA
+  return e.isThread() ? s.JJy.THREAD_TEXT_AREA : e.isForumPost() ? s.JJy.FORUM_CHANNEL_TEXT_AREA : e.isGuildVocal() ? s.JJy.TEXT_IN_VOICE : s.JJy.CHANNEL_TEXT_AREA
 }
 
 function h(e) {
@@ -61,7 +61,7 @@ function h(e) {
 }
 
 function m(e, t) {
-  i.Zp.updateSetting(e), s.default.track(o.HAw.NOTIFICATION_SETTINGS_UPDATED, {
+  i.Zp.updateSetting(e), o.default.track(s.HAw.NOTIFICATION_SETTINGS_UPDATED, {
     update_type: l.Y.ACCOUNT,
     reaction_notifications: e,
     reaction_notifications_old: t

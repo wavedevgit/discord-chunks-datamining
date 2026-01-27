@@ -50,15 +50,15 @@ function f(e, t) {
   }), e
 }
 
-function p(e, t, i, s) {
-  let c = o.default.getCurrentUser();
+function p(e, t, i, o) {
+  let c = s.default.getCurrentUser();
   (null != t || l.Ay.canUseCustomCallSounds(c)) && (0, a.L3)(e, async () => {
     let {
       default: e
     } = await n.e("86266").then(n.bind(n, 313921));
     return n => (0, r.jsx)(e, f(u({}, n), {
       soundGuild: t,
-      activeCallGuildId: s,
+      activeCallGuildId: o,
       sound: i
     }))
   })
@@ -67,8 +67,8 @@ function p(e, t, i, s) {
 function _(e, t) {
   return i.useCallback(n => {
     n.stopPropagation();
-    let r = s.A.getGuild(e.guildId),
-      i = o.default.getCurrentUser();
+    let r = o.A.getGuild(e.guildId),
+      i = s.default.getCurrentUser();
     (null != r || l.Ay.canUseCustomCallSounds(i)) && p(n, r, e, t)
   }, [e, t])
 }

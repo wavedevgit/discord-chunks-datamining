@@ -45,11 +45,11 @@ function D(e) {
   P.start(e + Math.random() * N, c.r)
 }
 
-function x() {
-  return !p.l_.getSetting() && (D(w), L())
+function L() {
+  return !p.l_.getSetting() && (D(w), x())
 }
 
-function L() {
+function x() {
   if (!(0, b.S)() || p.l_.getSetting()) returnfalse;
   let e = h.A.entitledBranchIds,
     t = [];
@@ -58,18 +58,18 @@ function L() {
   l.h.wait(() => c.r(t))
 }
 
-function j() {
+function M() {
   if (!(0, b.S)()) returnfalse;
   for (let e of T) {
     let {
       applicationId: t,
       branchId: n
     } = (0, y.r0)(e);
-    null != f.A.getApplication(t) && (T.delete(e), M(t, n))
+    null != f.A.getApplication(t) && (T.delete(e), j(t, n))
   }
 }
 
-function M(e, t) {
+function j(e, t) {
   if (null != A[t] && g.A.shouldBeInstalled(e, t)) {
     let n = A[t],
       r = n.manifestIds,
@@ -102,14 +102,14 @@ function U(e) {
       } = e;
       return t
     }),
-    s = i.id;
+    o = i.id;
   I.delete(n), A[n] = {
-    id: s,
+    id: o,
     applicationId: t,
     branchId: n,
     locale: r,
     manifestIds: a
-  }, M(t, n)
+  }, j(t, n)
 }
 
 function G(e) {
@@ -119,14 +119,14 @@ function G(e) {
   v.delete(t), I.add(t)
 }
 
-function V(e) {
+function F(e) {
   let {
     buildId: t
   } = e;
   S.hasOwnProperty(t) || (S[t] = null)
 }
 
-function F(e) {
+function V(e) {
   let {
     buildId: t,
     sizeKB: n
@@ -185,7 +185,7 @@ function K(e) {
 }
 class z extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([h.A], L), this.waitFor(f.A, m.A, g.A, h.A, _.A)
+    this.syncWith([h.A], x), this.waitFor(f.A, m.A, g.A, h.A, _.A)
   }
   getTargetBuildId(e, t) {
     return null == A[t] ? null : A[t].id
@@ -208,13 +208,13 @@ class z extends(r = Chunk311907.Ay.Store) {
 }
 O(z, "displayName", "ApplicationBuildStore");
 let q = new z(Chunk73153.h, {
-  CONNECTION_OPEN: x,
-  GAMES_DATABASE_UPDATE: j,
+  CONNECTION_OPEN: L,
+  GAMES_DATABASE_UPDATE: M,
   APPLICATION_BUILD_FETCH_START: k,
   APPLICATION_BUILD_FETCH_SUCCESS: U,
   APPLICATION_BUILD_NOT_FOUND: G,
-  APPLICATION_BUILD_SIZE_FETCH_START: V,
-  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: F,
+  APPLICATION_BUILD_SIZE_FETCH_START: F,
+  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: V,
   APPLICATION_BUILD_SIZE_FETCH_FAIL: B,
   APPLICATION_BRANCHES_FETCH_SUCCESS: H,
   APPLICATION_BRANCHES_FETCH_FAIL: Y,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
   Chunk397927 = require("./397927.js"),
@@ -20,12 +20,12 @@ var Chunk627968 = require("./627968.js"),
 let m = l().memoize(e => "".concat(e * _.he.NonDiversityPerRow, "px ").concat(e * Math.ceil(u.Ay.numNonDiversitySprites / _.he.NonDiversityPerRow), "px")),
   g = l().memoize(e => "".concat(e * _.he.DiversityPerRow, "px ").concat(e * Math.ceil(u.Ay.numDiversitySprites / _.he.DiversityPerRow), "px")),
   E = (e, t, r) => {
-    let i, a, s;
+    let i, a, o;
     if (!e.useSpriteSheet) return;
-    let o = null != e.index ? e.index : 0;
-    e.hasDiversity ? (i = n(28135)("./spritesheet-".concat(t, "-").concat(r, ".png")), a = g(r), s = _.he.DiversityPerRow) : (i = n(883740)("./spritesheet-emoji-".concat(r, ".png")), a = m(r), s = _.he.NonDiversityPerRow);
-    let l = -o % s * r,
-      c = -Math.floor(o / s) * r;
+    let s = null != e.index ? e.index : 0;
+    e.hasDiversity ? (i = n(28135)("./spritesheet-".concat(t, "-").concat(r, ".png")), a = g(r), o = _.he.DiversityPerRow) : (i = n(883740)("./spritesheet-emoji-".concat(r, ".png")), a = m(r), o = _.he.NonDiversityPerRow);
+    let l = -s % o * r,
+      c = -Math.floor(s / o) * r;
     return {
       backgroundImage: "url('".concat(i, "')"),
       backgroundPosition: "".concat(l, "px ").concat(c, "px"),
@@ -39,7 +39,7 @@ let m = l().memoize(e => "".concat(e * _.he.NonDiversityPerRow, "px ").concat(e 
       emoji: t,
       size: n,
       surrogateCodePoint: a,
-      allowAnimatedEmoji: o,
+      allowAnimatedEmoji: s,
       "aria-label": l,
       isLocked: u
     } = e, m = (() => {
@@ -47,7 +47,7 @@ let m = l().memoize(e => "".concat(e * _.he.NonDiversityPerRow, "px ").concat(e 
         var e;
         let i = null == t.id ? t.url : f.Ay.getEmojiURL({
           id: t.id,
-          animated: o && t.animated,
+          animated: s && t.animated,
           size: _.L4
         });
         return null != i ? (0, r.jsx)(d.A, {
@@ -59,7 +59,7 @@ let m = l().memoize(e => "".concat(e * _.he.NonDiversityPerRow, "px ").concat(e 
         }) : null
       }
       return (0, r.jsx)("div", {
-        className: s()(h.xA, {
+        className: o()(h.xA, {
           [h.N1]: u
         }),
         style: E(t, a, n),

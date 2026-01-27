@@ -1,37 +1,37 @@
-/** Chunk was on web.js **/
-/** chunk id: 692001, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 692001, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk595042 = require("./595042.js"),
   Chunk670200 = require("./670200.js");
-module.exports = function(e, t, n, a, s) {
-  var o = i(e.getSelection()),
-    l = r.decode(t),
-    c = l.blockKey,
-    u = e.getBlockTree(c),
-    d = u && u.getIn([l.decoratorKey, "leaves", l.leafKey]),
-    f = r.decode(a),
-    p = f.blockKey,
-    _ = e.getBlockTree(p),
-    h = _ && _.getIn([f.decoratorKey, "leaves", f.leafKey]);
-  if (!d || !h) return o;
-  var m = d.get("start"),
-    g = h.get("start"),
-    E = d ? m + n : null,
-    y = h ? g + s : null;
-  if (o.getAnchorKey() === c && o.getAnchorOffset() === E && o.getFocusKey() === p && o.getFocusOffset() === y) return o;
+module.exports = function(t, e, r, o, a) {
+  var s = i(t.getSelection()),
+    u = n.decode(e),
+    c = u.blockKey,
+    l = t.getBlockTree(c),
+    f = l && l.getIn([u.decoratorKey, "leaves", u.leafKey]),
+    p = n.decode(o),
+    h = p.blockKey,
+    d = t.getBlockTree(h),
+    g = d && d.getIn([p.decoratorKey, "leaves", p.leafKey]);
+  if (!f || !g) return s;
+  var y = f.get("start"),
+    v = g.get("start"),
+    m = f ? y + r : null,
+    _ = g ? v + a : null;
+  if (s.getAnchorKey() === c && s.getAnchorOffset() === m && s.getFocusKey() === h && s.getFocusOffset() === _) return s;
   var b = false;
-  if (c === p) {
-    var O = d.get("end"),
-      v = h.get("end");
-    b = g === m && v === O ? s < n : g < m
-  } else b = e.getCurrentContent().getBlockMap().keySeq().skipUntil(function(e) {
-    return e === c || e === p
-  }).first() === p;
-  return o.merge({
+  if (c === h) {
+    var S = f.get("end"),
+      w = g.get("end");
+    b = v === y && w === S ? a < r : v < y
+  } else b = t.getCurrentContent().getBlockMap().keySeq().skipUntil(function(t) {
+    return t === c || t === h
+  }).first() === h;
+  return s.merge({
     anchorKey: c,
-    anchorOffset: E,
-    focusKey: p,
-    focusOffset: y,
+    anchorOffset: m,
+    focusKey: h,
+    focusOffset: _,
     isBackward: b
   })
 }

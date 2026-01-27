@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk178636 = require("./178636.js"),
   i = require.n(Chunk178636),
   Chunk731854 = require("./731854.js");
-let s = [{
+let o = [{
   name: "H264",
   encode: true,
   decode: true
@@ -19,8 +19,8 @@ let s = [{
   decode: true
 }];
 
-function o(e, t) {
-  let n = t.concat(s),
+function s(e, t) {
+  let n = t.concat(o),
     r = [];
   return n.forEach(t => {
     let n = e.find(e => t.name === e.name);
@@ -33,7 +33,7 @@ function o(e, t) {
 }
 
 function l(e) {
-  var t, n, r, s, o, l;
+  var t, n, r, o, s, l;
   let c = [];
   return e.has(a.fd.SIGNAL_AV1_DECODE) ? c.push({
     name: "AV1",
@@ -45,13 +45,13 @@ function l(e) {
     decode: true
   }), c.push({
     name: "H265",
-    encode: "u" < typeof window || (null == (n = window) || null == (t = n.DiscordNative) ? true : t.process.platform) !== "darwin" || (null == (s = window) || null == (r = s.DiscordNative) ? true : r.os.arch) === "arm64" && i().satisfies(null == (l = window) || null == (o = l.DiscordNative) ? true : o.os.release, a.Dk),
+    encode: "u" < typeof window || (null == (n = window) || null == (t = n.DiscordNative) ? true : t.process.platform) !== "darwin" || (null == (o = window) || null == (r = o.DiscordNative) ? true : r.os.arch) === "arm64" && i().satisfies(null == (l = window) || null == (s = l.DiscordNative) ? true : s.os.release, a.Dk),
     decode: !(null == e ? true : e.has(a.fd.H265_HARDWARE_ONLY)) || (null == e ? true : e.has(a.fd.H265_HARDWARE_DECODE_AVAILABLE))
   }), c
 }
 
 function c(e, t) {
-  return o(JSON.parse(e).map(e => ({
+  return s(JSON.parse(e).map(e => ({
     name: u(e.codec),
     encode: e.encode,
     decode: e.decode

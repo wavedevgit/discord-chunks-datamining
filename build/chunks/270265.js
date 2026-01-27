@@ -2,23 +2,23 @@
 /** chunk id: 270265, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => s
+  o: () => o
 });
 var Chunk253018 = require("./253018.js"),
   Chunk35277 = require("./35277.js"),
   Chunk711371 = require("./711371.js");
-let s = (e, t) => {
+let o = (e, t) => {
   let {
     addMark: n,
-    removeMark: s,
-    deleteBackward: o,
+    removeMark: o,
+    deleteBackward: s,
     deleteForward: l,
     setFragmentData: c,
     insertData: u,
     insertFragmentData: d,
     insertTextData: f
   } = e;
-  return (e = (0, r.o$)(e)).addMark = n, e.removeMark = s, e.setFragmentData = c, e.insertData = u, e.insertFragmentData = d, e.insertTextData = f, e.deleteBackward = n => {
+  return (e = (0, r.o$)(e)).addMark = n, e.removeMark = o, e.setFragmentData = c, e.insertData = u, e.insertFragmentData = d, e.insertTextData = f, e.deleteBackward = n => {
     if ("line" === n && !t) {
       let t = a.ZF.toPoint(e.selection);
       if (null != t) {
@@ -42,7 +42,7 @@ let s = (e, t) => {
         }
       }
     }
-    o(n)
+    s(n)
   }, e.deleteForward = n => {
     if ("line" === n && !t) {
       let t = a.ZF.toPoint(e.selection);

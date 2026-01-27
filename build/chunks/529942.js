@@ -98,21 +98,21 @@ function I(e) {
 
 function S(e) {
   let t = d.A.getChannelId(e),
-    n = s.A.getChannel(t);
+    n = o.A.getChannel(t);
   if (!(null != t && (0, g.jq)(t)) && !u.A.can(m.xBc.VIEW_CHANNEL, n)) {
-    let t = o.Ay.getDefaultChannel(e);
+    let t = s.Ay.getDefaultChannel(e);
     null != t && (0, a.pX)(m.BVt.CHANNEL(e, t.id))
   }
 }
 
 function T(e, t) {
-  let n = [...o.Ay.getSelectableChannelIds(e), ...o.Ay.getVocalChannelIds(e)],
+  let n = [...s.Ay.getSelectableChannelIds(e), ...s.Ay.getVocalChannelIds(e)],
     r = Array.from(t);
-  o.Ay.addConditionalChangeListener(() => {
+  s.Ay.addConditionalChangeListener(() => {
     let t = l.Ay.getSelfMember(e);
     if (null == t) returnfalse;
     if (r.some(e => !t.roles.includes(e))) returntrue;
-    let i = [...o.Ay.getSelectableChannelIds(e), ...o.Ay.getVocalChannelIds(e)].filter(e => !n.includes(e));
+    let i = [...s.Ay.getSelectableChannelIds(e), ...s.Ay.getVocalChannelIds(e)].filter(e => !n.includes(e));
     return i.length > 0 && C(e, i, []), false
   })
 }

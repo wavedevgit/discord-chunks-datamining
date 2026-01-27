@@ -25,30 +25,30 @@ function p(e) {
       type: "devLink"
     }),
     react: (e, t, n) => {
-      let o = e.target[0];
-      return (0, a.h4)(o) ? (0, r.jsxs)(i.Fragment, {
+      let s = e.target[0];
+      return (0, a.h4)(s) ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("span", {
-          children: o
-        }), (0, r.jsx)(s.A, {
-          url: o
-        }, o)]
-      }, n.key) : (0, l.W0)(o) ? (0, r.jsxs)(i.Fragment, {
+          children: s
+        }), (0, r.jsx)(o.A, {
+          url: s
+        }, s)]
+      }, n.key) : (0, l.W0)(s) ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("span", {
-          children: o
+          children: s
         }), (0, r.jsx)(c.Z, {
-          url: o
+          url: s
         })]
-      }, n.key) : (0, u.i)(o) ? (0, r.jsx)(i.Fragment, {
+      }, n.key) : (0, u.i)(s) ? (0, r.jsx)(i.Fragment, {
         children: (0, r.jsxs)(i.Suspense, {
           fallback: null,
           children: [(0, r.jsx)("span", {
-            children: o
+            children: s
           }), (0, r.jsx)(d, {
-            url: o
+            url: s
           })]
         })
       }, n.key) : (0, r.jsx)("span", {
-        children: o
+        children: s
       }, n.key)
     },
     order: 6

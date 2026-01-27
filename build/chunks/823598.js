@@ -7,11 +7,11 @@ function a() {
   if (null == r) throw Error("Native dependencies have not been injected.")
 }
 
-function s(e) {
+function o(e) {
   r = e
 }
 
-function o() {
+function s() {
   return a(), r.supported()
 }
 
@@ -28,8 +28,8 @@ function u() {
 }
 require.d(exports, {
   $b: () => l,
-  $j: () => o,
-  WQ: () => s,
+  $j: () => s,
+  WQ: () => o,
   i0: () => c,
   lE: () => u
 }), require("./65821.js")

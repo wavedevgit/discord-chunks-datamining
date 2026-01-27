@@ -36,11 +36,11 @@ function u(e) {
     avatarPlaceholderSrc: y,
     avatarDecorationSrc: b,
     eventHandlers: O
-  } = (0, o.A)({
+  } = (0, s.A)({
     user: h,
     guildId: n,
     avatarDecorationOverride: p,
-    size: (0, s.Te)(u),
+    size: (0, o.Te)(u),
     onlyAnimateOnHoverOrFocus: f
   });
   return {

@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
   Chunk985018 = require("./985018.jsx");
-let s = 60,
-  o = 3600,
+let o = 60,
+  s = 3600,
   l = 86400,
   c = 2592e3,
   u = 31104e3,
@@ -36,16 +36,16 @@ let s = 60,
           count: t
         })
       };
-    if (r < s) {
+    if (r < o) {
       let e = (null == f ? true : f.seconds) != null ? h("seconds", r) : h("minutes", 1);
       if (null != e) return e
     }
-    if (r < o) {
-      let e = h("minutes", Math.floor(r / s));
+    if (r < s) {
+      let e = h("minutes", Math.floor(r / o));
       if (null != e) return e
     }
     if (r < l) {
-      let e = h("hours", Math.floor(r / o));
+      let e = h("hours", Math.floor(r / s));
       if (null != e) return e
     }
     if (r < c) {

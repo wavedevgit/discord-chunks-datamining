@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk988794 = require("./988794.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -104,7 +104,7 @@ class b extends(r = Chunk311907.Ay.Store) {
   }
   isPublic(e) {
     var t;
-    return (null == (t = this.getStageInstanceByChannel(e)) ? true : t.privacy_level) === s.dD.PUBLIC
+    return (null == (t = this.getStageInstanceByChannel(e)) ? true : t.privacy_level) === o.dD.PUBLIC
   }
   getStageInstancesByGuild(e) {
     var t;
@@ -114,7 +114,7 @@ class b extends(r = Chunk311907.Ay.Store) {
     return Object.values(u)
   }
 }
-o(b, "displayName", "StageInstanceStore");
+s(b, "displayName", "StageInstanceStore");
 let O = new b(Chunk73153.h, {
   CONNECTION_OPEN: f,
   GUILD_CREATE: p,

@@ -1,30 +1,29 @@
-/** Chunk was on web.js **/
-/** chunk id: 785796, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93140 **/
+/** chunk id: 785796, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => s
 }), require("./896048.js");
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
-let s = "".concat(Chunk652215.Joy, "/api/v2/scheduled-maintenances"),
-  o = "".concat(Chunk652215.Joy, "/api/v2/incidents/unresolved.json"),
-  l = {
+let o = "".concat(Chunk652215.Joy, "/api/v2/scheduled-maintenances"),
+  a = "".concat(Chunk652215.Joy, "/api/v2/incidents/unresolved.json"),
+  s = {
     checkIncidents() {
       Promise.all([r.Bo.get({
-        url: "".concat(s, "/active.json"),
+        url: "".concat(o, "/active.json"),
         rejectWithError: true
-      }), r.Bo.get(o)]).then(e => {
-        let [t, n] = e, [r] = t.body.scheduled_maintenances, [a] = n.body.incidents;
+      }), r.Bo.get(a)]).then(e => {
+        let [t, n] = e, [r] = t.body.scheduled_maintenances, [l] = n.body.incidents;
         i.h.dispatch({
           type: "STATUS_PAGE_INCIDENT",
-          incident: a || r
+          incident: l || r
         })
       })
     },
     checkScheduledMaintenances() {
       r.Bo.get({
-        url: "".concat(s, "/upcoming.json"),
+        url: "".concat(o, "/upcoming.json"),
         rejectWithError: true
       }).then(e => {
         let [t] = e.body.scheduled_maintenances;

@@ -66,18 +66,18 @@ let i = {
   update(e, t, n, i) {
     let {
       description: a,
-      filename: s,
-      spoiler: o,
+      filename: o,
+      spoiler: s,
       thumbnail: l
     } = i;
     r.h.dispatch({
       type: "UPLOAD_ATTACHMENT_UPDATE_FILE",
       channelId: e,
       id: t,
-      filename: s,
+      filename: o,
       description: a,
       thumbnail: l,
-      spoiler: o,
+      spoiler: s,
       draftType: n
     })
   },
@@ -101,7 +101,7 @@ let i = {
       channelId: n,
       id: i,
       draftType: a,
-      allowOptimization: s
+      allowOptimization: o
     } = e;
     r.h.dispatch({
       type: "UPLOAD_ATTACHMENT_SET_FILE",
@@ -109,7 +109,7 @@ let i = {
       id: i,
       file: t,
       draftType: a,
-      allowOptimization: s
+      allowOptimization: o
     })
   }
 }

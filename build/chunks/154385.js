@@ -2,16 +2,16 @@
 /** chunk id: 154385, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => s,
+  C: () => o,
   h: () => a
 });
 var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js");
 
 function a() {
-  return r.useContext(s)
+  return r.useContext(o)
 }
-let s = Chunk64700.createContext({
+let o = Chunk64700.createContext({
   value: true,
   options: [],
   selectedOptions: [],

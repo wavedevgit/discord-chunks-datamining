@@ -16,9 +16,9 @@ module.exports = function(e, t, n) {
     h = _;
   if (n) p = false, d = a;
   else if (f >= c) {
-    var m = t ? null : o(e);
+    var m = t ? null : s(e);
     if (m) return l(m);
-    p = false, d = s, h = new r
+    p = false, d = o, h = new r
   } else h = t ? [] : _;
   n: for (; ++u < f;) {
     var g = e[u],

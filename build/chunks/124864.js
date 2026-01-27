@@ -8,7 +8,7 @@ var Chunk890167 = require("./890167.js"),
   Chunk643479 = require("./643479.js"),
   Chunk801765 = require("./801765.js"),
   Chunk105423 = require("./105423.js");
-let o = 8,
+let s = 8,
   l = 10,
   c = {
     K3_III: 78420
@@ -26,9 +26,9 @@ let o = 8,
   };
 
 function f(e, t, n, c) {
-  let u = r.A.getByteOrder(e, t + n + o),
+  let u = r.A.getByteOrder(e, t + n + s),
     d = t + n,
-    f = (0, a.y)(e, s.SI, d, d + l, u, c, true);
+    f = (0, a.y)(e, o.SI, d, d + l, u, c, true);
   return p(f) && (f = (0, i.dP)({}, f, _(e, d + f.LevelInfo.__offset, u)), delete f.LevelInfo), f
 }
 
@@ -44,15 +44,15 @@ function _(e, t, n) {
     value: a,
     description: h(a)
   };
-  let s = e.getInt16(t + u.ROLL_ANGLE, n === r.A.LITTLE_ENDIAN);
+  let o = e.getInt16(t + u.ROLL_ANGLE, n === r.A.LITTLE_ENDIAN);
   i.RollAngle = {
-    value: s,
-    description: m(s)
-  };
-  let o = e.getInt16(t + u.PITCH_ANGLE, n === r.A.LITTLE_ENDIAN);
-  return i.PitchAngle = {
     value: o,
-    description: g(o)
+    description: m(o)
+  };
+  let s = e.getInt16(t + u.PITCH_ANGLE, n === r.A.LITTLE_ENDIAN);
+  return i.PitchAngle = {
+    value: s,
+    description: g(s)
   }, i
 }
 

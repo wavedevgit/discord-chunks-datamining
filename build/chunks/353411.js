@@ -27,10 +27,10 @@ function E(e) {
     currentUserTrackId: t,
     syncingWithUser: n,
     syncingWithParty: i
-  } = e, [o, l] = r.useState(false), [c] = r.useState(() => new a.Ep), u = (0, s.A)(t);
+  } = e, [s, l] = r.useState(false), [c] = r.useState(() => new a.Ep), u = (0, o.A)(t);
   r.useEffect(() => {
-    o && (t !== u || n || i) && (l(false), c.stop())
-  }, [t, u, n, i, o, c]);
+    s && (t !== u || n || i) && (l(false), c.stop())
+  }, [t, u, n, i, s, c]);
   let d = r.useCallback(() => {
       l(true), c.start(g, () => l(false))
     }, [c]),
@@ -38,22 +38,22 @@ function E(e) {
       l(false), c.stop()
     }, [c]);
   return r.useEffect(() => () => c.stop(), [c]), {
-    loading: o,
+    loading: s,
     startLoading: d,
     clearLoading: f
   }
 }
 
 function y(e, t) {
-  return (0, i.cf)([u.A, o.default], () => (0, p.A)(u.A, o.default, t, e), [e, t])
+  return (0, i.cf)([u.A, s.default], () => (0, p.A)(u.A, s.default, t, e), [e, t])
 }
 
 function b(e, t, n) {
   let i = y(e, t),
     {
       notPlayable: a,
-      isCurrentUser: s,
-      playingSameTrack: o
+      isCurrentUser: o,
+      playingSameTrack: s
     } = i,
     {
       loading: l,
@@ -66,7 +66,7 @@ function b(e, t, n) {
   return {
     label: (0, d.A)(i, m.Qp.USER_ACTIVITY_PLAY),
     tooltip: (0, f.A)(i, m.Qp.USER_ACTIVITY_PLAY),
-    disabled: !l && (s || a || o),
+    disabled: !l && (o || a || s),
     loading: l,
     onClick: p,
     spotifyData: i
@@ -75,28 +75,28 @@ function b(e, t, n) {
 
 function O(e, t, n, i) {
   let a = null != i ? i : c.Ay.getName(t),
-    s = y(e, t),
+    o = y(e, t),
     {
-      notPlayable: o,
+      notPlayable: s,
       syncingWithUser: l,
       syncingWithParty: u,
       isCurrentUser: p
-    } = s,
+    } = o,
     {
       loading: h,
       startLoading: g,
       clearLoading: b
-    } = E(s),
+    } = E(o),
     O = r.useCallback(() => {
-      g(), (0, _.A)(s, m.Qp.USER_ACTIVITY_SYNC, n).catch(b)
-    }, [s, n, g, b]);
+      g(), (0, _.A)(o, m.Qp.USER_ACTIVITY_SYNC, n).catch(b)
+    }, [o, n, g, b]);
   return {
-    label: (0, d.A)(s, m.Qp.USER_ACTIVITY_SYNC),
-    tooltip: (0, f.A)(s, m.Qp.USER_ACTIVITY_SYNC, a),
-    disabled: !h && (o || p || l || u),
+    label: (0, d.A)(o, m.Qp.USER_ACTIVITY_SYNC),
+    tooltip: (0, f.A)(o, m.Qp.USER_ACTIVITY_SYNC, a),
+    disabled: !h && (s || p || l || u),
     loading: h,
     onClick: O,
-    spotifyData: s
+    spotifyData: o
   }
 }
 
@@ -104,8 +104,8 @@ function v(e, t, n) {
   let i = y(e, t),
     {
       notPlayable: a,
-      syncingWithUser: s,
-      syncingWithParty: o,
+      syncingWithUser: o,
+      syncingWithParty: s,
       isCurrentUser: l
     } = i,
     {
@@ -119,7 +119,7 @@ function v(e, t, n) {
   return {
     label: (0, d.A)(i, m.Qp.EMBED_SYNC),
     tooltip: (0, f.A)(i, m.Qp.EMBED_SYNC),
-    disabled: !c && (l || s || o || a),
+    disabled: !c && (l || o || s || a),
     loading: c,
     onClick: h,
     spotifyData: i

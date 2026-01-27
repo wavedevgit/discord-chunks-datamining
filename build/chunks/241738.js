@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   d: () => a,
-  w: () => s
+  w: () => o
 });
 var Chunk355418 = require("./355418.js"),
   Chunk989479 = require("./989479.js");
@@ -18,7 +18,7 @@ class a extends Chunk355418.c {
     returnfalse
   }
 }
-class s extends a {
+class o extends a {
   innerPattern(e) {
     return RegExp(`${this.innerPatternString(e)}${i.pW.rightBoundary}`, i.pW.flags)
   }

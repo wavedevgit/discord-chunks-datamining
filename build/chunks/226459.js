@@ -23,15 +23,15 @@ class u extends Chunk439372.A {
   preloadInbox() {
     a.A.loadMoreInbox({
       preload: true,
-      loadingTrigger: o.VA.AUTO_LOAD
+      loadingTrigger: s.VA.AUTO_LOAD
     })
   }
   _terminate() {
     this.throttledPreloadInbox.cancel()
   }
   constructor() {
-    super(), l(this, "throttledPreloadInbox", true), l(this, "stores", new Map().set(s.A, () => {
-      s.A.hasPreloaded || s.A.canLoadMore({
+    super(), l(this, "throttledPreloadInbox", true), l(this, "stores", new Map().set(o.A, () => {
+      o.A.hasPreloaded || o.A.canLoadMore({
         preload: true
       }) && this.throttledPreloadInbox()
     })), this.throttledPreloadInbox = (0, r.throttle)(this.preloadInbox, c)

@@ -2,17 +2,17 @@
 /** chunk id: 242133, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  g: () => o
+  g: () => s
 }), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js");
 var Chunk626584 = require("./626584.js"),
   Chunk723702 = require("./723702.js"),
   Chunk837921 = require("./837921.js"),
   Chunk158719 = require("./158719.js");
 
-function o() {
+function s() {
   if (i.isPlatformEmbedded) {
     let e;
-    if ("json" !== (0, s.oT)()) {
+    if ("json" !== (0, o.oT)()) {
       try {
         e = a.Ay.requireModule("discord_erlpack")
       } catch (t) {

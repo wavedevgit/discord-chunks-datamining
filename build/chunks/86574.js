@@ -23,34 +23,34 @@ class d extends Chunk355418.c {
       d = e.createParsingComponents();
     switch (r) {
       case "jetzt":
-        d = s.tB(e.reference);
+        d = o.tB(e.reference);
         break;
       case "heute":
-        d = s.Ec(e.reference);
+        d = o.Ec(e.reference);
         break;
       case "morgen":
-        n = (0, o.Gw)(n, {
+        n = (0, s.Gw)(n, {
           day: 1
         }), (0, i.Pl)(d, n), (0, i.A4)(d, n);
         break;
       case "\xfcbermorgen":
       case "uebermorgen":
-        n = (0, o.Gw)(n, {
+        n = (0, s.Gw)(n, {
           day: 2
         }), (0, i.Pl)(d, n), (0, i.A4)(d, n);
         break;
       case "gestern":
-        n = (0, o.Gw)(n, {
+        n = (0, s.Gw)(n, {
           day: false
         }), (0, i.Pl)(d, n), (0, i.A4)(d, n);
         break;
       case "vorgestern":
-        n = (0, o.Gw)(n, {
+        n = (0, s.Gw)(n, {
           day: false
         }), (0, i.Pl)(d, n), (0, i.A4)(d, n);
         break;
       default:
-        r.match(/letzte\s*nacht/) && (n.getHours() > 6 && (n = (0, o.Gw)(n, {
+        r.match(/letzte\s*nacht/) && (n.getHours() > 6 && (n = (0, s.Gw)(n, {
           day: false
         })), (0, i.Pl)(d, n), d.imply("hour", 0))
     }

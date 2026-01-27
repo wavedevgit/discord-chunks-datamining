@@ -12,7 +12,7 @@ var Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
 class c extends Chunk272355.A {
   isEnabled() {
-    return (0, a.isDesktop)() && (0, a.isMac)() && !s.P.isDiscordTestSet()
+    return (0, a.isDesktop)() && (0, a.isMac)() && !o.P.isDiscordTestSet()
   }
   _initialize() {
     this.isEnabled() && r.h.subscribe("AUDIO_SET_MODE", this.handleAudioSetMode)
@@ -24,7 +24,7 @@ class c extends Chunk272355.A {
     let {
       mode: t
     } = e;
-    t === l.TBI.PUSH_TO_TALK && n(674966).A.requestPermission(o.iL.INPUT_MONITORING)
+    t === l.TBI.PUSH_TO_TALK && n(674966).A.requestPermission(s.iL.INPUT_MONITORING)
   }
 }
 let u = new c

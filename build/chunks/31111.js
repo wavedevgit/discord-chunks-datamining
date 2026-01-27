@@ -26,12 +26,12 @@ class f extends Chunk355418.c {
     "last" == l || "past" == l ? f = "last" : "next" == l ? f = "next" : "this" == l && (f = "this");
     let p = t[u].toLowerCase();
     if (true !== r.CV[p]) n = r.CV[p];
-    else if ("weekend" == p) n = "last" == f ? o.Bw.SUNDAY : o.Bw.SATURDAY;
+    else if ("weekend" == p) n = "last" == f ? s.Bw.SUNDAY : s.Bw.SATURDAY;
     else {
       if ("weekday" != p) return null;
       let t = e.reference.getDateWithAdjustedTimezone().getDay();
-      t == o.Bw.SUNDAY || t == o.Bw.SATURDAY ? n = "last" == f ? o.Bw.FRIDAY : o.Bw.MONDAY : (n = t - 1, n = (n = "last" == f ? n - 1 : n + 1) % 5 + 1)
+      t == s.Bw.SUNDAY || t == s.Bw.SATURDAY ? n = "last" == f ? s.Bw.FRIDAY : s.Bw.MONDAY : (n = t - 1, n = (n = "last" == f ? n - 1 : n + 1) % 5 + 1)
     }
-    return (0, s.Y5)(e.reference, n, f)
+    return (0, o.Y5)(e.reference, n, f)
   }
 }

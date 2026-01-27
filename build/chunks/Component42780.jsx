@@ -64,11 +64,11 @@ function y(e) {
   let {
     profile: n,
     className: i
-  } = e, s = (0, p.b2)(), o = (0, p.aG)({
+  } = e, o = (0, p.b2)(), s = (0, p.aG)({
     profile: n,
-    defaultColor: s.hex(),
+    defaultColor: o.hex(),
     forceDefaultColor: null != n.brandColorPrimary
-  }), l = null != (t = n.brandColorPrimary) ? t : o;
+  }), l = null != (t = n.brandColorPrimary) ? t : s;
   return (0, r.jsx)("div", {
     className: a()(i, h.vK),
     style: {
@@ -84,8 +84,8 @@ function b(e) {
   } = e;
   if (null == i) return (0, r.jsx)("div", {
     className: h.H,
-    children: (0, r.jsx)(o.Ay, {
-      mask: o.hW.CLAN_ICON,
+    children: (0, r.jsx)(s.Ay, {
+      mask: s.hW.CLAN_ICON,
       width: 70,
       height: 70,
       children: (0, r.jsx)("div", {
@@ -101,10 +101,10 @@ function b(e) {
   });
 
   function u(e, t) {
-    null != i && (0, s.mMO)(async () => {
+    null != i && (0, o.mMO)(async () => {
       let {
         default: a
-      } = await Promise.all([n.e("35929"), n.e("79149"), n.e("74571"), n.e("39533")]).then(n.bind(n, 142630));
+      } = await Promise.all([n.e("79149"), n.e("35929"), n.e("74571"), n.e("72968")]).then(n.bind(n, 142630));
       return n => (0, r.jsx)(a, g({
         uploadType: _.HL.GUILD_ICON,
         imageUri: e,
@@ -120,10 +120,10 @@ function b(e) {
   }
   return (0, r.jsx)("div", {
     className: h.H,
-    children: (0, r.jsx)(s.vN3, {
+    children: (0, r.jsx)(o.vN3, {
       within: true,
-      children: (0, r.jsx)(o.Ay, {
-        mask: o.hW.CLAN_ICON,
+      children: (0, r.jsx)(s.Ay, {
+        mask: s.hW.CLAN_ICON,
         width: 70,
         height: 70,
         children: (0, r.jsxs)("div", {
@@ -135,7 +135,7 @@ function b(e) {
             iconSize: 64
           }), (0, r.jsx)("div", {
             className: h.Lw
-          }), (0, r.jsx)(s.R2l, {
+          }), (0, r.jsx)(o.R2l, {
             size: "custom",
             className: h.QY,
             width: 20,
@@ -156,12 +156,12 @@ function O(e) {
     profile: t,
     onIconChange: n,
     className: i,
-    disableCTA: s,
-    CTAOverride: o,
+    disableCTA: o,
+    CTAOverride: s,
     onClose: l,
     disableGuildNameClick: c
   } = e, p = null;
-  return null != o ? p = o : s || (p = (0, r.jsx)(d.A, {
+  return null != s ? p = s : o || (p = (0, r.jsx)(d.A, {
     profile: t,
     onComplete: l
   })), (0, r.jsxs)("div", {

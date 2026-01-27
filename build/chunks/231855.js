@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 231855, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 231855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 });
@@ -15,14 +14,14 @@ function s() {
     fetch: n = true
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, {
     premiumGroupMembership: s
-  } = (0, a.A)({
+  } = (0, l.A)({
     useCachedData: t,
     fetch: n
   }), {
-    premiumGroupMembers: o
+    premiumGroupMembers: a
   } = (0, i.A)(null != (e = null == s ? true : s.subscriptionId) ? e : null, {
     useCachedData: t,
     fetch: n
   });
-  return (null == o ? true : o.primary) != null ? (0, r.$3)(null == o ? true : o.primary) : null
+  return (null == a ? true : a.primary) != null ? (0, r.$3)(null == a ? true : a.primary) : null
 }

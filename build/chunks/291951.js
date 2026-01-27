@@ -40,7 +40,7 @@ let g = {},
 
 function b() {
   null == y && (y = setInterval(() => {
-    s.default.forEachKey(g, e => {
+    o.default.forEachKey(g, e => {
       A(e) && v(e)
     })
   }, _))
@@ -80,20 +80,20 @@ class S extends Chunk439372.A {
     null == y && b()
   }
   handleGuildMemberUpdate(e, t) {
-    if (o.A.isInitialized(e)) return O(e, t)
+    if (s.A.isInitialized(e)) return O(e, t)
   }
   handleGuildMemberRemove(e, t) {
-    if (o.A.isInitialized(e)) return O(e, t)
+    if (s.A.isInitialized(e)) return O(e, t)
   }
   handleGuildDelete(e) {
     let t = e.guild.id;
-    o.A.isInitialized(t) && I(t)
+    s.A.isInitialized(t) && I(t)
   }
   handleGuildMemberSearchSuccess(e) {
     let {
       guildId: t
     } = e;
-    o.A.isInitialized(t) && I(t)
+    s.A.isInitialized(t) && I(t)
   }
   constructor(...e) {
     super(...e), l(this, "actions", {

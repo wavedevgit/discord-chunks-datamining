@@ -56,13 +56,13 @@ class p extends(r = Chunk311907.Ay.Store) {
     return "".concat(this.getClass().displayName, "-snapshot")
   }
   clear() {
-    o.w.remove(this.persistKey)
+    s.w.remove(this.persistKey)
   }
   save() {
-    o.w.set(this.persistKey, this.takeSnapshot())
+    s.w.set(this.persistKey, this.takeSnapshot())
   }
   readSnapshot(e) {
-    let t = o.w.get(this.persistKey);
+    let t = s.w.get(this.persistKey);
     return null == t || t.version !== e ? null : t.data
   }
   getClass() {

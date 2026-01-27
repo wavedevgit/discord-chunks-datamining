@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Br: () => a,
-  I2: () => s,
-  Ms: () => o,
+  I2: () => o,
+  Ms: () => s,
   Oy: () => i
 }), require("./896048.js");
 var Chunk41984 = require("./41984.js");
@@ -29,7 +29,7 @@ function a(e) {
   }
 }
 
-function s() {
+function o() {
   return {
     popoutOpened: false,
     windowHandleSentToNative: false,
@@ -42,4 +42,4 @@ function s() {
     errorMessage: null
   }
 }
-let o = new Set([Chunk41984.AR.WAITING_FOR_POPOUT_OPEN, Chunk41984.AR.WAITING_FOR_REACT_INITIALIZATION, Chunk41984.AR.WAITING_FOR_PID_FOCUS, Chunk41984.AR.WAITING_FOR_SUCCESSFUL_SHOW])
+let s = new Set([Chunk41984.AR.WAITING_FOR_POPOUT_OPEN, Chunk41984.AR.WAITING_FOR_REACT_INITIALIZATION, Chunk41984.AR.WAITING_FOR_PID_FOCUS, Chunk41984.AR.WAITING_FOR_SUCCESSFUL_SHOW])

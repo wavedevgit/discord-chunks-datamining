@@ -2,12 +2,12 @@
 /** chunk id: 129800, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => F
+  A: () => V
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk320448 = require("./320448.jsx"),
   Chunk559647 = require("./559647.jsx"),
   Chunk311907 = require("./311907.js"),
@@ -35,26 +35,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk457806 = require("./457806.js"),
   Chunk577382 = require("./577382.js");
-let L = 5,
-  j = "placeholder",
-  M = [, , , , , ].fill(j);
+let x = 5,
+  M = "placeholder",
+  j = [, , , , , ].fill(M);
 
 function k(e) {
   var t, n;
   let {
     context: a,
-    command: s,
+    command: o,
     section: l,
     sectionName: c
   } = e, d = i.useCallback(() => {
     let e = O.A.entrypoint();
     b.k(v.Se.COMMAND), (0, E.Mv)({
-      command: s,
+      command: o,
       location: m.Oh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c
     }), "channel" === a.type && (p.Gf({
       channelId: a.channel.id,
-      command: s,
+      command: o,
       section: l,
       location: m.Oh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c,
@@ -63,28 +63,28 @@ function k(e) {
     }), y._.dispatch(w.jej.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: a.channel.id
     }))
-  }, [a, s, l, c]), f = (null != (t = null == (n = s.options) ? true : n.length) ? t : 0) > 0, _ = i.useMemo(() => (0, C.SD)(s.displayDescription, true), [s.displayDescription]), h = i.useMemo(() => (0, r.jsxs)("div", {
-    className: x.sd,
+  }, [a, o, l, c]), f = (null != (t = null == (n = o.options) ? true : n.length) ? t : 0) > 0, _ = i.useMemo(() => (0, C.SD)(o.displayDescription, true), [o.displayDescription]), h = i.useMemo(() => (0, r.jsxs)("div", {
+    className: L.sd,
     children: [(0, r.jsx)(u.Text, {
       variant: "text-sm/semibold",
       color: "text-strong",
-      children: s.displayName
+      children: o.displayName
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
       lineClamp: 1,
       children: _
     })]
-  }), [s.displayName, _]);
+  }), [o.displayName, _]);
   return (0, r.jsxs)(u.DUT, {
-    className: x.G5,
+    className: L.G5,
     onClick: d,
     children: [(0, r.jsx)(u.M1G, {
-      className: x.fg,
+      className: L.fg,
       children: h
-    }), f ? (0, r.jsx)(o._, {}) : (0, r.jsx)(G, {
+    }), f ? (0, r.jsx)(s._, {}) : (0, r.jsx)(G, {
       context: a,
-      command: s,
+      command: o,
       sectionName: c
     })]
   })
@@ -106,7 +106,7 @@ function U() {
       }
     }), []),
     a = i.useMemo(() => (0, r.jsxs)("div", {
-      className: x.Vc,
+      className: L.Vc,
       children: [(0, r.jsx)("div", {
         className: D.jC,
         style: t,
@@ -130,7 +130,7 @@ function U() {
       })]
     }), [t, n]);
   return (0, r.jsx)("div", {
-    className: s()(x.G5, D.NX, {
+    className: o()(L.G5, D.NX, {
       [D.cb]: e
     }),
     children: a
@@ -144,8 +144,8 @@ function G(e) {
     sectionName: a
   } = e;
   (0, _.A4)(true, true), (0, _.SD)(t, true, true);
-  let s = (0, A.e)(t),
-    [o, c] = i.useState(false),
+  let o = (0, A.e)(t),
+    [s, c] = i.useState(false),
     d = i.useCallback(async e => {
       if ("channel" !== t.type) return;
       e.stopPropagation();
@@ -166,18 +166,18 @@ function G(e) {
         e && (await (0, T.MJ)({
           command: n,
           optionValues: {},
-          context: s,
+          context: o,
           sectionName: a,
           commandOrigin: m.iw.APP_LAUNCHER_APPLICATION_VIEW
         }), b.k(v.Se.COMMAND))
       } finally {
         c(false)
       }
-    }, [n, t, a, s]);
+    }, [n, t, a, o]);
   return (0, r.jsx)(u.Button, {
     type: "submit",
     onClick: d,
-    disabled: o,
+    disabled: s,
     variant: "secondary",
     "aria-label": P.intl.formatToPlainString(P.t.UXw6W2, {
       commandName: n.untranslatedName
@@ -189,42 +189,42 @@ function G(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     context: t,
     commands: n,
     section: i,
     headerName: a,
-    sectionName: s,
-    children: o
+    sectionName: o,
+    children: s
   } = e;
   return 0 === n.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: x.Zp,
+      className: L.Zp,
       children: [(0, r.jsx)(u.Heading, {
         variant: "heading-sm/semibold",
         children: a
-      }), o]
+      }), s]
     }), (0, r.jsx)("ul", {
-      className: x.dO,
+      className: L.dO,
       "aria-label": a,
-      children: n.map((e, n) => e === j ? (0, r.jsx)(U, {}, e + n) : (0, r.jsx)(k, {
+      children: n.map((e, n) => e === M ? (0, r.jsx)(U, {}, e + n) : (0, r.jsx)(k, {
         context: t,
         command: e,
         section: i,
-        sectionName: s
+        sectionName: o
       }, e.id))
     })]
   })
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     context: n,
     application: a,
-    sectionName: s,
-    installOnDemand: o,
+    sectionName: o,
+    installOnDemand: s,
     setHasCommands: l
   } = e, {
     filterSection: c,
@@ -240,8 +240,8 @@ function F(e) {
       placeholderCount: 0,
       limit: R.Hi,
       includeFrecency: true,
-      allowApplicationState: o,
-      installOnDemand: o,
+      allowApplicationState: s,
+      installOnDemand: s,
       applicationId: a.id
     },
     allowFetch: true
@@ -260,24 +260,24 @@ function F(e) {
   let b = (0, I.A)({
     context: n,
     commands: E,
-    limit: L
+    limit: x
   });
   return (i.useEffect(() => {
     l(E.length > 0)
   }, [l, E]), p || 0 !== E.length) ? (0, r.jsxs)("ul", {
-    className: x.hQ,
-    children: [(0, r.jsx)(V, {
+    className: L.hQ,
+    children: [(0, r.jsx)(F, {
       context: n,
       section: _,
       commands: b,
       headerName: P.intl.string(P.t.acSE0h),
-      sectionName: s
-    }), (0, r.jsx)(V, {
+      sectionName: o
+    }), (0, r.jsx)(F, {
       context: n,
       section: _,
-      commands: p ? M : E,
+      commands: p ? j : E,
       headerName: P.intl.string(P.t.DUU9L3),
-      sectionName: s,
+      sectionName: o,
       children: y && (0, r.jsx)(N.A, {
         sortOrder: m,
         onSortOptionClick: g

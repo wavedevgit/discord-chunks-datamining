@@ -12,7 +12,7 @@ var Chunk735438 = require("./735438.js"),
 
 function l(e) {
   for (let t of e) {
-    let e = s.A.getUserExperimentDescriptor(t);
+    let e = o.A.getUserExperimentDescriptor(t);
     if (null != e) return [t, e]
   }
   return null
@@ -39,26 +39,26 @@ function u(e, t) {
 let d = {
   getFirstEligibleUserExperiment: l,
   isInExperimentBucket: function(e, t) {
-    return s.A.getUserExperimentBucket(e) === t
+    return o.A.getUserExperimentBucket(e) === t
   },
   experimentDescriptorEquals: function(e, t) {
     if (null == e && null == t || e === t) returntrue;
     if (null == e && null != t || null != e && null == t) returnfalse;
     if (null != e && null != t) {
       if (e.type !== t.type || e.bucket !== t.bucket || e.revision !== t.revision) returnfalse;
-      if (e.type === o.Vh.USER && t.type === o.Vh.USER) return i().isEqual(e.context, t.context)
+      if (e.type === s.Vh.USER && t.type === s.Vh.USER) return i().isEqual(e.context, t.context)
     }
     returntrue
   },
   trackExposureToFirstEligibleUserExperiment: c,
   getExperimentBucketName: function(e) {
     let t;
-    return e === o.RE.CONTROL ? "Control" : e === o.RE.NOT_ELIGIBLE ? "Not Eligible" : "Treatment ".concat(e)
+    return e === s.RE.CONTROL ? "Control" : e === s.RE.NOT_ELIGIBLE ? "Not Eligible" : "Treatment ".concat(e)
   },
   getRecentExperimentBuckets: function(e, t) {
     return Object.entries(e).reduce((e, n) => {
       let [r, i] = n;
-      return u(r, t) && i > o.RE.CONTROL && (e[r] = i), e
+      return u(r, t) && i > s.RE.CONTROL && (e[r] = i), e
     }, {})
   }
 }

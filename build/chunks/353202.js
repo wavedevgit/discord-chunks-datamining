@@ -28,7 +28,7 @@ function m() {
 }
 
 function g(e) {
-  if (null == e || e === s.E || (0, p.jq)(e) || null != u.A.getChannel(e) || (m(), !o.A.isConnected())) return Promise.resolve();
+  if (null == e || e === o.E || (0, p.jq)(e) || null != u.A.getChannel(e) || (m(), !s.A.isConnected())) return Promise.resolve();
   let t = _[e];
   if (null != t)
     if ("LOADING" === t.type) return t.promise;

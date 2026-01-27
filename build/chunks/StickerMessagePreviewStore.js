@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk31717 = require("./31717.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,14 +25,14 @@ function u(e) {
     sticker: n,
     draftType: r
   } = e;
-  (r === s.C.FirstThreadMessage ? c : l)[t] = [n]
+  (r === o.C.FirstThreadMessage ? c : l)[t] = [n]
 }
 
 function d(e) {
   let {
     channelId: t,
     draftType: n
-  } = e, r = n === s.C.FirstThreadMessage ? c : l;
+  } = e, r = n === o.C.FirstThreadMessage ? c : l;
   null != r[t] && delete r[t]
 }
 
@@ -41,10 +41,10 @@ function f() {
 }
 class p extends(r = Chunk311907.Ay.Store) {
   getStickerPreview(e, t) {
-    return (t === s.C.FirstThreadMessage ? c : l)[e]
+    return (t === o.C.FirstThreadMessage ? c : l)[e]
   }
 }
-o(p, "displayName", "StickerMessagePreviewStore");
+s(p, "displayName", "StickerMessagePreviewStore");
 let _ = new p(Chunk73153.h, {
   ADD_STICKER_PREVIEW: u,
   CLEAR_STICKER_PREVIEW: d,

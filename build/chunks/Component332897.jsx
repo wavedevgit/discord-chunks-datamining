@@ -21,12 +21,12 @@ let c = {
         size: t = l._3.SIZE_48,
         status: n
       } = e, {
-        user: o
+        user: s
       } = (0, i.cf)([a.default], () => ({
         user: a.default.getCurrentUser()
       })), c = Number(t.split("_")[1]);
-      return (0, r.jsx)(s.eu, {
-        src: null == o ? true : o.getAvatarURL(true, c),
+      return (0, r.jsx)(o.eu, {
+        src: null == s ? true : s.getAvatarURL(true, c),
         size: t,
         "aria-label": "Sample User",
         status: n
@@ -51,7 +51,7 @@ let c = {
           value: null
         }].concat(Object.keys(Chunk818348.cl).map(e => ({
           label: e,
-          value: o.cl[e]
+          value: s.cl[e]
         })))
       }
     }

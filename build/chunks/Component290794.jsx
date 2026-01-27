@@ -1,52 +1,49 @@
-/** Chunk was on web.js **/
-/** chunk id: 290794, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 290794, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Tu: () => u,
-  hd: () => c,
-  y0: () => s,
-  y5: () => o
+  Tu: () => c,
+  hd: () => o,
+  y0: () => a,
+  y5: () => s
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js");
-let a = Chunk64700.createContext(true);
+let l = Chunk64700.createContext(true);
 
-function s() {
-  let e = i.useContext(a);
+function a() {
+  let e = i.useContext(l);
   if (null == e) throw Error("No PollContextProvider found");
   return e
 }
 
-function o(e) {
+function s(e) {
   let {
     children: t,
     message: n,
-    poll: s
-  } = e, o = i.useMemo(() => ({
+    poll: a
+  } = e, s = i.useMemo(() => ({
     message: n,
-    poll: s
-  }), [n, s]);
-  return (0, r.jsx)(a.Provider, {
-    value: o,
+    poll: a
+  }), [n, a]);
+  return (0, r.jsx)(l.Provider, {
+    value: s,
     children: t
   })
 }
 
-function l() {
-  let {
-    poll: e
-  } = s();
-  return e.resources
+function o(e) {
+  return function() {
+    let {
+      poll: e
+    } = a();
+    return e.resources
+  }().styles[e]
 }
 
-function c(e) {
-  return l().styles[e]
-}
-
-function u() {
+function c() {
   let {
     message: e
-  } = s(), t = e.getChannelId();
+  } = a(), t = e.getChannelId();
   return i.useMemo(() => ({
     channelId: t,
     messageId: e.id

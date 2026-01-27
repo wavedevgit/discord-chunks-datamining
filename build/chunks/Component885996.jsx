@@ -1,105 +1,103 @@
-/** Chunk was on web.js **/
-/** chunk id: 885996, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 13088 **/
+/** chunk id: 885996, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  FY: () => h,
+  FY: () => S,
   GS: () => p,
-  OP: () => _
+  OP: () => f
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk187322 = require("./187322.jsx"),
   Chunk855522 = require("./855522.js"),
   Chunk158954 = require("./158954.js"),
   Chunk827734 = require("./827734.js"),
   Chunk596678 = require("./596678.js"),
   Chunk671816 = require("./671816.js");
-let f = 48,
-  p = 5;
+let p = 5;
 
-function _(e) {
+function f(t) {
   let {
-    description: t,
+    description: e,
     imgSrc: n,
-    renderPurchaseButton: i,
-    onPurchase: _,
-    title: h,
-    onDetails: m,
-    benefitItems: g,
-    benefitsSummary: E,
-    subtitle: y,
-    maxBenefits: b = p
-  } = e;
-  return (0, r.jsx)(s.vN, {
-    children: (0, r.jsxs)("div", {
-      className: a()(u.kL, d.t),
+    renderPurchaseButton: r,
+    onPurchase: f,
+    title: S,
+    onDetails: A,
+    benefitItems: b,
+    benefitsSummary: O,
+    subtitle: g,
+    maxBenefits: I = p
+  } = t;
+  return (0, l.jsx)(u.vN, {
+    children: (0, l.jsxs)("div", {
+      className: i()(c.kL, d.t),
       tabIndex: 0,
       onClick: () => {
-        null != m ? m() : null != _ && _()
+        null != A ? A() : null != f && f()
       },
-      onKeyUp: e => {
-        "Enter" === e.key && (e.stopPropagation(), e.preventDefault(), null != m ? m() : null != _ && _())
+      onKeyUp: t => {
+        "Enter" === t.key && (t.stopPropagation(), t.preventDefault(), null != A ? A() : null != f && f())
       },
-      children: [(0, r.jsx)("div", {
-        className: u.Nr,
-        children: (0, r.jsxs)("div", {
-          className: u.rf,
-          children: [(0, r.jsx)(l.EYj, {
+      children: [(0, l.jsx)("div", {
+        className: c.Nr,
+        children: (0, l.jsxs)("div", {
+          className: c.rf,
+          children: [(0, l.jsx)(s.EYj, {
             tag: "div",
             variant: "heading-lg/semibold",
-            children: h
-          }), (0, r.jsx)("div", {
-            className: u.Sl,
-            children: null != n ? (0, r.jsx)("img", {
+            children: S
+          }), (0, l.jsx)("div", {
+            className: c.Sl,
+            children: null != n ? (0, l.jsx)("img", {
               src: n.toString(),
               alt: ""
-            }) : (0, r.jsx)(l.bhD, {
-              color: c.A.colors.ICON_STRONG,
+            }) : (0, l.jsx)(s.bhD, {
+              color: a.A.colors.ICON_STRONG,
               size: "custom",
-              height: f,
-              width: f
+              height: 48,
+              width: 48
             })
-          }), null != i ? i({
-            onClick: e => {
-              e.stopPropagation(), null == _ || _()
+          }), null != r ? r({
+            onClick: t => {
+              t.stopPropagation(), null == f || f()
             }
-          }) : null, y, null != t && "" !== t && (0, r.jsx)(l.EYj, {
-            className: u.h_,
+          }) : null, g, null != e && "" !== e && (0, l.jsx)(s.EYj, {
+            className: c.h_,
             color: "text-default",
             variant: "text-sm/medium",
-            children: t
+            children: e
           })]
         })
-      }), null != E && (0, r.jsx)("div", {
-        className: u.xl,
-        children: (0, r.jsx)(l.EYj, {
+      }), null != O && (0, l.jsx)("div", {
+        className: c.xl,
+        children: (0, l.jsx)(s.EYj, {
           color: "interactive-text-default",
           variant: "text-sm/medium",
           children: o.A.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
-            count: E
+            count: O
           })
         })
-      }), null != g && g.length > 0 && (0, r.jsx)("div", {
-        className: u.PX,
-        children: (0, r.jsx)("div", {
-          className: u.iq,
-          children: (0, r.jsxs)("div", {
-            className: u.Pp,
-            children: [(0, r.jsx)(l.EYj, {
+      }), null != b && b.length > 0 && (0, l.jsx)("div", {
+        className: c.PX,
+        children: (0, l.jsx)("div", {
+          className: c.iq,
+          children: (0, l.jsxs)("div", {
+            className: c.Pp,
+            children: [(0, l.jsx)(s.EYj, {
               color: "text-default",
               variant: "eyebrow",
               children: o.A.Messages.STOREFRONT_BENEFITS_TITLE
-            }), g.length > b ? (0, r.jsxs)(r.Fragment, {
-              children: [g.slice(0, b), (0, r.jsx)(l.EYj, {
+            }), b.length > I ? (0, l.jsxs)(l.Fragment, {
+              children: [b.slice(0, I), (0, l.jsx)(s.EYj, {
                 variant: "text-md/semibold",
                 color: "text-subtle",
                 children: o.A.Messages.STOREFRONT_MORE_BENEFITS.format({
-                  count: g.length - b
+                  count: b.length - I
                 })
               })]
-            }) : g]
+            }) : b]
           })
         })
       })]
@@ -107,25 +105,25 @@ function _(e) {
   })
 }
 
-function h(e) {
+function S(t) {
   let {
-    icon: t,
+    icon: e,
     header: n,
-    description: i
-  } = e;
-  return (0, r.jsxs)("div", {
-    className: u.w2,
-    children: [(0, r.jsx)("div", {
-      className: u.z8,
-      children: t
-    }), (0, r.jsxs)("div", {
-      children: [null != n && (0, r.jsx)(l.EYj, {
+    description: r
+  } = t;
+  return (0, l.jsxs)("div", {
+    className: c.w2,
+    children: [(0, l.jsx)("div", {
+      className: c.z8,
+      children: e
+    }), (0, l.jsxs)("div", {
+      children: [null != n && (0, l.jsx)(s.EYj, {
         variant: "text-md/semibold",
         color: "text-strong",
         children: n
-      }), (0, r.jsx)(l.EYj, {
+      }), (0, l.jsx)(s.EYj, {
         variant: "text-sm/normal",
-        children: i
+        children: r
       })]
     })]
   })

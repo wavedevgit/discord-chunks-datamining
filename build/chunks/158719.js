@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   UR: () => i.U,
-  _D: () => s,
+  _D: () => o,
   oT: () => i.o
 });
 var Chunk945810 = require("./945810.js"),
@@ -21,7 +21,7 @@ let a = (0, Chunk945810.mj)({
   }
 });
 
-function s(e) {
+function o(e) {
   return a.useConfig({
     location: e
   }).enableDesktopJSONGatewayEncoding

@@ -35,7 +35,7 @@ var Chunk557939 = require("./557939.js"),
     var n = d(arguments),
       r = f(t);
     if (!(!c(r) && (true === e || u(e)))) return n[1] = function(e, t) {
-      if (c(r) && (t = s(r, this, _(e), t)), !u(t)) return t
+      if (c(r) && (t = o(r, this, _(e), t)), !u(t)) return t
     }, a(h, null, n)
   },
   C = function(e, t, n) {

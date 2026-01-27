@@ -22,7 +22,7 @@ function a(e, t) {
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
 
-function s(e, t) {
+function o(e, t) {
   if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
   e.prototype = Object.create(t && t.prototype, {
     constructor: {
@@ -40,14 +40,14 @@ module.exports = function(e) {
     var n = a(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
     return n._transforms = e, n
   }
-  return s(t, e), r(t, [{
+  return o(t, e), r(t, [{
     key: "__getValue",
     value: function() {
       return this._transforms.map(function(e) {
         var t = {};
         for (var n in e) {
           var r = e[n];
-          r instanceof o ? t[n] = r.__getValue() : t[n] = r
+          r instanceof s ? t[n] = r.__getValue() : t[n] = r
         }
         return t
       })
@@ -59,7 +59,7 @@ module.exports = function(e) {
         var t = {};
         for (var n in e) {
           var r = e[n];
-          r instanceof o ? t[n] = r.__getAnimatedValue() : t[n] = r
+          r instanceof s ? t[n] = r.__getAnimatedValue() : t[n] = r
         }
         return t
       })
@@ -71,7 +71,7 @@ module.exports = function(e) {
       this._transforms.forEach(function(t) {
         for (var n in t) {
           var r = t[n];
-          r instanceof o && r.__addChild(e)
+          r instanceof s && r.__addChild(e)
         }
       })
     }
@@ -82,7 +82,7 @@ module.exports = function(e) {
       this._transforms.forEach(function(t) {
         for (var n in t) {
           var r = t[n];
-          r instanceof o && r.__removeChild(e)
+          r instanceof s && r.__removeChild(e)
         }
       })
     }

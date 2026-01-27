@@ -2,7 +2,7 @@
 /** chunk id: 186433, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./142703.js");
-var r, i, a, s, o, Chunk627968 = require("./627968.js");
+var r, i, a, o, s, Chunk627968 = require("./627968.js");
 require("./140595.js"), require("./64700.js");
 var Chunk507240 = require("./507240.js"),
   Chunk284009 = require("./284009.js"),
@@ -37,7 +37,7 @@ var Chunk507240 = require("./507240.js"),
   Chunk316501 = require("./316501.js"),
   Chunk338816 = require("./338816.js");
 Chunk111162.default.cssDebuggingEnabled && require.e("42592").then(require.t.bind(require, 196995, 19)), (0, Chunk316501.pF)();
-let F = 5 * Chunk927813.A.Millis.MINUTE,
+let V = 5 * Chunk927813.A.Millis.MINUTE,
   B = document.getElementById("app-mount");
 d()(null != B, "Could not find app-mount"), B.className = __OVERLAY__ ? "" : Chunk769253.l;
 let H = (0, Chunk507240.createRoot)(B),
@@ -63,7 +63,7 @@ if (null != Chunk77729.A) {
     })
   }), Chunk837921.Ay.appLoaded();
   let e = null == (i = (a = Chunk77729.A.remoteApp).getVersion) ? true : i.call(a),
-    t = null == (s = (o = Chunk77729.A.remoteApp).getBuildNumber) ? true : s.call(o),
+    t = null == (o = (s = Chunk77729.A.remoteApp).getBuildNumber) ? true : o.call(s),
     n = {};
   null != Chunk77729.A.remoteApp.getModuleVersions && (n = Chunk77729.A.remoteApp.getModuleVersions()), Chunk728458.A.setExtra({
     hostVersion: module,
@@ -79,7 +79,7 @@ else if (null != window.require && null == window.DiscordNative) K(Chunk999212.A
 else {
   if (document.addEventListener("scroll", e => e.preventDefault()), Chunk723702.isPlatformEmbedded) {
     window.onbeforeunload = () => v.Ay.beforeUnload(), Chunk837921.Ay.on("HELP_OPEN", () => window.open(b.A.getCommunityURL()));
-    let e = new Chunk451988.J_(F, () => v.Ay.purgeMemory());
+    let e = new Chunk451988.J_(V, () => v.Ay.purgeMemory());
     Chunk837921.Ay.on("MAIN_WINDOW_BLUR", () => {
       e.delay(), v.Ay.setFocused(false), (0, C.XC)(window, false)
     }), Chunk837921.Ay.on("MAIN_WINDOW_FOCUS", () => {

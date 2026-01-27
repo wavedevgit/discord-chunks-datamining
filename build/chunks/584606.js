@@ -1,18 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 584606, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 584606, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk494277 = require("./494277.js");
-
-function i(e) {
-  if (r(e)) {
-    var t = e,
-      n = t.getAttribute("data-offset-key");
-    if (n) return n;
-    for (var a = 0; a < t.childNodes.length; a++) {
-      var s = i(t.childNodes[a]);
-      if (s) return s
+module.exports = function t(e) {
+  if (n(e)) {
+    var r = e.getAttribute("data-offset-key");
+    if (r) return r;
+    for (var i = 0; i < e.childNodes.length; i++) {
+      var o = t(e.childNodes[i]);
+      if (o) return o
     }
   }
   return null
 }
-module.exports = i

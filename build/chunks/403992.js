@@ -43,9 +43,9 @@ class a {
     if (!n) return null;
     let r = 0;
     for (let e of (0, i.iQ)(n, this.collection)) {
-      var a, s;
+      var a, o;
       if (e.colSpan && e.colSpan + r > t) return null != (a = e.key) ? a : null;
-      if (e.colSpan && (r = r + e.colSpan - 1), r === t) return null != (s = e.key) ? s : null;
+      if (e.colSpan && (r = r + e.colSpan - 1), r === t) return null != (o = e.key) ? o : null;
       r++
     }
     return null
@@ -79,7 +79,7 @@ class a {
     return null
   }
   getKeyRightOf(e) {
-    var t, n, r, a, s, o, l;
+    var t, n, r, a, o, s, l;
     let c = this.collection.getItem(e);
     if (!c) return null;
     if (this.isRow(c)) {
@@ -91,12 +91,12 @@ class a {
       if (!t) return null;
       let n = (0, i.iQ)(t, this.collection),
         r = null != (a = "rtl" === this.direction ? (0, i.cj)(n, c.index - 1) : (0, i.cj)(n, c.index + 1)) ? a : null;
-      return r ? null != (s = r.key) ? s : null : "row" === this.focusMode ? null != (o = c.parentKey) ? o : null : null != (l = "rtl" === this.direction ? this.getFirstKey(e) : this.getLastKey(e)) ? l : null
+      return r ? null != (o = r.key) ? o : null : "row" === this.focusMode ? null != (s = c.parentKey) ? s : null : null != (l = "rtl" === this.direction ? this.getFirstKey(e) : this.getLastKey(e)) ? l : null
     }
     return null
   }
   getKeyLeftOf(e) {
-    var t, n, r, a, s, o, l;
+    var t, n, r, a, o, s, l;
     let c = this.collection.getItem(e);
     if (!c) return null;
     if (this.isRow(c)) {
@@ -108,44 +108,44 @@ class a {
       if (!t) return null;
       let n = (0, i.iQ)(t, this.collection),
         r = null != (a = "rtl" === this.direction ? (0, i.cj)(n, c.index + 1) : (0, i.cj)(n, c.index - 1)) ? a : null;
-      return r ? null != (s = r.key) ? s : null : "row" === this.focusMode ? null != (o = c.parentKey) ? o : null : null != (l = "rtl" === this.direction ? this.getLastKey(e) : this.getFirstKey(e)) ? l : null
+      return r ? null != (o = r.key) ? o : null : "row" === this.focusMode ? null != (s = c.parentKey) ? s : null : null != (l = "rtl" === this.direction ? this.getLastKey(e) : this.getFirstKey(e)) ? l : null
     }
     return null
   }
   getFirstKey(e, t) {
-    var n, r, a, s;
-    let o, l = null != e ? e : null;
+    var n, r, a, o;
+    let s, l = null != e ? e : null;
     if (null != l) {
-      if (!(o = this.collection.getItem(l))) return null;
-      if (this.isCell(o) && !t && null != o.parentKey) {
-        let e = this.collection.getItem(o.parentKey);
+      if (!(s = this.collection.getItem(l))) return null;
+      if (this.isCell(s) && !t && null != s.parentKey) {
+        let e = this.collection.getItem(s.parentKey);
         return e && null != (r = null == (n = (0, i.ue)((0, i.iQ)(e, this.collection))) ? true : n.key) ? r : null
       }
     }
-    if (null != (l = this.findNextKey(true, e => "item" === e.type)) && (o && this.isCell(o) && t || "cell" === this.focusMode)) {
+    if (null != (l = this.findNextKey(true, e => "item" === e.type)) && (s && this.isCell(s) && t || "cell" === this.focusMode)) {
       let e = this.collection.getItem(l);
       if (!e) return null;
-      l = null != (s = null == (a = (0, i.ue)((0, i.iQ)(e, this.collection))) ? true : a.key) ? s : null
+      l = null != (o = null == (a = (0, i.ue)((0, i.iQ)(e, this.collection))) ? true : a.key) ? o : null
     }
     return l
   }
   getLastKey(e, t) {
-    var n, r, a, s;
-    let o, l = null != e ? e : null;
+    var n, r, a, o;
+    let s, l = null != e ? e : null;
     if (null != l) {
-      if (!(o = this.collection.getItem(l))) return null;
-      if (this.isCell(o) && !t && null != o.parentKey) {
-        let e = this.collection.getItem(o.parentKey);
+      if (!(s = this.collection.getItem(l))) return null;
+      if (this.isCell(s) && !t && null != s.parentKey) {
+        let e = this.collection.getItem(s.parentKey);
         if (!e) return null;
         let t = (0, i.iQ)(e, this.collection);
         return null != (r = null == (n = (0, i.W)(t)) ? true : n.key) ? r : null
       }
     }
-    if (null != (l = this.findPreviousKey(true, e => "item" === e.type)) && (o && this.isCell(o) && t || "cell" === this.focusMode)) {
+    if (null != (l = this.findPreviousKey(true, e => "item" === e.type)) && (s && this.isCell(s) && t || "cell" === this.focusMode)) {
       let e = this.collection.getItem(l);
       if (!e) return null;
       let t = (0, i.iQ)(e, this.collection);
-      l = null != (s = null == (a = (0, i.W)(t)) ? true : a.key) ? s : null
+      l = null != (o = null == (a = (0, i.W)(t)) ? true : a.key) ? o : null
     }
     return l
   }
@@ -176,16 +176,16 @@ class a {
   }
   getKeyForSearch(e, t) {
     var n, r, a;
-    let s = null != t ? t : null;
+    let o = null != t ? t : null;
     if (!this.collator) return null;
-    let o = this.collection;
-    if (null == (s = null != t ? t : this.getFirstKey())) return null;
-    let l = o.getItem(s);
+    let s = this.collection;
+    if (null == (o = null != t ? t : this.getFirstKey())) return null;
+    let l = s.getItem(o);
     if (!l) return null;
-    "cell" === l.type && (s = null != (n = l.parentKey) ? n : null);
+    "cell" === l.type && (o = null != (n = l.parentKey) ? n : null);
     let c = false;
-    for (; null != s;) {
-      let t = o.getItem(s);
+    for (; null != o;) {
+      let t = s.getItem(o);
       if (!t) break;
       if (t.textValue) {
         let n = t.textValue.slice(0, e.length);
@@ -194,17 +194,17 @@ class a {
           return t.key
         }
       }
-      null != (s = this.findNextKey(s, e => "item" === e.type)) || c || (s = this.getFirstKey(), c = true)
+      null != (o = this.findNextKey(o, e => "item" === e.type)) || c || (o = this.getFirstKey(), c = true)
     }
     return null
   }
   constructor(e) {
     var t;
     if (this.collection = e.collection, this.disabledKeys = e.disabledKeys, this.disabledBehavior = e.disabledBehavior || "all", this.direction = e.direction, this.collator = e.collator, !e.layout && !e.ref) throw Error("Either a layout or a ref must be specified.");
-    this.layoutDelegate = e.layoutDelegate || (e.layout ? new s(e.layout) : new(0, r.K)(e.ref)), this.focusMode = null != (t = e.focusMode) ? t : "row"
+    this.layoutDelegate = e.layoutDelegate || (e.layout ? new o(e.layout) : new(0, r.K)(e.ref)), this.focusMode = null != (t = e.focusMode) ? t : "row"
   }
 }
-class s {
+class o {
   getContentSize() {
     return this.layout.getContentSize()
   }

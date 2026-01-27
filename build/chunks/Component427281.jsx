@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk397927 = require("./397927.js"),
   Chunk608299 = require("./608299.js"),
@@ -65,15 +65,15 @@ let A = 104,
 function S(e) {
   var t, n, a;
   let {
-    file: o
+    file: s
   } = e, [l, c] = i.useState(), [d, f] = i.useState(false), [p, _] = i.useState({}), h = i.useRef(null);
   i.useEffect(() => {
-    if (null != h.current && f(false), null == o) return;
-    let e = URL.createObjectURL(o);
+    if (null != h.current && f(false), null == s) return;
+    let e = URL.createObjectURL(s);
     return c(e), () => {
       c(true), URL.revokeObjectURL(e)
     }
-  }, [o]), i.useLayoutEffect(() => {
+  }, [s]), i.useLayoutEffect(() => {
     let e = h.current;
     null != e && (e.onload = () => {
       let t = Math.max(.66, Math.min(e.naturalWidth / e.naturalHeight, 4));
@@ -94,7 +94,7 @@ function S(e) {
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
-    className: s()(E.fileIcon, {
+    className: o()(E.fileIcon, {
       [E.image]: !d
     }),
     "aria-hidden": true,
@@ -115,7 +115,7 @@ class T extends Chunk64700.Component {
     return this.props.upload.item.platform !== d.xz.WEB ? null : this.props.upload.isImage ? (0, r.jsx)(S, {
       file: this.props.upload.item.file
     }) : (0, r.jsx)("div", {
-      className: s()(E.fileIcon, {
+      className: o()(E.fileIcon, {
         [E[null != (e = this.props.upload.classification) ? e : ""]]: true
       })
     })
@@ -143,7 +143,7 @@ class C extends Chunk64700.Component {
     } = this.props, {
       hasSpoiler: a
     } = this.state;
-    return (0, r.jsxs)(o.Modal, {
+    return (0, r.jsxs)(s.Modal, {
       transitionState: t,
       onClose: i,
       title: g.intl.string(g.t.Y8ujqr),
@@ -193,7 +193,7 @@ class C extends Chunk64700.Component {
     })
   }
   constructor(e) {
-    var t, n, r, i, a, s;
+    var t, n, r, i, a, o;
     super(e), y(this, "cancelAll", () => {
       c.A.clearAll(this.props.channelId, this.props.draftType), this.props.onClose()
     }), y(this, "cancel", () => {
@@ -220,13 +220,13 @@ class C extends Chunk64700.Component {
         spoiler: a
       }), t()
     });
-    const o = e.ignoreDraft ? "" : p.A.getDraft(this.props.channelId, e.draftType);
-    this.state = v(b({}, (0, f.ur)(o)), {
+    const s = e.ignoreDraft ? "" : p.A.getDraft(this.props.channelId, e.draftType);
+    this.state = v(b({}, (0, f.ur)(s)), {
       textFocused: true,
       hasSpoiler: null != (t = null == (i = e.upload) ? true : i.spoiler) && t,
       filename: null != (n = null == (a = e.upload) ? true : a.filename) ? n : "",
       contentWarningProps: null,
-      description: null != (r = null == (s = e.upload) ? true : s.description) ? r : ""
+      description: null != (r = null == (o = e.upload) ? true : o.description) ? r : ""
     })
   }
 }

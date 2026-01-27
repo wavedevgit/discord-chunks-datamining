@@ -18,7 +18,7 @@ let c = 1e4,
   _ = [false, 15],
   h = () => {
     let e = i.useRef(null),
-      t = (0, o.A)(),
+      t = (0, s.A)(),
       [n, h] = i.useState(false),
       [m, g] = i.useState([0, 0]),
       [E, y] = i.useState(.5),
@@ -38,7 +38,7 @@ let c = 1e4,
           window.clearTimeout(t)
         }
       }
-    }, [n]), (0, r.jsx)(s.A, {
+    }, [n]), (0, r.jsx)(o.A, {
       ref: e,
       className: l.d,
       style: {

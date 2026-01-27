@@ -16,8 +16,8 @@ var Chunk627968 = require("./627968.js"),
 function d(e) {
   let {
     children: t
-  } = e, n = (0, a.bG)([l.default], () => l.default.locale), [d, f] = (0, s.hs)(e => [e.isLoading, e.error], i.x);
-  return null != f ? (0, r.jsx)(o.A, {
+  } = e, n = (0, a.bG)([l.default], () => l.default.locale), [d, f] = (0, o.hs)(e => [e.isLoading, e.error], i.x);
+  return null != f ? (0, r.jsx)(s.A, {
     title: c.intl.formatToPlainString(c.t["7basa2"], {
       locale: n
     }),

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Oy: () => a,
-  _m: () => s,
-  sx: () => o,
+  _m: () => o,
+  sx: () => s,
   xh: () => i
 });
 var Chunk136722 = require("./136722.js");
@@ -14,10 +14,10 @@ function a(e) {
   return e.id === e.guildId
 }
 
-function s(e, t) {
+function o(e, t) {
   return (0, r.zy)(e.permissions, t)
 }
 
-function o(e, t) {
+function s(e, t) {
   return (0, r.X8)(e.permissions, t)
 }

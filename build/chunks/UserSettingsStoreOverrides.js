@@ -35,11 +35,11 @@ let u = {},
 
 function f() {
   var e, t, n, r, i, a;
-  let s = o.A.settings;
+  let o = s.A.settings;
   return {
-    gifAutoPlay: null == (t = s.textAndImages) || null == (e = t.gifAutoPlay) ? true : e.value,
-    animateEmoji: null == (r = s.textAndImages) || null == (n = r.animateEmoji) ? true : n.value,
-    animateStickers: null == (a = s.textAndImages) || null == (i = a.animateStickers) ? true : i.value
+    gifAutoPlay: null == (t = o.textAndImages) || null == (e = t.gifAutoPlay) ? true : e.value,
+    animateEmoji: null == (r = o.textAndImages) || null == (n = r.animateEmoji) ? true : n.value,
+    animateStickers: null == (a = o.textAndImages) || null == (i = a.animateStickers) ? true : i.value
   }
 }
 
@@ -80,7 +80,7 @@ function E() {
 }
 class y extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    u = null != e ? e : {}, this.syncWith([o.A], p)
+    u = null != e ? e : {}, this.syncWith([s.A], p)
   }
   getState() {
     return u

@@ -19,7 +19,7 @@ function a(e, t, n) {
   }
 }
 
-function s(e) {
+function o(e) {
   try {
     return isElement(e) ? htmlTreeAsString(e) : Object.prototype.toString.call(e)
   } catch (e) {
@@ -27,7 +27,7 @@ function s(e) {
   }
 }
 
-function o(e) {
+function s(e) {
   if ("object" != typeof e || null === e) return {};
   {
     let t = {};

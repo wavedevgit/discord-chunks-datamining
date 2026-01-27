@@ -51,12 +51,12 @@ function a(e, t) {
         t.value += "}";
         break;
       case r.FormatJsNodeType.Tag:
-        s(n, t)
+        o(n, t)
     }
   }
 }
 
-function s(e, t) {
+function o(e, t) {
   switch (e[1]) {
     case "$b":
       t.value += "**", a(e[2], t), t.value += "**";

@@ -10,10 +10,10 @@ let i = {
 };
 
 function a(e, t) {
-  let n = s(e, t),
+  let n = o(e, t),
     r = u(e, t, n);
   return {
-    "Bits Per Sample": o(e, t, n),
+    "Bits Per Sample": s(e, t, n),
     "Image Height": l(e, t, n),
     "Image Width": c(e, t, n),
     "Color Components": r,
@@ -21,11 +21,11 @@ function a(e, t) {
   }
 }
 
-function s(e, t) {
+function o(e, t) {
   return r.A.getShortAt(e, t)
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   let i = 2;
   if (3 > n) return;
   let a = r.A.getByteAt(e, t + i);
@@ -68,14 +68,14 @@ function u(e, t, n) {
 function d(e, t, n, i) {
   let a = 8;
   if (8 + 3 * n > i) return;
-  let s = [];
+  let o = [];
   for (let i = 0; i < n; i++) {
     let n = t + a + 3 * i;
-    s.push([r.A.getByteAt(e, n), r.A.getByteAt(e, n + 1), r.A.getByteAt(e, n + 2)])
+    o.push([r.A.getByteAt(e, n), r.A.getByteAt(e, n + 1), r.A.getByteAt(e, n + 2)])
   }
   return {
-    value: s,
-    description: s.length > 1 ? f(s) + p(s) : ""
+    value: o,
+    description: o.length > 1 ? f(o) + p(o) : ""
   }
 }
 

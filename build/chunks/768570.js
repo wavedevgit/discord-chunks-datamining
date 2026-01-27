@@ -5,19 +5,19 @@ require.d(exports, {
   $H: () => u,
   B7: () => d,
   Q_: () => f,
-  nC: () => s,
+  nC: () => o,
   oi: () => a,
   su: () => c,
   us: () => l,
-  yQ: () => o
+  yQ: () => s
 }), require("./896048.js");
 var Chunk461012 = require("./461012.js"),
   Chunk652215 = require("./652215.js"),
   a = function(e) {
     return e.KEY_PRESS = "key_press", e.CLICK = "click", e
   }({});
-let s = "SearchStore",
-  o = "SearchHistoryStore_Web",
+let o = "SearchStore",
+  s = "SearchHistoryStore_Web",
   l = {
     sort_by: "timestamp",
     sort_order: "desc"

@@ -55,7 +55,7 @@ function u(e, t) {
   }, _ = (0, r.ZR)(n, u, t.timeZone, true), {
     ariaLabel: h,
     ariaLabelledBy: m
-  } = r.OX.get(t), g = (0, s.b)({
+  } = r.OX.get(t), g = (0, o.b)({
     "aria-label": [h, _].filter(Boolean).join(", "),
     "aria-labelledby": m
   }), E = (0, c.i)({
@@ -73,7 +73,7 @@ function u(e, t) {
     })
   }, [y, t.timeZone, E, d]), O = (0, i.RZ)(n, y, d);
   return {
-    gridProps: (0, o.v)(g, {
+    gridProps: (0, s.v)(g, {
       role: "grid",
       "aria-readonly": t.isReadOnly || true,
       "aria-disabled": t.isDisabled || true,

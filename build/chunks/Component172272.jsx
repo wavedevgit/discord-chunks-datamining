@@ -29,15 +29,15 @@ let l = 4,
   }));
 
 function d() {
-  let e = (0, a.bG)([s.default], () => s.default.layoutDebuggingEnabled),
+  let e = (0, a.bG)([o.default], () => o.default.layoutDebuggingEnabled),
     {
       horizontalSpacing: t,
       verticalSpacing: n
     } = u();
   return e ? (0, r.jsx)("div", {
-    className: o.k,
+    className: s.k,
     children: (0, r.jsx)("div", {
-      className: o.Z,
+      className: s.Z,
       "data-horizontal": t > 0,
       "data-vertical": n > 0,
       style: {

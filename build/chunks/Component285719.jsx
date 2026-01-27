@@ -19,18 +19,18 @@ let d = e => {
   } = e;
   return null == n ? null : (0, r.jsx)("div", {
     className: a()(u.Qs, t),
-    children: (0, r.jsx)(s.D0$, {
+    children: (0, r.jsx)(o.D0$, {
       label: c.intl.string(c.t.xFn72s),
       children: (0, r.jsxs)("div", {
         className: u.Ui,
-        children: [(0, r.jsx)(o.A, {
+        children: [(0, r.jsx)(s.A, {
           user: n,
-          size: s._3J.SIZE_44
-        }), (0, r.jsx)(s.Text, {
+          size: o._3J.SIZE_44
+        }), (0, r.jsx)(o.Text, {
           className: u.Xp,
           variant: "text-md/normal",
           children: l.Ay.getName(n)
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: u.Ik,
           variant: "text-md/normal",
           children: l.Ay.getUserTag(n)

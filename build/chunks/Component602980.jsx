@@ -3,20 +3,20 @@
 "use strict";
 require.d(exports, {
   Ec: () => l,
-  LQ: () => o,
-  Ss: () => s
+  LQ: () => s,
+  Ss: () => o
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk899343 = require("./899343.js"),
   Chunk796012 = require("./796012.jsx");
 
-function s(e) {
+function o(e) {
   let {
     currentStep: t,
     purchaseState: n,
-    className: s,
-    pause: o
+    className: o,
+    pause: s
   } = e, [l, c] = (0, i.f)({
     purchaseState: n,
     currentStep: t,
@@ -26,20 +26,20 @@ function s(e) {
     successScene: a.yh.Scenes.FINISH
   });
   return (0, r.jsx)(a.yh, {
-    className: s,
+    className: o,
     nextScene: l,
     onScenePlay: e => c(a.yh.getNextScene(e)),
     pauseWhileUnfocused: false,
-    pause: o
+    pause: s
   })
 }
 
-function o(e) {
+function s(e) {
   let {
     currentStep: t,
     purchaseState: n,
-    className: s,
-    pause: o
+    className: o,
+    pause: s
   } = e, [l, c] = (0, i.f)({
     purchaseState: n,
     currentStep: t,
@@ -49,11 +49,11 @@ function o(e) {
     successScene: a.rF.Scenes.FINISH
   });
   return (0, r.jsx)(a.rF, {
-    className: s,
+    className: o,
     nextScene: l,
     onScenePlay: e => c(a.rF.getNextScene(e)),
     pauseWhileUnfocused: false,
-    pause: o
+    pause: s
   })
 }
 
@@ -61,8 +61,8 @@ function l(e) {
   let {
     currentStep: t,
     purchaseState: n,
-    className: s,
-    pause: o
+    className: o,
+    pause: s
   } = e, [l, c] = (0, i.f)({
     purchaseState: n,
     currentStep: t,
@@ -72,10 +72,10 @@ function l(e) {
     successScene: a.yC.Scenes.BOOST_END
   });
   return (0, r.jsx)(a.yC, {
-    className: s,
+    className: o,
     nextScene: l,
     onScenePlay: e => c(a.yC.getNextScene(e)),
     pauseWhileUnfocused: false,
-    pause: o
+    pause: s
   })
 }

@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 327229, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 327229, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk743595 = require("./743595.js"),
   Chunk954055 = require("./954055.js"),
@@ -12,63 +12,56 @@ var Chunk743595 = require("./743595.js"),
   Chunk4323 = require("./4323.js"),
   Chunk670200 = require("./670200.js");
 
-function p(e, t) {
-  var n = null,
-    r = null,
-    i = o(e.currentTarget);
-  if ("function" == typeof i.caretRangeFromPoint) {
-    var a = i.caretRangeFromPoint(e.x, e.y);
-    n = a.startContainer, r = a.startOffset
-  } else {
-    if (!e.rangeParent) return null;
-    n = e.rangeParent, r = e.rangeOffset
-  }
-  n = f(n), r = f(r);
-  var l = f(s(n));
-  return c(t, l, r, l, r)
-}
-
-function _(e) {
-  e._internalDrag = false;
-  var t = e.editorContainer;
-  if (t) {
-    var n = new MouseEvent("mouseup", {
-      view: u(t),
+function h(t) {
+  t._internalDrag = false;
+  var e = t.editorContainer;
+  if (e) {
+    var r = new MouseEvent("mouseup", {
+      view: l(e),
       bubbles: true,
       cancelable: true
     });
-    t.dispatchEvent(n)
+    e.dispatchEvent(r)
   }
 }
 
-function h(e, t) {
-  var n = i.moveText(e.getCurrentContent(), e.getSelection(), t);
-  return a.push(e, n, "insert-fragment")
-}
-
-function m(e, t, n) {
-  var r = i.insertText(e.getCurrentContent(), t, n, e.getCurrentInlineStyle());
-  return a.push(e, r, "insert-fragment")
+function d(t, e, r) {
+  var n = i.insertText(t.getCurrentContent(), e, r, t.getCurrentInlineStyle());
+  return o.push(t, n, "insert-fragment")
 }
 module.exports = {
-  onDragEnd: function(e) {
-    e.exitCurrentMode(), _(e)
+  onDragEnd: function(t) {
+    t.exitCurrentMode(), h(t)
   },
-  onDrop: function(e, t) {
-    var n = new r(t.nativeEvent.dataTransfer),
-      i = e._latestEditorState,
-      a = p(t.nativeEvent, i);
-    if (t.preventDefault(), e._dragCount = 0, e.exitCurrentMode(), null != a) {
-      var s = n.getFiles();
-      if (s.length > 0) {
-        if (e.props.handleDroppedFiles && d(e.props.handleDroppedFiles(a, s))) return;
-        l(s, function(t) {
-          t && e.update(m(i, a, t))
+  onDrop: function(t, e) {
+    var r = new n(e.nativeEvent.dataTransfer),
+      l = t._latestEditorState,
+      g = function(t, e) {
+        var r = null,
+          n = null,
+          i = s(t.currentTarget);
+        if ("function" == typeof i.caretRangeFromPoint) {
+          var o = i.caretRangeFromPoint(t.x, t.y);
+          r = o.startContainer, n = o.startOffset
+        } else {
+          if (!t.rangeParent) return null;
+          r = t.rangeParent, n = t.rangeOffset
+        }
+        r = p(r), n = p(n);
+        var u = p(a(r));
+        return c(e, u, n, u, n)
+      }(e.nativeEvent, l);
+    if (e.preventDefault(), t._dragCount = 0, t.exitCurrentMode(), null != g) {
+      var y, v, m, _ = r.getFiles();
+      if (_.length > 0) {
+        if (t.props.handleDroppedFiles && f(t.props.handleDroppedFiles(g, _))) return;
+        u(_, function(e) {
+          e && t.update(d(l, g, e))
         });
         return
       }
-      var o = e._internalDrag ? "internal" : "external";
-      e.props.handleDrop && d(e.props.handleDrop(a, n, o)) || (e._internalDrag ? e.update(h(i, a)) : e.update(m(i, a, n.getText()))), _(e)
+      var b = t._internalDrag ? "internal" : "external";
+      t.props.handleDrop && f(t.props.handleDrop(g, r, b)) || (t._internalDrag ? t.update((y = l, v = g, m = i.moveText(y.getCurrentContent(), y.getSelection(), v), o.push(y, m, "insert-fragment"))) : t.update(d(l, g, r.getText()))), h(t)
     }
   }
 }

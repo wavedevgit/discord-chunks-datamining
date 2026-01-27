@@ -9,7 +9,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk698441 = require("./698441.js"),
   Chunk496092 = require("./496092.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ let l = {},
   d = 18e5,
   f = async e => {
     if (!(0 === a.Ay.getGuildScheduledEventsForGuild(e).length || c.has(e)) && !u.has(e)) try {
-      c.add(e), await s.A.getGuildEventsForCurrentUser(e), u.add(e)
+      c.add(e), await o.A.getGuildEventsForCurrentUser(e), u.add(e)
     } catch (t) {
       c.delete(e)
     }
@@ -34,12 +34,12 @@ class p extends Chunk439372.A {
     if (!(Date.now() - l["".concat(e, "-").concat(t)] < d) || 0 !== r.length) {
       l["".concat(e, "-").concat(t)] = Date.now(), r.forEach(n => l["".concat(e, "-").concat(t, "-").concat(n)] = Date.now());
       try {
-        await s.A.fetchGuildEventUserCounts(e, t, r)
+        await o.A.fetchGuildEventUserCounts(e, t, r)
       } catch (e) {}
     }
   }
   getGuildEventUsers(e, t, n) {
-    return s.A.fetchUsersForGuildEvent(e, t, n)
+    return o.A.fetchUsersForGuildEvent(e, t, n)
   }
   getGuildEventsForCurrentUser(e) {
     return f(e)
@@ -78,7 +78,7 @@ class p extends Chunk439372.A {
       }
   }
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), s(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handleConnectionOpen(),
       GUILD_DELETE: e => this.handleGuildDelete(e),
       GUILD_UNAVAILABLE: e => this.handleGuildUnavailable(e),

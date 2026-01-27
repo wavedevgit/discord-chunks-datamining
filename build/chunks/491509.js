@@ -2,7 +2,7 @@
 /** chunk id: 491509, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk587895 = require("./587895.js"),
   Chunk652215 = require("./652215.js");
@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,11 +29,11 @@ function s(e) {
   return e
 }
 
-function o(e) {
+function s(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     a = r.A.getApplication(e.applicationId),
-    o = e.getPrice(),
+    s = e.getPrice(),
     l = e.getPrice(null, false),
     c = {
       sku_id: e.id,
@@ -45,9 +45,9 @@ function o(e) {
     },
     u = null;
   n && (u = {
-    price: null != o ? o.amount : null,
+    price: null != s ? s.amount : null,
     regular_price: null != l ? l.amount : null,
-    currency: null != o ? o.currency : null
+    currency: null != s ? s.currency : null
   });
   let d = null;
   return t && (d = {
@@ -64,5 +64,5 @@ function o(e) {
     has_controller_support: e.hasFeature(i.x0t.CONTROLLER_SUPPORT),
     has_cloud_saves: e.hasFeature(i.x0t.CLOUD_SAVES),
     has_secure_networking: e.hasFeature(i.x0t.SECURE_NETWORKING)
-  }), s({}, c, u, d)
+  }), o({}, c, u, d)
 }

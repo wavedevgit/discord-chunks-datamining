@@ -27,7 +27,7 @@ let p = {
   matches: (e, t, n, r, i) => true,
   queryResults: (e, t, n) => ({
     results: {
-      games: o.Ay.queryGames(n).slice(0, 10)
+      games: s.Ay.queryGames(n).slice(0, 10)
     }
   }),
   renderResults(e) {
@@ -36,12 +36,12 @@ let p = {
         games: t
       },
       selectedIndex: n,
-      query: s,
-      onHover: o,
+      query: o,
+      onHover: s,
       onClick: c
     } = e, d = t.map((e, t) => (0, r.jsx)(a.Ay.Game, {
       onClick: c,
-      onHover: o,
+      onHover: s,
       selected: n === t,
       index: t,
       game: e
@@ -50,7 +50,7 @@ let p = {
       children: [(0, l.wZ)({
         titleWithQuery: f,
         titleWithoutQuery: p,
-        query: s,
+        query: o,
         getQuery: e => "".concat("@").concat(e)
       }), d]
     }, "mentions")

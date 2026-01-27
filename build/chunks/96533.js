@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 96533, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 96533, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => C
+  A: () => S
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk745669 = require("./745669.js"),
@@ -27,22 +26,22 @@ var Chunk64700 = require("./64700.js"),
   Chunk416397 = require("./416397.js"),
   Chunk582165 = require("./582165.js"),
   Chunk650000 = require("./650000.js");
-let T = [Chunk75230.A, Chunk13181.A, Chunk744877.A, Chunk13093.A, Chunk103989.A, Chunk934658.A, Chunk447515.A, Chunk844636.A, Chunk485508.A, Chunk656122.A, Chunk416397.A, Chunk582165.A, Chunk650000.A, Chunk846857.A, Chunk992234.A, Chunk772350.A, Chunk745669.A, Chunk183766.A, Chunk801148.A];
+let E = [Chunk75230.A, Chunk13181.A, Chunk744877.A, Chunk13093.A, Chunk103989.A, Chunk934658.A, Chunk447515.A, Chunk844636.A, Chunk485508.A, Chunk656122.A, Chunk416397.A, Chunk582165.A, Chunk650000.A, Chunk846857.A, Chunk992234.A, Chunk772350.A, Chunk745669.A, Chunk183766.A, Chunk801148.A];
 
-function C() {
+function S() {
   let e = r.useRef(0),
     t = r.useRef(true),
     n = (0, g.I)(),
-    i = n === m.$.SUCCESS || n === m.$.ERROR,
-    [a, s] = r.useState(false);
+    l = n === b.$.SUCCESS || n === b.$.ERROR,
+    [a, i] = r.useState(false);
   return (0, r.useEffect)(() => {
-    T.forEach(n => h.Bo.get({
+    E.forEach(n => h.Bo.get({
       url: n,
       rejectWithError: true
     }).then(() => {
-      t.current && (e.current += 1, e.current === T.length && s(true))
+      t.current && (e.current += 1, e.current === E.length && i(true))
     }))
   }, []), (0, r.useEffect)(() => () => {
     t.current = false
-  }, []), a && i
+  }, []), a && l
 }

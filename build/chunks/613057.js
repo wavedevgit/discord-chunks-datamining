@@ -5,10 +5,10 @@ require.d(exports, {
   Hi: () => d,
   LQ: () => i,
   OE: () => u,
-  VH: () => o,
+  VH: () => s,
   W_: () => l,
   XK: () => c,
-  hj: () => s,
+  hj: () => o,
   kw: () => a,
   sm: () => r,
   z4: () => f
@@ -18,8 +18,8 @@ var r = function(e) {
 }({});
 let i = "RPC_PRIVATE_SCOPE",
   a = "RPC_PRIVATE_LIMITED_SCOPE",
-  s = "RPC_LOCAL_SCOPE",
-  o = "RPC_AUTHENTICATED_SCOPE",
+  o = "RPC_LOCAL_SCOPE",
+  s = "RPC_AUTHENTICATED_SCOPE",
   l = "RPC_EMBEDDED_APP_SCOPE";
 var c = function(e) {
   return e.USER_SETTINGS = "USER_SETTINGS", e.CHANGELOG = "CHANGELOG", e.LIBRARY = "LIBRARY", e.STORE_HOME = "STORE_HOME", e.STORE_LISTING = "STORE_LISTING", e.CHANNEL = "CHANNEL", e.GAME_SHOP = "GAME_SHOP", e.PICK_GUILD_SETTINGS = "PICK_GUILD_SETTINGS", e.QUEST_HOME = "QUEST_HOME", e.DISCOVERY_GAME_RESULTS = "DISCOVERY_GAME_RESULTS", e.OAUTH2 = "OAUTH2", e.FEATURES = "FEATURES", e.SHOP = "SHOP", e.ACTIVITIES = "ACTIVITIES", e.QUEST_PREVIEW_TOOL = "QUEST_PREVIEW_TOOL", e.ONE_TIME_LOGIN = "ONE_TIME_LOGIN", e.PLAYGROUND = "PLAYGROUND", e

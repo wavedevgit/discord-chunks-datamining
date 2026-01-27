@@ -15,6 +15,6 @@ Chunk557939({
   proto: true
 }, {
   toSorted: function(e) {
-    return true !== e && a(e), d(o(u, s(this)), e)
+    return true !== e && a(e), d(s(u, o(this)), e)
   }
 }), Chunk633228("toSorted")

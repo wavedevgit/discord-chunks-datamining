@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
   Chunk280230 = require("./280230.js"),
-  s = require.n(Chunk280230);
+  o = require.n(Chunk280230);
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ let d = /\n{2,}$/,
   O = 1,
   v = 1e9,
   A = e => e.map(e => ("text" === e.type && null != e.content && (e.content = e.content.replace(/\n+\s*$/, "")), e)),
-  I = u(l({}, s().defaultRules.list), {
+  I = u(l({}, o().defaultRules.list), {
     requiredFirstCharacters: " *-0123456789".split(""),
     match: (e, t) => {
       if (!t.allowList || t._listLevel >= b + 1) return null;
@@ -71,29 +71,29 @@ let d = /\n{2,}$/,
     parse: (e, t, n) => {
       let r = e[2],
         a = r.length > 1,
-        s = a ? Math.min(v, Math.max(O, +r)) : true,
-        o = e[0].replace(d, "\n"),
-        c = h.exec(o),
+        o = a ? Math.min(v, Math.max(O, +r)) : true,
+        s = e[0].replace(d, "\n"),
+        c = h.exec(s),
         f = null != c ? c[0].length : 0,
         p = null != c ? c[1].length : 0,
         _ = " {".concat(p, ",").concat(p + 1, "}"),
         E = RegExp(m.replaceAll("%INDENT_CAPTURE_PATTERN%", _), "gm"),
         y = RegExp("^ {1," + f + "}", "gm"),
-        b = o.match(E);
+        b = s.match(E);
       i()(null != b, "markup list items can not be parsed.");
       let I = false;
       return {
         ordered: a,
-        start: s,
+        start: o,
         items: b.map((e, r) => {
           let i, a = e.replace(h, "").replace(y, ""),
-            s = r === b.length - 1,
-            o = false !== a.indexOf("\n\n") || s && I;
-          I = o;
+            o = r === b.length - 1,
+            s = false !== a.indexOf("\n\n") || o && I;
+          I = s;
           let c = n.inline,
             d = n._list,
             f = n._listLevel;
-          n._list = true, n._listLevel = (null != f ? f : 0) + 1, o ? (n.inline = false, i = a.replace(g, "\n\n")) : (n.inline = true, i = a.replace(g, ""));
+          n._list = true, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = false, i = a.replace(g, "\n\n")) : (n.inline = true, i = a.replace(g, ""));
           let p = A(t(i, u(l({}, n), {
             allowHeading: false
           })));

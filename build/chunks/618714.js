@@ -5,8 +5,8 @@
 }(function() {
   "use strict";
   var e, t, r, i, a = "u" > typeof window ? window : (n.g, n.g),
-    s = a.cancelRequestAnimationFrame && a.requestAnimationFrame || setTimeout,
-    o = a.cancelRequestAnimationFrame || clearTimeout,
+    o = a.cancelRequestAnimationFrame && a.requestAnimationFrame || setTimeout,
+    s = a.cancelRequestAnimationFrame || clearTimeout,
     l = [],
     c = 0,
     u = false,
@@ -41,7 +41,7 @@
   }
 
   function b() {
-    u && (i && o(i), r && clearTimeout(r), u = false)
+    u && (i && s(i), r && clearTimeout(r), u = false)
   }
 
   function O() {
@@ -53,7 +53,7 @@
   }
 
   function A() {
-    r = null, s(v)
+    r = null, o(v)
   }
 
   function I() {
@@ -61,9 +61,9 @@
   }
 
   function S() {
-    var n, i, a, s = d > 9 ? 9 : 1;
+    var n, i, a, o = d > 9 ? 9 : 1;
     if (h = Date.now(), u = false, r = null, c > 2 || h - t - 50 < e)
-      for (i = 0, a = l.length; i < a && g.timeRemaining() > s; i++) n = l.shift(), m++, n && n(g);
+      for (i = 0, a = l.length; i < a && g.timeRemaining() > o; i++) n = l.shift(), m++, n && n(g);
     l.length ? I() : c = 0
   }
 

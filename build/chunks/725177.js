@@ -9,7 +9,7 @@ var Chunk780964 = require("./780964.js"),
   Chunk857266 = require("./857266.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -34,11 +34,11 @@ function l(e) {
 function c(e) {
   switch (e) {
     case a.J.MY_GAMES:
-      return [r.X.REGISTERED_GAMES_PANEL, s.nc_.REGISTERED_GAMES];
+      return [r.X.REGISTERED_GAMES_PANEL, o.nc_.REGISTERED_GAMES];
     case a.J.OVERLAY:
-      return [r.X.OVERLAY_PANEL, s.nc_.OVERLAY];
+      return [r.X.OVERLAY_PANEL, o.nc_.OVERLAY];
     case a.J.ACTIVITY_PRIVACY:
-      return [r.X.ACTIVITY_PRIVACY_PANEL, s.nc_.ACTIVITY_PRIVACY]
+      return [r.X.ACTIVITY_PRIVACY_PANEL, o.nc_.ACTIVITY_PRIVACY]
   }
 }
 

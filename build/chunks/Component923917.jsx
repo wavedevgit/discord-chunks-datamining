@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   c = require.n(Chunk284009),
   Chunk758879 = require("./758879.js"),
@@ -93,12 +93,12 @@ function Z(e) {
   } = e;
   return t && k.isPlatformEmbedded && !n
 }
-class X extends(r = Chunk64700.Component) {
+class Q extends(r = Chunk64700.Component) {
   componentDidMount() {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, V.M)(e), e.addEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.addEventListener("contextmenu", U.contextMenuCallbackNative, false) : t.addEventListener("contextmenu", U.contextMenuCallbackWeb, false), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
+    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, F.M)(e), e.addEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.addEventListener("contextmenu", U.contextMenuCallbackNative, false) : t.addEventListener("contextmenu", U.contextMenuCallbackWeb, false), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
   }
   componentDidUpdate(e) {
     let {
@@ -133,8 +133,8 @@ class X extends(r = Chunk64700.Component) {
       a.textContent = e;
       return
     }
-    let s = n.createElement("style");
-    s.setAttribute(I.Vg, "true"), s.textContent = e, i.appendChild(s)
+    let o = n.createElement("style");
+    o.setAttribute(I.Vg, "true"), o.textContent = e, i.appendChild(o)
   }
   registerPopoutGlobalKeybinds() {
     var e;
@@ -155,7 +155,7 @@ class X extends(r = Chunk64700.Component) {
       windowKey: n,
       isFullScreen: r,
       withTitleBar: a,
-      guestWindow: s,
+      guestWindow: o,
       clientThemesClassName: l,
       contentClassName: c,
       themeOverride: d,
@@ -165,21 +165,21 @@ class X extends(r = Chunk64700.Component) {
     } = this.props, y = Z({
       withTitleBar: a,
       isFullScreen: r
-    }), O = n === H.f ? x.A : w.A;
+    }), O = n === H.f ? L.A : w.A;
     return (0, i.jsx)(u.Kd, {
-      children: (0, i.jsx)(j.e, {
+      children: (0, i.jsx)(M.e, {
         windowKey: n,
         themeOverride: d,
         children: (0, i.jsx)(b.A, {
           children: (0, i.jsxs)(h.xpW, {
             containerRef: this.rootRef,
-            children: [(0, i.jsx)(Q, {
-              guestWindow: s,
+            children: [(0, i.jsx)(X, {
+              guestWindow: o,
               className: l,
               children: (0, i.jsxs)(O, {
                 children: [(0, i.jsx)(T.Al, {}), (0, i.jsx)(D.Wr, {
                   appContext: null != E ? E : B.BRT.POPOUT,
-                  renderWindow: s,
+                  renderWindow: o,
                   children: (0, i.jsx)(S.l, {
                     children: (0, i.jsxs)(P.Yf, {
                       children: [(0, i.jsxs)("div", {
@@ -188,10 +188,10 @@ class X extends(r = Chunk64700.Component) {
                           theme: _,
                           children: e => (0, i.jsx)(C.cq, {
                             windowKey: n,
-                            className: o()(e, Y.uv)
+                            className: s()(e, Y.uv)
                           })
                         }), (0, i.jsx)("div", {
-                          className: o()(Y.Qs, c),
+                          className: s()(Y.Qs, c),
                           children: t
                         })]
                       }), !g && (0, i.jsx)(h.bM6, {}), (0, i.jsx)(m.A, {}), (0, i.jsx)(f.P, {}), (0, i.jsx)(P.C8, {})]
@@ -210,7 +210,7 @@ class X extends(r = Chunk64700.Component) {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        F.A.unmountWindow(this.props.windowKey), k.isPlatformEmbedded && G.Ay.close(this.props.windowKey)
+        V.A.unmountWindow(this.props.windowKey), k.isPlatformEmbedded && G.Ay.close(this.props.windowKey)
       };
       null != t ? t({
         e,
@@ -222,19 +222,19 @@ class X extends(r = Chunk64700.Component) {
     })
   }
 }
-W(X, "defaultProps", {
+W(Q, "defaultProps", {
   withTitleBar: true
 });
-let Q = Chunk64700.forwardRef(function(e, t) {
+let X = Chunk64700.forwardRef(function(e, t) {
     let {
       guestWindow: n,
       className: r,
-      children: s
+      children: o
     } = e, {
       lang: l,
       style: u,
       className: d
-    } = (0, M.xb)();
+    } = (0, j.xb)();
     return a.useEffect(() => {
       let e = n.document.documentElement;
       c()(null != e, "Window document element was null"), e.setAttribute("style", u)
@@ -244,8 +244,8 @@ let Q = Chunk64700.forwardRef(function(e, t) {
     }, [n, l]), (0, i.jsx)("div", {
       "data-popout-root": true,
       ref: t,
-      className: o()(d, r),
-      children: s
+      className: s()(d, r),
+      children: o
     })
   }),
   J = Chunk64700.forwardRef(function(e, t) {
@@ -253,14 +253,14 @@ let Q = Chunk64700.forwardRef(function(e, t) {
     let {
       guestWindow: r,
       isFullScreen: a
-    } = (0, _.cf)([F.A], () => ({
-      guestWindow: F.A.getWindow(e.windowKey),
-      isFullScreen: F.A.isWindowFullScreen(e.windowKey)
+    } = (0, _.cf)([V.A], () => ({
+      guestWindow: V.A.getWindow(e.windowKey),
+      isFullScreen: V.A.isWindowFullScreen(e.windowKey)
     }));
     c()(null != r, "Missing guestWindow reference");
     let {
-      forcedColors: s,
-      connectedEmbeddedActivity: o
+      forcedColors: o,
+      connectedEmbeddedActivity: s
     } = (0, _.cf)([y.A, O.Ay], () => ({
       forcedColors: y.A.useForcedColors ? "yes" : "no",
       connectedEmbeddedActivity: O.Ay.getCurrentEmbeddedActivity()
@@ -271,18 +271,18 @@ let Q = Chunk64700.forwardRef(function(e, t) {
     } = (0, A.Ay)(v.A.POPOUT_WINDOW), {
       clientThemesClassName: u,
       clientThemesCSS: d
-    } = (0, I.Ay)(), f = (0, L.NC)(), p = null != (n = e.themeOverride) ? n : f;
+    } = (0, I.Ay)(), f = (0, x.NC)(), p = null != (n = e.themeOverride) ? n : f;
     return null == r ? null : (0, i.jsx)(h.WaV, {
       children: (0, i.jsx)(A.f5, {
         value: l,
-        children: (0, i.jsx)(X, q(K({
+        children: (0, i.jsx)(Q, q(K({
           ref: t
         }, e), {
           titleBarTheme: p,
           guestWindow: r,
           isFullScreen: a,
-          forcedColors: s,
-          connectedEmbeddedActivity: o,
+          forcedColors: o,
+          connectedEmbeddedActivity: s,
           clientThemesClassName: u,
           clientThemesCSS: d
         }))

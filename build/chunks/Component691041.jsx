@@ -35,12 +35,12 @@ function h(e) {
     user: t,
     onClose: m
   }), b = (0, l.d)(null == n ? true : n.application_id);
-  if (null == y && null != n && (0, o.A)(n)) return (0, r.jsx)(d.FD, {
+  if (null == y && null != n && (0, s.A)(n)) return (0, r.jsx)(d.FD, {
     icon: a.k9F,
     text: _.intl.string(_.t.RscU7I),
     fullWidth: g !== p.d.MODAL_V2,
     onClick: e => {
-      e.stopPropagation(), null != b ? s.A.launch({
+      e.stopPropagation(), null != b ? o.A.launch({
         applicationId: b
       }) : (null == h || h({
         action: "PRESS_PLAY_BUTTON"

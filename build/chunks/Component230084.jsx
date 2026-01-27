@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 230084, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 230084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,58 +15,58 @@ var Chunk627968 = require("./627968.js"),
   Chunk339984 = require("./339984.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk897570 = require("./897570.js");
-let h = [{
+let g = [{
   name: "gif",
   extensions: ["gif"]
 }];
 
-function m(e) {
+function A(e) {
   let {
     showRemoveAvatarButton: t,
     errors: n,
-    onAvatarChange: a,
-    sectionTitle: m,
-    changeAvatarButtonText: g,
-    guildId: E,
-    className: y,
-    disabled: b = false,
-    isTryItOut: O = false,
-    forcedDivider: v,
-    withHighlight: A = false
+    onAvatarChange: l,
+    sectionTitle: A,
+    changeAvatarButtonText: f,
+    guildId: h,
+    className: b,
+    disabled: E = false,
+    isTryItOut: x = false,
+    forcedDivider: O,
+    withHighlight: C = false
   } = e, {
     newestAnalyticsLocation: I
-  } = (0, c.Ay)(), S = A ? l.wLn : o.$n, T = i.useCallback(() => {
-    (0, u.XD)({
-      uploadType: f.HL.AVATAR,
+  } = (0, c.Ay)(), T = C ? o.wLn : a.$n, S = i.useCallback(() => {
+    (0, d.XD)({
+      uploadType: _.HL.AVATAR,
       analyticsSource: I,
-      filters: O ? h : true,
-      guildId: E,
-      isTryItOut: O
+      filters: x ? g : true,
+      guildId: h,
+      isTryItOut: x
     })
-  }, [E, I, O]);
-  return (0, r.jsx)(d.A, {
-    className: y,
-    title: m,
+  }, [h, I, x]);
+  return (0, r.jsx)(u.A, {
+    className: b,
+    title: A,
     errors: n,
-    disabled: b,
-    forcedDivider: v,
+    disabled: E,
+    forcedDivider: O,
     children: (0, r.jsxs)("div", {
-      className: _.NC,
-      children: [(0, r.jsx)(S, {
+      className: m.NC,
+      children: [(0, r.jsx)(T, {
         className: s()({
-          [_.yj]: A
+          [m.yj]: C
         }),
-        size: o.$n.Sizes.SMALL,
-        onClick: T,
-        children: null != g ? g : p.intl.string(p.t["4OynCD"])
+        size: a.$n.Sizes.SMALL,
+        onClick: S,
+        children: null != f ? f : p.intl.string(p.t["4OynCD"])
       }), t && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: _.DT,
-        children: (0, r.jsx)(l.Button, {
+        className: m.DT,
+        children: (0, r.jsx)(o.Button, {
           variant: "secondary",
           size: "sm",
-          text: null != E ? p.intl.string(p.t.TDjKDm) : p.intl.string(p.t.twB3fz),
-          onClick: () => a(null)
+          text: null != h ? p.intl.string(p.t.TDjKDm) : p.intl.string(p.t.twB3fz),
+          onClick: () => l(null)
         })
       })]
     })

@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 694705, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 694705, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => v,
-  v: () => b
+  v: () => x
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
-  s = require.n(Chunk284009),
+  i = require.n(Chunk284009),
   Chunk681154 = require("./681154.js"),
   Chunk61259 = require("./61259.js"),
   Chunk380349 = require("./380349.js"),
@@ -18,88 +17,83 @@ var Chunk627968 = require("./627968.js"),
   Chunk873498 = require("./873498.js"),
   Chunk653826 = require("./653826.js");
 
-function h(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function g(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i, a = {};
+  var n, r, l, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+    for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = E(e, t), Object.getOwnPropertySymbols)
-    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+  if (a = function(e, t) {
+      if (null == e) return {};
+      var n, r, l = {},
+        a = Object.getOwnPropertyNames(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+      return l
+    }(e, t), Object.getOwnPropertySymbols)
+    for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
+let g = Chunk64700.createContext(true);
 
-function E(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.getOwnPropertyNames(e);
-  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-  return i
-}
-let y = Chunk64700.createContext(true);
-
-function b() {
-  let e = i.useContext(y);
-  return s()(null != e, "useEntryDataContext must be used within a EntryDataContextProvider"), e
+function x() {
+  let e = l.useContext(g);
+  return i()(null != e, "useEntryDataContext must be used within a EntryDataContextProvider"), e
 }
 
-function O(e) {
+function y(e) {
   let {
     entry: t
-  } = e, n = g(e, ["entry"]), i = m({
+  } = e, n = b(e, ["entry"]), l = h({
     baseEntryData: (0, u.A)({
       entry: t,
       channel: n.channel
     })
   }, n);
   switch (t.content_type) {
-    case o.ContentInventoryEntryType.TOP_ARTIST:
-      return (0, r.jsx)(I, m({
+    case s.ContentInventoryEntryType.TOP_ARTIST:
+      return (0, r.jsx)(C, h({
         entry: t
-      }, i));
-    case o.ContentInventoryEntryType.TOP_GAME:
-      return (0, r.jsx)(S, m({
+      }, l));
+    case s.ContentInventoryEntryType.TOP_GAME:
+      return (0, r.jsx)(_, h({
         entry: t
-      }, i));
-    case o.ContentInventoryEntryType.PLAYED_GAME:
-      return (0, r.jsx)(T, m({
+      }, l));
+    case s.ContentInventoryEntryType.PLAYED_GAME:
+      return (0, r.jsx)(A, h({
         entry: t
-      }, i));
-    case o.ContentInventoryEntryType.WATCHED_MEDIA:
-      return (0, r.jsx)(C, m({
+      }, l));
+    case s.ContentInventoryEntryType.WATCHED_MEDIA:
+      return (0, r.jsx)(O, h({
         entry: t
-      }, i));
-    case o.ContentInventoryEntryType.LISTENED_SESSION:
-      return (0, r.jsx)(N, m({
+      }, l));
+    case s.ContentInventoryEntryType.LISTENED_SESSION:
+      return (0, r.jsx)(E, h({
         entry: t
-      }, i));
-    case o.ContentInventoryEntryType.LAUNCHED_ACTIVITY:
-      return (0, r.jsx)(A, m({
+      }, l));
+    case s.ContentInventoryEntryType.LAUNCHED_ACTIVITY:
+      return (0, r.jsx)(j, h({
         entry: t
-      }, i));
+      }, l));
     default:
       throw Error("Unsupported content type: ".concat(t.content_type))
   }
@@ -108,69 +102,24 @@ function O(e) {
 function v(e) {
   let {
     errorFallback: t
-  } = e, n = g(e, ["errorFallback"]);
-  return (0, r.jsx)(l.t, {
+  } = e, n = b(e, ["errorFallback"]);
+  return (0, r.jsx)(o.t, {
     fallback: t,
-    children: (0, r.jsx)(O, m({}, n))
+    children: (0, r.jsx)(y, h({}, n))
   })
 }
 
-function A(e) {
+function j(e) {
   let {
     entry: t,
     children: n
-  } = e, i = g(e, ["entry", "children"]), a = (0, c.A)(m({
+  } = e, l = b(e, ["entry", "children"]), a = (0, c.A)(h({
     entry: t
-  }, i));
-  return (0, r.jsx)(y.Provider, {
-    value: m({
+  }, l));
+  return (0, r.jsx)(g.Provider, {
+    value: h({
       parsedEntry: a
-    }, i),
-    children: n
-  })
-}
-
-function I(e) {
-  let {
-    entry: t,
-    children: n
-  } = e, i = g(e, ["entry", "children"]), a = (0, p.A)(m({
-    entry: t
-  }, i));
-  return (0, r.jsx)(y.Provider, {
-    value: m({
-      parsedEntry: a
-    }, i),
-    children: n
-  })
-}
-
-function S(e) {
-  let {
-    entry: t,
-    children: n
-  } = e, i = g(e, ["entry", "children"]), a = (0, d.A)(m({
-    entry: t
-  }, i));
-  return (0, r.jsx)(y.Provider, {
-    value: m({
-      parsedEntry: a
-    }, i),
-    children: n
-  })
-}
-
-function T(e) {
-  let {
-    entry: t,
-    children: n
-  } = e, i = g(e, ["entry", "children"]), a = (0, d.A)(m({
-    entry: t
-  }, i));
-  return (0, r.jsx)(y.Provider, {
-    value: m({
-      parsedEntry: a
-    }, i),
+    }, l),
     children: n
   })
 }
@@ -179,28 +128,73 @@ function C(e) {
   let {
     entry: t,
     children: n
-  } = e, i = g(e, ["entry", "children"]), a = (0, _.A)(m({
+  } = e, l = b(e, ["entry", "children"]), a = (0, f.A)(h({
     entry: t
-  }, i));
-  return (0, r.jsx)(y.Provider, {
-    value: m({
+  }, l));
+  return (0, r.jsx)(g.Provider, {
+    value: h({
       parsedEntry: a
-    }, i),
+    }, l),
     children: n
   })
 }
 
-function N(e) {
+function _(e) {
   let {
     entry: t,
     children: n
-  } = e, i = g(e, ["entry", "children"]), a = (0, f.A)(m({
+  } = e, l = b(e, ["entry", "children"]), a = (0, d.A)(h({
     entry: t
-  }, i));
-  return (0, r.jsx)(y.Provider, {
-    value: m({
+  }, l));
+  return (0, r.jsx)(g.Provider, {
+    value: h({
       parsedEntry: a
-    }, i),
+    }, l),
+    children: n
+  })
+}
+
+function A(e) {
+  let {
+    entry: t,
+    children: n
+  } = e, l = b(e, ["entry", "children"]), a = (0, d.A)(h({
+    entry: t
+  }, l));
+  return (0, r.jsx)(g.Provider, {
+    value: h({
+      parsedEntry: a
+    }, l),
+    children: n
+  })
+}
+
+function O(e) {
+  let {
+    entry: t,
+    children: n
+  } = e, l = b(e, ["entry", "children"]), a = (0, p.A)(h({
+    entry: t
+  }, l));
+  return (0, r.jsx)(g.Provider, {
+    value: h({
+      parsedEntry: a
+    }, l),
+    children: n
+  })
+}
+
+function E(e) {
+  let {
+    entry: t,
+    children: n
+  } = e, l = b(e, ["entry", "children"]), a = (0, m.A)(h({
+    entry: t
+  }, l));
+  return (0, r.jsx)(g.Provider, {
+    value: h({
+      parsedEntry: a
+    }, l),
     children: n
   })
 }

@@ -29,10 +29,10 @@ let d = 6e3,
         let e = {};
         try {
           if (null != m && (e.avatarDecoration = m), null != g) {
-            let e = (0, s.yX)({
+            let e = (0, o.yX)({
               pendingProfileEffect: g
             });
-            await (0, o.gi)(e)
+            await (0, s.gi)(e)
           }
           null != E && (e.nameplate = E), Object.keys(e).length > 0 && await (0, a.yu)(e);
           {

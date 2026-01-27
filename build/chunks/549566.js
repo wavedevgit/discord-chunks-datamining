@@ -11,10 +11,10 @@ let Chunk74509 = require("./74509.js"),
     if (e === t) returntrue;
     e = new r(e, n), t = new r(t, n);
     let i = false;
-    o: for (let r of e.set) {
+    s: for (let r of e.set) {
       for (let e of t.set) {
         let t = d(r, e, n);
-        if (i = i || null !== t, t) continue o
+        if (i = i || null !== t, t) continue s
       }
       if (i) returnfalse
     }
@@ -34,11 +34,11 @@ let Chunk74509 = require("./74509.js"),
     let g = new Set;
     for (let t of e) ">" === t.operator || ">=" === t.operator ? r = f(r, t, n) : "<" === t.operator || "<=" === t.operator ? i = p(i, t, n) : g.add(t.semver);
     if (g.size > 1) return null;
-    if (r && i && ((l = o(r.semver, i.semver, n)) > 0 || 0 === l && (">=" !== r.operator || "<=" !== i.operator))) return null;
+    if (r && i && ((l = s(r.semver, i.semver, n)) > 0 || 0 === l && (">=" !== r.operator || "<=" !== i.operator))) return null;
     for (let e of g) {
-      if (r && !s(e, String(r), n) || i && !s(e, String(i), n)) return null;
+      if (r && !o(e, String(r), n) || i && !o(e, String(i), n)) return null;
       for (let r of t)
-        if (!s(e, String(r), n)) returnfalse;
+        if (!o(e, String(r), n)) returnfalse;
       returntrue
     }
     let E = !!i && !n.includePrerelease && !!i.semver.prerelease.length && i.semver,
@@ -47,12 +47,12 @@ let Chunk74509 = require("./74509.js"),
       if (m = m || ">" === e.operator || ">=" === e.operator, h = h || "<" === e.operator || "<=" === e.operator, r) {
         if (y && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === y.major && e.semver.minor === y.minor && e.semver.patch === y.patch && (y = false), ">" === e.operator || ">=" === e.operator) {
           if ((d = f(r, e, n)) === e && d !== r) returnfalse
-        } else if (">=" === r.operator && !s(r.semver, String(e), n)) returnfalse
+        } else if (">=" === r.operator && !o(r.semver, String(e), n)) returnfalse
       }
       if (i) {
         if (E && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === E.major && e.semver.minor === E.minor && e.semver.patch === E.patch && (E = false), "<" === e.operator || "<=" === e.operator) {
           if ((_ = p(i, e, n)) === e && _ !== i) returnfalse
-        } else if ("<=" === i.operator && !s(i.semver, String(e), n)) returnfalse
+        } else if ("<=" === i.operator && !o(i.semver, String(e), n)) returnfalse
       }
       if (!e.operator && (i || r) && 0 !== l) returnfalse
     }
@@ -60,12 +60,12 @@ let Chunk74509 = require("./74509.js"),
   },
   f = (e, t, n) => {
     if (!e) return t;
-    let r = o(e.semver, t.semver, n);
+    let r = s(e.semver, t.semver, n);
     return r > 0 ? e : r < 0 || ">" === t.operator && ">=" === e.operator ? t : e
   },
   p = (e, t, n) => {
     if (!e) return t;
-    let r = o(e.semver, t.semver, n);
+    let r = s(e.semver, t.semver, n);
     return r < 0 ? e : r > 0 || "<" === t.operator && "<=" === e.operator ? t : e
   };
 module.exports = l

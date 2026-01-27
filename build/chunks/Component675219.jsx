@@ -100,11 +100,11 @@ class S {
       key: null,
       renderStep: e => (0, r.jsx)(h.e, {
         paymentModalStepProps: e,
-        defaultStep: s.pn.REVIEW
+        defaultStep: o.pn.REVIEW
       })
     } : {
       key: null,
-      renderStep: e => (0, r.jsx)(o.I, b({}, e))
+      renderStep: e => (0, r.jsx)(s.I, b({}, e))
     }
   }
   getAddPaymentStepConfig(e) {
@@ -114,11 +114,11 @@ class S {
       allowGiftCustomization: n
     } = this.internalCheckoutFlowControls;
     if (this.checkoutFlow !== u.C.ORB_CHECKOUT) return {
-      key: s.pn.ADD_PAYMENT_STEPS,
+      key: o.pn.ADD_PAYMENT_STEPS,
       renderStep: e => (0, r.jsx)(p.c, {
         paymentModalStepProps: e,
-        returnStep: s.pn.REVIEW,
-        returnStepIfNoPaymentSources: t && n ? s.pn.GIFT_CUSTOMIZATION : true
+        returnStep: o.pn.REVIEW,
+        returnStepIfNoPaymentSources: t && n ? o.pn.GIFT_CUSTOMIZATION : true
       }),
       options: {
         renderHeader: true
@@ -132,10 +132,10 @@ class S {
       allowGiftCustomization: n
     } = this.internalCheckoutFlowControls;
     return t && n ? {
-      key: s.pn.GIFT_CUSTOMIZATION,
+      key: o.pn.GIFT_CUSTOMIZATION,
       renderStep: e => (0, r.jsx)(_.E, {
         paymentModalStepProps: e,
-        unifiedStepDefinition: this.getUnifiedStepDefinition(s.pn.GIFT_CUSTOMIZATION)
+        unifiedStepDefinition: this.getUnifiedStepDefinition(o.pn.GIFT_CUSTOMIZATION)
       }),
       options: {
         isLargeModal: true,
@@ -144,9 +144,9 @@ class S {
     } : true
   }
   getReviewStepConfig() {
-    let e = this.getUnifiedStepDefinition(s.pn.REVIEW);
+    let e = this.getUnifiedStepDefinition(o.pn.REVIEW);
     return (0, d.B)(e) ? l.r2 : {
-      key: s.pn.REVIEW,
+      key: o.pn.REVIEW,
       renderStep: t => (0, r.jsx)(m.P, {
         paymentModalStepProps: t,
         unifiedStepDefinition: e
@@ -168,11 +168,11 @@ class S {
       disablePaymentAuthSteps: r
     } = this.internalCheckoutFlowControls, i = this.getPredicateStepConfig(), a = this.getGiftCustomizationStepConfig({
       isGift: t
-    }), o = this.getAddPaymentStepConfig({
+    }), s = this.getAddPaymentStepConfig({
       isGift: t
-    }), c = this.getReviewStepConfig(), u = this.createDefinedStepConfigsArray([i, a, o, ...r ? [] : l.hh, c]);
+    }), c = this.getReviewStepConfig(), u = this.createDefinedStepConfigsArray([i, a, s, ...r ? [] : l.hh, c]);
     return null != n && u.push({
-      key: s.pn.CONFIRM,
+      key: o.pn.CONFIRM,
       renderStep: n.renderStep,
       options: n.options
     }), u
@@ -183,8 +183,8 @@ class S {
   openCheckoutModal(e) {
     let {
       openModalOptions: t,
-      flowSpecificOptions: s,
-      giftContextProps: o,
+      flowSpecificOptions: o,
+      giftContextProps: s,
       onComplete: l,
       onClose: c,
       skuId: u,
@@ -194,7 +194,7 @@ class S {
       analyticsLocations: _
     } = e, h = null != d ? d : (0, i.A)(), {
       modalKey: m
-    } = t, g = this.generateRenderHeader(), E = null != f ? f : this.getApplicationId(u), y = false, O = null != s ? s : true;
+    } = t, g = this.generateRenderHeader(), E = null != f ? f : this.getApplicationId(u), y = false, O = null != o ? o : true;
     return (0, a.mMO)(async () => {
       let {
         WrappedUnifiedPaymentModal: e
@@ -204,7 +204,7 @@ class S {
         checkoutFlowConfiguration: this.checkoutFlowConfiguration,
         tenantCheckoutFlowConfig: this.tenantCheckoutFlowConfig,
         stepConfigs: this.generateCheckoutStepConfigs({
-          isGift: !!(null != o && o.isGift)
+          isGift: !!(null != s && s.isGift)
         }),
         onComplete: e => {
           null != l && l(e), y = true
@@ -217,7 +217,7 @@ class S {
         analyticsLocations: _,
         analyticsSourceLocation: p,
         renderModalProps: t,
-        giftContextProps: o,
+        giftContextProps: s,
         flowSpecificOptions: O
       })
     }, v(b({}, t), {

@@ -29,7 +29,7 @@ class f extends Chunk439372.A {
     }), u(this, "handleConnectionOpen", async () => {
       if ((0, l.isWeb)()) {
         let e = r.u.get(d);
-        if (null != e && "string" == typeof e && o.default.isAuthenticated()) {
+        if (null != e && "string" == typeof e && s.default.isAuthenticated()) {
           let {
             invite: t
           } = await a.Ay.resolveInvite(e, "Desktop Modal");

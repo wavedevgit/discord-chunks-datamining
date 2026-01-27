@@ -2,13 +2,13 @@
 /** chunk id: 859287, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => o
+  N: () => s
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js");
-let o = {
+let s = {
   title: "Checkbox",
   stories: [{
     id: "void-checkbox",
@@ -17,7 +17,7 @@ let o = {
       let {
         disabled: t,
         readOnly: n,
-        displayOnly: o,
+        displayOnly: s,
         type: l,
         size: c,
         align: u,
@@ -32,7 +32,7 @@ let o = {
       }, []), E = i.useCallback(() => {
         _(e => !e)
       }, []);
-      return (0, r.jsxs)(s.BJc, {
+      return (0, r.jsxs)(o.BJc, {
         direction: "vertical",
         gap: "md",
         children: [(0, r.jsx)(a.Kj, {
@@ -41,34 +41,34 @@ let o = {
           onChange: h,
           disabled: t,
           readOnly: n,
-          displayOnly: o,
+          displayOnly: s,
           type: l,
           size: c,
           align: u,
           shape: d,
-          children: (0, r.jsx)(s.Text, {
+          children: (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             children: f
           })
-        }), (0, r.jsxs)(s.Text, {
+        }), (0, r.jsxs)(o.Text, {
           variant: "text-sm/normal",
           children: ["Current state: ", p ? "Checked" : "Unchecked"]
-        }), (0, r.jsxs)(s.BJc, {
+        }), (0, r.jsxs)(o.BJc, {
           direction: "horizontal",
           gap: "sm",
-          children: [(0, r.jsx)(s.Button, {
+          children: [(0, r.jsx)(o.Button, {
             variant: "secondary",
             size: "sm",
             text: "Check",
             onClick: m,
             disabled: t || n
-          }), (0, r.jsx)(s.Button, {
+          }), (0, r.jsx)(o.Button, {
             variant: "secondary",
             size: "sm",
             text: "Uncheck",
             onClick: g,
             disabled: t || n
-          }), (0, r.jsx)(s.Button, {
+          }), (0, r.jsx)(o.Button, {
             variant: "primary",
             size: "sm",
             text: "Toggle",

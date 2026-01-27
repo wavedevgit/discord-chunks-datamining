@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk172218 = require("./172218.js"),
   Chunk158954 = require("./158954.js"),
@@ -38,7 +38,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk213378 = require("./213378.js"),
   Chunk329431 = require("./329431.js");
 
-function M(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,7 +54,7 @@ function k(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -77,7 +77,7 @@ function G(e, t) {
   }), e
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     activeStatus: n,
@@ -91,8 +91,8 @@ function V(e) {
     onClose: S,
     onHover: C
   } = e, {
-    analyticsLocations: M
-  } = (0, _.Ay)(), U = n !== w.b_.INACTIVE, V = (0, A.A)(t), F = (0, u.bG)([E.default], () => E.default.getCurrentUser()), [B, H] = i.useState(false), [Y, W] = i.useState(false), K = Y, z = i.useCallback(() => {
+    analyticsLocations: j
+  } = (0, _.Ay)(), U = n !== w.b_.INACTIVE, F = (0, A.A)(t), V = (0, u.bG)([E.default], () => E.default.getCurrentUser()), [B, H] = i.useState(false), [Y, W] = i.useState(false), K = Y, z = i.useCallback(() => {
     let e = g.A.getGuild(t);
     null != e && (0, h.g)({
       analyticsLocation: {
@@ -100,20 +100,20 @@ function V(e) {
         section: R.JJy.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
-      analyticsLocations: M,
+      analyticsLocations: j,
       guild: e
     })
-  }, [t, M]), q = i.useCallback(() => {
+  }, [t, j]), q = i.useCallback(() => {
     S(), (0, T.A)(t, p.A.GUILD_POWERUPS_MARKETING, v)
   }, [t, v, S]), Z = {
     tension: 400,
     friction: 30
-  }, X = (0, f.zhh)({
+  }, Q = (0, f.zhh)({
     transform: K ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
     borderRadius: "0px",
     transformOrigin: "center 0%",
     config: Z
-  }), Q = (0, f.zhh)({
+  }), X = (0, f.zhh)({
     y: K ? false : 0,
     config: Z
   }), J = (0, f.zhh)({
@@ -124,8 +124,8 @@ function V(e) {
     e && H(true)
   }, []), ee = (0, l.K)($);
   return (0, r.jsxs)("div", {
-    className: s()(j.p3, j.sc, L.zL, {
-      [j.i0]: B
+    className: o()(M.p3, M.sc, x.zL, {
+      [M.i0]: B
     }),
     onMouseEnter: () => {
       W(true), null == C || C(true)
@@ -134,75 +134,75 @@ function V(e) {
       W(false), null == C || C(false)
     },
     children: [(0, r.jsx)("div", {
-      className: j.sL,
+      className: M.sL,
       ref: ee
     }), (0, r.jsx)("div", {
-      className: j.BL,
-      children: (0, r.jsx)(o.animated.img, {
-        className: s()(j.e_, L.Sl),
+      className: M.BL,
+      children: (0, r.jsx)(s.animated.img, {
+        className: o()(M.e_, x.Sl),
         src: O,
         alt: "",
-        style: X
+        style: Q
       })
-    }), (0, r.jsxs)(o.animated.div, {
-      style: G(k({}, Q), {
-        transform: Q.y.to(e => "translateY(".concat(e, "px)"))
+    }), (0, r.jsxs)(s.animated.div, {
+      style: G(k({}, X), {
+        transform: X.y.to(e => "translateY(".concat(e, "px)"))
       }),
-      className: s()(j.hQ, L.hQ),
+      className: o()(M.hQ, x.hQ),
       children: [(0, r.jsx)(m.xp, {
         heading: a,
         description: c,
-        label: x.intl.formatToPlainString(D.default.QOacIS, {
+        label: L.intl.formatToPlainString(D.default.QOacIS, {
           quantity: y,
           decorator: null != b ? b : ""
         }),
         isEnabled: U
-      }), (0, r.jsxs)(o.animated.div, {
+      }), (0, r.jsxs)(s.animated.div, {
         style: J,
-        className: j.NC,
+        className: M.NC,
         children: [(0, r.jsx)(d.m, {
-          text: x.intl.formatToPlainString(P.default["5xN/C1"], {
+          text: L.intl.formatToPlainString(P.default["5xN/C1"], {
             premiumGroupProductName: (0, N.DP)()
           }),
-          shouldShow: (null == F ? true : F.isPremiumGroupMember()) === true,
+          shouldShow: (null == V ? true : V.isPremiumGroupMember()) === true,
           children: (0, r.jsx)("div", {
-            className: j.x6,
+            className: M.x6,
             children: (0, r.jsx)(f.Button, {
               variant: "primary",
-              text: x.intl.string(x.t.oPAx73),
+              text: L.intl.string(L.t.oPAx73),
               onClick: z,
-              disabled: null == F ? true : F.isPremiumGroupMember(),
+              disabled: null == V ? true : V.isPremiumGroupMember(),
               fullWidth: true
             })
           })
-        }), V && (0, r.jsx)("div", {
-          className: j.x6,
+        }), F && (0, r.jsx)("div", {
+          className: M.x6,
           children: (0, r.jsx)(f.Button, {
             variant: "secondary",
-            text: x.intl.string(x.t.GoCQxU),
+            text: L.intl.string(L.t.GoCQxU),
             onClick: q,
             fullWidth: true
           })
         })]
       })]
     }), I && (0, r.jsx)(f.LpS, {
-      className: j.zG,
-      text: x.intl.string(x.t.y2b7CA)
+      className: M.zG,
+      text: L.intl.string(L.t.y2b7CA)
     }), B && (0, r.jsx)("div", {
-      className: j.Q4
+      className: M.Q4
     })]
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     powerup: n,
     costDecorator: a,
-    isNew: s,
-    onClose: o
+    isNew: o,
+    onClose: s
   } = e, [l, c] = i.useState(false), u = (0, S.Ay)(t, n).type, d = (0, v.A)(n, l);
-  return (0, r.jsx)(V, {
+  return (0, r.jsx)(F, {
     guildId: t,
     activeStatus: u,
     title: n.title,
@@ -211,8 +211,8 @@ function F(e) {
     imageUrl: d,
     skuId: n.skuId,
     costDecorator: a,
-    isNew: s,
-    onClose: o,
+    isNew: o,
+    onClose: s,
     onHover: e => c(e)
   })
 }
@@ -229,22 +229,22 @@ let B = 3,
     i.useEffect(() => {
       O.A.shouldFetchCatalogForGuild(n.id) && (0, b.AK)(n.id), O.A.shouldFetchPowerupsForGuild(n.id) && (0, b.Xd)(n.id)
     }, [n.id]);
-    let s = (0, I.A)(n.id),
-      o = Array.from(null != s ? s : []).reverse().slice(0, B);
-    return 0 === o.length ? null : (0, r.jsxs)("div", {
+    let o = (0, I.A)(n.id),
+      s = Array.from(null != o ? o : []).reverse().slice(0, B);
+    return 0 === s.length ? null : (0, r.jsxs)("div", {
       ref: t,
-      className: L.kL,
+      className: x.kL,
       children: [(0, r.jsx)(c.DZT, {
         variant: "heading-xxl/extrabold",
-        children: x.intl.string(D.default.wjI18Q)
+        children: L.intl.string(D.default.wjI18Q)
       }), (0, r.jsx)(c.EYj, {
         variant: "text-lg/medium",
-        children: x.intl.format(D.default.OdCzjA, {
+        children: L.intl.format(D.default.OdCzjA, {
           helpDeskArticle: y.A.getArticleURL(R.MVz.GUILD_BOOSTING_FAQ)
         })
       }), (0, r.jsx)("div", {
-        className: L.DO,
-        children: o.map(e => (0, r.jsx)(F, {
+        className: x.DO,
+        children: s.map(e => (0, r.jsx)(V, {
           guildId: n.id,
           powerup: e,
           costDecorator: Y.get(e.skuId),

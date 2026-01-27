@@ -3,8 +3,8 @@
 "use strict";
 require.r(exports), require.d(exports, {
   announce: () => a,
-  clearAnnouncer: () => s,
-  destroyAnnouncer: () => o
+  clearAnnouncer: () => o,
+  destroyAnnouncer: () => s
 });
 let r = 7e3,
   i = null;
@@ -13,11 +13,11 @@ function a(e, t = "assertive", n = r) {
   i || (i = new l), i.announce(e, t, n)
 }
 
-function s(e) {
+function o(e) {
   i && i.clear(e)
 }
 
-function o() {
+function s() {
   i && (i.destroy(), i = null)
 }
 class l {

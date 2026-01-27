@@ -2,7 +2,7 @@
 /** chunk id: 568598, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => x,
+  Ay: () => L,
   KU: () => w,
   Qt: () => N,
   hS: () => R,
@@ -102,7 +102,7 @@ var P = function(e) {
 function D(e) {
   return !(u.default.getId() !== e || p.A.isMute()) && _.A.isCurrentUserPTTLatched()
 }
-class x {
+class L {
   get version() {
     return this.participantByIndex.version
   }
@@ -151,12 +151,12 @@ class x {
             checkIsMuted: true
           }),
           i = D(e),
-          s = _.A.isSoundSharing(e);
-        return n.speaking === r && n.latched === i && n.soundsharing === s ? t : (r && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, T(I({}, n), {
+          o = _.A.isSoundSharing(e);
+        return n.speaking === r && n.latched === i && n.soundsharing === o ? t : (r && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, T(I({}, n), {
           speaking: r,
           latched: i,
           lastSpoke: this.lastSpoke[e],
-          soundsharing: s
+          soundsharing: o
         })), true)
       }
       return t
@@ -176,8 +176,8 @@ class x {
     t ? this.poppedOutParticipants.add(e) : this.poppedOutParticipants.delete(e)
   }
   _getEmbeddedActivities() {
-    let e = s.Ay.getEmbeddedActivitiesForChannel(this.channelId),
-      t = s.Ay.getSelfEmbeddedActivityForChannel(this.channelId);
+    let e = o.Ay.getEmbeddedActivitiesForChannel(this.channelId),
+      t = o.Ay.getSelfEmbeddedActivityForChannel(this.channelId);
     return null == t ? e : (0, r.uniqBy)([...e, t], e => e.compositeInstanceId)
   }
   _getParticipantsForEmbeddedActivities() {
@@ -199,7 +199,7 @@ class x {
     })
   }
   _getParticipantsForUser(e) {
-    var t, n, r, i, s, d;
+    var t, n, r, i, o, d;
     let y, O, A = [],
       S = h.default.getUser(e);
     if (null == S) return A;
@@ -220,19 +220,19 @@ class x {
         checkIsMuted: true
       }),
       latched: D(e),
-      lastSpoke: null != (s = this.lastSpoke[e]) ? s : 0,
+      lastSpoke: null != (o = this.lastSpoke[e]) ? o : 0,
       soundsharing: _.A.isSoundSharing(e),
       ringing: P,
       userNick: E.Ay.getName(R, this.channelId, S),
-      userAvatarDecoration: (0, o.U)(S, R),
+      userAvatarDecoration: (0, s.U)(S, R),
       localVideoDisabled: p.A.isLocalVideoDisabled(S.id),
       isPoppedOut: this.poppedOutParticipants.has(S.id)
     }), A.push(y));
-    let x = null != (n = c.A.getStreamForUser(e, R)) ? n : c.A.getActiveStreamForUser(e, R);
-    if (null != x && x.channelId === this.channelId) {
-      let t = (0, l._z)(x),
+    let L = null != (n = c.A.getStreamForUser(e, R)) ? n : c.A.getActiveStreamForUser(e, R);
+    if (null != L && L.channelId === this.channelId) {
+      let t = (0, l._z)(L),
         n = this.getParticipant(t),
-        r = x.ownerId === u.default.getId() && c.A.isSelfStreamHidden(this.channelId),
+        r = L.ownerId === u.default.getId() && c.A.isSelfStreamHidden(this.channelId),
         i = (null == n ? true : n.type) === b.lp.STREAM ? {
           maxResolution: null != n.maxResolution ? I({}, n.maxResolution) : true,
           maxFrameRate: n.maxFrameRate
@@ -243,7 +243,7 @@ class x {
         userVideo: null != (d = null == C ? true : C.selfVideo) && d,
         user: S,
         userNick: E.Ay.getName(R, this.channelId, S),
-        stream: x,
+        stream: L,
         isPoppedOut: this.poppedOutParticipants.has(t)
       }), A.push(O)
     }

@@ -45,7 +45,7 @@ class g extends Chunk64700.PureComponent {
       (0, l.mMO)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("43600"), n.e("65202")]).then(n.bind(n, 234355));
+        } = await Promise.all([n.e("43600"), n.e("42821")]).then(n.bind(n, 234355));
         return n => {
           var i, l;
           return (0, r.jsx)(t, (i = function(e) {

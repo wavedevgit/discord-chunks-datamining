@@ -6,7 +6,7 @@ require.d(exports, {
   A: () => U
 });
 var i, Chunk111956 = require("./111956.js"),
-  s = require.n(Chunk111956),
+  o = require.n(Chunk111956),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk956793 = require("./956793.js"),
@@ -84,7 +84,7 @@ function w() {
 function R(e) {
   d.A.getConfig({
     location: "handlePowerEvent"
-  }).power_events ? j({}) : (e && (r = Date.now()), N())
+  }).power_events ? M({}) : (e && (r = Date.now()), N())
 }
 if (!__OVERLAY__) {
   Chunk723702.isPlatformEmbedded && (null === Chunk77729.A || true === Chunk77729.A ? true : Chunk77729.A.remotePowerMonitor) != null ? (w(), Chunk77729.A.remotePowerMonitor.on("resume", () => {
@@ -96,10 +96,10 @@ if (!__OVERLAY__) {
   }), Chunk77729.A.remotePowerMonitor.on("unlock-screen", () => {
     A = false, R(false)
   })) : setInterval(N, 30 * Chunk927813.A.Millis.SECOND);
-  let e = s()(() => {
+  let e = o()(() => {
     d.A.getConfig({
       location: "handleGenericInput"
-    }).generic_inputs && j({})
+    }).generic_inputs && M({})
   }, 500);
   window.addEventListener("mouseup", module), window.addEventListener("wheel", module), window.addEventListener("keypress", module)
 }
@@ -112,22 +112,22 @@ function D(e) {
   O = e.afk
 }
 
-function x(e) {
+function L(e) {
   let {
     userId: t,
     speakingFlags: n
   } = e;
-  return n !== g.ME.NONE && t === h.default.getId() && j({}), false
+  return n !== g.ME.NONE && t === h.default.getId() && M({}), false
 }
 
-function L(e) {
+function x(e) {
   let {
     state: t
   } = e;
   return I = t === m.g6G.BACKGROUND, r = null, y = Date.now(), N(), false
 }
 
-function j(e) {
+function M(e) {
   let {
     timestamp: t,
     type: n
@@ -138,11 +138,11 @@ function j(e) {
   }) : N(), false)
 }
 
-function M() {
+function j() {
   if (!d.A.getConfig({
       location: "handleSettingsProtoUpdate"
     }).settings_updates) returnfalse;
-  j({})
+  M({})
 }
 class k extends(i = Chunk311907.Ay.Store) {
   initialize() {
@@ -168,13 +168,13 @@ E(k, "displayName", "IdleStore");
 let U = new k(Chunk73153.h, {
   IDLE: P,
   AFK: D,
-  SPEAKING: x,
-  APP_STATE_UPDATE: L,
-  OVERLAY_SET_NOT_IDLE: j,
-  CHANNEL_SELECT: j,
-  VOICE_CHANNEL_SELECT: j,
-  WINDOW_FOCUS: j,
-  OVERLAY_INITIALIZE: j,
-  OVERLAY_SET_INPUT_LOCKED: j,
-  USER_SETTINGS_PROTO_UPDATE: M
+  SPEAKING: L,
+  APP_STATE_UPDATE: x,
+  OVERLAY_SET_NOT_IDLE: M,
+  CHANNEL_SELECT: M,
+  VOICE_CHANNEL_SELECT: M,
+  WINDOW_FOCUS: M,
+  OVERLAY_INITIALIZE: M,
+  OVERLAY_SET_INPUT_LOCKED: M,
+  USER_SETTINGS_PROTO_UPDATE: j
 })

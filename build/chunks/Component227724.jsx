@@ -17,28 +17,28 @@ function u(e, t) {
   (0, i.mMO)(async () => {
     let {
       default: i
-    } = await n.e("39679").then(n.bind(n, 552258));
+    } = await Promise.all([n.e("83792"), n.e("59294")]).then(n.bind(n, 552258));
     return n => {
       let {
         transitionState: a,
-        onClose: s
+        onClose: o
       } = n;
       return (0, r.jsx)(i, {
         channelId: e,
         userId: t,
         transitionState: a,
-        onClose: s
+        onClose: o
       })
     }
   }, {
     modalKey: c,
     onCloseCallback: () => {
-      s.default.track(l.HAw.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
-        action: o.Qi.DISMISS,
+      o.default.track(l.HAw.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+        action: s.Qi.DISMISS,
         channel_id: e,
         blocked_user_ids: u ? [t] : [],
         ignored_user_ids: u ? [] : [t],
-        warning_surface: o.gD.POST_JOIN_MODAL
+        warning_surface: s.gD.POST_JOIN_MODAL
       })
     }
   })

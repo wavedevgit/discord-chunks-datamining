@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 798400, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 798400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => w
+  A: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -26,109 +25,70 @@ var Chunk627968 = require("./627968.js"),
   Chunk308021 = require("./308021.js"),
   Chunk211134 = require("./211134.js");
 
-function I(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function S(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      I(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function T(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function N(e) {
+function A(e) {
   let {
     numDaysPlayed: t,
     game: n,
     index: a
-  } = e, l = (0, i.useContext)(f.P), p = (0, c.rdh)(l.primaryColor).hex(), {
+  } = e, o = (0, l.useContext)(m.P), f = (0, c.rdh)(o.primaryColor).hex(), {
     id: h,
-    name: m,
+    name: b,
     coverImageHash: y
   } = n, {
-    coverImageUrl: I
-  } = (0, u.n)(h), S = null != I ? I : d.Ay.getGameAssetURL({
+    coverImageUrl: A
+  } = (0, u.n)(h), O = null != A ? A : d.Ay.getGameAssetURL({
     id: h,
     hash: y
-  }), T = (0, E.vy)();
-  return (0, r.jsxs)(E.vw, {
-    className: s()(A.Y_, {
-      [A.Nf]: 0 === a
+  }), E = (0, x.vy)();
+  return (0, r.jsxs)(x.vw, {
+    className: i()(_.Y_, {
+      [_.Nf]: 0 === a
     }),
-    spring: T,
-    children: [(0, r.jsx)(_.A, {
+    spring: E,
+    children: [(0, r.jsx)(p.A, {
       children: (0, r.jsxs)("div", {
-        className: A.JS,
-        children: [null != S ? (0, r.jsx)("img", {
-          className: A.CC,
+        className: _.JS,
+        children: [null != O ? (0, r.jsx)("img", {
+          className: _.CC,
           alt: "",
-          src: S
+          src: O
         }) : (0, r.jsx)("div", {
-          className: A.CC,
+          className: _.CC,
           style: {
-            borderColor: p
+            borderColor: f
           },
-          children: (0, r.jsx)(o._7Z, {
+          children: (0, r.jsx)(s._7Z, {
             size: "lg",
-            className: A.QQ
+            className: _.QQ
           })
         }), (0, r.jsx)("div", {
-          className: A.Tm,
+          className: _.Tm,
           style: {
-            backgroundColor: p
+            backgroundColor: f
           },
           children: (0, r.jsxs)(g.A, {
             variant: "text-lg/normal",
-            className: v.sH,
+            className: C.sH,
             children: ["#", a + 1]
           })
         })]
       })
     }), (0, r.jsx)(g.A, {
       variant: "eyebrow",
-      className: A.UU,
-      children: m
+      className: _.UU,
+      children: b
     }), (0, r.jsx)(g.A, {
       variant: "text-sm/bold",
-      className: A.Mf,
-      children: O.intl.format(b.default.MugpMu, {
+      className: _.Mf,
+      children: j.intl.format(v.default.MugpMu, {
         numSessions: t
       })
     })]
   })
 }
 
-function w() {
-  let e = (0, i.useContext)(f.P),
+function O() {
+  let e = (0, l.useContext)(m.P),
     t = (0, c.rdh)(e.primaryColor).hex(),
     {
       applications: {
@@ -138,36 +98,36 @@ function w() {
         totalGamesPlayed: 0,
         applications: []
       }
-    } = (0, l.bG)([p.A], () => p.A.getCheckpointData());
-  return (0, r.jsxs)(m.A, {
+    } = (0, o.bG)([f.A], () => f.A.getCheckpointData());
+  return (0, r.jsxs)(b.A, {
     verticalFlow: true,
-    className: A.kL,
+    className: _.kL,
     children: [(0, r.jsxs)("div", {
-      className: v.DD,
-      children: [(0, r.jsx)(o._xR, {
+      className: C.DD,
+      children: [(0, r.jsx)(s._xR, {
         size: "refresh_sm",
         color: t,
-        colorClass: v.d7
+        colorClass: C.d7
       }), (0, r.jsx)(g.A, {
         variant: "eyebrow",
-        className: v.UP,
-        children: O.intl.string(b.default.dW6EBf)
+        className: C.UP,
+        children: j.intl.string(v.default.dW6EBf)
       })]
     }), (0, r.jsxs)("div", {
-      className: A.wx,
+      className: _.wx,
       children: [(0, r.jsx)(g.A, {
         variant: "display-lg",
-        className: A.Vy,
-        children: O.intl.string(O.t.URyqtP)
+        className: _.Vy,
+        children: j.intl.string(j.t.URyqtP)
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsx)(g.A, {
           variant: "heading-xxl/medium",
-          className: A.VA,
-          children: O.intl.format(b.default.gzlOml, {
+          className: _.VA,
+          children: j.intl.format(v.default.gzlOml, {
             numGames: n,
             gamesHook: (e, t) => (0, r.jsx)(g.A, {
               variant: "heading-xxl/medium",
-              className: A.mG,
+              className: _.mG,
               children: e
             }, t)
           })
@@ -176,10 +136,39 @@ function w() {
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: A.ag,
-      children: a.map((e, t) => (0, r.jsx)(N, C(S({}, e), {
-        index: t
-      }), "game-".concat(t)))
+      className: _.ag,
+      children: a.map((e, t) => {
+        var n, l;
+        return (0, r.jsx)(A, (n = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, e), l = l = {
+          index: t
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+        }), n), "game-".concat(t))
+      })
     })]
   })
 }

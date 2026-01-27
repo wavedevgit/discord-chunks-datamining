@@ -16,14 +16,14 @@ var Chunk503698 = require("./503698.js"),
 function u() {
   return (0, r.jsxs)("div", {
     className: a()(l.iG, c.Uu, c.Hu),
-    children: [(0, r.jsx)(s.XAi, {
+    children: [(0, r.jsx)(o.XAi, {
       size: "sm",
       color: "currentColor",
       className: l.hz
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       className: l.aK,
-      children: o.intl.string(o.t.Kv6Z4I)
+      children: s.intl.string(s.t.Kv6Z4I)
     })]
   })
 }

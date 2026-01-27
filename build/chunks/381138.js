@@ -3,10 +3,10 @@
 var Chunk544664 = require("./544664.js"),
   Chunk390453 = require("./390453.js"),
   Chunk314220 = require("./314220.js"),
-  s = 1,
-  o = 2;
+  o = 1,
+  s = 2;
 module.exports = function(e, t, n, l, c, u) {
-  var d = n & s,
+  var d = n & o,
     f = e.length,
     p = t.length;
   if (f != p && !(d && p > f)) returnfalse;
@@ -14,7 +14,7 @@ module.exports = function(e, t, n, l, c, u) {
   if (_ && u.get(t)) return _ == t;
   var h = false,
     m = true,
-    g = n & o ? new r : true;
+    g = n & s ? new r : true;
   for (u.set(e, t), u.set(t, e); ++h < f;) {
     var E = e[h],
       y = t[h];

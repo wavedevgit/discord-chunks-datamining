@@ -43,7 +43,7 @@ function f(e, t) {
 function p() {
   let {
     sortingStrategy: e
-  } = (0, l.zZ)("useSoundOrganizer"), t = (0, i.bG)([o.A], () => o.A.getAllTopSoundsForGuilds()), n = (0, i.bG)([s.A], () => s.A.frecentlyPlayedSounds), a = r.useRef(n).current, c = r.useCallback(e => {
+  } = (0, l.zZ)("useSoundOrganizer"), t = (0, i.bG)([s.A], () => s.A.getAllTopSoundsForGuilds()), n = (0, i.bG)([o.A], () => o.A.frecentlyPlayedSounds), a = r.useRef(n).current, c = r.useCallback(e => {
     if (0 === e.length) return e;
     let n = e[0].guildId;
     if (!e.every(e => e.guildId === n)) return e;

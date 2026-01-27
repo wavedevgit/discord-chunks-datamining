@@ -123,18 +123,18 @@ function A(e) {
 
 function I(e, t) {
   let {} = t, n = v(e), {
-    getAllDeviceIdsSortedByFrecency: o
-  } = E(e), l = (0, s.A)((0, a.yK)([d.A], () => o(d.A))), {
+    getAllDeviceIdsSortedByFrecency: s
+  } = E(e), l = (0, o.A)((0, a.yK)([d.A], () => s(d.A))), {
     id: u
   } = A(e);
   return (0, r.useMemo)(() => {
     let t = e => e.map(e => n[e]).filter(c.Vq),
       r = Object.keys(n),
       a = e !== f.oh.VIDEO_INPUT ? [f.dx] : [],
-      s = (0, i.intersection)(l, r),
-      o = (0, i.difference)(r, l),
-      d = (0, i.difference)(o, a, [u]);
-    return (null == s ? true : s.length) === 0 || d.length <= 1 ? [(0, i.union)(a, [u], s, o), []].map(t) : [(0, i.union)(a, [u], s), d].map(t)
+      o = (0, i.intersection)(l, r),
+      s = (0, i.difference)(r, l),
+      d = (0, i.difference)(s, a, [u]);
+    return (null == o ? true : o.length) === 0 || d.length <= 1 ? [(0, i.union)(a, [u], o, s), []].map(t) : [(0, i.union)(a, [u], o), d].map(t)
   }, [n, e, l, u])
 }
 
@@ -144,11 +144,11 @@ function S(e) {
     getCurrentDeviceId: r,
     getSelectedDeviceId: i
   } = E(e), {
-    resolvedId: s,
+    resolvedId: o,
     selectedId: c
   } = (0, a.cf)([l.A], () => ({
     resolvedId: r(l.A),
     selectedId: i(l.A)
-  })), u = null != (t = (0, o.A)(s)) ? t : s, d = s !== u, f = null != (n = (0, o.A)(c)) ? n : c, p = c !== f;
+  })), u = null != (t = (0, s.A)(o)) ? t : o, d = o !== u, f = null != (n = (0, s.A)(c)) ? n : c, p = c !== f;
   return d && !p
 }

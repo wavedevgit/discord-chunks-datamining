@@ -18,7 +18,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -31,7 +31,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -43,7 +43,7 @@ function o(e, t) {
 }
 
 function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -67,16 +67,16 @@ class d {
     return null == e && null == t || null != e && null != t && e.width === t.width && e.height === t.height && e.framerate === t.framerate
   }
   static extend(e, t) {
-    var n, r, i, a, s;
+    var n, r, i, a, o;
     if (null == e) return t;
     if (null == t) return e;
-    let o = null != (n = null != (r = null == t ? true : t.width) ? r : null == e ? true : e.width) ? n : 0,
+    let s = null != (n = null != (r = null == t ? true : t.width) ? r : null == e ? true : e.width) ? n : 0,
       l = null != (i = null != (a = null == t ? true : t.height) ? a : null == e ? true : e.height) ? i : 0;
     return {
-      width: o,
+      width: s,
       height: l,
-      framerate: null != (s = null == t ? true : t.framerate) ? s : null == e ? true : e.framerate,
-      pixelCount: o * l
+      framerate: null != (o = null == t ? true : t.framerate) ? o : null == e ? true : e.framerate,
+      pixelCount: s * l
     }
   }
   constructor(e) {
@@ -97,13 +97,13 @@ class f {
     }
     let r = this.isStreamContext ? this.getGoliveQuality(t, n) : this.getVideoQuality(t);
     if (null != this.qualityOverwrite) {
-      var i, a, s;
+      var i, a, o;
       return new u({
         encode: d.extend(r.encode, this.qualityOverwrite.encode),
         capture: d.extend(r.capture, this.qualityOverwrite.capture),
         bitrateMin: null != (i = this.qualityOverwrite.bitrateMin) ? i : r.bitrateMin,
         bitrateMax: null != (a = this.qualityOverwrite.bitrateMax) ? a : r.bitrateMax,
-        bitrateTarget: null != (s = this.qualityOverwrite.bitrateTarget) ? s : r.bitrateTarget,
+        bitrateTarget: null != (o = this.qualityOverwrite.bitrateTarget) ? o : r.bitrateTarget,
         localWant: r.localWant
       })
     }
@@ -145,7 +145,7 @@ class f {
       r = this.options.videoBitrate.max * t.budgetPortion,
       i = this.isMuted ? t.mutedFramerate : t.framerate;
     return new u({
-      encode: l(s({}, t), {
+      encode: l(o({}, t), {
         framerate: i
       }),
       capture: {
@@ -167,14 +167,14 @@ class f {
     if ((null == (n = this.goliveMaxQuality.encode) ? true : n.pixelCount) === true || t >= this.goliveMaxQuality.encode.pixelCount || t <= 0) return this.goliveMaxQuality;
     let r = Math.min(i.YU * this.goliveMaxQuality.encode.pixelCount * this.goliveMaxQuality.encode.framerate, this.goliveMaxQuality.bitrateMax),
       a = this.scaleLinearly(t, this.goliveMaxQuality.encode.pixelCount, this.goliveMaxQuality.bitrateMin),
-      s = this.scaleLinearly(t, this.goliveMaxQuality.encode.pixelCount, this.goliveMaxQuality.bitrateMax),
-      o = null != this.goliveMaxQuality.bitrateTarget ? this.scaleLinearly(t, this.goliveMaxQuality.encode.pixelCount, this.goliveMaxQuality.bitrateTarget) : true;
+      o = this.scaleLinearly(t, this.goliveMaxQuality.encode.pixelCount, this.goliveMaxQuality.bitrateMax),
+      s = null != this.goliveMaxQuality.bitrateTarget ? this.scaleLinearly(t, this.goliveMaxQuality.encode.pixelCount, this.goliveMaxQuality.bitrateTarget) : true;
     return new u({
       encode: this.goliveMaxQuality.encode,
       capture: this.goliveMaxQuality.capture,
       bitrateMin: Math.max(Math.ceil(a), this.options.videoBitrateFloor),
-      bitrateMax: Math.max(Math.ceil(s), r),
-      bitrateTarget: null != o ? Math.max(Math.ceil(o), this.options.videoBitrateFloor) : true,
+      bitrateMax: Math.max(Math.ceil(o), r),
+      bitrateTarget: null != s ? Math.max(Math.ceil(s), this.options.videoBitrateFloor) : true,
       localWant: e
     })
   }
@@ -197,15 +197,15 @@ class f {
     })
   }
   getGoliveLQQuality() {
-    var e, t, n, r, a, s, o, l, c, d, f, p;
-    let _ = Math.min(i.aE, null != (e = null == (o = this.goliveMaxQuality.encode) ? true : o.width) ? e : i.aE),
+    var e, t, n, r, a, o, s, l, c, d, f, p;
+    let _ = Math.min(i.aE, null != (e = null == (s = this.goliveMaxQuality.encode) ? true : s.width) ? e : i.aE),
       h = Math.min(i.Bb, null != (t = null == (l = this.goliveMaxQuality.encode) ? true : l.height) ? t : i.Bb),
       m = Math.min(i.Xk, null != (n = null == (c = this.goliveMaxQuality.encode) ? true : c.framerate) ? n : i.Xk);
     return new u({
       capture: {
         width: Math.min(i.aE, null != (r = null == (d = this.goliveMaxQuality.capture) ? true : d.width) ? r : i.aE),
         height: Math.min(i.Bb, null != (a = null == (f = this.goliveMaxQuality.capture) ? true : f.height) ? a : i.Bb),
-        framerate: Math.min(i.Xk, null != (s = null == (p = this.goliveMaxQuality.capture) ? true : p.framerate) ? s : i.Xk)
+        framerate: Math.min(i.Xk, null != (o = null == (p = this.goliveMaxQuality.capture) ? true : p.framerate) ? o : i.Xk)
       },
       encode: {
         width: _,

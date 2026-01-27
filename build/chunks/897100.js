@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 897100, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 13088 **/
+/** chunk id: 897100, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => i
 });
 var Chunk417597 = require("./417597.js"),
   Chunk961350 = require("./961350.js");
 
-function a() {
-  return (0, r.bG)([i.default], () => i.default.isAuthenticated())
+function i() {
+  return (0, l.bG)([r.default], () => r.default.isAuthenticated())
 }

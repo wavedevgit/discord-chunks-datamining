@@ -2,13 +2,13 @@
 /** chunk id: 242389, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk643479 = require("./643479.js"),
   Chunk587935 = require("./587935.js"),
   Chunk343828 = require("./343828.js"),
   Chunk326456 = require("./326456.js");
-let o = {
+let s = {
   read: c
 };
 class l extends Error {
@@ -20,10 +20,10 @@ class l extends Error {
 function c(e, t, n) {
   let r = {};
   if ("string" == typeof e) return f(r, e, n), r;
-  let [i, a] = u(e, t), s = f(r, i, n);
+  let [i, a] = u(e, t), o = f(r, i, n);
   if (a) {
     let i = f(r, a, n);
-    s || i || (delete r._raw, f(r, d(e, t), n))
+    o || i || (delete r._raw, f(r, d(e, t), n))
   }
   return r
 }
@@ -39,8 +39,8 @@ function d(e, t) {
     r = 0;
   for (let i = 0; i < t.length; i++) {
     let a = t[i],
-      s = e.buffer.slice(a.dataOffset, a.dataOffset + a.length);
-    n.set(new Uint8Array(s), r), r += a.length
+      o = e.buffer.slice(a.dataOffset, a.dataOffset + a.length);
+    n.set(new Uint8Array(o), r), r += a.length
   }
   return new DataView(n.buffer)
 }
@@ -52,8 +52,8 @@ function f(e, t, n) {
       raw: a
     } = p(t, n);
     e._raw = (e._raw || "") + a;
-    let s = m(i);
-    return (0, r.dP)(e, S(g(s, true))), true
+    let o = m(i);
+    return (0, r.dP)(e, S(g(o, true))), true
   } catch (e) {
     returnfalse
   }
@@ -80,7 +80,7 @@ function h(e, t, n = false) {
     if (r.length > 0) throw new l(r[0].textContent);
     return n
   } catch (r) {
-    if ("ParseError" === r.name && (0, s.g)(r) && !n) return h(e, (0, s.E)(t), true);
+    if ("ParseError" === r.name && (0, o.g)(r) && !n) return h(e, (0, o.E)(t), true);
     throw r
   }
 }
@@ -145,7 +145,7 @@ function S(e) {
   for (let n in e) {
     let i = e[n];
     Array.isArray(i) || (i = [i]), i.forEach(e => {
-      (0, r.dP)(t, T(e.attributes)), "object" == typeof e.value && (0, r.dP)(t, L(e.value))
+      (0, r.dP)(t, T(e.attributes)), "object" == typeof e.value && (0, r.dP)(t, x(e.value))
     })
   }
   return t
@@ -195,31 +195,31 @@ function P(e) {
 
 function D(e) {
   let t = [];
-  for (let n in e) t.push(`${x(n)}: ${R(e[n].value)}`);
+  for (let n in e) t.push(`${L(n)}: ${R(e[n].value)}`);
   return t.join("; ")
 }
 
-function x(e) {
+function L(e) {
   return "CiAdrCity" === e ? "CreatorCity" : "CiAdrCtry" === e ? "CreatorCountry" : "CiAdrExtadr" === e ? "CreatorAddress" : "CiAdrPcode" === e ? "CreatorPostalCode" : "CiAdrRegion" === e ? "CreatorRegion" : "CiEmailWork" === e ? "CreatorWorkEmail" : "CiTelWork" === e ? "CreatorWorkPhone" : "CiUrlWork" === e ? "CreatorWorkUrl" : e
 }
 
-function L(e) {
+function x(e) {
   let t = {};
   for (let n in e) try {
-    N(n) || (t[w(n)] = j(e[n], n))
+    N(n) || (t[w(n)] = M(e[n], n))
   } catch (e) {}
   return t
 }
 
-function j(e, t) {
-  return k(e) ? U(e, t) : M(e) ? {
+function M(e, t) {
+  return k(e) ? U(e, t) : j(e) ? {
     value: "",
     attributes: {},
     description: ""
-  } : G(e) ? V(e, t) : Y(e) ? W(e, t) : K(e) ? z(e, t) : q(e) ? X(e, t) : J(e, t)
+  } : G(e) ? F(e, t) : Y(e) ? W(e, t) : K(e) ? z(e, t) : q(e) ? Q(e, t) : J(e, t)
 }
 
-function M(e) {
+function j(e) {
   return "Resource" === e.attributes["rdf:parseType"] && "string" == typeof e.value && "" === e.value.trim()
 }
 
@@ -235,9 +235,9 @@ function G(e) {
   return "Resource" === e.attributes["rdf:parseType"] && true !== e.value["rdf:value"] || true !== e.value["rdf:Description"] && true !== e.value["rdf:Description"].value["rdf:value"]
 }
 
-function V(e, t) {
-  let n = F(e);
-  true !== e.value["rdf:Description"] && (e = e.value["rdf:Description"]), (0, r.dP)(n, F(e), B(e));
+function F(e, t) {
+  let n = V(e);
+  true !== e.value["rdf:Description"] && (e = e.value["rdf:Description"]), (0, r.dP)(n, V(e), B(e));
   let i = H(e);
   return {
     value: i,
@@ -246,7 +246,7 @@ function V(e, t) {
   }
 }
 
-function F(e) {
+function V(e) {
   let t = {};
   for (let n in e.attributes) "rdf:parseType" === n || "rdf:resource" === n || N(n) || (t[w(n)] = e.attributes[n]);
   return t
@@ -271,7 +271,7 @@ function W(e, t) {
     value: {},
     attributes: {}
   };
-  return true !== e.value["rdf:Description"] && ((0, r.dP)(n.value, T(e.value["rdf:Description"].attributes)), (0, r.dP)(n.attributes, F(e)), e = e.value["rdf:Description"]), (0, r.dP)(n.value, L(e.value)), n.description = R(n.value, t), n
+  return true !== e.value["rdf:Description"] && ((0, r.dP)(n.value, T(e.value["rdf:Description"].attributes)), (0, r.dP)(n.attributes, V(e)), e = e.value["rdf:Description"]), (0, r.dP)(n.value, x(e.value)), n.description = R(n.value, t), n
 }
 
 function K(e) {
@@ -295,12 +295,12 @@ function Z(e) {
   return e["rdf:Bag"] || e["rdf:Seq"] || e["rdf:Alt"]
 }
 
-function X(e, t) {
+function Q(e, t) {
   let n = Z(e.value).value["rdf:li"],
-    r = F(e),
+    r = V(e),
     i = [];
   return true === n ? n = [] : Array.isArray(n) || (n = [n]), n.forEach(e => {
-    i.push(Q(e))
+    i.push(X(e))
   }), {
     value: i,
     attributes: r,
@@ -308,15 +308,15 @@ function X(e, t) {
   }
 }
 
-function Q(e) {
-  return G(e) ? V(e) : Y(e) ? W(e).value : K(e) ? z(e).value : J(e)
+function X(e) {
+  return G(e) ? F(e) : Y(e) ? W(e).value : K(e) ? z(e).value : J(e)
 }
 
 function J(e, t) {
   let n = $(e) || S(e.value);
   return {
     value: n,
-    attributes: F(e),
+    attributes: V(e),
     description: R(n, t)
   }
 }

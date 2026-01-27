@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk317097 = require("./317097.js"),
   Chunk397927 = require("./397927.js"),
   Chunk232042 = require("./232042.jsx"),
@@ -94,12 +94,12 @@ let g = e => {
     O(false), null == E || E(e)
   }, [O, E]), T = {};
   return null != d && (T = {
-    color: (0, o.Hl)(d),
-    backgroundColor: b ? (0, o.gq)(d, .3) : (0, o.gq)(d, .1)
+    color: (0, s.Hl)(d),
+    backgroundColor: b ? (0, s.gq)(d, .3) : (0, s.gq)(d, .1)
   }), (0, r.jsx)(l.DUT, _(f({}, y), {
     innerRef: t,
     tag: "span",
-    className: s()(a, {
+    className: o()(a, {
       [u.i]: true,
       interactive: y.onClick
     }),

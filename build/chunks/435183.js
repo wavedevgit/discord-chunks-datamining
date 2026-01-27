@@ -52,8 +52,8 @@ function _(e) {
     type: n,
     topic: r,
     bitrate: a,
-    userLimit: s,
-    nsfw: o,
+    userLimit: o,
+    nsfw: s,
     flags: l,
     rateLimitPerUser: c,
     defaultThreadRateLimitPerUser: u,
@@ -78,8 +78,8 @@ function _(e) {
     channelType: n,
     topic: r,
     bitrate: a,
-    userLimit: s,
-    nsfw: o,
+    userLimit: o,
+    nsfw: s,
     flags: l,
     rateLimitPerUser: c,
     defaultThreadRateLimitPerUser: u,
@@ -126,10 +126,10 @@ async function h(e, t) {
     defaultTagSetting: R,
     iconEmoji: P,
     themeColor: D
-  } = t, x = o.A.getChannel(e);
+  } = t, L = s.A.getChannel(e);
   return i.h.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT"
-  }), await s.A.unarchiveThreadIfNecessary(e), r.Bo.patch({
+  }), await o.A.unarchiveThreadIfNecessary(e), r.Bo.patch({
     url: c.Rsh.CHANNEL(e),
     body: {
       name: n,
@@ -177,15 +177,15 @@ async function h(e, t) {
       type: "CHANNEL_SETTINGS_SUBMIT_SUCCESS",
       channelId: e
     });
-    let n = null == x ? true : x.getGuildId();
-    return null == n || (null == x ? true : x.isThread()) || a.A.checkGuildTemplateDirty(n), t
+    let n = null == L ? true : L.getGuildId();
+    return null == n || (null == L ? true : L.isThread()) || a.A.checkGuildTemplateDirty(n), t
   }, e => (i.h.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT_FAILURE",
     errors: e.body
   }), e))
 }
 async function m(e) {
-  let t = o.A.getChannel(e);
+  let t = s.A.getChannel(e);
   await r.Bo.del({
     url: c.Rsh.CHANNEL(e),
     oldFormErrors: true,

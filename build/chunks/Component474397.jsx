@@ -71,6 +71,6 @@ function h() {
     n = null != e ? e : (0, l.zd)();
   if (n !== c.BRT.APP && null != n) {
     if (a.A.isFocused()) return;
-    t ? s.isPlatformEmbedded ? o.Ay.focus() : window.focus() : _(e)
+    t ? o.isPlatformEmbedded ? s.Ay.focus() : window.focus() : _(e)
   }
 }

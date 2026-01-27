@@ -17,11 +17,11 @@ function l(e) {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(o.Io, o.SP, n),
-    children: (0, r.jsx)(s.Text, {
+    className: a()(s.Io, s.SP, n),
+    children: (0, r.jsx)(o.Text, {
       variant: "text-xxs/bold",
       color: "text-strong",
-      className: o.dK,
+      className: s.dK,
       children: t
     })
   })

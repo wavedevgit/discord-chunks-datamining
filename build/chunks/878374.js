@@ -78,7 +78,7 @@ class _ extends Chunk318093.f {
         visible: t,
         windowId: n
       } = e;
-      n === (0, s.Xg)() && this._trackAppBackgrounded(!t)
+      n === (0, o.Xg)() && this._trackAppBackgrounded(!t)
     })
   }
 }

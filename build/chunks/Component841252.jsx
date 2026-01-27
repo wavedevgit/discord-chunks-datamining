@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk224850 = require("./224850.jsx"),
   Chunk778712 = require("./778712.js"),
@@ -29,13 +29,13 @@ function f(e) {
     size: c._3.SIZE_20
   }, e.id));
   return (0, r.jsxs)("div", {
-    className: s()(d.kL, n),
+    className: o()(d.kL, n),
     children: [(0, r.jsx)("div", {
       className: d.zc,
       children: p
     }), (0, r.jsx)("div", {
       className: d.FS,
-      children: (0, r.jsx)(o.EYj, {
+      children: (0, r.jsx)(s.EYj, {
         variant: "text-sm/medium",
         children: f
       })

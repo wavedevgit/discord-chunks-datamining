@@ -28,11 +28,11 @@ let c = {
   };
 
 function d(e) {
-  let t = (0, s.A)(e);
+  let t = (0, o.A)(e);
   return r.useMemo(() => {
     var n, r;
     return {
-      name: l.intl.string(null != (n = c[e]) ? n : o.default.OpWJ3f),
+      name: l.intl.string(null != (n = c[e]) ? n : s.default.OpWJ3f),
       defaultColors: t,
       previewStyles: {
         fontId: a.x.DEFAULT,

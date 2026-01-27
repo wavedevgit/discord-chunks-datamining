@@ -119,8 +119,8 @@ function O(e) {
   if (null == e) returnfalse;
   let t = _[e];
   if (null == t) returnfalse;
-  let n = o.A.getMessage(e, t.messageId),
-    r = s.A.getChannel(t.channelId);
+  let n = s.A.getMessage(e, t.messageId),
+    r = o.A.getChannel(t.channelId);
   if (null == n || null == r) returnfalse;
   p[e] = {
     channel: r,
@@ -146,7 +146,7 @@ function A(e) {
 
 function I() {
   l.default.keys(_).forEach(e => {
-    null == s.A.getChannel(e) && delete _[e]
+    null == o.A.getChannel(e) && delete _[e]
   })
 }
 
@@ -165,7 +165,7 @@ class T extends(r = Chunk311907.Ay.PersistedStore) {
     return u({}, _, e)
   }
   initialize(e) {
-    this.waitFor(o.A, s.A), _ = null != e ? e : {}
+    this.waitFor(s.A, o.A), _ = null != e ? e : {}
   }
   getPendingReply(e) {
     return p[e]

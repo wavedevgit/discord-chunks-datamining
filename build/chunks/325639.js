@@ -35,12 +35,12 @@ function u(e) {
 class d {
   async requestAuthorization(e, t, n) {
     if ("function" != typeof t) throw Error("requestAuthorization: Was provided with not a function for ".concat(e, "."));
-    r.default.track(o.HAw.PERMISSIONS_REQUESTED, {
+    r.default.track(s.HAw.PERMISSIONS_REQUESTED, {
       type: e
     });
     let a = await t(),
-      l = a === s.F5.AUTHORIZED || a === s.F5.LIMITED,
-      c = l ? s.hL.ACCEPTED : s.hL.DENIED;
+      l = a === o.F5.AUTHORIZED || a === o.F5.LIMITED,
+      c = l ? o.hL.ACCEPTED : o.hL.DENIED;
     return i.A.setPermission(e, c), !l && n.showAuthorizationError && this.showAlert(e), l
   }
   requestPermission(e, t) {
@@ -53,11 +53,11 @@ class d {
   }
   showAlert(e) {
     let t = {
-      [s.iL.CAMERA]: "".concat(l.intl.string(l.t["68G7fD"]), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
-      [s.iL.AUDIO]: "".concat(l.intl.string(l.t.xisTfe), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
-      [s.iL.PHOTOS]: "".concat(l.intl.string(l.t.jQHU4M), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
-      [s.iL.INPUT_MONITORING]: "".concat(l.intl.string(l.t.UIBqsS), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
-      [s.iL.CONTACTS]: "".concat(l.intl.string(l.t.kTtf7o), ". ").concat(l.intl.string(l.t["5Jvu1R"]))
+      [o.iL.CAMERA]: "".concat(l.intl.string(l.t["68G7fD"]), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
+      [o.iL.AUDIO]: "".concat(l.intl.string(l.t.xisTfe), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
+      [o.iL.PHOTOS]: "".concat(l.intl.string(l.t.jQHU4M), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
+      [o.iL.INPUT_MONITORING]: "".concat(l.intl.string(l.t.UIBqsS), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
+      [o.iL.CONTACTS]: "".concat(l.intl.string(l.t.kTtf7o), ". ").concat(l.intl.string(l.t["5Jvu1R"]))
     } [e];
     null != t && this.openAlertModal({
       title: l.intl.string(l.t.u1Gxpu),

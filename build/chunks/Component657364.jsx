@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 657364, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 657364, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => E
 }), require("./896048.js"), require("./492834.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,95 +20,93 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk937474 = require("./937474.js");
-let b = e => {
-  let {
-    onConfirm: t
-  } = e;
-  (0, l.mMO)(async () => {
-    let {
-      default: e
-    } = await n.e("98171").then(n.bind(n, 481398));
-    return n => (0, r.jsx)(e, {
-      modalProps: n,
-      onConfirm: t
-    })
-  })
-};
 
-function O() {
-  let e = (0, o.bG)([u.default], () => u.default.getCurrentUser()),
+function E() {
+  let e = (0, a.bG)([d.default], () => d.default.getCurrentUser()),
     {
       currentHarvestType: t,
-      awaitingInitialRequest: n
-    } = (0, o.cf)([_.A], () => ({
-      currentHarvestType: _.A.harvestType,
-      awaitingInitialRequest: _.A.requestingHarvest
+      awaitingInitialRequest: l
+    } = (0, a.cf)([m.A], () => ({
+      currentHarvestType: m.A.harvestType,
+      awaitingInitialRequest: m.A.requestingHarvest
     })),
-    [a, O] = i.useState(false);
+    [E, x] = i.useState(false);
   if (null == e) return null;
-  let v = (0, f.Oj)(t, e) || n,
-    A = null != t && s()().diff(s()(t.created_at), "days") < g.n83,
-    I = v && A,
-    S = e.isStaff(),
-    T = !e.verified,
-    C = () => {
-      b({
-        onConfirm: e => {
-          O(true), (0, p.$)(e).then(e => {
-            null != e && null != e.body ? c.A.show({
-              title: E.intl.string(E.t.i2iul5),
-              body: E.intl.string(E.t["6Nmv4i"])
-            }) : c.A.show({
-              title: E.intl.string(E.t.OjbtDm),
-              body: E.intl.string(E.t["0F5Jyt"])
-            })
-          }, e => {
-            var t;
-            let n = (null == e ? true : e.message) || (null == e || null == (t = e.body) ? true : t.message) || E.intl.string(E.t["0F5Jyt"]);
-            c.A.show({
-              title: E.intl.string(E.t.OjbtDm),
-              body: n
-            })
-          }).finally(() => O(false))
-        }
+  let O = (0, _.Oj)(t, e) || l,
+    C = null != t && s()().diff(s()(t.created_at), "days") < f.n83,
+    I = O && C,
+    T = e.isStaff(),
+    S = !e.verified;
+  return (0, r.jsxs)(g.h, {
+    setting: A.H.PRIVACY_DATA_REQUEST_V2,
+    children: [(0, r.jsx)(g._, {
+      header: h.intl.string(h.t.XAHCgJ),
+      description: h.intl.format(h.t.P3kNfr, {
+        helpdeskArticle: u.A.getArticleURL(f.MVz.GDPR_REQUEST_DATA)
       })
-    };
-  return (0, r.jsxs)(h.h, {
-    setting: m.H.PRIVACY_DATA_REQUEST_V2,
-    children: [(0, r.jsx)(h._, {
-      header: E.intl.string(E.t.XAHCgJ),
-      description: E.intl.format(E.t.P3kNfr, {
-        helpdeskArticle: d.A.getArticleURL(g.MVz.GDPR_REQUEST_DATA)
-      })
-    }), I ? (0, r.jsx)(l.ZpM, {
-      className: y.N,
-      children: (0, r.jsx)(l.Text, {
+    }), I ? (0, r.jsx)(o.ZpM, {
+      className: b.N,
+      children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: E.intl.format(E.t.RNDlV9, {
-          date: s()(t.created_at).add(g.n83, "days").format("MMMM Do YYYY")
+        children: h.intl.format(h.t.RNDlV9, {
+          date: s()(t.created_at).add(f.n83, "days").format("MMMM Do YYYY")
         })
       })
-    }) : S ? (0, r.jsx)(l.ZpM, {
-      className: y.N,
-      children: (0, r.jsx)(l.Text, {
+    }) : T ? (0, r.jsx)(o.ZpM, {
+      className: b.N,
+      children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: E.intl.string(E.t.ZPQLH2)
+        children: h.intl.string(h.t.ZPQLH2)
       })
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [T ? (0, r.jsx)(l.ZpM, {
-        className: y.N,
-        children: (0, r.jsx)(l.Text, {
+      children: [S ? (0, r.jsx)(o.ZpM, {
+        className: b.N,
+        children: (0, r.jsx)(o.Text, {
           variant: "text-md/normal",
-          children: E.intl.string(E.t.c1f88z)
+          children: h.intl.string(h.t.c1f88z)
         })
       }) : null, (0, r.jsx)("div", {
-        className: y.x,
-        children: (0, r.jsx)(l.Button, {
+        className: b.x,
+        children: (0, r.jsx)(o.Button, {
           variant: "primary",
-          text: E.intl.string(E.t.dmBSKo),
-          disabled: v,
-          onClick: C,
-          loading: a || n
+          text: h.intl.string(h.t.dmBSKo),
+          disabled: O,
+          onClick: () => {
+            (e => {
+              let {
+                onConfirm: t
+              } = e;
+              (0, o.mMO)(async () => {
+                let {
+                  default: e
+                } = await n.e("98171").then(n.bind(n, 481398));
+                return n => (0, r.jsx)(e, {
+                  modalProps: n,
+                  onConfirm: t
+                })
+              })
+            })({
+              onConfirm: e => {
+                x(true), (0, p.$)(e).then(e => {
+                  null != e && null != e.body ? c.A.show({
+                    title: h.intl.string(h.t.i2iul5),
+                    body: h.intl.string(h.t["6Nmv4i"])
+                  }) : c.A.show({
+                    title: h.intl.string(h.t.OjbtDm),
+                    body: h.intl.string(h.t["0F5Jyt"])
+                  })
+                }, e => {
+                  var t;
+                  let n = (null == e ? true : e.message) || (null == e || null == (t = e.body) ? true : t.message) || h.intl.string(h.t["0F5Jyt"]);
+                  c.A.show({
+                    title: h.intl.string(h.t.OjbtDm),
+                    body: n
+                  })
+                }).finally(() => x(false))
+              }
+            })
+          },
+          loading: E || l
         })
       })]
     })]

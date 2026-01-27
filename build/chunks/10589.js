@@ -24,12 +24,12 @@ function u(e) {
   let {
     channelId: t
   } = e;
-  if (null == t || !(0, o.wv)({
+  if (null == t || !(0, s.wv)({
       location: "channel_select"
-    }) || !(0, s.gz)()) returnfalse;
+    }) || !(0, o.gz)()) returnfalse;
   let n = i.A.getChannel(t);
   if (null == n || !n.isDM()) returnfalse;
-  let r = (0, s.Di)(t);
+  let r = (0, o.Di)(t);
   return null != r && ((0, l.U)({
     warningId: r.id,
     warningType: r.type,
@@ -42,14 +42,14 @@ function d(e) {
   let {
     channels: t
   } = e;
-  if (!(0, o.wv)({
+  if (!(0, s.wv)({
       location: "channel_updates"
-    }) || !(0, s.gz)()) returnfalse;
+    }) || !(0, o.gz)()) returnfalse;
   let n = a.A.getCurrentlySelectedChannelId();
   if (null == n) returnfalse;
   let r = t.find(e => e.id === n);
   if (null == r) returnfalse;
-  let i = (0, s.Di)(r.id);
+  let i = (0, o.Di)(r.id);
   return !!(null != i && r.isDM()) && ((0, l.U)({
     warningId: i.id,
     warningType: i.type,

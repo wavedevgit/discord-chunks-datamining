@@ -1,7 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 882586, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 882586, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk494277 = require("./494277.js");
-module.exports = function(e) {
-  return !!e && !!e.ownerDocument && r(e) && "BR" === e.nodeName
+module.exports = function(t) {
+  return !!t && !!t.ownerDocument && n(t) && "BR" === t.nodeName
 }

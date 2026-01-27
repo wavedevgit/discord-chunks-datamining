@@ -36,7 +36,7 @@ function p(e) {
     case i.R.AVATAR_DECORATION:
       return (0, r.jsx)("div", {
         className: u._P,
-        children: (0, r.jsx)(s.i, {
+        children: (0, r.jsx)(o.i, {
           item: h,
           user: n,
           isHighlighted: p,
@@ -48,7 +48,7 @@ function p(e) {
         className: u.M4,
         children: [(0, r.jsx)("div", {
           className: u.Qt,
-          children: (0, r.jsx)(o.A, {
+          children: (0, r.jsx)(s.A, {
             user: n,
             nameplate: h,
             isHighlighted: p,
@@ -60,7 +60,7 @@ function p(e) {
         }), (0, r.jsx)("div", {
           className: u.BM,
           "aria-hidden": true,
-          children: (0, r.jsx)(o.A, {
+          children: (0, r.jsx)(s.A, {
             user: n,
             nameplate: h,
             isHighlighted: p,

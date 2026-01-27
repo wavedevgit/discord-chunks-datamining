@@ -29,8 +29,8 @@ function E(e, t, n) {
 }
 
 function y(e) {
-  var t = (0, s.A)((0, f.A)(e)),
-    n = ["absolute", "fixed"].indexOf((0, c.A)(e).position) >= 0 && (0, u.sb)(e) ? (0, o.A)(e) : e;
+  var t = (0, o.A)((0, f.A)(e)),
+    n = ["absolute", "fixed"].indexOf((0, c.A)(e).position) >= 0 && (0, u.sb)(e) ? (0, s.A)(e) : e;
   return (0, u.vq)(n) ? t.filter(function(e) {
     return (0, u.vq)(e) && (0, p.A)(e, n) && "body" !== (0, _.A)(e)
   }) : []
@@ -39,9 +39,9 @@ function y(e) {
 function b(e, t, n, r) {
   var i = [].concat("clippingParents" === t ? y(e) : [].concat(t), [n]),
     a = i[0],
-    s = i.reduce(function(t, n) {
+    o = i.reduce(function(t, n) {
       var i = E(e, n, r);
       return t.top = (0, m.T9)(i.top, t.top), t.right = (0, m.jk)(i.right, t.right), t.bottom = (0, m.jk)(i.bottom, t.bottom), t.left = (0, m.T9)(i.left, t.left), t
     }, E(e, a, r));
-  return s.width = s.right - s.left, s.height = s.bottom - s.top, s.x = s.left, s.y = s.top, s
+  return o.width = o.right - o.left, o.height = o.bottom - o.top, o.x = o.left, o.y = o.top, o
 }

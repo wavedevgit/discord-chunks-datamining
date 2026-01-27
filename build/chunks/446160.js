@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 446160, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   G3: "splashBackground__742a4",
   $k: "centerFlex__742a4",

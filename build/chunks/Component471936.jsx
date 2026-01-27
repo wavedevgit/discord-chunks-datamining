@@ -89,10 +89,10 @@ function O(e) {
   let t, n = [],
     i = 0,
     a = /\*\*(.+?)\*\*/g,
-    s = 0;
+    o = 0;
   for (; null !== (t = a.exec(e));) t.index > i && n.push(e.substring(i, t.index)), n.push((0, r.jsx)("strong", {
     children: t[1]
-  }, s++)), i = a.lastIndex;
+  }, o++)), i = a.lastIndex;
   return i < e.length && n.push(e.substring(i)), n.length > 0 ? n : e
 }
 
@@ -107,7 +107,7 @@ function v() {
 function A(e) {
   let {
     setIsSafetyAccepted: t
-  } = e, [n, a] = i.useState([]), o = [{
+  } = e, [n, a] = i.useState([]), s = [{
     label: "I am wearing a helmet",
     value: "helmet"
   }, {
@@ -118,10 +118,10 @@ function A(e) {
     value: "training"
   }];
   return i.useEffect(() => {
-    t(n.length === o.length)
-  }, [n, o.length, t]), (0, r.jsx)(s.$QX, {
+    t(n.length === s.length)
+  }, [n, s.length, t]), (0, r.jsx)(o.$QX, {
     label: "Safety checklist",
-    options: o,
+    options: s,
     selectedValues: n,
     onChange: a
   })
@@ -130,18 +130,18 @@ function A(e) {
 function I(e) {
   let {
     setIsPasscodeValid: t
-  } = e, [n, a] = i.useState(""), s = e => {
+  } = e, [n, a] = i.useState(""), o = e => {
     a(e), t(e.length > 0)
   };
   return (0, r.jsx)(u.ksK, {
     placeholder: "Enter your passcode...",
     value: n,
-    onChange: s
+    onChange: o
   })
 }
 
 function S(e) {
-  let {} = e, t = h({}, e), [n, a] = i.useState("intro"), [o, l] = i.useState(false), [c, u] = i.useState(false), d = [{
+  let {} = e, t = h({}, e), [n, a] = i.useState("intro"), [s, l] = i.useState(false), [c, u] = i.useState(false), d = [{
     stepKey: "intro",
     modalProps: {
       title: "Verify radness",
@@ -160,7 +160,7 @@ function S(e) {
     body: (0, r.jsx)(A, {
       setIsSafetyAccepted: l
     }),
-    nextEnabled: o
+    nextEnabled: s
   }, {
     stepKey: "passcode",
     modalProps: {
@@ -175,7 +175,7 @@ function S(e) {
     },
     nextEnabled: c
   }], f = d.slice(1).map(e => e.stepKey);
-  return (0, r.jsx)(s.t04, m({
+  return (0, r.jsx)(o.t04, m({
     steps: d,
     currentStepKey: n,
     numberedSteps: f,
@@ -194,10 +194,10 @@ let T = {
         showPreview: n,
         showInput: i,
         subtitleIcon: a
-      } = e, o = y(e, ["showPreview", "showInput", "subtitleIcon"]), c = a ? {
-        text: null != (t = o.subtitle) ? t : "Default subtitle",
-        leadingIcon: s.N$i
-      } : o.subtitle;
+      } = e, s = y(e, ["showPreview", "showInput", "subtitleIcon"]), c = a ? {
+        text: null != (t = s.subtitle) ? t : "Default subtitle",
+        leadingIcon: o.N$i
+      } : s.subtitle;
       return (0, r.jsxs)(u.BJc, {
         gap: 16,
         align: "center",
@@ -207,8 +207,8 @@ let T = {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           text: "Open Modal",
-          onClick: () => (0, u.qfG)(e => (0, r.jsx)(s.Modal, E(m({}, e, o), {
-            title: o.title,
+          onClick: () => (0, u.qfG)(e => (0, r.jsx)(o.Modal, E(m({}, e, s), {
+            title: s.title,
             subtitle: c,
             input: i ? (0, r.jsx)(u.IWV, {
               placeholder: "Search...",
@@ -284,7 +284,7 @@ let T = {
               })]
             })
           })), {
-            dismissable: o.dismissable
+            dismissable: s.dismissable
           })
         })]
       })
@@ -341,9 +341,9 @@ let T = {
         cancelText: t,
         confirmDelay: n,
         confirmError: a,
-        subtitle: s,
-        formatSubtitle: o
-      } = e, l = y(e, ["cancelText", "confirmDelay", "confirmError", "subtitle", "formatSubtitle"]), c = i.useMemo(() => o ? O(s) : s, [s, o]);
+        subtitle: o,
+        formatSubtitle: s
+      } = e, l = y(e, ["cancelText", "confirmDelay", "confirmError", "subtitle", "formatSubtitle"]), c = i.useMemo(() => s ? O(o) : o, [o, s]);
       return (0, r.jsxs)(u.BJc, {
         gap: 16,
         align: "center",
@@ -427,7 +427,7 @@ let T = {
         subtitleIcon: c
       } = e, d = y(e, ["graphic", "subtitleIcon"]), _ = c ? {
         text: null != (t = d.subtitle) ? t : "Default subtitle",
-        leadingIcon: s.N$i
+        leadingIcon: o.N$i
       } : d.subtitle, h = i.useMemo(() => 0 === l ? {
         type: "image",
         src: f
@@ -446,7 +446,7 @@ let T = {
         loopAt: 2.5
       } : 4 === l ? {
         type: "dynamic",
-        component: o.DynamicGraphicComponent.DEMO,
+        component: s.DynamicGraphicComponent.DEMO,
         aspectRatio: "6/4",
         props: {
           text: "Dynamic Content"
@@ -461,7 +461,7 @@ let T = {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           text: "Open ExpressiveModal",
-          onClick: () => (0, u.qfG)(e => (0, r.jsx)(s.ExpressiveModal, E(m({}, e, d), {
+          onClick: () => (0, u.qfG)(e => (0, r.jsx)(o.ExpressiveModal, E(m({}, e, d), {
             title: d.title,
             subtitle: _,
             graphic: h,
@@ -571,7 +571,7 @@ let T = {
         dynamicText: t
       } = e, i = y(e, ["dynamicText"]), a = {
         type: "dynamic",
-        component: o.DynamicGraphicComponent.DEMO,
+        component: s.DynamicGraphicComponent.DEMO,
         aspectRatio: "6/4",
         props: {
           text: t

@@ -8,8 +8,8 @@ Object.defineProperty(exports, "__esModule", {
     i = e.length;
   for (; i > 0;) {
     let a = i / 2 | 0,
-      s = r + a;
-    0 >= n(e[s], t) ? (r = ++s, i -= a + 1) : i = a
+      o = r + a;
+    0 >= n(e[o], t) ? (r = ++o, i -= a + 1) : i = a
   }
   return r
 }

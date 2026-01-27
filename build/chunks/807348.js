@@ -35,13 +35,13 @@ function a(e, t) {
   return n
 }
 
-function s(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function o(e, t) {
+function s(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -103,8 +103,8 @@ function _(e, t) {
     emoji_name: c,
     user_id: u,
     available: d
-  } = n, f = o(n, ["sound_id", "emoji_id", "emoji_name", "user_id", "available"]), [p] = r;
-  return s(i({}, f), {
+  } = n, f = s(n, ["sound_id", "emoji_id", "emoji_name", "user_id", "available"]), [p] = r;
+  return o(i({}, f), {
     soundId: a,
     guildId: p,
     emojiId: l,
@@ -122,7 +122,7 @@ function h(e) {
     emojiName: a,
     userId: l
   } = e;
-  return s(i({}, o(e, ["soundId", "guildId", "emojiId", "emojiName", "userId"])), {
+  return o(i({}, s(e, ["soundId", "guildId", "emojiId", "emojiName", "userId"])), {
     sound_id: t,
     guild_id: n,
     emoji_id: r,

@@ -2,13 +2,13 @@
 /** chunk id: 282956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk73153 = require("./73153.js"),
   Chunk997509 = require("./997509.js"),
   Chunk542580 = require("./542580.js"),
   Chunk824953 = require("./824953.js");
-let o = {
+let s = {
   init() {
     r.h.dispatch({
       type: "INTEGRATION_SETTINGS_INIT"
@@ -107,7 +107,7 @@ let o = {
     try {
       r.h.dispatch({
         type: "INTEGRATION_SETTINGS_SUBMITTING"
-      }), await s.A.update(e, t.id, t), r.h.dispatch({
+      }), await o.A.update(e, t.id, t), r.h.dispatch({
         type: "INTEGRATION_SETTINGS_SAVE_SUCCESS"
       })
     } catch (e) {

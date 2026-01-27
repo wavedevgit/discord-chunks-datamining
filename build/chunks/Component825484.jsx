@@ -2,18 +2,18 @@
 /** chunk id: 825484, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => o
+  e: () => s
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk331322 = require("./331322.jsx"),
   Chunk977067 = require("./977067.js");
 
-function o(e) {
+function s(e) {
   let {
     size: t = "md",
     direction: n = "horizontal",
-    justify: o,
+    justify: s,
     align: l,
     padding: c,
     className: u,
@@ -28,13 +28,13 @@ function o(e) {
   return (0, r.jsx)(a.B, {
     direction: n,
     gap: 8,
-    justify: o,
+    justify: s,
     align: l,
     wrap: f,
     padding: c,
     className: u,
     fullWidth: !!_ || p,
-    children: (0, r.jsx)(s.Z.Provider, {
+    children: (0, r.jsx)(o.Z.Provider, {
       value: h,
       children: d
     })

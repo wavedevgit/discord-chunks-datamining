@@ -2,7 +2,7 @@
 /** chunk id: 25171, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => L
 }), require("./65821.js"), require("./896048.js");
 var Chunk781763 = require("./781763.js"),
   Chunk626584 = require("./626584.js"),
@@ -120,14 +120,14 @@ function D(e) {
     null == p.A.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }
-let x = {
-  waitSubscribed: (e, t) => new Promise((n, r) => P(() => s.A.isSubscribed(e, t), n, r)),
+let L = {
+  waitSubscribed: (e, t) => new Promise((n, r) => P(() => o.A.isSubscribed(e, t), n, r)),
   waitConnected(e) {
     return new Promise(P.bind(this, () => l.A.isConnected(e)))
   },
   isLaunchable: e => R(N(e)).then(e => null != e).catch(() => false),
   launch: e => R(N(e)).then(D),
-  launchDispatchApplication(e, t, n, i, s) {
+  launchDispatchApplication(e, t, n, i, o) {
     let {
       launchOptions: l,
       defaultLaunchOptionId: c,
@@ -138,8 +138,8 @@ let x = {
       shouldPatch: g
     } = e;
     if (null == l || null == c || null == f) throw Error("Couldn't construct launchable for ".concat(e.applicationId));
-    null == s && (s = c);
-    let E = l[s];
+    null == o && (o = c);
+    let E = l[o];
     if (null == E) throw Error("Couldn't construct launchable for ".concat(e.applicationId, ". No launch option."));
     return (0, r.r)([_]).then(e => {
       let t = e[0];
@@ -155,7 +155,7 @@ let x = {
           DISCORD_ACCESS_TOKEN: null != t ? t : "",
           DISCORD_CURRENT_LOCALE: n,
           DISCORD_CURRENT_BRANCH: i,
-          DISCORD_STORAGE_PATH: h.gkb.ROOT_STORAGE_PATH(e, o.default.getId())
+          DISCORD_STORAGE_PATH: h.gkb.ROOT_STORAGE_PATH(e, s.default.getId())
         };
       return d.A.launch(p, _, E.name, r)
     })
@@ -167,10 +167,10 @@ let x = {
   createShortcuts(e, t, n, r, i) {
     if (null == i || !(0, f.isWindows)()) return Promise.resolve(false);
     let a = "discord:///library/".concat(r, "/launch"),
-      s = "".concat(i, "\\icon.ico");
+      o = "".concat(i, "\\icon.ico");
     return C().then(r => {
-      var i, o;
-      return null != (i = null == (o = r.createShortcuts) ? true : o.call(r, e, t, n, a, s)) && i
+      var i, s;
+      return null != (i = null == (s = r.createShortcuts) ? true : s.call(r, e, t, n, a, o)) && i
     })
   },
   isGameLaunchable: e => R(w(e)).then(e => null != e).catch(() => false),

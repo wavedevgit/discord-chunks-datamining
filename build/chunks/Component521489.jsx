@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk110259 = require("./110259.js"),
   Chunk158954 = require("./158954.js"),
@@ -89,16 +89,16 @@ function E(e) {
           className: f.nw,
           children: (0, r.jsx)(u.NPJ, {
             theme: A,
-            children: e => (0, r.jsx)(o.animated.div, {
+            children: e => (0, r.jsx)(s.animated.div, {
               "data-mana-component": "layer-modal",
-              className: s()(p.container, f.yl, e),
+              className: o()(p.container, f.yl, e),
               style: S,
               children: (0, r.jsx)("div", {
                 className: f.jE,
                 children: (0, r.jsx)(u.NPJ, {
                   theme: I,
                   children: e => (0, r.jsx)("div", {
-                    className: s()(e, f.h_),
+                    className: o()(e, f.h_),
                     children: b
                   })
                 })

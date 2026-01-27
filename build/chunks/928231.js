@@ -12,19 +12,19 @@ require.d(exports, {
 var Chunk99478 = require("./99478.js"),
   Chunk376472 = require("./376472.js"),
   Chunk142922 = require("./142922.js");
-let s = /^([+-]\d{6}|\d{4})-(\d{2})-(\d{2})$/,
-  o = /^([+-]\d{6}|\d{4})-(\d{2})-(\d{2})(?:T(\d{2}))?(?::(\d{2}))?(?::(\d{2}))?(\.\d+)?$/,
+let o = /^([+-]\d{6}|\d{4})-(\d{2})-(\d{2})$/,
+  s = /^([+-]\d{6}|\d{4})-(\d{2})-(\d{2})(?:T(\d{2}))?(?::(\d{2}))?(?::(\d{2}))?(\.\d+)?$/,
   l = /^([+-]\d{6}|\d{4})-(\d{2})-(\d{2})(?:T(\d{2}))?(?::(\d{2}))?(?::(\d{2}))?(\.\d+)?(?:(?:([+-]\d{2})(?::?(\d{2}))?)|Z)$/;
 
 function c(e) {
-  let t = e.match(s);
+  let t = e.match(o);
   if (!t) throw Error("Invalid ISO 8601 date string: " + e);
   let n = new(0, r.ng)(d(t[1], 0, 9999), d(t[2], 1, 12), 1);
   return n.day = d(t[3], 1, n.calendar.getDaysInMonth(n)), n
 }
 
 function u(e) {
-  let t = e.match(o);
+  let t = e.match(s);
   if (!t) throw Error("Invalid ISO 8601 date time string: " + e);
   let n = d(t[1], false, 9999),
     i = n < 1 ? "BC" : "AD",

@@ -20,9 +20,9 @@ function _(e) {
   let {
     entries: t,
     channelId: n
-  } = e, _ = (0, a.bG)([o.A], () => o.A.getChannel(n)), h = null == _ ? true : _.guild_id, m = r.useRef(new Set), g = r.useMemo(() => {
+  } = e, _ = (0, a.bG)([s.A], () => s.A.getChannel(n)), h = null == _ ? true : _.guild_id, m = r.useRef(new Set), g = r.useMemo(() => {
     let e = new Set(null == t ? true : t.map(e => e.author_id));
-    return (0, s.v)([...m.current], [...e]) || (m.current = e), m.current
+    return (0, o.v)([...m.current], [...e]) || (m.current = e), m.current
   }, [t]);
   r.useEffect(() => {
     null != h && Array.from(g).forEach(e => {

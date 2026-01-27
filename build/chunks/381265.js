@@ -4,7 +4,7 @@
 var Chunk3528 = require("./3528.js"),
   i = "function" == typeof Symbol && "symbol" == typeof Symbol("foo"),
   a = Object.prototype.toString,
-  s = Array.prototype.concat,
+  o = Array.prototype.concat,
   Chunk207001 = require("./207001.js"),
   l = function(e) {
     return "function" == typeof e && "[object Function]" === a.call(e)
@@ -16,12 +16,12 @@ var Chunk3528 = require("./3528.js"),
         if (e[t] === n) return
       } else if (!l(r) || !r()) return
     }
-    c ? o(e, t, n, true) : o(e, t, n)
+    c ? s(e, t, n, true) : s(e, t, n)
   },
   d = function(e, t) {
     var n = arguments.length > 2 ? arguments[2] : {},
       a = r(t);
-    i && (a = s.call(a, Object.getOwnPropertySymbols(t)));
-    for (var o = 0; o < a.length; o += 1) u(e, a[o], t[a[o]], n[a[o]])
+    i && (a = o.call(a, Object.getOwnPropertySymbols(t)));
+    for (var s = 0; s < a.length; s += 1) u(e, a[s], t[a[s]], n[a[s]])
   };
 d.supportsDescriptors = !!c, module.exports = d

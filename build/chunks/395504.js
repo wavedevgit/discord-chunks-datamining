@@ -14,19 +14,19 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js");
 
 function c(e) {
-  return (0, r.bG)([s.Ay, i.A, o.default], () => {
+  return (0, r.bG)([o.Ay, i.A, s.default], () => {
     var t, n, r, a;
-    let c = s.Ay.isOptInEnabled(e),
+    let c = o.Ay.isOptInEnabled(e),
       u = null != (t = null == (r = i.A.getGuild(e)) ? true : r.features.has(l.GuildFeatures.COMMUNITY)) && t,
-      d = null != (n = null == (a = o.default.getCurrentUser()) ? true : a.isStaff()) && n;
+      d = null != (n = null == (a = s.default.getCurrentUser()) ? true : a.isStaff()) && n;
     return c && (u || d)
   })
 }
 
 function u(e) {
   let t = i.A.getGuild(e),
-    n = o.default.getCurrentUser();
-  return null != e && null != t && null != n && (t.features.has(l.GuildFeatures.COMMUNITY) || n.isStaff()) && s.Ay.isOptInEnabled(e)
+    n = s.default.getCurrentUser();
+  return null != e && null != t && null != n && (t.features.has(l.GuildFeatures.COMMUNITY) || n.isStaff()) && o.Ay.isOptInEnabled(e)
 }
 
 function d(e) {
@@ -34,8 +34,8 @@ function d(e) {
     var t;
     let n = i.A.getGuild(e),
       r = a.A.can(l.xBc.MANAGE_GUILD, n),
-      s = a.A.can(l.xBc.MANAGE_ROLES, n),
-      o = null != (t = null == n ? true : n.features.has(l.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED)) && t;
-    return null != n && r && s && !o
+      o = a.A.can(l.xBc.MANAGE_ROLES, n),
+      s = null != (t = null == n ? true : n.features.has(l.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED)) && t;
+    return null != n && r && o && !s
   })
 }

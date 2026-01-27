@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk280230 = require("./280230.js"),
   Chunk397927 = require("./397927.js"),
   Chunk73153 = require("./73153.js"),
@@ -62,7 +62,7 @@ function G(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,8 +73,8 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -87,19 +87,19 @@ function B(e) {
   return {
     react(e, i, a) {
       let {
-        key: s,
-        channelId: o,
+        key: o,
+        channelId: s,
         messageId: l
       } = a;
       return e.src ? (0, r.jsx)(y.H, {
         node: e,
         tooltipPosition: t,
         enableClick: n,
-        channelId: o,
+        channelId: s,
         messageId: l
-      }, s) : (0, r.jsx)("span", {
+      }, o) : (0, r.jsx)("span", {
         children: e.surrogate
-      }, s)
+      }, o)
     }
   }
 }
@@ -112,15 +112,15 @@ function H(e) {
   return {
     react(e, i, a) {
       let {
-        key: s,
-        guildId: o,
+        key: o,
+        guildId: s,
         channelId: l,
         messageId: c,
         isInteracting: u
-      } = a, d = f.Ay.getDisambiguatedEmojiContext(o).getById(e.emojiId);
+      } = a, d = f.Ay.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
-        e = F(G({}, e), {
+        e = V(G({}, e), {
           name: t ? ":".concat(d.name, ":") : d.name
         })
       }
@@ -131,7 +131,7 @@ function H(e) {
         enableClick: n,
         channelId: l,
         messageId: c
-      }, s)
+      }, o)
     }
   }
 }
@@ -140,18 +140,18 @@ function Y(e, t, n) {
   let r = I.A.getGuild(e);
   if (null == e || null == r) return;
   let i = t => {
-    r.features.has(L.GuildFeatures.COMMUNITY) && (0, b.pX)(L.BVt.CHANNEL(e, t))
+    r.features.has(x.GuildFeatures.COMMUNITY) && (0, b.pX)(x.BVt.CHANNEL(e, t))
   };
   switch (t) {
     case "home":
     case "guide":
-      i(j.VV.GUILD_HOME);
+      i(M.VV.GUILD_HOME);
       break;
     case "browse":
-      i(j.VV.CHANNEL_BROWSER);
+      i(M.VV.CHANNEL_BROWSER);
       break;
     case "customize":
-      i(j.VV.CUSTOMIZE_COMMUNITY);
+      i(M.VV.CUSTOMIZE_COMMUNITY);
       break;
     case "linked-roles":
       if (null != n) {
@@ -176,11 +176,11 @@ function Y(e, t, n) {
 function W(e) {
   let {
     text: t
-  } = e, [n, a] = i.useState(false), s = () => {
+  } = e, [n, a] = i.useState(false), o = () => {
     (0, S.C)(t, () => a(true), () => a(false))
   };
   return (0, r.jsx)(l.DUT, {
-    onClick: s,
+    onClick: o,
     children: n ? (0, r.jsx)(l.A9s, {
       size: "xs",
       color: "currentColor"
@@ -193,9 +193,9 @@ function W(e) {
 let K = {
   blockQuote: {
     react: (e, t, n) => (0, r.jsxs)("div", {
-      className: M.h,
+      className: j.h,
       children: [(0, r.jsx)("div", {
-        className: M.r
+        className: j.r
       }), (0, r.jsx)("blockquote", {
         children: t(e.content, n)
       })]
@@ -226,14 +226,14 @@ let K = {
   codeBlock: {
     react(e, t, i) {
       let a = () => (0, r.jsx)("code", {
-        className: s()(k.kw, "hljs"),
+        className: o()(k.kw, "hljs"),
         children: (0, T.t)(e, t, i)
       });
       return (0, r.jsx)("pre", {
         children: (0, r.jsxs)("div", {
-          className: M.Hy,
+          className: j.Hy,
           children: [S.p5 ? (0, r.jsx)("div", {
-            className: M.lB,
+            className: j.lB,
             children: (0, r.jsx)(W, {
               text: e.content
             })
@@ -246,7 +246,7 @@ let K = {
               {
                 let n = t.highlight(e.lang, e.content, true);
                 return null == n ? a() : (0, r.jsx)("code", {
-                  className: s()(k.kw, "hljs", n.language),
+                  className: o()(k.kw, "hljs", n.language),
                   dangerouslySetInnerHTML: {
                     __html: n.value
                   }
@@ -307,17 +307,17 @@ let K = {
     react: (e, t, n) => {
       let i = e.ordered ? "ol" : "ul",
         a = null == e.start ? true : (e.start + (e.items.length - 1)).toString().length;
-      return (0, o.reactElement)(i, "".concat(n.key), {
+      return (0, s.reactElement)(i, "".concat(n.key), {
         start: e.start,
-        className: n.formatInline ? M.tZ : null,
+        className: n.formatInline ? j.tZ : null,
         style: {
           "--totalCharacters": a
         },
         children: e.items.map((e, i) => {
-          let a = (0, o.reactElement)("span", "".concat(n.key, "-").concat(i, "-innerSpan"), {
+          let a = (0, s.reactElement)("span", "".concat(n.key, "-").concat(i, "-innerSpan"), {
             children: t(e, n)
           });
-          return (0, o.reactElement)("li", "".concat(n.key, "-").concat(i) + i, {
+          return (0, s.reactElement)("li", "".concat(n.key, "-").concat(i) + i, {
             children: [a, (0, r.jsx)(l.AC4, {
               children: ","
             }, "screen-reader-pause")]
@@ -328,14 +328,14 @@ let K = {
   },
   heading: {
     react: (e, t, n) => {
-      let i = (0, o.reactElement)("span", "".concat(n.key, "-innerSpan"), {
+      let i = (0, s.reactElement)("span", "".concat(n.key, "-innerSpan"), {
         children: t(e.content, n)
       });
-      return (0, o.reactElement)("h" + e.level, (null == n ? true : n.key) != null ? "".concat(n.key) : null, {
+      return (0, s.reactElement)("h" + e.level, (null == n ? true : n.key) != null ? "".concat(n.key) : null, {
         children: [i, (0, r.jsx)(l.AC4, {
           children: ","
         }, "screen-reader-pause")],
-        className: n.formatInline ? M.tZ : null
+        className: n.formatInline ? j.tZ : null
       })
     }
   },
@@ -359,12 +359,12 @@ let K = {
   },
   subtext: {
     react: (e, t, n) => {
-      let r = (0, o.reactElement)("span", "".concat(n.key, "-innerSpan"), {
+      let r = (0, s.reactElement)("span", "".concat(n.key, "-innerSpan"), {
         children: t(e.content, n)
       });
-      return (0, o.reactElement)("small", (null == n ? true : n.key) != null ? "".concat(n.key) : null, {
+      return (0, s.reactElement)("small", (null == n ? true : n.key) != null ? "".concat(n.key) : null, {
         children: r,
-        className: n.formatInline ? M.tZ : null
+        className: n.formatInline ? j.tZ : null
       })
     }
   },
@@ -378,8 +378,8 @@ let K = {
 };
 
 function z(e) {
-  return F(G({}, K), {
-    link: (0, x.A)(e),
+  return V(G({}, K), {
+    link: (0, L.A)(e),
     devLink: (0, P.A)(e),
     emoji: B(e),
     customEmoji: H(e),

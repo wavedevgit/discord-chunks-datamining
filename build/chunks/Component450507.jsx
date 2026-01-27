@@ -52,11 +52,11 @@ function d(e, t) {
 
 function f(e) {
   return (0, r.jsx)(a.EO, d(c({}, e), {
-    "aria-label": s.intl.string(s.t.ZTNur7),
+    "aria-label": o.intl.string(o.t.ZTNur7),
     size: a.rI.SMALL,
     parentComponent: "renderModalSpinner",
     children: (0, r.jsx)("div", {
-      className: o.dc,
+      className: s.dc,
       children: (0, r.jsx)(i.y$y, {})
     })
   }))

@@ -20,17 +20,17 @@ function l(e) {
     isInline: c,
     onClick: u
   } = e, d = n + (c ? ":" : ""), f = null;
-  (null == l ? true : l.isActive) && !c ? f = o.vu : (null == l || null == (t = l.lastValidationResult) ? true : t.success) === false ? f = o.z3 : (null == l ? true : l.hasValue) && !c && (f = o.hZ);
-  let p = (0, r.jsx)(s.Text, {
+  (null == l ? true : l.isActive) && !c ? f = s.vu : (null == l || null == (t = l.lastValidationResult) ? true : t.success) === false ? f = s.z3 : (null == l ? true : l.hasValue) && !c && (f = s.hZ);
+  let p = (0, r.jsx)(o.Text, {
     variant: c ? "text-md/normal" : "text-sm/normal",
     color: "text-strong",
-    className: a()(o.uK, {
-      [o.mG]: c
+    className: a()(s.uK, {
+      [s.mG]: c
     }, f, i),
     children: d
   });
-  return null == u ? p : (0, r.jsx)(s.DUT, {
-    className: o.vk,
+  return null == u ? p : (0, r.jsx)(o.DUT, {
+    className: s.vk,
     onClick: () => u(n),
     children: p
   })

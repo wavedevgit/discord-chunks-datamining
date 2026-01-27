@@ -8,14 +8,14 @@ var Chunk322811 = require("./322811.js"),
   Chunk374372 = require("./374372.js");
 
 function a(e, t, n) {
-  let r = s(e.getDateWithAdjustedTimezone(), t, n),
+  let r = o(e.getDateWithAdjustedTimezone(), t, n),
     a = new i.BP(e);
   return (a = a.addDurationAsImplied({
     day: r
   })).assign("weekday", t), a
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   let i = e.getDay();
   switch (n) {
     case "this":
@@ -32,10 +32,10 @@ function s(e, t, n) {
       if (t < i && t != r.Bw.SUNDAY) return l(e, t);
       return l(e, t) + 7
   }
-  return o(e, t)
+  return s(e, t)
 }
 
-function o(e, t) {
+function s(e, t) {
   let n = c(e, t),
     r = l(e, t);
   return r < -n ? r : n

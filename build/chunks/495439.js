@@ -2,7 +2,7 @@
 /** chunk id: 495439, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => s,
+  K: () => o,
   c: () => i
 });
 var Chunk945810 = require("./945810.js"),
@@ -28,7 +28,7 @@ let a = (0, Chunk945810.mj)({
   }
 });
 
-function s(e) {
+function o(e) {
   let {
     location: t
   } = e;

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 505559, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 505559, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 });
@@ -14,7 +13,7 @@ let s = e => {
     text: n
   } = e;
   return (0, r.jsx)("div", {
-    className: t ? a.x : a.U,
+    className: t ? l.x : l.U,
     children: (0, r.jsx)(i.Text, {
       variant: t ? "text-sm/bold" : "text-xs/bold",
       color: "always-white",

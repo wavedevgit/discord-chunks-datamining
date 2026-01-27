@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk796774 = require("./796774.js"),
@@ -24,9 +24,9 @@ var Chunk627968 = require("./627968.js"),
 let b = 4;
 
 function O(e) {
-  let t = (0, o.bG)([h.default], () => m.Ay.canUseSoundboardEverywhere(h.default.getCurrentUser())),
-    n = (0, o.bG)([u.A], () => u.A.getSoundsForGuild(g.mV)),
-    r = (0, o.yK)([p.A], () => p.A.getGuildIds()),
+  let t = (0, s.bG)([h.default], () => m.Ay.canUseSoundboardEverywhere(h.default.getCurrentUser())),
+    n = (0, s.bG)([u.A], () => u.A.getSoundsForGuild(g.mV)),
+    r = (0, s.yK)([p.A], () => p.A.getGuildIds()),
     a = i.useMemo(() => _.A.can(E.xB.USE_EXTERNAL_SOUNDS, e), [e]);
   return i.useMemo(() => {
     let i = [];
@@ -35,20 +35,20 @@ function O(e) {
         var t, n;
         return null != (t = null == (n = u.A.getSoundsForGuild(e)) ? true : n.filter(e => e.available)) ? t : []
       });
-      i.push(...s().sampleSize(e, b))
+      i.push(...o().sampleSize(e, b))
     } else if ((null == e ? true : e.guild_id) != null) {
-      var o;
-      let t = null == (o = u.A.getSoundsForGuild(null == e ? true : e.guild_id)) ? true : o.filter(e => e.available);
-      i.push(...s().sampleSize(t, b))
+      var s;
+      let t = null == (s = u.A.getSoundsForGuild(null == e ? true : e.guild_id)) ? true : s.filter(e => e.available);
+      i.push(...o().sampleSize(t, b))
     }
-    return i.length < b && i.push(...s().sampleSize(null != n ? n : [], b - i.length)), i
+    return i.length < b && i.push(...o().sampleSize(null != n ? n : [], b - i.length)), i
   }, [a, null == e ? true : e.guild_id, n, r, t])
 }
 let v = Chunk64700.memo(function(e) {
   let {
     channelId: t,
     onSelectSoundmoji: n
-  } = e, a = (0, o.bG)([u.A], () => !u.A.isFetching() && !u.A.hasFetchedAllSounds(), []), s = (0, o.bG)([f.A], () => f.A.getChannel(t)), p = O(s);
+  } = e, a = (0, s.bG)([u.A], () => !u.A.isFetching() && !u.A.hasFetchedAllSounds(), []), o = (0, s.bG)([f.A], () => f.A.getChannel(t)), p = O(o);
   return (i.useEffect(() => {
     (0, c.E7)()
   }, [a]), 0 === p.length) ? (0, r.jsx)(l.y$y, {}) : (0, r.jsx)("div", {
@@ -58,7 +58,7 @@ let v = Chunk64700.memo(function(e) {
       enableSecondaryActions: true,
       isSoundmoji: true,
       sound: e,
-      channel: s,
+      channel: o,
       onSelectItem: t => null == n ? true : n(e, !t.shiftKey)
     }, t))
   })

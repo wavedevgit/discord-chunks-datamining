@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk619517 = require("./619517.jsx"),
   Chunk183555 = require("./183555.jsx"),
@@ -28,7 +28,7 @@ function p(e) {
       action: "VIEW_APPLICATION_WIDGET_PREVIEW",
       applicationId: t.application.id
     }), _.current = true)
-  }, [p, t.application.id]), (0, r.jsx)(o.sqX, {
+  }, [p, t.application.id]), (0, r.jsx)(s.sqX, {
     onClick: () => {
       p({
         action: "PRESS_APPLICATION_WIDGET_PREVIEW",
@@ -37,12 +37,12 @@ function p(e) {
     },
     "aria-label": t.application.name,
     children: (0, r.jsxs)(u.A.Overlay, {
-      className: s()(f.kL, n),
-      children: [(0, r.jsxs)(o.BJc, {
+      className: o()(f.kL, n),
+      children: [(0, r.jsxs)(s.BJc, {
         gap: 8,
         padding: 8,
         className: f.Qs,
-        children: [(0, r.jsxs)(o.BJc, {
+        children: [(0, r.jsxs)(s.BJc, {
           direction: "horizontal",
           gap: 4,
           children: [(0, r.jsx)(l.Ay, {
@@ -50,13 +50,13 @@ function p(e) {
             height: 16,
             src: t.application.icon,
             className: f.In
-          }), (0, r.jsx)(o.EYj, {
+          }), (0, r.jsx)(s.EYj, {
             variant: "text-xs/medium",
             children: t.application.name
           })]
         }), (0, r.jsxs)("div", {
           className: f.P_,
-          children: [(0, r.jsxs)(o.DZT, {
+          children: [(0, r.jsxs)(s.DZT, {
             variant: "heading-sm/semibold",
             lineClamp: 2,
             children: [t.previewText, null != t.previewIcon && (0, r.jsxs)(r.Fragment, {
@@ -70,7 +70,7 @@ function p(e) {
                 })
               })]
             })]
-          }), (0, r.jsx)(o.QWc, {
+          }), (0, r.jsx)(s.QWc, {
             textVariant: "text-xs/normal",
             text: d.intl.string(d.t.qI8ZP6),
             variant: "secondary"

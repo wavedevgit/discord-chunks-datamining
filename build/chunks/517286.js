@@ -28,7 +28,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -39,8 +39,8 @@ function s(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function s(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,7 +76,7 @@ function u(e) {
 }
 let d = (e, t) => {
   let n = r.useRef(0),
-    [i, s] = r.useState(false),
+    [i, o] = r.useState(false),
     [d, f] = r.useState({}),
     p = r.useRef(new AbortController),
     [_, h] = r.useState(t),
@@ -95,7 +95,7 @@ let d = (e, t) => {
         } = e;
         return g.current.has(t)
       })) && r;
-      if (s(i), n.current = 0, !i && null != e)
+      if (o(i), n.current = 0, !i && null != e)
         for (let {
             src: t
           }
@@ -106,13 +106,13 @@ let d = (e, t) => {
     n.current = 1;
     let t = p.current;
     e.config.effects.forEach(async e => {
-      if (g.current.has(e.src)) m.current.set(e.src, 2), u(m.current) && (s(true), n.current = 2);
+      if (g.current.has(e.src)) m.current.set(e.src, 2), u(m.current) && (o(true), n.current = 2);
       else try {
         let r = await l(e.src, t.signal);
         if (t.signal.aborted) return;
-        m.current.set(e.src, 2), g.current.set(e.src, r.src), f(t => o(a({}, t), {
+        m.current.set(e.src, 2), g.current.set(e.src, r.src), f(t => s(a({}, t), {
           [e.src]: r
-        })), u(m.current) && (s(true), n.current = 2)
+        })), u(m.current) && (o(true), n.current = 2)
       } catch (e) {}
     })
   }, [e, _]), r.useEffect(() => {

@@ -11,7 +11,7 @@ var Chunk496431 = require("./496431.js"),
   Chunk728458 = require("./728458.js"),
   Chunk985018 = require("./985018.jsx");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,7 +27,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -82,46 +82,46 @@ function f(e, t) {
   switch (t) {
     case 0:
       n = {
-        days: s.t["/wnvqA"],
-        hours: s.t.Jsq0XN,
-        minutes: s.t["SBd+Bs"]
+        days: o.t["/wnvqA"],
+        hours: o.t.Jsq0XN,
+        minutes: o.t["SBd+Bs"]
       };
       break;
     case 1:
       n = {
-        days: s.t.UD5nn5,
-        hours: s.t.Hg8Fee,
-        minutes: s.t.XSbQZZ
+        days: o.t.UD5nn5,
+        hours: o.t.Hg8Fee,
+        minutes: o.t.XSbQZZ
       };
       break;
     case 2:
       n = {
-        days: s.t.rLqNad,
-        hours: s.t.d1LvCA,
-        minutes: s.t.Z2LX7K
+        days: o.t.rLqNad,
+        hours: o.t.d1LvCA,
+        minutes: o.t.Z2LX7K
       };
       break;
     case 4:
       n = {
-        days: s.t.xQ3zuN,
-        hours: s.t.SFU7QN,
-        minutes: s.t.Y4FNdL
+        days: o.t.xQ3zuN,
+        hours: o.t.SFU7QN,
+        minutes: o.t.Y4FNdL
       };
       break;
     case 3:
       n = {
-        days: s.t.fYmirx,
-        hours: s.t["C3RO+g"],
-        minutes: s.t.r77oHc
+        days: o.t.fYmirx,
+        hours: o.t["C3RO+g"],
+        minutes: o.t.r77oHc
       };
       break;
     default:
       throw Error("Unknown messageType (".concat(t, ") when rendering time left"))
   }
-  let o = d((0, r.A)(e.toDate(), c)),
+  let s = d((0, r.A)(e.toDate(), c)),
     l = "";
   try {
-    l = (0, i.uN)(o, n)
+    l = (0, i.uN)(s, n)
   } catch (e) {
     a.A.captureMessage("Error trying to format string for fractional nitro duration pill")
   }

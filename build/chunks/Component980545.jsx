@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 980545, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 980545, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => E
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,73 +21,67 @@ var Chunk627968 = require("./627968.js"),
   Chunk608821 = require("./608821.js"),
   Chunk641701 = require("./641701.js");
 
-function b(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function O(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      b(e, t, n[t])
-    })
-  }
-  return e
-}
-let v = "https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png";
-
-function A(e) {
+function E(e) {
   let {
     inOldSettings: t = false
-  } = e, n = (0, l.Mw)((0, u.Ay)()), a = i.useMemo(() => ({
-    backgroundImage: "url(".concat(v, ")")
-  }), []), b = i.useCallback(() => {
-    (0, d.default)(), (0, h.navigateToQuestHome)({
+  } = e, n = (0, o.Mw)((0, d.Ay)()), l = i.useMemo(() => ({
+    backgroundImage: "url(".concat("https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png", ")")
+  }), []), E = i.useCallback(() => {
+    (0, u.default)(), (0, g.navigateToQuestHome)({
       fromContent: p.uF.QUEST_HOME_MOVE_CALLOUT
-    }), f.default.track(m.HAw.QUEST_CONTENT_CLICKED, O({
-      cta_name: _.Cy.VIEW_QUESTS,
-      click_id: (0, o.A)(),
+    }), _.default.track(A.HAw.QUEST_CONTENT_CLICKED, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({
+      cta_name: m.Cy.VIEW_QUESTS,
+      click_id: (0, a.A)(),
       is_targeted: false
-    }, (0, _.fF)(p.uF.QUEST_HOME_MOVE_CALLOUT)))
+    }, (0, m.fF)(p.uF.QUEST_HOME_MOVE_CALLOUT)))
   }, []);
   return (0, r.jsx)("div", {
-    className: s()(E.kL, {
-      [E.Zd]: t
+    className: s()(h.kL, {
+      [h.Zd]: t
     }),
-    style: a,
+    style: l,
     children: (0, r.jsxs)(c.BJc, {
-      className: E.FS,
+      className: h.FS,
       justify: "space-between",
       children: [(0, r.jsxs)(c.BJc, {
         gap: 4,
         children: [(0, r.jsxs)("div", {
-          className: E.N1,
+          className: h.N1,
           children: [(0, r.jsx)("img", {
             alt: "",
-            src: y,
-            className: E.Kk
+            src: b,
+            className: h.Kk
           }), (0, r.jsx)(c.Heading, {
             variant: "heading-lg/bold",
             color: "always-white",
-            children: g.intl.string(g.t.z8YP2A)
+            children: f.intl.string(f.t.z8YP2A)
           })]
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "text-subtle",
-          children: g.intl.string(g.t.HdKh65)
+          children: f.intl.string(f.t.HdKh65)
         })]
       }), (0, r.jsx)(c.Button, {
         variant: n ? "primary" : "overlay-primary",
-        text: g.intl.string(g.t.GURBQl),
-        onClick: b
+        text: f.intl.string(f.t.GURBQl),
+        onClick: E
       })]
     })
   })

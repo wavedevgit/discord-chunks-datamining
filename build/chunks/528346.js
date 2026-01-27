@@ -37,28 +37,28 @@ function f(e, t) {
     w = e.elements[A ? C : O],
     R = (0, r.A)((0, c.vq)(w) ? w : w.contextElement || (0, i.A)(e.elements.popper), g, y, h),
     P = (0, a.A)(e.elements.reference),
-    D = (0, s.A)({
+    D = (0, o.A)({
       reference: P,
       element: N,
       strategy: "absolute",
       placement: p
     }),
-    x = (0, o.A)(Object.assign({}, N, D)),
-    L = O === l.xf ? x : P,
-    j = {
-      top: R.top - L.top + T.top,
-      bottom: L.bottom - R.bottom + T.bottom,
-      left: R.left - L.left + T.left,
-      right: L.right - R.right + T.right
+    L = (0, s.A)(Object.assign({}, N, D)),
+    x = O === l.xf ? L : P,
+    M = {
+      top: R.top - x.top + T.top,
+      bottom: x.bottom - R.bottom + T.bottom,
+      left: R.left - x.left + T.left,
+      right: x.right - R.right + T.right
     },
-    M = e.modifiersData.offset;
-  if (O === l.xf && M) {
-    var k = M[p];
-    Object.keys(j).forEach(function(e) {
+    j = e.modifiersData.offset;
+  if (O === l.xf && j) {
+    var k = j[p];
+    Object.keys(M).forEach(function(e) {
       var t = [l.pG, l.sQ].indexOf(e) >= 0 ? 1 : false,
         n = [l.Mn, l.sQ].indexOf(e) >= 0 ? "y" : "x";
-      j[e] += k[n] * t
+      M[e] += k[n] * t
     })
   }
-  return j
+  return M
 }

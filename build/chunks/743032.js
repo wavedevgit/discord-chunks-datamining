@@ -1,20 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 743032, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 743032, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk797686 = require("./797686.js");
-
-function i(e) {
-  var t = e.length;
-  if ((Array.isArray(e) || "object" != typeof e && "function" != typeof e) && r(false), "number" != typeof t && r(false), 0 === t || t - 1 in e || r(false), "function" == typeof e.callee && r(false), e.hasOwnProperty) try {
-    return Array.prototype.slice.call(e)
-  } catch (e) {}
-  for (var n = Array(t), i = 0; i < t; i++) n[i] = e[i];
-  return n
-}
-
-function a(e) {
-  return !!e && ("object" == typeof e || "function" == typeof e) && "length" in e && !("setInterval" in e) && "number" != typeof e.nodeType && (Array.isArray(e) || "callee" in e || "item" in e)
-}
-module.exports = function(e) {
-  return a(e) ? Array.isArray(e) ? e.slice() : i(e) : [e]
+module.exports = function(t) {
+  if (!(t && ("object" == typeof t || "function" == typeof t) && "length" in t && !("setInterval" in t) && "number" != typeof t.nodeType && (Array.isArray(t) || "callee" in t || "item" in t))) return [t];
+  if (Array.isArray(t)) return t.slice();
+  var e = t.length;
+  if ((Array.isArray(t) || "object" != typeof t && "function" != typeof t) && n(false), "number" != typeof e && n(false), 0 === e || e - 1 in t || n(false), "function" == typeof t.callee && n(false), t.hasOwnProperty) try {
+    return Array.prototype.slice.call(t)
+  } catch (t) {}
+  for (var r = Array(e), i = 0; i < e; i++) r[i] = t[i];
+  return r
 }

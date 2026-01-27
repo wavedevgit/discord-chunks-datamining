@@ -100,14 +100,14 @@ class b extends(i = Chunk64700.PureComponent) {
     });
     null == r && null != document.body && (r = document.createElement("textarea"), document.body.appendChild(r));
     let {
-      paddingSize: s,
-      borderSize: o,
+      paddingSize: o,
+      borderSize: s,
       boxSizing: l,
       sizingStyle: c
     } = this.calculateNodeStyling(t);
     r.setAttribute("style", c + ";" + E), r.value = a, null != i ? r.setAttribute("rows", "".concat(i)) : r.removeAttribute("rows");
     let u = r.scrollHeight;
-    "border-box" === l ? u += o : "content-box" === l && (u -= s), this.setState({
+    "border-box" === l ? u += s : "content-box" === l && (u -= o), this.setState({
       height: u
     })
   }
@@ -162,12 +162,12 @@ class b extends(i = Chunk64700.PureComponent) {
       } = e,
       i = m(e, ["style", "className", "onResize"]);
     delete i.fontWidthEstimate;
-    let s = p({}, this.state, t);
+    let o = p({}, this.state, t);
     return (0, a.jsx)(u.vN3, {
       children: (0, a.jsx)("textarea", h(p({}, i), {
         className: l()(n, d.kw),
         ref: this.handleSetRef,
-        style: s,
+        style: o,
         onChange: this.handleChange
       }))
     })

@@ -1,7 +1,7 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 347805, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 }), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,31 +14,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk75945 = require("./75945.js");
 
-function m(e) {
+function f(e) {
   let {
     autoFocus: t = false,
     className: n,
-    userId: m,
-    onUpdate: f
-  } = e, A = (0, r.bG)([c.A], () => c.A.hidePersonalInformation), {
+    userId: f,
+    onUpdate: m
+  } = e, A = (0, r.bG)([d.A], () => d.A.hidePersonalInformation), {
     loading: x,
-    note: j
-  } = (0, a.A)(m), h = i.useRef(null);
+    note: g
+  } = (0, a.A)(f), j = i.useRef(null);
   return (i.useEffect(() => {
     if (!t || A) return;
-    let e = h.current;
+    let e = j.current;
     (null == e ? true : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
   }, [t, A]), A) ? null : (0, l.jsx)("div", {
     className: n,
     children: (0, l.jsx)(s.d4u, {
-      ref: h,
+      ref: j,
       className: p.P,
       disabled: x,
       placeholder: x ? u.intl.string(u.t["WLKx/9"]) : u.intl.string(u.t.VBhOe2),
       "aria-label": u.intl.string(u.t.PbMNh2),
       onBlur: e => {
         let t = e.currentTarget.value;
-        (null != j ? j : "") !== t && (null == f || f(), o.A.updateNote(m, t))
+        (null != g ? g : "") !== t && (null == m || m(), o.A.updateNote(f, t))
       },
       onKeyPress: e => {
         if (13 === e.which)
@@ -46,10 +46,10 @@ function m(e) {
             var t;
             (null != (t = e.currentTarget.value.match(/\n/g)) ? t : []).length >= 5 && e.preventDefault()
           } else e.preventDefault(), e.currentTarget.blur();
-        else e.which === d.Ks6.SPACE && e.stopPropagation()
+        else e.which === c.Ks6.SPACE && e.stopPropagation()
       },
-      defaultValue: null != j ? j : true,
-      maxLength: d.T7x
+      defaultValue: null != g ? g : true,
+      maxLength: c.T7x
     })
   })
 }

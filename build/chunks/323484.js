@@ -17,7 +17,7 @@ function d(e, t, n) {
   var d;
   let f = a.default.getUser(t),
     p = i.A.getChannel(n),
-    _ = null != (d = s.Ay.getName(null == p ? true : p.guild_id, null == p ? true : p.id, f)) ? d : o.Ay.getGlobalName(f);
+    _ = null != (d = o.Ay.getName(null == p ? true : p.guild_id, null == p ? true : p.id, f)) ? d : s.Ay.getGlobalName(f);
   switch (e) {
     case l.OB.IGNORE_SUCCESS:
       return c.intl.formatToPlainString(c.t["+joqrP"], {

@@ -9,7 +9,7 @@ var Chunk65412 = require("./65412.js"),
   Chunk287683 = require("./287683.js"),
   Chunk315069 = require("./315069.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,6 +33,6 @@ class l extends Chunk315069.A {
     })
   }
   constructor(e) {
-    super(), o(this, "id", true), o(this, "componentType", true), o(this, "properties", true), o(this, "promotionId", true), this.id = e.id, this.componentType = e.componentType, this.properties = e.properties, this.promotionId = e.promotionId
+    super(), s(this, "id", true), s(this, "componentType", true), s(this, "properties", true), s(this, "promotionId", true), this.id = e.id, this.componentType = e.componentType, this.properties = e.properties, this.promotionId = e.promotionId
   }
 }

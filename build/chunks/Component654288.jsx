@@ -51,7 +51,7 @@ let A = (e, t, n) => {
     }), {
       primaryColor: N,
       secondaryColor: w
-    } = (0, m.A)(null == C ? true : C.src), R = (0, a.bG)([o.default], () => o.default.locale), P = (0, h.A)(O.fg2.CRUNCHYROLL), D = (0, p.kR)(n.extra.media_assets_large_text), x = i.useCallback(e => {
+    } = (0, m.A)(null == C ? true : C.src), R = (0, a.bG)([s.default], () => s.default.locale), P = (0, h.A)(O.fg2.CRUNCHYROLL), D = (0, p.kR)(n.extra.media_assets_large_text), L = i.useCallback(e => {
       if (null != T && (null == C ? true : C.src) != null) return (0, _.z)({
         entry: n,
         mediaImageSrc: null == C ? true : C.src,
@@ -62,7 +62,7 @@ let A = (e, t, n) => {
         colors: [N, w],
         channelId: e
       })
-    }, [t, n, D, R, null == C ? true : C.src, N, w, T]), L = () => {
+    }, [t, n, D, R, null == C ? true : C.src, N, w, T]), x = () => {
       if (null == n.extra.url) return;
       let e = d.A.safeParseWithQuery(n.extra.url);
       null != e && null != e.protocol && null != e.hostname && (0, c.h)({
@@ -79,7 +79,7 @@ let A = (e, t, n) => {
         subtitle: n.extra.media_subtitle,
         headerIcons: (0, r.jsx)(b.A, {
           onClick: P,
-          Icon: s.kwD,
+          Icon: o.kwD,
           "aria-label": v.intl.string(v.t.jdJYXw)
         }),
         badges: (0, r.jsx)(E.mG, {
@@ -88,15 +88,15 @@ let A = (e, t, n) => {
             entry: n
           }, t))
         }),
-        onClickTitle: L,
-        onClickThumbnail: L
+        onClickTitle: x,
+        onClickThumbnail: x
       }), (0, r.jsx)(y.Eh, {
         children: (0, r.jsx)(y.fD, {
           onReaction: u,
           onVoiceChannelPreview: S,
           user: T,
           channel: t,
-          generateReactionImage: x,
+          generateReactionImage: L,
           reactionImageAltText: I(n, T),
           entry: n
         })

@@ -16,7 +16,7 @@ let d = e => {
   let {
     className: t,
     options: n
-  } = e, i = (0, s.bG)([c.A], () => (0, o.Mw)(c.A.theme));
+  } = e, i = (0, o.bG)([c.A], () => (0, s.Mw)(c.A.theme));
   return null == n ? null : null != n ? n.animated ? (0, r.jsx)(l.A, {
     src: n.getSrc(i),
     className: a()(u.O, t),

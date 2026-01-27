@@ -2,7 +2,7 @@
 /** chunk id: 894972, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => s
+  Ay: () => o
 });
 var Chunk315069 = require("./315069.js");
 
@@ -44,4 +44,4 @@ class a extends Chunk315069.A {
     super(), i(this, "userId", true), i(this, "subscriptionId", true), i(this, "oldCurrency", true), i(this, "oldPrice", true), i(this, "newCurrency", true), i(this, "newPrice", true), i(this, "priceChangeMode", true), i(this, "expectedChargeTime", true), i(this, "priceChangeId", true), this.userId = e.userId, this.subscriptionId = e.subscriptionId, this.oldCurrency = e.oldCurrency, this.oldPrice = e.oldPrice, this.newCurrency = e.newCurrency, this.newPrice = e.newPrice, this.priceChangeMode = e.priceChangeMode, this.expectedChargeTime = e.expectedChargeTime, this.priceChangeId = e.priceChangeId
   }
 }
-let s = a
+let o = a

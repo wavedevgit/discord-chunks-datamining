@@ -20,7 +20,7 @@ function f(e) {
     channelId: t
   } = e, n = (0, l.fE)(t);
   if (null == n) return "[".concat(u.intl.string(u.t.bz1PZX), "]");
-  let o = n.isMediaChannel() ? i.xfq : (0, s._U)(n.type);
+  let s = n.isMediaChannel() ? i.xfq : (0, o._U)(n.type);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.AC4, {
       children: (0, a.Ay)({
@@ -28,7 +28,7 @@ function f(e) {
       })
     }), (0, r.jsxs)("div", {
       "aria-hidden": true,
-      children: [null != o && (0, r.jsx)(o, {
+      children: [null != s && (0, r.jsx)(s, {
         className: d.K,
         "aria-hidden": true
       }), n.name]
@@ -45,6 +45,6 @@ function p(e) {
     case c.bN.INTANGIBLE:
       return e.name;
     default:
-      (0, o.xb)(e)
+      (0, s.xb)(e)
   }
 }

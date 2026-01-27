@@ -15,7 +15,7 @@ function l(e) {
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     i = arguments.length > 3 && true !== arguments[3] && arguments[3],
     a = c(i),
-    l = new s.W(a, new o.s(a)),
+    l = new o.W(a, new s.s(a)),
     u = new r.p(a, l),
     d = e(u, t, n);
   return u.receiveBackend(d), u

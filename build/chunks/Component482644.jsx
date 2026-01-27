@@ -8,7 +8,7 @@ require.r(exports), require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk280230 = require("./280230.js"),
   l = require.n(Chunk280230),
   Chunk397927 = require("./397927.js"),
@@ -79,9 +79,9 @@ let T = e => {
       children: n,
       className: r = null,
       styleSheet: a = {}
-    } = e, o = (0, c.$Il)(), l = parseInt(t, 10), u = o + (isNaN(l) ? 1 : l) - 1;
+    } = e, s = (0, c.$Il)(), l = parseInt(t, 10), u = s + (isNaN(l) ? 1 : l) - 1;
     return i.createElement("h".concat(u), {
-      className: s()(...S(a, r))
+      className: o()(...S(a, r))
     }, n)
   },
   C = null != Chunk46054.A ? Chunk46054.A.defaultRules : null,
@@ -90,14 +90,14 @@ let T = e => {
       parse(e, t, n) {
         let r, i = e[2],
           a = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
-          s = i.startsWith("/activities");
+          o = i.startsWith("/activities");
         return r = a ? e => {
           I(), (0, _.openUserSettings)(p.X.NITRO_PANEL, {
             section: m.nc_.PREMIUM
           }), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"
           }), (0, c.OoC)(g.lb), e.preventDefault()
-        } : s ? e => {
+        } : o ? e => {
           (0, f.pX)(i), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, y({}, h.default.getCampaignParams(i))), (0, u.bz)(), (0, c.OoC)(g.lb), e.preventDefault()
         } : () => {
           n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, y({

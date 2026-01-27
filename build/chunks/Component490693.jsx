@@ -101,8 +101,8 @@ class y extends(r = Chunk64700.PureComponent) {
         height: r,
         options: this.props
       })
-    }), p(this, "modalContext", (0, o.TId)(this.props.appContext)), p(this, "onCloseImage", () => {
-      (0, o.OoC)(d.K, this.modalContext)
+    }), p(this, "modalContext", (0, s.TId)(this.props.appContext)), p(this, "onCloseImage", () => {
+      (0, s.OoC)(d.K, this.modalContext)
     }), p(this, "onZoom", (e, t) => {
       let {
         zoomThumbnailPlaceholder: n,
@@ -112,7 +112,7 @@ class y extends(r = Chunk64700.PureComponent) {
       let {
         alt: i,
         src: a,
-        original: o,
+        original: s,
         width: l,
         height: c,
         animated: u,
@@ -137,9 +137,9 @@ class y extends(r = Chunk64700.PureComponent) {
         children: p,
         trigger: r,
         sourceMetadata: h,
-        original: null != o ? o : a
+        original: null != s ? s : a
       };
-      (0, s.vq)(e.currentTarget) && e.currentTarget.blur(), (0, d.R)({
+      (0, o.vq)(e.currentTarget) && e.currentTarget.blur(), (0, d.R)({
         onClose: this.onCloseImage,
         items: [y],
         shouldHideMediaOptions: _,

@@ -17,14 +17,14 @@ var Chunk311907 = require("./311907.js"),
 
 function f() {
   var e;
-  let t = (0, i.bG)([s.Ay], () => s.Ay.get("idle_status_indicator")),
+  let t = (0, i.bG)([o.Ay], () => o.Ay.get("idle_status_indicator")),
     n = (0, i.bG)([c.default], () => {
       var e, t;
       return null != (e = null == (t = c.default.getCurrentUser()) ? true : t.isStaff()) && e
     }),
     [f, p] = (0, i.yK)([l.A], () => [l.A.isIdle(), l.A.isAFK()]),
     _ = [];
-  return f || p || _.push("ACTIVE"), f && _.push("IDLE"), p && _.push("AFK"), n && t ? (0, r.jsx)(o.Ay, {
+  return f || p || _.push("ACTIVE"), f && _.push("IDLE"), p && _.push("AFK"), n && t ? (0, r.jsx)(s.Ay, {
     children: (0, r.jsxs)("div", {
       className: d.kL,
       children: [(0, r.jsxs)("div", {

@@ -8,7 +8,7 @@ var Chunk587993 = require("./587993.js"),
   Chunk305511 = require("./305511.js"),
   Chunk282179 = require("./282179.js"),
   Chunk628227 = require("./628227.js");
-class o {
+class s {
   constructor(e, t) {
     let n, r;
     n = e || new a.H, r = t || new a.H, this._stack = [{
@@ -51,9 +51,9 @@ class o {
 }
 
 function l() {
-  let e = (0, s.E)(),
-    t = (0, s.S)(e);
-  return t.stack = t.stack || new o((0, i.r)(), (0, i.q)())
+  let e = (0, o.E)(),
+    t = (0, o.S)(e);
+  return t.stack = t.stack || new s((0, i.r)(), (0, i.q)())
 }
 
 function c(e) {

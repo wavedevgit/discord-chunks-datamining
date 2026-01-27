@@ -1,4 +1,4 @@
-/** Chunk was on 67564 **/
+/** Chunk was on 41727 **/
 /** chunk id: 920437, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => q
@@ -235,7 +235,7 @@ class Y extends Chunk64700.PureComponent {
       (0, u.mMO)(async () => {
         let {
           default: e
-        } = await Promise.resolve().then(n.bind(n, 615715));
+        } = await Promise.all([n.e("84704"), n.e("45668")]).then(n.bind(n, 615715));
         return t => (0, r.jsx)(e, W({
           reason: S.d.GUILD_PHONE_REQUIRED
         }, t))

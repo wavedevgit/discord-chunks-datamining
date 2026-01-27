@@ -21,7 +21,7 @@ var Chunk110259 = require("./110259.js"),
 function h() {
   let {
     analyticsLocations: e
-  } = (0, o.Ay)();
+  } = (0, s.Ay)();
   (0, l.A)({
     name: i.ImpressionNames.CUSTOM_THEMES_PREVIEW_THEMES_BANNER,
     type: i.ImpressionTypes.VIEW,
@@ -44,11 +44,11 @@ function h() {
         alt: ""
       }), (0, r.jsxs)("div", {
         className: p.P_,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
           children: f.intl.string(d.default.XP4jzJ)
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
           children: f.intl.string(d.default.MJYvmG)

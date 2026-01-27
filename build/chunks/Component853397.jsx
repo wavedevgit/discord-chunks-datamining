@@ -73,7 +73,7 @@ function O(e) {
   } = (0, p.NJ)(), {
     analyticsLocations: v,
     newestAnalyticsLocation: A
-  } = (0, o.Ay)(s.A.USER_PROFILE_OVERFLOW_MENU), I = null != O && O.showGuildProfile ? n : true, S = {
+  } = (0, s.Ay)(o.A.USER_PROFILE_OVERFLOW_MENU), I = null != O && O.showGuildProfile ? n : true, S = {
     action: h.pt.PRESS_OPTIONS,
     icon: a.jNK,
     tooltipText: m.intl.string(m.t["UKOtz+"]),
@@ -152,7 +152,7 @@ function O(e) {
       })
     })]
   ];
-  return N.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.f5, {
+  return N.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.f5, {
     value: v,
     children: (0, r.jsx)(a.YNO, {
       targetElementRef: g,

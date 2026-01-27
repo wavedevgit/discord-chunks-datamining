@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 996522, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 996522, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk442433 = require("./442433.js"),
@@ -23,130 +22,112 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk868320 = require("./868320.js");
 
-function b(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function O(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      b(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function v(e) {
+function y(e) {
   let {
     message: t,
     compact: n
-  } = e, i = (0, s.bG)([u.A], () => u.A.getChannel(d.default.castMessageIdAsChannelId(t.id)));
-  return null == i ? null : (0, r.jsx)(A, {
+  } = e, i = (0, a.bG)([u.A], () => u.A.getChannel(d.default.castMessageIdAsChannelId(t.id)));
+  return null == i ? null : (0, r.jsx)(v, {
     channel: i,
     compact: n,
     isSystemMessage: (0, c.A)(t)
   })
 }
 
-function A(e) {
-  let {
-    channel: t,
-    compact: i,
-    isSystemMessage: c
-  } = e;
-
-  function u(e) {
-    e.stopPropagation(), (0, m.JA)(t, e.shiftKey)
-  }
-
-  function d(e) {
-    e.stopPropagation();
-    let n = !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey,
-      r = e.shiftKey && !(e.altKey || e.ctrlKey || e.metaKey);
-    (e.which === g.Ks6.SPACE || e.which === g.Ks6.ENTER) && (e.preventDefault(), (n || r) && (0, m.JA)(t, r))
-  }
-
-  function _(e) {
-    (0, l.L3)(e, async () => {
-      let {
-        default: e
-      } = await Promise.all([n.e("99011"), n.e("88974"), n.e("9282")]).then(n.bind(n, 44536));
-      return n => (0, r.jsx)(e, O({
+function v(e) {
+  var t, i;
+  let c, u, d, {
+      channel: y,
+      compact: v,
+      isSystemMessage: x
+    } = e,
+    O = (0, a.bG)([m.A], () => m.A.getCount(y.id)),
+    E = (t = y, c = (0, a.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), u = (0, a.bG)([m.A], () => m.A.getCount(t.id)), d = (0, f.JO)(t), (null == (i = t.threadMetadata) ? true : i.archived) ? b.intl.string(b.t.ZTo4HS) : null == u || 0 === u ? b.intl.string(b.t.HYtNyE) : null == c ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("span", {
+        children: b.intl.string(b.t.ZTo4HS)
+      }), (0, r.jsx)("span", {
+        className: A.vE,
+        children: (0, f.aK)(d)
+      })]
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(g.A, {
+        message: c,
         channel: t
-      }, n))
-    })
-  }
-  let h = (0, s.bG)([p.A], () => p.A.getCount(t.id)),
-    b = I(t),
-    v = null != h && h > 0;
+      }), (0, r.jsx)("span", {
+        className: A.vE,
+        children: (0, f.aK)(d)
+      })]
+    })),
+    j = null != O && O > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: a()(y.GI, {
-        [y.E]: !i,
-        [y.E_]: c
+      className: l()(A.GI, {
+        [A.E]: !v,
+        [A.E_]: x
       })
-    }), (0, r.jsx)(o.DUT, {
-      onClick: u,
-      onKeyDown: d,
-      onContextMenu: _,
-      "aria-roledescription": E.intl.string(E.t["8ipxiY"]),
-      className: a()(y.kL, {
-        [y.og]: c
+    }), (0, r.jsx)(s.DUT, {
+      onClick: function(e) {
+        e.stopPropagation(), (0, h.JA)(y, e.shiftKey)
+      },
+      onKeyDown: function(e) {
+        e.stopPropagation();
+        let t = !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey,
+          n = e.shiftKey && !(e.altKey || e.ctrlKey || e.metaKey);
+        (e.which === _.Ks6.SPACE || e.which === _.Ks6.ENTER) && (e.preventDefault(), (t || n) && (0, h.JA)(y, n))
+      },
+      onContextMenu: function(e) {
+        (0, o.L3)(e, async () => {
+          let {
+            default: e
+          } = await Promise.all([n.e("99011"), n.e("88974"), n.e("9282")]).then(n.bind(n, 44536));
+          return t => (0, r.jsx)(e, function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({
+            channel: y
+          }, t))
+        })
+      },
+      "aria-roledescription": b.intl.string(b.t["8ipxiY"]),
+      className: l()(A.kL, {
+        [A.og]: x
       }),
-      children: (0, r.jsxs)(o.RDc, {
+      children: (0, r.jsxs)(s.RDc, {
         children: [(0, r.jsxs)("div", {
-          className: y.kq,
-          children: [(0, r.jsx)(o.AC4, {
-            children: E.intl.string(E.t["7Xm5QI"])
+          className: A.kq,
+          children: [(0, r.jsx)(s.AC4, {
+            children: b.intl.string(b.t["7Xm5QI"])
           }), (0, r.jsx)("span", {
-            className: y.UU,
-            children: t.name
+            className: A.UU,
+            children: y.name
           }), (0, r.jsx)("span", {
-            className: y.lO,
-            "aria-hidden": !v,
-            children: (0, f.ub)(h, t.id)
+            className: A.lO,
+            "aria-hidden": !j,
+            children: (0, p.ub)(O, y.id)
           })]
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           "aria-hidden": true,
           lineClamp: 1,
           color: "text-default",
-          className: y.sb,
-          children: b
+          className: A.sb,
+          children: E
         })]
       })
-    })]
-  })
-}
-
-function I(e) {
-  var t;
-  let n = (0, s.bG)([p.A], () => p.A.getMostRecentMessage(e.id)),
-    i = (0, s.bG)([p.A], () => p.A.getCount(e.id)),
-    a = (0, _.JO)(e);
-  return (null == (t = e.threadMetadata) ? true : t.archived) ? E.intl.string(E.t.ZTo4HS) : null == i || 0 === i ? E.intl.string(E.t.HYtNyE) : null == n ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("span", {
-      children: E.intl.string(E.t.ZTo4HS)
-    }), (0, r.jsx)("span", {
-      className: y.vE,
-      children: (0, _.aK)(a)
-    })]
-  }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(h.A, {
-      message: n,
-      channel: e
-    }), (0, r.jsx)("span", {
-      className: y.vE,
-      children: (0, _.aK)(a)
     })]
   })
 }

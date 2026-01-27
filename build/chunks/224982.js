@@ -7,17 +7,17 @@ require.d(exports, {
 var Chunk355418 = require("./355418.js"),
   Chunk658809 = require("./658809.js"),
   Chunk996483 = require("./996483.js");
-let s = RegExp("(nu|idag|imorgon|\xf6vermorgon|ig\xe5r|f\xf6rrg\xe5r|i\\s*f\xf6rrg\xe5r)(?:\\s*(?:p\xe5\\s*)?(morgonen?|f\xf6rmiddagen?|middagen?|eftermiddagen?|kv\xe4llen?|natten?|midnatt))?(?=\\W|$)", "i"),
-  o = 1,
+let o = RegExp("(nu|idag|imorgon|\xf6vermorgon|ig\xe5r|f\xf6rrg\xe5r|i\\s*f\xf6rrg\xe5r)(?:\\s*(?:p\xe5\\s*)?(morgonen?|f\xf6rmiddagen?|middagen?|eftermiddagen?|kv\xe4llen?|natten?|midnatt))?(?=\\W|$)", "i"),
+  s = 1,
   l = 2;
 class c extends Chunk355418.c {
   innerPattern(e) {
-    return s
+    return o
   }
   innerExtract(e, t) {
     let n = e.refDate,
-      r = (t[o] || "").toLowerCase(),
-      s = (t[l] || "").toLowerCase(),
+      r = (t[s] || "").toLowerCase(),
+      o = (t[l] || "").toLowerCase(),
       c = e.createParsingComponents();
     switch (r) {
       case "nu":
@@ -40,7 +40,7 @@ class c extends Chunk355418.c {
         let f = new Date(n.getTime());
         f.setDate(f.getDate() - 2), (0, i.Pl)(c, f), (0, i.A4)(c, f)
     }
-    switch (s) {
+    switch (o) {
       case "morgon":
       case "morgonen":
         c.imply("hour", 6), c.imply("minute", 0), c.imply("second", 0), c.imply("millisecond", 0);
@@ -64,7 +64,7 @@ class c extends Chunk355418.c {
       case "natt":
       case "natten":
       case "midnatt":
-        "midnatt" === s ? c.imply("hour", 0) : c.imply("hour", 2), c.imply("minute", 0), c.imply("second", 0), c.imply("millisecond", 0)
+        "midnatt" === o ? c.imply("hour", 0) : c.imply("hour", 2), c.imply("minute", 0), c.imply("second", 0), c.imply("millisecond", 0)
     }
     return c
   }

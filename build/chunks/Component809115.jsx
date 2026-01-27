@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 809115, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 809115, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => p,
-  l: () => _
+  a: () => m,
+  l: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,18 +13,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk837921 = require("./837921.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk906135 = require("./906135.js");
-let f = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk397927.euF;
+let p = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk397927.euF;
 
-function p() {
+function m() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     [t, n] = i.useState(false),
-    r = (0, a.bG)([o.A], () => o.A.useReducedMotion),
-    s = i.useMemo(() => {
+    r = (0, l.bG)([s.A], () => s.A.useReducedMotion),
+    a = i.useMemo(() => {
       let n = t || !r && !e;
-      return (0, l.q)(n)
+      return (0, o.q)(n)
     }, [t, r, e]);
   return {
-    avatarSrc: s,
+    avatarSrc: a,
     eventHandlers: {
       onMouseEnter: i.useCallback(() => n(true), []),
       onMouseLeave: i.useCallback(() => n(false), [])
@@ -33,15 +32,15 @@ function p() {
   }
 }
 
-function _(e) {
+function f(e) {
   let {
     src: t
   } = e;
   return (0, r.jsx)("div", {
     className: d.H,
-    children: (0, r.jsx)(f, {
+    children: (0, r.jsx)(p, {
       src: t,
-      size: s._3J.SIZE_40,
+      size: a._3J.SIZE_40,
       "aria-label": u.intl.string(u.t.hG1StD)
     })
   })

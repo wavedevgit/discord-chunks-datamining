@@ -2,7 +2,7 @@
 /** chunk id: 25277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk650583 = require("./650583.js");
@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   switch (e) {
     case i.dh.ARROW_DOWN:
       return "ARROW_DOWN";
@@ -30,7 +30,7 @@ function s(e) {
       return null
   }
 }
-class o extends Chunk64700.Component {
+class s extends Chunk64700.Component {
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyDown, true)
   }
@@ -48,47 +48,47 @@ class o extends Chunk64700.Component {
     if (null == e) return;
     let a = t();
     if (null == a) return;
-    let s = this.getNext(a, r, i, e);
+    let o = this.getNext(a, r, i, e);
     this.setState({
-      focusedColumn: s.column,
-      focusedRow: s.row
+      focusedColumn: o.column,
+      focusedRow: o.row
     }, () => {
       let e = this.calculateFocusedItem();
       null != e && null != n && n(e)
     })
   }
   getNext(e, t, n, r) {
-    let i, a, s, o;
-    if (null == t || null == n) a = 0, s = 0, i = {
+    let i, a, o, s;
+    if (null == t || null == n) a = 0, o = 0, i = {
       column: 0,
       row: 0
     };
-    else switch (a = t, s = n, r) {
+    else switch (a = t, o = n, r) {
       case "ARROW_UP":
         i = {
           column: a,
-          row: Math.max(s - 1, 0)
+          row: Math.max(o - 1, 0)
         };
         break;
       case "ARROW_DOWN":
         i = {
           column: a,
-          row: Math.min(s + 1, e[a].length - 1)
+          row: Math.min(o + 1, e[a].length - 1)
         };
         break;
       case "ARROW_LEFT":
-        i = this.wrapPosition(e, a, s, false);
+        i = this.wrapPosition(e, a, o, false);
         break;
       case "ARROW_RIGHT":
-        i = this.wrapPosition(e, a, s, 1)
+        i = this.wrapPosition(e, a, o, 1)
     }
-    return null != i && (o = e[i.column][i.row]), (null == o || null == i) && (o = e[(i = {
+    return null != i && (s = e[i.column][i.row]), (null == s || null == i) && (s = e[(i = {
       column: a,
-      row: s
+      row: o
     }).column][i.row]), {
       column: i.column,
       row: i.row,
-      id: o
+      id: s
     }
   }
   calculateClosest(e, t) {
@@ -98,8 +98,8 @@ class o extends Chunk64700.Component {
     for (let e = 0; e < t.length; e++) {
       let a = this.props.getCoordsMap()[t[e]];
       if (null == a) continue;
-      let s = Math.abs(a.top - r.top);
-      if (s < i) i = s, n = e;
+      let o = Math.abs(a.top - r.top);
+      if (o < i) i = o, n = e;
       else break
     }
     return n
@@ -129,7 +129,7 @@ class o extends Chunk64700.Component {
         case i.dh.ARROW_UP:
         case i.dh.ARROW_LEFT:
         case i.dh.ARROW_RIGHT:
-          this.focusNext(s(e.key));
+          this.focusNext(o(e.key));
           break;
         case i.dh.ENTER:
           let n = this.calculateFocusedItem();
@@ -138,12 +138,12 @@ class o extends Chunk64700.Component {
     }), a(this, "wrapPosition", (e, t, n, r) => {
       var i;
       let a = e.length,
-        s = Math.max(n * a + t + r, 0) % a,
-        o = null != (i = this.calculateClosest(e[t][n], e[s])) ? i : n,
+        o = Math.max(n * a + t + r, 0) % a,
+        s = null != (i = this.calculateClosest(e[t][n], e[o])) ? i : n,
         l = 0;
-      return r < 0 && s > t && (l = false), r > 0 && s < t && (l = 1), {
-        column: s,
-        row: o + l
+      return r < 0 && o > t && (l = false), r > 0 && o < t && (l = 1), {
+        column: o,
+        row: s + l
       }
     })
   }

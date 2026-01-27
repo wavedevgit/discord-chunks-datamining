@@ -1,7 +1,7 @@
 /** Chunk was on 77759 **/
-/** chunk id: 331458, original params: e,t,r (module,exports,require) **/
+/** chunk id: 331458, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => O
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,22 +15,22 @@ var Chunk397927 = require("./397927.js"),
   Chunk884790 = require("./884790.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let f = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
+let O = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   let {
     guildId: t,
-    context: r,
-    onSelect: i
-  } = e, a = (0, b.A)(t, r), l = (0, s.A)(t, r), O = (0, u.A)(t, r);
-  return (0, n.jsxs)(o.W1t, {
+    context: n,
+    onSelect: a
+  } = e, u = (0, d.A)(t, n), o = (0, s.A)(t, n), b = (0, c.A)(t, n);
+  return (0, r.jsxs)(i.W1t, {
     "data-menu-migrated-auto": true,
     navId: "moderation-raid-context",
-    onClose: c.Z_,
-    "aria-label": p.intl.string(p.t.liqwPJ),
-    onSelect: i,
-    children: [(0, n.jsx)(o.rXV, {
-      children: l
-    }), (0, n.jsxs)(o.rXV, {
-      children: [O, a]
+    onClose: l.Z_,
+    "aria-label": f.intl.string(f.t.liqwPJ),
+    onSelect: a,
+    children: [(0, r.jsx)(i.rXV, {
+      children: o
+    }), (0, r.jsxs)(i.rXV, {
+      children: [b, u]
     })]
   })
 }, {

@@ -12,8 +12,8 @@ var Chunk64700 = require("./64700.js"),
 
 function l(e) {
   r.useEffect(() => {
-    a.bW.loadIfUncached(o.oD.FRECENCY_AND_FAVORITES_SETTINGS)
+    a.bW.loadIfUncached(s.oD.FRECENCY_AND_FAVORITES_SETTINGS)
   }, []);
-  let t = (0, i.bG)([s.Ay], () => s.Ay.getTopCommandsWithoutLoadingLatest());
-  return r.useMemo(() => (0, s.RG)(t, e), [t, e])
+  let t = (0, i.bG)([o.Ay], () => o.Ay.getTopCommandsWithoutLoadingLatest());
+  return r.useMemo(() => (0, o.RG)(t, e), [t, e])
 }

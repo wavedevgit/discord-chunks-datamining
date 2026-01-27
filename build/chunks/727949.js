@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 727949, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 727949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   GQ: () => d,
-  NF: () => _,
-  QG: () => p,
-  Tp: () => g,
-  ZR: () => f,
-  ne: () => h
+  NF: () => f,
+  QG: () => m,
+  Tp: () => h,
+  ZR: () => p,
+  ne: () => g
 });
 var Chunk311907 = require("./311907.js"),
   Chunk554146 = require("./554146.js"),
@@ -19,7 +18,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function d(e) {
-  let t = (e - Date.now()) / s.A.Millis.HOUR;
+  let t = (e - Date.now()) / a.A.Millis.HOUR;
   return t > 24 ? u.intl.formatToPlainString(u.t["g9s+dA"], {
     numDays: Math.floor(t / 24)
   }) : t >= 1 ? u.intl.formatToPlainString(u.t.k9v33y, {
@@ -28,28 +27,27 @@ function d(e) {
     numMinutes: Math.floor(60 * t)
   })
 }
-let f = () => (0, a.k8)(i.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
-  p = () => {
-    (0, a.Dr)(i.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
+let p = () => (0, l.k8)(i.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
+  m = () => {
+    (0, l.Dr)(i.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
   },
-  _ = e => {
+  f = e => {
     let {
       trialOffer: t
     } = e;
     if (null == t) returnfalse;
     let n = true !== t.referrer_id,
       r = true === t.redeemed_at,
-      i = new Date(o.default.extractTimestamp(t.id)),
-      a = new Date >= i;
-    return n && r && a
+      i = new Date(s.default.extractTimestamp(t.id)),
+      l = new Date;
+    return n && r && l >= i
+  },
+  g = () => {
+    (0, l.Dr)(i.M.REFERRAL_PROGRAM_POPOVER)
   },
   h = () => {
-    (0, a.Dr)(i.M.REFERRAL_PROGRAM_POPOVER)
-  },
-  m = () => (0, a.k8)(i.M.REFERRAL_PROGRAM_POPOVER),
-  g = () => {
     let e = (0, c.m)(false),
-      t = m(),
-      n = (0, r.bG)([l.A], () => l.A.getReferralsRemaining());
+      t = (0, l.k8)(i.M.REFERRAL_PROGRAM_POPOVER),
+      n = (0, r.bG)([o.A], () => o.A.getReferralsRemaining());
     return e && false === t && null !== n && n > 0
   }

@@ -104,7 +104,7 @@ async function E(e) {
     metadata: _
   };
   try {
-    let e = await s.Bo.post({
+    let e = await o.Bo.post({
       url: d.Rsh.BILLING_SUBSCRIPTIONS_PREVIEW,
       body: g,
       oldFormErrors: true,
@@ -112,7 +112,7 @@ async function E(e) {
     });
     return l.A.createInvoiceFromServer(e.body)
   } catch (e) {
-    throw new o.Ey(e)
+    throw new s.Ey(e)
   }
 }
 async function y(e) {
@@ -144,7 +144,7 @@ async function y(e) {
     user_discount_offer_id: g
   };
   try {
-    let e = await s.Bo.patch({
+    let e = await o.Bo.patch({
       url: d.Rsh.BILLING_SUBSCRIPTION_PREVIEW(t),
       query: {
         location: _,
@@ -156,7 +156,7 @@ async function y(e) {
     });
     return l.A.createInvoiceFromServer(e.body)
   } catch (e) {
-    throw new o.Ey(e)
+    throw new s.Ey(e)
   }
 }
 async function b(e) {
@@ -165,7 +165,7 @@ async function b(e) {
     skuId: n,
     subscriptionPlanId: r,
     currency: i,
-    loadId: s
+    loadId: o
   } = e;
   a()(n, "SKU ID is missing for one time purchase gift invoice preview");
   let c = {
@@ -173,7 +173,7 @@ async function b(e) {
     payment_source_id: t,
     sku_subscription_plan_id: r,
     currency: i,
-    load_id: s
+    load_id: o
   };
   try {
     let e = await (0, u.aP)({
@@ -184,7 +184,7 @@ async function b(e) {
     });
     return l.A.createInvoiceFromServer(e.body)
   } catch (e) {
-    throw new o.Ey(e)
+    throw new s.Ey(e)
   }
 }
 async function O(e) {
@@ -193,7 +193,7 @@ async function O(e) {
     preventFetch: n
   } = e;
   if (n) return null;
-  let r = await s.Bo.get({
+  let r = await o.Bo.get({
     url: d.Rsh.BILLING_SUBSCRIPTION_INVOICE(t),
     oldFormErrors: true,
     rejectWithError: false
@@ -204,22 +204,22 @@ async function O(e) {
 function v(e, t) {
   let {
     preventFetch: n = false
-  } = e, [i, a] = (0, r.useState)(null), [s, o] = (0, r.useState)(null);
+  } = e, [i, a] = (0, r.useState)(null), [o, s] = (0, r.useState)(null);
   return (0, r.useEffect)(() => {
     let e = false;
     async function r() {
       try {
-        o(null), a(null);
+        s(null), a(null);
         let n = await t();
         e || a(n)
       } catch (t) {
-        e || o(t)
+        e || s(t)
       }
     }
     return n || r(), () => {
       e = true
     }
-  }, [n, t]), [i, s]
+  }, [n, t]), [i, o]
 }
 
 function A(e) {

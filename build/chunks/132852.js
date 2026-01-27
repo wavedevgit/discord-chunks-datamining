@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 132852, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   kL: "container_fa285e",
   n2: "guildBadge_fa285e",

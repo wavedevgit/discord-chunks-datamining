@@ -62,14 +62,14 @@ class h {
 }
 class m {
   async startupLoad(e, t, n, r) {
-    let i = o.A.messages(e);
+    let i = s.A.messages(e);
     return new h(await i.getLatest(t, n, r))
   }
   async load(e, t, n) {
-    let r = s.A.getBasicChannel(t);
+    let r = o.A.getBasicChannel(t);
     if (null == t || null == r || !(0, u.c)(r)) return new h([]);
     {
-      let i = o.A.messages(e);
+      let i = s.A.messages(e);
       return new h(await i.getLatest(r.guild_id, t, n))
     }
   }
@@ -83,7 +83,7 @@ class m {
     for (let n of e.messages)(0, u.J)(n.channel_id) && this.insertStale(e.guildId, n.channel_id, n, t)
   }
   handleLoadMessagesSuccess(e, t) {
-    let n = s.A.getBasicChannel(e.channelId);
+    let n = o.A.getBasicChannel(e.channelId);
     null != n && (0, u.J)(e.channelId) && (e.isAfter || e.isBefore || e.hasMoreAfter || !(e.limit > 5) ? this.upsertMany(n.guild_id, e.channelId, e.messages, t) : this.replaceChannel(n.guild_id, e.channelId, e.messages, t))
   }
   handleMessageDelete(e, t) {
@@ -100,43 +100,43 @@ class m {
   }
   resetInMemoryState() {}
   insertStale(e, t, n, i) {
-    let s = o.A.messagesTransaction(i),
+    let o = s.A.messagesTransaction(i),
       c = a.A.lastTimeConnectedChanged();
-    s.put(e, t, l.B.fromMessage(e, t, n, c), r.hh.Skip)
+    o.put(e, t, l.B.fromMessage(e, t, n, c), r.hh.Skip)
   }
   upsertOne(e, t, n, i) {
-    let s = o.A.messagesTransaction(i),
+    let o = s.A.messagesTransaction(i),
       u = a.A.lastTimeConnectedChanged();
-    s.put(e, t, l.B.fromMessage(e, t, n, u), r.hh.Replace), s.trimChannel(e, t, c.Ay.saveLimit(t))
+    o.put(e, t, l.B.fromMessage(e, t, n, u), r.hh.Replace), o.trimChannel(e, t, c.Ay.saveLimit(t))
   }
   upsertMany(e, t, n, r) {
-    let i = o.A.messagesTransaction(r),
-      s = a.A.lastTimeConnectedChanged();
-    for (let r of n) i.put(e, t, l.B.fromMessage(e, t, r, s));
+    let i = s.A.messagesTransaction(r),
+      o = a.A.lastTimeConnectedChanged();
+    for (let r of n) i.put(e, t, l.B.fromMessage(e, t, r, o));
     i.trimChannel(e, t, c.Ay.saveLimit(t))
   }
   replaceChannel(e, t, n, r) {
-    let i = o.A.messagesTransaction(r),
-      s = a.A.lastTimeConnectedChanged(),
+    let i = s.A.messagesTransaction(r),
+      o = a.A.lastTimeConnectedChanged(),
       u = c.Ay.saveLimit(t),
-      d = (n.length > u ? n.slice(n.length - u) : n).map(n => l.B.fromMessage(e, t, n, s));
+      d = (n.length > u ? n.slice(n.length - u) : n).map(n => l.B.fromMessage(e, t, n, o));
     i.replaceChannel(e, t, d), i.trimChannel(e, t, c.Ay.saveLimit(t))
   }
   async updateOne(e, t, n, r) {
     if (null == n.id) return void _.warn("updateOne: message.id is null; cannot update a message if we do not know its id.");
-    let i = o.A.messages(r.database),
-      s = await i.get(e, t, n.id),
+    let i = s.A.messages(r.database),
+      o = await i.get(e, t, n.id),
       c = a.A.lastTimeConnectedChanged();
-    null != s && i.put(e, t, l.B.fromMessage(e, t, p({}, s.message, n), c))
+    null != o && i.put(e, t, l.B.fromMessage(e, t, p({}, o.message, n), c))
   }
   deleteOne(e, t, n, r) {
-    o.A.messagesTransaction(r).deleteMessage(e, t, n)
+    s.A.messagesTransaction(r).deleteMessage(e, t, n)
   }
   deleteChannel(e, t, n) {
-    o.A.messagesTransaction(n).deleteChannel(e, t)
+    s.A.messagesTransaction(n).deleteChannel(e, t)
   }
   deleteGuild(e, t) {
-    o.A.messagesTransaction(t).deleteGuild(e)
+    s.A.messagesTransaction(t).deleteGuild(e)
   }
   constructor() {
     f(this, "actions", {

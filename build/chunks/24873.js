@@ -2,7 +2,7 @@
 /** chunk id: 24873, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N9: () => o,
+  N9: () => s,
   jL: () => c,
   jU: () => l
 }), require("./801541.js");
@@ -10,7 +10,7 @@ var Chunk889137 = require("./889137.js"),
   Chunk652215 = require("./652215.js"),
   Chunk790782 = require("./790782.js"),
   Chunk985018 = require("./985018.jsx"),
-  o = function(e) {
+  s = function(e) {
     return e.ALL_MESSAGES = "all_messages", e.MENTIONS = "mentions", e.NOTHING = "nothing", e.CUSTOM = "custom", e
   }({});
 
@@ -19,5 +19,5 @@ function l(e, t) {
 }
 
 function c(e) {
-  return (0, r.YW)(e).with("all_messages", () => s.intl.string(s.t.hZrr6k)).with("mentions", () => s.intl.string(s.t.y59NJm)).with("nothing", () => s.intl.string(s.t["pGn/bJ"])).with("custom", () => s.intl.string(s.t["32yow9"])).exhaustive()
+  return (0, r.YW)(e).with("all_messages", () => o.intl.string(o.t.hZrr6k)).with("mentions", () => o.intl.string(o.t.y59NJm)).with("nothing", () => o.intl.string(o.t["pGn/bJ"])).with("custom", () => o.intl.string(o.t["32yow9"])).exhaustive()
 }

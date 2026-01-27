@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 446958, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 82220 **/
+/** chunk id: 446958, original params: e,n,t (module,exports,require) **/
 module.exports = {
   Nb: "featureBorder__65c15",
   wU: "premiumFeatureBorder__65c15 featureBorder__65c15",

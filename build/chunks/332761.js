@@ -2,14 +2,14 @@
 /** chunk id: 332761, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  s: () => s
+  s: () => o
 });
 var Chunk966209 = require("./966209.js"),
   Chunk260431 = require("./260431.js"),
   Chunk404108 = require("./404108.js");
 
-function s(e, t, n) {
-  var s, o;
+function o(e, t, n) {
+  var o, s;
   let {
     node: l,
     isVirtualized: c,
@@ -30,7 +30,7 @@ function s(e, t, n) {
     ref: n,
     isVirtualized: c,
     shouldSelectOnPressUp: p || u,
-    onAction: _ || (null == l || null == (s = l.props) ? true : s.onAction) ? (0, i.c)(null == l || null == (o = l.props) ? true : o.onAction, _) : true,
+    onAction: _ || (null == l || null == (o = l.props) ? true : o.onAction) ? (0, i.c)(null == l || null == (s = l.props) ? true : s.onAction, _) : true,
     isDisabled: 0 === t.collection.size
   }), g = t.selectionManager.isSelected(l.key), E = {
     role: "row",

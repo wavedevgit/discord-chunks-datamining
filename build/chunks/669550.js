@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 669550, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 669550, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => E,
-  KA: () => g,
-  jL: () => m
+  Ay: () => m,
+  KA: () => p,
+  jL: () => _
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk839214 = require("./839214.js"),
@@ -14,110 +13,95 @@ var Chunk64700 = require("./64700.js"),
   Chunk236077 = require("./236077.js"),
   Chunk478686 = require("./478686.js"),
   Chunk124059 = require("./124059.js");
-
-function d(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function f(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      d(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function p(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let h = (0, Chunk839214.D)(() => ({
+let u = (0, Chunk839214.D)(() => ({
   enabled: false
 }));
 
-function m(e) {
-  h.setState({
+function _(e) {
+  u.setState({
     enabled: e
   })
 }
 
-function g() {
-  return h.useField("enabled")
+function p() {
+  return u.useField("enabled")
 }
 
-function E(e, t) {
-  let n = r.useMemo(() => (0, o.hl)(e), [e]),
-    i = (0, a.PH)(),
+function m(e, t) {
+  let n = r.useMemo(() => (0, a.hl)(e), [e]),
+    i = (0, l.PH)(),
     {
-      searchResults: u
+      searchResults: d
     } = (0, s.V)(),
-    d = new Set;
-  for (let e of u) {
+    u = new Set;
+  for (let e of d) {
     let t = e;
     for (; null != t;) {
-      var p;
-      let e = null == (p = i[t]) ? true : p.parent;
+      var _;
+      let e = null == (_ = i[t]) ? true : _.parent;
       if (null == e) {
-        d.add(t);
+        u.add(t);
         break
       }
       t = e
     }
   }
-  let h = y(n, null != t ? t : "", d),
-    m = y(n, "", d);
+  let p = g(n, null != t ? t : "", u),
+    m = g(n, "", u);
   return r.useMemo(() => {
-    var e;
-    let t = new l.A,
-      r = new l.A;
-    return (0, c.A)(n, m, r), {
-      node: null != (e = (0, c.A)(n, h, t)) ? e : _(f({}, n), {
+    var e, t, r;
+    let i = new o.A,
+      l = new o.A;
+    return (0, c.A)(n, m, l), {
+      node: null != (e = (0, c.A)(n, p, i)) ? e : (t = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({}, n), r = r = {
         layout: []
-      }),
-      visibleDirectory: t,
-      accessibleDirectory: r
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+      }), t),
+      visibleDirectory: i,
+      accessibleDirectory: l
     }
-  }, [h, m, n])
+  }, [p, m, n])
 }
 
-function y(e, t, n) {
-  let i = g(),
-    a = (0, u.A)(e, t, {
+function g(e, t, n) {
+  let i = p(),
+    l = (0, d.A)(e, t, {
       legacyMatches: n,
       bypassPredicates: i
     }),
-    [s, o] = r.useState(a),
-    l = b(s, a);
+    [s, a] = r.useState(l),
+    o = function(e, t) {
+      if (e.size !== t.size) returntrue;
+      for (let n of e)
+        if (!t.has(n)) returntrue;
+      returnfalse
+    }(s, l);
   return r.useEffect(() => {
-    l && o(a)
-  }, [l, a]), s
-}
-
-function b(e, t) {
-  if (e.size !== t.size) returntrue;
-  for (let n of e)
-    if (!t.has(n)) returntrue;
-  returnfalse
+    o && a(l)
+  }, [o, l]), s
 }

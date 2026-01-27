@@ -1,47 +1,44 @@
-/** Chunk was on web.js **/
-/** chunk id: 597864, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 597864, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => s
+  B: () => a
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk314582 = require("./314582.js");
 
-function s(e) {
+function a(e) {
   let {
     choiceId: t,
     choice: n,
-    isSelected: s,
-    onSelectionChange: o,
-    inputType: l,
+    isSelected: a,
+    onSelectionChange: s,
+    inputType: o,
     textInputValue: c,
     onTextInputChange: u
-  } = e, d = "true" === n.TextEntry, f = "choice-label-".concat(t), p = () => {
-    o(t)
-  }, _ = e => {
-    s || o(t), null == u || u(t, e)
-  };
+  } = e, d = "true" === n.TextEntry, p = "choice-label-".concat(t);
   return (0, r.jsxs)("div", {
-    className: a.NV,
+    className: l.NV,
     children: [(0, r.jsxs)(i.DUT, {
-      className: a.d,
-      onClick: p,
-      role: l,
-      "aria-checked": s,
-      "aria-labelledby": f,
+      className: l.d,
+      onClick: () => {
+        s(t)
+      },
+      role: o,
+      "aria-checked": a,
+      "aria-labelledby": p,
       children: [(0, r.jsx)("div", {
-        className: a.jl,
-        children: "radio" === l ? (0, r.jsx)(i.TN6, {
+        className: l.jl,
+        children: "radio" === o ? (0, r.jsx)(i.TN6, {
           disabled: false,
-          checked: s
+          checked: a
         }) : (0, r.jsx)(i.P7L, {
           disabled: false,
-          checked: s
+          checked: a
         })
       }), (0, r.jsx)(i.Text, {
-        id: f,
+        id: p,
         variant: "text-md/normal",
         color: "text-subtle",
         children: (0, r.jsx)("div", {
@@ -51,11 +48,13 @@ function s(e) {
         })
       })]
     }), d && (0, r.jsx)("div", {
-      className: a.Vi,
+      className: l.Vi,
       children: (0, r.jsx)(i.ksK, {
         value: null != c ? c : "",
-        onChange: _,
-        disabled: !s
+        onChange: e => {
+          a || s(t), null == u || u(t, e)
+        },
+        disabled: !a
       })
     })]
   })

@@ -61,7 +61,7 @@ function h(e, t, n) {
       disallowTypeAhead: m,
       escapeKeyBehavior: A
     }),
-    P = (0, o.Bi)(e.id);
+    P = (0, s.Bi)(e.id);
   i.B.set(t, {
     keyboardDelegate: w,
     actions: {
@@ -70,33 +70,33 @@ function h(e, t, n) {
     },
     shouldSelectOnPressUp: I
   });
-  let D = (0, s.m)({
+  let D = (0, o.m)({
       selectionManager: S,
       hasItemActions: !!(O || v)
     }),
-    x = (0, l.$)(e, {
+    L = (0, l.$)(e, {
       labelable: true
     }),
-    L = (0, u.useCallback)(e => {
+    x = (0, u.useCallback)(e => {
       if (S.isFocused) {
         e.currentTarget.contains(e.target) || S.setFocused(false);
         return
       }
       e.currentTarget.contains(e.target) && S.setFocused(true)
     }, [S]),
-    j = (0, u.useMemo)(() => ({
+    M = (0, u.useMemo)(() => ({
       onBlur: R.onBlur,
-      onFocus: L
-    }), [L, R.onBlur]),
-    M = (0, p.$)(n, {
+      onFocus: x
+    }), [x, R.onBlur]),
+    j = (0, p.$)(n, {
       isDisabled: 0 !== t.collection.size
     }),
-    k = (0, c.v)(x, {
+    k = (0, c.v)(L, {
       role: "grid",
       id: P,
       "aria-multiselectable": "multiple" === S.selectionMode ? "true" : true
-    }, t.isKeyboardNavigationDisabled ? j : R, 0 === t.collection.size && {
-      tabIndex: M ? false : 0
+    }, t.isKeyboardNavigationDisabled ? M : R, 0 === t.collection.size && {
+      tabIndex: j ? false : 0
     } || true, D);
   return h && (k["aria-rowcount"] = t.collection.size, k["aria-colcount"] = t.collection.columnCount), (0, a.H)({
     getRowText: b

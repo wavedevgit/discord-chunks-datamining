@@ -55,7 +55,7 @@ function R(e, t) {
 }
 
 function P(e) {
-  if (S.has(e) || e === g.X1.GAME_PROFILE_FEED && (!(0, o.L0)("ContentInventoryManager") || true !== m.A.getFeed(e))) returnfalse;
+  if (S.has(e) || e === g.X1.GAME_PROFILE_FEED && (!(0, s.L0)("ContentInventoryManager") || true !== m.A.getFeed(e))) returnfalse;
   if (e === v) {
     if (!(0, p.VS)("ContentInventoryManager") || h.A.hidden && null != m.A.getFeed(e) || !d.A.isFocused() || !l.A.isConnected()) returnfalse;
     let t = u.A.getIdleSince();
@@ -72,7 +72,7 @@ function D(e) {
   true !== t && (clearTimeout(t), I.delete(e))
 }
 
-function x() {
+function L() {
   var e;
   let t = null != (e = T.get(v)) ? e : 0;
   if (t > 0 && t <= b || (D(v), !P(v))) return;
@@ -83,12 +83,12 @@ function x() {
   R(v, {
     loading: false,
     nextFetchDate: new Date(Date.now() + a)
-  }), I.set(v, setTimeout(() => L({
+  }), I.set(v, setTimeout(() => x({
     feedId: v,
     feature: i.M.INBOX
   }), a))
 }
-async function L(e) {
+async function x(e) {
   let {
     feedId: t,
     feature: n,
@@ -110,13 +110,13 @@ async function L(e) {
       feed: r
     }), T.set(t, 0), S.delete(t), R(t, {
       loading: false
-    }), t === v && (C = null, x())
-  } catch (s) {
+    }), t === v && (C = null, L())
+  } catch (o) {
     var i;
     let e = null != (i = T.get(t)) ? i : 0;
     if (e < b) {
       let i = f.A.Millis.MINUTE * Math.pow(2, e) + w(e);
-      I.set(t, setTimeout(() => L({
+      I.set(t, setTimeout(() => x({
         feedId: t,
         feature: n,
         force: r
@@ -129,12 +129,12 @@ async function L(e) {
   }
 }
 
-function j() {
-  x()
+function M() {
+  L()
 }
 
-function M() {
-  j()
+function j() {
+  M()
 }
 
 function k() {
@@ -146,7 +146,7 @@ function U(e) {
     feedId: t,
     feature: n
   } = e;
-  D(t), L({
+  D(t), x({
     feedId: t,
     feature: n,
     force: true
@@ -157,10 +157,10 @@ function G(e) {
   let {
     refreshAfterMs: t
   } = e, n = m.A.getFeed(v);
-  (null == n ? true : n.refresh_stale_inbox_after_ms) == null || (C = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), x())
+  (null == n ? true : n.refresh_stale_inbox_after_ms) == null || (C = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), L())
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     connectionId: n,
@@ -169,8 +169,8 @@ function V(e) {
   null == n || (null == (t = c.A.getAccount(n, E.fg2.SPOTIFY)) ? true : t.showActivity) && N(n, r)
 }
 
-function F() {
-  L({
+function V() {
+  x({
     feedId: g.X1.GLOBAL_FEED,
     feature: i.M.GAME_PROFILE
   })
@@ -178,15 +178,15 @@ function F() {
 class B extends Chunk439372.A {
   constructor(...e) {
     super(...e), y(this, "actions", {
-      POST_CONNECTION_OPEN: M,
+      POST_CONNECTION_OPEN: j,
       CONNECTION_CLOSED: k,
-      WINDOW_FOCUS: j,
-      IDLE: j,
-      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: j,
+      WINDOW_FOCUS: M,
+      IDLE: M,
+      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: M,
       CONTENT_INVENTORY_MANUAL_REFRESH: U,
       CONTENT_INVENTORY_INBOX_STALE: G,
-      SPOTIFY_NEW_TRACK: V,
-      GAME_PROFILE_OPEN: F
+      SPOTIFY_NEW_TRACK: F,
+      GAME_PROFILE_OPEN: V
     })
   }
 }

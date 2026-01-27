@@ -51,14 +51,14 @@ let f = new Map,
   p = new Map;
 
 function _(e) {
-  return [o.I9, e.query, o.OR, e.categoryId, o.O3, e.languageCode].join("-")
+  return [s.I9, e.query, s.OR, e.categoryId, s.O3, e.languageCode].join("-")
 }
 class h {
   handleSearchStart() {
     this.error = null, this.isFetching = true
   }
   handleSearchFailure(e) {
-    this.isFetching = false, this.isInitialFetchComplete = true, this.error = new s.LG(e)
+    this.isFetching = false, this.isInitialFetchComplete = true, this.error = new o.LG(e)
   }
   handleSearchSuccess(e) {
     let {

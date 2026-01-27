@@ -82,7 +82,7 @@ function w(e) {
     application: n,
     location: i,
     sectionName: a,
-    commandName: o,
+    commandName: s,
     autoDismissOnClick: _ = true,
     launchingComponentId: h,
     submitting: m = false,
@@ -92,7 +92,7 @@ function w(e) {
     context: t,
     applicationId: n.id,
     fetchesApplication: g
-  }), C = (0, O.G)(T), N = (0, s.bG)([y.A], () => y.A.entrypoint()), w = r.useMemo(() => {
+  }), C = (0, O.G)(T), N = (0, o.bG)([y.A], () => y.A.entrypoint()), w = r.useMemo(() => {
     var e, r, i;
     if ("channel" !== t.type) return null != (e = null == (r = n.bot) ? true : r.id) ? e : null == (i = (0, f.Sx)(t, n.id).descriptor) ? true : i.botId
   }, [t, n.id, n.bot]), R = (0, c.wK)({
@@ -119,7 +119,7 @@ function w(e) {
     source: N,
     fetchesApplication: g,
     onConfirmActivityLaunchChecksAlertOpen: I
-  }), P = "primary", D = null != o ? o : A.intl.string(A.t.zKX8Nu);
+  }), P = "primary", D = null != s ? s : A.intl.string(A.t.zKX8Nu);
   return C === c.o6.JOIN ? (P = "active", D = A.intl.string(A.t.d9PsMj)) : C !== c.o6.LEAVE || m || (P = "critical-primary", D = A.intl.string(A.t["Hi1/aQ"])), {
     onActivityItemSelected: R,
     activityAction: C,

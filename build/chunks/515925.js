@@ -5,9 +5,9 @@ require.d(exports, {
   G1: () => l,
   Ih: () => a,
   Oy: () => u,
-  kk: () => o,
+  kk: () => s,
   t7: () => c,
-  tR: () => s,
+  tR: () => o,
   uU: () => f,
   xd: () => i.x,
   xy: () => d
@@ -19,12 +19,12 @@ function a() {
   return (0, r.Ay)().ExperimentCacher
 }
 
-function s(e) {
+function o(e) {
   var t;
   return null != (t = (0, r.Ay)().BlockedDomainsStore.isBlockedDomain(e)) ? t : null
 }
 
-function o(e) {
+function s(e) {
   (0, r.Ay)().BlockedDomainsStore.startFetchingBlockedDomains(e)
 }
 

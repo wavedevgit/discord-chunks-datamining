@@ -1,24 +1,23 @@
-/** Chunk was on web.js **/
-/** chunk id: 886352, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 886352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk985018 = require("./985018.jsx"),
   Chunk71414 = require("./71414.js");
-let l = e => {
+let o = e => {
   let {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(o.T, t),
+    className: l()(s.T, t),
     children: (0, r.jsx)("span", {
-      className: o.Q,
-      children: s.intl.string(s.t["8IfYqa"])
+      className: s.Q,
+      children: a.intl.string(a.t["8IfYqa"])
     })
   })
 }

@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk927813 = require("./927813.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -58,10 +58,10 @@ function b() {
   let r = E ? y : u,
     i = new Set,
     a = new Set,
-    s = Date.now() - r,
-    o = null;
-  for (let [e, t] of p.itemImpressions) t < s ? i.add(e) : null == o && (o = t + r), a.add(e);
-  _ = i, h = a, m = null != o ? o : 1 / 0, g = true
+    o = Date.now() - r,
+    s = null;
+  for (let [e, t] of p.itemImpressions) t < o ? i.add(e) : null == s && (s = t + r), a.add(e);
+  _ = i, h = a, m = null != s ? s : 1 / 0, g = true
 }
 
 function O(e) {
@@ -110,7 +110,7 @@ class T extends(r = Chunk311907.Ay.PersistedStore) {
     p = f()
   }
 }
-o(T, "displayName", "ContentInventoryPersistedStore"), o(T, "persistKey", "ContentInventoryPersistedStore");
+s(T, "displayName", "ContentInventoryPersistedStore"), s(T, "persistKey", "ContentInventoryPersistedStore");
 let C = new T(Chunk73153.h, {
   CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS: O,
   CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS: v,

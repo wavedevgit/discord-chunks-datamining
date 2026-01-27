@@ -27,15 +27,15 @@ function a(e, t) {
   })(e, t)
 }
 
-function s(e) {
+function o(e) {
   var t = c();
   return function() {
     var n, r = u(e);
-    return n = t ? Reflect.construct(r, arguments, u(this).constructor) : r.apply(this, arguments), o(this, n)
+    return n = t ? Reflect.construct(r, arguments, u(this).constructor) : r.apply(this, arguments), s(this, n)
   }
 }
 
-function o(e, t) {
+function s(e, t) {
   return t && ("object" === r(t) || "function" == typeof t) ? t : l(e)
 }
 
@@ -101,11 +101,11 @@ var h = 10,
   }(),
   g = function(e) {
     i(n, e);
-    var t = s(n);
+    var t = o(n);
 
-    function n(e, r, i, a, s) {
-      var o;
-      return d(this, n), (o = t.call(this)).value = e, o.validateValue = r, o.setValue = i, o.priority = a, s && (o.subPriority = s), o
+    function n(e, r, i, a, o) {
+      var s;
+      return d(this, n), (s = t.call(this)).value = e, s.validateValue = r, s.setValue = i, s.priority = a, o && (s.subPriority = o), s
     }
     return p(n, [{
       key: "validate",
@@ -121,7 +121,7 @@ var h = 10,
   }(m),
   E = function(e) {
     i(n, e);
-    var t = s(n);
+    var t = o(n);
 
     function n() {
       var e;

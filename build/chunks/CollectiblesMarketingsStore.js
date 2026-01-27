@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,26 +15,26 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = {},
+let s = {},
   l = "NOT_FETCHED",
   c = () => {
     l = "FETCHING"
   },
   u = e => {
-    o = e.marketings.marketingsBySurfaces, l = "FETCHED"
+    s = e.marketings.marketingsBySurfaces, l = "FETCHED"
   },
   d = () => {
-    o = {}, l = "NOT_FETCHED"
+    s = {}, l = "NOT_FETCHED"
   };
 class f extends(r = Chunk311907.Ay.Store) {
   getMarketingBySurface(e) {
-    return o[e]
+    return s[e]
   }
   get fetchState() {
     return l
   }
 }
-s(f, "displayName", "CollectiblesMarketingsStore");
+o(f, "displayName", "CollectiblesMarketingsStore");
 let p = new f(Chunk73153.h, {
   COLLECTIBLES_MARKETING_FETCH: c,
   COLLECTIBLES_MARKETING_FETCH_SUCCESS: u,

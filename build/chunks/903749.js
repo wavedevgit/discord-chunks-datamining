@@ -44,6 +44,6 @@ var Chunk860500 = require("./860500.js");
 Object.defineProperty(exports, "stringFormatter", {
   enumerable: true,
   get: function() {
-    return s.stringFormatter
+    return o.stringFormatter
   }
 })

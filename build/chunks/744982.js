@@ -79,11 +79,11 @@ let v = b(E({}, Chunk114323.A), {
     let a = O(n);
     return null != a && a.cleanedQuery.length > 0
   },
-  queryResults(e, t, n, s, l) {
+  queryResults(e, t, n, o, l) {
     if (!c._3.getSetting()) return h.f;
     let u = O(n);
     if (null == u) return h.f;
-    let d = (0, o.Yn)(e, u.cleanedQuery),
+    let d = (0, s.Yn)(e, u.cleanedQuery),
       {
         commands: f,
         sections: p
@@ -124,19 +124,19 @@ let v = b(E({}, Chunk114323.A), {
       guild: r,
       channel: i,
       query: a,
-      options: s,
-      onHover: o,
+      options: o,
+      onHover: s,
       onClick: c
     } = e;
     return (0, p.GM)({
       query: a,
       selectedIndex: n,
       autocompletes: t,
-      onHover: o,
+      onHover: s,
       onClick: c,
       titleWithQuery: m.t.HFRoZR,
       titleWithoutQuery: m.intl.string(m.t["0hKkS+"]),
-      Component: s.commands === _.Ze.OLD_BUILT_INS ? l.Ay.Command : l.Ay.NewCommand,
+      Component: o.commands === _.Ze.OLD_BUILT_INS ? l.Ay.Command : l.Ay.NewCommand,
       getProps: e => {
         let {
           command: t,
@@ -167,15 +167,15 @@ let v = b(E({}, Chunk114323.A), {
       type: r,
       options: i,
       channel: a,
-      guild: o
+      guild: s
     } = e, l = h.A.onSelect({
       results: t,
       index: n,
       type: r,
       options: i,
       channel: a,
-      guild: o,
-      location: s.Oh.SUGGESTION
+      guild: s,
+      location: o.Oh.SUGGESTION
     });
     return null == l ? null : b(E({}, l), {
       type: _.kc.COMMAND_SUGGESTION

@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 119762, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 82575 **/
+/** chunk id: 119762, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Af: () => S,
-  Ay: () => T,
-  Ob: () => A,
-  jH: () => v
+  Af: () => T,
+  Ay: () => C,
+  Ob: () => f,
+  jH: () => E
 }), require("./228524.js"), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  r = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk793574 = require("./793574.js"),
@@ -27,237 +26,235 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk928344 = require("./928344.js");
 
-function v() {
-  return (0, r.jsx)(l.Text, {
+function E() {
+  return (0, i.jsx)(o.Text, {
     variant: "text-sm/normal",
-    className: O.h_,
-    children: b.intl.string(b.t.zZp618)
+    className: S.h_,
+    children: O.intl.string(O.t.zZp618)
   })
 }
 
-function A() {
+function f() {
   let {
     currentSession: e
-  } = (0, d.r)();
-  return null == e ? (0, r.jsx)("div", {
-    className: O.Lq,
-    children: (0, r.jsx)(l.y$y, {})
-  }) : (0, r.jsx)(l.nVY, {
-    label: b.intl.string(b.t.LLS19o),
-    children: (0, r.jsx)(C, {
+  } = (0, u.r)();
+  return null == e ? (0, i.jsx)("div", {
+    className: S.Lq,
+    children: (0, i.jsx)(o.y$y, {})
+  }) : (0, i.jsx)(o.nVY, {
+    label: O.intl.string(O.t.LLS19o),
+    children: (0, i.jsx)(y, {
       session: e,
       current: true
     })
   })
 }
 
-function I(e) {
+function v(e) {
   let {
     checked: t,
     otherSessions: n
   } = e;
-  return (0, r.jsx)(l.D0$, {
-    label: t.size > 0 ? b.intl.string(b.t.mMEmRO) : b.intl.string(b.t.Vij32M),
-    description: b.intl.string(b.t.OTXyaf),
-    children: (0, r.jsx)("div", {
+  return (0, i.jsx)(o.D0$, {
+    label: t.size > 0 ? O.intl.string(O.t.mMEmRO) : O.intl.string(O.t.Vij32M),
+    description: O.intl.string(O.t.OTXyaf),
+    children: (0, i.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: O.Cn,
-      children: (0, r.jsx)(l.Button, {
+      className: S.Cn,
+      children: (0, i.jsx)(o.Button, {
         variant: "critical-secondary",
         size: "sm",
-        text: t.size > 0 ? b.intl.formatToPlainString(b.t["83CPLj"], {
+        text: t.size > 0 ? O.intl.formatToPlainString(O.t["83CPLj"], {
           count: t.size
-        }) : b.intl.string(b.t.cLmmeY),
+        }) : O.intl.string(O.t.cLmmeY),
         onClick: () => {
-          t.size > 0 ? (0, u.U0)(Array.from(t)) : (0, u.U0)(n.map(e => e.id_hash))
+          t.size > 0 ? (0, d.U0)(Array.from(t)) : (0, d.U0)(n.map(e => e.id_hash))
         }
       })
     })
   })
 }
 
-function S() {
-  let e = (0, m.dk)("OtherSessionsSetting"),
+function T() {
+  let e = (0, A.dk)("OtherSessionsSetting"),
     {
       currentSession: t,
       otherSessions: n
-    } = (0, d.r)(),
-    a = (0, o.bG)([f.default], () => f.default.getCurrentUser()),
-    [s, c] = i.useState(new Set);
-  return null == t && 0 === n.length || 0 === n.length && (null == a ? true : a.mfaEnabled) || !(n.length > 0) && (null == a ? true : a.mfaEnabled) ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(l.nVY, {
-      label: b.intl.string(b.t.xx1MWc),
-      children: [n.map(e => (0, r.jsx)(C, {
+    } = (0, u.r)(),
+    l = (0, a.bG)([g.default], () => g.default.getCurrentUser()),
+    [r, c] = s.useState(new Set);
+  return null == t && 0 === n.length || 0 === n.length && (null == l ? true : l.mfaEnabled) || !(n.length > 0) && (null == l ? true : l.mfaEnabled) ? null : (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)(o.nVY, {
+      label: O.intl.string(O.t.xx1MWc),
+      children: [n.map(e => (0, i.jsx)(y, {
         session: e,
-        useChecks: s.size > 0,
-        checked: s.has(e.id_hash),
+        useChecks: r.size > 0,
+        checked: r.has(e.id_hash),
         setChecked: t => {
-          let n = new Set(s);
+          let n = new Set(r);
           t ? n.add(e.id_hash) : n.delete(e.id_hash), c(n)
         }
-      }, e.id_hash)), (null == a ? true : a.mfaEnabled) ? null : (0, r.jsx)(N, {})]
-    }), n.length > 0 && (e ? (0, r.jsx)("div", {
-      className: O.hI,
-      children: (0, r.jsx)(I, {
-        checked: s,
+      }, e.id_hash)), (null == l ? true : l.mfaEnabled) ? null : (0, i.jsx)(N, {})]
+    }), n.length > 0 && (e ? (0, i.jsx)("div", {
+      className: S.hI,
+      children: (0, i.jsx)(v, {
+        checked: r,
         otherSessions: n
       })
-    }) : (0, r.jsx)(I, {
-      checked: s,
+    }) : (0, i.jsx)(v, {
+      checked: r,
       otherSessions: n
     }))]
   })
 }
 
-function T() {
-  return i.useEffect(() => ((0, u.GY)(), () => {
-    (0, u.ZQ)()
-  }), []), (0, r.jsxs)(g.R, {
-    header: b.intl.string(b.t["+1h0k/"]),
-    children: [(0, r.jsx)(v, {}), (0, r.jsxs)(l.BJc, {
+function C() {
+  return s.useEffect(() => ((0, d.GY)(), () => {
+    (0, d.ZQ)()
+  }), []), (0, i.jsxs)(m.R, {
+    header: O.intl.string(O.t["+1h0k/"]),
+    children: [(0, i.jsx)(E, {}), (0, i.jsxs)(o.BJc, {
       gap: 24,
-      className: O.Mf,
-      children: [(0, r.jsx)(A, {}), (0, r.jsx)(S, {})]
+      className: S.Mf,
+      children: [(0, i.jsx)(f, {}), (0, i.jsx)(T, {})]
     })]
   })
 }
 
-function C(e) {
-  var t, n, i, a, o;
+function y(e) {
+  var t, n, s, l, a;
   let {
     session: c,
-    current: f,
-    setChecked: p,
-    checked: h,
-    useChecks: m
-  } = e, g = null != (t = null == (n = c.client_info) ? true : n.location) ? t : null == (i = c.client_info) ? true : i.ip, E = null == (a = c.client_info) ? true : a.platform, {
-    text: y,
-    icon: v
-  } = w(null == (o = c.client_info) ? true : o.os), A = f ? null : (0, d.Y)(c.approx_last_used_time), I = [y, E].filter(_.Vq), S = [g, A].filter(_.Vq);
-  return (0, r.jsxs)("div", {
-    className: s()(O.dZ, {
-      [O.gg]: f
+    current: g,
+    setChecked: h,
+    checked: p,
+    useChecks: A
+  } = e, m = null != (t = null == (n = c.client_info) ? true : n.location) ? t : null == (s = c.client_info) ? true : s.ip, j = null == (l = c.client_info) ? true : l.platform, {
+    text: b,
+    icon: E
+  } = function(e) {
+    switch (null == e ? true : e.toLowerCase().trim()) {
+      case null:
+      case true:
+      case "":
+        return {
+          text: O.intl.string(O.t.cDHCNY), icon: o.kN9
+        };
+      case "ios":
+      case "android":
+        return {
+          text: e, icon: o.u6o
+        };
+      case "horizon os":
+        return {
+          text: e, icon: o.G47
+        };
+      default:
+        return {
+          text: e, icon: o.kN9
+        }
+    }
+  }(null == (a = c.client_info) ? true : a.os), f = g ? null : (0, u.Y)(c.approx_last_used_time), v = [b, j].filter(x.Vq), T = [m, f].filter(x.Vq);
+  return (0, i.jsxs)("div", {
+    className: r()(S.dZ, {
+      [S.gg]: g
     }),
-    children: [(0, r.jsxs)("div", {
-      className: O.OC,
-      children: [(0, r.jsx)("div", {
-        className: O.km,
-        children: (0, r.jsx)(v, {
+    children: [(0, i.jsxs)("div", {
+      className: S.OC,
+      children: [(0, i.jsx)("div", {
+        className: S.km,
+        children: (0, i.jsx)(E, {
           size: "md",
           color: "currentColor"
         })
-      }), (0, r.jsxs)("div", {
-        className: O.F3,
-        children: [(0, r.jsxs)(l.Text, {
+      }), (0, i.jsxs)("div", {
+        className: S.F3,
+        children: [(0, i.jsxs)(o.Text, {
           variant: "eyebrow",
-          className: O.nT,
-          children: [(0, r.jsx)("span", {
-            children: I[0]
-          }), I.length > 1 && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)("span", {
+          className: S.nT,
+          children: [(0, i.jsx)("span", {
+            children: v[0]
+          }), v.length > 1 && (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)("span", {
               children: "\xb7"
-            }), (0, r.jsx)("span", {
-              children: I[1]
+            }), (0, i.jsx)("span", {
+              children: v[1]
             })]
           })]
-        }), (0, r.jsxs)(l.Text, {
+        }), (0, i.jsxs)(o.Text, {
           variant: "text-sm/medium",
-          className: O.nT,
-          children: [(0, r.jsx)("span", {
-            children: S[0]
-          }), S.length > 1 && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)("span", {
+          className: S.nT,
+          children: [(0, i.jsx)("span", {
+            children: T[0]
+          }), T.length > 1 && (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)("span", {
               children: "\xb7"
-            }), (0, r.jsx)("span", {
-              children: S[1]
+            }), (0, i.jsx)("span", {
+              children: T[1]
             })]
           })]
         })]
-      }), f ? null : m ? (0, r.jsx)("div", {
-        className: O.GR,
-        children: (0, r.jsx)(l.JuY, {
+      }), g ? null : A ? (0, i.jsx)("div", {
+        className: S.GR,
+        children: (0, i.jsx)(o.JuY, {
           onChange: e => {
-            null == p || p(e)
+            null == h || h(e)
           },
-          checked: h
+          checked: p
         })
-      }) : (0, r.jsx)(l.DUT, {
-        className: O.ux,
+      }) : (0, i.jsx)(o.DUT, {
+        className: S.ux,
         onClick: e => {
-          e.shiftKey ? null == p || p(true) : (0, u.U0)(c.id_hash)
+          e.shiftKey ? null == h || h(true) : (0, d.U0)(c.id_hash)
         },
-        "aria-label": b.intl.string(b.t.E4MJNt),
-        children: (0, r.jsx)(l.PGe, {
+        "aria-label": O.intl.string(O.t.E4MJNt),
+        children: (0, i.jsx)(o.PGe, {
           size: "md",
           color: "currentColor"
         })
       })]
-    }), !f && (0, r.jsx)(l.cGx, {
-      className: O.O9
+    }), !g && (0, i.jsx)(o.cGx, {
+      className: S.O9
     })]
   }, c.id_hash)
 }
 
 function N() {
-  return (0, r.jsxs)("div", {
-    className: s()(O.dZ, O.EC),
-    children: [(0, r.jsxs)("div", {
-      className: O.OC,
-      children: [(0, r.jsx)("div", {
-        className: O.km,
-        children: (0, r.jsx)(p.A, {
+  return (0, i.jsxs)("div", {
+    className: r()(S.dZ, S.EC),
+    children: [(0, i.jsxs)("div", {
+      className: S.OC,
+      children: [(0, i.jsx)("div", {
+        className: S.km,
+        children: (0, i.jsx)(h.A, {
           width: "32",
           height: "32"
         })
-      }), (0, r.jsxs)("div", {
-        className: O.F3,
-        children: [(0, r.jsx)(l.Text, {
+      }), (0, i.jsxs)("div", {
+        className: S.F3,
+        children: [(0, i.jsx)(o.Text, {
           variant: "eyebrow",
-          className: O.nT,
+          className: S.nT,
           color: "text-muted",
-          children: (0, r.jsx)("span", {
-            children: b.intl.string(b.t.iUa0sn)
+          children: (0, i.jsx)("span", {
+            children: O.intl.string(O.t.iUa0sn)
           })
-        }), (0, r.jsx)(l.Text, {
+        }), (0, i.jsx)(o.Text, {
           variant: "text-sm/medium",
-          className: O.nT,
+          className: S.nT,
           color: "text-muted",
-          children: (0, r.jsx)("span", {
-            children: b.intl.format(b.t["044+8i"], {
-              onClick: () => (0, E.openUserSettings)(h.X.ACCOUNT_PANEL, {
-                section: y.nc_.ACCOUNT,
+          children: (0, i.jsx)("span", {
+            children: O.intl.format(O.t["044+8i"], {
+              onClick: () => (0, j.openUserSettings)(p.X.ACCOUNT_PANEL, {
+                section: b.nc_.ACCOUNT,
                 analyticsLocations: [c.A.USER_SETTINGS_SESSIONS]
               })
             })
           })
         })]
       })]
-    }), (0, r.jsx)("div", {
-      className: O.O9
+    }), (0, i.jsx)("div", {
+      className: S.O9
     })]
   })
-}
-
-function w(e) {
-  switch (null == e ? true : e.toLowerCase().trim()) {
-    case null:
-    case true:
-    case "":
-      return {
-        text: b.intl.string(b.t.cDHCNY), icon: l.kN9
-      };
-    case "ios":
-    case "android":
-      return {
-        text: e, icon: l.u6o
-      };
-    case "horizon os":
-      return {
-        text: e, icon: l.G47
-      };
-    default:
-      return {
-        text: e, icon: l.kN9
-      }
-  }
 }

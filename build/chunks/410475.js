@@ -1,29 +1,29 @@
-/** Chunk was on web.js **/
-/** chunk id: 410475, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 410475, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk541635 = require("./541635.js"),
   Chunk59061 = require("./59061.js");
-module.exports = function(e, t) {
-  var n = t.getStartKey(),
-    a = t.getStartOffset(),
-    s = t.getEndKey(),
-    o = t.getEndOffset(),
-    l = i(e, t).getBlockMap(),
-    c = l.keySeq(),
-    u = c.indexOf(n),
-    d = c.indexOf(s) + 1;
-  return r(l.slice(u, d).map(function(e, t) {
-    var r = e.getText(),
-      i = e.getCharacterList();
-    return n === s ? e.merge({
-      text: r.slice(a, o),
-      characterList: i.slice(a, o)
-    }) : t === n ? e.merge({
-      text: r.slice(a),
-      characterList: i.slice(a)
-    }) : t === s ? e.merge({
-      text: r.slice(0, o),
-      characterList: i.slice(0, o)
-    }) : e
+module.exports = function(t, e) {
+  var r = e.getStartKey(),
+    o = e.getStartOffset(),
+    a = e.getEndKey(),
+    s = e.getEndOffset(),
+    u = i(t, e).getBlockMap(),
+    c = u.keySeq(),
+    l = c.indexOf(r),
+    f = c.indexOf(a) + 1;
+  return n(u.slice(l, f).map(function(t, e) {
+    var n = t.getText(),
+      i = t.getCharacterList();
+    return r === a ? t.merge({
+      text: n.slice(o, s),
+      characterList: i.slice(o, s)
+    }) : e === r ? t.merge({
+      text: n.slice(o),
+      characterList: i.slice(o)
+    }) : e === a ? t.merge({
+      text: n.slice(0, s),
+      characterList: i.slice(0, s)
+    }) : t
   }))
 }

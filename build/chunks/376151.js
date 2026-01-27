@@ -85,7 +85,7 @@ class y extends Chunk439372.A {
   }
   getGameMetadata() {
     let e = u.A.findActivity(e => e.type === h.$pd.PLAYING),
-      t = s.Ay.getCurrentGameForAnalytics();
+      t = o.Ay.getCurrentGameForAnalytics();
     return {
       game_platform: (0, a.A)(e),
       game_name: null != e ? e.name : null,
@@ -93,7 +93,7 @@ class y extends Chunk439372.A {
       game_id: null != e ? e.application_id : null,
       game_distributor: null != t ? t.distributor : null,
       game_distributor_game_id: null != t ? t.sku : null,
-      game_metadata: null != t ? (0, o.MT)(t) : null
+      game_metadata: null != t ? (0, s.MT)(t) : null
     }
   }
   constructor(...e) {

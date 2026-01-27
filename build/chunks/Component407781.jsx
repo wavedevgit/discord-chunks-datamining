@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
   Chunk883885 = require("./883885.js"),
-  o = require.n(Chunk883885),
+  s = require.n(Chunk883885),
   Chunk667050 = require("./667050.js"),
   Chunk194486 = require("./194486.js"),
   Chunk196305 = require("./196305.js");
@@ -18,9 +18,9 @@ let d = async e => {
     animationType: n,
     animationId: r,
     url: i,
-    shouldResize: s
-  } = e, o = null != (t = l.Bf[n]) ? t : l.Bf[c.B.BASIC], u = JSON.parse(JSON.stringify(null != r && r < o.length ? o[r] : (0, a.sample)(o)));
-  return u.assets[0].p = s ? await (0, l.tm)(i) : i, u
+    shouldResize: o
+  } = e, s = null != (t = l.Bf[n]) ? t : l.Bf[c.B.BASIC], u = JSON.parse(JSON.stringify(null != r && r < s.length ? s[r] : (0, a.sample)(s)));
+  return u.assets[0].p = o ? await (0, l.tm)(i) : i, u
 };
 
 function f(e) {
@@ -28,14 +28,14 @@ function f(e) {
     containerDimensions: t,
     effect: n,
     onComplete: a
-  } = e, s = i.useRef(null);
+  } = e, o = i.useRef(null);
   return i.useEffect(() => {
     let e;
     return !async function() {
-      if (null != s.current) {
+      if (null != o.current) {
         let t = await d(n);
-        e = o().loadAnimation({
-          container: s.current,
+        e = s().loadAnimation({
+          container: o.current,
           renderer: "svg",
           loop: false,
           autoplay: true,
@@ -54,6 +54,6 @@ function f(e) {
       height: t.height,
       width: t.width
     },
-    ref: s
+    ref: o
   })
 }

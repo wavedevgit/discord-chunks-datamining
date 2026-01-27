@@ -9,7 +9,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk473503 = require("./473503.js"),
   Chunk746080 = require("./746080.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,12 +22,12 @@ class l extends Chunk439372.A {
     let {
       channelId: t
     } = e;
-    if ((0, s.jq)(t)) return;
+    if ((0, o.jq)(t)) return;
     let n = i.A.getChannel(t);
     null != n && n.isForumLikeChannel() && (0, a.kB)(n)
   }
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), s(this, "actions", {
       CHANNEL_PRELOAD: this.handleChannelPreload
     })
   }

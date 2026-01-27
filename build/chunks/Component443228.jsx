@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 443228, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 443228, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
 }), require("./896048.js"), require("./747238.js");
@@ -16,9 +15,9 @@ function c(e) {
   let {
     code: t,
     message: n
-  } = e, [c, u] = t.split("/"), d = i.A.getChannel(u), f = a.A.getGuild(c);
-  return null != d && d.isGuildVocal() && null != f && s.A.can(l.xBc.VIEW_CHANNEL, d) && s.A.can(l.xBc.CONNECT, d) ? (0, r.jsx)(o.A, {
-    guild: f,
+  } = e, [c, u] = t.split("/"), d = i.A.getChannel(u), p = l.A.getGuild(c);
+  return null != d && d.isGuildVocal() && null != p && a.A.can(o.xBc.VIEW_CHANNEL, d) && a.A.can(o.xBc.CONNECT, d) ? (0, r.jsx)(s.A, {
+    guild: p,
     channel: d,
     message: n
   }) : null

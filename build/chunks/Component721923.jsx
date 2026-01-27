@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk502572 = require("./502572.jsx"),
   Chunk435371 = require("./435371.js"),
@@ -95,16 +95,16 @@ let R = e => {
     closeLayer: R = () => {},
     pauseAnimation: P = false,
     applicationId: D,
-    handleSubscribeModalClose: x,
-    withHighlight: L = false,
-    icon: j,
-    intent: M,
+    handleSubscribeModalClose: L,
+    withHighlight: x = false,
+    icon: M,
+    intent: j,
     useExpressiveButton: k = false
   } = e, U = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent", "useExpressiveButton"]), {
     analyticsLocations: G
-  } = (0, p.Ay)(), V = (0, h.Us)() === b.BRT.POPOUT, [F, B] = i.useState(false), {
+  } = (0, p.Ay)(), F = (0, h.Us)() === b.BRT.POPOUT, [V, B] = i.useState(false), {
     fractionalState: H
-  } = (0, _.A)(), Y = (0, o.bG)([m.A], () => m.A.hasFetched);
+  } = (0, _.A)(), Y = (0, s.bG)([m.A], () => m.A.hasFetched);
   i.useEffect(() => {
     Y || (0, f.CD)()
   }, [Y]);
@@ -122,21 +122,21 @@ let R = e => {
         numberOfBoostsToAdd: K,
         onClose: w,
         closeLayer: R,
-        inPopout: V,
+        inPopout: F,
         applicationId: D,
-        handleSubscribeModalClose: x,
-        intent: M
+        handleSubscribeModalClose: L,
+        intent: j
       }), B(false)
-    }, Z = g.A.getPremiumTypeSubscription(), X = (0, r.jsxs)("div", {
+    }, Z = g.A.getPremiumTypeSubscription(), Q = (0, r.jsxs)("div", {
       className: A.x6,
-      children: [j, null != I ? I : v.intl.string(v.t.gKmQ1G)]
-    }), Q = false;
-  return ((Q = null !== Z && !(W.length > 0) && (null == Z ? true : Z.isPausedOrPausePending) && H === O.xc.NONE) && (X = (0, r.jsxs)("div", {
+      children: [M, null != I ? I : v.intl.string(v.t.gKmQ1G)]
+    }), X = false;
+  return ((X = null !== Z && !(W.length > 0) && (null == Z ? true : Z.isPausedOrPausePending) && H === O.xc.NONE) && (Q = (0, r.jsxs)("div", {
     className: A.x6,
     children: [(0, r.jsx)(d.XAi, {
       size: "xs",
       className: A.iA
-    }), " ", X]
+    }), " ", Q]
   }), U.disabled = true), null != z) ? k ? (0, r.jsx)(c.m_, {
     text: z,
     children: (0, r.jsx)(d.Button, {
@@ -156,24 +156,24 @@ let R = e => {
       size: u.$n.Sizes.SMALL,
       pauseAnimation: P
     }), U), {
-      children: X
+      children: Q
     }))
   }) : k ? (0, r.jsx)(d.Button, {
     variant: "expressive",
-    disabled: Q,
-    loading: F,
+    disabled: X,
+    loading: V,
     text: null != I ? I : v.intl.string(v.t.gKmQ1G),
     onClick: q
   }) : (0, r.jsx)(d.wLn, C(S({
     "data-migration-pending": true,
     size: u.$n.Sizes.SMALL
   }, U), {
-    className: s()(U.className, {
-      [A.yj]: L
+    className: o()(U.className, {
+      [A.yj]: x
     }),
-    submitting: F,
+    submitting: V,
     onClick: q,
     pauseAnimation: P,
-    children: X
+    children: Q
   }))
 }

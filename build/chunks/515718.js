@@ -20,7 +20,7 @@ require.d(exports, {
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk531325 = require("./531325.js"),
   l = require.n(Chunk531325);
 
@@ -31,13 +31,13 @@ function c(e) {
     maxWidth: r,
     maxHeight: i,
     minWidth: a = 0,
-    minHeight: s = 0
+    minHeight: o = 0
   } = e;
   if (t !== r || n !== i) {
     let e = t > r ? r / t : 1;
     t = Math.max(Math.round(t * e), a);
-    let o = (n = Math.max(Math.round(n * e), s)) > i ? i / n : 1;
-    t = Math.max(Math.round(t * o), a), n = Math.max(Math.round(n * o), s)
+    let s = (n = Math.max(Math.round(n * e), o)) > i ? i / n : 1;
+    t = Math.max(Math.round(t * s), a), n = Math.max(Math.round(n * s), o)
   }
   return {
     width: t,
@@ -66,8 +66,8 @@ function f(e) {
     maxHeight: i
   } = e, a = 1;
   t > r && (a = r / t), t = Math.round(t * a);
-  let s = 1;
-  return (n = Math.round(n * a)) > i && (s = i / n), Math.min(a * s, 1)
+  let o = 1;
+  return (n = Math.round(n * a)) > i && (o = i / n), Math.min(a * o, 1)
 }
 
 function p(e) {
@@ -94,7 +94,7 @@ function h(e) {
 
 function m(e, t, n) {
   let r = [];
-  for (let i = 0, a, s, o, l, c; i < t; i += n) s = e[(a = 4 * i) + 0], o = e[a + 1], l = e[a + 2], (true === (c = e[a + 3]) || c >= 125) && !(s > 250 && o > 250 && l > 250) && r.push([s, o, l]);
+  for (let i = 0, a, o, s, l, c; i < t; i += n) o = e[(a = 4 * i) + 0], s = e[a + 1], l = e[a + 2], (true === (c = e[a + 3]) || c >= 125) && !(o > 250 && s > 250 && l > 250) && r.push([o, s, l]);
   return r
 }
 let g = [
@@ -107,14 +107,14 @@ function y(e, t, n) {
     i = r.getContext("2d");
   if (null == i) return g;
   let a = r.width = 0 === e.width ? E : e.width,
-    s = r.height = 0 === e.height ? E : e.height;
-  i.drawImage(e, 0, 0, a, s);
-  let o = m(i.getImageData(0, 0, a, s).data, a * s, n),
-    c = l()(o, t);
+    o = r.height = 0 === e.height ? E : e.height;
+  i.drawImage(e, 0, 0, a, o);
+  let s = m(i.getImageData(0, 0, a, o).data, a * o, n),
+    c = l()(s, t);
   return "boolean" == typeof c ? g : c.palette()
 }
 let b = e => "number" == typeof e ? null : O(e),
-  O = s().memoize(e => new Promise((t, n) => {
+  O = o().memoize(e => new Promise((t, n) => {
     let r = new Image;
     r.crossOrigin = "Anonymous", r.onerror = e => {
       n(e), r.onerror = r.onload = null, r = null

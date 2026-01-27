@@ -38,9 +38,9 @@ function d(e, t) {
 function f(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3],
-    l = s.A.getChannel(e);
+    l = o.A.getChannel(e);
   if (null == l || null == l.guild_id) return;
-  let c = o.A.getCategories(l.guild_id);
+  let c = s.A.getCategories(l.guild_id);
   if (null == c[e]) return;
   let u = c[e].filter(e => {
       let {

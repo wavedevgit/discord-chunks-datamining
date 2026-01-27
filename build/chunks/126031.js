@@ -2,13 +2,13 @@
 /** chunk id: 126031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => o,
+  B: () => s,
   s: () => l
 });
 var Chunk803082 = require("./803082.js"),
   Chunk64700 = require("./64700.js"),
   Chunk744493 = require("./744493.js");
-let s = {
+let o = {
   border: 0,
   clip: "rect(0 0 0 0)",
   clipPath: "inset(50%)",
@@ -21,7 +21,7 @@ let s = {
   whiteSpace: "nowrap"
 };
 
-function o(e = {}) {
+function s(e = {}) {
   let {
     style: t,
     isFocusable: n
@@ -31,9 +31,9 @@ function o(e = {}) {
     isDisabled: !n,
     onFocusWithinChange: e => l(e)
   }), u = (0, i.useMemo)(() => r ? t : t ? {
-    ...s,
+    ...o,
     ...t
-  } : s, [r]);
+  } : o, [r]);
   return {
     visuallyHiddenProps: {
       ...c,
@@ -47,10 +47,10 @@ function l(e) {
     children: t,
     elementType: n = "div",
     isFocusable: a,
-    style: s,
+    style: o,
     ...l
   } = e, {
     visuallyHiddenProps: c
-  } = o(e);
+  } = s(e);
   return i.createElement(n, (0, r.v)(l, c), t)
 }

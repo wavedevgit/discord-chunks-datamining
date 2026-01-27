@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   K3: () => a,
-  Qv: () => o,
-  kz: () => s
+  Qv: () => s,
+  kz: () => o
 });
 var Chunk317097 = require("./317097.js"),
   Chunk652215 = require("./652215.js");
@@ -17,11 +17,11 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   return null != e && null != e.colorStrings && null != e.colorStrings.primaryColor && null != e.colorStrings.secondaryColor
 }
 
-function o(e) {
+function s(e) {
   let t = 0 === e.color,
     n = null != e.colors && 0 === e.colors.primary_color && null == e.colors.secondary_color && null == e.colors.tertiary_color;
   return t || n

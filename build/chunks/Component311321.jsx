@@ -14,17 +14,17 @@ var Chunk665260 = require("./665260.js"),
 function a(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
-      r = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      l = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), r.forEach(function(n) {
-      var r;
-      r = t[n], n in e ? Object.defineProperty(e, n, {
-        value: r,
+    }))), l.forEach(function(n) {
+      var l;
+      l = t[n], n in e ? Object.defineProperty(e, n, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[n] = r
+      }) : e[n] = l
     })
   }
   return e
@@ -34,8 +34,8 @@ function c(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, r)
+      var l = Object.getOwnPropertySymbols(e);
+      t.push.apply(t, l)
     }
     return t
   })(Object(n)).forEach(function(t) {
@@ -51,19 +51,19 @@ function p(e) {
   let {
     subscriptions: n,
     color: t = "text-default"
-  } = e, p = n.some(e => (0, l.Lt)(e.skuFlags, s.d68.APPLICATION_GUILD_SUBSCRIPTION));
-  return (0, r.jsx)(i.Heading, {
+  } = e, p = n.some(e => (0, r.Lt)(e.skuFlags, s.d68.APPLICATION_GUILD_SUBSCRIPTION));
+  return (0, l.jsx)(i.Heading, {
     variant: "heading-lg/semibold",
     color: t,
-    className: u.R,
-    children: p ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(i.RR9, c(a({}, d), {
+    className: o.R,
+    children: p ? (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsx)(i.RR9, c(a({}, d), {
         color: "currentColor"
-      })), o.intl.string(o.t.XIhSoj)]
-    }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(i.nys, c(a({}, d), {
+      })), u.intl.string(u.t.XIhSoj)]
+    }) : (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsx)(i.nys, c(a({}, d), {
         color: "currentColor"
-      })), o.intl.string(o.t.dxfZph)]
+      })), u.intl.string(u.t.dxfZph)]
     })
   })
 }

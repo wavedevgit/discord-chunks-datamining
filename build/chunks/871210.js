@@ -1,9 +1,8 @@
 /** Chunk was on 86142 **/
 /** chunk id: 871210, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Bj: () => h,
-  C4: () => _,
+  C4: () => m,
   b5: () => x,
   et: () => p,
   h_: () => A,
@@ -30,22 +29,22 @@ function h(e) {
 }
 
 function p(e) {
-  let t = (0, o.sS)(e.username).replace(u.uA, "").replace(u.SY, ".").toLowerCase();
+  let t = (0, o.sS)(e.username).replace(d.uA, "").replace(d.SY, ".").toLowerCase();
   return "".concat(t).concat(e.discriminator).substring(0, 32)
 }
 let g = ["@", "#", ":"],
-  m = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
+  _ = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
   f = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
 
-function _(e) {
+function m(e) {
   var t;
   let n = e.username.toLowerCase();
-  if ((t = u.RS, n.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) returntrue;
+  if ((t = d.RS, n.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) returntrue;
   for (let e of g)
     if (n.includes(e)) returntrue;
   for (let e of f)
     if (n === e.toLowerCase()) returntrue;
-  for (let e of m)
+  for (let e of _)
     if (n.includes(e.toLowerCase())) returntrue;
   returnfalse
 }
@@ -67,7 +66,7 @@ function E(e) {
     rateLimited: true
   }, () => ({
     type: c.q.RATE_LIMIT,
-    message: d.intl.string(d.t.T15lqn)
+    message: u.intl.string(u.t.T15lqn)
   })).with({
     error: s.P.not(s.P.nullish)
   }, e => {
@@ -82,12 +81,12 @@ function E(e) {
     taken: false
   }, () => ({
     type: c.q.AVAILABLE,
-    message: d.intl.string(d.t.PgfBSx)
+    message: u.intl.string(u.t.PgfBSx)
   })).with({
     taken: true
   }, () => ({
     type: c.q.ERROR,
-    message: d.intl.string(d.t.mCrAUb)
+    message: u.intl.string(u.t.mCrAUb)
   })).with({
     error: s.P.nullish
   }, () => ({

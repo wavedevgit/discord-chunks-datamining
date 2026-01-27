@@ -32,13 +32,13 @@ let u = [Chunk506326.zi, Chunk506326.Rq],
           guildId: n.guild_id
         }), (0, r.jsx)(l.ZB, {
           children: t.extra.media_title
-        }), (0, r.jsx)(o.mG, {
-          location: o.N5.CARD,
+        }), (0, r.jsx)(s.mG, {
+          location: s.N5.CARD,
           children: u.map((e, n) => (0, r.jsx)(e, {
             entry: t
           }, n))
         })]
-      }), (0, r.jsx)(s.V, {
+      }), (0, r.jsx)(o.V, {
         src: null == d ? true : d.src,
         size: 48,
         className: c.xn,

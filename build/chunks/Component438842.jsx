@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk47762 = require("./47762.js"),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
@@ -24,7 +24,7 @@ function g(e) {
     game: t,
     activityLevel: n,
     hideTooltip: i
-  } = e, a = t.getIconURL(24), s = (0, p.$)(), g = (0, f.A)({
+  } = e, a = t.getIconURL(24), o = (0, p.$)(), g = (0, f.A)({
     location: "GuildProfile",
     source: d.Ob.GuildProfile,
     trackEntryPointImpression: true,
@@ -32,7 +32,7 @@ function g(e) {
   });
   if (null == a) return null;
   let E = !i,
-    y = (null == n ? true : n.level) === o._.HIGH,
+    y = (null == n ? true : n.level) === s._.HIGH,
     b = (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "interactive-text-active",
@@ -66,7 +66,7 @@ function g(e) {
         })]
       })
     });
-  return s ? (0, r.jsx)(c.DUT, {
+  return o ? (0, r.jsx)(c.DUT, {
     onClick: g,
     className: _.f9,
     children: O
@@ -118,14 +118,14 @@ function b(e) {
     gamesToDisplay: t,
     lastGameToDisplay: n,
     remainingGames: a,
-    activity: o
+    activity: s
   } = e, u = i.useMemo(() => {
     if (null == n) return null;
     let e = n.getIconURL(24);
     if (null == e) return null;
     if (0 === a.length) return (0, r.jsx)(g, {
       game: n,
-      activityLevel: o[n.id]
+      activityLevel: s[n.id]
     });
     let t = a;
     return (0, r.jsx)(l.m, {
@@ -133,12 +133,12 @@ function b(e) {
       position: "bottom",
       __unsupportedReactNodeAsText: (0, r.jsx)(E, {
         games: t,
-        activity: o
+        activity: s
       }),
       children: (0, r.jsxs)("div", {
-        className: s()(_.Gt, _.oL),
+        className: o()(_.Gt, _.oL),
         children: [(0, r.jsx)("img", {
-          className: s()(_.T_, _.tJ),
+          className: o()(_.T_, _.tJ),
           src: e,
           alt: n.name
         }), (0, r.jsx)("div", {
@@ -153,18 +153,18 @@ function b(e) {
         })]
       })
     })
-  }, [n, a, o]);
+  }, [n, a, s]);
   return null == t || 0 === t.length ? null : 1 === t.length ? (0, r.jsx)("div", {
     className: _.kL,
     children: (0, r.jsx)(y, {
       game: t[0],
-      activityLevel: o[t[0].id]
+      activityLevel: s[t[0].id]
     })
   }) : (0, r.jsxs)("div", {
     className: _.kL,
     children: [t.map(e => (0, r.jsx)(g, {
       game: e,
-      activityLevel: o[e.id]
+      activityLevel: s[e.id]
     }, e.id)), u]
   })
 }

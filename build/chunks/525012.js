@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk402256 = require("./402256.js"),
   Chunk177487 = require("./177487.js");
 let a = 0x3842494d,
-  s = 4,
-  o = 2,
+  o = 4,
+  s = 2,
   l = 1,
   c = 4,
   u = 12,
@@ -47,12 +47,12 @@ function h(e, t) {
 
 function m(e, t) {
   if (e.getUint32(t, false) !== a) throw Error("Not an IPTC resource block.");
-  let n = e.getUint8(t + s + o),
+  let n = e.getUint8(t + o + s),
     r = (n % 2 == 0 ? n + 1 : n) + l;
   return {
-    headerSize: s + o + r + c,
-    type: e.getUint16(t + s),
-    size: e.getUint32(t + s + o + r)
+    headerSize: o + s + r + c,
+    type: e.getUint16(t + o),
+    size: e.getUint32(t + o + s + r)
   }
 }
 
@@ -66,11 +66,11 @@ function E(e) {
 
 function y(e, t, n, r) {
   let i, a = {},
-    s = n + t.size;
-  for (; n < s && n < e.byteLength;) {
+    o = n + t.size;
+  for (; n < o && n < e.byteLength;) {
     let {
       tag: t,
-      tagSize: s
+      tagSize: o
     } = b(e, n, a, i, r);
     if (null === t) break;
     t && ("encoding" in t && (i = t.encoding), true === a[t.name] || true === t.repeatable ? a[t.name] = {
@@ -85,20 +85,20 @@ function y(e, t, n, r) {
       id: t.id,
       value: t.value,
       description: t.description
-    }))), n += f + s
+    }))), n += f + o
   }
   return a
 }
 
 function b(e, t, n, i, a) {
-  let s = 1,
-    o = 3;
+  let o = 1,
+    s = 3;
   if (O(e, t)) return {
     tag: null,
     tagSize: 0
   };
-  let l = e.getUint16(t + s),
-    c = e.getUint16(t + o);
+  let l = e.getUint16(t + o),
+    c = e.getUint16(t + s);
   if (!a && !r.A.iptc[l]) return {
     tag: true,
     tagSize: c

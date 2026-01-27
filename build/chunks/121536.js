@@ -4,9 +4,9 @@
 var Chunk105712 = require("./105712.js"),
   Chunk860511 = require("./860511.js"),
   Chunk88388 = require("./88388.js"),
-  s = "__core-js_shared__",
-  o = module.exports = Chunk860511[s] || Chunk88388(s, {});
-(o.versions || (o.versions = [])).push({
+  o = "__core-js_shared__",
+  s = module.exports = Chunk860511[o] || Chunk88388(o, {});
+(s.versions || (s.versions = [])).push({
   version: "3.41.0",
   mode: Chunk105712 ? "pure" : "global",
   copyright: "\xa9 2014-2025 Denis Pushkarev (zloirock.ru)",

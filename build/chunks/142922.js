@@ -4,21 +4,21 @@
 require.d(exports, {
   FG: () => d,
   LA: () => l,
-  U_: () => o,
+  U_: () => s,
   f5: () => c,
-  rG: () => s
+  rG: () => o
 });
 var Chunk99478 = require("./99478.js"),
   Chunk526531 = require("./526531.js");
 let a = 1721426;
 
-function s(e, t, n, r) {
+function o(e, t, n, r) {
   let i = (t = l(e, t)) - 1,
-    s = false;
-  return n <= 2 ? s = 0 : o(t) && (s = false), a - 1 + 365 * i + Math.floor(i / 4) - Math.floor(i / 100) + Math.floor(i / 400) + Math.floor((367 * n - 362) / 12 + s + r)
+    o = false;
+  return n <= 2 ? o = 0 : s(t) && (o = false), a - 1 + 365 * i + Math.floor(i / 4) - Math.floor(i / 100) + Math.floor(i / 400) + Math.floor((367 * n - 362) / 12 + o + r)
 }
 
-function o(e) {
+function s(e) {
   return e % 4 == 0 && (e % 100 != 0 || e % 400 == 0)
 }
 
@@ -45,24 +45,24 @@ class d {
       p = Math.floor(f / 1461),
       _ = Math.floor((0, i.z)(f, 1461) / 365),
       [h, m] = c(400 * l + 100 * d + 4 * p + _ + +(4 !== d && 4 !== _)),
-      g = t - s(h, m, 1, 1),
+      g = t - o(h, m, 1, 1),
       E = 2;
-    t < s(h, m, 3, 1) ? E = 0 : o(m) && (E = 1);
+    t < o(h, m, 3, 1) ? E = 0 : s(m) && (E = 1);
     let y = Math.floor(((g + E) * 12 + 373) / 367),
-      b = t - s(h, m, y, 1) + 1;
+      b = t - o(h, m, y, 1) + 1;
     return new(0, r.ng)(h, m, y, b)
   }
   toJulianDay(e) {
-    return s(e.era, e.year, e.month, e.day)
+    return o(e.era, e.year, e.month, e.day)
   }
   getDaysInMonth(e) {
-    return u[o(e.year) ? "leapyear" : "standard"][e.month - 1]
+    return u[s(e.year) ? "leapyear" : "standard"][e.month - 1]
   }
   getMonthsInYear(e) {
     return 12
   }
   getDaysInYear(e) {
-    return o(e.year) ? 366 : 365
+    return s(e.year) ? 366 : 365
   }
   getYearsInEra(e) {
     return 9999

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 769838, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 769838, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,19 +13,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f() {
-  let e = l.uh.useSetting(),
+function _() {
+  let e = o.uh.useSetting(),
     {
       analyticsLocations: t
     } = (0, s.Ay)(),
     n = i.useCallback(e => {
-      (0, c.A)("stream_previews_disabled", e, l.uh.getSetting(), t), l.uh.updateSetting(e)
+      (0, c.A)("stream_previews_disabled", e, o.uh.getSetting(), t), o.uh.updateSetting(e)
     }, [t]);
-  return (0, r.jsx)(o.x, {
-    setting: u.H.VOICE_AND_VIDEO_STREAM_PREVIEWS,
-    children: (0, r.jsx)(a.dOG, {
-      label: d.intl.string(d.t["1CzWUK"]),
-      description: d.intl.string(d.t.jTNPHM),
+  return (0, r.jsx)(a.x, {
+    setting: d.H.VOICE_AND_VIDEO_STREAM_PREVIEWS,
+    children: (0, r.jsx)(l.dOG, {
+      label: u.intl.string(u.t["1CzWUK"]),
+      description: u.intl.string(u.t.jTNPHM),
       checked: e,
       onChange: n
     })

@@ -61,14 +61,14 @@ function g(e, t) {
 }
 let E = "overlayKeybindExperimentPreviousKeybindSettings",
   y = new Chunk118356.Vy("OverlayKeybindExperimentManager"),
-  b = (0, Chunk353640.v)(() => s.w.get(E, {}));
+  b = (0, Chunk353640.v)(() => o.w.get(E, {}));
 
 function O() {
   return b.getState()
 }
 
 function v(e) {
-  b.setState(t => h({}, t, e), true), s.w.set(E, b.getState())
+  b.setState(t => h({}, t, e), true), o.w.set(E, b.getState())
 }
 let A = () => {
     v({
@@ -109,7 +109,7 @@ class N extends Chunk439372.A {
     }), _(this, "dispatchSetKeybind", e => {
       if (null == e) return;
       let t = u.Ay.getOverlayKeybind();
-      return o.A.setKeybind(g(h({}, t), {
+      return s.A.setKeybind(g(h({}, t), {
         shortcut: (0, d.OH)(e)
       }))
     }), _(this, "restoreKeybind", async () => {

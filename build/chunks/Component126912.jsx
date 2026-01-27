@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 126912, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   A: () => v
 }), require("./747238.js"), require("./896048.js");
@@ -31,10 +30,10 @@ function x(e, t, n) {
 Chunk311907.Ay.initialize();
 class E extends(r = Chunk64700.PureComponent) {
   componentDidMount() {
-    let e = (0, u.A)(this.props.location),
+    let e = (0, d.A)(this.props.location),
       t = (0, l.parse)(this.props.location.search);
     o.Bo.post({
-      url: m.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
+      url: _.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
       body: {
         token: e,
         pixel_uuid: t.hash,
@@ -61,36 +60,36 @@ class E extends(r = Chunk64700.PureComponent) {
     })), (0, h.d)("disable_email_notifications")
   }
   renderBusy() {
-    return (0, i.jsx)(d.Ay, {
-      children: (0, i.jsx)(d.CK, {})
+    return (0, i.jsx)(u.Ay, {
+      children: (0, i.jsx)(u.CK, {})
     })
   }
   renderCategorySuccess(e, t) {
     let {
       defaultRoute: n,
       transitionTo: r
-    } = this.props, s = _.intl.formatToPlainString(_.t.YDAohB, {
+    } = this.props, s = m.intl.formatToPlainString(m.t.YDAohB, {
       category: t
     });
-    return (0, i.jsxs)(d.Ay, {
-      children: [(0, i.jsx)(d.hE, {
+    return (0, i.jsxs)(u.Ay, {
+      children: [(0, i.jsx)(u.hE, {
         className: A.QB,
-        children: _.intl.string(_.t.f6rdLg)
-      }), (0, i.jsx)(d.tK, {
+        children: m.intl.string(m.t.f6rdLg)
+      }), (0, i.jsx)(u.tK, {
         children: s
       }), (0, i.jsx)("div", {
         className: A.QX,
         children: (0, i.jsx)(c.Button, {
-          text: _.intl.string(_.t.fIv16B),
+          text: m.intl.string(m.t.fIv16B),
           fullWidth: true,
           onClick: () => r(n)
         })
       }), (0, i.jsx)("div", {
         className: A.Ot,
         children: (0, i.jsx)(c.QWc, {
-          text: _.intl.string(_.t.YYTirT),
+          text: m.intl.string(m.t.YYTirT),
           textVariant: "text-sm/normal",
-          onClick: () => r(m.BVt.SETTINGS("notifications", f.oh))
+          onClick: () => r(_.BVt.SETTINGS("notifications", f.oh))
         })
       })]
     })
@@ -107,20 +106,20 @@ class E extends(r = Chunk64700.PureComponent) {
       let e = f.px.find(e => e.category === r);
       if (null != e) return this.renderCategorySuccess(r, e.label())
     }
-    return (0, i.jsxs)(d.Ay, {
-      children: [(0, i.jsx)(d.eu, {
+    return (0, i.jsxs)(u.Ay, {
+      children: [(0, i.jsx)(u.eu, {
         src: null == n ? true : n.getAvatarURL(true, 100),
         size: c._3J.DEPRECATED_SIZE_100,
         className: A.SX
-      }), (0, i.jsx)(d.hE, {
+      }), (0, i.jsx)(u.hE, {
         className: A.QB,
-        children: _.intl.string(_.t["6U6OMQ"])
-      }), (0, i.jsx)(d.tK, {
-        children: _.intl.string(_.t["yaDJ4/"])
+        children: m.intl.string(m.t["6U6OMQ"])
+      }), (0, i.jsx)(u.tK, {
+        children: m.intl.string(m.t["yaDJ4/"])
       }), (0, i.jsx)("div", {
         className: A.eT,
         children: (0, i.jsx)(c.Button, {
-          text: _.intl.string(_.t.fIv16B),
+          text: m.intl.string(m.t.fIv16B),
           fullWidth: true,
           onClick: () => t(e)
         })
@@ -132,19 +131,19 @@ class E extends(r = Chunk64700.PureComponent) {
       defaultRoute: e,
       transitionTo: t
     } = this.props;
-    return (0, i.jsxs)(d.Ay, {
-      children: [(0, i.jsx)(d._V, {
+    return (0, i.jsxs)(u.Ay, {
+      children: [(0, i.jsx)(u._V, {
         src: n(37772),
         className: A.SX
-      }), (0, i.jsx)(d.hE, {
+      }), (0, i.jsx)(u.hE, {
         className: A.QB,
-        children: _.intl.string(_.t.ox9hIS)
-      }), (0, i.jsx)(d.tK, {
-        children: _.intl.string(_.t["/dcuR5"])
+        children: m.intl.string(m.t.ox9hIS)
+      }), (0, i.jsx)(u.tK, {
+        children: m.intl.string(m.t["/dcuR5"])
       }), (0, i.jsx)("div", {
         className: A.eT,
         children: (0, i.jsx)(c.Button, {
-          text: _.intl.string(_.t.fIv16B),
+          text: m.intl.string(m.t.fIv16B),
           fullWidth: true,
           onClick: () => t(e)
         })

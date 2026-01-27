@@ -22,10 +22,10 @@ function d(e) {
 }
 
 function f(e, t) {
-  return d(s.default.getId() === e ? l.A.getActivities() : o.A.getActivities(e, t))
+  return d(o.default.getId() === e ? l.A.getActivities() : s.A.getActivities(e, t))
 }
 
 function p(e, t) {
-  let n = (0, a.bG)([l.A, o.A, s.default], () => s.default.getId() === e ? l.A.getActivities() : o.A.getActivities(e, t));
+  let n = (0, a.bG)([l.A, s.A, o.default], () => o.default.getId() === e ? l.A.getActivities() : s.A.getActivities(e, t));
   return r.useMemo(() => d(n), [n])
 }

@@ -6,8 +6,8 @@ let t = 0x7fffffff,
   r = 1,
   i = 26,
   a = 38,
-  s = 700,
-  o = 72,
+  o = 700,
+  s = 72,
   l = 128,
   c = "-",
   u = /^xn--/,
@@ -59,24 +59,24 @@ let O = function(e) {
     return e + 22 + 75 * (e < 26) - ((0 != t) << 5)
   },
   A = function(e, t, r) {
-    let o = 0;
-    for (e = r ? h(e / s) : e >> 1, e += h(e / t); e > _ * i >> 1; o += n) e = h(e / _);
-    return h(o + (_ + 1) * e / (e + a))
+    let s = 0;
+    for (e = r ? h(e / o) : e >> 1, e += h(e / t); e > _ * i >> 1; s += n) e = h(e / _);
+    return h(s + (_ + 1) * e / (e + a))
   },
   I = function(e) {
     let a = [],
-      s = e.length,
+      o = e.length,
       u = 0,
       d = l,
-      f = o,
+      f = s,
       p = e.lastIndexOf(c);
     p < 0 && (p = 0);
     for (let t = 0; t < p; ++t) e.charCodeAt(t) >= 128 && g("not-basic"), a.push(e.charCodeAt(t));
-    for (let o = p > 0 ? p + 1 : 0; o < s;) {
+    for (let s = p > 0 ? p + 1 : 0; s < o;) {
       let l = u;
       for (let a = 1, l = n;; l += n) {
-        o >= s && g("invalid-input");
-        let c = O(e.charCodeAt(o++));
+        s >= o && g("invalid-input");
+        let c = O(e.charCodeAt(s++));
         (c >= n || c > h((t - u) / a)) && g("overflow"), u += c * a;
         let d = l <= f ? r : l >= f + i ? i : l - f;
         if (c < d) break;
@@ -90,28 +90,28 @@ let O = function(e) {
   },
   S = function(e) {
     let a = [],
-      s = (e = b(e)).length,
+      o = (e = b(e)).length,
       u = l,
       d = 0,
-      f = o;
+      f = s;
     for (let t of e) t < 128 && a.push(m(t));
     let p = a.length,
       _ = p;
-    for (p && a.push(c); _ < s;) {
-      let s = t;
-      for (let t of e) t >= u && t < s && (s = t);
-      let o = _ + 1;
-      for (let l of (s - u > h((t - d) / o) && g("overflow"), d += (s - u) * o, u = s, e))
+    for (p && a.push(c); _ < o;) {
+      let o = t;
+      for (let t of e) t >= u && t < o && (o = t);
+      let s = _ + 1;
+      for (let l of (o - u > h((t - d) / s) && g("overflow"), d += (o - u) * s, u = o, e))
         if (l < u && ++d > t && g("overflow"), l == u) {
           let e = d;
           for (let t = n;; t += n) {
-            let s = t <= f ? r : t >= f + i ? i : t - f;
-            if (e < s) break;
-            let o = e - s,
-              l = n - s;
-            a.push(m(v(s + o % l, 0))), e = h(o / l)
+            let o = t <= f ? r : t >= f + i ? i : t - f;
+            if (e < o) break;
+            let s = e - o,
+              l = n - o;
+            a.push(m(v(o + s % l, 0))), e = h(s / l)
           }
-          a.push(m(v(e, 0))), f = A(d, o, _ == p), d = 0, ++_
+          a.push(m(v(e, 0))), f = A(d, s, _ == p), d = 0, ++_
         }++ d, ++u
     }
     return a.join("")

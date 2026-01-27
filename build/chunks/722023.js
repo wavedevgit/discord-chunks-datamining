@@ -10,9 +10,9 @@ function r(e) {
     var i = r[0],
       a = t.match(e.parsePattern);
     if (!a) return null;
-    var s = e.valueCallback ? e.valueCallback(a[0]) : a[0];
+    var o = e.valueCallback ? e.valueCallback(a[0]) : a[0];
     return {
-      value: s = n.valueCallback ? n.valueCallback(s) : s,
+      value: o = n.valueCallback ? n.valueCallback(o) : o,
       rest: t.slice(i.length)
     }
   }

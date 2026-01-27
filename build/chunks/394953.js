@@ -38,14 +38,14 @@ function y(e) {
     GuildStore_: a = p.A
   } = e;
   if (!i.hasUnread(n)) returnfalse;
-  let s = a.getGuild(r);
-  if (null == s || null == s.joinedAt) returnfalse;
-  let o = i.ackMessageId(n);
-  if (null == o) {
+  let o = a.getGuild(r);
+  if (null == o || null == o.joinedAt) returnfalse;
+  let s = i.ackMessageId(n);
+  if (null == s) {
     let e = a.getGuild(r);
-    null != e && null != e.joinedAt && (o = h.default.fromTimestamp(e.joinedAt.getTime()))
+    null != e && null != e.joinedAt && (s = h.default.fromTimestamp(e.joinedAt.getTime()))
   }
-  return h.default.compare(t, o) > 0
+  return h.default.compare(t, s) > 0
 }
 
 function b(e) {
@@ -80,9 +80,9 @@ function A() {
       return null != (e = m.A.getNotifyingChannelIds()) ? e : []
     }),
     t = (0, a.yK)([_.Ay], () => e.filter(e => _.Ay.hasUnread(e)), [e]),
-    n = (0, a.yK)([s.Ay], () => {
+    n = (0, a.yK)([o.Ay], () => {
       var e;
-      return null != (e = s.Ay.getSettingsFilteredMentions()) ? e : []
+      return null != (e = o.Ay.getSettingsFilteredMentions()) ? e : []
     });
   return {
     unreadRecentMentionsCount: (0, a.bG)([_.Ay, f.A, p.A], () => {
@@ -106,7 +106,7 @@ function I() {
   let {
     enabled: e,
     inInbox: t
-  } = o.A.useExperiment({
+  } = s.A.useExperiment({
     location: "NotificationsInboxUtils"
   }), n = (0, a.bG)([l.A], () => l.A.getSavedMessageCount());
   return e && t && (n > 0 || (0, c.A)())

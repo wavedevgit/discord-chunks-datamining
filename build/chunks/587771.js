@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $: () => a,
-  O: () => s
+  O: () => o
 });
 var Chunk331250 = require("./331250.js"),
   Chunk108146 = require("./108146.js");
@@ -23,7 +23,7 @@ function a(e, t, n) {
   }
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   let i = {
       isSelected: t.selectedKeys.has(e.id),
       defaultSelected: false,
@@ -36,8 +36,8 @@ function s(e, t, n) {
     },
     {
       isPressed: a,
-      isSelected: s,
-      isDisabled: o,
+      isSelected: o,
+      isDisabled: s,
       buttonProps: l
     } = (0, r.q)({
       ...e,
@@ -46,8 +46,8 @@ function s(e, t, n) {
     }, i, n);
   return "single" === t.selectionMode && (l.role = "radio", l["aria-checked"] = i.isSelected, delete l["aria-pressed"]), {
     isPressed: a,
-    isSelected: s,
-    isDisabled: o,
+    isSelected: o,
+    isDisabled: s,
     buttonProps: l
   }
 }

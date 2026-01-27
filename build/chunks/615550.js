@@ -4,8 +4,8 @@
 require.d(exports, {
   Gb: () => r,
   TF: () => i,
-  W_: () => s,
-  n7: () => o,
+  W_: () => o,
+  n7: () => s,
   no: () => a
 }), require("./985018.jsx");
 var r = function(e) {
@@ -18,9 +18,9 @@ var r = function(e) {
     return e.LEGITIMATE_ACTIVITY = "LEGITIMATE_ACTIVITY", e.LEGITIMATE_ACCOUNTS = "LEGITIMATE_ACCOUNTS", e.LEGITIMATE_DMS = "LEGITIMATE_DMS", e.DM_SPAM = "DM_SPAM", e.JOIN_RAID = "JOIN_RAID", e.OTHER = "OTHER", e
   }({});
 
-function s(e) {
+function o(e) {
   return e.includes("LEGITIMATE_ACTIVITY") ? "LEGITIMATE_ACTIVITY" : e.includes("DM_SPAM") ? "DM_SPAM" : e.includes("JOIN_RAID") ? "JOIN_RAID" : "OTHER"
 }
-var o = function(e) {
+var s = function(e) {
   return e.DM_SPAM = "DM_SPAM", e.MENTION_SPAM = "MENTION_SPAM", e.CHANNEL_SPAM = "CHANNEL_SPAM", e.SUS_NEW_MEMBERS = "SUS_NEW_MEMBERS", e.CHANGING_SETTINGS = "CHANGING_SETTINGS", e.OTHER = "OTHER", e
 }({})

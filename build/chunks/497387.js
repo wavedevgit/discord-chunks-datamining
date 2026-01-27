@@ -17,7 +17,7 @@ function i(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 var Chunk90933 = require("./90933.js"),
-  s = function() {
+  o = function() {
     function e() {
       i(this, e)
     }
@@ -39,7 +39,7 @@ var Chunk90933 = require("./90933.js"),
     }, {
       key: "ease",
       value: function(e) {
-        return o(e)
+        return s(e)
       }
     }, {
       key: "quad",
@@ -121,5 +121,5 @@ var Chunk90933 = require("./90933.js"),
       }
     }]), e
   }(),
-  o = s.bezier(.42, 0, 1, 1);
-module.exports = s
+  s = o.bezier(.42, 0, 1, 1);
+module.exports = o

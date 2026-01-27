@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 442671, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 442671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,84 +13,74 @@ var Chunk627968 = require("./627968.js"),
   Chunk688810 = require("./688810.jsx"),
   Chunk657331 = require("./657331.js"),
   Chunk331011 = require("./331011.js");
-
-function p(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function _(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      p(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function h(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let g = e => {
+let p = e => {
   let {
     userId: t,
     children: n,
-    isLast: a,
+    isLast: l,
     className: p
-  } = e, h = 1, [g, E] = i.useState(false), {
-    analyticsLocations: y
-  } = (0, u.Ay)(), b = i.useCallback(() => {
-    (0, d.openUserProfileModal)({
+  } = e, [m, g] = i.useState(false), {
+    analyticsLocations: A
+  } = (0, d.Ay)(), f = i.useCallback(() => {
+    (0, u.openUserProfileModal)({
       userId: t,
-      sourceAnalyticsLocations: y
+      sourceAnalyticsLocations: A
     })
-  }, [t, y]), O = () => {
-    E(true)
-  }, v = () => {
-    E(false)
+  }, [t, A]), h = () => {
+    g(true)
+  }, b = () => {
+    g(false)
   };
-  return (0, r.jsx)(l.tG, {
+  return (0, r.jsx)(o.tG, {
     id: t,
-    children: e => (0, r.jsx)(c.vN3, {
-      offset: {
-        left: false,
-        right: false
-      },
-      children: (0, r.jsx)(o.A.div, m(_({
-        style: {
-          opacity: h
+    children: e => {
+      var t, i;
+      return (0, r.jsx)(c.vN3, {
+        offset: {
+          left: false,
+          right: false
         },
-        className: s()(f.KG, p, {
-          [f.HV]: a,
-          [f.vu]: g
-        }),
-        onMouseEnter: O,
-        onMouseLeave: v,
-        onClick: b
-      }, e), {
-        children: n(g)
-      }))
-    })
+        children: (0, r.jsx)(a.A.div, (t = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({
+          style: {
+            opacity: 1
+          },
+          className: s()(_.KG, p, {
+            [_.HV]: l,
+            [_.vu]: m
+          }),
+          onMouseEnter: h,
+          onMouseLeave: b,
+          onClick: f
+        }, e), i = i = {
+          children: n(m)
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+        }), t))
+      })
+    }
   })
 }

@@ -24,8 +24,8 @@ function m(e, t) {
     i = Math.floor(r / 60),
     a = r % 60;
   if (0 === a) return n + String(i);
-  var s = t || "";
-  return n + String(i) + s + (0, l.A)(a, 2)
+  var o = t || "";
+  return n + String(i) + o + (0, l.A)(a, 2)
 }
 
 function g(e, t) {
@@ -69,11 +69,11 @@ let y = {
     return c.A.y(e, t)
   },
   Y: function(e, t, n, r) {
-    var i = (0, o.A)(e, r),
+    var i = (0, s.A)(e, r),
       a = i > 0 ? i : 1 - i;
     if ("YY" === t) {
-      var s = a % 100;
-      return (0, l.A)(s, 2)
+      var o = a % 100;
+      return (0, l.A)(o, 2)
     }
     return "Yo" === t ? n.ordinalNumber(a, {
       unit: "year"
@@ -199,7 +199,7 @@ let y = {
     }
   },
   w: function(e, t, n, r) {
-    var i = (0, s.A)(e, r);
+    var i = (0, o.A)(e, r);
     return "wo" === t ? n.ordinalNumber(i, {
       unit: "week"
     }) : (0, l.A)(i, t.length)

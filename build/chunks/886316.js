@@ -1,20 +1,17 @@
-/** Chunk was on web.js **/
-/** chunk id: 886316, original params: e (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 886316, original params: t (module,exports,require) **/
 "use strict";
-
-function t(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
 module.exports = function() {
-  function e(e) {
-    t(this, "_uri", true), this._uri = e
+  function t(t) {
+    var e, r;
+    r = true, (e = "_uri") in this ? Object.defineProperty(this, e, {
+      value: r,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    }) : this[e] = r, this._uri = t
   }
-  return e.prototype.toString = function() {
+  return t.prototype.toString = function() {
     return this._uri
-  }, e
+  }, t
 }()

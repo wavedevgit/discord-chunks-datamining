@@ -2,9 +2,9 @@
 /** chunk id: 973654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GQ: () => o,
+  GQ: () => s,
   LA: () => i,
-  NA: () => s,
+  NA: () => o,
   XG: () => l,
   k7: () => a
 });
@@ -26,14 +26,14 @@ function a(e) {
   })
 }
 
-function s(e) {
+function o(e) {
   r.h.dispatch({
     type: "UPDATE_THEME_PREFERENCES",
     preferences: e
   })
 }
 
-function o(e) {
+function s(e) {
   r.h.dispatch({
     type: "SET_THEME_OVERRIDE",
     theme: e

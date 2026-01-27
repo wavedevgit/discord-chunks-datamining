@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 416092, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 416092, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => _
+  U: () => m
 });
 var Chunk478437 = require("./478437.js"),
   Chunk367513 = require("./367513.js"),
@@ -15,23 +14,23 @@ var Chunk478437 = require("./478437.js"),
   Chunk309010 = require("./309010.js"),
   Chunk967198 = require("./967198.js"),
   Chunk652215 = require("./652215.js");
-let _ = {
+let m = {
   binds: ["mod+u"],
   comboKeysBindGlobal: true,
   action() {
-    let e = f.A.getGuildId(),
-      t = d.A.getChannelId(e),
-      n = u.A.getChannel(t);
+    let e = _.A.getGuildId(),
+      t = u.A.getChannelId(e),
+      n = d.A.getChannel(t);
     if (null != t && null != n && n.type === r.r.GUILD_VOICE) return i.A.updateChatOpen(t, !s.A.getChatOpen(t), "toggle users keybind"), false;
     if (null != t && null != n && n.type === r.r.DM) {
       let e = c.Ay.getSection(t, null == n ? true : n.isDM()),
-        r = (0, l.AP)(n.getRecipientId()),
+        r = (0, o.AP)(n.getRecipientId()),
         i = e === p.YvQ.PROFILE;
-      return (0, o.am)({
+      return (0, a.am)({
         displayProfile: r,
         isProfileOpen: !i
-      }), a.A.toggleUserProfileSidebarSection(), false
+      }), l.A.toggleUserProfileSidebarSection(), false
     }
-    return a.A.toggleMembersSection(), false
+    return l.A.toggleMembersSection(), false
   }
 }

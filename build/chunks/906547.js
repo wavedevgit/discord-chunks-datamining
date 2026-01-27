@@ -15,10 +15,10 @@ function l(e) {
     userId: t,
     renderApplicationName: n
   } = e, l = (0, a.A)(t);
-  return r.useMemo(() => null != l ? o.intl.format(o.t.rSUACb, {
-    helpdeskArticle: i.A.getArticleURL(s.MVz.SLAYER_PROVISIONAL_ACCOUNTS),
+  return r.useMemo(() => null != l ? s.intl.format(s.t.rSUACb, {
+    helpdeskArticle: i.A.getArticleURL(o.MVz.SLAYER_PROVISIONAL_ACCOUNTS),
     applicationName: () => n(l)
-  }) : o.intl.format(o.t["q+N8L6"], {
-    helpdeskArticle: i.A.getArticleURL(s.MVz.SLAYER_PROVISIONAL_ACCOUNTS)
+  }) : s.intl.format(s.t["q+N8L6"], {
+    helpdeskArticle: i.A.getArticleURL(o.MVz.SLAYER_PROVISIONAL_ACCOUNTS)
   }), [l, n])
 }

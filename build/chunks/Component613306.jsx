@@ -2,13 +2,13 @@
 /** chunk id: 613306, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Cn: () => x,
-  Dc: () => M,
+  Cn: () => L,
+  Dc: () => j,
   M9: () => P,
   NH: () => k,
   QT: () => w,
-  gn: () => j,
-  sQ: () => L,
+  gn: () => M,
+  sQ: () => x,
   ti: () => D,
   wN: () => R,
   zT: () => N
@@ -49,7 +49,7 @@ function N(e) {
     text: t.name,
     delay: 750,
     position: "top",
-    children: (0, r.jsx)(o.A, {
+    children: (0, r.jsx)(s.A, {
       src: t.src,
       emojiName: t.name,
       animated: false,
@@ -66,7 +66,7 @@ function w(e) {
     text: t.name,
     delay: 750,
     position: "top",
-    children: (0, r.jsx)(o.A, {
+    children: (0, r.jsx)(s.A, {
       emojiId: t.emojiId,
       emojiName: t.name,
       animated: t.animated
@@ -87,8 +87,8 @@ function P(e) {
   let {
     id: t,
     guildId: n,
-    channelId: o
-  } = e, c = (0, i.bG)([O.default], () => O.default.getUser(t)), u = (0, i.bG)([b.A], () => b.A.hidePersonalInformation), d = I.Ay.useName(n, o, c), f = (0, r.jsx)(_.A, {
+    channelId: s
+  } = e, c = (0, i.bG)([O.default], () => O.default.getUser(t)), u = (0, i.bG)([b.A], () => b.A.hidePersonalInformation), d = I.Ay.useName(n, s, c), f = (0, r.jsx)(_.A, {
     children: null == d ? "<@".concat(t, ">") : "@".concat(d)
   });
   if (null != c) {
@@ -99,7 +99,7 @@ function P(e) {
         children: [(0, r.jsx)(l.A, {
           user: c,
           animate: true,
-          size: s._3J.SIZE_16,
+          size: o._3J.SIZE_16,
           className: C.my
         }), S.Ay.getUserTag(c, {
           mode: "username",
@@ -115,7 +115,7 @@ function P(e) {
         decoration: "never"
       }),
       asContainer: true,
-      children: (0, r.jsx)(s.DUT, {
+      children: (0, r.jsx)(o.DUT, {
         tag: "span",
         children: f
       })
@@ -128,17 +128,17 @@ function D(e) {
   let {
     id: t,
     guildId: n
-  } = e, a = (0, i.bG)([y.A], () => null != n ? y.A.getRole(n, t) : true), o = (0, i.bG)([c.A], () => c.A.roleStyle), l = (0, m.X_)(n, a, null == a ? true : a.colorStrings);
+  } = e, a = (0, i.bG)([y.A], () => null != n ? y.A.getRole(n, t) : true), s = (0, i.bG)([c.A], () => c.A.roleStyle), l = (0, m.X_)(n, a, null == a ? true : a.colorStrings);
   if (null == a) return (0, r.jsxs)("span", {
     children: ["@", T.intl.string(T.t["YV4F/n"])]
   });
   let u = null != a.color && 0 !== a.color,
-    d = "dot" === o,
-    f = "username" === o && u;
+    d = "dot" === s,
+    f = "username" === s && u;
   return (0, r.jsxs)(_.A, {
     color: f ? a.color : null,
     roleColors: f ? l : null,
-    children: [d && (0, r.jsx)(s.WYI, {
+    children: [d && (0, r.jsx)(o.WYI, {
       color: a.colorString,
       colors: l,
       background: false,
@@ -147,35 +147,35 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     id: t
-  } = e, n = (0, i.bG)([g.A], () => g.A.getChannel(t)), a = T.intl.string(T.t.zLZPmk).toLowerCase(), s = "text", o = true;
+  } = e, n = (0, i.bG)([g.A], () => g.A.getChannel(t)), a = T.intl.string(T.t.zLZPmk).toLowerCase(), o = "text", s = true;
   if (null != n) {
     var l;
-    a = (0, u.nc)(n) ? n.name : T.intl.string(T.t["/YzI63"]), s = (0, u.nc)(n) ? null != (l = (0, A.QG)(n)) ? l : "text" : "locked", o = (0, d.Y)(n.type)
+    a = (0, u.nc)(n) ? n.name : T.intl.string(T.t["/YzI63"]), o = (0, u.nc)(n) ? null != (l = (0, A.QG)(n)) ? l : "text" : "locked", s = (0, d.Y)(n.type)
   }
-  return o ? (0, r.jsx)(_.A, {
-    iconType: s,
+  return s ? (0, r.jsx)(_.A, {
+    iconType: o,
     children: a
   }) : (0, r.jsx)("span", {
     children: "#" + a
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     id: t,
     itemId: n,
     guildId: i
-  } = e, a = (0, f.Q)(t), s = (0, f.f)(t, n, i);
+  } = e, a = (0, f.Q)(t), o = (0, f.f)(t, n, i);
   return (0, r.jsxs)(_.A, {
     iconType: t,
-    children: [a, null != s && (0, r.jsx)(h.A, {}), s]
+    children: [a, null != o && (0, r.jsx)(h.A, {}), o]
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     text: t,
     id: n
@@ -185,7 +185,7 @@ function j(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   let {
     timestamp: t
   } = e;
@@ -199,7 +199,7 @@ function k(e) {
   var t;
   let {
     id: n
-  } = e, a = (0, i.bG)([E.A], () => E.A.getDetectableGame(n)), s = null != a ? (0, r.jsx)("img", {
+  } = e, a = (0, i.bG)([E.A], () => E.A.getDetectableGame(n)), o = null != a ? (0, r.jsx)("img", {
     alt: "",
     className: C.Kk,
     src: v.Ay.getApplicationIconURL({
@@ -209,6 +209,6 @@ function k(e) {
     })
   }) : null;
   return (0, r.jsxs)(_.A, {
-    children: [s, null != (t = null == a ? true : a.name) ? t : T.intl.string(T.t["11pdXZ"])]
+    children: [o, null != (t = null == a ? true : a.name) ? t : T.intl.string(T.t["11pdXZ"])]
   })
 }

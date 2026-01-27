@@ -10,8 +10,8 @@ function i(e, t, n) {
   let {
     labelProps: i,
     inputProps: a,
-    isSelected: s,
-    isPressed: o,
+    isSelected: o,
+    isPressed: s,
     isDisabled: l,
     isReadOnly: c
   } = (0, r.e)(e, t, n);
@@ -20,10 +20,10 @@ function i(e, t, n) {
     inputProps: {
       ...a,
       role: "switch",
-      checked: s
+      checked: o
     },
-    isSelected: s,
-    isPressed: o,
+    isSelected: o,
+    isPressed: s,
     isDisabled: l,
     isReadOnly: c
   }

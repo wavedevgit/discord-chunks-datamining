@@ -29,8 +29,8 @@ async function d(e) {
   });
   let m = l.A.getApplication(f);
   if (null == m) {
-    let e = await (0, o.TA)(f);
-    m = s.Ay.createFromServer(e)
+    let e = await (0, s.TA)(f);
+    m = o.Ay.createFromServer(e)
   }
   let g = r.b.USER_INSTALL,
     E = null == m || null == (d = m.integrationTypesConfig) || null == (n = d[g]) || null == (t = n.oauth2InstallParams) ? true : t.scopes;

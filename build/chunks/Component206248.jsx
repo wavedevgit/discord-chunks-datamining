@@ -95,12 +95,12 @@ function S(e) {
     badge: R,
     textLink: P,
     onWatchVideo: D,
-    onRequestClose: x,
-    popoverRef: L,
-    position: j
-  } = e, M = A(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef", "position"]), {
+    onRequestClose: L,
+    popoverRef: x,
+    position: M
+  } = e, j = A(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef", "position"]), {
     reducedMotion: k
-  } = i.useContext(s.CZY), U = (0, a.R)(), G = null != (t = null == (n = (y = (0, s.G98)()).isWindowFocused) ? true : n.call(y)) ? t : U, V = i.useRef(null), F = (0, s.RJq)(T), B = i.useCallback(() => ({
+  } = i.useContext(o.CZY), U = (0, a.R)(), G = null != (t = null == (n = (y = (0, o.G98)()).isWindowFocused) ? true : n.call(y)) ? t : U, F = i.useRef(null), V = (0, o.RJq)(T), B = i.useCallback(() => ({
     type: "VIDEO",
     url: S,
     proxyUrl: S,
@@ -111,30 +111,30 @@ function S(e) {
   }), [S, O]);
   i.useEffect(() => {
     var e, t;
-    null != V.current && (!k.enabled && G ? null == (e = V.current) || e.play().catch(h.tE) : null == (t = V.current) || t.pause())
+    null != F.current && (!k.enabled && G ? null == (e = F.current) || e.play().catch(h.tE) : null == (t = F.current) || t.pause())
   }, [G, k.enabled]);
   let H = i.useCallback(() => {
-      null !== V.current && V.current.pause(), null == x || x()
-    }, [x]),
+      null !== F.current && F.current.pause(), null == L || L()
+    }, [L]),
     Y = i.useCallback(() => {
-      null !== V.current && V.current.pause(), null == x || x()
-    }, [x]),
+      null !== F.current && F.current.pause(), null == L || L()
+    }, [L]),
     W = i.useCallback(() => {
-      null !== V.current && V.current.pause();
+      null !== F.current && F.current.pause();
       let e = B();
       (0, c.R)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: true
-      }), null == x || x(), null == D || D()
-    }, [B, D, x]),
-    K = F ? (0, r.jsx)(s.vYh, {
+      }), null == L || L(), null == D || D()
+    }, [B, D, L]),
+    K = V ? (0, r.jsx)(o.vYh, {
       type: "image",
       src: T
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.A, {
-        ref: V,
+        ref: F,
         src: T,
         width: 232,
         height: 131,
@@ -146,7 +146,7 @@ function S(e) {
         preload: "metadata"
       }), !C && (0, r.jsx)("div", {
         className: E.Rr,
-        children: (0, r.jsx)(o.DMX, {
+        children: (0, r.jsx)(s.DMX, {
           playing: false,
           size: "sm",
           "aria-label": g.intl.string(m.default.YpT3kk),
@@ -155,22 +155,22 @@ function S(e) {
       })]
     }),
     z = b({
-      targetElementRef: M.targetElementRef,
-      shouldShow: M.shouldShow,
-      scrollBehavior: M.scrollBehavior,
-      position: j,
+      targetElementRef: j.targetElementRef,
+      shouldShow: j.shouldShow,
+      scrollBehavior: j.scrollBehavior,
+      position: M,
       onRequestClose: H,
       hasVideo: true,
       caretConfig: w
-    }, "edge" === M.alignmentStrategy ? {
+    }, "edge" === j.alignmentStrategy ? {
       alignmentStrategy: "edge",
-      align: M.align
+      align: j.align
     } : {
       alignmentStrategy: "trigger-center"
     });
   return (0, r.jsx)(u.x, v(b({}, z), {
     children: (0, r.jsxs)("div", {
-      ref: L,
+      ref: x,
       children: [(0, r.jsx)(_.p, {
         onClick: Y
       }), (0, r.jsx)(f.F, {}), (0, r.jsx)("div", {

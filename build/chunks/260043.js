@@ -13,13 +13,13 @@ let a = [
     [1989, 1, 8],
     [2019, 5, 1]
   ],
-  s = [
+  o = [
     [1912, 7, 29],
     [1926, 12, 24],
     [1989, 1, 7],
     [2019, 4, 30]
   ],
-  o = [1867, 1911, 1925, 1988, 2018],
+  s = [1867, 1911, 1925, 1988, 2018],
   l = ["meiji", "taisho", "showa", "heisei", "reiwa"];
 
 function c(e) {
@@ -28,7 +28,7 @@ function c(e) {
 }
 
 function u(e) {
-  let t = o[l.indexOf(e.era)];
+  let t = s[l.indexOf(e.era)];
   if (!t) throw Error("Unknown era: " + e.era);
   return new(0, r.ng)(e.year + t, e.month, e.day)
 }
@@ -36,7 +36,7 @@ class d extends Chunk142922.FG {
   fromJulianDay(e) {
     let t = super.fromJulianDay(e),
       n = c(t);
-    return new(0, r.ng)(this, l[n], t.year - o[n], t.month, t.day)
+    return new(0, r.ng)(this, l[n], t.year - s[n], t.month, t.day)
   }
   toJulianDay(e) {
     return super.toJulianDay(u(e))
@@ -44,14 +44,14 @@ class d extends Chunk142922.FG {
   balanceDate(e) {
     let t = u(e),
       n = c(t);
-    l[n] !== e.era && (e.era = l[n], e.year = t.year - o[n]), this.constrainDate(e)
+    l[n] !== e.era && (e.era = l[n], e.year = t.year - s[n]), this.constrainDate(e)
   }
   constrainDate(e) {
     let t = l.indexOf(e.era),
-      n = s[t];
+      n = o[t];
     if (null != n) {
-      let [r, i, a] = n, s = r - o[t];
-      e.year = Math.max(1, Math.min(s, e.year)), e.year === s && (e.month = Math.min(i, e.month), e.month === i && (e.day = Math.min(a, e.day)))
+      let [r, i, a] = n, o = r - s[t];
+      e.year = Math.max(1, Math.min(o, e.year)), e.year === o && (e.month = Math.min(i, e.month), e.month === i && (e.day = Math.min(a, e.day)))
     }
     if (1 === e.year && t >= 0) {
       let [, n, r] = a[t];

@@ -63,8 +63,8 @@ function b(e) {
     branchId: n,
     buildId: r,
     manifestIds: a,
-    installationPath: s,
-    analyticsLocation: o
+    installationPath: o,
+    analyticsLocation: s
   } = e;
   p.A.setTargetManifest({
     applicationId: t.id,
@@ -73,17 +73,17 @@ function b(e) {
     branchId: n,
     buildId: r,
     manifestIds: a,
-    installationPath: s
+    installationPath: o
   }), i.h.dispatch({
     type: "DISPATCH_APPLICATION_INSTALL",
     applicationId: t.id,
     branchId: n,
-    installationPath: s
+    installationPath: o
   }), u.default.track(h.HAw.LIBRARY_INSTALL_INITIATED, {
     application_id: t.id,
     application_name: t.name,
     sku_id: t.primarySkuId,
-    location: o
+    location: s
   })
 }
 
@@ -103,7 +103,7 @@ function O(e, t, n) {
 }
 
 function v(e, t, n, r) {
-  if (s.Ay.getRunningDiscordApplicationIds().includes(e.id)) return;
+  if (o.Ay.getRunningDiscordApplicationIds().includes(e.id)) return;
   let i = c.A.getInstallationPath(e.id, t);
   if (null == i) throw Error("Missing installation path for application: ".concat(e.id, " ").concat(t));
   p.A.setTargetManifest({
@@ -193,7 +193,7 @@ function P(e, t) {
     }), {
       notif_type: "Game Library Game Installed"
     }, {
-      onClick: () => (0, o.pX)(h.BVt.APPLICATION_LIBRARY),
+      onClick: () => (0, s.pX)(h.BVt.APPLICATION_LIBRARY),
       omitViewTracking: true,
       isUserAvatar: false
     })

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk110259 = require("./110259.js"),
   Chunk113325 = require("./113325.jsx"),
@@ -97,12 +97,12 @@ function b(e) {
           forceLevel: 1,
           children: (0, r.jsxs)("div", {
             ref: P,
-            className: s()(h.outerContainer, {
+            className: o()(h.outerContainer, {
               [h.fullScreenOnMobile]: E
             }),
-            children: [S, (0, r.jsx)(o.animated.div, {
+            children: [S, (0, r.jsx)(s.animated.div, {
               "data-mana-component": "modal",
-              className: s()(h.container, h["size-".concat(_)], h["padding-size-".concat(m)]),
+              className: o()(h.container, h["size-".concat(_)], h["padding-size-".concat(m)]),
               style: R,
               children: C
             })]

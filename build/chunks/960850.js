@@ -19,12 +19,12 @@ function c(e, t, n) {
       location: "canBypassSlowmodeHelper"
     }).enabled) returnfalse;
   switch (t) {
-    case s.R.SendMessage:
+    case o.R.SendMessage:
       return n.can(l.xBc.MANAGE_CHANNELS, e) || n.can(l.xBc.MANAGE_MESSAGES, e);
-    case s.R.CreateThread:
+    case o.R.CreateThread:
       return n.can(l.xBc.MANAGE_THREADS, e);
     default:
-      (0, o.xb)(t)
+      (0, s.xb)(t)
   }
 }
 

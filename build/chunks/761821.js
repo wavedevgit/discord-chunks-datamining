@@ -18,7 +18,7 @@ require.d(exports, {
 var Chunk638504 = require("./638504.js"),
   Chunk65412 = require("./65412.js"),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk803805 = require("./803805.js"),
   Chunk873298 = require("./873298.js"),
   Chunk813827 = require("./813827.js"),
@@ -112,14 +112,14 @@ function T(e, t) {
     i = false,
     a = [];
   for (let n of t) {
-    var s, o;
+    var o, s;
     if (n.version <= e.versions.clientVersion) {
-      r && (null == (s = n.cleanup) || s.call(n));
+      r && (null == (o = n.cleanup) || o.call(n));
       continue
     }
     let t = n.run(e);
     if (e.versions.clientVersion = n.version, false === t) {
-      null == (o = n.cleanup) || o.call(n);
+      null == (s = n.cleanup) || s.call(n);
       continue
     }
     i = true, null != n.cleanup && a.push(n.cleanup)
@@ -134,13 +134,13 @@ function T(e, t) {
 function C(e, t) {
   let n = Object.entries(e);
   if (n.length > t)
-    for (n = s().sortBy(n, e => {
+    for (n = o().sortBy(n, e => {
         let [t, n] = e;
         return n.recentUses[n.recentUses.length - 1]
       }).reverse(); n.length > t;) n.pop();
   let r = {};
   for (let [e, t] of n) {
-    let n = o.zT.create();
+    let n = s.zT.create();
     n.frecency = t.frecency, n.recentUses = t.recentUses.filter(e => null != e && e > 0).map(String), n.score = Math.round(t.score), n.totalUses = t.totalUses, r[e] = n
   }
   return r

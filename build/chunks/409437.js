@@ -7,16 +7,16 @@ require.d(exports, {
 var Chunk890167 = require("./890167.js"),
   Chunk761799 = require("./761799.js");
 let a = {
-  isTiffFile: s,
+  isTiffFile: o,
   findTiffOffsets: l
 };
 
-function s(e) {
+function o(e) {
   let t = 4;
-  return !!e && e.byteLength >= t && o(e)
+  return !!e && e.byteLength >= t && s(e)
 }
 
-function o(e) {
+function s(e) {
   let t = 42,
     n = 2,
     i = e.getUint16(0) === r.A.LITTLE_ENDIAN;

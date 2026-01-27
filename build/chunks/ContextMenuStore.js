@@ -41,7 +41,7 @@ class p extends(r = Chunk311907.Ay.Store) {
     return c
   }
   close() {
-    return !!this.isOpen() && (s._.dispatch(o.jej.CONTEXT_MENU_CLOSE), true)
+    return !!this.isOpen() && (o._.dispatch(s.jej.CONTEXT_MENU_CLOSE), true)
   }
 }
 l(p, "displayName", "ContextMenuStore");

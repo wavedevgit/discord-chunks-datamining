@@ -11,19 +11,19 @@ require.d(exports, {
   WY: () => d,
   _N: () => u,
   ir: () => _,
-  kb: () => s,
+  kb: () => o,
   ni: () => c,
   pG: () => a,
-  qZ: () => o,
+  qZ: () => s,
   sQ: () => i,
   xf: () => p
 });
 var r = "top",
   i = "bottom",
   a = "right",
-  s = "left",
-  o = "auto",
-  l = [r, i, a, s],
+  o = "left",
+  s = "auto",
+  l = [r, i, a, o],
   c = "start",
   u = "end",
   d = "clippingParents",
@@ -33,7 +33,7 @@ var r = "top",
   h = l.reduce(function(e, t) {
     return e.concat([t + "-" + c, t + "-" + u])
   }, []),
-  m = [].concat(l, [o]).reduce(function(e, t) {
+  m = [].concat(l, [s]).reduce(function(e, t) {
     return e.concat([t, t + "-" + c, t + "-" + u])
   }, []),
   g = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"]

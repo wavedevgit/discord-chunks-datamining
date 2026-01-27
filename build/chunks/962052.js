@@ -31,7 +31,7 @@ function g() {
 
 function E(e) {
   let t = JSON.parse(e);
-  return h.log("Native Dispatch error", t), new s.A(t)
+  return h.log("Native Dispatch error", t), new o.A(t)
 }
 
 function y(e, t) {
@@ -60,13 +60,13 @@ let O = {
       userId: n,
       installPaths: r,
       platform: a,
-      stateCallback: s,
-      errorCallback: o
+      stateCallback: o,
+      errorCallback: s
     } = e;
     null == i && m().then(e => {
       let c = {
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          build_number: "489589"
+          build_number: "489697"
         },
         u = l.default.getCurrentUser();
       null != u && (c.user_id = u.id, c.user_name = u.tag, null != u.email && (c.email = u.email));
@@ -86,7 +86,7 @@ let O = {
       };
       i = new e.Dispatch(JSON.stringify(d), e => {
         let t = JSON.parse(e);
-        s({
+        o({
           applications: t.applications,
           paused: t.paused,
           currentTask: null != t.current_task ? {
@@ -99,7 +99,7 @@ let O = {
           } : null
         })
       }, e => {
-        o(E(e))
+        s(E(e))
       }, e => {
         b(JSON.parse(e))
       })
@@ -116,8 +116,8 @@ let O = {
       applicationIcon: r,
       branchId: i,
       buildId: a,
-      manifestIds: s,
-      installationPath: o
+      manifestIds: o,
+      installationPath: s
     } = e, l = g();
     null != l && l.command(JSON.stringify({
       command: "SetTargetManifest",
@@ -126,8 +126,8 @@ let O = {
       application_icon: r,
       branch_id: i,
       build_id: a,
-      manifest_ids: s,
-      install_path: o
+      manifest_ids: o,
+      install_path: s
     }), y)
   },
   setCurrentTask(e, t, n, r, i) {
@@ -232,18 +232,18 @@ let O = {
     })
   })),
   launch: (e, t, n, r) => new Promise((i, a) => {
-    let s = g();
-    if (null == s) return void a(Error("native dispatch instance not found"));
+    let o = g();
+    if (null == o) return void a(Error("native dispatch instance not found"));
 
-    function o(e, t) {
+    function s(e, t) {
       "" !== e ? a(E(e)) : i([JSON.parse(t).pid])
     }
-    s.command(JSON.stringify({
+    o.command(JSON.stringify({
       command: "Launch",
       application_id: e,
       branch_id: t,
       option_name: n,
       environment: r
-    }), o)
+    }), s)
   })
 }

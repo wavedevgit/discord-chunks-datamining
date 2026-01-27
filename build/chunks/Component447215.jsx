@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 447215, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 7034 **/
+/** chunk id: 447215, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => T
+  P: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,146 +20,130 @@ var Chunk627968 = require("./627968.js"),
   Chunk841549 = require("./841549.jsx"),
   Chunk560936 = require("./560936.js");
 
-function y(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function b(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      y(e, t, n[t])
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = i
     })
   }
   return e
 }
 
-function O(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
 function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
-  if (null == e) return {};
-  var n, r, i, a = {};
-  if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-  }
-  if (a = I(e, t), Object.getOwnPropertySymbols)
-    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-  return a
-}
-
-function I(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.getOwnPropertyNames(e);
-  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-  return i
-}
-
-function S(e, t) {
-  return i.useCallback(n => {
-    let r = m.A.getChannel(t);
-    null != r && null != e && (0, g.wQ)(n, e, r)
-  }, [e, t])
-}
-
-function T(e) {
+function j(e) {
   let {
     user: t,
     channelId: n,
-    guildId: m,
-    messageId: g,
-    stopPropagation: y = false,
-    ariaLabel: O,
+    guildId: j,
+    messageId: A,
+    stopPropagation: T = false,
+    ariaLabel: E,
     enableDisplayNameStyles: I = false
-  } = e, T = i.useRef(null), {
-    analyticsLocations: C
-  } = (0, c.Ay)(l.A.USERNAME), N = (0, _.Ay)(m, null == t ? true : t.id), w = (0, u.A)({
+  } = e, S = l.useRef(null), {
+    analyticsLocations: x
+  } = (0, u.Ay)(s.A.USERNAME), N = (0, m.Ay)(j, null == t ? true : t.id), R = (0, c.A)({
     userId: null == t ? true : t.id,
-    guildId: m
-  }), R = (0, p.a)({
-    displayNameStyles: w
-  }), P = S(t, n), D = i.useContext(s.C);
-  return (0, E.A)({
-    subscribeToGroupId: g,
+    guildId: j
+  }), P = (0, h.a)({
+    displayNameStyles: R
+  }), C = l.useCallback(e => {
+    let i = g.A.getChannel(n);
+    null != i && null != t && (0, b.wQ)(e, t, i)
+  }, [t, n]), w = l.useContext(o.C);
+  return (0, y.A)({
+    subscribeToGroupId: A,
     authorId: null == t ? true : t.id,
-    shouldSubscribe: I && null != w && null == m
-  }), i.useCallback(e => (i, s) => {
-    let l = null == e ? true : e.colorStrings,
-      u = N && null != l && null != l.primaryColor && null != l.secondaryColor,
-      p = (t, n) => {
-        var s, c, p;
-        if (!I || null == w || null != m) return (0, r.jsx)(o.V30, v(b({}, null != t ? t : {}), {
-          ref: T,
-          onContextMenu: P,
-          name: null != (c = (0, o.Oer)(i)) ? c : "",
-          colorString: null != (p = null == e ? true : e.colorString) ? p : null,
+    shouldSubscribe: I && null != R && null == j
+  }), l.useCallback(e => (l, o) => {
+    let s = null == e ? true : e.colorStrings,
+      c = N && null != s && null != s.primaryColor && null != s.secondaryColor,
+      h = (t, n) => {
+        var o, u, h;
+        if (!I || null == R || null != j) return (0, i.jsx)(a.V30, v(O({}, null != t ? t : {}), {
+          ref: S,
+          onContextMenu: C,
+          name: null != (u = (0, a.Oer)(l)) ? u : "",
+          colorString: null != (h = null == e ? true : e.colorString) ? h : null,
           roleName: null == e ? true : e.colorRoleName,
-          colorStrings: u ? l : null,
-          "aria-label": O,
-          className: R
+          colorStrings: c ? s : null,
+          "aria-label": E,
+          className: P
         }));
         {
-          let e = (null == D ? true : D.animate) || (null == n ? true : n.isShown) ? d.G.ANIMATED : d.G.PLAIN;
-          return (0, r.jsx)(a.Anchor, v(b({}, null != t ? t : {}), {
-            ref: T,
-            onContextMenu: P,
-            "aria-label": O,
-            children: (0, r.jsx)(f.A, {
-              userName: null != (s = (0, o.Oer)(i)) ? s : "",
-              displayNameStyles: w,
+          let e = (null == w ? true : w.animate) || (null == n ? true : n.isShown) ? d.G.ANIMATED : d.G.PLAIN;
+          return (0, i.jsx)(r.Anchor, v(O({}, null != t ? t : {}), {
+            ref: S,
+            onContextMenu: C,
+            "aria-label": E,
+            children: (0, i.jsx)(p.A, {
+              userName: null != (o = (0, a.Oer)(l)) ? o : "",
+              displayNameStyles: R,
               effectDisplayType: e,
               shouldUnderlineOnHover: true,
               loop: true
             })
           }))
         }
-      },
-      _ = e => t => {
-        y && null != t && t.stopPropagation(), e(t)
       };
-    return (0, r.jsx)(c.f5, {
-      value: C,
-      children: null != t ? (0, r.jsx)(h.A, {
-        targetElementRef: T,
+    return (0, i.jsx)(u.f5, {
+      value: x,
+      children: null != t ? (0, i.jsx)(f.A, {
+        targetElementRef: S,
         user: t,
-        guildId: m,
+        guildId: j,
         channelId: n,
-        messageId: g,
+        messageId: A,
         roleId: null == e ? true : e.colorRoleId,
         clickTrap: true,
         children: (e, t) => {
-          let [n, ...r] = [e, t], {
-            onClick: i
-          } = n, a = A(n, ["onClick"]), [s] = r;
-          return p(b({
-            onClick: _(i)
-          }, a), s)
+          let [n, ...i] = [e, t], {
+            onClick: l
+          } = n, r = function(e, t) {
+            if (null == e) return {};
+            var n, i, l, r = {};
+            if ("u" > typeof Reflect && Reflect.ownKeys) {
+              for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (r[i] = e[i]);
+              return r
+            }
+            if (r = function(e, t) {
+                if (null == e) return {};
+                var n, i, l = {},
+                  r = Object.getOwnPropertyNames(e);
+                for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+                return l
+              }(e, t), Object.getOwnPropertySymbols)
+              for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (r[i] = e[i]);
+            return r
+          }(n, ["onClick"]), [o] = i;
+          return h(O({
+            onClick: e => {
+              T && null != e && e.stopPropagation(), l(e)
+            }
+          }, r), o)
         }
-      }) : p(true, true)
-    }, s)
-  }, [C, t, n, m, g, P, y, O, N, R, null == D ? true : D.animate, w, I])
+      }) : h(true, true)
+    }, o)
+  }, [x, t, n, j, A, C, T, E, N, P, null == w ? true : w.animate, R, I])
 }

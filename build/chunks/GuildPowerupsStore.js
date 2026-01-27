@@ -82,11 +82,11 @@ function E(e) {
 
 function y(e) {
   var t, n, r, i;
-  let a = s.A.getGuild(e),
+  let a = o.A.getGuild(e),
     c = (null == a ? true : a.features.has(l.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true ? 0 : l.M2T[null != (t = null == a ? true : a.premiumTier) ? t : l.TVA.NONE];
-  for (let [t, s] of Object.entries(o.sy)) {
-    let o = t;
-    (null == a || null == (r = a.premiumFeatures) ? true : r.features.includes(o)) && (null == (n = null == (i = s.isEnabled) ? true : i.call(s, e)) || n) && (null == s.includedInLevel || a.premiumTier < s.includedInLevel) && (c += s.boostPrice)
+  for (let [t, o] of Object.entries(s.sy)) {
+    let s = t;
+    (null == a || null == (r = a.premiumFeatures) ? true : r.features.includes(s)) && (null == (n = null == (i = o.isEnabled) ? true : i.call(o, e)) || n) && (null == o.includedInLevel || a.premiumTier < o.includedInLevel) && (c += o.boostPrice)
   }
   return c
 }
@@ -159,7 +159,7 @@ function T() {
 }
 class C extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(s.A), null != e && (h = e)
+    this.waitFor(o.A), null != e && (h = e)
   }
   getState() {
     return h
@@ -191,11 +191,11 @@ c(C, "displayName", "GuildPowerupsStore"), c(C, "persistKey", "GuildPowerupsStor
   return null != n && "object" == typeof n
 }).map(e => {
   var t, n, r;
-  let [i, a] = e, s = a;
-  return [i, f(u({}, s), {
-    allPowerups: null != (t = s.allPowerups) ? t : {},
-    powerupCatalog: null != (n = s.powerupCatalog) ? n : {},
-    unlockedPowerups: null != (r = s.unlockedPowerups) ? r : {}
+  let [i, a] = e, o = a;
+  return [i, f(u({}, o), {
+    allPowerups: null != (t = o.allPowerups) ? t : {},
+    powerupCatalog: null != (n = o.powerupCatalog) ? n : {},
+    unlockedPowerups: null != (r = o.unlockedPowerups) ? r : {}
   })]
 }))]);
 let N = new C(Chunk73153.h, {

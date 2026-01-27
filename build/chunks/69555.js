@@ -45,18 +45,18 @@ function _(e) {
 
 function h() {
   var e;
-  return (0, c.A)(null != (e = s.A.getVoiceChannelId()) ? e : true)
+  return (0, c.A)(null != (e = o.A.getVoiceChannelId()) ? e : true)
 }
 
 function m(e, t) {
   var n;
-  let i = null == (n = a.A.getChannel(s.A.getVoiceChannelId())) ? true : n.guild_id;
+  let i = null == (n = a.A.getChannel(o.A.getVoiceChannelId())) ? true : n.guild_id;
   null == e || null == i ? y(false, t) : (r.h.dispatch({
     type: "UPDATE_HANG_STATUS",
     status: e,
     guildId: i,
     saveAsDefault: t
-  }), o.default.track(f.HAw.SET_HANG_STATUS, _({
+  }), s.default.track(f.HAw.SET_HANG_STATUS, _({
     status_type: e,
     manual_update: !!t
   }, h())))
@@ -68,7 +68,7 @@ function g(e, t, n) {
     emoji: t,
     status: e,
     saveAsDefault: n
-  }), o.default.track(f.HAw.SET_HANG_STATUS, _({
+  }), s.default.track(f.HAw.SET_HANG_STATUS, _({
     status_type: d.Kk.CUSTOM,
     custom_status_text: e,
     custom_status_emoji_id: t.id,
@@ -82,7 +82,7 @@ function E(e, t) {
     type: "UPDATE_HANG_STATUS_GAME_ACTIVITY",
     applicationId: e,
     saveAsDefault: t
-  }), o.default.track(f.HAw.SET_HANG_STATUS, _({
+  }), s.default.track(f.HAw.SET_HANG_STATUS, _({
     status_type: "game_activity",
     manual_update: !!t
   }, h())))
@@ -92,7 +92,7 @@ function y(e, t) {
   r.h.dispatch({
     type: "CLEAR_HANG_STATUS",
     saveAsDefault: t
-  }), o.default.track(f.HAw.CLEAR_HANG_STATUS, _({
+  }), s.default.track(f.HAw.CLEAR_HANG_STATUS, _({
     manual_update: !!e
   }, h()))
 }

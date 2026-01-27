@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 551378, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 551378, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => E
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk294433 = require("./294433.js"),
   Chunk438732 = require("./438732.js"),
@@ -21,35 +20,35 @@ var Chunk503698 = require("./503698.js"),
   Chunk896498 = require("./896498.js"),
   Chunk272673 = require("./272673.js"),
   Chunk607913 = require("./607913.js");
-let y = () => {
-    let e = (0, u.Li)(),
-      t = (0, l.A)(),
+let b = () => {
+    let e = (0, d.Li)(),
+      t = (0, o.A)(),
       {
         handleTabChange: n
       } = (0, c.A)();
-    return (0, u.xr)() || t && e ? null : (0, r.jsx)("div", {
-      className: h.x6,
+    return (0, d.xr)() || t && e ? null : (0, r.jsx)("div", {
+      className: g.x6,
       children: t ? (0, r.jsx)(s.Button, {
         variant: "primary",
-        text: _.intl.string(_.t.LhlgY9),
-        onClick: () => n(f.u9.REQUESTS)
-      }) : (0, r.jsx)(d.A, {})
+        text: m.intl.string(m.t.LhlgY9),
+        onClick: () => n(_.u9.REQUESTS)
+      }) : (0, r.jsx)(u.A, {})
     })
   },
-  b = () => {
-    let e = (0, l.A)(),
-      t = (0, o.y)(_.intl.string(p.default["T7GyW+"]), _.intl.string(p.default.goKE2b)),
-      n = (0, o.y)(_.intl.format(p.default.MXjDSv, {
+  E = () => {
+    let e = (0, o.A)(),
+      t = (0, a.y)(m.intl.string(p.default["T7GyW+"]), m.intl.string(p.default.goKE2b)),
+      n = (0, a.y)(m.intl.format(p.default.MXjDSv, {
         articleLink: "https://support.discord.com/hc/articles/14155060633623"
-      }), _.intl.format(p.default.EMCf6j, {
+      }), m.intl.format(p.default.EMCf6j, {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"
       }));
     return (0, r.jsxs)("div", {
-      className: a()(h.kL, m.a),
+      className: l()(g.kL, A.a),
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
           children: (0, r.jsxs)("div", {
-            className: h.TK,
+            className: g.TK,
             children: [(0, r.jsx)(s.Heading, {
               variant: "heading-xl/medium",
               children: (0, r.jsx)(s.Fmo, {
@@ -61,12 +60,12 @@ let y = () => {
               children: n
             })]
           })
-        }), (0, r.jsx)(y, {})]
+        }), (0, r.jsx)(b, {})]
       }), (0, r.jsx)("div", {
-        className: h.F0,
+        className: g.F0,
         children: (0, r.jsx)("img", {
-          src: e ? g : E,
-          alt: _.intl.string(p.default.ffg6xd)
+          src: e ? f : h,
+          alt: m.intl.string(p.default.ffg6xd)
         })
       })]
     })

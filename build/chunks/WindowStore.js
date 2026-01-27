@@ -71,7 +71,7 @@ function m(e) {
     height: n,
     isElementFullscreen: r,
     focused: i,
-    visible: s
+    visible: o
   } = e;
   return _.set(e.windowId, {
     windowSize: {
@@ -80,7 +80,7 @@ function m(e) {
     },
     isElementFullscreen: r,
     focused: i,
-    visible: s
+    visible: o
   }), i && (p = e.windowId), true
 }
 

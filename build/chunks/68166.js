@@ -22,9 +22,9 @@ function u(e) {
 function d() {
   let e = (0, a.red)(e => u(e)),
     t = (0, i.bG)([l.A], () => l.A.isOpen()),
-    n = (0, i.bG)([o.A], () => o.A.hasLayers()),
+    n = (0, i.bG)([s.A], () => s.A.hasLayers()),
     [d, f] = r.useState(false),
-    p = (0, s.aL)();
+    p = (0, o.aL)();
   return r.useEffect(() => {
     function e() {
       f(true)

@@ -28,12 +28,12 @@ function u(e) {
     pendingAvatar: g
   } = (0, l.A)({
     guildId: null === n ? true : n
-  }), E = d && null != t ? (0, s.V7)({
+  }), E = d && null != t ? (0, o.V7)({
     userId: t.id,
     image: g,
     canAnimate: m,
     size: u
-  }) : true, y = true !== p ? p : E, b = (0, i.bG)([o.Ay], () => null != n && null != t ? o.Ay.getMember(n, t.id) : null);
+  }) : true, y = true !== p ? p : E, b = (0, i.bG)([s.Ay], () => null != n && null != t ? s.Ay.getMember(n, t.id) : null);
   return {
     avatarSrc: r.useMemo(() => null != t ? (0, a.sv)(y, b, t, {
       canAnimate: m,

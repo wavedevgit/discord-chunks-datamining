@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = null,
+let s = null,
   l = false;
 
 function c(e) {
@@ -24,7 +24,7 @@ function c(e) {
     total: n,
     name: r
   } = e;
-  o = {
+  s = {
     progress: t,
     total: n,
     name: r
@@ -32,7 +32,7 @@ function c(e) {
 }
 
 function u() {
-  o = null, l = false
+  s = null, l = false
 }
 
 function d() {
@@ -40,13 +40,13 @@ function d() {
 }
 class f extends(r = Chunk311907.Ay.Store) {
   getLastProgress() {
-    return o
+    return s
   }
   isRunning() {
     return l
   }
 }
-s(f, "displayName", "DispatchApplicationLaunchSetupStore");
+o(f, "displayName", "DispatchApplicationLaunchSetupStore");
 let p = new f(Chunk73153.h, {
   DISPATCH_APPLICATION_LAUNCH_SETUP_START: d,
   DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE: c,

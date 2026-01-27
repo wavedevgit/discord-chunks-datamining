@@ -3,25 +3,25 @@
 "use strict";
 require.d(exports, {
   $B: () => P,
-  Ag: () => L,
+  Ag: () => x,
   Cx: () => G,
   EF: () => z,
   Ii: () => U,
   K4: () => B,
   ME: () => H,
-  MJ: () => V,
+  MJ: () => F,
   N3: () => R,
-  NO: () => M,
+  NO: () => j,
   Pp: () => q,
   V1: () => Z,
-  X2: () => F,
-  b7: () => j,
+  X2: () => V,
+  b7: () => M,
   fl: () => k,
   hX: () => K,
   kF: () => W,
   lq: () => D,
   sw: () => Y,
-  u8: () => x
+  u8: () => L
 }), require("./228524.js"), require("./938796.js"), require("./747238.js"), require("./812715.js"), require("./866193.js"), require("./321073.js"), require("./896048.js");
 var Chunk487899 = require("./487899.js"),
   Chunk665260 = require("./665260.js"),
@@ -115,21 +115,21 @@ function D(e) {
   return P(e) ? e.name : A.intl.string(A.t.UB2gG2)
 }
 
-function x(e) {
+function L(e) {
   return P(e) ? e.description : A.intl.string(A.t.X9fusn)
 }
 
-function L(e) {
+function x(e) {
   var t;
   return P(e) && (0, i.Lt)(null != (t = e.flags) ? t : 0, b.gfo.EMBEDDED)
 }
 
-function j(e) {
+function M(e) {
   var t;
   return P(e) && (0, i.Lt)(null != (t = e.flags) ? t : 0, b.gfo.PARTNER)
 }
 
-function M(e) {
+function j(e) {
   var t;
   return P(e) && (0, i.Lt)(null != (t = e.flags) ? t : 0, b.gfo.PROMOTED)
 }
@@ -140,16 +140,16 @@ function k(e) {
     r = Date.now();
   if ((null == n ? true : n.label_until) != null && r < Date.parse(n.label_until) && (null == n ? true : n.label_from) != null && r > Date.parse(n.label_from)) {
     var i;
-    return null != (i = null == n ? true : n.label_type) ? i : o.Hr.NONE
+    return null != (i = null == n ? true : n.label_type) ? i : s.Hr.NONE
   }
-  return o.Hr.NONE
+  return s.Hr.NONE
 }
 
 function U(e) {
   switch (k(e)) {
-    case o.Hr.NEW:
+    case s.Hr.NEW:
       return "New";
-    case o.Hr.UPDATED:
+    case s.Hr.UPDATED:
       return "Updated";
     default:
       return ""
@@ -157,16 +157,16 @@ function U(e) {
 }
 
 function G(e) {
-  return P(e) && L(e) ? e instanceof h.Ay ? e.embeddedActivityConfig : e.embedded_activity_config : null
+  return P(e) && x(e) ? e instanceof h.Ay ? e.embeddedActivityConfig : e.embedded_activity_config : null
 }
 
-function V(e) {
+function F(e) {
   let {
     command: t,
     optionValues: n,
     context: r,
     commandTargetId: i,
-    maxSizeCallback: o,
+    maxSizeCallback: s,
     sectionName: l,
     commandOrigin: c = u.iw.APPLICATION_LAUNCHER
   } = e, {
@@ -178,7 +178,7 @@ function V(e) {
         optionValues: n,
         context: r,
         commandTargetId: i,
-        maxSizeCallback: o,
+        maxSizeCallback: s,
         commandOrigin: c,
         sectionName: l,
         source: E.A.entrypoint()
@@ -186,7 +186,7 @@ function V(e) {
       if (t.inputType === u.y$.BUILT_IN_TEXT && null != a && null != r.channel) {
         var e;
         let t = _.Ay.parse(d, a.content);
-        t.tts = null != (e = a.tts) && e, s.A.sendMessage(r.channel.id, t, true, {
+        t.tts = null != (e = a.tts) && e, o.A.sendMessage(r.channel.id, t, true, {
           location: v.Hx.APP_COMMAND
         })
       }
@@ -202,7 +202,7 @@ function V(e) {
   return p()
 }
 
-function F(e) {
+function V(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
       fakeAppIconURL: n
@@ -242,7 +242,7 @@ function W(e) {
 function K(e) {
   let t = [];
   for (let n of e) {
-    let e = n.application_directory_collection_items.filter(e => e.type === r.L.APPLICATION && L(e.application));
+    let e = n.application_directory_collection_items.filter(e => e.type === r.L.APPLICATION && x(e.application));
     0 !== e.length && t.push(C(S({}, n), {
       application_directory_collection_items: e
     }))

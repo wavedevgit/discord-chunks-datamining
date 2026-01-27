@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 6676, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 6676, original params: e,t,n (module,exports,require) **/
 module.exports = {
   ec: "flexColumn__16b66",
   Wh: "flexRow__16b66",

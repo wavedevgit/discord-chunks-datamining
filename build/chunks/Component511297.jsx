@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 511297, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 511297, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => T
+  A: () => E
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -27,96 +26,96 @@ var Chunk627968 = require("./627968.js"),
   Chunk308021 = require("./308021.js"),
   Chunk964801 = require("./964801.js");
 
-function S(e) {
+function O(e) {
   let {
     onClick: t,
     emoji: n,
-    index: i,
+    index: l,
     reducedMotion: a,
-    isActive: s
-  } = e, o = (0, g.vy)();
+    isActive: i
+  } = e, s = (0, g.vy)();
   return (0, r.jsx)(g.vw, {
-    spring: o,
-    children: (0, r.jsxs)(f.A, {
-      contentClassName: I.qq,
+    spring: s,
+    children: (0, r.jsxs)(m.A, {
+      contentClassName: A.qq,
       onClick: () => t(n),
-      active: s,
-      children: [(0, r.jsx)(l.A, {
-        className: I.Zg,
+      active: i,
+      children: [(0, r.jsx)(o.A, {
+        className: A.Zg,
         emojiId: n.id,
         emojiName: n.name,
         animated: !a && n.animated
       }), (0, r.jsxs)(h.A, {
         variant: "text-lg/bold",
-        children: ["#", i + 1]
+        children: ["#", l + 1]
       })]
     })
   })
 }
 
-function T() {
-  let e = (0, s.bG)([c.A], () => c.A.useReducedMotion),
-    t = i.useContext(u.P),
-    n = (0, o.rdh)(t.primaryColor).hex(),
+function E() {
+  let e = (0, i.bG)([c.A], () => c.A.useReducedMotion),
+    t = l.useContext(u.P),
+    n = (0, s.rdh)(t.primaryColor).hex(),
     {
       emojis: {
-        numEmojisSent: l,
-        emojis: f
+        numEmojisSent: o,
+        emojis: m
       } = {
         numEmojisSent: 0,
         emojis: []
       }
-    } = (0, s.bG)([d.A], () => d.A.getCheckpointData()),
-    g = 0 === l || 0 === f.length,
-    [T, C] = i.useState(g ? {
+    } = (0, i.bG)([d.A], () => d.A.getCheckpointData()),
+    g = 0 === o || 0 === m.length,
+    [E, S] = l.useState(g ? {
       name: "\uD83D\uDE22",
       animated: false
-    } : f[0]),
+    } : m[0]),
     N = g ? y.o : a.nm2;
-  return (0, r.jsx)(_.A, {
+  return (0, r.jsx)(p.A, {
     children: (0, r.jsxs)("div", {
-      className: I.kL,
-      children: [(0, r.jsx)(E.A, {
-        emoji: T
+      className: A.kL,
+      children: [(0, r.jsx)(x.A, {
+        emoji: E
       }), (0, r.jsxs)("div", {
-        className: I.Qs,
+        className: A.Qs,
         children: [(0, r.jsxs)("div", {
-          className: A.DD,
+          className: _.DD,
           children: [(0, r.jsx)(N, {
             size: "refresh_sm",
             color: n,
-            className: A.gr,
-            colorClass: A.d7
+            className: _.gr,
+            colorClass: _.d7
           }), (0, r.jsx)(h.A, {
             variant: "eyebrow",
-            className: A.UP,
-            children: g ? v.intl.string(O.default.vnG9Sx) : v.intl.format(O.default.JwFMdL, {
-              numEmojis: l
+            className: _.UP,
+            children: g ? C.intl.string(j.default.vnG9Sx) : C.intl.format(j.default.JwFMdL, {
+              numEmojis: o
             })
           })]
         }), g ? (0, r.jsx)(h.A, {
           variant: "heading-xxl/medium",
-          className: I.YI,
-          children: v.intl.string(O.default.BHbwK1)
+          className: A.YI,
+          children: C.intl.string(j.default.BHbwK1)
         }) : (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(m.A, {
-            end: l
+          children: [(0, r.jsx)(b.A, {
+            end: o
           }), (0, r.jsx)(h.A, {
             variant: "heading-xxl/medium",
-            className: I.VA,
-            children: v.intl.string(O.default.ZuvPfg)
+            className: A.VA,
+            children: C.intl.string(j.default.ZuvPfg)
           }), (0, r.jsx)("div", {
-            className: I.gm,
-            children: f.map((t, n) => (0, r.jsx)(S, {
-              onClick: () => C(t),
+            className: A.gm,
+            children: m.map((t, n) => (0, r.jsx)(O, {
+              onClick: () => S(t),
               emoji: t,
               index: n,
               reducedMotion: e,
-              isActive: t === T
+              isActive: t === E
             }, "emoji-".concat(n)))
           })]
-        }), (0, r.jsx)(p.e, {
-          slide: b.P7.EMOJIS
+        }), (0, r.jsx)(f.e, {
+          slide: v.P7.EMOJIS
         })]
       })]
     })

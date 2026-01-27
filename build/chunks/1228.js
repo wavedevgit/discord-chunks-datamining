@@ -26,7 +26,7 @@ let m = (e, t, n) => ({
     f.VW.focus(e)
   },
   blur() {
-    s.rL.blur(e)
+    o.rL.blur(e)
   },
   getCurrentWord() {
     let t = e.selection;
@@ -34,29 +34,29 @@ let m = (e, t, n) => ({
       word: null,
       isAtStart: false
     };
-    let [n, r] = f.VW.node(e, f.PW.parent(t.anchor.path)), [i, a] = f.VW.node(e, t.anchor.path), s = t.anchor.offset;
+    let [n, r] = f.VW.node(e, f.PW.parent(t.anchor.path)), [i, a] = f.VW.node(e, t.anchor.path), o = t.anchor.offset;
     if (!f.PW.hasPrevious(a) && f.l5.isText(i)) {
-      let e = i.text.substring(0, s);
-      if (f.AS.isType(n, "applicationCommand") && s < n.command.displayName.length + 2) return {
+      let e = i.text.substring(0, o);
+      if (f.AS.isType(n, "applicationCommand") && o < n.command.displayName.length + 2) return {
         word: e,
         isAtStart: true
       }
     }
-    let o = "",
+    let s = "",
       l = false;
     for (;;) {
-      if (--s < 0) {
+      if (--o < 0) {
         if (!f.PW.hasPrevious(a)) {
           l = true;
           break
         } [i, a] = f.VW.node(e, f.PW.previous(a))
       }
       if (!f.l5.isText(i)) break;
-      let t = i.text[s];
+      let t = i.text[o];
       if (h.ug.test(t)) break;
-      o = t + o
+      s = t + s
     }
-    let c = o,
+    let c = s,
       u = t.anchor.offset,
       [d] = f.VW.node(e, t.anchor.path);
     for (; f.l5.isText(d) && !(u >= d.text.length);) {
@@ -65,7 +65,7 @@ let m = (e, t, n) => ({
       c += e, u++
     }
     return {
-      word: o,
+      word: s,
       fullWord: c,
       isAtStart: l && f.PW.isFirstEditorBlock(r)
     }
@@ -95,8 +95,8 @@ let m = (e, t, n) => ({
       i = arguments.length > 2 && true !== arguments[2] && arguments[2];
     u.o.withSingleEntry(e, () => {
       let a = c.M3(e),
-        s = null != a && g(t, a[0]);
-      if (null != r && s && (d.b.removeInlineChildren(e, a), i = false), E(e, n, r, i), null != r && s) {
+        o = null != a && g(t, a[0]);
+      if (null != r && o && (d.b.removeInlineChildren(e, a), i = false), E(e, n, r, i), null != r && o) {
         let n = c.n$(e);
         if (a = f.cv.updateElement(e, a), null != n) {
           let r = f.cv.markdown(n[0], t.guild_id);
@@ -113,9 +113,9 @@ let m = (e, t, n) => ({
         replaceFullWord: a = false
       } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
     u.o.withSingleEntry(e, () => {
-      let s = c.M3(e),
-        o = null != s && g(t, s[0]);
-      if (o) d.b.removeInlineChildren(e, s), i = false;
+      let o = c.M3(e),
+        s = null != o && g(t, o[0]);
+      if (s) d.b.removeInlineChildren(e, o), i = false;
       else {
         let {
           word: t,
@@ -130,7 +130,7 @@ let m = (e, t, n) => ({
           unit: "character"
         })
       }
-      E(e, n, r, i), o && d.b.selectNextCommandOption(e)
+      E(e, n, r, i), s && d.b.selectNextCommandOption(e)
     })
   },
   insertInlineAutocompleteInput(t) {
@@ -166,8 +166,8 @@ let m = (e, t, n) => ({
     u.o.withSingleEntry(e, () => {
       var t, i;
       let a = n.animated ? "a" : "",
-        s = null != (t = null != (i = n.originalName) ? i : n.name) ? t : "";
-      E(e, ":".concat(n.name, ":"), null != n.id ? "<".concat(a, ":").concat(s.replace(/:/g, ""), ":").concat(n.id, ">") : null, r)
+        o = null != (t = null != (i = n.originalName) ? i : n.name) ? t : "";
+      E(e, ":".concat(n.name, ":"), null != n.id ? "<".concat(a, ":").concat(o.replace(/:/g, ""), ":").concat(n.id, ">") : null, r)
     })
   }
 });
@@ -176,7 +176,7 @@ function g(e, t) {
   var n;
   let r = l.A.getActiveCommand(e.id),
     i = null == r || null == (n = r.options) ? true : n.find(e => e.name === t.optionName);
-  return null != i && (i.type !== o.n4.STRING || (null == i ? true : i.choices) != null || (null == i ? true : i.autocomplete))
+  return null != i && (i.type !== s.n4.STRING || (null == i ? true : i.choices) != null || (null == i ? true : i.autocomplete))
 }
 
 function E(e, t, n, r) {

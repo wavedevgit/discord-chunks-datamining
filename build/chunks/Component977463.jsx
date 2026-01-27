@@ -78,8 +78,8 @@ function C(e) {
       channel: f,
       rating: n
     })
-  }, x = d.A.can(b.xBc.MANAGE_MESSAGES, f), L = e => {
-    x && (0, o.L3)(e, async () => {
+  }, L = d.A.can(b.xBc.MANAGE_MESSAGES, f), x = e => {
+    L && (0, s.L3)(e, async () => {
       let {
         default: e
       } = await n.e("43921").then(n.bind(n, 304232));
@@ -88,10 +88,10 @@ function C(e) {
       }))
     })
   };
-  return (0, r.jsxs)(s.DUT, {
+  return (0, r.jsxs)(o.DUT, {
     className: v.kL,
     onClick: C,
-    onContextMenu: L,
+    onContextMenu: x,
     onMouseEnter: () => w(true),
     onMouseLeave: () => w(false),
     children: [(0, r.jsx)(c.A, {
@@ -102,7 +102,7 @@ function C(e) {
       className: v.uV,
       children: (0, r.jsxs)("div", {
         className: v.Hw,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(o.Text, {
           className: v.vE,
           color: "interactive-text-default",
           variant: "text-xs/normal",
@@ -112,11 +112,11 @@ function C(e) {
           width: 4,
           "aria-hidden": "true",
           className: v.Om
-        }), (0, r.jsx)(s.oyn, {
+        }), (0, r.jsx)(o.oyn, {
           size: "xxs",
           color: "currentColor",
           className: v.Kk
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: v.U9,
           color: "interactive-text-default",
           variant: "text-xs/normal",
@@ -140,14 +140,14 @@ function C(e) {
       })
     }), N && !P && (0, r.jsxs)("div", {
       className: v.p_,
-      children: [(0, r.jsx)(s.DUT, {
+      children: [(0, r.jsx)(o.DUT, {
         onClick: e => D(e, O.P0.GOOD),
         children: (0, r.jsx)(_.A, {
           className: v.O1,
           width: 12,
           height: 12
         })
-      }), (0, r.jsx)(s.DUT, {
+      }), (0, r.jsx)(o.DUT, {
         onClick: e => D(e, O.P0.BAD),
         children: (0, r.jsx)(p.A, {
           className: v.O1,
@@ -155,12 +155,12 @@ function C(e) {
           height: 12
         })
       })]
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       color: "text-strong",
       variant: "text-sm/semibold",
       className: v.DD,
       children: t.topic
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       color: "text-default",
       variant: "text-sm/normal",
       className: v.VA,
@@ -173,21 +173,21 @@ function N(e) {
   let {
     summaries: t,
     summariesMembers: n,
-    channel: s,
-    selectTopic: o,
+    channel: o,
+    selectTopic: s,
     setOpen: l
-  } = e, c = (0, a.bG)([f.Ay], () => f.Ay.getOldestUnreadMessageId(s.id)), u = i.useCallback(e => {
-    o(e), l(false)
-  }, [o, l]);
+  } = e, c = (0, a.bG)([f.Ay], () => f.Ay.getOldestUnreadMessageId(o.id)), u = i.useCallback(e => {
+    s(e), l(false)
+  }, [s, l]);
   return t.length < 1 ? (0, r.jsx)(y.A, {}) : (0, r.jsx)(r.Fragment, {
     children: t.map((e, t) => {
       var i;
       let a = null != (i = n[t]) ? i : [];
       return (0, r.jsx)(C, {
         summary: e,
-        channel: s,
+        channel: o,
         members: a,
-        guildId: s.guild_id,
+        guildId: o.guild_id,
         unread: null != c && h.default.compare(e.endId, c) > 0,
         onClick: () => u(t)
       }, t)

@@ -41,11 +41,11 @@ function _(e) {
 }
 class h extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A)
+    this.waitFor(s.A)
   }
   getChannelStatus(e) {
     var t;
-    if (null != e && null != e.guild_id && e.type === i.r.GUILD_VOICE) return c.has(e.guild_id) || (c.add(e.guild_id), o.A.getSocket().requestChannelStatuses(e.guild_id)), null == (t = u[e.guild_id]) ? true : t[e.id]
+    if (null != e && null != e.guild_id && e.type === i.r.GUILD_VOICE) return c.has(e.guild_id) || (c.add(e.guild_id), s.A.getSocket().requestChannelStatuses(e.guild_id)), null == (t = u[e.guild_id]) ? true : t[e.id]
   }
 }
 l(h, "displayName", "ChannelStatusStore");

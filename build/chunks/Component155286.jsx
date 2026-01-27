@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 155286, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 155286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E,
+  A: () => x,
   e: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -31,14 +30,14 @@ let g = {
   [Chunk532294.P7.END]: "Entry"
 };
 
-function E(e) {
+function x(e) {
   let {
     slide: t,
     className: n
-  } = e, a = i.useContext(f.P), _ = (0, p.A)((0, c.rdh)(a.primaryColor).hex()), h = (0, d.j5)(_), E = (0, l.bG)([u.A], () => u.A.useReducedMotion);
+  } = e, a = l.useContext(m.P), p = (0, f.A)((0, c.rdh)(a.primaryColor).hex()), h = (0, d.j5)(p), x = (0, o.bG)([u.A], () => u.A.useReducedMotion);
   return (0, r.jsx)("div", {
-    className: s()(m.k, n),
-    children: (0, r.jsx)(o.UR3, {
+    className: i()(b.k, n),
+    children: (0, r.jsx)(s.UR3, {
       artboard: g[t],
       dataBinding: {
         iconColor: {
@@ -47,7 +46,7 @@ function E(e) {
           b: h.b,
           a: 255 * h.a
         },
-        reducedMotion: E
+        reducedMotion: x
       },
       fit: "layout",
       withReducedMotion: "short-loop"
@@ -59,10 +58,10 @@ function y(e) {
   let {
     slide: t,
     className: n
-  } = e, i = (0, _.vy)();
-  return (0, r.jsx)(_.vw, {
-    spring: i,
-    children: (0, r.jsx)(E, {
+  } = e, l = (0, p.vy)();
+  return (0, r.jsx)(p.vw, {
+    spring: l,
+    children: (0, r.jsx)(x, {
       slide: t,
       className: n
     })

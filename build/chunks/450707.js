@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -42,7 +42,7 @@ function o(e, t) {
 }
 
 function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -56,16 +56,16 @@ let u = e => {
       isUnusableRoleSubscriptionEmoji: r,
       emojiComesFromCurrentGuild: i,
       isDiscoverable: a
-    } = e, s = "Custom Emoji Popout";
-    return t && !n && a ? s = "Custom Emoji Popout (Cross-Server)" : t || !n || r ? t || n || (s = a ? "Custom Emoji Popout (Upsell Not-Joined Cross-Server)" : "Custom Emoji Popout (Soft Upsell)") : s = i ? "Custom Emoji Popout (Upsell Joined Current-Server)" : "Custom Emoji Popout (Upsell Joined Cross-Server)", s
+    } = e, o = "Custom Emoji Popout";
+    return t && !n && a ? o = "Custom Emoji Popout (Cross-Server)" : t || !n || r ? t || n || (o = a ? "Custom Emoji Popout (Upsell Not-Joined Cross-Server)" : "Custom Emoji Popout (Soft Upsell)") : o = i ? "Custom Emoji Popout (Upsell Joined Current-Server)" : "Custom Emoji Popout (Upsell Joined Cross-Server)", o
   },
   d = e => {
     let {
       sourceType: t,
       expressionSourceApplication: n,
       isPremium: a,
-      hasJoinedEmojiSourceGuild: s,
-      isUnusableRoleSubscriptionEmoji: o,
+      hasJoinedEmojiSourceGuild: o,
+      isUnusableRoleSubscriptionEmoji: s,
       isDiscoverable: l,
       emojiComesFromCurrentGuild: c,
       userIsRoleSubscriber: u,
@@ -75,7 +75,7 @@ let u = e => {
     } = e, _ = null;
     return t === r.rV.APPLICATION && null != n ? i.intl.formatToPlainString(i.t.uERlTd, {
       appName: n.name
-    }) : a ? s ? d ? f && o ? i.intl.string(i.t.xFb68j) : o ? u ? i.intl.string(i.t.vLklfF) : i.intl.string(i.t["g8i/bf"]) : i.intl.string(i.t.Eoynp0) : c ? i.intl.string(i.t.hU4kIe) : i.intl.string(i.t.GM0xaX) : l ? i.intl.string(i.t.xE9WGt) : i.intl.string(i.t["0LMpW+"]) : s ? f && o ? i.intl.string(i.t.xFb68j) : o ? u ? i.intl.string(i.t.vLklfF) : i.intl.string(i.t["g8i/bf"]) : c ? i.intl.string(i.t.ICPhqa) : i.intl.string(i.t.jQy3aM) : l ? i.intl.string(i.t.FJ6Z01) : i.intl.format(i.t.U6vLcA, {
+    }) : a ? o ? d ? f && s ? i.intl.string(i.t.xFb68j) : s ? u ? i.intl.string(i.t.vLklfF) : i.intl.string(i.t["g8i/bf"]) : i.intl.string(i.t.Eoynp0) : c ? i.intl.string(i.t.hU4kIe) : i.intl.string(i.t.GM0xaX) : l ? i.intl.string(i.t.xE9WGt) : i.intl.string(i.t["0LMpW+"]) : o ? f && s ? i.intl.string(i.t.xFb68j) : s ? u ? i.intl.string(i.t.vLklfF) : i.intl.string(i.t["g8i/bf"]) : c ? i.intl.string(i.t.ICPhqa) : i.intl.string(i.t.jQy3aM) : l ? i.intl.string(i.t.FJ6Z01) : i.intl.format(i.t.U6vLcA, {
       openPremiumSettings: p
     })
   },
@@ -85,8 +85,8 @@ let u = e => {
       hasJoinedEmojiSourceGuild: n,
       isUnusableRoleSubscriptionEmoji: r,
       isDiscoverable: a
-    } = e, s = n && !r, o = !n && a, l = !t && (s || o);
-    return t && o ? {
+    } = e, o = n && !r, s = !n && a, l = !t && (o || s);
+    return t && s ? {
       type: "JOIN_GUILD",
       text: i.intl.string(i.t.riu2R5),
       description: null
@@ -103,7 +103,7 @@ let u = e => {
   p = e => {
     let t = d(e),
       n = u(e);
-    return l(s({}, f(e)), {
+    return l(o({}, f(e)), {
       emojiDescription: t,
       analyticsType: n
     })

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 753036, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 753036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,58 +14,56 @@ var Chunk627968 = require("./627968.js"),
   Chunk751758 = require("./751758.js"),
   Chunk778007 = require("./778007.js"),
   Chunk308021 = require("./308021.js");
-let _ = 1e3;
 
-function h() {
-  let e = (0, i.useContext)(c.P),
-    t = (0, o.rdh)(e.primaryColor).hex(),
-    n = (0, i.useRef)(null),
+function p() {
+  let e = (0, l.useContext)(c.P),
+    t = (0, s.rdh)(e.primaryColor).hex(),
+    n = (0, l.useRef)(null),
     {
-      volume: h,
-      isMuted: m
-    } = (0, s.cf)([u.A], () => ({
+      volume: p,
+      isMuted: h
+    } = (0, i.cf)([u.A], () => ({
       volume: u.A.volume,
       isMuted: u.A.isMuted
     })),
-    [g, E] = (0, i.useState)(false),
-    [y, b] = (0, i.useState)(false),
-    O = (0, i.useRef)(false),
-    v = m ? 0 : 100 * h,
-    A = g || y,
-    I = e => {
-      (0, l.ls)(e / 100), b(true), clearTimeout(O.current), O.current = setTimeout(() => {
-        b(false)
-      }, _)
-    };
-  (0, i.useEffect)(() => {
-    null != n.current && (n.current.volume = h)
-  }, [h]);
-  let S = m ? o._RO : v > 90 ? o.HKD : o.S24;
+    [b, g] = (0, l.useState)(false),
+    [x, y] = (0, l.useState)(false),
+    v = (0, l.useRef)(false),
+    j = h ? 0 : 100 * p,
+    C = b || x;
+  (0, l.useEffect)(() => {
+    null != n.current && (n.current.volume = p)
+  }, [p]);
+  let _ = h ? s._RO : j > 90 ? s.HKD : s.S24;
   return (0, r.jsxs)("div", {
-    onMouseEnter: () => E(true),
-    onMouseLeave: () => E(false),
+    onMouseEnter: () => g(true),
+    onMouseLeave: () => g(false),
     className: d.kL,
-    children: [(0, r.jsx)(o.DUT, {
-      onClick: l.K8,
-      className: f.b,
+    children: [(0, r.jsx)(s.DUT, {
+      onClick: o.K8,
+      className: m.b,
       style: {
         color: t,
-        borderLeft: A ? 0 : true
+        borderLeft: C ? 0 : true
       },
-      children: (0, r.jsx)(S, {
-        colorClass: p.d7,
+      children: (0, r.jsx)(_, {
+        colorClass: f.d7,
         color: t
       })
-    }), A ? (0, r.jsx)("div", {
+    }), C ? (0, r.jsx)("div", {
       className: d.xJ,
       style: {
         borderColor: t
       },
-      children: (0, r.jsx)(o.Apm, {
-        initialValue: v,
+      children: (0, r.jsx)(s.Apm, {
+        initialValue: j,
         minValue: 0,
         maxValue: 100,
-        asValueChanges: I,
+        asValueChanges: e => {
+          (0, o.ls)(e / 100), y(true), clearTimeout(v.current), v.current = setTimeout(() => {
+            y(false)
+          }, 1e3)
+        },
         grabberClassName: d.Ub,
         fillStyles: {
           backgroundColor: t,
@@ -77,7 +74,7 @@ function h() {
       ref: n,
       autoPlay: true,
       loop: true,
-      muted: m,
+      muted: h,
       children: (0, r.jsx)("source", {
         src: a.A
       })

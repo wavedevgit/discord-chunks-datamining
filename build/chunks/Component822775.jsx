@@ -75,42 +75,42 @@ function b(e) {
   return O ? null == v ? (0, r.jsx)(_.FD, {
     action: "EDIT_PROFILE",
     text: h.intl.string(h.t.s5vZlQ),
-    icon: s.R2l,
+    icon: o.R2l,
     autoFocus: true,
     fullWidth: m,
     variant: "primary",
     onClick: () => {
-      A ? f.A.notifyUnsavedWidgets() : (null == b || b(), S(), (0, o.A)(y))
+      A ? f.A.notifyUnsavedWidgets() : (null == b || b(), S(), (0, s.A)(y))
     }
-  }) : (0, r.jsx)(s.YNO, {
+  }) : (0, r.jsx)(o.YNO, {
     targetElementRef: C,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsxs)(s.W1t, {
+      return (0, r.jsxs)(o.W1t, {
         "data-menu-needs-review": true,
         onSelect: true,
         navId: "edit-profile-popout",
         onClose: t,
         "aria-label": h.intl.string(h.t.AXIHpV),
-        children: [(0, r.jsx)(s.Drp, {
+        children: [(0, r.jsx)(o.Drp, {
           id: "edit-server-profile",
           label: h.intl.string(h.t["PKQB/H"]),
           subtext: h.intl.string(h.t.VYHWKJ),
           action: () => {
             T({
               action: "EDIT_GUILD_PROFILE"
-            }), null == b || b(), I(), (0, o.A)(y)
+            }), null == b || b(), I(), (0, s.A)(y)
           }
-        }), (0, r.jsx)(s.Drp, {
+        }), (0, r.jsx)(o.Drp, {
           id: "edit-main-profile",
           label: h.intl.string(h.t.HmFaFB),
           subtext: h.intl.string(h.t["+EERMk"]),
           action: () => {
             T({
               action: "EDIT_PROFILE"
-            }), null == b || b(), S(), (0, o.A)(y)
+            }), null == b || b(), S(), (0, s.A)(y)
           }
         })]
       })
@@ -122,7 +122,7 @@ function b(e) {
       return (0, r.jsx)(_.FD, g({
         buttonRef: C,
         text: h.intl.string(h.t.s5vZlQ),
-        icon: s.R2l,
+        icon: o.R2l,
         autoFocus: true,
         fullWidth: m,
         variant: "primary",

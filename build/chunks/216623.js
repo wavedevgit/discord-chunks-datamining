@@ -20,7 +20,7 @@ async function c(e) {
     },
     rejectWithError: false
   });
-  if (t.ok) return (0, o.iz)(t.body)
+  if (t.ok) return (0, s.iz)(t.body)
 }
 async function u(e) {
   if ((await r.Bo.del({
@@ -29,13 +29,13 @@ async function u(e) {
     })).ok) returntrue
 }
 async function d() {
-  if (!s.A.getIsStale()) return Promise.resolve();
+  if (!o.A.getIsStale()) return Promise.resolve();
   let e = (await r.Bo.get({
     url: l.Rsh.GET_SAVED_MESSAGES,
     rejectWithError: false
   })).body.results.map(e => ({
     message: null != e.message ? (0, a.rh)(e.message) : null,
-    saveData: (0, o.Dd)(e.save_data)
+    saveData: (0, s.Dd)(e.save_data)
   }));
   i.h.dispatch({
     type: "SAVED_MESSAGES_UPDATE",

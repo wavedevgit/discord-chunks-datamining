@@ -11,12 +11,12 @@ var Chunk311907 = require("./311907.js"),
   Chunk290863 = require("./290863.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e) {
-  return e.type === s.$pd.PLAYING
+function s(e) {
+  return e.type === o.$pd.PLAYING
 }
 
 function l(e, t) {
-  return t.findActivity(e, o)
+  return t.findActivity(e, s)
 }
 
 function c(e, t) {

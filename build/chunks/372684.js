@@ -5,7 +5,7 @@ require.d(exports, {
   Gy: () => r,
   k9: () => i,
   nQ: () => a,
-  rb: () => s
+  rb: () => o
 });
 var r = function(e) {
     return e.MANUAL = "manual", e.DISTRIBUTED = "distributed", e.PHRASE = "phrase", e.YELLING = "yelling", e.GAME_EVENT = "game_event", e.SPEAKING = "speaking", e.SOUNDBOARD = "soundboard", e
@@ -16,6 +16,6 @@ var r = function(e) {
   a = function(e) {
     return e.CLIP = "clip", e.SCREENSHOT = "screenshot", e.VOICE_CLIP = "voice_clip", e
   }({}),
-  s = function(e) {
+  o = function(e) {
     return e.KILL = "kill", e.MULTIKILL = "multikill", e.DEATH = "death", e.ASSIST = "assist", e.ITEM = "item", e.VICTORY = "victory", e.DEFEAT = "defeat", e.LEVEL_UP = "level_up", e.TREASURE = "treasure", e.OBJECTIVE_KILL = "objective_kill", e
   }({})

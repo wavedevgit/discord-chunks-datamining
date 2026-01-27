@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk504345 = require("./504345.jsx"),
   Chunk823607 = require("./823607.jsx"),
@@ -95,7 +95,7 @@ function v(e) {
   } = e, N = E(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "inputRef"]), {
     fieldProps: w,
     props: R
-  } = (0, o.ndh)(N), {
+  } = (0, s.ndh)(N), {
     disabled: P
   } = w, D = (0, u.Y)({
     validateOn: "change",
@@ -104,31 +104,31 @@ function v(e) {
     minLength: _,
     maxLength: m,
     defaultDirty: v
-  }), x = i.useMemo(() => {
+  }), L = i.useMemo(() => {
     if (null == m) return b;
     let e = "".concat(m).length;
     return O * (e += "".concat(m, " / ").length) + b
-  }, [m]), L = e => {
+  }, [m]), x = e => {
     let {
       onChange: t
     } = R;
     null == t || t(e.currentTarget.value), D.setShouldValidate(true)
-  }, j = I ? (0, r.jsx)(c.n, {
+  }, M = I ? (0, r.jsx)(c.n, {
     value: n,
     maxLength: S && null != m ? m : true
   }) : null;
-  return (0, r.jsx)(o.D0$, g(h({}, w), {
-    trailingAuxiliaryContent: j,
+  return (0, r.jsx)(s.D0$, g(h({}, w), {
+    trailingAuxiliaryContent: M,
     errorMessage: D.hasError && null != (t = D.errorMessage) ? t : true,
-    children: (0, r.jsx)(o.FON, {
+    children: (0, r.jsx)(s.FON, {
       validation: D,
       disabled: P,
-      children: (0, r.jsx)(o.vN3, {
+      children: (0, r.jsx)(s.vN3, {
         children: (0, r.jsx)(A, g(h({
           autosize: d,
-          className: s()(f.Tg, p.qD),
+          className: o()(f.Tg, p.qD),
           style: {
-            paddingRight: x
+            paddingRight: L
           },
           placeholder: a,
           value: n,
@@ -139,7 +139,7 @@ function v(e) {
           disabled: P,
           "data-mana-component": "text-area"
         }, R), {
-          onChange: L,
+          onChange: x,
           ref: C
         }))
       })
@@ -151,10 +151,10 @@ function A(e) {
   let {
     "aria-labelledby": t,
     autosize: n
-  } = e, a = E(e, ["aria-labelledby", "autosize"]), s = (0, l.xW)(), c = i.useContext(o._zY), u = n ? d.d : "textarea";
+  } = e, a = E(e, ["aria-labelledby", "autosize"]), o = (0, l.xW)(), c = i.useContext(s._zY), u = n ? d.d : "textarea";
   return (0, r.jsx)(u, g(h({}, a), {
     id: null == c ? true : c.controlId,
-    "aria-labelledby": null != t ? t : s.titleId,
+    "aria-labelledby": null != t ? t : o.titleId,
     "aria-describedby": null == c ? true : c.describedById,
     "aria-errormessage": null == c ? true : c.errorMessageId,
     "aria-invalid": (null == c ? true : c.errorMessageId) != null

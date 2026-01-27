@@ -39,7 +39,7 @@ let C = {
   N = Chunk306827.A;
 
 function w(e, t = {}) {
-  return R(e) ? (t.async = true, P(e, t).then(e => V(e, t))) : U(e) ? (t.async = true, G(e).then(e => V(e, t))) : V(e, t)
+  return R(e) ? (t.async = true, P(e, t).then(e => F(e, t))) : U(e) ? (t.async = true, G(e).then(e => F(e, t))) : F(e, t)
 }
 
 function R(e) {
@@ -47,7 +47,7 @@ function R(e) {
 }
 
 function P(e, t) {
-  return /^\w+:\/\//.test(e) ? "u" > typeof fetch ? D(e, t) : x(e, t) : j(e) ? Promise.resolve((0, r.C5)(e)) : M(e, t)
+  return /^\w+:\/\//.test(e) ? "u" > typeof fetch ? D(e, t) : L(e, t) : M(e) ? Promise.resolve((0, r.C5)(e)) : j(e, t)
 }
 
 function D(e, {
@@ -61,14 +61,14 @@ function D(e, {
   }), fetch(e, n).then(e => e.arrayBuffer())
 }
 
-function x(e, {
+function L(e, {
   length: t
 } = {}) {
   return new Promise((n, r) => {
     let i = {};
     Number.isInteger(t) && t >= 0 && (i.headers = {
       range: `bytes=0-${t-1}`
-    }), L(e)(e, i, e => {
+    }), x(e)(e, i, e => {
       if (e.statusCode >= 200 && e.statusCode <= 299) {
         let t = [];
         e.on("data", e => t.push(T.from(e))), e.on("error", e => r(e)), e.on("end", () => n(T.concat(t)))
@@ -77,31 +77,31 @@ function x(e, {
   })
 }
 
-function L(e) {
+function x(e) {
   return /^https:\/\//.test(e) ? require("https").get : require("http").get
 }
 
-function j(e) {
+function M(e) {
   return /^data:[^;,]*(;base64)?,/.test(e)
 }
 
-function M(e, {
+function j(e, {
   length: t
 } = {}) {
   return new Promise((n, r) => {
     let i = k();
-    i.open(e, (a, s) => {
-      a ? r(a) : i.stat(e, (a, o) => {
+    i.open(e, (a, o) => {
+      a ? r(a) : i.stat(e, (a, s) => {
         if (a) r(a);
         else {
-          let a = Math.min(o.size, true !== t ? t : o.size),
+          let a = Math.min(s.size, true !== t ? t : s.size),
             l = T.alloc(a),
             c = {
               buffer: l,
               length: a
             };
-          i.read(s, c, t => {
-            t ? r(t) : i.close(s, t => {
+          i.read(o, c, t => {
+            t ? r(t) : i.close(o, t => {
               t && console.warn(`Could not close file ${e}:`, t), n(l)
             })
           })
@@ -130,11 +130,11 @@ function G(e) {
   })
 }
 
-function V(e, t) {
-  return F(e) && (e = new Uint8Array(e).buffer), H(B(e), t)
+function F(e, t) {
+  return V(e) && (e = new Uint8Array(e).buffer), H(B(e), t)
 }
 
-function F(e) {
+function V(e) {
   try {
     return T.isBuffer(e)
   } catch (e) {
@@ -154,7 +154,7 @@ function H(e, {
   expanded: t = false,
   async: n = false,
   includeUnknown: i = false,
-  domParser: s
+  domParser: o
 } = {
   expanded: false,
   async: false,
@@ -169,16 +169,16 @@ function H(e, {
       fileDataOffset: R,
       jfifDataOffset: P,
       tiffHeaderOffset: D,
-      iptcDataOffset: x,
-      xmpChunks: L,
-      iccChunks: j,
-      mpfDataOffset: M,
+      iptcDataOffset: L,
+      xmpChunks: x,
+      iccChunks: M,
+      mpfDataOffset: j,
       pngHeaderOffset: k,
       pngTextChunks: U,
       pngChunkOffsets: G,
-      vp8xChunkOffset: V,
-      gifHeaderOffset: F
-    } = o.A.parseAppMarkers(e, n);
+      vp8xChunkOffset: F,
+      gifHeaderOffset: V
+    } = s.A.parseAppMarkers(e, n);
   if (a.A.USE_JPEG && a.A.USE_FILE && Y(R)) {
     T = true;
     let n = u.A.read(e, R);
@@ -193,21 +193,21 @@ function H(e, {
     T = true;
     let {
       tags: n,
-      byteOrder: o
+      byteOrder: s
     } = l.A.read(e, D, i);
-    if (n.Thumbnail && (C.Thumbnail = n.Thumbnail, delete n.Thumbnail), t ? (C.exif = n, z(C)) : C = (0, r.dP)({}, C, n), a.A.USE_TIFF && a.A.USE_IPTC && n["IPTC-NAA"] && !q(x)) {
+    if (n.Thumbnail && (C.Thumbnail = n.Thumbnail, delete n.Thumbnail), t ? (C.exif = n, z(C)) : C = (0, r.dP)({}, C, n), a.A.USE_TIFF && a.A.USE_IPTC && n["IPTC-NAA"] && !q(L)) {
       let e = f.A.read(n["IPTC-NAA"].value, 0, i);
       t ? C.iptc = e : C = (0, r.dP)({}, C, e)
     }
-    if (a.A.USE_TIFF && a.A.USE_XMP && n.ApplicationNotes && !Z(L)) {
-      let e = p.A.read((0, r.YF)(n.ApplicationNotes.value), true, s);
+    if (a.A.USE_TIFF && a.A.USE_XMP && n.ApplicationNotes && !Z(x)) {
+      let e = p.A.read((0, r.YF)(n.ApplicationNotes.value), true, o);
       t ? C.xmp = e : (delete e._raw, C = (0, r.dP)({}, C, e))
     }
     if (a.A.USE_PHOTOSHOP && n.ImageSourceData && n.PhotoshopSettings) {
       let e = _.A.read(n.PhotoshopSettings.value, i);
       t ? C.photoshop = e : C = (0, r.dP)({}, C, e)
     }
-    if (a.A.USE_TIFF && a.A.USE_ICC && n.ICC_Profile && !X(j)) {
+    if (a.A.USE_TIFF && a.A.USE_ICC && n.ICC_Profile && !Q(M)) {
       let e = h.A.read(n.ICC_Profile.value, [{
         offset: 0,
         length: n.ICC_Profile.value.length,
@@ -217,8 +217,8 @@ function H(e, {
       t ? C.icc = e : C = (0, r.dP)({}, C, e)
     }
     if (a.A.USE_MAKER_NOTES && n.MakerNote) {
-      if (Q(n)) {
-        let a = m.A.read(e, D, n.MakerNote.__offset, o, i);
+      if (X(n)) {
+        let a = m.A.read(e, D, n.MakerNote.__offset, s, i);
         t ? C.makerNotes = a : C = (0, r.dP)({}, C, a)
       } else if (J(n)) {
         let a = g.A.read(e, D, n.MakerNote.__offset, i);
@@ -227,24 +227,24 @@ function H(e, {
     }
     n.MakerNote && delete n.MakerNote.__offset
   }
-  if (a.A.USE_JPEG && a.A.USE_IPTC && q(x)) {
+  if (a.A.USE_JPEG && a.A.USE_IPTC && q(L)) {
     T = true;
-    let n = f.A.read(e, x, i);
+    let n = f.A.read(e, L, i);
     t ? C.iptc = n : C = (0, r.dP)({}, C, n)
   }
-  if (a.A.USE_XMP && Z(L)) {
+  if (a.A.USE_XMP && Z(x)) {
     T = true;
-    let n = p.A.read(e, L, s);
+    let n = p.A.read(e, x, o);
     t ? C.xmp = n : (delete n._raw, C = (0, r.dP)({}, C, n))
   }
-  if ((a.A.USE_JPEG || a.A.USE_WEBP) && a.A.USE_ICC && X(j)) {
+  if ((a.A.USE_JPEG || a.A.USE_WEBP) && a.A.USE_ICC && Q(M)) {
     T = true;
-    let t = h.A.read(e, j, n);
-    t instanceof Promise ? N.push(t.then(es)) : es(t)
+    let t = h.A.read(e, M, n);
+    t instanceof Promise ? N.push(t.then(eo)) : eo(t)
   }
-  if (a.A.USE_MPF && $(M)) {
+  if (a.A.USE_MPF && $(j)) {
     T = true;
-    let n = c.A.read(e, M, i);
+    let n = c.A.read(e, j, i);
     t ? C.mpf = n : C = (0, r.dP)({}, C, n)
   }
   if (a.A.USE_PNG && a.A.USE_PNG_FILE && ee(k)) {
@@ -258,21 +258,21 @@ function H(e, {
       readTags: t,
       readTagsPromise: r
     } = y.A.read(e, U, n, i);
-    eo(t), r && N.push(r.then(e => e.forEach(eo)))
+    es(t), r && N.push(r.then(e => e.forEach(es)))
   }
   if (a.A.USE_PNG && en(G)) {
     T = true;
     let n = b.A.read(e, G);
     t ? C.png = C.png ? (0, r.dP)({}, C.png, n) : n : C = (0, r.dP)({}, C, n)
   }
-  if (a.A.USE_WEBP && er(V)) {
+  if (a.A.USE_WEBP && er(F)) {
     T = true;
-    let n = O.A.read(e, V);
+    let n = O.A.read(e, F);
     t ? C.riff = C.riff ? (0, r.dP)({}, C.riff, n) : n : C = (0, r.dP)({}, C, n)
   }
-  if (a.A.USE_GIF && ei(F)) {
+  if (a.A.USE_GIF && ei(V)) {
     T = true;
-    let n = v.A.read(e, F);
+    let n = v.A.read(e, V);
     t ? C.gif = C.gif ? (0, r.dP)({}, C.gif, n) : n : C = (0, r.dP)({}, C, n)
   }
   let B = I.A.get(C, t);
@@ -282,11 +282,11 @@ function H(e, {
   if (n) return Promise.all(N).then(() => C);
   return C;
 
-  function es(e) {
+  function eo(e) {
     t ? C.icc = e : C = (0, r.dP)({}, C, e)
   }
 
-  function eo(e) {
+  function es(e) {
     if (t) {
       for (let t of ["exif", "iptc"]) {
         let n = `__${t}`;
@@ -312,10 +312,10 @@ function K(e) {
 function z(e) {
   if (e.exif) {
     if (e.exif.GPSLatitude && e.exif.GPSLatitudeRef) try {
-      e.gps = e.gps || {}, e.gps.Latitude = (0, s.e7)(e.exif.GPSLatitude.value), "S" === e.exif.GPSLatitudeRef.value.join("") && (e.gps.Latitude = -e.gps.Latitude)
+      e.gps = e.gps || {}, e.gps.Latitude = (0, o.e7)(e.exif.GPSLatitude.value), "S" === e.exif.GPSLatitudeRef.value.join("") && (e.gps.Latitude = -e.gps.Latitude)
     } catch (e) {}
     if (e.exif.GPSLongitude && e.exif.GPSLongitudeRef) try {
-      e.gps = e.gps || {}, e.gps.Longitude = (0, s.e7)(e.exif.GPSLongitude.value), "W" === e.exif.GPSLongitudeRef.value.join("") && (e.gps.Longitude = -e.gps.Longitude)
+      e.gps = e.gps || {}, e.gps.Longitude = (0, o.e7)(e.exif.GPSLongitude.value), "W" === e.exif.GPSLongitudeRef.value.join("") && (e.gps.Longitude = -e.gps.Longitude)
     } catch (e) {}
     if (e.exif.GPSAltitude && e.exif.GPSAltitudeRef) try {
       e.gps = e.gps || {}, e.gps.Altitude = e.exif.GPSAltitude.value[0] / e.exif.GPSAltitude.value[1], 1 === e.exif.GPSAltitudeRef.value && (e.gps.Altitude = -e.gps.Altitude)
@@ -331,11 +331,11 @@ function Z(e) {
   return Array.isArray(e) && e.length > 0
 }
 
-function X(e) {
+function Q(e) {
   return Array.isArray(e) && e.length > 0
 }
 
-function Q(e) {
+function X(e) {
   return e.Make && e.Make.value && Array.isArray(e.Make.value) && "Canon" === e.Make.value[0] && e.MakerNote && e.MakerNote.__offset
 }
 

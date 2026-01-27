@@ -9,7 +9,7 @@ var Chunk587779 = require("./587779.js"),
   Chunk93521 = require("./93521.js");
 module.exports = function(e, t, n) {
   var u = false;
-  return t = r(t.length ? t : [c], o(i)), s(a(e, function(e, n, i) {
+  return t = r(t.length ? t : [c], s(i)), o(a(e, function(e, n, i) {
     return {
       criteria: r(t, function(t) {
         return t(e)

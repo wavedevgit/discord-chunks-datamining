@@ -12,15 +12,15 @@ try {
 }
 if (Chunk173081 && r) {
   var a = {},
-    s = {};
-  Chunk173081(s, "length", {
+    o = {};
+  Chunk173081(o, "length", {
     "[[Get]]": function() {
       throw a
     },
     "[[Enumerable]]": true
   }), module.exports = function(e) {
     try {
-      r(e, s)
+      r(e, o)
     } catch (e) {
       return e === a
     }

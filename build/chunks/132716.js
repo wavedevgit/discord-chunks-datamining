@@ -4,38 +4,38 @@
 require.d(exports, {
   Fe: () => l,
   HI: () => d,
-  rd: () => o
+  rd: () => s
 });
 var Chunk401705 = require("./401705.js"),
   Chunk408713 = require("./408713.js"),
   Chunk64700 = require("./64700.js");
-let s = (0, Chunk64700.createContext)({
+let o = (0, Chunk64700.createContext)({
   isNative: true,
   open: u,
   useHref: e => e
 });
 
-function o() {
-  return (0, a.useContext)(s)
+function s() {
+  return (0, a.useContext)(o)
 }
 
 function l(e, t, n = true) {
-  var a, s;
+  var a, o;
   let {
-    metaKey: o,
+    metaKey: s,
     ctrlKey: c,
     altKey: u,
     shiftKey: d
   } = t;
-  (0, i.gm)() && (null == (s = window.event) || null == (a = s.type) ? true : a.startsWith("key")) && "_blank" === e.target && ((0, i.cX)() ? o = true : c = true);
+  (0, i.gm)() && (null == (o = window.event) || null == (a = o.type) ? true : a.startsWith("key")) && "_blank" === e.target && ((0, i.cX)() ? s = true : c = true);
   let f = (0, i.Tc)() && (0, i.cX)() && !(0, i.bh)() && 1 ? new KeyboardEvent("keydown", {
     keyIdentifier: "Enter",
-    metaKey: o,
+    metaKey: s,
     ctrlKey: c,
     altKey: u,
     shiftKey: d
   }) : new MouseEvent("click", {
-    metaKey: o,
+    metaKey: s,
     ctrlKey: c,
     altKey: u,
     shiftKey: d,
@@ -59,7 +59,7 @@ function u(e, t) {
 
 function d(e) {
   var t;
-  let n = o().useHref(null != (t = e.href) ? t : "");
+  let n = s().useHref(null != (t = e.href) ? t : "");
   return {
     "data-href": e.href ? n : true,
     "data-target": e.target,

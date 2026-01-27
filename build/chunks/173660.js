@@ -19,8 +19,8 @@ function u(e) {
     channel: n,
     authenticationStore: r = a.default,
     voiceStateStore: u = l.A,
-    mediaEngineStore: d = s.A,
-    permissionStore: f = o.A,
+    mediaEngineStore: d = o.A,
+    permissionStore: f = s.A,
     impersonateStore: p = i.A
   } = e, _ = null != n ? u.getVoiceState(n.getGuildId(), r.getId()) : null, h = d.isSelfMute() || d.isSelfMutedTemporarily(), m = null == n ? true : n.getGuildId(), g = p.isViewingRoles(m) && !f.can(c.xBc.SPEAK, n);
   return {
@@ -31,12 +31,12 @@ function u(e) {
 }
 
 function d(e) {
-  return (0, r.cf)([a.default, l.A, s.A, o.A, i.A], () => u({
+  return (0, r.cf)([a.default, l.A, o.A, s.A, i.A], () => u({
     channel: e,
     authenticationStore: a.default,
     voiceStateStore: l.A,
-    mediaEngineStore: s.A,
-    permissionStore: o.A,
+    mediaEngineStore: o.A,
+    permissionStore: s.A,
     impersonateStore: i.A
   }))
 }

@@ -4,18 +4,18 @@
 require.d(exports, {
   Nl: () => u,
   Ub: () => c,
-  fS: () => o,
+  fS: () => s,
   iY: () => l
 }), require("./65821.js");
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
   Chunk224771 = require("./224771.js"),
   Chunk652215 = require("./652215.js");
-async function o(e) {
+async function s(e) {
   let {
     skuId: t,
     paymentSourceId: n,
-    paymentGateway: o,
+    paymentGateway: s,
     loadId: l
   } = e;
   i.h.wait(() => {
@@ -25,7 +25,7 @@ async function o(e) {
   });
   try {
     let e = {};
-    null != n && (e.payment_source_id = n), null != o && (e.payment_gateway = o);
+    null != n && (e.payment_source_id = n), null != s && (e.payment_gateway = s);
     let c = {
         order_line_items: [{
           sku_id: t,
@@ -35,7 +35,7 @@ async function o(e) {
         billing_facet: e
       },
       u = (await r.Bo.post({
-        url: s.Rsh.ORDER_CREATE,
+        url: o.Rsh.ORDER_CREATE,
         body: c,
         context: null != l && "" !== l ? {
           load_id: l
@@ -69,7 +69,7 @@ async function l(e) {
     "paymentSourceId" in n && (e.billing_facet = {
       payment_source_id: n.paymentSourceId
     }), await r.Bo.patch({
-      url: s.Rsh.ORDER_UPDATE(t),
+      url: o.Rsh.ORDER_UPDATE(t),
       body: e,
       rejectWithError: true
     }), await i.h.dispatch({
@@ -92,7 +92,7 @@ async function c(e) {
     let e = {};
     null != n && (e.expected_revision = n);
     let a = await r.Bo.post({
-      url: s.Rsh.ORDER_SIGN(t),
+      url: o.Rsh.ORDER_SIGN(t),
       body: e,
       context: null != i && "" !== i ? {
         load_id: i
@@ -108,7 +108,7 @@ async function c(e) {
 async function u(e) {
   try {
     let t = await r.Bo.post({
-      url: s.Rsh.ORDER_DISCARD(e),
+      url: o.Rsh.ORDER_DISCARD(e),
       rejectWithError: false
     });
     if (null == t.body) throw Error("Invalid discard order response");

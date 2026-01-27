@@ -44,9 +44,9 @@ function p(e) {
     application: _,
     entry: h,
     onClose: m
-  } = e, g = (0, o.A)(f({
+  } = e, g = (0, s.A)(f({
     location: t,
-    source: s.Ob.UserProfile,
+    source: o.Ob.UserProfile,
     trackEntryPointImpression: true
   }, (0, c.UE)({
     user: n,

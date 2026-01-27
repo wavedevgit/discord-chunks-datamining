@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 112247, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 112247, original params: e,t,n (module,exports,require) **/
 module.exports = {
   E6: "embed__98ba8",
   wk: "showVideoOnFocus__98ba8",

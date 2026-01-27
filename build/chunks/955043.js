@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 955043, original params: e (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 955043, original params: t (module,exports,require) **/
 "use strict";
 module.exports = {
   BOLD: {

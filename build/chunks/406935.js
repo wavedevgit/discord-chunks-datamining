@@ -26,22 +26,22 @@ class l extends Chunk324281.G {
     let t = {
       value: 0
     };
-    return globalThis.Object.defineProperty(t, s.$, {
+    return globalThis.Object.defineProperty(t, o.$, {
       enumerable: false,
       value: this
     }), true !== e && (0, a.x)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let a = null != r ? r : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, r] = e.tag();
       if (1 === t) a.value = e.double();
       else {
-        let s = n.readUnknownField;
-        if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-        let o = e.skip(r);
-        false !== s && (true === s ? i.f$.onRead : s)(this.typeName, a, t, r, o)
+        let o = n.readUnknownField;
+        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+        let s = e.skip(r);
+        false !== o && (true === o ? i.f$.onRead : o)(this.typeName, a, t, r, s)
       }
     }
     return a
@@ -72,22 +72,22 @@ class c extends Chunk324281.G {
     let t = {
       value: 0
     };
-    return globalThis.Object.defineProperty(t, s.$, {
+    return globalThis.Object.defineProperty(t, o.$, {
       enumerable: false,
       value: this
     }), true !== e && (0, a.x)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let a = null != r ? r : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, r] = e.tag();
       if (1 === t) a.value = e.float();
       else {
-        let s = n.readUnknownField;
-        if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-        let o = e.skip(r);
-        false !== s && (true === s ? i.f$.onRead : s)(this.typeName, a, t, r, o)
+        let o = n.readUnknownField;
+        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+        let s = e.skip(r);
+        false !== o && (true === o ? i.f$.onRead : o)(this.typeName, a, t, r, s)
       }
     }
     return a
@@ -118,22 +118,22 @@ class d extends Chunk324281.G {
     let t = {
       value: "0"
     };
-    return globalThis.Object.defineProperty(t, s.$, {
+    return globalThis.Object.defineProperty(t, o.$, {
       enumerable: false,
       value: this
     }), true !== e && (0, a.x)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let a = null != r ? r : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, r] = e.tag();
       if (1 === t) a.value = e.int64().toString();
       else {
-        let s = n.readUnknownField;
-        if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-        let o = e.skip(r);
-        false !== s && (true === s ? i.f$.onRead : s)(this.typeName, a, t, r, o)
+        let o = n.readUnknownField;
+        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+        let s = e.skip(r);
+        false !== o && (true === o ? i.f$.onRead : o)(this.typeName, a, t, r, s)
       }
     }
     return a
@@ -164,22 +164,22 @@ class p extends Chunk324281.G {
     let t = {
       value: "0"
     };
-    return globalThis.Object.defineProperty(t, s.$, {
+    return globalThis.Object.defineProperty(t, o.$, {
       enumerable: false,
       value: this
     }), true !== e && (0, a.x)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let a = null != r ? r : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, r] = e.tag();
       if (1 === t) a.value = e.uint64().toString();
       else {
-        let s = n.readUnknownField;
-        if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-        let o = e.skip(r);
-        false !== s && (true === s ? i.f$.onRead : s)(this.typeName, a, t, r, o)
+        let o = n.readUnknownField;
+        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+        let s = e.skip(r);
+        false !== o && (true === o ? i.f$.onRead : o)(this.typeName, a, t, r, s)
       }
     }
     return a
@@ -210,22 +210,22 @@ class h extends Chunk324281.G {
     let t = {
       value: 0
     };
-    return globalThis.Object.defineProperty(t, s.$, {
+    return globalThis.Object.defineProperty(t, o.$, {
       enumerable: false,
       value: this
     }), true !== e && (0, a.x)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let a = null != r ? r : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, r] = e.tag();
       if (1 === t) a.value = e.int32();
       else {
-        let s = n.readUnknownField;
-        if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-        let o = e.skip(r);
-        false !== s && (true === s ? i.f$.onRead : s)(this.typeName, a, t, r, o)
+        let o = n.readUnknownField;
+        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+        let s = e.skip(r);
+        false !== o && (true === o ? i.f$.onRead : o)(this.typeName, a, t, r, s)
       }
     }
     return a
@@ -256,22 +256,22 @@ class g extends Chunk324281.G {
     let t = {
       value: 0
     };
-    return globalThis.Object.defineProperty(t, s.$, {
+    return globalThis.Object.defineProperty(t, o.$, {
       enumerable: false,
       value: this
     }), true !== e && (0, a.x)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let a = null != r ? r : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, r] = e.tag();
       if (1 === t) a.value = e.uint32();
       else {
-        let s = n.readUnknownField;
-        if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-        let o = e.skip(r);
-        false !== s && (true === s ? i.f$.onRead : s)(this.typeName, a, t, r, o)
+        let o = n.readUnknownField;
+        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+        let s = e.skip(r);
+        false !== o && (true === o ? i.f$.onRead : o)(this.typeName, a, t, r, s)
       }
     }
     return a
@@ -302,22 +302,22 @@ class y extends Chunk324281.G {
     let t = {
       value: false
     };
-    return globalThis.Object.defineProperty(t, s.$, {
+    return globalThis.Object.defineProperty(t, o.$, {
       enumerable: false,
       value: this
     }), true !== e && (0, a.x)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let a = null != r ? r : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, r] = e.tag();
       if (1 === t) a.value = e.bool();
       else {
-        let s = n.readUnknownField;
-        if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-        let o = e.skip(r);
-        false !== s && (true === s ? i.f$.onRead : s)(this.typeName, a, t, r, o)
+        let o = n.readUnknownField;
+        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+        let s = e.skip(r);
+        false !== o && (true === o ? i.f$.onRead : o)(this.typeName, a, t, r, s)
       }
     }
     return a
@@ -348,22 +348,22 @@ class O extends Chunk324281.G {
     let t = {
       value: ""
     };
-    return globalThis.Object.defineProperty(t, s.$, {
+    return globalThis.Object.defineProperty(t, o.$, {
       enumerable: false,
       value: this
     }), true !== e && (0, a.x)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let a = null != r ? r : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, r] = e.tag();
       if (1 === t) a.value = e.string();
       else {
-        let s = n.readUnknownField;
-        if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-        let o = e.skip(r);
-        false !== s && (true === s ? i.f$.onRead : s)(this.typeName, a, t, r, o)
+        let o = n.readUnknownField;
+        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+        let s = e.skip(r);
+        false !== o && (true === o ? i.f$.onRead : o)(this.typeName, a, t, r, s)
       }
     }
     return a
@@ -394,22 +394,22 @@ class A extends Chunk324281.G {
     let t = {
       value: new Uint8Array(0)
     };
-    return globalThis.Object.defineProperty(t, s.$, {
+    return globalThis.Object.defineProperty(t, o.$, {
       enumerable: false,
       value: this
     }), true !== e && (0, a.x)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let a = null != r ? r : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, r] = e.tag();
       if (1 === t) a.value = e.bytes();
       else {
-        let s = n.readUnknownField;
-        if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-        let o = e.skip(r);
-        false !== s && (true === s ? i.f$.onRead : s)(this.typeName, a, t, r, o)
+        let o = n.readUnknownField;
+        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+        let s = e.skip(r);
+        false !== o && (true === o ? i.f$.onRead : o)(this.typeName, a, t, r, s)
       }
     }
     return a

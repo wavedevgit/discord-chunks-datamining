@@ -1,39 +1,36 @@
-/** Chunk was on web.js **/
-/** chunk id: 541635, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 541635, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk617179 = require("./617179.js"),
   Chunk279998 = require("./279998.js"),
-  a = require("./116740.js").OrderedMap,
-  s = function(e) {
-    var t, n = {};
-    return a(e.withMutations(function(e) {
-      e.forEach(function(r, a) {
-        var s = r.getKey(),
-          o = r.getNextSiblingKey(),
-          l = r.getPrevSiblingKey(),
-          c = r.getChildKeys(),
-          u = r.getParentKey(),
-          d = i();
-        if (n[s] = d, o && (e.get(o) ? e.setIn([o, "prevSibling"], d) : e.setIn([s, "nextSibling"], null)), l && (e.get(l) ? e.setIn([l, "nextSibling"], d) : e.setIn([s, "prevSibling"], null)), u && e.get(u)) {
-          var f = e.get(u).getChildKeys();
-          e.setIn([u, "children"], f.set(f.indexOf(r.getKey()), d))
-        } else e.setIn([s, "parent"], null), t && (e.setIn([t.getKey(), "nextSibling"], d), e.setIn([s, "prevSibling"], n[t.getKey()])), t = e.get(s);
-        c.forEach(function(t) {
-          e.get(t) ? e.setIn([t, "parent"], d) : e.setIn([s, "children"], r.getChildKeys().filter(function(e) {
-            return e !== t
+  o = require("./116740.js").OrderedMap,
+  a = function(t) {
+    var e, r = {};
+    return o(t.withMutations(function(t) {
+      t.forEach(function(n, o) {
+        var a = n.getKey(),
+          s = n.getNextSiblingKey(),
+          u = n.getPrevSiblingKey(),
+          c = n.getChildKeys(),
+          l = n.getParentKey(),
+          f = i();
+        if (r[a] = f, s && (t.get(s) ? t.setIn([s, "prevSibling"], f) : t.setIn([a, "nextSibling"], null)), u && (t.get(u) ? t.setIn([u, "nextSibling"], f) : t.setIn([a, "prevSibling"], null)), l && t.get(l)) {
+          var p = t.get(l).getChildKeys();
+          t.setIn([l, "children"], p.set(p.indexOf(n.getKey()), f))
+        } else t.setIn([a, "parent"], null), e && (t.setIn([e.getKey(), "nextSibling"], f), t.setIn([a, "prevSibling"], r[e.getKey()])), e = t.get(a);
+        c.forEach(function(e) {
+          t.get(e) ? t.setIn([e, "parent"], f) : t.setIn([a, "children"], n.getChildKeys().filter(function(t) {
+            return t !== e
           }))
         })
       })
-    }).toArray().map(function(e) {
-      return [n[e.getKey()], e.set("key", n[e.getKey()])]
-    }))
-  },
-  o = function(e) {
-    return a(e.toArray().map(function(e) {
-      var t = i();
-      return [t, e.set("key", t)]
+    }).toArray().map(function(t) {
+      return [r[t.getKey()], t.set("key", r[t.getKey()])]
     }))
   };
-module.exports = function(e) {
-  return e.first() instanceof r ? s(e) : o(e)
+module.exports = function(t) {
+  return t.first() instanceof n ? a(t) : o(t.toArray().map(function(t) {
+    var e = i();
+    return [e, t.set("key", e)]
+  }))
 }

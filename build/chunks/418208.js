@@ -30,16 +30,16 @@ function d() {
 function f(e) {
   let t = (0, i.$8)(),
     n = null != e ? e : l.A.getChannelId(),
-    r = null != n ? s.A.getChannel(n) : null,
-    u = null != r && o.A.can(c.xB.REQUEST_TO_SPEAK, r);
+    r = null != n ? o.A.getChannel(n) : null,
+    u = null != r && s.A.can(c.xB.REQUEST_TO_SPEAK, r);
   return (0, a.W)("shouldAgeVerifyToSpeakForCurrentUser") && !t && u
 }
 
 function p(e) {
   let t = null != e ? e : l.A.getChannelId(),
-    n = (0, r.bG)([o.A, s.A], () => {
-      let e = null != t ? s.A.getChannel(t) : null;
-      return null != e && o.A.can(c.xB.REQUEST_TO_SPEAK, e)
+    n = (0, r.bG)([s.A, o.A], () => {
+      let e = null != t ? o.A.getChannel(t) : null;
+      return null != e && s.A.can(c.xB.REQUEST_TO_SPEAK, e)
     }, [t]),
     u = (0, i.uE)();
   return (0, a.f)("useShouldAgeVerifyToSpeakForCurrentUser") && !u && n
@@ -47,9 +47,9 @@ function p(e) {
 
 function _(e) {
   let t = null != e ? e : l.A.getChannelId(),
-    n = (0, r.bG)([o.A, s.A], () => {
-      let e = null != t ? s.A.getChannel(t) : null;
-      return null != e && o.A.can(c.xB.REQUEST_TO_SPEAK, e)
+    n = (0, r.bG)([s.A, o.A], () => {
+      let e = null != t ? o.A.getChannel(t) : null;
+      return null != e && s.A.can(c.xB.REQUEST_TO_SPEAK, e)
     }, [t]),
     u = (0, i.b8)();
   return (0, a.f)("useShouldShowAgeVerificationPopover") && !u && n

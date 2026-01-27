@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
   Chunk656470 = require("./656470.js"),
-  s = require.n(Chunk656470),
+  o = require.n(Chunk656470),
   Chunk731854 = require("./731854.js");
 let l = [Chunk731854.fS.WINDOW, Chunk731854.fS.SCREEN];
 
@@ -19,8 +19,8 @@ function c(e, t, n) {
     height: 150
   };
   let c = [];
-  return t.includes(o.fS.SCREEN) && e.supports(o.O5.SCREEN_PREVIEWS) && (c.push(e.getScreenPreviews(n.width, n.height)), t = t.filter(e => e !== o.fS.SCREEN)), t.includes(o.fS.WINDOW) && e.supports(o.O5.WINDOW_PREVIEWS) && (c.push(e.getWindowPreviews(n.width, n.height)), t = t.filter(e => e !== o.fS.WINDOW)), 0 !== t.length && c.push(a.desktopCapture.getDesktopCaptureSources({
+  return t.includes(s.fS.SCREEN) && e.supports(s.O5.SCREEN_PREVIEWS) && (c.push(e.getScreenPreviews(n.width, n.height)), t = t.filter(e => e !== s.fS.SCREEN)), t.includes(s.fS.WINDOW) && e.supports(s.O5.WINDOW_PREVIEWS) && (c.push(e.getWindowPreviews(n.width, n.height)), t = t.filter(e => e !== s.fS.WINDOW)), 0 !== t.length && c.push(a.desktopCapture.getDesktopCaptureSources({
     types: t,
     thumbnailSize: n
-  })), Promise.all(c).then(e => s()(e))
+  })), Promise.all(c).then(e => o()(e))
 }

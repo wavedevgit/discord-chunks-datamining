@@ -21,7 +21,7 @@ module.exports = function(e) {
         2: "class.title"
       }
     },
-    s = {
+    o = {
       relevance: 0,
       match: [/\./, r],
       className: {
@@ -51,6 +51,6 @@ module.exports = function(e) {
         5: "keyword",
         7: "title.class.inherited"
       }
-    }, a, i, s, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, e.C_NUMBER_MODE]
+    }, a, i, o, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, e.C_NUMBER_MODE]
   }
 }

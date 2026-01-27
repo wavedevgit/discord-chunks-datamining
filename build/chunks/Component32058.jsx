@@ -20,13 +20,13 @@ let u = e => {
   } = e;
   return (0, r.jsx)("div", {
     className: a()(c.zr, c.Gg, c.EX, c.vl, l.yl, i),
-    "aria-label": o.intl.string(o.t.eQ2bLp),
+    "aria-label": s.intl.string(s.t.eQ2bLp),
     children: (0, r.jsxs)("form", {
       className: l.Zd,
       onSubmit: e => {
         e.preventDefault()
       },
-      children: [(0, r.jsx)(s.$mQ, {
+      children: [(0, r.jsx)(o.$mQ, {
         "data-migration-pending": true,
         className: l.gT,
         children: t

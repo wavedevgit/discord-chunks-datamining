@@ -19,7 +19,7 @@ function c(e) {
     filter: c
   } = (0, i.cf)([a.A], () => ({
     filter: a.A.getFilter()
-  })), u = (0, s.n)(t), d = (0, o.A)(u), f = (0, l.t)();
+  })), u = (0, o.n)(t), d = (0, s.A)(u), f = (0, l.t)();
   return r.useMemo(() => {
     function e(e) {
       return !!(!n || "" === c || e.application.name.toLowerCase().includes(c.toLowerCase()))

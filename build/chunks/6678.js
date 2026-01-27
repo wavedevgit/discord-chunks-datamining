@@ -4,7 +4,7 @@
 require.d(exports, {
   CV: () => i,
   E9: () => g,
-  EB: () => o,
+  EB: () => s,
   Pl: () => m,
   eB: () => a,
   fp: () => f,
@@ -72,7 +72,7 @@ let i = {
     dec: 12,
     "dec.": 12
   },
-  s = {
+  o = {
     un: 1,
     deux: 2,
     trois: 3,
@@ -87,7 +87,7 @@ let i = {
     douze: 12,
     treize: 13
   },
-  o = {
+  s = {
     sec: "second",
     seconde: "second",
     secondes: "second",
@@ -111,11 +111,11 @@ let i = {
     année: "year",
     années: "year"
   },
-  l = `(?:${(0,Chunk476858.uJ)(s)}|[0-9]+|[0-9]+\\.[0-9]+|une?\\b|quelques?|demi-?)`;
+  l = `(?:${(0,Chunk476858.uJ)(o)}|[0-9]+|[0-9]+\\.[0-9]+|une?\\b|quelques?|demi-?)`;
 
 function c(e) {
   let t = e.toLowerCase();
-  return true !== s[t] ? s[t] : "une" === t || "un" === t ? 1 : t.match(/quelques?/) ? 3 : t.match(/demi-?/) ? .5 : parseFloat(t)
+  return true !== o[t] ? o[t] : "une" === t || "un" === t ? 1 : t.match(/quelques?/) ? 3 : t.match(/demi-?/) ? .5 : parseFloat(t)
 }
 let u = "(?:[0-9]{1,2}(?:er)?)";
 
@@ -131,7 +131,7 @@ function p(e) {
   let t = parseInt(e);
   return t < 100 && (t > 50 ? t += 1900 : t += 2e3), t
 }
-let _ = `(${l})\\s{0,5}(${(0,Chunk476858.uJ)(o)})\\s{0,5}`,
+let _ = `(${l})\\s{0,5}(${(0,Chunk476858.uJ)(s)})\\s{0,5}`,
   h = RegExp(_, "i"),
   m = (0, Chunk476858.mb)("", _);
 
@@ -145,5 +145,5 @@ function g(e) {
 
 function E(e, t) {
   let n = c(t[1]);
-  e[o[t[2].toLowerCase()]] = n
+  e[s[t[2].toLowerCase()]] = n
 }

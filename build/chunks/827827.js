@@ -81,15 +81,15 @@ async function E(e) {
     durationMillis: u,
     disableTracking: f = false
   } = e;
-  null == n && (n = o.A.getStatus());
+  null == n && (n = s.A.getStatus());
   let p = null != u ? "".concat(Date.now() + u) : "0";
-  await s.wc.updateAsync("status", e => {
+  await o.wc.updateAsync("status", e => {
     e.status = i.hU.create({
       value: t
     }), e.statusExpiresAtMs = p, e.statusCreatedAtMs = n === t && null != e.statusCreatedAtMs ? e.statusCreatedAtMs : i.ol.create({
       value: "".concat(Date.now())
     })
-  }, s.Sb.INFREQUENT_USER_ACTION);
+  }, o.Sb.INFREQUENT_USER_ACTION);
   let h = g(t, p);
   if (r.OR.announce(h), f) return;
   let E = _({

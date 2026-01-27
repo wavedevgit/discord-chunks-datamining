@@ -45,68 +45,68 @@ let _ = {
       w = (0, d.A)(t.placement),
       R = !w,
       P = (0, a.A)(N),
-      D = (0, s.A)(P),
-      x = t.modifiersData.popperOffsets,
-      L = t.rects.reference,
-      j = t.rects.popper,
-      M = "function" == typeof T ? T(Object.assign({}, t.rects, {
+      D = (0, o.A)(P),
+      L = t.modifiersData.popperOffsets,
+      x = t.rects.reference,
+      M = t.rects.popper,
+      j = "function" == typeof T ? T(Object.assign({}, t.rects, {
         placement: t.placement
       })) : T,
-      k = "number" == typeof M ? {
-        mainAxis: M,
-        altAxis: M
+      k = "number" == typeof j ? {
+        mainAxis: j,
+        altAxis: j
       } : Object.assign({
         mainAxis: 0,
         altAxis: 0
-      }, M),
+      }, j),
       U = t.modifiersData.offset ? t.modifiersData.offset[t.placement] : null,
       G = {
         x: 0,
         y: 0
       };
-    if (x) {
+    if (L) {
       if (m) {
-        var V, F = "y" === P ? r.Mn : r.kb,
+        var F, V = "y" === P ? r.Mn : r.kb,
           B = "y" === P ? r.sQ : r.pG,
           H = "y" === P ? "height" : "width",
-          Y = x[P],
-          W = Y + C[F],
+          Y = L[P],
+          W = Y + C[V],
           K = Y - C[B],
-          z = I ? -j[H] / 2 : 0,
-          q = w === r.ni ? L[H] : j[H],
-          Z = w === r.ni ? -j[H] : -L[H],
-          X = t.elements.arrow,
-          Q = I && X ? (0, l.A)(X) : {
+          z = I ? -M[H] / 2 : 0,
+          q = w === r.ni ? x[H] : M[H],
+          Z = w === r.ni ? -M[H] : -x[H],
+          Q = t.elements.arrow,
+          X = I && Q ? (0, l.A)(Q) : {
             width: 0,
             height: 0
           },
           J = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : (0, f.A)(),
-          $ = J[F],
+          $ = J[V],
           ee = J[B],
-          et = (0, o.u)(0, L[H], Q[H]),
-          en = R ? L[H] / 2 - z - et - $ - k.mainAxis : q - et - $ - k.mainAxis,
-          er = R ? -L[H] / 2 + z + et + ee + k.mainAxis : Z + et + ee + k.mainAxis,
+          et = (0, s.u)(0, x[H], X[H]),
+          en = R ? x[H] / 2 - z - et - $ - k.mainAxis : q - et - $ - k.mainAxis,
+          er = R ? -x[H] / 2 + z + et + ee + k.mainAxis : Z + et + ee + k.mainAxis,
           ei = t.elements.arrow && (0, c.A)(t.elements.arrow),
           ea = ei ? "y" === P ? ei.clientTop || 0 : ei.clientLeft || 0 : 0,
-          es = null != (V = null == U ? true : U[P]) ? V : 0,
-          eo = Y + en - es - ea,
-          el = Y + er - es,
-          ec = (0, o.u)(I ? (0, p.jk)(W, eo) : W, Y, I ? (0, p.T9)(K, el) : K);
-        x[P] = ec, G[P] = ec - Y
+          eo = null != (F = null == U ? true : U[P]) ? F : 0,
+          es = Y + en - eo - ea,
+          el = Y + er - eo,
+          ec = (0, s.u)(I ? (0, p.jk)(W, es) : W, Y, I ? (0, p.T9)(K, el) : K);
+        L[P] = ec, G[P] = ec - Y
       }
       if (E) {
         var eu, ed = "x" === P ? r.Mn : r.kb,
           ef = "x" === P ? r.sQ : r.pG,
-          ep = x[D],
+          ep = L[D],
           e_ = "y" === D ? "height" : "width",
           eh = ep + C[ed],
           em = ep - C[ef],
           eg = false !== [r.Mn, r.kb].indexOf(N),
           eE = null != (eu = null == U ? true : U[D]) ? eu : 0,
-          ey = eg ? eh : ep - L[e_] - j[e_] - eE + k.altAxis,
-          eb = eg ? ep + L[e_] + j[e_] - eE - k.altAxis : em,
-          eO = I && eg ? (0, o.P)(ey, ep, eb) : (0, o.u)(I ? ey : eh, ep, I ? eb : em);
-        x[D] = eO, G[D] = eO - ep
+          ey = eg ? eh : ep - x[e_] - M[e_] - eE + k.altAxis,
+          eb = eg ? ep + x[e_] + M[e_] - eE - k.altAxis : em,
+          eO = I && eg ? (0, s.P)(ey, ep, eb) : (0, s.u)(I ? ey : eh, ep, I ? eb : em);
+        L[D] = eO, G[D] = eO - ep
       }
       t.modifiersData[_] = G
     }

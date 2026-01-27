@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Py: () => a,
-  Yw: () => s,
+  Yw: () => o,
   _r: () => i
 });
 var Chunk73153 = require("./73153.js");
@@ -20,6 +20,6 @@ function a() {
   })
 }
 
-function s() {
+function o() {
   window.location.reload()
 }

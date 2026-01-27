@@ -15,25 +15,25 @@ var Chunk927813 = require("./927813.js"),
 function l() {
   return [{
     id: "1hour",
-    label: o.intl.string(o.t.cs8A1c),
+    label: s.intl.string(s.t.cs8A1c),
     value: a.A.Minutes.HOUR
   }, {
     id: "24hours",
-    label: o.intl.string(o.t.zFKbrF),
+    label: s.intl.string(s.t.zFKbrF),
     value: a.A.Minutes.DAY
   }, {
     id: "3days",
-    label: o.intl.string(o.t.TmPIZX),
+    label: s.intl.string(s.t.TmPIZX),
     value: 3 * a.A.Minutes.DAY
   }, {
     id: "1week",
-    label: o.intl.string(o.t["/7i2el"]),
+    label: s.intl.string(s.t["/7i2el"]),
     value: a.A.Minutes.WEEK
   }]
 }
 
 function c(e, t) {
   var n;
-  return null != (n = null != t ? t : null == e ? true : e.defaultAutoArchiveDuration) ? n : s.cM
+  return null != (n = null != t ? t : null == e ? true : e.defaultAutoArchiveDuration) ? n : o.cM
 }
 Chunk927813.A.Minutes.HOUR, Chunk927813.A.Minutes.DAY, Chunk927813.A.Minutes.DAY, Chunk927813.A.Minutes.WEEK, i()(() => l().map(e => e.value))

@@ -10,16 +10,16 @@ var Chunk64700 = require("./64700.js"),
 function a(e) {
   let [t, n] = (0, i.P)(e.isExpanded, e.defaultExpanded || false, e.onExpandedChange), a = (0, r.useCallback)(() => {
     n(true)
-  }, [n]), s = (0, r.useCallback)(() => {
-    n(false)
   }, [n]), o = (0, r.useCallback)(() => {
+    n(false)
+  }, [n]), s = (0, r.useCallback)(() => {
     n(!t)
   }, [n, t]);
   return {
     isExpanded: t,
     setExpanded: n,
     expand: a,
-    collapse: s,
-    toggle: o
+    collapse: o,
+    toggle: s
   }
 }

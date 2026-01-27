@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk927578 = require("./927578.js"),
   Chunk580630 = require("./580630.js"),
@@ -53,7 +53,7 @@ let h = () => {
     intervalType: S,
     intervalCount: T
   } = m, C = (0, c.CE)("".concat(g), S, T);
-  return (0, r.jsxs)(o.Modal, {
+  return (0, r.jsxs)(s.Modal, {
     size: "md",
     transitionState: e,
     title: "".concat(p.intl.format(p.t.LZunzZ, {
@@ -69,7 +69,7 @@ let h = () => {
     onClose: async () => a(),
     children: [(0, r.jsxs)(u.Yx, {
       isPremiumRebrand: true,
-      className: s()({
+      className: o()({
         [_.JD]: O
       }),
       children: [(0, r.jsx)(u.Xd, {
@@ -85,7 +85,7 @@ let h = () => {
         renewalInvoice: n,
         isUpdate: true
       })]
-    }), O ? (0, r.jsx)(o.wx6, {
+    }), O ? (0, r.jsx)(s.wx6, {
       type: "critical",
       children: p.intl.string(p.t["5mlOCW"])
     }) : null]

@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -26,9 +26,9 @@ function s(e, t) {
   }
   return n
 }
-let o = /\n$/,
+let s = /\n$/,
   l = function(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
   }(function(e) {
@@ -44,5 +44,5 @@ let o = /\n$/,
     return e
   }({}, i().defaultRules.heading), {
     requiredFirstCharacters: [" ", "#"],
-    match: (e, t, n) => t.allowHeading && (null == n || "" === n || null != n.match(o)) ? (0, r.anyScopeRegex)(/^ *(#{1,3})(?:\s+)((?![#]+)[^\n]+?)#*\s*(?:\n|$)/)(e, t, n) : null
+    match: (e, t, n) => t.allowHeading && (null == n || "" === n || null != n.match(s)) ? (0, r.anyScopeRegex)(/^ *(#{1,3})(?:\s+)((?![#]+)[^\n]+?)#*\s*(?:\n|$)/)(e, t, n) : null
   })

@@ -15,13 +15,13 @@ let u = e => {
   let {
     profileBadge: t,
     tenureBadge: n
-  } = e, u = (0, o.I)(n.id);
+  } = e, u = (0, s.I)(n.id);
   return (0, r.jsxs)(a.A, {
     assetComponent: (0, r.jsx)("img", {
       src: u,
       alt: ""
     }),
-    tooltipWordmarkComponent: (0, r.jsx)(s.A, {
+    tooltipWordmarkComponent: (0, r.jsx)(o.A, {
       width: 56,
       className: c.R
     }),

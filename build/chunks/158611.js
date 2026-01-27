@@ -1,9 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 158611, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 158611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  Z: () => l
 });
-var r = function(e) {
-  return e[e.EMBED = 1] = "EMBED", e
-}({})
+var r, l = ((r = {})[r.EMBED = 1] = "EMBED", r)

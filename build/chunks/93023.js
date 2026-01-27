@@ -17,10 +17,10 @@ let r = e => {
       a = {
         setState: r,
         getState: i,
-        getInitialState: () => s,
+        getInitialState: () => o,
         subscribe: e => (n.add(e), () => n.delete(e))
       },
-      s = t = e(r, i, a);
+      o = t = e(r, i, a);
     return a
   },
   i = e => e ? r(e) : r

@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 376374, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 13088 **/
+/** chunk id: 376374, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  $P: () => S,
-  rc: () => I,
-  wF: () => v
+  $P: () => I,
+  rc: () => g,
+  wF: () => O
 });
-var Chunk627968 = require("./627968.js");
+var l, Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk323125 = require("./323125.js"),
   Chunk397927 = require("./397927.js"),
@@ -19,175 +18,153 @@ var Chunk323125 = require("./323125.js"),
   Chunk580630 = require("./580630.js"),
   Chunk56754 = require("./56754.js"),
   Chunk652215 = require("./652215.js"),
-  Chunk985018 = require("./985018.jsx");
+  Chunk985018 = require("./985018.jsx"),
+  O = ((l = {})[l.AVAILABLE = 0] = "AVAILABLE", l[l.LOADING = 1] = "LOADING", l[l.UPCOMING_PLAN = 2] = "UPCOMING_PLAN", l[l.SUBSCRIBED = 3] = "SUBSCRIBED", l[l.UNAVAILABLE = 4] = "UNAVAILABLE", l);
 
-function m(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function g(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      m(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function E(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function b(e, t) {
-  if (null == e) return {};
-  var n, r, i, a = {};
-  if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-  }
-  if (a = O(e, t), Object.getOwnPropertySymbols)
-    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-  return a
-}
-
-function O(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.getOwnPropertyNames(e);
-  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-  return i
-}
-var v = function(e) {
-  return e[e.AVAILABLE = 0] = "AVAILABLE", e[e.LOADING = 1] = "LOADING", e[e.UPCOMING_PLAN = 2] = "UPCOMING_PLAN", e[e.SUBSCRIBED = 3] = "SUBSCRIBED", e[e.UNAVAILABLE = 4] = "UNAVAILABLE", e
-}({});
-
-function A(e, t) {
-  switch (e) {
-    case 2:
-      return h.intl.formatToPlainString(h.t.k1ew5N, {
-        rate: t
-      });
-    case 3:
-      return h.intl.formatToPlainString(h.t["Hs3Y+I"], {
-        rate: t
-      });
-    case 4:
-      return h.intl.string(h.t.DLAKbi)
-  }
-}
-
-function I(e) {
+function g(t) {
   let {
-    appId: t,
+    appId: e,
     onClick: n,
-    onHasClicked: i,
-    skuId: a,
-    subscriptionPlan: s,
+    onHasClicked: l,
+    skuId: i,
+    subscriptionPlan: u,
     icon: o,
-    state: l = 0
-  } = e, c = e => {
-    n(e), null == i || i()
-  }, u = null != s ? (0, f._J)(s) : null, d = 1 === l;
-  return 0 === l || d ? (0, r.jsx)(T, {
-    appId: t,
-    skuId: a,
-    onClick: c,
-    loading: d,
+    state: s = 0
+  } = t, a = null != u ? (0, f._J)(u) : null, c = 1 === s;
+  return 0 === s || c ? (0, r.jsx)(m, {
+    appId: e,
+    skuId: i,
+    onClick: t => {
+      n(t), null == l || l()
+    },
+    loading: c,
     icon: o,
-    text: null != u ? h.intl.formatToPlainString(h.t.i4T8vz, {
-      rate: u
-    }) : h.intl.string(h.t.uuzaAK)
-  }) : (0, r.jsx)(C, {
-    text: A(l, null != u ? u : "")
+    text: null != a ? b.intl.formatToPlainString(b.t.i4T8vz, {
+      rate: a
+    }) : b.intl.string(b.t.uuzaAK)
+  }) : (0, r.jsx)(v, {
+    text: function(t, e) {
+      switch (t) {
+        case 2:
+          return b.intl.formatToPlainString(b.t.k1ew5N, {
+            rate: e
+          });
+        case 3:
+          return b.intl.formatToPlainString(b.t["Hs3Y+I"], {
+            rate: e
+          });
+        case 4:
+          return b.intl.string(b.t.DLAKbi)
+      }
+    }(s, null != a ? a : "")
   })
 }
 
-function S(e) {
+function I(t) {
   let {
-    appId: t,
+    appId: e,
     onClick: n,
-    onHasClicked: i,
-    sku: a,
-    icon: l
-  } = e, {
-    analyticsLocations: u
-  } = (0, o.Ay)(s.A.APP_STOREFRONT), d = () => {
-    (0, c.k)({
-      appId: t,
-      skuId: a.id,
-      analyticsLocations: u
-    })
-  }, m = (0, p.L)(a.id), g = a.type === _.Puh.DURABLE && m, {
-    price: E
-  } = a;
-  if (null == E) return null;
-  let y = e => {
-    (null != n ? n : d)(e), null == i || i()
-  };
-  return g ? (0, r.jsx)(C, {
-    text: h.intl.string(h.t["6cfuDj"])
-  }) : (0, r.jsx)(T, {
-    appId: t,
-    skuId: a.id,
-    onClick: y,
-    text: h.intl.format(h.t.Xp5WTn, {
-      price: (0, f.$g)(E.amount, E.currency)
+    onHasClicked: l,
+    sku: i,
+    icon: u
+  } = t, {
+    analyticsLocations: a
+  } = (0, s.Ay)(o.A.APP_STOREFRONT), d = (0, S.L)(i.id), p = i.type === A.Puh.DURABLE && d, {
+    price: O
+  } = i;
+  return null == O ? null : p ? (0, r.jsx)(v, {
+    text: b.intl.string(b.t["6cfuDj"])
+  }) : (0, r.jsx)(m, {
+    appId: e,
+    skuId: i.id,
+    onClick: t => {
+      (null != n ? n : () => {
+        (0, c.k)({
+          appId: e,
+          skuId: i.id,
+          analyticsLocations: a
+        })
+      })(t), null == l || l()
+    },
+    text: b.intl.format(b.t.Xp5WTn, {
+      price: (0, f.$g)(O.amount, O.currency)
     }),
-    icon: l
+    icon: u
   })
 }
 
-function T(e) {
+function m(t) {
+  var e, n;
   let {
-    appId: t,
-    skuId: n,
+    appId: l,
+    skuId: o,
     onClick: s
-  } = e, o = b(e, ["appId", "skuId", "onClick"]), c = (0, l.A)(), f = e => {
-    if (d.default.track(_.HAw.STOREFRONT_PURCHASE_CLICKED, {
-        application_id: t,
-        sku_id: n
-      }), !c) {
-      e.preventDefault(), e.stopPropagation();
-      let r = _.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t, n),
-        a = (0, i.T2)(r, false);
-      (0, u.pX)(a);
-      return
+  } = t, c = function(t, e) {
+    if (null == t) return {};
+    var n, l, r, i = {};
+    if ("u" > typeof Reflect && Reflect.ownKeys) {
+      for (r = 0, n = Reflect.ownKeys(t); r < n.length; r++) l = n[r], !(e.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(t, l) && (i[l] = t[l]);
+      return i
     }
-    null == s || s(e)
-  };
-  return (0, r.jsx)(a.Button, y(g({}, o), {
-    onClick: f
-  }))
+    if (i = function(t, e) {
+        if (null == t) return {};
+        var n, l, r = {},
+          i = Object.getOwnPropertyNames(t);
+        for (l = 0; l < i.length; l++) n = i[l], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (r[n] = t[n]);
+        return r
+      }(t, e), Object.getOwnPropertySymbols)
+      for (r = 0, n = Object.getOwnPropertySymbols(t); r < n.length; r++) l = n[r], !(e.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(t, l) && (i[l] = t[l]);
+    return i
+  }(t, ["appId", "skuId", "onClick"]), f = (0, a.A)();
+  return (0, r.jsx)(u.Button, (e = function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var n = null != arguments[e] ? arguments[e] : {},
+        l = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+        return Object.getOwnPropertyDescriptor(n, t).enumerable
+      }))), l.forEach(function(e) {
+        var l;
+        l = n[e], e in t ? Object.defineProperty(t, e, {
+          value: l,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : t[e] = l
+      })
+    }
+    return t
+  }({}, c), n = n = {
+    onClick: t => {
+      if (p.default.track(A.HAw.STOREFRONT_PURCHASE_CLICKED, {
+          application_id: l,
+          sku_id: o
+        }), !f) {
+        t.preventDefault(), t.stopPropagation();
+        let e = A.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(l, o),
+          n = (0, i.T2)(e, false);
+        (0, d.pX)(n);
+        return
+      }
+      null == s || s(t)
+    }
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {
+    var n = Object.keys(t);
+    if (Object.getOwnPropertySymbols) {
+      var l = Object.getOwnPropertySymbols(t);
+      n.push.apply(n, l)
+    }
+    return n
+  })(Object(n)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+  }), e))
 }
 
-function C(e) {
+function v(t) {
   let {
-    text: t
-  } = e;
-  return (0, r.jsx)(a.Button, {
-    text: t,
+    text: e
+  } = t;
+  return (0, r.jsx)(u.Button, {
+    text: e,
     disabled: true,
     variant: "primary"
   })

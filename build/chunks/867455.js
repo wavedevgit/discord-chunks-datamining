@@ -79,16 +79,16 @@ let S = {
       return await A(e, n)
     } catch (e) {
       var i, a;
-      throw (null == (i = e.body) ? true : i.code) === b.t02.TOO_MANY_THREADS ? s.A.show({
+      throw (null == (i = e.body) ? true : i.code) === b.t02.TOO_MANY_THREADS ? o.A.show({
         title: r ? v.intl.string(v.t.kwyWNX) : v.intl.string(v.t["PeIE/r"]),
         body: r ? v.intl.string(v.t.KGaiEK) : v.intl.string(v.t.P0wT5S)
-      }) : (null == (a = e.body) ? true : a.code) === b.t02.TOO_MANY_ANNOUNCEMENT_THREADS ? s.A.show({
+      }) : (null == (a = e.body) ? true : a.code) === b.t02.TOO_MANY_ANNOUNCEMENT_THREADS ? o.A.show({
         title: v.intl.string(v.t["PeIE/r"]),
         body: v.intl.string(v.t.jDMxz2)
-      }) : 429 === e.status ? s.A.show({
+      }) : 429 === e.status ? o.A.show({
         title: r ? v.intl.string(v.t.kwyWNX) : v.intl.string(v.t["PeIE/r"]),
         body: v.intl.string(v.t.Whhv4w)
-      }) : s.A.show({
+      }) : o.A.show({
         title: v.intl.string(v.t.j2d6Km),
         body: v.intl.string(v.t.fEptJP)
       }), e
@@ -117,11 +117,11 @@ let S = {
       var n;
       if ((null == (n = t.body) ? true : n.code) === b.t02.TOO_MANY_THREAD_MEMBERS) {
         let t = e.isForumPost();
-        s.A.show({
+        o.A.show({
           title: t ? v.intl.string(v.t.EMYJFi) : v.intl.string(v.t.gtdVcs),
           body: t ? v.intl.string(v.t.QYyad3) : v.intl.string(v.t.abMwgm)
         })
-      } else s.A.show({
+      } else o.A.show({
         title: v.intl.string(v.t.j2d6Km),
         body: v.intl.string(v.t.fEptJP)
       });
@@ -141,11 +141,11 @@ let S = {
       var r;
       if ((null == (r = t.body) ? true : r.code) === b.t02.TOO_MANY_THREAD_MEMBERS) {
         let t = e.isForumPost();
-        s.A.show({
+        o.A.show({
           title: t ? v.intl.string(v.t["0yAqqN"]) : v.intl.string(v.t.YErysD),
           body: t ? v.intl.string(v.t.QYyad3) : v.intl.string(v.t.abMwgm)
         })
-      } else s.A.show({
+      } else o.A.show({
         title: v.intl.string(v.t.j2d6Km),
         body: v.intl.string(v.t.fEptJP)
       })
@@ -257,7 +257,7 @@ let S = {
       location: n,
       channel_id: e.id,
       guild_id: e.guild_id
-    }), o.A.changeThreadSettings(e.id, {
+    }), s.A.changeThreadSettings(e.id, {
       parentMessageId: t,
       isPrivate: false,
       location: n
@@ -279,16 +279,16 @@ let S = {
       guildId: t,
       channelId: n,
       sortOrder: r,
-      tagFilter: s,
-      tagSetting: o,
+      tagFilter: o,
+      tagSetting: s,
       offset: l
     } = e;
-    h.A.isLoading(n, r, s, o) || (a.h.dispatch({
+    h.A.isLoading(n, r, o, s) || (a.h.dispatch({
       type: "LOAD_ARCHIVED_THREADS",
       channelId: n,
       sortOrder: r,
-      tagFilter: s,
-      tagSetting: o
+      tagFilter: o,
+      tagSetting: s
     }), i.Bo.get({
       url: b.Rsh.THREAD_SEARCH(n),
       query: {
@@ -296,8 +296,8 @@ let S = {
         sort_by: "last_message_time",
         sort_order: "desc",
         limit: h.m,
-        tag: s.size > 0 ? Array.from(s).join(",") : true,
-        tag_setting: o,
+        tag: o.size > 0 ? Array.from(o).join(",") : true,
+        tag_setting: s,
         offset: l
       },
       retries: 2,
@@ -316,16 +316,16 @@ let S = {
         type: "LOAD_ARCHIVED_THREADS_FAIL",
         channelId: n,
         sortOrder: r,
-        tagFilter: s,
-        tagSetting: o
+        tagFilter: o,
+        tagSetting: s
       }) : a.h.dispatch({
         type: "LOAD_ARCHIVED_THREADS_SUCCESS",
         guildId: t,
         channelId: n,
         offset: l,
         sortOrder: r,
-        tagFilter: s,
-        tagSetting: o,
+        tagFilter: o,
+        tagSetting: s,
         threads: i,
         firstMessages: d,
         mostRecentMessages: f,
@@ -338,14 +338,14 @@ let S = {
         type: "LOAD_ARCHIVED_THREADS_FAIL",
         channelId: n,
         sortOrder: r,
-        tagFilter: s,
-        tagSetting: o
+        tagFilter: o,
+        tagSetting: s
       })
     }))
   },
-  async searchThreads(e, t, n, s) {
-    let o = arguments.length > 4 && true !== arguments[4] ? arguments[4] : r.n.MATCH_SOME,
-      l = null != s && s.size > 0 ? Array.from(s).join(",") : true,
+  async searchThreads(e, t, n, o) {
+    let s = arguments.length > 4 && true !== arguments[4] ? arguments[4] : r.n.MATCH_SOME,
+      l = null != o && o.size > 0 ? Array.from(o).join(",") : true,
       {
         body: {
           threads: c,
@@ -358,7 +358,7 @@ let S = {
         query: {
           name: n,
           tag: l,
-          tag_setting: o
+          tag_setting: s
         },
         rejectWithError: false
       });
@@ -389,7 +389,7 @@ let S = {
       a.h.dispatch({
         type: "SUMMARIZE_THREAD_FAILURE",
         channelId: e.id
-      }), s.A.show({
+      }), o.A.show({
         title: v.intl.string(v.t.j2d6Km),
         body: v.intl.string(v.t.fEptJP)
       })

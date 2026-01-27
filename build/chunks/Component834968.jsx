@@ -55,10 +55,10 @@ function f(e, t) {
 }
 let p = e => {
   switch (e.id) {
-    case o.Ik.BUILT_IN:
-      return s.kC9;
-    case o.Ik.FRECENCY:
-      return s.O4;
+    case s.Ik.BUILT_IN:
+      return o.kC9;
+    case s.Ik.FRECENCY:
+      return o.O4;
     default:
       return
   }
@@ -69,8 +69,8 @@ function _(e) {
     section: t,
     className: n,
     width: i,
-    height: s,
-    padding: o,
+    height: o,
+    padding: s,
     isSelected: c,
     selectable: f = false
   } = e, _ = d(e, ["section", "className", "width", "height", "padding", "isSelected", "selectable"]), h = p(t);
@@ -81,15 +81,15 @@ function _(e) {
     }),
     style: {
       width: i,
-      height: s,
-      padding: null != o ? o : 0
+      height: o,
+      padding: null != s ? s : 0
     },
     children: null != h ? (0, r.jsx)(h, u({
       className: l.Kk,
       color: "currentColor",
       size: "custom",
       width: i,
-      height: s
+      height: o
     }, _)) : null
   })
 }

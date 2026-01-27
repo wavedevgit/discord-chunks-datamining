@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 326911, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 326911, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => h
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function _(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,45 +24,40 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = "WUMP-AAAAA-BBBBB-CCCCC";
-class y extends Chunk64700.Component {
+class f extends Chunk64700.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
         location: e
       }
     } = this.props;
-    return g(h({}, e), {
-      object: f.ZSU.BUTTON_CTA
+    return A(g({}, e), {
+      object: _.ZSU.BUTTON_CTA
     })
   }
   render() {
@@ -73,7 +67,7 @@ class y extends Chunk64700.Component {
       codeInput: t,
       submitting: n,
       hasError: i,
-      isPromoCode: a
+      isPromoCode: l
     } = this.state;
     return (0, r.jsx)(s.nVY, {
       label: p.intl.string(p.t["il+VCo"]),
@@ -85,9 +79,9 @@ class y extends Chunk64700.Component {
             type: e ? "password" : "text",
             value: t,
             onChange: this.handleChange,
-            placeholder: E,
-            error: !a && i ? p.intl.string(p.t.Y11a2u) : null,
-            helperText: a ? p.intl.format(p.t.gPt3PE, {
+            placeholder: "WUMP-AAAAA-BBBBB-CCCCC",
+            error: !l && i ? p.intl.string(p.t.Y11a2u) : null,
+            helperText: l ? p.intl.format(p.t.gPt3PE, {
               promoLink: () => {
                 window.open("https://discord.com/billing/promotions/".concat(t))
               }
@@ -104,23 +98,23 @@ class y extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), m(this, "state", {
       codeInput: "",
       submitting: false,
       hasError: false,
       isPromoCode: false
-    }), _(this, "handleChange", e => {
+    }), m(this, "handleChange", e => {
       this.setState({
         codeInput: e,
         hasError: false
       })
-    }), _(this, "handleSubmit", async e => {
+    }), m(this, "handleSubmit", async e => {
       e.preventDefault();
       let {
         codeInput: t
       } = this.state;
       if ("" === t) return;
-      let n = (0, d.Vd)(t);
+      let n = (0, u.Vd)(t);
       if (null == n) return void this.setState({
         hasError: true
       });
@@ -128,16 +122,16 @@ class y extends Chunk64700.Component {
         submitting: true
       });
       try {
-        let e = await o.A.resolveGiftCode(n);
+        let e = await a.A.resolveGiftCode(n);
         if (null != e && null != e.giftCode.promotion) throw this.setState({
           isPromoCode: true
         }), Error("Cannnot redeem promotion code as gift");
-        u.default.track(f.HAw.OPEN_MODAL, {
+        d.default.track(_.HAw.OPEN_MODAL, {
           type: "gift_accept",
-          location: g(h({}, this.analyticsLocation), {
-            object: f.ZSU.BUTTON_CTA
+          location: A(g({}, this.analyticsLocation), {
+            object: _.ZSU.BUTTON_CTA
           })
-        }), (0, l.h)({
+        }), (0, o.h)({
           processedCode: n
         }), this.setState({
           codeInput: ""
@@ -155,10 +149,10 @@ class y extends Chunk64700.Component {
   }
 }
 
-function b() {
-  let e = i.useContext(u.AnalyticsContext),
-    t = (0, a.bG)([c.A], () => c.A.enabled);
-  return (0, r.jsx)(y, {
+function h() {
+  let e = i.useContext(d.AnalyticsContext),
+    t = (0, l.bG)([c.A], () => c.A.enabled);
+  return (0, r.jsx)(f, {
     analyticsContext: e,
     obscureInput: t
   })

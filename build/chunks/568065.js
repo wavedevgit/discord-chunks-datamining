@@ -73,7 +73,7 @@ let b = () => ({
     [l.GuildFeatures.AUDIO_BITRATE_128_KBPS]: {
       perkIcon: a.TP.AUDIO,
       description: c.intl.formatToPlainString(c.t.zoT1ZE, {
-        bitrate: o.TG[l.TVA.TIER_1].limits.bitrate / 1e3
+        bitrate: s.TG[l.TVA.TIER_1].limits.bitrate / 1e3
       })
     },
     [l.GuildFeatures.INVITE_SPLASH]: {
@@ -87,7 +87,7 @@ let b = () => ({
     [l.GuildFeatures.AUDIO_BITRATE_256_KBPS]: {
       perkIcon: a.TP.AUDIO,
       description: c.intl.formatToPlainString(c.t.zoT1ZE, {
-        bitrate: o.TG[l.TVA.TIER_2].limits.bitrate / 1e3
+        bitrate: s.TG[l.TVA.TIER_2].limits.bitrate / 1e3
       })
     },
     [l.GuildFeatures.ROLE_ICONS]: {
@@ -111,7 +111,7 @@ let b = () => ({
     [l.GuildFeatures.AUDIO_BITRATE_384_KBPS]: {
       perkIcon: a.TP.AUDIO,
       description: c.intl.formatToPlainString(c.t.zoT1ZE, {
-        bitrate: o.TG[l.TVA.TIER_3].limits.bitrate / 1e3
+        bitrate: s.TG[l.TVA.TIER_3].limits.bitrate / 1e3
       })
     },
     [l.GuildFeatures.VANITY_URL]: {
@@ -146,7 +146,7 @@ let b = () => ({
   v = {
     [Chunk652215.GuildFeatures.GAME_SERVERS]: {
       boostPrice: 3,
-      isEnabled: e => (0, s.TS)(e, "GuildPowerupsConstants")
+      isEnabled: e => (0, o.TS)(e, "GuildPowerupsConstants")
     }
   },
   A = {

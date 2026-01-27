@@ -14,8 +14,8 @@ function l(e, t) {
   (0, i.A)(1, arguments);
   var n, l, c, u, d, f, p, _, h = (0, r.default)(e),
     m = h.getUTCFullYear(),
-    g = (0, o.q)(),
-    E = (0, s.A)(null != (n = null != (l = null != (c = null != (u = null == t ? true : t.firstWeekContainsDate) ? u : null == t || null == (d = t.locale) || null == (f = d.options) ? true : f.firstWeekContainsDate) ? c : g.firstWeekContainsDate) ? l : null == (p = g.locale) || null == (_ = p.options) ? true : _.firstWeekContainsDate) ? n : 1);
+    g = (0, s.q)(),
+    E = (0, o.A)(null != (n = null != (l = null != (c = null != (u = null == t ? true : t.firstWeekContainsDate) ? u : null == t || null == (d = t.locale) || null == (f = d.options) ? true : f.firstWeekContainsDate) ? c : g.firstWeekContainsDate) ? l : null == (p = g.locale) || null == (_ = p.options) ? true : _.firstWeekContainsDate) ? n : 1);
   if (!(E >= 1 && E <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
   var y = new Date(0);
   y.setUTCFullYear(m + 1, 0, E), y.setUTCHours(0, 0, 0, 0);

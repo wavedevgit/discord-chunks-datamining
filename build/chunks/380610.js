@@ -27,7 +27,7 @@ function f(e) {
 }
 
 function p() {
-  let e = o.A.safeParseWithQuery(f(u));
+  let e = s.A.safeParseWithQuery(f(u));
   return null == e ? Promise.resolve(null) : (e.search = null, d && (e.query.version = d), a.Bo.get({
     url: i.format(e),
     oldFormErrors: true,
@@ -37,7 +37,7 @@ function p() {
 
 function _(e) {
   if (b(e)) return Promise.resolve(O(e));
-  let t = o.A.safeParseWithQuery(e);
+  let t = s.A.safeParseWithQuery(e);
   return null == t ? Promise.resolve(null) : (t.search = null, t.query.meta = "true", d && (t.query.version = d), t.host = window.location.host, a.Bo.get({
     url: i.format(t),
     oldFormErrors: true,
@@ -73,7 +73,7 @@ function b(e) {
 function O(e) {
   let t = e.match(y);
   if (null == t || 2 !== t.length) return null;
-  let n = (0, s.getNativePlatform)(),
+  let n = (0, o.getNativePlatform)(),
     r = t[1];
   return {
     targetBuildOverride: {
@@ -95,7 +95,7 @@ function S(e) {
     payload: null,
     url: e
   };
-  let t = o.A.safeParseWithQuery(e);
+  let t = s.A.safeParseWithQuery(e);
   if (null == t || !A.has(t.hostname) || !(v in t.query) || !I.has(t.pathname)) return null;
   for (let e in t.query) e !== v && delete t.query[e];
   return {

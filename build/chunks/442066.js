@@ -15,12 +15,12 @@ module.exports = function(e) {
       end: /\}/,
       keywords: i
     },
-    s = {
+    o = {
       className: "number",
       begin: "(\\b0o[0-7_]+)|(\\b0b[01_]+)|(\\b0x[0-9a-fA-F_]+)|(-?\\b[0-9][0-9_]*(\\.[0-9_]+([eE][-+]?[0-9]+)?)?)",
       relevance: 0
     },
-    o = {
+    s = {
       match: /\\[\s\S]/,
       scope: "char.escape",
       relevance: 0
@@ -60,7 +60,7 @@ module.exports = function(e) {
       className: "string",
       begin: "~[a-z](?=" + l + ")",
       contains: c.map(t => e.inherit(t, {
-        contains: [u(t.end), o, a]
+        contains: [u(t.end), s, a]
       }))
     },
     f = {
@@ -76,7 +76,7 @@ module.exports = function(e) {
         begin: "~r(?=" + l + ")",
         contains: c.map(n => e.inherit(n, {
           end: t.concat(n.end, /[uismxfU]{0,7}/),
-          contains: [u(n.end), o, a]
+          contains: [u(n.end), s, a]
         }))
       }, {
         begin: "~R(?=" + l + ")",
@@ -150,7 +150,7 @@ module.exports = function(e) {
       className: "title.class",
       begin: /(\b[A-Z][a-zA-Z0-9_]+)/,
       relevance: 0
-    }, s, {
+    }, o, {
       className: "variable",
       begin: "(\\$\\W)|((\\$|@@?)(\\w+))"
     }];

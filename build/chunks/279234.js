@@ -8,33 +8,33 @@ require.d(exports, {
 var Chunk118356 = require("./118356.js"),
   Chunk31436 = require("./31436.js");
 let a = null,
-  s = new Chunk118356.Vy("libdiscore");
+  o = new Chunk118356.Vy("libdiscore");
 
-function o(e) {
-  s.error(e)
+function s(e) {
+  o.error(e)
 }
 
 function l(e) {
-  s.warn(e)
+  o.warn(e)
 }
 
 function c(e) {
-  s.info(e)
+  o.info(e)
 }
 
 function u(e) {
-  s.verbose(e)
+  o.verbose(e)
 }
 
 function d(e) {
-  s.trace(e)
+  o.trace(e)
 }
 
 function f() {
   return null == a && (a = (async () => {
     await i.Bf();
     let e = i.vZ();
-    e.installLogCallback(o, l, c, u, d), await e.initLibdiscore(), window._libdiscoreInitialized = true
+    e.installLogCallback(s, l, c, u, d), await e.initLibdiscore(), window._libdiscoreInitialized = true
   })()), a
 }
 

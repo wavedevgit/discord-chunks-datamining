@@ -101,21 +101,21 @@ function D(e) {
   return r = {
     x: t,
     y: n
-  }, s.w.set(E, r), false
+  }, o.w.set(E, r), false
 }
 
-function x(e) {
+function L(e) {
   let {
     channel: t
   } = e;
   return N(t.id)
 }
 
-function L() {
+function x() {
   T = _.A.getStatus() === m.clD.DND || c.NO.getSetting()
 }
 
-function j() {
+function M() {
   let e = f.default.getId();
   S.forEach(t => {
     var n;
@@ -123,9 +123,9 @@ function j() {
     null == (null == (n = p.A.getChannel(r)) ? true : n.guild_id) || l.A.getGuildRingingUsers(r).has(e) || N(r)
   })
 }
-class M extends(i = Chunk311907.Ay.Store) {
+class j extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(f.default, l.A, p.A, _.A, u.A, h.A), this.syncWith([_.A], L), this.syncWith([u.A], L), this.syncWith([l.A], j)
+    this.waitFor(f.default, l.A, p.A, _.A, u.A, h.A), this.syncWith([_.A], x), this.syncWith([u.A], x), this.syncWith([l.A], M)
   }
   getIncomingCalls() {
     return T ? A : Array.from(I.values())
@@ -140,8 +140,8 @@ class M extends(i = Chunk311907.Ay.Store) {
     return !T && S.size > 0
   }
 }
-g(M, "displayName", "IncomingCallStore");
-let k = new M(Chunk73153.h, {
+g(j, "displayName", "IncomingCallStore");
+let k = new j(Chunk73153.h, {
   CALL_CREATE: w,
   CALL_UPDATE: w,
   CALL_DELETE: R,
@@ -149,5 +149,5 @@ let k = new M(Chunk73153.h, {
   GUILD_RING_STOP: R,
   VOICE_CHANNEL_SELECT: P,
   INCOMING_CALL_MOVE: D,
-  CHANNEL_DELETE: x
+  CHANNEL_DELETE: L
 })

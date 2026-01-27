@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   l = require.n(Chunk284009),
   Chunk621466 = require("./621466.js"),
@@ -74,10 +74,10 @@ class I extends Chunk64700.PureComponent {
       },
       targetWidth: i,
       targetHeight: a,
-      position: s,
-      offset: o
+      position: o,
+      offset: s
     } = e;
-    (this.props.tutorialId !== t || this.props.origin.x !== n || this.props.origin.y !== r || this.props.targetWidth !== i || this.props.targetHeight !== a || this.props.position !== s || this.props.offset.x !== o.x || this.props.offset.y !== o.y) && this.updateCache()
+    (this.props.tutorialId !== t || this.props.origin.x !== n || this.props.origin.y !== r || this.props.targetWidth !== i || this.props.targetHeight !== a || this.props.position !== o || this.props.offset.x !== s.x || this.props.offset.y !== s.y) && this.updateCache()
   }
   updateCache() {
     var e, t;
@@ -123,7 +123,7 @@ class I extends Chunk64700.PureComponent {
     } = this.props, a = (0, m.p)(e);
     if (null == a) return null;
     let {
-      media: o,
+      media: s,
       textAlign: l,
       isLongText: c,
       highPriority: u,
@@ -140,12 +140,12 @@ class I extends Chunk64700.PureComponent {
       let t = n && !e;
       returntrue !== u ? null : (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          className: s()(y.Mn, {
+          className: o()(y.Mn, {
             [y.bW]: t,
             [y.EO]: !t
           })
         }), (0, r.jsx)("div", {
-          className: s()(y.sQ, {
+          className: o()(y.sQ, {
             [y.bW]: t,
             [y.EO]: !t
           })
@@ -162,7 +162,7 @@ class I extends Chunk64700.PureComponent {
     return (0, r.jsx)(h.Ay, A(O({
       innerRef: this.contentRef,
       position: _,
-      renderMedia: o,
+      renderMedia: s,
       textAlign: l,
       spacing: f,
       isLongText: c,
@@ -181,11 +181,11 @@ class I extends Chunk64700.PureComponent {
           style: b,
           innerRef: this.contentRef,
           children: (0, r.jsxs)("div", {
-            className: s()(y.Mp, I(n)),
+            className: o()(y.Mp, I(n)),
             children: [v(n), (0, r.jsx)("div", {
-              className: s()(y.r6, I(n))
+              className: o()(y.r6, I(n))
             }), (0, r.jsx)("div", {
-              className: s()(y.CY, I(n))
+              className: o()(y.CY, I(n))
             })]
           })
         }))
@@ -215,10 +215,10 @@ let S = function() {
   }));
   return i ? (0, r.jsx)(r.Fragment, {
     children: Object.entries(e).map(e => {
-      let [i, a] = e, s = t[i];
-      return l()(null != s, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(I, O({
+      let [i, a] = e, o = t[i];
+      return l()(null != o, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(I, O({
         tutorialId: i,
-        tutorialDefinition: s,
+        tutorialDefinition: o,
         focused: n
       }, a), i)
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 87102 **/
+/** Chunk was on 75838 **/
 /** chunk id: 243258, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => S
@@ -37,12 +37,12 @@ function R(e) {
   var t;
   let {
     clips: n
-  } = e, l = n[0], i = l.thumbnail, o = null;
-  return "" !== i && (o = (0, r.jsx)("div", {
+  } = e, i = n[0], l = i.thumbnail, o = null;
+  return "" !== l && (o = (0, r.jsx)("div", {
     className: a()(A.cR, A.JZ),
     children: (0, r.jsx)(_.Ay, {
       className: A.xn,
-      src: i,
+      src: l,
       width: 56,
       height: 56
     })
@@ -53,7 +53,7 @@ function R(e) {
       width: 56,
       height: 56,
       children: o
-    }), (0, r.jsxs)(s.Text, {
+    }), (0, r.jsxs)(c.Text, {
       className: A.mB,
       variant: "text-xs/semibold",
       color: "text-default",
@@ -65,14 +65,14 @@ function R(e) {
       className: A.FG,
       children: (0, r.jsxs)("div", {
         className: A.kp,
-        children: [(0, r.jsx)(s.SfG, {
+        children: [(0, r.jsx)(c.SfG, {
           size: "custom",
           width: 20,
-          color: s.LU0.colors.TEXT_MUTED
-        }), (0, r.jsx)(s.Text, {
+          color: c.LU0.colors.TEXT_MUTED
+        }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "text-muted",
-          children: 1 === n.length ? null != (t = l.name) ? t : E.intl.string(E.t.Cyxddp) : E.intl.formatToPlainString(E.t.SJ6pPX, {
+          children: 1 === n.length ? null != (t = i.name) ? t : E.intl.string(E.t.Cyxddp) : E.intl.formatToPlainString(E.t.SJ6pPX, {
             count: n.length
           })
         })]
@@ -84,57 +84,57 @@ function R(e) {
 function S(e) {
   var t, n;
   let {
-    clips: i,
+    clips: l,
     analyticsLocations: a,
     onClose: p
   } = e, _ = function(e, t) {
     if (null == e) return {};
-    var n, r, l, i = {};
+    var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-      return i
+      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+      return l
     }
-    if (i = function(e, t) {
+    if (l = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
-          i = Object.getOwnPropertyNames(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-        return l
+        var n, r, i = {},
+          l = Object.getOwnPropertyNames(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+        return i
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-    return i
-  }(e, ["clips", "analyticsLocations", "onClose"]), A = l.useCallback(async (e, t, n) => {
+      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+    return l
+  }(e, ["clips", "analyticsLocations", "onClose"]), A = i.useCallback(async (e, t, n) => {
     let {
       withMessage: r,
-      transitionToDestination: l,
+      transitionToDestination: i,
       closeAfterSend: u
     } = t;
     n(true);
     try {
       let t = [],
         m = [];
-      for (let e of i) {
+      for (let e of l) {
         var _;
         let n = await (0, P.VO)(e),
-          r = null != (_ = e.name) ? _ : (0, I.cM)(w.default.extractTimestamp(e.id)),
-          l = (0, v.A)(r);
+          r = null != (_ = e.name) ? _ : (0, T.cM)(w.default.extractTimestamp(e.id)),
+          i = (0, v.A)(r);
         if (e.type === x.nQ.CLIP || e.type === x.nQ.VOICE_CLIP) {
-          let r = "".concat("" !== l ? l : "clip", ".mp4");
+          let r = "".concat("" !== i ? i : "clip", ".mp4");
           t.push(new File([n], r, {
             type: "video/mp4"
           })), m.push({
             clip: e
           })
         } else if (e.type === x.nQ.SCREENSHOT) {
-          let e = "".concat("" !== l ? l : "screenshot", ".jpeg");
+          let e = "".concat("" !== i ? i : "screenshot", ".jpeg");
           t.push(new File([n], e, {
             type: "image/jpeg"
           })), m.push({})
         }
       }
-      let A = (await Promise.all(e.map(h.pk))).filter(O.Vq).filter(e => (0, T.t)(e));
+      let A = (await Promise.all(e.map(h.pk))).filter(O.Vq).filter(e => (0, I.t)(e));
       if (0 === A.length) {
-        (0, s.showToast)((0, s.createToast)(E.intl.string(E.t.iufib1), s.ToastType.FAILURE)), n(false);
+        (0, c.showToast)((0, c.createToast)(E.intl.string(E.t.iufib1), c.ToastType.FAILURE)), n(false);
         return
       }
       for (let e of (u && p(), A)) {
@@ -144,7 +144,7 @@ function S(e) {
               filesMetadata: m,
               origin: "unknown:clip_share",
               requireConfirm: false
-            }), i)) g.default.track(k.HAw.CLIP_SHARED, {
+            }), l)) g.default.track(k.HAw.CLIP_SHARED, {
             location_stack: a,
             guild_id: n.guild_id,
             channel_id: n.id,
@@ -152,21 +152,21 @@ function S(e) {
             application_id: e.applicationId,
             clip_id: e.id
           });
-          null != r && "" !== r.trim() && await c.A.sendMessage(n.id, d.Ay.parse(n, r), false, {
+          null != r && "" !== r.trim() && await s.A.sendMessage(n.id, d.Ay.parse(n, r), false, {
             location: C.Hx.FORWARDING
           })
         }
       }
-      l && 1 === A.length && ((0, f.iN)(A[0], {
+      i && 1 === A.length && ((0, f.iN)(A[0], {
         openTextInVoiceIfVoiceChannel: true
       }), o.closeAllModals())
     } catch (e) {
-      (0, s.showToast)((0, s.createToast)(E.intl.string(E.t.iufib1), s.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t.iufib1), c.ToastType.FAILURE))
     } finally {
       n(false)
     }
-  }, [i, a, p]), S = l.useCallback(e => {
-    if (e instanceof m.YB && !(0, T.t)(e.id)) return {
+  }, [l, a, p]), S = i.useCallback(e => {
+    if (e instanceof m.YB && !(0, I.t)(e.id)) return {
       label: E.intl.string(E.t.iufib1)
     }
   }, []);
@@ -192,7 +192,7 @@ function S(e) {
     customTitle: E.intl.string(E.t.I8lglT),
     customSubtitle: E.intl.string(E.t.Ey7mOU),
     customPreview: (0, r.jsx)(R, {
-      clips: i
+      clips: l
     }),
     customSendHandler: A,
     customValidateDestination: S

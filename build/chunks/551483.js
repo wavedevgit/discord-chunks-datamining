@@ -3,18 +3,18 @@
 "use strict";
 require.d(exports, {
   Dl: () => r,
-  K: () => s,
+  K: () => o,
   XR: () => l,
   Xg: () => i,
   fP: () => a,
-  ug: () => o
+  ug: () => s
 });
 let r = [],
   i = [0],
   a = [0, 0],
-  s = {
+  o = {
     path: [0, 0],
     offset: 0
   },
-  o = /(\t|\s)/,
+  s = /(\t|\s)/,
   l = ["applicationCommandOption"]

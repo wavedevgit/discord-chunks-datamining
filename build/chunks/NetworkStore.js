@@ -23,11 +23,11 @@ let c = Chunk652215.wY_.UNKNOWN,
 
 function f(e) {
   var t;
-  c = null != e.type ? e.type : o.wY_.UNKNOWN, u = null != (t = e.effectiveSpeed) ? t : o.NKC.UNKNOWN, d = e.serviceProvider, _.emitChange()
+  c = null != e.type ? e.type : s.wY_.UNKNOWN, u = null != (t = e.effectiveSpeed) ? t : s.NKC.UNKNOWN, d = e.serviceProvider, _.emitChange()
 }
 class p extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    s.A.getNetworkInformation().then(f), s.A.addChangeCallback(f)
+    o.A.getNetworkInformation().then(f), o.A.addChangeCallback(f)
   }
   getType() {
     return c

@@ -61,14 +61,14 @@ function _(e, t) {
     location: g,
     contextKey: E
   } = h, y = d(h, ["location", "contextKey"]), [b] = m, O = null == (_ = y.items[null != (c = y.startingIndex) ? c : 0]) || null == (f = _.sourceMetadata) ? true : f.message, v = a.A.getChannel(null == O ? true : O.channel_id);
-  (0, o.H9)({
+  (0, s.H9)({
     guildId: null == v ? true : v.guild_id,
     channelId: null == v ? true : v.id,
     channelType: null == v ? true : v.type,
     numMediaItems: y.items.length,
     source: g,
     hasMediaOptions: !y.shouldHideMediaOptions
-  }), s.default.track(l.HAw.OPEN_MODAL, {
+  }), o.default.track(l.HAw.OPEN_MODAL, {
     type: l.JJy.MEDIA_VIEWER,
     source: g,
     guild_id: null == v ? true : v.guild_id,
@@ -82,7 +82,7 @@ function _(e, t) {
   }, {
     modalKey: p,
     contextKey: E,
-    onCloseCallback: o.a2,
+    onCloseCallback: s.a2,
     backdropStyle: i.F2Z.LIGHTBOX,
     stackingBehavior: b
   })

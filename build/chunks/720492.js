@@ -43,7 +43,7 @@ module.exports = function(e, t, n) {
     case I:
     case S:
     case T:
-      return o(e, n);
+      return s(e, n);
     case u:
       return new C;
     case d:
@@ -54,6 +54,6 @@ module.exports = function(e, t, n) {
     case p:
       return new C;
     case h:
-      return s(e)
+      return o(e)
   }
 }

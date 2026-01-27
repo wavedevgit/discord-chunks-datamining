@@ -6,20 +6,20 @@ var Chunk72290 = require("./72290.js");
   if (!e.setImmediate) {
     var n, i = 1,
       a = {},
-      s = false,
-      o = e.document,
+      o = false,
+      s = e.document,
       l = Object.getPrototypeOf && Object.getPrototypeOf(e);
-    l = l && l.setTimeout ? l : e, "[object process]" === ({}).toString.call(e.process) ? p() : _() ? h() : e.MessageChannel ? m() : o && "onreadystatechange" in o.createElement("script") ? g() : E(), l.setImmediate = c, l.clearImmediate = u
+    l = l && l.setTimeout ? l : e, "[object process]" === ({}).toString.call(e.process) ? p() : _() ? h() : e.MessageChannel ? m() : s && "onreadystatechange" in s.createElement("script") ? g() : E(), l.setImmediate = c, l.clearImmediate = u
   }
 
   function c(e) {
     "function" != typeof e && (e = Function("" + e));
     for (var t = Array(arguments.length - 1), r = 0; r < t.length; r++) t[r] = arguments[r + 1];
-    var s = {
+    var o = {
       callback: e,
       args: t
     };
-    return a[i] = s, n(i), i++
+    return a[i] = o, n(i), i++
   }
 
   function u(e) {
@@ -48,15 +48,15 @@ var Chunk72290 = require("./72290.js");
   }
 
   function f(e) {
-    if (s) setTimeout(f, 0, e);
+    if (o) setTimeout(f, 0, e);
     else {
       var t = a[e];
       if (t) {
-        s = true;
+        o = true;
         try {
           d(t)
         } finally {
-          u(e), s = false
+          u(e), o = false
         }
       }
     }
@@ -100,9 +100,9 @@ var Chunk72290 = require("./72290.js");
   }
 
   function g() {
-    var e = o.documentElement;
+    var e = s.documentElement;
     n = function(t) {
-      var n = o.createElement("script");
+      var n = s.createElement("script");
       n.onreadystatechange = function() {
         f(t), n.onreadystatechange = null, e.removeChild(n), n = null
       }, e.appendChild(n)

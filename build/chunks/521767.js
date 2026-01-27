@@ -49,8 +49,8 @@ let l = (0, Chunk64700.createContext)({}),
       },
       defaultClassName: "react-aria-Group"
     });
-    return o.createElement("div", {
-      ...(0, s.v)(m, O, g),
+    return s.createElement("div", {
+      ...(0, o.v)(m, O, g),
       ...v,
       ref: t,
       role: null != (n = e.role) ? n : "group",

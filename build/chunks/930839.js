@@ -21,9 +21,9 @@ var Chunk110259 = require("./110259.js"),
   TRACKING_URL: Chunk652215.Rsh.TRACK,
   waitFor: [Chunk961350.default],
   getFingerprint: Chunk961350.default.getFingerprint,
-  getSessionId: () => (0, s.Ht)().then(e => ({
+  getSessionId: () => (0, o.Ht)().then(e => ({
     sessionId: null == e ? true : e.uuid
   })),
-  getLaunchSignature: () => o.launchSignature,
+  getLaunchSignature: () => s.launchSignature,
   scheduleWhenIdle: Chunk167789.O
 })

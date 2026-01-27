@@ -77,14 +77,14 @@ function f(e, t, n, r) {
     target: null != (l = e.target) ? l : e.currentTarget,
     rect: new DOMRect(p, _, 0, 0),
     config: c({
-      context: __OVERLAY__ ? o.BRT.OVERLAY : null != (d = (0, i.zd)()) ? d : o.BRT.APP
+      context: __OVERLAY__ ? s.BRT.OVERLAY : null != (d = (0, i.zd)()) ? d : s.BRT.APP
     }, n)
   };
   if ((null == n ? true : n.enableSpellCheck) && (0, a.isDesktop)()) {
     let e = () => {
         t(), u(h)
       },
-      t = (0, s.nL)(e)
+      t = (0, o.nL)(e)
   } else e.preventDefault(), u(h)
 }
 

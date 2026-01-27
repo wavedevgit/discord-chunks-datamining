@@ -14,13 +14,13 @@ var Chunk221015 = require("./221015.js"),
   Chunk900923 = require("./900923.js");
 module.exports = function(e) {
   var t, n, _, h, m, g, E, y, b = a(this),
-    O = s(e),
+    O = o(e),
     v = arguments.length,
     A = v > 1 ? arguments[1] : true,
     I = true !== A,
     S = c(O);
   if (S && !u(S))
     for (y = (E = l(O, S)).next, O = []; !(g = i(y, E)).done;) O.push(g.value);
-  for (I && v > 2 && (A = r(A, arguments[2])), n = o(O), h = d(_ = new(f(b))(n)), t = 0; n > t; t++) m = I ? A(O[t], t) : O[t], _[t] = h ? p(m) : +m;
+  for (I && v > 2 && (A = r(A, arguments[2])), n = s(O), h = d(_ = new(f(b))(n)), t = 0; n > t; t++) m = I ? A(O[t], t) : O[t], _[t] = h ? p(m) : +m;
   return _
 }

@@ -39,18 +39,18 @@ function l(e) {
     PermissionStore: E,
     GuildStore: p
   }) === a.Gy.CAN_JOIN;
-  if (d && null == c && !(0, s.A)(n, o.jUm.CONTEXTLESS) || !(0, r.platformSupportsActivityJoin)() && !d) returnfalse;
-  if ((0, s.A)(n, o.jUm.PARTY_PRIVACY_FRIENDS) && h.isFriend(t.id)) returntrue;
-  if ((0, s.A)(n, o.jUm.PARTY_PRIVACY_VOICE_CHANNEL)) {
+  if (d && null == c && !(0, o.A)(n, s.jUm.CONTEXTLESS) || !(0, r.platformSupportsActivityJoin)() && !d) returnfalse;
+  if ((0, o.A)(n, s.jUm.PARTY_PRIVACY_FRIENDS) && h.isFriend(t.id)) returntrue;
+  if ((0, o.A)(n, s.jUm.PARTY_PRIVACY_VOICE_CHANNEL)) {
     let e = f.getChannel(m.getVoiceChannelId());
     if (null == e || !g.isInChannel(e.id, t.id)) returnfalse;
     switch (e.type) {
-      case o.rbe.DM:
-      case o.rbe.GROUP_DM:
+      case s.rbe.DM:
+      case s.rbe.GROUP_DM:
         returntrue
     }
     let n = p.getGuild(e.getGuildId());
-    if (null == n || n.features.has(o.GuildFeatures.COMMUNITY)) returnfalse;
+    if (null == n || n.features.has(s.GuildFeatures.COMMUNITY)) returnfalse;
     let r = _.getMemberCount(n.id);
     return null != r && r < 100
   }

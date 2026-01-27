@@ -63,7 +63,7 @@ function m(e) {
     entry: r
   } = e;
   return null != r ? {
-    applicationId: (0, s.zD)(r) ? r.extra.application_id : true,
+    applicationId: (0, o.zD)(r) ? r.extra.application_id : true,
     sourceUserId: r.author_id
   } : null != n ? {
     applicationId: n.type === u.$pd.PLAYING && null != n.application_id ? n.application_id : true,
@@ -77,25 +77,25 @@ function m(e) {
 function g(e) {
   let {
     user: t,
-    activity: o,
+    activity: s,
     entry: l
   } = e, {
     applicationId: u
   } = m({
-    activity: o,
+    activity: s,
     entry: l,
     user: t
-  }), f = (0, c.n)(u), _ = null != o && (0, a.A)(o), g = null != l && (0, s.zD)(l);
+  }), f = (0, c.n)(u), _ = null != s && (0, a.A)(s), g = null != l && (0, o.zD)(l);
   if (_ || g) {
     let e = () => (0, i.mMO)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("27495"), n.e("79692")]).then(n.bind(n, 651930));
-      if (null != o) return t => (0, r.jsx)(e, h(p({}, t), {
-        detectedActivity: o,
+      if (null != s) return t => (0, r.jsx)(e, h(p({}, t), {
+        detectedActivity: s,
         onSubmitted: () => {}
       }));
-      if (null != l && (0, s.zD)(l)) {
+      if (null != l && (0, o.zD)(l)) {
         let t = {
           name: l.extra.game_name,
           application_id: l.extra.application_id
@@ -123,7 +123,7 @@ function E(e) {
     user: t,
     activity: n,
     entry: a,
-    onAction: s,
+    onAction: o,
     isMenuOpen: c,
     appContext: u
   } = e, {
@@ -135,7 +135,7 @@ function E(e) {
     user: t
   }), _ = (0, l.A)({
     location: "UserProfileActivityContextMenu",
-    source: o.Ob.UserProfileCardContextMenu,
+    source: s.Ob.UserProfileCardContextMenu,
     trackEntryPointImpression: c,
     applicationId: f,
     sourceUserId: p,
@@ -145,7 +145,7 @@ function E(e) {
     id: "game-profile",
     label: d.intl.string(d.t.ajHoOr),
     action: e => {
-      null == s || s({
+      null == o || o({
         action: "PRESS_VIEW_GAME_PROFILE_MENU_ITEM"
       }), _(e)
     }

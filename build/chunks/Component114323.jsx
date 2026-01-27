@@ -75,31 +75,31 @@ let w = {
   queryResults(e, t, n, r, i) {
     if (0 === n.length && r.commands !== b.Ze.OLD_BUILT_INS) return T;
     if (r.commands === b.Ze.OLD_BUILT_INS) {
-      let r = (0, l.Ez)([s.kc.CHAT], false, false),
+      let r = (0, l.Ez)([o.kc.CHAT], false, false),
         i = RegExp("^".concat(E.A.escape(n)), "i"),
         a = (0, _.PV)(r, i, {
           channel: e,
           guild: t
         }, 20),
-        o = l.gZ[O.Ik.BUILT_IN];
+        s = l.gZ[O.Ik.BUILT_IN];
       return 0 === a.length ? T : {
         results: {
           entries: a.map(e => ({
             command: e,
-            section: o
+            section: s
           }))
         }
       }
     }
     let a = (0, h.Yn)(e, n),
       {
-        commands: o,
+        commands: s,
         sections: c
       } = u.eW({
         channel: e,
         type: "channel"
       }, {
-        commandTypes: [s.kc.CHAT],
+        commandTypes: [o.kc.CHAT],
         text: a.text
       }, {
         limit: 20,
@@ -107,8 +107,8 @@ let w = {
         scoreMethod: d.M.COMMAND_OR_APPLICATION,
         allowFetch: i
       });
-    if (null == o) return T;
-    let f = o;
+    if (null == s) return T;
+    let f = s;
     if (a.hasSpaceTerminator) {
       let e = a.text.trim(),
         t = e + " ";
@@ -130,11 +130,11 @@ let w = {
       },
       selectedIndex: n,
       channel: a,
-      query: s,
-      options: o,
+      query: o,
+      options: s,
       onHover: l,
       onClick: c
-    } = e, u = (0, h.Yn)(a, s), d = o.commands === b.Ze.OLD_BUILT_INS;
+    } = e, u = (0, h.Yn)(a, o), d = s.commands === b.Ze.OLD_BUILT_INS;
     return (0, y.GM)({
       query: u.text,
       selectedIndex: n,
@@ -177,7 +177,7 @@ let w = {
       queryText: r,
       options: i,
       channel: a,
-      location: s,
+      location: o,
       tabOrEnter: l
     } = e, {
       command: c,
@@ -186,8 +186,8 @@ let w = {
     if (c.inputType === p.y$.PLACEHOLDER) return null;
     if (i.commands === b.Ze.OLD_BUILT_INS) i.insertText(N(c));
     else {
-      let e = s;
-      null == e && (e = l ? p.Oh.QUERY : p.Oh.DISCOVERY), o.Gf({
+      let e = o;
+      null == e && (e = l ? p.Oh.QUERY : p.Oh.DISCOVERY), s.Gf({
         channelId: a.id,
         command: c,
         section: null != u ? u : null,

@@ -68,7 +68,7 @@ class h extends Chunk315069.A {
     return new h(f(u({}, e), {
       coverImage: e.cover_image,
       primarySkuId: e.primary_sku_id,
-      bot: null != e.bot ? new o.A(e.bot) : null,
+      bot: null != e.bot ? new s.A(e.bot) : null,
       thirdPartySkus: e.third_party_skus,
       roleConnectionsVerificationUrl: e.role_connections_verification_url,
       parentId: e.parent_id,
@@ -109,8 +109,8 @@ class h extends Chunk315069.A {
     }) : null
   }
   constructor(e) {
-    var t, n, r, i, a, s;
-    super(), c(this, "id", true), c(this, "name", true), c(this, "icon", true), c(this, "description", true), c(this, "type", true), c(this, "coverImage", true), c(this, "primarySkuId", true), c(this, "bot", true), c(this, "splash", true), c(this, "thirdPartySkus", true), c(this, "isMonetized", true), c(this, "isVerified", true), c(this, "roleConnectionsVerificationUrl", true), c(this, "parentId", true), c(this, "connectionEntrypointUrl", true), this.id = e.id, this.name = e.name, this.icon = e.icon, this.splash = e.splash, this.primarySkuId = e.primarySkuId, this.thirdPartySkus = null != (t = e.thirdPartySkus) ? t : [], this.description = e.description, this.bot = e.bot, this.coverImage = e.coverImage, this.type = e.type, this.isMonetized = null != (n = e.is_monetized) ? n : e.isMonetized, this.isVerified = null != (r = e.is_verified) ? r : e.isVerified, this.roleConnectionsVerificationUrl = null != (i = e.role_connections_verification_url) ? i : e.roleConnectionsVerificationUrl, this.parentId = null != (a = e.parent_id) ? a : e.parentId, this.connectionEntrypointUrl = null != (s = e.connection_entrypoint_url) ? s : e.connectionEntrypointUrl
+    var t, n, r, i, a, o;
+    super(), c(this, "id", true), c(this, "name", true), c(this, "icon", true), c(this, "description", true), c(this, "type", true), c(this, "coverImage", true), c(this, "primarySkuId", true), c(this, "bot", true), c(this, "splash", true), c(this, "thirdPartySkus", true), c(this, "isMonetized", true), c(this, "isVerified", true), c(this, "roleConnectionsVerificationUrl", true), c(this, "parentId", true), c(this, "connectionEntrypointUrl", true), this.id = e.id, this.name = e.name, this.icon = e.icon, this.splash = e.splash, this.primarySkuId = e.primarySkuId, this.thirdPartySkus = null != (t = e.thirdPartySkus) ? t : [], this.description = e.description, this.bot = e.bot, this.coverImage = e.coverImage, this.type = e.type, this.isMonetized = null != (n = e.is_monetized) ? n : e.isMonetized, this.isVerified = null != (r = e.is_verified) ? r : e.isVerified, this.roleConnectionsVerificationUrl = null != (i = e.role_connections_verification_url) ? i : e.roleConnectionsVerificationUrl, this.parentId = null != (a = e.parent_id) ? a : e.parentId, this.connectionEntrypointUrl = null != (o = e.connection_entrypoint_url) ? o : e.connectionEntrypointUrl
   }
 }
 class m extends h {
@@ -119,7 +119,7 @@ class m extends h {
     return new m(f(u({}, e), {
       coverImage: e.cover_image,
       primarySkuId: e.primary_sku_id,
-      bot: null != e.bot ? new o.A(e.bot) : null,
+      bot: null != e.bot ? new s.A(e.bot) : null,
       thirdPartySkus: e.third_party_skus,
       roleConnectionsVerificationUrl: e.role_connections_verification_url,
       overlayWarn: e.overlay_warn,
@@ -129,8 +129,8 @@ class m extends h {
       storeListingSkuId: e.store_listing_sku_id,
       guildId: e.guild_id,
       guild: e.guild,
-      publishers: null != e.publishers ? e.publishers.map(s.A.createFromServer) : [],
-      developers: null != e.developers ? e.developers.map(s.A.createFromServer) : [],
+      publishers: null != e.publishers ? e.publishers.map(o.A.createFromServer) : [],
+      developers: null != e.developers ? e.developers.map(o.A.createFromServer) : [],
       eulaId: e.eula_id,
       slug: e.slug,
       flags: null != (n = e.flags) ? n : 0,
@@ -155,15 +155,15 @@ class m extends h {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, a, s, o, l, c, d, f, p, _, h, g, E, y, b, O, v, A, I, S, T, C, N, w, R, P, D, x, L, j, M, k, U, G, V, F, B, H, Y, W, K, z;
+    var t, n, r, i, a, o, s, l, c, d, f, p, _, h, g, E, y, b, O, v, A, I, S, T, C, N, w, R, P, D, L, x, M, j, k, U, G, F, V, B, H, Y, W, K, z;
     return new m({
       id: null != (t = e.id) ? t : this.id,
       name: null != (n = e.name) ? n : this.name,
       icon: null != (r = e.icon) ? r : this.icon,
       splash: null != (i = e.splash) ? i : this.splash,
       overlay: null != (a = e.overlay) ? a : this.overlay,
-      overlayWarn: null != (s = e.overlayWarn) ? s : this.overlayWarn,
-      overlayCompatibilityHook: null != (o = e.overlayCompatibilityHook) ? o : this.overlayCompatibilityHook,
+      overlayWarn: null != (o = e.overlayWarn) ? o : this.overlayWarn,
+      overlayCompatibilityHook: null != (s = e.overlayCompatibilityHook) ? s : this.overlayCompatibilityHook,
       overlayMethods: null != (l = e.overlayMethods) ? l : this.overlayMethods,
       hook: null != (c = e.hook) ? c : this.hook,
       aliases: null != (d = e.aliases) ? d : this.aliases,
@@ -187,15 +187,15 @@ class m extends h {
       embeddedActivityConfig: null != (R = e.embeddedActivityConfig) ? R : null != this.embeddedActivityConfig ? u({}, this.embeddedActivityConfig) : true,
       type: null != (P = e.type) ? P : this.type,
       team: null != (D = e.team) ? D : this.team,
-      roleConnectionsVerificationUrl: null != (x = e.roleConnectionsVerificationUrl) ? x : this.roleConnectionsVerificationUrl,
-      connectionEntrypointUrl: null != (L = e.connectionEntrypointUrl) ? L : this.connectionEntrypointUrl,
-      integrationTypesConfig: null != (j = e.integrationTypesConfig) ? j : this.integrationTypesConfig,
-      isMonetized: null != (M = e.isMonetized) ? M : this.isMonetized,
+      roleConnectionsVerificationUrl: null != (L = e.roleConnectionsVerificationUrl) ? L : this.roleConnectionsVerificationUrl,
+      connectionEntrypointUrl: null != (x = e.connectionEntrypointUrl) ? x : this.connectionEntrypointUrl,
+      integrationTypesConfig: null != (M = e.integrationTypesConfig) ? M : this.integrationTypesConfig,
+      isMonetized: null != (j = e.isMonetized) ? j : this.isMonetized,
       storefront_available: null != (k = e.storefront_available) ? k : this.storefront_available,
       termsOfServiceUrl: null != (U = e.termsOfServiceUrl) ? U : this.termsOfServiceUrl,
       privacyPolicyUrl: null != (G = e.privacyPolicyUrl) ? G : this.privacyPolicyUrl,
-      isVerified: null != (V = e.isVerified) ? V : this.isVerified,
-      customInstallUrl: null != (F = e.customInstallUrl) ? F : this.customInstallUrl,
+      isVerified: null != (F = e.isVerified) ? F : this.isVerified,
+      customInstallUrl: null != (V = e.customInstallUrl) ? V : this.customInstallUrl,
       installParams: null != (B = e.installParams) ? B : this.installParams,
       isDiscoverable: null != (H = e.isDiscoverable) ? H : this.isDiscoverable,
       directoryEntry: null != (Y = e.directoryEntry) ? Y : this.directoryEntry,
@@ -224,8 +224,8 @@ class m extends h {
     return null != e && (e & t) === t
   }
   constructor(e) {
-    var t, n, i, a, s, o, l, d, p, h, g, E, y, b, O, v, A, I, S, T;
-    super(e), c(this, "overlay", true), c(this, "overlayWarn", true), c(this, "overlayCompatibilityHook", true), c(this, "overlayMethods", true), c(this, "hook", true), c(this, "aliases", true), c(this, "publishers", true), c(this, "developers", true), c(this, "storeListingSkuId", true), c(this, "guildId", true), c(this, "guild", true), c(this, "executables", true), c(this, "hashes", true), c(this, "eulaId", true), c(this, "slug", true), c(this, "flags", true), c(this, "maxParticipants", true), c(this, "tags", true), c(this, "embeddedActivityConfig", true), c(this, "team", true), c(this, "integrationTypesConfig", true), c(this, "storefront_available", true), c(this, "termsOfServiceUrl", true), c(this, "privacyPolicyUrl", true), c(this, "isDiscoverable", true), c(this, "customInstallUrl", true), c(this, "installParams", true), c(this, "directoryEntry", true), c(this, "categories", true), c(this, "linkedGames", true), c(this, "deepLinkUri", true), this.overlay = null != (t = e.overlay) && t, this.overlayWarn = null != (n = e.overlayWarn) && n, this.overlayCompatibilityHook = null != (i = e.overlayCompatibilityHook) && i, this.overlayMethods = null != (a = e.overlayMethods) ? a : r.b.DEFAULT, this.hook = null == (s = e.hook) || s, this.aliases = null != (o = e.aliases) ? o : [], this.publishers = null != (l = e.publishers) ? l : [], this.developers = null != (d = e.developers) ? d : [], this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId, this.guild = e.guild, this.executables = (null != (p = e.executables) ? p : []).map(_), this.hashes = null != (h = e.hashes) ? h : [], this.eulaId = e.eulaId, this.slug = e.slug, this.flags = null != (g = e.flags) ? g : 0, this.tags = null != (E = e.tags) ? E : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = null != (y = e.embedded_activity_config) ? y : e.embeddedActivityConfig, this.team = e.team, this.integrationTypesConfig = e.integrationTypesConfig, this.storefront_available = e.storefront_available, this.termsOfServiceUrl = e.termsOfServiceUrl, this.privacyPolicyUrl = e.privacyPolicyUrl, this.isDiscoverable = null != (b = e.is_discoverable) ? b : e.isDiscoverable, this.customInstallUrl = null != (O = e.custom_install_url) ? O : e.customInstallUrl, this.installParams = null != (v = e.install_params) ? v : e.installParams, this.directoryEntry = null != (A = e.directory_entry) ? A : e.directoryEntry, this.categories = e.categories, this.linkedGames = null != (I = null == (T = e.linked_games) ? true : T.map(e => f(u({}, e), {
+    var t, n, i, a, o, s, l, d, p, h, g, E, y, b, O, v, A, I, S, T;
+    super(e), c(this, "overlay", true), c(this, "overlayWarn", true), c(this, "overlayCompatibilityHook", true), c(this, "overlayMethods", true), c(this, "hook", true), c(this, "aliases", true), c(this, "publishers", true), c(this, "developers", true), c(this, "storeListingSkuId", true), c(this, "guildId", true), c(this, "guild", true), c(this, "executables", true), c(this, "hashes", true), c(this, "eulaId", true), c(this, "slug", true), c(this, "flags", true), c(this, "maxParticipants", true), c(this, "tags", true), c(this, "embeddedActivityConfig", true), c(this, "team", true), c(this, "integrationTypesConfig", true), c(this, "storefront_available", true), c(this, "termsOfServiceUrl", true), c(this, "privacyPolicyUrl", true), c(this, "isDiscoverable", true), c(this, "customInstallUrl", true), c(this, "installParams", true), c(this, "directoryEntry", true), c(this, "categories", true), c(this, "linkedGames", true), c(this, "deepLinkUri", true), this.overlay = null != (t = e.overlay) && t, this.overlayWarn = null != (n = e.overlayWarn) && n, this.overlayCompatibilityHook = null != (i = e.overlayCompatibilityHook) && i, this.overlayMethods = null != (a = e.overlayMethods) ? a : r.b.DEFAULT, this.hook = null == (o = e.hook) || o, this.aliases = null != (s = e.aliases) ? s : [], this.publishers = null != (l = e.publishers) ? l : [], this.developers = null != (d = e.developers) ? d : [], this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId, this.guild = e.guild, this.executables = (null != (p = e.executables) ? p : []).map(_), this.hashes = null != (h = e.hashes) ? h : [], this.eulaId = e.eulaId, this.slug = e.slug, this.flags = null != (g = e.flags) ? g : 0, this.tags = null != (E = e.tags) ? E : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = null != (y = e.embedded_activity_config) ? y : e.embeddedActivityConfig, this.team = e.team, this.integrationTypesConfig = e.integrationTypesConfig, this.storefront_available = e.storefront_available, this.termsOfServiceUrl = e.termsOfServiceUrl, this.privacyPolicyUrl = e.privacyPolicyUrl, this.isDiscoverable = null != (b = e.is_discoverable) ? b : e.isDiscoverable, this.customInstallUrl = null != (O = e.custom_install_url) ? O : e.customInstallUrl, this.installParams = null != (v = e.install_params) ? v : e.installParams, this.directoryEntry = null != (A = e.directory_entry) ? A : e.directoryEntry, this.categories = e.categories, this.linkedGames = null != (I = null == (T = e.linked_games) ? true : T.map(e => f(u({}, e), {
       application: null != e.application ? m.createFromServer(e.application) : true
     }))) ? I : e.linkedGames, this.deepLinkUri = null != (S = e.deepLinkUri) ? S : e.deeplink_uri
   }

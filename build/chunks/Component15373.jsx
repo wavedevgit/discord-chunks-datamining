@@ -15,14 +15,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx");
 class f extends Chunk64700.PureComponent {
   componentDidMount() {
-    null != this.props.paypalClient && o.Rz()
+    null != this.props.paypalClient && s.Rz()
   }
   componentDidUpdate(e) {
-    null == e.paypalClient && null != this.props.paypalClient && o.Rz()
+    null == e.paypalClient && null != this.props.paypalClient && s.Rz()
   }
   componentWillUnmount() {
-    o.gm().then(() => {
-      null != c.A.getClient() && o.LR()
+    s.gm().then(() => {
+      null != c.A.getClient() && s.LR()
     })
   }
   render() {
@@ -30,7 +30,7 @@ class f extends Chunk64700.PureComponent {
       braintreeEmail: e,
       paypalClient: t
     } = this.props;
-    return (0, r.jsx)(s.ksK, {
+    return (0, r.jsx)(o.ksK, {
       label: d.intl.string(d.t.QQBAos),
       leading: {
         type: "image",

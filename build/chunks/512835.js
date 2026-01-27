@@ -39,7 +39,7 @@ function E(e, t) {
 }
 
 function y(e) {
-  return (0, s.eY)(e) === s.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
+  return (0, o.eY)(e) === o.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
 }
 class b extends Chunk439372.A {
   handleVoiceChannelSelect(e) {
@@ -62,7 +62,7 @@ class b extends Chunk439372.A {
           m = n, g();
           return
         }
-        y(new o.A(e)) && (m = n, g())
+        y(new s.A(e)) && (m = n, g())
       }
     })
   }

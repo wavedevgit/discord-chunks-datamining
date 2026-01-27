@@ -75,7 +75,7 @@ class h extends Chunk931772.A {
     let {
       type: t,
       premium_type: n,
-      category_sku_id: s,
+      category_sku_id: o,
       prices: c,
       bundled_products: d,
       variants: _
@@ -83,8 +83,8 @@ class h extends Chunk931772.A {
     return new h(f(u({}, super.fromServer(g)), {
       type: t,
       premiumType: n === l.oA2 ? null : n,
-      categorySkuId: s,
-      isCategoryReward: o.MS.some(e => {
+      categorySkuId: o,
+      isCategoryReward: s.MS.some(e => {
         let {
           rewardSkuId: t
         } = e;

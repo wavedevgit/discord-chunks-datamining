@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk442433 = require("./442433.js"),
   Chunk721768 = require("./721768.js"),
@@ -122,10 +122,10 @@ class v extends Chunk64700.PureComponent {
     else {
       let t = this._ref;
       if (null == t) return;
-      let s = t.value.slice(0, t.selectionStart - i.length),
-        o = r && null != a ? a.length - i.length : 0,
-        l = t.value.slice(t.selectionEnd + o);
-      this._insertText(e, s, l, n)
+      let o = t.value.slice(0, t.selectionStart - i.length),
+        s = r && null != a ? a.length - i.length : 0,
+        l = t.value.slice(t.selectionEnd + s);
+      this._insertText(e, o, l, n)
     }
   }
   insertInlineAutocompleteInput(e) {}
@@ -146,9 +146,9 @@ class v extends Chunk64700.PureComponent {
         onChange: a
       } = this.props;
     null == a || a(null, i, (0, _.x7)(i));
-    let s = t.length + e.length;
+    let o = t.length + e.length;
     this.setState({
-      nextSelection: s
+      nextSelection: o
     }, () => {
       this.props.maybeShowAutocomplete()
     })
@@ -179,9 +179,9 @@ class v extends Chunk64700.PureComponent {
       children: [(0, r.jsx)(d.EG, {
         event: h.jej.GLOBAL_CLIPBOARD_PASTE,
         handler: this.handleGlobalPaste
-      }), (0, r.jsx)(o.d4u, {
+      }), (0, r.jsx)(s.d4u, {
         ref: this.handleSetRef,
-        className: s()(l, f),
+        className: o()(l, f),
         id: c,
         rows: 1,
         fontWidthEstimate: 6,

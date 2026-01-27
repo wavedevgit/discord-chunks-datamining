@@ -8,7 +8,7 @@ require.d(exports, {
   QQ: () => f,
   UD: () => h,
   Uk: () => p,
-  ZY: () => s,
+  ZY: () => o,
   gg: () => g,
   uL: () => c,
   z: () => u
@@ -24,21 +24,21 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = 14200704e5,
-  o = 4095,
+let o = 14200704e5,
+  s = 4095,
   l = 22;
 
 function c(e) {
-  return Math.floor(Number(e) / 2 ** l) + s
+  return Math.floor(Number(e) / 2 ** l) + o
 }
 
 function u(e) {
-  let t = e - s;
+  let t = e - o;
   return t <= 0 ? "0" : i()(t).shiftLeft(l).toString()
 }
 
 function d(e, t) {
-  let n = e - s;
+  let n = e - o;
   return i()(n <= 0 ? 0 : n).shiftLeft(l).add(t.next()).toString()
 }
 
@@ -61,18 +61,18 @@ function h(e, t) {
 function m(e) {
   if (null == e || !/^\d{17,19}$/.test(e)) returnfalse;
   try {
-    return c(e) >= s
+    return c(e) >= o
   } catch (e) {
     returnfalse
   }
 }
 class g {
   next() {
-    if (this.seq > o) throw Error("Snowflake sequence number overflow: ".concat(this.seq));
+    if (this.seq > s) throw Error("Snowflake sequence number overflow: ".concat(this.seq));
     return this.seq++
   }
   willOverflowNext() {
-    return this.seq > o
+    return this.seq > s
   }
   reset() {
     this.seq = 0

@@ -46,14 +46,14 @@ function m(e) {
     }
   });
   if (b) return null;
-  let v = (0, s.Tq)(m) ? null == (t = m.extra.entries[0]) ? true : t.media : m.extra.media;
+  let v = (0, o.Tq)(m) ? null == (t = m.extra.entries[0]) ? true : t.media : m.extra.media;
   return null == v ? null : (0, r.jsx)(a.Drp, {
     id: "play-on-spotify",
     label: h.intl.string(h.t.rRffNz),
     action: () => {
       null == E || E({
         action: "PRESS_PLAY_ON_SPOTIFY_MENU_ITEM"
-      }), (0, o.n)(_.M0.TRACK, v.external_id)
+      }), (0, s.n)(_.M0.TRACK, v.external_id)
     }
   })
 }

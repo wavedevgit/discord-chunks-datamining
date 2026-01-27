@@ -18,21 +18,21 @@ function d(e) {
 }
 
 function f(e, t, n, r) {
-  return !!d(c.Ay.getProps(n, r).groups) || !(e.length < u.length) && !(e.length > t) && false !== e.indexOf(u) && ((0, s.Ey)(n, r, o.LD), true)
+  return !!d(c.Ay.getProps(n, r).groups) || !(e.length < u.length) && !(e.length > t) && false !== e.indexOf(u) && ((0, o.Ey)(n, r, s.LD), true)
 }
 
 function p(e, t, n) {
   let i = (0, l.A)(),
-    [s, o] = r.useState(false),
+    [o, s] = r.useState(false),
     u = r.useMemo(() => a().debounce(e => {
-      f(e, i, t, n) && o(true)
+      f(e, i, t, n) && s(true)
     }, 200, {
       maxWait: 500
     }), [i, t, n]);
   r.useEffect(() => {
     let r = c.Ay.getProps(t, n).groups;
-    if (null != t && !d(r) && !s) return e.addListener("text-changed", u), () => {
+    if (null != t && !d(r) && !o) return e.addListener("text-changed", u), () => {
       e.removeListener("text-changed", u), u.cancel()
     }
-  }, [s, u, e, t, n])
+  }, [o, u, e, t, n])
 }

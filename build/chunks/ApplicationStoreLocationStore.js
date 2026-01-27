@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 839067, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 839067, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => c
 }), require("./747238.js"), require("./65821.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
@@ -15,49 +14,40 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-
-function o(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      s(e, t, n[t])
-    })
-  }
-  return e
-}
-let l = null;
-
-function c(e) {
-  let {
-    location: t
-  } = e;
-  l = o({}, t)
-}
-
-function u() {
-  l = null
-}
-
-function d(e) {
-  let t = null != e && null != e.search ? e.search : "";
-  return null != e ? "".concat(e.pathname).concat(t) : null
-}
-class f extends(r = Chunk311907.Ay.Store) {
+let a = null;
+class o extends(r = Chunk311907.Ay.Store) {
   getCurrentPath() {
-    return null != l ? l.pathname : null
+    return null != a ? a.pathname : null
   }
   getCurrentRoute() {
-    return d(l)
+    var e;
+    let t;
+    return t = null != (e = a) && null != e.search ? e.search : "", null != e ? "".concat(e.pathname).concat(t) : null
   }
   reset() {
     throw Error("Should not reset the store this way outside of a test environment")
   }
 }
-s(f, "displayName", "ApplicationStoreLocationStore");
-let p = new f(Chunk73153.h, {
-  APPLICATION_STORE_LOCATION_CHANGE: c,
-  APPLICATION_STORE_RESET_NAVIGATION: u
+s(o, "displayName", "ApplicationStoreLocationStore");
+let c = new o(Chunk73153.h, {
+  APPLICATION_STORE_LOCATION_CHANGE: function(e) {
+    let {
+      location: t
+    } = e;
+    a = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          s(e, t, n[t])
+        })
+      }
+      return e
+    }({}, t)
+  },
+  APPLICATION_STORE_RESET_NAVIGATION: function() {
+    a = null
+  }
 })

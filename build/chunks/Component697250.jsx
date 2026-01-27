@@ -84,7 +84,7 @@ function y(e) {
     userId: t,
     analyticsLocation: n
   } = e, r = i.useCallback(() => {
-    s.A.addRelationship({
+    o.A.addRelationship({
       userId: t,
       context: {
         location: n
@@ -107,7 +107,7 @@ function b(e) {
     userId: t,
     analyticsLocation: n
   });
-  return (0, r.jsx)(o.FD, _({}, a, i))
+  return (0, r.jsx)(s.FD, _({}, a, i))
 }
 
 function O(e) {
@@ -119,10 +119,10 @@ function O(e) {
     analyticsLocation: n
   }), {
     text: a
-  } = i, s = g(i, ["text"]);
-  return (0, r.jsx)(o.br, _({
+  } = i, o = g(i, ["text"]);
+  return (0, r.jsx)(s.br, _({
     tooltipText: a
-  }, s))
+  }, o))
 }
 let v = {
     [Chunk652215.eA$.FRIEND]: Chunk397927.V1C,
@@ -140,19 +140,19 @@ function I(e) {
     user: t,
     relationshipType: n,
     analyticsLocation: a
-  } = e, s = g(e, ["user", "relationshipType", "analyticsLocation"]), c = v[n], u = A[n](), d = (0, l.T)({
+  } = e, o = g(e, ["user", "relationshipType", "analyticsLocation"]), c = v[n], u = A[n](), d = (0, l.T)({
     user: t,
     analyticsLocation: a
   }), f = i.useRef(null), p = _({
     icon: c,
     tooltipText: u
-  }, s);
-  return 0 === d.length ? (0, r.jsx)(o.q3, m(_({}, p), {
+  }, o);
+  return 0 === d.length ? (0, r.jsx)(s.q3, m(_({}, p), {
     disabled: true
   })) : (0, r.jsx)(l.A, {
     targetElementRef: f,
     menuItems: d,
-    children: e => (0, r.jsx)(o.q3, _({
+    children: e => (0, r.jsx)(s.q3, _({
       buttonRef: f
     }, e, p))
   })
@@ -163,19 +163,19 @@ function S(e) {
     user: t,
     relationshipType: n,
     analyticsLocation: a
-  } = e, s = g(e, ["user", "relationshipType", "analyticsLocation"]), c = v[n], u = A[n](), d = (0, l.T)({
+  } = e, o = g(e, ["user", "relationshipType", "analyticsLocation"]), c = v[n], u = A[n](), d = (0, l.T)({
     user: t,
     analyticsLocation: a
   }), f = i.useRef(null), p = _({
     icon: c,
     tooltipText: u
-  }, s);
-  return 0 === d.length ? (0, r.jsx)(o.br, m(_({}, p), {
+  }, o);
+  return 0 === d.length ? (0, r.jsx)(s.br, m(_({}, p), {
     disabled: true
   })) : (0, r.jsx)(l.A, {
     targetElementRef: f,
     menuItems: d,
-    children: e => (0, r.jsx)(o.br, _({
+    children: e => (0, r.jsx)(s.br, _({
       buttonRef: f
     }, e, p))
   })
@@ -186,7 +186,7 @@ function T(e) {
     user: t,
     gameFriends: n,
     hasOutgoingPendingGameFriends: a,
-    hasIncomingPendingGameFriends: s,
+    hasIncomingPendingGameFriends: o,
     analyticsLocation: u
   } = e, d = g(e, ["user", "gameFriends", "hasOutgoingPendingGameFriends", "hasIncomingPendingGameFriends", "analyticsLocation"]), {
     tooltipText: f,
@@ -196,7 +196,7 @@ function T(e) {
   } = (0, c.E)({
     gameFriends: n,
     hasOutgoingPendingGameFriends: a,
-    hasIncomingPendingGameFriends: s
+    hasIncomingPendingGameFriends: o
   }), y = (0, l.T)({
     user: t,
     analyticsLocation: u
@@ -206,7 +206,7 @@ function T(e) {
     "aria-label": h,
     onMouseEnter: p
   }, d);
-  return 0 === y.length ? (0, r.jsx)(o.q3, m(_({}, O), {
+  return 0 === y.length ? (0, r.jsx)(s.q3, m(_({}, O), {
     disabled: true
   })) : (0, r.jsx)(l.A, {
     targetElementRef: b,
@@ -216,7 +216,7 @@ function T(e) {
         var t;
         null == p || p(), null == (t = e.onMouseEnter) || t.call(e)
       };
-      return (0, r.jsx)(o.q3, m(_({
+      return (0, r.jsx)(s.q3, m(_({
         buttonRef: b
       }, e, O), {
         onMouseEnter: t
@@ -230,7 +230,7 @@ function C(e) {
     user: t,
     gameFriends: n,
     hasOutgoingPendingGameFriends: a,
-    hasIncomingPendingGameFriends: s,
+    hasIncomingPendingGameFriends: o,
     analyticsLocation: u
   } = e, d = g(e, ["user", "gameFriends", "hasOutgoingPendingGameFriends", "hasIncomingPendingGameFriends", "analyticsLocation"]), {
     tooltipText: f,
@@ -240,7 +240,7 @@ function C(e) {
   } = (0, c.E)({
     gameFriends: n,
     hasOutgoingPendingGameFriends: a,
-    hasIncomingPendingGameFriends: s
+    hasIncomingPendingGameFriends: o
   }), y = (0, l.T)({
     user: t,
     analyticsLocation: u
@@ -250,7 +250,7 @@ function C(e) {
     "aria-label": h,
     onMouseEnter: p
   }, d);
-  return 0 === y.length ? (0, r.jsx)(o.br, m(_({
+  return 0 === y.length ? (0, r.jsx)(s.br, m(_({
     tooltipPosition: "left",
     tooltipAlign: "top"
   }, O), {
@@ -263,7 +263,7 @@ function C(e) {
         var t;
         null == p || p(), null == (t = e.onMouseEnter) || t.call(e)
       };
-      return (0, r.jsx)(o.br, m(_({
+      return (0, r.jsx)(s.br, m(_({
         buttonRef: b,
         tooltipPosition: "left",
         tooltipAlign: "top"

@@ -9,7 +9,7 @@ var Chunk517846 = require("./517846.js"),
   Chunk236698 = require("./236698.js"),
   Chunk859703 = require("./859703.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,24 +22,24 @@ class l extends Chunk439372.A {
     this.questCompletionStates.clear()
   }
   constructor(...e) {
-    super(...e), o(this, "questCompletionStates", new Map), o(this, "handleQuestStoreChange", () => {
-      let e = s.A.quests;
+    super(...e), s(this, "questCompletionStates", new Map), s(this, "handleQuestStoreChange", () => {
+      let e = o.A.quests;
       e.forEach(e => {
         this.checkQuestCompletion(e.id, e)
       });
       let t = new Set(e.keys());
       for (let e of this.questCompletionStates.keys()) t.has(e) || this.questCompletionStates.delete(e)
-    }), o(this, "checkQuestCompletion", (e, t) => {
+    }), s(this, "checkQuestCompletion", (e, t) => {
       var n, r;
       let i = null != (n = null == (r = t.userStatus) ? true : r.completedAt) ? n : null;
       this.questCompletionStates.has(e) && null == this.questCompletionStates.get(e) && null != i && this.onQuestCompleted(e), this.questCompletionStates.set(e, i)
-    }), o(this, "onQuestCompleted", e => {
+    }), s(this, "onQuestCompleted", e => {
       (0, a.hs)(r.w.QUEST_COMPLETED, {
         quest_id: e
       })
-    }), o(this, "stores", new Map([
-      [s.A, this.handleQuestStoreChange]
-    ])), o(this, "actions", {
+    }), s(this, "stores", new Map([
+      [o.A, this.handleQuestStoreChange]
+    ])), s(this, "actions", {
       LOGOUT: () => {
         this.questCompletionStates.clear()
       }

@@ -29,7 +29,7 @@ let p = {
       u = n.elements.arrow,
       p = n.modifiersData.popperOffsets,
       _ = (0, r.A)(n.placement),
-      h = (0, o.A)(_),
+      h = (0, s.A)(_),
       m = [d.kb, d.pG].indexOf(_) >= 0 ? "height" : "width";
     if (u && p) {
       var g = f(c.padding, n),
@@ -38,7 +38,7 @@ let p = {
         b = "y" === h ? d.sQ : d.pG,
         O = n.rects.reference[m] + n.rects.reference[h] - p[h] - n.rects.popper[m],
         v = p[h] - n.rects.reference[h],
-        A = (0, s.A)(u),
+        A = (0, o.A)(u),
         I = A ? "y" === h ? A.clientHeight || 0 : A.clientWidth || 0 : 0,
         S = O / 2 - v / 2,
         T = g[y],

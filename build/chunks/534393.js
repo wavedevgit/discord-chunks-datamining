@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 534393, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 534393, original params: e,t,n (module,exports,require) **/
 module.exports = {
   OS: "singleSelectOption__12eef",
   Mg: "deviceContainer__12eef",

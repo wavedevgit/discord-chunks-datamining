@@ -7,7 +7,7 @@ require.d(exports, {
   YW: () => c,
   _w: () => p,
   c4: () => u,
-  ho: () => o,
+  ho: () => s,
   z0: () => f
 });
 var Chunk73153 = require("./73153.js"),
@@ -15,7 +15,7 @@ var Chunk73153 = require("./73153.js"),
   Chunk698723 = require("./698723.js"),
   Chunk412780 = require("./412780.js");
 
-function o(e) {
+function s(e) {
   r.h.dispatch({
     type: "RTC_DEBUG_MODAL_OPEN",
     section: e
@@ -44,7 +44,7 @@ function u(e) {
 }
 
 function d(e) {
-  (0, a.A)("connection_replay_log_enabled", e, s.Ay.shouldRecordNextConnection()), r.h.dispatch({
+  (0, a.A)("connection_replay_log_enabled", e, o.Ay.shouldRecordNextConnection()), r.h.dispatch({
     type: "RTC_DEBUG_SET_RECORDING_FLAG",
     value: e
   })

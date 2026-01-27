@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 308494, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 308494, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   s: () => s
 });
@@ -14,6 +13,6 @@ let s = {
     e.preventDefault(), e.stopPropagation();
     let t = i.A.getGuildId(),
       n = i.A.getChannelId();
-    return null != n && (0, r.i)(null != t ? t : a.ME, n), false
+    return null != n && (0, r.i)(null != t ? t : l.ME, n), false
   }
 }

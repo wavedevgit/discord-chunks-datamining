@@ -99,7 +99,7 @@ function b(e) {
       id: n
     } = t;
     return n !== e
-  }), s.removeToken(e)
+  }), o.removeToken(e)
 }
 
 function O(e) {

@@ -46,14 +46,14 @@ function P() {
     paused: I,
     userActions: Array.from(N)
   };
-  o.w.set(O, e)
+  s.w.set(O, e)
 }
 
 function D(e, t) {
   return null != S && S.applicationId === e && S.branchId === t || null != T && T.applicationId === e && T.branchId === t
 }
 
-function x() {
+function L() {
   let e = v[0];
   if (null != e) {
     let {
@@ -72,29 +72,29 @@ function x() {
   }
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = (0, p.gW)(e, t);
   return v.findIndex(e => e.comboId === n)
 }
 
-function j(e, t, n, r) {
+function M(e, t, n, r) {
   let i = (0, p.gW)(e, t),
     a = {
       comboId: i,
       action: r
     },
-    s = A.indexOf(i);
-  false !== s && A.splice(s, 1);
-  let o = L(e, t);
-  0 !== o && (n ? false === o && (v.push(a), x()) : (o > 0 && v.splice(o, 1), v.unshift(a), x())), !n && I && _.A.resume(), P()
+    o = A.indexOf(i);
+  false !== o && A.splice(o, 1);
+  let s = x(e, t);
+  0 !== s && (n ? false === s && (v.push(a), L()) : (s > 0 && v.splice(s, 1), v.unshift(a), L())), !n && I && _.A.resume(), P()
 }
 
-function M(e, t) {
+function j(e, t) {
   let n = (0, p.gW)(e, t),
     r = A.indexOf(n);
   false !== r && A.splice(r, 1);
-  let i = L(e, t);
-  false !== i && (v.splice(i, 1), P()), x()
+  let i = x(e, t);
+  false !== i && (v.splice(i, 1), P()), L()
 }
 
 function k(e) {
@@ -102,11 +102,11 @@ function k(e) {
     applicationId: t,
     branchId: n
   } = e;
-  N.set((0, p.gW)(t, n), "Install"), j(t, n, false, "Patch")
+  N.set((0, p.gW)(t, n), "Install"), M(t, n, false, "Patch")
 }
 
 function U(e) {
-  F(e), H(e)
+  V(e), H(e)
 }
 
 function G(e) {
@@ -114,33 +114,33 @@ function G(e) {
     applicationId: t,
     branchId: n
   } = e;
-  N.set((0, p.gW)(t, n), "Repair"), j(t, n, false, "Repair")
-}
-
-function V(e) {
-  let {
-    applicationId: t,
-    branchId: n,
-    automatic: r
-  } = e;
-  j(t, n, r, "Patch")
+  N.set((0, p.gW)(t, n), "Repair"), M(t, n, false, "Repair")
 }
 
 function F(e) {
   let {
     applicationId: t,
+    branchId: n,
+    automatic: r
+  } = e;
+  M(t, n, r, "Patch")
+}
+
+function V(e) {
+  let {
+    applicationId: t,
     branchId: n
   } = e;
-  M(t, n)
+  j(t, n)
 }
 
 function B(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, r = L(t, n);
+  } = e, r = x(t, n);
   if (r < 1) returnfalse;
-  v.splice(0, 0, v.splice(r, 1)[0]), x(), I && _.A.resume(), P()
+  v.splice(0, 0, v.splice(r, 1)[0]), L(), I && _.A.resume(), P()
 }
 
 function H(e) {
@@ -155,7 +155,7 @@ function Y(e) {
   let {
     state: t
   } = e;
-  !C && (C = true, x(), I || _.A.resume());
+  !C && (C = true, L(), I || _.A.resume());
   let n = I;
   I = t.paused, S = t.currentTask, T = t.nextTask;
   let r = false;
@@ -165,22 +165,22 @@ function Y(e) {
     } = e, {
       applicationId: n,
       branchId: i
-    } = (0, p.r0)(t), s = m.A.getState(n, i), o = f.A.getTargetBuildId(n, i), l = f.A.getTargetManifests(n, i);
-    if (null != s && s.type === g.WTw.UP_TO_DATE && s.buildId === s.targetBuildId && s.buildId === o && a().isEqual(s.manifestIds, s.targetManifestIds) && a().isEqual(s.manifestIds, l)) {
+    } = (0, p.r0)(t), o = m.A.getState(n, i), s = f.A.getTargetBuildId(n, i), l = f.A.getTargetManifests(n, i);
+    if (null != o && o.type === g.WTw.UP_TO_DATE && o.buildId === o.targetBuildId && o.buildId === s && a().isEqual(o.manifestIds, o.targetManifestIds) && a().isEqual(o.manifestIds, l)) {
       if (A.push(t), N.has(t)) {
         switch (N.get(t)) {
           case "Install":
-            c.BK(n, s);
+            c.BK(n, o);
             break;
           case "Repair":
-            c.jU(n, s)
+            c.jU(n, o)
         }
         N.delete(t)
       }
       return r = true, false
     }
     returntrue
-  }), x(), (r || n !== I) && P()
+  }), L(), (r || n !== I) && P()
 }
 
 function W() {
@@ -206,7 +206,7 @@ function K(e) {
           application_id: t,
           branch_id: n
         } = e;
-        M(t, n)
+        j(t, n)
       }
     }
   }
@@ -223,24 +223,24 @@ function q() {
 }
 
 function Z() {
-  o.w.remove(O), (0, h.isDesktop)() && _.A.pause()
+  s.w.remove(O), (0, h.isDesktop)() && _.A.pause()
 }
 
-function X(e) {
+function Q(e) {
   return e.map(e => "string" == typeof e ? {
     comboId: e,
     action: "Patch"
   } : e)
 }
-class Q extends(r = Chunk311907.Ay.Store) {
+class X extends(r = Chunk311907.Ay.Store) {
   initialize() {
     var e;
-    let t = null != (e = o.w.get(O)) ? e : {
+    let t = null != (e = s.w.get(O)) ? e : {
       queue: null,
       paused: null,
       userActions: null
     };
-    null != t.queue && (v = X(t.queue)), null != t.paused && (I = t.paused), null != t.userActions && (N = new Map(Array.from(t.userActions))), this.waitFor(m.A, u.Ay), this.syncWith([u.Ay], z), this.waitFor(f.A, d.default, m.A)
+    null != t.queue && (v = Q(t.queue)), null != t.paused && (I = t.paused), null != t.userActions && (N = new Map(Array.from(t.userActions))), this.waitFor(m.A, u.Ay), this.syncWith([u.Ay], z), this.waitFor(f.A, d.default, m.A)
   }
   get activeItems() {
     return v.map(e => {
@@ -257,18 +257,18 @@ class Q extends(r = Chunk311907.Ay.Store) {
     return I
   }
   getQueuePosition(e, t) {
-    return L(e, t)
+    return x(e, t)
   }
   isCorruptInstallation() {
     return w
   }
 }
-y(Q, "displayName", "DispatchManagerStore");
-let J = new Q(Chunk73153.h, {
+y(X, "displayName", "DispatchManagerStore");
+let J = new X(Chunk73153.h, {
   DISPATCH_APPLICATION_INSTALL: k,
-  DISPATCH_APPLICATION_UPDATE: V,
+  DISPATCH_APPLICATION_UPDATE: F,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: F,
+  DISPATCH_APPLICATION_CANCEL: V,
   DISPATCH_APPLICATION_REPAIR: G,
   DISPATCH_APPLICATION_MOVE_UP: B,
   DISPATCH_APPLICATION_REMOVE_FINISHED: H,

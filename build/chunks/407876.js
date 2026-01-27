@@ -127,7 +127,7 @@ class g extends Chunk143236.EventEmitter {
     let n = this.files.indexOf(t);
     this.files = [...this.files.slice(0, n), ...this.files.slice(n + 1)], this._file = h(p({}, this._file), {
       items: this.files
-    }), await (0, o.sm)(t), t.cancel(), this.emit("cancel-upload-item", this._file), 0 === this.files.length && this.cancel()
+    }), await (0, s.sm)(t), t.cancel(), this.emit("cancel-upload-item", this._file), 0 === this.files.length && this.cancel()
   }
   upload(e) {
     if (null != this._cancel) throw Error("Uploader.upload(...): An upload is already in progress.");
@@ -152,8 +152,8 @@ class g extends Chunk143236.EventEmitter {
         i = (0, c.YL)(e, t),
         a = Math.floor((e - this._loaded) / ((r - this._lastUpdate) / 1e3));
       if (null != n) {
-        var s;
-        null == (s = this._file.items) || s.forEach(e => {
+        var o;
+        null == (o = this._file.items) || o.forEach(e => {
           e.item.progress = n[e.id]
         })
       }

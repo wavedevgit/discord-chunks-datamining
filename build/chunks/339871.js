@@ -37,8 +37,8 @@ function u(e, t, n) {
 }
 
 function d(e, t) {
-  let [n] = o.VW.node(e, t.path);
-  if (!o.l5.isText(n)) return {};
+  let [n] = s.VW.node(e, t.path);
+  if (!s.l5.isText(n)) return {};
   let r = n.text,
     i = t.offset;
   for (let e = i - 1; e >= 0; e--)
@@ -48,23 +48,23 @@ function d(e, t) {
   for (let e = a; e < r.length; e++)
     if (l.has(r.charAt(e))) a++;
     else break;
-  let s = r.substring(i, a),
+  let o = r.substring(i, a),
     c = {};
   return p({
     result: c,
-    text: s,
+    text: o,
     startIndex: i,
     syntax: "***",
     type1: "italics",
     type2: "bold"
   }), p({
     result: c,
-    text: s,
+    text: o,
     startIndex: i,
     syntax: "___",
     type1: "italics",
     type2: "underline"
-  }), f(c, s, i, "**", "bold"), f(c, s, i, "*", "italics"), f(c, s, i, "_", "italics"), f(c, s, i, "__", "underline"), f(c, s, i, "`", "inlineCode"), f(c, s, i, "~~", "strikethrough"), f(c, s, i, "||", "spoiler"), c
+  }), f(c, o, i, "**", "bold"), f(c, o, i, "*", "italics"), f(c, o, i, "_", "italics"), f(c, o, i, "__", "underline"), f(c, o, i, "`", "inlineCode"), f(c, o, i, "~~", "strikethrough"), f(c, o, i, "||", "spoiler"), c
 }
 
 function f(e, t, n, r, i) {
@@ -82,14 +82,14 @@ function p(e) {
     startIndex: r,
     syntax: i,
     type1: a,
-    type2: s
-  } = e, o = _(n, i);
-  o >= 0 && (t[a] = {
+    type2: o
+  } = e, s = _(n, i);
+  s >= 0 && (t[a] = {
     chars: i.substring(0, 1),
-    location: o + r
-  }, t[s] = {
+    location: s + r
+  }, t[o] = {
     chars: i.substring(1),
-    location: o + r + 1
+    location: s + r + 1
   })
 }
 
@@ -104,11 +104,11 @@ function _(e, t) {
 
 function h(e, t) {
   a.o.withSingleEntry(e, () => {
-    o.VW.withoutNormalizing(e, () => {
+    s.VW.withoutNormalizing(e, () => {
       i()(null != e.selection, "Editor has no selection");
-      let [n, r] = o.ZF.edges(e.selection), a = u(e, n, r), l = a.before[t], d = a.after[t], f = o.VW.node(e, n.path), p = o.VW.node(e, r.path);
-      if (null == f || null == p || !o.l5.isText(f[0]) || !o.l5.isText(p[0])) return;
-      let _ = o.PW.equals(f[1], p[1]);
+      let [n, r] = s.ZF.edges(e.selection), a = u(e, n, r), l = a.before[t], d = a.after[t], f = s.VW.node(e, n.path), p = s.VW.node(e, r.path);
+      if (null == f || null == p || !s.l5.isText(f[0]) || !s.l5.isText(p[0])) return;
+      let _ = s.PW.equals(f[1], p[1]);
       if (null != l && null != d) {
         let t = {
             path: n.path,
@@ -118,16 +118,16 @@ function h(e, t) {
             path: r.path,
             offset: d.location
           };
-        s.b.delete(e, {
+        o.b.delete(e, {
           at: i,
           distance: d.chars.length
-        }), s.b.delete(e, {
+        }), o.b.delete(e, {
           at: t,
           distance: l.chars.length
         });
         let a = n.offset,
           c = r.offset;
-        o.Kh.isBefore(n, t) || (a -= l.chars.length), _ && !o.Kh.isBefore(r, t) && (c -= l.chars.length), o.Kh.isAfter(r, i) && (c -= d.chars.length), s.b.select(e, {
+        s.Kh.isBefore(n, t) || (a -= l.chars.length), _ && !s.Kh.isBefore(r, t) && (c -= l.chars.length), s.Kh.isAfter(r, i) && (c -= d.chars.length), o.b.select(e, {
           anchor: {
             path: n.path,
             offset: Math.max(0, a)
@@ -139,42 +139,42 @@ function h(e, t) {
         })
       } else {
         let i = c[t];
-        s.b.insertText(e, i, {
+        o.b.insertText(e, i, {
           at: r
-        }), s.b.insertText(e, i, {
+        }), o.b.insertText(e, i, {
           at: n
         });
         let a = f[0].text.length + i.length,
-          o = p[0].text.length + (_ ? 2 * i.length : i.length);
-        s.b.select(e, {
+          s = p[0].text.length + (_ ? 2 * i.length : i.length);
+        o.b.select(e, {
           anchor: {
             path: n.path,
             offset: Math.min(a, n.offset + i.length)
           },
           focus: {
             path: r.path,
-            offset: Math.min(o, r.offset + (_ ? i.length : 0))
+            offset: Math.min(s, r.offset + (_ ? i.length : 0))
           }
         })
       }
     })
-  }), o.VW.focus(e)
+  }), s.VW.focus(e)
 }
 
 function m(e, t) {
   let n = e.selection;
   if (null == n) return;
   let r = true;
-  for (let [i, a] of o.VW.blocks(e))("line" === i.type || i.type === t) && o.ZF.includes(n, a) && (r = r && i.type === t);
-  o.VW.withoutNormalizing(e, () => {
-    for (let [i, a] of o.VW.blocks(e)) o.ZF.includes(n, a) && (r || "line" !== i.type ? r && i.type === t && s.b.setNodes(e, {
+  for (let [i, a] of s.VW.blocks(e))("line" === i.type || i.type === t) && s.ZF.includes(n, a) && (r = r && i.type === t);
+  s.VW.withoutNormalizing(e, () => {
+    for (let [i, a] of s.VW.blocks(e)) s.ZF.includes(n, a) && (r || "line" !== i.type ? r && i.type === t && o.b.setNodes(e, {
       type: "line"
     }, {
       at: a
-    }) : s.b.setNodes(e, {
+    }) : o.b.setNodes(e, {
       type: t
     }, {
       at: a
     }))
-  }), o.VW.focus(e)
+  }), s.VW.focus(e)
 }

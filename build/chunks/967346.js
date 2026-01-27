@@ -15,7 +15,7 @@ function a(e, t, n) {
 }
 require("./397927.js"), require("./823950.jsx");
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);

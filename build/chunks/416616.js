@@ -15,12 +15,12 @@ var Chunk981737 = require("./981737.js"),
     abbreviated: ["Q1", "Q2", "Q3", "Q4"],
     wide: ["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"]
   },
-  s = {
+  o = {
     narrow: ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"],
     abbreviated: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     wide: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
   },
-  o = {
+  s = {
     narrow: ["S", "M", "T", "W", "T", "F", "S"],
     short: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
     abbreviated: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
@@ -116,11 +116,11 @@ let u = {
     }
   }),
   month: (0, Chunk981737.A)({
-    values: s,
+    values: o,
     defaultWidth: "wide"
   }),
   day: (0, Chunk981737.A)({
-    values: o,
+    values: s,
     defaultWidth: "wide"
   }),
   dayPeriod: (0, Chunk981737.A)({

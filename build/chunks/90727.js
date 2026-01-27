@@ -56,9 +56,9 @@ var Chunk222367 = require("./222367.js"),
       this.options = n
     }
     return e.parseText = function(e, t) {
-      return (0, s.r4)(e, t)
+      return (0, o.r4)(e, t)
     }, e.fromText = function(e, t) {
-      return (0, s.IK)(e, t)
+      return (0, o.IK)(e, t)
     }, e.fromString = function(t) {
       return new e(e.parseString(t) || true)
     }, e.prototype._iter = function(e) {
@@ -71,16 +71,16 @@ var Chunk222367 = require("./222367.js"),
       if (e) return this._iter(new a.A("all", {}, e));
       var t = this._cacheGet("all");
       returnfalse === t && (t = this._iter(new i.A("all", {})), this._cacheAdd("all", t)), t
-    }, e.prototype.between = function(e, t, n, s) {
+    }, e.prototype.between = function(e, t, n, o) {
       if (true === n && (n = false), !(0, r.vd)(e) || !(0, r.vd)(t)) throw Error("Invalid date passed in to RRule.between");
-      var o = {
+      var s = {
         before: t,
         after: e,
         inc: n
       };
-      if (s) return this._iter(new a.A("between", o, s));
-      var l = this._cacheGet("between", o);
-      returnfalse === l && (l = this._iter(new i.A("between", o)), this._cacheAdd("between", l, o)), l
+      if (o) return this._iter(new a.A("between", s, o));
+      var l = this._cacheGet("between", s);
+      returnfalse === l && (l = this._iter(new i.A("between", s)), this._cacheAdd("between", l, s)), l
     }, e.prototype.before = function(e, t) {
       if (true === t && (t = false), !(0, r.vd)(e)) throw Error("Invalid date passed in to RRule.before");
       var n = {
@@ -102,10 +102,10 @@ var Chunk222367 = require("./222367.js"),
     }, e.prototype.toString = function() {
       return (0, u.F)(this.origOptions)
     }, e.prototype.toText = function(e, t, n) {
-      return (0, s.fE)(this, e, t, n)
+      return (0, o.fE)(this, e, t, n)
     }, e.prototype.isFullyConvertibleToText = function() {
-      return (0, s._T)(this)
+      return (0, o._T)(this)
     }, e.prototype.clone = function() {
       return new e(this.origOptions)
-    }, e.FREQUENCIES = ["YEARLY", "MONTHLY", "WEEKLY", "DAILY", "HOURLY", "MINUTELY", "SECONDLY"], e.YEARLY = o.j.YEARLY, e.MONTHLY = o.j.MONTHLY, e.WEEKLY = o.j.WEEKLY, e.DAILY = o.j.DAILY, e.HOURLY = o.j.HOURLY, e.MINUTELY = o.j.MINUTELY, e.SECONDLY = o.j.SECONDLY, e.MO = _.MO, e.TU = _.TU, e.WE = _.WE, e.TH = _.TH, e.FR = _.FR, e.SA = _.SA, e.SU = _.SU, e.parseString = c.$, e.optionsToString = u.F, e
+    }, e.FREQUENCIES = ["YEARLY", "MONTHLY", "WEEKLY", "DAILY", "HOURLY", "MINUTELY", "SECONDLY"], e.YEARLY = s.j.YEARLY, e.MONTHLY = s.j.MONTHLY, e.WEEKLY = s.j.WEEKLY, e.DAILY = s.j.DAILY, e.HOURLY = s.j.HOURLY, e.MINUTELY = s.j.MINUTELY, e.SECONDLY = s.j.SECONDLY, e.MO = _.MO, e.TU = _.TU, e.WE = _.WE, e.TH = _.TH, e.FR = _.FR, e.SA = _.SA, e.SU = _.SU, e.parseString = c.$, e.optionsToString = u.F, e
   }()

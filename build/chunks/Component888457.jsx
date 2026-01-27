@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk86968 = require("./86968.js"),
   Chunk900283 = require("./900283.js"),
@@ -80,19 +80,19 @@ function O(e) {
   i.useEffect(() => {
     S && (0, u.Y)(D)
   }, [S]);
-  let x = i.useCallback(e => {
+  let L = i.useCallback(e => {
     C(e), null == R || R({
       type: c.Q.CHECKBOX
     })
   }, [C, R]);
-  return (0, r.jsxs)(o.DUT, b(E({
+  return (0, r.jsxs)(s.DUT, b(E({
     innerRef: D,
-    className: s()(m.item, m.checkboxContainer, m.labelContainer, h.jV[t], N, {
+    className: o()(m.item, m.checkboxContainer, m.labelContainer, h.jV[t], N, {
       [m.disabled]: I,
       [m.focused]: S,
       [null != w ? w : ""]: S
     }),
-    onClick: I ? true : x
+    onClick: I ? true : L
   }, T), {
     "aria-checked": g,
     "aria-disabled": I,
@@ -112,9 +112,9 @@ function O(e) {
           isFocused: S,
           disabled: I
         })
-      }), null != y && (0, r.jsx)(o.EYj, {
+      }), null != y && (0, r.jsx)(s.EYj, {
         variant: "text-xs/normal",
-        className: s()(m.subtext, {
+        className: o()(m.subtext, {
           [m.subtextLineClamp]: null != O
         }),
         lineClamp: O,
@@ -122,7 +122,7 @@ function O(e) {
       })]
     }), (0, r.jsx)("div", {
       className: m.iconContainer,
-      children: (0, r.jsx)(o.P7L, {
+      children: (0, r.jsx)(s.P7L, {
         checked: g,
         disabled: I,
         size: 20

@@ -73,12 +73,12 @@ function u(e) {
   (0, a.useEffect)(() => {
     S.current && ((0, i.pA)("assertive"), (0, i.iP)(N, "assertive"))
   }, [N]);
-  let w = (0, s.J)(e => {
+  let w = (0, o.J)(e => {
       A(), null == m || m(), t.current = window.setTimeout(() => {
         (true === f || isNaN(f) || true === n || isNaN(n) || n < f) && w(60)
       }, e)
     }),
-    R = (0, s.J)(e => {
+    R = (0, o.J)(e => {
       A(), null == E || E(), t.current = window.setTimeout(() => {
         (true === d || isNaN(d) || true === n || isNaN(n) || n > d) && R(60)
       }, e)
@@ -88,8 +88,8 @@ function u(e) {
     },
     {
       addGlobalListener: D,
-      removeAllGlobalListeners: x
-    } = (0, o.A)();
+      removeAllGlobalListeners: L
+    } = (0, s.A)();
   return {
     spinButtonProps: {
       role: "spinbutton",
@@ -109,7 +109,7 @@ function u(e) {
         w(400), D(window, "contextmenu", P)
       },
       onPressEnd: () => {
-        A(), x()
+        A(), L()
       },
       onFocus: T,
       onBlur: C
@@ -119,7 +119,7 @@ function u(e) {
         R(400), D(window, "contextmenu", P)
       },
       onPressEnd: () => {
-        A(), x()
+        A(), L()
       },
       onFocus: T,
       onBlur: C

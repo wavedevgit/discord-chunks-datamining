@@ -82,8 +82,8 @@ function h(e, t) {
       text: f
     } = t,
     h = false,
-    [m] = s.VW.node(e, s.PW.parent(s.VW.findPath(e, f)));
-  switch (s.VW.isEditor(m) ? "editor" : m.type) {
+    [m] = o.VW.node(e, o.PW.parent(o.VW.findPath(e, f)));
+  switch (o.VW.isEditor(m) ? "editor" : m.type) {
     case "line":
     case "blockQuote": {
       h = true;
@@ -94,13 +94,13 @@ function h(e, t) {
         let [t, n] = e;
         if ("hljsTypes" === t) return n;
         if (true === n) {
-          if (("codeBlockLang" === t || "codeBlockSyntax" === t) && (h = false), t.startsWith("before_") || t.startsWith("after_")) return [o[t]];
+          if (("codeBlockLang" === t || "codeBlockSyntax" === t) && (h = false), t.startsWith("before_") || t.startsWith("after_")) return [s[t]];
           if (t in _) return [_[t]];
           throw Error("Slate: Unknown decoration attribute: ".concat(t))
         }
       }).filter(e => null != e).join(" ");
       n = a()(e, {
-        [o.syntaxOverride]: "||" === u.text || "\\" === u.text
+        [s.syntaxOverride]: "||" === u.text || "\\" === u.text
       })
     }
   }

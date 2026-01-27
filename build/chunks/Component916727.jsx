@@ -25,14 +25,14 @@ let f = e => {
   });
   return (0, r.jsxs)("div", {
     className: d.RP,
-    children: [(0, r.jsx)(s.Heading, {
+    children: [(0, r.jsx)(o.Heading, {
       className: d.RS,
       variant: "heading-lg/extrabold",
       children: u.intl.format(u.t.I5dYFs, {
         serverName: null == p ? true : p.name,
         tierName: n.name
       })
-    }), !_.isEmpty() && (0, r.jsx)(s.Text, {
+    }), !_.isEmpty() && (0, r.jsx)(o.Text, {
       className: d.sT,
       variant: "text-sm/normal",
       color: "text-default",
@@ -45,7 +45,7 @@ let f = e => {
         variant: "primary",
         text: u.intl.string(u.t.WWvswD),
         fullWidth: true,
-        onClick: () => (0, o.A)("role_sub_mweb_success_modal")
+        onClick: () => (0, s.A)("role_sub_mweb_success_modal")
       }), (0, r.jsx)(a.$nd, {
         variant: "secondary",
         text: u.intl.string(u.t.y84Dhr),

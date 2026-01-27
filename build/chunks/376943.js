@@ -14,7 +14,7 @@ var Chunk734057 = require("./734057.js"),
   Chunk576705 = require("./576705.js"),
   Chunk257120 = require("./257120.js"),
   Chunk652215 = require("./652215.js");
-let l = Array.from(require("./746080.js").qW).map(e => s.A.escape(e)).join("|"),
+let l = Array.from(require("./746080.js").qW).map(e => o.A.escape(e)).join("|"),
   c = new RegExp("^/channels/(\\d+|".concat(Chunk652215.ME, ")(?:/)?(\\d+|").concat(l, ")?")),
   u = new RegExp("^/channels/(\\d+|".concat(Chunk652215.ME, ")(?:/)(\\d+|").concat(l, ")(?:/)(\\d+)")),
   d = RegExp("^/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)"),
@@ -63,7 +63,7 @@ function g(e) {
 }
 
 function E(e) {
-  return !!e.isPrivate() || a.A.can(o.xBc.VIEW_CHANNEL, e)
+  return !!e.isPrivate() || a.A.can(s.xBc.VIEW_CHANNEL, e)
 }
 
 function y(e) {
@@ -71,7 +71,7 @@ function y(e) {
     guildId: t,
     channelId: n
   } = e;
-  if (null == i.A.getGuild(t) && t !== o.ME) returnfalse;
+  if (null == i.A.getGuild(t) && t !== s.ME) returnfalse;
   if (null == n) returntrue;
   let a = r.A.getChannel(n);
   return null != a && E(a)

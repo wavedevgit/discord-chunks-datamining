@@ -5,7 +5,7 @@ let r;
 require.d(exports, {
   Ay: () => Y,
   JA: () => A,
-  XA: () => x,
+  XA: () => L,
   jd: () => D
 });
 var i, Chunk64700 = require("./64700.js"),
@@ -65,22 +65,22 @@ function D() {
   }), [])
 }
 
-function x() {
+function L() {
   return (0, a.useEffect)(() => (T++, P(), () => {
     --T, P()
   }), [])
 }
 
-function L() {
+function x() {
   let e = u.A.getChannel(_.A.getVoiceChannelId());
   return I = null != e && (0, m.A)(f.A) && (0, h.vz)(e, d.A, p.A, false), P(), false
 }
 
-function j() {
+function M() {
   return null != r ? (0, E.A)(r) : null
 }
 
-function M() {
+function j() {
   return null != r ? (0, g.A)(r) : null
 }
 
@@ -92,13 +92,13 @@ function k() {
   return {
     sourceId: "prepicked:0",
     nativePickerStyleUsed: N.lastPresentedPickerStyle,
-    sourceName: null != (e = j()) ? e : O.intl.string(O.t.KKcy95),
+    sourceName: null != (e = M()) ? e : O.intl.string(O.t.KKcy95),
     sound: t
   }
 }
 class U extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([f.A, _.A, u.A, d.A, p.A], L), L()
+    this.syncWith([f.A, _.A, u.A, d.A, p.A], x), x()
   }
   supported() {
     return w()
@@ -116,10 +116,10 @@ class U extends(i = Chunk311907.Ay.Store) {
     return r
   }
   getLastPickedContentTitle() {
-    return j()
+    return M()
   }
   getLastPickedContentPID() {
-    return M()
+    return j()
   }
   getStreamStartOptions() {
     return k()
@@ -139,13 +139,13 @@ function G(e) {
   }
 }
 
-function V() {
+function F() {
   N = {
     lastPickerAction: 2
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     error: t
   } = e;
@@ -171,8 +171,8 @@ function H() {
 v(U, "displayName", "NativeScreenSharePickerStore");
 let Y = new U(Chunk73153.h, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: G,
-  NATIVE_SCREEN_SHARE_PICKER_CANCEL: V,
-  NATIVE_SCREEN_SHARE_PICKER_ERROR: F,
+  NATIVE_SCREEN_SHARE_PICKER_CANCEL: F,
+  NATIVE_SCREEN_SHARE_PICKER_ERROR: V,
   NATIVE_SCREEN_SHARE_PICKER_PRESENT: B,
   NATIVE_SCREEN_SHARE_PICKER_RELEASE: H
 })

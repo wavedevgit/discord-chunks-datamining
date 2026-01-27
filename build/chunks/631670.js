@@ -32,13 +32,13 @@ var Chunk562465 = require("./562465.js"),
   Chunk985018 = require("./985018.jsx");
 
 function f() {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_INIT"
   })
 }
 
 function p() {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_CLOSE"
   })
 }
@@ -53,7 +53,7 @@ function _(e, t) {
     oldFormErrors: true,
     rejectWithError: false
   }).then(() => {
-    l.A.logoutInternal(), (0, o.pX)(c.BVt.DEFAULT_LOGGED_OUT)
+    l.A.logoutInternal(), (0, s.pX)(c.BVt.DEFAULT_LOGGED_OUT)
   })
 }
 async function h(e) {
@@ -66,16 +66,16 @@ async function h(e) {
     n = t.body;
   if (n.token) {
     let t = n.token;
-    delete n.token, s.h.dispatch({
+    delete n.token, o.h.dispatch({
       type: "UPDATE_TOKEN",
       token: t,
       userId: n.id
-    }), (null == e ? true : e.password) != null && (null == e ? true : e.new_password) != null && s.h.dispatch({
+    }), (null == e ? true : e.password) != null && (null == e ? true : e.new_password) != null && o.h.dispatch({
       type: "PASSWORD_UPDATED",
       userId: n.id
     })
   }
-  return s.h.dispatch({
+  return o.h.dispatch({
     type: "CURRENT_USER_UPDATE",
     user: n
   }), t
@@ -86,7 +86,7 @@ function m(e) {
   let {
     username: r,
     discriminator: a,
-    email: o,
+    email: s,
     emailToken: l,
     password: d,
     avatar: f,
@@ -100,12 +100,12 @@ function m(e) {
     primaryGuildId: O,
     displayNameStyles: v
   } = e;
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT"
   });
   let A = {
     username: r,
-    email: o,
+    email: s,
     email_token: l,
     password: d,
     avatar: f,
@@ -121,11 +121,11 @@ function m(e) {
     S = (0, u.oH)();
   null != S && null != I && (A.push_provider = S, A.push_token = I);
   let T = i.w.get(c.Ahp);
-  return null != u.vz && null != T && (A.push_voip_provider = u.vz, A.push_voip_token = T), h(A).then(e => (s.h.dispatch({
+  return null != u.vz && null != T && (A.push_voip_provider = u.vz, A.push_voip_token = T), h(A).then(e => (o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS"
-  }), (null != f || null != _) && s.h.dispatch({
+  }), (null != f || null != _) && o.h.dispatch({
     type: "RECENT_AVATARS_UPDATE"
-  }), e), e => (s.h.dispatch({
+  }), e), e => (o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE",
     errors: e.body
   }), e))
@@ -143,79 +143,79 @@ function g(e) {
 }
 
 function E(e) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR",
     avatar: e
   }), null == e ? a.OR.announce(d.intl.string(d.t["f1+oNk"])) : a.OR.announce(d.intl.string(d.t.NstziV))
 }
 
 function y(e) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME",
     globalName: e
   })
 }
 
 function b(e) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED",
     legacyUsernameDisabled: e
   })
 }
 
 function O(e) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM",
     item: e
   })
 }
 
 function v(e) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID",
     primaryGuildId: e
   })
 }
 
 function A(e) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES",
     displayNameStyles: e
   })
 }
 
 function I() {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_CLEAR_ERRORS"
   })
 }
 
 function S() {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })
 }
 
 function T() {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
 function C() {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })
 }
 
 function N() {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED"
   })
 }
 
 function w() {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES"
   })
 }

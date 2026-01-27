@@ -1,27 +1,24 @@
-/** Chunk was on web.js **/
-/** chunk id: 205968, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 205968, original params: t,e,r (module,exports,require) **/
 "use strict";
 
-function r(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      i(e, t, n[t])
+function n(t) {
+  for (var e = 1; e < arguments.length; e++) {
+    var r = null != arguments[e] ? arguments[e] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
+      return Object.getOwnPropertyDescriptor(r, t).enumerable
+    }))), n.forEach(function(e) {
+      var n, i, o;
+      n = t, i = e, o = r[e], i in n ? Object.defineProperty(n, i, {
+        value: o,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : n[i] = o
     })
   }
-  return e
-}
-
-function i(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
+  return t
 }
 var Chunk68055 = require("./68055.js"),
   Chunk617179 = require("./617179.js"),
@@ -37,118 +34,110 @@ var Chunk225758 = require("./225758.js"),
   Chunk661551 = require("./661551.js"),
   Chunk116740 = require("./116740.js"),
   Chunk797686 = require("./797686.js"),
-  E = Chunk661551("draft_tree_data_support"),
-  y = Chunk116740.List,
-  b = Chunk116740.Map,
-  O = Chunk116740.OrderedMap,
-  v = function(e, t) {
-    var n = e.key,
-      r = e.type,
-      i = e.data;
+  v = Chunk661551("draft_tree_data_support"),
+  m = Chunk116740.List,
+  _ = Chunk116740.Map,
+  b = Chunk116740.OrderedMap,
+  S = function(t, e) {
+    var r = t.key,
+      n = t.type,
+      i = t.data;
     return {
-      text: e.text,
-      depth: e.depth || 0,
-      type: r || "unstyled",
-      key: n || _(),
-      data: b(i),
-      characterList: A(e, t)
+      text: t.text,
+      depth: t.depth || 0,
+      type: n || "unstyled",
+      key: r || h(),
+      data: _(i),
+      characterList: w(t, e)
     }
   },
-  A = function(e, t) {
-    var n = e.text,
-      i = e.entityRanges,
-      a = e.inlineStyleRanges,
-      s = i || [];
-    return d(p(n, a || []), f(n, s.filter(function(e) {
-      return t.hasOwnProperty(e.key)
-    }).map(function(e) {
-      return r({}, e, {
-        key: t[e.key]
+  w = function(t, e) {
+    var r = t.text,
+      i = t.entityRanges;
+    return l(p(r, t.inlineStyleRanges || []), f(r, (i || []).filter(function(t) {
+      return e.hasOwnProperty(t.key)
+    }).map(function(t) {
+      return n({}, t, {
+        key: e[t.key]
       })
     })))
   },
-  I = function(e) {
-    return r({}, e, {
-      key: e.key || _()
+  k = function(t) {
+    return n({}, t, {
+      key: t.key || h()
     })
   },
-  S = function(e, t, n) {
-    var i = t.map(function(e) {
-      return r({}, e, {
-        parentRef: n
+  x = function(t, e, r) {
+    var i = e.map(function(t) {
+      return n({}, t, {
+        parentRef: r
       })
     });
-    return e.concat(i.reverse())
+    return t.concat(i.reverse())
   },
-  T = function(e, t) {
-    return e.map(I).reduce(function(n, i, a) {
-      Array.isArray(i.children) || g(false);
-      var o = i.children.map(I),
-        l = new s(r({}, v(i, t), {
-          prevSibling: 0 === a ? null : e[a - 1].key,
-          nextSibling: a === e.length - 1 ? null : e[a + 1].key,
-          children: y(o.map(function(e) {
-            return e.key
+  C = function(t, e) {
+    var r, a = t.blocks.find(function(t) {
+        return Array.isArray(t.children) && t.children.length > 0
+      }),
+      s = v && !a ? u.fromRawStateToRawTreeState(t).blocks : t.blocks;
+    return v ? s.map(k).reduce(function(t, r, i) {
+      Array.isArray(r.children) || y(false);
+      var a = r.children.map(k),
+        u = new o(n({}, S(r, e), {
+          prevSibling: 0 === i ? null : s[i - 1].key,
+          nextSibling: i === s.length - 1 ? null : s[i + 1].key,
+          children: m(a.map(function(t) {
+            return t.key
           }))
         }));
-      n = n.set(l.getKey(), l);
-      for (var c = S([], o, l); c.length > 0;) {
-        var u = c.pop(),
-          d = u.parentRef,
-          f = d.getChildKeys(),
-          p = f.indexOf(u.key),
-          _ = Array.isArray(u.children);
-        if (!_) {
-          _ || g(false);
+      t = t.set(u.getKey(), u);
+      for (var c = x([], a, u); c.length > 0;) {
+        var l = c.pop(),
+          f = l.parentRef,
+          p = f.getChildKeys(),
+          h = p.indexOf(l.key),
+          d = Array.isArray(l.children);
+        if (!d) {
+          d || y(false);
           break
         }
-        var h = u.children.map(I),
-          m = new s(r({}, v(u, t), {
-            parent: d.getKey(),
-            children: y(h.map(function(e) {
-              return e.key
+        var g = l.children.map(k),
+          v = new o(n({}, S(l, e), {
+            parent: f.getKey(),
+            children: m(g.map(function(t) {
+              return t.key
             })),
-            prevSibling: 0 === p ? null : f.get(p - 1),
-            nextSibling: p === f.size - 1 ? null : f.get(p + 1)
+            prevSibling: 0 === h ? null : p.get(h - 1),
+            nextSibling: h === p.size - 1 ? null : p.get(h + 1)
           }));
-        n = n.set(m.getKey(), m), c = S(c, h, m)
+        t = t.set(v.getKey(), v), c = x(c, g, v)
       }
-      return n
-    }, O())
+      return t
+    }, b()) : (r = a ? u.fromRawTreeStateToRawState(t).blocks : s, b(r.map(function(t) {
+      var r = new i(S(t, e));
+      return [r.getKey(), r]
+    })))
   },
-  C = function(e, t) {
-    return O(e.map(function(e) {
-      var n = new a(v(e, t));
-      return [n.getKey(), n]
-    }))
-  },
-  N = function(e, t) {
-    var n = e.blocks.find(function(e) {
-        return Array.isArray(e.children) && e.children.length > 0
-      }),
-      r = E && !n ? c.fromRawStateToRawTreeState(e).blocks : e.blocks;
-    return E ? T(r, t) : C(n ? c.fromRawTreeStateToRawState(e).blocks : r, t)
-  },
-  w = function(e) {
-    var t = e.entityMap,
-      n = {};
-    return Object.keys(t).forEach(function(e) {
-      var r = t[e],
-        i = r.type,
-        a = r.mutability,
-        s = r.data;
-      n[e] = l.__create(i, a, s || {})
-    }), n
+  E = function(t) {
+    var e = t.entityMap,
+      r = {};
+    return Object.keys(e).forEach(function(t) {
+      var n = e[t],
+        i = n.type,
+        o = n.mutability,
+        a = n.data;
+      r[t] = s.__create(i, o, a || {})
+    }), r
   };
-module.exports = function(e) {
-  Array.isArray(e.blocks) || g(false);
-  var t = w(e),
-    n = N(e, t),
-    r = n.isEmpty() ? new u : u.createEmpty(n.first().getKey());
-  return new o({
-    blockMap: n,
-    entityMap: t,
-    selectionBefore: r,
-    selectionAfter: r
+module.exports = function(t) {
+  Array.isArray(t.blocks) || y(false);
+  var e = E(t),
+    r = C(t, e),
+    n = r.isEmpty() ? new c : c.createEmpty(r.first().getKey());
+  return new a({
+    blockMap: r,
+    entityMap: e,
+    selectionBefore: n,
+    selectionAfter: n
   })
 }

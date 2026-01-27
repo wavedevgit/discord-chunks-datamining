@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 666171, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 666171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
 }), require("./896048.js");
@@ -21,17 +20,17 @@ function c(e, t) {
         try {
           let {
             url: r
-          } = await s.P0({
+          } = await a.P0({
             guildId: e,
             productId: t,
             attachmentId: n
           });
-          await o.R(r)
+          await s.R(r)
         } catch (t) {
-          let e = t instanceof a.LG ? t.getAnyErrorMessage() : true;
+          let e = t instanceof l.LG ? t.getAnyErrorMessage() : true;
           i.A.show({
-            title: l.intl.string(l.t.R0RpRX),
-            body: null != e ? e : l.intl.string(l.t.eAn6z2)
+            title: o.intl.string(o.t.R0RpRX),
+            body: null != e ? e : o.intl.string(o.t.eAn6z2)
           })
         } finally {
           c(false)

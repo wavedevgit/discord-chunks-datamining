@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 649134, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 649134, original params: e,t,n (module,exports,require) **/
 module.exports = {
   Ke: "result__71961",
   Qs: "content__71961",

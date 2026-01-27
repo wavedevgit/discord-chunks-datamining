@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk397927 = require("./397927.js"),
   Chunk765671 = require("./765671.js"),
@@ -28,7 +28,7 @@ function f(e) {
     height: A = 0
   } = (0, c.Ay)(), I = (0, l.zhh)({
     height: y ? O + A : A,
-    config: o.config.stiff,
+    config: s.config.stiff,
     onRest: () => E(true)
   }, h ? "animate-never" : "respect-motion-settings"), S = i.useCallback(() => {
     _(!p)
@@ -39,17 +39,17 @@ function f(e) {
     }, d);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)("div", {
-    className: s()(u.uR, {
+    className: o()(u.uR, {
       [u.$M]: y
     }, n),
-    children: (0, r.jsxs)(o.animated.div, {
-      className: s()(u.N0, {
+    children: (0, r.jsxs)(s.animated.div, {
+      className: o()(u.N0, {
         [u.Mm]: y && g
       }),
       style: I,
       children: [(0, r.jsx)("div", {
         ref: v,
-        className: s()(u.wx, {
+        className: o()(u.wx, {
           [u.$M]: y
         }),
         children: t({

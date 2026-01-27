@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 128450, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 82220 **/
+/** chunk id: 128450, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => h
 }), require("./747238.js"), require("./812715.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk453771 = require("./453771.js"),
   Chunk450232 = require("./450232.jsx"),
@@ -15,68 +14,64 @@ var Chunk627968 = require("./627968.js"),
   Chunk317448 = require("./317448.js");
 
 function f(e) {
-  return e.replace(/[0-9.,]+ ?kb/g, e => {
-    let t = 1024 * parseInt(e, 10);
-    return isNaN(t) ? e : (0, l.Hb)(t)
-  })
-}
-
-function p(e) {
   let {
-    errors: t
+    errors: n
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.map((e, t) => (0, r.jsx)(o.Text, {
+    children: n.map((e, n) => (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
       color: "text-feedback-critical",
-      className: d.gJ,
-      children: f(e)
-    }, t))
+      className: s.gJ,
+      children: e.replace(/[0-9.,]+ ?kb/g, e => {
+        let n = 1024 * parseInt(e, 10);
+        return isNaN(n) ? e : (0, c.Hb)(n)
+      })
+    }, n))
   })
 }
-let _ = Chunk64700.forwardRef(function(e, t) {
+let h = Chunk64700.forwardRef(function(e, n) {
   let {
-    title: n,
+    title: t,
     titleIcon: i,
-    titleId: a,
-    description: l,
-    children: f,
-    className: _,
-    errors: h,
-    disabled: m = false,
-    hideDivider: g = false,
-    showBorder: E = false,
-    borderType: y,
-    hasBackground: b = false,
-    forcedDivider: O = false,
-    showPremiumIcon: v = false
+    titleId: l,
+    description: c,
+    children: h,
+    className: v,
+    errors: m,
+    disabled: g = false,
+    hideDivider: p = false,
+    showBorder: x = false,
+    borderType: A,
+    hasBackground: _ = false,
+    forcedDivider: b = false,
+    showPremiumIcon: j = false
   } = e;
   return (0, r.jsx)("div", {
-    className: s()(d.fz, _, {
-      [d.r9]: m,
-      [d.Ai]: g,
-      [d.Ac]: E,
-      [d.Cx]: O
+    className: a()(s.fz, v, {
+      [s.r9]: g,
+      [s.Ai]: p,
+      [s.Ac]: x,
+      [s.Cx]: b
     }),
-    ref: t,
-    children: (0, r.jsxs)(u.A, {
-      className: d.D6,
-      backgroundClassName: d.fr,
-      isShown: E,
-      type: y,
-      hasBackground: b,
-      children: [(0, r.jsxs)(o.zEo, {
-        className: d.DD,
-        id: a,
+    ref: n,
+    children: (0, r.jsxs)(o.A, {
+      className: s.D6,
+      backgroundClassName: s.fr,
+      isShown: x,
+      type: A,
+      hasBackground: _,
+      children: [(0, r.jsxs)(d.zEo, {
+        className: s.DD,
+        id: l,
         "data-migration-pending": true,
-        children: [n, v && (0, r.jsx)(c.A, {}), i]
-      }), null != l ? (0, r.jsx)(o.ayl, {
-        type: o.ayl.Types.DESCRIPTION,
-        className: d.yV,
+        children: [t, j && (0, r.jsx)(u.A, {}), i]
+      }), null != c ? (0, r.jsx)(d.ayl, {
+        type: d.ayl.Types.DESCRIPTION,
+        className: s.yV,
         "data-migration-pending": true,
-        children: l
-      }) : null, f, null != h && (0, r.jsx)(p, {
-        errors: h
+        children: c
+      }) : null, h, null != m && (0, r.jsx)(f, {
+        errors: m
       })]
     })
   })

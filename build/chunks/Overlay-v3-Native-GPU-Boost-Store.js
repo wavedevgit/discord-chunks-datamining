@@ -46,7 +46,7 @@ async function O() {
   try {
     let n = b();
     if (h === n || !d.OX) return;
-    let r = await (null === s.A || true === s.A || null == (t = s.A.processUtils) || null == (e = t.getGpuProcessId) ? true : e.call(t));
+    let r = await (null === o.A || true === o.A || null == (t = o.A.processUtils) || null == (e = t.getGpuProcessId) ? true : e.call(t));
     if (null == r) return;
     l.Ay.SetGPUBoostEnabledByPid(r, n) && (h = n), w.emitChange()
   } catch (e) {

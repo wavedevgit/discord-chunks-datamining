@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 454993, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 454993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => d
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,25 +10,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
   Chunk854987 = require("./854987.js"),
   Chunk639797 = require("./639797.js");
-let u = 400,
-  d = Chunk615300.A.Easing.bezier(.4, 0, 0, 1),
-  f = 500;
+let u = Chunk615300.A.Easing.bezier(.4, 0, 0, 1);
 
-function p(e) {
+function d(e) {
   let {
     playEntryAnimation: t,
     children: n,
-    isLeaving: s,
-    onRest: p
-  } = e, [_, h] = i.useState(false), m = i.useContext(l.P), g = (0, o.rdh)(m.primaryColor).hex(), E = (0, o.zhh)({
-    from: s ? {
+    isLeaving: i,
+    onRest: d
+  } = e, [m, f] = l.useState(false), p = l.useContext(o.P), h = (0, s.rdh)(p.primaryColor).hex(), b = (0, s.zhh)({
+    from: i ? {
       height: "100%",
       blurHeight: "110%"
     } : {
       height: "0%",
       blurHeight: "0%"
     },
-    to: s ? {
+    to: i ? {
       height: "0%",
       blurHeight: "0%"
     } : {
@@ -37,52 +34,52 @@ function p(e) {
       blurHeight: "110%"
     },
     config: {
-      duration: u,
-      easing: d
+      duration: 400,
+      easing: u
     },
     pause: !t
-  }), y = (0, o.zhh)({
+  }), g = (0, s.zhh)({
     from: {
-      background: s ? "rgba(0, 0, 0, 0.8)" : "rgba(0, 0, 0, 0)"
+      background: i ? "rgba(0, 0, 0, 0.8)" : "rgba(0, 0, 0, 0)"
     },
     to: {
-      background: s ? "rgba(0, 0, 0, 0)" : "rgba(0, 0, 0, 0.8)"
+      background: i ? "rgba(0, 0, 0, 0)" : "rgba(0, 0, 0, 0.8)"
     },
     config: {
-      duration: s ? u : u / 2,
-      easing: d
+      duration: i ? 400 : 200,
+      easing: u
     },
-    onRest: p
+    onRest: d
   });
-  return i.useEffect(() => {
+  return l.useEffect(() => {
     if (t) return;
     let e = setTimeout(() => {
-      h(true)
-    }, f);
+      f(true)
+    }, 500);
     return () => clearTimeout(e)
   }, [t]), (0, r.jsx)(a.animated.div, {
     className: c.iE,
     style: {
-      background: y.background
+      background: g.background
     },
     children: t ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.animated.div, {
         className: c.Ge,
         style: {
-          height: E.blurHeight,
-          color: g
+          height: b.blurHeight,
+          color: h
         }
       }), (0, r.jsx)(a.animated.div, {
         className: c.PJ,
         style: {
-          height: E.height
+          height: b.height
         },
         children: (0, r.jsx)("div", {
           className: c.TQ,
           children: n
         })
       })]
-    }) : _ ? (0, r.jsx)(o.y$y, {
+    }) : m ? (0, r.jsx)(s.y$y, {
       className: c.u1
     }) : null
   })

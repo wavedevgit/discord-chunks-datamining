@@ -9,7 +9,7 @@ var Chunk254033 = require("./254033.js"),
   Chunk996976 = require("./996976.js"),
   Chunk63514 = require("./63514.js"),
   Chunk353563 = require("./353563.js"),
-  o = new WeakMap,
+  s = new WeakMap,
   l = /auto|scroll/,
   c = /^tb|vertical/,
   u = /msie|trident/i.test(Chunk353563.S.navigator && Chunk353563.S.navigator.userAgent),
@@ -29,11 +29,11 @@ var Chunk254033 = require("./254033.js"),
     contentRect: new Chunk996976.p(0, 0, 0, 0)
   }),
   _ = function(e, t) {
-    if (true === t && (t = false), o.has(e) && !t) return o.get(e);
-    if ((0, a.dK)(e)) return o.set(e, p), p;
+    if (true === t && (t = false), s.has(e) && !t) return s.get(e);
+    if ((0, a.dK)(e)) return s.set(e, p), p;
     var n = getComputedStyle(e),
       r = (0, a.XJ)(e) && e.ownerSVGElement && e.getBBox(),
-      s = !u && "border-box" === n.boxSizing,
+      o = !u && "border-box" === n.boxSizing,
       _ = c.test(n.writingMode || ""),
       h = !r && l.test(n.overflowY || ""),
       m = !r && l.test(n.overflowX || ""),
@@ -51,31 +51,31 @@ var Chunk254033 = require("./254033.js"),
       N = O + A,
       w = m ? e.offsetHeight - N - e.clientHeight : 0,
       R = h ? e.offsetWidth - C - e.clientWidth : 0,
-      P = s ? S + C : 0,
-      D = s ? T + N : 0,
-      x = r ? r.width : d(n.width) - P - R,
-      L = r ? r.height : d(n.height) - D - w,
-      j = x + S + R + C,
-      M = L + T + w + N,
+      P = o ? S + C : 0,
+      D = o ? T + N : 0,
+      L = r ? r.width : d(n.width) - P - R,
+      x = r ? r.height : d(n.height) - D - w,
+      M = L + S + R + C,
+      j = x + T + w + N,
       k = Object.freeze({
-        devicePixelContentBoxSize: f(Math.round(x * devicePixelRatio), Math.round(L * devicePixelRatio), _),
-        borderBoxSize: f(j, M, _),
-        contentBoxSize: f(x, L, _),
-        contentRect: new i.p(b, g, x, L)
+        devicePixelContentBoxSize: f(Math.round(L * devicePixelRatio), Math.round(x * devicePixelRatio), _),
+        borderBoxSize: f(M, j, _),
+        contentBoxSize: f(L, x, _),
+        contentRect: new i.p(b, g, L, x)
       });
-    return o.set(e, k), k
+    return s.set(e, k), k
   },
   h = function(e, t, n) {
     var i = _(e, n),
       a = i.borderBoxSize,
-      s = i.contentBoxSize,
-      o = i.devicePixelContentBoxSize;
+      o = i.contentBoxSize,
+      s = i.devicePixelContentBoxSize;
     switch (t) {
       case r.U.DEVICE_PIXEL_CONTENT_BOX:
-        return o;
+        return s;
       case r.U.BORDER_BOX:
         return a;
       default:
-        return s
+        return o
     }
   }

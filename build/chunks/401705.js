@@ -7,8 +7,8 @@ function r(e) {
     preventScroll: true
   });
   else {
-    let t = s(e);
-    e.focus(), o(t)
+    let t = o(e);
+    e.focus(), s(t)
   }
 }
 require.d(exports, {
@@ -30,7 +30,7 @@ function a() {
   return i
 }
 
-function s(e) {
+function o(e) {
   let t = e.parentNode,
     n = [],
     r = document.scrollingElement || document.documentElement;
@@ -46,7 +46,7 @@ function s(e) {
   }), n
 }
 
-function o(e) {
+function s(e) {
   for (let {
       element: t,
       scrollTop: n,

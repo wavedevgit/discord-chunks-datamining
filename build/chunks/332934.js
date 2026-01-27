@@ -28,7 +28,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -39,20 +39,20 @@ function s(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function s(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function l(e) {
-  return e.map(e => o(a({}, e), {
+  return e.map(e => s(a({}, e), {
     permissions: r.iu(e.permissions)
   }))
 }
 
 function c(e) {
-  return null == e.guilds ? e : o(a({}, e), {
+  return null == e.guilds ? e : s(a({}, e), {
     guilds: l(e.guilds)
   })
 }

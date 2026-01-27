@@ -50,12 +50,12 @@ function d(e, t) {
   }), e
 }
 let f = {
-  handleUserContextMenu(e, t, a, s) {
-    let l = o.A.getChannel(t);
-    null != l && (0, i.L3)(s, async () => {
+  handleUserContextMenu(e, t, a, o) {
+    let l = s.A.getChannel(t);
+    null != l && (0, i.L3)(o, async () => {
       let {
         default: t
-      } = await Promise.all([n.e("97262"), n.e("29534"), n.e("33818"), n.e("55296"), n.e("84841"), n.e("9001")]).then(n.bind(n, 107632));
+      } = await Promise.all([n.e("54809"), n.e("97262"), n.e("3795"), n.e("97283"), n.e("29534"), n.e("33818"), n.e("55296"), n.e("84841"), n.e("2016")]).then(n.bind(n, 107632));
       return n => (0, r.jsx)(t, d(c({}, n), {
         user: e,
         channel: l,
@@ -66,7 +66,7 @@ let f = {
   react(e, t, n) {
     let {
       userId: i,
-      channelId: o,
+      channelId: s,
       parsedUserId: l,
       roleId: u,
       roleName: f,
@@ -76,10 +76,10 @@ let f = {
       inlinePreview: n.formatInline
     }, e), {
       children: t(e.content, n)
-    }), n.key) : (0, r.jsx)(s.A, {
+    }), n.key) : (0, r.jsx)(o.A, {
       className: "mention",
       userId: i,
-      channelId: o,
+      channelId: s,
       viewingChannelId: p,
       parsedUserId: l,
       content: t(e.content, n),

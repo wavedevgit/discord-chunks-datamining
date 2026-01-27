@@ -15,16 +15,16 @@ var Chunk990078 = require("./990078.jsx"),
   Chunk712104 = require("./712104.js");
 
 function d() {
-  return (0, l.jsx)(a.ZK, {
+  return (0, r.jsx)(a.ZK, {
     className: u.jm,
     icon: i.u6o,
     text: c.intl.string(c.t.woMjLV),
     footnote: c.intl.string(c.t["jMh+TY"]),
     meetsRequirement: false,
-    children: (0, l.jsx)(r.m, {
+    children: (0, r.jsx)(l.m, {
       asContainer: true,
       text: c.intl.string(c.t.mGlP30),
-      children: (0, l.jsx)(i.Button, {
+      children: (0, r.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
         disabled: true,
@@ -37,14 +37,14 @@ function d() {
 function m(e) {
   let {
     isUserVerified: t
-  } = e, r = t ? c.intl.string(c.t.WWzQta) : c.intl.string(c.t.woMjLV);
-  return (0, l.jsx)(a.ZK, {
+  } = e, l = t ? c.intl.string(c.t.WWzQta) : c.intl.string(c.t.woMjLV);
+  return (0, r.jsx)(a.ZK, {
     className: u.jm,
     icon: i.u6o,
-    text: r,
+    text: l,
     footnote: c.intl.string(c.t["jMh+TY"]),
     meetsRequirement: t,
-    children: (0, l.jsx)(i.Button, {
+    children: (0, r.jsx)(i.Button, {
       variant: "primary",
       size: "sm",
       text: c.intl.string(c.t["13ofGu"]),
@@ -52,21 +52,21 @@ function m(e) {
         (0, i.mMO)(async () => {
           let {
             default: e
-          } = await Promise.resolve().then(n.bind(n, 615715));
-          return t => (0, l.jsx)(e, function(e) {
+          } = await Promise.all([n.e("84704"), n.e("45668")]).then(n.bind(n, 615715));
+          return t => (0, r.jsx)(e, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
-                l = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), l.forEach(function(t) {
-                var l;
-                l = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: l,
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = l
+                }) : e[t] = r
               })
             }
             return e

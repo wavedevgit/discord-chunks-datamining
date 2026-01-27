@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 70040, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 70040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => j,
-  Q: () => k
+  I: () => L,
+  Q: () => U
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk793574 = require("./793574.js"),
   Chunk688810 = require("./688810.jsx"),
   Chunk47671 = require("./47671.js"),
-  Chunk181824 = require("./181824.jsx"),
+  Chunk959443 = require("./959443.jsx"),
   Chunk692798 = require("./692798.jsx"),
   Chunk793943 = require("./793943.js"),
   Chunk826673 = require("./826673.js"),
@@ -36,111 +35,113 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk21082 = require("./21082.js");
-let L = () => {
-    (0, g.Dr)(s.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
-      dismissAction: R.i.PRIMARY,
+let w = () => {
+    (0, f.Dr)(s.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
+      dismissAction: y.i.PRIMARY,
       forceTrack: true
-    }), (0, m.nf)(m.HP.CLIENT_THEMES), (0, N.default)()
+    }), (0, A.nf)(A.HP.CLIENT_THEMES), (0, v.default)()
   },
-  j = () => {
+  L = () => {
     var e, t;
-    let {
-      analyticsLocations: n
-    } = (0, f.Ay)(d.A.USER_SETTINGS), s = (0, a.bG)([p.A], () => p.A.isPreview), o = (null == (t = (0, y.V)()) || null == (e = t.subscription_trial) ? true : e.sku_id) === P.pe.TIER_2, c = (0, E.O)(), u = (0, O.U9)(c, P.pe.TIER_2), m = (0, C.dk)("UserSettingsAppearanceClientThemes"), g = () => {
-      if (!s || o) return null;
-      let e = u ? D.intl.formatToPlainString(D.t.bkQ4bH, {
-        percent: null == c ? true : c.discount.amount
-      }) : D.intl.string(D.t.mr4K7D);
-      return (0, r.jsxs)("div", {
-        className: x.gY,
-        children: [(0, r.jsx)(l.Button, {
-          variant: "secondary",
-          text: D.intl.string(D.t["E+COuA"]),
-          onClick: () => L()
-        }), (0, r.jsx)(b.A, {
-          subscriptionTier: P.pe.TIER_2,
-          defaultTextOverride: e,
-          premiumModalAnalyticsLocation: {
-            object: w.ZSU.BUTTON_CTA,
-            objectType: w.AnalyticsObjectTypes.BUY
-          },
-          fullWidth: true
-        })]
-      })
-    };
+    let n, {
+        analyticsLocations: s
+      } = (0, _.Ay)(u.A.USER_SETTINGS),
+      a = (0, l.bG)([p.A], () => p.A.isPreview),
+      c = (null == (t = (0, b.V)()) || null == (e = t.subscription_trial) ? true : e.sku_id) === P.pe.TIER_2,
+      d = (0, h.O)(),
+      A = (0, x.U9)(d, P.pe.TIER_2),
+      f = (0, j.dk)("UserSettingsAppearanceClientThemes");
     i.useEffect(() => {
-      s && I.default.track(w.HAw.PREMIUM_UPSELL_VIEWED, {
+      a && I.default.track(N.HAw.PREMIUM_UPSELL_VIEWED, {
         type: P.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
-        location_stack: n
+        location_stack: s
       })
-    }, [s, n]);
-    let A = o && s && (0, r.jsxs)("div", {
+    }, [a, s]);
+    let C = c && a && (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          className: x.c7,
-          children: (0, r.jsx)(l.Button, {
+          className: D.c7,
+          children: (0, r.jsx)(o.Button, {
             variant: "secondary",
             fullWidth: true,
-            text: D.intl.string(D.t["E+COuA"]),
-            onClick: () => L()
+            text: R.intl.string(R.t["E+COuA"]),
+            onClick: () => w()
           })
         }), (0, r.jsx)("div", {
-          className: x.BU
-        }), (0, r.jsx)(v.Ay, {
+          className: D.BU
+        }), (0, r.jsx)(O.Ay, {
           type: P.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
           subscriptionTier: P.pe.TIER_2
         })]
       }),
-      S = (() => {
-        let e = (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(h.Ay.Gradient, {
-            disabled: false,
-            renderCTAButtons: g
-          }), A]
-        });
-        return s && (e = (0, r.jsx)("div", {
-          className: x._$,
-          children: e
-        })), e
-      })();
+      T = (n = (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(g.Ay.Gradient, {
+          disabled: false,
+          renderCTAButtons: () => {
+            if (!a || c) return null;
+            let e = A ? R.intl.formatToPlainString(R.t.bkQ4bH, {
+              percent: null == d ? true : d.discount.amount
+            }) : R.intl.string(R.t.mr4K7D);
+            return (0, r.jsxs)("div", {
+              className: D.gY,
+              children: [(0, r.jsx)(o.Button, {
+                variant: "secondary",
+                text: R.intl.string(R.t["E+COuA"]),
+                onClick: () => w()
+              }), (0, r.jsx)(E.A, {
+                subscriptionTier: P.pe.TIER_2,
+                defaultTextOverride: e,
+                premiumModalAnalyticsLocation: {
+                  object: N.ZSU.BUTTON_CTA,
+                  objectType: N.AnalyticsObjectTypes.BUY
+                },
+                fullWidth: true
+              })]
+            })
+          }
+        }), C]
+      }), a && (n = (0, r.jsx)("div", {
+        className: D._$,
+        children: n
+      })), n);
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsxs)(h.Ay, {
-        type: h.v0.SETTINGS,
-        children: [(0, r.jsx)(h.Ay.Basic, {
-          className: x.a6
-        }), (0, r.jsx)(M, {}), (0, r.jsx)(_.A, {}), S]
-      }), !m && (0, r.jsx)(l.cGx, {
-        className: x.yF
+      children: [(0, r.jsxs)(g.Ay, {
+        type: g.v0.SETTINGS,
+        children: [(0, r.jsx)(g.Ay.Basic, {
+          className: D.a6
+        }), (0, r.jsx)(M, {}), (0, r.jsx)(m.A, {}), T]
+      }), !f && (0, r.jsx)(o.cGx, {
+        className: D.yF
       })]
     })
   };
 
 function M() {
-  let e = (0, A.qo)(),
+  let e = (0, C.qo)(),
     {
       theme: t,
       useForcedColors: n,
       gradientPreset: i
-    } = (0, a.cf)([S.A, u.A, p.A], () => ({
-      theme: S.A.theme,
-      useForcedColors: u.A.useForcedColors,
+    } = (0, l.cf)([T.A, d.A, p.A], () => ({
+      theme: T.A.theme,
+      useForcedColors: d.A.useForcedColors,
       gradientPreset: p.A.gradientPreset
     })),
-    s = null != T.eh.useSetting().customUserThemeSettings;
-  return t !== w.NJ8.LIGHT ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.cGx, {
+    s = null != S.eh.useSetting().customUserThemeSettings;
+  return t !== N.NJ8.LIGHT ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(o.cGx, {
       gap: 24
-    }), (0, r.jsx)(l.dOG, {
-      label: D.intl.string(D.t.yF54Ks),
-      checked: e && (0, o.qB)(t) && !n,
-      disabled: t !== w.NJ8.LIGHT || n || null != i || s,
+    }), (0, r.jsx)(o.dOG, {
+      label: R.intl.string(R.t.yF54Ks),
+      checked: e && (0, a.qB)(t) && !n,
+      disabled: t !== N.NJ8.LIGHT || n || null != i || s,
       onChange: c.LO
-    }), (0, r.jsx)(l.cGx, {
+    }), (0, r.jsx)(o.cGx, {
       gap: 24
     })]
   })
 }
-let k = () => (0, a.bG)([p.A], () => p.A.isPreview) ? null : (0, r.jsx)(l.Button, {
+let U = () => (0, l.bG)([p.A], () => p.A.isPreview) ? null : (0, r.jsx)(o.Button, {
   variant: "primary",
-  text: D.intl.string(D.t.qYXrkX),
-  onClick: L
+  text: R.intl.string(R.t.qYXrkX),
+  onClick: w
 })

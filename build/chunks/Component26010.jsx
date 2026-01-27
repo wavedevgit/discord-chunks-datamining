@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 26010, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 26010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ct: () => E,
-  oO: () => y
+  Ct: () => g,
+  oO: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,109 +15,101 @@ var Chunk627968 = require("./627968.js"),
   Chunk157895 = require("./157895.js"),
   Chunk847652 = require("./847652.js");
 
-function p(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function h(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function g(e) {
+function m(e) {
   let {
     className: t,
     boxLayout: n,
     title: i,
-    shouldLoadVideo: a,
-    isReducedMotion: u,
-    includeSideGradient: p = false,
-    startLeftAligned: h = false,
-    enablePremiumBrandRefreshDesign: g
-  } = e, E = g ? f : d;
+    shouldLoadVideo: l,
+    isReducedMotion: d,
+    includeSideGradient: m = false,
+    startLeftAligned: g = false,
+    enablePremiumBrandRefreshDesign: A
+  } = e, f = A ? _ : u;
   return (0, r.jsxs)("div", {
-    className: s()(E.boxBackdrop, t),
-    children: [(0, r.jsx)(o.Heading, {
-      className: E.bentoSectionHeader,
+    className: s()(f.boxBackdrop, t),
+    children: [(0, r.jsx)(a.Heading, {
+      className: f.bentoSectionHeader,
       variant: "display-md",
       color: "text-strong",
       children: i
     }), (0, r.jsx)("div", {
-      className: E.bentoBoxesGrid,
+      className: f.bentoBoxesGrid,
       children: n.map((e, t) => {
         let n;
         switch (e.length) {
           case 3:
-            n = l.A0.SMALL;
+            n = o.A0.SMALL;
             break;
           case 2:
-            n = l.A0.MEDIUM;
+            n = o.A0.MEDIUM;
             break;
           default:
-            n = l.A0.LARGE
+            n = o.A0.LARGE
         }
         return (0, r.jsx)(r.Fragment, {
-          children: e.map(e => (0, r.jsx)(c.A, m(_({
-            index: t + +!!h
-          }, e), {
-            size: n,
-            shouldLoadVideo: a,
-            isReducedMotion: u
-          }), e.name))
+          children: e.map(e => {
+            var i, s;
+            return (0, r.jsx)(c.A, (i = p({
+              index: t + +!!g
+            }, e), s = s = {
+              size: n,
+              shouldLoadVideo: l,
+              isReducedMotion: d
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+              var n = Object.keys(e);
+              if (Object.getOwnPropertySymbols) {
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
+              }
+              return n
+            })(Object(s)).forEach(function(e) {
+              Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+            }), i), e.name)
+          })
         })
       })
-    }), p && (0, r.jsx)("div", {
-      className: d.bentoSideGradient
+    }), m && (0, r.jsx)("div", {
+      className: u.bentoSideGradient
     })]
   })
 }
-let E = Chunk64700.memo(function(e) {
+let g = Chunk64700.memo(function(e) {
     let {
       whatsNewBoxes: t
-    } = (0, l.Ay)();
-    return (0, r.jsx)(g, _({
+    } = (0, o.Ay)();
+    return (0, r.jsx)(m, p({
       boxLayout: t,
-      title: u.intl.string(u.t.LRmNAl),
+      title: d.intl.string(d.t.LRmNAl),
       startLeftAligned: e.enablePremiumBrandRefreshDesign
     }, e))
   }),
-  y = Chunk64700.memo(function(e) {
+  A = Chunk64700.memo(function(e) {
     let {
       bestOfBoxes: t
-    } = (0, l.Ay)();
-    return (0, r.jsx)(g, _({
+    } = (0, o.Ay)();
+    return (0, r.jsx)(m, p({
       boxLayout: t,
-      title: u.intl.string(u.t.EnzW2H),
+      title: d.intl.string(d.t.EnzW2H),
       includeSideGradient: !e.enablePremiumBrandRefreshDesign,
       startLeftAligned: true
     }, e))

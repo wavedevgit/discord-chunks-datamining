@@ -1,10 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 454058, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 3911 **/
+/** chunk id: 454058, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => w
 }), require("./896048.js");
-var r, Chunk311907 = require("./311907.js"),
+var i, s, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk334738 = require("./334738.js"),
   Chunk940382 = require("./940382.js"),
@@ -19,121 +19,104 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk927813 = require("./927813.js"),
   Chunk661191 = require("./661191.js"),
   Chunk652215 = require("./652215.js");
+let S = new Set,
+  m = {},
+  A = {};
 
-function y(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-let b = new Set,
-  O = {},
-  v = {};
-
-function A(e) {
-  let {
-    guild: t
-  } = e;
-  delete O[t.id]
+function E(e, t) {
+  let n = m[e];
+  if (null != n && null != t && n.has(t)) {
+    var i;
+    !C.Ay.isOptInEnabled(e) || (null == (i = c.A.getChannel(t)) ? true : i.isThread()) || null != f.Ay.ackMessageId(t) || l.h.wait(() => (0, o.ack)(t, {
+      object: b.ZSU.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED,
+      objectType: b.AnalyticsObjectTypes.ACK_AUTOMATIC
+    }, true, true, y.default.atPreviousMillisecond(t)))
+  }
 }
 
 function I(e) {
   var t;
-  let {
-    channel: n
-  } = e;
-  n.isVocal() || (O[n.guild_id] = null != (t = O[n.guild_id]) ? t : new Set, O[n.guild_id].add(n.id))
+  if (null != m[e]) return;
+  let n = h.Ay.getChannels(e)[h.I6].map(e => e.channel.id),
+    i = null == (t = g.Ay.getMember(e, u.default.getId())) ? true : t.joinedAt;
+  if (null == i) return;
+  m[e] = new Set;
+  let s = new Date(i).getTime();
+  0 !== n.length && (m[e] = new Set(n.filter(t => {
+    let n = y.default.extractTimestamp(t);
+    return null == f.Ay.getTrackedAckMessageId(t) && n > Date.now() - v.A.Millis.WEEK && n > d.A.getGuildRecentsDismissedAt(e) && n > s && !C.Ay.isChannelOrParentOptedIn(e, t)
+  })), A[e] = Date.now())
 }
 
-function S(e) {
-  let {
-    guildId: t,
-    channelIds: n
-  } = e;
-  if (null == O[t]) returnfalse;
-  n.forEach(e => O[t].delete(e)), 0 === O[t].size && delete O[t]
-}
-
-function T(e) {
-  let {
-    guildId: t,
-    channelId: n
-  } = e;
-  return null != t && (null == O[t] || v[t] < Date.now() - m.A.Millis.HOUR ? (R(t), true) : (null != n && w(t, n), false))
-}
-
-function C(e) {
-  let {
-    guildId: t,
-    channelId: n,
-    sidebarType: r
-  } = e;
-  return null != t && r === o.PE.VIEW_CHANNEL && (w(t, n), false)
-}
-
-function N(e) {
-  let {
-    guildId: t,
-    baseChannelId: n
-  } = e;
-  return null != t && (w(t, n), false)
-}
-
-function w(e, t) {
-  let n = O[e];
-  if (null != n && null != t && n.has(t)) {
-    var r;
-    !h.Ay.isOptInEnabled(e) || (null == (r = u.A.getChannel(t)) ? true : r.isThread()) || null != _.Ay.ackMessageId(t) || a.h.wait(() => (0, s.ack)(t, {
-      object: E.ZSU.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED,
-      objectType: E.AnalyticsObjectTypes.ACK_AUTOMATIC
-    }, true, true, g.default.atPreviousMillisecond(t)))
-  }
-}
-
-function R(e) {
-  var t;
-  if (null != O[e]) return;
-  let n = d.Ay.getChannels(e)[d.I6].map(e => e.channel.id),
-    r = null == (t = f.Ay.getMember(e, c.default.getId())) ? true : t.joinedAt;
-  if (null == r) return;
-  O[e] = new Set;
-  let i = new Date(r).getTime();
-  0 !== n.length && (O[e] = new Set(n.filter(t => {
-    let n = g.default.extractTimestamp(t);
-    return null == _.Ay.getTrackedAckMessageId(t) && n > Date.now() - m.A.Millis.WEEK && n > l.A.getGuildRecentsDismissedAt(e) && n > i && !h.Ay.isChannelOrParentOptedIn(e, t)
-  })), v[e] = Date.now())
-}
-
-function P() {
-  g.default.keys(O).forEach(e => {
-    let t = O[e];
-    O[e] = new Set([...t].filter(t => !h.Ay.isChannelOrParentOptedIn(e, t)))
+function O() {
+  y.default.keys(m).forEach(e => {
+    let t = m[e];
+    m[e] = new Set([...t].filter(t => !C.Ay.isChannelOrParentOptedIn(e, t)))
   })
 }
-class D extends(r = Chunk311907.Ay.Store) {
+class _ extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.default, u.A, d.Ay, f.Ay, p.A, _.Ay, h.Ay, l.A), this.syncWith([h.Ay], P)
+    this.waitFor(u.default, c.A, h.Ay, g.Ay, p.A, f.Ay, C.Ay, d.A), this.syncWith([C.Ay], O)
   }
   getNewChannelIds(e) {
     var t;
-    return null != e && null == O[e] && R(e), null != e && null != (t = O[e]) ? t : b
+    return null != e && null == m[e] && I(e), null != e && null != (t = m[e]) ? t : S
   }
   shouldIndicateNewChannel(e, t) {
     var n;
     if (null == e) returnfalse;
-    let r = p.A.getGuild(e);
-    return null != r && !!r.features.has(E.GuildFeatures.COMMUNITY) && (null != e && null == O[e] && R(e), (null == (n = O[e]) ? true : n.has(t)) && null == _.Ay.getTrackedAckMessageId(t))
+    let i = p.A.getGuild(e);
+    return null != i && !!i.features.has(b.GuildFeatures.COMMUNITY) && (null != e && null == m[e] && I(e), (null == (n = m[e]) ? true : n.has(t)) && null == f.Ay.getTrackedAckMessageId(t))
   }
-}
-y(D, "displayName", "NewChannelsStore");
-let x = new D(Chunk73153.h, {
-  BULK_CLEAR_RECENTS: S,
+}(s = "displayName") in _ ? Object.defineProperty(_, s, {
+  value: "NewChannelsStore",
+  enumerable: true,
+  configurable: true,
+  writable: true
+}) : _[s] = "NewChannelsStore";
+let w = new _(Chunk73153.h, {
+  BULK_CLEAR_RECENTS: function(e) {
+    let {
+      guildId: t,
+      channelIds: n
+    } = e;
+    if (null == m[t]) returnfalse;
+    n.forEach(e => m[t].delete(e)), 0 === m[t].size && delete m[t]
+  },
   CHANNEL_ACK: () => true,
-  CHANNEL_SELECT: T,
-  SIDEBAR_VIEW_CHANNEL: C,
-  SIDEBAR_VIEW_GUILD: N,
-  GUILD_DELETE: A,
-  CHANNEL_CREATE: I
+  CHANNEL_SELECT: function(e) {
+    let {
+      guildId: t,
+      channelId: n
+    } = e;
+    return null != t && (null == m[t] || A[t] < Date.now() - v.A.Millis.HOUR ? (I(t), true) : (null != n && E(t, n), false))
+  },
+  SIDEBAR_VIEW_CHANNEL: function(e) {
+    let {
+      guildId: t,
+      channelId: n,
+      sidebarType: i
+    } = e;
+    return null != t && i === a.PE.VIEW_CHANNEL && (E(t, n), false)
+  },
+  SIDEBAR_VIEW_GUILD: function(e) {
+    let {
+      guildId: t,
+      baseChannelId: n
+    } = e;
+    return null != t && (E(t, n), false)
+  },
+  GUILD_DELETE: function(e) {
+    let {
+      guild: t
+    } = e;
+    delete m[t.id]
+  },
+  CHANNEL_CREATE: function(e) {
+    var t;
+    let {
+      channel: n
+    } = e;
+    n.isVocal() || (m[n.guild_id] = null != (t = m[n.guild_id]) ? t : new Set, m[n.guild_id].add(n.id))
+  }
 })

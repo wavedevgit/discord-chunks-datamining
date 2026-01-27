@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,14 +15,14 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = {
+let s = {
     topEmojisByGuildId: {}
   },
-  l = o,
+  l = s,
   c = {};
 
 function u() {
-  l = o, c = {}
+  l = s, c = {}
 }
 
 function d(e) {
@@ -41,7 +41,7 @@ function f(e) {
 }
 class p extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    l = null != e ? e : o
+    l = null != e ? e : s
   }
   getState() {
     return l
@@ -53,7 +53,7 @@ class p extends(r = Chunk311907.Ay.PersistedStore) {
     return c[e]
   }
 }
-s(p, "displayName", "TopEmojiStore"), s(p, "persistKey", "TopEmojiStore");
+o(p, "displayName", "TopEmojiStore"), o(p, "persistKey", "TopEmojiStore");
 let _ = new p(Chunk73153.h, {
   LOGOUT: u,
   TOP_EMOJIS_FETCH: d,

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 892742, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 892742, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,29 +16,29 @@ var Chunk627968 = require("./627968.js"),
   Chunk438038 = require("./438038.jsx"),
   Chunk986588 = require("./986588.js");
 
-function h(e) {
+function g(e) {
   let {
     questId: t
   } = e, {
     quests: n,
-    excludedQuests: h,
-    isFetchingCurrentQuests: m
-  } = (0, o.mL)({
+    excludedQuests: g,
+    isFetchingCurrentQuests: h
+  } = (0, s.mL)({
     fetchPolicy: "cache-or-network",
     callerSource: "embed"
-  }), g = i.useMemo(() => (0, l.vc)(t, n, h), [t, n, h]), E = i.useMemo(() => h.find(e => e.id === t), [t, h]);
-  return m ? (0, r.jsx)(a.y$y, {
-    className: _.u
-  }) : null == g ? null != E ? (0, r.jsx)(u.g, {
+  }), _ = i.useMemo(() => (0, o.vc)(t, n, g), [t, n, g]), b = i.useMemo(() => g.find(e => e.id === t), [t, g]);
+  return h ? (0, r.jsx)(l.y$y, {
+    className: f.u
+  }) : null == _ ? null != b ? (0, r.jsx)(u.g, {
     questId: t
   }) : (0, r.jsx)(d.l, {
     questId: t,
     reason: d.o.NOT_FOUND
-  }) : (0, c.E0)(g.config) ? (0, r.jsx)(p.R, {
-    quest: g,
-    location: s.uF.QUESTS_EMBED,
-    sourceQuestContent: s.uF.QUESTS_EMBED
-  }, g.id) : (0, r.jsx)(f.S, {
+  }) : (0, c.E0)(_.config) ? (0, r.jsx)(m.R, {
+    quest: _,
+    location: a.uF.QUESTS_EMBED,
+    sourceQuestContent: a.uF.QUESTS_EMBED
+  }, _.id) : (0, r.jsx)(p.S, {
     questId: t
   })
 }

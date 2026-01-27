@@ -46,12 +46,12 @@ function g(e) {
     questId: i,
     sourceQuestContent: l,
     videoSessionId: c
-  } = e, d = s.Ay.getState().getVideoProgress(i);
+  } = e, d = o.Ay.getState().getVideoProgress(i);
   if (null == d) return;
   let p = a.A.getQuest(i);
   null != p && (null == (t = p.userStatus) ? true : t.enrolledAt) != null && (null == (n = p.userStatus) ? true : n.completedAt) == null && f(p, d.maxTimestampSec);
   let _ = m(d.maxTimestampSec, d.duration);
-  (0, o.av)({
+  (0, s.av)({
     questId: i,
     event: u.HAw.QUEST_VIDEO_PROGRESSED,
     properties: {
@@ -60,7 +60,7 @@ function g(e) {
       video_session_id: c
     },
     sourceQuestContent: l
-  }), (0, o.av)({
+  }), (0, s.av)({
     questId: i,
     event: u.HAw.QUEST_VIDEO_MODAL_CLOSED,
     properties: {

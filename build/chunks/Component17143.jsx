@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 17143, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 17143, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => N,
-  V: () => m.V
+  A: () => I,
+  V: () => y.V
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
-  l = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk205693 = require("./205693.js"),
   Chunk451988 = require("./451988.js"),
@@ -26,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk265891 = require("./265891.js");
 
-function A(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,27 +33,12 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-
-function I(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      A(e, t, n[t])
-    })
-  }
-  return e
-}
-let S = 2e3,
-  T = false;
-class C extends Chunk64700.PureComponent {
+class S extends Chunk64700.PureComponent {
   componentDidMount() {
     this._initTimeout.start(1e3, this.setupVoiceActivity)
   }
   componentWillUnmount() {
-    this._initTimeout.stop(), this._silenceTimeout.stop(), this._micTestStop(), g.A.getMediaEngine().removeListener(u.bg.VoiceActivity, this.handleVoiceActivity)
+    this._initTimeout.stop(), this._silenceTimeout.stop(), this._micTestStop(), _.A.getMediaEngine().removeListener(u.bg.VoiceActivity, this.handleVoiceActivity)
   }
   _micTestStart() {
     let {
@@ -63,25 +47,25 @@ class C extends Chunk64700.PureComponent {
       inputVolume: n,
       outputDeviceName: r,
       outputVolume: i,
-      inputMode: a,
-      vadAutoThreshold: s,
-      vadThreshold: o,
-      location: l,
+      inputMode: l,
+      vadAutoThreshold: a,
+      vadThreshold: s,
+      location: o,
       isDeafened: c
     } = this.props, u = false;
-    e && !c && (_.A.toggleSelfDeaf(), u = true), _.A.setLoopback("mic_test", true), this._micTestStartTime = Date.now(), this.setState({
+    e && !c && (m.A.toggleSelfDeaf(), u = true), m.A.setLoopback("mic_test", true), this._micTestStartTime = Date.now(), this.setState({
       isMicTesting: true,
       isDetectingInput: true,
       didDeafenUser: u
-    }), y.default.track(b.HAw.MIC_TESTING_STARTED, {
+    }), A.default.track(h.HAw.MIC_TESTING_STARTED, {
       input_device_name: t,
       input_device_volume: n,
       output_device_name: r,
       output_device_volume: i,
-      input_mode: a,
-      input_sensitivity_is_automatic: s,
-      input_sensitivity_threshold: Math.round(o),
-      location: l
+      input_mode: l,
+      input_sensitivity_is_automatic: a,
+      input_sensitivity_threshold: Math.round(s),
+      location: o
     })
   }
   _micTestStop() {
@@ -92,10 +76,10 @@ class C extends Chunk64700.PureComponent {
       isVoiceConnected: n,
       isDeafened: r
     } = this.props;
-    t && (n && r && e && _.A.toggleSelfDeaf(), _.A.setLoopback("mic_test", false), this.setState({
+    t && (n && r && e && m.A.toggleSelfDeaf(), m.A.setLoopback("mic_test", false), this.setState({
       isMicTesting: false,
       didDeafenUser: false
-    }), null != this._micTestStartTime && y.default.track(b.HAw.MIC_TESTING_STOPPED, {
+    }), null != this._micTestStartTime && A.default.track(h.HAw.MIC_TESTING_STOPPED, {
       testing_duration: Math.round((Date.now() - this._micTestStartTime) / 1e3)
     }))
   }
@@ -107,10 +91,10 @@ class C extends Chunk64700.PureComponent {
       isMicTesting: n,
       isDetectingInput: i
     } = this.state;
-    return (0, r.jsx)(p.Text, {
+    return (0, r.jsx)(f.Text, {
       variant: "text-xs/normal",
       color: "text-subtle",
-      className: v.Qe,
+      className: O.Qe,
       children: n ? i ? e : t : null
     })
   }
@@ -120,60 +104,60 @@ class C extends Chunk64700.PureComponent {
       title: t,
       description: n,
       notchBackground: i,
-      buttonTest: a = "",
-      buttonStop: o = "",
-      buttonVariant: l = "secondary",
+      buttonTest: l = "",
+      buttonStop: s = "",
+      buttonVariant: o = "secondary",
       isDeafened: c,
       buttonMinWidth: u,
       measureButtonRef: d,
-      meterOnly: _ = false,
-      containerClassName: h
+      meterOnly: m = false,
+      containerClassName: g
     } = this.props, {
-      isMicTesting: g,
-      volume: E
-    } = this.state, y = e && !g ? O.intl.string(O.t["9viE2A"]) : null;
-    g && e && !c && this._micTestStop();
-    let b = o.length >= a.length ? o : a;
+      isMicTesting: _,
+      volume: b
+    } = this.state, A = e && !_ ? v.intl.string(v.t["9viE2A"]) : null;
+    _ && e && !c && this._micTestStop();
+    let h = s.length >= l.length ? s : l;
     return (0, r.jsx)("div", {
-      className: s()(v.kL, h),
-      children: (0, r.jsx)(p.D0$, {
+      className: a()(O.kL, g),
+      children: (0, r.jsx)(f.D0$, {
         label: null != t ? t : true,
-        hideLabel: _,
-        description: _ ? null : n,
+        hideLabel: m,
+        description: m ? null : n,
         children: (0, r.jsxs)("div", {
-          className: v.ak,
-          children: [!_ && (0, r.jsxs)(r.Fragment, {
+          className: O.ak,
+          children: [!m && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)("div", {
-              className: v.km,
+              className: O.km,
               "aria-hidden": true,
-              children: [(0, r.jsx)(p.Button, {
+              children: [(0, r.jsx)(f.Button, {
                 buttonRef: d,
                 size: "sm",
-                variant: l,
-                text: b
+                variant: o,
+                text: h
               }), (0, r.jsx)("div", {
-                className: v.qB
+                className: O.qB
               })]
-            }), (0, r.jsx)(f.m, {
-              text: y,
+            }), (0, r.jsx)(p.m, {
+              text: A,
               children: (0, r.jsx)("div", {
-                className: v._o,
+                className: O._o,
                 style: null != u ? {
                   minWidth: u
                 } : {
                   visibility: "hidden"
                 },
-                children: (0, r.jsx)(p.Button, {
+                children: (0, r.jsx)(f.Button, {
                   size: "sm",
-                  variant: l,
-                  text: g ? o : a,
+                  variant: o,
+                  text: _ ? s : l,
                   onClick: this.handleToggleMicTest,
                   fullWidth: true
                 })
               })
             })]
-          }), (0, r.jsx)(m.A, {
-            progress: g || _ ? E + 100 : 0,
+          }), (0, r.jsx)(y.A, {
+            progress: _ || m ? b + 100 : 0,
             notchBackground: i,
             notchClassName: this.props.notchClassName,
             children: this.renderCaption()
@@ -183,24 +167,24 @@ class C extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), A(this, "_initTimeout", new d.Ep), A(this, "_silenceTimeout", new d.Ep), A(this, "_messageTimeout", new d.Ep), A(this, "_micTestStartTime", true), A(this, "state", {
-      volume: T,
+    super(...e), j(this, "_initTimeout", new d.Ep), j(this, "_silenceTimeout", new d.Ep), j(this, "_messageTimeout", new d.Ep), j(this, "_micTestStartTime", true), j(this, "state", {
+      volume: false,
       isMicTesting: false,
       isDetectingInput: true,
       didDeafenUser: false
-    }), A(this, "setupVoiceActivity", () => {
-      g.A.getMediaEngine().on(u.bg.VoiceActivity, this.handleVoiceActivity)
-    }), A(this, "handleVoiceActivity", e => {
+    }), j(this, "setupVoiceActivity", () => {
+      _.A.getMediaEngine().on(u.bg.VoiceActivity, this.handleVoiceActivity)
+    }), j(this, "handleVoiceActivity", e => {
       let {
         isMicTesting: t
       } = this.state;
-      if (t && e <= T) {
-        this._silenceTimeout.isStarted() || this._silenceTimeout.start(S, () => {
+      if (t && e <= false) {
+        this._silenceTimeout.isStarted() || this._silenceTimeout.start(2e3, () => {
           this.setState({
             isDetectingInput: false
           })
         }), this.setState({
-          volume: T
+          volume: false
         });
         return
       }
@@ -208,71 +192,82 @@ class C extends Chunk64700.PureComponent {
         volume: e,
         isDetectingInput: true
       })
-    }), A(this, "handleToggleMicTest", () => {
+    }), j(this, "handleToggleMicTest", () => {
       this.state.isMicTesting ? this._micTestStop() : this._micTestStart()
     })
   }
 }
 
-function N(e) {
+function I(e) {
   var t, n;
   let {
     inputDevice: i,
-    outputDevice: a,
-    threshold: s,
-    autoThreshold: o,
+    outputDevice: l,
+    threshold: a,
+    autoThreshold: s,
     inputVolume: u,
     outputVolume: d,
-    inputMode: f,
-    isDeafened: p
-  } = (0, c.cf)([g.A], () => {
-    let e = g.A.getInputDeviceId(),
-      t = g.A.getInputDevices(),
-      n = l().find(t, t => {
+    inputMode: p,
+    isDeafened: f
+  } = (0, c.cf)([_.A], () => {
+    let e = _.A.getInputDeviceId(),
+      t = _.A.getInputDevices(),
+      n = o().find(t, t => {
         let {
           id: n
         } = t;
         return n === e
       }),
-      r = g.A.getOutputDeviceId(),
-      i = g.A.getOutputDevices(),
-      a = l().find(i, e => {
+      r = _.A.getOutputDeviceId(),
+      i = _.A.getOutputDevices(),
+      l = o().find(i, e => {
         let {
           id: t
         } = e;
         return t === r
       }),
       {
-        threshold: s,
-        autoThreshold: o
-      } = g.A.getModeOptions(),
-      c = g.A.getInputVolume(),
-      u = g.A.getOutputVolume();
+        threshold: a,
+        autoThreshold: s
+      } = _.A.getModeOptions(),
+      c = _.A.getInputVolume(),
+      u = _.A.getOutputVolume();
     return {
       inputDevice: n,
-      outputDevice: a,
-      threshold: s,
-      autoThreshold: o,
+      outputDevice: l,
+      threshold: a,
+      autoThreshold: s,
       inputVolume: c,
       outputVolume: u,
-      inputMode: g.A.getMode(),
-      isDeafened: g.A.isSelfDeaf()
+      inputMode: _.A.getMode(),
+      isDeafened: _.A.isSelfDeaf()
     }
-  }), _ = (0, c.bG)([E.A], () => E.A.isConnected()), {
-    ref: m,
-    width: y
-  } = (0, h.Ay)();
-  return (0, r.jsx)(C, I({
-    isVoiceConnected: _,
+  }), m = (0, c.bG)([b.A], () => b.A.isConnected()), {
+    ref: y,
+    width: A
+  } = (0, g.Ay)();
+  return (0, r.jsx)(S, function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        j(e, t, n[t])
+      })
+    }
+    return e
+  }({
+    isVoiceConnected: m,
     inputVolume: u,
     outputVolume: d,
-    inputMode: f,
-    isDeafened: p,
-    vadThreshold: s,
-    vadAutoThreshold: o,
+    inputMode: p,
+    isDeafened: f,
+    vadThreshold: a,
+    vadAutoThreshold: s,
     inputDeviceName: null != (t = null == i ? true : i.name) ? t : "",
-    outputDeviceName: null != (n = null == a ? true : a.name) ? n : "",
-    measureButtonRef: m,
-    buttonMinWidth: y
+    outputDeviceName: null != (n = null == l ? true : l.name) ? n : "",
+    measureButtonRef: y,
+    buttonMinWidth: A
   }, e))
 }

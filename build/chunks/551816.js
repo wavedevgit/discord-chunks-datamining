@@ -87,7 +87,7 @@ class v {
       i = (0, l.vn)(e.joinedAt),
       {
         hasUnusualDmActivity: a,
-        hasUnusualAccountActivity: s,
+        hasUnusualAccountActivity: o,
         sourceInviteCode: u,
         joinSourceType: f,
         inviterId: _,
@@ -95,10 +95,10 @@ class v {
         joinSourceApplicationId: g,
         joinSourceChannelId: E
       } = this._computeMemberSupplementals(e.userId, e.unusualDMActivityUntil),
-      y = o.default.getUser(e.userId);
+      y = s.default.getUser(e.userId);
     return p(h(p({
       hasUnusualDmActivity: a,
-      hasUnusualAccountActivity: s,
+      hasUnusualAccountActivity: o,
       sourceInviteCode: u,
       joinSourceType: f,
       inviterId: _,
@@ -119,7 +119,7 @@ class v {
       sourceInviteCode: r,
       joinSourceType: i,
       inviterId: a,
-      integrationType: o,
+      integrationType: s,
       joinSourceApplicationId: l,
       joinSourceChannelId: c
     } = null != (n = (0, u.Oe)(this.guildId)[e]) ? n : {};
@@ -127,11 +127,11 @@ class v {
       sourceInviteCode: null != r ? r : null,
       joinSourceType: null != i ? i : null,
       inviterId: null != a ? a : null,
-      integrationType: null != o ? o : null,
+      integrationType: null != s ? s : null,
       joinSourceApplicationId: null != l ? l : null,
       joinSourceChannelId: null != c ? c : null,
       hasUnusualDmActivity: O(t),
-      hasUnusualAccountActivity: (0, s.cx)(e)
+      hasUnusualAccountActivity: (0, o.cx)(e)
     }
   }
   createMember(e) {
@@ -142,9 +142,9 @@ class v {
     if (null == t) return this._membersMap.set(e.userId, e);
     let r = p({}, e),
       a = p({}, t),
-      s = false,
+      o = false,
       {
-        sourceInviteCode: o,
+        sourceInviteCode: s,
         hasUnusualDmActivity: l,
         hasUnusualAccountActivity: c,
         joinSourceType: u,
@@ -153,13 +153,13 @@ class v {
         joinSourceApplicationId: _,
         joinSourceChannelId: h
       } = this._computeMemberSupplementals(r.userId, null != (n = a.unusualDMActivityUntil) ? n : r.unusualDMActivityUntil);
-    for (let e in r.sourceInviteCode !== o && (a.sourceInviteCode = o), r.hasUnusualDmActivity !== l && (a.hasUnusualDmActivity = l), r.hasUnusualAccountActivity !== c && (a.hasUnusualAccountActivity = c), r.joinSourceType !== u && (a.joinSourceType = u), r.joinSourceApplicationId !== _ && (a.joinSourceApplicationId = _), r.joinSourceChannelId !== h && (a.joinSourceChannelId = h), r.inviterId !== d && (a.inviterId = d), r.integrationType !== f && (a.integrationType = f), a) {
+    for (let e in r.sourceInviteCode !== s && (a.sourceInviteCode = s), r.hasUnusualDmActivity !== l && (a.hasUnusualDmActivity = l), r.hasUnusualAccountActivity !== c && (a.hasUnusualAccountActivity = c), r.joinSourceType !== u && (a.joinSourceType = u), r.joinSourceApplicationId !== _ && (a.joinSourceApplicationId = _), r.joinSourceChannelId !== h && (a.joinSourceChannelId = h), r.inviterId !== d && (a.inviterId = d), r.integrationType !== f && (a.integrationType = f), a) {
       let t = e,
         n = a[t],
-        o = r[t];
-      i()(n, o) || (r[t] = n, s = true)
+        s = r[t];
+      i()(n, s) || (r[t] = n, o = true)
     }
-    return this._membersMap.set(r.userId, r) || s
+    return this._membersMap.set(r.userId, r) || o
   }
   removeMember(e) {
     return this._membersMap.delete(e)

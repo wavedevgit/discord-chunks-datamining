@@ -27,14 +27,14 @@ function y(e) {
     guild: n,
     onAction: i,
     onClose: y
-  } = e, b = (0, c.Ay)(t), O = (0, s.bG)([p.A], () => t.isPrivate() || p.A.can(m.xB.CONNECT, t)), v = () => {
+  } = e, b = (0, c.Ay)(t), O = (0, o.bG)([p.A], () => t.isPrivate() || p.A.can(m.xB.CONNECT, t)), v = () => {
     if (!O) return b;
     let e = e => {
       e.stopPropagation(), t.isGuildStageVoice() ? (0, f.av)(t) : (l.default.selectVoiceChannel(t.id), (0, u.iN)(t.id)), null == i || i({
         action: "OPEN_VOICE_CHANNEL"
       }), null == y || y()
     };
-    return (0, r.jsx)(o.DUT, {
+    return (0, r.jsx)(s.DUT, {
       className: a()(E.sd, E.mG),
       onClick: e,
       children: b
@@ -55,14 +55,14 @@ function y(e) {
     })
   };
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsxs)(o.Heading, {
+    children: [(0, r.jsxs)(s.Heading, {
       variant: "heading-sm/semibold",
       color: "text-default",
       className: E.CT,
       children: [(0, r.jsx)(h.A, {
         channel: t,
         size: "xxs",
-        color: o.LU0.colors.TEXT_DEFAULT,
+        color: s.LU0.colors.TEXT_DEFAULT,
         className: E.Ow
       }), v()]
     }), A()]

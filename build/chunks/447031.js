@@ -42,15 +42,15 @@ async function O(e) {
     w = i.A.getChannel(l),
     R = null == w ? true : w.getGuildId(),
     P = null == R || "" === R,
-    D = s.default.getCurrentUser();
+    D = o.default.getCurrentUser();
   if (null == D) returnfalse;
   if (null == w || P && !w.isPrivate() || null == l) return Promise.resolve(false);
-  let x = u.Ay.getCurrentEmbeddedActivity();
-  if ((null == x ? true : x.applicationId) != null && (t = r.A.getApplication(null == x ? true : x.applicationId)), a.A.getVoiceChannelId() === l && null != x && x.applicationId === n && (0, p.H)(x.location) === a.A.getVoiceChannelId()) return (0, E.A)(R, x.location), Promise.resolve(true);
-  let L = await (0, _.A)(n, l);
+  let L = u.Ay.getCurrentEmbeddedActivity();
+  if ((null == L ? true : L.applicationId) != null && (t = r.A.getApplication(null == L ? true : L.applicationId)), a.A.getVoiceChannelId() === l && null != L && L.applicationId === n && (0, p.H)(L.location) === a.A.getVoiceChannelId()) return (0, E.A)(R, L.location), Promise.resolve(true);
+  let x = await (0, _.A)(n, l);
   if (!await (0, f.O)({
       applicationId: n,
-      application: L,
+      application: x,
       channel: w,
       currentEmbeddedApplication: t,
       embeddedActivitiesManager: N,
@@ -64,9 +64,9 @@ async function O(e) {
           channelId: w.id,
           bypassChangeModal: null != t
         })) returnfalse
-    } else if (!(0, o.pE)(w) || !n) returnfalse
+    } else if (!(0, s.pE)(w) || !n) returnfalse
   } else if (null == w) returnfalse;
-  return null != l && (0, d.A)(l), null != x && (0, c.rW)(x.location), await (0, c.su)({
+  return null != l && (0, d.A)(l), null != L && (0, c.rW)(L.location), await (0, c.su)({
     channelId: l,
     applicationId: n,
     isStart: false,

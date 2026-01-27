@@ -43,7 +43,7 @@ function m(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, _ = (0, s.bG)([c.default], () => {
+  } = e, _ = (0, o.bG)([c.default], () => {
     var e;
     return null == (e = c.default.getCurrentUser()) ? true : e.email
   }), [h, m] = i.useState({
@@ -82,13 +82,13 @@ function m(e) {
       text: d.intl.string(d.t.cpT0Cq),
       onClick: n
     }],
-    children: ["loading" === h.status && (0, r.jsx)(o.y$y, {}), "success" === h.status && (0, r.jsxs)("div", {
+    children: ["loading" === h.status && (0, r.jsx)(s.y$y, {}), "success" === h.status && (0, r.jsxs)("div", {
       className: f.d,
-      children: [(0, r.jsx)(o.mir, {
+      children: [(0, r.jsx)(s.mir, {
         size: "xs",
         color: "currentColor",
         className: f.q
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-default",
         children: d.intl.string(d.t.yb7itQ)
@@ -98,7 +98,7 @@ function m(e) {
 }
 
 function g() {
-  (0, o.mMO)(async () => {
+  (0, s.mMO)(async () => {
     let {
       QuestRewardModalUnverified: e
     } = await Promise.resolve().then(n.bind(n, 175248));

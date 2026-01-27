@@ -86,7 +86,7 @@ let E = {
       location: n,
       twoWayLinkType: r,
       userCode: a,
-      twoWayLink: o,
+      twoWayLink: s,
       successRedirect: u,
       handle: f
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
@@ -96,7 +96,7 @@ let E = {
     });
     let p = d.Rsh.CONNECTIONS_AUTHORIZE(e),
       _ = new URLSearchParams;
-    null != a && _.append("two_way_user_code", a), null != u && _.append("success_redirect", u), null != r ? (_.append("two_way_link_type", r), _.append("two_way_link", "true")) : null != o && _.append("two_way_link", String(o)), null != f && _.append("handle", f), p = p + "?" + _.toString();
+    null != a && _.append("two_way_user_code", a), null != u && _.append("success_redirect", u), null != r ? (_.append("two_way_link_type", r), _.append("two_way_link", "true")) : null != s && _.append("two_way_link", String(s)), null != f && _.append("handle", f), p = p + "?" + _.toString();
     let h = await i.Bo.get({
         url: p,
         oldFormErrors: true,
@@ -104,17 +104,17 @@ let E = {
       }),
       {
         state: m
-      } = (0, s.vA)(null != (t = h.body.url) ? t : "");
+      } = (0, o.vA)(null != (t = h.body.url) ? t : "");
     return null != m && l.A.addPendingAuthorizedState(m), h
   },
   callback: g,
   connect(e, t, n, i, a) {
-    var s;
+    var o;
     return u.A.put({
       url: d.Rsh.CONNECTION(e, t),
       body: {
         name: n,
-        friend_sync: null != (s = null == a ? true : a.friend_sync) ? s : d.txh.has(e)
+        friend_sync: null != (o = null == a ? true : a.friend_sync) ? o : d.txh.has(e)
       },
       context: {
         location: i
@@ -227,11 +227,11 @@ let E = {
     if (null == t) return void m.error("Two-way link: missing authorize location");
     let {
       code: a,
-      error: o,
+      error: s,
       errorDescription: l
-    } = (0, s.vA)(t);
-    return null != o ? void m.error("Two-way link: missing authorize code", {
-      error: o,
+    } = (0, o.vA)(t);
+    return null != s ? void m.error("Two-way link: missing authorize code", {
+      error: s,
       errorDescription: l
     }) : await g(e, {
       code: n,

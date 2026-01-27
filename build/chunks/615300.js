@@ -8,7 +8,7 @@ var Chunk685908 = require("./685908.js"),
   Chunk497387 = require("./497387.js"),
   a = require.n(Chunk497387),
   Chunk94809 = require("./94809.js"),
-  o = require.n(Chunk94809),
+  s = require.n(Chunk94809),
   Chunk505737 = require("./505737.js"),
   c = require.n(Chunk505737);
 
@@ -101,15 +101,15 @@ function O(e) {
 }
 
 function v(e, t, n) {
-  return true !== t && true != n ? o()(t, n) : e
+  return true !== t && true != n ? s()(t, n) : e
 }
 
 function A(e, t) {
   let n, {
       toValueMin: i,
       toValueMax: a,
-      tension: s = 0,
-      friction: o = 0,
+      tension: o = 0,
+      friction: s = 0,
       loop: l,
       reverse: c,
       invert: u,
@@ -125,8 +125,8 @@ function A(e, t) {
     I = v(t.toValue, i, a),
     S = r[h](e, p(d({}, y), {
       toValue: I,
-      tension: s,
-      friction: o,
+      tension: o,
+      friction: s,
       duration: O
     })),
     T = S;
@@ -134,8 +134,8 @@ function A(e, t) {
     let i = v(t.duration, g, E);
     n = r[h](e, p(d({}, y), {
       toValue: c ? b : -I,
-      tension: s,
-      friction: o,
+      tension: o,
+      friction: s,
       duration: i
     })), T = r.sequence([S, n])
   }

@@ -2,17 +2,17 @@
 /** chunk id: 913728, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk186306 = require("./186306.js"),
   Chunk711371 = require("./711371.js");
 let a = 4e3;
 
-function s(e, t) {
+function o(e, t) {
   let {
     apply: n,
     deleteBackward: a,
-    deleteForward: s,
+    deleteForward: o,
     deleteFragment: l,
     insertData: u,
     insertText: d,
@@ -50,12 +50,12 @@ function s(e, t) {
       history: a
     } = e;
     n(t);
-    let s = i.VW.richValue(e);
-    s !== m && (0 === a.stack.length && (a.stack = [c(e)], a.index = 0), r.o.isSaving(e) && (o(e, t, _), _ = t), h = t, m = s)
+    let o = i.VW.richValue(e);
+    o !== m && (0 === a.stack.length && (a.stack = [c(e)], a.index = 0), r.o.isSaving(e) && (s(e, t, _), _ = t), h = t, m = o)
   }, e.deleteBackward = t => {
     r.o.withSingleEntry(e, () => a(t))
   }, e.deleteForward = t => {
-    r.o.withSingleEntry(e, () => s(t))
+    r.o.withSingleEntry(e, () => o(t))
   }, e.deleteFragment = t => {
     r.o.withSingleEntry(e, () => l(t))
   }, e.insertText = t => {
@@ -65,18 +65,18 @@ function s(e, t) {
   }, e
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   let i, {
       selection: a
     } = e,
-    s = r.o.currentEntry(e),
-    o = true,
+    o = r.o.currentEntry(e),
+    s = true,
     c = true;
-  if ("insert_text" === t.type && 1 === t.text.length ? (i = "insert", c = !(("" === t.text || t.text.endsWith(" ")) && (null == n ? true : n.type) === "insert_text" && !("" === n.text && n.text.endsWith(" ")))) : "split_node" === t.type ? i = "insert" : "remove_text" === t.type && 1 === t.text.length ? i = "delete" : (i = "other", o = false, c = false), "set_selection" === t.type && null != s) {
-    s.selection = a;
+  if ("insert_text" === t.type && 1 === t.text.length ? (i = "insert", c = !(("" === t.text || t.text.endsWith(" ")) && (null == n ? true : n.type) === "insert_text" && !("" === n.text && n.text.endsWith(" ")))) : "split_node" === t.type ? i = "insert" : "remove_text" === t.type && 1 === t.text.length ? i = "delete" : (i = "other", s = false, c = false), "set_selection" === t.type && null != o) {
+    o.selection = a;
     return
   }
-  o && l(s, i) ? r.o.insertOrMergeEntry(e, i, c) : r.o.insertEntry(e, i, c)
+  s && l(o, i) ? r.o.insertOrMergeEntry(e, i, c) : r.o.insertEntry(e, i, c)
 }
 
 function l(e, t) {

@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 7936, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  A: () => _
+  A: () => m
 }), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,22 +18,22 @@ require("./53516.js");
 var Chunk985018 = require("./985018.jsx"),
   Chunk20976 = require("./20976.js"),
   Chunk473169 = require("./473169.js");
-let _ = () => {
-  let [e, t] = i.useState(""), [s, _] = i.useState(""), [A, x] = i.useState(false), [E, v] = i.useState(false), [j, y] = i.useState(null), [b, S] = i.useState(null), I = (0, a.bG)([d.A], () => d.A.getCountryCode()), N = I.code.split(" ")[0], O = async () => {
+let m = () => {
+  let [e, t] = i.useState(""), [s, m] = i.useState(""), [A, x] = i.useState(false), [E, v] = i.useState(false), [b, y] = i.useState(null), [j, I] = i.useState(null), O = (0, a.bG)([u.A], () => u.A.getCountryCode()), S = O.code.split(" ")[0], N = async () => {
     try {
       await c.A.resendCode(e)
     } catch (e) {
-      S(e.body.message)
+      I(e.body.message)
     }
   }, C = async () => {
     x(true);
     try {
       let {
         token: t
-      } = await c.A.verifyPhone(N + e, s);
-      y(null), S(null), v(true), c.A.validatePhoneForSupport(t)
+      } = await c.A.verifyPhone(S + e, s);
+      y(null), I(null), v(true), c.A.validatePhoneForSupport(t)
     } catch (e) {
-      e.body.message ? (y(null), S(e.body.message)) : (y(e.body.phone), S(e.body.code))
+      e.body.message ? (y(null), I(e.body.message)) : (y(e.body.phone), I(e.body.code))
     } finally {
       x(false)
     }
@@ -42,7 +41,7 @@ let _ = () => {
     children: [(0, r.jsx)(p._V, {
       src: n(142041)
     }), (0, r.jsxs)(p.hE, {
-      className: l()(f.QX, m.Uu, m.wq, m.Hu),
+      className: l()(f.QX, _.Uu, _.wq, _.Hu),
       children: [g.intl.string(g.t.WWzQta), (0, r.jsx)(o.yr3, {
         size: "md",
         color: "currentColor",
@@ -60,24 +59,24 @@ let _ = () => {
       className: f.QX,
       children: [(0, r.jsx)(h.A, {
         label: g.intl.string(g.t["eJnn0+"]),
-        alpha2: I.alpha2,
-        countryCode: N,
+        alpha2: O.alpha2,
+        countryCode: S,
         value: e,
         autoComplete: "off",
         spellCheck: "false",
         onChange: t,
-        forceMode: u.Pd.PHONE,
-        error: j
+        forceMode: d.Pd.PHONE,
+        error: b
       }), (0, r.jsx)(p.pd, {
         className: f.QX,
         label: g.intl.string(g.t.OdzNbm),
         value: s,
-        onChange: _,
+        onChange: m,
         maxLength: 6,
-        error: b
+        error: j
       }), (0, r.jsx)(o.QWc, {
         text: g.intl.string(g.t["5b60gi"]),
-        onClick: O
+        onClick: N
       }), (0, r.jsx)("div", {
         className: f.QX,
         children: (0, r.jsx)(o.Button, {

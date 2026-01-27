@@ -8,7 +8,7 @@ var Chunk972347 = require("./972347.js"),
   Chunk118356 = require("./118356.js"),
   Chunk205693 = require("./205693.js"),
   Chunk206607 = require("./206607.js"),
-  o = require("./264572.js").Buffer;
+  s = require("./264572.js").Buffer;
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -20,24 +20,24 @@ function l(e, t, n) {
 }
 class c extends Chunk972347.A {
   createUser(e) {
-    this.recognizedUserIds.add(e), this.setupKeyRatchetForUser(e, this.latestPreparedTransitionVersion, s.jU.DECRYPT)
+    this.recognizedUserIds.add(e), this.setupKeyRatchetForUser(e, this.latestPreparedTransitionVersion, o.jU.DECRYPT)
   }
   destroyUser(e) {
     this.recognizedUserIds.delete(e), this.encryptionWorker.postMessage({
-      type: s.lA.DESTROY_USER,
+      type: o.lA.DESTROY_USER,
       userId: e
     })
   }
   updateLocalUserCodecs(e, t) {
     this.encryptionWorker.postMessage({
-      type: s.lA.UPDATE_CODECS,
+      type: o.lA.UPDATE_CODECS,
       audioCodec: e,
       videoCodec: t
     })
   }
   updateSsrcs(e, t, n) {
     this.encryptionWorker.postMessage({
-      type: s.lA.UPDATE_SSRC,
+      type: o.lA.UPDATE_SSRC,
       userId: e,
       audioSsrc: t,
       videoSsrcs: n
@@ -58,7 +58,7 @@ class c extends Chunk972347.A {
   executeSecureFramesTransition(e) {
     if (!this.secureFramesTransitions.has(e)) return void this.logger.warn("[TAG] Transition ID " + e + " not found, ignoring.");
     let t = this.secureFramesTransitions.get(e);
-    this.secureFramesTransitions.delete(e), t === this.dave.kDisabledVersion && this.mlsSession.Reset(), this.setupKeyRatchetForUser(this.userId, t, s.jU.ENCRYPT), this.onSecureFramesStateChanged()
+    this.secureFramesTransitions.delete(e), t === this.dave.kDisabledVersion && this.mlsSession.Reset(), this.setupKeyRatchetForUser(this.userId, t, o.jU.ENCRYPT), this.onSecureFramesStateChanged()
   }
   getMLSKeyPackage(e) {
     e(this.mlsSession.GetMarshalledKeyPackage())
@@ -90,13 +90,13 @@ class c extends Chunk972347.A {
       let {
         data: t
       } = e;
-      t.type === s.h5.PROTOCOL_VERSION_CHANGED ? (this.currentEncryptorProtocolVersion = t.protocolVersion, this.onSecureFramesStateChanged()) : this.logger.warn("Unknown message type from encryption worker", t)
+      t.type === o.h5.PROTOCOL_VERSION_CHANGED ? (this.currentEncryptorProtocolVersion = t.protocolVersion, this.onSecureFramesStateChanged()) : this.logger.warn("Unknown message type from encryption worker", t)
     }, e.onerror = e => {
       this.logger.error("Encryption worker error", e)
     }, e.onmessageerror = e => {
       this.logger.error("Encryption worker message error", e)
     }, e.postMessage({
-      type: s.lA.INITIALIZE
+      type: o.lA.INITIALIZE
     }), e
   }
   getRecognizedUserIDs() {
@@ -113,7 +113,7 @@ class c extends Chunk972347.A {
         writable: n
       } = e.createEncodedStreams();
       this.encryptionWorker.postMessage({
-        type: s.lA.RTC_TRANSFORM,
+        type: o.lA.RTC_TRANSFORM,
         readable: t,
         writable: n
       }, [t, n])
@@ -122,7 +122,7 @@ class c extends Chunk972347.A {
   setupKeyRatchetForUser(e, t, n) {
     let r = this.makeUserKeyRatchet(e, t);
     this.encryptionWorker.postMessage({
-      type: s.lA.SET_KEY_RATCHET,
+      type: o.lA.SET_KEY_RATCHET,
       userId: e,
       operation: n,
       protocolVersion: t,
@@ -130,8 +130,8 @@ class c extends Chunk972347.A {
     })
   }
   prepareSecureFramesRatchets(e, t) {
-    for (let e of this.getRecognizedUserIDs()) e !== this.userId && this.setupKeyRatchetForUser(e, t, s.jU.DECRYPT);
-    e === this.dave.kInitTransitionId ? (this.setupKeyRatchetForUser(this.userId, t, s.jU.ENCRYPT), this.onSecureFramesStateChanged()) : this.secureFramesTransitions.set(e, t), this.latestPreparedTransitionVersion = t
+    for (let e of this.getRecognizedUserIDs()) e !== this.userId && this.setupKeyRatchetForUser(e, t, o.jU.DECRYPT);
+    e === this.dave.kInitTransitionId ? (this.setupKeyRatchetForUser(this.userId, t, o.jU.ENCRYPT), this.onSecureFramesStateChanged()) : this.secureFramesTransitions.set(e, t), this.latestPreparedTransitionVersion = t
   }
   onSecureFramesStateChanged() {
     var e;
@@ -141,14 +141,14 @@ class c extends Chunk972347.A {
     };
     if (t.version !== this.dave.kDisabledVersion) {
       let e = this.mlsSession.GetLastEpochAuthenticator();
-      t.epochAuthenticator = o.from(e).toString("base64")
+      t.epochAuthenticator = s.from(e).toString("base64")
     }(null == this.lastSecureFramesStateUpdate || this.lastSecureFramesStateUpdate.version !== t.version || this.lastSecureFramesStateUpdate.epochAuthenticator !== t.epochAuthenticator) && (this.logger.info("DAVE protocol state update: ".concat(JSON.stringify(t))), this.emit(a.yq.SecureFramesUpdate, t), this.lastSecureFramesStateUpdate = t)
   }
   constructor(e, t, n) {
     super(), l(this, "logger", true), l(this, "dave", true), l(this, "transientKeys", true), l(this, "mlsSession", true), l(this, "encryptionWorker", true), l(this, "userId", true), l(this, "currentEncryptorProtocolVersion", 0), l(this, "recognizedUserIds", new Set), l(this, "secureFramesTransitions", new Map), l(this, "latestPreparedTransitionVersion", 0), l(this, "lastSecureFramesStateUpdate", null), this.logger = new i.Vy("DaveSessionManager"), this.dave = e, this.transientKeys = t, this.userId = n;
     const r = "",
-      s = "";
-    this.mlsSession = new e.Session(r, s, (e, t) => {
+      o = "";
+    this.mlsSession = new e.Session(r, o, (e, t) => {
       this.emit(a.yq.MLSFailure, e, t)
     }), this.encryptionWorker = this.setupEncryptionWorker()
   }

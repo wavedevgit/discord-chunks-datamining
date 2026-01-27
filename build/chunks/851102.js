@@ -2,12 +2,12 @@
 /** chunk id: 851102, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk501459 = require("./501459.js"),
   Chunk1673 = require("./1673.js");
 let a = RegExp("(?:\\(|\\（)(?<weekday>" + Object.keys(Chunk501459.tS).join("|") + ")(?:\\)|\\）)", "i");
-class s {
+class o {
   pattern() {
     return a
   }

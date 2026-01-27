@@ -101,7 +101,7 @@ let _ = [{
         label: t,
         description: n,
         isDisabled: a,
-        isProcessing: s,
+        isProcessing: o,
         placeholder: l,
         maxVisibleItems: c,
         clearable: u,
@@ -109,7 +109,7 @@ let _ = [{
         popoutPosition: f,
         variant: p
       } = e, [h, m] = i.useState("blue");
-      return (0, r.jsx)(o.Te, {
+      return (0, r.jsx)(s.Te, {
         variant: p,
         label: t,
         description: n,
@@ -118,7 +118,7 @@ let _ = [{
         options: _,
         placeholder: l,
         isDisabled: a,
-        isProcessing: s,
+        isProcessing: o,
         maxVisibleItems: c,
         clearable: u,
         closeOnSelect: d,
@@ -211,7 +211,7 @@ let _ = [{
       let {
         placeholder: t,
         isDisabled: n,
-        isProcessing: o,
+        isProcessing: s,
         clearable: l,
         closeOnSelect: u,
         clearQueryOnSelect: p,
@@ -219,24 +219,24 @@ let _ = [{
       } = e, m = f(e, ["placeholder", "isDisabled", "isProcessing", "clearable", "closeOnSelect", "clearQueryOnSelect", "filter"]), [g, E] = i.useState("blue"), [y, b] = i.useState(["blue"]);
       return (0, r.jsxs)(a.BJc, {
         gap: 24,
-        children: [(0, r.jsx)(s.p, d(c({}, m), {
+        children: [(0, r.jsx)(o.p, d(c({}, m), {
           value: g,
           onChange: E,
           options: _,
           placeholder: t,
           isDisabled: n,
-          isProcessing: o,
+          isProcessing: s,
           clearable: l,
           clearQueryOnSelect: p,
           filter: h
-        })), (0, r.jsx)(s.p, d(c({}, m), {
+        })), (0, r.jsx)(o.p, d(c({}, m), {
           multi: true,
           value: y,
           onChange: b,
           options: _,
           placeholder: t,
           isDisabled: n,
-          isProcessing: o,
+          isProcessing: s,
           clearable: l,
           closeOnSelect: u,
           clearQueryOnSelect: p,

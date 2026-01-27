@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk496885 = require("./496885.jsx"),
   Chunk816166 = require("./816166.jsx"),
@@ -80,7 +80,7 @@ class y extends Chunk64700.PureComponent {
     let {
       className: i,
       badgeStrokeColor: a,
-      tooltipColor: c = o.STz.Colors.BRAND,
+      tooltipColor: c = s.STz.Colors.BRAND,
       tooltipPosition: u,
       tooltipDelay: d,
       size: f = 16,
@@ -88,21 +88,21 @@ class y extends Chunk64700.PureComponent {
       iconClassName: m,
       flowerStarClassName: y
     } = this.props, b = E(e);
-    return (0, r.jsx)(o.STz, {
+    return (0, r.jsx)(s.STz, {
       color: c,
       position: u,
       delay: d,
       text: b,
-      children: o => {
-        if (5 !== e && 4 !== e) return (0, r.jsx)(l.A, g(h({}, o), {
-          className: s()(n, i),
+      children: s => {
+        if (5 !== e && 4 !== e) return (0, r.jsx)(l.A, g(h({}, s), {
+          className: o()(n, i),
           flowerStarClassName: y,
           color: _,
           stroke: a,
           size: f,
           children: (0, r.jsx)(t, {
             size: "xxs",
-            className: s()(p.Kk, m),
+            className: o()(p.Kk, m),
             color: "currentColor"
           })
         }));
@@ -111,11 +111,11 @@ class y extends Chunk64700.PureComponent {
             width: f,
             height: f
           };
-          return (0, r.jsx)("div", g(h({}, o), {
-            className: s()(n, i),
+          return (0, r.jsx)("div", g(h({}, s), {
+            className: o()(n, i),
             style: e,
             children: (0, r.jsx)(t, {
-              className: s()(p.Kk, m),
+              className: o()(p.Kk, m),
               color: "currentColor"
             })
           }))
@@ -127,7 +127,7 @@ class y extends Chunk64700.PureComponent {
     let {
       guild: e
     } = this.props, t = new Set(e.features);
-    return t.has(d.GuildFeatures.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, o.VaJ, p.PF) : t.has(d.GuildFeatures.VERIFIED) && t.has(d.GuildFeatures.HUB) ? this.renderBadge(4, o.Pfh, p.Il) : t.has(d.GuildFeatures.HUB) ? this.renderBadge(5, o.Pfh, p.e4) : t.has(d.GuildFeatures.VERIFIED) && t.has(d.GuildFeatures.PARTNERED) ? this.renderBadge(3, o.Uzd, p.zr) : t.has(d.GuildFeatures.VERIFIED) ? this.renderBadge(2, o.Uzd, p.zr) : t.has(d.GuildFeatures.PARTNERED) ? this.renderBadge(0, (0, o.kHD)(c.A), p._I) : null
+    return t.has(d.GuildFeatures.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, s.VaJ, p.PF) : t.has(d.GuildFeatures.VERIFIED) && t.has(d.GuildFeatures.HUB) ? this.renderBadge(4, s.Pfh, p.Il) : t.has(d.GuildFeatures.HUB) ? this.renderBadge(5, s.Pfh, p.e4) : t.has(d.GuildFeatures.VERIFIED) && t.has(d.GuildFeatures.PARTNERED) ? this.renderBadge(3, s.Uzd, p.zr) : t.has(d.GuildFeatures.VERIFIED) ? this.renderBadge(2, s.Uzd, p.zr) : t.has(d.GuildFeatures.PARTNERED) ? this.renderBadge(0, (0, s.kHD)(c.A), p._I) : null
   }
 }
 let b = y

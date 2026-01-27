@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 932003, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 2292 **/
+/** chunk id: 932003, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  b: () => h
+  b: () => x
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,50 +17,50 @@ var Chunk877624 = require("./877624.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk708611 = require("./708611.js");
 
-function h() {
+function x() {
   var e;
-  let t = (0, a.bG)([o.A], () => o.A.useReducedMotion),
+  let t = (0, l.bG)([s.A], () => s.A.useReducedMotion),
     {
-      claimableRewards: n
-    } = (0, l.Pv)(),
-    h = (0, a.bG)([u.A], () => {
+      claimableRewards: r
+    } = (0, o.Pv)(),
+    x = (0, l.bG)([u.A], () => {
       let e = u.A.getMarketingComponentByType(i.C.GIFT_PLAN_SELECTION_CARD_BANNER);
       return null == e || "giftPlanSelectionCardBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftPlanSelectionCardBanner
     }),
-    m = (0, c.T)(null == h ? true : h.bannerAsset),
-    g = (0, c.T)(null == h ? true : h.avatarAsset),
-    E = null == h ? true : h.gradient,
-    y = null != E && null != E.colors && E.colors.length >= 2 ? (0, d.K5)({
-      gradient: E.colors,
-      angle: null != (e = E.angle) ? e : true
+    C = (0, c.T)(null == x ? true : x.bannerAsset),
+    f = (0, c.T)(null == x ? true : x.avatarAsset),
+    T = null == x ? true : x.gradient,
+    h = null != T && null != T.colors && T.colors.length >= 2 ? (0, d.K5)({
+      gradient: T.colors,
+      angle: null != (e = T.angle) ? e : true
     }) : true;
-  return null == h || null == n || 0 === n.length ? null : (0, r.jsxs)("div", {
-    className: _.kL,
-    style: y,
-    children: [null != m && (0, r.jsx)("div", {
-      className: _._e,
+  return null == x || null == r || 0 === r.length ? null : (0, n.jsxs)("div", {
+    className: g.kL,
+    style: h,
+    children: [null != C && (0, n.jsx)("div", {
+      className: g._e,
       style: {
-        backgroundImage: "url(".concat(m, ")")
+        backgroundImage: "url(".concat(C, ")")
       }
-    }), (0, r.jsxs)("div", {
-      className: _.V_,
-      children: [(0, r.jsx)(s.Text, {
+    }), (0, n.jsxs)("div", {
+      className: g.V_,
+      children: [(0, n.jsx)(a.Text, {
         variant: "text-md/bold",
         color: "always-white",
         children: p.intl.string(p.t.OEtqpm)
-      }), (0, r.jsx)(s.Text, {
+      }), (0, n.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "always-white",
         children: p.intl.formatToPlainString(p.t["2h5M+X"], {
-          availableCount: n.length
+          availableCount: r.length
         })
       })]
-    }), (0, r.jsx)("div", {
-      className: _.my,
-      children: null != g ? (0, r.jsx)(f.A, {
-        maxRewardImageSrc: g,
-        claimableRewards: n,
-        size: s._3J.SIZE_48,
+    }), (0, n.jsx)("div", {
+      className: g.my,
+      children: null != f ? (0, n.jsx)(m.A, {
+        maxRewardImageSrc: f,
+        claimableRewards: r,
+        size: a._3J.SIZE_48,
         imageScaling: t ? 1.9 : 2.4
       }) : null
     })]

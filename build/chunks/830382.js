@@ -72,20 +72,20 @@ async function v(e, t, n) {
     });
     try {
       let i = d.A.inTestModeForApplication(e) || c.A.inDevModeForApplication(e),
-        s = {
+        o = {
           url: i ? g.Rsh.STORE_SKU(t) : g.Rsh.STORE_PUBLISHED_LISTINGS_SKU(t),
           rejectWithError: false
         };
-      n === r.g.VARIANTS_GROUP && (s.query = {
+      n === r.g.VARIANTS_GROUP && (o.query = {
         variants_return_style: n
       });
-      let o = await (0, h.aP)(s);
+      let s = await (0, h.aP)(o);
       a.h.dispatch({
         type: "SKU_FETCH_SUCCESS",
-        sku: i ? o.body : o.body.sku
+        sku: i ? s.body : s.body.sku
       }), i || a.h.dispatch({
         type: "STORE_LISTING_FETCH_SUCCESS",
-        storeListing: o.body
+        storeListing: s.body
       })
     } catch (e) {
       throw a.h.dispatch({
@@ -133,20 +133,20 @@ async function I(e, t, n, r) {
       type: "SKU_PURCHASE_PREVIEW_FETCH_FAILURE",
       skuId: t
     });
-    let e = n instanceof s.Ey ? n : new s.Ey(n);
-    if (e.code === o.tG.BILLING_BUNDLE_ALREADY_PURCHASED || e.code === o.tG.BILLING_BUNDLE_PARTIALLY_OWNED || e.code === o.tG.INVALID_BILLING_ADDRESS) throw e
+    let e = n instanceof o.Ey ? n : new o.Ey(n);
+    if (e.code === s.tG.BILLING_BUNDLE_ALREADY_PURCHASED || e.code === s.tG.BILLING_BUNDLE_PARTIALLY_OWNED || e.code === s.tG.INVALID_BILLING_ADDRESS) throw e
   }
   return i
 }
 let S = {
   isGift: false
 };
-async function T(e, t, n, r, o) {
+async function T(e, t, n, r, s) {
   a.h.dispatch({
     type: "ORDER_CREATE_START"
   });
   try {
-    let s = {
+    let o = {
       order_line_items: [{
         sku_id: e,
         quantity: 1,
@@ -159,21 +159,21 @@ async function T(e, t, n, r, o) {
         request_gateway_country_code: n
       }
     };
-    r && (s.gifting_facet = {
+    r && (o.gifting_facet = {
       is_gift: true,
       gift_customization: {
-        recipient_id: o.recipient_id,
-        gift_style: o.gift_style,
-        emoji_id: o.emoji_id,
-        emoji_name: o.emoji_name,
-        sound_id: o.sound_id,
-        reward_sku_ids: o.reward_sku_ids,
-        custom_message_contents: o.custom_message
+        recipient_id: s.recipient_id,
+        gift_style: s.gift_style,
+        emoji_id: s.emoji_id,
+        emoji_name: s.emoji_name,
+        sound_id: s.sound_id,
+        reward_sku_ids: s.reward_sku_ids,
+        custom_message_contents: s.custom_message
       }
     });
     let l = (await i.Bo.post({
         url: g.Rsh.ORDER_CREATE,
-        body: s,
+        body: o,
         rejectWithError: false
       })).body,
       c = l.id;
@@ -185,7 +185,7 @@ async function T(e, t, n, r, o) {
   } catch (e) {
     throw a.h.dispatch({
       type: "ORDER_CREATE_FAIL"
-    }), new s.Ey("Failed to create order: ".concat(e))
+    }), new o.Ey("Failed to create order: ".concat(e))
   }
 }
 async function C(e, t, n) {
@@ -247,8 +247,8 @@ async function C(e, t, n) {
       redirectConfirmation: false
     })
   } catch (i) {
-    let n = i instanceof s.Ey ? i : new s.Ey(i);
-    if ((n.code === o.tG.CONFIRMATION_REQUIRED || n.code === o.tG.AUTHENTICATION_REQUIRED) && a.h.dispatch({
+    let n = i instanceof o.Ey ? i : new o.Ey(i);
+    if ((n.code === s.tG.CONFIRMATION_REQUIRED || n.code === s.tG.AUTHENTICATION_REQUIRED) && a.h.dispatch({
         type: "SKU_PURCHASE_AWAIT_CONFIRMATION",
         skuId: t,
         isGift: E
@@ -257,7 +257,7 @@ async function C(e, t, n) {
         applicationId: e,
         skuId: t,
         error: n
-      }), n.code !== o.tG.CONFIRMATION_REQUIRED) throw n;
+      }), n.code !== s.tG.CONFIRMATION_REQUIRED) throw n;
     if (!i.body.payment_id) throw (0, m.i0)("payment id cannot be null on redirected confirmations.");
     return (0, m.MM)(i.body, r)
   }
@@ -275,7 +275,7 @@ async function N() {
       });
     return y({}, t.body)
   } catch (e) {
-    throw e instanceof s.Ey ? e : new s.Ey(e)
+    throw e instanceof o.Ey ? e : new o.Ey(e)
   }
 }
 

@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js");
 let a = "data-focus-blocked",
-  s = 0;
+  o = 0;
 
-function o() {
-  return s++
+function s() {
+  return o++
 }
 
 function l(e) {
@@ -20,7 +20,7 @@ function l(e) {
 }
 
 function c(e, t) {
-  let [n] = i.useState(() => o()), r = "".concat(a, "-").concat(n);
+  let [n] = i.useState(() => s()), r = "".concat(a, "-").concat(n);
   i.useLayoutEffect(() => {
     if (t) {
       let t = e.current;
@@ -48,9 +48,9 @@ function u(e) {
     children: t,
     className: n,
     enabled: a = true
-  } = e, s = i.useRef(null);
-  return c(s, a), (0, r.jsx)("div", {
-    ref: s,
+  } = e, o = i.useRef(null);
+  return c(o, a), (0, r.jsx)("div", {
+    ref: o,
     className: n,
     children: t
   })

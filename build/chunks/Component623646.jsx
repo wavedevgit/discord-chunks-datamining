@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   c = require.n(Chunk284009),
   Chunk621466 = require("./621466.js"),
@@ -189,33 +189,33 @@ class D extends(r = Chunk64700.Component) {
     switch (i) {
       case "left": {
         let i = this.formatDimension(this.nudgeLeftAlignment(e.left + a, t, n)),
-          s = this.formatDimension(e.left + a) - i;
+          o = this.formatDimension(e.left + a) - i;
         return {
           style: b(E({}, r), {
             left: i
           }),
-          nudge: s
+          nudge: o
         }
       }
       case "right": {
         let i = this.formatDimension(n.offsetWidth - e.right - a),
-          s = this.nudgeRightAlignment(i, t, n);
+          o = this.nudgeRightAlignment(i, t, n);
         return {
           style: b(E({}, r), {
-            right: i + s
+            right: i + o
           }),
           nudge: 0
         }
       }
       case "center": {
         let i = e.left + (e.width - t.offsetWidth) / 2 + a,
-          s = this.formatDimension(this.nudgeLeftAlignment(i, t, n)),
-          o = this.formatDimension(i) - s;
+          o = this.formatDimension(this.nudgeLeftAlignment(i, t, n)),
+          s = this.formatDimension(i) - o;
         return {
           style: b(E({}, r), {
-            left: s
+            left: o
           }),
-          nudge: o
+          nudge: s
         }
       }
       default:
@@ -236,8 +236,8 @@ class D extends(r = Chunk64700.Component) {
       nudgeAlignIntoViewport: r
     } = this.props, i = n.offsetHeight, a = i - e;
     if (!r) return a;
-    let s = a + t.offsetHeight - i + I;
-    return s > 0 ? Math.max(I, a - s) : a
+    let o = a + t.offsetHeight - i + I;
+    return o > 0 ? Math.max(I, a - o) : a
   }
   getVerticalAlignmentStyle(e, t, n, r) {
     let {
@@ -247,33 +247,33 @@ class D extends(r = Chunk64700.Component) {
     switch (i) {
       case "top": {
         let i = this.formatDimension(this.nudgeTopAlignment(e.top + a, t, n)),
-          s = this.formatDimension(e.top + a) - i;
+          o = this.formatDimension(e.top + a) - i;
         return {
           style: b(E({}, r), {
             top: i
           }),
-          nudge: s
+          nudge: o
         }
       }
       case "bottom": {
         let i = this.formatDimension(this.nudgeBottomAlignment(e.bottom + a, t, n)),
-          s = this.formatDimension(e.bottom + a) - i;
+          o = this.formatDimension(e.bottom + a) - i;
         return {
           style: b(E({}, r), {
             bottom: i
           }),
-          nudge: s
+          nudge: o
         }
       }
       case "center": {
         let i = e.top + (e.height - t.offsetHeight) / 2 + a,
-          s = this.formatDimension(this.nudgeTopAlignment(i, t, n)),
-          o = this.formatDimension(i) - s;
+          o = this.formatDimension(this.nudgeTopAlignment(i, t, n)),
+          s = this.formatDimension(i) - o;
         return {
           style: b(E({}, r), {
-            top: s
+            top: o
           }),
-          nudge: o
+          nudge: s
         }
       }
       default:
@@ -283,38 +283,38 @@ class D extends(r = Chunk64700.Component) {
   calculatePositionStyle(e, t, n, r) {
     let {
       spacing: i = 0
-    } = this.props, a = R(this.props), s = n.getBoundingClientRect(), o = C(a, s.left, s.top);
+    } = this.props, a = R(this.props), o = n.getBoundingClientRect(), s = C(a, o.left, o.top);
     switch (e) {
       case "top":
-        return this.getHorizontalAlignmentStyle(o, t, n, {
-          bottom: n.offsetHeight - o.top + i
+        return this.getHorizontalAlignmentStyle(s, t, n, {
+          bottom: n.offsetHeight - s.top + i
         });
       case "bottom":
-        return this.getHorizontalAlignmentStyle(o, t, n, {
-          top: o.bottom + i
+        return this.getHorizontalAlignmentStyle(s, t, n, {
+          top: s.bottom + i
         });
       case "left":
-        return this.getVerticalAlignmentStyle(o, t, n, {
-          right: n.offsetWidth - o.left + i
+        return this.getVerticalAlignmentStyle(s, t, n, {
+          right: n.offsetWidth - s.left + i
         });
       case "right":
-        return this.getVerticalAlignmentStyle(o, t, n, {
-          left: o.right + i
+        return this.getVerticalAlignmentStyle(s, t, n, {
+          left: s.right + i
         });
       case "overlap_vertical":
-        return this.getHorizontalAlignmentStyle(o, t, n, {
+        return this.getHorizontalAlignmentStyle(s, t, n, {
           [r]: 0
         });
       case "overlap_horizontal":
-        return this.getVerticalAlignmentStyle(o, t, n, {
+        return this.getVerticalAlignmentStyle(s, t, n, {
           [r]: I
         });
       case "center":
-        return this.getVerticalAlignmentStyle(o, t, n, {
-          left: o.left + o.width / 2 - t.offsetWidth / 2 + i
+        return this.getVerticalAlignmentStyle(s, t, n, {
+          left: s.left + s.width / 2 - t.offsetWidth / 2 + i
         });
       case "window_center":
-        return this.getVerticalAlignmentStyle(o, t, n, {
+        return this.getVerticalAlignmentStyle(s, t, n, {
           left: Math.max((window.innerWidth - t.offsetWidth) / 2, 0)
         });
       default:
@@ -332,36 +332,36 @@ class D extends(r = Chunk64700.Component) {
         style: i,
         nudge: a
       } = this.calculatePositionStyle(e, n, r),
-      s = {
+      o = {
         position: e,
         style: i,
         nudge: a
       },
-      o = T(e, i, n, r),
-      l = o,
+      s = T(e, i, n, r),
+      l = s,
       u = null,
       d = 0;
-    if (t && o < 0) {
+    if (t && s < 0) {
       let t = N(e),
         i = this.calculatePositionStyle(t, n, r);
       u = i.style, d = i.nudge;
       let a = T(t, u, n, r);
-      if (a > o && (s = {
+      if (a > s && (o = {
           position: t,
           style: u,
           nudge: d
-        }, l = a), o < 0 && a < 0) {
-        let i, a = s.position;
+        }, l = a), s < 0 && a < 0) {
+        let i, a = o.position;
         if ((i = "top" === a || "bottom" === a ? "overlap_vertical" : "left" === a || "right" === a ? "overlap_horizontal" : a) !== e && i !== t) {
           let e = this.calculatePositionStyle(i, n, r, a),
             t = T(N(a), e.style, n, r);
-          t > l && (s = E({
+          t > l && (o = E({
             position: a
           }, e), l = t)
         }
       }
     }
-    return w(l, n, s)
+    return w(l, n, o)
   }
   componentDidMount() {
     var e, t;
@@ -400,27 +400,27 @@ class D extends(r = Chunk64700.Component) {
       children: n,
       fixed: r,
       disablePointerEvents: a,
-      clickTrap: s = false
+      clickTrap: o = false
     } = this.props, {
       position: l,
       isPositioned: c,
       nudge: u
     } = this.state, _ = this.calculateMaxHeight();
     return (0, i.jsx)("div", {
-      className: o()({
+      className: s()({
         [m.ld]: true,
-        [m.x7]: s
+        [m.x7]: o
       }),
       children: (0, i.jsx)(f.aS, {
-        children: s => {
+        children: o => {
           let {
             disableAdaptiveTheme: f
-          } = s;
+          } = o;
           return (0, i.jsx)(p.N, {
             disableAdaptiveTheme: f,
-            children: s => (0, i.jsx)("div", {
+            children: o => (0, i.jsx)("div", {
               id: e,
-              className: o()(t, s, m.qd, {
+              className: s()(t, o, m.qd, {
                 [m.CA]: false,
                 [m.Hc]: a
               }),

@@ -1,7 +1,7 @@
 /** Chunk was on 20601 **/
 /** chunk id: 624094, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => p,
+  E: () => b,
   k: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -22,28 +22,28 @@ var Chunk627968 = require("./627968.js"),
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function j(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -51,55 +51,55 @@ function j(e, t) {
   }), e
 }
 
-function b(e) {
+function j(e) {
   let {
     guildId: t,
     formFields: n,
-    updateFormFields: r
+    updateFormFields: l
   } = e, a = (0, i.bG)([s.A], () => {
     var e;
     return null == (e = s.A.getGuild(t)) ? true : e.rulesChannelId
   }), c = (e, t) => {
-    let l = n[e];
-    r([...n.slice(0, e), j(v({}, l), {
+    let r = n[e];
+    l([...n.slice(0, e), p(v({}, r), {
       response: t
     }), ...n.slice(e + 1)])
   };
-  return (0, l.jsx)(l.Fragment, {
+  return (0, r.jsx)(r.Fragment, {
     children: n.map((e, t) => ((e, t) => {
       switch (e.field_type) {
         case o.rX.TERMS:
-          return (0, l.jsx)(x.Ot, {
+          return (0, r.jsx)(h.Ot, {
             channelId: a,
             formField: e,
             onChange: e => {
-              let l;
-              return l = n[t], void r([...n.slice(0, t), j(v({}, l), {
+              let r;
+              return r = n[t], void l([...n.slice(0, t), p(v({}, r), {
                 response: e
               }), ...n.slice(t + 1)])
             }
           }, t);
         case o.rX.TEXT_INPUT:
-          return (0, l.jsx)(h.y4, {
+          return (0, r.jsx)(x.y4, {
             formField: e,
             autofocus: 0 === t,
             onChange: e => c(t, e)
           }, t);
         case o.rX.PARAGRAPH:
-          return (0, l.jsx)(m.zD, {
+          return (0, r.jsx)(m.zD, {
             formField: e,
             autofocus: 0 === t,
             onChange: e => c(t, e)
           }, t);
         case o.rX.MULTIPLE_CHOICE:
-          return (0, l.jsx)(d.MZ, {
+          return (0, r.jsx)(d.MZ, {
             formField: e,
             onChange: e => ((e, t) => {
               let {
-                value: l
+                value: r
               } = t, i = n[e];
-              r([...n.slice(0, e), j(v({}, i), {
-                response: l
+              l([...n.slice(0, e), p(v({}, i), {
+                response: r
               }), ...n.slice(e + 1)])
             })(t, e)
           }, t)
@@ -108,10 +108,10 @@ function b(e) {
   })
 }
 
-function p(e) {
+function b(e) {
   let t, {
       guildId: n,
-      formFields: r,
+      formFields: l,
       updateFormFields: s,
       disableVerification: o
     } = e,
@@ -119,10 +119,10 @@ function p(e) {
     m = (0, c.B)({
       guildId: n
     });
-  return (t = m === g.PvD.NONE ? null : m === g.PvD.VERY_HIGH ? f.A : u.G, null == d) ? null : (0, l.jsxs)(l.Fragment, {
-    children: [!o && null != t && (0, l.jsx)(t, {}), (0, l.jsx)(b, {
+  return (t = m === g.PvD.NONE ? null : m === g.PvD.VERY_HIGH ? f.A : u.G, null == d) ? null : (0, r.jsxs)(r.Fragment, {
+    children: [!o && null != t && (0, r.jsx)(t, {}), (0, r.jsx)(j, {
       guildId: n,
-      formFields: r,
+      formFields: l,
       updateFormFields: s
     })]
   })
@@ -136,18 +136,18 @@ function _(e) {
       disableVerification: d
     } = e,
     m = (0, i.bG)([a.default], () => a.default.getCurrentUser()),
-    x = (0, c.B)({
+    h = (0, c.B)({
       guildId: n
     }),
-    h = (null == m ? true : m.isPhoneVerified()) || (null == m ? true : m.isStaff()),
-    v = (null == m ? true : m.verified) || h,
-    j = false;
-  x === g.PvD.NONE ? (j = true, t = null) : x === g.PvD.VERY_HIGH ? (j = null != h && h, t = f.e) : (j = null != v && v, t = u.O);
-  let p = r.useRef(j);
-  return null == m ? null : (0, l.jsxs)(l.Fragment, {
-    children: [!d && !p.current && null != t && (0, l.jsx)(t, {
-      isUserVerified: j
-    }), (0, l.jsx)(b, {
+    x = (null == m ? true : m.isPhoneVerified()) || (null == m ? true : m.isStaff()),
+    v = (null == m ? true : m.verified) || x,
+    p = false;
+  h === g.PvD.NONE ? (p = true, t = null) : h === g.PvD.VERY_HIGH ? (p = null != x && x, t = f.e) : (p = null != v && v, t = u.O);
+  let b = l.useRef(p);
+  return null == m ? null : (0, r.jsxs)(r.Fragment, {
+    children: [!d && !b.current && null != t && (0, r.jsx)(t, {
+      isUserVerified: p
+    }), (0, r.jsx)(j, {
       guildId: n,
       formFields: s,
       updateFormFields: o

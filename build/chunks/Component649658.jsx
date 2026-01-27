@@ -82,11 +82,11 @@ function E(e) {
   let {
     readyState: t,
     placeholderImg: n,
-    placeholderStyle: o
-  } = e, u = t === l.Rv1.LOADING, [f] = i.useState(() => Date.now()), p = t === l.Rv1.READY && Date.now() - f < _, g = (0, s.pnh)(u && null != n, p ? m : h);
+    placeholderStyle: s
+  } = e, u = t === l.Rv1.LOADING, [f] = i.useState(() => Date.now()), p = t === l.Rv1.READY && Date.now() - f < _, g = (0, o.pnh)(u && null != n, p ? m : h);
   return (0, r.jsx)(r.Fragment, {
     children: g((e, t) => t && (0, r.jsx)(a.animated.img, {
-      style: d({}, o, e),
+      style: d({}, s, e),
       className: c.bc,
       src: n,
       alt: ""
@@ -102,7 +102,7 @@ function y(e) {
     placeholderVersion: d,
     placeholderStyle: f,
     children: p
-  } = e, _ = t === l.Rv1.LOADING, [h] = i.useState(_), [m, y] = i.useState(false), b = (0, o._)(u, d, h);
+  } = e, _ = t === l.Rv1.LOADING, [h] = i.useState(_), [m, y] = i.useState(false), b = (0, s._)(u, d, h);
   i.useEffect(() => {
     let e = setTimeout(() => {
       y(true)
@@ -111,7 +111,7 @@ function y(e) {
       clearTimeout(e)
     }
   }, [h]);
-  let O = (0, s.pnh)(_ && m, g);
+  let O = (0, o.pnh)(_ && m, g);
   return (0, r.jsxs)("div", {
     className: c.bX,
     style: {
@@ -124,8 +124,8 @@ function y(e) {
     }), O((e, t) => t && (0, r.jsx)(a.animated.div, {
       style: e,
       className: c.oM,
-      children: (0, r.jsx)(s.y$y, {
-        type: s.tVU.SPINNING_CIRCLE_SIMPLE,
+      children: (0, r.jsx)(o.y$y, {
+        type: o.tVU.SPINNING_CIRCLE_SIMPLE,
         className: c.Xd
       })
     }))]

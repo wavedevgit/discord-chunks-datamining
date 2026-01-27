@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk235986 = require("./235986.jsx"),
   Chunk634105 = require("./634105.js");
 
@@ -44,13 +44,13 @@ class h extends(r = Chunk64700.PureComponent) {
       children: n,
       iconSize: r,
       className: a,
-      iconClassName: s
+      iconClassName: o
     } = this.props;
     return (0, i.jsxs)(l.A, {
-      className: o()(c.N4, p[t], a),
+      className: s()(c.N4, p[t], a),
       align: l.A.Align.CENTER,
       children: [(0, i.jsx)(e, {
-        className: o()(c.Kk, _[r], s),
+        className: s()(c.Kk, _[r], o),
         color: "currentColor"
       }), (0, i.jsx)("div", {
         children: n

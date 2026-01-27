@@ -18,7 +18,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -31,14 +31,14 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   return {
     getLevelAndMarkUsed: () => (t.current = true, e),
     consumed: t,
     level: e
   }
 }
-let l = Chunk64700.createContext(o(2, {
+let l = Chunk64700.createContext(s(2, {
   current: false
 }));
 
@@ -47,12 +47,12 @@ function c(e) {
     component: t,
     children: n,
     forceLevel: a
-  } = e, s = i.useContext(l), c = null != a ? a : s.level, u = c;
-  (null != t || null == a && s.consumed.current) && u++;
+  } = e, o = i.useContext(l), c = null != a ? a : o.level, u = c;
+  (null != t || null == a && o.consumed.current) && u++;
   let d = i.useRef(false),
     f = i.useRef(false),
-    p = i.useMemo(() => o(c, d), [c]),
-    _ = i.useMemo(() => o(u, f), [u]);
+    p = i.useMemo(() => s(c, d), [c]),
+    _ = i.useMemo(() => s(u, f), [u]);
   return (0, r.jsxs)(r.Fragment, {
     children: [null != t ? (0, r.jsx)(l.Provider, {
       value: p,
@@ -67,7 +67,7 @@ function c(e) {
 function u(e) {
   let t = d(),
     n = "h".concat(Math.min(t, 6));
-  return (0, r.jsx)(n, s({}, t > 6 ? {
+  return (0, r.jsx)(n, o({}, t > 6 ? {
     "data-excessive-heading-level": t
   } : {}, e))
 }

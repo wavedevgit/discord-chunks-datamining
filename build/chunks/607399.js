@@ -7,11 +7,11 @@ require.d(exports, {
   KY: () => O,
   v1: () => y
 }), require("./896048.js");
-var r, i, a, s, o, l, c, u, d, f, p, Chunk214958 = require("./214958.js"),
+var r, i, a, o, s, l, c, u, d, f, p, Chunk214958 = require("./214958.js"),
   h = require.n(Chunk214958);
 let m = new Set(["iPad", "Kindle", "Kindle Fire", "Nook", "PlayBook"]),
   g = new Set(["Android", "iOS", "Windows Phone"]),
-  E = (null == (s = window) || null == (a = s.navigator) ? true : a.platform) === "MacIntel" && true !== (null == (l = window) || null == (o = l.navigator) ? true : o.standalone) && (null == (u = window) || null == (c = u.navigator) ? true : c.maxTouchPoints) > 1,
+  E = (null == (o = window) || null == (a = o.navigator) ? true : a.platform) === "MacIntel" && true !== (null == (l = window) || null == (s = l.navigator) ? true : s.standalone) && (null == (u = window) || null == (c = u.navigator) ? true : c.maxTouchPoints) > 1,
   y = m.has(null != (r = h().product) ? r : "") || E,
   b = !y && g.has(null != (i = null === h() || true === h() || null == (d = h().os) ? true : d.family) ? i : ""),
   O = (null === h() || true === h() || null == (f = h().os) ? true : f.family) === "iOS",

@@ -4,7 +4,7 @@
 require.d(exports, {
   $b: () => i,
   FT: () => a,
-  UN: () => s
+  UN: () => o
 }), require("./896048.js");
 var Chunk602034 = require("./602034.js");
 
@@ -14,17 +14,17 @@ function i(e, t) {
       let t = 0,
         a = null;
       for (let {
-          isIntersecting: s,
-          intersectionRatio: o,
+          isIntersecting: o,
+          intersectionRatio: s,
           target: l
         }
         of e) {
-        if (s && 1 === o) {
+        if (o && 1 === s) {
           i.disconnect();
           let e = l.getAttribute(r.eM);
           if (null != e) return n(e)
         }
-        o > t && (t = o, a = l.getAttribute(r.eM))
+        s > t && (t = s, a = l.getAttribute(r.eM))
       }
       i.disconnect(), n(a)
     }, {
@@ -39,13 +39,13 @@ function a(e, t) {
     let i = new IntersectionObserver(e => {
       let t = 0,
         a = null;
-      for (let s = e.length - 1; s >= 0; s--) {
+      for (let o = e.length - 1; o >= 0; o--) {
         let {
-          isIntersecting: o,
+          isIntersecting: s,
           intersectionRatio: l,
           target: c
-        } = e[s];
-        if (o && 1 === l) {
+        } = e[o];
+        if (s && 1 === l) {
           i.disconnect();
           let e = c.getAttribute(r.eM);
           if (null != e) return n(e)
@@ -60,7 +60,7 @@ function a(e, t) {
   })
 }
 
-function s(e, t) {
+function o(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : .5;
   return new Promise(r => {
     let i = new IntersectionObserver(e => {

@@ -33,8 +33,8 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  let n = new Audio((0, s.A)(e));
-  n.volume = (0, o.A)(t), n.play()
+  let n = new Audio((0, o.A)(e));
+  n.volume = (0, s.A)(t), n.play()
 }
 async function E() {
   if (null != window.navigator.mediaDevices) try {
@@ -42,18 +42,18 @@ async function E() {
     let t = await window.navigator.mediaDevices.enumerateDevices(),
       n = l.A.getOutputDevices(),
       r = i()(n).sortBy(e => e.index).findIndex(e => e.id === l.A.getOutputDeviceId()),
-      s = n[l.A.getOutputDeviceId()];
-    if (null == s) {
+      o = n[l.A.getOutputDeviceId()];
+    if (null == o) {
       h = f;
       return
     }
-    let o = t.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
-      c = o[r];
-    if (m(s.name, null != (e = null == c ? true : c.label) ? e : "")) {
+    let s = t.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
+      c = s[r];
+    if (m(o.name, null != (e = null == c ? true : c.label) ? e : "")) {
       h = c.deviceId;
       return
     }
-    if (c = i()(o).maxBy(e => (0, a.stringSimilarity)(e.label, s.name)), null == c || (0, a.stringSimilarity)(c.label, s.name) < p) {
+    if (c = i()(s).maxBy(e => (0, a.stringSimilarity)(e.label, o.name)), null == c || (0, a.stringSimilarity)(c.label, o.name) < p) {
       h = f;
       return
     }

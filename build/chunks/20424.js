@@ -18,7 +18,7 @@ function d(e) {
   let {
     displayProfile: t,
     location: n
-  } = e, s = (0, l.kt)({
+  } = e, o = (0, l.kt)({
     location: n
   }), d = r.useMemo(() => (null == t ? true : t.userId) != null ? [t.userId] : [], [t]), f = (0, c.gT)({
     gameIds: u.sQ,
@@ -31,12 +31,12 @@ function d(e) {
     guildIdsWithGameStores: u.tC
   }), h = r.useMemo(() => {
     if ((null == t ? true : t.widgets) == null) returnfalse;
-    let e = new Set(null == t ? true : t.widgets.map(e => e instanceof a.Yy ? e.games.map(e => e.applicationId) : e instanceof i.R ? e.applicationId : true).filter(o.Vq).flat());
+    let e = new Set(null == t ? true : t.widgets.map(e => e instanceof a.Yy ? e.games.map(e => e.applicationId) : e instanceof i.R ? e.applicationId : true).filter(s.Vq).flat());
     for (let t of u.sQ)
       if (e.has(t)) returntrue;
     returnfalse
   }, [null == t ? true : t.widgets]);
-  return (null == t ? true : t.application) == null && s && (f || p || _ || h)
+  return (null == t ? true : t.application) == null && o && (f || p || _ || h)
 }
 
 function f(e) {
@@ -45,7 +45,7 @@ function f(e) {
     location: n
   } = e;
   return d({
-    displayProfile: (0, s.Ay)(t),
+    displayProfile: (0, o.Ay)(t),
     location: n
   })
 }

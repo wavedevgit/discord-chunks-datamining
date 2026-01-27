@@ -7,25 +7,25 @@ require.d(exports, {
 var Chunk711371 = require("./711371.js");
 
 function i(e, t, n, i) {
-  var a, s;
-  let o = 0;
+  var a, o;
+  let s = 0;
   for (let a = 0; a < n.length; a++) {
-    let s = n[a];
-    if (null == s) continue;
-    let l = o + s.length;
+    let o = n[a];
+    if (null == o) continue;
+    let l = s + o.length;
     if (i <= l) {
       let n = r.PW.child(t, a),
-        s = r.VW.node(e, n)[0];
-      if (r.l5.isText(s)) return {
+        o = r.VW.node(e, n)[0];
+      if (r.l5.isText(o)) return {
         path: n,
-        offset: Math.min(Math.max(i - o, 0), s.text.length)
+        offset: Math.min(Math.max(i - s, 0), o.text.length)
       }
     }
-    o = l
+    s = l
   }
   let l = n.length - 1;
   return {
     path: r.PW.child(t, l),
-    offset: null != (a = null == (s = n[l]) ? true : s.length) ? a : 0
+    offset: null != (a = null == (o = n[l]) ? true : o.length) ? a : 0
   }
 }

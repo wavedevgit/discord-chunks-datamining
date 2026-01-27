@@ -29,15 +29,15 @@ function a() {
   let i = {},
     a = [];
   for (let e in t) n.hasOwnProperty(e) ? a.length > 0 && (i[e] = a, a = []) : a.push(e);
-  let s = {};
+  let o = {};
   for (let t in n) {
     if (i.hasOwnProperty(t))
       for (e = 0; e < i[t].length; e++) {
         let n = i[t][e];
-        s[i[t][e]] = r(n)
+        o[i[t][e]] = r(n)
       }
-    s[t] = r(t)
+    o[t] = r(t)
   }
-  for (e = 0; e < a.length; e++) s[a[e]] = r(a[e]);
-  return s
+  for (e = 0; e < a.length; e++) o[a[e]] = r(a[e]);
+  return o
 }

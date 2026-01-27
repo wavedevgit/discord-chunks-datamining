@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 964003, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 964003, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
 }), require("./228524.js");
@@ -19,20 +18,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk693591 = require("./693591.js"),
   Chunk847652 = require("./847652.js");
-let E = 1140,
-  y = e => {
+let h = e => {
     let {
       descriptionCta: t,
       onClick: n,
       debouncedOnClickAnalytics: i
-    } = e, a = () => {
-      i(), n()
-    };
+    } = e;
     return (0, r.jsx)("div", {
-      className: g.bentoBoxButton,
-      children: (0, r.jsx)(l.$nd, {
+      className: f.bentoBoxButton,
+      children: (0, r.jsx)(o.$nd, {
         variant: "secondary",
-        onClick: a,
+        onClick: () => {
+          i(), n()
+        },
         text: t
       })
     })
@@ -41,106 +39,106 @@ let E = 1140,
     let {
       name: t,
       title: n,
-      description: a,
+      description: l,
       descriptionCta: b,
-      previewImage: O,
-      videoUrl: v,
-      shouldLoadVideo: A,
-      index: I,
-      customVideoStyle: S,
+      previewImage: E,
+      videoUrl: x,
+      shouldLoadVideo: O,
+      index: C,
+      customVideoStyle: I,
       isReducedMotion: T,
-      onClick: C,
-      badgeText: N,
-      badgeVariant: w = "gradient",
-      size: R,
-      backgroundVideoUrl: P,
-      previewImageStyle: D = _.Tb.CONTAINED
-    } = e, x = (0, p.TM)(), L = i.useRef(null), j = i.useRef(0), M = (0, u.A)("(min-width: ".concat(E, "px)")), k = D === _.Tb.OVERLAY && (R !== _.A0.LARGE || !M), U = R === _.A0.LARGE && M && D === _.Tb.OVERLAY, G = null != P && M && R === _.A0.LARGE, V = i.useMemo(() => (0, o.debounce)(() => {
-      f.default.track(h.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
-        box_type: (0, o.snakeCase)(t)
+      onClick: S,
+      badgeText: j,
+      badgeVariant: v = "gradient",
+      size: N,
+      backgroundVideoUrl: y,
+      previewImageStyle: P = m.Tb.CONTAINED
+    } = e, R = (0, p.TM)(), D = i.useRef(null), w = i.useRef(0), L = (0, d.A)("(min-width: ".concat(1140, "px)")), M = P === m.Tb.OVERLAY && (N !== m.A0.LARGE || !L), U = N === m.A0.LARGE && L && P === m.Tb.OVERLAY, G = null != y && L && N === m.A0.LARGE, k = i.useMemo(() => (0, a.debounce)(() => {
+      _.default.track(g.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
+        box_type: (0, a.snakeCase)(t)
       })
-    }, 800), [t]), F = () => {
-      null == L.current || T || (L.current.currentTime = j.current, L.current.play())
-    }, B = () => {
-      null == L.current || T || (j.current = L.current.currentTime, L.current.pause())
-    }, H = R === _.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", Y = () => null == N ? null : "gradient" === w ? (0, r.jsx)("div", {
-      className: g.badgeContainer,
-      children: (0, r.jsx)("div", {
-        className: g.badge,
-        children: (0, r.jsx)(c.Heading, {
-          variant: "eyebrow",
-          color: "always-white",
-          children: N
-        })
-      })
-    }) : (0, r.jsx)("div", {
-      className: g.badgeContainer,
-      children: (0, r.jsx)(l.Exy, {
-        type: {
-          text: N
-        },
-        variant: w
-      })
-    }), W = () => (0, r.jsxs)("div", {
-      className: s()(g.textBox, g["".concat(R)], U && g.overlayTextBox),
+    }, 800), [t]), V = () => {
+      null == D.current || T || (D.current.currentTime = w.current, D.current.play())
+    }, H = () => {
+      null == D.current || T || (w.current = D.current.currentTime, D.current.pause())
+    }, B = N === m.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", F = () => (0, r.jsxs)("div", {
+      className: s()(f.textBox, f["".concat(N)], U && f.overlayTextBox),
       children: [(0, r.jsxs)("div", {
-        children: [Y(), (0, r.jsx)(c.Heading, {
-          variant: H,
+        children: [null == j ? null : "gradient" === v ? (0, r.jsx)("div", {
+          className: f.badgeContainer,
+          children: (0, r.jsx)("div", {
+            className: f.badge,
+            children: (0, r.jsx)(c.Heading, {
+              variant: "eyebrow",
+              color: "always-white",
+              children: j
+            })
+          })
+        }) : (0, r.jsx)("div", {
+          className: f.badgeContainer,
+          children: (0, r.jsx)(o.Exy, {
+            type: {
+              text: j
+            },
+            variant: v
+          })
+        }), (0, r.jsx)(c.Heading, {
+          variant: B,
           color: "text-strong",
-          className: g.header,
+          className: f.header,
           children: n
         })]
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-strong",
-        className: g.description,
-        children: a
-      }), null != b && null != C && (0, r.jsx)(y, {
+        className: f.description,
+        children: l
+      }), null != b && null != S && (0, r.jsx)(h, {
         descriptionCta: b,
-        onClick: C,
-        debouncedOnClickAnalytics: V
+        onClick: S,
+        debouncedOnClickAnalytics: k
       })]
-    }), K = () => (0, r.jsx)("div", {
-      className: s()(g.boxArtContainer, g["".concat(R)]),
-      children: (0, r.jsx)(d.A, {
+    }), Y = () => (0, r.jsx)("div", {
+      className: s()(f.boxArtContainer, f["".concat(N)]),
+      children: (0, r.jsx)(u.A, {
         playsInline: true,
-        preload: A ? "auto" : "none",
+        preload: O ? "auto" : "none",
         muted: true,
-        poster: O,
+        poster: E,
         loop: true,
-        className: s()(U ? g.overlayImage : g.boxVideo, {
-          [S]: null != S
+        className: s()(U ? f.overlayImage : f.boxVideo, {
+          [I]: null != I
         }),
-        ref: L,
+        ref: D,
         children: (0, r.jsx)("source", {
-          src: v,
-          type: x ? m.a.MP4 : m.a.WEBM
+          src: x,
+          type: R ? A.a.MP4 : A.a.WEBM
         })
-      }, v)
-    }), z = I % 2 != 0, q = () => z ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(W, {}), (0, r.jsx)(K, {})]
-    }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(K, {}), (0, r.jsx)(W, {})]
-    });
+      }, x)
+    }), W = C % 2 != 0;
     return (0, r.jsxs)(c.hLv, {
       id: t,
-      className: s()(g.backgroundColor, g.boxContainer, g["".concat(R)], g.gradientBackground, k && g.overlayImageMode, U && g.overlayMode),
-      onMouseEnter: F,
-      onFocus: F,
-      onBlur: B,
-      onMouseLeave: B,
+      className: s()(f.backgroundColor, f.boxContainer, f["".concat(N)], f.gradientBackground, M && f.overlayImageMode, U && f.overlayMode),
+      onMouseEnter: V,
+      onFocus: V,
+      onBlur: H,
+      onMouseLeave: H,
       color: "purple",
       children: [G && (0, r.jsx)("div", {
-        className: g.backgroundVideoContainer,
-        children: (0, r.jsx)(d.A, {
+        className: f.backgroundVideoContainer,
+        children: (0, r.jsx)(u.A, {
           muted: true,
           autoPlay: !T,
           playsInline: true,
           loop: true,
-          preload: A ? "auto" : "none",
-          className: g.backgroundVideo,
-          src: P
+          preload: O ? "auto" : "none",
+          className: f.backgroundVideo,
+          src: y
         })
-      }), (0, r.jsx)(q, {})]
+      }), (0, r.jsx)(() => W ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(F, {}), (0, r.jsx)(Y, {})]
+      }) : (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(Y, {}), (0, r.jsx)(F, {})]
+      }), {})]
     })
   }

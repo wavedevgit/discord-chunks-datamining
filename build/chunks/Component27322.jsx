@@ -39,32 +39,32 @@ let b = (0, Chunk353640.v)(e => ({
     } = (0, f.Ay)(d.A.CLOUD_PLAY_POPOVER), A = (0, u.A)({
       application: O,
       analyticsLocations: v
-    }), I = (0, h.JZ)(o.M.CLOUD_PLAY_NEW_BADGE), S = null != A && !I && n, {
+    }), I = (0, h.JZ)(s.M.CLOUD_PLAY_NEW_BADGE), S = null != A && !I && n, {
       activeEntryId: T,
       setActiveEntryId: C
-    } = b(), N = T === t.id, w = S && N ? [o.M.CLOUD_PLAY_POPOVER] : [], [R, P] = (0, m.kn)(w), D = R === o.M.CLOUD_PLAY_POPOVER;
+    } = b(), N = T === t.id, w = S && N ? [s.M.CLOUD_PLAY_POPOVER] : [], [R, P] = (0, m.kn)(w), D = R === s.M.CLOUD_PLAY_POPOVER;
     i.useEffect(() => {
       S && null === T && C(t.id)
     }, [T, S, t.id, C]);
-    let x = () => {
+    let L = () => {
       null == A || A()
     };
     i.useEffect(() => () => {
       D && (P(g.i.USER_DISMISS), C(null))
     }, [D, P, C]);
-    let [L, j] = i.useState(false);
+    let [x, M] = i.useState(false);
     i.useEffect(() => {
-      D && !L && j(true)
-    }, [D, L]), (0, p.A)({
-      name: s.ImpressionNames.CLOUD_PLAY_CTA,
-      type: s.ImpressionTypes.VIEW,
+      D && !x && M(true)
+    }, [D, x]), (0, p.A)({
+      name: o.ImpressionNames.CLOUD_PLAY_CTA,
+      type: o.ImpressionTypes.VIEW,
       properties: {
         location_stack: v
       }
     }, {
-      disableTrack: !L
-    }, [L]);
-    let M = () => {
+      disableTrack: !x
+    }, [x]);
+    let j = () => {
       P(g.i.USER_DISMISS), C(null)
     };
     return (0, r.jsx)(l.AM, {
@@ -84,9 +84,9 @@ let b = (0, Chunk353640.v)(e => ({
       actions: [{
         icon: c.hpF,
         text: E.intl.string(E.t["jaYS/h"]),
-        onClick: x
+        onClick: L
       }],
-      onRequestClose: M
+      onRequestClose: j
     })
   },
   v = e => {

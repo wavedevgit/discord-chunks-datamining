@@ -39,7 +39,7 @@ let d = {
     return e.isGuildStageVoice() ? t = c.Ou : e.isGuildVoice() && (t = c.EN), [i.kg(t, u.xB.CREATE_EVENTS), i.kg(t, u.xB.MANAGE_EVENTS)]
   },
   _ = e => {
-    let [t, n] = (0, l.fh)(e) ? [u.xB.CREATE_EVENTS, u.xB.MANAGE_EVENTS] : p(e), [i, c, _, h] = (0, a.yK)([s.A], () => [s.A.can(u.xB.CREATE_GUILD_EXPRESSIONS, e), s.A.can(u.xB.MANAGE_GUILD_EXPRESSIONS, e), s.A.can(t, e), s.A.can(n, e)]), m = (0, a.bG)([o.default], () => o.default.getCurrentUser()), g = r.useCallback(e => f(e, m, c, i), [i, c, m]), E = r.useCallback(e => f(e, m, h, _), [h, _, m]);
+    let [t, n] = (0, l.fh)(e) ? [u.xB.CREATE_EVENTS, u.xB.MANAGE_EVENTS] : p(e), [i, c, _, h] = (0, a.yK)([o.A], () => [o.A.can(u.xB.CREATE_GUILD_EXPRESSIONS, e), o.A.can(u.xB.MANAGE_GUILD_EXPRESSIONS, e), o.A.can(t, e), o.A.can(n, e)]), m = (0, a.bG)([s.default], () => s.default.getCurrentUser()), g = r.useCallback(e => f(e, m, c, i), [i, c, m]), E = r.useCallback(e => f(e, m, h, _), [h, _, m]);
     return null == e ? d : {
       canCreateExpressions: i,
       canCreateGuildEvent: _,
@@ -50,8 +50,8 @@ let d = {
     }
   },
   h = function(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s.A,
-      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.default,
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : o.A,
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.default,
       [r, i] = (0, l.fh)(e) ? [u.xB.CREATE_EVENTS, u.xB.MANAGE_EVENTS] : p(e),
       a = t.can(u.xB.CREATE_GUILD_EXPRESSIONS, e),
       c = t.can(u.xB.MANAGE_GUILD_EXPRESSIONS, e),

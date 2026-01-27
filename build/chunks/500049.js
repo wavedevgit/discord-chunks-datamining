@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   F5: () => l,
-  Se: () => o,
+  Se: () => s,
   W8: () => a,
   s4: () => r,
-  wg: () => s,
+  wg: () => o,
   yK: () => i
 });
 var r = function(e) {
@@ -26,10 +26,10 @@ let i = {
     HOME: "home",
     APP_DETAIL: "app_detail"
   };
-var s = function(e) {
+var o = function(e) {
     return e.HOME_EMPTY = "home_empty", e.SEARCH_EMPTY = "search_empty", e.HOME_NO_PERMISSIONS = "home_no_permissions", e.COMMAND_NO_PERMISSIONS = "command_no_permissions", e.COMMAND_NOT_FOUND = "command_not_found", e
   }({}),
-  o = function(e) {
+  s = function(e) {
     return e[e.DISMISSED = 0] = "DISMISSED", e[e.COMMAND = 1] = "COMMAND", e[e.ACTIVITY = 2] = "ACTIVITY", e
   }({}),
   l = function(e) {

@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   Tk: () => l,
-  dH: () => o,
+  dH: () => s,
   ho: () => c,
-  o7: () => s
+  o7: () => o
 });
 var Chunk575593 = require("./575593.js"),
   Chunk623373 = require("./623373.js"),
   Chunk985018 = require("./985018.jsx");
-let s = e => {
+let o = e => {
     if (null == e) return "";
     let t = a.intl.string(a.t.z7y5vF);
     return "baseVariantName" in e && null != e.baseVariantName && e.variantLabel !== t ? a.intl.formatToPlainString(a.t.BZN5k2, {
@@ -18,7 +18,7 @@ let s = e => {
       variantLabel: e.variantLabel
     }) : e.name
   },
-  o = e => null == e ? "" : "baseVariantName" in e && null != e.baseVariantName ? e.baseVariantName : null != e.variants && e.variants.length > 0 ? e.variants[0].baseVariantName : e.name,
+  s = e => null == e ? "" : "baseVariantName" in e && null != e.baseVariantName ? e.baseVariantName : null != e.variants && e.variants.length > 0 ? e.variants[0].baseVariantName : e.name,
   l = e => {
     if (null == e) return "";
     let t = a.intl.string(a.t.z7y5vF);
@@ -28,7 +28,7 @@ let s = e => {
     }) : e.name
   },
   c = e => {
-    let t = o(e);
+    let t = s(e);
     switch ((0, i.YW)(e)) {
       case r.R.AVATAR_DECORATION:
         return a.intl.formatToPlainString(a.t.lvBzLi, {

@@ -55,13 +55,13 @@ let _ = e => {
       variant: "heading-xl/semibold",
       className: d.Us,
       tag: "div",
-      children: (0, s.$g)(g.price, g.currency)
+      children: (0, o.$g)(g.price, g.currency)
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
       color: "interactive-text-default",
       className: d.gV,
       children: u.intl.format(u.t.isLGyX, {
-        period: (0, o.cV)({
+        period: (0, s.cV)({
           interval: g.interval,
           interval_count: g.interval_count
         })

@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Ad: () => i,
-  BT: () => o,
+  BT: () => s,
   CK: () => l,
-  Yd: () => s,
+  Yd: () => o,
   xs: () => a
 });
 var Chunk73153 = require("./73153.js");
@@ -23,14 +23,14 @@ function a(e) {
   })
 }
 
-function s(e) {
+function o(e) {
   r.h.dispatch({
     type: "GIFT_INTENT_FLOW_PURCHASED_GIFT",
     recipientUserId: e
   })
 }
 
-function o() {
+function s() {
   r.h.dispatch({
     type: "GIFT_UNREAD_NOTIFICATION_DISMISS"
   })

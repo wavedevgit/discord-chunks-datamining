@@ -75,18 +75,18 @@ let N = {
   R = [],
   P = "0",
   D = new Map,
-  x = new Map,
   L = new Map,
-  j = new Map,
-  M = new Map;
+  x = new Map,
+  M = new Map,
+  j = new Map;
 
 function k(e, t) {
   return "".concat(t, ":").concat(e)
 }
 let U = new Map,
   G = new Set,
-  V = new Map,
   F = new Map,
+  V = new Map,
   B = new Map,
   H = new Map,
   Y = new Map,
@@ -95,14 +95,14 @@ let U = new Map,
   z = new Map,
   q = Chunk5867.Gd.DISCONNECTED,
   Z = Chunk5867.E8.RESIZABLE,
-  X = Chunk360469.M1.NORMAL;
+  Q = Chunk360469.M1.NORMAL;
 
-function Q(e) {
+function X(e) {
   return null != e ? e : P
 }
 
 function J(e) {
-  var t, n, r, i, a, s, o, l;
+  var t, n, r, i, a, o, s, l;
   let {
     location: u,
     applicationId: d,
@@ -113,18 +113,18 @@ function J(e) {
   } = e, y = (0, m.Ay)(d);
   if (null == y) return;
   let b = (0, E.H)(u),
-    O = null != b && null != (t = L.get(b)) ? t : w,
+    O = null != b && null != (t = x.get(b)) ? t : w,
     v = null != O && 0 === O.length,
-    A = null != (n = M.get(u.id)) ? n : w,
+    A = null != (n = j.get(u.id)) ? n : w,
     I = A.find(e => e.applicationId === d),
     T = _.map(e => e.userId),
     N = c.default.getId(),
     R = T.some(e => e === N),
     P = null == (a = _.find(e => e.userId === N)) ? true : a.sessionId,
-    j = _.some(e => (0, g.S)(e)),
+    M = _.some(e => (0, g.S)(e)),
     G = D.get(d),
-    V = U.get(k(null != b ? b : null, d)),
-    F = null == V ? true : V.launchParams,
+    F = U.get(k(null != b ? b : null, d)),
+    V = null == F ? true : F.launchParams,
     B = {
       applicationId: d,
       location: u,
@@ -133,14 +133,14 @@ function J(e) {
       url: y,
       userIds: new Set(T),
       participants: _,
-      referrerId: null != (r = null == G ? true : G.referrerId) ? r : null == F ? true : F.referrerId,
-      customId: null != (i = null == G ? true : G.customId) ? i : null == F ? true : F.customId,
+      referrerId: null != (r = null == G ? true : G.referrerId) ? r : null == V ? true : V.referrerId,
+      customId: null != (i = null == G ? true : G.customId) ? i : null == V ? true : V.customId,
       proxyTicket: h
     };
   R && null != G && D.set(G.applicationId, C(S({}, G, B), {
-    proxyTicket: null != (s = B.proxyTicket) ? s : G.proxyTicket
+    proxyTicket: null != (o = B.proxyTicket) ? o : G.proxyTicket
   }));
-  let H = !j;
+  let H = !M;
   null != G && u.id === G.location.id && d === G.applicationId && (!R && Array.from(G.userIds).some(e => e === N) || H) ? ee(G) : R && (null == G || G.applicationId !== d || G.location.id !== u.id) && (P === c.default.getSessionId() && ea({
     applicationId: d,
     launchId: f,
@@ -151,18 +151,18 @@ function J(e) {
     isStart: null == I,
     referrerId: B.referrerId,
     customId: B.customId,
-    inviterUserId: null == V ? true : V.inviterUserId,
+    inviterUserId: null == F ? true : F.inviterUserId,
     proxyTicket: B.proxyTicket
   }), eO({
     channelId: null != b ? b : null,
     applicationId: d
   }));
   let Y = A.filter(e => e.applicationId !== d);
-  if (T.length > 0 && Y.push(B), M.set(u.id, Y), null != b) {
-    let e = (null != (o = L.get(b)) ? o : []).filter(e => e.applicationId !== d),
-      t = Q((0, E.D)(u)),
-      n = (null != (l = x.get(t)) ? l : []).filter(e => e.applicationId !== d || e.location.id !== u.id);
-    T.length > 0 && (e.push(B), n.push(B)), L.set(b, e), x.set(t, n)
+  if (T.length > 0 && Y.push(B), j.set(u.id, Y), null != b) {
+    let e = (null != (s = x.get(b)) ? s : []).filter(e => e.applicationId !== d),
+      t = X((0, E.D)(u)),
+      n = (null != (l = L.get(t)) ? l : []).filter(e => e.applicationId !== d || e.location.id !== u.id);
+    T.length > 0 && (e.push(B), n.push(B)), x.set(b, e), L.set(t, n)
   }
 }
 
@@ -198,7 +198,7 @@ function et(e) {
   let {
     guilds: t
   } = e;
-  L.clear(), x.clear(), M.clear(), j.clear(), t.forEach(e => $(e));
+  x.clear(), L.clear(), j.clear(), M.clear(), t.forEach(e => $(e));
   let n = c.default.getId();
   for (let e of Array.from(D.values())) eR.getEmbeddedActivitiesForLocation(e.location).some(t => t.applicationId === e.applicationId && t.launchId === e.launchId && t.userIds.has(n)) || ee(e)
 }
@@ -214,13 +214,13 @@ function er(e) {
   var t, n;
   let {
     channel: r
-  } = e, i = null != (t = L.get(r.id)) ? t : [];
-  L.set(r.id, []);
-  let a = Q(r.guild_id),
-    s = (null != (n = x.get(a)) ? n : []).filter(e => (0, E.H)(e.location) !== r.id);
-  x.set(a, s), i.forEach(e => {
-    M.delete(e.location.id)
-  }), j.set(r.id, [])
+  } = e, i = null != (t = x.get(r.id)) ? t : [];
+  x.set(r.id, []);
+  let a = X(r.guild_id),
+    o = (null != (n = L.get(a)) ? n : []).filter(e => (0, E.H)(e.location) !== r.id);
+  L.set(a, o), i.forEach(e => {
+    j.delete(e.location.id)
+  }), M.set(r.id, [])
 }
 
 function ei(e) {
@@ -230,7 +230,7 @@ function ei(e) {
     compositeInstanceId: r,
     location: i,
     participants: a
-  } = e, s = (0, E.H)(i), o = U.get(k(null != s ? s : null, t));
+  } = e, o = (0, E.H)(i), s = U.get(k(null != o ? o : null, t));
   J({
     location: i,
     applicationId: t,
@@ -241,7 +241,7 @@ function ei(e) {
       sessionId: e.session_id,
       nonce: e.nonce
     })),
-    proxyTicket: null == o ? true : o.proxyTicket
+    proxyTicket: null == s ? true : s.proxyTicket
   })
 }
 
@@ -250,7 +250,7 @@ function ea(e) {
   let {
     applicationId: i,
     launchId: a,
-    compositeInstanceId: o,
+    compositeInstanceId: s,
     location: l,
     participants: _,
     isFirstActivityInChannel: g,
@@ -266,46 +266,46 @@ function ea(e) {
     P = null == R ? true : R.getGuildId();
   if (null == f.default.getCurrentUser() || null == P && !(null != (t = null == R ? true : R.isPrivate()) && t)) returnfalse;
   r = l;
-  let x = {
+  let L = {
     applicationId: i,
     url: C,
     userIds: new Set(_.map(e => e.userId)),
     participants: _,
     connectedSince: Date.now(),
     launchId: a,
-    compositeInstanceId: o,
+    compositeInstanceId: s,
     location: l,
     referrerId: O,
     customId: I,
     proxyTicket: T
   };
-  D.set(i, x), p._.dispatch(A.jej.OPEN_EMBEDDED_ACTIVITY, {
+  D.set(i, L), p._.dispatch(A.jej.OPEN_EMBEDDED_ACTIVITY, {
     location: l,
     applicationId: i,
     isFirstActivityInChannel: g,
     isStart: y,
     participants: _,
-    embeddedActivity: x,
+    embeddedActivity: L,
     inviterUserId: S
-  }), (0, h.f)() ? (q = v.Gd.ACTIVITY_POPOUT_WINDOW, s.h.wait(() => {
-    s.h.dispatch({
+  }), (0, h.f)() ? (q = v.Gd.ACTIVITY_POPOUT_WINDOW, o.h.wait(() => {
+    o.h.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"
     })
   })) : q = w !== d.A.getChannelId() || (0, b.A)(w) ? v.Gd.PIP : v.Gd.PANEL, z.set(eC(l.id, i), Date.now())
 }
 
-function es(e) {
+function eo(e) {
   let {
     applicationId: t
   } = e, n = D.get(t);
   D.delete(t), (null == n ? true : n.location.id) === (null == r ? true : r.id) && (r = true)
 }
 
-function eo(e) {
+function es(e) {
   let {
     layout: t
   } = e;
-  X = t
+  Q = t
 }
 
 function el(e) {
@@ -332,8 +332,8 @@ function ec(e) {
 function eu(e) {
   let {
     guildId: t
-  } = e, n = Q(t), r = F.get(n);
-  F.set(n, {
+  } = e, n = X(t), r = V.get(n);
+  V.set(n, {
     isFetching: true,
     lastFetchTimestampMs: null == r ? true : r.lastFetchTimestampMs
   }), N.lastCheckedForBadgeableActivities = new Date(Date.now()).toISOString()
@@ -342,8 +342,8 @@ function eu(e) {
 function ed(e) {
   let {
     guildId: t
-  } = e, n = Q(t), r = F.get(n);
-  F.set(n, {
+  } = e, n = X(t), r = V.get(n);
+  V.set(n, {
     isFetching: false,
     lastFetchTimestampMs: null == r ? true : r.lastFetchTimestampMs
   })
@@ -360,11 +360,11 @@ function ef(e) {
         fromDate: i.label_from,
         untilDate: i.label_until
       },
-      s = new Date(i.label_from).getTime(),
+      o = new Date(i.label_from).getTime(),
       l = new Date(i.label_until).getTime();
-    return s > n || l < n || Object.values(o.YI).filter(e => !i.omit_badge_from_surfaces.includes(e)).forEach(t => {
+    return o > n || l < n || Object.values(s.YI).filter(e => !i.omit_badge_from_surfaces.includes(e)).forEach(t => {
       let n = e[t];
-      (null == n || new Date(n.fromDate).getTime() < s) && (e[t] = a)
+      (null == n || new Date(n.fromDate).getTime() < o) && (e[t] = a)
     }), e
   }, {});
   N.dateRangesForSurfaces = i
@@ -374,13 +374,13 @@ function ep(e) {
   let {
     guildId: t,
     activities: n
-  } = e, r = Q(t);
-  V.set(r, n);
+  } = e, r = X(t);
+  F.set(r, n);
   let i = Date.now();
   ef({
     activities: n,
     now: i
-  }), F.set(r, {
+  }), V.set(r, {
     isFetching: false,
     lastFetchTimestampMs: i
   })
@@ -393,12 +393,12 @@ function e_(e) {
     commandOrigin: r,
     launchParams: i,
     channelId: a,
-    inviterUserId: s
+    inviterUserId: o
   } = e;
   U.set(k(a, t), {
     isLaunching: true,
     componentId: n,
-    inviterUserId: s,
+    inviterUserId: o,
     launchParams: i
   }), Z = r === l.iw.APP_DMS_ENTRY_POINT_COMMAND_BUTTON ? v.E8.NO_CHAT : v.E8.RESIZABLE
 }
@@ -546,22 +546,22 @@ class ew extends(i = Chunk311907.Ay.PersistedStore) {
   }
   getEmbeddedActivitiesForGuild(e) {
     var t;
-    return null != (t = x.get(e)) ? t : w
+    return null != (t = L.get(e)) ? t : w
   }
   getEmbeddedActivitiesForChannel(e) {
     var t;
-    return null != (t = L.get(e)) ? t : w
+    return null != (t = x.get(e)) ? t : w
   }
   getEmbeddedActivitiesForLocation(e) {
     var t;
-    return null != (t = M.get(e.id)) ? t : w
+    return null != (t = j.get(e.id)) ? t : w
   }
   getEmbeddedActivitiesForStartingChannel(e) {
     var t;
-    return null != (t = j.get(e)) ? t : w
+    return null != (t = M.get(e)) ? t : w
   }
   getEmbeddedActivitiesByChannel() {
-    return L
+    return x
   }
   getEmbeddedActivityDurationMs(e, t) {
     let n = z.get(eC(e, t));
@@ -572,17 +572,17 @@ class ew extends(i = Chunk311907.Ay.PersistedStore) {
   }
   getShelfActivities(e) {
     var t;
-    let n = Q(e);
-    return null != (t = V.get(n)) ? t : R
+    let n = X(e);
+    return null != (t = F.get(n)) ? t : R
   }
   getShelfFetchStatus(e) {
-    let t = Q(e);
-    return F.get(t)
+    let t = X(e);
+    return V.get(t)
   }
   shouldFetchShelf(e) {
     var t, n;
-    let r = Q(e),
-      i = null != (t = F.get(r)) ? t : {
+    let r = X(e),
+      i = null != (t = V.get(r)) ? t : {
         isFetching: false
       },
       a = Date.now() - (null != (n = null == i ? true : i.lastFetchTimestampMs) ? n : 0) > K;
@@ -625,7 +625,7 @@ class ew extends(i = Chunk311907.Ay.PersistedStore) {
   getEmbeddedActivityForUserId(e, t) {
     let n;
     if (true !== t) {
-      l: for (let [r, i] of M)
+      l: for (let [r, i] of j)
         for (let r of i)
           if (r.applicationId === t && r.userIds.has(e)) {
             n = r;
@@ -643,7 +643,7 @@ class ew extends(i = Chunk311907.Ay.PersistedStore) {
     return U
   }
   getActivityPopoutWindowLayout() {
-    return X
+    return Q
   }
 }
 I(ew, "displayName", "EmbeddedActivitiesStore"), I(ew, "persistKey", "EmbeddedActivities"), I(ew, "migrations", [e => C(S({}, e), {
@@ -658,7 +658,7 @@ I(ew, "displayName", "EmbeddedActivitiesStore"), I(ew, "persistKey", "EmbeddedAc
   return C(S({}, e), {
     everLaunchedActivities: n
   })
-}, e => (delete e.usersHavePlayedByApp, S({}, e)), e => (e.surfacesToShowNewActivityIndicator = new Set, e.shouldShowNewActivityIndicator && e.surfacesToShowNewActivityIndicator.add(o.YI.VOICE_LAUNCHER), delete e.shouldShowNewActivityIndicator, S({}, e)), e => C(S({}, e), {
+}, e => (delete e.usersHavePlayedByApp, S({}, e)), e => (e.surfacesToShowNewActivityIndicator = new Set, e.shouldShowNewActivityIndicator && e.surfacesToShowNewActivityIndicator.add(s.YI.VOICE_LAUNCHER), delete e.shouldShowNewActivityIndicator, S({}, e)), e => C(S({}, e), {
   lastCheckedForBadgeableActivities: null
 }), e => (delete e.surfacesToShowNewActivityIndicator, C(S({}, e), {
   dateRangesForSurfaces: {}
@@ -675,8 +675,8 @@ let eR = new ew(Chunk73153.h, {
     EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: eE,
     EMBEDDED_ACTIVITY_LAUNCH_FAIL: ey,
     EMBEDDED_ACTIVITY_LAUNCH_CANCEL: eb,
-    EMBEDDED_ACTIVITY_CLOSE: es,
-    EMBEDDED_ACTIVITY_UPDATE_POPOUT_WINDOW_LAYOUT: eo,
+    EMBEDDED_ACTIVITY_CLOSE: eo,
+    EMBEDDED_ACTIVITY_UPDATE_POPOUT_WINDOW_LAYOUT: es,
     EMBEDDED_ACTIVITY_UPDATE_V2: ei,
     LOCAL_ACTIVITY_UPDATE: el,
     EMBEDDED_ACTIVITY_SET_CONFIG: ec,

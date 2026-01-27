@@ -11,17 +11,17 @@ function a(e = {}) {
   var t;
   let {
     isReadOnly: n
-  } = e, [s, o] = (0, r.P)(e.isSelected, e.defaultSelected || false, e.onChange), [l] = (0, i.useState)(s);
+  } = e, [o, s] = (0, r.P)(e.isSelected, e.defaultSelected || false, e.onChange), [l] = (0, i.useState)(o);
 
   function c(e) {
-    n || o(e)
+    n || s(e)
   }
 
   function u() {
-    n || o(!s)
+    n || s(!o)
   }
   return {
-    isSelected: s,
+    isSelected: o,
     defaultSelected: null != (t = e.defaultSelected) ? t : l,
     setSelected: c,
     toggle: u

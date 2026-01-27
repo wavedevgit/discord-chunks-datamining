@@ -15,7 +15,7 @@ function c(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
       audioRef: n
-    } = r.useContext(o.A),
+    } = r.useContext(s.A),
     c = r.useRef(null),
     [u, d] = r.useState(() => {
       var e;
@@ -35,7 +35,7 @@ function c(e) {
       return
     }
     if (null != c.current && c.current.src === e) return;
-    let t = new(await (0, s.A)(e));
+    let t = new(await (0, o.A)(e));
     t.src = e, c.current = t
   }, [c, e]);
   return {
@@ -44,13 +44,13 @@ function c(e) {
       var e, r;
       let {
         volume: i,
-        outputChannel: s = l.a.DEFAULT
+        outputChannel: o = l.a.DEFAULT
       } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
       f(), null == (e = n.current) || e.pause();
       let {
-        current: o
+        current: s
       } = c;
-      return null != o && (n.current = o, o.currentTime = 0, o.volume = null != i ? i : 1, o.dataset.soundId = t.soundId, s === l.a.VOICE && (null == (r = o.setSinkId) || r.call(o, a.voiceSinkId)), o.play(), o.onplay = () => d(true), o.onpause = () => d(false), o.onended = () => d(false), true)
+      return null != s && (n.current = s, s.currentTime = 0, s.volume = null != i ? i : 1, s.dataset.soundId = t.soundId, o === l.a.VOICE && (null == (r = s.setSinkId) || r.call(s, a.voiceSinkId)), s.play(), s.onplay = () => d(true), s.onpause = () => d(false), s.onended = () => d(false), true)
     }, [n, t.soundId, f]),
     stopSound: r.useCallback(() => {
       let {

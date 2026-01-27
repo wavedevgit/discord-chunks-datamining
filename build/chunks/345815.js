@@ -11,21 +11,21 @@ var Chunk310784 = require("./310784.js"),
   a = function(e) {
     return e.THEME_BASE_MIX_AMOUNT = "--custom-theme-base-color-amount", e.THEME_TEXT_MIX_AMOUNT = "--custom-theme-text-color-amount", e.THEME_BASE_COLOR = "--custom-theme-base-color", e.THEME_TEXT_COLOR = "--custom-theme-text-color", e.THEME_BASE_COLOR_HSL = "--custom-theme-base-color-hsl", e.LIGHT_THEME_BASE_COLOR = "--custom-theme-base-color-light", e.LIGHT_THEME_TEXT_COLOR = "--custom-theme-text-color-light", e.LIGHT_THEME_BASE_COLOR_HSL = "--custom-theme-base-color-light-hsl", e.DARK_THEME_BASE_COLOR = "--custom-theme-base-color-dark", e.DARK_THEME_TEXT_COLOR = "--custom-theme-text-color-dark", e.DARK_THEME_BASE_COLOR_HSL = "--custom-theme-base-color-dark-hsl", e
   }({});
-let s = 50,
-  o = 38;
+let o = 50,
+  s = 38;
 
 function l(e) {
   let {
     primaryColor: t,
     secondaryColor: n,
     isDarkTheme: r
-  } = e, a = i()(t), s = i()(n), [o, l] = a.luminance() > s.luminance() ? [a, s] : [s, a], c = l.get("hsl.h");
-  (0 === c || Number.isNaN(c)) && (l = o);
-  let u = r ? o.set("hsl.s", 1) : l.set("hsl.s", 1),
+  } = e, a = i()(t), o = i()(n), [s, l] = a.luminance() > o.luminance() ? [a, o] : [o, a], c = l.get("hsl.h");
+  (0 === c || Number.isNaN(c)) && (l = s);
+  let u = r ? s.set("hsl.s", 1) : l.set("hsl.s", 1),
     d = u.get("hsl.h"),
     f = d >= 200 && d <= 300 ? r ? .8 : .25 : r ? .95 : .15;
   return u = u.set("hsl.l", f), {
-    base: r ? l.set("hsl.s", 1).set("hsl.l", .05) : o.set("hsl.s", 1).set("hsl.l", .9),
+    base: r ? l.set("hsl.s", 1).set("hsl.l", .05) : s.set("hsl.s", 1).set("hsl.l", .9),
     text: u
   }
 }
@@ -35,8 +35,8 @@ function c(e) {
     enabled: t,
     primaryColor: n,
     secondaryColor: r,
-    baseMixAmount: i = s,
-    textMixAmount: a = o
+    baseMixAmount: i = o,
+    textMixAmount: a = s
   } = e, {
     base: c,
     text: d

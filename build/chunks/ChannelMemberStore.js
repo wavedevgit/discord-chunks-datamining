@@ -2,7 +2,7 @@
 /** chunk id: 963307, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => X,
+  Ay: () => Q,
   QP: () => w,
   S9: () => P,
   sN: () => R
@@ -10,7 +10,7 @@ require.d(exports, {
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
   Chunk181370 = require("./181370.js"),
-  o = require.n(Chunk181370),
+  s = require.n(Chunk181370),
   Chunk136722 = require("./136722.js"),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -99,20 +99,20 @@ function D(e, t, n, r) {
   }
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   let r = n === _.default.getId(),
     i = b.A.isMobileOnline(n),
     a = b.A.isVROnline(n),
-    s = r ? O.A.getStatus() : b.A.getStatus(n, e),
-    o = r ? O.A.getActivities() : b.A.getActivities(n, e),
+    o = r ? O.A.getStatus() : b.A.getStatus(n, e),
+    s = r ? O.A.getActivities() : b.A.getActivities(n, e),
     l = p.A.getStreamForUser(n, e),
     c = v.default.getUser(n);
   return null == c ? null : N(T({
     type: "MEMBER"
   }, g.Ay.getMember(e, n)), {
     user: c,
-    status: s,
-    activities: o,
+    status: o,
+    activities: s,
     applicationStream: l,
     isOwner: t === n,
     isMobileOnline: i,
@@ -120,13 +120,13 @@ function x(e, t, n) {
   })
 }
 
-function L(e) {
+function x(e) {
   let t = h.A.getChannel(e);
-  return null == t ? w : null == t.memberListId ? j(t) : t.memberListId
+  return null == t ? w : null == t.memberListId ? M(t) : t.memberListId
 }
 
-function j(e) {
-  return f.Ib(A.xBc.VIEW_CHANNEL, e) ? w : o().v3(a()(e.permissionOverwrites).reduce((e, t) => {
+function M(e) {
+  return f.Ib(A.xBc.VIEW_CHANNEL, e) ? w : s().v3(a()(e.permissionOverwrites).reduce((e, t) => {
     let {
       id: n,
       allow: r,
@@ -135,7 +135,7 @@ function j(e) {
     return l.zy(r, A.xBc.VIEW_CHANNEL) ? e.push("allow:".concat(n)) : l.zy(i, A.xBc.VIEW_CHANNEL) && e.push("deny:".concat(n)), e
   }, []).sort().join(",")).toString()
 }
-class M {
+class j {
   updateOwnerId() {
     let e = y.A.getGuild(this.guildId);
     if (null == e) returnfalse;
@@ -171,7 +171,7 @@ class M {
     } = t;
     if (null != n) this.rows.splice(e, 0, D(this.guildId, n.id, n.count));
     else if (null != r) {
-      let t = x(this.guildId, this.ownerId, r.user.id);
+      let t = L(this.guildId, this.ownerId, r.user.id);
       if (null == t) return;
       this.rows.splice(e, 0, t), this.members[r.user.id] = t
     }
@@ -184,7 +184,7 @@ class M {
     } = t, i = this.rows[e];
     if (null != i && "MEMBER" === i.type && delete this.members[i.user.id], null != n) this.rows[e] = D(this.guildId, n.id, n.count);
     else if (null != r) {
-      let t = x(this.guildId, this.ownerId, r.user.id);
+      let t = L(this.guildId, this.ownerId, r.user.id);
       if (null == t) return;
       this.rows[e] = t, this.members[r.user.id] = t
     }
@@ -196,7 +196,7 @@ class M {
   }
   rebuildMember(e) {
     let t = this.members[e];
-    null != t && (Object.assign(t, x(this.guildId, this.ownerId, e)), this.version++)
+    null != t && (Object.assign(t, L(this.guildId, this.ownerId, e)), this.version++)
   }
   rebuildMembers() {
     let e = Object.keys(this.members);
@@ -219,7 +219,7 @@ class k {
     let n = this._guildLists[e];
     null == n && (n = this._guildLists[e] = {});
     let r = n[t];
-    return null == r && ((r = new M(e, t)).setGroups([{
+    return null == r && ((r = new j(e, t)).setGroups([{
       id: A.clD.UNKNOWN,
       count: 0
     }]), n[t] = r), r
@@ -267,11 +267,11 @@ function G(e) {
   }), t.setGroups(e.groups)
 }
 
-function V() {
+function F() {
   U.reset()
 }
 
-function F(e) {
+function V(e) {
   let {
     guild: t
   } = e;
@@ -327,7 +327,7 @@ class Z extends(r = Chunk311907.Ay.Store) {
     this.waitFor(v.default, y.A, E.A, h.A, g.Ay, b.A, O.A, _.default, m.A, p.A, d.A), this.syncWith([O.A], z), this.syncWith([p.A], K)
   }
   getProps(e, t) {
-    let n = U.get(e, L(t));
+    let n = U.get(e, x(t));
     return {
       listId: "".concat(n.guildId, ":").concat(n.listId),
       groups: n.groups,
@@ -336,15 +336,15 @@ class Z extends(r = Chunk311907.Ay.Store) {
     }
   }
   getRows(e, t) {
-    return U.get(e, L(t)).rows
+    return U.get(e, x(t)).rows
   }
 }
 S(Z, "displayName", "ChannelMemberStore");
-let X = new Z(Chunk73153.h, {
-  CONNECTION_OPEN: V,
-  OVERLAY_INITIALIZE: V,
+let Q = new Z(Chunk73153.h, {
+  CONNECTION_OPEN: F,
+  OVERLAY_INITIALIZE: F,
   GUILD_MEMBER_LIST_UPDATE: G,
-  GUILD_UPDATE: F,
+  GUILD_UPDATE: V,
   GUILD_DELETE: B,
   GUILD_ROLE_UPDATE: H,
   GUILD_MEMBER_UPDATE: Y,

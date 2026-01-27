@@ -8,12 +8,12 @@ var Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
   a = require.n(Chunk284009),
   Chunk964486 = require("./964486.js");
-let o = 1e3 / 24,
+let s = 1e3 / 24,
   l = 3,
   c = 3e3,
   u = function(e) {
     let {
-      minInterval: t = o,
+      minInterval: t = s,
       allowableMinInterval: n,
       droppedFramesCallbackThreshold: i,
       droppedFramesCallback: u,
@@ -32,7 +32,7 @@ let o = 1e3 / 24,
     }, [O]);
     return r.useEffect(() => {
       f.current = t
-    }, [t]), (0, s.Ay)(() => (p.current = requestAnimationFrame(O), () => b())), {
+    }, [t]), (0, o.Ay)(() => (p.current = requestAnimationFrame(O), () => b())), {
       stop: b,
       reset: v,
       ticking: m

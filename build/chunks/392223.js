@@ -102,22 +102,22 @@ class i extends r {
     return null == this.node ? null : (this.isMutated || (this.node = this.node.clone(), this.isMutated = true), this.ownerDocument.markDirty(this), this.node)
   }
   updateNode() {
-    var e, t, n, r, a, s, o, l, c, u, d, f, p, _, h;
+    var e, t, n, r, a, o, s, l, c, u, d, f, p, _, h;
     let m = this.nextVisibleSibling,
       g = this.getMutableNode();
-    if (null != g && (g.index = this.index, g.level = this.level, g.parentKey = this.parentNode instanceof i && null != (c = null == (e = this.parentNode.node) ? true : e.key) ? c : null, g.prevKey = null != (u = null == (n = this.previousVisibleSibling) || null == (t = n.node) ? true : t.key) ? u : null, g.nextKey = null != (d = null == m || null == (r = m.node) ? true : r.key) ? d : null, g.hasChildNodes = !!this.firstChild, g.firstChildKey = null != (f = null == (s = this.firstVisibleChild) || null == (a = s.node) ? true : a.key) ? f : null, g.lastChildKey = null != (p = null == (l = this.lastVisibleChild) || null == (o = l.node) ? true : o.key) ? p : null, (null != g.colSpan || null != g.colIndex) && m)) {
+    if (null != g && (g.index = this.index, g.level = this.level, g.parentKey = this.parentNode instanceof i && null != (c = null == (e = this.parentNode.node) ? true : e.key) ? c : null, g.prevKey = null != (u = null == (n = this.previousVisibleSibling) || null == (t = n.node) ? true : t.key) ? u : null, g.nextKey = null != (d = null == m || null == (r = m.node) ? true : r.key) ? d : null, g.hasChildNodes = !!this.firstChild, g.firstChildKey = null != (f = null == (o = this.firstVisibleChild) || null == (a = o.node) ? true : a.key) ? f : null, g.lastChildKey = null != (p = null == (l = this.lastVisibleChild) || null == (s = l.node) ? true : s.key) ? p : null, (null != g.colSpan || null != g.colIndex) && m)) {
       let e = (null != (_ = g.colIndex) ? _ : g.index) + (null != (h = g.colSpan) ? h : 1);
       null != m.node && e !== m.node.colIndex && (m.getMutableNode().colIndex = e)
     }
   }
   setProps(e, t, n, r, i) {
     let a, {
-      value: s,
-      textValue: o,
+      value: o,
+      textValue: s,
       id: l,
       ...c
     } = e;
-    if (null == this.node ? (a = new n(null != l ? l : `react-aria-${++this.ownerDocument.nodeId}`), this.node = a) : a = this.getMutableNode(), c.ref = t, a.props = c, a.rendered = r, a.render = i, a.value = s, a.textValue = o || ("string" == typeof c.children ? c.children : "") || e["aria-label"] || "", null != l && l !== a.key) throw Error("Cannot change the id of an item");
+    if (null == this.node ? (a = new n(null != l ? l : `react-aria-${++this.ownerDocument.nodeId}`), this.node = a) : a = this.getMutableNode(), c.ref = t, a.props = c, a.rendered = r, a.render = i, a.value = o, a.textValue = s || ("string" == typeof c.children ? c.children : "") || e["aria-label"] || "", null != l && l !== a.key) throw Error("Cannot change the id of an item");
     null != c.colSpan && (a.colSpan = c.colSpan), this.isConnected && this.ownerDocument.queueUpdate()
   }
   get style() {
@@ -177,8 +177,8 @@ class a extends r {
     for (let e of this.dirtyNodes) e instanceof i && (!e.isConnected || e.isHidden) ? this.removeNode(e) : e.updateChildIndices();
     for (let e of this.dirtyNodes) e instanceof i ? (e.isConnected && !e.isHidden && (e.updateNode(), this.addNode(e)), e.node && this.dirtyNodes.delete(e), e.isMutated = false) : this.dirtyNodes.delete(e);
     if (this.nextCollection) {
-      var e, t, n, r, a, s;
-      this.nextCollection.commit(null != (a = null == (t = this.firstVisibleChild) || null == (e = t.node) ? true : e.key) ? a : null, null != (s = null == (r = this.lastVisibleChild) || null == (n = r.node) ? true : n.key) ? s : null, this.isSSR), this.isSSR || (this.collection = this.nextCollection, this.nextCollection = null)
+      var e, t, n, r, a, o;
+      this.nextCollection.commit(null != (a = null == (t = this.firstVisibleChild) || null == (e = t.node) ? true : e.key) ? a : null, null != (o = null == (r = this.lastVisibleChild) || null == (n = r.node) ? true : n.key) ? o : null, this.isSSR), this.isSSR || (this.collection = this.nextCollection, this.nextCollection = null)
     }
   }
   queueUpdate() {

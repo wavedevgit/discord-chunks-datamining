@@ -54,10 +54,10 @@ function a(e) {
     containerRef: a,
     faderSize: o,
     faderEdgeThreshold: c
-  } = e, u = r.useRef(null), [d, m] = r.useState(0), [f, x] = r.useState(0), [h, g] = r.useState(0), v = r.useCallback(() => {
-    null != u.current && (m(u.current.getDistanceFromTop()), x(u.current.getDistanceFromBottom()), g(u.current.getScrollerState().offsetHeight))
+  } = e, u = l.useRef(null), [d, m] = l.useState(0), [f, h] = l.useState(0), [x, g] = l.useState(0), v = l.useCallback(() => {
+    null != u.current && (m(u.current.getDistanceFromTop()), h(u.current.getDistanceFromBottom()), g(u.current.getScrollerState().offsetHeight))
   }, []);
-  r.useEffect(() => {
+  l.useEffect(() => {
     if (v(), null == a.current) return;
     let e = new ResizeObserver(() => {
       v()
@@ -66,37 +66,37 @@ function a(e) {
       e.disconnect()
     }
   }, [u, a, v]);
-  let j = r.useMemo(() => {
+  let p = l.useMemo(() => {
     if (0 === d && 0 === f) return {};
     let e = [];
     if (e.push("to bottom"), d > 0) {
       let t = c > 0 ? 1 - Math.min(c, d) / c : 1;
       for (let n = 0; n < s.length; n++) {
         let {
-          position: l,
-          alpha: r
-        } = s[n], i = (l * o).toFixed(2);
-        e.push("hsla(0, 0%, 0%, ".concat(t + r * (1 - t), ") ").concat(i, "px"))
+          position: r,
+          alpha: l
+        } = s[n], i = (r * o).toFixed(2);
+        e.push("hsla(0, 0%, 0%, ".concat(t + l * (1 - t), ") ").concat(i, "px"))
       }
     }
     if (f > 0) {
-      let t = h - o,
+      let t = x - o,
         n = c > 0 ? 1 - Math.min(c, f) / c : 1;
-      for (let l = s.length - 1; l >= 0; l--) {
+      for (let r = s.length - 1; r >= 0; r--) {
         let {
-          position: r,
+          position: l,
           alpha: i
-        } = s[l], a = (t + (1 - r) * o).toFixed(2);
+        } = s[r], a = (t + (1 - l) * o).toFixed(2);
         e.push("hsla(0, 0%, 0%, ".concat(n + i * (1 - n), ") ").concat(a, "px"))
       }
     }
     return {
       maskImage: "linear-gradient(".concat(e.join(","), ")")
     }
-  }, [f, d, c, o, h]);
-  return (0, l.jsx)(i.zCo, {
+  }, [f, d, c, o, x]);
+  return (0, r.jsx)(i.zCo, {
     ref: u,
-    style: j,
+    style: p,
     className: t,
     onScroll: v,
     children: n

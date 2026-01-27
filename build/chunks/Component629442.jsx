@@ -30,7 +30,7 @@ function d(e) {
         n = !a.zy(d, e);
       return (0, r.jsx)("li", {
         className: u.EK,
-        children: (0, r.jsx)(o.Checkbox, {
+        children: (0, r.jsx)(s.Checkbox, {
           checked: n,
           onChange: t => f(t, e),
           label: t
@@ -43,12 +43,12 @@ function d(e) {
         className: u.EK,
         children: [(0, r.jsx)("div", {
           className: u.nW,
-          children: (0, r.jsx)(o.PGe, {
+          children: (0, r.jsx)(s.PGe, {
             size: "md",
             color: "currentColor",
             className: u.Kk
           })
-        }), (0, r.jsx)(s.E, {
+        }), (0, r.jsx)(o.E, {
           variant: "text-md/normal",
           children: t
         })]
@@ -57,7 +57,7 @@ function d(e) {
   return (0, r.jsxs)("div", {
     className: u.AS,
     children: [m.length > 0 ? (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(s.E, {
+      children: [(0, r.jsx)(o.E, {
         variant: "text-sm/medium",
         color: "text-default",
         children: c.intl.format(c.t.sOaT2j, {
@@ -69,7 +69,7 @@ function d(e) {
         children: m
       })]
     }) : null, g.length > 0 ? (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(s.E, {
+      children: [(0, r.jsx)(o.E, {
         variant: "text-sm/medium",
         color: "text-default",
         children: c.intl.format(c.t.fsOkF4, {

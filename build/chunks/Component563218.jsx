@@ -1,4 +1,4 @@
-/** Chunk was on 58652 **/
+/** Chunk was on 12236 **/
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => v
@@ -49,13 +49,13 @@ function v(e) {
     reportSubType: v
   } = e, f = (0, i.bG)([m.A], () => m.A.getChannel(n)), j = (0, p.MR)(t, null == f ? true : f.type), A = (0, b.Mw)(d, v, s);
   return 0 === j.length ? null : (0, l.jsxs)("div", {
-    className: _.kL,
+    className: x.kL,
     children: [(0, l.jsx)(a.Heading, {
       variant: "text-sm/semibold",
-      className: _.wx,
+      className: x.wx,
       children: g.intl.string(g.t["1yxTIJ"])
     }), (0, l.jsx)("div", {
-      className: _.uk,
+      className: x.uk,
       children: j.map((e, n) => {
         let {
           getTitle: r,
@@ -73,8 +73,8 @@ function v(e) {
       text: g.intl.string(g.t.olebGx),
       onClick: () => {
         (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {
-          section: x.nc_.CONTENT_AND_SOCIAL
-        }), r(), o.Ay.trackWithMetadata(x.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
+          section: _.nc_.CONTENT_AND_SOCIAL
+        }), r(), o.Ay.trackWithMetadata(_.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
           report_id: s,
           report_type: d.name,
           report_subtype: v,

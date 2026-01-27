@@ -5,7 +5,7 @@ require.d(exports, {
   Av: () => _,
   Os: () => f,
   PS: () => d,
-  TT: () => o,
+  TT: () => s,
   d1: () => u,
   kv: () => c,
   nL: () => h,
@@ -15,14 +15,14 @@ var Chunk77729 = require("./77729.js"),
   Chunk9858 = require("./9858.js"),
   Chunk723702 = require("./723702.js");
 
-function s() {
+function o() {
   return (null === r.A || true === r.A ? true : r.A.spellCheck) != null
 }
 
-function o() {
-  return (0, a.isDesktop)() && s()
+function s() {
+  return (0, a.isDesktop)() && o()
 }
-let l = o() ? (0, Chunk9858.J)() : null;
+let l = s() ? (0, Chunk9858.J)() : null;
 async function c(e) {
   let t = await l;
   null != t && (t.enabled = e)
@@ -52,7 +52,7 @@ async function _(e) {
 }
 
 function h(e) {
-  if (!s()) return () => {};
+  if (!o()) return () => {};
   let t = r.A.spellCheck.on("spellcheck-result", e);
   return null != t ? t : () => {}
 }

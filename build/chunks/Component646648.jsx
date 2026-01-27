@@ -28,7 +28,7 @@ function m(e) {
   } = e, {
     themeType: v
   } = (0, u.E)(), A = (0, l._B)(b, y), I = (0, l.J$)(b, y);
-  if (!(0, o.A)(b) || !(0, s.A)(b, f.jUm.PLAY) && !(0, s.A)(b, f.jUm.SYNC)) return null;
+  if (!(0, s.A)(b) || !(0, o.A)(b, f.jUm.PLAY) && !(0, o.A)(b, f.jUm.SYNC)) return null;
   let S = e => {
       null == e || e.stopPropagation(), null == O || O({
         action: "PRESS_PLAY_ON_SPOTIFY_BUTTON"

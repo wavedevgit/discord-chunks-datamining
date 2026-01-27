@@ -52,7 +52,7 @@ let y = 1e3,
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        w || (R(true), (0, s.Ze)(C.loadId), (0, u.my)({
+        w || (R(true), (0, o.Ze)(C.loadId), (0, u.my)({
           planId: null != (e = null == b ? true : b.id) ? e : m.gD.PREMIUM_MONTH_TIER_2,
           isGift: N,
           loadId: C.loadId,
@@ -61,7 +61,7 @@ let y = 1e3,
       }, y);
       return () => clearTimeout(e)
     }, [b, N, C, c, R, w, t]), i.useEffect(() => {
-      null !== S && (m.oz.includes(S) && ((0, o.ur)(S), (0, s.hP)()), v(S)), null !== T && O(T), I === C.loadId && A === _.k.DONE && l()
+      null !== S && (m.oz.includes(S) && ((0, s.ur)(S), (0, o.hP)()), v(S)), null !== T && O(T), I === C.loadId && A === _.k.DONE && l()
     }, [v, O, A, I, S, T, C, l]), (0, r.jsxs)("div", {
       className: E.r,
       children: [(0, r.jsx)(a.Heading, {

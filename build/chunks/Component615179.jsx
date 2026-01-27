@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 615179, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 615179, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  QN: () => m,
-  Z_: () => h,
-  ez: () => g
+  QN: () => h,
+  Z_: () => g,
+  ez: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,97 +16,97 @@ var Chunk627968 = require("./627968.js"),
   Chunk287809 = require("./287809.js"),
   Chunk654265 = require("./654265.js"),
   Chunk985018 = require("./985018.jsx");
-let _ = (e, t) => {
+let f = (e, t) => {
   let {
     joinRequest: n,
     joinRequestGuild: r
-  } = (0, f.A)(t.id), o = (0, a.bG)([d.default], () => d.default.getUser(null == n ? true : n.userId)), p = (0, s.P)({
-    user: o,
+  } = (0, p.A)(t.id), s = (0, l.bG)([d.default], () => d.default.getUser(null == n ? true : n.userId)), m = (0, a.P)({
+    user: s,
     channelId: t.id,
     guildId: t.guild_id,
     messageId: e.id
-  }), _ = (0, a.bG)([u.Ay, c.default], () => u.Ay.isMember(null == r ? true : r.id, c.default.getId())), h = i.useCallback(() => {
-    _ && null != r && (0, l.uh)(r.id)
-  }, [r, _]);
+  }), f = (0, l.bG)([u.Ay, c.default], () => u.Ay.isMember(null == r ? true : r.id, c.default.getId())), g = i.useCallback(() => {
+    f && null != r && (0, o.uh)(r.id)
+  }, [r, f]);
   return {
     guild: r,
     joinRequest: n,
-    usernameHook: p,
-    guildNameClick: h
+    usernameHook: m,
+    guildNameClick: g
   }
 };
-
-function h(e) {
-  var t;
-  let {
-    message: i,
-    channel: a,
-    compact: s
-  } = e, {
-    guild: l,
-    joinRequest: c,
-    usernameHook: u,
-    guildNameClick: d
-  } = _(i, a), f = null == c || null == (t = c.user) ? true : t.username, h = null == l ? true : l.name;
-  return (0, r.jsx)(o.A, {
-    icon: n(394803),
-    timestamp: i.timestamp,
-    compact: s,
-    children: null != f && null != h ? p.intl.format(p.t["21R6Ch"], {
-      username: f,
-      usernameHook: u(),
-      guildName: h,
-      guildNameClick: d
-    }) : p.intl.string(p.t["2VLV0d"])
-  })
-}
-
-function m(e) {
-  var t;
-  let {
-    message: i,
-    channel: a,
-    compact: s
-  } = e, {
-    guild: l,
-    joinRequest: c,
-    usernameHook: u,
-    guildNameClick: d
-  } = _(i, a), f = null == c || null == (t = c.user) ? true : t.username, h = null == l ? true : l.name;
-  return (0, r.jsx)(o.A, {
-    icon: n(884797),
-    timestamp: i.timestamp,
-    compact: s,
-    children: null != f && null != h ? p.intl.format(p.t["Bz/QC2"], {
-      username: f,
-      usernameHook: u(),
-      guildName: h,
-      guildNameClick: d
-    }) : p.intl.string(p.t.FVF6qU)
-  })
-}
 
 function g(e) {
   var t;
   let {
     message: i,
-    channel: a,
-    compact: s
+    channel: l,
+    compact: a
   } = e, {
-    guild: l,
+    guild: o,
     joinRequest: c,
     usernameHook: u,
     guildNameClick: d
-  } = _(i, a), f = null == c || null == (t = c.user) ? true : t.username, h = null == l ? true : l.name;
-  return (0, r.jsx)(o.A, {
+  } = f(i, l), p = null == c || null == (t = c.user) ? true : t.username, g = null == o ? true : o.name;
+  return (0, r.jsx)(s.A, {
+    icon: n(394803),
+    timestamp: i.timestamp,
+    compact: a,
+    children: null != p && null != g ? m.intl.format(m.t["21R6Ch"], {
+      username: p,
+      usernameHook: u(),
+      guildName: g,
+      guildNameClick: d
+    }) : m.intl.string(m.t["2VLV0d"])
+  })
+}
+
+function h(e) {
+  var t;
+  let {
+    message: i,
+    channel: l,
+    compact: a
+  } = e, {
+    guild: o,
+    joinRequest: c,
+    usernameHook: u,
+    guildNameClick: d
+  } = f(i, l), p = null == c || null == (t = c.user) ? true : t.username, g = null == o ? true : o.name;
+  return (0, r.jsx)(s.A, {
     icon: n(884797),
     timestamp: i.timestamp,
-    compact: s,
-    children: null != f && null != h ? p.intl.format(p.t.Kpkesg, {
-      username: f,
+    compact: a,
+    children: null != p && null != g ? m.intl.format(m.t["Bz/QC2"], {
+      username: p,
       usernameHook: u(),
-      guildName: h,
+      guildName: g,
       guildNameClick: d
-    }) : p.intl.string(p.t.BMlbE7)
+    }) : m.intl.string(m.t.FVF6qU)
+  })
+}
+
+function _(e) {
+  var t;
+  let {
+    message: i,
+    channel: l,
+    compact: a
+  } = e, {
+    guild: o,
+    joinRequest: c,
+    usernameHook: u,
+    guildNameClick: d
+  } = f(i, l), p = null == c || null == (t = c.user) ? true : t.username, g = null == o ? true : o.name;
+  return (0, r.jsx)(s.A, {
+    icon: n(884797),
+    timestamp: i.timestamp,
+    compact: a,
+    children: null != p && null != g ? m.intl.format(m.t.Kpkesg, {
+      username: p,
+      usernameHook: u(),
+      guildName: g,
+      guildNameClick: d
+    }) : m.intl.string(m.t.BMlbE7)
   })
 }

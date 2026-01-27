@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 445343, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 445343, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,20 +14,20 @@ var Chunk93857 = require("./93857.js"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f() {
+function _() {
   var e;
-  let t = null != (e = (0, l.k)()) ? e : true,
+  let t = null != (e = (0, o.k)()) ? e : true,
     n = i.yH.useControlledSetting(t),
-    f = i.kf.useControlledSetting(t);
-  return null == t ? null : (0, r.jsx)(a.h, {
+    _ = i.kf.useControlledSetting(t);
+  return null == t ? null : (0, r.jsx)(l.h, {
     children: (0, r.jsx)(s.Ay, {
-      title: d.intl.string(d.t.CyLYKZ),
-      note: d.intl.format(u.default["6mK5Pz"], {
-        helpdeskArticle: o.A.getArticleURL(c.MVz.QUESTS_PRIVACY_CONTROLS)
+      title: u.intl.string(u.t.CyLYKZ),
+      note: u.intl.format(d.default["6mK5Pz"], {
+        helpdeskArticle: a.A.getArticleURL(c.MVz.QUESTS_PRIVACY_CONTROLS)
       }),
       value: !n,
       onChange: e => i.yH.updateControlledSetting(t, !e),
-      disabled: f
+      disabled: _
     })
   })
 }

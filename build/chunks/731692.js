@@ -3,11 +3,11 @@
 "use strict";
 let r;
 require.d(exports, {
-  B: () => s
+  B: () => o
 });
 let i = Symbol.for("react-aria.i18n.locale"),
   a = Symbol.for("react-aria.i18n.strings");
-class s {
+class o {
   getStringForLocale(e, t) {
     let n = this.getStringsForLocale(t)[e];
     if (!n) throw Error(`Could not find intl message ${e} in ${t} locale`);
@@ -15,7 +15,7 @@ class s {
   }
   getStringsForLocale(e) {
     let t = this.strings[e];
-    return t || (t = o(e, this.strings, this.defaultLocale), this.strings[e] = t), t
+    return t || (t = s(e, this.strings, this.defaultLocale), this.strings[e] = t), t
   }
   static getGlobalDictionaryForPackage(e) {
     if ("u" < typeof window) return null;
@@ -23,7 +23,7 @@ class s {
     if (true === r) {
       let e = window[a];
       if (!e) return null;
-      for (let n in r = {}, e) r[n] = new s({
+      for (let n in r = {}, e) r[n] = new o({
         [t]: e[n]
       }, t)
     }
@@ -36,7 +36,7 @@ class s {
   }
 }
 
-function o(e, t, n = "en-US") {
+function s(e, t, n = "en-US") {
   if (t[e]) return t[e];
   let r = l(e);
   if (t[r]) return t[r];

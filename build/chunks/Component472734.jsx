@@ -31,13 +31,13 @@ function k(t) {
     analyticsLocations: S
   } = t, v = (0, p.j)(T), {
     fetched: b,
-    hasAlreadyLinked: N,
+    hasAlreadyLinked: g,
     canStartAuthorization: L,
-    startAuthorization: g
+    startAuthorization: N
   } = (0, d.RD)(T), E = (0, x.J)(T), {
-    analyticsLocations: y
-  } = (0, o.Ay)(null != S ? S : [], c.A.SOCIAL_LAYER_CLAIM_PURCHASED_ITEM_MODAL), I = !b || null == v, R = e.useRef({
-    analyticsLocations: y,
+    analyticsLocations: I
+  } = (0, o.Ay)(null != S ? S : [], c.A.SOCIAL_LAYER_CLAIM_PURCHASED_ITEM_MODAL), y = !b || null == v, R = e.useRef({
+    analyticsLocations: I,
     skuId: k.id,
     applicationId: T.id,
     isLaunchable: v,
@@ -46,51 +46,51 @@ function k(t) {
   });
   e.useEffect(() => {
     R.current.isLaunchable = v, R.current.isApplicationConnected = E, R.current.canStartAuthorization = L
-  }, [v, E, L]), (0, r.Ay)(() => {
-    u.default.track(h.HAw.OPEN_MODAL, {
-      location_stack: y,
-      type: j.e2,
+  }, [v, E, L]), (0, s.Ay)(() => {
+    u.default.track(j.HAw.OPEN_MODAL, {
+      location_stack: I,
+      type: f.e2,
       sku_id: k.id,
       application_id: T.id
     })
   }), e.useEffect(() => {
-    if (I) return;
+    if (y) return;
     let {
       analyticsLocations: t,
       skuId: i,
       applicationId: a,
       canStartAuthorization: n
     } = R.current;
-    u.default.track(h.HAw.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED, {
+    u.default.track(j.HAw.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED, {
       location_stack: t,
       sku_id: i,
       application_id: a,
       is_gift: false,
-      is_account_linked: N,
+      is_account_linked: g,
       can_start_authorization: n
     })
-  }, [I, N]);
+  }, [y, g]);
   let O = e.useCallback(() => {
       let {
         analyticsLocations: t,
         skuId: i,
         applicationId: a
       } = R.current;
-      u.default.track(h.HAw.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED, {
+      u.default.track(j.HAw.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED, {
         location_stack: t,
         sku_id: i,
         application_id: a,
         is_gift: false
-      }), g({
+      }), N({
         analyticsLocations: t
       })
-    }, [g]),
+    }, [N]),
     w = e.useCallback(() => {
       let {
         analyticsLocations: t,
         skuId: i
       } = R.current;
-      u.default.track(h.HAw.SLAYER_STOREFRONT_GAME_LAUNCH_CLICKED, {
+      u.default.track(j.HAw.SLAYER_STOREFRONT_GAME_LAUNCH_CLICKED, {
         location_stack: t,
         sku_id: i,
         application_id: T.id,
@@ -105,7 +105,7 @@ function k(t) {
         isLaunchable: e,
         isApplicationConnected: l
       } = R.current;
-      u.default.track(h.HAw.SLAYER_STOREFRONT_CLAIM_MODAL_CLOSE_BUTTON_CLICKED, {
+      u.default.track(j.HAw.SLAYER_STOREFRONT_CLAIM_MODAL_CLOSE_BUTTON_CLICKED, {
         location_stack: t,
         sku_id: i,
         application_id: n,
@@ -114,14 +114,14 @@ function k(t) {
         is_application_connected: l
       }), a()
     }, [a]);
-  if (I) return (0, n.jsx)(l.dWK, {
+  if (y) return (0, n.jsx)(l.dWK, {
     transitionState: i,
     onClose: a,
     children: (0, n.jsx)(l.cwr, {
-      children: (0, n.jsx)(s.y$y, {})
+      children: (0, n.jsx)(r.y$y, {})
     })
   });
-  if (N) {
+  if (g) {
     let t = v && !E ? {
       variant: "primary",
       text: C.intl.string(C.t["s+J8Dl"]),
@@ -139,9 +139,9 @@ function k(t) {
         sku: k,
         title: C.intl.string(C.t["5glWta"])
       }), (0, n.jsx)(l.cwr, {
-        children: (0, n.jsx)(s.Text, {
+        children: (0, n.jsx)(r.Text, {
           variant: "text-md/normal",
-          className: f.j,
+          className: h.j,
           children: C.intl.formatToPlainString(C.t.W2znvX, {
             skuName: k.name,
             applicationName: T.name
@@ -165,7 +165,7 @@ function k(t) {
       application: T,
       transitionState: i,
       onClose: a,
-      hasAlreadyLinked: N,
+      hasAlreadyLinked: g,
       canStartAuthorization: L,
       primaryCTAButtonProps: t,
       bodyText: C.intl.formatToPlainString(C.t.Qmkje8, {

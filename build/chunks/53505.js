@@ -28,7 +28,7 @@ function E(e) {
     n = arguments.length > 2 ? arguments[2] : true,
     r = t ? "/ptb" : "",
     i = null != n ? "&format=".concat(n) : "";
-  return "".concat(o.AMi.DESKTOP).concat(r, "?platform=").concat(e).concat(i)
+  return "".concat(s.AMi.DESKTOP).concat(r, "?platform=").concat(e).concat(i)
 }
 
 function y() {
@@ -59,14 +59,14 @@ function v(e, t, n) {
     case "iOS":
       return (0, a.Ay)(null != r ? r : "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746", {
         utmSource: e,
-        fingerprint: s.default.getFingerprint(),
+        fingerprint: o.default.getFingerprint(),
         attemptId: (0, a.I_)()
       });
     case "Android":
       return (0, a.Ay)(null != r ? r : "https://play.google.com/store/apps/details", {
         utmSource: e,
         id: "com.discord",
-        fingerprint: s.default.getFingerprint(),
+        fingerprint: o.default.getFingerprint(),
         attemptId: (0, a.I_)()
       });
     default:

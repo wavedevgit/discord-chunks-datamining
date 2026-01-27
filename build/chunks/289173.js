@@ -10,7 +10,7 @@ var Chunk926675 = require("./926675.js"),
   Chunk540185 = require("./540185.js"),
   Chunk735321 = require("./735321.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,10 +18,10 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = [Chunk540185.x.CURRENT_GAMES, Chunk540185.x.FAVORITE_GAMES, Chunk540185.x.WANT_TO_PLAY_GAMES, Chunk540185.x.PLAYED_GAMES];
+let s = [Chunk540185.x.CURRENT_GAMES, Chunk540185.x.FAVORITE_GAMES, Chunk540185.x.WANT_TO_PLAY_GAMES, Chunk540185.x.PLAYED_GAMES];
 
 function l(e) {
-  return o.includes(e)
+  return s.includes(e)
 }
 
 function c(e) {
@@ -69,6 +69,6 @@ class u {
     type: t,
     games: n
   }) {
-    s(this, "id", true), s(this, "type", true), s(this, "games", true), this.id = e, this.type = t, this.games = n
+    o(this, "id", true), o(this, "type", true), o(this, "games", true), this.id = e, this.type = t, this.games = n
   }
 }

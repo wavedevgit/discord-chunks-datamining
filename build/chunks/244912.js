@@ -15,10 +15,10 @@ function l(e) {
     var t;
     let n = a.p$.map(e => ({
         value: e,
-        label: e.interval === s.WT.DAY && 7 === e.interval_count ? o.intl.formatToPlainString(o.t.XfSsr1, {
+        label: e.interval === o.WT.DAY && 7 === e.interval_count ? s.intl.formatToPlainString(s.t.XfSsr1, {
           defaultLimit: (0, i.Gg)(e)
         }) : (0, i.Gg)(e),
-        isDefault: e.interval === s.WT.DAY && 7 === e.interval_count
+        isDefault: e.interval === o.WT.DAY && 7 === e.interval_count
       })),
       r = null != e ? null == (t = n.find(t => null != t.value && t.value.interval === e.interval && t.value.interval_count === e.interval_count)) ? true : t.value : e;
     return {

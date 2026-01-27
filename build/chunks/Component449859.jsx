@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk990078 = require("./990078.jsx"),
   Chunk405269 = require("./405269.js"),
   Chunk355938 = require("./355938.jsx"),
@@ -75,13 +75,13 @@ let E = Chunk64700.memo(function(e) {
       timeFormatted: S
     }) : S, [O, S]);
     return (0, r.jsx)("span", {
-      className: s()(n, C, {
+      className: o()(n, C, {
         [f.vE]: true,
         [f.ET]: h,
         [f.YQ]: E,
         [f.CC]: m
       }),
-      children: null == v ? (0, r.jsx)(o.m, {
+      children: null == v ? (0, r.jsx)(s.m, {
         asContainer: true,
         __unsupportedReactNodeAsText: (0, l.i$)(I, "LLLL"),
         "aria-label": N,
@@ -113,12 +113,12 @@ let E = Chunk64700.memo(function(e) {
       timeFormatted: n,
       children: i,
       compact: a,
-      timestamp: s,
-      id: o
+      timestamp: o,
+      id: s
     } = e;
     return (0, r.jsx)("time", m(_({}, t), {
-      id: o,
-      dateTime: s.toISOString(),
+      id: s,
+      dateTime: o.toISOString(),
       children: null != i ? i : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("i", {
           className: f.me,

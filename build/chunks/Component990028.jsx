@@ -16,13 +16,13 @@ var Chunk311907 = require("./311907.js"),
 
 function f(e) {
   let t = e.isArchivedThread(),
-    n = (0, s.uW)(e),
+    n = (0, c.uW)(e),
     {
       firstMessage: f
     } = (0, i.bG)([a.A], () => a.A.getMessage(e.id), [e.id]);
   return !n || t || null == f ? null : (0, r.jsx)(l.Drp, {
     id: "resolve-report",
-    label: c.intl.string(u.default["8yIKem"]),
+    label: s.intl.string(u.default["8yIKem"]),
     action: () => o.A.resolveFlag(e.id),
     className: d.j
   })

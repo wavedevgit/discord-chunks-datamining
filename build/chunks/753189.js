@@ -8,7 +8,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk954571 = require("./954571.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk439372.A {
+class s extends Chunk439372.A {
   handleMessageCreate(e) {
     let {
       message: t
@@ -48,10 +48,10 @@ class o extends Chunk439372.A {
     }
   }
   constructor(...e) {
-    super(...e), s(this, "actions", {
+    super(...e), o(this, "actions", {
       MESSAGE_CREATE: e => this.handleMessageCreate(e),
       MESSAGE_UPDATE: e => this.handleMessageUpdate(e)
     })
   }
 }
-let l = new o
+let l = new s

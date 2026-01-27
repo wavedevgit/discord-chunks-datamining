@@ -65,8 +65,8 @@ let A = e => {
     isFetching: n = false,
     entitlements: r,
     unactivatedFractionalPremiumUnits: i,
-    currentUser: s,
-    premiumSubscription: o,
+    currentUser: o,
+    premiumSubscription: s,
     fetchedAllEntitlements: c,
     excludeReverseTrialFromCountdown: u
   } = e, d = {
@@ -81,7 +81,7 @@ let A = e => {
   if (n) return v(b({}, d), {
     fetched: false
   });
-  if (null == s || 0 === r.length && 0 === i.length) return d;
+  if (null == o || 0 === r.length && 0 === i.length) return d;
   let f = r.filter(e => null != e.endsAt && null != e.startsAt).sort((e, t) => (a()(null != e.endsAt && null != t.endsAt, "endsAt should not be null"), e.endsAt < t.endsAt) ? false : +(e.endsAt > t.endsAt));
   if (f.reverse(), f.length > 0 && (f.length !== r.length || null == f[0].startsAt || null == f[0].endsAt)) {
     let e = Array.from(r.values()).map(e => e.id),
@@ -94,7 +94,7 @@ let A = e => {
   }
   let p = null != (t = f[0]) ? t : null,
     _ = E.xc.NONE;
-  null != p && (_ = null != o && o.status === g.Dmq.PAUSED ? E.xc.FP_SUB_PAUSED : E.xc.FP_ONLY);
+  null != p && (_ = null != s && s.status === g.Dmq.PAUSED ? E.xc.FP_SUB_PAUSED : E.xc.FP_ONLY);
   let y = u && (null == p ? true : p.sourceType) === g.GD.REVERSE_TRIAL;
   return {
     isFractionalPremiumActive: null != p,
@@ -122,13 +122,13 @@ function S() {
     excludeReverseTrialFromCountdown: false
   }, i = (0, c.bG)([f.default], () => f.default.getCurrentUser()), a = (0, c.yK)([_.A], () => _.A.getFractionalPremium({
     excludeReverseTrial: t
-  })), o = (0, c.bG)([_.A], () => _.A.fetchedAllEntitlements), l = (0, c.yK)([_.A], () => _.A.getUnactivatedFractionalPremiumUnits()), h = (0, c.bG)([p.A], () => p.A.getPremiumTypeSubscription()), [m, E] = r.useState(A({
+  })), s = (0, c.bG)([_.A], () => _.A.fetchedAllEntitlements), l = (0, c.yK)([_.A], () => _.A.getUnactivatedFractionalPremiumUnits()), h = (0, c.bG)([p.A], () => p.A.getPremiumTypeSubscription()), [m, E] = r.useState(A({
     isFetching: I(e, i) || _.A.fetchingAllEntitlements,
     entitlements: a,
     unactivatedFractionalPremiumUnits: l,
     currentUser: i,
     premiumSubscription: h,
-    fetchedAllEntitlements: o,
+    fetchedAllEntitlements: s,
     excludeReverseTrialFromCountdown: n
   }));
   return (0, d.Ay)(() => {
@@ -141,9 +141,9 @@ function S() {
       unactivatedFractionalPremiumUnits: l,
       currentUser: i,
       premiumSubscription: h,
-      fetchedAllEntitlements: o,
+      fetchedAllEntitlements: s,
       excludeReverseTrialFromCountdown: n
     });
-    E(t => (0, s.isEqual)(t, e) ? t : e)
-  }, [i, a, h, l, o, n]), m
+    E(t => (0, o.isEqual)(t, e) ? t : e)
+  }, [i, a, h, l, s, n]), m
 }

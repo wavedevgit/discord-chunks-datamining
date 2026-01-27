@@ -9,11 +9,11 @@ var Chunk311907 = require("./311907.js"),
   Chunk576705 = require("./576705.js"),
   Chunk488926 = require("./488926.js"),
   Chunk818348 = require("./818348.js");
-let o = [Chunk818348.xB.SET_VOICE_CHANNEL_STATUS, Chunk818348.xB.CONNECT, Chunk818348.xB.VIEW_CHANNEL],
+let s = [Chunk818348.xB.SET_VOICE_CHANNEL_STATUS, Chunk818348.xB.CONNECT, Chunk818348.xB.VIEW_CHANNEL],
   l = [Chunk818348.xB.SET_VOICE_CHANNEL_STATUS];
 
 function c(e, t, n, r) {
-  return (n ? l : o).every(n => null == r ? t.can(n, e) : a.$3({
+  return (n ? l : s).every(n => null == r ? t.can(n, e) : a.$3({
     permission: n,
     user: r,
     context: e

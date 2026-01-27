@@ -41,7 +41,7 @@ let u = .5,
   _ = c({}, p);
 
 function h() {
-  d = new Map(_.userAffinities.filter(e => !s.A.isBlockedOrIgnored(e.otherUserId)).map(e => [e.otherUserId, e]))
+  d = new Map(_.userAffinities.filter(e => !o.A.isBlockedOrIgnored(e.otherUserId)).map(e => [e.otherUserId, e]))
 }
 
 function m() {
@@ -65,14 +65,14 @@ function y() {
 }
 class b extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(s.A), null != e) {
+    if (this.waitFor(o.A), null != e) {
       var t;
       _.userAffinities = e.userAffinities, _.userFlags = null != (t = e.userFlags) ? t : {}, _.lastFetched = e.lastFetched, h()
     }
-    this.syncWith([s.A], h)
+    this.syncWith([o.A], h)
   }
   shouldFetch() {
-    if (!f) return Date.now() - _.lastFetched > o.e
+    if (!f) return Date.now() - _.lastFetched > s.e
   }
   isFetching() {
     return f

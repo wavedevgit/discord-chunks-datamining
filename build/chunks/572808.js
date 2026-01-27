@@ -5,8 +5,8 @@ require.d(exports, {
   PZ: () => a,
   TU: () => r,
   dG: () => l,
-  oo: () => s,
-  qS: () => o,
+  oo: () => o,
+  qS: () => s,
   qi: () => i,
   wS: () => c
 });
@@ -19,8 +19,8 @@ var r = function(e) {
   a = function(e) {
     return e.NONE = "none", e.GOLDFISH = "goldfish", e.GOLDFISH_BLUE = "goldfishBlue", e.GOLDFISH_PINK = "goldfishPink", e.POPCORN = "popcorn", e.POPCORN_PURPLE = "popcornPurple", e.POPCORN_BLUE = "popcornBlue", e.IMP = "imp", e.IMP_BLUE = "impBlue", e.IMP_PINK = "impPink", e
   }({});
-let s = ["none", "goldfish", "goldfishBlue", "goldfishPink", "popcorn", "popcornPurple", "popcornBlue", "imp", "impBlue", "impPink"],
-  o = {
+let o = ["none", "goldfish", "goldfishBlue", "goldfishPink", "popcorn", "popcornPurple", "popcornBlue", "imp", "impBlue", "impPink"],
+  s = {
     none: {
       name: "none",
       width: 0,

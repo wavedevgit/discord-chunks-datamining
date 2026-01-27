@@ -83,16 +83,16 @@ function y(e) {
     skusToRecommendationReasons: r,
     userIds: i,
     application: a,
-    numItemsRequested: s
-  } = e, o = f(i);
+    numItemsRequested: o
+  } = e, s = f(i);
   h = d(c({}, h), {
     [a.id]: d(c({}, null != (t = h[a.id]) ? t : {}), {
-      [o]: {
+      [s]: {
         state: "success",
         data: {
           skus: n,
           skusToRecommendationReasons: r,
-          numItemsRequested: s
+          numItemsRequested: o
         }
       }
     })
@@ -191,12 +191,12 @@ function T(e) {
 }
 
 function C() {
-  if (r === o.default.locale) returnfalse;
-  r = o.default.locale, p = {}, _ = {}, h = {}
+  if (r === s.default.locale) returnfalse;
+  r = s.default.locale, p = {}, _ = {}, h = {}
 }
 class N extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.default), this.syncWith([o.default], C), r = o.default.locale
+    this.waitFor(s.default), this.syncWith([s.default], C), r = s.default.locale
   }
   getStorefrontData(e) {
     return _[e]

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 218359, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 218359, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk871930 = require("./871930.jsx"),
@@ -13,16 +12,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d() {
+function u() {
   let {
     hasConsented: e,
     updateConsent: t
-  } = (0, o.lH)(l.YAq.PERSONALIZATION);
+  } = (0, a.lH)(o.YAq.PERSONALIZATION);
   return (0, r.jsx)(i.h, {
-    children: (0, r.jsx)(a.Ay, {
-      title: u.intl.string(c.default.XMPqUx),
-      note: u.intl.format(c.default.Imp6Ns, {
-        helpdeskArticle: s.A.getArticleURL(l.MVz.DATA_USED_FOR_RECOMMENDED)
+    children: (0, r.jsx)(l.Ay, {
+      title: d.intl.string(c.default.XMPqUx),
+      note: d.intl.format(c.default.Imp6Ns, {
+        helpdeskArticle: s.A.getArticleURL(o.MVz.DATA_USED_FOR_RECOMMENDED)
       }),
       value: e,
       onChange: t

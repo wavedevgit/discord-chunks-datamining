@@ -2,16 +2,16 @@
 /** chunk id: 310527, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Je: () => s,
+  Je: () => o,
   OH: () => l,
-  fx: () => o,
+  fx: () => s,
   zf: () => c
 });
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e) {
+function o(e) {
   return r.Bo.get({
     url: a.Rsh.GUILD_VANITY_URL(e),
     oldFormErrors: true,
@@ -33,7 +33,7 @@ function s(e) {
   })
 }
 
-function o() {
+function s() {
   i.h.dispatch({
     type: "GUILD_SETTINGS_VANITY_URL_RESET"
   })

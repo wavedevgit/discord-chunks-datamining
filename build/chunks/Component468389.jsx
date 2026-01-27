@@ -160,7 +160,7 @@ function Q(t, e) {
             if (null != t && t.type === R.rbe.GUILD_VOICE) return (0, a.mMO)(async () => {
               let {
                 default: e
-              } = await Promise.all([i.e("43600"), i.e("28136"), i.e("41278")]).then(i.bind(i, 234355));
+              } = await Promise.all([i.e("43600"), i.e("28136"), i.e("43629")]).then(i.bind(i, 234355));
               return i => {
                 var l, a;
                 return (0, n.jsx)(e, (l = function(t) {

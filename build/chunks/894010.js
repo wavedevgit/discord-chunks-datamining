@@ -2,14 +2,14 @@
 /** chunk id: 894010, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => o,
-  b: () => s
+  G: () => s,
+  b: () => o
 });
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e, t) {
+function o(e, t) {
   r.Bo.patch({
     url: a.Rsh.GAME_NOTIFICATION_SETTING_UPDATE(e),
     body: {
@@ -26,7 +26,7 @@ function s(e, t) {
     })
   })
 }
-async function o() {
+async function s() {
   await r.Bo.get({
     url: a.Rsh.GAME_NOTIFICATION_SETTINGS,
     rejectWithError: true

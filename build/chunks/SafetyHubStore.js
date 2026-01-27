@@ -1,292 +1,242 @@
-/** Chunk was on web.js **/
-/** chunk id: 207913, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 83518 **/
+/** chunk id: 207913, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  A: () => en
+  A: () => Y
 });
-var r, Chunk784041 = require("./784041.js"),
-  a = require.n(Chunk784041),
+var E, i, Chunk784041 = require("./784041.js"),
+  l = require.n(Chunk784041),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk739010 = require("./739010.js"),
   Chunk239093 = require("./239093.js");
-
-function u(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-let d = {},
-  f = {},
-  p = {
+let S = {},
+  s = {},
+  T = {
     state: Chunk739010.PN.ALL_GOOD
   },
-  _ = false,
-  h = false,
-  m = null,
-  g = null,
-  E = false,
-  y = false,
-  b = [],
-  O = false,
-  v = null,
-  A = Chunk239093.Iv.DIDNT_VIOLATE_POLICY,
-  I = "",
-  S = "",
-  T = "",
-  C = 0,
-  N = null,
-  w = false,
-  R = Chunk239093.qN.NONE,
-  P = null;
+  o = false,
+  U = false,
+  c = null,
+  p = null,
+  d = false,
+  C = false,
+  g = [],
+  F = false,
+  I = null,
+  R = Chunk239093.Iv.DIDNT_VIOLATE_POLICY,
+  f = "",
+  h = "",
+  H = "",
+  D = 0,
+  L = null,
+  N = false,
+  P = Chunk239093.qN.NONE,
+  B = null;
 
-function D(e) {
-  _ = true
+function O(t) {
+  let {} = t;
+  H = "", L = null, N = false
 }
-
-function x(e) {
-  let {
-    classifications: t,
-    accountStanding: n,
-    isDsaEligible: r,
-    isAppealEligible: i,
-    username: s,
-    appealEligibility: o
-  } = e;
-  d = a()(t, "id"), p = n, E = r, y = i, _ = false, h = true, m = null, S = s, b = o
-}
-
-function L(e) {
-  let {
-    error: t
-  } = e;
-  _ = false, h = false, m = t
-}
-
-function j(e) {
-  f[e.classificationId] = l.nU.PENDING, _ = true
-}
-
-function M(e) {
-  let {
-    classification: t,
-    accountStanding: n,
-    isDsaEligible: r,
-    username: i,
-    isAppealEligible: a
-  } = e;
-  d[t.id] = t, f[t.id] = l.nU.SUCCESS, p = n, _ = false, m = null, E = r, y = a, h = true, S = i
-}
-
-function k(e) {
-  let {
-    error: t,
-    classificationId: n
-  } = e;
-  _ = false, m = t, f[n] = l.nU.FAILED, h = false
-}
-
-function U(e) {
-  let {
-    classificationId: t
-  } = e;
-  g = t
-}
-
-function G() {
-  g = null, A = c.Iv.DIDNT_VIOLATE_POLICY, I = ""
-}
-
-function V(e) {
-  let {
-    signal: t
-  } = e;
-  A = t
-}
-
-function F(e) {
-  let {
-    userInput: t
-  } = e;
-  I = t
-}
-
-function B(e) {
-  let {} = e;
-  O = true, v = null
-}
-
-function H(e) {
-  let {
-    classificationId: t
-  } = e;
-  O = false, v = null, d[t].appeal_status = {
-    status: l.Wi.REVIEW_PENDING
-  }
-}
-
-function Y(e) {
-  let {
-    error: t
-  } = e;
-  O = false, v = t
-}
-
-function W(e) {
-  let {} = e;
-  T = "", N = null, w = true
-}
-
-function K(e) {
-  let {
-    verificationWebviewUrl: t
-  } = e;
-  T = t, N = null, w = false
-}
-
-function z(e) {
-  let {
-    error: t
-  } = e;
-  T = "", N = t, w = false
-}
-
-function q(e) {
-  let {} = e;
-  T = "", N = null, w = false
-}
-
-function Z(e) {
-  let {} = e;
-  for (let e in R = c.qN.LOADING, d) d[e].is_coppa && (d[e].appeal_status = {
-    status: l.Wi.REVIEW_PENDING
-  })
-}
-
-function X(e) {
-  let {} = e;
-  R = c.qN.LOADING, P = null
-}
-
-function Q(e) {
-  let {} = e;
-  R = c.qN.LOADING, P = null, C += 1
-}
-
-function J(e) {
-  let {
-    success: t
-  } = e;
-  R = t ? c.qN.SUCCESS : C < c.ti ? c.qN.LOADING : c.qN.FAILURE, P = null
-}
-
-function $(e) {
-  let {
-    error: t
-  } = e;
-  R = c.qN.ERROR, P = t
-}
-
-function ee() {
-  _ = false, d = {}, p = {
-    state: l.PN.ALL_GOOD
-  }, g = null, A = c.Iv.DIDNT_VIOLATE_POLICY, I = "", b = []
-}
-class et extends(r = Chunk311907.Ay.Store) {
+class b extends(i = Chunk311907.Ay.Store) {
   isFetching() {
-    return _
+    return o
   }
   getClassifications() {
-    return Object.values(d)
+    return Object.values(S)
   }
-  getClassification(e) {
-    return d[e]
+  getClassification(t) {
+    return S[t]
   }
   getAccountStanding() {
-    return p
-  }
-  getFetchError() {
-    return m
-  }
-  isInitialized() {
-    return h
-  }
-  getClassificationRequestState(e) {
-    return f[e]
-  }
-  getAppealClassificationId() {
-    return g
-  }
-  getIsDsaEligible() {
-    return E
-  }
-  getIsAppealEligible() {
-    return y
-  }
-  getAppealEligibility() {
-    return b
-  }
-  getAppealSignal() {
-    return A
-  }
-  getFreeTextAppealReason() {
-    return I
-  }
-  getIsSubmitting() {
-    return O
-  }
-  getSubmitError() {
-    return v
-  }
-  getUsername() {
-    return S
-  }
-  getAgeVerificationWebviewUrl() {
     return T
   }
-  getAgeVerificationError() {
-    return N
+  getFetchError() {
+    return c
   }
-  getIsLoadingAgeVerification() {
-    return w
+  isInitialized() {
+    return U
   }
-  getAgeCheckStatus() {
-    return R
+  getClassificationRequestState(t) {
+    return s[t]
   }
-  getAgeCheckError() {
-    return P
+  getAppealClassificationId() {
+    return p
   }
-  getAgeCheckAttempts() {
+  getIsDsaEligible() {
+    return d
+  }
+  getIsAppealEligible() {
     return C
   }
-}
-u(et, "displayName", "SafetyHubStore");
-let en = new et(Chunk73153.h, {
-  SAFETY_HUB_FETCH_START: D,
-  SAFETY_HUB_FETCH_SUCCESS: x,
-  SAFETY_HUB_FETCH_FAILURE: L,
-  SAFETY_HUB_FETCH_CLASSIFICATION_START: j,
-  SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS: M,
-  SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: k,
-  SAFETY_HUB_APPEAL_OPEN: U,
-  SAFETY_HUB_APPEAL_CLOSE: G,
-  SAFETY_HUB_APPEAL_SIGNAL_SELECT: V,
-  SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE: F,
-  SAFETY_HUB_REQUEST_REVIEW_START: B,
-  SAFETY_HUB_REQUEST_REVIEW_SUCCESS: H,
-  SAFETY_HUB_REQUEST_REVIEW_FAILURE: Y,
-  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START: W,
-  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: K,
-  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE: z,
-  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN: q,
-  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE: q,
-  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS: Z,
-  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL: X,
-  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START: Q,
-  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: J,
-  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE: $,
-  LOGOUT: ee
+  getAppealEligibility() {
+    return g
+  }
+  getAppealSignal() {
+    return R
+  }
+  getFreeTextAppealReason() {
+    return f
+  }
+  getIsSubmitting() {
+    return F
+  }
+  getSubmitError() {
+    return I
+  }
+  getUsername() {
+    return h
+  }
+  getAgeVerificationWebviewUrl() {
+    return H
+  }
+  getAgeVerificationError() {
+    return L
+  }
+  getIsLoadingAgeVerification() {
+    return N
+  }
+  getAgeCheckStatus() {
+    return P
+  }
+  getAgeCheckError() {
+    return B
+  }
+  getAgeCheckAttempts() {
+    return D
+  }
+}(E = "displayName") in b ? Object.defineProperty(b, E, {
+  value: "SafetyHubStore",
+  enumerable: true,
+  configurable: true,
+  writable: true
+}) : b[E] = "SafetyHubStore";
+let Y = new b(Chunk73153.h, {
+  SAFETY_HUB_FETCH_START: function(t) {
+    o = true
+  },
+  SAFETY_HUB_FETCH_SUCCESS: function(t) {
+    let {
+      classifications: e,
+      accountStanding: n,
+      isDsaEligible: E,
+      isAppealEligible: i,
+      username: _,
+      appealEligibility: A
+    } = t;
+    S = l()(e, "id"), T = n, d = E, C = i, o = false, U = true, c = null, h = _, g = A
+  },
+  SAFETY_HUB_FETCH_FAILURE: function(t) {
+    let {
+      error: e
+    } = t;
+    o = false, U = false, c = e
+  },
+  SAFETY_HUB_FETCH_CLASSIFICATION_START: function(t) {
+    s[t.classificationId] = a.nU.PENDING, o = true
+  },
+  SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS: function(t) {
+    let {
+      classification: e,
+      accountStanding: n,
+      isDsaEligible: E,
+      username: i,
+      isAppealEligible: _
+    } = t;
+    S[e.id] = e, s[e.id] = a.nU.SUCCESS, T = n, o = false, c = null, d = E, C = _, U = true, h = i
+  },
+  SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: function(t) {
+    let {
+      error: e,
+      classificationId: n
+    } = t;
+    o = false, c = e, s[n] = a.nU.FAILED, U = false
+  },
+  SAFETY_HUB_APPEAL_OPEN: function(t) {
+    let {
+      classificationId: e
+    } = t;
+    p = e
+  },
+  SAFETY_HUB_APPEAL_CLOSE: function() {
+    p = null, R = u.Iv.DIDNT_VIOLATE_POLICY, f = ""
+  },
+  SAFETY_HUB_APPEAL_SIGNAL_SELECT: function(t) {
+    let {
+      signal: e
+    } = t;
+    R = e
+  },
+  SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE: function(t) {
+    let {
+      userInput: e
+    } = t;
+    f = e
+  },
+  SAFETY_HUB_REQUEST_REVIEW_START: function(t) {
+    let {} = t;
+    F = true, I = null
+  },
+  SAFETY_HUB_REQUEST_REVIEW_SUCCESS: function(t) {
+    let {
+      classificationId: e
+    } = t;
+    F = false, I = null, S[e].appeal_status = {
+      status: a.Wi.REVIEW_PENDING
+    }
+  },
+  SAFETY_HUB_REQUEST_REVIEW_FAILURE: function(t) {
+    let {
+      error: e
+    } = t;
+    F = false, I = e
+  },
+  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START: function(t) {
+    let {} = t;
+    H = "", L = null, N = true
+  },
+  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: function(t) {
+    let {
+      verificationWebviewUrl: e
+    } = t;
+    H = e, L = null, N = false
+  },
+  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE: function(t) {
+    let {
+      error: e
+    } = t;
+    H = "", L = e, N = false
+  },
+  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN: O,
+  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE: O,
+  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS: function(t) {
+    let {} = t;
+    for (let t in P = u.qN.LOADING, S) S[t].is_coppa && (S[t].appeal_status = {
+      status: a.Wi.REVIEW_PENDING
+    })
+  },
+  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL: function(t) {
+    let {} = t;
+    P = u.qN.LOADING, B = null
+  },
+  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START: function(t) {
+    let {} = t;
+    P = u.qN.LOADING, B = null, D += 1
+  },
+  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: function(t) {
+    let {
+      success: e
+    } = t;
+    P = e ? u.qN.SUCCESS : D < u.ti ? u.qN.LOADING : u.qN.FAILURE, B = null
+  },
+  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE: function(t) {
+    let {
+      error: e
+    } = t;
+    P = u.qN.ERROR, B = e
+  },
+  LOGOUT: function() {
+    o = false, S = {}, T = {
+      state: a.PN.ALL_GOOD
+    }, p = null, R = u.Iv.DIDNT_VIOLATE_POLICY, f = "", g = []
+  }
 })

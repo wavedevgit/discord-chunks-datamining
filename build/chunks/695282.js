@@ -13,7 +13,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js");
 let u = (e, t, n) => {
     let r = null != n ? e.getCustomEmojiById(n) : null;
-    return (null == r ? true : r.type) === o.i.GUILD ? {
+    return (null == r ? true : r.type) === s.i.GUILD ? {
       emoji: r,
       joinedEmojiSourceGuildRecord: t.getGuild(null == r ? true : r.guildId)
     } : {
@@ -26,9 +26,9 @@ let u = (e, t, n) => {
       emojiId: t,
       refreshPositionKey: n
     } = e, {
-      joinedEmojiSourceGuildRecord: o,
+      joinedEmojiSourceGuildRecord: s,
       emoji: d
-    } = (0, i.cf)([s.Ay, a.A], () => u(s.Ay, a.A, t)), f = null != o, p = null != o && o.features.has(c.GuildFeatures.DISCOVERABLE), _ = (!f || p) && null != t, [h, m] = r.useState(_), [g, E] = r.useState(null), y = null != o ? l.GO.createFromGuildRecord(o) : null, [b, O] = r.useState(y), [v, A] = r.useState(null), I = r.useRef(n);
+    } = (0, i.cf)([o.Ay, a.A], () => u(o.Ay, a.A, t)), f = null != s, p = null != s && s.features.has(c.GuildFeatures.DISCOVERABLE), _ = (!f || p) && null != t, [h, m] = r.useState(_), [g, E] = r.useState(null), y = null != s ? l.GO.createFromGuildRecord(s) : null, [b, O] = r.useState(y), [v, A] = r.useState(null), I = r.useRef(n);
     return r.useEffect(() => {
       I.current = n
     }), r.useEffect(() => {
@@ -51,7 +51,7 @@ let u = (e, t, n) => {
       expressionSourceGuild: b,
       expressionSourceApplication: v,
       sourceType: g,
-      joinedEmojiSourceGuildRecord: o,
+      joinedEmojiSourceGuildRecord: s,
       hasJoinedEmojiSourceGuild: f,
       emoji: d,
       isFetching: h

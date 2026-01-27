@@ -9,7 +9,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk626584 = require("./626584.js"),
   Chunk184989 = require("./184989.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,7 +41,7 @@ class u extends Chunk311907.Ay.Store {
     this.delete(e)
   }
   initialize() {
-    this.waitFor(s.A)
+    this.waitFor(o.A)
   }
   handleCacheLoadedLazy(e) {
     for (let [t, n] of(this.guilds = new Map, this.channels = new Map, e.basicGuildChannels))
@@ -51,7 +51,7 @@ class u extends Chunk311907.Ay.Store {
     this.guilds.clear(), this.channels.clear()
   }
   handleConnectionOpen(e) {
-    let t = s.A.allGuildIds();
+    let t = o.A.allGuildIds();
     for (let e of this.guilds.keys()) t.has(e) || this.delete(e)
   }
   handleLogout(e) {
@@ -68,7 +68,7 @@ class u extends Chunk311907.Ay.Store {
       CACHE_LOADED_LAZY: e => this.handleCacheLoadedLazy(e),
       CONNECTION_OPEN: e => this.handleConnectionOpen(e),
       LOGOUT: e => this.handleLogout(e)
-    }), o(this, "channels", new Map), o(this, "guilds", new Map)
+    }), s(this, "channels", new Map), s(this, "guilds", new Map)
   }
 }
 let d = new u

@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   Ay: () => l,
-  Fq: () => s,
-  qe: () => o
+  Fq: () => o,
+  qe: () => s
 });
 var Chunk600975 = require("./600975.js"),
   Chunk945810 = require("./945810.js"),
   Chunk688151 = require("./688151.js");
-let s = (0, Chunk945810.mj)({
+let o = (0, Chunk945810.mj)({
     name: "2025-10-seasonal-gifting-2025",
     kind: "user",
     defaultConfig: {
@@ -24,7 +24,7 @@ let s = (0, Chunk945810.mj)({
       }
     }
   }),
-  o = (0, Chunk600975.C)({
+  s = (0, Chunk600975.C)({
     id: "2025-11_seasonal_gifting_2025_reminder",
     label: "Seasonal Gifting 2025 Reminder",
     kind: "user",
@@ -40,4 +40,4 @@ let s = (0, Chunk945810.mj)({
       }
     }]
   }),
-  l = s
+  l = o

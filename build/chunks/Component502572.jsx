@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk781696 = require("./781696.jsx");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -71,7 +71,7 @@ function f(e) {
   let {
     mouseLeaveDelay: t = 100
   } = e, n = u(e, ["mouseLeaveDelay"]), {
-    children: s,
+    children: o,
     className: l
   } = n, d = u(n, ["children", "className"]), f = i.useRef(0), [p, _] = i.useState(false);
 
@@ -86,12 +86,12 @@ function f(e) {
     className: l,
     onMouseEnter: 0 !== t ? h : () => {},
     onMouseLeave: 0 !== t ? m : () => {},
-    children: (0, r.jsx)(a.ST, c(o({
+    children: (0, r.jsx)(a.ST, c(s({
       "data-migration-pending": true,
       forceOpen: p,
       disableTooltipPointerEvents: false
     }, d), {
-      children: s
+      children: o
     }))
   })
 }

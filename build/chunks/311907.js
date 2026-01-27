@@ -7,7 +7,7 @@ require.d(exports, {
   UT: () => c.U,
   bG: () => u.bG,
   cf: () => u.cf,
-  il: () => o.i,
+  il: () => s.i,
   mk: () => i.m,
   ru: () => r.r,
   yK: () => u.yK
@@ -22,7 +22,7 @@ var Chunk968441 = require("./968441.js"),
   Chunk417597 = require("./417597.js");
 
 function d() {
-  o.i.initialize()
+  s.i.initialize()
 }
 let f = {
   Emitter: Chunk390225.A,
@@ -33,6 +33,6 @@ let f = {
   connectStores: Chunk575675.A,
   initialize: d,
   get initialized() {
-    return o.i.initialized
+    return s.i.initialized
   }
 }

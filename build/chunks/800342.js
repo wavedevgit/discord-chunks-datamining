@@ -99,7 +99,7 @@ function g(e) {
 }
 
 function E(e) {
-  let t = o.A.get(e),
+  let t = s.A.get(e),
     n = null != t && (l.A.inTestModeForApplication(t.applicationId) || a.A.inDevModeForApplication(t.applicationId));
   return i.h.dispatch({
     type: "STORE_LISTINGS_FETCH_START",
@@ -154,7 +154,7 @@ function O() {
 }
 
 function v() {
-  (0, s.pX)(u.BVt.APPLICATION_STORE)
+  (0, o.pX)(u.BVt.APPLICATION_STORE)
 }
 
 function A(e) {
@@ -171,5 +171,5 @@ function I(e, t) {
       pathname: r
     } = n,
     i = h(n, ["pathname"]);
-  (0, s.pX)(r, i)
+  (0, o.pX)(r, i)
 }

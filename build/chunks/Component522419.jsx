@@ -21,7 +21,7 @@ function c(e) {
   (0, i.mMO)(async () => {
     let {
       default: e
-    } = await n.e("24958").then(n.bind(n, 876717));
+    } = await Promise.all([n.e("83792"), n.e("94731")]).then(n.bind(n, 876717));
     return n => {
       let {
         transitionState: i,
@@ -37,10 +37,10 @@ function c(e) {
     }
   }, {
     onCloseCallback: () => {
-      (0, s.U)(t), a.default.track(l.HAw.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
-        action: o.Qi.DISMISS,
+      (0, o.U)(t), a.default.track(l.HAw.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+        action: s.Qi.DISMISS,
         channel_id: t,
-        warning_medium: o.W_.MODAL,
+        warning_medium: s.W_.MODAL,
         blocked_user_ids: c,
         ignored_user_ids: u
       })

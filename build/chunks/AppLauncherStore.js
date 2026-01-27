@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk500049 = require("./500049.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,22 +33,22 @@ function c(e) {
     initialState: r,
     activeChannelId: i
   } = e;
-  return l.show = true, l.entrypoint = t, l.lastShownEntrypoint = t, l.closeReason = s.Se.DISMISSED, l.activeViewType = n, l.activeChannelId = i, l.initialState = r, true
+  return l.show = true, l.entrypoint = t, l.lastShownEntrypoint = t, l.closeReason = o.Se.DISMISSED, l.activeViewType = n, l.activeChannelId = i, l.initialState = r, true
 }
 
 function u(e) {
   let {
-    closeReason: t = s.Se.DISMISSED
+    closeReason: t = o.Se.DISMISSED
   } = e;
-  return l.show = false, l.entrypoint = s.s4.NONE, l.closeReason = t, l.initialState = true, l.activeChannelId = null, true
+  return l.show = false, l.entrypoint = o.s4.NONE, l.closeReason = t, l.initialState = true, l.activeChannelId = null, true
 }
 class d extends(r = Chunk311907.Ay.Store) {
   initialize() {}
   shouldShowPopup() {
-    return l.show && l.entrypoint === s.s4.TEXT
+    return l.show && l.entrypoint === o.s4.TEXT
   }
   shouldShowModal() {
-    return l.show && l.entrypoint === s.s4.VOICE
+    return l.show && l.entrypoint === o.s4.VOICE
   }
   entrypoint() {
     return l.entrypoint
@@ -73,16 +73,16 @@ class d extends(r = Chunk311907.Ay.Store) {
 
 function f() {
   u({
-    closeReason: s.Se.DISMISSED
+    closeReason: o.Se.DISMISSED
   })
 }
 
 function p() {
   u({
-    closeReason: s.Se.COMMAND
+    closeReason: o.Se.COMMAND
   })
 }
-o(d, "displayName", "AppLauncherStore");
+s(d, "displayName", "AppLauncherStore");
 let _ = new d(Chunk73153.h, {
   APP_LAUNCHER_SHOW: c,
   APP_LAUNCHER_DISMISS: u,

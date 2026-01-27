@@ -2,13 +2,13 @@
 /** chunk id: 827785, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ez: () => V,
-  gZ: () => M
+  Ez: () => F,
+  gZ: () => j
 }), require("./896048.js"), require("./733351.js"), require("./65821.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
   Chunk989349 = require("./989349.js"),
-  s = require.n(Chunk989349),
+  o = require.n(Chunk989349),
   Chunk478437 = require("./478437.js"),
   Chunk715943 = require("./715943.js"),
   Chunk308528 = require("./308528.js"),
@@ -66,17 +66,17 @@ function D(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = require("./743361.js").A,
-  j = (e, t) => {
+let x = require("./743361.js").A,
+  M = (e, t) => {
     var n;
     return null == (n = e.find(e => e.name === t)) ? true : n.value
   },
-  M = {
+  j = {
     [Chunk73510.Ik.BUILT_IN]: {
       id: Chunk73510.Ik.BUILT_IN,
       type: Chunk392054.Hf.BUILT_IN,
@@ -92,7 +92,7 @@ let L = require("./743361.js").A,
       }
     }
   },
-  k = [...L, {
+  k = [...x, {
     id: "-1",
     untranslatedName: "shrug",
     displayName: "shrug",
@@ -118,7 +118,7 @@ let L = require("./743361.js").A,
     }],
     execute: e => {
       var t;
-      let n = null != (t = j(e, "message")) ? t : "";
+      let n = null != (t = M(e, "message")) ? t : "";
       return {
         content: "".concat(n, " \xaf\\_(ツ)_/\xaf").trim()
       }
@@ -149,7 +149,7 @@ let L = require("./743361.js").A,
     }],
     execute: e => {
       var t;
-      let n = null != (t = j(e, "message")) ? t : "";
+      let n = null != (t = M(e, "message")) ? t : "";
       return {
         content: "".concat(n, " (╯\xb0□\xb0)╯︵ ┻━┻").trim()
       }
@@ -180,7 +180,7 @@ let L = require("./743361.js").A,
     }],
     execute: e => {
       var t;
-      let n = null != (t = j(e, "message")) ? t : "";
+      let n = null != (t = M(e, "message")) ? t : "";
       return {
         content: "".concat(n, " ┬─┬ノ( \xba _ \xbaノ)").trim()
       }
@@ -219,7 +219,7 @@ let L = require("./743361.js").A,
     execute: e => {
       var t;
       return {
-        content: null != (t = j(e, "message")) ? t : "",
+        content: null != (t = M(e, "message")) ? t : "",
         tts: true
       }
     }
@@ -250,7 +250,7 @@ let L = require("./743361.js").A,
     }],
     execute: e => {
       var t;
-      let n = null != (t = j(e, "message")) ? t : "";
+      let n = null != (t = M(e, "message")) ? t : "";
       return {
         content: "_".concat(n, "_")
       }
@@ -282,7 +282,7 @@ let L = require("./743361.js").A,
     }],
     execute: e => {
       var t;
-      let n = null != (t = j(e, "message")) ? t : "";
+      let n = null != (t = M(e, "message")) ? t : "";
       return {
         content: (0, T.ZGg)(n).trim()
       }
@@ -324,7 +324,7 @@ let L = require("./743361.js").A,
         channel: i
       } = t;
       if (null == r || null == i) return;
-      let a = null != (n = j(e, "new_nick")) ? n : "";
+      let a = null != (n = M(e, "new_nick")) ? n : "";
       l.A.changeNickname(r.id, i.id, T.ME, a || "")
     }
   }, {
@@ -373,8 +373,8 @@ let L = require("./743361.js").A,
       var n, r;
       let {
         channel: i
-      } = t, a = null != (n = j(e, "name")) ? n : "", s = null != (r = j(e, "message")) ? r : "", l = await (0, m.Nw)(i, a, o.r.PUBLIC_THREAD, (0, h.Gl)(i, null), "Slash Command");
-      d.A.sendMessage(l.id, _.Ay.parse(l, s), true, {
+      } = t, a = null != (n = M(e, "name")) ? n : "", o = null != (r = M(e, "message")) ? r : "", l = await (0, m.Nw)(i, a, s.r.PUBLIC_THREAD, (0, h.Gl)(i, null), "Slash Command");
+      d.A.sendMessage(l.id, _.Ay.parse(l, o), true, {
         location: N.Hx.THREAD_CREATION
       })
     }
@@ -427,12 +427,12 @@ let L = require("./743361.js").A,
         channel: i
       } = t;
       if (null == r || null == i) return;
-      let a = null != (n = j(e, "user")) ? n : "";
+      let a = null != (n = M(e, "user")) ? n : "";
       b.A.canManageUser(T.xBc.KICK_MEMBERS, a, r) ? (async () => {
         var t;
         let n = O.default.getUser(a);
         if (null == n) throw Error();
-        await u.A.kickUser(r.id, a, null != (t = j(e, "reason")) ? t : ""), d.A.sendBotMessage(i.id, w.intl.formatToPlainString(w.t["9wzHDV"], {
+        await u.A.kickUser(r.id, a, null != (t = M(e, "reason")) ? t : ""), d.A.sendBotMessage(i.id, w.intl.formatToPlainString(w.t["9wzHDV"], {
           user: A.Ay.getUserTag(n)
         }))
       })().catch(() => {
@@ -530,14 +530,14 @@ let L = require("./743361.js").A,
         channel: i
       } = t;
       if (null == r || null == i) return;
-      let a = null != (n = j(e, "user")) ? n : "";
+      let a = null != (n = M(e, "user")) ? n : "";
       b.A.canManageUser(T.xBc.BAN_MEMBERS, a, r) ? (async () => {
         var t, n;
         if ("" === a) throw Error();
-        let s = null != (t = j(e, "delete_messages")) ? t : 0,
-          o = null != (n = j(e, "reason")) ? n : "",
+        let o = null != (t = M(e, "delete_messages")) ? t : 0,
+          s = null != (n = M(e, "reason")) ? n : "",
           l = O.default.getUser(a);
-        await u.A.banUser(r.id, a, s, o), d.A.sendBotMessage(i.id, w.intl.formatToPlainString(w.t.YflWdM, {
+        await u.A.banUser(r.id, a, o, s), d.A.sendBotMessage(i.id, w.intl.formatToPlainString(w.t.YflWdM, {
           user: null != l ? A.Ay.getUserTag(l) : a
         }))
       })().catch(() => {
@@ -580,7 +580,7 @@ let L = require("./743361.js").A,
       },
       required: true,
       get choices() {
-        return (0, C.ny)().map(e => x(P({}, e), {
+        return (0, C.ny)().map(e => L(P({}, e), {
           name: e.label,
           displayName: e.label
         }))
@@ -609,22 +609,22 @@ let L = require("./743361.js").A,
         channel: r
       } = t;
       if (null == n || null == r) return;
-      let i = j(e, "user");
+      let i = M(e, "user");
       (0, p.b)(n.id, i) ? (async () => {
         var t, a;
-        let o = null != (t = j(e, "duration")) ? t : "",
-          l = null != (a = j(e, "reason")) ? a : "",
+        let s = null != (t = M(e, "duration")) ? t : "",
+          l = null != (a = M(e, "reason")) ? a : "",
           c = O.default.getUser(i);
         if (null == c) throw Error();
         await u.A.setCommunicationDisabledUntil({
           guildId: n.id,
           userId: i,
-          communicationDisabledUntilTimestamp: s()().add(o, "s").toISOString(),
-          duration: o,
+          communicationDisabledUntilTimestamp: o()().add(s, "s").toISOString(),
+          duration: s,
           reason: l
         }), d.A.sendBotMessage(r.id, w.intl.formatToPlainString(w.t.BbRV6o, {
           user: A.Ay.getUserTag(c),
-          duration: o
+          duration: s
         }))
       })().catch(() => {
         d.A.sendBotMessage(r.id, w.intl.string(w.t["+mWyVq"]))
@@ -676,14 +676,14 @@ let L = require("./743361.js").A,
         channel: r
       } = t;
       if (null == r) return;
-      let a = j(e, "user"),
-        s = null != (n = j(e, "message")) ? n : "";
+      let a = M(e, "user"),
+        o = null != (n = M(e, "message")) ? n : "";
       (async () => {
         await c.A.openPrivateChannel({
           recipientIds: a
         }).then(e => {
           let t = y.A.getChannel(e);
-          i()(null != t, "Newly created PrivateChannel is null"), d.A.sendMessage(t.id, _.Ay.parse(t, s), true, {
+          i()(null != t, "Newly created PrivateChannel is null"), d.A.sendMessage(t.id, _.Ay.parse(t, o), true, {
             location: N.Hx.PRIVATE_MESSAGE_COMMAND
           })
         })
@@ -693,7 +693,7 @@ let L = require("./743361.js").A,
     }
   }],
   G = k.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
-  V = (e, t, n) => {
+  F = (e, t, n) => {
     let r = t ? k : G;
     return r.filter(t => e.includes(t.type) && (!n || t.inputType === I.y$.BUILT_IN_TEXT || t.inputType === I.y$.BUILT_IN_INTEGRATION))
   }

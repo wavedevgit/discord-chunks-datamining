@@ -4,13 +4,13 @@
 require.d(exports, {
   OW: () => c,
   dm: () => u,
-  eM: () => o,
+  eM: () => s,
   ly: () => d
 }), require("./228524.js"), require("./65821.js"), require("./747238.js");
 var Chunk565150 = require("./565150.js"),
   Chunk762555 = require("./762555.js"),
   Chunk381941 = require("./381941.js");
-let s = [{
+let o = [{
     reName: /\.jpe?g$/i,
     name: e => "image".concat(e, ".jpg"),
     type: "image/jpeg"
@@ -67,7 +67,7 @@ let s = [{
     name: e => "video".concat(e, ".webm"),
     type: "image/webm"
   }],
-  o = 524288e3;
+  s = 524288e3;
 
 function l(e) {
   let {
@@ -80,14 +80,14 @@ function c(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
     a = arguments.length > 2 ? arguments[2] : true,
-    s = {
+    o = {
       id: null != (t = null == n ? true : n.toString()) ? t : e.id
     };
-  null != e.description && (s.description = e.description);
-  let o = l({
+  null != e.description && (o.description = e.description);
+  let s = l({
     spoiler: e.spoiler
   });
-  return s.filename = "".concat(o).concat(null != a ? a : e.filename), s.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (s.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (s.waveform = e.waveform), "isThumbnail" in e && true === e.isThumbnail && (s.is_thumbnail = e.isThumbnail), "clip" in e && null != e.clip && (s.is_clip = true, s.title = e.clip.name, s.application_id = e.clip.applicationId, s.clip_created_at = (0, i.U)(e.clip.id), s.clip_participant_ids = (0, i.g)(e.clip.users)), "item" in e && null != e.item && e.item.platform === r.xz.WEB && "mimeType" in e && null != e.mimeType && (s.original_content_type = e.mimeType), s
+  return o.filename = "".concat(s).concat(null != a ? a : e.filename), o.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (o.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (o.waveform = e.waveform), "isThumbnail" in e && true === e.isThumbnail && (o.is_thumbnail = e.isThumbnail), "clip" in e && null != e.clip && (o.is_clip = true, o.title = e.clip.name, o.application_id = e.clip.applicationId, o.clip_created_at = (0, i.U)(e.clip.id), o.clip_participant_ids = (0, i.g)(e.clip.users)), "item" in e && null != e.item && e.item.platform === r.xz.WEB && "mimeType" in e && null != e.mimeType && (o.original_content_type = e.mimeType), o
 }
 
 function u(e) {
@@ -101,7 +101,7 @@ function u(e) {
 }
 
 function d(e) {
-  var t, n, r, i, a, o;
+  var t, n, r, i, a, s;
   let l, {
       uri: c,
       i: u,
@@ -110,9 +110,9 @@ function d(e) {
     } = e,
     p = c.split("/"),
     _ = p[p.length - 1];
-  _ = null != (t = null == (o = _.split("?")) || null == (a = o[0]) ? true : a.toLowerCase()) ? t : "";
-  let h = s.find(e => e.reName.test(_));
-  if (null == h && null != d && (h = s.find(e => e.reName.test(d))), null != h && null != d) {
+  _ = null != (t = null == (s = _.split("?")) || null == (a = s[0]) ? true : a.toLowerCase()) ? t : "";
+  let h = o.find(e => e.reName.test(_));
+  if (null == h && null != d && (h = o.find(e => e.reName.test(d))), null != h && null != d) {
     let e = h.name(u).split(".").pop(),
       t = d.lastIndexOf(".");
     l = false !== t ? "".concat(d.substr(0, t), ".").concat(e) : "".concat(d, ".").concat(e)

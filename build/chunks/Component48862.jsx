@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
@@ -58,7 +58,7 @@ function v(e) {
   let {
     className: t,
     iconOnly: n
-  } = e, a = (0, o.bG)([_.A, p.A], () => {
+  } = e, a = (0, s.bG)([_.A, p.A], () => {
     let e = p.A.getChannel(_.A.getChannelId());
     return (null == e ? true : e.isPrivate()) ? m.liQ.DM_CHANNEL : m.liQ.GUILD_CHANNEL
   }), {
@@ -75,7 +75,7 @@ function v(e) {
     })
   }, [a, y]);
   let b = () => (0, r.jsxs)("div", {
-      className: s()(E.zr, t),
+      className: o()(E.zr, t),
       children: [(0, r.jsx)(c.tvc, {
         size: "md",
         className: E.M2,

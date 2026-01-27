@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 100767, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 100767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $j: () => i,
-  _X: () => o,
-  aW: () => a,
+  _X: () => a,
+  aW: () => l,
   wz: () => s
 }), require("./747238.js"), require("./812715.js");
 var Chunk8880 = require("./8880.js");
 let i = null != window.speechSynthesis;
 
-function a(e, t) {
+function l(e, t) {
   let n = e.replace(/(https?:\/\/[^\s]+)/g, e => {
     let t = e.match(/^https?:\/\/(?:www\.)?([^/?#]+)(?:[/?#]|$)/i);
     return null != t ? t[1] : ""
@@ -24,6 +23,6 @@ function s(e, t) {
   i && (e.voice = t, speechSynthesis.speak(e))
 }
 
-function o() {
+function a() {
   i && speechSynthesis.cancel()
 }

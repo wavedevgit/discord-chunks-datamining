@@ -12,9 +12,9 @@ var Chunk202384 = require("./202384.js"),
   Chunk652215 = require("./652215.js");
 let l = e => {
     var t, n;
-    return (null == (t = e.features) ? true : t.includes(o.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (n = e.features) ? true : n.includes(o.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL))
+    return (null == (t = e.features) ? true : t.includes(s.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (n = e.features) ? true : n.includes(s.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL))
   },
   c = e => {
     let t = a.A.getRequest(e);
-    null != t && t.applicationStatus !== i.B5.STARTED ? (0, s.pX)(o.BVt.GUILD_MEMBER_VERIFICATION(e)) : (0, r.Ze)(e)
+    null != t && t.applicationStatus !== i.B5.STARTED ? (0, o.pX)(s.BVt.GUILD_MEMBER_VERIFICATION(e)) : (0, r.Ze)(e)
   }

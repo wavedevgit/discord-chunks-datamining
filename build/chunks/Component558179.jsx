@@ -160,12 +160,12 @@ class C extends(i = Chunk64700.PureComponent) {
       state: n,
       parser: r,
       output: i
-    } = this.props, s = i(r("".concat(t, "\n\n"), y({
+    } = this.props, o = i(r("".concat(t, "\n\n"), y({
       inline: false
     }, n)));
     return (0, a.jsx)("div", {
       className: l()(m.wD, e),
-      children: s
+      children: o
     })
   }
 }

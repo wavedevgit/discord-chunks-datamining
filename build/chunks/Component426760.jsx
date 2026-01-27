@@ -36,10 +36,10 @@ function C(e) {
     onClose: C,
     scrollToPowerupCards: N
   } = e, [w, R] = i.useState(true), P = i.useRef(false), D = (0, l.A)(() => Date.now()), {
-    analyticsLocations: x
-  } = (0, c.Ay)(), L = i.useRef(null), j = i.useRef(null), M = i.useRef(null), k = i.useCallback(() => {
-    null != M.current && null != j.current && j.current.scrollIntoViewNode({
-      node: M.current,
+    analyticsLocations: L
+  } = (0, c.Ay)(), x = i.useRef(null), M = i.useRef(null), j = i.useRef(null), k = i.useCallback(() => {
+    null != j.current && null != M.current && M.current.scrollIntoViewNode({
+      node: j.current,
       animate: true,
       shouldScrollToStart: true
     })
@@ -48,30 +48,30 @@ function C(e) {
   }, [k]), G = i.useCallback(() => {
     null == C || C(), _.default.track(I.HAw.MODAL_DISMISSED, {
       type: I.liQ.PREMIUM_GUILD_USER_MODAL,
-      location_stack: x,
+      location_stack: L,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id,
       duration_open_ms: Date.now() - D
     })
-  }, [C, t, x, D, n.id]), V = i.useCallback(e => {
+  }, [C, t, L, D, n.id]), F = i.useCallback(e => {
     e && !P.current && (_.default.track(I.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: I.liQ.PREMIUM_GUILD_USER_MODAL,
-      location_stack: x,
+      location_stack: L,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id
     }), P.current = true)
-  }, [t, x, n.id]);
+  }, [t, L, n.id]);
   i.useEffect(() => {
     _.default.track(I.HAw.OPEN_MODAL, {
       type: I.liQ.PREMIUM_GUILD_USER_MODAL,
-      location_stack: x,
+      location_stack: L,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id
     })
-  }, [n.id, t, x]), i.useEffect(() => {
+  }, [n.id, t, L]), i.useEffect(() => {
     function e(e) {
       "Escape" === e.key && G()
     }
@@ -79,11 +79,11 @@ function C(e) {
       window.removeEventListener("keydown", e)
     }
   }, [G]);
-  let F = (0, d.C$)(n.id, "GuildBoostingMarketingRefresh"),
+  let V = (0, d.C$)(n.id, "GuildBoostingMarketingRefresh"),
     B = (0, a.bG)([f.A], () => f.A.hasFetchedCatalog(n.id));
   i.useEffect(() => {
-    F && !B && (0, u.z9)(n.id)
-  }, [n.id, F, B]);
+    V && !B && (0, u.z9)(n.id)
+  }, [n.id, V, B]);
   let H = (0, a.bG)([p.A], () => p.A.hasFetchedPowerupCatalog(n.id));
   return i.useEffect(() => {
     if (N && H) {
@@ -95,17 +95,17 @@ function C(e) {
   }, [N, k, H]), (0, r.jsxs)(r.Fragment, {
     children: [null != C && (0, r.jsx)("div", {
       className: T.Yk,
-      children: (0, r.jsx)(o.DUT, {
+      children: (0, r.jsx)(s.DUT, {
         className: T.b,
         onClick: G,
         "aria-label": S.intl.string(S.t.cpT0Cq),
-        children: (0, r.jsx)(o.PGe, {
+        children: (0, r.jsx)(s.PGe, {
           size: "md",
           color: "currentColor"
         })
       })
-    }), (0, r.jsxs)(o.GtU, {
-      ref: j,
+    }), (0, r.jsxs)(s.GtU, {
+      ref: M,
       className: T.XG,
       children: [(0, r.jsxs)("div", {
         className: T.wx,
@@ -127,7 +127,7 @@ function C(e) {
       }), (0, r.jsx)("div", {
         className: T.uE,
         children: (0, r.jsx)(O.A, {
-          ref: M,
+          ref: j,
           guild: e.guild,
           onClose: G
         })
@@ -140,11 +140,11 @@ function C(e) {
             guild: n
           }), (0, r.jsx)(h.A, {}), (0, r.jsx)(g.A, {})]
         })
-      }), (0, r.jsx)(s.L, {
-        innerRef: L,
-        onChange: V,
+      }), (0, r.jsx)(o.L, {
+        innerRef: x,
+        onChange: F,
         children: (0, r.jsx)("div", {
-          ref: L,
+          ref: x,
           className: T.mR
         })
       })]

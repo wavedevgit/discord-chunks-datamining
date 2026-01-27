@@ -8,7 +8,7 @@ var Chunk317374 = require("./317374.js"),
   Chunk681456 = require("./681456.js"),
   Chunk988440 = require("./988440.js");
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -19,12 +19,12 @@ function s(e, t) {
   return n
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? s(Object(n), true).forEach(function(t) {
+    t % 2 ? o(Object(n), true).forEach(function(t) {
       l(e, t, n[t])
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : s(Object(n)).forEach(function(t) {
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : o(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
     })
   }
@@ -55,7 +55,7 @@ function u() {
     n = t.payload;
   switch (t.type) {
     case r.Vw:
-      return o(o({}, e), {}, {
+      return s(s({}, e), {}, {
         itemType: n.itemType,
         item: n.item,
         sourceId: n.sourceId,
@@ -64,26 +64,26 @@ function u() {
         didDrop: false
       });
     case r.BS:
-      return o(o({}, e), {}, {
+      return s(s({}, e), {}, {
         isSourcePublic: true
       });
     case r.l6:
-      return o(o({}, e), {}, {
+      return s(s({}, e), {}, {
         targetIds: n.targetIds
       });
     case i.v4:
       if (false === e.targetIds.indexOf(n.targetId)) return e;
-      return o(o({}, e), {}, {
+      return s(s({}, e), {}, {
         targetIds: (0, a.FF)(e.targetIds, n.targetId)
       });
     case r.q2:
-      return o(o({}, e), {}, {
+      return s(s({}, e), {}, {
         dropResult: n.dropResult,
         didDrop: true,
         targetIds: []
       });
     case r.dU:
-      return o(o({}, e), {}, {
+      return s(s({}, e), {}, {
         itemType: null,
         item: null,
         sourceId: null,

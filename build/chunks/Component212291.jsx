@@ -19,11 +19,11 @@ let l = {
         type: t,
         title: n,
         body: i,
-        hasButton: o
-      } = e, l = o ? (0, r.jsx)(a.Button, {
+        hasButton: s
+      } = e, l = s ? (0, r.jsx)(a.Button, {
         text: "Action"
       }) : true;
-      return (0, r.jsx)(s.Nz, {
+      return (0, r.jsx)(o.Nz, {
         "data-migration-pending": true,
         type: t,
         title: n,
@@ -81,7 +81,7 @@ let l = {
         disabled: n,
         required: i,
         errorMessage: a
-      } = e, s = (null == a ? true : a.trim()) === "" ? true : a, l = ["h1", "h2", "h3", "h4", "h5", "legend"];
+      } = e, o = (null == a ? true : a.trim()) === "" ? true : a, l = ["h1", "h2", "h3", "h4", "h5", "legend"];
       return (0, r.jsx)("div", {
         style: {
           display: "flex",
@@ -101,13 +101,13 @@ let l = {
               color: "#666"
             },
             children: [e, ":"]
-          }), (0, r.jsx)(o.z, {
+          }), (0, r.jsx)(s.z, {
             "data-migration-pending": true,
             tag: e,
             disabled: n,
             required: i,
-            error: s,
-            errorId: null != s ? "error-id-".concat(e) : true,
+            error: o,
+            errorId: null != o ? "error-id-".concat(e) : true,
             children: t
           })]
         }, e))

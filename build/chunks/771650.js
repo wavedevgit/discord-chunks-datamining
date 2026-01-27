@@ -6,7 +6,7 @@ require.d(exports, {
   G0: () => ep,
   If: () => e_,
   WL: () => em,
-  Yd: () => X,
+  Yd: () => Q,
   gR: () => eh,
   gU: () => ef,
   sC: () => K,
@@ -15,7 +15,7 @@ require.d(exports, {
 var Chunk91871 = require("./91871.js"),
   i = require.n(Chunk91871),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk989349 = require("./989349.js"),
   l = require.n(Chunk989349),
   Chunk629357 = require("./629357.js"),
@@ -84,38 +84,38 @@ function D() {
   return new Set(l().weekdays().map(e => e.toLowerCase()))
 }
 
-function x() {
+function L() {
   let e = new Date().getFullYear();
-  return new Set(s().range(2015, e + 1).map(e => e.toString()))
+  return new Set(o().range(2015, e + 1).map(e => e.toString()))
 }
 
-function L(e, t) {
+function x(e, t) {
   return [e, e.clone().add(1, t)]
 }
 
-function j(e) {
+function M(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
-  return L(l()().startOf(e).add(t, e), e)
+  return x(l()().startOf(e).add(t, e), e)
 }
 
-function M(e, t, n) {
-  return L(l()(e, t).local(), n)
+function j(e, t, n) {
+  return x(l()(e, t).local(), n)
 }
 
 function k() {
   return {
-    [T.intl.string(T.t.HYiVEQ)]: () => j("day"),
-    [T.intl.string(T.t.cu86KC)]: () => j("day", false),
-    [T.intl.string(T.t["FvBj/6"])]: () => j("week"),
-    [T.intl.string(T.t["20uWCw"])]: () => j("month"),
-    [T.intl.string(T.t["dXC/hn"])]: () => j("year")
+    [T.intl.string(T.t.HYiVEQ)]: () => M("day"),
+    [T.intl.string(T.t.cu86KC)]: () => M("day", false),
+    [T.intl.string(T.t["FvBj/6"])]: () => M("week"),
+    [T.intl.string(T.t["20uWCw"])]: () => M("month"),
+    [T.intl.string(T.t["dXC/hn"])]: () => M("year")
   }
 }
 let U = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
   G = "\\d{4}",
-  V = "([0-9]{4})-([0-9]{1,2})",
-  F = "([^\\d\\s]+)",
-  B = RegExp("(?:\\s*(".concat(U, "|").concat(V, "|").concat(G, "|").concat(F, "))"), "i"),
+  F = "([0-9]{4})-([0-9]{1,2})",
+  V = "([^\\d\\s]+)",
+  B = RegExp("(?:\\s*(".concat(U, "|").concat(F, "|").concat(G, "|").concat(V, "))"), "i"),
   H = RegExp("\\s*(true|false)", "i");
 
 function Y(e) {
@@ -135,7 +135,7 @@ function K(e) {
 function z(e, t) {
   let n, r, i = e.getFullMatch().trim().toLowerCase(),
     a = k()[i];
-  return null != a ? [n, r] = a() : P().has(i) ? [n, r] = M(i, "MMMM", "month") : D().has(i) ? [n, r] = M(i, "dddd", "day") : x().has(i) ? [n, r] = M(i, "YYYY", "year") : [n, r] = M(i, S.ump, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
+  return null != a ? [n, r] = a() : P().has(i) ? [n, r] = j(i, "MMMM", "month") : D().has(i) ? [n, r] = j(i, "dddd", "day") : L().has(i) ? [n, r] = j(i, "YYYY", "year") : [n, r] = j(i, S.ump, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
 }
 
 function q(e, t, n) {
@@ -144,7 +144,7 @@ function q(e, t, n) {
     a = A.A.getCurrentConfig({
       location: "guildChannelValidator"
     }).enabled,
-    o = s().chain(r).map(e => {
+    s = o().chain(r).map(e => {
       let {
         channel: t
       } = e;
@@ -153,7 +153,7 @@ function q(e, t, n) {
       var n, r;
       return t === (null != (n = null == (r = i[e.id]) ? true : r.name) ? n : e.name)
     }).value();
-  return (null == o ? true : o.length) > 0 && (e.setData("channelIds", o.map(e => e.id)), true)
+  return (null == s ? true : s.length) > 0 && (e.setData("channelIds", s.map(e => e.id)), true)
 }
 
 function Z(e, t) {
@@ -169,12 +169,12 @@ function Z(e, t) {
   return (null == n ? true : n.length) > 0 && (e.setData("channelIds", n.map(e => e.id)), true)
 }
 
-function X(e, t) {
+function Q(e, t) {
   let n = e.getMatch(1);
   return S.Ut1.test(n) ? (e.setData("channelIds", [n]), true) : (n.startsWith('"') && n.endsWith('"') && (n = n.substring(1, n.length - 1).replaceAll(/\\(.)/g, (e, t) => t)), (0, v._B)(t)) ? q(e, n, t.guildId) : t.type === S.I4_.DMS && !h.A.hidePersonalInformation && Z(e, n)
 }
 
-function Q(e) {
+function X(e) {
   let t = {
     [T.intl.string(T.t.ZNR2fi)]: "link",
     [T.intl.string(T.t["20uQR3"])]: "embed",
@@ -199,7 +199,7 @@ function J(e) {
 }
 
 function $() {
-  return [...Array.from(P()), ...Array.from(D()), ...Array.from(x()), ...Object.keys(k())]
+  return [...Array.from(P()), ...Array.from(D()), ...Array.from(L()), ...Object.keys(k())]
 }
 
 function ee(e, t, n) {
@@ -211,7 +211,7 @@ function ee(e, t, n) {
 
 function et(e, t, n) {
   let r = e.toLocaleLowerCase();
-  return s()(n).filter(e => i()(r, e.toLocaleLowerCase())).take(t).map(e => ({
+  return o()(n).filter(e => i()(r, e.toLocaleLowerCase())).take(t).map(e => ({
     text: e
   })).value()
 }
@@ -251,7 +251,7 @@ function er(e) {
     limit: r,
     request: false,
     boosters: (0, g.X3)(c.rD.USER)
-  }, s = [];
+  }, o = [];
   switch (n.type) {
     case S.I4_.GUILD:
     case S.I4_.GUILD_CHANNEL:
@@ -273,24 +273,24 @@ function er(e) {
           return i(t)
         }), O.A.getRecentMessageAuthorIds(n.guildId).forEach(e => i(m.default.getUser(e))), e.slice(0, r)
       }
-      s = g.Ay.queryGuildUsers(R(N({}, a), {
+      o = g.Ay.queryGuildUsers(R(N({}, a), {
         guildId: n.guildId
       }));
       break;
     case S.I4_.CHANNEL:
-      s = g.Ay.queryChannelUsers(R(N({}, a), {
+      o = g.Ay.queryChannelUsers(R(N({}, a), {
         channelId: n.channelId
       }));
       break;
     case S.I4_.DMS:
-      let o = en(null != i ? i : []);
-      if (null != o && o.length > 0) {
+      let s = en(null != i ? i : []);
+      if (null != s && s.length > 0) {
         let e = m.default.getCurrentUser();
-        null != e && o.push(e), s = g.Ay.queryUsers(R(N({}, a), {
-          users: o,
+        null != e && s.push(e), o = g.Ay.queryUsers(R(N({}, a), {
+          users: s,
           boosters: (0, g.X3)(c.rD.USER)
         }))
-      } else s = g.Ay.queryAllUsers(R(N({}, a), {
+      } else o = g.Ay.queryAllUsers(R(N({}, a), {
         boosters: (0, g.X3)(c.rD.USER)
       }));
       break;
@@ -300,7 +300,7 @@ function er(e) {
   let l = m.default.getCurrentUser(),
     u = t.toLowerCase().replace(/^@/, ""),
     d = null != l && t.length > 0 && (T.intl.string(T.t.Qf3ptv).startsWith(u) || S.ME.substr(1).startsWith(u)),
-    f = s.filter(e => {
+    f = o.filter(e => {
       let {
         record: t
       } = e;
@@ -336,7 +336,7 @@ function ea(e, t, n) {
       limit: t,
       boosters: (0, g.X3)(c.rD.USER)
     }),
-    a = s()(r.concat(i)).sort(c.vH).map(e => {
+    a = o()(r.concat(i)).sort(c.vH).map(e => {
       let {
         record: t,
         comparator: n
@@ -384,7 +384,7 @@ function ea(e, t, n) {
   return a.slice(0, t)
 }
 
-function es(e, t, n) {
+function eo(e, t, n) {
   let r = A.A.getCurrentConfig({
       location: "getGuildChannelAutocompletions"
     }).enabled,
@@ -417,7 +417,7 @@ function es(e, t, n) {
     null != n && (i.splice(i.indexOf(n), 1), i.unshift(n))
   }
   let a = f.Ay.getTextChannelNameDisambiguations(t);
-  return s()(i).take(n).map(e => {
+  return o()(i).take(n).map(e => {
     var t, n;
     return {
       text: "".concat(null != (t = null == (n = a[e.id]) ? true : n.name) ? t : e.name),
@@ -427,13 +427,13 @@ function es(e, t, n) {
   }).value()
 }
 
-function eo(e) {
+function es(e) {
   let {
     query: t,
     searchContext: n,
     maxResults: r
   } = e;
-  return ((t = t.trim()).startsWith('"') && t.endsWith('"') ? t = t.substring(1, t.length - 1).replaceAll(/\\(.)/g, (e, t) => t) : t.startsWith('"') && (t = t.substring(1).replaceAll(/\\(.)/g, (e, t) => t)), "#" === t[0] && (t = t.substring(1)), (0, v._B)(n)) ? es(t, n.guildId, r) : n.type !== S.I4_.DMS || h.A.hidePersonalInformation ? [] : ea(t, r, true)
+  return ((t = t.trim()).startsWith('"') && t.endsWith('"') ? t = t.substring(1, t.length - 1).replaceAll(/\\(.)/g, (e, t) => t) : t.startsWith('"') && (t = t.substring(1).replaceAll(/\\(.)/g, (e, t) => t)), "#" === t[0] && (t = t.substring(1)), (0, v._B)(n)) ? eo(t, n.guildId, r) : n.type !== S.I4_.DMS || h.A.hidePersonalInformation ? [] : ea(t, r, true)
 }
 let el = /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
 var ec = function(e) {
@@ -492,7 +492,7 @@ function eu(e) {
     [S.LWr.ANSWER_HAS]: {
       regex: RegExp("(?:\\s*-?(".concat(n.map(e => E.A.escape(e)).join("|"), "))"), "i"),
       follows: [S.LWr.FILTER_HAS],
-      validator: Q,
+      validator: X,
       componentType: "ANSWER",
       queryKey: "has"
     },
@@ -591,7 +591,7 @@ function eu(e) {
         let t = null != e ? e : b.A.getSelectedSearchContext();
         return null != t && (0, v.Wg)(t)
       },
-      getAutocompletions: eo
+      getAutocompletions: es
     },
     [S.LWr.ANSWER_IN]: {
       regex: I.r,
@@ -600,7 +600,7 @@ function eu(e) {
       componentType: "ANSWER",
       validator: t => {
         let n = null != e ? e : b.A.getSelectedSearchContext();
-        return null != n && X(t, n)
+        return null != n && Q(t, n)
       },
       queryKey: "channel_id"
     },

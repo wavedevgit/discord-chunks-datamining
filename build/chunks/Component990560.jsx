@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 990560, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 990560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => N
+  A: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,133 +29,133 @@ var Chunk627968 = require("./627968.js"),
   Chunk448894 = require("./448894.jsx"),
   Chunk652215 = require("./652215.js");
 
-function N(e) {
+function S(e) {
   let {
     code: t,
     message: n,
-    getAcceptInviteContext: N
+    getAcceptInviteContext: S
   } = e, {
-    invite: w,
-    inviteError: R
-  } = (0, a.cf)([m.A], () => ({
-    invite: m.A.getInvite(t),
-    inviteError: m.A.getInviteError(t)
-  }), [t]), P = null == w;
+    invite: T,
+    inviteError: N
+  } = (0, l.cf)([h.A], () => ({
+    invite: h.A.getInvite(t),
+    inviteError: h.A.getInviteError(t)
+  }), [t]), P = null == T;
   i.useEffect(() => {
-    P && s.Ay.resolveInvite(t)
+    P && a.Ay.resolveInvite(t)
   }, [t, P]);
-  let D = null != w ? w : {
-      state: C.elq.RESOLVING,
+  let w = null != T ? T : {
+      state: I.elq.RESOLVING,
       code: ""
     },
     {
-      analyticsLocations: x
-    } = (0, l.Ay)(),
-    L = (0, a.bG)([h.A], () => (null == w ? true : w.guild) != null ? h.A.getGuild(w.guild.id) : null, [w]),
-    j = (0, a.bG)([_.default], () => _.default.getId()),
-    M = (0, a.bG)([u.Ay], () => {
+      analyticsLocations: R
+    } = (0, o.Ay)(),
+    D = (0, l.bG)([g.A], () => (null == T ? true : T.guild) != null ? g.A.getGuild(T.guild.id) : null, [T]),
+    L = (0, l.bG)([f.default], () => f.default.getId()),
+    M = (0, l.bG)([u.Ay], () => {
       var e;
-      return u.Ay.getGuildScheduledEvent(null == (e = D.guild_scheduled_event) ? true : e.id)
-    }, [D]),
+      return u.Ay.getGuildScheduledEvent(null == (e = w.guild_scheduled_event) ? true : e.id)
+    }, [w]),
     k = () => {
-      null != D.channel && s.Ay.transitionToInviteSync(D)
+      null != w.channel && a.Ay.transitionToInviteSync(w)
     },
     U = () => {
-      let e = null == L && (null == w ? true : w.guild) != null ? g.DY(w.guild) : L;
-      (0, p.g)({
+      let e = null == D && (null == T ? true : T.guild) != null ? _.DY(T.guild) : D;
+      (0, m.g)({
         guild: e,
-        isMember: null != L,
-        analyticsLocations: x
-      }) === p.W.PROCEED && s.Ay.acceptInviteAndTransitionToInviteChannel({
+        isMember: null != D,
+        analyticsLocations: R
+      }) === m.W.PROCEED && a.Ay.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
-        context: N("Invite Button Embed")
+        context: S("Invite Button Embed")
       })
     },
-    G = (0, r.jsx)(v.A, {
+    G = (0, r.jsx)(x.A, {
       onTransitionToInviteChannel: k,
       onAcceptInstantInvite: U,
-      currentUserId: j,
-      guild: L,
-      invite: D,
+      currentUserId: L,
+      guild: D,
+      invite: w,
       message: n
     });
-  switch (D.state) {
-    case C.elq.RESOLVING:
-      G = (0, r.jsx)(S.A, {});
+  switch (w.state) {
+    case I.elq.RESOLVING:
+      G = (0, r.jsx)(j.A, {});
       break;
-    case C.elq.EXPIRED:
-    case C.elq.BANNED:
-      G = (0, r.jsx)(I.A, {
-        banned: D.state === C.elq.BANNED,
+    case I.elq.EXPIRED:
+    case I.elq.BANNED:
+      G = (0, r.jsx)(E.A, {
+        banned: w.state === I.elq.BANNED,
         author: n.author,
         channelId: n.channel_id
       });
       break;
-    case C.elq.ERROR:
-      G = (0, r.jsx)(y.A, {
+    case I.elq.ERROR:
+      G = (0, r.jsx)(A.A, {
         author: n.author,
-        inviteError: R
+        inviteError: N
       });
       break;
     default:
-      switch ((0, f.On)(D)) {
-        case f.Xd.GROUP_DM:
-          G = (0, r.jsx)(O.A, {
+      switch ((0, p.On)(w)) {
+        case p.Xd.GROUP_DM:
+          G = (0, r.jsx)(v.A, {
             onTransitionToInviteChannel: k,
             onAcceptInstantInvite: U,
-            currentUserId: j,
-            invite: D,
+            currentUserId: L,
+            invite: w,
             message: n
           });
           break;
-        case f.Xd.FRIEND:
-          G = (0, r.jsx)(b.A, {
-            invite: D,
+        case p.Xd.FRIEND:
+          G = (0, r.jsx)(y.A, {
+            invite: w,
             message: n,
-            getAcceptInviteContext: N
+            getAcceptInviteContext: S
           });
           break;
         default:
-          if ((0, f.G4)(D)) {
-            G = (0, r.jsx)(T.A, {
+          if ((0, p.G4)(w)) {
+            G = (0, r.jsx)(C.A, {
               onTransitionToInviteChannel: k,
               onAcceptInstantInvite: U,
-              currentUserId: j,
+              currentUserId: L,
               message: n,
-              guild: L,
-              invite: D
+              guild: D,
+              invite: w
             });
             break
           }
-          if ((0, f.ly)(D)) {
+          if ((0, p.ly)(w)) {
             G = (0, r.jsx)(d.Ay, {
               guildScheduledEvent: M,
-              guild: D.guild,
-              channel: D.channel,
-              isMember: null != L,
+              guild: w.guild,
+              channel: w.channel,
+              isMember: null != D,
               onAcceptInstantInvite: U,
               onTransitionToInviteChannel: k
             });
             break
           }
-          if ((0, f.oK)(D)) {
-            G = (0, r.jsx)(E.A, {
-              invite: D,
-              getAcceptInviteContext: N,
+          if ((0, p.oK)(w)) {
+            G = (0, r.jsx)(b.A, {
+              invite: w,
+              getAcceptInviteContext: S,
               message: n
             });
             break
-          }(0, c.v)(D) && (G = (0, r.jsx)(A.A, {
+          }(0, c.v)(w) && (G = (0, r.jsx)(O.A, {
             onTransitionToInviteChannel: k,
             onAcceptInstantInvite: U,
-            isMemberOfGuild: null != L,
-            invite: D,
+            isMemberOfGuild: null != D,
+            invite: w,
             message: n
           }))
       }
   }
-  return (0, r.jsx)(o.A, {
-    section: C.JJy.INVITE_LINK,
+  return (0, r.jsx)(s.A, {
+    section: I.JJy.INVITE_LINK,
     children: G
   })
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,14 +15,14 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = false,
+let s = false,
   l = false;
 
 function c(e) {
   let {
     muted: t
   } = e;
-  o = t, l = false
+  s = t, l = false
 }
 
 function u(e) {
@@ -37,19 +37,19 @@ function d() {
 }
 class f extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
-    null != e && (o = e)
+    null != e && (s = e)
   }
   isMuted() {
-    return o
+    return s
   }
   shouldPlay() {
     return l
   }
   getUserAgnosticState() {
-    return o
+    return s
   }
 }
-s(f, "displayName", "StageMusicStore"), s(f, "persistKey", "StageMusicStore");
+o(f, "displayName", "StageMusicStore"), o(f, "persistKey", "StageMusicStore");
 let p = new f(Chunk73153.h, {
   STAGE_MUSIC_MUTE: c,
   STAGE_MUSIC_PLAY: u,

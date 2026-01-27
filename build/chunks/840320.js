@@ -2,18 +2,18 @@
 /** chunk id: 840320, original params: e,t (module,exports,re quire) **/
 function n(e, t, n, r) {
   var i = [],
-    s = {},
     o = {},
+    s = {},
     l = {};
   return function c(u) {
-    s[u] = true, i.push(u), l[u] = true;
+    o[u] = true, i.push(u), l[u] = true;
     for (let t = 0; t < e[u].length; t++) {
       let n = e[u][t];
-      if (s[n]) {
+      if (o[n]) {
         if (l[n] && (i.push(n), !r)) throw new a(i)
       } else c(n)
     }
-    i.pop(), delete l[u], t && 0 !== e[u].length || o[u] || (n.push(u), o[u] = true)
+    i.pop(), delete l[u], t && 0 !== e[u].length || s[u] || (n.push(u), s[u] = true)
   }
 }
 var r, i = exports.DepGraph = function(e) {
@@ -88,11 +88,11 @@ i.prototype = {
     i.forEach(function(e) {
       a(e)
     });
-    var s = n(this.outgoingEdges, e, r, this.circular);
+    var o = n(this.outgoingEdges, e, r, this.circular);
     return i.filter(function(e) {
       return 0 === t.incomingEdges[e].length
     }).forEach(function(e) {
-      s(e)
+      o(e)
     }), r
   }
 };

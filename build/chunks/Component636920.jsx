@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 636920, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 636920, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,115 +23,107 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk334994 = require("./334994.js");
 
-function v(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function A(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function I(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = 32;
 
-function C(e) {
+function S(e) {
   let {
     hangStatusActivity: t,
     channel: n,
-    userId: v,
+    userId: S,
     isSelf: I = false,
-    analyticsSource: C,
-    onAction: N,
-    className: w,
-    iconClassName: R,
-    textClassName: P
-  } = e, D = (0, a.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), x = (0, a.bG)([c.A], () => c.A.can(y.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, _.n)(t.emoji, n);
+    analyticsSource: x,
+    onAction: E,
+    className: P,
+    iconClassName: T,
+    textClassName: N
+  } = e, w = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), C = (0, l.bG)([c.A], () => c.A.can(A.xBc.CONNECT, n), [n]), D = null == t.emoji || (0, m.n)(t.emoji, n);
   i.useEffect(() => {
-    d.default.track(y.HAw.VIEW_HANG_STATUS, A({
-      source: C,
-      other_user_id: v
-    }, (0, h.A)(n.id)))
-  }, [C, n.id, v]);
-  let j = i.useCallback(() => {
-      !D && x && (l.default.selectVoiceChannel(n.id), null == N || N(), d.default.track(y.HAw.HANG_STATUS_CTA_CLICKED, S(A({
-        source: C
-      }, (0, h.A)(n.id)), {
-        other_user_id: v,
+    d.default.track(A.HAw.VIEW_HANG_STATUS, O({
+      source: x,
+      other_user_id: S
+    }, (0, g.A)(n.id)))
+  }, [x, n.id, S]);
+  let L = i.useCallback(() => {
+      !w && C && (o.default.selectVoiceChannel(n.id), null == E || E(), d.default.track(A.HAw.HANG_STATUS_CTA_CLICKED, j(O({
+        source: x
+      }, (0, g.A)(n.id)), {
+        other_user_id: S,
         cta_type: "join"
       })))
-    }, [D, x, n.id, v, C, N]),
-    M = i.useCallback(() => {
-      if (!D || !L || null == t.state) return;
-      let [e] = (0, m.e)(v, t.state);
+    }, [w, C, n.id, S, x, E]),
+    k = i.useCallback(() => {
+      if (!w || !D || null == t.state) return;
+      let [e] = (0, y.e)(S, t.state);
       if (null != e) {
-        if (e === E.Kk.CUSTOM) {
+        if (e === b.Kk.CUSTOM) {
           if (null == t.details || null == t.emoji) return;
-          (0, f.hS)(t.details, t.emoji, true)
-        } else(0, f.Iq)(e, true);
-        null == N || N(), d.default.track(y.HAw.HANG_STATUS_CTA_CLICKED, S(A({
-          source: C
-        }, (0, h.A)(n.id)), {
-          other_user_id: v,
+          (0, p.hS)(t.details, t.emoji, true)
+        } else(0, p.Iq)(e, true);
+        null == E || E(), d.default.track(A.HAw.HANG_STATUS_CTA_CLICKED, j(O({
+          source: x
+        }, (0, g.A)(n.id)), {
+          other_user_id: S,
           cta_type: "swipe"
         }))
       }
-    }, [D, L, t, n.id, v, C, N]);
+    }, [w, D, t, n.id, S, x, E]);
   return (0, r.jsxs)("div", {
-    className: null != w ? w : O.kL,
-    children: [(0, r.jsx)(g.A, {
-      userId: v,
-      size: T,
-      className: null != R ? R : O.Kk,
+    className: null != P ? P : v.kL,
+    children: [(0, r.jsx)(_.A, {
+      userId: S,
+      size: 32,
+      className: null != T ? T : v.Kk,
       hangStatusActivity: t
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
-      className: null != P ? P : O.qS,
-      children: (0, p.Au)(v, t)
-    }), D && !I ? (0, r.jsx)(s.m_, {
-      text: L ? true : b.intl.string(b.t["0LMpW+"]),
+      className: null != N ? N : v.qS,
+      children: (0, f.Au)(S, t)
+    }), w && !I ? (0, r.jsx)(a.m_, {
+      text: D ? true : h.intl.string(h.t["0LMpW+"]),
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(o.Button, {
+        children: (0, r.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
-          text: b.intl.string(b.t["0eHzpm"]),
-          onClick: M,
-          disabled: !L
+          text: h.intl.string(h.t["0eHzpm"]),
+          onClick: k,
+          disabled: !D
         })
       })
-    }) : !I && x && (0, r.jsx)(o.Button, {
+    }) : !I && C && (0, r.jsx)(s.Button, {
       size: "sm",
       variant: "secondary",
-      text: b.intl.string(b.t["B/dHXL"]),
-      onClick: j
+      text: h.intl.string(h.t["B/dHXL"]),
+      onClick: L
     })]
   })
 }

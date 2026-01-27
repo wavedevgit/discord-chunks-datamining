@@ -35,16 +35,16 @@ function a(e, t) {
   return n
 }
 
-function s(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 require.d(exports, {
   d: () => l,
-  i: () => o
+  i: () => s
 });
-let o = [{
+let s = [{
     label: "Alberta",
     value: "AB"
   }, {
@@ -84,6 +84,6 @@ let o = [{
     label: "Yukon",
     value: "YT"
   }],
-  l = Object.freeze(o.reduce((e, t) => s(i({}, e), {
+  l = Object.freeze(s.reduce((e, t) => o(i({}, e), {
     [t.label.toLowerCase()]: t.value
   }), {}))

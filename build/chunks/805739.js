@@ -15,9 +15,9 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 let a = ["a", "b", "c", "d"],
-  s = e => e;
+  o = e => e;
 
-function o(e, t) {
+function s(e, t) {
   let n = {},
     r = Math.min(e.length, a.length);
   for (let i = 0; i < r; ++i) n[a[i]] = (n, r) => t(e[i], r);
@@ -25,7 +25,7 @@ function o(e, t) {
 }
 class l {
   asString() {
-    return this.transformed(s)
+    return this.transformed(o)
   }
   isEmpty() {
     return 0 === this.items.length
@@ -37,11 +37,11 @@ class l {
       case 1:
         return e(this.items[0], "");
       case 2:
-        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_TWO, o(this.items, e));
+        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_TWO, s(this.items, e));
       case 3:
-        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_THREE, o(this.items, e));
+        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_THREE, s(this.items, e));
       default:
-        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_FOUR, o(this.items, e))
+        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_FOUR, s(this.items, e))
     }
   }
   constructor(e) {

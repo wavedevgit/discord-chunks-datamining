@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 865513, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 94682 **/
+/** chunk id: 865513, original params: e,t,n (module,exports,require) **/
 module.exports = {
   zr: "root_da9de7",
   k2: "sizeReduced_da9de7",

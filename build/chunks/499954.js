@@ -2,13 +2,13 @@
 /** chunk id: 499954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk729426 = require("./729426.js"),
   Chunk321034 = require("./321034.js"),
   Chunk687658 = require("./687658.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class s {
   getStats() {
     let e = this.cpuHistogram.getReport(),
       t = this.memoryHistogram.getReport(),
@@ -86,6 +86,6 @@ class o {
     }
   }
   constructor() {
-    s(this, "cpuHistogram", new a.d), s(this, "memoryHistogram", new a.d), s(this, "startCPU", i.A.getCumulativeCPUUsage()), s(this, "lastCPU", this.startCPU), s(this, "lastBattery", null)
+    o(this, "cpuHistogram", new a.d), o(this, "memoryHistogram", new a.d), o(this, "startCPU", i.A.getCumulativeCPUUsage()), o(this, "lastCPU", this.startCPU), o(this, "lastBattery", null)
   }
 }

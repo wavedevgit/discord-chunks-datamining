@@ -13,72 +13,72 @@ var Chunk788733 = require("./788733.js"),
 function l(e) {
   let t = (0, a.A)(e),
     n = null == t ? true : t.icon;
-  return e.type === s.$pd.PLAYING && (null == t ? true : t.type) === s.fg2.XBOX ? {
-    text: o.intl.formatToPlainString(o.t.A17aM8, {
-      platform: o.intl.string(o.t.Nfvo72)
+  return e.type === o.$pd.PLAYING && (null == t ? true : t.type) === o.fg2.XBOX ? {
+    text: s.intl.formatToPlainString(s.t.A17aM8, {
+      platform: s.intl.string(s.t.Nfvo72)
     }),
     platformIcon: n
-  } : e.type === s.$pd.PLAYING && (null == t ? true : t.type) === s.fg2.PLAYSTATION ? {
-    text: o.intl.formatToPlainString(o.t.A17aM8, {
-      platform: o.intl.string(o.t.fFl4jo)
+  } : e.type === o.$pd.PLAYING && (null == t ? true : t.type) === o.fg2.PLAYSTATION ? {
+    text: s.intl.formatToPlainString(s.t.A17aM8, {
+      platform: s.intl.string(s.t.fFl4jo)
     }),
     platformIcon: n
-  } : e.type === s.$pd.PLAYING && (null == t ? true : t.type) === s.fg2.META_QUEST_OR_HORIZON ? {
-    text: o.intl.formatToPlainString(o.t.A17aM8, {
-      platform: (0, r.A)(e) ? o.intl.string(o.t.BrHQaq) : o.intl.string(o.t.p6vL0e)
+  } : e.type === o.$pd.PLAYING && (null == t ? true : t.type) === o.fg2.META_QUEST_OR_HORIZON ? {
+    text: s.intl.formatToPlainString(s.t.A17aM8, {
+      platform: (0, r.A)(e) ? s.intl.string(s.t.BrHQaq) : s.intl.string(s.t.p6vL0e)
     }),
     platformIcon: n
-  } : e.type === s.$pd.WATCHING && (null == t ? true : t.type) === s.fg2.META_QUEST_OR_HORIZON ? {
-    text: o.intl.formatToPlainString(o.t.ENbTKQ, {
-      platform: (0, r.A)(e) ? o.intl.string(o.t.BrHQaq) : o.intl.string(o.t.p6vL0e)
+  } : e.type === o.$pd.WATCHING && (null == t ? true : t.type) === o.fg2.META_QUEST_OR_HORIZON ? {
+    text: s.intl.formatToPlainString(s.t.ENbTKQ, {
+      platform: (0, r.A)(e) ? s.intl.string(s.t.BrHQaq) : s.intl.string(s.t.p6vL0e)
     }),
     platformIcon: n
-  } : e.type === s.$pd.STREAMING && (null == t ? true : t.type) === s.fg2.TWITCH ? {
-    text: o.intl.formatToPlainString(o.t["4CQq9Q"], {
-      name: o.intl.string(o.t.q4pBG3)
+  } : e.type === o.$pd.STREAMING && (null == t ? true : t.type) === o.fg2.TWITCH ? {
+    text: s.intl.formatToPlainString(s.t["4CQq9Q"], {
+      name: s.intl.string(s.t.q4pBG3)
     }),
     platformIcon: n
-  } : e.type === s.$pd.STREAMING && (null == t ? true : t.type) === s.fg2.YOUTUBE ? {
-    text: o.intl.formatToPlainString(o.t["4CQq9Q"], {
-      name: o.intl.string(o.t.aS6cK4)
+  } : e.type === o.$pd.STREAMING && (null == t ? true : t.type) === o.fg2.YOUTUBE ? {
+    text: s.intl.formatToPlainString(s.t["4CQq9Q"], {
+      name: s.intl.string(s.t.aS6cK4)
     }),
     platformIcon: n
-  } : e.type === s.$pd.PLAYING ? {
-    text: o.intl.string(o.t.BMTj28),
+  } : e.type === o.$pd.PLAYING ? {
+    text: s.intl.string(s.t.BMTj28),
     platformIcon: n
-  } : e.type === s.$pd.STREAMING ? {
-    text: o.intl.string(o.t["Jpkr/q"]),
+  } : e.type === o.$pd.STREAMING ? {
+    text: s.intl.string(s.t["Jpkr/q"]),
     platformIcon: n
   } : (0, i.Cy)(e) ? {
-    text: o.intl.formatToPlainString(o.t.pW3Ip3, {
+    text: s.intl.formatToPlainString(s.t.pW3Ip3, {
       name: e.name
     })
-  } : e.type === s.$pd.LISTENING && null != e.details ? {
-    text: o.intl.formatToPlainString(o.t["b+lA5+"], {
+  } : e.type === o.$pd.LISTENING && null != e.details ? {
+    text: s.intl.formatToPlainString(s.t["b+lA5+"], {
       name: e.name
     }),
     platformIcon: n
-  } : e.type === s.$pd.LISTENING ? {
-    text: o.intl.string(o.t.dBISa6),
+  } : e.type === o.$pd.LISTENING ? {
+    text: s.intl.string(s.t.dBISa6),
     platformIcon: n
-  } : e.type === s.$pd.WATCHING && null != e.details ? {
-    text: o.intl.formatToPlainString(o.t.mqdfDc, {
+  } : e.type === o.$pd.WATCHING && null != e.details ? {
+    text: s.intl.formatToPlainString(s.t.mqdfDc, {
       name: e.name
     }),
     platformIcon: n
-  } : e.type === s.$pd.WATCHING ? {
-    text: o.intl.string(o.t.GpNXjC),
+  } : e.type === o.$pd.WATCHING ? {
+    text: s.intl.string(s.t.GpNXjC),
     platformIcon: n
-  } : e.type === s.$pd.COMPETING && null != e.details ? {
-    text: o.intl.formatToPlainString(o.t.oHF7Ch, {
+  } : e.type === o.$pd.COMPETING && null != e.details ? {
+    text: s.intl.formatToPlainString(s.t.oHF7Ch, {
       name: e.name
     }),
     platformIcon: n
-  } : e.type === s.$pd.COMPETING ? {
-    text: o.intl.string(o.t.OzCsIA),
+  } : e.type === o.$pd.COMPETING ? {
+    text: s.intl.string(s.t.OzCsIA),
     platformIcon: n
-  } : e.type === s.$pd.HANG_STATUS ? {
-    text: o.intl.string(o.t.Hi4tob),
+  } : e.type === o.$pd.HANG_STATUS ? {
+    text: s.intl.string(s.t.Hi4tob),
     platformIcon: n
   } : {
     text: true,

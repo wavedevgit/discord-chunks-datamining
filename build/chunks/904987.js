@@ -23,7 +23,7 @@ function d(e, t, n, d) {
   }), h = e.selection, {
     currentAutocompleteType: m
   } = d, g = null !== m && m !== i.DB.MENTION_SUGGESTIONS;
-  if (!p || n.isDM() || g || l.VW.areStylesDisabled(e) || !(null == (f = e.chatInputType.autocomplete) ? true : f.mentionSuggestions) || !o.ng.getSetting() || null == h || l.ZF.isExpanded(h)) return u;
+  if (!p || n.isDM() || g || l.VW.areStylesDisabled(e) || !(null == (f = e.chatInputType.autocomplete) ? true : f.mentionSuggestions) || !s.ng.getSetting() || null == h || l.ZF.isExpanded(h)) return u;
   let [E, y] = t;
   if (!l.l5.isText(E)) return u;
   let [b] = l.VW.node(e, l.PW.parent(y));
@@ -34,7 +34,7 @@ function d(e, t, n, d) {
         suggestions: v,
         queryInfo: A
       }
-    } = (0, s.W)(n, E.text, O, d);
+    } = (0, o.W)(n, E.text, O, d);
   return 0 === v.length ? u : [{
     anchor: {
       path: y,

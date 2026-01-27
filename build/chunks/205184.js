@@ -15,10 +15,10 @@ let u = new Set([Chunk681154.ContentInventoryEntryType.PLAYED_GAME, Chunk681154.
   d = e => u.has(e.content_type);
 
 function f(e) {
-  let t = (0, o.A)({
+  let t = (0, s.A)({
       id: c.X1.GLOBAL_FEED
     }),
-    n = (0, o.A)({
+    n = (0, s.A)({
       id: c.X1.GLOBAL_FEED,
       unrankedEntries: true
     });

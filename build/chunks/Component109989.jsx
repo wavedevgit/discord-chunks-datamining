@@ -16,11 +16,11 @@ function u(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsx)(s.QuestsIcon, {
+  return (0, r.jsx)(o.QuestsIcon, {
     className: a()(l.tt, t),
     size: "custom",
     height: c,
     width: c,
-    color: o.A.unsafe_rawColors.BRAND_345.css
+    color: s.A.unsafe_rawColors.BRAND_345.css
   })
 }

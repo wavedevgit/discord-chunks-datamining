@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 522579, original params: e (module,exports,re quire) **/
+/** Chunk was on 92351 **/
+/** chunk id: 522579, original params: e (module,exports,require) **/
 var t = t || function(e) {
   "use strict";
   if (!("u" > typeof navigator && /MSIE [1-9]\./.test(navigator.userAgent))) {
@@ -8,34 +8,33 @@ var t = t || function(e) {
         return e.URL || e.webkitURL || e
       },
       r = t.createElementNS("http://www.w3.org/1999/xhtml", "a"),
-      i = "download" in r,
-      a = function(e) {
+      o = "download" in r,
+      i = function(e) {
         var t = new MouseEvent("click");
         e.dispatchEvent(t)
       },
-      s = /Version\/[\d\.]+.*Safari/.test(navigator.userAgent),
-      o = e.webkitRequestFileSystem,
-      l = e.requestFileSystem || o || e.mozRequestFileSystem,
-      c = function(t) {
+      a = /Version\/[\d\.]+.*Safari/.test(navigator.userAgent),
+      c = e.webkitRequestFileSystem,
+      u = e.requestFileSystem || c || e.mozRequestFileSystem,
+      s = function(t) {
         (e.setImmediate || e.setTimeout)(function() {
           throw t
         }, 0)
       },
-      u = "application/octet-stream",
-      d = 0,
-      f = 4e4,
-      p = function(e) {
+      l = "application/octet-stream",
+      f = 0,
+      d = function(e) {
         setTimeout(function() {
           "string" == typeof e ? n().revokeObjectURL(e) : e.remove()
-        }, f)
+        }, 4e4)
       },
-      _ = function(e, t, n) {
+      p = function(e, t, n) {
         for (var r = (t = [].concat(t)).length; r--;) {
-          var i = e["on" + t[r]];
-          if ("function" == typeof i) try {
-            i.call(e, n || e)
+          var o = e["on" + t[r]];
+          if ("function" == typeof o) try {
+            o.call(e, n || e)
           } catch (e) {
-            c(e)
+            s(e)
           }
         }
       },
@@ -44,76 +43,74 @@ var t = t || function(e) {
           type: e.type
         }) : e
       },
-      m = function(t, c, f) {
-        f || (t = h(t));
-        var m, g, E = this,
-          y = t.type,
-          b = false,
-          O = function() {
-            _(E, "writestart progress write writeend".split(" "))
+      v = function(t, s, v) {
+        v || (t = h(t));
+        var g, w, y = this,
+          m = t.type,
+          S = false,
+          b = function() {
+            p(y, "writestart progress write writeend".split(" "))
           },
-          v = function() {
-            if (g && s && "u" > typeof FileReader) {
+          E = function() {
+            if (w && a && "u" > typeof FileReader) {
               var r = new FileReader;
               r.onloadend = function() {
                 var e = r.result;
-                g.location.href = "data:attachment/file" + e.slice(e.search(/[,;]/)), E.readyState = E.DONE, O()
-              }, r.readAsDataURL(t), E.readyState = E.INIT;
+                w.location.href = "data:attachment/file" + e.slice(e.search(/[,;]/)), y.readyState = y.DONE, b()
+              }, r.readAsDataURL(t), y.readyState = y.INIT;
               return
-            }(b || !m) && (m = n().createObjectURL(t)), g ? g.location.href = m : true === e.open(m, "_blank") && s && (e.location.href = m), E.readyState = E.DONE, O(), p(m)
+            }(S || !g) && (g = n().createObjectURL(t)), w ? w.location.href = g : true === e.open(g, "_blank") && a && (e.location.href = g), y.readyState = y.DONE, b(), d(g)
           },
-          A = function(e) {
+          O = function(e) {
             return function() {
-              if (E.readyState !== E.DONE) return e.apply(this, arguments)
+              if (y.readyState !== y.DONE) return e.apply(this, arguments)
             }
           },
-          I = {
+          R = {
             create: true,
             exclusive: false
           };
-        if (E.readyState = E.INIT, c || (c = "download"), i) {
-          m = n().createObjectURL(t), setTimeout(function() {
-            r.href = m, r.download = c, a(r), O(), p(m), E.readyState = E.DONE
+        if (y.readyState = y.INIT, s || (s = "download"), o) {
+          g = n().createObjectURL(t), setTimeout(function() {
+            r.href = g, r.download = s, i(r), b(), d(g), y.readyState = y.DONE
           });
           return
-        }(e.chrome && y && y !== u && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, u), b = true), o && "download" !== c && (c += ".download"), (y === u || o) && (g = e), l) ? (d += t.size, l(e.TEMPORARY, d, A(function(e) {
-          e.root.getDirectory("saved", I, A(function(e) {
+        }(e.chrome && m && m !== l && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, l), S = true), c && "download" !== s && (s += ".download"), (m === l || c) && (w = e), u) ? (f += t.size, u(e.TEMPORARY, f, O(function(e) {
+          e.root.getDirectory("saved", R, O(function(e) {
             var n = function() {
-              e.getFile(c, I, A(function(e) {
-                e.createWriter(A(function(n) {
+              e.getFile(s, R, O(function(e) {
+                e.createWriter(O(function(n) {
                   n.onwriteend = function(t) {
-                    g.location.href = e.toURL(), E.readyState = E.DONE, _(E, "writeend", t), p(e)
+                    w.location.href = e.toURL(), y.readyState = y.DONE, p(y, "writeend", t), d(e)
                   }, n.onerror = function() {
                     var e = n.error;
-                    e.code !== e.ABORT_ERR && v()
+                    e.code !== e.ABORT_ERR && E()
                   }, "writestart progress write abort".split(" ").forEach(function(e) {
-                    n["on" + e] = E["on" + e]
-                  }), n.write(t), E.abort = function() {
-                    n.abort(), E.readyState = E.DONE
-                  }, E.readyState = E.WRITING
-                }), v)
-              }), v)
+                    n["on" + e] = y["on" + e]
+                  }), n.write(t), y.abort = function() {
+                    n.abort(), y.readyState = y.DONE
+                  }, y.readyState = y.WRITING
+                }), E)
+              }), E)
             };
-            e.getFile(c, {
+            e.getFile(s, {
               create: false
-            }, A(function(e) {
+            }, O(function(e) {
               e.remove(), n()
-            }), A(function(e) {
-              e.code === e.NOT_FOUND_ERR ? n() : v()
+            }), O(function(e) {
+              e.code === e.NOT_FOUND_ERR ? n() : E()
             }))
-          }), v)
-        }), v)) : v()
+          }), E)
+        }), E)) : E()
       },
-      g = m.prototype,
-      E = function(e, t, n) {
-        return new m(e, t, n)
-      };
+      g = v.prototype;
     return "u" > typeof navigator && navigator.msSaveOrOpenBlob ? function(e, t, n) {
       return n || (e = h(e)), navigator.msSaveOrOpenBlob(e, t || "download")
     } : (g.abort = function() {
-      var e = this;
-      e.readyState = e.DONE, _(e, "abort")
-    }, g.readyState = g.INIT = 0, g.WRITING = 1, g.DONE = 2, g.error = g.onwritestart = g.onprogress = g.onwrite = g.onabort = g.onerror = g.onwriteend = null, E)
+      this.readyState = this.DONE, p(this, "abort")
+    }, g.readyState = g.INIT = 0, g.WRITING = 1, g.DONE = 2, g.error = g.onwritestart = g.onprogress = g.onwrite = g.onabort = g.onerror = g.onwriteend = null, function(e, t, n) {
+      return new v(e, t, n)
+    })
   }
 }("u" > typeof self && self || "u" > typeof window && window || this.content);
 module.exports ? module.exports.saveAs = t : "u" > typeof define && null !== define && null !== define.amd && define([], function() {

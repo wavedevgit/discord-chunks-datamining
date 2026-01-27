@@ -1,4 +1,4 @@
-/** Chunk was on 67564 **/
+/** Chunk was on 41727 **/
 /** chunk id: 778768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   w: () => T
@@ -78,7 +78,7 @@ function T(e) {
     o()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, d.mMO)(async () => {
       let {
         default: l
-      } = await Promise.all([n.e("43600"), n.e("28136"), n.e("42821")]).then(n.bind(n, 234355));
+      } = await Promise.all([n.e("43600"), n.e("28136"), n.e("74918")]).then(n.bind(n, 234355));
       return n => {
         var i, s;
         return (0, r.jsx)(l, (i = I({}, n), s = s = {

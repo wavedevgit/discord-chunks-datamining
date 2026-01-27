@@ -69,9 +69,9 @@ function u() {
       awrap: function(e, t) {
         return new r(e, t)
       },
-      AsyncIterator: o,
+      AsyncIterator: s,
       async: function(e, t, n, r, i) {
-        return (f(t) ? s : a)(_(e), t, n, r, i)
+        return (f(t) ? o : a)(_(e), t, n, r, i)
       },
       keys: l,
       values: c

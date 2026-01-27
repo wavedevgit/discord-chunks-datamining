@@ -70,7 +70,7 @@ let v = e => {
       primary: t,
       secondary: n,
       botType: i,
-      botVerified: s,
+      botVerified: o,
       discriminatorClass: u,
       className: f,
       usernameClass: p,
@@ -85,7 +85,7 @@ let v = e => {
       className: a()(m.pq, {
         [m.e8]: b && null != E
       }, f),
-      children: [(0, r.jsx)(o.m, {
+      children: [(0, r.jsx)(s.m, {
         text: h.intl.string(h.t.Br1ls3),
         shouldShow: g,
         "aria-label": !!g && true,
@@ -103,7 +103,7 @@ let v = e => {
       }) : true, null != i && (0, r.jsx)(l.A, {
         type: i,
         className: a()(m.ok, _),
-        verified: s
+        verified: o
       })]
     })
   },
@@ -113,12 +113,12 @@ let v = e => {
       nick: n,
       forceUsername: i,
       showAccountIdentifier: a,
-      overrideDiscriminator: o,
+      overrideDiscriminator: s,
       forcePomelo: l,
       hideBotTag: c = false,
       hideDiscriminator: d = false,
       displayNameStylesType: h = u.G.PLAIN
-    } = e, m = y(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator", "displayNameStylesType"]), g = (0, s.bG)([p.A], () => p.A.hidePersonalInformation), b = g || d || t.isNonUserBot(), A = t.toString(), I = c ? null : O(t), S = t.isVerifiedBot(), T = _.Ay.getName(t), C = i ? A : null != n ? n : T, N = t.hasUniqueUsername() || l;
+    } = e, m = y(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator", "displayNameStylesType"]), g = (0, o.bG)([p.A], () => p.A.hidePersonalInformation), b = g || d || t.isNonUserBot(), A = t.toString(), I = c ? null : O(t), S = t.isVerifiedBot(), T = _.Ay.getName(t), C = i ? A : null != n ? n : T, N = t.hasUniqueUsername() || l;
     if (N || C !== A) {
       let e = C === A && N && i ? _.Ay.getUserTag(t, {
           forcePomelo: l
@@ -138,6 +138,6 @@ let v = e => {
       name: C,
       botType: I,
       botVerified: S,
-      discriminator: b || C !== A ? null : null != o ? o : t.discriminator
+      discriminator: b || C !== A ? null : null != s ? s : t.discriminator
     }, m))
   }

@@ -1,12 +1,12 @@
-/** Chunk was on 77986 **/
-/** chunk id: 834991, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 74665 **/
+/** chunk id: 834991, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   A: () => P
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  d = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk442433 = require("./442433.js"),
@@ -22,141 +22,141 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk939947 = require("./939947.js");
 
-function y(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
+function j(e) {
+  for (var n = 1; n < arguments.length; n++) {
+    var t = null != arguments[n] ? arguments[n] : {},
+      l = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), l.forEach(function(n) {
       var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
+      l = t[n], n in e ? Object.defineProperty(e, n, {
         value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[n] = l
     })
   }
   return e
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
+function y(e, n) {
+  return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
+    var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      t.push.apply(t, l)
     }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    return t
+  })(Object(n)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
 
 function A(e) {
   let {
-    children: t
+    children: n
   } = e;
   return (0, l.jsxs)("div", {
-    className: m.do,
-    children: [(0, l.jsx)(d.A, {
+    className: x.do,
+    children: [(0, l.jsx)(u.A, {
       children: (0, l.jsx)("div", {
-        className: m.n1,
-        children: (0, l.jsx)(o.nFg, {
+        className: x.n1,
+        children: (0, l.jsx)(a.nFg, {
           size: "custom",
           color: "currentColor",
           height: 40,
           width: 40,
-          className: m.Kk
+          className: x.Kk
         })
       })
-    }), t]
+    }), n]
   })
 }
 
-function O() {
+function I() {
   return (0, l.jsx)(A, {
-    children: (0, l.jsx)(o.Heading, {
+    children: (0, l.jsx)(a.Heading, {
       color: "text-strong",
       variant: "heading-xl/semibold",
-      className: m.DD,
-      children: p.intl.string(p.t.hW0mBR)
+      className: x.DD,
+      children: m.intl.string(m.t.hW0mBR)
     })
   })
 }
 
 function N() {
   return (0, l.jsx)(A, {
-    children: (0, l.jsx)(o.Heading, {
+    children: (0, l.jsx)(a.Heading, {
       color: "text-default",
       variant: "heading-md/semibold",
-      className: m.JU,
-      children: p.intl.string(p.t.obChXk)
+      className: x.JU,
+      children: m.intl.string(m.t.obChXk)
     })
   })
 }
 
 function C(e) {
   let {
-    count: t
+    count: n
   } = e;
   return (0, l.jsxs)("div", {
-    className: m.f0,
+    className: x.f0,
     children: [(0, l.jsx)("div", {
-      className: s()(m.Pc, m.uY),
-      children: (0, l.jsx)(o.nFg, {
+      className: d()(x.Pc, x.uY),
+      children: (0, l.jsx)(a.nFg, {
         size: "custom",
         color: "currentColor",
         height: 14,
         width: 14,
-        className: m.Kk
+        className: x.Kk
       })
-    }), (0, l.jsx)(o.Text, {
+    }), (0, l.jsx)(a.Text, {
       color: "text-default",
       variant: "text-md/normal",
-      children: p.intl.format(p.t.BdQTfR, {
-        userRemainCount: t
+      children: m.intl.format(m.t.BdQTfR, {
+        userRemainCount: n
       })
     })]
   })
 }
 
-function E(e) {
+function O(e) {
   let {
-    eventUser: t,
-    guildId: n,
-    onContextMenu: i
-  } = e, u = r.useRef(null), d = (0, c.bG)([v.default], () => v.default.getUser(t.user_id)), j = (0, c.bG)([h.A, f.A, g.default], () => t.user_id === g.default.getId() ? h.A.getStatus() : f.A.getStatus(t.user_id, n), [t.user_id, n]);
-  return null == d ? null : (0, l.jsx)(_.A, {
-    targetElementRef: u,
-    userId: t.user_id,
-    guildId: n,
+    eventUser: n,
+    guildId: t,
+    onContextMenu: r
+  } = e, o = i.useRef(null), u = (0, s.bG)([p.default], () => p.default.getUser(n.user_id)), h = (0, s.bG)([v.A, f.A, g.default], () => n.user_id === g.default.getId() ? v.A.getStatus() : f.A.getStatus(n.user_id, t), [n.user_id, t]);
+  return null == u ? null : (0, l.jsx)(_.A, {
+    targetElementRef: o,
+    userId: n.user_id,
+    guildId: t,
     position: "left",
     spacing: 16,
-    children: (e, r) => {
-      var c;
+    children: (e, i) => {
+      var s;
       let {
         isShown: _
-      } = r;
-      return (0, l.jsxs)(o.DUT, b(y({
-        innerRef: u,
-        className: s()(m.f0, m.fv, {
-          [m.wH]: _
+      } = i;
+      return (0, l.jsxs)(a.DUT, y(j({
+        innerRef: o,
+        className: d()(x.f0, x.fv, {
+          [x.wH]: _
         }),
-        onContextMenu: e => i(e, d)
+        onContextMenu: e => r(e, u)
       }, e), {
-        children: [(0, l.jsx)(o.euF, {
-          src: d.getAvatarURL(n, 24),
-          "aria-label": d.username,
-          size: o._3J.SIZE_24,
-          className: m.uY,
-          status: j
-        }), (0, l.jsx)(a.A, {
-          user: d,
-          className: m.sY,
-          discriminatorClass: m.XU,
-          nick: null == (c = t.member) ? true : c.nick
+        children: [(0, l.jsx)(a.euF, {
+          src: u.getAvatarURL(t, 24),
+          "aria-label": u.username,
+          size: a._3J.SIZE_24,
+          className: x.uY,
+          status: h
+        }), (0, l.jsx)(c.A, {
+          user: u,
+          className: x.sY,
+          discriminatorClass: x.XU,
+          nick: null == (s = n.member) ? true : s.nick
         })]
       }))
     }
@@ -165,83 +165,83 @@ function E(e) {
 
 function k(e) {
   let {
-    eventUsers: t,
-    guildId: n,
-    usersNotShownCount: r = 0,
-    onContextMenu: i
+    eventUsers: n,
+    guildId: t,
+    usersNotShownCount: i = 0,
+    onContextMenu: r
   } = e;
-  return (0, l.jsxs)(o.IpV, {
-    className: m.DK,
-    children: [t.map(e => (0, l.jsx)(E, {
-      guildId: n,
+  return (0, l.jsxs)(a.IpV, {
+    className: x.DK,
+    children: [n.map(e => (0, l.jsx)(O, {
+      guildId: t,
       eventUser: e,
-      onContextMenu: i
-    }, e.user_id)), r > 0 && (0, l.jsx)(C, {
-      count: r
+      onContextMenu: r
+    }, e.user_id)), i > 0 && (0, l.jsx)(C, {
+      count: i
     })]
   })
 }
 
-function I(e) {
+function E(e) {
   let {
-    children: t,
-    style: n
+    children: n,
+    style: t
   } = e;
   return (0, l.jsx)("div", {
-    className: m.kL,
-    style: null != n ? n : {},
-    children: t
+    className: x.kL,
+    style: null != t ? t : {},
+    children: n
   })
 }
 
 function S(e) {
   let {
-    children: t,
-    height: n
+    children: n,
+    height: t
   } = e;
-  return (0, l.jsx)(I, {
+  return (0, l.jsx)(E, {
     style: {
-      height: n
+      height: t
     },
-    children: t
+    children: n
   })
 }
 
 function P(e) {
   let {
-    guildEvent: t,
-    recurrenceId: r,
-    eventUsers: i,
-    loading: s,
-    error: c,
-    containerHeight: a
-  } = e, d = (0, j.A)(t.guild_id, t.id, r);
-  if (s && 0 === i.length) return (0, l.jsx)(S, {
-    height: a,
-    children: (0, l.jsx)(o.y$y, {
-      type: o.y$y.Type.SPINNING_CIRCLE,
-      className: m.u1
+    guildEvent: n,
+    recurrenceId: i,
+    eventUsers: r,
+    loading: d,
+    error: s,
+    containerHeight: c
+  } = e, u = (0, h.A)(n.guild_id, n.id, i);
+  if (d && 0 === r.length) return (0, l.jsx)(S, {
+    height: c,
+    children: (0, l.jsx)(a.y$y, {
+      type: a.y$y.Type.SPINNING_CIRCLE,
+      className: x.u1
     })
   });
-  if (null != c && 0 === i.length) return (0, l.jsx)(S, {
-    height: a,
+  if (null != s && 0 === r.length) return (0, l.jsx)(S, {
+    height: c,
     children: (0, l.jsx)(N, {})
   });
   let _ = 0;
-  return i.length >= x.C1 && d > x.C1 && (_ = Math.max(d - i.length, 0)), 0 === i.length ? (0, l.jsx)(S, {
-    height: a,
-    children: (0, l.jsx)(O, {})
-  }) : (0, l.jsx)(I, {
+  return r.length >= b.C1 && u > b.C1 && (_ = Math.max(u - r.length, 0)), 0 === r.length ? (0, l.jsx)(S, {
+    height: c,
+    children: (0, l.jsx)(I, {})
+  }) : (0, l.jsx)(E, {
     children: (0, l.jsx)(k, {
-      eventUsers: i,
-      guildId: t.guild_id,
-      onContextMenu: function(e, t) {
-        (0, u.L3)(e, async () => {
+      eventUsers: r,
+      guildId: n.guild_id,
+      onContextMenu: function(e, n) {
+        (0, o.L3)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("97262"), n.e("32418"), n.e("8893")]).then(n.bind(n, 668569));
-          return n => (0, l.jsx)(e, b(y({}, n), {
-            user: t
+          } = await Promise.all([t.e("97262"), t.e("3795"), t.e("32418"), t.e("16938")]).then(t.bind(t, 668569));
+          return t => (0, l.jsx)(e, y(j({}, t), {
+            user: n
           }))
         })
       },

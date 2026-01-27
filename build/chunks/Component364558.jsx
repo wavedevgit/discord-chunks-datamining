@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 364558, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 364558, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => g
 });
@@ -15,51 +14,46 @@ var Chunk627968 = require("./627968.js"),
   Chunk519412 = require("./519412.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk817577 = require("./817577.js");
-
-function _(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function h(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      _(e, t, n[t])
-    })
-  }
-  return e
-}
 let m = () => {
-    (0, a.A)(o.A.getArticleURL(u.MVz.PREMIUM_GROUP_ABOUT))
+    (0, l.A)(a.A.getArticleURL(d.MVz.PREMIUM_GROUP_ABOUT))
   },
   g = () => ({
-    name: l.U.PREMIUM_GROUP,
-    title: f.intl.string(d.default.YkvksF),
-    subtitle: f.intl.formatToPlainString(d.default.JlyGQj, {
+    name: o.U.PREMIUM_GROUP,
+    title: _.intl.string(u.default.YkvksF),
+    subtitle: _.intl.formatToPlainString(u.default.JlyGQj, {
       totalSeats: c.aw,
       premiumGroupProductName: (0, c.DP)()
     }),
     description: (0, r.jsx)(s.A, {
       onClick: m,
-      children: f.intl.string(d.default.yYyGJH)
+      children: _.intl.string(u.default.yYyGJH)
     }),
-    descriptionCta: f.intl.string(f.t.jVcuVY),
-    pillText: f.intl.string(f.t.oW0eUd).toLocaleUpperCase(),
+    descriptionCta: _.intl.string(_.t.jVcuVY),
+    pillText: _.intl.string(_.t.oW0eUd).toLocaleUpperCase(),
     perkImage: p,
     onCtaClick: () => {
       (0, i.mMO)(async () => {
         let {
           default: e
         } = await n.e("69595").then(n.bind(n, 526710));
-        return t => (0, r.jsx)(e, h({}, t))
+        return t => (0, r.jsx)(e, function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, t))
       })
     }
   })

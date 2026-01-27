@@ -27,7 +27,7 @@ function t(e, t) {
     }
     throw TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
   }
-  var s, o = true,
+  var o, s = true,
     l = false;
   return {
     s: function() {
@@ -35,16 +35,16 @@ function t(e, t) {
     },
     n: function() {
       var e = r.next();
-      return o = e.done, e
+      return s = e.done, e
     },
     e: function(e) {
-      l = true, s = e
+      l = true, o = e
     },
     f: function() {
       try {
-        o || null == r.return || r.return()
+        s || null == r.return || r.return()
       } finally {
-        if (l) throw s
+        if (l) throw o
       }
     }
   }
@@ -68,8 +68,8 @@ function r(e, t) {
 function i() {
   this._defaults = []
 }
-for (var a = 0, s = ["use", "on", "once", "set", "query", "type", "accept", "auth", "withCredentials", "sortQuery", "retry", "ok", "redirects", "timeout", "buffer", "serialize", "parse", "ca", "key", "pfx", "cert", "disableTLSCerts"]; a < s.length; a++) {
-  let e = s[a];
+for (var a = 0, o = ["use", "on", "once", "set", "query", "type", "accept", "auth", "withCredentials", "sortQuery", "retry", "ok", "redirects", "timeout", "buffer", "serialize", "parse", "ca", "key", "pfx", "cert", "disableTLSCerts"]; a < o.length; a++) {
+  let e = o[a];
   i.prototype[module] = function() {
     for (var t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
     return this._defaults.push({

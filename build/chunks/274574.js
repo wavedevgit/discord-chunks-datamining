@@ -5,10 +5,10 @@ var Chunk230606 = require("./230606.js"),
   Chunk485155 = require("./485155.js"),
   Chunk380744 = require("./380744.js"),
   Chunk257943 = require("./257943.js"),
-  o = Chunk380744("species");
+  s = Chunk380744("species");
 module.exports = function(e) {
   var t = r(e);
-  s && t && !t[o] && i(t, o, {
+  o && t && !t[s] && i(t, s, {
     configurable: true,
     get: function() {
       return this

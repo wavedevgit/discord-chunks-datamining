@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   AZ: () => C,
-  Ay: () => x,
+  Ay: () => L,
   Qn: () => w,
   cR: () => R
 }), require("./321073.js"), require("./896048.js");
@@ -128,7 +128,7 @@ class D extends Chunk513391.A {
   }
   startQueueMetricTimers(e) {
     let t = P.map(e => setTimeout(() => {
-      (0, o.zV)(y.HAw.SEND_MESSAGE_QUEUED, {
+      (0, s.zV)(y.HAw.SEND_MESSAGE_QUEUED, {
         queued_duration_ms: e
       })
     }, e));
@@ -155,11 +155,11 @@ class D extends Chunk513391.A {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, s = S(e, ["channelId", "analyticsLocation"]), o = null != (n = (0, d.A)()) ? n : i, l = null != o ? {
-      location: o
+    } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.A)()) ? n : i, l = null != s ? {
+      location: s
     } : true, f = (0, u.O)(), _ = v({
       mobile_network_type: p.A.getType()
-    }, s, null != f && {
+    }, o, null != f && {
       signal_strength: f
     });
     if (c.Ay.get("send_fail_100")) {
@@ -193,11 +193,11 @@ class D extends Chunk513391.A {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, s = S(e, ["channelId", "analyticsLocation"]), o = null != (n = (0, d.A)()) ? n : i, l = null != o ? {
-      location: o
+    } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.A)()) ? n : i, l = null != s ? {
+      location: s
     } : true, f = (0, u.O)(), _ = v({
       mobile_network_type: p.A.getType()
-    }, s, null != f && {
+    }, o, null != f && {
       signal_strength: f
     });
     if (c.Ay.get("send_fail_100")) {
@@ -230,7 +230,7 @@ class D extends Chunk513391.A {
     let {
       applicationId: n,
       guildId: r,
-      channelId: o,
+      channelId: s,
       data: l,
       nonce: c,
       attachments: u,
@@ -239,10 +239,10 @@ class D extends Chunk513391.A {
       sectionName: _,
       source: m
     } = e, b = {
-      type: s.G4.APPLICATION_COMMAND,
+      type: o.G4.APPLICATION_COMMAND,
       application_id: n,
       guild_id: r,
-      channel_id: o,
+      channel_id: s,
       session_id: f.default.getSessionId(),
       data: l,
       nonce: c,
@@ -271,21 +271,21 @@ class D extends Chunk513391.A {
     super(new l.A("MessageQueue")), O(this, "maxSize", true), O(this, "requests", true), O(this, "analyticsTimeouts", true), O(this, "handleEdit", true), this.maxSize = e, this.requests = new Map, this.analyticsTimeouts = new Map, this.handleEdit = (e, t) => {
       let [n, ...r] = [e, t], {
         channelId: i,
-        messageId: s,
-        isCrossposted: o
-      } = n, l = S(n, ["channelId", "messageId", "isCrossposted"]), [c] = r, u = new AbortController, d = this.createResponseHandler(s, c), f = {
-        url: y.Rsh.MESSAGE(i, s),
+        messageId: o,
+        isCrossposted: s
+      } = n, l = S(n, ["channelId", "messageId", "isCrossposted"]), [c] = r, u = new AbortController, d = this.createResponseHandler(o, c), f = {
+        url: y.Rsh.MESSAGE(i, o),
         body: l,
         retries: 1,
         oldFormErrors: true,
         signal: u.signal,
         rejectWithError: true,
         onRequestCreated: () => {
-          this.requests.set(s, u)
+          this.requests.set(o, u)
         }
       };
-      o && (f.failImmediatelyWhenRateLimited = true), a.Bo.patch(f, d)
+      s && (f.failImmediatelyWhenRateLimited = true), a.Bo.patch(f, d)
     }
   }
 }
-let x = new D
+let L = new D

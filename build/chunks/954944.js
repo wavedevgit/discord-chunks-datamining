@@ -17,7 +17,7 @@ module.exports = function(e) {
       relevance: 0,
       begin: /,/
     },
-    s = {
+    o = {
       className: "number",
       variants: [{
         begin: /[su]?0[xX][KMLHR]?[a-fA-F0-9]+/
@@ -26,7 +26,7 @@ module.exports = function(e) {
       }],
       relevance: 0
     },
-    o = {
+    s = {
       className: "symbol",
       variants: [{
         begin: /^\s*[a-z]+:/
@@ -73,6 +73,6 @@ module.exports = function(e) {
         className: "char.escape",
         match: /\\\d\d/
       }]
-    }, c, a, i, l, o, s]
+    }, c, a, i, l, s, o]
   }
 }

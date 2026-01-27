@@ -77,7 +77,7 @@ function m(e, t) {
 async function g(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = arguments.length > 2 ? arguments[2] : true;
-  s.h.dispatch({
+  o.h.dispatch({
     type: "APPLICATION_FETCH",
     applicationId: e
   });
@@ -91,12 +91,12 @@ async function g(e) {
       signal: n,
       rejectWithError: false
     });
-    return s.h.dispatch({
+    return o.h.dispatch({
       type: "APPLICATION_FETCH_SUCCESS",
       application: r.body
     }), r.body
   } catch (t) {
-    throw s.h.dispatch({
+    throw o.h.dispatch({
       type: "APPLICATION_FETCH_FAIL",
       applicationId: e
     }), t
@@ -109,7 +109,7 @@ let E = {
         guildId: n,
         type: r,
         teamId: i
-      } = e, o = (await a.Bo.post({
+      } = e, s = (await a.Bo.post({
         url: u.Rsh.APPLICATIONS,
         body: {
           name: t,
@@ -119,10 +119,10 @@ let E = {
         },
         rejectWithError: false
       })).body;
-      return null != n && null != r && s.h.dispatch({
+      return null != n && null != r && o.h.dispatch({
         type: "APPLICATION_FETCH_SUCCESS",
-        application: o
-      }), o
+        application: s
+      }), s
     },
     async getApplicationsForGuild(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true,
@@ -131,17 +131,17 @@ let E = {
           includeTeam: r
         } = n,
         i = h(n, ["includeTeam"]),
-        o = (await a.Bo.get({
+        s = (await a.Bo.get({
           url: u.Rsh.GUILD_APPLICATIONS(e),
           query: _(f({}, i), {
             include_team: r
           }),
           rejectWithError: false
         })).body;
-      return s.h.dispatch({
+      return o.h.dispatch({
         type: "APPLICATIONS_FETCH_SUCCESS",
-        applications: o
-      }), o
+        applications: s
+      }), s
     },
     async transferApplication(e) {
       let {
@@ -154,7 +154,7 @@ let E = {
         },
         rejectWithError: false
       })).body;
-      return s.h.dispatch({
+      return o.h.dispatch({
         type: "APPLICATION_FETCH_SUCCESS",
         application: r
       }), r
@@ -173,7 +173,7 @@ let E = {
       }
       if (n.length > 0) {
         let e;
-        s.h.dispatch({
+        o.h.dispatch({
           type: "APPLICATIONS_FETCH",
           applicationIds: n
         });
@@ -185,14 +185,14 @@ let E = {
             rejectWithError: false
           })
         } catch (e) {
-          throw 429 !== e.status && s.h.dispatch({
+          throw 429 !== e.status && o.h.dispatch({
             type: "APPLICATIONS_FETCH_FAIL",
             applicationIds: n
           }), e
         }
         let t = new Set(e.body.map(e => e.id)),
           r = n.filter(e => !t.has(e));
-        s.h.dispatch({
+        o.h.dispatch({
           type: "APPLICATIONS_FETCH_SUCCESS",
           applications: e.body,
           unknownApplicationIds: r
@@ -218,9 +218,9 @@ function b(e) {
     error: r
   } = y(e);
   return {
-    app: (0, i.bG)([o.A], () => {
+    app: (0, i.bG)([s.A], () => {
       if (null == t) {
-        let t = o.A.getApplication(e);
+        let t = s.A.getApplication(e);
         if (null != t) return l.Ay.createFromServer(t)
       }
       return t

@@ -128,12 +128,12 @@ function S(e) {
   for (let {
       id: e,
       models: n,
-      available: s
+      available: o
     }
     of t.voices) Object.hasOwn(d.y, e) && (i[e] = h(p({}, d.y[e]), {
     id: e,
     modelIds: n,
-    available: !!r || s,
+    available: !!r || o,
     temporarilyAvailable: a.currentSet.includes(e)
   }));
   E.voiceFilters = i, E.sortedVoiceFilters = I(E.voiceFilters), E.catalogLastFetchTime = new Date, null != n && (Object.keys(E.modelState).length > 0 ? E.modelState = n : g.warn("Attempted to replace existing model state with initial model state"))
@@ -256,22 +256,22 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     timeInSeconds: t
   } = e;
   A((0, a.A)(new Date, t))
 }
 
-function L(e) {
+function x(e) {
   E.nativeVoiceFilterModuleState = e.state
 }
 
-function j() {
+function M() {
   E.error = "ERROR_ACTIVATING_VOICE_FILTER"
 }
 
-function M() {
+function j() {
   E.error = null
 }
 
@@ -287,9 +287,9 @@ let U = new C(Chunk73153.h, {
   VOICE_FILTER_CATALOG_FETCH_SUCCESS: S,
   VOICE_FILTER_CATALOG_FETCH_FAILED: T,
   VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: N,
-  VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: x,
-  VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: L,
-  VOICE_FILTER_APPLY_FAILED: j,
-  VOICE_FILTER_REQUEST_SWITCH: M,
+  VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: L,
+  VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: x,
+  VOICE_FILTER_APPLY_FAILED: M,
+  VOICE_FILTER_REQUEST_SWITCH: j,
   VOICE_FILTER_LAGGING: k
 })

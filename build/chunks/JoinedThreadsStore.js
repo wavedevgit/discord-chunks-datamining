@@ -2,7 +2,7 @@
 /** chunk id: 152007, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => j
+  A: () => M
 }), require("./896048.js"), require("./938796.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -77,7 +77,7 @@ function b(e) {
 function O(e) {
   let t = h[e];
   m.clearTimer(e), true === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
-    h[e].muted = false, (g = new Set(g)).delete(e), L.emitChange()
+    h[e].muted = false, (g = new Set(g)).delete(e), x.emitChange()
   }) && (h[e].muted = false, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
@@ -210,7 +210,7 @@ function D(e) {
     }, O(e.id), r = true)
   }), r
 }
-class x extends(r = Chunk311907.Ay.Store) {
+class L extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(u.default)
   }
@@ -239,8 +239,8 @@ class x extends(r = Chunk311907.Ay.Store) {
     return g.has(e)
   }
 }
-d(x, "displayName", "JoinedThreadsStore");
-let L = new x(Chunk73153.h, {
+d(L, "displayName", "JoinedThreadsStore");
+let x = new L(Chunk73153.h, {
     CONNECTION_OPEN: v,
     OVERLAY_INITIALIZE: A,
     GUILD_CREATE: I,
@@ -256,4 +256,4 @@ let L = new x(Chunk73153.h, {
     THREAD_MEMBER_LOCAL_UPDATE: P,
     THREAD_MEMBERS_UPDATE: D
   }),
-  j = L
+  M = x

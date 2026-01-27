@@ -16,22 +16,22 @@ require.d(exports, {
 let a = function(e, t) {
   true === t && (t = "");
   var n, a = e && e.split("/") || [],
-    s = t && t.split("/") || [],
-    o = e && r(e),
+    o = t && t.split("/") || [],
+    s = e && r(e),
     l = t && r(t),
-    c = o || l;
-  if (e && r(e) ? s = a : a.length && (s.pop(), s = s.concat(a)), !s.length) return "/";
-  if (s.length) {
-    var u = s[s.length - 1];
+    c = s || l;
+  if (e && r(e) ? o = a : a.length && (o.pop(), o = o.concat(a)), !o.length) return "/";
+  if (o.length) {
+    var u = o[o.length - 1];
     n = "." === u || ".." === u || "" === u
   } else n = false;
-  for (var d = 0, f = s.length; f >= 0; f--) {
-    var p = s[f];
-    "." === p ? i(s, f) : ".." === p ? (i(s, f), d++) : d && (i(s, f), d--)
+  for (var d = 0, f = o.length; f >= 0; f--) {
+    var p = o[f];
+    "." === p ? i(o, f) : ".." === p ? (i(o, f), d++) : d && (i(o, f), d--)
   }
   if (!c)
-    for (; d--;) s.unshift("..");
-  !c || "" === s[0] || s[0] && r(s[0]) || s.unshift("");
-  var _ = s.join("/");
+    for (; d--;) o.unshift("..");
+  !c || "" === o[0] || o[0] && r(o[0]) || o.unshift("");
+  var _ = o.join("/");
   return n && "/" !== _.substr(false) && (_ += "/"), _
 }

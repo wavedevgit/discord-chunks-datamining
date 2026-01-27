@@ -2,7 +2,7 @@
 /** chunk id: 709977, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ge: () => o,
+  Ge: () => s,
   OP: () => l,
   Qd: () => c
 }), require("./733351.js");
@@ -10,7 +10,7 @@ var Chunk403362 = require("./403362.js"),
   Chunk513461 = require("./513461.js"),
   Chunk260197 = require("./260197.js"),
   Chunk652215 = require("./652215.js");
-let o = e => {
+let s = e => {
   let {
     required: t,
     response: n,
@@ -37,5 +37,5 @@ function l(e) {
 }
 
 function c(e) {
-  return null != e && e.features.has(s.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
+  return null != e && e.features.has(o.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
 }

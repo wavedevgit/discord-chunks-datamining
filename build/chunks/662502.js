@@ -2,12 +2,12 @@
 /** chunk id: 662502, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk397927 = require("./397927.js"),
   Chunk323484 = require("./323484.js"),
   Chunk835002 = require("./835002.js");
-let s = {
+let o = {
   showIgnoreSuccessToast(e, t) {
     (0, r.showToast)((0, r.createToast)((0, i.$)(a.OB.IGNORE_SUCCESS, e, t), r.ToastType.SUCCESS))
   },

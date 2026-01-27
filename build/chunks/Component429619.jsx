@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 429619, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 429619, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,62 +16,60 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk844551 = require("./844551.js");
-let m = () => {
+let A = () => {
   var e;
   let {
     analyticsLocations: t
-  } = (0, o.Ay)(s.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), n = i.useRef(null), {
-    asset: m,
-    popoutAsset: g,
-    title: E,
-    body: y,
-    version: b,
-    revertTextColor: O
-  } = (0, d.M)(), v = i.useContext(l.gl), A = null != (e = null == v ? true : v.navigateWithValidation) ? e : e => e();
-  i.useEffect(() => {
-    c.default.track(f.HAw.PREMIUM_UPSELL_VIEWED, {
+  } = (0, a.Ay)(s.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), n = i.useRef(null), {
+    asset: A,
+    popoutAsset: f,
+    title: h,
+    body: b,
+    version: E,
+    revertTextColor: x
+  } = (0, u.M)(), O = i.useContext(o.gl), C = null != (e = null == O ? true : O.navigateWithValidation) ? e : e => e();
+  return i.useEffect(() => {
+    c.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
       type: p.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
       location_stack: t,
-      version: b
+      version: E
     })
-  }, [t, b]);
-  let I = () => {
-    A(() => (0, u.Cz)({
-      analyticsLocations: t,
-      analyticsSource: s.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
-    }))
-  };
-  return (0, r.jsxs)("div", {
+  }, [t, E]), (0, r.jsxs)("div", {
     ref: n,
-    className: h.kL,
+    className: g.kL,
     style: {
-      backgroundImage: "url(".concat(m, ")")
+      backgroundImage: "url(".concat(A, ")")
     },
     children: [(0, r.jsx)("div", {
-      className: h.JS,
+      className: g.JS,
       "aria-hidden": true,
       role: "presentation",
       children: (0, r.jsx)("img", {
-        src: g,
-        className: h.Qw,
+        src: f,
+        className: g.Qw,
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: h.Em,
-      children: [(0, r.jsx)(a.Heading, {
+      className: g.Em,
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-lg/extrabold",
-        color: O ? "text-overlay-dark" : "currentColor",
-        className: h.DD,
-        children: E
-      }), (0, r.jsx)(a.Text, {
+        color: x ? "text-overlay-dark" : "currentColor",
+        className: g.DD,
+        children: h
+      }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        color: O ? "text-overlay-dark" : "currentColor",
-        children: y
+        color: x ? "text-overlay-dark" : "currentColor",
+        children: b
       })]
-    }), (0, r.jsx)(a.Button, {
-      onClick: I,
+    }), (0, r.jsx)(l.Button, {
+      onClick: () => {
+        C(() => (0, d.Cz)({
+          analyticsLocations: t,
+          analyticsSource: s.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
+        }))
+      },
       variant: "overlay-primary",
-      text: _.intl.string(_.t.fYfGgK)
+      text: m.intl.string(m.t.fYfGgK)
     })]
   })
 }

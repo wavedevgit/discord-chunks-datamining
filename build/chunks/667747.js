@@ -14,7 +14,7 @@ var Chunk308528 = require("./308528.js"),
   Chunk985018 = require("./985018.jsx");
 
 function u(e, t, n) {
-  a.default.showNotification(o.Ay.getUserAvatarURL(e), e.username, t, {}, {
+  a.default.showNotification(s.Ay.getUserAvatarURL(e), e.username, t, {}, {
     omitViewTracking: true,
     omitClickTracking: true,
     tag: e.id,
@@ -31,7 +31,7 @@ function d(e) {
       } = n(657331);
       t({
         userId: e.id,
-        sourceAnalyticsLocations: [s.A.FRIEND_REQUEST_NOTIFICATION]
+        sourceAnalyticsLocations: [o.A.FRIEND_REQUEST_NOTIFICATION]
       })
     }
     i.A.transitionToSection(l.m3P.PENDING, {

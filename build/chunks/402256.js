@@ -33,12 +33,12 @@ let i = {
     },
     336: {
       name: "Time Sent",
-      description: s
+      description: o
     },
     346: {
       name: "Coded Character Set",
-      description: o,
-      encoding_name: o
+      description: s,
+      encoding_name: s
     },
     356: "UNO",
     376: {
@@ -118,7 +118,7 @@ let i = {
     },
     572: {
       name: "Time Created",
-      description: s
+      description: o
     },
     574: {
       name: "Digital Creation Date",
@@ -126,7 +126,7 @@ let i = {
     },
     575: {
       name: "Digital Creation Time",
-      description: s
+      description: o
     },
     577: "Originating Program",
     582: "Program Version",
@@ -336,13 +336,13 @@ function a(e) {
   return t.length >= 8 ? t.substr(0, 4) + "-" + t.substr(4, 2) + "-" + t.substr(6, 2) : t
 }
 
-function s(e) {
+function o(e) {
   let t = (0, r.Jn)(e),
     n = t;
   return t.length >= 6 && (n = t.substr(0, 2) + ":" + t.substr(2, 2) + ":" + t.substr(4, 2), 11 === t.length && (n += t.substr(6, 1) + t.substr(7, 2) + ":" + t.substr(9, 2))), n
 }
 
-function o(e) {
+function s(e) {
   let t = (0, r.Jn)(e);
   if ("\x1b%G" === t) return "UTF-8";
   if ("\x1b%5" === t) return "Windows-1252";

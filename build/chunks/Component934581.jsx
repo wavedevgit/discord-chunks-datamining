@@ -25,28 +25,28 @@ function d(e) {
     style: d,
     trialPeriod: f,
     trialEnd: p
-  } = e, _ = t.fractionalState === s.xc.FP_SUB_PAUSED, h = (0, a.A)(t.endsAt, _), m = "", g = {
+  } = e, _ = t.fractionalState === o.xc.FP_SUB_PAUSED, h = (0, a.A)(t.endsAt, _), m = "", g = {
     trial: {
-      days_and_hours: o.t["8VIDrU"],
-      days: o.t["5e2wY0"],
-      hours: o.t.sQcCKt
+      days_and_hours: s.t["8VIDrU"],
+      days: s.t["5e2wY0"],
+      hours: s.t.sQcCKt
     },
     default: {
-      days_and_hours: o.t["6r9LLp"],
-      days: o.t.c2BbVA,
-      hours: o.t["8Xm6uL"]
+      days_and_hours: s.t["6r9LLp"],
+      days: s.t.c2BbVA,
+      hours: s.t["8Xm6uL"]
     }
   };
-  return "trial" === n && null != f && null != p ? (h.days > 0 && h.hours > 0 ? m = o.intl.format(g.trial.days_and_hours, {
+  return "trial" === n && null != f && null != p ? (h.days > 0 && h.hours > 0 ? m = s.intl.format(g.trial.days_and_hours, {
     days: h.days,
     hours: h.hours,
     trialPeriod: f,
     trialEnd: p
-  }) : h.days > 0 ? m = o.intl.format(g.trial.days, {
+  }) : h.days > 0 ? m = s.intl.format(g.trial.days, {
     days: h.days,
     trialPeriod: f,
     trialEnd: p
-  }) : h.hours > 0 && (m = o.intl.format(g.trial.hours, {
+  }) : h.hours > 0 && (m = s.intl.format(g.trial.hours, {
     days: h.days,
     hours: h.hours,
     trialPeriod: f,
@@ -59,12 +59,12 @@ function d(e) {
     }), (0, r.jsx)("hr", {
       className: l.oz
     })]
-  }) : (h.days > 0 && h.hours > 0 ? m = o.intl.format(g.default.days_and_hours, {
+  }) : (h.days > 0 && h.hours > 0 ? m = s.intl.format(g.default.days_and_hours, {
     days: h.days,
     hours: h.hours
-  }) : h.days > 0 ? m = o.intl.format(g.default.days, {
+  }) : h.days > 0 ? m = s.intl.format(g.default.days, {
     days: h.days
-  }) : h.hours > 0 && (m = o.intl.format(g.default.hours, {
+  }) : h.hours > 0 && (m = s.intl.format(g.default.hours, {
     hours: h.hours
   })), "" === m) ? null : u ? (0, r.jsxs)("div", {
     className: l.bD,

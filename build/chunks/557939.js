@@ -12,11 +12,11 @@ module.exports = function(e, t) {
   var n, u, d, f, p, _ = e.target,
     h = e.global,
     m = e.stat;
-  if (n = h ? r : m ? r[_] || o(_, {}) : r[_] && r[_].prototype)
+  if (n = h ? r : m ? r[_] || s(_, {}) : r[_] && r[_].prototype)
     for (u in t) {
       if (f = t[u], d = e.dontCallGetSet ? (p = i(n, u)) && p.value : n[u], !c(h ? u : _ + (m ? "." : "#") + u, e.forced) && true !== d) {
         if (typeof f == typeof d) continue;
         l(f, d)
-      }(e.sham || d && d.sham) && a(f, "sham", true), s(n, u, f, e)
+      }(e.sham || d && d.sham) && a(f, "sham", true), o(n, u, f, e)
     }
 }

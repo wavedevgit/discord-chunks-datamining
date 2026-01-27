@@ -34,14 +34,14 @@ async function g(e) {
     isPreview: r = false
   } = e;
   (0, a.s7G)(), i()(null == _[t], "should not double-join guilds");
-  let l = await (0, s.k)(t);
+  let l = await (0, o.k)(t);
   if (l.features.has(f.GuildFeatures.COMMUNITY)) {
     if (r)(0, c.sy)(t);
     else {
       if (!l.features.has(f.GuildFeatures.GUILD_ONBOARDING)) return;
       await (0, c.h9)(t)
     }
-    u.Ay.shouldShowOnboarding(t) && (await E(t), null != n && (0, o.pX)(f.BVt.CHANNEL(t, n)))
+    u.Ay.shouldShowOnboarding(t) && (await E(t), null != n && (0, s.pX)(f.BVt.CHANNEL(t, n)))
   }
 }
 
@@ -49,7 +49,7 @@ function E(e) {
   return new Promise(t => {
     _[e] = t, (0, d.Y)(e).then(() => {
       h(e), l.A.finishOnboarding(e)
-    }), (0, o.pX)(f.BVt.CHANNEL(e, p.VV.GUILD_ONBOARDING))
+    }), (0, s.pX)(f.BVt.CHANNEL(e, p.VV.GUILD_ONBOARDING))
   })
 }
 

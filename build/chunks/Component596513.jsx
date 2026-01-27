@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 596513, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 596513, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
@@ -15,31 +14,31 @@ let c = e => {
     supportHEVCAlpha: t,
     isMotionReduced: n,
     containerVisibilityPercentage: c,
-    containerClassName: u,
-    assetClassName: d
+    containerClassName: d,
+    assetClassName: u
   } = e;
   return n ? (0, r.jsx)("div", {
-    className: u,
+    className: d,
     children: (0, r.jsx)("img", {
-      src: l.A,
+      src: o.A,
       alt: "",
-      className: d
+      className: u
     })
   }) : (0, r.jsx)("div", {
-    className: u,
-    children: (0, r.jsx)(a.Ay, {
+    className: d,
+    children: (0, r.jsx)(l.Ay, {
       scaleAnimationData: {
         startScale: .9,
         endScale: 1,
-        duration: a.$G
+        duration: l.$G
       },
       yAxisAnimationData: {
         range: 20,
-        duration: a.Mp,
-        path: a.aV.SINE
+        duration: l.Mp,
+        path: l.aV.SINE
       },
       parallaxAnimationData: {
-        pathDirection: a.MN.UP,
+        pathDirection: l.MN.UP,
         range: 200,
         containerVisibilityPercentage: c,
         changeOpacity: false
@@ -48,17 +47,17 @@ let c = e => {
       children: t ? (0, r.jsx)("img", {
         src: s.A,
         alt: "",
-        className: d
+        className: u
       }) : (0, r.jsx)(i.A, {
         muted: true,
         autoPlay: true,
         playsInline: true,
         loop: true,
-        className: d,
+        className: u,
         children: (0, r.jsx)("source", {
-          src: o.A
+          src: a.A
         })
-      }, o.A)
+      }, a.A)
     })
   })
 }

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C8: () => u,
-  G1: () => o,
+  G1: () => s,
   N$: () => r.Key,
   Nu: () => f,
   RX: () => h,
@@ -11,7 +11,7 @@ require.d(exports, {
   Yy: () => l,
   dh: () => _,
   g$: () => p,
-  mi: () => s,
+  mi: () => o,
   zY: () => c
 }), require("./896048.js");
 var Chunk16336 = require("./16336.js");
@@ -37,8 +37,8 @@ function a(e) {
   }
   return e
 }
-let s = Chunk16336.Key.F6,
-  o = new Map([
+let o = Chunk16336.Key.F6,
+  s = new Map([
     [Chunk16336.Key.F6, "f6"],
     [Chunk16336.Key.Tab, "tab"],
     [Chunk16336.Key.ArrowDown, "down"],

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk582754 = require("./582754.js"),
   Chunk397927 = require("./397927.js"),
@@ -46,32 +46,32 @@ let w = {
       nameplateData: R,
       className: P,
       innerClassName: D,
-      isHighlighted: x,
-      showStatus: L,
-      showPlaceholderUser: j,
-      pendingGlobalName: M,
+      isHighlighted: L,
+      showStatus: x,
+      showPlaceholderUser: M,
+      pendingGlobalName: j,
       pendingNickname: k,
       pendingAvatarDecoration: U,
       pendingDisplayNameStyles: G,
-      pendingPrimaryGuildId: V,
-      nameplatePreviewSize: F = "default",
+      pendingPrimaryGuildId: F,
+      nameplatePreviewSize: V = "default",
       skipEffectDisplayName: B = false,
       width: H
-    } = e, Y = (0, u.Ay)(), W = (0, l.Mw)(Y), K = null != a ? (0, p.D)(a) : R, z = (0, o.bG)([v.A], () => null != t ? v.A.getStatus(t.id) : c.clD.ONLINE), q = W ? "#706F74" : "#aaaab2", Z = i.useRef(null), X = (0, o.bG)([O.Ay], () => null != n && null != t ? O.Ay.getMember(n, t.id) : null), Q = null != t ? (0, b.eh)({
+    } = e, Y = (0, u.Ay)(), W = (0, l.Mw)(Y), K = null != a ? (0, p.D)(a) : R, z = (0, s.bG)([v.A], () => null != t ? v.A.getStatus(t.id) : c.clD.ONLINE), q = W ? "#706F74" : "#aaaab2", Z = i.useRef(null), Q = (0, s.bG)([O.Ay], () => null != n && null != t ? O.Ay.getMember(n, t.id) : null), X = null != t ? (0, b.eh)({
       pendingNickname: k,
-      pendingGlobalName: M,
+      pendingGlobalName: j,
       user: t,
-      guildMember: X
+      guildMember: Q
     }) : true, J = (0, y.lw)({
       pendingValue: U,
       userValue: null == t ? true : t.avatarDecoration,
-      guildValue: null == X ? true : X.avatarDecoration,
+      guildValue: null == Q ? true : Q.avatarDecoration,
       guildId: n
-    }), $ = i.useMemo(() => w[F], [F]), ee = (0, _.A)({
+    }), $ = i.useMemo(() => w[V], [V]), ee = (0, _.A)({
       userId: null == t ? true : t.id,
       guildId: n,
       pendingDisplayNameStyles: G
-    }), et = (0, g.gS)(V), en = i.useMemo(() => null != a ? S.intl.formatToPlainString(S.t.YJig7C, {
+    }), et = (0, g.gS)(F), en = i.useMemo(() => null != a ? S.intl.formatToPlainString(S.t.YJig7C, {
       a11y_text: a.label
     }) : S.intl.string(S.t.SZeUdR), [a]);
     return (0, r.jsx)("div", {
@@ -82,29 +82,29 @@ let w = {
         width: null != H ? "".concat(H, "px") : "100%"
       },
       children: (0, r.jsxs)(c.M1G, {
-        className: s()(P, T.M4, {
-          [T.s]: "xsmall" === F,
-          [T.EX]: "small" === F,
-          [T.as]: "large" === F,
-          [T.AQ]: "xlarge" === F,
+        className: o()(P, T.M4, {
+          [T.s]: "xsmall" === V,
+          [T.EX]: "small" === V,
+          [T.as]: "large" === V,
+          [T.AQ]: "xlarge" === V,
           [T.gf]: null != H
         }),
         children: [null != K && (0, r.jsx)(I.A, {
           nameplate: K,
-          hovered: x,
+          hovered: L,
           placement: A.u.PREVIEW,
-          content: j ? true : Z
+          content: M ? true : Z
         }, null == a ? true : a.skuId), (0, r.jsxs)("div", {
           className: T.MU,
           children: [null != t ? (0, r.jsx)("div", {
-            className: s()(T.H, !j && T.Mk),
+            className: o()(T.H, !M && T.Mk),
             children: (0, r.jsx)(d.A, {
               ref: Z,
               avatar: (0, r.jsx)(f.A, {
                 user: t,
                 guildId: n,
                 avatarSize: $,
-                status: L ? z : true,
+                status: x ? z : true,
                 avatarDecorationOverride: J,
                 "aria-hidden": true
               }),
@@ -115,7 +115,7 @@ let w = {
                 className: T.id
               }),
               name: (0, r.jsx)(m.A, {
-                userName: Q,
+                userName: X,
                 displayNameStyles: ee,
                 effectDisplayType: B ? h.G.PLAIN : h.G.ANIMATED,
                 loop: true
@@ -124,7 +124,7 @@ let w = {
               withDisplayNameStyles: null != ee
             })
           }) : null, (0, r.jsxs)("div", {
-            className: s()(T.H, j && T.Mk),
+            className: o()(T.H, M && T.Mk),
             children: [(0, r.jsx)(c.euF, {
               src: W ? C : N,
               size: $,

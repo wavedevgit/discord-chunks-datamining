@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 944791, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 41727 **/
+/** chunk id: 944791, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => i
+  I: () => l
 });
 var Chunk73153 = require("./73153.js");
 
-function i(e) {
+function l(e) {
   r.h.dispatch({
     type: "APP_VIEW_SET_HOME_LINK",
     link: e

@@ -33,19 +33,19 @@ class c {
       t = this.getStateDurations(e),
       n = e => i().sumBy(t, t => t.state === e ? t.durationMs : 0);
     return {
-      state_awaiting_endpoint_ms: n(o.S7L.AWAITING_ENDPOINT),
-      state_authenticating_ms: n(o.S7L.AUTHENTICATING),
-      state_connecting_ms: n(o.S7L.CONNECTING),
-      state_disconnected_ms: n(o.S7L.DISCONNECTED),
-      state_ice_checking_ms: n(o.S7L.ICE_CHECKING),
-      state_no_route_ms: n(o.S7L.NO_ROUTE),
-      state_rtc_connecting_ms: n(o.S7L.RTC_CONNECTING),
-      state_rtc_disconnected_ms: n(o.S7L.RTC_DISCONNECTED)
+      state_awaiting_endpoint_ms: n(s.S7L.AWAITING_ENDPOINT),
+      state_authenticating_ms: n(s.S7L.AUTHENTICATING),
+      state_connecting_ms: n(s.S7L.CONNECTING),
+      state_disconnected_ms: n(s.S7L.DISCONNECTED),
+      state_ice_checking_ms: n(s.S7L.ICE_CHECKING),
+      state_no_route_ms: n(s.S7L.NO_ROUTE),
+      state_rtc_connecting_ms: n(s.S7L.RTC_CONNECTING),
+      state_rtc_disconnected_ms: n(s.S7L.RTC_DISCONNECTED)
     }
   }
   getStateDurations(e) {
     if (0 === this.history.length) return [];
-    let t = (0, s.A)(this.history, (e, t) => ({
+    let t = (0, o.A)(this.history, (e, t) => ({
         state: e.state,
         durationMs: t.startTime - e.startTime
       })),

@@ -63,9 +63,9 @@ function b(e) {
     react(t, i, m) {
       let E = m.noStyleAndInteraction ? true : async n => {
         let r = await (0, d.AN)(t.attachmentUrl);
-        e.shouldStopPropagation && (null == n || n.stopPropagation()), c.A.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, s.s7G)(), (0, l.A)(r)
+        e.shouldStopPropagation && (null == n || n.stopPropagation()), c.A.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, o.s7G)(), (0, l.A)(r)
       }, b = m.noStyleAndInteraction ? p.tEg : e => {
-        (0, o.L3)(e, async () => {
+        (0, s.L3)(e, async () => {
           let {
             default: e
           } = await n.e("62529").then(n.bind(n, 740024));
@@ -81,7 +81,7 @@ function b(e) {
         onClick: E,
         onContextMenu: b,
         className: "attachmentLink",
-        children: [(0, r.jsx)(s.PtA, {
+        children: [(0, r.jsx)(o.PtA, {
           size: "xs",
           className: a()(h.Kk, _.K),
           color: "currentColor"

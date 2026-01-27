@@ -3,40 +3,40 @@
 "use strict";
 require.d(exports, {
   Ay: () => c,
-  E8: () => o
+  E8: () => s
 }), require("./638769.js"), require("./321073.js"), require("./264879.js"), require("./896048.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438);
 let a = new(require("./626584.js")).A("DragAndDropUtils");
 
-function s(e) {
+function o(e) {
   let {
     oldOrdering: t,
     newOrdering: n,
     idGetter: r,
     existingPositionGetter: i,
-    ascending: s = true
-  } = e, o = n.length;
-  if (t.length !== o) return a.warn("Arrays are not of the same length!", t, n), [];
+    ascending: o = true
+  } = e, s = n.length;
+  if (t.length !== s) return a.warn("Arrays are not of the same length!", t, n), [];
   let l = t.map(r).sort().join(":"),
     c = n.map(r).sort().join(":");
   if (l !== c) return a.warn("Object IDs in the old ordering and the new ordering are not the same.", l, c), [];
   let u = {};
-  for (let e = 0; e < o; e++) u[r(t[e])] = i(t[e]);
+  for (let e = 0; e < s; e++) u[r(t[e])] = i(t[e]);
   let d = [];
-  for (let e = 0; e < o; e++) {
+  for (let e = 0; e < s; e++) {
     let t = r(n[e]),
       a = u[t],
-      l = s ? e : o - 1 - e;
+      l = o ? e : s - 1 - e;
     (a !== l || i(n[e]) !== l) && d.push({
       id: t,
       position: l
     })
   }
-  return s || d.reverse(), d
+  return o || d.reverse(), d
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   let r = e[t],
     i = [...e];
   return i.splice(t, 1), i.splice(n, 0, r), i
@@ -52,8 +52,8 @@ function l(e) {
     ascending: c = true
   } = e;
   Array.isArray(t) || (t = i().values(t));
-  let u = o(t, n, r);
-  return s({
+  let u = s(t, n, r);
+  return o({
     oldOrdering: t,
     newOrdering: u,
     idGetter: a,
@@ -62,7 +62,7 @@ function l(e) {
   })
 }
 let c = {
-  moveItemFromTo: o,
-  calculatePositionDeltas: s,
+  moveItemFromTo: s,
+  calculatePositionDeltas: o,
   getPositionUpdates: l
 }

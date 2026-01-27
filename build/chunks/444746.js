@@ -2,7 +2,7 @@
 /** chunk id: 444746, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ng: () => s,
+  Ng: () => o,
   sb: () => a,
   vq: () => i
 });
@@ -18,7 +18,7 @@ function a(e) {
   return e instanceof t || e instanceof HTMLElement
 }
 
-function s(e) {
+function o(e) {
   if ("u" < typeof ShadowRoot) returnfalse;
   var t = (0, r.A)(e).ShadowRoot;
   return e instanceof t || e instanceof ShadowRoot

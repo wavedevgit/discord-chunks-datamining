@@ -14,7 +14,7 @@ var Chunk64700 = require("./64700.js"),
 function c(e) {
   let {
     shouldFetchIfMissing: t
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = (0, l.bF)(e), c = null == e ? true : e.applicationId, u = (0, i.bG)([s.A], () => null != c ? s.A.getApplication(c) : null, [c]), d = null == u ? true : u.guildId, f = (0, i.bG)([o.A], () => null != d ? o.A.getGuild(d) : null, [d]);
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = (0, l.bF)(e), c = null == e ? true : e.applicationId, u = (0, i.bG)([o.A], () => null != c ? o.A.getApplication(c) : null, [c]), d = null == u ? true : u.guildId, f = (0, i.bG)([s.A], () => null != d ? s.A.getGuild(d) : null, [d]);
   return r.useEffect(() => {
     n && t && null == f && null != e && a.Ay.fetchApplication(e.applicationId, true)
   }, [f, e, t, n]), n ? f : null

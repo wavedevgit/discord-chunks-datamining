@@ -6,7 +6,7 @@ require.d(exports, {
   A: () => A
 }), require("./896048.js");
 var a, Chunk735438 = require("./735438.js"),
-  o = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk313961 = require("./313961.js"),
@@ -30,7 +30,7 @@ function E() {
   let e, t = !(arguments.length > 0) || true === arguments[0] || arguments[0];
   if (null == r) e = null;
   else {
-    var n, a, s, l, c;
+    var n, a, o, l, c;
     null != (e = u.A.getSelectedParticipantId(r)) && u.A.isParticipantPoppedOut(r, e) && (e = null);
     let t = f.A.getLastActiveStream(),
       g = null != e ? u.A.getParticipant(r, e) : null;
@@ -40,21 +40,21 @@ function E() {
     }
     if (null == e) {
       let t = p.default.getId(),
-        n = o()(u.A.getVideoParticipants(r)).filter(e => e.type === m.lp.USER && e.user.id !== t && !_.A.isLocalVideoDisabled(e.user.id) && !u.A.isParticipantPoppedOut(r, e.id)),
+        n = s()(u.A.getVideoParticipants(r)).filter(e => e.type === m.lp.USER && e.user.id !== t && !_.A.isLocalVideoDisabled(e.user.id) && !u.A.isParticipantPoppedOut(r, e.id)),
         a = n.map(e => e.user.id),
         d = Date.now();
-      null == (e = null == (s = n.map(e => [e.user.id, h.A.getSpeakingDuration(e.user.id, d)]).filter(e => {
+      null == (e = null == (o = n.map(e => [e.user.id, h.A.getSpeakingDuration(e.user.id, d)]).filter(e => {
         let [t, n] = e;
         return 0 !== n
       }).maxBy(e => {
         let [t, n] = e;
         return -n
-      })) ? true : s[0]) && (e = null != i && a.has(i) ? i : null == (c = n.first()) || null == (l = c.user) ? true : l.id)
+      })) ? true : o[0]) && (e = null != i && a.has(i) ? i : null == (c = n.first()) || null == (l = c.user) ? true : l.id)
     }
   }
   i !== e && (i = e, t && v.emitChange())
 }
-let y = o().throttle(E, 300, {
+let y = s().throttle(E, 300, {
   trailing: true
 });
 

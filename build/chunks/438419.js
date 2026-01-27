@@ -62,18 +62,18 @@ let p = {
     order: Chunk704726.Ay.order,
     requiredFirstCharacters: [":"],
     match(e) {
-      let t = s.Ay.EMOJI_NAME_AND_DIVERSITY_RE.exec(e);
-      return null != t && "" !== s.Ay.convertNameToSurrogate(t[1]) ? t : null
+      let t = o.Ay.EMOJI_NAME_AND_DIVERSITY_RE.exec(e);
+      return null != t && "" !== o.Ay.convertNameToSurrogate(t[1]) ? t : null
     },
     parse(e) {
-      let [t, n] = e, r = s.Ay.convertNameToSurrogate(n);
+      let [t, n] = e, r = o.Ay.convertNameToSurrogate(n);
       return null == r || "" === r ? {
         type: "text",
         content: t
       } : {
         name: ":".concat(n, ":"),
         surrogate: r,
-        src: o.Ay.getURL(r)
+        src: s.Ay.getURL(r)
       }
     }
   },
@@ -82,19 +82,19 @@ let p = {
     requiredFirstCharacters: ["<"],
     match: e => /^<(a)?:(\w+):(\d+)>/.exec(e),
     parse(e, t, n) {
-      let [r, i, s, o] = e, {
+      let [r, i, o, s] = e, {
         guildId: l
-      } = n, c = a.Ay.getDisambiguatedEmojiContext(l).getById(o), u = null == c || c.require_colons;
-      return null != c && (s = c.name), {
-        emojiId: o,
-        name: u ? ":".concat(s, ":") : s,
+      } = n, c = a.Ay.getDisambiguatedEmojiContext(l).getById(s), u = null == c || c.require_colons;
+      return null != c && (o = c.name), {
+        emojiId: s,
+        name: u ? ":".concat(o, ":") : o,
         animated: "a" === i
       }
     }
   },
   text: {
     parse(e) {
-      let t = s.Ay.findInlineEmojisFromSurrogates(e[0]),
+      let t = o.Ay.findInlineEmojisFromSurrogates(e[0]),
         n = 0;
       return t.map(e => {
         if ("text" === e.type) {
@@ -116,7 +116,7 @@ let p = {
             type: "emoji",
             name: e.emojiName,
             surrogate: e.surrogate,
-            src: o.Ay.getURL(e.surrogate),
+            src: s.Ay.getURL(e.surrogate),
             originalMatch: t
           }
         }

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 455611, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 455611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,56 +20,56 @@ function p(e) {
       code: t,
       consumed: n
     }
-  } = e, s = "".concat(t.substr(0, 4), "-").concat(t.substr(4)), o = i.useRef(null), l = i.useCallback(e => {
+  } = e, s = "".concat(t.substr(0, 4), "-").concat(t.substr(4)), a = i.useRef(null), o = i.useCallback(e => {
     if ("c" === e.key && e.metaKey && c.p5) {
       var t;
-      e.preventDefault(), e.stopPropagation(), (0, c.C)(s), null == o || null == (t = o.current) || t.focus()
+      e.preventDefault(), e.stopPropagation(), (0, c.C)(s), null == a || null == (t = a.current) || t.focus()
     }
   }, [s]);
   return (0, r.jsx)("li", {
-    className: f.SX,
-    children: (0, r.jsxs)(a.DUT, {
-      innerRef: o,
-      className: d.Uc,
-      onKeyDown: l,
-      children: [(0, r.jsx)(a.P7L, {
+    className: _.SX,
+    children: (0, r.jsxs)(l.DUT, {
+      innerRef: a,
+      className: u.Uc,
+      onKeyDown: o,
+      children: [(0, r.jsx)(l.P7L, {
         checked: n
       }), (0, r.jsx)("span", {
-        className: d.aY,
+        className: u.aY,
         children: s
       })]
     })
   })
 }
 
-function _(e) {
+function m(e) {
   let {
     backupCodes: t
   } = e, n = i.useCallback(e => e.map(e => (0, r.jsx)(p, {
     code: e
   }, e.code)), []), c = i.useCallback(async () => {
-    let e = l.A.getVerificationKey();
+    let e = o.A.getVerificationKey();
     await s.A.confirmViewBackupCodes(e, true)
   }, []);
-  return (0, r.jsxs)(a.D0$, {
-    label: u.intl.string(u.t.GfqHPn),
-    description: u.intl.format(u.t.OhmvYt, {}),
-    children: [(0, r.jsxs)(o.A, {
-      children: [(0, r.jsx)(o.A.Child, {
+  return (0, r.jsxs)(l.D0$, {
+    label: d.intl.string(d.t.GfqHPn),
+    description: d.intl.format(d.t.OhmvYt, {}),
+    children: [(0, r.jsxs)(a.A, {
+      children: [(0, r.jsx)(a.A.Child, {
         children: (0, r.jsx)("ul", {
-          className: d.Pm,
+          className: u.Pm,
           children: n(t.slice(0, t.length / 2))
         })
-      }), (0, r.jsx)(o.A.Child, {
+      }), (0, r.jsx)(a.A.Child, {
         children: (0, r.jsx)("ul", {
-          className: d.Pm,
+          className: u.Pm,
           children: n(t.slice(t.length / 2))
         })
       })]
-    }), (0, r.jsx)(a.QWc, {
+    }), (0, r.jsx)(l.QWc, {
       textVariant: "text-sm/medium",
       onClick: c,
-      text: u.intl.string(u.t.RIThUu)
+      text: d.intl.string(d.t.RIThUu)
     })]
   })
 }

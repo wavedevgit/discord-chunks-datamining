@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 338234, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 338234, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Uw: () => a,
+  Uw: () => l,
   fC: () => i
 });
 let r = (0, require("./600975.js").C)({
@@ -34,7 +33,7 @@ function i(e) {
   })
 }
 
-function a(e) {
+function l(e) {
   let {
     guildId: t,
     location: n

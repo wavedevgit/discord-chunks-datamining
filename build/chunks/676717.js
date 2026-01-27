@@ -12,18 +12,18 @@ module.exports = function(e) {
       built_in: ["proc", "lambda", "attr_accessor", "attr_reader", "attr_writer", "define_method", "private_constant", "module_function"],
       literal: ["true", "false", "nil"]
     },
-    s = {
+    o = {
       className: "doctag",
       begin: "@[A-Za-z]+"
     },
-    o = {
+    s = {
       begin: "#<",
       end: ">"
     },
     l = [e.COMMENT("#", "$", {
-      contains: [s]
+      contains: [o]
     }), e.COMMENT("^=begin", "^=end", {
-      contains: [s],
+      contains: [o],
       relevance: 10
     }), e.COMMENT("^__END__", e.MATCH_NOTHING_RE)],
     c = {
@@ -206,9 +206,9 @@ module.exports = function(e) {
           begin: "%r\\[",
           end: "\\][a-z]*"
         }]
-      }].concat(o, l),
+      }].concat(s, l),
       relevance: 0
-    }].concat(o, l);
+    }].concat(s, l);
   c.contains = m, _.contains = m;
   let g = [{
     begin: /^\s*=>/,
@@ -225,7 +225,7 @@ module.exports = function(e) {
       contains: m
     }
   }];
-  return l.unshift(o), {
+  return l.unshift(s), {
     name: "Ruby",
     aliases: ["rb", "gemspec", "podspec", "thor", "irb"],
     keywords: a,

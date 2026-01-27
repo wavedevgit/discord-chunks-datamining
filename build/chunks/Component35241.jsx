@@ -44,7 +44,7 @@ function _(e) {
     trackUserProfileAction: _
   } = (0, c.NJ)(), {
     analyticsLocations: h
-  } = (0, o.Ay)(s.A.USER_PROFILE_OVERFLOW_MENU), m = [
+  } = (0, s.Ay)(o.A.USER_PROFILE_OVERFLOW_MENU), m = [
     [n],
     [(0, l.A)({
       id: t.id,

@@ -34,15 +34,15 @@ function d(e) {
     userId: t,
     avatarId: n,
     storageHash: a,
-    canAnimate: s = false,
-    allowWebp: o = true,
+    canAnimate: o = false,
+    allowWebp: s = true,
     size: c
   } = e, {
     CDN_HOST: d
   } = window.GLOBAL_ENV, f = null != d ? "https://".concat(d) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT, p = u({
     storageHash: a,
-    canAnimate: s,
-    allowWebp: o
+    canAnimate: o,
+    allowWebp: s
   }), _ = "?".concat(r.stringify({
     size: (0, i.kr)(c * (0, i.mZ)())
   }));
@@ -56,9 +56,9 @@ function f(e) {
 function p(e) {
   let {
     filename: t,
-    assetOrigin: n = o.E.NEW_ASSET
+    assetOrigin: n = s.E.NEW_ASSET
   } = null != e ? e : {};
-  if (n === o.E.ARCHIVED_ASSET) return;
+  if (n === s.E.ARCHIVED_ASSET) return;
   let r = null != t ? t : c.intl.string(c.t.lqaIxI),
     i = new Date().toLocaleString(c.intl.currentLocale, {
       year: "numeric",
@@ -67,7 +67,7 @@ function p(e) {
       hour: "numeric",
       minute: "numeric"
     });
-  return c.intl.formatToPlainString(n === o.E.EDITED_ARCHIVED_ASSET ? c.t.eC2sZi : c.t.DYil93, {
+  return c.intl.formatToPlainString(n === s.E.EDITED_ARCHIVED_ASSET ? c.t.eC2sZi : c.t.DYil93, {
     name: r,
     dateTime: i
   })
@@ -82,7 +82,7 @@ function _(e) {
     case "jpg":
       return "image/jpeg";
     default:
-      (0, s.xb)(e)
+      (0, o.xb)(e)
   }
 }
 
@@ -101,26 +101,26 @@ function h(e, t) {
 
 function m(e) {
   let {
-    assetOrigin: t = o.E.NEW_ASSET,
+    assetOrigin: t = s.E.NEW_ASSET,
     imageUri: n,
     description: r,
     originalAsset: i
   } = e;
   switch (t) {
-    case o.E.NEW_ASSET:
+    case s.E.NEW_ASSET:
       return {
         assetOrigin: t, imageUri: n, description: r
       };
-    case o.E.EDITED_ARCHIVED_ASSET:
+    case s.E.EDITED_ARCHIVED_ASSET:
       return {
         assetOrigin: t, imageUri: n, description: r, originalAsset: i
       };
-    case o.E.ARCHIVED_ASSET:
+    case s.E.ARCHIVED_ASSET:
       return {
         assetOrigin: t, imageUri: n, originalAsset: i
       };
     default:
-      (0, s.xb)(t)
+      (0, o.xb)(t)
   }
 }
 
@@ -131,7 +131,7 @@ function g(e) {
     size: r = 80,
     canAnimate: i = true
   } = e;
-  return null != n && "string" != typeof n ? n.assetOrigin === o.E.ARCHIVED_ASSET ? d({
+  return null != n && "string" != typeof n ? n.assetOrigin === s.E.ARCHIVED_ASSET ? d({
     userId: t,
     avatarId: n.originalAsset.id,
     storageHash: n.originalAsset.storageHash,

@@ -47,12 +47,12 @@ function v(e) {
 let A = 1e3;
 
 function I() {
-  let [e, t] = i.useState(false), O = (0, l.Ry6)(E.lb), I = i.useMemo(() => [s.M.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [S, T] = (0, p.kn)(I), C = S === s.M.DESKTOP_REFRESH_ONBOARDING_MODAL, N = (0, a.bG)([h.default], () => h.default.getId());
+  let [e, t] = i.useState(false), O = (0, l.Ry6)(E.lb), I = i.useMemo(() => [o.M.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [S, T] = (0, p.kn)(I), C = S === o.M.DESKTOP_REFRESH_ONBOARDING_MODAL, N = (0, a.bG)([h.default], () => h.default.getId());
   i.useLayoutEffect(() => {
-    null != N && g.default.age(N) < m.A.Millis.DAY && (0, f.Dr)(s.M.DESKTOP_REFRESH_ONBOARDING_MODAL);
+    null != N && g.default.age(N) < m.A.Millis.DAY && (0, f.Dr)(o.M.DESKTOP_REFRESH_ONBOARDING_MODAL);
     let e = "desktop_refresh_theme_migration_key",
-      t = "true" === o.w.get(e);
-    !C || t || _.A.theme !== b.NJ.DARK || null != d.A.gradientPreset || t || (o.w.set(e, "true"), (0, u.u_)({
+      t = "true" === s.w.get(e);
+    !C || t || _.A.theme !== b.NJ.DARK || null != d.A.gradientPreset || t || (s.w.set(e, "true"), (0, u.u_)({
       theme: b.NJ.DARKER
     }))
   }, [C, N]), i.useLayoutEffect(() => {

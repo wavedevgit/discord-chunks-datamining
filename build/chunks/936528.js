@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 936528, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   aH: "speaker__708d1",
   EB: "guild__708d1",

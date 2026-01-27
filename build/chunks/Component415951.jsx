@@ -67,7 +67,7 @@ let _ = () => {
       if (__OVERLAY__) return;
       h(e);
       let c = async t => {
-        await s.Ay.submitVerificationForm(e, t)
+        await o.Ay.submitVerificationForm(e, t)
       };
       (0, i.openModalLazy)(async () => {
         let {
@@ -80,7 +80,7 @@ let _ = () => {
           onClose: async function() {
             let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
             if (!e)
-              if (o.YN.getState().hasUnsubmittedChanges) return void(0, o.C7)(true);
+              if (s.YN.getState().hasUnsubmittedChanges) return void(0, s.C7)(true);
               else _();
             await n.onClose()
           }
@@ -88,7 +88,7 @@ let _ = () => {
       }, {
         modalKey: l.LC,
         onCloseRequest: () => {
-          _(), o.YN.getState().hasUnsubmittedChanges ? (0, o.C7)(true) : (0, i.closeModal)(l.LC)
+          _(), s.YN.getState().hasUnsubmittedChanges ? (0, s.C7)(true) : (0, i.closeModal)(l.LC)
         },
         onCloseCallback: t
       })

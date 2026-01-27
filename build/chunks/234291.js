@@ -19,8 +19,8 @@ let a = {
     isPngFile: b,
     findPngOffsets: O
   },
-  s = "\x89PNG\r\n\x1a\n",
-  o = 4,
+  o = "\x89PNG\r\n\x1a\n",
+  s = 4,
   l = 4,
   c = 0,
   u = 4,
@@ -35,7 +35,7 @@ let a = {
   y = "iCCP";
 
 function b(e) {
-  return !!e && (0, r.hT)(e, 0, s.length) === s
+  return !!e && (0, r.hT)(e, 0, o.length) === o
 }
 
 function O(e, t) {
@@ -43,8 +43,8 @@ function O(e, t) {
     a = {
       hasAppMarkers: false
     },
-    f = s.length;
-  for (; f + o + l <= e.byteLength;) {
+    f = o.length;
+  for (; f + s + l <= e.byteLength;) {
     if (i.A.USE_PNG_FILE && v(e, f)) a.hasAppMarkers = true, a.pngHeaderOffset = f + d;
     else if (i.A.USE_XMP && A(e, f)) {
       let t = N(e, f);
@@ -68,18 +68,18 @@ function O(e, t) {
         {
           profileName: r,
           compressionMethod: i,
-          compressedProfileOffset: s
+          compressedProfileOffset: o
         } = w(e, n);
       a.iccChunks || (a.iccChunks = []), a.iccChunks.push({
-        offset: s,
-        length: t - (s - n),
+        offset: o,
+        length: t - (o - n),
         chunkNumber: 1,
         chunksTotal: 1,
         profileName: r,
         compressionMethod: i
       })
     } else C(e, f) && (a.hasAppMarkers = true, a.pngChunkOffsets || (a.pngChunkOffsets = []), a.pngChunkOffsets.push(f + c));
-    f += e.getUint32(f + c) + o + l + n
+    f += e.getUint32(f + c) + s + l + n
   }
   return a
 }

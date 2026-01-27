@@ -47,7 +47,7 @@ function p(e) {
   let {
     adContentIds: t,
     adCreativeType: n
-  } = e, c = (0, a.bG)([o.A], () => n !== i.p.QUEST || 1 !== t.length ? null : o.A.getQuest(t[0]), [t, n]), u = r.useMemo(() => null == c ? null : (0, l.NI)(c), [c]), d = (0, s.A)(u);
+  } = e, c = (0, a.bG)([s.A], () => n !== i.p.QUEST || 1 !== t.length ? null : s.A.getQuest(t[0]), [t, n]), u = r.useMemo(() => null == c ? null : (0, l.NI)(c), [c]), d = (0, o.A)(u);
   return u !== d
 }
 

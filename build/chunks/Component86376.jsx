@@ -30,22 +30,22 @@ function E(e) {
   }, [l]), p = i.useCallback(e => {
     u && (e.stopPropagation(), (0, c.u)(t.id))
   }, [u, t.id]);
-  return !u || n ? (0, r.jsx)(s.m, {
+  return !u || n ? (0, r.jsx)(o.m, {
     text: t.name,
     overflowOnly: true,
-    children: (0, r.jsx)(o.Heading, {
+    children: (0, r.jsx)(s.Heading, {
       className: g.J5,
       variant: "heading-md/semibold",
       color: "text-strong",
       children: t.name
     })
-  }) : (0, r.jsx)(o.DUT, {
+  }) : (0, r.jsx)(s.DUT, {
     className: g.YS,
     onClick: p,
-    children: (0, r.jsx)(s.m, {
+    children: (0, r.jsx)(o.m, {
       text: t.name,
       overflowOnly: true,
-      children: (0, r.jsx)(o.Heading, {
+      children: (0, r.jsx)(s.Heading, {
         className: g.J5,
         variant: "heading-md/semibold",
         color: "text-strong",
@@ -59,7 +59,7 @@ function y(e) {
   let {
     profile: t,
     disableGuildNameClick: n
-  } = e, s = (0, a.bG)([u.default], () => u.default.locale), c = (0, h.P)(_.default.extractTimestamp(t.id), s), d = i.useMemo(() => {
+  } = e, o = (0, a.bG)([u.default], () => u.default.locale), c = (0, h.P)(_.default.extractTimestamp(t.id), o), d = i.useMemo(() => {
     let e = (0, p.b9)(t);
     return (0, r.jsx)(l.A, {
       guild: e,
@@ -80,7 +80,7 @@ function y(e) {
         className: g.Kl,
         children: [(0, r.jsx)("div", {
           className: g.JX
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
           children: m.intl.format(m.t["LC+S+m"], {
@@ -91,7 +91,7 @@ function y(e) {
         className: g.Kl,
         children: [(0, r.jsx)("div", {
           className: g.Om
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
           children: m.intl.format(m.t.zRl6XR, {
@@ -101,7 +101,7 @@ function y(e) {
       })]
     }), (0, r.jsx)("div", {
       className: g.b5,
-      children: (0, r.jsx)(o.Text, {
+      children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: m.intl.format(m.t.zb2Q56, {

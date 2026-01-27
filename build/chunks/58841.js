@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 58841, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 58841, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y: () => s
 });
@@ -11,7 +10,7 @@ let s = {
   binds: ["mod+alt+shift+w"],
   comboKeysBindGlobal: true,
   action: () => ((0, i.A)({
-    source: a.y.KEYBIND,
+    source: l.y.KEYBIND,
     onClose: r.s7G
   }), false)
 }

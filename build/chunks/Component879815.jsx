@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 879815, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 879815, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -17,33 +16,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk101492 = require("./101492.js"),
   Chunk532294 = require("./532294.js"),
   Chunk420627 = require("./420627.js");
-
-function m(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function g(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      m(e, t, n[t])
-    })
-  }
-  return e
-}
-let E = {
+let b = {
     tension: 1200,
     friction: 70
   },
-  y = {
+  g = {
     [Chunk532294.P7.WELCOME]: Chunk397927.fAJ,
     [Chunk532294.P7.MESSAGES]: Chunk397927.oyn,
     [Chunk532294.P7.EMOJIS]: Chunk397927.nm2,
@@ -55,72 +32,87 @@ let E = {
     [Chunk532294.P7.END]: Chunk397927.MZT
   };
 
-function b(e) {
+function x(e) {
   let {
     isSelected: t,
     icon: n,
     color: a,
-    onClick: s
-  } = e, [l, u] = i.useState(false), d = (0, c.zhh)({
+    onClick: i
+  } = e, [o, u] = l.useState(false), d = (0, c.zhh)({
     from: {
       scale: 0
     },
     to: {
       scale: 1
     },
-    config: E
-  }), f = n;
-  return (0, r.jsx)(o.animated.div, {
-    style: g({}, d),
+    config: b
+  });
+  return (0, r.jsx)(s.animated.div, {
+    style: function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({}, d),
     children: (0, r.jsx)(c.DUT, {
-      onClick: s,
+      onClick: i,
       className: h.vk,
       onMouseEnter: () => u(true),
       onMouseLeave: () => u(false),
-      children: (0, r.jsx)(f, {
+      children: (0, r.jsx)(n, {
         colorClass: h.gM,
         color: a,
         style: {
-          opacity: t || l ? 1 : .5
+          opacity: t || o ? 1 : .5
         }
       })
     })
   })
 }
 
-function O() {
-  let e = (0, p.A)();
-  return (0, f.A)(e).map(e => ({
-    slide: e,
-    icon: y[e]
-  }))
-}
-
-function v(e) {
-  let {
-    activeSlide: t,
-    setActiveSlide: n,
-    color: a,
-    className: o
-  } = e, c = Number.parseInt(t.toString(), 10), f = (0, l.bG)([d.A], () => Number.parseInt(d.A.highestSlideSeen)), p = O();
-  return i.useEffect(() => {
-    c > f && (0, u.Rq)("".concat(c))
-  }, [c, f]), (0, r.jsx)("div", {
-    className: s()(h.kL, o),
-    children: p.map((e, t) => {
+function y(e) {
+  let t, {
+      activeSlide: n,
+      setActiveSlide: a,
+      color: s,
+      className: c
+    } = e,
+    p = Number.parseInt(n.toString(), 10),
+    b = (0, o.bG)([d.A], () => Number.parseInt(d.A.highestSlideSeen)),
+    y = (t = (0, f.A)(), (0, m.A)(t).map(e => ({
+      slide: e,
+      icon: g[e]
+    })));
+  return l.useEffect(() => {
+    p > b && (0, u.Rq)("".concat(p))
+  }, [p, b]), (0, r.jsx)("div", {
+    className: i()(h.kL, c),
+    children: y.map((e, t) => {
       let {
-        icon: i,
-        slide: s
-      } = e, o = Number.parseInt(s, 10);
-      return f >= o ? (0, r.jsx)(b, {
-        isSelected: c === o,
-        icon: i,
-        onClick: () => n(s),
-        color: a
+        icon: n,
+        slide: l
+      } = e, i = Number.parseInt(l, 10);
+      return b >= i ? (0, r.jsx)(x, {
+        isSelected: p === i,
+        icon: n,
+        onClick: () => a(l),
+        color: s
       }, "step-indicator-".concat(t)) : (0, r.jsx)("div", {
         className: h.Gc,
         style: {
-          borderColor: a,
+          borderColor: s,
           opacity: .5
         }
       }, "step-indicator-".concat(t))

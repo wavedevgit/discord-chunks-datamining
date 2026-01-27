@@ -3,19 +3,19 @@
 "use strict";
 require.d(exports, {
   A: () => p,
-  C: () => o
+  C: () => s
 });
 var Chunk472501 = require("./472501.js"),
   Chunk773669 = require("./773669.js"),
   Chunk723702 = require("./723702.js"),
   Chunk652215 = require("./652215.js");
-let o = "https://".concat(Chunk652215.XlF),
+let s = "https://".concat(Chunk652215.XlF),
   l = "https://".concat(Chunk652215.hCb),
   c = "https://creator-support.discord.com",
   u = "https://support-apps.discord.com";
 
 function d(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : o;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s;
   return t + e
 }
 
@@ -26,7 +26,7 @@ let p = {
   getArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e)),
   getDevArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), l),
   getCreatorSupportArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), c),
-  getTwitterURL: () => (0, r.A)(s.Pq7.TWITTER),
+  getTwitterURL: () => (0, r.A)(o.Pq7.TWITTER),
   getCommunityURL: () => d("/hc/".concat(f())),
   getSubmitRequestURL(e) {
     let t = d("/hc/".concat(f(), "/requests/new?platform=").concat(encodeURIComponent((0, a.getPlatformName)())));

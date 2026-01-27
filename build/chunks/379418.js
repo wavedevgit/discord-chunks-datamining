@@ -5,7 +5,7 @@ require.d(exports, {
   $z: () => l,
   EH: () => f,
   WA: () => d,
-  kx: () => o,
+  kx: () => s,
   l9: () => u,
   tf: () => p
 }), require("./591487.js"), require("./727858.js"), require("./747238.js");
@@ -13,7 +13,7 @@ var Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
   Chunk405269 = require("./405269.js"),
   Chunk927813 = require("./927813.js");
-let o = {
+let s = {
     t: e => (0, a.i$)(e, "LT"),
     T: e => (0, a.i$)(e, "LTS"),
     d: e => (0, a.i$)(e, "L"),
@@ -37,22 +37,22 @@ let o = {
     }
   },
   l = "f";
-Object.setPrototypeOf(o, null);
-let c = Object.keys(o).join("|"),
+Object.setPrototypeOf(s, null);
+let c = Object.keys(s).join("|"),
   u = new RegExp("^<t:(-?\\d{1,17})(?::(".concat(c, "))?>"));
 
 function d(e) {
   let {
     timestamp: t,
     format: n
-  } = e, r = i()(Number(t) * s.A.Millis.SECOND);
+  } = e, r = i()(Number(t) * o.A.Millis.SECOND);
   if (!r.isValid()) return null;
-  let a = null != n ? o[n] : true;
-  return null == a && (a = o[l]), {
+  let a = null != n ? s[n] : true;
+  return null == a && (a = s[l]), {
     timestamp: t,
     format: n,
     parsed: r,
-    full: o.F(r),
+    full: s.F(r),
     formatted: a(r)
   }
 }

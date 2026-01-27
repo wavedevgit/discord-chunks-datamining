@@ -9,11 +9,11 @@ var Chunk64700 = require("./64700.js"),
   Chunk179637 = require("./179637.js"),
   Chunk870844 = require("./870844.js");
 let {
-  useSyncExternalStoreWithSelector: s
-} = Chunk179637, o = e => e;
+  useSyncExternalStoreWithSelector: o
+} = Chunk179637, s = e => e;
 
-function l(e, t = o, n) {
-  let i = s(e.subscribe, e.getState, e.getInitialState, t, n);
+function l(e, t = s, n) {
+  let i = o(e.subscribe, e.getState, e.getInitialState, t, n);
   return r.useDebugValue(i), i
 }
 let c = (e, t) => {

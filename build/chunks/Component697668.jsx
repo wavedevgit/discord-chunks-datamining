@@ -60,24 +60,24 @@ function D(e) {
     currentUser: n,
     guildId: R,
     channelId: D,
-    messageId: x,
-    roleId: L,
-    openedAt: j,
-    closePopout: M,
+    messageId: L,
+    roleId: x,
+    openedAt: M,
+    closePopout: j,
     setPopoutRef: k,
     disableUserProfileLink: U = __OVERLAY__,
     newAnalyticsLocations: G = [],
-    disableAutoFocus: V = false,
-    onClickContainer: F
+    disableAutoFocus: F = false,
+    onClickContainer: V
   } = e, {
     analyticsLocations: B
-  } = (0, l.Ay)([...G, o.A.USER_PROFILE_POPOUT]), H = (0, d.aL)(), Y = (0, _.pb)({
+  } = (0, l.Ay)([...G, s.A.USER_PROFILE_POPOUT]), H = (0, d.aL)(), Y = (0, _.pb)({
     layout: "POPOUT",
     userId: t.id,
     guildId: R,
     channelId: D,
-    messageId: x,
-    roleId: L
+    messageId: L,
+    roleId: x
   }), W = (0, m.Ay)(t.id, R), K = (0, a.bG)([f.A], () => null != R ? f.A.getGuild(R) : null), z = i.useRef(null), {
     isHoveringOrFocusing: q
   } = (0, u.A)(z);
@@ -85,12 +85,12 @@ function D(e) {
     null == k || k(null == z ? true : z.current)
   }, [z, k]);
   let Z = e => {
-      null == M || M(), H.dispatch(T.jej.POPOUT_CLOSE), (0, g.openUserProfileModal)(P({
+      null == j || j(), H.dispatch(T.jej.POPOUT_CLOSE), (0, g.openUserProfileModal)(P({
         sourceAnalyticsLocations: B,
         hideRestrictedProfile: true
       }, Y, e))
     },
-    X = () => U ? null : (0, r.jsx)(s.Drp, {
+    Q = () => U ? null : (0, r.jsx)(o.Drp, {
       id: "view-profile",
       label: N.intl.string(N.t["+Xp3hq"]),
       action: () => {
@@ -100,23 +100,23 @@ function D(e) {
         }, Y))
       }
     }),
-    Q = V ? "div" : s.lGe,
+    X = F ? "div" : o.lGe,
     J = (0, c.GV)(),
     $ = p.Ay.useName(R, D, t);
   return (0, r.jsx)(l.f5, {
     value: B,
     children: (0, r.jsx)(_.of, {
       value: Y,
-      openedAt: j,
+      openedAt: M,
       fetchStartedAt: null == W ? true : W.fetchStartedAt,
       fetchEndedAt: null == W ? true : W.fetchEndedAt,
       isLoaded: null == W ? true : W.isLoaded,
-      children: (0, r.jsxs)(Q, {
+      children: (0, r.jsxs)(X, {
         ref: z,
         "aria-labelledby": J,
-        onClick: F,
-        children: [(0, r.jsx)(s.AC4, {
-          children: (0, r.jsx)(s.H, {
+        onClick: V,
+        children: [(0, r.jsx)(o.AC4, {
+          children: (0, r.jsx)(o.H, {
             id: J,
             children: N.intl.format(N.t.KRe1Fk, {
               name: $
@@ -130,7 +130,7 @@ function D(e) {
             children: (0, r.jsx)(O.A, {
               user: t,
               guildId: R,
-              viewProfileItem: X()
+              viewProfileItem: Q()
             })
           }), (0, r.jsxs)("div", {
             className: w.wx,
@@ -149,7 +149,7 @@ function D(e) {
             }), (0, r.jsx)(A.A, {
               user: t,
               themeType: C.d.POPOUT,
-              onCloseProfile: M,
+              onCloseProfile: j,
               disableToolbar: true
             })]
           }), (0, r.jsx)(I.A, {
@@ -160,13 +160,13 @@ function D(e) {
             isHoveringOrFocusing: q,
             onOpenProfile: U ? true : Z,
             channelId: D,
-            onClose: M
+            onClose: j
           }), (0, r.jsx)(S.A, {
             user: t,
             guildId: R,
             channelId: D,
-            onClose: M,
-            disableAutoFocus: V
+            onClose: j,
+            disableAutoFocus: F
           })]
         })]
       })

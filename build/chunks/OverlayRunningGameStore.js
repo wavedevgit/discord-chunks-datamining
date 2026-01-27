@@ -28,11 +28,11 @@ function d(e) {
 }
 class f extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.A, o.Ay)
+    this.waitFor(l.A, s.Ay)
   }
   getGameForPID(e) {
     if (__OVERLAY__ || null == e) return null;
-    let t = o.Ay.getGameOrTransformedSubgameForPID(e);
+    let t = s.Ay.getGameOrTransformedSubgameForPID(e);
     return l.A.getGameByName(null == t ? true : t.name)
   }
   getGame() {

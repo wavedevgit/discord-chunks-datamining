@@ -18,12 +18,12 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 let c = () => {
-  r = r === o.B.BASIC ? o.B.PREMIUM : o.B.BASIC
+  r = r === s.B.BASIC ? s.B.PREMIUM : s.B.BASIC
 };
 class u extends(i = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
-    r = null != (t = null == e ? true : e.animationType) ? t : o.B.PREMIUM
+    r = null != (t = null == e ? true : e.animationType) ? t : s.B.PREMIUM
   }
   getState() {
     return {

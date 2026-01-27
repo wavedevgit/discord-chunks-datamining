@@ -23,16 +23,16 @@ function p(e, t, n) {
       i = e => {
         r.push(e.id)
       };
-    if (null == e) r.push(...o.A.getGuildIds());
+    if (null == e) r.push(...s.A.getGuildIds());
     else if (Array.isArray(e)) e.forEach(e => {
-      let t = o.A.getGuild(e);
+      let t = s.A.getGuild(e);
       null != t && i(t)
     });
     else {
-      let t = o.A.getGuild(e);
+      let t = s.A.getGuild(e);
       null != t && i(t)
     }
-    r.length > 0 && s.A.requestMembers(r, t.toLocaleLowerCase(), n)
+    r.length > 0 && o.A.requestMembers(r, t.toLocaleLowerCase(), n)
   }, 200)
 }
 

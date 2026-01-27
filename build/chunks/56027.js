@@ -2,7 +2,7 @@
 /** chunk id: 56027, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B1: () => L,
+  B1: () => x,
   C0: () => h,
   DD: () => a,
   Dz: () => O,
@@ -11,15 +11,15 @@ require.d(exports, {
   PG: () => g,
   RI: () => c,
   Sg: () => m,
-  T9: () => o,
+  T9: () => s,
   TV: () => b,
   WJ: () => A,
   _3: () => _,
   aD: () => I,
   bV: () => P,
-  jk: () => s,
+  jk: () => o,
   lP: () => R,
-  nI: () => x,
+  nI: () => L,
   qE: () => p,
   r_: () => r,
   sq: () => E,
@@ -28,8 +28,8 @@ require.d(exports, {
 let r = ["top", "right", "bottom", "left"],
   i = ["start", "end"],
   a = r.reduce((e, t) => e.concat(t, t + "-" + i[0], t + "-" + i[1]), []),
-  s = Math.min,
-  o = Math.max,
+  o = Math.min,
+  s = Math.max,
   l = Math.round,
   c = Math.floor,
   u = e => ({
@@ -48,7 +48,7 @@ let r = ["top", "right", "bottom", "left"],
   };
 
 function p(e, t, n) {
-  return o(e, s(t, n))
+  return s(e, o(t, n))
 }
 
 function _(e, t) {
@@ -85,8 +85,8 @@ function v(e, t, n) {
   let r = m(e),
     i = O(e),
     a = E(i),
-    s = "x" === i ? r === (n ? "end" : "start") ? "right" : "left" : "start" === r ? "bottom" : "top";
-  return t.reference[a] > t.floating[a] && (s = P(s)), [s, P(s)]
+    o = "x" === i ? r === (n ? "end" : "start") ? "right" : "left" : "start" === r ? "bottom" : "top";
+  return t.reference[a] > t.floating[a] && (o = P(o)), [o, P(o)]
 }
 
 function A(e) {
@@ -136,7 +136,7 @@ function D(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   return "number" != typeof e ? D(e) : {
     top: e,
     right: e,
@@ -145,7 +145,7 @@ function x(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     x: t,
     y: n,

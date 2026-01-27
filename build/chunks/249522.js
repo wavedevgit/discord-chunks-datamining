@@ -48,8 +48,8 @@ class a {
     tension: t = 160,
     friction: n = 22,
     mass: a = 1,
-    threshold: s = .001,
-    clamp: o = false,
+    threshold: o = .001,
+    clamp: s = false,
     maxVelocity: l = 1 / 0,
     getNodeWindow: c = () => window
   }) {
@@ -69,8 +69,8 @@ class a {
         this.last = e, this.nextTick = null != (t = null == (n = this.nodeWindow) ? true : n.requestAnimationFrame(this.update)) ? t : false;
         return
       }
-      let s = e;
-      for (this.accumulator = Math.min((s - this.last) / 1e3 + this.accumulator, 2); this.accumulator > i;) {
+      let o = e;
+      for (this.accumulator = Math.min((o - this.last) / 1e3 + this.accumulator, 2); this.accumulator > i;) {
         this.accumulator -= i;
         let {
           vel: e,
@@ -81,15 +81,15 @@ class a {
         this.from = t
       }
       let {
-        from: o
+        from: s
       } = this;
       if (this.accumulator > 0) {
         let {
           from: e
-        } = this.getUpdates(this.vel, o), t = (e - o) * (this.accumulator / i);
-        o += t
+        } = this.getUpdates(this.vel, s), t = (e - s) * (this.accumulator / i);
+        s += t
       }
-      this.callback(o, this.abort), this.animating && (this.last = s, this.nextTick = null != (r = null == (a = this.nodeWindow) ? true : a.requestAnimationFrame(this.update)) ? r : false)
-    }), this.callback = e, this.from = 0, this.tension = t, this.friction = n, this.mass = a, this.maxVelocity = l, this.threshold = s, this.clamp = o, this.getNodeWindow = c
+      this.callback(s, this.abort), this.animating && (this.last = o, this.nextTick = null != (r = null == (a = this.nodeWindow) ? true : a.requestAnimationFrame(this.update)) ? r : false)
+    }), this.callback = e, this.from = 0, this.tension = t, this.friction = n, this.mass = a, this.maxVelocity = l, this.threshold = o, this.clamp = s, this.getNodeWindow = c
   }
 }

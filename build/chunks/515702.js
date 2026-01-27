@@ -39,7 +39,7 @@ class i {
     return u() && (this.resolvedHourCycle || (this.resolvedHourCycle = d(e.locale, this.options)), e.hourCycle = this.resolvedHourCycle, e.hour12 = "h11" === this.resolvedHourCycle || "h12" === this.resolvedHourCycle), "ethiopic-amete-alem" === e.calendar && (e.calendar = "ethioaa"), e
   }
   constructor(e, t = {}) {
-    this.formatter = s(e, t), this.options = t
+    this.formatter = o(e, t), this.options = t
   }
 }
 let a = {
@@ -49,7 +49,7 @@ let a = {
   false: {}
 };
 
-function s(e, t = {}) {
+function o(e, t = {}) {
   if ("boolean" == typeof t.hour12 && l()) {
     let n = a[String((t = {
         ...t
@@ -62,13 +62,13 @@ function s(e, t = {}) {
   let i = new Intl.DateTimeFormat(e, t);
   return r.set(n, i), i
 }
-let o = null;
+let s = null;
 
 function l() {
-  return null == o && (o = "24" === new Intl.DateTimeFormat("en-US", {
+  return null == s && (s = "24" === new Intl.DateTimeFormat("en-US", {
     hour: "numeric",
     hour12: false
-  }).format(new Date(2020, 2, 3, 0))), o
+  }).format(new Date(2020, 2, 3, 0))), s
 }
 let c = null;
 
@@ -82,7 +82,7 @@ function u() {
 function d(e, t) {
   if (!t.timeStyle && !t.hour) return;
   e = e.replace(/(-u-)?-nu-[a-zA-Z0-9]+/, "");
-  let n = s(e += (e.includes("-u-") ? "" : "-u") + "-nu-latn", {
+  let n = o(e += (e.includes("-u-") ? "" : "-u") + "-nu-latn", {
       ...t,
       timeZone: true
     }),

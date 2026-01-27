@@ -3,12 +3,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", {
   value: true
-}), exports.reactFormatter = exports.DEFAULT_REACT_RICH_TEXT_ELEMENTS = true, exports.formatReact = o, exports.makeReactFormatter = l;
+}), exports.reactFormatter = exports.DEFAULT_REACT_RICH_TEXT_ELEMENTS = true, exports.formatReact = s, exports.makeReactFormatter = l;
 let Chunk64700 = require("./64700.js"),
   Chunk941242 = require("./941242.js"),
   a = Chunk64700.createElement;
 
-function s(e) {
+function o(e) {
   return class extends i.FormatBuilder {
     constructor() {
       super(...arguments), this._nodeKey = 0, this.result = []
@@ -28,14 +28,14 @@ function s(e) {
   }
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   return "string" == typeof e ? e : this.bindFormatValues(n, e, t)
 }
 
 function l(e) {
   return {
-    format: o,
-    builder: s(e)
+    format: s,
+    builder: o(e)
   }
 }
 exports.DEFAULT_REACT_RICH_TEXT_ELEMENTS = {

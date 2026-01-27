@@ -24,10 +24,10 @@ module.exports = function(e) {
         end: "\\)"
       }]
     },
-    s = e.inherit(e.QUOTE_STRING_MODE, {
+    o = e.inherit(e.QUOTE_STRING_MODE, {
       illegal: null
     }),
-    o = e.COMMENT(";", "$", {
+    s = e.COMMENT(";", "$", {
       relevance: 0
     }),
     l = {
@@ -48,10 +48,10 @@ module.exports = function(e) {
     f = {
       begin: "\\(",
       end: "\\)",
-      contains: ["self", i, s, a, u]
+      contains: ["self", i, o, a, u]
     },
     p = {
-      contains: [a, s, l, c, f, u],
+      contains: [a, o, l, c, f, u],
       variants: [{
         begin: "['`]\\(",
         end: "\\)"
@@ -88,9 +88,9 @@ module.exports = function(e) {
     }, {
       begin: n
     }]
-  }, m], m.contains = [p, _, h, i, a, s, o, l, c, d, u], {
+  }, m], m.contains = [p, _, h, i, a, o, s, l, c, d, u], {
     name: "Lisp",
     illegal: /\S/,
-    contains: [a, e.SHEBANG(), i, s, o, p, _, h, u]
+    contains: [a, e.SHEBANG(), i, o, s, p, _, h, u]
   }
 }

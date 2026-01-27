@@ -15,15 +15,15 @@ function i(e) {
     let n = e.current.getBoundingClientRect(),
       r = window.innerWidth,
       i = window.innerHeight,
-      s = {
+      o = {
         top: n.top,
         bottom: i - n.bottom,
         left: n.left,
         right: r - n.right
       },
-      o = ["top", "bottom", "right", "left"];
-    for (let e of o)
-      if (s[e] >= t) return void a(e);
-    a(o.reduce((e, t) => s[t] > s[e] ? t : e, "top"))
+      s = ["top", "bottom", "right", "left"];
+    for (let e of s)
+      if (o[e] >= t) return void a(e);
+    a(s.reduce((e, t) => o[t] > o[e] ? t : e, "top"))
   }, [e, t, n]), i
 }

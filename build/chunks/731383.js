@@ -47,7 +47,7 @@ let _ = e => {
   } = r.useRef(p({
     guild_id: n,
     emoji_id: t
-  }, (0, a.dI)(s.A.getChannel(o.A.getChannelId(n)))));
+  }, (0, a.dI)(o.A.getChannel(s.A.getChannelId(n)))));
   return (0, i.Ay)(() => {
     var e;
     (0, c.K)(u.Vl.TrackOpenPopoutUsed), h || l.default.track(d.HAw.OPEN_POPOUT, p({

@@ -27,7 +27,7 @@ let u = {
       asset: c,
       className: d
     } = e;
-    return t = null != c ? (0, o.YE)(n.id, c, i) : s.Ay.getApplicationIconURL({
+    return t = null != c ? (0, s.YE)(n.id, c, i) : o.Ay.getApplicationIconURL({
       id: n.id,
       icon: n.icon,
       size: i

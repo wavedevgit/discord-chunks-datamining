@@ -4,14 +4,14 @@
 require.d(exports, {
   C1: () => l,
   S7: () => c,
-  Sw: () => s,
-  tU: () => o
+  Sw: () => o,
+  tU: () => s
 });
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e, t, n, r) {
+function o(e, t, n, r) {
   i.h.dispatch({
     type: "QUEUE_INTERACTION_COMPONENT_STATE",
     messageId: e,
@@ -21,13 +21,13 @@ function s(e, t, n, r) {
   })
 }
 
-function o(e, t) {
+function s(e, t) {
   let {
     data: n,
     messageId: r,
     preflight: a,
-    onCreate: s,
-    onSuccess: o,
+    onCreate: o,
+    onSuccess: s,
     onFailure: l
   } = t;
   i.h.dispatch({
@@ -36,8 +36,8 @@ function o(e, t) {
     nonce: e,
     messageId: r,
     preflight: a,
-    onCreate: s,
-    onSuccess: o,
+    onCreate: o,
+    onSuccess: s,
     onFailure: l
   })
 }

@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +29,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -41,7 +41,7 @@ function o(e, t) {
 }
 
 function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -132,7 +132,7 @@ class d {
     let e = this.speaking.lastStartTime,
       t = this.timestampProducer.now(),
       n = null != e ? t - e : 0;
-    return this.computeSpeakingDurationMilestones(this.connected.lastStartTime, this.speaking.lastStartTime, this.speaking.lastElapsed), s({
+    return this.computeSpeakingDurationMilestones(this.connected.lastStartTime, this.speaking.lastStartTime, this.speaking.lastElapsed), o({
       duration_listening_ms: this.listening.elapsed().asMilliseconds(),
       duration_speaking_ms: this.speaking.elapsed().asMilliseconds(),
       duration_participation_ms: this.participation.elapsed().asMilliseconds(),
@@ -143,11 +143,11 @@ class d {
       duration_noise_cancellation_enabled_ms: this.noiseCancellation.totalDuration(),
       duration_speaking_voice_filter_ms: [...this.voiceFilterSpeaking.values()].map(e => e.elapsed().asMilliseconds()),
       speech_event_count: this.speechEventCount
-    }, c.filter(e => this.timesUntilSpeakingDurationMilestonesMs.has(e)).reduce((e, t) => l(s({}, e), {
+    }, c.filter(e => this.timesUntilSpeakingDurationMilestonesMs.has(e)).reduce((e, t) => l(o({}, e), {
       ["time_to_first_".concat(t, "ms_speech_ms")]: this.timesUntilSpeakingDurationMilestonesMs.get(t)
     }), {}), u.filter(e => this.speakingMinimumChunks.has(e) || n >= e).reduce((e, t) => {
       var r, i;
-      return l(s({}, e), {
+      return l(o({}, e), {
         ["duration_speaking_gte_".concat(t, "ms_ms")]: (null != (r = this.speakingMinimumChunks.get(t)) ? r : 0) + (n >= t ? n : 0),
         ["speech_event_count_gte_".concat(t, "ms")]: (null != (i = this.speakingMinimumChunkCounts.get(t)) ? i : 0) + +(n >= t)
       })

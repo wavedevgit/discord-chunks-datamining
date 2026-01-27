@@ -39,7 +39,7 @@ function f(e) {
   let {
     title: n,
     body: i,
-    badge: s,
+    badge: o,
     className: u,
     textLink: d
   } = e, f = null == (t = null == d ? true : d.external) || t;
@@ -47,7 +47,7 @@ function f(e) {
     className: a()(c.header, u),
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(p, {
-        badge: s
+        badge: o
       }), (0, r.jsx)(l.Heading, {
         variant: "heading-md/semibold",
         className: c.title,
@@ -55,7 +55,7 @@ function f(e) {
       })]
     }), (0, r.jsx)(_, {
       body: i
-    }), null != d && (0, r.jsx)(o.Anchor, {
+    }), null != d && (0, r.jsx)(s.Anchor, {
       onClick: d.onClick,
       href: d.link,
       target: f && null != d.link ? "_blank" : true,
@@ -74,10 +74,10 @@ function p(e) {
     badge: t
   } = e;
   if (null == t) return null;
-  let n = (0, s.U)(t);
+  let n = (0, o.U)(t);
   return (0, r.jsx)("div", {
     className: c.badgeContainer,
-    children: (0, r.jsx)(s.E, d({}, n))
+    children: (0, r.jsx)(o.E, d({}, n))
   })
 }
 

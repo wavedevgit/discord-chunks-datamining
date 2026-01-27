@@ -9,7 +9,7 @@ require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk849881 = require("./849881.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,14 +18,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -78,7 +78,7 @@ let f = {
       direction: t = f.DOWN,
       width: n = 24,
       height: a = 24,
-      color: s = "currentColor",
+      color: o = "currentColor",
       className: l,
       foreground: d,
       expanded: p
@@ -90,12 +90,12 @@ let f = {
       [f.LEFT]: i.n2b,
       [f.RIGHT]: i._BQ
     } [h];
-    return (0, r.jsx)(m, c(o({}, _), {
+    return (0, r.jsx)(m, c(s({}, _), {
       className: l,
       size: "custom",
       width: n,
       height: a,
-      color: null != s ? s : "currentColor",
+      color: null != o ? o : "currentColor",
       colorClass: d
     }))
   };

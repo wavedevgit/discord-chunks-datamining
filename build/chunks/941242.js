@@ -10,13 +10,13 @@ let Chunk450678 = require("./450678.js"),
 function a(e) {
   return "$" === e[0]
 }
-class s {
+class o {
   constructor(e) {
     this.context = e
   }
 }
-exports.FormatBuilder = s;
-class o extends Error {
+exports.FormatBuilder = o;
+class s extends Error {
   constructor(e, t, n) {
     super(`No value for variable '${e}' was provided for the localized message '${t}'`), this.variableName = e, this.originalMessage = t, this.nodeType = n
   }
@@ -26,7 +26,7 @@ function l(e) {
   var t;
   let {
     builder: n,
-    originalMessage: s,
+    originalMessage: o,
     nodes: u,
     locales: d,
     values: f,
@@ -51,7 +51,7 @@ function l(e) {
       continue
     }
     let y = g[1];
-    if (!(y in f) && !a(y)) throw new o(y, s, E);
+    if (!(y in f) && !a(y)) throw new s(y, o, E);
     let b = f[y];
     switch (E) {
       case i.FormatJsNodeType.Argument:
@@ -89,7 +89,7 @@ function l(e) {
             currentPluralValue: h,
             keyPrefix: `${m}.${e}`
           }),
-          s = null != r ? c({
+          o = null != r ? c({
             Builder: n.constructor,
             nodes: r,
             locales: d,
@@ -99,7 +99,7 @@ function l(e) {
             currentPluralValue: h,
             keyPrefix: `${m}.${e}-control`
           }) : [];
-        if (a(y)) n.pushRichTextTag(y, i, s);
+        if (a(y)) n.pushRichTextTag(y, i, o);
         else {
           if ("function" != typeof b) throw `expected a function type for a Tag formatting value, ${y}. got ${typeof b}: ${b}`;
           let t = b(i, `${m}.${e}`);
@@ -157,8 +157,8 @@ function c(e) {
     nodes: r,
     locales: i,
     dataFormatters: a,
-    formatConfig: s,
-    values: o,
+    formatConfig: o,
+    values: s,
     currentPluralValue: c,
     keyPrefix: u
   } = e, d = new t({
@@ -170,8 +170,8 @@ function c(e) {
     nodes: r,
     locales: i,
     dataFormatters: a,
-    formatConfig: s,
-    values: o,
+    formatConfig: o,
+    values: s,
     currentPluralValue: c,
     keyPrefix: u
   }), d.finish()

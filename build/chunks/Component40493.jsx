@@ -19,7 +19,7 @@ function c(e) {
     markAsDismissed: d,
     coachmarkConfig: f,
     children: p
-  } = e, _ = (0, s.T)(null == f ? true : f.asset), h = i.useRef(null), m = i.useRef(null), [g, E] = i.useState(0);
+  } = e, _ = (0, o.T)(null == f ? true : f.asset), h = i.useRef(null), m = i.useRef(null), [g, E] = i.useState(0);
   i.useEffect(() => {
     let e = () => {
         let e = h.current,
@@ -37,11 +37,11 @@ function c(e) {
   let y = {
       text: l.intl.string(l.t.RzWDqY),
       onClick: () => {
-        u(), c(), d(o.i.TAKE_ACTION)
+        u(), c(), d(s.i.TAKE_ACTION)
       }
     },
     b = () => {
-      c(), d(o.i.USER_DISMISS)
+      c(), d(s.i.USER_DISMISS)
     };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {

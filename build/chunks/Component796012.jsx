@@ -2,12 +2,12 @@
 /** chunk id: 796012, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V1: () => L,
+  V1: () => x,
   rF: () => O,
   yC: () => C,
   yh: () => E
 }), require("./896048.js");
-var r, i, a, s, Chunk627968 = require("./627968.js"),
+var r, i, a, o, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
   u = require.n(Chunk503698),
@@ -78,7 +78,7 @@ class E extends(r = Chunk64700.PureComponent) {
       pause: i,
       pauseWhileUnfocused: a
     } = this.props;
-    return (0, o.jsx)(p.tvC, {
+    return (0, s.jsx)(p.tvC, {
       className: u()(_.AI, e),
       importData: this.importDefault,
       nextScene: i ? "idle" : t,
@@ -145,7 +145,7 @@ class O extends(i = Chunk64700.PureComponent) {
       pause: i,
       pauseWhileUnfocused: a
     } = this.props;
-    return (0, o.jsx)(p.tvC, {
+    return (0, s.jsx)(p.tvC, {
       className: u()(_.AI, e),
       importData: this.importDefault,
       nextScene: i ? "idle" : t,
@@ -215,12 +215,12 @@ class I extends Chunk64700.PureComponent {
     let {
       className: e
     } = this.props;
-    return (0, o.jsxs)("div", {
+    return (0, s.jsxs)("div", {
       className: _.I5,
-      children: [(0, o.jsx)(f.A.div, {
+      children: [(0, s.jsx)(f.A.div, {
         className: e,
         style: this.getStyle(false)
-      }), (0, o.jsx)(f.A.div, {
+      }), (0, s.jsx)(f.A.div, {
         className: e,
         style: this.getStyle(true)
       })]
@@ -315,24 +315,24 @@ class C extends(a = Chunk64700.PureComponent) {
       pause: n,
       onSceneComplete: r
     } = this.props;
-    return (0, o.jsxs)("div", {
+    return (0, s.jsxs)("div", {
       className: u()(_.nv, e),
-      children: [n ? (0, o.jsxs)("div", {
+      children: [n ? (0, s.jsxs)("div", {
         className: _.I5,
-        children: [(0, o.jsx)("div", {
+        children: [(0, s.jsx)("div", {
           className: _.RK
-        }), (0, o.jsx)("div", {
+        }), (0, s.jsx)("div", {
           className: _.aM
         })]
-      }) : (0, o.jsxs)(o.Fragment, {
-        children: [(0, o.jsx)(I, {
+      }) : (0, s.jsxs)(s.Fragment, {
+        children: [(0, s.jsx)(I, {
           className: _.RK,
           animation: this.backgroundAnimation
-        }), (0, o.jsx)(I, {
+        }), (0, s.jsx)(I, {
           className: _.aM,
           animation: this.foregroundAnimation
         })]
-      }), (0, o.jsx)(p.tvC, {
+      }), (0, s.jsx)(p.tvC, {
         className: _.AI,
         importData: this.importData,
         nextScene: n ? "idle_loop" : t,
@@ -456,20 +456,20 @@ let w = {
     EASING_END: Chunk615300.A.Easing.bezier(0, false, .99, 0)
   });
 
-function x(e) {
+function L(e) {
   let {
     animate: t
   } = e, [n, r] = l.useState(0), i = (0, p.mX6)(P.length, P.map((e, i) => {
     let a = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
-      s = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
+      o = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
     return {
       from: {
         scale: D.SCALE_INITIAL,
         rotate: D.ROTATE_INITIAL,
         top: e.top,
         left: e.left,
-        width: s,
-        height: s
+        width: o,
+        height: o
       },
       to: async e => {
         t ? (await e({
@@ -498,15 +498,15 @@ function x(e) {
       }
     }
   }));
-  return (0, o.jsx)(o.Fragment, {
+  return (0, s.jsx)(s.Fragment, {
     children: i.map((e, t) => {
       let n = P[t];
-      return (0, o.jsx)(d.animated.svg, {
+      return (0, s.jsx)(d.animated.svg, {
         style: e,
         className: _.Sw,
         xmlns: "http://www.w3.org/2000/svg",
         viewBox: "0 0 12.14 12.24",
-        children: (0, o.jsx)("path", {
+        children: (0, s.jsx)("path", {
           d: "M5.62 10.22l-4 1.9a1.17 1.17 0 01-1.5-.5 1.7 1.7 0 010-1l1.9-4a.91.91 0 000-1l-1.9-4a1.14 1.14 0 01.5-1.5 1.39 1.39 0 01.9 0l4 1.9a.91.91 0 001 0l4-1.9a1.14 1.14 0 011.5.5 1.39 1.39 0 010 .9l-1.9 4a.91.91 0 000 1l1.9 4a1.17 1.17 0 01-.5 1.5 1.7 1.7 0 01-1 0l-4-1.9a1 1 0 00-.9.1z",
           fill: n.color
         })
@@ -514,7 +514,7 @@ function x(e) {
     })
   })
 }
-class L extends(s = Chunk64700.PureComponent) {
+class x extends(o = Chunk64700.PureComponent) {
   static getNextScene(e) {
     switch (e) {
       case "entry":
@@ -542,9 +542,9 @@ class L extends(s = Chunk64700.PureComponent) {
       onSceneComplete: i,
       pauseWhileUnfocused: a
     } = this.props;
-    return (0, o.jsxs)("div", {
+    return (0, s.jsxs)("div", {
       className: u()(_.JL, e),
-      children: [(0, o.jsx)(p.tvC, {
+      children: [(0, s.jsx)(p.tvC, {
         className: _.i_,
         importData: this.importData,
         nextScene: n ? "idle" : t,
@@ -553,10 +553,10 @@ class L extends(s = Chunk64700.PureComponent) {
         onSceneComplete: i,
         pauseWhileUnfocused: a,
         pause: n
-      }), (0, o.jsx)(x, {
+      }), (0, s.jsx)(L, {
         animate: !n && "stars" === t
       })]
     })
   }
 }
-h(L, "Scenes", N)
+h(x, "Scenes", N)

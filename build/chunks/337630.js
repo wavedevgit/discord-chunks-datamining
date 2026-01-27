@@ -9,18 +9,18 @@ let i = "applicationCommand";
 
 function a(e, t) {
   if (r.VW.areStylesDisabled(e)) return [];
-  let [n, a] = t, s = [];
-  if (!r.l5.isText(n)) return s;
-  let [o] = r.VW.node(e, r.PW.parent(a));
-  return r.AS.isType(o, i) && n === o.children[0] && s.push({
+  let [n, a] = t, o = [];
+  if (!r.l5.isText(n)) return o;
+  let [s] = r.VW.node(e, r.PW.parent(a));
+  return r.AS.isType(s, i) && n === s.children[0] && o.push({
     anchor: {
       path: a,
       offset: 0
     },
     focus: {
       path: a,
-      offset: 0 + o.command.displayName.length + 1
+      offset: 0 + s.command.displayName.length + 1
     },
     commandName: true
-  }), s
+  }), o
 }

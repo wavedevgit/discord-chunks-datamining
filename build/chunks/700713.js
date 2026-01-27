@@ -14,8 +14,8 @@ function a() {
     isOpen: t,
     setIsOpen: n,
     refs: a,
-    floatingStyles: s,
-    getReferenceProps: o,
+    floatingStyles: o,
+    getReferenceProps: s,
     getFloatingProps: l,
     context: c
   } = (0, i.uaw)({
@@ -38,8 +38,8 @@ function a() {
     isOpen: t,
     setIsOpen: n,
     refs: a,
-    floatingStyles: s,
-    getReferenceProps: o,
+    floatingStyles: o,
+    getReferenceProps: s,
     getFloatingProps: l,
     transitionStyles: e.enabled ? {} : u
   }

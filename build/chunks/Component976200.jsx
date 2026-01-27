@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 976200, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 34749 **/
+/** chunk id: 976200, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => y
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,217 +17,211 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk199326 = require("./199326.js");
 
-function m(e) {
+function j(e) {
   let {
     imageClass: t,
-    children: n,
-    error: i
+    children: l,
+    error: r
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: h.Qs,
-    children: [(0, r.jsx)("div", {
+    children: [(0, n.jsx)("div", {
       className: s()(h.Sl, t)
-    }), n, (0, r.jsx)(c.F, {
-      children: null != i ? (0, r.jsx)(u.FQk, {
+    }), l, (0, n.jsx)(u.F, {
+      children: null != r ? (0, n.jsx)(c.FQk, {
         className: h.z3,
-        children: (0, r.jsx)(o.wx6, {
+        children: (0, n.jsx)(a.wx6, {
           type: "critical",
-          children: i.message
+          children: r.message
         })
       }) : null
     })]
   })
 }
-let g = e => {
+let p = e => {
   let {
     canceledCount: t
-  } = e, n = (0, l.bG)([f.A], () => f.A.getPremiumTypeSubscription());
-  return null == n ? null : (0, r.jsxs)("div", {
+  } = e, l = (0, o.bG)([m.A], () => m.A.getPremiumTypeSubscription());
+  return null == l ? null : (0, n.jsxs)("div", {
     className: h.v,
-    children: [(0, r.jsx)(u.EpV, {
+    children: [(0, n.jsx)(c.EpV, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
       className: h.kK
-    }), (0, r.jsx)(u.Text, {
+    }), (0, n.jsx)(c.Text, {
       variant: "text-md/normal",
       className: h.at,
-      children: _.intl.format(_.t.SFpsCH, {
-        date: n.currentPeriodEnd,
+      children: g.intl.format(g.t.SFpsCH, {
+        date: l.currentPeriodEnd,
         canceledCount: t
       })
     })]
   })
 };
 
-function E(e) {
+function C(e) {
   let {
     imageClass: t,
-    blurb: n,
-    guild: i,
-    warning: a,
+    blurb: l,
+    guild: r,
+    warning: i,
     error: s,
-    slotCount: o = 1,
-    canceledCount: l = 0
+    slotCount: a = 1,
+    canceledCount: o = 0
   } = e;
-  return (0, r.jsxs)(m, {
+  return (0, n.jsxs)(j, {
     imageClass: t,
     error: s,
-    children: [(0, r.jsx)(u.Text, {
+    children: [(0, n.jsx)(c.Text, {
       variant: "text-md/normal",
-      children: n
-    }), (0, r.jsx)(d.A, {
+      children: l
+    }), (0, n.jsx)(d.A, {
       className: h.w_,
-      guild: i,
-      subscriptionChange: o
-    }), (0, r.jsx)(u.Text, {
+      guild: r,
+      subscriptionChange: a
+    }), (0, n.jsx)(c.Text, {
       variant: "text-md/normal",
-      children: a
-    }), l > 0 ? (0, r.jsx)(g, {
-      canceledCount: l
+      children: i
+    }), o > 0 ? (0, n.jsx)(p, {
+      canceledCount: o
     }) : null]
   })
 }
 
-function y(e) {
-  var t, n;
+function f(e) {
+  var t, l;
   let {
-    imageClass: a,
+    imageClass: i,
     blurb: s,
-    fromGuilds: o,
-    toGuild: l,
-    error: c,
-    slotCount: f = 1,
-    canceledCount: E = 0
-  } = e, y = i.useRef(o), b = null == (t = y.current) ? true : t.length, O = null == (n = y.current) ? true : n.reduce((e, t) => (e.hasOwnProperty(t.id) || (e[t.id] = []), e[t.id].push(t), e), {});
-  return (0, r.jsxs)(m, {
-    imageClass: a,
-    error: c,
-    children: [(0, r.jsx)(u.Text, {
+    fromGuilds: a,
+    toGuild: o,
+    error: u,
+    slotCount: m = 1,
+    canceledCount: C = 0
+  } = e, f = r.useRef(a), v = null == (t = f.current) ? true : t.length, y = null == (l = f.current) ? true : l.reduce((e, t) => (e.hasOwnProperty(t.id) || (e[t.id] = []), e[t.id].push(t), e), {});
+  return (0, n.jsxs)(j, {
+    imageClass: i,
+    error: u,
+    children: [(0, n.jsx)(c.Text, {
       variant: "text-md/normal",
       children: s
-    }), (0, r.jsx)(u.Text, {
+    }), (0, n.jsx)(c.Text, {
       variant: "text-xs/bold",
       className: h._N,
-      children: _.intl.format(_.t["5zQYEz"], {
-        guildCount: null != b ? b : 0
+      children: g.intl.format(g.t["5zQYEz"], {
+        guildCount: null != v ? v : 0
       })
-    }), null != O ? p.default.keys(O).map(e => (0, r.jsx)(d.A, {
+    }), null != y ? x.default.keys(y).map(e => (0, n.jsx)(d.A, {
       className: h.vW,
-      guild: O[e][0],
-      subscriptionChange: false * O[e].length
-    }, e)) : null, (0, r.jsx)(u.Text, {
+      guild: y[e][0],
+      subscriptionChange: false * y[e].length
+    }, e)) : null, (0, n.jsx)(c.Text, {
       variant: "text-xs/normal",
       className: h._N,
-      children: _.intl.format(_.t.ct6oxD, {
-        slotCount: f
+      children: g.intl.format(g.t.ct6oxD, {
+        slotCount: m
       })
-    }), (0, r.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: h.Vh,
-      children: (0, r.jsx)(d.A, {
+      children: (0, n.jsx)(d.A, {
         className: h.uK,
-        guild: l,
-        subscriptionChange: null != o ? o.length : 1
+        guild: o,
+        subscriptionChange: null != a ? a.length : 1
       })
-    }), E > 0 ? (0, r.jsx)(g, {
-      canceledCount: E
+    }), C > 0 ? (0, n.jsx)(p, {
+      canceledCount: C
     }) : null]
   })
-}
-
-function b(e) {
-  let {
-    confirmation: t,
-    confirmationLabel: n,
-    isModifyingSubscription: i,
-    onConfirm: a,
-    onCancel: s
-  } = e;
-  return (0, r.jsx)("div", {
-    className: h.qr,
-    children: (0, r.jsxs)(u.ButtonGroup, {
-      direction: "horizontal-reverse",
-      children: [(0, r.jsx)(u.Button, {
-        variant: "primary",
-        text: t,
-        onClick: a,
-        loading: i,
-        "aria-label": n
-      }), (0, r.jsx)(u.Button, {
-        variant: "secondary",
-        text: _.intl.string(_.t["ETE/oC"]),
-        onClick: s,
-        disabled: i
-      })]
-    })
-  })
-}
-
-function O(e, t, n, r, i) {
-  return [{
-    variant: "secondary",
-    text: _.intl.string(_.t["ETE/oC"]),
-    onClick: i,
-    disabled: n
-  }, {
-    variant: "primary",
-    text: e,
-    onClick: r,
-    loading: n,
-    "aria-label": t
-  }]
 }
 let v = e => {
   let {
     transitionState: t,
-    onClose: n,
-    title: i,
-    subtitle: a,
+    onClose: l,
+    title: r,
+    subtitle: i,
     imageClass: s,
-    guild: l,
-    warning: c,
-    slotCount: u = 1,
+    guild: o,
+    warning: u,
+    slotCount: c = 1,
     canceledCount: d = 0,
-    isTransfer: f = false,
-    fromGuilds: p,
-    toGuild: _,
-    confirmation: h,
-    confirmationLabel: m,
-    isModifyingSubscription: g,
-    onConfirm: b,
-    onCancel: v,
-    error: A
-  } = e, I = O(h, m, g, b, v), S = () => f && null != _ ? (0, r.jsx)(y, {
-    imageClass: null != s ? s : "",
-    blurb: a,
-    fromGuilds: p,
-    toGuild: _,
-    error: A,
-    slotCount: u,
-    canceledCount: d
-  }) : null != l ? (0, r.jsx)(E, {
-    imageClass: null != s ? s : "",
-    blurb: a,
-    guild: l,
-    warning: c,
-    error: A,
-    slotCount: u,
-    canceledCount: d
-  }) : null;
-  return (0, r.jsxs)(o.dWK, {
+    isTransfer: m = false,
+    fromGuilds: x,
+    toGuild: h,
+    confirmation: j,
+    confirmationLabel: p,
+    isModifyingSubscription: v,
+    onConfirm: y,
+    onCancel: b,
+    error: S
+  } = e, O = [{
+    variant: "secondary",
+    text: g.intl.string(g.t["ETE/oC"]),
+    onClick: b,
+    disabled: v
+  }, {
+    variant: "primary",
+    text: j,
+    onClick: y,
+    loading: v,
+    "aria-label": p
+  }];
+  return (0, n.jsxs)(a.dWK, {
     transitionState: t,
-    onClose: n,
+    onClose: l,
     size: "sm",
-    children: [(0, r.jsx)(o.rQ0, {
-      title: i
-    }), (0, r.jsx)(o.cwr, {
-      children: S()
-    }), (0, r.jsx)(o.H7u, {
-      actions: I,
+    children: [(0, n.jsx)(a.rQ0, {
+      title: r
+    }), (0, n.jsx)(a.cwr, {
+      children: m && null != h ? (0, n.jsx)(f, {
+        imageClass: null != s ? s : "",
+        blurb: i,
+        fromGuilds: x,
+        toGuild: h,
+        error: S,
+        slotCount: c,
+        canceledCount: d
+      }) : null != o ? (0, n.jsx)(C, {
+        imageClass: null != s ? s : "",
+        blurb: i,
+        guild: o,
+        warning: u,
+        error: S,
+        slotCount: c,
+        canceledCount: d
+      }) : null
+    }), (0, n.jsx)(a.H7u, {
+      actions: O,
       actionsFullWidth: false
     })]
   })
 };
-v.ApplyBody = E, v.TransferBody = y, v.Footer = b;
-let A = v
+v.ApplyBody = C, v.TransferBody = f, v.Footer = function(e) {
+  let {
+    confirmation: t,
+    confirmationLabel: l,
+    isModifyingSubscription: r,
+    onConfirm: i,
+    onCancel: s
+  } = e;
+  return (0, n.jsx)("div", {
+    className: h.qr,
+    children: (0, n.jsxs)(c.ButtonGroup, {
+      direction: "horizontal-reverse",
+      children: [(0, n.jsx)(c.Button, {
+        variant: "primary",
+        text: t,
+        onClick: i,
+        loading: r,
+        "aria-label": l
+      }), (0, n.jsx)(c.Button, {
+        variant: "secondary",
+        text: g.intl.string(g.t["ETE/oC"]),
+        onClick: s,
+        disabled: r
+      })]
+    })
+  })
+};
+let y = v

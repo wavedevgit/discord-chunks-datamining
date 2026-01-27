@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 955872, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 955872, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => Y
+  A: () => V
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -40,15 +39,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk166378 = require("./166378.js");
 
-function U(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
@@ -56,122 +46,120 @@ function G(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      U(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function V(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function B(e, t) {
-  if (null == e) return {};
-  var n, r, i, a = {};
-  if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-  }
-  if (a = H(e, t), Object.getOwnPropertySymbols)
-    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-  return a
-}
-
-function H(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.getOwnPropertyNames(e);
-  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-  return i
-}
-
-function Y() {
+function V() {
   var e;
-  let t = (0, o.bG)([w.default], () => {
-      let e = w.default.getCurrentUser();
+  let t = (0, a.bG)([N.default], () => {
+      let e = N.default.getCurrentUser();
       return s()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
     }),
-    n = (0, o.bG)([C.A], () => C.A.hidePersonalInformation),
-    a = (0, o.cf)([N.A], () => N.A.getAllPending()),
+    n = (0, a.bG)([j.A], () => j.A.hidePersonalInformation),
+    l = (0, a.cf)([v.A], () => v.A.getAllPending()),
     {
-      pendingBio: U,
-      pendingAvatar: V,
-      pendingNameplate: H
-    } = a,
-    Y = B(a, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
-    W = (0, S.V7)({
+      pendingBio: V,
+      pendingAvatar: H,
+      pendingNameplate: B
+    } = l,
+    F = function(e, t) {
+      if (null == e) return {};
+      var n, r, i, l = {};
+      if ("u" > typeof Reflect && Reflect.ownKeys) {
+        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+        return l
+      }
+      if (l = function(e, t) {
+          if (null == e) return {};
+          var n, r, i = {},
+            l = Object.getOwnPropertyNames(e);
+          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+          return i
+        }(e, t), Object.getOwnPropertySymbols)
+        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+      return l
+    }(l, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
+    Y = (0, T.V7)({
       userId: t.id,
-      image: V
+      image: H
     }),
-    K = (0, b.lw)({
-      pendingValue: H,
+    W = (0, E.lw)({
+      pendingValue: B,
       userValue: null == t || null == (e = t.collectibles) ? true : e.nameplate
     }),
-    z = (0, o.bG)([N.A], () => N.A.showNotice()),
-    q = (0, T.A)() && null != U ? m.Ay.parse(true, U).content : U,
+    z = (0, a.bG)([v.A], () => v.A.showNotice()),
+    K = (0, S.A)() && null != V ? A.Ay.parse(true, V).content : V,
     Z = P.Ay.canUsePremiumProfileCustomization(t),
     {
       analyticsLocations: X,
-      newestAnalyticsLocation: Q
-    } = (0, _.Ay)(p.A.USER_SETTINGS_USER_PROFILE);
-  i.useEffect(() => () => u.h.wait(d.IM), []);
-  let [J, $] = i.useState(false), {
-    showRedesign: ee
-  } = D.X.useExperiment({
+      newestAnalyticsLocation: q
+    } = (0, m.Ay)(p.A.USER_SETTINGS_USER_PROFILE);
+  i.useEffect(() => () => d.h.wait(u.IM), []);
+  let [J, Q] = i.useState(false), {
+    showRedesign: $
+  } = R.X.useExperiment({
     location: "profile customization"
-  }), et = !Z, en = i.useRef(null);
-  return n ? (0, r.jsx)(f.A, {}) : (0, r.jsxs)(_.f5, {
+  }), ee = !Z, et = i.useRef(null);
+  return n ? (0, r.jsx)(_.A, {}) : (0, r.jsxs)(m.f5, {
     value: X,
-    children: [(0, r.jsx)(h.A, {}), (0, r.jsx)(O.A, {
-      profilePreview: (0, r.jsx)(v.A, F(G({
+    children: [(0, r.jsx)(g.A, {}), (0, r.jsx)(x.A, {
+      profilePreview: (0, r.jsx)(O.A, k(G({
         user: t,
         canUsePremiumCustomization: Z,
-        onUpsellClick: x.A,
-        pendingBio: q
-      }, Y), {
-        pendingAvatar: W
+        onUpsellClick: D.A,
+        pendingBio: K
+      }, F), {
+        pendingAvatar: Y
       })),
-      nameplatePreview: (0, r.jsx)(g.A, F(G({
+      nameplatePreview: (0, r.jsx)(f.A, k(G({
         user: t,
-        nameplate: K
-      }, Y), {
-        className: null == K ? k.t : true,
+        nameplate: W
+      }, F), {
+        className: null == W ? U.t : true,
         isHighlighted: true
       })),
-      children: (0, r.jsx)(L.A, {})
-    }), ee && (0, r.jsx)(A.A, {}), (0, r.jsx)(l.L, {
-      innerRef: en,
-      onChange: e => $(e),
+      children: (0, r.jsx)(w.A, {})
+    }), $ && (0, r.jsx)(C.A, {}), (0, r.jsx)(o.L, {
+      innerRef: et,
+      onChange: e => Q(e),
       threshold: .25,
-      active: et,
+      active: ee,
       children: (0, r.jsx)("div", {
-        ref: en,
+        ref: et,
         children: (0, r.jsx)(I.A, {
           user: t,
-          shouldShow: et,
+          shouldShow: ee,
           isVisible: J
         })
       })
-    }), et && !z && (0, r.jsx)(E.d, {
-      className: k.E,
-      showUpsell: et && !J,
+    }), ee && !z && (0, r.jsx)(h.d, {
+      className: U.E,
+      showUpsell: ee && !J,
       text: M.intl.format(M.t.TmfgI2, {
-        onClick: () => (0, y.K)({
-          analyticsSource: Q
+        onClick: () => (0, b.K)({
+          analyticsSource: q
         })
       }),
       textVariant: "heading-md/medium",
@@ -179,9 +167,9 @@ function Y() {
         variant: "expressive",
         onClick: () => {
           var e;
-          R.default.track(j.HAw.TRY_IT_OUT_PRESET_CLICKED, {
+          y.default.track(L.HAw.TRY_IT_OUT_PRESET_CLICKED, {
             cta_variant: "floating_action_button"
-          }), null == en || null == (e = en.current) || e.scrollIntoView({
+          }), null == et || null == (e = et.current) || e.scrollIntoView({
             behavior: "smooth"
           })
         },

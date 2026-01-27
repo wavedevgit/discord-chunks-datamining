@@ -4,7 +4,7 @@
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -12,7 +12,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = 10 * require("./927813.js").A.Millis.MINUTE,
+let s = 10 * require("./927813.js").A.Millis.MINUTE,
   l = {
     lastUsedCommandId: null,
     lastUsedTimeMs: null
@@ -33,9 +33,9 @@ class u extends(r = Chunk311907.Ay.PersistedStore) {
   }
   getLastUsedCommandId() {
     let e = Date.now();
-    return null == l.lastUsedTimeMs || null == l.lastUsedCommandId ? null : (e > l.lastUsedTimeMs + o && (l.lastUsedCommandId = null, l.lastUsedTimeMs = null), l.lastUsedCommandId)
+    return null == l.lastUsedTimeMs || null == l.lastUsedCommandId ? null : (e > l.lastUsedTimeMs + s && (l.lastUsedCommandId = null, l.lastUsedTimeMs = null), l.lastUsedCommandId)
   }
 }
-s(u, "displayName", "AppLauncherLastUsedCommandStore"), s(u, "persistKey", "AppLauncherLastUsedCommandStore"), new u(Chunk73153.h, {
+o(u, "displayName", "AppLauncherLastUsedCommandStore"), o(u, "persistKey", "AppLauncherLastUsedCommandStore"), new u(Chunk73153.h, {
   APPLICATION_COMMAND_USED: c
 })

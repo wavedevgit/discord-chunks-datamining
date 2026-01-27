@@ -76,10 +76,10 @@ let g = (e, t) => m({
       iconPath: p.Cv,
       text: _.intl.string(_.t.kAlUsy)
     });
-    let s = (0, d.KH)(e);
-    if (null != s && n.push({
+    let o = (0, d.KH)(e);
+    if (null != o && n.push({
         iconPath: p.$S,
-        text: (0, d.us)(s)
+        text: (0, d.us)(o)
       }), (0, d.L7)(e)) {
       let {
         text: t
@@ -134,7 +134,7 @@ let g = (e, t) => m({
     }, {
       w: 96,
       h: 96
-    }, 8) === o.uS.Failure && e.drawPath(s.f, {
+    }, 8) === s.uS.Failure && e.drawPath(o.f, {
       x: 12,
       y: 12
     }, true, 2 + 2 / 3);
@@ -151,7 +151,7 @@ let g = (e, t) => m({
       size: 16,
       family: p.mw,
       weight: 500,
-      truncate: o.Kq.Wrap
+      truncate: s.Kq.Wrap
     }), e.drawText(i, {
       x: 120,
       y: 64,
@@ -173,20 +173,20 @@ let g = (e, t) => m({
       avatarSrcs: r,
       description: i,
       timestamp: a,
-      colors: s,
+      colors: o,
       channelId: c
     } = e, u = n.extra.activity_name, d = g(r, t);
     return await (0, l.r)({
       assetsToLoad: d,
       drawImage: e => y(e, {
         timestamp: a,
-        colors: s,
+        colors: o,
         description: i,
         entry: n,
         numAvatars: r.length
       }),
       exportConfigs: {
-        format: o.z5.CloudUpload,
+        format: s.z5.CloudUpload,
         quality: 1,
         fileName: "user-reacting-to-".concat(u, ".png").toLowerCase(),
         fileType: "png",

@@ -63,7 +63,7 @@ let v = (0, Chunk400492.aN)("call_calling", Chunk312671.A.getSoundpack());
 var A = new WeakMap;
 class I extends Chunk439372.A {
   _initialize() {
-    this.stores = new Map().set(s.A, this.handleRingUpdate).set(l.A, this.handleRingUpdate).set(u.A, this.handleRingUpdate).set(d.A, this.handleRingUpdate).set(p.A, this.handleChannelRTCStoreChange).set(a.A, this.handleSoundpackUpdate)
+    this.stores = new Map().set(o.A, this.handleRingUpdate).set(l.A, this.handleRingUpdate).set(u.A, this.handleRingUpdate).set(d.A, this.handleRingUpdate).set(p.A, this.handleChannelRTCStoreChange).set(a.A, this.handleSoundpackUpdate)
   }
   constructor(...e) {
     super(...e), y(this, A, {
@@ -81,8 +81,8 @@ class I extends Chunk439372.A {
     }), O(this, "handleRingUpdate", () => {
       var e, t;
       let n = c.A.getVoiceChannelId(),
-        r = null != (e = null == (t = o.A.getChannel(n)) ? true : t.guild_id) ? e : null,
-        i = s.A.getCalls().some(e => e.ringing.length > 0 && d.A.getCurrentClientVoiceChannelId(null) === e.channelId);
+        r = null != (e = null == (t = s.A.getChannel(n)) ? true : t.guild_id) ? e : null,
+        i = o.A.getCalls().some(e => e.ringing.length > 0 && d.A.getCurrentClientVoiceChannelId(null) === e.channelId);
       this._handleRing(i || E(this, A).size > 0, r)
     }), O(this, "handleGuildRingStart", e => {
       let {

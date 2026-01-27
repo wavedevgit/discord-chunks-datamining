@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Mv: () => a,
-  kV: () => s,
-  v2: () => o
+  kV: () => o,
+  v2: () => s
 });
 var Chunk321733 = require("./321733.js");
 
@@ -20,12 +20,12 @@ function a(e) {
   (0, r.V)("function" == typeof e.canDrag, "Expected canDrag to be a function."), (0, r.V)("function" == typeof e.beginDrag, "Expected beginDrag to be a function."), (0, r.V)("function" == typeof e.endDrag, "Expected endDrag to be a function.")
 }
 
-function s(e) {
+function o(e) {
   (0, r.V)("function" == typeof e.canDrop, "Expected canDrop to be a function."), (0, r.V)("function" == typeof e.hover, "Expected hover to be a function."), (0, r.V)("function" == typeof e.drop, "Expected beginDrag to be a function.")
 }
 
-function o(e, t) {
+function s(e, t) {
   t && Array.isArray(e) ? e.forEach(function(e) {
-    return o(e, false)
+    return s(e, false)
   }) : (0, r.V)("string" == typeof e || "symbol" === i(e), t ? "Type can only be a string, a symbol, or an array of either." : "Type can only be a string or a symbol.")
 }

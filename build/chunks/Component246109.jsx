@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 246109, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 246109, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,12 +13,12 @@ var Chunk397927 = require("./397927.js"),
   Chunk696616 = require("./696616.jsx"),
   Chunk564752 = require("./564752.jsx"),
   Chunk985018 = require("./985018.jsx");
-let f = () => (0, r.jsxs)(i.BJc, {
+let _ = () => (0, r.jsxs)(i.BJc, {
   gap: 32,
   children: [(0, r.jsx)(s.b, {}), (0, r.jsx)("div", {
-    children: (0, r.jsxs)(a.G, {
-      title: d.intl.string(d.t.SRZyHg),
-      children: [(0, r.jsx)(u.A, {}), (0, r.jsx)(c.A, {}), (0, r.jsx)(l.A, {}), (0, r.jsx)(o.A, {})]
+    children: (0, r.jsxs)(l.G, {
+      title: u.intl.string(u.t.SRZyHg),
+      children: [(0, r.jsx)(d.A, {}), (0, r.jsx)(c.A, {}), (0, r.jsx)(o.A, {}), (0, r.jsx)(a.A, {})]
     })
   })]
 })

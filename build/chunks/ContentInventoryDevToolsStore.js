@@ -1,4 +1,4 @@
-/** Chunk was on 20725 **/
+/** Chunk was on 52390 **/
 /** chunk id: 603047, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -6,13 +6,13 @@ require.d(exports, {
 var r, l, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk868068 = require("./868068.js");
-let o = "None";
+let s = "None";
 class u extends(l = Chunk311907.Ay.Store) {
   getFakeGameToShow() {
-    return o
+    return s
   }
   getFakeGameData() {
-    return a.O[o]
+    return o.O[s]
   }
 }(r = "displayName") in u ? Object.defineProperty(u, r, {
   value: "ContentInventoryDevToolsStore",
@@ -25,6 +25,6 @@ let c = new u(Chunk73153.h, {
     let {
       gameToShow: t
     } = e;
-    o = t
+    s = t
   }
 })

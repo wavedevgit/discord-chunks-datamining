@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk775602 = require("./775602.js"),
   Chunk22423 = require("./22423.js");
 
 function d() {
-  let e = (0, o.bG)([c.A], () => c.A.useReducedMotion),
+  let e = (0, s.bG)([c.A], () => c.A.useReducedMotion),
     {
       styleLarge: t,
       styleSmall: n
@@ -27,7 +27,7 @@ function d() {
       }
     }), []);
   return (0, r.jsxs)("div", {
-    className: s()(u.kL, {
+    className: o()(u.kL, {
       [u.cb]: e
     }),
     children: [(0, r.jsx)("div", {

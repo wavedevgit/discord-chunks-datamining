@@ -1,4 +1,4 @@
-/** Chunk was on 83006 **/
+/** Chunk was on 15646 **/
 /** chunk id: 567951, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   y: () => d
@@ -19,16 +19,16 @@ let d = e => {
   } = e, {
     send: d,
     sending: f,
-    canSend: p
-  } = (0, l.Vw)();
-  return (0, n.jsx)(a.Modal, {
+    canSend: b
+  } = (0, a.Vw)();
+  return (0, n.jsx)(l.Modal, {
     title: u.intl.string(c.default.zgFs8C),
     actions: [{
       variant: "primary",
       text: u.intl.string(u.t.TXNS7S),
       onClick: d,
       loading: f,
-      disabled: !p()
+      disabled: !b()
     }],
     transitionState: t,
     onClose: r,

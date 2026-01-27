@@ -12,7 +12,7 @@ module.exports = function(e) {
   if (i(e)) {
     for (var t = e.length, n = [], r = 0; r < t; r++) {
       var c = e[r];
-      "string" == typeof c ? l(n, c) : ("number" == typeof c || "Number" === s(c) || "String" === s(c)) && l(n, o(c))
+      "string" == typeof c ? l(n, c) : ("number" == typeof c || "Number" === o(c) || "String" === o(c)) && l(n, s(c))
     }
     var u = n.length,
       d = true;

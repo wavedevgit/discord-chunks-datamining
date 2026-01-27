@@ -44,12 +44,12 @@ class p extends Chunk439372.A {
         forceFocus: true
       });
       if (null == t && null != a) {
-        let e = s.A.getSelectedParticipant(n),
-          t = (null == e ? true : e.type) === d.lp.STREAM && (null == e ? true : e.id) === (0, o._z)(a);
-        if ((0, i.vN)((0, o._z)(a), false, true), !t) return;
+        let e = o.A.getSelectedParticipant(n),
+          t = (null == e ? true : e.type) === d.lp.STREAM && (null == e ? true : e.id) === (0, s._z)(a);
+        if ((0, i.vN)((0, s._z)(a), false, true), !t) return;
         let c = l.A.getAllActiveStreamsForChannel(n).find(e => e.ownerId !== a.ownerId);
         if (null == c) return;
-        r.A.selectParticipant(n, (0, o._z)(c))
+        r.A.selectParticipant(n, (0, s._z)(c))
       }
     })
   }

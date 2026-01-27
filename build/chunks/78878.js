@@ -15,16 +15,16 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = 1e3;
-class o extends Chunk439372.A {
+let o = 1e3;
+class s extends Chunk439372.A {
   constructor(...e) {
-    super(...e), a(this, "_recentActions", new i.A(s)), a(this, "trackAction", e => {
+    super(...e), a(this, "_recentActions", new i.A(o)), a(this, "trackAction", e => {
       let {
         type: t
       } = e;
       this._recentActions.push(t)
     }), a(this, "getRecentActions", e => this._recentActions.slice(-e).reverse()), a(this, "handlePostConnectionOpen", () => {
-      this._recentActions = new i.A(s)
+      this._recentActions = new i.A(o)
     }), a(this, "handleTrackAction", e => {
       this.trackAction(e)
     }), a(this, "actions", {
@@ -58,4 +58,4 @@ class o extends Chunk439372.A {
     })
   }
 }
-let l = new o
+let l = new s

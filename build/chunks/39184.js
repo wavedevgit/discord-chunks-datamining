@@ -2,21 +2,21 @@
 /** chunk id: 39184, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => s
+  o: () => o
 });
 var Chunk64700 = require("./64700.js"),
   Chunk66455 = require("./66455.js"),
   Chunk348275 = require("./348275.js");
 
-function s(e, t, n, s) {
-  let o = r.useCallback(e => {
-      null == e ? s(null) : "function" == typeof e.getBoundingClientRect && s(e)
-    }, [s]),
+function o(e, t, n, o) {
+  let s = r.useCallback(e => {
+      null == e ? o(null) : "function" == typeof e.getBoundingClientRect && o(e)
+    }, [o]),
     l = e.props.ref,
     c = (0, i.A)(l),
     u = r.useCallback(e => {
-      (0, a.cZ)(c.current, e), o(e)
-    }, [c, o]),
+      (0, a.cZ)(c.current, e), s(e)
+    }, [c, s]),
     d = r.useRef(l);
   r.useEffect(() => {
     d.current = l

@@ -37,8 +37,8 @@ function u(e, t, n) {
     u = c({
       guild_id: e,
       target_user_id: t,
-      subpanel_name: s.n[n],
+      subpanel_name: o.n[n],
       location: l
     }, (0, i.H$)(e));
-  return a.default.track(o.HAw.GUILD_MOD_VIEW_OPENED, u)
+  return a.default.track(s.HAw.GUILD_MOD_VIEW_OPENED, u)
 }

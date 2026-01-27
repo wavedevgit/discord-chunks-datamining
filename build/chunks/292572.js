@@ -20,12 +20,12 @@ function c(e) {
     code: e
   });
   let n = r.Bo.get({
-    url: o.Rsh.UNRESOLVED_GUILD_TEMPLATE(e),
+    url: s.Rsh.UNRESOLVED_GUILD_TEMPLATE(e),
     oldFormErrors: true,
     rejectWithError: true
   }).then(t => {
     let n = t.body;
-    return a.default.track(o.HAw.GUILD_TEMPLATE_RESOLVED, {
+    return a.default.track(s.HAw.GUILD_TEMPLATE_RESOLVED, {
       resolved: true,
       guild_template_code: e,
       guild_template_name: n.name,
@@ -36,10 +36,10 @@ function c(e) {
       guildTemplate: n,
       code: e
     }), {
-      guildTemplate: (0, s.A)(n),
+      guildTemplate: (0, o.A)(n),
       code: e
     }
-  }, () => (a.default.track(o.HAw.GUILD_TEMPLATE_RESOLVED, {
+  }, () => (a.default.track(s.HAw.GUILD_TEMPLATE_RESOLVED, {
     resolved: false,
     guild_template_code: e
   }), i.h.dispatch({
@@ -56,7 +56,7 @@ function c(e) {
 let u = {
   resolveGuildTemplate: c,
   loadTemplatesForGuild: e => r.Bo.get({
-    url: o.Rsh.GUILD_TEMPLATES(e),
+    url: s.Rsh.GUILD_TEMPLATES(e),
     oldFormErrors: true,
     rejectWithError: false
   }).then(e => (i.h.dispatch({
@@ -64,7 +64,7 @@ let u = {
     guildTemplates: e.body
   }), e)),
   createGuildTemplate: (e, t, n) => r.Bo.post({
-    url: o.Rsh.GUILD_TEMPLATES(e),
+    url: s.Rsh.GUILD_TEMPLATES(e),
     body: {
       name: t,
       description: n
@@ -79,7 +79,7 @@ let u = {
     })
   }),
   syncGuildTemplate: (e, t) => r.Bo.put({
-    url: o.Rsh.GUILD_TEMPLATE(e, t),
+    url: s.Rsh.GUILD_TEMPLATE(e, t),
     oldFormErrors: true,
     rejectWithError: false
   }).then(e => {
@@ -90,7 +90,7 @@ let u = {
     })
   }),
   updateGuildTemplate: (e, t, n, a) => r.Bo.patch({
-    url: o.Rsh.GUILD_TEMPLATE(e, t),
+    url: s.Rsh.GUILD_TEMPLATE(e, t),
     body: {
       name: n,
       description: a
@@ -105,7 +105,7 @@ let u = {
     })
   }),
   deleteGuildTemplate: (e, t) => r.Bo.del({
-    url: o.Rsh.GUILD_TEMPLATE(e, t),
+    url: s.Rsh.GUILD_TEMPLATE(e, t),
     oldFormErrors: true,
     rejectWithError: false
   }).then(() => {

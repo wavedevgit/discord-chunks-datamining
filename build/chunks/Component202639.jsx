@@ -49,7 +49,7 @@ function _(e) {
     position: E = "floating"
   } = e, y = l.r.useConfig({
     location: "PremiumFloatingPickerUpsell"
-  }).enabled, b = (0, o.zhh)({
+  }).enabled, b = (0, s.zhh)({
     transform: t ? "translateY(0%)" : "translateY(120%)",
     opacity: +!!t,
     config: {
@@ -57,14 +57,14 @@ function _(e) {
       friction: 14
     }
   });
-  return (0, r.jsx)(s.animated.div, {
+  return (0, r.jsx)(o.animated.div, {
     style: p({}, b),
     className: a()(d.Zj, y && d.g9, {
       [d.tO]: "floating" === E,
       [d.Kx]: "inline" === E
     }, m),
     children: (0, r.jsxs)(h, {
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: null != i ? i : "text-sm/medium",
         color: "text-strong",
         className: d.tD,
@@ -87,7 +87,7 @@ function h(e) {
   } = e;
   return l.r.useConfig({
     location: "PremiumFloatingPickerUpsell"
-  }).enabled ? (0, r.jsx)(o.hLv, {
+  }).enabled ? (0, r.jsx)(s.hLv, {
     color: "nitro-pink",
     offsetBottom: false,
     className: d.mk,

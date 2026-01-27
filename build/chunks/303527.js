@@ -5,12 +5,12 @@
 function r(e) {
   return function(t) {
     var n, r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
-      s = r.width,
-      o = s && e.matchPatterns[s] || e.matchPatterns[e.defaultMatchWidth],
-      l = t.match(o);
+      o = r.width,
+      s = o && e.matchPatterns[o] || e.matchPatterns[e.defaultMatchWidth],
+      l = t.match(s);
     if (!l) return null;
     var c = l[0],
-      u = s && e.parsePatterns[s] || e.parsePatterns[e.defaultParseWidth],
+      u = o && e.parsePatterns[o] || e.parsePatterns[e.defaultParseWidth],
       d = Array.isArray(u) ? a(u, function(e) {
         return e.test(c)
       }) : i(u, function(e) {

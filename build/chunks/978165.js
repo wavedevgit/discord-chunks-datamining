@@ -17,14 +17,14 @@ function c(e, t, n) {
   if (n.isFullServerPreview(e)) returntrue;
   let a = t.getSelfMember(e);
   if (null == a) returnfalse;
-  let s = t.getSelfMemberJoinedAt(e);
-  return !(null == s || (0, r.Lt)(null != (i = a.flags) ? i : 0, l.D.COMPLETED_HOME_ACTIONS)) && Date.now() - s.getTime() < o.A.Millis.WEEK
+  let o = t.getSelfMemberJoinedAt(e);
+  return !(null == o || (0, r.Lt)(null != (i = a.flags) ? i : 0, l.D.COMPLETED_HOME_ACTIONS)) && Date.now() - o.getTime() < s.A.Millis.WEEK
 }
 
 function u(e) {
-  return c(e, s.Ay, a.A)
+  return c(e, o.Ay, a.A)
 }
 
 function d(e) {
-  return (0, i.bG)([s.Ay, a.A], () => c(e, s.Ay, a.A))
+  return (0, i.bG)([o.Ay, a.A], () => c(e, o.Ay, a.A))
 }

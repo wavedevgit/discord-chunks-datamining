@@ -2,12 +2,12 @@
 /** chunk id: 57991, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => j
+  A: () => M
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk827734 = require("./827734.js"),
   Chunk582754 = require("./582754.js"),
@@ -138,14 +138,14 @@ let D = {
   [Chunk426983._.NONE]: {}
 };
 
-function x(e) {
+function L(e) {
   let {
     guildTraits: t
   } = e;
   return (0, r.jsxs)("div", {
     className: S.V8,
     children: [(0, r.jsxs)("div", {
-      className: s()(S.f, S.N5),
+      className: o()(S.f, S.N5),
       children: [(0, r.jsx)(E.A, {
         width: 18,
         height: 18,
@@ -168,14 +168,14 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     badgeType: t,
     guildTraits: n
   } = e, {
     tooltipTitle: i,
     tooltipSubtitle: a,
-    tooltipDescription: s
+    tooltipDescription: o
   } = (0, v.V)(t, n.visibility);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -188,21 +188,21 @@ function L(e) {
         color: "text-muted",
         variant: "text-xs/medium",
         children: a
-      }) : null, null != s ? (0, r.jsx)(u.Text, {
+      }) : null, null != o ? (0, r.jsx)(u.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: s
+        children: o
       }) : null]
-    }), n.premium ? (0, r.jsx)(x, {
+    }), n.premium ? (0, r.jsx)(L, {
       guildTraits: n
     }) : null]
   })
 }
 
-function j(e) {
+function M(e) {
   var t;
   let n, a, {
-      guild: s,
+      guild: o,
       tooltipColor: l = u.STz.Colors.BRAND,
       tooltipPosition: d,
       className: g,
@@ -214,27 +214,27 @@ function j(e) {
       "aria-label": N = false
     } = e,
     P = null != (t = R(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? t : 18,
-    x = (0, o.bG)([m.default, h.Ay], () => {
+    L = (0, s.bG)([m.default, h.Ay], () => {
       let e = m.default.getCurrentUser();
-      return h.Ay.isMember(null == s ? true : s.id, null == e ? true : e.id)
+      return h.Ay.isMember(null == o ? true : o.id, null == e ? true : e.id)
     }),
-    j = (0, o.bG)([_.A], () => _.A.theme),
-    M = (0, O.Jp)(s),
-    k = (0, b.K)(M),
-    U = i.useMemo(() => M.premium && x && !T, [T, M.premium, x]),
+    M = (0, s.bG)([_.A], () => _.A.theme),
+    j = (0, O.Jp)(o),
+    k = (0, b.K)(j),
+    U = i.useMemo(() => j.premium && L && !T, [T, j.premium, L]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.K)({
-        guildId: s.id,
+        guildId: o.id,
         location: {
           section: A.JJy.GUILD_HEADER,
           object: A.ZSU.BOOST_GEM_ICON
         }
       }))
-    }, [U, s.id]);
+    }, [U, o.id]);
   if (k === b._.NONE) return null;
   let {
-    IconComponent: V,
-    backgroundDarkColor: F,
+    IconComponent: F,
+    backgroundDarkColor: V,
     backgroundLightColor: B,
     foregroundDarkColor: H,
     foregroundLightColor: Y,
@@ -242,19 +242,19 @@ function j(e) {
     premiumForegroundColor: K,
     sizeAdjustment: z
   } = D[k];
-  if (null == V) return null;
-  M.premium && (n = K, a = W);
-  let q = (0, c.Mw)(j) ? H : Y,
-    Z = (0, c.Mw)(j) ? F : B;
+  if (null == F) return null;
+  j.premium && (n = K, a = W);
+  let q = (0, c.Mw)(M) ? H : Y,
+    Z = (0, c.Mw)(M) ? V : B;
   n = null != n ? n : q, a = null != a ? a : Z;
-  let X = Math.floor(.75 * P) - (null != z ? z : 0);
+  let Q = Math.floor(.75 * P) - (null != z ? z : 0);
   return (0, r.jsx)(u.STz, {
     color: l,
     position: d,
     "aria-label": N,
-    text: (0, r.jsx)(L, {
+    text: (0, r.jsx)(x, {
       badgeType: k,
-      guildTraits: M
+      guildTraits: j
     }),
     tooltipContentClassName: S.Hj,
     children: e => (0, r.jsx)(u.DUT, {
@@ -267,10 +267,10 @@ function j(e) {
         color: null != a ? a : I,
         stroke: v,
         size: P,
-        children: (0, r.jsx)(V, {
+        children: (0, r.jsx)(F, {
           size: "custom",
-          width: X,
-          height: X,
+          width: Q,
+          height: Q,
           className: y,
           color: null != n ? n : "currentColor"
         })

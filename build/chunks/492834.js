@@ -22,7 +22,7 @@ if (Chunk557939({
     })
   }, {
     finally: function(e) {
-      var t = c(this, o("Promise")),
+      var t = c(this, s("Promise")),
         n = l(e);
       return this.then(n ? function(n) {
         return u(t, e()).then(function() {

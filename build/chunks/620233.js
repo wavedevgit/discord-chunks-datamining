@@ -52,19 +52,19 @@ async function f(e) {
         type: e.type
       }))
     }));
-    s.h.dispatch({
+    o.h.dispatch({
       type: "APEX_EXPERIMENTS_METADATA_FETCH_SUCCESS",
       experiments: t
     })
   } catch (e) {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "APEX_EXPERIMENTS_METADATA_FETCH_FAILURE"
     }), console.log(e)
   }
 }
 async function p(e) {
-  if (!(null != e && o.A.hasLoaded(e)) && !(o.A.isFetching(l.sz) || o.A.hasLoaded(l.sz))) {
-    s.h.dispatch({
+  if (!(null != e && s.A.hasLoaded(e)) && !(s.A.isFetching(l.sz) || s.A.hasLoaded(l.sz))) {
+    o.h.dispatch({
       type: "APEX_EXPERIMENTS_FETCH_START",
       unitId: l.sz
     });
@@ -83,21 +83,21 @@ async function p(e) {
           } = t,
           i = u(t, ["installation"]);
         r.Ay.Emitter.batched(() => {
-          n && s.h.dispatch({
+          n && o.h.dispatch({
             type: "INSTALLATION_ID",
             installation: n
-          }), s.h.dispatch({
+          }), o.h.dispatch({
             type: "APEX_EXPERIMENTS_FETCH_SUCCESS",
             unitId: l.sz,
             experiments: i
           })
         })
-      } else s.h.dispatch({
+      } else o.h.dispatch({
         type: "APEX_EXPERIMENTS_FETCH_FAILURE",
         unitId: l.sz
       })
     } catch (e) {
-      s.h.dispatch({
+      o.h.dispatch({
         type: "APEX_EXPERIMENTS_FETCH_FAILURE",
         unitId: l.sz
       })

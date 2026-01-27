@@ -68,10 +68,10 @@ let I = 200,
   R = false,
   P = 0,
   D = 0,
-  x = 0,
-  L = [],
-  j = [],
+  L = 0,
+  x = [],
   M = [],
+  j = [],
   k = false;
 
 function U() {
@@ -82,14 +82,14 @@ function G(e, t) {
   return t.some(t => t.platforms.includes(e))
 }
 
-function V(e) {
+function F(e) {
   let {
     build_id: t,
     target_build_id: n,
     manifest_ids: r,
     target_manifest_ids: i,
-    application_id: s,
-    branch_id: o,
+    application_id: o,
+    branch_id: s,
     launch_commands: c,
     launch_options: u,
     storage: d,
@@ -117,13 +117,13 @@ function V(e) {
                   name: i,
                   working_dir: a
                 } = n,
-                s = i,
-                o = l.A.fileManager.join(e, r);
-              (0, h.isMac)() && !o.startsWith(w) && (o = "".concat(w).concat(o)), t = null != a ? l.A.fileManager.join(e, a) : l.A.fileManager.dirname(o), E[s] = A(O({}, n), {
-                id: s,
-                fullExecutablePath: o,
+                o = i,
+                s = l.A.fileManager.join(e, r);
+              (0, h.isMac)() && !s.startsWith(w) && (s = "".concat(w).concat(s)), t = null != a ? l.A.fileManager.join(e, a) : l.A.fileManager.dirname(s), E[o] = A(O({}, n), {
+                id: o,
+                fullExecutablePath: s,
                 fullWorkingDir: t
-              }), null == b && (b = s)
+              }), null == b && (b = o)
             }
         } else if (null != c) {
           t === y.lM6.WIN64 && null == c[t] && (t = y.lM6.WIN32);
@@ -144,8 +144,8 @@ function V(e) {
       }
       return {
         type: e,
-        applicationId: s,
-        branchId: o,
+        applicationId: o,
+        branchId: s,
         buildId: t,
         manifestIds: r,
         targetBuildId: n,
@@ -172,8 +172,8 @@ function V(e) {
       return {
         type: a = b === y.OQC.UNINSTALLING ? y.WTw.UNINSTALLING : m ? y.WTw.REPAIRING : null == t ? y.WTw.INSTALLING : y.WTw.UPDATING,
         stage: b,
-        applicationId: s,
-        branchId: o,
+        applicationId: o,
+        branchId: s,
         buildId: t,
         manifestIds: r,
         targetBuildId: n,
@@ -193,7 +193,7 @@ function V(e) {
   throw Error("Invalid Dispatch State. state=".concat(e.state.type))
 }
 
-function F(e) {
+function V(e) {
   return e.type === y.WTw.INSTALLING || e.type === y.WTw.UPDATING || e.type === y.WTw.REPAIRING ? e.networkProgress : null
 }
 
@@ -206,19 +206,19 @@ function H(e) {
 }
 
 function Y(e) {
-  j = (j = [{
+  M = (M = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...j]).slice(0, S)
+  }, ...M]).slice(0, S)
 }
 
 function W(e) {
   let t = Date.now(),
     n = t - T;
-  L = (L = [{
+  x = (x = [{
     bytes: e,
     timestamp: t
-  }, ...L]).slice(0, S).filter(e => {
+  }, ...x]).slice(0, S).filter(e => {
     let {
       timestamp: t
     } = e;
@@ -227,22 +227,22 @@ function W(e) {
 }
 
 function K(e) {
-  M = (M = [{
+  j = (j = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...M]).slice(0, S)
+  }, ...j]).slice(0, S)
 }
 let z = a().throttle(Y, I),
   q = a().throttle(W, I),
   Z = a().throttle(K, I);
 
-function X(e, t, n) {
+function Q(e, t, n) {
   let r = n(C[t]),
     i = n(e[t]);
   return null != r && null != i && 0 !== r ? Math.max(i - r, 0) : 0
 }
 
-function Q(e) {
+function X(e) {
   let {
     state: t
   } = e;
@@ -253,15 +253,15 @@ function Q(e) {
     a = false;
   for (let e in r)
     for (let t in r[e]) {
-      let s = (0, _.gW)(e, t);
-      if (n[s] = V(r[e][t]), null != C[s]) {
-        let e = X(n, s, F);
+      let o = (0, _.gW)(e, t);
+      if (n[o] = F(r[e][t]), null != C[o]) {
+        let e = Q(n, o, V);
         e > 0 && z(P += e);
-        let r = X(n, s, B);
+        let r = Q(n, o, B);
         r > 0 && Z(D += r);
-        let o = X(n, s, H);
-        if (o > 0 && q(x += o), i === t) {
-          let e = n[s];
+        let s = Q(n, o, H);
+        if (s > 0 && q(L += s), i === t) {
+          let e = n[o];
           if (true !== e.paused && (e.type === y.WTw.UNINSTALLING || e.type === y.WTw.INSTALLING || e.type === y.WTw.UPDATING)) switch (e.stage) {
             case y.OQC.PATCHING:
             case y.OQC.FINALIZING:
@@ -273,16 +273,16 @@ function Q(e) {
         }
       }
       if (!k) {
-        let r = l.A.fileManager.dirname(n[s].installPath);
-        E.A.getInstallationPath(e, t) !== r && o.h.wait(() => {
-          o.h.dispatch({
+        let r = l.A.fileManager.dirname(n[o].installPath);
+        E.A.getInstallationPath(e, t) !== r && s.h.wait(() => {
+          s.h.dispatch({
             type: "DISPATCH_APPLICATION_ADD_TO_INSTALLATIONS",
             applicationId: e,
             branchId: t,
             installationPath: r
           })
-        }), false === g.A.getQueuePosition(e, t) && (n[s].type === y.WTw.INSTALLING || n[s].type === y.WTw.UPDATING) && d.A.hasApplication(e, t) && E.A.shouldBeInstalled(e, t) && o.h.wait(() => {
-          o.h.dispatch({
+        }), false === g.A.getQueuePosition(e, t) && (n[o].type === y.WTw.INSTALLING || n[o].type === y.WTw.UPDATING) && d.A.hasApplication(e, t) && E.A.shouldBeInstalled(e, t) && s.h.wait(() => {
+          s.h.dispatch({
             type: "DISPATCH_APPLICATION_UPDATE",
             applicationId: e,
             branchId: t,
@@ -336,13 +336,13 @@ class J extends(r = Chunk311907.Ay.Store) {
     return null == n || null == n.launchOptions ? [] : Object.values(n.launchOptions)
   }
   getHistoricalTotalBytesRead() {
-    return L
+    return x
   }
   getHistoricalTotalBytesDownloaded() {
-    return j
+    return M
   }
   getHistoricalTotalBytesWritten() {
-    return M
+    return j
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {
@@ -353,5 +353,5 @@ class J extends(r = Chunk311907.Ay.Store) {
 b(J, "displayName", "DispatchApplicationStore");
 let $ = new J(Chunk73153.h, {
   CONNECTION_OPEN: U,
-  DISPATCH_APPLICATION_STATE_UPDATE: Q
+  DISPATCH_APPLICATION_STATE_UPDATE: X
 })

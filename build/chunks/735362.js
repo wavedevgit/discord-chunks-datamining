@@ -5,9 +5,9 @@ let t = "[A-Za-z$_][0-9A-Za-z$_]*",
   r = ["true", "false", "null", "undefined", "NaN", "Infinity"],
   i = ["Object", "Function", "Boolean", "Symbol", "Math", "Date", "Number", "BigInt", "String", "RegExp", "Array", "Float32Array", "Float64Array", "Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Int32Array", "Uint16Array", "Uint32Array", "BigInt64Array", "BigUint64Array", "Set", "Map", "WeakSet", "WeakMap", "ArrayBuffer", "SharedArrayBuffer", "Atomics", "DataView", "JSON", "Promise", "Generator", "GeneratorFunction", "AsyncFunction", "Reflect", "Proxy", "Intl", "WebAssembly"],
   a = ["Error", "EvalError", "InternalError", "RangeError", "ReferenceError", "SyntaxError", "TypeError", "URIError"],
-  s = ["setInterval", "setTimeout", "clearInterval", "clearTimeout", "require", "exports", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "escape", "unescape"],
-  o = ["arguments", "this", "super", "console", "window", "document", "localStorage", "sessionStorage", "module", "global"],
-  l = [].concat(s, i, a);
+  o = ["setInterval", "setTimeout", "clearInterval", "clearTimeout", "require", "exports", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "escape", "unescape"],
+  s = ["arguments", "this", "super", "console", "window", "document", "localStorage", "sessionStorage", "module", "global"],
+  l = [].concat(o, i, a);
 
 function c(e) {
   let c = e.regex,
@@ -38,7 +38,7 @@ function c(e) {
       keyword: n,
       literal: r,
       built_in: l,
-      "variable.language": o
+      "variable.language": s
     },
     y = "[0-9](_?[0-9])*",
     b = `\\.(${y})`,
@@ -159,7 +159,7 @@ function c(e) {
       keywords: E,
       contains: P
     },
-    x = {
+    L = {
       variants: [{
         match: [/class/, /\s+/, d, /\s+/, /extends/, /\s+/, c.concat(d, "(", c.concat(/\./, d), ")*")],
         scope: {
@@ -176,7 +176,7 @@ function c(e) {
         }
       }]
     },
-    L = {
+    x = {
       relevance: 0,
       match: c.either(/\bJSON/, /\b[A-Z][a-z]+([A-Z][a-z]*|\d)*/, /\b[A-Z]{2,}([A-Z][a-z]+|\d)+([A-Z][a-z]*)*/, /\b[A-Z]{2,}[a-z]+([A-Z][a-z]+|\d)*([A-Z][a-z]*)*/),
       className: "title.class",
@@ -184,13 +184,13 @@ function c(e) {
         _: [...i, ...a]
       }
     },
-    j = {
+    M = {
       label: "use_strict",
       className: "meta",
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    M = {
+    j = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -214,11 +214,11 @@ function c(e) {
     return c.concat("(?!", e.join("|"), ")")
   }
   let G = {
-      match: c.concat(/\b/, U([...s, "super", "import"].map(e => `${e}\\s*\\(`)), d, c.lookahead(/\s*\(/)),
+      match: c.concat(/\b/, U([...o, "super", "import"].map(e => `${e}\\s*\\(`)), d, c.lookahead(/\s*\(/)),
       className: "title.function",
       relevance: 0
     },
-    V = {
+    F = {
       begin: c.concat(/\./, c.lookahead(c.concat(d, /(?![0-9A-Za-z$_(])/))),
       end: d,
       excludeBegin: true,
@@ -226,7 +226,7 @@ function c(e) {
       className: "property",
       relevance: 0
     },
-    F = {
+    V = {
       match: [/get|set/, /\s+/, d, /(?=\()/],
       className: {
         1: "keyword",
@@ -252,16 +252,16 @@ function c(e) {
     keywords: E,
     exports: {
       PARAMS_CONTAINS: P,
-      CLASS_REFERENCE: L
+      CLASS_REFERENCE: x
     },
     illegal: /#(?![$_A-z])/,
     contains: [e.SHEBANG({
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), j, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, I, S, T, C, N, {
+    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, I, S, T, C, N, {
       match: /\$\d+/
-    }, v, L, {
+    }, v, x, {
       scope: "attr",
       match: d + c.lookahead(":"),
       relevance: 0
@@ -317,7 +317,7 @@ function c(e) {
           contains: ["self"]
         }]
       }]
-    }, M, {
+    }, j, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
@@ -330,7 +330,7 @@ function c(e) {
     }, {
       match: /\.\.\./,
       relevance: 0
-    }, V, {
+    }, F, {
       match: "\\$" + d,
       relevance: 0
     }, {
@@ -339,7 +339,7 @@ function c(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, k, x, F, {
+    }, G, k, L, V, {
       match: /\$[(.]/
     }]
   }
@@ -347,7 +347,7 @@ function c(e) {
 module.exports = function(e) {
   let i = e.regex,
     a = c(e),
-    s = t,
+    o = t,
     u = ["any", "void", "number", "boolean", "string", "object", "never", "symbol", "bigint", "unknown"],
     d = {
       begin: [/namespace/, /\s+/, e.IDENT_RE],
@@ -377,11 +377,11 @@ module.exports = function(e) {
       keyword: n.concat(_),
       literal: r,
       built_in: l.concat(u),
-      "variable.language": o
+      "variable.language": s
     },
     m = {
       className: "meta",
-      begin: "@" + s
+      begin: "@" + o
     },
     g = (e, t, n) => {
       let r = e.contains.findIndex(e => e.label === t);
@@ -391,7 +391,7 @@ module.exports = function(e) {
   Object.assign(a.keywords, h), a.exports.PARAMS_CONTAINS.push(m);
   let E = a.contains.find(e => "attr" === e.scope),
     y = Object.assign({}, E, {
-      match: i.concat(s, i.lookahead(/\s*\?:/))
+      match: i.concat(o, i.lookahead(/\s*\?:/))
     });
   return a.exports.PARAMS_CONTAINS.push([a.exports.CLASS_REFERENCE, E, y]), a.contains = a.contains.concat([m, d, f, y]), g(a, "shebang", e.SHEBANG()), g(a, "use_strict", p), a.contains.find(e => "func.def" === e.label).relevance = 0, Object.assign(a, {
     name: "TypeScript",

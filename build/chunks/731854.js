@@ -2,32 +2,32 @@
 /** chunk id: 731854, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $I: () => o,
+  $I: () => s,
   Al: () => c,
-  Bb: () => j,
+  Bb: () => M,
   CO: () => er,
-  Cl: () => x,
+  Cl: () => L,
   Cn: () => f,
   Dk: () => W,
   Hz: () => d,
   K3: () => en,
   KR: () => S,
   Ku: () => q,
-  ME: () => Q,
+  ME: () => X,
   O5: () => z,
   PR: () => p,
   QP: () => A,
-  TB: () => s,
+  TB: () => o,
   U9: () => ee,
-  UK: () => X,
+  UK: () => Q,
   X1: () => Y,
   XA: () => P,
   Xg: () => b,
-  Xk: () => M,
+  Xk: () => j,
   Y4: () => D,
   YU: () => H,
   Zi: () => y,
-  aE: () => L,
+  aE: () => x,
   d_: () => O,
   dx: () => h,
   eQ: () => B,
@@ -40,9 +40,9 @@ require.d(exports, {
   lo: () => G,
   mI: () => J,
   n8: () => C,
-  nJ: () => F,
+  nJ: () => V,
   nO: () => v,
-  oL: () => V,
+  oL: () => F,
   oh: () => a,
   q5: () => k,
   qe: () => g,
@@ -65,10 +65,10 @@ var Chunk141931 = require("./141931.js"),
   a = function(e) {
     return e.AUDIO_INPUT = "audioinput", e.AUDIO_OUTPUT = "audiooutput", e.VIDEO_INPUT = "videoinput", e
   }({}),
-  s = function(e) {
+  o = function(e) {
     return e.PUSH_TO_TALK = "PUSH_TO_TALK", e.VOICE_ACTIVITY = "VOICE_ACTIVITY", e
   }({}),
-  o = function(e) {
+  s = function(e) {
     return e.DISCONNECTED = "DISCONNECTED", e.CONNECTING = "CONNECTING", e.CONNECTED = "CONNECTED", e.NO_ROUTE = "NO_ROUTE", e.ICE_CHECKING = "ICE_CHECKING", e.DTLS_CONNECTING = "DTLS_CONNECTING", e
   }({}),
   l = function(e) {
@@ -102,15 +102,15 @@ let d = 100,
   R = 20,
   P = 12,
   D = 100,
-  x = 50,
-  L = 1280,
-  j = 720,
-  M = 30,
+  L = 50,
+  x = 1280,
+  M = 720,
+  j = 30,
   k = 15e5,
   U = 5e5,
   G = 35e5,
-  V = 9e6,
-  F = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"],
+  F = 9e6,
+  V = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"],
   B = {
     videoBudget: {
       width: 1280,
@@ -146,10 +146,10 @@ var z = function(e) {
   Z = function(e) {
     return e.LEGACY = "legacy", e.STANDARD = "standard", e.EXPERIMENTAL = "experimental", e.AUTOMATIC = "automatic", e
   }({}),
-  X = function(e) {
+  Q = function(e) {
     return e.OPUS = "opus", e.VP8 = "VP8", e.VP9 = "VP9", e.H264 = "H264", e.H265 = "H265", e.RTX = "rtx", e.TEST = "TEST", e
   }({}),
-  Q = function(e) {
+  X = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.VOICE = 1] = "VOICE", e[e.SOUNDSHARE = 2] = "SOUNDSHARE", e[e.PRIORITY = 4] = "PRIORITY", e[e.HIDDEN = 8] = "HIDDEN", e
   }({}),
   J = function(e) {

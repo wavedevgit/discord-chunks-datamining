@@ -16,10 +16,10 @@ async function d(e, t) {
   let n, d, f, p = u.intl.string(u.t["IOy+I5"]);
   if (e instanceof r.A) {
     n = 0, f = e.reason;
-    let i = o.A.getFetchState();
-    switch (s.Q_.getSetting() && i !== o.$.LOADED && await (0, l.SE)(), e.reason) {
+    let i = s.A.getFetchState();
+    switch (o.Q_.getSetting() && i !== s.$.LOADED && await (0, l.SE)(), e.reason) {
       case r.A.Reasons.PRIMARY_APP_COMMAND_NOT_FOUND:
-        o.A.inDevModeForApplication(t) && (p = u.intl.string(u.t.hXRXfz));
+        s.A.inDevModeForApplication(t) && (p = u.intl.string(u.t.hXRXfz));
         break;
       case r.A.Reasons.INVALID_CHANNEL:
         p = u.intl.string(u.t.j29zCr);

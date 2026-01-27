@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk37962 = require("./37962.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -54,7 +54,7 @@ function f(e) {
     cooldown: n,
     chance: r
   } = e;
-  d[t] = u(l({}, s.u[t]), {
+  d[t] = u(l({}, o.u[t]), {
     cooldown: n,
     chance: r
   })
@@ -72,7 +72,7 @@ class _ extends(r = Chunk311907.Ay.Store) {
     return d[e]
   }
 }
-o(_, "displayName", "FeedbackOverrideStore"), o(_, "persistKey", "feedbackOverrides");
+s(_, "displayName", "FeedbackOverrideStore"), s(_, "persistKey", "feedbackOverrides");
 let h = new _(Chunk73153.h, {
   FEEDBACK_OVERRIDE_SET: f,
   FEEDBACK_OVERRIDE_CLEAR: p

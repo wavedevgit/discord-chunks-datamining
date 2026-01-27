@@ -11,7 +11,7 @@ var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
   Chunk735438 = require("./735438.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,14 +20,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -61,7 +61,7 @@ class f {
     let e = {};
     for (let t in this.nodes) {
       let n = this.nodes[t];
-      e[t] = c(o({}, n), {
+      e[t] = c(s({}, n), {
         children: true,
         childrenIds: n.children.map(e => e.id)
       })
@@ -84,8 +84,8 @@ class f {
     let r = null != t.parentId ? this.nodes[t.parentId] : this.root,
       a = r.children.indexOf(t);
     i()("folder" !== e.type || "folder" !== r.type, "[GUILDS TREE] Tried moving a folder (".concat(e.id, ") inside of another folder (").concat(r.id, ")")), i()(a >= 0, "[GUILDS TREE] target node (".concat(t.id, ") did not exist within its specified parent (").concat(t.parentId, ")"));
-    let s = +!!n;
-    return r.children = [...r.children], r.children.splice(a + s, 0, e), e.parentId = r.id, this.version++, this
+    let o = +!!n;
+    return r.children = [...r.children], r.children.splice(a + o, 0, e), e.parentId = r.id, this.version++, this
   }
   moveInto(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
@@ -146,7 +146,7 @@ class f {
     i()(null != n, "[GUILDS TREE] source node (".concat(e.id, ") had a parent id (").concat(e.parentId, ") which contains no children")), t.children = n.filter(t => t !== e), e.parentId = true, this.version++
   }
   constructor() {
-    s(this, "root", true), s(this, "nodes", true), s(this, "version", true), this.root = {
+    o(this, "root", true), o(this, "nodes", true), o(this, "version", true), this.root = {
       type: "root",
       children: []
     }, this.nodes = {}, this.version = 0

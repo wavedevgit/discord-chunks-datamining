@@ -22,7 +22,7 @@ Object.defineProperty(exports, "__esModule", {
 let Chunk835986 = require("./835986.js"),
   Chunk817762 = require("./817762.js");
 
-function o(e) {
+function s(e) {
   return e.some(e => "MP4" === e) ? ["M4V"] : e.some(e => "AAC" === e) ? ["M4A"] : []
 }
 i(require("./524016.js"), exports), i(require("./330821.js"), exports), i(require("./549195.js"), exports), i(require("./650624.js"), exports), i(require("./212749.js"), exports), exports.validateFileType = function(e, t, n) {
@@ -37,7 +37,7 @@ i(require("./524016.js"), exports), i(require("./330821.js"), exports), i(requir
   }
   if (n && Object.prototype.hasOwnProperty.call(n, "chunkSize") && (null != (r = null == n ? true : n.chunkSize) ? r : 0) <= 0) throw RangeError("chunkSize must be bigger than zero");
   if (!n || !(null == n ? true : n.excludeSimilarTypes)) {
-    let e = o(i);
+    let e = s(i);
     e.length > 0 && (i = i.concat(e))
   }
   let l = [],
@@ -46,7 +46,7 @@ i(require("./524016.js"), exports), i(require("./330821.js"), exports), i(requir
     let t = a.FileTypes.getSignaturesByName(e);
     l = l.concat(t), a.FILE_TYPES_REQUIRED_ADDITIONAL_CHECK.includes(e.toLowerCase()) && c.push(a.FileTypes.getInfoByName(e))
   }
-  let u = (0, s.getFileChunk)(e, (null == n ? true : n.chunkSize) || 64),
+  let u = (0, o.getFileChunk)(e, (null == n ? true : n.chunkSize) || 64),
     d = a.FileTypes.detectSignature(u, l);
   if (!d) returnfalse;
   if (c.length > 0) {

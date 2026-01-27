@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 44909, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 44909, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 });
@@ -14,18 +13,18 @@ function s(e) {
   } = e, {
     useValue: n,
     setValue: s,
-    useTitle: o,
-    useSubtitle: l,
+    useTitle: a,
+    useSubtitle: o,
     useOptions: c,
-    useBadge: u
-  } = t, d = o(), f = null == l ? true : l(), p = n(), _ = c(), h = null == u ? true : u();
-  return (0, r.jsx)(a.L, {
+    useBadge: d
+  } = t, u = a(), _ = null == o ? true : o(), p = n(), m = c(), g = null == d ? true : d();
+  return (0, r.jsx)(l.L, {
     children: (0, r.jsx)(i.z6M, {
-      label: d,
-      description: f,
-      options: _,
+      label: u,
+      description: _,
+      options: m,
       value: p,
-      badge: h,
+      badge: g,
       onChange: e => s(e)
     })
   })

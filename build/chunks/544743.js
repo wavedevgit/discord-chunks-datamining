@@ -23,7 +23,7 @@ function a(e) {
   return !!t && i(n)
 }
 
-function s(e) {
+function o(e) {
   let {
     muted: t,
     mute_config: n
@@ -31,13 +31,13 @@ function s(e) {
   return !!t && null != n && null != n.end_time && new Date(n.end_time) >= new Date
 }
 
-function o(e) {
+function s(e) {
   return null == e.end_time ? null : new Date(e.end_time).getTime() - Date.now()
 }
 require.d(exports, {
   Ay: () => l,
   tG: () => a,
-  wG: () => s
+  wG: () => o
 });
 class l {
   reset() {
@@ -45,7 +45,7 @@ class l {
   }
   setTimer(e, t, n) {
     if (null == e || null == t) returnfalse;
-    let r = o(t);
+    let r = s(t);
     return null != r && (r <= 0 || (this.timers[e] = setTimeout(n, Math.max(0, r)), false))
   }
   clearTimer(e) {

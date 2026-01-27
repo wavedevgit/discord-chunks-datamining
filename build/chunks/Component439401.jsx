@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk497685 = require("./497685.js"),
@@ -43,11 +43,11 @@ let h = Chunk64700.memo(function(e) {
       format: g
     }), d._.dispatch(f.jej.FAVORITE_GIF))
   };
-  return (0, r.jsx)(o.m, {
+  return (0, r.jsx)(s.m, {
     text: v,
     children: (0, r.jsx)(l.sqX, {
       "aria-label": v,
-      className: s()(E, _.jj, {
+      className: o()(E, _.jj, {
         [_.wH]: O,
         [_.TV]: y
       }),

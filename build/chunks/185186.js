@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 185186, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 185186, original params: e,t,n (module,exports,require) **/
 module.exports = {
   Eb: "activity__7ba6e",
   S3: "partyMembers__7ba6e",

@@ -30,7 +30,7 @@ let c = (0, Chunk64700.createContext)({}),
       isFocused: d,
       isFocusVisible: f,
       focusProps: p
-    } = (0, s.o)({
+    } = (0, o.o)({
       isTextInput: true,
       autoFocus: e.autoFocus
     }), _ = !!e["aria-invalid"] && "false" !== e["aria-invalid"], h = (0, r.Sl)({
@@ -45,7 +45,7 @@ let c = (0, Chunk64700.createContext)({}),
       defaultClassName: "react-aria-Input"
     });
     return l.createElement("input", {
-      ...(0, o.v)(u(e), p, n),
+      ...(0, s.v)(u(e), p, n),
       ...h,
       ref: t,
       "data-focused": d || true,

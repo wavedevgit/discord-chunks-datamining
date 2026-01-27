@@ -60,18 +60,18 @@ function f(e) {
     }))
   }, f = Object.entries(t);
   return 0 === f.length ? null : (0, r.jsx)("div", {
-    className: o.in,
+    className: s.in,
     children: (0, r.jsx)(i.BJc, {
       gap: 16,
       children: f.map(e => {
         var t;
-        let [i, o] = e, l = null != (t = n[i]) ? t : o.defaultValue;
+        let [i, s] = e, l = null != (t = n[i]) ? t : s.defaultValue;
         return (0, r.jsxs)(r.Fragment, {
-          children: ["select" === o.type && null != o.options && (0, r.jsx)(s.l6P, {
-            label: o.label,
+          children: ["select" === s.type && null != s.options && (0, r.jsx)(o.l6P, {
+            label: s.label,
             value: l,
             onSelectionChange: e => u(i, e),
-            options: o.options,
+            options: s.options,
             formatOption: e => {
               let {
                 label: t,
@@ -85,20 +85,20 @@ function f(e) {
             },
             selectionMode: "single",
             fullWidth: true
-          }), "boolean" === o.type && (0, r.jsx)(s.Checkbox, {
+          }), "boolean" === s.type && (0, r.jsx)(o.Checkbox, {
             checked: l,
             onChange: e => u(i, e),
-            label: o.label
-          }), "text" === o.type && (0, r.jsx)(a.k, {
+            label: s.label
+          }), "text" === s.type && (0, r.jsx)(a.k, {
             value: l,
             onChange: e => u(i, e),
-            label: o.label
-          }), "number" === o.type && (0, r.jsx)(a.k, {
+            label: s.label
+          }), "number" === s.type && (0, r.jsx)(a.k, {
             type: "number",
             value: String(l),
-            min: o.minValue,
+            min: s.minValue,
             onChange: e => u(i, Number(e)),
-            label: o.label
+            label: s.label
           })]
         })
       })

@@ -18,15 +18,15 @@ function c(e) {
   let {
     content: t,
     flags: n
-  } = e, [i, s] = (0, a.A)(t);
-  return i ? [s, (0, r.UI)(null != n ? n : 0, o.pr7.SUPPRESS_NOTIFICATIONS)] : [t, null != n ? n : 0]
+  } = e, [i, o] = (0, a.A)(t);
+  return i ? [o, (0, r.UI)(null != n ? n : 0, s.pr7.SUPPRESS_NOTIFICATIONS)] : [t, null != n ? n : 0]
 }
 
 function u(e) {
   let {
     location: t
   } = e;
-  return s.t.useExperiment({
+  return o.t.useExperiment({
     location: t
   }, {
     autoTrackExposure: false

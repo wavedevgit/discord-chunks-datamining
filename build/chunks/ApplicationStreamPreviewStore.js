@@ -72,13 +72,13 @@ function O(e) {
       selfStream: a
     } = t;
     if (a) return e;
-    let s = (0, l._z)({
+    let o = (0, l._z)({
       streamType: null != r ? c.U4.GUILD : c.U4.CALL,
       guildId: r,
       channelId: i,
       ownerId: n
     });
-    return delete _[s], delete h[s], true
+    return delete _[o], delete h[o], true
   }, false)
 }
 class v extends(r = Chunk311907.Ay.Store) {
@@ -100,9 +100,9 @@ class v extends(r = Chunk311907.Ay.Store) {
         ownerId: n
       }),
       a = _[i],
-      s = null != (r = h[i]) ? r : 0,
-      o = null != a && Date.now() > a.expires;
-    return (null == a && s < p || o) && !m.has(i)
+      o = null != (r = h[i]) ? r : 0,
+      s = null != a && Date.now() > a.expires;
+    return (null == a && o < p || s) && !m.has(i)
   }
   getPreviewURLForStreamKey(e) {
     let {

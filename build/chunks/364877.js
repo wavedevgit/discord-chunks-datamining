@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 364877, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   p_: "list__920b8",
   KJ: "accountCard__920b8",

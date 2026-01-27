@@ -29,7 +29,7 @@ function h() {
   let e = c.A.getCurrentClientVoiceChannelId(null);
   if (null == e) returnfalse;
   let t = l.A.getChannel(e);
-  return !(null == t || !t.isPrivate() || t.recipients.length > 1 || u.Ay.countVoiceStatesForChannel(e) > 1) && null == o.Ay.getSelfEmbeddedActivityForChannel(e)
+  return !(null == t || !t.isPrivate() || t.recipients.length > 1 || u.Ay.countVoiceStatesForChannel(e) > 1) && null == s.Ay.getSelfEmbeddedActivityForChannel(e)
 }
 
 function m() {

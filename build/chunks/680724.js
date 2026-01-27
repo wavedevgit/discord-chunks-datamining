@@ -80,12 +80,12 @@ function E(e) {
     message: a,
     optimistic: l
   } = e;
-  if (r !== s.A.getChannelId()) returnfalse;
+  if (r !== o.A.getChannelId()) returnfalse;
   if (l) {
     let e = null == i || null == (n = i.activityAction) ? true : n.targetUserId;
     return null != e && (f[a.id] = e, false)
   }
-  if (null == a.nonce || (null == (t = a.activity) ? true : t.type) !== o.xL.STREAM_REQUEST) returnfalse;
+  if (null == a.nonce || (null == (t = a.activity) ? true : t.type) !== s.xL.STREAM_REQUEST) returnfalse;
   let u = f[a.nonce];
   if (null == u) returnfalse;
   delete f[a.nonce], p = d(c({}, p), {
@@ -104,9 +104,9 @@ function y(e) {
 }
 
 function b() {
-  if (s.A.getWasMoved()) {
-    if (s.A.getChannelId() === _) returnfalse;
-    _ = s.A.getChannelId(), h()
+  if (o.A.getWasMoved()) {
+    if (o.A.getChannelId() === _) returnfalse;
+    _ = o.A.getChannelId(), h()
   } else {
     if (null == _) returnfalse;
     _ = null
@@ -114,7 +114,7 @@ function b() {
 }
 class O extends Chunk311907.Ay.Store {
   initialize() {
-    this.waitFor(s.A)
+    this.waitFor(o.A)
   }
   getPendingRequestForUser(e) {
     return p[e]

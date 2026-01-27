@@ -6,5 +6,5 @@ var Chunk382531 = require("./382531.js"),
   Chunk467957 = require("./467957.js"),
   Chunk67771 = require("./67771.js");
 module.exports = function(e) {
-  return "function" == typeof e ? e : null == e ? a : "object" == typeof e ? s(e) ? i(e[0], e[1]) : r(e) : o(e)
+  return "function" == typeof e ? e : null == e ? a : "object" == typeof e ? o(e) ? i(e[0], e[1]) : r(e) : s(e)
 }

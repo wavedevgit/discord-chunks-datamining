@@ -51,7 +51,7 @@ function d(e, t) {
 }
 async function f(e) {
   let t = (await r.Bo.get({
-    url: o.Rsh.GUILD_INTEGRATIONS(e),
+    url: s.Rsh.GUILD_INTEGRATIONS(e),
     query: {
       include_applications: true,
       include_role_connections_metadata: true
@@ -60,7 +60,7 @@ async function f(e) {
     rejectWithError: false
   })).body.map(e => d(c({}, e), {
     application: "application" in e && null != e.application ? a.kJ.createFromServer(e.application) : true,
-    user: "user" in e && null != e.user ? new s.A(e.user) : true
+    user: "user" in e && null != e.user ? new o.A(e.user) : true
   }));
   return i.h.dispatch({
     type: "GUILD_SETTINGS_LOADED_INTEGRATIONS",
@@ -71,7 +71,7 @@ async function f(e) {
 
 function p(e) {
   return r.Bo.get({
-    url: o.Rsh.GUILD_WIDGET(e),
+    url: s.Rsh.GUILD_WIDGET(e),
     oldFormErrors: true,
     rejectWithError: true
   }).then(e => {

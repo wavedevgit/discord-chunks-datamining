@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 439145, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 439145, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk934886 = require("./934886.js"),
   Chunk747105 = require("./747105.js"),
@@ -9,118 +9,114 @@ var Chunk934886 = require("./934886.js"),
   Chunk505122 = require("./505122.js"),
   Chunk797686 = require("./797686.js"),
   Chunk494277 = require("./494277.js"),
-  d = Chunk573750.isBrowser("IE");
+  f = Chunk573750.isBrowser("IE");
 
-function f(e, t) {
-  if (!e) return "[empty]";
-  var n = p(e, t);
-  return n.nodeType === Node.TEXT_NODE ? n.textContent : (u(n) || c(false), n.outerHTML)
-}
-
-function p(e, t) {
-  var n = true !== t ? t(e) : [];
-  if (e.nodeType === Node.TEXT_NODE) {
-    var r = e.textContent.length;
-    return l(e).createTextNode("[text " + r + (n.length ? " | " + n.join(", ") : "") + "]")
-  }
-  var i = e.cloneNode();
-  1 === i.nodeType && n.length && i.setAttribute("data-labels", n.join(", "));
-  for (var a = e.childNodes, s = 0; s < a.length; s++) i.appendChild(p(a[s], t));
-  return i
-}
-
-function _(e, t) {
-  for (var n = e, r = n; n;)
-    if (u(n) && r.hasAttribute("contenteditable")) return f(n, t);
-    else r = n = n.parentNode;
+function p(t, e) {
+  for (var r = t, n = r; r;)
+    if (l(r) && n.hasAttribute("contenteditable")) return function(t, e) {
+      if (!t) return "[empty]";
+      var r = function t(e, r) {
+        var n = true !== r ? r(e) : [];
+        if (e.nodeType === Node.TEXT_NODE) {
+          var i = e.textContent.length;
+          return u(e).createTextNode("[text " + i + (n.length ? " | " + n.join(", ") : "") + "]")
+        }
+        var o = e.cloneNode();
+        1 === o.nodeType && n.length && o.setAttribute("data-labels", n.join(", "));
+        for (var a = e.childNodes, s = 0; s < a.length; s++) o.appendChild(t(a[s], r));
+        return o
+      }(t, e);
+      return r.nodeType === Node.TEXT_NODE ? r.textContent : (l(r) || c(false), r.outerHTML)
+    }(r, e);
+    else n = r = r.parentNode;
   return "Could not find contentEditable parent of node"
 }
 
-function h(e) {
-  return null === e.nodeValue ? e.childNodes.length : e.nodeValue.length
+function h(t) {
+  return null === t.nodeValue ? t.childNodes.length : t.nodeValue.length
 }
 
-function m(e, t, n, r) {
-  var a = o();
-  if (e.extend && s(a, t)) {
-    n > h(t) && i.logSelectionStateFailure({
-      anonymizedDom: _(t),
+function d(t, e, r, n) {
+  var o = s();
+  if (t.extend && a(o, e)) {
+    r > h(e) && i.logSelectionStateFailure({
+      anonymizedDom: p(e),
       extraParams: JSON.stringify({
-        offset: n
+        offset: r
       }),
-      selectionState: JSON.stringify(r.toJS())
+      selectionState: JSON.stringify(n.toJS())
     });
-    var l = t === e.focusNode;
+    var u = e === t.focusNode;
     try {
-      e.extend(t, n)
-    } catch (s) {
+      t.extend(e, r)
+    } catch (a) {
       throw i.logSelectionStateFailure({
-        anonymizedDom: _(t, function(t) {
-          var n = [];
-          return t === a && n.push("active element"), t === e.anchorNode && n.push("selection anchor node"), t === e.focusNode && n.push("selection focus node"), n
+        anonymizedDom: p(e, function(e) {
+          var r = [];
+          return e === o && r.push("active element"), e === t.anchorNode && r.push("selection anchor node"), e === t.focusNode && r.push("selection focus node"), r
         }),
         extraParams: JSON.stringify({
-          activeElementName: a ? a.nodeName : null,
-          nodeIsFocus: t === e.focusNode,
-          nodeWasFocus: l,
-          selectionRangeCount: e.rangeCount,
-          selectionAnchorNodeName: e.anchorNode ? e.anchorNode.nodeName : null,
-          selectionAnchorOffset: e.anchorOffset,
-          selectionFocusNodeName: e.focusNode ? e.focusNode.nodeName : null,
-          selectionFocusOffset: e.focusOffset,
-          message: s ? "" + s : null,
-          offset: n
+          activeElementName: o ? o.nodeName : null,
+          nodeIsFocus: e === t.focusNode,
+          nodeWasFocus: u,
+          selectionRangeCount: t.rangeCount,
+          selectionAnchorNodeName: t.anchorNode ? t.anchorNode.nodeName : null,
+          selectionAnchorOffset: t.anchorOffset,
+          selectionFocusNodeName: t.focusNode ? t.focusNode.nodeName : null,
+          selectionFocusOffset: t.focusOffset,
+          message: a ? "" + a : null,
+          offset: r
         }, null, 2),
-        selectionState: JSON.stringify(r.toJS(), null, 2)
-      }), s
+        selectionState: JSON.stringify(n.toJS(), null, 2)
+      }), a
     }
-  } else if (e.rangeCount > 0) {
-    var c = e.getRangeAt(0);
-    c.setEnd(t, n), e.addRange(c.cloneRange())
+  } else if (t.rangeCount > 0) {
+    var c = t.getRangeAt(0);
+    c.setEnd(e, r), t.addRange(c.cloneRange())
   }
 }
 
-function g(e, t, n, a) {
-  var s = l(t).createRange();
-  if (n > h(t) && (i.logSelectionStateFailure({
-      anonymizedDom: _(t),
+function g(t, e, r, o) {
+  var a = u(e).createRange();
+  if (r > h(e) && (i.logSelectionStateFailure({
+      anonymizedDom: p(e),
       extraParams: JSON.stringify({
-        offset: n
+        offset: r
       }),
-      selectionState: JSON.stringify(a.toJS())
-    }), r.handleExtensionCausedError()), s.setStart(t, n), d) try {
-    e.addRange(s)
-  } catch (e) {} else e.addRange(s)
+      selectionState: JSON.stringify(o.toJS())
+    }), n.handleExtensionCausedError()), a.setStart(e, r), f) try {
+    t.addRange(a)
+  } catch (t) {} else t.addRange(a)
 }
 module.exports = {
-  setDraftEditorSelection: function(e, t, n, r, i) {
-    var a = l(t);
-    if (s(a.documentElement, t)) {
-      var o = a.defaultView.getSelection(),
-        c = e.getAnchorKey(),
-        u = e.getAnchorOffset(),
-        d = e.getFocusKey(),
-        f = e.getFocusOffset(),
-        p = e.getIsBackward();
-      if (!o.extend && p) {
-        var _ = c,
-          h = u;
-        c = d, u = f, d = _, f = h, p = false
+  setDraftEditorSelection: function(t, e, r, n, i) {
+    var o = u(e);
+    if (a(o.documentElement, e)) {
+      var s = o.defaultView.getSelection(),
+        c = t.getAnchorKey(),
+        l = t.getAnchorOffset(),
+        f = t.getFocusKey(),
+        p = t.getFocusOffset(),
+        h = t.getIsBackward();
+      if (!s.extend && h) {
+        var y = c,
+          v = l;
+        c = f, l = p, f = y, p = v, h = false
       }
-      var E = c === n && r <= u && i >= u,
-        y = d === n && r <= f && i >= f;
-      if (E && y) {
-        o.removeAllRanges(), g(o, t, u - r, e), m(o, t, f - r, e);
+      var m = c === r && n <= l && i >= l,
+        _ = f === r && n <= p && i >= p;
+      if (m && _) {
+        s.removeAllRanges(), g(s, e, l - n, t), d(s, e, p - n, t);
         return
       }
-      if (p) {
-        if (y && (o.removeAllRanges(), g(o, t, f - r, e)), E) {
-          var b = o.focusNode,
-            O = o.focusOffset;
-          o.removeAllRanges(), g(o, t, u - r, e), m(o, b, O, e)
+      if (h) {
+        if (_ && (s.removeAllRanges(), g(s, e, p - n, t)), m) {
+          var b = s.focusNode,
+            S = s.focusOffset;
+          s.removeAllRanges(), g(s, e, l - n, t), d(s, b, S, t)
         }
-      } else E && (o.removeAllRanges(), g(o, t, u - r, e)), y && m(o, t, f - r, e)
+      } else m && (s.removeAllRanges(), g(s, e, l - n, t)), _ && d(s, e, p - n, t)
     }
   },
-  addFocusToSelection: m
+  addFocusToSelection: d
 }

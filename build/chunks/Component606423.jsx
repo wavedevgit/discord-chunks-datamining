@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
-  s = require.n(Chunk284009),
+  o = require.n(Chunk284009),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -45,14 +45,14 @@ let v = e => {
       planId: A
     } = (0, g.X)(), I = (0, l.bG)([d.default], () => {
       let e = d.default.getCurrentUser();
-      return s()(null != e, "ProfileItem: currentUser cannot be undefined"), e
+      return o()(null != e, "ProfileItem: currentUser cannot be undefined"), e
     });
     i.useEffect(() => {
       (0, u.A)(I.id, I.getAvatarURL(null, 80))
     }, [I]);
     let S = (0, p.A)(),
       T = "US" === S.ipCountryCode && "CA" === S.ipSubdivisionCode;
-    if (O) return (0, r.jsx)(o.Modal, {
+    if (O) return (0, r.jsx)(s.Modal, {
       transitionState: e,
       title: "",
       actions: [],
@@ -79,7 +79,7 @@ let v = e => {
       text: T ? b.intl.string(b.t.PfnxqD) : b.intl.string(b.t["3PatSz"]),
       onClick: () => a(m.g.CONFIRM),
       variant: "primary"
-    }), (0, r.jsx)(o.Modal, {
+    }), (0, r.jsx)(s.Modal, {
       transitionState: e,
       title: N,
       subtitle: w,

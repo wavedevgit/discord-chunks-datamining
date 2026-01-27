@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  A: () => x
+  A: () => L
 }), require("./896048.js"), require("./747238.js"), require("./812715.js"), require("./638769.js");
 var i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -84,7 +84,7 @@ function S() {
 }
 
 function T() {
-  return !!o.A.hasLoadedExperiments && u.R.getCurrentConfig({
+  return !!s.A.hasLoadedExperiments && u.R.getCurrentConfig({
     location: "WordFrequencyStore"
   }, {
     autoTrackExposure: false
@@ -113,7 +113,7 @@ let w = e => {
   };
 class P extends(i = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(o.A), null != e) {
+    if (this.waitFor(s.A), null != e) {
       var t;
       if (e.wordSketchData) try {
         e.wordSketchData && (r = l.M.fromJSON(e.wordSketchData))
@@ -151,4 +151,4 @@ let D = new P(Chunk73153.h, {
     MESSAGE_CREATE: R,
     DEV_TOOLS_WORD_FREQUENCY_RESET: C
   }),
-  x = D
+  L = D

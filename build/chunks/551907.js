@@ -24,10 +24,10 @@
         var r = n(5049),
           i = n(6785),
           a = n(78),
-          s = n(7802);
+          o = n(7802);
         e.exports = function(e) {
           if (e.length < 1 || "function" != typeof e[0]) throw new i("a function is required");
-          return s(r, a, e)
+          return o(r, a, e)
         }
       },
       1909: e => {
@@ -60,8 +60,8 @@
         "use strict";
         var r, i = n(5846),
           a = n(5293),
-          s = n(9055),
-          o = n(8888),
+          o = n(9055),
+          s = n(8888),
           l = n(7900),
           c = n(5389),
           u = n(6785),
@@ -103,7 +103,7 @@
           R = n(78),
           P = {},
           D = "u" > typeof Uint8Array && T ? T(Uint8Array) : r,
-          x = {
+          L = {
             __proto__: null,
             "%AggregateError%": "u" < typeof AggregateError ? r : AggregateError,
             "%Array%": Array,
@@ -127,7 +127,7 @@
             "%encodeURIComponent%": encodeURIComponent,
             "%Error%": a,
             "%eval%": eval,
-            "%EvalError%": s,
+            "%EvalError%": o,
             "%Float32Array%": "u" < typeof Float32Array ? r : Float32Array,
             "%Float64Array%": "u" < typeof Float64Array ? r : Float64Array,
             "%FinalizationRegistry%": "u" < typeof FinalizationRegistry ? r : FinalizationRegistry,
@@ -150,7 +150,7 @@
             "%parseInt%": parseInt,
             "%Promise%": "u" < typeof Promise ? r : Promise,
             "%Proxy%": "u" < typeof Proxy ? r : Proxy,
-            "%RangeError%": o,
+            "%RangeError%": s,
             "%ReferenceError%": l,
             "%Reflect%": "u" < typeof Reflect ? r : Reflect,
             "%RegExp%": RegExp,
@@ -188,10 +188,10 @@
         if (T) try {
           null.error
         } catch (e) {
-          var L = T(T(e));
-          x["%Error.prototype%"] = L
+          var x = T(T(e));
+          L["%Error.prototype%"] = x
         }
-        var j = function e(t) {
+        var M = function e(t) {
             var n;
             if ("%AsyncFunction%" === t) n = b("async function () {}");
             else if ("%GeneratorFunction%" === t) n = b("function* () {}");
@@ -203,9 +203,9 @@
               var i = e("%AsyncGenerator%");
               i && T && (n = T(i.prototype))
             }
-            return x[t] = n, n
+            return L[t] = n, n
           },
-          M = {
+          j = {
             __proto__: null,
             "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
             "%ArrayPrototype%": ["Array", "prototype"],
@@ -262,17 +262,17 @@
           k = n(5049),
           U = n(5215),
           G = k.call(R, Array.prototype.concat),
-          V = k.call(w, Array.prototype.splice),
-          F = k.call(R, String.prototype.replace),
+          F = k.call(w, Array.prototype.splice),
+          V = k.call(R, String.prototype.replace),
           B = k.call(R, String.prototype.slice),
           H = k.call(R, RegExp.prototype.exec),
           Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           W = /\\(\\)?/g,
           K = function(e, t) {
             var n, r = e;
-            if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(x, r)) {
-              var i = x[r];
-              if (i === P && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
+            if (U(j, r) && (r = "%" + (n = j[r])[0] + "%"), U(L, r)) {
+              var i = L[r];
+              if (i === P && (i = M(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
               return {
                 alias: n,
                 name: r,
@@ -291,36 +291,36 @@
               if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
-              return F(e, Y, function(e, t, n, i) {
-                r[r.length] = n ? F(i, W, "$1") : t || e
+              return V(e, Y, function(e, t, n, i) {
+                r[r.length] = n ? V(i, W, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
             i = K("%" + r + "%", t),
             a = i.name,
-            s = i.value,
-            o = false,
+            o = i.value,
+            s = false,
             l = i.alias;
-          l && (r = l[0], V(n, G([0, 1], l)));
+          l && (r = l[0], F(n, G([0, 1], l)));
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
               _ = B(p, 0, 1),
               h = B(p, false);
             if (('"' === _ || "'" === _ || "`" === _ || '"' === h || "'" === h || "`" === h) && _ !== h) throw new c("property names with quotes must have matching quotes");
-            if ("constructor" !== p && f || (o = true), U(x, a = "%" + (r += "." + p) + "%")) s = x[a];
-            else if (null != s) {
-              if (!(p in s)) {
+            if ("constructor" !== p && f || (s = true), U(L, a = "%" + (r += "." + p) + "%")) o = L[a];
+            else if (null != o) {
+              if (!(p in o)) {
                 if (!t) throw new u("base intrinsic for " + e + " exists, but the property is not available.");
                 return
               }
               if (O && d + 1 >= n.length) {
-                var m = O(s, p);
-                s = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : s[p]
-              } else f = U(s, p), s = s[p];
-              f && !o && (x[a] = s)
+                var m = O(o, p);
+                o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[p]
+              } else f = U(o, p), o = o[p];
+              f && !s && (L[a] = o)
             }
           }
-          return s
+          return o
         }
       },
       8160: e => {
@@ -374,11 +374,11 @@
         } catch (e) {
           if (!e || "object" != typeof e || !("code" in e) || "ERR_PROTO_ACCESS" !== e.code) throw e
         }
-        var s = !!r && a && a(Object.prototype, "__proto__"),
-          o = Object,
-          l = o.getPrototypeOf;
-        e.exports = s && "function" == typeof s.get ? i([s.get]) : "function" == typeof l && function(e) {
-          return l(null == e ? e : o(e))
+        var o = !!r && a && a(Object.prototype, "__proto__"),
+          s = Object,
+          l = s.getPrototypeOf;
+        e.exports = o && "function" == typeof o.get ? i([o.get]) : "function" == typeof l && function(e) {
+          return l(null == e ? e : s(e))
         }
       },
       6332: e => {
@@ -439,19 +439,19 @@
         e.exports = function(e) {
           var i = this;
           if ("function" != typeof i || "[object Function]" !== t.apply(i)) throw TypeError("Function.prototype.bind called on incompatible " + i);
-          for (var a, s = function(e, t) {
+          for (var a, o = function(e, t) {
               for (var n = [], r = 1, i = 0; r < e.length; r += 1, i += 1) n[i] = e[r];
               return n
-            }(arguments), o = n(0, i.length - s.length), l = [], c = 0; c < o; c++) l[c] = "$" + c;
+            }(arguments), s = n(0, i.length - o.length), l = [], c = 0; c < s; c++) l[c] = "$" + c;
           if (a = Function("binder", "return function (" + function(e, t) {
               for (var n = "", r = 0; r < e.length; r += 1) n += e[r], r + 1 < e.length && (n += ",");
               return n
             }(l) + "){ return binder.apply(this,arguments); }")(function() {
               if (this instanceof a) {
-                var t = i.apply(this, r(s, arguments));
+                var t = i.apply(this, r(o, arguments));
                 return Object(t) === t ? t : this
               }
-              return i.apply(e, r(s, arguments))
+              return i.apply(e, r(o, arguments))
             }), i.prototype) {
             var u = function() {};
             u.prototype = i.prototype, a.prototype = new u, u.prototype = null
@@ -494,8 +494,8 @@
       },
       2709: (e, t, n) => {
         var r, i, a = 1 / 0,
-          s = "[object Symbol]",
-          o = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g,
+          o = "[object Symbol]",
+          s = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g,
           l = /[\xc0-\xd6\xd8-\xf6\xf8-\xff\u0100-\u017f]/g,
           c = "\\ud800-\\udfff",
           u = "\\u2700-\\u27bf",
@@ -521,11 +521,11 @@
           R = "(?:" + [g, b, O].join("|") + ")" + w,
           P = RegExp("['’]", "g"),
           D = RegExp(h, "g"),
-          x = RegExp([v + "?" + E + "+" + S + "(?=" + [_, v, "$"].join("|") + ")", I + "+" + T + "(?=" + [_, v + A, "$"].join("|") + ")", v + "?" + A + "+" + S, v + "+" + T, m, R].join("|"), "g"),
-          L = /[a-z][A-Z]|[A-Z]{2,}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
-          j = "object" == typeof n.g && n.g && n.g.Object === Object && n.g,
-          M = "object" == typeof self && self && self.Object === Object && self,
-          k = j || M || Function("return this")(),
+          L = RegExp([v + "?" + E + "+" + S + "(?=" + [_, v, "$"].join("|") + ")", I + "+" + T + "(?=" + [_, v + A, "$"].join("|") + ")", v + "?" + A + "+" + S, v + "+" + T, m, R].join("|"), "g"),
+          x = /[a-z][A-Z]|[A-Z]{2,}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
+          M = "object" == typeof n.g && n.g && n.g.Object === Object && n.g,
+          j = "object" == typeof self && self && self.Object === Object && self,
+          k = M || j || Function("return this")(),
           U = (i = {
             À: "A",
             Á: "A",
@@ -721,9 +721,9 @@
             return null == i ? true : i[e]
           }),
           G = Object.prototype.toString,
-          V = k.Symbol,
-          F = V ? V.prototype : true,
-          B = F ? F.toString : true;
+          F = k.Symbol,
+          V = F ? F.prototype : true,
+          B = V ? V.toString : true;
 
         function H(e) {
           return null == e ? "" : function(e) {
@@ -731,7 +731,7 @@
             if (function(e) {
                 return "symbol" == typeof e || function(e) {
                   return !!e && "object" == typeof e
-                }(e) && G.call(e) == s
+                }(e) && G.call(e) == o
               }(e)) return B ? B.call(e) : "";
             var t = e + "";
             return "0" == t && 1 / e == -a ? "-0" : t
@@ -745,11 +745,11 @@
             return n
           }(function(e, t, n) {
             return ! function(e) {
-              return L.test(e)
+              return x.test(e)
             }(e = H(e)) ? function(e) {
-              return e.match(o) || []
+              return e.match(s) || []
             }(e) : function(e) {
-              return e.match(x) || []
+              return e.match(L) || []
             }(e)
           }((function(e) {
             return (e = H(e)) && e.replace(l, U).replace(D, "")
@@ -797,11 +797,11 @@
         var r = "function" == typeof Map && Map.prototype,
           i = Object.getOwnPropertyDescriptor && r ? Object.getOwnPropertyDescriptor(Map.prototype, "size") : null,
           a = r && i && "function" == typeof i.get ? i.get : null,
-          s = r && Map.prototype.forEach,
-          o = "function" == typeof Set && Set.prototype,
-          l = Object.getOwnPropertyDescriptor && o ? Object.getOwnPropertyDescriptor(Set.prototype, "size") : null,
-          c = o && l && "function" == typeof l.get ? l.get : null,
-          u = o && Set.prototype.forEach,
+          o = r && Map.prototype.forEach,
+          s = "function" == typeof Set && Set.prototype,
+          l = Object.getOwnPropertyDescriptor && s ? Object.getOwnPropertyDescriptor(Set.prototype, "size") : null,
+          c = s && l && "function" == typeof l.get ? l.get : null,
+          u = s && Set.prototype.forEach,
           d = "function" == typeof WeakMap && WeakMap.prototype ? WeakMap.prototype.has : null,
           f = "function" == typeof WeakSet && WeakSet.prototype ? WeakSet.prototype.has : null,
           p = "function" == typeof WeakRef && WeakRef.prototype ? WeakRef.prototype.deref : null,
@@ -824,11 +824,11 @@
           R = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
           P = "function" == typeof Symbol && Symbol.toStringTag && (Symbol.toStringTag, 1) ? Symbol.toStringTag : null,
           D = Object.prototype.propertyIsEnumerable,
-          x = ("function" == typeof Reflect ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(e) {
+          L = ("function" == typeof Reflect ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(e) {
             return e.__proto__
           } : null);
 
-        function L(e, t) {
+        function x(e, t) {
           if (e === 1 / 0 || e === false / 0 || e != e || e && e > false && e < 1e3 || v.call(/e/, t)) return t;
           var n = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
           if ("number" == typeof e) {
@@ -841,9 +841,9 @@
           }
           return y.call(t, n, "$&_")
         }
-        var j = n(2634),
-          M = j.custom,
-          k = W(M) ? M : null,
+        var M = n(2634),
+          j = M.custom,
+          k = W(j) ? j : null,
           U = {
             __proto__: null,
             double: '"',
@@ -855,12 +855,12 @@
             single: /(['\\])/g
           };
 
-        function V(e, t, n) {
+        function F(e, t, n) {
           var r = U[n.quoteStyle || t];
           return r + e + r
         }
 
-        function F(e) {
+        function V(e) {
           return y.call(String(e), /"/g, "&quot;")
         }
 
@@ -885,7 +885,7 @@
           } catch (e) {}
           returnfalse
         }
-        e.exports = function e(t, r, i, o) {
+        e.exports = function e(t, r, i, s) {
           var l = r || {};
           if (z(l, "quoteStyle") && !z(U, l.quoteStyle)) throw TypeError('option "quoteStyle" must be "single" or "double"');
           if (z(l, "maxStringLength") && ("number" == typeof l.maxStringLength ? l.maxStringLength < 0 && l.maxStringLength !== 1 / 0 : null !== l.maxStringLength)) throw TypeError('option "maxStringLength", if provided, must be a positive integer, Infinity, or `null`');
@@ -897,19 +897,19 @@
           if (true === t) return "undefined";
           if (null === t) return "null";
           if ("boolean" == typeof t) return t ? "true" : "false";
-          if ("string" == typeof t) return X(t, l);
+          if ("string" == typeof t) return Q(t, l);
           if ("number" == typeof t) {
             if (0 === t) return 1 / 0 / t > 0 ? "0" : "-0";
             var v = String(t);
-            return b ? L(t, v) : v
+            return b ? x(t, v) : v
           }
           if ("bigint" == typeof t) {
             var T = String(t) + "n";
-            return b ? L(t, T) : T
+            return b ? x(t, T) : T
           }
           var N = true === l.depth ? 5 : l.depth;
           if (true === i && (i = 0), i >= N && N > 0 && "object" == typeof t) return H(t) ? "[Array]" : "[Object]";
-          var M, G = function(e, t) {
+          var j, G = function(e, t) {
             var n;
             if ("	" === e.indent) n = "	";
             else {
@@ -921,33 +921,33 @@
               prev: I.call(Array(t + 1), n)
             }
           }(l, i);
-          if (true === o) o = [];
-          else if (Z(o, t) >= 0) return "[Circular]";
+          if (true === s) s = [];
+          else if (Z(s, t) >= 0) return "[Circular]";
 
           function K(t, n, r) {
-            if (n && (o = S.call(o)).push(n), r) {
+            if (n && (s = S.call(s)).push(n), r) {
               var a = {
                 depth: l.depth
               };
-              return z(l, "quoteStyle") && (a.quoteStyle = l.quoteStyle), e(t, a, i + 1, o)
+              return z(l, "quoteStyle") && (a.quoteStyle = l.quoteStyle), e(t, a, i + 1, s)
             }
-            return e(t, l, i + 1, o)
+            return e(t, l, i + 1, s)
           }
           if ("function" == typeof t && !Y(t)) {
-            var Q = function(e) {
+            var X = function(e) {
                 if (e.name) return e.name;
                 var t = g.call(m.call(e), /^function\s*([\w$]+)/);
                 return t ? t[1] : null
               }(t),
               er = en(t, K);
-            return "[Function" + (Q ? ": " + Q : " (anonymous)") + "]" + (er.length > 0 ? " { " + I.call(er, ", ") + " }" : "")
+            return "[Function" + (X ? ": " + X : " (anonymous)") + "]" + (er.length > 0 ? " { " + I.call(er, ", ") + " }" : "")
           }
           if (W(t)) {
             var ei = R ? y.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : w.call(t);
             return "object" != typeof t || R ? ei : J(ei)
           }
-          if ((M = t) && "object" == typeof M && ("u" > typeof HTMLElement && M instanceof HTMLElement || "string" == typeof M.nodeName && "function" == typeof M.getAttribute)) {
-            for (var ea = "<" + O.call(String(t.nodeName)), es = t.attributes || [], eo = 0; eo < es.length; eo++) ea += " " + es[eo].name + "=" + V(F(es[eo].value), "double", l);
+          if ((j = t) && "object" == typeof j && ("u" > typeof HTMLElement && j instanceof HTMLElement || "string" == typeof j.nodeName && "function" == typeof j.getAttribute)) {
+            for (var ea = "<" + O.call(String(t.nodeName)), eo = t.attributes || [], es = 0; es < eo.length; es++) ea += " " + eo[es].name + "=" + F(V(eo[es].value), "double", l);
             return ea += ">", t.childNodes && t.childNodes.length && (ea += "..."), ea + "</" + O.call(String(t.nodeName)) + ">"
           }
           if (H(t)) {
@@ -966,7 +966,7 @@
             return "cause" in Error.prototype || !("cause" in t) || D.call(t, "cause") ? 0 === ec.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + I.call(ec, ", ") + " }" : "{ [" + String(t) + "] " + I.call(A.call("[cause]: " + K(t.cause), ec), ", ") + " }"
           }
           if ("object" == typeof t && h) {
-            if (k && "function" == typeof t[k] && j) return j(t, {
+            if (k && "function" == typeof t[k] && M) return M(t, {
               depth: N - i
             });
             if ("symbol" !== h && "function" == typeof t.inspect) return t.inspect()
@@ -985,7 +985,7 @@
               returnfalse
             }(t)) {
             var eu = [];
-            return s && s.call(t, function(e, n) {
+            return o && o.call(t, function(e, n) {
               eu.push(K(n, t, true) + " => " + K(e, t))
             }), ee("Map", a.call(t), eu, G)
           }
@@ -1062,7 +1062,7 @@
               return "[object Date]" === q(e) && B(e)
             }(t) && !Y(t)) {
             var ef = en(t, K),
-              ep = x ? x(t) === Object.prototype : t instanceof Object || t.constructor === Object,
+              ep = L ? L(t) === Object.prototype : t instanceof Object || t.constructor === Object,
               e_ = t instanceof Object ? "" : "null prototype",
               eh = !ep && P && Object(t) === t && P in t ? E.call(q(t), 8, false) : e_ ? "Object" : "",
               em = (ep || "function" != typeof t.constructor ? "" : t.constructor.name ? t.constructor.name + " " : "") + (eh || e_ ? "[" + I.call(A.call([], eh || [], e_ || []), ": ") + "] " : "");
@@ -1089,17 +1089,17 @@
           return false
         }
 
-        function X(e, t) {
+        function Q(e, t) {
           if (e.length > t.maxStringLength) {
             var n = e.length - t.maxStringLength,
               r = "... " + n + " more character" + (n > 1 ? "s" : "");
-            return X(E.call(e, 0, t.maxStringLength), t) + r
+            return Q(E.call(e, 0, t.maxStringLength), t) + r
           }
           var i = G[t.quoteStyle || "single"];
-          return i.lastIndex = 0, V(y.call(y.call(e, i, "\\$1"), /[\x00-\x1f]/g, Q), "single", t)
+          return i.lastIndex = 0, F(y.call(y.call(e, i, "\\$1"), /[\x00-\x1f]/g, X), "single", t)
         }
 
-        function Q(e) {
+        function X(e) {
           var t = e.charCodeAt(0),
             n = {
               8: "b",
@@ -1136,14 +1136,14 @@
             r.length = e.length;
             for (var i = 0; i < e.length; i++) r[i] = z(e, i) ? t(e[i], e) : ""
           }
-          var a, s = "function" == typeof N ? N(e) : [];
+          var a, o = "function" == typeof N ? N(e) : [];
           if (R) {
             a = {};
-            for (var o = 0; o < s.length; o++) a["$" + s[o]] = s[o]
+            for (var s = 0; s < o.length; s++) a["$" + o[s]] = o[s]
           }
           for (var l in e) z(e, l) && (n && String(Number(l)) === l && l < e.length || R && a["$" + l] instanceof Symbol || (v.call(/[^\w$]/, l) ? r.push(t(l, e) + ": " + t(e[l], e)) : r.push(l + ": " + t(e[l], e))));
           if ("function" == typeof N)
-            for (var c = 0; c < s.length; c++) D.call(e, s[c]) && r.push("[" + t(s[c]) + "]: " + t(e[s[c]], e));
+            for (var c = 0; c < o.length; c++) D.call(e, o[c]) && r.push("[" + t(o[c]) + "]: " + t(e[o[c]], e));
           return r
         }
       },
@@ -1171,8 +1171,8 @@
         var r = n(6738),
           i = n(4662),
           a = n(9647),
-          s = Object.prototype.hasOwnProperty,
-          o = {
+          o = Object.prototype.hasOwnProperty,
+          s = {
             brackets: function(e) {
               return e + "[]"
             },
@@ -1215,7 +1215,7 @@
             strictNullHandling: false
           },
           _ = {},
-          h = function e(t, n, a, s, o, c, d, f, h, m, g, E, y, b, O, v, A, I) {
+          h = function e(t, n, a, o, s, c, d, f, h, m, g, E, y, b, O, v, A, I) {
             for (var S, T = t, C = I, N = 0, w = false; true !== (C = C.get(_)) && !w;) {
               var R = C.get(t);
               if (N += 1, true !== R) {
@@ -1238,21 +1238,21 @@
             }];
             else if (l(m)) P = m;
             else {
-              var x = Object.keys(T);
-              P = g ? x.sort(g) : x
+              var L = Object.keys(T);
+              P = g ? L.sort(g) : L
             }
-            var L = f ? String(n).replace(/\./g, "%2E") : String(n),
-              j = s && l(T) && 1 === T.length ? L + "[]" : L;
-            if (o && l(T) && 0 === T.length) return j + "[]";
-            for (var M = 0; M < P.length; ++M) {
-              var k = P[M],
+            var x = f ? String(n).replace(/\./g, "%2E") : String(n),
+              M = o && l(T) && 1 === T.length ? x + "[]" : x;
+            if (s && l(T) && 0 === T.length) return M + "[]";
+            for (var j = 0; j < P.length; ++j) {
+              var k = P[j],
                 U = "object" == typeof k && k && true !== k.value ? k.value : T[k];
               if (!d || null !== U) {
                 var G = E && f ? String(k).replace(/\./g, "%2E") : String(k),
-                  V = l(T) ? "function" == typeof a ? a(j, G) : j : j + (E ? "." + G : "[" + G + "]");
+                  F = l(T) ? "function" == typeof a ? a(M, G) : M : M + (E ? "." + G : "[" + G + "]");
                 I.set(t, N);
-                var F = r();
-                F.set(_, I), u(D, e(U, V, a, s, o, c, d, f, "comma" === a && v && l(T) ? null : h, m, g, E, y, b, O, v, A, F))
+                var V = r();
+                V.set(_, I), u(D, e(U, F, a, o, s, c, d, f, "comma" === a && v && l(T) ? null : h, m, g, E, y, b, O, v, A, V))
               }
             }
             return D
@@ -1268,12 +1268,12 @@
               if (true !== e.charset && "utf-8" !== e.charset && "iso-8859-1" !== e.charset) throw TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");
               var n = a.default;
               if (true !== e.format) {
-                if (!s.call(a.formatters, e.format)) throw TypeError("Unknown format option provided.");
+                if (!o.call(a.formatters, e.format)) throw TypeError("Unknown format option provided.");
                 n = e.format
               }
               var r, i = a.formatters[n],
                 c = p.filter;
-              if (("function" == typeof e.filter || l(e.filter)) && (c = e.filter), r = e.arrayFormat in o ? e.arrayFormat : "indices" in e ? e.indices ? "indices" : "repeat" : p.arrayFormat, "commaRoundTrip" in e && "boolean" != typeof e.commaRoundTrip) throw TypeError("`commaRoundTrip` must be a boolean, or absent");
+              if (("function" == typeof e.filter || l(e.filter)) && (c = e.filter), r = e.arrayFormat in s ? e.arrayFormat : "indices" in e ? e.indices ? "indices" : "repeat" : p.arrayFormat, "commaRoundTrip" in e && "boolean" != typeof e.commaRoundTrip) throw TypeError("`commaRoundTrip` must be a boolean, or absent");
               var u = true === e.allowDots ? true === e.encodeDotInKeys || p.allowDots : !!e.allowDots;
               return {
                 addQueryPrefix: "boolean" == typeof e.addQueryPrefix ? e.addQueryPrefix : p.addQueryPrefix,
@@ -1300,7 +1300,7 @@
           "function" == typeof c.filter ? i = (0, c.filter)("", i) : l(c.filter) && (n = c.filter);
           var d = [];
           if ("object" != typeof i || null === i) return "";
-          var f = o[c.arrayFormat],
+          var f = s[c.arrayFormat],
             _ = "comma" === f && c.commaRoundTrip;
           n || (n = Object.keys(i)), c.sort && n.sort(c.sort);
           for (var m = r(), g = 0; g < n.length; ++g) {
@@ -1318,11 +1318,11 @@
         var r = n(9647),
           i = Object.prototype.hasOwnProperty,
           a = Array.isArray,
-          s = function() {
+          o = function() {
             for (var e = [], t = 0; t < 256; ++t) e.push("%" + ((t < 16 ? "0" : "") + t.toString(16)).toUpperCase());
             return e
           }(),
-          o = function(e, t) {
+          s = function(e, t) {
             for (var n = t && t.plainObjects ? {
                 __proto__: null
               } : {}, r = 0; r < e.length; ++r) true !== e[r] && (n[r] = e[r]);
@@ -1330,7 +1330,7 @@
           },
           l = 1024;
         e.exports = {
-          arrayToObject: o,
+          arrayToObject: s,
           assign: function(e, t) {
             return Object.keys(t).reduce(function(e, n) {
               return e[n] = t[n], e
@@ -1346,11 +1346,11 @@
                 },
                 prop: "o"
               }], n = [], r = 0; r < t.length; ++r)
-              for (var i = t[r], s = i.obj[i.prop], o = Object.keys(s), l = 0; l < o.length; ++l) {
-                var c = o[l],
-                  u = s[c];
+              for (var i = t[r], o = i.obj[i.prop], s = Object.keys(o), l = 0; l < s.length; ++l) {
+                var c = s[l],
+                  u = o[c];
                 "object" == typeof u && null !== u && false === n.indexOf(u) && (t.push({
-                  obj: s,
+                  obj: o,
                   prop: c
                 }), n.push(u))
               }
@@ -1376,14 +1376,14 @@
           },
           encode: function(e, t, n, i, a) {
             if (0 === e.length) return e;
-            var o = e;
-            if ("symbol" == typeof e ? o = Symbol.prototype.toString.call(e) : "string" != typeof e && (o = String(e)), "iso-8859-1" === n) return escape(o).replace(/%u[0-9a-f]{4}/gi, function(e) {
+            var s = e;
+            if ("symbol" == typeof e ? s = Symbol.prototype.toString.call(e) : "string" != typeof e && (s = String(e)), "iso-8859-1" === n) return escape(s).replace(/%u[0-9a-f]{4}/gi, function(e) {
               return "%26%23" + parseInt(e.slice(2), 16) + "%3B"
             });
-            for (var c = "", u = 0; u < o.length; u += l) {
-              for (var d = o.length >= l ? o.slice(u, u + l) : o, f = [], p = 0; p < d.length; ++p) {
+            for (var c = "", u = 0; u < s.length; u += l) {
+              for (var d = s.length >= l ? s.slice(u, u + l) : s, f = [], p = 0; p < d.length; ++p) {
                 var _ = d.charCodeAt(p);
-                45 === _ || 46 === _ || 95 === _ || 126 === _ || _ >= 48 && _ <= 57 || _ >= 65 && _ <= 90 || _ >= 97 && _ <= 122 || a === r.RFC1738 && (40 === _ || 41 === _) ? f[f.length] = d.charAt(p) : _ < 128 ? f[f.length] = s[_] : _ < 2048 ? f[f.length] = s[192 | _ >> 6] + s[128 | 63 & _] : _ < 55296 || _ >= 57344 ? f[f.length] = s[224 | _ >> 12] + s[128 | _ >> 6 & 63] + s[128 | 63 & _] : (p += 1, _ = 65536 + ((1023 & _) << 10 | 1023 & d.charCodeAt(p)), f[f.length] = s[240 | _ >> 18] + s[128 | _ >> 12 & 63] + s[128 | _ >> 6 & 63] + s[128 | 63 & _])
+                45 === _ || 46 === _ || 95 === _ || 126 === _ || _ >= 48 && _ <= 57 || _ >= 65 && _ <= 90 || _ >= 97 && _ <= 122 || a === r.RFC1738 && (40 === _ || 41 === _) ? f[f.length] = d.charAt(p) : _ < 128 ? f[f.length] = o[_] : _ < 2048 ? f[f.length] = o[192 | _ >> 6] + o[128 | 63 & _] : _ < 55296 || _ >= 57344 ? f[f.length] = o[224 | _ >> 12] + o[128 | _ >> 6 & 63] + o[128 | 63 & _] : (p += 1, _ = 65536 + ((1023 & _) << 10 | 1023 & d.charCodeAt(p)), f[f.length] = o[240 | _ >> 18] + o[128 | _ >> 12 & 63] + o[128 | _ >> 6 & 63] + o[128 | 63 & _])
               }
               c += f.join("")
             }
@@ -1413,16 +1413,16 @@
               return t
             }
             if (!t || "object" != typeof t) return [t].concat(n);
-            var s = t;
-            return a(t) && !a(n) && (s = o(t, r)), a(t) && a(n) ? (n.forEach(function(n, a) {
+            var o = t;
+            return a(t) && !a(n) && (o = s(t, r)), a(t) && a(n) ? (n.forEach(function(n, a) {
               if (i.call(t, a)) {
-                var s = t[a];
-                s && "object" == typeof s && n && "object" == typeof n ? t[a] = e(s, n, r) : t.push(n)
+                var o = t[a];
+                o && "object" == typeof o && n && "object" == typeof n ? t[a] = e(o, n, r) : t.push(n)
               } else t[a] = n
             }), t) : Object.keys(n).reduce(function(t, a) {
-              var s = n[a];
-              return i.call(t, a) ? t[a] = e(t[a], s, r) : t[a] = s, t
-            }, s)
+              var o = n[a];
+              return i.call(t, a) ? t[a] = e(t[a], o, r) : t[a] = o, t
+            }, o)
           }
         }
       },
@@ -1431,8 +1431,8 @@
         var r = n(6785),
           i = n(5937),
           a = n(8709),
-          s = n(885),
-          o = n(8977) || s || a;
+          o = n(885),
+          s = n(8977) || o || a;
         e.exports = function() {
           var e, t = {
             assert: function(e) {
@@ -1448,7 +1448,7 @@
               return !!e && e.has(t)
             },
             set: function(t, n) {
-              e || (e = o()), e.set(t, n)
+              e || (e = s()), e.set(t, n)
             }
           };
           return t
@@ -1509,17 +1509,17 @@
         var r = n(4885),
           i = n(2774),
           a = n(5937),
-          s = n(6785),
-          o = r("%Map%", true),
+          o = n(6785),
+          s = r("%Map%", true),
           l = i("Map.prototype.get", true),
           c = i("Map.prototype.set", true),
           u = i("Map.prototype.has", true),
           d = i("Map.prototype.delete", true),
           f = i("Map.prototype.size", true);
-        e.exports = !!o && function() {
+        e.exports = !!s && function() {
           var e, t = {
             assert: function(e) {
-              if (!t.has(e)) throw new s("Side channel does not contain " + a(e))
+              if (!t.has(e)) throw new o("Side channel does not contain " + a(e))
             },
             delete: function(t) {
               if (e) {
@@ -1535,7 +1535,7 @@
               return !!e && u(e, t)
             },
             set: function(t, n) {
-              e || (e = new o), c(e, t, n)
+              e || (e = new s), c(e, t, n)
             }
           };
           return t
@@ -1557,8 +1557,8 @@
         "use strict";
         var r, i = n(5846),
           a = n(5293),
-          s = n(9055),
-          o = n(8888),
+          o = n(9055),
+          s = n(8888),
           l = n(7900),
           c = n(5389),
           u = n(6785),
@@ -1600,7 +1600,7 @@
           R = n(78),
           P = {},
           D = "u" > typeof Uint8Array && T ? T(Uint8Array) : r,
-          x = {
+          L = {
             __proto__: null,
             "%AggregateError%": "u" < typeof AggregateError ? r : AggregateError,
             "%Array%": Array,
@@ -1624,7 +1624,7 @@
             "%encodeURIComponent%": encodeURIComponent,
             "%Error%": a,
             "%eval%": eval,
-            "%EvalError%": s,
+            "%EvalError%": o,
             "%Float32Array%": "u" < typeof Float32Array ? r : Float32Array,
             "%Float64Array%": "u" < typeof Float64Array ? r : Float64Array,
             "%FinalizationRegistry%": "u" < typeof FinalizationRegistry ? r : FinalizationRegistry,
@@ -1647,7 +1647,7 @@
             "%parseInt%": parseInt,
             "%Promise%": "u" < typeof Promise ? r : Promise,
             "%Proxy%": "u" < typeof Proxy ? r : Proxy,
-            "%RangeError%": o,
+            "%RangeError%": s,
             "%ReferenceError%": l,
             "%Reflect%": "u" < typeof Reflect ? r : Reflect,
             "%RegExp%": RegExp,
@@ -1685,10 +1685,10 @@
         if (T) try {
           null.error
         } catch (e) {
-          var L = T(T(e));
-          x["%Error.prototype%"] = L
+          var x = T(T(e));
+          L["%Error.prototype%"] = x
         }
-        var j = function e(t) {
+        var M = function e(t) {
             var n;
             if ("%AsyncFunction%" === t) n = b("async function () {}");
             else if ("%GeneratorFunction%" === t) n = b("function* () {}");
@@ -1700,9 +1700,9 @@
               var i = e("%AsyncGenerator%");
               i && T && (n = T(i.prototype))
             }
-            return x[t] = n, n
+            return L[t] = n, n
           },
-          M = {
+          j = {
             __proto__: null,
             "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
             "%ArrayPrototype%": ["Array", "prototype"],
@@ -1759,17 +1759,17 @@
           k = n(5049),
           U = n(5215),
           G = k.call(R, Array.prototype.concat),
-          V = k.call(w, Array.prototype.splice),
-          F = k.call(R, String.prototype.replace),
+          F = k.call(w, Array.prototype.splice),
+          V = k.call(R, String.prototype.replace),
           B = k.call(R, String.prototype.slice),
           H = k.call(R, RegExp.prototype.exec),
           Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           W = /\\(\\)?/g,
           K = function(e, t) {
             var n, r = e;
-            if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(x, r)) {
-              var i = x[r];
-              if (i === P && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
+            if (U(j, r) && (r = "%" + (n = j[r])[0] + "%"), U(L, r)) {
+              var i = L[r];
+              if (i === P && (i = M(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
               return {
                 alias: n,
                 name: r,
@@ -1788,36 +1788,36 @@
               if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
-              return F(e, Y, function(e, t, n, i) {
-                r[r.length] = n ? F(i, W, "$1") : t || e
+              return V(e, Y, function(e, t, n, i) {
+                r[r.length] = n ? V(i, W, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
             i = K("%" + r + "%", t),
             a = i.name,
-            s = i.value,
-            o = false,
+            o = i.value,
+            s = false,
             l = i.alias;
-          l && (r = l[0], V(n, G([0, 1], l)));
+          l && (r = l[0], F(n, G([0, 1], l)));
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
               _ = B(p, 0, 1),
               h = B(p, false);
             if (('"' === _ || "'" === _ || "`" === _ || '"' === h || "'" === h || "`" === h) && _ !== h) throw new c("property names with quotes must have matching quotes");
-            if ("constructor" !== p && f || (o = true), U(x, a = "%" + (r += "." + p) + "%")) s = x[a];
-            else if (null != s) {
-              if (!(p in s)) {
+            if ("constructor" !== p && f || (s = true), U(L, a = "%" + (r += "." + p) + "%")) o = L[a];
+            else if (null != o) {
+              if (!(p in o)) {
                 if (!t) throw new u("base intrinsic for " + e + " exists, but the property is not available.");
                 return
               }
               if (O && d + 1 >= n.length) {
-                var m = O(s, p);
-                s = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : s[p]
-              } else f = U(s, p), s = s[p];
-              f && !o && (x[a] = s)
+                var m = O(o, p);
+                o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[p]
+              } else f = U(o, p), o = o[p];
+              f && !s && (L[a] = o)
             }
           }
-          return s
+          return o
         }
       },
       7189: e => {
@@ -1867,8 +1867,8 @@
         var r = n(8297),
           i = n(2774),
           a = n(5937),
-          s = n(885),
-          o = n(6785),
+          o = n(885),
+          s = n(6785),
           l = r("%WeakMap%", true),
           c = i("WeakMap.prototype.get", true),
           u = i("WeakMap.prototype.set", true),
@@ -1877,12 +1877,12 @@
         e.exports = l ? function() {
           var e, t, n = {
             assert: function(e) {
-              if (!n.has(e)) throw new o("Side channel does not contain " + a(e))
+              if (!n.has(e)) throw new s("Side channel does not contain " + a(e))
             },
             delete: function(n) {
               if (l && n && ("object" == typeof n || "function" == typeof n)) {
                 if (e) return f(e, n)
-              } else if (s && t) return t.delete(n);
+              } else if (o && t) return t.delete(n);
               returnfalse
             },
             get: function(n) {
@@ -1892,11 +1892,11 @@
               return l && n && ("object" == typeof n || "function" == typeof n) && e ? d(e, n) : !!t && t.has(n)
             },
             set: function(n, r) {
-              l && n && ("object" == typeof n || "function" == typeof n) ? (e || (e = new l), u(e, n, r)) : s && (t || (t = s()), t.set(n, r))
+              l && n && ("object" == typeof n || "function" == typeof n) ? (e || (e = new l), u(e, n, r)) : o && (t || (t = o()), t.set(n, r))
             }
           };
           return n
-        } : s
+        } : o
       },
       315: e => {
         "use strict";
@@ -1914,8 +1914,8 @@
         "use strict";
         var r, i = n(5846),
           a = n(5293),
-          s = n(9055),
-          o = n(8888),
+          o = n(9055),
+          s = n(8888),
           l = n(7900),
           c = n(5389),
           u = n(6785),
@@ -1957,7 +1957,7 @@
           R = n(78),
           P = {},
           D = "u" > typeof Uint8Array && T ? T(Uint8Array) : r,
-          x = {
+          L = {
             __proto__: null,
             "%AggregateError%": "u" < typeof AggregateError ? r : AggregateError,
             "%Array%": Array,
@@ -1981,7 +1981,7 @@
             "%encodeURIComponent%": encodeURIComponent,
             "%Error%": a,
             "%eval%": eval,
-            "%EvalError%": s,
+            "%EvalError%": o,
             "%Float32Array%": "u" < typeof Float32Array ? r : Float32Array,
             "%Float64Array%": "u" < typeof Float64Array ? r : Float64Array,
             "%FinalizationRegistry%": "u" < typeof FinalizationRegistry ? r : FinalizationRegistry,
@@ -2004,7 +2004,7 @@
             "%parseInt%": parseInt,
             "%Promise%": "u" < typeof Promise ? r : Promise,
             "%Proxy%": "u" < typeof Proxy ? r : Proxy,
-            "%RangeError%": o,
+            "%RangeError%": s,
             "%ReferenceError%": l,
             "%Reflect%": "u" < typeof Reflect ? r : Reflect,
             "%RegExp%": RegExp,
@@ -2042,10 +2042,10 @@
         if (T) try {
           null.error
         } catch (e) {
-          var L = T(T(e));
-          x["%Error.prototype%"] = L
+          var x = T(T(e));
+          L["%Error.prototype%"] = x
         }
-        var j = function e(t) {
+        var M = function e(t) {
             var n;
             if ("%AsyncFunction%" === t) n = b("async function () {}");
             else if ("%GeneratorFunction%" === t) n = b("function* () {}");
@@ -2057,9 +2057,9 @@
               var i = e("%AsyncGenerator%");
               i && T && (n = T(i.prototype))
             }
-            return x[t] = n, n
+            return L[t] = n, n
           },
-          M = {
+          j = {
             __proto__: null,
             "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
             "%ArrayPrototype%": ["Array", "prototype"],
@@ -2116,17 +2116,17 @@
           k = n(5049),
           U = n(5215),
           G = k.call(R, Array.prototype.concat),
-          V = k.call(w, Array.prototype.splice),
-          F = k.call(R, String.prototype.replace),
+          F = k.call(w, Array.prototype.splice),
+          V = k.call(R, String.prototype.replace),
           B = k.call(R, String.prototype.slice),
           H = k.call(R, RegExp.prototype.exec),
           Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           W = /\\(\\)?/g,
           K = function(e, t) {
             var n, r = e;
-            if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(x, r)) {
-              var i = x[r];
-              if (i === P && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
+            if (U(j, r) && (r = "%" + (n = j[r])[0] + "%"), U(L, r)) {
+              var i = L[r];
+              if (i === P && (i = M(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
               return {
                 alias: n,
                 name: r,
@@ -2145,36 +2145,36 @@
               if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
-              return F(e, Y, function(e, t, n, i) {
-                r[r.length] = n ? F(i, W, "$1") : t || e
+              return V(e, Y, function(e, t, n, i) {
+                r[r.length] = n ? V(i, W, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
             i = K("%" + r + "%", t),
             a = i.name,
-            s = i.value,
-            o = false,
+            o = i.value,
+            s = false,
             l = i.alias;
-          l && (r = l[0], V(n, G([0, 1], l)));
+          l && (r = l[0], F(n, G([0, 1], l)));
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
               _ = B(p, 0, 1),
               h = B(p, false);
             if (('"' === _ || "'" === _ || "`" === _ || '"' === h || "'" === h || "`" === h) && _ !== h) throw new c("property names with quotes must have matching quotes");
-            if ("constructor" !== p && f || (o = true), U(x, a = "%" + (r += "." + p) + "%")) s = x[a];
-            else if (null != s) {
-              if (!(p in s)) {
+            if ("constructor" !== p && f || (s = true), U(L, a = "%" + (r += "." + p) + "%")) o = L[a];
+            else if (null != o) {
+              if (!(p in o)) {
                 if (!t) throw new u("base intrinsic for " + e + " exists, but the property is not available.");
                 return
               }
               if (O && d + 1 >= n.length) {
-                var m = O(s, p);
-                s = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : s[p]
-              } else f = U(s, p), s = s[p];
-              f && !o && (x[a] = s)
+                var m = O(o, p);
+                o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[p]
+              } else f = U(o, p), o = o[p];
+              f && !s && (L[a] = o)
             }
           }
-          return s
+          return o
         }
       },
       8153: e => {
@@ -2256,7 +2256,7 @@
       default: () => I
     });
     var e, t, i, a = n(5882),
-      s = n.n(a);
+      o = n.n(a);
     ! function(e) {
       e.Cancel = "exit", e.Complete = "complete", e.Error = "error", e.Fail = "fail", e.Load = "load", e.Ready = "ready", e.Start = "start", e.Success = "success", e.DocumentCameraSelect = "document-camera-select", e.DocumentCameraCapture = "document-camera-capture", e.DocumentUpload = "document-upload", e.OneTimeLinkSent = "one-time-link-sent", e.OneTimeLinkStart = "one-time-link-start", e.OneTimeLinkExit = "one-time-link-exit", e.SelfieCameraSelect = "selfie-camera-select", e.SelfieCameraCapture = "selfie-camera-capture", e.SelfieRecordUpload = "selfie-record-upload", e.LoadCameraFailed = "load-camera-failed", e.PageChange = "page-change", e.InquiryLoad = "inquiry-load", e.CountrySelect = "country-select", e.VerificationChange = "verification-change"
     }(e || (e = {})),
@@ -2266,7 +2266,7 @@
     function(e) {
       e.Development = "http://localhost:3000", e.Staging = "https://inquiry.withpersona-staging.com", e.Canary = "https://canary.withpersona.com", e.Production = "https://inquiry.withpersona.com"
     }(i || (i = {}));
-    let o = function() {
+    let s = function() {
       function e() {}
       return e.log = function(e, t) {
         true === t && (t = "info")
@@ -2297,7 +2297,7 @@
                 }
               }(t)) return t.replace(/\/$/, "")
           }
-          return o.log('Invalid host: "'.concat(e, "\". Expected 'development', 'staging', 'canary', 'production', or a valid hostname/URL. Falling back to 'production'."), "error"), i.Production
+          return s.log('Invalid host: "'.concat(e, "\". Expected 'development', 'staging', 'canary', 'production', or a valid hostname/URL. Falling back to 'production'."), "error"), i.Production
       }
     }
     var c = n(2709),
@@ -2337,10 +2337,10 @@
         var n = "function" == typeof Symbol && e[Symbol.iterator];
         if (!n) return e;
         var r, i, a = n.call(e),
-          s = [];
+          o = [];
         try {
           for (;
-            (true === t || t-- > 0) && !(r = a.next()).done;) s.push(r.value)
+            (true === t || t-- > 0) && !(r = a.next()).done;) o.push(r.value)
         } catch (e) {
           i = {
             error: e
@@ -2352,7 +2352,7 @@
             if (i) throw i.error
           }
         }
-        return s
+        return o
       },
       h = function() {
         function e(e) {
@@ -2376,13 +2376,13 @@
 
     function m(e, t, n) {
       true === n && (n = []);
-      var r, i, a, s, o = document.createElementNS("http://www.w3.org/2000/svg", e);
+      var r, i, a, o, s = document.createElementNS("http://www.w3.org/2000/svg", e);
       try {
         for (var l = p(Object.entries(t)), c = l.next(); !c.done; c = l.next()) {
           var u = _(c.value, 2),
             d = u[0],
             f = u[1];
-          "className" === d && (d = "class"), o.setAttribute(d, f)
+          "className" === d && (d = "class"), s.setAttribute(d, f)
         }
       } catch (e) {
         r = {
@@ -2398,7 +2398,7 @@
       try {
         for (var h = p(n), m = h.next(); !m.done; m = h.next()) {
           var g = m.value;
-          false !== g && o.appendChild(g)
+          false !== g && s.appendChild(g)
         }
       } catch (e) {
         a = {
@@ -2406,23 +2406,23 @@
         }
       } finally {
         try {
-          m && !m.done && (s = h.return) && s.call(h)
+          m && !m.done && (o = h.return) && o.call(h)
         } finally {
           if (a) throw a.error
         }
       }
-      return o
+      return s
     }
 
     function g(e, t, n) {
       true === n && (n = []);
-      var r, i, a, s, o = document.createElement(e);
+      var r, i, a, o, s = document.createElement(e);
       try {
         for (var l = p(Object.entries(t)), c = l.next(); !c.done; c = l.next()) {
           var u = _(c.value, 2),
             d = u[0],
             f = u[1];
-          "className" === d && (d = "class"), o.setAttribute(d, f)
+          "className" === d && (d = "class"), s.setAttribute(d, f)
         }
       } catch (e) {
         r = {
@@ -2438,7 +2438,7 @@
       try {
         for (var h = p(n), m = h.next(); !m.done; m = h.next()) {
           var g = m.value;
-          false !== g && ("string" == typeof g ? o.appendChild(document.createTextNode(g)) : o.appendChild(g))
+          false !== g && ("string" == typeof g ? s.appendChild(document.createTextNode(g)) : s.appendChild(g))
         }
       } catch (e) {
         a = {
@@ -2446,12 +2446,12 @@
         }
       } finally {
         try {
-          m && !m.done && (s = h.return) && s.call(h)
+          m && !m.done && (o = h.return) && o.call(h)
         } finally {
           if (a) throw a.error
         }
       }
-      return o
+      return s
     }
 
     function E(e) {
@@ -2463,7 +2463,7 @@
     function O(e, t, n, r) {
       var i = r.accountId,
         a = r.accountTypeId,
-        o = r.environment,
+        s = r.environment,
         c = r.environmentId,
         u = r.fields,
         d = r.frameAncestors,
@@ -2484,24 +2484,24 @@
         R = r.templateVersionId,
         P = r.themeSetId,
         D = r.widgetPadding,
-        x = !(!w && !R),
-        L = null == w ? true : w.startsWith("itmpl_");
-      if (!x && !g) throw Error("Either templateId/templateVersionId or inquiryId must be specified to start a flow");
-      if (x && g) throw Error("Only one of templateId/templateVersionId or inquiryId should be specified to start a flow");
+        L = !(!w && !R),
+        x = null == w ? true : w.startsWith("itmpl_");
+      if (!L && !g) throw Error("Either templateId/templateVersionId or inquiryId must be specified to start a flow");
+      if (L && g) throw Error("Only one of templateId/templateVersionId or inquiryId should be specified to start a flow");
       if (i) {
         if (A) throw Error("Cannot pass both accountId and referenceId");
         if (a) throw Error("Cannot pass both accountId and accountTypeId")
       }
-      var j = l(h),
-        M = s()({
+      var M = l(h),
+        j = o()({
           "client-version": "5.3.1",
           "container-id": t,
           "flow-type": n,
           "routing-country": I,
-          "template-id": (L ? null : w) || null,
-          "inquiry-template-id": (L ? w : null) || null,
+          "template-id": (x ? null : w) || null,
+          "inquiry-template-id": (x ? w : null) || null,
           "inquiry-template-version-id": R || null,
-          environment: o,
+          environment: s,
           "environment-id": c,
           "iframe-origin": window.location.origin,
           "frame-ancestors": null != d ? d : null,
@@ -2520,7 +2520,7 @@
           addQueryPrefix: true,
           skipNulls: true
         });
-      return e.style.maxHeight = E(p), e.style.maxWidth = E(_), e.setAttribute("data-testid", "persona-widget__iframe"), "embedded" === n && e.setAttribute("aria-modal", "true"), e.title = null != m ? m : "Verify your identity", e.className = "persona-widget__iframe", e.allow = "camera;microphone;clipboard-write", e.setAttribute("sandbox", y.concat(T).join(" ")), e.frameBorder = "0", e.src = j + "/widget" + M, e.onload = function() {}, e
+      return e.style.maxHeight = E(p), e.style.maxWidth = E(_), e.setAttribute("data-testid", "persona-widget__iframe"), "embedded" === n && e.setAttribute("aria-modal", "true"), e.title = null != m ? m : "Verify your identity", e.className = "persona-widget__iframe", e.allow = "camera;microphone;clipboard-write", e.setAttribute("sandbox", y.concat(T).join(" ")), e.frameBorder = "0", e.src = M + "/widget" + j, e.onload = function() {}, e
     }
     var v = function(e) {
       if ("localhost" === e || /^\d+\.\d+\.\d+\.\d+$/.test(e)) return e;
@@ -2532,8 +2532,8 @@
       var r = n.onLoad,
         i = n.onReady,
         a = n.onComplete,
-        s = n.onEvent,
-        o = n.onCancel,
+        o = n.onEvent,
+        s = n.onCancel,
         c = n.onError,
         u = n.templateId,
         d = n.templateVersionId,
@@ -2545,7 +2545,7 @@
           } catch (e) {
             return
           }
-          if (!(u && u !== n.data.templateId || d && d !== n.data.templateVersionId || n.data.containerId && t !== n.data.containerId)) switch (null == s || s(n.data.name, n.data.metadata), n.data.name) {
+          if (!(u && u !== n.data.templateId || d && d !== n.data.templateVersionId || n.data.containerId && t !== n.data.containerId)) switch (null == o || o(n.data.name, n.data.metadata), n.data.name) {
             case e.Load:
               null == r || r();
               break;
@@ -2563,7 +2563,7 @@
               });
               break;
             case e.Cancel:
-              null == o || o({
+              null == s || s({
                 inquiryId: n.data.metadata.inquiryId,
                 sessionToken: n.data.metadata.sessionToken
               });
@@ -2580,7 +2580,7 @@
     let I = {
       Client: function() {
         function e(e) {
-          var t, n, r, i, a, s, o, l, c, u, d, f = this;
+          var t, n, r, i, a, o, s, l, c, u, d, f = this;
           this._isLoading = true, this._isOpen = false, this.personaCSS = new h("persona-widget-styles"), this.globalCSS = new h("persona-global-styles"), this.preferredDimensions = null, this.onLoad = function() {
             var e, t;
             f._isLoading = false, f.render(), null == (t = (e = f.options).onLoad) || t.call(e)
@@ -2633,8 +2633,8 @@
             onLoad: null != (r = this.onLoad) ? r : null,
             onReady: null != (i = this.onReady) ? i : null,
             onComplete: null != (a = this.onComplete) ? a : null,
-            onCancel: null != (s = this.onCancel) ? s : null,
-            onEvent: null != (o = this.options.onEvent) ? o : null,
+            onCancel: null != (o = this.onCancel) ? o : null,
+            onEvent: null != (s = this.options.onEvent) ? s : null,
             onError: null != (l = this.options.onError) ? l : null,
             templateId: null != (c = this.options.templateId) ? c : null,
             templateVersionId: null != (u = this.options.templateVersionId) ? u : null,
@@ -2657,7 +2657,7 @@
           })
         }, e.prototype.render = function() {
           var e;
-          null != this.containerElement ? (this.loadingElement.style.display = this.isLoading ? "block" : "none", this.containerElement.style.display = this.isOpen ? "block" : "none", this.isOpen && !this.globalCSS.isMounted() ? this.globalCSS.mount((e = this.containerId, "\n  /* Don't allow scrolling when widget is open */\n  html body {\n    overflow: hidden !important;\n  }\n\n  /* When the widget takes the full screen, hide everything else to prevent iOS scroll issues. */\n  @media ".concat("(max-width: 600px), (max-height: 420px)", " {\n    html body > *:not(#").concat(e, ") {\n      display: none !important;\n    }\n  }\n"))) : !this.isOpen && this.globalCSS.isMounted() && this.globalCSS.unmount()) : o.log("Cannot render client that has been destroyed", "error")
+          null != this.containerElement ? (this.loadingElement.style.display = this.isLoading ? "block" : "none", this.containerElement.style.display = this.isOpen ? "block" : "none", this.isOpen && !this.globalCSS.isMounted() ? this.globalCSS.mount((e = this.containerId, "\n  /* Don't allow scrolling when widget is open */\n  html body {\n    overflow: hidden !important;\n  }\n\n  /* When the widget takes the full screen, hide everything else to prevent iOS scroll issues. */\n  @media ".concat("(max-width: 600px), (max-height: 420px)", " {\n    html body > *:not(#").concat(e, ") {\n      display: none !important;\n    }\n  }\n"))) : !this.isOpen && this.globalCSS.isMounted() && this.globalCSS.unmount()) : s.log("Cannot render client that has been destroyed", "error")
         }, e.prototype.open = function() {
           var e;
           null == (e = this.iframeElement.contentWindow) || e.postMessage({

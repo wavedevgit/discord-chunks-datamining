@@ -3,15 +3,15 @@
 var Chunk574366 = require("./574366.js"),
   i = Object.prototype,
   a = i.hasOwnProperty,
-  s = i.toString,
-  o = Chunk574366 ? Chunk574366.toStringTag : true;
+  o = i.toString,
+  s = Chunk574366 ? Chunk574366.toStringTag : true;
 module.exports = function(e) {
-  var t = a.call(e, o),
-    n = e[o];
+  var t = a.call(e, s),
+    n = e[s];
   try {
-    e[o] = true;
+    e[s] = true;
     var r = true
   } catch (e) {}
-  var i = s.call(e);
-  return r && (t ? e[o] = n : delete e[o]), i
+  var i = o.call(e);
+  return r && (t ? e[s] = n : delete e[s]), i
 }

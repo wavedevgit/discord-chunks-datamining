@@ -25,7 +25,7 @@ function h(e) {
     numItems: n = d.pl,
     location: p,
     source: _
-  } = e, h = (0, c.Ay)(t.id), m = (0, o.a)({
+  } = e, h = (0, c.Ay)(t.id), m = (0, s.a)({
     location: p
   }), {
     showRecommendations: g
@@ -48,7 +48,7 @@ function h(e) {
     location: p
   }), N = r.useMemo(() => [t.id], [t.id]), {
     recommendations: w
-  } = (0, s.A)({
+  } = (0, o.A)({
     guildId: (0, i.zf)(),
     numWishlistItems: E ? Math.max(n, d.pl) : 0,
     location: p,
@@ -61,8 +61,8 @@ function h(e) {
   }, [null == O ? true : O.items, C, E, w]), {
     displayItems: P,
     hasMoreItems: D,
-    totalWishlistItemCount: x,
-    wishlistItemCountToBeDisplayed: L
+    totalWishlistItemCount: L,
+    wishlistItemCountToBeDisplayed: x
   } = (0, d.mk)({
     wishlist: O,
     popularCollectiblesProducts: v,
@@ -73,8 +73,8 @@ function h(e) {
   return {
     displayItems: P,
     hasMoreItems: D,
-    totalWishlistItemCount: x,
-    wishlistItemCountToBeDisplayed: L,
+    totalWishlistItemCount: L,
+    wishlistItemCountToBeDisplayed: x,
     fetchState: r.useMemo(() => A || I || S ? {
       status: "loading"
     } : null != T ? {
@@ -95,8 +95,8 @@ function m(e) {
     source: i,
     location: a
   } = e, {
-    displayItems: s,
-    defaultWishlistId: o,
+    displayItems: o,
+    defaultWishlistId: s,
     wishlist: l
   } = h({
     user: t,
@@ -111,8 +111,8 @@ function m(e) {
     return null == e || 0 === e.length ? {
       displayedWishlistItems: null,
       title: null
-    } : e.length > 1 && e.length < n && s.length > e.length ? {
-      displayedWishlistItems: s,
+    } : e.length > 1 && e.length < n && o.length > e.length ? {
+      displayedWishlistItems: o,
       title: p.intl.string(p.t.BCi1gT)
     } : {
       displayedWishlistItems: e.map(e => ({
@@ -121,9 +121,9 @@ function m(e) {
       })),
       title: p.intl.string(p.t["7lZ31J"])
     }
-  }, [s, l, n]);
+  }, [o, l, n]);
   return {
-    defaultWishlistId: o,
+    defaultWishlistId: s,
     displayedWishlistItems: c,
     title: u
   }

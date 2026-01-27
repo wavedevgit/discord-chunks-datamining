@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 961154, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 961154, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => O
+  y: () => E
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,42 +21,37 @@ var Chunk311907 = require("./311907.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk567856 = require("./567856.js");
-let b = () => {
-    (0, d.nf)(d.HP.APP_ICON), (0, h.default)()
-  },
-  O = () => {
-    let {
-      analyticsLocations: e
-    } = (0, l.Ay)(o.A.USER_SETTINGS), t = (0, i.bG)([c.A], () => c.A.isUpsellPreview), n = (0, _.dk)("UserSettingsAppearanceInAppIcon");
-    (0, s.Ay)(() => {
-      t && p.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
-        type: g.e.APP_ICON_UPSELL,
-        location_stack: e
-      })
-    });
-    let d = () => (0, r.jsxs)("div", {
-      className: y.gY,
-      children: [(0, r.jsx)(a.Button, {
-        variant: t ? "secondary" : "primary",
-        text: E.intl.string(E.t["hb/wE0"]),
-        onClick: () => b()
-      }), t ? (0, r.jsx)(f.A, {
-        subscriptionTier: g.pe.TIER_2,
-        defaultTextOverride: E.intl.string(E.t.mr4K7D),
-        premiumModalAnalyticsLocation: {
-          object: m.ZSU.BUTTON_CTA,
-          objectType: m.AnalyticsObjectTypes.BUY
-        },
-        fullWidth: true
-      }) : null]
-    });
-    return (0, r.jsxs)("div", {
-      className: y.Gg,
-      children: [(0, r.jsx)(u.A, {
-        disabled: t,
-        renderCTAButtons: d
-      }), !n && (0, r.jsx)(a.cGx, {
-        className: y.yF
-      })]
+let E = () => {
+  let {
+    analyticsLocations: e
+  } = (0, o.Ay)(a.A.USER_SETTINGS), t = (0, i.bG)([c.A], () => c.A.isUpsellPreview), n = (0, m.dk)("UserSettingsAppearanceInAppIcon");
+  return (0, s.Ay)(() => {
+    t && p.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
+      type: f.e.APP_ICON_UPSELL,
+      location_stack: e
     })
-  }
+  }), (0, r.jsxs)("div", {
+    className: b.Gg,
+    children: [(0, r.jsx)(d.A, {
+      disabled: t,
+      renderCTAButtons: () => (0, r.jsxs)("div", {
+        className: b.gY,
+        children: [(0, r.jsx)(l.Button, {
+          variant: t ? "secondary" : "primary",
+          text: h.intl.string(h.t["hb/wE0"]),
+          onClick: () => void((0, u.nf)(u.HP.APP_ICON), (0, g.default)())
+        }), t ? (0, r.jsx)(_.A, {
+          subscriptionTier: f.pe.TIER_2,
+          defaultTextOverride: h.intl.string(h.t.mr4K7D),
+          premiumModalAnalyticsLocation: {
+            object: A.ZSU.BUTTON_CTA,
+            objectType: A.AnalyticsObjectTypes.BUY
+          },
+          fullWidth: true
+        }) : null]
+      })
+    }), !n && (0, r.jsx)(l.cGx, {
+      className: b.yF
+    })]
+  })
+}

@@ -6,7 +6,7 @@ require.r(exports), require.d(exports, {
   batchedUpdates: () => f,
   colorNames: () => c,
   createStringInterpolator: () => r,
-  frameLoop: () => o,
+  frameLoop: () => s,
   now: () => l,
   requestAnimationFrame: () => d,
   skipAnimation: () => u,
@@ -15,7 +15,7 @@ require.r(exports), require.d(exports, {
 });
 var r, i, Chunk360276 = require("./360276.js"),
   Chunk233710 = require("./233710.js"),
-  o = new Chunk360276.c,
+  s = new Chunk360276.c,
   l = function() {
     return performance.now()
   },
@@ -33,14 +33,14 @@ var r, i, Chunk360276 = require("./360276.js"),
     return i = (t = Object.assign({
       to: i,
       now: l,
-      frameLoop: o,
+      frameLoop: s,
       colorNames: c,
       skipAnimation: u,
       createStringInterpolator: r,
       requestAnimationFrame: d,
       batchedUpdates: f,
       willAdvance: p
-    }, h(e))).to, l = t.now, o = t.frameLoop, c = t.colorNames, u = t.skipAnimation, r = t.createStringInterpolator, d = t.requestAnimationFrame, f = t.batchedUpdates, p = t.willAdvance, t
+    }, h(e))).to, l = t.now, s = t.frameLoop, c = t.colorNames, u = t.skipAnimation, r = t.createStringInterpolator, d = t.requestAnimationFrame, f = t.batchedUpdates, p = t.willAdvance, t
   };
 
 function h(e) {

@@ -53,11 +53,11 @@ function I(e) {
     closePicker: v
   } = e, I = (0, d.RQ)(e => e.searchQuery), S = (0, i.bG)([E.A], () => null != t && E.A.isFavoriteSound(t.soundId)), T = (0, i.bG)([p.A], () => p.A.getGuild(null == t ? true : t.guildId)), C = (0, i.bG)([l.A], () => l.A.useReducedMotion, []), N = (0, i.bG)([h.A], () => h.A.isFocused()), w = (0, i.bG)([_.Ay], () => _.Ay.getKeybindForAction(y.hCu.SOUNDBOARD_HOLD));
   if (null != t && I.length > 0) return (0, r.jsx)(f.A, {
-    graphicPrimary: null != t.emojiId || null != t.emojiName ? (0, r.jsx)(o.A, {
+    graphicPrimary: null != t.emojiId || null != t.emojiName ? (0, r.jsx)(s.A, {
       emojiId: t.emojiId,
       emojiName: t.emojiName,
       className: O.Zg
-    }) : (0, r.jsx)(s.xfq, {
+    }) : (0, r.jsx)(o.xfq, {
       size: "md",
       color: "currentColor",
       className: O.Zg
@@ -71,7 +71,7 @@ function I(e) {
     isFavorite: S
   });
   let R = () => {
-      v(), (0, s.mMO)(async () => {
+      v(), (0, o.mMO)(async () => {
         let {
           default: e
         } = await n.e("12618").then(n.bind(n, 29681));
@@ -80,30 +80,30 @@ function I(e) {
     },
     P = (0, c.k8)(a.M.SOUNDBOARD_KEYBIND_TIP),
     D = () => (0, c.Dr)(a.M.SOUNDBOARD_KEYBIND_TIP),
-    x = null != w && (0, m.isWindows)() && !P ? b.intl.format(b.t.udMTth, {
+    L = null != w && (0, m.isWindows)() && !P ? b.intl.format(b.t.udMTth, {
       keybind: (0, g.dI)(w.shortcut, true),
-      openSettingsHook: (e, t) => (0, r.jsx)(s.MzZ, {
+      openSettingsHook: (e, t) => (0, r.jsx)(o.MzZ, {
         onClick: R,
         children: e
       }, t)
     }) : null;
-  return null == x ? null : (0, r.jsxs)("div", {
+  return null == L ? null : (0, r.jsxs)("div", {
     className: O.g,
-    children: [(0, r.jsx)(s.EpV, {
+    children: [(0, r.jsx)(o.EpV, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
       className: O.QW
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "text-default",
       className: O.L5,
-      children: x
-    }), (0, r.jsx)(s.DUT, {
+      children: L
+    }), (0, r.jsx)(o.DUT, {
       className: O.b,
       onClick: D,
-      children: (0, r.jsx)(s.PGe, {
+      children: (0, r.jsx)(o.PGe, {
         size: "xs",
         color: "currentColor"
       })

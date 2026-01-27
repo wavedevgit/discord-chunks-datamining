@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk688810 = require("./688810.jsx"),
   Chunk183555 = require("./183555.jsx"),
@@ -79,7 +79,7 @@ let E = 57.75,
     return _ || null == a || "" === a ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         ref: T,
-        className: s()(p.mA, A && p.Em),
+        className: o()(p.mA, A && p.Em),
         onBlur: N,
         children: (0, r.jsx)(d.A, {
           userBio: a,
@@ -88,7 +88,7 @@ let E = 57.75,
         })
       }), (O || A) && (0, r.jsx)("div", {
         className: p.HV,
-        children: (0, r.jsx)(o.QWc, {
+        children: (0, r.jsx)(s.QWc, {
           textVariant: "text-xs/normal",
           size: "sm",
           variant: "secondary",

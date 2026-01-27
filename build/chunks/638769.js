@@ -69,12 +69,12 @@ Chunk557939({
 }, {
   sort: function(e) {
     true !== e && a(e);
-    var t, n, r = s(this);
+    var t, n, r = o(this);
     if (A) return true === e ? E(r) : E(r, e);
     var i = [],
-      c = o(r);
+      c = s(r);
     for (n = 0; n < c; n++) n in r && y(i, r[n]);
-    for (d(i, I(e)), t = o(i), n = 0; n < t;) r[n] = i[n++];
+    for (d(i, I(e)), t = s(i), n = 0; n < t;) r[n] = i[n++];
     for (; n < c;) l(r, n++);
     return r
   }

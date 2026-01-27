@@ -27,7 +27,7 @@ let d = {
       a = e.name;
     if (!t.modifiersData[a]._skip) {
       for (var d = n.mainAxis, f = true === d || d, p = n.altAxis, _ = true === p || p, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, y = n.altBoundary, b = n.flipVariations, O = true === b || b, v = n.allowedAutoPlacements, A = t.options.placement, I = (0, i.A)(A), S = I === A, T = h || (S || !O ? [(0, r.A)(A)] : u(A)), C = [A].concat(T).reduce(function(e, n) {
-          return e.concat((0, i.A)(n) === l.qZ ? (0, o.A)(t, {
+          return e.concat((0, i.A)(n) === l.qZ ? (0, s.A)(t, {
             placement: n,
             boundary: g,
             rootBoundary: E,
@@ -35,30 +35,30 @@ let d = {
             flipVariations: O,
             allowedAutoPlacements: v
           }) : n)
-        }, []), N = t.rects.reference, w = t.rects.popper, R = new Map, P = true, D = C[0], x = 0; x < C.length; x++) {
-        var L = C[x],
-          j = (0, i.A)(L),
-          M = (0, c.A)(L) === l.ni,
-          k = [l.Mn, l.sQ].indexOf(j) >= 0,
+        }, []), N = t.rects.reference, w = t.rects.popper, R = new Map, P = true, D = C[0], L = 0; L < C.length; L++) {
+        var x = C[L],
+          M = (0, i.A)(x),
+          j = (0, c.A)(x) === l.ni,
+          k = [l.Mn, l.sQ].indexOf(M) >= 0,
           U = k ? "width" : "height",
-          G = (0, s.A)(t, {
-            placement: L,
+          G = (0, o.A)(t, {
+            placement: x,
             boundary: g,
             rootBoundary: E,
             altBoundary: y,
             padding: m
           }),
-          V = k ? M ? l.pG : l.kb : M ? l.sQ : l.Mn;
-        N[U] > w[U] && (V = (0, r.A)(V));
-        var F = (0, r.A)(V),
+          F = k ? j ? l.pG : l.kb : j ? l.sQ : l.Mn;
+        N[U] > w[U] && (F = (0, r.A)(F));
+        var V = (0, r.A)(F),
           B = [];
-        if (f && B.push(G[j] <= 0), _ && B.push(G[V] <= 0, G[F] <= 0), B.every(function(e) {
+        if (f && B.push(G[M] <= 0), _ && B.push(G[F] <= 0, G[V] <= 0), B.every(function(e) {
             return e
           })) {
-          D = L, P = false;
+          D = x, P = false;
           break
         }
-        R.set(L, B)
+        R.set(x, B)
       }
       if (P)
         for (var H = O ? 3 : 1, Y = function(e) {

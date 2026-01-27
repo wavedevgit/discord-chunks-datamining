@@ -94,7 +94,7 @@ function A(e) {
     children: w
   } = e, R = (0, i.bG)([f.default], () => f.default.getCurrentUser()), P = (0, i.bG)([p.A], () => p.A.getPremiumTypeSubscription()), {
     analyticsLocations: D
-  } = (0, s.Ay)(), x = (0, _.V)(), L = !C && null != x && null != g && h.TP[x.trial_id].skus.includes(g);
+  } = (0, o.Ay)(), L = (0, _.V)(), x = !C && null != L && null != g && h.TP[L.trial_id].skus.includes(g);
   return w({
     onClick: e => {
       var i;
@@ -102,7 +102,7 @@ function A(e) {
         source: "premium_subscribe_button"
       });
       if (null == t || t(e), (null == P ? true : P.status) === m.Dmq.ACCOUNT_HOLD) {
-        (0, o.xf)(), (0, d.openUserSettings)(u.X.NITRO_PANEL, {
+        (0, s.xf)(), (0, d.openUserSettings)(u.X.NITRO_PANEL, {
           section: m.nc_.PREMIUM
         }), null == v || v(false);
         return
@@ -133,9 +133,9 @@ function A(e) {
           }))
         }
       });
-      let s = L ? null == (i = x.subscription_trial) ? true : i.id : null,
+      let o = x ? null == (i = L.subscription_trial) ? true : i.id : null,
         f = m.AnalyticsObjectTypes.BUY;
-      null != s ? f = m.AnalyticsObjectTypes.TRIAL : C && (f = m.AnalyticsObjectTypes.GIFT), (0, l.A)({
+      null != o ? f = m.AnalyticsObjectTypes.TRIAL : C && (f = m.AnalyticsObjectTypes.GIFT), (0, l.A)({
         isGift: C,
         initialPlanId: N,
         subscriptionTier: g,
@@ -144,7 +144,7 @@ function A(e) {
           object: m.ZSU.BUTTON_CTA,
           objectType: f
         }, A),
-        trialId: s,
+        trialId: o,
         postSuccessGuild: y,
         onClose: v,
         applicationId: I,

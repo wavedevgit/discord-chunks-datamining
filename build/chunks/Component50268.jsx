@@ -20,7 +20,7 @@ function c(e) {
     shiftId: c,
     showIconFirst: u,
     showWithoutDeveloperMode: d
-  } = e, f = o.Q_.useSetting();
+  } = e, f = s.Q_.useSetting();
 
   function p(e) {
     let n = null != c && e.shiftKey ? c : t;
@@ -29,15 +29,15 @@ function c(e) {
   let _ = d || f;
   if (__OVERLAY__ || !_ || !l.p5 || null == t) return null;
   let h = "devmode-copy-id-".concat(t);
-  return (0, r.jsx)(s.Drp, {
+  return (0, r.jsx)(o.Drp, {
     id: h,
     label: n,
     action: p,
-    icon: u ? true : s.L9S,
-    iconLeft: u ? s.L9S : true,
+    icon: u ? true : o.L9S,
+    iconLeft: u ? o.L9S : true,
     leadingAccessory: {
       type: "icon",
-      icon: s.L9S
+      icon: o.L9S
     }
   }, h)
 }

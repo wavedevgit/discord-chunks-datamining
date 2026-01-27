@@ -11,17 +11,17 @@ var Chunk311907 = require("./311907.js"),
   Chunk800828 = require("./800828.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t) {
+function s(e, t) {
   let [n] = (0, r.bG)([a.A], () => [a.A.getGameRelationshipsForUserByType(e, t), a.A.getGameRelationshipsVersion()], [t, e], i.D);
   return n
 }
 
 function l(e) {
-  return o(e, s.eA$.FRIEND)
+  return s(e, o.eA$.FRIEND)
 }
 
 function c(e) {
-  return o(e, s.eA$.PENDING_INCOMING)
+  return s(e, o.eA$.PENDING_INCOMING)
 }
 
 function u(e, t) {

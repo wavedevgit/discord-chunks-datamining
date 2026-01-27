@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 816128, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 816128, original params: e,t,n (module,exports,require) **/
 module.exports = {
   _G: "applicationHomeBanner__62eb1",
   O3: "settingsBanner__62eb1",

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 351104, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 351104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,25 +17,23 @@ var Chunk935649 = require("./935649.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h() {
+function g() {
   var e;
-  let t = null != (e = (0, f.k)()) ? e : true,
-    n = (0, d.KK)(),
-    h = o.ES.useControlledSetting(t);
-
-  function m(e) {
-    !e && (0, s.w)() ? i.A.showAgeVerificationGetStartedModal({
-      entryPoint: a.q1.MESSAGE_REQUESTS_SETTINGS
-    }) : o.ES.updateControlledSetting(t, !e)
-  }
-  return (0, r.jsx)(l.h, {
+  let t = null != (e = (0, _.k)()) ? e : true,
+    n = (0, u.KK)(),
+    g = a.ES.useControlledSetting(t);
+  return (0, r.jsx)(o.h, {
     children: (0, r.jsx)(c.Ay, {
-      title: _.intl.string(_.t["3o2ojh"]),
-      value: !n && !h,
-      onChange: e => m(e),
+      title: m.intl.string(m.t["3o2ojh"]),
+      value: !n && !g,
+      onChange: e => {
+        !e && (0, s.w)() ? i.A.showAgeVerificationGetStartedModal({
+          entryPoint: l.q1.MESSAGE_REQUESTS_SETTINGS
+        }) : a.ES.updateControlledSetting(t, !e)
+      },
       disabled: n,
-      note: _.intl.format(_.t.IoztJ0, {
-        helpdeskArticle: u.A.getArticleURL(p.MVz.MESSAGE_REQUESTS)
+      note: m.intl.format(m.t.IoztJ0, {
+        helpdeskArticle: d.A.getArticleURL(p.MVz.MESSAGE_REQUESTS)
       })
     })
   })

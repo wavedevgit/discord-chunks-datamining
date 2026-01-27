@@ -68,18 +68,18 @@ let S = "GameStoreReportedGames",
   R = {},
   P = null != (i = Chunk506774.w.get(S)) ? i : {},
   D = "",
-  x = null,
-  L = false,
-  j = null,
-  M = false,
+  L = null,
+  x = false,
+  M = null,
+  j = false,
   k = "",
   U = [],
   G = [],
-  V = new Map,
-  F = Chunk927813.A.Millis.HOUR;
+  F = new Map,
+  V = Chunk927813.A.Millis.HOUR;
 
 function B(e) {
-  var t, n, r, i, a, s, o, l, c, u;
+  var t, n, r, i, a, o, s, l, c, u;
   return {
     id: e.id,
     name: e.name,
@@ -88,9 +88,9 @@ function B(e) {
     overlayWarn: null != (r = e.overlay_warn) && r,
     overlayCompatibilityHook: null != (i = e.overlay_compatibility_hook) && i,
     hook: null == (a = e.hook) || a,
-    aliases: null != (s = e.aliases) ? s : [],
+    aliases: null != (o = e.aliases) ? o : [],
     supportsOutOfProcessOverlay: _.Ay.supportsOutOfProcessOverlay(e.overlay_methods),
-    themes: null != (o = e.themes) ? o : [],
+    themes: null != (s = e.themes) ? s : [],
     icon: null != (l = e.icon_hash) ? l : true,
     thirdPartySkus: null != (c = e.third_party_skus) ? c : [],
     cover_image_hash: null != (u = e.cover_image_hash) ? u : true
@@ -135,7 +135,7 @@ function K() {
 }
 
 function z() {
-  r = false, L = true
+  r = false, x = true
 }
 
 function q(e) {
@@ -144,24 +144,24 @@ function q(e) {
     etag: n
   } = e;
   for (let e of (null != n && D !== n && (N.clear(), w = {}, R = {}, D = n), t)) Y(B(e));
-  r = true, x = Date.now(), L = true
+  r = true, L = Date.now(), x = true
 }
 
 function Z() {
-  M = true
+  j = true
 }
 
-function X() {
-  M = false
+function Q() {
+  j = false
 }
 
-function Q(e) {
+function X(e) {
   let {
     executables: t,
     patterns: n,
     etag: r
   } = e;
-  null != r && k !== r && (k = r, U = t.map(e => e.toLowerCase()), G = n.map(e => RegExp(e, "i"))), M = false, j = Date.now()
+  null != r && k !== r && (k = r, U = t.map(e => e.toLowerCase()), G = n.map(e => RegExp(e, "i"))), j = false, M = Date.now()
 }
 class J extends(a = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
@@ -226,21 +226,21 @@ class J extends(a = Chunk311907.Ay.PersistedStore) {
     return k
   }
   get lastFetched() {
-    return x
+    return L
   }
   get hasAttemptedFetch() {
-    return L
+    return x
   }
   get detectableGamesTtl() {
     return C
   }
   canFetchDetectableGames() {
-    returntrue !== r && (null == x || Date.now() >= x + C)
+    returntrue !== r && (null == L || Date.now() >= L + C)
   }
   canFetchExecutableBlocklist() {
     return !!d.n.getConfig({
       location: "GameStore.shouldBlock"
-    }).enabled && !M && (null == j || Date.now() >= j + C)
+    }).enabled && !j && (null == M || Date.now() >= M + C)
   }
   getGameByExecutable(e) {
     return R[e]
@@ -272,9 +272,9 @@ class J extends(a = Chunk311907.Ay.PersistedStore) {
   maybeTrackBlock(e, t, n) {
     var r, i;
     let a = null != (r = e.exePath.split(/[/\\]/).pop()) ? r : "unknown",
-      s = V.get(a),
-      o = Date.now();
-    (null == s || o - s >= F) && (V.set(a, o), h.default.track(y.HAw.GAME_BLOCKLIST_TRIGGERED, {
+      o = F.get(a),
+      s = Date.now();
+    (null == o || s - o >= V) && (F.set(a, s), h.default.track(y.HAw.GAME_BLOCKLIST_TRIGGERED, {
       block_type: t,
       matched_entry: n,
       game_name: null != (i = e.gameName) ? i : e.origGameName,
@@ -288,7 +288,7 @@ class J extends(a = Chunk311907.Ay.PersistedStore) {
     return p.tz.getSetting() && !r && !(t || n)
   }
   markGameReported(e) {
-    P[e] = true, o.w.set(S, P)
+    P[e] = true, s.w.set(S, P)
   }
 }
 O(J, "displayName", "GameStore"), O(J, "persistKey", "GameStore"), O(J, "migrations", [e => {
@@ -320,6 +320,6 @@ let $ = new J(Chunk73153.h, {
   GAMES_DATABASE_FETCH_FAIL: z,
   GAMES_DATABASE_UPDATE: q,
   GAMES_BLOCKLIST_FETCH: Z,
-  GAMES_BLOCKLIST_FETCH_FAIL: X,
-  GAMES_BLOCKLIST_UPDATE: Q
+  GAMES_BLOCKLIST_FETCH_FAIL: Q,
+  GAMES_BLOCKLIST_UPDATE: X
 })

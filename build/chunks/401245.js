@@ -81,8 +81,8 @@ class A extends Chunk439372.A {
       let e = d.A.getVoiceFilterModels(),
         t = [];
       for (let n of a) {
-        var s;
-        let r = null == (s = e[n]) ? true : s.url;
+        var o;
+        let r = null == (o = e[n]) ? true : o.url;
         if (null == r) {
           b.error("Missing model url for voice filter", i.id, n);
           continue
@@ -121,10 +121,10 @@ class A extends Chunk439372.A {
       modelId: r,
       voiceFilterId: i,
       error: a
-    } = e, s = "USER_CANCELED_DOWNLOAD", c = null != a && s in a, u = (null != (t = null == a ? true : a.message) ? t : String(a)).substring(0, 200);
-    c && (u = s), l.default.track(_.HAw.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
+    } = e, o = "USER_CANCELED_DOWNLOAD", c = null != a && o in a, u = (null != (t = null == a ? true : a.message) ? t : String(a)).substring(0, 200);
+    c && (u = o), l.default.track(_.HAw.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
       canceled: c,
-      active_voice_filter_id: null != (n = o.A.getActiveVoiceFilter()) ? n : null,
+      active_voice_filter_id: null != (n = s.A.getActiveVoiceFilter()) ? n : null,
       success: false,
       voice_filter_id: i,
       model_id: r,
@@ -136,18 +136,18 @@ class A extends Chunk439372.A {
       voiceFilterId: t,
       analyticsContext: n,
       activationDurationMs: i
-    } = e, a = o.A.getPreviousVoiceFilter();
+    } = e, a = s.A.getPreviousVoiceFilter();
     if (null !== a && null === t) {
-      let e = o.A.getPreviousVoiceFilterAppliedAt(),
+      let e = s.A.getPreviousVoiceFilterAppliedAt(),
         t = null === e ? null : Date.now() - e;
       l.default.track(_.HAw.VOICE_FILTER_DISABLED, {
         active_voice_filter_id: a,
         duration_voice_filter_applied: t
       })
     }
-    null !== t && ((0, s.Dr)(r.M.VOICE_FILTER_IN_CALL_COACHMARK, {
+    null !== t && ((0, o.Dr)(r.M.VOICE_FILTER_IN_CALL_COACHMARK, {
       dismissAction: h.i.INDIRECT_ACTION
-    }), (0, s.Dr)(r.M.VOICE_FILTER_FIRST_USE_COACHMARK, {
+    }), (0, o.Dr)(r.M.VOICE_FILTER_FIRST_USE_COACHMARK, {
       dismissAction: h.i.INDIRECT_ACTION
     }), l.default.track(_.HAw.VOICE_FILTER_ENABLED, y(g({
       active_voice_filter_id: t,

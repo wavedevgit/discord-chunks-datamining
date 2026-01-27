@@ -1,4 +1,4 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 382120, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -20,9 +20,9 @@ function u(e) {
     description: i
   } = e;
   return (0, l.jsxs)("div", {
-    className: d.nM,
+    className: c.nM,
     children: [(0, l.jsx)("div", {
-      className: d.aL,
+      className: c.aL,
       children: (0, l.jsx)(t, {
         size: "custom",
         width: 20,
@@ -30,7 +30,7 @@ function u(e) {
         color: "currentColor"
       })
     }), (0, l.jsxs)("div", {
-      className: d.qg,
+      className: c.qg,
       children: [(0, l.jsx)(s.Heading, {
         variant: "text-xs/semibold",
         children: n
@@ -50,29 +50,29 @@ function p(e) {
     return null == (e = a.A.getUserProfile(t.id)) ? true : e.application
   }), {
     hasMessageContent: p,
-    hasGuildPresences: m,
-    hasGuildMembers: f
+    hasGuildPresences: f,
+    hasGuildMembers: m
   } = (0, o.Z)({
     flags: null == n ? true : n.flags
   });
   return (0, l.jsxs)(i.IpV, {
     fade: true,
-    className: d.XG,
+    className: c.XG,
     children: [p && (0, l.jsx)(u, {
       icon: s.oyn,
-      title: c.intl.string(c.t["7Tmhfu"]),
-      description: c.intl.string(c.t.eu5x7z)
-    }), m && (0, l.jsx)(u, {
-      icon: s._xR,
-      title: c.intl.string(c.t.awYSsM),
-      description: c.intl.string(c.t.TpsXoC)
+      title: d.intl.string(d.t["7Tmhfu"]),
+      description: d.intl.string(d.t.eu5x7z)
     }), f && (0, l.jsx)(u, {
+      icon: s._xR,
+      title: d.intl.string(d.t.awYSsM),
+      description: d.intl.string(d.t.TpsXoC)
+    }), m && (0, l.jsx)(u, {
       icon: s.nFg,
-      title: c.intl.string(c.t.WuKeSJ),
-      description: c.intl.string(c.t.wOBmtV)
+      title: d.intl.string(d.t.WuKeSJ),
+      description: d.intl.string(d.t.wOBmtV)
     }), (0, l.jsx)(s.Text, {
       variant: "text-xs/normal",
-      children: c.intl.format(c.t.b6nqk0, {
+      children: d.intl.format(d.t.b6nqk0, {
         helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
       })
     })]

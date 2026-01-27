@@ -1,10 +1,10 @@
-/** Chunk was on 81579 **/
+/** Chunk was on 59461 **/
 /** chunk id: 769591, original params: e,n,t (module,exports,require) **/
 "use strict";
 require.d(exports, {
   b8: () => d,
-  ct: () => g,
-  os: () => E
+  ct: () => E,
+  os: () => g
 }), require("./896048.js"), require("./938796.js");
 var Chunk665260 = require("./665260.js"),
   Chunk311907 = require("./311907.js"),
@@ -20,27 +20,27 @@ function d() {
   return [{
     id: "15-minutes",
     label: _.intl.string(_.t["8ot6gv"]),
-    value: o.Xx.MINUTES_15
+    value: s.Xx.MINUTES_15
   }, {
     id: "1-hour",
     label: _.intl.string(_.t.UMWBZr),
-    value: o.Xx.HOURS_1
+    value: s.Xx.HOURS_1
   }, {
     id: "3-hours",
     label: _.intl.string(_.t.QmYWtu),
-    value: o.Xx.HOURS_3
+    value: s.Xx.HOURS_3
   }, {
     id: "8-hours",
     label: _.intl.string(_.t.EpAXPC),
-    value: o.Xx.HOURS_8
+    value: s.Xx.HOURS_8
   }, {
     id: "24-hours",
     label: _.intl.string(_.t["755t4q"]),
-    value: o.Xx.HOURS_24
+    value: s.Xx.HOURS_24
   }, {
     id: "forever",
     label: _.intl.string(_.t.r3LawO),
-    value: o.Xx.ALWAYS
+    value: s.Xx.ALWAYS
   }]
 }
 let S = {
@@ -49,16 +49,16 @@ let S = {
   ignoreNotificationSetting: false
 };
 
-function g(e) {
+function E(e) {
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S;
-  return s.default.keys(e).filter(t => {
-    var l, a;
-    let s = e[t].message_notifications !== u.orn.NULL,
-      o = i.Lt(null != (l = e[t].flags) ? l : 0, c.vv.UNREADS_ALL_MESSAGES) || i.Lt(null != (a = e[t].flags) ? a : 0, c.vv.UNREADS_ONLY_MENTIONS);
-    return !n.ignoreUnreadSetting && o || !n.ignoreNotificationSetting && s || !n.ignoreMute && (0, r.tG)(e[t])
+  return a.default.keys(e).filter(t => {
+    var l, u;
+    let a = e[t].message_notifications !== o.orn.NULL,
+      s = i.Lt(null != (l = e[t].flags) ? l : 0, c.vv.UNREADS_ALL_MESSAGES) || i.Lt(null != (u = e[t].flags) ? u : 0, c.vv.UNREADS_ONLY_MENTIONS);
+    return !n.ignoreUnreadSetting && s || !n.ignoreNotificationSetting && a || !n.ignoreMute && (0, r.tG)(e[t])
   })
 }
 
-function E(e) {
-  return (0, l.bG)([a.Ay], () => a.Ay.useNewNotifications)
+function g(e) {
+  return (0, l.bG)([u.Ay], () => u.Ay.useNewNotifications)
 }

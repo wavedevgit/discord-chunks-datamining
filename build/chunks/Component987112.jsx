@@ -53,7 +53,7 @@ function g(e) {
     type: "channel"
   }), [g]), {
     commands: O
-  } = o.DP(b, t, n), v = i.useMemo(() => null == O ? true : O.filter(e => {
+  } = s.DP(b, t, n), v = i.useMemo(() => null == O ? true : O.filter(e => {
     let {
       nsfw: t,
       options: n
@@ -73,7 +73,7 @@ function g(e) {
       application_id: t,
       command_id: e,
       guild_id: h
-    }, (0, s.Ou)(g.id)))
+    }, (0, o.Ou)(g.id)))
   };
   return (0, r.jsx)(d.A, {
     heading: p.intl.string(p.t["0hKkS+"]),

@@ -4,12 +4,12 @@
 var Chunk557939 = require("./557939.js"),
   Chunk710821 = require("./710821.js"),
   Chunk581390 = require("./581390.js"),
-  s = Array;
+  o = Array;
 Chunk557939({
   target: "Array",
   proto: true
 }, {
   with: function(e, t) {
-    return i(a(this), s, e, t)
+    return i(a(this), o, e, t)
   }
 })

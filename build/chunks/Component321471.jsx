@@ -95,8 +95,8 @@ let _ = Chunk64700.forwardRef(function(e, t) {
       hasValue: R,
       setHasValue: P,
       children: (0, r.jsxs)("div", {
-        className: D ? o.G : true,
-        children: [null != y || null != b ? (0, r.jsx)(s.z, d(c({
+        className: D ? s.G : true,
+        children: [null != y || null != b ? (0, r.jsx)(o.z, d(c({
           "data-migration-pending": true,
           tag: m,
           disabled: p,

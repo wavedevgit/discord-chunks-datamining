@@ -23,7 +23,7 @@ function p(e) {
     onClose: _
   } = e, {
     themeType: h
-  } = (0, c.E)(), m = (0, o.A)({
+  } = (0, c.E)(), m = (0, s.A)({
     application: t,
     analyticsLocations: n
   });
@@ -39,7 +39,7 @@ function p(e) {
     text: f.intl.string(f.t.JVwWva),
     position: "top",
     children: (0, r.jsx)(u.FD, {
-      icon: s.hpF,
+      icon: o.hpF,
       text: f.intl.string(f.t["jaYS/h"]),
       size: "sm",
       onClick: e => {

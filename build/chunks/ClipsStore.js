@@ -69,7 +69,7 @@ let b = "default",
   R = null,
   P = {},
   D = new Map,
-  x = {
+  L = {
     clipsEnabled: false,
     storageLocation: b,
     clipsQuality: {
@@ -95,8 +95,8 @@ let b = "default",
     },
     autoClipPhrases: ["clip that", "clip it", "clip clip"]
   },
-  L = {
-    clipsSettings: x,
+  x = {
+    clipsSettings: L,
     hardwareClassification: null,
     hardwareClassificationForDecoupled: null,
     hardwareClassificationVersion: 0,
@@ -109,19 +109,19 @@ let b = "default",
       numberOfTimesDismissed: 0
     }
   };
-async function j() {
-  if (L.clipsSettings.storageLocation !== b || null == o.A || null == o.A.remoteApp) return;
-  let e = await o.A.remoteApp.getPath("documents");
-  L.clipsSettings.storageLocation = e, ec.emitChange()
+async function M() {
+  if (x.clipsSettings.storageLocation !== b || null == s.A || null == s.A.remoteApp) return;
+  let e = await s.A.remoteApp.getPath("documents");
+  x.clipsSettings.storageLocation = e, ec.emitChange()
 }
 
-function M(e) {
+function j(e) {
   let {
     classification: t
-  } = e, n = L.hardwareClassification;
-  L.hardwareClassificationVersion = p.V0, L.hardwareClassification = t, L.hardwareClassification === f.k9.MEETS_AUTO_ENABLE && n !== f.k9.MEETS_AUTO_ENABLE && (L.clipsSettings.clipsEnabled = true);
-  let r = L.hardwareClassificationForDecoupled;
-  L.hardwareClassificationForDecoupled = t, L.hardwareClassificationForDecoupled === f.k9.MEETS_AUTO_ENABLE && r !== f.k9.MEETS_AUTO_ENABLE && L.clipsSettings.clipsEnabled && (L.clipsSettings.decoupledClipsEnabled = true)
+  } = e, n = x.hardwareClassification;
+  x.hardwareClassificationVersion = p.V0, x.hardwareClassification = t, x.hardwareClassification === f.k9.MEETS_AUTO_ENABLE && n !== f.k9.MEETS_AUTO_ENABLE && (x.clipsSettings.clipsEnabled = true);
+  let r = x.hardwareClassificationForDecoupled;
+  x.hardwareClassificationForDecoupled = t, x.hardwareClassificationForDecoupled === f.k9.MEETS_AUTO_ENABLE && r !== f.k9.MEETS_AUTO_ENABLE && x.clipsSettings.clipsEnabled && (x.clipsSettings.decoupledClipsEnabled = true)
 }
 
 function k(e) {
@@ -139,8 +139,8 @@ function U(e) {
   let {
     settings: t
   } = e;
-  L = y(g({}, L), {
-    clipsSettings: g({}, L.clipsSettings, t)
+  x = y(g({}, x), {
+    clipsSettings: g({}, x.clipsSettings, t)
   })
 }
 
@@ -150,7 +150,7 @@ function G(e) {
     streamKey: n,
     thumbnail: r
   } = e;
-  if (I += 1, L.hasTakenDecoupledClip = L.hasTakenDecoupledClip || t === p.Fv.DECOUPLED, null != n && null != r) {
+  if (I += 1, x.hasTakenDecoupledClip = x.hasTakenDecoupledClip || t === p.Fv.DECOUPLED, null != n && null != r) {
     var i;
     let e = Date.now();
     R = null != R ? R : e, P[n] = [...null != (i = P[n]) ? i : [], {
@@ -160,7 +160,7 @@ function G(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     streamKey: t,
     timestamp: n
@@ -168,7 +168,7 @@ function V(e) {
   R === n && (R = null), null == n ? P[t] = [] : P[t] = P[t].filter(e => e.timestamp !== n)
 }
 
-function F() {
+function V() {
   I = Math.max(I - 1, 0)
 }
 
@@ -182,14 +182,14 @@ function B(e) {
     ended: false
   }, T), {
     newClipIds: [...null != (t = null == T ? true : T.newClipIds) ? t : [], r.id]
-  }), L = y(g({}, L), {
-    newClipIds: [...null != (n = L.newClipIds) ? n : [], r.id]
+  }), x = y(g({}, x), {
+    newClipIds: [...null != (n = x.newClipIds) ? n : [], r.id]
   }), A = A.filter(e => {
     let {
       id: t
     } = e;
     return t !== r.id
-  }), v = [r, ...v], L.hasClips = true
+  }), v = [r, ...v], x.hasClips = true
 }
 
 function H(e) {
@@ -229,7 +229,7 @@ function z(e) {
   let {
     applicationName: t
   } = e;
-  if (N = null, !L.clipsSettings.clipsEnabled) returnfalse;
+  if (N = null, !x.clipsSettings.clipsEnabled) returnfalse;
   T = {
     applicationName: t,
     newClipIds: [],
@@ -249,7 +249,7 @@ function Z(e) {
     sourceName: t,
     pid: n
   } = e;
-  if (!L.clipsSettings.clipsEnabled) returnfalse;
+  if (!x.clipsSettings.clipsEnabled) returnfalse;
   let r = t;
   if (null != n) {
     var i;
@@ -264,7 +264,7 @@ function Z(e) {
   }
 }
 
-function X(e) {
+function Q(e) {
   let {
     streamKey: t
   } = e;
@@ -274,8 +274,8 @@ function X(e) {
   })
 }
 
-function Q(e) {
-  L.hasClips = e.clips.length > 0, v = e.clips
+function X(e) {
+  x.hasClips = e.clips.length > 0, v = e.clips
 }
 
 function J(e) {
@@ -284,7 +284,7 @@ function J(e) {
       filepath: n
     } = t;
     return n !== e.filepath
-  })).length && (L.hasClips = false)
+  })).length && (x.hasClips = false)
 }
 
 function $() {
@@ -293,7 +293,7 @@ function $() {
 }
 
 function ee() {
-  L.newClipIds = []
+  x.newClipIds = []
 }
 
 function et(e) {
@@ -308,7 +308,7 @@ function en(e) {
   let {
     added: t
   } = e;
-  t.length > 0 && (L.clipsEducationState.numberOfGamesLaunchedSinceDismissal += 1)
+  t.length > 0 && (x.clipsEducationState.numberOfGamesLaunchedSinceDismissal += 1)
 }
 
 function er(e) {
@@ -321,7 +321,7 @@ function er(e) {
       break;
     case p.P4.Disabled:
     case p.P4.Enabled:
-      L.clipsEducationState.dismissedAt = Date.now(), L.clipsEducationState.numberOfGamesLaunchedSinceDismissal = 0, L.clipsEducationState.numberOfTimesDismissed += 1
+      x.clipsEducationState.dismissedAt = Date.now(), x.clipsEducationState.numberOfGamesLaunchedSinceDismissal = 0, x.clipsEducationState.numberOfTimesDismissed += 1
   }
 }
 
@@ -340,21 +340,21 @@ function ea(e, t, n) {
   try {
     let n = i + r.length,
       a = t.substring(n),
-      s = JSON.parse(a);
-    if (null == s.id) returnfalse;
-    let o = D.get(e);
-    return null == o && (o = new Set, D.set(e, o)), o.add(s.id), true
+      o = JSON.parse(a);
+    if (null == o.id) returnfalse;
+    let s = D.get(e);
+    return null == s && (s = new Set, D.set(e, s)), s.add(o.id), true
   } catch (e) {
     returnfalse
   }
 }
 
-function es(e) {
+function eo(e) {
   var t;
   return ea(e.channelId, e.message.content, null == (t = e.message.author) ? true : t.id)
 }
 
-function eo(e) {
+function es(e) {
   let t = false;
   for (let r of e.messages) {
     var n;
@@ -364,7 +364,7 @@ function eo(e) {
 }
 class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
-    null != e && (L = e), j(), this.waitFor(l.Ay)
+    null != e && (x = e), M(), this.waitFor(l.Ay)
   }
   getClips() {
     return v
@@ -373,10 +373,10 @@ class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return A
   }
   getUserAgnosticState() {
-    return L
+    return x
   }
   getSettings() {
-    return L.clipsSettings
+    return x.clipsSettings
   }
   getLastClipsSession() {
     return T
@@ -395,13 +395,13 @@ class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return Object.values(P).some(e => e.length > 0)
   }
   getHardwareClassification() {
-    return L.hardwareClassification
+    return x.hardwareClassification
   }
   getHardwareClassificationForDecoupled() {
-    return L.hardwareClassificationForDecoupled
+    return x.hardwareClassificationForDecoupled
   }
   getHardwareClassificationVersion() {
-    return L.hardwareClassificationVersion
+    return x.hardwareClassificationVersion
   }
   getIsAtMaxSaveClipOperations() {
     return I >= p.VP
@@ -422,13 +422,13 @@ class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return null != (t = null == (n = C[e]) ? true : n.allowAnyViewerClips) && t
   }
   hasClips() {
-    return L.hasClips
+    return x.hasClips
   }
   hasTakenDecoupledClip() {
-    return L.hasTakenDecoupledClip
+    return x.hasTakenDecoupledClip
   }
   getNewClipIds() {
-    return L.newClipIds
+    return x.newClipIds
   }
   isClipExporting(e) {
     return w.includes(e)
@@ -438,9 +438,9 @@ class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   }
   getMatchingGroupClip(e, t) {
     if (null == e && null == t) return null;
-    for (let s of v) {
+    for (let o of v) {
       var n, r, i, a;
-      if (null != t && s.id === t || null != e && (null == (r = s.decision) || null == (n = r.signal) ? true : n.type) === f.Gy.DISTRIBUTED && (null == (a = s.decision) || null == (i = a.signal) ? true : i.remoteTriggerClipId) === e) return s
+      if (null != t && o.id === t || null != e && (null == (r = o.decision) || null == (n = r.signal) ? true : n.type) === f.Gy.DISTRIBUTED && (null == (a = o.decision) || null == (i = a.signal) ? true : i.remoteTriggerClipId) === e) return o
     }
     return null
   }
@@ -451,10 +451,10 @@ class el extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   }
 }
 m(el, "displayName", "ClipsStore"), m(el, "persistKey", "ClipsStore"), m(el, "migrations", [e => ({
-  clipsSettings: null != e ? e : x,
+  clipsSettings: null != e ? e : L,
   newClipsCount: 0
 }), e => {
-  let t = g({}, x, e.clipsSettings);
+  let t = g({}, L, e.clipsSettings);
   return y(g({}, e), {
     clipsSettings: t
   })
@@ -476,7 +476,7 @@ m(el, "displayName", "ClipsStore"), m(el, "persistKey", "ClipsStore"), m(el, "mi
   })
 }, e => y(g({}, e), {
   clipsSettings: y(g({}, e.clipsSettings), {
-    decoupledClipsEnabled: x.decoupledClipsEnabled
+    decoupledClipsEnabled: L.decoupledClipsEnabled
   })
 }), e => {
   var t;
@@ -500,13 +500,13 @@ m(el, "displayName", "ClipsStore"), m(el, "persistKey", "ClipsStore"), m(el, "mi
   })
 }, e => y(g({}, e), {
   clipsSettings: y(g({}, e.clipsSettings), {
-    clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? x.clipsQuality : e.clipsSettings.clipsQuality
+    clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? L.clipsQuality : e.clipsSettings.clipsQuality
   })
 }), e => {
   var t;
   return y(g({}, e), {
     clipsSettings: y(g({}, e.clipsSettings), {
-      remindersEnabled: null != (t = e.clipsSettings.remindersEnabled) ? t : x.remindersEnabled
+      remindersEnabled: null != (t = e.clipsSettings.remindersEnabled) ? t : L.remindersEnabled
     })
   })
 }, e => y(g({}, e), {
@@ -520,15 +520,15 @@ m(el, "displayName", "ClipsStore"), m(el, "persistKey", "ClipsStore"), m(el, "mi
   var t, n, r, i;
   return y(g({}, e), {
     clipsSettings: y(g({}, e.clipsSettings), {
-      maxAutoClips: null != (t = e.clipsSettings.maxAutoClips) ? t : x.maxAutoClips,
-      clipSignals: null != (n = e.clipsSettings.clipSignals) ? n : x.clipSignals,
-      mlPipelinesEnabled: null != (r = e.clipsSettings.mlPipelinesEnabled) ? r : x.mlPipelinesEnabled,
-      autoClipPhrases: null != (i = e.clipsSettings.autoClipPhrases) ? i : x.autoClipPhrases
+      maxAutoClips: null != (t = e.clipsSettings.maxAutoClips) ? t : L.maxAutoClips,
+      clipSignals: null != (n = e.clipsSettings.clipSignals) ? n : L.clipSignals,
+      mlPipelinesEnabled: null != (r = e.clipsSettings.mlPipelinesEnabled) ? r : L.mlPipelinesEnabled,
+      autoClipPhrases: null != (i = e.clipsSettings.autoClipPhrases) ? i : L.autoClipPhrases
     })
   })
 }, e => y(g({}, e), {
   clipsSettings: y(g({}, e.clipsSettings), {
-    autoClipPhrases: 0 === e.clipsSettings.autoClipPhrases.length ? x.autoClipPhrases : e.clipsSettings.autoClipPhrases
+    autoClipPhrases: 0 === e.clipsSettings.autoClipPhrases.length ? L.autoClipPhrases : e.clipsSettings.autoClipPhrases
   })
 })]);
 let ec = new el(Chunk73153.h, {
@@ -537,25 +537,25 @@ let ec = new el(Chunk73153.h, {
     CLIPS_SAVE_CLIP_PLACEHOLDER: H,
     CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: Y,
     CLIPS_SAVE_CLIP_START: G,
-    CLIPS_SAVE_CLIP_ERROR: F,
-    CLIPS_SAVE_ANIMATION_END: V,
+    CLIPS_SAVE_CLIP_ERROR: V,
+    CLIPS_SAVE_ANIMATION_END: F,
     STREAM_START: Z,
-    STREAM_STOP: X,
+    STREAM_STOP: Q,
     CLIPS_CLEAR_CLIPS_SESSION: $,
     CLIPS_CLEAR_NEW_CLIP_IDS: ee,
-    CLIPS_LOAD_DIRECTORY_SUCCESS: Q,
+    CLIPS_LOAD_DIRECTORY_SUCCESS: X,
     CLIPS_DELETE_CLIP: J,
     CLIPS_UPDATE_METADATA: k,
     RTC_CONNECTION_FLAGS: et,
     CLIPS_SHOW_CALL_WARNING: W,
     VOICE_CHANNEL_SELECT: K,
-    CLIPS_CLASSIFY_HARDWARE: M,
+    CLIPS_CLASSIFY_HARDWARE: j,
     CLIPS_INIT: z,
     CLIPS_INIT_FAILURE: q,
     CLIPS_DISMISS_EDUCATION: er,
     RUNNING_GAMES_CHANGE: en,
     CLIPS_SET_EXPORTING: ei,
-    MESSAGE_CREATE: es,
-    LOAD_MESSAGES_SUCCESS: eo
+    MESSAGE_CREATE: eo,
+    LOAD_MESSAGES_SUCCESS: es
   }),
   eu = ec

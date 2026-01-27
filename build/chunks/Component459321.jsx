@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 459321, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93140 **/
+/** chunk id: 459321, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
@@ -13,15 +12,14 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx");
 
 function c() {
-  function e() {
-    (0, s.openUserSettings)(a.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING)
-  }
   return (0, r.jsxs)(i.$Td, {
     color: i.Hv$.DANGER,
-    children: [l.intl.string(l.t.lQiCJ6), (0, r.jsx)(i.Z_L, {
-      noticeType: o.kqX.PTT_NO_KEYBIND_WARNING,
-      onClick: e,
-      children: l.intl.string(l.t["UgQN+9"])
+    children: [s.intl.string(s.t.lQiCJ6), (0, r.jsx)(i.Z_L, {
+      noticeType: a.kqX.PTT_NO_KEYBIND_WARNING,
+      onClick: function() {
+        (0, o.openUserSettings)(l.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING)
+      },
+      children: s.intl.string(s.t["UgQN+9"])
     })]
   })
 }

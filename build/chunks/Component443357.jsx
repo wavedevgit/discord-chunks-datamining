@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 443357, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 443357, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => d
+  q: () => u
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,35 +13,35 @@ var Chunk873298 = require("./873298.js"),
   Chunk500470 = require("./500470.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d() {
+function u() {
   let e = (0, c.k)(),
-    t = (0, l.gr)();
+    t = (0, o.gr)();
   if (null == t || null == e) return null;
   let {
     goreContentFriendDm: n,
-    goreContentNonFriendDm: d
-  } = t, f = t => {
-    (0, o.qY)(e, t)
+    goreContentNonFriendDm: u
+  } = t, _ = t => {
+    (0, a.qY)(e, t)
   }, p = [{
     value: i.TO.BLUR,
-    label: u.intl.string(u.t.S49Uad)
+    label: d.intl.string(d.t.S49Uad)
   }, {
     value: i.TO.BLOCK,
-    label: u.intl.string(u.t["D/157Y"])
+    label: d.intl.string(d.t["D/157Y"])
   }];
-  return (0, r.jsxs)(a.E, {
-    description: u.intl.string(u.t.XgH9eh),
+  return (0, r.jsxs)(l.E, {
+    description: d.intl.string(d.t.XgH9eh),
     children: [(0, r.jsx)(s.A, {
-      title: u.intl.string(u.t["+uI23H"]),
+      title: d.intl.string(d.t["+uI23H"]),
       value: n,
-      onChange: e => f({
+      onChange: e => _({
         goreContentFriendDm: e
       }),
       options: p
     }), (0, r.jsx)(s.A, {
-      title: u.intl.string(u.t["Yh+HX1"]),
-      value: d,
-      onChange: e => f({
+      title: d.intl.string(d.t["Yh+HX1"]),
+      value: u,
+      onChange: e => _({
         goreContentNonFriendDm: e
       }),
       options: p

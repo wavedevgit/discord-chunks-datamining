@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 453814, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 453814, original params: e,t,n (module,exports,require) **/
 module.exports = {
   Q: "sectionsContainer__722a8",
   a: "nitroWheel__722a8"

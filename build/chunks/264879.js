@@ -4,14 +4,14 @@
 var Chunk557939 = require("./557939.js"),
   Chunk410323 = require("./410323.js"),
   Chunk703441 = require("./703441.js"),
-  s = Chunk410323([].reverse),
-  o = [1, 2];
+  o = Chunk410323([].reverse),
+  s = [1, 2];
 Chunk557939({
   target: "Array",
   proto: true,
-  forced: String(o) === String(o.reverse())
+  forced: String(s) === String(s.reverse())
 }, {
   reverse: function() {
-    return a(this) && (this.length = this.length), s(this)
+    return a(this) && (this.length = this.length), o(this)
   }
 })

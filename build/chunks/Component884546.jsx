@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 884546, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 884546, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk38824 = require("./38824.js");
@@ -20,38 +19,38 @@ function c(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.Heading, {
       variant: "text-md/medium",
-      className: l.Vf,
+      className: o.Vf,
       children: t
     }), n]
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     children: t,
     className: n,
     layoutClassName: i,
     profilePreview: s,
-    profilePreviewTitle: u,
-    nameplatePreview: d
-  } = e, f = () => (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c, {
-      title: null != u ? u : o.intl.string(o.t.Zb06yP),
-      children: s
-    }), null != d ? (0, r.jsx)(c, {
-      title: o.intl.string(o.t["7KRt6R"]),
-      children: d
-    }) : null]
-  });
+    profilePreviewTitle: d,
+    nameplatePreview: u
+  } = e;
   return (0, r.jsx)("div", {
-    className: a()(l.UA, n),
+    className: l()(o.UA, n),
     children: (0, r.jsxs)("div", {
-      className: a()(l.yt, i),
+      className: l()(o.yt, i),
       children: [(0, r.jsx)("div", {
-        className: l.Fp,
-        children: f()
+        className: o.Fp,
+        children: (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(c, {
+            title: null != d ? d : a.intl.string(a.t.Zb06yP),
+            children: s
+          }), null != u ? (0, r.jsx)(c, {
+            title: a.intl.string(a.t["7KRt6R"]),
+            children: u
+          }) : null]
+        })
       }), (0, r.jsx)("div", {
-        className: l.oB,
+        className: o.oB,
         children: t
       })]
     })

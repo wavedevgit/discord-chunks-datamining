@@ -28,7 +28,7 @@ let f = async (e, t) => {
       return t
     }),
     r = (0, c.Zq)(t);
-  return s.A.sendMessage(n.id, o.Ay.parse(n, r), true, {
+  return o.A.sendMessage(n.id, s.Ay.parse(n, r), true, {
     isGiftLinkSentOnBehalfOfUser: true,
     location: u.Hx.GIFTING
   })

@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 594678, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 594678, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => N
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -31,7 +30,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk582165 = require("./582165.js");
 
 function N() {
-  let e = (0, i.useContext)(f.P),
+  let e = (0, l.useContext)(m.P),
     t = (0, c.rdh)(e.primaryColor).hex(),
     {
       quests: {
@@ -41,60 +40,59 @@ function N() {
         numOrbs: 0,
         numCompleted: 0
       }
-    } = (0, l.bG)([p.A], () => p.A.getCheckpointData()),
+    } = (0, o.bG)([f.A], () => f.A.getCheckpointData()),
     N = 0 === a,
-    w = n > 0 || 0 === a,
-    R = () => {
-      (0, u.A)(d.A.getArticleURL(O.MVz.QUESTS_LEARN_MORE))
+    I = () => {
+      (0, u.A)(d.A.getArticleURL(j.MVz.QUESTS_LEARN_MORE))
     };
   return (0, r.jsxs)(g.A, {
-    className: S.kL,
-    children: [(0, r.jsx)(_.A, {
-      className: S.Ki,
-      slide: b.P7.QUESTS,
-      videoEntrySrc: T.A,
-      videoLoopSrc: C.A
+    className: O.kL,
+    children: [(0, r.jsx)(p.A, {
+      className: O.Ki,
+      slide: v.P7.QUESTS,
+      videoEntrySrc: E.A,
+      videoLoopSrc: S.A
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
-        className: s()(I.DD, {
-          [S.p$]: N
+        className: i()(A.DD, {
+          [O.p$]: N
         }),
-        children: [(0, r.jsx)(o.r2v, {
+        children: [(0, r.jsx)(s.r2v, {
           size: "refresh_sm",
           color: t,
-          colorClass: I.d7,
-          className: I.gr
-        }), (0, r.jsx)(E.A, {
+          colorClass: A.d7,
+          className: A.gr
+        }), (0, r.jsx)(x.A, {
           variant: "eyebrow",
-          className: I.UP,
-          children: N ? A.intl.string(v.default.QkdNzt) : A.intl.string(v.default.qsFkSO)
+          className: A.UP,
+          children: N ? _.intl.string(C.default.QkdNzt) : _.intl.string(C.default.qsFkSO)
         })]
       }), !N && (0, r.jsx)(y.A, {
         end: a
-      }), w && (0, r.jsx)(E.A, {
+      }), (n > 0 || 0 === a) && (0, r.jsx)(x.A, {
         variant: "heading-xxl/medium",
-        className: S.VA,
-        children: 0 === a ? A.intl.format(v.default.UYTBoT, {
-          learnMoreHook: (e, t) => (0, r.jsx)(o.DUT, {
-            onClick: R,
-            className: S.C2,
-            children: (0, r.jsx)(E.A, {
+        className: O.VA,
+        children: 0 === a ? _.intl.format(C.default.UYTBoT, {
+          learnMoreHook: (e, t) => (0, r.jsx)(s.DUT, {
+            onClick: I,
+            className: O.C2,
+            children: (0, r.jsx)(x.A, {
               variant: "heading-xxl/medium",
-              className: S.nf,
+              className: O.nf,
               children: e
             })
           }, t)
-        }) : A.intl.format(v.default["gd+Olh"], {
+        }) : _.intl.format(C.default["gd+Olh"], {
           numOrbs: n,
           orbsHook: (e, t) => (0, r.jsxs)(h.A, {
-            children: [(0, r.jsx)(o.Cp8, {
-              className: S.Uu,
+            children: [(0, r.jsx)(s.Cp8, {
+              className: O.Uu,
               color: c.LU0.colors.BLACK
             }), e]
           }, t)
         })
-      }), (0, r.jsx)(m.e, {
-        slide: b.P7.QUESTS
+      }), (0, r.jsx)(b.e, {
+        slide: v.P7.QUESTS
       })]
     })]
   })

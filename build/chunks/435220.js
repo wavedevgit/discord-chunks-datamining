@@ -4,16 +4,16 @@
 require.r(exports), require.d(exports, {
   EMPTY_QUERY: () => i,
   GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID: () => r,
-  GlobalDiscoveryAppsSections: () => o,
+  GlobalDiscoveryAppsSections: () => s,
   GlobalDiscoveryAppsTabId: () => l,
   MAX_PAGES: () => a,
-  PAGE_SIZE: () => s
+  PAGE_SIZE: () => o
 });
 let r = 0,
   i = "",
   a = 100,
-  s = 48;
-var o = function(e) {
+  o = 48;
+var s = function(e) {
     return e.ABOUT = "about", e.STORE = "store", e
   }({}),
   l = function(e) {

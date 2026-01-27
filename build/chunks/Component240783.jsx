@@ -1,7 +1,7 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 240783, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,7 +20,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk781425 = require("./781425.js"),
   Chunk368519 = require("./368519.js");
 
-function g(e) {
+function h(e) {
   let {
     section: t,
     user: n,
@@ -35,17 +35,17 @@ function g(e) {
     currentUser: i,
     guildId: s,
     onClose: a
-  }) : t === A.RP.MUTUAL_FRIENDS ? (0, l.jsx)(m.A, {
+  }) : t === A.RP.MUTUAL_FRIENDS ? (0, l.jsx)(f.A, {
     user: n,
     guildId: s,
     channelId: o,
     onClose: a
-  }) : t === A.RP.MUTUAL_GUILDS ? (0, l.jsx)(f.A, {
+  }) : t === A.RP.MUTUAL_GUILDS ? (0, l.jsx)(m.A, {
     user: n,
     onClose: a
-  }) : t === A.RP.BOT_DATA_ACCESS ? (0, l.jsx)(c.A, {
+  }) : t === A.RP.BOT_DATA_ACCESS ? (0, l.jsx)(d.A, {
     user: n
-  }) : t === A.RP.BOT_INFO ? (0, l.jsx)(d.A, {
+  }) : t === A.RP.BOT_INFO ? (0, l.jsx)(c.A, {
     user: n,
     displayProfile: r,
     guildId: s,
@@ -57,18 +57,18 @@ function g(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: c,
-    guildId: d,
+    displayProfile: d,
+    guildId: c,
     items: u,
     initialSection: p = A.RP.USER_INFO,
-    onClose: m
+    onClose: f
   } = e, {
-    trackUserProfileAction: f
-  } = (0, a.NJ)(), v = (0, r.bG)([o.A], () => o.A.hidePersonalInformation), [b, I] = i.useState(() => {
+    trackUserProfileAction: m
+  } = (0, a.NJ)(), b = (0, r.bG)([o.A], () => o.A.hidePersonalInformation), [v, I] = i.useState(() => {
     var e, t, n;
     return null != (e = null == (t = u.find(e => {
       let {
@@ -78,31 +78,31 @@ function v(e) {
     })) ? true : t.section) ? e : null == (n = u[0]) ? true : n.section
   });
   i.useEffect(() => {
-    null == u.find(e => e.section === b) && I(u[0].section)
-  }, [u, b]);
+    null == u.find(e => e.section === v) && I(u[0].section)
+  }, [u, v]);
   let y = i.useCallback(e => {
-    f({
+    m({
       action: "PRESS_SECTION",
       section: e
     }), I(e)
-  }, [f]);
-  return v ? (0, l.jsx)("div", {
-    className: h.kL,
+  }, [m]);
+  return b ? (0, l.jsx)("div", {
+    className: j.kL,
     children: (0, l.jsxs)("div", {
-      className: j.Ie,
+      className: g.Ie,
       children: [(0, l.jsx)("div", {
-        className: j.hB
+        className: g.hB
       }), (0, l.jsx)("div", {
-        className: j.BI,
+        className: g.BI,
         children: x.intl.string(x.t.Br1ls3)
       })]
     })
   }) : (0, l.jsxs)("div", {
-    className: h.kL,
+    className: j.kL,
     children: [(0, l.jsx)(s.VQ0, {
-      className: h.$H,
+      className: j.$H,
       type: "top",
-      selectedItem: b,
+      selectedItem: v,
       onItemSelect: y,
       children: u.map(e => {
         let {
@@ -110,7 +110,7 @@ function v(e) {
           text: n
         } = e;
         return (0, l.jsx)(s.VQ0.Item, {
-          className: h.YU,
+          className: j.YU,
           id: t,
           "aria-label": n,
           children: (0, l.jsx)(s.Text, {
@@ -119,14 +119,14 @@ function v(e) {
           })
         }, t)
       })
-    }), (0, l.jsx)(g, {
+    }), (0, l.jsx)(h, {
       items: u,
-      section: b,
+      section: v,
       user: t,
       currentUser: n,
-      displayProfile: c,
-      guildId: d,
-      onClose: m
+      displayProfile: d,
+      guildId: c,
+      onClose: f
     })]
   })
 }

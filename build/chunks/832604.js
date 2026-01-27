@@ -8,7 +8,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk635377 = require("./635377.js"),
   a = require.n(Chunk635377),
   Chunk306044 = require("./306044.js");
-let o = new(a())({
+let s = new(a())({
   max: 1e3
 });
 
@@ -16,15 +16,15 @@ function l(e, t) {
   let [n, i] = r.useState();
   return r.useEffect(() => {
     if (null == e || null != t) return void i(true);
-    let n = o.get(e);
+    let n = s.get(e);
     if (null != n) return void i(n);
     let r = false;
-    return (0, s.A)().then(t => {
+    return (0, o.A)().then(t => {
       null == t || r || t.identifyGame(e, (t, n) => {
         if (r) return;
         if (0 !== t || null == n.icon || "" === n.icon || null == n.name || "" === n.name) return void i(true);
         let a = "data:image/png;base64,".concat(n.icon);
-        o.set(e, a), i(a)
+        s.set(e, a), i(a)
       })
     }).catch(() => {
       r || i(true)

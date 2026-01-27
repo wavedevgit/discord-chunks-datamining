@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   l = require.n(Chunk284009),
   Chunk311907 = require("./311907.js"),
@@ -58,7 +58,7 @@ class y extends Chunk64700.Component {
       applicationName: t,
       hasPreviouslyAcceptedEULA: i,
       forceShow: a,
-      disabled: o,
+      disabled: s,
       className: c,
       finePrint: d,
       showPricingLink: g,
@@ -83,7 +83,7 @@ class y extends Chunk64700.Component {
         onChange: e => this.setState({
           hasAcceptedEULA: e
         }),
-        disabled: o,
+        disabled: s,
         label: h.intl.format(h.t.IodJKT, {
           applicationName: t,
           onClick: t => {
@@ -98,7 +98,7 @@ class y extends Chunk64700.Component {
           }
         })
       }) : null, null == d ? null : (0, r.jsx)("div", {
-        className: s()(m.aO, I),
+        className: o()(m.aO, I),
         children: d
       }), y ? (0, r.jsxs)("div", {
         className: c,
@@ -107,7 +107,7 @@ class y extends Chunk64700.Component {
           onChange: e => this.setState({
             hasAcceptedWithdrawalWaiver: e
           }),
-          disabled: o,
+          disabled: s,
           label: h.intl.string(h.t["DFCVN+"])
         }), (0, r.jsx)("div", {
           className: m.aO,

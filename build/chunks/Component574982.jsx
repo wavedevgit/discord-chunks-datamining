@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 574982, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 574982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => u
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,12 +13,12 @@ var Chunk311907 = require("./311907.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d() {
-  let e = (0, i.bG)([l.A], () => l.A.getEnableSilenceWarning());
-  return (0, r.jsx)(o.x, {
+function u() {
+  let e = (0, i.bG)([o.A], () => o.A.getEnableSilenceWarning());
+  return (0, r.jsx)(a.x, {
     setting: c.H.VOICE_AND_VIDEO_ADVANCED_SILENCE_WARNING,
-    children: (0, r.jsx)(a.dOG, {
-      label: u.intl.string(u.t.jtiiCw),
+    children: (0, r.jsx)(l.dOG, {
+      label: d.intl.string(d.t.jtiiCw),
       checked: e,
       onChange: e => s.A.setSilenceWarning(e)
     })

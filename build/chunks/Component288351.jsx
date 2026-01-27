@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 288351, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 288351, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 });
@@ -12,7 +11,7 @@ let s = e => {
   let {
     enablePremiumBrandRefresh: t = false
   } = e, n = (0, i.A)();
-  return null == n ? null : (0, r.jsx)(a.A, {
+  return null == n ? null : (0, r.jsx)(l.A, {
     enablePremiumBrandRefresh: t,
     text: n
   })

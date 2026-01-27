@@ -24,9 +24,9 @@ let u = {},
   p = 36e5;
 
 function _() {
-  o.m.getCurrentConfig({
+  s.m.getCurrentConfig({
     location: "LibraryApplicationStatisticsStore.handleConnectionOpen"
-  }).enabled && (0, s.X)()
+  }).enabled && (0, o.X)()
 }
 
 function h() {
@@ -47,16 +47,16 @@ function g(e) {
     duration: t,
     applicationId: n,
     distributor: r
-  } = e, i = u[n], a = new Date().toISOString(), s = 0, o = 0;
+  } = e, i = u[n], a = new Date().toISOString(), o = 0, s = 0;
   if (null != i) {
     var c;
-    s = i.total_duration, o = null != (c = i.total_discord_sku_duration) ? c : 0
+    o = i.total_duration, s = null != (c = i.total_discord_sku_duration) ? c : 0
   }
-  s += t, r === l.d3x.DISCORD && (o += t), u[n] = {
+  o += t, r === l.d3x.DISCORD && (s += t), u[n] = {
     application_id: n,
-    total_duration: s,
+    total_duration: o,
     last_played_at: a,
-    total_discord_sku_duration: o
+    total_discord_sku_duration: s
   }
 }
 class E extends(r = Chunk311907.Ay.Store) {

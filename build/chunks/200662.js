@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Eu: () => a,
-  UZ: () => s,
+  UZ: () => o,
   p6: () => i
 }), require("./446912.js"), require("./896048.js");
 var Chunk155718 = require("./155718.js");
@@ -16,7 +16,7 @@ function a(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
-function s(e) {
+function o(e) {
   return Object.fromEntries(e.map(e => [a(e.id, e.type), e]))
 }
 require("./392054.js")

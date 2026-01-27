@@ -39,8 +39,8 @@ function _(e) {
 let h = {
   getActiveErrors: () => (0, d.D$)() ? a.A.getAllActiveStreams().reduce((e, t) => {
     var n;
-    let a = null == (n = o.A.getRTCConnection((0, i._z)(t))) ? true : n.getMediaEngineConnectionId();
-    if (null == a || t.ownerId === s.default.getId() || t.state === f.XYD.PAUSED) return e;
+    let a = null == (n = s.A.getRTCConnection((0, i._z)(t))) ? true : n.getMediaEngineConnectionId();
+    if (null == a || t.ownerId === o.default.getId() || t.state === f.XYD.PAUSED) return e;
     let p = (0, d.xA)(a, t.ownerId);
     if (null == p) return e;
     let h = r.A.getParticipant(t.channelId, (0, i._z)(t));

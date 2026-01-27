@@ -65,7 +65,7 @@ function m(e, t) {
   (0, i.openModalLazy)(async () => {
     let {
       default: t
-    } = await n.e("86317").then(n.bind(n, 467164));
+    } = await Promise.all([n.e("3795"), n.e("86317")]).then(n.bind(n, 467164));
     return n => (0, r.jsx)(t, h(p({}, n), {
       channel: e
     }))
@@ -78,7 +78,7 @@ function g(e, t) {
   (0, i.openModalLazy)(async () => {
     let {
       default: t
-    } = await n.e("35934").then(n.bind(n, 25997));
+    } = await Promise.all([n.e("3795"), n.e("35934")]).then(n.bind(n, 25997));
     return n => (0, r.jsx)(t, h(p({}, n), {
       channel: e
     }))
@@ -109,7 +109,7 @@ function O(e, t) {
   (0, i.openModalLazy)(async () => {
     let {
       default: t
-    } = await n.e("70102").then(n.bind(n, 118101));
+    } = await Promise.all([n.e("3795"), n.e("70102")]).then(n.bind(n, 118101));
     return n => (0, r.jsx)(t, h(p({}, n), {
       channel: e
     }))
@@ -119,10 +119,10 @@ function O(e, t) {
 }
 
 function v(e) {
-  let t = s.default.getId(),
+  let t = o.default.getId(),
     n = (0, c.G1)(e),
     r = (0, c.Gc)(e);
-  return !o.Ay.isModerator(t, e) && (n > 0 || r > 0)
+  return !s.Ay.isModerator(t, e) && (n > 0 || r > 0)
 }
 
 function A(e, t) {

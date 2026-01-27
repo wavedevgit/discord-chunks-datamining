@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,18 +15,18 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = null,
+let s = null,
   l = null;
 
 function c(e) {
   let {
     client: t
   } = e;
-  o = t
+  s = t
 }
 
 function u() {
-  o = null
+  s = null
 }
 
 function d(e) {
@@ -37,13 +37,13 @@ function d(e) {
 }
 class f extends(r = Chunk311907.Ay.Store) {
   get client() {
-    return o
+    return s
   }
   get cashAppPayComponent() {
     return l
   }
 }
-s(f, "displayName", "AdyenStore");
+o(f, "displayName", "AdyenStore");
 let p = new f(Chunk73153.h, {
   ADYEN_CREATE_CLIENT_SUCCESS: c,
   ADYEN_TEARDOWN_CLIENT: u,

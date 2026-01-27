@@ -2,7 +2,7 @@
 /** chunk id: 660110, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b,
-  V: () => f
+  V: () => j
 });
 var l, Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,16 +16,16 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function j() {
-  return (0, o.yM)() ? g.intl.format(g.t.iWGjcg, {
+function f() {
+  return (0, o.yM)() ? h.intl.format(h.t.iWGjcg, {
     hook: e => (0, r.jsx)(i.MzZ, {
       onClick: e => {
-        e.preventDefault(), e.stopPropagation(), (0, a.A)(u.A.getArticleURL(x.MVz.TIGGER_PAWTECT_LEARN_MORE))
+        e.preventDefault(), e.stopPropagation(), (0, a.A)(u.A.getArticleURL(g.MVz.TIGGER_PAWTECT_LEARN_MORE))
       },
       useDefaultUnderlineStyles: false,
       children: e.join("")
     })
-  }) : g.intl.format(g.t.edpbxy, {
+  }) : h.intl.format(h.t.edpbxy, {
     hook: e => (0, r.jsx)(i.MzZ, {
       onClick: e => {
         e.preventDefault(), e.stopPropagation(), s.A.showAgeVerificationGetStartedModal({
@@ -38,7 +38,7 @@ function j() {
   })
 }
 
-function m(e) {
+function x(e) {
   let {
     className: t
   } = e, n = (0, o.yM)();
@@ -46,12 +46,12 @@ function m(e) {
     className: t,
     children: (0, r.jsx)(i.wx6, {
       type: n ? "info" : "warning",
-      children: (0, r.jsx)(j, {})
+      children: (0, r.jsx)(f, {})
     })
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     className: t
   } = e, n = (0, o.yM)();
@@ -70,12 +70,12 @@ function h(e) {
       }), (0, r.jsx)(i.Text, {
         color: "text-default",
         variant: "text-sm/medium",
-        children: (0, r.jsx)(j, {})
+        children: (0, r.jsx)(f, {})
       })]
     })
   })
 }
-var f = ((l = {})[l.TOP = 0] = "TOP", l[l.BOTTOM = 1] = "BOTTOM", l);
+var j = ((l = {})[l.TOP = 0] = "TOP", l[l.BOTTOM = 1] = "BOTTOM", l);
 
 function b(e) {
   let {
@@ -91,7 +91,7 @@ function b(e) {
       gap: 16
     }), (0, r.jsx)("div", {
       className: t,
-      children: n ? (0, r.jsx)(h, {}) : (0, r.jsx)(m, {})
+      children: n ? (0, r.jsx)(m, {}) : (0, r.jsx)(x, {})
     }), (null == s ? true : s.includes(1)) && (0, r.jsx)(i.cGx, {
       gap: 16
     })]

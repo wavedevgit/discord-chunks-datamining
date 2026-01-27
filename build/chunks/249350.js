@@ -15,9 +15,9 @@ var Chunk64700 = require("./64700.js"),
   Chunk847381 = require("./847381.js");
 
 function f(e) {
-  let t = (0, i.bG)([s.default], s.default.getCurrentUser),
+  let t = (0, i.bG)([o.default], o.default.getCurrentUser),
     n = (0, i.yK)([u.Ay], () => u.Ay.getShelfActivities(e)),
-    f = (0, i.bG)([o.A], () => o.A.testModeEmbeddedApplicationId),
+    f = (0, i.bG)([s.A], () => s.A.testModeEmbeddedApplicationId),
     p = n.map(e => e.application_id),
     _ = null != f ? [f, ...p] : p,
     h = (0, a.A)(_),

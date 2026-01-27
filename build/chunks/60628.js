@@ -36,19 +36,19 @@ let v = (0, Chunk64700.createContext)(null),
       validationBehavior: C
     }), w = (0, O.useRef)(null), [R, P] = (0, a._E)(!e["aria-label"] && !e["aria-labelledby"]), {
       groupProps: D,
-      labelProps: x,
-      fieldProps: L,
-      buttonProps: j,
-      dialogProps: M,
+      labelProps: L,
+      fieldProps: x,
+      buttonProps: M,
+      dialogProps: j,
       calendarProps: k,
       descriptionProps: U,
       errorMessageProps: G,
-      ...V
+      ...F
     } = (0, h.Q)({
       ...(0, a.SK)(e),
       label: P,
       validationBehavior: C
-    }, N, w), [F, B] = (0, O.useState)(null), H = (0, O.useCallback)(() => {
+    }, N, w), [V, B] = (0, O.useState)(null), H = (0, O.useCallback)(() => {
       w.current && B(w.current.offsetWidth + "px")
     }, []);
     (0, E.w)({
@@ -84,35 +84,35 @@ let v = (0, Chunk64700.createContext)(null),
           ref: w,
           isInvalid: N.isInvalid
         }],
-        [s.cQ, L],
+        [o.cQ, x],
         [r.k, {
-          ...j,
+          ...M,
           isPressed: N.isOpen
         }],
         [f.I, {
-          ...x,
+          ...L,
           ref: R,
           elementType: "span"
         }],
         [i.Yi, k],
-        [o.RG, N],
+        [s.RG, N],
         [p.n, {
           trigger: "DatePicker",
           triggerRef: w,
           placement: "bottom start",
           style: {
-            "--trigger-width": F
+            "--trigger-width": V
           },
           clearContexts: I
         }],
-        [o.MV, M],
+        [s.MV, j],
         [_.h, {
           slots: {
             description: U,
             errorMessage: G
           }
         }],
-        [l.C, V]
+        [l.C, F]
       ]
     }, O.createElement("div", {
       ...(0, b.v)(q, z, Y),

@@ -61,7 +61,7 @@ module.exports = function(e) {
       end: ">",
       contains: [n, i]
     },
-    s = {
+    o = {
       scope: "punctuation",
       relevance: 0,
       match: /\};|[;{}]/
@@ -93,7 +93,7 @@ module.exports = function(e) {
       match: /[a-z][a-z-,]+(?=;)/,
       relevance: 0,
       scope: "attr"
-    }, a, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, n, t, r, s, {
+    }, a, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, n, t, r, o, {
       begin: e.IDENT_RE + "::",
       keywords: ""
     }]

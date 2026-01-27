@@ -2,7 +2,7 @@
 /** chunk id: 454719, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./65821.js");
 var Chunk427157 = require("./427157.js"),
   Chunk576622 = require("./576622.js");
@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,15 +29,15 @@ function s(e) {
   return e
 }
 
-function o() {
+function s() {
   let e, t, n;
-  for (var a = arguments.length, o = Array(a), l = 0; l < a; l++) o[l] = arguments[l];
-  let c = o[0],
-    u = o[1];
-  if ("string" == typeof c && ("string" == typeof u || null == u)) e = c, t = u, n = o[2];
+  for (var a = arguments.length, s = Array(a), l = 0; l < a; l++) s[l] = arguments[l];
+  let c = s[0],
+    u = s[1];
+  if ("string" == typeof c && ("string" == typeof u || null == u)) e = c, t = u, n = s[2];
   else if (c instanceof r.A && ("object" == typeof u || null == u)) e = c.id, t = c.getAvatarURL(true, 80), n = u;
   else throw Error("[preloadUserProfileForPopout] Invalid arguments");
-  return null == e ? Promise.resolve() : (0, i.A)(e, t, s({
+  return null == e ? Promise.resolve() : (0, i.A)(e, t, o({
     withMutualFriends: true,
     withMutualGuilds: true,
     waitForRefetch: false

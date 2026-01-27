@@ -31,7 +31,7 @@ let v = (0, Chunk64700.createContext)(null),
     [e, t] = (0, i.JT)(e, t, v);
     let {
       validationBehavior: d
-    } = (0, i.CC)(s.c) || {}, f = null != (r = null != (n = e.validationBehavior) ? n : d) ? r : "native", p = (0, m.h)({
+    } = (0, i.CC)(o.c) || {}, f = null != (r = null != (n = e.validationBehavior) ? n : d) ? r : "native", p = (0, m.h)({
       ...e,
       validationBehavior: f
     }), [_, h] = (0, i._E)(!e["aria-label"] && !e["aria-labelledby"]), {
@@ -68,7 +68,7 @@ let v = (0, Chunk64700.createContext)(null),
     }, O.createElement(i.Kq, {
       values: [
         [A, p],
-        [o.I, {
+        [s.I, {
           ...y,
           ref: _,
           elementType: "span"
@@ -86,13 +86,13 @@ let v = (0, Chunk64700.createContext)(null),
   S = (0, Chunk64700.forwardRef)(function(e, t) {
     var n, a;
     let {
-      inputRef: o = null,
+      inputRef: s = null,
       ...l
     } = e;
     [e, t] = (0, i.JT)(l, t, r.BP);
     let {
       validationBehavior: c
-    } = (0, i.CC)(s.c) || {}, m = null != (a = null != (n = e.validationBehavior) ? n : c) ? a : "native", v = (0, O.useContext)(A), I = (0, y.U)((0, O.useMemo)(() => (0, b.P)(o, true !== e.inputRef ? e.inputRef : null), [o, e.inputRef])), {
+    } = (0, i.CC)(o.c) || {}, m = null != (a = null != (n = e.validationBehavior) ? n : c) ? a : "native", v = (0, O.useContext)(A), I = (0, y.U)((0, O.useMemo)(() => (0, b.P)(s, true !== e.inputRef ? e.inputRef : null), [s, e.inputRef])), {
       labelProps: S,
       inputProps: T,
       isSelected: C,
@@ -110,14 +110,14 @@ let v = (0, Chunk64700.createContext)(null),
       validationBehavior: m
     }, (0, g.H)(e), I), {
       isFocused: D,
-      isFocusVisible: x,
-      focusProps: L
-    } = (0, p.o)(), j = N || w, {
-      hoverProps: M,
+      isFocusVisible: L,
+      focusProps: x
+    } = (0, p.o)(), M = N || w, {
+      hoverProps: j,
       isHovered: k
     } = (0, _.M)({
       ...e,
-      isDisabled: j
+      isDisabled: M
     }), U = (0, i.Sl)({
       ...e,
       defaultClassName: "react-aria-Checkbox",
@@ -127,7 +127,7 @@ let v = (0, Chunk64700.createContext)(null),
         isPressed: R,
         isHovered: k,
         isFocused: D,
-        isFocusVisible: x,
+        isFocusVisible: L,
         isDisabled: N,
         isReadOnly: w,
         isInvalid: P,
@@ -137,7 +137,7 @@ let v = (0, Chunk64700.createContext)(null),
       global: true
     });
     return delete G.id, delete G.onClick, O.createElement("label", {
-      ...(0, u.v)(G, S, M, U),
+      ...(0, u.v)(G, S, j, U),
       ref: t,
       slot: e.slot || true,
       "data-selected": C || true,
@@ -145,7 +145,7 @@ let v = (0, Chunk64700.createContext)(null),
       "data-pressed": R || true,
       "data-hovered": k || true,
       "data-focused": D || true,
-      "data-focus-visible": x || true,
+      "data-focus-visible": L || true,
       "data-disabled": N || true,
       "data-readonly": w || true,
       "data-invalid": P || true,
@@ -153,7 +153,7 @@ let v = (0, Chunk64700.createContext)(null),
     }, O.createElement(h.s, {
       elementType: "span"
     }, O.createElement("input", {
-      ...(0, u.v)(T, L),
+      ...(0, u.v)(T, x),
       ref: I
     })), U.children)
   })

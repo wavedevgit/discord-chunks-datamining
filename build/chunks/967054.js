@@ -22,26 +22,26 @@ function _(e) {
     [n, a] = (0, r.useState)({});
   return (0, r.useEffect)(() => {
     null == e || a({
-      "--custom-nameplate": (t === o.NJ.LIGHT ? e.palette.lightBackground : e.palette.darkBackground) + u,
-      "--custom-nameplate-neutral": t !== o.NJ.LIGHT ? "rgba(0, 0, 0, 0.22)" : "rgba(255, 255, 255  , 0.22)",
-      "--custom-nameplate-neutral-hovered": t !== o.NJ.LIGHT ? "rgba(0, 0, 0, 0.33)" : "rgba(255, 255, 255  , 0.33)"
+      "--custom-nameplate": (t === s.NJ.LIGHT ? e.palette.lightBackground : e.palette.darkBackground) + u,
+      "--custom-nameplate-neutral": t !== s.NJ.LIGHT ? "rgba(0, 0, 0, 0.22)" : "rgba(255, 255, 255  , 0.22)",
+      "--custom-nameplate-neutral-hovered": t !== s.NJ.LIGHT ? "rgba(0, 0, 0, 0.33)" : "rgba(255, 255, 255  , 0.33)"
     })
   }, [e, t]), n
 }
 
-function h(e, t, n, s, o) {
+function h(e, t, n, o, s) {
   let l = (0, i.Ay)(),
     c = (0, r.useMemo)(() => null == t ? null : m({
       palette: t.palette,
       theme: l,
       hover: n,
-      selected: s,
-      placement: o
-    }), [t, n, s, l, o]),
+      selected: o,
+      placement: s
+    }), [t, n, o, l, s]),
     [u, d] = (0, r.useState)(null != c ? {
       background: c
     } : {}),
-    f = o === a.u.MEMBER_LIST;
+    f = s === a.u.MEMBER_LIST;
   return (0, r.useEffect)(() => {
     if (null == c) return;
     if (null == e || null == e.current) return void d({
@@ -68,8 +68,8 @@ function m(e) {
     selected: i,
     placement: _
   } = e;
-  if (!(0, s.wT)(t)) return;
-  let h = n === o.NJ.LIGHT,
+  if (!(0, o.wT)(t)) return;
+  let h = n === s.NJ.LIGHT,
     m = h ? t.lightBackground : t.darkBackground;
   if (_ === a.u.MEMBER_LIST || _ === a.u.CHANNEL) {
     let e = "".concat(i ? p : r && _ === a.u.MEMBER_LIST ? d : u);

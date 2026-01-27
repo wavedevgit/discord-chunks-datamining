@@ -1,25 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 233317, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 233317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => C
+  A: () => A
 });
-var r, Chunk311907 = require("./311907.js"),
+var r, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk166403 = require("./166403.js"),
   Chunk677185 = require("./677185.js"),
   Chunk88001 = require("./88001.js"),
   Chunk652215 = require("./652215.js");
-
-function u(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-let d = {
+let u = {
   membersData: {
     data: null,
     isFetching: false,
@@ -32,145 +22,127 @@ let d = {
   }
 };
 
-function f() {
-  d.membersData.isFetching = true
+function _() {
+  u.membersData.isUpdating = true
 }
 
 function p(e) {
   let {
-    members: t
-  } = e;
-  d.membersData.data = t, d.membersData.isFetching = false
-}
-
-function _() {
-  d.membersData.isFetching = false
-}
-
-function h() {
-  d.membershipData.isFetching = true
-}
-
-function m(e) {
-  let {
-    membership: t
-  } = e;
-  d.membershipData.data = t, d.membershipData.isFetching = false, d.membershipData.hasFetched = true
-}
-
-function g() {
-  d.membershipData.isFetching = false, d.membershipData.hasFetched = true
-}
-
-function E() {
-  d.membershipData.isFetching = false, d.membershipData.hasFetched = true
-}
-
-function y() {
-  return !d.membershipData.isFetching && (a.h.wait(() => (0, o.JV)().catch(c.FXj)), true)
-}
-
-function b() {
-  d.membersData.isUpdating = true
-}
-
-function O(e) {
-  let {
     subscriptionId: t
   } = e;
-  a.h.wait(() => (0, o.mm)(t).catch(c.FXj)), d.membersData.isUpdating = false
+  s.h.wait(() => (0, o.mm)(t).catch(d.FXj)), u.membersData.isUpdating = false
 }
 
-function v(e) {
-  let {
-    errorCode: t,
-    subscriptionId: n
-  } = e;
-  if (t === l.Hy.BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED) return a.h.wait(() => (0, o.mm)(n).catch(c.FXj)), d.membersData.isUpdating = false, true;
-  A()
+function m() {
+  u.membersData.isUpdating = false
 }
-
-function A() {
-  d.membersData.isUpdating = false
-}
-
-function I(e) {
-  let {
-    subscriptionId: t
-  } = e;
-  return !d.membersData.isFetching && (a.h.wait(() => (0, o.mm)(t).catch(c.FXj)), true)
-}
-
-function S() {
-  d = {
-    membersData: {
-      data: null,
-      isFetching: false,
-      isUpdating: false
-    },
-    membershipData: {
-      data: null,
-      isFetching: false,
-      hasFetched: false
-    }
-  }
-}
-class T extends(r = Chunk311907.Ay.Store) {
+class g extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.A)
+    this.waitFor(a.A)
   }
   getMembers() {
-    return d.membersData.data
+    return u.membersData.data
   }
   isFetchingMembers() {
-    return d.membersData.isFetching
+    return u.membersData.isFetching
   }
   isUpdatingMembers() {
-    return d.membersData.isUpdating
+    return u.membersData.isUpdating
   }
   hasFetchedMembers() {
-    return null !== d.membersData.data
+    return null !== u.membersData.data
   }
   getMembership() {
-    return d.membershipData.data
+    return u.membershipData.data
   }
   isFetchingMembership() {
-    return d.membershipData.isFetching
+    return u.membershipData.isFetching
   }
   hasFetchedMembership() {
-    return null !== d.membershipData.data
+    return null !== u.membershipData.data
   }
   getNumUsedSeats() {
-    return null == d.membersData.data ? 0 : d.membersData.data.members.length
+    return null == u.membersData.data ? 0 : u.membersData.data.members.length
   }
   getNumAvailableInvites() {
-    if (null == d.membersData.data) return l.LM;
-    let e = d.membersData.data.members.length + d.membersData.data.invitedUsers.length;
-    return Math.max(0, l.LM - e)
+    if (null == u.membersData.data) return c.LM;
+    let e = u.membersData.data.members.length + u.membersData.data.invitedUsers.length;
+    return Math.max(0, c.LM - e)
   }
   getNumTotalSeats() {
-    return l.LM
+    return c.LM
   }
-}
-u(T, "displayName", "PremiumGroupStore");
-let C = new T(Chunk73153.h, {
-  PREMIUM_GROUP_MEMBERS_REQUEST: I,
-  PREMIUM_GROUP_MEMBERS_FETCH_START: f,
-  PREMIUM_GROUP_MEMBERS_FETCH_SUCCESS: p,
-  PREMIUM_GROUP_MEMBERS_FETCH_FAILURE: _,
-  PREMIUM_GROUP_MEMBERSHIP_REQUEST: y,
-  PREMIUM_GROUP_MEMBERSHIP_FETCH_START: h,
-  PREMIUM_GROUP_MEMBERSHIP_FETCH_SUCCESS: m,
-  PREMIUM_GROUP_MEMBERSHIP_NOT_FOUND: g,
-  PREMIUM_GROUP_MEMBERSHIP_FETCH_FAILURE: E,
-  PREMIUM_GROUP_INVITE_USERS_START: b,
-  PREMIUM_GROUP_INVITE_USERS_SUCCESS: O,
-  PREMIUM_GROUP_INVITE_USERS_FAILURE: A,
-  PREMIUM_GROUP_REMOVE_MEMBER_START: b,
-  PREMIUM_GROUP_REMOVE_MEMBER_SUCCESS: O,
-  PREMIUM_GROUP_REMOVE_MEMBER_FAILURE: A,
-  PREMIUM_GROUP_REMOVE_INVITE_START: b,
-  PREMIUM_GROUP_REMOVE_INVITE_SUCCESS: O,
-  PREMIUM_GROUP_REMOVE_INVITE_FAILURE: v,
-  LOGOUT: S
+}(r = "displayName") in g ? Object.defineProperty(g, r, {
+  value: "PremiumGroupStore",
+  enumerable: true,
+  configurable: true,
+  writable: true
+}) : g[r] = "PremiumGroupStore";
+let A = new g(Chunk73153.h, {
+  PREMIUM_GROUP_MEMBERS_REQUEST: function(e) {
+    let {
+      subscriptionId: t
+    } = e;
+    return !u.membersData.isFetching && (s.h.wait(() => (0, o.mm)(t).catch(d.FXj)), true)
+  },
+  PREMIUM_GROUP_MEMBERS_FETCH_START: function() {
+    u.membersData.isFetching = true
+  },
+  PREMIUM_GROUP_MEMBERS_FETCH_SUCCESS: function(e) {
+    let {
+      members: t
+    } = e;
+    u.membersData.data = t, u.membersData.isFetching = false
+  },
+  PREMIUM_GROUP_MEMBERS_FETCH_FAILURE: function() {
+    u.membersData.isFetching = false
+  },
+  PREMIUM_GROUP_MEMBERSHIP_REQUEST: function() {
+    return !u.membershipData.isFetching && (s.h.wait(() => (0, o.JV)().catch(d.FXj)), true)
+  },
+  PREMIUM_GROUP_MEMBERSHIP_FETCH_START: function() {
+    u.membershipData.isFetching = true
+  },
+  PREMIUM_GROUP_MEMBERSHIP_FETCH_SUCCESS: function(e) {
+    let {
+      membership: t
+    } = e;
+    u.membershipData.data = t, u.membershipData.isFetching = false, u.membershipData.hasFetched = true
+  },
+  PREMIUM_GROUP_MEMBERSHIP_NOT_FOUND: function() {
+    u.membershipData.isFetching = false, u.membershipData.hasFetched = true
+  },
+  PREMIUM_GROUP_MEMBERSHIP_FETCH_FAILURE: function() {
+    u.membershipData.isFetching = false, u.membershipData.hasFetched = true
+  },
+  PREMIUM_GROUP_INVITE_USERS_START: _,
+  PREMIUM_GROUP_INVITE_USERS_SUCCESS: p,
+  PREMIUM_GROUP_INVITE_USERS_FAILURE: m,
+  PREMIUM_GROUP_REMOVE_MEMBER_START: _,
+  PREMIUM_GROUP_REMOVE_MEMBER_SUCCESS: p,
+  PREMIUM_GROUP_REMOVE_MEMBER_FAILURE: m,
+  PREMIUM_GROUP_REMOVE_INVITE_START: _,
+  PREMIUM_GROUP_REMOVE_INVITE_SUCCESS: p,
+  PREMIUM_GROUP_REMOVE_INVITE_FAILURE: function(e) {
+    let {
+      errorCode: t,
+      subscriptionId: n
+    } = e;
+    if (t === c.Hy.BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED) return s.h.wait(() => (0, o.mm)(n).catch(d.FXj)), u.membersData.isUpdating = false, true;
+    m()
+  },
+  LOGOUT: function() {
+    u = {
+      membersData: {
+        data: null,
+        isFetching: false,
+        isUpdating: false
+      },
+      membershipData: {
+        data: null,
+        isFetching: false,
+        hasFetched: false
+      }
+    }
+  }
 })

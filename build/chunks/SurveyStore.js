@@ -2,7 +2,7 @@
 /** chunk id: 274184, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => Q,
+  Ay: () => X,
   bh: () => w
 }), require("./896048.js");
 var r, Chunk989349 = require("./989349.js"),
@@ -77,17 +77,17 @@ let v = {
 var D = function(e) {
   return e.IS_OWNER = "is_owner", e.IS_ADMIN = "is_admin", e.IS_COMMUNITY = "is_community", e.GUILD_SIZE = "guild_size", e.IS_HUB = "is_hub", e.IS_VIEWING = "is_viewing", e.GUILD_PERMISSIONS = "guild_permissions", e.GUILD_SIZE_ALL = "guild_size_all", e
 }(D || {});
-let x = new Set(Object.values(D));
+let L = new Set(Object.values(D));
 
-function L() {
+function x() {
   return null == A.lastFetched || Date.now() - A.lastFetched >= w
 }
 
-function j() {
-  !N && (L() || null != A.surveyOverride) && (N = true, (0, u.BC)(A.surveyOverride, true))
+function M() {
+  !N && (x() || null != A.surveyOverride) && (N = true, (0, u.BC)(A.surveyOverride, true))
 }
 
-function M(e) {
+function j(e) {
   return U(e) && k(e)
 }
 
@@ -99,24 +99,24 @@ function k(e) {
   } = e;
   if (0 === t.length) returntrue;
   for (let e of t)
-    if (!x.has(e)) returnfalse;
+    if (!L.has(e)) returnfalse;
   let i = t.includes("guild_size_all"),
     a = true;
-  for (let o of p.A.getGuildsArray()) {
+  for (let s of p.A.getGuildsArray()) {
     if (i || t.includes("guild_size")) {
-      let e = f.A.getMemberCount(o.id);
+      let e = f.A.getMemberCount(s.id);
       if (null == e || null != n[0] && e < n[0] || null != n[1] && e > n[1]) {
         a = false;
         continue
       }
     }
-    if (t.includes("is_community") && !o.features.has(g.GuildFeatures.COMMUNITY) || t.includes("is_hub") && !o.features.has(g.GuildFeatures.HUB)) continue;
+    if (t.includes("is_community") && !s.features.has(g.GuildFeatures.COMMUNITY) || t.includes("is_hub") && !s.features.has(g.GuildFeatures.HUB)) continue;
     if (t.includes("guild_permissions")) {
       if (0 === r.length) continue;
       let e = false;
       for (let t of r) try {
-        let n = s.iu(t);
-        if (_.A.can(n, o)) {
+        let n = o.iu(t);
+        if (_.A.can(n, s)) {
           e = true;
           break
         }
@@ -124,12 +124,12 @@ function k(e) {
       if (!e) continue
     }
     let l = m.default.getCurrentUser(),
-      c = (null == l ? true : l.id) === o.ownerId,
-      u = _.A.can(g.xBc.ADMINISTRATOR, o);
+      c = (null == l ? true : l.id) === s.ownerId,
+      u = _.A.can(g.xBc.ADMINISTRATOR, s);
     if (t.includes("is_owner") && !c || t.includes("is_admin") && !u) continue;
     null == (T = null != T ? T : {})[e.key] && (T[e.key] = e);
     let d = h.A.getGuildId(),
-      p = null != d && d === o.id;
+      p = null != d && d === s.id;
     if ((!t.includes("is_viewing") || p) && !i) returntrue
   }
   return !!i && !!a
@@ -144,7 +144,7 @@ function G(e) {
   return null == t || a()().diff(t, "day") < e
 }
 
-function V(e) {
+function F(e) {
   let {
     survey: t,
     isActionTriggered: n
@@ -152,13 +152,13 @@ function V(e) {
   N = false, A.lastFetched = Date.now(), n && (A.lastActionTriggered = Date.now()), null == A.hiddenSurveys && (A.hiddenSurveys = {});
   let r = null != t,
     i = r && null == A.hiddenSurveys[t.key],
-    a = r && M(t);
+    a = r && j(t);
   G(P);
-  let s = false;
-  C = i && a && !s ? t : null
+  let o = false;
+  C = i && a && !o ? t : null
 }
 
-function F(e) {
+function V(e) {
   let {
     id: t
   } = e;
@@ -185,12 +185,12 @@ function W() {
 }
 
 function K(e) {
-  return !!M(e) || (C = null, false)
+  return !!j(e) || (C = null, false)
 }
 
 function z() {
   let e = Object.values(T = null != T ? T : {})[0];
-  return null != e && M(e) ? void V({
+  return null != e && j(e) ? void F({
     type: "SURVEY_FETCHED",
     survey: e
   }) : null != C && void(C = null)
@@ -204,7 +204,7 @@ function q() {
 function Z() {
   A.lastSeen = Date.now()
 }
-class X extends(r = Chunk311907.Ay.PersistedStore) {
+class Q extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     this.waitFor(f.A, p.A, _.A, h.A, m.default), A = null != e ? e : v, this.syncWith([h.A], q)
   }
@@ -212,7 +212,7 @@ class X extends(r = Chunk311907.Ay.PersistedStore) {
     return A
   }
   getCurrentSurvey() {
-    return L() ? null : C
+    return x() ? null : C
   }
   getSurveyOverride() {
     return A.surveyOverride
@@ -225,7 +225,7 @@ class X extends(r = Chunk311907.Ay.PersistedStore) {
     return Date.now() - (null != (e = A.lastActionTriggered) ? e : 0) >= R
   }
 }
-E(X, "displayName", "SurveyStore"), E(X, "persistKey", "SurveyStore"), E(X, "migrations", [e => {
+E(Q, "displayName", "SurveyStore"), E(Q, "persistKey", "SurveyStore"), E(Q, "migrations", [e => {
   let t = y({}, e);
   return delete t.validSurveys, delete t.currentSurvey, delete t.iosIsPushNotificationClicked, delete t.iosIsInviteShown, delete t.iosFirstRunDate, t
 }, e => {
@@ -239,12 +239,12 @@ E(X, "displayName", "SurveyStore"), E(X, "persistKey", "SurveyStore"), E(X, "mig
     hiddenSurveys: null != (t = e.hiddenSurveys) ? t : {}
   })
 }]);
-let Q = new X(Chunk73153.h, {
-  CONNECTION_OPEN: j,
-  CONNECTION_RESUMED: j,
-  SURVEY_FETCHED: V,
+let X = new Q(Chunk73153.h, {
+  CONNECTION_OPEN: M,
+  CONNECTION_RESUMED: M,
+  SURVEY_FETCHED: F,
   SURVEY_HIDE: Y,
-  SURVEY_OVERRIDE: F,
+  SURVEY_OVERRIDE: V,
   PUSH_NOTIFICATION_CLICK: B,
   DISPLAYED_INVITE_SHOW: H,
   LOGOUT: W,

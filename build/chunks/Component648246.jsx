@@ -60,7 +60,7 @@ function f(e) {
     variant: l = "secondary",
     size: d = "sm"
   } = e, f = u(e, ["activity", "onAction", "variant", "size"]);
-  if (!(0, s.A)(t)) return null;
+  if (!(0, o.A)(t)) return null;
   let p = () => {
     null == n || n();
     let e = (0, a.A)(t);
@@ -69,7 +69,7 @@ function f(e) {
   return (0, r.jsx)(i.Button, c({
     variant: l,
     size: d,
-    text: o.intl.string(o.t.I6JG46),
+    text: s.intl.string(s.t.I6JG46),
     onClick: p,
     fullWidth: true
   }, f))

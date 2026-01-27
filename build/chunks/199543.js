@@ -8,7 +8,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk966597 = require("./966597.js"),
   Chunk216623 = require("./216623.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o() {
+function s() {
   i.A.getCurrentConfig({
     location: "saved_messages_manager"
   }, {
@@ -26,10 +26,10 @@ function o() {
 }
 class l extends Chunk439372.A {
   constructor(...e) {
-    super(...e), s(this, "actions", {
+    super(...e), o(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
-    }), s(this, "handlePostConnectionOpen", () => {
-      o()
+    }), o(this, "handlePostConnectionOpen", () => {
+      s()
     })
   }
 }

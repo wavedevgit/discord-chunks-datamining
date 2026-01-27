@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 662758, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 84704 **/
+/** chunk id: 662758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => u
+  default: () => E
 }), require("./896048.js"), require("./492834.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,68 +10,69 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk574592 = require("./574592.js");
 
-function c(e) {
+function u(e) {
   let {
     title: t,
     actionText: n,
-    children: c,
-    transitionState: u,
-    onClose: d,
-    handleSubmit: f,
-    onError: p,
-    skipErrorMsgAbortCode: _,
-    onPasswordChange: h
-  } = e, [m, g] = i.useState(""), [E, y] = i.useState(null), [b, O] = i.useState(false), v = e => null != _ && (null == e ? true : e.code) === _, A = e => {
-    e.preventDefault(), O(true), f(m).then(e => d(null != e ? e : true), e => {
-      null == e.body || (null == p || p(e.body), !v(e.body) && (e.body.password ? (y(e.body.password), O(false)) : e.body.message && (y(e.body.message), O(false))))
-    }).finally(() => O(false))
-  }, I = e => {
-    null == h || h(e), g(e)
-  }, S = i.useCallback(async () => {
-    await d()
-  }, [d]), T = i.Children.count(c) > 0 ? (0, r.jsx)(s.ZpM, {
-    type: s.ZpM.Types.WARNING,
-    className: l.Nr,
-    children: (0, r.jsx)(s.Text, {
+    children: u,
+    transitionState: E,
+    onClose: c,
+    handleSubmit: d,
+    onError: h,
+    skipErrorMsgAbortCode: R,
+    onPasswordChange: I
+  } = e, [p, _] = s.useState(""), [f, g] = s.useState(null), [C, m] = s.useState(false), b = s.useCallback(async () => {
+    await c()
+  }, [c]), A = s.Children.count(u) > 0 ? (0, l.jsx)(i.ZpM, {
+    type: i.ZpM.Types.WARNING,
+    className: r.Nr,
+    children: (0, l.jsx)(i.Text, {
       color: "currentColor",
       variant: "text-md/normal",
-      children: c
+      children: u
     })
   }) : null;
-  return (0, r.jsx)("form", {
-    onSubmit: A,
-    children: (0, r.jsxs)(a.aFV, {
+  return (0, l.jsx)("form", {
+    onSubmit: e => {
+      e.preventDefault(), m(true), d(p).then(e => c(null != e ? e : true), e => {
+        let t;
+        null != e.body && (null == h || h(e.body), t = e.body, (null == R || (null == t ? true : t.code) !== R) && (e.body.password ? (g(e.body.password), m(false)) : e.body.message && (g(e.body.message), m(false))))
+      }).finally(() => m(false))
+    },
+    children: (0, l.jsxs)(a.aFV, {
       title: t,
       actions: [{
         text: o.intl.string(o.t["ETE/oC"]),
-        onClick: S,
+        onClick: b,
         variant: "secondary"
       }, {
         text: null != n ? n : o.intl.string(o.t["cY+Oob"]),
         type: "submit",
-        disabled: b || 0 === m.length
+        disabled: C || 0 === p.length
       }],
-      onClose: S,
-      transitionState: u,
-      children: [T, (0, r.jsxs)("div", {
-        className: l.YK,
-        children: [(0, r.jsx)(s.ksK, {
+      onClose: b,
+      transitionState: E,
+      children: [A, (0, l.jsxs)("div", {
+        className: r.YK,
+        children: [(0, l.jsx)(i.ksK, {
           type: "password",
           label: o.intl.string(o.t["CIGa+7"]),
           autoComplete: "current-password",
           autoFocus: true,
-          value: m,
-          onChange: I,
+          value: p,
+          onChange: e => {
+            null == I || I(e), _(e)
+          },
           required: true
-        }), null != E && "" !== E ? (0, r.jsxs)(s.Text, {
+        }), null != f && "" !== f ? (0, l.jsxs)(i.Text, {
           variant: "text-xs/normal",
           color: "text-feedback-critical",
-          className: l.z3,
-          children: [" ", E, " "]
+          className: r.z3,
+          children: [" ", f, " "]
         }) : null]
       })]
     })
   })
 }
-c.key = () => "password-confirm-modal";
-let u = c
+u.key = () => "password-confirm-modal";
+let E = u

@@ -97,7 +97,7 @@ function N() {
 }
 class w extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.default, c.A), this.syncWith([o.default], () => true), this.syncWith([c.A], N);
+    this.waitFor(s.default, c.A), this.syncWith([s.default], () => true), this.syncWith([c.A], N);
     let e = a.w.get(g);
     if (null != e) try {
       y = new Date(e)

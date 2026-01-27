@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 434728, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 434728, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => s
 });
@@ -11,7 +10,7 @@ let s = {
   binds: ["mod+f"],
   comboKeysBindGlobal: true,
   action() {
-    if (!r.A.hasLayers()) return i._.dispatch(a.jej.FOCUS_SEARCH, {
+    if (!r.A.hasLayers()) return i._.dispatch(l.jej.FOCUS_SEARCH, {
       prefillCurrentChannel: true
     }), false
   }

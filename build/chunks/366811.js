@@ -12,7 +12,7 @@ var Chunk960488 = require("./960488.js"),
 
 function l(e) {
   let t = (0, r.B6)(null != e ? e : "", {
-    path: o.BVt.CHANNEL(s.pv.guildId(), s.pv.channelId({
+    path: s.BVt.CHANNEL(o.pv.guildId(), o.pv.channelId({
       optional: true
     }), ":messageId?")
   });
@@ -22,12 +22,12 @@ function l(e) {
       channelId: n
     } = t.params;
     return {
-      guildId: e === o.ME ? null : e,
+      guildId: e === s.ME ? null : e,
       channelId: null != n ? n : null
     }
   }
   let n = (0, r.B6)(null != e ? e : "", {
-    path: o.BVt.GUILD_BOOSTING_MARKETING(s.pv.guildId())
+    path: s.BVt.GUILD_BOOSTING_MARKETING(o.pv.guildId())
   });
   return null != n ? {
     guildId: n.params.guildId,

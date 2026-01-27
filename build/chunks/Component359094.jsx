@@ -37,7 +37,7 @@ async function O(e, t) {
       type: "PURCHASED_ITEMS_FESTIVITY_IS_FETCHING_WOW_MOMENT_MEDIA"
     });
     let a = e ? S.A : b.A;
-    window.matchMedia("(min-width: 1012px) and (max-width: 1980px)").matches || window.matchMedia("(min-height: 720px) and (max-height: 1408px)").matches ? a = e ? g.A : y.A : (window.matchMedia("(min-width: 1980px)").matches || window.matchMedia("(min-height: 1408px)").matches) && (a = e ? P.A : U.A);
+    window.matchMedia("(min-width: 1012px) and (max-width: 1980px)").matches || window.matchMedia("(min-height: 720px) and (max-height: 1408px)").matches ? a = e ? y.A : g.A : (window.matchMedia("(min-width: 1980px)").matches || window.matchMedia("(min-height: 1408px)").matches) && (a = e ? P.A : U.A);
     let n = await l.Bo.get({
         url: a,
         binary: true,
@@ -56,33 +56,33 @@ async function O(e, t) {
 }
 
 function C() {
-  let e = (0, _.bG)([u.A], () => u.A.useReducedMotion),
+  let e = (0, M.bG)([u.A], () => u.A.useReducedMotion),
     [t, a] = o.useState(null),
     {
       isFetchingMedia: i,
       canPlayWowMoment: s
-    } = (0, _.cf)([I.A], () => ({
+    } = (0, M.cf)([I.A], () => ({
       isFetchingMedia: I.A.isFetchingWowMomentMedia,
       canPlayWowMoment: I.A.canPlayWowMoment
     })),
     [l, r] = o.useState(false),
-    T = (0, p.Z5)(),
-    S = (0, p.TM)(),
+    T = (0, h.Z5)(),
+    S = (0, h.TM)(),
     b = T > 52 || false === T || S,
-    g = S ? "video/mp4" : "video/webm",
-    y = b && !e && s && null === t && false === i;
+    y = S ? "video/mp4" : "video/webm",
+    g = b && !e && s && null === t && false === i;
   o.useEffect(() => {
-    y && O(S, a)
-  }, [y, S, a]), o.useEffect(() => {
+    g && O(S, a)
+  }, [g, S, a]), o.useEffect(() => {
     function t() {
       !e && I.A.canPlayWowMoment && (r(true), n = setTimeout(() => {
-        r(false), U(true), h.default.track(W.HAw.PREMIUM_WOW_MOMENT_VIEWED, {
+        r(false), U(true), E.default.track(A.HAw.PREMIUM_WOW_MOMENT_VIEWED, {
           wow_moment_type: "gradient_highlight"
         }), (0, f.o)(false)
       }, 2e3))
     }
-    return E._.subscribe(W.jej.PREMIUM_SUBSCRIPTION_CREATED, t), () => {
-      E._.unsubscribe(W.jej.PREMIUM_SUBSCRIPTION_CREATED, t)
+    return p._.subscribe(A.jej.PREMIUM_SUBSCRIPTION_CREATED, t), () => {
+      p._.unsubscribe(A.jej.PREMIUM_SUBSCRIPTION_CREATED, t)
     }
   }, [e, b]);
   let [P, U] = o.useState(false), [F, C] = o.useState(false), H = (0, m.zhh)({
@@ -115,14 +115,14 @@ function C() {
     x = R || P;
   return (0, c.jsxs)("div", {
     className: d()({
-      [A.iE]: !x,
-      [A.iV]: x
+      [W.iE]: !x,
+      [W.iV]: x
     }),
     children: [R && (0, c.jsx)(w.A, {
       autoPlay: true,
-      className: A.tN,
+      className: W.tN,
       onPlay: () => {
-        clearTimeout(n), h.default.track(W.HAw.PREMIUM_WOW_MOMENT_VIEWED, {
+        clearTimeout(n), E.default.track(A.HAw.PREMIUM_WOW_MOMENT_VIEWED, {
           wow_moment_type: "wumpus_flight"
         })
       },
@@ -131,16 +131,16 @@ function C() {
       },
       children: (0, c.jsx)("source", {
         src: t,
-        type: g
+        type: y
       })
-    }), (0, c.jsx)(M.animated.div, {
-      className: A.$D,
+    }), (0, c.jsx)(_.animated.div, {
+      className: W.$D,
       style: H
-    }), (0, c.jsx)(M.animated.div, {
-      className: A.AX,
+    }), (0, c.jsx)(_.animated.div, {
+      className: W.AX,
       style: N,
       children: (0, c.jsxs)("svg", {
-        className: A.By,
+        className: W.By,
         viewBox: "0 0 848 1024",
         fill: "none",
         children: [(0, c.jsx)("path", {
@@ -155,5 +155,5 @@ function C() {
   })
 }
 let H = function() {
-  return (0, _.bG)([I.A], () => I.A.canPlayWowMoment) ? (0, c.jsx)(C, {}) : null
+  return (0, M.bG)([I.A], () => I.A.canPlayWowMoment) ? (0, c.jsx)(C, {}) : null
 }

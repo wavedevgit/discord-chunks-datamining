@@ -37,7 +37,7 @@ function E(e) {
       variant: "text-lg/normal",
       color: "text-default",
       children: m.intl.string(m.t.uT1CPa)
-    }), (0, r.jsx)(s.DZT, {
+    }), (0, r.jsx)(o.DZT, {
       variant: "heading-xxl/bold",
       color: "text-strong",
       children: n.name
@@ -65,7 +65,7 @@ function E(e) {
     className: g.wx,
     children: [(0, r.jsxs)("div", {
       className: g.Y,
-      children: [(0, r.jsx)(o.eu, {
+      children: [(0, r.jsx)(s.eu, {
         className: g.my,
         src: I,
         size: h._3.SIZE_80,
@@ -79,7 +79,7 @@ function E(e) {
         }), (0, r.jsx)("div", {
           className: g.pw
         })]
-      }), (0, r.jsx)(o.eu, {
+      }), (0, r.jsx)(s.eu, {
         className: g.my,
         src: S,
         size: h._3.SIZE_80,
@@ -100,7 +100,7 @@ function E(e) {
               children: "#".concat(t.discriminator)
             })]
           }, t.id)
-        }), (0, r.jsx)(s.DUT, {
+        }), (0, r.jsx)(o.DUT, {
           tag: "a",
           className: g.Pg,
           onClick: () => (0, d.Vh)(O, "oauth2_logout"),

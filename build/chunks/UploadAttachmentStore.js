@@ -53,16 +53,16 @@ let O = e => {
     channelId: n,
     draftType: r,
     allowOptimization: i
-  } = e, s = [...g(n, r)];
-  s.length + t.length > f.XgB && r !== d.C.SlashCommand && r !== d.C.ApplicationLauncherCommand ? l.A.show({
+  } = e, o = [...g(n, r)];
+  o.length + t.length > f.XgB && r !== d.C.SlashCommand && r !== d.C.ApplicationLauncherCommand ? l.A.show({
     title: p.intl.string(p.t.wOr6hB),
     body: p.intl.formatToPlainString(p.t["qqyp/e"], {
       limit: f.XgB
     })
   }) : (a().forEach(t, e => {
-    let t = new c.bK(e, n, s.length, i);
-    t.upload(), s.push(t)
-  }), y(n, r, s))
+    let t = new c.bK(e, n, o.length, i);
+    t.upload(), o.push(t)
+  }), y(n, r, o))
 };
 
 function v(e) {
@@ -96,10 +96,10 @@ function I(e) {
     filename: r,
     description: i,
     spoiler: a,
-    thumbnail: s,
-    draftType: o
-  } = e, l = [...g(t, o)].map(e => (e.id === n && (true !== r && (e.filename = r), true !== a && (e.spoiler = a), true !== i && (e.description = i), true !== s && (e.isThumbnail = s)), e));
-  y(t, o, l)
+    thumbnail: o,
+    draftType: s
+  } = e, l = [...g(t, s)].map(e => (e.id === n && (true !== r && (e.filename = r), true !== a && (e.spoiler = a), true !== i && (e.description = i), true !== o && (e.isThumbnail = o)), e));
+  y(t, s, l)
 }
 
 function S(e) {
@@ -109,8 +109,8 @@ function S(e) {
     file: r,
     draftType: i,
     allowOptimization: a
-  } = e, s = [...g(t, i)].filter(e => e.id !== n), o = new c.bK(r, t, true, a);
-  o.upload(), s.push(o), y(t, i, s)
+  } = e, o = [...g(t, i)].filter(e => e.id !== n), s = new c.bK(r, t, true, a);
+  s.upload(), o.push(s), y(t, i, o)
 }
 
 function T(e) {

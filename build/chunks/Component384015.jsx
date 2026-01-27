@@ -82,12 +82,12 @@ let m = e => {
     focusProps: E,
     onClick: y
   } = e, b = _(e, ["href", "className", "iconClassName", "rel", "target", "mimeType", "fileName", "focusProps", "onClick"]), O = i.useMemo(() => a.V.getDefaultLinkInterceptor(t), [t]), v = i.useCallback(e => {
-    o.default.track(l.HAw.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
+    s.default.track(l.HAw.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
       attachment_type: null == m ? true : m[0],
       attachment_subtype: null == m ? true : m[1]
     }), null == y || y(), null == O || O(e)
   }, [O, m, y]);
-  return null != g ? (0, r.jsx)(s.MzZ, p(d({
+  return null != g ? (0, r.jsx)(o.MzZ, p(d({
     href: t,
     onClick: v,
     target: h,
@@ -97,7 +97,7 @@ let m = e => {
     focusProps: E
   }, b), {
     children: g
-  })) : (0, r.jsx)(s.MzZ, p(d({
+  })) : (0, r.jsx)(o.MzZ, p(d({
     href: t,
     onClick: v,
     target: h,
@@ -106,7 +106,7 @@ let m = e => {
     "aria-label": c.intl.string(c.t["1WjMbC"]),
     focusProps: E
   }, b), {
-    children: (0, r.jsx)(s.s3U, {
+    children: (0, r.jsx)(o.s3U, {
       size: "md",
       color: "currentColor",
       className: u

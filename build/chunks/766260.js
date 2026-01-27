@@ -4,8 +4,8 @@
 var Chunk410323 = require("./410323.js"),
   i = 0x7fffffff,
   a = 36,
-  s = 1,
-  o = 26,
+  o = 1,
+  s = 26,
   l = 38,
   c = 700,
   u = 72,
@@ -40,7 +40,7 @@ var Chunk410323 = require("./410323.js"),
   },
   w = function(e, t, n) {
     var r = 0;
-    for (e = n ? y(e / c) : e >> 1, e += y(e / t); e > m * o >> 1;) e = y(e / m), r += a;
+    for (e = n ? y(e / c) : e >> 1, e += y(e / t); e > m * s >> 1;) e = y(e / m), r += a;
     return y(r + (m + 1) * e / (e + l))
   },
   R = function(e) {
@@ -61,7 +61,7 @@ var Chunk410323 = require("./410323.js"),
         if ((n = e[t]) < c && ++p > i) throw new g(h);
         if (n === c) {
           for (var S = p, T = a;;) {
-            var R = T <= _ ? s : T >= _ + o ? o : T - _;
+            var R = T <= _ ? o : T >= _ + s ? s : T - _;
             if (S < R) break;
             var P = S - R,
               D = a - R;

@@ -25,7 +25,7 @@ function h(e, t) {
     h = arguments.length > 3 && true !== arguments[3] ? arguments[3] : _.a.DEFAULT,
     {
       audioRef: m
-    } = r.useContext(o.A),
+    } = r.useContext(s.A),
     [g, E] = r.useState(false),
     y = (0, i.bG)([u.A], () => u.A.isPlayingSound(e.soundId), [e]);
   return {
@@ -35,7 +35,7 @@ function h(e, t) {
     isPlayingSound: y,
     previewSound: r.useCallback(async () => {
       let t = (0, f.A)(e.soundId),
-        r = new(await (0, s.A)(t));
+        r = new(await (0, o.A)(t));
       if (r.src = t, null != m.current && m.current.pause(), c.isPlatformEmbedded && h === _.a.VOICE) {
         var i;
         null == (i = r.setSinkId) || i.call(r, a.voiceSinkId)

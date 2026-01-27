@@ -13,24 +13,24 @@ let l = 5e3;
 
 function c(e) {
   switch (e) {
-    case s.uD.CHAT_INPUT:
+    case o.uD.CHAT_INPUT:
       return "chat_input";
-    case s.uD.MENTION:
+    case o.uD.MENTION:
       return "mention";
-    case s.uD.VOICE_USER:
+    case o.uD.VOICE_USER:
       return "voice_user"
   }
 }
 
 function u(e) {
   switch (e) {
-    case s.k.CHAT_INPUT:
+    case o.k.CHAT_INPUT:
       return "chat_input";
-    case s.k.MEMBER_USER:
+    case o.k.MEMBER_USER:
       return "member_user";
-    case s.k.REACTION:
+    case o.k.REACTION:
       return "reaction";
-    case s.k.CALL_TILE:
+    case o.k.CALL_TILE:
       return "call_tile"
   }
 }
@@ -50,19 +50,19 @@ let f = i().throttle(e => {
     combosEnabled: n,
     combosRequiredCount: r,
     screenshakeEnabled: i,
-    shakeIntensity: s,
+    shakeIntensity: o,
     screenshakeEnabledLocations: l,
     confettiEnabled: f,
     confettiSize: p,
     confettiCount: _,
     confettiEnabledLocations: h
   } = e;
-  a.default.track(o.HAw.POGGERMODE_SETTINGS_UPDATED, {
+  a.default.track(s.HAw.POGGERMODE_SETTINGS_UPDATED, {
     enabled: t,
     combos_enabled: n,
     combos_required_count: r,
     screenshake_enabled: i,
-    shake_intensity: s,
+    shake_intensity: o,
     screenshake_enabled_locations: d(l, c),
     confetti_enabled: f,
     confetti_size: p,

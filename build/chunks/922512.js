@@ -2,7 +2,7 @@
 /** chunk id: 922512, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk315069 = require("./315069.js"),
   Chunk985018 = require("./985018.jsx");
@@ -15,9 +15,9 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends Chunk315069.A {
+class o extends Chunk315069.A {
   static createFromServer(e) {
-    return new s({
+    return new o({
       id: e.id,
       liveBuildId: e.live_build_id,
       name: e.name

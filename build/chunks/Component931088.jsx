@@ -20,7 +20,7 @@ let h = e => {
     let {
       transitionState: t,
       onClose: n,
-      premiumSubscription: o,
+      premiumSubscription: s,
       premiumType: l,
       churnDiscount: c,
       planId: u,
@@ -32,7 +32,7 @@ let h = e => {
       activeStep: y
     } = e, {
       analyticsLocations: b
-    } = (0, s.Ay)(a.A.USER_SETTINGS), [O, v] = i.useState(m(y));
+    } = (0, o.Ay)(a.A.USER_SETTINGS), [O, v] = i.useState(m(y));
     return (0, i.useEffect)(() => {
       v(m(y))
     }, [y]), (0, r.jsx)(d.CancellationContext.Provider, {
@@ -41,7 +41,7 @@ let h = e => {
         premiumType: l,
         onClose: n,
         transitionState: t,
-        premiumSubscription: o,
+        premiumSubscription: s,
         analyticsLocations: b,
         analyticsLocation: _.ThZ.USER_SETTINGS,
         confettiCanvas: null,
@@ -76,7 +76,7 @@ let h = e => {
       case u.g.CONFIRM_DISCOUNT:
         return (0, r.jsx)(l.M, {});
       case u.g.CONFIRM:
-        return (0, r.jsx)(o.r, {});
+        return (0, r.jsx)(s.r, {});
       case u.g.PREVIEW:
         return (0, r.jsx)(f.E, {});
       case u.g.WHAT_YOU_LOSE:

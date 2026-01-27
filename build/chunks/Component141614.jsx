@@ -28,8 +28,8 @@ function b(e) {
     guildBoostCount: n,
     premiumTier: r,
     isRevealed: a,
-    useReducedMotion: s
-  } = e, [l, c] = i.useState(s ? r : false), [u, p] = i.useState(0 === n), [_, m] = i.useState(false), y = i.useRef(true);
+    useReducedMotion: o
+  } = e, [l, c] = i.useState(o ? r : false), [u, p] = i.useState(0 === n), [_, m] = i.useState(false), y = i.useRef(true);
 
   function b(e) {
     let {
@@ -43,7 +43,7 @@ function b(e) {
   }
   let {
     widthFactor: O
-  } = (0, o.zhh)({
+  } = (0, s.zhh)({
     from: {
       widthFactor: 0
     },
@@ -79,7 +79,7 @@ function b(e) {
 function O(e) {
   let {
     guild: t
-  } = e, n = (0, s.bG)([l.A], () => l.A.useReducedMotion), [o, h] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), v = o || n, {
+  } = e, n = (0, o.bG)([l.A], () => l.A.useReducedMotion), [s, h] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
     fillFactor: A,
     totalAvailableBoostsCount: I
   } = i.useMemo(() => (0, c.$U)(t), [t]), {

@@ -1,7 +1,7 @@
 /** Chunk was on 52081 **/
 /** chunk id: 754487, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  openCreateGuildModal: () => _,
+  openCreateGuildModal: () => d,
   updateCreateGuildModal: () => p
 });
 var Chunk627968 = require("./627968.js");
@@ -14,7 +14,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk315290 = require("./315290.js");
 
-function d(e, t, n, o) {
+function _(e, t, n, l) {
   return (0, r.jsx)(a.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -34,30 +34,30 @@ function d(e, t, n, o) {
     return e
   }({
     onSuccess: t => {
-      l.A.flowStep(u.do.CREATE_GUILD, u.jC.SUCCESS), e.onClose(), null == o || o(t)
+      i.A.flowStep(u.do.CREATE_GUILD, u.jC.SUCCESS), e.onClose(), null == l || l(t)
     },
     onSlideChange: e => (function(e, t) {
       switch (e) {
         case s.oS.GUILD_TEMPLATES:
-          l.A.flowStepOrStart(u.do.CREATE_GUILD, u.jC.GUILD_TEMPLATES), i.default.track(c.HAw.OPEN_MODAL, {
+          i.A.flowStepOrStart(u.do.CREATE_GUILD, u.jC.GUILD_TEMPLATES), o.default.track(c.HAw.OPEN_MODAL, {
             type: "Create Guild Templates",
             location: t
           });
           break;
         case s.oS.CUSTOMIZE_GUILD:
-          l.A.flowStep(u.do.CREATE_GUILD, u.jC.GUILD_CREATE), i.default.track(c.HAw.OPEN_MODAL, {
+          i.A.flowStep(u.do.CREATE_GUILD, u.jC.GUILD_CREATE), o.default.track(c.HAw.OPEN_MODAL, {
             type: "Create Guild Step 2",
             location: t
           });
           break;
         case s.oS.CREATION_INTENT:
-          i.default.track(c.HAw.OPEN_MODAL, {
+          o.default.track(c.HAw.OPEN_MODAL, {
             type: "Server Intent Discovery",
             location: t
           });
           break;
         case s.oS.JOIN_GUILD:
-          l.A.flowStep(u.do.CREATE_GUILD, u.jC.JOIN_GUILD), i.default.track(c.HAw.OPEN_MODAL, {
+          i.A.flowStep(u.do.CREATE_GUILD, u.jC.JOIN_GUILD), o.default.track(c.HAw.OPEN_MODAL, {
             type: "Join Guild",
             location: t
           })
@@ -67,13 +67,13 @@ function d(e, t, n, o) {
     hasJoinButton: true
   }, e))
 }
-let _ = e => {
+let d = e => {
     let {
       initialSlide: t,
       location: n,
       onSuccess: r
     } = e;
-    (0, o.qfG)(e => d(e, t, n, r), {
+    (0, l.qfG)(e => _(e, t, n, r), {
       modalKey: s.fc
     })
   },
@@ -82,5 +82,5 @@ let _ = e => {
       slide: t,
       location: n
     } = e;
-    (0, o.zbz)(s.fc, e => d(e, t, n))
+    (0, l.zbz)(s.fc, e => _(e, t, n))
   }

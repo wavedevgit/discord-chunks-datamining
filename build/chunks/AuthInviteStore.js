@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk860689 = require("./860689.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,14 +23,14 @@ function c(e) {
     invite: t
   } = e, n = t.guild;
   if (null == n) returnfalse;
-  l[n.id] = (0, s.DY)(n)
+  l[n.id] = (0, o.DY)(n)
 }
 class u extends(r = Chunk311907.Ay.Store) {
   getGuild(e) {
     return l[e]
   }
 }
-o(u, "displayName", "AuthInviteStore");
+s(u, "displayName", "AuthInviteStore");
 let d = new u(Chunk73153.h, {
   AUTH_INVITE_UPDATE: c
 })

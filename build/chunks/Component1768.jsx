@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk736653 = require("./736653.js"),
@@ -71,7 +71,7 @@ function I(e) {
     placeholder: t,
     onEnter: n,
     setEditorRef: a,
-    showEmojiButton: o = false,
+    showEmojiButton: s = false,
     renderAttachButton: l,
     autoFocus: c = true,
     onFocus: p,
@@ -89,7 +89,7 @@ function I(e) {
     ref: T,
     placeholder: t,
     editorClassName: h,
-    className: s()(E.N8, h),
+    className: o()(E.N8, h),
     showRemainingCharsAfterCount: false,
     allowNewLines: false,
     maxCharacterCount: 200,
@@ -97,7 +97,7 @@ function I(e) {
     onChange: (e, t, n) => {
       g(t), O(n)
     },
-    type: o ? v(b({}, S), {
+    type: s ? v(b({}, S), {
       emojis: {
         button: true
       }
@@ -144,12 +144,12 @@ let S = (e, t) => {
     let {
       onSelectEmoji: t,
       onClick: n
-    } = e, a = (0, c.Ay)(), [s, u] = i.useState(false), d = i.useRef(null), f = i.useRef(null);
+    } = e, a = (0, c.Ay)(), [o, u] = i.useState(false), d = i.useRef(null), f = i.useRef(null);
     return S(() => u(false), d), (0, r.jsx)(l.YNO, {
       targetElementRef: f,
       align: "right",
       position: "top",
-      shouldShow: s,
+      shouldShow: o,
       disablePointerEvents: false,
       renderPopout: () => (0, r.jsx)(l.NPJ, {
         theme: a,
@@ -177,7 +177,7 @@ let S = (e, t) => {
           })
         })
       }),
-      children: () => (0, r.jsx)(o.m, {
+      children: () => (0, r.jsx)(s.m, {
         text: g.intl.string(g.t.lfIHs4),
         children: (0, r.jsx)("div", {
           ref: f,

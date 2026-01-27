@@ -9,7 +9,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
   Chunk732139 = require("./732139.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -52,31 +52,31 @@ function u(e, t) {
 }
 let d = e => {
     switch (e) {
-      case s.R2.RECENT:
+      case o.R2.RECENT:
         return a.O4;
-      case s.R2.FAVORITES:
+      case o.R2.FAVORITES:
         return a.Gg5;
-      case s.R2.TOP_GUILD_EMOJI:
+      case o.R2.TOP_GUILD_EMOJI:
         return a.OR;
-      case s.R2.PEOPLE:
+      case o.R2.PEOPLE:
         return a.nm2;
-      case s.R2.NATURE:
+      case o.R2.NATURE:
         return a.pPb;
-      case s.R2.FOOD:
+      case o.R2.FOOD:
         return a.iUc;
-      case s.R2.ACTIVITY:
+      case o.R2.ACTIVITY:
         return a._xR;
-      case s.R2.TRAVEL:
+      case o.R2.TRAVEL:
         return a.hTD;
-      case s.R2.OBJECTS:
+      case o.R2.OBJECTS:
         return a.DSD;
-      case s.R2.SYMBOLS:
+      case o.R2.SYMBOLS:
         return a.C3E;
-      case s.R2.FLAGS:
+      case o.R2.FLAGS:
         return a.iFK;
-      case s.R2.PREMIUM_UPSELL:
+      case o.R2.PREMIUM_UPSELL:
         return a.tvc;
-      case s.R2.SOUNDMOJI:
+      case o.R2.SOUNDMOJI:
         return a.JMI;
       default:
         return

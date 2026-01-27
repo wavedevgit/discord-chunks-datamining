@@ -2,13 +2,13 @@
 /** chunk id: 105428, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk73153 = require("./73153.js"),
   Chunk61925 = require("./61925.js"),
   Chunk609415 = require("./609415.js"),
   Chunk14594 = require("./14594.js");
-let o = {
+let s = {
   maybeOpenBlockUserFeedback(e) {
     let {
       location: t
@@ -22,7 +22,7 @@ let o = {
       location: t,
       visibleContent: n
     } = e;
-    !(0, i.fj)(t) || null == n || s.K0.includes(n) && r.h.dispatch({
+    !(0, i.fj)(t) || null == n || o.K0.includes(n) && r.h.dispatch({
       type: "AGE_VERIFICATION_SHOW_FEEDBACK",
       dismissibleContent: n
     })

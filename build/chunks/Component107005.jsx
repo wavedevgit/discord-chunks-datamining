@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 107005, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 107005, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,22 +10,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk49999 = require("./49999.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk784001 = require("./784001.js");
-let u = e => {
+let d = e => {
     let {
       markAsDismissed: t
     } = e;
-    return i.useEffect(() => t(o.i.UNKNOWN), [t]), (0, r.jsx)(a.LpS, {
+    return i.useEffect(() => t(a.i.UNKNOWN), [t]), (0, r.jsx)(l.LpS, {
       className: c.Ad,
-      text: l.intl.string(l.t.y2b7CA)
+      text: o.intl.string(o.t.y2b7CA)
     })
   },
-  d = e => {
+  u = e => {
     let {
       title: t,
       body: n,
       img: i,
-      newIndicatorDismissibleContent: o,
-      onClick: d
+      newIndicatorDismissibleContent: a,
+      onClick: u
     } = e;
     return (0, r.jsxs)("div", {
       className: c.kL,
@@ -35,27 +34,27 @@ let u = e => {
         children: [(0, r.jsxs)("div", {
           className: c.TK,
           children: [(0, r.jsx)(s.Ay, {
-            contentTypes: [o],
+            contentTypes: [a],
             children: e => {
               let {
                 visibleContent: t,
                 markAsDismissed: n
               } = e;
-              return t === o ? (0, r.jsx)(u, {
+              return t === a ? (0, r.jsx)(d, {
                 markAsDismissed: n
               }) : null
             }
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
             children: t
           })]
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(l.Text, {
           variant: "text-xs/normal",
           children: n
         })]
-      }), (0, r.jsx)(a.Button, {
-        text: l.intl.string(l.t.vD60Pv),
-        onClick: d
+      }), (0, r.jsx)(l.Button, {
+        text: o.intl.string(o.t.vD60Pv),
+        onClick: u
       })]
     })
   }

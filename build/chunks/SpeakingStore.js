@@ -62,16 +62,16 @@ function I(e, t) {
 function S(e, t, n) {
   var r, i;
   let a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : false / 0,
-    s = O(e),
-    o = s.get(t),
-    l = null != (r = null == o ? true : o.flags) ? r : 0;
+    o = O(e),
+    s = o.get(t),
+    l = null != (r = null == s ? true : s.flags) ? r : 0;
   if (0 === l && 0 === n) returnfalse;
-  if (0 === n) s.delete(t), 0 === s.size && h.delete(e);
+  if (0 === n) o.delete(t), 0 === o.size && h.delete(e);
   else {
-    let e = null != (i = null == o ? true : o.since) ? i : null,
+    let e = null != (i = null == s ? true : s.since) ? i : null,
       r = (l & p.ME.VOICE) === p.ME.VOICE,
       c = (n & p.ME.VOICE) === p.ME.VOICE;
-    r !== c && (e = c ? Date.now() : null), s.set(t, {
+    r !== c && (e = c ? Date.now() : null), o.set(t, {
       flags: n,
       since: e,
       voiceDb: a
@@ -97,7 +97,7 @@ function C(e) {
   } = e;
   if ((r & p.ME.PRIORITY) === p.ME.PRIORITY) {
     let e = l.A.getChannel(d.A.getVoiceChannelId());
-    null != e && o.$3({
+    null != e && s.$3({
       permission: f.xBc.PRIORITY_SPEAKER,
       user: n,
       context: e
@@ -115,8 +115,8 @@ function N(e) {
       userId: n,
       channelId: r,
       sessionId: i
-    } = t, a = false, s = E;
-    return n === m && i === g && (E = null != r ? r : null), s !== E && (a = h.delete(p.x.DEFAULT) || a), null == r ? a = n === m && i === g ? h.delete(p.x.DEFAULT) || a : v(p.x.DEFAULT, n) || a : n === m && i !== g ? a = h.delete(p.x.DEFAULT) || a : n !== m && r !== u.A.getChannelId() && (a = v(p.x.DEFAULT, n) || a), a || e
+    } = t, a = false, o = E;
+    return n === m && i === g && (E = null != r ? r : null), o !== E && (a = h.delete(p.x.DEFAULT) || a), null == r ? a = n === m && i === g ? h.delete(p.x.DEFAULT) || a : v(p.x.DEFAULT, n) || a : n === m && i !== g ? a = h.delete(p.x.DEFAULT) || a : n !== m && r !== u.A.getChannelId() && (a = v(p.x.DEFAULT, n) || a), a || e
   }, false)
 }
 
@@ -183,7 +183,7 @@ class R extends(r = Chunk311907.Ay.Store) {
   getVoiceVolume(e) {
     var t, n, r;
     let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.x.DEFAULT;
-    return (0, s.r)({
+    return (0, o.r)({
       location: "SpeakingStore"
     }).enabled && null != (t = null == (r = h.get(i)) || null == (n = r.get(e)) ? true : n.voiceDb) ? t : false / 0
   }

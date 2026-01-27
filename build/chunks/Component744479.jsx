@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 744479, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 744479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => l
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk813651 = require("./813651.js");
 
-function a(e) {
+function l(e) {
   let {
     children: t
   } = e;

@@ -24,9 +24,9 @@ function _(e) {
     setConfettiCount: c,
     setShouldFireConfetti: f,
     tooltipProps: _
-  } = e, [h, m] = i.useState(0), g = i.useRef(false), E = i.useRef(true), y = (0, s.bG)([l.A], () => l.A.useReducedMotion), {
+  } = e, [h, m] = i.useState(0), g = i.useRef(false), E = i.useRef(true), y = (0, o.bG)([l.A], () => l.A.useReducedMotion), {
     scaleFactor: b
-  } = (0, o.zhh)({
+  } = (0, s.zhh)({
     from: {
       scaleFactor: 1
     },
@@ -45,7 +45,7 @@ function _(e) {
     style: {
       transform: b.to(e => "scale(".concat(e, ")"))
     },
-    children: (0, r.jsx)(o.DUT, {
+    children: (0, r.jsx)(s.DUT, {
       className: u.hh,
       onMouseDown: () => {
         m(1), f(true), c(e => Math.min(e + 2, p)), window.clearTimeout(g.current), g.current = window.setTimeout(() => {
@@ -75,14 +75,14 @@ let h = function(e) {
     isFiring: r
   } = e, {
     cannon: a,
-    createMultipleConfettiAt: o
-  } = i.useContext(c.x), u = (0, s.bG)([l.A], () => l.A.useReducedMotion);
+    createMultipleConfettiAt: s
+  } = i.useContext(c.x), u = (0, o.bG)([l.A], () => l.A.useReducedMotion);
   return i.useEffect(() => () => {
     null == a || a.clearConfetti()
   }, [a]), i.useEffect(() => {
     if (!r || u || null == n.current) return;
     let e = n.current.getBoundingClientRect();
-    o(e.left + e.width / 2, e.top + e.height / 2, {
+    s(e.left + e.width / 2, e.top + e.height / 2, {
       velocity: {
         type: "static-random",
         minValue: {
@@ -95,5 +95,5 @@ let h = function(e) {
         }
       }
     }, Math.max(t, f))
-  }, [t, n, o, r, u]), null
+  }, [t, n, s, r, u]), null
 }

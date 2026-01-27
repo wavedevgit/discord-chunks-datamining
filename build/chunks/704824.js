@@ -14,15 +14,15 @@ var Chunk64700 = require("./64700.js"),
 function l(e, t) {
   let {
     disableFetch: n = false
-  } = null != t ? t : {}, l = (0, i.yK)([s.default], () => {
+  } = null != t ? t : {}, l = (0, i.yK)([o.default], () => {
     var t;
-    return null != (t = null == e ? true : e.map(e => s.default.getNewestTokenForApplication(e)).filter(o.Vq)) ? t : []
-  }, [e]), c = (0, i.bG)([s.default], () => {
+    return null != (t = null == e ? true : e.map(e => o.default.getNewestTokenForApplication(e)).filter(s.Vq)) ? t : []
+  }, [e]), c = (0, i.bG)([o.default], () => {
     var t;
-    return null != (t = null == e ? true : e.every(e => s.default.getFetchStateForApplication(e) === s.FetchState.FETCHED)) && t
-  }, [e]), u = (0, i.yK)([s.default], () => {
+    return null != (t = null == e ? true : e.every(e => o.default.getFetchStateForApplication(e) === o.FetchState.FETCHED)) && t
+  }, [e]), u = (0, i.yK)([o.default], () => {
     var t;
-    return null != (t = null == e ? true : e.filter(e => s.default.getFetchStateForApplication(e) === s.FetchState.NOT_FETCHED)) ? t : []
+    return null != (t = null == e ? true : e.filter(e => o.default.getFetchStateForApplication(e) === o.FetchState.NOT_FETCHED)) ? t : []
   }, [e]);
   return r.useEffect(() => {
     if (!n && 0 !== u.length)

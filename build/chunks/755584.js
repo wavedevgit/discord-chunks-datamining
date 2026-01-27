@@ -57,9 +57,9 @@ let p = {
         }
       },
       rejectWithError: false
-    }).then(e => (o.Ay.isOptInEnabled(t) && u.A.updateChannelOverrideSettings(t, e.body.id, {
+    }).then(e => (s.Ay.isOptInEnabled(t) && u.A.updateChannelOverrideSettings(t, e.body.id, {
       flags: f.vv.OPT_IN_ENABLED
-    }, l.fd.OptedIn), s.A.checkGuildTemplateDirty(t), e), e => {
+    }, l.fd.OptedIn), o.A.checkGuildTemplateDirty(t), e), e => {
       throw a.h.dispatch({
         type: "CREATE_CHANNEL_MODAL_SUBMIT_FAILURE",
         errors: e.body

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 986666, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 986666, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   z: () => p
 });
@@ -17,15 +16,15 @@ var Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
 
 function p() {
-  return (0, r.jsx)(l.h, {
-    setting: u.H.PRIVACY_DATA_BASIC_SERVICE_V2,
-    children: (0, r.jsx)(l._, {
-      header: f.intl.string(f.t.D60Gfj),
-      description: f.intl.format(f.t.R5N31P, {
+  return (0, r.jsx)(o.h, {
+    setting: d.H.PRIVACY_DATA_BASIC_SERVICE_V2,
+    children: (0, r.jsx)(o._, {
+      header: _.intl.string(_.t.D60Gfj),
+      description: _.intl.format(_.t.R5N31P, {
         onClick: () => {
-          let e = (0, a.WJ)("DataUsageDisclaimer");
-          (0, o.openUserSettings)(e ? i.X.ACCOUNT_REMOVAL_SETTING : i.X.ACCOUNT_PANEL, {
-            section: d.nc_.ACCOUNT,
+          let e = (0, l.WJ)("DataUsageDisclaimer");
+          (0, a.openUserSettings)(e ? i.X.ACCOUNT_REMOVAL_SETTING : i.X.ACCOUNT_PANEL, {
+            section: u.nc_.ACCOUNT,
             subsection: s.D.SECURITY,
             scrollPosition: e ? true : c.Ew.AccountScrollPositions.DISABLE_ACCOUNT
           })

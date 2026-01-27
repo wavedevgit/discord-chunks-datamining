@@ -1,5 +1,5 @@
 /** Chunk was on 5905 **/
-/** chunk id: 945896, original params: t,e,n (module,exports,require) **/
+/** chunk id: 945896, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   default: () => s
 });
@@ -13,14 +13,14 @@ var Chunk397927 = require("./397927.js"),
 
 function s(t) {
   let {
-    href: e,
-    textContent: n,
+    href: n,
+    textContent: e,
     onSelect: s
-  } = t, u = (0, o.A)(e, n);
-  return r.isPlatformEmbedded && null != u ? (0, l.jsx)(i.W1t, {
+  } = t, u = (0, o.A)(n, e);
+  return a.isPlatformEmbedded && null != u ? (0, l.jsx)(i.W1t, {
     "data-menu-mixed-auto": true,
     navId: "image-context",
-    onClose: a.Z_,
+    onClose: r.Z_,
     "aria-label": c.intl.string(c.t.Zow2V5),
     onSelect: s,
     children: (0, l.jsx)(i.rXV, {

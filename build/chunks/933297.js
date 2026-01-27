@@ -1,13 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 933297, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 933297, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => r,
-  W: () => i
+  S: () => l,
+  W: () => s
 });
-var r = function(e) {
-    return e[e.BADGE_NEW = 0] = "BADGE_NEW", e[e.BADGE_COUNT = 1] = "BADGE_COUNT", e[e.STRONGLY_DISCOURAGED_CUSTOM = 2] = "STRONGLY_DISCOURAGED_CUSTOM", e
-  }({}),
-  i = function(e) {
-    return e[e.INLINE_NOTICE = 0] = "INLINE_NOTICE", e[e.STRONGLY_DISCOURAGED_CUSTOM = 1] = "STRONGLY_DISCOURAGED_CUSTOM", e
-  }({})
+var r, i, l = ((r = {})[r.BADGE_NEW = 0] = "BADGE_NEW", r[r.BADGE_COUNT = 1] = "BADGE_COUNT", r[r.STRONGLY_DISCOURAGED_CUSTOM = 2] = "STRONGLY_DISCOURAGED_CUSTOM", r),
+  s = ((i = {})[i.INLINE_NOTICE = 0] = "INLINE_NOTICE", i[i.STRONGLY_DISCOURAGED_CUSTOM = 1] = "STRONGLY_DISCOURAGED_CUSTOM", i)

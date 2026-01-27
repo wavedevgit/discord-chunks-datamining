@@ -8,7 +8,7 @@ var Chunk652896 = require("./652896.js"),
   Chunk487329 = require("./487329.js"),
   Chunk601900 = require("./601900.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -34,7 +34,7 @@ let l = {
     let {
       activeStreams: t
     } = e;
-    return t.filter(e => null != e.errorCode).map(e => o({
+    return t.filter(e => null != e.errorCode).map(e => s({
       type: i.iy.SCREENSHARE_OS_ERROR,
       errorMessage: e.errorCode.toString()
     }, (0, a.id)((0, r._z)(e))))

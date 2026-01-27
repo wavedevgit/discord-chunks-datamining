@@ -9,7 +9,7 @@ var Chunk136193 = require("./136193.js"),
   Chunk342876 = require("./342876.js"),
   Chunk64700 = require("./64700.js"),
   Chunk555578 = require("./555578.js");
-let o = {
+let s = {
   ascending: "descending",
   descending: "ascending"
 };
@@ -25,7 +25,7 @@ function l(e) {
     showDragButtons: d,
     selectionMode: c,
     columns: []
-  }), [e.children, u, c, d]), p = (0, s.G)(e, (0, a.useCallback)(e => new(0, r.L)(e, null, f), [f]), f), {
+  }), [e.children, u, c, d]), p = (0, o.G)(e, (0, a.useCallback)(e => new(0, r.L)(e, null, f), [f]), f), {
     disabledKeys: _,
     selectionManager: h
   } = (0, i.b)({
@@ -45,7 +45,7 @@ function l(e) {
       var r, i;
       null == (i = e.onSortChange) || i.call(e, {
         column: t,
-        direction: null != n ? n : (null == (r = e.sortDescriptor) ? true : r.column) === t ? o[e.sortDescriptor.direction] : "ascending"
+        direction: null != n ? n : (null == (r = e.sortDescriptor) ? true : r.column) === t ? s[e.sortDescriptor.direction] : "ascending"
       })
     }
   }

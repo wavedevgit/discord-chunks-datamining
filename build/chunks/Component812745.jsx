@@ -10,7 +10,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk666817 = require("./666817.js");
 
 function c(e, t, n) {
@@ -100,7 +100,7 @@ class p extends(r = Chunk64700.PureComponent) {
       size: r
     } = this.props;
     return (0, i.jsx)("div", {
-      className: o()(r, l[t], n, {
+      className: s()(r, l[t], n, {
         [l.flipped]: e
       }),
       children: t

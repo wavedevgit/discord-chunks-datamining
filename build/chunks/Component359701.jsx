@@ -16,7 +16,7 @@ let c = e => {
     width: n,
     opacity: i,
     size: c = "default"
-  } = e, u = "small" === c ? s._3J.SIZE_24 : s._3J.SIZE_32, d = "var(--border-subtle)";
+  } = e, u = "small" === c ? o._3J.SIZE_24 : o._3J.SIZE_32, d = "var(--border-subtle)";
   return (0, r.jsxs)("div", {
     className: a()(l.Os, {
       [l.i]: "small" === c
@@ -24,10 +24,10 @@ let c = e => {
     style: {
       opacity: i
     },
-    children: [(0, r.jsx)(s.euF, {
+    children: [(0, r.jsx)(o.euF, {
       src: null,
       size: u,
-      status: t ? o.clD.ONLINE : true,
+      status: t ? s.clD.ONLINE : true,
       statusColor: d,
       "aria-hidden": true,
       imageClassName: l.yf

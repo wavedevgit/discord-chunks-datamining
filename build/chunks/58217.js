@@ -43,7 +43,7 @@ class y extends Chunk439372.A {
         channelId: n
       } = e;
       if (g === t && E === n || (g = null != t ? t : null, E = null != n ? n : null, null == g || null == E)) return;
-      let r = o.A.getGuild(t);
+      let r = s.A.getGuild(t);
       null != r && r.features.has(p.GuildFeatures.COMMUNITY) && d.A.shouldFetchPrompts(g, 8 * c.A.Millis.HOUR) && (0, u.Tg)(g), this._openOnboardingIfIncomplete(g, n)
     }), m(this, "handleGuildDelete", e => {
       let {
@@ -53,9 +53,9 @@ class y extends Chunk439372.A {
     }), m(this, "_openOnboardingIfIncomplete", async (e, t) => {
       var n, i;
       if ((0, f.Ih)(e)) return void(0, a.pX)(p.BVt.CHANNEL(e, _.VV.GUILD_ONBOARDING));
-      let l = o.A.getGuild(e);
+      let l = s.A.getGuild(e);
       if (null == l || !l.features.has(p.GuildFeatures.GUILD_ONBOARDING)) return;
-      let c = s.Ay.getSelfMember(e);
+      let c = o.Ay.getSelfMember(e);
       !(null == c || (0, r.Lt)(null != (n = c.flags) ? n : 0, h.D.COMPLETED_ONBOARDING)) && (0, r.Lt)(null != (i = c.flags) ? i : 0, h.D.STARTED_ONBOARDING) && (await (0, f.default)({
         guildId: e
       }), (0, a.pX)(p.BVt.CHANNEL(e, t)))

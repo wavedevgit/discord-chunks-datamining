@@ -8,9 +8,9 @@ function r(e, t, n) {
   for (let n of e.fields) {
     let e = n.localName;
     if (n.oneof) {
-      let s = i[n.oneof];
-      if ((null == s ? true : s.oneofKind) == true) continue;
-      if (r = s[e], (a = t[n.oneof]).oneofKind = s.oneofKind, true == r) {
+      let o = i[n.oneof];
+      if ((null == o ? true : o.oneofKind) == true) continue;
+      if (r = o[e], (a = t[n.oneof]).oneofKind = o.oneofKind, true == r) {
         delete a[e];
         continue
       }
@@ -23,10 +23,10 @@ function r(e, t, n) {
         else a[e] = r;
         break;
       case "message":
-        let s = n.T();
+        let o = n.T();
         if (n.repeat)
-          for (let t = 0; t < r.length; t++) a[e][t] = s.create(r[t]);
-        else true === a[e] ? a[e] = s.create(r) : s.mergePartial(a[e], r);
+          for (let t = 0; t < r.length; t++) a[e][t] = o.create(r[t]);
+        else true === a[e] ? a[e] = o.create(r) : o.mergePartial(a[e], r);
         break;
       case "map":
         switch (n.V.kind) {
@@ -35,8 +35,8 @@ function r(e, t, n) {
             Object.assign(a[e], r);
             break;
           case "message":
-            let o = n.V.T();
-            for (let t of Object.keys(r)) a[e][t] = o.create(r[t])
+            let s = n.V.T();
+            for (let t of Object.keys(r)) a[e][t] = s.create(r[t])
         }
     }
   }

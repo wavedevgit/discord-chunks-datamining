@@ -2,7 +2,7 @@
 /** chunk id: 818307, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./896048.js");
 var Chunk635377 = require("./635377.js"),
   i = require.n(Chunk635377);
@@ -15,8 +15,8 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = 3;
-class o {
+let o = 3;
+class s {
   reset() {
     this._subscriptions = {}
   }
@@ -32,7 +32,7 @@ class o {
   _get(e) {
     var t;
     return null != (t = this._subscriptions[e]) ? t : new(i())({
-      max: s,
+      max: o,
       updateAgeOnGet: true
     })
   }

@@ -23,7 +23,7 @@ class c {
     var t;
     return new c(Object.fromEntries(Object.entries(null != (t = null == e ? true : e.marketings) ? t : {}).map(e => {
       let [t, n] = e;
-      return (null == n ? true : n.type) === r.G.COACHTIP ? [t, o.A.fromServer(n)] : (null == n ? true : n.type) === r.G.BADGE ? [t, i.i.fromServer(n)] : (null == n ? true : n.type) === r.G.BANNER ? [t, a.V.fromServer(n)] : (null == n ? true : n.type) === r.G.COACHMARK ? [t, s.q.fromServer(n)] : [t, true]
+      return (null == n ? true : n.type) === r.G.COACHTIP ? [t, s.A.fromServer(n)] : (null == n ? true : n.type) === r.G.BADGE ? [t, i.i.fromServer(n)] : (null == n ? true : n.type) === r.G.BANNER ? [t, a.V.fromServer(n)] : (null == n ? true : n.type) === r.G.COACHMARK ? [t, o.q.fromServer(n)] : [t, true]
     })))
   }
   constructor(e) {

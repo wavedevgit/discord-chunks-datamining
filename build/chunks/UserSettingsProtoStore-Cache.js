@@ -2,12 +2,12 @@
 /** chunk id: 617617, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => L
 });
 var r, Chunk284009 = require("./284009.js"),
   a = require.n(Chunk284009),
   Chunk735438 = require("./735438.js"),
-  o = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk803805 = require("./803805.js"),
   Chunk873298 = require("./873298.js"),
@@ -109,11 +109,11 @@ function N(e) {
     },
     partial: r,
     resetEditInfo: i,
-    local: s
+    local: o
   } = e;
-  O = !s;
-  let o = b[n];
-  i && T(o), r ? (o.proto = (0, _.RK)(o.ProtoClass, o.proto, t), a()("string" != typeof o.proto, "UserSettingsProto cannot be a string")) : (o.proto = t, a()("string" != typeof o.proto, "UserSettingsProto cannot be a string"), o.editInfo.loaded = true, o.editInfo.loading = false)
+  O = !o;
+  let s = b[n];
+  i && T(s), r ? (s.proto = (0, _.RK)(s.ProtoClass, s.proto, t), a()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, a()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = true, s.editInfo.loading = false)
 }
 
 function w(e) {
@@ -136,18 +136,18 @@ function R(e) {
 }
 
 function P(e) {
-  null != e && o().forEach(b, (t, n) => {
+  null != e && s().forEach(b, (t, n) => {
     var r, i;
-    let s = e[Number(n)];
-    if (null == s) return;
-    let o = null != (r = null == s ? true : s.proto) ? r : "",
-      l = (0, _.ii)(t.ProtoClass, o);
+    let o = e[Number(n)];
+    if (null == o) return;
+    let s = null != (r = null == o ? true : o.proto) ? r : "",
+      l = (0, _.ii)(t.ProtoClass, s);
     if (null == l) return;
     t.proto = l, a()("string" != typeof t.proto, "UserSettingsProto cannot be a string");
-    let c = null != (i = null == s ? true : s.protoToSave) ? i : null;
-    if (null == c || null == s.offlineEditDataVersion) return;
+    let c = null != (i = null == o ? true : o.protoToSave) ? i : null;
+    if (null == c || null == o.offlineEditDataVersion) return;
     let u = (0, _.ii)(t.ProtoClass, c);
-    null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = s.offlineEditDataVersion)
+    null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = o.offlineEditDataVersion)
   })
 }
 class D extends(r = Chunk311907.Ay.PersistedStore) {
@@ -158,7 +158,7 @@ class D extends(r = Chunk311907.Ay.PersistedStore) {
     return this.computeState()
   }
   computeState() {
-    return o().mapValues(b, e => {
+    return s().mapValues(b, e => {
       let t = {
         proto: (0, _.ob)(e.ProtoClass, e.proto)
       };
@@ -215,7 +215,7 @@ class D extends(r = Chunk311907.Ay.PersistedStore) {
   }
 }
 m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");
-let x = new D(Chunk73153.h, {
+let L = new D(Chunk73153.h, {
   CACHE_LOADED: R,
   USER_SETTINGS_PROTO_UPDATE: N,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: N,

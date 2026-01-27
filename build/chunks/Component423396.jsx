@@ -67,7 +67,7 @@ let v = [{
   }, {
     key: Chunk166532.pn.ADD_PAYMENT_STEPS,
     renderStep: e => (0, r.jsx)(d.eO, O(y({}, e), {
-      originStep: s.pn.REVIEW,
+      originStep: o.pn.REVIEW,
       text: "Add Payment Steps Placeholder"
     })),
     options: {
@@ -76,7 +76,7 @@ let v = [{
   }, {
     key: Chunk166532.pn.CONFIRM,
     renderStep: e => (0, r.jsx)(d.eO, O(y({}, e), {
-      originStep: s.pn.REVIEW,
+      originStep: o.pn.REVIEW,
       text: "Confirm Step Placeholder"
     })),
     options: {
@@ -85,7 +85,7 @@ let v = [{
   }, {
     key: Chunk166532.pn.PLAN_SELECT,
     renderStep: e => (0, r.jsx)(d.eO, O(y({}, e), {
-      originStep: s.pn.REVIEW,
+      originStep: o.pn.REVIEW,
       text: "Plan Select Step Placeholder"
     })),
     options: {
@@ -103,7 +103,7 @@ let v = [{
       hideErrors: i
     } = e, {
       analyticsLocations: a,
-      loadId: s,
+      loadId: o,
       handleClose: c,
       handleComplete: p,
       isFetching: h,
@@ -112,7 +112,7 @@ let v = [{
       skuId: t,
       isGift: n,
       applicationId: _.FYj
-    }), E = (e, t, i) => n ? (0, r.jsx)(o.A, {
+    }), E = (e, t, i) => n ? (0, r.jsx)(s.A, {
       step: i,
       onClose: () => t(false)
     }) : (0, r.jsx)(l.A, {
@@ -129,7 +129,7 @@ let v = [{
         skuId: t,
         isGift: n,
         hideErrors: i,
-        loadId: s,
+        loadId: o,
         purchaseType: _.VVm.ONE_TIME,
         disablePurchases: true,
         excludeSubscriptionPlansBySKU: true,
@@ -145,8 +145,8 @@ let v = [{
       isGift: n,
       hideErrors: a
     } = e, {
-      analyticsLocations: s,
-      loadId: o,
+      analyticsLocations: o,
+      loadId: s,
       handleClose: l,
       handleComplete: c,
       isFetching: p,
@@ -169,13 +169,13 @@ let v = [{
       className: g.Cd,
       children: [(0, r.jsx)(d.dL, {
         stepConfigs: v,
-        analyticsLocations: s,
+        analyticsLocations: o,
         applicationId: h.tv,
         initialPlanId: y,
         skuId: t,
         isGift: n,
         hideErrors: a,
-        loadId: o,
+        loadId: s,
         purchaseType: _.VVm.SUBSCRIPTION,
         disablePurchases: true,
         onClose: l,

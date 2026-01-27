@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +29,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -52,24 +52,24 @@ function l(e, t) {
 function c(e, t, n) {
   let {
     trackedActionData: r
-  } = t, a = o(t, ["trackedActionData"]), l = {
+  } = t, a = s(t, ["trackedActionData"]), l = {
     url: a.url,
     request_method: n
   };
   return new Promise((t, n) => {
     e(a).then(e => {
       let n = r.properties;
-      "function" == typeof r.properties && (n = r.properties(e)), (0, i.trackNetworkAction)(r.event, s({
+      "function" == typeof r.properties && (n = r.properties(e)), (0, i.trackNetworkAction)(r.event, o({
         status_code: e.status
       }, l, n)), t(e)
     }).catch(e => {
       var t, a;
-      let o = r.properties;
-      "function" == typeof r.properties && (o = r.properties(e)), (0, i.trackNetworkAction)(r.event, s({
+      let s = r.properties;
+      "function" == typeof r.properties && (s = r.properties(e)), (0, i.trackNetworkAction)(r.event, o({
         status_code: e.status,
         error_code: null == (t = e.body) ? true : t.code,
         error_message: null == (a = e.body) ? true : a.message
-      }, l, o)), n(e)
+      }, l, s)), n(e)
     })
   })
 }

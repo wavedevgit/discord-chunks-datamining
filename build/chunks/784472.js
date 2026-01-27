@@ -6,7 +6,7 @@ function r(e, t) {
   var n, r, l, c, u;
   let d, f = null != (n = t.limit) ? n : 1 / 0,
     p = i(e, null != (r = t.filterPredicates) ? r : []);
-  return o(d = null != t.bucketPredicates && t.bucketPredicates.length > 0 ? f >= p.length ? s(p, null != (c = t.bucketPredicates) ? c : []) : a(p, null != (u = t.bucketPredicates) ? u : [], f) : [p], null != (l = t.sortComparers) ? l : [], f).slice(0, f)
+  return s(d = null != t.bucketPredicates && t.bucketPredicates.length > 0 ? f >= p.length ? o(p, null != (c = t.bucketPredicates) ? c : []) : a(p, null != (u = t.bucketPredicates) ? u : [], f) : [p], null != (l = t.sortComparers) ? l : [], f).slice(0, f)
 }
 
 function i(e, t) {
@@ -25,7 +25,7 @@ function a(e, t, n) {
   return r
 }
 
-function s(e, t) {
+function o(e, t) {
   let n = Array(t.length).fill(null).map(() => []);
   for (let r of e)
     for (let e = 0; e < t.length; e++)
@@ -35,7 +35,7 @@ function s(e, t) {
       } return n
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   let r = [];
   for (let i of e) {
     let e = l(i, t);

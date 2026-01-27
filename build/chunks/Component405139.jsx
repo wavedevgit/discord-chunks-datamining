@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk732955 = require("./732955.js"),
   Chunk397927 = require("./397927.js"),
   Chunk626584 = require("./626584.js"),
@@ -136,7 +136,7 @@ class S extends Chunk64700.Component {
       iconType: t,
       buttonText: n
     } = e, i = O(e, ["iconType", "buttonText"]);
-    return (0, r.jsx)(o.$nd, b({
+    return (0, r.jsx)(s.$nd, b({
       fullWidth: true,
       onClick: this.attemptPaymentRequest,
       text: n,
@@ -318,7 +318,7 @@ class C extends S {
       children: [(0, r.jsx)(u.Ay, {
         type: u.Ay.Types.APPLE,
         size: u.y3.MEDIUM,
-        className: s()(E.rS, E.X6)
+        className: o()(E.rS, E.X6)
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
         className: E.yW,

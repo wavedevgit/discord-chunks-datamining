@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk990078 = require("./990078.jsx"),
   Chunk36075 = require("./36075.jsx"),
   Chunk707616 = require("./707616.js");
@@ -40,7 +40,7 @@ function f(e) {
   let {
     color: n,
     colors: a,
-    className: o,
+    className: s,
     background: u = true,
     hoverOverride: d
   } = e, [f, p] = i.useState(false), _ = null != (t = null == a ? true : a.primaryColor) ? t : n, {
@@ -50,7 +50,7 @@ function f(e) {
     animatedGradientId: E
   } = (0, l.RM)(_, null == a ? true : a.secondaryColor, null == a ? true : a.tertiaryColor);
   return null == _ ? null : (0, r.jsxs)("svg", {
-    className: s()(c.JW, o),
+    className: o()(c.JW, s),
     viewBox: "0 0 20 20",
     fill: "none",
     onMouseEnter: () => {
@@ -120,7 +120,7 @@ function p(e) {
     name: i,
     tooltip: a = true
   } = e;
-  return null == t && null == n ? null : a ? (0, r.jsx)(o.m, {
+  return null == t && null == n ? null : a ? (0, r.jsx)(s.m, {
     __unsupportedReactNodeAsText: i,
     children: (0, r.jsx)("span", {
       "aria-hidden": true,
@@ -136,7 +136,7 @@ function _(e) {
     className: i
   } = e, {
     gradientStyle: a,
-    gradientClassname: o
+    gradientClassname: s
   } = (0, l.v5)({
     colorStrings: n,
     roleStyle: "dot"
@@ -147,8 +147,8 @@ function _(e) {
       backgroundColor: null != t ? t : true
     });
   return (0, r.jsx)("span", {
-    className: s()(c.Ni, i, {
-      [o]: u
+    className: o()(c.Ni, i, {
+      [s]: u
     }),
     style: f
   })

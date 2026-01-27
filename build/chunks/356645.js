@@ -25,8 +25,8 @@ function m(e, t) {
 }
 async function g(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    a = o.default.locale;
-  return s.h.dispatch({
+    a = s.default.locale;
+  return o.h.dispatch({
     type: "APPLICATION_BUILD_FETCH_START",
     applicationId: e,
     branchId: t,
@@ -41,11 +41,11 @@ async function g(e, t) {
     rejectWithError: false
   }).then(n => {
     let r = n.body;
-    0 === r.manifests.length ? s.h.dispatch({
+    0 === r.manifests.length ? o.h.dispatch({
       type: "APPLICATION_BUILD_NOT_FOUND",
       applicationId: e,
       branchId: t
-    }) : s.h.dispatch({
+    }) : o.h.dispatch({
       type: "APPLICATION_BUILD_FETCH_SUCCESS",
       applicationId: e,
       branchId: t,
@@ -56,7 +56,7 @@ async function g(e, t) {
     let {
       status: r
     } = n;
-    404 === r ? s.h.dispatch({
+    404 === r ? o.h.dispatch({
       type: "APPLICATION_BUILD_NOT_FOUND",
       applicationId: e,
       branchId: t

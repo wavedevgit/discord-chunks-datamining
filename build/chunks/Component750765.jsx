@@ -29,7 +29,7 @@ function g(e) {
     onInteraction: E
   } = e, {
     analyticsLocations: y
-  } = (0, c.Ay)(), b = (0, s.bG)([d.default], () => {
+  } = (0, c.Ay)(), b = (0, o.bG)([d.default], () => {
     let e = d.default.getCurrentUser();
     return a()(null != e, "VideoDeviceMenu: currentUser cannot be undefined"), e
   }), O = (0, u.H)({
@@ -40,7 +40,7 @@ function g(e) {
   }), v = (0, f.A)(b.id, g), A = (0, p.A)(g);
   return (0, r.jsx)(l.A, {
     object: _.ZSU.CONTEXT_MENU,
-    children: (0, r.jsxs)(o.W1t, {
+    children: (0, r.jsxs)(s.W1t, {
       "data-menu-needs-review": true,
       onClose: t,
       navId: "video-device-context",
@@ -48,7 +48,7 @@ function g(e) {
       "aria-label": m.intl.string(m.t.F122Gz),
       onSelect: n,
       onInteraction: E,
-      children: [O, (0, r.jsxs)(o.rXV, {
+      children: [O, (0, r.jsxs)(s.rXV, {
         children: [v, i ? A : null]
       })]
     })

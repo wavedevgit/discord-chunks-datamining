@@ -36,49 +36,49 @@ let w = function(e) {
     guild: n,
     onClose: w,
     scrollToPowerupCards: R
-  } = e, [P, D] = i.useState(true), x = i.useRef(false), L = (0, c.A)(() => Date.now()), {
-    analyticsLocations: j
-  } = (0, u.Ay)(), M = i.useRef(null), k = i.useRef(null), U = i.useRef(null), G = i.useCallback(() => {
+  } = e, [P, D] = i.useState(true), L = i.useRef(false), x = (0, c.A)(() => Date.now()), {
+    analyticsLocations: M
+  } = (0, u.Ay)(), j = i.useRef(null), k = i.useRef(null), U = i.useRef(null), G = i.useCallback(() => {
     null != U.current && null != k.current && k.current.scrollTo({
       to: U.current.offsetTop,
       animate: true
     })
-  }, []), V = i.useCallback(() => {
+  }, []), F = i.useCallback(() => {
     G()
-  }, [G]), F = i.useCallback(() => {
+  }, [G]), V = i.useCallback(() => {
     null == w || w(), g.default.track(T.HAw.MODAL_DISMISSED, {
       type: T.liQ.PREMIUM_GUILD_USER_MODAL,
-      location_stack: j,
+      location_stack: M,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id,
-      duration_open_ms: Date.now() - L
+      duration_open_ms: Date.now() - x
     })
-  }, [w, t, j, L, n.id]), B = i.useCallback(e => {
-    e && !x.current && (g.default.track(T.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+  }, [w, t, M, x, n.id]), B = i.useCallback(e => {
+    e && !L.current && (g.default.track(T.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: T.liQ.PREMIUM_GUILD_USER_MODAL,
-      location_stack: j,
+      location_stack: M,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id
-    }), x.current = true)
-  }, [t, j, n.id]);
+    }), L.current = true)
+  }, [t, M, n.id]);
   i.useEffect(() => {
     g.default.track(T.HAw.OPEN_MODAL, {
       type: T.liQ.PREMIUM_GUILD_USER_MODAL,
-      location_stack: j,
+      location_stack: M,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id
     })
-  }, [n.id, t, j]), i.useEffect(() => {
+  }, [n.id, t, M]), i.useEffect(() => {
     function e(e) {
-      "Escape" === e.key && F()
+      "Escape" === e.key && V()
     }
     return window.addEventListener("keydown", e), () => {
       window.removeEventListener("keydown", e)
     }
-  }, [F]);
+  }, [V]);
   let H = (0, f.C$)(n.id, "GuildBoostingMarketing"),
     Y = (0, a.bG)([p.A], () => p.A.hasFetchedCatalog(n.id)),
     W = (0, a.bG)([_.A], () => _.A.hasFetchedPowerupCatalog(n.id));
@@ -96,11 +96,11 @@ let w = function(e) {
       className: N.bn,
       children: (0, r.jsx)(l.A, {
         className: N.ut,
-        closeAction: F,
+        closeAction: V,
         keybind: "ESC",
         variant: l.A.Variants.BOLD
       })
-    }), (0, r.jsxs)(o.GtU, {
+    }), (0, r.jsxs)(s.GtU, {
       ref: k,
       className: N.XG,
       children: [(0, r.jsxs)("div", {
@@ -110,15 +110,15 @@ let w = function(e) {
           children: [(0, r.jsx)(h.A, {
             guild: e.guild,
             themeResponsive: false,
-            onButtonClick: V
-          }), (0, r.jsx)(o.Heading, {
+            onButtonClick: F
+          }), (0, r.jsx)(s.Heading, {
             className: N.R_,
             color: "always-white",
             variant: "display-lg",
             children: C.intl.string(C.t.N4sqzL)
           }), (0, r.jsx)(y.A, {
             guild: n,
-            closeLayer: F,
+            closeLayer: V,
             onCtaVisibilityChange: D
           }), (0, r.jsx)(v.A, {
             guild: n
@@ -131,7 +131,7 @@ let w = function(e) {
         children: (0, r.jsx)(m.A, {
           ref: U,
           guild: e.guild,
-          onClose: F
+          onClose: V
         })
       }), (0, r.jsxs)("div", {
         className: N.o6,
@@ -144,18 +144,18 @@ let w = function(e) {
         }), (0, r.jsx)(S.S, {}), (0, r.jsx)("div", {
           className: N.LY
         })]
-      }), (0, r.jsx)(s.L, {
-        innerRef: M,
+      }), (0, r.jsx)(o.L, {
+        innerRef: j,
         onChange: B,
         children: (0, r.jsx)("div", {
-          ref: M,
+          ref: j,
           className: N.mR
         })
       })]
     }), (0, r.jsx)(O.A, {
       guild: n,
       isVisible: !P,
-      closeLayer: F
+      closeLayer: V
     })]
   })
 }

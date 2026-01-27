@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 78837, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 78837, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => m
+  f: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,64 +17,64 @@ var Chunk627968 = require("./627968.js"),
   Chunk590089 = require("./590089.jsx"),
   Chunk747625 = require("./747625.js");
 
-function m(e) {
+function A(e) {
   let {
     title: t,
     collapsedSubtitle: n,
-    isExpanded: a,
-    onExpandedChange: m,
-    onExpandedChangeComplete: g,
-    children: E,
-    animate: y = true
-  } = e, b = i.useRef(null), [O, v] = i.useState(null), A = i.useRef(a), I = i.useRef(false);
+    isExpanded: l,
+    onExpandedChange: A,
+    onExpandedChangeComplete: f,
+    children: h,
+    animate: b = true
+  } = e, E = i.useRef(null), [x, O] = i.useState(null), C = i.useRef(l), I = i.useRef(false);
   i.useEffect(() => {
-    A.current !== a && (I.current = true, A.current = a)
-  }, [a]);
-  let S = i.useCallback(e => {
-      null != e.target && I.current && (I.current = false, null == g || g(a))
-    }, [a, g]),
-    T = i.useMemo(() => (0, o.debounce)(S, 50), [S]),
-    C = (0, p.w)(T, [], {
-      enabled: null != g
+    C.current !== l && (I.current = true, C.current = l)
+  }, [l]);
+  let T = i.useCallback(e => {
+      null != e.target && I.current && (I.current = false, null == f || f(l))
+    }, [l, f]),
+    S = i.useMemo(() => (0, a.debounce)(T, 50), [T]),
+    j = (0, p.w)(S, [], {
+      enabled: null != f
     }),
-    N = a && null != O;
+    v = l && null != x;
   return i.useLayoutEffect(() => {
-    null != b.current && null == O && v(b.current.clientHeight)
-  }, [O]), (0, r.jsxs)(l.EN, {
-    ref: C,
-    isExpanded: a,
-    onExpandedChange: m,
-    children: [(0, r.jsx)(_.U, {
-      ref: b,
-      style: null != O ? {
-        minHeight: O
+    null != E.current && null == x && O(E.current.clientHeight)
+  }, [x]), (0, r.jsxs)(o.EN, {
+    ref: j,
+    isExpanded: l,
+    onExpandedChange: A,
+    children: [(0, r.jsx)(m.U, {
+      ref: E,
+      style: null != x ? {
+        minHeight: x
       } : true,
       title: t,
-      description: N ? true : n,
-      secondaryTrailingElement: (0, r.jsx)(f.vN3, {
+      description: v ? true : n,
+      secondaryTrailingElement: (0, r.jsx)(_.vN3, {
         children: (0, r.jsx)(c.$, {
           slot: "trigger",
-          className: h.bW,
-          children: (0, r.jsx)(u.ChevronLargeUpIcon, {
-            className: s()(h.Kk, {
-              [h.kX]: !a
+          className: g.bW,
+          children: (0, r.jsx)(d.ChevronLargeUpIcon, {
+            className: s()(g.Kk, {
+              [g.kX]: !l
             }),
-            color: d.A.colors.ICON_LINK
+            color: u.A.colors.ICON_LINK
           })
         })
       }),
-      onClick: () => m(!a),
+      onClick: () => A(!l),
       headingColor: "text-link"
-    }), (0, r.jsx)(l.kS, {
-      className: s()(h.nd, {
-        [h.t5]: !y
+    }), (0, r.jsx)(o.kS, {
+      className: s()(g.nd, {
+        [g.t5]: !b
       }),
-      children: (0, r.jsx)(f.BJc, {
+      children: (0, r.jsx)(_.BJc, {
         gap: 16,
         padding: {
           top: 16
         },
-        children: E
+        children: h
       })
     })]
   })

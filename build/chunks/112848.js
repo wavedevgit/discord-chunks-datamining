@@ -68,9 +68,9 @@ function E() {
     t = (0, d.v)(null == e ? true : e.id);
   return null != t ? t : null
 }
-let y = e => (0, a.bG)([o.A], () => {
+let y = e => (0, a.bG)([s.A], () => {
   if (null == e) return null;
-  let t = o.A.getUserProfile(e);
+  let t = s.A.getUserProfile(e);
   return null == t ? true : t.premiumSince
 });
 
@@ -90,20 +90,20 @@ let O = () => {
       n = (0, a.bG)([c.A], () => c.A.getPremiumTypeSubscription());
     if (!(0, u.YE)(t, f.PremiumTypes.TIER_2) || null == n || null == n.premiumSince) return null;
     let r = i()(),
-      s = i()(n.premiumSince).add(1, "day"),
-      o = r.diff(s, "months");
+      o = i()(n.premiumSince).add(1, "day"),
+      s = r.diff(o, "months");
     return e.reduce((e, t) => {
       let {
         id: n,
         tenureReqNumMonths: r
       } = t;
-      return o >= r ? n : e
+      return s >= r ? n : e
     }, null)
   },
   v = () => {
     let e = E(),
       t = (0, a.bG)([c.A], () => c.A.getPremiumTypeSubscription());
-    return null == e || null == t || null == t.premiumSince ? null : (0, s.Xr)(e, t.premiumSince)
+    return null == e || null == t || null == t.premiumSince ? null : (0, o.Xr)(e, t.premiumSince)
   },
   A = () => {
     let e = b(),

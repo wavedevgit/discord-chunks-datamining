@@ -20,10 +20,10 @@ function u(e) {
   } = e, {
     giftButtonRef: d,
     handleMouseEnter: f
-  } = (0, o.A)({
+  } = (0, s.A)({
     enabled: u
   }), p = i.useCallback(() => {
-    (0, s.A)({
+    (0, o.A)({
       giftRecipient: t,
       analyticsLocations: n,
       analyticsObject: {

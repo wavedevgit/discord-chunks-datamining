@@ -40,7 +40,7 @@ function h(e) {
     pendingGlobalName: E,
     user: t,
     guildMember: N
-  }), x = (0, a.gS)(I), L = () => {
+  }), L = (0, a.gS)(I), x = () => {
     if (null != N && null !== m && (null != N.avatar || null != m)) return (0, r.jsx)(c.A, {
       user: t,
       nickname: D
@@ -49,16 +49,16 @@ function h(e) {
   return (0, r.jsxs)("div", {
     className: _.rf,
     inert: true,
-    children: [(0, r.jsx)(o.A, {
+    children: [(0, r.jsx)(s.A, {
       user: t,
       guildId: null == h ? true : h.id,
-      usernameIcon: L(),
+      usernameIcon: x(),
       nickname: D,
       pendingDisplayNameStyles: A,
       pronouns: P,
-      primaryGuild: x,
+      primaryGuild: L,
       isTryItOut: S,
-      tags: (0, r.jsx)(s.A, {
+      tags: (0, r.jsx)(o.A, {
         displayProfile: n,
         themeType: p.d.POPOUT,
         pendingLegacyUsernameDisabled: O,

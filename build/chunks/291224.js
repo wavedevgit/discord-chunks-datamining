@@ -24,7 +24,7 @@ function g(e, t) {
 }
 let E = {
   init() {
-    c.A.addChangeListener(this.handleAccessibilityStoreChanged), a.A.addChangeListener(this.handleAccessibilityStoreChanged), o.A.addChangeListener(this.handleUiDensityChanged), f.addListener(this.handlePrefersColorSchemeDarkChanged), this.handlePrefersColorSchemeDarkChanged(f), p.addListener(this.handlePrefersColorSchemeLightChanged), this.handlePrefersColorSchemeLightChanged(p), h.addListener(this.handlePrefersMoreContrastChanged), this.handlePrefersMoreContrastChanged(h), m.addListener(this.handlePrefersForcedColorsChanged), this.handlePrefersForcedColorsChanged(m), _.addListener(this.handleInvertColorsChanged), this.handleInvertColorsChanged(_), l.default.setSystemAccessibilityFeatures(this.getActiveFeatures)
+    c.A.addChangeListener(this.handleAccessibilityStoreChanged), a.A.addChangeListener(this.handleAccessibilityStoreChanged), s.A.addChangeListener(this.handleUiDensityChanged), f.addListener(this.handlePrefersColorSchemeDarkChanged), this.handlePrefersColorSchemeDarkChanged(f), p.addListener(this.handlePrefersColorSchemeLightChanged), this.handlePrefersColorSchemeLightChanged(p), h.addListener(this.handlePrefersMoreContrastChanged), this.handlePrefersMoreContrastChanged(h), m.addListener(this.handlePrefersForcedColorsChanged), this.handlePrefersForcedColorsChanged(m), _.addListener(this.handleInvertColorsChanged), this.handleInvertColorsChanged(_), l.default.setSystemAccessibilityFeatures(this.getActiveFeatures)
   },
   getActiveFeatures: () => d,
   handlePrefersColorSchemeDarkChanged(e) {
@@ -43,7 +43,7 @@ let E = {
     g(u.O.INVERT_COLORS, e.matches)
   },
   handleUiDensityChanged() {
-    let e = s.Xi.getSetting();
+    let e = o.Xi.getSetting();
     g(u.O.UI_DENSITY_COMPACT, e === r.NS.COMPACT), g(u.O.UI_DENSITY_SPACIOUS, e === r.NS.COZY)
   },
   handleAccessibilityStoreChanged() {

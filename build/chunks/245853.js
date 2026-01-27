@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   Bw: () => i,
-  L5: () => s,
+  L5: () => o,
   LO: () => l,
   RJ: () => f,
-  XM: () => o,
+  XM: () => s,
   qd: () => c,
   t$: () => d,
   uK: () => u
@@ -49,7 +49,7 @@ let i = (0, Chunk945810.mj)({
       }
     }
   }),
-  s = e => {
+  o = e => {
     let {
       enabled: t,
       variant: n
@@ -67,7 +67,7 @@ let i = (0, Chunk945810.mj)({
       minutes: 0
     }
   },
-  o = (0, Chunk945810.mj)({
+  s = (0, Chunk945810.mj)({
     name: "2025-11-quest-home-takeover-client-rollout",
     kind: "user",
     defaultConfig: {

@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk615300 = require("./615300.js"),
   Chunk785809 = require("./785809.js");
 
@@ -89,10 +89,10 @@ class h extends(r = Chunk64700.Component) {
     let {
       left: i,
       width: a,
-      bottom: s,
-      height: o
+      bottom: o,
+      height: s
     } = n.getBoundingClientRect();
-    return Math.min(1, Math.max(0, r === p.VOLUME ? (s - t) / o : (e - i) / a))
+    return Math.min(1, Math.max(0, r === p.VOLUME ? (o - t) / s : (e - i) / a))
   }
   render() {
     let {
@@ -102,20 +102,20 @@ class h extends(r = Chunk64700.Component) {
       sliderClassName: r
     } = this.props, {
       dragging: a,
-      previewWidth: s,
+      previewWidth: o,
       animatedProgress: u
-    } = this.state, d = a ? u : s;
+    } = this.state, d = a ? u : o;
     return (0, i.jsx)("div", {
-      className: o()(n, t === p.VOLUME ? c.Vd : c.xM),
+      className: s()(n, t === p.VOLUME ? c.Vd : c.xM),
       children: (0, i.jsx)("div", {
-        className: o()(r, a ? c.h4 : c.GU, t === p.VOLUME ? c.iR : null),
+        className: s()(r, a ? c.h4 : c.GU, t === p.VOLUME ? c.iR : null),
         onMouseDown: this.handleDragStart,
         onMouseMove: this.handleMouseMove,
         ref: e => {
           this.wrapper = e
         },
         children: (0, i.jsxs)("div", {
-          className: o()(c.HY, t === p.VOLUME ? c.xw : null),
+          className: s()(c.HY, t === p.VOLUME ? c.xw : null),
           children: [null != e ? e.map((e, t) => {
             let [n, r] = e;
             return (0, i.jsx)("div", {
@@ -128,7 +128,7 @@ class h extends(r = Chunk64700.Component) {
           }) : null, t === p.DURATION ? (0, i.jsx)(l.A.div, {
             className: c.mk,
             style: {
-              width: s.interpolate({
+              width: o.interpolate({
                 inputRange: [0, 1],
                 outputRange: ["0%", "100%"]
               })
@@ -217,19 +217,19 @@ class h extends(r = Chunk64700.Component) {
         currentWindow: i
       } = this.props, {
         clientX: a,
-        clientY: s
+        clientY: o
       } = e;
       if (e.preventDefault(), null == this.wrapper) return;
       let {
-        left: o,
+        left: s,
         width: l
       } = this.wrapper.getBoundingClientRect();
       this.setState({
         dragging: true,
-        offsetLeft: o,
+        offsetLeft: s,
         offsetWidth: l
       }, () => {
-        t(r), n(this.calculatePercentage(a, s), r), i.removeEventListener("mouseup", this.handleDragEnd, false), i.removeEventListener("mousemove", this.handleDragMove, false), i.addEventListener("mouseup", this.handleDragEnd, false), i.addEventListener("mousemove", this.handleDragMove, false)
+        t(r), n(this.calculatePercentage(a, o), r), i.removeEventListener("mouseup", this.handleDragEnd, false), i.removeEventListener("mousemove", this.handleDragMove, false), i.addEventListener("mouseup", this.handleDragEnd, false), i.addEventListener("mousemove", this.handleDragMove, false)
       })
     }), u(this, "handleDragEnd", () => {
       let {

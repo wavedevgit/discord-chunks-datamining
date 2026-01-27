@@ -56,7 +56,7 @@ function p(e) {
             reference: (0, u.vq)(e) ? (0, a.A)(e) : e.contextElement ? (0, a.A)(e.contextElement) : [],
             popper: (0, a.A)(t)
           };
-          var i = (0, o.A)((0, c.A)([].concat(p, _.options.modifiers)));
+          var i = (0, s.A)((0, c.A)([].concat(p, _.options.modifiers)));
           return _.orderedModifiers = i.filter(function(e) {
             return e.enabled
           }), y(), E.update()
@@ -68,7 +68,7 @@ function p(e) {
               n = e.popper;
             if (f(t, n)) {
               _.rects = {
-                reference: (0, r.A)(t, (0, s.A)(n), "fixed" === _.options.strategy),
+                reference: (0, r.A)(t, (0, o.A)(n), "fixed" === _.options.strategy),
                 popper: (0, i.A)(n)
               }, _.reset = false, _.placement = _.options.placement, _.orderedModifiers.forEach(function(e) {
                 return _.modifiersData[e.name] = Object.assign({}, e.data)
@@ -78,11 +78,11 @@ function p(e) {
                   _.reset = false, a = false;
                   continue
                 }
-                var o = _.orderedModifiers[a],
-                  l = o.fn,
-                  c = o.options,
+                var s = _.orderedModifiers[a],
+                  l = s.fn,
+                  c = s.options,
                   u = true === c ? {} : c,
-                  d = o.name;
+                  d = s.name;
                 "function" == typeof l && (_ = l({
                   state: _,
                   options: u,
@@ -117,8 +117,8 @@ function p(e) {
               instance: E,
               options: r
             }),
-            s = function() {};
-          m.push(a || s)
+            o = function() {};
+          m.push(a || o)
         }
       })
     }

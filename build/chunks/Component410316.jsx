@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 410316, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 410316, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,21 +14,19 @@ var Chunk688810 = require("./688810.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f() {
+function _() {
   let e = (0, s.wH)(),
     {
       analyticsLocations: t
     } = (0, i.Ay)();
-
-  function n(n) {
-    e = (0, l.w)(n), (0, a.iy)(e, t)
-  }
   return (0, r.jsx)(c.A, {
-    description: d.intl.format(d.t.BPbGq7, {
-      helpCenterArticle: o.A.getArticleURL(u.MVz.SOUNDBOARD)
+    description: u.intl.format(u.t.BPbGq7, {
+      helpCenterArticle: a.A.getArticleURL(d.MVz.SOUNDBOARD)
     }),
-    label: d.intl.string(d.t.kbFsAD),
+    label: u.intl.string(u.t.kbFsAD),
     volume: e,
-    onVolumeChange: n
+    onVolumeChange: function(n) {
+      e = (0, o.w)(n), (0, l.iy)(e, t)
+    }
   })
 }

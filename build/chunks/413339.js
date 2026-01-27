@@ -29,11 +29,11 @@ function m(e) {
       let n = e.getContext("2d");
       i()(null != n, "Canvas context is missing");
       let a = r.height / r.width,
-        s = _.Im.height,
-        o = _.Im.height / a,
-        l = (e.width - o) / 2,
-        c = (e.height - s) / 2;
-      n.drawImage(r, l, c, o, s);
+        o = _.Im.height,
+        s = _.Im.height / a,
+        l = (e.width - s) / 2,
+        c = (e.height - o) / 2;
+      n.drawImage(r, l, c, s, o);
       let u = n.getImageData(0, 0, e.width, e.height);
       t({
         data: u.data,
@@ -65,12 +65,12 @@ async function y(e, t, n) {
   if (null == n) return E(e, t, a.gO.NONE);
   if ("blur" === n) return E(e, t, a.gO.BACKGROUND_BLUR);
   if ("string" == typeof n || "number" == typeof n) {
-    var s;
+    var o;
     let e = (0, f.A)()[n];
-    i = null != (s = e.isVideo) && s, r = e.source
+    i = null != (o = e.isVideo) && o, r = e.source
   } else {
     let e = n.asset;
-    i = (0, o.VI)(e) || (0, o.q6)(e), r = (0, o.Bo)({
+    i = (0, s.VI)(e) || (0, s.q6)(e), r = (0, s.Bo)({
       userId: n.user_id,
       assetId: n.id,
       assetHash: e,
@@ -79,8 +79,8 @@ async function y(e, t, n) {
   }
   if (null != r) try {
     let n = i ? true : await m(r),
-      s = i ? await g(r) : true;
-    E(e, t, a.gO.BACKGROUND_REPLACEMENT, n, s)
+      o = i ? await g(r) : true;
+    E(e, t, a.gO.BACKGROUND_REPLACEMENT, n, o)
   } catch (e) {
     (0, c.Mj)()
   }
@@ -106,7 +106,7 @@ async function O(e, t, n) {
 }
 
 function v() {
-  let e = s.default.getCurrentUser();
+  let e = o.default.getCurrentUser();
   if (null == e) return;
   let t = (0, l.i)(e);
   (0, p.A)() && !u.A.hasBeenApplied && null != t && b(t, {

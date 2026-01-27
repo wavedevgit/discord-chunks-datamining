@@ -17,6 +17,6 @@ Chunk557939({
   })
 }, {
   queueMicrotask: function(e) {
-    o(arguments.length, 1), a(s(e))
+    s(arguments.length, 1), a(o(e))
   }
 })

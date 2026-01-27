@@ -56,11 +56,11 @@ function _(e, t) {
   var n;
   let l = i.m$.useSetting(),
     u = true !== t ? t : l,
-    f = (0, r.bG)([s.default], () => s.default.getCurrentUser()),
+    f = (0, r.bG)([o.default], () => o.default.getCurrentUser()),
     _ = (0, r.bG)([a.A], () => a.A.hidePersonalInformation);
   if (null == e) return [];
   let h = null != (n = null == e ? true : e.getBadges()) ? n : [];
   return null != f && f.id === e.userId && u && (h = h.filter(e => e.id !== p)), _ && (h = h.map(e => d(c({}, e), {
-    description: e.id === p ? o.intl.string(o.t.Br1ls3) : e.description
+    description: e.id === p ? s.intl.string(s.t.Br1ls3) : e.description
   }))), h
 }

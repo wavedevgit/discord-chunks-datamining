@@ -1,20 +1,19 @@
-/** Chunk was on web.js **/
-/** chunk id: 809092, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 98186 **/
+/** chunk id: 809092, original params: t,e,a (module,exports,require) **/
 require.d(exports, {
-  W: () => i,
-  j: () => a
+  W: () => s,
+  j: () => n
 });
 var Chunk73153 = require("./73153.js");
 
-function i() {
-  r.h.dispatch({
+function s() {
+  i.h.dispatch({
     type: "SHOW_KEYBOARD_SHORTCUTS"
   })
 }
 
-function a() {
-  r.h.dispatch({
+function n() {
+  i.h.dispatch({
     type: "HIDE_KEYBOARD_SHORTCUTS"
   })
 }

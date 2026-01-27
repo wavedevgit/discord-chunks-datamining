@@ -8,10 +8,10 @@ var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk775602 = require("./775602.js"),
   Chunk531685 = require("./531685.js");
-let o = 1e3,
+let s = 1e3,
   l = (e, t) => {
     let n = (0, i.bG)([a.A], () => a.A.useReducedMotion),
-      l = (0, i.bG)([s.A], () => s.A.isFocused()),
+      l = (0, i.bG)([o.A], () => o.A.isFocused()),
       [c, u] = r.useState(false),
       d = r.useRef(null);
     return r.useEffect(() => {
@@ -20,7 +20,7 @@ let o = 1e3,
         i = l && (e || r);
       i && n ? d.current = window.setTimeout(() => {
         u(true)
-      }, o) : u(i)
+      }, s) : u(i)
     }, [l, e, n, t]), r.useEffect(() => () => clearTimeout(d.current), []), {
       canAnimate: c
     }

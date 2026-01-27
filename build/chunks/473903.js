@@ -2,7 +2,7 @@
 /** chunk id: 473903, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk77729 = require("./77729.js");
 let i = new(require("./626584.js")).A("IntentsBindings");
@@ -11,7 +11,7 @@ function a() {
   var e;
   return null != (e = null === r.A || true === r.A ? true : r.A.features.supports("intents")) && e
 }
-let s = {
+let o = {
   hasSearch: () => a(),
   hasUserActivity: () => a(),
   clearSearchIndex() {

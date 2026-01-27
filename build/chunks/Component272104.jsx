@@ -26,7 +26,7 @@ let A = e => {
       isSelected: A,
       onClick: h
     } = e, _ = (0, r.useRef)(null), {
-      isHoveringOrFocusing: j
+      isHoveringOrFocusing: y
     } = (0, u.A)(_);
     return (0, l.jsxs)(a.DUT, {
       innerRef: _,
@@ -37,7 +37,7 @@ let A = e => {
         nameplate: i,
         user: n,
         showPlaceholderUser: true,
-        isHighlighted: j
+        isHighlighted: y
       }), (0, l.jsx)("div", {
         className: s()(g.t1, {
           [g.wH]: A

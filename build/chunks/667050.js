@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Bf: () => k,
-  Br: () => V,
+  Br: () => F,
   fr: () => B,
-  m4: () => L,
+  m4: () => x,
   oS: () => G,
   tm: () => U
 });
@@ -40,15 +40,15 @@ var Chunk735438 = require("./735438.js"),
   Chunk690521 = require("./690521.js"),
   Chunk194486 = require("./194486.js"),
   Chunk985018 = require("./985018.jsx");
-let L = {
+let x = {
     start: 10,
     end: 15
   },
-  j = [Chunk791454],
-  M = [Chunk54991, Chunk149834, Chunk372889, Chunk764724, Chunk535275, Chunk228158, Chunk980883, Chunk577436, Chunk502561, Chunk71442, Chunk213961, Chunk942344, Chunk640319, Chunk24902, Chunk649685, Chunk343076, Chunk148743, Chunk930658, Chunk843505, Chunk751212, Chunk596963],
+  M = [Chunk791454],
+  j = [Chunk54991, Chunk149834, Chunk372889, Chunk764724, Chunk535275, Chunk228158, Chunk980883, Chunk577436, Chunk502561, Chunk71442, Chunk213961, Chunk942344, Chunk640319, Chunk24902, Chunk649685, Chunk343076, Chunk148743, Chunk930658, Chunk843505, Chunk751212, Chunk596963],
   k = {
-    [Chunk194486.B.BASIC]: j,
-    [Chunk194486.B.PREMIUM]: M
+    [Chunk194486.B.BASIC]: M,
+    [Chunk194486.B.PREMIUM]: j
   },
   U = i().memoize(e => new Promise(t => {
     let n = new Image;
@@ -71,7 +71,7 @@ let L = {
     return Math.floor(Math.random() * n.length)
   };
 
-function V(e) {
+function F(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 32;
   if (null != e.id) {
     var n;
@@ -86,7 +86,7 @@ function V(e) {
   return null != i ? P.Ay.getURL(i.surrogates) : ""
 }
 
-function F(e, t) {
+function V(e, t) {
   return i()(e).map(e => {
     var n;
     return null != (n = e[t]) ? n : null
@@ -94,22 +94,22 @@ function F(e, t) {
 }
 
 function B(e) {
-  var t, n, r, i, a, s;
+  var t, n, r, i, a, o;
   if (e.length < 1) return "";
-  let o = F(e, "userId"),
-    l = F(e, "emojiName"),
+  let s = V(e, "userId"),
+    l = V(e, "emojiName"),
     c = l.length < 2 ? null != (t = null == l ? true : l[0]) ? t : "" : l.join(", ");
-  return o.length < 1 ? "" : 1 === o.length ? x.intl.formatToPlainString(x.t.yZYxzF, {
-    firstUsername: null == (n = w.default.getUser(o[0])) ? true : n.username,
+  return s.length < 1 ? "" : 1 === s.length ? L.intl.formatToPlainString(L.t.yZYxzF, {
+    firstUsername: null == (n = w.default.getUser(s[0])) ? true : n.username,
     emojiNames: c
-  }) : 2 === o.length ? x.intl.formatToPlainString(x.t["8rmtbd"], {
-    firstUsername: null == (r = w.default.getUser(o[0])) ? true : r.username,
-    secondUsername: null == (i = w.default.getUser(o[1])) ? true : i.username,
+  }) : 2 === s.length ? L.intl.formatToPlainString(L.t["8rmtbd"], {
+    firstUsername: null == (r = w.default.getUser(s[0])) ? true : r.username,
+    secondUsername: null == (i = w.default.getUser(s[1])) ? true : i.username,
     emojiNames: c
-  }) : x.intl.formatToPlainString(x.t["/okjv0"], {
-    firstUsername: null == (a = w.default.getUser(o[0])) ? true : a.username,
-    secondUsername: null == (s = w.default.getUser(o[1])) ? true : s.username,
-    count: o.length - 2,
+  }) : L.intl.formatToPlainString(L.t["/okjv0"], {
+    firstUsername: null == (a = w.default.getUser(s[0])) ? true : a.username,
+    secondUsername: null == (o = w.default.getUser(s[1])) ? true : o.username,
+    count: s.length - 2,
     emojiNames: c
   })
 }

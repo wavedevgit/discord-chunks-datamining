@@ -31,11 +31,11 @@ let h = function(e) {
       })
     }), null == m) return null;
   let g = () => {
-    s.Ay.trackWithMetadata(f.HAw.NEW_MEMBER_MENTION_CTA_CLICKED, {
+    o.Ay.trackWithMetadata(f.HAw.NEW_MEMBER_MENTION_CTA_CLICKED, {
       target_user_id: n.author.id
     }), h(), (0, l.C)(n.author, m.id)
   };
-  return (0, r.jsx)(o.Uq, {
+  return (0, r.jsx)(s.Uq, {
     className: _.cc,
     children: (0, r.jsxs)("div", {
       className: _.jC,

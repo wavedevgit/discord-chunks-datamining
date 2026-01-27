@@ -9,7 +9,7 @@ var Chunk440745 = require("./440745.js"),
   Chunk317097 = require("./317097.js"),
   Chunk315069 = require("./315069.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -79,16 +79,16 @@ class _ extends Chunk315069.A {
       sku_id: n,
       unpublished_at: r,
       styles: i
-    } = e, a = d(e, ["store_listing_id", "sku_id", "unpublished_at", "styles"]), s = null != r ? new Date(r) : null;
+    } = e, a = d(e, ["store_listing_id", "sku_id", "unpublished_at", "styles"]), o = null != r ? new Date(r) : null;
     return new _(u(l({}, a), {
       storeListingId: t,
       skuId: n,
-      unpublishedAt: s,
+      unpublishedAt: o,
       styles: p(i)
     }))
   }
   constructor(e) {
     var t;
-    super(), o(this, "storeListingId", true), o(this, "skuId", true), o(this, "name", true), o(this, "summary", true), o(this, "unpublishedAt", true), o(this, "styles", true), this.storeListingId = e.storeListingId, this.skuId = e.skuId, this.name = e.name, this.summary = null == (t = e.summary) ? true : t.trim(), this.unpublishedAt = e.unpublishedAt, this.styles = e.styles
+    super(), s(this, "storeListingId", true), s(this, "skuId", true), s(this, "name", true), s(this, "summary", true), s(this, "unpublishedAt", true), s(this, "styles", true), this.storeListingId = e.storeListingId, this.skuId = e.skuId, this.name = e.name, this.summary = null == (t = e.summary) ? true : t.trim(), this.unpublishedAt = e.unpublishedAt, this.styles = e.styles
   }
 }

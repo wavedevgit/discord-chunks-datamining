@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 696616, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 696616, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,15 +14,15 @@ var Chunk93857 = require("./93857.js"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f() {
+function _() {
   var e;
-  let t = null != (e = (0, l.k)()) ? e : true,
+  let t = null != (e = (0, o.k)()) ? e : true,
     n = i.kf.useControlledSetting(t);
-  return (0, r.jsx)(a.h, {
+  return (0, r.jsx)(l.h, {
     children: (0, r.jsx)(s.Ay, {
-      title: d.intl.string(u.default.ZhaNu8),
-      note: d.intl.format(u.default.cnCK6b, {
-        helpdeskArticle: o.A.getArticleURL(c.MVz.QUESTS_PRIVACY_CONTROLS)
+      title: u.intl.string(d.default.ZhaNu8),
+      note: u.intl.format(d.default.cnCK6b, {
+        helpdeskArticle: a.A.getArticleURL(c.MVz.QUESTS_PRIVACY_CONTROLS)
       }),
       value: !n,
       onChange: e => i.kf.updateControlledSetting(t, !e)

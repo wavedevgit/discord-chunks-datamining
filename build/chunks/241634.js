@@ -12,15 +12,15 @@ let a = {
   CollectionRoot: ({
     collection: e,
     renderDropIndicator: t
-  }) => s(e, null, t),
+  }) => o(e, null, t),
   CollectionBranch: ({
     collection: e,
     parent: t,
     renderDropIndicator: n
-  }) => s(e, t, n)
+  }) => o(e, t, n)
 };
 
-function s(e, t, n) {
+function o(e, t, n) {
   return (0, r.p)({
     items: t ? e.getChildren(t.key) : e,
     dependencies: [n],
@@ -30,22 +30,22 @@ function s(e, t, n) {
         type: "item",
         key: t.key,
         dropPosition: "before"
-      }), r, o(e, t, n)) : r
+      }), r, s(e, t, n)) : r
     }
   })
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   let r = t.key,
     a = e.getKeyAfter(r),
-    s = null != a ? e.getItem(a) : null;
-  for (; null != s && "item" !== s.type;) s = null != (a = e.getKeyAfter(s.key)) ? e.getItem(a) : null;
-  let o = null != t.nextKey ? e.getItem(t.nextKey) : null;
-  for (; null != o && "item" !== o.type;) o = null != o.nextKey ? e.getItem(o.nextKey) : null;
+    o = null != a ? e.getItem(a) : null;
+  for (; null != o && "item" !== o.type;) o = null != (a = e.getKeyAfter(o.key)) ? e.getItem(a) : null;
+  let s = null != t.nextKey ? e.getItem(t.nextKey) : null;
+  for (; null != s && "item" !== s.type;) s = null != s.nextKey ? e.getItem(s.nextKey) : null;
   let l = [];
-  if (null == o) {
+  if (null == s) {
     let r = t;
-    for (; r && (!s || r.parentKey !== s.parentKey && s.level < r.level);) {
+    for (; r && (!o || r.parentKey !== o.parentKey && o.level < r.level);) {
       let t = n({
         type: "item",
         key: r.key,

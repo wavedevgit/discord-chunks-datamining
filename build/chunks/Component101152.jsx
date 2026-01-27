@@ -10,7 +10,7 @@ var Chunk827734 = require("./827734.js"),
   Chunk996682 = require("./996682.js"),
   Chunk27989 = require("./27989.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -71,14 +71,14 @@ function f(e, t) {
 let p = e => {
   var t, n;
   let {
-    size: o = "md",
+    size: s = "md",
     width: c,
     height: f,
     secondaryColor: p = i.A.colors.ICON_FEEDBACK_NOTIFICATION,
     secondaryColorClass: _ = "",
     color: h = i.A.colors.INTERACTIVE_ICON_DEFAULT,
     colorClass: m = ""
-  } = e, g = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]), E = (0, s.J)(o), y = null != (t = null == E ? true : E.width) ? t : c, b = null != (n = null == E ? true : E.height) ? n : f;
+  } = e, g = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]), E = (0, o.J)(s), y = null != (t = null == E ? true : E.width) ? t : c, b = null != (n = null == E ? true : E.height) ? n : f;
   return (0, r.jsxs)("svg", u(l({}, (0, a.A)(g)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: y,

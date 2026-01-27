@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk626584 = require("./626584.js"),
   Chunk600975 = require("./600975.js"),
   Chunk818348 = require("./818348.js");
-let s = (0, Chunk600975.C)({
+let o = (0, Chunk600975.C)({
     id: "2024-04_quests_logging",
     kind: "user",
     label: "Quests Logging",
@@ -28,7 +28,7 @@ let s = (0, Chunk600975.C)({
       }
     }]
   }),
-  o = () => s.getCurrentConfig({
+  s = () => o.getCurrentConfig({
     location: "quests_logging"
   }, {
     autoTrackExposure: false
@@ -38,7 +38,7 @@ function l() {
   let {
     quest: e,
     location: t
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = o(), i = null == e ? true : e.config.messages.questName, s = null != t ? "-".concat(t) : "", l = null != i ? "-".concat(i, ")") : "", c = "QuestLogger".concat(s).concat(l), u = new r.A(c);
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = s(), i = null == e ? true : e.config.messages.questName, o = null != t ? "-".concat(t) : "", l = null != i ? "-".concat(i, ")") : "", c = "QuestLogger".concat(o).concat(l), u = new r.A(c);
   return {
     log: n ? u.log : a.tE,
     warn: n ? u.warn : a.tE,

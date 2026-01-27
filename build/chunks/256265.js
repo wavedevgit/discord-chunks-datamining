@@ -57,8 +57,8 @@ function v(e) {
     let {
       proxy_url: r,
       url: a,
-      description: s,
-      spoiler: o,
+      description: o,
+      spoiler: s,
       flags: c,
       width: u,
       height: d,
@@ -79,10 +79,10 @@ function v(e) {
       src: E,
       width: u,
       height: d,
-      spoiler: null != o && o,
+      spoiler: null != s && s,
       flags: c,
       contentScanVersion: p,
-      alt: s,
+      alt: o,
       isVideo: _,
       isThumbnail: h,
       attachmentId: e.id,
@@ -99,23 +99,23 @@ function A(e) {
 function I(e, t) {
   var n, r;
   let a = u.hD.useSetting(),
-    s = u.rs.useSetting();
+    o = u.rs.useSetting();
   if (null == e) return [];
-  let o = (null == (n = e.messageSnapshots[0]) ? true : n.moderatorReport) != null ? null == (r = e.messageSnapshots[0]) ? true : r.message.embeds : e.embeds;
-  return a && s && null != o ? o.map((e, n) => {
+  let s = (null == (n = e.messageSnapshots[0]) ? true : n.moderatorReport) != null ? null == (r = e.messageSnapshots[0]) ? true : r.message.embeds : e.embeds;
+  return a && o && null != s ? s.map((e, n) => {
     var r;
     let a = null != (r = e.image) ? r : e.thumbnail;
     if (null == a && null != e.images && (a = e.images[0]), null != a && null != a.url) {
       let {
         height: r,
-        proxyURL: s,
-        url: o,
+        proxyURL: o,
+        url: s,
         width: c,
         flags: u
-      } = a, d = null != s && (0, l.r1)(s);
+      } = a, d = null != o && (0, l.r1)(o);
       return {
         type: "embed",
-        src: null != s && "" !== s ? s : o,
+        src: null != o && "" !== o ? o : s,
         height: r,
         width: c,
         spoiler: t,
@@ -133,7 +133,7 @@ function S(e) {
   let t = u.hD.useSetting();
   if (null == e) return [];
   let n = e.components;
-  return t && null != n ? Array.from((0, s.p4)(n).values()).flatMap(e => {
+  return t && null != n ? Array.from((0, o.p4)(n).values()).flatMap(e => {
     switch (e.type) {
       case a.I5.THUMBNAIL:
         var t;
@@ -150,8 +150,8 @@ function S(e) {
 
 function T(e, t) {
   var n, r, a;
-  let s = (0, o.FE)(e);
-  return "INVALID" === s ? null : {
+  let o = (0, s.FE)(e);
+  return "INVALID" === o ? null : {
     type: "component",
     src: e.proxyUrl,
     height: null != (n = e.height) ? n : 0,
@@ -159,8 +159,8 @@ function T(e, t) {
     spoiler: t,
     contentScanVersion: null == (a = e.contentScanMetadata) ? true : a.version,
     flags: 0,
-    srcIsAnimated: (0, i.Lt)(e.flags, o.e5.IS_ANIMATED),
-    isVideo: "VIDEO" === s,
+    srcIsAnimated: (0, i.Lt)(e.flags, s.e5.IS_ANIMATED),
+    isVideo: "VIDEO" === o,
     mediaIndex: 0,
     srcUnfurledMediaItem: e
   }
@@ -186,9 +186,9 @@ function N(e, t) {
 function w(e, t) {
   var n, r, i;
   let a = A(e),
-    s = I(e, t),
-    o = S(e);
-  return null != (n = null != (r = null != (i = a[0]) ? i : s[0]) ? r : o[0]) ? n : null
+    o = I(e, t),
+    s = S(e);
+  return null != (n = null != (r = null != (i = a[0]) ? i : o[0]) ? r : s[0]) ? n : null
 }
 
 function R(e, t) {

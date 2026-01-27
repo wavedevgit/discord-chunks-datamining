@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 492684, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 492684, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk451988 = require("./451988.js"),
   Chunk985018 = require("./985018.jsx");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,62 +17,37 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
 }
 
 function c(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function u(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function d(e, t) {
-  if (null == e) return {};
-  var n, r, i, a = {};
-  if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-  }
-  if (a = f(e, t), Object.getOwnPropertySymbols)
-    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-  return a
+function u(e) {
+  return "".concat(e).length < 13 ? 1e3 * e : e
 }
 
-function f(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.getOwnPropertyNames(e);
-  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-  return i
-}
-let p = 13;
-
-function _(e) {
-  return "".concat(e).length < p ? 1e3 * e : e
-}
-
-function h(e) {
+function d(e) {
   return class extends i.PureComponent {
     componentDidMount() {
       this._interval.start(1e3, () => this.setState(this.getUpdatedTime()))
@@ -88,7 +62,7 @@ function h(e) {
       let {
         timestamps: e
       } = this.props, t = Date.now() / 1e3;
-      return null != e.end ? this.getDiff(t, _(e.end) / 1e3) : null != e.start ? this.getDiff(_(e.start) / 1e3, t) : {
+      return null != e.end ? this.getDiff(t, u(e.end) / 1e3) : null != e.start ? this.getDiff(u(e.start) / 1e3, t) : {
         hours: 0,
         minutes: 0,
         seconds: 0
@@ -113,23 +87,39 @@ function h(e) {
         {
           timestamps: n
         } = t,
-        i = d(t, ["timestamps"]),
-        a = this.renderTime(this.state.hours, true),
-        o = this.renderTime(this.state.minutes),
-        c = this.renderTime(this.state.seconds),
-        f = false === a ? "".concat(o, ":").concat(c) : "".concat(a, ":").concat(o, ":").concat(c);
-      return null != n.end ? (0, r.jsx)(e, u(l({}, i), {
-        message: s.intl.formatToPlainString(s.t["I/J7vI"], {
-          duration: f
+        i = function(e, t) {
+          if (null == e) return {};
+          var n, r, i, l = {};
+          if ("u" > typeof Reflect && Reflect.ownKeys) {
+            for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+            return l
+          }
+          if (l = function(e, t) {
+              if (null == e) return {};
+              var n, r, i = {},
+                l = Object.getOwnPropertyNames(e);
+              for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+              return i
+            }(e, t), Object.getOwnPropertySymbols)
+            for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+          return l
+        }(t, ["timestamps"]),
+        l = this.renderTime(this.state.hours, true),
+        s = this.renderTime(this.state.minutes),
+        u = this.renderTime(this.state.seconds),
+        d = false === l ? "".concat(s, ":").concat(u) : "".concat(l, ":").concat(s, ":").concat(u);
+      return null != n.end ? (0, r.jsx)(e, c(o({}, i), {
+        message: a.intl.formatToPlainString(a.t["I/J7vI"], {
+          duration: d
         })
-      })) : null != n.start ? (0, r.jsx)(e, u(l({}, i), {
-        message: s.intl.formatToPlainString(s.t.M9Fexd, {
-          duration: f
+      })) : null != n.start ? (0, r.jsx)(e, c(o({}, i), {
+        message: a.intl.formatToPlainString(a.t.M9Fexd, {
+          duration: d
         })
       })) : null
     }
     constructor(e) {
-      super(e), o(this, "_interval", true), this._interval = new a.IX, this.state = l({}, this.getUpdatedTime())
+      super(e), s(this, "_interval", true), this._interval = new l.IX, this.state = o({}, this.getUpdatedTime())
     }
   }
 }

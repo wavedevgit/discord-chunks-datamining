@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 896005, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 896005, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,42 +11,40 @@ var Chunk627968 = require("./627968.js"),
   Chunk641324 = require("./641324.jsx"),
   Chunk112715 = require("./112715.js"),
   Chunk702421 = require("./702421.js");
-
-function d(e) {
+let u = Chunk64700.memo(function(e) {
   let {
     node: t
   } = e, {
     useTitle: n,
-    useSubtitle: a,
-    layout: d,
-    initialize: f
-  } = t, p = null == n ? true : n(), _ = null == a ? true : a(), h = i.useId(), m = null != p && "" !== p, g = null != _ && "" !== _;
-  return (0, c.Z)(f), (0, r.jsxs)("fieldset", {
-    "aria-describedby": g ? h : true,
-    children: [m ? (0, r.jsx)(o.Text, {
+    useSubtitle: l,
+    layout: u,
+    initialize: _
+  } = t, p = null == n ? true : n(), m = null == l ? true : l(), g = i.useId(), A = null != p && "" !== p, f = null != m && "" !== m;
+  return (0, c.Z)(_), (0, r.jsxs)("fieldset", {
+    "aria-describedby": f ? g : true,
+    children: [A ? (0, r.jsx)(a.Text, {
       tag: "legend",
       variant: "text-md/semibold",
       color: "text-strong",
-      className: s()(u.DD, {
-        [u.h0]: g
+      className: s()(d.DD, {
+        [d.h0]: f
       }),
       children: p
-    }) : null, g ? (0, r.jsx)(o.Text, {
+    }) : null, f ? (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      id: h,
-      className: u.VA,
-      children: _
-    }) : null, (0, r.jsx)(o.BJc, {
+      id: g,
+      className: d.VA,
+      children: m
+    }) : null, (0, r.jsx)(a.BJc, {
       direction: "vertical",
       gap: 8,
       padding: {
         top: 16
       },
-      children: d.map(e => (0, r.jsx)(l.A, {
+      children: u.map(e => (0, r.jsx)(o.A, {
         node: e
       }, e.key))
     })]
   })
-}
-let f = Chunk64700.memo(d)
+})

@@ -12,21 +12,21 @@ var Chunk723702 = require("./723702.js"),
   Chunk981616 = require("./981616.js"),
   Chunk272984 = require("./272984.js");
 
-function o(e, t, n) {
-  let o;
-  (0, r.isDesktop)() || (o = window.open("", "_blank")), (0, a.LI)(e, t).then(e => n(e)).then(e => {
+function s(e, t, n) {
+  let s;
+  (0, r.isDesktop)() || (s = window.open("", "_blank")), (0, a.LI)(e, t).then(e => n(e)).then(e => {
     let {
       resourceType: t,
       resourceId: n
-    } = e, r = i.A.isProtocolRegistered() ? s.RQ.PLAYER_OPEN(t, n) : s.RQ.WEB_OPEN(t, n);
-    null != o ? o.location.href = r : window.open(r)
+    } = e, r = i.A.isProtocolRegistered() ? o.RQ.PLAYER_OPEN(t, n) : o.RQ.WEB_OPEN(t, n);
+    null != s ? s.location.href = r : window.open(r)
   }).catch(() => {
-    null != o && o.close()
+    null != s && s.close()
   })
 }
 
 function l() {
-  window.open(s.RQ.PREMIUM_SITE)
+  window.open(o.RQ.PREMIUM_SITE)
 }
 
 function c(e) {
@@ -36,27 +36,27 @@ function c(e) {
     metadata: r
   } = e;
   if (null == n) return;
-  let a = (0, s.NJ)(null != (t = null == r ? true : r.type) ? t : s.M0.TRACK);
+  let a = (0, o.NJ)(null != (t = null == r ? true : r.type) ? t : o.M0.TRACK);
   if (null == a) return;
-  let o = i.A.isProtocolRegistered() ? s.RQ.PLAYER_OPEN(a, n) : s.RQ.WEB_OPEN(a, n);
-  window.open(o)
+  let s = i.A.isProtocolRegistered() ? o.RQ.PLAYER_OPEN(a, n) : o.RQ.WEB_OPEN(a, n);
+  window.open(s)
 }
 
 function u(e, t) {
-  o(e, t, t => {
+  s(e, t, t => {
     var n;
     let {
       album_id: r
     } = t;
     return {
-      resourceType: (0, s.NJ)(null == (n = e.metadata) ? true : n.type) === s.M0.EPISODE ? s.M0.SHOW : s.M0.ALBUM,
+      resourceType: (0, o.NJ)(null == (n = e.metadata) ? true : n.type) === o.M0.EPISODE ? o.M0.SHOW : o.M0.ALBUM,
       resourceId: r
     }
   })
 }
 
 function d(e, t, n) {
-  o(e, t, e => {
+  s(e, t, e => {
     let {
       artist_ids: t
     } = e;
@@ -64,7 +64,7 @@ function d(e, t, n) {
     let r = t[n];
     if (null == r) throw Error("invalid artist index");
     return {
-      resourceType: s.M0.ARTIST,
+      resourceType: o.M0.ARTIST,
       resourceId: r
     }
   })

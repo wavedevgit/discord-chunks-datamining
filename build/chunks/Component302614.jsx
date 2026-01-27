@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk111956 = require("./111956.js"),
   l = require.n(Chunk111956),
   Chunk835245 = require("./835245.js"),
@@ -113,7 +113,7 @@ function S(e) {
     observe: t = true,
     className: n,
     style: a,
-    children: o
+    children: s
   } = e, l = i.useContext(I), c = (0, u.bG)([g.A], () => g.A.hasRenderDebugMode(m.x7.ClickZones)), d = (0, u.bG)([_.default], () => _.default.disableClickableRegions), [{
     refHandler: f,
     setObserve: p
@@ -133,8 +133,8 @@ function S(e) {
   }, [t, p, d]), (0, r.jsx)("div", {
     ref: f,
     style: a,
-    className: s()(n, b.v, c && b.p),
+    className: o()(n, b.v, c && b.p),
     "data-click-zone": true,
-    children: o
+    children: s
   })
 }

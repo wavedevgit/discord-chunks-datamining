@@ -60,12 +60,12 @@ function I(e) {
     onComplete: n,
     transitionState: i,
     applicationId: a,
-    analyticsLocationObject: o,
+    analyticsLocationObject: s,
     skuId: l,
     isGift: u
   } = e, {} = (0, c.P5)(), {
     analyticsLocations: d
-  } = (0, s.Ay)();
+  } = (0, o.Ay)();
   return (0, r.jsx)(f.PaymentModal, {
     onClose: t,
     onComplete: n,
@@ -73,7 +73,7 @@ function I(e) {
     skuId: l,
     renderHeader: A(u),
     initialPlanId: null,
-    analyticsObject: o,
+    analyticsObject: s,
     analyticsLocations: d,
     transitionState: i
   })
@@ -93,7 +93,7 @@ let T = e => {
     analyticsLocations: r
   } = e, {
     analyticsLocations: l
-  } = (0, s.Ay)(r, a.A.SLAYER_STOREFRONT_PAYMENT_MODAL), c = (0, o.h)(t);
+  } = (0, o.Ay)(r, a.A.SLAYER_STOREFRONT_PAYMENT_MODAL), c = (0, s.h)(t);
   return i.useEffect(() => {
     null == c || null == c.guildId || null == n || h.A.isFetchingForSKU(n) || null != _.A.get(n) || (0, m.qf)(c.guildId, n)
   }, [c, n]), {
@@ -107,12 +107,12 @@ function C(e) {
     applicationId: n,
     isGift: i = false,
     giftRecipient: a,
-    giftingOrigin: o,
+    giftingOrigin: s,
     additionalUserIds: u
   } = e, {
     analyticsLocations: f
   } = T(e);
-  return (0, r.jsx)(s.f5, {
+  return (0, r.jsx)(o.f5, {
     value: f,
     children: (0, r.jsx)(c.PaymentContextProvider, {
       loadId: t,
@@ -126,7 +126,7 @@ function C(e) {
         children: (0, r.jsx)(l.dX, {
           isGift: i,
           giftRecipient: a,
-          giftingOrigin: o,
+          giftingOrigin: s,
           additionalUserIds: u,
           children: (0, r.jsx)(I, v({}, e))
         })

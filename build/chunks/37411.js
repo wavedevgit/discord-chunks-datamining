@@ -10,15 +10,15 @@ require.d(exports, {
   Td: () => l,
   az: () => p,
   cM: () => a,
-  kl: () => s,
+  kl: () => o,
   oR: () => c,
-  su: () => o
+  su: () => s
 }), require("./896048.js");
 var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 let a = 4320,
-  s = 50,
-  o = 1e5,
+  o = 50,
+  s = 1e5,
   l = 50,
   c = 25,
   u = {

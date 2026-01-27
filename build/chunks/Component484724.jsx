@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 484724, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 484724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => v
 }), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,52 +22,50 @@ var Chunk627968 = require("./627968.js"),
   Chunk427080 = require("./427080.jsx"),
   Chunk652215 = require("./652215.js");
 
-function O(e) {
+function v(e) {
   let {
     code: t
-  } = e, [n, O, v] = t.split("-"), {
-    analyticsLocations: A
-  } = (0, o.Ay)(), {
-    guildScheduledEvent: I,
-    guild: S,
-    channel: T,
-    isMember: C
-  } = (0, a.cf)([g.Ay, _.A, f.A, p.Ay, h.default], () => {
+  } = e, [n, v, x] = t.split("-"), {
+    analyticsLocations: O
+  } = (0, s.Ay)(), {
+    guildScheduledEvent: E,
+    guild: j,
+    channel: C,
+    isMember: I
+  } = (0, l.cf)([_.Ay, f.A, p.A, m.Ay, g.default], () => {
     var e, t;
-    let r = null != (e = g.Ay.getGuildScheduledEvent(O)) ? e : true,
-      i = _.A.getGuild(n),
-      a = f.A.getChannel(null == r ? true : r.channel_id);
+    let r = null != (e = _.Ay.getGuildScheduledEvent(v)) ? e : true,
+      i = f.A.getGuild(n),
+      l = p.A.getChannel(null == r ? true : r.channel_id);
     return {
       guildScheduledEvent: r,
       guild: i,
-      channel: a,
-      isMember: p.Ay.isMember(n, null == (t = h.default.getCurrentUser()) ? true : t.id)
+      channel: l,
+      isMember: m.Ay.isMember(n, null == (t = g.default.getCurrentUser()) ? true : t.id)
     }
-  }, [n, O]), N = () => {
-    if ((0, u.g)({
-        guild: S,
-        isMember: C,
-        analyticsLocations: A
-      }) === u.W.PROCEED) {
-      if ((0, c.V)(n)) return void(0, l.Ze)(n);
-      s.A.joinGuild(n, {
-        source: b.Q4z.GUILD_EVENT_EMBED
-      }).catch(() => {})
-    }
-  };
-
-  function w() {
-    (0, c.V)(n) ? (0, l.Ze)(n) : (null == T ? true : T.isGuildStageVoice()) ? (0, d.av)(T) : (null == T ? true : T.isGuildVoice()) && E.A.joinVoiceEvent(T.guild_id, T.id)
-  }
+  }, [n, v]);
   return i.useEffect(() => {
-    (null == I ? true : I.id) == null && E.A.fetchGuildEvent(n, O), m.A.getGuildEventUserCounts(n, O, null != v ? [v] : []), m.A.getGuildEventsForCurrentUser(n)
-  }, [O, n, null == I ? true : I.id, v]), (0, r.jsx)(y.Ay, {
-    guild: S,
-    channel: T,
-    guildScheduledEvent: I,
-    isMember: C,
-    onAcceptInstantInvite: N,
-    onTransitionToInviteChannel: w,
-    recurrenceId: v
+    (null == E ? true : E.id) == null && b.A.fetchGuildEvent(n, v), h.A.getGuildEventUserCounts(n, v, null != x ? [x] : []), h.A.getGuildEventsForCurrentUser(n)
+  }, [v, n, null == E ? true : E.id, x]), (0, r.jsx)(A.Ay, {
+    guild: j,
+    channel: C,
+    guildScheduledEvent: E,
+    isMember: I,
+    onAcceptInstantInvite: () => {
+      if ((0, u.g)({
+          guild: j,
+          isMember: I,
+          analyticsLocations: O
+        }) === u.W.PROCEED) {
+        if ((0, c.V)(n)) return void(0, o.Ze)(n);
+        a.A.joinGuild(n, {
+          source: y.Q4z.GUILD_EVENT_EMBED
+        }).catch(() => {})
+      }
+    },
+    onTransitionToInviteChannel: function() {
+      (0, c.V)(n) ? (0, o.Ze)(n) : (null == C ? true : C.isGuildStageVoice()) ? (0, d.av)(C) : (null == C ? true : C.isGuildVoice()) && b.A.joinVoiceEvent(C.guild_id, C.id)
+    },
+    recurrenceId: x
   })
 }

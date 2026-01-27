@@ -12,13 +12,13 @@ function a(e) {
   let {
     guildId: t
   } = e;
-  return (0, l.bG)([i.A, r.A], () => {
+  return (0, r.bG)([i.A, l.A], () => {
     var e;
     let n = i.A.get(t),
-      l = null == n ? true : n.guild,
-      a = r.A.getGuild(t),
+      r = null == n ? true : n.guild,
+      a = l.A.getGuild(t),
       o = null == a ? true : a.verificationLevel,
-      c = null == l ? true : l.verification_level;
+      c = null == r ? true : r.verification_level;
     return null != (e = null != o ? o : c) ? e : s.PvD.NONE
   }, [t])
 }

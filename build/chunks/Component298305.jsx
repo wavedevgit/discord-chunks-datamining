@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 298305, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 2292 **/
+/** chunk id: 298305, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => x
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -10,43 +9,66 @@ var Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk775602 = require("./775602.js"),
   Chunk920064 = require("./920064.js"),
+  Chunk674658 = require("./674658.js"),
+  Chunk898461 = require("./898461.js"),
   Chunk287809 = require("./287809.js"),
   Chunk504721 = require("./504721.js"),
   Chunk513653 = require("./513653.js"),
   Chunk180391 = require("./180391.js");
-let f = 1.5,
-  p = .321;
 
-function _(e) {
+function g(e) {
+  let {
+    skuId: t,
+    size: r,
+    src: d,
+    className: m
+  } = e, p = (0, i.bG)([u.default], () => u.default.getCurrentUser()), g = (0, i.bG)([a.A], () => a.A.useReducedMotion), {
+    product: x,
+    isFetching: C
+  } = (0, o.q)(t);
+  if (C || null == x) return (0, n.jsx)(l.y$y, {
+    type: l.tVU.PULSING_ELLIPSIS
+  });
+  let f = x.items[0];
+  if (null == f || !(0, c.T)(f)) return null;
+  let T = (0, s.A)(f.asset, r, !g);
+  return (0, n.jsx)(l.JsQ, {
+    "aria-label": null == p ? true : p.username,
+    size: r,
+    className: m,
+    src: null != d ? d : null == p ? true : p.getAvatarURL(true, (0, l.FT9)(r), !g),
+    avatarDecoration: T
+  })
+}
+
+function x(e) {
   let {
     maxRewardImageSrc: t,
-    claimableRewards: n,
-    size: _,
-    imageScaling: h = f
-  } = e, m = (0, i.bG)([l.default], () => l.default.getCurrentUser()), g = (0, i.bG)([s.A], () => s.A.useReducedMotion), E = (0, a.FT9)(_), y = {
-    height: E * h
-  };
-  return n.length > 0 ? (0, r.jsx)("img", {
+    claimableRewards: r,
+    size: s,
+    imageScaling: o = 1.5
+  } = e, c = (0, i.bG)([u.default], () => u.default.getCurrentUser()), x = (0, i.bG)([a.A], () => a.A.useReducedMotion), C = (0, l.FT9)(s);
+  return r.length > 0 ? (0, n.jsx)("img", {
     alt: "",
     src: t,
-    style: y
-  }) : (0, r.jsxs)("div", {
-    className: c.kL,
-    children: [(1 === n.length || 2 === n.length) && (0, r.jsx)(a.JsQ, {
-      "aria-label": null == m ? true : m.username,
-      size: _,
-      className: c.M8,
-      src: 1 === n.length ? null == m ? true : m.getAvatarURL(true, (0, a.FT9)(_), !g) : d,
-      avatarDecoration: (0, o.A)(n[0].assetId, _, !g)
-    }), 2 === n.length && (0, r.jsx)("div", {
+    style: {
+      height: C * o
+    }
+  }) : (0, n.jsxs)("div", {
+    className: d.kL,
+    children: [(1 === r.length || 2 === r.length) && (0, n.jsx)(g, {
+      skuId: r[0],
+      size: s,
+      className: d.M8,
+      src: 1 === r.length ? null == c ? true : c.getAvatarURL(true, (0, l.FT9)(s), !x) : p
+    }), 2 === r.length && (0, n.jsx)("div", {
       style: {
-        marginRight: -Math.round(E * p)
+        marginRight: -Math.round(.321 * C)
       },
-      children: (0, r.jsx)(a.JsQ, {
-        "aria-label": null == m ? true : m.username,
-        size: _,
-        src: u,
-        avatarDecoration: (0, o.A)(n[1].assetId, _, !g)
+      children: (0, n.jsx)(g, {
+        skuId: r[1],
+        size: s,
+        src: m
       })
     })]
   })

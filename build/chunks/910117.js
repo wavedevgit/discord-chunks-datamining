@@ -114,7 +114,7 @@ class m {
       selectedSourceInviteCode: f,
       selectedJoinSourceType: p
     } = this._searchState;
-    return !(t.length > 0 && !_(e, t) || c.size > 0 && !h(e, c) || null != u.afterDate && e.joinedAtTimestamp < u.afterDate || null != u.beforeDate && e.joinedAtTimestamp > u.beforeDate || null != d.afterDate && o.default.extractTimestamp(e.userId) < d.afterDate || null != d.beforeDate && o.default.extractTimestamp(e.userId) > d.beforeDate) && (null == f || e.sourceInviteCode === f) && (null == p || e.joinSourceType === p) && (!n && !r && !i && !l || !!(n && e.hasUnusualDmActivity || r && (0, s.Z)(e) || i && e.hasUnusualAccountActivity || l && (0, a.TR)(e)))
+    return !(t.length > 0 && !_(e, t) || c.size > 0 && !h(e, c) || null != u.afterDate && e.joinedAtTimestamp < u.afterDate || null != u.beforeDate && e.joinedAtTimestamp > u.beforeDate || null != d.afterDate && s.default.extractTimestamp(e.userId) < d.afterDate || null != d.beforeDate && s.default.extractTimestamp(e.userId) > d.beforeDate) && (null == f || e.sourceInviteCode === f) && (null == p || e.joinSourceType === p) && (!n && !r && !i && !l || !!(n && e.hasUnusualDmActivity || r && (0, o.Z)(e) || i && e.hasUnusualAccountActivity || l && (0, a.TR)(e)))
   }
   constructor(e) {
     c(this, "guildId", true), c(this, "_searchState", true), c(this, "hasDefaultQuery", true), this.guildId = e, this._searchState = d(), this.hasDefaultQuery = true

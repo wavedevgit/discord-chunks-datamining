@@ -14,8 +14,8 @@ var Chunk64700 = require("./64700.js"),
 function c() {
   let e = (0, l.z)(),
     t = a.Q_.getSetting(),
-    n = (0, i.bG)([s.A], () => s.A.getFetchState(), []);
+    n = (0, i.bG)([o.A], () => o.A.getFetchState(), []);
   return r.useEffect(() => {
-    e && t && n === s.$.INITIALIZED && (0, o.SE)()
+    e && t && n === o.$.INITIALIZED && (0, s.SE)()
   }, [e, n, t]), null
 }

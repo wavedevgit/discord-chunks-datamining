@@ -2,14 +2,14 @@
 /** chunk id: 548965, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ML: () => o,
+  ML: () => s,
   iQ: () => f
 }), require("./228524.js"), require("./321073.js"), require("./896048.js");
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
   Chunk306173 = require("./306173.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = [],
+let s = [],
   l = Symbol("unknown");
 class c {
   getEnabledFeatureName() {
@@ -38,7 +38,7 @@ class c {
     })
   }
   constructor(e, t) {
-    s(this, "id", true), s(this, "inner", true), s(this, "cachedConfig", true), this.id = e, this.inner = null, this.cachedConfig = l, o.push(this)
+    o(this, "id", true), o(this, "inner", true), o(this, "cachedConfig", true), this.id = e, this.inner = null, this.cachedConfig = l, s.push(this)
   }
 }
 class u extends c {
@@ -57,7 +57,7 @@ class u extends c {
     return null != e && 1 === e.treatmentId
   }
   constructor(e, t) {
-    super(e), s(this, "label", true), this.label = t
+    super(e), o(this, "label", true), this.label = t
   }
 }
 class d extends c {
@@ -96,7 +96,7 @@ class d extends c {
     return 0 !== e && (1 === e || !(this.emissionsCount >= this.MAX_EMISSIONS_PER_APP_LAUNCH) && Math.random() < e)
   }
   constructor(...e) {
-    super(...e), s(this, "MAX_EMISSIONS_PER_APP_LAUNCH", 5), s(this, "emissionsCount", 0)
+    super(...e), o(this, "MAX_EMISSIONS_PER_APP_LAUNCH", 5), o(this, "emissionsCount", 0)
   }
 }
 new d("2025-09-libdiscore-telemetry");

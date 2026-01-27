@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
   Chunk990078 = require("./990078.jsx"),
@@ -30,7 +30,7 @@ function b(e) {
     id: t,
     className: n,
     onSelect: a,
-    isSelected: o = false,
+    isSelected: s = false,
     tabIndex: l,
     children: p,
     locked: m = false
@@ -43,14 +43,14 @@ function b(e) {
       children: [(0, r.jsx)(u.DUT, {
         role: "radio",
         "aria-label": E,
-        "aria-checked": o,
-        tabIndex: null != l ? l : o ? 0 : false,
-        className: s()(g.Ni, {
-          [g.wH]: o
+        "aria-checked": s,
+        tabIndex: null != l ? l : s ? 0 : false,
+        className: o()(g.Ni, {
+          [g.wH]: s
         }, n),
-        onClick: o ? h.tEg : () => null == a ? true : a(t),
+        onClick: s ? h.tEg : () => null == a ? true : a(t),
         children: p
-      }), o && (0, r.jsx)(d.H$, {}), m && (0, r.jsx)("div", {
+      }), s && (0, r.jsx)(d.H$, {}), m && (0, r.jsx)("div", {
         className: g.RK,
         children: (0, r.jsx)(u.XAi, {
           className: g.AA,
@@ -67,16 +67,16 @@ function O(e) {
     isSelected: n,
     disabled: i,
     tabIndex: a,
-    onSelect: s,
-    locked: o
+    onSelect: o,
+    locked: s
   } = e;
   return (0, r.jsx)(b, {
-    onSelect: i ? true : s,
+    onSelect: i ? true : o,
     isSelected: n,
     id: t.id,
     className: i ? g.r9 : true,
     tabIndex: a,
-    locked: o,
+    locked: s,
     children: (0, r.jsx)(p.A, {
       id: t.id,
       width: _.Kl

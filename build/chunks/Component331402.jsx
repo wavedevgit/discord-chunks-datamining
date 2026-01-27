@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698);
+  o = require.n(Chunk503698);
 require("./216160.js");
 var Chunk675100 = require("./675100.js"),
   Chunk182592 = require("./182592.jsx"),
@@ -32,7 +32,7 @@ let d = e => {
       }
     }
   }, [d]), null == t) ? null : (0, r.jsxs)("div", {
-    className: s()(c.i1, {
+    className: o()(c.i1, {
       [c.qy]: d,
       [c.pE]: !a
     }),
@@ -46,7 +46,7 @@ let d = e => {
       skuId: t,
       useThumbnail: true,
       autoPlay: d,
-      restartMethod: o.H.FromStart,
+      restartMethod: s.H.FromStart,
       resetOnHover: true,
       isHovering: n,
       useOpacityOnHover: false,

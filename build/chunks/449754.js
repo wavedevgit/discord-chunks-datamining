@@ -9,7 +9,7 @@ var Chunk982520 = require("./982520.js"),
   Chunk439372 = require("./439372.js"),
   Chunk400492 = require("./400492.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -59,7 +59,7 @@ function b() {
 }
 class O extends Chunk439372.A {
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), s(this, "actions", {
       VIBING_WUMPUS_PLAY_MUSIC: g,
       VIBING_WUMPUS_STOP_MUSIC: y,
       VIBING_WUMPUS_PAUSE_MUSIC: E

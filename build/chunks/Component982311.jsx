@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 982311, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 982311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,26 +16,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk424019 = require("./424019.js");
 
-function h(e) {
+function g(e) {
   let {
     onClose: t,
     transitionState: n
-  } = e, i = () => (0, r.jsxs)("div", {
-    className: _.t4,
-    children: [(0, r.jsx)(o.Heading, {
-      variant: "heading-xl/semibold",
-      children: p.intl.string(p.t.iufib1)
-    }), (0, r.jsx)(o.Text, {
-      variant: "text-md/normal",
-      className: _.G3,
-      children: p.intl.string(p.t.eAn6z2)
-    })]
-  });
-  return (0, r.jsx)(a.Modal, {
+  } = e;
+  return (0, r.jsx)(l.Modal, {
     title: "",
     size: "md",
     input: (0, r.jsx)("div", {
-      className: _.aR
+      className: m.aR
     }),
     onClose: async () => await t(),
     actions: [{
@@ -45,52 +34,59 @@ function h(e) {
       onClick: t
     }],
     transitionState: n,
-    children: i()
+    children: (0, r.jsxs)("div", {
+      className: m.t4,
+      children: [(0, r.jsx)(a.Heading, {
+        variant: "heading-xl/semibold",
+        children: p.intl.string(p.t.iufib1)
+      }), (0, r.jsx)(a.Text, {
+        variant: "text-md/normal",
+        className: m.G3,
+        children: p.intl.string(p.t.eAn6z2)
+      })]
+    })
   })
 }
-let m = function(e) {
+let A = function(e) {
   let {
     onClose: t,
     onClaim: n,
-    code: m,
-    outboundPromotion: g,
-    transitionState: E
-  } = e, [y, b] = i.useState(null), O = (0, d.GV)(), {
-    analyticsLocations: v
-  } = (0, u.Ay)(c.A.USER_SETTINGS_GIFT_INVENTORY);
-  if (i.useEffect(() => {
-      null == m && (0, f.kd)({
-        promotionId: g.id,
-        analyticsLocations: v
-      }).then(e => n(e)).catch(e => {
-        var t;
-        return b(null == e || null == (t = e.body) ? true : t.code)
-      })
-    }, [m, g.id, n, v]), null != y) return (0, r.jsx)(h, {
+    code: A,
+    outboundPromotion: f,
+    transitionState: h
+  } = e, [b, E] = i.useState(null), x = (0, u.GV)(), {
+    analyticsLocations: O
+  } = (0, d.Ay)(c.A.USER_SETTINGS_GIFT_INVENTORY);
+  return (i.useEffect(() => {
+    null == A && (0, _.kd)({
+      promotionId: f.id,
+      analyticsLocations: O
+    }).then(e => n(e)).catch(e => {
+      var t;
+      return E(null == e || null == (t = e.body) ? true : t.code)
+    })
+  }, [A, f.id, n, O]), null != b) ? (0, r.jsx)(g, {
     onClose: t,
-    transitionState: E
-  });
-  if (null == m) return (0, r.jsx)(o.y$y, {
-    className: _.Lq
-  });
-  let A = () => (0, r.jsxs)("div", {
-    className: _.N1,
-    children: [(0, r.jsx)("div", {
-      className: _.Qw
-    }), (0, r.jsx)(o.Heading, {
-      variant: "heading-xl/semibold",
-      children: p.intl.string(p.t["23BfZh"])
-    }), (0, r.jsx)(o.Text, {
-      variant: "text-md/normal",
-      className: _.G3,
-      children: g.outboundRedemptionModalBody
-    })]
-  });
-  return (0, r.jsx)(a.Modal, {
+    transitionState: h
+  }) : null == A ? (0, r.jsx)(a.y$y, {
+    className: m.Lq
+  }) : (0, r.jsx)(l.Modal, {
     title: "",
     size: "md",
     onClose: async () => await t(),
-    input: A(),
+    input: (0, r.jsxs)("div", {
+      className: m.N1,
+      children: [(0, r.jsx)("div", {
+        className: m.Qw
+      }), (0, r.jsx)(a.Heading, {
+        variant: "heading-xl/semibold",
+        children: p.intl.string(p.t["23BfZh"])
+      }), (0, r.jsx)(a.Text, {
+        variant: "text-md/normal",
+        className: m.G3,
+        children: f.outboundRedemptionModalBody
+      })]
+    }),
     actions: [{
       text: p.intl.string(p.t.TulDPl),
       variant: "secondary",
@@ -99,20 +95,20 @@ let m = function(e) {
       text: p.intl.string(p.t["+zx47d"]),
       variant: "primary",
       onClick: () => {
-        let e = (0, f.kc)(m, g);
+        let e = (0, _.kc)(A, f);
         window.open(e, "_blank")
       }
     }],
-    transitionState: E,
-    "aria-label": O,
+    transitionState: h,
+    "aria-label": x,
     children: (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(o.cGx, {
-        className: _.M5
-      }), (0, r.jsx)(a.D0$, {
+      children: [(0, r.jsx)(a.cGx, {
+        className: m.M5
+      }), (0, r.jsx)(l.D0$, {
         label: p.intl.string(p.t.s9LFQh),
         helperText: p.intl.string(p.t["F+nFTZ"]),
-        children: (0, r.jsx)(l.A, {
-          value: m,
+        children: (0, r.jsx)(o.A, {
+          value: A,
           buttonColor: s.$n.Colors.BRAND,
           buttonLook: s.$n.Looks.FILLED,
           delay: 1e3

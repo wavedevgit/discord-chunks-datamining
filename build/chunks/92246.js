@@ -34,8 +34,8 @@ var Chunk341915 = require("./341915.js"),
 let f = new Set([Chunk444212.E.PREMIUM_EXTENSION, Chunk444212.E.PREMIUM_PERMANENT]);
 
 function p(e) {
-  let t = e.rewardsConfig.rewards.find(e => e.type === s.l.COLLECTIBLE);
-  return (null == t ? true : t.type) === s.l.COLLECTIBLE ? t : null
+  let t = e.rewardsConfig.rewards.find(e => e.type === o.l.COLLECTIBLE);
+  return (null == t ? true : t.type) === o.l.COLLECTIBLE ? t : null
 }
 
 function _(e) {
@@ -49,15 +49,15 @@ function h(e) {
   let n = new Date(e.expiresAt),
     i = new Date(t.expiresAt),
     a = (0, r.A)(i, n),
-    s = Math.floor(a / 30) + +(a % 30 >= 25);
-  if (s >= 12) {
-    let e = Math.floor(s / 12);
+    o = Math.floor(a / 30) + +(a % 30 >= 25);
+  if (o >= 12) {
+    let e = Math.floor(o / 12);
     return d.intl.formatToPlainString(d.t.PClsrw, {
       years: e
     })
   } {
-    if (s > 0) return d.intl.formatToPlainString(d.t.kridzK, {
-      months: s
+    if (o > 0) return d.intl.formatToPlainString(d.t.kridzK, {
+      months: o
     });
     let e = (0, r.A)(i, n);
     if (!(e >= 7)) return d.intl.formatToPlainString(d.t["k2UNz+"], {
@@ -73,11 +73,11 @@ function h(e) {
 }
 
 function m(e) {
-  return e.rewardsConfig.rewards.some(e => e.type === s.l.FRACTIONAL_PREMIUM)
+  return e.rewardsConfig.rewards.some(e => e.type === o.l.FRACTIONAL_PREMIUM)
 }
 
 function g(e) {
-  return e.rewardsConfig.rewards.some(e => e.type === s.l.VIRTUAL_CURRENCY)
+  return e.rewardsConfig.rewards.some(e => e.type === o.l.VIRTUAL_CURRENCY)
 }
 
 function E(e) {
@@ -85,20 +85,20 @@ function E(e) {
 }
 
 function y(e) {
-  return e.rewardsConfig.rewards.some(e => e.type === s.l.IN_GAME)
+  return e.rewardsConfig.rewards.some(e => e.type === o.l.IN_GAME)
 }
 
 function b(e) {
-  return e.rewardsConfig.rewards.some(e => e.type === s.l.REWARD_CODE)
+  return e.rewardsConfig.rewards.some(e => e.type === o.l.REWARD_CODE)
 }
 
 function O(e) {
   var t;
-  return null != (t = e.rewardsConfig.rewards.find(e => e.type === s.l.IN_GAME)) ? t : null
+  return null != (t = e.rewardsConfig.rewards.find(e => e.type === o.l.IN_GAME)) ? t : null
 }
 
 function v(e) {
-  let t = e.rewardsConfig.rewards.find(e => e.type === s.l.VIRTUAL_CURRENCY);
+  let t = e.rewardsConfig.rewards.find(e => e.type === o.l.VIRTUAL_CURRENCY);
   return null == t ? true : t.orbQuantity
 }
 
@@ -140,7 +140,7 @@ function w(e) {
   } = e;
   if (null == n) return null;
   let r = t.config.rewardsConfig.rewards[n];
-  return r.type === s.l.REWARD_CODE ? r : null
+  return r.type === o.l.REWARD_CODE ? r : null
 }
 
 function R(e) {
@@ -149,10 +149,10 @@ function R(e) {
       config: t
     }
   } = e, n = t.rewardsConfig;
-  return n.assignmentMethod === i.T.TIERED && n.rewards.length > 0 && n.rewards.every(e => e.type === s.l.REWARD_CODE)
+  return n.assignmentMethod === i.T.TIERED && n.rewards.length > 0 && n.rewards.every(e => e.type === o.l.REWARD_CODE)
 }
 
 function P(e) {
   let t = e.rewardsConfig.platforms;
-  return t.length > 0 ? t[0] : o.pY.CROSS_PLATFORM
+  return t.length > 0 ? t[0] : s.pY.CROSS_PLATFORM
 }

@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
 function d(e) {
   let {
     children: t
-  } = e, [n, d] = i.useState(null), [f, p] = i.useState(null), _ = i.useRef(new Set), [h, m] = i.useState(false), g = (0, s.bG)([o.A], () => o.A.getCurrentlySelectedChannelId()), E = i.useCallback(e => {
+  } = e, [n, d] = i.useState(null), [f, p] = i.useState(null), _ = i.useRef(new Set), [h, m] = i.useState(false), g = (0, o.bG)([s.A], () => s.A.getCurrentlySelectedChannelId()), E = i.useCallback(e => {
     _.current.delete(e), m(_.current.size > 0)
   }, []), y = i.useCallback(e => (_.current.add(e), m(true), () => E(e)), [E]), b = i.useCallback((e, t) => {
     for (let n of _.current) n(e, t)

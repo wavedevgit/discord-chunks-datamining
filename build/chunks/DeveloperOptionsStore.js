@@ -41,7 +41,7 @@ let m = (() => {
       t = null,
       n = new i.A(5 * d.A.Millis.SECOND, +d.A.Millis.MINUTE, true),
       r = () => {
-        o.Bo.put({
+        s.Bo.put({
           url: e,
           headers: {
             Authorization: a.getToken()
@@ -58,7 +58,7 @@ let m = (() => {
       };
     return {
       set: n => {
-        n !== (null != t) && (n ? t = setTimeout(r, 0) : (clearTimeout(t), t = null, o.Bo.del({
+        n !== (null != t) && (n ? t = setTimeout(r, 0) : (clearTimeout(t), t = null, s.Bo.del({
           url: e,
           headers: {
             Authorization: a.getToken()

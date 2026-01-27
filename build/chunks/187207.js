@@ -8,7 +8,7 @@ var Chunk824120 = require("./824120.js"),
   i = require.n(Chunk824120),
   Chunk264572 = require("./264572.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   return 0 | e.mod(0x100000000).toJSNumber()
 }
 
@@ -29,9 +29,9 @@ class c {
     let t = i()(e),
       n = 0 | this._sequenceNumber++,
       r = new a.Buffer(24);
-    return r.writeInt32LE(o(t), 0, true), r.writeInt32LE(l(t), 4, true), r.writeInt32LE(this._randomPrefix, 8, true), r.writeInt32LE(o(this._creationTime), 12, true), r.writeInt32LE(l(this._creationTime), 16, true), r.writeInt32LE(n, 20, true), r.toString("base64")
+    return r.writeInt32LE(s(t), 0, true), r.writeInt32LE(l(t), 4, true), r.writeInt32LE(this._randomPrefix, 8, true), r.writeInt32LE(s(this._creationTime), 12, true), r.writeInt32LE(l(this._creationTime), 16, true), r.writeInt32LE(n, 20, true), r.toString("base64")
   }
   constructor() {
-    s(this, "_randomPrefix", 0 | Math.floor(0x100000000 * Math.random())), s(this, "_creationTime", i()(Date.now())), s(this, "_sequenceNumber", 0)
+    o(this, "_randomPrefix", 0 | Math.floor(0x100000000 * Math.random())), o(this, "_creationTime", i()(Date.now())), o(this, "_sequenceNumber", 0)
   }
 }

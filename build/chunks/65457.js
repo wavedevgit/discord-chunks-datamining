@@ -38,7 +38,7 @@ class f extends Chunk439372.A {
         state: t,
         context: n
       } = e;
-      (0, l.isWeb)() || n === i.x.DEFAULT && t !== u.S7L.DISCONNECTED && t === u.S7L.RTC_CONNECTED && o.A.getKrispEnableStats() && o.A.getNoiseCancellation() && (a.A.setNoiseCancellation(false), a.A.setNoiseCancellation(true))
+      (0, l.isWeb)() || n === i.x.DEFAULT && t !== u.S7L.DISCONNECTED && t === u.S7L.RTC_CONNECTED && s.A.getKrispEnableStats() && s.A.getNoiseCancellation() && (a.A.setNoiseCancellation(false), a.A.setNoiseCancellation(true))
     }), d(this, "actions", {
       POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
       RTC_CONNECTION_STATE: this.handleRtcConnectionState

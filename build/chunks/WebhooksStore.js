@@ -6,7 +6,7 @@ require.d(exports, {
   A: () => b
 }), require("./896048.js");
 var i, Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk824953 = require("./824953.js");
@@ -39,10 +39,10 @@ function h(e) {
   } = e;
   if (null == i) return void(null != a ? (r = a, delete f[p(t, n)]) : null != n && null != d[t] && (r = null, c.A.fetchForChannel(t, n)));
   r = null;
-  let o = [];
-  null != n && (o = s()(_(t)).values().filter(e => e.channel_id !== n).value());
+  let s = [];
+  null != n && (s = o()(_(t)).values().filter(e => e.channel_id !== n).value());
   let l = d[t] = {};
-  o.concat(i).forEach(e => l[e.id] = e), delete f[p(t, n)]
+  s.concat(i).forEach(e => l[e.id] = e), delete f[p(t, n)]
 }
 
 function m(e) {
@@ -73,10 +73,10 @@ class y extends(i = Chunk311907.Ay.Store) {
     return null != f[p(e, t)]
   }
   getWebhooksForGuild(e) {
-    return s().values(_(e))
+    return o().values(_(e))
   }
   getWebhooksForChannel(e, t) {
-    return s()(_(e)).values().filter(e => e.channel_id === t).value()
+    return o()(_(e)).values().filter(e => e.channel_id === t).value()
   }
   get error() {
     return r

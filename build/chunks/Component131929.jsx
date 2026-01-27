@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 131929, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  A: () => m,
+  A: () => _,
   s: () => g
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
@@ -46,7 +45,7 @@ function p(e) {
       children: (0, r.jsx)(i.Button, {
         variant: "active",
         size: "md",
-        text: d.intl.string(d.t.riu2R5),
+        text: u.intl.string(u.t.riu2R5),
         onClick: l,
         loading: c,
         fullWidth: true
@@ -67,7 +66,7 @@ function g(e) {
     children: [(0, r.jsx)(i.Heading, {
       className: h.s7,
       variant: "text-sm/medium",
-      children: d.intl.string(d.t.Eabu1z)
+      children: u.intl.string(u.t.Eabu1z)
     }), (0, r.jsxs)("div", {
       className: h.bo,
       children: [(0, r.jsx)(s.A, {
@@ -86,7 +85,7 @@ function g(e) {
             className: h.n2,
             tooltipPosition: "left"
           })]
-        }), (0, r.jsx)(u.IK, {
+        }), (0, r.jsx)(d.IK, {
           invite: n,
           textClassName: h.kS,
           className: h.pe
@@ -103,7 +102,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function _(e) {
   let {
     invite: t,
     channel: n,

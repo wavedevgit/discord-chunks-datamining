@@ -28,11 +28,11 @@ let u = (0, Chunk64700.forwardRef)(function(e, t) {
     ...p
   } = e, [_, h] = (0, a.useState)(c ? "visible" : "hidden"), m = (0, a.useContext)(l);
   if (!m) throw Error("<SharedElement> must be rendered inside a <SharedElementTransition>");
-  c && "hidden" === _ && h("visible"), t = (0, o.U)(t), (0, s.N)(() => {
+  c && "hidden" === _ && h("visible"), t = (0, s.U)(t), (0, o.N)(() => {
     let e = t.current,
       r = m.current,
       a = r[n],
-      s = null;
+      o = null;
     if (e && c && a) {
       h("visible");
       let t = e.getAnimations(),
@@ -48,16 +48,16 @@ let u = (0, Chunk64700.forwardRef)(function(e, t) {
           return [t, r]
         });
       for (let n of e.getAnimations()) t.includes(n) || n.cancel();
-      s = requestAnimationFrame(() => {
-        for (let [t, n] of(s = null, i)) e.style[t] = n
+      o = requestAnimationFrame(() => {
+        for (let [t, n] of(o = null, i)) e.style[t] = n
       }), delete r[n]
-    } else e && c && !a ? (queueMicrotask(() => (0, i.flushSync)(() => h("entering"))), s = requestAnimationFrame(() => {
-      s = null, h("visible")
+    } else e && c && !a ? (queueMicrotask(() => (0, i.flushSync)(() => h("entering"))), o = requestAnimationFrame(() => {
+      o = null, h("visible")
     })) : e && !c && queueMicrotask(() => {
       r[n] ? (delete r[n], (0, i.flushSync)(() => h("exiting")), Promise.all(e.getAnimations().map(e => e.finished)).then(() => h("hidden")).catch(() => {})) : h("hidden")
     });
     return () => {
-      if (null != s && cancelAnimationFrame(s), e && e.isConnected && !e.hasAttribute("data-exiting")) {
+      if (null != o && cancelAnimationFrame(o), e && e.isConnected && !e.hasAttribute("data-exiting")) {
         let t = window.getComputedStyle(e);
         if ("none" !== t.transitionProperty) {
           let i = t.transitionProperty.split(/\s*,\s*/);

@@ -1,7 +1,7 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 722868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -44,55 +44,55 @@ function p(e, t) {
   }), e
 }
 
-function m(e) {
+function f(e) {
   let {
     user: t,
     guildId: n,
-    channelId: m,
-    displayProfile: f,
+    channelId: f,
+    displayProfile: m,
     onClose: A
   } = e, {
     analyticsLocations: x,
-    sourceAnalyticsLocations: j
+    sourceAnalyticsLocations: g
   } = (0, r.Ay)(), {
-    context: h,
-    trackUserProfileAction: g
-  } = (0, o.NJ)(), v = (0, c.Ay)(t.id, n);
-  return (null == v ? true : v.guildId) == null ? null : (null == f ? true : f.guildId) != null ? (0, l.jsx)(i.Drp, {
+    context: j,
+    trackUserProfileAction: h
+  } = (0, o.NJ)(), b = (0, d.Ay)(t.id, n);
+  return (null == b ? true : b.guildId) == null ? null : (null == m ? true : m.guildId) != null ? (0, l.jsx)(i.Drp, {
     id: "view-main-profile",
-    label: d.intl.string(d.t.GISTta),
-    subtext: d.intl.formatToPlainString(d.t["mn/nW2"], {
+    label: c.intl.string(c.t.GISTta),
+    subtext: c.intl.formatToPlainString(c.t["mn/nW2"], {
       displayName: s.Ay.getName(true, true, t)
     }),
     action: () => {
       null == A || A(), (0, a.openUserProfileModal)(p(u({
         userId: t.id,
         guildId: n
-      }, h), {
+      }, j), {
         showGuildProfile: false,
-        sourceAnalyticsLocations: j
-      })), g(u({
+        sourceAnalyticsLocations: g
+      })), h(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
         analyticsLocations: x
-      }, h))
+      }, j))
     }
   }) : (0, l.jsx)(i.Drp, {
     id: "view-server-profile",
-    label: d.intl.string(d.t.DisZzB),
-    subtext: d.intl.formatToPlainString(d.t["mn/nW2"], {
-      displayName: s.Ay.getName(n, m, t)
+    label: c.intl.string(c.t.DisZzB),
+    subtext: c.intl.formatToPlainString(c.t["mn/nW2"], {
+      displayName: s.Ay.getName(n, f, t)
     }),
     action: () => {
       null == A || A(), (0, a.openUserProfileModal)(p(u({
         userId: t.id,
         guildId: n
-      }, h), {
+      }, j), {
         showGuildProfile: true,
-        sourceAnalyticsLocations: j
-      })), g(u({
+        sourceAnalyticsLocations: g
+      })), h(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
         analyticsLocations: x
-      }, h))
+      }, j))
     }
   })
 }

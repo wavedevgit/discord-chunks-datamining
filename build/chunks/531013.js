@@ -62,12 +62,12 @@ let y = new Chunk626584.A("ConnectionStore"),
   O = new Chunk261811.A(b),
   v = new Chunk500496.A(b);
 b.handleIdentify = () => {
-  let e = o.default.getToken();
+  let e = s.default.getToken();
   if (y.verbose("handleIdentify called", {
       hasToken: null != e
     }), null == e) return null;
   let t = a.A.getState(),
-    n = o.default.getInstallationForTracking();
+    n = s.default.getInstallationForTracking();
   return {
     token: e,
     properties: m(E(m({}, l.default.getSuperProperties()), {

@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk606586 = require("./606586.js");
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -37,7 +37,7 @@ function v(e) {
   return e
 }
 
-function A(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function A(e, t) {
   }), e
 }
 
-function f(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var r, n, l, i = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -67,15 +67,15 @@ function f(e, t) {
     for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let y = () => 80,
+let f = () => 80,
   _ = e => {
     let {
       children: t,
       className: r,
       onSelect: l,
       isSelected: i = false
-    } = e, o = f(e, ["children", "className", "onSelect", "isSelected"]);
-    return (0, n.jsx)(a.DUT, A(v({
+    } = e, o = y(e, ["children", "className", "onSelect", "isSelected"]);
+    return (0, n.jsx)(a.DUT, v(A({
       className: s()(h.eA, i ? h.wH : true, r)
     }, o), {
       onClick: l,
@@ -90,23 +90,23 @@ let y = () => 80,
       section: s,
       canUsePremiumCollectibles: a,
       isSelected: o = false
-    } = e, d = f(e, ["user", "avatarDecoration", "innerRef", "section", "canUsePremiumCollectibles", "isSelected"]), m = l.useRef(null), {
+    } = e, d = y(e, ["user", "avatarDecoration", "innerRef", "section", "canUsePremiumCollectibles", "isSelected"]), m = l.useRef(null), {
       isHoveringOrFocusing: g
     } = (0, u.A)(null != i ? i : m), {
-      avatarDecorationSrc: y
+      avatarDecorationSrc: f
     } = (0, x.A)({
       user: t,
       avatarDecorationOverride: r,
       size: 80,
       onlyAnimateOnHoverOrFocus: !g
     });
-    return (0, n.jsxs)(_, A(v({
+    return (0, n.jsxs)(_, v(A({
       innerRef: null != i ? i : m,
       isSelected: o
     }, d), {
       children: [(0, n.jsx)("img", {
         className: h.Pw,
-        src: y,
+        src: f,
         alt: r.label
       }), (0, n.jsx)(c.A, {
         skuId: r.skuId,
@@ -140,13 +140,13 @@ let y = () => 80,
       paddingHorizontal: 12,
       paddingVertical: 0,
       removeEdgeItemGutters: true,
-      renderItem: (e, d, A, f) => {
+      renderItem: (e, d, v, y) => {
         let {
-          section: y,
+          section: f,
           items: O
         } = u[e], b = O[d];
         if (b === p.dP) return (0, n.jsxs)(_, {
-          style: v({}, A),
+          style: A({}, v),
           isSelected: null === l,
           onSelect: () => s(null),
           children: [(0, n.jsx)(a.KTN, {
@@ -158,9 +158,9 @@ let y = () => 80,
             color: "text-strong",
             children: (0, m.uZ)(t, r) ? g.intl.string(g.t.CHf9iJ) : g.intl.string(g.t.PoWNfe)
           })]
-        }, f);
+        }, y);
         if (b === p.ZK) return (0, n.jsxs)(_, {
-          style: A,
+          style: v,
           onSelect: c,
           children: [(0, n.jsx)(a.U1X, {
             size: "custom",
@@ -173,19 +173,19 @@ let y = () => 80,
             color: "text-strong",
             children: g.intl.string(g.t.pWG4ze)
           })]
-        }, f);
+        }, y);
         if ((0, o.T)(b)) {
           let e = (null == l ? true : l.skuId) === b.skuId;
           return (0, n.jsx)(j, {
-            style: v({}, A),
+            style: A({}, v),
             user: t,
             avatarDecoration: b,
-            section: y,
+            section: f,
             innerRef: e ? i : true,
             canUsePremiumCollectibles: x,
             isSelected: e,
             onSelect: () => s(b)
-          }, f)
+          }, y)
         }
         return null
       },
@@ -195,7 +195,7 @@ let y = () => 80,
         } = u[e];
         return (0, n.jsx)("div", {
           className: h.so,
-          style: A(v({}, t), {
+          style: v(A({}, t), {
             position: "absolute"
           }),
           children: (0, n.jsx)(a.Text, {
@@ -206,6 +206,6 @@ let y = () => 80,
       },
       getSectionHeight: e => u[e].height,
       getItemKey: (e, t) => u[e].items[t].skuId,
-      getItemHeight: y
+      getItemHeight: f
     })
   }

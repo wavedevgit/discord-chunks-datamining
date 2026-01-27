@@ -6,9 +6,9 @@ let t = ["as", "in", "of", "if", "for", "while", "finally", "var", "new", "funct
 module.exports = function(e) {
   let i = ["npm", "print"],
     a = ["yes", "no", "on", "off", "it", "that", "void"],
-    s = ["then", "unless", "until", "loop", "of", "by", "when", "and", "or", "is", "isnt", "not", "it", "that", "otherwise", "from", "to", "til", "fallthrough", "case", "enum", "native", "list", "map", "__hasProp", "__extends", "__slice", "__bind", "__indexOf"],
-    o = {
-      keyword: t.concat(s),
+    o = ["then", "unless", "until", "loop", "of", "by", "when", "and", "or", "is", "isnt", "not", "it", "that", "otherwise", "from", "to", "til", "fallthrough", "case", "enum", "native", "list", "map", "__hasProp", "__extends", "__slice", "__bind", "__indexOf"],
+    s = {
+      keyword: t.concat(o),
       literal: n.concat(a),
       built_in: r.concat(i)
     },
@@ -20,13 +20,13 @@ module.exports = function(e) {
       className: "subst",
       begin: /#\{/,
       end: /\}/,
-      keywords: o
+      keywords: s
     },
     d = {
       className: "subst",
       begin: /#[A-Za-z$_]/,
       end: /(?:-[0-9A-Za-z$_]|[0-9A-Za-z$_])*/,
-      keywords: o
+      keywords: s
     },
     f = [e.BINARY_NUMBER_MODE, {
       className: "number",
@@ -85,7 +85,7 @@ module.exports = function(e) {
       contains: [{
         begin: /\(/,
         end: /\)/,
-        keywords: o,
+        keywords: s,
         contains: ["self"].concat(f)
       }]
     },
@@ -102,12 +102,12 @@ module.exports = function(e) {
         2: "title.class",
         4: "title.class.inherited"
       },
-      keywords: o
+      keywords: s
     };
   return {
     name: "LiveScript",
     aliases: ["ls"],
-    keywords: o,
+    keywords: s,
     illegal: /\/\*/,
     contains: f.concat([e.COMMENT("\\/\\*", "\\*\\/"), e.HASH_COMMENT_MODE, _, {
       className: "function",

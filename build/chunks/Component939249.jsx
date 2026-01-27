@@ -76,8 +76,8 @@ class h extends(r = Chunk64700.Component) {
         focusProps: n,
         innerRef: r,
         onClick: i,
-        role: s,
-        tabIndex: o,
+        role: o,
+        tabIndex: s,
         ignoreKeyPress: l
       } = e,
       c = p(e, ["tag", "focusProps", "innerRef", "onClick", "role", "tabIndex", "ignoreKeyPress"]);
@@ -92,8 +92,8 @@ class h extends(r = Chunk64700.Component) {
         onClick: n,
         className: r,
         children: i,
-        focusProps: s,
-        innerRef: o,
+        focusProps: o,
+        innerRef: s,
         ignoreKeyPress: l
       } = e,
       c = p(e, ["tag", "onClick", "className", "children", "focusProps", "innerRef", "ignoreKeyPress"]);
@@ -108,7 +108,7 @@ class h extends(r = Chunk64700.Component) {
     }, c), i)
   }
   render() {
-    return this.context ? this.renderNonInteractive() : (0, i.jsx)(o.vN, f(u({}, this.props.focusProps), {
+    return this.context ? this.renderNonInteractive() : (0, i.jsx)(s.vN, f(u({}, this.props.focusProps), {
       children: this.renderInner()
     }))
   }

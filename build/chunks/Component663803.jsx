@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk643239 = require("./643239.js");
@@ -34,24 +34,24 @@ let d = e => {
     if (!isNaN(t)) return null != f && t >= f ? g(f) : null != d && t <= d ? g(d) : g(t)
   };
   return (0, r.jsxs)("div", {
-    className: s()(c.o, a),
-    children: [(0, r.jsx)(o.K0, {
+    className: o()(c.o, a),
+    children: [(0, r.jsx)(s.K0, {
       variant: "icon-only",
       size: "sm",
-      icon: o.QGg,
+      icon: s.QGg,
       onClick: E,
       "aria-label": l.intl.string(l.t["k+ohJm"]),
       disabled: h
     }), (0, r.jsx)("div", {
       className: c.U,
-      children: (0, r.jsx)(o.ksK, {
+      children: (0, r.jsx)(s.ksK, {
         value: "".concat(p),
         onChange: b
       })
-    }), (0, r.jsx)(o.K0, {
+    }), (0, r.jsx)(s.K0, {
       size: "sm",
       variant: "icon-only",
-      icon: o.j96,
+      icon: s.j96,
       onClick: y,
       "aria-label": l.intl.string(l.t.w8Sc4B),
       disabled: m

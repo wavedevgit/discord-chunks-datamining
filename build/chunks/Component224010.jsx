@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 224010, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 7803 **/
+/** chunk id: 224010, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
-  q: () => L
+  q: () => P
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk147925 = require("./147925.jsx"),
@@ -25,241 +24,230 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk645700 = require("./645700.js");
 
-function A(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function I(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      A(e, t, n[t])
+function O(t) {
+  for (var e = 1; e < arguments.length; e++) {
+    var s = null != arguments[e] ? arguments[e] : {},
+      i = Object.keys(s);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(s).filter(function(t) {
+      return Object.getOwnPropertyDescriptor(s, t).enumerable
+    }))), i.forEach(function(e) {
+      var i;
+      i = s[e], e in t ? Object.defineProperty(t, e, {
+        value: i,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : t[e] = i
     })
   }
-  return e
+  return t
 }
-
-function S(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let C = e => {
+let T = t => {
     let {
-      status: t,
-      onClick: n,
-      opened: i,
+      status: e,
+      onClick: s,
+      opened: n,
       count: a
-    } = e;
-    return (0, r.jsxs)(l.DUT, {
-      className: v.wx,
-      onClick: n,
-      children: [(0, r.jsx)("div", {
-        className: v.Y5,
-        children: (0, r.jsx)(l.id, {
+    } = t;
+    return (0, i.jsxs)(c.DUT, {
+      className: b.wx,
+      onClick: s,
+      children: [(0, i.jsx)("div", {
+        className: b.Y5,
+        children: (0, i.jsx)(c.id, {
           size: "md",
-          color: "active" === t ? l.LU0.colors.INTERACTIVE_TEXT_ACTIVE : l.LU0.colors.ICON_MUTED
+          color: "active" === e ? c.LU0.colors.INTERACTIVE_TEXT_ACTIVE : c.LU0.colors.ICON_MUTED
         })
-      }), (0, r.jsxs)("div", {
-        className: v.DD,
-        children: [(0, r.jsx)(l.Heading, {
+      }), (0, i.jsxs)("div", {
+        className: b.DD,
+        children: [(0, i.jsx)(c.Heading, {
           variant: "heading-md/semibold",
           color: "text-default",
-          children: "active" === t ? O.intl.formatToPlainString(O.t.IeV2oY, {
+          children: "active" === e ? E.intl.formatToPlainString(E.t.IeV2oY, {
             count: a.toString()
-          }) : O.intl.formatToPlainString(O.t.fZAHBT, {
+          }) : E.intl.formatToPlainString(E.t.fZAHBT, {
             count: a.toString()
           })
-        }), (0, r.jsx)(l.Heading, {
+        }), (0, i.jsx)(c.Heading, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: "active" === t ? O.intl.string(O.t.XJ2YVR) : O.intl.string(O.t.SzGV0g)
+          children: "active" === e ? E.intl.string(E.t.XJ2YVR) : E.intl.string(E.t.SzGV0g)
         })]
-      }), (0, r.jsx)("div", {
-        className: v.OW,
-        children: (0, r.jsx)(c.A, {
+      }), (0, i.jsx)("div", {
+        className: b.OW,
+        children: (0, i.jsx)(o.A, {
           width: 18,
           height: 18,
-          direction: i ? c.A.Directions.UP : c.A.Directions.DOWN
+          direction: n ? o.A.Directions.UP : o.A.Directions.DOWN
         })
       })]
     })
   },
-  N = () => (0, r.jsxs)("div", {
-    className: v.p$,
-    children: [(0, r.jsxs)("div", {
-      className: v.zc,
-      children: [(0, r.jsx)("div", {
-        className: v.Wk,
-        children: (0, r.jsx)(l.OR, {
+  A = () => (0, i.jsxs)("div", {
+    className: b.p$,
+    children: [(0, i.jsxs)("div", {
+      className: b.zc,
+      children: [(0, i.jsx)("div", {
+        className: b.Wk,
+        children: (0, i.jsx)(c.OR, {
           size: "md",
           color: "currentColor",
-          className: v.Kk
+          className: b.Kk
         })
-      }), (0, r.jsx)(u.A, {
-        className: v.uf
+      }), (0, i.jsx)(d.A, {
+        className: b.uf
       })]
-    }), (0, r.jsx)(l.Heading, {
+    }), (0, i.jsx)(c.Heading, {
       variant: "heading-md/bold",
-      className: v.q6,
-      children: O.intl.string(O.t.reLFaV)
-    }), (0, r.jsx)(l.Text, {
+      className: b.q6,
+      children: E.intl.string(E.t.reLFaV)
+    }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
-      className: v.WO,
-      children: O.intl.string(O.t.ERdH1o)
+      className: b.WO,
+      children: E.intl.string(E.t.ERdH1o)
     })]
   }),
-  w = () => (0, r.jsx)("div", {
-    className: v.p$,
-    children: (0, r.jsx)(l.Text, {
+  _ = () => (0, i.jsx)("div", {
+    className: b.p$,
+    children: (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
-      className: v.WO,
-      children: O.intl.string(O.t.RV3AXf)
+      className: b.WO,
+      children: E.intl.string(E.t.RV3AXf)
     })
   }),
-  R = e => {
+  I = t => {
     let {
-      timestamp: t
-    } = e;
-    return (0, r.jsx)(l.Text, {
+      timestamp: e
+    } = t;
+    return (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
-      className: v.vE,
-      children: (0, h._W)(t)
+      className: b.vE,
+      children: (0, g._W)(e)
     })
   },
-  P = () => (0, r.jsx)(l.Text, {
+  S = () => (0, i.jsx)(c.Text, {
     variant: "text-xs/bold",
-    className: v.Ad,
-    children: O.intl.string(O.t.QKMRC4)
+    className: b.Ad,
+    children: E.intl.string(E.t.QKMRC4)
   }),
-  D = e => {
+  D = t => {
     let {
-      classification: t
-    } = e, {
+      classification: e
+    } = t, {
       id: a,
-      description: o
-    } = t, c = f.default.extractTimestamp(a), u = (0, m.e)(t), d = i.useMemo(() => {
-      var e, n, i;
-      let a = {
-        description: o,
-        descriptionHook: e => (0, r.jsx)(l.Text, {
+      description: r
+    } = e, o = m.default.extractTimestamp(a), d = (0, j.e)(e), u = n.useMemo(() => {
+      var t, s, n, a, l;
+      let o = {
+        description: r,
+        descriptionHook: t => (0, i.jsx)(c.Text, {
           tag: "span",
           variant: "heading-lg/bold",
-          children: e
+          children: t
         })
       };
-      return (0, h._g)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === p.Z9.OWNER ? O.intl.format(O.t.Lb0HVv, T(I({}, a), {
-        guildName: null == t || null == (n = t.guild_metadata) ? true : n.name
-      })) : O.intl.format(O.t.rmpEPD, {
-        guildName: null == t || null == (i = t.guild_metadata) ? true : i.name,
-        classification_type: a.description,
-        classificationHook: a.descriptionHook
-      }) : O.intl.format(O.t.QY4g5t, a)
-    }, [t, o]), _ = () => {
-      (0, l.mMO)(async () => {
-        let {
-          default: e
-        } = await n.e("9407").then(n.bind(n, 956450));
-        return t => (0, r.jsx)(e, I({
-          classificationId: a,
-          source: y.XN.StandingTab
-        }, t))
-      })
-    };
-    return (0, r.jsx)(l.DUT, {
-      onClick: _,
-      className: s()(v.zk, {
-        [v.V5]: u
+      return (0, g._g)(e) ? (null == e || null == (t = e.guild_metadata) ? true : t.member_type) !== x.Z9.OWNER ? E.intl.format(E.t.rmpEPD, {
+        guildName: null == e || null == (n = e.guild_metadata) ? true : n.name,
+        classification_type: o.description,
+        classificationHook: o.descriptionHook
+      }) : E.intl.format(E.t.Lb0HVv, (a = O({}, o), l = l = {
+        guildName: null == e || null == (s = e.guild_metadata) ? true : s.name
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(t, e) {
+        var s = Object.keys(t);
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(t);
+          s.push.apply(s, i)
+        }
+        return s
+      })(Object(l)).forEach(function(t) {
+        Object.defineProperty(a, t, Object.getOwnPropertyDescriptor(l, t))
+      }), a)) : E.intl.format(E.t.QY4g5t, o)
+    }, [e, r]);
+    return (0, i.jsx)(c.DUT, {
+      onClick: () => {
+        (0, c.mMO)(async () => {
+          let {
+            default: t
+          } = await Promise.all([s.e("92414"), s.e("22726"), s.e("9407"), s.e("52139")]).then(s.bind(s, 956450));
+          return e => (0, i.jsx)(t, O({
+            classificationId: a,
+            source: f.XN.StandingTab
+          }, e))
+        })
+      },
+      className: l()(b.zk, {
+        [b.V5]: d
       }),
-      children: (0, r.jsxs)("div", {
-        className: v.iQ,
-        children: [u ? (0, r.jsx)(P, {}) : (0, r.jsx)(R, {
-          timestamp: c
-        }), (0, r.jsx)(l.Heading, {
+      children: (0, i.jsxs)("div", {
+        className: b.iQ,
+        children: [d ? (0, i.jsx)(S, {}) : (0, i.jsx)(I, {
+          timestamp: o
+        }), (0, i.jsx)(c.Heading, {
           variant: "heading-lg/normal",
-          children: d
+          children: u
         })]
       })
     }, a)
   },
-  x = e => {
+  y = t => {
     let {
-      status: t,
-      classifications: n
-    } = e, [a, s] = i.useState(false), [c, u] = i.useState(3), f = (0, g.K)(), p = (0, o.bG)([_.A], () => _.A.getIsDsaEligible()), h = i.useMemo(() => n.slice(0, c), [n, c]);
-    i.useEffect(() => {
-      a && d.default.track(b.HAw.SAFETY_HUB_ACTION, {
-        action: y.ZU.ViewViolationsDropdown,
-        account_standing: f.state,
-        classification_ids: h.map(e => Number(e.id)),
-        source: y.XN.StandingTab,
+      status: e,
+      classifications: s
+    } = t, [a, l] = n.useState(false), [o, d] = n.useState(3), m = (0, v.K)(), x = (0, r.bG)([h.A], () => h.A.getIsDsaEligible()), g = n.useMemo(() => s.slice(0, o), [s, o]);
+    n.useEffect(() => {
+      a && u.default.track(p.HAw.SAFETY_HUB_ACTION, {
+        action: f.ZU.ViewViolationsDropdown,
+        account_standing: m.state,
+        classification_ids: g.map(t => Number(t.id)),
+        source: f.XN.StandingTab,
         is_violative_content_shown: false,
-        is_dsa_eligible: p
+        is_dsa_eligible: x
       })
-    }, [a, f.state, h, p]);
-    let m = n.length - h.length > 3 ? 3 : n.length - h.length;
-    return (0, r.jsxs)("div", {
-      className: v.Wm,
-      children: [(0, r.jsx)(C, {
-        status: t,
-        onClick: () => s(e => !e),
+    }, [a, m.state, g, x]);
+    let j = s.length - g.length > 3 ? 3 : s.length - g.length;
+    return (0, i.jsxs)("div", {
+      className: b.Wm,
+      children: [(0, i.jsx)(T, {
+        status: e,
+        onClick: () => l(t => !t),
         opened: a,
-        count: n.length
-      }), a && (0, r.jsxs)("div", {
-        className: v.ld,
-        children: [(0, r.jsx)(l.VQ0.Separator, {
+        count: s.length
+      }), a && (0, i.jsxs)("div", {
+        className: b.ld,
+        children: [(0, i.jsx)(c.VQ0.Separator, {
           style: {
             height: "1px",
             width: "100%"
           }
-        }), h.length > 0 && h.map(e => (0, r.jsx)(D, {
-          classification: e
-        }, e.id)), h.length < n.length && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(l.VQ0.Separator, {
+        }), g.length > 0 && g.map(t => (0, i.jsx)(D, {
+          classification: t
+        }, t.id)), g.length < s.length && (0, i.jsxs)(i.Fragment, {
+          children: [(0, i.jsx)(c.VQ0.Separator, {
             style: {
               height: "1px",
               width: "100%"
             }
-          }), (0, r.jsx)("button", {
-            className: v.Hr,
-            onClick: () => u(e => e + m),
-            children: O.intl.format(O.t["9Ml56H"], {
-              nextPageSize: m
+          }), (0, i.jsx)("button", {
+            className: b.Hr,
+            onClick: () => d(t => t + j),
+            children: E.intl.format(E.t["9Ml56H"], {
+              nextPageSize: j
             })
           })]
-        }), 0 === h.length && "active" === t && (0, r.jsx)(N, {}), 0 === h.length && "expired" === t && (0, r.jsx)(w, {})]
+        }), 0 === g.length && "active" === e && (0, i.jsx)(A, {}), 0 === g.length && "expired" === e && (0, i.jsx)(_, {})]
       })]
     })
   },
-  L = () => {
-    let e = (0, E.CI)(),
-      t = (0, E.XK)();
-    return 0 === e.length && 0 === t.length ? null : (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(x, {
+  P = () => {
+    let t = (0, N.CI)(),
+      e = (0, N.XK)();
+    return 0 === t.length && 0 === e.length ? null : (0, i.jsxs)("div", {
+      children: [(0, i.jsx)(y, {
         status: "active",
-        classifications: e
-      }), (0, r.jsx)(x, {
-        status: "expired",
         classifications: t
+      }), (0, i.jsx)(y, {
+        status: "expired",
+        classifications: e
       })]
     })
   }

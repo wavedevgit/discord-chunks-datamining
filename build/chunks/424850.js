@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 424850, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 424850, original params: e,t,n (module,exports,require) **/
 module.exports = {
   mK: "churnDiscountBanner__32fe3",
   ly: "churnDiscountBannerContent__32fe3",

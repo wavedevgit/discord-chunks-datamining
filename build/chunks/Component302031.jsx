@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk827734 = require("./827734.js"),
   Chunk435371 = require("./435371.js"),
   Chunk397927 = require("./397927.js"),
@@ -67,7 +67,7 @@ let A = e => {
       className: t
     } = e;
     return (0, r.jsx)("div", {
-      className: s()(g.pR, t),
+      className: o()(g.pR, t),
       children: m.intl.string(m.t["F+x38C"])
     })
   },
@@ -78,11 +78,11 @@ let A = e => {
       obscureOnly: i
     } = e;
     return (0, r.jsx)("div", {
-      className: s()(g.W5, t),
+      className: o()(g.W5, t),
       children: i ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.DAq, {
           size: "lg",
-          color: o.A.colors.WHITE
+          color: s.A.colors.WHITE
         }), n && (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "always-white",
@@ -128,7 +128,7 @@ let A = e => {
       obscurityControlClassName: a
     } = e;
     return t !== _.Oc.EXPLICIT_CONTENT && t !== _.Oc.GORE_CONTENT && t !== _.Oc.SELF_HARM_CONTENT ? null : (0, r.jsx)("div", {
-      className: s()(g.fA, a),
+      className: o()(g.fA, a),
       children: (0, r.jsx)(c.DUT, {
         className: g.kw,
         onClick: i,
@@ -159,7 +159,7 @@ class N extends Chunk64700.PureComponent {
       className: n,
       containerStyles: i,
       obscured: a = true,
-      reason: o = _.Oc.SPOILER,
+      reason: s = _.Oc.SPOILER,
       isSingleMosaicItem: l = false,
       obscurityControlClassName: u,
       isVerifiedTeen: d
@@ -168,25 +168,25 @@ class N extends Chunk64700.PureComponent {
     } = this.state, p = (0, r.jsx)(C.Consumer, {
       children: p => {
         let h = p || f || !a;
-        return _._K.has(o) && !t ? (0, r.jsxs)("div", {
+        return _._K.has(s) && !t ? (0, r.jsxs)("div", {
           "aria-label": h ? true : this.ariaLabel,
           "aria-expanded": h,
           style: i,
-          className: s()(n, g.ur, g.q2, g.Dq, g.OZ, {
+          className: o()(n, g.ur, g.q2, g.Dq, g.OZ, {
             [g.R]: !h,
             [g.h5]: l
           }),
           role: h ? "presentation" : "button",
           tabIndex: h ? false : 0,
           children: [h || t ? null : (0, r.jsx)(S, {
-            reason: o,
+            reason: s,
             isSingleMosaicItem: l
           }), (0, r.jsx)("div", {
             "aria-hidden": !h,
             className: g.Qu,
             children: e(!h)
           }), d ? null : (0, r.jsx)(T, {
-            obscureReason: o,
+            obscureReason: s,
             isVisible: f,
             handleToggleObscurity: this.handleToggleObscurity,
             obscurityControlClassName: u
@@ -196,14 +196,14 @@ class N extends Chunk64700.PureComponent {
           "aria-label": h ? true : this.ariaLabel,
           "aria-expanded": h,
           style: i,
-          className: s()(n, g.ur, g.q2, g.Dq, {
+          className: o()(n, g.ur, g.q2, g.Dq, {
             [g.R]: !h,
             [g.rP]: !h
           }),
           role: h ? "presentation" : "button",
           tabIndex: h ? false : 0,
           children: [h || t ? null : (0, r.jsx)(S, {
-            reason: o,
+            reason: s,
             isSingleMosaicItem: l
           }), (0, r.jsx)("div", {
             "aria-hidden": !h,
@@ -222,7 +222,7 @@ class N extends Chunk64700.PureComponent {
       containerStyles: n,
       isSingleMosaicItem: i,
       obscurityControlClassName: a,
-      reason: o = _.Oc.SPOILER,
+      reason: s = _.Oc.SPOILER,
       isVerifiedTeen: l
     } = this.props, {
       visible: u
@@ -230,24 +230,24 @@ class N extends Chunk64700.PureComponent {
     return (0, r.jsx)(C.Consumer, {
       children: d => {
         let f = d || u;
-        return _._K.has(o) ? (0, r.jsxs)("div", {
+        return _._K.has(s) ? (0, r.jsxs)("div", {
           "aria-label": u ? true : this.ariaLabel,
           "aria-expanded": f,
           style: n,
-          className: s()(t, g.ur, g.q2, g.x, g.OZ, {
+          className: o()(t, g.ur, g.q2, g.x, g.OZ, {
             [g.R]: !f
           }),
           role: f ? "presentation" : "button",
           tabIndex: f ? false : 0,
           children: [f ? null : (0, r.jsx)(S, {
-            reason: o,
+            reason: s,
             isSingleMosaicItem: i
           }), (0, r.jsx)("div", {
             "aria-hidden": !f,
             className: g.Qu,
             children: e(!f)
           }), l ? null : (0, r.jsx)(T, {
-            obscureReason: o,
+            obscureReason: s,
             isVisible: u,
             handleToggleObscurity: this.handleToggleObscurity,
             obscurityControlClassName: a
@@ -255,7 +255,7 @@ class N extends Chunk64700.PureComponent {
         }) : (0, r.jsxs)(c.DUT, {
           "aria-label": this.ariaLabel,
           "aria-expanded": f,
-          className: s()(t, g.ur, g.q2, g.x, {
+          className: o()(t, g.ur, g.q2, g.x, {
             [g.R]: !f
           }),
           onClick: f ? true : this.removeObscurity,
@@ -263,7 +263,7 @@ class N extends Chunk64700.PureComponent {
           role: f ? "presentation" : "button",
           tabIndex: f ? false : 0,
           children: [f ? null : (0, r.jsx)(S, {
-            reason: o,
+            reason: s,
             className: g.E6
           }), (0, r.jsx)("div", {
             "aria-hidden": !f,
@@ -280,9 +280,9 @@ class N extends Chunk64700.PureComponent {
       className: n
     } = this.props, {
       visible: a
-    } = this.state, o = (0, r.jsx)(C.Consumer, {
-      children: o => {
-        let l = o || a,
+    } = this.state, s = (0, r.jsx)(C.Consumer, {
+      children: s => {
+        let l = s || a,
           u = i.Children.toArray(e(l)),
           d = i.Children.map(u, e => i.isValidElement(e) && null != t ? t(e, l) : e);
         return (0, r.jsx)(c.DUT, {
@@ -292,7 +292,7 @@ class N extends Chunk64700.PureComponent {
           "aria-expanded": l,
           tabIndex: l ? false : 0,
           role: l ? "presentation" : "button",
-          className: s()("obscured", n, g.ur, g.F0, {
+          className: o()("obscured", n, g.ur, g.F0, {
             [g.R]: !l
           }),
           children: (0, r.jsx)("span", {
@@ -306,7 +306,7 @@ class N extends Chunk64700.PureComponent {
         })
       }
     });
-    return this.renderWithTooltip(o)
+    return this.renderWithTooltip(s)
   }
   render() {
     let {

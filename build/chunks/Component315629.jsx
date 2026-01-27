@@ -10,7 +10,7 @@ var Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
   Chunk352661 = require("./352661.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -74,10 +74,10 @@ function p(e) {
     color: t = "purple",
     offsetBottom: n = 0,
     children: i
-  } = e, o = d(e, ["color", "offsetBottom", "children"]), c = "object" == typeof t && null != t;
-  return (0, r.jsx)("div", u(l({}, o), {
-    className: a()(s.container, c ? true : s[t], o.className),
-    style: u(l({}, o.style, c ? {
+  } = e, s = d(e, ["color", "offsetBottom", "children"]), c = "object" == typeof t && null != t;
+  return (0, r.jsx)("div", u(l({}, s), {
+    className: a()(o.container, c ? true : o[t], s.className),
+    style: u(l({}, s.style, c ? {
       "--custom-gradient-color-start": t.start.css,
       "--custom-gradient-color-end": t.end.css
     } : {}), {

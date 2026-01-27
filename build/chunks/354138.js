@@ -7,7 +7,7 @@ require.d(exports, {
   Di: () => C,
   bW: () => N,
   eP: () => T,
-  wD: () => x,
+  wD: () => L,
   xZ: () => w
 }), require("./896048.js");
 var Chunk158390 = require("./158390.js"),
@@ -44,15 +44,15 @@ async function T(e) {
     applicationId: e
   });
   let a = new r.A(b, O),
-    s = (e, t) => 429 === e.status && a.fails < v && (a.fail(() => {
-      t(true, s)
+    o = (e, t) => 429 === e.status && a.fails < v && (a.fail(() => {
+      t(true, o)
     }), true);
   try {
     let t = (await l.Bo.get({
       url: y.Rsh.APPLICATION_DIRECTORY_EMBED_APPLICATION(e),
       backoff: a,
       retries: v,
-      interceptResponse: s,
+      interceptResponse: o,
       rejectWithError: false
     })).body;
     c.h.dispatch({
@@ -74,10 +74,10 @@ async function C(e) {
     i = p.A.getApplicationLastFetchTime(e),
     {
       dontRefetchMs: a,
-      noCache: s
+      noCache: o
     } = t,
-    o = null != i && i + (null != a ? a : I) > n;
-  if (r !== p.e.FETCHING && !o) {
+    s = null != i && i + (null != a ? a : I) > n;
+  if (r !== p.e.FETCHING && !s) {
     c.h.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
       applicationId: e
@@ -87,7 +87,7 @@ async function C(e) {
         url: y.Rsh.APPLICATION_DIRECTORY_APPLICATION(e),
         query: {
           locale: u.default.locale,
-          nocache: s
+          nocache: o
         },
         rejectWithError: true
       });
@@ -128,7 +128,7 @@ async function w(e) {
     options: i
   } = e, {
     page: a
-  } = null != i ? i : {}, s = Date.now(), o = g.A.getFetchState({
+  } = null != i ? i : {}, o = Date.now(), s = g.A.getFetchState({
     applicationId: n,
     guildId: r
   }), {
@@ -137,7 +137,7 @@ async function w(e) {
     applicationId: n,
     guildId: r
   })) ? t : {};
-  if (o !== g.e.FETCHING && (null == d || !(d + I > s))) {
+  if (s !== g.e.FETCHING && (null == d || !(d + I > o))) {
     c.h.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS",
       applicationId: n,
@@ -181,7 +181,7 @@ async function R(e) {
     options: i,
     onSuccessCallback: a
   } = e, {
-    page: s,
+    page: o,
     pageSize: d,
     categoryId: f,
     integrationType: p,
@@ -189,11 +189,11 @@ async function R(e) {
     excludeAppsWithCustomInstallUrl: h,
     excludeNonEmbeddedApps: g,
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
-    source: b = o.V.APP_DIRECTORY
+    source: b = s.V.APP_DIRECTORY
   } = null != i ? i : {}, O = Date.now(), v = m.A.getFetchState({
     query: n,
     guildId: r,
-    page: s,
+    page: o,
     pageSize: d,
     categoryId: f,
     integrationType: p
@@ -202,7 +202,7 @@ async function R(e) {
   } = null != (t = m.A.getSearchResults({
     query: n,
     guildId: r,
-    page: s,
+    page: o,
     pageSize: d,
     categoryId: f,
     integrationType: p
@@ -212,7 +212,7 @@ async function R(e) {
       type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
       query: n,
       guildId: r,
-      page: s,
+      page: o,
       pageSize: d,
       categoryId: f,
       integrationType: p,
@@ -228,7 +228,7 @@ async function R(e) {
         query: {
           query: n,
           guild_id: r,
-          page: s,
+          page: o,
           page_size: d,
           category_id: f,
           locale: u.default.locale,
@@ -245,7 +245,7 @@ async function R(e) {
         type: "APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS",
         query: n,
         guildId: r,
-        page: s,
+        page: o,
         pageSize: d,
         categoryId: f,
         integrationType: p,
@@ -268,7 +268,7 @@ async function R(e) {
         type: "APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE",
         query: n,
         guildId: r,
-        page: s,
+        page: o,
         pageSize: d,
         categoryId: f,
         integrationType: p,
@@ -287,18 +287,18 @@ function P() {
 }
 async function D() {
   let {
-    surface: e = s.K.APPLICATION_DIRECTORY,
+    surface: e = o.K.APPLICATION_DIRECTORY,
     activeState: t = i.W.ACTIVE
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = d.default.disableAppCollectionsCache, r = Date.now(), a = h.A.getFetchState({
     surface: e,
     activeState: t
-  }), o = h.A.getLastFetchTimeMs({
+  }), s = h.A.getLastFetchTimeMs({
     surface: e,
     activeState: t
   });
   if (a === h.e.FETCHING) return;
   let f = !n && t === i.W.ACTIVE;
-  if (!f || null == o || !(o + I > r)) {
+  if (!f || null == s || !(s + I > r)) {
     c.h.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS",
       surface: e,
@@ -331,7 +331,7 @@ async function D() {
     }
   }
 }
-async function x() {
+async function L() {
   let e = Date.now(),
     t = E.A.getFetchState(),
     n = E.A.getLastFetchTimeMs(),

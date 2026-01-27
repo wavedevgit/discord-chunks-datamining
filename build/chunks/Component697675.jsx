@@ -15,10 +15,10 @@ function c(e) {
   let {
     labelType: t,
     collapsed: n = false
-  } = e, c = t === s.Hr.NEW ? o.intl.string(o.t.y2b7CA) : o.intl.string(o.t["/qdhkk"]), u = t === s.Hr.NEW ? l.Ph : l.O5, [d, f] = i.useState(n ? "" : c);
+  } = e, c = t === o.Hr.NEW ? s.intl.string(s.t.y2b7CA) : s.intl.string(s.t["/qdhkk"]), u = t === o.Hr.NEW ? l.Ph : l.O5, [d, f] = i.useState(n ? "" : c);
   return (i.useEffect(() => {
-    n ? f("") : t === s.Hr.NEW ? f(o.intl.string(o.t.y2b7CA)) : t === s.Hr.UPDATED && f(o.intl.string(o.t["/qdhkk"]))
-  }, [n, t]), t === s.Hr.NONE) ? null : (0, r.jsx)(a.LpS, {
+    n ? f("") : t === o.Hr.NEW ? f(s.intl.string(s.t.y2b7CA)) : t === o.Hr.UPDATED && f(s.intl.string(s.t["/qdhkk"]))
+  }, [n, t]), t === o.Hr.NONE) ? null : (0, r.jsx)(a.LpS, {
     className: u,
     disableColor: true,
     text: (0, r.jsx)("span", {

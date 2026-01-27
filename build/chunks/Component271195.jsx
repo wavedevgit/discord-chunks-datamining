@@ -70,8 +70,8 @@ function v(e) {
     onJumpToChannel: n,
     onHide: i,
     idle: a,
-    preventIdleComponent: o
-  } = e, c = (0, s.bG)([f.A], () => f.A.getChannelId()), d = null != c ? (0, r.jsx)(p.A, {
+    preventIdleComponent: s
+  } = e, c = (0, o.bG)([f.A], () => f.A.getChannelId()), d = null != c ? (0, r.jsx)(p.A, {
     voiceChannelId: c,
     idle: a
   }) : null, {
@@ -79,7 +79,7 @@ function v(e) {
   } = u.A.useExperiment({
     location: "PictureInPicturePlayer"
   });
-  return (0, r.jsxs)(o, {
+  return (0, r.jsxs)(s, {
     className: g.Nc,
     children: [(0, r.jsxs)(l.DUT, {
       className: g.qd,
@@ -109,7 +109,7 @@ function A(e) {
     children: t,
     idle: n,
     onJumpToChannel: i,
-    onHide: s,
+    onHide: o,
     backgroundKey: l,
     onActive: u,
     onForceIdle: f,
@@ -129,7 +129,7 @@ function A(e) {
       [g.N7]: n
     }, O),
     onDoubleClick: i,
-    children: [(0, r.jsx)(o.F, {
+    children: [(0, r.jsx)(s.F, {
       children: (0, r.jsx)(d.o, {
         className: A,
         children: t
@@ -143,7 +143,7 @@ function A(e) {
         children: (0, r.jsx)(v, y({
           idle: n,
           onJumpToChannel: i,
-          onHide: s
+          onHide: o
         }, S))
       }), (0, r.jsxs)("div", {
         className: g.q6,

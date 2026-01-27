@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk937773 = require("./937773.jsx"),
@@ -28,7 +28,7 @@ function g(e) {
     emojiConfetti: n
   } = e, [a, d] = i.useState(false), f = i.useRef(null), g = (0, u.A)({
     location: "GiftEmoji"
-  }), E = s()(_.Qq, g && _.Ow), y = e => (0, r.jsxs)("div", {
+  }), E = o()(_.Qq, g && _.Ow), y = e => (0, r.jsxs)("div", {
     className: _.ZC,
     children: [(0, r.jsxs)("div", {
       className: _.Ry,
@@ -75,14 +75,14 @@ function g(e) {
       })
     },
     children: () => (0, r.jsx)(l.DUT, {
-      className: s()(_.kL, g && _.Ow),
+      className: o()(_.kL, g && _.Ow),
       onClick: () => d(true),
       innerRef: f,
       children: (null == n ? true : n.name) == null ? (0, r.jsxs)("div", {
         className: _.hQ,
         children: [(0, r.jsx)(l.nm2, {
           size: "custom",
-          color: g ? o.A.colors.ICON_STRONG : o.A.colors.WHITE,
+          color: g ? s.A.colors.ICON_STRONG : s.A.colors.WHITE,
           className: _.mI,
           width: 14,
           height: 14

@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 161928, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  A: () => b
+  A: () => j
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk440526 = require("./440526.js"),
   Chunk20976 = require("./20976.js"),
   Chunk473169 = require("./473169.js");
-let b = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk587895.A, Chunk97352.A, Chunk287809.default], e => {
+let j = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk587895.A, Chunk97352.A, Chunk287809.default], e => {
   let {
     giftCode: t
   } = e, n = f.A.get(t.skuId), {
@@ -33,7 +32,7 @@ let b = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk587895.A, Chunk97352.A,
   } = t;
   return {
     sku: n,
-    subscriptionPlan: null != r ? (0, _.c9)(r) : null,
+    subscriptionPlan: null != r ? (0, m.c9)(r) : null,
     application: c.A.getApplication(n.applicationId),
     gifter: g.default.getUser(t.userId)
   }
@@ -45,7 +44,7 @@ let b = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk587895.A, Chunk97352.A,
     sku: a,
     application: c,
     subscriptionPlan: g
-  } = e, m = null == s ? E.intl.string(E.t.lTGZAl) : E.intl.formatToPlainString(E.t.TjWdPc, {
+  } = e, _ = null == s ? E.intl.string(E.t.lTGZAl) : E.intl.formatToPlainString(E.t.TjWdPc, {
     username: s.username
   }), f = a.name;
   return null != g && (f = E.intl.formatToPlainString(g.interval === x.WT.MONTH ? E.t.CTpcCZ : E.t["rgPWG/"], {
@@ -56,23 +55,23 @@ let b = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk587895.A, Chunk97352.A,
       defaultAnimationState: h.oA.LOOP,
       giftStyle: n.giftStyle,
       className: v.e
-    }) : (0, r.jsx)(u.eu, {
+    }) : (0, r.jsx)(d.eu, {
       src: null != s ? s.getAvatarURL(true, 100) : null,
       size: o._3J.DEPRECATED_SIZE_100,
       className: y.SX
     }), null != t ? (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(u.tK, {
+      children: [(0, r.jsx)(d.tK, {
         children: E.intl.string(E.t.mDFGFj)
-      }), (0, r.jsx)(u.hE, {
+      }), (0, r.jsx)(d.hE, {
         children: t
       })]
     }) : (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(u.tK, {
-        children: m
-      }), (0, r.jsxs)(u.hE, {
-        className: l()(y.Ot, j.tR),
-        children: [a.productLine !== A.EZt.COLLECTIBLES && (0, r.jsx)(d.A, {
-          size: d.M.MEDIUM,
+      children: [(0, r.jsx)(d.tK, {
+        children: _
+      }), (0, r.jsxs)(d.hE, {
+        className: l()(y.Ot, b.tR),
+        children: [a.productLine !== A.EZt.COLLECTIBLES && (0, r.jsx)(u.A, {
+          size: u.M.MEDIUM,
           className: v.I,
           game: c,
           skuId: a.id

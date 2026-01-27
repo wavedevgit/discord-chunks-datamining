@@ -10,7 +10,7 @@ module.exports = (e, t) => {
   n = null;
   for (let t = 0; t < e.set.length; ++t) {
     let i = e.set[t],
-      s = null;
+      o = null;
     i.forEach(e => {
       let t = new r(e.semver.version);
       switch (e.operator) {
@@ -18,7 +18,7 @@ module.exports = (e, t) => {
           0 === t.prerelease.length ? t.patch++ : t.prerelease.push(0), t.raw = t.format();
         case "":
         case ">=":
-          (!s || a(t, s)) && (s = t);
+          (!o || a(t, o)) && (o = t);
           break;
         case "<":
         case "<=":
@@ -26,7 +26,7 @@ module.exports = (e, t) => {
         default:
           throw Error(`Unexpected operation: ${e.operator}`)
       }
-    }), s && (!n || a(n, s)) && (n = s)
+    }), o && (!n || a(n, o)) && (n = o)
   }
   return n && e.test(n) ? n : null
 }

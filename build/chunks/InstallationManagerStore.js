@@ -178,7 +178,7 @@ class N extends(i = Chunk311907.Ay.PersistedStore) {
   }
   getLabelFromPath(e) {
     var t, n;
-    return e === m ? u.intl.string(u.t.VdDrjm) : null != (t = null != (n = o.A.fileManager.basename(e)) ? n : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(false)[0]) ? t : "?"
+    return e === m ? u.intl.string(u.t.VdDrjm) : null != (t = null != (n = s.A.fileManager.basename(e)) ? n : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(false)[0]) ? t : "?"
   }
 }
 d(N, "displayName", "InstallationManagerStore"), d(N, "persistKey", "InstallationManagerStore");

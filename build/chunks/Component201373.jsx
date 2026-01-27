@@ -51,8 +51,8 @@ function d(e, t) {
 }
 
 function f(e, t, l, u, f) {
-  let p = o.A.getInstallationPath(e.id, t),
-    _ = null != e.eulaId && !s.A.hasAcceptedEULA(e.eulaId);
+  let p = s.A.getInstallationPath(e.id, t),
+    _ = null != e.eulaId && !o.A.hasAcceptedEULA(e.eulaId);
   null == p || _ ? (0, i.mMO)(async () => {
     let {
       default: i

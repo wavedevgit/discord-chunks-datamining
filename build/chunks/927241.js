@@ -5,7 +5,7 @@ var r = require("./380744.js")("iterator"),
   i = false;
 try {
   var a = 0,
-    s = {
+    o = {
       next: function() {
         return {
           done: !!a++
@@ -15,9 +15,9 @@ try {
         i = true
       }
     };
-  s[r] = function() {
+  o[r] = function() {
     return this
-  }, Array.from(s, function() {
+  }, Array.from(o, function() {
     throw 2
   })
 } catch (e) {}

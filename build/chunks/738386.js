@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 738386, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 89455 **/
+/** chunk id: 738386, original params: e,n,t (module,exports,require) **/
 "use strict";
 module.exports = {
   gj: "premiumLabel_e681d1",

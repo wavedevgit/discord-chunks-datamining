@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk129844 = require("./129844.js"),
   Chunk974213 = require("./974213.js"),
   Chunk426333 = require("./426333.js"),
@@ -40,8 +40,8 @@ function _(e) {
   let P = e => {
       null != a && a(e)
     },
-    D = s()(p.checkboxOption, "string" == typeof S && p[S], "indicator" !== O && p.spacing),
-    x = (0, r.jsxs)(r.Fragment, {
+    D = o()(p.checkboxOption, "string" == typeof S && p[S], "indicator" !== O && p.spacing),
+    L = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: p.checkboxIndicator,
         ref: v,
@@ -67,7 +67,7 @@ function _(e) {
         })]
       }), N && (0, r.jsxs)(d.B, {
         gap: 4,
-        children: [(0, r.jsxs)(o.J, {
+        children: [(0, r.jsxs)(s.J, {
           className: p.label,
           children: [null != R && (0, r.jsx)(R, {
             className: p.leadingIcon,
@@ -91,7 +91,7 @@ function _(e) {
     className: D,
     "data-selected": t || true,
     "data-disabled": _ || true,
-    children: x
+    children: L
   }) : (0, r.jsx)(c.vN, {
     focusTarget: A,
     ringTarget: I,
@@ -106,7 +106,7 @@ function _(e) {
       "data-mana-component": "checkbox",
       className: D,
       value: String(y),
-      children: x
+      children: L
     })
   })
 }

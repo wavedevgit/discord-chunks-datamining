@@ -9,12 +9,12 @@ var Chunk361670 = require("./361670.js"),
 let a = (e, t, n) => {
   if ("" === e) return null;
   let a = [],
-    s = [];
+    o = [];
   return (0, i.G2)(e).forEach(e => {
     let i = (0, r.W$)(e, t, n);
-    i === r.Ux.SENDABLE ? a.push(e) : i === r.Ux.SENDABLE_WITH_PREMIUM && s.push(e)
+    i === r.Ux.SENDABLE ? a.push(e) : i === r.Ux.SENDABLE_WITH_PREMIUM && o.push(e)
   }), {
     sendable: a,
-    sendableWithPremium: s
+    sendableWithPremium: o
   }
 }

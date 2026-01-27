@@ -5,9 +5,9 @@ require.d(exports, {
   EB: () => c,
   I_: () => u,
   VN: () => a,
-  WU: () => o,
+  WU: () => s,
   ho: () => i,
-  jD: () => s,
+  jD: () => o,
   mf: () => d,
   tw: () => l
 });
@@ -30,14 +30,14 @@ function a(e) {
   })
 }
 
-function s(e) {
+function o(e) {
   r.h.dispatch({
     type: "PICTURE_IN_PICTURE_HIDE",
     id: e
   })
 }
 
-function o(e) {
+function s(e) {
   r.h.dispatch({
     type: "PICTURE_IN_PICTURE_SHOW",
     id: e

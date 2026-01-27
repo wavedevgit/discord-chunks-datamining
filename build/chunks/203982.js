@@ -10,9 +10,9 @@ var Chunk423034 = require("./423034.js"),
   Chunk626584 = require("./626584.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   var i;
-  let a = null != (i = Object.values(s.zOV).find(t => e.startsWith(t))) ? i : e;
+  let a = null != (i = Object.values(o.zOV).find(t => e.startsWith(t))) ? i : e;
   r.HF({
     type: "ComponentDispatch",
     description: a,
@@ -33,5 +33,5 @@ let l = new Chunk626584.A("ComponentDispatchUtils"),
         return l.warn(e, ...n)
       }
     },
-    devtoolsReporter: o
+    devtoolsReporter: s
   })

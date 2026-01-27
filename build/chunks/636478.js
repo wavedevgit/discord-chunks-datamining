@@ -10,16 +10,16 @@ var Chunk64700 = require("./64700.js"),
 function a(e) {
   let [t, n] = (0, i.P)(e.isOpen, e.defaultOpen || false, e.onOpenChange), a = (0, r.useCallback)(() => {
     n(true)
-  }, [n]), s = (0, r.useCallback)(() => {
-    n(false)
   }, [n]), o = (0, r.useCallback)(() => {
+    n(false)
+  }, [n]), s = (0, r.useCallback)(() => {
     n(!t)
   }, [n, t]);
   return {
     isOpen: t,
     setOpen: n,
     open: a,
-    close: s,
-    toggle: o
+    close: o,
+    toggle: s
   }
 }

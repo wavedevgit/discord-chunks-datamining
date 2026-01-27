@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk615339 = require("./615339.js"),
   Chunk374372 = require("./374372.js"),
   Chunk355418 = require("./355418.js");
-let s = RegExp(`(?:within|in|for)\\s*(?:(?:pi\xf9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(${Chunk615339.Pl})(?=\\W|$)`, "i"),
-  o = RegExp(`(?:(?:pi\xf9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(${Chunk615339.Pl})(?=\\W|$)`, "i");
+let o = RegExp(`(?:within|in|for)\\s*(?:(?:pi\xf9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(${Chunk615339.Pl})(?=\\W|$)`, "i"),
+  s = RegExp(`(?:(?:pi\xf9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(${Chunk615339.Pl})(?=\\W|$)`, "i");
 class l extends Chunk355418.c {
   innerPattern(e) {
-    return e.option.forwardDate ? o : s
+    return e.option.forwardDate ? s : o
   }
   innerExtract(e, t) {
     let n = (0, r.E9)(t[1]);

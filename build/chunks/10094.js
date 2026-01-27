@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 10094, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 10094, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => a,
+  O: () => l,
   Y: () => s
 });
 var Chunk73153 = require("./73153.js"),
   Chunk287809 = require("./287809.js");
-let a = (e, t) => {
+let l = (e, t) => {
     r.h.dispatch({
       type: "SET_PREMIUM_TYPE_OVERRIDE",
       premiumType: e

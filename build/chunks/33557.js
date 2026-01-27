@@ -22,13 +22,13 @@ function p(e) {
 let _ = {
   sentinel: "+:",
   matches(e, t, n, r, i) {
-    var s, o;
-    return r && null != (s = null == (o = i.chatInputType.autocomplete) ? true : o.addReactionShortcut) && s && (a.A.can(c.xBc.ADD_REACTIONS, e) || e.isPrivate())
+    var o, s;
+    return r && null != (o = null == (s = i.chatInputType.autocomplete) ? true : s.addReactionShortcut) && o && (a.A.can(c.xBc.ADD_REACTIONS, e) || e.isPrivate())
   },
   queryResults(e, t, n, r, i) {
     let {
       emojis: a
-    } = s.Ay.queryEmojiResults({
+    } = o.Ay.queryEmojiResults({
       query: n,
       channel: e,
       intention: u.b_.REACTION,
@@ -47,14 +47,14 @@ let _ = {
       },
       selectedIndex: n,
       query: a,
-      onHover: s,
+      onHover: o,
       onClick: l
     } = e;
-    return (0, o.GM)({
+    return (0, s.GM)({
       query: a,
       selectedIndex: n,
       autocompletes: t,
-      onHover: s,
+      onHover: o,
       onClick: l,
       titleWithQuery: d.t.o1Nmpc,
       titleWithoutQuery: d.intl.string(d.t.sMOuuS),

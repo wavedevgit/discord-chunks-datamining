@@ -17,17 +17,17 @@ let a = {
     var t = e.state,
       n = e.instance,
       a = e.options,
-      s = a.scroll,
-      o = true === s || s,
+      o = a.scroll,
+      s = true === o || o,
       l = a.resize,
       c = true === l || l,
       u = (0, r.A)(t.elements.popper),
       d = [].concat(t.scrollParents.reference, t.scrollParents.popper);
-    return o && d.forEach(function(e) {
+    return s && d.forEach(function(e) {
         e.addEventListener("scroll", n.update, i)
       }), c && u.addEventListener("resize", n.update, i),
       function() {
-        o && d.forEach(function(e) {
+        s && d.forEach(function(e) {
           e.removeEventListener("scroll", n.update, i)
         }), c && u.removeEventListener("resize", n.update, i)
       }

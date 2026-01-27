@@ -28,7 +28,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -39,8 +39,8 @@ function s(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function s(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -56,7 +56,7 @@ function c(e) {
   return null === e || 0 === e
 }
 
-function u(e, t, n, i, s) {
+function u(e, t, n, i, o) {
   var u, d, f, p, _, h, m;
   let g = {},
     E = {},
@@ -92,15 +92,15 @@ function u(e, t, n, i, s) {
       packetsSent: e.packetsSent,
       bitrateTarget: e.targetBitrate
     };
-    if ("audio" === e.kind) v.push(o(a({}, i), {
+    if ("audio" === e.kind) v.push(s(a({}, i), {
       type: "audio"
     }));
-    else if ("video" === e.kind && s) {
+    else if ("video" === e.kind && o) {
       let t = null !== e.frameWidth ? {
         width: e.frameWidth,
         height: e.frameHeight
       } : true;
-      v.push(o(a({}, i), {
+      v.push(s(a({}, i), {
         framesEncoded: e.framesEncoded,
         keyFramesEncoded: e.keyFramesEncoded,
         firCount: e.firCount,
@@ -117,8 +117,8 @@ function u(e, t, n, i, s) {
   }
   let A = {};
   for (let e of y) {
-    let s = E[e.codecId];
-    if (null == s) continue;
+    let o = E[e.codecId];
+    if (null == o) continue;
     let c = t(e.ssrc);
     if (null == c) continue;
     let u = {
@@ -129,7 +129,7 @@ function u(e, t, n, i, s) {
       sinkWantAsInt: (0, r.q)(n, e.ssrc),
       sinkWantLocal: (0, r.D)(i, e.ssrc, "video" === e.kind),
       sinkWantLocalAsInt: (0, r.q)(i, e.ssrc),
-      codec: l(s),
+      codec: l(o),
       bytesReceived: e.bytesReceived,
       packetsReceived: e.packetsReceived,
       packetsLost: e.packetsLost,
@@ -137,7 +137,7 @@ function u(e, t, n, i, s) {
     };
     if ("audio" === e.kind) {
       let t = true !== e.jitterBufferDelay && true !== e.jitterBufferEmittedCount ? Math.round(1e3 * e.jitterBufferDelay / e.jitterBufferEmittedCount) : 0;
-      null == A[c] && (A[c] = []), A[c].push(o(a({}, u), {
+      null == A[c] && (A[c] = []), A[c].push(s(a({}, u), {
         audioLevel: e.audioLevel,
         jitter: 1e3 * e.jitter,
         jitterBuffer: t
@@ -148,7 +148,7 @@ function u(e, t, n, i, s) {
         width: e.frameWidth,
         height: e.frameHeight
       } : true;
-      A[c].push(o(a({}, u), {
+      A[c].push(s(a({}, u), {
         resolution: t,
         framesDecoded: e.framesDecoded,
         keyFramesDecoded: e.keyFramesDecoded,

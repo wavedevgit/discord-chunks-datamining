@@ -2,7 +2,7 @@
 /** chunk id: 694128, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => s,
+  $: () => o,
   S: () => l
 });
 var Chunk627968 = require("./627968.js");
@@ -10,7 +10,7 @@ require("./64700.js");
 var Chunk835245 = require("./835245.js"),
   Chunk651122 = require("./651122.js");
 
-function s() {
+function o() {
   return (0, r.jsx)("svg", {
     className: a.d,
     version: "1.1",
@@ -29,7 +29,7 @@ function s() {
     })
   })
 }
-let o = (0, Chunk835245.A)();
+let s = (0, Chunk835245.A)();
 
 function l() {
   return (0, r.jsxs)("svg", {
@@ -43,7 +43,7 @@ function l() {
     viewBox: "0 0 1512 1619",
     xmlSpace: "preserve",
     children: [(0, r.jsxs)("linearGradient", {
-      id: o,
+      id: s,
       gradientUnits: "userSpaceOnUse",
       x1: "-13.3959",
       y1: "82.1225",
@@ -61,7 +61,7 @@ function l() {
       })]
     }), (0, r.jsx)("path", {
       style: {
-        fill: "url(#".concat(o, ")")
+        fill: "url(#".concat(s, ")")
       },
       d: "M0,1619c507-247.2,1154.7-241,1512-194.7V548.5c-150.9,56.4-400.3,51.2-691-222.6C506.6,29.9,186.8-16.5,0,4.3  V1619z"
     })]

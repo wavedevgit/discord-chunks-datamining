@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk317097 = require("./317097.js"),
   Chunk311907 = require("./311907.js"),
   Chunk827734 = require("./827734.js"),
@@ -107,15 +107,15 @@ function N(e) {
     themePadding: R,
     pendingAccentColor: P,
     animateOnHoverOrFocusOnly: D = false
-  } = e, x = (0, p.GV)(), [L, j] = i.useState(false), M = (0, l.bG)([m.A], () => m.A.isFocused()), k = h.kt.getSetting(), {
+  } = e, L = (0, p.GV)(), [x, M] = i.useState(false), j = (0, l.bG)([m.A], () => m.A.isFocused()), k = h.kt.getSetting(), {
     bannerSrc: U,
     status: G
   } = (0, E.A)({
     displayProfile: a,
     pendingBanner: O,
     size: N,
-    canAnimate: D || !k ? L : M
-  }), V = (0, u.rdh)(c.A.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(y, (0, u.FT9)(I)), B = (0, o.LX)((0, d.Ay)(F, V, false)), H = (0, f.A)(null != (t = null != P ? P : null == a ? true : a.primaryColor) ? t : B).hex, Y = C(I), W = Y + S - R, K = w - T - R;
+    canAnimate: D || !k ? x : j
+  }), F = (0, u.rdh)(c.A.unsafe_rawColors.PRIMARY_800).hex(), V = n.getAvatarURL(y, (0, u.FT9)(I)), B = (0, s.LX)((0, d.Ay)(V, F, false)), H = (0, f.A)(null != (t = null != P ? P : null == a ? true : a.primaryColor) ? t : B).hex, Y = C(I), W = Y + S - R, K = w - T - R;
   return (0, r.jsxs)("svg", {
     className: b.dK,
     viewBox: "0 0 ".concat(N, " ").concat(w),
@@ -124,7 +124,7 @@ function N(e) {
       minHeight: w
     },
     children: [(0, r.jsxs)("mask", {
-      id: x,
+      id: L,
       children: [(0, r.jsx)("rect", {
         fill: "white",
         x: "0",
@@ -143,11 +143,11 @@ function N(e) {
       width: "100%",
       height: "100%",
       overflow: "visible",
-      mask: "url(#".concat(x, ")"),
+      mask: "url(#".concat(L, ")"),
       children: [v, (0, r.jsx)("div", {
-        className: s()(b.vK, A),
-        onMouseMove: () => j(true),
-        onMouseLeave: () => j(false),
+        className: o()(b.vK, A),
+        onMouseMove: () => M(true),
+        onMouseLeave: () => M(false),
         style: {
           height: w,
           minHeight: w,
@@ -167,9 +167,9 @@ function w(e) {
     themeType: t,
     displayProfile: n,
     canUsePremiumProfileCustomization: i = false
-  } = e, a = S(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]), s = y.T[t], o = i || (null == n ? true : n.canUsePremiumProfileCustomization) || false;
-  return (0, r.jsx)(N, I(v({}, a, s), {
+  } = e, a = S(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]), o = y.T[t], s = i || (null == n ? true : n.canUsePremiumProfileCustomization) || false;
+  return (0, r.jsx)(N, I(v({}, a, o), {
     displayProfile: n,
-    themePadding: o ? s.themePadding : 0
+    themePadding: s ? o.themePadding : 0
   }))
 }

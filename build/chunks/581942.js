@@ -57,7 +57,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 var _ = function() {
-  function e(t, n, s) {
+  function e(t, n, o) {
     var l = this;
     u(this, e), p(this, "options", true), p(this, "actions", true), p(this, "monitor", true), p(this, "registry", true), p(this, "enterLeaveCounter", true), p(this, "sourcePreviewNodes", new Map), p(this, "sourcePreviewNodeOptions", new Map), p(this, "sourceNodes", new Map), p(this, "sourceNodeOptions", new Map), p(this, "dragStartSourceIds", null), p(this, "dropTargetIds", []), p(this, "dragEnterTargetIds", []), p(this, "currentNativeSource", null), p(this, "currentNativeHandle", null), p(this, "currentDragSourceNode", null), p(this, "altKeyPressed", false), p(this, "mouseMoveTimeoutTimer", null), p(this, "asyncEndDragFrameId", null), p(this, "dragOverTargetIds", null), p(this, "getSourceClientOffset", function(e) {
       var t = l.sourceNodes.get(e);
@@ -82,12 +82,12 @@ var _ = function() {
           clientOffset: n
         });
         var r = e.dataTransfer,
-          s = (0, a.c)(r);
+          o = (0, a.c)(r);
         if (l.monitor.isDragging()) {
           if (r && "function" == typeof r.setDragImage) {
-            var o = l.monitor.getSourceId(),
-              c = l.sourceNodes.get(o),
-              u = l.sourcePreviewNodes.get(o) || c;
+            var s = l.monitor.getSourceId(),
+              c = l.sourceNodes.get(s),
+              u = l.sourcePreviewNodes.get(s) || c;
             if (u) {
               var d = l.getCurrentSourcePreviewNodeOptions(),
                 f = d.anchorX,
@@ -112,7 +112,7 @@ var _ = function() {
           l.setCurrentDragSourceNode(e.target), l.getCurrentSourcePreviewNodeOptions().captureDraggingState ? l.actions.publishDragSource() : setTimeout(function() {
             return l.actions.publishDragSource()
           }, 0)
-        } else if (s) l.beginDragNativeItem(s);
+        } else if (o) l.beginDragNativeItem(o);
         else {
           if (r && !r.types && (e.target && !e.target.hasAttribute || !e.target.hasAttribute("draggable"))) return;
           e.preventDefault()
@@ -170,7 +170,7 @@ var _ = function() {
     }), p(this, "handleSelectStart", function(e) {
       var t = e.target;
       "function" != typeof t.dragDrop || "INPUT" === t.tagName || "SELECT" === t.tagName || "TEXTAREA" === t.tagName || t.isContentEditable || (e.preventDefault(), t.dragDrop())
-    }), this.options = new o.s(n, s), this.actions = t.getActions(), this.monitor = t.getMonitor(), this.registry = t.getRegistry(), this.enterLeaveCounter = new r.C(this.isNodeInDocument)
+    }), this.options = new s.s(n, o), this.actions = t.getActions(), this.monitor = t.getMonitor(), this.registry = t.getRegistry(), this.enterLeaveCounter = new r.C(this.isNodeInDocument)
   }
   return f(e, [{
     key: "profile",
@@ -298,8 +298,8 @@ var _ = function() {
     key: "isDraggingNativeItem",
     value: function() {
       var e = this.monitor.getItemType();
-      return Object.keys(s).some(function(t) {
-        return s[t] === e
+      return Object.keys(o).some(function(t) {
+        return o[t] === e
       })
     }
   }, {

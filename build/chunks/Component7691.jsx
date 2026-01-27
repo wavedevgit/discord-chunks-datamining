@@ -72,16 +72,16 @@ function A(e, t) {
     initHistory: u
   } = e, {
     analyticsLocations: d
-  } = (0, l.Ay)(s.A.APP_LAUNCHER);
+  } = (0, l.Ay)(o.A.APP_LAUNCHER);
   return i.useEffect(() => {
-    (0, o.zV)(h.HAw.APPLICATION_COMMAND_TOP_OF_FUNNEL, {
+    (0, s.zV)(h.HAw.APPLICATION_COMMAND_TOP_OF_FUNNEL, {
       source: a,
       location: "app_launcher"
     })
   }, [a]), i.useEffect(() => {
     let e = Date.now();
     return () => {
-      (0, o.zV)(h.HAw.APP_LAUNCHER_CLOSED, {
+      (0, s.zV)(h.HAw.APP_LAUNCHER_CLOSED, {
         reason: c.A.closeReason(),
         time_spent: Date.now() - e,
         source: a
@@ -112,23 +112,23 @@ function S(e) {
   let {
     initHistory: t,
     children: n
-  } = e, [a, s] = i.useState(null != t ? t : [{
+  } = e, [a, o] = i.useState(null != t ? t : [{
     type: u.Wy.HOME
-  }]), [o, l] = i.useState({}), c = a[a.length - 1], [d, f] = i.useState(false), p = i.useCallback(e => {
-    s(t => [...t, e])
+  }]), [s, l] = i.useState({}), c = a[a.length - 1], [d, f] = i.useState(false), p = i.useCallback(e => {
+    o(t => [...t, e])
   }, []), _ = i.useCallback(() => {
     let e = null;
-    s(t => t.length <= 1 ? t : (e = t[t.length - 1], t.slice(0, false))), l(t => null == e ? t : b(E({}, t), {
+    o(t => t.length <= 1 ? t : (e = t[t.length - 1], t.slice(0, false))), l(t => null == e ? t : b(E({}, t), {
       [e.type]: e
     }))
   }, []), h = i.useCallback(e => {
     var t;
-    return null != (t = a.findLast(t => t.type === e)) ? t : o[e]
-  }, [a, o]);
+    return null != (t = a.findLast(t => t.type === e)) ? t : s[e]
+  }, [a, s]);
   return (0, r.jsx)(u.L8.Provider, {
     value: {
       history: a,
-      discard: o,
+      discard: s,
       currentView: c,
       pushHistory: p,
       goBack: _,
@@ -144,10 +144,10 @@ function T(e) {
   let {
     context: t,
     entrypoint: n
-  } = e, [s, o] = i.useState(""), {
+  } = e, [o, s] = i.useState(""), {
     setScroller: l,
     isCloseToBottom: c
-  } = C(s), {
+  } = C(o), {
     currentView: _,
     getMostRecentHistoryItemByType: h,
     setSlideReady: g
@@ -175,8 +175,8 @@ function T(e) {
           setScroller: l,
           context: t,
           entrypoint: n,
-          searchQuery: s,
-          setSearchQuery: o
+          searchQuery: o,
+          setSearchQuery: s
         })
       })
     }), (0, r.jsx)(a.q7S, {
@@ -210,16 +210,16 @@ function T(e) {
 }
 
 function C(e) {
-  let [t, n] = i.useState(null), [r, a] = i.useState(false), s = i.useRef(0);
+  let [t, n] = i.useState(null), [r, a] = i.useState(false), o = i.useRef(0);
   return i.useEffect(() => {
     null == t || t.scrollTo(0, 0)
   }, [t, e]), i.useEffect(() => {
-    if (null != t) return t.scrollTo(0, s.current), t.addEventListener("scroll", e), () => {
+    if (null != t) return t.scrollTo(0, o.current), t.addEventListener("scroll", e), () => {
       t.removeEventListener("scroll", e, false)
     };
 
     function e() {
-      null == t || (s.current = t.scrollTop, a(t.scrollHeight - (t.scrollTop + t.clientHeight) < 340))
+      null == t || (o.current = t.scrollTop, a(t.scrollHeight - (t.scrollTop + t.clientHeight) < 340))
     }
   }, [t]), {
     setScroller: n,

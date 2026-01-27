@@ -11,7 +11,7 @@ var Chunk353640 = require("./353640.js"),
   Chunk121894 = require("./121894.js"),
   Chunk831062 = require("./831062.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,7 +27,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -73,7 +73,7 @@ function p(e) {
 
 function _() {
   let e = true;
-  for (let [t, n] of Object.entries(d.getState().captchaServeVolume)) s.A.distribution({
+  for (let [t, n] of Object.entries(d.getState().captchaServeVolume)) o.A.distribution({
     name: i.K.CAPTCHA_SERVE_VOLUME_DISTRIBUTION,
     tags: ["user_flow:".concat(t)]
   }, n, e);

@@ -9,7 +9,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk812729 = require("./812729.js"),
   a = require.n(Chunk812729),
   Chunk296489 = require("./296489.js"),
-  o = require.n(Chunk296489),
+  s = require.n(Chunk296489),
   Chunk110259 = require("./110259.js"),
   Chunk73153 = require("./73153.js"),
   Chunk964486 = require("./964486.js"),
@@ -70,19 +70,19 @@ function v(e) {
     {
       name: i,
       type: a,
-      properties: s
+      properties: o
     } = e;
   if (e.type === l.ImpressionTypes.MODAL && null == e.name && (0, m.uJ)().some(e => {
       var t;
       return null == (t = e._stackContext) ? true : t.isSlide
     })) return;
   (0, m.Vm)(e);
-  let o = null != (t = null == s ? true : s.guild_id) ? t : p.A.getGuildId(),
-    c = null != (n = null == s ? true : s.channel_id) ? n : f.A.getChannelId(o),
+  let s = null != (t = null == o ? true : o.guild_id) ? t : p.A.getGuildId(),
+    c = null != (n = null == o ? true : o.channel_id) ? n : f.A.getChannelId(s),
     u = (0, _.expandEventProperties)(E({
       impression_type: a,
       location: (0, m.g$)()
-    }, (0, h.H$)(o), (0, h.dI)(d.A.getChannel(c)), s));
+    }, (0, h.H$)(s), (0, h.dI)(d.A.getChannel(c)), o));
   r ? (0, m.eE)(null, null) : (null != i && null != a && ((0, _.debugLogEvent)(i, u), O(i, u)), (0, m.eE)(i, u))
 }
 
@@ -93,14 +93,14 @@ function A(e) {
     },
     n = arguments.length > 2 ? arguments[2] : true,
     i = r.useRef(true),
-    s = r.useRef(true),
+    o = r.useRef(true),
     l = () => {
       let r = !a()(i.current, e);
       r && (i.current = e);
-      let l = !a()(s.current, n);
-      if (l && (s.current = n), !r && !l) return;
+      let l = !a()(o.current, n);
+      if (l && (o.current = n), !r && !l) return;
       let c = b(E({}, e), {
-        sequenceId: o()("impression_")
+        sequenceId: s()("impression_")
       });
       return v(c, t.disableTrack), () => {
         null != c && (0, m.u5)(c)

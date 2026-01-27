@@ -87,8 +87,8 @@ function E(e) {
     let {
       closePopout: i
     } = e;
-    return (0, r.jsx)(o.l, {
-      children: (0, r.jsx)(s.CalendarPicker, {
+    return (0, r.jsx)(s.l, {
+      children: (0, r.jsx)(o.CalendarPicker, {
         minDate: p,
         maxDate: m,
         value: t,

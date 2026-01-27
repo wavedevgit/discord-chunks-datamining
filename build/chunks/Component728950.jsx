@@ -93,17 +93,17 @@ function _(e) {
     } = await Promise.resolve().then(n.bind(n, 156312)), {
       PaymentModal: i
     } = await Promise.resolve().then(n.bind(n, 546042)), {
-      STEPS: o
-    } = await Promise.all([n.e("14704"), n.e("29716"), n.e("2824"), n.e("15050")]).then(n.bind(n, 674619));
+      STEPS: s
+    } = await Promise.all([n.e("62175"), n.e("2292"), n.e("14704"), n.e("29716"), n.e("2824"), n.e("96126")]).then(n.bind(n, 674619));
     return n => {
       let {
         onClose: I
       } = n, S = f(n, ["onClose"]);
       return (0, r.jsx)(e, {
         activeSubscription: l,
-        stepConfigs: o,
+        stepConfigs: s,
         skuIDs: [A],
-        children: (0, r.jsx)(s.Qt, {
+        children: (0, r.jsx)(o.Qt, {
           children: (0, r.jsx)(a.dX, {
             children: (0, r.jsx)(i, d(c({}, S), {
               initialPlanId: t,
@@ -130,6 +130,6 @@ function _(e) {
     onCloseCallback: () => {
       null == _ || _(false)
     },
-    onCloseRequest: o.tEg
+    onCloseRequest: s.tEg
   })
 }

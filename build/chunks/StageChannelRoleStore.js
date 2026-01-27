@@ -2,7 +2,7 @@
 /** chunk id: 312006, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => M
+  Ay: () => j
 }), require("./896048.js");
 var r, Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
@@ -126,11 +126,11 @@ function D(e) {
   return C(e.guildId)
 }
 
-function x() {
+function L() {
   y = {}
 }
 
-function L(e) {
+function x(e) {
   let {
     guild: t
   } = e;
@@ -139,7 +139,7 @@ function L(e) {
     (null == n || n.guild_id === t.id) && delete y[e]
   }
 }
-class j extends(r = Chunk311907.Ay.Store) {
+class M extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.Ay, l.A, d.A, f.default, p.A, u.A)
   }
@@ -165,15 +165,15 @@ class j extends(r = Chunk311907.Ay.Store) {
     return I(e, t, i)
   }
 }
-E(j, "displayName", "StageChannelRoleStore");
-let M = new j(Chunk73153.h, {
+E(M, "displayName", "StageChannelRoleStore");
+let j = new M(Chunk73153.h, {
   CHANNEL_UPDATES: N,
-  CONNECTION_OPEN: x,
+  CONNECTION_OPEN: L,
   GUILD_MEMBER_REMOVE: R,
   GUILD_MEMBER_UPDATE: R,
   GUILD_ROLE_UPDATE: w,
   PASSIVE_UPDATE_V2: D,
   VOICE_STATE_UPDATES: P,
-  GUILD_CREATE: L,
-  GUILD_DELETE: L
+  GUILD_CREATE: x,
+  GUILD_DELETE: x
 })

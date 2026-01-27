@@ -13,9 +13,9 @@ var Chunk311907 = require("./311907.js"),
 
 function l(e, t) {
   var n;
-  let r = null == (n = o.default.getCurrentUser()) ? true : n.id,
-    l = s.Ay.isSuppressEveryoneEnabled(t),
-    c = s.Ay.isSuppressRolesEnabled(t),
+  let r = null == (n = s.default.getCurrentUser()) ? true : n.id,
+    l = o.Ay.isSuppressEveryoneEnabled(t),
+    c = o.Ay.isSuppressRolesEnabled(t),
     u = null != e.mentions && e.mentions.some(e => e.id === r),
     d = null == t || null == r ? null : a.Ay.getMember(t, r),
     f = null != e.mention_roles && null != d && null != d.roles && e.mention_roles.some(e => d.roles.includes(e));
@@ -55,7 +55,7 @@ function E(e) {
 }
 class y extends Chunk311907.Ay.Store {
   initialize() {
-    this.waitFor(a.Ay, s.Ay, o.default)
+    this.waitFor(a.Ay, o.Ay, s.default)
   }
   getGlobalStats() {
     let e = e => null == e ? null : Math.floor((Date.now() - e) / 1e3);

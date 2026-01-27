@@ -50,11 +50,11 @@ let I = "SELECTABLE",
       name: "Uncategorized"
     })
   },
-  x = M(Chunk652215.eGj),
-  L = [],
-  j = {};
+  L = j(Chunk652215.eGj),
+  x = [],
+  M = {};
 
-function M(e) {
+function j(e) {
   return {
     id: e,
     [I]: [],
@@ -82,11 +82,11 @@ function G(e) {
   e[I].sort(U), e[S].sort(U), e[v.rbe.GUILD_CATEGORY].sort(U)
 }
 
-function V(e) {
+function F(e) {
   return (0, p.tr)(e) ? I : (0, p.ay)(e) ? S : e
 }
 
-function F() {
+function V() {
   let e = {},
     t = d.A.getFavoriteChannels();
   for (let n in t) {
@@ -103,7 +103,7 @@ function F() {
 }
 
 function B(e) {
-  if (e === v.YYv) return F();
+  if (e === v.YYv) return V();
   let t = {},
     n = m.A.getMutableGuildChannelsForGuild(e);
   for (let e in n) t[e] = {
@@ -120,7 +120,7 @@ function H(e) {
   return a().forEach(n, n => {
     let r = n.channel;
     if (e.count += 1, p.JT.has(r.type) && !y.A.can(v.xBc.VIEW_CHANNEL, r) && !c.A.isChannelGated(r.guild_id, r.id) && r.id !== R) return;
-    let i = V(r.type);
+    let i = F(r.type);
     r.type === v.rbe.GUILD_DIRECTORY && (null == P[t] && (P[t] = []), P[t].push(n)), null != e[i] && e[i].push(n)
   }), e
 }
@@ -130,7 +130,7 @@ function Y() {
 }
 
 function W(e) {
-  let t = M(e);
+  let t = j(e);
   return C[e] = t, P[e] = [], H(t), G(t), K(t), en(e), t
 }
 
@@ -176,12 +176,12 @@ function Z(e) {
   C[t] = true, t === T && W(t)
 }
 
-function X(e) {
+function Q(e) {
   let t = m.A.getBasicChannel(e.id);
   null != t && null != t.guild_id && W(t.guild_id)
 }
 
-function Q(e) {
+function X(e) {
   let {
     channel: {
       guild_id: t
@@ -212,7 +212,7 @@ function $(e) {
 }
 
 function ee(e, t) {
-  return s.X8(_.cc({
+  return o.X8(_.cc({
     user: e,
     context: t,
     checkElevated: false
@@ -272,7 +272,7 @@ function ea(e) {
   }, false)
 }
 
-function es(e) {
+function eo(e) {
   let {
     guildId: t
   } = e;
@@ -280,18 +280,18 @@ function es(e) {
   W(t)
 }
 
-function eo() {
+function es() {
   W(v.YYv)
 }
 class el extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(h.default, m.A, d.A, c.A, g.Ay, E.A, y.A, O.default), this.syncWith([d.A], eo)
+    this.waitFor(h.default, m.A, d.A, c.A, g.Ay, E.A, y.A, O.default), this.syncWith([d.A], es)
   }
   getAllGuilds() {
     return C
   }
   getChannels(e) {
-    return null != e ? k(e) : x
+    return null != e ? k(e) : L
   }
   getFirstChannelOfType(e, t, n) {
     let r = this.getChannels(e)[n].find(t);
@@ -338,7 +338,7 @@ class el extends(r = Chunk311907.Ay.Store) {
         channel: t
       } = e;
       return t.id
-    })) ? t : L
+    })) ? t : x
   }
   hasSelectableChannel(e, t) {
     return this.getSelectableChannelIds(e).includes(t)
@@ -354,13 +354,13 @@ class el extends(r = Chunk311907.Ay.Store) {
   }
   getTextChannelNameDisambiguations(e) {
     var t;
-    return null != e && null != (t = N[e]) ? t : j
+    return null != e && null != (t = N[e]) ? t : M
   }
 }
 A(el, "displayName", "GuildChannelStore");
 let ec = new el(Chunk73153.h, {
   BACKGROUND_SYNC: Y,
-  CHANNEL_SELECT: es,
+  CHANNEL_SELECT: eo,
   CONNECTION_OPEN: Y,
   OVERLAY_INITIALIZE: Y,
   CACHE_LOADED_LAZY: Y,
@@ -368,8 +368,8 @@ let ec = new el(Chunk73153.h, {
   GUILD_UPDATE: z,
   GUILD_DELETE: q,
   GUILD_MEMBER_UPDATE: Z,
-  CHANNEL_CREATE: Q,
-  CHANNEL_DELETE: Q,
+  CHANNEL_CREATE: X,
+  CHANNEL_DELETE: X,
   CHANNEL_UPDATES: J,
   GUILD_ROLE_CREATE: $,
   GUILD_ROLE_UPDATE: $,
@@ -377,6 +377,6 @@ let ec = new el(Chunk73153.h, {
   IMPERSONATE_UPDATE: $,
   IMPERSONATE_STOP: $,
   VOICE_CHANNEL_SELECT: ei,
-  VOICE_CHANNEL_STATUS_UPDATE: X,
+  VOICE_CHANNEL_STATUS_UPDATE: Q,
   VOICE_STATE_UPDATES: ea
 })

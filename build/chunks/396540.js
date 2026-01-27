@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk322811 = require("./322811.js");
 let i = RegExp("(^|\\s|T)(?:(?:um|von)\\s*)?(\\d{1,2})(?:h|:)?(?:(\\d{1,2})(?:m|:)?)?(?:(\\d{1,2})(?:s)?)?(?:\\s*Uhr)?(?:\\s*(morgens|vormittags|nachmittags|abends|nachts|am\\s+(?:Morgen|Vormittag|Nachmittag|Abend)|in\\s+der\\s+Nacht))?(?=\\W|$)", "i"),
   a = RegExp("^\\s*(\\-|\\–|\\~|\\〜|bis(?:\\s+um)?|\\?)\\s*(\\d{1,2})(?:h|:)?(?:(\\d{1,2})(?:m|:)?)?(?:(\\d{1,2})(?:s)?)?(?:\\s*Uhr)?(?:\\s*(morgens|vormittags|nachmittags|abends|nachts|am\\s+(?:Morgen|Vormittag|Nachmittag|Abend)|in\\s+der\\s+Nacht))?(?=\\W|$)", "i"),
-  s = 2,
-  o = 3,
+  o = 2,
+  s = 3,
   l = 4,
   c = 5;
 class u {
@@ -26,7 +26,7 @@ class u {
     let n = 0,
       i = 0,
       a = null;
-    if (n = parseInt(t[s]), null != t[o] && (i = parseInt(t[o])), i >= 60 || n > 24) return null;
+    if (n = parseInt(t[o]), null != t[s] && (i = parseInt(t[s])), i >= 60 || n > 24) return null;
     if (n >= 12 && (a = r.FF.PM), null != t[c]) {
       if (n > 12) return null;
       let e = t[c].toLowerCase();

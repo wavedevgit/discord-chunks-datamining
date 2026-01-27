@@ -1,4 +1,4 @@
-/** Chunk was on 67564 **/
+/** Chunk was on 41727 **/
 /** chunk id: 698718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => e5
@@ -147,7 +147,7 @@ function e1(e) {
 }
 let e9 = /^\+(?!\w+):?(?!:)(\w+)?:?$/;
 
-function e2(e) {
+function e7(e) {
   let {
     isSidebar: t
   } = e, n = function(e, t) {
@@ -171,10 +171,10 @@ function e2(e) {
     role: "complementary"
   })) : (0, r.jsx)("main", e$({}, n))
 }
-let e7 = Chunk64700.forwardRef((e, t) => (0, r.jsx)(e6, e0(e$({}, e), {
+let e2 = Chunk64700.forwardRef((e, t) => (0, r.jsx)(e6, e0(e$({}, e), {
   ref: t
 })));
-e7.displayName = "ChannelTextAreaForm";
+e2.displayName = "ChannelTextAreaForm";
 class e6 extends Chunk64700.PureComponent {
   focusEditor() {
     var e;
@@ -678,7 +678,7 @@ class e3 extends Chunk64700.PureComponent {
           tutorialId: "writing-messages",
           position: "left",
           offsetX: 75,
-          children: (0, r.jsx)(e7, {
+          children: (0, r.jsx)(e2, {
             ref: this.refToChannelTextAreaFormComponent,
             refInstance: this.containerDomRef,
             focused: T,
@@ -728,7 +728,7 @@ class e3 extends Chunk64700.PureComponent {
             }), (0, r.jsx)(eD.EG, {
               event: eq.jej.OPEN_APP_LAUNCHER,
               handler: this.handleOpenAppLauncher
-            }), (0, r.jsxs)(e2, {
+            }), (0, r.jsxs)(e7, {
               isSidebar: w,
               className: eQ.q2,
               "aria-label": eJ.intl.formatToPlainString(t, {

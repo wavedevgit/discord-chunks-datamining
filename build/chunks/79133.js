@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   L: () => l,
-  q: () => o
+  q: () => s
 }), require("./896048.js");
 var Chunk281445 = require("./281445.js"),
   Chunk390544 = require("./390544.js");
@@ -51,7 +51,7 @@ let a = [{
   }]
 }];
 
-function s(e, t) {
+function o(e, t) {
   return {
     id: e,
     name: t,
@@ -61,7 +61,7 @@ function s(e, t) {
     gameId: "1"
   }
 }
-let o = [s("1", "GameServer Test #1"), s("2", "GameServer Test #2"), s("3", "GameServer Test #3"), s("4", "GameServer Test #4"), s("5", "GameServer Test #5"), s("6", "GameServer Test #6"), s("7", "GameServer Test #7"), s("8", "GameServer Test #8"), s("9", "GameServer Test #9"), s("10", "GameServer Test #10"), s("11", "GameServer Test #11"), s("12", "GameServer Test #12")],
+let s = [o("1", "GameServer Test #1"), o("2", "GameServer Test #2"), o("3", "GameServer Test #3"), o("4", "GameServer Test #4"), o("5", "GameServer Test #5"), o("6", "GameServer Test #6"), o("7", "GameServer Test #7"), o("8", "GameServer Test #8"), o("9", "GameServer Test #9"), o("10", "GameServer Test #10"), o("11", "GameServer Test #11"), o("12", "GameServer Test #12")],
   l = [{
     id: "1",
     gameId: "1",

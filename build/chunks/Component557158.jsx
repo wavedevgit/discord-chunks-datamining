@@ -21,7 +21,7 @@ let l = e => {
       className: n
     } = e;
     return (0, r.jsx)("div", {
-      className: a()(o.um, n),
+      className: a()(s.um, n),
       children: t
     })
   },
@@ -31,7 +31,7 @@ let l = e => {
       className: n
     } = e;
     return (0, r.jsx)("div", {
-      className: a()(o.Ov, n),
+      className: a()(s.Ov, n),
       children: t
     })
   },
@@ -41,7 +41,7 @@ let l = e => {
       className: n
     } = e;
     return (0, r.jsx)("div", {
-      className: a()(o.wq, n),
+      className: a()(s.wq, n),
       children: t
     })
   },
@@ -50,8 +50,8 @@ let l = e => {
       children: t,
       className: n
     } = e;
-    return (0, r.jsx)(s.Text, {
-      className: a()(n, o.hf),
+    return (0, r.jsx)(o.Text, {
+      className: a()(n, s.hf),
       color: "interactive-text-active",
       variant: "text-md/normal",
       children: t
@@ -62,8 +62,8 @@ let l = e => {
       children: t,
       className: n
     } = e;
-    return (0, r.jsx)(s.Text, {
-      className: a()(n, o.p3),
+    return (0, r.jsx)(o.Text, {
+      className: a()(n, s.p3),
       color: "interactive-text-default",
       variant: "text-xs/normal",
       children: t
@@ -74,8 +74,8 @@ let l = e => {
       children: t,
       className: n
     } = e;
-    return (0, r.jsx)(s.Text, {
-      className: a()(n, o.I0),
+    return (0, r.jsx)(o.Text, {
+      className: a()(n, s.I0),
       color: "interactive-text-default",
       variant: "text-xs/normal",
       children: t

@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   Ay: () => W,
-  H$: () => j,
+  H$: () => M,
   JK: () => H,
   Ou: () => k,
   QS: () => G,
   dI: () => U,
   dL: () => Y,
   qL: () => B,
-  zV: () => F
+  zV: () => V
 });
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -51,7 +51,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -64,13 +64,13 @@ function x(e) {
   return e
 }
 
-function L(e) {
+function x(e) {
   let t = 0;
   for (let n in e) t += 1;
   return t
 }
 
-function j(e) {
+function M(e) {
   var t;
   if (null == e) return null;
   let n = h.A.getGuild(e);
@@ -78,26 +78,26 @@ function j(e) {
   let r = _.A.getNumRoles(n.id),
     i = c.default.getId(),
     a = p.Ay.getMember(e, i),
-    s = d.Ay.getChannels(e),
-    o = s[d.I6].length,
-    l = s[d.vM].length,
+    o = d.Ay.getChannels(e),
+    s = o[d.I6].length,
+    l = o[d.vM].length,
     u = S.A.getVoiceStates(e);
   return {
     guild_id: n.id,
     guild_size_total: f.A.getMemberCount(e),
-    guild_num_channels: o + l,
-    guild_num_text_channels: o,
+    guild_num_channels: s + l,
+    guild_num_text_channels: s,
     guild_num_voice_channels: l,
     guild_num_roles: r,
     guild_member_num_roles: null != a ? a.roles.length : 0,
     guild_member_perms: String(null != (t = g.A.getGuildPermissions(n)) ? t : N.x3),
     guild_is_vip: n.features.has(R.GuildFeatures.VIP_REGIONS),
     is_member: null != a,
-    num_voice_channels_active: L(u)
+    num_voice_channels_active: x(u)
   }
 }
 
-function M(e, t) {
+function j(e, t) {
   return {
     channel_static_route: t,
     channel_hidden: false
@@ -138,7 +138,7 @@ function G(e) {
   if (null == t) return null;
   let n = m.A.isVideoEnabled(),
     r = y.A.getMediaSessionId();
-  return x({
+  return L({
     channel_id: t.id,
     channel_type: t.type,
     guild_id: t.getGuildId(),
@@ -146,21 +146,21 @@ function G(e) {
   }, H(t.getGuildId(), t.id, n), (0, w.V)())
 }
 
-function V(e, t) {
+function F(e, t) {
   var n, r;
   return null == e ? null != t ? t : null : e.isPrivate() ? null : null != (n = null != (r = e.getGuildId()) ? r : t) ? n : null
 }
 
-function F(e) {
+function V(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (T.default.isThrottled(e)) return;
   let r = !("location" in t) || t.location !== R.ThZ.GUILD_CREATE_INVITE_SUGGESTION,
     i = "guild_id" in t ? t.guild_id : r ? v.A.getGuildId() : null,
     a = "channel_id" in t ? t.channel_id : r ? O.A.getChannelId(i) : null,
-    s = u.A.getChannel(a),
-    o = x({}, t, j(V(s, i)), null != i && null != a && (0, P.jq)(a) ? M(i, a) : U(s));
-  T.default.track(e, o, {
+    o = u.A.getChannel(a),
+    s = L({}, t, M(F(o, i)), null != i && null != a && (0, P.jq)(a) ? j(i, a) : U(o));
+  T.default.track(e, s, {
     flush: n
   })
 }
@@ -193,16 +193,16 @@ function B(e) {
     channel_is_muted: A.Ay.isChannelMuted(t.guild_id, t.id),
     channel_is_nsfw: t.isNSFW(),
     channel_resolved_unread_setting: A.Ay.resolveUnreadSetting(t),
-    channel_preset: (0, o.jU)(A.Ay.resolveUnreadSetting(t), A.Ay.resolvedMessageNotifications(t)),
+    channel_preset: (0, s.jU)(A.Ay.resolveUnreadSetting(t), A.Ay.resolvedMessageNotifications(t)),
     guild_id: t.guild_id,
     guild_was_unread: r.guildUnread,
     guild_mention_count: r.guildMentionCount,
     guild_is_muted: A.Ay.isMuted(t.guild_id),
     guild_resolved_unread_setting: A.Ay.resolveGuildUnreadSetting(n),
-    guild_preset: (0, o.jU)(A.Ay.resolveGuildUnreadSetting(n), A.Ay.getMessageNotifications(t.guild_id)),
+    guild_preset: (0, s.jU)(A.Ay.resolveGuildUnreadSetting(n), A.Ay.getMessageNotifications(t.guild_id)),
     parent_id: t.parent_id,
     parent_channel_type: t.parentChannelThreadType,
-    has_pending_member_action: (0, s.c)(t.guild_id, e),
+    has_pending_member_action: (0, o.c)(t.guild_id, e),
     can_send_message: g.A.can(R.xBc.SEND_MESSAGES, t),
     is_app_dm: false
   }
@@ -228,6 +228,6 @@ function Y(e, t) {
   }), n
 }
 let W = {
-  trackWithMetadata: F,
+  trackWithMetadata: V,
   getVoiceStateMetadata: H
 }

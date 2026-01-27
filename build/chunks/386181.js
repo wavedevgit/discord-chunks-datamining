@@ -29,7 +29,7 @@ let p = (0, Chunk64700.createContext)(null),
       E = (0, l.Bi)();
     d || (d = E);
     let y = n ? n.expandedKeys.has(d) : e.isExpanded,
-      b = (0, o.E)({
+      b = (0, s.E)({
         ...e,
         isExpanded: y,
         onExpandedChange(t) {
@@ -50,7 +50,7 @@ let p = (0, Chunk64700.createContext)(null),
       {
         isFocusVisible: S,
         focusProps: T
-      } = (0, s.o)({
+      } = (0, o.o)({
         within: true
       }),
       C = (0, i.Sl)({
@@ -94,11 +94,11 @@ let p = (0, Chunk64700.createContext)(null),
       role: n = "group"
     } = e, {
       panelProps: a,
-      panelRef: o
+      panelRef: s
     } = (0, f.useContext)(m), {
       isFocusVisible: l,
       focusProps: p
-    } = (0, s.o)({
+    } = (0, o.o)({
       within: true
     }), _ = (0, i.Sl)({
       ...e,
@@ -111,7 +111,7 @@ let p = (0, Chunk64700.createContext)(null),
     });
     return f.createElement("div", {
       ...(0, u.v)(h, _, a, p),
-      ref: (0, d.P)(t, o),
+      ref: (0, d.P)(t, s),
       role: n,
       "data-focus-visible-within": l || true
     }, f.createElement(i.Kq, {

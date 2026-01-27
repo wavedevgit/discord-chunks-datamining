@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk942381 = require("./942381.js"),
   Chunk877991 = require("./877991.js"),
   Chunk375499 = require("./375499.jsx"),
@@ -24,7 +24,7 @@ function m(e, t) {
     type: a,
     channelId: m,
     pickerView: g = p.kx.EMOJI
-  } = e, [E, y, b, O] = (0, u.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], o.x), v = (0, d.p)(l.L), A = a === f.oU.NORMAL, {
+  } = e, [E, y, b, O] = (0, u.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.x), v = (0, d.p)(l.L), A = a === f.oU.NORMAL, {
     tooltipsWithKeybinds: I,
     expressionsCombinedIntoEmojiButton: S
   } = d.C.useConfig({
@@ -33,7 +33,7 @@ function m(e, t) {
     (0, u.r$)(g, a, m)
   }, [a, g, m]);
   return n ? null : (0, r.jsx)("div", {
-    className: s()(p.VQ, h.UD),
+    className: o()(p.VQ, h.UD),
     ref: t,
     children: (0, r.jsx)(c.A, {
       "aria-label": C,

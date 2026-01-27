@@ -18,9 +18,9 @@ let l = 4,
 function p(e) {
   let {
     enabled: t
-  } = e, n = (0, i.bG)([s.A], () => s.A.useReducedMotion), p = r.useRef(null), _ = r.useRef(0), {
+  } = e, n = (0, i.bG)([o.A], () => o.A.useReducedMotion), p = r.useRef(null), _ = r.useRef(0), {
     createMultipleConfettiAt: h
-  } = r.useContext(o.x), m = r.useMemo(() => ({
+  } = r.useContext(s.x), m = r.useMemo(() => ({
     size: {
       type: "static-random",
       minValue: c - u,

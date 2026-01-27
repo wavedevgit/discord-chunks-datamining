@@ -1,9 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 716442, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 716442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => r
+  k: () => i
 });
-var r = function(e) {
-  return e.HOME = "home", e.WHATS_NEW = "whatsNew", e.BEST_OF_NITRO = "bestOfNitro", e.PLANS = "plans", e.COMPARE = "compare", e
-}({})
+var r, i = ((r = {}).HOME = "home", r.WHATS_NEW = "whatsNew", r.BEST_OF_NITRO = "bestOfNitro", r.PLANS = "plans", r.COMPARE = "compare", r)

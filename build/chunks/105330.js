@@ -2,25 +2,25 @@
 /** chunk id: 105330, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => o
+  l: () => s
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk267102 = require("./267102.jsx"),
   Chunk374803 = require("./374803.js"),
   Chunk562650 = require("./562650.js");
 
-function o(e) {
+function s(e) {
   let {
     editorHeight: t,
     type: n,
-    state: o
-  } = e, [l, c] = r.useState(true), u = null == o ? true : o.query, d = null == o ? true : o.isVisible, {
+    state: s
+  } = e, [l, c] = r.useState(true), u = null == s ? true : s.query, d = null == s ? true : s.isVisible, {
     renderWindow: f
   } = r.useContext(i.Ay), p = r.useCallback(() => {
     var e, t, r, i;
-    if (null != o && (null == u || !d)) return void c(true);
+    if (null != s && (null == u || !d)) return void c(true);
     if ((null == u ? true : u.type) === a.DB.MENTION_SUGGESTIONS) {
-      let e = f.document.getElementsByClassName(s.Z2)[0];
+      let e = f.document.getElementsByClassName(o.Z2)[0];
       if (null == e) return void c(true);
       {
         let t = e.getBoundingClientRect();
@@ -48,7 +48,7 @@ function o(e) {
     m.setStart(_, h), m.setEnd(_, h);
     let g = m.getBoundingClientRect();
     (null == g ? true : g.height) !== 0 && c(null != g ? g : null)
-  }, [f.document, o, d, u, n]);
+  }, [f.document, s, d, u, n]);
   return r.useEffect(() => (f.document.addEventListener("selectionchange", p), () => f.document.removeEventListener("selectionchange", p)), [f.document, p]), r.useEffect(() => {
     p()
   }, [p, t]), l

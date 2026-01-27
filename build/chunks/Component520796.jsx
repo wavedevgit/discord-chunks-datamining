@@ -17,7 +17,7 @@ function l() {
   } = (0, a.P5)();
   return (0, i.vw)({
     skuId: e
-  }) ? (0, r.jsx)(s.A, {
-    message: o.intl.format(o.t.fsOXXO, {})
+  }) ? (0, r.jsx)(o.A, {
+    message: s.intl.format(s.t.fsOXXO, {})
   }) : null
 }

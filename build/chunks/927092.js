@@ -5,12 +5,12 @@ var Chunk557939 = require("./557939.js"),
   Chunk860511 = require("./860511.js"),
   Chunk607167 = require("./607167.js"),
   Chunk274574 = require("./274574.js"),
-  o = "ArrayBuffer",
-  l = Chunk607167[o];
+  s = "ArrayBuffer",
+  l = Chunk607167[s];
 Chunk557939({
   global: true,
   constructor: true,
-  forced: Chunk860511[o] !== l
+  forced: Chunk860511[s] !== l
 }, {
   ArrayBuffer: l
-}), Chunk274574(o)
+}), Chunk274574(s)

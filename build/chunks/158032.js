@@ -22,8 +22,8 @@ async function u(e) {
     currency: n,
     paymentSource: r,
     trialId: i,
-    code: s,
-    metadata: o,
+    code: o,
+    metadata: s,
     referralCode: c,
     loadId: u,
     expectedInvoicePrice: d,
@@ -40,9 +40,9 @@ async function u(e) {
       }],
       paymentSource: r,
       trialId: i,
-      code: s,
+      code: o,
       currency: n,
-      metadata: o,
+      metadata: s,
       referralCode: c,
       loadId: u,
       expectedInvoicePrice: d,
@@ -61,11 +61,11 @@ async function u(e) {
 }
 async function d(e, t, n, r, u, d) {
   try {
-    let f = (0, o.EL)(e);
+    let f = (0, s.EL)(e);
     i()(f, "Expected existing premium plan");
-    let p = (0, o.GX)(e, f.planId),
+    let p = (0, s.GX)(e, f.planId),
       _ = true !== n ? n.toLowerCase() : e.currency;
-    (0, s.U)(e, t, d), await l.nV(e, {
+    (0, o.U)(e, t, d), await l.nV(e, {
       status: c.Dmq.ACTIVE,
       paymentSource: r,
       items: p,
@@ -73,7 +73,7 @@ async function d(e, t, n, r, u, d) {
     }, {
       amount: 0,
       currency: _
-    }, (0, o.UC)(p, _, null == r ? true : r.id), t, u, d), a.h.dispatch({
+    }, (0, s.UC)(p, _, null == r ? true : r.id), t, u, d), a.h.dispatch({
       type: "PREMIUM_PAYMENT_UPDATE_SUCCESS"
     })
   } catch (e) {
@@ -90,7 +90,7 @@ async function f(e, t, n) {
     }, {
       amount: 0,
       currency: e.currency
-    }, (0, o.UC)(e.items, e.currency, e.paymentSourceId), t, n)
+    }, (0, s.UC)(e.items, e.currency, e.paymentSourceId), t, n)
   } catch (e) {
     throw e
   }
@@ -107,9 +107,9 @@ async function p(e, t, n, r, i) {
     }), e
   }
 }
-async function _(e, t, n, r, i, s) {
+async function _(e, t, n, r, i, o) {
   try {
-    await l.uK(e, t, n, r, i, s), a.h.dispatch({
+    await l.uK(e, t, n, r, i, o), a.h.dispatch({
       type: "PREMIUM_PAYMENT_UPDATE_SUCCESS"
     })
   } catch (e) {

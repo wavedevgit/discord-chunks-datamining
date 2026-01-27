@@ -15,7 +15,7 @@ function i(e) {
   let t = null,
     n = null;
   return function() {
-    for (var i = arguments.length, a = Array(i), s = 0; s < i; s++) a[s] = arguments[s];
+    for (var i = arguments.length, a = Array(i), o = 0; o < i; o++) a[o] = arguments[o];
     return r(t, a) || (n = e(...a)), t = a, n
   }
 }

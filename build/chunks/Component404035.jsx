@@ -21,27 +21,27 @@ function f(e) {
       accountScopes: a
     } = e,
     f = [],
-    _ = (0, o.A)(n);
+    _ = (0, s.A)(n);
   return (a.includes(i.F.SDK_SOCIAL_LAYER) ? (t = _ ? u.intl.format(u.t.GxjwZM, {
     applicationName: n.name,
     learnMoreURL: l.A.getArticleURL(c.MVz.SOCIAL_LAYER_CONNECTIONS)
   }) : u.intl.format(u.t.DfBeUq, {
     learnMoreURL: l.A.getArticleURL(c.MVz.SOCIAL_LAYER_CONNECTIONS)
   }), f.push({
-    icon: s.$yI,
+    icon: o.$yI,
     text: _ ? u.intl.formatToPlainString(u.t.z9peav, {
       maxFriends: c.$4X
     }) : u.intl.formatToPlainString(u.t.WNKzo9, {
       maxFriends: c.$4X
     })
   }, {
-    icon: s.SYr,
+    icon: o.SYr,
     text: _ ? u.intl.string(u.t.daY6xj) : u.intl.string(u.t.j7peBh)
   }, {
-    icon: s._xR,
+    icon: o._xR,
     text: _ ? u.intl.string(u.t["/bdaNN"]) : u.intl.string(u.t["feD3+i"])
   }, {
-    icon: s.Zes,
+    icon: o.Zes,
     text: _ ? u.intl.string(u.t.mSqazC) : u.intl.string(u.t.YFFVM1)
   })) : a.includes(i.F.SDK_SOCIAL_LAYER_PRESENCE) && (t = _ ? u.intl.format(u.t.GxjwZM, {
     applicationName: n.name,
@@ -49,21 +49,21 @@ function f(e) {
   }) : u.intl.format(u.t.DfBeUq, {
     learnMoreURL: l.A.getArticleURL(c.MVz.SOCIAL_LAYER_CONNECTIONS)
   }), f.push({
-    icon: s.$yI,
+    icon: o.$yI,
     text: _ ? u.intl.formatToPlainString(u.t.z9peav, {
       maxFriends: c.$4X
     }) : u.intl.formatToPlainString(u.t.WNKzo9, {
       maxFriends: c.$4X
     })
   }, {
-    icon: s._xR,
+    icon: o._xR,
     text: _ ? u.intl.string(u.t["/bdaNN"]) : u.intl.string(u.t["feD3+i"])
   }, {
-    icon: s.Zes,
+    icon: o.Zes,
     text: _ ? u.intl.string(u.t.mSqazC) : u.intl.string(u.t.YFFVM1)
   })), 0 === f.length) ? null : (0, r.jsxs)("div", {
     className: d.b9,
-    children: [null != t ? (0, r.jsx)(s.Heading, {
+    children: [null != t ? (0, r.jsx)(o.Heading, {
       variant: "heading-sm/normal",
       className: d.a9,
       children: t

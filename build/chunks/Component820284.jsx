@@ -38,11 +38,11 @@ class f extends(r = Chunk64700.Component) {
     let {
       section: r,
       page: a,
-      object: s,
+      object: o,
       objectType: l,
       children: c
-    } = this.props, u = this.mergeLocation(e.location, this.getLocation(a, r, s, l)), d = this.getContext(u, null != (t = this._loadDate) ? t : e.loadDate, null != (n = this._loadId) ? n : e.loadId);
-    return (0, i.jsx)(o.AnalyticsContext.Provider, {
+    } = this.props, u = this.mergeLocation(e.location, this.getLocation(a, r, o, l)), d = this.getContext(u, null != (t = this._loadDate) ? t : e.loadDate, null != (n = this._loadId) ? n : e.loadId);
+    return (0, i.jsx)(s.AnalyticsContext.Provider, {
       value: d,
       children: c
     })
@@ -51,7 +51,7 @@ class f extends(r = Chunk64700.Component) {
     let {
       context: e
     } = this.props;
-    return null != e ? this.renderProvider(e) : (0, i.jsx)(o.AnalyticsContext.Consumer, {
+    return null != e ? this.renderProvider(e) : (0, i.jsx)(s.AnalyticsContext.Consumer, {
       children: e => this.renderProvider(e)
     })
   }
@@ -63,7 +63,7 @@ class f extends(r = Chunk64700.Component) {
       location: e,
       loadDate: t,
       loadId: n
-    }))), null != e.loadId ? this._loadId = e.loadId : e.root && (this._loadId = (0, s.A)())
+    }))), null != e.loadId ? this._loadId = e.loadId : e.root && (this._loadId = (0, o.A)())
   }
 }
 u(f, "Pages", Chunk652215.liQ), u(f, "Sections", Chunk652215.JJy), u(f, "Objects", Chunk652215.ZSU), u(f, "ObjectTypes", Chunk652215.AnalyticsObjectTypes), u(f, "defaultProps", {

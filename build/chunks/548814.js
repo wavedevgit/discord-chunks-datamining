@@ -13,10 +13,10 @@ module.exports = function(e) {
       begin: "\\b(\\d+(_\\d+)*#[a-fA-F0-9]+(_[a-fA-F0-9]+)*|\\d+(_\\d+)*(\\.\\d+(_\\d+)*)?([eE][-+]?\\d+)?)",
       relevance: 0
     },
-    s = {
+    o = {
       begin: "fun\\s+" + t + "/\\d+"
     },
-    o = {
+    s = {
       begin: n + "\\(",
       end: "\\)",
       returnBegin: true,
@@ -108,11 +108,11 @@ module.exports = function(e) {
       end: "end",
       keywords: r
     };
-  h.contains = [i, s, e.inherit(e.APOS_STRING_MODE, {
+  h.contains = [i, o, e.inherit(e.APOS_STRING_MODE, {
     className: ""
-  }), h, o, _, p, e.QUOTE_STRING_MODE, a, l, c, u, d, f];
-  let m = [i, s, h, o, _, p, e.QUOTE_STRING_MODE, a, l, c, u, d, f];
-  o.contains[1].contains = m, l.contains = m, d.contains[1].contains = m;
+  }), h, s, _, p, e.QUOTE_STRING_MODE, a, l, c, u, d, f];
+  let m = [i, o, h, s, _, p, e.QUOTE_STRING_MODE, a, l, c, u, d, f];
+  s.contains[1].contains = m, l.contains = m, d.contains[1].contains = m;
   let g = ["-module", "-record", "-undef", "-export", "-ifdef", "-ifndef", "-author", "-copyright", "-doc", "-moduledoc", "-vsn", "-import", "-include", "-include_lib", "-compile", "-define", "-else", "-endif", "-file", "-behaviour", "-behavior", "-spec", "-on_load", "-nifs"],
     E = {
       className: "params",

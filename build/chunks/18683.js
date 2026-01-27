@@ -29,7 +29,7 @@ function d() {
 }
 
 function f(e) {
-  return (0, s.mj)({
+  return (0, o.mj)({
     kind: "user",
     name: e.id,
     defaultConfig: {
@@ -57,7 +57,7 @@ class _ extends Chunk439372.A {
   }
   _terminate() {}
   constructor(...e) {
-    super(...e), c(this, "actions", {}), c(this, "stores", new Map().set(o.A, d))
+    super(...e), c(this, "actions", {}), c(this, "stores", new Map().set(s.A, d))
   }
 }
 let h = new _

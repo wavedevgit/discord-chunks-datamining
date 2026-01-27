@@ -14,12 +14,12 @@ require.d(exports, {
   Zq: () => H,
   e7: () => B,
   eN: () => et,
-  e_: () => X,
-  lo: () => M,
+  e_: () => Q,
+  lo: () => j,
   n$: () => z,
-  pF: () => F,
-  tB: () => j,
-  u1: () => Q,
+  pF: () => V,
+  tB: () => M,
+  u1: () => X,
   v3: () => K
 }), require("./896048.js"), require("./591487.js"), require("./727858.js"), require("./747238.js"), require("./812715.js"), require("./801541.js"), require("./733351.js");
 var Chunk889137 = require("./889137.js"),
@@ -72,13 +72,13 @@ let b = ["discordapp.com/gifts", "discord.com/gifts"],
   R = C(5, 3),
   P = "WUMP-?",
   D = [N, w, R, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-  x = new RegExp("^(".concat(P, ")?(").concat(D, ")$")),
-  L = "-";
-var j = function(e) {
+  L = new RegExp("^(".concat(P, ")?(").concat(D, ")$")),
+  x = "-";
+var M = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e
 }({});
-let M = (e, t) => i.Fr || i.v1 ? 0 : null != e || t ? 2 : 1,
-  k = e => 0 !== M(e);
+let j = (e, t) => i.Fr || i.v1 ? 0 : null != e || t ? 2 : 1,
+  k = e => 0 !== j(e);
 
 function U(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
@@ -95,10 +95,10 @@ function G(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   return e.replace(/[^A-Za-z0-9]/g, "")
 }
-let F = e => {
+let V = e => {
     var t;
     return (null == e ? true : e.type) === h.lAJ.CUSTOM_GIFT && (null == e || null == (t = e.embeds) ? true : t.length) === 1 && (null == e ? true : e.embeds[0].type) === h.Auw.GIFT
   },
@@ -106,8 +106,8 @@ let F = e => {
     let t;
     if (null == e) return [];
     let n = new Set;
-    for (; null != (t = A.exec(e)) && n.size < O;) n.add(V(t[1]));
-    for (; null != (t = S.exec(e)) && n.size < O;) n.add(V(t[t.length - 1]));
+    for (; null != (t = A.exec(e)) && n.size < O;) n.add(F(t[1]));
+    for (; null != (t = S.exec(e)) && n.size < O;) n.add(F(t[t.length - 1]));
     return Array.from(n)
   };
 
@@ -144,12 +144,12 @@ async function Y(e) {
     throw u.default.track(h.HAw.GIFT_CODE_RESOLVED, {
       resolved: false,
       gift_code: e
-    }), new s.A(t)
+    }), new o.A(t)
   }
 }
 
 function W(e, t) {
-  u.default.track(h.HAw.GIFT_CODE_COPIED, y({}, (0, o.A)(t, false, false), e.analyticsData))
+  u.default.track(h.HAw.GIFT_CODE_COPIED, y({}, (0, s.A)(t, false, false), e.analyticsData))
 }
 
 function K(e, t, n) {
@@ -157,10 +157,10 @@ function K(e, t, n) {
     error: r,
     accepted: i,
     accepting: a,
-    opened: s,
-    isCustomGift: o
+    opened: o,
+    isCustomGift: s
   } = n;
-  return null == r && (i || a || null == e) ? !o || s || i || a ? i && (t.isSubscription || null != e) ? h.frR.SUCCESS : h.frR.CONFIRM : h.frR.OPEN : h.frR.ERROR
+  return null == r && (i || a || null == e) ? !s || o || i || a ? i && (t.isSubscription || null != e) ? h.frR.SUCCESS : h.frR.CONFIRM : h.frR.OPEN : h.frR.ERROR
 }
 
 function z(e, t, n) {
@@ -224,20 +224,20 @@ function Z(e) {
   })).otherwise(() => g.intl.string(g.t["5ayf7w"]))
 }
 
-function X(e) {
+function Q(e) {
   let {
     step: t,
     sku: n,
     libraryApplication: r,
     error: i,
     accepted: a,
-    accepting: s,
-    onGoToLibrary: o,
+    accepting: o,
+    onGoToLibrary: s,
     subscriptionPlan: l = null
   } = e;
   switch (t) {
     case h.frR.ERROR:
-      return Q(r, i, a, s, o);
+      return X(r, i, a, o, s);
     case h.frR.SUCCESS:
       if (null != l) return Z(l);
       return g.intl.formatToPlainString(g.t["3CPsbo"], {
@@ -258,12 +258,12 @@ function X(e) {
   }
 }
 
-function Q(e, t, n, r, i) {
+function X(e, t, n, r, i) {
   let a = n || r ? true : e,
-    s = g.intl.format(g.t["5zyz9y"], {
+    o = g.intl.format(g.t["5zyz9y"], {
       onGoToLibrary: i
     });
-  return null != a ? s : null == t ? null : et(t, c.default.getCurrentUser())
+  return null != a ? o : null == t ? null : et(t, c.default.getCurrentUser())
 }
 
 function J(e, t, n) {
@@ -274,10 +274,10 @@ function J(e, t, n) {
 }
 
 function $(e) {
-  let t = e.trim().split("/").pop().match(x);
+  let t = e.trim().split("/").pop().match(L);
   if (null == t) return null;
   let [n, r, i] = t;
-  return null == i ? null : i.replace(RegExp(L, "g"), "")
+  return null == i ? null : i.replace(RegExp(x, "g"), "")
 }
 let ee = (e, t) => (0, a.bG)([l.A], () => {
   if (null == e || !t) return null;

@@ -8,7 +8,7 @@ var Chunk972347 = require("./972347.js"),
   Chunk205693 = require("./205693.js"),
   Chunk731854 = require("./731854.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   return null
 }
 
@@ -178,6 +178,6 @@ class c extends Chunk972347.A {
   }
   setNoiseCancellationEnableStats(e) {}
   constructor(...e) {
-    super(...e), s(this, "Video", o), s(this, "Camera", l)
+    super(...e), o(this, "Video", s), o(this, "Camera", l)
   }
 }

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 298481, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 298481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
 });
@@ -16,15 +15,15 @@ var Chunk627968 = require("./627968.js"),
 function d(e) {
   let {
     channelId: t
-  } = e, n = (0, c.b8)(), d = (0, c.i2)(), f = (0, l.W)(u.intl.string(u.t.KPGVWl), u.intl.string(u.t["9KiIz6"])), p = u.intl.string(u.t["/nicWo"]), _ = i.useCallback(() => {
-    s.A.showAgeVerificationGetStartedModal({
-      entryPoint: o.q1.SYSTEM_DM_RETRY_BUTTON
-    }), (0, o.UT)(o.Im.RETRY, t)
+  } = e, n = (0, c.b8)(), d = (0, c.i2)(), p = (0, o.W)(u.intl.string(u.t.KPGVWl), u.intl.string(u.t["9KiIz6"])), m = u.intl.string(u.t["/nicWo"]), f = i.useCallback(() => {
+    a.A.showAgeVerificationGetStartedModal({
+      entryPoint: s.q1.SYSTEM_DM_RETRY_BUTTON
+    }), (0, s.UT)(s.Im.RETRY, t)
   }, [t]);
-  return (0, r.jsx)(a.Button, {
+  return (0, r.jsx)(l.Button, {
     variant: "primary",
-    text: n ? f : p,
-    onClick: _,
+    text: n ? p : m,
+    onClick: f,
     disabled: !d
   })
 }

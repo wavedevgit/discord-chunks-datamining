@@ -11,14 +11,14 @@ var Chunk64700 = require("./64700.js"),
   Chunk927813 = require("./927813.js");
 
 function l(e) {
-  return Math.floor(e / o.A.Millis.SECOND) * o.A.Millis.SECOND
+  return Math.floor(e / s.A.Millis.SECOND) * s.A.Millis.SECOND
 }
 
 function c() {
   let {
     hovered: e,
     isAppFocused: t = true
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, [n, c] = r.useState(() => l(Date.now())), u = (0, i.bG)([s.A], () => s.A.useReducedMotion), d = !t || u && !e, f = d ? 15 * o.A.Millis.SECOND : o.A.Millis.SECOND;
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, [n, c] = r.useState(() => l(Date.now())), u = (0, i.bG)([o.A], () => o.A.useReducedMotion), d = !t || u && !e, f = d ? 15 * s.A.Millis.SECOND : s.A.Millis.SECOND;
   return r.useEffect(() => {
     let e = new a.IX;
     return e.start(f, () => {

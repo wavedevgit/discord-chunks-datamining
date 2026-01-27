@@ -54,12 +54,12 @@ module.exports = function(e) {
       }],
       relevance: 0
     }],
-    s = {
+    o = {
       className: "symbol",
       begin: "^(NOTE|TIP|IMPORTANT|WARNING|CAUTION):\\s+",
       relevance: 10
     },
-    o = {
+    s = {
       className: "bullet",
       begin: "^(\\*+|-+|\\.+|[^\\n]+?::)\\s+"
     };
@@ -115,7 +115,7 @@ module.exports = function(e) {
         relevance: 0
       }],
       relevance: 10
-    }, o, s, ...r, ...i, ...a, {
+    }, s, o, ...r, ...i, ...a, {
       className: "string",
       variants: [{
         begin: "``.+?''"

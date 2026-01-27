@@ -1,18 +1,17 @@
-/** Chunk was on web.js **/
-/** chunk id: 595042, original params: e (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 595042, original params: t (module,exports,require) **/
 "use strict";
-var t = "-";
 module.exports = {
-  encode: function(e, n, r) {
-    return e + t + n + t + r
+  encode: function(t, e, r) {
+    return t + "-" + e + "-" + r
   },
-  decode: function(e) {
-    var n = e.split(t).reverse(),
-      r = n[0],
-      i = n[1];
+  decode: function(t) {
+    var e = t.split("-").reverse(),
+      r = e[0],
+      n = e[1];
     return {
-      blockKey: n.slice(2).reverse().join(t),
-      decoratorKey: parseInt(i, 10),
+      blockKey: e.slice(2).reverse().join("-"),
+      decoratorKey: parseInt(n, 10),
       leafKey: parseInt(r, 10)
     }
   }

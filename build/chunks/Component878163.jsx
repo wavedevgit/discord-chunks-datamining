@@ -67,7 +67,7 @@ function O(e) {
   } = e, n = y(e, ["currentGame"]), [a, u] = i.useState(false);
   return (0, c.l0)(() => {
     a && l.A.clearPTTAdminWarning()
-  }), (0, r.jsx)(s.aFV, E({
+  }), (0, r.jsx)(o.aFV, E({
     size: "md",
     title: m.intl.string(m.t.eotlXE),
     subtitle: m.intl.formatToPlainString(m.t.Lw6KXV, {
@@ -79,7 +79,7 @@ function O(e) {
         n.onClose(), window.open(_.A.getArticleURL(h.MVz.PUSH_TO_TALK_ADMINISTRATOR_MODE), "_blank")
       }
     }],
-    actionBarInput: (0, r.jsx)(o.Checkbox, {
+    actionBarInput: (0, r.jsx)(s.Checkbox, {
       checked: a,
       onChange: e => u(e),
       label: m.intl.string(m.t["5E9SB9"]),
@@ -89,16 +89,16 @@ function O(e) {
 }
 
 function v() {
-  let [e, t] = (0, a.yK)([u.Ay], () => [u.Ay.canShowAdminWarning, u.Ay.getVisibleGame()], []), n = (0, a.bG)([p.A], () => p.A.isConnected(), []), s = (0, a.bG)([f.A], () => f.A.getMode() === h.TBI.PUSH_TO_TALK, []), l = null != t && t.elevated && n && s && e, c = i.useRef(null);
+  let [e, t] = (0, a.yK)([u.Ay], () => [u.Ay.canShowAdminWarning, u.Ay.getVisibleGame()], []), n = (0, a.bG)([p.A], () => p.A.isConnected(), []), o = (0, a.bG)([f.A], () => f.A.getMode() === h.TBI.PUSH_TO_TALK, []), l = null != t && t.elevated && n && o && e, c = i.useRef(null);
   return i.useEffect(() => {
-    if (!(0, d.yA)(u.Ay)) return l ? c.current = (0, o.qfG)(e => (0, r.jsx)(O, E({
+    if (!(0, d.yA)(u.Ay)) return l ? c.current = (0, s.qfG)(e => (0, r.jsx)(O, E({
       currentGame: t
     }, e))) : e(), () => {
       e()
     };
 
     function e() {
-      null !== c.current && ((0, o.OoC)(c.current), c.current = null)
+      null !== c.current && ((0, s.OoC)(c.current), c.current = null)
     }
   }, [t, l]), null
 }

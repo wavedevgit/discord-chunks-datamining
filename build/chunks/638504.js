@@ -3,18 +3,18 @@
 "use strict";
 require.d(exports, {
   V: () => l,
-  e: () => o
+  e: () => s
 });
 var Chunk852015 = require("./852015.js"),
   Chunk82180 = require("./82180.js"),
   Chunk679314 = require("./679314.js");
-let s = {
+let o = {
   readUnknownField: true,
   readerFactory: e => new l(e)
 };
 
-function o(e) {
-  return e ? Object.assign(Object.assign({}, s), e) : s
+function s(e) {
+  return e ? Object.assign(Object.assign({}, o), e) : o
 }
 class l {
   constructor(e, t) {

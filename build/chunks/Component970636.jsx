@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk446080 = require("./446080.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk267102 = require("./267102.jsx"),
@@ -81,7 +81,7 @@ function b(e) {
     {
       enabled: n,
       cameraUnavailable: a,
-      onChange: s,
+      onChange: o,
       onCameraUnavailable: d,
       hasPermission: p,
       children: _,
@@ -89,12 +89,12 @@ function b(e) {
       join: m
     } = e,
     g = (0, c.Us)(),
-    E = a ? () => d() : () => s(!e.enabled, g),
+    E = a ? () => d() : () => o(!e.enabled, g),
     {
       Component: y,
       play: b,
       events: O
-    } = (0, o.K)(m || n ? "disable" : "enable");
+    } = (0, s.K)(m || n ? "disable" : "enable");
   i.useEffect(() => () => b(), [n, b]);
   let v = m ? l.npA : g === f.BRT.POPOUT ? n ? l.npA : l.OCo : y;
   return (0, r.jsx)(r.Fragment, {
@@ -118,7 +118,7 @@ function O(e) {
     join: n,
     channel: i,
     onChange: a,
-    onCameraUnavailable: o,
+    onCameraUnavailable: s,
     cameraUnavailable: l,
     hasPermission: c,
     className: u,
@@ -132,7 +132,7 @@ function O(e) {
     join: n,
     channel: i,
     onChange: a,
-    onCameraUnavailable: o,
+    onCameraUnavailable: s,
     cameraUnavailable: l,
     hasPermission: c,
     channelLimitReached: f,
@@ -142,12 +142,12 @@ function O(e) {
         unavailable: t,
         onMouseEnter: i,
         onMouseLeave: a,
-        isActive: o
+        isActive: s
       } = e, l = E(e, ["unavailable", "onMouseEnter", "onMouseLeave", "isActive"]);
       return (0, r.jsx)(v, g(h({}, l, O), {
-        color: I(o),
+        color: I(s),
         caretColor: A(),
-        isActive: o,
+        isActive: s,
         onMouseEnter: e => {
           var t;
           null == (t = O.onMouseEnter) || t.call(O, e), null == i || i()
@@ -156,7 +156,7 @@ function O(e) {
           var t;
           null == (t = O.onMouseLeave) || t.call(O, e), null == a || a()
         },
-        className: s()(u, {
+        className: o()(u, {
           [p.t]: t
         }),
         onPopoutClick: y,

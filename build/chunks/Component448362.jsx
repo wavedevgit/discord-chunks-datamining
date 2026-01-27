@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js");
 require("./14115.js");
 var Chunk305003 = require("./305003.js"),
@@ -63,25 +63,25 @@ let _ = () => (0, r.jsx)("img", {
     }, [D, C, T]), (0, i.useEffect)(() => {
       N && !D && C(false)
     }, [D, N]);
-    let x = D || T,
-      L = T ? null : a,
-      [j, M] = (0, i.useState)(null),
+    let L = D || T,
+      x = T ? null : a,
+      [M, j] = (0, i.useState)(null),
       k = (0, i.useRef)(null),
       U = (0, i.useCallback)(() => {
-        k.current = null, M(null)
+        k.current = null, j(null)
       }, []),
       G = (0, i.useCallback)(e => {
-        let t = j === k.current;
-        e > 0 && ("earn" !== j || !t) && M("earn")
-      }, [M, j]),
-      V = {
-        currentAnimationType: j,
+        let t = M === k.current;
+        e > 0 && ("earn" !== M || !t) && j("earn")
+      }, [j, M]),
+      F = {
+        currentAnimationType: M,
         animationTypeRef: k,
         onSetAnimationDurationMS: P
       };
-    return (0, r.jsx)(o.DUT, {
-      onClick: x ? true : E,
-      className: s()(d.vk, {
+    return (0, r.jsx)(s.DUT, {
+      onClick: L ? true : E,
+      className: o()(d.vk, {
         [d.r9]: b
       }),
       id: null != n ? n : h,
@@ -90,20 +90,20 @@ let _ = () => (0, r.jsx)("img", {
         onMouseEnter: b ? true : () => I(true),
         onMouseLeave: b ? true : () => I(false),
         ref: t,
-        className: s()(d.kL, S, v, {
-          [d.En]: x,
+        className: o()(d.kL, S, v, {
+          [d.En]: L,
           [d.dA]: O,
           [d.r9]: b
         }),
         children: [(0, r.jsx)("div", {
-          className: s()(d.hr, x ? d.nr : true),
-          children: (0, r.jsx)(u.Ay, p({}, V))
+          className: o()(d.hr, L ? d.nr : true),
+          children: (0, r.jsx)(u.Ay, p({}, F))
         }), (0, r.jsx)(c.A, {
-          value: L,
+          value: x,
           onValueChange: G,
           onValueReached: U,
           targetTotalCounterTime: R,
-          className: x ? d.F : true
+          className: L ? d.F : true
         }), g && (0, r.jsx)(_, {})]
       })
     })

@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
-/** chunk id: 675722, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 675722, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => a
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk143413 = require("./143413.js"),
   Chunk672834 = require("./672834.jsx");
 
-function s(e) {
+function a(e) {
   let {
     message: t,
     channel: n,
-    compact: s,
-    disableInteraction: o
+    compact: a,
+    disableInteraction: s
   } = e;
-  return (0, i.A)(t) ? (0, r.jsx)(a.A, {
+  return (0, i.A)(t) ? (0, r.jsx)(l.A, {
     message: t,
     channel: n,
-    compact: s,
-    disableInteraction: o
+    compact: a,
+    disableInteraction: s
   }) : null
 }

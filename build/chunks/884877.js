@@ -12,14 +12,14 @@ var Chunk440703 = require("./440703.js"),
 let l = e => e.rewardsConfig.rewards.filter(e => e.type === r.l.FRACTIONAL_PREMIUM),
   c = e => {
     let t = l(e).flatMap(e => Array(e.quantity).fill(e.skuId)),
-      n = (0, s.iv)(t),
+      n = (0, o.iv)(t),
       r = {
-        days: o.t.fYmirx,
-        hours: o.t["C3RO+g"],
-        minutes: o.t.r77oHc
+        days: s.t.fYmirx,
+        hours: s.t["C3RO+g"],
+        minutes: s.t.r77oHc
       },
       c = (0, i.Tf)(0, n * a.A.Millis.HOUR);
-    return o.intl.formatToPlainString(o.t["4SqnVD"], {
+    return s.intl.formatToPlainString(s.t["4SqnVD"], {
       time: (0, i.uN)(c, r)
     })
   }

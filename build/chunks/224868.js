@@ -41,8 +41,8 @@ function g(e, t, n, r) {
 }
 
 function E(e, t, n, r, i) {
-  let [a, s] = e.slice(1).split("#", 2), l = null != t ? d.A.getGuild(t) : null;
-  if (i && null == s && null != l) {
+  let [a, o] = e.slice(1).split("#", 2), l = null != t ? d.A.getGuild(t) : null;
+  if (i && null == o && null != l) {
     for (let e of u.A.getSortedRoles(l.id))
       if (a === e.name) return {
         type: "roleMention",
@@ -53,17 +53,17 @@ function E(e, t, n, r, i) {
       }
   }
   if (r) {
-    let e = null != n ? o.A.getChannel(n) : null;
+    let e = null != n ? s.A.getChannel(n) : null;
     if (null == e) return null;
     let r = (e.isPrivate() ? e.recipients : c.Ay.getMembers(t).map(e => {
       let {
         userId: t
       } = e;
       return t
-    })).map(e => f.default.getUser(e)).filter(e => true !== e && y(a, s, e));
+    })).map(e => f.default.getUser(e)).filter(e => true !== e && y(a, o, e));
     if (1 === r.length) {
       let e = r[0];
-      if (y(a, s, e, {
+      if (y(a, o, e, {
           requireExact: true
         })) return {
         type: "userMention",
@@ -110,7 +110,7 @@ function b(e, t) {
             text: ""
           }]
         }
-    } let a = s.A.getActiveJoinedThreadsForGuild(t);
+    } let a = o.A.getActiveJoinedThreadsForGuild(t);
   for (let e of _.default.keys(a))
     for (let t of _.default.keys(a[e])) {
       let {
@@ -131,9 +131,9 @@ function O(e, t) {
   let n = a.Ay.EMOJI_NAME_RE.exec(e);
   if (null == n) return null;
   let r = n[1],
-    s = i.Ay.getDisambiguatedEmojiContext(t).getCustomEmoji();
-  if (null != s && r in s) {
-    let e = s[r];
+    o = i.Ay.getDisambiguatedEmojiContext(t).getCustomEmoji();
+  if (null != o && r in o) {
+    let e = o[r];
     return {
       type: "customEmoji",
       emoji: {

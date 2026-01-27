@@ -8,8 +8,8 @@ require.d(exports, {
 var Chunk761799 = require("./761799.js"),
   Chunk643479 = require("./643479.js"),
   Chunk298003 = require("./298003.js");
-let s = 0x66747970,
-  o = 0x69707270,
+let o = 0x66747970,
+  s = 0x69707270,
   l = 0x6d657461,
   c = 0x696c6f63,
   u = 0x69696e66,
@@ -30,12 +30,12 @@ function g(e, t) {
     } = E(e, t);
   if (_ < r) return;
   let m = e.getUint32(t + n);
-  if (m === s) return P(e, h, _);
-  if (m === o) return D(e, t, h, _);
-  if (m === f) return x(e, t, h, _);
-  if (m === p) return L(e, h, _);
+  if (m === o) return P(e, h, _);
+  if (m === s) return D(e, t, h, _);
+  if (m === f) return L(e, t, h, _);
+  if (m === p) return x(e, h, _);
   let g = e.getUint8(h);
-  return m === l ? M(e, t, h + i, _) : m === c ? (0, a.N)(e, g, h + i, _) : m === u ? U(e, t, g, h + i, _) : m === d ? V(e, t, g, h + i, _) : {
+  return m === l ? j(e, t, h + i, _) : m === c ? (0, a.N)(e, g, h + i, _) : m === u ? U(e, t, g, h + i, _) : m === d ? F(e, t, g, h + i, _) : {
     type: true,
     length: _
   }
@@ -46,15 +46,15 @@ function E(e, t) {
     r = 4,
     i = 8,
     a = 12,
-    s = e.getUint32(t);
-  return y(s) ? {
+    o = e.getUint32(t);
+  return y(o) ? {
     length: e.byteLength - t,
     contentOffset: t + n + r
-  } : b(s) && O(e, t) ? {
+  } : b(o) && O(e, t) ? {
     length: e.getUint32(t + a),
     contentOffset: t + n + r + i
   } : {
-    length: s,
+    length: o,
     contentOffset: t + n + r
   }
 }
@@ -160,7 +160,7 @@ function D(e, t, n, r) {
   }
 }
 
-function x(e, t, n, r) {
+function L(e, t, n, r) {
   return {
     type: "ipco",
     properties: k(e, n, r - (n - t)),
@@ -168,15 +168,15 @@ function x(e, t, n, r) {
   }
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   return {
     type: "colr",
-    icc: j(e, t),
+    icc: M(e, t),
     length: n
   }
 }
 
-function j(e, t) {
+function M(e, t) {
   let n = 4,
     r = (0, i.hT)(e, t, n);
   if ("prof" === r || "rICC" === r) return {
@@ -187,7 +187,7 @@ function j(e, t) {
   }
 }
 
-function M(e, t, n, r) {
+function j(e, t, n, r) {
   return {
     type: "meta",
     subBoxes: k(e, n + 3, r - (n + 3 - t)),
@@ -228,11 +228,11 @@ function G(e, t) {
   }
 }
 
-function V(e, t, n, r, a) {
+function F(e, t, n, r, a) {
   r += 3;
-  let s = {
+  let o = {
     type: "infe",
     length: a
   };
-  return (0 === n || 1 === n) && (s.itemId = e.getUint16(r), r += 2, s.itemProtectionIndex = e.getUint16(r), r += 2, s.itemName = (0, i.BD)(e, r), r += s.itemName.length + 1), n >= 2 && (2 === n ? (s.itemId = e.getUint16(r), r += 2) : 3 === n && (s.itemId = e.getUint32(r), r += 4), s.itemProtectionIndex = e.getUint16(r), r += 2, s.itemType = e.getUint32(r), r += 4, s.itemName = (0, i.BD)(e, r), r += s.itemName.length + 1, s.itemType === h ? (s.contentType = (0, i.BD)(e, r), t + a > (r += s.contentType.length + 1) && (s.contentEncoding = (0, i.BD)(e, r), r += s.contentEncoding.length + 1)) : s.itemType === m && (s.itemUri = (0, i.BD)(e, r), r += s.itemUri.length + 1)), s
+  return (0 === n || 1 === n) && (o.itemId = e.getUint16(r), r += 2, o.itemProtectionIndex = e.getUint16(r), r += 2, o.itemName = (0, i.BD)(e, r), r += o.itemName.length + 1), n >= 2 && (2 === n ? (o.itemId = e.getUint16(r), r += 2) : 3 === n && (o.itemId = e.getUint32(r), r += 4), o.itemProtectionIndex = e.getUint16(r), r += 2, o.itemType = e.getUint32(r), r += 4, o.itemName = (0, i.BD)(e, r), r += o.itemName.length + 1, o.itemType === h ? (o.contentType = (0, i.BD)(e, r), t + a > (r += o.contentType.length + 1) && (o.contentEncoding = (0, i.BD)(e, r), r += o.contentEncoding.length + 1)) : o.itemType === m && (o.itemUri = (0, i.BD)(e, r), r += o.itemUri.length + 1)), o
 }

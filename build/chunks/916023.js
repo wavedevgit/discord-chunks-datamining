@@ -2,7 +2,7 @@
 /** chunk id: 916023, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Jw: () => s,
+  Jw: () => o,
   kt: () => i,
   xD: () => a
 });
@@ -47,7 +47,7 @@ function a(e) {
   }).enabled
 }
 
-function s(e) {
+function o(e) {
   let {
     location: t
   } = e;

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 488331, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 488331, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,36 +14,36 @@ var Chunk793574 = require("./793574.js"),
   Chunk96440 = require("./96440.jsx"),
   Chunk768349 = require("./768349.js");
 
-function f(e) {
+function p(e) {
   let {
     applicationId: t,
     customId: n,
-    referrerId: f,
-    linkId: p,
-    message: _
+    referrerId: p,
+    linkId: m,
+    message: f
   } = e, {
-    analyticsLocations: h
-  } = (0, a.Ay)(i.A.ACTIVITY_BOOKMARK), [m] = (0, l.A)([t]), g = null != m && (0, s.Ag)(m), {
-    data: E,
-    error: y
-  } = (0, c.K)(null == m ? true : m.id, p);
-  return null == m || false === g ? null : null != p && null == y && null != E ? (0, r.jsx)(a.f5, {
-    value: h,
+    analyticsLocations: g
+  } = (0, l.Ay)(i.A.ACTIVITY_BOOKMARK), [h] = (0, o.A)([t]), _ = null != h && (0, a.Ag)(h), {
+    data: b,
+    error: A
+  } = (0, c.K)(null == h ? true : h.id, m);
+  return null == h || false === _ ? null : null != m && null == A && null != b ? (0, r.jsx)(l.f5, {
+    value: g,
     children: (0, r.jsx)(u.W, {
-      application: m,
+      application: h,
       customId: n,
-      customLink: E,
-      referrerId: f,
-      message: _
+      customLink: b,
+      referrerId: p,
+      message: f
     })
-  }) : (0, r.jsx)(a.f5, {
-    value: h,
-    children: (0, r.jsx)(o.W, {
-      app: m,
+  }) : (0, r.jsx)(l.f5, {
+    value: g,
+    children: (0, r.jsx)(s.W, {
+      app: h,
       linkType: d.J.ACTIVITY,
       activityCustomId: n,
-      activityReferrerId: f,
-      message: _
+      activityReferrerId: p,
+      message: f
     })
   })
 }

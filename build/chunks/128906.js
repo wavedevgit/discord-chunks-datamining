@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 128906, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 128906, original params: e,t,n (module,exports,require) **/
 module.exports = {
   uW: "section_efc71f",
   R_: "heading_efc71f",

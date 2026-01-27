@@ -1,5 +1,5 @@
-/** Chunk was on 21940 **/
-/** chunk id: 535790, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 51901 **/
+/** chunk id: 535790, original params: e,t,n (module,exports,require) **/
 module.exports = {
   yJ: "links__7aac8",
   xE: "bullet__7aac8",

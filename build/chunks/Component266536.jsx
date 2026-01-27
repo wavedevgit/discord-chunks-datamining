@@ -18,13 +18,13 @@ let p = {
   selectMode: Chunk374803.SB.TAB_ONLY,
   stores: [Chunk696451.Ay],
   matches(e, t, n, r, i) {
-    var s;
+    var o;
     let {
       enabled: u
-    } = (0, o.sA)("MentionSuggestionAutocompletes", {
+    } = (0, s.sA)("MentionSuggestionAutocompletes", {
       autoTrackExposure: true
     });
-    return !(!u || e.isDM()) && !!c.ng.getSetting() && !!(null == (s = i.chatInputType.autocomplete) ? true : s.mentionSuggestions) && i.mentions.user !== d.Vf.DENY && null != i.currentFullWord && !(i.currentFullWord.length < l.$) && null == a.A.getActiveCommand(e.id) && true
+    return !(!u || e.isDM()) && !!c.ng.getSetting() && !!(null == (o = i.chatInputType.autocomplete) ? true : o.mentionSuggestions) && i.mentions.user !== d.Vf.DENY && null != i.currentFullWord && !(i.currentFullWord.length < l.$) && null == a.A.getActiveCommand(e.id) && true
   },
   queryResults(e, t, n, r) {
     var i;
@@ -46,9 +46,9 @@ let p = {
       onClick: u
     } = e, {
       suggestionDesign: d
-    } = (0, o.sA)("MentionSuggestionAutocompletes", {
+    } = (0, s.sA)("MentionSuggestionAutocompletes", {
       autoTrackExposure: false
-    }), f = t.map((e, t) => (0, r.jsx)(s.Ay.UserSuggestion, {
+    }), f = t.map((e, t) => (0, r.jsx)(o.Ay.UserSuggestion, {
       guildId: a.guild_id,
       onClick: u,
       onHover: c,
@@ -76,9 +76,9 @@ let p = {
       },
       index: i,
       options: a,
-      channel: s
-    } = e, o = t[i];
-    return null != o && a.insertText(n + (0, f.JB)(o.user, s, a.hidePersonalInformation) + r, n + (0, f.z$)(o.user) + r, {
+      channel: o
+    } = e, s = t[i];
+    return null != s && a.insertText(n + (0, f.JB)(s.user, o, a.hidePersonalInformation) + r, n + (0, f.z$)(s.user) + r, {
       replaceFullWord: true
     }), {
       type: d.kc.MENTION

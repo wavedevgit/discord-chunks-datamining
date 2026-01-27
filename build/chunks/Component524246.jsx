@@ -9,7 +9,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk106778 = require("./106778.js"),
   Chunk851110 = require("./851110.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -52,7 +52,7 @@ let d = 50,
   p = 100;
 
 function _(e, t) {
-  return t = null != t ? t : 1, u(l({}, s.Mw), {
+  return t = null != t ? t : 1, u(l({}, o.Mw), {
     position: {
       type: "static-random",
       minValue: {
@@ -85,22 +85,22 @@ let h = function(e) {
   let {
     confettiTarget: t,
     confettiCanvas: n,
-    confettiVelocityMultiplier: o,
+    confettiVelocityMultiplier: s,
     sprites: l,
     colors: c
   } = e, [u, h] = i.useState(null), m = (0, a.f9)(n, u), [g, E] = i.useState(false);
   return i.useEffect(() => {
     let e = Array(f).fill(0);
     return null != t && m.isReady && !g && (e = e.map((n, r) => setTimeout(() => {
-      r === e.length - 1 && E(true), m.createMultipleConfetti(_(t.getBoundingClientRect(), o), d)
+      r === e.length - 1 && E(true), m.createMultipleConfetti(_(t.getBoundingClientRect(), s), d)
     }, r * p))), () => {
       for (let t of e) clearTimeout(t)
     }
-  }, [m, t, g, o]), (0, r.jsx)(a.K_, {
+  }, [m, t, g, s]), (0, r.jsx)(a.K_, {
     ref: h,
-    sprites: null != l ? l : s.uI,
-    colors: null != c ? c : s._t,
-    spriteWidth: s.wn,
-    spriteHeight: s.wn
+    sprites: null != l ? l : o.uI,
+    colors: null != c ? c : o._t,
+    spriteWidth: o.wn,
+    spriteHeight: o.wn
   })
 }

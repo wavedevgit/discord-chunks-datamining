@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 574660, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 574660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => b,
-  t: () => O
+  F: () => y,
+  t: () => v
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -22,81 +21,81 @@ var Chunk64700 = require("./64700.js"),
   Chunk488995 = require("./488995.js"),
   Chunk985018 = require("./985018.jsx");
 
-function y(e) {
+function A(e) {
   let {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: s
-  } = e, o = (0, _.Ie)({
+    integrationTypesConfig: a
+  } = e, s = (0, f.Ie)({
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: s
-  }), l = (0, i.bG)([f.A], () => {
+    integrationTypesConfig: a
+  }), o = (0, i.bG)([p.A], () => {
     var e;
-    return null != (e = f.A.getGuildId()) ? e : true
-  }), p = (0, i.bG)([c.A, u.A, d.A], () => {
+    return null != (e = p.A.getGuildId()) ? e : true
+  }), m = (0, i.bG)([c.A, u.A, d.A], () => {
     let e = c.A.getChannel(d.A.getChannelId());
-    return null != e && (e.isPrivate() || u.A.can(m.xBc.SEND_MESSAGES, e))
-  }, []), h = (0, a.V1)(e, l) && p, g = t || h;
+    return null != e && (e.isPrivate() || u.A.can(h.xBc.SEND_MESSAGES, e))
+  }, []), g = (0, l.V1)(e, o) && m;
   return {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: s,
-    canViewApp: g,
-    canOpenAppLauncher: h,
-    isInstallable: o,
-    selectedGuildId: l
+    integrationTypesConfig: a,
+    canViewApp: t || g,
+    canOpenAppLauncher: g,
+    isInstallable: s,
+    selectedGuildId: o
   }
 }
 
-function b(e, t) {
+function y(e, t) {
   let {
     canViewApp: n,
     canOpenAppLauncher: i,
-    isInstallable: a,
+    isInstallable: l,
     customInstallUrl: c,
     installParams: u,
     integrationTypesConfig: d,
-    selectedGuildId: f
-  } = y(e);
+    selectedGuildId: p
+  } = A(e);
   return r.useMemo(() => n ? () => {
-    (null == t || t(), i) ? (0, s.hg)(e.id) : (0, o.transitionToGlobalDiscovery)({
-      tab: g.GlobalDiscoveryTab.APPS,
+    (null == t || t(), i) ? (0, a.hg)(e.id) : (0, s.transitionToGlobalDiscovery)({
+      tab: _.GlobalDiscoveryTab.APPS,
       applicationId: e.id,
       newSessionState: {
         entrypoint: {
-          name: l.sW.APPLICATION_MESSAGE_EMBED
+          name: o.sW.APPLICATION_MESSAGE_EMBED
         }
       }
     })
-  } : a ? () => {
-    null == t || t(), (0, p.o)({
+  } : l ? () => {
+    null == t || t(), (0, m.o)({
       applicationId: e.id,
       customInstallUrl: c,
       installParams: u,
       integrationTypesConfig: d,
-      guildId: f,
+      guildId: p,
       source: "app_message_embed"
     })
-  } : true, [e.id, i, n, c, u, d, a, t, f])
+  } : true, [e.id, i, n, c, u, d, l, t, p])
 }
 
-function O(e) {
+function v(e) {
   let {
     canViewApp: t,
     isInstallable: n
-  } = y(e), i = b(e);
+  } = A(e), i = y(e);
   return r.useMemo(() => t && null != i ? {
-    label: E.intl.string(E.t.hvVgAZ),
-    trackingArea: h.kY.VIEW,
+    label: b.intl.string(b.t.hvVgAZ),
+    trackingArea: g.kY.VIEW,
     onClick() {
       i()
     }
   } : n && null != i ? {
-    label: E.intl.string(E.t.NgXl3C),
-    trackingArea: h.kY.ADD_APP,
+    label: b.intl.string(b.t.NgXl3C),
+    trackingArea: g.kY.ADD_APP,
     onClick() {
       i()
     }

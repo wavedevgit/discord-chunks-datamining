@@ -13,7 +13,7 @@ module.exports = function(e) {
       className: "symbol",
       begin: "\\$" + t.either(...i)
     },
-    s = {
+    o = {
       className: "number",
       variants: [{
         begin: "\\b(0[bB][01]+)"
@@ -24,7 +24,7 @@ module.exports = function(e) {
       }],
       relevance: 0
     },
-    o = {
+    s = {
       className: "subst",
       begin: "\\$\\{",
       end: "\\}",
@@ -35,15 +35,15 @@ module.exports = function(e) {
       className: "string",
       begin: "`",
       end: "`",
-      contains: [e.BACKSLASH_ESCAPE, o]
+      contains: [e.BACKSLASH_ESCAPE, s]
     };
-  o.contains = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, l, s, e.REGEXP_MODE];
-  let c = o.contains.concat([e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]);
+  s.contains = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, l, o, e.REGEXP_MODE];
+  let c = s.contains.concat([e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]);
   return {
     name: "ArcGIS Arcade",
     case_insensitive: true,
     keywords: r,
-    contains: [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, l, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, a, s, {
+    contains: [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, l, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, a, o, {
       begin: /[{,]\s*/,
       relevance: 0,
       contains: [{

@@ -6,13 +6,13 @@ require.d(exports, {
   Lf: () => f,
   P: () => l,
   Tq: () => c,
-  UQ: () => s,
+  UQ: () => o,
   aj: () => h,
   fe: () => d,
   p6: () => u,
   qQ: () => a,
   yl: () => m,
-  zD: () => o
+  zD: () => s
 });
 var Chunk681154 = require("./681154.js"),
   Chunk808380 = require("./808380.js");
@@ -21,12 +21,12 @@ function a(e) {
   return (null == e ? true : e.content_type) === r.ContentInventoryEntryType.PLAYED_GAME
 }
 
-function s(e) {
+function o(e) {
   return (null == e ? true : e.content_type) === r.ContentInventoryEntryType.TOP_GAME
 }
 
-function o(e) {
-  return a(e) || s(e)
+function s(e) {
+  return a(e) || o(e)
 }
 
 function l(e) {
@@ -50,11 +50,11 @@ function f(e) {
 }
 
 function p(e) {
-  return !!o(e) && e.extra.platform === i.Y.XBOX
+  return !!s(e) && e.extra.platform === i.Y.XBOX
 }
 
 function _(e) {
-  return !!o(e) && e.extra.platform === i.Y.PLAYSTATION
+  return !!s(e) && e.extra.platform === i.Y.PLAYSTATION
 }
 
 function h(e) {
@@ -66,5 +66,5 @@ function m(e) {
 }
 
 function g(e) {
-  return o(e) || c(e) || f(e) || l(e)
+  return s(e) || c(e) || f(e) || l(e)
 }

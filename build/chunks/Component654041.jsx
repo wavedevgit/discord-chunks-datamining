@@ -1,7 +1,7 @@
 /** Chunk was on 42978 **/
-/** chunk id: 654041, original params: e,t,n (module,exports,require) **/
+/** chunk id: 654041, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => j
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,71 +23,71 @@ var Chunk627968 = require("./627968.js"),
   Chunk239093 = require("./239093.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk891921 = require("./891921.js");
-let x = function(e) {
+let j = function(e) {
   let {
     transitionState: t,
-    entryPoint: n,
-    onClose: x
-  } = e, [S, k] = s.useState(o.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), U = s.useRef(S), [g, h] = (0, c.kn)([S], true, true), {
-    loading: L,
-    initiateAgeVerification: b
-  } = (0, f.nn)({
-    onComplete: x,
-    entryPoint: n
-  }), O = s.useMemo(() => (0, r.A)(), []), P = (0, m.I)("age_verification_get_started_modal"), N = s.useRef(false);
-  return s.useEffect(() => {
-    U.current = g
-  }, [g]), s.useLayoutEffect(() => () => {
-    if (N.current) return;
-    let e = U.current;
-    null != e && (N.current = true, _.A.maybeOpenAgeVerificationUserFeedback({
+    entryPoint: r,
+    onClose: j
+  } = e, [P, h] = o.useState(c.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), C = o.useRef(P), [I, S] = (0, a.kn)([P], true, true), {
+    loading: v,
+    initiateAgeVerification: x
+  } = (0, y.nn)({
+    onComplete: j,
+    entryPoint: r
+  }), k = o.useMemo(() => (0, i.A)(), []), w = (0, A.I)("age_verification_get_started_modal"), M = o.useRef(false);
+  return o.useEffect(() => {
+    C.current = I
+  }, [I]), o.useLayoutEffect(() => () => {
+    if (M.current) return;
+    let e = C.current;
+    null != e && (M.current = true, p.A.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
-  }, []), s.useEffect(() => {
-    (0, R.Bs)(O, R.WU.PRIMARY, n)
-  }, [O, n]), (0, i.jsxs)(a.Modal, {
+  }, []), o.useEffect(() => {
+    (0, O.Bs)(k, O.WU.PRIMARY, r)
+  }, [k, r]), (0, n.jsxs)(l.Modal, {
     transitionState: t,
-    onClose: x,
-    title: (0, f.ST)(n),
-    subtitle: (0, f.mK)(n),
+    onClose: j,
+    title: (0, y.ST)(r),
+    subtitle: (0, y.mK)(r),
     actions: [{
-      text: C.intl.string(C.t.SJMnkX),
-      loading: L,
-      icon: l.I9m,
+      text: R.intl.string(R.t.SJMnkX),
+      loading: v,
+      icon: s.I9m,
       iconPosition: "end",
       onClick: async () => {
-        (0, R.St)(O, R.WU.PRIMARY, R._7.GET_STARTED), k(o.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await b()
+        (0, O.St)(k, O.WU.PRIMARY, O._7.GET_STARTED), h(c.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await x()
       }
     }],
-    actionBarInput: (0, i.jsxs)(u.A, {
+    actionBarInput: (0, n.jsxs)(u.A, {
       onClick: () => {
-        E.A.openUrl(A.A.getArticleURL(p.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, R.St)(O, R.WU.PRIMARY, R._7.LEARN_MORE)
+        b.A.openUrl(d.A.getArticleURL(m.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, O.St)(k, O.WU.PRIMARY, O._7.LEARN_MORE)
       },
-      className: T.A,
-      children: [C.intl.string(C.t["aA6q/z"]), (0, i.jsx)(l.I9m, {
+      className: g.A,
+      children: [R.intl.string(R.t["aA6q/z"]), (0, n.jsx)(s.I9m, {
         size: "xs",
         color: "currentColor"
       })]
     }),
-    children: [(0, I.f6)(O).map((e, t) => {
+    children: [(0, E.f6)(k).map((e, t) => {
       let {
-        title: n,
-        description: s
+        title: r,
+        description: o
       } = e;
-      return (0, i.jsx)(d.PQ, {
-        title: n,
-        description: s,
+      return (0, n.jsx)(f.PQ, {
+        title: r,
+        description: o,
         listType: "numbered",
         index: t
       }, t)
-    }), !P && (0, i.jsx)(l.Text, {
+    }), !w && (0, n.jsx)(s.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
-      className: T.B,
-      children: C.intl.format(C.t.pJAxgQ, {
+      className: g.B,
+      children: R.intl.format(R.t.pJAxgQ, {
         handleOnRequestHook: () => {
-          E.A.openUrl(M.d$.APPEALS_LINK), (0, R.St)(O, R.WU.PRIMARY, R._7.MANUAL_REVIEW_REQUEST)
+          b.A.openUrl(_.d$.APPEALS_LINK), (0, O.St)(k, O.WU.PRIMARY, O._7.MANUAL_REVIEW_REQUEST)
         }
       })
     })]

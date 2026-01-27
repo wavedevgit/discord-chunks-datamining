@@ -41,12 +41,12 @@ function m(e) {
 }
 
 function g() {
-  let e, t, n, r, a, s = c.A.getGoLiveSource(),
-    o = l.A.getState().preset;
-  if (null != s && (e = s.quality.resolution, t = s.quality.frameRate, null != s.desktopSource)) {
+  let e, t, n, r, a, o = c.A.getGoLiveSource(),
+    s = l.A.getState().preset;
+  if (null != o && (e = o.quality.resolution, t = o.quality.frameRate, null != o.desktopSource)) {
     var u, d;
-    n = s.desktopSource.soundshareSession;
-    let e = null != s.desktopSource.sourcePid ? i.Ay.getGameForPID(s.desktopSource.sourcePid) : null;
+    n = o.desktopSource.soundshareSession;
+    let e = null != o.desktopSource.sourcePid ? i.Ay.getGameForPID(o.desktopSource.sourcePid) : null;
     r = null != (u = null == e ? true : e.name) ? u : null, a = null != (d = null == e ? true : e.id) ? d : null
   }
   return {
@@ -55,17 +55,17 @@ function g() {
     soundshare_session: n,
     share_game_name: r,
     share_game_id: a,
-    quality_preset: o
+    quality_preset: s
   }
 }
 async function E(e, t) {
   var n, l, c, h, g, E;
   let y = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    b = __OVERLAY__ ? d.A.getGame() : (0, o.qv)(),
+    b = __OVERLAY__ ? d.A.getGame() : (0, s.qv)(),
     O = i.Ay.getRunningGames().find(e => e.name === (null == b ? true : b.name)),
-    v = (null == O ? true : O.pid) != null ? s.default.getTrackedGameByPid(null == O ? true : O.pid) : null,
+    v = (null == O ? true : O.pid) != null ? o.default.getTrackedGameByPid(null == O ? true : O.pid) : null,
     A = null != (n = null == v ? true : v.source) ? n : null,
-    I = null != (l = null != (c = null == v ? true : v.overlayMethod) ? c : s.default.getRenderMethod(null == O ? true : O.pid)) ? l : null,
+    I = null != (l = null != (c = null == v ? true : v.overlayMethod) ? c : o.default.getRenderMethod(null == O ? true : O.pid)) ? l : null,
     S = {
       overlay_game_source: A,
       overlay_game_name: null != b ? b.name : "Unknown Game",

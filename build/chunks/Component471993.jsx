@@ -59,15 +59,15 @@ function g(e, t, p) {
   if (d.isPlatformEmbedded)(0, i.mMO)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("96811"), n.e("14476")]).then(n.bind(n, 648230));
+    } = await Promise.all([n.e("96811"), n.e("2780")]).then(n.bind(n, 648230));
     return t => (0, r.jsx)(e, m(_({}, t), {
       analyticsLocations: p
     }))
   });
   else {
     var h;
-    let n = o.A.getChannel(t),
-      r = (0, s.A)(f.jQ.PRESET_CUSTOM, f.on.RESOLUTION_1080, f.kn.FPS_30, u.default.getCurrentUser(), null == (h = l.A.getGuild(e)) ? true : h.premiumTier, n) ? {
+    let n = s.A.getChannel(t),
+      r = (0, o.A)(f.jQ.PRESET_CUSTOM, f.on.RESOLUTION_1080, f.kn.FPS_30, u.default.getCurrentUser(), null == (h = l.A.getGuild(e)) ? true : h.premiumTier, n) ? {
         width: 1920,
         height: 1080
       } : {

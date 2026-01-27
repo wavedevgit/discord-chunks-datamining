@@ -4,13 +4,13 @@
 var Chunk106769 = require("./106769.js"),
   Chunk523317 = require("./523317.js"),
   a = Math.abs,
-  s = 2220446049250313e-31;
-module.exports = function(e, t, n, o) {
+  o = 2220446049250313e-31;
+module.exports = function(e, t, n, s) {
   var l = +e,
     c = a(l),
     u = r(l);
-  if (c < o) return u * i(c / o / t) * o * t;
-  var d = (1 + t / s) * c,
+  if (c < s) return u * i(c / s / t) * s * t;
+  var d = (1 + t / o) * c,
     f = d - (d - c);
   return f > n || f != f ? 1 / 0 * u : u * f
 }

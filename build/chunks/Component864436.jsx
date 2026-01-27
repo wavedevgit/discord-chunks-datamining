@@ -20,12 +20,12 @@ function c(e) {
     tooltipAriaLabel: i,
     className: c,
     onTooltipShow: u
-  } = e, d = (0, o.S31)(o.clD.ONLINE);
+  } = e, d = (0, s.S31)(s.clD.ONLINE);
   return null == n ? (0, r.jsx)(t, {
     size: "custom",
     color: d,
     className: a()(l.Kk, c)
-  }) : (0, r.jsx)(s.m, {
+  }) : (0, r.jsx)(o.m, {
     ariaHidden: true,
     text: n,
     delay: 150,

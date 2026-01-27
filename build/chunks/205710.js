@@ -6,15 +6,15 @@ require.d(exports, {
 });
 var Chunk668459 = require("./668459.js");
 let i = {
-    read: o
+    read: s
   },
   a = 4,
-  s = 7;
+  o = 7;
 
-function o(e, t) {
+function s(e, t) {
   let n = {},
     i = r.A.getByteAt(e, t);
-  return n.Alpha = l(i), n.Animation = c(i), n.ImageWidth = u(e, t + a), n.ImageHeight = u(e, t + s), n
+  return n.Alpha = l(i), n.Animation = c(i), n.ImageWidth = u(e, t + a), n.ImageHeight = u(e, t + o), n
 }
 
 function l(e) {

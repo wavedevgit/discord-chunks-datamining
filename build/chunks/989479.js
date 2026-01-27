@@ -2,11 +2,11 @@
 /** chunk id: 989479, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CV: () => s,
+  CV: () => o,
   E9: () => v,
   EB: () => d,
   Pl: () => O,
-  Wp: () => o,
+  Wp: () => s,
   eB: () => l,
   fp: () => g,
   k8: () => h,
@@ -21,7 +21,7 @@ let a = {
     rightBoundary: "(?=[^\\p{L}\\p{N}_]|$)",
     flags: "iu"
   },
-  s = {
+  o = {
     воскресенье: 0,
     воскресенья: 0,
     вск: 0,
@@ -54,7 +54,7 @@ let a = {
     сб: 6,
     "сб.": 6
   },
-  o = {
+  s = {
     январь: 1,
     января: 1,
     январе: 1,
@@ -93,7 +93,7 @@ let a = {
     декабре: 12
   },
   l = {
-    ...o,
+    ...s,
     янв: 1,
     "янв.": 1,
     фев: 2,

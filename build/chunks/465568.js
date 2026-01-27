@@ -9,7 +9,7 @@ var Chunk652896 = require("./652896.js"),
   Chunk601900 = require("./601900.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -35,7 +35,7 @@ let c = {
     let {
       activeStreams: t
     } = e;
-    return t.filter(e => e.state === s.XYD.FAILED && null == e.errorCode).map(e => l({
+    return t.filter(e => e.state === o.XYD.FAILED && null == e.errorCode).map(e => l({
       type: i.iy.STREAM_FAILED_TO_START
     }, (0, a.id)((0, r._z)(e))))
   },

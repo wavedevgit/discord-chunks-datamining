@@ -8,11 +8,11 @@ var Chunk64700 = require("./64700.js"),
   Chunk190334 = require("./190334.js"),
   Chunk87515 = require("./87515.js");
 
-function s(e, t) {
-  return d(e) || u(e, t) || l(e, t) || o()
+function o(e, t) {
+  return d(e) || u(e, t) || l(e, t) || s()
 }
 
-function o() {
+function s() {
   throw TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
 }
 
@@ -35,17 +35,17 @@ function u(e, t) {
   var n, r, i = null == e ? null : "u" > typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
   if (null != i) {
     var a = [],
-      s = true,
-      o = false;
+      o = true,
+      s = false;
     try {
-      for (i = i.call(e); !(s = (n = i.next()).done) && (a.push(n.value), !t || a.length !== t); s = true);
+      for (i = i.call(e); !(o = (n = i.next()).done) && (a.push(n.value), !t || a.length !== t); o = true);
     } catch (e) {
-      o = true, r = e
+      s = true, r = e
     } finally {
       try {
-        s || null == i.return || i.return()
+        o || null == i.return || i.return()
       } finally {
-        if (o) throw r
+        if (s) throw r
       }
     }
     return a
@@ -58,12 +58,12 @@ function d(e) {
 
 function f(e) {
   var t = (0, i.u)().getMonitor(),
-    n = s((0, a.F)(t, e), 2),
-    o = n[0],
+    n = o((0, a.F)(t, e), 2),
+    s = n[0],
     l = n[1];
   return (0, r.useEffect)(function() {
     return t.subscribeToOffsetChange(l)
   }), (0, r.useEffect)(function() {
     return t.subscribeToStateChange(l)
-  }), o
+  }), s
 }

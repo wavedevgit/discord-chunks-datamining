@@ -13,7 +13,7 @@ var Chunk562465 = require("./562465.js"),
 
 function c() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  return o.A.shouldFetch() && a.A.hasConsented(l.YAq.PERSONALIZATION) ? (i.h.dispatch({
+  return s.A.shouldFetch() && a.A.hasConsented(l.YAq.PERSONALIZATION) ? (i.h.dispatch({
     type: "LOAD_USER_AFFINITIES_V2"
   }), r.Bo.get({
     url: l.Rsh.USER_AFFINITIES_V2,
@@ -21,7 +21,7 @@ function c() {
     oldFormErrors: true,
     rejectWithError: false,
     query: {
-      user_flags: s.b.RECENTLY_RETURNED
+      user_flags: o.b.RECENTLY_RETURNED
     }
   }).then(e => {
     var t;
@@ -31,7 +31,7 @@ function c() {
     i.h.dispatch({
       type: "LOAD_USER_AFFINITIES_V2_SUCCESS",
       affineUsers: n.user_affinities.map(e => {
-        var t, n, r, i, a, s, o, l;
+        var t, n, r, i, a, o, s, l;
         return {
           otherUserId: e.other_user_id,
           userSegment: e.user_segment,
@@ -42,8 +42,8 @@ function c() {
           vcProbability: null != (r = e.vc_probability) ? r : 0,
           vcRank: null != (i = e.vc_rank) ? i : 0,
           serverMessageProbability: null != (a = e.server_message_probability) ? a : 0,
-          serverMessageRank: null != (s = e.server_message_rank) ? s : 0,
-          communicationProbability: null != (o = e.communication_probability) ? o : 0,
+          serverMessageRank: null != (o = e.server_message_rank) ? o : 0,
+          communicationProbability: null != (s = e.communication_probability) ? s : 0,
           communicationRank: null != (l = e.communication_rank) ? l : 0
         }
       }),

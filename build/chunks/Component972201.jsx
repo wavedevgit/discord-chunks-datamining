@@ -27,7 +27,7 @@ function A(t) {
     var t;
     null == (t = v.current) || t.focus()
   }, []);
-  let f = async t => {
+  let T = async t => {
     t.preventDefault(), _(null), S(true);
     try {
       let {
@@ -39,7 +39,7 @@ function A(t) {
     } finally {
       S(false)
     }
-  }, T = async () => {
+  }, f = async () => {
     if (!h) {
       x(true);
       try {
@@ -65,7 +65,7 @@ function A(t) {
       variant: "primary",
       text: u.intl.string(u.t.PDTjLN),
       loading: N,
-      onClick: f
+      onClick: T
     }],
     children: (0, a.jsxs)(l.BJc, {
       gap: 8,
@@ -78,7 +78,7 @@ function A(t) {
       }), (0, a.jsx)(l.QWc, {
         textVariant: "text-sm/normal",
         text: u.intl.string(u.t.K0NPQ6),
-        onClick: T
+        onClick: f
       })]
     })
   })

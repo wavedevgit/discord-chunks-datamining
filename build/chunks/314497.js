@@ -49,8 +49,8 @@ class h extends Chunk439372.A {
         return
       }
       if (!r || t === this.previousVoiceChannelId || (this.previousVoiceChannelId = t, null == n || null == t)) return;
-      let o = s.A.getChannel(t);
-      if (null == o || o.type !== p.rbe.GUILD_VOICE || !(0, i.qC)(o, true) || null != u.A.getCurrentHangStatus()) return;
+      let s = o.A.getChannel(t);
+      if (null == s || s.type !== p.rbe.GUILD_VOICE || !(0, i.qC)(s, true) || null != u.A.getCurrentHangStatus()) return;
       let _ = u.A.getCurrentDefaultStatus();
       if (null != _) {
         if (_.status === f.Kk.CUSTOM && null != _.customHangStatus) {
@@ -58,7 +58,7 @@ class h extends Chunk439372.A {
             status: e,
             emoji: t
           } = _.customHangStatus;
-          if (null != t && !(0, d.n)(t, o)) {
+          if (null != t && !(0, d.n)(t, s)) {
             a && (0, l.Iq)(f.Kk.CHILLING);
             return
           }(0, l.hS)(e, t)
@@ -72,9 +72,9 @@ class h extends Chunk439372.A {
         guildId: n
       } = e;
       if (t.id !== a.default.getId()) return;
-      let r = o.A.getCurrentClientVoiceChannelId(n);
+      let r = s.A.getCurrentClientVoiceChannelId(n);
       if (null == r || null == u.A.getCurrentHangStatus()) return;
-      let c = s.A.getChannel(r);
+      let c = o.A.getChannel(r);
       (0, i.qC)(c, true) || (0, l.eK)()
     }), _(this, "handleDisconnectFromVoiceChannel", () => {
       (0, l.eK)()

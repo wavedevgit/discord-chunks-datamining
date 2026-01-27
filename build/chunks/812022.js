@@ -48,9 +48,9 @@ function v(e, t) {
     let {
       default: t
     } = n(961350), {
-      default: s
-    } = n(111162), {
       default: o
+    } = n(111162), {
+      default: s
     } = n(773669), {
       default: l
     } = n(287809), {
@@ -72,11 +72,11 @@ function v(e, t) {
         let n = b(t);
         e.set("Accept-Language", n)
       }
-      e.set("X-Discord-Locale", o.locale);
+      e.set("X-Discord-Locale", s.locale);
       let _ = (0, p.A)();
       null != _ && e.set("X-Discord-Timezone", _);
-      let m = s.getDebugOptionsHeaderValue();
-      if (null != m && "" !== m && e.set("X-Debug-Options", m), s.isTracingRequests) {
+      let m = o.getDebugOptionsHeaderValue();
+      if (null != m && "" !== m && e.set("X-Debug-Options", m), o.isTracingRequests) {
         let t = l.getCurrentUser(),
           n = g.generate(null != (h = null == t ? true : t.id) ? h : "0");
         e.set("x-client-trace-id", n);
@@ -135,7 +135,7 @@ function v(e, t) {
         "X-Captcha-Key": n
       };
       null != r && (a["X-Captcha-Rqtoken"] = r), null != i && (a["X-Captcha-Session-Id"] = i), t(a)
-    }).catch(r), true) : 401 === e.statusCode && (null == (a = e.body) ? true : a.code) === h.t02.MFA_REQUIRED && (null == (c = e.body) ? true : c.mfa) ? (Promise.all([n.e("88890"), n.e("25327")]).then(n.bind(n, 522238)).then(n => {
+    }).catch(r), true) : 401 === e.statusCode && (null == (a = e.body) ? true : a.code) === h.t02.MFA_REQUIRED && (null == (c = e.body) ? true : c.mfa) ? (Promise.all([n.e("88890"), n.e("38880")]).then(n.bind(n, 522238)).then(n => {
       let {
         openMFAModal: i
       } = n;
@@ -145,13 +145,13 @@ function v(e, t) {
         default: t
       } = e;
       t()
-    }) : (0, s.O)(e.statusCode, null == (d = e.body) ? true : d.code) ? n.e("52729").then(n.bind(n, 116960)).then(t => {
+    }) : (0, o.O)(e.statusCode, null == (d = e.body) ? true : d.code) ? n.e("52729").then(n.bind(n, 116960)).then(t => {
       var n;
       let {
         default: r
       } = t;
       r(null == (n = e.body) ? true : n.guild_id)
-    }) : (0, o.f)(e) && n.e("75880").then(n.bind(n, 129435)).then(e => {
+    }) : (0, s.f)(e) && n.e("75880").then(n.bind(n, 129435)).then(e => {
       let {
         handleBlockedByProxy: t
       } = e;

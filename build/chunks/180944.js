@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e, t) {
+function o(e, t) {
   return 0 === t.length ? e : {
     key: (0, i.h)(t, e.key),
     data: e.data,
@@ -25,8 +25,8 @@ function s(e, t) {
   }
 }
 
-function o(e, t) {
-  return 0 === t.length ? e : e.map(e => s(e, t))
+function s(e, t) {
+  return 0 === t.length ? e : e.map(e => o(e, t))
 }
 class l {
   close() {
@@ -97,7 +97,7 @@ class l {
     return this.database.execute({
       type: "kv.put_one",
       table: this.tableId,
-      cell: s(e, this.prefix),
+      cell: o(e, this.prefix),
       overwrite: t === r.hh.Replace
     }, this.defaultDebugTag)
   }
@@ -106,7 +106,7 @@ class l {
     return this.database.execute({
       type: "kv.put_many",
       table: this.tableId,
-      cells: o(e, this.prefix),
+      cells: s(e, this.prefix),
       overwrite: t === r.hh.Replace
     }, this.defaultDebugTag)
   }
@@ -188,7 +188,7 @@ class c {
     this.transaction.add({
       type: "kv.put_one",
       table: this.tableId,
-      cell: s(e, this.prefix),
+      cell: o(e, this.prefix),
       overwrite: t === r.hh.Replace
     })
   }
@@ -197,7 +197,7 @@ class c {
     this.transaction.add({
       type: "kv.put_many",
       table: this.tableId,
-      cells: o(e, this.prefix),
+      cells: s(e, this.prefix),
       overwrite: t === r.hh.Replace
     })
   }

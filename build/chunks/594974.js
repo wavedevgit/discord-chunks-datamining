@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Be: () => a,
-  Y1: () => o
+  Y1: () => s
 });
 let r = "u" > typeof global ? global : self,
   i = r.MutationObserver || r.WebKitMutationObserver;
@@ -19,7 +19,7 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   let t = 1,
     n = new i(e),
     r = document.createTextNode("");
@@ -30,4 +30,4 @@ function s(e) {
       r.data = t = -t
     }
 }
-let o = "function" == typeof i ? s : a
+let s = "function" == typeof i ? o : a

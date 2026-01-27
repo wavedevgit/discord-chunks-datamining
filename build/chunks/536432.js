@@ -4,13 +4,13 @@
 require.d(exports, {
   Ak: () => R,
   Au: () => w,
-  Dv: () => j,
+  Dv: () => M,
   Ir: () => N,
   ND: () => U,
   Ni: () => G,
-  VE: () => L,
-  fh: () => x,
-  un: () => M,
+  VE: () => x,
+  fh: () => L,
+  un: () => j,
   wH: () => T
 }), require("./321073.js");
 var Chunk417597 = require("./417597.js"),
@@ -39,7 +39,7 @@ var Chunk417597 = require("./417597.js"),
 
 function T() {
   var e;
-  let t = o.dG.getSetting();
+  let t = s.dG.getSetting();
   return null != (e = null == t ? true : t.volume) ? e : 100
 }
 
@@ -74,9 +74,9 @@ function D() {
   var e, t;
   return Object.values(null != (e = null == (t = c.A.settings.guilds) ? true : t.guilds) ? e : {}).some(e => null != e.joinSound)
 }
-async function x(e) {
+async function L(e) {
   let t = _.default.getCurrentUser(),
-    n = (0, s.A)(),
+    n = (0, o.A)(),
     r = (0, v.z0)(e);
   if (null == n || f.Do.has(n.type) || null == r || !m.Ay.canUseCustomCallSounds(t) || !(0, O.l)()) return;
   await (0, E.E7)();
@@ -88,7 +88,7 @@ async function x(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     isSoundboardButtonDisabled: t = false
   } = e, n = (0, r.bG)([_.default], () => _.default.getCurrentUser()), a = [];
@@ -99,7 +99,7 @@ function L(e) {
   return a
 }
 
-function j(e, t) {
+function M(e, t) {
   (0, l.TG)(e, n => {
     n.joinSound = true, k({
       guildId: e,
@@ -110,17 +110,17 @@ function j(e, t) {
   }, l.Sb.INFREQUENT_USER_ACTION)
 }
 
-function M(e, t, n) {
+function j(e, t, n) {
   (0, l.TG)(e, r => {
     let i = t.guildId === A.mV,
       a = i ? b.FH.DEFAULT : b.FH.CUSTOM,
-      s = null != r.joinSound ? b.Vr.UPDATED : b.Vr.ADDED;
+      o = null != r.joinSound ? b.Vr.UPDATED : b.Vr.ADDED;
     r.joinSound = {
       soundId: t.soundId,
       guildId: i ? A.XH : t.guildId
     }, k({
       guildId: e,
-      changeType: s,
+      changeType: o,
       soundSource: a,
       soundType: b.ib.ENTRY,
       location: n

@@ -35,7 +35,7 @@ let T = {
     if (I._.hasSubscribers(S.jej.CALL_DECLINE)) return I._.dispatch(S.jej.CALL_DECLINE), false;
     if (v.A.close()) returnfalse;
     if (I._.hasSubscribers(S.jej.MEDIA_MODAL_CLOSE)) return I._.dispatch(S.jej.MEDIA_MODAL_CLOSE), false;
-    let t = (0, o.wp)(e);
+    let t = (0, s.wp)(e);
     if (null == t ? true : t.hasSubscribers(S.jej.POPOUT_CLOSE)) return t.dispatch(S.jej.POPOUT_CLOSE), false;
     if (I._.hasSubscribers(S.jej.CLOSE_GIF_PICKER)) return I._.dispatch(S.jej.CLOSE_GIF_PICKER), false;
     if (I._.hasSubscribers(S.jej.MODAL_CLOSE)) return I._.dispatch(S.jej.MODAL_CLOSE), false;
@@ -50,7 +50,7 @@ let T = {
     if (null != i && (null == l ? true : l.type) === d.PE.CREATE_THREAD) return u.A.closeChannelSidebar(i), false;
     let f = N(i),
       p = N(c);
-    return null == i || f || p || null == l ? null != i && !f && s.A.getChatOpen(i) ? r.A.updateChatOpen(i, false, "esc keybind") : I._.dispatch(S.jej.SCROLLTO_PRESENT) : u.A.closeChannelSidebar(i), false
+    return null == i || f || p || null == l ? null != i && !f && o.A.getChatOpen(i) ? r.A.updateChatOpen(i, false, "esc keybind") : I._.dispatch(S.jej.SCROLLTO_PRESENT) : u.A.closeChannelSidebar(i), false
   }
 };
 

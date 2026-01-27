@@ -7,6 +7,6 @@ var Chunk741623 = require("./741623.js"),
   Chunk14665 = require("./14665.js");
 module.exports = function(e) {
   if (true === e) returnfalse;
-  if (!s(e)) throw new r("Assertion failed: `Desc` must be a Property Descriptor");
+  if (!o(e)) throw new r("Assertion failed: `Desc` must be a Property Descriptor");
   return !(i(e) || a(e))
 }

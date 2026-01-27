@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 283900, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 283900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m,
-  H: () => h
+  A: () => _,
+  H: () => u
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,70 +12,58 @@ var Chunk397927 = require("./397927.js"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk241938 = require("./241938.js");
-
-function u(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function d(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      u(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function f(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let _ = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk397927.euF,
-  h = e => {
+let d = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk397927.euF,
+  u = e => {
+    var t, n;
     let {
-      user: t,
-      avatarSize: n = i._3J.SIZE_48
+      user: s,
+      avatarSize: c = i._3J.SIZE_48
     } = e, {
-      avatarSrc: s,
-      avatarDecorationSrc: c,
-      eventHandlers: u
-    } = (0, a.A)({
-      userId: null == t ? true : t.id,
-      size: n
+      avatarSrc: u,
+      avatarDecorationSrc: _,
+      eventHandlers: p
+    } = (0, l.A)({
+      userId: null == s ? true : s.id,
+      size: c
     });
-    return (0, r.jsx)("div", p(d({}, u), {
-      children: (0, r.jsx)(_, {
-        src: s,
-        avatarDecoration: c,
-        size: n,
-        "aria-label": l.intl.formatToPlainString(o.default.kFj4h1, {
-          name: t.username
+    return (0, r.jsx)("div", (t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({}, p), n = n = {
+      children: (0, r.jsx)(d, {
+        src: u,
+        avatarDecoration: _,
+        size: c,
+        "aria-label": o.intl.formatToPlainString(a.default.kFj4h1, {
+          name: s.username
         })
       })
-    }))
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    }), t))
   },
-  m = e => {
+  _ = e => {
     let {
       currentUser: t,
       otherUser: n,
@@ -86,9 +73,9 @@ let _ = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk
       className: c.b,
       children: (0, r.jsxs)("div", {
         className: c.M,
-        children: [(0, r.jsx)(h, {
+        children: [(0, r.jsx)(u, {
           user: t
-        }), i, (0, r.jsx)(h, {
+        }), i, (0, r.jsx)(u, {
           user: n
         })]
       })

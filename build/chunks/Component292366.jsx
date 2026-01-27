@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 292366, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 292366, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => v
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,150 +21,138 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk592392 = require("./592392.js");
 
-function y(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function b(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      y(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function O(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function A(e) {
-  switch (e) {
-    case d.in.PRIMARY:
-    case d.in.PREMIUM:
-      return o.$n.Colors.BRAND;
-    case d.in.SUCCESS:
-      return o.$n.Colors.GREEN;
-    case d.in.DESTRUCTIVE:
-      return o.$n.Colors.RED;
-    default:
-      return o.$n.Colors.PRIMARY
-  }
-}
-
-function I(e) {
+function y(e) {
   let {
     url: t,
     onSelect: n
   } = e;
-  return p.p5 && null != t ? (0, r.jsx)(l.W1t, {
+  return f.p5 && null != t ? (0, r.jsx)(o.W1t, {
     "data-menu-migrated-auto": true,
     navId: "component-button",
     onClose: c.Z_,
     "aria-label": g.intl.string(g.t.tvTXy8),
     onSelect: n,
-    children: (0, r.jsx)(l.rXV, {
-      children: (0, r.jsx)(l.Drp, {
+    children: (0, r.jsx)(o.rXV, {
+      children: (0, r.jsx)(o.Drp, {
         id: "copy",
         label: g.intl.string(g.t.uHhnfa),
-        action: () => (0, p.C)(t)
+        action: () => (0, f.C)(t)
       })
     })
   }) : null
 }
 
-function S(e) {
+function v(e) {
   let t, {
       label: n,
-      style: i,
-      disabled: p,
+      style: l,
+      disabled: f,
       emoji: g,
-      url: y,
-      skuId: O
+      url: v,
+      skuId: j
     } = e,
     {
-      executeStateUpdate: S,
-      visualState: T,
-      isDisabled: C
+      executeStateUpdate: C,
+      visualState: _,
+      isDisabled: A
     } = (0, h.At)(e),
-    N = (0, f.Q)(O),
-    w = null != O && i === d.in.PREMIUM,
-    R = w && (null == N ? true : N.disabled),
-    P = w ? null == N ? true : N.label : n,
-    D = null != g,
-    x = null != P && P.length > 0,
-    L = i === d.in.LINK && null != y && y.length > 0,
-    j = T === m.BB.LOADING || w && null == N;
-  return t = L ? () => {
-    (0, _.h)({
-      href: null != y ? y : "",
+    O = (0, m.Q)(j),
+    E = null != j && l === d.in.PREMIUM,
+    S = E && (null == O ? true : O.disabled),
+    N = E ? null == O ? true : O.label : n,
+    I = null != g,
+    P = null != N && N.length > 0,
+    w = l === d.in.LINK && null != v && v.length > 0,
+    T = _ === b.BB.LOADING || E && null == O;
+  return t = w ? () => {
+    (0, p.h)({
+      href: null != v ? v : "",
       shouldConfirm: true
     })
-  } : w ? null != N && false === N.disabled ? N.onClick : s.noop : () => S(), (0, r.jsxs)(o.$n, {
+  } : E ? null != O && false === O.disabled ? O.onClick : i.noop : () => C(), (0, r.jsxs)(s.$n, {
     "data-migration-pending": true,
-    color: A(i),
-    size: o.$n.Sizes.SMALL,
-    disabled: p || T === m.BB.DISABLED || C || R,
+    color: function(e) {
+      switch (e) {
+        case d.in.PRIMARY:
+        case d.in.PREMIUM:
+          return s.$n.Colors.BRAND;
+        case d.in.SUCCESS:
+          return s.$n.Colors.GREEN;
+        case d.in.DESTRUCTIVE:
+          return s.$n.Colors.RED;
+        default:
+          return s.$n.Colors.PRIMARY
+      }
+    }(l),
+    size: s.$n.Sizes.SMALL,
+    disabled: f || _ === b.BB.DISABLED || A || S,
     onClick: t,
     onContextMenu: e => {
-      L && (0, c.jA)(e, e => (0, r.jsx)(I, v(b({}, e), {
-        url: y
-      })))
+      w && (0, c.jA)(e, e => {
+        var t, n;
+        return (0, r.jsx)(y, (t = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, e), n = n = {
+          url: v
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(n)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+        }), t))
+      })
     },
-    role: L ? "link" : "button",
+    role: w ? "link" : "button",
     children: [(0, r.jsxs)("div", {
-      className: a()(E.Qs, {
-        [E.R]: j,
-        [E.M2]: w
+      className: a()(x.Qs, {
+        [x.R]: T,
+        [x.M2]: E
       }),
-      "aria-hidden": j,
-      children: [w ? (0, r.jsx)("div", {
-        className: E.sV,
-        children: (0, r.jsx)(l.U1X, {
+      "aria-hidden": T,
+      children: [E ? (0, r.jsx)("div", {
+        className: x.sV,
+        children: (0, r.jsx)(o.U1X, {
           size: "xs",
           color: "white"
         })
-      }) : null, D ? (0, r.jsx)(u.A, {
+      }) : null, I ? (0, r.jsx)(u.A, {
         className: a()({
-          [E.MR]: x
+          [x.MR]: P
         }),
         src: g.src,
         emojiId: g.id,
         emojiName: g.name,
         animated: g.animated
-      }) : null, x ? (0, r.jsx)("div", {
-        className: E.Pf,
-        children: P
-      }) : null, L ? (0, r.jsx)(l.tfB, {
+      }) : null, P ? (0, r.jsx)("div", {
+        className: x.Pf,
+        children: N
+      }) : null, w ? (0, r.jsx)(o.tfB, {
         size: "xs",
         color: "currentColor",
-        className: E.LE
+        className: x.LE
       }) : null]
-    }), j ? (0, r.jsx)("div", {
-      className: E.Lq,
-      children: (0, r.jsx)(l.nvX, {
+    }), T ? (0, r.jsx)("div", {
+      className: x.Lq,
+      children: (0, r.jsx)(o.nvX, {
         dotRadius: 3.5,
         themed: true
       })

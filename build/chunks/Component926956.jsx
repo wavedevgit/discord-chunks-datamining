@@ -81,7 +81,7 @@ function w(e) {
             (0, c.mMO)(async () => {
               let {
                 default: e
-              } = await Promise.all([t.e("68587"), t.e("28136"), t.e("342"), t.e("68505")]).then(t.bind(t, 21653));
+              } = await Promise.all([t.e("28136"), t.e("68587"), t.e("342"), t.e("68505")]).then(t.bind(t, 21653));
               return n => {
                 var t, r;
                 return (0, l.jsx)(e, (t = function(e) {

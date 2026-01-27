@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 191430, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 191430, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,26 +11,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk741707 = require("./741707.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk170308 = require("./170308.js");
-let d = Chunk64700.forwardRef((e, t) => {
+let u = Chunk64700.forwardRef((e, t) => {
   let {
     analyticsLocations: n
-  } = (0, o.Ay)(s.A.PREMIUM_MARKETING_FOOTER_CTA);
-  return (0, r.jsx)(o.f5, {
+  } = (0, a.Ay)(s.A.PREMIUM_MARKETING_FOOTER_CTA);
+  return (0, r.jsx)(a.f5, {
     value: n,
     children: (0, r.jsx)("div", {
       ref: t,
-      className: u.kL,
+      className: d.kL,
       children: (0, r.jsxs)("div", {
-        className: u.hQ,
-        children: [(0, r.jsx)(l.A, {}), (0, r.jsx)(a.Heading, {
+        className: d.hQ,
+        children: [(0, r.jsx)(o.A, {}), (0, r.jsx)(l.Heading, {
           variant: "display-md",
           color: "text-strong",
-          className: u.RH,
+          className: d.RH,
           children: c.intl.string(c.t.lEw32m)
         })]
       })
     })
   })
 });
-d.displayName = "PremiumMarketingFooter";
-let f = d
+u.displayName = "PremiumMarketingFooter";
+let _ = u

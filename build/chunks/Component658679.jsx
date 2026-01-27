@@ -28,19 +28,19 @@ function E(e) {
     plan: n,
     premiumSubscription: r,
     productLine: i,
-    isGift: s,
-    planGroup: o,
+    isGift: o,
+    planGroup: s,
     isPrepaidPaymentSource: l,
     inReverseTrial: c,
     paymentSourceId: u,
     hasPaymentSources: d
   } = e;
   if (null === u && d) return g.intl.string(g.t.CpOiEO);
-  if (t === m.VV.ONE_TIME) return s ? g.intl.string(g.t.ouo4FK) : g.intl.string(g.t.ExD0Ng);
+  if (t === m.VV.ONE_TIME) return o ? g.intl.string(g.t.ouo4FK) : g.intl.string(g.t.ExD0Ng);
   if (a()(null != n, "Subscription plan must be selected to render SubscriptionReviewButton"), i === h.EZt.BOOST) return g.intl.string(g.t.eUEeCt);
-  if (s) return g.intl.string(g.t.ouo4FK);
+  if (o) return g.intl.string(g.t.ouo4FK);
   if (c) return g.intl.string(g.t.LQVQIq);
-  if ((0, f.ys)(n.id)) return l ? g.intl.string(g.t.cRCCJ3) : null != r ? r.isPausedAllowsResumeButNotUpdates ? g.intl.string(g.t.zpi5pg) : (0, p.Ge)(r, n.id, o) ? g.intl.string(g.t.IJI7yk) : g.intl.string(g.t.VPuTc5) : (0, f.ff)(null, n);
+  if ((0, f.ys)(n.id)) return l ? g.intl.string(g.t.cRCCJ3) : null != r ? r.isPausedAllowsResumeButNotUpdates ? g.intl.string(g.t.zpi5pg) : (0, p.Ge)(r, n.id, s) ? g.intl.string(g.t.IJI7yk) : g.intl.string(g.t.VPuTc5) : (0, f.ff)(null, n);
   return g.intl.string(g.t.YScQSF)
 }
 
@@ -73,20 +73,20 @@ function b(e) {
     application: R,
     selectedPlan: P,
     hasAcceptedTerms: D,
-    purchaseType: x,
-    paymentSourceId: L,
-    activeSubscription: j,
-    devShelfFetchState: M,
+    purchaseType: L,
+    paymentSourceId: x,
+    activeSubscription: M,
+    devShelfFetchState: j,
     hasPaymentSources: k
   } = (0, d.P5)(), U = E({
-    purchaseType: x,
+    purchaseType: L,
     plan: P,
     premiumSubscription: b,
     isGift: O,
     planGroup: v,
     isPrepaidPaymentSource: A,
     inReverseTrial: C,
-    paymentSourceId: L,
+    paymentSourceId: x,
     hasPaymentSources: k
   }), {
     analyticsLocations: G
@@ -96,7 +96,7 @@ function b(e) {
     text: U,
     disabled: true
   });
-  if (T && k) return (0, r.jsx)(o.m_, {
+  if (T && k) return (0, r.jsx)(s.m_, {
     text: g.intl.string(g.t.L7jbQV),
     children: (0, r.jsx)(l.Button, {
       variant: "primary",
@@ -106,7 +106,7 @@ function b(e) {
       onClick: w
     })
   });
-  if (T && !k) return (0, r.jsx)(o.m_, {
+  if (T && !k) return (0, r.jsx)(s.m_, {
     text: g.intl.string(g.t.L7jbQV),
     children: (0, r.jsx)(l.Button, {
       variant: "active",
@@ -116,7 +116,7 @@ function b(e) {
       disabled: true
     })
   });
-  if ((0, s.Lt)(null != (t = null == R ? true : R.flags) ? t : 0, h.gfo.EMBEDDED) && M === c.$.LOADING) return (0, r.jsx)(o.m_, {
+  if ((0, o.Lt)(null != (t = null == R ? true : R.flags) ? t : 0, h.gfo.EMBEDDED) && j === c.$.LOADING) return (0, r.jsx)(s.m_, {
     text: g.intl.string(g.t.cjA5tj),
     children: (0, r.jsx)(l.Button, {
       variant: "active",
@@ -137,7 +137,7 @@ function b(e) {
       color: "currentColor"
     })
   });
-  else if (!D) return (0, r.jsx)(o.m_, {
+  else if (!D) return (0, r.jsx)(s.m_, {
     text: g.intl.string(g.t.XdvBLS),
     children: (0, r.jsx)(l.Button, {
       variant: "active",
@@ -147,11 +147,11 @@ function b(e) {
       "data-testid": "submitButton"
     })
   });
-  else if (C && null != j && null != L) return (0, r.jsx)(_.A, {
-    activeSubscription: j,
+  else if (C && null != M && null != x) return (0, r.jsx)(_.A, {
+    activeSubscription: M,
     onNext: N,
     isSubmitting: m,
-    paymentSourceId: L,
+    paymentSourceId: x,
     buttonLabel: U,
     analyticsLocations: G
   });

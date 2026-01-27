@@ -7,7 +7,7 @@ IntlMessageFormat.__addLocaleData({
       r = n[1] || "",
       i = Number(n[0]) == e,
       a = i && n[0].slice(false),
-      s = i && n[0].slice(false);
-    return t ? "other" : 1 == a && (s < 11 || s > 19) ? "one" : a >= 2 && a <= 9 && (s < 11 || s > 19) ? "few" : 0 != r ? "many" : "other"
+      o = i && n[0].slice(false);
+    return t ? "other" : 1 == a && (o < 11 || o > 19) ? "one" : a >= 2 && a <= 9 && (o < 11 || o > 19) ? "few" : 0 != r ? "many" : "other"
   }
 })

@@ -12,10 +12,10 @@ var Chunk717125 = require("./717125.js"),
   Chunk652215 = require("./652215.js");
 
 function l(e) {
-  return null != e && o.kvI.GUILD_VOCAL.has(e.type) ? r.kg(o.xBc.VIEW_CHANNEL, o.xBc.CONNECT) : o.xBc.VIEW_CHANNEL
+  return null != e && s.kvI.GUILD_VOCAL.has(e.type) ? r.kg(s.xBc.VIEW_CHANNEL, s.xBc.CONNECT) : s.xBc.VIEW_CHANNEL
 }
 
 function c(e, t) {
   let n = l(a.A.getChannel(t));
-  return i.A.isChannelGated(e, t) || s.MJ(n, a.A.getChannel(t))
+  return i.A.isChannelGated(e, t) || o.MJ(n, a.A.getChannel(t))
 }

@@ -2,10 +2,10 @@
 /** chunk id: 561844, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DZ: () => M,
-  Mm: () => j,
-  Qg: () => x,
-  Y5: () => L,
+  DZ: () => j,
+  Mm: () => M,
+  Qg: () => L,
+  Y5: () => x,
   av: () => D
 }), require("./896048.js");
 var Chunk835245 = require("./835245.js"),
@@ -70,10 +70,10 @@ let T = new Set([Chunk652215.HAw.QUEST_CONTENT_VIEWED, Chunk652215.HAw.QUEST_CON
 
 function C(e, t) {
   var n, r, i, a;
-  let o = _.e.getConfig({
+  let s = _.e.getConfig({
     location: "quest_analytics"
   });
-  return t ? o.use_ad_session_id ? e : null != (n = null == (r = (0, s.Vc)()) ? true : r.uuid) ? n : null : null != (i = null == (a = (0, s.Vc)()) ? true : a.uuid) ? i : null
+  return t ? s.use_ad_session_id ? e : null != (n = null == (r = (0, o.Vc)()) ? true : r.uuid) ? n : null : null != (i = null == (a = (0, o.Vc)()) ? true : a.uuid) ? i : null
 }
 
 function N(e, t, n) {
@@ -109,7 +109,7 @@ function P(e, t) {
       location: b.rE.QUEST_PREVIEW_TOOL
     }) && u.A.getLayers().includes(O.zgK.USER_SETTINGS) || (c.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", e, t), r)) return;
   let i = T.has(e);
-  if (n) return o.Ay.trackWithMetadata(e, t, i);
+  if (n) return s.Ay.trackWithMetadata(e, t, i);
   d.default.track(e, t, {
     flush: i
   })
@@ -122,30 +122,30 @@ function D(e) {
     properties: r,
     trackGuildAndChannelMetadata: i,
     shouldExtendSession: a = false,
-    sourceQuestContent: s
-  } = e, o = p.A.quests.get(t);
-  null == o || P(n, A({}, w(o, s, a), r), i, o.preview)
+    sourceQuestContent: o
+  } = e, s = p.A.quests.get(t);
+  null == s || P(n, A({}, w(s, o, a), r), i, s.preview)
 }
 
-function x(e) {
+function L(e) {
   let {
     adContentId: t,
     adCreativeType: n,
     event: r,
     properties: i,
     trackGuildAndChannelMetadata: a,
-    shouldExtendSession: s = false,
-    sourceQuestContent: o
+    shouldExtendSession: o = false,
+    sourceQuestContent: s
   } = e;
-  P(r, A({}, R(t, n, o, s), i), a, false)
+  P(r, A({}, R(t, n, s, o), i), a, false)
 }
-async function L(e) {
+async function x(e) {
   let {
     questId: t,
     questContent: n,
     questContentCTA: a,
-    questContentPosition: s,
-    questContentRowIndex: o,
+    questContentPosition: o,
+    questContentRowIndex: s,
     impressionId: c,
     trackGuildAndChannelMetadata: u,
     sourceQuestContent: d
@@ -153,7 +153,7 @@ async function L(e) {
   D({
     questId: t,
     event: O.HAw.QUEST_CONTENT_CLICKED,
-    properties: S(A({}, (0, y.fF)(n, s, o), (0, l.A)()), {
+    properties: S(A({}, (0, y.fF)(n, o, s), (0, l.A)()), {
       cta_name: a,
       quest_status: null != _ ? (0, y.NI)(_) : null,
       impression_id: c,
@@ -171,20 +171,20 @@ async function L(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     questContent: t,
     sourceQuestContent: n,
     questId: r,
     mode: i,
     prevMode: a
-  } = e, s = (0, y.fF)(t);
+  } = e, o = (0, y.fF)(t);
   D({
     questId: r,
     event: O.HAw.QUEST_BAR_MODE_CHANGED,
     properties: {
-      content_id: s.content_id,
-      content_name: s.content_name,
+      content_id: o.content_id,
+      content_name: o.content_name,
       mode: i,
       previous_mode: a
     },
@@ -192,8 +192,8 @@ function j(e) {
   })
 }
 
-function M(e, t) {
-  o.Ay.trackWithMetadata(O.HAw.QUEST_EMBED_FALLBACK_VIEWED, {
+function j(e, t) {
+  s.Ay.trackWithMetadata(O.HAw.QUEST_EMBED_FALLBACK_VIEWED, {
     quest_id: e,
     reason: t
   })

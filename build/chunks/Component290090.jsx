@@ -1,4 +1,4 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 290090, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -35,9 +35,9 @@ function p(e) {
     return r
   }(e, ["onClose"]), {
     analyticsLocations: p,
-    newestAnalyticsLocation: m
-  } = (0, s.Ay)(), f = (0, i.bG)([c.A], () => c.A.hasUnsavedChanges());
-  return (0, l.jsx)(d.q3, function(e) {
+    newestAnalyticsLocation: f
+  } = (0, s.Ay)(), m = (0, i.bG)([d.A], () => d.A.hasUnsavedChanges());
+  return (0, l.jsx)(c.q3, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         l = Object.keys(n);
@@ -59,9 +59,9 @@ function p(e) {
     icon: r.U1X,
     tooltipText: u.intl.string(u.t.b2d0N0),
     onClick: () => {
-      f ? a.A.notifyUnsavedWidgets() : ((0, o.Cz)({
+      m ? a.A.notifyUnsavedWidgets() : ((0, o.Cz)({
         analyticsLocations: p,
-        analyticsSource: m
+        analyticsSource: f
       }), null == t || t())
     }
   }, n))

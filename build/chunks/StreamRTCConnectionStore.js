@@ -6,7 +6,7 @@ require.d(exports, {
   A: () => J
 }), require("./896048.js");
 var i, Chunk284009 = require("./284009.js"),
-  s = require.n(Chunk284009),
+  o = require.n(Chunk284009),
   Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
@@ -42,8 +42,8 @@ let S = {},
   P = Chunk652215.SO9.THEATRE,
   D = {};
 
-function x(e, t, n, i) {
-  return s()(null != r, "Creating RTCConnection without session."), new p.A({
+function L(e, t, n, i) {
+  return o()(null != r, "Creating RTCConnection without session."), new p.A({
     sessionId: r,
     streamKey: e,
     serverId: t,
@@ -54,18 +54,18 @@ function x(e, t, n, i) {
   })
 }
 
-function L() {
+function x() {
   l().forEach(D, (e, t) => {
     e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete D[t], delete R[t]
   })
 }
 
-function j(e) {
-  r = e.sessionId, L()
+function M(e) {
+  r = e.sessionId, x()
 }
 
-function M() {
-  r = null, L()
+function j() {
+  r = null, x()
 }
 
 function k(e) {
@@ -74,8 +74,8 @@ function k(e) {
     streamType: r,
     guildId: i,
     channelId: a,
-    appContext: s,
-    pid: o,
+    appContext: o,
+    pid: s,
     sourceId: c,
     sourcePid: u,
     nativePickerStyleUsed: d,
@@ -88,16 +88,16 @@ function k(e) {
     ownerId: E.default.getId()
   });
   if (S[m] = {
-      appContext: s,
+      appContext: o,
       analyticsLocations: h
     }, l().forEach(D, e => {
       let {
         analyticsContext: t,
         isOwner: n
       } = e;
-      t.setActionContext(s), t.setNativePickerStyleUsed(d), n && t.trackStart()
-    }), null == o && (o = u), N[m] = c, C[m] = o, null != o) {
-    let e = f.Ay.getGameForPID(o);
+      t.setActionContext(o), t.setNativePickerStyleUsed(d), n && t.trackStart()
+    }), null == s && (s = u), N[m] = c, C[m] = s, null != s) {
+    let e = f.Ay.getGameForPID(s);
     null != e && (T[m] = {
       name: e.name,
       id: e.id,
@@ -134,34 +134,34 @@ function G(e) {
     rtcChannelId: r,
     region: i,
     viewerIds: a
-  } = e, s = D[t], o = (0, _.Iy)(t);
-  if (null == s && null != n) {
+  } = e, o = D[t], s = (0, _.Iy)(t);
+  if (null == o && null != n) {
     var l, c;
-    null == C[t] && (T[t] = null), null == T[t] && null == N[t] && (T[t] = (0, h.Ee)(o, b.A));
+    null == C[t] && (T[t] = null), null == T[t] && null == N[t] && (T[t] = (0, h.Ee)(s, b.A));
     let e = new p.t({
       streamRegion: i,
       streamApplication: T[t],
-      streamSourceType: X(N[t]),
+      streamSourceType: Q(N[t]),
       actionContext: null == (l = S[t]) ? true : l.appContext,
       numViewers: null != a ? a.length : 0,
       goLiveModalDurationMs: w[t],
       analyticsLocations: null == (c = S[t]) ? true : c.analyticsLocations
     });
-    s = x(t, n, r, e), D[t] = s
+    o = L(t, n, r, e), D[t] = o
   }
   delete R[t], d.h.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
-    mediaEngineConnectionId: s.getMediaEngineConnectionId()
+    mediaEngineConnectionId: o.getMediaEngineConnectionId()
   })
 }
 
-function V(e) {
+function F(e) {
   let t = D[e.streamKey];
   if (null == t) returnfalse;
   t.connect(e.endpoint, e.token)
 }
 
-function F(e) {
+function V(e) {
   let {
     connectionStats: t
   } = e;
@@ -209,17 +209,17 @@ function K(e) {
     userId: r,
     guildId: i,
     channelId: a
-  } = e, s = (0, _._z)({
+  } = e, o = (0, _._z)({
     streamType: null == i ? A.U4.CALL : A.U4.GUILD,
     guildId: i,
     channelId: a,
     ownerId: r
   });
-  if (t !== u.x.STREAM || null == D[s] || !Object.entries(n).some(e => {
+  if (t !== u.x.STREAM || null == D[o] || !Object.entries(n).some(e => {
       let [t, n] = e;
       return "any" !== t && 0 !== n
     })) returnfalse;
-  R[s] = performance.now()
+  R[o] = performance.now()
 }
 
 function z(e) {
@@ -248,7 +248,7 @@ function Z(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   var t, n, r;
   if (null == e) return "unknown";
   if (g.isPlatformEmbedded || (null == (t = platform) ? true : t.name) === "Chrome") {
@@ -261,7 +261,7 @@ function X(e) {
   else if ((null == (r = platform) ? true : r.name) === "Safari") return "window";
   return "unknown"
 }
-class Q extends(i = Chunk311907.Ay.Store) {
+class X extends(i = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(E.default, y.A, O.A, f.Ay)
   }
@@ -332,10 +332,10 @@ class Q extends(i = Chunk311907.Ay.Store) {
     return null == r ? true : r.get(t)
   }
 }
-I(Q, "displayName", "StreamRTCConnectionStore");
-let J = new Q(Chunk73153.h, !Chunk430452.A.isSupported() || __OVERLAY__ ? {} : {
-  CONNECTION_OPEN: j,
-  CONNECTION_CLOSED: M,
+I(X, "displayName", "StreamRTCConnectionStore");
+let J = new X(Chunk73153.h, !Chunk430452.A.isSupported() || __OVERLAY__ ? {} : {
+  CONNECTION_OPEN: M,
+  CONNECTION_CLOSED: j,
   RTC_CONNECTION_STATE: W,
   RTC_CONNECTION_PING: W,
   RTC_CONNECTION_LOSS_RATE: W,
@@ -345,10 +345,10 @@ let J = new Q(Chunk73153.h, !Chunk430452.A.isSupported() || __OVERLAY__ ? {} : {
   STREAM_START: k,
   STREAM_STOP: U,
   STREAM_CREATE: G,
-  STREAM_SERVER_UPDATE: V,
+  STREAM_SERVER_UPDATE: F,
   STREAM_UPDATE: B,
   STREAM_DELETE: H,
-  MEDIA_ENGINE_CONNECTION_STATS: F,
+  MEDIA_ENGINE_CONNECTION_STATS: V,
   STREAM_LAYOUT_UPDATE: Y,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: q,
   VIDEO_SIZE_UPDATE: Z

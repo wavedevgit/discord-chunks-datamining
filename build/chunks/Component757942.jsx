@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 757942, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 757942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk735438 = require("./735438.js"),
-  a = require.n(Chunk735438),
+  l = require.n(Chunk735438),
   Chunk397927 = require("./397927.js"),
   Chunk310953 = require("./310953.js"),
   Chunk366811 = require("./366811.js"),
@@ -20,101 +19,78 @@ var Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk790782 = require("./790782.js");
 
-function g(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function E(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      g(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function y(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function O(e, t) {
-  let n = [h.ME, ...d.Ay.getFlattenedGuildIds()],
-    r = n.indexOf(e);
-  return t > 0 ? n.slice(r).concat(n.slice(0, r), e) : (n.splice(r, 0, e), n.slice(r + 1).concat(n.slice(0, r + 1)))
-}
-
-function v(e, t) {
-  return e === h.ME ? f.A.getPrivateChannelIds() : (0, o.A)(e, {
-    withVoiceChannels: t,
-    withCurrentVoiceChannel: true
-  }).map(e => e.id)
-}
-
-function A(e, t) {
+function f(e, t) {
   return [{
     resourceId: e,
-    type: m.P.GUILD_EVENT
-  }, ...v(e, t)]
+    type: A.P.GUILD_EVENT
+  }, ...e === g.ME ? _.A.getPrivateChannelIds() : (0, a.A)(e, {
+    withVoiceChannels: t,
+    withCurrentVoiceChannel: true
+  }).map(e => e.id)]
 }
-
-function I(e, t) {
-  var i, a;
-  let o, {
-      channelPredicate: d = () => true,
-      guildPredicate: f = () => true,
-      guildFeaturePredicate: m = () => false,
-      ensureChatIsVisible: g = () => false,
-      withVoiceChannels: y = false
+let h = l().throttle(function(e, t) {
+  var i, l, a;
+  let _, A, h, {
+      channelPredicate: b = () => true,
+      guildPredicate: E = () => true,
+      guildFeaturePredicate: x = () => false,
+      ensureChatIsVisible: O = () => false,
+      withVoiceChannels: C = false
     } = t,
-    v = null != (i = l.A.getState().guildId) ? i : h.ME,
-    I = l.A.getState().channelId,
-    S = O(v, e),
-    T = e > 0 ? 0 : S.length - 1,
-    C = A(v, y),
-    N = C.indexOf(I) + e;
-  for (; null != v && "" !== v;) {
-    if (o = C[N], f(v))
-      for (; null != o && "" !== o;) {
-        if ("string" == typeof o) {
-          if (d(v, o)) return (0, _.i)(v, o, false, g(v, o))
-        } else if ("object" == typeof o && m(o.resourceId, o.type)) return v !== u.A.getGuildId() && (0, _.i)(v, null == (a = c.Ay.getDefaultChannel(v)) ? true : a.id), (0, s.mMO)(async () => {
+    I = null != (i = o.A.getState().guildId) ? i : g.ME,
+    T = o.A.getState().channelId,
+    S = (a = I, A = (_ = [g.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(a), e > 0 ? _.slice(A).concat(_.slice(0, A), a) : (_.splice(A, 0, a), _.slice(A + 1).concat(_.slice(0, A + 1)))),
+    j = e > 0 ? 0 : S.length - 1,
+    v = f(I, C),
+    N = v.indexOf(T) + e;
+  for (; null != I && "" !== I;) {
+    if (h = v[N], E(I))
+      for (; null != h && "" !== h;) {
+        if ("string" == typeof h) {
+          if (b(I, h)) return (0, m.i)(I, h, false, O(I, h))
+        } else if ("object" == typeof h && x(h.resourceId, h.type)) return I !== d.A.getGuildId() && (0, m.i)(I, null == (l = c.Ay.getDefaultChannel(I)) ? true : l.id), (0, s.mMO)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("51354"), n.e("7453"), n.e("27728")]).then(n.bind(n, 926956));
-          return t => (0, r.jsx)(e, b(E({}, t), {
-            guildId: v
+          return t => (0, r.jsx)(e, function(e, t) {
+            return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+              var n = Object.keys(e);
+              if (Object.getOwnPropertySymbols) {
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
+              }
+              return n
+            })(Object(t)).forEach(function(n) {
+              Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+            }), e
+          }(function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({}, t), {
+            guildId: I
           }))
         });
-        N += e, o = C[N]
+        N += e, h = v[N]
       }
-    if (T += e, null == (v = S[T]) || "" === v) break;
-    C = A(v, y), N = e < 0 ? C.length - 1 : 0
+    if (j += e, null == (I = S[j]) || "" === I) break;
+    v = f(I, C), N = e < 0 ? v.length - 1 : 0
   }
-  p._.dispatch(h.jej.SHAKE_APP, {
+  p._.dispatch(g.jej.SHAKE_APP, {
     duration: 200,
     intensity: 2
   })
-}
-let S = a().throttle(I, Chunk652215.ugG)
+}, Chunk652215.ugG)

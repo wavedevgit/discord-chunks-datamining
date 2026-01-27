@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 349439, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 349439, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   GQ: () => m,
-  GZ: () => E,
+  GZ: () => A,
   il: () => g,
   nF: () => _,
-  rj: () => h
+  rj: () => p
 });
 var Chunk575593 = require("./575593.js"),
   Chunk289397 = require("./289397.js"),
@@ -17,33 +16,18 @@ var Chunk575593 = require("./575593.js"),
   Chunk788868 = require("./788868.js"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx");
-let f = 40,
-  p = e => {
-    switch (e) {
-      case r.R.AVATAR_DECORATION:
-        return d.intl.string(u.default.obi47v);
-      case r.R.PROFILE_EFFECT:
-        return d.intl.string(u.default.RX8BMR);
-      case r.R.NAMEPLATE:
-        return d.intl.string(u.default.nNGEHk);
-      case r.R.BUNDLE:
-        return d.intl.string(u.default.VS1fKo);
-      default:
-        return ""
-    }
-  },
-  _ = e => {
+let _ = e => {
     if (0 === e.items.length) return null;
     let t = e.items[0];
-    return (0, a.T)(t) ? (0, l.F_)({
+    return (0, l.T)(t) ? (0, o.F_)({
       avatarDecoration: {
         asset: t.asset
       },
-      size: f,
+      size: 40,
       canAnimate: true
     }) : null
   },
-  h = e => {
+  p = e => {
     if (0 === e.items.length) return null;
     let t = e.items[0];
     return (0, s.F)(t) ? (0, i.n)("collectibles/".concat(t.asset, "static.png")) : null
@@ -51,23 +35,36 @@ let f = 40,
   m = e => {
     if (0 === e.items.length) return null;
     let t = e.items[0];
-    return (0, o.C)(t) ? t.thumbnailPreviewSrc : null
+    return (0, a.C)(t) ? t.thumbnailPreviewSrc : null
   },
   g = e => {
     if (null == e) returnfalse;
     let t = c.hd[e];
     return (null == t ? true : t.skuId) === c.pe.GUILD
   },
-  E = (e, t) => {
-    let n, r, i = null != t;
-    if (null != e) n = e.name, r = p(e.type);
-    else if (i && null != t) {
+  A = (e, t) => {
+    let n, i, l = null != t;
+    if (null != e) n = e.name, i = (e => {
+      switch (e) {
+        case r.R.AVATAR_DECORATION:
+          return u.intl.string(d.default.obi47v);
+        case r.R.PROFILE_EFFECT:
+          return u.intl.string(d.default.RX8BMR);
+        case r.R.NAMEPLATE:
+          return u.intl.string(d.default.nNGEHk);
+        case r.R.BUNDLE:
+          return u.intl.string(d.default.VS1fKo);
+        default:
+          return ""
+      }
+    })(e.type);
+    else if (l && null != t) {
       let e = c.hd[t];
       n = null == e ? true : e.name
     }
     return {
       displayName: n,
-      typeName: r,
-      isSubscription: i
+      typeName: i,
+      isSubscription: l
     }
   }

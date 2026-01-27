@@ -50,7 +50,7 @@ function I() {
 
 function S(e = true) {
   return (0, u.i)({
-    parsers: [new E.A(true), new r.A, new i.A, new p.A, new s.A(e), new o.A],
+    parsers: [new E.A(true), new r.A, new i.A, new p.A, new o.A(e), new s.A],
     refiners: [new c.A, new l.A]
   }, e)
 }

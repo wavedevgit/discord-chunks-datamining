@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk834730 = require("./834730.jsx"),
   Chunk707554 = require("./707554.jsx"),
   Chunk163964 = require("./163964.js");
@@ -58,11 +58,11 @@ let _ = Chunk64700.forwardRef(function(e, t) {
     variant: a,
     className: u
   } = n, p = f(n, ["variant", "className"]), [_] = i, h = (0, l.$)(), m = "h".concat(Math.min(h, 6));
-  return (0, r.jsx)(o.E, d({
+  return (0, r.jsx)(s.E, d({
     ref: _,
     variant: a,
     tag: m,
-    className: s()(c.f, u)
+    className: o()(c.f, u)
   }, h > 6 ? {
     "data-excessive-heading-level": h
   } : {}, p))

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 178910, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 178910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $: () => c,
   y: () => u
@@ -17,19 +16,19 @@ function c(e) {
   let {
     activityUsers: t,
     guildId: n,
-    activityText: s
+    activityText: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: l.i,
-    children: [(0, r.jsx)(a.Ay, {
+    className: o.i,
+    children: [(0, r.jsx)(l.Ay, {
       guildId: n,
       users: t,
       max: 6,
-      size: a.DN.SIZE_16
+      size: l.DN.SIZE_16
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
       color: "none",
-      children: s
+      children: a
     })]
   })
 }
@@ -40,21 +39,21 @@ function u(e) {
     activityUsersCount: n
   } = e;
   switch (null == t ? true : t.type) {
-    case s.$pd.STREAMING:
+    case a.$pd.STREAMING:
       return {
-        text: o.intl.formatToPlainString(o.t.tyCw2q, {
+        text: s.intl.formatToPlainString(s.t.tyCw2q, {
           count: n
         }), Icon: i.ofK
       };
-    case s.$pd.LISTENING:
+    case a.$pd.LISTENING:
       return {
-        text: o.intl.formatToPlainString(o.t["2l8yka"], {
+        text: s.intl.formatToPlainString(s.t["2l8yka"], {
           count: n
         }), Icon: i.T7G
       };
     default:
       return {
-        text: o.intl.formatToPlainString(o.t.yJj035, {
+        text: s.intl.formatToPlainString(s.t.yJj035, {
           count: n
         }), Icon: i._xR
       }

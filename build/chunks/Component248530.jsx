@@ -9,7 +9,7 @@ require("./64700.js");
 var Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
   Chunk575087 = require("./575087.js"),
-  o = require.n(Chunk575087),
+  s = require.n(Chunk575087),
   Chunk827734 = require("./827734.js"),
   Chunk500804 = require("./500804.js");
 
@@ -43,21 +43,21 @@ function p(e) {
     className: t,
     percents: n,
     size: i = "small",
-    foregroundColors: s = [l.A.unsafe_rawColors.BRAND_500.css],
+    foregroundColors: o = [l.A.unsafe_rawColors.BRAND_500.css],
     backgroundColor: u = "var(--interactive-background-active)",
     animate: f = true
-  } = e, p = o()(null != n ? n : [], s).map((e, t) => {
-    let n, [s, o] = e;
-    return n = Array.isArray(o) ? {
-      background: "linear-gradient(to right, ".concat(o[0], ", ").concat(o[1], ")")
+  } = e, p = s()(null != n ? n : [], o).map((e, t) => {
+    let n, [o, s] = e;
+    return n = Array.isArray(s) ? {
+      background: "linear-gradient(to right, ".concat(s[0], ", ").concat(s[1], ")")
     } : {
-      backgroundColor: o
+      backgroundColor: s
     }, (0, r.jsx)("div", {
       className: a()(c.progressBar, c[i], {
         [c.animating]: f
       }),
       style: d({
-        transform: "translate3d(".concat(Math.min(Math.max(0, null != s ? s : 0), 100) - 100, "%, 0, 0)")
+        transform: "translate3d(".concat(Math.min(Math.max(0, null != o ? o : 0), 100) - 100, "%, 0, 0)")
       }, n)
     }, t)
   }).reverse();

@@ -2,16 +2,16 @@
 /** chunk id: 90084, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => o
+  u: () => s
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk250527 = require("./250527.js"),
   Chunk837011 = require("./837011.js");
 
-function o(e) {
-  let t = (0, i.bG)([s.A], () => s.A.getProfile(e)),
-    n = (0, i.bG)([s.A], () => s.A.getFetchStatus(e));
+function s(e) {
+  let t = (0, i.bG)([o.A], () => o.A.getProfile(e)),
+    n = (0, i.bG)([o.A], () => o.A.getFetchStatus(e));
   return {
     guildProfile: t,
     fetchGuildProfile: r.useCallback(async function() {

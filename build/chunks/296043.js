@@ -61,7 +61,7 @@ let v = async e => {
     messageId: n,
     messageFlags: i,
     customId: a,
-    componentId: o,
+    componentId: s,
     applicationId: l,
     channelId: _,
     guildId: h,
@@ -71,15 +71,15 @@ let v = async e => {
   await c.A.unarchiveThreadIfNecessary(_), (0, f.tU)(E, {
     messageId: n,
     data: {
-      interactionType: s.G4.MESSAGE_COMPONENT,
+      interactionType: o.G4.MESSAGE_COMPONENT,
       applicationId: l,
       customId: a,
-      componentId: o
+      componentId: s
     },
     onFailure: (e, t) => I(_, e, t)
-  }), null != g && (0, f.Sw)(n, E, g, o);
+  }), null != g && (0, f.Sw)(n, E, g, s);
   let b = {
-    type: s.G4.MESSAGE_COMPONENT,
+    type: o.G4.MESSAGE_COMPONENT,
     nonce: E,
     guild_id: h,
     channel_id: _,
@@ -105,18 +105,18 @@ let v = async e => {
 function A(e) {
   if (null == e) return null;
   switch (e.type) {
-    case s.I5.TEXT_INPUT:
-    case s.I5.FILE_UPLOAD:
-    case s.I5.RADIO_GROUP:
-    case s.I5.CHECKBOX_GROUP:
-    case s.I5.CHECKBOX:
+    case o.I5.TEXT_INPUT:
+    case o.I5.FILE_UPLOAD:
+    case o.I5.RADIO_GROUP:
+    case o.I5.CHECKBOX_GROUP:
+    case o.I5.CHECKBOX:
       return null;
-    case s.I5.STRING_SELECT:
+    case o.I5.STRING_SELECT:
       return e;
-    case s.I5.USER_SELECT:
-    case s.I5.ROLE_SELECT:
-    case s.I5.MENTIONABLE_SELECT:
-    case s.I5.CHANNEL_SELECT:
+    case o.I5.USER_SELECT:
+    case o.I5.ROLE_SELECT:
+    case o.I5.MENTIONABLE_SELECT:
+    case o.I5.CHANNEL_SELECT:
       let t = e.selectedOptions.map(e => e.value);
       return {
         type: e.type, values: t
@@ -133,13 +133,13 @@ let I = (e, t, n) => {
       if (!t.hasErr)
         if (t.status >= 400 && t.status < 500 && t.body)
           if (t.body.code === m.t02.INVALID_FORM_BODY && t.body.errors) {
-            let s = (0, h.W)(t.body.errors);
-            null != s && ("INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" === s.code || "INTERACTION_APPLICATION_COMMAND_INVALID" === s.code) && i.h.dispatch({
+            let o = (0, h.W)(t.body.errors);
+            null != o && ("INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" === o.code || "INTERACTION_APPLICATION_COMMAND_INVALID" === o.code) && i.h.dispatch({
               type: "APPLICATION_COMMAND_EXECUTE_BAD_VERSION",
               applicationId: n,
               channelId: r,
               guildId: null != a ? a : null
-            }), (0, f.C1)(e, true, null == s ? true : s.message);
+            }), (0, f.C1)(e, true, null == o ? true : o.message);
             return
           } else return t.body.code !== m.t02.UNKNOWN_INTEGRATION ? void(0, f.C1)(e, t.body.code, t.body.message, t.status) : (i.h.dispatch({
             type: "APPLICATION_COMMAND_EXECUTE_BAD_VERSION",
@@ -148,8 +148,8 @@ let I = (e, t, n) => {
             guildId: null != a ? a : null
           }), (0, f.C1)(e, true, t.body.message), true);
       else {
-        var s;
-        (0, f.C1)(e, null == (s = t.body) ? true : s.code);
+        var o;
+        (0, f.C1)(e, null == (o = t.body) ? true : o.code);
         return
       }(0, f.C1)(e)
     }
@@ -161,29 +161,29 @@ let C = (e, t) => {
   let n = null == t ? true : t.state,
     r = e.state === m.cmJ.SENT && b(e.id) < Date.now(),
     i = e.state === m.cmJ.SEND_FAILED && O(e.id) < Date.now(),
-    a = (null == t ? true : t.data.interactionType) === s.G4.APPLICATION_COMMAND,
-    o = e.isCommandType();
-  if (a && n === _.m.QUEUED || o && e.state === m.cmJ.SENDING && null != t) return 0;
+    a = (null == t ? true : t.data.interactionType) === o.G4.APPLICATION_COMMAND,
+    s = e.isCommandType();
+  if (a && n === _.m.QUEUED || s && e.state === m.cmJ.SENDING && null != t) return 0;
   if (a && n === _.m.CREATED || e.hasFlag(m.pr7.LOADING) && !r) return 1;
   if (null != e.interaction && e.hasFlag(m.pr7.LOADING) && r) return 3;
   if (null != e.interaction && !e.hasFlag(m.pr7.LOADING) && i) return 3;
-  if (o && e.state === m.cmJ.SEND_FAILED) return 2;
+  if (s && e.state === m.cmJ.SEND_FAILED) return 2;
   else if (null != e.interaction && e.hasFlag(m.pr7.EPHEMERAL)) return 4
 };
 
 function N(e) {
   let t = e.options;
   for (;
-    (null == t ? true : t.length) === 1 && (t[0].type === s.n4.SUB_COMMAND_GROUP || t[0].type === s.n4.SUB_COMMAND);) t = t[0].options;
+    (null == t ? true : t.length) === 1 && (t[0].type === o.n4.SUB_COMMAND_GROUP || t[0].type === o.n4.SUB_COMMAND);) t = t[0].options;
   for (let e of null != t ? t : [])
-    if (e.type === s.n4.ATTACHMENT) returnfalse;
+    if (e.type === o.n4.ATTACHMENT) returnfalse;
   returntrue
 }
 
 function w(e, t) {
   switch (e) {
     case l.A.ReasonCodes.TIMEOUT:
-      let n = o.A.getApplication(t);
+      let n = s.A.getApplication(t);
       if (null != n) return g.intl.formatToPlainString(g.t.u2D2Uj, {
         applicationName: n.name
       });

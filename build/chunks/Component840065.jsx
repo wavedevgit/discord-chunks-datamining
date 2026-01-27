@@ -78,10 +78,10 @@ function m(e, t) {
 let g = "USER_SETTINGS_MODAL_MODAL_KEY";
 async function E(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true,
-    o = arguments.length > 2 ? arguments[2] : true,
+    s = arguments.length > 2 ? arguments[2] : true,
     [l = {
       section: u.nc_.ACCOUNT
-    }, ...c] = [t, o],
+    }, ...c] = [t, s],
     {
       subsection: d,
       stackingBehavior: p = "replaceAll"
@@ -91,12 +91,12 @@ async function E(e) {
   a.h.dispatch(f({
     type: "USER_SETTINGS_MODAL_OPEN",
     subsection: null != d ? d : null
-  }, m)), (0, i.kBI)(g) ? s.A.setState({
+  }, m)), (0, i.kBI)(g) ? o.A.setState({
     requestedTargetKey: e
   }) : await (0, i.mMO)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("28979"), n.e("21940")]).then(n.bind(n, 796150));
+    } = await Promise.all([n.e("54809"), n.e("87093"), n.e("38939"), n.e("92351"), n.e("57490"), n.e("3795"), n.e("28936"), n.e("40215"), n.e("40396"), n.e("13088"), n.e("48330"), n.e("92414"), n.e("62175"), n.e("97283"), n.e("94857"), n.e("7034"), n.e("20941"), n.e("37372"), n.e("67923"), n.e("3183"), n.e("92917"), n.e("2292"), n.e("45586"), n.e("62733"), n.e("22726"), n.e("83518"), n.e("5152"), n.e("21425"), n.e("52199"), n.e("3911"), n.e("34749"), n.e("44667"), n.e("7803"), n.e("84704"), n.e("67646"), n.e("60667"), n.e("35195"), n.e("5066"), n.e("98797"), n.e("82575"), n.e("28979"), n.e("51901")]).then(n.bind(n, 796150));
     return n => (0, r.jsx)(t, _(f({}, n), {
       target: e
     }))
@@ -114,7 +114,7 @@ function y(e) {
     subsection: n,
     urlOrigin: r
   } = e;
-  o.default.track(u.HAw.USER_SETTINGS_URL_PARSED, {
+  s.default.track(u.HAw.USER_SETTINGS_URL_PARSED, {
     user_settings_section: t,
     user_settings_subsection: n,
     user_settings_url_origin: r
@@ -127,7 +127,7 @@ function b(e) {
     subsection: n,
     urlOrigin: r
   } = e;
-  o.default.track(u.HAw.USER_SETTINGS_URL_PARSING_FAILED, {
+  s.default.track(u.HAw.USER_SETTINGS_URL_PARSING_FAILED, {
     user_settings_section: t,
     user_settings_subsection: n,
     user_settings_url_origin: r

@@ -67,11 +67,11 @@ function E(e) {
   if (n !== f.x.DEFAULT) returnfalse;
   let a = null == (t = d.default.getCurrentUser()) ? true : t.id;
   if (null == a) returnfalse;
-  let s = r === a ? f.oh.AUDIO_INPUT : f.oh.AUDIO_OUTPUT;
-  if (i === f.ME.NONE && I.isSampling(s)) I.stopSampling(s);
+  let o = r === a ? f.oh.AUDIO_INPUT : f.oh.AUDIO_OUTPUT;
+  if (i === f.ME.NONE && I.isSampling(o)) I.stopSampling(o);
   else {
-    if (i === f.ME.NONE || I.isSampling(s)) returnfalse;
-    I.startSampling(s)
+    if (i === f.ME.NONE || I.isSampling(o)) returnfalse;
+    I.startSampling(o)
   }
 }
 

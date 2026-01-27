@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -42,7 +42,7 @@ function o(e, t) {
 }
 
 function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,13 +72,13 @@ function d(e) {
     width: t = 14,
     height: n = 13,
     color: a = "currentColor",
-    foreground: o
+    foreground: s
   } = e, u = c(e, ["width", "height", "color", "foreground"]);
-  return (0, r.jsx)("svg", l(s({}, (0, i.A)(s({}, u))), {
+  return (0, r.jsx)("svg", l(o({}, (0, i.A)(o({}, u))), {
     width: t,
     height: n,
     viewBox: "0 0 ".concat(t, " ").concat(n),
-    className: o,
+    className: s,
     fill: a,
     xmlns: "http://www.w3.org/2000/svg",
     children: (0, r.jsx)("path", {

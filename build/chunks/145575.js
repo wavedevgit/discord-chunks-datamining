@@ -5,8 +5,8 @@ var n = "function" == typeof Symbol && Symbol.for,
   r = n ? Symbol.for("react.element") : 60103,
   i = n ? Symbol.for("react.portal") : 60106,
   a = n ? Symbol.for("react.fragment") : 60107,
-  s = n ? Symbol.for("react.strict_mode") : 60108,
-  o = n ? Symbol.for("react.profiler") : 60114,
+  o = n ? Symbol.for("react.strict_mode") : 60108,
+  s = n ? Symbol.for("react.profiler") : 60114,
   l = n ? Symbol.for("react.provider") : 60109,
   c = n ? Symbol.for("react.context") : 60110,
   u = n ? Symbol.for("react.async_mode") : 60111,
@@ -30,8 +30,8 @@ function O(e) {
           case u:
           case d:
           case a:
-          case o:
           case s:
+          case o:
           case p:
             return e;
           default:
@@ -55,7 +55,7 @@ function O(e) {
 function v(e) {
   return O(e) === d
 }
-exports.AsyncMode = u, exports.ConcurrentMode = d, exports.ContextConsumer = c, exports.ContextProvider = l, exports.Element = r, exports.ForwardRef = f, exports.Fragment = a, exports.Lazy = m, exports.Memo = h, exports.Portal = i, exports.Profiler = o, exports.StrictMode = s, exports.Suspense = p, exports.isAsyncMode = function(e) {
+exports.AsyncMode = u, exports.ConcurrentMode = d, exports.ContextConsumer = c, exports.ContextProvider = l, exports.Element = r, exports.ForwardRef = f, exports.Fragment = a, exports.Lazy = m, exports.Memo = h, exports.Portal = i, exports.Profiler = s, exports.StrictMode = o, exports.Suspense = p, exports.isAsyncMode = function(e) {
   return v(e) || O(e) === u
 }, exports.isConcurrentMode = v, exports.isContextConsumer = function(e) {
   return O(e) === c
@@ -74,11 +74,11 @@ exports.AsyncMode = u, exports.ConcurrentMode = d, exports.ContextConsumer = c, 
 }, exports.isPortal = function(e) {
   return O(e) === i
 }, exports.isProfiler = function(e) {
-  return O(e) === o
-}, exports.isStrictMode = function(e) {
   return O(e) === s
+}, exports.isStrictMode = function(e) {
+  return O(e) === o
 }, exports.isSuspense = function(e) {
   return O(e) === p
 }, exports.isValidElementType = function(e) {
-  return "string" == typeof e || "function" == typeof e || e === a || e === d || e === o || e === s || e === p || e === _ || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === y || e.$$typeof === b || e.$$typeof === g)
+  return "string" == typeof e || "function" == typeof e || e === a || e === d || e === s || e === o || e === p || e === _ || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === y || e.$$typeof === b || e.$$typeof === g)
 }, exports.typeOf = O

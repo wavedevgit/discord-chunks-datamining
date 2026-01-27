@@ -8,7 +8,7 @@ var Chunk118356 = require("./118356.js"),
   Chunk205693 = require("./205693.js"),
   Chunk731854 = require("./731854.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = new Chunk118356.Vy("ConnectionEventFramerateReducer");
+let s = new Chunk118356.Vy("ConnectionEventFramerateReducer");
 class l {
   initialize() {
     this.userSpeakingChange(true)
@@ -28,7 +28,7 @@ class l {
         return
       }
       this.framerateReductionTimeout = setTimeout(() => {
-        this.connection.destroyed || (o.info("BaseConnection.userSpeakingChange: Reduced framerate after ".concat(a.qm, " ms.")), this.framerateReductionTimeout = true, this.sinkWants.isMuted = true, this.updateRemoteWantsFramerate())
+        this.connection.destroyed || (s.info("BaseConnection.userSpeakingChange: Reduced framerate after ".concat(a.qm, " ms.")), this.framerateReductionTimeout = true, this.sinkWants.isMuted = true, this.updateRemoteWantsFramerate())
       }, a.qm)
     }
   }
@@ -42,10 +42,10 @@ class l {
     this.destroyFramerateScaleFactorTimers()
   }
   constructor(e, t) {
-    s(this, "connection", true), s(this, "sinkWants", true), s(this, "framerateReductionTimeout", true), s(this, "handleSpeaking", true), s(this, "handleSelfMute", true), this.connection = e, this.sinkWants = t, this.handleSpeaking = (e, t) => {
+    o(this, "connection", true), o(this, "sinkWants", true), o(this, "framerateReductionTimeout", true), o(this, "handleSpeaking", true), o(this, "handleSelfMute", true), this.connection = e, this.sinkWants = t, this.handleSpeaking = (e, t) => {
       e === this.connection.userId && this.userSpeakingChange(t === a.ME.NONE)
     }, this.handleSelfMute = e => {
       this.connection.hasDesktopSource() || (this.destroyFramerateScaleFactorTimers(), this.sinkWants.isMuted = e, this.updateRemoteWantsFramerate())
-    }, o.enableNativeLogger(true), e.on(i.yq.Speaking, this.handleSpeaking), e.on(i.yq.Mute, this.handleSelfMute), this.initialize()
+    }, s.enableNativeLogger(true), e.on(i.yq.Speaking, this.handleSpeaking), e.on(i.yq.Mute, this.handleSelfMute), this.initialize()
   }
 }

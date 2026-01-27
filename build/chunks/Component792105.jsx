@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk201275 = require("./201275.js"),
@@ -66,7 +66,7 @@ function v(e) {
     theme: a,
     content: E = m.intl.string(m.t["6OSasb"]),
     className: b
-  } = e, v = (0, o.bG)([p.default], () => p.default.getCurrentUser()), A = _.Ay.useName(t, null, v), I = (0, c.ox)(n), S = i.useMemo(() => (0, u.rh)(O(y({}, (0, d.Ay)({
+  } = e, v = (0, s.bG)([p.default], () => p.default.getCurrentUser()), A = _.Ay.useName(t, null, v), I = (0, c.ox)(n), S = i.useMemo(() => (0, u.rh)(O(y({}, (0, d.Ay)({
     channelId: "0",
     content: E,
     tts: true,
@@ -85,7 +85,7 @@ function v(e) {
   return (0, r.jsx)(l.NPJ, {
     theme: a,
     children: e => (0, r.jsx)("div", {
-      className: s()(e, g.k, b),
+      className: o()(e, g.k, b),
       children: (0, r.jsx)(f.A, {
         hideTimestamp: true,
         author: T,

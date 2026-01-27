@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ function c() {
 }
 
 function u() {
-  delete l[s.LU7.SOUND]
+  delete l[o.LU7.SOUND]
 }
 
 function d(e) {
@@ -31,7 +31,7 @@ function d(e) {
     errorMessage: t,
     errorCode: n
   } = e;
-  l[s.LU7.SOUND] = {
+  l[o.LU7.SOUND] = {
     errorMessage: t,
     errorCode: n
   }
@@ -41,7 +41,7 @@ class f extends(r = Chunk311907.Ay.Store) {
     return l[e]
   }
 }
-o(f, "displayName", "HookErrorStore");
+s(f, "displayName", "HookErrorStore");
 let p = new f(Chunk73153.h, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: c,
   MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING: u,

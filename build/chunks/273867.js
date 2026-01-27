@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 273867, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 273867, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => b
 }), require("./896048.js"), require("./321073.js");
 var Chunk136722 = require("./136722.js"),
   Chunk937724 = require("./937724.js"),
@@ -18,7 +17,7 @@ var Chunk136722 = require("./136722.js"),
   Chunk723176 = require("./723176.js"),
   Chunk453001 = require("./453001.js");
 
-function m(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,20 +25,29 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = new Chunk626584.A("GuildBasicChannels");
-class E {
+let f = new Chunk626584.A("GuildBasicChannels");
+
+function h(e, t) {
+  return null == e || e.type !== t.type || e.parent_id !== t.parent_id || _.A.computeBasicPermissions(e) !== _.A.computeBasicPermissions(t)
+}
+let b = new class {
   async getAsync(e) {
     let t = performance.now(),
-      [n, r] = await Promise.all([_.A.basicChannels(e).getKvEntries(), _.A.syncedBasicChannels(e).getKvEntries()]),
+      [n, r] = await Promise.all([m.A.basicChannels(e).getKvEntries(), m.A.syncedBasicChannels(e).getKvEntries()]),
       i = performance.now() - t,
-      [a, s] = O(r),
-      o = new Set(a);
-    return this.synced = o, g.verbose("loaded in ".concat(i, "ms (guilds: ").concat(n.length, ", synced: ").concat(o.size, " unsynced: ").concat(s.length, ")")), {
+      [l, s] = function(e) {
+        let t = [],
+          n = [];
+        for (let [r, i] of e)(i ? t : n).push(r);
+        return [t, n]
+      }(r),
+      a = new Set(l);
+    return this.synced = a, f.verbose("loaded in ".concat(i, "ms (guilds: ").concat(n.length, ", synced: ").concat(a.size, " unsynced: ").concat(s.length, ")")), {
       all: n,
       stale: s,
       channels: n.filter(e => {
         let [t, n] = e;
-        return o.has(t)
+        return a.has(t)
       })
     }
   }
@@ -50,19 +58,19 @@ class E {
     null != e.channel.guild_id && this.unsync(e.channel.guild_id, t)
   }
   handleChannelUpdates(e, t) {
-    for (let n of e.channels.filter(e => null != e.guild_id)) y(c.A.getBasicChannel(n.id), n) && this.unsync(n.guild_id, t)
+    for (let n of e.channels.filter(e => null != e.guild_id)) h(c.A.getBasicChannel(n.id), n) && this.unsync(n.guild_id, t)
   }
   handleBackgroundSync(e, t) {
-    for (let a of e.guilds) switch (a.data_mode) {
+    for (let l of e.guilds) switch (l.data_mode) {
       case "unavailable":
         break;
       case "partial":
         var n, r, i;
-        let e = e => (0, o.UE)(e, a.id);
-        this.onGuildUpdate(a.id, null != (n = null == (i = a.partial_updates.channels) ? true : i.map(e)) ? n : [], null != (r = a.partial_updates.deleted_channel_ids) ? r : [], t);
+        let e = e => (0, a.UE)(e, l.id);
+        this.onGuildUpdate(l.id, null != (n = null == (i = l.partial_updates.channels) ? true : i.map(e)) ? n : [], null != (r = l.partial_updates.deleted_channel_ids) ? r : [], t);
         break;
       default:
-        this.onGuildSync(a.id, t)
+        this.onGuildSync(l.id, t)
     }
   }
   handleConnectionOpen(e, t) {
@@ -70,18 +78,18 @@ class E {
   }
   async handlePostConnectionOpen() {
     let e = s.A.lastTimeConnectedChanged(),
-      t = _.A.database();
+      t = m.A.database();
     if (null == this.synced || null == t || !(0, i.O)()) return;
-    let n = d.A.getGuildIds(),
+    let n = u.A.getGuildIds(),
       r = n.filter(e => !this.synced.has(e));
-    for (let i of (g.verbose("scheduling basic_channel optimstic writes (guilds: ".concat(r.length, ")")), n)) {
-      if (null == this.synced || t !== _.A.database() || e !== s.A.lastTimeConnectedChanged()) break;
+    for (let i of (f.verbose("scheduling basic_channel optimstic writes (guilds: ".concat(r.length, ")")), n)) {
+      if (null == this.synced || t !== m.A.database() || e !== s.A.lastTimeConnectedChanged()) break;
       if (!this.synced.has(i)) {
-        g.verbose("optimstically writing basic_channels (guild: ".concat(i, ")"));
+        f.verbose("optimstically writing basic_channels (guild: ".concat(i, ")"));
         try {
           await c.D.loadGuildIds([i]), await t.transaction(e => this.syncOne(i, e), "handlePostConnectionOpen")
         } catch (e) {
-          g.warn("couldn't optimstically write basic_channel:", e);
+          f.warn("couldn't optimstically write basic_channel:", e);
           return
         }
         await new Promise(e => setTimeout(e, 1e3))
@@ -112,11 +120,11 @@ class E {
   }
   handleGuildRoleUpdate(e, t) {
     let n = e.role,
-      i = u.A.getRole(e.guildId, n.id);
+      i = d.A.getRole(e.guildId, n.id);
     null != i && r.aI(r.iu(n.permissions), i.permissions) || this.unsync(e.guildId, t)
   }
   handleGuildMemberUpdate(e, t) {
-    e.user.id === l.default.getId() && this.unsync(e.guildId, t)
+    e.user.id === o.default.getId() && this.unsync(e.guildId, t)
   }
   handleWriteCaches(e, t) {
     this.sync(t)
@@ -125,35 +133,41 @@ class E {
     this.synced = null
   }
   onGuildUpdate(e, t, n, r) {
-    (n.length > 0 || t.some(e => y(c.A.getBasicChannel(e.id), e))) && this.unsync(e, r)
+    (n.length > 0 || t.some(e => h(c.A.getBasicChannel(e.id), e))) && this.unsync(e, r)
   }
   onGuildSync(e, t) {
     this.unsync(e, t)
   }
   delete(e, t) {
-    this.unsync(e, t), _.A.basicChannelsTransaction(t).delete(e), _.A.syncedBasicChannelsTransaction(t).delete(e)
+    this.unsync(e, t), m.A.basicChannelsTransaction(t).delete(e), m.A.syncedBasicChannelsTransaction(t).delete(e)
   }
   unsync(e, t) {
     var n;
-    null == (n = this.synced) || n.delete(e), _.A.basicChannelsTransaction(t).delete(e), _.A.syncedBasicChannelsTransaction(t).put(e, false), h.A.invalidate(e)
+    null == (n = this.synced) || n.delete(e), m.A.basicChannelsTransaction(t).delete(e), m.A.syncedBasicChannelsTransaction(t).put(e, false), g.A.invalidate(e)
   }
   sync(e) {
-    g.verbose("Starting to write all basic channels");
+    f.verbose("Starting to write all basic channels");
     let t = performance.now(),
       n = {
         written: 0,
         skipped: 0
       };
-    for (let t of d.A.getGuildIds()) this.syncOne(t, e) ? n.written++ : n.skipped++;
+    for (let t of u.A.getGuildIds()) this.syncOne(t, e) ? n.written++ : n.skipped++;
     let r = performance.now() - t;
-    g.verbose("".concat(n.written, " basic_channel guilds submitted (took: ").concat(r, "ms, skipped: ").concat(n.skipped, " guilds)"))
+    f.verbose("".concat(n.written, " basic_channel guilds submitted (took: ").concat(r, "ms, skipped: ").concat(n.skipped, " guilds)"))
   }
   syncOne(e, t) {
-    var n, r;
-    return !(null == d.A.getGuild(e) || (null == (n = this.synced) ? true : n.has(e))) && (null == (r = this.synced) || r.add(e), _.A.basicChannelsTransaction(t).put(e, b(e)), _.A.syncedBasicChannelsTransaction(t).put(e, true), true)
+    var n, r, i;
+    return !(null == u.A.getGuild(e) || (null == (n = this.synced) ? true : n.has(e))) && (null == (r = this.synced) || r.add(e), m.A.basicChannelsTransaction(t).put(e, (i = e, Object.values(c.A.getMutableGuildChannelsForGuild(i)).map(e => ({
+      id: e.id,
+      type: e.type,
+      guild_id: e.guild_id,
+      parent_id: e.parent_id,
+      basicPermissions: p.A.asBasicFlag(_.A.computePermissions(e))
+    })))), m.A.syncedBasicChannelsTransaction(t).put(e, true), true)
   }
   constructor() {
-    m(this, "synced", null), m(this, "actions", {
+    A(this, "synced", null), A(this, "actions", {
       BACKGROUND_SYNC: (e, t) => this.handleBackgroundSync(e, t),
       CHANNEL_CREATE: (e, t) => this.handleChannelCreate(e, t),
       CHANNEL_DELETE: (e, t) => this.handleChannelDelete(e, t),
@@ -169,25 +183,3 @@ class E {
     })
   }
 }
-
-function y(e, t) {
-  return null == e || e.type !== t.type || e.parent_id !== t.parent_id || f.A.computeBasicPermissions(e) !== f.A.computeBasicPermissions(t)
-}
-
-function b(e) {
-  return Object.values(c.A.getMutableGuildChannelsForGuild(e)).map(e => ({
-    id: e.id,
-    type: e.type,
-    guild_id: e.guild_id,
-    parent_id: e.parent_id,
-    basicPermissions: p.A.asBasicFlag(f.A.computePermissions(e))
-  }))
-}
-
-function O(e) {
-  let t = [],
-    n = [];
-  for (let [r, i] of e)(i ? t : n).push(r);
-  return [t, n]
-}
-let v = new E

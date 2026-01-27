@@ -48,7 +48,7 @@ function E(e) {
     url: t
   } = e;
   if (m(t)) returnfalse;
-  p.add((0, c.E)(t)), s.w.set(f, {
+  p.add((0, c.E)(t)), o.w.set(f, {
     trustedDomains: p,
     trustedProtocols: _
   })
@@ -59,7 +59,7 @@ function y(e) {
     url: t
   } = e;
   if (g(t)) returnfalse;
-  _.add((0, c.J)(t)), s.w.set(f, {
+  _.add((0, c.J)(t)), o.w.set(f, {
     trustedDomains: p,
     trustedProtocols: _
   })
@@ -67,7 +67,7 @@ function y(e) {
 class b extends(i = Chunk311907.Ay.Store) {
   initialize() {
     var e;
-    let t = null != (e = s.w.get(f)) ? e : {};
+    let t = null != (e = o.w.get(f)) ? e : {};
     if (Array.isArray(t)) p = new Set(null != t ? Array.from(t) : null), _ = new Set;
     else {
       let {

@@ -2,14 +2,14 @@
 /** chunk id: 488995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  GLOBAL_DISCOVERY_DEFAULT_TAB: () => o,
+  GLOBAL_DISCOVERY_DEFAULT_TAB: () => s,
   GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX: () => l,
   GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX: () => c,
   GLOBAL_DISCOVERY_TABS: () => i,
   GlobalDiscoveryAnalyticsLocations: () => f,
   GlobalDiscoveryRoutes: () => d,
   GlobalDiscoverySearchBarState: () => u,
-  GlobalDiscoverySharedTabId: () => s,
+  GlobalDiscoverySharedTabId: () => o,
   GlobalDiscoveryTab: () => r,
   MOBILE_GLOBAL_DISCOVERY_TABS: () => a
 });
@@ -18,10 +18,10 @@ var r = function(e) {
 }({});
 let i = ["apps", "servers", "quests"],
   a = ["servers", "quests"];
-var s = function(e) {
+var o = function(e) {
   return e.MORE = "More", e
 }({});
-let o = "servers",
+let s = "servers",
   l = 24,
   c = 240;
 var u = function(e) {

@@ -14,29 +14,29 @@ Chunk557939({
 }, {
   allSettled: function(e) {
     var t = this,
-      n = s.f(t),
+      n = o.f(t),
       r = n.resolve,
       c = n.reject,
-      u = o(function() {
+      u = s(function() {
         var n = a(t.resolve),
-          s = [],
-          o = 0,
+          o = [],
+          s = 0,
           c = 1;
         l(e, function(e) {
-          var a = o++,
+          var a = s++,
             l = false;
           c++, i(n, t, e).then(function(e) {
-            !l && (l = true, s[a] = {
+            !l && (l = true, o[a] = {
               status: "fulfilled",
               value: e
-            }, --c || r(s))
+            }, --c || r(o))
           }, function(e) {
-            !l && (l = true, s[a] = {
+            !l && (l = true, o[a] = {
               status: "rejected",
               reason: e
-            }, --c || r(s))
+            }, --c || r(o))
           })
-        }), --c || r(s)
+        }), --c || r(o)
       });
     return u.error && c(u.value), n.promise
   }

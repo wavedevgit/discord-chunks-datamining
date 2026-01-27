@@ -7,20 +7,20 @@ require.d(exports, {
   XR: () => d,
   bg: () => u,
   v2: () => l,
-  xi: () => o
+  xi: () => s
 });
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
   Chunk349435 = require("./349435.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t) {
+function s(e, t) {
   return i.h.dispatch({
     type: "DISMISS_CHANNEL_SAFETY_WARNINGS",
     channelId: e,
     warningIds: t
   }), r.Bo.post({
-    url: s.Rsh.CHANNEL_SAFETY_WARNINGS_ACK(e),
+    url: o.Rsh.CHANNEL_SAFETY_WARNINGS_ACK(e),
     body: {
       warning_ids: t
     },
@@ -54,14 +54,14 @@ function u(e) {
 
 function d(e) {
   return r.Bo.post({
-    url: s.Rsh.SAFETY_WARNING_FALSE_POSITIVE(e),
+    url: o.Rsh.SAFETY_WARNING_FALSE_POSITIVE(e),
     rejectWithError: false
   })
 }
 
 function f(e) {
   return r.Bo.post({
-    url: s.Rsh.ADD_SAFETY_WARNING(e),
+    url: o.Rsh.ADD_SAFETY_WARNING(e),
     body: {
       safety_warning_type: a._j.STRANGER_DANGER
     },

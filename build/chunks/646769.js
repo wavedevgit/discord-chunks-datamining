@@ -20,11 +20,11 @@ function c(e, t, n, i) {
     comparator: c = (e, t) => e === t
   } = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {}, u = () => {
     var r;
-    return n(null == (r = o.A.settings[e]) ? true : r[t])
-  }, d = () => (0, r.bG)([o.A], u, true, c);
+    return n(null == (r = s.A.settings[e]) ? true : r[t])
+  }, d = () => (0, r.bG)([s.A], u, true, c);
   return {
     getSetting: u,
-    updateSetting: p(u, n => s.wc.updateAsync(e, e => {
+    updateSetting: p(u, n => o.wc.updateAsync(e, e => {
       e[t] = i(n, e[t])
     }, a)),
     useSetting: d
@@ -32,22 +32,22 @@ function c(e, t, n, i) {
 }
 
 function u(e, t, n) {
-  let s = () => {
+  let o = () => {
     var r;
     let i = a.A.getState()[t];
     return null != (r = null == i ? true : i.settings[n]) ? r : e.getSetting()
   };
   return {
-    getSetting: s,
+    getSetting: o,
     useSetting: () => {
       let i = e.useSetting(),
-        s = (0, r.bG)([a.A], () => {
+        o = (0, r.bG)([a.A], () => {
           let e = a.A.getState()[t];
           return null == e ? true : e.settings[n]
         });
-      return null != s ? s : i
+      return null != o ? o : i
     },
-    updateSetting: p(s, r => a.A.shouldSync(t) ? e.updateSetting(r) : (i.h.dispatch({
+    updateSetting: p(o, r => a.A.shouldSync(t) ? e.updateSetting(r) : (i.h.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         [t]: {
@@ -86,17 +86,17 @@ function f(e) {
     useIsEligible: r,
     eligibleDefault: i,
     ineligibleDefault: a,
-    onUseDefault: s
+    onUseDefault: o
   } = e;
   return {
     getSetting: () => {
       let e = t.getSetting();
-      return null != e ? e : (null == s || s(), n() ? i() : a)
+      return null != e ? e : (null == o || o(), n() ? i() : a)
     },
     useSetting: () => {
       let e = t.useSetting(),
         n = r();
-      return null != e ? e : (null == s || s(), n ? i() : a)
+      return null != e ? e : (null == o || o(), n ? i() : a)
     },
     updateSetting: e => t.updateSetting(e)
   }

@@ -48,7 +48,7 @@ let m = window.matchMedia("(prefers-reduced-motion: reduce)"),
   v = 5;
 
 function A() {
-  let e = o.default.getCurrentUser();
+  let e = s.default.getCurrentUser();
   return null == e || Date.now() - e.createdAt < 864e5
 }
 
@@ -88,7 +88,7 @@ let S = {
     y.matches ? e = p.Fc.DARK : b.matches && (e = p.Fc.LIGHT);
     let t = (!c.isPlatformEmbedded || I()) && O.matches ? "active" : "none";
     a.h.wait(() => {
-      s.LA(e), u.RI(t)
+      o.LA(e), u.RI(t)
     })
   },
   handleSystemPrefersContrastChanged() {

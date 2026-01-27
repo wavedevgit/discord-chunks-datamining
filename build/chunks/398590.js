@@ -2,7 +2,7 @@
 /** chunk id: 398590, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  bz: () => s,
+  bz: () => o,
   id: () => i,
   jH: () => a
 });
@@ -21,7 +21,7 @@ function a() {
   })
 }
 
-function s() {
+function o() {
   r.h.dispatch({
     type: "LAYER_POP_ALL"
   })

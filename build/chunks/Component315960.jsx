@@ -1,7 +1,7 @@
-/** Chunk was on 77986 **/
-/** chunk id: 315960, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 74665 **/
+/** chunk id: 315960, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => o
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,32 +10,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk45750 = require("./45750.js");
 
-function u(e) {
+function o(e) {
   let {
-    selectedTab: t,
-    onTabSelected: n,
-    userCount: u
-  } = e, a = r.useRef(null);
-  return r.useEffect(() => {
-    var e, t, n;
-    return null == (n = a.current) || null == (t = n.ref) || null == (e = t.blur) ? true : e.call(t)
+    selectedTab: n,
+    onTabSelected: t,
+    userCount: o
+  } = e, c = i.useRef(null);
+  return i.useEffect(() => {
+    var e, n, t;
+    return null == (t = c.current) || null == (n = t.ref) || null == (e = n.blur) ? true : e.call(n)
   }, []), (0, l.jsx)("div", {
-    className: o.kL,
-    children: (0, l.jsxs)(i.VQ0, {
-      className: o.$H,
-      "aria-label": c.intl.string(c.t["+1H47t"]),
-      selectedItem: t,
+    className: a.kL,
+    children: (0, l.jsxs)(r.VQ0, {
+      className: a.$H,
+      "aria-label": s.intl.string(s.t["+1H47t"]),
+      selectedItem: n,
       type: "top",
-      onItemSelect: n,
-      children: [(0, l.jsx)(i.VQ0.Item, {
-        className: o.YU,
-        id: s.al.EVENT_INFO,
-        children: c.intl.string(c.t.iW6Xuo)
-      }), (0, l.jsx)(i.VQ0.Item, {
-        className: o.YU,
-        id: s.al.RSVP_LIST,
-        children: c.intl.formatToPlainString(c.t["ZrTT/N"], {
-          userCount: u
+      onItemSelect: t,
+      children: [(0, l.jsx)(r.VQ0.Item, {
+        className: a.YU,
+        id: d.al.EVENT_INFO,
+        children: s.intl.string(s.t.iW6Xuo)
+      }), (0, l.jsx)(r.VQ0.Item, {
+        className: a.YU,
+        id: d.al.RSVP_LIST,
+        children: s.intl.formatToPlainString(s.t["ZrTT/N"], {
+          userCount: o
         })
       })]
     })

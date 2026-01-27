@@ -26,11 +26,11 @@ var Chunk557939 = require("./557939.js"),
   S = function() {
     return this
   };
-module.exports = function(e, t, n, s, _, m, T) {
-  l(n, t, s);
+module.exports = function(e, t, n, o, _, m, T) {
+  l(n, t, o);
   var C, N, w, R = function(e) {
-      if (e === _ && j) return j;
-      if (!b && e && e in x) return x[e];
+      if (e === _ && M) return M;
+      if (!b && e && e in L) return L[e];
       switch (e) {
         case v:
         case A:
@@ -45,25 +45,25 @@ module.exports = function(e, t, n, s, _, m, T) {
     },
     P = t + " Iterator",
     D = false,
-    x = e.prototype,
-    L = x[O] || x["@@iterator"] || _ && x[_],
-    j = !b && L || R(_),
-    M = "Array" === t && x.entries || L;
-  if (M && (C = c(M.call(new e))) !== Object.prototype && C.next && (!a && c(C) !== y && (u ? u(C, y) : o(C[O]) || p(C, O, S)), d(C, P, true, true), a && (h[P] = S)), g && _ === A && L && L.name !== A && (!a && E ? f(x, "name", A) : (D = true, j = function() {
-      return i(L, this)
+    L = e.prototype,
+    x = L[O] || L["@@iterator"] || _ && L[_],
+    M = !b && x || R(_),
+    j = "Array" === t && L.entries || x;
+  if (j && (C = c(j.call(new e))) !== Object.prototype && C.next && (!a && c(C) !== y && (u ? u(C, y) : s(C[O]) || p(C, O, S)), d(C, P, true, true), a && (h[P] = S)), g && _ === A && x && x.name !== A && (!a && E ? f(L, "name", A) : (D = true, M = function() {
+      return i(x, this)
     })), _)
     if (N = {
         values: R(A),
-        keys: m ? j : R(v),
+        keys: m ? M : R(v),
         entries: R(I)
       }, T)
-      for (w in N) !b && !D && w in x || p(x, w, N[w]);
+      for (w in N) !b && !D && w in L || p(L, w, N[w]);
     else r({
       target: t,
       proto: true,
       forced: b || D
     }, N);
-  return (!a || T) && x[O] !== j && p(x, O, j, {
+  return (!a || T) && L[O] !== M && p(L, O, M, {
     name: _
-  }), h[t] = j, N
+  }), h[t] = M, N
 }

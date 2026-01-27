@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk384231 = require("./384231.js"),
   Chunk903369 = require("./903369.js"),
   Chunk491182 = require("./491182.jsx"),
@@ -68,7 +68,7 @@ function E(e) {
     previewGuildId: O,
     preview: v,
     author: A
-  } = e, I = null != O ? O : (0, l.U)(n), S = (0, o.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+  } = e, I = null != O ? O : (0, l.U)(n), S = (0, s.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
     content: T
   } = (0, u.A)(n, {
     hideSimpleEmbedContent: y,
@@ -82,7 +82,7 @@ function E(e) {
   })), [e, a, I]);
   return (0, r.jsx)(c.A, {
     compact: _,
-    className: s()(m, {
+    className: o()(m, {
       [p.iU]: true,
       [p.HJ]: !_,
       [p._A]: E

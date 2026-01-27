@@ -13,8 +13,8 @@ Chunk557939({
   at: function(e) {
     var t = i(this),
       n = a(t),
-      r = s(e),
-      o = r >= 0 ? r : n + r;
-    return o < 0 || o >= n ? true : t[o]
+      r = o(e),
+      s = r >= 0 ? r : n + r;
+    return s < 0 || s >= n ? true : t[s]
   }
 }), Chunk633228("at")

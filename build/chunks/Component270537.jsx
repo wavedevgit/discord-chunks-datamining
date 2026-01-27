@@ -25,7 +25,7 @@ function d(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: u.y
-    }), (0, r.jsx)(o.h, {
+    }), (0, r.jsx)(s.h, {
       label: t,
       defaultExpanded: c,
       isDisabled: !d,
@@ -38,8 +38,8 @@ function d(e) {
           id: t,
           label: n,
           amount: i
-        } = e, a = (0, s.$g)(i, l);
-        return (0, r.jsx)(o.i, {
+        } = e, a = (0, o.$g)(i, l);
+        return (0, r.jsx)(s.i, {
           label: n,
           value: a,
           valueColor: i < 0 ? "text-feedback-positive" : "text-muted"
@@ -59,7 +59,7 @@ function f(e) {
     currency: n
   } = e;
   if (0 === t) return null;
-  let i = (0, s.$g)(t, n);
+  let i = (0, o.$g)(t, n);
   return (0, r.jsx)(a.Text, {
     variant: "text-md/medium",
     color: "text-feedback-positive",
@@ -74,7 +74,7 @@ function p(e) {
     amount: t,
     currency: n,
     label: i
-  } = e, o = (0, s.$g)(t, n);
+  } = e, s = (0, o.$g)(t, n);
   return (0, r.jsxs)(a.Text, {
     variant: "text-lg/semibold",
     color: "text-strong",
@@ -82,7 +82,7 @@ function p(e) {
     children: [(0, r.jsx)("span", {
       children: null != i ? i : c.intl.string(l.default.Zxav97)
     }), (0, r.jsx)("span", {
-      children: o
+      children: s
     })]
   })
 }

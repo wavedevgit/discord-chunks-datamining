@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk160745 = require("./160745.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,7 +54,7 @@ class m extends(r = Chunk311907.Ay.Store) {
     return c
   }
   hasGenericSubscription() {
-    return null != l && l.some(e => e.identifier === s.Yq.GENERIC_SUBSCRIPTION)
+    return null != l && l.some(e => e.identifier === o.Yq.GENERIC_SUBSCRIPTION)
   }
   getProducts() {
     return l
@@ -63,7 +63,7 @@ class m extends(r = Chunk311907.Ay.Store) {
     return u
   }
 }
-o(m, "displayName", "GenericIAPStore");
+s(m, "displayName", "GenericIAPStore");
 let g = new m(Chunk73153.h, {
   IAP_LOAD_GENERIC_PRODUCTS: _,
   GENERIC_IAP_INIT_CONNECTION: d,

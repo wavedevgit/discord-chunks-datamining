@@ -17,11 +17,11 @@ module.exports = function(e) {
         begin: /''/
       }]
     },
-    s = {
+    o = {
       className: "string",
       begin: /(#\d+)+/
     },
-    o = {
+    s = {
       className: "number",
       begin: "\\b\\d+(\\.\\d+)?(DT|D|T)",
       relevance: 0
@@ -42,7 +42,7 @@ module.exports = function(e) {
         begin: /\(/,
         end: /\)/,
         keywords: n,
-        contains: [a, s, e.NUMBER_MODE]
+        contains: [a, o, e.NUMBER_MODE]
       }, ...i]
     },
     u = ["Table", "Form", "Report", "Dataport", "Codeunit", "XMLport", "MenuSuite", "Page", "Query"],
@@ -68,6 +68,6 @@ module.exports = function(e) {
       match: /[\w]+(?=\=)/,
       scope: "attribute",
       relevance: 0
-    }, a, s, o, l, e.NUMBER_MODE, d, c]
+    }, a, o, s, l, e.NUMBER_MODE, d, c]
   }
 }

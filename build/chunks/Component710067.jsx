@@ -2,12 +2,12 @@
 /** chunk id: 710067, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk907971 = require("./907971.js");
-let s = Chunk64700.memo(function(e) {
+let o = Chunk64700.memo(function(e) {
   let {
     className: t
   } = e;

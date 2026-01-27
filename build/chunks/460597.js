@@ -15,7 +15,7 @@ var Chunk64700 = require("./64700.js"),
 function u(e) {
   let {
     user: t
-  } = e, n = (0, a.f1)(t.id), u = o.Ay.useName(t), d = r.useCallback(e => {
+  } = e, n = (0, a.f1)(t.id), u = s.Ay.useName(t), d = r.useCallback(e => {
     let {
       id: n,
       name: r
@@ -29,7 +29,7 @@ function u(e) {
         gameName: r
       }),
       confirmText: c.intl.string(c.t["cY+Oob"]),
-      onConfirm: () => s.A.removeFriend({
+      onConfirm: () => o.A.removeFriend({
         userId: t.id,
         applicationId: n,
         location: "Context Menu"

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk902820 = require("./902820.js"),
@@ -29,17 +29,17 @@ function d(e) {
     p(false)
   };
   return null == n.coverImageUrl || f ? (0, r.jsxs)("div", {
-    className: s()(c.N, d),
+    className: o()(c.N, d),
     children: [(0, r.jsx)("div", {
       className: c.j
-    }), (0, r.jsx)(o.EYj, {
+    }), (0, r.jsx)(s.EYj, {
       variant: 1 === u ? "text-md/medium" : "text-xs/medium",
       color: "always-white",
       lineClamp: 1 === u ? 4 : 3,
       children: _
     }), (0, r.jsx)("div", {
       className: c.j
-    }), (0, r.jsx)(o.EYj, {
+    }), (0, r.jsx)(s.EYj, {
       variant: 1 === u ? "text-sm/normal" : "text-xxs/normal",
       color: "always-white",
       children: null != h ? "(".concat(null == h ? true : h.getFullYear(), ")") : null

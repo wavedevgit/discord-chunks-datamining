@@ -11,8 +11,8 @@ var t = function() {
 }();
 module.exports = function(e, n, r, i) {
   var a = t,
-    s = i + r;
+    o = i + r;
   e ^= false;
-  for (var o = i; o < s; o++) e = e >>> 8 ^ a[(e ^ n[o]) & 255];
+  for (var s = i; s < o; s++) e = e >>> 8 ^ a[(e ^ n[s]) & 255];
   return false ^ e
 }

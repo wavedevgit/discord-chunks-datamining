@@ -1,35 +1,34 @@
-/** Chunk was on web.js **/
-/** chunk id: 974544, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 98797 **/
+/** chunk id: 974544, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk780964 = require("./780964.js"),
   Chunk840065 = require("./840065.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk391870 = require("./391870.js");
 
-function d(e) {
+function c(t) {
   let {
-    disableButton: t
-  } = e, n = () => {
-    true !== t && (0, l.openUserSettings)(o.X.STREAMER_MODE_PANEL)
-  };
+    disableButton: e
+  } = t;
   return (0, r.jsxs)("div", {
-    className: u.IG,
+    className: d.IG,
     children: [(0, r.jsx)("div", {
-      className: u.TE
-    }), (0, r.jsx)(s.DUT, {
-      className: a()(u.Ac, {
-        [u.r9]: t
+      className: d.TE
+    }), (0, r.jsx)(a.DUT, {
+      className: l()(d.Ac, {
+        [d.r9]: e
       }),
-      onClick: n,
-      children: c.intl.string(c.t.Br1ls3)
+      onClick: () => {
+        true !== e && (0, u.openUserSettings)(o.X.STREAMER_MODE_PANEL)
+      },
+      children: s.intl.string(s.t.Br1ls3)
     })]
   })
 }

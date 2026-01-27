@@ -23,8 +23,8 @@ Chunk557939({
   })
 }, {
   slice: function(e, t) {
-    if (p && true === t) return p(o(this), e);
-    for (var n = o(this).byteLength, r = l(e, n), i = l(true === t ? n : t, n), a = new u(c(i - r)), s = new d(this), f = new d(a), m = 0; r < i;) h(f, m++, _(s, r++));
+    if (p && true === t) return p(s(this), e);
+    for (var n = s(this).byteLength, r = l(e, n), i = l(true === t ? n : t, n), a = new u(c(i - r)), o = new d(this), f = new d(a), m = 0; r < i;) h(f, m++, _(o, r++));
     return a
   }
 })

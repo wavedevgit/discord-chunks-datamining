@@ -25,7 +25,7 @@ function _(e) {
     collection: t,
     document: n
   } = E(e.createCollection);
-  return c.createElement(c.Fragment, null, c.createElement(s.jZ, null, c.createElement(p.Provider, {
+  return c.createElement(c.Fragment, null, c.createElement(o.jZ, null, c.createElement(p.Provider, {
     value: n
   }, e.content)), c.createElement(h, {
     render: e.children,
@@ -68,18 +68,18 @@ function b(e) {
 
 function O(e, t, n, r, i, a) {
   "string" == typeof e && (e = b(e));
-  let s = (0, c.useCallback)(i => {
+  let o = (0, c.useCallback)(i => {
       null == i || i.setProps(t, n, e, r, a)
     }, [t, n, r, a, e]),
-    o = (0, c.useContext)(y);
-  if (o) {
-    let s = o.ownerDocument.nodesByProps.get(t);
-    return s || ((s = o.ownerDocument.createElement(e.type)).setProps(t, n, e, r, a), o.appendChild(s), o.ownerDocument.updateCollection(), o.ownerDocument.nodesByProps.set(t, s)), i ? c.createElement(y.Provider, {
-      value: s
+    s = (0, c.useContext)(y);
+  if (s) {
+    let o = s.ownerDocument.nodesByProps.get(t);
+    return o || ((o = s.ownerDocument.createElement(e.type)).setProps(t, n, e, r, a), s.appendChild(o), s.ownerDocument.updateCollection(), s.ownerDocument.nodesByProps.set(t, o)), i ? c.createElement(y.Provider, {
+      value: o
     }, i) : null
   }
   return c.createElement(e.type, {
-    ref: s
+    ref: o
   }, i)
 }
 
@@ -108,8 +108,8 @@ function A(e, t, n = I) {
     }) => t(e.props, e.props.ref, e),
     i = (0, c.forwardRef)((t, i) => {
       var a;
-      let s = n(t);
-      return null != (a = O(e, t, i, null, s, e => c.createElement(r, {
+      let o = n(t);
+      return null != (a = O(e, t, i, null, o, e => c.createElement(r, {
         node: e
       }))) ? a : c.createElement(c.Fragment, null)
     });
@@ -152,5 +152,5 @@ function C({
     }, e)), [e]);
   return (0, u.wR)() ? c.createElement(y.Provider, {
     value: t
-  }, n) : (0, o.createPortal)(n, t)
+  }, n) : (0, s.createPortal)(n, t)
 }

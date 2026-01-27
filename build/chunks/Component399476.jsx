@@ -71,15 +71,15 @@ function h(e) {
   }, [b]), {
     isIgnored: v,
     isBlocked: A
-  } = (0, i.cf)([o.A], () => ({
-    isIgnored: o.A.isIgnored(b),
-    isBlocked: o.A.isBlocked(b)
+  } = (0, i.cf)([s.A], () => ({
+    isIgnored: s.A.isIgnored(b),
+    isBlocked: s.A.isBlocked(b)
   }), [b]);
   return O || A ? null : (0, r.jsx)(a.Drp, {
     id: "ignore",
     label: v ? u.intl.string(u.t["8wXU9B"]) : u.intl.string(u.t.ytCpKs),
     action: v ? () => {
-      null == g || g(), s.A.unignoreUser(b, null != E ? E : "use-ignore-user-item-web", null != p ? p : true)
+      null == g || g(), o.A.unignoreUser(b, null != E ? E : "use-ignore-user-item-web", null != p ? p : true)
     } : () => {
       (0, a.mMO)(async () => {
         let {

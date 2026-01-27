@@ -10,11 +10,11 @@ var Chunk224507 = require("./224507.js"),
 function a(e, t, n) {
   var a;
   let {
-    gridCellProps: s,
-    isPressed: o
+    gridCellProps: o,
+    isPressed: s
   } = (0, i.Q)(e, t, n), l = null == (a = e.node.column) ? true : a.key;
-  return null != l && t.collection.rowHeaderColumnKeys.has(l) && (s.role = "rowheader", s.id = (0, r.un)(t, e.node.parentKey, l)), {
-    gridCellProps: s,
-    isPressed: o
+  return null != l && t.collection.rowHeaderColumnKeys.has(l) && (o.role = "rowheader", o.id = (0, r.un)(t, e.node.parentKey, l)), {
+    gridCellProps: o,
+    isPressed: s
   }
 }

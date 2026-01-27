@@ -34,12 +34,12 @@ var Chunk557939 = require("./557939.js"),
   Chunk412405 = require("./412405.js"),
   Chunk883972 = require("./883972.js"),
   Chunk486724 = require("./486724.js"),
-  M = Chunk883972.get,
+  j = Chunk883972.get,
   k = Chunk883972.set,
   U = Chunk883972.enforce,
   G = Chunk4940.f,
-  V = Chunk873078.f,
-  F = Chunk860511.RangeError,
+  F = Chunk873078.f,
+  V = Chunk860511.RangeError,
   B = Chunk607167.ArrayBuffer,
   H = B.prototype,
   Y = Chunk607167.DataView,
@@ -48,13 +48,13 @@ var Chunk557939 = require("./557939.js"),
   z = Chunk739305.TypedArray,
   q = Chunk739305.TypedArrayPrototype,
   Z = Chunk739305.isTypedArray,
-  X = "BYTES_PER_ELEMENT",
-  Q = "Wrong length",
+  Q = "BYTES_PER_ELEMENT",
+  X = "Wrong length",
   J = function(e, t) {
     R(e, t, {
       configurable: true,
       get: function() {
-        return M(this)[t]
+        return j(this)[t]
       }
     })
   },
@@ -66,7 +66,7 @@ var Chunk557939 = require("./557939.js"),
     return Z(e) && !v(t) && t in e && p(+t) && t >= 0
   },
   et = function(e, t) {
-    return ee(e, t = E(t)) ? d(2, e[t]) : V(e, t)
+    return ee(e, t = E(t)) ? d(2, e[t]) : F(e, t)
   },
   en = function(e, t, n) {
     return ee(e, t = E(t)) && O(n) && y(n, "value") && !y(n, "get") && !y(n, "set") && !n.configurable && (!y(n, "writable") || n.writable) && (!y(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : G(e, t, n)
@@ -79,7 +79,7 @@ Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, J(q, "buffer"), J(q, 
   getOwnPropertyDescriptor: et,
   defineProperty: en
 }), module.exports = function(e, t, n) {
-  var s = e.match(/\d+/)[0] / 8,
+  var o = e.match(/\d+/)[0] / 8,
     l = e + (n ? "Clamped" : "") + "Array",
     c = "get" + e,
     d = "set" + e,
@@ -88,12 +88,12 @@ Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, J(q, "buffer"), J(q, 
     y = E && E.prototype,
     b = {},
     v = function(e, t) {
-      var n = M(e);
-      return n.view[c](t * s + n.byteOffset, true)
+      var n = j(e);
+      return n.view[c](t * o + n.byteOffset, true)
     },
     I = function(e, t, r) {
-      var i = M(e);
-      i.view[d](t * s + i.byteOffset, n ? g(r) : r, true)
+      var i = j(e);
+      i.view[d](t * o + i.byteOffset, n ? g(r) : r, true)
     },
     R = function(e, t) {
       G(e, t, {
@@ -106,31 +106,31 @@ Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, J(q, "buffer"), J(q, 
         enumerable: true
       })
     };
-  W ? o && (E = t(function(e, t, n, r) {
-    return u(e, y), j(function() {
-      return O(t) ? $(t) ? true !== r ? new p(t, m(n, s), r) : true !== n ? new p(t, m(n, s)) : new p(t) : Z(t) ? x(E, t) : a(C, E, t) : new p(h(t))
+  W ? s && (E = t(function(e, t, n, r) {
+    return u(e, y), M(function() {
+      return O(t) ? $(t) ? true !== r ? new p(t, m(n, o), r) : true !== n ? new p(t, m(n, o)) : new p(t) : Z(t) ? L(E, t) : a(C, E, t) : new p(h(t))
     }(), e, E)
   }), S && S(E, z), N(T(p), function(e) {
     e in E || f(E, e, p[e])
   }), E.prototype = y) : (E = t(function(e, t, n, r) {
     u(e, y);
-    var i, o, l, c = 0,
+    var i, s, l, c = 0,
       d = 0;
     if (O(t))
       if ($(t)) {
-        i = t, d = m(n, s);
+        i = t, d = m(n, o);
         var f = t.byteLength;
         if (true === r) {
-          if (f % s || (o = f - d) < 0) throw new F(Q)
-        } else if ((o = _(r) * s) + d > f) throw new F(Q);
-        l = o / s
-      } else if (Z(t)) return x(E, t);
+          if (f % o || (s = f - d) < 0) throw new V(X)
+        } else if ((s = _(r) * o) + d > f) throw new V(X);
+        l = s / o
+      } else if (Z(t)) return L(E, t);
     else return a(C, E, t);
-    else i = new B(o = (l = h(t)) * s);
+    else i = new B(s = (l = h(t)) * o);
     for (k(e, {
         buffer: i,
         byteOffset: d,
-        byteLength: o,
+        byteLength: s,
         length: l,
         view: new Y(i)
       }); c < l;) R(e, c++)
@@ -141,5 +141,5 @@ Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, J(q, "buffer"), J(q, 
     constructor: true,
     forced: P,
     sham: !W
-  }, b), X in E || f(E, X, s), X in y || f(y, X, s), w(l)
+  }, b), Q in E || f(E, Q, o), Q in y || f(y, Q, o), w(l)
 }) : module.exports = function() {}

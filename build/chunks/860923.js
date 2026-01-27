@@ -10,10 +10,10 @@ var Chunk64700 = require("./64700.js"),
   Chunk418126 = require("./418126.js"),
   Chunk998740 = require("./998740.js");
 let l = () => {
-  let e = (0, i.bG)([o.A], () => o.A.assets);
+  let e = (0, i.bG)([s.A], () => s.A.assets);
   return r.useEffect(() => {
     let t = async () => {
-      let e = await s.Ay.getAssets();
+      let e = await o.Ay.getAssets();
       null != e && a.h.dispatch({
         type: "HAVEN_GOT_ASSETS",
         assets: e.body

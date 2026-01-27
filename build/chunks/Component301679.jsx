@@ -65,73 +65,73 @@ function _(e) {
     size: E = "md",
     actions: y,
     gradientColor: b
-  } = e, O = i.useContext(a.C), [v, A] = i.useState("closed"), I = i.useRef(null), S = i.useRef(false), T = "opening-mouse" === v || "open-mouse" === v, C = "opening-keyboard" === v || "open-keyboard" === v, N = "open-mouse" === v || "open-keyboard" === v, w = (O.keyboardModeEnabled || C) && null != y, R = w, [P, D] = i.useState(0), x = (0, l._)(n, c, v), L = i.useCallback(() => {
+  } = e, O = i.useContext(a.C), [v, A] = i.useState("closed"), I = i.useRef(null), S = i.useRef(false), T = "opening-mouse" === v || "open-mouse" === v, C = "opening-keyboard" === v || "open-keyboard" === v, N = "open-mouse" === v || "open-keyboard" === v, w = (O.keyboardModeEnabled || C) && null != y, R = w, [P, D] = i.useState(0), L = (0, l._)(n, c, v), x = i.useCallback(() => {
     null != I.current && (clearTimeout(I.current), I.current = null)
-  }, []), j = i.useCallback(e => {
-    e && (S.current = true), L(), A("closing")
-  }, [L]);
-  i.useEffect(() => L, [L]);
-  let M = i.useCallback(() => {
-      ("closed" === v || "closing" === v) && (L(), A("opening-mouse"))
-    }, [L, v]),
+  }, []), M = i.useCallback(e => {
+    e && (S.current = true), x(), A("closing")
+  }, [x]);
+  i.useEffect(() => x, [x]);
+  let j = i.useCallback(() => {
+      ("closed" === v || "closing" === v) && (x(), A("opening-mouse"))
+    }, [x, v]),
     k = i.useCallback(() => {
-      T && j(false)
-    }, [j, T]),
+      T && M(false)
+    }, [M, T]),
     U = i.useCallback(() => {
       if (S.current || "closed" !== v && "closing" !== v) {
         S.current = false;
         return
       }
-      L(), A("opening-keyboard")
-    }, [L, v]),
+      x(), A("opening-keyboard")
+    }, [x, v]),
     G = i.useCallback(() => {
-      w && "opening-keyboard" !== v || j(false)
-    }, [j, v, w]);
+      w && "opening-keyboard" !== v || M(false)
+    }, [M, v, w]);
   i.useEffect(() => {
     if ("opening-mouse" === v) return I.current = window.setTimeout(() => {
       I.current = null, A("open-mouse"), null == _ || _()
-    }, d), L
-  }, [v, d, _, L]), i.useEffect(() => {
+    }, d), x
+  }, [v, d, _, x]), i.useEffect(() => {
     if ("opening-keyboard" === v) return I.current = window.setTimeout(() => {
       I.current = null, A("open-keyboard"), null == _ || _()
-    }, d), L
-  }, [v, d, _, L]), i.useEffect(() => {
+    }, d), x
+  }, [v, d, _, x]), i.useEffect(() => {
     if ("closing" === v) return I.current = window.setTimeout(() => {
       I.current = null, A("closed")
-    }, p), L
-  }, [v, L]), i.useEffect(() => {
+    }, p), x
+  }, [v, x]), i.useEffect(() => {
     if (!N) return;
     let e = e => {
-      ("Escape" === e.key || "Esc" === e.key) && (e.preventDefault(), e.stopPropagation(), j(true))
+      ("Escape" === e.key || "Esc" === e.key) && (e.preventDefault(), e.stopPropagation(), M(true))
     };
     return document.addEventListener("keydown", e, true), () => {
       document.removeEventListener("keydown", e, true)
     }
-  }, [N, j]);
-  let V = i.useMemo(() => null == y ? y : y.map(e => f(u({}, e), {
+  }, [N, M]);
+  let F = i.useMemo(() => null == y ? y : y.map(e => f(u({}, e), {
       onClick: t => {
         var n;
-        null == (n = e.onClick) || n.call(e, t), j(false)
+        null == (n = e.onClick) || n.call(e, t), M(false)
       }
-    })), [y, j]),
-    F = i.useCallback(e => {
+    })), [y, M]),
+    V = i.useCallback(e => {
       D(e)
     }, []);
   return (0, r.jsxs)("div", {
-    onMouseEnter: M,
+    onMouseEnter: j,
     onMouseLeave: k,
     onFocus: U,
     onBlur: G,
-    children: [t, (0, r.jsx)(o.j, {
+    children: [t, (0, r.jsx)(s.j, {
       targetElementRef: n,
       shouldShow: N,
-      position: x,
+      position: L,
       align: "center",
       title: h,
       body: m,
       graphic: g,
       size: E,
-      actions: V,
+      actions: F,
       gradientColor: b,
       showCloseButton: R,
       shouldTrapFocus: w,
@@ -141,9 +141,9 @@ function _(e) {
         align: "custom",
         customOffset: P
       },
-      onNudgeChange: F,
+      onNudgeChange: V,
       onRequestClose: e => {
-        j(null != e && (0, s.sg)(e))
+        M(null != e && (0, o.sg)(e))
       }
     })]
   })

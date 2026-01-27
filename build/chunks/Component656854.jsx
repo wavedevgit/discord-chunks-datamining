@@ -14,8 +14,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk712104 = require("./712104.js");
 
 function d() {
-  let [e, t] = r.useState(false), [n, i] = r.useState(false), [o, d] = r.useState(false);
-  r.useEffect(() => {
+  let [e, t] = l.useState(false), [n, i] = l.useState(false), [o, d] = l.useState(false);
+  l.useEffect(() => {
     let e;
     return n && (e = setTimeout(() => {
       i(false)
@@ -33,12 +33,12 @@ function d() {
       }
     }
   };
-  return n ? (0, l.jsx)(s.Text, {
+  return n ? (0, r.jsx)(s.Text, {
     className: u.$6,
     variant: "text-sm/normal",
     color: "text-feedback-positive",
     children: c.intl.string(c.t.H3Q7U8)
-  }) : (0, l.jsx)(s.Button, {
+  }) : (0, r.jsx)(s.Button, {
     variant: "primary",
     size: "sm",
     text: o ? c.intl.string(c.t.WnX4J2) : c.intl.string(c.t["13ofGu"]),
@@ -48,16 +48,16 @@ function d() {
 }
 
 function m() {
-  return (0, l.jsx)(o.ZK, {
+  return (0, r.jsx)(o.ZK, {
     className: u.jm,
     icon: s.u6c,
     text: c.intl.string(c.t.c6EUJI),
     footnote: c.intl.string(c.t["jMh+TY"]),
     meetsRequirement: false,
-    children: (0, l.jsx)(i.m, {
+    children: (0, r.jsx)(i.m, {
       asContainer: true,
       text: c.intl.string(c.t.mGlP30),
-      children: (0, l.jsx)(s.Button, {
+      children: (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
         disabled: true,
@@ -71,12 +71,12 @@ function f(e) {
   let {
     isUserVerified: t
   } = e, n = t ? c.intl.string(c.t.qY1jHN) : c.intl.string(c.t.c6EUJI);
-  return (0, l.jsx)(o.ZK, {
+  return (0, r.jsx)(o.ZK, {
     className: u.jm,
     icon: s.u6c,
     text: n,
     footnote: c.intl.string(c.t["jMh+TY"]),
     meetsRequirement: t,
-    children: (0, l.jsx)(d, {})
+    children: (0, r.jsx)(d, {})
   })
 }

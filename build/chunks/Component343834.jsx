@@ -13,9 +13,9 @@ var Chunk891197 = require("./891197.jsx"),
 
 function l() {
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.A, {}), (0, r.jsx)(s.dZ, {
+    children: [(0, r.jsx)(a.A, {}), (0, r.jsx)(o.dZ, {
       children: (0, r.jsx)(i.N, {
-        className: o.D
+        className: s.D
       })
     })]
   })

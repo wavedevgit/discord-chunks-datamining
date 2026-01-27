@@ -3,9 +3,9 @@
 var Chunk50613 = require("./50613.js"),
   Chunk627335 = require("./627335.js"),
   Chunk744082 = require("./744082.js"),
-  s = "[object Null]",
-  o = "[object Undefined]",
+  o = "[object Null]",
+  s = "[object Undefined]",
   l = Chunk50613 ? Chunk50613.toStringTag : true;
 module.exports = function(e) {
-  return null == e ? true === e ? o : s : l && l in Object(e) ? i(e) : a(e)
+  return null == e ? true === e ? s : o : l && l in Object(e) ? i(e) : a(e)
 }

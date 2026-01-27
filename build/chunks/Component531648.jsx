@@ -79,9 +79,9 @@ function h(e) {
     component: c
   } = e, d = p(e, ["text", "onClick", "component"]), {
     themeType: _
-  } = (0, s.E)(), h = "string" == typeof t ? t.trim() : t;
+  } = (0, o.E)(), h = "string" == typeof t ? t.trim() : t;
   if (null == h || "" === h) return null;
-  let m = () => _ === o.d.MODAL || _ === o.d.MODAL_V2 ? (0, r.jsx)(c, f(u({
+  let m = () => _ === s.d.MODAL || _ === s.d.MODAL_V2 ? (0, r.jsx)(c, f(u({
     color: "text-default"
   }, d), {
     children: h

@@ -1,33 +1,25 @@
-/** Chunk was on web.js **/
-/** chunk id: 286805, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 286805, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => c
 });
-var r, Chunk311907 = require("./311907.js"),
+var r, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
-
-function s(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-let o = {
+let s = {
   matureAgree: false
 };
-
-function l() {
-  o.matureAgree = true
-}
-class c extends(r = Chunk311907.Ay.Store) {
+class o extends(i = Chunk311907.Ay.Store) {
   get didMatureAgree() {
-    return o.matureAgree
+    return s.matureAgree
   }
-}
-s(c, "displayName", "ApplicationStoreSettingsStore");
-let u = new c(Chunk73153.h, {
-  APPLICATION_STORE_MATURE_AGREE: l
+}(r = "displayName") in o ? Object.defineProperty(o, r, {
+  value: "ApplicationStoreSettingsStore",
+  enumerable: true,
+  configurable: true,
+  writable: true
+}) : o[r] = "ApplicationStoreSettingsStore";
+let c = new o(Chunk73153.h, {
+  APPLICATION_STORE_MATURE_AGREE: function() {
+    s.matureAgree = true
+  }
 })

@@ -2,7 +2,7 @@
 /** chunk id: 447508, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => s
+  o: () => o
 }), require("./896048.js");
 var Chunk758255 = require("./758255.js"),
   Chunk383682 = require("./383682.js");
@@ -15,7 +15,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s {
+class o {
   get totalLength() {
     return this.primary.length + this.extended.length
   }

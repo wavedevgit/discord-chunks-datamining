@@ -65,9 +65,9 @@ class a extends Chunk403992.J {
     let i = this.collection,
       a = null != t ? t : this.getFirstKey();
     if (null == a) return null;
-    let s = i.getItem(a);
-    (null == s ? true : s.type) === "cell" && (a = null != (n = s.parentKey) ? n : null);
-    let o = false;
+    let o = i.getItem(a);
+    (null == o ? true : o.type) === "cell" && (a = null != (n = o.parentKey) ? n : null);
+    let s = false;
     for (; null != a;) {
       let n = i.getItem(a);
       if (!n) break;
@@ -80,12 +80,12 @@ class a extends Chunk403992.J {
         if (i.rowHeaderColumnKeys.has(r.key) && a.textValue) {
           let r = a.textValue.slice(0, e.length);
           if (0 === this.collator.compare(r, e)) {
-            let e = null != t ? i.getItem(t) : s;
+            let e = null != t ? i.getItem(t) : o;
             return (null == e ? true : e.type) === "cell" ? a.key : n.key
           }
         }
       }
-      null != (a = this.getKeyBelow(a)) || o || (a = this.getFirstKey(), o = true)
+      null != (a = this.getKeyBelow(a)) || s || (a = this.getFirstKey(), s = true)
     }
     return null
   }

@@ -27,7 +27,7 @@ let b = e => {
       purchase: t,
       product: n,
       user: i
-    } = e, d = (0, o.bG)([x.default], () => x.default.locale), m = (0, p.Tk)(t), g = (0, p.o7)(n), _ = h.Ay.canUseCollectibles(i), j = (0, u.gA)(t), b = (0, u.G0)(n), f = !_ && j, [O, C] = r.useState(null);
+    } = e, d = (0, o.bG)([x.default], () => x.default.locale), m = (0, p.Tk)(t), g = (0, p.o7)(n), _ = h.Ay.canUseCollectibles(i), y = (0, u.gA)(t), b = (0, u.G0)(n), f = !_ && y, [O, C] = r.useState(null);
     r.useEffect(() => {
       C((null == t ? true : t.expiresAt) != null ? (0, A.Tf)(Date.now(), t.expiresAt) : null)
     }, [null == t ? true : t.expiresAt]);
@@ -43,24 +43,24 @@ let b = e => {
       }), E ? (0, l.jsx)(c.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: f ? y.intl.string(y.t.nD78oa) : b && _ ? y.intl.string(y.t.hmyYK8) : b ? y.intl.string(y.t.JY1i0u) : y.intl.string(y.t.fEGjVQ)
+        children: f ? j.intl.string(j.t.nD78oa) : b && _ ? j.intl.string(j.t.hmyYK8) : b ? j.intl.string(j.t.JY1i0u) : j.intl.string(j.t.fEGjVQ)
       }) : (0, l.jsxs)(l.Fragment, {
         children: [null != O && (0, l.jsx)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
-          children: y.intl.format(y.t.Io7ozn, {
+          children: j.intl.format(j.t.Io7ozn, {
             days: O.days.toString()
           })
         }), (0, l.jsxs)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
-          children: [y.intl.format(y.t.gW9R4B, {
+          children: [j.intl.format(j.t.gW9R4B, {
             date: t.purchasedAt.toLocaleDateString(d, {
               month: "long",
               year: "numeric"
             })
           }), null != t.expiresAt && (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)("br", {}), y.intl.format(y.t.eZSTa5, {
+            children: [(0, l.jsx)("br", {}), j.intl.format(j.t.eZSTa5, {
               date: t.expiresAt.toLocaleDateString(d, {
                 minute: "numeric",
                 hour: "numeric",
@@ -70,10 +70,10 @@ let b = e => {
               })
             })]
           })]
-        }), j && (0, l.jsx)(c.Text, {
+        }), y && (0, l.jsx)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
-          children: y.intl.string(y.t.nKdAlO)
+          children: j.intl.string(j.t.nKdAlO)
         })]
       })]
     })
@@ -95,7 +95,7 @@ let b = e => {
       children: [(0, l.jsx)("div", {
         className: v.u_,
         role: "img",
-        "aria-label": y.intl.string(y.t.SZeUdR),
+        "aria-label": j.intl.string(j.t.SZeUdR),
         children: (0, l.jsxs)("div", {
           className: v.Xp,
           "aria-hidden": true,
@@ -105,7 +105,7 @@ let b = e => {
           }), (0, l.jsx)(_._, {
             width: 124,
             opacity: .9
-          }), (0, l.jsx)(j.A, (t = function(e) {
+          }), (0, l.jsx)(y.A, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 l = Object.keys(n);

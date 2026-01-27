@@ -35,7 +35,7 @@ function u(e) {
 function d(e) {
   let {
     wishlistItem: t
-  } = e, n = (0, a.bG)([s.A], () => (0, o.$)(t) ? s.A.getApplication(t.sku.applicationId) : true);
+  } = e, n = (0, a.bG)([o.A], () => (0, s.$)(t) ? o.A.getApplication(t.sku.applicationId) : true);
   return (0, r.jsx)(u, {
     application: n
   })

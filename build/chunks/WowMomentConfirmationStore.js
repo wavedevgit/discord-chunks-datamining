@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,13 +15,13 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = {
+let s = {
   isDisplayingWowMomentConfirmation: false,
   isAnimated: false
 };
 
 function l() {
-  o = {
+  s = {
     isDisplayingWowMomentConfirmation: false,
     isAnimated: false
   }
@@ -36,20 +36,20 @@ function u(e) {
     value: t,
     isAnimated: n
   } = e;
-  o.isDisplayingWowMomentConfirmation = t, o.isAnimated = n
+  s.isDisplayingWowMomentConfirmation = t, s.isAnimated = n
 }
 class d extends(r = Chunk311907.Ay.Store) {
   getState() {
-    return o
+    return s
   }
   get isDisplayingWowMomentConfirmation() {
-    return o.isDisplayingWowMomentConfirmation
+    return s.isDisplayingWowMomentConfirmation
   }
   get isAnimated() {
-    return o.isAnimated
+    return s.isAnimated
   }
 }
-s(d, "displayName", "WowMomentConfirmationStore");
+o(d, "displayName", "WowMomentConfirmationStore");
 let f = new d(Chunk73153.h, {
   LOGOUT: c,
   WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION: u

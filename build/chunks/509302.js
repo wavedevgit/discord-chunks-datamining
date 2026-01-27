@@ -20,11 +20,11 @@ function l(e) {
       location: "Context Menu"
     })
   }, [t.id]);
-  return (0, s.A)({
+  return (0, o.A)({
     user: t,
     gameRelationships: n,
     menuItemId: "add-game-friend",
-    label: o.intl.string(o.t.X76oLM),
+    label: s.intl.string(s.t.X76oLM),
     onClick: l
   })
 }

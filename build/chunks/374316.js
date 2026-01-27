@@ -11,10 +11,10 @@ var Chunk446474 = require("./446474.js"),
   u = Chunk380744("toPrimitive");
 module.exports = function(e, t) {
   if (!i(e) || a(e)) return e;
-  var n, l = s(e, u);
+  var n, l = o(e, u);
   if (l) {
     if (true === t && (t = "default"), !i(n = r(l, e, t)) || a(n)) return n;
     throw new c("Can't convert object to primitive value")
   }
-  return true === t && (t = "number"), o(e, t)
+  return true === t && (t = "number"), s(e, t)
 }

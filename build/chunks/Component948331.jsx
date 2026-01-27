@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 948331, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 52199 **/
+/** chunk id: 948331, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  g: () => v
+  g: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,101 +21,96 @@ var Chunk627968 = require("./627968.js"),
   Chunk7410 = require("./7410.js"),
   Chunk936037 = require("./936037.js");
 
-function b(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function O(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      b(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function v() {
-  return (0, p.A)() ? (0, r.jsx)("div", {
-    className: g.do,
-    children: (0, r.jsxs)("div", {
-      className: g.U6,
-      children: [(0, r.jsx)("img", {
-        src: E,
-        className: g.Sl,
-        alt: ""
-      }), (0, r.jsx)(l.Heading, {
-        className: g.wx,
-        variant: "heading-xl/semibold",
-        color: "text-default",
-        children: m.intl.string(m.t.erEf2g)
-      }), (0, r.jsx)(s.EYj, {
-        variant: "text-md/medium",
-        color: "text-muted",
-        children: m.intl.string(m.t.NaRCXT)
-      })]
-    })
-  }) : (0, r.jsxs)("div", {
-    className: g.do,
-    children: [(0, r.jsxs)("div", {
-      className: g.U6,
-      children: [(0, r.jsx)("img", {
+function m() {
+  return (0, p.A)() ? (0, n.jsx)("div", {
+    className: E.do,
+    children: (0, n.jsxs)("div", {
+      className: E.U6,
+      children: [(0, n.jsx)("img", {
         src: y,
-        className: g.Sl,
+        className: E.Sl,
         alt: ""
-      }), (0, r.jsx)(l.Heading, {
-        className: g.wx,
+      }), (0, n.jsx)(o.Heading, {
+        className: E.wx,
         variant: "heading-xl/semibold",
         color: "text-default",
-        children: m.intl.string(m.t.w4DRbZ)
-      }), (0, r.jsx)(s.EYj, {
+        children: S.intl.string(S.t.erEf2g)
+      }), (0, n.jsx)(a.EYj, {
         variant: "text-md/medium",
         color: "text-muted",
-        children: m.intl.string(m.t.F6u3E3)
+        children: S.intl.string(S.t.NaRCXT)
       })]
-    }), (0, r.jsx)(A, {})]
+    })
+  }) : (0, n.jsxs)("div", {
+    className: E.do,
+    children: [(0, n.jsxs)("div", {
+      className: E.U6,
+      children: [(0, n.jsx)("img", {
+        src: _,
+        className: E.Sl,
+        alt: ""
+      }), (0, n.jsx)(o.Heading, {
+        className: E.wx,
+        variant: "heading-xl/semibold",
+        color: "text-default",
+        children: S.intl.string(S.t.w4DRbZ)
+      }), (0, n.jsx)(a.EYj, {
+        variant: "text-md/medium",
+        color: "text-muted",
+        children: S.intl.string(S.t.F6u3E3)
+      })]
+    }), (0, n.jsx)(A, {})]
   })
 }
 
 function A() {
-  let e = (0, f.Dd)(h.PremiumTypes.TIER_2),
-    t = i.useCallback(() => (0, l.mMO)(async () => {
+  let e = (0, h.Dd)(g.PremiumTypes.TIER_2),
+    t = l.useCallback(() => (0, o.mMO)(async () => {
       let {
         default: e
-      } = await n.e("22540").then(n.bind(n, 530951));
-      return t => (0, r.jsx)(e, O({
+      } = await r.e("22540").then(r.bind(r, 530951));
+      return t => (0, n.jsx)(e, function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = n
+          })
+        }
+        return e
+      }({
         source: c.A.FOR_LATER_POPOUT
       }, t))
     }), []),
-    p = m.intl.format(m.t.qXh3fo, {
+    p = S.intl.format(S.t.qXh3fo, {
       nitroTierName: e,
       onClick: t
     });
-  return (0, r.jsxs)("div", {
-    className: g.Zj,
-    children: [(0, r.jsx)(a.NitroWheelIcon, {
+  return (0, n.jsxs)("div", {
+    className: E.Zj,
+    children: [(0, n.jsx)(s.NitroWheelIcon, {
       size: "md",
       color: u.k0.PREMIUM_TIER_2
-    }), (0, r.jsx)(s.EYj, {
+    }), (0, n.jsx)(a.EYj, {
       variant: "text-xs/medium",
       color: "text-strong",
-      className: g.tD,
+      className: E.tD,
       children: p
-    }), (0, r.jsx)(d.A, {
-      className: g.Oy,
-      size: o.lO.TINY,
-      shinyButtonClassName: g.Oy,
-      subscriptionTier: h.pe.TIER_2,
+    }), (0, n.jsx)(d.A, {
+      className: E.Oy,
+      size: i.lO.TINY,
+      shinyButtonClassName: E.Oy,
+      subscriptionTier: g.pe.TIER_2,
       premiumModalAnalyticsLocation: {
-        section: _.JJy.FOR_LATER_POPOUT_UPSELL
+        section: f.JJy.FOR_LATER_POPOUT_UPSELL
       }
     })]
   })

@@ -11,7 +11,7 @@ var Chunk607399 = require("./607399.js"),
   Chunk652215 = require("./652215.js");
 
 function l(e, t) {
-  s.default.track(o.HAw.APP_DIRECTORY_PROFILE_EMBED_SENT, {
+  o.default.track(s.HAw.APP_DIRECTORY_PROFILE_EMBED_SENT, {
     application_id: e,
     device_platform: r.Fr ? "mobile_web" : "desktop_web",
     guild_id: a.A.getGuildId(),

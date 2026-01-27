@@ -60,7 +60,7 @@ let g = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk
       item: t,
       user: n,
       isHighlighted: i = false,
-      avatarSize: u = o._3J.SIZE_152,
+      avatarSize: u = s._3J.SIZE_152,
       avatarPlaceholderSrc: p,
       className: h
     } = e, E = (0, l.Te)(u), {
@@ -69,7 +69,7 @@ let g = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk
       avatarPlaceholderSrc: O
     } = (0, c.A)({
       user: n,
-      avatarDecorationOverride: (null == t ? true : t.type) === s.R.AVATAR_DECORATION ? t : true,
+      avatarDecorationOverride: (null == t ? true : t.type) === o.R.AVATAR_DECORATION ? t : true,
       size: E,
       onlyAnimateOnHoverOrFocus: !i
     }), v = d.intl.formatToPlainString(d.t.Do2lxE, {

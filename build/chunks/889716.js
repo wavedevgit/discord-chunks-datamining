@@ -17,12 +17,12 @@ module.exports = function(e) {
     a = e.inherit(e.QUOTE_STRING_MODE, {
       relevance: 0
     }),
-    s = {
+    o = {
       className: "subst",
       begin: "\\\\[abfnrtv]\\|\\\\x[0-9a-fA-F]*\\\\\\|%[-+# *.0-9]*[dioxXucsfeEgGp]",
       relevance: 0
     };
-  return a.contains = a.contains.slice(), a.contains.push(s), {
+  return a.contains = a.contains.slice(), a.contains.push(o), {
     name: "Mercury",
     aliases: ["m", "moo"],
     keywords: t,

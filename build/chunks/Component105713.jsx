@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk827734 = require("./827734.js"),
   Chunk990078 = require("./990078.jsx"),
@@ -92,8 +92,8 @@ function C(e) {
     forceShowBetaLabel: n = false
   } = e, i = (0, h.tj)({
     location: "SoundmojiBanner"
-  }), a = (0, o.bG)([f.default], () => _.Ay.canUseSoundboardEverywhere(f.default.getCurrentUser())), s = (0, o.bG)([d.A], () => d.A.getGuildId());
-  return n || a || t.guildId === E.mV || t.guildId === s || !i ? (0, r.jsx)(u.LpS, {
+  }), a = (0, s.bG)([f.default], () => _.Ay.canUseSoundboardEverywhere(f.default.getCurrentUser())), o = (0, s.bG)([d.A], () => d.A.getGuildId());
+  return n || a || t.guildId === E.mV || t.guildId === o || !i ? (0, r.jsx)(u.LpS, {
     text: "BETA",
     color: l.A.colors.BACKGROUND_BRAND.css,
     className: b.aZ
@@ -126,7 +126,7 @@ function N(e) {
     sound: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(b.op, b.kX),
+    className: o()(b.op, b.kX),
     children: [(0, r.jsx)(C, {
       sound: t
     }), (0, r.jsxs)("div", {
@@ -157,8 +157,8 @@ function w(e) {
     renderPopout: t,
     position: n,
     tooltipText: a,
-    children: s,
-    setTooltipShowing: o,
+    children: o,
+    setTooltipShowing: s,
     clickableClassName: l
   } = e, [d, f] = i.useState(false), [p, _] = i.useState(String(Date.now())), h = i.useCallback(e => {
     e.stopPropagation(), f(!d)
@@ -167,8 +167,8 @@ function w(e) {
   }, []), g = i.useRef(null);
   i.useEffect(() => {
     var e, t;
-    d ? null == (e = g.current) || e.focus() : null == (t = g.current) || t.blur(), null == o || o(d)
-  }, [d, o]);
+    d ? null == (e = g.current) || e.focus() : null == (t = g.current) || t.blur(), null == s || s(d)
+  }, [d, s]);
   let E = !d;
   return (0, r.jsx)(u.YNO, {
     targetElementRef: g,
@@ -189,10 +189,10 @@ function w(e) {
     scrollBehavior: "close",
     children: e => (0, r.jsx)(c.m, {
       onTooltipHide: () => {
-        E && (null == o || o(false))
+        E && (null == s || s(false))
       },
       onTooltipShow: () => {
-        E && (null == o || o(true))
+        E && (null == s || s(true))
       },
       text: a,
       position: "top",
@@ -202,7 +202,7 @@ function w(e) {
         "aria-label": a,
         onClick: h,
         className: l,
-        children: s
+        children: o
       }))
     })
   })

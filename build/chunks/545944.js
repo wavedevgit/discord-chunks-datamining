@@ -3,8 +3,8 @@
 var Chunk168110 = require("./168110.js"),
   i = 0xfffffffe,
   a = Math.floor,
-  s = Math.min;
-module.exports = function(e, t, n, o) {
+  o = Math.min;
+module.exports = function(e, t, n, s) {
   var l = 0,
     c = null == e ? 0 : e.length;
   if (0 === c) return 0;
@@ -15,9 +15,9 @@ module.exports = function(e, t, n, o) {
       g = null === h,
       E = h == h,
       y = r(h);
-    if (u) var b = o || E;
-    else b = p ? E && (o || m) : d ? E && m && (o || !g) : f ? E && m && !g && (o || !y) : !g && !y && (o ? h <= t : h < t);
+    if (u) var b = s || E;
+    else b = p ? E && (s || m) : d ? E && m && (s || !g) : f ? E && m && !g && (s || !y) : !g && !y && (s ? h <= t : h < t);
     b ? l = _ + 1 : c = _
   }
-  return s(c, i)
+  return o(c, i)
 }

@@ -7,15 +7,15 @@ require.d(exports, {
   Oz: () => er,
   QA: () => J,
   Zc: () => W,
-  cf: () => F,
-  d5: () => X,
+  cf: () => V,
+  d5: () => Q,
   e0: () => en,
   hJ: () => H,
   l9: () => Z,
   m6: () => Y,
   navigateToQuestHome: () => K,
   q$: () => ee,
-  rx: () => V,
+  rx: () => F,
   z6: () => q
 });
 var Chunk627968 = require("./627968.js");
@@ -51,7 +51,7 @@ var Chunk835245 = require("./835245.js"),
   Chunk488995 = require("./488995.js"),
   Chunk985018 = require("./985018.jsx");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -60,20 +60,20 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
 }
 
-function M(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -85,35 +85,35 @@ function M(e, t) {
 }
 
 function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let U = "in-app",
   G = "Discord Widget";
 
-function V(e) {
+function F(e) {
   let {
     quest: t,
     sourceQuestContent: i
   } = e;
-  (0, o.mMO)(async () => {
+  (0, s.mMO)(async () => {
     let {
       default: e
     } = await n.e("67299").then(n.bind(n, 975726));
-    return n => (0, r.jsx)(e, k(j({}, n), {
+    return n => (0, r.jsx)(e, k(M({}, n), {
       initialQuest: t,
       sourceQuestContent: i
     }))
   })
 }
 
-function F(e, t, i) {
-  (0, o.mMO)(async () => {
+function V(e, t, i) {
+  (0, s.mMO)(async () => {
     let {
       default: a
     } = await n.e("26747").then(n.bind(n, 529398));
-    return n => (0, r.jsx)(a, k(j({}, n), {
+    return n => (0, r.jsx)(a, k(M({}, n), {
       initialQuest: e,
       location: t,
       sourceQuestContent: i
@@ -122,11 +122,11 @@ function F(e, t, i) {
 }
 
 function B(e, t, i) {
-  (0, o.mMO)(async () => {
+  (0, s.mMO)(async () => {
     let {
       default: a
     } = await n.e("67426").then(n.bind(n, 268473));
-    return n => (0, r.jsx)(a, k(j({}, n), {
+    return n => (0, r.jsx)(a, k(M({}, n), {
       initialQuest: e,
       sourceQuestContent: i,
       location: t
@@ -135,11 +135,11 @@ function B(e, t, i) {
 }
 
 function H(e, t, i, a) {
-  (0, o.mMO)(async () => {
+  (0, s.mMO)(async () => {
     let {
-      default: s
+      default: o
     } = await n.e("90948").then(n.bind(n, 651663));
-    return n => (0, r.jsx)(s, k(j({}, n), {
+    return n => (0, r.jsx)(o, k(M({}, n), {
       initialQuest: e,
       sourceQuestContent: i,
       location: t,
@@ -149,11 +149,11 @@ function H(e, t, i, a) {
 }
 
 function Y(e, t, i) {
-  (0, o.mMO)(async () => {
+  (0, s.mMO)(async () => {
     let {
       default: a
     } = await n.e("81169").then(n.bind(n, 124232));
-    return n => (0, r.jsx)(a, k(j({}, n), {
+    return n => (0, r.jsx)(a, k(M({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -169,11 +169,11 @@ function W(e, t) {
     questContentCTA: t.ctaContent,
     impressionId: t.impressionId,
     sourceQuestContent: t.sourceQuestContent
-  }), (0, o.mMO)(async () => {
+  }), (0, s.mMO)(async () => {
     let {
       default: i
     } = await n.e("132").then(n.bind(n, 348559));
-    return n => (0, r.jsx)(i, k(j({}, n), {
+    return n => (0, r.jsx)(i, k(M({}, n), {
       questContent: t.content,
       quest: e
     }))
@@ -218,12 +218,12 @@ function Z() {
   return Promise.all([n.e("35584"), n.e("23628"), n.e("29")]).then(n.bind(n, 717415))
 }
 
-function X(e) {
+function Q(e) {
   var t;
   let {
     quest: n,
     questContent: a,
-    sourceQuestContent: s,
+    sourceQuestContent: o,
     sourceQuestContentCTA: l,
     autoplay: c = true,
     skipEnrollmentCheck: u = false
@@ -234,38 +234,38 @@ function X(e) {
     m.A.isEnrolling(n.id) || (0, h.Oy)(n.id, {
       questContent: a,
       questContentCTA: v.Cy.ACCEPT_QUEST,
-      sourceQuestContent: s
+      sourceQuestContent: o
     });
     let e = E.Ay.getState().getVideoProgress(n.id);
     null != e && e.timestampSec > 1 && ((0, h.QG)(n.id), p.default.track(P.HAw.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
       quest_id: n.id,
-      source_quest_content: (0, v.jO)(s),
+      source_quest_content: (0, v.jO)(o),
       source_quest_content_cta: l,
       video_session_id: d
     }))
-  }(0, o.mMO)(async () => {
+  }(0, s.mMO)(async () => {
     let {
       default: e
     } = await Z();
-    return t => (0, r.jsx)(e, k(j({}, t), {
+    return t => (0, r.jsx)(e, k(M({}, t), {
       openStartClockTime: performance.now(),
       questId: n.id,
       autoplay: c,
       videoSessionId: d,
-      sourceQuestContent: s
+      sourceQuestContent: o
     }))
   }, {
     modalKey: (0, C.cZ)(n.id),
-    backdropStyle: o.F2Z.IMMERSIVE,
+    backdropStyle: s.F2Z.IMMERSIVE,
     onCloseCallback: () => (0, C.vm)({
       questId: n.id,
-      sourceQuestContent: s,
+      sourceQuestContent: o,
       videoSessionId: d
     })
   })
 }
 
-function Q(e) {
+function X(e) {
   var t;
   let n = null == (t = platform.os) ? true : t.family,
     r = "quest";
@@ -283,10 +283,10 @@ function Q(e) {
 }
 
 function J(e) {
-  let t = Q(e),
+  let t = X(e),
     n = (0, a.X7)(t);
   null != n && p.default.track(P.HAw.DEEP_LINK_CLICKED, {
-    fingerprint: (0, s.v)(n.fingerprint),
+    fingerprint: (0, o.v)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), _.A.launch(t, t => {
@@ -318,7 +318,7 @@ function ee(e) {
   let t = $(e),
     n = (0, a.X7)(t);
   null != n && p.default.track(P.HAw.DEEP_LINK_CLICKED, {
-    fingerprint: (0, s.v)(n.fingerprint),
+    fingerprint: (0, o.v)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), _.A.launch(t, t => {
@@ -330,11 +330,11 @@ function ee(e) {
 }
 
 function et(e) {
-  (0, o.mMO)(async () => {
+  (0, s.mMO)(async () => {
     let {
       default: t
     } = await Promise.all([n.e("14882"), n.e("77828")]).then(n.bind(n, 491390));
-    return n => (0, r.jsx)(t, k(j({}, n), {
+    return n => (0, r.jsx)(t, k(M({}, n), {
       questId: e.id
     }))
   })
@@ -351,7 +351,7 @@ async function en(e, t) {
   });
   switch (n) {
     case h.WM.SUCCESS:
-      X({
+      Q({
         quest: e,
         questContent: t.questContent,
         sourceQuestContent: t.sourceQuestContent,
@@ -360,19 +360,19 @@ async function en(e, t) {
       break;
     case h.WM.CAPTCHA_FAILED:
       l.A.show({
-        title: x.intl.string(x.t["/CidxO"]),
-        body: x.intl.string(x.t.HQdHg6)
+        title: L.intl.string(L.t["/CidxO"]),
+        body: L.intl.string(L.t.HQdHg6)
       });
       break;
     case h.WM.UNKNOWN_ERROR:
       l.A.show({
-        title: x.intl.string(x.t.R0RpRX),
-        body: x.intl.string(x.t.OXD41D)
+        title: L.intl.string(L.t.R0RpRX),
+        body: L.intl.string(L.t.OXD41D)
       });
     case h.WM.PREVIOUS_IN_FLIGHT_REQUEST:
   }
 }
 
 function er(e) {
-  if ((0, T.vA)(e)) return e.config.features.includes(R.Li.CLOUD_GAMING_ACTIVITY) ? o.hpF : o._xR
+  if ((0, T.vA)(e)) return e.config.features.includes(R.Li.CLOUD_GAMING_ACTIVITY) ? s.hpF : s._xR
 }

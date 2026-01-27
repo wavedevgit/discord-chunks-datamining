@@ -12,9 +12,9 @@ function i(e) {
     applicationId: n,
     activityConfigs: i,
     applications: a
-  } = e, s = null != (t = null == a ? true : a.find(e => e.id === n)) ? t : r.A.getApplication(n), o = i.find(e => e.application_id === n);
-  return null == o || null == s ? null : {
-    activity: o,
-    application: s
+  } = e, o = null != (t = null == a ? true : a.find(e => e.id === n)) ? t : r.A.getApplication(n), s = i.find(e => e.application_id === n);
+  return null == s || null == o ? null : {
+    activity: s,
+    application: o
   }
 }

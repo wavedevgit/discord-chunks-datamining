@@ -4,8 +4,8 @@
 var Chunk108591 = require("./108591.js"),
   Chunk739305 = require("./739305.js"),
   a = Chunk739305.aTypedArray,
-  s = Chunk739305.exportTypedArrayMethod,
-  o = Chunk739305.getTypedArrayConstructor;
-s("toReversed", function() {
-  return r(a(this), o(this))
+  o = Chunk739305.exportTypedArrayMethod,
+  s = Chunk739305.getTypedArrayConstructor;
+o("toReversed", function() {
+  return r(a(this), s(this))
 })

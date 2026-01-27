@@ -15,14 +15,14 @@ module.exports = function(e) {
       className: "meta",
       begin: /^(>>>|\.\.\.) /
     },
-    s = {
+    o = {
       className: "subst",
       begin: /\{/,
       end: /\}/,
       keywords: i,
       illegal: /#/
     },
-    o = {
+    s = {
       begin: /\{\{/,
       relevance: 0
     },
@@ -42,11 +42,11 @@ module.exports = function(e) {
       }, {
         begin: /([fF][rR]|[rR][fF]|[fF])'''/,
         end: /'''/,
-        contains: [e.BACKSLASH_ESCAPE, a, o, s]
+        contains: [e.BACKSLASH_ESCAPE, a, s, o]
       }, {
         begin: /([fF][rR]|[rR][fF]|[fF])"""/,
         end: /"""/,
-        contains: [e.BACKSLASH_ESCAPE, a, o, s]
+        contains: [e.BACKSLASH_ESCAPE, a, s, o]
       }, {
         begin: /([uU]|[rR])'/,
         end: /'/,
@@ -64,11 +64,11 @@ module.exports = function(e) {
       }, {
         begin: /([fF][rR]|[rR][fF]|[fF])'/,
         end: /'/,
-        contains: [e.BACKSLASH_ESCAPE, o, s]
+        contains: [e.BACKSLASH_ESCAPE, s, o]
       }, {
         begin: /([fF][rR]|[rR][fF]|[fF])"/,
         end: /"/,
-        contains: [e.BACKSLASH_ESCAPE, o, s]
+        contains: [e.BACKSLASH_ESCAPE, s, o]
       }, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
     },
     c = "[0-9](_?[0-9])*",
@@ -121,7 +121,7 @@ module.exports = function(e) {
         contains: ["self", a, f, l, e.HASH_COMMENT_MODE]
       }]
     };
-  return s.contains = [l, f, a], {
+  return o.contains = [l, f, a], {
     name: "Python",
     aliases: ["py", "gyp", "ipython"],
     unicodeRegex: true,

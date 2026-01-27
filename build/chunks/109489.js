@@ -14,7 +14,7 @@ var i = function() {
   a = function() {
     return Math.random().toString(36).substring(7).split("").join(".")
   },
-  s = {
+  o = {
     INIT: "@@redux/INIT" + a(),
     REPLACE: "@@redux/REPLACE" + a(),
     PROBE_UNKNOWN_ACTION: function() {
@@ -22,7 +22,7 @@ var i = function() {
     }
   };
 
-function o(e) {
+function s(e) {
   if ("object" != typeof e || null === e) returnfalse;
   for (var t = e; null !== Object.getPrototypeOf(t);) t = Object.getPrototypeOf(t);
   return Object.getPrototypeOf(e) === t
@@ -66,7 +66,7 @@ function l(e, t, n) {
   }
 
   function g(e) {
-    if (!o(e)) throw Error(r(7));
+    if (!s(e)) throw Error(r(7));
     if (true === e.type) throw Error(r(8));
     if (p) throw Error(r(9));
     try {
@@ -81,7 +81,7 @@ function l(e, t, n) {
   function E(e) {
     if ("function" != typeof e) throw Error(r(10));
     c = e, g({
-      type: s.REPLACE
+      type: o.REPLACE
     })
   }
 
@@ -103,7 +103,7 @@ function l(e, t, n) {
     }, e
   }
   return g({
-    type: s.INIT
+    type: o.INIT
   }), (a = {
     dispatch: g,
     subscribe: m,

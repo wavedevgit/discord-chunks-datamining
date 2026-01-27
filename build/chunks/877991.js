@@ -12,5 +12,5 @@ var Chunk189551 = require("./189551.js"),
 let l = {
   binds: ["mod+e"],
   comboKeysBindGlobal: true,
-  action: () => !(i.A.getLayers().length > 0) && ((0, r.K)(o.Vl.SearchEmojiKeybindPressed), a._.dispatchToLastSubscribed(s.jej.TOGGLE_EMOJI_POPOUT), false)
+  action: () => !(i.A.getLayers().length > 0) && ((0, r.K)(s.Vl.SearchEmojiKeybindPressed), a._.dispatchToLastSubscribed(o.jej.TOGGLE_EMOJI_POPOUT), false)
 }

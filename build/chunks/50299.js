@@ -18,27 +18,27 @@ var Chunk731854 = require("./731854.js");
 function E(e) {
   let {
     userId: t
-  } = e, r = (0, a.bG)([c.default], () => c.default.getId());
+  } = e, r = (0, s.bG)([c.default], () => c.default.getId());
   i()(r !== t, "[useSecureFramesPairwiseFingerprint] Should not pass current user id.");
-  let [u, E] = n.useState(null), [b, y] = n.useState(false), A = (0, a.bG)([f.A], () => f.A.getSecureFramesRosterMapEntry(t)), p = (0, a.bG)([f.A], () => f.A.getSecureFramesRosterMapEntry(r)), g = n.useCallback(e => {
-    E(l.fromByteArray(e)), y(false)
+  let [u, E] = n.useState(null), [y, b] = n.useState(false), A = (0, s.bG)([f.A], () => f.A.getSecureFramesRosterMapEntry(t)), p = (0, s.bG)([f.A], () => f.A.getSecureFramesRosterMapEntry(r)), g = n.useCallback(e => {
+    E(l.fromByteArray(e)), b(false)
   }, []), O = n.useCallback(async (e, t, r, n) => {
     if (o.A.supports(d.O5.MLS_PAIRWISE_FINGERPRINTS)) {
       var l;
       null == (l = f.A.getRTCConnection()) || l.getMLSPairwiseFingerprint(0, r, e => {
         g(new Uint8Array(e))
       })
-    } else g(await (0, s._x)(0, new Uint8Array(t), e, new Uint8Array(n), r))
-  }, [g]), m = n.useRef(null);
+    } else g(await (0, a._x)(0, new Uint8Array(t), e, new Uint8Array(n), r))
+  }, [g]), _ = n.useRef(null);
   return n.useEffect(() => {
-    null != A && null != p && null == m.current && (y(true), m.current = setTimeout(() => O(r, p, t, A), 0));
-    let e = m.current;
+    null != A && null != p && null == _.current && (b(true), _.current = setTimeout(() => O(r, p, t, A), 0));
+    let e = _.current;
     return () => {
       null != e && clearTimeout(e)
     }
   }, [r, p, O, t, A]), n.useMemo(() => ({
     fingerprint: u,
     userKey: A,
-    loading: b
-  }), [u, b, A])
+    loading: y
+  }), [u, y, A])
 }

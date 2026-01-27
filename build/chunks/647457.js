@@ -93,7 +93,7 @@ class _ extends Chunk143236.EventEmitter {
       });
       if (this.destroyed) throw p.release(e), Error("AudioInput: Already destroyed");
       if (this._noiseCancellation) try {
-        let t = await (0, o.e)();
+        let t = await (0, s.e)();
         this._audioFilter = await t.createNoiseFilter(this.context), this._audioFilter.addEventListener("ready", e => {
           var t;
           null == (t = this._audioFilter) || t.enable()

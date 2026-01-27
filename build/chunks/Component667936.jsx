@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 667936, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 667936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => j
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
@@ -23,100 +22,99 @@ var Chunk503698 = require("./503698.js"),
   Chunk427262 = require("./427262.js"),
   Chunk43950 = require("./43950.jsx"),
   Chunk185186 = require("./185186.js");
-let O = 6;
 
 function v(e) {
   var t;
   let {
     guildId: n,
     member: i,
-    className: s
-  } = e, c = null != i.member ? (0, g.xT)(i.member) : null;
-  return (0, r.jsx)(o.m, {
+    className: a
+  } = e, c = null != i.member ? (0, _.xT)(i.member) : null;
+  return (0, r.jsx)(s.m, {
     __unsupportedReactNodeAsText: i.nick,
     position: "bottom",
-    children: (0, r.jsx)(l.euF, {
+    children: (0, r.jsx)(o.euF, {
       src: null != c ? c : i.user.getAvatarURL(n, 16),
-      size: l._3J.SIZE_16,
-      className: a()(s, b.wE),
-      "aria-label": null != (t = i.nick) ? t : E.Ay.getName(i.user)
+      size: o._3J.SIZE_16,
+      className: l()(a, h.wE),
+      "aria-label": null != (t = i.nick) ? t : b.Ay.getName(i.user)
     })
   })
 }
 
-function A(e) {
+function O(e) {
   let {
     members: t,
     guildId: n
   } = e;
-  return (0, r.jsx)(p.A, {
-    className: b.S3,
+  return (0, r.jsx)(f.A, {
+    className: h.S3,
     guildId: n,
     users: t,
-    max: O,
+    max: 6,
     renderUser: (e, t, i) => (0, r.jsx)(v, {
       guildId: n,
       member: e,
       className: t
     }, i),
     renderMoreUsers: (e, t, n) => (0, r.jsx)("div", {
-      className: a()(b.TO, t),
+      className: l()(h.TO, t),
       children: e
     }, n)
   })
 }
-let I = e => {
+let j = e => {
   let {
     channel: t,
     presenceActivity: n,
     members: i,
-    embeddedApp: a,
-    onAction: o
-  } = e, l = null != a, p = l ? Array.from(a.embeddedActivity.userIds) : [], g = (0, s.bG)([m.default, h.default], () => {
-    if (l) return m.default.getUser(p[0]);
+    embeddedApp: l,
+    onAction: s
+  } = e, o = null != l, f = o ? Array.from(l.embeddedActivity.userIds) : [], _ = (0, a.bG)([y.default, g.default], () => {
+    if (o) return y.default.getUser(f[0]);
     if (null != i) {
       var e, t;
-      return i.length <= 0 ? null : null != (e = null == (t = i.find(e => e.user.id !== h.default.getId())) ? true : t.user) ? e : i[0].user
+      return i.length <= 0 ? null : null != (e = null == (t = i.find(e => e.user.id !== g.default.getId())) ? true : t.user) ? e : i[0].user
     }
   });
-  if (null == g) return null;
-  let E = l || (0, u.A)(n),
-    O = (0, _.gV)(t.type);
+  if (null == _) return null;
+  let b = o || (0, u.A)(n),
+    v = (0, m.gV)(t.type);
   return (0, r.jsxs)("div", {
-    className: b.Eb,
+    className: h.Eb,
     children: [(0, r.jsx)("div", {
-      className: b.Il,
-      children: E ? (0, r.jsx)(y.A, {
+      className: h.Il,
+      children: b ? (0, r.jsx)(A.A, {
         activity: n,
-        embeddedApp: a,
-        user: g,
+        embeddedApp: l,
+        user: _,
         channel: t,
         sortedVoiceStates: i,
-        onOpenSpotifyTrack: O ? f.Mp : true,
-        onOpenSpotifyArtist: O ? f.mN : true,
-        onOpenSpotifyAlbum: O ? f.QX : true
+        onOpenSpotifyTrack: v ? p.Mp : true,
+        onOpenSpotifyArtist: v ? p.mN : true,
+        onOpenSpotifyAlbum: v ? p.QX : true
       }) : (0, r.jsx)(c.A, {
         type: c.M.VOICE_CHANNEL,
         activity: n,
-        user: g,
+        user: _,
         guildId: t.getGuildId(),
         channelId: t.id,
-        renderHeaderAccessory: null != i ? () => (0, r.jsx)(A, {
+        renderHeaderAccessory: null != i ? () => (0, r.jsx)(O, {
           guildId: t.guild_id,
           members: i
         }) : true
       })
     }), (0, r.jsx)("div", {
-      className: b.M4,
+      className: h.M4,
       children: (0, r.jsx)(d.A, {
         type: c.M.VOICE_CHANNEL,
         activity: n,
-        embeddedActivity: null == a ? true : a.embeddedActivity,
-        user: g,
+        embeddedActivity: null == l ? true : l.embeddedActivity,
+        user: _,
         guildId: t.getGuildId(),
         channelId: t.id,
         buttonVariant: "primary",
-        onAction: o
+        onAction: s
       })
     })]
   })

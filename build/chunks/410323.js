@@ -4,8 +4,8 @@
 var Chunk630017 = require("./630017.js"),
   i = Function.prototype,
   a = i.call,
-  s = Chunk630017 && i.bind.bind(a, a);
-module.exports = Chunk630017 ? s : function(e) {
+  o = Chunk630017 && i.bind.bind(a, a);
+module.exports = Chunk630017 ? o : function(e) {
   return function() {
     return a.apply(e, arguments)
   }

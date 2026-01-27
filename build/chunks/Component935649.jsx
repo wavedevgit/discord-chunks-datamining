@@ -84,7 +84,7 @@ let v = {
   showAgeVerification: e => {
     let {
       onClose: t,
-      entryPoint: o,
+      entryPoint: s,
       shouldShowExpressiveModal: c = false,
       verificationVendorName: f,
       verificationRequestId: h,
@@ -110,10 +110,10 @@ let v = {
     let b = {
       modalKey: p.SW,
       onCloseCallback: t,
-      backdropStyle: O(o),
-      Layer: s.Ay
+      backdropStyle: O(s),
+      Layer: o.Ay
     };
-    c || (0, u.v)(o) ? (0, a.mMO)(async () => {
+    c || (0, u.v)(s) ? (0, a.mMO)(async () => {
       let {
         default: e
       } = await n.e("24947").then(n.bind(n, 662558));
@@ -134,7 +134,7 @@ let v = {
       onClose: t,
       entryPoint: i
     } = e;
-    (0, f.Q9)() && ((0, o.u0)() || (0, c.o)("age_verification_utils")) ? (0, a.mMO)(async () => {
+    (0, f.Q9)() && ((0, s.u0)() || (0, c.o)("age_verification_utils")) ? (0, a.mMO)(async () => {
       let {
         default: e
       } = await n.e("18467").then(n.bind(n, 297102));
@@ -144,7 +144,7 @@ let v = {
     }, {
       modalKey: p.NC,
       backdropStyle: O(i),
-      Layer: s.Ay,
+      Layer: o.Ay,
       onCloseCallback: t
     }) : (0, u.v)(i) ? (0, a.mMO)(async () => {
       let {
@@ -156,7 +156,7 @@ let v = {
     }, {
       modalKey: p.NC,
       backdropStyle: O(i),
-      Layer: s.Ay,
+      Layer: o.Ay,
       onCloseCallback: t
     }) : (0, a.mMO)(async () => {
       let {
@@ -168,7 +168,7 @@ let v = {
     }, {
       modalKey: p.NC,
       backdropStyle: O(i),
-      Layer: s.Ay,
+      Layer: o.Ay,
       onCloseCallback: t
     })
   },

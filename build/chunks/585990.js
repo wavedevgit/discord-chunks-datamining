@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 585990, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 21425 **/
+/** chunk id: 585990, original params: e,t,n (module,exports,require) **/
 module.exports = {
   QZ: "effect_adebba",
   Xh: "username_adebba",

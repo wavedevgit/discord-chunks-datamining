@@ -18,7 +18,7 @@ module.exports = function(e) {
     },
     i = /(_[a-z_\d]+)?/,
     a = /([de][+-]?\d+)?/,
-    s = {
+    o = {
       className: "number",
       variants: [{
         begin: t.concat(/\b\d+/, /\.(\d*)/, a, i)
@@ -29,7 +29,7 @@ module.exports = function(e) {
       }],
       relevance: 0
     },
-    o = {
+    s = {
       className: "function",
       beginKeywords: "subroutine function program",
       illegal: "[${=\\n]",
@@ -50,9 +50,9 @@ module.exports = function(e) {
       className: "string",
       relevance: 0,
       variants: [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
-    }, o, {
+    }, s, {
       begin: /^C\s*=(?!=)/,
       relevance: 0
-    }, r, s]
+    }, r, o]
   }
 }

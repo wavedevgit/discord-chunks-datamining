@@ -6,10 +6,10 @@ var Chunk906046 = require("./906046.js"),
   a = require("./912877.js")(),
   Chunk429013 = require("./429013.js");
 if (a) {
-  var o = Chunk906046("Symbol.prototype.toString"),
+  var s = Chunk906046("Symbol.prototype.toString"),
     l = Chunk429013(/^Symbol\(.*\)$/),
     c = function(e) {
-      return "symbol" == typeof e.valueOf() && l(o(e))
+      return "symbol" == typeof e.valueOf() && l(s(e))
     };
   module.exports = function(e) {
     if ("symbol" == typeof e) returntrue;

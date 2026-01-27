@@ -29,7 +29,7 @@ function d(e) {
 }
 
 function f(e) {
-  return d(e) ? l.wJ.includes(e) : !!u(e) && ((0, o.VI)(e.asset) || (0, o.q6)(e.asset))
+  return d(e) ? l.wJ.includes(e) : !!u(e) && ((0, s.VI)(e.asset) || (0, s.q6)(e.asset))
 }
 
 function p(e) {
@@ -62,18 +62,18 @@ function h(e) {
 }
 
 function m(e, t, n) {
-  let o = a.A.getGuildId(),
+  let s = a.A.getGuildId(),
     l = a.A.getChannelId(),
     u = i.A.getChannel(l),
-    d = (0, r.JK)(o, l, true);
-  s.default.track(c.HAw.VIDEO_EFFECT_UPDATED, {
+    d = (0, r.JK)(s, l, true);
+  o.default.track(c.HAw.VIDEO_EFFECT_UPDATED, {
     location: t,
     effect_type: p(e),
     effect_detail: h(e),
     effect_state: n,
     channel_id: l,
     channel_type: null == u ? true : u.type,
-    guild_id: o,
+    guild_id: s,
     voice_state_count: d.voice_state_count,
     video_stream_count: d.video_stream_count,
     media_session_id: a.A.getMediaSessionId(),
@@ -83,7 +83,7 @@ function m(e, t, n) {
 }
 
 function g(e, t, n) {
-  s.default.track(c.HAw.VIDEO_BACKGROUND_ADDED, {
+  o.default.track(c.HAw.VIDEO_BACKGROUND_ADDED, {
     is_animated: f(e),
     is_video: t,
     is_from_tenor: n
@@ -91,7 +91,7 @@ function g(e, t, n) {
 }
 
 function E(e) {
-  s.default.track(c.HAw.VIDEO_BACKGROUND_DELETED, {
+  o.default.track(c.HAw.VIDEO_BACKGROUND_DELETED, {
     is_animated: f(e)
   })
 }

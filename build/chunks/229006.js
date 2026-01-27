@@ -9,7 +9,7 @@ require.d(exports, {
   Yn: () => l,
   _g: () => p,
   rO: () => f,
-  s2: () => o,
+  s2: () => s,
   tp: () => d
 }), require("./801541.js"), require("./896048.js"), require("./228524.js");
 var Chunk889137 = require("./889137.js"),
@@ -17,7 +17,7 @@ var Chunk889137 = require("./889137.js"),
   Chunk341915 = require("./341915.js"),
   Chunk229695 = require("./229695.js");
 
-function o(e) {
+function s(e) {
   try {
     return (0, r.YW)(e.config).with({
       config_version: 2
@@ -31,7 +31,7 @@ function o(e) {
 function l(e) {
   return (0, r.YW)(e).with({
     config_version: 2
-  }, e => (0, s.k)(e)).exhaustive()
+  }, e => (0, o.k)(e)).exhaustive()
 }
 
 function c(e) {
@@ -135,7 +135,7 @@ function h(e) {
       secondary: e.colors.secondary
     },
     rewards: e.rewards.map(_),
-    cosponsorMetadata: (0, s.j)(e.cosponsor_metadata)
+    cosponsorMetadata: (0, o.j)(e.cosponsor_metadata)
   }
 }
 

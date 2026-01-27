@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk736666 = require("./736666.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,16 +36,16 @@ function u(e) {
     state: t
   } = e;
   switch (t) {
-    case s.R.LOADING:
+    case o.R.LOADING:
       l.lastInitAttemptMayHaveCrashed = true;
       break;
-    case s.R.LOADED:
-    case s.R.FAILED:
-    case s.R.UNSUPPORTED:
+    case o.R.LOADED:
+    case o.R.FAILED:
+    case o.R.UNSUPPORTED:
       l.lastInitAttemptMayHaveCrashed = false
   }
 }
-o(c, "displayName", "VoiceFilterPersistedStore"), o(c, "persistKey", "VoiceFilterPersistedStore");
+s(c, "displayName", "VoiceFilterPersistedStore"), s(c, "persistKey", "VoiceFilterPersistedStore");
 let d = new c(Chunk73153.h, {
   VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: u
 })

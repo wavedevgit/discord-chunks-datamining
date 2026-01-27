@@ -26,8 +26,8 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = 64,
-  o = 16,
+let o = 64,
+  s = 16,
   l = 4;
 
 function c() {
@@ -69,19 +69,19 @@ class p {
   }
   static fromBit(e) {
     let t = Array(l),
-      n = Math.floor(e / o);
-    for (let r = 0; r < l; r++) t[l - 1 - r] = r === n ? 1 << e - n * o : 0;
+      n = Math.floor(e / s);
+    for (let r = 0; r < l; r++) t[l - 1 - r] = r === n ? 1 << e - n * s : 0;
     return new p(t)
   }
   static asUintN(e, t) {
     let {
       parts: n
     } = t, r = 0, i = 0;
-    for (; i < e && i < n.length * o;) {
-      let t = Math.min(e - i, o),
+    for (; i < e && i < n.length * s;) {
+      let t = Math.min(e - i, s),
         a = (1 << t) - 1,
-        s = n.length - Math.floor(i / o) - 1;
-      r |= (n[s] & a) << i, i += t
+        o = n.length - Math.floor(i / s) - 1;
+      r |= (n[o] & a) << i, i += t
     }
     return r
   }
@@ -114,7 +114,7 @@ class p {
   }
   toString() {
     if (null != this.str) return this.str;
-    let e = Array(s / 4);
+    let e = Array(o / 4);
     return this.parts.forEach((t, n) => {
       let r = d(t.toString());
       for (let t = 0; t < 4; t++) e[t + 4 * n] = r[3 - t] || 0

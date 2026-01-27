@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 398523, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 398523, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => l
 });
 var Chunk600975 = require("./600975.js"),
   Chunk688151 = require("./688151.js");
-let a = (0, Chunk600975.C)({
+let l = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-10_recurring_3p_promotion",
   label: "Recurring 3P Promotion Experiment",

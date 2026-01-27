@@ -19,12 +19,12 @@ function a(e, t) {
   if (t.has(e)) throw TypeError("Cannot initialize the same private elements twice on an object")
 }
 
-function s(e, t) {
+function o(e, t) {
   var n = c(e, t, "get");
-  return o(e, n)
+  return s(e, n)
 }
 
-function o(e, t) {
+function s(e, t) {
   return t.get ? t.get.call(e) : t.value
 }
 
@@ -55,12 +55,12 @@ class f {
       writable: true,
       value: true
     }), r(this, "register", e => {
-      s(this, d).push(e)
+      o(this, d).push(e)
     }), r(this, "unregister", e => {
       let t;
-      for (; false !== (t = s(this, d).indexOf(e));) s(this, d).splice(t, 1)
+      for (; false !== (t = o(this, d).indexOf(e));) o(this, d).splice(t, 1)
     }), r(this, "backendChanged", e => {
-      for (let t of s(this, d)) t.backendChanged(e)
+      for (let t of o(this, d)) t.backendChanged(e)
     }), l(this, d, [])
   }
 }

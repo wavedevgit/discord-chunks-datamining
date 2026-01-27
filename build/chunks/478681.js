@@ -8,16 +8,16 @@ require.d(exports, {
 var Chunk919015 = require("./919015.js"),
   Chunk588522 = require("./588522.js");
 let a = "Sentry Logger ",
-  s = ["debug", "info", "warn", "error", "log", "assert", "trace"],
-  o = {};
+  o = ["debug", "info", "warn", "error", "log", "assert", "trace"],
+  s = {};
 
 function l(e) {
   if (!("console" in i.O)) return e();
   let t = i.O.console,
     n = {},
-    r = Object.keys(o);
+    r = Object.keys(s);
   r.forEach(e => {
-    let r = o[e];
+    let r = s[e];
     n[e] = t[e], t[e] = r
   });
   try {
@@ -40,13 +40,13 @@ function c() {
       },
       isEnabled: () => e
     };
-  return r.T ? s.forEach(n => {
+  return r.T ? o.forEach(n => {
     t[n] = (...t) => {
       e && l(() => {
         i.O.console[n](`${a}[${n}]:`, ...t)
       })
     }
-  }) : s.forEach(e => {
+  }) : o.forEach(e => {
     t[e] = () => true
   }), t
 }

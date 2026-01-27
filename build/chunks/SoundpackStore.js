@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk235079 = require("./235079.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function c(e) {
 }
 class u extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (l = e, Object.values(s.i).includes(l.soundpack) || (l.soundpack = s.i.CLASSIC))
+    null != e && (l = e, Object.values(o.i).includes(l.soundpack) || (l.soundpack = o.i.CLASSIC))
   }
   getState() {
     return l
@@ -45,7 +45,7 @@ class u extends(r = Chunk311907.Ay.PersistedStore) {
     return l.lastSoundpackExperimentId
   }
 }
-o(u, "displayName", "SoundpackStore"), o(u, "persistKey", "SoundpackStore");
+s(u, "displayName", "SoundpackStore"), s(u, "persistKey", "SoundpackStore");
 let d = new u(Chunk73153.h, {
   SET_SOUNDPACK: c
 })

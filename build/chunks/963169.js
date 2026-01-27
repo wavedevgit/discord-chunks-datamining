@@ -21,13 +21,13 @@ function u(e, t) {
     action: t
   })
 }
-let d = () => (0, o.J)({
+let d = () => (0, s.J)({
   location: "NavHistoryActionCreators"
 });
 
 function f(e) {
   if (!(0, a.TX)()) return;
-  if (s.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
+  if (o.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
       nav_direction: false,
       nav_trigger: e
     }), !d()) return void(0, a.aX)();
@@ -39,7 +39,7 @@ function f(e) {
 
 function p(e) {
   if (!(0, a.TX)()) return;
-  if (s.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
+  if (o.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
       nav_direction: 1,
       nav_trigger: e
     }), !d()) return void(0, a.sY)();

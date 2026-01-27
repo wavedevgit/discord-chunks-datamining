@@ -12,8 +12,8 @@ function i(e) {
     username: n,
     discriminator: i,
     globalName: a,
-    avatar: s,
-    avatarDecoration: o,
+    avatar: o,
+    avatarDecoration: s,
     bot: l,
     flags: c,
     premiumType: u
@@ -23,8 +23,8 @@ function i(e) {
     username: n,
     discriminator: i,
     global_name: a,
-    avatar: s,
-    avatar_decoration_data: (0, r.Xq)(o),
+    avatar: o,
+    avatar_decoration_data: (0, r.Xq)(s),
     bot: l,
     flags: c,
     premium_type: null != u ? u : 0

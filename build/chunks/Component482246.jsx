@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   l = require.n(Chunk284009),
   Chunk575593 = require("./575593.js"),
@@ -71,25 +71,25 @@ let P = e => {
   var t, n;
   let {
     skuId: a,
-    isSelected: o,
+    isSelected: s,
     pricePreview: C,
     onSelect: w,
     shouldDisplayHeader: P = false,
     className: D,
-    previewHeaderClassName: x,
-    hideProfilePreview: L = false,
-    fallbackPrice: j
+    previewHeaderClassName: L,
+    hideProfilePreview: x = false,
+    fallbackPrice: M
   } = e, {
-    product: M
+    product: j
   } = (0, E.q)(a, true), {
     giftRecipient: k,
     giftRecipientError: U
-  } = (0, f.Pv)(), G = (0, u.bG)([h.default], () => h.default.getCurrentUser()), V = (0, y.o7)(M), F = i.useRef(null), B = m.Ay.canUseCollectibles(G), H = i.useMemo(() => (0, g.fT)(M, B), [M, B]), Y = (0, I.V_)(M);
-  if (null == M) return null;
-  let [W] = M.items;
+  } = (0, f.Pv)(), G = (0, u.bG)([h.default], () => h.default.getCurrentUser()), F = (0, y.o7)(j), V = i.useRef(null), B = m.Ay.canUseCollectibles(G), H = i.useMemo(() => (0, g.fT)(j, B), [j, B]), Y = (0, I.V_)(j);
+  if (null == j) return null;
+  let [W] = j.items;
   l()(null != W, "Product item should not be empty");
   let K = () => {
-      if ((null == M ? true : M.type) === c.R.BUNDLE) return null;
+      if ((null == j ? true : j.type) === c.R.BUNDLE) return null;
       switch (W.type) {
         case c.R.AVATAR_DECORATION:
           return S.intl.string(S.t["7v0T9P"]);
@@ -101,7 +101,7 @@ let P = e => {
           return null
       }
     },
-    z = null != k && k.id !== (null == G ? true : G.id) && M.type !== c.R.BUNDLE && W.type !== c.R.NAMEPLATE && !L,
+    z = null != k && k.id !== (null == G ? true : G.id) && j.type !== c.R.BUNDLE && W.type !== c.R.NAMEPLATE && !x,
     q = () => {
       null != a && null != w && w(a)
     },
@@ -109,11 +109,11 @@ let P = e => {
   return (0, r.jsxs)("div", {
     className: D,
     children: [P && (0, r.jsx)("div", {
-      className: s()(T.QU, x),
+      className: o()(T.QU, L),
       children: (0, r.jsx)(d.D0$, {
         label: S.intl.string(S.t.PpoJzt),
         children: z && (0, r.jsx)(d.YNO, {
-          targetElementRef: F,
+          targetElementRef: V,
           preload: () => (0, _.A)(k.id, k.getAvatarURL(null, 80)),
           renderPopout: e => (0, r.jsx)(p.A, R(N({}, e), {
             user: k,
@@ -128,7 +128,7 @@ let P = e => {
           position: "right",
           children: e => (0, r.jsx)(d.DUT, R(N({}, e), {
             className: T.Nx,
-            innerRef: F,
+            innerRef: V,
             children: (0, r.jsx)(d.Text, {
               variant: "text-xs/medium",
               color: "text-link",
@@ -140,20 +140,20 @@ let P = e => {
     }), (0, r.jsxs)(d.DUT, {
       tag: "div",
       onClick: q,
-      className: s()(T.i1, {
-        [T.no]: o && null == U,
-        [T.cN]: o && null != U
+      className: o()(T.i1, {
+        [T.no]: s && null == U,
+        [T.cN]: s && null != U
       }),
       children: [(0, r.jsxs)("div", {
         className: T.Ug,
         children: [(0, r.jsx)(v.O, {
-          product: M,
+          product: j,
           fallbackLabel: null
         }), (0, r.jsxs)("div", {
           className: T.JZ,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-md/semibold",
-            children: V
+            children: F
           }), (0, r.jsx)(d.Heading, {
             variant: "heading-sm/medium",
             color: "text-default",
@@ -172,9 +172,9 @@ let P = e => {
           variant: "text-md/bold"
         }) : (0, r.jsx)(d.Text, {
           variant: "text-md/semibold",
-          children: j
+          children: M
         })]
-      }), o && null != U && (0, r.jsx)("div", {
+      }), s && null != U && (0, r.jsx)("div", {
         className: T.Wh,
         children: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",

@@ -59,7 +59,7 @@ function b(e, t) {
 async function O() {
   let e = _.default.getAwaitingRemoteSessionInfo(),
     t = null == e ? true : e.nonce;
-  s.h.dispatch({
+  o.h.dispatch({
     type: "REMOTE_SESSION_DISCONNECT"
   });
   let n = [];
@@ -67,7 +67,7 @@ async function O() {
   try {
     await Promise.all(n)
   } catch (e) {
-    o.A.show({
+    s.A.show({
       title: g.intl.string(g.t.LNhXcL),
       body: g.intl.string(g.t.QnKxtP)
     })
@@ -75,7 +75,7 @@ async function O() {
 }
 
 function v(e) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "REMOTE_SESSION_CONNECT",
     sessionId: e
   })
@@ -86,7 +86,7 @@ function A(e, t) {
     selfMute: n,
     selfDeaf: r
   } = t;
-  s.h.dispatch({
+  o.h.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
     payload: {
@@ -98,7 +98,7 @@ function A(e, t) {
 }
 
 function I(e) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
     payload: {
@@ -109,7 +109,7 @@ function I(e) {
 
 function S(e, t, n, r) {
   let i = (0, l.o)(n);
-  null != i && (s.h.dispatch({
+  null != i && (o.h.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
     payload: y({
@@ -146,7 +146,7 @@ function C(e) {
 }
 async function N(e) {
   let t;
-  s.h.dispatch({
+  o.h.dispatch({
     type: "GAME_CONSOLE_FETCH_DEVICES_START",
     platform: e
   });
@@ -156,14 +156,14 @@ async function N(e) {
       rejectWithError: false
     })
   } catch (t) {
-    throw s.h.dispatch({
+    throw o.h.dispatch({
       type: "GAME_CONSOLE_FETCH_DEVICES_FAIL",
       platform: e,
       error: t
     }), t
   }
   let n = t.body.devices;
-  return s.h.dispatch({
+  return o.h.dispatch({
     type: "GAME_CONSOLE_FETCH_DEVICES_SUCCESS",
     platform: e,
     devices: n
@@ -171,20 +171,20 @@ async function N(e) {
 }
 
 function w(e, t) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "GAME_CONSOLE_SELECT_DEVICE",
     platform: e,
     deviceId: t
   })
 }
 async function R(e, t, n, i) {
-  let o;
-  s.h.dispatch({
+  let s;
+  o.h.dispatch({
     type: "GAME_CONSOLE_DEVICE_SEND_COMMAND_START",
     platform: e
   });
   try {
-    o = await a.Bo.post({
+    s = await a.Bo.post({
       url: m.Rsh.CONSOLES_DEVICES_COMMANDS(e, t),
       body: {
         command: r.O.CONNECT_VOICE,
@@ -195,14 +195,14 @@ async function R(e, t, n, i) {
       rejectWithError: false
     })
   } catch (t) {
-    throw s.h.dispatch({
+    throw o.h.dispatch({
       type: "GAME_CONSOLE_DEVICE_SEND_COMMAND_FAIL",
       platform: e,
       error: t
     }), t
   }
-  let l = o.body.id;
-  return s.h.dispatch({
+  let l = s.body.id;
+  return o.h.dispatch({
     type: "WAIT_FOR_REMOTE_SESSION",
     sessionType: e,
     nonce: i,
@@ -212,7 +212,7 @@ async function R(e, t, n, i) {
   }), l
 }
 async function P(e, t, n) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_START",
     platform: e,
     deviceId: t,
@@ -224,7 +224,7 @@ async function P(e, t, n) {
       rejectWithError: false
     })
   } catch (r) {
-    throw s.h.dispatch({
+    throw o.h.dispatch({
       type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_FAIL",
       platform: e,
       deviceId: t,
@@ -232,7 +232,7 @@ async function P(e, t, n) {
       error: r
     }), r
   }
-  s.h.dispatch({
+  o.h.dispatch({
     type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_SUCCESS",
     platform: e,
     deviceId: t,

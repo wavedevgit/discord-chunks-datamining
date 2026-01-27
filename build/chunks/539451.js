@@ -2,7 +2,7 @@
 /** chunk id: 539451, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk722872 = require("./722872.js");
 
@@ -15,12 +15,12 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 let a = 500,
-  s = 150;
-class o {
+  o = 150;
+class s {
   getCurrentValue() {
     if (null == this.animationDetails) return this.value;
     let e = performance.now() - this.animationDetails.animationStart,
-      t = this.value < this.animationDetails.lastValue ? s : a;
+      t = this.value < this.animationDetails.lastValue ? o : a;
     return e > t ? (this.animationDetails = null, this.value) : this.value < this.animationDetails.lastValue ? r.easeOutQuint(e, this.animationDetails.lastValue, this.value, t) : r.easeOutBack(e, this.animationDetails.lastValue, this.value, t, 4)
   }
   animateTo(e) {

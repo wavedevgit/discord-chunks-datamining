@@ -12,16 +12,16 @@ function a(e) {
     onVisible: t,
     threshold: n,
     minTimeVisibleMs: a
-  } = e, s = r.useRef(false), o = r.useRef(null);
+  } = e, o = r.useRef(false), s = r.useRef(null);
   r.useEffect(() => () => {
-    null != o.current && (clearTimeout(o.current), o.current = null)
+    null != s.current && (clearTimeout(s.current), s.current = null)
   }, []);
   let l = e => {
-    if (null == o.current || e || false !== s.current || (clearTimeout(o.current), o.current = null), !e || true === s.current) return;
+    if (null == s.current || e || false !== o.current || (clearTimeout(s.current), s.current = null), !e || true === o.current) return;
     let n = () => {
-      t(), s.current = true, o.current = null
+      t(), o.current = true, s.current = null
     };
-    null != a ? o.current = setTimeout(n, a) : n()
+    null != a ? s.current = setTimeout(n, a) : n()
   };
   return (0, i.K)(l, n)
 }

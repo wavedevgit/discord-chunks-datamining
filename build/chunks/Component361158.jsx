@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk296489 = require("./296489.js"),
-  s = require.n(Chunk296489),
+  o = require.n(Chunk296489),
   Chunk89229 = require("./89229.js"),
   Chunk307343 = require("./307343.js"),
   Chunk353640 = require("./353640.js"),
@@ -120,7 +120,7 @@ function C() {
     item: e,
     nodeRef: i.createRef()
   }));
-  return (0, r.jsx)(o.A, {
+  return (0, r.jsx)(s.A, {
     children: a.map(e => {
       let {
         item: i,
@@ -157,11 +157,11 @@ function N(e) {
       disableAnimation: i = false,
       showAppUnderLayer: a = false
     } = t,
-    o = null != n ? n : s()();
+    s = null != n ? n : o()();
   return (0, u.r)(() => {
     A.setState(t => ({
       fullScreenLayers: [...t.fullScreenLayers, {
-        key: o,
+        key: s,
         transitionState: 1,
         LayerComponent: null != r ? r : h.Ay,
         render: e,
@@ -171,7 +171,7 @@ function N(e) {
         }
       }]
     }))
-  }), o
+  }), s
 }
 
 function w(e) {

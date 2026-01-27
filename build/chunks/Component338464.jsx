@@ -20,11 +20,11 @@ let f = e => {
     } = e;
     return (0, r.jsxs)("div", {
       className: a()(d.KT, t === c.tm.TOP_GUILD_EMOJI ? d.S7 : d.lD),
-      children: [t === c.tm.TOP_GUILD_EMOJI ? (0, r.jsx)(o.A, {
+      children: [t === c.tm.TOP_GUILD_EMOJI ? (0, r.jsx)(s.A, {
         foreground: d.Gb
       }) : (0, r.jsx)(l.A, {
         foreground: d.Gb
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
         children: t === c.tm.TOP_GUILD_EMOJI ? u.intl.string(u.t.TR2B4T) : u.intl.string(u.t["1aZ4V6"])
@@ -36,7 +36,7 @@ let f = e => {
       className: t,
       graphicPrimary: n,
       graphicSecondary: i,
-      titlePrimary: o,
+      titlePrimary: s,
       titleSecondary: l,
       isFavorite: p = false,
       emojiSubCategory: _ = c.tm.NONE
@@ -49,20 +49,20 @@ let f = e => {
         children: n
       }), (0, r.jsxs)("div", {
         className: d.tC,
-        children: [(0, r.jsxs)(s.Text, {
+        children: [(0, r.jsxs)(o.Text, {
           className: d.jn,
           variant: "text-md/semibold",
-          children: [p ? (0, r.jsx)(s.Gg5, {
+          children: [p ? (0, r.jsx)(o.Gg5, {
             size: "custom",
             color: "currentColor",
             "aria-label": p ? u.intl.formatToPlainString(u.t["+fdUkf"], {
-              names: o
+              names: s
             }) : true,
             width: 15,
             height: 15,
             className: d.BI
-          }) : null, o]
-        }), null != l && (0, r.jsx)(s.Text, {
+          }) : null, s]
+        }), null != l && (0, r.jsx)(o.Text, {
           className: d.Fm,
           variant: "text-xs/normal",
           children: l

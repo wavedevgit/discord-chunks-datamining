@@ -82,12 +82,12 @@ function A() {
 }
 
 function I() {
-  if (r === o.default.locale) returnfalse;
-  A(), r = o.default.locale
+  if (r === s.default.locale) returnfalse;
+  A(), r = s.default.locale
 }
 class S extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.default), this.syncWith([o.default], I), r = o.default.locale
+    this.waitFor(s.default), this.syncWith([s.default], I), r = s.default.locale
   }
   get(e) {
     return d[e]

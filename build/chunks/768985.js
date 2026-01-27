@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 768985, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 768985, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => b
+  j: () => E
 });
 var Chunk64700 = require("./64700.js"),
   Chunk731738 = require("./731738.js"),
@@ -22,56 +21,56 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js"),
   Chunk204925 = require("./204925.js");
 
-function b(e) {
+function E(e) {
   let {
     location: t,
     onMountEffect: n
-  } = e, b = (0, h.A)(), O = (0, m.W1)(), {
-    familyCenterInitialized: v,
-    isLoading: A
-  } = (0, a.cf)([f.A], () => ({
-    familyCenterInitialized: f.A.getIsInitialized(),
-    isLoading: f.A.isLoading()
-  })), I = (0, _.k)(), {
-    selectedTab: S,
-    handleTabChange: T
-  } = (0, p.A)(), C = u.default.getCurrentUser(), N = null != b, w = "adult" === b, R = v && null != C && !N;
+  } = e, E = (0, g.A)(), x = (0, A.W1)(), {
+    familyCenterInitialized: O,
+    isLoading: C
+  } = (0, l.cf)([_.A], () => ({
+    familyCenterInitialized: _.A.getIsInitialized(),
+    isLoading: _.A.isLoading()
+  })), I = (0, m.k)(), {
+    selectedTab: T,
+    handleTabChange: S
+  } = (0, p.A)(), j = d.default.getCurrentUser(), v = null != E, N = O && null != j && !v;
   (0, s.Ay)(() => {
     (0, c.d)("family-center"), null != n && n()
   });
-  let P = {
-      isConsideredAdult: w,
-      numOfAcceptedRequests: O,
-      selectedTab: S,
+  let y = {
+      isConsideredAdult: "adult" === E,
+      numOfAcceptedRequests: x,
+      selectedTab: T,
       selectedTeenId: I
     },
-    D = r.useRef(P);
+    P = r.useRef(y);
   return r.useEffect(() => {
-    D.current = P
+    P.current = y
   }), r.useEffect(() => {
-    if (v && N) {
+    if (O && v) {
       let {
         isConsideredAdult: e,
         numOfAcceptedRequests: n,
         selectedTab: r,
-        selectedTeenId: a
-      } = D.current;
-      d.default.track(E.HAw.FAMILY_CENTER_VIEWED, {
+        selectedTeenId: l
+      } = P.current;
+      u.default.track(h.HAw.FAMILY_CENTER_VIEWED, {
         is_considered_adult: e,
         num_of_accepted_links: n,
-        selected_teen_id: a,
-        initial_page: g.zu[r],
-        source: g.iN[t]
-      }), l.A.increment({
+        selected_teen_id: l,
+        initial_page: f.zu[r],
+        source: f.iN[t]
+      }), o.A.increment({
         name: i.K.FAMILY_CENTER_VIEW
       })
     }
-  }, [v, N, t]), r.useEffect(() => {
-    R && (0, o.yO)(y.w_.FAMILY_CENTER)
-  }, [R]), {
-    isLoading: A,
-    selectedTab: S,
-    handleTabChange: T,
-    showAgeGateModal: R
+  }, [O, v, t]), r.useEffect(() => {
+    N && (0, a.yO)(b.w_.FAMILY_CENTER)
+  }, [N]), {
+    isLoading: C,
+    selectedTab: T,
+    handleTabChange: S,
+    showAgeGateModal: N
   }
 }

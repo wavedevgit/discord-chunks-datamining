@@ -35,7 +35,7 @@ class h {
         case r.g.HERO:
           return c.B.fromServer(e);
         case r.g.FEATURED:
-          return o.t.fromServer(e);
+          return s.t.fromServer(e);
         case r.g.FEED:
           return l.l.fromServer(e);
         case r.g.WIDE_BANNER:
@@ -43,7 +43,7 @@ class h {
         case r.g.SHELF:
           return f.r.fromServer(e);
         case r.g.COUNTDOWN_TIMER:
-          return s.z.fromServer(e);
+          return o.z.fromServer(e);
         case r.g.IMMERSIVE_BANNER:
           return u.A.fromServer(e);
         case r.g.REWARD_HERO:

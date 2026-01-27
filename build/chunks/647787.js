@@ -8,9 +8,9 @@ require.d(exports, {
 var Chunk25611 = require("./25611.js"),
   Chunk353563 = require("./353563.js"),
   Chunk325691 = require("./325691.js"),
-  s = 0,
-  o = function() {
-    return !!s
+  o = 0,
+  s = function() {
+    return !!o
   },
   l = 250,
   c = {
@@ -41,7 +41,7 @@ var Chunk25611 = require("./25611.js"),
           try {
             i = (0, r.e)()
           } finally {
-            if (f = false, e = n - d(), !o()) return;
+            if (f = false, e = n - d(), !s()) return;
             i ? t.run(1e3) : e > 0 ? t.run(e) : t.start()
           }
         })
@@ -67,5 +67,5 @@ var Chunk25611 = require("./25611.js"),
     }, e
   }()),
   _ = function(e) {
-    !s && e > 0 && p.start(), (s += e) || p.stop()
+    !o && e > 0 && p.start(), (o += e) || p.stop()
   }

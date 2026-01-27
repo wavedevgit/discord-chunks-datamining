@@ -126,7 +126,7 @@ let m = {
         disconnect: async () => await l.A.disconnect(),
         perkAvailableToUser: e
       })),
-      n = (0, s.P)(t, e => e.setPerkAvailableToUser);
+      n = (0, o.P)(t, e => e.setPerkAvailableToUser);
     return (0, i.useEffect)(() => {
       n(e)
     }, [e, n]), t
@@ -136,5 +136,5 @@ function O(e) {
   let t = (0, i.useContext)(E),
     n = b(),
     r = null != t ? t : n;
-  return null != e ? (0, s.P)(r, e) : (0, s.P)(r)
+  return null != e ? (0, o.P)(r, e) : (0, o.P)(r)
 }

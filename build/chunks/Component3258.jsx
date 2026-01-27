@@ -2,7 +2,7 @@
 /** chunk id: 3258, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  Playground: () => j,
+  Playground: () => M,
   PlaygroundStore: () => D
 }), require("./896048.js"), require("./114821.js"), require("./339614.js");
 var Chunk627968 = require("./627968.js"),
@@ -75,12 +75,12 @@ let D = (0, Chunk839214.D)(() => ({
   controlsLayout: "right"
 }));
 
-function x() {
+function L() {
   let e = (0, y.A)(),
     t = (0, E.A)(),
     n = (0, b.A)(),
     a = D.useField("controlsLayout"),
-    s = i.useMemo(() => (0, r.jsxs)(u.rX, {
+    o = i.useMemo(() => (0, r.jsxs)(u.rX, {
       label: "Controls",
       children: [(0, r.jsx)(u.iD, {
         id: "controls-right",
@@ -116,7 +116,7 @@ function x() {
     children: [(0, r.jsx)(u.Dr, {
       id: "appearance",
       label: T.intl.string(T.t["iHH+ky"]),
-      children: [...e.filter(e => null != e), s]
+      children: [...e.filter(e => null != e), o]
     }), (0, r.jsx)(u.Dr, {
       id: "accessibility",
       label: T.intl.string(T.t.G0neg7),
@@ -129,11 +129,11 @@ function x() {
   })
 }
 
-function L() {
+function x() {
   let e = i.useRef(null);
   return (0, r.jsx)(f.Y, {
     targetElementRef: e,
-    renderPopout: () => (0, r.jsx)(x, {}),
+    renderPopout: () => (0, r.jsx)(L, {}),
     position: "bottom",
     align: "center",
     animation: f.Y.Animation.SCALE,
@@ -149,7 +149,7 @@ function L() {
   })
 }
 
-function j(e) {
+function M(e) {
   var t;
   let {
     configs: n
@@ -224,7 +224,7 @@ function j(e) {
           children: [(0, r.jsx)(g.Ay.Divider, {
             className: C.zN
           }), (0, r.jsx)(g.Ay.Title, {
-            children: (0, r.jsx)(o.Anchor, {
+            children: (0, r.jsx)(s.Anchor, {
               href: b.docs,
               children: "Docs"
             })
@@ -237,11 +237,11 @@ function j(e) {
           onClick: R
         }) : null, (0, r.jsx)("div", {
           className: C.IE,
-          children: (0, r.jsx)(L, {})
+          children: (0, r.jsx)(x, {})
         })]
       }), (0, r.jsxs)("div", {
         className: C.MY,
-        children: [(0, r.jsx)(s.IpV, {
+        children: [(0, r.jsx)(o.IpV, {
           fade: true,
           className: C.pz,
           children: null != E ? (0, r.jsx)(v._, {

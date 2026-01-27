@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk616093 = require("./616093.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,7 +32,7 @@ class u extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     }
   }
   initialize(e) {
-    for (var t in s.A) {
+    for (var t in o.A) {
       var n, r;
       l[t] = null != (n = null == e || null == (r = e.toggleStates) ? true : r[t]) && n
     }
@@ -45,7 +45,7 @@ class u extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return l[e] = t, t
   }
 }
-o(u, "displayName", "LabFeatureStore"), o(u, "persistKey", "LabFeatureStore");
+s(u, "displayName", "LabFeatureStore"), s(u, "persistKey", "LabFeatureStore");
 let d = new u(Chunk73153.h, {
   LAB_FEATURE_TOGGLE: c
 })

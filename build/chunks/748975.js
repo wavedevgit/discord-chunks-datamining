@@ -26,7 +26,7 @@ function h(e, t) {
       application: h,
       channelId: m
     });
-  null != g ? (0, s.A)(g) : null != m && ((0, o.pX)(_.BVt.CHANNEL(e, m)), (0, f.A)(m) ? (r.A.selectParticipant(m, (0, a.Qt)({
+  null != g ? (0, o.A)(g) : null != m && ((0, s.pX)(_.BVt.CHANNEL(e, m)), (0, f.A)(m) ? (r.A.selectParticipant(m, (0, a.Qt)({
     applicationId: n.applicationId,
     instanceId: null == n ? true : n.compositeInstanceId
   })), r.A.updateLayout(m, _.DUB.NO_CHAT)) : (0, l.gk)(p.Gd.PANEL))

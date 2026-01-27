@@ -9,8 +9,8 @@ var Chunk64700 = require("./64700.js"),
   Chunk768239 = require("./768239.jsx"),
   Chunk923870 = require("./923870.js");
 
-function s() {
-  return (s = Object.assign || function(e) {
+function o() {
+  return (o = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -19,7 +19,7 @@ function s() {
   }).apply(this, arguments)
 }
 
-function o(e, t) {
+function s(e, t) {
   return f(e) || d(e, t) || c(e, t) || l()
 }
 
@@ -49,12 +49,12 @@ function d(e, t) {
       i = false,
       a = true;
     try {
-      for (var s, o = e[Symbol.iterator](); !(r = (s = o.next()).done) && (n.push(s.value), !t || n.length !== t); r = true);
+      for (var o, s = e[Symbol.iterator](); !(r = (o = s.next()).done) && (n.push(o.value), !t || n.length !== t); r = true);
     } catch (e) {
       i = true, a = e
     } finally {
       try {
-        r || null == o.return || o.return()
+        r || null == s.return || s.return()
       } finally {
         if (i) throw a
       }
@@ -88,12 +88,12 @@ var h = (0, Chunk64700.createContext)(null),
   m = function(e) {
     var t = e.portal,
       n = p(e, ["portal"]),
-      l = o((0, r.useState)(null), 2),
+      l = s((0, r.useState)(null), 2),
       c = l[0],
       u = l[1];
     return r.createElement(h.Provider, {
       value: null != t ? t : c
-    }, r.createElement(i.Q, s({
+    }, r.createElement(i.Q, o({
       backend: a.e
     }, n)), t ? null : r.createElement("div", {
       ref: u

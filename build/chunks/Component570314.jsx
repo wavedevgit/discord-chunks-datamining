@@ -73,8 +73,8 @@ function T(e) {
   } = e, v = I(e, ["user", "closePopout"]), S = i.useRef(null), T = (0, a.bG)([g.A], () => {
     var e;
     return null == (e = g.A.getUserProfile(t.id)) ? true : e.application
-  }), C = (0, a.bG)([f.A, d.A], () => d.A.getChannel(f.A.getChannelId())), N = (0, o.A)(C), w = t.id, R = i.useCallback(() => {
-    null != T && (N ? ((0, l.hg)(T.id), (0, s.OoC)((0, E.n)(w, null == C ? true : C.guild_id)), null == n || n(), p.default.track(b.HAw.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+  }), C = (0, a.bG)([f.A, d.A], () => d.A.getChannel(f.A.getChannelId())), N = (0, s.A)(C), w = t.id, R = i.useCallback(() => {
+    null != T && (N ? ((0, l.hg)(T.id), (0, o.OoC)((0, E.n)(w, null == C ? true : C.guild_id)), null == n || n(), p.default.track(b.HAw.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
       application_id: T.id
     })) : (0, m.o)(A({
       applicationId: T.id
@@ -83,21 +83,21 @@ function T(e) {
   if (null == T || !(0, u.Ie)(T)) return null;
   let {
     customInstallUrl: D
-  } = T, x = null == D || h.A.isDiscordUrl(D) ? s.j96 : s.I9m, L = N ? true : x;
-  return _.p5 ? (0, r.jsx)(s.YNO, {
+  } = T, L = null == D || h.A.isDiscordUrl(D) ? o.j96 : o.I9m, x = N ? true : L;
+  return _.p5 ? (0, r.jsx)(o.YNO, {
     targetElementRef: S,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(s.W1t, {
+      return (0, r.jsx)(o.W1t, {
         "data-menu-migrated-auto": true,
         navId: "user-bot-profile-add-app",
         onClose: t,
         "aria-label": O.intl.string(O.t.dbkxVm),
         onSelect: true,
-        children: (0, r.jsx)(s.rXV, {
-          children: (0, r.jsx)(s.Drp, {
+        children: (0, r.jsx)(o.rXV, {
+          children: (0, r.jsx)(o.Drp, {
             id: "copy",
             label: O.intl.string(O.t.XWDihq),
             action: () => (0, _.C)((0, c.V)(T))
@@ -113,7 +113,7 @@ function T(e) {
         buttonRef: S,
         action: "PRESS_ADD_APP",
         text: P,
-        icon: L,
+        icon: x,
         onContextMenu: t,
         onClick: R
       }, n, v))
@@ -121,7 +121,7 @@ function T(e) {
   }) : (0, r.jsx)(y.FD, A({
     action: "PRESS_ADD_APP",
     text: P,
-    icon: L,
+    icon: x,
     onClick: R,
     variant: "primary"
   }, v))

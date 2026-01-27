@@ -39,8 +39,8 @@ function d(e) {
     icon: i
   } = e, {
     i18n: u
-  } = (0, s.G9)();
-  return (0, r.jsxs)(o.E, {
+  } = (0, o.G9)();
+  return (0, r.jsxs)(s.E, {
     variant: "eyebrow",
     className: a()(l.badge, l[n]),
     children: [null != i && (0, r.jsx)(i, {

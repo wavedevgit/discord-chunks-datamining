@@ -49,7 +49,7 @@ class f extends Chunk315069.A {
         intervalCount: e.subscription_trial.interval_count,
         skuId: e.subscription_trial.sku_id
       } : null,
-      promotion: null != e.promotion ? o.A.createFromServer(e.promotion) : null
+      promotion: null != e.promotion ? s.A.createFromServer(e.promotion) : null
     })
   }
   isExpired() {

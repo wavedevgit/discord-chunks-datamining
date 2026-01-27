@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk572808 = require("./572808.js"),
   Chunk9045 = require("./9045.js"),
   Chunk944766 = require("./944766.jsx"),
@@ -49,13 +49,13 @@ let p = 1080,
     } = i.useMemo(() => {
       let e = f({}, n.position);
       if (g) {
-        let t = o.dG[m.id - 1];
+        let t = s.dG[m.id - 1];
         null != t && (e.x = t.x + t.player.x, e.y = t.y + t.player.y - b.height)
       }
       return e
     }, [n.position, m, g, b]);
     return (0, r.jsx)("div", {
-      className: s()(u.Wp, {
+      className: o()(u.Wp, {
         [u.lv]: E
       }),
       style: {

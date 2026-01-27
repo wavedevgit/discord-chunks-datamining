@@ -29,7 +29,7 @@ let h = false,
   E = {};
 
 function y() {
-  null != m && null == f.A.getGuild(m) && null == o.A.getRequest(m) && (m = null), null != g && null == f.A.getGuild(g) && null == o.A.getRequest(g) && (g = null), O(m)
+  null != m && null == f.A.getGuild(m) && null == s.A.getRequest(m) && (m = null), null != g && null == f.A.getGuild(g) && null == s.A.getRequest(g) && (g = null), O(m)
 }
 
 function b(e) {
@@ -77,9 +77,9 @@ function T() {
 class C extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t, n, r, a;
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(u.default, d.A, f.A, o.A), E = null != (t = null == e ? true : e.selectedGuildTimestampMillis) ? t : {}, m = null != (n = null == e ? true : e.selectedGuildId) ? n : null, g = null != (r = null == e ? true : e.lastSelectedGuildId) ? r : null;
-    let s = d.A.lastNonVoiceRoute,
-      c = (0, i.B6)(s, {
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(u.default, d.A, f.A, s.A), E = null != (t = null == e ? true : e.selectedGuildTimestampMillis) ? t : {}, m = null != (n = null == e ? true : e.selectedGuildId) ? n : null, g = null != (r = null == e ? true : e.lastSelectedGuildId) ? r : null;
+    let o = d.A.lastNonVoiceRoute,
+      c = (0, i.B6)(o, {
         path: p.BVt.CHANNEL(l.pv.guildId())
       });
     null == c || null == (a = c.params) || a.guildId

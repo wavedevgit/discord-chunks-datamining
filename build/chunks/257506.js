@@ -2,7 +2,7 @@
 /** chunk id: 257506, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./321073.js"), require("./896048.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438);
@@ -15,11 +15,11 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = [];
-class o {
+let o = [];
+class s {
   static create() {
-    let e = new o;
-    return s.push(e), e.record
+    let e = new s;
+    return o.push(e), e.record
   }
   getTotalBytes() {
     return i().sum(Object.values(this.bytes))

@@ -31,7 +31,7 @@ if (Chunk257943 && Chunk339626(p) && (!("description" in _) || true !== p().desc
     configurable: true,
     get: function() {
       var e = E(this);
-      if (o(h, e)) return "";
+      if (s(h, e)) return "";
       var t = y(e),
         n = g ? v(t, 7, false) : O(t, b, "$1");
       return "" === n ? true : n

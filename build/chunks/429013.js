@@ -6,7 +6,7 @@ var Chunk906046 = require("./906046.js"),
   a = Chunk906046("RegExp.prototype.exec"),
   Chunk741623 = require("./741623.js");
 module.exports = function(e) {
-  if (!i(e)) throw new s("`regex` must be a RegExp");
+  if (!i(e)) throw new o("`regex` must be a RegExp");
   return function(t) {
     return null !== a(e, t)
   }

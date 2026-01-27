@@ -4,7 +4,7 @@
 require.d(exports, {
   X_: () => a,
   gn: () => i,
-  hH: () => s
+  hH: () => o
 });
 var Chunk676608 = require("./676608.js");
 
@@ -20,7 +20,7 @@ function a(e, t, n) {
   return i && a ? n : null
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   let i = (0, r.aF)(e, t),
     a = null != n && null != n.primaryColor && null != n.secondaryColor;
   return i && a ? n : null

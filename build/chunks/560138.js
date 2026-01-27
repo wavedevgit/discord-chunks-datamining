@@ -11,12 +11,12 @@ let a = {
   affinities: []
 };
 
-function s(e) {
+function o(e) {
   let {} = e;
   a.fetched = true
 }
 
-function o(e) {
+function s(e) {
   let {
     res: t
   } = e;
@@ -35,7 +35,7 @@ class c extends Chunk311907.Ay.Store {
   }
 }
 let u = new c(Chunk73153.h, {
-  BILLING_NITRO_AFFINITY_FETCHED: s,
-  BILLING_NITRO_AFFINITY_FETCH_SUCCEEDED: o,
+  BILLING_NITRO_AFFINITY_FETCHED: o,
+  BILLING_NITRO_AFFINITY_FETCH_SUCCEEDED: s,
   LOGOUT: l
 })

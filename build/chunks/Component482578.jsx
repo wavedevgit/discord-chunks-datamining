@@ -1,4 +1,4 @@
-/** Chunk was on 58652 **/
+/** Chunk was on 12236 **/
 /** chunk id: 482578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -19,14 +19,14 @@ let d = e => {
       onBackClicked: p,
       isModeratorReport: b
     } = e,
-    x = r.useRef(null),
+    _ = r.useRef(null),
     g = null != n && "cancel" !== n.type,
-    _ = m && (null == n ? true : n.type) !== "done",
-    h = g || _;
+    x = m && (null == n ? true : n.type) !== "done",
+    h = g || x;
   if (r.useEffect(() => {
       if ((null == n ? true : n.type) === "submit" || (null == n ? true : n.type) === "done") {
         var e;
-        null == (e = x.current) || e.focus()
+        null == (e = _.current) || e.focus()
       }
     }, [null == n ? true : n.type]), !h) return null;
   let v = s.intl.string(s.t.i4jeWR);
@@ -35,7 +35,7 @@ let d = e => {
     direction: a.A.Direction.HORIZONTAL,
     children: (0, l.jsxs)(i.ButtonGroup, {
       fullWidth: true,
-      children: [_ && (0, l.jsx)(i.Button, {
+      children: [x && (0, l.jsx)(i.Button, {
         onClick: p,
         variant: "secondary",
         disabled: d,
@@ -46,7 +46,7 @@ let d = e => {
         },
         variant: t,
         disabled: d || c,
-        buttonRef: x,
+        buttonRef: _,
         text: v
       })]
     })

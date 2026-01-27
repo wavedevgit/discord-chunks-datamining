@@ -4,7 +4,7 @@
 require.d(exports, {
   Bu: () => y,
   D1: () => g,
-  Ii: () => j,
+  Ii: () => M,
   Kd: () => E,
   Km: () => I,
   ME: () => O,
@@ -13,19 +13,19 @@ require.d(exports, {
   Q_: () => d,
   SA: () => C,
   SD: () => v,
-  Sq: () => x,
+  Sq: () => L,
   Uh: () => w,
   a5: () => T,
   fs: () => _,
   hv: () => R,
   iD: () => p,
   kq: () => u,
-  n4: () => M,
+  n4: () => j,
   pA: () => h,
   qC: () => b,
   sd: () => m,
   tb: () => P,
-  vK: () => L,
+  vK: () => x,
   wZ: () => A
 }), require("./228524.js"), require("./896048.js"), require("./747238.js"), require("./321073.js");
 var Chunk812729 = require("./812729.js"),
@@ -86,14 +86,14 @@ function I(e) {
     {
       id: a
     } = e,
-    s = l(e, ["id"]);
-  return i()(r, s)
+    o = l(e, ["id"]);
+  return i()(r, o)
 }
 
 function S() {
   return {
     id: String(Date.now()),
-    title: o.intl.string(o.t.vY91C9),
+    title: s.intl.string(s.t.vY91C9),
     options: [],
     singleSelect: false,
     required: false,
@@ -184,11 +184,11 @@ function R(e) {
 let P = new Set([Chunk652215.fg2.PLAYSTATION_STAGING, Chunk652215.fg2.CONTACTS, Chunk652215.fg2.DOMAIN, Chunk652215.fg2.TWITTER_LEGACY, Chunk652215.fg2.MASTODON, Chunk652215.fg2.INSTAGRAM, Chunk652215.fg2.LEAGUE_OF_LEGENDS, Chunk652215.fg2.SKYPE]),
   D = Object.values(Chunk652215.fg2).filter(e => !P.has(e));
 
-function x(e) {
+function L(e) {
   return 0 === e.connection_type ? "app:".concat(e.application_id) : "provider:".concat(e.provider_id)
 }
 
-function L(e) {
+function x(e) {
   let [t, n] = e.split(":");
   return "app" === t && true !== n && "" !== n ? {
     type: 0,
@@ -199,18 +199,18 @@ function L(e) {
   } : null
 }
 
-function j(e) {
+function M(e) {
   let t = [];
   return 0 !== e.connection_type && 1 !== e.connection_type ? t.push("Invalid connection type") : (0 === e.connection_type ? ((0, a.uJ)(e.application_id) && t.push("Application ID is required for application connections"), (0, a.uJ)(e.provider_id) || t.push("Platform ID not allowed for application connections")) : 1 === e.connection_type && ((0, a.uJ)(e.provider_id) ? t.push("Platform ID is required for platform connections") : D.includes(e.provider_id) || t.push("Invalid platform ID"), (0, a.uJ)(e.application_id) || t.push("Application ID not allowed for platform connections")), null != e.description && e.description.length > m && t.push("Description must be ".concat(m, " characters or less"))), t
 }
 
-function M(e) {
+function j(e) {
   let t = [],
     n = new Set;
   for (let [r, i] of e.entries()) {
-    let e = j(i);
+    let e = M(i);
     t.push(...e.map(e => "Connection ".concat(r + 1, ": ").concat(e)));
-    let a = x(i);
+    let a = L(i);
     n.has(a) && t.push("Duplicate connection configuration"), n.add(a)
   }
   return t

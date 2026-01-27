@@ -11,7 +11,7 @@ function a(e) {
   return function() {
     var t = e.getMonitor(),
       n = e.getRegistry();
-    s(t);
+    o(t);
     var r = t.getSourceId();
     return null != r && (n.getSource(r, true).endDrag(t, r), n.unpinSource()), {
       type: i.dU
@@ -19,6 +19,6 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   (0, r.V)(e.isDragging(), "Cannot call endDrag while not dragging.")
 }

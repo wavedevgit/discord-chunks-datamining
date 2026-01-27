@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk960488 = require("./960488.js"),
   Chunk397927 = require("./397927.js"),
   Chunk240248 = require("./240248.js"),
@@ -79,7 +79,7 @@ function E(e) {
 }
 
 function y(e, t) {
-  return s()({
+  return o()({
     [u.AN]: true,
     [u.CW]: "always" === e,
     [u._W]: "on-hover" === e && t
@@ -99,7 +99,7 @@ let b = e => {
       selected: I = false
     } = e,
     S = h(e, ["backgroundStyle", "children", "icon", "name", "ariaLabel", "className", "style", "to", "onClick", "selected"]),
-    T = (0, o.W6)();
+    T = (0, s.W6)();
   null == p && null != m && (n = E(t = (0, c.oN)(m)));
   let C = i.useCallback(e => {
       if (null == v);
@@ -116,7 +116,7 @@ let b = e => {
     N = (0, l.rdh)(l.LU0.modules.guildbar.AVATAR_SIZE);
   return (0, r.jsxs)(l.DUT, _(f({}, S), {
     onClick: C,
-    className: s()(b, u.iE, {
+    className: o()(b, u.iE, {
       [u.wH]: I
     }),
     style: _(f({}, O), {
@@ -128,7 +128,7 @@ let b = e => {
     children: [(0, r.jsx)(l.AC4, {
       children: null != g && "" !== g ? g : null != m ? m : ""
     }), null != t ? (0, r.jsx)("div", {
-      className: s()(y(a, false), u.q9),
+      className: o()(y(a, false), u.q9),
       "aria-hidden": true,
       children: t
     }) : null, null != p ? (0, r.jsx)("img", {

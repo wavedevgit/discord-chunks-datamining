@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,20 +15,20 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = null;
+let s = null;
 class l extends(r = Chunk311907.Ay.Store) {
   hasAction() {
-    return null != o
+    return null != s
   }
   getAction() {
-    return o
+    return s
   }
 }
 
 function c(e) {
-  o = e.requiredAction
+  s = e.requiredAction
 }
-s(l, "displayName", "UserRequiredActionStore");
+o(l, "displayName", "UserRequiredActionStore");
 let u = new l(Chunk73153.h, {
   CONNECTION_OPEN: c,
   USER_REQUIRED_ACTION_UPDATE: c

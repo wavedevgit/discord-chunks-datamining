@@ -36,13 +36,13 @@ function u(e) {
 function d(e) {
   let {
     onClick: t,
-    "aria-label": n = o.intl.string(o.t.cpT0Cq)
+    "aria-label": n = s.intl.string(s.t.cpT0Cq)
   } = e, {
     firstFocusableItemProps: c
   } = i.useContext(a.MVj);
   return (0, r.jsx)("div", {
     className: l.b,
-    children: (0, r.jsx)(s.JnF, u({
+    children: (0, r.jsx)(o.JnF, u({
       size: "xs",
       "aria-label": n,
       onClick: t,

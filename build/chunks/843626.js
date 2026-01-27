@@ -14,7 +14,7 @@ var Chunk64700 = require("./64700.js"),
 let u = Chunk652215.pr7.CROSSPOSTED | Chunk652215.pr7.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | Chunk652215.pr7.GUILD_FEED_HIDDEN | Chunk652215.pr7.HAS_SNAPSHOT | Chunk652215.pr7.HAS_THREAD | Chunk652215.pr7.IS_CROSSPOST | Chunk652215.pr7.IS_VOICE_MESSAGE | Chunk652215.pr7.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | Chunk652215.pr7.SUPPRESS_EMBEDS | Chunk652215.pr7.SUPPRESS_NOTIFICATIONS | Chunk652215.pr7.URGENT | Chunk652215.pr7.IS_COMPONENTS_V2;
 
 function d(e) {
-  return e.state !== c.cmJ.SEND_FAILED && !!c.MRS.FORWARDABLE.has(e.type) && null == e.poll && null == e.sharedClientTheme && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, l.VL)(e.flags, u) && true
+  return e.state !== c.cmJ.SEND_FAILED && !!c.MRS.FORWARDABLE.has(e.type) && null == e.poll && null == e.sharedClientTheme && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, i.VL)(e.flags, u) && true
 }
 
 function p(e) {
@@ -25,14 +25,14 @@ function p(e) {
 }
 
 function f(e) {
-  let t = (0, r.bG)([s.A, o.A, a.A], () => {
-    var t, n, i;
+  let t = (0, l.bG)([s.A, o.A, a.A], () => {
+    var t, n, r;
     if (null == e) returntrue;
-    let l = null == (t = a.A.getChannel(e.channel_id)) ? true : t.guild_id;
-    if (null != l && (null == (n = s.A.getGuild(l)) ? true : n.features.has(c.GuildFeatures.FORWARDING_DISABLED))) returntrue;
-    let r = null != l && o.A.isChannelOrThreadParentGated(l, e.channel_id),
-      u = null != e && (null == (i = a.A.getChannel(e.channel_id)) ? true : i.isModeratorReportChannel());
-    return r || u
+    let i = null == (t = a.A.getChannel(e.channel_id)) ? true : t.guild_id;
+    if (null != i && (null == (n = s.A.getGuild(i)) ? true : n.features.has(c.GuildFeatures.FORWARDING_DISABLED))) returntrue;
+    let l = null != i && o.A.isChannelOrThreadParentGated(i, e.channel_id),
+      u = null != e && (null == (r = a.A.getChannel(e.channel_id)) ? true : r.isModeratorReportChannel());
+    return l || u
   });
-  return i.useMemo(() => !t && null != e && d(e), [t, e])
+  return r.useMemo(() => !t && null != e && d(e), [t, e])
 }

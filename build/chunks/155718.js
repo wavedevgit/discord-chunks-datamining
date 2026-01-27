@@ -4,7 +4,7 @@
 require.d(exports, {
   C8: () => y,
   G4: () => _,
-  Hr: () => s,
+  Hr: () => o,
   I5: () => m,
   LZ: () => c,
   Mh: () => l,
@@ -12,7 +12,7 @@ require.d(exports, {
   TD: () => h,
   Tk: () => i,
   Wq: () => v,
-  YI: () => o,
+  YI: () => s,
   Yl: () => a,
   Ys: () => d,
   hE: () => O,
@@ -32,10 +32,10 @@ var r = function(e) {
   a = function(e) {
     return e.IOS = "ios", e.ANDROID = "android", e.WEB = "web", e
   }({}),
-  s = function(e) {
+  o = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.NEW = 1] = "NEW", e[e.UPDATED = 2] = "UPDATED", e
   }({}),
-  o = function(e) {
+  s = function(e) {
     return e.VOICE_LAUNCHER = "voice_launcher", e.TEXT_LAUNCHER = "text_launcher", e
   }({}),
   l = function(e) {

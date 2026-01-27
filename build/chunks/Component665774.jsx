@@ -25,12 +25,12 @@ let d = {
   focusMode: Chunk374803.e.AUTO_WHEN_FILTERED,
   matches: (e, t, n, r, a) => !(r || null == i.A.getActiveCommand(e.id) || null != i.A.getActiveOption(e.id)),
   queryResults(e, t, n, r, a) {
-    let s = i.A.getActiveCommand(e.id);
-    if ((null == s ? true : s.options) == null) return c;
-    let o = i.A.getOptionStates(e.id),
-      l = s.options.filter(e => {
+    let o = i.A.getActiveCommand(e.id);
+    if ((null == o ? true : o.options) == null) return c;
+    let s = i.A.getOptionStates(e.id),
+      l = o.options.filter(e => {
         var t;
-        return e.displayName.startsWith(n) && !(null == (t = o[e.name]) ? true : t.hasValue)
+        return e.displayName.startsWith(n) && !(null == (t = s[e.name]) ? true : t.hasValue)
       });
     return 0 === l.length ? c : {
       results: {
@@ -45,17 +45,17 @@ let d = {
       },
       selectedIndex: n,
       query: i,
-      onHover: o,
+      onHover: s,
       onClick: c
     } = e, u = [], d = [];
     t.forEach(e => {
       (e.required ? u : d).push(e)
     });
-    let f = u.length > 0 ? (0, s.GM)({
+    let f = u.length > 0 ? (0, o.GM)({
         query: i,
         selectedIndex: n,
         autocompletes: u,
-        onHover: o,
+        onHover: s,
         onClick: c,
         titleWithQuery: l.t["iO/jnA"],
         titleWithoutQuery: l.intl.string(l.t["7II2G3"]),
@@ -68,11 +68,11 @@ let d = {
         getQuery: e => e,
         key: "required-options"
       }) : null,
-      p = d.length > 0 ? (0, s.GM)({
+      p = d.length > 0 ? (0, o.GM)({
         query: i,
         selectedIndex: n,
         autocompletes: d,
-        onHover: o,
+        onHover: s,
         onClick: c,
         titleWithQuery: l.t.pg0anB,
         titleWithoutQuery: u.length > 0 ? l.intl.string(l.t.TpDXm4) : l.intl.string(l.t["+1H47t"]),
@@ -99,7 +99,7 @@ let d = {
       options: r
     } = e, i = t[n];
     return r.insertText(u(i)), {
-      type: o.kc.COMMAND_OPTION
+      type: s.kc.COMMAND_OPTION
     }
   }
 }

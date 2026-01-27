@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 654265, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 654265, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 }), require("./896048.js"), require("./492834.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -14,34 +13,34 @@ var Chunk64700 = require("./64700.js"),
   Chunk212455 = require("./212455.js"),
   Chunk652215 = require("./652215.js");
 
-function f(e) {
-  let [t, n] = r.useState(false), [f, p] = r.useState(false), _ = o.default.cast(e), {
-    joinRequest: h,
-    guild: m
-  } = (0, i.cf)([c.A, u.A, a.A, s.A], () => {
+function p(e) {
+  let [t, n] = r.useState(false), [p, m] = r.useState(false), f = s.default.cast(e), {
+    joinRequest: g,
+    guild: h
+  } = (0, i.cf)([c.A, u.A, l.A, a.A], () => {
     var e;
-    let t = c.A.getRequest(_);
+    let t = c.A.getRequest(f);
     if (null == t) return {
       joinRequest: null,
       isModmin: false,
       guild: null
     };
-    let n = null != (e = a.A.getGuild(t.guildId)) ? e : u.A.getJoinRequestGuild(t.guildId);
+    let n = null != (e = l.A.getGuild(t.guildId)) ? e : u.A.getJoinRequestGuild(t.guildId);
     return {
       joinRequest: t,
-      isModmin: null != n && s.A.can(d.xBc.KICK_MEMBERS, n),
+      isModmin: null != n && a.A.can(d.xBc.KICK_MEMBERS, n),
       guild: n
     }
   });
   return r.useEffect(() => {
-    null != m || f || (p(true), l.A.fetchRequestToJoinGuilds())
-  }, [m, f]), r.useEffect(() => {
-    null == h && (n(true), l.A.fetchGuildJoinRequest(_).finally(() => {
+    null != h || p || (m(true), o.A.fetchRequestToJoinGuilds())
+  }, [h, p]), r.useEffect(() => {
+    null == g && (n(true), o.A.fetchGuildJoinRequest(f).finally(() => {
       n(false)
     }))
-  }, [h, _]), {
+  }, [g, f]), {
     loading: t,
-    joinRequest: h,
-    joinRequestGuild: m
+    joinRequest: g,
+    joinRequestGuild: h
   }
 }

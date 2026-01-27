@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => i,
-  l0: () => s,
+  l0: () => o,
   u5: () => a
 });
 var Chunk64700 = require("./64700.js");
@@ -18,7 +18,7 @@ function a(e) {
   r.useLayoutEffect(() => t.current(), [])
 }
 
-function s(e) {
+function o(e) {
   let t = r.useRef(e);
   r.useEffect(() => {
     t.current = e

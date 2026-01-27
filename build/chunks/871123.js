@@ -38,7 +38,7 @@ function h(e) {
 }
 
 function m() {
-  let e = o.A.getGuild(d.v8);
+  let e = s.A.getGuild(d.v8);
   return null != e && e.features.has(f.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? e.id : d.Kf
 }
 
@@ -90,7 +90,7 @@ function y(e) {
 
 function b(e) {
   return {
-    skus: e.skus.map(e => s.A.createFromServer(e)),
+    skus: e.skus.map(e => o.A.createFromServer(e)),
     skusToRecommendationReasons: Object.fromEntries(Object.entries(e.skus_to_user_ids).map(e => {
       let [t, n] = e;
       return [t, n.map(e => ({
@@ -139,7 +139,7 @@ function S(e, t) {
 }
 
 function T(e, t) {
-  let n = o.A.getGuild(e);
+  let n = s.A.getGuild(e);
   return null != n && g(n) && (0, u.xD)({
     location: t
   })

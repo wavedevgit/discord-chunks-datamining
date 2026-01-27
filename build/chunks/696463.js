@@ -14,6 +14,6 @@ function l(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     l = !n && null != e && !i.C.has(e);
   r.useEffect(() => () => {
-    l && (a.A.lastDCDismissed !== e || (0, s.vf)(e)) && t(o.i.AUTO_DISMISS, true)
+    l && (a.A.lastDCDismissed !== e || (0, o.vf)(e)) && t(s.i.AUTO_DISMISS, true)
   }, [l, t, e])
 }

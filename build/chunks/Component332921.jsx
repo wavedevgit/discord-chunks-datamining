@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 332921, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 332921, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
 });
@@ -17,7 +16,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function p() {
-  let e = o.Q$.useSetting(),
+  let e = a.Q$.useSetting(),
     {
       enableViewerClipping: t
     } = s.A.useExperiment({
@@ -28,20 +27,20 @@ function p() {
     {
       viewerClipsEnabled: n
     } = (0, i.cf)([c.A], () => c.A.getSettings()),
-    p = (0, u.A)(l.A);
-  return (0, r.jsxs)(a.lVW, {
-    children: [(0, r.jsx)(a.dOG, {
-      label: f.intl.string(f.t.AGDDkH),
-      description: f.intl.string(f.t["wW9/zQ"]),
+    p = (0, d.A)(o.A);
+  return (0, r.jsxs)(l.lVW, {
+    children: [(0, r.jsx)(l.dOG, {
+      label: _.intl.string(_.t.AGDDkH),
+      description: _.intl.string(_.t["wW9/zQ"]),
       checked: e,
-      onChange: e => d.eQ({
+      onChange: e => u.eQ({
         allowVoiceRecording: e
       })
-    }), t && p && (0, r.jsx)(a.dOG, {
-      label: f.intl.string(f.t.NWw7kY),
-      description: f.intl.string(f.t["0vjy8N"]),
+    }), t && p && (0, r.jsx)(l.dOG, {
+      label: _.intl.string(_.t.NWw7kY),
+      description: _.intl.string(_.t["0vjy8N"]),
       checked: n,
-      onChange: e => d.Wn({
+      onChange: e => u.Wn({
         enabled: e,
         trackAnalytics: true
       })

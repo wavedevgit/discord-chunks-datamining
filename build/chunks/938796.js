@@ -32,7 +32,7 @@ Chunk257943 && Chunk503628(function() {
       multiline: "m",
       sticky: "y"
     };
-  for (var s in e && (a.hasIndices = "d"), a) i(s, a[s]);
+  for (var o in e && (a.hasIndices = "d"), a) i(o, a[o]);
   return Object.getOwnPropertyDescriptor(c, "flags").get.call(t) !== r || n !== r
 }) && Chunk485155(c, "flags", {
   configurable: true,

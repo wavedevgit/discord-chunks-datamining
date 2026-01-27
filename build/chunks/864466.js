@@ -14,8 +14,8 @@ Chunk557939({
   flat: function() {
     var e = arguments.length ? arguments[0] : true,
       t = a(this),
-      n = s(t),
+      n = o(t),
       r = l(t, 0);
-    return r.length = i(r, t, t, n, 0, true === e ? 1 : o(e)), r
+    return r.length = i(r, t, t, n, 0, true === e ? 1 : s(e)), r
   }
 })

@@ -2,7 +2,7 @@
 /** chunk id: 997630, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => s,
+  E: () => o,
   a: () => a
 });
 var Chunk73153 = require("./73153.js"),
@@ -16,7 +16,7 @@ function a(e) {
   })
 }
 
-function s() {
+function o() {
   var e, t;
   null == (t = i.A.getMediaEngine()) || null == (e = t.releaseNativeDesktopVideoSourcePickerStream) || e.call(t), r.h.dispatch({
     type: "NATIVE_SCREEN_SHARE_PICKER_RELEASE"

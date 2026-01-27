@@ -94,7 +94,7 @@ function O(e) {
     dismissibleContent: t,
     guildId: n
   } = e, r = new Date;
-  if (m.renderedAtTimestamps.set(t, r.getTime()), o.C.has(t) || m.dailyCapOverridden) return;
+  if (m.renderedAtTimestamps.set(t, r.getTime()), s.C.has(t) || m.dailyCapOverridden) return;
   let i = (0, l.vf)(t) && null != n;
   if (!(!i && m.dismissibleContentSeenDuringSession.has(t))) {
     if (!(i && b(t, n))) {
@@ -107,7 +107,7 @@ function O(e) {
         let e = new Date;
         e.setHours(0, 0, 0, 0), m.dailyCapPeriodStart = e.getTime()
       }
-      m.numberOfDCsShownToday += 1, m.numberOfDCsShownToday > h && s.default.track(c.HAw.DCF_CAP_EXCEEDED, {
+      m.numberOfDCsShownToday += 1, m.numberOfDCsShownToday > h && o.default.track(c.HAw.DCF_CAP_EXCEEDED, {
         cap_type: _,
         dismissible_content: t,
         shown_dcs: m.numberOfDCsShownToday
@@ -157,7 +157,7 @@ class S extends(r = Chunk311907.Ay.PersistedStore) {
     return m.renderedAtTimestamps.get(e)
   }
   hasUserHitDCCap(e, t) {
-    if (null != e && (o.C.has(e) || m.dailyCapOverridden)) returnfalse;
+    if (null != e && (s.C.has(e) || m.dailyCapOverridden)) returnfalse;
     if (null != e) {
       let n = null != t && (0, l.vf)(e);
       if (n && null != t && b(e, t) || !n && m.dismissibleContentSeenDuringSession.has(e)) returnfalse

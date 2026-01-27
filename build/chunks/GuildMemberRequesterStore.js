@@ -62,7 +62,7 @@ function m(e) {
   let {
     channelId: t,
     messages: n
-  } = e, r = o.A.getChannel(t);
+  } = e, r = s.A.getChannel(t);
   return null != r && null != r.guild_id && h(r.guild_id, n)
 }
 
@@ -70,7 +70,7 @@ function g(e) {
   let {
     pins: t,
     channelId: n
-  } = e, r = o.A.getChannel(n);
+  } = e, r = s.A.getChannel(n);
   return null != r && null != r.guild_id && h(r.guild_id, t.map(e => {
     let {
       message: t
@@ -99,7 +99,7 @@ function E(e) {
 }
 class y extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A, l.Ay)
+    this.waitFor(s.A, l.Ay)
   }
   requestMember(e, t) {
     _(e, t)

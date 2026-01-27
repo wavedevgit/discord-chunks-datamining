@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
-  o = require.n(Chunk284009),
+  s = require.n(Chunk284009),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk827734 = require("./827734.js"),
@@ -75,7 +75,7 @@ function R() {
     {
       canStartAuthorization: n,
       hasAlreadyLinked: i,
-      startAuthorization: s,
+      startAuthorization: o,
       chosenFlow: u,
       connectionApp: p,
       debug: {
@@ -88,13 +88,13 @@ function R() {
       debug: true
     }),
     R = (0, c.bG)([b.A], () => null != e && b.A.isConnected(e.id)),
-    x = (0, c.bG)([_.Ay], () => _.Ay.getSelfEmbeddedActivities()),
-    L = "authorization_debug",
-    j = [{
+    L = (0, c.bG)([_.Ay], () => _.Ay.getSelfEmbeddedActivities()),
+    x = "authorization_debug",
+    M = [{
       id: "authorization_debug",
       name: I.intl.string(A.default.vR0zs6)
     }],
-    M = () => (0, r.jsxs)(r.Fragment, {
+    j = () => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: S.wx,
         children: (0, r.jsx)("div", {
@@ -113,7 +113,7 @@ function R() {
         })
       })]
     }),
-    k = () => (o()(null != e, "Application should be defined when rendering the test mode panel"), (0, r.jsxs)(r.Fragment, {
+    k = () => (s()(null != e, "Application should be defined when rendering the test mode panel"), (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: S.wx,
         children: [(0, r.jsx)("div", {
@@ -134,14 +134,14 @@ function R() {
         className: S.rf,
         children: [(0, r.jsx)(d.VQ0, {
           className: S.$H,
-          selectedItem: L,
+          selectedItem: x,
           onItemSelect: () => {},
           orientation: "horizontal",
           type: "top",
           look: "brand",
-          children: j.map(e => (0, r.jsx)(d.VQ0.Item, {
+          children: M.map(e => (0, r.jsx)(d.VQ0.Item, {
             className: a()(S.Mf, {
-              [S.wH]: e.id === L
+              [S.wH]: e.id === x
             }),
             id: e.id,
             "aria-label": e.name,
@@ -193,7 +193,7 @@ function R() {
         }), (0, r.jsx)(l.$nd, {
           variant: "secondary",
           disabled: !n || i,
-          onClick: () => s({
+          onClick: () => o({
             analyticsLocations: t
           }),
           text: I.intl.string(A.default.w0pN4R),
@@ -202,7 +202,7 @@ function R() {
           variant: "secondary",
           onClick: () => {
             f.A.delete(C.id);
-            let t = x.get(e.id);
+            let t = L.get(e.id);
             null != t && h.A.leaveActivity({
               location: t.location,
               applicationId: e.id,
@@ -218,7 +218,7 @@ function R() {
     "data-app-right-panel": true,
     className: S.nE,
     children: (0, r.jsx)(l.Fmo, {
-      children: null != e ? k() : M()
+      children: null != e ? k() : j()
     })
   })
 }
@@ -235,7 +235,7 @@ function P(e) {
     children: [(0, r.jsx)(D, {
       status: t,
       text: n
-    }), i.map((e, t) => (0, r.jsx)(x, C({}, e), t)), a && (0, r.jsx)("div", {
+    }), i.map((e, t) => (0, r.jsx)(L, C({}, e), t)), a && (0, r.jsx)("div", {
       className: S.MH,
       children: (0, r.jsx)(l.EYj, {
         variant: "text-sm/medium",
@@ -257,13 +257,13 @@ function D(e) {
       variant: "text-md/semibold",
       color: "text-subtle",
       children: t
-    }), (0, r.jsx)(L, {
+    }), (0, r.jsx)(x, {
       status: n
     })]
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     status: t,
     text: n,
@@ -272,7 +272,7 @@ function x(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: S.jf,
-    children: [(0, r.jsx)(L, {
+    children: [(0, r.jsx)(x, {
       status: t
     }), (0, r.jsxs)("div", {
       className: S.bc,
@@ -292,7 +292,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     status: t
   } = e, n = {

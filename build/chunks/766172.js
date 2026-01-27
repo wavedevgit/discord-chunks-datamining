@@ -9,7 +9,7 @@ let i = e => {
   var t, n, i;
   let {
     product: a,
-    selectedVariantIndex: s
+    selectedVariantIndex: o
   } = e;
-  return a.type === r.R.VARIANTS_GROUP && null != s && null != (t = null == (i = a.variants) || null == (n = i[s]) ? true : n.skuId) ? t : a.skuId
+  return a.type === r.R.VARIANTS_GROUP && null != o && null != (t = null == (i = a.variants) || null == (n = i[o]) ? true : n.skuId) ? t : a.skuId
 }

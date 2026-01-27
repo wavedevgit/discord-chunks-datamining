@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 902038, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 62733 **/
+/** chunk id: 902038, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => r
+  A: () => i
 });
-let r = (0, require("./600975.js").C)({
+let i = (0, require("./600975.js").C)({
   kind: "user",
   id: "2023-06_guild_boosting_legacy_pricing_fix_experiment",
   label: "Guild Boosting Legacy Pricing Fix Experiment",

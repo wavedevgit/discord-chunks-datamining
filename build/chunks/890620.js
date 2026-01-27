@@ -10,11 +10,11 @@ var Chunk353640 = require("./353640.js"),
   Chunk121894 = require("./121894.js"),
   Chunk203982 = require("./203982.js"),
   Chunk652215 = require("./652215.js");
-let o = Object.freeze({
+let s = Object.freeze({
     hasUnsubmittedChanges: false,
     shouldShowWarning: false
   }),
-  l = (0, Chunk353640.v)(e => o),
+  l = (0, Chunk353640.v)(e => s),
   c = e => {
     (0, i.r)(() => l.setState({
       hasUnsubmittedChanges: e
@@ -23,5 +23,5 @@ let o = Object.freeze({
   u = e => {
     (0, i.r)(() => l.setState({
       shouldShowWarning: e
-    })), e && a._.dispatch(s.jej.EMPHASIZE_NOTICE)
+    })), e && a._.dispatch(o.jej.EMPHASIZE_NOTICE)
   }

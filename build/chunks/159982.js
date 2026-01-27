@@ -15,10 +15,10 @@ let a = {
     Object.keys(t.elements).forEach(function(e) {
       var n = t.styles[e] || {},
         a = t.attributes[e] || {},
-        s = t.elements[e];
-      (0, i.sb)(s) && (0, r.A)(s) && (Object.assign(s.style, n), Object.keys(a).forEach(function(e) {
+        o = t.elements[e];
+      (0, i.sb)(o) && (0, r.A)(o) && (Object.assign(o.style, n), Object.keys(a).forEach(function(e) {
         var t = a[e];
-        false === t ? s.removeAttribute(e) : s.setAttribute(e, true === t ? "" : t)
+        false === t ? o.removeAttribute(e) : o.setAttribute(e, true === t ? "" : t)
       }))
     })
   },
@@ -40,11 +40,11 @@ let a = {
       function() {
         Object.keys(t.elements).forEach(function(e) {
           var a = t.elements[e],
-            s = t.attributes[e] || {},
-            o = Object.keys(t.styles.hasOwnProperty(e) ? t.styles[e] : n[e]).reduce(function(e, t) {
+            o = t.attributes[e] || {},
+            s = Object.keys(t.styles.hasOwnProperty(e) ? t.styles[e] : n[e]).reduce(function(e, t) {
               return e[t] = "", e
             }, {});
-          (0, i.sb)(a) && (0, r.A)(a) && (Object.assign(a.style, o), Object.keys(s).forEach(function(e) {
+          (0, i.sb)(a) && (0, r.A)(a) && (Object.assign(a.style, s), Object.keys(o).forEach(function(e) {
             a.removeAttribute(e)
           }))
         })

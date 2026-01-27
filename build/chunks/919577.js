@@ -18,11 +18,11 @@ async function p(e, t, n) {
   try {
     return await e()
   } catch (e) {
-    var r, i, s;
+    var r, i, o;
     (null == (r = e.body) ? true : r.code) === d.t02.NON_MODERATED_TAG_REQUIRED ? a.A.show({
       title: t,
       body: n
-    }) : (null == (i = e.body) ? true : i.code) === d.t02.INVALID_FORM_BODY && (null == (s = e.body) ? true : s.errors.emoji) && a.A.show({
+    }) : (null == (i = e.body) ? true : i.code) === d.t02.INVALID_FORM_BODY && (null == (o = e.body) ? true : o.errors.emoji) && a.A.show({
       title: f.intl.string(f.t.T8sBLJ),
       body: f.intl.string(f.t.aHt1Bd)
     })
@@ -65,7 +65,7 @@ let _ = {
     });
     p(() => n, f.intl.string(f.t["0ZkNDU"]), f.intl.string(f.t.imcb5u))
   },
-  updateForumPostTags: async (e, t) => (await s.A.unarchiveThreadIfNecessary(e), r.Bo.patch({
+  updateForumPostTags: async (e, t) => (await o.A.unarchiveThreadIfNecessary(e), r.Bo.patch({
     url: d.Rsh.CHANNEL(e),
     body: {
       applied_tags: t
@@ -80,14 +80,14 @@ let _ = {
     })
   },
   markPostAsSeen(e, t, n) {
-    (0, o.wR)((0, c.$l)(e), t, n)
+    (0, s.wR)((0, c.$l)(e), t, n)
   },
   markPostAsUnseen(e, t, n) {
-    (0, o.zK)((0, c.$l)(e), t, n)
+    (0, s.zK)((0, c.$l)(e), t, n)
   },
   flushSeenItems(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : l.Ao.IMMEDIATE_WITH_COOLDOWN;
-    (0, o.Xt)((0, c.$l)(e), t)
+    (0, s.Xt)((0, c.$l)(e), t)
   },
   async searchForumPosts(e, t, n, r, a) {
     i.h.dispatch({
@@ -95,15 +95,15 @@ let _ = {
       channelId: t
     });
     try {
-      let o = await s.A.searchThreads(e, t, n, r, a);
+      let s = await o.A.searchThreads(e, t, n, r, a);
       (0, u.Sc)({
         guildId: e,
         channelId: t,
-        numSearchResults: o.length
+        numSearchResults: s.length
       }), i.h.dispatch({
         type: "FORUM_SEARCH_SUCCESS",
         channelId: t,
-        threadIds: o
+        threadIds: s
       })
     } catch (e) {
       i.h.dispatch({

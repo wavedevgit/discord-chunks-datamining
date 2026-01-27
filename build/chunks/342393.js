@@ -45,7 +45,7 @@
     }) : e[t] = n, e
   }
 
-  function s(e, t) {
+  function o(e, t) {
     if (null == e) return {};
     var n, r, i = {},
       a = Object.keys(e);
@@ -53,9 +53,9 @@
     return i
   }
 
-  function o(e, t) {
+  function s(e, t) {
     if (null == e) return {};
-    var n, r, i = s(e, t);
+    var n, r, i = o(e, t);
     if (Object.getOwnPropertySymbols) {
       var a = Object.getOwnPropertySymbols(e);
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -75,17 +75,17 @@
     var n, r, i = e && ("u" > typeof Symbol && e[Symbol.iterator] || e["@@iterator"]);
     if (null != i) {
       var a = [],
-        s = true,
-        o = false;
+        o = true,
+        s = false;
       try {
-        for (i = i.call(e); !(s = (n = i.next()).done) && (a.push(n.value), !t || a.length !== t); s = true);
+        for (i = i.call(e); !(o = (n = i.next()).done) && (a.push(n.value), !t || a.length !== t); o = true);
       } catch (e) {
-        o = true, r = e
+        s = true, r = e
       } finally {
         try {
-          s || null == i.return || i.return()
+          o || null == i.return || i.return()
         } finally {
-          if (o) throw r
+          if (s) throw r
         }
       }
       return a
@@ -130,10 +130,10 @@
 
     function n() {}
     return n.resetWarningCache = t, g = function() {
-      function r(t, n, r, i, a, s) {
-        if (s !== e) {
-          var o = Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-          throw o.name = "Invariant Violation", o
+      function r(t, n, r, i, a, o) {
+        if (o !== e) {
+          var s = Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+          throw s.name = "Invariant Violation", s
         }
       }
 
@@ -207,11 +207,11 @@
       if (i !== (Object.prototype.toString.call(n) === C)) returnfalse;
       if (!i && !r) return t === n;
       var a = Object.keys(t),
-        s = Object.keys(n);
-      if (a.length !== s.length) returnfalse;
-      for (var o = {}, l = 0; l < a.length; l += 1) o[a[l]] = true;
-      for (var c = 0; c < s.length; c += 1) o[s[c]] = true;
-      var u = Object.keys(o);
+        o = Object.keys(n);
+      if (a.length !== o.length) returnfalse;
+      for (var s = {}, l = 0; l < a.length; l += 1) s[a[l]] = true;
+      for (var c = 0; c < o.length; c += 1) s[o[c]] = true;
+      var u = Object.keys(s);
       if (u.length !== a.length) returnfalse;
       var d = t,
         f = n,
@@ -221,9 +221,9 @@
       return u.every(p)
     },
     w = function(e, t, n) {
-      return I(e) ? Object.keys(e).reduce(function(i, s) {
-        var o = !I(t) || !N(e[s], t[s]);
-        return n.includes(s) ? (o && console.warn("Unsupported prop change: options.".concat(s, " is not a mutable property.")), i) : o ? r(r({}, i || {}), {}, a({}, s, e[s])) : i
+      return I(e) ? Object.keys(e).reduce(function(i, o) {
+        var s = !I(t) || !N(e[o], t[o]);
+        return n.includes(o) ? (s && console.warn("Unsupported prop change: options.".concat(o, " is not a mutable property.")), i) : s ? r(r({}, i || {}), {}, a({}, o, e[o])) : i
       }, null) : null
     },
     R = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
@@ -248,7 +248,7 @@
         stripe: n
       }
     },
-    x = function(e) {
+    L = function(e) {
       e && e._registerWrapper && e.registerAppInfo && (e._registerWrapper({
         name: "react-stripe-js",
         version: "3.7.0"
@@ -258,27 +258,27 @@
         url: "https://stripe.com/docs/stripe-js/react"
       }))
     },
-    L = t.createContext(null);
-  L.displayName = "ElementsContext";
-  var j = function(e, t) {
+    x = t.createContext(null);
+  x.displayName = "ElementsContext";
+  var M = function(e, t) {
       if (!e) throw Error("Could not find Elements context; You need to wrap the part of your app that ".concat(t, " in an <Elements> provider."));
       return e
     },
-    M = function(e) {
+    j = function(e) {
       var n = e.stripe,
         r = e.options,
         i = e.children,
         a = t.useMemo(function() {
           return D(n)
         }, [n]),
-        s = l(t.useState(function() {
+        o = l(t.useState(function() {
           return {
             stripe: "sync" === a.tag ? a.stripe : null,
             elements: "sync" === a.tag ? a.stripe.elements(r) : null
           }
         }), 2),
-        o = s[0],
-        c = s[1];
+        s = o[0],
+        c = o[1];
       t.useEffect(function() {
         var e = true,
           t = function(e) {
@@ -289,35 +289,35 @@
               }
             })
           };
-        return "async" !== a.tag || o.stripe ? "sync" !== a.tag || o.stripe || t(a.stripe) : a.stripePromise.then(function(n) {
+        return "async" !== a.tag || s.stripe ? "sync" !== a.tag || s.stripe || t(a.stripe) : a.stripePromise.then(function(n) {
             n && e && t(n)
           }),
           function() {
             e = false
           }
-      }, [a, o, r]);
+      }, [a, s, r]);
       var u = A(n);
       t.useEffect(function() {
         null !== u && u !== n && console.warn("Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.")
       }, [u, n]);
       var d = A(r);
       return t.useEffect(function() {
-        if (o.elements) {
+        if (s.elements) {
           var e = w(r, d, ["clientSecret", "fonts"]);
-          e && o.elements.update(e)
+          e && s.elements.update(e)
         }
-      }, [r, d, o.elements]), t.useEffect(function() {
-        x(o.stripe)
-      }, [o.stripe]), t.createElement(L.Provider, {
-        value: o
+      }, [r, d, s.elements]), t.useEffect(function() {
+        L(s.stripe)
+      }, [s.stripe]), t.createElement(x.Provider, {
+        value: s
       }, i)
     };
-  M.propTypes = {
+  j.propTypes = {
     stripe: O.any,
     options: O.object
   };
   var k = function(e) {
-      return j(t.useContext(L), e)
+      return M(t.useContext(x), e)
     },
     U = function() {
       return k("calls useElements()").elements
@@ -328,9 +328,9 @@
   G.propTypes = {
     children: O.func.isRequired
   };
-  var V = ["on", "session"],
-    F = t.createContext(null);
-  F.displayName = "CheckoutSdkContext";
+  var F = ["on", "session"],
+    V = t.createContext(null);
+  V.displayName = "CheckoutSdkContext";
   var B = function(e, t) {
       if (!e) throw Error("Could not find CheckoutProvider context; You need to wrap the part of your app that ".concat(t, " in an <CheckoutProvider> provider."));
       return e
@@ -340,7 +340,7 @@
   var Y = function(e, t) {
       if (!e) return null;
       e.on, e.session;
-      var n = o(e, V);
+      var n = s(e, F);
       return t ? Object.assign(t, n) : Object.assign(e.session(), n)
     },
     W = "Invalid prop `stripe` supplied to `CheckoutProvider`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
@@ -351,9 +351,9 @@
         a = t.useMemo(function() {
           return D(n, W)
         }, [n]),
-        s = l(t.useState(null), 2),
-        o = s[0],
-        c = s[1],
+        o = l(t.useState(null), 2),
+        s = o[0],
+        c = o[1],
         u = l(t.useState(function() {
           return {
             stripe: "sync" === a.tag ? a.stripe : null,
@@ -395,16 +395,16 @@
           var e, t, n = null == m || null == (e = m.elementsOptions) ? true : e.appearance,
             i = null == r || null == (t = r.elementsOptions) ? true : t.appearance,
             a = !N(i, n),
-            s = !g && d.checkoutSdk;
-          i && (a || s) && d.checkoutSdk.changeAppearance(i)
+            o = !g && d.checkoutSdk;
+          i && (a || o) && d.checkoutSdk.changeAppearance(i)
         }
       }, [r, m, d.checkoutSdk, g]), t.useEffect(function() {
-        x(d.stripe)
+        L(d.stripe)
       }, [d.stripe]);
       var E = t.useMemo(function() {
-        return Y(d.checkoutSdk, o)
-      }, [d.checkoutSdk, o]);
-      return d.checkoutSdk ? t.createElement(F.Provider, {
+        return Y(d.checkoutSdk, s)
+      }, [d.checkoutSdk, s]);
+      return d.checkoutSdk ? t.createElement(V.Provider, {
         value: d
       }, t.createElement(H.Provider, {
         value: E
@@ -418,13 +418,13 @@
     }).isRequired
   };
   var z = function(e) {
-      return B(t.useContext(F), e)
+      return B(t.useContext(V), e)
     },
     q = function(e) {
-      var n = t.useContext(F),
-        r = t.useContext(L);
+      var n = t.useContext(V),
+        r = t.useContext(x);
       if (n && r) throw Error("You cannot wrap the part of your app that ".concat(e, " in both <CheckoutProvider> and <Elements> providers."));
-      return n ? B(n, e) : j(r, e)
+      return n ? B(n, e) : M(r, e)
     },
     Z = function() {
       z("calls useCheckout()");
@@ -432,15 +432,15 @@
       if (!e) throw Error("Could not find Checkout Context; You need to wrap the part of your app that calls useCheckout() in an <CheckoutProvider> provider.");
       return e
     },
-    X = ["mode"],
-    Q = function(e) {
+    Q = ["mode"],
+    X = function(e) {
       return e.charAt(0).toUpperCase() + e.slice(1)
     },
     J = function(e, n) {
-      var r = "".concat(Q(e), "Element"),
+      var r = "".concat(X(e), "Element"),
         i = function(n) {
           var i, a = n.id,
-            s = n.className,
+            o = n.className,
             c = n.options,
             u = true === c ? {} : c,
             d = n.onBlur,
@@ -462,12 +462,12 @@
             R = l(t.useState(null), 2),
             P = R[0],
             D = R[1],
-            x = t.useRef(null),
-            L = t.useRef(null);
+            L = t.useRef(null),
+            x = t.useRef(null);
           v(P, "blur", d), v(P, "focus", f), v(P, "escape", h), v(P, "click", m), v(P, "loaderror", g), v(P, "loaderstart", E), v(P, "networkschange", y), v(P, "confirm", b), v(P, "cancel", O), v(P, "shippingaddresschange", I), v(P, "shippingratechange", S), v(P, "change", _), p && (i = "expressCheckout" === e ? p : function() {
             p(P)
           }), v(P, "ready", i), t.useLayoutEffect(function() {
-            if (null === x.current && null !== L.current && (C || N)) {
+            if (null === L.current && null !== x.current && (C || N)) {
               var t = null;
               if (N) switch (e) {
                 case "payment":
@@ -476,7 +476,7 @@
                 case "address":
                   if ("mode" in u) {
                     var n = u.mode,
-                      i = o(u, X);
+                      i = s(u, Q);
                     if ("shipping" === n) t = N.createShippingAddressElement(i);
                     else if ("billing" === n) t = N.createBillingAddressElement(i);
                     else throw Error("Invalid options.mode. mode must be 'billing' or 'shipping'.")
@@ -491,25 +491,25 @@
                 default:
                   throw Error("Invalid Element type ".concat(r, ". You must use either the <PaymentElement />, <AddressElement options={{mode: 'shipping'}} />, <AddressElement options={{mode: 'billing'}} />, or <ExpressCheckoutElement />."))
               } else C && (t = C.create(e, u));
-              x.current = t, D(t), t && t.mount(L.current)
+              L.current = t, D(t), t && t.mount(x.current)
             }
           }, [C, N, u]);
-          var j = A(u);
+          var M = A(u);
           return t.useEffect(function() {
-            if (x.current) {
-              var e = w(u, j, ["paymentRequest"]);
-              e && "update" in x.current && x.current.update(e)
+            if (L.current) {
+              var e = w(u, M, ["paymentRequest"]);
+              e && "update" in L.current && L.current.update(e)
             }
-          }, [u, j]), t.useLayoutEffect(function() {
+          }, [u, M]), t.useLayoutEffect(function() {
             return function() {
-              if (x.current && "function" == typeof x.current.destroy) try {
-                x.current.destroy(), x.current = null
+              if (L.current && "function" == typeof L.current.destroy) try {
+                L.current.destroy(), L.current = null
               } catch (e) {}
             }
           }, []), t.createElement("div", {
             id: a,
-            className: s,
-            ref: L
+            className: o,
+            ref: x
           })
         },
         a = function(e) {
@@ -521,8 +521,8 @@
             className: i
           })
         },
-        s = n ? a : i;
-      return s.propTypes = {
+        o = n ? a : i;
+      return o.propTypes = {
         id: O.string,
         className: O.string,
         onChange: O.func,
@@ -539,7 +539,7 @@
         onShippingAddressChange: O.func,
         onShippingRateChange: O.func,
         options: O.object
-      }, s.displayName = r, s.__elementType = e, s
+      }, o.displayName = r, o.__elementType = e, o
     },
     $ = "u" < typeof window,
     ee = t.createContext(null);
@@ -557,35 +557,35 @@
         a = t.useMemo(function() {
           return D(n, en)
         }, [n]),
-        s = t.useRef(null),
         o = t.useRef(null),
+        s = t.useRef(null),
         c = l(t.useState({
           embeddedCheckout: null
         }), 2),
         u = c[0],
         d = c[1];
       t.useEffect(function() {
-        if (!o.current && !s.current) {
+        if (!s.current && !o.current) {
           var e = function(e) {
-            o.current || s.current || (o.current = e, s.current = o.current.initEmbeddedCheckout(r).then(function(e) {
+            s.current || o.current || (s.current = e, o.current = s.current.initEmbeddedCheckout(r).then(function(e) {
               d({
                 embeddedCheckout: e
               })
             }))
           };
-          "async" === a.tag && !o.current && (r.clientSecret || r.fetchClientSecret) ? a.stripePromise.then(function(t) {
+          "async" === a.tag && !s.current && (r.clientSecret || r.fetchClientSecret) ? a.stripePromise.then(function(t) {
             t && e(t)
-          }) : "sync" === a.tag && !o.current && (r.clientSecret || r.fetchClientSecret) && e(a.stripe)
+          }) : "sync" === a.tag && !s.current && (r.clientSecret || r.fetchClientSecret) && e(a.stripe)
         }
-      }, [a, r, u, o]), t.useEffect(function() {
+      }, [a, r, u, s]), t.useEffect(function() {
         return function() {
-          u.embeddedCheckout ? (s.current = null, u.embeddedCheckout.destroy()) : s.current && s.current.then(function() {
-            s.current = null, u.embeddedCheckout && u.embeddedCheckout.destroy()
+          u.embeddedCheckout ? (o.current = null, u.embeddedCheckout.destroy()) : o.current && o.current.then(function() {
+            o.current = null, u.embeddedCheckout && u.embeddedCheckout.destroy()
           })
         }
       }, [u.embeddedCheckout]), t.useEffect(function() {
-        x(o)
-      }, [o]);
+        L(s)
+      }, [s]);
       var f = A(n);
       t.useEffect(function() {
         null !== f && f !== n && console.warn("Unsupported prop change on EmbeddedCheckoutProvider: You cannot change the `stripe` prop after setting it.")
@@ -605,16 +605,16 @@
         r = e.className,
         i = et().embeddedCheckout,
         a = t.useRef(false),
-        s = t.useRef(null);
+        o = t.useRef(null);
       return t.useLayoutEffect(function() {
-        return !a.current && i && null !== s.current && (i.mount(s.current), a.current = true),
+        return !a.current && i && null !== o.current && (i.mount(o.current), a.current = true),
           function() {
             if (a.current && i) try {
               i.unmount(), a.current = false
             } catch (e) {}
           }
       }, [i]), t.createElement("div", {
-        ref: s,
+        ref: o,
         id: n,
         className: r
       })
@@ -627,8 +627,8 @@
         className: r
       })
     },
-    es = $ ? ea : ei,
-    eo = function() {
+    eo = $ ? ea : ei,
+    es = function() {
       return q("calls useStripe()").stripe
     },
     el = J("auBankAccount", $),
@@ -651,5 +651,5 @@
     eS = J("paymentMethodMessaging", $),
     eT = J("affirmMessage", $),
     eC = J("afterpayClearpayMessage", $);
-  e.AddressElement = eA, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = K, e.CurrencySelectorElement = eb, e.Elements = M, e.ElementsConsumer = G, e.EmbeddedCheckout = es, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = ey, e.FpxBankElement = ep, e.IbanElement = e_, e.IdealBankElement = eh, e.LinkAuthenticationElement = ev, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eI, e.useCheckout = Z, e.useElements = U, e.useStripe = eo
+  e.AddressElement = eA, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = K, e.CurrencySelectorElement = eb, e.Elements = j, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = ey, e.FpxBankElement = ep, e.IbanElement = e_, e.IdealBankElement = eh, e.LinkAuthenticationElement = ev, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eI, e.useCheckout = Z, e.useElements = U, e.useStripe = es
 })

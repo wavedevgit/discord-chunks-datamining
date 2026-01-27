@@ -33,7 +33,7 @@ function c(e, t, n) {
 
 function u(e, t) {
   r.Bo.get({
-    url: o.Rsh.GUILD_COMMANDS_FOR_APPLICATION(e, t),
+    url: s.Rsh.GUILD_COMMANDS_FOR_APPLICATION(e, t),
     rejectWithError: true
   }).then(n => {
     i.h.dispatch({
@@ -54,7 +54,7 @@ async function d(e, t, n) {
   let a = [];
   try {
     let i = await r.Bo.get({
-      url: o.Rsh.APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS(e, t, n),
+      url: s.Rsh.APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS(e, t, n),
       rejectWithError: false
     });
     i.ok && (a = i.body.permissions)
@@ -93,15 +93,15 @@ async function _(e) {
     applicationId: t,
     commandId: n,
     defaultEveryoneValue: r,
-    defaultEverywhereValue: s,
-    guildId: o,
+    defaultEverywhereValue: o,
+    guildId: s,
     permissions: l
-  } = e, c = n === t ? h(o, l, r, s) : l, u = await a.yL(t, o, n, c);
+  } = e, c = n === t ? h(s, l, r, o) : l, u = await a.yL(t, s, n, c);
   u.ok && i.h.dispatch({
     type: "INTEGRATION_PERMISSION_SETTINGS_COMMAND_UPDATE",
     applicationId: t,
     commandId: n,
-    guildId: o,
+    guildId: s,
     permissions: u.body.permissions
   })
 }
@@ -110,7 +110,7 @@ function h(e, t, n, r) {
   if (!n || !r) return t;
   let i = {
     [e]: n,
-    [(0, s.Ap)(e)]: r
+    [(0, o.Ap)(e)]: r
   };
   return t.filter(e => {
     let t = i[e.id];

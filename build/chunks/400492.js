@@ -19,7 +19,7 @@ function u(e, t) {
   var n;
   let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 1,
     i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : l.a.DEFAULT;
-  return d(null != (n = (0, s.A)(t)[e]) ? n : e, e, r, i)
+  return d(null != (n = (0, o.A)(t)[e]) ? n : e, e, r, i)
 }
 
 function d(e, t) {
@@ -34,8 +34,8 @@ function f(e) {
     r = arguments.length > 2 ? arguments[2] : true,
     i = arguments.length > 3 ? arguments[3] : true,
     u = arguments.length > 4 && true !== arguments[4] ? arguments[4] : l.a.DEFAULT;
-  if (o.A.disableSounds) return;
-  let f = (0, s.A)(null != i ? i : a.A.getSoundpack());
+  if (s.A.disableSounds) return;
+  let f = (0, o.A)(null != i ? i : a.A.getSoundpack());
   null == f && c.log("Unable to find sound for pack name: ".concat(i));
   let p = d(null != (t = f[e]) ? t : e, e, n, u);
   return null != r ? p.playWithListener().then(e => {

@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = 12e4,
+let s = 12e4,
   l = {},
   c = {};
 
@@ -87,10 +87,10 @@ class g extends(r = Chunk311907.Ay.Store) {
   shouldFetch(e) {
     if (null == e) returnfalse;
     let t = c[e];
-    return null == t || Date.now() - t > o
+    return null == t || Date.now() - t > s
   }
 }
-s(g, "displayName", "GuildRoleMemberCountStore");
+o(g, "displayName", "GuildRoleMemberCountStore");
 let E = new g(Chunk73153.h, {
   GUILD_ROLE_MEMBER_COUNT_FETCH_SUCCESS: u,
   GUILD_ROLE_MEMBER_COUNT_UPDATE: d,

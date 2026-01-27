@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
-/** chunk id: 406975, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 406975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => u,
+  Ay: () => d,
   O$: () => c,
-  Ur: () => o,
-  hU: () => l
+  Ur: () => a,
+  hU: () => o
 });
 var Chunk955572 = require("./955572.js"),
   Chunk775602 = require("./775602.js"),
   Chunk652215 = require("./652215.js");
 
 function s(e) {
-  return a.hH7.ZOOM_SCALES[Math.max(0, Math.min(a.hH7.ZOOM_SCALES.indexOf(i.A.zoom) + e, a.hH7.ZOOM_SCALES.length - 1))]
+  return l.hH7.ZOOM_SCALES[Math.max(0, Math.min(l.hH7.ZOOM_SCALES.indexOf(i.A.zoom) + e, l.hH7.ZOOM_SCALES.length - 1))]
 }
-let o = {
+let a = {
     binds: ["mod+plus"],
     comboKeysBindGlobal: true,
     action: () => ((0, r.Qp)(s(1)), false)
   },
-  l = {
+  o = {
     binds: ["mod+minus"],
     comboKeysBindGlobal: true,
     action: () => ((0, r.Qp)(s(false)), false)
@@ -27,10 +26,10 @@ let o = {
   c = {
     binds: ["mod+0"],
     comboKeysBindGlobal: true,
-    action: () => ((0, r.Qp)(a.hH7.ZOOM_DEFAULT), false)
+    action: () => ((0, r.Qp)(l.hH7.ZOOM_DEFAULT), false)
   },
-  u = {
-    ZOOM_IN: o,
-    ZOOM_OUT: l,
+  d = 21552 == require.j ? {
+    ZOOM_IN: a,
+    ZOOM_OUT: o,
     ZOOM_RESET: c
-  }
+  } : null

@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk615300 = require("./615300.js"),
   Chunk456412 = require("./456412.jsx"),
   Chunk884096 = require("./884096.js");
@@ -74,8 +74,8 @@ class b extends(r = Chunk64700.Component) {
       currentIndex: r,
       items: i,
       width: a
-    } = this.props, s = y(r, i.length), o = y(e.currentIndex, i.length);
-    (s !== o || i.length !== e.items.length) && this.updateAnimatedIndex(s, o), a !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || s !== o) && l.A.spring(this.animatedAlignmentOffset, _(f({}, h), {
+    } = this.props, o = y(r, i.length), s = y(e.currentIndex, i.length);
+    (o !== s || i.length !== e.items.length) && this.updateAnimatedIndex(o, s), a !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || o !== s) && l.A.spring(this.animatedAlignmentOffset, _(f({}, h), {
       toValue: this.getAlignmentOffset(t)
     })).start()
   }
@@ -86,8 +86,8 @@ class b extends(r = Chunk64700.Component) {
       currentIndex: r,
       gutter: i,
       items: a
-    } = this.props, s = i * y(r, a.length) * 2;
-    return e === g ? (t - n.width) / 2 + s : e === E ? t - n.width - i + s : i + s
+    } = this.props, o = i * y(r, a.length) * 2;
+    return e === g ? (t - n.width) / 2 + o : e === E ? t - n.width - i + o : i + o
   }
   getCarouselTranslate() {
     let {
@@ -134,7 +134,7 @@ class b extends(r = Chunk64700.Component) {
       className: r
     } = this.props;
     return (0, i.jsx)("div", {
-      className: o()(u.T7, u.R9, r),
+      className: s()(u.T7, u.R9, r),
       children: (0, i.jsx)("div", {
         className: u.SF,
         style: {
@@ -153,18 +153,18 @@ class b extends(r = Chunk64700.Component) {
       } = this,
       {
         renderItem: a,
-        items: s,
-        itemSize: o,
+        items: o,
+        itemSize: s,
         edgeItems: c,
         gutter: d
       } = this.props,
       {
         margin: f,
         width: p
-      } = o,
+      } = s,
       _ = this.getCarouselTranslate(),
       h = this.getItemStyle(),
-      m = (e = c > 0 ? [...s.slice(-c), ...s, ...s.slice(0, c)] : s).map((e, t) => (0, i.jsx)("div", {
+      m = (e = c > 0 ? [...o.slice(-c), ...o, ...o.slice(0, c)] : o).map((e, t) => (0, i.jsx)("div", {
         style: h,
         className: u.AS,
         children: a(e, t - c, this.interpolateValueForItem(t - c))
@@ -175,7 +175,7 @@ class b extends(r = Chunk64700.Component) {
         opacity: r,
         left: l.A.add(t.interpolate({
           inputRange: [0, 1],
-          outputRange: [-_, -f - p - _ - d * (s.length - 1)]
+          outputRange: [-_, -f - p - _ - d * (o.length - 1)]
         }), n)
       },
       children: m
@@ -189,7 +189,7 @@ class b extends(r = Chunk64700.Component) {
     } = this.props;
     if (e.length <= 0) throw Error("Carousel has no items");
     return 1 === e.length ? this.renderSingleItem() : (0, i.jsx)("div", {
-      className: o()({
+      className: s()({
         [u.R9]: n
       }, t),
       children: this.renderCarouselItems()

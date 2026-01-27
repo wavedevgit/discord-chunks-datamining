@@ -18,8 +18,8 @@ function c(e) {
     } = t;
   return r.useCallback(() => {
     var t;
-    (0, s.bz)();
+    (0, o.bz)();
     let r = null != (t = e.getGuildId()) ? t : l.ME;
-    (0, o.uh)(r, e.id), a.A.channelListScrollTo(r, e.id), null != n && i.A.selectParticipant(e.id, n)
+    (0, s.uh)(r, e.id), a.A.channelListScrollTo(r, e.id), null != n && i.A.selectParticipant(e.id, n)
   }, [e, n])
 }

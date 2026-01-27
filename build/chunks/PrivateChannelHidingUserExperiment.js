@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   AL: () => i.A,
-  RK: () => s,
-  sK: () => o
+  RK: () => o,
+  sK: () => s
 });
 var Chunk600975 = require("./600975.js"),
   Chunk766005 = require("./766005.js");
@@ -33,13 +33,13 @@ let a = (0, Chunk600975.C)({
   }]
 });
 
-function s(e) {
+function o(e) {
   return a.getCurrentConfig({
     location: e
   }).enableObfuscation
 }
 
-function o(e) {
+function s(e) {
   return a.useExperiment({
     location: e
   }).enableObfuscation

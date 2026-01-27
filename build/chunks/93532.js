@@ -11,11 +11,11 @@ async function a(e) {
       default: r
     } = await n.e("25777").then(n.t.bind(n, 293384, 19)),
     a = r.createFile(false),
-    s = new Promise(e => {
+    o = new Promise(e => {
       a.onReady = e
     }),
-    o = await e.arrayBuffer();
-  for (let e of (o.fileStart = 0, a.appendBuffer(o), a.flush(), await s, i()(null != a.boxes, "mp4boxInputFile.boxes should not be null after parsing"), a.boxes)) "uuid" === e.type && (t = e.start);
+    s = await e.arrayBuffer();
+  for (let e of (s.fileStart = 0, a.appendBuffer(s), a.flush(), await o, i()(null != a.boxes, "mp4boxInputFile.boxes should not be null after parsing"), a.boxes)) "uuid" === e.type && (t = e.start);
   let l = e.slice(0, t, e.type),
     c = e.slice(t + 4, t + 8 + 16, e.type);
   return new Blob([l, new Uint8Array([0, 0, 0, 24]), c], {

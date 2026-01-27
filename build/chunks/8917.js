@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk284009 = require("./284009.js"),
   a = require.n(Chunk284009),
   Chunk735438 = require("./735438.js"),
-  o = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk562465 = require("./562465.js"),
   Chunk823598 = require("./823598.js"),
   Chunk201327 = require("./201327.js"),
@@ -37,8 +37,8 @@ let R = C.getContext("2d");
 function P() {
   S.stop(), null != r && (r = null)
 }
-let D = o().debounce((e, t, n, r) => {
-  L(e, (0, y._z)({
+let D = s().debounce((e, t, n, r) => {
+  x(e, (0, y._z)({
     streamType: null != t ? b.U4.GUILD : b.U4.CALL,
     guildId: t,
     channelId: n,
@@ -46,7 +46,7 @@ let D = o().debounce((e, t, n, r) => {
   }))
 }, 500);
 
-function x(e) {
+function L(e) {
   let t = Math.min(N / e.width, w / e.height),
     n = e.width * t,
     r = e.height * t;
@@ -54,15 +54,15 @@ function x(e) {
   let i = window.document.createElement("canvas"),
     a = i.getContext("2d");
   i.width = e.width, i.height = e.height;
-  let s = new ImageData(e.data, e.width, e.height);
-  null == a || a.putImageData(s, 0, 0), null == R || R.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r)
+  let o = new ImageData(e.data, e.width, e.height);
+  null == a || a.putImageData(o, 0, 0), null == R || R.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r)
 }
-async function L(e, t) {
+async function x(e, t) {
   if (r !== e || (0, g.isWeb)() && _.uh.getSetting() || h.A.getIsActiveStreamPreviewDisabled(t)) return;
-  let n = () => L(e, t);
+  let n = () => x(e, t);
   if (!T) try {
-    let n = await j(e, 60);
-    x(n);
+    let n = await M(e, 60);
+    L(n);
     let r = C.toDataURL("image/jpeg");
     if (f.h.dispatch({
         type: "STREAM_PREVIEW_FETCH_SUCCESS",
@@ -91,28 +91,28 @@ async function L(e, t) {
   r === e && (T ? S.start(I, n) : S.start(A, n))
 }
 
-function j(e, t) {
+function M(e, t) {
   let n = 0;
-  return (g.isPlatformEmbedded ? k : M)(e, e => {
+  return (g.isPlatformEmbedded ? k : j)(e, e => {
     if (new Uint32Array(e.data.buffer).some(e => 0 !== e)) returntrue;
     if (++n > t) throw Error("Timed out awaiting non-black frame after ".concat(t, " frames"));
     returnfalse
   })
 }
 
-function M(e, t) {
+function j(e, t) {
   let n = (0, u.yL)(e);
   if (null == n) return Promise.resolve(new ImageData(0, 0));
   let {
     width: r,
     height: i
-  } = n.getVideoTracks()[0].getSettings(), a = document.createElement("video"), s = document.createElement("canvas");
-  a.width = s.width = null != r ? r : N, a.height = s.height = null != i ? i : w, a.srcObject = n, a.play();
-  let o = s.getContext("2d");
+  } = n.getVideoTracks()[0].getSettings(), a = document.createElement("video"), o = document.createElement("canvas");
+  a.width = o.width = null != r ? r : N, a.height = o.height = null != i ? i : w, a.srcObject = n, a.play();
+  let s = o.getContext("2d");
   return new Promise((e, n) => {
     a.ontimeupdate = () => {
-      null == o || o.drawImage(a, 0, 0, s.width, s.height);
-      let r = null == o ? true : o.getImageData(0, 0, s.width, s.height);
+      null == s || s.drawImage(a, 0, 0, o.width, o.height);
+      let r = null == s ? true : s.getImageData(0, 0, o.width, o.height);
       try {
         null != r && t(r) && e(r)
       } catch (e) {
@@ -127,14 +127,14 @@ function M(e, t) {
 function k(e, t) {
   let n = (0, c.lE)();
   return new Promise((i, a) => {
-    let s = e => {
+    let o = e => {
       try {
         null != e && t(e) && i(e)
       } catch (e) {
         a(e)
       }
     };
-    n.getNextVideoOutputFrame(e).then(s, t => {
+    n.getNextVideoOutputFrame(e).then(o, t => {
       if (r === e) throw t
     })
   })
@@ -147,9 +147,9 @@ let U = {
         channelId: n,
         userId: i,
         streamId: a,
-        context: s
+        context: o
       } = e;
-      null == a || s !== v.x.STREAM || i !== m.default.getId() || __OVERLAY__ || (P(), r = a, D(a, t, n, i))
+      null == a || o !== v.x.STREAM || i !== m.default.getId() || __OVERLAY__ || (P(), r = a, D(a, t, n, i))
     }), f.h.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t

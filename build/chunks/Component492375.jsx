@@ -89,7 +89,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: y,
-        children: [(0, r.jsx)(o.zT, {
+        children: [(0, r.jsx)(s.zT, {
           emoji: _.emoji
         }), f]
       });
@@ -97,7 +97,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: y,
-        children: [(0, r.jsx)(o.QT, {
+        children: [(0, r.jsx)(s.QT, {
           emoji: _.emoji
         }), f]
       });
@@ -105,7 +105,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: y,
-        children: [(0, r.jsx)(o.wN, {
+        children: [(0, r.jsx)(s.wN, {
           text: _.name
         }), f]
       });
@@ -113,7 +113,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: y,
-        children: [(0, r.jsx)(o.M9, {
+        children: [(0, r.jsx)(s.M9, {
           id: _.userId,
           channelId: n,
           guildId: t
@@ -123,7 +123,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: y,
-        children: [(0, r.jsx)(o.ti, {
+        children: [(0, r.jsx)(s.ti, {
           id: _.roleId,
           guildId: t
         }), f]
@@ -132,7 +132,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: y,
-        children: [(0, r.jsx)(o.Cn, {
+        children: [(0, r.jsx)(s.Cn, {
           id: _.channelId
         }), f]
       });
@@ -140,7 +140,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: y,
-        children: [(0, r.jsx)(o.sQ, {
+        children: [(0, r.jsx)(s.sQ, {
           id: _.id,
           itemId: _.itemId,
           guildId: t
@@ -150,7 +150,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: y,
-        children: [(0, r.jsx)(s.LF, {
+        children: [(0, r.jsx)(o.LF, {
           soundId: _.soundId
         }), f]
       });
@@ -158,7 +158,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: y,
-        children: [(0, r.jsx)(o.gn, {
+        children: [(0, r.jsx)(s.gn, {
           text: _.commandName,
           id: _.commandId
         }), f]
@@ -167,7 +167,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: y,
-        children: [(0, r.jsx)(o.Dc, {
+        children: [(0, r.jsx)(s.Dc, {
           timestamp: _.parsed
         }), f]
       });
@@ -175,7 +175,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: y,
-        children: [(0, r.jsx)(o.NH, {
+        children: [(0, r.jsx)(s.NH, {
           id: _.applicationId
         }), f]
       });
@@ -188,9 +188,9 @@ let g = e => {
     className: t,
     attributes: n,
     children: i
-  } = e, s = a()(u.S0, u.Cj, t);
+  } = e, o = a()(u.S0, u.Cj, t);
   return (0, r.jsx)("span", h(p({}, n), {
-    className: s,
+    className: o,
     contentEditable: false,
     children: i
   }))

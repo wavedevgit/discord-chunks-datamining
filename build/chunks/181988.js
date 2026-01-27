@@ -1,5 +1,5 @@
-/** Chunk was on 67564 **/
-/** chunk id: 181988, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 84497 **/
+/** chunk id: 181988, original params: e,t,l (module,exports,require) **/
 module.exports = {
   Hu: "alignCenter__9ecf6",
   d: "clickableRow__9ecf6",

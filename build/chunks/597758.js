@@ -39,7 +39,7 @@ function E() {
 }
 async function y() {
   try {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "ACTIVE_PROMOTIONS_FETCH"
     });
     let t = r.j.DESKTOP,
@@ -55,23 +55,23 @@ async function y() {
       a = h.A.consumedInboundPromotionId;
     if (!h.A.hasFetchedConsumedInboundPromotionId) {
       var e;
-      let t = (await (0, o.LM)(m.tv, false)).find(e => null != e.promotion_id && true === e.consumed);
+      let t = (await (0, s.LM)(m.tv, false)).find(e => null != e.promotion_id && true === e.consumed);
       a = null != (e = null == t ? true : t.promotion_id) ? e : null
     }
-    s.h.dispatch({
+    o.h.dispatch({
       type: "ACTIVE_PROMOTIONS_FETCH_SUCCESS",
       promotions: n.body,
       consumedInboundPromotionId: a
     })
   } catch (e) {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "ACTIVE_PROMOTIONS_FETCH_FAIL"
     })
   }
 }
 async function b() {
   if (!h.A.isFetchingActiveBogoPromotion) try {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "ACTIVE_BOGO_PROMOTION_FETCH"
     });
     let e = (await i.Bo.get({
@@ -81,12 +81,12 @@ async function b() {
       },
       rejectWithError: true
     })).body;
-    s.h.dispatch({
+    o.h.dispatch({
       type: "ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS",
       activePromotion: u.A.createFromServer(e)
     })
   } catch (e) {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "ACTIVE_BOGO_PROMOTION_FETCH_FAIL"
     })
   }
@@ -94,7 +94,7 @@ async function b() {
 let O = {
   fetchActivePromotions: y,
   dismissOutboundPromotionNotice: function() {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "OUTBOUND_PROMOTION_NOTICE_DISMISS"
     });
     let e = h.A.lastDismissedOutboundPromotionStartDate;
@@ -105,7 +105,7 @@ let O = {
     }, c.Sb.INFREQUENT_USER_ACTION)
   },
   markOutboundPromotionsSeen() {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "OUTBOUND_PROMOTIONS_SEEN"
     })
   },

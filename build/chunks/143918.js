@@ -16,10 +16,10 @@ module.exports = function(e) {
       begin: "[-+]?\\d+(\\.\\d+)?",
       relevance: 0
     },
-    s = e.inherit(e.QUOTE_STRING_MODE, {
+    o = e.inherit(e.QUOTE_STRING_MODE, {
       illegal: null
     }),
-    o = e.COMMENT(";", "$", {
+    s = e.COMMENT(";", "$", {
       relevance: 0
     }),
     l = {
@@ -55,11 +55,11 @@ module.exports = function(e) {
       begin: n,
       starts: _
     },
-    m = [p, s, u, d, o, f, c, a, l, i];
+    m = [p, o, u, d, s, f, c, a, l, i];
   return p.contains = [e.COMMENT("comment", ""), h, _], _.contains = m, c.contains = m, {
     name: "Hy",
     aliases: ["hylang"],
     illegal: /\S/,
-    contains: [e.SHEBANG(), p, s, u, d, o, f, c, a, l]
+    contains: [e.SHEBANG(), p, o, u, d, s, f, c, a, l]
   }
 }

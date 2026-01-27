@@ -79,7 +79,7 @@ function C() {
 }
 class N extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A)
+    this.waitFor(s.A)
   }
   get isModuleLoading() {
     return null != b

@@ -26,13 +26,13 @@ let E = () => {
       setConnectionStatus: n,
       finishSetup: r,
       getWarpInstallationStatus: a,
-      connect: s,
+      connect: o,
       installTimeout: E
     } = (0, m.lV)(), {
       status: y
-    } = (0, o.bG)([l.A], () => l.A.state, []), [b, O] = (0, i.useState)(0), {
+    } = (0, s.bG)([l.A], () => l.A.state, []), [b, O] = (0, i.useState)(0), {
       installedDiscordPrivateBrowsingPerk: v
-    } = (0, o.bG)([h.A], () => h.A.getState(), []), [A, I] = (0, i.useState)(false), [S, T] = (0, i.useState)(null);
+    } = (0, s.bG)([h.A], () => h.A.getState(), []), [A, I] = (0, i.useState)(false), [S, T] = (0, i.useState)(null);
     return (0, i.useEffect)(() => {
       A || (I(true), e !== p.Lk.INSTALLING && (0, d.t)().then(e => {
         e === p.Lk.NOT_INSTALLED ? t(p.Lk.NOT_INSTALLED) : e === p.Lk.EXISTING_INSTALLATION && v ? t(p.Lk.INSTALLING) : t(e)
@@ -64,7 +64,7 @@ let E = () => {
       b > 10 && (t(p.Lk.ERROR), O(0))
     }, [b, t]), (0, i.useEffect)(() => {
       e === p.Lk.READY_FOR_LICENSE && r().then(e => {
-        e && t(p.Lk.INSTALLED), s()
+        e && t(p.Lk.INSTALLED), o()
       }).catch(e => {
         u.A.captureException(e, {
           tags: {
@@ -75,7 +75,7 @@ let E = () => {
           error_source: f.q.PRIVATE_BROWSING_PERK_LICENSE_FINISH_SETUP
         }), t(p.Lk.ERROR)
       })
-    }, [e, t, r, s]), (0, i.useEffect)(() => {
+    }, [e, t, r, o]), (0, i.useEffect)(() => {
       if (![p.Lk.INSTALLING, p.Lk.WAITING_FOR_TERMS].includes(e)) return void T(null);
       if (null == S && T(Date.now()), null != S) {
         let e = S + E - Date.now();
@@ -113,7 +113,7 @@ let E = () => {
       }
     }, [e, t, a]), null
   },
-  y = () => (0, s.xl)() ? (0, r.jsx)(a.tH, {
+  y = () => (0, o.xl)() ? (0, r.jsx)(a.tH, {
     fallback: null,
     children: (0, r.jsx)(E, {})
   }) : null

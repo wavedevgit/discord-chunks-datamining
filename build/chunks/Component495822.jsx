@@ -13,19 +13,19 @@ function a(e) {
     alt: t,
     ariaLabel: n,
     ariaHidden: a,
-    role: s,
-    width: o = 288,
+    role: o,
+    width: s = 288,
     height: l = 192
   } = e;
   return (0, r.jsx)("img", {
     style: {
-      width: o,
+      width: s,
       height: l
     },
     src: i.A,
     alt: t,
     "aria-label": n,
     "aria-hidden": a,
-    role: null != s ? s : "img"
+    role: null != o ? o : "img"
   })
 }

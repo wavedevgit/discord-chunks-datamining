@@ -5,14 +5,14 @@ var Chunk557939 = require("./557939.js"),
   Chunk860511 = require("./860511.js"),
   Chunk985848 = require("./985848.js"),
   Chunk43902 = require("./43902.js"),
-  o = "WebAssembly",
-  l = Chunk860511[o],
+  s = "WebAssembly",
+  l = Chunk860511[s],
   c = 7 !== Error("e", {
     cause: 7
   }).cause,
   u = function(e, t) {
     var n = {};
-    n[e] = s(e, t, c), r({
+    n[e] = o(e, t, c), r({
       global: true,
       constructor: true,
       arity: 1,
@@ -22,8 +22,8 @@ var Chunk557939 = require("./557939.js"),
   d = function(e, t) {
     if (l && l[e]) {
       var n = {};
-      n[e] = s(o + "." + e, t, c), r({
-        target: o,
+      n[e] = o(s + "." + e, t, c), r({
+        target: s,
         stat: true,
         constructor: true,
         arity: 1,

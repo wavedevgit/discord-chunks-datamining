@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = 0,
+let s = 0,
   l = {};
 
 function c(e) {
@@ -25,7 +25,7 @@ function c(e) {
 }
 
 function u(e) {
-  l[e.guildId] = e.guildInfo, o++
+  l[e.guildId] = e.guildInfo, s++
 }
 
 function d(e) {
@@ -46,10 +46,10 @@ class f extends(r = Chunk311907.Ay.Store) {
     return l[e]
   }
   getVersion() {
-    return o
+    return s
   }
 }
-s(f, "displayName", "BasicGuildStore");
+o(f, "displayName", "BasicGuildStore");
 let p = new f(Chunk73153.h, {
   BASIC_GUILD_FETCH: c,
   BASIC_GUILD_FETCH_SUCCESS: u,

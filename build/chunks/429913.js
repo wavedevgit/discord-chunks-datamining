@@ -18,8 +18,8 @@ function d(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = r.useRef([]);
   return r.useEffect(() => {
-    t && !(0, o.v)(e, n.current) && (c.Ay.fetchApplications(a()(e).filter(l.Vq).uniq().value(), false), n.current = e)
-  }, [e, t]), (0, s.yK)([u.A], () => e.map(e => null != e ? u.A.getApplication(e) : true))
+    t && !(0, s.v)(e, n.current) && (c.Ay.fetchApplications(a()(e).filter(l.Vq).uniq().value(), false), n.current = e)
+  }, [e, t]), (0, o.yK)([u.A], () => e.map(e => null != e ? u.A.getApplication(e) : true))
 }
 
 function f(e) {

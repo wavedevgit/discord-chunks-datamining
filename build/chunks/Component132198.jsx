@@ -35,7 +35,7 @@ let f = {
           animationState: t = "on",
           className: n
         } = e;
-        return (0, r.jsx)(o.A, {
+        return (0, r.jsx)(s.A, {
           animationState: t,
           className: a()(c.o, n)
         })
@@ -43,8 +43,8 @@ let f = {
     }
   },
   p = () => ({
-    id: s.A.ORB_PROFILE_BADGE,
-    icon: s.A.ORB_PROFILE_BADGE,
+    id: o.A.ORB_PROFILE_BADGE,
+    icon: o.A.ORB_PROFILE_BADGE,
     iconSrc: d.A,
     description: "",
     isPreviewMode: true

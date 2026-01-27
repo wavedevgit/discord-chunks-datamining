@@ -18,7 +18,7 @@ var Chunk696451 = require("./696451.js"),
 let u = (e, t, n) => {
     if (null == t) return 2;
     let c = a.Ay.canUseCustomStickersEverywhere(t);
-    return (0, o.FD)(e) ? 2 * (null == s.A.getStickerPack(e.pack_id)) : (0, o.Xw)(e) && null != n ? null == r.Ay.getSelfMember(e.guild_id) ? 2 : e.available ? null != n.guild_id && "" !== n.guild_id && n.guild_id === e.guild_id ? 0 : null == n.guild_id || i.$3({
+    return (0, s.FD)(e) ? 2 * (null == o.A.getStickerPack(e.pack_id)) : (0, s.Xw)(e) && null != n ? null == r.Ay.getSelfMember(e.guild_id) ? 2 : e.available ? null != n.guild_id && "" !== n.guild_id && n.guild_id === e.guild_id ? 0 : null == n.guild_id || i.$3({
       permission: l.xBc.USE_EXTERNAL_STICKERS,
       user: t,
       context: n

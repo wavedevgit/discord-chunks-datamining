@@ -2,7 +2,7 @@
 /** chunk id: 725428, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  p: () => o
+  p: () => s
 });
 var Chunk662087 = require("./662087.js");
 
@@ -17,10 +17,10 @@ function a(e, t) {
   }
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t && a(e.prototype, t), n && a(e, n), e
 }
-var o = function() {
+var s = function() {
   function e(t, n) {
     var r = this;
     i(this, e), this.isSetUp = false, this.handleRefCountChange = function() {
@@ -28,7 +28,7 @@ var o = function() {
       r.backend && (e && !r.isSetUp ? (r.backend.setup(), r.isSetUp = true) : !e && r.isSetUp && (r.backend.teardown(), r.isSetUp = false))
     }, this.store = t, this.monitor = n, t.subscribe(this.handleRefCountChange)
   }
-  return s(e, [{
+  return o(e, [{
     key: "receiveBackend",
     value: function(e) {
       this.backend = e
@@ -57,8 +57,8 @@ var o = function() {
       function n(n) {
         return function() {
           for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
-          var s = n.apply(e, i);
-          true !== s && t(s)
+          var o = n.apply(e, i);
+          true !== o && t(o)
         }
       }
       var i = (0, r.Lj)(this);

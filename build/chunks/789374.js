@@ -8,10 +8,10 @@ var Chunk615339 = require("./615339.js"),
   Chunk374372 = require("./374372.js"),
   Chunk355418 = require("./355418.js"),
   Chunk632434 = require("./632434.js");
-let o = RegExp(`(questo|ultimo|passato|prossimo|dopo|questa|ultima|passata|prossima|\\+|-)\\s*(${Chunk615339.Pl})(?=\\W|$)`, "i");
+let s = RegExp(`(questo|ultimo|passato|prossimo|dopo|questa|ultima|passata|prossima|\\+|-)\\s*(${Chunk615339.Pl})(?=\\W|$)`, "i");
 class l extends Chunk355418.c {
   innerPattern() {
-    return o
+    return s
   }
   innerExtract(e, t) {
     let n = t[1].toLowerCase(),
@@ -20,7 +20,7 @@ class l extends Chunk355418.c {
       case "last":
       case "past":
       case "-":
-        a = (0, s.x4)(a)
+        a = (0, o.x4)(a)
     }
     return i.BP.createRelativeFromReference(e.reference, a)
   }

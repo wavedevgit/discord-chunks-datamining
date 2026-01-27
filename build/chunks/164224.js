@@ -10,8 +10,8 @@ module.exports = function(e) {
     r = "decltype\\(auto\\)",
     i = "[a-zA-Z_]\\w*::",
     a = "<[^<>]+>",
-    s = "(?!struct)(" + r + "|" + t.optional(i) + "[a-zA-Z_]\\w*" + t.optional(a) + ")",
-    o = {
+    o = "(?!struct)(" + r + "|" + t.optional(i) + "[a-zA-Z_]\\w*" + t.optional(a) + ")",
+    s = {
       className: "type",
       begin: "\\b[a-z\\d_]*_t\\b"
     },
@@ -79,7 +79,7 @@ module.exports = function(e) {
       },
       begin: t.concat(/\b/, /(?!decltype)/, /(?!if)/, /(?!for)/, /(?!switch)/, /(?!while)/, e.IDENT_RE, t.lookahead(/(<[^<>]+>|)\s*\(/))
     },
-    m = [h, d, o, n, e.C_BLOCK_COMMENT_MODE, u, c],
+    m = [h, d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
     g = {
       variants: [{
         begin: /=/,
@@ -103,7 +103,7 @@ module.exports = function(e) {
     },
     E = {
       className: "function",
-      begin: "(" + s + "[\\*&\\s]+)+" + p,
+      begin: "(" + o + "[\\*&\\s]+)+" + p,
       returnBegin: true,
       end: /[{;=]/,
       excludeEnd: true,
@@ -134,14 +134,14 @@ module.exports = function(e) {
         end: /\)/,
         keywords: _,
         relevance: 0,
-        contains: [n, e.C_BLOCK_COMMENT_MODE, c, u, o, {
+        contains: [n, e.C_BLOCK_COMMENT_MODE, c, u, s, {
           begin: /\(/,
           end: /\)/,
           keywords: _,
           relevance: 0,
-          contains: ["self", n, e.C_BLOCK_COMMENT_MODE, c, u, o]
+          contains: ["self", n, e.C_BLOCK_COMMENT_MODE, c, u, s]
         }]
-      }, o, n, e.C_BLOCK_COMMENT_MODE, d]
+      }, s, n, e.C_BLOCK_COMMENT_MODE, d]
     };
   return {
     name: "C++",
@@ -155,7 +155,7 @@ module.exports = function(e) {
       begin: "\\b(deque|list|queue|priority_queue|pair|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array|tuple|optional|variant|function|flat_map|flat_set)\\s*<(?!<)",
       end: ">",
       keywords: _,
-      contains: ["self", o]
+      contains: ["self", s]
     }, {
       begin: e.IDENT_RE + "::",
       keywords: _

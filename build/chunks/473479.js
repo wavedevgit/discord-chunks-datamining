@@ -1,25 +1,25 @@
-/** Chunk was on web.js **/
-/** chunk id: 473479, original params: e (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 473479, original params: t (module,exports,require) **/
 "use strict";
 module.exports = {
-  getRemovalRange: function(e, t, n, r, i) {
-    var a, s = n.split(" ");
-    s = s.map(function(e, t) {
+  getRemovalRange: function(t, e, r, n, i) {
+    var o, a = r.split(" ");
+    a = a.map(function(t, e) {
       if ("forward" === i) {
-        if (t > 0) return " " + e
-      } else if (t < s.length - 1) return e + " ";
-      return e
+        if (e > 0) return " " + t
+      } else if (e < a.length - 1) return t + " ";
+      return t
     });
-    for (var o = r, l = null, c = null, u = 0; u < s.length; u++) {
-      if (e < (a = o + s[u].length) && o < t) null !== l || (l = o), c = a;
-      else if (null !== l) break;
-      o = a
+    for (var s = n, u = null, c = null, l = 0; l < a.length; l++) {
+      if (t < (o = s + a[l].length) && s < e) null !== u || (u = s), c = o;
+      else if (null !== u) break;
+      s = o
     }
-    var d = r + n.length,
-      f = l === r,
-      p = c === d;
-    return (!f && p || f && !p) && ("forward" === i ? c !== d && c++ : l !== r && l--), {
-      start: l,
+    var f = n + r.length,
+      p = u === n,
+      h = c === f;
+    return (!p && h || p && !h) && ("forward" === i ? c !== f && c++ : u !== n && u--), {
+      start: u,
       end: c
     }
   }

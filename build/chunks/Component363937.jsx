@@ -29,7 +29,7 @@ let d = {
         description: m,
         withDescriptions: g,
         withIcons: E
-      } = e, [y, b] = i.useState("option1"), O = [a.A, s.x, o.q, l.Z, c.d], v = Array.from({
+      } = e, [y, b] = i.useState("option1"), O = [a.A, o.x, s.q, l.Z, c.d], v = Array.from({
         length: t
       }, (e, t) => ({
         value: "option".concat(t + 1),

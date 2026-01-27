@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 412820, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 412820, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,45 +15,45 @@ var Chunk627968 = require("./627968.js"),
   Chunk833336 = require("./833336.js"),
   Chunk985018 = require("./985018.jsx");
 
-function _() {
-  let e = (0, a.bG)([f.A], () => f.A.getIsSubmitDisabled()),
-    t = (0, a.bG)([f.A], () => f.A.getGuild()),
-    n = (0, a.bG)([f.A], () => f.A.getErrors()),
-    [_, h] = i.useState(false),
-    m = i.useMemo(() => (null == n ? true : n.message) != null ? null == n ? true : n.message : (null == n ? true : n.guild_tag) !== true && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(null != n ? n : {}).length > 0 ? p.intl.string(p.t.s35OuK) : null, [n]),
-    g = i.useCallback(async () => {
+function m() {
+  let e = (0, l.bG)([_.A], () => _.A.getIsSubmitDisabled()),
+    t = (0, l.bG)([_.A], () => _.A.getGuild()),
+    n = (0, l.bG)([_.A], () => _.A.getErrors()),
+    [m, g] = i.useState(false),
+    A = i.useMemo(() => (null == n ? true : n.message) != null ? null == n ? true : n.message : (null == n ? true : n.guild_tag) !== true && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(null != n ? n : {}).length > 0 ? p.intl.string(p.t.s35OuK) : null, [n]),
+    f = i.useCallback(async () => {
       var e, n, r;
-      h(true);
-      let i = f.A.getAllPending(),
-        a = (0, o.C5)(i),
-        s = (0, o.yX)(i),
+      g(true);
+      let i = _.A.getAllPending(),
+        l = (0, a.C5)(i),
+        s = (0, a.yX)(i),
         p = true;
-      if (Object.keys(a).length > 0) {
-        let r = await (0, d.GL)(null == t ? true : t.id, a);
+      if (Object.keys(l).length > 0) {
+        let r = await (0, u.GL)(null == t ? true : t.id, l);
         if (p = p && null != (e = null == r ? true : r.ok) && e, null == r ? true : r.ok) {
           let e = r.body;
           true !== i.pendingAvatar && (0, c.t)({
             isGuildProfile: true,
             avatarHash: e.avatar,
-            avatarId: a.avatarId,
+            avatarId: l.avatarId,
             avatarAssetOrigin: null == (n = i.pendingAvatar) ? true : n.assetOrigin
-          }), (0, d.go)()
+          }), (0, u.go)()
         }
       }
       if (Object.keys(s).length > 0) {
-        let e = await (0, l.gi)(s, null == t ? true : t.id);
-        p = p && null != (r = null == e ? true : e.ok) && r, (null == e ? true : e.ok) ? (0, d.RE)() : (0, u.N)()
+        let e = await (0, o.gi)(s, null == t ? true : t.id);
+        p = p && null != (r = null == e ? true : e.ok) && r, (null == e ? true : e.ok) ? (0, u.RE)() : (0, d.N)()
       }
-      p && (0, d.x8)(), h(false)
+      p && (0, u.x8)(), g(false)
     }, [null == t ? true : t.id]),
-    E = i.useCallback(() => {
-      (0, d.IM)()
+    h = i.useCallback(() => {
+      (0, u.IM)()
     }, []);
   return (0, r.jsx)(s.A, {
-    submitting: _,
-    onSave: g,
-    onReset: E,
+    submitting: m,
+    onSave: f,
+    onReset: h,
     disabled: e,
-    errorMessage: null != m ? m : true
+    errorMessage: null != A ? A : true
   })
 }

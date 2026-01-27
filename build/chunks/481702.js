@@ -3,5 +3,5 @@
 var Chunk716230 = require("./716230.js"),
   Chunk517688 = require("./517688.js"),
   Chunk984638 = require("./984638.js"),
-  s = Chunk984638 && Chunk984638.isTypedArray;
-module.exports = s ? Chunk517688(s) : Chunk716230
+  o = Chunk984638 && Chunk984638.isTypedArray;
+module.exports = o ? Chunk517688(o) : Chunk716230

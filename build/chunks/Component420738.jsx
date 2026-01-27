@@ -18,23 +18,23 @@ function l(e) {
     senderId: c,
     warningType: u
   } = e;
-  if (!(0, o.wv)({
+  if (!(0, s.wv)({
       location: "takeover-modal"
     })) return;
   let d = () => {
-    (0, a.xi)(t, [l]), (0, s._$)({
+    (0, a.xi)(t, [l]), (0, o._$)({
       channelId: t,
       senderId: c,
       warningId: l,
       warningType: u,
-      cta: s.Wm.USER_TAKEOVER_MODAL_DISMISS,
+      cta: o.Wm.USER_TAKEOVER_MODAL_DISMISS,
       isNudgeWarning: false
     })
   };
   (0, i.mMO)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("45033"), n.e("18108")]).then(n.bind(n, 237170));
+    } = await Promise.all([n.e("45586"), n.e("45033"), n.e("18108")]).then(n.bind(n, 237170));
     return n => (0, r.jsx)(e, {
       channelId: t,
       warningId: l,

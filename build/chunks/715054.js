@@ -46,7 +46,7 @@ function h(e) {
     T = (0, r.useCallback)(async (e, t, n) => {
       let r = O.current;
       if (null == r) {
-        E(new s.Ay("Order not created yet")), b(false);
+        E(new o.Ay("Order not created yet")), b(false);
         return
       }
       b(true), E(null);
@@ -56,18 +56,18 @@ function h(e) {
           expectedRevision: r.revision,
           loadId: t
         });
-        if (O.current = i, i.status !== o.Re.SIGNED) {
+        if (O.current = i, i.status !== s.Re.SIGNED) {
           let e = i;
           if (e.errors && e.errors.length > 0) {
             let t = e.errors;
             if (t.includes(2e3)) {
-              let e = new s.Ay("Insufficient balance");
-              throw e.code = s.tG.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE, e
+              let e = new o.Ay("Insufficient balance");
+              throw e.code = o.tG.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE, e
             }
             let n = "Order signing failed with errors: ".concat(t.join(", "));
             throw Error(n)
           }
-          if (i.status === o.Re.DRAFT) throw Error("Order could not be signed.");
+          if (i.status === s.Re.DRAFT) throw Error("Order could not be signed.");
           throw Error("Unexpected order status: ".concat(i.status))
         }
         let a = (0, d.p)(e),
@@ -79,7 +79,7 @@ function h(e) {
           m(t), b(false), null == n || n(t)
         } else m(c), b(false), null == n || n(c)
       } catch (e) {
-        E(e instanceof s.Ay ? e : new s.Ay(e)), b(false)
+        E(e instanceof o.Ay ? e : new o.Ay(e)), b(false)
       }
     }, [S]),
     C = (0, r.useCallback)(function(e, t, n) {
@@ -90,7 +90,7 @@ function h(e) {
         a = e => {
           m(e), b(false), null == n || n(e)
         },
-        s = e => {
+        o = e => {
           E(e), b(false)
         };
       return (0, u.J$)({
@@ -98,7 +98,7 @@ function h(e) {
         loadId: t,
         onRedeemStart: i,
         onRedeemSucceed: a,
-        onRedeemFail: s,
+        onRedeemFail: o,
         isRental: r
       })
     }, []),
@@ -106,7 +106,7 @@ function h(e) {
       let r = arguments.length > 3 && true !== arguments[3] && arguments[3];
       if (v) {
         if (r) {
-          E(new s.Ay("Rental orders are not supported via Orders API yet")), b(false);
+          E(new o.Ay("Rental orders are not supported via Orders API yet")), b(false);
           return
         }
         T(e, t, n)

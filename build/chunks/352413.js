@@ -22,12 +22,12 @@ function d(e) {
     pendingAvatar: _,
     pendingAvatarDecoration: h,
     pendingErrors: m
-  } = (0, i.cf)([l.A, s.A], () => ({
-    pendingAvatar: t ? l.A.getTryItOutAvatar() : null != d ? s.A.getPendingAvatar() : l.A.getPendingAvatar(),
-    pendingAvatarDecoration: t ? l.A.getTryItOutAvatarDecoration() : null != d ? s.A.getPendingAvatarDecoration() : l.A.getPendingAvatarDecoration(),
-    pendingErrors: null != d ? s.A.getErrors().avatarDecoration : l.A.getErrors().avatarDecoration
-  })), g = (0, r.useCallback)(e => (0, o.ru)(e, null == f ? true : f.avatar), [null == f ? true : f.avatar]), E = (0, r.useCallback)(e => {
-    (0, o.Dx)(e, d), null != e && p(e)
+  } = (0, i.cf)([l.A, o.A], () => ({
+    pendingAvatar: t ? l.A.getTryItOutAvatar() : null != d ? o.A.getPendingAvatar() : l.A.getPendingAvatar(),
+    pendingAvatarDecoration: t ? l.A.getTryItOutAvatarDecoration() : null != d ? o.A.getPendingAvatarDecoration() : l.A.getPendingAvatarDecoration(),
+    pendingErrors: null != d ? o.A.getErrors().avatarDecoration : l.A.getErrors().avatarDecoration
+  })), g = (0, r.useCallback)(e => (0, s.ru)(e, null == f ? true : f.avatar), [null == f ? true : f.avatar]), E = (0, r.useCallback)(e => {
+    (0, s.Dx)(e, d), null != e && p(e)
   }, [p, d]);
   return {
     pendingAvatar: _,

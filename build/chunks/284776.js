@@ -11,8 +11,8 @@ let i = {
 
 function a(e, t) {
   return {
-    "Image Width": s(e, t),
-    "Image Height": o(e, t),
+    "Image Width": o(e, t),
+    "Image Height": s(e, t),
     "Bit Depth": l(e, t),
     "Color Type": c(e, t),
     Compression: u(e, t),
@@ -21,7 +21,7 @@ function a(e, t) {
   }
 }
 
-function s(e, t) {
+function o(e, t) {
   if (t + 0 + 4 > e.byteLength) return;
   let n = r.A.getLongAt(e, t);
   return {
@@ -30,7 +30,7 @@ function s(e, t) {
   }
 }
 
-function o(e, t) {
+function s(e, t) {
   let n = 4;
   if (t + 4 + 4 > e.byteLength) return;
   let i = r.A.getLongAt(e, t + n);

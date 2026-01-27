@@ -17,10 +17,10 @@ let c = e => {
   } = e;
   return (0, r.jsxs)("div", {
     className: l.I,
-    children: [(0, r.jsxs)(s.Text, {
+    children: [(0, r.jsxs)(o.Text, {
       variant: "text-sm/medium",
       children: [t, ":"]
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       children: n
     }), (0, r.jsx)(a.K0, {
@@ -28,7 +28,7 @@ let c = e => {
       "aria-label": "Copy Link",
       variant: "icon-only",
       icon: i.CopyIcon,
-      onClick: () => (0, o.C)(n)
+      onClick: () => (0, s.C)(n)
     })]
   })
 }

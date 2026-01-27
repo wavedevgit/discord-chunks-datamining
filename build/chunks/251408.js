@@ -36,7 +36,7 @@ async function g(e) {
   let t = c.A.getChannel(e),
     {
       enableHangStatus: n
-    } = (0, o.ko)({
+    } = (0, s.ko)({
       guildId: null == t ? true : t.guild_id,
       location: "GameActivityManager"
     });
@@ -45,7 +45,7 @@ async function g(e) {
   if (0 === r.length) return;
   let a = h([...r]);
   await m([...a]);
-  let u = s.A.getApplication(a[0]);
+  let u = o.A.getApplication(a[0]);
   null != u && i.Ay.trackWithMetadata(p.HAw.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
     channel_id: e,
     guild_id: t.guild_id,

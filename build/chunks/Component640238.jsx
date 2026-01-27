@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk862482 = require("./862482.jsx"),
   Chunk725570 = require("./725570.js"),
   Chunk397927 = require("./397927.js"),
@@ -50,7 +50,7 @@ function p(e) {
       bodyClassName: y,
       transitionState: b,
       loading: O = false,
-      confirmButtonColor: v = o.$n.Colors.RED,
+      confirmButtonColor: v = s.$n.Colors.RED,
       focusCancel: A = false,
       impression: I
     } = e,
@@ -60,24 +60,24 @@ function p(e) {
       var e;
       return null == (e = S.current) ? true : e.focus()
     }, 0)
-  }, [A]), i.useLayoutEffect(() => () => null == E ? true : E()), null != p && (t = (0, r.jsx)(o.$n, {
+  }, [A]), i.useLayoutEffect(() => () => null == E ? true : E()), null != p && (t = (0, r.jsx)(s.$n, {
     "data-migration-pending": true,
     type: "button",
-    look: o.$n.Looks.FILLED,
-    color: o.$n.Colors.PRIMARY,
+    look: s.$n.Looks.FILLED,
+    color: s.$n.Colors.PRIMARY,
     className: u.x,
-    size: o.$n.Sizes.MEDIUM,
+    size: s.$n.Sizes.MEDIUM,
     disabled: O,
     onClick: () => {
       null == m || m(), g()
     },
     autoFocus: A,
     children: p
-  })), null != f && (n = (0, r.jsx)(o.$n, {
+  })), null != f && (n = (0, r.jsx)(s.$n, {
     "data-migration-pending": true,
     buttonRef: S,
     type: "submit",
-    size: o.$n.Sizes.MEDIUM,
+    size: s.$n.Sizes.MEDIUM,
     color: v,
     submitting: O,
     onClick: async () => {
@@ -104,7 +104,7 @@ function p(e) {
       })
     }) : null, (0, r.jsx)(l.$m, {
       "data-migration-pending": true,
-      className: s()(u.Q, y),
+      className: o()(u.Q, y),
       children: d
     }), (0, r.jsxs)(l.jl, {
       "data-migration-pending": true,

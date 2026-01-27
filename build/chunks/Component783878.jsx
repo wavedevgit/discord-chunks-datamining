@@ -95,7 +95,7 @@ function h(e) {
     getFloatingProps: N,
     getReferenceProps: w,
     transitionStyles: R
-  } = (0, o.G)();
+  } = (0, s.G)();
   return (0, r.jsxs)(a.iS, f(u({}, d), {
     isCollapsible: true,
     isOpen: I,
@@ -120,7 +120,7 @@ function h(e) {
       style: u({}, C, R)
     }, N()), {
       children: (0, r.jsx)(a.X2, {
-        renderListItem: e => (0, r.jsx)(s.c, u({}, e)),
+        renderListItem: e => (0, r.jsx)(o.c, u({}, e)),
         maxVisibleItems: c
       })
     }))]

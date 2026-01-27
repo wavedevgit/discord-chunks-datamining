@@ -37,8 +37,8 @@ function u(e) {
   let {
     onConfirm: t
   } = e;
-  a.default.track(o.HAw.OPEN_MODAL, {
-    type: s.C
+  a.default.track(s.HAw.OPEN_MODAL, {
+    type: o.C
   }), (0, i.mMO)(async () => {
     let {
       default: e

@@ -25,7 +25,7 @@ function y(e) {
   let {
     channel: t,
     type: n
-  } = e, r = (0, s.bG)([p.A], () => {
+  } = e, r = (0, o.bG)([p.A], () => {
     var e;
     let n = p.A.getChannel(t.parent_id);
     return null != (e = null == n ? true : n.isForumLikeChannel()) && e
@@ -41,7 +41,7 @@ function b(e) {
     pendingScheduledMessage: n
   } = e, h = (0, d.Vp)({
     location: "ThreadsAlsoSendToChannelArea"
-  }), [y, b] = (0, s.yK)([p.A, f.A], () => [t.isThread() ? p.A.getChannel(t.parent_id) : null, f.A.getAlsoSendToChannel(t.id)]), O = i.useCallback(e => {
+  }), [y, b] = (0, o.yK)([p.A, f.A], () => [t.isThread() ? p.A.getChannel(t.parent_id) : null, f.A.getAlsoSendToChannel(t.id)]), O = i.useCallback(e => {
     _.default.track(m.HAw.MESSAGE_ALSO_SEND_TO_CHANNEL_TOGGLED, {
       value: e,
       guild_id: t.guild_id,
@@ -61,7 +61,7 @@ function b(e) {
   if (!h.enabled || null == y) return null;
   let A = (0, c.gU)(y),
     I = g.intl.format(g.t.UqL10G, {
-      callToActionHook: (e, t) => (0, r.jsx)(o.Text, {
+      callToActionHook: (e, t) => (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         lineClamp: 1,
@@ -69,7 +69,7 @@ function b(e) {
         children: g.intl.string(g.t.Pi3JW7)
       }, t),
       channelName: y.name,
-      channelNameHook: (e, t) => (0, r.jsxs)(o.Text, {
+      channelNameHook: (e, t) => (0, r.jsxs)(s.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         lineClamp: 1,
@@ -82,7 +82,7 @@ function b(e) {
     });
   return (0, r.jsx)("div", {
     className: E.kL,
-    children: (0, r.jsx)(o.Checkbox, {
+    children: (0, r.jsx)(s.Checkbox, {
       checked: b,
       disabled: v,
       onChange: O,

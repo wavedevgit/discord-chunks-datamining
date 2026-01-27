@@ -15,7 +15,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk397927 = require("./397927.js"),
   Chunk798233 = require("./798233.js");
 let l = () => (0, r.jsx)("hr", {
-    className: o.ts
+    className: s.ts
   }),
   c = e => {
     let {
@@ -25,13 +25,13 @@ let l = () => (0, r.jsx)("hr", {
       className: c
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l, {}), (0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(l, {}), (0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
-        className: o.cW,
+        className: s.cW,
         children: t
       }), (0, r.jsx)("div", {
-        className: a()(o.kL, c, {
-          [o.YG]: "vertical" === i
+        className: a()(s.kL, c, {
+          [s.YG]: "vertical" === i
         }),
         children: n
       })]
@@ -42,15 +42,15 @@ let l = () => (0, r.jsx)("hr", {
       children: t
     } = e;
     return (0, r.jsx)("div", {
-      className: o.uW,
+      className: s.uW,
       children: t
     })
   },
   d = e => (0, r.jsx)("div", {
-    className: o.wO,
+    className: s.wO,
     children: e.children
   }),
   f = e => (0, r.jsx)("fieldset", {
-    className: o.lI,
+    className: s.lI,
     children: e.children
   })

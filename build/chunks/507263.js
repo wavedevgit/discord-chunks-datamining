@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk73153 = require("./73153.js"),
   Chunk426620 = require("./426620.js"),
   Chunk142120 = require("./142120.js");
-let s = [];
+let o = [];
 
-function o() {
+function s() {
   return null != i.A.getType()
 }
 
 function l() {
-  o() || (s.forEach(e => c(e)), s = [])
+  s() || (o.forEach(e => c(e)), o = [])
 }
 
 function c(e) {
@@ -22,6 +22,6 @@ function c(e) {
 }
 
 function u(e) {
-  a.A.isConnectedOrOverlay() && !o() ? c(e) : s.push(e)
+  a.A.isConnectedOrOverlay() && !s() ? c(e) : o.push(e)
 }
 Chunk73153.h.subscribe("CONNECTION_OPEN", l), Chunk73153.h.subscribe("CONNECTION_RESUMED", l), Chunk73153.h.subscribe("NUF_COMPLETE", l)

@@ -6,7 +6,7 @@ require.d(exports, {
   W$: () => R,
   Xq: () => D,
   Yi: () => b,
-  Zr: () => x,
+  Zr: () => L,
   co: () => N,
   r8: () => T
 });
@@ -35,7 +35,7 @@ let b = (0, Chunk64700.createContext)(null),
     [e, t] = (0, i.JT)(e, t, b);
     let {
       locale: n
-    } = (0, o.Y)(), d = (0, g.T)({
+    } = (0, s.Y)(), d = (0, g.T)({
       ...e,
       locale: n,
       createCalendar: e.createCalendar || h.d
@@ -77,7 +77,7 @@ let b = (0, Chunk64700.createContext)(null),
         }],
         [v, d],
         [b, e],
-        [s.h, {
+        [o.h, {
           slots: {
             errorMessage: m
           }
@@ -94,13 +94,13 @@ let b = (0, Chunk64700.createContext)(null),
   T = (0, Chunk64700.forwardRef)(function(e, t) {
     var n, r;
     let a = (0, y.useContext)(v),
-      s = (0, y.useContext)(A),
-      o = (0, i.CC)(b),
+      o = (0, y.useContext)(A),
+      s = (0, i.CC)(b),
       l = (0, i.CC)(O),
-      u = null != a ? a : s,
+      u = null != a ? a : o,
       f = u.visibleRange.start;
     e.offset && (f = f.add(e.offset));
-    let p = null != (n = null == o ? true : o.firstDayOfWeek) ? n : null == l ? true : l.firstDayOfWeek,
+    let p = null != (n = null == s ? true : s.firstDayOfWeek) ? n : null == l ? true : l.firstDayOfWeek,
       {
         gridProps: _,
         headerProps: h,
@@ -138,16 +138,16 @@ function C(e, t) {
     className: i
   } = e, {
     headerProps: a,
-    weekDays: s
-  } = (0, y.useContext)(S), o = (0, E.$)(e, {
+    weekDays: o
+  } = (0, y.useContext)(S), s = (0, E.$)(e, {
     global: true
   });
   return y.createElement("thead", {
-    ...(0, c.v)(o, a),
+    ...(0, c.v)(s, a),
     ref: t,
     style: r,
     className: i || "react-aria-CalendarGridHeader"
-  }, y.createElement("tr", null, s.map((e, t) => y.cloneElement(n(e), {
+  }, y.createElement("tr", null, o.map((e, t) => y.cloneElement(n(e), {
     key: t
   }))))
 }
@@ -175,7 +175,7 @@ function P(e, t) {
     children: n,
     style: r,
     className: i
-  } = e, a = (0, y.useContext)(v), s = (0, y.useContext)(A), o = null != a ? a : s, {
+  } = e, a = (0, y.useContext)(v), o = (0, y.useContext)(A), s = null != a ? a : o, {
     startDate: l,
     weeksInMonth: c
   } = (0, y.useContext)(S), u = (0, E.$)(e, {
@@ -188,28 +188,28 @@ function P(e, t) {
     className: i || "react-aria-CalendarGridBody"
   }, [...Array(c).keys()].map(e => y.createElement("tr", {
     key: e
-  }, o.getDatesInWeek(e, l).map((e, t) => e ? y.cloneElement(n(e), {
+  }, s.getDatesInWeek(e, l).map((e, t) => e ? y.cloneElement(n(e), {
     key: t
   }) : y.createElement("td", {
     key: t
   })))))
 }
 let D = (0, Chunk64700.forwardRef)(P),
-  x = (0, Chunk64700.forwardRef)(function({
+  L = (0, Chunk64700.forwardRef)(function({
     date: e,
     ...t
   }, n) {
     var r;
     let a = (0, y.useContext)(v),
-      s = (0, y.useContext)(A),
-      o = null != a ? a : s,
+      o = (0, y.useContext)(A),
+      s = null != a ? a : o,
       {
         startDate: l
       } = null != (r = (0, y.useContext)(S)) ? r : {
-        startDate: o.visibleRange.start
+        startDate: s.visibleRange.start
       },
       u = !(0, m.tF)(l, e),
-      d = (0, m.cK)(e, o.timeZone),
+      d = (0, m.cK)(e, s.timeZone),
       h = (0, y.useRef)(null),
       {
         cellProps: g,
@@ -218,7 +218,7 @@ let D = (0, Chunk64700.forwardRef)(P),
       } = (0, f.E)({
         date: e,
         isOutsideMonth: u
-      }, o, h),
+      }, s, h),
       {
         hoverProps: I,
         isHovered: T
@@ -233,7 +233,7 @@ let D = (0, Chunk64700.forwardRef)(P),
     N && (N = O.isFocused);
     let w = false,
       R = false;
-    "highlightedRange" in o && o.highlightedRange && (w = (0, m.ro)(e, o.highlightedRange.start), R = (0, m.ro)(e, o.highlightedRange.end));
+    "highlightedRange" in s && s.highlightedRange && (w = (0, m.ro)(e, s.highlightedRange.start), R = (0, m.ro)(e, s.highlightedRange.end));
     let P = (0, i.Sl)({
         ...t,
         defaultChildren: O.formattedDate,
@@ -264,14 +264,14 @@ let D = (0, Chunk64700.forwardRef)(P),
         "data-invalid": O.isInvalid || true,
         "data-today": d || true
       },
-      x = (0, E.$)(t, {
+      L = (0, E.$)(t, {
         global: true
       });
     return y.createElement("td", {
       ...g,
       ref: n
     }, y.createElement("div", {
-      ...(0, c.v)(x, b, C, I, D, P),
+      ...(0, c.v)(L, b, C, I, D, P),
       ref: h
     }))
   })

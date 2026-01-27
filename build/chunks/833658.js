@@ -15,9 +15,9 @@ var Chunk267768 = require("./267768.js"),
 module.exports = function(e, t, n) {
   if (!p(e)) throw new a("Assertion failed: O must be an Object");
   if (!c(t)) throw new a("Assertion failed: P must be a Property Key");
-  if (!s(n)) throw new a("Assertion failed: Desc must be a Property Descriptor");
+  if (!o(n)) throw new a("Assertion failed: Desc must be a Property Descriptor");
   if (!r) {
-    if (o(n)) throw new i("This environment does not support accessor property descriptors.");
+    if (s(n)) throw new i("This environment does not support accessor property descriptors.");
     var _ = !(t in e) && n["[[Writable]]"] && n["[[Enumerable]]"] && n["[[Configurable]]"] && "[[Value]]" in n,
       h = t in e && (!("[[Configurable]]" in n) || n["[[Configurable]]"]) && (!("[[Enumerable]]" in n) || n["[[Enumerable]]"]) && (!("[[Writable]]" in n) || n["[[Writable]]"]) && "[[Value]]" in n;
     if (_ || h) return e[t] = n["[[Value]]"], d(e[t], n["[[Value]]"]);

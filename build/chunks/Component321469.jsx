@@ -13,19 +13,19 @@ function a(e) {
     disabled: t,
     deviceId: n,
     width: a,
-    height: s
+    height: o
   } = e;
   return t ? (0, r.jsx)("div", {
     className: "media-engine-video",
     style: {
       width: a,
-      height: s
+      height: o
     }
   }) : (0, r.jsx)(i.A, {
     streamId: n,
     style: {
       width: a,
-      height: s
+      height: o
     }
   })
 }

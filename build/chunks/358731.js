@@ -22,7 +22,7 @@ function d(e) {
     mode: n = "DEFAULT"
   } = e, {
     zoomed: r
-  } = (0, l.Q)(), i = (0, s.bG)([o.A], () => o.A.keyboardModeEnabled);
+  } = (0, l.Q)(), i = (0, o.bG)([s.A], () => s.A.keyboardModeEnabled);
   return t(a()(c.E3, {
     [c.R]: r && !i && "PINNED" !== n,
     [c.rB]: "FOCUS_SENSITIVE" === n

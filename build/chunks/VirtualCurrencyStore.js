@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends(r = Chunk311907.Ay.Store) {
+class s extends(r = Chunk311907.Ay.Store) {
   get redeemError() {
     return this._redeemVirtualCurrencyError
   }
@@ -115,8 +115,8 @@ class o extends(r = Chunk311907.Ay.Store) {
       VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY: e => {
         this.setBalancePillOverlay(e.balancePillOverlay)
       }
-    }), s(this, "_entitlements", null), s(this, "_redeemingSkuId", null), s(this, "_isRedeemingVirtualCurrency", false), s(this, "_redeemVirtualCurrencyError", null), s(this, "_balance", null), s(this, "_fetchBalanceError", null), s(this, "_isFetchingBalance", false), s(this, "_onboardingModalOpenedPrior", false), s(this, "_balancePillOverlay", false)
+    }), o(this, "_entitlements", null), o(this, "_redeemingSkuId", null), o(this, "_isRedeemingVirtualCurrency", false), o(this, "_redeemVirtualCurrencyError", null), o(this, "_balance", null), o(this, "_fetchBalanceError", null), o(this, "_isFetchingBalance", false), o(this, "_onboardingModalOpenedPrior", false), o(this, "_balancePillOverlay", false)
   }
 }
-s(o, "displayName", "VirtualCurrencyStore");
-let l = new o
+o(s, "displayName", "VirtualCurrencyStore");
+let l = new s

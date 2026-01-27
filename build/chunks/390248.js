@@ -6,9 +6,9 @@ require.d(exports, {
   SW: () => E,
   Td: () => T,
   VL: () => b,
-  Wi: () => x,
+  Wi: () => L,
   _R: () => P,
-  aY: () => L,
+  aY: () => x,
   bz: () => I,
   gm: () => v,
   hK: () => R,
@@ -68,7 +68,7 @@ var b = function(e) {
 
 function O(e, t) {
   let n = Math.min(Math.floor((Date.now() - e) / 1e3), 3);
-  s.A.increment({
+  o.A.increment({
     name: i.K.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING,
     tags: ["timingBucket:".concat(n), "source:".concat(t), "metricVersion:".concat(m)]
   })
@@ -77,25 +77,25 @@ function O(e, t) {
 function v(e) {
   var t, n, r, a;
   let {
-    channelId: o,
+    channelId: s,
     messageId: c,
     attachmentIds: p,
     embedIds: _
   } = e;
-  if (null == o || null == c || (null != (t = null == p ? true : p.length) ? t : 0) === 0 && (null != (n = null == _ ? true : _.length) ? n : 0) === 0) return;
-  let g = u.A.getChannel(o);
+  if (null == s || null == c || (null != (t = null == p ? true : p.length) ? t : 0) === 0 && (null != (n = null == _ ? true : _.length) ? n : 0) === 0) return;
+  let g = u.A.getChannel(s);
   d.default.track(h.HAw.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, {
-    channel_id: o,
+    channel_id: s,
     guild_id: null == g ? true : g.guild_id,
     message_id: c,
     embed_ids: _,
     user_is_underage: (0, l.L)(),
     scan_timeout_duration: f.MX,
     attachment_ids_v2: p
-  }), s.A.increment({
+  }), o.A.increment({
     name: i.K.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT,
     tags: ["metricVersion:".concat(m)]
-  }), s.A.distribution({
+  }), o.A.distribution({
     name: i.K.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION
   }, (null != (r = null == p ? true : p.length) ? r : 0) + (null != (a = null == _ ? true : _.length) ? a : 0))
 }
@@ -106,7 +106,7 @@ function A(e) {
     numOfAttachments: n,
     numOfAttachmentsPendingScan: r,
     numOfEmbeds: a,
-    numOfEmbedsPendingScan: o
+    numOfEmbedsPendingScan: s
   } = e;
   if (null == t) return;
   let l = u.A.getChannel(t);
@@ -116,10 +116,10 @@ function A(e) {
     num_of_attachments: n,
     num_of_attachments_pending_scan: r,
     num_of_embeds: a,
-    num_of_embeds_pending_scan: o
+    num_of_embeds_pending_scan: s
   });
-  let c = r + o;
-  c > 0 && s.A.distribution({
+  let c = r + s;
+  c > 0 && o.A.distribution({
     name: i.K.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2
   }, c)
 }
@@ -131,12 +131,12 @@ function I(e) {
     numOfAttachments: r,
     numOfSelfHarmAttachments: i,
     numOfEmbeds: a,
-    numOfGoreAttachments: s,
-    numOfExplicitAttachments: o,
+    numOfGoreAttachments: o,
+    numOfExplicitAttachments: s,
     numOfSelfHarmEmbeds: l,
     numOfGoreEmbeds: c,
     numOfExplicitEmbeds: f
-  } = e, p = o > 0 || f > 0, _ = s > 0 || c > 0, m = i > 0 || l > 0;
+  } = e, p = s > 0 || f > 0, _ = o > 0 || c > 0, m = i > 0 || l > 0;
   if (null == n || null == t || !p && !_ && !m) return;
   let g = u.A.getChannel(n);
   d.default.track(h.HAw.REDACTABLE_MESSAGE_LOADED, {
@@ -145,8 +145,8 @@ function I(e) {
     channel_type: null == g ? true : g.type,
     guild_id: null == g ? true : g.guild_id,
     num_of_attachments: r,
-    num_of_gore_attachments: s,
-    num_of_explicit_attachments: o,
+    num_of_gore_attachments: o,
+    num_of_explicit_attachments: s,
     num_of_self_harm_attachments: i,
     num_of_embeds: a,
     num_of_gore_embeds: c,
@@ -165,19 +165,19 @@ function S(e) {
     numOfAttachments: r,
     numOfExplicitAttachments: i,
     numOfEmbeds: a,
-    numOfExplicitEmbeds: s
+    numOfExplicitEmbeds: o
   } = e;
   if (null == n) return;
-  let o = u.A.getChannel(n);
+  let s = u.A.getChannel(n);
   d.default.track(h.HAw.EXPLICIT_MEDIA_RETROACTIVE_SCAN_COMPLETE, {
     message_id: t,
     channel_id: n,
-    channel_type: null == o ? true : o.type,
-    guild_id: null == o ? true : o.guild_id,
+    channel_type: null == s ? true : s.type,
+    guild_id: null == s ? true : s.guild_id,
     num_of_attachments: r,
     num_of_explicit_attachments: i,
     num_of_embeds: a,
-    num_of_explicit_embeds: s
+    num_of_explicit_embeds: o
   })
 }
 
@@ -222,7 +222,7 @@ function N(e) {
 let w = (e, t) => null != e && null != t && (e <= _._L || t <= _.jd);
 
 function R() {
-  let e = (0, o.d6)(r.t.SENSITIVE_CONTENT_SHOW_SETTING),
+  let e = (0, s.d6)(r.t.SENSITIVE_CONTENT_SHOW_SETTING),
     t = (0, c.o)("explicit_media_redaction_utils"),
     n = e || t,
     i = (0, a.p9)();
@@ -230,7 +230,7 @@ function R() {
 }
 
 function P() {
-  let e = (0, o.aX)(r.t.SENSITIVE_CONTENT_SHOW_SETTING),
+  let e = (0, s.aX)(r.t.SENSITIVE_CONTENT_SHOW_SETTING),
     t = (0, c.j)("explicit_media_redaction_utils"),
     n = e || t,
     i = (0, a.i2)();
@@ -241,7 +241,7 @@ function D(e) {
   return !!P() && null != e && p.tY.has(e)
 }
 
-function x(e) {
+function L(e) {
   let {
     obscure: t
   } = e;
@@ -250,7 +250,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   var t;
   return null == (t = e.message_snapshots) ? true : t.some(e => {
     var t, n;

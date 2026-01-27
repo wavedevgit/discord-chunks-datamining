@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk305866 = require("./305866.jsx"),
   Chunk103552 = require("./103552.jsx"),
   Chunk291611 = require("./291611.js");
@@ -86,8 +86,8 @@ function m(e) {
   } = e, b = _(e, ["children", "placeholder", "value", "onChange", "onClose", "className", "multiSelect", "emptyStateText", "emptyStateHeader", "onQueryChange"]), O = i.useCallback(e => {
     u(e), m || null == f || f()
   }, [u, f, m]);
-  return (0, r.jsx)(o.l, {
-    className: s()(c.kL, c.XG, h),
+  return (0, r.jsx)(s.l, {
+    className: o()(c.kL, c.XG, h),
     children: (0, r.jsx)(l.G3, p(d({}, b), {
       value: a,
       multiSelect: m,

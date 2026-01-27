@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 846537, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 846537, original params: e,t,n (module,exports,require) **/
 module.exports = {
   Sn: "enabled_f4f0eb",
   Bw: "attachmentImage_f4f0eb",

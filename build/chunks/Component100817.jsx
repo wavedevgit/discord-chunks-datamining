@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 100817, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 100817, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 });
@@ -11,10 +10,10 @@ var Chunk397927 = require("./397927.js"),
 
 function s() {
   return (0, r.jsx)(i.D0$, {
-    label: a.intl.string(a.t.EPVq00),
+    label: l.intl.string(l.t.EPVq00),
     children: (0, r.jsx)(i.po8, {
       messageType: i.YCn.WARNING,
-      children: a.intl.string(a.t.uggF7o)
+      children: l.intl.string(l.t.uggF7o)
     })
   })
 }

@@ -20,13 +20,13 @@ class c {
   }
   getMaxFileSize(e) {
     let t = a.A.getBasicChannel(e);
-    return s.o2(null == t ? true : t.guild_id)
+    return o.o2(null == t ? true : t.guild_id)
   }
   getMaxAttachmentsCount() {
     return l.XgB
   }
   getMaxTotalAttachmentSize() {
-    return o.eM
+    return s.eM
   }
   get shouldReactNativeCompressUploads() {
     returntrue

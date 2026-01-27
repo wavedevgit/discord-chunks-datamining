@@ -74,7 +74,7 @@ let _ = 1,
   g = ["letter-spacing", "line-height", "padding-top", "padding-bottom", "font-family", "font-weight", "font-size", "text-transform", "width", "padding-left", "padding-right", "border-width", "box-sizing"],
   E = Chunk64700.forwardRef(function(e, t) {
     let [n, ...r] = [e, t], {
-      style: s,
+      style: o,
       autoFocus: l = false,
       disabled: u = false,
       autoCorrect: p = "off"
@@ -83,10 +83,10 @@ let _ = 1,
     }, [E, b] = a.useState(() => y(m.current, _.rows, _.value));
     return a.useLayoutEffect(() => {
       b(y(m.current, _.rows, _.value))
-    }, [_.rows, _.value]), (0, i.jsx)(o.vN3, {
+    }, [_.rows, _.value]), (0, i.jsx)(s.vN3, {
       children: (0, i.jsx)("textarea", d(c({}, _), {
         ref: g,
-        style: d(c({}, s), {
+        style: d(c({}, o), {
           height: E
         }),
         autoFocus: l,
@@ -102,31 +102,31 @@ function y(e, t, n) {
   let {
     paddingSize: i,
     borderSize: a,
-    boxSizing: s,
-    sizingStyle: o
+    boxSizing: o,
+    sizingStyle: s
   } = O(e), {
     minHeight: l,
     maxHeight: c
-  } = b(o, i, a, s);
-  r.setAttribute("style", o + ";" + m), r.value = n, null != t ? r.setAttribute("rows", "".concat(t)) : r.removeAttribute("rows");
+  } = b(s, i, a, o);
+  r.setAttribute("style", s + ";" + m), r.value = n, null != t ? r.setAttribute("rows", "".concat(t)) : r.removeAttribute("rows");
   let u = r.scrollHeight;
-  return "border-box" === s ? u += a : "content-box" === s && (u -= i), u = Math.max(l, Math.min(u, c))
+  return "border-box" === o ? u += a : "content-box" === o && (u -= i), u = Math.max(l, Math.min(u, c))
 }
 
 function b(e, t, n, i) {
   null == r && null != document.body && (r = document.createElement("textarea"), document.body.appendChild(r)), r.setAttribute("style", e + ";" + m), r.setAttribute("rows", "".concat(_)), r.value = "";
   let a = r.scrollHeight;
   r.setAttribute("rows", "".concat(h)), r.value = "";
-  let s = r.scrollHeight;
-  return "border-box" === i ? (a += n, s += n) : "content-box" === i && (a -= t, s -= t), {
+  let o = r.scrollHeight;
+  return "border-box" === i ? (a += n, o += n) : "content-box" === i && (a -= t, o -= t), {
     minHeight: a,
-    maxHeight: s
+    maxHeight: o
   }
 }
 
 function O(e) {
   let t = window.getComputedStyle(e),
-    n = (0, s.G)(t.getPropertyValue("box-sizing"), t.getPropertyValue("-moz-box-sizing"), t.getPropertyValue("-webkit-box-sizing")),
+    n = (0, o.G)(t.getPropertyValue("box-sizing"), t.getPropertyValue("-moz-box-sizing"), t.getPropertyValue("-webkit-box-sizing")),
     r = parseFloat(t.getPropertyValue("padding-bottom")) + parseFloat(t.getPropertyValue("padding-top")),
     i = parseFloat(t.getPropertyValue("border-bottom-width")) + parseFloat(t.getPropertyValue("border-top-width"));
   return {

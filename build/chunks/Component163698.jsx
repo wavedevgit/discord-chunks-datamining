@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 163698, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  A: () => m
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -31,7 +30,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function _(e) {
   let {
     setSlide: t,
     transitionTo: i
@@ -42,10 +41,10 @@ function m(e) {
       className: s()(p.SX, p.Ot)
     }), (0, r.jsx)(a.hE, {
       className: p.QB,
-      children: d.intl.string(d.t["8UcxI6"])
+      children: u.intl.string(u.t["8UcxI6"])
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
-      children: d.intl.string(d.t.O37hMl)
+      children: u.intl.string(u.t.O37hMl)
     }), (0, r.jsxs)(a.eB, {
       className: s()(p.SX, p.QX),
       children: [(0, r.jsx)(l.Text, {
@@ -53,15 +52,15 @@ function m(e) {
       }), (0, r.jsxs)("ul", {
         className: h.qI,
         children: [(0, r.jsx)(g, {
-          children: d.intl.string(d.t.Gj1Zry)
+          children: u.intl.string(u.t.Gj1Zry)
         }), (0, r.jsx)(o.A, {}), (0, r.jsx)(g, {
-          children: d.intl.string(d.t["8C6t3B"])
+          children: u.intl.string(u.t["8C6t3B"])
         }), (0, r.jsx)(o.A, {}), (0, r.jsx)(g, {
-          children: d.intl.string(d.t.mToZMA)
+          children: u.intl.string(u.t.mToZMA)
         }), (0, r.jsx)(o.A, {}), (0, r.jsx)(g, {
-          children: d.intl.string(d.t.TPEvkc)
+          children: u.intl.string(u.t.TPEvkc)
         }), (0, r.jsx)(o.A, {}), (0, r.jsx)(g, {
-          children: d.intl.string(d.t.H8Y1Ln)
+          children: u.intl.string(u.t.H8Y1Ln)
         })]
       })]
     }), (0, r.jsxs)(l.ButtonGroup, {
@@ -69,12 +68,12 @@ function m(e) {
       fullWidth: true,
       className: h.UD,
       children: [(0, r.jsx)(l.Button, {
-        text: d.intl.string(d.t.GgCRqR),
+        text: u.intl.string(u.t.GgCRqR),
         onClick: () => t(c.k.PASSWORD)
       }), (0, r.jsx)(l.Button, {
-        text: d.intl.string(d.t["B/yHcQ"]),
+        text: u.intl.string(u.t["B/yHcQ"]),
         variant: "secondary",
-        onClick: () => i(u.BVt.LOGIN, {
+        onClick: () => i(d.BVt.LOGIN, {
           source: "account_revert"
         })
       })]

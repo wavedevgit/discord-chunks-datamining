@@ -70,7 +70,7 @@ let y = "game_console_alert_modal",
         let n = () => {
             (0, l.Dr)(a.M.CONSOLE_PTT_DISABLE_ALERT), e()
           },
-          o = e => (0, r.jsx)(i.Modal, E(m({}, e), {
+          s = e => (0, r.jsx)(i.Modal, E(m({}, e), {
             title: t,
             subtitle: _.intl.string(_.t.bL21zs),
             actions: [{
@@ -78,7 +78,7 @@ let y = "game_console_alert_modal",
               onClick: n
             }]
           }));
-        (0, s.hasModalOpen)(b) ? (0, s.updateModal)(b, e => o(e)) : (0, s.openModalLazy)(async () => e => o(e), {
+        (0, o.hasModalOpen)(b) ? (0, o.updateModal)(b, e => s(e)) : (0, o.openModalLazy)(async () => e => s(e), {
           modalKey: b
         })
       })
@@ -92,11 +92,11 @@ let y = "game_console_alert_modal",
       } = e, c = (0, r.jsx)(d.P, {
         body: n,
         errorCodeMessage: a,
-        dismissCallback: () => (0, s.closeModal)(y)
+        dismissCallback: () => (0, o.closeModal)(y)
       });
 
       function h() {
-        null != l && ((0, o.A)({
+        null != l && ((0, s.A)({
           platformType: l
         }), u.default.track(p.HAw.ACCOUNT_LINK_STEP, {
           previous_step: f.yM,
@@ -112,7 +112,7 @@ let y = "game_console_alert_modal",
         }],
         children: c
       }));
-      (0, s.hasModalOpen)(y) ? (0, s.updateModal)(y, e => g(e)) : (0, s.openModalLazy)(async () => e => g(e), {
+      (0, o.hasModalOpen)(y) ? (0, o.updateModal)(y, e => g(e)) : (0, o.openModalLazy)(async () => e => g(e), {
         modalKey: y
       })
     }

@@ -6,12 +6,12 @@ require.d(exports, {
   KR: () => r,
   Vw: () => i,
   dU: () => l,
-  l6: () => s,
-  q2: () => o
+  l6: () => o,
+  q2: () => s
 });
 var r = "dnd-core/INIT_COORDS",
   i = "dnd-core/BEGIN_DRAG",
   a = "dnd-core/PUBLISH_DRAG_SOURCE",
-  s = "dnd-core/HOVER",
-  o = "dnd-core/DROP",
+  o = "dnd-core/HOVER",
+  s = "dnd-core/DROP",
   l = "dnd-core/END_DRAG"

@@ -40,15 +40,15 @@ function f(e) {
 function p(e, t) {
   let n = l.A.getChannel(e);
   if (null == n) return;
-  let r = (0, o.j)(n);
+  let r = (0, s.j)(n);
   a.A.preload(n.guild_id, n.id), (0, c.pX)(u.BVt.CHANNEL(r, n.id), f({
     openChannel: true
-  }, t)), (null == t ? true : t.openTextInVoiceIfVoiceChannel) && n.isGuildVocal() && s.A.updateChatOpen(n.id, true)
+  }, t)), (null == t ? true : t.openTextInVoiceIfVoiceChannel) && n.isGuildVocal() && o.A.updateChatOpen(n.id, true)
 }
 
 function _(e, t) {
   i()(null != e.parent_id, "Thread must have a parent ID.");
-  let n = (0, o.j)(e);
+  let n = (0, s.j)(e);
   (0, c.pX)(u.BVt.CHANNEL(n, e.id), f({
     openChannel: true
   }, t))
@@ -57,7 +57,7 @@ function _(e, t) {
 function h(e, t, n) {
   let r = l.A.getChannel(e);
   if (null == r) return;
-  let i = (0, o.j)(r);
+  let i = (0, s.j)(r);
   (0, c.pX)(u.BVt.CHANNEL(i, r.id, t), f({
     openChannel: true
   }, n))

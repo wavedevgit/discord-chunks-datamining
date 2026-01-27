@@ -155,14 +155,14 @@ class g {
       if (t && (e = h(p({}, e), {
           isIncludedInSearchResults: true
         })), n) {
-        let t = (0, o.vn)(a.joinedAt);
+        let t = (0, s.vn)(a.joinedAt);
         e = h(p({}, e), {
           isCurrentGuildMemberByTimestamp: t <= this._members.newMemberTimestamp,
           refreshTimestamp: this.lastRefreshTimestamp
         })
       }
-      let [s, l] = this._rawUpdateMember(a.userId, e);
-      r = s || r, i = l || i
+      let [o, l] = this._rawUpdateMember(a.userId, e);
+      r = o || r, i = l || i
     }
     return r ? this.updatePaginationChunks() : i
   }
@@ -173,8 +173,8 @@ class g {
     for (let r of e) {
       let e = i.Ay.getTrueMember(this.guildId, r.user.id);
       if (null == e) continue;
-      let [a, s] = this._rawUpdateMember(r.user.id, e);
-      t = a || t, n = s || n
+      let [a, o] = this._rawUpdateMember(r.user.id, e);
+      t = a || t, n = o || n
     }
     return t ? this.updatePaginationChunks() : n
   }
@@ -191,10 +191,10 @@ class g {
       [...(0, r.cloneDeep)(this.getMembersByIndex(l.Tu.CURRENT_GUILD_MEMBER)[0]), ...(0, r.cloneDeep)(this.getMembersByIndex(l.Tu.NEW_GUILD_MEMBER)[0])].forEach(t => {
         var n, r, i;
         let a = (0, d.R)(t, e),
-          s = null != (n = null == (r = this._search) ? true : r.isMemberIncludedInSearchResults(t)) && n;
+          o = null != (n = null == (r = this._search) ? true : r.isMemberIncludedInSearchResults(t)) && n;
         null == (i = this._members) || i.updateMember(t, {
           sort: a,
-          isIncludedInSearchResults: s
+          isIncludedInSearchResults: o
         })
       }), t()
     })
@@ -236,10 +236,10 @@ class g {
       user: a.default.getUser(r.userId)
     }) || n;
     this._members.resetNewMemberTimestamp(), this.resetSearchState() && (n = false);
-    let [i, s] = this.updatePaginationState({
+    let [i, o] = this.updatePaginationState({
       currentPage: 1
     }, false);
-    return s && (n = false), n && this.updatePaginationChunks(), true
+    return o && (n = false), n && this.updatePaginationChunks(), true
   }
   getNewMemberTimestamp() {
     return null != this._members && this._initialized ? this._members.newMemberTimestamp : 0

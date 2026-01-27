@@ -41,11 +41,11 @@ class u extends Chunk439372.A {
         channelId: t
       } = e;
       if (null == t) return;
-      let n = s.A.getChannel(t);
+      let n = o.A.getChannel(t);
       null != n && n.isForumLikeChannel() && (this.readStateSnapshots = {}, this.processForumChannel(n.guild_id, t))
     }), c(this, "processForumChannel", (e, t) => {
       let n = i.A.getThreadsForParent(e, t);
-      o.default.keys(n).forEach(e => {
+      s.default.keys(n).forEach(e => {
         let t = (0, l.yg)(e);
         null != t && (this.readStateSnapshots[e] = t)
       })

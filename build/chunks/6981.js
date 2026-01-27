@@ -2,8 +2,8 @@
 /** chunk id: 6981, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J0: () => o,
-  Qh: () => s,
+  J0: () => s,
+  Qh: () => o,
   ST: () => i,
   mZ: () => a,
   uA: () => l
@@ -26,7 +26,7 @@ function a(e, t) {
   })
 }
 
-function s(e) {
+function o(e) {
   let {
     handoffKey: t,
     handoffToken: n,
@@ -42,7 +42,7 @@ function s(e) {
   })
 }
 
-function o() {
+function s() {
   r.h.dispatch({
     type: "BROWSER_HANDOFF_UNAVAILABLE"
   })

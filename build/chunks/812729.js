@@ -3,11 +3,11 @@
 var r = Array.prototype.slice,
   Chunk66529 = require("./66529.js"),
   Chunk295394 = require("./295394.js"),
-  s = module.exports = function(e, t, n) {
+  o = module.exports = function(e, t, n) {
     return n || (n = {}), e === t || (e instanceof Date && t instanceof Date ? e.getTime() === t.getTime() : e && t && ("object" == typeof e || "object" == typeof t) ? c(e, t, n) : n.strict ? e === t : e == t)
   };
 
-function o(e) {
+function s(e) {
   return null == e
 }
 
@@ -17,8 +17,8 @@ function l(e) {
 
 function c(e, t, n) {
   var c, u;
-  if (o(e) || o(t) || e.prototype !== t.prototype) returnfalse;
-  if (a(e)) return !!a(t) && s(e = r.call(e), t = r.call(t), n);
+  if (s(e) || s(t) || e.prototype !== t.prototype) returnfalse;
+  if (a(e)) return !!a(t) && o(e = r.call(e), t = r.call(t), n);
   if (l(e)) {
     if (!l(t) || e.length !== t.length) returnfalse;
     for (c = 0; c < e.length; c++)
@@ -35,6 +35,6 @@ function c(e, t, n) {
   for (d.sort(), f.sort(), c = d.length - 1; c >= 0; c--)
     if (d[c] != f[c]) returnfalse;
   for (c = d.length - 1; c >= 0; c--)
-    if (!s(e[u = d[c]], t[u], n)) returnfalse;
+    if (!o(e[u = d[c]], t[u], n)) returnfalse;
   return typeof e == typeof t
 }

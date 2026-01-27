@@ -10,6 +10,6 @@ function i(e, t) {
   var n;
   let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [r.Ay],
     [a] = i,
-    s = null != t && null != e ? a.getMember(t, e.id) : null;
-  return null != (n = null == s ? true : s.avatarDecoration) ? n : null == e ? true : e.avatarDecoration
+    o = null != t && null != e ? a.getMember(t, e.id) : null;
+  return null != (n = null == o ? true : o.avatarDecoration) ? n : null == e ? true : e.avatarDecoration
 }

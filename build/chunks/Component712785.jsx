@@ -73,7 +73,7 @@ function Z(e) {
   return e
 }
 
-function X(e, t) {
+function Q(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -84,8 +84,8 @@ function X(e, t) {
   return n
 }
 
-function Q(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : X(Object(t)).forEach(function(n) {
+function X(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -96,7 +96,7 @@ function J(e) {
     currentUser: n,
     activity: i,
     application: q,
-    voiceGuild: X,
+    voiceGuild: Q,
     voiceChannel: J,
     className: $,
     onClose: ee,
@@ -105,30 +105,30 @@ function J(e) {
     analyticsLocations: ei
   } = (0, _.Ay)(p.A.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     themeType: ea
-  } = (0, R.E)(), es = (0, E.A)({
+  } = (0, R.E)(), eo = (0, E.A)({
     activity: i,
     user: t
-  }), eo = (0, S.A)({
+  }), es = (0, S.A)({
     display: "live",
     user: t,
     activity: i,
-    entry: es,
+    entry: eo,
     analyticsLocations: ei
   }), el = (0, T.A)({
     userId: t.id,
-    onAction: eo
+    onAction: es
   }), ec = (0, C.A)(i), eu = null != ec.text && "" !== ec.text, {
     largeImage: ed,
     smallImage: ef
-  } = (0, h.XN)(i, q), ep = (0, F.A)({
+  } = (0, h.XN)(i, q), ep = (0, V.A)({
     location: "UserProfileActivityCard",
     user: t,
     currentUser: n,
     activity: i,
     application: q,
-    entry: es,
+    entry: eo,
     onClose: ee
-  }), e_ = () => i.type !== H.$pd.HANG_STATUS || t.id !== n.id || null == J ? null : (0, r.jsx)(o.m, {
+  }), e_ = () => i.type !== H.$pd.HANG_STATUS || t.id !== n.id || null == J ? null : (0, r.jsx)(s.m, {
     text: K.intl.string(K.t.QSOBaq),
     children: (0, r.jsx)(l.mir, {
       size: "xxs"
@@ -156,7 +156,7 @@ function J(e) {
       className: z.mM,
       aspectRatio: e,
       onClick: e => {
-        eo({
+        es({
           action: "PRESS_IMAGE"
         }), ep(e)
       }
@@ -193,13 +193,13 @@ function J(e) {
     id: en
   }), eg = () => {
     if (i.type === H.$pd.HANG_STATUS) return null;
-    if ((0, f.A)(i) && null != X) return (0, r.jsx)(k.A, {
+    if ((0, f.A)(i) && null != Q) return (0, r.jsx)(k.A, {
       variant: "text-xs/normal",
       text: K.intl.formatToPlainString(K.t["hq/Qze"], {
-        guildName: X.name
+        guildName: Q.name
       }),
       onClick: () => {
-        (0, A.u)(X.id), eo({
+        (0, A.u)(Q.id), es({
           action: "OPEN_VOICE_GUILD"
         }), null == ee || ee()
       }
@@ -226,13 +226,13 @@ function J(e) {
       })
     })
   }, eE = () => {
-    var e, t, n, a, s, o, l, c;
+    var e, t, n, a, o, s, l, c;
     if (i.type === H.$pd.WATCHING) return null;
     if ((0, d.A)(i)) return ey();
     if ((0, I.Cy)(i) && (null == (e = i.party) ? true : e.size) != null && (null == (t = i.party) ? true : t.size.length) >= 2) {
       let e = K.intl.formatToPlainString(K.t["JC/3xw"], {
         numSpeakers: null == (a = i.party) ? true : a.size[0],
-        numListeners: (null == (s = i.party) ? true : s.size[1]) - (null == (o = i.party) ? true : o.size[0])
+        numListeners: (null == (o = i.party) ? true : o.size[1]) - (null == (s = i.party) ? true : s.size[0])
       });
       return (0, r.jsx)(k.A, {
         variant: "text-xs/normal",
@@ -302,48 +302,48 @@ function J(e) {
   }) : (0, r.jsxs)(l.DUT, {
     className: z.sd,
     onClick: e => {
-      eo({
+      es({
         action: "PRESS_TEXT"
       }), ep(e)
     },
     children: [em(), eg(), eE()]
-  }), ev = () => null == X || null == J ? null : (0, r.jsx)(U.A, {
+  }), ev = () => null == Q || null == J ? null : (0, r.jsx)(U.A, {
     user: t,
-    guild: X,
+    guild: Q,
     channel: J,
-    onAction: eo,
+    onAction: es,
     onClose: ee
   }), eA = () => (0, r.jsx)(D.A, {
     containerClassName: z.o1,
     activity: i,
     user: t,
-    onAction: eo,
+    onAction: es,
     onClose: ee,
     application: q
   });
   return (0, r.jsx)(_.f5, {
     value: ei,
-    children: (0, r.jsxs)(j.A, {
+    children: (0, r.jsxs)(M.A, {
       ref: el,
       className: a()(z.Nr, $),
-      onAction: eo,
+      onAction: es,
       onClose: ee,
       "aria-labelledby": eu ? "".concat(er, " ").concat(en) : en,
-      children: [(0, r.jsx)(M.A, Q(Z({
+      children: [(0, r.jsx)(j.A, X(Z({
         textId: er,
         tags: e_()
       }, ec), {
-        contextMenu: (0, r.jsx)(V.A, {
+        contextMenu: (0, r.jsx)(F.A, {
           display: "live",
           user: t,
           activity: i,
-          entry: es,
+          entry: eo,
           onClose: ee,
           appContext: et
         })
       })), (0, r.jsx)(v.A, {
         applicationId: null == q ? true : q.id,
-        questContent: s.u.USER_PROFILE_ACTIVITY,
+        questContent: o.u.USER_PROFILE_ACTIVITY,
         children: e => (0, r.jsxs)("div", {
           className: z.rf,
           ref: e,
@@ -351,7 +351,7 @@ function J(e) {
             className: z.Qs,
             children: [!t.bot && eh(), (0, r.jsxs)("div", {
               className: z.zH,
-              children: [eO(), !t.bot && (0, r.jsx)(x.A, {
+              children: [eO(), !t.bot && (0, r.jsx)(L.A, {
                 user: t,
                 activity: i,
                 className: z.jp
@@ -365,7 +365,7 @@ function J(e) {
           userId: t.id,
           activityApplication: q,
           onClickViewMore: e => {
-            e.stopPropagation(), eo({
+            e.stopPropagation(), es({
               action: "PRESS_APPLICATION_WIDGET_PREVIEW_VIEW_MORE"
             }), null == ee || ee(), (0, w.openUserProfileModal)({
               userId: t.id,
@@ -373,9 +373,9 @@ function J(e) {
             })
           }
         })]
-      }), (0, r.jsx)(L.A, {
+      }), (0, r.jsx)(x.A, {
         applicationId: null == q ? true : q.id,
-        onAction: eo,
+        onAction: es,
         onClose: ee,
         activity: i
       })]

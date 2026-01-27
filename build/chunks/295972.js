@@ -22,7 +22,7 @@ async function l(e) {
 }
 async function c(e) {
   return (await r.Bo.post({
-    url: o.Rsh.VERIFY_AGE,
+    url: s.Rsh.VERIFY_AGE,
     body: {
       method: e
     },
@@ -33,9 +33,9 @@ async function u(e) {
   let {
     classificationId: t,
     method: n
-  } = e, i = s.default.getSuspendedUserToken();
+  } = e, i = o.default.getSuspendedUserToken();
   return (await r.Bo.post({
-    url: o.Rsh.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION,
+    url: s.Rsh.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION,
     body: {
       token: i,
       from_classification_id: t,
@@ -62,15 +62,15 @@ async function d() {
 
 function f() {
   return r.Bo.get({
-    url: o.Rsh.AGE_VERIFICATION_METHODS,
+    url: s.Rsh.AGE_VERIFICATION_METHODS,
     rejectWithError: true
   })
 }
 
 function p() {
-  let e = s.default.getSuspendedUserToken();
+  let e = o.default.getSuspendedUserToken();
   return r.Bo.post({
-    url: o.Rsh.SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS,
+    url: s.Rsh.SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS,
     rejectWithError: true,
     body: {
       token: e

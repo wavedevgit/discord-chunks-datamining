@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk349288 = require("./349288.jsx"),
@@ -102,16 +102,16 @@ function O(e) {
     colorStrings: c,
     roleStyle: "username",
     animateGradient: E || v || (null == O ? true : O.animate)
-  }), x = (0, f.CR)(n), L = {
-    className: s()(_.UU, g, b, {
+  }), L = (0, f.CR)(n), x = {
+    className: o()(_.UU, g, b, {
       [_.Xh]: T,
       [P]: w
     }),
-    children: x
-  }, j = {
-    className: s()(_.lD, D, b),
+    children: L
+  }, M = {
+    className: o()(_.lD, D, b),
     children: n
-  }, M = C ? (0, r.jsx)(p.W, {
+  }, j = C ? (0, r.jsx)(p.W, {
     color: a,
     colors: N ? c : null,
     name: l,
@@ -119,27 +119,27 @@ function O(e) {
     hoverOverride: E || v || (null == O ? true : O.animate)
   }) : null;
   return (0, r.jsxs)("span", {
-    className: s()(h, _.kL),
+    className: o()(h, _.kL),
     onMouseEnter: I,
     onMouseLeave: S,
-    children: ["left" === d && M, (0, r.jsxs)("span", {
+    children: ["left" === d && j, (0, r.jsxs)("span", {
       className: _.VW,
       style: m({
         color: T && !N && null != a ? a : true
       }, w ? R : {}),
-      children: [null != y ? (0, r.jsx)(o.EYj, m({
+      children: [null != y ? (0, r.jsx)(s.EYj, m({
         tag: "span",
         color: "currentColor",
         variant: y
-      }, L)) : (0, r.jsx)("span", m({}, L)), w && (null != y ? (0, r.jsx)(o.EYj, m({
+      }, x)) : (0, r.jsx)("span", m({}, x)), w && (null != y ? (0, r.jsx)(s.EYj, m({
         tag: "span",
         color: "currentColor",
         "aria-hidden": true,
         variant: y
-      }, j)) : (0, r.jsx)("span", m({
+      }, M)) : (0, r.jsx)("span", m({
         "aria-hidden": true
-      }, j)))]
-    }), "right" === d && M]
+      }, M)))]
+    }), "right" === d && j]
   })
 }
 
@@ -149,8 +149,8 @@ function v(e) {
     colorString: n,
     roleName: i,
     dotAlignment: a,
-    className: s,
-    colorStrings: o,
+    className: o,
+    colorStrings: s,
     animateRoleGradient: u,
     ref: f
   } = e, p = y(e, ["name", "colorString", "roleName", "dotAlignment", "className", "colorStrings", "animateRoleGradient", "ref"]), _ = (0, l.bG)([d.A], () => d.A.roleStyle), h = "username" === _, g = (0, r.jsx)(O, {
@@ -159,8 +159,8 @@ function v(e) {
     colorString: n,
     roleName: i,
     dotAlignment: a,
-    className: s,
-    colorStrings: o,
+    className: o,
+    colorStrings: s,
     animateRoleGradient: u
   }), b = h && null != n ? {
     color: n

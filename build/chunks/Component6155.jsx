@@ -66,19 +66,19 @@ function I(e) {
     closePopout: t,
     idle: n,
     pipWindows: i,
-    voiceChannelId: s,
+    voiceChannelId: o,
     onSelect: h
   } = e;
   n && t();
   let y = (0, a.bG)([u.Ay], () => u.Ay.getCurrentEmbeddedActivity()),
     b = (0, a.bG)([_.A], () => _.A.pipWindow),
-    O = (0, a.bG)([f.A], () => f.A.getSelectedParticipant(s)),
-    v = (0, a.bG)([f.A], () => f.A.getStreamParticipants(s));
+    O = (0, a.bG)([f.A], () => f.A.getSelectedParticipant(o)),
+    v = (0, a.bG)([f.A], () => f.A.getStreamParticipants(o));
 
   function A(e) {
     (null == b ? true : b.id) !== e.pipWindow.id && (0, c.mf)(e.pipWindow.id);
     let t = e.participant;
-    null != t && t.type !== g.lp.ACTIVITY && l.A.selectParticipant(s, t.id)
+    null != t && t.type !== g.lp.ACTIVITY && l.A.selectParticipant(o, t.id)
   }
 
   function I(e) {
@@ -113,14 +113,14 @@ function I(e) {
     let n = e.pipWindow.id,
       i = null == (t = e.participant) ? true : t.id,
       a = I(e),
-      s = "".concat(n).concat(null != i ? i : "");
-    return (0, r.jsx)(o.Drp, {
-      id: s,
+      o = "".concat(n).concat(null != i ? i : "");
+    return (0, r.jsx)(s.Drp, {
+      id: o,
       label: a,
       action: () => A(e)
-    }, s)
+    }, o)
   }
-  return (0, r.jsx)(o.W1t, {
+  return (0, r.jsx)(s.W1t, {
     navId: "pip-menu",
     "aria-label": "switch PIP",
     onClose: t,
@@ -136,7 +136,7 @@ let S = function(e) {
     var n;
     return e.ownerId !== (null == (n = h.default.getCurrentUser()) ? true : n.id) && e.channelId === t
   }), d = 1 === c.length && c[0].component === m.o1q.ACTIVITY || 0 === u.length, f = 1 === c.length && u.length <= 1;
-  return d || f ? null : (0, r.jsx)(o.YNO, {
+  return d || f ? null : (0, r.jsx)(s.YNO, {
     targetElementRef: l,
     position: "bottom",
     renderPopout: e => (0, r.jsx)(I, O({
@@ -144,13 +144,13 @@ let S = function(e) {
       pipWindows: c,
       idle: n
     }, e)),
-    children: e => (0, r.jsx)(o.DUT, A(O({
+    children: e => (0, r.jsx)(s.DUT, A(O({
       className: y.ro
     }, e), {
       innerRef: l,
-      children: (0, r.jsx)(o.FHP, {
+      children: (0, r.jsx)(s.FHP, {
         size: "md",
-        color: s.A.unsafe_rawColors.WHITE.css
+        color: o.A.unsafe_rawColors.WHITE.css
       })
     }))
   })

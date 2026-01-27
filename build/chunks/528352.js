@@ -6,7 +6,7 @@ require.d(exports, {
   E9: () => y,
   EB: () => c,
   Pl: () => E,
-  eB: () => s,
+  eB: () => o,
   fp: () => _,
   k8: () => p,
   lT: () => f,
@@ -49,7 +49,7 @@ let a = {
     za: 6,
     "za.": 6
   },
-  s = {
+  o = {
     januari: 1,
     jan: 1,
     "jan.": 1,
@@ -89,7 +89,7 @@ let a = {
     dec: 12,
     "dec.": 12
   },
-  o = {
+  s = {
     een: 1,
     twee: 2,
     drie: 3,
@@ -162,11 +162,11 @@ let a = {
     jr: "year",
     jaren: "year"
   },
-  u = `(?:${(0,Chunk476858.uJ)(o)}|[0-9]+|[0-9]+[\\.,][0-9]+|halve?|half|paar)`;
+  u = `(?:${(0,Chunk476858.uJ)(s)}|[0-9]+|[0-9]+[\\.,][0-9]+|halve?|half|paar)`;
 
 function d(e) {
   let t = e.toLowerCase();
-  return true !== o[t] ? o[t] : "paar" === t ? 2 : "half" === t || t.match(/halve?/) ? .5 : parseFloat(t.replace(",", "."))
+  return true !== s[t] ? s[t] : "paar" === t ? 2 : "half" === t || t.match(/halve?/) ? .5 : parseFloat(t.replace(",", "."))
 }
 let f = `(?:${(0,Chunk476858.uJ)(l)}|[0-9]{1,2}(?:ste|de)?)`;
 

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 815332, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 815332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,16 +13,27 @@ var Chunk627968 = require("./627968.js"),
   Chunk599941 = require("./599941.js"),
   Chunk322092 = require("./322092.jsx"),
   Chunk985018 = require("./985018.jsx");
-let p = "MMM DD, YYYY",
-  _ = e => {
-    let [t, n] = i.useState(false), [r, a] = i.useState(null);
+
+function p(e) {
+  let {
+    groupListingId: t,
+    subscription: n,
+    className: l
+  } = e, {
+    analyticsLocations: p
+  } = (0, c.Ay)(o.A.PENDING_PLAN_CHANGE_NOTICE), {
+    resetRenewalMutation: m,
+    submitting: g,
+    error: A
+  } = (e => {
+    let [t, n] = i.useState(false), [r, l] = i.useState(null);
     return {
       resetRenewalMutation: async t => {
-        n(true), a(null);
+        n(true), l(null);
         try {
-          await (0, o.ZK)(t, e)
+          await (0, a.ZK)(t, e)
         } catch (e) {
-          a(e)
+          l(e)
         } finally {
           n(false)
         }
@@ -31,23 +41,10 @@ let p = "MMM DD, YYYY",
       submitting: t,
       error: r
     }
-  };
-
-function h(e) {
-  let {
-    groupListingId: t,
-    subscription: n,
-    className: a
-  } = e, {
-    analyticsLocations: o
-  } = (0, c.Ay)(l.A.PENDING_PLAN_CHANGE_NOTICE), {
-    resetRenewalMutation: h,
-    submitting: m,
-    error: g
-  } = _(o), E = (0, u.cY)(t, {
+  })(p), f = (0, d.cY)(t, {
     includeSoftDeleted: true
   }), {
-    currentListing: y,
+    currentListing: h,
     nextListing: b
   } = i.useMemo(() => {
     if ((null == n ? true : n.renewalMutations) == null) return {
@@ -57,23 +54,22 @@ function h(e) {
     let e = n.items[0].planId,
       t = n.renewalMutations.items[0].planId;
     return {
-      currentListing: E.find(t => t.subscription_plans[0].id === e),
-      nextListing: E.find(e => e.subscription_plans[0].id === t)
+      currentListing: f.find(t => t.subscription_plans[0].id === e),
+      nextListing: f.find(e => e.subscription_plans[0].id === t)
     }
-  }, [n, E]);
-  if (null == n || null == y || null == b) return null;
-  let O = () => h(n),
-    v = s()(n.currentPeriodEnd).format(p);
-  return (0, r.jsx)(d.A, {
-    message: f.intl.format(f.t.chw89X, {
-      currentListing: y.name,
+  }, [n, f]);
+  if (null == n || null == h || null == b) return null;
+  let E = s()(n.currentPeriodEnd).format("MMM DD, YYYY");
+  return (0, r.jsx)(u.A, {
+    message: _.intl.format(_.t.chw89X, {
+      currentListing: h.name,
       nextListing: b.name,
-      changeDate: v
+      changeDate: E
     }),
-    error: null == g ? true : g.message,
-    onClick: O,
-    submitting: m,
-    ctaMessage: f.intl.string(f.t.De4wI8),
-    className: a
+    error: null == A ? true : A.message,
+    onClick: () => m(n),
+    submitting: g,
+    ctaMessage: _.intl.string(_.t.De4wI8),
+    className: l
   })
 }

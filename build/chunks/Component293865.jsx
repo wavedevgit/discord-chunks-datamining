@@ -114,7 +114,7 @@ let y = Chunk64700.memo(function(e) {
                 onClick: () => (0, c.mMO)(async () => {
                   let {
                     default: e
-                  } = await Promise.all([l.e("43600"), l.e("65202")]).then(l.bind(l, 234355));
+                  } = await Promise.all([l.e("43600"), l.e("42821")]).then(l.bind(l, 234355));
                   return n => {
                     var l, r;
                     return (0, t.jsx)(e, (l = function(e) {

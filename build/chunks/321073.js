@@ -30,8 +30,8 @@ Chunk557939({
     var t = i(this),
       n = a(t),
       r = arguments.length;
-    o(n + r);
+    s(n + r);
     for (var l = 0; l < r; l++) t[n] = arguments[l], n++;
-    return s(t, n), n
+    return o(t, n), n
   }
 })

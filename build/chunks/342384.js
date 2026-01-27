@@ -13,8 +13,8 @@ function i(e) {
     customId: n,
     referrerId: i,
     linkId: a
-  } = e, s = new URL(r.BVt.ACTIVITY_DETAILS(t), "".concat(location.protocol, "//").concat(location.host)), o = s.searchParams;
-  return null != a && o.set("link_id", a), null != i && o.set("referrer_id", i), null != n && o.set("custom_id", n), s.toString()
+  } = e, o = new URL(r.BVt.ACTIVITY_DETAILS(t), "".concat(location.protocol, "//").concat(location.host)), s = o.searchParams;
+  return null != a && s.set("link_id", a), null != i && s.set("referrer_id", i), null != n && s.set("custom_id", n), o.toString()
 }
 
 function a(e) {
@@ -25,15 +25,15 @@ function a(e) {
     integrationTypesConfig: a
   } = e;
   if (null != n) return n;
-  let s = new URLSearchParams;
-  s.set("client_id", t);
-  let o = null != a && Object.values(a).some(e => (null == e ? true : e.oauth2_install_params) != null || (null == e ? true : e.oauth2InstallParams) != null);
-  if (null != i && !o) {
+  let o = new URLSearchParams;
+  o.set("client_id", t);
+  let s = null != a && Object.values(a).some(e => (null == e ? true : e.oauth2_install_params) != null || (null == e ? true : e.oauth2InstallParams) != null);
+  if (null != i && !s) {
     let {
       permissions: e,
       scopes: t
     } = i;
-    null != e && s.set("permissions", e), null != t && s.set("scope", t.join(" "))
+    null != e && o.set("permissions", e), null != t && o.set("scope", t.join(" "))
   }
-  return "".concat(location.protocol, "//").concat(location.host).concat(r.BVt.OAUTH2_AUTHORIZE, "?").concat(s.toString())
+  return "".concat(location.protocol, "//").concat(location.host).concat(r.BVt.OAUTH2_AUTHORIZE, "?").concat(o.toString())
 }

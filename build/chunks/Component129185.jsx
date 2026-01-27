@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
 function m(e) {
   if (null == e || null == u.A.emojiAnimationTriggers) returnfalse;
   for (let t of u.A.emojiAnimationTriggers) {
-    let n = o.Ay.getByName(t);
+    let n = s.Ay.getByName(t);
     if (null != n) {
       if (":".concat(n.uniqueName, ":") === e) returntrue;
       for (let t in n.diversityChildren) {
@@ -45,16 +45,16 @@ function E(e) {
   } = e, {
     triggerAnimation: n,
     untriggerAnimation: a
-  } = i.useContext(g), s = (0, l.Us)(), o = i.useMemo(() => ({
+  } = i.useContext(g), o = (0, l.Us)(), s = i.useMemo(() => ({
     triggerAnimation: e => {
-      s !== h.BRT.OVERLAY && m(e) && n(e)
+      o !== h.BRT.OVERLAY && m(e) && n(e)
     },
     untriggerAnimation: e => {
-      s !== h.BRT.OVERLAY && m(e) && a(e)
+      o !== h.BRT.OVERLAY && m(e) && a(e)
     }
-  }), [s, n, a]);
+  }), [o, n, a]);
   return (0, r.jsx)(g.Provider, {
-    value: o,
+    value: s,
     children: t
   })
 }
@@ -84,18 +84,18 @@ function b(e) {
     emojiRef: t,
     channelId: n,
     messageId: r,
-    emojiName: s
-  } = e, o = (0, a.bG)([c.A], () => c.A.getMessage(n, r)), {
+    emojiName: o
+  } = e, s = (0, a.bG)([c.A], () => c.A.getMessage(n, r)), {
     triggerAnimation: l
   } = i.useContext(g);
   return i.useEffect(() => {
-    if (!u.A.triggerEmojiAnimationFromSentMessage || (null == o ? true : o.state) !== h.cmJ.SENT || (0, f.AI)(r)) return;
+    if (!u.A.triggerEmojiAnimationFromSentMessage || (null == s ? true : s.state) !== h.cmJ.SENT || (0, f.AI)(r)) return;
     let {
       top: e,
       bottom: n
     } = t.getBoundingClientRect();
-    e >= 0 && n <= window.innerHeight && (l(s), (0, f.IL)(r))
-  }, [s, t, null == o ? true : o.state, r, l]), null
+    e >= 0 && n <= window.innerHeight && (l(o), (0, f.IL)(r))
+  }, [o, t, null == s ? true : s.state, r, l]), null
 }
 
 function O(e) {
@@ -103,10 +103,10 @@ function O(e) {
     channelId: t,
     messageId: n,
     emojiName: i,
-    disable: o,
+    disable: s,
     emojiRef: c
-  } = e, u = (0, a.bG)([s.A], () => s.A.useReducedMotion), f = d.A.useIsEligible(), p = (0, l.Us)();
-  return o || p === h.BRT.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(b, {
+  } = e, u = (0, a.bG)([o.A], () => o.A.useReducedMotion), f = d.A.useIsEligible(), p = (0, l.Us)();
+  return s || p === h.BRT.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(b, {
     emojiRef: c,
     channelId: t,
     messageId: n,

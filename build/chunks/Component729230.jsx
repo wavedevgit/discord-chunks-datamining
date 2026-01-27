@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 729230, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 729230, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => a
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk778300 = require("./778300.js");
-let o = e => {
+let a = e => {
   let {
     lifted: t = false
   } = e;
@@ -20,7 +19,7 @@ let o = e => {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     preserveAspectRatio: "none",
-    className: a()(s.zr, {
+    className: l()(s.zr, {
       [s.N]: t
     }),
     children: [(0, r.jsx)("path", {

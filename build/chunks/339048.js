@@ -2,7 +2,7 @@
 /** chunk id: 339048, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  LM: () => o,
+  LM: () => s,
   XJ: () => c,
   qw: () => l
 });
@@ -11,7 +11,7 @@ var Chunk562465 = require("./562465.js"),
   Chunk371794 = require("./371794.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e) {
+function s(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   return i.h.wait(() => {
     i.h.dispatch({
@@ -19,7 +19,7 @@ function o(e) {
       applicationId: e
     })
   }), r.Bo.get({
-    url: s.Rsh.ENTITLEMENTS_FOR_APPLICATION(e),
+    url: o.Rsh.ENTITLEMENTS_FOR_APPLICATION(e),
     oldFormErrors: true,
     query: {
       exclude_consumed: t
@@ -41,18 +41,18 @@ async function l(e) {
     withSku: t = false,
     withApplication: n = false,
     excludeEnded: a = true,
-    entitlementType: o
+    entitlementType: s
   } = e;
   i.h.dispatch({
     type: "ENTITLEMENTS_FETCH_FOR_USER_START"
   });
   try {
     let e = await r.Bo.get({
-      url: s.Rsh.ENTITLEMENTS_FOR_USER,
+      url: o.Rsh.ENTITLEMENTS_FOR_USER,
       query: {
         with_sku: t,
         with_application: n,
-        entitlement_type: o,
+        entitlement_type: s,
         exclude_ended: a
       },
       rejectWithError: true
@@ -74,7 +74,7 @@ async function c() {
   });
   try {
     let e = await (0, a.aP)({
-      url: s.Rsh.ENTITLEMENTS_GIFTABLE,
+      url: o.Rsh.ENTITLEMENTS_GIFTABLE,
       rejectWithError: true
     });
     i.h.dispatch({

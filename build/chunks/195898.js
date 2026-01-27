@@ -61,11 +61,11 @@ function b(e) {
     primaryColor: i,
     secondaryColor: _,
     forceUserTheme: h = false
-  } = e, [b, O] = (0, o.yK)([c.A], () => [c.A.desaturateUserColors, c.A.syncProfileThemeWithUserTheme]), v = (0, p.k)(t), A = O || h ? null == v ? true : v.overlaySyncedWithUserTheme : null == v ? true : v.overlay;
+  } = e, [b, O] = (0, s.yK)([c.A], () => [c.A.desaturateUserColors, c.A.syncProfileThemeWithUserTheme]), v = (0, p.k)(t), A = O || h ? null == v ? true : v.overlaySyncedWithUserTheme : null == v ? true : v.overlay;
   return {
     profileThemeStyle: (0, r.useMemo)(() => {
       if (null == i || null == _ || null == v || null == A) return y;
-      let e = (e, t) => (0, s.$k)(e, b, null, t);
+      let e = (e, t) => (0, o.$k)(e, b, null, t);
       return m({
         "--profile-gradient-primary-color": e(i),
         "--profile-gradient-secondary-color": e(_),

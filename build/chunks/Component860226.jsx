@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 860226, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 860226, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => u
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,13 +13,13 @@ var Chunk311907 = require("./311907.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d() {
-  let e = (0, i.bG)([l.A], () => l.A.getQoS());
-  return (0, r.jsx)(o.x, {
+function u() {
+  let e = (0, i.bG)([o.A], () => o.A.getQoS());
+  return (0, r.jsx)(a.x, {
     setting: c.H.VOICE_AND_VIDEO_ADVANCED_QOS,
-    children: (0, r.jsx)(a.dOG, {
-      label: u.intl.string(u.t["3CqDxp"]),
-      description: u.intl.string(u.t.I1Eoqq),
+    children: (0, r.jsx)(l.dOG, {
+      label: d.intl.string(d.t["3CqDxp"]),
+      description: d.intl.string(d.t.I1Eoqq),
       checked: e,
       onChange: e => s.A.setQoS(e)
     })

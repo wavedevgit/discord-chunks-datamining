@@ -55,7 +55,7 @@ function O(e) {
     voiceChannel: I
   } = (0, a.cf)([p.A, _.A, f.A], () => {
     var e, n;
-    let r = (0, s.A)(y);
+    let r = (0, o.A)(y);
     if (!r && (null == y ? true : y.type) !== E.$pd.HANG_STATUS) return {};
     let i = r ? null == (e = _.A.getVoiceStateForSession(t.id, null == y ? true : y.session_id)) ? true : e.channelId : null == (n = _.A.getVoiceStateForUser(t.id)) ? true : n.channelId,
       a = f.A.getChannel(i);
@@ -71,7 +71,7 @@ function O(e) {
       source: "UserProfilePopout",
       other_user_id: t.id
     }, (0, u.A)(null == T ? true : T.id)))
-  }, [null == y ? true : y.type, S, null == T ? true : T.id, t.id]), (null == y ? true : y.type) !== E.$pd.CUSTOM_STATUS && ((null == y ? true : y.type) !== E.$pd.HANG_STATUS || S)) ? (0, o.A)(y) ? (0, r.jsx)(g.A, {
+  }, [null == y ? true : y.type, S, null == T ? true : T.id, t.id]), (null == y ? true : y.type) !== E.$pd.CUSTOM_STATUS && ((null == y ? true : y.type) !== E.$pd.HANG_STATUS || S)) ? (0, s.A)(y) ? (0, r.jsx)(g.A, {
     user: t,
     currentUser: n,
     activity: y,

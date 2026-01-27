@@ -6,12 +6,12 @@ require.d(exports, {
 });
 let r = (e, t) => function(n, r, i) {
   return new Promise(a => {
-    var s;
+    var o;
     e.dispatch({
       type: t,
       event: n,
       properties: r,
-      flush: null != (s = null == i ? true : i.flush) && s,
+      flush: null != (o = null == i ? true : i.flush) && o,
       fingerprint: null == i ? true : i.fingerprint,
       resolve: a
     })

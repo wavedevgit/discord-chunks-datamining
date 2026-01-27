@@ -1,7 +1,7 @@
 /** Chunk was on 86317 **/
 /** chunk id: 467164, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => E
+  default: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -51,7 +51,7 @@ function N(e) {
   return e
 }
 
-function T(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,15 +64,15 @@ function T(e, t) {
   }), e
 }
 
-function E(e) {
+function I(e) {
   let {
     channel: t,
     onClose: n,
     transitionState: i
-  } = e, a = (0, c.bG)([m.A], () => m.A.getGuild(t.guild_id));
+  } = e, a = (0, c.bG)([x.A], () => x.A.getGuild(t.guild_id));
   return (r.useEffect(() => {
     null == a && n()
-  }, [a, n]), null == a) ? null : (0, l.jsx)(G, {
+  }, [a, n]), null == a) ? null : (0, l.jsx)(k, {
     transitionState: i,
     guild: a,
     channel: t,
@@ -80,23 +80,23 @@ function E(e) {
   })
 }
 
-function I(e) {
+function R(e) {
   let {
     stageChannelsInGuild: t,
     channel: n,
     onSelectChannel: r
   } = e;
   return null == r ? null : (0, l.jsx)("div", {
-    className: C.BD,
+    className: w.BD,
     children: (0, l.jsx)(o.ZiE, {
       selectionMode: "single",
       required: true,
-      label: w.intl.string(w.t.S7GjDz),
+      label: P.intl.string(P.t.S7GjDz),
       value: n.id,
       options: t.map(e => ({
         id: e.id,
         value: e.id,
-        label: (0, d.m1)(e, f.default, h.A, true),
+        label: (0, d.m1)(e, j.default, m.A, true),
         leading: (0, l.jsx)(o.qux, {
           size: "custom",
           color: "currentColor",
@@ -111,146 +111,146 @@ function I(e) {
   })
 }
 
-function G(e) {
+function k(e) {
   var t, n;
   let {
     channel: i,
     guild: c,
-    onClose: m,
-    onSelectChannel: h,
-    transitionState: f,
-    isEvent: E = false
+    onClose: x,
+    onSelectChannel: m,
+    transitionState: j,
+    isEvent: I = false
   } = e, {
-    loading: G,
-    error: R,
-    onSave: z
-  } = (0, A.A)(i, m), M = r.useMemo(() => v.A.getStageInstanceByChannel(i.id), [i.id]), [B, U] = r.useState(null != (t = null == M ? true : M.topic) ? t : ""), [L, F] = r.useState(""), [Z] = r.useState(E), [q, K] = r.useState({
-    startDate: (0, g.jd)()
-  }), [V, Q] = r.useState(false), X = (0, p.Z)(i), J = (0, p.K)(i), W = null == M && X && !Z, [Y, H] = r.useState(W && J), $ = P.dD.GUILD_ONLY, [ee] = r.useState(null != (n = null == M ? true : M.privacy_level) ? n : $), [et, en] = r.useState(null), el = (0, y.D3)(i.id), er = (0, y.Xk)(i.id), [ei, ea] = r.useState(false), es = (0, d.Ay)(i), ec = (0, x.A)(c), eo = null != h, eu = ec.length > 1;
+    loading: k,
+    error: G,
+    onSave: M
+  } = (0, A.A)(i, x), B = r.useMemo(() => _.A.getStageInstanceByChannel(i.id), [i.id]), [U, z] = r.useState(null != (t = null == B ? true : B.topic) ? t : ""), [L, V] = r.useState(""), [F] = r.useState(I), [K, W] = r.useState({
+    startDate: (0, h.jd)()
+  }), [q, Q] = r.useState(false), Z = (0, p.Z)(i), X = (0, p.K)(i), J = null == B && Z && !F, [Y, H] = r.useState(J && X), $ = S.dD.GUILD_ONLY, [ee] = r.useState(null != (n = null == B ? true : B.privacy_level) ? n : $), [et, en] = r.useState(null), el = (0, O.D3)(i.id), er = (0, O.Xk)(i.id), [ei, ea] = r.useState(false), es = (0, d.Ay)(i), ec = (0, g.A)(c), eo = null != m, eu = ec.length > 1;
   (0, u.Ay)(() => {
-    b.default.track(S.HAw.START_STAGE_OPENED, {
-      stage_instance_id: null == M ? true : M.id,
+    b.default.track(E.HAw.START_STAGE_OPENED, {
+      stage_instance_id: null == B ? true : B.id,
       can_start_public_stage: false,
       guild_id: i.guild_id
     })
   });
   let ed = e => {
-      (e.preventDefault(), ee === P.dD.PUBLIC && B.length < 20 && !ei) ? ea(true): Z || null == z || z({
-        topic: B,
+      (e.preventDefault(), ee === S.dD.PUBLIC && U.length < 20 && !ei) ? ea(true): F || null == M || M({
+        topic: U,
         privacyLevel: ee,
         sendStartNotification: Y
       })
     },
-    ex = r.useRef(null);
+    eg = r.useRef(null);
   r.useEffect(() => {
     var e;
-    null == (e = ex.current) || e.focus()
+    null == (e = eg.current) || e.focus()
   }, []);
-  let eg = V && null != q.startDate && q.startDate >= a()(),
-    ej = (0, l.jsxs)(l.Fragment, {
+  let eh = q && null != K.startDate && K.startDate >= a()(),
+    ef = (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)("div", {
-        className: C.GU,
-        children: null == M && (el > 0 || er > 0) && (0, l.jsx)(O.Bw, {
+        className: w.GU,
+        children: null == B && (el > 0 || er > 0) && (0, l.jsx)(y.Bw, {
           channelId: i.id
         })
       }), (0, l.jsxs)("form", {
         onSubmit: ed,
-        className: C.Zd,
+        className: w.Zd,
         children: [(0, l.jsx)(o.ksK, {
           required: true,
-          error: null != R ? R.getAnyErrorMessage() : true,
-          label: E ? w.intl.string(w.t["0HbEQ6"]) : w.intl.string(w.t["5FPBOB"]),
-          onChange: e => U(e),
-          helperText: ei ? w.intl.string(w.t.AqTyaR) : true,
-          placeholder: w.intl.string(w.t.ZwWruY),
-          maxLength: D.RY,
-          value: B,
+          error: null != G ? G.getAnyErrorMessage() : true,
+          label: I ? P.intl.string(P.t["0HbEQ6"]) : P.intl.string(P.t["5FPBOB"]),
+          onChange: e => z(e),
+          helperText: ei ? P.intl.string(P.t.AqTyaR) : true,
+          placeholder: P.intl.string(P.t.ZwWruY),
+          maxLength: T.RY,
+          value: U,
           autoComplete: "off",
-          inputRef: ex
-        }), eo && eu ? (0, l.jsx)(I, {
+          inputRef: eg
+        }), eo && eu ? (0, l.jsx)(R, {
           stageChannelsInGuild: ec,
           channel: i,
-          onSelectChannel: h
-        }) : null, Z && (0, l.jsxs)(l.Fragment, {
-          children: [(0, l.jsx)(j.A, {
-            className: C.kz,
-            onScheduleChange: K,
+          onSelectChannel: m
+        }) : null, F && (0, l.jsxs)(l.Fragment, {
+          children: [(0, l.jsx)(f.A, {
+            className: w.kz,
+            onScheduleChange: W,
             onRecurrenceChange: e => {
-              let t = q.startDate;
-              null == t || en((0, g.nG)(e, t))
+              let t = K.startDate;
+              null == t || en((0, h.nG)(e, t))
             },
-            schedule: q,
+            schedule: K,
             recurrenceRule: et,
-            timeSelected: V,
+            timeSelected: q,
             onTimeChange: Q
-          }), null != q.startDate && q.startDate < a()() ? (0, l.jsx)(o.Text, {
+          }), null != K.startDate && K.startDate < a()() ? (0, l.jsx)(o.Text, {
             color: "text-feedback-critical",
             variant: "text-xs/normal",
-            className: C.$e,
-            children: w.intl.string(w.t.AXR5Ss)
+            className: w.$e,
+            children: P.intl.string(P.t.AXR5Ss)
           }) : null]
-        }), E && (0, l.jsx)("div", {
-          className: C.kz,
+        }), I && (0, l.jsx)("div", {
+          className: w.kz,
           children: (0, l.jsx)(o.fs1, {
-            label: w.intl.string(w.t["+gRCC7"]),
-            placeholder: w.intl.string(w.t["kWO/E8"]),
+            label: P.intl.string(P.t["+gRCC7"]),
+            placeholder: P.intl.string(P.t["kWO/E8"]),
             value: L,
-            onChange: e => F(e),
-            maxLength: P.IJ
+            onChange: e => V(e),
+            maxLength: S.IJ
           })
         }), eo && !eu ? (0, l.jsx)(o.Text, {
           color: "text-default",
           variant: "text-xs/normal",
-          className: C.Qw,
-          children: w.intl.format(w.t["S+9O7g"], {
+          className: w.Qw,
+          children: P.intl.format(P.t["S+9O7g"], {
             stageName: es,
             stageHook: (e, t) => (0, l.jsx)("span", {
-              className: C.HA,
+              className: w.HA,
               children: i.name
             }, t)
           })
-        }) : null, (0, l.jsx)(_.A, {
-          className: C.XI,
+        }) : null, (0, l.jsx)(v.A, {
+          className: w.XI,
           channelId: i.id
         })]
       })]
     }),
-    em = {
-      onClose: m,
-      title: null == M ? w.intl.string(w.t.DDF0cJ) : w.intl.string(w.t.YPdQOp),
-      subtitle: null == M ? w.intl.string(w.t.bqQIwa) : w.intl.string(w.t["I+9bLx"]),
-      transitionState: f,
+    ex = {
+      onClose: x,
+      title: null == B ? P.intl.string(P.t.DDF0cJ) : P.intl.string(P.t.YPdQOp),
+      subtitle: null == B ? P.intl.string(P.t.bqQIwa) : P.intl.string(P.t["I+9bLx"]),
+      transitionState: j,
       actions: [{
         variant: "secondary",
-        text: w.intl.string(w.t["ETE/oC"]),
-        onClick: () => m()
+        text: P.intl.string(P.t["ETE/oC"]),
+        onClick: () => x()
       }, {
         variant: "primary",
-        text: Z ? w.intl.string(w.t["60lJ0C"]) : null == M ? w.intl.string(w.t.s8mM8A) : w.intl.string(w.t.K344S7),
+        text: F ? P.intl.string(P.t["60lJ0C"]) : null == B ? P.intl.string(P.t.s8mM8A) : P.intl.string(P.t.K344S7),
         onClick: ed,
-        disabled: "" === B || null == ee || E && !eg,
-        loading: G
+        disabled: "" === U || null == ee || I && !eh,
+        loading: k
       }],
-      actionBarInput: W ? (0, l.jsxs)(o.DUT, {
+      actionBarInput: J ? (0, l.jsxs)(o.DUT, {
         onClick: () => H(!Y),
-        className: C.Qy,
+        className: w.Qy,
         children: [(0, l.jsx)(o.P7L, {
           checked: Y
         }), (0, l.jsx)(o.Text, {
           color: "text-default",
           variant: "text-sm/normal",
-          children: w.intl.string(w.t["Pe+Pwp"])
+          children: P.intl.string(P.t["Pe+Pwp"])
         })]
       }) : true
     };
-  return null == M ? (0, l.jsx)(s.ExpressiveModal, T(N({
+  return null == B ? (0, l.jsx)(s.ExpressiveModal, C(N({
     graphic: {
       type: "image",
-      src: k.A
+      src: D.A
     }
-  }, em), {
-    children: ej
-  })) : (0, l.jsx)(s.Modal, T(N({}, em), {
-    children: ej
+  }, ex), {
+    children: ef
+  })) : (0, l.jsx)(s.Modal, C(N({}, ex), {
+    children: ef
   }))
 }

@@ -2,7 +2,7 @@
 /** chunk id: 454290, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => s,
+  Q: () => o,
   f: () => a
 });
 var Chunk64700 = require("./64700.js"),
@@ -17,6 +17,6 @@ let a = (0, Chunk64700.createContext)({
   setZoomed() {}
 });
 
-function s() {
+function o() {
   return (0, r.useContext)(a)
 }

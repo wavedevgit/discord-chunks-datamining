@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk692051 = require("./692051.js"),
   Chunk985018 = require("./985018.jsx"),
@@ -21,7 +21,7 @@ function d(e) {
   } = e, d = i.useRef(null), f = (0, r.jsx)("div", {
     className: u.P0,
     ref: d,
-    children: (0, r.jsx)(o.udU, {
+    children: (0, r.jsx)(s.udU, {
       size: "xs",
       color: "currentColor",
       className: u.Kk
@@ -31,8 +31,8 @@ function d(e) {
     children: e => a || null == t ? (0, r.jsx)("div", {
       className: u.Iv,
       children: f
-    }) : (0, r.jsx)(o.DUT, {
-      className: s()(n, u.Iv, {
+    }) : (0, r.jsx)(s.DUT, {
+      className: o()(n, u.Iv, {
         [u.vu]: !e.disableInteractions
       }),
       onClick: t,

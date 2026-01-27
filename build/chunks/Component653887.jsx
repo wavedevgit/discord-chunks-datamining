@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +29,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -53,11 +53,11 @@ function c(e) {
   let {
     src: t,
     dynamicDataBinding: n
-  } = e, a = o(e, ["src", "dynamicDataBinding"]), {
+  } = e, a = s(e, ["src", "dynamicDataBinding"]), {
     status: l,
     buffer: c
   } = (0, i.CEU)(t);
-  return l === i.BWP.Loading ? null : (0, r.jsx)(i.wbv, s({
+  return l === i.BWP.Loading ? null : (0, r.jsx)(i.wbv, o({
     buffer: c,
     artboardProperties: {},
     dynamicDataBinding: n

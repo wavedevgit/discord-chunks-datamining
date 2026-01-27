@@ -25,8 +25,8 @@ function _(e) {
   let {
     userId: i,
     activity: a,
-    application: s,
-    channelId: o,
+    application: o,
+    channelId: s,
     currentUser: l,
     isActivitiesEnabledForCurrentPlatform: u,
     ChannelStore: p,
@@ -35,12 +35,12 @@ function _(e) {
     GuildStore: m
   } = e;
   if (null == i) return 8;
-  if ((null == l ? true : l.nsfwAllowed) === false && (null == s || null == (t = s.embeddedActivityConfig) ? true : t.requires_age_gate) === true) return 7;
+  if ((null == l ? true : l.nsfwAllowed) === false && (null == o || null == (t = o.embeddedActivityConfig) ? true : t.requires_age_gate) === true) return 7;
   if (!u) return 5;
-  if (!(0, d.A)(null == s || null == (n = s.embeddedActivityConfig) ? true : n.supported_platforms)) return 6;
-  let g = null != o ? o : null == (r = _.getVoiceStateForSession(i, null == a ? true : a.session_id)) ? true : r.channelId;
+  if (!(0, d.A)(null == o || null == (n = o.embeddedActivityConfig) ? true : n.supported_platforms)) return 6;
+  let g = null != s ? s : null == (r = _.getVoiceStateForSession(i, null == a ? true : a.session_id)) ? true : r.channelId;
   if (null == g) return 4;
-  let E = p.getChannel(o);
+  let E = p.getChannel(s);
   if (null == E) return 4;
   if (!E.isPrivate()) {
     let e = E.getGuildId();
@@ -65,8 +65,8 @@ function h(e) {
     activity: n,
     channelId: c,
     application: d
-  } = e, f = (0, u.z)(), p = (0, r.bG)([o.default], () => o.default.getCurrentUser());
-  return (0, r.bG)([i.A, l.A, s.A, a.A], () => _({
+  } = e, f = (0, u.z)(), p = (0, r.bG)([s.default], () => s.default.getCurrentUser());
+  return (0, r.bG)([i.A, l.A, o.A, a.A], () => _({
     userId: t,
     activity: n,
     application: d,
@@ -75,7 +75,7 @@ function h(e) {
     isActivitiesEnabledForCurrentPlatform: f,
     ChannelStore: i.A,
     VoiceStateStore: l.A,
-    PermissionStore: s.A,
+    PermissionStore: o.A,
     GuildStore: a.A
   }), [n, d, c, p, f, t])
 }

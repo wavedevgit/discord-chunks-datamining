@@ -6,18 +6,18 @@ require.r(exports), require.d(exports, {
   closeAllModalsInContext: () => P,
   closeModal: () => A,
   closeModalInAllContexts: () => I,
-  doesTopModalAllowNavigation: () => j,
+  doesTopModalAllowNavigation: () => M,
   getInteractingModalContext: () => E,
   hasAnyModalOpen: () => C,
   hasAnyModalOpenSelector: () => T,
-  hasModalOpen: () => x,
+  hasModalOpen: () => L,
   hasModalOpenSelector: () => D,
   modalContextFromAppContext: () => y,
   openModal: () => v,
   openModalLazy: () => O,
   updateModal: () => S,
   useHasAnyModalOpen: () => N,
-  useHasModalOpen: () => L,
+  useHasModalOpen: () => x,
   useIsModalAtTop: () => w,
   useModalsStore: () => b
 }), require("./65821.js"), require("./134528.js"), require("./947204.js"), require("./896048.js");
@@ -91,7 +91,7 @@ let m = require("./450507.jsx").A,
   g = [Chunk231723.SY, Chunk231723.KX];
 
 function E() {
-  let e = (0, o.zd)();
+  let e = (0, s.zd)();
   return null != e ? y(e) : l.SY
 }
 
@@ -117,14 +117,14 @@ async function O(e) {
     } = t,
     r = _(t, ["contextKey"]),
     a = null != t.modalKey ? t.modalKey : i()(),
-    s = false,
-    o = setTimeout(() => {
-      s = true, v(m, p(d({}, r), {
+    o = false,
+    s = setTimeout(() => {
+      o = true, v(m, p(d({}, r), {
         modalKey: a
       }), n)
     }, 300),
     l = await e();
-  return clearTimeout(o), s ? x(a, n) && S(a, l, r.onCloseRequest, r.onCloseCallback, n) : v(l, p(d({}, r), {
+  return clearTimeout(s), o ? L(a, n) && S(a, l, r.onCloseRequest, r.onCloseCallback, n) : v(l, p(d({}, r), {
     modalKey: a
   }), n), a
 }
@@ -135,7 +135,7 @@ function v(e) {
     {
       modalKey: r,
       dismissable: a,
-      instant: o,
+      instant: s,
       Layer: l,
       onCloseRequest: c,
       onCloseCallback: u,
@@ -145,7 +145,7 @@ function v(e) {
       allowsNavigation: m
     } = t,
     g = null != r ? r : i()();
-  return (0, s.r)(() => {
+  return (0, o.r)(() => {
     b.setState(t => {
       let r = t[n];
       if (true !== r && r.some(e => {
@@ -156,8 +156,8 @@ function v(e) {
         })) return t;
       let i = _;
       if (null == i) {
-        var s;
-        i = (null == (s = r.at(false)) ? true : s.stackNextByDefault) === true ? "stack" : "replace"
+        var o;
+        i = (null == (o = r.at(false)) ? true : o.stackNextByDefault) === true ? "stack" : "replace"
       }
       return p(d({}, t), {
         [n]: [...r, {
@@ -167,7 +167,7 @@ function v(e) {
           render: e,
           onCloseRequest: null != c ? c : () => A(g, n),
           onCloseCallback: u,
-          instant: o,
+          instant: s,
           backdropStyle: f,
           stackingBehavior: i,
           stackNextByDefault: h,
@@ -187,7 +187,7 @@ function A(e) {
       } = t;
       return n === e
     }) : null;
-  return (0, s.r)(() => {
+  return (0, o.r)(() => {
     b.setState(n => true === n[t] ? n : p(d({}, n), {
       [t]: n[t].filter(t => {
         let {
@@ -213,7 +213,7 @@ function I(e) {
         return n === e
       })) ? n : null
     });
-  n.some(e => null != e) && ((0, s.r)(() => {
+  n.some(e => null != e) && ((0, o.r)(() => {
     b.setState(t => {
       let n = d({}, t);
       return g.forEach(t => {
@@ -234,7 +234,7 @@ function I(e) {
 
 function S(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : E();
-  (0, s.r)(() => {
+  (0, o.r)(() => {
     b.setState(a => true === a[i] ? a : p(d({}, a), {
       [i]: a[i].map(a => a.key === e ? p(d({}, a), {
         render: t,
@@ -289,15 +289,15 @@ function D(e, t) {
   return null != r && r.some(e => e.key === t)
 }
 
-function x(e, t) {
+function L(e, t) {
   return D(b.getState(), e, t)
 }
 
-function L(e, t) {
+function x(e, t) {
   return D(b(), e, t)
 }
 
-function j() {
+function M() {
   let e = b.getState(),
     t = E();
   if (t !== l.SY && null != e[t] && e[t].length > 0) returnfalse;

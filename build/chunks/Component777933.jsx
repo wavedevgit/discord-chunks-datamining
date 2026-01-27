@@ -17,7 +17,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function v(t) {
+function f(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       l = Object.keys(n);
@@ -40,55 +40,55 @@ let g = /^(tel|sms|mailto):([^?;]+)/;
 function E(t, e, n, E) {
   let b = (0, o.A)(null == n ? true : n.getChannelId());
   if (!u.isPlatformEmbedded || null == t || "" === t || b || (null == E ? true : E.shouldHideMediaOptions) === true || !(0, r.fW)(t)) return null;
-  let T = (0, a.E)(t),
-    h = t => {
-      c.default.track(y.HAw.CONTEXT_MENU_LINK_COPIED, v({
-        hostname: T
-      }, (0, p.N)())), d.Ay.copy(t), (0, i.showToast)((0, i.createToast)(f.intl.string(f.t["L/PwZf"]), i.ToastType.SUCCESS))
+  let h = (0, a.E)(t),
+    T = t => {
+      c.default.track(y.HAw.CONTEXT_MENU_LINK_COPIED, f({
+        hostname: h
+      }, (0, p.N)())), d.Ay.copy(t), (0, i.showToast)((0, i.createToast)(v.intl.string(v.t["L/PwZf"]), i.ToastType.SUCCESS))
     },
-    m = (n, l) => {
+    A = (n, l) => {
       let i = true === l ? t.replace("tel:", "sms:") : t;
-      c.default.track(y.HAw.CONTEXT_MENU_LINK_OPENED, v({
-        hostname: T
+      c.default.track(y.HAw.CONTEXT_MENU_LINK_OPENED, f({
+        hostname: h
       }, (0, p.N)())), (0, s.h)({
         href: i,
         trusted: (0, s.m)(t, e),
         shouldConfirm: true
       }, n)
     },
-    A = [],
+    m = [],
     O = t.match(g);
   if (null != O) {
-    let t = f.intl.string("mailto" === O[1] ? f.t.ZYLVKo : f.t["3zozoR"]);
-    A.push((0, l.jsx)(i.Drp, {
+    let t = v.intl.string("mailto" === O[1] ? v.t.ZYLVKo : v.t["3zozoR"]);
+    m.push((0, l.jsx)(i.Drp, {
       id: "copy-native-contact",
       label: t,
       action: () => {
-        h(O[2])
+        T(O[2])
       }
-    }, "copy-native-contact")), "tel" === O[1] && A.push((0, l.jsx)(i.Drp, {
+    }, "copy-native-contact")), "tel" === O[1] && m.push((0, l.jsx)(i.Drp, {
       id: "native-send-sms",
-      label: f.intl.string(f.t["+wbjMW"]),
-      action: t => m(t, true)
+      label: v.intl.string(v.t["+wbjMW"]),
+      action: t => A(t, true)
     }, "native-send-sms"))
   }
   return [(0, l.jsx)(i.Drp, {
     id: "copy-native-link",
-    label: f.intl.string(f.t.WqhZss),
+    label: v.intl.string(v.t.WqhZss),
     leadingAccessory: {
       type: "icon",
       icon: i.qYV
     },
     action: () => {
-      h(t)
+      T(t)
     }
-  }, "copy-native-link"), ...A, (0, l.jsx)(i.Drp, {
+  }, "copy-native-link"), ...m, (0, l.jsx)(i.Drp, {
     id: "open-native-link",
-    label: f.intl.string(f.t.wuRE8M),
+    label: v.intl.string(v.t.wuRE8M),
     trailingIndicator: {
       type: "icon",
       icon: i.I9m
     },
-    action: t => m(t)
+    action: t => A(t)
   }, "open-native-link")]
 }

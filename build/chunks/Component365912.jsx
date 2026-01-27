@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk340287 = require("./340287.js"),
   Chunk621466 = require("./621466.js"),
   Chunk51906 = require("./51906.js"),
@@ -68,12 +68,12 @@ let m = e => {
   let {
     layerContext: t,
     className: n
-  } = e, [, a] = i.useContext(t), o = i.useCallback(e => {
+  } = e, [, a] = i.useContext(t), s = i.useCallback(e => {
     a(e)
   }, [a]);
   return (0, r.jsx)("div", {
-    className: s()(_, n),
-    ref: o
+    className: o()(_, n),
+    ref: s
   })
 };
 
@@ -85,7 +85,7 @@ function g(e) {
 
 function E(e, t) {
   let [n] = e;
-  return null == n ? null : o.createPortal(i.Children.only(t), n)
+  return null == n ? null : s.createPortal(i.Children.only(t), n)
 }
 let y = e => {
   let {

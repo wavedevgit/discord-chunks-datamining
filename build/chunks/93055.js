@@ -1,11 +1,11 @@
-/** Chunk was on 89209 **/
-/** chunk id: 93055, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 96430 **/
+/** chunk id: 93055, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Af: () => A,
-  CJ: () => g,
-  Fe: () => y,
-  Rm: () => E,
-  pe: () => f
+  CJ: () => h,
+  Fe: () => f,
+  Rm: () => _,
+  pe: () => E
 }), require("./896048.js"), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
   Chunk478437 = require("./478437.js"),
@@ -19,40 +19,40 @@ var Chunk181079 = require("./181079.js"),
   Chunk924703 = require("./924703.js"),
   Chunk652215 = require("./652215.js");
 
-function f(e) {
+function E(t) {
   let {
-    favoritesEnabled: t,
+    favoritesEnabled: e,
     hasStaffPrivileges: n
-  } = (0, c.l)("useCanFavoriteChannel"), r = (0, i.bG)([o.A], () => o.A.isFavorite(e.id)), l = e.isDM() || e.isThread();
-  return t && !__OVERLAY__ && !r && (!l || n)
+  } = (0, d.l)("useCanFavoriteChannel"), r = (0, a.bG)([u.A], () => u.A.isFavorite(t.id)), i = t.isDM() || t.isThread();
+  return e && !__OVERLAY__ && !r && (!i || n)
 }
 
-function A(e) {
-  return (0, i.bG)([o.A], () => o.A.getFavorite(e))
+function A(t) {
+  return (0, a.bG)([u.A], () => u.A.getFavorite(t))
 }
 
-function E() {
-  return (0, i.bG)([u.Ay], () => u.Ay.getChannels(s.YYv))[l.r.GUILD_CATEGORY].map(e => ({
-    id: "null" === e.channel.id ? null : e.channel.id,
-    name: e.channel.name
+function _() {
+  return (0, a.bG)([l.Ay], () => l.Ay.getChannels(c.YYv))[i.r.GUILD_CATEGORY].map(t => ({
+    id: "null" === t.channel.id ? null : t.channel.id,
+    name: t.channel.name
   }))
 }
 
-function y() {
-  return (0, i.bG)([a.A], () => a.A.getGuildId()) === s.YYv
+function f() {
+  return (0, a.bG)([o.A], () => o.A.getGuildId()) === c.YYv
 }
 
-function g() {
+function h() {
   let {
-    isFavoritesPerk: e
-  } = (0, c.l)("useFavoriteAdded"), t = (0, d.T)(), n = r.useCallback(() => {
-    e && t.notifyFavoriteAdded()
-  }, [t, e]), l = r.useCallback(() => {
-    e && t.clearFavoriteAdded()
-  }, [t, e]);
+    isFavoritesPerk: t
+  } = (0, d.l)("useFavoriteAdded"), e = (0, s.T)(), n = r.useCallback(() => {
+    t && e.notifyFavoriteAdded()
+  }, [e, t]), i = r.useCallback(() => {
+    t && e.clearFavoriteAdded()
+  }, [e, t]);
   return {
-    favoriteAdded: t.favoriteAdded,
+    favoriteAdded: e.favoriteAdded,
     notifyFavoriteAdded: n,
-    clearFavoriteAdded: l
+    clearFavoriteAdded: i
   }
 }

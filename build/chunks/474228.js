@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk728458 = require("./728458.js");
 let i = null,
   a = null,
-  s = null;
+  o = null;
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t.beginPath(), t.arc(n / 2, n / 2, n / 2, 0, 2 * Math.PI), t.closePath(), t.clip(), t.drawImage(e, 0, 0, n, n, 0, 0, n, n), t
 }
 
@@ -17,7 +17,7 @@ function l(e) {
   let t = document.createElement("canvas"),
     n = t.getContext("2d"),
     r = Math.min(e.width, e.height);
-  t.width = r, t.height = r, null != n && (n = o(e, n, r));
+  t.width = r, t.height = r, null != n && (n = s(e, n, r));
   let i = t.toDataURL();
   return t.remove(), i
 }

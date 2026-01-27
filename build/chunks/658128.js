@@ -15,6 +15,6 @@ var Chunk713125 = require("./713125.js"),
 function u(e) {
   var t;
   let n = l.A.getChannelId(e),
-    u = null == (t = o.Ay.getDefaultChannel(e)) ? true : t.id;
-  return (n !== c.VV.GUILD_ONBOARDING || r.Ay.shouldShowOnboarding(e)) && (n !== c.VV.GUILD_HOME || (0, i.K)(e)) ? n === c.VV.GAME_SHOP && (0, a.Ye)(e, "getChannelIdForGuildTransition") ? n : null == s.A.getChannel(n) ? u : n : u
+    u = null == (t = s.Ay.getDefaultChannel(e)) ? true : t.id;
+  return (n !== c.VV.GUILD_ONBOARDING || r.Ay.shouldShowOnboarding(e)) && (n !== c.VV.GUILD_HOME || (0, i.K)(e)) ? n === c.VV.GAME_SHOP && (0, a.Ye)(e, "getChannelIdForGuildTransition") ? n : null == o.A.getChannel(n) ? u : n : u
 }

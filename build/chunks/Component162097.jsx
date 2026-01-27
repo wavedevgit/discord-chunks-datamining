@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk732955 = require("./732955.js"),
   Chunk397927 = require("./397927.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk268920 = require("./268920.js"),
   Chunk633217 = require("./633217.js");
 let b = () => {
-    let e = (0, o.bG)([u.A], () => u.A.useReducedMotion);
+    let e = (0, s.bG)([u.A], () => u.A.useReducedMotion);
     return (0, r.jsx)("div", {
       className: m.s,
       children: e ? (0, r.jsx)("img", {
@@ -49,7 +49,7 @@ let b = () => {
       ctaText: t,
       ctaOnClick: n,
       analyticsPage: a,
-      linkPreText: o = h.intl.string(h.t["5qZv9E"]),
+      linkPreText: s = h.intl.string(h.t["5qZv9E"]),
       linkText: u = h.intl.string(h.t.XRdyjz)
     } = e, d = i.useCallback(() => {
       null != a && (0, p.Y)({
@@ -59,7 +59,7 @@ let b = () => {
       })
     }, [a]);
     return (0, r.jsxs)("div", {
-      className: s()(m.kL, g.O),
+      className: o()(m.kL, g.O),
       children: [(0, r.jsx)(b, {}), (0, r.jsx)(l.$nd, {
         text: t,
         variant: "primary",
@@ -68,10 +68,10 @@ let b = () => {
         fullWidth: true
       }), (0, r.jsxs)("div", {
         className: m.kx,
-        children: [true !== o && (0, r.jsxs)(c.Text, {
+        children: [true !== s && (0, r.jsxs)(c.Text, {
           variant: "text-xs/normal",
           className: m.D5,
-          children: [o, "\xa0"]
+          children: [s, "\xa0"]
         }), (0, r.jsx)(c.MzZ, {
           target: "_blank",
           rel: "author",

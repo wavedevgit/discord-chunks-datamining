@@ -16,8 +16,8 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = 10;
-class o extends Chunk311907.il {
+let o = 10;
+class s extends Chunk311907.il {
   isVideoStatsEnabled(e) {
     var t;
     return null != (t = this.videoStatsEnabled.get(e)) && t
@@ -31,8 +31,8 @@ class o extends Chunk311907.il {
       this.videoStatsEnabled.delete(e) && this.emitChange();
       return
     }
-    if (this.videoStatsEnabled.has(e) && this.videoStatsEnabled.delete(e), this.videoStatsEnabled.set(e, t), this.videoStatsEnabled.size > s) {
-      let e = this.videoStatsEnabled.size - s,
+    if (this.videoStatsEnabled.has(e) && this.videoStatsEnabled.delete(e), this.videoStatsEnabled.set(e, t), this.videoStatsEnabled.size > o) {
+      let e = this.videoStatsEnabled.size - o,
         t = this.videoStatsEnabled.keys();
       for (let n = 0; n < e; n++) {
         let e = t.next().value;
@@ -48,7 +48,7 @@ class o extends Chunk311907.il {
     super(...e), a(this, "videoStatsEnabled", new Map)
   }
 }
-let l = new o(Chunk73153.h, {}),
+let l = new s(Chunk73153.h, {}),
   c = l;
 
 function u(e) {

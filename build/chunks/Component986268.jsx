@@ -28,7 +28,7 @@ function b(e) {
     guild: t,
     isBannerVisible: n,
     disableBoostClick: i
-  } = e, a = (0, s.bG)([h.default, _.Ay], () => {
+  } = e, a = (0, o.bG)([h.default, _.Ay], () => {
     let e = h.default.getCurrentUser();
     return _.Ay.isMember(t.id, null == e ? true : e.id)
   }), {
@@ -48,7 +48,7 @@ function b(e) {
     b = c === g.TVA.NONE ? E.intl.string(E.t.c2wsn6) : m.gb(c);
   return (0, r.jsx)("div", {
     className: y._C,
-    children: (0, r.jsx)(o.un, {
+    children: (0, r.jsx)(s.un, {
       title: b,
       body: E.intl.format(E.t.If4iTS, {
         subscriberCount: u

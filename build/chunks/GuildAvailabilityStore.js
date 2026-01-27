@@ -31,7 +31,7 @@ function f(e) {
 
 function p(e) {
   if (u.has(e.guildId)) returnfalse;
-  let t = o.A.getGuild(e.guildId),
+  let t = s.A.getGuild(e.guildId),
     n = "???";
   null != t && null != t.name && (n = t.name), c.warn("Guild has gone unavailable: ".concat(e.guildId, " (").concat(n, ")")), u.add(e.guildId)
 }
@@ -46,13 +46,13 @@ function h(e) {
 }
 class m extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A)
+    this.waitFor(s.A)
   }
   isUnavailable(e) {
     return null != e && u.has(e)
   }
   get totalGuilds() {
-    return o.A.getGuildCount() + u.size
+    return s.A.getGuildCount() + u.size
   }
   get totalUnavailableGuilds() {
     return u.size

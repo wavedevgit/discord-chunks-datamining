@@ -19,8 +19,8 @@ let f = e => {
       analyticsSourceLocation: n,
       analyticsLocations: i,
       orbProductContext: a,
-      isRedeeming: s,
-      orbRedemptionError: o,
+      isRedeeming: o,
+      orbRedemptionError: s,
       onRedeemVirtualCurrency: l,
       rentalDuration: f
     } = e, {
@@ -35,7 +35,7 @@ let f = e => {
       analyticsSourceLocation: n,
       analyticsLocations: i,
       orbProductContext: a,
-      orbRedemptionError: o,
+      orbRedemptionError: s,
       onRedeemVirtualCurrency: l
     }), {
       disabled: y,
@@ -59,7 +59,7 @@ let f = e => {
       reviewBodyLegalContent: null,
       primaryCTAButtonProps: {
         onClick: m,
-        loading: s,
+        loading: o,
         text: O,
         disabled: y,
         tooltipText: b
@@ -76,10 +76,10 @@ let f = e => {
       sharedCheckoutContext: {
         skuId: i,
         analyticsLocations: a,
-        analyticsSourceLocation: s,
-        flowSpecificOptions: o
+        analyticsSourceLocation: o,
+        flowSpecificOptions: s
       }
-    } = e, l = null != (t = o.rentalDuration) ? t : true, {
+    } = e, l = null != (t = s.rentalDuration) ? t : true, {
       handleClose: u
     } = r;
     (0, c.e1)({
@@ -93,7 +93,7 @@ let f = e => {
     } = g(), m = f({
       skuId: i,
       analyticsLocations: a,
-      analyticsSourceLocation: s,
+      analyticsSourceLocation: o,
       orbProductContext: d,
       isRedeeming: p,
       orbRedemptionError: _,
@@ -110,7 +110,7 @@ let f = e => {
       onClose: t,
       step: n
     } = e;
-    return (0, r.jsx)(o.A, {
+    return (0, r.jsx)(s.A, {
       isOrbCheckout: true,
       step: n,
       onClose: () => t(false)
@@ -131,13 +131,13 @@ let f = e => {
         loadId: n,
         analyticsLocations: i,
         analyticsSourceLocation: a,
-        renderModalProps: s,
-        flowSpecificOptions: o,
+        renderModalProps: o,
+        flowSpecificOptions: s,
         children: u
       } = e, {
         onCheckoutSuccess: d,
         rentalDuration: f
-      } = o, {
+      } = s, {
         orbProductContext: p,
         isRedeeming: _,
         orbRedemptionError: g,
@@ -149,7 +149,7 @@ let f = e => {
         analyticsLocations: i,
         rentalDuration: f
       }), y = (0, c.My)({
-        onClose: s.onClose,
+        onClose: o.onClose,
         skuId: t,
         analyticsLocations: i,
         analyticsSourceLocation: a,
@@ -162,10 +162,10 @@ let f = e => {
             skuId: t,
             analyticsLocations: i,
             analyticsSourceLocation: a,
-            flowSpecificOptions: o
+            flowSpecificOptions: s
           },
           paymentModalProps: y,
-          renderModalProps: s
+          renderModalProps: o
         },
         children: (0, r.jsx)(m.Provider, {
           value: {

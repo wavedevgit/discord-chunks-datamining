@@ -110,11 +110,11 @@ let h = 1e3 / 60,
 function b(e) {
   let {
     children: t
-  } = e, [n, o] = i.useState(false), d = (0, l.Us)(), [p, b] = i.useState(null), {
+  } = e, [n, s] = i.useState(false), d = (0, l.Us)(), [p, b] = i.useState(null), {
     confettiCanvas: O
-  } = i.useContext(s.x), v = (0, a.f9)(O, p), A = i.useMemo(() => ({
-    triggerAnimation: () => o(true),
-    untriggerAnimation: () => o(false)
+  } = i.useContext(o.x), v = (0, a.f9)(O, p), A = i.useMemo(() => ({
+    triggerAnimation: () => s(true),
+    untriggerAnimation: () => s(false)
   }), []), I = i.useCallback(() => {
     let e = null == O ? true : O.getCanvas();
     if (null == e) return;

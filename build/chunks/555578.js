@@ -10,12 +10,12 @@ var Chunk530702 = require("./530702.js"),
 function a(e, t, n) {
   let a = (0, i.useMemo)(() => new(0, r.G), []),
     {
-      children: s,
-      items: o,
+      children: o,
+      items: s,
       collection: l
     } = e;
   return (0, i.useMemo)(() => l || t(a.build({
-    children: s,
-    items: o
-  }, n)), [a, s, o, l, n, t])
+    children: o,
+    items: s
+  }, n)), [a, o, s, l, n, t])
 }

@@ -2,7 +2,7 @@
 /** chunk id: 540604, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -10,7 +10,7 @@ var Chunk985410 = require("./985410.js"),
   Chunk379326 = require("./379326.js"),
   Chunk269385 = require("./269385.js");
 
-function o() {
+function s() {
   return (0, r.jsx)("div", {
     className: i.k,
     children: (0, r.jsxs)("svg", {
@@ -138,7 +138,7 @@ function o() {
             y: "0",
             height: "44",
             width: "44",
-            href: s
+            href: o
           })
         })]
       })]

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 935606, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 73169 **/
+/** chunk id: 935606, original params: e,t,r (module,exports,require) **/
 module.exports = {
   DB: "itemContainer__971b5",
   AS: "item__971b5",

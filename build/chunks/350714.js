@@ -5,18 +5,18 @@ var Chunk446474 = require("./446474.js"),
   Chunk101968 = require("./101968.js"),
   Chunk95959 = require("./95959.js");
 module.exports = function(e, t, n) {
-  var s, o;
+  var o, s;
   i(e);
   try {
-    if (!(s = a(e, "return"))) {
+    if (!(o = a(e, "return"))) {
       if ("throw" === t) throw n;
       return n
     }
-    s = r(s, e)
+    o = r(o, e)
   } catch (e) {
-    o = true, s = e
+    s = true, o = e
   }
   if ("throw" === t) throw n;
-  if (o) throw s;
-  return i(s), n
+  if (s) throw o;
+  return i(o), n
 }

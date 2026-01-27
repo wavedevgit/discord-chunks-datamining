@@ -18,9 +18,9 @@ module.exports = function(e, t, n, h, m) {
   if (true !== e && !_(e)) throw new r("Assertion failed: O must be undefined or an Object");
   if (!d(t)) throw new r("Assertion failed: P must be a Property Key");
   if ("boolean" != typeof n) throw new r("Assertion failed: extensible must be a Boolean");
-  if (!s(h)) throw new r("Assertion failed: Desc must be a Property Descriptor");
-  if (true !== m && !s(m)) throw new r("Assertion failed: current must be a Property Descriptor, or undefined");
-  if (true === m) return !!n && ("Undefined" === y || (l(h) ? i(c, f, o, e, t, h) : i(c, f, o, e, t, {
+  if (!o(h)) throw new r("Assertion failed: Desc must be a Property Descriptor");
+  if (true !== m && !o(m)) throw new r("Assertion failed: current must be a Property Descriptor, or undefined");
+  if (true === m) return !!n && ("Undefined" === y || (l(h) ? i(c, f, s, e, t, h) : i(c, f, s, e, t, {
     "[[Configurable]]": !!h["[[Configurable]]"],
     "[[Enumerable]]": !!h["[[Enumerable]]"],
     "[[Value]]": h["[[Value]]"],
@@ -36,15 +36,15 @@ module.exports = function(e, t, n, h, m) {
       if ("[[Get]]" in h && !f(h["[[Get]]"], m["[[Get]]"]) || "[[Set]]" in h && !f(h["[[Set]]"], m["[[Set]]"])) returnfalse
     } else if (!m["[[Writable]]"] && ("[[Writable]]" in h && h["[[Writable]]"] || "[[Value]]" in h && !f(h["[[Value]]"], m["[[Value]]"]))) returnfalse
   }
-  return "Undefined" === y || (c(m) && l(h) ? i(c, f, o, e, t, {
+  return "Undefined" === y || (c(m) && l(h) ? i(c, f, s, e, t, {
     "[[Configurable]]": !!(g = ("[[Configurable]]" in h ? h : m)["[[Configurable]]"]),
     "[[Enumerable]]": !!(E = ("[[Enumerable]]" in h ? h : m)["[[Enumerable]]"]),
     "[[Get]]": ("[[Get]]" in h ? h : m)["[[Get]]"],
     "[[Set]]": ("[[Set]]" in h ? h : m)["[[Set]]"]
-  }) : l(m) && c(h) ? i(c, f, o, e, t, {
+  }) : l(m) && c(h) ? i(c, f, s, e, t, {
     "[[Configurable]]": !!(g = ("[[Configurable]]" in h ? h : m)["[[Configurable]]"]),
     "[[Enumerable]]": !!(E = ("[[Enumerable]]" in h ? h : m)["[[Enumerable]]"]),
     "[[Value]]": ("[[Value]]" in h ? h : m)["[[Value]]"],
     "[[Writable]]": !!("[[Writable]]" in h ? h : m)["[[Writable]]"]
-  }) : i(c, f, o, e, t, h))
+  }) : i(c, f, s, e, t, h))
 }

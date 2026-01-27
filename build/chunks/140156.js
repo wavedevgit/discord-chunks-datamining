@@ -17,11 +17,11 @@ module.exports = function(e) {
       begin: /->\{/,
       end: /\}/
     },
-    s = {
+    o = {
       scope: "attr",
       match: /\s+:\s*\w+(\s*\(.*?\))?/
     },
-    o = {
+    s = {
       scope: "variable",
       variants: [{
         begin: /\$\d/
@@ -31,7 +31,7 @@ module.exports = function(e) {
         begin: /[$%@](?!")[^\s\w{=]|\$=/,
         relevance: 0
       }],
-      contains: [s]
+      contains: [o]
     },
     l = {
       className: "number",
@@ -48,14 +48,14 @@ module.exports = function(e) {
       }],
       relevance: 0
     },
-    c = [e.BACKSLASH_ESCAPE, i, o],
+    c = [e.BACKSLASH_ESCAPE, i, s],
     u = [/!/, /\//, /\|/, /\?/, /'/, /"/, /#/],
     d = (e, r, i = "\\1") => {
       let a = "\\1" === i ? i : t.concat(i, r);
       return t.concat(t.concat("(?:", e, ")"), r, /(?:\\.|[^\\\/])*?/, a, /(?:\\.|[^\\\/])*?/, i, n)
     },
     f = (e, r, i) => t.concat(t.concat("(?:", e, ")"), r, /(?:\\.|[^\\\/])*?/, i, n),
-    p = [o, e.HASH_COMMENT_MODE, e.COMMENT(/^=\w/, /=cut/, {
+    p = [s, e.HASH_COMMENT_MODE, e.COMMENT(/^=\w/, /=cut/, {
       endsWithParent: true
     }), a, {
       className: "string",
@@ -145,14 +145,14 @@ module.exports = function(e) {
       end: "(\\s*\\(.*?\\))?[;{]",
       excludeEnd: true,
       relevance: 5,
-      contains: [e.TITLE_MODE, s]
+      contains: [e.TITLE_MODE, o]
     }, {
       className: "class",
       beginKeywords: "class",
       end: "[;{]",
       excludeEnd: true,
       relevance: 5,
-      contains: [e.TITLE_MODE, s, l]
+      contains: [e.TITLE_MODE, o, l]
     }, {
       begin: "-\\w\\b",
       relevance: 0

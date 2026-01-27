@@ -12,7 +12,7 @@ var Chunk360881 = require("./360881.js"),
 
 function l(e, t, n) {
   var l, c;
-  let u = (0, o.H)({
+  let u = (0, s.H)({
       isReadOnly: e.isReadOnly || t.isReadOnly,
       isSelected: t.isSelected(e.value),
       defaultSelected: t.defaultValue.includes(e.value),
@@ -35,10 +35,10 @@ function l(e, t, n) {
     value: u.isSelected,
     name: true,
     validationBehavior: "aria"
-  }), g = (0, s.useRef)(a.YD), E = () => {
+  }), g = (0, o.useRef)(a.YD), E = () => {
     t.setInvalid(e.value, m.isInvalid ? m : g.current)
   };
-  (0, s.useEffect)(E);
+  (0, o.useEffect)(E);
   let y = t.realtimeValidation.isInvalid ? t.realtimeValidation : m,
     b = "native" === h ? t.displayValidation : y,
     O = (0, r.v)({

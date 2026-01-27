@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => f,
-  Bf: () => s,
+  Bf: () => o,
   vZ: () => c
 }), require("./65821.js");
 var Chunk841117 = require("./841117.js");
@@ -15,18 +15,18 @@ async function a() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 3,
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 500,
     a = null,
-    s = e;
+    o = e;
   for (;;) try {
     await Promise.resolve().then(n.bind(n, 5426));
     return
   } catch (e) {
-    if (e instanceof ReferenceError || e instanceof WebAssembly.CompileError) throw o(true), i("Unsupported browser, skipping libdiscore, error: [".concat(e.name, "] ").concat(e.message)), e;
-    if (a = e, delete n.c[5426], 0 == --s) throw a;
-    i("Failed to import libdiscore-wasm, retrying... (".concat(s, " attempts left), ").concat(a.name, ": ").concat(a.message)), await (0, r.eU)(t)
+    if (e instanceof ReferenceError || e instanceof WebAssembly.CompileError) throw s(true), i("Unsupported browser, skipping libdiscore, error: [".concat(e.name, "] ").concat(e.message)), e;
+    if (a = e, delete n.c[5426], 0 == --o) throw a;
+    i("Failed to import libdiscore-wasm, retrying... (".concat(o, " attempts left), ").concat(a.name, ": ").concat(a.message)), await (0, r.eU)(t)
   }
 }
 
-function s() {
+function o() {
   let e = u();
   if (null != e) return e;
   {
@@ -40,7 +40,7 @@ function s() {
   }
 }
 
-function o(e) {
+function s(e) {
   window._libdiscoreUnsupportedBrowser = e
 }
 

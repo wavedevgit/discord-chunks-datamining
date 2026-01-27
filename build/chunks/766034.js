@@ -9,7 +9,7 @@ var Chunk626584 = require("./626584.js"),
   Chunk403362 = require("./403362.js"),
   Chunk723176 = require("./723176.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,7 +21,7 @@ let l = new Chunk626584.A("GuildVersions");
 class c {
   async getCommittedVersions() {
     try {
-      let e = s.A.guildVersions();
+      let e = o.A.guildVersions();
       if (null == e) return {};
       let t = (await e.getMany()).map(e => [e.id, e.version]);
       return Object.fromEntries(null != t ? t : [])
@@ -114,7 +114,7 @@ class c {
   }
   commit(e) {
     if (this.pending.size > 0) {
-      let t = s.A.guildVersionsTransaction(e);
+      let t = o.A.guildVersionsTransaction(e);
       for (let [e, n] of this.pending) null != n ? (t.put({
         id: e,
         version: n
@@ -123,7 +123,7 @@ class c {
     }
   }
   constructor() {
-    o(this, "pending", new Map), o(this, "committed", new Map), o(this, "actions", {
+    s(this, "pending", new Map), s(this, "committed", new Map), s(this, "actions", {
       BACKGROUND_SYNC: (e, t) => this.handleBackgroundSync(e, t),
       CHANNEL_CREATE: (e, t) => this.handleChannelCreate(e, t),
       CHANNEL_DELETE: (e, t) => this.handleChannelDelete(e, t),

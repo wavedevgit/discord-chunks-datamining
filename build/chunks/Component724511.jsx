@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk573435 = require("./573435.jsx"),
   Chunk260509 = require("./260509.js"),
@@ -28,12 +28,12 @@ let d = e => {
     onMouseOver: E,
     onMouseLeave: y,
     children: [(0, r.jsx)(l.Ay, {
-      className: s()(u.dK, t),
+      className: o()(u.dK, t),
       mask: a || h ? l.hW.SQUIRCLE : l.hW.AVATAR_DEFAULT,
       width: d,
       height: f,
       children: null == g ? (0, r.jsx)("div", {
-        className: s()(u.$f, u.Gc),
+        className: o()(u.$f, u.Gc),
         children: (0, r.jsx)("div", {
           className: u.Hj,
           children: (0, c.Rb)(n)
@@ -45,7 +45,7 @@ let d = e => {
       })
     }), _ ? (0, r.jsx)("div", {
       className: u.bg,
-      children: (0, r.jsx)(o.XAi, {
+      children: (0, r.jsx)(s.XAi, {
         size: "custom",
         color: "currentColor",
         width: 10,

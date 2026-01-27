@@ -12,15 +12,15 @@ var Chunk508675 = require("./508675.js"),
   Chunk403362 = require("./403362.js"),
   Chunk348943 = require("./348943.js");
 
-function o(e) {
+function s(e) {
   let {
     guildId: t,
     emojiId: n,
     emojiName: a
-  } = e, s = r.o2.get(t);
+  } = e, o = r.o2.get(t);
   if (null == n && null == a) return null;
   if (null != n)
-    if (null != s) return s.getById(n);
+    if (null != o) return o.getById(n);
     else return null;
   return null != a ? i.Ay.getByName(a) : null
 }
@@ -34,7 +34,7 @@ function c(e, t) {
     var r;
     i.position < 0 || i.position >= 5 || (n[i.position] = {
       label: i.label,
-      emoji: null != (r = o({
+      emoji: null != (r = s({
         guildId: e,
         emojiId: i.emoji_id,
         emojiName: i.emoji_name
@@ -106,7 +106,7 @@ function _(e) {
 }
 
 function h(e) {
-  var t, n, r, i, a, o;
+  var t, n, r, i, a, s;
   let {
     guild: l,
     profile: c
@@ -119,11 +119,11 @@ function h(e) {
     customBanner: l.banner,
     onlineCount: null != (n = null != (r = l.approximate_presence_count) ? r : e.approximate_presence_count) ? n : 0,
     memberCount: null != (i = null != (a = l.approximate_member_count) ? a : e.approximate_member_count) ? i : 0,
-    visibility: s.n.NOT_SPECIFIED,
+    visibility: o.n.NOT_SPECIFIED,
     traits: [],
     gameApplicationIds: [],
     gameActivity: {},
-    features: null != (o = l.features) ? o : [],
+    features: null != (s = l.features) ? s : [],
     brandColorPrimary: null,
     tag: null,
     badge: null,

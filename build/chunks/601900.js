@@ -36,11 +36,11 @@ function u(e) {
 
 function d() {
   var e;
-  let t = o.A.getVoiceChannelId();
+  let t = s.A.getVoiceChannelId();
   return u({
     channelId: null != t ? t : true,
-    mediaSessionId: null != (e = s.A.getMediaSessionId()) ? e : true,
-    rtcConnectionId: s.A.getRTCConnectionId(),
+    mediaSessionId: null != (e = o.A.getMediaSessionId()) ? e : true,
+    rtcConnectionId: o.A.getRTCConnectionId(),
     mediaContext: r.x.DEFAULT
   }, p())
 }
@@ -50,11 +50,11 @@ function f(e) {
   let {
     channelId: n,
     ownerId: a
-  } = (0, i.Iy)(e), s = l.A.getRTCConnection(e);
+  } = (0, i.Iy)(e), o = l.A.getRTCConnection(e);
   return u({
     channelId: n,
-    mediaSessionId: null != (t = null == s ? true : s.getMediaSessionId()) ? t : true,
-    rtcConnectionId: null == s ? true : s.getRTCConnectionId(),
+    mediaSessionId: null != (t = null == o ? true : o.getMediaSessionId()) ? t : true,
+    rtcConnectionId: null == o ? true : o.getRTCConnectionId(),
     mediaContext: r.x.STREAM,
     streamKey: e,
     userId: a

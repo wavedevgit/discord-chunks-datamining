@@ -22,7 +22,7 @@ function a(e, t) {
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
 
-function s(e, t) {
+function o(e, t) {
   if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
   e.prototype = Object.create(t && t.prototype, {
     constructor: {
@@ -44,7 +44,7 @@ module.exports = function(e) {
     var r = a(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
     return r._parent = e, r._interpolation = n, r._listeners = {}, r
   }
-  return s(t, e), r(t, [{
+  return o(t, e), r(t, [{
     key: "__getValue",
     value: function() {
       var e = this._parent.__getValue();

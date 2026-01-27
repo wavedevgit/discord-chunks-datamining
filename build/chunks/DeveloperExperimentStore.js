@@ -23,11 +23,11 @@ function d(e, t, n) {
 let f = "production" === Chunk115093.B.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === Chunk115093.B.STAGING;
 
 function p() {
-  f = (0, s.I9)(l.default.getCurrentUser())
+  f = (0, o.I9)(l.default.getCurrentUser())
 }
 class _ extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.default, o.A), Object.defineProperties(this, {
+    this.waitFor(l.default, s.A), Object.defineProperties(this, {
       isDeveloper: {
         configurable: false,
         get: () => f,

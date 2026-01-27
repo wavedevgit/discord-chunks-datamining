@@ -28,7 +28,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -39,8 +39,8 @@ function s(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function s(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -69,7 +69,7 @@ function c() {
           scrollTop: e,
           scrollLeft: r
         } = n;
-        t.current = o(a({}, t.current), {
+        t.current = s(a({}, t.current), {
           scrollTop: e,
           scrollLeft: r,
           dirty: 0
@@ -80,16 +80,16 @@ function c() {
           scrollLeft: r,
           scrollHeight: i,
           scrollWidth: a,
-          offsetHeight: s,
-          offsetWidth: o
+          offsetHeight: o,
+          offsetWidth: s
         } = n;
         t.current = {
           scrollTop: e,
           scrollLeft: r,
           scrollHeight: i,
           scrollWidth: a,
-          offsetHeight: s,
-          offsetWidth: o,
+          offsetHeight: o,
+          offsetWidth: s,
           dirty: 0
         }
       }

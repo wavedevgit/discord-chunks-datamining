@@ -8,7 +8,7 @@ var Chunk652215 = require("./652215.js");
 let i = [],
   a = false;
 
-function s() {
+function o() {
   let e = window.navigator.connection;
   return null == e ? {
     type: r.wY_.UNKNOWN,
@@ -19,7 +19,7 @@ function s() {
   }
 }
 
-function o() {
+function s() {
   if (true === a) return;
   let e = window.navigator.connection;
   null != e && (a = true, e.addEventListener("change", c))
@@ -32,12 +32,12 @@ function l() {
 }
 
 function c() {
-  let e = s();
+  let e = o();
   i.forEach(t => t(e))
 }
 
 function u(e) {
-  i.push(e), o()
+  i.push(e), s()
 }
 
 function d(e) {
@@ -63,7 +63,7 @@ let f = {
   removeChangeCallback(e) {
     d(e)
   },
-  getNetworkInformation: () => Promise.resolve(s()),
+  getNetworkInformation: () => Promise.resolve(o()),
   isOnline() {
     let e = navigator.onLine;
     return true === e || e

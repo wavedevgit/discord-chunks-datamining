@@ -11,7 +11,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk775602 = require("./775602.js");
 
 function l(e) {
-  let t = (0, s.bG)([o.A], () => o.A.saturation);
+  let t = (0, o.bG)([s.A], () => s.A.saturation);
   return r.useMemo(() => {
     if (null == e) return null;
     if ("currentColor" === e || e.startsWith("var(")) return e;

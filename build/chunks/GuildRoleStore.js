@@ -9,7 +9,7 @@ var Chunk952526 = require("./952526.js"),
   Chunk9865 = require("./9865.js"),
   Chunk7864 = require("./7864.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -53,10 +53,10 @@ class c extends Chunk952526.U {
     return n
   }
   constructor(...e) {
-    super(...e), o(this, "getSortedRoles", this.memoizedPartition((e, t) => s.gE(Object.values(t)))), o(this, "getRolesSnapshot", this.memoizedPartition((e, t) => l({}, t)))
+    super(...e), s(this, "getSortedRoles", this.memoizedPartition((e, t) => o.gE(Object.values(t)))), s(this, "getRolesSnapshot", this.memoizedPartition((e, t) => l({}, t)))
   }
 }
-o(c, "displayName", "GuildRoleStore");
+s(c, "displayName", "GuildRoleStore");
 let u = new c({
   BACKGROUND_SYNC: (e, t) => {
     let {
@@ -64,7 +64,7 @@ let u = new c({
     } = e;
     for (let e of n) {
       let n = t.getPartition(e.id);
-      null != n && "unavailable" !== e.data_mode && t.setPartition(e.id, "partial" === e.data_mode ? s.ly(e.id, n, e.partial_updates.roles, e.partial_updates.deleted_role_ids) : a.hd(e.id, e.roles))
+      null != n && "unavailable" !== e.data_mode && t.setPartition(e.id, "partial" === e.data_mode ? o.ly(e.id, n, e.partial_updates.roles, e.partial_updates.deleted_role_ids) : a.hd(e.id, e.roles))
     }
   },
   OVERLAY_INITIALIZE: (e, t) => {

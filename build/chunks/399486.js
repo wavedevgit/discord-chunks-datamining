@@ -8,7 +8,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk177658 = require("./177658.js"),
   Chunk142120 = require("./142120.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk439372.A {
+class s extends Chunk439372.A {
   handleCheckExperiments() {
     let {
       enabled: e
@@ -28,7 +28,7 @@ class o extends Chunk439372.A {
     a.A.getSocket().dispatcher.toggleRequestIdleCallback(e)
   }
   constructor(...e) {
-    super(...e), s(this, "actions", {
+    super(...e), o(this, "actions", {
       EXPERIMENT_OVERRIDE_BUCKET: this.handleCheckExperiments,
       LOGIN_SUCCESS: this.handleCheckExperiments,
       EXPERIMENTS_FETCH_SUCCESS: this.handleCheckExperiments,
@@ -37,4 +37,4 @@ class o extends Chunk439372.A {
     })
   }
 }
-let l = new o
+let l = new s

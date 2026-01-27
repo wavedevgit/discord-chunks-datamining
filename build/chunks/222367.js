@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $P: () => d,
-  KE: () => o,
+  KE: () => s,
   U_: () => u,
   VJ: () => E,
   Y_: () => m,
@@ -24,8 +24,8 @@ var Chunk391898 = require("./391898.js"),
     return true === r && (r = 0), true === i && (i = 0), true === a && (a = 0), new Date(Date.UTC(e, t - 1, n, r, i, a))
   },
   a = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
-  s = 864e5,
-  o = 9999,
+  o = 864e5,
+  s = 9999,
   l = i(1970, 1, 1),
   c = [6, 0, 1, 2, 3, 4, 5],
   u = function(e) {
@@ -41,13 +41,13 @@ var Chunk391898 = require("./391898.js"),
     return 60 * e.getTimezoneOffset() * 1e3
   },
   _ = function(e, t) {
-    return Math.round((e.getTime() - p(e) - (t.getTime() - p(t))) / s)
+    return Math.round((e.getTime() - p(e) - (t.getTime() - p(t))) / o)
   },
   h = function(e) {
     return _(e, l)
   },
   m = function(e) {
-    return new Date(l.getTime() + e * s)
+    return new Date(l.getTime() + e * o)
   },
   g = function(e) {
     var t = e.getUTCMonth();

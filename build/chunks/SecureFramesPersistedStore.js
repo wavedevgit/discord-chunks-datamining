@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,9 +15,9 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = [],
+let s = [],
   l = false,
-  c = o;
+  c = s;
 
 function u(e) {
   l = e.persistentCodesEnabled
@@ -33,12 +33,12 @@ function d(e) {
 }
 
 function f() {
-  c = o
+  c = s
 }
 class p extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t, n;
-    l = null != (t = null == e ? true : e.persistentCodesEnabled) && t, c = null != (n = null == e ? true : e.uploadedKeyVersions) ? n : o
+    l = null != (t = null == e ? true : e.persistentCodesEnabled) && t, c = null != (n = null == e ? true : e.uploadedKeyVersions) ? n : s
   }
   getState() {
     return {
@@ -53,7 +53,7 @@ class p extends(r = Chunk311907.Ay.PersistedStore) {
     return c
   }
 }
-s(p, "displayName", "SecureFramesPersistedStore"), s(p, "persistKey", "SecureFramesPersistedStore");
+o(p, "displayName", "SecureFramesPersistedStore"), o(p, "persistKey", "SecureFramesPersistedStore");
 let _ = new p(Chunk73153.h, {
   SECURE_FRAMES_SETTINGS_UPDATE: u,
   SECURE_FRAMES_UPLOADED_KEY_VERSION_ADD: d,

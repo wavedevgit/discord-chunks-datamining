@@ -15,8 +15,8 @@ function l(e) {
     message: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.U,
-    children: [(0, r.jsx)(s.id, {
+    className: s.U,
+    children: [(0, r.jsx)(o.id, {
       color: a.A.colors.ICON_STRONG
     }), (0, r.jsx)(i.EYj, {
       variant: "text-sm/medium",

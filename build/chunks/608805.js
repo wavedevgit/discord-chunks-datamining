@@ -35,7 +35,7 @@ function a(e, t) {
   return n
 }
 
-function s(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
@@ -43,7 +43,7 @@ function s(e, t) {
 require.d(exports, {
   T0: () => l
 });
-let o = (0, require("./945810.js").mj)({
+let s = (0, require("./945810.js").mj)({
     name: "2026-01-unified-checkout-ui",
     kind: "user",
     defaultConfig: {
@@ -60,10 +60,10 @@ let o = (0, require("./945810.js").mj)({
   l = e => {
     let {
       location: t
-    } = e, n = o.useConfig({
+    } = e, n = s.useConfig({
       location: t
     });
-    return s(i({}, n), {
+    return o(i({}, n), {
       isTreatment: 1 === n.variation
     })
   }

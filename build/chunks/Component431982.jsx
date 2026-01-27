@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 431982, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 431982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,42 +13,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk888920 = require("./888920.js");
 
-function f(e) {
+function _(e) {
   let {
     user: t,
     guild: n,
-    titleIcon: f
+    titleIcon: _
   } = e, {
     analyticsLocations: p
-  } = (0, s.Ay)(), _ = null != n, {
-    userNameplate: h,
-    guildNameplate: m,
-    pendingNameplate: g,
-    pendingErrors: E
-  } = (0, l.rv)(t, null == n ? true : n.id), y = true === g ? (_ ? m : h) != null : null != g, b = i.useCallback(() => {
-    (0, o.p)({
+  } = (0, s.Ay)(), m = null != n, {
+    userNameplate: g,
+    guildNameplate: A,
+    pendingNameplate: f,
+    pendingErrors: h
+  } = (0, o.rv)(t, null == n ? true : n.id), b = i.useCallback(() => {
+    (0, a.p)({
       analyticsLocations: p,
       guildId: null == n ? true : n.id
     })
-  }, [p, null == n ? true : n.id]), O = i.useCallback(() => {
-    (0, l.pX)(null, null == n ? true : n.id)
+  }, [p, null == n ? true : n.id]), E = i.useCallback(() => {
+    (0, o.pX)(null, null == n ? true : n.id)
   }, [null == n ? true : n.id]);
   return (0, r.jsx)(c.A, {
-    title: u.intl.string(u.t.x5CoXR),
-    titleIcon: f,
-    errors: E,
+    title: d.intl.string(d.t.x5CoXR),
+    titleIcon: _,
+    errors: h,
     children: (0, r.jsxs)("div", {
-      className: d.u,
-      children: [(0, r.jsx)(a.Button, {
+      className: u.u,
+      children: [(0, r.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
-        text: u.intl.string(u.t.BwdeM1),
+        text: d.intl.string(d.t.BwdeM1),
         onClick: b
-      }), y && (0, r.jsx)(a.Button, {
+      }), (true === f ? (m ? A : g) != null : null != f) && (0, r.jsx)(l.Button, {
         variant: "secondary",
         size: "sm",
-        text: _ ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),
-        onClick: O
+        text: m ? d.intl.string(d.t.CHf9iJ) : d.intl.string(d.t["9zwziY"]),
+        onClick: E
       })]
     })
   })

@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk998218 = require("./998218.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,8 +47,8 @@ function _(e) {
       name: n,
       summary: i,
       websites: a,
-      themes: s,
-      genres: o,
+      themes: o,
+      genres: s,
       platforms: c,
       artwork_urls: u,
       screenshot_urls: d,
@@ -65,8 +65,8 @@ function _(e) {
       summary: i,
       summaryLocalized: h,
       websites: a,
-      themes: s,
-      genres: o,
+      themes: o,
+      genres: s,
       platforms: c,
       artwork: u,
       screenshots: d,
@@ -118,7 +118,7 @@ class m extends(r = Chunk311907.Ay.Store) {
     let r = null == (n = l.get(e)) ? true : n.coverImageUrl;
     if (null == r) return null;
     if (null == t) return r;
-    let i = s.A.toURLSafe(r);
+    let i = o.A.toURLSafe(r);
     return null == i ? r : (i.searchParams.set("size", t.size.toString()), i.toString())
   }
   noDataAvailable(e) {
@@ -131,7 +131,7 @@ class m extends(r = Chunk311907.Ay.Store) {
     return l.size
   }
 }
-o(m, "displayName", "DetectableGameSupplementalStore");
+s(m, "displayName", "DetectableGameSupplementalStore");
 let g = new m(Chunk73153.h, {
   LOGOUT: f,
   DETECTABLE_GAME_SUPPLEMENTAL_FETCH: p,

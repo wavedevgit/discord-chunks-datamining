@@ -2,13 +2,13 @@
 /** chunk id: 19306, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  y: () => o
+  y: () => s
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk889634 = require("./889634.jsx");
-let s = e => {
+let o = e => {
     let {
       color: t
     } = e;
@@ -25,7 +25,7 @@ let s = e => {
       }
     })
   },
-  o = {
+  s = {
     title: "Grid",
     stories: [{
       name: "Grid",
@@ -44,53 +44,53 @@ let s = e => {
             },
             children: (0, r.jsxs)(a.A, {
               columns: t,
-              children: [(0, r.jsx)(s, {
+              children: [(0, r.jsx)(o, {
                 color: "red"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "orange"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "yellow"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "green"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "blue"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "violet"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "red"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "orange"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "yellow"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "green"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "blue"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "violet"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "red"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "orange"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "yellow"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "green"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "blue"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "violet"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "red"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "orange"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "yellow"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "green"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "blue"
-              }), (0, r.jsx)(s, {
+              }), (0, r.jsx)(o, {
                 color: "violet"
               })]
             })

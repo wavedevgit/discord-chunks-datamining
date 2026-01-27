@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 844330, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  A: () => u
+  A: () => d
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,27 +11,27 @@ var Chunk627968 = require("./627968.js"),
   Chunk147925 = require("./147925.jsx"),
   Chunk314516 = require("./314516.js");
 
-function u(e) {
+function d(e) {
   let {
     icon: t,
     title: n,
     subtitle: s,
-    children: u,
-    className: d,
+    children: d,
+    className: u,
     isExpanded: h,
     onExpandedChange: p,
     defaultExpanded: g = false,
-    onOpen: m,
+    onOpen: _,
     maxHeight: f
-  } = e, [_, A] = i.useState(g), x = i.useRef(null), [E, v] = i.useState(null), j = true !== h, y = j ? h : _;
+  } = e, [m, A] = i.useState(g), x = i.useRef(null), [E, v] = i.useState(null), b = true !== h, y = b ? h : m;
   i.useEffect(() => {
     y && null != x.current && v(x.current.scrollHeight)
-  }, [y, u]);
-  let b = i.useCallback(() => {
+  }, [y, d]);
+  let j = i.useCallback(() => {
       let e = !y;
-      j || A(e), null == p || p(e), e && null != m && m()
-    }, [y, j, p, m]),
-    S = i.useMemo(() => {
+      b || A(e), null == p || p(e), e && null != _ && _()
+    }, [y, b, p, _]),
+    I = i.useMemo(() => {
       if (y) {
         if (null != f) return {
           maxHeight: "number" == typeof f ? "".concat(f, "px") : f
@@ -43,12 +42,12 @@ function u(e) {
       }
     }, [f, y, E]);
   return (0, r.jsxs)("div", {
-    className: l()(c.Yt, d, {
+    className: l()(c.Yt, u, {
       [c.Sg]: y
     }),
     children: [(0, r.jsxs)(a.DUT, {
       className: c.wx,
-      onClick: b,
+      onClick: j,
       children: [null != t && (0, r.jsx)("div", {
         className: c.Y5,
         children: t
@@ -78,8 +77,8 @@ function u(e) {
       className: l()(c.Qs, {
         [c.Sg]: y
       }),
-      style: S,
-      children: u
+      style: I,
+      children: d
     })]
   })
 }

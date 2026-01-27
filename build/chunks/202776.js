@@ -2,14 +2,14 @@
 /** chunk id: 202776, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s,
-  u: () => o
+  A: () => o,
+  u: () => s
 });
 var Chunk311907 = require("./311907.js"),
   Chunk164956 = require("./164956.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e) {
+function o(e) {
   return (0, r.bG)([i.A], () => {
     if ((null == e ? true : e.id) == null) returnfalse;
     let t = i.A.isFullServerPreview(e.id),
@@ -18,7 +18,7 @@ function s(e) {
   }) || (null == e ? true : e.features.has(a.GuildFeatures.GUILD_ONBOARDING_HAS_PROMPTS))
 }
 
-function o(e) {
+function s(e) {
   if (null == e) returnfalse;
   let t = i.A.isFullServerPreview(e.id),
     n = i.A.isOnboardingEnabled(e.id);

@@ -29,7 +29,7 @@ async function m() {
   null != r || (h() ? (await f.Ay.ensureModule("discord_cloudsync"), (r = new(f.Ay.getCloudSync())).on("state", e => a.h.dispatch({
     type: "GAME_CLOUD_SYNC_UPDATE",
     state: e
-  }))) : new s.A("CloudSyncUtils").warn("CloudSync is not supported on this platform"))
+  }))) : new o.A("CloudSyncUtils").warn("CloudSync is not supported on this platform"))
 }
 
 function g(e, t) {
@@ -39,13 +39,13 @@ function g(e, t) {
     type: p.R_U.NONE
   });
   let a = _(),
-    s = c.A.getState(e, t);
-  if (null == s) throw Error("No dispatch state for ".concat(e, ":").concat(t));
-  let d = null != (n = s.storage) ? n : {},
+    o = c.A.getState(e, t);
+  if (null == o) throw Error("No dispatch state for ".concat(e, ":").concat(t));
+  let d = null != (n = o.storage) ? n : {},
     f = (0, u.gW)(e, t),
     h = l.default.getToken();
   if (null == h) throw Error("Cannot use cloud sync when not authenticated.");
-  let m = null != s.installPath ? (0, o.A)(s.installPath) : null;
+  let m = null != o.installPath ? (0, s.A)(o.installPath) : null;
   if (null == m) throw Error("No install path for ".concat(e, ":").concat(t));
   let g = l.default.getId(),
     E = {

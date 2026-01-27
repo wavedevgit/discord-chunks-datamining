@@ -35,8 +35,8 @@ function p(e) {
 
 function _() {
   var e, t, n;
-  f = null != (e = null == (t = o.A.settings.favorites) ? true : t.muted) && e, d = {};
-  let r = null == (n = o.A.settings.favorites) ? true : n.favoriteChannels;
+  f = null != (e = null == (t = s.A.settings.favorites) ? true : t.muted) && e, d = {};
+  let r = null == (n = s.A.settings.favorites) ? true : n.favoriteChannels;
   if (null == r) returnfalse;
   for (let e in r) {
     let t = r[e];
@@ -51,7 +51,7 @@ function _() {
 }
 class h extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A), _(), this.syncWith([o.A], _)
+    this.waitFor(s.A), _(), this.syncWith([s.A], _)
   }
   getFavoriteChannels() {
     return d

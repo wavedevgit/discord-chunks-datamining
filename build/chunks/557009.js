@@ -26,7 +26,7 @@ class u extends Chunk315069.A {
       id: e.id,
       skuId: e.sku_id,
       applicationId: e.application_id,
-      user: null != e.user ? new o.A(e.user) : null,
+      user: null != e.user ? new s.A(e.user) : null,
       userId: e.user_id,
       gifterId: e.gifter_user_id,
       type: e.type,
@@ -41,7 +41,7 @@ class u extends Chunk315069.A {
       giftStyle: e.gift_style,
       guildId: e.guild_id,
       deleted: e.deleted,
-      sku: null != e.sku ? s.A.createFromServer(e.sku) : null,
+      sku: null != e.sku ? o.A.createFromServer(e.sku) : null,
       sourceType: null != (r = e.source_type) ? r : null,
       fulfillmentStatus: null != (i = e.fulfillment_status) ? i : null
     })

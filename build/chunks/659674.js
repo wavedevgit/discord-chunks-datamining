@@ -5,7 +5,7 @@ require.d(exports, {
   G8: () => R,
   NV: () => C,
   V: () => w,
-  ax: () => x,
+  ax: () => L,
   ds: () => P,
   fK: () => I,
   fS: () => D,
@@ -15,7 +15,7 @@ require.d(exports, {
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
   Chunk989349 = require("./989349.js"),
-  s = require.n(Chunk989349),
+  o = require.n(Chunk989349),
   Chunk317097 = require("./317097.js"),
   Chunk665260 = require("./665260.js"),
   Chunk661191 = require("./661191.js"),
@@ -52,8 +52,8 @@ function A(e) {
     width: r,
     height: i,
     placeholder: a,
-    placeholder_version: s,
-    description: o,
+    placeholder_version: o,
+    description: s,
     flags: c,
     content_type: d
   } = e;
@@ -63,8 +63,8 @@ function A(e) {
     width: r,
     height: i,
     placeholder: a,
-    placeholderVersion: s,
-    description: o,
+    placeholderVersion: o,
+    description: s,
     srcIsAnimated: (0, l.Lt)(null != c ? c : 0, u.qNw.IS_ANIMATED),
     flags: null != c ? c : 0,
     contentType: null != d ? d : true
@@ -94,7 +94,7 @@ function I(e, t, n) {
     }), null != n.provider && null != n.provider.name && (r.provider = {
       name: n.provider.name,
       url: n.provider.url
-    }), null != n.timestamp && (r.timestamp = s()(new Date(n.timestamp))), null != n.color && (r.color = (0, o.$k)(n.color, true)), null != n.thumbnail && O(n.thumbnail)) switch (r.type) {
+    }), null != n.timestamp && (r.timestamp = o()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.$k)(n.color, true)), null != n.thumbnail && O(n.thumbnail)) switch (r.type) {
     case u.Auw.ARTICLE:
     case u.Auw.IMAGE:
       r.image = A(n.thumbnail);
@@ -188,6 +188,6 @@ function D(e, t) {
   return e.isPrivate() ? !e.isManaged() : t.can(u.xBc.EMBED_LINKS, e)
 }
 
-function x(e) {
+function L(e) {
   return "" !== e.content || e.messageSnapshots.some(e => "" !== e.message.content || e.message.attachments.length > 0)
 }

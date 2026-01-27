@@ -2,9 +2,9 @@
 /** chunk id: 126904, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  c6: () => o,
+  c6: () => s,
   q: () => a,
-  tR: () => s
+  tR: () => o
 });
 var Chunk600975 = require("./600975.js"),
   Chunk688151 = require("./688151.js");
@@ -34,7 +34,7 @@ let a = (0, Chunk600975.C)({
   }]
 });
 
-function s(e) {
+function o(e) {
   let {
     location: t
   } = e;
@@ -45,7 +45,7 @@ function s(e) {
   })
 }
 
-function o(e) {
+function s(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   return a.getCurrentConfig({
     location: e

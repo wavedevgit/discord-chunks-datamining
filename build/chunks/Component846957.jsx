@@ -14,9 +14,9 @@ let l = e => {
     product: t,
     animationState: n,
     className: i
-  } = e, l = s.m[t.skuId];
+  } = e, l = o.m[t.skuId];
   return null != l ? (0, r.jsx)("div", {
-    className: a()(o.W, i),
+    className: a()(s.W, i),
     children: null != l.render && l.render({
       animationState: n,
       alt: t.name

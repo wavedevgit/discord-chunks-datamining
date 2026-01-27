@@ -32,7 +32,7 @@ let b = e => {
     } = e, b = (0, h.sC)(), {
       isPurchased: O,
       isPartiallyOwnedBundle: v
-    } = (0, p.h)(t), A = (0, f.G0)(t), I = (0, s.bG)([u.A], () => u.A.getCategoryForProduct(t.skuId)), S = (null == I ? true : I.unpublishedAt) != null ? (0, f.WU)(I.unpublishedAt) : null, T = (0, s.bG)([l.default], () => l.default.getCurrentUser()), C = c.Ay.canUseCollectibles(T), N = null != (0, m.V_)(t), {
+    } = (0, p.h)(t), A = (0, f.G0)(t), I = (0, o.bG)([u.A], () => u.A.getCategoryForProduct(t.skuId)), S = (null == I ? true : I.unpublishedAt) != null ? (0, f.WU)(I.unpublishedAt) : null, T = (0, o.bG)([l.default], () => l.default.getCurrentUser()), C = c.Ay.canUseCollectibles(T), N = null != (0, m.V_)(t), {
       isOrbExclusive: w
     } = (0, g.FI)({
       product: t,
@@ -66,7 +66,7 @@ let b = e => {
       case h.AW.RENTAL:
         P = E.intl.string(E.t.VgsFa1)
     }
-    return (0, r.jsx)(o.LpS, {
+    return (0, r.jsx)(s.LpS, {
       text: P,
       disableColor: true,
       className: a()(d, y.$)
@@ -78,14 +78,14 @@ let b = e => {
       badgeOverride: n,
       className: i,
       prioritizedCurrency: a,
-      skipLimitedTimeCheck: s
-    } = e, o = (0, h.Vm)(t), l = (0, d.Q)(o);
-    if (null == o) return null;
-    let c = (0, _.rb)(o, l);
+      skipLimitedTimeCheck: o
+    } = e, s = (0, h.Vm)(t), l = (0, d.Q)(s);
+    if (null == s) return null;
+    let c = (0, _.rb)(s, l);
     return (0, r.jsx)(b, {
       product: c,
       badgeOverride: n,
-      skipLimitedTimeCheck: s,
+      skipLimitedTimeCheck: o,
       className: i,
       prioritizedCurrency: a
     })

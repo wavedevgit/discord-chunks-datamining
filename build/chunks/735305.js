@@ -83,11 +83,11 @@ function b(e) {
     previousStepRef: R,
     setPurchaseState: P,
     paymentElementsEnabled: D,
-    isPremiumGroupPurchase: x,
-    isEligibleForTrial: L
+    isPremiumGroupPurchase: L,
+    isEligibleForTrial: x
   } = (0, u.P5)(), {
-    isGift: j
-  } = (0, c.Pv)(), M = E(m({}, (0, s.KP)()), {
+    isGift: M
+  } = (0, c.Pv)(), j = E(m({}, (0, o.KP)()), {
     paymentSources: O,
     paymentSourceId: v,
     setPaymentSourceId: A,
@@ -96,7 +96,7 @@ function b(e) {
     purchaseErrorBlockRef: T,
     paymentAuthenticationState: C,
     selectedSkuId: N,
-    isGift: j
+    isGift: M
   }), k = () => {
     l(Object.values(O).length < 1 && null == n ? d.pn.PLAN_SELECT : d.pn.REVIEW, {
       trackedFromStep: D ? d.pn.PAYMENT_ELEMENT : d.pn.PAYMENT_TYPE
@@ -104,17 +104,17 @@ function b(e) {
   }, U = null != _ ? _ : k;
   i()(b, "Step should be set here");
   let G = (0, a.A)(() => Date.now(), [b]),
-    V = (0, a.A)(() => null != h && null == R.current ? D ? d.pn.PAYMENT_ELEMENT : h : D ? d.pn.PAYMENT_ELEMENT : d.pn.PAYMENT_TYPE, [h, R.current, D]);
-  return (0, s.Y)({
-    paymentModalArgs: M,
-    initialStep: V,
+    F = (0, a.A)(() => null != h && null == R.current ? D ? d.pn.PAYMENT_ELEMENT : h : D ? d.pn.PAYMENT_ELEMENT : d.pn.PAYMENT_TYPE, [h, R.current, D]);
+  return (0, o.Y)({
+    paymentModalArgs: j,
+    initialStep: F,
     prependSteps: [d.pn.PROMOTION_INFO],
     appendSteps: [d.pn.REVIEW, d.pn.CONFIRM],
     breadcrumpSteps: r,
     currentBreadcrumpStep: b,
     usePaymentModalStep: true,
     analyticsData: t,
-    onReturn: x ? true : U,
+    onReturn: L ? true : U,
     onComplete: e => {
       d.l_.has(e) ? (P(f.h.COMPLETED), l(d.pn.CONFIRM, {
         trackedFromStep: e
@@ -127,15 +127,15 @@ function b(e) {
         currentStep: n,
         toStep: r
       } = e, i = Date.now();
-      o.default.track(p.HAw.PAYMENT_FLOW_STEP, E(m({}, t), {
+      s.default.track(p.HAw.PAYMENT_FLOW_STEP, E(m({}, t), {
         from_step: n,
         to_step: r,
         step_duration_ms: i - G,
         flow_duration_ms: i - g.startTime
       }))
     },
-    isEligibleForTrial: L,
-    allowDesktopRedirectPurchase: y(N, j, w),
+    isEligibleForTrial: x,
+    allowDesktopRedirectPurchase: y(N, M, w),
     continueSessionToInitialStep: h
   })
 }

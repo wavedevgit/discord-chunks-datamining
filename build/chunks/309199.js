@@ -5,21 +5,21 @@ require.d(exports, {
   SM: () => d,
   eh: () => c,
   k_: () => u,
-  uX: () => s
+  uX: () => o
 }), require("./896048.js");
 var Chunk661191 = require("./661191.js"),
   Chunk380335 = require("./380335.js"),
   Chunk157550 = require("./157550.js");
 
-function s(e) {
+function o(e) {
   let [t, n] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [i.A, a.A];
-  return l(o(e).filter(e => {
+  return l(s(e).filter(e => {
     let [, r] = e;
     return !t.isMessageRequest(r.id) && !n.isSpam(r.id)
   }))
 }
 
-function o(e) {
+function s(e) {
   return r.default.keys(e).map(t => [t, e[t]])
 }
 

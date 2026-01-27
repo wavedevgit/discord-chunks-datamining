@@ -10,14 +10,14 @@ var Chunk64700 = require("./64700.js"),
   Chunk52724 = require("./52724.js"),
   Chunk621466 = require("./621466.js"),
   Chunk650583 = require("./650583.js");
-let o = "data-jump-section",
+let s = "data-jump-section",
   l = "global",
   c = Chunk64700.createContext(l);
 
 function u() {
   let e = r.useContext(c);
   return r.useMemo(() => ({
-    [o]: e
+    [s]: e
   }), [e])
 }
 
@@ -27,21 +27,21 @@ function d(e) {
 }
 async function f(e) {
   var t, n, r, c;
-  if (e.key !== s.mi) return;
+  if (e.key !== o.mi) return;
   let u = (0, a.BF)(e);
   if (null == u) return;
   let d = null,
     f = null,
     p = e.target;
   for (; null != p;) {
-    if (p.hasAttribute(o)) {
-      d = p.getAttribute(o), f = p;
+    if (p.hasAttribute(s)) {
+      d = p.getAttribute(s), f = p;
       break
     }
     p = p.parentElement
   }
   let _ = (0, i.C)({
-    getFocusableElements: () => Array.from(u.querySelectorAll("[".concat(o, '="').concat(null != d ? d : l, '"]'))),
+    getFocusableElements: () => Array.from(u.querySelectorAll("[".concat(s, '="').concat(null != d ? d : l, '"]'))),
     getActiveElement: () => u.activeElement
   });
   if ((null == (t = (0, a.BF)(e)) ? true : t.activeElement) == null || null == f) {

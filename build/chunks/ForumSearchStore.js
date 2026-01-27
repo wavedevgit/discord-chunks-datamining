@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk734057 = require("./734057.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -49,7 +49,7 @@ function u(e, t) {
 let d = {};
 
 function f(e) {
-  let t = s.A.getChannel(e);
+  let t = o.A.getChannel(e);
   return null != t && !!t.isForumLikeChannel()
 }
 
@@ -143,7 +143,7 @@ function O() {
 }
 class v extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.A)
+    this.waitFor(o.A)
   }
   getSearchQuery(e) {
     let t = d[e];
@@ -163,7 +163,7 @@ class v extends(r = Chunk311907.Ay.Store) {
     return (null == t ? true : t.results) != null && t.results.length > 0
   }
 }
-o(v, "displayName", "ForumSearchStore");
+s(v, "displayName", "ForumSearchStore");
 let A = new v(Chunk73153.h, {
   CONNECTION_OPEN: O,
   THREAD_DELETE: y,

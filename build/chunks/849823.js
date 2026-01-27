@@ -7,12 +7,12 @@ require.r(exports), require.d(exports, {
 var Chunk492462 = require("./492462.js"),
   Chunk652215 = require("./652215.js");
 let a = "_",
-  s = /(-|%20)/g,
-  o = "AND",
+  o = /(-|%20)/g,
+  s = "AND",
   l = /%26/g;
 
 function c(e) {
-  return null == e ? "" : e.toUpperCase().replace(s, a).replace(l, o)
+  return null == e ? "" : e.toUpperCase().replace(o, a).replace(l, s)
 }
 
 function u(e) {
@@ -20,10 +20,10 @@ function u(e) {
 }
 
 function d(e, t) {
-  let [, , n, a] = e.split("/"), s = c(n), o = c(a), l = u(s), d = "" === o || u(o);
+  let [, , n, a] = e.split("/"), o = c(n), s = c(a), l = u(o), d = "" === s || u(s);
   return l && d ? {
     params: (0, r.parse)(null != t ? t : location.search),
-    section: i.nc_[s],
-    subsection: o
+    section: i.nc_[o],
+    subsection: s
   } : null
 }

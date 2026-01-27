@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 148131, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 148131, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  w: () => b
+  w: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,73 +17,63 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk487693 = require("./487693.js");
 
-function m(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function g(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      m(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function E(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function b(e) {
+function A(e) {
   let {
     user: t
-  } = e, a = (0, o.bG)([c.default], () => c.default.getCurrentUser()), m = i.useCallback(() => {
-    s()(true !== a, "User must be logged in to accept a link request"), (0, l.mMO)(async () => {
+  } = e, l = (0, a.bG)([c.default], () => c.default.getCurrentUser()), A = i.useCallback(() => {
+    s()(true !== l, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
       let {
         default: e
       } = await n.e("43139").then(n.bind(n, 179950));
-      return n => (0, r.jsx)(e, y(g({}, n), {
-        currentUser: a,
-        otherUser: t
-      }))
+      return n => {
+        var i, s;
+        return (0, r.jsx)(e, (i = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, n), s = s = {
+          currentUser: l,
+          otherUser: t
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(s)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+        }), i))
+      }
     })
-  }, [a, t]);
+  }, [l, t]);
   return (0, r.jsxs)("div", {
-    className: h.kL,
+    className: g.kL,
     children: [(0, r.jsx)("div", {
-      className: h.zH,
-      children: (0, r.jsx)(d.A, {
+      className: g.zH,
+      children: (0, r.jsx)(u.A, {
         otherUser: t,
-        status: f.Ef.ACTIVE
+        status: _.Ef.ACTIVE
       })
     }), (0, r.jsx)("div", {
-      className: h.o1,
-      children: (0, r.jsx)(u.A, {
-        icon: l.PGe,
-        tooltip: _.intl.string(p.default.l20ZZp),
-        onClick: m
+      className: g.o1,
+      children: (0, r.jsx)(d.A, {
+        icon: o.PGe,
+        tooltip: m.intl.string(p.default.l20ZZp),
+        onClick: A
       })
     })]
   })

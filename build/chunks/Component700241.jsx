@@ -2,7 +2,7 @@
 /** chunk id: 700241, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => o
+  default: () => s
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,11 +30,11 @@ function s(e) {
   return e
 }
 
-function o() {
+function s() {
   (0, i.openModalLazy)(async () => {
     let {
       default: e
     } = await n.e("74575").then(n.bind(n, 218642));
-    return t => (0, r.jsx)(e, s({}, t))
+    return t => (0, r.jsx)(e, o({}, t))
   })
 }

@@ -1,19 +1,19 @@
-/** Chunk was on web.js **/
-/** chunk id: 176486, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 176486, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk367932 = require("./367932.js"),
   i = require("./1140.js").strlen;
-module.exports = function(e, t) {
-  var n = [];
-  return e.findEntityRanges(function(e) {
-    return !!e.getEntity()
-  }, function(a, s) {
-    var o = e.getText(),
-      l = e.getEntityAt(a);
-    n.push({
-      offset: i(o.slice(0, a)),
-      length: i(o.slice(a, s)),
-      key: Number(t[r.stringify(l)])
+module.exports = function(t, e) {
+  var r = [];
+  return t.findEntityRanges(function(t) {
+    return !!t.getEntity()
+  }, function(o, a) {
+    var s = t.getText(),
+      u = t.getEntityAt(o);
+    r.push({
+      offset: i(s.slice(0, o)),
+      length: i(s.slice(o, a)),
+      key: Number(e[n.stringify(u)])
     })
-  }), n
+  }), r
 }

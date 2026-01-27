@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk782425 = require("./782425.js"),
   Chunk201327 = require("./201327.js");
 
@@ -66,13 +66,13 @@ function p(e) {
   });
   i.useLayoutEffect(() => {
     let e = _.current;
-    if (null != e) return (0, o.NM)(t), e.srcObject = (0, l.yL)(t), () => {
-      (0, o.gm)(t), e.srcObject = null, e.load()
+    if (null != e) return (0, s.NM)(t), e.srcObject = (0, l.yL)(t), () => {
+      (0, s.gm)(t), e.srcObject = null, e.load()
     }
   }, [t]), i.useEffect(() => {
     var e, r;
-    return n ? (null == (e = _.current) || e.pause(), (0, o.gm)(t)) : null == (r = _.current) || r.play().catch(() => {}), () => {
-      n && (0, o.NM)(t)
+    return n ? (null == (e = _.current) || e.pause(), (0, s.gm)(t)) : null == (r = _.current) || r.play().catch(() => {}), () => {
+      n && (0, s.NM)(t)
     }
   }, [n]);
   let m = i.useCallback(() => {
@@ -80,11 +80,11 @@ function p(e) {
     let {
       width: i,
       height: a
-    } = h.current, s = null != (e = null == (n = _.current) ? true : n.videoWidth) ? e : 0, o = null != (t = null == (r = _.current) ? true : r.videoHeight) ? t : 0;
-    if (i !== s || a !== o) {
+    } = h.current, o = null != (e = null == (n = _.current) ? true : n.videoWidth) ? e : 0, s = null != (t = null == (r = _.current) ? true : r.videoHeight) ? t : 0;
+    if (i !== o || a !== s) {
       let e = {
-        width: s,
-        height: o
+        width: o,
+        height: s
       };
       null == c || c(e), h.current = e
     }
@@ -100,7 +100,7 @@ function p(e) {
       n || e.currentTarget.play()
     }, [n]);
   return (0, r.jsx)("video", u({
-    className: s()("media-engine-video", f),
+    className: o()("media-engine-video", f),
     ref: _,
     autoPlay: true,
     onPause: E,

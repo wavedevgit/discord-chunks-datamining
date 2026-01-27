@@ -33,7 +33,7 @@ class d {
         var r;
         if (this.query.attempts = (null != (r = this.query.attempts) ? r : 0) + 1, this.query.attempts > u) return;
         let a = parseInt(i.headers["retry-after"]);
-        this.retryDelay = isNaN(a) || 0 === a ? c : a * s.A.Millis.SECOND, this.retryLater(e, t, n), t(i)
+        this.retryDelay = isNaN(a) || 0 === a ? c : a * o.A.Millis.SECOND, this.retryLater(e, t, n), t(i)
       }
     } catch (e) {
       new a.A("SearchFetcher").error(e), n(e)
@@ -52,14 +52,14 @@ class d {
 class f extends d {
   getEndpoint() {
     switch (this.searchType) {
-      case o.I4_.FAVORITES:
-        return o.Rsh.SEARCH_FAVORITES;
-      case o.I4_.GUILD:
+      case s.I4_.FAVORITES:
+        return s.Rsh.SEARCH_FAVORITES;
+      case s.I4_.GUILD:
         if (null == this.searchId || "" === this.searchId) return;
-        return o.Rsh.SEARCH_GUILD(this.searchId);
-      case o.I4_.CHANNEL:
+        return s.Rsh.SEARCH_GUILD(this.searchId);
+      case s.I4_.CHANNEL:
         if (null == this.searchId || "" === this.searchId) return;
-        return o.Rsh.SEARCH_CHANNEL(this.searchId);
+        return s.Rsh.SEARCH_CHANNEL(this.searchId);
       default:
         throw Error("[SearchFetcher] Unhandled search type: ".concat(this.searchType))
     }
@@ -79,16 +79,16 @@ class f extends d {
 class p extends d {
   getEndpoint() {
     switch (this.searchType) {
-      case o.I4_.DMS:
-        return o.Rsh.SEARCH_TABS_DMS;
-      case o.I4_.GUILD_CHANNEL:
-      case o.I4_.GUILD:
-      case o.I4_.THREAD:
+      case s.I4_.DMS:
+        return s.Rsh.SEARCH_TABS_DMS;
+      case s.I4_.GUILD_CHANNEL:
+      case s.I4_.GUILD:
+      case s.I4_.THREAD:
         if (null == this.searchId || "" === this.searchId) return;
-        return o.Rsh.SEARCH_TABS_GUILD(this.searchId);
-      case o.I4_.CHANNEL:
+        return s.Rsh.SEARCH_TABS_GUILD(this.searchId);
+      case s.I4_.CHANNEL:
         if (null == this.searchId || "" === this.searchId) return;
-        return o.Rsh.SEARCH_TABS_CHANNEL(this.searchId);
+        return s.Rsh.SEARCH_TABS_CHANNEL(this.searchId);
       default:
         throw Error("[SearchFetcher] Unhandled search type: ".concat(this.searchType))
     }

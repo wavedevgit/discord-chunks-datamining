@@ -57,11 +57,11 @@ function m(e) {
   }
   let {
     pathname: r
-  } = t, a = "REPLACE" === n, s = (0, i.B6)(r, f);
-  if (null == s) returnfalse;
+  } = t, a = "REPLACE" === n, o = (0, i.B6)(r, f);
+  if (null == o) returnfalse;
   if (a && p.length > 0) return p[_] = {
     path: r,
-    params: s.params
+    params: o.params
   }, true;
   if (p.length > 0) {
     if (r === p[_].path) returnfalse;
@@ -71,7 +71,7 @@ function m(e) {
   for (_ > 0 && h(p, _), _ = 0; p.length > d;) p.pop();
   p.unshift({
     path: r,
-    params: s.params
+    params: o.params
   })
 }
 class g extends(r = Chunk311907.Ay.Store) {

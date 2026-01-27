@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 847494, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 48330 **/
+/** chunk id: 847494, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
 }), require("./228524.js");
@@ -16,17 +15,17 @@ function u(e) {
   let {
     description: t,
     className: n,
-    guildId: a,
+    guildId: i,
     truncate: u = true
-  } = e, d = i.useMemo(() => (0, o.l)(t, true, {
-    guildId: a,
+  } = e, d = r.useMemo(() => (0, a.l)(t, true, {
+    guildId: i,
     allowLinks: true,
     allowHeading: true,
     allowList: true
-  }), [t, a]);
-  return (0, r.jsx)("div", {
-    className: s()(l.i, n, c.PT, {
-      [l.x]: u
+  }), [t, i]);
+  return (0, l.jsx)("div", {
+    className: s()(c.i, n, o.PT, {
+      [c.x]: u
     }),
     children: d
   })

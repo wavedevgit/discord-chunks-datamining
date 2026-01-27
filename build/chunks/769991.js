@@ -2,7 +2,7 @@
 /** chunk id: 769991, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => s
+  H: () => o
 }), require("./896048.js"), require("./321073.js");
 var Chunk143236 = require("./143236.js");
 
@@ -27,7 +27,7 @@ function a(e) {
   }
   return e
 }
-class s {
+class o {
   safeDispatch(e) {
     for (var t, n = arguments.length, r = Array(n > 1 ? n - 1 : 0), i = 1; i < n; i++) r[i - 1] = arguments[i];
     if (!this.hasSubscribers(e)) {

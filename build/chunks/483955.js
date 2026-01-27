@@ -4,7 +4,7 @@
 var Chunk439619 = require("./439619.js"),
   i = Chunk439619("%RegExp%"),
   Chunk741623 = require("./741623.js"),
-  s = Chunk439619("%parseInt%"),
+  o = Chunk439619("%parseInt%"),
   Chunk906046 = require("./906046.js"),
   Chunk429013 = require("./429013.js"),
   c = Chunk906046("String.prototype.slice"),
@@ -15,8 +15,8 @@ var Chunk439619 = require("./439619.js"),
   Chunk886309 = require("./886309.js");
 module.exports = function e(t) {
   if ("string" != typeof t) throw new a("Assertion failed: `argument` is not a String");
-  if (u(t)) return +s(c(t, 2), 2);
-  if (d(t)) return +s(c(t, 2), 8);
+  if (u(t)) return +o(c(t, 2), 2);
+  if (d(t)) return +o(c(t, 2), 8);
   if (p(t) || f(t)) return NaN;
   var n = _(t);
   return n !== t ? e(n) : +t

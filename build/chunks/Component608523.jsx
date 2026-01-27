@@ -1,4 +1,4 @@
-/** Chunk was on 58652 **/
+/** Chunk was on 12236 **/
 /** chunk id: 608523, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -20,10 +20,10 @@ let u = e => {
         placeholder: m,
         rows: p,
         character_limit: b,
-        pattern: x
+        pattern: _
       },
       onChange: g,
-      initialText: _,
+      initialText: x,
       isRequired: h
     } = e, v = r.useMemo(() => {
       var e, t;
@@ -59,10 +59,10 @@ let u = e => {
     }, []), [f, j] = r.useState(""), [A, y] = r.useState(null);
     r.useEffect(() => {
       var e;
-      j(null != (e = null == _ ? true : _.value) ? e : "")
-    }, [_]);
+      j(null != (e = null == x ? true : x.value) ? e : "")
+    }, [x]);
     let O = r.useCallback(e => {
-      let t = null != x ? new RegExp(x) : null;
+      let t = null != _ ? new RegExp(_) : null;
       null == t || t.test(e) ? null != e && (y(null), j(e), g({
         value: e,
         isValid: true
@@ -70,7 +70,7 @@ let u = e => {
         value: e,
         isValid: false
       }))
-    }, [g, x]);
+    }, [g, _]);
     return (0, l.jsxs)("div", {
       className: c.QB,
       children: [(0, l.jsxs)("div", {

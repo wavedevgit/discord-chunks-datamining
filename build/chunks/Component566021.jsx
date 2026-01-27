@@ -18,11 +18,11 @@ function u(e) {
     analyticsLocation: n
   } = e, {
     analyticsLocations: u
-  } = (0, s.Ay)(n), d = (0, l.A)({
+  } = (0, o.Ay)(n), d = (0, l.A)({
     application: t,
     analyticsLocations: u
   });
-  (0, o.A)({
+  (0, s.A)({
     name: i.ImpressionNames.CLOUD_PLAY_CTA,
     type: i.ImpressionTypes.VIEW,
     properties: {

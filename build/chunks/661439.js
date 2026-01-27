@@ -14,7 +14,7 @@ async function c() {
   let e = a.A.lastFetched;
   if (!(null != e && Date.now() - e < l)) try {
     let e = await r.Bo.get({
-      url: o.Rsh.USER_ACTIVITY_STATISTICS,
+      url: s.Rsh.USER_ACTIVITY_STATISTICS,
       oldFormErrors: true,
       rejectWithError: false
     });

@@ -41,7 +41,7 @@ function v(e, t) {
 }
 
 function A(e) {
-  return e.components.length > 0 && e.components[0].type === s.I5.CHECKPOINT_CARD
+  return e.components.length > 0 && e.components[0].type === o.I5.CHECKPOINT_CARD
 }
 
 function I(e, t, n, r) {
@@ -52,16 +52,16 @@ function I(e, t, n, r) {
   }
   if (null == e) return;
   let a = A(e),
-    s = e.messageSnapshots.length > 0 && A(e.messageSnapshots[0].message);
+    o = e.messageSnapshots.length > 0 && A(e.messageSnapshots[0].message);
   if (null != t || a) {
-    if ((0, o.Gc)(t) && !(i && (0, o.Gc)(n))) return {
+    if ((0, s.Gc)(t) && !(i && (0, s.Gc)(n))) return {
       label: b.intl.string(b.t.KgPx1D)
     };
     if (i && (0, f.zy)(n.type)) {
       if ((e.attachments.length > 0 || e.messageSnapshots.some(e => e.message.attachments.length > 0)) && !_.A.can(y.xBc.ATTACH_FILES, n)) return {
         label: b.intl.string(b.t.P7yvbm)
       };
-      if ((e.embeds.length > 0 || e.messageSnapshots.some(e => e.message.embeds.length > 0)) && !(0, g.fS)(n, _.A) && !(0, g.ax)(e) || (a || s) && !(0, g.fS)(n, _.A)) return {
+      if ((e.embeds.length > 0 || e.messageSnapshots.some(e => e.message.embeds.length > 0)) && !(0, g.fS)(n, _.A) && !(0, g.ax)(e) || (a || o) && !(0, g.fS)(n, _.A)) return {
         label: b.intl.string(b.t.Wr4RIX)
       };
       let t = [...(0, d.o6)(e), ...e.messageSnapshots.flatMap(e => {

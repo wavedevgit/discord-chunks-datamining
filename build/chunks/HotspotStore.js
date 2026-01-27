@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk536194 = require("./536194.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -57,7 +57,7 @@ class _ extends(r = Chunk311907.Ay.PersistedStore) {
   hasHotspot(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = !t && c[e];
-    return !s.P.isDisallowPopupsSet() && (n || !l.has(e))
+    return !o.P.isDisallowPopupsSet() && (n || !l.has(e))
   }
   hasHiddenHotspot(e) {
     return l.has(e)
@@ -72,7 +72,7 @@ class _ extends(r = Chunk311907.Ay.PersistedStore) {
     }
   }
 }
-o(_, "displayName", "HotspotStore"), o(_, "persistKey", "hotspots"), o(_, "migrations", [e => ({
+s(_, "displayName", "HotspotStore"), s(_, "persistKey", "hotspots"), s(_, "migrations", [e => ({
   hiddenHotspots: null != e ? e : [],
   hotspotOverrides: {}
 })]);

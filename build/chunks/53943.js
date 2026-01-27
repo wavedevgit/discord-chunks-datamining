@@ -4,30 +4,30 @@
 require.d(exports, {
   As: () => u,
   IU: () => l,
-  z8: () => o
+  z8: () => s
 }), require("./321073.js"), require("./65821.js"), require("./457529.js"), require("./896048.js"), require("./264879.js");
 var Chunk677623 = require("./677623.js"),
   i = require.n(Chunk677623);
 let a = 5e3,
-  s = new(i())(a);
+  o = new(i())(a);
 
-function o(e) {
+function s(e) {
   for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
   let i = c(n);
-  for ("string" == typeof e ? s.push({
+  for ("string" == typeof e ? o.push({
       time: Date.now(),
       category: e,
       message: i
-    }) : s.push({
+    }) : o.push({
       time: Date.now(),
       category: e.name,
       timing: e.timing,
       message: i
-    }); s.length > a;) s.shift()
+    }); o.length > a;) o.shift()
 }
 
 function l() {
-  s.clear()
+  o.clear()
 }
 
 function c(e) {
@@ -40,7 +40,7 @@ function c(e) {
 }
 
 function u(e) {
-  return s.toArray().filter(t => null == e || e.includes(t.category)).map(e => {
+  return o.toArray().filter(t => null == e || e.includes(t.category)).map(e => {
     let t = [];
     return t.push(new Date(e.time).toISOString()), null != e.timing && t.push(e.timing), t.push(e.category, e.message), t.join(" -> ")
   }).join("\n")

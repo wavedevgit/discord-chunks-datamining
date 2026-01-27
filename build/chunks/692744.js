@@ -9,7 +9,7 @@ var Chunk572808 = require("./572808.js"),
   Chunk588703 = require("./588703.js"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e) {
+function o(e) {
   return {
     userId: e.user_id,
     position: e.position,
@@ -17,7 +17,7 @@ function s(e) {
   }
 }
 
-function o(e) {
+function s(e) {
   return {
     id: e.id,
     claimedBy: e.claimed_by
@@ -27,8 +27,8 @@ function o(e) {
 function l(e) {
   return {
     roomId: e.room_id,
-    participants: e.participants.map(s),
-    seats: e.seats.map(o)
+    participants: e.participants.map(o),
+    seats: e.seats.map(s)
   }
 }
 

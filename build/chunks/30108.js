@@ -37,13 +37,13 @@ function y() {
     E.stop(), g = false;
     return
   }
-  let t = s.A.getChannel(e);
-  if (!(null == t ? true : t.isGuildStageVoice()) || o.A.isSelfDeaf()) {
+  let t = o.A.getChannel(e);
+  if (!(null == t ? true : t.isGuildStageVoice()) || s.A.isSelfDeaf()) {
     E.stop(), g = false;
     return
   }
   if (_.A.shouldPlay()) {
-    E.volume = m(o.A.getOutputVolume()), E.loop(), g = true;
+    E.volume = m(s.A.getOutputVolume()), E.loop(), g = true;
     return
   }
   if (p.A.isLive(e)) {
@@ -55,7 +55,7 @@ function y() {
     return
   }
   let n = null != Object.values(c.A.getVoiceStatesForChannel(e)).find(e => !e.suppress && !e.isVoiceMuted());
-  n || g ? n && (E.pause(), g = false) : (E.volume = m(o.A.getOutputVolume()), E.loop(), g = true)
+  n || g ? n && (E.pause(), g = false) : (E.volume = m(s.A.getOutputVolume()), E.loop(), g = true)
 }
 
 function b(e) {
@@ -77,7 +77,7 @@ class v extends Chunk439372.A {
       channelId: t
     } = e;
     if (null != t) {
-      let e = s.A.getChannel(t);
+      let e = o.A.getChannel(t);
       (null == e ? true : e.isGuildStageVoice()) ? y(): (E.stop(), g = false)
     } else E.stop(), g = false
   }

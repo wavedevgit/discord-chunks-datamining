@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk962125 = require("./962125.jsx"),
   Chunk151271 = require("./151271.js"),
   Chunk652215 = require("./652215.js"),
@@ -17,17 +17,17 @@ let d = e => {
       activeIndex: t,
       categoryListRef: n,
       getScrollOffsetForIndex: r
-    } = e, a = i.useRef(c.An1), s = i.useRef(t);
+    } = e, a = i.useRef(c.An1), o = i.useRef(t);
     return i.useEffect(() => {
-      null != t && t !== s.current && (a.current !== c.An1 && window.cancelAnimationFrame(a.current), a.current = window.requestAnimationFrame(() => {
+      null != t && t !== o.current && (a.current !== c.An1 && window.cancelAnimationFrame(a.current), a.current = window.requestAnimationFrame(() => {
         var e;
         if (null == n.current) return;
-        let i = t > (null != (e = s.current) ? e : false),
-          o = null != r ? r(t, i) : 0;
+        let i = t > (null != (e = o.current) ? e : false),
+          s = null != r ? r(t, i) : 0;
         n.current.scrollRowIntoView(t, {
           animate: true,
-          offset: o
-        }), a.current = c.An1, s.current = t
+          offset: s
+        }), a.current = c.An1, o.current = t
       }))
     }, [t, n, r]), {
       categoryListRef: n
@@ -68,8 +68,8 @@ let d = e => {
       I = i.useCallback(e => y(a[e], e, () => A(e), v === e), [v, a, A, y]),
       S = i.useMemo(() => "function" == typeof g ? e => g(a[e], e) : g, [a, g]);
     return (0, r.jsxs)("div", {
-      className: s()(u.i, p),
-      children: [(0, r.jsx)(o.A, {
+      className: o()(u.i, p),
+      children: [(0, r.jsx)(s.A, {
         listPadding: _,
         onScroll: E,
         ref: t,

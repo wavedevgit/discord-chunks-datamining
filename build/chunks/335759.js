@@ -1,40 +1,38 @@
-/** Chunk was on web.js **/
-/** chunk id: 335759, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 335759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => s,
-  w: () => o
+  Q: () => a,
+  w: () => s
 });
 var Chunk562465 = require("./562465.js"),
   Chunk198982 = require("./198982.js"),
   Chunk652215 = require("./652215.js");
-async function s(e) {
+async function a(e) {
   let {
     channelId: t,
     messageId: n,
-    answerIds: s
+    answerIds: a
   } = e;
   try {
-    let e = {
-      answer_ids: s
-    };
     await r.Bo.put({
-      url: a.Rsh.POLL_ANSWERS(t, n),
-      body: e,
+      url: l.Rsh.POLL_ANSWERS(t, n),
+      body: {
+        answer_ids: a
+      },
       rejectWithError: false
     })
   } catch (e) {
     throw new i.LG(e)
   }
 }
-async function o(e) {
+async function s(e) {
   let {
     channelId: t,
     messageId: n
   } = e;
   try {
     await r.Bo.post({
-      url: a.Rsh.POLL_EXPIRE(t, n),
+      url: l.Rsh.POLL_EXPIRE(t, n),
       rejectWithError: false
     })
   } catch (e) {

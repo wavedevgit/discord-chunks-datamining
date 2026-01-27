@@ -19,14 +19,14 @@ function d(e, t, n) {
       closeModal: t,
       isGift: n
     },
-    s = r.useRef(i);
+    o = r.useRef(i);
   r.useEffect(() => {
-    s.current = i
+    o.current = i
   }), r.useEffect(() => {
     let {
       closeModal: t,
       isGift: n
-    } = s.current;
+    } = o.current;
     null != e && e.isPurchasedExternally && null != e.paymentGateway && !n && (a.A.show({
       title: u.intl.formatToPlainString(u.t["6mIX6s"], {
         paymentGatewayName: c.qm[e.paymentGateway]
@@ -42,9 +42,9 @@ function d(e, t, n) {
 let f = [];
 
 function p(e, t) {
-  let n = (0, i.bG)([s.A], () => null != e ? s.A.get(e) : null),
-    a = (0, i.yK)([o.A], () => {
-      let e = null != n ? o.A.getForSku(n.skuId) : null;
+  let n = (0, i.bG)([o.A], () => null != e ? o.A.get(e) : null),
+    a = (0, i.yK)([s.A], () => {
+      let e = null != n ? s.A.getForSku(n.skuId) : null;
       return null != e ? Array.from(e) : f
     }),
     c = r.useMemo(() => a.filter(e => {

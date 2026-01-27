@@ -42,14 +42,14 @@ let d = false;
 
 function f(e, t) {
   r.useEffect(() => (a().forEach(e, (e, n) => {
-    !d && e.length > 50 && (d = true, o.A.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", {
+    !d && e.length > 50 && (d = true, s.A.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", {
       extra: {
         userIdsCount: e.length,
         guildId: n,
         reason: t
       }
-    })), (0, s.un)(n, e)
+    })), (0, o.un)(n, e)
   }), () => {
-    a().forEach(e, (e, t) => (0, s.NE)(t, e))
+    a().forEach(e, (e, t) => (0, o.NE)(t, e))
   }), [e, t])
 }

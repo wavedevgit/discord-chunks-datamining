@@ -17,15 +17,15 @@ let a = {
         minValue: t,
         maxValue: n,
         initialValue: a,
-        markerCount: s,
-        stickToMarkers: o,
+        markerCount: o,
+        stickToMarkers: s,
         disabled: l,
         equidistant: c,
         label: u,
         description: d
-      } = e, f = s > 0 ? Array.from({
-        length: s
-      }, (e, r) => Math.floor(t + r / (s - 1) * (n - t))) : true;
+      } = e, f = o > 0 ? Array.from({
+        length: o
+      }, (e, r) => Math.floor(t + r / (o - 1) * (n - t))) : true;
       return (0, r.jsx)(i.A, {
         label: u,
         description: d,
@@ -34,10 +34,10 @@ let a = {
         maxValue: n,
         initialValue: a,
         markers: f,
-        stickToMarkers: o,
+        stickToMarkers: s,
         disabled: l,
         equidistant: c
-      }, s)
+      }, o)
     },
     controls: {
       label: {

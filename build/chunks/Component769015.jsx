@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk172218 = require("./172218.js"),
   Chunk397927 = require("./397927.js"),
   Chunk832604 = require("./832604.js"),
@@ -98,7 +98,7 @@ let O = Chunk64700.forwardRef(function(e, t) {
   i.useEffect(() => {
     null != D.current && w && (cancelIdleCallback(D.current), D.current = null)
   }, [w]);
-  let x = (0, o.K)(P);
+  let L = (0, s.K)(P);
   if (null != O && (n = y(O)), null != a && null == n && (a instanceof f.Ay ? n = a.getIconURL(E(S)) : null != a.icon && (n = p.Ay.getApplicationIconURL({
       id: a.id,
       icon: a.icon
@@ -121,7 +121,7 @@ let O = Chunk64700.forwardRef(function(e, t) {
     }, [n, w]), true === n && null != _) {
     let e = b(S);
     return (0, r.jsx)(u.A, {
-      className: s()(m.Gt, I, A),
+      className: o()(m.Gt, I, A),
       guild: _,
       size: e
     })
@@ -129,30 +129,30 @@ let O = Chunk64700.forwardRef(function(e, t) {
   if (null == n || "" === n) return T ? (0, r.jsx)(l._7Z, {
     size: "md",
     color: "currentColor",
-    className: s()(m.Gt, S, A)
+    className: o()(m.Gt, S, A)
   }) : null;
-  let L = null == a ? true : a.name,
-    j = null != L && "" !== L ? h.intl.formatToPlainString(h.t.tiKyYg, {
-      applicationName: L
+  let x = null == a ? true : a.name,
+    M = null != x && "" !== x ? h.intl.formatToPlainString(h.t.tiKyYg, {
+      applicationName: x
     }) : h.intl.string(h.t["2B/phM"]),
-    M = (0, p.V0)(n),
+    j = (0, p.V0)(n),
     k = (0, d.LE)(n),
-    U = C === n || M || k;
+    U = C === n || j || k;
   return (0, r.jsxs)(r.Fragment, {
     children: [U ? null : (0, r.jsx)("div", {
-      className: s()(m.qD, S, A)
+      className: o()(m.qD, S, A)
     }), (0, r.jsx)("img", {
       ref: t,
-      alt: j,
+      alt: M,
       src: n,
-      className: s()(m.Gt, S, A),
+      className: o()(m.Gt, S, A),
       style: U ? true : {
         display: "none"
       }
     }), (0, r.jsx)("div", {
       className: m.Xc,
       children: (0, r.jsx)("div", {
-        ref: x,
+        ref: L,
         className: m.Pr
       })
     })]

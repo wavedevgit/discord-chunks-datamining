@@ -23,7 +23,7 @@ function l(e) {
     role: "group",
     className: i,
     children: [null != n ? (0, r.jsx)("div", {
-      className: a()(o.groupLabel, o.hideInteraction, s.jV[l]),
+      className: a()(s.groupLabel, s.hideInteraction, o.jV[l]),
       children: n
     }) : null, t]
   })

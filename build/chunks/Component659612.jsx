@@ -22,13 +22,13 @@ function d(e) {
     emojiName: d,
     className: f
   } = e, p = (0, l.A)(n, i);
-  return null != p || null != d ? (0, r.jsx)(o.A, {
+  return null != p || null != d ? (0, r.jsx)(s.A, {
     emojiId: null == p ? true : p.id,
     emojiName: null != d ? d : null == p ? true : p.name,
     animated: null != (t = null == p ? true : p.animated) && t,
     className: a()(u.m, f)
   }) : (0, r.jsx)(c.A, {
     className: a()(u.m, f),
-    color: s.A.colors.CREATOR_REVENUE_LOCKED_CHANNEL_ICON.css
+    color: o.A.colors.CREATOR_REVENUE_LOCKED_CHANNEL_ICON.css
   })
 }

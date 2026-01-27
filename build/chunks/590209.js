@@ -12,10 +12,10 @@ var Chunk311907 = require("./311907.js"),
   Chunk833551 = require("./833551.js");
 
 function c() {
-  return (0, r.bG)([l.default, a.default, s.default], () => {
-    if (__OVERLAY__) return s.default.isInstanceLocked();
+  return (0, r.bG)([l.default, a.default, o.default], () => {
+    if (__OVERLAY__) return o.default.isInstanceLocked();
     let e = l.default.getOverlayRenderingTrackedGames();
-    return 0 !== e.length && e.some(e => e.overlayMethod !== o.Ue.Disabled && a.default.isInputLocked(e.pid))
+    return 0 !== e.length && e.some(e => e.overlayMethod !== s.Ue.Disabled && a.default.isInputLocked(e.pid))
   })
 }
 new Chunk626584.A("OverlayUtils")

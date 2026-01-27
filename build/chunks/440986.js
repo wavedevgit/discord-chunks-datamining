@@ -12,7 +12,7 @@ module.exports = function(e) {
       className: "literal",
       begin: "(#t|#f|#\\\\" + t + "|#\\\\.)"
     },
-    s = {
+    o = {
       className: "number",
       variants: [{
         begin: n,
@@ -28,7 +28,7 @@ module.exports = function(e) {
         begin: "#x[0-9a-f]+(/[0-9a-f]+)?"
       }]
     },
-    o = e.QUOTE_STRING_MODE,
+    s = e.QUOTE_STRING_MODE,
     l = [e.COMMENT(";", "$", {
       relevance: 0
     }), e.COMMENT("#\\|", "\\|#")],
@@ -53,7 +53,7 @@ module.exports = function(e) {
       contains: [{
         begin: "\\(",
         end: "\\)",
-        contains: ["self", a, o, s, c, u]
+        contains: ["self", a, s, o, c, u]
       }]
     },
     p = {
@@ -87,10 +87,10 @@ module.exports = function(e) {
         }]
       }, p, d]
     };
-  return d.contains = [a, s, o, c, u, f, _].concat(l), {
+  return d.contains = [a, o, s, c, u, f, _].concat(l), {
     name: "Scheme",
     aliases: ["scm"],
     illegal: /\S/,
-    contains: [e.SHEBANG(), s, o, u, f, _].concat(l)
+    contains: [e.SHEBANG(), o, s, u, f, _].concat(l)
   }
 }

@@ -2,7 +2,7 @@
 /** chunk id: 994500, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => V
+  A: () => F
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -102,12 +102,12 @@ function D(e) {
   }), P()
 }
 
-function x(e) {
+function L(e) {
   for (let [t, n] of(_.clear(), N.clear(), e.relationships)) w(t, n);
   P()
 }
 
-function L(e) {
+function x(e) {
   let t = _.get(e.relationship.id);
   w(e.relationship.id, e.relationship.type), null != e.relationship.nickname && (h = f(u({}, h), {
     [e.relationship.id]: e.relationship.nickname
@@ -121,11 +121,11 @@ function L(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   R(e.relationship.id), null != h[e.relationship.id] && (h = u({}, h), delete h[e.relationship.id]), null != m[e.relationship.id] && (m = u({}, m), delete m[e.relationship.id]), null != b[e.relationship.id] && (b = u({}, b), delete b[e.relationship.id]), e.relationship.userIgnored || E.delete(e.relationship.id), y.delete(e.relationship.id), g.delete(e.relationship.id), P()
 }
 
-function M(e) {
+function j(e) {
   let {
     relationship: t
   } = e;
@@ -145,7 +145,7 @@ function U(e) {
 }
 class G extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.default)
+    this.waitFor(s.default)
   }
   isFriend(e) {
     return null != e && _.get(e) === l.eA$.FRIEND
@@ -162,7 +162,7 @@ class G extends(r = Chunk311907.Ay.Store) {
   isBlockedForMessage(e) {
     var t, n, r, i;
     if (null != e.author && _.get(e.author.id) === l.eA$.BLOCKED) returntrue;
-    if (e instanceof s.Ay) {
+    if (e instanceof o.Ay) {
       if (this.isBlocked(null == (i = e.interactionMetadata) || null == (r = i.user) ? true : r.id)) returntrue
     } else if (this.isBlocked(null == (n = e.interaction_metadata) || null == (t = n.user) ? true : t.id)) returntrue;
     returnfalse
@@ -173,7 +173,7 @@ class G extends(r = Chunk311907.Ay.Store) {
   isIgnoredForMessage(e) {
     var t, n, r, i;
     if (null != e.author && this.isIgnored(e.author.id)) returntrue;
-    if (e instanceof s.Ay) {
+    if (e instanceof o.Ay) {
       if (this.isIgnored(null == (i = e.interactionMetadata) || null == (r = i.user) ? true : r.id)) returntrue
     } else if (this.isIgnored(null == (n = e.interaction_metadata) || null == (t = n.user) ? true : t.id)) returntrue;
     returnfalse
@@ -258,12 +258,12 @@ class G extends(r = Chunk311907.Ay.Store) {
   }
 }
 c(G, "displayName", "RelationshipStore");
-let V = new G(Chunk73153.h, {
+let F = new G(Chunk73153.h, {
   CONNECTION_OPEN: D,
-  OVERLAY_INITIALIZE: x,
-  RELATIONSHIP_ADD: L,
-  RELATIONSHIP_REMOVE: j,
-  RELATIONSHIP_UPDATE: M,
+  OVERLAY_INITIALIZE: L,
+  RELATIONSHIP_ADD: x,
+  RELATIONSHIP_REMOVE: M,
+  RELATIONSHIP_UPDATE: j,
   RELATIONSHIP_PENDING_INCOMING_REMOVED: k,
   UPDATE_STRANGER_STATUS: U
 })

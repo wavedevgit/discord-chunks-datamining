@@ -6,11 +6,11 @@ let t = ["as", "in", "of", "if", "for", "while", "finally", "var", "new", "funct
 module.exports = function(e) {
   let i = ["npm", "print"],
     a = ["yes", "no", "on", "off"],
-    s = ["then", "unless", "until", "loop", "by", "when", "and", "or", "is", "isnt", "not"],
-    o = ["var", "const", "let", "function", "static"],
+    o = ["then", "unless", "until", "loop", "by", "when", "and", "or", "is", "isnt", "not"],
+    s = ["var", "const", "let", "function", "static"],
     l = e => t => !e.includes(t),
     c = {
-      keyword: t.concat(s).filter(l(o)),
+      keyword: t.concat(o).filter(l(s)),
       literal: n.concat(a),
       built_in: r.concat(i)
     },

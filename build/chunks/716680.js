@@ -43,7 +43,7 @@ class m {
   }
   _onStreamDirectSource(e, t, n, r) {
     this.mode = "verbatim-source", this.streamKey = e, this.director.sound = null == r || r, this.director.application = null, this._onDirectorAction({
-      type: o.p.STREAM,
+      type: s.p.STREAM,
       sourceId: t,
       audioSourceId: n,
       sound: r
@@ -57,7 +57,7 @@ class m {
         break;
       case "verbatim-source":
         this._onDirectorAction({
-          type: o.p.STOP,
+          type: s.p.STOP,
           alsoClose: t
         });
         break;
@@ -81,9 +81,9 @@ class m {
   _onDirectorAction(e) {
     var t, n;
     let r = c.A.getCurrentUserActiveStream(),
-      s = l.A.getState();
+      o = l.A.getState();
     switch (e.type) {
-      case o.p.STREAM:
+      case s.p.STREAM:
         if (null != r && (0, a.TZ)(r, false), e.sourceId.startsWith("camera") && null != e.audioSourceId) {
           let t = e.sourceId.split(":")[1];
           i.A.setGoLiveSource({
@@ -92,9 +92,9 @@ class m {
               audioDeviceGuid: e.audioSourceId
             },
             qualityOptions: {
-              preset: s.preset,
-              resolution: s.resolution,
-              frameRate: s.fps
+              preset: o.preset,
+              resolution: o.resolution,
+              frameRate: o.fps
             },
             context: _.x.STREAM
           })
@@ -104,17 +104,17 @@ class m {
             sound: null == (t = e.sound) || t
           },
           qualityOptions: {
-            preset: s.preset,
-            resolution: s.resolution,
-            frameRate: s.fps
+            preset: o.preset,
+            resolution: o.resolution,
+            frameRate: o.fps
           },
           context: _.x.STREAM
         });
         break;
-      case o.p.PAUSE:
+      case s.p.PAUSE:
         null != r && (0, a.TZ)(r, true);
         break;
-      case o.p.STOP:
+      case s.p.STOP:
         null != r && (0, f.A)(r, true, null == (n = e.alsoClose) || n);
         break;
       default:
@@ -140,14 +140,14 @@ class m {
     }
   }
   constructor() {
-    h(this, "director", true), h(this, "applications", true), h(this, "streamKey", true), h(this, "mode", true), this.mode = null, this.applications = [], this.director = new o.d(e => this._onDirectorAction(e)), r.h.subscribe("STREAM_START", e => {
+    h(this, "director", true), h(this, "applications", true), h(this, "streamKey", true), h(this, "mode", true), this.mode = null, this.applications = [], this.director = new s.d(e => this._onDirectorAction(e)), r.h.subscribe("STREAM_START", e => {
       let {
         streamType: t,
         guildId: n,
         channelId: r,
         pid: i,
         sourceId: a,
-        audioSourceId: o,
+        audioSourceId: s,
         sound: l
       } = e, c = u.default.getId(), f = (0, d._z)({
         streamType: t,
@@ -155,7 +155,7 @@ class m {
         channelId: r,
         ownerId: c
       });
-      null == i != (null == a) ? (null != i && this._onStreamApplication(f, i, null == l || l), null != a && this._onStreamDirectSource(f, a, o, l)) : new s.A("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(i, ", source-id: ").concat(a, ")"))
+      null == i != (null == a) ? (null != i && this._onStreamApplication(f, i, null == l || l), null != a && this._onStreamDirectSource(f, a, s, l)) : new o.A("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(i, ", source-id: ").concat(a, ")"))
     }), r.h.subscribe("STREAM_DELETE", e => {
       let {
         streamKey: t

@@ -1,19 +1,18 @@
-/** Chunk was on web.js **/
-/** chunk id: 486318, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 486318, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => s,
-  e: () => a
+  N: () => a,
+  e: () => l
 });
 var Chunk397927 = require("./397927.js"),
   Chunk871123 = require("./871123.js");
 
-function a(e) {
+function l(e) {
   let {
     imageUrl: t,
     backgroundImageUrl: n,
     altText: i,
-    customClassNames: a
+    customClassNames: l
   } = e;
   return {
     type: "dynamic",
@@ -23,13 +22,13 @@ function a(e) {
       imageUrl: t,
       backgroundImageUrl: n,
       altText: i,
-      customClassNames: a
+      customClassNames: l
     }
   }
 }
 
-function s(e) {
-  return a({
+function a(e) {
+  return l({
     imageUrl: (0, i.fq)(e),
     backgroundImageUrl: (0, i.xf)(e),
     altText: e.name

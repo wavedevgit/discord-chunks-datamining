@@ -4,7 +4,7 @@
 var Chunk860511 = require("./860511.js"),
   Chunk598349 = require("./598349.js"),
   a = Chunk860511.document,
-  s = Chunk598349(a) && Chunk598349(a.createElement);
+  o = Chunk598349(a) && Chunk598349(a.createElement);
 module.exports = function(e) {
-  return s ? a.createElement(e) : {}
+  return o ? a.createElement(e) : {}
 }

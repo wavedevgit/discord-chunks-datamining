@@ -17,8 +17,8 @@ function a(e, t, n) {
   let a = (0, r.Gw)(i, {
       year: 1
     }),
-    s = (0, r.Gw)(i, {
+    o = (0, r.Gw)(i, {
       year: false
     });
-  return Math.abs(a.getTime() - e.getTime()) < Math.abs(i.getTime() - e.getTime()) ? i = a : Math.abs(s.getTime() - e.getTime()) < Math.abs(i.getTime() - e.getTime()) && (i = s), i.getFullYear()
+  return Math.abs(a.getTime() - e.getTime()) < Math.abs(i.getTime() - e.getTime()) ? i = a : Math.abs(o.getTime() - e.getTime()) < Math.abs(i.getTime() - e.getTime()) && (i = o), i.getFullYear()
 }

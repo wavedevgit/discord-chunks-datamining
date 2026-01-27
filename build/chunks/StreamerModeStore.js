@@ -33,7 +33,7 @@ function u(e) {
 }
 
 function d(e, t) {
-  s.default.track(l.HAw.STREAMER_MODE_TOGGLE, {
+  o.default.track(l.HAw.STREAMER_MODE_TOGGLE, {
     enabled: e,
     automatic: t
   })
@@ -65,7 +65,7 @@ function g(e) {
 
 function E(e) {
   let t = u({}, _);
-  return _[e.key] = e.value, "enabled" === e.key ? d(e.value, false) : s.default.track(l.HAw.UPDATE_STREAMER_MODE_SETTINGS, {
+  return _[e.key] = e.value, "enabled" === e.key ? d(e.value, false) : o.default.track(l.HAw.UPDATE_STREAMER_MODE_SETTINGS, {
     enabled: _.enabled,
     automatic: _.autoToggle,
     disable_notifications: _.disableNotifications,
@@ -92,8 +92,8 @@ function y(e) {
 }
 class b extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    Object.assign(p, e), this.syncWith([o.default], () => {
-      let e = o.default.getId();
+    Object.assign(p, e), this.syncWith([s.default], () => {
+      let e = s.default.getId();
       _ = null != e ? h(e) : u({}, f)
     })
   }
@@ -126,7 +126,7 @@ class b extends(r = Chunk311907.Ay.PersistedStore) {
   }
 }
 c(b, "displayName", "StreamerModeStore"), c(b, "persistKey", "StreamerModeStore"), c(b, "migrations", [e => {
-  let t = o.default.getId();
+  let t = s.default.getId();
   return null == e || null == t ? {} : {
     [t]: u({}, e)
   }

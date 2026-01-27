@@ -15,9 +15,9 @@ var Chunk64700 = require("./64700.js"),
 
 function d(e, t) {
   var n;
-  let d = (0, i.bG)([o.default], () => o.default.getCurrentUser()),
+  let d = (0, i.bG)([s.default], () => s.default.getCurrentUser()),
     f = null != (n = null == e ? true : e.guild_id) ? n : c.dJq,
-    p = (0, i.bG)([s.Ay], () => s.Ay.getFlattenedGuildIds()),
+    p = (0, i.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()),
     _ = (0, i.bG)([a.A], () => null == e || null == e.guild_id || a.A.can(u.xB.USE_EXTERNAL_SOUNDS, e));
   return r.useMemo(() => {
     if ((l.Ay.canUseSoundboardEverywhere(d) || !t) && _) {

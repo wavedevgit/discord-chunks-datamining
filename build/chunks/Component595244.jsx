@@ -2,19 +2,19 @@
 /** chunk id: 595244, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => j,
+  Ay: () => M,
   Sm: () => G,
   bc: () => H,
   dR: () => k,
-  gz: () => F,
+  gz: () => V,
   i8: () => B,
-  jX: () => M,
-  xb: () => V
+  jX: () => j,
+  xb: () => F
 }), require("./142703.js"), require("./321073.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk492462 = require("./492462.js"),
   Chunk960488 = require("./960488.js"),
   Chunk158954 = require("./158954.js"),
@@ -77,19 +77,19 @@ function D(e, t) {
   }), e
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = L(e, t), Object.getOwnPropertySymbols)
+  if (a = x(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -97,20 +97,20 @@ function L(e, t) {
   return i
 }
 
-function j(e) {
+function M(e) {
   let {
     message: t,
     footer: n,
     headerClassName: i,
     showsCloseWindowText: a,
-    spinner: o
+    spinner: s
   } = e;
   return (0, _.HU)({
     location: C.intl.string(C.t["3S2494"])
   }), (0, r.jsxs)("div", {
     className: N.iE,
-    children: [o ? (0, r.jsx)(f.y$y, {}) : null, (0, r.jsx)("div", {
-      className: s()(N.wx, i)
+    children: [s ? (0, r.jsx)(f.y$y, {}) : null, (0, r.jsx)("div", {
+      className: o()(N.wx, i)
     }), (0, r.jsx)(f.Heading, {
       variant: "heading-lg/bold",
       className: N.Qq,
@@ -124,8 +124,8 @@ function j(e) {
   })
 }
 
-function M(e) {
-  return (0, r.jsx)(j, D(R({}, e), {
+function j(e) {
+  return (0, r.jsx)(M, D(R({}, e), {
     headerClassName: N.nQ
   }))
 }
@@ -134,27 +134,27 @@ function k(e) {
   let {
     guild: t,
     application: n
-  } = e, a = x(e, ["guild", "application"]), {
-    onClose: s
-  } = a, o = i.useCallback(() => {
-    (null == t ? true : t.id) != null && ((0, g.u)(null == t ? true : t.id), null == s || s(), O.default.track(T.HAw.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, {
+  } = e, a = L(e, ["guild", "application"]), {
+    onClose: o
+  } = a, s = i.useCallback(() => {
+    (null == t ? true : t.id) != null && ((0, g.u)(null == t ? true : t.id), null == o || o(), O.default.track(T.HAw.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, {
       application_id: null == n ? true : n.id,
       guild_id: null == t ? true : t.id
     }))
-  }, [s, null == n ? true : n.id, null == t ? true : t.id]), l = h.h.getField("entrypoint"), c = i.useCallback(() => {
-    null == s || s(), O.default.track(T.HAw.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, {
+  }, [o, null == n ? true : n.id, null == t ? true : t.id]), l = h.h.getField("entrypoint"), c = i.useCallback(() => {
+    null == o || o(), O.default.track(T.HAw.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, {
       application_id: null == n ? true : n.id
     })
-  }, [s, null == n ? true : n.id]), d = window.location.pathname.startsWith(T.BVt.APPLICATION_DIRECTORY), f = i.useCallback(() => {
-    (null == n ? true : n.id) != null && (null == s || s(), null != l && (0, m.pX)(""), setImmediate(() => {
+  }, [o, null == n ? true : n.id]), d = window.location.pathname.startsWith(T.BVt.APPLICATION_DIRECTORY), f = i.useCallback(() => {
+    (null == n ? true : n.id) != null && (null == o || o(), null != l && (0, m.pX)(""), setImmediate(() => {
       A._.dispatchToLastSubscribed(T.jej.OPEN_APP_LAUNCHER, {
         applicationId: n.id
       }), O.default.track(T.HAw.OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED, {
         application_id: n.id
       })
     }))
-  }, [null == n ? true : n.id, s, l]), p = (0, u.bG)([b.A, E.A], () => E.A.getChannel(b.A.getChannelId())), _ = (0, u.bG)([y.A], () => y.A.can(T.xBc.SEND_MESSAGES, p)), v = null != t, I = null == t && _ && (!d || null != l), N = [];
-  return (null != t || null != s) && (null != s && N.push({
+  }, [null == n ? true : n.id, o, l]), p = (0, u.bG)([b.A, E.A], () => E.A.getChannel(b.A.getChannelId())), _ = (0, u.bG)([y.A], () => y.A.can(T.xBc.SEND_MESSAGES, p)), v = null != t, I = null == t && _ && (!d || null != l), N = [];
+  return (null != t || null != o) && (null != o && N.push({
     variant: "secondary",
     text: C.intl.string(C.t.cpT0Cq),
     onClick: c
@@ -163,7 +163,7 @@ function k(e) {
     text: (null == t ? true : t.name.length) > 30 ? C.intl.string(C.t.M35zFB) : C.intl.format(C.t.UdYYP3, {
       guildName: null == t ? true : t.name
     }),
-    onClick: o
+    onClick: s
   }), I && N.push({
     variant: "primary",
     text: C.intl.string(C.t["0cCDKP"]),
@@ -181,13 +181,13 @@ function U(e) {
   let {
     guild: t,
     application: n
-  } = e, a = x(e, ["guild", "application"]), s = C.intl.string(C.t.se5gLj);
+  } = e, a = L(e, ["guild", "application"]), o = C.intl.string(C.t.se5gLj);
   i.useEffect(() => {
     O.default.track(T.HAw.OAUTH2_AUTHORIZE_SUCCESS_VIEWED, {
       application_id: null == n ? true : n.id
     })
   }, [null == n ? true : n.id]);
-  let o = i.useMemo(() => null != n ? null != t ? C.intl.format(C.t.IlF6IY, {
+  let s = i.useMemo(() => null != n ? null != t ? C.intl.format(C.t.IlF6IY, {
       installedApplicationName: null == n ? true : n.name,
       guildName: null == t ? true : t.name
     }) : C.intl.format(C.t.vTVC5T, {
@@ -196,10 +196,10 @@ function U(e) {
     l = (0, r.jsx)(d.E, {
       variant: "text-md/normal",
       className: N.OY,
-      children: o
+      children: s
     });
-  return (0, r.jsx)(M, R({
-    message: s,
+  return (0, r.jsx)(j, R({
+    message: o,
     footer: l
   }, a))
 }
@@ -207,7 +207,7 @@ function U(e) {
 function G(e) {
   let {
     application: t
-  } = e, n = x(e, ["application"]), {
+  } = e, n = L(e, ["application"]), {
     onClose: a
   } = n;
   i.useEffect(() => {
@@ -215,7 +215,7 @@ function G(e) {
       application_id: t.id
     })
   }, [t.id]);
-  let s = i.useCallback(() => {
+  let o = i.useCallback(() => {
     null == a || a(), O.default.track(T.HAw.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, {
       application_id: t.id
     })
@@ -224,7 +224,7 @@ function G(e) {
     actions: [{
       variant: "primary",
       text: C.intl.string(C.t["31Bci5"]),
-      onClick: s
+      onClick: o
     }],
     children: (0, r.jsxs)("div", {
       className: N.kV,
@@ -258,7 +258,7 @@ function G(e) {
   }))
 }
 
-function V(e) {
+function F(e) {
   return (0, r.jsx)(S.f, D(R({}, e), {
     title: C.intl.string(C.t.j2d6Km),
     subtitle: C.intl.string(C.t["/B7kXy"]),
@@ -269,8 +269,8 @@ function V(e) {
   }))
 }
 
-function F(e) {
-  return (0, r.jsx)(j, D(R({}, e), {
+function V(e) {
+  return (0, r.jsx)(M, D(R({}, e), {
     headerClassName: N.gW
   }))
 }
@@ -302,14 +302,14 @@ function H(e) {
     let e = null != document.referrer && "" !== document.referrer ? I.A.toURLSafe(document.referrer) : null;
     (null == e || e.host !== window.location.host || e.pathname !== T.BVt.OAUTH2_AUTHORIZE) && (0, m.pX)(T.BVt.INDEX)
   }, [a]);
-  let s = null != a ? (0, o.parse)(a.search) : {},
-    l = null != (t = null != (n = s.error_description) ? n : s.error) ? t : C.intl.string(C.t.mqn873);
+  let o = null != a ? (0, s.parse)(a.search) : {},
+    l = null != (t = null != (n = o.error_description) ? n : o.error) ? t : C.intl.string(C.t.mqn873);
   return (0, r.jsx)(S.$, {
     removeChildWrapper: true,
     children: (0, r.jsx)(S.f, {
       transitionState: c.ip4.ENTERED,
       hideHeader: true,
-      children: (0, r.jsx)(F, {
+      children: (0, r.jsx)(V, {
         message: l,
         showsCloseWindowText: true
       })

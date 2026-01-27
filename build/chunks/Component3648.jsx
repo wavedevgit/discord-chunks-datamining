@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => k,
-  Z: () => j
+  Z: () => M
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -89,7 +89,7 @@ function D(e, t) {
   return i
 }
 
-function x(e) {
+function L(e) {
   let {
     targetElementRef: t,
     onRequestClose: n,
@@ -120,14 +120,14 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     showPopover: t,
     onViewWishlist: n,
     onCardClick: l
-  } = e, c = P(e, ["showPopover", "onViewWishlist", "onCardClick"]), u = i.useRef(null), d = (0, o.useHasAnyModalOpen)(), f = (0, a.bG)([m.A], () => m.A.hasLayers()), h = (0, g.Jw)({
+  } = e, c = P(e, ["showPopover", "onViewWishlist", "onCardClick"]), u = i.useRef(null), d = (0, s.useHasAnyModalOpen)(), f = (0, a.bG)([m.A], () => m.A.hasLayers()), h = (0, g.Jw)({
     location: "wishlist-card"
-  }), [E, y] = (0, p.kn)(h ? [s.M.GAME_SHOP_WISHLIST_POPOVER] : [], O.m.SIDEBAR, true), b = i.useCallback(() => {
+  }), [E, y] = (0, p.kn)(h ? [o.M.GAME_SHOP_WISHLIST_POPOVER] : [], O.m.SIDEBAR, true), b = i.useCallback(() => {
     y(O.i.USER_DISMISS), l()
   }, [l, y]), v = i.useCallback(() => {
     y(O.i.USER_DISMISS)
@@ -138,7 +138,7 @@ function L(e) {
     children: [(0, r.jsx)(_.A, R(N({}, c), {
       onCardClick: b,
       ref: u
-    })), t && E === s.M.GAME_SHOP_WISHLIST_POPOVER && !d && !f && (0, r.jsx)(x, {
+    })), t && E === o.M.GAME_SHOP_WISHLIST_POPOVER && !d && !f && (0, r.jsx)(L, {
       targetElementRef: u,
       onRequestClose: v,
       onActionClick: A
@@ -146,13 +146,13 @@ function L(e) {
   })
 }
 
-function j(e, t) {
+function M(e, t) {
   let {
     index: n,
     moreCount: i,
     onViewWishlist: a,
-    isSingleCard: s = false,
-    profileOwner: o,
+    isSingleCard: o = false,
+    profileOwner: s,
     wishlistId: l,
     cardSize: c,
     analyticsLocations: d,
@@ -165,7 +165,7 @@ function j(e, t) {
   }, O = () => {
     _ ? a() : (0, E.a)(e.sku, {
       isGift: true,
-      giftRecipient: o,
+      giftRecipient: s,
       giftingOrigin: v.vQ.USER_PROFILE_WISHLIST
     }, {
       analyticsLocations: [...d, u.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
@@ -177,14 +177,14 @@ function j(e, t) {
     sku: e.sku,
     shape: "custom"
   });
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(x, {
     wishlistItem: e,
     onCardClick: O,
     tooltipConfig: g,
     shouldScalePreview: false,
     renderPreview: S,
     moreCount: i,
-    isSingleCard: s,
+    isSingleCard: o,
     wishlistId: l,
     showPopover: 0 === n && e.sku.applicationId === b.XR,
     onViewWishlist: a,
@@ -193,15 +193,15 @@ function j(e, t) {
   }, e.skuId)
 }
 
-function M(e) {
+function j(e) {
   let {
     item: t,
     card: n,
     analyticsLocations: i,
     profileOwner: a
   } = e, {
-    data: s
-  } = (0, d.YY)(t.sku.applicationId), o = () => {
+    data: o
+  } = (0, d.YY)(t.sku.applicationId), s = () => {
     (0, E.a)(t.sku, {
       isGift: true,
       giftRecipient: a,
@@ -215,7 +215,7 @@ function M(e) {
     children: [n, (0, r.jsx)("div", {
       className: S.S7,
       children: (0, r.jsxs)(c.DUT, {
-        onClick: o,
+        onClick: s,
         className: S.Hh,
         "aria-label": A.intl.string(A.t.pLPjsb),
         children: [(0, r.jsx)(c.Text, {
@@ -227,7 +227,7 @@ function M(e) {
           variant: "text-xs/medium",
           color: "text-default",
           children: A.intl.format(A.t["CqpEC+"], {
-            applicationName: null == s ? true : s.name
+            applicationName: null == o ? true : o.name
           })
         })]
       })
@@ -240,18 +240,18 @@ function k(e, t) {
     profileOwner: n,
     analyticsLocations: i,
     wishlistId: a,
-    onViewWishlist: s
-  } = t, o = j(e, {
+    onViewWishlist: o
+  } = t, s = M(e, {
     index: 0,
     profileOwner: n,
     analyticsLocations: i,
-    onViewWishlist: s,
+    onViewWishlist: o,
     isSingleCard: true,
     wishlistId: a
   });
-  return (0, r.jsx)(M, {
+  return (0, r.jsx)(j, {
     item: e,
-    card: o,
+    card: s,
     profileOwner: n,
     analyticsLocations: i
   })

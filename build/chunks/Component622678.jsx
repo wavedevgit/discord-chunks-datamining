@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk342393 = require("./342393.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk812745 = require("./812745.jsx"),
@@ -19,7 +19,7 @@ let _ = function(e) {
   let t = i.useRef(null),
     {
       stripeType: n,
-      flipped: s,
+      flipped: o,
       updateCompleted: _,
       onFocus: h,
       onBlur: m
@@ -90,32 +90,32 @@ let _ = function(e) {
   i.useEffect(() => (D(), () => {
     N()
   }), [D, N]);
-  let x = (0, c.rdh)(l.A.colors.TEXT_SUBTLE).hex(),
-    L = (0, c.rdh)(l.A.colors.TEXT_STRONG).hex();
+  let L = (0, c.rdh)(l.A.colors.TEXT_SUBTLE).hex(),
+    x = (0, c.rdh)(l.A.colors.TEXT_STRONG).hex();
 
-  function j() {
-    return o()(f.vB, {
+  function M() {
+    return s()(f.vB, {
       [f.Tn]: null !== A,
       [f.iH]: y,
       [f.yD]: "cardNumber" === n
     })
   }
 
-  function M() {
+  function j() {
     switch (n) {
       case "cardNumber":
         return (0, r.jsxs)("div", {
           children: [(0, r.jsx)(u.Ay, {
             className: f.Ie,
             type: g,
-            flipped: s
+            flipped: o
           }), (0, r.jsx)(a.CardNumberElement, {
             options: {
               style: S,
               placeholder: d.intl.string(d.t.gPRHfw),
               disableLink: false
             },
-            className: j()
+            className: M()
           })]
         });
       case "cardExpiry":
@@ -124,7 +124,7 @@ let _ = function(e) {
             style: S,
             placeholder: d.intl.string(d.t.xeEWQ6)
           },
-          className: j()
+          className: M()
         });
       case "cardCvc":
         return (0, r.jsx)(a.CardCvcElement, {
@@ -132,7 +132,7 @@ let _ = function(e) {
             style: S,
             placeholder: d.intl.string(d.t.wZz04F)
           },
-          className: j()
+          className: M()
         })
     }
   }
@@ -147,20 +147,20 @@ let _ = function(e) {
       base: {
         fontFamily: r,
         fontWeight: n.getPropertyValue("font-weight"),
-        color: L,
+        color: x,
         fontSize: n.getPropertyValue("font-size"),
         "::placeholder": {
-          color: x
+          color: L
         }
       }
     })
-  }, [t, x, L]), (0, r.jsxs)("div", {
+  }, [t, L, x]), (0, r.jsxs)("div", {
     className: f.Zm,
     "data-stripe-type": n,
     children: [(0, r.jsx)("div", {
       ref: t,
-      className: o()(f.iw, p.hF)
-    }), M(), (0, r.jsx)(c.dzK, {
+      className: s()(f.iw, p.hF)
+    }), j(), (0, r.jsx)(c.dzK, {
       error: A
     })]
   })

@@ -2,7 +2,7 @@
 /** chunk id: 417597, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  My: () => o,
+  My: () => s,
   bG: () => l,
   cf: () => c,
   yK: () => u
@@ -11,20 +11,20 @@ var Chunk64700 = require("./64700.js"),
   Chunk52133 = require("./52133.js"),
   Chunk968441 = require("./968441.js");
 
-function s(e, t) {
+function o(e, t) {
   return e === t
 }
 
-function o(e, t) {
+function s(e, t) {
   returnfalse
 }
 
 function l(e, t, n) {
-  let o = arguments.length > 3 && true !== arguments[3] ? arguments[3] : s,
+  let s = arguments.length > 3 && true !== arguments[3] ? arguments[3] : o,
     l = (0, r.useRef)(null);
   null == l.current && (l.current = {
     stores: e,
-    areStatesEqual: o,
+    areStatesEqual: s,
     getStateFromStores: t,
     prevDeps: true,
     state: true
@@ -33,7 +33,7 @@ function l(e, t, n) {
     u = c.state;
   if (null == n || !(0, i.v)(n, c.prevDeps)) {
     let e;
-    e = t(), null != u && o(u, e) || (u = e)
+    e = t(), null != u && s(u, e) || (u = e)
   }(0, r.useInsertionEffect)(() => {
     c.getStateFromStores = t, c.prevDeps = n, c.state = u
   });
@@ -41,7 +41,7 @@ function l(e, t, n) {
   return (0, r.useInsertionEffect)(() => {
     let t = () => {
         let e;
-        e = c.getStateFromStores(), o(c.state, e) || (c.state = e, d({}))
+        e = c.getStateFromStores(), s(c.state, e) || (c.state = e, d({}))
       },
       n = new a.r(e, t);
     return n.attach("useStateFromStores"), () => n.detach()

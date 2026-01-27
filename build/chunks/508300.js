@@ -5,7 +5,7 @@ var Chunk557939 = require("./557939.js"),
   Chunk860511 = require("./860511.js"),
   Chunk230606 = require("./230606.js"),
   Chunk231977 = require("./231977.js"),
-  o = require("./4940.js").f,
+  s = require("./4940.js").f,
   Chunk210140 = require("./210140.js"),
   Chunk61132 = require("./61132.js"),
   Chunk486724 = require("./486724.js"),
@@ -24,7 +24,7 @@ var Chunk557939 = require("./557939.js"),
       n = d(e < 2 ? true : arguments[1], "Error"),
       r = new E(t, n),
       i = new g(t);
-    return i.name = m, o(r, "stack", s(1, p(i.stack, 1))), u(r, this, y), r
+    return i.name = m, s(r, "stack", o(1, p(i.stack, 1))), u(r, this, y), r
   },
   b = y.prototype = E.prototype,
   O = "stack" in new g(m),
@@ -42,10 +42,10 @@ Chunk557939({
 var T = Chunk230606(m),
   C = T.prototype;
 if (C.constructor !== T) {
-  for (var N in Chunk105712 || o(C, "constructor", Chunk231977(1, T)), Chunk753609)
+  for (var N in Chunk105712 || s(C, "constructor", Chunk231977(1, T)), Chunk753609)
     if (Chunk210140(Chunk753609, N)) {
       var w = Chunk753609[N],
         R = w.s;
-      Chunk210140(T, R) || o(T, R, Chunk231977(6, w.c))
+      Chunk210140(T, R) || s(T, R, Chunk231977(6, w.c))
     }
 }

@@ -25,7 +25,7 @@ let m = () => {
     confettiCanvas: m,
     churnUserDiscountOffer: g,
     discountedPrice: E
-  } = (0, u.X)(), y = (0, i.useRef)(null), [b, O] = (0, i.useState)(false), v = (0, s.bG)([o.A], () => o.A.useReducedMotion);
+  } = (0, u.X)(), y = (0, i.useRef)(null), [b, O] = (0, i.useState)(false), v = (0, o.bG)([s.A], () => s.A.useReducedMotion);
   if ((0, i.useEffect)(() => {
       null !== y.current && null !== E && O(true)
     }, [y, E]), null === g) return null;

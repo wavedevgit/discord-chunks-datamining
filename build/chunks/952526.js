@@ -89,22 +89,22 @@ class y extends Chunk311907.il {
           i()(null != t, "Shadow state must be set in dual-read mode before running validation."), (0, u.R7)(this.getName(), "Kkv", r => {
             let {
               root: i
-            } = this.state, a = Object.keys(i), s = Object.keys(t.root);
-            for (let s of a) {
-              if (!Object.prototype.hasOwnProperty.call(t.root, s)) {
-                r(i[s], n);
+            } = this.state, a = Object.keys(i), o = Object.keys(t.root);
+            for (let o of a) {
+              if (!Object.prototype.hasOwnProperty.call(t.root, o)) {
+                r(i[o], n);
                 continue
               }
-              let a = i[s],
-                o = t.root[s],
+              let a = i[o],
+                s = t.root[o],
                 l = a.derived.memoized[e],
-                c = o.derived.memoized[e];
+                c = s.derived.memoized[e];
               if (null != l && l === c) continue;
-              r(a, o);
+              r(a, s);
               let u = {};
-              a.derived.memoized[e] = u, o.derived.memoized[e] = u
+              a.derived.memoized[e] = u, s.derived.memoized[e] = u
             }
-            for (let e of s) Object.prototype.hasOwnProperty.call(i, e) || r(n, t.root[e])
+            for (let e of o) Object.prototype.hasOwnProperty.call(i, e) || r(n, t.root[e])
           })
         });
         break
@@ -190,10 +190,10 @@ class y extends Chunk311907.il {
       let {
         root: a,
         derived: {
-          memoized: s
+          memoized: o
         }
-      } = i, o = s[n];
-      return g.call(s, n) || (o = e(t, a), s[n] = o), o
+      } = i, s = o[n];
+      return g.call(o, n) || (s = e(t, a), o[n] = s), s
     }
   }
   memoized(e) {
@@ -348,14 +348,14 @@ class y extends Chunk311907.il {
       };
       for (const i in e) {
         const a = e[i],
-          s = e => {
+          o = e => {
             if (t = false, a(e, r), !t) returnfalse;
             this.state.derived.memoized = {}
           };
-        n[i] = s
+        n[i] = o
       }
     }
-    super(o.h, n), d(this, "state", {
+    super(s.h, n), d(this, "state", {
       root: {},
       derived: {
         numPartitions: 0,

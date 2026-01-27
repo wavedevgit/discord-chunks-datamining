@@ -67,14 +67,14 @@ function b(e, t, n, r) {
   } = I;
   if (S.length < p || u.A.getMaxWordCount() < h || u.A.isFrequentlyUsedWord(S)) return f;
   let T = (0, l.X3)(i.rD.USER),
-    C = o.A.getMessages(e.id).toArray(),
+    C = s.A.getMessages(e.id).toArray(),
     N = new Set;
   for (let e = 0; e < C.length; e++) {
     let t = C[e];
     T[t.author.id] = (null != (d = T[t.author.id]) ? d : 1) + (C.length - e) / C.length, N.add(t.author.id)
   }
   let w = false;
-  A && (w = null != e.guild_id && (null != (g = s.A.getMemberCount(e.guild_id)) ? g : 0) > m);
+  A && (w = null != e.guild_id && (null != (g = o.A.getMemberCount(e.guild_id)) ? g : 0) > m);
   let R = l.Ay.queryMentionSuggestionResults({
     query: S,
     channel: e,

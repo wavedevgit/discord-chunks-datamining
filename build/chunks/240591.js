@@ -22,13 +22,13 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js");
 
 function m(e, t) {
-  var n, r, i, a, s;
-  let p, h = null != (p = e instanceof c.YB && e.isThread() && null != (s = d.A.getChannel(e.parent_id)) ? s : e) ? O(p) : true,
+  var n, r, i, a, o;
+  let p, h = null != (p = e instanceof c.YB && e.isThread() && null != (o = d.A.getChannel(e.parent_id)) ? o : e) ? O(p) : true,
     m = (0, l.S9)(),
     g = u.default.getId(),
     b = null != (n = null == (i = _.default.getCurrentUser()) ? true : i.nsfwAllowed) && n,
     v = null != h && null != (r = null == (a = f.Ay.getMember(h, g)) ? true : a.roles) ? r : [],
-    A = o.A.isViewingRoles(h),
+    A = s.A.isViewingRoles(h),
     {
       computedPermissions: I,
       hasBaseAccessPermissions: S,
@@ -56,7 +56,7 @@ function g(e, t) {
       return e
     }, [e]),
     i = null != n ? O(n) : true,
-    s = (0, l.hT)(),
+    o = (0, l.hT)(),
     p = (0, a.bG)([u.default], () => u.default.getId()),
     h = (0, a.bG)([_.default], () => {
       var e, t;
@@ -66,7 +66,7 @@ function g(e, t) {
       var e, t;
       return null != i && null != (e = null == (t = f.Ay.getMember(i, p)) ? true : t.roles) ? e : []
     }),
-    g = (0, a.bG)([o.A], () => o.A.isViewingRoles(i));
+    g = (0, a.bG)([s.A], () => s.A.isViewingRoles(i));
   return r.useMemo(() => {
     let {
       computedPermissions: r,
@@ -82,9 +82,9 @@ function g(e, t) {
       computedPermissions: r,
       hasBaseAccessPermissions: i,
       hasSendMessagesPermission: a,
-      allowNsfw: E(n, h, s)
+      allowNsfw: E(n, h, o)
     }
-  }, [t, n, g, m, p, h, s, e])
+  }, [t, n, g, m, p, h, o, e])
 }
 
 function E(e, t, n) {
@@ -107,7 +107,7 @@ function y(e, t) {
 }
 
 function b(e, t) {
-  return e instanceof c.YB && (null == e ? true : e.guild_id) == null ? (null == e ? true : e.type) === h.rbe.DM && (null == e ? true : e.getRecipientId()) === t ? s.OL.BOT_DM : s.OL.PRIVATE_CHANNEL : s.OL.GUILD
+  return e instanceof c.YB && (null == e ? true : e.guild_id) == null ? (null == e ? true : e.type) === h.rbe.DM && (null == e ? true : e.getRecipientId()) === t ? o.OL.BOT_DM : o.OL.PRIVATE_CHANNEL : o.OL.GUILD
 }
 
 function O(e) {

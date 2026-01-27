@@ -24,15 +24,15 @@ function c(e) {
 }
 
 function u(e) {
-  return f(e, s.A)
+  return f(e, o.A)
 }
 
 function d(e) {
-  return (0, i.bG)([a.A, s.A], () => f(a.A.getChannel(e), s.A))
+  return (0, i.bG)([a.A, o.A], () => f(a.A.getChannel(e), o.A))
 }
 
 function f(e, t) {
-  return null != e && true !== e && !!c(e) && (null == e.guild_id || !!t.can(o.xB.USE_EMBEDDED_ACTIVITIES, e)) && true
+  return null != e && true !== e && !!c(e) && (null == e.guild_id || !!t.can(s.xB.USE_EMBEDDED_ACTIVITIES, e)) && true
 }
 
 function p() {

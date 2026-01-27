@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk186306 = require("./186306.js"),
   Chunk35277 = require("./35277.js"),
   Chunk711371 = require("./711371.js");
-let s = ["applicationCommand"],
-  o = ["gameMentionInput", "timestampMentionInput"];
+let o = ["applicationCommand"],
+  s = ["gameMentionInput", "timestampMentionInput"];
 
 function l(e) {
   let {
@@ -35,5 +35,5 @@ function c(e) {
   var t;
   let n = a.VW.getCurrentBlock(e),
     r = a.VW.getCurrentInline(e);
-  return null != n && !s.includes(n[0].type) && !o.includes(null == r || null == (t = r[0]) ? true : t.type)
+  return null != n && !o.includes(n[0].type) && !s.includes(null == r || null == (t = r[0]) ? true : t.type)
 }

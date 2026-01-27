@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk228580 = require("./228580.js");
 
-function p(e) {
+function f(e) {
   for (var A = 1; A < arguments.length; A++) {
     var t = null != arguments[A] ? arguments[A] : {},
       r = Object.keys(t);
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function f(e, A) {
+function p(e, A) {
   return A = null != A ? A : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(A)) : (function(e, A) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,17 +53,17 @@ function v(e) {
     newRoleParams: A,
     setNewRoleParams: t
   } = e, l = n.useRef(null), {
-    name: s,
+    name: o,
     color: v
-  } = A, h = e => t(A => (a()(null != A, "newRoleParams should be defined"), f(p({}, A), {
+  } = A, h = e => t(A => (a()(null != A, "newRoleParams should be defined"), p(f({}, A), {
     color: e
   })));
   return (0, r.jsxs)("div", {
     className: g.CJ,
-    children: [(0, r.jsx)(o.ksK, {
+    children: [(0, r.jsx)(s.ksK, {
       autoFocus: true,
-      value: s,
-      onChange: e => t(A => (a()(null != A, "newRoleParams should be defined"), f(p({}, A), {
+      value: o,
+      onChange: e => t(A => (a()(null != A, "newRoleParams should be defined"), p(f({}, A), {
         name: e
       }))),
       id: m,
@@ -71,19 +71,19 @@ function v(e) {
       maxLength: u.fHV
     }), (0, r.jsxs)("div", {
       className: g.P4,
-      children: [(0, r.jsx)(o.AC4, {
+      children: [(0, r.jsx)(s.AC4, {
         children: c.intl.format(c.t["Vlq/pH"], {
           color: (0, i.Hl)(v)
         })
-      }), (0, r.jsx)(o.YNO, {
+      }), (0, r.jsx)(s.YNO, {
         targetElementRef: l,
-        renderPopout: e => (0, r.jsx)(o.VNw, f(p({}, e), {
+        renderPopout: e => (0, r.jsx)(s.VNw, p(f({}, e), {
           value: v,
           onChange: h
         })),
-        children: e => (0, r.jsx)(o.K0, f(p({}, e), {
+        children: e => (0, r.jsx)(s.K0, p(f({}, e), {
           variant: "secondary",
-          icon: o.dDg,
+          icon: s.dDg,
           buttonRef: l,
           "aria-label": c.intl.string(c.t.QLgdlS)
         }))

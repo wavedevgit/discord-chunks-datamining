@@ -32,13 +32,13 @@ class f extends Chunk439372.A {
   updateSoundpack() {
     let e = a.A.getSoundpack(),
       t = a.A.getLastSoundpackExperimentId(),
-      n = o.A.experiment.definition.id,
+      n = s.A.experiment.definition.id,
       r = l.A.isEligible();
-    r || null == t && e === u.i.CLASSIC ? r && null != o.A.soundpack && n !== t && e !== o.A.soundpack && (0, i.p)(o.A.soundpack, n) : (0, i.p)(u.i.CLASSIC, null)
+    r || null == t && e === u.i.CLASSIC ? r && null != s.A.soundpack && n !== t && e !== s.A.soundpack && (0, i.p)(s.A.soundpack, n) : (0, i.p)(u.i.CLASSIC, null)
   }
   updateRingtone() {
     if (l.A.isEligible()) {
-      let e = (0, s.A)(a.A.getSoundpack());
+      let e = (0, o.A)(a.A.getSoundpack());
       null != e.call_ringing && (0, c.n)("call_ringing", e.call_ringing + ".mp3")
     } else(0, c.n)("call_ringing", "call_ringing.mp3")
   }

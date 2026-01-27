@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 185438, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 13088 **/
+/** chunk id: 185438, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => m
 }), require("./114821.js"), require("./339614.js"), require("./938796.js");
 var Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
-  a = require.n(Chunk284009),
+  i = require.n(Chunk284009),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk73825 = require("./73825.js"),
@@ -22,57 +21,57 @@ var Chunk64700 = require("./64700.js"),
   Chunk163437 = require("./163437.js"),
   Chunk638643 = require("./638643.jsx");
 
-function b(e) {
-  var t, n;
+function m(t) {
+  var e, n;
   let {
-    initialSubscribeForGuild: i,
-    analyticsLocation: b,
-    skuId: O,
-    onComplete: v,
-    disableGuildSelector: A
-  } = e, I = (0, s.bG)([_.A], () => null != O ? _.A.get(O) : true, [O]), S = (0, s.bG)([h.A], () => null != O ? h.A.getForSKU(O) : true, [O]), T = null == (n = (0, s.yK)([p.A], () => null != O ? p.A.getForSKU(O) : [], [O])[0]) ? true : n.id, C = (0, s.bG)([_.A], () => null != O ? _.A.getParentSKU(O) : true, [O]), N = null == C ? true : C.bundledSkuIds, w = (0, s.yK)([p.A], () => {
-    var e;
-    return null != (e = null == N ? true : N.flatMap(p.A.getForSKU)) ? e : []
-  }, [N]), R = r.useMemo(() => w.map(e => e.id), [w]), P = (0, E.PJ)(null != (t = null == I ? true : I.flags) ? t : 0), D = (0, s.bG)([g.A], () => null != i && false !== P && g.A.getEntitlementsForGuild(i, true).some(e => e.skuId === O), [P, O, i]), x = null == I ? true : I.applicationId, L = (null == S ? true : S.published) === true && (null == I ? true : I.isAvailable()) === true, {
-    app: j
-  } = (0, d.NP)(x), {
-    analyticsLocations: M
-  } = (0, c.Ay)(), k = (0, m.GD)(C, null != i ? i : true), U = null == k ? true : k.subscription, G = null == k ? true : k.subscriptionPlan, V = (0, m.Ko)(C, null != i ? i : true), F = null == V ? true : V.subscriptionPlan, {
-    entitlementsLoaded: B
-  } = (0, m.CZ)({
-    guildId: i
+    initialSubscribeForGuild: r,
+    analyticsLocation: m,
+    skuId: v,
+    onComplete: E,
+    disableGuildSelector: P
+  } = t, h = (0, u.bG)([S.A], () => null != v ? S.A.get(v) : true, [v]), T = (0, u.bG)([A.A], () => null != v ? A.A.getForSKU(v) : true, [v]), y = null == (n = (0, u.yK)([f.A], () => null != v ? f.A.getForSKU(v) : [], [v])[0]) ? true : n.id, _ = (0, u.bG)([S.A], () => null != v ? S.A.getParentSKU(v) : true, [v]), N = null == _ ? true : _.bundledSkuIds, j = (0, u.yK)([f.A], () => {
+    var t;
+    return null != (t = null == N ? true : N.flatMap(f.A.getForSKU)) ? t : []
+  }, [N]), L = l.useMemo(() => j.map(t => t.id), [j]), C = (0, g.PJ)(null != (e = null == h ? true : h.flags) ? e : 0), F = (0, u.bG)([O.A], () => null != r && false !== C && O.A.getEntitlementsForGuild(r, true).some(t => t.skuId === v), [C, v, r]), w = null == h ? true : h.applicationId, x = (null == T ? true : T.published) === true && (null == h ? true : h.isAvailable()) === true, {
+    app: R
+  } = (0, d.NP)(w), {
+    analyticsLocations: D
+  } = (0, a.Ay)(), G = (0, b.GD)(_, null != r ? r : true), k = null == G ? true : G.subscription, U = null == G ? true : G.subscriptionPlan, B = (0, b.Ko)(_, null != r ? r : true), K = null == B ? true : B.subscriptionPlan, {
+    entitlementsLoaded: M
+  } = (0, b.CZ)({
+    guildId: r
   });
-  null == i && (B = true);
-  let H = (0, f.A)(),
-    Y = null != U && (0, E.Uo)(U, I),
-    W = r.useMemo(() => {
-      if (!B || null == j || null == O) return u.wF.LOADING;
-      if (!L) return u.wF.UNAVAILABLE;
-      if (!P) {
-        if ((null == G ? true : G.skuId) === O) return u.wF.SUBSCRIBED;
-        if ((null == F ? true : F.skuId) === O && false === Y) return u.wF.UPCOMING_PLAN
+  null == r && (M = true);
+  let H = (0, p.A)(),
+    Y = null != k && (0, g.Uo)(k, h),
+    V = l.useMemo(() => {
+      if (!M || null == R || null == v) return c.wF.LOADING;
+      if (!x) return c.wF.UNAVAILABLE;
+      if (!C) {
+        if ((null == U ? true : U.skuId) === v) return c.wF.SUBSCRIBED;
+        if ((null == K ? true : K.skuId) === v && false === Y) return c.wF.UPCOMING_PLAN
       }
-      return u.wF.AVAILABLE
-    }, [null == G ? true : G.skuId, L, j, B, Y, P, null == F ? true : F.skuId, O]);
-  return r.useEffect(() => {
-    L && null != O && H && (p.A.isFetchingForSKU(O) || p.A.isLoadedForSKU(O) || o.h.wait(() => {
-      (0, l.ur)(O)
+      return c.wF.AVAILABLE
+    }, [null == U ? true : U.skuId, x, R, M, Y, C, null == K ? true : K.skuId, v]);
+  return l.useEffect(() => {
+    x && null != v && H && (f.A.isFetchingForSKU(v) || f.A.isLoadedForSKU(v) || o.h.wait(() => {
+      (0, s.ur)(v)
     }))
-  }, [L, O, H]), {
-    openModal: r.useCallback(() => {
-      a()(null != j, "No application"), a()(null != O, "No SKU ID"), a()(L, "Cannot purchase this unpublished plan"), (0, y.w)({
-        subscriptionPlanId: T,
-        sku: I,
-        subscriptionGroupPlanIds: R,
-        initialSubscribeForGuild: i,
-        disableGuildSelector: A,
-        analyticsLocations: M,
-        analyticsLocation: b
+  }, [x, v, H]), {
+    openModal: l.useCallback(() => {
+      i()(null != R, "No application"), i()(null != v, "No SKU ID"), i()(x, "Cannot purchase this unpublished plan"), (0, I.w)({
+        subscriptionPlanId: y,
+        sku: h,
+        subscriptionGroupPlanIds: L,
+        initialSubscribeForGuild: r,
+        disableGuildSelector: P,
+        analyticsLocations: D,
+        analyticsLocation: m
       }).then(() => {
-        null == v || v()
+        null == E || E()
       })
-    }, [j, O, L, T, I, R, i, A, M, b, v]),
-    subscriptionPurchaseButtonState: W,
-    isGuildSubscribed: D
+    }, [R, v, x, y, h, L, r, P, D, m, E]),
+    subscriptionPurchaseButtonState: V,
+    isGuildSubscribed: F
   }
 }

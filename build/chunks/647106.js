@@ -23,11 +23,11 @@ let u = false;
 class d extends Chunk439372.A {
   handlePossibleCredentialFetch() {
     if (!(u || __OVERLAY__) && i.default.getLoginStatus() === l.aUe.NONE) {
-      if (o.A.hasFetchedCredentials()) {
+      if (s.A.hasFetchedCredentials()) {
         u = true;
         return
       }
-      true !== a.default.getCurrentUser() && (u = true, (0, s.JQ)())
+      true !== a.default.getCurrentUser() && (u = true, (0, o.JQ)())
     }
   }
   handleLogout() {
@@ -38,7 +38,7 @@ class d extends Chunk439372.A {
       POST_CONNECTION_OPEN: this.handlePossibleCredentialFetch,
       LOGIN_RESET: this.handleLogout,
       LOGOUT: this.handleLogout
-    }), c(this, "stores", new Map().set(i.default, this.handlePossibleCredentialFetch).set(a.default, this.handlePossibleCredentialFetch).set(o.A, this.handlePossibleCredentialFetch))
+    }), c(this, "stores", new Map().set(i.default, this.handlePossibleCredentialFetch).set(a.default, this.handlePossibleCredentialFetch).set(s.A, this.handlePossibleCredentialFetch))
   }
 }
 let f = new d

@@ -46,8 +46,8 @@ let p = e => {
     } = e;
     if (null != t && t !== a.TO.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
     let l = c.default.getCurrentUser(),
-      u = (0, o.o)("resolveExplicitContentSettingWithDefaults");
-    return (0, s.To)(i.p.SENSITIVE_CONTENT) || u ? _({
+      u = (0, s.o)("resolveExplicitContentSettingWithDefaults");
+    return (0, o.To)(i.p.SENSITIVE_CONTENT) || u ? _({
       isDm: n,
       isFriend: r
     }) : (null == l ? true : l.nsfwAllowed) === false ? m({

@@ -6,11 +6,11 @@ require.d(exports, {
   Tu: () => P,
   UI: () => C,
   Wn: () => w,
-  am: () => L,
+  am: () => x,
   nR: () => k,
-  pT: () => M,
-  sQ: () => x,
-  un: () => j,
+  pT: () => j,
+  sQ: () => L,
+  un: () => M,
   wd: () => R
 }), require("./321073.js"), require("./896048.js");
 var Chunk58149 = require("./58149.js"),
@@ -74,16 +74,16 @@ let A = e => {
       userProfile: n,
       guildMember: r,
       guildMemberProfile: i
-    } = e, a = null != n ? n : i, s = [];
-    if ((null == r ? true : r.nick) && s.push(m.d6.NICKNAME), (null == a ? true : a.pronouns) && s.push(m.d6.PRONOUNS), null == t ? true : t.avatar) {
+    } = e, a = null != n ? n : i, o = [];
+    if ((null == r ? true : r.nick) && o.push(m.d6.NICKNAME), (null == a ? true : a.pronouns) && o.push(m.d6.PRONOUNS), null == t ? true : t.avatar) {
       let e = (0, f.VI)(null == t ? true : t.avatar);
-      s.push(e ? m.d6.ANIMATED_AVATAR : m.d6.AVATAR)
+      o.push(e ? m.d6.ANIMATED_AVATAR : m.d6.AVATAR)
     }
     if (null == a ? true : a.banner) {
       let e = (0, f.VI)(null == a ? true : a.banner);
-      s.push(e ? m.d6.ANIMATED_BANNER : m.d6.BANNER)
+      o.push(e ? m.d6.ANIMATED_BANNER : m.d6.BANNER)
     }
-    return (null == a ? true : a.bio) && s.push(m.d6.BIO), (null == a ? true : a.themeColors) != null && true !== a.themeColors.find(e => null !== e) && s.push(m.d6.THEME), (null == t ? true : t.avatarDecoration) != null && s.push(m.d6.AVATAR_DECORATION), (null == a ? true : a.profileEffect) != null && s.push(m.d6.PROFILE_EFFECT), s
+    return (null == a ? true : a.bio) && o.push(m.d6.BIO), (null == a ? true : a.themeColors) != null && true !== a.themeColors.find(e => null !== e) && o.push(m.d6.THEME), (null == t ? true : t.avatarDecoration) != null && o.push(m.d6.AVATAR_DECORATION), (null == a ? true : a.profileEffect) != null && o.push(m.d6.PROFILE_EFFECT), o
   },
   I = e => {
     let t = l.A.getStatus(e),
@@ -96,14 +96,14 @@ let A = e => {
     let {
       layout: i,
       userId: a,
-      guildId: s,
+      guildId: o,
       sessionId: c,
       sourceSessionId: d,
       showGuildProfile: f = true
     } = e, p = u.default.getUser(a);
     if (null == p) return {};
-    let _ = (0, h.AP)(null == p ? true : p.id, f ? s : true),
-      m = f && null != s ? o.Ay.getMember(s, null == p ? true : p.id) : null;
+    let _ = (0, h.AP)(null == p ? true : p.id, f ? o : true),
+      m = f && null != o ? s.Ay.getMember(o, null == p ? true : p.id) : null;
     return {
       profile_layout: i,
       profile_session_id: c,
@@ -154,7 +154,7 @@ let A = e => {
   },
   N = e => ({
     application_id: e,
-    application_linked: null != e && s.default.getFetchStateForApplication(e) === s.FetchState.FETCHED ? null != s.default.getNewestTokenForApplication(e) : null
+    application_linked: null != e && o.default.getFetchStateForApplication(e) === o.FetchState.FETCHED ? null != o.default.getNewestTokenForApplication(e) : null
   }),
   w = e => {
     let {
@@ -162,19 +162,19 @@ let A = e => {
       channelId: n,
       messageId: i,
       roleId: a,
-      widgetType: s,
-      analyticsLocations: o,
+      widgetType: o,
+      analyticsLocations: s,
       action: l,
       section: c,
       applicationId: u
     } = e;
     d.default.track(g.HAw.USER_PROFILE_ACTION, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e), N(u)), {
-      location_stack: o,
+      location_stack: s,
       profile_action: l,
       profile_section: c,
       source_message_id: i,
       source_role_id: a,
-      widget_type: s
+      widget_type: o
     }))
   },
   R = e => {
@@ -186,8 +186,8 @@ let A = e => {
       channelId: n,
       analyticsLocations: i,
       profileUi: a,
-      viewStartedAt: s,
-      fetchStartedAt: o,
+      viewStartedAt: o,
+      fetchStartedAt: s,
       timeToInteractiveMs: l,
       timeToLoadMs: c,
       timeToFetchMs: u
@@ -195,8 +195,8 @@ let A = e => {
     (null != l ? l : 0) <= 0 || (null != c ? c : 0) <= 0 || (null != u ? u : 0) <= 0 || d.default.track(g.HAw.USER_PROFILE_UI_VIEWED, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e)), {
       location_stack: i,
       profile_ui: a,
-      view_started_at: s,
-      fetch_started_at: o,
+      view_started_at: o,
+      fetch_started_at: s,
       time_to_interactive_ms: l,
       time_to_load_ms: c,
       time_to_fetch_ms: u
@@ -208,8 +208,8 @@ let A = e => {
       channelId: n,
       analyticsLocations: i,
       action: a,
-      display: s,
-      activity: o,
+      display: o,
+      activity: s,
       stream: l,
       entry: c,
       outbox: u,
@@ -218,12 +218,12 @@ let A = e => {
     d.default.track(g.HAw.USER_PROFILE_ACTIVITY_ACTION, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), C(e)), {
       location_stack: i,
       activity_action: a,
-      activity_display: s,
-      activity_type: S(null != l ? g.$pd.STREAMING : null == o ? true : o.type),
-      activity_name: null == o ? true : o.name,
-      activity_platform: null == o ? true : o.platform,
-      activity_session_id: null == o ? true : o.session_id,
-      activity_application_id: null == o ? true : o.application_id,
+      activity_display: o,
+      activity_type: S(null != l ? g.$pd.STREAMING : null == s ? true : s.type),
+      activity_name: null == s ? true : s.name,
+      activity_platform: null == s ? true : s.platform,
+      activity_session_id: null == s ? true : s.session_id,
+      activity_application_id: null == s ? true : s.application_id,
       item_id: null == c ? true : c.id,
       author_id_v2: null == c ? true : c.author_id,
       item_ids: null == u ? true : u.entries.map(e => {
@@ -253,7 +253,7 @@ let A = e => {
       badge: a
     }))
   },
-  x = e => {
+  L = e => {
     let {
       guildId: t,
       channelId: n,
@@ -265,35 +265,35 @@ let A = e => {
       badge: a
     }))
   },
-  L = e => {
+  x = e => {
     var t, n, r;
     let {
       displayProfile: i,
-      isProfileOpen: s
-    } = e, o = null == i ? true : i.userId, u = null != o ? l.A.findActivity(o, e => {
+      isProfileOpen: o
+    } = e, s = null == i ? true : i.userId, u = null != s ? l.A.findActivity(s, e => {
       let {
         type: t
       } = e;
-      return null != a.A.getAnyStreamForUser(o) ? t === g.$pd.PLAYING : t !== g.$pd.CUSTOM_STATUS
+      return null != a.A.getAnyStreamForUser(s) ? t === g.$pd.PLAYING : t !== g.$pd.CUSTOM_STATUS
     }) : null;
     d.default.track(g.HAw.DM_PROFILE_TOGGLED, {
-      is_profile_open: s,
+      is_profile_open: o,
       has_images: !!(null != (t = null == u || null == (n = u.assets) ? true : n.large_image) ? t : null == u || null == (r = u.assets) ? true : r.small_image),
-      is_friend: c.A.isFriend(o),
-      viewed_profile_user_id: o,
+      is_friend: c.A.isFriend(s),
+      viewed_profile_user_id: s,
       profile_has_nitro_customization: null == i ? true : i.hasPremiumCustomization(),
       profile_has_theme_color_customized: null == i ? true : i.hasThemeColors(),
       profile_has_theme_animation: (null == i ? true : i.popoutAnimationParticleType) != null
     })
   },
-  j = e => {
+  M = e => {
     let {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
       action: a,
-      widgetEdited: s,
-      gameId: o,
+      widgetEdited: o,
+      gameId: s,
       numResults: l,
       numCharacters: c,
       applicationId: u
@@ -303,21 +303,21 @@ let A = e => {
     })), d.default.track(g.HAw.USER_PROFILE_EDIT_ACTION, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e), N(u)), {
       location_stack: i,
       edit_action: a,
-      widget_edited: s,
-      game_id: o,
+      widget_edited: o,
+      game_id: s,
       num_results: l,
       num_characters: c,
       application_id: u
     }))
   },
-  M = e => {
+  j = e => {
     let {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
       widgetEdited: a,
-      gameIds: s,
-      tags: o,
+      gameIds: o,
+      tags: s,
       numCharactersCommentary: l,
       isWidgetRemoved: c
     } = e;
@@ -326,8 +326,8 @@ let A = e => {
     })), d.default.track(g.HAw.USER_PROFILE_EDIT_SAVED, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e)), {
       location_stack: i,
       widget_edited: a,
-      game_ids: s,
-      tags: o,
+      game_ids: o,
+      tags: s,
       num_characters_commentary: l,
       is_widget_removed: c
     }))
@@ -338,8 +338,8 @@ let A = e => {
       channelId: n,
       analyticsLocations: i,
       action: a,
-      wishlistId: s,
-      skuId: o,
+      wishlistId: o,
+      skuId: s,
       productLines: l
     } = e;
     w(v(b({}, e), {
@@ -347,8 +347,8 @@ let A = e => {
     })), d.default.track(g.HAw.USER_PROFILE_WISHLIST_ACTION, v(b({}, (0, r.H$)(t), (0, r.Ou)(n), T(e)), {
       location_stack: i,
       action_type: a,
-      wishlist_id: s,
-      sku_id: o,
+      wishlist_id: o,
+      sku_id: s,
       product_lines: null != l ? Array.from(l) : []
     }))
   }

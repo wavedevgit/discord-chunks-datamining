@@ -10,7 +10,7 @@ var Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk594262 = require("./594262.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -56,15 +56,15 @@ function d(e) {
   let {
     activity: t,
     embeddedActivity: n,
-    user: o,
+    user: s,
     onAction: u,
     location: d,
     variant: f = "secondary",
     size: p = "sm"
-  } = e, _ = c(e, ["activity", "embeddedActivity", "user", "onAction", "location", "variant", "size"]), h = (0, s.l)({
+  } = e, _ = c(e, ["activity", "embeddedActivity", "user", "onAction", "location", "variant", "size"]), h = (0, o.l)({
     activity: null != t ? t : true,
     embeddedActivity: n,
-    user: o,
+    user: s,
     onGameJoin: u,
     location: d
   });

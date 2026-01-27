@@ -20,9 +20,9 @@ var Chunk627968 = require("./627968.js"),
 require("./634654.js");
 var Chunk985018 = require("./985018.jsx"),
   Chunk9040 = require("./9040.js");
-let q = (0, Chunk915089.Ld)();
+let b = (0, Chunk915089.Ld)();
 
-function b(e) {
+function q(e) {
   var A;
   let {
     upload: t,
@@ -30,35 +30,35 @@ function b(e) {
     onDeleteAttachment: d
   } = e, u = n.useCallback(() => {
     null == d || d(t.id)
-  }, [d, t.id]), c = l >= 1, g = l < 0, p = c || g, m = null != (A = t.filename) ? A : t.id, q = (0, f.kt)(l);
-  return (0, r.jsx)(o.m, {
+  }, [d, t.id]), c = l >= 1, g = l < 0, f = c || g, m = null != (A = t.filename) ? A : t.id, b = (0, p.kt)(l);
+  return (0, r.jsx)(s.m, {
     asContainer: true,
-    text: q,
+    text: b,
     children: (0, r.jsxs)("div", {
       className: a()(h.hC, {
         [h.t]: g,
-        [h.ik]: !p
+        [h.ik]: !f
       }),
-      children: [(0, r.jsx)(s.DF1, {
+      children: [(0, r.jsx)(o.DF1, {
         size: "xs",
         color: i.A.colors.ICON_MUTED.css
-      }), (0, r.jsx)(s.hKd, {
+      }), (0, r.jsx)(o.hKd, {
         size: 10,
         horizontal: true
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: m
-      }), !p && (0, r.jsx)(s.y$y, {
+      }), !f && (0, r.jsx)(o.y$y, {
         className: h.eD,
-        type: s.y$y.Type.SPINNING_CIRCLE
-      }), p && null != d && (0, r.jsx)(s.DUT, {
+        type: o.y$y.Type.SPINNING_CIRCLE
+      }), f && null != d && (0, r.jsx)(o.DUT, {
         onClick: u,
         "aria-label": v.intl.formatToPlainString(v.t["1o5hyW"], {
           attachment: m
         }),
         "aria-hidden": false,
         className: h.G5,
-        children: (0, r.jsx)(s.PGe, {
+        children: (0, r.jsx)(o.PGe, {
           size: "xxs",
           color: "currentColor",
           className: h.__invalid_deleteIcon
@@ -76,9 +76,9 @@ function C(e) {
     canAttachFiles: l,
     canAttachArchives: a,
     addAttachment: i,
-    deleteAttachment: o,
+    deleteAttachment: s,
     fileUploadProgresses: c
-  } = (0, p.Z)(), f = n.useRef(false);
+  } = (0, f.Z)(), p = n.useRef(false);
 
   function C(e) {
     try {
@@ -87,11 +87,11 @@ function C(e) {
         file: A,
         origin: "unknown:guild_product_attachment"
       });
-      f.current = true
+      p.current = true
     } catch (e) {}
   }
   return n.useEffect(() => {
-    f.current && (A(), f.current = false)
+    p.current && (A(), p.current = false)
   }, [A]), (0, r.jsxs)("div", {
     className: h.kL,
     children: [(0, r.jsx)(d.A, {
@@ -105,25 +105,25 @@ function C(e) {
       innerClassName: h._3,
       disabled: !l,
       "aria-label": v.intl.string(v.t["23LeCD"]),
-      "aria-describedby": q,
+      "aria-describedby": b,
       multiple: true,
       onChange: function(e) {
         null != e.currentTarget.files && C(e.currentTarget.files)
       },
-      children: [(0, r.jsx)(s.kpT, {
+      children: [(0, r.jsx)(o.kpT, {
         size: "xs",
         color: "currentColor",
         className: h.T8,
         "aria-hidden": true
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "always-white",
         children: v.intl.string(v.t["23LeCD"])
       })]
-    }), (0, r.jsx)(s.hKd, {
+    }), (0, r.jsx)(o.hKd, {
       size: 12
-    }), (0, r.jsx)(s.Text, {
-      id: q,
+    }), (0, r.jsx)(o.Text, {
+      id: b,
       color: "text-muted",
       variant: "text-xs/normal",
       children: a ? v.intl.formatToPlainString(v.t.lvU6sr, {
@@ -138,9 +138,9 @@ function C(e) {
         className: h.$W,
         "aria-label": v.intl.string(v.t.YZ6cTW),
         children: t.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(b, {
+          children: (0, r.jsx)(q, {
             upload: e,
-            onDeleteAttachment: o,
+            onDeleteAttachment: s,
             progress: c[e.id]
           })
         }, e.id))

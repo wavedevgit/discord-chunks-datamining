@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 847652, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-var r = {
+/** Chunk was on 60667 **/
+/** chunk id: 847652, original params: e,t,n (module,exports,require) **/
+require.r(module.exports = {
   boxBackdrop: "boxBackdrop_b0db00",
   bentoSectionHeader: "bentoSectionHeader_b0db00",
   bentoBoxesGrid: "bentoBoxesGrid_b0db00",
@@ -25,5 +24,4 @@ var r = {
   backgroundVideoContainer: "backgroundVideoContainer_b0db00",
   backgroundVideo: "backgroundVideo_b0db00",
   overlayImage: "overlayImage_b0db00"
-};
-require.r(module.exports = r)
+})

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk73392 = require("./73392.js"),
   Chunk291594 = require("./291594.jsx"),
@@ -70,9 +70,9 @@ function h(e) {
     onPopoutClosed: p,
     children: e => (0, r.jsx)(c.A, _(f({}, e), {
       tag: "span",
-      children: (0, r.jsx)(o.EYj, {
+      children: (0, r.jsx)(s.EYj, {
         ref: g,
-        className: h ? s()(d, E) : d,
+        className: h ? o()(d, E) : d,
         variant: "text-sm/semibold",
         color: "text-strong",
         lineClamp: 1,

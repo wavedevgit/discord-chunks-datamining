@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 545202, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 545202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,32 +15,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk473169 = require("./473169.js");
 
-function _() {
+function m() {
   let {
     analyticsLocations: e
-  } = (0, l.Ay)(), t = (0, a.bG)([c.A], () => c.A.getActiveInputProfile()), {
+  } = (0, o.Ay)(), t = (0, l.bG)([c.A], () => c.A.getActiveInputProfile()), {
     enabledInputProfiles: n
-  } = (0, u.d)({
+  } = (0, d.d)({
     location: "UserSettingsInputProfile"
-  }), _ = i.useCallback(t => {
+  }), m = i.useCallback(t => {
     let {
       value: n
     } = t;
-    o.A.setActiveInputProfile(n, {
+    a.A.setActiveInputProfile(n, {
       analyticsLocations: e
     })
-  }, [e]), h = [{
-    value: d.my.VOICE_ISOLATION,
-    name: f.intl.string(f.t.cjPbpT),
-    desc: f.intl.string(f.t.CzhvnE)
+  }, [e]), g = [{
+    value: u.my.VOICE_ISOLATION,
+    name: _.intl.string(_.t.cjPbpT),
+    desc: _.intl.string(_.t.CzhvnE)
   }, {
-    value: d.my.STUDIO,
-    name: f.intl.string(f.t.VZPR0R),
-    desc: f.intl.string(f.t.ZaJksS)
+    value: u.my.STUDIO,
+    name: _.intl.string(_.t.VZPR0R),
+    desc: _.intl.string(_.t.ZaJksS)
   }, {
-    value: d.my.CUSTOM,
-    name: f.intl.string(f.t["N/PQjv"]),
-    desc: f.intl.string(f.t.SnBmuY)
+    value: u.my.CUSTOM,
+    name: _.intl.string(_.t["N/PQjv"]),
+    desc: _.intl.string(_.t.SnBmuY)
   }].filter(e => {
     let {
       value: t
@@ -51,12 +50,12 @@ function _() {
   return (0, r.jsx)("div", {
     className: p.SX,
     children: (0, r.jsx)(s.z6M, {
-      label: f.intl.string(f.t.LM3U3k),
-      onChange: e => _({
+      label: _.intl.string(_.t.LM3U3k),
+      onChange: e => m({
         value: e
       }),
-      options: h,
-      value: null != t ? t : d.my.CUSTOM
+      options: g,
+      value: null != t ? t : u.my.CUSTOM
     })
   })
 }

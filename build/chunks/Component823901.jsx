@@ -106,7 +106,7 @@ async function S(e) {
     null == h || h(), (0, a.mMO)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("96811"), n.e("14476")]).then(n.bind(n, 648230));
+      } = await Promise.all([n.e("96811"), n.e("48697")]).then(n.bind(n, 648230));
       return n => {
         var r, l;
         return (0, i.jsx)(e, (r = function(e) {

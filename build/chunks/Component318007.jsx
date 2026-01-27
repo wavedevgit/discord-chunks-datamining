@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js"),
   Chunk937008 = require("./937008.jsx"),
@@ -93,18 +93,18 @@ let T = e => {
     soundEffect: C,
     setEmojiConfetti: N,
     setSoundEffect: w
-  } = (0, c.Pv)(), [R, P] = i.useState(false), D = i.useRef(null), x = (0, o._u)({
+  } = (0, c.Pv)(), [R, P] = i.useState(false), D = i.useRef(null), L = (0, s._u)({
     orientation: "horizontal"
   }), {
-    ref: L
-  } = x, j = I(x, ["ref"]), M = (0, d.lo)(b, t), k = M === d.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== d.tB.DEFAULT, G = (0, _._)(), V = (0, p.A)({
+    ref: x
+  } = L, M = I(L, ["ref"]), j = (0, d.lo)(b, t), k = j === d.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = j !== d.tB.DEFAULT, G = (0, _._)(), F = (0, p.A)({
     location: "GiftAnimationOptions"
-  }), F = e => {
+  }), V = e => {
     null != w && w(null == e ? true : e)
   };
   return (0, r.jsxs)("div", {
     children: [U && (0, r.jsxs)("div", {
-      className: s()(y.Os, n),
+      className: o()(y.Os, n),
       children: [null != v ? (0, r.jsx)(h.A, {
         giftStyle: v,
         defaultAnimationState: f.oA.ACTION,
@@ -114,10 +114,10 @@ let T = e => {
       }) : (0, r.jsx)(l.y$y, {
         className: y.u1
       }), k && (0, r.jsxs)("div", {
-        className: s()(y.b7, V && y.Ow),
+        className: o()(y.b7, F && y.Ow),
         children: [(0, r.jsx)(u.A, {
           sound: C,
-          onSelect: F
+          onSelect: V
         }), (0, r.jsx)(m.A, {
           setEmojiConfetti: N,
           emojiConfetti: null == T ? true : T
@@ -129,11 +129,11 @@ let T = e => {
         var t;
         e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
-      className: s()(y.Qh, a),
+      className: o()(y.Qh, a),
       "aria-label": E.intl.string(E.t.v54NrN),
-      ref: L
-    }, j), {
-      children: null != G && !V && G.map((e, t) => (0, r.jsx)(g.A, {
+      ref: x
+    }, M), {
+      children: null != G && !F && G.map((e, t) => (0, r.jsx)(g.A, {
         isSelected: v === e,
         giftStyle: e,
         setSelectedGiftStyle: S,

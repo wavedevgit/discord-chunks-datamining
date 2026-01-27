@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   CT: () => a,
-  M0: () => s,
+  M0: () => o,
   tS: () => i,
   uk: () => r
 });
@@ -43,7 +43,7 @@ function a(e) {
   return t
 }
 
-function s(e) {
+function o(e) {
   let t = "";
   for (let n = 0; n < e.length; n++) t += r[e[n]];
   return parseInt(t)

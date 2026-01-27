@@ -4,7 +4,7 @@
 var r;
 Object.defineProperty(exports, "__esModule", {
   value: true
-}), exports.astFormatter = exports.RichTextNodeType = true, exports.formatToAst = o;
+}), exports.astFormatter = exports.RichTextNodeType = true, exports.formatToAst = s;
 let Chunk941242 = require("./941242.js");
 ! function(e) {
   e.Text = "text", e.Strong = "strong", e.Emphasis = "em", e.Strikethrough = "s", e.Code = "inlineCode", e.Link = "link", e.Paragraph = "paragraph"
@@ -36,7 +36,7 @@ let a = {
     content: e
   })
 };
-class s extends Chunk941242.FormatBuilder {
+class o extends Chunk941242.FormatBuilder {
   constructor() {
     super(...arguments), this.result = []
   }
@@ -60,13 +60,13 @@ class s extends Chunk941242.FormatBuilder {
   }
 }
 
-function o(e, t) {
+function s(e, t) {
   return "string" == typeof e ? [{
     type: r.Text,
     content: e
-  }] : this.bindFormatValues(s, e, t)
+  }] : this.bindFormatValues(o, e, t)
 }
 exports.astFormatter = {
-  format: o,
-  builder: s
+  format: s,
+  builder: o
 }

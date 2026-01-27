@@ -6,18 +6,18 @@ require.d(exports, {
   On: () => f,
   Xd: () => a.Xd,
   d4: () => l,
-  ly: () => o,
+  ly: () => s,
   oK: () => d
 }), require("./107123.js");
 var Chunk698441 = require("./698441.js"),
   Chunk95701 = require("./95701.js"),
   Chunk172799 = require("./172799.js");
 
-function s(e) {
+function o(e) {
   return e.type === a.Xd.GROUP_DM || null != e.channel && (0, i.MK)(e.channel.type)
 }
 
-function o(e) {
+function s(e) {
   let t = e.guild_scheduled_event;
   return null != t && (0, r.d6)(t)
 }
@@ -39,5 +39,5 @@ function d(e) {
 }
 
 function f(e) {
-  return "number" == typeof e.type ? e.type : s(e) ? a.Xd.GROUP_DM : u(e) ? a.Xd.FRIEND : a.Xd.GUILD
+  return "number" == typeof e.type ? e.type : o(e) ? a.Xd.GROUP_DM : u(e) ? a.Xd.FRIEND : a.Xd.GUILD
 }

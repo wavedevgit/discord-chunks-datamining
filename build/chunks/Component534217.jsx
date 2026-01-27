@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 534217, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 534217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => w
+  S: () => T
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk854627 = require("./854627.js"),
@@ -23,170 +22,161 @@ var Chunk503698 = require("./503698.js"),
   Chunk146449 = require("./146449.js"),
   Chunk544879 = require("./544879.js");
 
-function b(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function O(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
-
-function v(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let I = e => {
-    let {
-      startingScreen: t,
-      analyticsLocations: i
-    } = e;
-    c.default.track(m.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
-      location_stack: i
-    }), (0, o.mMO)(async () => {
-      let {
-        default: e
-      } = await Promise.resolve().then(n.bind(n, 303682));
-      return n => (0, r.jsx)(e, A(O({}, n), {
-        startingScreen: t
-      }))
-    })
-  },
-  S = e => {
+let x = e => {
     let {
       user: t
     } = e, {
       avatarSrc: n,
       eventHandlers: i
-    } = (0, l.A)({
+    } = (0, o.A)({
       userId: t.id,
-      size: o._3J.SIZE_24
+      size: a._3J.SIZE_24
     });
-    return (0, r.jsx)(o.euF, O({
-      className: E.bj,
+    return (0, r.jsx)(a.euF, E({
+      className: h.bj,
       src: n,
-      "aria-label": (0, d.mG)(t),
-      size: o._3J.SIZE_24
+      "aria-label": (0, u.mG)(t),
+      size: a._3J.SIZE_24
     }, i), t.id)
   },
-  T = e => {
+  O = e => {
     let {
       slotIndex: t
     } = e;
     return (0, r.jsx)("div", {
-      className: E.p,
+      className: h.p,
       children: t
     })
   },
   C = e => {
     let {
       referralSentUsers: t
-    } = e, n = () => {
-      let e = [];
-      for (let n = 0; n < _.Z; n++)
-        if ((null == t ? true : t[n]) !== true) {
-          let i = (0, r.jsx)(S, {
-            user: t[n]
-          }, t[n].id);
-          e.push(i)
-        } else {
-          let t = (0, r.jsx)(T, {
-            slotIndex: n + 1
-          }, n);
-          e.push(t)
-        } return e
-    };
+    } = e;
     return (0, r.jsx)("div", {
-      className: E.L$,
-      children: n()
+      className: h.L$,
+      children: (() => {
+        let e = [];
+        for (let n = 0; n < m.Z; n++)
+          if ((null == t ? true : t[n]) !== true) {
+            let i = (0, r.jsx)(x, {
+              user: t[n]
+            }, t[n].id);
+            e.push(i)
+          } else {
+            let t = (0, r.jsx)(O, {
+              slotIndex: n + 1
+            }, n);
+            e.push(t)
+          } return e
+      })()
     })
   },
-  N = e => {
+  I = e => {
     let {
       nReferralsSent: t
-    } = e, n = 33.3 * t;
-    return (0, r.jsx)(o.a3E, {
-      percent: n,
+    } = e;
+    return (0, r.jsx)(a.a3E, {
+      percent: 33.3 * t,
       colorOverride: "#53ac66",
-      background: E.cq,
+      background: h.cq,
       strokeSize: .8,
-      ringColorOverrideClassName: E.e0,
-      overlayClassName: t === _.Z ? E.ys : true,
-      children: (0, r.jsx)(o._V3, {
-        src: y.A,
+      ringColorOverrideClassName: h.e0,
+      overlayClassName: t === m.Z ? h.ys : true,
+      children: (0, r.jsx)(a._V3, {
+        src: b.A,
         height: 93,
         width: 93,
         zoomable: false
       })
     })
   },
-  w = e => {
+  T = e => {
     let {
       className: t
     } = e, {
-      referralSentUsers: n
-    } = (0, _.J)(), i = (0, s.bG)([p.A], () => p.A.getRecipientStatus()), l = (0, s.bG)([p.A], () => p.A.getHasEligibleFriends()), c = i.size === _.Z && [...i.values()].every(e => e === f.aK.REDEEMED), d = i.size === _.Z, y = () => false === l ? g.intl.format(g.t["zWhX/Q"], {
-      helpdeskArticle: u.A.getArticleURL(m.MVz.REFERRAL_PROGRAM)
-    }) : n.length === _.Z ? true === c ? g.intl.format(g.t["1aEjsH"], {
-      helpdeskArticle: u.A.getArticleURL(m.MVz.REFERRAL_PROGRAM)
-    }) : g.intl.format(g.t["+u3AOO"], {
-      helpdeskArticle: u.A.getArticleURL(m.MVz.REFERRAL_PROGRAM)
-    }) : g.intl.format(g.t["omMr+V"], {
-      helpdeskArticle: u.A.getArticleURL(m.MVz.REFERRAL_PROGRAM)
-    });
+      referralSentUsers: i
+    } = (0, m.J)(), o = (0, s.bG)([p.A], () => p.A.getRecipientStatus()), u = (0, s.bG)([p.A], () => p.A.getHasEligibleFriends()), b = o.size === m.Z && [...o.values()].every(e => e === _.aK.REDEEMED), x = o.size === m.Z;
     return (0, r.jsxs)("div", {
-      className: a()(E.kL, t),
+      className: l()(h.kL, t),
       children: [(0, r.jsx)("div", {
-        className: E.G3,
-        children: (0, r.jsx)(N, {
-          nReferralsSent: i.size
+        className: h.G3,
+        children: (0, r.jsx)(I, {
+          nReferralsSent: o.size
         })
       }), (0, r.jsxs)("div", {
-        className: E.IH,
+        className: h.IH,
         children: [(0, r.jsx)(C, {
-          referralSentUsers: n
+          referralSentUsers: i
         }), (0, r.jsxs)("div", {
-          className: E.n4,
-          children: [(0, r.jsx)(o.Heading, {
+          className: h.n4,
+          children: [(0, r.jsx)(a.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: g.intl.string(g.t.USo4s7)
-          }), (0, r.jsx)(o.Text, {
+            children: f.intl.string(f.t.USo4s7)
+          }), (0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             color: "text-subtle",
-            children: y()
+            children: false === u ? f.intl.format(f.t["zWhX/Q"], {
+              helpdeskArticle: d.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
+            }) : i.length === m.Z ? true === b ? f.intl.format(f.t["1aEjsH"], {
+              helpdeskArticle: d.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
+            }) : f.intl.format(f.t["+u3AOO"], {
+              helpdeskArticle: d.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
+            }) : f.intl.format(f.t["omMr+V"], {
+              helpdeskArticle: d.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
+            })
           })]
-        }), (0, r.jsx)(o.Button, {
+        }), (0, r.jsx)(a.Button, {
           variant: "primary",
-          disabled: false === l || true === d,
-          text: g.intl.string(g.t.Lm2nFc),
-          onClick: () => I({
-            startingScreen: h.SelectFriendsModalScreens.SELECT_FRIENDS,
+          disabled: false === u || true === x,
+          text: f.intl.string(f.t.Lm2nFc),
+          onClick: () => (e => {
+            let {
+              startingScreen: t,
+              analyticsLocations: i
+            } = e;
+            c.default.track(A.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+              location_stack: i
+            }), (0, a.mMO)(async () => {
+              let {
+                default: e
+              } = await Promise.resolve().then(n.bind(n, 303682));
+              return n => {
+                var i, l;
+                return (0, r.jsx)(e, (i = E({}, n), l = l = {
+                  startingScreen: t
+                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+                  var n = Object.keys(e);
+                  if (Object.getOwnPropertySymbols) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    n.push.apply(n, r)
+                  }
+                  return n
+                })(Object(l)).forEach(function(e) {
+                  Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+                }), i))
+              }
+            })
+          })({
+            startingScreen: g.SelectFriendsModalScreens.SELECT_FRIENDS,
             analyticsLocations: []
           })
         })]

@@ -23,13 +23,13 @@ function c(e) {
     className: a()(l.hj, {
       [l.jQ]: i
     }),
-    children: [(0, r.jsx)(s.Text, {
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: n ? "text-strong" : "text-muted",
       children: t.label
-    }), i ? null : (0, r.jsx)(o.A, {
+    }), i ? null : (0, r.jsx)(s.A, {
       className: a()(l.LJ, c),
-      direction: o.A.Directions.RIGHT
+      direction: s.A.Directions.RIGHT
     })]
   }, t.id)
 }
@@ -38,7 +38,7 @@ let u = function(e) {
     breadcrumbs: t,
     activeId: n,
     className: i,
-    separatorClassName: s
+    separatorClassName: o
   } = e;
   return (0, r.jsx)("div", {
     className: a()(l.jD, i),
@@ -46,7 +46,7 @@ let u = function(e) {
       breadcrumb: e,
       isActiveBreadcrumb: e.id === n,
       isFinalBreadcrumb: i === t.length - 1,
-      separatorClassName: s
+      separatorClassName: o
     }, e.id))
   })
 }

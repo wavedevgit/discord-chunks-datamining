@@ -2,7 +2,7 @@
 /** chunk id: 442759, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ym: () => o,
+  Ym: () => s,
   f5: () => l,
   yW: () => c
 }), require("./321073.js"), require("./896048.js");
@@ -10,7 +10,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk575593 = require("./575593.js"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,7 +18,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class s {
   get firstAvatarDecoration() {
     return this.getFirstItemByType(i.R.AVATAR_DECORATION)
   }
@@ -40,7 +40,7 @@ class o {
     }, new Map)
   }
   constructor(e) {
-    s(this, "itemsByTypes", true), this.itemsByTypes = this.sortByTypes(e)
+    o(this, "itemsByTypes", true), this.itemsByTypes = this.sortByTypes(e)
   }
 }
 let l = e => {
@@ -48,7 +48,7 @@ let l = e => {
       firstProfileEffect: t,
       firstAvatarDecoration: n,
       firstNameplate: i
-    } = r.useMemo(() => new o(e.items), [e]);
+    } = r.useMemo(() => new s(e.items), [e]);
     return {
       firstProfileEffect: t,
       firstAvatarDecoration: n,
@@ -60,8 +60,8 @@ let l = e => {
       n = a.intl.string(a.t.wR5wOo),
       r = a.intl.string(a.t.x5CoXR);
     if (null != e.bundledProducts) {
-      var i, s, o;
-      e.bundledProducts.length > 0 && (t = null == (i = e.bundledProducts[0]) ? true : i.name), e.bundledProducts.length > 1 && (n = null == (s = e.bundledProducts[1]) ? true : s.name), e.bundledProducts.length > 2 && (r = null == (o = e.bundledProducts[2]) ? true : o.name)
+      var i, o, s;
+      e.bundledProducts.length > 0 && (t = null == (i = e.bundledProducts[0]) ? true : i.name), e.bundledProducts.length > 1 && (n = null == (o = e.bundledProducts[1]) ? true : o.name), e.bundledProducts.length > 2 && (r = null == (s = e.bundledProducts[2]) ? true : s.name)
     }
     return {
       itemOneName: t,

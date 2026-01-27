@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 190363, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 82575 **/
+/** chunk id: 190363, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => r
+  k: () => i
 });
-let r = "CONNECTED_GAMES"
+let i = "CONNECTED_GAMES"

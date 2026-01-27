@@ -9,7 +9,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk21161 = require("./21161.jsx"),
   Chunk3137 = require("./3137.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -35,7 +35,7 @@ let c = 7;
 function u() {
   let {
     createMultipleConfettiAt: e
-  } = r.useContext(a.x), t = (0, i.bG)([s.A], () => s.A.getState()), n = r.useCallback(e => ({
+  } = r.useContext(a.x), t = (0, i.bG)([o.A], () => o.A.getState()), n = r.useCallback(e => ({
     size: {
       type: "static-random",
       minValue: e.confettiSize - c,
@@ -44,9 +44,9 @@ function u() {
   }), []);
   return r.useMemo(() => ({
     fire: (r, i, a) => {
-      var s, o;
+      var o, s;
       let c = (null == a ? true : a.settings) != null ? l({}, t, a.settings) : t;
-      e(r, i, n(c), (null != (s = null == a ? true : a.count) ? s : c.confettiCount) * (null != (o = null == a ? true : a.countMultiplier) ? o : 1), {
+      e(r, i, n(c), (null != (o = null == a ? true : a.count) ? o : c.confettiCount) * (null != (s = null == a ? true : a.countMultiplier) ? s : 1), {
         sprite: null == a ? true : a.sprite
       })
     }

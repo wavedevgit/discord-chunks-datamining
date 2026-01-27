@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk758879 = require("./758879.js"),
   Chunk397927 = require("./397927.js"),
   Chunk226540 = require("./226540.js"),
@@ -94,15 +94,15 @@ let E = function(e) {
     highlighted: w,
     focusProps: R
   } = e, P = m(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
-  P.className = s()(P.className, d.kL, {
+  P.className = o()(P.className, d.kL, {
     [d.wH]: v,
     [d.mr]: w,
     [null != T ? T : ""]: v,
     [d.vk]: !v && (null != I || null != b)
   }), P["aria-selected"] = null != (t = P["aria-selected"]) ? t : v;
   let D = i.useRef(null),
-    x = (0, r.jsxs)("div", {
-      className: s()(d.sn, {
+    L = (0, r.jsxs)("div", {
+      className: o()(d.sn, {
         [d.EY]: null != _
       }),
       children: [(0, r.jsx)(u.A, {
@@ -113,19 +113,19 @@ let E = function(e) {
         placement: c.u.MEMBER_LIST
       }), (0, r.jsxs)("div", {
         ref: D,
-        className: s()(C, d.Zp, {
+        className: o()(C, d.Zp, {
           [d.SU]: !v && A,
           [d.Ib]: N
         }),
         children: [(0, r.jsx)("div", {
-          className: s()(d.my, S),
+          className: o()(d.my, S),
           children: a
         }), (0, r.jsxs)("div", {
           className: d.Qs,
           children: [(0, r.jsxs)("div", {
             className: d.BG,
             children: [(0, r.jsx)("div", {
-              className: s()(d.UU, {
+              className: o()(d.UU, {
                 [d.to]: N
               }),
               children: f
@@ -141,13 +141,13 @@ let E = function(e) {
       })]
     });
   return null != I ? (0, r.jsx)(l.vN3, h(p({}, R), {
-    children: (0, r.jsx)(o.N_, h(p({
+    children: (0, r.jsx)(s.N_, h(p({
       to: I,
       onClick: b
     }, P), {
       role: "listitem",
       ref: n,
-      children: x
+      children: L
     }))
   })) : null != b ? (0, r.jsx)(l.DUT, h(p({
     onClick: b,
@@ -155,12 +155,12 @@ let E = function(e) {
   }, P), {
     role: "listitem",
     innerRef: n,
-    children: x
+    children: L
   })) : (0, r.jsx)(l.vN3, h(p({}, R), {
     children: (0, r.jsx)("div", h(p({}, P), {
       role: "listitem",
       ref: n,
-      children: x
+      children: L
     }))
   }))
 }

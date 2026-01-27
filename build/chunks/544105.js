@@ -2,22 +2,22 @@
 /** chunk id: 544105, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  EY: () => s,
+  EY: () => o,
   Gp: () => a,
   K8: () => f,
   NL: () => l,
   f$: () => u,
   hv: () => d,
   hw: () => c,
-  sS: () => o,
+  sS: () => s,
   v_: () => p,
   yM: () => _
 }), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk179771 = require("./179771.js"),
   Chunk652215 = require("./652215.js");
 let a = "xbox://communitylinking/donut/audio",
-  s = "https://www.xbox.com/en-US/apps/xbox-app-for-mobile",
-  o = [Chunk179771.F.VOICE, Chunk179771.F.DM_CHANNELS_READ, Chunk179771.F.GUILDS, Chunk179771.F.GUILDS_MEMBERS_READ, Chunk179771.F.IDENTIFY, Chunk179771.F.CONNECTIONS, Chunk179771.F.ACTIVITIES_READ],
+  o = "https://www.xbox.com/en-US/apps/xbox-app-for-mobile",
+  s = [Chunk179771.F.VOICE, Chunk179771.F.DM_CHANNELS_READ, Chunk179771.F.GUILDS, Chunk179771.F.GUILDS_MEMBERS_READ, Chunk179771.F.IDENTIFY, Chunk179771.F.CONNECTIONS, Chunk179771.F.ACTIVITIES_READ],
   l = [Chunk179771.F.VOICE, Chunk179771.F.DM_CHANNELS_READ, Chunk179771.F.GUILDS, Chunk179771.F.GUILDS_MEMBERS_READ, Chunk179771.F.IDENTIFY, Chunk179771.F.CONNECTIONS],
   c = e => {
     let {
@@ -26,17 +26,17 @@ let a = "xbox://communitylinking/donut/audio",
       guildName: r,
       channelId: i,
       muted: a,
-      deafened: s,
-      nonce: o
+      deafened: o,
+      nonce: s
     } = e, l = {
       channelid: i,
       guildid: t,
       channelname: n,
       guildname: r,
       muted: String(a),
-      deafened: String(s)
+      deafened: String(o)
     };
-    return null != o && (l.nonce = o), new URLSearchParams(l)
+    return null != s && (l.nonce = s), new URLSearchParams(l)
   };
 var u = function(e) {
   return e.PLAYSTATION = "playstation", e.XBOX = "xbox", e

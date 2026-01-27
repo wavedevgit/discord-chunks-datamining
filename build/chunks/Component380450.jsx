@@ -64,13 +64,13 @@ function y() {
     roleStyle: n,
     highContrastMode: h,
     switchIconsEnabled: g
-  } = (0, i.cf)([o.A], () => ({
-    saturation: o.A.saturation,
-    useReducedMotion: o.A.useReducedMotion,
-    roleStyle: o.A.roleStyle,
-    highContrastMode: o.A.isHighContrastModeEnabled,
-    switchIconsEnabled: o.A.isSwitchIconsEnabled
-  })), y = (0, i.bG)([o.A], () => o.A.displayNameStylesEnabled), b = (0, c.y)("useAccessibilityItems"), O = (0, i.bG)([d.Ay], () => d.Ay.hdrDynamicRange), v = (0, l.i)("useAccessibilityItems"), A = [{
+  } = (0, i.cf)([s.A], () => ({
+    saturation: s.A.saturation,
+    useReducedMotion: s.A.useReducedMotion,
+    roleStyle: s.A.roleStyle,
+    highContrastMode: s.A.isHighContrastModeEnabled,
+    switchIconsEnabled: s.A.isSwitchIconsEnabled
+  })), y = (0, i.bG)([s.A], () => s.A.displayNameStylesEnabled), b = (0, c.y)("useAccessibilityItems"), O = (0, i.bG)([d.Ay], () => d.Ay.hdrDynamicRange), v = (0, l.i)("useAccessibilityItems"), A = [{
     name: p.intl.string(p.t.D5Fma9),
     value: "no-limit"
   }, {
@@ -90,21 +90,21 @@ function y() {
   function S() {
     u.default.track(f.HAw.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
       enabled: !y
-    }), (0, s.Dm)(!y)
+    }), (0, o.Dm)(!y)
   }
   let T = [(0, r.jsx)(a.rXV, {
     children: (0, r.jsx)(a.sLh, {
       id: "reduced-motion",
       label: p.intl.string(p.t.b3XBzg),
       checked: t,
-      action: () => (0, s.qz)(t ? "no-preference" : "reduce")
+      action: () => (0, o.qz)(t ? "no-preference" : "reduce")
     })
   }, "reduced-motion"), (0, r.jsx)(a.rXV, {
     children: (0, r.jsx)(a.sLh, {
       id: "high-contrast",
       label: p.intl.string(p.t.aZlePv),
       checked: h,
-      action: () => (0, s.uh)(h ? o._.DEFAULT : o._.HIGH)
+      action: () => (0, o.uh)(h ? s._.DEFAULT : s._.HIGH)
     })
   }, "high-contrast"), (0, r.jsx)(a.rXV, {
     children: (0, r.jsx)(a.aK1, {
@@ -113,7 +113,7 @@ function y() {
       control: (t, n) => (0, r.jsx)(a.i42, E(m({}, t), {
         ref: n,
         value: 100 * e,
-        onChange: e => (0, s.HU)(e / 100),
+        onChange: e => (0, o.HU)(e / 100),
         "aria-label": p.intl.string(p.t["5PWWCY"])
       }))
     })
@@ -132,7 +132,7 @@ function y() {
           group: "hdr-dynamic-range",
           checked: n === O,
           label: t,
-          action: () => (0, s.FU)(n)
+          action: () => (0, o.FU)(n)
         }, n)
       })
     })
@@ -150,7 +150,7 @@ function y() {
           group: "role-colors",
           checked: i === n,
           label: t,
-          action: () => (0, s.IX)(i)
+          action: () => (0, o.IX)(i)
         }, i)
       })
     })
@@ -166,7 +166,7 @@ function y() {
       id: "switch-icons",
       label: p.intl.string(p.t["S3z+pV"]),
       checked: g,
-      action: () => (0, s.Gm)(!g)
+      action: () => (0, o.Gm)(!g)
     })
   }, "switch-icons")), T
 }

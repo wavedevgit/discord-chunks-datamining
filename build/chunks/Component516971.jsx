@@ -10,7 +10,7 @@ var Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
   Chunk658122 = require("./658122.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -75,16 +75,16 @@ function p(e) {
   } = e, {
     type: n,
     icon: i,
-    color: o = "currentColor",
+    color: s = "currentColor",
     className: c
   } = t, f = d(t, ["type", "icon", "color", "className"]);
   return (0, r.jsx)("div", {
-    className: s.iconContainer,
+    className: o.iconContainer,
     children: (0, r.jsx)(i, u(l({
       "aria-hidden": true,
-      color: o
+      color: s
     }, f), {
-      className: a()(s.icon, c)
+      className: a()(o.icon, c)
     }))
   })
 }

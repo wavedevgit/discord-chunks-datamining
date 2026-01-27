@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk607470 = require("./607470.jsx"),
   Chunk418126 = require("./418126.js"),
@@ -34,12 +34,12 @@ let h = 13e3,
       animationState: C,
       updateAnimationState: N,
       characterAssets: w
-    } = (0, u.u)(null == I ? true : I.name), R = i.useMemo(() => Object.values(null != w ? w : {}).flat(), [w]), P = g.find(e => e.type === p.lp.USER && e.user.id === a.userId), D = i.useMemo(() => g.filter(e => m(e, a.userId)), [g, a.userId]), x = i.useMemo(() => D.flatMap(e => {
+    } = (0, u.u)(null == I ? true : I.name), R = i.useMemo(() => Object.values(null != w ? w : {}).flat(), [w]), P = g.find(e => e.type === p.lp.USER && e.user.id === a.userId), D = i.useMemo(() => g.filter(e => m(e, a.userId)), [g, a.userId]), L = i.useMemo(() => D.flatMap(e => {
       let n = t.find(t => t.claimedBy === e.user.id);
       return null != n ? [n] : []
-    }), [D, t]), [L, j] = i.useState(false), [M, k] = i.useState(0), [U, G] = i.useState(0);
+    }), [D, t]), [x, M] = i.useState(false), [j, k] = i.useState(0), [U, G] = i.useState(0);
     return i.useEffect(() => {
-      j(false)
+      M(false)
     }, [I, R]), i.useEffect(() => {
       let e = A.current;
       return () => {
@@ -48,18 +48,18 @@ let h = 13e3,
     }, []), i.useEffect(() => {
       if (!O) return;
       let e = v.current;
-      if (null == e || true === L) return;
+      if (null == e || true === x) return;
       let t = T(),
         n = R.findIndex(e => e === t);
       S(t), G(n), [...e.children].forEach((e, t) => {
         if ("VIDEO" !== e.nodeName) return;
         let r = e;
-        r.currentTime = 0, t === n && (r.play(), j(true))
+        r.currentTime = 0, t === n && (r.play(), M(true))
       })
-    }, [L, R, T, S, O]), i.useEffect(() => {
+    }, [x, R, T, S, O]), i.useEffect(() => {
       O && ((null == P ? true : P.speaking) ? N(u.f.TALKING) : C === u.f.TALKING && N(u.f.IDLE))
     }, [P, C, N, O]), i.useEffect(() => {
-      !O || x.some(e => {
+      !O || L.some(e => {
         switch (n.id) {
           case 1:
           case 2:
@@ -72,8 +72,8 @@ let h = 13e3,
           default:
             returnfalse
         }
-      }) && M + h < Date.now() && (N(u.f.HEAD_TURN), k(Date.now()))
-    }, [x, n, M, N, O]), (0, r.jsxs)(o.DUT, {
+      }) && j + h < Date.now() && (N(u.f.HEAD_TURN), k(Date.now()))
+    }, [L, n, j, N, O]), (0, r.jsxs)(s.DUT, {
       className: _.iE,
       style: {
         width: I.width,
@@ -98,7 +98,7 @@ let h = 13e3,
         }
       }), (null == w ? true : w.decoration) != null && (0, r.jsx)(l.A, {
         src: w.decoration[0],
-        className: s()(_.GG, {
+        className: o()(_.GG, {
           [_.UU]: y
         }),
         autoPlay: O,
@@ -114,7 +114,7 @@ let h = 13e3,
             width: I.width
           },
           src: e,
-          className: s()(_.GG, {
+          className: o()(_.GG, {
             [_.UU]: y
           }),
           onEnded: () => {
@@ -122,10 +122,10 @@ let h = 13e3,
             if (C === u.f.HEAD_TURN && (null == w || null == (t = w.headTurn) ? true : t.includes(e))) {
               N(u.f.HEAD_TURN_BACK);
               let e = setTimeout(() => {
-                j(false), A.current.delete(e)
+                M(false), A.current.delete(e)
               }, 2e3);
               A.current.add(e)
-            } else C === u.f.HEAD_TURN_BACK && (null == w || null == (n = w.headTurnBack) ? true : n.includes(e)) && N(u.f.IDLE), j(false)
+            } else C === u.f.HEAD_TURN_BACK && (null == w || null == (n = w.headTurnBack) ? true : n.includes(e)) && N(u.f.IDLE), M(false)
           },
           autoPlay: false,
           loop: false

@@ -29,20 +29,20 @@ function E(e) {
     maxCharacterCount: y,
     showRemainingCharsAfterCount: b,
     className: O
-  } = e, v = (0, s.bG)([f.default], () => p.Ay.canUseIncreasedMessageLength(f.default.getCurrentUser())), A = (0, d.A)(), I = null != y ? y : A, S = null != (t = null != b ? b : y) ? t : A / 10, T = E.length, C = null != i.upsellLongMessages && (null != T ? T : 0) > h.uvi && v, N = null != i.upsellLongMessages && !v, w = I - T, R = w > S, P = 0 === w ? m.intl.string(m.t.tU6YQ7) : w > 0 ? m.intl.formatToPlainString(m.t.qH8uFW, {
+  } = e, v = (0, o.bG)([f.default], () => p.Ay.canUseIncreasedMessageLength(f.default.getCurrentUser())), A = (0, d.A)(), I = null != y ? y : A, S = null != (t = null != b ? b : y) ? t : A / 10, T = E.length, C = null != i.upsellLongMessages && (null != T ? T : 0) > h.uvi && v, N = null != i.upsellLongMessages && !v, w = I - T, R = w > S, P = 0 === w ? m.intl.string(m.t.tU6YQ7) : w > 0 ? m.intl.formatToPlainString(m.t.qH8uFW, {
     count: w
   }) : m.intl.string(m.t.YSRIqa), {
     analyticsLocations: D
   } = (0, u.Ay)(c.A.CHARACTER_COUNT);
   if (!(C && w >= 0 || !R || N && !R)) return null;
-  let x = w >= 0;
+  let L = w >= 0;
   return (0, r.jsx)(u.f5, {
     value: D,
     children: (0, r.jsxs)("div", {
       className: a()(O, g.Dq),
       children: [(0, r.jsxs)("div", {
         className: g.SW,
-        children: [C && x ? (0, r.jsx)(o.m, {
+        children: [C && L ? (0, r.jsx)(s.m, {
           text: m.intl.formatToPlainString(m.t.vcvHa0, {
             maxLength: I
           }),
@@ -52,14 +52,14 @@ function E(e) {
             color: "currentColor",
             className: g.y
           })
-        }) : null, R ? null : (0, r.jsx)(o.m, {
+        }) : null, R ? null : (0, r.jsx)(s.m, {
           text: P,
           position: "top",
           children: (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
             tabularNumbers: true,
             "aria-hidden": true,
-            color: x ? "text-default" : "text-feedback-critical",
+            color: L ? "text-default" : "text-feedback-critical",
             children: w
           })
         })]

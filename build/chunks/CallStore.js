@@ -122,7 +122,7 @@ function T(e) {
       regionUpdated: false
     }, null != E[t]) {
     let e = E[t];
-    delete E[t], 1 !== e.indexOf("all") && (e = null), o.Bo.post({
+    delete E[t], 1 !== e.indexOf("all") && (e = null), s.Bo.post({
       url: f.Rsh.CALL_RING(t),
       body: {
         recipients: e
@@ -148,12 +148,12 @@ function N(e) {
     messageId: n,
     region: r,
     ringing: i
-  } = e, a = g[t], s = null != a && (a.regionUpdated || a.region !== r);
+  } = e, a = g[t], o = null != a && (a.regionUpdated || a.region !== r);
   g[t] = m(_({}, g[t]), {
     messageId: n,
     region: r,
     ringing: i,
-    regionUpdated: s
+    regionUpdated: o
   })
 }
 

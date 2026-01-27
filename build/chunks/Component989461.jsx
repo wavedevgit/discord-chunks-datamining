@@ -24,13 +24,13 @@ function u(e) {
     displayedWishlistItems: d,
     defaultWishlistId: f,
     title: p
-  } = (0, s.aO)({
+  } = (0, o.aO)({
     user: t,
-    numItems: s.h,
+    numItems: o.h,
     source: a.mQ.POPOUT,
     location: "User Profile Popout"
   });
-  return null == d || 0 === d.length ? null : (0, r.jsx)(o.A, {
+  return null == d || 0 === d.length ? null : (0, r.jsx)(s.A, {
     profileOwner: t,
     wishlistItems: d,
     wishlistId: f,

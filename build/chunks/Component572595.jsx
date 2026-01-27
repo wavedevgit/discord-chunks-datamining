@@ -11,7 +11,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk4227 = require("./4227.js"),
   Chunk466459 = require("./466459.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,7 +27,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -53,7 +53,7 @@ let d = "collectibles shop product details modal",
   f = e => {
     let {
       product: t,
-      category: o,
+      category: s,
       shouldCheckoutWithOrbs: c,
       analyticsSource: f,
       analyticsLocations: p,
@@ -64,7 +64,7 @@ let d = "collectibles shop product details modal",
     if (t.isCategoryReward) {
       let {
         isPurchased: e
-      } = (0, s.o)(a.A, t);
+      } = (0, o.o)(a.A, t);
       if (!e) return
     }(0, i.mMO)(async () => {
       let {
@@ -72,7 +72,7 @@ let d = "collectibles shop product details modal",
       } = await n.e("77313").then(n.bind(n, 929400));
       return n => (0, r.jsx)(e, u(l({}, n), {
         product: t,
-        category: o,
+        category: s,
         shouldCheckoutWithOrbs: c,
         analyticsSource: f,
         analyticsLocations: p,

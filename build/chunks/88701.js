@@ -21,9 +21,9 @@ module.exports = (e, t, n, c) => {
     case ">":
       return a(e, n, c);
     case ">=":
-      return s(e, n, c);
-    case "<":
       return o(e, n, c);
+    case "<":
+      return s(e, n, c);
     case "<=":
       return l(e, n, c);
     default:

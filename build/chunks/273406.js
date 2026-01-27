@@ -23,23 +23,23 @@ var Chunk476575 = require("./476575.js"),
         return e
       };
     return function(e) {
-      var t = o(e, u);
-      return s(e, u[t], u[t + 1], c[t], c[t + 1], p, d, f, l.map)
+      var t = s(e, u);
+      return o(e, u[t], u[t + 1], c[t], c[t + 1], p, d, f, l.map)
     }
   };
 
-function s(e, t, n, r, i, a, s, o, l) {
+function o(e, t, n, r, i, a, o, s, l) {
   var c = l ? l(e) : e;
   if (c < t)
-    if ("identity" === s) return c;
-    else "clamp" === s && (c = t);
-  if (c > n)
     if ("identity" === o) return c;
-    else "clamp" === o && (c = n);
+    else "clamp" === o && (c = t);
+  if (c > n)
+    if ("identity" === s) return c;
+    else "clamp" === s && (c = n);
   return r === i ? r : t === n ? e <= t ? r : i : (t === false / 0 ? c = -c : n === 1 / 0 ? c -= t : c = (c - t) / (n - t), c = a(c), r === false / 0 ? c = -c : i === 1 / 0 ? c += r : c = c * (i - r) + r, c)
 }
 
-function o(e, t) {
+function s(e, t) {
   for (var n = 1; n < t.length - 1 && !(t[n] >= e); ++n);
   return n - 1
 }

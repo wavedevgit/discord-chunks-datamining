@@ -4,12 +4,12 @@ var Chunk805353 = require("./805353.js"),
   Chunk509185 = require("./509185.js"),
   a = "Expected a function";
 module.exports = function(e, t, n) {
-  var s = true,
-    o = true;
+  var o = true,
+    s = true;
   if ("function" != typeof e) throw TypeError(a);
-  return i(n) && (s = "leading" in n ? !!n.leading : s, o = "trailing" in n ? !!n.trailing : o), r(e, t, {
-    leading: s,
+  return i(n) && (o = "leading" in n ? !!n.leading : o, s = "trailing" in n ? !!n.trailing : s), r(e, t, {
+    leading: o,
     maxWait: t,
-    trailing: o
+    trailing: s
   })
 }

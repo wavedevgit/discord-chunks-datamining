@@ -15,22 +15,22 @@ let c = e => {
     showSubtext: t = false
   } = e;
   return (0, r.jsxs)(a.A, {
-    assetComponent: (0, r.jsx)(s.A, {
+    assetComponent: (0, r.jsx)(o.A, {
       className: l.jc
     }),
     tooltipWordmarkComponent: (0, r.jsx)(i.DZT, {
       variant: "heading-md/extrabold",
       className: l.RK,
-      children: o.intl.string(o.t.ElYQFS)
+      children: s.intl.string(s.t.ElYQFS)
     }),
     children: [(0, r.jsx)(i.DZT, {
       variant: "heading-xl/extrabold",
       className: t ? true : l.Qn,
-      children: o.intl.string(o.t.lTHkqd)
+      children: s.intl.string(s.t.lTHkqd)
     }), t ? (0, r.jsx)(i.EYj, {
       variant: "text-xs/normal",
       className: l.lV,
-      children: o.intl.string(o.t.MEV0GI)
+      children: s.intl.string(s.t.MEV0GI)
     }) : true]
   })
 }

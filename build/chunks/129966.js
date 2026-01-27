@@ -8,7 +8,7 @@ var Chunk118356 = require("./118356.js"),
   Chunk689234 = require("./689234.js"),
   Chunk72290 = require("./72290.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = 1e6,
+let s = 1e6,
   l = "1" === Chunk72290.env.KV_STORAGE_LOGGING,
   c = new Chunk118356.Vy("Runtime");
 class u {
@@ -66,10 +66,10 @@ class u {
         ok: t.ok,
         value: t.data,
         timings: {
-          queue: t.timings.queueTimeNanoseconds / o,
-          execution: t.timings.executionTimeNanoseconds / o,
-          materialization: t.timings.materializationTimeNanoseconds / o,
-          ccTotal: t.timings.totalTimeNanoseconds / o,
+          queue: t.timings.queueTimeNanoseconds / s,
+          execution: t.timings.executionTimeNanoseconds / s,
+          materialization: t.timings.materializationTimeNanoseconds / s,
+          ccTotal: t.timings.totalTimeNanoseconds / s,
           jsTotal: n - e.started
         }
       };
@@ -87,4 +87,4 @@ class u {
     }), this.addDatabaseStateCallback((e, t) => c.info("".concat(e, " (state: ").concat(t, ")")))), this.initialized = true)
   }
 }
-s(u, "counter", 0), s(u, "pending", new Map), s(u, "initialized", false), s(u, "dbStateCallbacks", []), s(u, "completionCallbacks", [])
+o(u, "counter", 0), o(u, "pending", new Map), o(u, "initialized", false), o(u, "dbStateCallbacks", []), o(u, "completionCallbacks", [])

@@ -37,9 +37,9 @@ function y() {
   if (null == t) e = true;
   else {
     let r = l.A.getChannel(t),
-      i = f.A.getVoiceState(null == r ? true : r.getGuildId(), o.default.getId());
+      i = f.A.getVoiceState(null == r ? true : r.getGuildId(), s.default.getId());
     n = c.A.getMode() === p.TBI.VOICE_ACTIVITY;
-    let a = (0, s.H)({
+    let a = (0, o.H)({
       location: "doPTT",
       autoTrackExposure: false
     }).enableLatching && c.A.getModeOptions().pttLatchingEnabled;
@@ -63,7 +63,7 @@ function b(e) {
     let {
       userId: t
     } = e;
-    return t === o.default.getId() && y()
+    return t === s.default.getId() && y()
   })
 }
 
@@ -76,7 +76,7 @@ function v() {
 }
 class A extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.default, l.A, c.A, u.A, d.A, f.A)
+    this.waitFor(s.default, l.A, c.A, u.A, d.A, f.A)
   }
   shouldShowWarning() {
     return !g

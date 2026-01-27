@@ -41,9 +41,9 @@ function c(e) {
     text: t,
     variant: n = "grayLight"
   } = e, i = l[n];
-  return (0, r.jsx)(s.E, {
+  return (0, r.jsx)(o.E, {
     variant: "eyebrow",
-    className: a()(o.chip, o[i]),
+    className: a()(s.chip, s[i]),
     children: t
   })
 }

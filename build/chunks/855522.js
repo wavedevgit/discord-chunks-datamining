@@ -2,7 +2,7 @@
 /** chunk id: 855522, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk664294 = require("./664294.js"),
   Chunk484838 = require("./484838.js");
@@ -15,4 +15,4 @@ let a = new Chunk484838.Ay({
 a.addListener("locale", e => {
   document.cookie = "locale=".concat(e, ";path=/")
 });
-let s = a
+let o = a

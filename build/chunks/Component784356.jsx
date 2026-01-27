@@ -1,74 +1,73 @@
-/** Chunk was on web.js **/
-/** chunk id: 784356, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 784356, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => u
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js"),
   Chunk543233 = require("./543233.js"),
   Chunk76707 = require("./76707.jsx"),
   Chunk296388 = require("./296388.js");
-let d = e => {
+let u = e => {
   var t, n, i;
   let {
-    title: d,
-    titleClassName: f,
+    title: u,
+    titleClassName: _,
     buttonClassName: p,
-    perkImage: _,
-    isCarousel: h,
-    onCtaClick: m,
-    perkComponent: g,
-    subtitle: E = "",
-    descriptionCta: y = "",
-    customContent: b,
-    cardVariant: O,
-    subtitleClassName: v,
-    imageOverlayText: A
-  } = e, I = e => (null == e ? true : e.onlyShowOnHover) !== true, S = (0, l.Q)(O), T = null != A;
+    perkImage: m,
+    isCarousel: g,
+    onCtaClick: A,
+    perkComponent: f,
+    subtitle: h = "",
+    descriptionCta: b = "",
+    customContent: E,
+    cardVariant: x,
+    subtitleClassName: O,
+    imageOverlayText: C
+  } = e, I = (0, o.Q)(x), T = null != C;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: a()(u.Iv, u.Gz)
+      className: l()(d.Iv, d.Gz)
     }), (0, r.jsx)(c.A, {
-      title: d,
-      shouldShowElement: I,
-      cardVariantStyleInfo: S,
-      titleClassName: f,
-      subtitle: E,
-      subtitleClassName: v
-    }), null != _ && (0, r.jsxs)("div", {
-      className: a()(u.V8, {
-        [u.wP]: !h,
-        [u.QN]: !h && !(null == S || null == (t = S.perkImage) ? true : t.disableHoverAnimation)
-      }, null == S || null == (n = S.perkImage) ? true : n.className),
+      title: u,
+      shouldShowElement: e => (null == e ? true : e.onlyShowOnHover) !== true,
+      cardVariantStyleInfo: I,
+      titleClassName: _,
+      subtitle: h,
+      subtitleClassName: O
+    }), null != m && (0, r.jsxs)("div", {
+      className: l()(d.V8, {
+        [d.wP]: !g,
+        [d.QN]: !g && !(null == I || null == (t = I.perkImage) ? true : t.disableHoverAnimation)
+      }, null == I || null == (n = I.perkImage) ? true : n.className),
       children: [(0, r.jsx)("img", {
-        src: _,
+        src: m,
         alt: "",
-        className: h ? T ? u.ls : u.gu : ""
+        className: g ? T ? d.ls : d.gu : ""
       }), T ? (0, r.jsx)("div", {
-        className: u.Yh,
-        children: (0, r.jsx)(o.Text, {
-          className: u.nj,
+        className: d.Yh,
+        children: (0, r.jsx)(a.Text, {
+          className: d.nj,
           variant: "text-md/bold",
-          children: A
+          children: C
         })
       }) : null]
-    }), null != g && (0, r.jsxs)("div", {
-      className: u.wX,
-      children: [g, 0 !== y.length && null != m && (0, r.jsx)(s.$n, {
+    }), null != f && (0, r.jsxs)("div", {
+      className: d.wX,
+      children: [f, 0 !== b.length && null != A && (0, r.jsx)(s.$n, {
         "data-migration-pending": true,
         className: p,
         fullWidth: true,
-        onClick: m,
+        onClick: A,
         children: (0, r.jsx)("div", {
-          className: null == S || null == (i = S.descriptionCta) ? true : i.className,
-          children: y
+          className: null == I || null == (i = I.descriptionCta) ? true : i.className,
+          children: b
         })
       })]
-    }), b]
+    }), E]
   })
 }

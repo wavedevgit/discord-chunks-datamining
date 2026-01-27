@@ -22,8 +22,8 @@ let u = function() {
         l = i.yearlen,
         c = i.mrange,
         u = i.wdaymask;
-      this.monthinfo = (0, s.W)(e, t, l, c, u, n)
-    }(0, r.Wo)(n.byeaster) && (this.eastermask = (0, o.H)(e, n.byeaster))
+      this.monthinfo = (0, o.W)(e, t, l, c, u, n)
+    }(0, r.Wo)(n.byeaster) && (this.eastermask = (0, s.H)(e, n.byeaster))
   }, Object.defineProperty(e.prototype, "lastyear", {
     get: function() {
       return this.monthinfo ? this.monthinfo.lastyear : null
@@ -99,11 +99,11 @@ let u = function() {
   }), e.prototype.ydayset = function() {
     return [(0, r.y1)(this.yearlen), 0, this.yearlen]
   }, e.prototype.mdayset = function(e, t) {
-    for (var n = this.mrange[t - 1], i = this.mrange[t], a = (0, r.ux)(null, this.yearlen), s = n; s < i; s++) a[s] = s;
+    for (var n = this.mrange[t - 1], i = this.mrange[t], a = (0, r.ux)(null, this.yearlen), o = n; o < i; o++) a[o] = o;
     return [a, n, i]
   }, e.prototype.wdayset = function(e, t, n) {
-    for (var i = (0, r.ux)(null, this.yearlen + 7), a = (0, c.ZO)((0, c.w$)(e, t, n)) - this.yearordinal, s = a, o = 0; o < 7 && (i[a] = a, ++a, this.wdaymask[a] !== this.options.wkst); o++);
-    return [i, s, a]
+    for (var i = (0, r.ux)(null, this.yearlen + 7), a = (0, c.ZO)((0, c.w$)(e, t, n)) - this.yearordinal, o = a, s = 0; s < 7 && (i[a] = a, ++a, this.wdaymask[a] !== this.options.wkst); s++);
+    return [i, o, a]
   }, e.prototype.ddayset = function(e, t, n) {
     var i = (0, r.ux)(null, this.yearlen),
       a = (0, c.ZO)((0, c.w$)(e, t, n)) - this.yearordinal;

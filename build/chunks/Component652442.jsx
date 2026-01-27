@@ -18,10 +18,10 @@ function I(t) {
     channelId: e,
     messageId: n,
     mediaItemUrl: I,
-    embedId: c,
-    transitionState: u,
+    embedId: u,
+    transitionState: c,
     onClose: A
-  } = t, d = (0, E.L)(e, n, I), C = (0, E.F)(e, n, c), {
+  } = t, d = (0, E.L)(e, n, I), C = (0, E.F)(e, n, u), {
     reportFalsePositive: L,
     isReportFalsePositiveLoading: R
   } = (0, a.d)({
@@ -41,7 +41,7 @@ function I(t) {
     onConfirmPress: L,
     attachmentPreview: 1 === d.length && 0 === C.length ? d[0] : true,
     embedPreview: 1 === C.length && 0 === d.length ? C[0] : true,
-    transitionState: u,
+    transitionState: c,
     onClose: A
   })
 }

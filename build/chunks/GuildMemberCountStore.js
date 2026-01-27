@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -41,7 +41,7 @@ function u(e) {
 }
 
 function d(e) {
-  l = o({}, e.guildMemberCounts)
+  l = s({}, e.guildMemberCounts)
 }
 
 function f(e) {
@@ -98,7 +98,7 @@ class g extends(r = Chunk311907.Ay.Store) {
     return null != e ? c[e] : null
   }
 }
-s(g, "displayName", "GuildMemberCountStore");
+o(g, "displayName", "GuildMemberCountStore");
 let E = new g(Chunk73153.h, {
   CONNECTION_OPEN: u,
   OVERLAY_INITIALIZE: d,

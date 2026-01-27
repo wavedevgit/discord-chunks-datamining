@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk934551 = require("./934551.js"),
   Chunk311907 = require("./311907.js"),
   Chunk554146 = require("./554146.js"),
@@ -79,23 +79,23 @@ function v(e) {
     return e.length > 1 && (n = "linear-gradient(".concat(t, "deg, ").concat(e.join(", "), ")")), {
       background: "var(--background-gradient), ".concat(n)
     }
-  }, [C, a, N]), D = R ? u.A.unsafe_rawColors.WHITE.css : true, x = i.useCallback(() => {
+  }, [C, a, N]), D = R ? u.A.unsafe_rawColors.WHITE.css : true, L = i.useCallback(() => {
     v && A(), null == n || n()
   }, [v, A, n]);
   return (0, r.jsxs)("div", {
     className: b.fC,
     children: [(0, r.jsxs)(m.S4, {
-      onSelect: t ? true : x,
+      onSelect: t ? true : L,
       isSelected: false,
       showSelectionCircle: w,
       name: y.intl.string(E.default.KSBBpC),
-      className: s()(b.kL, R && T, t && b.r9),
+      className: o()(b.kL, R && T, t && b.r9),
       showBadge: false,
       showLockedBadge: false,
       style: P,
       children: [!I && !R && (0, r.jsx)(O, {}), (0, r.jsx)("div", {
         className: b.JU
-      }), (0, r.jsx)(o.PaintPaletteIcon, {
+      }), (0, r.jsx)(s.PaintPaletteIcon, {
         color: D,
         className: b.vL
       })]

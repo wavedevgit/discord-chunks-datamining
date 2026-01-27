@@ -2,10 +2,10 @@
 /** chunk id: 538064, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ft: () => o,
+  Ft: () => s,
   Jt: () => a,
   eY: () => l,
-  pf: () => s
+  pf: () => o
 });
 var Chunk73153 = require("./73153.js"),
   Chunk265059 = require("./265059.js");
@@ -17,13 +17,13 @@ function a(e) {
   })
 }
 
-function s() {
+function o() {
   a({
     displayTools: !i.A.displayTools
   })
 }
 
-function o(e) {
+function s(e) {
   a({
     displayTools: true,
     lastOpenTabId: e

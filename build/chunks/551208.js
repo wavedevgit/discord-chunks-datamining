@@ -12,18 +12,18 @@ function a(e) {
     selectionMode: t = "single",
     disallowEmptySelection: n,
     isDisabled: a = false
-  } = e, [s, o] = (0, r.P)((0, i.useMemo)(() => e.selectedKeys ? new Set(e.selectedKeys) : true, [e.selectedKeys]), (0, i.useMemo)(() => e.defaultSelectedKeys ? new Set(e.defaultSelectedKeys) : new Set, [e.defaultSelectedKeys]), e.onSelectionChange);
+  } = e, [o, s] = (0, r.P)((0, i.useMemo)(() => e.selectedKeys ? new Set(e.selectedKeys) : true, [e.selectedKeys]), (0, i.useMemo)(() => e.defaultSelectedKeys ? new Set(e.defaultSelectedKeys) : new Set, [e.defaultSelectedKeys]), e.onSelectionChange);
   return {
     selectionMode: t,
     isDisabled: a,
-    selectedKeys: s,
-    setSelectedKeys: o,
+    selectedKeys: o,
+    setSelectedKeys: s,
     toggleKey(e) {
       let r;
-      "multiple" === t ? (r = new Set(s)).has(e) && (!n || r.size > 1) ? r.delete(e) : r.add(e) : r = new Set(s.has(e) && !n ? [] : [e]), o(r)
+      "multiple" === t ? (r = new Set(o)).has(e) && (!n || r.size > 1) ? r.delete(e) : r.add(e) : r = new Set(o.has(e) && !n ? [] : [e]), s(r)
     },
     setSelected(e, t) {
-      t !== s.has(e) && this.toggleKey(e)
+      t !== o.has(e) && this.toggleKey(e)
     }
   }
 }

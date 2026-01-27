@@ -16,7 +16,7 @@ require.d(exports, {
 var Chunk796873 = require("./796873.js"),
   i = require.n(Chunk796873),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk71393 = require("./71393.js"),
   Chunk287809 = require("./287809.js"),
   Chunk255438 = require("./255438.js"),
@@ -87,7 +87,7 @@ function y(e) {
 function b(e, t) {
   var n;
   e = null != (n = null == e ? true : e.toLowerCase()) ? n : "";
-  let r = s().find(E, n => null != n.reType && null != t ? n.reType.test(t) : null != n.reName && "" !== e && n.reName.test(e));
+  let r = o().find(E, n => null != n.reType && null != t ? n.reType.test(t) : null != n.reName && "" !== e && n.reName.test(e));
   return null != r ? r.klass : "unknown"
 }
 
@@ -99,7 +99,7 @@ function v(e) {
   let t = l.default.getCurrentUser(),
     n = u.Ay.getUserMaxFileSize(t);
   if (null == e) return n;
-  let r = o.A.getGuild(e);
+  let r = s.A.getGuild(e);
   return Math.max(null != r ? f.TG[r.premiumTier].limits.fileSize : d.TbF, n)
 }
 

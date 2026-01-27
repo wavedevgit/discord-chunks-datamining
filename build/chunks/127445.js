@@ -24,7 +24,7 @@ let m = e => {
         modalGlowIdle: true,
         modalGlowExit: true
       }),
-      [s, m] = (0, r.useState)(false),
+      [o, m] = (0, r.useState)(false),
       [g, E] = (0, r.useState)(false),
       [y, b] = (0, r.useState)(false),
       O = (0, r.useRef)(true);
@@ -37,7 +37,7 @@ let m = e => {
           b(true), E(false), m(false);
           try {
             let e = Date.now(),
-              [n, r, s] = await Promise.all([a.Bo.get({
+              [n, r, o] = await Promise.all([a.Bo.get({
                 url: t ? u.A : d.A,
                 binary: true,
                 rejectWithError: true
@@ -53,8 +53,8 @@ let m = e => {
             O.current && (i({
               modalGlowEntry: window.URL.createObjectURL(n.body),
               modalGlowExit: window.URL.createObjectURL(r.body),
-              modalGlowIdle: window.URL.createObjectURL(s.body)
-            }), m(true), o.default.track(c.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCH_SUCCESS, {
+              modalGlowIdle: window.URL.createObjectURL(o.body)
+            }), m(true), s.default.track(c.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCH_SUCCESS, {
               load_duration_ms: Date.now() - e
             }))
           } catch (e) {
@@ -70,14 +70,14 @@ let m = e => {
       null != n.modalGlowEntry && window.URL.revokeObjectURL(n.modalGlowEntry), null != n.modalGlowIdle && window.URL.revokeObjectURL(n.modalGlowIdle), null != n.modalGlowExit && window.URL.revokeObjectURL(n.modalGlowExit)
     }, [n.modalGlowEntry, n.modalGlowIdle, n.modalGlowExit]), {
       mediaUrls: n,
-      isSuccess: s,
+      isSuccess: o,
       isFailure: g,
       isLoading: y
     }
   },
   g = e => {
     (0, r.useEffect)(() => {
-      e && o.default.track(c.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCHING)
+      e && s.default.track(c.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCHING)
     }, [e]);
     let {
       mediaUrls: t,
@@ -85,10 +85,10 @@ let m = e => {
       isLoading: a
     } = m(e), {
       status: l
-    } = (0, s.CEU)(e ? i.A : null);
+    } = (0, o.CEU)(e ? i.A : null);
     return {
       mediaUrls: t,
-      isSuccess: n && l === s.BWP.Loaded,
-      isLoading: a || l === s.BWP.Loading
+      isSuccess: n && l === o.BWP.Loaded,
+      isLoading: a || l === o.BWP.Loading
     }
   }

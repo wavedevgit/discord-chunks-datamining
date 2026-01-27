@@ -7,9 +7,9 @@ function r(e, t) {
   if (!e) {
     if (true === t) n = Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");
     else {
-      var s = 0;
+      var o = 0;
       (n = Error(t.replace(/%s/g, function() {
-        return i[s++]
+        return i[o++]
       }))).name = "Invariant Violation"
     }
     throw n.framesToPop = 1, n

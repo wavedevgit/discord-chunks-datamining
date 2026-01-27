@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 983806, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 983806, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => y
+  b: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,84 +18,83 @@ var Chunk627968 = require("./627968.js"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk377148 = require("./377148.js");
-let E = () => {
-    let e = (0, f.vx)(),
-      t = (0, d.y3)(),
+let h = () => {
+    let e = (0, _.vx)(),
+      t = (0, u.y3)(),
       {
         selectTeenUser: n
       } = (0, c.A)({}),
-      a = e => {
-        n(e)
-      },
-      u = e.map(e => ({
+      l = e.map(e => ({
         label: e,
         value: e
       })),
-      _ = i.useCallback(e => (0, r.jsx)(p.O, {
+      d = i.useCallback(e => (0, r.jsx)(p.O, {
         userId: e.value,
-        avatarSize: l._3J.SIZE_24,
+        avatarSize: o._3J.SIZE_24,
         hideUserTag: true
       }), []);
     return 0 === e.length ? null : (0, r.jsx)("div", {
-      className: s()(g.Gq, {
-        [g.wS]: e.length > 1
+      className: s()(f.Gq, {
+        [f.wS]: e.length > 1
       }),
-      children: e.length > 1 ? (0, r.jsx)(o.Pw, {
-        renderOptionLabel: _,
+      children: e.length > 1 ? (0, r.jsx)(a.Pw, {
+        renderOptionLabel: d,
         renderOptionValue: e => {
           let [t] = e;
-          return _(t)
+          return d(t)
         },
         serialize: e => e,
-        select: a,
+        select: e => {
+          n(e)
+        },
         isSelected: e => e === (null == t ? true : t.id),
-        options: u,
+        options: l,
         "data-migration-pending": true
       }) : (0, r.jsx)(p.O, {
         userId: e[0],
-        avatarSize: l._3J.SIZE_24,
+        avatarSize: o._3J.SIZE_24,
         hideUserTag: true
       })
     })
   },
-  y = () => {
+  b = () => {
     let {
       selectedTab: e,
       handleTabChange: t
-    } = (0, u.A)(), n = i.useCallback(() => {
-      t(_.u9.ACTIVITY)
+    } = (0, d.A)(), n = i.useCallback(() => {
+      t(m.u9.ACTIVITY)
     }, [t]);
-    return (0, r.jsxs)(l.BJc, {
+    return (0, r.jsxs)(o.BJc, {
       gap: 32,
-      children: [(0, r.jsxs)(l.DUT, {
-        className: g.Gv,
+      children: [(0, r.jsxs)(o.DUT, {
+        className: f.Gv,
         onClick: n,
-        "aria-label": m.intl.string(m.t.ybUZql),
-        children: [(0, r.jsx)(l.Zge, {
+        "aria-label": A.intl.string(A.t.ybUZql),
+        children: [(0, r.jsx)(o.Zge, {
           size: "sm",
-          color: l.LU0.colors.INTERACTIVE_TEXT_DEFAULT
-        }), (0, r.jsx)(l.Text, {
+          color: o.LU0.colors.INTERACTIVE_TEXT_DEFAULT
+        }), (0, r.jsx)(o.Text, {
           variant: "eyebrow",
           color: "text-default",
-          children: m.intl.string(m.t["13/7kX"])
+          children: A.intl.string(A.t["13/7kX"])
         })]
-      }), (0, r.jsxs)(l.BJc, {
+      }), (0, r.jsxs)(o.BJc, {
         direction: "horizontal",
         align: "center",
         justify: "space-between",
-        children: [(0, r.jsxs)(l.BJc, {
+        children: [(0, r.jsxs)(o.BJc, {
           gap: 4,
-          className: g.gn,
-          children: [(0, r.jsx)(l.Text, {
+          className: f.gn,
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            children: m.intl.string(h.default.RZqaJn)
-          }), (0, r.jsx)(l.Heading, {
+            children: A.intl.string(g.default.RZqaJn)
+          }), (0, r.jsx)(o.Heading, {
             variant: "heading-xl/semibold",
             color: "text-strong",
-            children: m.intl.string(e === _.u9.CONTENT_AND_SOCIAL ? m.t["+o1pDZ"] : m.t.OAuOHD)
+            children: A.intl.string(e === m.u9.CONTENT_AND_SOCIAL ? A.t["+o1pDZ"] : A.t.OAuOHD)
           })]
-        }), (0, r.jsx)(E, {})]
+        }), (0, r.jsx)(h, {})]
       })]
     })
   }

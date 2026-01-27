@@ -15,17 +15,17 @@ var Chunk64700 = require("./64700.js"),
 
 function d(e, t, n) {
   let d = null == t || null == n,
-    f = (0, i.bG)([o.A], () => o.A.getChannel(t)),
+    f = (0, i.bG)([s.A], () => s.A.getChannel(t)),
     p = (0, i.bG)([l.A], () => null != f && l.A.canBasicChannel(u.hV.CONNECT, f)),
     _ = (0, i.bG)([c.A], () => c.A.getVoiceChannelId() === t),
     {
       shouldFetchPreview: h,
       previewUrl: m,
       isLoading: g
-    } = (0, i.cf)([s.A], () => ({
-      shouldFetchPreview: !d && s.A.shouldFetchPreview(e, t, n),
-      previewUrl: d ? null : s.A.getPreviewURL(e, t, n),
-      isLoading: !d && s.A.getIsPreviewLoading(e, t, n)
+    } = (0, i.cf)([o.A], () => ({
+      shouldFetchPreview: !d && o.A.shouldFetchPreview(e, t, n),
+      previewUrl: d ? null : o.A.getPreviewURL(e, t, n),
+      isLoading: !d && o.A.getIsPreviewLoading(e, t, n)
     })),
     E = p || _;
   return (r.useEffect(() => {

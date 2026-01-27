@@ -24,7 +24,7 @@ class a {
     return r.length > 0 ? r[0].start.date() : null
   }
   parse(e, t, n) {
-    let r = new s(e, t, n),
+    let r = new o(e, t, n),
       i = [];
     return this.parsers.forEach(e => {
       let t = a.executeParser(r, e);
@@ -37,26 +37,26 @@ class a {
     let n = [],
       i = t.pattern(e),
       a = e.text,
-      s = e.text,
-      o = i.exec(s);
-    for (; o;) {
-      let l = o.index + a.length - s.length;
-      o.index = l;
-      let c = t.extract(e, o);
+      o = e.text,
+      s = i.exec(o);
+    for (; s;) {
+      let l = s.index + a.length - o.length;
+      s.index = l;
+      let c = t.extract(e, s);
       if (!c) {
-        s = a.substring(o.index + 1), o = i.exec(s);
+        o = a.substring(s.index + 1), s = i.exec(o);
         continue
       }
       let u = null;
-      c instanceof r.s4 ? u = c : c instanceof r.BP ? (u = e.createParsingResult(o.index, o[0])).start = c : u = e.createParsingResult(o.index, o[0], c);
+      c instanceof r.s4 ? u = c : c instanceof r.BP ? (u = e.createParsingResult(s.index, s[0])).start = c : u = e.createParsingResult(s.index, s[0], c);
       let d = u.index,
         f = u.text;
-      e.debug(() => console.log(`${t.constructor.name} extracted (at index=${d}) '${f}'`)), n.push(u), s = a.substring(d + f.length), o = i.exec(s)
+      e.debug(() => console.log(`${t.constructor.name} extracted (at index=${d}) '${f}'`)), n.push(u), o = a.substring(d + f.length), s = i.exec(o)
     }
     return n
   }
 }
-class s {
+class o {
   text;
   option;
   reference;
@@ -69,9 +69,9 @@ class s {
   }
   createParsingResult(e, t, n, i) {
     let a = "string" == typeof t ? t : this.text.substring(e, t),
-      s = n ? this.createParsingComponents(n) : null,
-      o = i ? this.createParsingComponents(i) : null;
-    return new r.s4(this.reference, e, a, s, o)
+      o = n ? this.createParsingComponents(n) : null,
+      s = i ? this.createParsingComponents(i) : null;
+    return new r.s4(this.reference, e, a, o, s)
   }
   debug(e) {
     this.option.debug && (this.option.debug instanceof Function ? this.option.debug(e) : this.option.debug.debug(e))

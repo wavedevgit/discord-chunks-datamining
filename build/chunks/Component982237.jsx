@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 982237, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 982237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 });
@@ -15,10 +14,10 @@ let s = e => {
   return (0, r.jsx)(i.A, {
     isMotionReduced: t,
     containerVisibilityPercentage: n,
-    hammerContainerClassName: a.Gj,
-    keyContainerClassName: a.FV,
-    hammerAssetClassName: a.Wv,
-    keyAssetClassName: a.rs,
+    hammerContainerClassName: l.Gj,
+    keyContainerClassName: l.FV,
+    hammerAssetClassName: l.Wv,
+    keyAssetClassName: l.rs,
     animationSpeedScale: 2
   })
 }

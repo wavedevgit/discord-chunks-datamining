@@ -41,7 +41,7 @@ let E = () => {
   };
   if (null === O || null === v) return (0, r.jsx)("div", {
     className: h.dc,
-    children: (0, r.jsx)(s.y$y, {})
+    children: (0, r.jsx)(o.y$y, {})
   });
   let w = n === f.PremiumTypes.TIER_2,
     R = [{
@@ -53,7 +53,7 @@ let E = () => {
       text: _.intl.string(_.t.CKSuZJ),
       onClick: () => N(),
       variant: "primary",
-      icon: s.tvc,
+      icon: o.tvc,
       loading: I,
       disabled: I
     }];
@@ -77,7 +77,7 @@ let E = () => {
       })
     }), (0, r.jsx)("div", {
       className: h.V6,
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-subtle",
         children: E.status === p.Dmq.CANCELED ? _.intl.format(_.t.mY3ysK, {
@@ -85,13 +85,13 @@ let E = () => {
           billingPeriod: (0, l.Ke)(O.discount.user_usage_limit_interval),
           numMonths: O.discount.user_usage_limit,
           fullPrice: A,
-          paidURL: o.A.getArticleURL(p.MVz.PAID_TERMS)
+          paidURL: s.A.getArticleURL(p.MVz.PAID_TERMS)
         }) : _.intl.format(_.t.hrGTjG, {
           discountedPrice: v,
           billingPeriod: (0, l.Ke)(O.discount.user_usage_limit_interval),
           numMonths: O.discount.user_usage_limit,
           fullPrice: A,
-          helpdeskArticle: o.A.getArticleURL(p.MVz.PAID_TERMS)
+          helpdeskArticle: s.A.getArticleURL(p.MVz.PAID_TERMS)
         })
       })
     }), T ? (0, r.jsx)(a.wx6, {

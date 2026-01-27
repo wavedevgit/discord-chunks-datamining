@@ -22,7 +22,7 @@ function a(e, t) {
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
 
-function s(e, t) {
+function o(e, t) {
   if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
   e.prototype = Object.create(t && t.prototype, {
     constructor: {
@@ -42,7 +42,7 @@ module.exports = function(e) {
     var n = a(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
     return n._deceleration = true !== e.deceleration ? e.deceleration : .998, n._velocity = e.velocity, n.__isInteraction = true === e.isInteraction || e.isInteraction, n
   }
-  return s(t, e), r(t, [{
+  return o(t, e), r(t, [{
     key: "start",
     value: function(e, t, n) {
       this.__active = true, this._lastValue = e, this._fromValue = e, this._onUpdate = t, this.__onEnd = n, this._startTime = Date.now(), this._animationFrame = l.current(this.onUpdate.bind(this))

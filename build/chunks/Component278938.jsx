@@ -19,8 +19,8 @@ var Chunk934551 = require("./934551.js"),
 let _ = (e, t) => e === t ? p.H : true;
 
 function h() {
-  let e = (0, a.bG)([o.A], () => o.A.theme),
-    t = (0, s.Mwr)(e) ? u.NJ.DARK : u.NJ.LIGHT,
+  let e = (0, a.bG)([s.A], () => s.A.theme),
+    t = (0, o.Mwr)(e) ? u.NJ.DARK : u.NJ.LIGHT,
     n = [{
       name: "",
       value: u.NJ.DARK,
@@ -36,7 +36,7 @@ function h() {
       tooltip: f.intl.string(d.default["5vlJkY"]),
       tooltipAriaLabel: f.intl.string(d.default["5vlJkY"])
     }];
-  return (0, r.jsx)(s.IzF, {
+  return (0, r.jsx)(o.IzF, {
     className: p.t,
     options: n,
     value: t,

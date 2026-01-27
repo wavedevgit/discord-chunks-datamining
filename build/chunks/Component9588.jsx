@@ -71,7 +71,7 @@ function h() {
   (0, i.A)({
     title: l.intl.string(c.default.odgSTk),
     subtitle: l.intl.format(c.default.EZfHRq, {
-      helpURL: s.A.getArticleURL(o.MVz.NSFW_AGE_GATING)
+      helpURL: o.A.getArticleURL(s.MVz.NSFW_AGE_GATING)
     })
   })
 }

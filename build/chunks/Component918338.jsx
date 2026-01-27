@@ -1,49 +1,48 @@
-/** Chunk was on web.js **/
-/** chunk id: 918338, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 918338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk579473 = require("./579473.js"),
   Chunk415441 = require("./415441.jsx"),
   Chunk516226 = require("./516226.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk347564 = require("./347564.js");
 
-function f(e) {
+function p(e) {
   let {
     quest: t,
     isInteracting: n,
-    hideAssets: a,
-    imageSize: f,
-    containerClassName: p,
-    imageClassName: _,
-    assetRef: h
-  } = e, m = i.useMemo(() => (0, o.tW)(t, o.fY.HERO_IMAGE), [t]), g = i.useMemo(() => (0, o.tW)(t, o.fY.HERO_VIDEO), [t]), {
-    onAssetLoadComplete: E
+    hideAssets: l,
+    imageSize: p,
+    containerClassName: m,
+    imageClassName: f,
+    assetRef: g
+  } = e, h = i.useMemo(() => (0, s.tW)(t, s.fY.HERO_IMAGE), [t]), _ = i.useMemo(() => (0, s.tW)(t, s.fY.HERO_VIDEO), [t]), {
+    onAssetLoadComplete: b
   } = i.useContext(c.M);
   return (0, r.jsx)("div", {
-    className: s()(d.l1, p),
-    children: !a && (0, r.jsx)(l.N, {
-      imageAsset: null != m ? {
-        asset: m,
+    className: a()(d.l1, m),
+    children: !l && (0, r.jsx)(o.N, {
+      imageAsset: null != h ? {
+        asset: h,
         assetId: "QuestTileBanner",
         alt: u.intl.string(u.t.jnijWz),
-        className: s()(d.LO, _)
+        className: a()(d.LO, f)
       } : true,
-      videoAsset: null != g ? {
-        asset: g,
+      videoAsset: null != _ ? {
+        asset: _,
         assetId: "QuestTileBanner_heroAnimated",
         className: d.G9
       } : true,
       showVideo: n,
-      imageSize: f,
-      onLoadComplete: E,
-      assetRef: h
+      imageSize: p,
+      onLoadComplete: b,
+      assetRef: g
     })
   })
 }

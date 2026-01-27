@@ -23,7 +23,7 @@ let c = null;
 function u(e) {
   let {
     enabled: t
-  } = s.A.getCurrentConfig({
+  } = o.A.getCurrentConfig({
     location: "MessageRemindersNotificationManager"
   }, {
     autoTrackExposure: false
@@ -38,14 +38,14 @@ function d() {
   var e;
   let {
     enabled: t
-  } = s.A.getCurrentConfig({
+  } = o.A.getCurrentConfig({
     location: "MessageRemindersNotificationManager"
   }, {
     autoTrackExposure: false
   });
   if (!t) return;
   null != c && clearTimeout(c);
-  let n = o.A.getMessageReminders().find(e => null != e.saveData.dueAt && e.saveData.dueAt > new Date);
+  let n = s.A.getMessageReminders().find(e => null != e.saveData.dueAt && e.saveData.dueAt > new Date);
   if ((null == n || null == (e = n.saveData) ? true : e.dueAt) == null) {
     c = null;
     return

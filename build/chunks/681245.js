@@ -23,7 +23,7 @@ function c(e) {
   let {
     relationship: t
   } = e, n = t.userIgnored;
-  t.type !== s.eA$.PENDING_INCOMING || n || (r.OR.announce(o.intl.formatToPlainString(o.t.zH0kC7, {
+  t.type !== o.eA$.PENDING_INCOMING || n || (r.OR.announce(s.intl.formatToPlainString(s.t.zH0kC7, {
     username: t.user.username
   })), a.m(t.user))
 }
@@ -32,7 +32,7 @@ function u(e) {
   let {
     user: t
   } = e;
-  r.OR.announce(o.intl.formatToPlainString(o.t["/+7xky"], {
+  r.OR.announce(s.intl.formatToPlainString(s.t["/+7xky"], {
     username: t.username
   })), a.I(t)
 }

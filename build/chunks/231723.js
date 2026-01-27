@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   CP: () => l,
-  KX: () => o,
-  SY: () => s,
+  KX: () => s,
+  SY: () => o,
   ip: () => i,
   xt: () => a
 });
@@ -13,8 +13,8 @@ var Chunk64700 = require("./64700.js"),
     return e[e.ENTERING = 0] = "ENTERING", e[e.ENTERED = 1] = "ENTERED", e[e.EXITING = 2] = "EXITING", e[e.EXITED = 3] = "EXITED", e[e.HIDDEN = 4] = "HIDDEN", e
   }({});
 let a = 300,
-  s = "default",
-  o = "popout",
+  o = "default",
+  s = "popout",
   l = Chunk64700.createContext({
     headerId: true,
     headerIdIsManaged: false

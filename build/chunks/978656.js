@@ -27,8 +27,8 @@ class c extends Chunk324281.G {
   }
   internalBinaryRead(e, t, n, i) {
     let a = null != i ? i : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
@@ -53,7 +53,7 @@ class c extends Chunk324281.G {
           a.cardAssetUrl = e.string();
           break;
         case 8:
-          a.gradient = o.H.internalBinaryRead(e, e.uint32(), n, a.gradient);
+          a.gradient = s.H.internalBinaryRead(e, e.uint32(), n, a.gradient);
           break;
         case 9:
           a.bannerAsset = l.i.internalBinaryRead(e, e.uint32(), n, a.bannerAsset);
@@ -68,16 +68,16 @@ class c extends Chunk324281.G {
           a.mobileBannerAsset = l.i.internalBinaryRead(e, e.uint32(), n, a.mobileBannerAsset);
           break;
         default:
-          let s = n.readUnknownField;
-          if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let o = n.readUnknownField;
+          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let c = e.skip(i);
-          false !== s && (true === s ? r.f$.onRead : s)(this.typeName, a, t, i, c)
+          false !== o && (true === o ? r.f$.onRead : o)(this.typeName, a, t, i, c)
       }
     }
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "" !== e.header && t.tag(1, r.O0.LengthDelimited).string(e.header), "" !== e.desktopBody && t.tag(2, r.O0.LengthDelimited).string(e.desktopBody), "" !== e.mobileBody && t.tag(3, r.O0.LengthDelimited).string(e.mobileBody), e.avatarAsset && l.i.internalBinaryWrite(e.avatarAsset, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), "" !== e.bannerAssetUrl && t.tag(5, r.O0.LengthDelimited).string(e.bannerAssetUrl), "" !== e.backgroundAssetUrl && t.tag(6, r.O0.LengthDelimited).string(e.backgroundAssetUrl), "" !== e.cardAssetUrl && t.tag(7, r.O0.LengthDelimited).string(e.cardAssetUrl), e.gradient && o.H.internalBinaryWrite(e.gradient, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.bannerAsset && l.i.internalBinaryWrite(e.bannerAsset, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), e.backgroundAsset && l.i.internalBinaryWrite(e.backgroundAsset, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.cardAsset && l.i.internalBinaryWrite(e.cardAsset, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), e.mobileBannerAsset && l.i.internalBinaryWrite(e.mobileBannerAsset, t.tag(12, r.O0.LengthDelimited).fork(), n).join();
+    "" !== e.header && t.tag(1, r.O0.LengthDelimited).string(e.header), "" !== e.desktopBody && t.tag(2, r.O0.LengthDelimited).string(e.desktopBody), "" !== e.mobileBody && t.tag(3, r.O0.LengthDelimited).string(e.mobileBody), e.avatarAsset && l.i.internalBinaryWrite(e.avatarAsset, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), "" !== e.bannerAssetUrl && t.tag(5, r.O0.LengthDelimited).string(e.bannerAssetUrl), "" !== e.backgroundAssetUrl && t.tag(6, r.O0.LengthDelimited).string(e.backgroundAssetUrl), "" !== e.cardAssetUrl && t.tag(7, r.O0.LengthDelimited).string(e.cardAssetUrl), e.gradient && s.H.internalBinaryWrite(e.gradient, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.bannerAsset && l.i.internalBinaryWrite(e.bannerAsset, t.tag(9, r.O0.LengthDelimited).fork(), n).join(), e.backgroundAsset && l.i.internalBinaryWrite(e.backgroundAsset, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.cardAsset && l.i.internalBinaryWrite(e.cardAsset, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), e.mobileBannerAsset && l.i.internalBinaryWrite(e.mobileBannerAsset, t.tag(12, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -121,7 +121,7 @@ class c extends Chunk324281.G {
       no: 8,
       name: "gradient",
       kind: "message",
-      T: () => o.H
+      T: () => s.H
     }, {
       no: 9,
       name: "banner_asset",

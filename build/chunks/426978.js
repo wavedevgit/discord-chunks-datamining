@@ -71,7 +71,7 @@ class b extends Chunk972347.A {
     this.statCollectionPausedUsers.delete(e)
   }
   start() {
-    this.streamStart = this.timestampProducer.now(), this.connection.on(o.yq.Stats, this.sampleStats)
+    this.streamStart = this.timestampProducer.now(), this.connection.on(s.yq.Stats, this.sampleStats)
   }
   setOutboundSsrc(e) {
     null == this.outboundStats[e] && (this.outboundStats[e] = new p.ET(this.timestampProducer))
@@ -110,7 +110,7 @@ class b extends Chunk972347.A {
     })
   }
   stop() {
-    this.connection.off(o.yq.Stats, this.sampleStats), this.streamEnd = this.timestampProducer.now(), this.removeAllListeners()
+    this.connection.off(s.yq.Stats, this.sampleStats), this.streamEnd = this.timestampProducer.now(), this.removeAllListeners()
   }
   setViewedSimulcastQuality(e) {
     e !== this.hqSimulcastStreamWatched.value && (this.hqSimulcastStreamWatched.totalDuration() > 0 || this.lqSimulcastStreamWatched.totalDuration() > 0) && this.simulcastQualityChanges++, this.hqSimulcastStreamWatched.value = e, this.lqSimulcastStreamWatched.value = !e
@@ -144,7 +144,7 @@ class b extends Chunk972347.A {
     return e
   }
   getCodecUsageStats(e, t) {
-    var n, r, i, a, s, o, l, c, u, d, f, _;
+    var n, r, i, a, o, s, l, c, u, d, f, _;
     let h = this.asymmetricCodecUpdates > this.symmetricCodecUpdates,
       m = new Map;
     if ("sender" === e || "streamer" === e) {
@@ -159,8 +159,8 @@ class b extends Chunk972347.A {
         codec_h265_encode_duration_sec: null != (r = m.get(p.Wn.H265)) ? r : 0,
         codec_vp8_encode_duration_sec: null != (i = m.get(p.Wn.VP8)) ? i : 0,
         codec_vp9_encode_duration_sec: null != (a = m.get(p.Wn.VP9)) ? a : 0,
-        codec_av1_encode_duration_sec: null != (s = m.get(p.Wn.AV1)) ? s : 0,
-        codec_unknown_encode_duration_sec: null != (o = m.get(p.Wn.UNKNOWN)) ? o : 0
+        codec_av1_encode_duration_sec: null != (o = m.get(p.Wn.AV1)) ? o : 0,
+        codec_unknown_encode_duration_sec: null != (s = m.get(p.Wn.UNKNOWN)) ? s : 0
       }
     } {
       let e = this.getDecoderUsageStats();
@@ -186,8 +186,8 @@ class b extends Chunk972347.A {
   getOutboundStats() {
     let e = [];
     return i().forEach(this.outboundStats, (t, n) => {
-      var r, i, a, s, o;
-      let l, c = null == (o = this.connection) ? true : o.getStreamParameters();
+      var r, i, a, o, s;
+      let l, c = null == (s = this.connection) ? true : s.getStreamParameters();
       c.length > 1 && c.forEach(e => {
         if (parseInt(n) === e.ssrc) {
           var t;
@@ -213,7 +213,7 @@ class b extends Chunk972347.A {
         target_bitrate_network_percentile75: m.count > 0 ? m.percentiles[75] : null,
         target_bitrate_network_percentile99: m.count > 0 ? m.percentiles[99] : null,
         target_bitrate_max: O > 0 ? Math.round((null != (a = t.targetBytesMax) ? a : 0) * 8 / O) : 0,
-        outbound_bandwidth_estimate: O > 0 ? Math.round((null != (s = t.outboundBytesAvailable) ? s : 0) * 8 / O) : 0,
+        outbound_bandwidth_estimate: O > 0 ? Math.round((null != (o = t.outboundBytesAvailable) ? o : 0) * 8 / O) : 0,
         outbound_bandwidth_surplus_percentile1: y.count > 0 ? y.percentiles[1] : null,
         outbound_bandwidth_surplus_percentile5: y.count > 0 ? y.percentiles[5] : null,
         outbound_bandwidth_surplus_percentile10: y.count > 0 ? y.percentiles[10] : null,
@@ -296,13 +296,13 @@ class b extends Chunk972347.A {
       r = (null != this.streamEnd ? this.streamEnd - n : this.timestampProducer.now() - n) / 1e3,
       i = Math.max(e.aggregationDuration, 0) / 1e3,
       a = [1, 5, 10, 25, 50, 75],
-      s = [1, 5, 10, 25, 50, 75, 99],
       o = [1, 5, 10, 25, 50, 75, 99],
+      s = [1, 5, 10, 25, 50, 75, 99],
       l = [1, 5, 10, 25, 50, 75, 90, 95],
       c = e.fpsHistogram.getReport(a),
-      u = e.bitrateHistogram.getReport(s),
+      u = e.bitrateHistogram.getReport(o),
       d = e.resolutionHistogram.getReport(a),
-      f = e.inboundBitrateEstimateHistogram.getReport(o),
+      f = e.inboundBitrateEstimateHistogram.getReport(s),
       _ = e.localWantHistogram.getReport(l),
       m = e.systemResources.getStats(),
       y = h({
@@ -414,15 +414,15 @@ class b extends Chunk972347.A {
         pauseCount: R,
         freezeCount: P,
         totalPausesDuration: D,
-        totalFreezesDuration: x,
-        totalFramesDuration: L,
-        keyframes: j,
-        passthroughCount: M,
+        totalFreezesDuration: L,
+        totalFramesDuration: x,
+        keyframes: M,
+        passthroughCount: j,
         cryptorSuccessCount: k,
         cryptorFailureCount: U,
         cryptorDuration: G,
-        cryptorAttempts: V,
-        cryptorMissingKeyCount: F,
+        cryptorAttempts: F,
+        cryptorMissingKeyCount: V,
         cryptorInvalidNonceCount: B,
         qualityDecodeErrors: H,
         qualityDecoderReboots: Y,
@@ -431,7 +431,7 @@ class b extends Chunk972347.A {
         qualitySizeMismatches: z
       } = e.aggregatedProperties,
       q = (null != U ? U : 0) - (null != (t = e.cryptorFailureBeforeSuccessCount) ? t : 0);
-    return e instanceof p.ET ? (y.sender_freeze_count = P, y.sender_total_freezes_duration = x, y.sender_total_frames_duration = L) : (y.receiver_freeze_count = P, y.receiver_total_freezes_duration = x, y.receiver_total_frames_duration = L, y.receiver_pause_count = R, y.receiver_total_pauses_duration = D), g(h({}, y), {
+    return e instanceof p.ET ? (y.sender_freeze_count = P, y.sender_total_freezes_duration = L, y.sender_total_frames_duration = x) : (y.receiver_freeze_count = P, y.receiver_total_freezes_duration = L, y.receiver_total_frames_duration = x, y.receiver_pause_count = R, y.receiver_total_pauses_duration = D), g(h({}, y), {
       avg_bitrate: i > 0 ? Math.round((null != b ? b : 0) * 8 / i) : 0,
       avg_fps: i > 0 ? Math.round((null != A ? A : 0) / i) : 0,
       num_bytes: b,
@@ -444,13 +444,13 @@ class b extends Chunk972347.A {
       num_nacks: C,
       num_plis: N,
       qp_sum: w,
-      num_keyframes: j,
-      cryptor_passthrough_count: M,
+      num_keyframes: M,
+      cryptor_passthrough_count: j,
       cryptor_success_count: k,
       cryptor_failure_count: U,
       cryptor_duration: G,
-      cryptor_attempts: V,
-      cryptor_missing_key_count: F,
+      cryptor_attempts: F,
+      cryptor_missing_key_count: V,
       cryptor_invalid_nonce_count: B,
       cryptor_failure_after_success_count: q,
       encoder_quality_decode_errors: H,
@@ -461,16 +461,16 @@ class b extends Chunk972347.A {
     })
   }
   receivedStats(e, t, n) {
-    var r, s;
+    var r, o;
     let l = t.transport,
-      u = (0, c.isWeb)() ? 1 : null != (r = null == (s = l.receiverReports) ? true : s.length) ? r : 0,
+      u = (0, c.isWeb)() ? 1 : null != (r = null == (o = l.receiverReports) ? true : o.length) ? r : 0,
       d = new Set,
       f = new Set;
     this.updateSendState({
       receivers: u
     });
     let _ = this.cameraDuration.value;
-    this.cameraDuration.value = this.connection.context === o.x.DEFAULT && null != t.camera, this.cameraOpportunityDuration.value = this.connection.context === o.x.DEFAULT && null != t.camera && this.callUserIdsCount > 1, this.cameraSendDuration.value = this.connection.context === o.x.DEFAULT && null != t.camera && u > 0, this.cameraDuration.value && !_ && this.cameraToggles++;
+    this.cameraDuration.value = this.connection.context === s.x.DEFAULT && null != t.camera, this.cameraOpportunityDuration.value = this.connection.context === s.x.DEFAULT && null != t.camera && this.callUserIdsCount > 1, this.cameraSendDuration.value = this.connection.context === s.x.DEFAULT && null != t.camera && u > 0, this.cameraDuration.value && !_ && this.cameraToggles++;
     let h = i().max(n.map(e => e.quality)),
       m = t.rtp.outbound.filter(e => "video" === e.type && (null == e ? true : e.videoEntropy) != null)[0],
       g = null == m ? true : m.videoEntropy;
@@ -481,8 +481,8 @@ class b extends Chunk972347.A {
           I = this.outboundStats[t];
         null == I && (console.warn("Unknown outbound video stream with SSRC: ".concat(t)), I = new p.ET(this.timestampProducer), this.outboundStats[t] = I), null == I.timeToFirstFrame && (r.framesEncoded > 0 || (null != (i = r.frameRateInput) ? i : 0) > 0) && (I.timeToFirstFrame = Math.max(0, e - I.startTime)), null != g && g >= 0 && this.videoEntropy.addSample(g);
         let S = n.find(e => e.ssrc === t);
-        var i, a, s, c, u, f, _, m, E, y, b, O, v = true;
-        if (this.connection.context === o.x.STREAM) {
+        var i, a, o, c, u, f, _, m, E, y, b, O, v = true;
+        if (this.connection.context === s.x.STREAM) {
           var A = this.connection.getRemoteVideoSinkWants(t);
           (null == A || 0 === A) && (null == S ? true : S.quality) === h && (A = this.connection.getRemoteVideoSinkWants("any")), v = (null != A ? A : 0) > 0
         }
@@ -490,7 +490,7 @@ class b extends Chunk972347.A {
         if (T !== I.isVideoStopped && I.setVideoStopped(T, p.iF.SenderStopped), !T) {
           I.appendAndIncrementStats(p.tH.parseOutboundStats(r, e)), I.encoderCodec !== p.Wn.UNKNOWN && d.add(I.encoderCodec);
           let t = null == S ? true : S.maxBitrate;
-          I.appendTargetRates(null == S ? true : S.maxFrameRate, null != (a = r.bitrateTarget) ? a : Math.min(null != (s = l.availableOutgoingBitrate) ? s : 0, null != t ? t : 0), t, l.availableOutgoingBitrate), I.averageEncodeTime = null != (c = r.averageEncodeTime) ? c : 0, I.framesDroppedRateLimiter = null != (u = r.framesDroppedRateLimiter) ? u : null, I.framesDroppedEncoderQueue = null != (f = r.framesDroppedEncoderQueue) ? f : null, I.framesDroppedCongestionWindow = null != (_ = r.framesDroppedCongestionWindow) ? _ : null, I.framesDroppedEncoder = null != (m = r.framesDroppedEncoder) ? m : null, this.hqSimulcastStreamEncoded.value = null != (E = r.hqSimulcastStreamEncoded) && E, this.lqSimulcastStreamEncoded.value = null != (y = r.lqSimulcastStreamEncoded) && y, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value, this.bandwidthLimitedResolution.value = null != (b = r.bandwidthLimitedResolution) && b, this.bandwidthLimitedFramerate.value = null != (O = r.bandwidthLimitedFrameRate) && O
+          I.appendTargetRates(null == S ? true : S.maxFrameRate, null != (a = r.bitrateTarget) ? a : Math.min(null != (o = l.availableOutgoingBitrate) ? o : 0, null != t ? t : 0), t, l.availableOutgoingBitrate), I.averageEncodeTime = null != (c = r.averageEncodeTime) ? c : 0, I.framesDroppedRateLimiter = null != (u = r.framesDroppedRateLimiter) ? u : null, I.framesDroppedEncoderQueue = null != (f = r.framesDroppedEncoderQueue) ? f : null, I.framesDroppedCongestionWindow = null != (_ = r.framesDroppedCongestionWindow) ? _ : null, I.framesDroppedEncoder = null != (m = r.framesDroppedEncoder) ? m : null, this.hqSimulcastStreamEncoded.value = null != (E = r.hqSimulcastStreamEncoded) && E, this.lqSimulcastStreamEncoded.value = null != (y = r.lqSimulcastStreamEncoded) && y, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value, this.bandwidthLimitedResolution.value = null != (b = r.bandwidthLimitedResolution) && b, this.bandwidthLimitedFramerate.value = null != (O = r.bandwidthLimitedFrameRate) && O
         }
       }
     }), this.paused.value || i().forEach(t.rtp.inbound, (t, n) => {

@@ -1,7 +1,7 @@
 /** Chunk was on 91699 **/
 /** chunk id: 561406, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => f
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,64 +15,64 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function y(e) {
   let {
     eligibility: t,
     eligibilityLoading: r,
     eligibilityError: l,
     guildId: p,
-    onEligibilityBecameStale: b
-  } = e, y = n.useMemo(() => ({
-    onEligibilityBecameStale: b,
+    onEligibilityBecameStale: y
+  } = e, f = i.useMemo(() => ({
+    onEligibilityBecameStale: y,
     sortedByIneligible: true,
     actions: {
-      onEnableMFAClick: a.Ay.enableMFA,
+      onEnableMFAClick: s.Ay.enableMFA,
       onRequireModeratorMFAClick: () => {
-        (0, c.OoC)(u.m), s.A.open(p, h.BEX.SAFETY, true, h.nd0.SAFETY_PERMISSIONS)
+        (0, c.OoC)(d.m), a.A.open(p, b.BEX.SAFETY, true, b.nd0.SAFETY_PERMISSIONS)
       }
     }
-  }), [p, b]), f = (0, o.A)(t, y);
-  return null != l ? (0, i.jsx)("div", {
-    children: (0, i.jsx)(c.wx6, {
+  }), [p, y]), O = (0, o.A)(t, f);
+  return null != l ? (0, n.jsx)("div", {
+    children: (0, n.jsx)(c.wx6, {
       type: "critical",
       children: l.message
     })
-  }) : null == f || r ? (0, i.jsx)("div", {
-    children: (0, i.jsx)(c.y$y, {})
-  }) : (0, i.jsx)("div", {
-    children: f.map((e, t) => (0, i.jsxs)(n.Fragment, {
-      children: [(0, i.jsx)(d.e, {
+  }) : null == O || r ? (0, n.jsx)("div", {
+    children: (0, n.jsx)(c.y$y, {})
+  }) : (0, n.jsx)("div", {
+    children: O.map((e, t) => (0, n.jsxs)(i.Fragment, {
+      children: [(0, n.jsx)(u.e, {
         name: e.checked ? e.checkedLabel : e.uncheckedLabel,
         description: e.description,
         checked: e.checked,
         actionLabel: e.actionLabel,
         actionHandler: e.actionHandler
-      }), t < f.length - 1 ? (0, i.jsx)(c.cGx, {}) : null]
+      }), t < O.length - 1 ? (0, n.jsx)(c.cGx, {}) : null]
     }, e.checkedLabel))
   })
 }
 
-function y(e) {
+function f(e) {
   let {
     eligibility: t,
     eligibilityLoading: r,
-    eligibilityError: n,
+    eligibilityError: i,
     refreshEligibility: o,
-    guildId: s,
-    transitionState: a
+    guildId: a,
+    transitionState: s
   } = e;
-  return (0, i.jsx)(l.Modal, {
-    transitionState: a,
+  return (0, n.jsx)(l.Modal, {
+    transitionState: s,
     title: p.intl.string(p.t["3s47iN"]),
     actions: [],
     onClose: async () => {
-      await (0, c.OoC)(u.m)
+      await (0, c.OoC)(d.m)
     },
-    children: (0, i.jsx)(b, {
+    children: (0, n.jsx)(y, {
       eligibility: t,
       eligibilityLoading: r,
-      eligibilityError: n,
-      guildId: s,
+      eligibilityError: i,
+      guildId: a,
       onEligibilityBecameStale: o
     })
   })

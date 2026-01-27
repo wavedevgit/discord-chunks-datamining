@@ -15,14 +15,14 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = false;
-class o extends Chunk439372.A {
+let o = false;
+class s extends Chunk439372.A {
   setVerifyTimezone() {
-    s = true
+    o = true
   }
   ensureTimezoneUpdated() {
-    if (!s) return;
-    s = false;
+    if (!o) return;
+    o = false;
     let e = new Date().getTimezoneOffset();
     i.JI.getSetting() !== e && setImmediate(() => i.JI.updateSetting(e))
   }
@@ -36,4 +36,4 @@ class o extends Chunk439372.A {
     })
   }
 }
-let l = new o
+let l = new s

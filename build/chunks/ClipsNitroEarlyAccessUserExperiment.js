@@ -4,7 +4,7 @@
 require.d(exports, {
   BW: () => f,
   J: () => _,
-  L_: () => o,
+  L_: () => s,
   Pm: () => c,
   Vr: () => p,
   cx: () => d,
@@ -16,7 +16,7 @@ var Chunk600975 = require("./600975.js"),
 require("./927578.js");
 var Chunk915618 = require("./915618.js");
 require("./788868.js");
-let o = (0, Chunk600975.C)({
+let s = (0, Chunk600975.C)({
     kind: "user",
     id: "2022-11_clips_experiment",
     label: "Clips Experiment",
@@ -101,7 +101,7 @@ let o = (0, Chunk600975.C)({
   });
 
 function c() {
-  if (!(0, s.A)(a.A)) returnfalse;
+  if (!(0, o.A)(a.A)) returnfalse;
   let {
     enableClips: e
   } = l.getCurrentConfig({
@@ -110,7 +110,7 @@ function c() {
     autoTrackExposure: false
   }), {
     enableClips: t
-  } = o.getCurrentConfig({
+  } = s.getCurrentConfig({
     location: "areClipsEnabled"
   }, {
     autoTrackExposure: false
@@ -125,7 +125,7 @@ function c() {
 }
 
 function u() {
-  let e = (0, s.A)(a.A),
+  let e = (0, o.A)(a.A),
     {
       enableClips: t
     } = l.useExperiment({
@@ -135,7 +135,7 @@ function u() {
     }),
     {
       enableClips: n
-    } = o.useExperiment({
+    } = s.useExperiment({
       location: "useEnableClips"
     }, {
       autoTrackExposure: false
@@ -153,7 +153,7 @@ function u() {
 function d() {
   let {
     enableScreenshotKeybind: e
-  } = o.getCurrentConfig({
+  } = s.getCurrentConfig({
     location: "isScreenshotKeybindEnabled"
   }, {
     autoTrackExposure: false
@@ -164,7 +164,7 @@ function d() {
 function f() {
   let {
     enableScreenshotKeybind: e
-  } = o.useExperiment({
+  } = s.useExperiment({
     location: "useScreenshotKeybindEnabled"
   }, {
     autoTrackExposure: false
@@ -175,7 +175,7 @@ function f() {
 function p() {
   let {
     enableVoiceOnlyClips: e
-  } = o.getCurrentConfig({
+  } = s.getCurrentConfig({
     location: "areVoiceOnlyClipsEnabled"
   }, {
     autoTrackExposure: false
@@ -186,7 +186,7 @@ function p() {
 function _() {
   let {
     enableAdvancedSignals: e
-  } = o.getCurrentConfig({
+  } = s.getCurrentConfig({
     location: "areAdvancedSignalsEnabled"
   }, {
     autoTrackExposure: false

@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  A: () => M
+  A: () => j
 }), require("./896048.js");
 var a, Chunk311907 = require("./311907.js"),
   Chunk554146 = require("./554146.js"),
@@ -62,7 +62,7 @@ let S = true,
       channelId: t,
       guildId: n
     } = e, r = E.default.getCurrentUser();
-    if (null == t || null == n || (0, c.k8)(o.M.CLIENT_THEMES_COACHMARK) || !(0, b.G2)(r)) return;
+    if (null == t || null == n || (0, c.k8)(s.M.CLIENT_THEMES_COACHMARK) || !(0, b.G2)(r)) return;
     let i = g.A.getChannel(t);
     null != i && (0, m.ke)(i.type) && (T = true)
   };
@@ -75,7 +75,7 @@ let D = () => {
     if (e === S) returnfalse;
     S = e
   },
-  x = () => {
+  L = () => {
     if (!u.A.shouldSync("appearance")) returnfalse;
     let e = _.eh.getSetting().backgroundGradientPresetId;
     if (null == e) {
@@ -87,7 +87,7 @@ let D = () => {
       r = t
     }
   },
-  L = () => {
+  x = () => {
     if (!u.A.shouldSync("appearance")) returnfalse;
     let e = _.eh.getSetting().backgroundGradientPresetId;
     if (p.Ay.useSystemTheme === A.Q_.ON && null != e && (0, d.k7)(A.Q_.OFF), null == e) {
@@ -98,9 +98,9 @@ let D = () => {
       n = (null == r ? true : r.id) === (null == t ? true : t.id);
     null == t || n || (r = t)
   };
-class j extends(a = Chunk311907.Ay.PersistedStore) {
+class M extends(a = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? v.ag[e.gradientPresetId] : true), this.waitFor(g.A, u.A, f.A, p.Ay, h.A, E.default), this.syncWith([E.default], D), this.syncWith([u.A], x)
+    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? v.ag[e.gradientPresetId] : true), this.waitFor(g.A, u.A, f.A, p.Ay, h.A, E.default), this.syncWith([E.default], D), this.syncWith([u.A], L)
   }
   getState() {
     return S ? {} : {
@@ -131,18 +131,18 @@ class j extends(a = Chunk311907.Ay.PersistedStore) {
     }])
   }
 }
-I(j, "displayName", "ClientThemesBackgroundStore"), I(j, "persistKey", "ClientThemesBackgroundStore");
-let M = new j(Chunk73153.h, {
+I(M, "displayName", "ClientThemesBackgroundStore"), I(M, "persistKey", "ClientThemesBackgroundStore");
+let j = new M(Chunk73153.h, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: C,
   UPDATE_MOBILE_PENDING_THEME_INDEX: N,
   RESET_PREVIEW_CLIENT_THEME: w,
   CLIENT_THEMES_EDITOR_CLOSE: P,
   CHANNEL_SELECT: R,
   LOGOUT: P,
-  CACHE_LOADED: L,
-  CONNECTION_OPEN: L,
-  OVERLAY_INITIALIZE: L,
-  SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: L,
-  UNSYNCED_USER_SETTINGS_UPDATE: L,
-  USER_SETTINGS_PROTO_UPDATE: L
+  CACHE_LOADED: x,
+  CONNECTION_OPEN: x,
+  OVERLAY_INITIALIZE: x,
+  SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: x,
+  UNSYNCED_USER_SETTINGS_UPDATE: x,
+  USER_SETTINGS_PROTO_UPDATE: x
 })

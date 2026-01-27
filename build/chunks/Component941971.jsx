@@ -35,7 +35,7 @@ function d(e) {
       height: t ? 40 : n ? 20 : 8,
       transform: "translateX(0) translateZ(0)"
     },
-    _ = (0, o.pnh)(t || n || i, {
+    _ = (0, s.pnh)(t || n || i, {
       config: c,
       keys: e => e ? "pill" : "empty",
       initial: t || n || i ? p : null,
@@ -47,7 +47,7 @@ function d(e) {
   return (0, r.jsx)("div", {
     className: a()(f, l.i),
     "aria-hidden": true,
-    children: _((e, t) => t && (0, r.jsx)(s.animated.span, {
+    children: _((e, t) => t && (0, r.jsx)(o.animated.span, {
       className: l.A,
       style: e
     }))

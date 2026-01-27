@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   $k: () => c,
-  Hl: () => o,
-  LX: () => s,
+  Hl: () => s,
+  LX: () => o,
   OK: () => f,
   bJ: () => m,
   gq: () => d,
@@ -19,11 +19,11 @@ function a(e) {
   return 1 === e.length ? "0".concat(e) : e
 }
 
-function s(e) {
+function o(e) {
   return i()(e).num()
 }
 
-function o(e) {
+function s(e) {
   if (e <= 0xffffff) {
     let t = e >> 16 & 255,
       n = e >> 8 & 255,
@@ -43,13 +43,13 @@ function l(e) {
     r = 255 & e,
     i = Math.min(t /= 255, n /= 255, r /= 255),
     a = Math.max(t, n, r),
-    s = a - i,
-    o = 0,
+    o = a - i,
+    s = 0,
     l = 0,
     c = 0;
-  return (o = Math.round(60 * (o = 0 === s ? 0 : a === t ? (n - r) / s % 6 : a === n ? (r - t) / s + 2 : (t - n) / s + 4))) < 0 && (o += 360), c = (a + i) / 2, {
-    h: o,
-    s: +(l = 0 === s ? 0 : s / (1 - Math.abs(2 * c - 1))).toFixed(3),
+  return (s = Math.round(60 * (s = 0 === o ? 0 : a === t ? (n - r) / o % 6 : a === n ? (r - t) / o + 2 : (t - n) / o + 4))) < 0 && (s += 360), c = (a + i) / 2, {
+    h: s,
+    s: +(l = 0 === o ? 0 : o / (1 - Math.abs(2 * c - 1))).toFixed(3),
     l: +c.toFixed(3)
   }
 }
@@ -61,11 +61,11 @@ function c(e) {
     {
       h: i,
       s: a,
-      l: s
+      l: o
     } = l(e),
-    o = +(100 * a).toFixed(1),
-    c = +(100 * s).toFixed(1);
-  return t ? "hsla(".concat(i, ", calc(var(--saturation-factor, 1) * ").concat(o, "%), ").concat(c, "%, ").concat(r, ")") : null != n ? "hsla(".concat(i, ", ").concat(n * o, "%, ").concat(c, "%, ").concat(r, ")") : "hsla(".concat(i, ", ").concat(o, "%, ").concat(c, "%, ").concat(r, ")")
+    s = +(100 * a).toFixed(1),
+    c = +(100 * o).toFixed(1);
+  return t ? "hsla(".concat(i, ", calc(var(--saturation-factor, 1) * ").concat(s, "%), ").concat(c, "%, ").concat(r, ")") : null != n ? "hsla(".concat(i, ", ").concat(n * s, "%, ").concat(c, "%, ").concat(r, ")") : "hsla(".concat(i, ", ").concat(s, "%, ").concat(c, "%, ").concat(r, ")")
 }
 
 function u(e) {

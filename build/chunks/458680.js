@@ -12,6 +12,6 @@ module.exports = Object.setPrototypeOf || ("__proto__" in {} ? function() {
     (e = r(Object.prototype, "__proto__", "set"))(n, []), t = n instanceof Array
   } catch (e) {}
   return function(n, r) {
-    return a(n), s(r), i(n) && (t ? e(n, r) : n.__proto__ = r), n
+    return a(n), o(r), i(n) && (t ? e(n, r) : n.__proto__ = r), n
   }
 }() : true)

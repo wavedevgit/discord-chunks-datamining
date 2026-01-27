@@ -18,14 +18,14 @@ require.d(exports, {
   OL: () => I,
   Pq: () => er,
   Q7: () => D,
-  Sb: () => es,
+  Sb: () => eo,
   TG: () => eE,
-  Tk: () => eo,
+  Tk: () => es,
   U2: () => l,
-  VV: () => L,
+  VV: () => x,
   Wz: () => ep,
   Xl: () => c,
-  YI: () => X,
+  YI: () => Q,
   Yr: () => ef,
   ZE: () => q,
   _A: () => h,
@@ -35,18 +35,18 @@ require.d(exports, {
   dL: () => H,
   do: () => b,
   e$: () => z,
-  fr: () => j,
+  fr: () => M,
   gx: () => ey,
   hC: () => u,
-  hV: () => M,
+  hV: () => j,
   he: () => O,
   il: () => J,
-  js: () => V,
+  js: () => F,
   kM: () => m,
   kv: () => A,
   mX: () => ed,
   me: () => K,
-  nf: () => F,
+  nf: () => V,
   ps: () => g,
   qF: () => en,
   qm: () => E,
@@ -55,9 +55,9 @@ require.d(exports, {
   rz: () => P,
   sE: () => ec,
   sJ: () => W,
-  sh: () => Q,
+  sh: () => X,
   tE: () => U,
-  tF: () => x,
+  tF: () => L,
   w7: () => el,
   x0: () => e_,
   xB: () => k,
@@ -69,8 +69,8 @@ require.d(exports, {
 var Chunk812743 = require("./812743.js"),
   Chunk136722 = require("./136722.js"),
   Chunk323125 = require("./323125.js");
-let s = location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT,
-  o = location.protocol + "//discord.gg",
+let o = location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT,
+  s = location.protocol + "//discord.gg",
   l = "discord.com",
   c = "support.discord.com",
   u = "support-dev.discord.com",
@@ -178,17 +178,17 @@ Object.freeze({
   CONSTANT: 1,
   APPLE_STICKER: 2
 });
-var x = function(e) {
+var L = function(e) {
     return e[e.DISCOVERY = 0] = "DISCOVERY", e[e.CHECKOUT = 1] = "CHECKOUT", e
   }({}),
-  L = function(e) {
+  x = function(e) {
     return e[e.SUBSCRIPTION = 0] = "SUBSCRIPTION", e[e.ONE_TIME = 1] = "ONE_TIME", e
   }({});
-let j = Object.freeze({
+let M = Object.freeze({
   0: "subscription",
   1: "sku"
 });
-var M = function(e) {
+var j = function(e) {
   return e[e.VIEW_CHANNEL = 1024] = "VIEW_CHANNEL", e[e.READ_MESSAGE_HISTORY = 65536] = "READ_MESSAGE_HISTORY", e[e.CONNECT = 1048576] = "CONNECT", e
 }({});
 let k = Object.freeze({
@@ -249,9 +249,9 @@ let k = Object.freeze({
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
   G = () => null,
-  V = () => Promise.resolve(),
-  F = [k.KICK_MEMBERS, k.BAN_MEMBERS, k.ADMINISTRATOR, k.MANAGE_CHANNELS, k.MANAGE_GUILD, k.MANAGE_ROLES, k.MANAGE_MESSAGES, k.MANAGE_THREADS, k.MODERATE_MEMBERS],
-  B = Chunk136722.kg(...F),
+  F = () => Promise.resolve(),
+  V = [k.KICK_MEMBERS, k.BAN_MEMBERS, k.ADMINISTRATOR, k.MANAGE_CHANNELS, k.MANAGE_GUILD, k.MANAGE_ROLES, k.MANAGE_MESSAGES, k.MANAGE_THREADS, k.MODERATE_MEMBERS],
+  B = Chunk136722.kg(...V),
   H = 1,
   Y = 6463,
   W = 10,
@@ -265,10 +265,10 @@ var z = function(e) {
   Z = function(e) {
     return e[e.UNKNOWN_ERROR = 1e3] = "UNKNOWN_ERROR", e[e.SERVICE_UNAVAILABLE = 1001] = "SERVICE_UNAVAILABLE", e[e.TRANSACTION_ABORTED = 1002] = "TRANSACTION_ABORTED", e[e.INVALID_PAYLOAD = 4e3] = "INVALID_PAYLOAD", e[e.INVALID_COMMAND = 4002] = "INVALID_COMMAND", e[e.INVALID_GUILD = 4003] = "INVALID_GUILD", e[e.INVALID_EVENT = 4004] = "INVALID_EVENT", e[e.INVALID_CHANNEL = 4005] = "INVALID_CHANNEL", e[e.INVALID_PERMISSIONS = 4006] = "INVALID_PERMISSIONS", e[e.INVALID_CLIENTID = 4007] = "INVALID_CLIENTID", e[e.INVALID_ORIGIN = 4008] = "INVALID_ORIGIN", e[e.INVALID_TOKEN = 4009] = "INVALID_TOKEN", e[e.INVALID_USER = 4010] = "INVALID_USER", e[e.INVALID_INVITE = 4011] = "INVALID_INVITE", e[e.INVALID_ACTIVITY_JOIN_REQUEST = 4012] = "INVALID_ACTIVITY_JOIN_REQUEST", e[e.INVALID_ENTITLEMENT = 4015] = "INVALID_ENTITLEMENT", e[e.INVALID_GIFT_CODE = 4016] = "INVALID_GIFT_CODE", e[e.INVALID_GUILD_TEMPLATE = 4017] = "INVALID_GUILD_TEMPLATE", e[e.INVALID_SOUND = 4018] = "INVALID_SOUND", e[e.INVALID_PROVIDER = 4019] = "INVALID_PROVIDER", e[e.INVALID_CONNECTION_CALLBACK_STATE = 4020] = "INVALID_CONNECTION_CALLBACK_STATE", e[e.BAD_REQUEST_FOR_PROVIDER = 4021] = "BAD_REQUEST_FOR_PROVIDER", e[e.OAUTH2_ERROR = 5e3] = "OAUTH2_ERROR", e[e.SELECT_CHANNEL_TIMED_OUT = 5001] = "SELECT_CHANNEL_TIMED_OUT", e[e.GET_GUILD_TIMED_OUT = 5002] = "GET_GUILD_TIMED_OUT", e[e.SELECT_VOICE_FORCE_REQUIRED = 5003] = "SELECT_VOICE_FORCE_REQUIRED", e[e.INVALID_ACTIVITY_SECRET = 5005] = "INVALID_ACTIVITY_SECRET", e[e.NO_ELIGIBLE_ACTIVITY = 5006] = "NO_ELIGIBLE_ACTIVITY", e[e.PURCHASE_CANCELED = 5008] = "PURCHASE_CANCELED", e[e.PURCHASE_ERROR = 5009] = "PURCHASE_ERROR", e[e.UNAUTHORIZED_FOR_ACHIEVEMENT = 5010] = "UNAUTHORIZED_FOR_ACHIEVEMENT", e[e.RATE_LIMITED = 5011] = "RATE_LIMITED", e[e.UNAUTHORIZED_FOR_APPLICATION = 5012] = "UNAUTHORIZED_FOR_APPLICATION", e[e.NO_CONNECTION_FOUND = 5013] = "NO_CONNECTION_FOUND", e
   }({}),
-  X = function(e) {
+  Q = function(e) {
     return e[e.CLOSE_NORMAL = 1e3] = "CLOSE_NORMAL", e[e.CLOSE_UNSUPPORTED = 1003] = "CLOSE_UNSUPPORTED", e[e.CLOSE_ABNORMAL = 1006] = "CLOSE_ABNORMAL", e[e.INVALID_CLIENTID = 4e3] = "INVALID_CLIENTID", e[e.INVALID_ORIGIN = 4001] = "INVALID_ORIGIN", e[e.RATELIMITED = 4002] = "RATELIMITED", e[e.TOKEN_REVOKED = 4003] = "TOKEN_REVOKED", e[e.INVALID_VERSION = 4004] = "INVALID_VERSION", e[e.INVALID_ENCODING = 4005] = "INVALID_ENCODING", e
   }({});
-let Q = 250,
+let X = 250,
   J = "token",
   $ = "tokens",
   ee = "status.discord.com",
@@ -310,30 +310,30 @@ let Q = 250,
     })
   }),
   ei = Object.freeze({
-    WELCOME: "".concat(s, "/welcome/"),
-    ME: "".concat(s, "/channels/@me"),
-    SETTINGS: (e, t) => "".concat(s, "/settings/").concat(e).concat(t ? "/".concat(t) : ""),
-    CONNECTION: e => "".concat(s, "/connections/").concat(e),
-    CHANGELOGS: "".concat(s, "/settings/changelogs"),
-    LOGIN: "".concat(s, "/login"),
-    LOGIN_WITH_REDIRECT: e => "".concat(s, "/login?redirect_to=").concat(e),
-    REGISTER: "".concat(s, "/register"),
-    REGISTER_WITH_REDIRECT: e => "".concat(s, "/register?redirect_to=").concat(e),
-    CREATE_GUILD: "".concat(s, "/guilds/create"),
-    VANITY_INVITE: e => "".concat(o, "/").concat(e),
-    HYPESQUAD_ONLINE: "".concat(s, "/settings/hypesquad-online"),
-    BROWSE_NITRO_TITLES: "".concat(s, "/store/browse?type=nitro"),
-    SKU_DETAILS: (e, t) => "".concat(s, "/store/skus/").concat(e).concat(null != t ? "?store_listing_id=".concat(t) : ""),
+    WELCOME: "".concat(o, "/welcome/"),
+    ME: "".concat(o, "/channels/@me"),
+    SETTINGS: (e, t) => "".concat(o, "/settings/").concat(e).concat(t ? "/".concat(t) : ""),
+    CONNECTION: e => "".concat(o, "/connections/").concat(e),
+    CHANGELOGS: "".concat(o, "/settings/changelogs"),
+    LOGIN: "".concat(o, "/login"),
+    LOGIN_WITH_REDIRECT: e => "".concat(o, "/login?redirect_to=").concat(e),
+    REGISTER: "".concat(o, "/register"),
+    REGISTER_WITH_REDIRECT: e => "".concat(o, "/register?redirect_to=").concat(e),
+    CREATE_GUILD: "".concat(o, "/guilds/create"),
+    VANITY_INVITE: e => "".concat(s, "/").concat(e),
+    HYPESQUAD_ONLINE: "".concat(o, "/settings/hypesquad-online"),
+    BROWSE_NITRO_TITLES: "".concat(o, "/store/browse?type=nitro"),
+    SKU_DETAILS: (e, t) => "".concat(o, "/store/skus/").concat(e).concat(null != t ? "?store_listing_id=".concat(t) : ""),
     MESSAGE: (e, t, n) => "/channels/".concat(e, "/").concat(t, "/").concat(n),
     CHANNEL: (e, t) => "/channels/".concat(e, "/").concat(t),
-    REPORT: "".concat(s, "/report"),
-    QUEST_PREVIEW_TOOL_2: e => "".concat(s, "/quest-preview/").concat(e)
+    REPORT: "".concat(o, "/report"),
+    QUEST_PREVIEW_TOOL_2: e => "".concat(o, "/quest-preview/").concat(e)
   });
 var ea = function(e) {
   return e.INDEX = "/", e.INDEX_WORD = "/index", e.INDEX_BUCKET = "/index/:bucketId", e.CHANGELOGS = "/changelogs/:date", e.COMMUNITY = "/community", e.COMPANY = "/company", e.COMPANY_INFORMATION = "/company-information", e.CREATORS = "/creators", e.DOWNLOADS = "/downloads", e.DOWNLOAD = "/download", e.GAMING = "/gaming", e.PRIVACY = "/privacy", e.TOS = "/tos", e.TERMS = "/terms", e.STORE_TERMS = "/store-terms", e.ACKNOWLEDGEMENTS = "/acknowledgements", e.LICENSES = "/licenses", e.PARTNERS = "/partners", e.HYPESQUAD = "/hypesquad", e.HYPESQUAD_RIOT = "/hypesquad-riot", e.BRANDING = "/branding", e.ERROR_404 = "/404", e.JOBS = "/jobs", e.JOB = "/jobs/:jobId", e.STREAMKIT = "/streamkit", e.SECURITY = "/security", e.NITRO = "/nitro", e.DISCOVER = "/servers", e.QUESTS = "/ads/quests", e.GUIDELINES = "/guidelines", e.RICH_PRESENCE = "/rich-presence", e.VERIFICATION = "/verification", e.OPEN_SOURCE = "/open-source", e.WARFRAME = "/warframe", e.REMOTE_AUTH = "/ra/:remoteAuthFingerprint", e.SAFETY_LANDING = "/safetycenter", e.SAFETY_ARTICLE_ROOT = "/safety", e.SAFETY_ARTICLE = "/safety/:article", e.NEWSROOM = "/newsroom", e.INSPIRATION = "/inspiration", e.MOD_ACADEMY_LANDING = "/moderation", e.MOD_ACADEMY_EXAM = "/moderation/exam", e.MOD_ACADEMY_ARTICLE = "/moderation/:article", e.BLOG = "/blog", e.BUILD = "/build", e.DEVELOPERS = "/developers", e.APP_DIRECTORY = "/application-directory", e.REFRESH_INDEX = "/new", e.REFRESH_INDEX_WORD = "/new/index", e.REFRESH_COMPANY = "/new/company", e.REFRESH_DOWNLOAD = "/new/download", e.REFRESH_PRIVACY = "/new/privacy", e.REFRESH_TERMS = "/new/terms", e.REFRESH_ACKNOWLEDGEMENTS = "/new/acknowledgements", e.REFRESH_LICENSES = "/new/licenses", e.REFRESH_BRANDING = "/new/branding", e.REFRESH_JOBS = "/new/jobs", e.REFRESH_JOB = "/new/jobs/:jobId", e.REFRESH_STREAMKIT = "/new/streamkit", e.REFRESH_NITRO = "/new/nitro", e.REFRESH_GUIDELINES = "/new/guidelines", e.REFRESH_SAFETY_LANDING = "/new/safety", e.REFRESH_SAFETY_ARTICLE = "/new/safety/:article", e.COLLEGE = "/college", e.LEAGUE_CLUBS = "/league-communities", e.DISCORD_RECRUITING_SCAMS = "/discord-recruitment-scams", e.DEV_NEWSLETTER_SIGNUP = "/dev-newsletter", e.LEGACY_DEV_NEWSLETTER = "/newsletter", e.LEGAL_ARCHIVE = "/archive/", e.TERMS_MAY_2020 = "/archive/terms/may-2020", e.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020", e.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020", e.FALL_RELEASE_2023 = "/fallrelease", e.MOBILE_REDESIGN_2023 = "/mobile", e.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019", e.REFRESH_WHY_DISCORD = "/why-discord-is-different", e.WHY_DISCORD = "/why-discord", e.XBOX_OFFER = "/discord-xbox-offer-2020", e.COLLEGE_BRUINS = "/bruins", e.COLLEGE_ANTEATERS = "/anteaters", e.COLLEGE_GAUCHOS = "/gauchos", e.COLLEGE_BEARS = "/bears", e.COLLEGE_SLUGS = "/slugs", e.BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM = "/terms/back-to-school-2020/instagram", e.BACK_TO_SCHOOL_GIVEAWAY_TWITTER = "/terms/back-to-school-2020/twitter", e.SNOWSGIVING_GIVEAWAY_INSTAGRAM = "/terms/snowsgiving-2020/instagram", e.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter", e
 }(ea || {});
-let es = (0, Chunk323125.dN)(ei),
-  eo = (0, Chunk323125.dN)(ea),
+let eo = (0, Chunk323125.dN)(ei),
+  es = (0, Chunk323125.dN)(ea),
   el = Object.freeze({
     FACEBOOK_URL: "https://www.facebook.com/discord/",
     INSTAGRAM_URL: "https://www.instagram.com/discord/",

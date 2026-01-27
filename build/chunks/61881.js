@@ -26,7 +26,7 @@ function m(e) {
     widgets: t
   } = e;
   if (c = t, null === u) {
-    let e = o.default.getCurrentUser();
+    let e = s.default.getCurrentUser();
     if (null != e) {
       var n;
       let t = l.A.getUserProfile(e.id);
@@ -75,7 +75,7 @@ function I(e) {
 }
 class S extends Chunk311907.Ay.Store {
   initialize() {
-    this.waitFor(o.default)
+    this.waitFor(s.default)
   }
   getPendingWidgets() {
     return c
@@ -104,8 +104,8 @@ class S extends Chunk311907.Ay.Store {
     for (let [e, r] of t) n.has(e) || i.push(r);
     let a = false;
     for (let t = 0; t < e.length; t++) {
-      var s, o;
-      if ((null == (s = e[t]) ? true : s.id) !== (null == (o = u[t]) ? true : o.id)) {
+      var o, s;
+      if ((null == (o = e[t]) ? true : o.id) !== (null == (s = u[t]) ? true : s.id)) {
         a = true;
         break
       }

@@ -4,11 +4,11 @@
 require.d(exports, {
   Eq: () => l,
   Ew: () => _,
-  MJ: () => s,
+  MJ: () => o,
   O9: () => E,
   PZ: () => i,
   Sb: () => g,
-  Ss: () => o,
+  Ss: () => s,
   V5: () => a,
   W: () => v,
   Yu: () => f,
@@ -25,8 +25,8 @@ require.d(exports, {
 let r = "ROLE_SUBSCRIPTIONS",
   i = "APPLICATION_SUBSCRIPTION_SUBSECTION",
   a = "VOICE_SUBSECTION",
-  s = "SOUNDBOARD_SUBSECTION",
-  o = "VIDEO_SUBSECTION";
+  o = "SOUNDBOARD_SUBSECTION",
+  s = "VIDEO_SUBSECTION";
 var l = function(e) {
     return e.USER_PROFILE = "user_profile", e.GUILD = "guild", e.TRY_IT_OUT = "try_it_out", e
   }({}),

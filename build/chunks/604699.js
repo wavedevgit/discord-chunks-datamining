@@ -31,7 +31,7 @@ module.exports = function(e) {
       className: "literal",
       begin: /\bon|off|true|false|yes|no\b/
     },
-    s = {
+    o = {
       className: "string",
       contains: [e.BACKSLASH_ESCAPE],
       variants: [{
@@ -50,10 +50,10 @@ module.exports = function(e) {
         end: "'"
       }]
     },
-    o = {
+    s = {
       begin: /\[/,
       end: /\]/,
-      contains: [r, a, i, s, n, "self"],
+      contains: [r, a, i, o, n, "self"],
       relevance: 0
     },
     l = /[A-Za-z0-9_-]+/,
@@ -74,7 +74,7 @@ module.exports = function(e) {
       className: "attr",
       starts: {
         end: /$/,
-        contains: [r, o, a, i, s, n]
+        contains: [r, s, a, i, o, n]
       }
     }]
   }

@@ -5,14 +5,14 @@ require.d(exports, {
   LS: () => f,
   LW: () => d,
   Om: () => c,
-  Uk: () => s,
+  Uk: () => o,
   bM: () => u
 });
 var Chunk499867 = require("./499867.js"),
   Chunk265690 = require("./265690.js"),
   Chunk121894 = require("./121894.js");
-let s = false,
-  o = Object.freeze({
+let o = false,
+  s = Object.freeze({
     inspectedExpressionPosition: {
       rowIndex: 0,
       columnIndex: 0
@@ -23,7 +23,7 @@ let s = false,
   });
 
 function l() {
-  let e = (0, i.h)()((0, r.eh)(e => o)),
+  let e = (0, i.h)()((0, r.eh)(e => s)),
     t = () => e.getState(),
     n = (t, n, r) => {
       (0, a.r)(() => e.setState({
@@ -34,7 +34,7 @@ function l() {
         }
       }))
     },
-    s = t => {
+    o = t => {
       (0, a.r)(() => e.setState({
         activeCategoryIndex: t
       }))
@@ -50,7 +50,7 @@ function l() {
       }))
     },
     u = () => {
-      (0, a.r)(() => e.setState(o))
+      (0, a.r)(() => e.setState(s))
     },
     d = (t, n) => e.subscribe(t, n);
   return {
@@ -58,7 +58,7 @@ function l() {
     getState: t,
     subscribe: d,
     setInspectedExpressionPosition: n,
-    setActiveCategoryIndex: s,
+    setActiveCategoryIndex: o,
     setSearchPlaceholder: l,
     resetStoreState: u,
     setBottomPosition: c

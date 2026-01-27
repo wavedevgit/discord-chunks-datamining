@@ -36,7 +36,7 @@ let N = 60;
 function w() {
   return {
     id: r.LW.DEFAULT,
-    iconSource: s,
+    iconSource: o,
     name: i.intl.string(i.t.ANxkLy),
     isPremium: false
   }
@@ -100,7 +100,7 @@ function R() {
     name: i.intl.string(i.t["ta/5RB"])
   }, {
     id: r.Ic.BEANIE,
-    iconSource: o,
+    iconSource: s,
     isPremium: true,
     name: i.intl.string(i.t.IoLViw)
   }, {

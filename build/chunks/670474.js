@@ -24,8 +24,8 @@ class l extends Chunk324281.G {
   }
   internalBinaryRead(e, t, n, i) {
     let a = null != i ? i : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
@@ -44,10 +44,10 @@ class l extends Chunk324281.G {
           a.button = d.internalBinaryRead(e, e.uint32(), n, a.button);
           break;
         default:
-          let s = n.readUnknownField;
-          if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
-          let o = e.skip(i);
-          false !== s && (true === s ? r.f$.onRead : s)(this.typeName, a, t, i, o)
+          let o = n.readUnknownField;
+          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let s = e.skip(i);
+          false !== o && (true === o ? r.f$.onRead : o)(this.typeName, a, t, i, s)
       }
     }
     return a
@@ -100,8 +100,8 @@ class u extends Chunk324281.G {
   }
   internalBinaryRead(e, t, n, i) {
     let a = null != i ? i : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
@@ -111,10 +111,10 @@ class u extends Chunk324281.G {
           a.buttonAction = e.int32();
           break;
         default:
-          let s = n.readUnknownField;
-          if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
-          let o = e.skip(i);
-          false !== s && (true === s ? r.f$.onRead : s)(this.typeName, a, t, i, o)
+          let o = n.readUnknownField;
+          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let s = e.skip(i);
+          false !== o && (true === o ? r.f$.onRead : o)(this.typeName, a, t, i, s)
       }
     }
     return a
@@ -134,7 +134,7 @@ class u extends Chunk324281.G {
       no: 2,
       name: "button_action",
       kind: "enum",
-      T: () => ["discord_protos.premium_marketing.v1.ButtonAction", o.dz, "BUTTON_ACTION_"]
+      T: () => ["discord_protos.premium_marketing.v1.ButtonAction", s.dz, "BUTTON_ACTION_"]
     }])
   }
 }

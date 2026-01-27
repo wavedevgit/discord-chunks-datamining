@@ -26,7 +26,7 @@ function p(e) {
     command: n,
     section: r,
     location: a,
-    initialValues: o,
+    initialValues: s,
     triggerSection: l,
     queryLength: c,
     sectionName: u,
@@ -35,12 +35,12 @@ function p(e) {
     source: _,
     commandOrigin: h
   } = e;
-  null != n && i()(n.inputType !== d.y$.PLACEHOLDER, "command should not be placeholder"), s.h.dispatch({
+  null != n && i()(n.inputType !== d.y$.PLACEHOLDER, "command should not be placeholder"), o.h.dispatch({
     type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND",
     channelId: t,
     command: n,
     section: r,
-    initialValues: o,
+    initialValues: s,
     location: a,
     triggerSection: l,
     queryLength: c,
@@ -53,7 +53,7 @@ function p(e) {
 }
 
 function _(e, t) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "APPLICATION_COMMAND_SET_PREFERRED_COMMAND",
     channelId: e,
     commandId: t
@@ -61,7 +61,7 @@ function _(e, t) {
 }
 
 function h(e, t) {
-  s.h.dispatch({
+  o.h.dispatch({
     type: "APPLICATION_COMMAND_UPDATE_OPTIONS",
     channelId: e,
     changedOptionStates: t
@@ -94,7 +94,7 @@ function E(e, t, n) {
     query: d,
     name: p
   } = t.autocomplete, _ = c.default.fromTimestamp(Date.now());
-  null == t.channel || (s.h.dispatch({
+  null == t.channel || (o.h.dispatch({
     type: "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST",
     nonce: _,
     channelId: t.channel.id,
@@ -103,7 +103,7 @@ function E(e, t, n) {
   }), null == u.A.getAutocompleteChoices(t.channel.id, p, d) && a.Bo.post({
     url: f.Rsh.INTERACTIONS,
     body: {
-      type: o.G4.APPLICATION_COMMAND_AUTOCOMPLETE,
+      type: s.G4.APPLICATION_COMMAND_AUTOCOMPLETE,
       application_id: e.applicationId,
       guild_id: null == (r = t.guild) ? true : r.id,
       channel_id: t.channel.id,
@@ -114,7 +114,7 @@ function E(e, t, n) {
     timeout: 3e3,
     rejectWithError: true
   }).catch(() => {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "INTERACTION_FAILURE",
       nonce: _
     })

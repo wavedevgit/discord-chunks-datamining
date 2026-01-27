@@ -74,12 +74,12 @@ function S(e) {
     speaker: n,
     role: r,
     user: a,
-    userNick: s,
-    connectedOn: o,
+    userNick: o,
+    connectedOn: s,
     voiceState: l,
     type: c
   } = e, u = n ? "\0" : "\x01", d = "STREAM" === c ? "\0" : "\x01", f = l.selfMute ? "\x01" : "\0", p = l.selfVideo ? "\0" : "\x01", _ = "".concat(null != (t = null == r ? true : r.position) ? t : 999).padStart(3, "0");
-  return "".concat(u).concat(d).concat(f).concat(p).concat(_).concat(o).concat((0, i.A)(s, a))
+  return "".concat(u).concat(d).concat(f).concat(p).concat(_).concat(s).concat((0, i.A)(o, a))
 }
 
 function T(e) {
@@ -101,14 +101,14 @@ function N(e) {
     rtsState: r,
     blocked: i,
     ignored: a,
-    isFriend: s
-  } = e, o = [];
-  return C(r) && o.push("ALL_REQUESTED_TO_SPEAK"), r === g.zF.REQUESTED_TO_SPEAK && o.push("REQUESTED_TO_SPEAK_ONLY"), t ? o.push("SPEAKER") : (null != n ? o.push(n.id) : o.push("NO_ROLE"), o.push("AUDIENCE")), i ? o.push("BLOCKED") : a && o.push("IGNORED"), s && o.push("FRIEND"), o
+    isFriend: o
+  } = e, s = [];
+  return C(r) && s.push("ALL_REQUESTED_TO_SPEAK"), r === g.zF.REQUESTED_TO_SPEAK && s.push("REQUESTED_TO_SPEAK_ONLY"), t ? s.push("SPEAKER") : (null != n ? s.push(n.id) : s.push("NO_ROLE"), s.push("AUDIENCE")), i ? s.push("BLOCKED") : a && s.push("IGNORED"), o && s.push("FRIEND"), s
 }
 class w {
   _getParticipantsForUser(e, t) {
     var n, r, i;
-    let o, y = [],
+    let s, y = [],
       O = f.A.getVoiceStateForChannel(this.channelId, e);
     if (null == O) return y;
     let A = d.default.getUser(e);
@@ -136,14 +136,14 @@ class w {
         rtsState: (0, g.eY)(O)
       });
     y.push(N);
-    let w = null != (i = s.A.getStreamForUser(e, this.guildId)) ? i : s.A.getActiveStreamForUser(e, this.guildId);
+    let w = null != (i = o.A.getStreamForUser(e, this.guildId)) ? i : o.A.getActiveStreamForUser(e, this.guildId);
     if (null != w && w.channelId === this.channelId) {
       let e = (0, a._z)(w);
-      o = v(b({}, C), {
+      s = v(b({}, C), {
         id: e,
         type: "STREAM",
         rtsState: g.zF.NONE
-      }), y.push(o)
+      }), y.push(s)
     }
     return y
   }
@@ -157,7 +157,7 @@ class w {
     }), this.participants[e] = n, true)
   }
   rebuild() {
-    let e = o.A.getChannel(this.channelId);
+    let e = s.A.getChannel(this.channelId);
     if (null == e || !e.isGuildStageVoice()) returnfalse;
     let t = new Set(Object.keys(f.A.getVoiceStatesForChannel(e.id)));
     return this._participantsIndex.clear(), this._requestToSpeakIndex.clear(), this.participants = {}, t.forEach(e => this.updateParticipant(e)), true
@@ -183,6 +183,6 @@ class w {
   }
   constructor(e) {
     var t;
-    y(this, "channelId", true), y(this, "guildId", true), y(this, "participants", {}), y(this, "_participantsIndex", new r.J(N, S)), y(this, "_requestToSpeakIndex", new r.J(() => [], T)), this.channelId = e, this.guildId = null == (t = o.A.getChannel(e)) ? true : t.getGuildId()
+    y(this, "channelId", true), y(this, "guildId", true), y(this, "participants", {}), y(this, "_participantsIndex", new r.J(N, S)), y(this, "_requestToSpeakIndex", new r.J(() => [], T)), this.channelId = e, this.guildId = null == (t = s.A.getChannel(e)) ? true : t.getGuildId()
   }
 }

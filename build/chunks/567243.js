@@ -7,8 +7,8 @@ function i() {
   this.protocol = null, this.slashes = null, this.auth = null, this.host = null, this.port = null, this.hostname = null, this.hash = null, this.search = null, this.query = null, this.pathname = null, this.path = null, this.href = null
 }
 var a = /^([a-z0-9.+-]+:)/i,
-  s = /:[0-9]*$/,
-  o = /^(\/\/?(?!\/)[^?\s]*)(\?[^\s]*)?$/,
+  o = /:[0-9]*$/,
+  s = /^(\/\/?(?!\/)[^?\s]*)(\?[^\s]*)?$/,
   l = ["'"].concat(["{", "}", "|", "\\", "^", "`"].concat(["<", ">", '"', "`", " ", "\r", "\n", "	"])),
   c = ["%", "/", "?", ";", "#"].concat(l),
   u = ["/", "?", "#"],
@@ -57,13 +57,13 @@ function O(e, t) {
 i.prototype.parse = function(e, t, n) {
   if ("string" != typeof e) throw TypeError("Parameter 'url' must be a string, not " + typeof e);
   var i = e.indexOf("?"),
-    s = false !== i && i < e.indexOf("#") ? "?" : "#",
-    E = e.split(s),
+    o = false !== i && i < e.indexOf("#") ? "?" : "#",
+    E = e.split(o),
     y = /\\/g;
   E[0] = E[0].replace(y, "/");
-  var b = e = E.join(s);
+  var b = e = E.join(o);
   if (b = b.trim(), !n && 1 === e.split("#").length) {
-    var O = o.exec(b);
+    var O = s.exec(b);
     if (O) return this.path = b, this.href = b, this.pathname = O[1], O[2] ? (this.search = O[2], t ? this.query = g.parse(this.search.substr(1)) : this.query = this.search.substr(1)) : t && (this.search = "", this.query = {}), this
   }
   var v = a.exec(b);
@@ -89,22 +89,22 @@ i.prototype.parse = function(e, t, n) {
     var R = "[" === this.hostname[0] && "]" === this.hostname[this.hostname.length - 1];
     if (!R)
       for (var P = this.hostname.split(/\./), N = 0, D = P.length; N < D; N++) {
-        var x = P[N];
-        if (x && !x.match(f)) {
-          for (var L = "", j = 0, M = x.length; j < M; j++) x.charCodeAt(j) > 127 ? L += "x" : L += x[j];
-          if (!L.match(f)) {
+        var L = P[N];
+        if (L && !L.match(f)) {
+          for (var x = "", M = 0, j = L.length; M < j; M++) L.charCodeAt(M) > 127 ? x += "x" : x += L[M];
+          if (!x.match(f)) {
             var k = P.slice(0, N),
               U = P.slice(N + 1),
-              G = x.match(p);
+              G = L.match(p);
             G && (k.push(G[1]), U.unshift(G[2])), U.length && (b = "/" + U.join(".") + b), this.hostname = k.join(".");
             break
           }
         }
       }
     this.hostname.length > d ? this.hostname = "" : this.hostname = this.hostname.toLowerCase(), R || (this.hostname = r.toASCII(this.hostname));
-    var V = this.port ? ":" + this.port : "",
-      F = this.hostname || "";
-    this.host = F + V, this.href += this.host, R && (this.hostname = this.hostname.substr(1, this.hostname.length - 2), "/" !== b[0] && (b = "/" + b))
+    var F = this.port ? ":" + this.port : "",
+      V = this.hostname || "";
+    this.host = V + F, this.href += this.host, R && (this.hostname = this.hostname.substr(1, this.hostname.length - 2), "/" !== b[0] && (b = "/" + b))
   }
   if (!_[A])
     for (var N = 0, D = l.length; N < D; N++) {
@@ -118,9 +118,9 @@ i.prototype.parse = function(e, t, n) {
   false !== Y && (this.hash = b.substr(Y), b = b.slice(0, Y));
   var W = b.indexOf("?");
   if (false !== W ? (this.search = b.substr(W), this.query = b.substr(W + 1), t && (this.query = g.parse(this.query)), b = b.slice(0, W)) : t && (this.search = "", this.query = {}), b && (this.pathname = b), m[A] && this.hostname && !this.pathname && (this.pathname = "/"), this.pathname || this.search) {
-    var V = this.pathname || "",
+    var F = this.pathname || "",
       K = this.search || "";
-    this.path = V + K
+    this.path = F + K
   }
   return this.href = this.format(), this
 }, i.prototype.format = function() {
@@ -135,10 +135,10 @@ i.prototype.parse = function(e, t, n) {
     arrayFormat: "repeat",
     addQueryPrefix: false
   }));
-  var s = this.search || a && "?" + a || "";
-  return t && ":" !== t.substr(false) && (t += ":"), this.slashes || (!t || m[t]) && false !== i ? (i = "//" + (i || ""), n && "/" !== n.charAt(0) && (n = "/" + n)) : i || (i = ""), r && "#" !== r.charAt(0) && (r = "#" + r), s && "?" !== s.charAt(0) && (s = "?" + s), t + i + (n = n.replace(/[?#]/g, function(e) {
+  var o = this.search || a && "?" + a || "";
+  return t && ":" !== t.substr(false) && (t += ":"), this.slashes || (!t || m[t]) && false !== i ? (i = "//" + (i || ""), n && "/" !== n.charAt(0) && (n = "/" + n)) : i || (i = ""), r && "#" !== r.charAt(0) && (r = "#" + r), o && "?" !== o.charAt(0) && (o = "?" + o), t + i + (n = n.replace(/[?#]/g, function(e) {
     return encodeURIComponent(e)
-  })) + (s = s.replace("#", "%23")) + r
+  })) + (o = o.replace("#", "%23")) + r
 }, i.prototype.resolve = function(e) {
   return this.resolveObject(E(e, false, true)).format()
 }, i.prototype.resolveObject = function(e) {
@@ -147,13 +147,13 @@ i.prototype.parse = function(e, t, n) {
     t.parse(e, false, true), e = t
   }
   for (var n = new i, r = Object.keys(this), a = 0; a < r.length; a++) {
-    var s = r[a];
-    n[s] = this[s]
+    var o = r[a];
+    n[o] = this[o]
   }
   if (n.hash = e.hash, "" === e.href) return n.href = n.format(), n;
   if (e.slashes && !e.protocol) {
-    for (var o = Object.keys(e), l = 0; l < o.length; l++) {
-      var c = o[l];
+    for (var s = Object.keys(e), l = 0; l < s.length; l++) {
+      var c = s[l];
       "protocol" !== c && (n[c] = e[c])
     }
     return m[n.protocol] && n.hostname && !n.pathname && (n.pathname = "/", n.path = n.pathname), n.href = n.format(), n
@@ -209,6 +209,6 @@ i.prototype.parse = function(e, t, n) {
   return (b = b || n.host && v.length) && !w && v.unshift(""), v.length > 0 ? n.pathname = v.join("/") : (n.pathname = null, n.path = null), (null !== n.pathname || null !== n.search) && (n.path = (n.pathname ? n.pathname : "") + (n.search ? n.search : "")), n.auth = e.auth || n.auth, n.slashes = n.slashes || e.slashes, n.href = n.format(), n
 }, i.prototype.parseHost = function() {
   var e = this.host,
-    t = s.exec(e);
+    t = o.exec(e);
   t && (":" !== (t = t[0]) && (this.port = t.substr(1)), e = e.substr(0, e.length - t.length)), e && (this.hostname = e)
 }, exports.parse = E, exports.resolve = b, exports.resolveObject = O, exports.format = y, exports.Url = i

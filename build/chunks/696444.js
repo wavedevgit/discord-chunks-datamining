@@ -20,16 +20,16 @@ class a {
       prices: t,
       type: n,
       premium_type: i,
-      name: s,
-      sku_id: o,
+      name: o,
+      sku_id: s,
       summary: l
     } = e;
     return new a({
       prices: (0, r.m)(t),
       type: n,
       premiumType: i,
-      name: s,
-      skuId: o,
+      name: o,
+      skuId: s,
       summary: l
     })
   }

@@ -10,8 +10,8 @@ var Chunk31202 = require("./31202.js"),
   u = 1,
   d = 2;
 module.exports = function(e, t) {
-  return s(e) && o(t) ? l(c(e), t) : function(n) {
-    var s = i(n, e);
-    return true === s && s === t ? a(n, e) : r(t, s, u | d)
+  return o(e) && s(t) ? l(c(e), t) : function(n) {
+    var o = i(n, e);
+    return true === o && o === t ? a(n, e) : r(t, o, u | d)
   }
 }

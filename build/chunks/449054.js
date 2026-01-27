@@ -70,14 +70,14 @@ async function m(e, t) {
       loadId: f,
       shouldNavigate: _ = true
     } = n,
-    m = (0, s.JK)(),
+    m = (0, o.JK)(),
     g = c.A.getGuild(e),
     E = {
       state: {
         analyticsSource: t
       }
     };
-  null != g && null != g.joinedAt ? _ && (null == a ? (0, o.u)(e, E) : (0, i.A)(d.BVt.CHANNEL(e, a, n.messageId), h(p({}, E), {
+  null != g && null != g.joinedAt ? _ && (null == a ? (0, s.u)(e, E) : (0, i.A)(d.BVt.CHANNEL(e, a, n.messageId), h(p({}, E), {
     navigationReplace: true,
     openChannel: true
   }))) : (await r.A.joinGuild(e, {
@@ -183,18 +183,18 @@ function I(e) {
     query: r,
     guildResults: i,
     analyticsContext: a,
-    categoryId: s,
-    isTagSearch: o
+    categoryId: o,
+    isTagSearch: s
   } = e;
   u.default.track(d.HAw.SEARCH_RESULT_VIEWED, {
-    search_type: o ? d.I4_.GUILD_DISCOVERY_TAG : d.I4_.GUILD_DISCOVERY,
+    search_type: s ? d.I4_.GUILD_DISCOVERY_TAG : d.I4_.GUILD_DISCOVERY,
     load_id: t,
     search_id: n,
     total_results: true !== i ? i.length : null,
     guild_ids: true !== i ? i.map(e => e.id) : null,
     query: r,
     location: a.location,
-    category_id: s
+    category_id: o
   })
 }
 

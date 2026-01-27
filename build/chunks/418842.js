@@ -2,13 +2,13 @@
 /** chunk id: 418842, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => o
+  C: () => s
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk873298 = require("./873298.js"),
   Chunk253932 = require("./253932.js");
 
-function s() {
+function o() {
   let [e, t] = r.useState("cozy");
   return r.useEffect(() => {
     let e = window.matchMedia("(min-width: 1024px) and (min-height: 820px)"),
@@ -21,9 +21,9 @@ function s() {
   }, []), e
 }
 
-function o() {
+function s() {
   let e = a.Xi.useSetting(),
-    t = s();
+    t = o();
   switch (e) {
     case i.NS.RESPONSIVE:
       return t;

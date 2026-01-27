@@ -51,7 +51,7 @@ function m(e) {
 
 function g(e, t) {
   let n = m(t);
-  o.default.track(d.HAw.APP_NATIVE_CRASH, n)
+  s.default.track(d.HAw.APP_NATIVE_CRASH, n)
 }
 async function E() {
   var e;
@@ -63,8 +63,8 @@ async function E() {
       didCrashReporterSeeCrash: r,
       didCrashOrUncleanExit: a
     } = y(i.w.get(h, {}), n),
-    s = O(r, a, n);
-  o.default.track(d.HAw.APP_NATIVE_CRASH, s), i.w.set(h, {
+    o = O(r, a, n);
+  s.default.track(d.HAw.APP_NATIVE_CRASH, o), i.w.set(h, {
     lastId: null == n ? true : n.id
   }), a && setTimeout(async () => await b(), 1e4)
 }
@@ -81,7 +81,7 @@ function y(e, t) {
 }
 async function b() {
   var e, t;
-  if (null != (e = null == (t = s.default.getCurrentUser()) ? true : t.isStaff()) && e) try {
+  if (null != (e = null == (t = o.default.getCurrentUser()) ? true : t.isStaff()) && e) try {
     await a.A.getMediaEngine().writeAudioDebugState(), await (0, u.a)(d.Umv.RTC), console.log("Successfully uploaded debug files")
   } catch (e) {
     console.log("Failed to upload debug files")
@@ -89,7 +89,7 @@ async function b() {
 }
 
 function O(e, t, n) {
-  var i, a, s, o, l, c, u, d, f, _, h, m, g, E, y, b, O, v, A;
+  var i, a, o, s, l, c, u, d, f, _, h, m, g, E, y, b, O, v, A;
 
   function I(e) {
     return (null == n ? true : n.storedInformation) != null && 1 === n.storedInformation[e]
@@ -113,8 +113,8 @@ function O(e, t, n) {
     video_media_session_id: S(r.du.VideoMediaSessionId),
     stream_media_session_id: S(r.du.StreamMediaSessionId),
     intentional_crash_reason: S(r.du.IntentionalCrashReason),
-    last_memory_usage_kb: null != (s = null == n || null == (E = n.lastMemoryInformation) ? true : E.memoryUsageKB) ? s : null,
-    last_used_js_heap_size_kb: null != (o = null == n || null == (y = n.lastMemoryInformation) ? true : y.usedJSHeapSizeKB) ? o : null,
+    last_memory_usage_kb: null != (o = null == n || null == (E = n.lastMemoryInformation) ? true : E.memoryUsageKB) ? o : null,
+    last_used_js_heap_size_kb: null != (s = null == n || null == (y = n.lastMemoryInformation) ? true : y.usedJSHeapSizeKB) ? s : null,
     last_memory_usage_uptime: null != (l = null == n || null == (b = n.lastMemoryInformation) ? true : b.uptimeSeconds) ? l : null,
     highest_memory_usage_kb: null != (c = null == n || null == (O = n.highestMemoryInformation) ? true : O.memoryUsageKB) ? c : null,
     highest_used_js_heap_size_kb: null != (u = null == n || null == (v = n.highestMemoryInformation) ? true : v.usedJSHeapSizeKB) ? u : null,

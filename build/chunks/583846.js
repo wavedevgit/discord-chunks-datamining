@@ -4,7 +4,7 @@
 require.d(exports, {
   As: () => m,
   BZ: () => P,
-  CZ: () => x,
+  CZ: () => L,
   Hd: () => O,
   I5: () => b,
   JM: () => E,
@@ -57,10 +57,10 @@ let d = (e, t) => {
     function a(e) {
       return String(e).padStart(2, "0")
     }
-    let s = i,
-      o = i > 0 ? a(r) : r,
+    let o = i,
+      s = i > 0 ? a(r) : r,
       l = a(n);
-    return i > 0 ? "".concat(s, ":").concat(o, ":").concat(l) : "".concat(o, ":").concat(l)
+    return i > 0 ? "".concat(o, ":").concat(s, ":").concat(l) : "".concat(s, ":").concat(l)
   },
   _ = {
     secondsAgo: e => u.intl.formatToPlainString(u.t.EOrEJl, {
@@ -85,25 +85,25 @@ let d = (e, t) => {
   h = function(e, t, n) {
     let {
       formatSet: r = _
-    } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, i = a()(n), s = a()(c.default.extractTimestamp(e.id)), o = i.diff(s, "s"), u = Math.abs(o);
-    if (u < l.A.Seconds.MINUTE) return r.secondsAgo(o);
+    } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, i = a()(n), o = a()(c.default.extractTimestamp(e.id)), s = i.diff(o, "s"), u = Math.abs(s);
+    if (u < l.A.Seconds.MINUTE) return r.secondsAgo(s);
     if (u < l.A.Seconds.HOUR) {
-      let e = Math.round(o / l.A.Seconds.MINUTE);
+      let e = Math.round(s / l.A.Seconds.MINUTE);
       return r.minutesAgo(e)
     }
     if (u < 12 * l.A.Seconds.HOUR) {
-      let e = Math.round(o / l.A.Seconds.HOUR);
+      let e = Math.round(s / l.A.Seconds.HOUR);
       return r.hoursAgo(e)
     }
     if (u < 9 * l.A.Seconds.DAY) {
-      let e = Math.round(o / l.A.Seconds.DAY);
+      let e = Math.round(s / l.A.Seconds.DAY);
       return r.daysAgo(e)
     }
     if (u < 4 * l.A.Seconds.WEEK) {
-      let e = Math.round(o / (7 * l.A.Seconds.DAY));
+      let e = Math.round(s / (7 * l.A.Seconds.DAY));
       return r.weeksAgo(e)
     }
-    let d = Math.round(o / l.A.Seconds.DAYS_30);
+    let d = Math.round(s / l.A.Seconds.DAYS_30);
     return r.monthsAgo(d)
   },
   m = function(e, t) {
@@ -118,12 +118,12 @@ function g(e, t) {
 
 function E(e) {
   var t, n;
-  return null != (t = null == (n = g(e, s.K.IS_LIVE)) ? true : n.is_live) && t
+  return null != (t = null == (n = g(e, o.K.IS_LIVE)) ? true : n.is_live) && t
 }
 
 function y(e) {
   var t, n;
-  return null != (t = null == (n = g(e, s.K.FIRST_TIME)) ? true : n.first_time) && t
+  return null != (t = null == (n = g(e, o.K.FIRST_TIME)) ? true : n.first_time) && t
 }
 
 function b(e) {
@@ -136,21 +136,21 @@ function O(e) {
 
 function v(e) {
   var t;
-  return null == (t = g(e, s.K.DURATION_SECONDS)) ? true : t.duration_seconds
+  return null == (t = g(e, o.K.DURATION_SECONDS)) ? true : t.duration_seconds
 }
 
 function A(e) {
   var t;
-  return null == (t = g(e, s.K.AGGREGATE_RANGE)) ? true : t.range
+  return null == (t = g(e, o.K.AGGREGATE_RANGE)) ? true : t.range
 }
 
 function I(e) {
   var t;
-  return null == (t = g(e, s.K.MARATHON)) ? true : t.marathon
+  return null == (t = g(e, o.K.MARATHON)) ? true : t.marathon
 }
 
 function S(e) {
-  let t = g(e, s.K.RESURRECTED);
+  let t = g(e, o.K.RESURRECTED);
   return (null == t ? true : t.resurrected_last_played) != null ? new Date(t.resurrected_last_played) : true
 }
 
@@ -181,23 +181,23 @@ function C(e) {
 
 function N(e, t) {
   var n, r, i, a;
-  let s, o = null != (n = null == t || null == (i = t.size) ? true : i[0]) ? n : true,
+  let o, s = null != (n = null == t || null == (i = t.size) ? true : i[0]) ? n : true,
     l = null != (r = null == t || null == (a = t.size) ? true : a[1]) ? r : true;
-  return null != o && null != l && o > 0 && l > 0 ? s = u.intl.formatToPlainString(u.t.wmUSiy, {
-    count: o,
+  return null != s && null != l && s > 0 && l > 0 ? o = u.intl.formatToPlainString(u.t.wmUSiy, {
+    count: s,
     max: l
-  }) : null != o && o > 0 && (s = u.intl.formatToPlainString(u.t.UTYMsa, {
-    count: o
-  })), null != s && null != e ? "".concat(e, " (").concat(s, ")") : null != e ? e : s
+  }) : null != s && s > 0 && (o = u.intl.formatToPlainString(u.t.UTYMsa, {
+    count: s
+  })), null != o && null != e ? "".concat(e, " (").concat(o, ")") : null != e ? e : o
 }
 
 function w(e) {
-  return e.content_type === o.ContentInventoryEntryType.TOP_GAME
+  return e.content_type === s.ContentInventoryEntryType.TOP_GAME
 }
 
 function R(e) {
   var t;
-  return null == (t = g(e, s.K.STREAK_DAYS)) ? true : t.streak_count_days
+  return null == (t = g(e, o.K.STREAK_DAYS)) ? true : t.streak_count_days
 }
 
 function P(e) {
@@ -227,7 +227,7 @@ function D(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   var t;
-  return null == (t = g(e, s.K.TRENDING_CONTENT)) ? true : t.trending
+  return null == (t = g(e, o.K.TRENDING_CONTENT)) ? true : t.trending
 }

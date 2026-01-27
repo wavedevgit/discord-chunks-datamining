@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk442433 = require("./442433.js"),
   Chunk927057 = require("./927057.jsx"),
   Chunk721768 = require("./721768.js");
@@ -66,7 +66,7 @@ function m(e) {
     O = i.useCallback(e => {
       var t;
       let i = null == g || null == (t = g.rootCommand) ? true : t.id;
-      null == i ? e.preventDefault() : (0, o.L3)(e, async () => {
+      null == i ? e.preventDefault() : (0, s.L3)(e, async () => {
         let {
           default: e
         } = await n.e("15687").then(n.bind(n, 646938));
@@ -89,7 +89,7 @@ function m(e) {
     a = E.displayName, f = E.displayDescription, _ = (null == e ? true : e.success) ? null : null == e ? true : e.error
   } else a = "".concat("/").concat(g.displayName), f = g.displayDescription, _ = null;
   return (0, r.jsxs)("div", {
-    className: s()(m, d.M0),
+    className: o()(m, d.M0),
     onContextMenu: O,
     children: [(0, r.jsxs)("div", {
       className: d.iz,

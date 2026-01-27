@@ -65,9 +65,9 @@ let p = async e => {
     } = await Promise.all([n.e("35929"), n.e("76443")]).then(n.bind(n, 849846));
     return t => (0, r.jsx)(e, u({}, t, c))
   }, {
-    modalKey: s.y,
+    modalKey: o.y,
     onCloseRequest: () => {
-      (0, o.p)()
+      (0, s.p)()
     }
   })
 }

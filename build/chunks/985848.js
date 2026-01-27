@@ -4,7 +4,7 @@
 var Chunk630017 = require("./630017.js"),
   i = Function.prototype,
   a = i.apply,
-  s = i.call;
-module.exports = "object" == typeof Reflect && Reflect.apply || (Chunk630017 ? s.bind(a) : function() {
-  return s.apply(a, arguments)
+  o = i.call;
+module.exports = "object" == typeof Reflect && Reflect.apply || (Chunk630017 ? o.bind(a) : function() {
+  return o.apply(a, arguments)
 })

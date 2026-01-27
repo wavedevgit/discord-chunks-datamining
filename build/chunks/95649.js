@@ -12,12 +12,12 @@ module.exports = function(e) {
     },
     i = /""|"[^"]+"/,
     a = /''|'[^']+'/,
-    s = /\[\]|\[[^\]]+\]/,
-    o = /[^\s!"#%&'()*+,.\/;<=>@\[\\\]^`{|}~]+/,
+    o = /\[\]|\[[^\]]+\]/,
+    s = /[^\s!"#%&'()*+,.\/;<=>@\[\\\]^`{|}~]+/,
     l = /(\.|\/)/,
-    c = t.either(i, a, s, o),
+    c = t.either(i, a, o, s),
     u = t.concat(t.optional(/\.|\.\/|\//), c, t.anyNumberOfTimes(t.concat(l, c))),
-    d = t.concat("(", s, "|", o, ")(?==)"),
+    d = t.concat("(", o, "|", s, ")(?==)"),
     f = {
       begin: u
     },

@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 544199, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 544199, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => a,
-  G: () => s
+  F: () => l,
+  G: () => a
 });
 var Chunk73153 = require("./73153.js"),
   Chunk881268 = require("./881268.js");
-async function a(e, t) {
+async function l(e, t) {
   r.h.dispatch({
     type: "CREATOR_MONETIZATION_PRICE_TIERS_FETCH",
     guildId: e,
@@ -30,7 +29,7 @@ async function a(e, t) {
   }
 }
 
-function s(e) {
+function a(e) {
   r.h.dispatch({
     type: "CREATOR_MONETIZATION_SET_HAS_SEEN_ONBOARDING_FOR_GUILD",
     guildId: e

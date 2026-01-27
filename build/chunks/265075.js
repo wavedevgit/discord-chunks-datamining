@@ -22,31 +22,31 @@ function u(e) {
       type: t,
       code: n
     } = e;
-    if (t === o.I.INVITE);
-    else if (t === o.I.TEMPLATE)(0, l.f)(async () => {
+    if (t === s.I.INVITE);
+    else if (t === s.I.TEMPLATE)(0, l.f)(async () => {
       null == a.A.getGuildTemplate(n) && await i.A.resolveGuildTemplate(n)
     });
-    else if (t === o.I.BUILD_OVERRIDE || t === o.I.MANUAL_BUILD_OVERRIDE);
-    else if (t === o.I.EVENT);
-    else if (t === o.I.CHANNEL_LINK);
-    else if (t === o.I.APP_DIRECTORY_PROFILE);
-    else if (t === o.I.ACTIVITY_BOOKMARK);
-    else if (t === o.I.EMBEDDED_ACTIVITY_INVITE);
-    else if (t === o.I.GUILD_PRODUCT);
-    else if (t === o.I.SERVER_SHOP);
-    else if (t === o.I.SOCIAL_LAYER_STOREFRONT);
-    else if (t === o.I.QUESTS_EMBED);
-    else if (t === o.I.APP_DIRECTORY_STOREFRONT);
-    else if (t === o.I.APP_DIRECTORY_STOREFRONT_SKU);
-    else if (t === o.I.APP_OAUTH2_LINK);
-    else if (t === o.I.COLLECTIBLES_SHOP);
-    else if (t === o.I.EXPERIMENT);
+    else if (t === s.I.BUILD_OVERRIDE || t === s.I.MANUAL_BUILD_OVERRIDE);
+    else if (t === s.I.EVENT);
+    else if (t === s.I.CHANNEL_LINK);
+    else if (t === s.I.APP_DIRECTORY_PROFILE);
+    else if (t === s.I.ACTIVITY_BOOKMARK);
+    else if (t === s.I.EMBEDDED_ACTIVITY_INVITE);
+    else if (t === s.I.GUILD_PRODUCT);
+    else if (t === s.I.SERVER_SHOP);
+    else if (t === s.I.SOCIAL_LAYER_STOREFRONT);
+    else if (t === s.I.QUESTS_EMBED);
+    else if (t === s.I.APP_DIRECTORY_STOREFRONT);
+    else if (t === s.I.APP_DIRECTORY_STOREFRONT_SKU);
+    else if (t === s.I.APP_OAUTH2_LINK);
+    else if (t === s.I.COLLECTIBLES_SHOP);
+    else if (t === s.I.EXPERIMENT);
     else throw Error("Unknown coded link type: ".concat(t))
   })
 }
 class d extends Chunk439372.A {
   constructor() {
-    super(), (0, s.A)(this, u)
+    super(), (0, o.A)(this, u)
   }
 }
 let f = new d

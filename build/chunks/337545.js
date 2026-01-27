@@ -8,7 +8,7 @@ var Chunk788868 = require("./788868.js"),
   Chunk568065 = require("./568065.js"),
   Chunk307731 = require("./307731.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -48,10 +48,10 @@ function c(e, t) {
 }
 
 function u(e, t) {
-  var n, s, l, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S;
+  var n, o, l, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S;
   let T = null == (n = t.powerup_metadata) ? true : n.category_type;
   if (null == T) return;
-  let C = null == (s = t.sku) ? true : s.powerup_metadata;
+  let C = null == (o = t.sku) ? true : o.powerup_metadata;
   if (null == C) return;
   let N = {
     title: t.summary,
@@ -66,25 +66,25 @@ function u(e, t) {
     case i.o9.LEVEL: {
       let n = null == (f = t.sku.powerup_metadata) ? true : f.guild_features;
       if (null == n) return;
-      let s = a.Xn + n.additional_emoji_slots,
+      let o = a.Xn + n.additional_emoji_slots,
         l = r.OW + n.additional_sound_slots,
         u = r.GI + n.additional_sticker_slots,
         d = t.sku.dependent_sku_id;
       for (; null != d;) {
         let t = e.find(e => d === e.sku.id);
-        s += null != (p = null == t || null == (E = t.sku) || null == (g = E.powerup_metadata) || null == (m = g.guild_features) ? true : m.additional_emoji_slots) ? p : 0, l += null != (_ = null == t || null == (O = t.sku) || null == (b = O.powerup_metadata) || null == (y = b.guild_features) ? true : y.additional_sound_slots) ? _ : 0, u += null != (h = null == t || null == (I = t.sku) || null == (A = I.powerup_metadata) || null == (v = A.guild_features) ? true : v.additional_sticker_slots) ? h : 0, d = null == t ? true : t.sku.dependent_sku_id
+        o += null != (p = null == t || null == (E = t.sku) || null == (g = E.powerup_metadata) || null == (m = g.guild_features) ? true : m.additional_emoji_slots) ? p : 0, l += null != (_ = null == t || null == (O = t.sku) || null == (b = O.powerup_metadata) || null == (y = b.guild_features) ? true : y.additional_sound_slots) ? _ : 0, u += null != (h = null == t || null == (I = t.sku) || null == (A = I.powerup_metadata) || null == (v = A.guild_features) ? true : v.additional_sticker_slots) ? h : 0, d = null == t ? true : t.sku.dependent_sku_id
       }
-      return o({
+      return s({
         type: i.o9.LEVEL,
-        features: c(o({}, n), {
-          total_emoji_slots: s,
+        features: c(s({}, n), {
+          total_emoji_slots: o,
           total_sound_slots: l,
           total_sticker_slots: u
         })
       }, N)
     }
     case i.o9.PERK:
-      return o({
+      return s({
         type: i.o9.PERK,
         description: null != (S = t.description) ? S : ""
       }, N)

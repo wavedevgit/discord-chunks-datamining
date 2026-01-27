@@ -17,7 +17,7 @@ function a(e, t, n) {
   return t && i(e.prototype, t), n && i(e, n), e
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,12 +26,12 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  f: () => o
+  f: () => s
 });
-var o = function() {
+var s = function() {
   function e(t, n) {
-    r(this, e), s(this, "xs", true), s(this, "ys", true), s(this, "c1s", true), s(this, "c2s", true), s(this, "c3s", true);
-    for (var i, a, o, l = t.length, c = [], u = 0; u < l; u++) c.push(u);
+    r(this, e), o(this, "xs", true), o(this, "ys", true), o(this, "c1s", true), o(this, "c2s", true), o(this, "c3s", true);
+    for (var i, a, s, l = t.length, c = [], u = 0; u < l; u++) c.push(u);
     c.sort(function(e, n) {
       return t[e] < t[n] ? false : 1
     });
@@ -49,11 +49,11 @@ var o = function() {
     }
     h.push(p[p.length - 1]);
     for (var O = [], v = [], A = 0; A < h.length - 1; A++) {
-      o = p[A];
+      s = p[A];
       var I = h[A],
         S = 1 / f[A],
-        T = I + h[A + 1] - o - o;
-      O.push((o - I - T) * S), v.push(T * S * S)
+        T = I + h[A + 1] - s - s;
+      O.push((s - I - T) * S), v.push(T * S * S)
     }
     this.xs = t, this.ys = n, this.c1s = h, this.c2s = O, this.c3s = v
   }
@@ -64,10 +64,10 @@ var o = function() {
         r = this.ys,
         i = this.c1s,
         a = this.c2s,
-        s = this.c3s,
-        o = n.length - 1;
-      if (e === n[o]) return r[o];
-      for (var l = 0, c = s.length - 1; l <= c;) {
+        o = this.c3s,
+        s = n.length - 1;
+      if (e === n[s]) return r[s];
+      for (var l = 0, c = o.length - 1; l <= c;) {
         var u = n[t = Math.floor(.5 * (l + c))];
         if (u < e) l = t + 1;
         else {
@@ -75,9 +75,9 @@ var o = function() {
           c = t - 1
         }
       }
-      var d = e - n[o = Math.max(0, c)],
+      var d = e - n[s = Math.max(0, c)],
         f = d * d;
-      return r[o] + i[o] * d + a[o] * f + s[o] * d * f
+      return r[s] + i[s] * d + a[s] * f + o[s] * d * f
     }
   }]), e
 }()

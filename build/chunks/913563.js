@@ -2,7 +2,7 @@
 /** chunk id: 913563, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk559949 = require("./559949.js"),
   Chunk927961 = require("./927961.js");
@@ -17,7 +17,7 @@ let a = {
   [Chunk559949.x.ZILLA_SLAB]: Chunk927961.default.KMR8rT
 };
 
-function s(e) {
+function o(e) {
   var t;
   return null != (t = a[e]) ? t : i.default.ZEL6mz
 }

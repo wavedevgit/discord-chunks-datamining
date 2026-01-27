@@ -131,7 +131,7 @@ let m = {
       } : {};
       return {
         type: "dynamic",
-        component: s.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
+        component: o.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
         aspectRatio: "6/4",
         props: p({
           src: N,
@@ -154,7 +154,7 @@ let m = {
       estimatedTooltipHeight: I
     };
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: "Hover or focus these buttons."
@@ -170,7 +170,7 @@ let m = {
         children: [(0, r.jsx)(l.L, h(p({
           targetElementRef: S
         }, P), {
-          children: (0, r.jsx)(o.Button, {
+          children: (0, r.jsx)(s.Button, {
             buttonRef: S,
             variant: "primary",
             text: "Left"
@@ -178,7 +178,7 @@ let m = {
         })), (0, r.jsx)(l.L, h(p({
           targetElementRef: T
         }, P), {
-          children: (0, r.jsx)(o.Button, {
+          children: (0, r.jsx)(s.Button, {
             buttonRef: T,
             variant: "primary",
             text: "Right"

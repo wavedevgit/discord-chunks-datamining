@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
   Chunk990078 = require("./990078.jsx"),
@@ -110,17 +110,17 @@ function S(e) {
     maxUsers: n,
     guildId: i,
     channelId: a,
-    size: o = u._3J.SIZE_24,
+    size: s = u._3J.SIZE_24,
     shouldShowOverflowCount: d,
     disableUsernameTooltip: f
-  } = e, h = A(o), g = d ? n - 1 : Math.min(t.length, n), E = g - 1, y = l()(t).take(g).map((e, t) => {
+  } = e, h = A(s), g = d ? n - 1 : Math.min(t.length, n), E = g - 1, y = l()(t).take(g).map((e, t) => {
     let n = p.Ay.getNickname(i, a, e),
       l = null != n ? n : _.Ay.getName(e),
       g = t === E && !d,
-      y = s()(m.my, h, g && m.NE),
+      y = o()(m.my, h, g && m.NE),
       b = (0, r.jsx)(u.euF, {
         src: e.getAvatarURL(i, 24),
-        size: o,
+        size: s,
         "aria-hidden": true
       });
     return (0, r.jsx)("li", {
@@ -152,12 +152,12 @@ function T(e) {
     textVariant: n,
     color: i = "interactive-text-default",
     size: a = u._3J.SIZE_24,
-    className: o
+    className: s
   } = e, l = A(a), c = null != n ? n : I(a);
   return (0, r.jsxs)(u.Text, {
     variant: c,
     color: i,
-    className: s()(m.ju, l, o),
+    className: o()(m.ju, l, s),
     children: [(0, r.jsx)(u.AC4, {
       children: h.intl.formatToPlainString(h.t.RGr9tj, {
         count: t
@@ -175,8 +175,8 @@ function C(e) {
     maxUsers: n,
     guildId: i,
     channelId: a,
-    size: s = u._3J.SIZE_24,
-    overflowCountClassName: o,
+    size: o = u._3J.SIZE_24,
+    overflowCountClassName: s,
     overflowCountColor: l = "interactive-text-default",
     hideOverflowCount: c = false
   } = e, d = t.length - n, f = d + 1, p = d > 0 && !c;
@@ -186,14 +186,14 @@ function C(e) {
       maxUsers: n,
       guildId: i,
       channelId: a,
-      size: s,
+      size: o,
       shouldShowOverflowCount: p,
       disableUsernameTooltip: true
     }), p && (0, r.jsx)(T, {
       count: f,
       color: l,
-      size: s,
-      className: o
+      size: o,
+      className: s
     })]
   })
 }
@@ -204,14 +204,14 @@ function N(e) {
     "aria-label": n,
     "aria-labelledby": i,
     "aria-hidden": a
-  } = e, o = O(e, ["className", "aria-label", "aria-labelledby", "aria-hidden"]);
+  } = e, s = O(e, ["className", "aria-label", "aria-labelledby", "aria-hidden"]);
   return (0, r.jsx)("div", {
     role: "group",
-    className: s()(t, m.HD),
+    className: o()(t, m.HD),
     "aria-label": n,
     "aria-labelledby": i,
     "aria-hidden": a,
-    children: (0, r.jsx)(C, E({}, o))
+    children: (0, r.jsx)(C, E({}, s))
   })
 }
 
@@ -219,7 +219,7 @@ function w(e) {
   let {
     users: t,
     maxUsers: a,
-    guildId: o,
+    guildId: s,
     channelId: l,
     className: c,
     size: _ = u._3J.SIZE_24,
@@ -235,8 +235,8 @@ function w(e) {
     onUserPopoutRequestClose: R,
     "aria-label": P,
     "aria-labelledby": D,
-    "aria-hidden": x
-  } = e, [L, j] = i.useState(false), M = i.useRef(null), k = t.length - a, U = k + 1, G = k > 0 && !v && !x, V = () => (0, r.jsx)(u.lGe, {
+    "aria-hidden": L
+  } = e, [x, M] = i.useState(false), j = i.useRef(null), k = t.length - a, U = k + 1, G = k > 0 && !v && !L, F = () => (0, r.jsx)(u.lGe, {
     className: m.XM,
     "aria-label": P,
     "aria-labelledby": D,
@@ -244,40 +244,40 @@ function w(e) {
       className: m.XG,
       children: t.map(e => (0, r.jsx)(f.A, {
         user: e,
-        guildId: o,
+        guildId: s,
         channelId: l,
-        nick: p.Ay.getNickname(o, l, e),
+        nick: p.Ay.getNickname(s, l, e),
         disablePopout: "function" == typeof I ? I(e.id) : I,
         onClick: w,
         onPopoutRequestClose: () => {
-          j(false), null == R || R()
+          M(false), null == R || R()
         },
         onContextMenu: t => (0, d.L3)(t, async () => {
           let {
             default: t
-          } = await Promise.all([n.e("97262"), n.e("32418"), n.e("8893")]).then(n.bind(n, 668569));
+          } = await Promise.all([n.e("97262"), n.e("3795"), n.e("32418"), n.e("16938")]).then(n.bind(n, 668569));
           return n => (0, r.jsx)(t, b(E({}, n), {
             user: e,
-            guildId: o,
+            guildId: s,
             channelId: l
           }))
         }, {
-          onClose: () => j(false)
+          onClose: () => M(false)
         })
       }, e.id))
     })
-  }), F = () => G ? (0, r.jsx)(u.YNO, {
-    targetElementRef: M,
-    renderPopout: V,
-    shouldShow: L,
+  }), V = () => G ? (0, r.jsx)(u.YNO, {
+    targetElementRef: j,
+    renderPopout: F,
+    shouldShow: x,
     position: "bottom",
-    onRequestClose: () => j(false),
+    onRequestClose: () => M(false),
     children: e => (0, r.jsx)(u.DUT, b(E({}, e), {
-      innerRef: M,
+      innerRef: j,
       className: m.x6,
       onFocus: N,
       onClick: e => {
-        null == C || C(e), j(true)
+        null == C || C(e), M(true)
       },
       "aria-label": h.intl.formatToPlainString(h.t.R8Z8Qr, {
         count: U
@@ -295,16 +295,16 @@ function w(e) {
     role: "group",
     "aria-label": P,
     "aria-labelledby": D,
-    className: s()(c, m.HD),
-    "aria-hidden": x,
+    className: o()(c, m.HD),
+    "aria-hidden": L,
     children: [(0, r.jsx)(S, {
       users: t,
       maxUsers: a,
-      guildId: o,
+      guildId: s,
       channelId: l,
       size: _,
       shouldShowOverflowCount: G,
       disableUsernameTooltip: A
-    }), F()]
+    }), V()]
   })
 }

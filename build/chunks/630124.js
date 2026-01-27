@@ -7,14 +7,14 @@ function i(e, t) {
   return e === t && (0 !== e || 1 / e == 1 / t) || e != e && t != t
 }
 var a = "function" == typeof Object.is ? Object.is : i,
-  s = Chunk64700.useState,
-  o = Chunk64700.useEffect,
+  o = Chunk64700.useState,
+  s = Chunk64700.useEffect,
   l = Chunk64700.useLayoutEffect,
   c = Chunk64700.useDebugValue;
 
 function u(e, t) {
   var n = t(),
-    r = s({
+    r = o({
       inst: {
         value: n,
         getSnapshot: t
@@ -26,7 +26,7 @@ function u(e, t) {
     i.value = n, i.getSnapshot = t, d(i) && a({
       inst: i
     })
-  }, [e, n, t]), o(function() {
+  }, [e, n, t]), s(function() {
     return d(i) && a({
       inst: i
     }), e(function() {

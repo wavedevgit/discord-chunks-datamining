@@ -8,15 +8,15 @@ var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk287809 = require("./287809.js"),
   Chunk403362 = require("./403362.js");
-let o = [];
+let s = [];
 
 function l(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 3,
     n = (0, i.yK)([a.default], () => {
-      let t = e.participants.map(e => a.default.getUser(e)).filter(s.Vq),
+      let t = e.participants.map(e => a.default.getUser(e)).filter(o.Vq),
         n = t.find(t => t.id === e.author_id),
         r = t.filter(t => t.id !== e.author_id);
-      return null == n ? o : [...r, n]
+      return null == n ? s : [...r, n]
     }, [e]),
     l = r.useMemo(() => n.slice(-t), [t, n]),
     c = l[l.length - 1],

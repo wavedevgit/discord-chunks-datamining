@@ -32,8 +32,8 @@ module.exports = function(e, t, n) {
   if (S) m = e.iterator;
   else if (T) m = e;
   else {
-    if (!(g = d(e))) throw new p(s(e) + " is not iterable");
-    if (o(g)) {
+    if (!(g = d(e))) throw new p(o(e) + " is not iterable");
+    if (s(g)) {
       for (E = 0, y = l(e); y > E; E++)
         if ((b = R(e[E])) && c(h, b)) return b;
       return new _(false)

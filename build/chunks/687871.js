@@ -10,10 +10,10 @@ module.exports = function(e) {
         relevance: 0
       }), e.COMMENT("#cs", "#ce"), e.COMMENT("#comments-start", "#comments-end")]
     },
-    s = {
+    o = {
       begin: "\\$[A-z0-9_]+"
     },
-    o = {
+    s = {
       className: "string",
       variants: [{
         begin: /"/,
@@ -50,7 +50,7 @@ module.exports = function(e) {
           keyword: "include"
         },
         end: "$",
-        contains: [o, {
+        contains: [s, {
           className: "string",
           variants: [{
             begin: "<",
@@ -71,7 +71,7 @@ module.exports = function(e) {
             }]
           }]
         }]
-      }, o, a]
+      }, s, a]
     },
     u = {
       className: "symbol",
@@ -87,7 +87,7 @@ module.exports = function(e) {
         className: "params",
         begin: "\\(",
         end: "\\)",
-        contains: [s, o, l]
+        contains: [o, s, l]
       }]
     };
   return {
@@ -99,6 +99,6 @@ module.exports = function(e) {
       built_in: i,
       literal: r
     },
-    contains: [a, s, o, l, c, u, d]
+    contains: [a, o, s, l, c, u, d]
   }
 }

@@ -7,19 +7,19 @@ require.d(exports, {
 var Chunk64700 = require("./64700.js");
 
 function i(e, t, n) {
-  let [i, a] = (0, r.useState)(e || t), s = (0, r.useRef)(true !== e), o = true !== e;
+  let [i, a] = (0, r.useState)(e || t), o = (0, r.useRef)(true !== e), s = true !== e;
   (0, r.useEffect)(() => {
-    s.current, s.current = o
-  }, [o]);
-  let l = o ? e : i,
+    o.current, o.current = s
+  }, [s]);
+  let l = s ? e : i,
     c = (0, r.useCallback)((e, ...t) => {
       let r = (e, ...t) => {
-        n && !Object.is(l, e) && n(e, ...t), o || (l = e)
+        n && !Object.is(l, e) && n(e, ...t), s || (l = e)
       };
       "function" == typeof e ? a((n, ...i) => {
-        let a = e(o ? l : n, ...i);
-        return (r(a, ...t), o) ? n : a
-      }) : (o || a(e), r(e, ...t))
-    }, [o, l, n]);
+        let a = e(s ? l : n, ...i);
+        return (r(a, ...t), s) ? n : a
+      }) : (s || a(e), r(e, ...t))
+    }, [s, l, n]);
   return [l, c]
 }

@@ -15,5 +15,5 @@ module.exports = function(e, t, n) {
   if (!l(t)) throw new r("Assertion failed: P is not a Property Key");
   var f = i(n) ? n : u(n);
   if (!i(f)) throw new r("Assertion failed: Desc is not a valid Property Descriptor");
-  return a(o, c, s, e, t, f)
+  return a(s, c, o, e, t, f)
 }

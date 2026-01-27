@@ -13,6 +13,6 @@ module.exports = function(e, t) {
     var c = r(n, e, t);
     return null !== c && i(c), c
   }
-  if ("RegExp" === s(e)) return r(o, e, t);
+  if ("RegExp" === o(e)) return r(s, e, t);
   throw new l("RegExp#exec called on incompatible receiver")
 }

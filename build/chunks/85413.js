@@ -45,12 +45,12 @@ class d extends Chunk439372.A {
   isUserInVoiceChannel() {
     let e = a.default.getCurrentUser();
     if (null == e) returnfalse;
-    let t = s.A.getVoiceStateForUser(e.id);
+    let t = o.A.getVoiceStateForUser(e.id);
     return (null == t ? true : t.channelId) != null
   }
   async updateActiveHandlers() {
     this.ensureInitialized();
-    let e = (0, o.TD)(),
+    let e = (0, s.TD)(),
       t = i.Ay.getRunningGames(),
       n = this.isUserInVoiceChannel();
     if (!e) return void await this.stopAllHandlers();

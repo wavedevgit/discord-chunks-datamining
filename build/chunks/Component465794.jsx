@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk435371 = require("./435371.js"),
   Chunk421380 = require("./421380.js"),
@@ -95,11 +95,11 @@ let v = function(e) {
     confirmationFooter: R,
     color: P,
     iconColor: D = "currentColor"
-  } = e, x = b(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "color", "iconColor"]), L = (0, o.bG)([d.A], () => d.A.isFocused()), j = (0, p.A)({
+  } = e, L = b(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "color", "iconColor"]), x = (0, s.bG)([d.A], () => d.A.isFocused()), M = (0, p.A)({
     subscriptionTier: t,
     buttonTextOverride: null == E ? true : E.textOverride,
     defaultTextOverride: null == E ? true : E.subscribeText
-  }), M = {
+  }), j = {
     onClick: n,
     subscriptionTier: t,
     postSuccessGuild: v,
@@ -109,36 +109,36 @@ let v = function(e) {
     confirmationFooter: R
   }, k = null != P ? P : t === _.pe.TIER_1 ? c.$n.Colors.PRIMARY : c.$n.Colors.GREEN, U = (0, r.jsxs)(u.wLn, y(g({
     "data-migration-pending": true,
-    disabled: j.disabled,
+    disabled: M.disabled,
     innerClassName: h.UO,
     color: k,
     size: a,
     className: N,
-    wrapperClassName: s()({
+    wrapperClassName: o()({
       [h.PJ]: w && t === _.pe.TIER_2,
       [h.Up]: w && t === _.pe.TIER_1
     }, m),
-    buttonShineClassName: "buttonShineClassName" in x ? x.buttonShineClassName : k === c.XD.BRAND_INVERTED ? h.nz : true,
-    pauseAnimation: !L || T
-  }, x), {
+    buttonShineClassName: "buttonShineClassName" in L ? L.buttonShineClassName : k === c.XD.BRAND_INVERTED ? h.nz : true,
+    pauseAnimation: !x || T
+  }, L), {
     children: [S && (0, r.jsx)(u.tvc, {
       size: "md",
       color: D,
-      className: s()(h.PC, O)
+      className: o()(h.PC, O)
     }), (0, r.jsx)("span", {
-      className: s()(h._d, null == E ? true : E.textClassName),
-      children: j.buttonText
+      className: o()(h._d, null == E ? true : E.textClassName),
+      children: M.buttonText
     })]
   }));
-  return (0, r.jsx)(f.A, y(g({}, M), {
+  return (0, r.jsx)(f.A, y(g({}, j), {
     children: e => {
       let {
         onClick: t
       } = e, n = i.cloneElement(U, {
         onClick: t
       });
-      return null != j.buttonTooltipText ? (0, r.jsx)(l.m_, {
-        text: j.buttonTooltipText,
+      return null != M.buttonTooltipText ? (0, r.jsx)(l.m_, {
+        text: M.buttonTooltipText,
         children: n
       }) : n
     }

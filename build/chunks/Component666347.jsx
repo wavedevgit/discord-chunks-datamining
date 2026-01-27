@@ -2,12 +2,12 @@
 /** chunk id: 666347, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => j
+  A: () => M
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk108531 = require("./108531.js"),
   Chunk258873 = require("./258873.js"),
   Chunk622242 = require("./622242.js"),
@@ -40,7 +40,7 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let P = s().throttle(() => {
+let P = o().throttle(() => {
     m.A.increment({
       name: u.K.APP_CRASHED,
       tags: ["reason:".concat(l.J.UNHANDLED_JS_ERROR), "level:".concat(c.k.FATAL)]
@@ -50,37 +50,37 @@ let P = s().throttle(() => {
   }),
   D = 10 * Chunk927813.A.Millis.SECOND;
 
-function x(e) {
+function L(e) {
   var t, n;
   let {
     error: a,
-    onLock: s,
+    onLock: o,
     onReload: l,
     onDisable: c,
     onCrashDisabled: u
-  } = e, p = i.useMemo(() => new o.SpringValue(1), []), m = i.useRef(null), [g, b] = i.useState(false), [O, v] = i.useState(false), A = (0, d.bG)([E.default], () => E.default.getCurrentUser());
+  } = e, p = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, b] = i.useState(false), [O, v] = i.useState(false), A = (0, d.bG)([E.default], () => E.default.getCurrentUser());
   (0, h.Ay)(() => (m.current = setTimeout(R, D), _.A.track(C.HAw.NOTIFICATION_VIEWED, {
     notif_type: T.KS.OverlayCrashed
   }), () => {
     null != m.current && clearTimeout(m.current)
   }));
   let R = i.useCallback(() => {
-      p.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == s || s(), null == u || u()
-    }, [p, s, u]),
+      p.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
+    }, [p, o, u]),
     P = i.useCallback(e => {
-      O || (v(true), null == s || s(), _.A.track(C.HAw.NOTIFICATION_CLICKED, {
+      O || (v(true), null == o || o(), _.A.track(C.HAw.NOTIFICATION_CLICKED, {
         notif_type: T.KS.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => null == l ? true : l(), 200))
-    }, [s, l, O]),
-    x = i.useCallback(e => {
+    }, [o, l, O]),
+    L = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (b(true), null != m.current && clearTimeout(m.current)) : b(false)
     }, [b]),
-    L = i.useCallback(e => {
-      e.stopPropagation(), null == s || s(), null == c || c()
-    }, [c, s]),
-    j = (0, d.bG)([I.A], () => I.A.getFocusedRunningGame()),
-    M = g ? (0, r.jsxs)("div", {
+    x = i.useCallback(e => {
+      e.stopPropagation(), null == o || o(), null == c || c()
+    }, [c, o]),
+    M = (0, d.bG)([I.A], () => I.A.getFocusedRunningGame()),
+    j = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-strong",
@@ -107,19 +107,19 @@ function x(e) {
     U = null != (t = null == A ? true : A.isStaff()) && t || null != (n = null == A ? true : A.isStaffPersonal()) && n;
   return (0, r.jsx)(S.$, {
     title: N.intl.string(N.t.U38qZj),
-    body: M,
+    body: j,
     hint: U ? k : true,
     confirmText: N.intl.string(N.t.a3HlgJ),
-    cancelText: null != j ? N.intl.string(N.t.qIYnPo) : true,
+    cancelText: null != M ? N.intl.string(N.t.qIYnPo) : true,
     icon: (0, r.jsx)(y.A, {
       width: 40,
       height: 40,
       className: w.Lo
     }),
-    onNotificationClick: x,
+    onNotificationClick: L,
     onConfirmClick: P,
-    onCancelClick: null != j ? L : true,
-    onDismissClick: s,
+    onCancelClick: null != M ? x : true,
+    onDismissClick: o,
     expand: true,
     locked: true,
     notificationId: "overlay-crashed",
@@ -131,7 +131,7 @@ function x(e) {
     wrapperClassName: w.fl
   })
 }
-class L extends Chunk64700.PureComponent {
+class x extends Chunk64700.PureComponent {
   componentDidCatch(e, t) {
     let n = (0, g.JK)().location;
     this.setState({
@@ -165,7 +165,7 @@ class L extends Chunk64700.PureComponent {
     } = this.state;
     return null != n ? i ? (0, r.jsx)(A.A, {
       className: w.wz,
-      children: (0, r.jsx)(x, {
+      children: (0, r.jsx)(L, {
         error: n,
         onLock: () => {
           var e;
@@ -204,4 +204,4 @@ class L extends Chunk64700.PureComponent {
     }), R(this, "pid", null)
   }
 }
-let j = L
+let M = x

@@ -51,7 +51,7 @@ let O = function(e, t) {
     A = f.A.getChannel(e),
     I = g.A.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
     S = null != A ? _.A.getCheck(A.guild_id) : null;
-  if (!(null != t && (0, o.V)(t)) && (null == S || S.canChat || (0, l.pC)(A))) {
+  if (!(null != t && (0, s.V)(t)) && (null == S || S.canChat || (0, l.pC)(A))) {
     if (null != A && !I) {
       let e = (0, E.Pd)(A, g.A, p.A);
       if (e && A.isGuildStageVoice() && (0, c.xn)(A.id)) return void(0, i.openModalLazy)(async () => {
@@ -68,7 +68,7 @@ let O = function(e, t) {
         } = await n.e("54207").then(n.bind(n, 361698));
         return t => e(t)
       });
-      if (!(0, s.A)(A, h.A)) return
+      if (!(0, o.A)(A, h.A)) return
     }
     y && (0, u.PX)(), (0, d.A)(T, e, O, y)
   }

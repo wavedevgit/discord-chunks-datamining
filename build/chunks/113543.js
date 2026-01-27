@@ -5,7 +5,7 @@ require.r(exports), require.d(exports, {
   Manager: () => i.mS,
   Popper: () => r.N,
   Reference: () => a.O,
-  usePopper: () => s.E
+  usePopper: () => o.E
 });
 var Chunk101349 = require("./101349.js"),
   Chunk554352 = require("./554352.js"),

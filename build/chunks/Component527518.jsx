@@ -23,10 +23,10 @@ let u = {
         linkPreText: a
       } = e;
       return (0, r.jsx)(i.b, {
-        ctaText: (0, s.uJ)(t) ? l.intl.string(l.t.H57f41) : t,
-        linkText: (0, s.uJ)(n) ? l.intl.string(l.t["7f4H7D"]) : n,
-        linkPreText: (0, s.uJ)(a) ? true : a,
-        ctaOnClick: o.tEg
+        ctaText: (0, o.uJ)(t) ? l.intl.string(l.t.H57f41) : t,
+        linkText: (0, o.uJ)(n) ? l.intl.string(l.t["7f4H7D"]) : n,
+        linkPreText: (0, o.uJ)(a) ? true : a,
+        ctaOnClick: s.tEg
       })
     },
     controls: {
@@ -60,11 +60,11 @@ let u = {
         className: c.tH,
         children: (0, r.jsx)(a.SS, {
           className: c.oz,
-          ctaText: (0, s.uJ)(t) ? l.intl.string(l.t["J+vlIR"]) : t,
-          ctaOnClick: o.tEg,
+          ctaText: (0, o.uJ)(t) ? l.intl.string(l.t["J+vlIR"]) : t,
+          ctaOnClick: s.tEg,
           showNotificationBadge: i,
           cardAlignment: u,
-          linkText: (0, s.uJ)(n) ? l.intl.string(l.t.XRdyjz) : n
+          linkText: (0, o.uJ)(n) ? l.intl.string(l.t.XRdyjz) : n
         })
       })
     },

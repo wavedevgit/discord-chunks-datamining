@@ -28,12 +28,12 @@ function c(e, t, n) {
     reason: l.intl.formatToPlainString(l.t.wySUzv, {
       requestedTargets: p.map(e => {
         var t;
-        return null != (t = s.v_[e]) ? t : "unknown"
+        return null != (t = o.v_[e]) ? t : "unknown"
       }).join(", ")
     })
   };
   if (null != r && r !== window.GLOBAL_ENV.RELEASE_CHANNEL) {
-    let e = r === o.BIo.PTB ? r.toUpperCase() : "".concat(r.charAt(0).toUpperCase()).concat(r.slice(1));
+    let e = r === s.BIo.PTB ? r.toUpperCase() : "".concat(r.charAt(0).toUpperCase()).concat(r.slice(1));
     return {
       valid: false,
       reason: l.intl.formatToPlainString(l.t.GOEF0C, {

@@ -1,4 +1,4 @@
-/** Chunk was on 67564 **/
+/** Chunk was on 41727 **/
 /** chunk id: 175203, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => eh,
@@ -147,9 +147,9 @@ let es = [Chunk806931.lp.ACTIVITY],
       }, {
         autoTrackExposure: false
       }),
-      e2 = (0, a.bG)([G.A], () => e9 && null != eF ? G.A.findActivity(eF, e => null != e.application_id && e.type === ee.$pd.PLAYING) : null, [e9, eF]),
-      e7 = (0, a.bG)([M.A], () => (null == e2 ? true : e2.application_id) != null ? M.A.getDetectableGame(e2.application_id) : null),
-      e6 = (0, a.bG)([h.A], () => null != e7 && (null == e2 ? true : e2.application_id) != null ? h.A.getApplication(null == e2 ? true : e2.application_id) : true),
+      e7 = (0, a.bG)([G.A], () => e9 && null != eF ? G.A.findActivity(eF, e => null != e.application_id && e.type === ee.$pd.PLAYING) : null, [e9, eF]),
+      e2 = (0, a.bG)([M.A], () => (null == e7 ? true : e7.application_id) != null ? M.A.getDetectableGame(e7.application_id) : null),
+      e6 = (0, a.bG)([h.A], () => null != e2 && (null == e7 ? true : e7.application_id) != null ? h.A.getApplication(null == e7 ? true : e7.application_id) : true),
       e3 = (0, I.UF)({
         userId: eF,
         channelId: eA.id

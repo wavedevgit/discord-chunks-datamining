@@ -68,7 +68,7 @@ function O(e) {
 }
 
 function v(e) {
-  return !s.isPlatformEmbedded || e.width >= f.width && e.height >= f.height
+  return !o.isPlatformEmbedded || e.width >= f.width && e.height >= f.height
 }
 
 function A(e) {
@@ -80,6 +80,6 @@ function I() {
 }
 
 function S() {
-  let e = (0, s.isWindows)() && "arm64" === o.Ay.architecture;
+  let e = (0, o.isWindows)() && "arm64" === s.Ay.architecture;
   return c.OX && !e && !(0, i.Zi)()
 }

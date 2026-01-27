@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   N: () => a,
-  g: () => s
+  g: () => o
 });
 var Chunk64700 = require("./64700.js");
 let i = Chunk64700.createContext(true),
   a = i.Provider;
 
-function s() {
+function o() {
   return r.useContext(i)
 }

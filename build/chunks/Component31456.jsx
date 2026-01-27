@@ -22,7 +22,7 @@ let l = Object.freeze({
       highPriority: true,
       textAlign: Chunk244083.YL.CENTER,
       spacing: 10,
-      media: () => (0, r.jsx)(s.A, {})
+      media: () => (0, r.jsx)(o.A, {})
     },
     "direct-messages": {
       popoutPosition: "right"

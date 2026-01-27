@@ -2,8 +2,8 @@
 /** chunk id: 654821, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  hasDomParent: () => s,
-  isDOMRangeCollapsed: () => o,
+  hasDomParent: () => o,
+  isDOMRangeCollapsed: () => s,
   normalizeDOMPoint: () => l
 }), require("./65821.js"), require("./896048.js");
 var Chunk253018 = require("./253018.js");
@@ -26,24 +26,24 @@ let a = false;
   Chunk253018.rL.toSlateRange = (e, t, n) => {
     let {
       exactMatch: a,
-      suppressThrow: s
+      suppressThrow: o
     } = n, {
       anchorNode: l,
       anchorOffset: c,
       focusNode: u,
       focusOffset: d
-    } = i(t), f = o(l, c, u, d);
+    } = i(t), f = s(l, c, u, d);
     if (null == l || null == u || null == c || null == d) {
-      if (s) return null;
+      if (o) return null;
       throw Error("Cannot resolve a Slate range from DOM range")
     }
     let p = r.rL.toSlatePoint(e, [l, c], {
         exactMatch: a,
-        suppressThrow: s
+        suppressThrow: o
       }),
       _ = f ? p : r.rL.toSlatePoint(e, [u, d], {
         exactMatch: a,
-        suppressThrow: s
+        suppressThrow: o
       });
     return null != p && null != _ ? {
       anchor: p,
@@ -55,9 +55,9 @@ let a = false;
     let {
       exactMatch: i,
       suppressThrow: a,
-      direction: s = "forward"
+      direction: o = "forward"
     } = r;
-    i || (n = l(n, s));
+    i || (n = l(n, o));
     try {
       return e(t, n, {
         exactMatch: true,
@@ -70,7 +70,7 @@ let a = false;
   }, a = true
 }
 
-function s(e, t) {
+function o(e, t) {
   if (null == t) returnfalse;
   for (; null != e;) {
     if (e === t) returntrue;
@@ -79,7 +79,7 @@ function s(e, t) {
   returnfalse
 }
 
-function o(e, t, n, r) {
+function s(e, t, n, r) {
   return e === n && t === r
 }
 
@@ -97,15 +97,15 @@ function l(e, t) {
 function c(e, t, n) {
   let {
     childNodes: r
-  } = e, i = r[t], a = t, s = false, o = false;
+  } = e, i = r[t], a = t, o = false, s = false;
   for (;
-    (u(i) || d(i) && 0 === i.childNodes.length || d(i) && "false" === i.getAttribute("contenteditable")) && (!s || !o);) {
+    (u(i) || d(i) && 0 === i.childNodes.length || d(i) && "false" === i.getAttribute("contenteditable")) && (!o || !s);) {
     if (a >= r.length) {
-      s = true, a = t - 1, n = "backward";
+      o = true, a = t - 1, n = "backward";
       continue
     }
     if (a < 0) {
-      o = true, a = t + 1, n = "forward";
+      s = true, a = t + 1, n = "forward";
       continue
     }
     i = r[a], t = a, a += "forward" === n ? 1 : false

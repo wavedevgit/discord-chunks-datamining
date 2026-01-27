@@ -2,19 +2,19 @@
 /** chunk id: 849352, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => o
+  i: () => s
 });
 var Chunk853590 = require("./853590.js"),
   Chunk515702 = require("./515702.js"),
   Chunk7521 = require("./7521.js"),
   Chunk64700 = require("./64700.js");
 
-function o(e) {
+function s(e) {
   e = (0, a.k)(null != e ? e : {}, l);
   let {
     locale: t
   } = (0, r.Y)();
-  return (0, s.useMemo)(() => new(0, i.p)(t, e), [t, e])
+  return (0, o.useMemo)(() => new(0, i.p)(t, e), [t, e])
 }
 
 function l(e, t) {

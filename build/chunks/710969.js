@@ -8,15 +8,15 @@ require.d(exports, {
   Kc: () => N,
   L4: () => R,
   Li: () => w,
-  RF: () => L,
+  RF: () => x,
   ZA: () => y,
   ZG: () => A,
   gO: () => E,
   if: () => O,
-  r$: () => j,
+  r$: () => M,
   t6: () => I,
   v1: () => v,
-  vZ: () => x,
+  vZ: () => L,
   vc: () => m,
   vy: () => g,
   xn: () => T,
@@ -75,19 +75,19 @@ function m(e, t, n) {
   var r;
   let i = Array.isArray(t) ? new Map(t.map(e => [e.id, e])) : t,
     a = Array.isArray(n) ? new Map(n.map(e => [e.id, e])) : n,
-    s = i.get(e);
-  if (null != s) return s;
-  let o = null == (r = a.get(e)) ? true : r.replacementId;
-  if (null != o) return i.get(o)
+    o = i.get(e);
+  if (null != o) return o;
+  let s = null == (r = a.get(e)) ? true : r.replacementId;
+  if (null != s) return i.get(s)
 }
 
 function g(e) {
-  return Object.keys(c.TY).includes(o.uF[e])
+  return Object.keys(c.TY).includes(s.uF[e])
 }
 
 function E(e, t) {
   if (!g(t)) returnfalse;
-  let n = o.uF[t];
+  let n = s.uF[t];
   return (0, r.Lt)(e.dismissedQuestContent, c.TY[n])
 }
 
@@ -132,9 +132,9 @@ function I(e, t, n) {
 
 function S(e) {
   return ({
-    [o.uF.QUEST_BAR]: o.yW.DESKTOP_ACCOUNT_PANEL_AREA,
-    [o.uF.QUEST_BAR_V2]: o.yW.DESKTOP_ACCOUNT_PANEL_AREA,
-    [o.uF.QUEST_BAR_MOBILE]: o.yW.MOBILE_HOME_DOCK_AREA
+    [s.uF.QUEST_BAR]: s.yW.DESKTOP_ACCOUNT_PANEL_AREA,
+    [s.uF.QUEST_BAR_V2]: s.yW.DESKTOP_ACCOUNT_PANEL_AREA,
+    [s.uF.QUEST_BAR_MOBILE]: s.yW.MOBILE_HOME_DOCK_AREA
   })[e]
 }
 
@@ -150,7 +150,7 @@ function C(e) {
     location: "getQuestDeliveryDataForPlacement"
   });
   if (t) {
-    let t = s.A.questAdDecisionByPlacement.get(e);
+    let t = o.A.questAdDecisionByPlacement.get(e);
     return null == t ? null : {
       questId: t.questId,
       adDecisionData: t.adDecisionData,
@@ -161,7 +161,7 @@ function C(e) {
       trafficMetadataSealed: t.trafficMetadataSealed
     }
   } {
-    let t = s.A.questToDeliverForPlacement.get(e);
+    let t = o.A.questToDeliverForPlacement.get(e);
     return null == t ? null : {
       questId: t.quest.id,
       adDecisionData: t.adDecisionData,
@@ -207,7 +207,7 @@ function P(e, t) {
   } = null != (n = C(r)) ? n : {};
   if (null != i && a === t) return i;
   if (null != t) {
-    let e = s.A.getQuest(t);
+    let e = o.A.getQuest(t);
     return null == e ? true : e.trafficMetadataRaw
   }
 }
@@ -222,18 +222,18 @@ function D(e, t) {
   } = null != (n = C(r)) ? n : {};
   if (null != i && a === t) return i;
   if (null != t) {
-    let e = s.A.getQuest(t);
+    let e = o.A.getQuest(t);
     return null == e ? true : e.trafficMetadataSealed
   }
 }
 
-function x(e) {
+function L(e) {
   var t;
   let n = S(e);
   if (null != n) return null == (t = C(n)) ? true : t.adContext
 }
 
-function L(e, t) {
+function x(e, t) {
   a.A.captureException(e, _(f({}, t), {
     tags: _(f({}, null == t ? true : t.tags), {
       app_context: "quests"
@@ -241,6 +241,6 @@ function L(e, t) {
   }))
 }
 
-function j() {
+function M() {
   return window.location.pathname.startsWith(u.BVt.QUEST_HOME)
 }

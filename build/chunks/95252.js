@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 95252, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 95252, original params: e,t,n (module,exports,require) **/
 module.exports = {
   $Y: "tierCard_a45ed3",
   J5: "withTier2Rim_a45ed3",

@@ -15,7 +15,7 @@ let c = e => {
     applicationId: t,
     children: n,
     questContent: c
-  } = e, u = (0, a.bG)([s.A], () => s.A.quests), d = i.useMemo(() => (0, o.jm)(u, t), [u, t]), f = i.useRef(null);
+  } = e, u = (0, a.bG)([o.A], () => o.A.quests), d = i.useMemo(() => (0, s.jm)(u, t), [u, t]), f = i.useRef(null);
   return d.length > 0 ? (0, r.jsx)(l.R, {
     questOrQuests: d[0],
     questContent: c,

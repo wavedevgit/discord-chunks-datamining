@@ -2,21 +2,21 @@
 /** chunk id: 351242, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx");
-let s = e => {
+let o = e => {
   let {
     onChangeAvatar: t,
     onChangeAvatarDecoration: n,
-    onClose: s
+    onClose: o
   } = e;
   return (0, r.jsxs)(i.W1t, {
     "data-menu-needs-review": true,
-    onClose: s,
+    onClose: o,
     onSelect: true,
     navId: "user-settings-change-avatar",
     "aria-label": a.intl.string(a.t.ldIeAd),

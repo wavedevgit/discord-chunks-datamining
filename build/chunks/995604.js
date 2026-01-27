@@ -15,13 +15,13 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = new Chunk626584.A("GuildEmojis");
-class o {
+let o = new Chunk626584.A("GuildEmojis");
+class s {
   async getAsync(e) {
     let t = performance.now(),
       n = await i.A.emojis(e).getMapEntries(),
       r = performance.now();
-    return s.log("asynchronously loaded in ".concat(r - t, "ms (guilds: ").concat(n.length, ")")), n
+    return o.log("asynchronously loaded in ".concat(r - t, "ms (guilds: ").concat(n.length, ")")), n
   }
   handleConnectionOpen(e, t) {
     for (let n of e.guilds) this.handleOneGuildCreate(n, t)
@@ -41,7 +41,7 @@ class o {
   handleBackgroundSync(e, t) {
     e.promisesForBackgroundSyncToWaitOn.push(Promise.all(e.emojis.map(e => {
       if ("unavailable" === e.dataMode) return Promise.resolve();
-      "full" === e.dataMode ? (s.verbose("Replacing ".concat(e.entities.length, " emojis for ").concat(e.guildId)), this.replace(e.guildId, e.entities, t)) : (e.updatedEntities.length > 0 || e.deletedEntityIds.length > 0) && (s.verbose("Updating ".concat(e.updatedEntities.length, " and deleting ").concat(e.deletedEntityIds.length, " emojis for ").concat(e.guildId)), this.update(e.guildId, e.updatedEntities, e.deletedEntityIds, t))
+      "full" === e.dataMode ? (o.verbose("Replacing ".concat(e.entities.length, " emojis for ").concat(e.guildId)), this.replace(e.guildId, e.entities, t)) : (e.updatedEntities.length > 0 || e.deletedEntityIds.length > 0) && (o.verbose("Updating ".concat(e.updatedEntities.length, " and deleting ").concat(e.deletedEntityIds.length, " emojis for ").concat(e.guildId)), this.update(e.guildId, e.updatedEntities, e.deletedEntityIds, t))
     })))
   }
   handleOneGuildCreate(e, t) {
@@ -79,4 +79,4 @@ class o {
     })
   }
 }
-let l = new o
+let l = new s

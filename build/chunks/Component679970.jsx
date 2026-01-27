@@ -15,7 +15,7 @@ let u = e => {
   let {
     className: t,
     animationState: n = "on"
-  } = e, u = (0, a.bG)([s.A], () => s.A.useReducedMotion), [d, f] = (0, i.useState)(false), p = (0, i.useRef)(null), _ = "on" === n || "on_hover" === n && d;
+  } = e, u = (0, a.bG)([o.A], () => o.A.useReducedMotion), [d, f] = (0, i.useState)(false), p = (0, i.useRef)(null), _ = "on" === n || "on_hover" === n && d;
   return (0, i.useEffect)(() => {
     null !== p.current && (_ ? p.current.play() : (p.current.currentTime = 0, p.current.pause()))
   }, [_]), (0, r.jsx)("div", {
@@ -25,7 +25,7 @@ let u = e => {
       src: l.A,
       className: t,
       alt: "Orb"
-    }) : (0, r.jsxs)(o.A, {
+    }) : (0, r.jsxs)(s.A, {
       className: t,
       autoPlay: true,
       loop: true,

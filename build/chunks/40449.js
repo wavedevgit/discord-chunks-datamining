@@ -19,7 +19,7 @@ var Chunk975571 = require("./975571.js"),
   Chunk985018 = require("./985018.jsx");
 let u = new Set([Chunk847599.q1.NSFW_GUILD]),
   d = e => {
-    let t = (0, s.g)("age_verification_get_started_steps");
+    let t = (0, o.g)("age_verification_get_started_steps");
     return [{
       title: c.intl.string(c.t.HphYKp),
       description: t ? null : c.intl.string(c.t["GCZC+9"])
@@ -30,7 +30,7 @@ let u = new Set([Chunk847599.q1.NSFW_GUILD]),
       title: c.intl.string(c.t.aVwLfn),
       description: c.intl.format(c.t.n5vd1E, {
         handleOnHelpUrlHook: () => {
-          i.A.openUrl(r.A.getArticleURL(o.MVz.TIGGER_PAWTECT_SYSTEM_DMS)), (0, a.St)(e, a.WU.PRIMARY, a._7.SYSTEM_DMS_LEARN_MORE)
+          i.A.openUrl(r.A.getArticleURL(s.MVz.TIGGER_PAWTECT_SYSTEM_DMS)), (0, a.St)(e, a.WU.PRIMARY, a._7.SYSTEM_DMS_LEARN_MORE)
         }
       })
     }]

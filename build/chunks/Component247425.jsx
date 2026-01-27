@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk230109 = require("./230109.js"),
   Chunk421380 = require("./421380.js"),
@@ -30,7 +30,7 @@ let I = function(e) {
     closeLayer: t,
     guild: n,
     onCtaVisibilityChange: a
-  } = e, I = i.useRef(null), S = (0, o.bG)([m.default], () => m.default.getCurrentUser()), T = (0, o.bG)([g.A], () => g.A.boostSlots), C = null == S ? true : S.isPremiumGroupMember(), {
+  } = e, I = i.useRef(null), S = (0, s.bG)([m.default], () => m.default.getCurrentUser()), T = (0, s.bG)([g.A], () => g.A.boostSlots), C = null == S ? true : S.isPremiumGroupMember(), {
     analyticsLocations: N
   } = (0, d.Ay)(), w = i.useMemo(() => Object.keys(T).filter(e => {
     let t = T[e];
@@ -84,7 +84,7 @@ let I = function(e) {
         className: A.SJ,
         children: [(0, r.jsx)(u._Jp, {
           color: R > 0 ? u.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK : "currentColor",
-          className: s()(A.Me, {
+          className: o()(A.Me, {
             [A.S3]: R > 0
           })
         }), (0, r.jsx)(u.Text, {
@@ -111,7 +111,7 @@ let I = function(e) {
         threshold: .9,
         children: (0, r.jsx)("div", {
           ref: I,
-          className: s()(A.J$, A.$F),
+          className: o()(A.J$, A.$F),
           children: (0, r.jsx)(y.A, {
             className: A.E0,
             innerClassName: A.J1,
@@ -131,7 +131,7 @@ let I = function(e) {
         })
       }), E.Ay.hasFreeBoosts(S) || E.Ay.isPremium(S, O.PremiumTypes.TIER_2) ? (0, r.jsxs)(c.$n, {
         "data-migration-pending": true,
-        className: s()(A.J$, A.Rr),
+        className: o()(A.J$, A.Rr),
         innerClassName: A.yN,
         look: c.$n.Looks.OUTLINED,
         color: c.$n.Colors.WHITE,
@@ -144,7 +144,7 @@ let I = function(e) {
         }), v.intl.string(v.t["8MYSQw"])]
       }) : (0, r.jsx)(c.$n, {
         "data-migration-pending": true,
-        className: s()(A.J$, A.Rr),
+        className: o()(A.J$, A.Rr),
         look: c.$n.Looks.OUTLINED,
         color: c.$n.Colors.WHITE,
         onClick: P,

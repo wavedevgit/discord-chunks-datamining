@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 510898, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 510898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,7 +23,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,59 +36,34 @@ function _(e) {
   return e
 }
 
-function h(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-
-function g(e, t) {
-  if (null == e) return {};
-  var n, r, i, a = {};
-  if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-  }
-  if (a = E(e, t), Object.getOwnPropertySymbols)
-    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-  return a
-}
-
-function E(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.getOwnPropertyNames(e);
-  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-  return i
-}
-let y = "https://support.discord.com/hc/en-us";
-class b extends Chunk64700.PureComponent {
+class A extends Chunk64700.PureComponent {
   static getDerivedStateFromError(e) {
     return {
       hasError: true
     }
   }
   render() {
-    return this.state.hasError ? (0, r.jsxs)(a.$Td, {
-      color: a.Hv$.DANGER,
+    return this.state.hasError ? (0, r.jsxs)(l.$Td, {
+      color: l.Hv$.DANGER,
       style: {
         borderRadius: 0
       },
-      children: [f.intl.format(f.t.IIHUUF, {
+      children: [_.intl.format(_.t.IIHUUF, {
         subscriptionId: this.props.subscription.id
-      }), " ", f.intl.format(f.t.fh65ES, {
-        helpLink: y
+      }), " ", _.intl.format(_.t.fh65ES, {
+        helpLink: "https://support.discord.com/hc/en-us"
       })]
     }) : this.props.children
   }
@@ -100,66 +74,82 @@ class b extends Chunk64700.PureComponent {
   }
 }
 
-function O(e) {
+function f(e) {
   let {
     subscriptions: t,
     updateHeader: n
-  } = e, [a, p] = i.useState({
-    route: u.R.HOME
+  } = e, [l, p] = i.useState({
+    route: d.R.HOME
   }), {
-    route: h
-  } = a, E = () => {
+    route: f
+  } = l, h = () => {
     p({
-      route: u.R.HOME
+      route: d.R.HOME
     })
-  }, y = e => {
-    p(_({
-      route: u.R.SWITCH_APP_PLANS
-    }, e)), n(f.intl.string(f.t.VFqtkP), E)
-  }, [O, v] = i.useState({});
+  }, b = e => {
+    p(m({
+      route: d.R.SWITCH_APP_PLANS
+    }, e)), n(_.intl.string(_.t.VFqtkP), h)
+  }, [E, x] = i.useState({});
   i.useEffect(() => {
     for (let n of t) {
       var e;
       let t = null == (e = n.items[0]) ? true : e.planId;
-      null != t && (v(e => m(_({}, e), {
+      null != t && (x(e => g(m({}, e), {
         [n.id]: c.G.LOADING
-      })), (0, o._R)(t).then(() => {
-        v(e => m(_({}, e), {
+      })), (0, a._R)(t).then(() => {
+        x(e => g(m({}, e), {
           [n.id]: c.G.DONE
         }))
       }).catch(() => {
-        v(e => m(_({}, e), {
+        x(e => g(m({}, e), {
           [n.id]: c.G.ERROR
         }))
       }))
     }
   }, [t]);
   let {
-    loadState: A
-  } = (0, l.E)(), I = A !== l.mJ.LOADED;
-  switch (h) {
-    case u.R.HOME:
+    loadState: O
+  } = (0, o.E)(), C = O !== o.mJ.LOADED;
+  switch (f) {
+    case d.R.HOME:
       return (0, r.jsx)(r.Fragment, {
         children: t.map(e => {
           var t;
-          return (0, r.jsx)(b, {
+          return (0, r.jsx)(A, {
             subscription: e,
             children: (0, r.jsx)(c.A, {
               subscription: e,
-              navigateToSwitchPlan: y,
-              loadingState: I ? c.G.LOADING : null != (t = O[e.id]) ? t : c.G.LOADING
+              navigateToSwitchPlan: b,
+              loadingState: C ? c.G.LOADING : null != (t = E[e.id]) ? t : c.G.LOADING
             })
           }, e.id)
         })
       });
-    case u.R.SWITCH_APP_PLANS:
+    case d.R.SWITCH_APP_PLANS:
       let {
-        route: S
-      } = a, T = g(a, ["route"]);
-      return (0, r.jsx)(d.A, m(_({}, T), {
-        navigateToHome: E
+        route: I
+      } = l, T = function(e, t) {
+        if (null == e) return {};
+        var n, r, i, l = {};
+        if ("u" > typeof Reflect && Reflect.ownKeys) {
+          for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+          return l
+        }
+        if (l = function(e, t) {
+            if (null == e) return {};
+            var n, r, i = {},
+              l = Object.getOwnPropertyNames(e);
+            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+            return i
+          }(e, t), Object.getOwnPropertySymbols)
+          for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+        return l
+      }(l, ["route"]);
+      return (0, r.jsx)(u.A, g(m({}, T), {
+        navigateToHome: h
       }));
     default:
-      (0, s.xb)(h)
+      (0, s.xb)(f)
   }
 }

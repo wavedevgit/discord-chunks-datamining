@@ -86,12 +86,12 @@ function A(e, t) {
 require("./985018.jsx");
 
 function I() {
-  (0, o.zV)(g.HAw.THREAD_BROWSER_TAB_CHANGED)
+  (0, s.zV)(g.HAw.THREAD_BROWSER_TAB_CHANGED)
 }
 
 function S() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "Modal";
-  (0, o.zV)(g.HAw.OPEN_MODAL, {
+  (0, s.zV)(g.HAw.OPEN_MODAL, {
     type: "Thread Browser",
     location_section: e
   })
@@ -107,9 +107,9 @@ function C(e, t) {
   var n, r;
   let i = (0, l.C)(e);
   if (null == i) return;
-  let s = e.getGuildId(),
-    o = e.parent_id,
-    c = (0, f.ME)(s, o),
+  let o = e.getGuildId(),
+    s = e.parent_id,
+    c = (0, f.ME)(o, s),
     p = e => (0, a.Lt)(e, m.CP.ALL_MESSAGES) ? f.Qe[g.orn.ALL_MESSAGES] : (0, a.Lt)(e, m.CP.ONLY_MENTIONS) ? f.Qe[g.orn.ONLY_MENTIONS] : (0, a.Lt)(e, m.CP.NO_MESSAGES) ? f.Qe[g.orn.NO_MESSAGES] : f.Qe[g.orn.NULL],
     h = null != (n = _.A.flags(e.id)) ? n : 0,
     E = p(h),
@@ -121,11 +121,11 @@ function C(e, t) {
     } = i,
     T = O(y({}, v(i, ["can_send_message", "parent_channel_type"])), {
       channel_id: e.id,
-      guild_id: s,
-      parent_id: o,
+      guild_id: o,
+      parent_id: s,
       channel_type: e.type,
       has_interacted_with_thread: (h & m.CP.HAS_INTERACTED) != 0,
-      parent_is_muted: u.Ay.isGuildOrCategoryOrChannelMuted(s, o),
+      parent_is_muted: u.Ay.isGuildOrCategoryOrChannelMuted(o, s),
       old_thread_notification_setting: E,
       new_thread_notification_setting: null != t.flags ? p(t.flags) : E,
       parent_notification_setting: c.channel_message_notification_settings,
@@ -138,9 +138,9 @@ function C(e, t) {
 }
 let N = e => {
   var t, n;
-  let r = (0, s.bG)([c.Ay], () => c.Ay.lastMessageId(e.id)),
+  let r = (0, o.bG)([c.Ay], () => c.Ay.lastMessageId(e.id)),
     a = null != r ? p.default.extractTimestamp(r) : null,
-    o = null == (n = e.threadMetadata) ? true : n.createTimestamp,
-    l = null != o ? i()(o).valueOf() : null;
+    s = null == (n = e.threadMetadata) ? true : n.createTimestamp,
+    l = null != s ? i()(s).valueOf() : null;
   return null != (t = null != a ? a : l) ? t : p.default.extractTimestamp(e.id)
 }

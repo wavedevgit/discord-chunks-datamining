@@ -2,7 +2,7 @@
 /** chunk id: 4511, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => s
+  r: () => o
 }), require("./65821.js"), require("./896048.js"), require("./321073.js"), require("./638769.js");
 var Chunk731854 = require("./731854.js");
 
@@ -27,7 +27,7 @@ function a(e) {
   }
   return e
 }
-class s {
+class o {
   getMaxSinkValue(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
     if (e < 0) throw Error("getMaxSinkValue: Requested " + e);
@@ -77,7 +77,7 @@ class s {
     }
     let i = {},
       a = 0,
-      o = 100;
+      s = 100;
     for (let t = 1; t <= 25; ++t) {
       let l = 0,
         c = 0,
@@ -87,14 +87,14 @@ class s {
         l = r.width, c = r.height, u = r.budgetPortion
       }
       if (a !== l) {
-        let e = s.getMutedFramerate(o);
-        i[o] = {
+        let e = o.getMutedFramerate(s);
+        i[s] = {
           width: l,
           height: c,
           budgetPortion: u,
           mutedFramerate: e,
           framerate: r.sG
-        }, o -= 10, a = l
+        }, s -= 10, a = l
       }
     }
     return i
@@ -121,6 +121,6 @@ class s {
       height: n
     } = e.videoBudget;
     if (t <= 0 || n <= 0) throw Error("Invalid argument");
-    this.pixelBudget = t * n, this.ladder = s.calculateLadder(this.pixelBudget), this.orderedLadder = s.calculateOrderedLadder(this.ladder)
+    this.pixelBudget = t * n, this.ladder = o.calculateLadder(this.pixelBudget), this.orderedLadder = o.calculateOrderedLadder(this.ladder)
   }
 }

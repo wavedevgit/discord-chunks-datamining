@@ -20,9 +20,9 @@ let p = e => {
     onClose: t
   } = e, {
     analyticsLocations: n
-  } = (0, o.Ay)(), p = () => {
+  } = (0, s.Ay)(), p = () => {
     t(), (0, l.pX)(u.BVt.COLLECTIBLES_SHOP), (0, c.Cz)({
-      analyticsSource: s.A.PREMIUM_PAYMENT_MODAL,
+      analyticsSource: o.A.PREMIUM_PAYMENT_MODAL,
       analyticsLocations: n
     }), (0, a.jH)()
   };

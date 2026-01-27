@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 420382, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   A: () => A
 }), require("./896048.js");
@@ -30,14 +29,14 @@ function A(e) {
     return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, r.jsx)(o.Button, {
       text: f.intl.string(f.t.dKhVQN),
       fullWidth: true,
-      onClick: () => s(m.BVt.LOGIN, {
+      onClick: () => s(_.BVt.LOGIN, {
         source: "authorizeIPAdress"
       })
     })
   }
-  return ((0, u.Ay)(() => {
+  return ((0, d.Ay)(() => {
     (0, g.d)("authorize_ip");
-    let e = (0, d.A)(t);
+    let e = (0, u.A)(t);
     null == e ? A("failed") : (async () => {
       try {
         await c.A.authorizeIPAddress(e), A("succeeded")
@@ -49,24 +48,24 @@ function A(e) {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(792009),
-      className: _.SX
+      className: m.SX
     }), (0, r.jsx)(h.hE, {
-      className: _.QB,
+      className: m.QB,
       children: f.intl.string(f.t["f/54az"])
     }), (0, r.jsx)(h.tK, {
-      className: _.C2,
+      className: m.C2,
       children: f.intl.string(f.t.i3ehMr)
     }), x()]
   }) : "succeeded" === a ? (0, r.jsxs)(h.Ay, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(841406),
-      className: _.SX
+      className: m.SX
     }), (0, r.jsx)(h.hE, {
-      className: _.QB,
+      className: m.QB,
       children: f.intl.string(f.t.iG0SlK)
     }), (0, r.jsx)(h.tK, {
-      className: _.C2,
+      className: m.C2,
       children: f.intl.string(f.t["Elv+qt"])
     }), x()]
   }) : (0, r.jsxs)(h.Ay, {

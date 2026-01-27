@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   $v: () => l,
-  e: () => s,
-  wB: () => o
+  e: () => o,
+  wB: () => s
 }), require("./896048.js");
 let r = new WeakMap,
   i = new WeakMap;
@@ -17,12 +17,12 @@ function a(e, t) {
   })
 }
 
-function s(e) {
+function o(e) {
   let t = r.get(e);
   return null == t && (t = new IntersectionObserver(a, e), r.set(e, t), i.set(t, new WeakMap)), t
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   var r;
   let a = null != (r = i.get(e)) ? r : new WeakMap;
   a.has(t) || e.observe(t), a.set(t, n), i.set(e, a)

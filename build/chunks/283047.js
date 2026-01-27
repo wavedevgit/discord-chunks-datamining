@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
   Chunk989349 = require("./989349.js"),
-  s = require.n(Chunk989349);
+  o = require.n(Chunk989349);
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -103,22 +103,22 @@ class h {
     return null != t ? t.frecency : null
   }
   compute() {
-    let e = s()(),
+    let e = o()(),
       t = this.calculateMaxTotalUse ? i().maxBy(Object.values(this.usageHistory), e => e.totalUses) : null;
     i().forEach(this.usageHistory, (n, r) => {
       let {
         totalUses: a,
-        recentUses: o,
+        recentUses: s,
         frecency: l
       } = n;
       if (false !== l) return;
       let c = this.computeBonus(r) / 100;
-      n.score = 0, i().forEach(o, (t, r) => {
+      n.score = 0, i().forEach(s, (t, r) => {
         if (r >= this.maxSamples) returnfalse;
-        let i = this.computeWeight(e.diff(s()(t), "days"));
+        let i = this.computeWeight(e.diff(o()(t), "days"));
         n.score += c * i
       }), n.score > 0 ? (n.recentUses.length > 0 && (n.frecency = this.computeFrecency(a, n.score, {
-        numOfRecentUses: o.length,
+        numOfRecentUses: s.length,
         maxTotalUse: null == t ? true : t.totalUses
       })), this.usageHistory[r] = n) : delete this.usageHistory[r]
     }), this.frequently = i()(this.usageHistory).map((e, t) => {
@@ -145,10 +145,10 @@ class h {
     calculateMaxTotalUse: r = false,
     lookupKey: i,
     afterCompute: a,
-    numFrequentlyItems: s = f,
+    numFrequentlyItems: o = f,
     maxSamples: l = d
   }) {
-    o(this, "dirty", true), o(this, "_frequently", true), o(this, "numFrequentlyItems", true), o(this, "maxSamples", true), o(this, "computeBonus", true), o(this, "computeWeight", true), o(this, "computeFrecency", true), o(this, "calculateMaxTotalUse", true), o(this, "lookupKey", true), o(this, "usageHistory", true), o(this, "afterCompute", true), this.computeBonus = e, this.computeWeight = t, this.computeFrecency = n, this.calculateMaxTotalUse = r, this.afterCompute = a, this.lookupKey = i, this.usageHistory = {}, this.frequently = [], this.maxSamples = l, this.numFrequentlyItems = s, this.dirty = false
+    s(this, "dirty", true), s(this, "_frequently", true), s(this, "numFrequentlyItems", true), s(this, "maxSamples", true), s(this, "computeBonus", true), s(this, "computeWeight", true), s(this, "computeFrecency", true), s(this, "calculateMaxTotalUse", true), s(this, "lookupKey", true), s(this, "usageHistory", true), s(this, "afterCompute", true), this.computeBonus = e, this.computeWeight = t, this.computeFrecency = n, this.calculateMaxTotalUse = r, this.afterCompute = a, this.lookupKey = i, this.usageHistory = {}, this.frequently = [], this.maxSamples = l, this.numFrequentlyItems = o, this.dirty = false
   }
 }
 let m = h

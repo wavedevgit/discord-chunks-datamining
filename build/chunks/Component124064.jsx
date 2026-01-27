@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 124064, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 124064, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,73 +16,69 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk973746 = require("./973746.js");
-let m = (0, Chunk915089.Ld)(),
-  g = (0, Chunk95701.createChannelRecord)({
+let A = (0, Chunk915089.Ld)(),
+  f = (0, Chunk95701.createChannelRecord)({
     id: "1",
     type: Chunk652215.rbe.DM
   }),
-  E = (0, Chunk915089.Ld)();
+  h = (0, Chunk915089.Ld)();
 
-function y(e) {
+function b(e) {
   let {
     sectionTitle: t,
     errors: n,
     onBioChange: c,
-    pendingBio: d,
-    placeholder: y,
-    currentBio: b,
-    disabled: O = false
-  } = e, [v, A] = i.useState(null != d ? d : b), [I, S] = i.useState((0, o.x7)(v)), T = i.useRef(b), C = i.useRef(false);
-
-  function N(e, t, n) {
-    t !== v && (A(t), S(n), c(t))
-  }
-
-  function w() {
-    return new Promise(e => {
-      e({
-        shouldClear: false,
-        shouldRefocus: true
-      })
-    })
-  }
+    pendingBio: u,
+    placeholder: b,
+    currentBio: E,
+    disabled: x = false
+  } = e, [O, C] = i.useState(null != u ? u : E), [I, T] = i.useState((0, a.x7)(O)), S = i.useRef(E), j = i.useRef(false);
   return i.useEffect(() => {
-    if (T.current !== b) {
-      let e = (0, o.x7)(b);
-      A(b), S(e)
+    if (S.current !== E) {
+      let e = (0, a.x7)(E);
+      C(E), T(e)
     }
-    T.current = b
-  }, [b]), (0, r.jsxs)(f.A, {
+    S.current = E
+  }, [E]), (0, r.jsxs)(_.A, {
     title: t,
-    titleId: m,
-    description: _.intl.string(_.t.Bbw6Ac),
+    titleId: A,
+    description: m.intl.string(m.t.Bbw6Ac),
     errors: n,
-    disabled: O,
-    children: [(0, r.jsx)(l.Ay, {
-      "aria-describedby": E,
-      "aria-labelledby": m,
-      className: h.i,
-      innerClassName: h.Z,
+    disabled: x,
+    children: [(0, r.jsx)(o.Ay, {
+      "aria-describedby": h,
+      "aria-labelledby": A,
+      className: g.i,
+      innerClassName: g.Z,
       maxCharacterCount: p.NA2,
-      onChange: N,
-      placeholder: y,
-      channel: g,
-      textValue: v,
+      onChange: function(e, t, n) {
+        t !== O && (C(t), T(n), c(t))
+      },
+      placeholder: b,
+      channel: f,
+      textValue: O,
       richValue: I,
       emojiPickerCloseOnModalOuterClick: true,
-      parentModalKey: u.USER_SETTINGS_MODAL_KEY,
+      parentModalKey: d.USER_SETTINGS_MODAL_KEY,
       type: s.oU.PROFILE_BIO_INPUT,
       onBlur: () => {
-        C.current = false
+        j.current = false
       },
       onFocus: () => {
-        C.current = true
+        j.current = true
       },
-      focused: C.current,
-      onSubmit: w
-    }), (0, r.jsx)(a.AC4, {
-      id: E,
-      children: _.intl.format(_.t["+DFxLc"], {
+      focused: j.current,
+      onSubmit: function() {
+        return new Promise(e => {
+          e({
+            shouldClear: false,
+            shouldRefocus: true
+          })
+        })
+      }
+    }), (0, r.jsx)(l.AC4, {
+      id: h,
+      children: m.intl.format(m.t["+DFxLc"], {
         maxLength: p.NA2
       })
     })]

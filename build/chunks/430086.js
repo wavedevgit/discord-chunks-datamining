@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 430086, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 430086, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Fv: () => p,
-  GY: () => _,
-  M$: () => h,
-  Oc: () => f,
-  kF: () => d
+  GY: () => m,
+  M$: () => g,
+  Oc: () => _,
+  kF: () => u
 });
 var Chunk949645 = require("./949645.js"),
   Chunk265422 = require("./265422.js"),
@@ -16,12 +15,12 @@ var Chunk949645 = require("./949645.js"),
   Chunk967198 = require("./967198.js"),
   Chunk723702 = require("./723702.js"),
   Chunk652215 = require("./652215.js");
-let d = {
+let u = {
     binds: ["alt+down"],
     comboKeysBindGlobal: true,
     action: () => ((0, r.A)(), false)
   },
-  f = {
+  _ = {
     binds: ["alt+up"],
     comboKeysBindGlobal: true,
     action: () => ((0, r.A)(false), false)
@@ -31,21 +30,21 @@ let d = {
     comboKeysBindGlobal: true,
     action() {
       let e;
-      if (null != l.A.getGuildId()) e = u.ME;
+      if (null != o.A.getGuildId()) e = d.ME;
       else {
-        let t = l.A.getLastSelectedGuildId();
-        null != t && (e = t, (0, i.i)(t, o.A.getChannelId(t)))
+        let t = o.A.getLastSelectedGuildId();
+        null != t && (e = t, (0, i.i)(t, a.A.getChannelId(t)))
       }
       return null != e && (0, s.u)(e), false
     }
   },
-  _ = {
+  m = {
     binds: (0, Chunk723702.isMac)() ? ["mod+["] : ["alt+left"],
     comboKeysBindGlobal: true,
-    action: () => ((0, a.OE)("keybind"), false)
+    action: () => ((0, l.OE)("keybind"), false)
   },
-  h = {
+  g = {
     binds: (0, Chunk723702.isMac)() ? ["mod+]"] : ["alt+right"],
     comboKeysBindGlobal: true,
-    action: () => ((0, a.Qb)("keybind"), false)
+    action: () => ((0, l.Qb)("keybind"), false)
   }

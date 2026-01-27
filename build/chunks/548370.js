@@ -2,21 +2,21 @@
 /** chunk id: 548370, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D$: () => o,
+  D$: () => s,
   s1: () => p,
   xA: () => l
 });
 var Chunk808180 = require("./808180.js"),
   Chunk624694 = require("./624694.js");
 let a = 10 * require("./927813.js").A.Millis.SECOND,
-  s = 15;
+  o = 15;
 
-function o() {
+function s() {
   return r.X.isIncomingVideoEnabled() && performance.now() - r.X.lastIncomingVideoEnabledChangeTime() > a
 }
 
 function l(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s,
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o,
     r = i.A.getAccumulatedPerformanceStats(e, t, "short"),
     a = i.A.getAccumulatedPerformanceStats(e, t, "long");
   return null == r || null == a || r.numDatapoints < n || a.numDatapoints < n ? null : {

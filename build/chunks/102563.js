@@ -7,7 +7,7 @@ require("./308060.js");
 var Chunk214958 = require("./214958.js"),
   a = require.n(Chunk214958);
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,7 +37,7 @@ window.platform = a(), null == window.ResizeObserver && (window.ResizeObserver =
       }
     }
     constructor(e = 0, t = 0, n = 0, r = 1) {
-      s(this, "x", true), s(this, "y", true), s(this, "z", true), s(this, "w", true), this.x = e, this.y = t, this.z = n, this.w = r
+      o(this, "x", true), o(this, "y", true), o(this, "z", true), o(this, "w", true), this.x = e, this.y = t, this.z = n, this.w = r
     }
   }
   null == window.DOMPoint && (window.DOMPoint = module)
@@ -71,7 +71,7 @@ window.platform = a(), null == window.ResizeObserver && (window.ResizeObserver =
       }
     }
     constructor(e = 0, t = 0, n = 0, r = 0) {
-      s(this, "x", true), s(this, "y", true), s(this, "width", true), s(this, "height", true), this.x = e, this.y = t, this.width = n, this.height = r
+      o(this, "x", true), o(this, "y", true), o(this, "width", true), o(this, "height", true), this.x = e, this.y = t, this.width = n, this.height = r
     }
   }
   null == window.DOMRect && (window.DOMRect = module)

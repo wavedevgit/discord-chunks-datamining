@@ -37,11 +37,11 @@ class _ extends Chunk439372.A {
       var t;
       if (!this.isFetchEnabled) return void this.queue.add(d.Iq);
       let n = null != (t = null == e ? true : e.forceRefresh) && t,
-        o = c.A.getLastFetchTimestamp({
+        s = c.A.getLastFetchTimestamp({
           categoryId: d.Iq
         });
-      if (n || (0, u.M9)(o)) {
-        s.h.dispatch({
+      if (n || (0, u.M9)(s)) {
+        o.h.dispatch({
           type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START",
           categoryId: d.Iq,
           reset: true
@@ -58,14 +58,14 @@ class _ extends Chunk439372.A {
             }),
             t = e.body.total,
             n = e.body.guilds.map(u.MC);
-          s.h.dispatch({
+          o.h.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS",
             categoryId: d.Iq,
             guilds: n,
             total: t
           })
         } catch (e) {
-          s.h.dispatch({
+          o.h.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE",
             categoryId: d.Iq,
             error: e
@@ -84,7 +84,7 @@ class _ extends Chunk439372.A {
         categoryId: t
       });
       if (n || (0, u.M9)(i)) {
-        s.h.dispatch({
+        o.h.dispatch({
           type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START",
           categoryId: t,
           reset: true
@@ -100,14 +100,14 @@ class _ extends Chunk439372.A {
             }),
             n = e.body.total,
             i = e.body.guilds.map(u.MC);
-          s.h.dispatch({
+          o.h.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS",
             categoryId: t,
             guilds: i,
             total: n
           })
         } catch (e) {
-          s.h.dispatch({
+          o.h.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE",
             categoryId: t,
             error: e

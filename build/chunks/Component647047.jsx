@@ -18,7 +18,7 @@ let d = e => {
       skuId: t,
       isGift: n
     } = e, {
-      analyticsLocations: o,
+      analyticsLocations: s,
       loadId: c,
       handleClose: d,
       handleComplete: f,
@@ -34,15 +34,15 @@ let d = e => {
         type: i.tVU.SPINNING_CIRCLE
       })
     }) : (0, r.jsx)(a.f5, {
-      value: o,
-      children: (0, r.jsx)(s.Ay, {
+      value: s,
+      children: (0, r.jsx)(o.Ay, {
         onClose: d,
         onComplete: f,
         transitionState: i.ip4.ENTERED,
         loadId: c,
         skuId: t,
         isGift: n,
-        analyticsLocations: o
+        analyticsLocations: s
       }, "".concat(t, "-").concat(n, "-").concat(c))
     })
   },

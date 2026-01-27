@@ -11,7 +11,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk775602 = require("./775602.js");
 
 function l(e) {
-  let t = (0, i.bG)([o.A], () => o.A.saturation);
+  let t = (0, i.bG)([s.A], () => s.A.saturation);
   return (0, r.useMemo)(() => {
     if (null == e) return null;
     let n = {
@@ -19,11 +19,11 @@ function l(e) {
       saturation: t
     };
     return {
-      overlaySyncedWithUserTheme: s.A.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME.resolve(n).hex(),
-      overlay: s.A.colors.PROFILE_GRADIENT_OVERLAY.resolve(n).hex(),
-      sectionBox: s.A.colors.PROFILE_GRADIENT_SECTION_BOX.resolve(n).hex(),
+      overlaySyncedWithUserTheme: o.A.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME.resolve(n).hex(),
+      overlay: o.A.colors.PROFILE_GRADIENT_OVERLAY.resolve(n).hex(),
+      sectionBox: o.A.colors.PROFILE_GRADIENT_SECTION_BOX.resolve(n).hex(),
       dividerOpacity: e === (0, a.$D)().DARK ? .24 : .12,
-      rolePillBackgroundColor: s.A.colors.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND.resolve(n).hex()
+      rolePillBackgroundColor: o.A.colors.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND.resolve(n).hex()
     }
   }, [e, t])
 }

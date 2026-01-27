@@ -9,7 +9,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk91242 = require("./91242.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,20 +19,20 @@ function o(e, t, n) {
 }
 class l extends Chunk439372.A {
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), s(this, "actions", {
       RPC_APP_DISCONNECTED: e => {
         this.handleRPCDisconnect(e)
       }
-    }), o(this, "handleRPCDisconnect", e => {
+    }), s(this, "handleRPCDisconnect", e => {
       let {
         reason: t,
         application: n
       } = e, r = n.id;
       if (null == r || null == t) return;
-      let o = a.A.getConnectedFrame();
-      (null == o ? true : o.applicationId) === r && (this.leaveFrame({
+      let s = a.A.getConnectedFrame();
+      (null == s ? true : s.applicationId) === r && (this.leaveFrame({
         applicationId: r
-      }), t.code !== s.YI$.CLOSE_NORMAL && (i.default.track(s.HAw.ACTIVITY_CLOSED_RPC_ERROR, {
+      }), t.code !== o.YI$.CLOSE_NORMAL && (i.default.track(o.HAw.ACTIVITY_CLOSED_RPC_ERROR, {
         rpc_close_code: t.code,
         rpc_message: t.message,
         application_id: r
@@ -40,4 +40,4 @@ class l extends Chunk439372.A {
     })
   }
 }
-o(l, "displayName", "FramesManager")
+s(l, "displayName", "FramesManager")

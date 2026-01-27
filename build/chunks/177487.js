@@ -15,10 +15,10 @@ function a(e, t) {
   if (true !== n && true !== e) try {
     return new n(e).decode(t instanceof DataView ? t.buffer : Uint8Array.from(t))
   } catch (e) {}
-  return s(t.map(e => String.fromCharCode(e)).join(""))
+  return o(t.map(e => String.fromCharCode(e)).join(""))
 }
 
-function s(e) {
+function o(e) {
   try {
     return decodeURIComponent(escape(e))
   } catch (t) {

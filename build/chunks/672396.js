@@ -3,23 +3,23 @@
 "use strict";
 require.d(exports, {
   BR: () => l,
-  Jr: () => s,
+  Jr: () => o,
   KS: () => c,
   Kv: () => d,
   Li: () => f,
   OX: () => i,
-  Vo: () => o,
+  Vo: () => s,
   ed: () => a,
   uj: () => u
 });
 var Chunk723702 = require("./723702.js");
 let i = Chunk723702.isPlatformEmbedded && ((0, Chunk723702.isWindows)() || false),
   a = false;
-var s = function(e) {
+var o = function(e) {
   return e[e.WELCOME = 0] = "WELCOME", e[e.NEWS = 1] = "NEWS", e[e.GO_LIVE_VOICE = 2] = "GO_LIVE_VOICE", e[e.GO_LIVE_NON_VOICE = 3] = "GO_LIVE_NON_VOICE", e[e.KEYBIND_INDICATORS = 4] = "KEYBIND_INDICATORS", e[e.CONTENT_INVENTORY = 5] = "CONTENT_INVENTORY", e
 }({});
 
-function o(e) {
+function s(e) {
   switch (e) {
     case "News Nudge":
     case "Welcome Nudge":

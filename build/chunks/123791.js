@@ -32,5 +32,5 @@ function p(e) {
 }
 
 function _(e) {
-  (0, a.V)(e), (0, o.JI)(e), c.default.isAuthenticated() && (0, s.LM)(e, false)
+  (0, a.V)(e), (0, s.JI)(e), c.default.isAuthenticated() && (0, o.LM)(e, false)
 }

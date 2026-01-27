@@ -10,7 +10,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk954571 = require("./954571.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,15 +26,15 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
 }
 
 function c(e) {
-  a.default.track(s.HAw.OPEN_MODAL, {
-    type: s.JJy.STICKER_PREMIUM_TIER_2_UPSELL_MODAL,
+  a.default.track(o.HAw.OPEN_MODAL, {
+    type: o.JJy.STICKER_PREMIUM_TIER_2_UPSELL_MODAL,
     location: e
   }), (0, i.mMO)(async () => {
     let {

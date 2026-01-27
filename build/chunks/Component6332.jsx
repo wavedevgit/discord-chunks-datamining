@@ -15,12 +15,12 @@ let l = function(e) {
     billingAddressInfo: n
   } = e, l = i.useRef(null);
   return (0, r.jsx)("div", {
-    className: o.r,
+    className: s.r,
     children: (0, r.jsx)(a.ksK, {
-      label: s.intl.string(s.t.sN3wrd),
+      label: o.intl.string(o.t.sN3wrd),
       inputRef: l,
-      name: s.intl.string(s.t.sN3wrd),
-      placeholder: s.intl.string(s.t.sN3wrd),
+      name: o.intl.string(o.t.sN3wrd),
+      placeholder: o.intl.string(o.t.sN3wrd),
       onChange: e => t(e),
       value: n.name
     })

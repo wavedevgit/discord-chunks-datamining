@@ -44,7 +44,7 @@ function w(e) {
 }
 
 function R(e, t, n) {
-  return o.Bo.get({
+  return s.Bo.get({
     url: "".concat(O).concat(e),
     query: t,
     headers: {
@@ -89,15 +89,15 @@ class D {
       } = await R("/streams", {
         user_id: e.id,
         first: 1
-      }, t), s = a[0];
-      if (null == s || "live" !== s.type) throw Error("no stream");
+      }, t), o = a[0];
+      if (null == o || "live" !== o.type) throw Error("no stream");
       let {
-        thumbnail_url: o,
+        thumbnail_url: s,
         game_id: l,
         title: c
-      } = s, f = {
-        large_image: null != o && null != (n = (0, d.Di)(h.fg2.TWITCH, o)) ? n : true
-      }, p = await P(l, t), _ = u.A.get(h.fg2.TWITCH), m = null != (r = w(o)) ? r : e.name, g = null != c && "" !== c ? c.slice(0, A) : true, E = null != p && "" !== p ? p.slice(0, A) : true;
+      } = o, f = {
+        large_image: null != s && null != (n = (0, d.Di)(h.fg2.TWITCH, s)) ? n : true
+      }, p = await P(l, t), _ = u.A.get(h.fg2.TWITCH), m = null != (r = w(s)) ? r : e.name, g = null != c && "" !== c ? c.slice(0, A) : true, E = null != p && "" !== p ? p.slice(0, A) : true;
       return {
         url: null == (i = _.getPlatformUserUrl) ? true : i.call(_, {
           id: e.id,
@@ -122,7 +122,7 @@ class D {
         body: {
           items: r
         }
-      } = await o.Bo.get({
+      } = await s.Bo.get({
         url: "https://www.googleapis.com/youtube/v3/liveBroadcasts",
         query: {
           part: "id,snippet",
@@ -140,10 +140,10 @@ class D {
         id: i,
         snippet: {
           title: a,
-          thumbnails: s
+          thumbnails: o
         }
       } = r[0], l = {
-        large_image: null != (n = (0, d.Di)(h.fg2.YOUTUBE, s.high.url)) ? n : true
+        large_image: null != (n = (0, d.Di)(h.fg2.YOUTUBE, o.high.url)) ? n : true
       }, c = null != a && "" !== a ? a.slice(0, A) : true;
       return T = {
         url: y(i),
@@ -182,27 +182,27 @@ class D {
     m(this, "_nextCheck", true), m(this, "_started", true), this._started = false
   }
 }
-let x = new D;
+let L = new D;
 
-function L() {
-  _.A.enabled ? x.start() : x.stop()
+function x() {
+  _.A.enabled ? L.start() : L.stop()
 }
 
-function j(e) {
+function M(e) {
   var t;
   if (a()(e.stream, I)) returnfalse;
   I = null != (t = e.stream) ? t : null
 }
-class M extends(r = Chunk311907.Ay.Store) {
+class j extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    L(), this.waitFor(p.A, _.A), this.syncWith([_.A], L)
+    x(), this.waitFor(p.A, _.A), this.syncWith([_.A], x)
   }
   getStream() {
     return I
   }
 }
-m(M, "displayName", "ExternalStreamingStore");
-let k = new M(Chunk73153.h, {
-  STREAMING_UPDATE: j,
-  USER_CONNECTIONS_UPDATE: () => x._check()
+m(j, "displayName", "ExternalStreamingStore");
+let k = new j(Chunk73153.h, {
+  STREAMING_UPDATE: M,
+  USER_CONNECTIONS_UPDATE: () => L._check()
 })

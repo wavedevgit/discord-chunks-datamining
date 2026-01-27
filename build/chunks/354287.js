@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   KL: () => l,
-  gx: () => s,
+  gx: () => o,
   kY: () => a,
-  wV: () => o
+  wV: () => s
 });
 var Chunk954571 = require("./954571.js"),
   Chunk652215 = require("./652215.js"),
@@ -13,32 +13,32 @@ var Chunk954571 = require("./954571.js"),
     return e.VIEW = "view", e.PLAY = "play", e.CLOUD_PLAY = "cloud_play", e.JOIN = "join", e.ADD_APP = "add_app", e.JOIN_SERVER = "join_server", e.INVITE = "invite", e.SYNC = "sync", e.CONTENT = "content", e.BANNER = "banner", e.STREAM = "stream", e.CONNECT_ACCOUNT = "connect_account", e
   }({});
 
-function s(e) {
+function o(e) {
   let {
     applicationId: t,
     linkType: n,
     area: a,
-    referrerId: s,
-    customId: o,
+    referrerId: o,
+    customId: s,
     isDeadEnd: l
   } = e;
   r.default.track(i.HAw.APP_EMBED_CLICKED, {
     application_id: t,
     link_type: n,
     area: a,
-    referrer_id: s,
-    custom_id: o,
+    referrer_id: o,
+    custom_id: s,
     is_dead_end: l
   })
 }
 
-function o(e) {
+function s(e) {
   let {
     appId: t,
     linkType: n,
     referrerId: a,
-    customId: s,
-    guildId: o,
+    customId: o,
+    guildId: s,
     channelId: l,
     messageId: c
   } = e;
@@ -46,8 +46,8 @@ function o(e) {
     application_id: t,
     link_type: n,
     referrer_id: a,
-    custom_id: s,
-    guild_id: o,
+    custom_id: o,
+    guild_id: s,
     channel_id: l,
     message_id: c
   })

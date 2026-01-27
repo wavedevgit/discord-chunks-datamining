@@ -9,7 +9,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk927813 = require("./927813.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -67,7 +67,7 @@ function h(e) {
     retryAfterSeconds: t
   } = e;
   if (c.fetchState = 3, null != t) {
-    let e = t * s.A.Millis.SECOND;
+    let e = t * o.A.Millis.SECOND;
     c.nextFetchRetryTimeMs = Date.now() + e
   }
 }
@@ -114,7 +114,7 @@ class E extends(r = Chunk311907.Ay.PersistedStore) {
     return c.fetchState
   }
 }
-o(E, "displayName", "MyGuildApplicationsStore"), o(E, "persistKey", "MyGuildApplicationsStore");
+s(E, "displayName", "MyGuildApplicationsStore"), s(E, "persistKey", "MyGuildApplicationsStore");
 let y = new E(Chunk73153.h, {
   LOGOUT: u,
   FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS: d,

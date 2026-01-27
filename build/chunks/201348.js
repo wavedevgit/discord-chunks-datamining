@@ -24,16 +24,16 @@ function u(e, t) {
     r = [],
     i = [],
     a = [],
-    s = (0, l.m)(e),
-    o = s.dtstart,
-    c = s.tzid;
+    o = (0, l.m)(e),
+    s = o.dtstart,
+    c = o.tzid;
   return g(e, t.unfold).forEach(function(e) {
     if (e) {
-      var t, s = m(e),
-        o = s.name,
-        u = s.parms,
-        d = s.value;
-      switch (o.toUpperCase()) {
+      var t, o = m(e),
+        s = o.name,
+        u = o.parms,
+        d = o.value;
+      switch (s.toUpperCase()) {
         case "RRULE":
           if (u.length) throw Error("unsupported RRULE parm: ".concat(u.join(",")));
           n.push((0, l.$)(e));
@@ -53,11 +53,11 @@ function u(e, t) {
         case "DTSTART":
           break;
         default:
-          throw Error("unsupported property: " + o)
+          throw Error("unsupported property: " + s)
       }
     }
   }), {
-    dtstart: o,
+    dtstart: s,
     tzid: c,
     rrulevals: n,
     rdatevals: r,
@@ -69,19 +69,19 @@ function u(e, t) {
 function d(e, t) {
   var n = u(e, t),
     r = n.rrulevals,
-    s = n.rdatevals,
-    o = n.exrulevals,
+    o = n.rdatevals,
+    s = n.exrulevals,
     l = n.exdatevals,
     c = n.dtstart,
     d = n.tzid,
     f = false === t.cache;
-  if (t.compatible && (t.forceset = true, t.unfold = true), t.forceset || r.length > 1 || s.length || o.length || l.length) {
+  if (t.compatible && (t.forceset = true, t.unfold = true), t.forceset || r.length > 1 || o.length || s.length || l.length) {
     var _ = new a.D(f);
     return _.dtstart(c), _.tzid(d || true), r.forEach(function(e) {
       _.rrule(new i.p3(p(e, c, d), f))
-    }), s.forEach(function(e) {
-      _.rdate(e)
     }), o.forEach(function(e) {
+      _.rdate(e)
+    }), s.forEach(function(e) {
       _.exrule(new i.p3(p(e, c, d), f))
     }), l.forEach(function(e) {
       _.exdate(e)
@@ -107,7 +107,7 @@ function _(e) {
     n = Object.keys(e),
     i = Object.keys(c);
   if (n.forEach(function(e) {
-      (0, o.mK)(i, e) || t.push(e)
+      (0, s.mK)(i, e) || t.push(e)
     }), t.length) throw Error("Invalid options: " + t.join(", "));
   return (0, r.Cl)((0, r.Cl)({}, c), e)
 }
@@ -117,7 +117,7 @@ function h(e) {
     name: "RRULE",
     value: e
   };
-  var t = (0, o.lD)(e, ":", 1);
+  var t = (0, s.lD)(e, ":", 1);
   return {
     name: t[0],
     value: t[1]
@@ -155,6 +155,6 @@ function E(e) {
 
 function y(e, t) {
   return E(t), e.split(",").map(function(e) {
-    return (0, s.lP)(e)
+    return (0, o.lP)(e)
   })
 }

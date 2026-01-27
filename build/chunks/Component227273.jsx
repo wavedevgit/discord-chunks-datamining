@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 227273, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 227273, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => x
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,131 +19,125 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk657989 = require("./657989.js");
-
-function y(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function b(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      y(e, t, n[t])
-    })
-  }
-  return e
-}
-let O = e => e ? g.intl.string(g.t.QX14gI) : g.intl.string(g.t.RGadQR),
-  v = e => {
+let b = e => {
     let {
       isShowingAll: t,
       onClick: n
     } = e;
-    return (0, r.jsxs)(l.DUT, {
+    return (0, r.jsxs)(o.DUT, {
       onClick: n,
-      className: E.customButton,
-      children: [t ? g.intl.string(g.t.maZaN3) : g.intl.string(g.t["37C26f"]), t ? (0, r.jsx)(l.tN5, {
+      className: h.customButton,
+      children: [t ? f.intl.string(f.t.maZaN3) : f.intl.string(f.t["37C26f"]), t ? (0, r.jsx)(o.tN5, {
         size: "md",
         color: "currentColor",
-        className: E.arrow
-      }) : (0, r.jsx)(l.abt, {
+        className: h.arrow
+      }) : (0, r.jsx)(o.abt, {
         size: "md",
         color: "currentColor",
-        className: E.arrow
+        className: h.arrow
       })]
     })
   },
-  A = e => {
+  E = e => {
     let {
       title: t,
       description: n,
       className: i,
-      imageSource: a,
-      imageClassName: o,
+      imageSource: l,
+      imageClassName: a,
       titleBadge: c,
-      isNew: _ = false,
-      isEarlyAccess: h = false
+      isNew: m = false,
+      isEarlyAccess: g = false
     } = e, {
-      analyticsLocations: m
-    } = (0, d.Ay)(u.A.PREMIUM_MARKETING_PERK_CARD);
-    return (0, r.jsx)(d.f5, {
-      value: m,
+      analyticsLocations: A
+    } = (0, u.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD);
+    return (0, r.jsx)(u.f5, {
+      value: A,
       children: (0, r.jsxs)("div", {
-        className: s()(E.perkCard, i),
-        children: [_ ? (0, r.jsx)(p.A, {
-          className: E.perkCardNewBadge,
+        className: s()(h.perkCard, i),
+        children: [m ? (0, r.jsx)(p.A, {
+          className: h.perkCardNewBadge,
           shouldInheritBackgroundColor: true,
           shouldInheritTextColor: true
-        }) : null, h ? (0, r.jsx)(f.A, {
-          className: E.perkCardEarlyAccessBadge
+        }) : null, g ? (0, r.jsx)(_.A, {
+          className: h.perkCardEarlyAccessBadge
         }) : null, (0, r.jsx)("img", {
-          src: a,
+          src: l,
           alt: "",
-          className: s()(o, E.perksCardArt)
+          className: s()(a, h.perksCardArt)
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsxs)(l.Heading, {
+          children: [(0, r.jsxs)(o.Heading, {
             variant: "heading-lg/extrabold",
-            className: E.perkCardHeading,
+            className: h.perkCardHeading,
             children: [t, " ", c]
-          }), (0, r.jsx)(l.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
-            className: E.perkCardDescription,
-            children: "function" == typeof n ? n(m) : n
+            className: h.perkCardDescription,
+            children: "function" == typeof n ? n(A) : n
           })]
         })]
       })
     })
   },
-  I = e => {
+  x = e => {
     let {
       className: t,
       isSubscriberNitroHome: n = false
-    } = e, [a, u] = i.useState(false), f = (0, h.d)({
-      styles: E
-    }), p = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
-      analyticsLocations: g
-    } = (0, d.Ay)(), y = () => {
-      _.default.track(m.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
-        location_stack: g,
-        was_expanded: a
-      }), u(!a)
-    }, I = [f.emoji, f.streaming, f.upload, f.customAppIcons, f.soundboard, f.videoBackground, f.superReactions, f.stickersPremiumPerk, f.badgeAlt];
+    } = e, [l, d] = i.useState(false), _ = (0, g.d)({
+      styles: h
+    }), p = (0, a.bG)([c.A], () => c.A.useReducedMotion), {
+      analyticsLocations: x
+    } = (0, u.Ay)(), O = [_.emoji, _.streaming, _.upload, _.customAppIcons, _.soundboard, _.videoBackground, _.superReactions, _.stickersPremiumPerk, _.badgeAlt];
     return (0, r.jsxs)("div", {
-      className: s()(E.perksContainer, t, {
-        [E.partiallyHidden]: n && !a,
-        [E.subscriberNitroHome]: n,
-        [E.reducedMotion]: p
+      className: s()(h.perksContainer, t, {
+        [h.partiallyHidden]: n && !l,
+        [h.subscriberNitroHome]: n,
+        [h.reducedMotion]: p
       }),
-      children: [(0, r.jsx)(l.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-xxl/extrabold",
-        className: E.perksTitle,
-        children: O(n)
+        className: h.perksTitle,
+        children: n ? f.intl.string(f.t.QX14gI) : f.intl.string(f.t.RGadQR)
       }), (0, r.jsx)("div", {
-        className: s()(E.perkCardContainer, {
-          [E.perkCardContainerExpanded]: a
+        className: s()(h.perkCardContainer, {
+          [h.perkCardContainerExpanded]: l
         }),
-        children: I.map(e => null != e && (0, r.jsx)(A, b({}, e), e.title))
+        children: O.map(e => null != e && (0, r.jsx)(E, function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, e), e.title))
       }), n && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: s()({
-            [E.sizeGizmo]: !a,
-            [E.sizeGizmoExpanded]: a
+            [h.sizeGizmo]: !l,
+            [h.sizeGizmoExpanded]: l
           }),
-          children: (0, r.jsx)(v, {
-            onClick: y,
-            isShowingAll: a
+          children: (0, r.jsx)(b, {
+            onClick: () => {
+              m.default.track(A.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
+                location_stack: x,
+                was_expanded: l
+              }), d(!l)
+            },
+            isShowingAll: l
           })
         }), (0, r.jsx)("div", {
-          className: s()(E.cover, {
-            [E.hidden]: a
+          className: s()(h.cover, {
+            [h.hidden]: l
           })
         })]
       })]

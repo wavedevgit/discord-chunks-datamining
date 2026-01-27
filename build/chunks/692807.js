@@ -1,15 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 692807, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 692807, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk869639 = require("./869639.js");
-module.exports = function(e) {
-  var t = e.getSelection(),
-    n = t.getStartKey();
-  return r.set(e, {
-    selection: t.merge({
-      anchorKey: n,
+module.exports = function(t) {
+  var e = t.getSelection(),
+    r = e.getStartKey();
+  return n.set(t, {
+    selection: e.merge({
+      anchorKey: r,
       anchorOffset: 0,
-      focusKey: n,
+      focusKey: r,
       focusOffset: 0,
       isBackward: false
     }),

@@ -5,7 +5,7 @@ require.d(exports, {
   US: () => r,
   YL: () => a,
   aI: () => i,
-  gH: () => s
+  gH: () => o
 });
 var r = function(e) {
     return e.ANIMATED = "ANIMATED", e.INSTANT = "INSTANT", e
@@ -16,7 +16,7 @@ var r = function(e) {
   a = function(e) {
     return e[e.QUNS_UNKNOWN = false] = "QUNS_UNKNOWN", e[e.QUNS_NOT_PRESENT = 1] = "QUNS_NOT_PRESENT", e[e.QUNS_BUSY = 2] = "QUNS_BUSY", e[e.QUNS_RUNNING_D3D_FULL_SCREEN = 3] = "QUNS_RUNNING_D3D_FULL_SCREEN", e[e.QUNS_PRESENTATION_MODE = 4] = "QUNS_PRESENTATION_MODE", e[e.QUNS_ACCEPTS_NOTIFICATIONS = 5] = "QUNS_ACCEPTS_NOTIFICATIONS", e[e.QUNS_QUIET_TIME = 6] = "QUNS_QUIET_TIME", e[e.QUNS_APP = 7] = "QUNS_APP", e
   }({});
-let s = {
+let o = {
   compatibilityHook: false,
   warn: false,
   enabled: false,

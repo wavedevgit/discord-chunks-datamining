@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   SV: () => l,
-  t1: () => o
+  t1: () => s
 }), require("./65821.js");
 var Chunk315069 = require("./315069.js"),
   Chunk652215 = require("./652215.js"),
   Chunk654487 = require("./654487.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,11 +17,11 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var o = function(e) {
+var s = function(e) {
   return e.SHOP = "SHOP", e.SHOP_ORBS_TAB = "SHOP_ORBS_TAB", e.NITRO_HOME = "NITRO_HOME", e.QUEST_HOME = "QUEST_HOME", e.QUEST_ORBS = "QUEST_ORBS", e.APPS_HOME = "APPS_HOME", e.SETTINGS = "SETTINGS", e.PLAYGROUND = "PLAYGROUND", e
-}(o || {});
+}(s || {});
 class l extends Chunk315069.A {
-  static fromType(e, t, n, r, s) {
+  static fromType(e, t, n, r, o) {
     switch (e) {
       case "SHOP":
         return new l({
@@ -55,7 +55,7 @@ class l extends Chunk315069.A {
           type: "PLAYGROUND",
           label: n,
           collectionId: r,
-          IconComponent: s
+          IconComponent: o
         });
       case "SHOP_ORBS_TAB":
         return new l({
@@ -72,6 +72,6 @@ class l extends Chunk315069.A {
     }
   }
   constructor(e) {
-    super(), s(this, "id", true), s(this, "path", true), s(this, "type", true), s(this, "label", true), s(this, "collectionId", true), s(this, "IconComponent", true), this.id = null != e.collectionId ? "".concat(e.type, "_").concat(e.collectionId) : e.type, this.path = e.path, this.type = e.type, this.label = e.label, this.collectionId = e.collectionId, this.IconComponent = e.IconComponent
+    super(), o(this, "id", true), o(this, "path", true), o(this, "type", true), o(this, "label", true), o(this, "collectionId", true), o(this, "IconComponent", true), this.id = null != e.collectionId ? "".concat(e.type, "_").concat(e.collectionId) : e.type, this.path = e.path, this.type = e.type, this.label = e.label, this.collectionId = e.collectionId, this.IconComponent = e.IconComponent
   }
 }

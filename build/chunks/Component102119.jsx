@@ -2,12 +2,12 @@
 /** chunk id: 102119, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => j
+  A: () => M
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk732955 = require("./732955.js"),
   Chunk421380 = require("./421380.js"),
@@ -35,13 +35,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk378399 = require("./378399.js");
 let D = () => {
     var e, t, n;
-    let i = (0, o.bG)([O.default], () => A.Ay.isPremium(O.default.getCurrentUser())),
+    let i = (0, s.bG)([O.default], () => A.Ay.isPremium(O.default.getCurrentUser())),
       a = (0, m.V)(),
-      s = (null == a || null == (e = a.subscription_trial) ? true : e.sku_id) === w.pe.TIER_2;
+      o = (null == a || null == (e = a.subscription_trial) ? true : e.sku_id) === w.pe.TIER_2;
     return (0, r.jsx)(g.A, {
       size: c.$n.Sizes.MEDIUM,
       textOptions: {
-        textOverride: i ? R.intl.string(R.t.IJI7yk) : s ? (0, A.FY)({
+        textOverride: i ? R.intl.string(R.t.IJI7yk) : o ? (0, A.FY)({
           intervalType: null == a || null == (t = a.subscription_trial) ? true : t.interval,
           intervalCount: null == a || null == (n = a.subscription_trial) ? true : n.interval_count
         }) : R.intl.string(R.t.mr4K7D)
@@ -49,7 +49,7 @@ let D = () => {
       subscriptionTier: w.pe.TIER_2
     })
   },
-  x = e => {
+  L = e => {
     let {
       markAsDismissed: t
     } = e, n = () => {
@@ -76,11 +76,11 @@ let D = () => {
       })]
     })
   },
-  L = e => {
+  x = e => {
     let {
       isCoachmark: t,
       markAsDismissed: n
-    } = e, i = (0, o.bG)([S.A], () => S.A.isUpsellPreview), a = () => {
+    } = e, i = (0, s.bG)([S.A], () => S.A.isUpsellPreview), a = () => {
       null == n || n(N.i.DISMISS), (0, h.Jp)(), (0, I.U)(), t || (0, b.openUserSettings)(y.X.APPEARANCE_PANEL, {
         section: C.nc_.APPEARANCE
       })
@@ -96,16 +96,16 @@ let D = () => {
     })
   };
 
-function j(e) {
+function M(e) {
   let {
     isCoachmark: t,
     markAsDismissed: n
   } = e, {
     analyticsLocations: a
-  } = (0, _.Ay)(p.A.APP_ICON_EDITOR), l = (0, o.bG)([O.default], () => O.default.getCurrentUser()), {
+  } = (0, _.Ay)(p.A.APP_ICON_EDITOR), l = (0, s.bG)([O.default], () => O.default.getCurrentUser()), {
     isUpsellPreview: c,
     shouldEditorAnimate: m
-  } = (0, o.cf)([S.A, f.A], () => ({
+  } = (0, s.cf)([S.A, f.A], () => ({
     isUpsellPreview: S.A.isUpsellPreview,
     shouldEditorAnimate: t && !f.A.useReducedMotion
   })), g = h.fy.getState().activePanel === h.HP.APP_ICON;
@@ -122,10 +122,10 @@ function j(e) {
     value: a,
     children: (0, r.jsx)("div", {
       ref: E,
-      className: s()(P.EN, m ? P.hP : null),
+      className: o()(P.EN, m ? P.hP : null),
       "data-app-right-panel": true,
       children: (0, r.jsxs)(u.Fmo, {
-        children: [(0, r.jsx)(x, {
+        children: [(0, r.jsx)(L, {
           markAsDismissed: n
         }), (0, r.jsx)(u.HOs, {
           className: P.sV,
@@ -133,7 +133,7 @@ function j(e) {
             className: P.Gg,
             isEditor: true
           })
-        }), (0, r.jsx)(L, {
+        }), (0, r.jsx)(x, {
           markAsDismissed: n,
           isCoachmark: t
         })]

@@ -17,7 +17,7 @@ var Chunk602137 = require("./602137.js"),
   Chunk985018 = require("./985018.jsx");
 
 function u(e, t) {
-  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.Ay];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.Ay];
   return {
     isNew: !e.isArchivedThread() && n.isNewForumThread(e.id, e.parent_id, t),
     hasUnreads: !e.isArchivedThread() && n.isForumPostUnread(e.id)
@@ -25,10 +25,10 @@ function u(e, t) {
 }
 
 function d(e) {
-  let [t, n, r] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [i.A, a.A, s.Ay], o = t.getChannel(e);
-  if (null == o) return null;
-  let l = n.getGuild(o.guild_id);
-  return null == l ? null : u(o, l, [r])
+  let [t, n, r] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [i.A, a.A, o.Ay], s = t.getChannel(e);
+  if (null == s) return null;
+  let l = n.getGuild(s.guild_id);
+  return null == l ? null : u(s, l, [r])
 }
 let f = () => ({
   minutes: c.t.nFt9ck,
@@ -38,7 +38,7 @@ let f = () => ({
 });
 
 function p(e, t) {
-  if (t === o.EG.POSTED_DURATION_AGO && e === r.T.CREATION_DATE) return f
+  if (t === s.EG.POSTED_DURATION_AGO && e === r.T.CREATION_DATE) return f
 }
 
 function _(e, t) {

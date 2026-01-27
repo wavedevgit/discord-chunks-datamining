@@ -1,18 +1,18 @@
 /** Chunk was on 16674 **/
 /** chunk id: 636153, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  q: () => a
+  q: () => s
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk383501 = require("./383501.js"),
   Chunk814278 = require("./814278.js");
 
-function a(e) {
+function s(e) {
   let {
     userId: t
-  } = e, r = (0, l.bG)([u.A], () => u.A.getSecureFramesRosterMapEntry(t)), [a, s] = n.useState(true), [c, o] = n.useState(false), [f, d] = n.useState(false), E = n.useCallback(async (e, t) => {
-    s(true);
+  } = e, r = (0, l.bG)([u.A], () => u.A.getSecureFramesRosterMapEntry(t)), [s, a] = n.useState(true), [c, o] = n.useState(false), [f, d] = n.useState(false), E = n.useCallback(async (e, t) => {
+    a(true);
     try {
       let r = await (0, i.A5)(1),
         n = await (0, i.iO)(e, t, 1);
@@ -20,13 +20,13 @@ function a(e) {
     } catch (e) {
       o(false), d(false)
     } finally {
-      s(false)
+      a(false)
     }
   }, []);
   return n.useEffect(() => {
-    null == r ? (o(false), d(false), s(false)) : E(t, r)
+    null == r ? (o(false), d(false), a(false)) : E(t, r)
   }, [r, E, t]), {
-    loading: a,
+    loading: s,
     isCurrentUserKeyPersistent: c,
     isOtherUserKeyPersistent: f
   }

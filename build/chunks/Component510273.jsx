@@ -46,8 +46,8 @@ let w = e => {
     let {
       product: t,
       itemConsumed: r,
-      forCollectedModal: n
-    } = e, s = (0, d.A)({
+      forCollectedModal: s
+    } = e, n = (0, d.A)({
       location: "CollectiblesProductPreview"
     }), m = (0, c.bG)([p.default], () => p.default.getCurrentUser());
     if (null == m) return null;
@@ -56,8 +56,8 @@ let w = e => {
       className: b.NM,
       children: (0, i.jsx)(f.A, {
         skuId: P.skuId,
-        delayProfileEffectIntro: n,
-        withScaleAnimation: n
+        delayProfileEffectIntro: s,
+        withScaleAnimation: s
       })
     });
     if (t.type === a.R.AVATAR_DECORATION) return (0, i.jsx)(h.i, {
@@ -81,13 +81,13 @@ let w = e => {
         product: t,
         user: m,
         isHighlighted: true,
-        forCollectedModal: n
+        forCollectedModal: s
       })
     });
     if (t.type === a.R.EXTERNAL_SKU) {
       if (Object.values(l.j).includes(t.skuId))
         if (r) return (0, i.jsx)("img", {
-          src: s ? x : v,
+          src: n ? x : v,
           alt: j.intl.string(j.t.t0xkSB),
           style: {
             width: "100%"
@@ -107,7 +107,7 @@ let w = e => {
     let {
       reducedMotion: t,
       displayOptions: r
-    } = e, [a, l] = n.useState(false), c = (0, o.zhh)({
+    } = e, [a, l] = s.useState(false), c = (0, o.zhh)({
       from: {
         transform: "translateX(100%)",
         right: "-100%"
@@ -150,11 +150,11 @@ let w = e => {
       delay: 600
     }, "animate-always");
     return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(s.animated.div, {
+      children: [(0, i.jsx)(n.animated.div, {
         className: b.VH,
         style: c,
         children: (0, i.jsx)(w, P({}, e))
-      }), (0, i.jsx)(s.animated.div, {
+      }), (0, i.jsx)(n.animated.div, {
         className: b.VH,
         style: t ? d : u,
         children: (0, i.jsx)("img", {
@@ -169,9 +169,9 @@ let w = e => {
 
 function _(e) {
   var t, r;
-  let n = (0, m.K9)(e.product.categorySkuId);
-  return null != n ? (0, i.jsx)(E, (t = P({}, e), r = r = {
-    displayOptions: n
+  let s = (0, m.K9)(e.product.categorySkuId);
+  return null != s ? (0, i.jsx)(E, (t = P({}, e), r = r = {
+    displayOptions: s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

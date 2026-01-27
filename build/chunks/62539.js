@@ -7,9 +7,9 @@ require.d(exports, {
 }), require("./896048.js"), require("./321073.js");
 var r, Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438);
+  o = require.n(Chunk735438);
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,8 +26,8 @@ class c extends(r = Chunk64700.PureComponent) {
       totalPageCount: e,
       maxVisiblePages: t,
       selectedPage: n
-    } = this.props, r = Math.ceil(t / 2), i = Math.floor(t / 2), a = [1, e], [s, o] = a = n <= r ? [1, t] : n > e - i ? [e - t + 1, e] : [n - r + 1, n + i];
-    return [Math.max(s, 1), Math.min(o, e)]
+    } = this.props, r = Math.ceil(t / 2), i = Math.floor(t / 2), a = [1, e], [o, s] = a = n <= r ? [1, t] : n > e - i ? [e - t + 1, e] : [n - r + 1, n + i];
+    return [Math.max(o, 1), Math.min(s, e)]
   }
   getPageList() {
     let {
@@ -40,7 +40,7 @@ class c extends(r = Chunk64700.PureComponent) {
       disabled: 1 === t,
       selected: false,
       navigateToPage: this.handleBackward
-    }, o = {
+    }, s = {
       type: "NEXT",
       key: "next",
       disabled: t === e,
@@ -63,14 +63,14 @@ class c extends(r = Chunk64700.PureComponent) {
       key: "page-".concat(e),
       targetPage: e,
       navigateToPage: () => this.handleJump(e)
-    }), i -= 2), [a, ...l, ...s().range(r, i + 1).map(e => ({
+    }), i -= 2), [a, ...l, ...o().range(r, i + 1).map(e => ({
       type: "PAGE",
       key: "page-".concat(e),
       targetPage: e,
       selected: e === t,
       disabled: false,
       navigateToPage: () => this.handleJump(e)
-    })), ...c, o]
+    })), ...c, s]
   }
   render() {
     let {
@@ -83,22 +83,22 @@ class c extends(r = Chunk64700.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), o(this, "changePageTo", e => {
+    super(...e), s(this, "changePageTo", e => {
       let {
         selectedPage: t,
         onPageChange: n
       } = this.props;
       t !== e && null != n && n(e)
-    }), o(this, "handleForward", () => {
+    }), s(this, "handleForward", () => {
       this.changePageTo(Math.min(this.props.selectedPage + 1, this.props.totalPageCount))
-    }), o(this, "handleBackward", () => {
+    }), s(this, "handleBackward", () => {
       this.changePageTo(Math.max(this.props.selectedPage - 1, 1))
-    }), o(this, "handleJump", e => {
+    }), s(this, "handleJump", e => {
       this.changePageTo(e)
     })
   }
 }
-o(c, "defaultProps", {
+s(c, "defaultProps", {
   maxVisiblePages: 9,
   hideMaxPage: false
 })

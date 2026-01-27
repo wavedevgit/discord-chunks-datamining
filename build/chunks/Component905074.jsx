@@ -1,4 +1,4 @@
-/** Chunk was on 58652 **/
+/** Chunk was on 12236 **/
 /** chunk id: 905074, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -32,16 +32,16 @@ function b(e) {
     }
   }(e)
 }
-let x = e => {
+let _ = e => {
     let {
       data: {
         title: t,
         subtitle: n,
         placeholder: u,
-        message_link_title: x,
+        message_link_title: _,
         message_link_placeholder: g
       },
-      onChange: _,
+      onChange: x,
       initialContentUrl: h,
       initialMessageUrl: v,
       isRequired: f
@@ -76,50 +76,50 @@ let x = e => {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e))
-    }, []), [A, y] = r.useState(""), [O, S] = r.useState(""), [T, N] = r.useState(null), [k, w] = r.useState(null), [C, P] = r.useState(false);
+    }, []), [A, y] = r.useState(""), [O, S] = r.useState(""), [T, N] = r.useState(null), [k, w] = r.useState(null), [C, I] = r.useState(false);
     r.useEffect(() => {
       var e, t;
-      y(null != (e = null == h ? true : h.value) ? e : ""), S(null != (t = null == v ? true : v.value) ? t : ""), (null == h ? true : h.value) != null && "" !== h.value && P(b(h.value))
+      y(null != (e = null == h ? true : h.value) ? e : ""), S(null != (t = null == v ? true : v.value) ? t : ""), (null == h ? true : h.value) != null && "" !== h.value && I(b(h.value))
     }, [h, v]);
-    let I = r.useCallback(e => {
+    let P = r.useCallback(e => {
         if (y(e), "" === e) {
-          N(null), P(false), S(""), w(null), _({
+          N(null), I(false), S(""), w(null), x({
             value: e,
             isValid: false
           });
           return
         }
         if (!p(e)) {
-          N(o.intl.string(o.t["24xrGb"])), P(false), S(""), w(null), _({
+          N(o.intl.string(o.t["24xrGb"])), I(false), S(""), w(null), x({
             value: e,
             isValid: false
           });
           return
         }
         let t = b(e);
-        P(t), N(null), t ? "" === O ? _({
+        I(t), N(null), t ? "" === O ? x({
           value: e,
           isValid: false
-        }) : m.test(O) ? _({
+        }) : m.test(O) ? x({
           value: e,
           isValid: true
         }, {
           value: O,
           isValid: true
-        }) : _({
+        }) : x({
           value: e,
           isValid: false
         }, {
           value: O,
           isValid: false
-        }) : (S(""), w(null), _({
+        }) : (S(""), w(null), x({
           value: e,
           isValid: true
         }))
-      }, [_, O]),
+      }, [x, O]),
       E = r.useCallback(e => {
         if (S(e), "" === e || !m.test(e)) {
-          w(o.intl.string(o.t["24xrGb"])), _({
+          w(o.intl.string(o.t["24xrGb"])), x({
             value: A,
             isValid: false
           }, {
@@ -128,14 +128,14 @@ let x = e => {
           });
           return
         }
-        w(null), _({
+        w(null), x({
           value: A,
           isValid: true
         }, {
           value: e,
           isValid: true
         })
-      }, [_, A]);
+      }, [x, A]);
     return (0, l.jsxs)("div", {
       children: [(0, l.jsxs)(i.BJc, {
         gap: 16,
@@ -151,19 +151,19 @@ let x = e => {
               })]
             })
           }), (0, l.jsx)(i.ksK, {
-            onChange: I,
+            onChange: P,
             value: A,
             error: T,
             placeholder: u,
             autoFocus: true
           })]
-        }), C && null != x && (0, l.jsxs)("div", {
+        }), C && null != _ && (0, l.jsxs)("div", {
           className: c.QB,
           children: [(0, l.jsx)("div", {
             className: c.QB,
             children: (0, l.jsxs)(i.Text, {
               variant: "text-sm/bold",
-              children: [x, f && (0, l.jsx)("span", {
+              children: [_, f && (0, l.jsx)("span", {
                 className: d.m,
                 children: "*"
               })]
@@ -189,7 +189,7 @@ let x = e => {
     } = e, a = t.name, s = "".concat(t.name, "_message_link"), o = r.useCallback((e, t) => {
       null != t ? n(a, e.value, e.isValid && t.isValid, s, t.value) : n(a, e.value, e.isValid, s, true)
     }, [n, a, s]);
-    return (0, l.jsx)(x, {
+    return (0, l.jsx)(_, {
       data: t.data,
       onChange: o,
       initialContentUrl: null == i ? true : i[a],

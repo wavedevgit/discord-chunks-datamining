@@ -11,8 +11,8 @@ async function a(e) {
     appId: t,
     botId: n,
     analyticsLocations: a,
-    customId: s,
-    referrerId: o,
+    customId: o,
+    referrerId: s,
     commandOrigin: l
   } = e, c = await r.A.openPrivateChannel({
     recipientIds: n
@@ -21,8 +21,8 @@ async function a(e) {
     targetApplicationId: t,
     channelId: c,
     analyticsLocations: a,
-    customId: s,
-    referrerId: o,
+    customId: o,
+    referrerId: s,
     commandOrigin: l
   })
 }

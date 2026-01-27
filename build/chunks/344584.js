@@ -29,8 +29,8 @@ class p extends Chunk439372.A {
         this.maybeFetchSubscriptions(), this.maybeFetchCountryCode(), this.maybeFetchMostRecentSubscription()
       }
     }), f(this, "maybeFetchSubscriptions", async () => {
-      let e = s.default.getCurrentUser(),
-        t = o.A.isSubscriptionFetching;
+      let e = o.default.getCurrentUser(),
+        t = s.A.isSubscriptionFetching;
       if ((0, u.ki)(e)) {
         l.A.hasFetchedSubscriptions() || t || await (0, r.hP)();
         let e = l.A.getPremiumSubscription();
@@ -38,15 +38,15 @@ class p extends Chunk439372.A {
       }
     }), f(this, "maybeFetchMostRecentSubscription", () => {
       var e;
-      let t = s.default.getCurrentUser(),
+      let t = o.default.getCurrentUser(),
         n = (0, u.cr)(null != (e = null == t ? true : t.premiumType) ? e : null, d.PremiumTypes.TIER_1),
         i = l.A.getIsFetchingMostRecentSubscription();
       null != t && n && t.hasHadPremium() && !i && (0, r.I8)()
     }), f(this, "maybeFetchCountryCode", async () => {
-      let e = s.default.getCurrentUser();
-      (0, u.ki)(e) && !o.A.ipCountryCodeLoaded && await this.fetchCountryCode()
+      let e = o.default.getCurrentUser();
+      (0, u.ki)(e) && !s.A.ipCountryCodeLoaded && await this.fetchCountryCode()
     }), f(this, "fetchCountryCode", async () => {
-      await (0, r.xe)(), null != o.A.ipCountryCode && await (0, r.$o)()
+      await (0, r.xe)(), null != s.A.ipCountryCode && await (0, r.$o)()
     })
   }
 }

@@ -2,18 +2,18 @@
 /** chunk id: 807177, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => o
+  I: () => s
 });
 var Chunk3388 = require("./3388.js"),
   Chunk64700 = require("./64700.js");
 let a = 0,
-  s = new Map;
+  o = new Map;
 
-function o(e) {
+function s(e) {
   let [t, n] = (0, i.useState)();
   return (0, r.N)(() => {
     if (!e) return;
-    let t = s.get(e);
+    let t = o.get(e);
     if (t) n(t.element.id);
     else {
       let r = `react-aria-description-${a++}`;
@@ -22,10 +22,10 @@ function o(e) {
       i.id = r, i.style.display = "none", i.textContent = e, document.body.appendChild(i), t = {
         refCount: 0,
         element: i
-      }, s.set(e, t)
+      }, o.set(e, t)
     }
     return t.refCount++, () => {
-      t && 0 == --t.refCount && (t.element.remove(), s.delete(e))
+      t && 0 == --t.refCount && (t.element.remove(), o.delete(e))
     }
   }, [e]), {
     "aria-describedby": e ? t : true

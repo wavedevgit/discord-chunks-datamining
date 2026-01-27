@@ -29,7 +29,7 @@ function p(e) {
     onUpsellClick: y
   } = e, {
     newestAnalyticsLocation: b
-  } = (0, a.Ay)(), O = _ || (null == n ? true : n.canUsePremiumProfileCustomization) || false, v = O ? i.R2l : i.tvc, A = (0, s.b)(O), I = () => {
+  } = (0, a.Ay)(), O = _ || (null == n ? true : n.canUsePremiumProfileCustomization) || false, v = O ? i.R2l : i.tvc, A = (0, o.b)(O), I = () => {
     if (!O && !A) {
       null == y || y();
       return
@@ -40,7 +40,7 @@ function p(e) {
       isTryItOut: g
     })
   };
-  return (0, r.jsx)(o.A, {
+  return (0, r.jsx)(s.A, {
     user: t,
     displayProfile: n,
     guildId: p,

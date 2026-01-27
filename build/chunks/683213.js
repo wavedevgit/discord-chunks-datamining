@@ -64,20 +64,20 @@ function v(e) {
 function A(e, t) {
   var n;
   let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    o = (0, a.m1)(e, d.default, c.A, true),
+    s = (0, a.m1)(e, d.default, c.A, true),
     l = (0, a.m1)(e, d.default, c.A, false),
     u = [],
-    f = [o, l],
+    f = [s, l],
     p = [];
   e.isGuildVocal() && f.push("!".concat(l));
-  let _ = s.A.getChannel(e.parent_id);
+  let _ = o.A.getChannel(e.parent_id);
   if (null != _) {
     let e = (0, a.m1)(_, d.default, c.A, true),
       t = (0, a.m1)(_, d.default, c.A, false);
     p.push(e), p.push(t), u.push(e)
   }
   null != t && (p.push(t.name), u.push(t.name));
-  let h = o + (u.length > 0 ? " (".concat(u.join(", "), ")") : ""),
+  let h = s + (u.length > 0 ? " (".concat(u.join(", "), ")") : ""),
     m = g.BVt.CHANNEL(null != (n = null == t ? true : t.id) ? n : g.ME, e.id);
   return {
     id: m,
@@ -114,12 +114,12 @@ function S(e) {
       alternateNames: ["*".concat(e.name)],
       rankingHint: 100
     }],
-    a = s.A.getMutableGuildChannelsForGuild(e.id);
+    a = o.A.getMutableGuildChannelsForGuild(e.id);
   for (let n in a) {
     let r = a[n];
     l.A.can(g.xBc.VIEW_CHANNEL, r) && i.push(A(r, e, t))
   }
-  for (let n of s.A.getAllThreadsForGuild(e.id)) l.A.can(g.xBc.VIEW_CHANNEL, n) && i.push(A(n, e, t));
+  for (let n of o.A.getAllThreadsForGuild(e.id)) l.A.can(g.xBc.VIEW_CHANNEL, n) && i.push(A(n, e, t));
   return {
     id: e.id,
     items: i,
@@ -146,9 +146,9 @@ function T(e) {
 
 function C(e) {
   if (!O()) return;
-  let t = null != e ? s.A.getChannel(e) : true;
+  let t = null != e ? o.A.getChannel(e) : true;
   if (null == t) return void h.A.resignActivity();
-  let n = o.A.getGuild(t.guild_id),
+  let n = s.A.getGuild(t.guild_id),
     r = (0, a.m1)(t, d.default, c.A, true),
     i = r + (null != n ? " (".concat(n.name, ")") : ""),
     l = [...new Set([r, ...T(t)])],
@@ -168,9 +168,9 @@ function C(e) {
 
 function N() {
   if (!y()) return;
-  let e = o.A.getGuildsArray().map(e => S(e)),
+  let e = s.A.getGuildsArray().map(e => S(e)),
     t = [],
-    n = s.A.getMutablePrivateChannels();
+    n = o.A.getMutablePrivateChannels();
   for (let e in n) {
     let r = n[e];
     t.push(A(r))
@@ -182,7 +182,7 @@ function N() {
 }
 
 function w(e) {
-  let t = s.A.getDMChannelFromUserId(e);
+  let t = o.A.getDMChannelFromUserId(e);
   null != t && R([t])
 }
 
@@ -194,14 +194,14 @@ function R(e) {
   for (let a of e)
     if (l.A.can(g.xBc.VIEW_CHANNEL, a)) {
       var i;
-      let e = o.A.getGuild(a.guild_id),
+      let e = s.A.getGuild(a.guild_id),
         n = null != (i = null == e ? true : e.id) ? i : g.ME,
-        s = A(a, e, true),
+        o = A(a, e, true),
         l = r[n];
-      if (null != l) l.push(s);
+      if (null != l) l.push(o);
       else {
         let i = I(e),
-          a = [s];
+          a = [o];
         t.push({
           id: n,
           items: a,
@@ -230,7 +230,7 @@ class P extends Chunk439372.A {
       channel: n
     } = e;
     if (!y() || !l.A.can(g.xBc.VIEW_CHANNEL, n)) return;
-    let r = o.A.getGuild(n.guild_id);
+    let r = s.A.getGuild(n.guild_id);
     if (null == r && null != n.guild_id) return;
     let i = I(r);
     h.A.indexDomains([{
@@ -257,7 +257,7 @@ class P extends Chunk439372.A {
       type: n
     } = e;
     if (y()) {
-      let e = o.A.getGuild(t.id);
+      let e = s.A.getGuild(t.id);
       null != e ? h.A.indexDomains([S(e, "GUILD_UPDATE" === n)]) : h.A.deleteSearchDomains([t.id])
     }
   }

@@ -25,10 +25,10 @@ function p(e) {
 function _(e, t) {
   if (null == e) return Promise.resolve(null);
   let n = u.A.getFetchStatus(e) === u.X.FETCHING,
-    s = u.A.getLastSyncTimestamp(e),
-    o = u.A.getProfile(e),
-    l = p(s);
-  return n && !t ? Promise.resolve(null) : null == o || l || t ? (i.h.dispatch({
+    o = u.A.getLastSyncTimestamp(e),
+    s = u.A.getProfile(e),
+    l = p(o);
+  return n && !t ? Promise.resolve(null) : null == s || l || t ? (i.h.dispatch({
     type: "GUILD_PROFILE_FETCH",
     guildId: e
   }), r.Bo.get({
@@ -48,7 +48,7 @@ function _(e, t) {
       guildId: e,
       error: n
     }), null
-  })) : Promise.resolve(o)
+  })) : Promise.resolve(s)
 }
 
 function h(e, t) {
@@ -85,8 +85,8 @@ async function m(e) {
 }
 
 function g(e, t) {
-  let n = null != o.Ay.getSelfMember(e),
-    r = null != s.A.getRequest(e);
+  let n = null != s.Ay.getSelfMember(e),
+    r = null != o.A.getRequest(e);
   l.default.track(d.HAw.GUILD_PROFILE_VIEWED, {
     guild_id: e,
     location_stack: t,

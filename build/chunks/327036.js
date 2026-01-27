@@ -8,7 +8,7 @@ var Chunk446474 = require("./446474.js"),
   Chunk331336 = require("./331336.js"),
   l = TypeError;
 module.exports = function(e, t) {
-  var n = arguments.length < 2 ? o(e) : t;
+  var n = arguments.length < 2 ? s(e) : t;
   if (i(n)) return a(r(n, e));
-  throw new l(s(e) + " is not iterable")
+  throw new l(o(e) + " is not iterable")
 }

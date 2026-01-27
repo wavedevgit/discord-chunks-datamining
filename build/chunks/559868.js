@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Do: () => a,
-  PW: () => o,
-  V5: () => s,
+  PW: () => s,
+  V5: () => o,
   _f: () => l,
   lb: () => r,
   tL: () => i
@@ -12,10 +12,10 @@ require.d(exports, {
 let r = "CHANGELOG_MODAL",
   i = "1232523165893132288",
   a = "https://discord.com/category/product";
-var s = function(e) {
+var o = function(e) {
     return e[e.DESKTOP = 0] = "DESKTOP", e[e.MOBILE = 1] = "MOBILE", e
   }({}),
-  o = function(e) {
+  s = function(e) {
     return e[e.YOUTUBE_VIDEO_ID = 0] = "YOUTUBE_VIDEO_ID", e[e.IMAGE = 1] = "IMAGE", e
   }({}),
   l = function(e) {

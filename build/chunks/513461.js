@@ -5,8 +5,8 @@ require.d(exports, {
   B5: () => a,
   Vf: () => l,
   _e: () => i,
-  i7: () => s,
-  j5: () => o,
+  i7: () => o,
+  j5: () => s,
   rX: () => r
 });
 var r = function(e) {
@@ -19,12 +19,12 @@ var r = function(e) {
     return e.STARTED = "STARTED", e.SUBMITTED = "SUBMITTED", e.REJECTED = "REJECTED", e.APPROVED = "APPROVED", e
   }({});
 
-function s(e) {
+function o(e) {
   return null != e && "TERMS" === e.field_type
 }
 
-function o(e) {
-  return null != e && e.some(e => !s(e))
+function s(e) {
+  return null != e && e.some(e => !o(e))
 }
 var l = function(e) {
   return e.REGULAR = "REGULAR", e.COMPACT = "COMPACT", e

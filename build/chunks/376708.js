@@ -58,11 +58,11 @@ function y(e) {
 }
 
 function b(e) {
-  if (null == e || !(0, o.L)() || !h(e)) returntrue;
+  if (null == e || !(0, s.L)() || !h(e)) returntrue;
   let {
     loaded: t,
     firstMessage: n
-  } = s.A.getMessage(e);
+  } = o.A.getMessage(e);
   return !t || null == n || !(0, i.y5)(n, r.LO.EXPLICIT)
 }
 
@@ -78,7 +78,7 @@ function A(e, t) {
   var n, r, i;
   let a = l.A.getChannel(e);
   if (null == a || !a.isModeratorReportChannel()) returnfalse;
-  let s = u.A.getMessages(e).first();
-  return (null == s || null == (i = s.messageSnapshots) || null == (r = i[0]) || null == (n = r.moderatorReport) ? true : n.reported_user_id) === t
+  let o = u.A.getMessages(e).first();
+  return (null == o || null == (i = o.messageSnapshots) || null == (r = i[0]) || null == (n = r.moderatorReport) ? true : n.reported_user_id) === t
 }
 require("./953660.js")

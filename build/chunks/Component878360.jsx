@@ -58,13 +58,13 @@ let S = {
   showEmpty: true,
   matches(e, t, n, r, i) {
     let a = c.A.getActiveOption(e.id);
-    return i.commands !== _.Ze.DISABLED && null != a && (a.type === o.n4.BOOLEAN || !!(null == a ? true : a.autocomplete) || (null == a ? true : a.choices) != null && a.choices.length > 0)
+    return i.commands !== _.Ze.DISABLED && null != a && (a.type === s.n4.BOOLEAN || !!(null == a ? true : a.autocomplete) || (null == a ? true : a.choices) != null && a.choices.length > 0)
   },
   queryResults(e, t, n, r, i) {
     var a;
-    let s = c.A.getActiveOption(e.id);
-    if (null == s) return y;
-    if (s.autocomplete) {
+    let o = c.A.getActiveOption(e.id);
+    if (null == o) return y;
+    if (o.autocomplete) {
       if (i && A({
           command: c.A.getActiveCommand(e.id),
           optionValues: r.getCommandOptionValues(),
@@ -72,12 +72,12 @@ let S = {
             channel: e,
             guild: t,
             autocomplete: {
-              name: s.name,
+              name: o.name,
               query: n
             }
           }
         }), l.A.getLastErrored(e.id)) return v;
-      let a = l.A.getAutocompleteChoices(e.id, s.name, n);
+      let a = l.A.getAutocompleteChoices(e.id, o.name, n);
       return null == a ? b : {
         results: {
           choices: a
@@ -87,7 +87,7 @@ let S = {
     return {
       results: f.Ay.queryChoiceResults({
         query: n,
-        choices: s.type === o.n4.BOOLEAN ? h.Ss : null != (a = s.choices) ? a : []
+        choices: o.type === s.n4.BOOLEAN ? h.Ss : null != (a = o.choices) ? a : []
       })
     }
   },
@@ -99,16 +99,16 @@ let S = {
         isError: i
       },
       selectedIndex: a,
-      query: o,
+      query: s,
       onHover: l,
       onClick: c
     } = e;
-    return i ? (0, r.jsx)(s.A, {
+    return i ? (0, r.jsx)(o.A, {
       message: m.intl.string(m.t.rTAbPn),
       noResultsImageURL: E,
       className: g.k
     }) : 0 !== t.length || n ? (0, p.GM)({
-      query: o,
+      query: s,
       selectedIndex: a,
       autocompletes: n ? O : t,
       onHover: l,
@@ -122,7 +122,7 @@ let S = {
       }),
       getQuery: e => e,
       key: "choice"
-    }) : (0, r.jsx)(s.A, {
+    }) : (0, r.jsx)(o.A, {
       message: m.intl.string(m.t["41014u"]),
       noResultsImageURL: E,
       className: g.k

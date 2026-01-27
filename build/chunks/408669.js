@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk355418 = require("./355418.js"),
   Chunk725198 = require("./725198.js");
 let a = RegExp("(?:由|從|自)?(?:(今|明|前|大前|後|大後|聽|昨|尋|琴)(早|朝|晚)|(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨))|(今|明|前|大前|後|大後|聽|昨|尋|琴)(?:日|天)(?:[\\s,，]*)(?:(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨)))?)?(?:[\\s,，]*)(?:(\\d+|[" + Object.keys(Chunk725198.uk).join("") + "]+)(?:\\s*)(?:點|時|:|：)(?:\\s*)(\\d+|半|正|整|[" + Object.keys(Chunk725198.uk).join("") + "]+)?(?:\\s*)(?:分|:|：)?(?:\\s*)(\\d+|[" + Object.keys(Chunk725198.uk).join("") + "]+)?(?:\\s*)(?:秒)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i"),
-  s = RegExp("(?:^\\s*(?:到|至|\\-|\\–|\\~|\\〜)\\s*)(?:(今|明|前|大前|後|大後|聽|昨|尋|琴)(早|朝|晚)|(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨))|(今|明|前|大前|後|大後|聽|昨|尋|琴)(?:日|天)(?:[\\s,，]*)(?:(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨)))?)?(?:[\\s,，]*)(?:(\\d+|[" + Object.keys(Chunk725198.uk).join("") + "]+)(?:\\s*)(?:點|時|:|：)(?:\\s*)(\\d+|半|正|整|[" + Object.keys(Chunk725198.uk).join("") + "]+)?(?:\\s*)(?:分|:|：)?(?:\\s*)(\\d+|[" + Object.keys(Chunk725198.uk).join("") + "]+)?(?:\\s*)(?:秒)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i"),
-  o = 1,
+  o = RegExp("(?:^\\s*(?:到|至|\\-|\\–|\\~|\\〜)\\s*)(?:(今|明|前|大前|後|大後|聽|昨|尋|琴)(早|朝|晚)|(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨))|(今|明|前|大前|後|大後|聽|昨|尋|琴)(?:日|天)(?:[\\s,，]*)(?:(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨)))?)?(?:[\\s,，]*)(?:(\\d+|[" + Object.keys(Chunk725198.uk).join("") + "]+)(?:\\s*)(?:點|時|:|：)(?:\\s*)(\\d+|半|正|整|[" + Object.keys(Chunk725198.uk).join("") + "]+)?(?:\\s*)(?:分|:|：)?(?:\\s*)(\\d+|[" + Object.keys(Chunk725198.uk).join("") + "]+)?(?:\\s*)(?:秒)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i"),
+  s = 1,
   l = 2,
   c = 3,
   u = 4,
@@ -25,8 +25,8 @@ class m extends Chunk355418.c {
     if (t.index > 0 && e.text[t.index - 1].match(/\w/)) return null;
     let n = e.createParsingResult(t.index, t[0]),
       r = new Date(e.refDate.getTime());
-    if (t[o]) {
-      let i = t[o];
+    if (t[s]) {
+      let i = t[s];
       "明" == i || "聽" == i ? e.refDate.getHours() > 1 && r.setDate(r.getDate() + 1) : "昨" == i || "尋" == i || "琴" == i ? r.setDate(r.getDate() - 1) : "前" == i ? r.setDate(r.getDate() - 2) : "大前" == i ? r.setDate(r.getDate() - 3) : "後" == i ? r.setDate(r.getDate() + 2) : "大後" == i && r.setDate(r.getDate() + 3), n.start.assign("day", r.getDate()), n.start.assign("month", r.getMonth() + 1), n.start.assign("year", r.getFullYear())
     } else if (t[u]) {
       let e = t[u];
@@ -56,11 +56,11 @@ class m extends Chunk355418.c {
       "上" == v || "朝" == v || "早" == v || "凌" == v ? (g = 0, 12 == a && (a = 0)) : ("下" == v || "晏" == v || "晚" == v) && (g = 1, 12 != a && (a += 12))
     }
     n.start.assign("hour", a), n.start.assign("minute", m), g >= 0 ? n.start.assign("meridiem", g) : a < 12 ? n.start.imply("meridiem", 0) : n.start.imply("meridiem", 1);
-    let A = s.exec(e.text.substring(n.index + n.text.length));
+    let A = o.exec(e.text.substring(n.index + n.text.length));
     if (!A) return n.text.match(/^\d+$/) ? null : n;
     let I = new Date(r.getTime());
-    if (n.end = e.createParsingComponents(), A[o]) {
-      let t = A[o];
+    if (n.end = e.createParsingComponents(), A[s]) {
+      let t = A[s];
       "明" == t || "聽" == t ? e.refDate.getHours() > 1 && I.setDate(I.getDate() + 1) : "昨" == t || "尋" == t || "琴" == t ? I.setDate(I.getDate() - 1) : "前" == t ? I.setDate(I.getDate() - 2) : "大前" == t ? I.setDate(I.getDate() - 3) : "後" == t ? I.setDate(I.getDate() + 2) : "大後" == t && I.setDate(I.getDate() + 3), n.end.assign("day", I.getDate()), n.end.assign("month", I.getMonth() + 1), n.end.assign("year", I.getFullYear())
     } else if (A[u]) {
       let e = A[u];

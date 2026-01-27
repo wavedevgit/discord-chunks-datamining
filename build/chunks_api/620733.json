@@ -1,1 +1,1 @@
-{"id":"620733","type":"store","data":{"name":"AuthSessionsStore","functions":[{"name":"getSessions","args":[]}],"events":["LOGOUT","LOGIN_SUCCESS","FETCH_AUTH_SESSIONS_SUCCESS","LOGOUT_AUTH_SESSIONS_SUCCESS"]},"fromModule":{"id":"web.js"}}
+{"id":"620733","type":"store","data":{"name":"AuthSessionsStore","functions":[{"name":"getSessions","args":[]}],"events":["LOGOUT","LOGIN_SUCCESS","FETCH_AUTH_SESSIONS_SUCCESS","LOGOUT_AUTH_SESSIONS_SUCCESS"]},"fromModule":{"id":"44667"}}

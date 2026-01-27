@@ -8,12 +8,12 @@ var Chunk6678 = require("./6678.js"),
   Chunk476858 = require("./476858.js"),
   Chunk355418 = require("./355418.js"),
   Chunk1673 = require("./1673.js");
-let o = RegExp(`(?:(?:\\,|\\(|\\（)\\s*)?(?:(?:ce)\\s*)?(${(0,Chunk476858.uJ)(Chunk6678.CV)})(?:\\s*(?:\\,|\\)|\\）))?(?:\\s*(dernier|prochain)\\s*)?(?=\\W|\\d|$)`, "i"),
+let s = RegExp(`(?:(?:\\,|\\(|\\（)\\s*)?(?:(?:ce)\\s*)?(${(0,Chunk476858.uJ)(Chunk6678.CV)})(?:\\s*(?:\\,|\\)|\\）))?(?:\\s*(dernier|prochain)\\s*)?(?=\\W|\\d|$)`, "i"),
   l = 1,
   c = 2;
 class u extends Chunk355418.c {
   innerPattern() {
-    return o
+    return s
   }
   innerExtract(e, t) {
     let n = t[l].toLowerCase(),
@@ -21,7 +21,7 @@ class u extends Chunk355418.c {
     if (true === i) return null;
     let a = t[c];
     a = (a = a || "").toLowerCase();
-    let o = null;
-    return "dernier" == a ? o = "last" : "prochain" == a && (o = "next"), (0, s.Y5)(e.reference, i, o)
+    let s = null;
+    return "dernier" == a ? s = "last" : "prochain" == a && (s = "next"), (0, o.Y5)(e.reference, i, s)
   }
 }

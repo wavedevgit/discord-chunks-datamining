@@ -19,7 +19,7 @@ function d(e, t) {
     var r;
     return null != (r = t.memberCount) ? r : 0
   }
-  return s.Ay.getProps(t.getGuildId(), t.id).groups.forEach(t => {
+  return o.Ay.getProps(t.getGuildId(), t.id).groups.forEach(t => {
     ("@everyone" === e || t.id !== l.clD.OFFLINE) && (n += t.count)
   }), n
 }
@@ -43,7 +43,7 @@ function f(e) {
 let p = {
   shouldShowEveryoneGuard: function(e, t) {
     let n = t.getGuildId();
-    return i()(n, "isGuildChannel with null guildId"), d(e, t) > u && o.A.can(l.xBc.MENTION_EVERYONE, t)
+    return i()(n, "isGuildChannel with null guildId"), d(e, t) > u && s.A.can(l.xBc.MENTION_EVERYONE, t)
   },
   everyoneMemberCount: d,
   extractEveryoneRole: function(e, t) {

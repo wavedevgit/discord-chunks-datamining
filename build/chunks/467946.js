@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 467946, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 467946, original params: e,t,n (module,exports,require) **/
 module.exports = {
   Ix: "inviteDetailsContainer_da5e8d",
   vk: "clickable_da5e8d",

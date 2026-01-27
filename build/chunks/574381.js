@@ -17,7 +17,7 @@ require.d(exports, {
   r_: () => v,
   t1: () => O,
   tn: () => E,
-  uF: () => o,
+  uF: () => s,
   un: () => m,
   uo: () => b,
   xl: () => u
@@ -27,22 +27,22 @@ var r = function(e) {
 }({});
 let i = window.DiscordNative,
   a = null != i,
-  s = null != i ? i.process.platform : "";
+  o = null != i ? i.process.platform : "";
 
-function o() {
-  return /^win/.test(s)
+function s() {
+  return /^win/.test(o)
 }
 
 function l() {
-  return "darwin" === s
+  return "darwin" === o
 }
 
 function c() {
-  return "linux" === s
+  return "linux" === o
 }
 
 function u() {
-  return o() || l() || c()
+  return s() || l() || c()
 }
 
 function d() {
@@ -64,11 +64,11 @@ function _() {
 }
 
 function h() {
-  return "android" === s
+  return "android" === o
 }
 
 function m() {
-  return "ios" === s
+  return "ios" === o
 }
 
 function g() {
@@ -85,18 +85,18 @@ function y() {
 }
 
 function b() {
-  return o() ? "WINDOWS" : l() ? "OSX" : c() ? "LINUX" : "WEB"
+  return s() ? "WINDOWS" : l() ? "OSX" : c() ? "LINUX" : "WEB"
 }
 
 function O() {
-  return s
+  return o
 }
 
 function v() {
-  switch (s) {
+  switch (o) {
     case "ios":
     case "android":
-      return s;
+      return o;
     default:
       return "web"
   }

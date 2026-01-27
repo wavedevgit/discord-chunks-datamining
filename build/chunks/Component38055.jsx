@@ -56,35 +56,35 @@ let h = e => {
     let {
       closePopout: t
     } = e, i = (0, a.bG)([l.A], () => l.A.hidden);
-    return (0, r.jsx)(s.W1t, {
+    return (0, r.jsx)(o.W1t, {
       "data-menu-needs-migration": true,
       onSelect: () => {},
       navId: "member-list-settings-menu",
       onClose: null != t ? t : c.tEg,
       "aria-label": u.intl.string(u.t.w2jvOf),
-      children: (0, r.jsxs)(s.rXV, {
-        children: [(0, r.jsx)(s.Drp, {
+      children: (0, r.jsxs)(o.rXV, {
+        children: [(0, r.jsx)(o.Drp, {
           id: "about",
           label: u.intl.string(u.t.pWLGnF),
           leadingAccessory: {
             type: "icon",
-            icon: s.mir
+            icon: o.mir
           },
-          icon: s.mir,
+          icon: o.mir,
           action: () => {
-            (0, s.mMO)(async () => {
+            (0, o.mMO)(async () => {
               let {
                 default: e
               } = await n.e("90309").then(n.bind(n, 643460));
               return t => (0, r.jsx)(e, f({}, t))
             }), null == t || t()
           }
-        }), (0, r.jsx)(s.sLh, {
+        }), (0, r.jsx)(o.sLh, {
           id: "hide",
           label: u.intl.string(u.t.AhNYuY),
           checked: i,
           action: () => {
-            (0, o.Il)(), null == t || t()
+            (0, s.Il)(), null == t || t()
           }
         })]
       })
@@ -92,9 +92,9 @@ let h = e => {
   },
   m = () => {
     let e = i.useRef(null);
-    return (0, r.jsx)(s.YNO, {
+    return (0, r.jsx)(o.YNO, {
       targetElementRef: e,
-      animation: s.YNO.Animation.NONE,
+      animation: o.YNO.Animation.NONE,
       position: "bottom",
       align: "right",
       renderPopout: e => {
@@ -105,7 +105,7 @@ let h = e => {
           closePopout: t
         })
       },
-      children: t => (0, r.jsx)(s.DUT, _(f({}, t), {
+      children: t => (0, r.jsx)(o.DUT, _(f({}, t), {
         innerRef: e,
         onClick: e => {
           e.stopPropagation(), t.onClick(e)
@@ -115,7 +115,7 @@ let h = e => {
           height: "12px",
           display: "flex"
         },
-        children: (0, r.jsx)(s.Zes, {
+        children: (0, r.jsx)(o.Zes, {
           size: "xxs"
         })
       }))

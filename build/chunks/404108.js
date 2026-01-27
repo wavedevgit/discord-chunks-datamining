@@ -42,7 +42,7 @@ function _(e) {
           return
         } else if ("override" === I || "none" === I) return
       }
-      "single" === n.selectionMode ? n.isSelected(_) && !n.disallowEmptySelection ? n.toggleSelection(_) : n.replaceSelection(_) : e && e.shiftKey ? n.extendSelection(_) : "toggle" === n.selectionBehavior || e && ((0, s.B)(e) || "touch" === e.pointerType || "virtual" === e.pointerType) ? n.toggleSelection(_) : n.replaceSelection(_)
+      "single" === n.selectionMode ? n.isSelected(_) && !n.disallowEmptySelection ? n.toggleSelection(_) : n.replaceSelection(_) : e && e.shiftKey ? n.extendSelection(_) : "toggle" === n.selectionBehavior || e && ((0, o.B)(e) || "touch" === e.pointerType || "virtual" === e.pointerType) ? n.toggleSelection(_) : n.replaceSelection(_)
     }
   };
   (0, p.useEffect)(() => {
@@ -62,52 +62,52 @@ function _(e) {
     R = n.isLink(_) && "selection" !== I && "none" !== I,
     P = !O && n.canSelectItem(_) && !N && !w,
     D = (v || R) && !O,
-    x = D && ("replace" === n.selectionBehavior ? !P : !P || n.isEmpty),
-    L = D && P && "replace" === n.selectionBehavior,
-    j = x || L,
-    M = (0, p.useRef)(null),
-    k = j && P,
+    L = D && ("replace" === n.selectionBehavior ? !P : !P || n.isEmpty),
+    x = D && P && "replace" === n.selectionBehavior,
+    M = L || x,
+    j = (0, p.useRef)(null),
+    k = M && P,
     U = (0, p.useRef)(false),
     G = (0, p.useRef)(false),
-    V = n.getItemProps(_),
-    F = e => {
+    F = n.getItemProps(_),
+    V = e => {
       if (v) {
         var t;
         v(), null == (t = g.current) || t.dispatchEvent(new CustomEvent("react-aria-item-action", {
           bubbles: true
         }))
       }
-      R && g.current && S.open(g.current, e, V.href, V.routerOptions)
+      R && g.current && S.open(g.current, e, F.href, F.routerOptions)
     },
     B = {
       ref: g
     };
   if (E ? (B.onPressStart = e => {
-      M.current = e.pointerType, U.current = k, "keyboard" === e.pointerType && (!j || m()) && T(e)
-    }, A ? (B.onPressUp = x ? true : e => {
+      j.current = e.pointerType, U.current = k, "keyboard" === e.pointerType && (!M || m()) && T(e)
+    }, A ? (B.onPressUp = L ? true : e => {
       "mouse" === e.pointerType && P && T(e)
-    }, B.onPress = x ? F : e => {
+    }, B.onPress = L ? V : e => {
       "keyboard" !== e.pointerType && "mouse" !== e.pointerType && P && T(e)
     }) : B.onPress = e => {
-      x || L && "mouse" !== e.pointerType ? ("keyboard" !== e.pointerType || h()) && F(e) : "keyboard" !== e.pointerType && P && T(e)
+      L || x && "mouse" !== e.pointerType ? ("keyboard" !== e.pointerType || h()) && V(e) : "keyboard" !== e.pointerType && P && T(e)
     }) : (B.onPressStart = e => {
-      M.current = e.pointerType, U.current = k, G.current = x, P && ("mouse" === e.pointerType && !x || "keyboard" === e.pointerType && (!D || m())) && T(e)
+      j.current = e.pointerType, U.current = k, G.current = L, P && ("mouse" === e.pointerType && !L || "keyboard" === e.pointerType && (!D || m())) && T(e)
     }, B.onPress = e => {
-      ("touch" === e.pointerType || "pen" === e.pointerType || "virtual" === e.pointerType || "keyboard" === e.pointerType && j && h() || "mouse" === e.pointerType && G.current) && (j ? F(e) : P && T(e))
-    }), C["data-collection"] = (0, r.EG)(n.collection), C["data-key"] = _, B.preventFocusOnPress = y, y && (B = (0, o.v)(B, {
+      ("touch" === e.pointerType || "pen" === e.pointerType || "virtual" === e.pointerType || "keyboard" === e.pointerType && M && h() || "mouse" === e.pointerType && G.current) && (M ? V(e) : P && T(e))
+    }), C["data-collection"] = (0, r.EG)(n.collection), C["data-key"] = _, B.preventFocusOnPress = y, y && (B = (0, s.v)(B, {
       onPressStart(e) {
         "touch" !== e.pointerType && (n.setFocused(true), n.setFocusedKey(_))
       },
       onPress(e) {
         "touch" === e.pointerType && (n.setFocused(true), n.setFocusedKey(_))
       }
-    })), V)
-    for (let e of ["onPressStart", "onPressEnd", "onPressChange", "onPress", "onPressUp", "onClick"]) V[e] && (B[e] = (0, l.c)(B[e], V[e]));
+    })), F)
+    for (let e of ["onPressStart", "onPressEnd", "onPressChange", "onPress", "onPressUp", "onClick"]) F[e] && (B[e] = (0, l.c)(B[e], F[e]));
   let {
     pressProps: H,
     isPressed: Y
-  } = (0, u.d)(B), W = L ? e => {
-    "mouse" === M.current && (e.stopPropagation(), e.preventDefault(), F(e))
+  } = (0, u.d)(B), W = x ? e => {
+    "mouse" === j.current && (e.stopPropagation(), e.preventDefault(), V(e))
   } : true, {
     longPressProps: K
   } = (0, d.H)({
@@ -116,12 +116,12 @@ function _(e) {
       "touch" === e.pointerType && (T(e), n.setSelectionBehavior("toggle"))
     }
   }), z = e => {
-    "touch" === M.current && U.current && e.preventDefault()
+    "touch" === j.current && U.current && e.preventDefault()
   }, q = "none" !== I && n.isLink(_) ? e => {
     i.Fe.isOpening || e.preventDefault()
   } : true;
   return {
-    itemProps: (0, o.v)(C, P || x || y && !O ? H : {}, k ? K : {}, {
+    itemProps: (0, s.v)(C, P || L || y && !O ? H : {}, k ? K : {}, {
       onDoubleClick: W,
       onDragStartCapture: z,
       onClick: q,
@@ -134,7 +134,7 @@ function _(e) {
     isFocused: n.isFocused && n.focusedKey === _,
     isDisabled: O,
     allowsSelection: P,
-    hasAction: j
+    hasAction: M
   }
 }
 

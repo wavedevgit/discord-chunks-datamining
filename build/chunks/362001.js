@@ -22,7 +22,7 @@ function a(e, t) {
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
 
-function s(e, t) {
+function o(e, t) {
   if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
   e.prototype = Object.create(t && t.prototype, {
     constructor: {
@@ -49,7 +49,7 @@ module.exports = function(e) {
     var n, r = a(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
     return r._overshootClamping = f(e.overshootClamping, false), r._restDisplacementThreshold = f(e.restDisplacementThreshold, .001), r._restSpeedThreshold = f(e.restSpeedThreshold, .001), r._initialVelocity = e.velocity, r._lastVelocity = f(e.velocity, 0), r._toValue = e.toValue, r.__isInteraction = true === e.isInteraction || e.isInteraction, true !== e.bounciness || true !== e.speed ? (u(true === e.tension && true === e.friction, "You can only define bounciness/speed or tension/friction but not both"), n = d.fromBouncinessAndSpeed(f(e.bounciness, 8), f(e.speed, 12))) : n = d.fromOrigamiTensionAndFriction(f(e.tension, 40), f(e.friction, 7)), r._tension = n.tension, r._friction = n.friction, r
   }
-  return s(t, e), r(t, [{
+  return o(t, e), r(t, [{
     key: "start",
     value: function(e, n, r, i) {
       if (this.__active = true, this._startPosition = e, this._lastPosition = this._startPosition, this._onUpdate = n, this.__onEnd = r, this._lastTime = Date.now(), i instanceof t) {
@@ -77,8 +77,8 @@ module.exports = function(e) {
         i = 64,
         a = Date.now();
       a > this._lastTime + i && (a = this._lastTime + i);
-      for (var s = 1, o = Math.floor((a - this._lastTime) / s), c = 0; c < o; ++c) {
-        var u = s / 1e3,
+      for (var o = 1, s = Math.floor((a - this._lastTime) / o), c = 0; c < s; ++c) {
+        var u = o / 1e3,
           d = t,
           f = this._tension * (this._toValue - n) - this._friction * r,
           n = e + d * u / 2,

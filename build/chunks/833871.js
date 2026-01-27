@@ -24,14 +24,14 @@ var Chunk53635 = require("./53635.js"),
     arguments: true,
     arity: true
   },
-  s = {
+  o = {
     $$typeof: true,
     render: true,
     defaultProps: true,
     displayName: true,
     propTypes: true
   },
-  o = {
+  s = {
     $$typeof: true,
     compare: true,
     defaultProps: true,
@@ -42,9 +42,9 @@ var Chunk53635 = require("./53635.js"),
   l = {};
 
 function c(e) {
-  return r.isMemo(e) ? o : l[e.$$typeof] || i
+  return r.isMemo(e) ? s : l[e.$$typeof] || i
 }
-l[Chunk53635.ForwardRef] = s, l[Chunk53635.Memo] = o;
+l[Chunk53635.ForwardRef] = o, l[Chunk53635.Memo] = s;
 var u = Object.defineProperty,
   d = Object.getOwnPropertyNames,
   f = Object.getOwnPropertySymbols,
@@ -60,9 +60,9 @@ function m(e, t, n) {
     }
     var i = d(t);
     f && (i = i.concat(f(t)));
-    for (var s = c(e), o = c(t), l = 0; l < i.length; ++l) {
+    for (var o = c(e), s = c(t), l = 0; l < i.length; ++l) {
       var g = i[l];
-      if (!a[g] && !(n && n[g]) && !(o && o[g]) && !(s && s[g])) {
+      if (!a[g] && !(n && n[g]) && !(s && s[g]) && !(o && o[g])) {
         var E = p(t, g);
         try {
           u(e, g, E)

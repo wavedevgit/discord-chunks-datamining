@@ -1,57 +1,57 @@
 /** Chunk was on 33563 **/
 /** chunk id: 206111, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  l: () => o
+  l: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk158954 = require("./158954.js"),
   Chunk217483 = require("./217483.js");
 
-function o(e) {
+function u(e) {
   let {
     title: n,
     subtitle: t,
-    iconSrc: o,
-    backgroundSrc: u,
+    iconSrc: u,
+    backgroundSrc: o,
     animatedBackgroundSrc: a,
     prefersReducedMotion: c = true
-  } = e, d = l.useMemo(() => {
-    let e = null != u ? u : o;
+  } = e, d = r.useMemo(() => {
+    let e = null != o ? o : u;
     if (null != e) return {
       "--custom-background-url": "url(".concat(e.toString(), ")")
     }
-  }, [u, o]), p = l.useMemo(() => {
-    if (null == u) return;
+  }, [o, u]), p = r.useMemo(() => {
+    if (null == o) return;
     let e = {
-      "--custom-background-static": "url(".concat(u.toString())
+      "--custom-background-static": "url(".concat(o.toString())
     };
     return c || null == a || (e["--custom-background-animated"] = "url(".concat(a.toString(), ")")), e
-  }, [a, u, c]);
-  return (0, r.jsxs)("div", {
+  }, [a, o, c]);
+  return (0, l.jsxs)("div", {
     className: s.iE,
-    children: [(0, r.jsx)("div", {
+    children: [(0, l.jsx)("div", {
       className: s.Tp,
       style: d
-    }), (0, r.jsxs)("div", {
+    }), (0, l.jsxs)("div", {
       className: s.Qs,
-      children: [null != o && (0, r.jsx)("div", {
+      children: [null != u && (0, l.jsx)("div", {
         className: s.Kk,
-        children: (0, r.jsx)("img", {
-          src: o.toString(),
+        children: (0, l.jsx)("img", {
+          src: u.toString(),
           alt: ""
         })
-      }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(i.EYj, {
+      }), (0, l.jsxs)("div", {
+        children: [(0, l.jsx)(i.EYj, {
           variant: "heading-xl/bold",
           tag: "div",
           children: n
-        }), null != t && (0, r.jsxs)(i.EYj, {
+        }), null != t && (0, l.jsxs)(i.EYj, {
           variant: "text-sm/normal",
           children: ["“", t, "”"]
         })]
       })]
-    }), null != u ? (0, r.jsx)("div", {
+    }), null != o ? (0, l.jsx)("div", {
       className: s.Sl,
       style: p
     }) : null]

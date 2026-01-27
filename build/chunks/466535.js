@@ -10,8 +10,8 @@ module.exports = function(e) {
       relevance: 0,
       begin: t.concat(/\b/, /(?!let|for|while|if|else|match\b)/, i, t.lookahead(/\s*\(/))
     },
-    s = "([ui](8|16|32|64|128|size)|f(32|64))?",
-    o = ["abstract", "as", "async", "await", "become", "box", "break", "const", "continue", "crate", "do", "dyn", "else", "enum", "extern", "false", "final", "fn", "for", "if", "impl", "in", "let", "loop", "macro", "match", "mod", "move", "mut", "override", "priv", "pub", "ref", "return", "self", "Self", "static", "struct", "super", "trait", "true", "try", "type", "typeof", "union", "unsafe", "unsized", "use", "virtual", "where", "while", "yield"],
+    o = "([ui](8|16|32|64|128|size)|f(32|64))?",
+    s = ["abstract", "as", "async", "await", "become", "box", "break", "const", "continue", "crate", "do", "dyn", "else", "enum", "extern", "false", "final", "fn", "for", "if", "impl", "in", "let", "loop", "macro", "match", "mod", "move", "mut", "override", "priv", "pub", "ref", "return", "self", "Self", "static", "struct", "super", "trait", "true", "try", "type", "typeof", "union", "unsafe", "unsized", "use", "virtual", "where", "while", "yield"],
     l = ["true", "false", "Some", "None", "Ok", "Err"],
     c = ["drop ", "Copy", "Send", "Sized", "Sync", "Drop", "Fn", "FnMut", "FnOnce", "ToOwned", "Clone", "Debug", "PartialEq", "PartialOrd", "Eq", "Ord", "AsRef", "AsMut", "Into", "From", "Default", "Iterator", "Extend", "IntoIterator", "DoubleEndedIterator", "ExactSizeIterator", "SliceConcatExt", "ToString", "assert!", "assert_eq!", "bitflags!", "bytes!", "cfg!", "col!", "concat!", "concat_idents!", "debug_assert!", "debug_assert_eq!", "env!", "eprintln!", "panic!", "file!", "format!", "format_args!", "include_bytes!", "include_str!", "line!", "local_data_key!", "module_path!", "option_env!", "print!", "println!", "select!", "stringify!", "try!", "unimplemented!", "unreachable!", "vec!", "write!", "writeln!", "macro_rules!", "assert_ne!", "debug_assert_ne!"],
     u = ["i8", "i16", "i32", "i64", "i128", "isize", "u8", "u16", "u32", "u64", "u128", "usize", "f32", "f64", "str", "char", "bool", "Box", "Option", "Result", "String", "Vec"];
@@ -21,7 +21,7 @@ module.exports = function(e) {
     keywords: {
       $pattern: e.IDENT_RE + "!?",
       type: u,
-      keyword: o,
+      keyword: s,
       literal: l,
       built_in: c
     },
@@ -49,13 +49,13 @@ module.exports = function(e) {
     }, {
       className: "number",
       variants: [{
-        begin: "\\b0b([01_]+)" + s
+        begin: "\\b0b([01_]+)" + o
       }, {
-        begin: "\\b0o([0-7_]+)" + s
+        begin: "\\b0o([0-7_]+)" + o
       }, {
-        begin: "\\b0x([A-Fa-f0-9_]+)" + s
+        begin: "\\b0x([A-Fa-f0-9_]+)" + o
       }, {
-        begin: "\\b(\\d[\\d_]*(\\.[0-9_]+)?([eE][+-]?[0-9_]+)?)" + s
+        begin: "\\b(\\d[\\d_]*(\\.[0-9_]+)?([eE][+-]?[0-9_]+)?)" + o
       }],
       relevance: 0
     }, {

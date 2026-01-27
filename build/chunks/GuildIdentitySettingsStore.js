@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 833336, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, s, o, l, c, u, d, f, p, _;
+let r, i, a, o, s, l, c, u, d, f, p, _;
 require.d(exports, {
   A: () => H
 });
@@ -58,14 +58,14 @@ function R(e) {
   let {
     item: t
   } = e;
-  t.type === m.R.AVATAR_DECORATION ? i = t.value : t.type === m.R.PROFILE_EFFECT ? s = t.value : t.type === m.R.NAMEPLATE && (a = t.value)
+  t.type === m.R.AVATAR_DECORATION ? i = t.value : t.type === m.R.PROFILE_EFFECT ? o = t.value : t.type === m.R.NAMEPLATE && (a = t.value)
 }
 
 function P(e) {
   let {
     banner: t
   } = e;
-  o = t
+  s = t
 }
 
 function D(e) {
@@ -75,28 +75,28 @@ function D(e) {
   l = t
 }
 
-function x(e) {
+function L(e) {
   let {
     pronouns: t
   } = e;
   c = t
 }
 
-function L(e) {
+function x(e) {
   let {
     nickname: t
   } = e;
   u = t
 }
 
-function j(e) {
+function M(e) {
   let {
     themeColors: t
   } = e;
   d = t
 }
 
-function M(e) {
+function j(e) {
   let {
     displayNameStyles: t
   } = e;
@@ -112,14 +112,14 @@ function U() {
 }
 
 function G() {
-  o = true, l = true, c = true, d = true, s = true
-}
-
-function V() {
-  v = {}
+  s = true, l = true, c = true, d = true, o = true
 }
 
 function F() {
+  v = {}
+}
+
+function V() {
   k(), I()
 }
 class B extends(h = Chunk311907.Ay.Store) {
@@ -130,7 +130,7 @@ class B extends(h = Chunk311907.Ay.Store) {
     return v
   }
   showNotice() {
-    return true !== r || true !== i || true !== s || true !== o || true !== l || true !== c || true !== u || true !== d || true !== a || true !== f
+    return true !== r || true !== i || true !== o || true !== s || true !== l || true !== c || true !== u || true !== d || true !== a || true !== f
   }
   getIsSubmitDisabled() {
     return true !== l && l.length > y.NA2
@@ -142,10 +142,10 @@ class B extends(h = Chunk311907.Ay.Store) {
     return i
   }
   getPendingProfileEffect() {
-    return s
+    return o
   }
   getPendingBanner() {
-    return o
+    return s
   }
   getPendingBio() {
     return l
@@ -172,8 +172,8 @@ class B extends(h = Chunk311907.Ay.Store) {
     return {
       pendingAvatar: r,
       pendingAvatarDecoration: i,
-      pendingProfileEffect: s,
-      pendingBanner: o,
+      pendingProfileEffect: o,
+      pendingBanner: s,
       pendingBio: l,
       pendingPronouns: c,
       pendingNickname: u,
@@ -192,22 +192,22 @@ class B extends(h = Chunk311907.Ay.Store) {
 b(B, "displayName", "GuildIdentitySettingsStore");
 let H = new B(Chunk73153.h, {
   GUILD_IDENTITY_SETTINGS_INIT: A,
-  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: F,
+  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: V,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
   GUILD_IDENTITY_SETTINGS_SUBMIT: S,
   GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: C,
   USER_PROFILE_UPDATE_FAILURE: N,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: w,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_COLLECTIBLES_ITEM: R,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES: M,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES: j,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: P,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: D,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: x,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: L,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: j,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: L,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: x,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: M,
   GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: U,
   GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: G,
   GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: k,
   GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: k,
-  GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: V
+  GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: F
 })

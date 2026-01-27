@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk942381 = require("./942381.js"),
   Chunk311907 = require("./311907.js"),
   Chunk3203 = require("./3203.jsx"),
@@ -32,7 +32,7 @@ function v(e, t) {
   } = e, [A, I] = i.useState(false), S = (0, l.bG)([p.A], () => {
     var e, t;
     return A && Object.values(null != (e = null == (t = p.A.frecencyWithoutFetchingLatest.favoriteGifs) ? true : t.gifs) ? e : {}).length <= 2
-  }), [T, C, N, w] = (0, f.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], o.x), R = i.useRef(0), P = i.useCallback(() => {
+  }), [T, C, N, w] = (0, f.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.x), R = i.useRef(0), P = i.useCallback(() => {
     I(true), clearTimeout(R.current), R.current = setTimeout(() => {
       I(false), R.current = 0
     }, 2e3)
@@ -45,12 +45,12 @@ function v(e, t) {
       (0, f.r$)(y.kx.GIF, a, v.id)
     }, [a, v.id]),
     {
-      Component: x,
-      events: L,
-      play: j
+      Component: L,
+      events: x,
+      play: M
     } = (0, c.V)(),
-    M = (0, h.p)(d.T),
-    k = a === m.oU.NORMAL ? M : true;
+    j = (0, h.p)(d.T),
+    k = a === m.oU.NORMAL ? j : true;
   if (n) return null;
   let U = T === y.kx.GIF && C === a && w === v.id;
   return (0, r.jsx)(u.m, {
@@ -60,13 +60,13 @@ function v(e, t) {
     forceOpen: S,
     children: (0, r.jsx)("div", {
       ref: t,
-      className: s()(y.VQ, O.UD),
+      className: o()(y.VQ, O.UD),
       children: (0, r.jsx)(g.A, {
         className: O.x6,
-        onMouseEnter: L.onMouseEnter,
-        onMouseLeave: L.onMouseLeave,
+        onMouseEnter: x.onMouseEnter,
+        onMouseLeave: x.onMouseLeave,
         onClick: () => {
-          D(), j()
+          D(), M()
         },
         isActive: U,
         pulse: A,
@@ -74,7 +74,7 @@ function v(e, t) {
         "aria-expanded": U,
         "aria-haspopup": "dialog",
         "aria-controls": N,
-        children: (0, r.jsx)(x, {
+        children: (0, r.jsx)(L, {
           size: "refresh_sm",
           color: "currentColor"
         })

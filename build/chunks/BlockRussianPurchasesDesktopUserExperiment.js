@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => l,
-  H: () => o
+  H: () => s
 });
 var Chunk600975 = require("./600975.js"),
   Chunk477421 = require("./477421.js");
@@ -22,7 +22,7 @@ let a = (0, Chunk600975.C)({
       }
     }]
   }),
-  s = (0, Chunk600975.C)({
+  o = (0, Chunk600975.C)({
     kind: "user",
     id: "2022-03_block_russian_purchases_desktop",
     label: "Block purchases based on country (desktop specific flags)",
@@ -38,7 +38,7 @@ let a = (0, Chunk600975.C)({
     }]
   });
 
-function o() {
+function s() {
   let {
     paymentsBlocked: e
   } = a.useExperiment({
@@ -47,7 +47,7 @@ function o() {
     autoTrackExposure: false
   }), {
     checkPaymentSource: t
-  } = s.useExperiment({
+  } = o.useExperiment({
     location: "c519a9_2"
   }, {
     autoTrackExposure: false

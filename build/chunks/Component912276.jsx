@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   Chunk108531 = require("./108531.js"),
   Chunk435371 = require("./435371.js"),
@@ -74,7 +74,7 @@ function R(e) {
     emoji: t,
     isDisabled: n = false,
     onClick: a,
-    className: o
+    className: s
   } = e, c = i.useRef(null), f = (0, p.M)(c);
   return (0, r.jsx)("span", {
     ref: c,
@@ -100,7 +100,7 @@ function R(e) {
               transform: i.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
             },
             children: (0, r.jsx)(d.A, {
-              className: s()(A.Zg, o, {
+              className: o()(A.Zg, s, {
                 [A.c4]: n
               }),
               emojiId: t.id,
@@ -130,7 +130,7 @@ function P(e) {
       children: (0, r.jsx)(u.abt, {
         size: "md",
         color: "currentColor",
-        className: s()(A.Gu, {
+        className: o()(A.Gu, {
           [A.Y9]: n
         })
       })
@@ -151,14 +151,14 @@ function D(e) {
     recentlyUsedEmojis: b,
     analyticsOverride: I,
     ref: T
-  } = e, D = (0, f.GV)(), [x, L] = i.useState(false), j = (0, _.Fj)(t.guild_id), M = (0, o.uniqBy)([...j, ...w], "name").filter(e => !y.Ay.isEmojiFilteredOrLocked({
+  } = e, D = (0, f.GV)(), [L, x] = i.useState(false), M = (0, _.Fj)(t.guild_id), j = (0, s.uniqBy)([...M, ...w], "name").filter(e => !y.Ay.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: N
   })).slice(0, 8);
-  null != b && b.length > 0 && M.splice(M.length - 1, 1, b[0]);
+  null != b && b.length > 0 && j.splice(j.length - 1, 1, b[0]);
   let k = e => {
-      L(e), null == h || h(e)
+      x(e), null == h || h(e)
     },
     U = e => {
       let {
@@ -168,7 +168,7 @@ function D(e) {
       null == t && n ? a() : (null != t && d(t), k(!n), n && E.Om.setSearchPlaceholder(null))
     },
     G = e => {
-      null != e && e.key !== v.dh.TAB && (e.key !== v.dh.ENTER || e.shiftKey ? k(true) : k(!x))
+      null != e && e.key !== v.dh.TAB && (e.key !== v.dh.ENTER || e.shiftKey ? k(true) : k(!L))
     };
   return (0, r.jsxs)(u.lGe, {
     "aria-labelledby": D,
@@ -186,21 +186,21 @@ function D(e) {
       children: [(0, r.jsx)(m.A, {
         analyticsOverride: I,
         channel: t,
-        className: s()(A.Mk, {
-          [A.DZ]: x
+        className: o()(A.Mk, {
+          [A.DZ]: L
         }),
-        headerClassName: s()(A.AW, {
-          [A.v6]: x
+        headerClassName: o()(A.AW, {
+          [A.v6]: L
         }),
         closePopout: a,
-        onSelectEmoji: x ? U : () => {},
-        shouldHidePickerActions: !x,
+        onSelectEmoji: L ? U : () => {},
+        shouldHidePickerActions: !L,
         wrapper: "div",
         pickerIntention: N,
         searchProps: C(S({}, g), {
           accessory: (0, r.jsx)(P, {
             otherAccessories: null == g ? true : g.accessory,
-            isEmojiPickerExpanded: x,
+            isEmojiPickerExpanded: L,
             onSetExpanded: k,
             onFocus: l
           }),
@@ -209,8 +209,8 @@ function D(e) {
       }), (0, r.jsx)("div", {
         className: A.nt,
         children: (0, r.jsx)("div", {
-          className: s()(A.Q0, A.Vg),
-          children: M.map(e => {
+          className: o()(A.Q0, A.Vg),
+          children: j.map(e => {
             let n = y.Ay.isEmojiDisabled({
               emoji: e,
               channel: t,

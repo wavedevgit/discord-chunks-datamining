@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 743961, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 743961, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
 });
@@ -11,38 +10,36 @@ var Chunk627968 = require("./627968.js"),
   Chunk112715 = require("./112715.js"),
   Chunk577806 = require("./577806.jsx"),
   Chunk279423 = require("./279423.jsx");
-
-function u(e) {
+let d = Chunk64700.memo(function(e) {
   let {
     node: t
   } = e, {
     useTitle: n,
     useTitleTrailingIcon: i,
-    useSubnavLabel: u,
-    useSubtitle: d,
-    layout: f,
+    useSubnavLabel: d,
+    useSubtitle: u,
+    layout: _,
     initialize: p,
-    useNotice: _
-  } = t, h = null == n ? true : n(), m = null == i ? true : i(), g = null == d ? true : d(), E = null == _ ? true : _(), y = null != n || null != u;
-  return (0, o.Z)(p), (0, r.jsxs)(r.Fragment, {
-    children: [null != h && (0, r.jsx)(l._, {
-      title: h,
-      titleTrailingIcon: m,
-      subtitle: g
+    useNotice: m
+  } = t, g = null == n ? true : n(), A = null == i ? true : i(), f = null == u ? true : u(), h = null == m ? true : m();
+  return (0, a.Z)(p), (0, r.jsxs)(r.Fragment, {
+    children: [null != g && (0, r.jsx)(o._, {
+      title: g,
+      titleTrailingIcon: A,
+      subtitle: f
     }), (0, r.jsx)("div", {
-      "data-settings-category-key": y ? t.key : true,
+      "data-settings-category-key": null != n || null != d ? t.key : true,
       "aria-hidden": true,
       style: {
         height: 1
       }
-    }), (0, r.jsxs)(a.BJc, {
+    }), (0, r.jsxs)(l.BJc, {
       gap: 16,
-      children: [null != E && (0, r.jsx)(c.A, {
-        notice: E
-      }), f.map(e => (0, r.jsx)(s.A, {
+      children: [null != h && (0, r.jsx)(c.A, {
+        notice: h
+      }), _.map(e => (0, r.jsx)(s.A, {
         node: e
       }, e.key))]
     })]
   })
-}
-let d = Chunk64700.memo(u)
+})

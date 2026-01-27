@@ -41,16 +41,16 @@ async function d(e, t) {
       return await i.h.dispatch({
         type: "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING",
         guildId: e
-      }), await new Promise(e => setTimeout(e, a.body.retry_after * s.A.Millis.SECOND)), d(e, t, n, f + 1)
+      }), await new Promise(e => setTimeout(e, a.body.retry_after * o.A.Millis.SECOND)), d(e, t, n, f + 1)
     }
     return {
-      type: o.r.SUCCESSFUL_QUERY,
+      type: s.r.SUCCESSFUL_QUERY,
       body: c(a.body)
     }
   } catch (t) {
     let e = new a.LG(t);
     return {
-      type: o.r.ERROR,
+      type: s.r.ERROR,
       body: e
     }
   }

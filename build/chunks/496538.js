@@ -4,7 +4,7 @@
 var Chunk257943 = require("./257943.js"),
   Chunk703441 = require("./703441.js"),
   a = TypeError,
-  s = Object.getOwnPropertyDescriptor;
+  o = Object.getOwnPropertyDescriptor;
 module.exports = Chunk257943 && ! function() {
   if (true !== this) returntrue;
   try {
@@ -15,7 +15,7 @@ module.exports = Chunk257943 && ! function() {
     return e instanceof TypeError
   }
 }() ? function(e, t) {
-  if (i(e) && !s(e, "length").writable) throw new a("Cannot set read only .length");
+  if (i(e) && !o(e, "length").writable) throw new a("Cannot set read only .length");
   return e.length = t
 } : function(e, t) {
   return e.length = t

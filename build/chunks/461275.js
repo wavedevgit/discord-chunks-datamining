@@ -5,13 +5,13 @@ require("./896048.js"), require("./65821.js"), require("./747238.js"), require("
 var Chunk118356 = require("./118356.js");
 require("./506774.js");
 let i = new Chunk118356.Vy("useStateFromStores"),
-  a = s();
+  a = o();
 
-function s() {
+function o() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 6e4;
   return e
 }
-let o = l();
+let s = l();
 
 function l() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 10;
@@ -40,7 +40,7 @@ p && (_ = setInterval(y, a));
 let m = new Map;
 
 function g(e) {
-  return "anonymous" !== e.name && ("" === d || e.name === d) && (e.execCount > c || e.execTime > o)
+  return "anonymous" !== e.name && ("" === d || e.name === d) && (e.execCount > c || e.execTime > s)
 }
 
 function E() {
@@ -57,6 +57,6 @@ let b = function() {
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 20,
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 20,
     r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : e + t + n + 6;
-  for (let [a, s] of(i.log("|".padEnd(r, "-") + "|"), i.log("| Consumers of `useStateFromStores` exceeding warning thresholds:".padEnd(r, " ") + "|"), i.log("|".padEnd(r, "-") + "|"), i.log("| ".concat("Function/Component Name".padEnd(e, " ")) + "| ".concat("Total Exec Time".padEnd(t, " ")) + "| ".concat("Total Exec Count".padEnd(n, " "), "|")), i.log("|".padEnd(r, "-") + "|"), m))("" !== d && a === d || g(s)) && i.log("| ".concat(a.padEnd(e, " ")) + "| ".concat((s.execTime.toFixed(2) + "ms").padEnd(t, " ")) + "| ".concat(s.execCount.toString().padEnd(n, " "), "|"));
+  for (let [a, o] of(i.log("|".padEnd(r, "-") + "|"), i.log("| Consumers of `useStateFromStores` exceeding warning thresholds:".padEnd(r, " ") + "|"), i.log("|".padEnd(r, "-") + "|"), i.log("| ".concat("Function/Component Name".padEnd(e, " ")) + "| ".concat("Total Exec Time".padEnd(t, " ")) + "| ".concat("Total Exec Count".padEnd(n, " "), "|")), i.log("|".padEnd(r, "-") + "|"), m))("" !== d && a === d || g(o)) && i.log("| ".concat(a.padEnd(e, " ")) + "| ".concat((o.execTime.toFixed(2) + "ms").padEnd(t, " ")) + "| ".concat(o.execCount.toString().padEnd(n, " "), "|"));
   i.log("|".padEnd(r, "-") + "|")
 }

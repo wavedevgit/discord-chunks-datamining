@@ -5,9 +5,9 @@ var Chunk72290 = require("./72290.js"),
   Chunk626800 = require("./626800.js"),
   Chunk171463 = require("./171463.js");
 if (require("./912877.js")() || require("./640847.js")()) {
-  var s = Symbol.iterator;
+  var o = Symbol.iterator;
   module.exports = function(e) {
-    return null != e && true !== e[s] ? e[s]() : i(e) ? Array.prototype[s].call(e) : true
+    return null != e && true !== e[o] ? e[o]() : i(e) ? Array.prototype[o].call(e) : true
   }
 } else {
   var Chunk425344 = require("./425344.js"),
@@ -39,7 +39,7 @@ if (require("./912877.js")() || require("./640847.js")()) {
       }
     },
     E = function(e, t) {
-      if (o(e) || i(e)) return g(e);
+      if (s(e) || i(e)) return g(e);
       if (l(e)) {
         var n = 0;
         return {

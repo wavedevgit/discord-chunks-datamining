@@ -21,8 +21,8 @@ function f(e) {
   } = e, f = (0, l.A)(t);
   return i.useMemo(() => {
     if (f) {
-      let e = (0, o.Jp)(t);
-      return (0, s.K)(e) !== s._.NONE
+      let e = (0, s.Jp)(t);
+      return (0, o.K)(e) !== o._.NONE
     }
     return t.features.has(d.GuildFeatures.INTERNAL_EMPLOYEE_ONLY) || t.features.has(d.GuildFeatures.HUB) || t.features.has(d.GuildFeatures.VERIFIED) || t.features.has(d.GuildFeatures.PARTNERED)
   }, [t, f]) ? (0, r.jsx)(a.un, {

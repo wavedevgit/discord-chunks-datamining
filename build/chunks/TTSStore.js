@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 8880, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 92750 **/
+/** chunk id: 8880, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => m
+  A: () => d
 });
-var r, Chunk311907 = require("./311907.js"),
+var s, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,88 +16,78 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      s = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      s(e, t, n[t])
+    }))), s.forEach(function(t) {
+      i(e, t, n[t])
     })
   }
   return e
 }
 
-function l(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
 function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var s = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, s)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = {
+let o = {
     speechRate: 1,
     currentMessage: null
   },
-  d = u;
-
-function f(e) {
-  let {
-    messageId: t,
-    channelId: n
-  } = e;
-  d = c(o({}, d), {
-    currentMessage: {
-      messageId: t,
-      channelId: n
-    }
-  })
-}
-
-function p() {
-  d = c(o({}, d), {
-    currentMessage: null
-  })
-}
-
-function _(e) {
-  d = c(o({}, d), {
-    speechRate: e.speechRate
-  })
-}
-class h extends(r = Chunk311907.Ay.DeviceSettingsStore) {
+  u = o;
+class p extends(s = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
-    d = o({}, u, null != e ? e : null)
+    u = l({}, o, null != e ? e : null)
   }
   isSpeakingMessage(e, t) {
     let {
       currentMessage: n
-    } = d;
+    } = u;
     return null !== n && n.channelId === e && n.messageId === t
   }
   get currentMessage() {
-    return d.currentMessage
+    return u.currentMessage
   }
   get speechRate() {
-    return d.speechRate
+    return u.speechRate
   }
   getUserAgnosticState() {
-    return d
+    return u
   }
 }
-s(h, "displayName", "TTSStore"), s(h, "persistKey", "TTSStore"), s(h, "migrations", []);
-let m = new h(Chunk73153.h, __OVERLAY__ ? {} : {
-  SPEAKING_MESSAGE: f,
-  STOP_SPEAKING: p,
-  SET_TTS_SPEECH_RATE: _
+i(p, "displayName", "TTSStore"), i(p, "persistKey", "TTSStore"), i(p, "migrations", []);
+let d = new p(Chunk73153.h, __OVERLAY__ ? {} : {
+  SPEAKING_MESSAGE: function(e) {
+    let {
+      messageId: t,
+      channelId: n
+    } = e;
+    u = c(l({}, u), {
+      currentMessage: {
+        messageId: t,
+        channelId: n
+      }
+    })
+  },
+  STOP_SPEAKING: function() {
+    u = c(l({}, u), {
+      currentMessage: null
+    })
+  },
+  SET_TTS_SPEECH_RATE: function(e) {
+    u = c(l({}, u), {
+      speechRate: e.speechRate
+    })
+  }
 })

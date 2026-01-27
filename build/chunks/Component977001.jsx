@@ -29,7 +29,7 @@ let h = e => {
       selected: i
     } = e, {
       largeImage: a
-    } = (0, s.nO)({
+    } = (0, o.nO)({
       entry: t,
       showCoverImage: false
     }), p = (0, l.TQ)(t);
@@ -48,7 +48,7 @@ let h = e => {
             entry: t
           }, n))
         })]
-      }), (0, r.jsx)(o.V, {
+      }), (0, r.jsx)(s.V, {
         src: null == a ? true : a.src,
         size: 48,
         className: d.xn,

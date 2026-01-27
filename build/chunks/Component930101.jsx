@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk835245 = require("./835245.js"),
   Chunk435371 = require("./435371.js"),
   Chunk397927 = require("./397927.js"),
@@ -67,7 +67,7 @@ let S = e => {
     let {
       node: n,
       tooltipPosition: a = h.Uk.position,
-      enableClick: o = true,
+      enableClick: s = true,
       channelId: d,
       messageId: f
     } = e, p = i.useRef(null), m = null == (t = n.originalMatch) ? true : t[0], [g, E] = i.useState(false), O = e => (0, r.jsx)(u.A, {
@@ -83,13 +83,13 @@ let S = e => {
       return (0, r.jsx)(l.un, I(v({
         asset: O("jumbo"),
         title: null != (t = n.name) ? t : "",
-        body: o ? y.intl.string(y.t["515vjG"]) : "",
+        body: s ? y.intl.string(y.t["515vjG"]) : "",
         ariaHidden: true
       }, h.Uk), {
         position: a,
         shouldShow: !g,
         onTooltipShow: () => {
-          o && C({
+          s && C({
             emojiNode: n,
             isCustomEmoji: false
           })
@@ -101,15 +101,15 @@ let S = e => {
             var n;
             E(true), null == e || null == (n = e.onClick) || n.call(e, t)
           },
-          className: s()(b.qq, {
-            [b._Y]: o,
+          className: o()(b.qq, {
+            [b._Y]: s,
             [b.gp]: n.jumboable
           }),
           children: O()
         }))
       }))
     };
-    if (!o) return A();
+    if (!s) return A();
     let S = e => (0, r.jsx)(_.MV, I(v({}, e), {
       node: n
     }));
@@ -143,7 +143,7 @@ let S = e => {
       isInteracting: n,
       channelId: E,
       messageId: O
-    }), x = (0, o.A)(), L = e => (0, r.jsx)(l.un, I(v({
+    }), L = (0, s.A)(), x = e => (0, r.jsx)(l.un, I(v({
       asset: D("jumbo"),
       title: t.name,
       body: d ? y.intl.string(y.t["515vjG"]) : "",
@@ -155,7 +155,7 @@ let S = e => {
         N(true), d && (C({
           emojiNode: t,
           isCustomEmoji: true,
-          nonce: x
+          nonce: L
         }), (0, f.K)(g.Vl.CustomEmojiTooltipShown))
       },
       children: (0, r.jsx)(c.DUT, I(v({}, e), {
@@ -170,38 +170,38 @@ let S = e => {
         } : true,
         onMouseLeave: () => {
           T && (p.default.track(m.HAw.CLOSE_POPOUT, {
-            nonce: x
+            nonce: L
           }), N(false))
         },
         tag: "span",
-        className: s()(b.qq, {
+        className: o()(b.qq, {
           [b._Y]: d,
           [b.gp]: t.jumboable
         }),
         children: D()
       }))
     }));
-    if (!d) return L();
-    let j = e => (0, r.jsx)(_.iP, I(v({}, e), {
+    if (!d) return x();
+    let M = e => (0, r.jsx)(_.iP, I(v({}, e), {
       node: t,
       refreshPositionKey: () => S(String(Date.now())),
-      nonce: x
+      nonce: L
     }));
     return (0, r.jsx)(c.YNO, {
       animation: c.YNO.Animation.FADE,
       align: "center",
       onRequestClose: () => {
         p.default.track(m.HAw.CLOSE_POPOUT, {
-          nonce: x
+          nonce: L
         }), N(false), R(false)
       },
       autoInvert: true,
       nudgeAlignIntoViewport: true,
       position: "right",
-      renderPopout: j,
+      renderPopout: M,
       positionKey: A,
       targetElementRef: P,
-      children: L
+      children: x
     })
   },
   C = e => {

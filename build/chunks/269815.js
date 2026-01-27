@@ -11,7 +11,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk961350 = require("./961350.js");
 
 function l() {
-  let [e, t] = (0, i.yK)([o.default], () => [o.default.isAuthenticated(), null != o.default.getAnalyticsToken()]), n = (0, s.A)(e);
+  let [e, t] = (0, i.yK)([s.default], () => [s.default.isAuthenticated(), null != s.default.getAnalyticsToken()]), n = (0, o.A)(e);
   r.useEffect(() => {
     n || !e || t || a.rQ({
       withAnalyticsToken: true

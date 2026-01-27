@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 632656, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 632656, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => _
+  m: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk673698 = require("./673698.jsx"),
   Chunk990078 = require("./990078.jsx"),
   Chunk155718 = require("./155718.js"),
@@ -16,17 +15,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk724870 = require("./724870.js");
 
-function _(e) {
-  let t = i.useRef(null),
+function p(e) {
+  let t = l.useRef(null),
     n = e.media;
-  if (n.loadingState === c.TD.LOADED_NOT_FOUND) return (0, r.jsx)(l.m, {
-    text: f.intl.string(f.t.UvDfMz),
+  if (n.loadingState === c.TD.LOADED_NOT_FOUND) return (0, r.jsx)(o.m, {
+    text: m.intl.string(m.t.UvDfMz),
     position: "bottom",
     align: "center",
     targetElementRef: t,
     children: (0, r.jsx)("div", {
-      className: s()(e.className, p.FN, {
-        [p.gS]: e.hiddenSpoilers
+      className: i()(e.className, f.FN, {
+        [f.gS]: e.hiddenSpoilers
       }),
       style: {
         width: e.placeholderWidth,
@@ -35,14 +34,14 @@ function _(e) {
       role: "img",
       children: (0, r.jsx)(u.A, {
         ref: t,
-        className: p.i4
+        className: f.i4
       })
     })
   });
   let a = n.loadingState === c.TD.LOADING ? d.Rv1.LOADING : d.Rv1.ERROR;
-  return (0, r.jsx)(o._, {
-    className: s()(e.className, {
-      [p.gS]: e.hiddenSpoilers
+  return (0, r.jsx)(s._, {
+    className: i()(e.className, {
+      [f.gS]: e.hiddenSpoilers
     }),
     readyState: a,
     src: "",

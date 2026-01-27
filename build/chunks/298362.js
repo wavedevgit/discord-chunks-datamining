@@ -69,7 +69,7 @@ let i = {
     dic: 12,
     "dic.": 12
   },
-  s = {
+  o = {
     uno: 1,
     dos: 2,
     tres: 3,
@@ -84,7 +84,7 @@ let i = {
     doce: 12,
     trece: 13
   },
-  o = {
+  s = {
     sec: "second",
     segundo: "second",
     segundos: "second",
@@ -108,11 +108,11 @@ let i = {
     año: "year",
     años: "year"
   },
-  l = `(?:${(0,Chunk476858.uJ)(s)}|[0-9]+|[0-9]+\\.[0-9]+|un?|uno?|una?|algunos?|unos?|demi-?)`;
+  l = `(?:${(0,Chunk476858.uJ)(o)}|[0-9]+|[0-9]+\\.[0-9]+|un?|uno?|una?|algunos?|unos?|demi-?)`;
 
 function c(e) {
   let t = e.toLowerCase();
-  if (true !== s[t]) return s[t];
+  if (true !== o[t]) return o[t];
   if ("un" === t || "una" === t || "uno" === t) return 1;
   if (t.match(/algunos?/)) return 3;
   if (t.match(/unos?/)) return 3;
@@ -128,7 +128,7 @@ function d(e) {
   }
   return e.match(/a\.?\s*c\.?/i) ? -parseInt(e = e.replace(/a\.?\s*c\.?/i, "")) : parseInt(e)
 }
-let f = `(${l})\\s{0,5}(${(0,Chunk476858.uJ)(o)})\\s{0,5}`,
+let f = `(${l})\\s{0,5}(${(0,Chunk476858.uJ)(s)})\\s{0,5}`,
   p = RegExp(f, "i"),
   _ = (0, Chunk476858.mb)("", f);
 
@@ -142,5 +142,5 @@ function h(e) {
 
 function m(e, t) {
   let n = c(t[1]);
-  e[o[t[2].toLowerCase()]] = n
+  e[s[t[2].toLowerCase()]] = n
 }

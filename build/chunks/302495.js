@@ -21,7 +21,7 @@ let c = {
     let {
       name: e = "guildId",
       optional: t = false
-    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = s.Cr.map(i()).join("|");
+    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = o.Cr.map(i()).join("|");
     return l(e, "".concat(n, "|\\d+"), {
       optional: t
     })
@@ -30,7 +30,7 @@ let c = {
     let {
       name: e = "channelId",
       optional: t = false
-    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = [...o.qW].map(i()).join("|");
+    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = [...s.qW].map(i()).join("|");
     return l(e, "".concat(n, "|\\d+"), {
       optional: t
     })

@@ -17,5 +17,5 @@ let t = "[a-fA-F\\d:]",
 (?::((?::${i}){0,5}:${r}|(?::${i}){1,7}|:))           // ::2:3:4:5:6:7:8  ::2:3:4:5:6:7:8  ::8             ::1.2.3.4
 )(%[0-9a-zA-Z]{1,})?                                           // %eth0            %1
 `.replace(/\s*\/\/.*$/gm, "").replace(/\n/g, "").trim(),
-  s = e => e && e.exact ? RegExp(`(?:^${r}$)|(?:^${a}$)`) : RegExp(`(?:${n(e)}${r}${n(e)})|(?:${n(e)}${a}${n(e)})`, "g");
-s.v4 = e => e && e.exact ? RegExp(`^${r}$`) : RegExp(`${n(e)}${r}${n(e)}`, "g"), s.v6 = e => e && e.exact ? RegExp(`^${a}$`) : RegExp(`${n(e)}${a}${n(e)}`, "g"), module.exports = s
+  o = e => e && e.exact ? RegExp(`(?:^${r}$)|(?:^${a}$)`) : RegExp(`(?:${n(e)}${r}${n(e)})|(?:${n(e)}${a}${n(e)})`, "g");
+o.v4 = e => e && e.exact ? RegExp(`^${r}$`) : RegExp(`${n(e)}${r}${n(e)}`, "g"), o.v6 = e => e && e.exact ? RegExp(`^${a}$`) : RegExp(`${n(e)}${a}${n(e)}`, "g"), module.exports = o

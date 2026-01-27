@@ -31,7 +31,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk633217 = require("./633217.js"),
   Chunk909340 = require("./909340.js");
 let w = () => {
-    let e = (0, s.bG)([u.A], () => u.A.useReducedMotion);
+    let e = (0, o.bG)([u.A], () => u.A.useReducedMotion);
     return (0, r.jsx)("div", {
       className: S.s,
       children: e ? (0, r.jsx)("img", {
@@ -66,11 +66,11 @@ function D(e) {
     onRequestClose: _,
     ctaText: v,
     ctaOnClick: T
-  } = e, C = (0, s.bG)([u.A], () => u.A.useReducedMotion), D = (0, s.bG)([f.A], () => f.A.getRewardForProgram(p.W.NITRO)), x = (0, s.bG)([m.default], () => m.default.getCurrentUser()), {
-    balance: L
-  } = (0, h.W)(), j = i.useMemo(() => {
-    let e = (0, E.YE)(x, b.PremiumTypes.TIER_2),
-      t = !(0, E.ki)(x);
+  } = e, C = (0, o.bG)([u.A], () => u.A.useReducedMotion), D = (0, o.bG)([f.A], () => f.A.getRewardForProgram(p.W.NITRO)), L = (0, o.bG)([m.default], () => m.default.getCurrentUser()), {
+    balance: x
+  } = (0, h.W)(), M = i.useMemo(() => {
+    let e = (0, E.YE)(L, b.PremiumTypes.TIER_2),
+      t = !(0, E.ki)(L);
     if (!f.A.passesGeneralUIInvariant(p.W.NITRO)) return null;
     if (t) return (0, r.jsx)(c.EYj, {
       variant: "text-xs/normal",
@@ -93,8 +93,8 @@ function D(e) {
       })
     }
     return null
-  }, [x, D]);
-  return (0, r.jsxs)(o.x, {
+  }, [L, D]);
+  return (0, r.jsxs)(s.x, {
     targetElementRef: t,
     shouldShow: n,
     onRequestClose: _,
@@ -102,7 +102,7 @@ function D(e) {
     gradientColor: "blue",
     modal: true,
     closeOnClickOutside: true,
-    children: [(null != L ? L : 0) >= R && (0, r.jsx)(d.A, {
+    children: [(null != x ? x : 0) >= R && (0, r.jsx)(d.A, {
       autoPlay: !C,
       loop: !C,
       muted: true,
@@ -123,13 +123,13 @@ function D(e) {
             children: [(0, r.jsx)(c.EYj, {
               variant: "display-lg",
               className: S.K,
-              children: null != L ? L : 0
-            }), (null != L ? L : 0) > 0 && (0, r.jsx)(c.EYj, {
+              children: null != x ? x : 0
+            }), (null != x ? x : 0) > 0 && (0, r.jsx)(c.EYj, {
               variant: "text-xs/normal",
               color: "text-muted",
               children: I.intl.string(A.default.KclK9z)
             })]
-          }), j]
+          }), M]
         }), (0, r.jsx)(c.$nd, {
           text: v,
           variant: "primary",

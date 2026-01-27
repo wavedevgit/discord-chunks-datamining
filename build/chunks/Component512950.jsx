@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk934551 = require("./934551.js"),
   Chunk834730 = require("./834730.jsx"),
   Chunk154624 = require("./154624.js"),
@@ -20,15 +20,15 @@ function d(e, t) {
   if (null != t) return t;
   switch (e) {
     case "warn":
-      return o.WarningIcon;
+      return s.WarningIcon;
     case "info":
-      return o.CircleInformationIcon;
+      return s.CircleInformationIcon;
     case "danger":
-      return o.CircleErrorIcon;
+      return s.CircleErrorIcon;
     case "positive":
-      return o.CheckmarkLargeIcon;
+      return s.CheckmarkLargeIcon;
     case "preview":
-      return o.ScienceIcon
+      return s.ScienceIcon
   }
 }
 
@@ -62,13 +62,13 @@ function _(e) {
     messageType: n,
     action: i,
     className: a,
-    textColor: o = "text-default",
+    textColor: s = "text-default",
     textVariant: u = "text-sm/medium",
     icon: d,
     hidden: _ = false
   } = e, h = f(n);
   return (0, r.jsx)("div", {
-    className: s()(c.kL, h, a, {
+    className: o()(c.kL, h, a, {
       [c.R]: _
     }),
     children: (0, r.jsxs)("div", {
@@ -81,7 +81,7 @@ function _(e) {
         })
       }), (0, r.jsx)(l.E, {
         className: c.Qq,
-        color: o,
+        color: s,
         variant: u,
         children: t
       }), null != i ? (0, r.jsx)("div", {

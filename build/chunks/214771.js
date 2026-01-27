@@ -44,10 +44,10 @@ class f {
         CONNECTION_OPEN: (e, t) => this.handleConnectionOpen(e, t),
         BACKGROUND_SYNC: (e, t) => this.handleConnectionOpen(e, t)
       }), !(0, a.O)()) return;
-    o.A.addChangeListener(i().throttle(() => {
+    s.A.addChangeListener(i().throttle(() => {
       var e;
       null == (e = c.A.database()) || e.transaction(e => {
-        let t = o.A.getGuildId();
+        let t = s.A.getGuildId();
         null == t || isNaN(Number(t)) ? c.A.nonGuildVersionsTransaction(e).delete("initial_guild_id") : c.A.nonGuildVersionsTransaction(e).put({
           id: "initial_guild_id",
           versionString: t

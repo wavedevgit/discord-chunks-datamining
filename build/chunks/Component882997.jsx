@@ -45,7 +45,7 @@ function _(e) {
     overrideUrl: h,
     successRedirect: m
   } = e;
-  (f === d.fg2.LEAGUE_OF_LEGENDS && (f = d.fg2.RIOT_GAMES), f === d.fg2.CRUNCHYROLL) ? s.t([null != _ ? _ : "unknown"]): f === d.fg2.XBOX ? l.t([null != _ ? _ : "unknown"]) : f === d.fg2.PLAYSTATION || f === d.fg2.PLAYSTATION_STAGING ? o.t([null != _ ? _ : "unknown"], f) : f === d.fg2.DOMAIN ? (0, i.mMO)(async () => {
+  (f === d.fg2.LEAGUE_OF_LEGENDS && (f = d.fg2.RIOT_GAMES), f === d.fg2.CRUNCHYROLL) ? o.t([null != _ ? _ : "unknown"]): f === d.fg2.XBOX ? l.t([null != _ ? _ : "unknown"]) : f === d.fg2.PLAYSTATION || f === d.fg2.PLAYSTATION_STAGING ? s.t([null != _ ? _ : "unknown"], f) : f === d.fg2.DOMAIN ? (0, i.mMO)(async () => {
     let {
       default: e
     } = await n.e("78250").then(n.bind(n, 983665));

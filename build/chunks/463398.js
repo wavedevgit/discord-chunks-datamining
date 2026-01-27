@@ -23,22 +23,22 @@ function u(e, t, n) {
 }
 class d extends Chunk439372.A {
   async onPostConnectionOpen() {
-    (0, s.BE)(), await this.maybeFetchBogoPromotion()
+    (0, o.BE)(), await this.maybeFetchBogoPromotion()
   }
   onSubscriptionUpdated(e) {
     let {
       subscription: t
     } = e;
-    t.type === c.rz.PREMIUM && (0, s.BE)(false)
+    t.type === c.rz.PREMIUM && (0, o.BE)(false)
   }
   onOfferUpdated() {
-    (0, s.BE)(false)
+    (0, o.BE)(false)
   }
   onVCRedeemed(e) {
     let {
       entitlements: t
     } = e;
-    t.some(e => e.type === l.zF_.FRACTIONAL_REDEMPTION) && (0, s.BE)(false)
+    t.some(e => e.type === l.zF_.FRACTIONAL_REDEMPTION) && (0, o.BE)(false)
   }
   constructor(...e) {
     super(...e), u(this, "actions", {
@@ -50,7 +50,7 @@ class d extends Chunk439372.A {
       VIRTUAL_CURRENCY_REDEEM_SUCCESS: this.onVCRedeemed.bind(this)
     }), u(this, "maybeFetchBogoPromotion", async () => {
       let e = i.default.getCurrentUser();
-      a.Ay.isPremiumExactly(e, o.PremiumTypes.TIER_2)
+      a.Ay.isPremiumExactly(e, s.PremiumTypes.TIER_2)
     })
   }
 }

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 546991, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 546991, original params: e,t,n (module,exports,require) **/
 module.exports = {
   Nd: "logoHeader_f1578d",
   kL: "container_f1578d",

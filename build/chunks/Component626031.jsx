@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk397927 = require("./397927.js"),
   Chunk475743 = require("./475743.js"),
@@ -66,7 +66,7 @@ let y = new Chunk626584.A("BalanceCounter"),
     var t, n;
     let {
       value: a,
-      onSetDigitCount: s,
+      onSetDigitCount: o,
       onValueChange: c,
       onValueReached: u,
       targetTotalCounterTime: d = 3e3
@@ -104,7 +104,7 @@ let y = new Chunk626584.A("BalanceCounter"),
         },
         delay: A,
         onStart: () => {
-          s(O(E))
+          o(O(E))
         },
         onRest: () => {
           if (_(p + 1), u(), !b && null !== m.current && null !== h.current) {
@@ -114,11 +114,11 @@ let y = new Chunk626584.A("BalanceCounter"),
               delta: g - h.current
             })
           }
-          s(O(g)), h.current = g
+          o(O(g)), h.current = g
         }
       }),
       S = O(Math.max(null != a ? a : 0, I.get()));
-    return (0, r.jsx)(o.animated.div, {
+    return (0, r.jsx)(s.animated.div, {
       style: {
         width: "calc(".concat(S, "ch)")
       },
@@ -130,10 +130,10 @@ let y = new Chunk626584.A("BalanceCounter"),
     let {
       value: n,
       className: a
-    } = e, o = g(e, ["value", "className"]), u = null === n, [d, f] = (0, i.useState)(null), p = (0, i.useMemo)(() => O(n), [n]), h = null != (t = (0, c.A)(p)) ? t : 0, E = (0, i.useMemo)(() => v(h, p, d), [h, p, d]), y = "".concat(u ? 0 : E, "ch");
+    } = e, s = g(e, ["value", "className"]), u = null === n, [d, f] = (0, i.useState)(null), p = (0, i.useMemo)(() => O(n), [n]), h = null != (t = (0, c.A)(p)) ? t : 0, E = (0, i.useMemo)(() => v(h, p, d), [h, p, d]), y = "".concat(u ? 0 : E, "ch");
     return (0, r.jsx)(l.Text, {
       variant: "text-md/semibold",
-      className: s()(_.S, u ? true : _.r, a),
+      className: o()(_.S, u ? true : _.r, a),
       style: {
         width: y,
         opacity: u ? "0" : 1
@@ -143,6 +143,6 @@ let y = new Chunk626584.A("BalanceCounter"),
           e !== d && f(e)
         },
         value: n
-      }, o))
+      }, s))
     })
   }

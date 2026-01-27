@@ -42,8 +42,8 @@ let d = 10,
       if (null == n) return null;
       let c = (0, l.xA)(n, t.ownerId);
       return null == c ? null : 100 * c.short.packetLossRate > d || 100 * c.long.packetLossRate > d ? [u({
-        type: s.iy.STREAM_SEND_HIGH_PACKET_LOSS
-      }, (0, o.id)((0, r._z)(t)))] : true
+        type: o.iy.STREAM_SEND_HIGH_PACKET_LOSS
+      }, (0, s.id)((0, r._z)(t)))] : true
     },
     makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
   }

@@ -31,7 +31,7 @@ class i {
   static getCalculatorOrCreate(e, t, n, r) {
     let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 0,
       a = e[t.ssrc];
-    return null == a && (a = new o(n, r, i), e[t.ssrc] = a), a
+    return null == a && (a = new s(n, r, i), e[t.ssrc] = a), a
   }
   getInboundBytesRecevierCalculator(e) {
     return i.getCalculatorOrCreate(this.inboundVideoBitrate, e, "bytesReceived", "timestamp", 3)
@@ -52,7 +52,7 @@ class i {
 var a = function(e) {
   return e[e.NONE = 0] = "NONE", e[e.MILLISECONDS_FROM_SECONDS = 1] = "MILLISECONDS_FROM_SECONDS", e[e.BYTES_TO_BITS = 2] = "BYTES_TO_BITS", e[e.ROUND = 4] = "ROUND", e
 }(a || {});
-let s = {
+let o = {
   0: {
     multiplier: 1
   },
@@ -66,7 +66,7 @@ let s = {
     multiplier: 8
   }
 };
-class o {
+class s {
   calculate(e) {
     let t = this.previous;
     if (this.previous = e, null == t) return;
@@ -76,16 +76,16 @@ class o {
       i = e[this.accumulativeMetricKey];
     if ("number" != typeof r || "number" != typeof i) return;
     let a = t[this.samplesMetricKey],
-      s = e[this.samplesMetricKey];
-    if ("number" != typeof a || "number" != typeof s) return;
-    let o = (i - r) / (s - a) * this.multiplier;
-    return this.round ? Math.round(o) : o
+      o = e[this.samplesMetricKey];
+    if ("number" != typeof a || "number" != typeof o) return;
+    let s = (i - r) / (o - a) * this.multiplier;
+    return this.round ? Math.round(s) : s
   }
   constructor(e, t, n = 0) {
     for (const l in r(this, "accumulativeMetricKey", true), r(this, "samplesMetricKey", true), r(this, "previous", true), r(this, "multiplier", true), r(this, "round", true), this.accumulativeMetricKey = e, this.samplesMetricKey = t, this.multiplier = 1, this.round = false, a) {
-      var i, o;
+      var i, s;
       const e = Number(l);
-      !isNaN(e) && (n & e) != 0 && l in s && (this.multiplier *= null != (i = null == (o = s[l]) ? true : o.multiplier) ? i : 1)
+      !isNaN(e) && (n & e) != 0 && l in o && (this.multiplier *= null != (i = null == (s = o[l]) ? true : s.multiplier) ? i : 1)
     }
     this.round = (4 & n) != 0
   }

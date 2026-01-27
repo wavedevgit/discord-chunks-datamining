@@ -22,8 +22,8 @@ function h(e) {
   if (e.ctrlKey || e.altKey || e.metaKey || e.key !== p.dh.TAB || null == e.target) return;
   let {
     target: n
-  } = e, r = null == (t = (0, s.BF)(e)) ? true : t.activeElement;
-  (0, s.vq)(n) && c.default.track(f.HAw.KEYBOARD_SHORTCUT_USED, {
+  } = e, r = null == (t = (0, o.BF)(e)) ? true : t.activeElement;
+  (0, o.vq)(n) && c.default.track(f.HAw.KEYBOARD_SHORTCUT_USED, {
     shortcut_name: "tab_navigation",
     source_class_list: null != r ? Array.from(r.classList) : [],
     location_object: n.tagName
@@ -33,21 +33,21 @@ function h(e) {
 function m(e) {
   let {
     children: t
-  } = e, n = (0, o.cf)([u.A], () => ({
+  } = e, n = (0, s.cf)([u.A], () => ({
     enabled: u.A.useReducedMotion,
     rawValue: u.A.rawPrefersReducedMotion
-  })), s = (0, o.cf)([u.A], () => ({
+  })), o = (0, s.cf)([u.A], () => ({
     enabled: u.A.useForcedColors,
     rawValue: u.A.systemForcedColors
-  })), c = (0, o.bG)([u.A], () => u.A.isHighContrastModeEnabled), f = (0, o.bG)([u.A], () => u.A.alwaysShowLinkDecorations), p = (0, o.bG)([u.A], () => u.A.keyboardModeEnabled), m = (0, o.bG)([u.A], () => u.A.isSwitchIconsEnabled), g = i.useMemo(() => ({
+  })), c = (0, s.bG)([u.A], () => u.A.isHighContrastModeEnabled), f = (0, s.bG)([u.A], () => u.A.alwaysShowLinkDecorations), p = (0, s.bG)([u.A], () => u.A.keyboardModeEnabled), m = (0, s.bG)([u.A], () => u.A.isSwitchIconsEnabled), g = i.useMemo(() => ({
     reducedMotion: n,
     prefersCrossfades: false,
-    forcedColors: s,
+    forcedColors: o,
     alwaysShowLinkDecorations: f,
     highContrastModeEnabled: c,
     keyboardModeEnabled: p,
     switchIconsEnabled: m
-  }), [n, s, f, c, p, m]);
+  }), [n, o, f, c, p, m]);
   return i.useEffect(() => ((0, a.waitForAllDefaultIntlMessagesLoaded)().then(() => (0, d.Z7)()), _.intl.onLocaleChange(() => (0, d.Z7)()), window.addEventListener("keydown", h), () => window.removeEventListener("keydown", h)), []), (0, r.jsx)(l.CZY.Provider, {
     value: g,
     children: t

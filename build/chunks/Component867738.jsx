@@ -39,8 +39,8 @@ let _ = e => {
       ref: y,
       onFocus: g,
       autoFocus: E,
-      defaultSearchPlaceholder: (0, o.wT)(i, O)
-    }), i === f.b_.REACTION ? (0, r.jsx)(s.A, {
+      defaultSearchPlaceholder: (0, s.wT)(i, O)
+    }), i === f.b_.REACTION ? (0, r.jsx)(o.A, {
       checked: O,
       onClick: v
     }) : null, null != n ? n : (0, r.jsx)(c.A, {

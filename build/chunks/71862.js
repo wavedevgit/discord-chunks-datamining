@@ -1,5 +1,5 @@
-/** Chunk was on 21940 **/
-/** chunk id: 71862, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 51901 **/
+/** chunk id: 71862, original params: e,t,n (module,exports,require) **/
 module.exports = {
   AS: "item_caf372",
   vu: "active_caf372",

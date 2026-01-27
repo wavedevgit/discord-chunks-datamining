@@ -17,7 +17,7 @@ let a = {
     max_output_noise_level_dbfs: false,
     fixed_gain_db: 0
   },
-  s = (0, Chunk945810.mj)({
+  o = (0, Chunk945810.mj)({
     kind: "user",
     name: "2025-09-agc2-v2",
     defaultConfig: {
@@ -60,7 +60,7 @@ let a = {
       }
     }
   }),
-  o = (0, Chunk945810.mj)({
+  s = (0, Chunk945810.mj)({
     kind: "user",
     name: "2025-12-agc2-v2--mirror",
     defaultConfig: {
@@ -164,7 +164,7 @@ function c(e) {
     disable: n,
     autoTrackExposure: true
   });
-  return r || n ? s.definition.defaultConfig : s.getConfig({
+  return r || n ? o.definition.defaultConfig : o.getConfig({
     location: t
   })
 }
@@ -183,7 +183,7 @@ function u(e) {
   });
   l.getConfig({
     location: t
-  }), r || n || o.getConfig({
+  }), r || n || s.getConfig({
     location: t
   })
 }

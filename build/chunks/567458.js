@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 567458, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 567458, original params: e,t,n (module,exports,require) **/
 module.exports = {
   oP: "colorSwatch__2d060",
   r9: "disabled__2d060",

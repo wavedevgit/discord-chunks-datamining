@@ -28,7 +28,7 @@ let A = e => {
     let {
       avatarDecoration: t,
       avatarSize: n
-    } = e, i = (0, c.Ay)(), a = (0, o.qB)(i) ? O : b;
+    } = e, i = (0, c.Ay)(), a = (0, s.qB)(i) ? O : b;
     return (0, r.jsx)(E.i, {
       item: t,
       avatarSize: n,
@@ -42,16 +42,16 @@ let A = e => {
     let {
       profileEffect: n,
       fallbackLabel: a
-    } = e, s = (0, f.V)(null == n ? true : n.skuId), {
-      accessibilityLabel: o,
+    } = e, o = (0, f.V)(null == n ? true : n.skuId), {
+      accessibilityLabel: s,
       thumbnailPreviewSrc: l,
       title: c
-    } = null != (t = null == s ? true : s.config) ? t : {}, u = i.useMemo(() => (0, h.Rc)(l), [l]);
-    return null == s ? a : (0, r.jsxs)("div", {
+    } = null != (t = null == o ? true : o.config) ? t : {}, u = i.useMemo(() => (0, h.Rc)(l), [l]);
+    return null == o ? a : (0, r.jsxs)("div", {
       className: y.YS,
       children: [(0, r.jsx)("img", {
         src: v,
-        alt: o,
+        alt: s,
         className: y.Zp
       }), (0, r.jsx)("img", {
         className: y.Hm,
@@ -64,10 +64,10 @@ let A = e => {
     let {
       nameplate: t,
       fallbackLabel: n
-    } = e, [a, s] = i.useState(false), o = i.useCallback(() => s(true), []), l = i.useCallback(() => s(false), []);
+    } = e, [a, o] = i.useState(false), s = i.useCallback(() => o(true), []), l = i.useCallback(() => o(false), []);
     return null == t ? n : (0, r.jsx)("div", {
       className: y.rz,
-      onMouseEnter: o,
+      onMouseEnter: s,
       onMouseLeave: l,
       children: (0, r.jsx)(d.A, {
         nameplate: (0, m.D)(t),
@@ -83,9 +83,9 @@ let A = e => {
     } = e, {
       firstAvatarDecoration: i,
       firstProfileEffect: a,
-      firstNameplate: s
+      firstNameplate: o
     } = (0, _.f5)(t);
-    return null == i && null == a && null == s ? n : (0, r.jsxs)("div", {
+    return null == i && null == a && null == o ? n : (0, r.jsxs)("div", {
       className: y.WJ,
       children: [null != a && (0, r.jsx)("div", {
         className: y.zh,
@@ -93,10 +93,10 @@ let A = e => {
           profileEffect: a,
           fallbackLabel: null
         })
-      }), null != s && (0, r.jsx)("div", {
+      }), null != o && (0, r.jsx)("div", {
         className: y.sY,
         children: (0, r.jsx)(S, {
-          nameplate: s,
+          nameplate: o,
           fallbackLabel: null
         })
       }), null != i && (0, r.jsx)("div", {
@@ -113,11 +113,11 @@ let A = e => {
     let {
       product: n,
       sku: i,
-      fallbackLabel: o
-    } = e, c = null == i ? true : i.id, u = (0, s.bG)([p.A], () => p.A.getProduct(null == i ? true : i.id)), d = null != n ? n : u;
+      fallbackLabel: s
+    } = e, c = null == i ? true : i.id, u = (0, o.bG)([p.A], () => p.A.getProduct(null == i ? true : i.id)), d = null != n ? n : u;
     if ((null == d ? true : d.type) === a.R.BUNDLE) return (0, r.jsx)(T, {
       product: d,
-      fallbackLabel: o
+      fallbackLabel: s
     });
     let [f] = null != (t = null == d ? true : d.items) ? t : [];
     return true !== c && c in g.m ? g.m[c].render({
@@ -128,9 +128,9 @@ let A = e => {
       avatarSize: l._3J.SIZE_40
     }) : (null == f ? true : f.type) === a.R.PROFILE_EFFECT ? (0, r.jsx)(I, {
       profileEffect: f,
-      fallbackLabel: o
+      fallbackLabel: s
     }) : (null == f ? true : f.type) === a.R.NAMEPLATE ? (0, r.jsx)(S, {
       nameplate: f,
-      fallbackLabel: o
-    }) : o
+      fallbackLabel: s
+    }) : s
   }

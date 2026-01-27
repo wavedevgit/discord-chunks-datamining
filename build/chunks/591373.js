@@ -34,21 +34,21 @@ module.exports = function(e) {
       illegal: "\\n",
       contains: [e.BACKSLASH_ESCAPE]
     },
-    s = {
+    o = {
       begin: "/",
       end: "/",
       keywords: n,
       contains: [a, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, e.C_NUMBER_MODE]
     },
-    o = /[a-z0-9&#*=?@\\><:,()$[\]_.{}!+%^-]+/,
+    s = /[a-z0-9&#*=?@\\><:,()$[\]_.{}!+%^-]+/,
     l = {
       begin: /[a-z][a-z0-9_]*(\([a-z0-9_, ]*\))?[ \t]+/,
       excludeBegin: true,
       end: "$",
       endsWithParent: true,
-      contains: [a, s, {
+      contains: [a, o, {
         className: "comment",
-        begin: t.concat(o, t.anyNumberOfTimes(t.concat(/[ ]+/, o))),
+        begin: t.concat(s, t.anyNumberOfTimes(t.concat(/[ ]+/, s))),
         relevance: 0
       }]
     };
@@ -69,7 +69,7 @@ module.exports = function(e) {
     }, e.COMMENT("^\\*", "$"), e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, {
       beginKeywords: "set sets parameter parameters variable variables scalar scalars equation equations",
       end: ";",
-      contains: [e.COMMENT("^\\*", "$"), e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, s, l]
+      contains: [e.COMMENT("^\\*", "$"), e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, o, l]
     }, {
       beginKeywords: "table",
       end: ";",

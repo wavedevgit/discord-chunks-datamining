@@ -1,7 +1,7 @@
 /** Chunk was on 90948 **/
 /** chunk id: 240710, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,28 +29,28 @@ function N(e) {
     quest: t,
     sourceQuestContent: n,
     onLoadComplete: N
-  } = e, A = (0, o.Ay)(), b = (0, s.Mwr)(A) ? p.NJ.DARK : p.NJ.LIGHT, E = (0, x.wr)(t), w = (0, m.go)(), D = (0, _.E0)(t.config), L = r.useMemo(() => {
+  } = e, y = (0, o.Ay)(), E = (0, s.Mwr)(y) ? p.NJ.DARK : p.NJ.LIGHT, L = (0, f.wr)(t), b = (0, m.go)(), w = (0, _.E0)(t.config), O = r.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
     return null != n ? n : (0, _.pv)(t.config) !== a.Z.GAMEPLAY || t.config.features.includes(j.Li.NON_GAMING_PLAY_QUEST) || (0, _.ui)(t) ? C.intl.string(C.t.y8Xf3k) : C.intl.string(C.t["wirwN+"])
   }, [t]), {
-    isLoading: O
+    isLoading: D
   } = (0, g.Gk)();
   r.useEffect(() => {
-    O || N()
-  }, [O, N]);
-  let k = (0, h.Lk)({
-    isShareable: D,
+    D || N()
+  }, [D, N]);
+  let R = (0, h.Lk)({
+    isShareable: w,
     questId: t.id,
     trackingCtx: r.useMemo(() => ({
       content: d.uF.REWARD_MODAL,
       ctaContent: u.Cy.REWARD_MODAL_COPY_LINK,
-      impressionId: w,
+      impressionId: b,
       sourceQuestContent: n
-    }), [w, n])
+    }), [b, n])
   });
   return (0, i.jsxs)("div", {
-    className: y.kL,
+    className: A.kL,
     children: [(0, i.jsx)(g.Sn, {
       id: "hero-display",
       children: e => (0, i.jsx)(v.A, {
@@ -59,73 +59,73 @@ function N(e) {
           width: 908,
           height: 380
         },
-        containerClassName: y.WQ,
+        containerClassName: A.WQ,
         isInteracting: true,
         assetRef: e
       })
     }), (0, i.jsx)("div", {
-      className: y.Lt,
+      className: A.Lt,
       children: (0, i.jsx)(g.Sn, {
         id: "partner-logotype",
         children: e => (0, i.jsx)("img", {
           ref: e,
-          className: y.a$,
+          className: A.a$,
           alt: C.intl.formatToPlainString(C.t.rtm15P, {
             name: t.config.messages.gameTitle
           }),
-          src: (0, c.tW)(t, c.fY.LOGO_TYPE, b).url
+          src: (0, c.tW)(t, c.fY.LOGO_TYPE, E).url
         })
       })
     }), (0, i.jsxs)("div", {
-      className: y.Th,
+      className: A.Th,
       children: [(0, i.jsxs)("div", {
-        className: y.Ly,
+        className: A.Ly,
         children: [(0, i.jsx)(s.DZT, {
           variant: "heading-md/semibold",
           color: "text-strong",
-          className: y.fx,
+          className: A.fx,
           children: C.intl.format(C.t.EAYZAr, {
             questName: t.config.messages.questName
           })
         }), (0, i.jsx)(s.EYj, {
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: L
+          children: O
         })]
       }), (0, i.jsx)(g.Sn, {
         id: "partner-game-tile",
         children: e => (0, i.jsx)("img", {
           ref: e,
-          className: y.rw,
+          className: A.rw,
           alt: C.intl.formatToPlainString(C.t.rtm15P, {
             name: t.config.messages.gameTitle
           }),
-          src: (0, c.tW)(t, c.fY.GAME_TILE, b).url
+          src: (0, c.tW)(t, c.fY.GAME_TILE, E).url
         })
       })]
     }), (0, i.jsx)("div", {
-      className: y.tu,
+      className: A.tu,
       children: (0, i.jsxs)(s.e2v, {
         size: "sm",
         direction: "horizontal",
         fullWidth: true,
         fullWidthContainer: true,
-        children: [D && (0, i.jsx)(l.m_, {
+        children: [w && (0, i.jsx)(l.m_, {
           text: C.intl.string(C.t.WmfZHZ),
           children: (0, i.jsx)(s.K0, {
             icon: s.qYV,
-            onClick: k,
+            onClick: R,
             "aria-label": C.intl.string(C.t.WmfZHZ),
             variant: "secondary"
           })
         }), (0, i.jsx)(s.$nd, {
           variant: "primary",
-          text: E,
+          text: L,
           onClick: () => {
-            (0, f.pu)(t, {
+            (0, x.pu)(t, {
               content: d.uF.REWARD_MODAL,
               ctaContent: u.Cy.OPEN_GAME_LINK,
-              impressionId: w,
+              impressionId: b,
               sourceQuestContent: n
             })
           },
@@ -138,7 +138,7 @@ function N(e) {
   })
 }
 
-function A(e) {
+function y(e) {
   let {
     quest: t,
     location: n

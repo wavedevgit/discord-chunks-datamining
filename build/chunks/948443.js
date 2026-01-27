@@ -17,12 +17,12 @@ function c(e) {
       let n = new Set(null == e ? true : e.map(e => e.author_id));
       return (0, a.v)([...t.current], [...n]) || (t.current = n), t.current
     }, [e]),
-    c = (0, i.yK)([s.A], () => Array.from(n).filter(e => {
-      let t = s.A.getStatus(e);
+    c = (0, i.yK)([o.A], () => Array.from(n).filter(e => {
+      let t = o.A.getStatus(e);
       return null !== t && [l.cl.OFFLINE, l.cl.INVISIBLE].includes(t)
     }));
   return r.useMemo(() => {
     let t = new Set(c);
-    return null == e ? true : e.filter(e => !(0, o.JM)(e) || !t.has(e.author_id))
+    return null == e ? true : e.filter(e => !(0, s.JM)(e) || !t.has(e.author_id))
   }, [e, c])
 }

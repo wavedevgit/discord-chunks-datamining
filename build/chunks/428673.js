@@ -28,10 +28,10 @@ class c {
   read(e, t, n) {
     this.prepare();
     let i = [];
-    for (let [s, o] of Object.entries(e)) {
-      let e, l = this.fMap[s];
+    for (let [o, s] of Object.entries(e)) {
+      let e, l = this.fMap[o];
       if (!l) {
-        if (!n.ignoreUnknownFields) throw Error(`Found unknown field while reading ${this.info.typeName} from JSON format. JSON key: ${s}`);
+        if (!n.ignoreUnknownFields) throw Error(`Found unknown field while reading ${this.info.typeName} from JSON format. JSON key: ${o}`);
         continue
       }
       let c = l.localName;
@@ -42,10 +42,10 @@ class c {
         }
       } else e = t;
       if ("map" == l.kind) {
-        if (null === o) continue;
-        this.assert((0, r.O)(o), l.name, o);
+        if (null === s) continue;
+        this.assert((0, r.O)(s), l.name, s);
         let t = e[c];
-        for (let [e, r] of Object.entries(o)) {
+        for (let [e, r] of Object.entries(s)) {
           let i;
           switch (this.assert(null !== r, l.name + " map value", null), l.V.kind) {
             case "message":
@@ -58,14 +58,14 @@ class c {
               i = this.scalar(r, l.V.T, l.V.L, l.name)
           }
           this.assert(true !== i, l.name + " map value", r);
-          let s = e;
-          l.K == a.LN.BOOL && (s = "true" == s || "false" != s && s), t[s = this.scalar(s, l.K, a.rO.STRING, l.name).toString()] = i
+          let o = e;
+          l.K == a.LN.BOOL && (o = "true" == o || "false" != o && o), t[o = this.scalar(o, l.K, a.rO.STRING, l.name).toString()] = i
         }
       } else if (l.repeat) {
-        if (null === o) continue;
-        this.assert(Array.isArray(o), l.name, o);
+        if (null === s) continue;
+        this.assert(Array.isArray(s), l.name, s);
         let t = e[c];
-        for (let e of o) {
+        for (let e of s) {
           let r;
           switch (this.assert(null !== e, l.name, null), l.kind) {
             case "message":
@@ -77,38 +77,38 @@ class c {
             case "scalar":
               r = this.scalar(e, l.T, l.L, l.name)
           }
-          this.assert(true !== r, l.name, o), t.push(r)
+          this.assert(true !== r, l.name, s), t.push(r)
         }
       } else switch (l.kind) {
         case "message":
-          if (null === o && "google.protobuf.Value" != l.T().typeName) {
+          if (null === s && "google.protobuf.Value" != l.T().typeName) {
             this.assert(true === l.oneof, l.name + " (oneof member)", null);
             continue
           }
-          e[c] = l.T().internalJsonRead(o, n, e[c]);
+          e[c] = l.T().internalJsonRead(s, n, e[c]);
           break;
         case "enum":
-          let u = this.enum(l.T(), o, l.name, n.ignoreUnknownFields);
+          let u = this.enum(l.T(), s, l.name, n.ignoreUnknownFields);
           if (false === u) continue;
           e[c] = u;
           break;
         case "scalar":
-          e[c] = this.scalar(o, l.T, l.L, l.name)
+          e[c] = this.scalar(s, l.T, l.L, l.name)
       }
     }
   }
   enum(e, t, n, r) {
-    if ("google.protobuf.NullValue" == e[0] && (0, o.vA)(null === t, `Unable to parse field ${this.info.typeName}#${n}, enum ${e[0]} only accepts null.`), null === t) return 0;
+    if ("google.protobuf.NullValue" == e[0] && (0, s.vA)(null === t, `Unable to parse field ${this.info.typeName}#${n}, enum ${e[0]} only accepts null.`), null === t) return 0;
     switch (typeof t) {
       case "number":
-        return (0, o.vA)(Number.isInteger(t), `Unable to parse field ${this.info.typeName}#${n}, enum can only be integral number, got ${t}.`), t;
+        return (0, s.vA)(Number.isInteger(t), `Unable to parse field ${this.info.typeName}#${n}, enum can only be integral number, got ${t}.`), t;
       case "string":
         let i = t;
         e[2] && t.substring(0, e[2].length) === e[2] && (i = t.substring(e[2].length));
         let a = e[1][i];
         if (true === a && r) returnfalse;
-        return (0, o.vA)("number" == typeof a, `Unable to parse field ${this.info.typeName}#${n}, enum ${e[0]} has no value for "${t}".`), a
-    }(0, o.vA)(false, `Unable to parse field ${this.info.typeName}#${n}, cannot parse enum value from ${typeof t}".`)
+        return (0, s.vA)("number" == typeof a, `Unable to parse field ${this.info.typeName}#${n}, enum ${e[0]} has no value for "${t}".`), a
+    }(0, s.vA)(false, `Unable to parse field ${this.info.typeName}#${n}, cannot parse enum value from ${typeof t}".`)
   }
   scalar(e, t, n, r) {
     let c;
@@ -138,7 +138,7 @@ class c {
             c = "too large or small";
             break
           }
-          return t == a.LN.FLOAT && (0, o.wO)(r), r;
+          return t == a.LN.FLOAT && (0, s.wO)(r), r;
         case a.LN.INT32:
         case a.LN.FIXED32:
         case a.LN.SFIXED32:
@@ -147,18 +147,18 @@ class c {
           let u;
           if (null === e) return 0;
           if ("number" == typeof e ? u = e : "" === e ? c = "empty string" : "string" == typeof e && (e.trim().length !== e.length ? c = "extra whitespace" : u = Number(e)), true === u) break;
-          return t == a.LN.UINT32 ? (0, o.e1)(u) : (0, o.bn)(u), u;
+          return t == a.LN.UINT32 ? (0, s.e1)(u) : (0, s.bn)(u), u;
         case a.LN.INT64:
         case a.LN.SFIXED64:
         case a.LN.SINT64:
-          if (null === e) return (0, l.l)(s.h.ZERO, n);
+          if (null === e) return (0, l.l)(o.h.ZERO, n);
           if ("number" != typeof e && "string" != typeof e) break;
-          return (0, l.l)(s.h.from(e), n);
+          return (0, l.l)(o.h.from(e), n);
         case a.LN.FIXED64:
         case a.LN.UINT64:
-          if (null === e) return (0, l.l)(s.e.ZERO, n);
+          if (null === e) return (0, l.l)(o.e.ZERO, n);
           if ("number" != typeof e && "string" != typeof e) break;
-          return (0, l.l)(s.e.from(e), n);
+          return (0, l.l)(o.e.from(e), n);
         case a.LN.BOOL:
           if (null === e) returnfalse;
           if ("boolean" != typeof e) break;

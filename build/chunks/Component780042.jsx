@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk311907 = require("./311907.js"),
   Chunk554146 = require("./554146.js"),
@@ -32,7 +32,7 @@ function O(e) {
     checked: t,
     onClick: n,
     id: a = "burst-reaction-toggle-button"
-  } = e, O = (0, l.bG)([f.A], () => f.A.useReducedMotion), v = _.default.getCurrentUser(), A = null == v || (0, h.TW)(v) ? [c.M.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, S] = (0, p.kn)(A), [T, C] = i.useState(false), [N, w] = (0, d.zhh)(() => ({})), R = (0, o.animated)(d.it9);
+  } = e, O = (0, l.bG)([f.A], () => f.A.useReducedMotion), v = _.default.getCurrentUser(), A = null == v || (0, h.TW)(v) ? [c.M.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, S] = (0, p.kn)(A), [T, C] = i.useState(false), [N, w] = (0, d.zhh)(() => ({})), R = (0, s.animated)(d.it9);
 
   function P() {
     w({
@@ -50,10 +50,10 @@ function O(e) {
     e && (S(m.i.DISMISS), setTimeout(() => C(e), 200))
   }, [I, S]);
   let D = T ? g.intl.string(g.t["Osi/uy"]) : t ? g.intl.string(g.t["5cRA/b"]) : g.intl.string(g.t.buV4av),
-    x = T ? g.intl.string(g.t.ORK94p) : true;
+    L = T ? g.intl.string(g.t.ORK94p) : true;
   return (0, r.jsx)(u.u, {
     position: "top",
-    title: x,
+    title: L,
     body: D,
     asset: (0, r.jsx)(d.tvc, {
       size: "md",
@@ -71,7 +71,7 @@ function O(e) {
         type: "checkbox"
       }), (0, r.jsxs)("label", {
         htmlFor: a,
-        className: s()(E.Pf, {
+        className: o()(E.Pf, {
           [E.wM]: t
         }),
         children: [(0, r.jsx)(R, {

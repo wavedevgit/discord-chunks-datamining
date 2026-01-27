@@ -94,13 +94,13 @@ function y(e, t, n) {
             code: a.baseCode,
             input_value: null == n ? true : n.inputValue,
             location: t,
-            authenticated: s.default.isAuthenticated(),
+            authenticated: o.default.isAuthenticated(),
             size_total: null == h ? true : h.approximate_member_count,
             size_online: null == h ? true : h.approximate_presence_count,
             destination_user_id: null == h || null == (p = h.target_user) ? true : p.id,
             invite_type: g(h),
             user_banned: m,
-            user_is_member: null != o.A.getGuild(null == h || null == (_ = h.guild) ? true : _.id)
+            user_is_member: null != s.A.getGuild(null == h || null == (_ = h.guild) ? true : _.id)
           })
         }
       },
@@ -118,12 +118,12 @@ function y(e, t, n) {
           code: a.baseCode,
           input_value: null == n ? true : n.inputValue,
           location: t,
-          authenticated: s.default.isAuthenticated(),
+          authenticated: o.default.isAuthenticated(),
           size_total: i.approximate_member_count,
           size_online: i.approximate_presence_count,
           destination_user_id: null != i.target_user ? i.target_user.id : null,
           invite_type: g(i),
-          user_is_member: null != o.A.getGuild(null == i || null == (c = i.guild) ? true : c.id)
+          user_is_member: null != s.A.getGuild(null == i || null == (c = i.guild) ? true : c.id)
         }, {
           flush: true
         })
@@ -135,15 +135,15 @@ function y(e, t, n) {
     }, r => {
       let i = null != r.body && r.body.code === f.t02.USER_BANNED;
       if (null != t) {
-        var o, c;
+        var s, c;
         l.default.track(f.HAw.INVITE_RESOLVED, {
           resolved: false,
           code: a.baseCode,
           input_value: null == n ? true : n.inputValue,
           location: t,
-          authenticated: s.default.isAuthenticated(),
+          authenticated: o.default.isAuthenticated(),
           user_banned: i,
-          error_code: null == (o = r.body) ? true : o.code,
+          error_code: null == (s = r.body) ? true : s.code,
           error_message: null == (c = r.body) ? true : c.message
         }, {
           flush: true

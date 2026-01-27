@@ -26,7 +26,7 @@ function p(e) {
   let {
     settings: t
   } = e;
-  if ((null == t ? true : t.context) !== o.x.STREAM || (null == t ? true : t.qualityOptions) == null) returnfalse;
+  if ((null == t ? true : t.context) !== s.x.STREAM || (null == t ? true : t.qualityOptions) == null) returnfalse;
   let n = false;
   return c !== t.qualityOptions.preset && (c = t.qualityOptions.preset, n = true), u !== t.qualityOptions.resolution && (u = t.qualityOptions.resolution, n = true), d !== t.qualityOptions.frameRate && (d = t.qualityOptions.frameRate, n = true), n
 }
@@ -44,7 +44,7 @@ class h extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n;
-      c = null != (t = e.preset) ? t : s.jQ.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
+      c = null != (t = e.preset) ? t : o.jQ.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
     }
   }
   getState() {

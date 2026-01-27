@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 303757, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 303757, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $: () => s
 });
@@ -11,8 +10,8 @@ let s = {
   binds: ["mod+shift+n"],
   comboKeysBindGlobal: true,
   action() {
-    (0, r.kBI)(a.fc) ? i.A.updateCreateGuildModal({
-      slide: a.oS.JOIN_GUILD,
+    (0, r.kBI)(l.fc) ? i.A.updateCreateGuildModal({
+      slide: l.oS.JOIN_GUILD,
       location: "Keyboard Shortcut"
     }): i.A.openCreateGuildModal({
       location: "Keyboard Shortcut"

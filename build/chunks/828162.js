@@ -55,7 +55,7 @@ function f(e, t, n) {
       [a.G0]: n
     })
   } : true;
-  (0, i.pX)(s.BVt.CHANNEL(e, o.VV.GUILD_BOOSTS), d(c({}, l), {
+  (0, i.pX)(o.BVt.CHANNEL(e, s.VV.GUILD_BOOSTS), d(c({}, l), {
     source: t
   }))
 }

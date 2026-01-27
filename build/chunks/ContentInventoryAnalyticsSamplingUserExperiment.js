@@ -4,14 +4,14 @@
 require.d(exports, {
   Lj: () => f,
   VS: () => c,
-  ds: () => o,
+  ds: () => s,
   sE: () => u,
   t4: () => l
 });
 var Chunk600975 = require("./600975.js"),
   Chunk335934 = require("./335934.js"),
   Chunk688151 = require("./688151.js");
-let s = (0, Chunk600975.C)({
+let o = (0, Chunk600975.C)({
     kind: "user",
     id: "2024-03_content_inventory_memberlist_and_ranker",
     label: "Enables the memberlist content feed",
@@ -33,7 +33,7 @@ let s = (0, Chunk600975.C)({
       }
     }]
   }),
-  o = (0, Chunk600975.C)({
+  s = (0, Chunk600975.C)({
     kind: "user",
     id: "2025-04_hotwheels_holdout_the_sequel",
     label: "Tracking a holdout hashed to member list experiment for data readouts",
@@ -69,7 +69,7 @@ let s = (0, Chunk600975.C)({
 function c(e) {
   let {
     enabled: t
-  } = s.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: true
@@ -81,7 +81,7 @@ function u(e) {
   let {
     enabled: t,
     impressionCappingEnabled: n
-  } = s.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false

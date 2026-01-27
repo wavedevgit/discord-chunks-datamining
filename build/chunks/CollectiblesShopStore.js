@@ -8,7 +8,7 @@ require.d(exports, {
 var i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,7 +46,7 @@ class _ extends(i = Chunk311907.Ay.Store) {
     }
   }
 }
-o(_, "displayName", "CollectiblesShopStore");
+s(_, "displayName", "CollectiblesShopStore");
 let h = new _(Chunk73153.h, {
   COLLECTIBLES_SHOP_OPEN: d,
   COLLECTIBLES_SHOP_CLOSE: f,

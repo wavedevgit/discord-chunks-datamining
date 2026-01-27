@@ -10,7 +10,7 @@ var Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
   Chunk507063 = require("./507063.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -75,8 +75,8 @@ let p = e => {
   } = e, i = d(e, ["open", "className"]);
   return (0, r.jsxs)("button", u(l({
     type: "button",
-    className: a()(s.M, {
-      [s.s]: t
+    className: a()(o.M, {
+      [o.s]: t
     }, n)
   }, i), {
     children: [(0, r.jsx)("span", {}), (0, r.jsx)("span", {}), (0, r.jsx)("span", {}), (0, r.jsx)("span", {}), (0, r.jsx)("span", {}), (0, r.jsx)("span", {})]

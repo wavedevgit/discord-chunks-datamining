@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   V4: () => r,
-  VJ: () => o,
-  un: () => s,
+  VJ: () => s,
+  un: () => o,
   zD: () => a
 });
 let r = new WeakMap;
@@ -19,12 +19,12 @@ function a(e, t) {
   return `${n}-${i(t)}`
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   let a = r.get(e);
   if (!a) throw Error("Unknown grid");
   return `${a}-${i(t)}-${i(n)}`
 }
 
-function o(e, t) {
-  return [...e.collection.rowHeaderColumnKeys].map(n => s(e, t, n)).join(" ")
+function s(e, t) {
+  return [...e.collection.rowHeaderColumnKeys].map(n => o(e, t, n)).join(" ")
 }

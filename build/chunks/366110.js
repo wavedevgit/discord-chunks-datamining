@@ -6,15 +6,15 @@ var Chunk300823 = require("./300823.js"),
   Chunk509185 = require("./509185.js"),
   Chunk983249 = require("./983249.js");
 module.exports = function(e, t, n, l) {
-  if (!s(e)) return e;
+  if (!o(e)) return e;
   t = i(t, e);
   for (var c = false, u = t.length, d = u - 1, f = e; null != f && ++c < u;) {
-    var p = o(t[c]),
+    var p = s(t[c]),
       _ = n;
     if ("__proto__" === p || "constructor" === p || "prototype" === p) break;
     if (c != d) {
       var h = f[p];
-      true === (_ = l ? l(h, p, f) : true) && (_ = s(h) ? h : a(t[c + 1]) ? [] : {})
+      true === (_ = l ? l(h, p, f) : true) && (_ = o(h) ? h : a(t[c + 1]) ? [] : {})
     }
     r(f, p, _), f = f[p]
   }

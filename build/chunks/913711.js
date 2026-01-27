@@ -21,9 +21,9 @@ function c(e, t, n) {
       t.toggle()
     })
   }, [n, t]);
-  (0, s._)(n, "beforematch", _);
+  (0, o._)(n, "beforematch", _);
   let h = (0, i.useRef)(null);
-  return (0, o.N)(() => {
+  return (0, s.N)(() => {
     if (p.current && cancelAnimationFrame(p.current), n.current && !c && !f) {
       let e = n.current;
       null == h.current || "function" != typeof e.getAnimations ? t.isExpanded ? (e.removeAttribute("hidden"), e.style.setProperty("--disclosure-panel-width", "auto"), e.style.setProperty("--disclosure-panel-height", "auto")) : (e.setAttribute("hidden", "until-found"), e.style.setProperty("--disclosure-panel-width", "0px"), e.style.setProperty("--disclosure-panel-height", "0px")) : t.isExpanded !== h.current && (t.isExpanded ? (e.removeAttribute("hidden"), e.style.setProperty("--disclosure-panel-width", e.scrollWidth + "px"), e.style.setProperty("--disclosure-panel-height", e.scrollHeight + "px"), Promise.all(e.getAnimations().map(e => e.finished)).then(() => {

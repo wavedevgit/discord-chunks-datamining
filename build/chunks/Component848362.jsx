@@ -22,16 +22,16 @@ var Chunk627968 = require("./627968.js"),
 
 function g(e, t, n) {
   let r = (0, a.bG)([l.A], () => null != e ? l.A.getSelectedParticipantId(e.id) : null),
-    s = (0, a.bG)([f.A], () => null != r ? f.A.getActiveStreamForStreamKey(r) : null, [r]),
-    o = (0, a.cf)([p.default], () => n.reduce((e, t) => (e[t.ownerId] = p.default.getUser(t.ownerId), e), {}), [n]);
+    o = (0, a.bG)([f.A], () => null != r ? f.A.getActiveStreamForStreamKey(r) : null, [r]),
+    s = (0, a.cf)([p.default], () => n.reduce((e, t) => (e[t.ownerId] = p.default.getUser(t.ownerId), e), {}), [n]);
   return i.useMemo(() => {
     if (null == e) return [];
     let r = n.filter(e => e.ownerId !== (null == t ? true : t.id));
-    return 1 === r.length && r[0].ownerId === (null == s ? true : s.ownerId) ? [] : r.map(t => ({
+    return 1 === r.length && r[0].ownerId === (null == o ? true : o.ownerId) ? [] : r.map(t => ({
       stream: t,
-      username: _.Ay.getName(e.getGuildId(), e.id, o[t.ownerId])
+      username: _.Ay.getName(e.getGuildId(), e.id, s[t.ownerId])
     }))
-  }, [o, n, e, s, null == t ? true : t.id])
+  }, [s, n, e, o, null == t ? true : t.id])
 }
 
 function E(e) {
@@ -56,35 +56,35 @@ function E(e) {
     minimal: true,
     appContext: y
   });
-  return (0, r.jsx)(o.A, {
+  return (0, r.jsx)(s.A, {
     section: h.JJy.CONTEXT_MENU,
-    children: (0, r.jsxs)(s.W1t, {
+    children: (0, r.jsxs)(o.W1t, {
       "data-menu-needs-review": true,
       onSelect: E,
       navId: "manage-streams",
       onClose: _,
       onInteraction: O,
       "aria-label": null != v ? m.intl.string(m.t.S5anIc) : m.intl.string(m.t.fjBNo1),
-      children: [(0, r.jsx)(s.rXV, {
+      children: [(0, r.jsx)(o.rXV, {
         children: A.map(e => {
           let {
             stream: t,
             username: n
           } = e;
-          return (0, r.jsx)(s.Drp, {
+          return (0, r.jsx)(o.Drp, {
             id: t.ownerId,
             label: m.intl.formatToPlainString(m.t["7rkg+/"], {
               username: n
             }),
-            icon: s.GT3,
+            icon: o.GT3,
             leadingAccessory: {
               type: "icon",
-              icon: s.GT3
+              icon: o.GT3
             },
             action: () => (0, d.A)(t)
           }, "manage-stream-menu".concat(t.ownerId))
         })
-      }), l ? null : S, l ? null : (0, r.jsx)(s.rXV, {
+      }), l ? null : S, l ? null : (0, r.jsx)(o.rXV, {
         children: I
       })]
     })

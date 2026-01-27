@@ -9,7 +9,7 @@ var Chunk762230 = require("./762230.js"),
   Chunk320501 = require("./320501.js"),
   Chunk980504 = require("./980504.js");
 
-function o(e, t) {
+function s(e, t) {
   let n;
   for (let i of e) {
     var r;
@@ -29,7 +29,7 @@ function l(e, t) {
 function c(e, t, n, c) {
   var u, d, f, p;
   let _ = l(c, n);
-  if (null != _) return (0, i.N0)(_, null != (p = _.guild_id) ? p : s.mV);
+  if (null != _) return (0, i.N0)(_, null != (p = _.guild_id) ? p : o.mV);
   let h = a.A.getMessage(e, t);
-  if (null != h && null != (_ = (null == h || null == (f = h.messageReference) ? true : f.type) === r.S.FORWARD ? o(null != (u = null == h ? true : h.messageSnapshots) ? u : [], n) : l(null == h ? true : h.soundboardSounds, n))) return (0, i.N0)(_, null != (d = _.guild_id) ? d : s.mV)
+  if (null != h && null != (_ = (null == h || null == (f = h.messageReference) ? true : f.type) === r.S.FORWARD ? s(null != (u = null == h ? true : h.messageSnapshots) ? u : [], n) : l(null == h ? true : h.soundboardSounds, n))) return (0, i.N0)(_, null != (d = _.guild_id) ? d : o.mV)
 }

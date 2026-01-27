@@ -17,7 +17,7 @@ function u(e, t) {
   if (__OVERLAY__) return l.NJ8.DARK;
   let f = c.dP;
   if (i.A.syncForcedColors && "active" === i.A.systemForcedColors && e !== c.Fc.NO_PREFERENCE) return e;
-  if (s.Ay.useSystemTheme === c.Q_.ON && e !== c.Fc.NO_PREFERENCE) return t[e];
+  if (o.Ay.useSystemTheme === c.Q_.ON && e !== c.Fc.NO_PREFERENCE) return t[e];
   let p = null == (u = a.A.getAppearanceSettings()) ? true : u.theme;
-  return null != p ? p : f[null != (n = null == (d = o.A.settings.appearance) ? true : d.theme) ? n : r.Sx.UNSET]
+  return null != p ? p : f[null != (n = null == (d = s.A.settings.appearance) ? true : d.theme) ? n : r.Sx.UNSET]
 }

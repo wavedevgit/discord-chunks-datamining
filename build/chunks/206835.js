@@ -24,8 +24,8 @@ function l() {
         openUserSettings: t
       } = n(840065);
       t(a.X.PROFILE_PANEL, {
-        section: s.nc_.PROFILE_CUSTOMIZATION,
-        subsection: null != e ? o.Eq.GUILD : o.Eq.USER_PROFILE,
+        section: o.nc_.PROFILE_CUSTOMIZATION,
+        subsection: null != e ? s.Eq.GUILD : s.Eq.USER_PROFILE,
         analyticsLocation: l,
         analyticsLocations: c
       })

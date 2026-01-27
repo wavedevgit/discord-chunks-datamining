@@ -2,27 +2,27 @@
 /** chunk id: 116811, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk643479 = require("./643479.js"),
   Chunk801765 = require("./801765.js"),
   Chunk105423 = require("./105423.js");
-let s = 27,
-  o = {
+let o = 27,
+  s = {
     read: l,
     SHOT_INFO_AUTO_ROTATE: 27
   };
 
-function l(e, t, n, s, o) {
-  let l = (0, i.y)(e, a.lt, t, t + n, s, o);
+function l(e, t, n, o, s) {
+  let l = (0, i.y)(e, a.lt, t, t + n, o, s);
   return l.ShotInfo && (l = (0, r.dP)({}, l, c(l.ShotInfo.value)), delete l.ShotInfo), l
 }
 
 function c(e) {
   let t = {};
-  return true !== e[s] && (t.AutoRotate = {
-    value: e[s],
-    description: u(e[s])
+  return true !== e[o] && (t.AutoRotate = {
+    value: e[o],
+    description: u(e[o])
   }), t
 }
 

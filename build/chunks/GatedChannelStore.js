@@ -2,7 +2,7 @@
 /** chunk id: 717125, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => L
+  A: () => x
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -44,7 +44,7 @@ function v(e) {
     role: n,
     isPreviewingRoles: r
   } = e;
-  return !!(0, o.U)(n) && !!(r || (0, o.X)(null != n ? n : true) || O(n, t))
+  return !!(0, s.U)(n) && !!(r || (0, s.X)(null != n ? n : true) || O(n, t))
 }
 
 function A(e, t) {
@@ -94,8 +94,8 @@ function S(e, t) {
   let i = h.A.getGuild(r.getGuildId());
   if (null == i) returnfalse;
   let a = n.has(t),
-    s = A(r, i);
-  return a !== s && (s ? n.add(t) : n.delete(t), true)
+    o = A(r, i);
+  return a !== o && (o ? n.add(t) : n.delete(t), true)
 }
 
 function T() {
@@ -136,7 +136,7 @@ function P(e) {
     guildId: t,
     restrictions: n
   } = e;
-  (0, s.Y5)(n) ? b.add(t): b.delete(t)
+  (0, o.Y5)(n) ? b.add(t): b.delete(t)
 }
 
 function D(e) {
@@ -145,7 +145,7 @@ function D(e) {
   } = e;
   b.add(t)
 }
-class x extends(r = Chunk311907.Ay.Store) {
+class L extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(f.A, p.Ay, _.A, h.A, c.A, m.default)
   }
@@ -164,8 +164,8 @@ class x extends(r = Chunk311907.Ay.Store) {
     return !!(null != n && null != n.parent_id && u.Le.has(null == n ? true : n.type)) && this.isChannelOrThreadParentGated(e, n.parent_id)
   }
 }
-E(x, "displayName", "GatedChannelStore");
-let L = new x(Chunk73153.h, {
+E(L, "displayName", "GatedChannelStore");
+let x = new L(Chunk73153.h, {
   CONNECTION_OPEN: T,
   OVERLAY_INITIALIZE: T,
   CACHE_LOADED_LAZY: T,

@@ -49,8 +49,8 @@ function g(e) {
     searchResultsPosition: y
   } = e, b = i.useCallback(e => {
     if ((0, l.$B)(h)) {
-      let t = h instanceof o.Ay ? h : o.Ay.createFromServer(h);
-      (0, s.jA)(e, e => (0, r.jsx)(u.A, m({
+      let t = h instanceof s.Ay ? h : s.Ay.createFromServer(h);
+      (0, o.jA)(e, e => (0, r.jsx)(u.A, m({
         application: t
       }, e)))
     }

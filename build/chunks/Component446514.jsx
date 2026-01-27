@@ -1,7 +1,8 @@
 /** Chunk was on 58127 **/
-/** chunk id: 446514, original params: t,e,n (module,exports,require) **/
+/** chunk id: 446514, original params: t,e,s (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  default: () => x
+  default: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,57 +24,57 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function x(t) {
-  var e, n, x, C, O, A, E, v, L, k, D, P;
+function j(t) {
+  var e, s, j, O, C, E, v, A, L, k, D, P;
   let {
     text: w,
     editor: _,
     target: G,
     onHeightUpdate: M,
-    onSelect: I
-  } = t, N = (0, p.us)("SlateTextAreaContextMenu", {
+    onSelect: N
+  } = t, I = (0, g.us)("SlateTextAreaContextMenu", {
     autoTrackExposure: false
-  }).enabled, V = r.useCallback(t => {
+  }).enabled, U = r.useCallback(t => {
     i.rL.focus(_), setTimeout(() => {
-      null == t || t(), m.VW.focus(_)
+      null == t || t(), y.VW.focus(_)
     }, 0)
-  }, [_]), H = r.useCallback(() => {
-    (0, c.Z_)(V)
-  }, [V]), R = r.useCallback(() => {
-    let t = y.Ay.readClipboard();
-    0 !== t.length && V(() => {
+  }, [_]), V = r.useCallback(() => {
+    (0, o.Z_)(U)
+  }, [U]), R = r.useCallback(() => {
+    let t = h.Ay.readClipboard();
+    0 !== t.length && U(() => {
       a.gB.insertText(_, t)
     })
-  }, [V, _]), [U, X] = (0, b.A)({
+  }, [U, _]), [H, X] = (0, d.A)({
     text: w,
     target: G,
     onHeightUpdate: M
-  }), K = (0, T.A)(_), W = (0, s.bG)([d.A], () => d.A.isSubmitButtonEnabled), F = g._3.useSetting(), Z = g.ng.useSetting();
-  if (!h.isPlatformEmbedded) return null;
-  let Y = null != (e = null == (A = _.chatInputType) || null == (O = A.commands) ? true : O.enabled) && e,
-    q = null != (n = null == (v = _.chatInputType) || null == (E = v.stickers) ? true : E.autoSuggest) && n,
-    B = null != (x = null == (k = _.chatInputType) || null == (L = k.submit) ? true : L.button) && x,
-    Q = null != (C = null == (P = _.chatInputType) || null == (D = P.autocomplete) ? true : D.mentionSuggestions) && C,
-    z = Y || q,
-    J = h.isPlatformEmbedded && y.Ay.clipboardHasMixedContent(),
-    $ = "" !== w ? [(0, l.jsx)(o.Drp, {
+  }), K = (0, m.A)(_), W = (0, l.bG)([p.A], () => p.A.isSubmitButtonEnabled), F = b._3.useSetting(), B = b.ng.useSetting();
+  if (!x.isPlatformEmbedded) return null;
+  let Z = null != (e = null == (E = _.chatInputType) || null == (C = E.commands) ? true : C.enabled) && e,
+    Y = null != (s = null == (A = _.chatInputType) || null == (v = A.stickers) ? true : v.autoSuggest) && s,
+    q = null != (j = null == (k = _.chatInputType) || null == (L = k.submit) ? true : L.button) && j,
+    z = null != (O = null == (P = _.chatInputType) || null == (D = P.autocomplete) ? true : D.mentionSuggestions) && O,
+    Q = Z || Y,
+    J = x.isPlatformEmbedded && h.Ay.clipboardHasMixedContent(),
+    $ = "" !== w ? [(0, n.jsx)(c.Drp, {
       id: "cut",
-      label: j.intl.string(j.t.pNPVhe),
-      hint: (0, h.isMac)() ? "⌘X" : "Ctrl+X",
-      action: () => setTimeout(() => y.Ay.cut(), 0)
-    }, "cut"), (0, l.jsx)(o.Drp, {
+      label: T.intl.string(T.t.pNPVhe),
+      hint: (0, x.isMac)() ? "⌘X" : "Ctrl+X",
+      action: () => setTimeout(() => h.Ay.cut(), 0)
+    }, "cut"), (0, n.jsx)(c.Drp, {
       id: "copy",
-      label: j.intl.string(j.t.OpuAlK),
-      hint: (0, h.isMac)() ? "⌘C" : "Ctrl+C",
-      action: () => setTimeout(() => y.Ay.copy(), 0)
+      label: T.intl.string(T.t.OpuAlK),
+      hint: (0, x.isMac)() ? "⌘C" : "Ctrl+C",
+      action: () => setTimeout(() => h.Ay.copy(), 0)
     }, "copy")] : null,
-    tt = (0, l.jsx)(o.sLh, {
+    tt = (0, n.jsx)(c.sLh, {
       id: "command-suggestions",
-      label: j.intl.string(j.t["9rJKF7"]),
+      label: T.intl.string(T.t["9rJKF7"]),
       checked: F,
       action: () => {
         let t = !F;
-        g._3.updateSetting(t), f.default.track(S.HAw.SLASH_COMMAND_SUGGESTIONS_TOGGLED, {
+        b._3.updateSetting(t), f.default.track(S.HAw.SLASH_COMMAND_SUGGESTIONS_TOGGLED, {
           enabled: t,
           location: {
             object: S.ZSU.CONTEXT_MENU
@@ -81,44 +82,44 @@ function x(t) {
         })
       }
     });
-  return (0, l.jsxs)(o.W1t, {
+  return (0, n.jsxs)(c.W1t, {
     "data-menu-needs-migration": true,
     navId: "textarea-context",
-    onClose: H,
-    "aria-label": j.intl.string(j.t.NWlDSI),
-    onSelect: I,
-    children: [z && (0, l.jsxs)(o.Drp, {
+    onClose: V,
+    "aria-label": T.intl.string(T.t.NWlDSI),
+    onSelect: N,
+    children: [Q && (0, n.jsxs)(c.Drp, {
       id: "suggestions",
-      label: j.intl.string(j.t.zgxg7v),
-      children: [Y && tt, N && Q && (0, l.jsx)(o.sLh, {
+      label: T.intl.string(T.t.zgxg7v),
+      children: [Z && tt, I && z && (0, n.jsx)(c.sLh, {
         id: "mention-suggestions",
-        label: j.intl.string(j.t.cpmP4L),
-        checked: Z,
+        label: T.intl.string(T.t.cpmP4L),
+        checked: B,
         action: () => {
-          g.ng.updateSetting(!Z)
+          b.ng.updateSetting(!B)
         }
       })]
-    }), B && (0, l.jsx)(o.sLh, {
+    }), q && (0, n.jsx)(c.sLh, {
       id: "submit-button",
-      label: j.intl.string(j.t.G8XDyj),
+      label: T.intl.string(T.t.G8XDyj),
       checked: W,
       action: () => {
         (0, u.Xt)()
       }
-    }), (0, l.jsx)(o.rXV, {
-      children: U
-    }), (0, l.jsxs)(o.rXV, {
+    }), (0, n.jsx)(c.rXV, {
+      children: H
+    }), (0, n.jsxs)(c.rXV, {
       children: [X, K]
-    }), (0, l.jsxs)(o.rXV, {
-      children: [$, (0, l.jsx)(o.Drp, {
+    }), (0, n.jsxs)(c.rXV, {
+      children: [$, (0, n.jsx)(c.Drp, {
         id: "paste",
-        label: j.intl.string(j.t.lMUxVi),
-        hint: (0, h.isMac)() ? "⌘V" : "Ctrl+V",
-        action: () => setTimeout(() => y.Ay.paste(), 0)
-      }), J && (0, l.jsx)(o.Drp, {
+        label: T.intl.string(T.t.lMUxVi),
+        hint: (0, x.isMac)() ? "⌘V" : "Ctrl+V",
+        action: () => setTimeout(() => h.Ay.paste(), 0)
+      }), J && (0, n.jsx)(c.Drp, {
         id: "paste-as-plain-text",
-        label: j.intl.string(j.t.X92Qnr),
-        hint: (0, h.isMac)() ? "⌘⇧V" : "Ctrl+Shift+V",
+        label: T.intl.string(T.t.X92Qnr),
+        hint: (0, x.isMac)() ? "⌘⇧V" : "Ctrl+Shift+V",
         action: R
       })]
     })]

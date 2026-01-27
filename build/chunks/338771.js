@@ -2,24 +2,24 @@
 /** chunk id: 338771, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk827343 = require("./827343.js"),
   Chunk401843 = require("./401843.js"),
   Chunk961350 = require("./961350.js"),
   Chunk652896 = require("./652896.js");
 
-function o(e) {
+function s(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
   if (null == e) return;
   let {
-    streamType: o,
+    streamType: s,
     guildId: l,
     channelId: c,
     ownerId: u
-  } = e, d = (0, s._z)({
-    streamType: o,
+  } = e, d = (0, o._z)({
+    streamType: s,
     guildId: l,
     channelId: c,
     ownerId: u

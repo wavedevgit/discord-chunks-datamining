@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,18 +29,18 @@ function s(e) {
   }
   return e
 }
-let o = Chunk64700.createContext(null);
+let s = Chunk64700.createContext(null);
 
 function l() {
-  return i.useContext(o)
+  return i.useContext(s)
 }
 
 function c(e) {
   let {
     newValue: t,
     children: n
-  } = e, a = l(), c = i.useMemo(() => s({}, a, t), [a, t]);
-  return (0, r.jsx)(o.Provider, {
+  } = e, a = l(), c = i.useMemo(() => o({}, a, t), [a, t]);
+  return (0, r.jsx)(s.Provider, {
     value: c,
     children: n
   })

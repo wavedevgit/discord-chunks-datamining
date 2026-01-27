@@ -1,1 +1,1 @@
-{"id":"411268","type":"experiment","data":{"id":"2025-07_ostrich","label":"Ostrich","kind":"user","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"411268","type":"experiment","data":{"id":"2025-07_ostrich","label":"Ostrich","kind":"user","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"60667"}}

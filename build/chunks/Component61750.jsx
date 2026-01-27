@@ -9,7 +9,7 @@ require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk758836 = require("./758836.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,14 +18,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -33,7 +33,7 @@ function o(e) {
 let l = e => {
   let {
     product: t,
-    analyticsLocations: s,
+    analyticsLocations: o,
     overrideTitle: l,
     overrideDescription: c,
     shouldShowPromotionalExperience: u,
@@ -49,9 +49,9 @@ let l = e => {
       let {
         default: e
       } = await n.e("95481").then(n.bind(n, 328064));
-      return n => (0, r.jsx)(e, o({
+      return n => (0, r.jsx)(e, s({
         product: t,
-        analyticsLocations: s,
+        analyticsLocations: o,
         overrideTitle: l,
         overrideDescription: c,
         itemConsumed: f,
@@ -61,9 +61,9 @@ let l = e => {
     let {
       default: e
     } = await n.e("92643").then(n.bind(n, 393870));
-    return n => (0, r.jsx)(e, o({
+    return n => (0, r.jsx)(e, s({
       product: t,
-      analyticsLocations: s,
+      analyticsLocations: o,
       overrideTitle: l,
       overrideDescription: c,
       shouldShowPromotionalExperience: u,

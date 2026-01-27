@@ -117,7 +117,7 @@ function m(e) {
         sku_id: u,
         application_id: t,
         location_stack: m
-      }), (0, s.ET)(), (0, o.z)(), null == f || f(b)
+      }), (0, o.ET)(), (0, s.z)(), null == f || f(b)
     },
     onCloseRequest: c.tEg
   })

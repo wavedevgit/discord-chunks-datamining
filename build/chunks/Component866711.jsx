@@ -60,7 +60,7 @@ function p(e) {
     items: _,
     onRemove: h,
     children: m
-  } = e, [g, E] = i.useState(() => new Set), y = i.useContext(s._);
+  } = e, [g, E] = i.useState(() => new Set), y = i.useContext(o._);
   return (0, r.jsxs)(a.CR, {
     "aria-label": n,
     id: null == y ? true : y.controlId,
@@ -75,7 +75,7 @@ function p(e) {
     children: [(0, r.jsx)(a.LY, {
       ref: t,
       className: l.Tw,
-      children: _.map(e => (0, i.createElement)(o.v, f(u({}, e), {
+      children: _.map(e => (0, i.createElement)(s.v, f(u({}, e), {
         key: e.id,
         layout: p,
         accessibilityHint: e.accessibilityHint

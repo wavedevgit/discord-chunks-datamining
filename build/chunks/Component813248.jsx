@@ -55,7 +55,7 @@ function E(e) {
   }), {
     product: D,
     purchase: R
-  } = (0, d.A)(null == U ? true : U.skuId), H = null != R ? (0, u.gA)(R) : (0, u.G0)(D), G = j.Ay.canUseCollectibles(_), z = true === S ? (null == U ? true : U.skuId) === (null == k ? true : k.skuId) : (null == U ? true : U.skuId) === (null == S ? true : S.skuId), F = (0, r.useCallback)(e => {
+  } = (0, d.A)(null == U ? true : U.skuId), H = null != R ? (0, u.gA)(R) : (0, u.G0)(D), G = y.Ay.canUseCollectibles(_), F = true === S ? (null == U ? true : U.skuId) === (null == k ? true : k.skuId) : (null == U ? true : U.skuId) === (null == S ? true : S.skuId), z = (0, r.useCallback)(e => {
     P(), (0, c.Cz)({
       analyticsLocations: w,
       analyticsSource: a.A.EDIT_NAMEPLATE_MODAL,
@@ -84,8 +84,8 @@ function E(e) {
         selectedNameplate: U,
         guildId: T,
         onSelect: L,
-        onOpenShop: F
-      }), (0, l.jsx)(y.A, {
+        onOpenShop: z
+      }), (0, l.jsx)(j.A, {
         user: _,
         guildId: T,
         nameplate: M
@@ -99,16 +99,16 @@ function E(e) {
         onClick: () => {
           (0, g.pX)(U, T), P()
         },
-        disabled: z
+        disabled: F
       }) : null == R && (G || !H) ? (0, l.jsx)(s.Button, {
         variant: "primary",
-        onClick: () => F(null == D ? true : D.skuId),
+        onClick: () => z(null == D ? true : D.skuId),
         text: O.intl.string(O.t.fYfGgK)
       }) : (0, l.jsx)(x.A, {
         subscriptionTier: f.pe.TIER_2,
         showGradient: !G,
         textOptions: {
-          textOverride: j.Ay.isPremium(_) ? O.intl.string(O.t.KXLX7l) : G ? O.intl.string(O.t.mr4K7D) : O.intl.string(O.t.pj0XBN)
+          textOverride: y.Ay.isPremium(_) ? O.intl.string(O.t.KXLX7l) : G ? O.intl.string(O.t.mr4K7D) : O.intl.string(O.t.pj0XBN)
         }
       }), !G && H ? (0, l.jsx)(m.A, {
         itemType: null != (t = null == R ? true : R.type) ? t : null == D ? true : D.type,
@@ -134,9 +134,9 @@ function w(e) {
   } = (0, o.Ay)(n, a.A.EDIT_NAMEPLATE_MODAL), {
     categories: g,
     purchases: A,
-    isFetchingCategories: j,
-    isFetchingPurchases: y
-  } = (0, p.Ay)(), v = j || y && 0 === A.size;
+    isFetchingCategories: y,
+    isFetchingPurchases: j
+  } = (0, p.Ay)(), v = y || j && 0 === A.size;
   return ((0, r.useEffect)(() => {
     _.default.track(b.HAw.OPEN_MODAL, {
       type: b.JJy.NAMEPLATE_CUSTOMIZATION,

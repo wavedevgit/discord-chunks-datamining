@@ -9,7 +9,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk484702 = require("./484702.js"),
   Chunk403431 = require("./403431.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -61,7 +61,7 @@ function f(e) {
   let {
     sections: t,
     columns: n,
-    getItemKey: o,
+    getItemKey: s,
     getItemHeight: c,
     getSectionHeight: f,
     chunkSize: p = 250,
@@ -79,7 +79,7 @@ function f(e) {
     chunkStart: R,
     chunkEnd: P,
     forceUpdateOnChunkChange: D
-  } = (0, s.A)({
+  } = (0, o.A)({
     chunkSize: p,
     getScrollerState: _,
     forceUpdate: A
@@ -87,7 +87,7 @@ function f(e) {
   return I.current = (0, r.useMemo)(() => w > 0 ? I.current : (S.mergeProps({
     sections: t,
     columns: n,
-    getItemKey: o,
+    getItemKey: s,
     getItemHeight: c,
     getSectionHeight: f,
     bufferWidth: C,
@@ -99,7 +99,7 @@ function f(e) {
     paddingHorizontal: O,
     marginLeft: N / 2,
     dir: v
-  }), S.computeVisibleSections(Math.max(0, R * p), P * p), S.getState()), [w, S, t, n, o, c, f, R, P, p, m, g, E, y, b, O, C, N, v]), u(l({}, I.current), {
+  }), S.computeVisibleSections(Math.max(0, R * p), P * p), S.getState()), [w, S, t, n, s, c, f, R, P, p, m, g, E, y, b, O, C, N, v]), u(l({}, I.current), {
     masonryComputer: S,
     forceUpdateOnChunkChange: D,
     forceUpdate: A

@@ -27,12 +27,12 @@ let p = (0, Chunk23339.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDI
       gridWrapperRef: t,
       containerWidth: n,
       showingEmptyState: i,
-      listPaddingLeft: s = p,
-      listScrollbarWidth: o = _
+      listPaddingLeft: o = p,
+      listScrollbarWidth: s = _
     } = e, [l, c] = r.useState(true), u = r.useCallback(() => {
       if (null == t.current) return null;
-      c(t.current.offsetWidth - s - o)
-    }, [t, s, o]);
+      c(t.current.offsetWidth - o - s)
+    }, [t, o, s]);
     return r.useLayoutEffect(() => {
       u()
     }, [n, u, i]), r.useEffect(() => {
@@ -45,7 +45,7 @@ let p = (0, Chunk23339.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDI
       activeCategoryIndex: t,
       listRef: n,
       searchQuery: i
-    } = e, a = r.useRef(i), s = r.useRef(true);
+    } = e, a = r.useRef(i), o = r.useRef(true);
     r.useLayoutEffect(() => {
       if ("" === i && "" !== a.current) {
         var e;
@@ -53,9 +53,9 @@ let p = (0, Chunk23339.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDI
       }
       a.current = i
     }, [i, t, n]), r.useLayoutEffect(() => {
-      if (s.current) {
+      if (o.current) {
         var e;
-        null == (e = n.current) || e.scrollToSectionTop(t), s.current = false
+        null == (e = n.current) || e.scrollToSectionTop(t), o.current = false
       }
     }, [t, n]), r.useEffect(() => {
       a.current = i
@@ -67,7 +67,7 @@ let p = (0, Chunk23339.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDI
       searchQuery: n,
       nitroLockedSectionStates: i,
       setUpsellGlowOpacity: a
-    } = e, s = r.useCallback(e => {
+    } = e, o = r.useCallback(e => {
       if ("" !== n) {
         null == a || a(0);
         return
@@ -78,44 +78,44 @@ let p = (0, Chunk23339.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDI
         null == a || a(0);
         return
       }
-      let s = t.current.getSectionDescriptors();
-      if (null == s || 0 === s.length || s.length !== i.length) return;
-      let o = s[r],
+      let o = t.current.getSectionDescriptors();
+      if (null == o || 0 === o.length || o.length !== i.length) return;
+      let s = o[r],
         l = e + t.current.getListDimensions().height - 250,
         c = 250,
-        u = Math.min(Math.max((o.offset.top - l) / c, 0), 1);
+        u = Math.min(Math.max((s.offset.top - l) / c, 0), 1);
       null == a || a(u)
     }, [n, t, i, a]);
     return r.useCallback(e => {
-      s(e)
-    }, [s])
+      o(e)
+    }, [o])
   },
   E = e => {
     let {
       activeCategoryIndex: t,
       listRef: n,
       isScrolling: i,
-      searchQuery: s,
-      scrollOffset: o = 0,
+      searchQuery: o,
+      scrollOffset: s = 0,
       onActiveCategoryIndexChange: l,
       disableForSearch: c = true
     } = e, u = r.useRef(f.An1), d = r.useMemo(() => a().debounce(() => {
       i.current = false
     }, 250), [i]), p = r.useMemo(() => a().debounce(e => {
-      "" !== s && c || (window.cancelAnimationFrame(u.current), u.current = window.requestAnimationFrame(() => {
+      "" !== o && c || (window.cancelAnimationFrame(u.current), u.current = window.requestAnimationFrame(() => {
         var r;
         let i = null == (r = n.current) ? true : r.getSectionDescriptors();
         if (null == i) return;
         let a = i.findIndex((t, n) => {
             let r = i[n + 1],
-              a = e + o >= t.offset.top,
-              s = null != r && e + o < r.offset.top;
-            return null != r && !a && !s || a && s || a && null == r
+              a = e + s >= t.offset.top,
+              o = null != r && e + s < r.offset.top;
+            return null != r && !a && !o || a && o || a && null == r
           }),
-          s = false === a ? 0 : a;
-        t !== s && l(s)
+          o = false === a ? 0 : a;
+        t !== o && l(o)
       }))
-    }, 0), [s, n, t, o, l, c]);
+    }, 0), [o, n, t, s, l, c]);
     return r.useCallback(e => {
       i.current = true, d(), p(e)
     }, [i, d, p])
@@ -141,21 +141,21 @@ let p = (0, Chunk23339.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDI
       if (null == r) return;
       let {
         visibleRowIndex: i,
-        columnIndex: s
+        columnIndex: o
       } = r;
-      c(s, i), null != a.current && a.current.scrollRowIntoView(n)
+      c(o, i), null != a.current && a.current.scrollRowIntoView(n)
     }, [d, a, c]), p = r.useCallback((e, t, n) => {
       switch (n.type) {
-        case s.X2.NAVIGATE_UP:
-        case s.X2.NAVIGATE_DOWN:
-        case s.X2.NAVIGATE_RIGHT:
-        case s.X2.NAVIGATE_LEFT:
-        case s.X2.NAVIGATE_INLINE_START:
-        case s.X2.NAVIGATE_INLINE_END:
-        case s.X2.NAVIGATE_START:
-        case s.X2.NAVIGATE_END:
-        case s.X2.NAVIGATE_CROSSLINE_START:
-        case s.X2.NAVIGATE_CROSSLINE_END:
+        case o.X2.NAVIGATE_UP:
+        case o.X2.NAVIGATE_DOWN:
+        case o.X2.NAVIGATE_RIGHT:
+        case o.X2.NAVIGATE_LEFT:
+        case o.X2.NAVIGATE_INLINE_START:
+        case o.X2.NAVIGATE_INLINE_END:
+        case o.X2.NAVIGATE_START:
+        case o.X2.NAVIGATE_END:
+        case o.X2.NAVIGATE_CROSSLINE_START:
+        case o.X2.NAVIGATE_CROSSLINE_END:
           f(t)
       }
     }, [f]), _ = r.useCallback((e, t, n) => {
@@ -166,7 +166,7 @@ let p = (0, Chunk23339.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDI
       getItemProps: m,
       getRowProps: g,
       getContainerProps: E
-    } = (0, o.A)({
+    } = (0, s.A)({
       navId: n,
       columnCounts: t,
       onDispatch: p,
@@ -204,12 +204,12 @@ function b(e) {
     collapsedCategories: n,
     gridWidth: i = 0,
     listPaddingRight: a = 0,
-    itemNodeWidth: s,
-    itemNodeMargin: o = 0
+    itemNodeWidth: o,
+    itemNodeMargin: s = 0
   } = e;
   return r.useMemo(() => {
-    let e = Math.max(1, Math.floor((i - a + o) / (s + o))),
-      r = Math.floor(Math.max(o, (i - a - s * e) / (e - 1))),
+    let e = Math.max(1, Math.floor((i - a + s) / (o + s))),
+      r = Math.floor(Math.max(s, (i - a - o * e) / (e - 1))),
       l = [],
       c = [],
       u = [],
@@ -223,8 +223,8 @@ function b(e) {
         c[f] = r ? 0 : i;
         for (let a = 0; a < i; a++) {
           let i = a * e,
-            s = i + e,
-            o = t.slice(i, s).map((e, t) => ({
+            o = i + e,
+            s = t.slice(i, o).map((e, t) => ({
               item: e,
               gridSectionIndex: f,
               rowIndex: d,
@@ -232,7 +232,7 @@ function b(e) {
               visibleRowIndex: p,
               category: n
             }));
-          r || (p++, u.push(o), l.push(o.length)), d++
+          r || (p++, u.push(s), l.push(s.length)), d++
         }
         f++
       };
@@ -249,7 +249,7 @@ function b(e) {
       columnCounts: l,
       gutterWidth: r
     }
-  }, [t, n, i, o, s, a])
+  }, [t, n, i, s, o, a])
 }
 
 function O(e) {
@@ -258,8 +258,8 @@ function O(e) {
     expressionsGrid: n,
     expressionsListRef: i,
     store: a,
-    gridNavigatorId: s,
-    onSelectItem: o
+    gridNavigatorId: o,
+    onSelectItem: s
   } = e, {
     gridDispatch: c,
     getItemProps: u,
@@ -269,10 +269,10 @@ function O(e) {
     isUsingKeyboardNavigation: h
   } = y({
     columnCounts: t,
-    gridNavigatorId: s,
+    gridNavigatorId: o,
     itemGrid: n,
     itemList: i,
-    onGridNavigatorItemSelect: o,
+    onGridNavigatorItemSelect: s,
     onGridNavigatorPositionChange: a.setInspectedExpressionPosition
   });
   return r.useEffect(() => a.subscribe(e => e.inspectedExpressionPosition, e => {

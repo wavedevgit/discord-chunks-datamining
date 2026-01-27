@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   CW: () => m,
-  Fi: () => o,
+  Fi: () => s,
   Fn: () => A,
   Ic: () => S,
   K5: () => N,
@@ -28,7 +28,7 @@ var Chunk734057 = require("./734057.js"),
   Chunk403362 = require("./403362.js"),
   Chunk488926 = require("./488926.js"),
   Chunk652215 = require("./652215.js");
-let o = 7,
+let s = 7,
   l = 300,
   c = 7,
   u = 60,
@@ -79,16 +79,16 @@ function b(e) {
     welcome_message: t,
     new_member_actions: n,
     resource_channels: a,
-    enabled: s
-  } = e, o = {
+    enabled: o
+  } = e, s = {
     authorIds: t.author_ids,
     message: t.message
   };
   return {
-    welcomeMessage: o,
+    welcomeMessage: s,
     newMemberActions: n.filter(e => (0, i.Vq)(r.A.getChannel(e.channel_id))).map(E),
     resourceChannels: a.filter(e => (0, i.Vq)(r.A.getChannel(e.channel_id))).map(y),
-    enabled: s
+    enabled: o
   }
 }
 
@@ -96,19 +96,19 @@ function O(e, t) {
   var n, a;
   if (null == t) return null;
   let {
-    welcomeMessage: s,
-    newMemberActions: o,
+    welcomeMessage: o,
+    newMemberActions: s,
     resourceChannels: l,
     enabled: c
   } = t, u = {
-    author_ids: null != (n = null == s ? true : s.authorIds) ? n : [],
-    message: null != (a = null == s ? true : s.message) ? a : ""
+    author_ids: null != (n = null == o ? true : o.authorIds) ? n : [],
+    message: null != (a = null == o ? true : o.message) ? a : ""
   };
   return {
     guild_id: e,
     welcome_message: u,
-    new_member_actions: (null != o ? o : []).filter(e => (0, i.Vq)(r.A.getChannel(e.channelId))).map(e => {
-      var t, n, r, i, a, s, o;
+    new_member_actions: (null != s ? s : []).filter(e => (0, i.Vq)(r.A.getChannel(e.channelId))).map(e => {
+      var t, n, r, i, a, o, s;
       return {
         channel_id: e.channelId,
         action_type: e.actionType,
@@ -116,22 +116,22 @@ function O(e, t) {
         description: e.description,
         emoji: {
           id: null != (t = null == (a = e.emoji) ? true : a.id) ? t : true,
-          name: null != (n = null == (s = e.emoji) ? true : s.name) ? n : true,
-          animated: null != (r = null == (o = e.emoji) ? true : o.animated) ? r : true
+          name: null != (n = null == (o = e.emoji) ? true : o.name) ? n : true,
+          animated: null != (r = null == (s = e.emoji) ? true : s.animated) ? r : true
         },
         icon: null != (i = e.icon) ? i : true
       }
     }),
     resource_channels: (null != l ? l : []).filter(e => (0, i.Vq)(r.A.getChannel(e.channelId))).map(e => {
-      var t, n, r, i, a, s, o;
+      var t, n, r, i, a, o, s;
       return {
         channel_id: e.channelId,
         title: e.title,
         description: e.description,
         emoji: {
           id: null != (t = null == (a = e.emoji) ? true : a.id) ? t : true,
-          name: null != (n = null == (s = e.emoji) ? true : s.name) ? n : true,
-          animated: null != (r = null == (o = e.emoji) ? true : o.animated) ? r : true
+          name: null != (n = null == (o = e.emoji) ? true : o.name) ? n : true,
+          animated: null != (r = null == (s = e.emoji) ? true : s.animated) ? r : true
         },
         icon: null != (i = e.icon) ? i : true
       }
@@ -158,26 +158,26 @@ function S(e) {
   var t, n;
   if (null == e) returnfalse;
   if (I(e)) returntrue;
-  if ((null == (t = e.welcomeMessage) ? true : t.message) == null || e.welcomeMessage.message.length < o || (null == (n = e.welcomeMessage) ? true : n.authorIds) == null || 0 === e.welcomeMessage.authorIds.length || null == e.newMemberActions || e.newMemberActions.length < d) returnfalse;
+  if ((null == (t = e.welcomeMessage) ? true : t.message) == null || e.welcomeMessage.message.length < s || (null == (n = e.welcomeMessage) ? true : n.authorIds) == null || 0 === e.welcomeMessage.authorIds.length || null == e.newMemberActions || e.newMemberActions.length < d) returnfalse;
   if (null != e.newMemberActions)
     for (let t of e.newMemberActions) {
       let e = r.A.getChannel(t.channelId);
-      if (null == e || !a.MJ(s.xBc.VIEW_CHANNEL, e)) returnfalse
+      if (null == e || !a.MJ(o.xBc.VIEW_CHANNEL, e)) returnfalse
     }
   returntrue
 }
 
 function T(e) {
-  return e.type === s.rbe.GUILD_TEXT && !a.MJ(s.xBc.SEND_MESSAGES, e) && a.MJ(s.xBc.VIEW_CHANNEL, e)
+  return e.type === o.rbe.GUILD_TEXT && !a.MJ(o.xBc.SEND_MESSAGES, e) && a.MJ(o.xBc.VIEW_CHANNEL, e)
 }
 
 function C(e) {
   switch (e.type) {
-    case s.rbe.GUILD_TEXT:
-    case s.rbe.GUILD_ANNOUNCEMENT:
-    case s.rbe.GUILD_FORUM:
-    case s.rbe.GUILD_MEDIA:
-      return a.MJ(s.xBc.VIEW_CHANNEL, e);
+    case o.rbe.GUILD_TEXT:
+    case o.rbe.GUILD_ANNOUNCEMENT:
+    case o.rbe.GUILD_FORUM:
+    case o.rbe.GUILD_MEDIA:
+      return a.MJ(o.xBc.VIEW_CHANNEL, e);
     default:
       returnfalse
   }

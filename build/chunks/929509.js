@@ -13,9 +13,9 @@ var Chunk64700 = require("./64700.js"),
 let c = new Set;
 
 function u(e) {
-  let t = (0, i.bG)([s.A, o.A], () => {
-    let e = o.A.getDebugImpressionCappingDisabled();
-    return !(0, a.sE)("useFilterImpressionCappedContent") || e ? c : s.A.getImpressionCappedItemIds()
+  let t = (0, i.bG)([o.A, s.A], () => {
+    let e = s.A.getDebugImpressionCappingDisabled();
+    return !(0, a.sE)("useFilterImpressionCappedContent") || e ? c : o.A.getImpressionCappedItemIds()
   }, [e]);
   return r.useMemo(() => {
     if (null == e) return {

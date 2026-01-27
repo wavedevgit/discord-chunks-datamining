@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 874486, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 874486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -11,7 +10,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk3137 = require("./3137.js"),
   Chunk559908 = require("./559908.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,77 +19,63 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
-
-function f(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let _ = 2e3,
-  h = {
+let _ = {
     unlockedAchievements: {}
   },
-  m = d({}, h);
-
-function g(e) {
-  return null == m.unlockedAchievements[e] && (m.unlockedAchievements = p(d({}, m.unlockedAchievements), {
-    [e]: {
-      achievementId: e,
-      dateUnlocked: Date.now()
-    }
-  }), setTimeout(() => {
-    (0, o.U)(e, true)
-  }, _), true)
-}
-
-function E(e) {
-  let {
-    achievementId: t
-  } = e;
-  if (!l.A.isEnabled()) returnfalse;
-  g(t)
-}
-class y extends(r = Chunk311907.Ay.PersistedStore) {
+  p = u({}, _);
+class m extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(s.default, l.A, c.Ay);
-    let t = null != e ? e : d({}, h);
-    for (let e in t) m[e] = t[e]
+    this.waitFor(s.default, o.A, c.Ay);
+    let t = null != e ? e : u({}, _);
+    for (let e in t) p[e] = t[e]
   }
   getState() {
-    return m
+    return p
   }
   getAllUnlockedAchievements() {
-    return m.unlockedAchievements
+    return p.unlockedAchievements
   }
   getUnlocked(e) {
     var t;
-    return null != (t = m.unlockedAchievements[e]) ? t : null
+    return null != (t = p.unlockedAchievements[e]) ? t : null
   }
 }
-u(y, "displayName", "PoggermodeAchievementStore"), u(y, "persistKey", "PoggermodeAchievementStore");
-let b = new y(Chunk73153.h, {
-  POGGERMODE_ACHIEVEMENT_UNLOCK: E
+d(m, "displayName", "PoggermodeAchievementStore"), d(m, "persistKey", "PoggermodeAchievementStore");
+let g = new m(Chunk73153.h, {
+  POGGERMODE_ACHIEVEMENT_UNLOCK: function(e) {
+    var t, n, r;
+    let {
+      achievementId: i
+    } = e;
+    if (!o.A.isEnabled()) returnfalse;
+    t = i, null != p.unlockedAchievements[t] || (n = u({}, p.unlockedAchievements), r = r = {
+      [t]: {
+        achievementId: t,
+        dateUnlocked: Date.now()
+      }
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(r)).forEach(function(e) {
+      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
+    }), p.unlockedAchievements = n, setTimeout(() => {
+      (0, a.U)(t, true)
+    }, 2e3))
+  }
 })

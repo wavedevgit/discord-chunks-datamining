@@ -17,10 +17,10 @@ function l(e) {
     i18n: n
   } = i.useContext(a.VO);
   return (0, r.jsx)("div", {
-    className: o.p,
-    children: (0, r.jsx)(s.E, {
+    className: s.p,
+    children: (0, r.jsx)(o.E, {
       variant: "text-md/medium",
-      className: o.q,
+      className: s.q,
       children: null != t ? t : n.LISTBOX_EMPTY_STATE
     })
   })

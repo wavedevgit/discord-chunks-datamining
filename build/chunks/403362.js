@@ -5,9 +5,9 @@ require.d(exports, {
   QE: () => u,
   S1: () => c,
   Vq: () => l,
-  iT: () => s,
+  iT: () => o,
   m6: () => a,
-  xb: () => o
+  xb: () => s
 }), require("./65821.js");
 let r = false,
   i = "development" === window.GLOBAL_ENV.PROJECT_ENV;
@@ -16,11 +16,11 @@ function a() {
   return r
 }
 
-function s() {
+function o() {
   return i
 }
 
-function o(e) {
+function s(e) {
   throw Error("Unhandled value: ".concat(e))
 }
 

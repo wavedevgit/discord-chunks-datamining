@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 749082, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 749082, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,42 +27,42 @@ let p = {
     BaseGlowRemapped: {},
     ButtonFillDarkmode: {}
   },
-  _ = e => {
+  m = e => {
     let {
       children: t,
       className: n,
-      cardClassName: a,
-      cardType: _,
-      artboard: h = "BaseGlowRemapped",
-      fit: m = "layout",
-      glowAmount: g = 8,
-      blurAmount: E = 30,
-      hueRotate: y = 0,
-      isReducedMotion: b
-    } = e, O = i.useRef(null), v = i.useRef(null), {
-      status: A,
+      cardClassName: l,
+      cardType: m,
+      artboard: g = "BaseGlowRemapped",
+      fit: A = "layout",
+      glowAmount: f = 8,
+      blurAmount: h = 30,
+      hueRotate: b = 0,
+      isReducedMotion: E
+    } = e, x = i.useRef(null), O = i.useRef(null), {
+      status: C,
       buffer: I
-    } = (0, u.CE)(o.A), S = i.useContext(l.C), T = null != b ? b : S.reducedMotion.enabled, C = {
-      "--custom-glow-amount": "".concat(g, "px"),
-      "--custom-blur-amount": "".concat(E, "px"),
-      "--custom-hue-rotate": "".concat(y, "deg")
-    };
+    } = (0, d.CE)(a.A), T = i.useContext(o.C), S = null != E ? E : T.reducedMotion.enabled;
     return (0, r.jsxs)("div", {
-      ref: O,
-      className: s()(f.kL, n),
-      style: C,
-      children: [A !== u.BW.Loading && (0, r.jsx)(c.w, {
+      ref: x,
+      className: s()(_.kL, n),
+      style: {
+        "--custom-glow-amount": "".concat(f, "px"),
+        "--custom-blur-amount": "".concat(h, "px"),
+        "--custom-hue-rotate": "".concat(b, "deg")
+      },
+      children: [C !== d.BW.Loading && (0, r.jsx)(c.w, {
         buffer: I,
-        artboard: h,
+        artboard: g,
         artboardProperties: p,
-        eventTargetRef: O,
-        className: f.Q_,
-        ref: v,
-        fit: m,
-        withReducedMotion: T ? "halt" : "play"
-      }), (0, r.jsx)(d.ZpM, {
-        type: null != _ ? _ : d.sl2.CUSTOM,
-        className: s()(f.Nr, a),
+        eventTargetRef: x,
+        className: _.Q_,
+        ref: O,
+        fit: A,
+        withReducedMotion: S ? "halt" : "play"
+      }), (0, r.jsx)(u.ZpM, {
+        type: null != m ? m : u.sl2.CUSTOM,
+        className: s()(_.Nr, l),
         children: t
       })]
     })

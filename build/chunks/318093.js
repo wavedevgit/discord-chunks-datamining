@@ -21,7 +21,7 @@ function l(e, t, n) {
 let c = new Chunk626584.A("DispatcherWorkScheduler");
 class u {
   _trackAppBackgrounded(e) {
-    this._isBackgrounded === e || (this._isBackgrounded = e, this._isBackgrounded && this.hasWorkScheduled && (this.telemetry.track(s.KQ.SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED), this._processWorkCallback()))
+    this._isBackgrounded === e || (this._isBackgrounded = e, this._isBackgrounded && this.hasWorkScheduled && (this.telemetry.track(o.KQ.SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED), this._processWorkCallback()))
   }
   _queueIdleCallback() {
     throw Error("Not implemented")
@@ -35,13 +35,13 @@ class u {
   _processWorkCallback(e) {
     if (null == this._workCallbackFn) return;
     if (this._hasExceededMaxConsecutiveFlushes) {
-      c.log("Unable to fully flush work queue after max retries, skipping future deadline."), this._workCallbackFn(), this.clearWorkTimeout(), this.telemetry.measure(s.Wg.COUNT_FLUSH_BEFORE_QUEUE_EMPTY, this._consecutiveFlushesBeforeQueueEmpty), this.telemetry.track(s.KQ.EXCEEDED_MAX_CONSECUTIVE_FLUSHES), this._consecutiveFlushesBeforeQueueEmpty = 0, this._nextDispatchTimeout = o.ct;
+      c.log("Unable to fully flush work queue after max retries, skipping future deadline."), this._workCallbackFn(), this.clearWorkTimeout(), this.telemetry.measure(o.Wg.COUNT_FLUSH_BEFORE_QUEUE_EMPTY, this._consecutiveFlushesBeforeQueueEmpty), this.telemetry.track(o.KQ.EXCEEDED_MAX_CONSECUTIVE_FLUSHES), this._consecutiveFlushesBeforeQueueEmpty = 0, this._nextDispatchTimeout = s.ct;
       return
     }
     let t = performance.now(),
       n = this._workCallbackFn(e),
       r = performance.now();
-    this.clearWorkTimeout(), r - t > o.zO ? this._nextDispatchTimeout = o.ct : this._nextDispatchTimeout = o.Z4, n ? (this._consecutiveFlushesBeforeQueueEmpty > 0 && this.telemetry.measure(s.Wg.COUNT_FLUSH_BEFORE_QUEUE_EMPTY, parseInt("".concat(this._consecutiveFlushesBeforeQueueEmpty))), this._consecutiveFlushesBeforeQueueEmpty = 0, this._criticalWorkScheduled = false) : this._consecutiveFlushesBeforeQueueEmpty += 1
+    this.clearWorkTimeout(), r - t > s.zO ? this._nextDispatchTimeout = s.ct : this._nextDispatchTimeout = s.Z4, n ? (this._consecutiveFlushesBeforeQueueEmpty > 0 && this.telemetry.measure(o.Wg.COUNT_FLUSH_BEFORE_QUEUE_EMPTY, parseInt("".concat(this._consecutiveFlushesBeforeQueueEmpty))), this._consecutiveFlushesBeforeQueueEmpty = 0, this._criticalWorkScheduled = false) : this._consecutiveFlushesBeforeQueueEmpty += 1
   }
   markCriticalWorkScheduled() {
     this._criticalWorkScheduled = true, null != this._flushIdleHandler && (this._clearIdleCallback(), this._processWorkCallback())
@@ -59,19 +59,19 @@ class u {
     return this._enableRequestIdleCallback
   }
   clearWorkTimeout() {
-    null != this._flushTimeoutHandler && (clearTimeout(this._flushTimeoutHandler), this._flushTimeoutHandler = null), this._clearIdleCallback(), this._nextDispatchTimeout = o.Z4, this._workCallbackFn = null
+    null != this._flushTimeoutHandler && (clearTimeout(this._flushTimeoutHandler), this._flushTimeoutHandler = null), this._clearIdleCallback(), this._nextDispatchTimeout = s.Z4, this._workCallbackFn = null
   }
   requestWorkTimeout(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     if (this._workCallbackFn = e, !this.hasWorkScheduled) {
-      if (this.telemetry.time(s.YE.TIME_TO_QUEUE_EMPTY), this._nextDispatchTimeout === o.ct && this.telemetry.track(s.KQ.LONGER_DISPATCH), t) return void this._queueIdleCallback();
+      if (this.telemetry.time(o.YE.TIME_TO_QUEUE_EMPTY), this._nextDispatchTimeout === s.ct && this.telemetry.track(o.KQ.LONGER_DISPATCH), t) return void this._queueIdleCallback();
       this._flushTimeoutHandler = setTimeout(() => {
-        if (i()(null != this._workCallbackFn, "Work callback should be set"), this._isBackgrounded) return this.telemetry.track(s.KQ.SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED), this._processWorkCallback();
+        if (i()(null != this._workCallbackFn, "Work callback should be set"), this._isBackgrounded) return this.telemetry.track(o.KQ.SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED), this._processWorkCallback();
         this._queueIdleCallback()
       }, this._nextDispatchTimeout)
     }
   }
   constructor() {
-    l(this, "_flushTimeoutHandler", null), l(this, "_flushIdleHandler", null), l(this, "_nextDispatchTimeout", o.Z4), l(this, "_workCallbackFn", null), l(this, "_consecutiveFlushesBeforeQueueEmpty", 0), l(this, "_isBackgrounded", false), l(this, "_enableRequestIdleCallback", false), l(this, "_criticalWorkScheduled", false), l(this, "telemetry", new s.Kw), l(this, "_logger", c)
+    l(this, "_flushTimeoutHandler", null), l(this, "_flushIdleHandler", null), l(this, "_nextDispatchTimeout", s.Z4), l(this, "_workCallbackFn", null), l(this, "_consecutiveFlushesBeforeQueueEmpty", 0), l(this, "_isBackgrounded", false), l(this, "_enableRequestIdleCallback", false), l(this, "_criticalWorkScheduled", false), l(this, "telemetry", new o.Kw), l(this, "_logger", c)
   }
 }

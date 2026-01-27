@@ -13,7 +13,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk265690 = require("./265690.js"),
   Chunk121894 = require("./121894.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,7 +29,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -83,16 +83,16 @@ function m(e) {
 }
 
 function g(e) {
-  (0, s.r)(() => _.setState({
+  (0, o.r)(() => _.setState({
     notificationCount: e
   }))
 }
 
 function E(e) {
-  return (0, s.r)(() => _.setState(t => ({
+  return (0, o.r)(() => _.setState(t => ({
     titles: [e, ...t.titles]
   }))), () => {
-    (0, s.r)(() => _.setState(t => ({
+    (0, o.r)(() => _.setState(t => ({
       titles: t.titles.filter(t => t !== e)
     })))
   }
@@ -133,10 +133,10 @@ function I() {
       flashQueue: t
     } = e, n = h(e).filter(e => null != e).join(" | "), r = m(e);
     return ["".concat(r).concat(n), t[0]]
-  }, i.x), [n, a] = r.useState(false), s = r.useRef(0), o = null == t ? true : t.messages[s.current % t.messages.length];
+  }, i.x), [n, a] = r.useState(false), o = r.useRef(0), s = null == t ? true : t.messages[o.current % t.messages.length];
   return r.useEffect(() => {
     if (null == t) {
-      s.current = 0, a(false);
+      o.current = 0, a(false);
       return
     }
     if (document.hasFocus() && t.onlyWhenBlurred) {
@@ -144,14 +144,14 @@ function I() {
       return
     }
     let e = setInterval(() => {
-      if (s.current >= t.count) {
+      if (o.current >= t.count) {
         b(t.id), a(false);
         return
       }
-      a(e => !e || (s.current += 1, false))
+      a(e => !e || (o.current += 1, false))
     }, t.interval);
     return () => clearInterval(e)
-  }, [t]), n ? o : e
+  }, [t]), n ? s : e
 }
 
 function S() {

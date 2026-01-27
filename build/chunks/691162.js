@@ -22,8 +22,8 @@ module.exports = function(e) {
   arguments.length > 1 && (t = arguments[1]);
   for (var _ = r(n, f), g = 0; g < f;) {
     var E = d(g);
-    if (o(n, E)) {
-      var y = i(e, t, [s(n, E), g, n]);
+    if (s(n, E)) {
+      var y = i(e, t, [o(n, E), g, n]);
       a(_, E, y)
     }
     g += 1

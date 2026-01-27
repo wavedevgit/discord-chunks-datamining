@@ -2,7 +2,7 @@
 /** chunk id: 869922, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W4: () => s
+  W4: () => o
 });
 var Chunk142809 = require("./142809.js"),
   Chunk550505 = require("./550505.js");
@@ -19,7 +19,7 @@ function a(e, t, n) {
   }
 }
 
-function s(e) {
+function o(e) {
   if ((0, i.bJ)(e)) return {
     message: e.message,
     name: e.name,
@@ -30,15 +30,15 @@ function s(e) {
   {
     let t = {
       type: e.type,
-      target: o(e.target),
-      currentTarget: o(e.currentTarget),
+      target: s(e.target),
+      currentTarget: s(e.currentTarget),
       ...l(e)
     };
     return "u" > typeof CustomEvent && (0, i.tH)(e, CustomEvent) && (t.detail = e.detail), t
   }
 }
 
-function o(e) {
+function s(e) {
   try {
     return (0, i.vq)(e) ? (0, r.Hd)(e) : Object.prototype.toString.call(e)
   } catch (e) {

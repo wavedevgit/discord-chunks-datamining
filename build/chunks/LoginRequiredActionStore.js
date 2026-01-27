@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,12 +15,12 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = {},
+let s = {},
   l = null,
   c = null;
 
 function u(e, t) {
-  null == t ? e in o && delete o[e] : null != e && (o[e] = t)
+  null == t ? e in s && delete s[e] : null != e && (s[e] = t)
 }
 
 function d(e) {
@@ -60,11 +60,11 @@ function h(e) {
 }
 class m extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (o = e)
+    null != e && (s = e)
   }
   requiredActions(e) {
     var t;
-    return null != (t = o[e]) ? t : null
+    return null != (t = s[e]) ? t : null
   }
   requiredActionsIncludes(e, t) {
     let n = this.requiredActions(e);
@@ -74,10 +74,10 @@ class m extends(r = Chunk311907.Ay.PersistedStore) {
     return l === e
   }
   getState() {
-    return o
+    return s
   }
 }
-s(m, "displayName", "LoginRequiredActionStore"), s(m, "persistKey", "LoginRequiredActionStore");
+o(m, "displayName", "LoginRequiredActionStore"), o(m, "persistKey", "LoginRequiredActionStore");
 let g = new m(Chunk73153.h, {
   LOGIN_ATTEMPTED: d,
   CONNECTION_OPEN: f,

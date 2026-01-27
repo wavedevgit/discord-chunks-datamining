@@ -82,12 +82,12 @@ function I(e) {
     let e = u.Ay.lastMessageId(i),
       a = null != e && d.default.age(e) > _.V$;
     if (n.length >= b || a) break;
-    let o = s.A.fetchMessages({
+    let s = o.A.fetchMessages({
       channelId: i,
       limit: _.EM,
       feature: _.j5
     });
-    false !== o && null != o && n.push(o)
+    false !== s && null != s && n.push(s)
   }
   return n
 }
@@ -96,23 +96,23 @@ async function S(e) {
     preload: t = false
   } = e, n = E(e, ["preload"]), r = Date.now(), a = p.A.getNotifyingChannelIds();
   if (null == a) return;
-  let s = t ? [] : I(a),
-    o = l.Ay.getMentions(),
-    c = null != o && o.length > 0 ? o[o.length - 1].id : null,
+  let o = t ? [] : I(a),
+    s = l.Ay.getMentions(),
+    c = null != s && s.length > 0 ? s[s.length - 1].id : null,
     u = false;
-  if (!l.Ay.hasMore && l.Ay.hasLoadedEver || l.Ay.loading || (s.push(v(c)), u = true), 0 === s.length) return void i.h.dispatch({
+  if (!l.Ay.hasMore && l.Ay.hasLoadedEver || l.Ay.loading || (o.push(v(c)), u = true), 0 === o.length) return void i.h.dispatch({
     type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS",
     preload: t,
     hasMoreToLoad: false
   });
   try {
     var d;
-    await Promise.all(s);
+    await Promise.all(o);
     let e = {
       timeToLoad: Date.now() - r,
       loadingTrigger: null != (d = n.loadingTrigger) ? d : _.VA.UNKNOWN,
       viewId: n.viewId,
-      channelsFetched: s.length - !!u,
+      channelsFetched: o.length - !!u,
       mentionsFetched: u
     };
     t && (0, f.P3)(e), i.h.dispatch({
@@ -164,11 +164,11 @@ let T = {
       interactionType: f.X8.CLICK,
       message: t,
       viewId: l
-    }), r && o.ack(t.channel_id, {
+    }), r && s.ack(t.channel_id, {
       section: h.JJy.INBOX,
       object: h.ZSU.ACK_MESSAGE_VIEWED,
       objectType: h.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-    }, true, true, t.id), s.A.trackJump(n.id, t.id, _.XU);
+    }, true, true, t.id), o.A.trackJump(n.id, t.id, _.XU);
     let p = a ? h.gNP : n.guild_id,
       m = h.BVt.CHANNEL(p, n.id, t.id);
     d && a ? (0, c.bG)(m) : (0, c.pX)(m)

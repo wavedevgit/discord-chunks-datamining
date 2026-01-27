@@ -1,24 +1,22 @@
-/** Chunk was on web.js **/
-/** chunk id: 732134, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-
-function r(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
+/** Chunk was on 28936 **/
+/** chunk id: 732134, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => r
 }), require("./896048.js");
-class i extends Map {
+class l extends Map {
   set(e, t) {
     return this.size >= this.maxSize && this.delete(this.keys().next().value), super.set(e, t)
   }
   constructor(e) {
-    super(), r(this, "maxSize", true), this.maxSize = e
+    super(),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "maxSize", true), this.maxSize = e
   }
 }
-let a = i
+let r = l

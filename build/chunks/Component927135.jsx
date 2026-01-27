@@ -19,16 +19,16 @@ function l(e) {
     hideStars: l
   } = e;
   return (0, r.jsxs)("span", {
-    className: a()(o.kL, t, {
-      [o.cu]: i
+    className: a()(s.kL, t, {
+      [s.cu]: i
     }),
     children: [n, l ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.A, {
-        foreground: o.yv
-      }), (0, r.jsx)(s.A, {
-        foreground: o.Rq
-      }), (0, r.jsx)(s.A, {
-        foreground: o.xh
+      children: [(0, r.jsx)(o.A, {
+        foreground: s.yv
+      }), (0, r.jsx)(o.A, {
+        foreground: s.Rq
+      }), (0, r.jsx)(o.A, {
+        foreground: s.xh
       })]
     })]
   })

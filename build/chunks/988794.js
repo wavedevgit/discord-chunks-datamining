@@ -5,7 +5,7 @@ require.d(exports, {
   BV: () => l,
   C1: () => b,
   GW: () => E,
-  IJ: () => s,
+  IJ: () => o,
   Oz: () => v,
   Ps: () => f,
   Qi: () => S,
@@ -21,14 +21,14 @@ require.d(exports, {
   om: () => m,
   t_: () => a,
   tq: () => c,
-  vj: () => o,
+  vj: () => s,
   w0: () => I
 }), require("./896048.js");
 var Chunk927813 = require("./927813.js"),
   Chunk652215 = require("./652215.js");
 let a = 100,
-  s = 1e3,
-  o = 100,
+  o = 1e3,
+  s = 100,
   l = "Guild Events Modal",
   c = "-1";
 var u = function(e) {

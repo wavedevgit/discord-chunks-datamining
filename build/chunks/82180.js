@@ -21,8 +21,8 @@ let i = function() {
 function a(e) {
   if (!e) throw Error("BigInt unavailable, see https://github.com/timostamm/protobuf-ts/blob/v1.0.8/MANUAL.md#bigint-support")
 }
-let s = /^-?[0-9]+$/,
-  o = 0x100000000;
+let o = /^-?[0-9]+$/,
+  s = 0x100000000;
 class l {
   constructor(e, t) {
     this.lo = 0 | e, this.hi = 0 | t
@@ -31,7 +31,7 @@ class l {
     return 0 == this.lo && 0 == this.hi
   }
   toNumber() {
-    let e = this.hi * o + (this.lo >>> 0);
+    let e = this.hi * s + (this.lo >>> 0);
     if (!Number.isSafeInteger(e)) throw Error("cannot convert to safe number");
     return e
   }
@@ -54,7 +54,7 @@ class c extends l {
     } else switch (typeof e) {
       case "string":
         if ("0" == e) return this.ZERO;
-        if (e = e.trim(), !s.test(e)) throw Error("string is no integer");
+        if (e = e.trim(), !o.test(e)) throw Error("string is no integer");
         let [t, n, a] = (0, r.Jg)(e);
         if (t) throw Error("signed value");
         return new c(n, a);
@@ -62,7 +62,7 @@ class c extends l {
         if (0 == e) return this.ZERO;
         if (!Number.isSafeInteger(e)) throw Error("number is no integer");
         if (e < 0) throw Error("signed value for ulong");
-        return new c(e, e / o)
+        return new c(e, e / s)
     }
     throw Error("unknown value " + typeof e)
   }
@@ -92,13 +92,13 @@ class u extends l {
     } else switch (typeof e) {
       case "string":
         if ("0" == e) return this.ZERO;
-        if (e = e.trim(), !s.test(e)) throw Error("string is no integer");
+        if (e = e.trim(), !o.test(e)) throw Error("string is no integer");
         let [t, n, a] = (0, r.Jg)(e), l = new u(n, a);
         return t ? l.negate() : l;
       case "number":
         if (0 == e) return this.ZERO;
         if (!Number.isSafeInteger(e)) throw Error("number is no integer");
-        return e > 0 ? new u(e, e / o) : new u(-e, -e / o).negate()
+        return e > 0 ? new u(e, e / s) : new u(-e, -e / s).negate()
     }
     throw Error("unknown value " + typeof e)
   }

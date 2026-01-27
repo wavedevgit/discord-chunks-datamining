@@ -3,10 +3,10 @@
 var Chunk124639 = require("./124639.js"),
   Chunk436815 = require("./436815.js"),
   a = Object.prototype,
-  s = a.hasOwnProperty,
-  o = a.propertyIsEnumerable;
+  o = a.hasOwnProperty,
+  s = a.propertyIsEnumerable;
 module.exports = Chunk124639(function() {
   return arguments
 }()) ? Chunk124639 : function(e) {
-  return i(e) && s.call(e, "callee") && !o.call(e, "callee")
+  return i(e) && o.call(e, "callee") && !s.call(e, "callee")
 }

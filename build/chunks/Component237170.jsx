@@ -1,8 +1,8 @@
 /** Chunk was on 18108 **/
 /** chunk id: 237170, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  G: () => A,
-  default: () => g
+  G: () => g,
+  default: () => x
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,7 +15,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk705656 = require("./705656.js");
 
-function m(t) {
+function A(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       r = Object.keys(n);
@@ -46,94 +46,94 @@ function h(t, e) {
     Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
   }), t
 }
-var A = ((r = {})[r.INTRO = 0] = "INTRO", r[r.SAFETY_TIPS = 1] = "SAFETY_TIPS", r[r.TAKE_ACTION = 2] = "TAKE_ACTION", r);
-let g = t => {
+var g = ((r = {})[r.INTRO = 0] = "INTRO", r[r.SAFETY_TIPS = 1] = "SAFETY_TIPS", r[r.TAKE_ACTION = 2] = "TAKE_ACTION", r);
+let x = t => {
   let {
     warningId: e,
     warningType: n,
     senderId: r,
-    modalProps: A,
-    channelId: g
-  } = t, [O, p] = s.useState(0), j = s.useMemo(() => ({
-    channelId: g,
+    modalProps: g,
+    channelId: x
+  } = t, [p, T] = s.useState(0), m = s.useMemo(() => ({
+    channelId: x,
     senderId: r,
     warningId: e,
     warningType: n,
     isNudgeWarning: false
-  }), [g, r, e, n]);
+  }), [x, r, e, n]);
   s.useEffect(() => {
-    (0, c.QF)(h(m({}, j), {
-      viewName: c.gN.SAFETY_TAKEOVER_MODAL
+    (0, o.QF)(h(A({}, m), {
+      viewName: o.gN.SAFETY_TAKEOVER_MODAL
     }))
-  }, [j]);
-  let b = s.useCallback(t => {
-      (0, c._$)(h(m({}, j), {
+  }, [m]);
+  let f = s.useCallback(t => {
+      (0, o._$)(h(A({}, m), {
         cta: t
       }))
-    }, [j]),
-    [v, E] = s.useState(false);
+    }, [m]),
+    [S, b] = s.useState(false);
 
-  function T(t) {
-    p(t)
+  function O(t) {
+    T(t)
   }
   return (0, i.jsxs)(a.EOs, {
     "data-migration-pending": true,
-    transitionState: A.transitionState,
+    transitionState: g.transitionState,
     parentComponent: "InappropriateConversationModal",
     children: [(0, i.jsx)("div", {
-      className: x.kL,
+      className: _.kL,
       children: (0, i.jsxs)(a.tN_, {
         width: 440,
-        activeSlide: O,
+        activeSlide: p,
         centered: false,
         overflow: "visible",
         contentDisplay: "flex",
         children: [(0, i.jsx)(a.q7S, {
           id: 0,
-          children: (0, i.jsx)(o.A, {
+          children: (0, i.jsx)(c.A, {
             warningId: e,
             senderId: r,
-            trackAnalyticsEvent: b,
-            onNavigate: T
+            trackAnalyticsEvent: f,
+            onNavigate: O
           })
         }), (0, i.jsx)(a.q7S, {
           id: 1,
           children: (0, i.jsx)(d.A, {
             warningId: e,
             senderId: r,
-            trackAnalyticsEvent: b
+            trackAnalyticsEvent: f
           })
         }), (0, i.jsx)(a.q7S, {
           id: 2,
           children: (0, i.jsx)(u.A, {
             warningId: e,
             senderId: r,
-            trackAnalyticsEvent: b,
-            channelId: g,
-            hasReported: v,
+            trackAnalyticsEvent: f,
+            channelId: x,
+            hasReported: S,
             onReport: function() {
-              E(true)
+              b(true)
             }
           })
         })]
       })
     }), (0, i.jsxs)(a.jlY, {
       "data-migration-pending": true,
-      className: x.qr,
+      className: _.qr,
       children: [(0, i.jsx)(a.QWc, {
         variant: "secondary",
         size: "sm",
-        text: _.intl.string(_.t.cpT0Cq),
+        text: E.intl.string(E.t.cpT0Cq),
         onClick: function() {
-          A.onClose(), (0, l.xi)(g, [e]), b(c.Wm.USER_TAKEOVER_MODAL_DISMISS)
+          g.onClose(), (0, l.xi)(x, [e]), f(o.Wm.USER_TAKEOVER_MODAL_DISMISS)
         },
         textVariant: "text-sm/normal"
-      }), 0 !== O && (0, i.jsx)(a.QWc, {
+      }), 0 !== p && (0, i.jsx)(a.QWc, {
         variant: "secondary",
         size: "sm",
-        text: _.intl.string(_.t["13/7kX"]),
+        text: E.intl.string(E.t["13/7kX"]),
         textVariant: "text-sm/normal",
-        onClick: () => T(0)
+        onClick: () => O(0)
       })]
     })]
   })

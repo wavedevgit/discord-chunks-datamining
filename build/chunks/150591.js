@@ -9,7 +9,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk717421 = require("./717421.js"),
   Chunk844222 = require("./844222.js"),
   Chunk815390 = require("./815390.js");
-let o = {
+let s = {
     mass: 1,
     tension: 1e3,
     friction: 48
@@ -19,10 +19,10 @@ let o = {
     tension: 1200,
     friction: 80
   },
-  c = o;
+  c = s;
 
 function u(e, t) {
-  let n = e === s.i.ENTERING || e === s.i.ENTERED,
+  let n = e === o.i.ENTERING || e === o.i.ENTERED,
     {
       reducedMotion: c
     } = r.useContext(a.C),
@@ -30,7 +30,7 @@ function u(e, t) {
   return (0, i.z)({
     opacity: +!!n,
     transform: u,
-    config: n ? o : l,
+    config: n ? s : l,
     delay: 64 * !!n
   }, "animate-always")
 }

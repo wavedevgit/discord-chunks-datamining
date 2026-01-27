@@ -75,7 +75,7 @@ async function y(e) {
     n = a.A.getCollapsedCategories(),
     i = b();
   for (let r in i) {
-    let i = s.A.getChannel(r);
+    let i = o.A.getChannel(r);
     null != i && null != i.guild_id && (i.guild_id in e || (e[i.guild_id] = {}), null == e[i.guild_id].channel_overrides && (e[i.guild_id].channel_overrides = {}), e[i.guild_id].channel_overrides[i.id] = f(u({}, e[i.guild_id].channel_overrides[i.id]), {
       collapsed: i.id in n
     }), t = true)

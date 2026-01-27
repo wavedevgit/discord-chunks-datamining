@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 822563, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 822563, original params: e,t,n (module,exports,require) **/
 module.exports = {
   Qs: "content_cfb73c",
   RS: "logoVideo_cfb73c",

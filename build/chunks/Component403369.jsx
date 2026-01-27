@@ -17,9 +17,9 @@ function u(e) {
   let {
     userId: t,
     guild: n
-  } = e, u = (0, i.bG)([a.Ay], () => a.Ay.getMember(n.id, t)), d = null == u ? true : u.roles, f = (0, i.yK)([s.A], () => s.A.getManyRoles(n.id, null != d ? d : []).sort(l.m), [d, n.id]), {
+  } = e, u = (0, i.bG)([a.Ay], () => a.Ay.getMember(n.id, t)), d = null == u ? true : u.roles, f = (0, i.yK)([o.A], () => o.A.getManyRoles(n.id, null != d ? d : []).sort(l.m), [d, n.id]), {
     trackUserProfileAction: p
-  } = (0, o.NJ)();
+  } = (0, s.NJ)();
   return (0, r.jsx)(c.Q, {
     userId: t,
     guild: n,

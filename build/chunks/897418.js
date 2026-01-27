@@ -16,14 +16,14 @@ var Chunk64700 = require("./64700.js"),
 
 function f(e) {
   let t = (0, a.C$)(e, "useGameServerPerk"),
-    n = (0, i.bG)([s.A], () => s.A.getLowestGameCostForGuild(e));
+    n = (0, i.bG)([o.A], () => o.A.getLowestGameCostForGuild(e));
   return r.useMemo(() => t && null != n ? {
     skuId: l.W5,
     title: u.intl.string(c.default["B3OfL/"]),
     description: u.intl.string(c.default.EGkJAG),
     cost: n,
     dependencies: [],
-    type: o.o9.PERK,
+    type: s.o9.PERK,
     animatedImageUrl: d.A,
     staticImageUrl: d.A
   } : null, [t, n])

@@ -2,7 +2,7 @@
 /** chunk id: 519126, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => s
+  r: () => o
 });
 var r, i = [],
   a = function() {
@@ -10,16 +10,16 @@ var r, i = [],
       return e()
     })
   },
-  s = function(e) {
+  o = function(e) {
     if (!r) {
       var t = 0,
         n = document.createTextNode(""),
-        s = {
+        o = {
           characterData: true
         };
       new MutationObserver(function() {
         return a()
-      }).observe(n, s), r = function() {
+      }).observe(n, o), r = function() {
         n.textContent = "".concat(t ? t-- : t++)
       }
     }

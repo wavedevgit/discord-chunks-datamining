@@ -27,10 +27,10 @@ async function p(e) {
     if (e.button_urls.length <= r) return;
     let a = e.button_urls[r];
     if ("string" != typeof a) return;
-    let l = o.A.safeParseWithQuery(a);
+    let l = s.A.safeParseWithQuery(a);
     if ((null == l ? true : l.protocol) == null || (null == l ? true : l.hostname) == null) return;
-    (0, s.h)({
-      href: o.A.format(l),
+    (0, o.h)({
+      href: s.A.format(l),
       trusted: false
     })
   } catch (e) {}
@@ -42,17 +42,17 @@ function _(e) {
     activity: n,
     onAction: i
   } = e, {
-    themeType: s
+    themeType: o
   } = (0, l.E)();
   if ((null == n ? true : n.buttons) == null || n.buttons.length < 1) return null;
-  let o = (0, a.A)(n);
-  return s === u.d.MODAL_V2 ? (0, r.jsx)("div", {
+  let s = (0, a.A)(n);
+  return o === u.d.MODAL_V2 ? (0, r.jsx)("div", {
     className: f.fO,
     children: n.buttons.map((e, a) => (0, r.jsx)(c.FD, {
-      text: o ? d.intl.string(d.t.I6JG46) : e,
+      text: s ? d.intl.string(d.t.I6JG46) : e,
       onClick: e => {
         e.stopPropagation(), null == i || i({
-          action: o ? "PRESS_WATCH_ON_CRUNCHYROLL_BUTTON" : "PRESS_CUSTOM_BUTTON"
+          action: s ? "PRESS_WATCH_ON_CRUNCHYROLL_BUTTON" : "PRESS_CUSTOM_BUTTON"
         }), p({
           user: t,
           activity: n,
@@ -63,11 +63,11 @@ function _(e) {
   }) : (0, r.jsx)("div", {
     className: f.fO,
     children: n.buttons.map((e, a) => (0, r.jsx)(c.FD, {
-      text: o ? d.intl.string(d.t.I6JG46) : e,
+      text: s ? d.intl.string(d.t.I6JG46) : e,
       fullWidth: true,
       onClick: e => {
         e.stopPropagation(), null == i || i({
-          action: o ? "PRESS_WATCH_ON_CRUNCHYROLL_BUTTON" : "PRESS_CUSTOM_BUTTON"
+          action: s ? "PRESS_WATCH_ON_CRUNCHYROLL_BUTTON" : "PRESS_CUSTOM_BUTTON"
         }), p({
           user: t,
           activity: n,

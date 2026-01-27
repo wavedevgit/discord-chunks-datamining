@@ -1,9 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 238136, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 238136, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => r
+  i: () => l
 });
-var r = function(e) {
-  return e.USER = "user", e.ROLE = "role", e.CHANNEL = "channel", e
-}({})
+var r, l = ((r = {}).USER = "user", r.ROLE = "role", r.CHANNEL = "channel", r)

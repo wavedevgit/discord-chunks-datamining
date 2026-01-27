@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk64700 = require("./64700.js"),
   Chunk238710 = require("./238710.js"),
   Chunk655972 = require("./655972.js"),
-  s = require.n(Chunk655972),
-  o = 0x3fffffff,
+  o = require.n(Chunk655972),
+  s = 0x3fffffff,
   l = "u" > typeof globalThis ? globalThis : "u" > typeof window ? window : true !== require.g ? require.g : {};
 
 function c() {
@@ -61,13 +61,13 @@ function p(e, t) {
         if (this.props.value !== e.value) {
           var n, r = this.props.value,
             i = e.value;
-          u(r, i) ? n = 0 : 0 != (n = ("function" == typeof t ? t(r, i) : o) | 0) && this.emitter.set(e.value, n)
+          u(r, i) ? n = 0 : 0 != (n = ("function" == typeof t ? t(r, i) : s) | 0) && this.emitter.set(e.value, n)
         }
       }, r.render = function() {
         return this.props.children
       }, n
     }(r.Component);
-  (n = {})[l] = s().object.isRequired, p.childContextTypes = n;
+  (n = {})[l] = o().object.isRequired, p.childContextTypes = n;
   var _ = function(t) {
     function n() {
       var e;
@@ -82,11 +82,11 @@ function p(e, t) {
     var r = n.prototype;
     return r.componentWillReceiveProps = function(e) {
       var t = e.observedBits;
-      this.observedBits = null == t ? o : t
+      this.observedBits = null == t ? s : t
     }, r.componentDidMount = function() {
       this.context[l] && this.context[l].on(this.onUpdate);
       var e = this.props.observedBits;
-      this.observedBits = null == e ? o : e
+      this.observedBits = null == e ? s : e
     }, r.componentWillUnmount = function() {
       this.context[l] && this.context[l].off(this.onUpdate)
     }, r.getValue = function() {
@@ -95,7 +95,7 @@ function p(e, t) {
       return f(this.props.children)(this.state.value)
     }, n
   }(r.Component);
-  return (a = {})[l] = s().object, _.contextTypes = a, {
+  return (a = {})[l] = o().object, _.contextTypes = a, {
     Provider: p,
     Consumer: _
   }

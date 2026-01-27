@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 85845, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 85845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => N,
-  L: () => w
+  A: () => v,
+  L: () => N
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,8 +29,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk646561 = require("./646561.js");
 
-function C(e) {
-  return (0, a.bG)([p.A], () => {
+function j(e) {
+  return (0, l.bG)([p.A], () => {
     if (null == e) return null;
     let {
       guildId: t,
@@ -41,103 +40,103 @@ function C(e) {
   })
 }
 
-function N() {
+function v() {
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(d.x, {
-      setting: v.H.VOICE_AND_VIDEO_SOUNDBOARD,
-      children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(O.A, {})]
-    }), (0, r.jsx)(d.x, {
-      setting: v.H.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
-      children: (0, r.jsx)(w, {})
+    children: [(0, r.jsxs)(u.x, {
+      setting: O.H.VOICE_AND_VIDEO_SOUNDBOARD,
+      children: [(0, r.jsx)(E.A, {}), (0, r.jsx)(x.A, {})]
+    }), (0, r.jsx)(u.x, {
+      setting: O.H.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
+      children: (0, r.jsx)(N, {})
     })]
   })
 }
 
-function w() {
+function N() {
   let {
     analyticsLocations: e
-  } = (0, l.Ay)(), [t, n] = i.useState(I.XH), o = (0, h.mz)(t), d = C(o), E = (null == o ? true : o.type) === h.PP.GLOBAL, b = (0, a.bG)([p.A], () => p.A.hasFetchedAllSounds()) && null != o && null == d;
+  } = (0, o.Ay)(), [t, n] = i.useState(I.XH), a = (0, g.mz)(t), u = j(a), h = (null == a ? true : a.type) === g.PP.GLOBAL, E = (0, l.bG)([p.A], () => p.A.hasFetchedAllSounds()) && null != a && null == u;
   i.useEffect(() => {
-    b && (0, _.ND)({
+    E && (0, m.ND)({
       location: e
     })
-  }, [b, e]), i.useEffect(() => {
-    (0, f.E7)()
+  }, [E, e]), i.useEffect(() => {
+    (0, _.E7)()
   }, []);
-  let O = i.useCallback((e, t) => {
+  let x = i.useCallback((e, t) => {
     let {
       inDropdown: n
     } = t;
-    return null == e ? null : n ? (0, r.jsx)(R, {
+    return null == e ? null : n ? (0, r.jsx)(y, {
       guildId: e.value
     }) : null
   }, []);
-  return (0, r.jsx)(y.A, {
+  return (0, r.jsx)(b.A, {
     children: (0, r.jsxs)(s.nVY, {
-      label: S.intl.string(S.t.nzUc3B),
-      description: S.intl.format(S.t.u9RWmv, {
-        helpdeskArticle: g.A.getArticleURL(A.MVz.SOUNDBOARD)
+      label: T.intl.string(T.t.nzUc3B),
+      description: T.intl.format(T.t.u9RWmv, {
+        helpdeskArticle: f.A.getArticleURL(C.MVz.SOUNDBOARD)
       }),
       children: [(0, r.jsx)(c.A, {
         guildId: t,
-        className: T.Dt,
+        className: S.Dt,
         globalOption: {
-          label: S.intl.string(S.t["CpEUP/"]),
+          label: T.intl.string(T.t["CpEUP/"]),
           value: I.XH
         },
         onChange: e => {
           n(null == e ? I.XH : e.id)
         },
-        renderOptionSuffix: O,
+        renderOptionSuffix: x,
         hideDivider: true
-      }), (0, r.jsxs)(u.A, {
-        title: S.intl.format(S.t.I2TsYN, {
+      }), (0, r.jsxs)(d.A, {
+        title: T.intl.format(T.t.I2TsYN, {
           nitroWheelHook: () => (0, r.jsx)(s.tvc, {
             size: "md",
             color: "currentColor",
-            className: T.ax
+            className: S.ax
           })
         }),
-        children: [(0, r.jsx)(m.A, {
-          sound: d,
-          isGlobal: E,
+        children: [(0, r.jsx)(A.A, {
+          sound: u,
+          isGlobal: h,
           onSelect: n => {
-            null == n ? (0, _.Dv)(t, e) : (0, _.un)(t, n, e)
+            null == n ? (0, m.Dv)(t, e) : (0, m.un)(t, n, e)
           }
-        }), b && (0, r.jsx)(s.po8, {
-          className: T.lm,
+        }), E && (0, r.jsx)(s.po8, {
+          className: S.lm,
           messageType: s.YCn.WARNING,
-          children: S.intl.string(S.t.WkPsFR)
+          children: T.intl.string(T.t.WkPsFR)
         })]
       })]
     })
   })
 }
 
-function R(e) {
+function y(e) {
   let {
     guildId: t
-  } = e, n = (0, a.bG)([E.A], () => {
+  } = e, n = (0, l.bG)([h.A], () => {
     var e, n, r;
-    return null == (r = E.A.settings.guilds) || null == (n = r.guilds) || null == (e = n[t]) ? true : e.joinSound
-  }), i = C(n);
+    return null == (r = h.A.settings.guilds) || null == (n = r.guilds) || null == (e = n[t]) ? true : e.joinSound
+  }), i = j(n);
   if (null == n || null == i) return null;
   let {
-    emojiId: l,
+    emojiId: o,
     emojiName: c
-  } = i, u = null != l || null != c;
+  } = i, d = null != o || null != c;
   return (0, r.jsxs)("div", {
-    className: T.Io,
-    children: [u ? (0, r.jsx)(o.A, {
-      emojiId: l,
+    className: S.Io,
+    children: [d ? (0, r.jsx)(a.A, {
+      emojiId: o,
       emojiName: c,
-      className: T.nW
+      className: S.nW
     }) : (0, r.jsx)(s.HKD, {
       size: "md",
       color: "currentColor",
-      className: T.nW
+      className: S.nW
     }), (0, r.jsx)(s.Text, {
-      className: T.dK,
+      className: S.dK,
       variant: "text-xs/medium",
       children: i.name
     })]

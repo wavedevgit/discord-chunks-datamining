@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
   Chunk158954 = require("./158954.js"),
@@ -34,7 +34,7 @@ function I(e) {
     variant: t,
     wishlistItem: n,
     guildId: a,
-    channelId: o,
+    channelId: s,
     userIdsForGifting: v,
     userIdsForRecommendation: I,
     cardSize: S = _.Y.SMALL,
@@ -59,7 +59,7 @@ function I(e) {
       text: "popular" === t ? b.intl.string(b.t["DP0o+u"]) : b.intl.string(b.t["OnWY3/"]),
       position: "top",
       children: (0, r.jsx)("div", {
-        className: s()(O.RL, T),
+        className: o()(O.RL, T),
         children: "popular" === t || 0 === D.length ? (0, r.jsx)("div", {
           className: O.fd,
           children: (0, r.jsx)(c.Y3C, {
@@ -70,7 +70,7 @@ function I(e) {
         }) : (0, r.jsx)(f.I, {
           users: D,
           guildId: null != a ? a : true,
-          channelId: null != o ? o : true,
+          channelId: null != s ? s : true,
           maxUsers: A,
           size: y._3.SIZE_20
         })

@@ -56,7 +56,7 @@ function O(e) {
     a = .8 * h;
   if (null != r && (null != r.timeout || r.prevSend + a > i)) returnfalse;
   let c = setTimeout(() => {
-    null == r || r.channelId !== t || n !== u.default.getId() || null == r.timeout || (r.timeout = null, w(t) > g || s.Bo.post({
+    null == r || r.channelId !== t || n !== u.default.getId() || null == r.timeout || (r.timeout = null, w(t) > g || o.Bo.post({
       url: f.Rsh.TYPING(t),
       oldFormErrors: true,
       rejectWithError: true
@@ -65,12 +65,12 @@ function O(e) {
         var n, r;
         let i = null != (n = e.body.message_send_cooldown_ms) ? n : 0,
           a = null != (r = e.body.thread_create_cooldown_ms) ? r : 0;
-        i > 0 && o.h.dispatch({
+        i > 0 && s.h.dispatch({
           type: "SLOWMODE_SET_COOLDOWN",
           channelId: t,
           slowmodeType: d.R.SendMessage,
           cooldownMs: i
-        }), a > 0 && o.h.dispatch({
+        }), a > 0 && s.h.dispatch({
           type: "SLOWMODE_SET_COOLDOWN",
           channelId: t,
           slowmodeType: d.R.CreateThread,
@@ -106,7 +106,7 @@ function A(e) {
 
 function I(e, t) {
   return setTimeout(() => {
-    o.h.dispatch({
+    s.h.dispatch({
       type: "TYPING_STOP",
       channelId: e,
       userId: t

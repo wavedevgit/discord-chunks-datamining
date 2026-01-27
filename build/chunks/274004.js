@@ -1,61 +1,55 @@
-/** Chunk was on web.js **/
-/** chunk id: 274004, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 54809 **/
+/** chunk id: 274004, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => o
 });
 var Chunk294946 = require("./294946.js"),
   Chunk187282 = require("./187282.js"),
   Chunk15020 = require("./15020.js");
 
-function s(e, t, n, s) {
-  (0, r.tW)(e);
-  let {
-    c: o,
-    dkLen: l,
-    asyncTick: c
-  } = (0, a.tY)({
-    dkLen: 32,
-    asyncTick: 10
-  }, s);
-  if ((0, r.ai)(o), (0, r.ai)(l), (0, r.ai)(c), o < 1) throw Error("PBKDF2: iterations (c) should be >= 1");
-  let u = (0, a.ZJ)(t),
-    d = (0, a.ZJ)(n),
-    f = new Uint8Array(l),
-    p = i.w.create(e, u),
-    _ = p._cloneInto().update(d);
-  return {
-    c: o,
-    dkLen: l,
-    asyncTick: c,
-    DK: f,
-    PRF: p,
-    PRFSalt: _
-  }
-}
-
-function o(e, t, n, r, i) {
-  return e.destroy(), t.destroy(), r && r.destroy(), i.fill(0), n
-}
-
-function l(e, t, n, r) {
-  let i, {
-      c: l,
+function o(t, e, r, o) {
+  var a;
+  let h, {
+      c: f,
       dkLen: c,
-      DK: u,
-      PRF: d,
-      PRFSalt: f
-    } = s(e, t, n, r),
-    p = new Uint8Array(4),
-    _ = (0, a.O8)(p),
-    h = new Uint8Array(d.outputLen);
-  for (let e = 1, t = 0; t < c; e++, t += d.outputLen) {
-    let n = u.subarray(t, t + d.outputLen);
-    _.setInt32(0, e, false), (i = f._cloneInto(i)).update(p).digestInto(h), n.set(h.subarray(0, n.length));
-    for (let e = 1; e < l; e++) {
-      d._cloneInto(i).update(h).digestInto(h);
-      for (let e = 0; e < n.length; e++) n[e] ^= h[e]
+      DK: l,
+      PRF: u,
+      PRFSalt: d
+    } = function(t, e, r, o) {
+      (0, s.tW)(t);
+      let {
+        c: a,
+        dkLen: h,
+        asyncTick: f
+      } = (0, n.tY)({
+        dkLen: 32,
+        asyncTick: 10
+      }, o);
+      if ((0, s.ai)(a), (0, s.ai)(h), (0, s.ai)(f), a < 1) throw Error("PBKDF2: iterations (c) should be >= 1");
+      let c = (0, n.ZJ)(e),
+        l = (0, n.ZJ)(r),
+        u = new Uint8Array(h),
+        d = i.w.create(t, c),
+        x = d._cloneInto().update(l);
+      return {
+        c: a,
+        dkLen: h,
+        asyncTick: f,
+        DK: u,
+        PRF: d,
+        PRFSalt: x
+      }
+    }(t, e, r, o),
+    x = new Uint8Array(4),
+    b = (0, n.O8)(x),
+    p = new Uint8Array(u.outputLen);
+  for (let t = 1, e = 0; e < c; t++, e += u.outputLen) {
+    let r = l.subarray(e, e + u.outputLen);
+    b.setInt32(0, t, false), (h = d._cloneInto(h)).update(x).digestInto(p), r.set(p.subarray(0, r.length));
+    for (let t = 1; t < f; t++) {
+      u._cloneInto(h).update(p).digestInto(p);
+      for (let t = 0; t < r.length; t++) r[t] ^= p[t]
     }
   }
-  return o(d, f, u, i, h)
+  return a = h, u.destroy(), d.destroy(), a && a.destroy(), p.fill(0), l
 }

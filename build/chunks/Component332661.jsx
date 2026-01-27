@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk683329 = require("./683329.js"),
   Chunk336389 = require("./336389.js");
@@ -35,12 +35,12 @@ function u(e) {
       accessory: u
     })
   })), (0, r.jsxs)("div", {
-    className: s()(c.uN, l.uK, {
+    className: o()(c.uN, l.uK, {
       [c.MO]: f
     }),
     onClick: n,
     "aria-hidden": i,
-    children: [p, (0, r.jsx)(o.EYj, {
+    children: [p, (0, r.jsx)(s.EYj, {
       variant: "text-md/normal",
       color: "currentColor",
       lineClamp: 1,
@@ -60,12 +60,12 @@ function d(e) {
   } = e;
   if (null == t) return null;
   if (i.isValidElement(t)) return (0, r.jsx)("div", {
-    className: s()({
+    className: o()({
       [l.MG]: n
     }),
     children: t
   });
-  if ("string" == typeof t) return (0, r.jsx)(o.EYj, {
+  if ("string" == typeof t) return (0, r.jsx)(s.EYj, {
     variant: "text-sm/normal",
     color: "text-subtle",
     children: t
@@ -82,7 +82,7 @@ function d(e) {
     src: t.src,
     className: l.CD
   });
-  if ("object" == typeof t && "type" in t && "badge" === t.type) return (0, r.jsx)(o.Exy, {
+  if ("object" == typeof t && "type" in t && "badge" === t.type) return (0, r.jsx)(s.Exy, {
     type: t.badgeType
   });
   let a = t;

@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 485366, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-var r = {
+/** Chunk was on 92917 **/
+/** chunk id: 485366, original params: e,t,n (module,exports,require) **/
+require.r(module.exports = {
   wrapper: "wrapper_d5f3cd",
   header: "header_d5f3cd",
   content: "content_d5f3cd",
@@ -39,5 +38,4 @@ var r = {
   resolvingBackground: "resolvingBackground_d5f3cd",
   resolvingFakeButton: "resolvingFakeButton_d5f3cd",
   button: "button_d5f3cd"
-};
-require.r(module.exports = r)
+})

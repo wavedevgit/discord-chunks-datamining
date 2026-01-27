@@ -10,16 +10,16 @@ var Chunk64700 = require("./64700.js"),
   Chunk71393 = require("./71393.js"),
   Chunk209932 = require("./209932.js");
 
-function o(e, t) {
+function s(e, t) {
   return e.filter(e => null == t.get(e))
 }
 
 function l() {
   let e = (0, i.yK)([a.A], () => a.A.getGuildIds()),
-    t = (0, i.bG)([s.A], () => s.A.getSounds());
-  return (0, r.useMemo)(() => o(e, t), [e, t])
+    t = (0, i.bG)([o.A], () => o.A.getSounds());
+  return (0, r.useMemo)(() => s(e, t), [e, t])
 }
 
 function c() {
-  return o(a.A.getGuildIds(), s.A.getSounds())
+  return s(a.A.getGuildIds(), o.A.getSounds())
 }

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 821701, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92818 **/
+/** chunk id: 821701, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => s
 }), require("./896048.js");
@@ -8,10 +7,10 @@ var Chunk417597 = require("./417597.js"),
   Chunk590180 = require("./590180.js"),
   Chunk4227 = require("./4227.js");
 let s = e => {
-  let [t, n] = (0, r.yK)([i.A], () => [i.A.getCategoryForProduct(e), i.A.getProduct(e)]);
+  let [t, r] = (0, n.yK)([l.A], () => [l.A.getCategoryForProduct(e), l.A.getProduct(e)]);
   return {
     category: t,
-    product: n,
-    purchase: (0, r.bG)([a.A], () => a.A.getPurchase(e))
+    product: r,
+    purchase: (0, n.bG)([i.A], () => i.A.getPurchase(e))
   }
 }

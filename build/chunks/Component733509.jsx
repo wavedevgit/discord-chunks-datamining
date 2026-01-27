@@ -15,21 +15,21 @@ var Chunk627968 = require("./627968.js"),
 function u(e) {
   let {
     sound: t
-  } = e, n = (0, i.bG)([o.A], () => {
+  } = e, n = (0, i.bG)([s.A], () => {
     var e;
-    return t.guildId === l.mV ? c.intl.string(c.t.Rtvk9X) : null == (e = o.A.getGuild(t.guildId)) ? true : e.name
+    return t.guildId === l.mV ? c.intl.string(c.t.Rtvk9X) : null == (e = s.A.getGuild(t.guildId)) ? true : e.name
   });
-  return (0, r.jsxs)(s.Mr, {
-    children: [(null != t.emojiId || null != t.emojiName) && (0, r.jsx)(s.Ch, {
+  return (0, r.jsxs)(o.Mr, {
+    children: [(null != t.emojiId || null != t.emojiName) && (0, r.jsx)(o.Ch, {
       children: (0, r.jsx)(a.A, {
         emojiId: t.emojiId,
         emojiName: t.emojiName
       })
-    }), (0, r.jsx)(s.oC, {
-      children: (0, r.jsx)(s.dB, {
+    }), (0, r.jsx)(o.oC, {
+      children: (0, r.jsx)(o.dB, {
         children: t.name
       })
-    }), null != n && (0, r.jsx)(s.Aq, {
+    }), null != n && (0, r.jsx)(o.Aq, {
       children: n
     })]
   })

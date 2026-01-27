@@ -2,18 +2,18 @@
 /** chunk id: 401843, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A9: () => x,
-  Ho: () => L,
-  Nl: () => j,
+  A9: () => L,
+  Ho: () => x,
+  Nl: () => M,
   TZ: () => P,
   Tp: () => U,
   XI: () => R,
-  Xd: () => V,
+  Xd: () => F,
   Xi: () => k,
   a8: () => G,
-  dA: () => F,
+  dA: () => V,
   nO: () => B,
-  vN: () => M
+  vN: () => j
 });
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
@@ -66,7 +66,7 @@ function N(e) {
 let w = 2;
 
 function R(e, t, n) {
-  o.h.dispatch(N({
+  s.h.dispatch(N({
     type: "STREAM_START",
     streamType: null != e ? T.U4.GUILD : T.U4.CALL,
     guildId: e,
@@ -77,7 +77,7 @@ function R(e, t, n) {
 
 function P(e, t) {
   let n = (0, u._z)(e);
-  o.h.dispatch({
+  s.h.dispatch({
     type: "STREAM_SET_PAUSED",
     streamKey: n,
     paused: t
@@ -89,7 +89,7 @@ function D(e, t) {
   return i()(null != n, "Cannot join a null voice channel"), !y.A.isInChannel(t) && (0, b.Pd)(n, y.A, g.A)
 }
 
-function x(e, t) {
+function L(e, t) {
   let {
     defaultWatchMultipleStreams: n
   } = (0, c.d)({
@@ -102,43 +102,43 @@ function x(e, t) {
   } = e;
   if (null != r && D(r, i)) return;
   let a = (0, u._z)(e),
-    s = (null == t ? true : t.forceMultiple) || _.A.getAllActiveStreamsForChannel(i).filter(e => {
+    o = (null == t ? true : t.forceMultiple) || _.A.getAllActiveStreamsForChannel(i).filter(e => {
       let {
         ownerId: t
       } = e;
       return t !== h.default.getId()
     }).length >= w;
-  o.h.dispatch({
+  s.h.dispatch({
     type: "STREAM_WATCH",
     streamKey: a,
-    allowMultiple: s || n
-  }), (null == t ? true : t.forceFocus) !== true && (s || null != t && t.noFocus) || I.A.selectParticipant(e.channelId, a)
+    allowMultiple: o || n
+  }), (null == t ? true : t.forceFocus) !== true && (o || null != t && t.noFocus) || I.A.selectParticipant(e.channelId, a)
 }
 
-function L(e, t) {
-  o.h.dispatch({
+function x(e, t) {
+  s.h.dispatch({
     type: "STREAM_UPDATE_SELF_HIDDEN",
     channelId: e,
     selfStreamHidden: t
   })
 }
 
-function j(e, t) {
+function M(e, t) {
   let {
     guildId: n,
     channelId: r
   } = e;
   if (null != n && D(n, r)) return;
-  x(e, t);
+  L(e, t);
   let i = f.A.getWindowOpen(S.MLl.CHANNEL_CALL_POPOUT),
     a = E.A.getVoiceChannelId();
   i && a === r || (0, d.A)(e)
 }
 
-function M(e) {
+function j(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-  n && k(e, t), o.h.dispatch({
+  n && k(e, t), s.h.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
     appContext: __OVERLAY__ ? S.BRT.OVERLAY : S.BRT.APP
@@ -147,7 +147,7 @@ function M(e) {
 
 function k(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  o.h.dispatch({
+  s.h.dispatch({
     type: "STREAM_CLOSE",
     streamKey: e,
     canShowFeedback: t
@@ -161,12 +161,12 @@ async function U(e, t, n) {
     channelId: t,
     ownerId: n
   });
-  o.h.dispatch({
+  s.h.dispatch({
     type: "STREAM_PREVIEW_FETCH_START",
     streamKey: r
   });
   try {
-    let e = await s.Bo.get({
+    let e = await o.Bo.get({
       url: S.Rsh.STREAM_PREVIEW(r),
       query: {
         version: Date.now()
@@ -174,14 +174,14 @@ async function U(e, t, n) {
       oldFormErrors: true,
       rejectWithError: false
     });
-    o.h.dispatch({
+    s.h.dispatch({
       type: "STREAM_PREVIEW_FETCH_SUCCESS",
       streamKey: r,
       previewURL: e.body.url
     })
   } catch (t) {
     let e;
-    429 === t.status && (e = t.body.retry_after * O.A.Millis.SECOND), o.h.dispatch({
+    429 === t.status && (e = t.body.retry_after * O.A.Millis.SECOND), s.h.dispatch({
       type: "STREAM_PREVIEW_FETCH_FAIL",
       streamKey: r,
       retryAfter: e
@@ -201,14 +201,14 @@ async function G(e) {
   } catch (e) {}
 }
 
-function V(e) {
-  true !== e.noTrack && (0, v.K2)(e.preset, e.resolution, e.frameRate), o.h.dispatch(N({
+function F(e) {
+  true !== e.noTrack && (0, v.K2)(e.preset, e.resolution, e.frameRate), s.h.dispatch(N({
     type: "STREAM_UPDATE_SETTINGS"
   }, e))
 }
 
-function F(e, t) {
-  s.Bo.patch({
+function V(e, t) {
+  o.Bo.patch({
     url: S.Rsh.STREAM(e),
     body: {
       region: t
@@ -221,5 +221,5 @@ function F(e, t) {
 function B() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = _.A.getCurrentUserActiveStream();
-  null != t && M((0, u._z)(t), e)
+  null != t && j((0, u._z)(t), e)
 }

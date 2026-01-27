@@ -2,14 +2,14 @@
 /** chunk id: 82193, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  getDeviceState: () => s,
+  getDeviceState: () => o,
   logger: () => a
 });
 var Chunk626584 = require("./626584.js"),
   Chunk817476 = require("./817476.js");
 let a = new Chunk626584.A("native/DeviceState.tsx");
 
-function s() {
+function o() {
   let {
     fallback: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {

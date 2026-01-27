@@ -3,18 +3,18 @@
 "use strict";
 require.d(exports, {
   DP: () => B,
-  Lw: () => F,
-  _J: () => j,
-  m0: () => V,
-  mT: () => M,
-  sw: () => L,
+  Lw: () => V,
+  _J: () => M,
+  m0: () => F,
+  mT: () => j,
+  sw: () => x,
   tC: () => H,
   wP: () => k
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   l = require.n(Chunk284009),
   Chunk311907 = require("./311907.js"),
@@ -80,14 +80,14 @@ function D(e, t) {
   return i
 }
 
-function x(e) {
+function L(e) {
   let {
     invoiceItem: t,
     overrideAmount: n,
     showGuildSubscriptionAdjustmentTooltip: i,
     currency: a,
-    className: s,
-    isPrepaidPaymentSource: o,
+    className: o,
+    isPrepaidPaymentSource: s,
     referralTrialOfferId: l,
     inTrialPeriod: f
   } = e, p = (0, O.V)(l), h = (0, c.bG)([_.A], () => _.A.get(t.subscriptionPlanId)), {
@@ -100,7 +100,7 @@ function x(e) {
     subscriptionPlan: h,
     premiumTrialOffer: p,
     overrideAmount: n,
-    isPrepaidPaymentSource: o,
+    isPrepaidPaymentSource: s,
     currency: a
   }), A = g;
   returntrue === i && (A = (0, r.jsxs)("div", {
@@ -126,12 +126,12 @@ function x(e) {
     interval: m.interval,
     intervalCount: m.intervalCount,
     currency: a,
-    className: s,
+    className: o,
     inTrialPeriod: f
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     label: t,
     tooltipText: n,
@@ -152,20 +152,20 @@ function L(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     invoice: t,
     isPrepaidPaymentSource: n
-  } = e, i = (0, b.Z)(t.invoiceItems), a = i.find(e => !(0, g.z4)(e.subscriptionPlanId) && e.amount >= 0), s = i.find(e => (0, g.z4)(e.subscriptionPlanId) && e.amount >= 0), o = (0, c.bG)([_.A], () => null != s ? _.A.get(s.subscriptionPlanId) : null), l = null != s ? s.amount : 0, u = (0, E.$g)(l, t.currency), d = null != o ? (0, E.CE)(u, o.interval, o.intervalCount) : 0;
+  } = e, i = (0, b.Z)(t.invoiceItems), a = i.find(e => !(0, g.z4)(e.subscriptionPlanId) && e.amount >= 0), o = i.find(e => (0, g.z4)(e.subscriptionPlanId) && e.amount >= 0), s = (0, c.bG)([_.A], () => null != o ? _.A.get(o.subscriptionPlanId) : null), l = null != o ? o.amount : 0, u = (0, E.$g)(l, t.currency), d = null != s ? (0, E.CE)(u, s.interval, s.intervalCount) : 0;
   return (0, r.jsxs)(r.Fragment, {
-    children: [null != a ? (0, r.jsx)(x, {
+    children: [null != a ? (0, r.jsx)(L, {
       invoiceItem: a,
       currency: t.currency,
       isPrepaidPaymentSource: n
-    }) : null, 0 !== l && null != s && null != o ? (0, r.jsx)(v.oR, {
+    }) : null, 0 !== l && null != o && null != s ? (0, r.jsx)(v.oR, {
       label: C.intl.formatToPlainString(C.t.a3cAOg, {
-        numGuildSubscriptions: s.quantity,
-        planName: (0, g.Mn)(o.id, false, n)
+        numGuildSubscriptions: o.quantity,
+        planName: (0, g.Mn)(s.id, false, n)
       }),
       value: n ? u : d
     }) : null, (0, r.jsx)(A.A, {
@@ -177,22 +177,22 @@ function j(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   let {
     invoice: t,
     newPlan: n,
     isPrepaidPaymentSource: i,
     referralTrialOfferId: a
   } = e, {
-    newPlanInvoiceItem: s,
-    basePlanFullAmount: o,
+    newPlanInvoiceItem: o,
+    basePlanFullAmount: s,
     invoiceAdjustmentDisplayItems: l
   } = (0, I.qi)(t, n);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(x, {
-      invoiceItem: s,
+    children: [(0, r.jsx)(L, {
+      invoiceItem: o,
       currency: t.currency,
-      overrideAmount: o,
+      overrideAmount: s,
       isPrepaidPaymentSource: i,
       referralTrialOfferId: a
     }), l.map(e => {
@@ -201,15 +201,15 @@ function M(e) {
         label: n,
         tooltipText: i,
         tooltipAriaLabel: a,
-        value: s
+        value: o
       } = e;
       return (0, r.jsx)(v.oR, {
-        label: (0, r.jsx)(L, {
+        label: (0, r.jsx)(x, {
           label: n,
           tooltipText: i,
           tooltipAriaLabel: a
         }),
-        value: s
+        value: o
       }, t)
     }), (0, r.jsx)(A.A, {
       invoice: t
@@ -227,12 +227,12 @@ function k(e) {
     overrideRenewalDate: i
   } = e, {
     intervalType: a,
-    intervalCount: s
+    intervalCount: o
   } = (0, g.Ge)(t), {
-    intervalType: o,
+    intervalType: s,
     intervalCount: l
   } = (0, g.Ge)(n);
-  if (a !== o || s !== l || t.subscriptionPeriodEnd.getTime() === n.subscriptionPeriodStart.getTime()) return null;
+  if (a !== s || o !== l || t.subscriptionPeriodEnd.getTime() === n.subscriptionPeriodStart.getTime()) return null;
   let c = null != i ? i : t.subscriptionPeriodEnd;
   return (0, r.jsx)("div", {
     className: N.gX,
@@ -248,7 +248,7 @@ function U(e) {
     currentInvoice: n,
     newInvoice: i,
     inTrialPeriod: a
-  } = e, o = null != n ? (0, b.Z)(n.invoiceItems) : null, {
+  } = e, s = null != n ? (0, b.Z)(n.invoiceItems) : null, {
     intervalType: l,
     intervalCount: c
   } = (0, g.Ge)(i);
@@ -258,7 +258,7 @@ function U(e) {
     }), null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(v.Xd, {
         children: C.intl.string(C.t.tuqjWQ)
-      }), (0, I.Q8)(n).map(e => (0, r.jsx)(x, {
+      }), (0, I.Q8)(n).map(e => (0, r.jsx)(L, {
         invoiceItem: e,
         currency: n.currency,
         inTrialPeriod: a
@@ -270,12 +270,12 @@ function U(e) {
     }), (0, I.Q8)(i, n).map(e => {
       let {
         showGuildSubscriptionAdjustmentTooltip: n
-      } = e, a = P(e, ["showGuildSubscriptionAdjustmentTooltip"]), l = null != o && !o.some(e => e.subscriptionPlanId === a.subscriptionPlanId && e.quantity === a.quantity);
-      return (0, r.jsx)(x, {
+      } = e, a = P(e, ["showGuildSubscriptionAdjustmentTooltip"]), l = null != s && !s.some(e => e.subscriptionPlanId === a.subscriptionPlanId && e.quantity === a.quantity);
+      return (0, r.jsx)(L, {
         invoiceItem: a,
         currency: i.currency,
         showGuildSubscriptionAdjustmentTooltip: n,
-        className: s()({
+        className: o()({
           [N.sy]: !t || l
         })
       }, a.id)
@@ -295,8 +295,8 @@ function G(e) {
     proratedInvoice: n,
     renewalInvoice: i,
     isTrial: a,
-    isUpdate: s,
-    overrideRenewalDate: o,
+    isUpdate: o,
+    overrideRenewalDate: s,
     trialFooterMessageOverride: l
   } = e, c = null == (t = (0, O.V)()) ? true : t.subscription_trial, {
     intervalType: u,
@@ -320,20 +320,20 @@ function G(e) {
   return (0, r.jsx)(r.Fragment, {
     children: C.intl.format(f, {
       rate: (0, E.CE)((0, E.$g)(i.subtotal, i.currency), u, d),
-      renewalDate: null != o ? o : s ? null != n ? n.subscriptionPeriodEnd : i.subscriptionPeriodStart : i.subscriptionPeriodEnd,
+      renewalDate: null != s ? s : o ? null != n ? n.subscriptionPeriodEnd : i.subscriptionPeriodStart : i.subscriptionPeriodEnd,
       contactLink: T.X7G.CONTACT,
       helpdeskArticle: m.A.getArticleURL(T.MVz.BILLING)
     })
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     premiumSubscription: t,
     proratedInvoice: n,
     renewalInvoice: a,
-    overrideRenewalDate: s,
-    isUpdate: o = false,
+    overrideRenewalDate: o,
+    isUpdate: s = false,
     isTrial: l = false,
     priceOptions: c,
     isPrepaidPaymentSource: u = false,
@@ -344,7 +344,7 @@ function V(e) {
   } = (0, p.Ay)(), E = R({
     subscriptionId: null == t ? true : t.id,
     renewal: true,
-    preventFetch: !o,
+    preventFetch: !s,
     analyticsLocatinons: g,
     analyticsLocation: f.A.SUBSCRIPTION_INVOICE_FOOTER
   }, c), [b] = (0, y.Kq)(E), [O, A] = i.useState(false);
@@ -354,8 +354,8 @@ function V(e) {
         proratedInvoice: n,
         renewalInvoice: a,
         isTrial: l,
-        isUpdate: o,
-        overrideRenewalDate: s,
+        isUpdate: s,
+        overrideRenewalDate: o,
         trialFooterMessageOverride: _
       })
     }), !m && (0, r.jsxs)(r.Fragment, {
@@ -367,7 +367,7 @@ function V(e) {
           className: N.ts
         })]
       }), O ? (0, r.jsx)(U, {
-        isUpdate: o,
+        isUpdate: s,
         currentInvoice: b,
         newInvoice: a,
         inTrialPeriod: l
@@ -375,7 +375,7 @@ function V(e) {
     })]
   })
 }
-let F = (e, t) => {
+let V = (e, t) => {
   let {
     isCustomGift: n,
     isPrepaidPaymentSource: r
@@ -391,12 +391,12 @@ function B(e) {
     className: n,
     isPrepaidPaymentSource: i = false,
     isCustomGift: a = false,
-    invoicePreview: s
+    invoicePreview: o
   } = e, {
-    tax: o,
+    tax: s,
     taxInclusive: l,
     currency: c
-  } = s, u = s.total, f = u - o, p = (0, E.$g)(f, c), _ = (0, E.$g)(u, c), h = F(t, {
+  } = o, u = o.total, f = u - s, p = (0, E.$g)(f, c), _ = (0, E.$g)(u, c), h = V(t, {
     isCustomGift: a,
     isPrepaidPaymentSource: i
   });
@@ -405,7 +405,7 @@ function B(e) {
     children: [(0, r.jsx)(d.Heading, {
       variant: "heading-md/semibold",
       children: C.intl.string(C.t.PEjaCx)
-    }), o >= 0 && false === l ? (0, r.jsxs)(r.Fragment, {
+    }), s >= 0 && false === l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/bold",
         className: N.Uc,
@@ -418,7 +418,7 @@ function B(e) {
           label: h,
           value: p
         }), (0, r.jsx)(A.A, {
-          invoice: s
+          invoice: o
         }), (0, r.jsx)(v.pK, {}), (0, r.jsx)(v.oR, {
           label: C.intl.string(C.t.txajQG),
           value: _,

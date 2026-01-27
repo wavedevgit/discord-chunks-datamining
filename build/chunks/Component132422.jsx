@@ -2,15 +2,15 @@
 /** chunk id: 132422, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => o
+  S: () => s
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk305152 = require("./305152.js");
-let o = () => (0, r.jsxs)("div", {
-  className: s.M,
+let s = () => (0, r.jsxs)("div", {
+  className: o.M,
   children: [(0, r.jsx)(i.Text, {
     variant: "text-xs/bold",
     color: "text-strong",

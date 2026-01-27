@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 257284, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 2292 **/
+/** chunk id: 257284, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,29 +13,28 @@ var Chunk311907 = require("./311907.js"),
   Chunk927578 = require("./927578.js"),
   Chunk788868 = require("./788868.js"),
   Chunk696389 = require("./696389.js");
-let f = function(e) {
+let m = function(e) {
   let {
     isGift: t = false,
-    priceOptions: n
-  } = e, f = (0, i.bG)([l.A], () => l.A.get(u.gD.PREMIUM_GROUP_MONTH)), p = (0, a.qB)((0, o.Ay)());
-  if (null == f) return (0, r.jsx)(s.y$y, {
-    type: s.y$y.Type.PULSING_ELLIPSIS,
+    priceOptions: r
+  } = e, m = (0, i.bG)([o.A], () => o.A.get(u.gD.PREMIUM_GROUP_MONTH)), p = (0, l.qB)((0, s.Ay)());
+  if (null == m) return (0, n.jsx)(a.y$y, {
+    type: a.y$y.Type.PULSING_ELLIPSIS,
     className: d.xB
   });
-  let _ = (0, c.sS)(f, n, false, t),
-    h = u.WT.MONTH,
-    m = p ? "text-strong" : "always-white";
-  return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.Text, {
+  let g = (0, c.sS)(m, r, false, t),
+    x = u.WT.MONTH;
+  return (0, n.jsxs)("div", {
+    children: [(0, n.jsx)(a.Text, {
       variant: "heading-xxl/extrabold",
-      color: m,
+      color: p ? "text-strong" : "always-white",
       tag: "span",
-      children: _
-    }), (0, r.jsxs)(s.Text, {
+      children: g
+    }), (0, n.jsxs)(a.Text, {
       variant: "text-xs/medium",
       tag: "span",
       color: "text-muted",
-      children: ["/", (0, c.FJ)(h)]
+      children: ["/", (0, c.FJ)(x)]
     })]
   })
 }

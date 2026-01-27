@@ -2,7 +2,7 @@
 /** chunk id: 374400, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 }), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk492462 = require("./492462.js"),
   Chunk998218 = require("./998218.js");
@@ -15,7 +15,7 @@ let a = e => {
       return null
     }
   },
-  s = e => {
+  o = e => {
     let t = (0, r.parse)(e);
     return {
       desktop: a(t.desktop_link),

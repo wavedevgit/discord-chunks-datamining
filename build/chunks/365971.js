@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Q2: () => i,
-  Xg: () => s,
+  Xg: () => o,
   rw: () => a
 });
 var Chunk735438 = require("./735438.js");
@@ -17,6 +17,6 @@ function a(e) {
   return e.__DISCORD_WINDOW_ID = t, t
 }
 
-function s() {
+function o() {
   return i(window)
 }

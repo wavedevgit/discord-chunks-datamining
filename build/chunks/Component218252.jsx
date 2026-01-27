@@ -61,12 +61,12 @@ let E = 2.1,
   y = e => {
     let {
       handleLearnMore: t
-    } = e, n = m(e, ["handleLearnMore"]), _ = (0, i.bG)([a.A], () => a.A.getGuildId()), g = (0, o.Iu)({
+    } = e, n = m(e, ["handleLearnMore"]), _ = (0, i.bG)([a.A], () => a.A.getGuildId()), g = (0, s.Iu)({
       guildId: _,
       onClick: () => {
         window.open(l.A.getArticleURL(u.MVz.NITRO_FAQ), "_blank")
       }
-    }), y = (0, s.TM)() ? f.A : p.A;
+    }), y = (0, o.TM)() ? f.A : p.A;
     return (0, r.jsx)(c.A, h({
       gradientColor: "nitro-pink",
       title: d.intl.string(d.t["9C+41g"]),

@@ -12,8 +12,8 @@ function i(e) {
     file: n,
     uploadType: i,
     guildId: a,
-    analyticsSource: s,
-    isTryItOut: o = false
+    analyticsSource: o,
+    isTryItOut: s = false
   } = e;
   r.h.dispatch({
     type: "PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL",
@@ -21,7 +21,7 @@ function i(e) {
     file: n,
     uploadType: i,
     guildId: a,
-    analyticsSource: s,
-    isTryItOut: o
+    analyticsSource: o,
+    isTryItOut: s
   })
 }

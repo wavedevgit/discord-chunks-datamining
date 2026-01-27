@@ -1,34 +1,31 @@
-/** Chunk was on web.js **/
-/** chunk id: 40333, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 40333, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => s
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
   a = require.n(Chunk735438),
   Chunk998304 = require("./998304.js");
-let o = 500,
-  l = 100;
 
-function c(e) {
-  let [t, n] = (0, r.useState)(e), [i, c] = (0, r.useState)(e), [u, d] = (0, r.useState)(e), f = (0, r.useRef)(u), p = (0, r.useRef)(null);
+function s(e) {
+  let [t, n] = (0, r.useState)(e), [l, s] = (0, r.useState)(e), [o, c] = (0, r.useState)(e), u = (0, r.useRef)(o), d = (0, r.useRef)(null);
   return (0, r.useEffect)(() => {
-    c(e), n(f.current)
+    s(e), n(u.current)
   }, [e]), (0, r.useEffect)(() => {
-    if (null != p.current && cancelAnimationFrame(p.current), t === i) {
-      p.current = null;
+    if (null != d.current && cancelAnimationFrame(d.current), t === l) {
+      d.current = null;
       return
     }
     let e = Date.now(),
       n = a().throttle(() => {
-        let r = Math.min((Date.now() - e) / o, 1),
-          a = (0, s.De)(t, i, r);
-        d(a), f.current = a, r < 1 && (p.current = requestAnimationFrame(n))
-      }, l);
-    return p.current = requestAnimationFrame(n), () => {
+        let r = Math.min((Date.now() - e) / 500, 1),
+          a = (0, i.De)(t, l, r);
+        c(a), u.current = a, r < 1 && (d.current = requestAnimationFrame(n))
+      }, 100);
+    return d.current = requestAnimationFrame(n), () => {
       var e;
-      cancelAnimationFrame(null != (e = p.current) ? e : 0), n.cancel()
+      cancelAnimationFrame(null != (e = d.current) ? e : 0), n.cancel()
     }
-  }, [t, i]), u
+  }, [t, l]), o
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk73153 = require("./73153.js"),
@@ -143,8 +143,8 @@ class w extends Chunk64700.PureComponent {
       resultQuery: n,
       query: i,
       favorites: a,
-      searchOffset: s,
-      searchLimit: o,
+      searchOffset: o,
+      searchLimit: s,
       searchTotalResults: l,
       suggestions: c,
       hideFavorites: u
@@ -162,8 +162,8 @@ class w extends Chunk64700.PureComponent {
       resultType: d,
       resultQuery: n,
       query: i,
-      searchOffset: s,
-      searchLimit: o,
+      searchOffset: o,
+      searchLimit: s,
       searchTotalResults: l,
       suggestions: c,
       onSelectSuggestion: this.handleSelectSuggestion,
@@ -179,11 +179,11 @@ class w extends Chunk64700.PureComponent {
       id: b.ni,
       role: "tabpanel",
       "aria-labelledby": b.g9,
-      className: s()(A.kL, e),
+      className: o()(A.kL, e),
       onClick: N,
       ref: t,
       children: [(0, r.jsx)("div", {
-        className: s()(A.wx, this.props.headerClassName),
+        className: o()(A.wx, this.props.headerClassName),
         children: this.renderHeader()
       }), (0, r.jsx)("div", {
         className: A.Qs,
@@ -242,9 +242,9 @@ let R = Chunk64700.forwardRef((e, t) => {
   let {
     query: n,
     resultQuery: a,
-    resultItems: s,
+    resultItems: o,
     suggestions: l
-  } = (0, o.cf)([p.A], () => ({
+  } = (0, s.cf)([p.A], () => ({
     query: p.A.getQuery(),
     resultQuery: p.A.getResultQuery(),
     resultItems: p.A.getResultItems(),
@@ -254,7 +254,7 @@ let R = Chunk64700.forwardRef((e, t) => {
     forwardedRef: t,
     query: u,
     resultQuery: a,
-    resultItems: s,
+    resultItems: o,
     suggestions: l,
     favorites: d,
     searchOffset: 0,

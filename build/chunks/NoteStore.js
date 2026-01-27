@@ -15,24 +15,24 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = "Note";
-class o extends Chunk23974.f {
+let o = "Note";
+class s extends Chunk23974.f {
   getNote(e) {
     return this.get(e)
   }
 }
-a(o, "displayName", "NoteStore");
-let l = new o({
+a(s, "displayName", "NoteStore");
+let l = new s({
   CONNECTION_OPEN: (e, t) => t.reset(),
   OVERLAY_INITIALIZE: (e, t) => t.reset(),
   USER_NOTE_UPDATE: (e, t) => {
-    t.set(e.id, (0, r.yE)(s, {
+    t.set(e.id, (0, r.yE)(o, {
       loading: false,
       note: e.note
     }))
   },
   USER_NOTE_LOAD_START: (e, t) => {
-    t.set(e.userId, (0, r.yE)(s, {
+    t.set(e.userId, (0, r.yE)(o, {
       loading: true,
       note: null
     }))

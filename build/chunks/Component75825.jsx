@@ -19,7 +19,7 @@ function u(e) {
     shouldAnimate: u = true,
     defaultAnimationState: d,
     idleAnimationState: f
-  } = e, p = (0, a.bG)([o.A], () => o.A.useReducedMotion), [_, h] = i.useState(d), m = i.useRef((0, l.z)(t, _)), [g, E] = i.useState(null == f), [y, b] = i.useState(false), [O, v] = i.useState(false), A = () => {
+  } = e, p = (0, a.bG)([s.A], () => s.A.useReducedMotion), [_, h] = i.useState(d), m = i.useRef((0, l.z)(t, _)), [g, E] = i.useState(null == f), [y, b] = i.useState(false), [O, v] = i.useState(false), A = () => {
     m.current = (0, l.z)(t, _), v(e => e + 1)
   }, I = () => {
     E(false), b(true), v(false), h(d)
@@ -62,7 +62,7 @@ function u(e) {
     null != f && (h(f), E(true))
   };
   if (!c.o2.hasOwnProperty(t)) throw Error("Unexpected giftStyle ".concat(t));
-  return (0, r.jsx)(s.akl, {
+  return (0, r.jsx)(o.akl, {
     importData: m.current,
     shouldAnimate: !p && u,
     className: n,

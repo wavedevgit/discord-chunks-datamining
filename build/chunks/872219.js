@@ -47,7 +47,7 @@ function E(e, t, n) {
   r.V4.set(t, T);
   let {
     gridProps: C
-  } = (0, o.E)({
+  } = (0, s.E)({
     ...e,
     id: T,
     keyboardDelegate: S
@@ -64,7 +64,7 @@ function E(e, t, n) {
     }) : true
   }, [w, N, t.collection.columns]), D = (0, c.I)(P);
   return (0, u.w)(() => {
-    P && (0, s.iP)(P, "assertive", 500)
+    P && (0, o.iP)(P, "assertive", 500)
   }, [P]), {
     gridProps: (0, d.v)(C, D, {
       "aria-describedby": [D["aria-describedby"], C["aria-describedby"]].filter(Boolean).join(" ")

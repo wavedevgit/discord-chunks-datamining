@@ -83,7 +83,7 @@ function A(e) {
   var t;
   let n = u.default.getCurrentUser();
   if (null == n) returnfalse;
-  let r = null != e ? e : (0, d.Hk)(null == (t = o.A.settings.voiceAndVideo) ? true : t.videoBackgroundFilterDesktop, n.id);
+  let r = null != e ? e : (0, d.Hk)(null == (t = s.A.settings.voiceAndVideo) ? true : t.videoBackgroundFilterDesktop, n.id);
   return null != c.A.getVoiceChannelId() && l.A.isVideoEnabled() && null != r
 }
 
@@ -110,7 +110,7 @@ function C() {
 }
 class N extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.A, c.A, o.A, u.default), this.syncWith([c.A, l.A], T)
+    this.waitFor(l.A, c.A, s.A, u.default), this.syncWith([c.A, l.A], T)
   }
   get videoFilterAssets() {
     return y

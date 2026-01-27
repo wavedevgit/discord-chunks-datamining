@@ -82,9 +82,9 @@ let m = e => {
       asset: n,
       className: i
     } = e, a = _(e, ["application", "asset", "className"]);
-    return (0, r.jsx)(o.A, d({
+    return (0, r.jsx)(s.A, d({
       application: t,
-      size: o.V.MEDIUM,
+      size: s.V.MEDIUM,
       asset: n,
       className: i
     }, a))
@@ -94,12 +94,12 @@ let m = e => {
       children: t,
       className: n,
       id: i
-    } = e, o = _(e, ["children", "className", "id"]);
-    return (0, r.jsx)(s.Heading, p(d({
+    } = e, s = _(e, ["children", "className", "id"]);
+    return (0, r.jsx)(o.Heading, p(d({
       className: a()(c.wx, n),
       variant: "heading-xl/extrabold",
       id: i
-    }, o), {
+    }, s), {
       children: t
     }))
   };
@@ -118,11 +118,11 @@ let y = e => {
     return (0, r.jsxs)("div", p(d({
       className: t
     }, a), {
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/bold",
         color: "text-strong",
         children: n
-      }), (0, r.jsx)(s.Heading, {
+      }), (0, r.jsx)(o.Heading, {
         variant: "heading-sm/normal",
         color: "text-default",
         children: i
@@ -134,11 +134,11 @@ let y = e => {
       applicationId: t,
       storeListingBenefits: n,
       skuBenefits: i,
-      className: s
-    } = e, o = _(e, ["applicationId", "storeListingBenefits", "skuBenefits", "className"]);
+      className: o
+    } = e, s = _(e, ["applicationId", "storeListingBenefits", "skuBenefits", "className"]);
     return (0, r.jsx)("div", p(d({
-      className: a()(c.iq, s)
-    }, o), {
+      className: a()(c.iq, o)
+    }, s), {
       children: (0, r.jsx)(l.mc, {
         applicationId: t,
         storeListingBenefits: n,

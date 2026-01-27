@@ -5,12 +5,12 @@ require.d(exports, {
   VN: () => D,
   fy: () => w,
   nJ: () => R,
-  sk: () => x
+  sk: () => L
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk837381 = require("./837381.jsx"),
   Chunk884362 = require("./884362.js"),
   Chunk317097 = require("./317097.js"),
@@ -103,7 +103,7 @@ function N(e) {
     gradientStart: b,
     gradientEnd: v,
     gradientDegrees: A = 180
-  } = e, I = (0, o.rm)("color-".concat(t)), S = {};
+  } = e, I = (0, s.rm)("color-".concat(t)), S = {};
   if (m && null != b && null != v) {
     let e = (0, c.Hl)(b),
       t = (0, c.Hl)(v);
@@ -130,7 +130,7 @@ function N(e) {
     offset: false,
     children: (0, r.jsxs)("button", O(y({
       type: "button",
-      className: s()(g.iH, {
+      className: o()(g.iH, {
         [g.r9]: l,
         [g.Ay]: n,
         [g.Ie]: i,
@@ -197,7 +197,7 @@ function P(e) {
     value: t,
     eagerUpdate: n = false,
     onChange: a,
-    onClose: o,
+    onClose: s,
     suggestedColors: l,
     middle: d,
     footer: h,
@@ -224,8 +224,8 @@ function P(e) {
       },
       input: e
     })
-  }, [T, P]), i.useEffect(() => o, [o]);
-  let x = e => {
+  }, [T, P]), i.useEffect(() => s, [s]);
+  let L = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.qt)(t)) return void D(e => O(y({}, e), {
         input: t
@@ -241,41 +241,41 @@ function P(e) {
         input: t
       }), a(n)
     },
-    L = async () => {
+    x = async () => {
       if (null != A) try {
         let {
           sRGBHex: e
         } = await A.open();
-        x(e)
+        L(e)
       } catch (e) {}
-    }, j = i.useCallback(e => {
+    }, M = i.useCallback(e => {
       D(t => O(y({}, t), {
         pending: e,
         input: e.hex
       })), n && a((0, c.LX)(e.hex))
-    }, [n, a]), M = e => {
+    }, [n, a]), j = e => {
       a((0, c.LX)(e))
     }, k = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
         children: (0, r.jsx)(I, {
-          onChange: j,
+          onChange: M,
           onChangeComplete: e => {
             let {
               hex: t
             } = e;
-            return M(t)
+            return j(t)
           },
           color: P.pending.hsl
         })
       }), d, (0, r.jsx)(p.ksK, {
         value: P.input.slice(1),
-        onChange: x,
+        onChange: L,
         maxLength: S - 1,
         leading: "#",
         trailing: E && null != A ? {
           icon: p.dDg,
-          onClick: L,
+          onClick: x,
           "aria-label": m.intl.string(m.t["0dU9Ny"])
         } : true
       }), null != l && l.length > 0 && (0, r.jsx)("div", {
@@ -286,19 +286,19 @@ function P(e) {
             backgroundColor: e
           },
           className: g.db,
-          onClick: () => x(e)
+          onClick: () => L(e)
         }, "".concat(e, "-").concat(t)))
       }), h]
     }), U = null != b ? b : f.l;
   return (0, r.jsx)(U, {
     "aria-label": m.intl.string(m.t.WTqQ5e),
-    className: s()(g.zi, v),
+    className: o()(g.zi, v),
     children: k
   })
 }
 let D = Chunk64700.memo(P);
 
-function x(e) {
+function L(e) {
   let {
     className: t,
     defaultColor: n,
@@ -340,22 +340,22 @@ function x(e) {
     scrollToStart: T,
     scrollToEnd: T
   });
-  return (0, r.jsx)(o.hD, {
+  return (0, r.jsx)(s.hD, {
     navigator: w,
-    children: (0, r.jsx)(o.PR, {
+    children: (0, r.jsx)(s.PR, {
       children: e => {
         let {
-          ref: o
+          ref: s
         } = e, l = v(e, ["ref"]);
         return (0, r.jsxs)("div", O(y({
-          className: s()(g.kL, t, {
+          className: o()(g.kL, t, {
             [g.D7]: m
           }),
-          ref: o
+          ref: s
         }, l), {
           children: [!m && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
-              className: s()(g.$R, h),
+              className: o()(g.$R, h),
               children: p({
                 value: c,
                 color: n,
@@ -364,7 +364,7 @@ function x(e) {
                 allowBlackCustomColor: A
               })
             }), (0, r.jsx)("div", {
-              className: s()(g.BQ, h),
+              className: o()(g.BQ, h),
               children: _({
                 value: c,
                 customColor: i,

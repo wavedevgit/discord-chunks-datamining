@@ -14,7 +14,7 @@ function i(e) {
   if (!t) return e;
   let n = t[1],
     r = a(e),
-    i = s(e).filter(e => false === r.indexOf(e));
+    i = o(e).filter(e => false === r.indexOf(e));
   return 0 === i.length ? e : c(e, n, l(i))
 }
 
@@ -25,7 +25,7 @@ function a(e) {
   return n
 }
 
-function s(e) {
+function o(e) {
   let t, n = [],
     r = /\b([A-Za-z_][A-Za-z0-9._-]*):[A-Za-z_][A-Za-z0-9._-]*\b/g;
   for (; null !== (t = r.exec(e));) {
@@ -38,7 +38,7 @@ require.d(exports, {
   E: () => i,
   g: () => r
 });
-let o = {
+let s = {
   xmp: "http://ns.adobe.com/xap/1.0/",
   tiff: "http://ns.adobe.com/tiff/1.0/",
   exif: "http://ns.adobe.com/exif/1.0/",
@@ -53,7 +53,7 @@ function l(e) {
   let t = [];
   for (let n = 0; n < e.length; n++) {
     let r = e[n],
-      i = o[r] || "http://fallback.namespace/" + r;
+      i = s[r] || "http://fallback.namespace/" + r;
     t.push(" xmlns:" + r + '="' + i + '"')
   }
   return t.join("")

@@ -29,13 +29,13 @@ module.exports = function(e) {
       end: /$/,
       contains: [e.PHRASAL_WORDS_MODE]
     },
-    s = {
+    o = {
       className: "string",
       begin: /`/,
       end: /`/,
       contains: [e.BACKSLASH_ESCAPE]
     },
-    o = {
+    s = {
       className: "string",
       begin: /0'(\\'|.)/
     },
@@ -45,7 +45,7 @@ module.exports = function(e) {
     },
     c = [t, n, r, {
       begin: /:-/
-    }, i, a, e.C_BLOCK_COMMENT_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, s, o, l, e.C_NUMBER_MODE];
+    }, i, a, e.C_BLOCK_COMMENT_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, o, s, l, e.C_NUMBER_MODE];
   return r.contains = c, i.contains = c, {
     name: "Prolog",
     contains: c.concat([{

@@ -33,17 +33,17 @@ function p(e) {
   let {
     className: t,
     style: n,
-    shape: i = o.EGs.ROUND,
+    shape: i = s.EGs.ROUND,
     look: u = "RED",
     size: p = d.LARGE
   } = e;
-  return "RED" === u ? (0, r.jsx)(o.LpS, {
+  return "RED" === u ? (0, r.jsx)(s.LpS, {
     text: l.intl.string(l.t.dI3q4h),
     className: a()(t, c.VD, p),
-    color: s.A.unsafe_rawColors.RED_400.css,
+    color: o.A.unsafe_rawColors.RED_400.css,
     shape: f[i],
     style: n
-  }) : (0, r.jsx)(o.LpS, {
+  }) : (0, r.jsx)(s.LpS, {
     text: l.intl.string(l.t.dI3q4h),
     className: a()(t, c.VD, p, c.Oh),
     disableColor: true,

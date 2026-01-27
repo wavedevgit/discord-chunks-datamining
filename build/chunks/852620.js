@@ -1,5 +1,6 @@
-/** Chunk was on 67564 **/
+/** Chunk was on 92750 **/
 /** chunk id: 852620, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   iE: "wrapper_f563df",
   x6: "button_f563df",

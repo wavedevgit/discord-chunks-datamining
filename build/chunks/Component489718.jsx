@@ -78,14 +78,14 @@ function R(e, t, n) {
     fill: "none",
     children: (0, r.jsxs)("g", {
       transform: "translate(4 4)",
-      children: [(0, r.jsx)(o.animated.path, {
+      children: [(0, r.jsx)(s.animated.path, {
         fill: i,
         d: e.to({
           range: C,
           output: [b, v, v, I],
           extrapolate: "clamp"
         })
-      }), (0, r.jsx)(o.animated.path, {
+      }), (0, r.jsx)(s.animated.path, {
         fill: i,
         d: e.to({
           range: C,
@@ -110,25 +110,25 @@ function P(e) {
     innerRef: I
   } = e, {
     reducedMotion: S
-  } = i.useContext(f.C), P = i.useRef(null), D = i.useRef(null), x = null != I ? I : D, L = (0, l.H)({
+  } = i.useContext(f.C), P = i.useRef(null), D = i.useRef(null), L = null != I ? I : D, x = (0, l.H)({
     isSelected: t,
     onChange: E,
     isDisabled: n
   }), {
-    inputProps: j,
-    labelProps: M,
+    inputProps: M,
+    labelProps: j,
     isPressed: k
   } = (0, a.K)({
     id: m,
     isDisabled: n,
     "aria-describedby": v,
     "aria-labelledby": A
-  }, L, x), {
+  }, x, L), {
     hoverProps: U,
     isHovered: G
-  } = (0, s.M)({
+  } = (0, o.M)({
     isDisabled: n
-  }), V = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_DEFAULT).spring(), B = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_SELECTED_DEFAULT).spring(), H = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_ACTIVE).spring(), Y = (0, d.r)(c.A.colors.SWITCH_BORDER_DEFAULT).spring(), W = (0, d.r)(c.A.colors.SWITCH_BORDER_SELECTED_DEFAULT).spring(), K = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_HOVER).spring(), z = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_SELECTED_HOVER).spring(), q = (0, d.r)(c.A.colors.SWITCH_BORDER_HOVER).spring(), Z = (0, d.r)(c.A.colors.SWITCH_BORDER_SELECTED_HOVER).spring(), X = (0, d.r)(c.A.colors.SWITCH_THUMB_ICON_DEFAULT).spring(), Q = (0, d.r)(c.A.colors.SWITCH_THUMB_ICON_ACTIVE).spring(), J = (0, d.r)(c.A.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.r)(c.A.colors.SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT).spring(), {
+  }), F = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_DEFAULT).spring(), V = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_DEFAULT).spring(), B = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_SELECTED_DEFAULT).spring(), H = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_ACTIVE).spring(), Y = (0, d.r)(c.A.colors.SWITCH_BORDER_DEFAULT).spring(), W = (0, d.r)(c.A.colors.SWITCH_BORDER_SELECTED_DEFAULT).spring(), K = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_HOVER).spring(), z = (0, d.r)(c.A.colors.SWITCH_BACKGROUND_SELECTED_HOVER).spring(), q = (0, d.r)(c.A.colors.SWITCH_BORDER_HOVER).spring(), Z = (0, d.r)(c.A.colors.SWITCH_BORDER_SELECTED_HOVER).spring(), Q = (0, d.r)(c.A.colors.SWITCH_THUMB_ICON_DEFAULT).spring(), X = (0, d.r)(c.A.colors.SWITCH_THUMB_ICON_ACTIVE).spring(), J = (0, d.r)(c.A.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.r)(c.A.colors.SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT).spring(), {
     state: ee,
     opacity: et
   } = (0, u.z)({
@@ -149,13 +149,13 @@ function P(e) {
   };
   return (0, r.jsx)(p.vN, y(g({}, b), {
     ringTarget: P,
-    focusTarget: x,
+    focusTarget: L,
     within: true,
     offset: false,
-    children: (0, r.jsxs)("label", y(g({}, M), {
+    children: (0, r.jsxs)("label", y(g({}, j), {
       className: h.kL,
       "data-disabled": n || true,
-      children: [(0, r.jsx)(o.animated.div, y(g({}, U), {
+      children: [(0, r.jsx)(s.animated.div, y(g({}, U), {
         ref: P,
         className: h.cw,
         "data-size": "md",
@@ -164,7 +164,7 @@ function P(e) {
           opacity: et,
           backgroundColor: ee.to({
             range: C,
-            output: [G ? K : V, F, H, G ? z : B],
+            output: [G ? K : F, V, H, G ? z : B],
             extrapolate: "clamp"
           }),
           border: "1px solid",
@@ -174,7 +174,7 @@ function P(e) {
             extrapolate: "clamp"
           })
         },
-        children: (0, r.jsxs)(o.animated.svg, {
+        children: (0, r.jsxs)(s.animated.svg, {
           className: h.FF,
           viewBox: "0 0 24 24",
           preserveAspectRatio: "xMidYMin meet",
@@ -188,7 +188,7 @@ function P(e) {
             })
           },
           "aria-hidden": true,
-          children: [(0, r.jsx)(o.animated.rect, {
+          children: [(0, r.jsx)(s.animated.rect, {
             fill: ee.to({
               range: C,
               output: [J, J, $, $]
@@ -198,11 +198,11 @@ function P(e) {
             width: S.enabled ? 16 : en([16, 16, 19, 22, 19, 16]),
             height: S.enabled ? 16 : en([16, 10, 19, 10, 19, 16]),
             rx: S.enabled ? 8 : en([8, 5, 9.5, 5, 9.5, 8])
-          }), O && R(ee, X, Q)]
+          }), O && R(ee, Q, X)]
         })
       })), (0, r.jsx)(_.A, {
-        children: (0, r.jsx)("input", y(g({}, j), {
-          ref: x
+        children: (0, r.jsx)("input", y(g({}, M), {
+          ref: L
         }))
       })]
     }))

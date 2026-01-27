@@ -21,13 +21,13 @@ var r = Object.assign || function(e) {
     }
   }();
 
-function s(e, t) {
+function o(e, t) {
   var n = {};
   for (var r in e) !(t.indexOf(r) >= 0) && Object.prototype.hasOwnProperty.call(e, r) && (n[r] = e[r]);
   return n
 }
 
-function o(e, t) {
+function s(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
@@ -53,7 +53,7 @@ var Chunk64700 = require("./64700.js"),
 module.exports = function(e) {
   var t = function(t) {
     function n() {
-      return o(this, n), l(this, (n.__proto__ || Object.getPrototypeOf(n)).apply(this, arguments))
+      return s(this, n), l(this, (n.__proto__ || Object.getPrototypeOf(n)).apply(this, arguments))
     }
     return c(n, t), a(n, [{
       key: "componentWillUnmount",
@@ -91,8 +91,8 @@ module.exports = function(e) {
         var t = this,
           n = this._propsAnimated.__getValue(),
           a = n.style,
-          o = s(n, ["style"]);
-        return u.createElement(e, r({}, o, {
+          s = o(n, ["style"]);
+        return u.createElement(e, r({}, s, {
           style: f.transformStyles(a),
           ref: function(e) {
             t.componentRef = e

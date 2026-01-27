@@ -8,16 +8,16 @@ require.d(exports, {
 var Chunk573648 = require("./573648.js"),
   Chunk611010 = require("./611010.js");
 let a = "spotify",
-  s = Chunk573648.A.get(a);
-class o extends Chunk611010.Ay {
+  o = Chunk573648.A.get(a);
+class s extends Chunk611010.Ay {
   getIconURL(e) {
-    return s.icon.lightPNG
+    return o.icon.lightPNG
   }
   getWhiteIconURL() {
-    return s.icon.whitePNG
+    return o.icon.whitePNG
   }
   constructor() {
-    super({}), this.id = a, this.name = s.name
+    super({}), this.id = a, this.name = o.name
   }
 }
-let l = new o
+let l = new s

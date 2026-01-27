@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk617617 = require("./617617.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,7 +19,7 @@ function o(e, t, n) {
 let l = new Set;
 
 function c() {
-  let e = s.A.getGuildFolders();
+  let e = o.A.getGuildFolders();
   if (null == e) returnfalse;
   let t = false;
   for (let n of l) e.some(e => e.folderId === n) || ((l = new Set(l)).delete(n), t = true);
@@ -47,7 +47,7 @@ function f() {
 }
 class p extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (l = new Set(e.expandedFolders)), this.waitFor(s.A)
+    null != e && (l = new Set(e.expandedFolders)), this.waitFor(o.A)
   }
   getState() {
     return {
@@ -61,7 +61,7 @@ class p extends(r = Chunk311907.Ay.PersistedStore) {
     return l.has(e)
   }
 }
-o(p, "displayName", "ExpandedGuildFolderStore"), o(p, "persistKey", "ExpandedGuildFolderStore");
+s(p, "displayName", "ExpandedGuildFolderStore"), s(p, "persistKey", "ExpandedGuildFolderStore");
 let _ = new p(Chunk73153.h, {
   TOGGLE_GUILD_FOLDER_EXPAND: u,
   SET_GUILD_FOLDER_EXPANDED: d,

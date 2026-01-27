@@ -17,14 +17,14 @@ function u() {
     t(true), await (0, a.lo)()
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.A, {}), (0, r.jsx)(l.dZ, {
-      children: (0, r.jsx)(s.$, {
+    children: [(0, r.jsx)(s.A, {}), (0, r.jsx)(l.dZ, {
+      children: (0, r.jsx)(o.$, {
         className: c.r,
         isEmailResent: e,
         resendEmail: n
       })
     }), (0, r.jsx)(l.UX, {
-      children: (0, r.jsx)(s.A, {})
+      children: (0, r.jsx)(o.A, {})
     })]
   })
 }

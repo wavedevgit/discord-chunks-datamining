@@ -32,7 +32,7 @@ function c(e, t, n) {
       ...e,
       isInvalid: u
     }, t, n);
-  (0, s.X)(e, c, n);
+  (0, o.X)(e, c, n);
   let {
     isIndeterminate: y,
     isRequired: b,
@@ -43,7 +43,7 @@ function c(e, t, n) {
   });
   let {
     pressProps: v
-  } = (0, o.d)({
+  } = (0, s.d)({
     isDisabled: g || E,
     onPress() {
       let {

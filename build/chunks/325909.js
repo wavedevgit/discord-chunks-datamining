@@ -23,12 +23,12 @@ function m(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "useCanRing",
     n = arguments.length > 2 ? arguments[2] : true,
     i = (0, r.bG)([c.A], () => c.A.getChannel(n)),
-    a = (0, r.bG)([o.default], () => o.default.getId() === e.id),
-    s = (0, r.bG)([p.A], () => p.A.isFriend(e.id)),
+    a = (0, r.bG)([s.default], () => s.default.getId() === e.id),
+    o = (0, r.bG)([p.A], () => p.A.isFriend(e.id)),
     l = null == i ? true : i.type,
     u = null != l && h.kvI.CALLABLE.has(l),
     d = E(e, t, i) || u;
-  return s && !a && !e.bot && !e.system && !e.isProvisional && d
+  return o && !a && !e.bot && !e.system && !e.isProvisional && d
 }
 
 function g(e) {
@@ -41,10 +41,10 @@ function g(e) {
   if (n) {
     let {
       enabled: t
-    } = s.A.getCurrentConfig({
+    } = o.A.getCurrentConfig({
       guildId: e.guild_id,
       location: "ring"
-    }), n = _.A.getVoiceState(e.guild_id, o.default.getId());
+    }), n = _.A.getVoiceState(e.guild_id, s.default.getId());
     return t && null != n && n.channelId === e.id
   }
   returnfalse
@@ -53,7 +53,7 @@ function g(e) {
 function E(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "useCanRingToGuildVoiceChannel",
     n = arguments.length > 2 ? arguments[2] : true,
-    o = (0, r.bG)([f.A], () => null != n && (0, i.A)(n, f.A)),
+    s = (0, r.bG)([f.A], () => null != n && (0, i.A)(n, f.A)),
     l = (0, r.bG)([u.Ay, d.A], () => {
       let t = null == n ? true : n.guild_id;
       if (null == t) returnfalse;
@@ -66,10 +66,10 @@ function E(e) {
     } = (0, a.A)(null == n ? true : n.id),
     {
       enabled: p
-    } = s.A.useExperiment({
+    } = o.A.useExperiment({
       guildId: null == n ? true : n.guild_id,
       location: t
     }),
     _ = (null == n ? true : n.type) === h.rbe.GUILD_VOICE;
-  return p && _ && l && o && !c
+  return p && _ && l && s && !c
 }

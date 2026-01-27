@@ -15,7 +15,7 @@ let l = !!("u" > typeof window && window.document && window.document.createEleme
   c = new Map;
 
 function u(e) {
-  let [t, n] = (0, s.useState)(e), a = (0, s.useRef)(null), u = (0, o.Cc)(t), d = (0, s.useRef)(null);
+  let [t, n] = (0, o.useState)(e), a = (0, o.useRef)(null), u = (0, s.Cc)(t), d = (0, o.useRef)(null);
   if (r && r.register(d, u), l) {
     let e = c.get(u);
     e && !e.includes(a) ? e.push(a) : c.set(u, [a])
@@ -25,7 +25,7 @@ function u(e) {
     return () => {
       r && r.unregister(d), c.delete(e)
     }
-  }, [u]), (0, s.useEffect)(() => {
+  }, [u]), (0, o.useEffect)(() => {
     let e = a.current;
     return e && n(e), () => {
       e && (a.current = null)
@@ -44,12 +44,12 @@ function d(e, t) {
 function f(e = []) {
   let t = u(),
     [n, r] = (0, a.y)(t),
-    o = (0, s.useCallback)(() => {
+    s = (0, o.useCallback)(() => {
       r(function*() {
         yield t, yield document.getElementById(t) ? t : true
       })
     }, [t, r]);
-  return (0, i.N)(o, [t, o, ...e]), n
+  return (0, i.N)(s, [t, s, ...e]), n
 }
 "u" > typeof FinalizationRegistry && (r = new FinalizationRegistry(e => {
   c.delete(e)

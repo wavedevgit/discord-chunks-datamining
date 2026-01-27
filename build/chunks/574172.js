@@ -4,7 +4,7 @@
 require.r(exports), require.d(exports, {
   addStylesheet: () => f,
   close: () => u,
-  open: () => o,
+  open: () => s,
   openCallTilePopout: () => c,
   openChannelCallPopout: () => l,
   setAlwaysOnTop: () => d
@@ -32,18 +32,18 @@ function a(e) {
   }
   return e
 }
-let s = {
+let o = {
   menubar: false,
   toolbar: false,
   location: false,
   directories: false
 };
 
-function o(e, t, n) {
+function s(e, t, n) {
   return r.h.dispatch({
     type: "POPOUT_WINDOW_OPEN",
     key: e,
-    features: a({}, s, n),
+    features: a({}, o, n),
     render: t
   })
 }

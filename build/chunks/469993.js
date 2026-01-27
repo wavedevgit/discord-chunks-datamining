@@ -7,7 +7,7 @@ require.d(exports, {
   Li: () => p,
   ME: () => d,
   Sm: () => f,
-  Z1: () => s,
+  Z1: () => o,
   Zy: () => m,
   oS: () => a
 });
@@ -25,7 +25,7 @@ function a() {
   return e
 }
 
-function s() {
+function o() {
   let {
     isUserEligibleForCreatorMonetization: e
   } = r.i$.getCurrentConfig({
@@ -36,7 +36,7 @@ function s() {
   return e
 }
 
-function o(e) {
+function s(e) {
   return null != e
 }
 
@@ -53,7 +53,7 @@ function u(e) {
 }
 
 function d(e) {
-  let t = o(null == e ? true : e.id),
+  let t = s(null == e ? true : e.id),
     n = c(e);
   return t || n
 }

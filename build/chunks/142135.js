@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +29,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -41,26 +41,26 @@ function o(e, t) {
 }
 
 function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let c = [e => {
-    let t = l(s({}, e), {
+    let t = l(o({}, e), {
       version: 1,
       applicationName: e.gameName,
       applicationId: true
     });
     return delete t.gameName, t
-  }, e => l(s({}, e), {
+  }, e => l(o({}, e), {
     version: 2,
     name: e.name.startsWith("Clip - ") ? true : e.name
-  }), e => l(s({}, e), {
+  }), e => l(o({}, e), {
     version: 3,
     name: "" === e.name ? true : e.name
   }), e => {
     let t = e.filepath.endsWith(".jpeg") || e.filepath.endsWith(".jpg");
-    return l(s({}, e), {
+    return l(o({}, e), {
       version: 4,
       timeline: [],
       type: t ? r.nQ.SCREENSHOT : r.nQ.CLIP

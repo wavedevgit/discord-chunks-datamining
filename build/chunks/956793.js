@@ -23,8 +23,8 @@ let _ = {
       channelId: n,
       messageId: i,
       jumpType: a,
-      preserveDrawerState: s,
-      source: o,
+      preserveDrawerState: o,
+      source: s,
       isInitialSetup: l
     } = e;
     r.h.dispatch({
@@ -33,8 +33,8 @@ let _ = {
       channelId: n,
       messageId: i,
       jumpType: a,
-      preserveDrawerState: s,
-      source: o,
+      preserveDrawerState: o,
+      source: s,
       isInitialSetup: l
     })
   },
@@ -46,11 +46,11 @@ let _ = {
       n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
       a = u.A.getChannel(e),
-      s = null == a ? true : a.getGuildId();
-    (null == a ? true : a.isGuildVocalOrThread()) && (0, i.qR)(a) ? (0, l.pX)(p.BVt.CHANNEL(s, e)) : d.A.isSupported() && (null != e && d.A.getMediaEngine().interact(), (0, f.x)(e, s, t, n, r))
+      o = null == a ? true : a.getGuildId();
+    (null == a ? true : a.isGuildVocalOrThread()) && (0, i.qR)(a) ? (0, l.pX)(p.BVt.CHANNEL(o, e)) : d.A.isSupported() && (null != e && d.A.getMediaEngine().interact(), (0, f.x)(e, o, t, n, r))
   },
   disconnect() {
-    let e = s.default.getRemoteSessionId();
-    null != e && a.Fc(e), (0, c.AA)() ? this.selectVoiceChannel(null) : (this.selectVoiceChannel(null), o.close(p.MLl.CHANNEL_CALL_POPOUT))
+    let e = o.default.getRemoteSessionId();
+    null != e && a.Fc(e), (0, c.AA)() ? this.selectVoiceChannel(null) : (this.selectVoiceChannel(null), s.close(p.MLl.CHANNEL_CALL_POPOUT))
   }
 }

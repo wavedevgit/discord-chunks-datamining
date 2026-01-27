@@ -1,9 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 671773, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 7803 **/
+/** chunk id: 671773, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
-  e: () => a
+  e: () => n
 });
 var Chunk661191 = require("./661191.js");
-let i = 864e5,
-  a = e => Math.abs(r.default.extractTimestamp(e.id) - new Date().getTime()) < i
+let n = t => 864e5 > Math.abs(i.default.extractTimestamp(t.id) - new Date().getTime())

@@ -25,7 +25,7 @@ function l(e, t) {
     fieldProps: h,
     descriptionProps: m,
     errorMessageProps: g
-  } = (0, s.M)({
+  } = (0, o.M)({
     ...e,
     labelElementType: "span",
     isInvalid: d,
@@ -43,7 +43,7 @@ function l(e, t) {
     }),
     {
       focusWithinProps: y
-    } = (0, o.R)({
+    } = (0, s.R)({
       onBlurWithin: e.onBlur,
       onFocusWithin: e.onFocus,
       onFocusWithinChange: e.onFocusChange

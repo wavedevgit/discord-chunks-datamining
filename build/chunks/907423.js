@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 907423, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 52139 **/
+/** chunk id: 907423, original params: e,t,n (module,exports,require) **/
 module.exports = {
   EO: "oneByOneGrid_f4758a",
   Gj: "oneByOneGridSingle_f4758a",

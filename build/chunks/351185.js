@@ -2,7 +2,7 @@
 /** chunk id: 351185, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => x,
+  Ay: () => L,
   yg: () => D
 }), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js"), require("./896048.js"), require("./457529.js"), require("./938796.js");
 var Chunk284009 = require("./284009.js"),
@@ -122,16 +122,16 @@ function P(e) {
 var D = function(e) {
   return e.Connecting = "connecting", e.Connect = "connect", e.Disconnect = "disconnect", e.Resuming = "resuming", e.Ready = "ready", e.Speaking = "speaking", e.Video = "video", e.Ping = "ping", e.ClientConnect = "client-connect", e.ClientDisconnect = "client-disconnect", e.Codecs = "codecs", e.MediaSessionId = "media-session-id", e.MediaSinkWants = "media-sink-wants", e.VoiceBackendVersion = "voice-backend-version", e.KeyframeInterval = "keyframe-interval", e.ChannelOptionsUpdateSecureFramesProtocol = "update-secure-frames-protocol", e.Flags = "flags", e.Platform = "platform", e.SDP = "sdp", e.Encryption = "encryption", e.BandwidthEstimationExperiment = "bandwidth-estimation-experiment", e.SecureFramesInit = "secure-frames-init", e.SecureFramesPrepareTransition = "secure-frames-prepare-transition", e.SecureFramesExecuteTransition = "secure-frames-execute-transition", e.SecureFramesPrepareEpoch = "secure-frames-prepare-epoch", e.MLSExternalSenderPackage = "mls-external-sender-package", e.MLSProposals = "mls-proposals", e.MLSPrepareCommitTransition = "mls-prepare-commit-transition", e.MLSWelcome = "mls-welcome", e.ReceiveMessage = "receive-message", e.SendMessage = "send-message", e
 }({});
-class x extends Chunk972347.A {
+class L extends Chunk972347.A {
   createWebSocket() {
-    this.logger.info("[CONNECT] ".concat(this.url)), null !== this.webSocket && (this.logger.error("Connect called with already existing websocket"), this.cleanupWebSocket(e => e.close(4e3))), this.connectionStartTime = (0, o.tB)(), this.helloTimeout = setTimeout(() => {
-      let e = (0, o.tB)() - this.connectionStartTime;
+    this.logger.info("[CONNECT] ".concat(this.url)), null !== this.webSocket && (this.logger.error("Connect called with already existing websocket"), this.cleanupWebSocket(e => e.close(4e3))), this.connectionStartTime = (0, s.tB)(), this.helloTimeout = setTimeout(() => {
+      let e = (0, s.tB)() - this.connectionStartTime;
       this.handleClose(false, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time."))
     }, b);
     let e = this.webSocket = new WebSocket("".concat(this.url, "?v=").concat(E));
     e.binaryType = "arraybuffer", e.onopen = () => {
       1 === this.connectionState ? this.emit("connect") : 5 === this.connectionState && this.doResumeOrClose(), this.connectionState = 4;
-      let e = (0, o.tB)() - this.connectionStartTime;
+      let e = (0, s.tB)() - this.connectionStartTime;
       this.logger.info("[CONNECTED] ".concat(this.url, " in ").concat(e, " ms")), this.emit("ping", Math.round(e / 2))
     }, e.onmessage = e => {
       let {
@@ -256,7 +256,7 @@ class x extends Chunk972347.A {
     this.sendHeartbeat()
   }
   doResumeOrClose() {
-    let e = (0, o.tB)();
+    let e = (0, s.tB)();
     null !== this.serverId && null !== this.channelId && null !== this.token && null !== this.sessionId && this.resumable && (null == this.lastHeartbeatAckTime || e - this.lastHeartbeatAckTime <= v) ? (this.doResume(), this.lastHeartbeatAckTime = e) : this.disconnect(false, 4801, "Cannot resume connection.")
   }
   doResume() {
@@ -276,12 +276,12 @@ class x extends Chunk972347.A {
       let t = d.isPlatformEmbedded ? A : I;
       this.heartbeatInterval = e.heartbeat_interval * t
     } else this.heartbeatInterval = e.heartbeat_interval * this.heartbeatIntervalModifier, d.isPlatformEmbedded || (this.heartbeatInterval = Math.min(S, null != (r = this.heartbeatInterval) ? r : NaN));
-    let i = (0, o.tB)() - this.connectionStartTime;
+    let i = (0, s.tB)() - this.connectionStartTime;
     this.logger.info("[HELLO] heartbeat interval: ".concat(null != (n = this.heartbeatInterval) ? n : "??", ", version: ").concat(this.serverVersion, ", took ").concat(i, " ms")), this.startHeartbeater()
   }
   handleReady(e) {
     this.backoff.succeed();
-    let t = (0, o.tB)() - this.connectionStartTime;
+    let t = (0, s.tB)() - this.connectionStartTime;
     this.logger.info("[READY] took ".concat(t, " ms")), this.serverVersion >= 6 && this.send(16, {}), this.emit("ready", e.ip, e.port, e.modes, e.ssrc, P(e.streams), e.experiments)
   }
   handleResumed(e) {
@@ -330,7 +330,7 @@ class x extends Chunk972347.A {
   handleHeartbeatAck(e) {
     this.logger.info("Heartbeat ACK received");
     let t = null;
-    t = this.serverVersion >= C ? e.t : e, this.emit("ping", (0, o.tB)() - t), this.lastHeartbeatAckTime = (0, o.tB)(), this.heartbeatAck = true, null !== this.expeditedHeartbeatTimeout && (clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = null, this.logger.info("Expedited heartbeat succeeded"))
+    t = this.serverVersion >= C ? e.t : e, this.emit("ping", (0, s.tB)() - t), this.lastHeartbeatAckTime = (0, s.tB)(), this.heartbeatAck = true, null !== this.expeditedHeartbeatTimeout && (clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = null, this.logger.info("Expedited heartbeat succeeded"))
   }
   handleHeartbeatTimeout() {
     this.cleanupWebSocket(e => e.close(4e3));
@@ -347,10 +347,10 @@ class x extends Chunk972347.A {
       var e;
       let t = null != (e = this.lastRecvSeqNum) ? e : false;
       this.logger.info("Sending heartbeat with last received sequence number: ".concat(t)), this.send(3, {
-        t: (0, o.tB)(),
+        t: (0, s.tB)(),
         seq_ack: t
       })
-    } else this.logger.info("Sending heartbeat"), this.send(3, (0, o.tB)())
+    } else this.logger.info("Sending heartbeat"), this.send(3, (0, s.tB)())
   }
   stopHeartbeater() {
     null !== this.heartbeater && (clearInterval(this.heartbeater), this.heartbeater = null), null !== this.expeditedHeartbeatTimeout && (clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = null)
@@ -365,8 +365,8 @@ class x extends Chunk972347.A {
       userId: r,
       sessionId: i,
       token: a,
-      maxDaveProtocolVersion: s,
-      video: o = false,
+      maxDaveProtocolVersion: o,
+      video: s = false,
       streamParameters: l
     } = e;
     this.serverId = t, this.channelId = n, this.sessionId = i, this.token = a, this.connectionState = 2, this.send(0, {
@@ -375,8 +375,8 @@ class x extends Chunk972347.A {
       user_id: r,
       session_id: i,
       token: a,
-      max_dave_protocol_version: s,
-      video: o,
+      max_dave_protocol_version: o,
+      video: s,
       streams: w(l)
     })
   }

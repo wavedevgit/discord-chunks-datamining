@@ -1,50 +1,49 @@
-/** Chunk was on web.js **/
-/** chunk id: 187282, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 54809 **/
+/** chunk id: 187282, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  w: () => s
+  w: () => o
 });
 var Chunk294946 = require("./294946.js"),
   Chunk15020 = require("./15020.js");
-class a extends Chunk15020.Vw {
-  constructor(e, t) {
-    super(), this.finished = false, this.destroyed = false, (0, r.tW)(e);
-    const n = (0, i.ZJ)(t);
-    if (this.iHash = e.create(), "function" != typeof this.iHash.update) throw Error("Expected instance of class which extends utils.Hash");
+class n extends Chunk15020.Vw {
+  constructor(t, e) {
+    super(), this.finished = false, this.destroyed = false, (0, s.tW)(t);
+    const r = (0, i.ZJ)(e);
+    if (this.iHash = t.create(), "function" != typeof this.iHash.update) throw Error("Expected instance of class which extends utils.Hash");
     this.blockLen = this.iHash.blockLen, this.outputLen = this.iHash.outputLen;
-    const a = this.blockLen,
-      s = new Uint8Array(a);
-    s.set(n.length > a ? e.create().update(n).digest() : n);
-    for (let e = 0; e < s.length; e++) s[e] ^= 54;
-    this.iHash.update(s), this.oHash = e.create();
-    for (let e = 0; e < s.length; e++) s[e] ^= 106;
-    this.oHash.update(s), s.fill(0)
+    const n = this.blockLen,
+      o = new Uint8Array(n);
+    o.set(r.length > n ? t.create().update(r).digest() : r);
+    for (let t = 0; t < o.length; t++) o[t] ^= 54;
+    this.iHash.update(o), this.oHash = t.create();
+    for (let t = 0; t < o.length; t++) o[t] ^= 106;
+    this.oHash.update(o), o.fill(0)
   }
-  update(e) {
-    return (0, r.t2)(this), this.iHash.update(e), this
+  update(t) {
+    return (0, s.t2)(this), this.iHash.update(t), this
   }
-  digestInto(e) {
-    (0, r.t2)(this), (0, r.ee)(e, this.outputLen), this.finished = true, this.iHash.digestInto(e), this.oHash.update(e), this.oHash.digestInto(e), this.destroy()
+  digestInto(t) {
+    (0, s.t2)(this), (0, s.ee)(t, this.outputLen), this.finished = true, this.iHash.digestInto(t), this.oHash.update(t), this.oHash.digestInto(t), this.destroy()
   }
   digest() {
-    let e = new Uint8Array(this.oHash.outputLen);
-    return this.digestInto(e), e
+    let t = new Uint8Array(this.oHash.outputLen);
+    return this.digestInto(t), t
   }
-  _cloneInto(e) {
-    e || (e = Object.create(Object.getPrototypeOf(this), {}));
+  _cloneInto(t) {
+    t || (t = Object.create(Object.getPrototypeOf(this), {}));
     let {
-      oHash: t,
-      iHash: n,
-      finished: r,
+      oHash: e,
+      iHash: r,
+      finished: s,
       destroyed: i,
-      blockLen: a,
-      outputLen: s
+      blockLen: n,
+      outputLen: o
     } = this;
-    return e.finished = r, e.destroyed = i, e.blockLen = a, e.outputLen = s, e.oHash = t._cloneInto(e.oHash), e.iHash = n._cloneInto(e.iHash), e
+    return t.finished = s, t.destroyed = i, t.blockLen = n, t.outputLen = o, t.oHash = e._cloneInto(t.oHash), t.iHash = r._cloneInto(t.iHash), t
   }
   destroy() {
     this.destroyed = true, this.oHash.destroy(), this.iHash.destroy()
   }
 }
-let s = (e, t, n) => new a(e, t).update(n).digest();
-s.create = (e, t) => new a(e, t)
+let o = (t, e, r) => new n(t, e).update(r).digest();
+o.create = (t, e) => new n(t, e)

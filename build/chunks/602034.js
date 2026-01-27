@@ -19,18 +19,18 @@ require.d(exports, {
   Mz: () => c,
   eM: () => i,
   nF: () => f,
-  t$: () => o
+  t$: () => s
 }), require("./747238.js"), require("./896048.js");
 let i = "data-list-item-id",
   a = "data-list-id",
-  s = "___";
+  o = "___";
 
-function o(e, t) {
-  return "".concat(e).concat(s).concat(t)
+function s(e, t) {
+  return "".concat(e).concat(o).concat(t)
 }
 
 function l(e) {
-  return e.split(s)[1]
+  return e.split(o)[1]
 }
 
 function c(e) {

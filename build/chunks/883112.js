@@ -19,7 +19,7 @@ let c = [
   u = 2 * Chunk927813.A.Seconds.HOUR;
 
 function d(e) {
-  let t = (0, s.A)();
+  let t = (0, o.A)();
   return (r.useEffect(() => {
     if ("R" !== e.format) return;
     let n = 1e3 * u,

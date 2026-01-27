@@ -9,7 +9,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk158954 = require("./158954.js"),
   Chunk397927 = require("./397927.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -33,11 +33,11 @@ function l(e) {
 
 function c(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "respect-motion-settings",
-    o = arguments.length > 3 ? arguments[3] : true,
-    c = r.useContext(s.CZY).reducedMotion.enabled,
+    s = arguments.length > 3 ? arguments[3] : true,
+    c = r.useContext(o.CZY).reducedMotion.enabled,
     u = t;
   "animate-always" !== n && ("respect-motion-settings" !== n || c) && (u = "function" == typeof t ? (e, n) => l({}, t(e, n), a.WD7) : t.map(e => l({}, e, a.WD7)));
   let d = "function" == typeof u,
-    [f, p, _] = (0, i.useSprings)(e, u, o);
+    [f, p, _] = (0, i.useSprings)(e, u, s);
   return d || 4 == arguments.length ? [f, p, _] : f
 }

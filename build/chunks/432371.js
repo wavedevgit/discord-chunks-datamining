@@ -18,12 +18,12 @@ function l(e) {
   if (null == e) returnfalse;
   let n = a.A.getGuild(null != (t = null == e ? true : e.guild_id) ? t : ""),
     r = null != n && n.rulesChannelId === e.id,
-    o = (0, i.wh)(n);
-  return s.kvI.SUMMARIZEABLE.has(e.type) && !e.isNSFW() && !r && !o
+    s = (0, i.wh)(n);
+  return o.kvI.SUMMARIZEABLE.has(e.type) && !e.isNSFW() && !r && !s
 }
 
 function c(e) {
-  return null != e && (e === s.ME || e === s.YYv)
+  return null != e && (e === o.ME || e === o.YYv)
 }
 
 function u(e) {
@@ -33,12 +33,12 @@ function u(e) {
 function d(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-  return !(null == e || !l(e) || false === t && e.hasFlag(o.lx.SUMMARIES_DISABLED)) && f(a.A.getGuild(e.guild_id), n)
+  return !(null == e || !l(e) || false === t && e.hasFlag(s.lx.SUMMARIES_DISABLED)) && f(a.A.getGuild(e.guild_id), n)
 }
 
 function f(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return !(null == e || c(e.id)) && !!e.features.has(s.GuildFeatures.SUMMARIES_ENABLED_GA) && (!t || e.features.has(s.GuildFeatures.SUMMARIES_ENABLED_BY_USER))
+  return !(null == e || c(e.id)) && !!e.features.has(o.GuildFeatures.SUMMARIES_ENABLED_GA) && (!t || e.features.has(o.GuildFeatures.SUMMARIES_ENABLED_BY_USER))
 }
 
 function p(e) {
@@ -50,6 +50,6 @@ function p(e) {
 function _(e) {
   return arguments.length > 1 && true !== arguments[1] && arguments[1], (0, r.bG)([a.A], () => {
     var t;
-    return f(a.A.getGuild(null != (t = null == e ? true : e.id) ? t : s.dJq), false)
+    return f(a.A.getGuild(null != (t = null == e ? true : e.id) ? t : o.dJq), false)
   }, [e])
 }

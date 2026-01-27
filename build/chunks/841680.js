@@ -15,8 +15,8 @@ function l(e, t) {
     role: n = "dialog"
   } = e, l = (0, r.X1)();
   l = e["aria-label"] ? true : l;
-  let c = (0, s.useRef)(false);
-  return (0, s.useEffect)(() => {
+  let c = (0, o.useRef)(false);
+  return (0, o.useEffect)(() => {
     if (t.current && !t.current.contains(document.activeElement)) {
       (0, a.l)(t.current);
       let e = setTimeout(() => {
@@ -26,7 +26,7 @@ function l(e, t) {
         clearTimeout(e)
       }
     }
-  }, [t]), (0, o.Se)(), {
+  }, [t]), (0, s.Se)(), {
     dialogProps: {
       ...(0, i.$)(e, {
         labelable: true

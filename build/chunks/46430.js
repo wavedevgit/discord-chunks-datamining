@@ -4,7 +4,7 @@
 var Chunk81833 = require("./81833.js"),
   i = 11920928955078125e-23,
   a = 34028234663852886e22,
-  s = 11754943508222875e-54;
+  o = 11754943508222875e-54;
 module.exports = Math.fround || function(e) {
-  return r(e, i, a, s)
+  return r(e, i, a, o)
 }

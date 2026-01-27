@@ -17,8 +17,8 @@ let l = e => {
     "aria-label": i,
     id: l
   } = e;
-  return (0, r.jsx)(s.H, {
-    className: a()(t, o.kL, o.wx),
+  return (0, r.jsx)(o.H, {
+    className: a()(t, s.kL, s.wx),
     "aria-label": i,
     id: l,
     children: n

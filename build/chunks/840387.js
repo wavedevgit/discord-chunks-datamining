@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 840387, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96430 **/
+/** chunk id: 840387, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -9,7 +8,7 @@ var Chunk311907 = require("./311907.js"),
 
 function a() {
   returnfalse === (0, r.bG)([i.default], () => {
-    var e;
-    return null == (e = i.default.getCurrentUser()) ? true : e.nsfwAllowed
+    var t;
+    return null == (t = i.default.getCurrentUser()) ? true : t.nsfwAllowed
   })
 }

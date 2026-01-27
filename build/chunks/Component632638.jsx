@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk342393 = require("./342393.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk451988 = require("./451988.js"),
   Chunk397927 = require("./397927.js"),
   Chunk102741 = require("./102741.jsx"),
@@ -28,7 +28,7 @@ function O(e) {
   let {
     steps: t,
     currentStep: n,
-    body: s,
+    body: o,
     overrideKey: O,
     paymentError: v,
     header: A,
@@ -41,12 +41,12 @@ function O(e) {
     purchaseErrorBlockRef: R,
     planError: P,
     onScroll: D,
-    scrollerClassName: x,
-    hasCurrencies: L = false
-  } = e, j = null;
-  null != v && null == (0, _.ou)(v) ? j = v : null != w ? j = w : null != P && (j = P);
-  let M = null != j ? j.message : "";
-  null != j && j instanceof d.Ey && (j.code === f.tG.CARD_DECLINED && L && (M += " ".concat(E.intl.string(E.t.iWvwQS))), j.code === f.tG.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.intl.string(E.t.ypuSd8)), j.code === g.t02.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.intl.string(E.t.mXMmWE)));
+    scrollerClassName: L,
+    hasCurrencies: x = false
+  } = e, M = null;
+  null != v && null == (0, _.ou)(v) ? M = v : null != w ? M = w : null != P && (M = P);
+  let j = null != M ? M.message : "";
+  null != M && M instanceof d.Ey && (M.code === f.tG.CARD_DECLINED && x && (j += " ".concat(E.intl.string(E.t.iWvwQS))), M.code === f.tG.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (j = E.intl.string(E.t.ypuSd8)), M.code === g.t02.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (j = E.intl.string(E.t.mXMmWE)));
   let {
     stripe: k
   } = (0, p.P5)();
@@ -66,7 +66,7 @@ function O(e) {
     options: g.XL8,
     stripe: k,
     children: [A, (0, r.jsxs)("div", {
-      className: o()("paymentModalContent", y.Qs),
+      className: s()("paymentModalContent", y.Qs),
       children: [S && n !== _.pn.CONFIRM ? (0, r.jsx)(u.A, {
         className: y.zJ,
         iconSize: u.A.Sizes.SMALL,
@@ -84,12 +84,12 @@ function O(e) {
         })
       }), (0, r.jsxs)("div", {
         className: y.uK,
-        children: [null == j ? null : (0, r.jsx)("div", {
+        children: [null == M ? null : (0, r.jsx)("div", {
           className: y.Nk,
           ref: R,
           children: (0, r.jsx)(c.wx6, {
             type: "critical",
-            children: M
+            children: j
           })
         }), N ? (0, r.jsx)(c.y$y, {
           className: y.CI
@@ -104,8 +104,8 @@ function O(e) {
           sideMargin: 20,
           children: (0, r.jsx)(c.ChK, {
             onScroll: D,
-            className: o()(y.XG, x),
-            children: s
+            className: s()(y.XG, L),
+            children: o
           })
         })]
       })]

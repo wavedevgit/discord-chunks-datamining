@@ -124,13 +124,13 @@ class h extends Chunk311907.il {
       };
       for (const i in e) {
         const a = e[i],
-          s = e => {
+          o = e => {
             if (t = false, a(e, r), !t) returnfalse
           };
-        n[i] = s
+        n[i] = o
       }
     }
-    super(o.h, n), d(this, "shadowState", null), d(this, "mode", true), d(this, "state", {
+    super(s.h, n), d(this, "shadowState", null), d(this, "mode", true), d(this, "state", {
       derived: {
         length: 0,
         memoized: {}

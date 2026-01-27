@@ -28,7 +28,7 @@ function _(e) {
     text: t,
     className: n,
     colorOptions: i = 2,
-    icon: s,
+    icon: o,
     gap: l = true
   } = e;
   return (0, r.jsxs)("div", {
@@ -41,7 +41,7 @@ function _(e) {
       [f.u0]: 7 === i,
       [f._p]: l
     }),
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/bold",
       className: a()(f.xG, {
         [f.wV]: 0 !== i && 2 !== i,
@@ -50,7 +50,7 @@ function _(e) {
         [f.kC]: 7 === i
       }),
       children: t
-    }), s]
+    }), o]
   })
 }
 
@@ -58,12 +58,12 @@ function h(e) {
   let t, {
     text: n,
     className: i,
-    colorOptions: o = 2,
+    colorOptions: s = 2,
     isPillOnBorder: l = true
   } = e;
-  switch (o) {
+  switch (s) {
     case 1:
-      t = s.A.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS.css;
+      t = o.A.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS.css;
       break;
     case 3:
       t = "url(#".concat(c.Bp, ")");
@@ -88,7 +88,7 @@ function h(e) {
       color: t
     }), (0, r.jsx)(_, {
       text: n,
-      colorOptions: o
+      colorOptions: s
     }), (0, r.jsx)(c.zF, {
       foreground: f.JF,
       color: t
@@ -100,7 +100,7 @@ function h(e) {
     className: a()(i, f.ls),
     children: [(0, r.jsx)(_, {
       text: n,
-      colorOptions: o
+      colorOptions: s
     }), (0, r.jsx)(c.zF, {
       foreground: f.QX,
       style: {

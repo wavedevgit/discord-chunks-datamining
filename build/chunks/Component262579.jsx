@@ -75,10 +75,10 @@ function h(e) {
     applicationId: t,
     centerButton: n = false
   } = e, c = p(e, ["applicationId", "centerButton"]), d = i.useCallback(() => {
-    o.A.stopFrame({
+    s.A.stopFrame({
       applicationId: t
     })
-  }, [t]), _ = n ? s.l : s.A;
+  }, [t]), _ = n ? o.l : o.A;
   return (0, r.jsx)(_, f(u({}, c), {
     isTrayButton: false,
     onClick: d,

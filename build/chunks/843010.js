@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 843010, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 843010, original params: e,t,n (module,exports,require) **/
 module.exports = {
   G3: "bodyText__945b8",
   hA: "planSelectText__945b8",

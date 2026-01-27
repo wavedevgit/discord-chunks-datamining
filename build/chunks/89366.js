@@ -24,5 +24,5 @@ function u() {
 }
 
 function d() {
-  return l.MB.map(e => s.A.getUserTrialOffer(e)).filter(e => null != e && !(0, o.P)(e)).shift()
+  return l.MB.map(e => o.A.getUserTrialOffer(e)).filter(e => null != e && !(0, s.P)(e)).shift()
 }

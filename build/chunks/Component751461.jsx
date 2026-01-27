@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 751461, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 751461, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => I
 });
@@ -26,70 +25,65 @@ var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
 
-function A(e) {
+function C(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, E = (0, p.q9)(), A = d.$s.useSetting().includes(n), I = (0, u.K)(), S = (0, f.e)(), T = (0, s.uM)(), C = i.useCallback(e => {
+  } = e, h = (0, p.q9)(), C = u.$s.useSetting().includes(n), I = (0, d.K)(), T = (0, _.e)(), S = (0, s.uM)(), j = i.useCallback(e => {
     let r = (0, c.Tb)();
-    e ? r.delete(n) : r.add(n), d.$s.updateSetting(Array.from(r)), l.default.track(b.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: g.m.DIRECT_MESSAGES_TOGGLE,
+    e ? r.delete(n) : r.add(n), u.$s.updateSetting(Array.from(r)), o.default.track(E.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+      action: f.m.DIRECT_MESSAGES_TOGGLE,
       ingress: t,
       guild_id: n
     })
   }, [n, t]);
 
-  function N(e, t) {
-    l.default.track(b.HAw.GUILD_DEFAULT_DMS_UPDATED, {
+  function v(e, t) {
+    o.default.track(E.HAw.GUILD_DEFAULT_DMS_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
     })
   }
-  let w = e => {
-      R(!e)
-    },
-    R = e => {
-      let t = () => {
-          d.n6.updateSetting(e), d.$s.updateSetting(e ? o.A.getGuildIds() : []), N(e, true)
-        },
-        n = () => {
-          d.n6.updateSetting(e), N(e, false)
-        };
-      (0, m.O)({
-        header: O.intl.string(O.t["uUr+GR"]),
-        body: O.intl.string(O.t.hjGJBp),
-        confirmText: O.intl.string(O.t.gm1Vej),
-        cancelText: O.intl.string(O.t.p89ACt),
-        confirmButtonColor: a.$n.Colors.BRAND,
-        onConfirm: n,
-        onCancel: t
-      })
-    },
-    P = S ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSN);
-  return (0, r.jsx)(_.h, {
-    setting: y.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
-    children: "0" === n ? (0, r.jsx)(h.Ay, {
-      title: P,
-      note: S ? O.intl.string(O.t.XXGmuB) : O.intl.string(O.t.wbYDfT),
+  let N = T ? x.intl.string(x.t.PMsfcH) : x.intl.string(x.t.RAQUSN);
+  return (0, r.jsx)(m.h, {
+    setting: b.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
+    children: "0" === n ? (0, r.jsx)(g.Ay, {
+      title: N,
+      note: T ? x.intl.string(x.t.XXGmuB) : x.intl.string(x.t.wbYDfT),
       value: !I,
-      onChange: w,
-      disabled: T,
-      tooltipText: T ? O.intl.string(v.default["6Af/cw"]) : true
-    }) : (0, r.jsx)(h.Ay, {
-      title: P,
-      note: E ? O.intl.string(O.t.V0ka0Q) : S ? O.intl.string(O.t.F9WY3f) : O.intl.string(O.t.G7c3Xo),
-      value: !A,
-      onChange: C
+      onChange: e => {
+        var t;
+        t = !e, (0, A.O)({
+          header: x.intl.string(x.t["uUr+GR"]),
+          body: x.intl.string(x.t.hjGJBp),
+          confirmText: x.intl.string(x.t.gm1Vej),
+          cancelText: x.intl.string(x.t.p89ACt),
+          confirmButtonColor: l.$n.Colors.BRAND,
+          onConfirm: () => {
+            u.n6.updateSetting(t), v(t, false)
+          },
+          onCancel: () => {
+            u.n6.updateSetting(t), u.$s.updateSetting(t ? a.A.getGuildIds() : []), v(t, true)
+          }
+        })
+      },
+      disabled: S,
+      tooltipText: S ? x.intl.string(O.default["6Af/cw"]) : true
+    }) : (0, r.jsx)(g.Ay, {
+      title: N,
+      note: h ? x.intl.string(x.t.V0ka0Q) : T ? x.intl.string(x.t.F9WY3f) : x.intl.string(x.t.G7c3Xo),
+      value: !C,
+      onChange: j
     })
   })
 }
 
 function I(e) {
   let {
-    ingress: t = E.bf.USER_SETTINGS_PRIVACY_SAFETY,
+    ingress: t = h.bf.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, p.Tx)();
-  return (0, r.jsx)(A, {
+  return (0, r.jsx)(C, {
     ingress: t,
     guildId: null != n ? n : i
   })

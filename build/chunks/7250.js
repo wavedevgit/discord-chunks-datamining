@@ -10,6 +10,6 @@ function i(e) {
   let {
     backgroundColor: t,
     colors: n
-  } = e, [i, a] = n, s = "string" == typeof t ? (0, r.LX)(t) : t, o = "string" == typeof i ? (0, r.LX)(i) : i, l = "string" == typeof a ? (0, r.LX)(a) : a;
-  return (0, r.bJ)(s, o) > (0, r.bJ)(s, l) ? i : a
+  } = e, [i, a] = n, o = "string" == typeof t ? (0, r.LX)(t) : t, s = "string" == typeof i ? (0, r.LX)(i) : i, l = "string" == typeof a ? (0, r.LX)(a) : a;
+  return (0, r.bJ)(o, s) > (0, r.bJ)(o, l) ? i : a
 }

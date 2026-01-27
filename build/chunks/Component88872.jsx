@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 72752 **/
 /** chunk id: 88872, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   default: () => y
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f(e, t, r) {
+function b(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -25,20 +25,20 @@ function f(e, t, r) {
   }) : e[t] = r, e
 }
 
-function b(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
     "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
       return Object.getOwnPropertyDescriptor(r, e).enumerable
     }))), n.forEach(function(t) {
-      f(e, t, r[t])
+      b(e, t, r[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,15 +50,15 @@ function O(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-class m extends Chunk64700.PureComponent {
+class f extends Chunk64700.PureComponent {
   componentDidMount() {
-    this.mountedAt = Date.now(), this.maxScrolledPercentage = 0, this.track(g.HAw.CHANGE_LOG_OPENED, {}, true)
+    this.mountedAt = Date.now(), this.maxScrolledPercentage = 0, this.track(m.HAw.CHANGE_LOG_OPENED, {}, true)
   }
   componentWillUnmount() {
-    this.track(g.HAw.CHANGE_LOG_CLOSED)
+    this.track(m.HAw.CHANGE_LOG_CLOSED)
   }
   render() {
-    return (0, n.jsx)(h.A, O(b({}, this.props), {
+    return (0, n.jsx)(u.A, g(p({}, this.props), {
       changeLog: this.props.changeLog,
       onClose: this.close,
       onScroll: this.handleScroll,
@@ -67,30 +67,30 @@ class m extends Chunk64700.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, f(this, "maxScrolledPercentage", 0), f(this, "mountedAt", 0), f(this, "close", () => ((0, c.OoC)(d.lb), Promise.resolve())), f(this, "handleScroll", e => {
+    super(...e), t = this, b(this, "maxScrolledPercentage", 0), b(this, "mountedAt", 0), b(this, "close", () => ((0, i.OoC)(_.lb), Promise.resolve())), b(this, "handleScroll", e => {
       let {
         offsetHeight: t,
         scrollHeight: r,
         scrollTop: n
       } = e.getScrollerState();
       this.maxScrolledPercentage = Math.min(Math.max(this.maxScrolledPercentage, n / (r - t)), 1)
-    }), f(this, "track", function(e) {
+    }), b(this, "track", function(e) {
       let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
         n = arguments.length > 2 && true !== arguments[2] && arguments[2],
         {
-          changeLog: l
+          changeLog: o
         } = t.props,
         {
-          date: o,
-          revision: i
-        } = l,
-        c = b({
-          change_log_id: "".concat(o, ":").concat(i)
+          date: l,
+          revision: a
+        } = o,
+        i = p({
+          change_log_id: "".concat(l, ":").concat(a)
         }, r);
-      n || (c = b({
+      n || (i = p({
         seconds_open: Math.round((Date.now() - t.mountedAt) / 1e3),
         max_scrolled_percentage: 100 * parseInt(t.maxScrolledPercentage.toPrecision(4), 10)
-      }, c)), s.default.track(e, c)
+      }, i)), d.default.track(e, i)
     })
   }
 }
@@ -99,27 +99,27 @@ function y(e) {
   let {
     changelog: t,
     loaded: r,
-    clientTooOld: c
-  } = (0, u.J)();
-  if (l.useEffect(() => {
-      if (r && null != t) return () => a.A.markChangelogAsSeen(t.id, t.date)
-    }, [r, t]), c) return (0, n.jsx)(o.Modal, b({
-    title: p.intl.string(p.t.V9ospk),
+    clientTooOld: i
+  } = (0, s.J)();
+  if (o.useEffect(() => {
+      if (r && null != t) return () => c.A.markChangelogAsSeen(t.id, t.date)
+    }, [r, t]), i) return (0, n.jsx)(l.Modal, p({
+    title: h.intl.string(h.t.V9ospk),
     actions: [{
-      text: p.intl.string(p.t.BddRzS),
+      text: h.intl.string(h.t.BddRzS),
       onClick: e.onClose
     }]
   }, e));
   if (null == t)
-    if (r) return (0, n.jsx)(o.Modal, b({
-      title: p.intl.string(p.t.O1iRT8),
+    if (r) return (0, n.jsx)(l.Modal, p({
+      title: h.intl.string(h.t.O1iRT8),
       actions: [{
-        text: p.intl.string(p.t.BddRzS),
+        text: h.intl.string(h.t.BddRzS),
         onClick: e.onClose
       }]
     }, e));
-    else return (0, i.A)(e);
-  return (0, n.jsx)(m, O(b({}, e), {
+    else return (0, a.A)(e);
+  return (0, n.jsx)(f, g(p({}, e), {
     changeLog: t
   }))
 }

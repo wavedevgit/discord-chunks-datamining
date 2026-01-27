@@ -6,7 +6,7 @@ var Chunk439619 = require("./439619.js"),
   a = Chunk439619("%Object.isExtensible%", true),
   Chunk858156 = require("./858156.js");
 module.exports = i ? function(e) {
-  return !s(e) && a(e)
+  return !o(e) && a(e)
 } : function(e) {
-  return !s(e)
+  return !o(e)
 }

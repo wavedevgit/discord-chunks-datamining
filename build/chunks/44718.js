@@ -37,11 +37,11 @@ let d = 30,
   p = 30,
   _ = {
     getActiveErrors: () => {
-      var e, t, n, s, c, _;
+      var e, t, n, o, c, _;
       if ((null != (e = null == (n = a.A.getRTCConnection()) ? true : n.getDurationSeconds()) ? e : 0) < d || performance.now() - i.A.getLastAudioInputDeviceChangeTimestamp() < f) return;
-      let h = null != (t = null == (c = r.A.getConnectionStats(null == (_ = a.A.getRTCConnection()) ? true : _.getMediaEngineConnectionId())) || null == (s = c.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : s.sampleRateMismatchPercent) ? t : 0;
+      let h = null != (t = null == (c = r.A.getConnectionStats(null == (_ = a.A.getRTCConnection()) ? true : _.getMediaEngineConnectionId())) || null == (o = c.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : o.sampleRateMismatchPercent) ? t : 0;
       if (Math.abs(h) > p) return [u({
-        type: o.iy.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
+        type: s.iy.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
         audioCaptureSampleRateMismatchPercent: h
       }, (0, l.jY)())]
     },

@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk339241 = require("./339241.js"),
   Chunk492313 = require("./492313.js"),
   Chunk64700 = require("./64700.js");
-let s = Math.round(1e10 * Math.random()),
-  o = 0;
+let o = Math.round(1e10 * Math.random()),
+  s = 0;
 
 function l(e) {
   var t, n;
-  let l = (0, a.useMemo)(() => e.name || `radio-group-${s}-${++o}`, [e.name]),
+  let l = (0, a.useMemo)(() => e.name || `radio-group-${o}-${++s}`, [e.name]),
     [c, u] = (0, i.P)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
     [d] = (0, a.useState)(c),
     [f, p] = (0, a.useState)(null),

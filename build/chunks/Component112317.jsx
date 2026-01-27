@@ -2,7 +2,7 @@
 /** chunk id: 112317, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Bc: () => o,
+  Bc: () => s,
   w6: () => l
 });
 var Chunk627968 = require("./627968.js"),
@@ -10,21 +10,21 @@ var Chunk627968 = require("./627968.js"),
 let a = {
     isRichTooltip: false
   },
-  s = Chunk64700.createContext(a);
+  o = Chunk64700.createContext(a);
 
-function o(e) {
+function s(e) {
   let {
     children: t,
     isRichTooltip: n = false
   } = e, a = i.useMemo(() => ({
     isRichTooltip: n
   }), [n]);
-  return (0, r.jsx)(s.Provider, {
+  return (0, r.jsx)(o.Provider, {
     value: a,
     children: t
   })
 }
 
 function l() {
-  return i.useContext(s)
+  return i.useContext(o)
 }

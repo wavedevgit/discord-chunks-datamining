@@ -2,7 +2,7 @@
 /** chunk id: 641967, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 }), require("./896048.js"), require("./747238.js");
 var Chunk600975 = require("./600975.js");
 let i = "bandwidth_estimation",
@@ -65,7 +65,7 @@ let i = "bandwidth_estimation",
       }
     }]
   }),
-  s = {
+  o = {
     getConfig(e, t) {
       let n = a.getCurrentConfig({
         location: "e1c55b_1"

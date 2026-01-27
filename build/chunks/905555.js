@@ -14,7 +14,7 @@ var Chunk118356 = require("./118356.js"),
 let c = new Chunk118356.Vy("OverlayV3NativeModuleUtils");
 async function u() {
   let e;
-  if (null == s.A.getWindow(l.f)) return;
+  if (null == o.A.getWindow(l.f)) return;
   c.warn("Waiting for previous overlay popout to be destroyed.");
   let t = new Promise(e => {
     setTimeout(() => {
@@ -23,22 +23,22 @@ async function u() {
   });
 
   function n() {
-    null == s.A.getWindow(l.f) && (null == e || e())
+    null == o.A.getWindow(l.f) && (null == e || e())
   }
   let r = new Promise(t => {
-    e = t, s.A.addChangeListener(n)
+    e = t, o.A.addChangeListener(n)
   });
   try {
     await Promise.race([t, r])
   } finally {
-    s.A.removeChangeListener(n)
+    o.A.removeChangeListener(n)
   }
-  null != s.A.getWindow(l.f) && c.error("Previous overlay popout was not destroyed after 5 seconds!")
+  null != o.A.getWindow(l.f) && c.error("Previous overlay popout was not destroyed after 5 seconds!")
 }
 let d = 1e3;
 async function f() {
-  let e, t = o.A.isModuleLoaded,
-    n = o.A.getNativeModule();
+  let e, t = s.A.isModuleLoaded,
+    n = s.A.getNativeModule();
   if (t && null != n) return await (0, i.yy)(d), n;
   if (t && null == n) throw Error("Native module loaded but not found in store");
   let r = new Promise(e => {
@@ -47,16 +47,16 @@ async function f() {
     }, 5e3)
   });
 
-  function s() {
+  function o() {
     null == e || e()
   }
   let l = new Promise(t => {
-    e = t, a.h.subscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS", s), a.h.subscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED", s)
+    e = t, a.h.subscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS", o), a.h.subscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED", o)
   });
   try {
     await Promise.race([r, l])
   } finally {
-    a.h.unsubscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS", s), a.h.unsubscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED", s)
+    a.h.unsubscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS", o), a.h.unsubscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED", o)
   }
-  return o.A.getNativeModule()
+  return s.A.getNativeModule()
 }

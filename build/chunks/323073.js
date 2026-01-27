@@ -2,18 +2,18 @@
 /** chunk id: 323073, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $v: () => V,
+  $v: () => F,
   Bc: () => S,
   Gc: () => U,
   Gn: () => P,
   Jm: () => G,
-  Tv: () => M,
-  UK: () => L,
+  Tv: () => j,
+  UK: () => x,
   a9: () => w,
   k$: () => R,
   kK: () => k,
   p5: () => Y,
-  qR: () => F,
+  qR: () => V,
   r9: () => N,
   sP: () => W,
   vL: () => B,
@@ -42,8 +42,8 @@ var Chunk687123 = require("./687123.js"),
 
 function v(e) {
   return {
-    description: e ? (0, o.H)(O.intl.string(O.t["lSgO/q"]), O.intl.string(O.t.SAoMVJ)) : O.intl.string(O.t.SxY4IW),
-    agreement: e ? (0, o.H)(O.intl.string(O.t.PBG51l), O.intl.string(O.t.Zt4Mf4)) : (0, o.H)(O.intl.string(O.t["5B+npG"]), O.intl.string(O.t.FDSSia))
+    description: e ? (0, s.H)(O.intl.string(O.t["lSgO/q"]), O.intl.string(O.t.SAoMVJ)) : O.intl.string(O.t.SxY4IW),
+    agreement: e ? (0, s.H)(O.intl.string(O.t.PBG51l), O.intl.string(O.t.Zt4Mf4)) : (0, s.H)(O.intl.string(O.t["5B+npG"]), O.intl.string(O.t.FDSSia))
   }
 }
 let A = new Date("06/16/2020"),
@@ -82,13 +82,13 @@ function R(e) {
     c = w(),
     {
       enabled: u
-    } = s.Y.useConfig({
+    } = o.Y.useConfig({
       location: "useAgeGateVerifyContentForGuild"
     }),
-    f = (0, o.W)(O.intl.string(O.t.PBG51l), O.intl.string(O.t.Zt4Mf4)),
-    p = (0, o.W)(O.intl.string(O.t.akjk0f), O.intl.string(O.t.V6Gmu9)),
-    _ = (0, o.W)(O.intl.string(O.t["u/xqhc"]), O.intl.string(O.t["5rygLk"])),
-    g = (0, o.W)(O.intl.string(O.t["5B+npG"]), O.intl.string(O.t.FDSSia)),
+    f = (0, s.W)(O.intl.string(O.t.PBG51l), O.intl.string(O.t.Zt4Mf4)),
+    p = (0, s.W)(O.intl.string(O.t.akjk0f), O.intl.string(O.t.V6Gmu9)),
+    _ = (0, s.W)(O.intl.string(O.t["u/xqhc"]), O.intl.string(O.t["5rygLk"])),
+    g = (0, s.W)(O.intl.string(O.t["5B+npG"]), O.intl.string(O.t.FDSSia)),
     E = O.intl.string(n ? O.t.xi46lg : O.t.ZmwvDc);
   return c ? t ? {
     title: E,
@@ -125,14 +125,14 @@ function P(e) {
     }),
     {
       enabled: c
-    } = s.Y.useConfig({
+    } = o.Y.useConfig({
       location: "useAgeGateVerifyContent"
     }),
-    u = (0, o.W)(O.intl.string(O.t.PBG51l), O.intl.string(O.t.Zt4Mf4)),
-    d = (0, o.W)(O.intl.string(O.t.UYReTs), O.intl.string(O.t["7ymzsL"])),
-    f = (0, o.W)(O.intl.string(O.t["5B+npG"]), O.intl.string(O.t.FDSSia)),
-    p = (0, o.W)(O.intl.string(O.t.akjk0f), O.intl.string(O.t.V6Gmu9)),
-    _ = (0, o.W)(O.intl.string(O.t["u/xqhc"]), O.intl.string(O.t["5rygLk"]));
+    u = (0, s.W)(O.intl.string(O.t.PBG51l), O.intl.string(O.t.Zt4Mf4)),
+    d = (0, s.W)(O.intl.string(O.t.UYReTs), O.intl.string(O.t["7ymzsL"])),
+    f = (0, s.W)(O.intl.string(O.t["5B+npG"]), O.intl.string(O.t.FDSSia)),
+    p = (0, s.W)(O.intl.string(O.t.akjk0f), O.intl.string(O.t.V6Gmu9)),
+    _ = (0, s.W)(O.intl.string(O.t["u/xqhc"]), O.intl.string(O.t["5rygLk"]));
   if (e === y.w_.JOIN_LARGE_GUILD_UNDERAGE || e === y.w_.ACCESS_LARGE_GUILD_UNDERAGE) {
     let n = e === y.w_.JOIN_LARGE_GUILD_UNDERAGE ? O.t["u/xsK9"] : O.t.MjQbfi,
       r = v(t);
@@ -168,22 +168,22 @@ let D = () => {
     let t = N();
     returntrue !== e.nsfwAllowed || t
   },
-  x = e => {
+  L = e => {
     if (!D() || null == e) returnfalse;
     let t = _.A.getGuild(e);
     return null != t && (0, d.wh)(t)
   },
-  L = e => !!D() && null != e && F(f.A.getChannel(e)),
-  j = e => N() && L(e),
-  M = e => !!j(e) && ((0, E.yO)(y.w_.NSFW_VOICE_CHANNEL), true);
+  x = e => !!D() && null != e && V(f.A.getChannel(e)),
+  M = e => N() && x(e),
+  j = e => !!M(e) && ((0, E.yO)(y.w_.NSFW_VOICE_CHANNEL), true);
 
 function k(e, t, n) {
-  if (x(e)) {
+  if (L(e)) {
     let e = null != n && S.has(n) ? n : y.w_.NSFW_SERVER;
     (0, E.yO)(e);
     return
   }
-  if (H() && L(t)) return void(0, E.yO)(null != n ? n : y.w_.NSFW_CHANNEL)
+  if (H() && x(t)) return void(0, E.yO)(null != n ? n : y.w_.NSFW_CHANNEL)
 }
 let U = e => null != e && (e.isNSFW() || (0, d.wh)(_.A.getGuild(e.guild_id))),
   G = e => {
@@ -191,22 +191,22 @@ let U = e => null != e && (e.isNSFW() || (0, d.wh)(_.A.getGuild(e.guild_id))),
     let t = (0, l.p9)();
     return U(e) && t
   },
-  V = e => {
+  F = e => {
     var t;
     if (null == e) returnfalse;
     let n = (null == (t = h.default.getCurrentUser()) ? true : t.nsfwAllowed) === true;
     return U(e) && !n
   };
 
-function F(e) {
+function V(e) {
   var t;
   if (null == e) returnfalse;
   let n = p.A.didAgree(e.guild_id),
     i = (null == (t = h.default.getCurrentUser()) ? true : t.nsfwAllowed) === false,
     a = (0, u.o)("age-gate-utils"),
-    s = (0, c.d6)(r.t.AGE_GATED_SPACES) || a,
-    o = (0, l.p9)(),
-    f = !(n && !i) || o && s;
+    o = (0, c.d6)(r.t.AGE_GATED_SPACES) || a,
+    s = (0, l.p9)(),
+    f = !(n && !i) || s && o;
   if (e.isNSFW() && f) returntrue;
   let m = e.guild_id,
     g = _.A.getGuild(m);
@@ -220,9 +220,9 @@ function B(e) {
       var e;
       return (null == (e = h.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     }),
-    s = (0, c.aX)(r.t.AGE_GATED_SPACES),
-    o = (0, u.j)("age-gate-utils"),
-    f = s || o,
+    o = (0, c.aX)(r.t.AGE_GATED_SPACES),
+    s = (0, u.j)("age-gate-utils"),
+    f = o || s,
     m = (0, i.bG)([_.A], () => _.A.getGuild(null == e ? true : e.guild_id)),
     g = f && t,
     E = !(n && !a) || g;

@@ -43,14 +43,14 @@ class _ extends(r = Chunk311907.Ay.PersistedStore) {
     u = null != e ? e : c
   }
   get defaultRoute() {
-    return o.BVt.ME
+    return s.BVt.ME
   }
   get lastNonVoiceRoute() {
     var e;
-    return null != (e = u.lastViewedNonVoicePath) ? e : o.BVt.ME
+    return null != (e = u.lastViewedNonVoicePath) ? e : s.BVt.ME
   }
   get fallbackRoute() {
-    return o.BVt.ME
+    return s.BVt.ME
   }
   getState() {
     return u

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 778300, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 778300, original params: e,t,n (module,exports,require) **/
 module.exports = {
   zr: "root__52b47",
   N: "lifted__52b47",

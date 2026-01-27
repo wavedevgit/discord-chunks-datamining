@@ -14,13 +14,13 @@ var Chunk64700 = require("./64700.js"),
 let u = 36e5;
 
 function d(e, t) {
-  let n = (0, a.bG)([s.A], () => null != e ? s.A.get(e) : null),
+  let n = (0, a.bG)([o.A], () => null != e ? o.A.get(e) : null),
     d = null != n && n.productLine !== c.EZt.COLLECTIBLES,
     [f, p, _, h] = (0, a.yK)([l.A], () => [l.A.isFetchingProduct(e), l.A.getProduct(e), l.A.getProductFetchError(e), l.A.getProductFetchErrorTimestamp(e)]),
     m = null != _ && null != h && Date.now() - h < u,
     g = true === t && (null == p ? true : p.type) === i.R.BUNDLE && 0 === p.items.length;
   return (0, r.useEffect)(() => {
-    null == e || null != p && !g || d || f || m || (0, o.Jp)(e, {
+    null == e || null != p && !g || d || f || m || (0, s.Jp)(e, {
       includeBundles: t
     })
   }, [e, p, d, f, m, t, g]), {

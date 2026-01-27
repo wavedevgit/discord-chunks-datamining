@@ -59,7 +59,7 @@ let O = (e, t, n) => r => {
       p = null == l ? true : l.tab,
       {
         analyticsLocations: _
-      } = (0, o.Ay)(s.A.COLLECTIBLES_SHOP_CARD),
+      } = (0, s.Ay)(o.A.COLLECTIBLES_SHOP_CARD),
       h = (0, a.bG)([c.A], () => c.A.getCategoryForProduct(e.skuId)),
       m = r.useRef(null);
     return r.useCallback(t => r => {

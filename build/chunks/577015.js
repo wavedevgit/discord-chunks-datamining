@@ -2,9 +2,9 @@
 /** chunk id: 577015, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  CaptchaCancelError: () => o,
+  CaptchaCancelError: () => s,
   CaptchaError: () => i,
-  emitCaptchaDistributionMetric: () => s,
+  emitCaptchaDistributionMetric: () => o,
   extractCaptchaPropsFromResponse: () => a
 }), require("./65821.js");
 var Chunk1136 = require("./1136.js");
@@ -28,10 +28,10 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   (0, r.N6)() && setTimeout(() => (0, r.il)(), 3e4), (0, r.di)(e)
 }
-class o extends Error {
+class s extends Error {
   constructor() {
     super("Captcha cancelled")
   }

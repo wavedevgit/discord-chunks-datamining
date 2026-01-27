@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk855036 = require("./855036.js"),
   l = require.n(Chunk855036),
   Chunk927556 = require("./927556.js");
@@ -73,7 +73,7 @@ function h(e, t) {
 let m = Chunk64700.forwardRef(function(e, t) {
     let [n, ...i] = [e, t], {
       as: a = "div",
-      gap: o = 8,
+      gap: s = 8,
       direction: l = "vertical",
       align: u = "stretch",
       justify: f = "start",
@@ -91,9 +91,9 @@ let m = Chunk64700.forwardRef(function(e, t) {
       "data-direction": l,
       "data-wrap": h,
       "data-full-width": y,
-      className: s()(c.t, O),
+      className: o()(c.t, O),
       style: d(p(d({}, b), {
-        gap: g(o)
+        gap: g(s)
       }), E(m))
     }, A), {
       children: v

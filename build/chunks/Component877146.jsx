@@ -31,9 +31,9 @@ function m(e) {
   } = e, {
     activeCommandOption: O,
     activeCommandOptionStates: v
-  } = (0, a.cf)([s.A], () => ({
-    activeCommandOption: s.A.getActiveOption(t.id),
-    activeCommandOptionStates: s.A.getOptionStates(t.id)
+  } = (0, a.cf)([o.A], () => ({
+    activeCommandOption: o.A.getActiveOption(t.id),
+    activeCommandOptionStates: o.A.getOptionStates(t.id)
   })), A = (0, c.x)(t);
   return i.useMemo(() => {
     let e = [],
@@ -42,7 +42,7 @@ function m(e) {
       guildId: t.guild_id,
       channel: t,
       className: h.UW
-    })), null != m && e.push((0, r.jsx)(o.A, {
+    })), null != m && e.push((0, r.jsx)(s.A, {
       activeCommand: m,
       activeOption: null != O ? O : null,
       optionStates: v,

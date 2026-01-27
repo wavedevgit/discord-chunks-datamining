@@ -51,7 +51,7 @@ class T extends Chunk439372.A {
     if (t === r.x.STREAM && null != i) {
       let {
         ownerId: e
-      } = (0, o.Iy)(i);
+      } = (0, s.Iy)(i);
       if (e !== a) return;
       let t = p.A.getRTCConnection(i);
       if (null == t) return;
@@ -74,7 +74,7 @@ class T extends Chunk439372.A {
       guildId: r
     } = e;
     this.maybeShowClipsWarning(t), this.applyUserVoiceRecording(t), this.applyUserSoundboardRecording(t);
-    let i = p.A.getRTCConnection(o._z({
+    let i = p.A.getRTCConnection(s._z({
       streamType: null != r ? I.U4.GUILD : I.U4.CALL,
       ownerId: t,
       channelId: n,
@@ -120,13 +120,13 @@ class T extends Chunk439372.A {
       guildId: a
     } = e;
     if (n !== r.x.STREAM || !(0, b.A)(d.A)) return;
-    let s = p.A.getRTCConnection(o._z({
+    let o = p.A.getRTCConnection(s._z({
       streamType: null != a ? I.U4.GUILD : I.U4.CALL,
       ownerId: t,
       channelId: i,
       guildId: a
     }));
-    null != s && this.applyStreamRecording(t, s)
+    null != o && this.applyStreamRecording(t, o)
   }
   async classifyHardwareAndTrack() {
     try {
@@ -143,7 +143,7 @@ class T extends Chunk439372.A {
             classification: n
           }
         } {
-          let e = (await s.A.processUtils.getSystemInfo()).gpus.map(e => {
+          let e = (await o.A.processUtils.getSystemInfo()).gpus.map(e => {
               let {
                 model: t
               } = e;
@@ -171,7 +171,7 @@ class T extends Chunk439372.A {
         n = e.some(e => v.l_.test(e));
       return t ? y.k9.MEETS_AUTO_ENABLE : n ? y.k9.MEETS_MINIMUM : y.k9.BELOW_MINIMUM
     }
-    return (0, m.isMac)() ? "arm64" === s.A.remoteApp.getAppArch() ? y.k9.MEETS_AUTO_ENABLE : y.k9.MEETS_MINIMUM : y.k9.UNKNOWN
+    return (0, m.isMac)() ? "arm64" === o.A.remoteApp.getAppArch() ? y.k9.MEETS_AUTO_ENABLE : y.k9.MEETS_MINIMUM : y.k9.UNKNOWN
   }
   applyUserVoiceRecording(e) {
     if (!(0, b.A)(d.A)) return;

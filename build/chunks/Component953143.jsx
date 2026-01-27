@@ -55,7 +55,7 @@ function _(e, t) {
 }
 
 function h(e) {
-  return (0, r.jsx)("svg", _(f({}, (0, o.A)(f({}, e))), {
+  return (0, r.jsx)("svg", _(f({}, (0, s.A)(f({}, e))), {
     width: "25",
     height: "48",
     viewBox: "0 0 25 48",
@@ -73,16 +73,16 @@ function m(e) {
     className: t,
     forceUseColorForSparkles: n = false,
     shouldInheritTextColor: i = false,
-    shouldInheritBackgroundColor: o = false
+    shouldInheritBackgroundColor: s = false
   } = e;
   return (0, r.jsx)(l.A, {
     className: t,
     forceUseColor: n,
-    children: (0, r.jsx)(s.LpS, {
+    children: (0, r.jsx)(o.LpS, {
       disableColor: true,
       className: a()(u.Tc, {
         [u.YO]: i,
-        [u.ju]: o
+        [u.ju]: s
       }),
       text: c.intl.string(c.t.y2b7CA)
     })

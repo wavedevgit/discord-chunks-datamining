@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 464473, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93140 **/
+/** chunk id: 464473, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -13,18 +12,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d() {
-  (0, l.sL)("nagbar")
+function E() {
+  (0, s.sL)("nagbar")
 }
 
-function f() {
-  return null == (0, i.bG)([s.Ay], () => s.Ay.getVisibleGame()) ? null : (0, r.jsxs)(a.$Td, {
-    color: a.Hv$.DANGER,
-    children: [(0, r.jsx)(a.PMB, {
+function d() {
+  return null == (0, i.bG)([o.Ay], () => o.Ay.getVisibleGame()) ? null : (0, r.jsxs)(l.$Td, {
+    color: l.Hv$.DANGER,
+    children: [(0, r.jsx)(l.PMB, {
       noticeType: c.kqX.SYSTEM_SERVICE_WARNING,
-      onClick: () => (0, o.w)()
-    }), u.intl.string(u.t["5rPt+j"]), (0, r.jsx)(a.Z_L, {
-      onClick: d,
+      onClick: () => (0, a.w)()
+    }), u.intl.string(u.t["5rPt+j"]), (0, r.jsx)(l.Z_L, {
+      onClick: E,
       noticeType: c.kqX.SYSTEM_SERVICE_WARNING,
       children: u.intl.string(u.t["1iI46O"])
     })]

@@ -100,7 +100,7 @@ class A extends(r = Chunk311907.Ay.PersistedStore) {
     return f
   }
   getIsEnabled() {
-    return o.Q_.getSetting() && h.length > 0
+    return s.Q_.getSetting() && h.length > 0
   }
   getLastUsedObject() {
     return f.lastUsedObject

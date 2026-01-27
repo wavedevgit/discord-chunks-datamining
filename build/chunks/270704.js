@@ -2,9 +2,9 @@
 /** chunk id: 270704, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AK: () => s,
+  AK: () => o,
   KO: () => a,
-  Wj: () => o,
+  Wj: () => s,
   Z6: () => l,
   fc: () => i
 });
@@ -67,8 +67,8 @@ let i = {
     }
   },
   a = "invalid_palette",
-  s = "custom_palette",
-  o = {
+  o = "custom_palette",
+  s = {
     name: a,
     darkBackground: "",
     lightBackground: ""

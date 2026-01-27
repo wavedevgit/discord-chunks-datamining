@@ -8,7 +8,7 @@ var Chunk439619 = require("./439619.js"),
   Chunk449950 = require("./449950.js"),
   Chunk483955 = require("./483955.js");
 module.exports = function(e) {
-  var t = s(e) ? e : o(e, a);
+  var t = o(e) ? e : s(e, a);
   if ("symbol" == typeof t) throw new i("Cannot convert a Symbol value to a number");
   if ("bigint" == typeof t) throw new i("Conversion from 'BigInt' to 'number' is not allowed.");
   return "string" == typeof t ? l(t) : +t

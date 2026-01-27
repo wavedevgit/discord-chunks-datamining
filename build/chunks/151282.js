@@ -20,14 +20,14 @@ async function c(e) {
   let t = (0, a.I)(),
     n = await t.uploadFiles(e);
   if (t._aborted) throw Error("Upload aborted");
-  return n.map((e, t) => (0, s.OW)(e, t))
+  return n.map((e, t) => (0, o.OW)(e, t))
 }
 async function u(e) {
   let {
     channelId: t,
     scheduledTimestamp: n,
     messageSendData: a,
-    attachments: s,
+    attachments: o,
     attachmentsToUpload: u
   } = e;
   i.h.dispatch({
@@ -35,11 +35,11 @@ async function u(e) {
     channelId: t
   });
   try {
-    let [e, d] = (0, o.UF)({
+    let [e, d] = (0, s.UF)({
       content: a.content,
       flags: a.flags
     });
-    null != u && (s = await c(u));
+    null != u && (o = await c(u));
     let f = await r.Bo.post({
       url: l.Rsh.SCHEDULED_MESSAGES,
       body: {
@@ -49,7 +49,7 @@ async function u(e) {
         flags: d,
         message_reference: a.message_reference,
         allowed_mentions: a.allowed_mentions,
-        attachments: null != s ? s : []
+        attachments: null != o ? o : []
       },
       rejectWithError: true
     });
@@ -57,11 +57,11 @@ async function u(e) {
     return i.h.dispatch({
       type: "SCHEDULED_MESSAGES_CREATE_SUCCESS",
       channelId: t,
-      scheduledMessageSend: (0, o.Lg)(f.body)
+      scheduledMessageSend: (0, s.Lg)(f.body)
     }), f
   } catch (n) {
     var d, f;
-    o.dx.error("Failed to create scheduled message", n);
+    s.dx.error("Failed to create scheduled message", n);
     let e = null != (d = null == (f = n.body) ? true : f.message) ? d : n.message;
     throw i.h.dispatch({
       type: "SCHEDULED_MESSAGES_CREATE_FAILURE",
@@ -86,11 +86,11 @@ async function d(e, t) {
     if (!n.ok) throw Error("Failed to update scheduled message");
     i.h.dispatch({
       type: "SCHEDULED_MESSAGES_UPDATE_SUCCESS",
-      scheduledMessageSend: (0, o.Lg)(n.body)
+      scheduledMessageSend: (0, s.Lg)(n.body)
     })
   } catch (r) {
     var n, a;
-    o.dx.error("Failed to update scheduled message", r);
+    s.dx.error("Failed to update scheduled message", r);
     let t = null != (n = null == (a = r.body) ? true : a.message) ? n : r.message;
     throw i.h.dispatch({
       type: "SCHEDULED_MESSAGES_UPDATE_FAILURE",
@@ -115,7 +115,7 @@ async function f(e) {
     })
   } catch (a) {
     var t, n;
-    o.dx.error("Failed to cancel scheduled message", a);
+    s.dx.error("Failed to cancel scheduled message", a);
     let r = null != (t = null == (n = a.body) ? true : n.message) ? t : a.message;
     throw i.h.dispatch({
       type: "SCHEDULED_MESSAGES_DELETE_FAILURE",
@@ -130,7 +130,7 @@ async function p() {
     rejectWithError: true
   });
   if (!e.ok) throw Error("Failed to fetch scheduled messages");
-  return e.body.map(o.Lg)
+  return e.body.map(s.Lg)
 }
 async function _() {
   i.h.dispatch({
@@ -138,12 +138,12 @@ async function _() {
   });
   try {
     let e = await p();
-    o.dx.info("Fetched scheduled messages", e), i.h.dispatch({
+    s.dx.info("Fetched scheduled messages", e), i.h.dispatch({
       type: "FETCH_SCHEDULED_MESSAGES_SUCCESS",
       messages: e
     })
   } catch (e) {
-    o.dx.error("Failed to fetch scheduled messages", e), i.h.dispatch({
+    s.dx.error("Failed to fetch scheduled messages", e), i.h.dispatch({
       type: "FETCH_SCHEDULED_MESSAGES_FAILURE",
       error: e
     })

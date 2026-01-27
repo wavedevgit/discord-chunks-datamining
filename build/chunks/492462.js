@@ -5,7 +5,7 @@ var Chunk948055 = require("./948055.js"),
   Chunk724039 = require("./724039.js"),
   Chunk389293 = require("./389293.js");
 
-function s(e) {
+function o(e) {
   switch (e.arrayFormat) {
     case "index":
       return function(t, n, r) {
@@ -22,7 +22,7 @@ function s(e) {
   }
 }
 
-function o(e) {
+function s(e) {
   var t;
   switch (e.arrayFormat) {
     case "index":
@@ -71,21 +71,21 @@ function c(e) {
 exports.extract = function(e) {
   return e.split("?")[1] || ""
 }, exports.parse = function(e, t) {
-  var n = o(t = i({
+  var n = s(t = i({
       arrayFormat: "none"
     }, t)),
     r = Object.create(null);
   return "string" == typeof e && (e = e.trim().replace(/^(\?|#|&)/, "")) ? (e.split("&").forEach(function(e) {
     var t = e.replace(/\+/g, " ").split("="),
       i = t.shift(),
-      s = t.length > 0 ? t.join("=") : true;
-    s = true === s ? null : a(s), n(a(i), s, r)
+      o = t.length > 0 ? t.join("=") : true;
+    o = true === o ? null : a(o), n(a(i), o, r)
   }), Object.keys(r).sort().reduce(function(e, t) {
     var n = r[t];
     return n && "object" == typeof n && !Array.isArray(n) ? e[t] = c(n) : e[t] = n, e
   }, Object.create(null))) : r
 }, exports.stringify = function(e, t) {
-  var n = s(t = i({
+  var n = o(t = i({
     encode: true,
     strict: true,
     arrayFormat: "none"

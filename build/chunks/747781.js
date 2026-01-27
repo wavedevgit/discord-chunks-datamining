@@ -60,10 +60,10 @@ function p(e) {
     asContainer: l = false,
     containerTag: d = "span",
     ariaHidden: p = false
-  } = e, _ = u(e, ["children", "targetElementRef", "asContainer", "containerTag", "ariaHidden"]), h = (0, o._)(n), m = r.useId(), {
+  } = e, _ = u(e, ["children", "targetElementRef", "asContainer", "containerTag", "ariaHidden"]), h = (0, s._)(n), m = r.useId(), {
     isVisible: g,
     triggerProps: E
-  } = (0, s.f)(c({
+  } = (0, o.f)(c({
     targetElementRef: h.targetElementRef
   }, _)), y = p ? true : m, b = (0, i.o)(r.isValidElement(t) ? t : f, E, y, h.triggerRef), O = (0, a.w)(l, t, E, h.triggerRef, m, p, d), v = null != O ? O : b;
   return {

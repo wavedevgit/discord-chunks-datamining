@@ -1,22 +1,17 @@
-/** Chunk was on web.js **/
-/** chunk id: 488703, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 488703, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a,
-  W: () => i
+  A: () => function e(t) {
+    return null == t ? t : Object.keys(t).reduce((n, i) => {
+      let l = (0, r.snakeCase)(i);
+      return "object" != typeof t[i] || Array.isArray(t[i]) ? n[l] = t[i] : n[l] = e(t[i]), n[l] = t[i], n
+    }, {})
+  },
+  W: () => function e(t) {
+    return null == t ? t : Object.keys(t).reduce((n, i) => {
+      let l = (0, r.camelCase)(i);
+      return "object" != typeof t[i] || Array.isArray(t[i]) ? n[l] = t[i] : n[l] = e(t[i]), n
+    }, {})
+  }
 });
-var Chunk735438 = require("./735438.js");
-
-function i(e) {
-  return null == e ? e : Object.keys(e).reduce((t, n) => {
-    let a = (0, r.camelCase)(n);
-    return "object" != typeof e[n] || Array.isArray(e[n]) ? t[a] = e[n] : t[a] = i(e[n]), t
-  }, {})
-}
-
-function a(e) {
-  return null == e ? e : Object.keys(e).reduce((t, n) => {
-    let i = (0, r.snakeCase)(n);
-    return "object" != typeof e[n] || Array.isArray(e[n]) ? t[i] = e[n] : t[i] = a(e[n]), t[i] = e[n], t
-  }, {})
-}
+var Chunk735438 = require("./735438.js")

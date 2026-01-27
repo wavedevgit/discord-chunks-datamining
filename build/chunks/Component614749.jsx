@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 614749, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 614749, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,61 +18,59 @@ var Chunk627968 = require("./627968.js"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk753765 = require("./753765.js");
-let E = () => {
-  let e = d.dm.useSetting(),
+let h = () => {
+  let e = u.dm.useSetting(),
     {
       categories: t,
       initialized: n
-    } = (0, o.cf)([u.A], () => u.A.getEmailSettings());
-
-  function E(e) {
-    (0, c.CA)(_.HO.FAMILY_CENTER_DIGEST, e)
-  }
+    } = (0, a.cf)([d.A], () => d.A.getEmailSettings());
   return i.useEffect(() => {
     null == n && (0, c.cR)()
   }, [n]), (0, r.jsx)("div", {
-    className: g.kL,
-    children: (0, r.jsxs)(l.nVY, {
-      label: m.intl.string(h.default.USIXU7),
-      children: [(0, r.jsx)(l.dOG, {
+    className: f.kL,
+    children: (0, r.jsxs)(o.nVY, {
+      label: A.intl.string(g.default.USIXU7),
+      children: [(0, r.jsx)(o.dOG, {
         checked: e,
-        description: m.intl.string(h.default["5MdB3j"]),
-        onChange: d.dm.updateSetting,
-        label: m.intl.string(h.default.zkEceS)
-      }), e ? (0, r.jsx)(l.ZpM, {
-        className: g.MT,
-        type: l.ZpM.Types.CUSTOM,
+        description: A.intl.string(g.default["5MdB3j"]),
+        onChange: u.dm.updateSetting,
+        label: A.intl.string(g.default.zkEceS)
+      }), e ? (0, r.jsx)(o.ZpM, {
+        className: f.MT,
+        type: o.ZpM.Types.CUSTOM,
         outline: true,
         children: (0, r.jsxs)(s.s, {
           justify: s.s.Justify.END,
           children: [(0, r.jsx)(s.s.Child, {
-            children: (0, r.jsx)(l.Text, {
+            children: (0, r.jsx)(o.Text, {
               variant: "text-sm/semibold",
               color: "text-default",
-              children: m.intl.string(h.default.xAVm7K)
+              children: A.intl.string(g.default.xAVm7K)
             })
-          }), (0, r.jsx)(l.DUT, {
-            children: (0, r.jsx)(a.N_, {
-              onClick: f.default,
+          }), (0, r.jsx)(o.DUT, {
+            children: (0, r.jsx)(l.N_, {
+              onClick: _.default,
               to: {
                 pathname: p.BVt.FAMILY_CENTER,
                 state: {
                   scrollRestoration: false
                 }
               },
-              children: m.intl.string(h.default.cUIXFY)
+              children: A.intl.string(g.default.cUIXFY)
             })
-          }), (0, r.jsx)(l.fkz, {
-            icon: l.EdP,
-            className: g.UE,
+          }), (0, r.jsx)(o.fkz, {
+            icon: o.EdP,
+            className: f.UE,
             disableColor: true
           })]
         })
-      }) : null, (0, r.jsx)(l.dOG, {
-        checked: !!t[_.HO.FAMILY_CENTER_DIGEST],
-        description: m.intl.string(h.default.y34S46),
-        onChange: E,
-        label: m.intl.string(h.default.irvJKR)
+      }) : null, (0, r.jsx)(o.dOG, {
+        checked: !!t[m.HO.FAMILY_CENTER_DIGEST],
+        description: A.intl.string(g.default.y34S46),
+        onChange: function(e) {
+          (0, c.CA)(m.HO.FAMILY_CENTER_DIGEST, e)
+        },
+        label: A.intl.string(g.default.irvJKR)
       })]
     })
   })

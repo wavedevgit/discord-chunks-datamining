@@ -73,7 +73,7 @@ let m = {
         src: v.backgrounds.river.static,
         alt: "",
         draggable: false
-      }), g && (0, r.jsx)(s.A, {
+      }), g && (0, r.jsx)(o.A, {
         className: p.Ki,
         style: {
           transform: "translate(779px, 1009px)"
@@ -87,7 +87,7 @@ let m = {
         src: v.backgrounds.camp.static,
         alt: "",
         draggable: false
-      }), o.dG.map(e => {
+      }), s.dG.map(e => {
         var n;
         return (0, r.jsx)(d.A, h({
           occupant: null == (n = t[e.id - 1]) ? true : n.claimedBy,
@@ -103,7 +103,7 @@ let m = {
         enableAnimations: E
       }, e.userId)), g && (0, r.jsxs)("div", {
         className: a()(p.cA, p.ey),
-        children: [(0, r.jsx)(s.A, {
+        children: [(0, r.jsx)(o.A, {
           className: p.Ki,
           style: {
             transform: "translate(1014px, 773px)"
@@ -112,13 +112,13 @@ let m = {
           autoPlay: true,
           controls: false,
           loop: true
-        }), (0, r.jsx)(s.A, {
+        }), (0, r.jsx)(o.A, {
           className: p.Ki,
           src: v.ambience.fireflies.animated,
           autoPlay: true,
           controls: false,
           loop: true
-        }), (0, r.jsx)(s.A, {
+        }), (0, r.jsx)(o.A, {
           className: p.Ki,
           style: {
             transform: "translate(0, 1216px)"

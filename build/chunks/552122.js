@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk223567 = require("./223567.js");
 
 function i() {
-  return s() && r.A.experiment.getCurrentConfig({
+  return o() && r.A.experiment.getCurrentConfig({
     location: "holiday_events_is_eligible"
   }, {
     autoTrackExposure: false
@@ -22,15 +22,15 @@ function a() {
   }, {
     autoTrackExposure: false
   });
-  return s() && e
+  return o() && e
 }
 
-function s() {
+function o() {
   let e = Date.now();
   return e >= r.A.startTimeMs && e <= r.A.endTimeMs
 }
 
-function o() {
+function s() {
   return i() && r.A.soundpack ? r.A.soundpack : null
 }
 let l = {
@@ -48,11 +48,11 @@ let l = {
   },
   useIsEligible: a,
   getAppSpinnerSources: function() {
-    return s() ? r.A.appSpinnerSources : null
+    return o() ? r.A.appSpinnerSources : null
   },
   getLoadingTips: function() {
     var e;
-    return s() ? null == (e = r.A.getLoadingTips) ? true : e.call(r.A) : null
+    return o() ? null == (e = r.A.getLoadingTips) ? true : e.call(r.A) : null
   },
-  getHolidaySoundpack: o
+  getHolidaySoundpack: s
 }

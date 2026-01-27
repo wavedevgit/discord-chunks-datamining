@@ -2,7 +2,7 @@
 /** chunk id: 168186, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $S: () => j,
+  $S: () => M,
   Am: () => G,
   Ap: () => R,
   Cq: () => P,
@@ -10,10 +10,10 @@ require.d(exports, {
   Lz: () => T,
   Oe: () => v,
   PV: () => N,
-  Qr: () => L,
+  Qr: () => x,
   XM: () => w,
-  bq: () => M,
-  gI: () => V,
+  bq: () => j,
+  gI: () => F,
   hT: () => C,
   my: () => U,
   zl: () => D
@@ -21,7 +21,7 @@ require.d(exports, {
 var Chunk824120 = require("./824120.js"),
   i = require.n(Chunk824120),
   Chunk284009 = require("./284009.js"),
-  s = require.n(Chunk284009),
+  o = require.n(Chunk284009),
   Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
   Chunk136722 = require("./136722.js"),
@@ -78,8 +78,8 @@ function v(e) {
   var t, n, r;
   let i, {
     rootCommand: a,
-    command: s,
-    applicationId: o,
+    command: o,
+    applicationId: s,
     subCommandPath: l,
     useKeyedPermissions: d
   } = e;
@@ -93,19 +93,19 @@ function v(e) {
     guildId: a.guild_id,
     id: [a.id, ...p].join(h.v4),
     untranslatedName: [a.name, ...p].join(" "),
-    serverLocalizedName: s.name_localized,
-    applicationId: o,
+    serverLocalizedName: o.name_localized,
+    applicationId: s,
     type: null != (t = a.type) ? t : u.kc.CHAT,
     inputType: _.y$.BOT,
-    untranslatedDescription: s.description,
-    options: A(s.options),
+    untranslatedDescription: o.description,
+    options: A(o.options),
     rootCommand: a,
     subCommandPath: l,
     defaultMemberPermissions: null == a.default_member_permissions ? true : c.iu(a.default_member_permissions),
     dmPermission: a.dm_permission,
     permissions: i,
     displayName: [null != (n = a.name_localized) ? n : a.name, ...m].join(" "),
-    displayDescription: null != (r = s.description_localized) ? r : s.description,
+    displayDescription: null != (r = o.description_localized) ? r : o.description,
     nsfw: a.nsfw,
     contexts: a.contexts,
     integration_types: a.integration_types,
@@ -151,23 +151,23 @@ function S(e) {
     rootCommand: r,
     command: i,
     applicationId: a,
-    subCommandPath: s,
-    useKeyedPermissions: o
+    subCommandPath: o,
+    useKeyedPermissions: s
   } = e;
   if (i.hasOwnProperty("id")) {
     if (null == i.options || 0 === i.options.length) return [v({
       rootCommand: r,
       command: i,
       applicationId: a,
-      subCommandPath: s,
-      useKeyedPermissions: o
+      subCommandPath: o,
+      useKeyedPermissions: s
     })]
   } else if (i.type !== u.n4.SUB_COMMAND && i.type !== u.n4.SUB_COMMAND_GROUP && (null == i.options || 0 === i.options.length)) return [v({
     rootCommand: r,
     command: i,
     applicationId: a,
-    subCommandPath: s,
-    useKeyedPermissions: o
+    subCommandPath: o,
+    useKeyedPermissions: s
   })];
   let l = [];
   if (null == i.options) return l;
@@ -176,36 +176,36 @@ function S(e) {
     rootCommand: r,
     command: c[e],
     applicationId: a,
-    subCommandPath: (null != s ? s : []).concat([{
+    subCommandPath: (null != o ? o : []).concat([{
       name: c[e].name,
       type: u.n4.SUB_COMMAND_GROUP,
       displayName: null != (t = c[e].name_localized) ? t : c[e].name
     }]),
-    useKeyedPermissions: o
+    useKeyedPermissions: s
   }));
   let d = i.options.filter(e => e.type === u.n4.SUB_COMMAND);
   for (let e = 0; e < d.length; e++) l.push(v({
     rootCommand: r,
     command: d[e],
     applicationId: a,
-    subCommandPath: (null != s ? s : []).concat([{
+    subCommandPath: (null != o ? o : []).concat([{
       name: d[e].name,
       type: u.n4.SUB_COMMAND,
       displayName: null != (n = d[e].name_localized) ? n : d[e].name
     }]),
-    useKeyedPermissions: o
+    useKeyedPermissions: s
   }));
   return 0 === c.length && 0 === d.length && l.push(v({
     rootCommand: r,
     command: i,
     applicationId: a,
-    subCommandPath: s,
-    useKeyedPermissions: o
+    subCommandPath: o,
+    useKeyedPermissions: s
   })), l
 }
 
 function T(e, t) {
-  return l().flatMap(e, e => (s()(null != e.id, "Missing command id"), S({
+  return l().flatMap(e, e => (o()(null != e.id, "Missing command id"), S({
     rootCommand: e,
     command: e,
     applicationId: e.application_id,
@@ -254,19 +254,19 @@ function D(e) {
     selfMember: r,
     applicationLevelPermissions: i,
     commandLevelPermissions: a,
-    defaultMemberPermissions: s
+    defaultMemberPermissions: o
   } = e;
   if (n.ownerId === r.userId || t.can(g.xB.ADMINISTRATOR, n)) returntrue;
-  let o = n.id;
+  let s = n.id;
   if (null != a) {
-    let e = x(r, o, a);
+    let e = L(r, s, a);
     if ("boolean" == typeof e) return e
   }
-  let l = x(r, o, i);
-  return ("boolean" != typeof l || !!l) && (null == s || !c.aI(s, P) && t.can(s, n))
+  let l = L(r, s, i);
+  return ("boolean" != typeof l || !!l) && (null == o || !c.aI(o, P) && t.can(o, n))
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   let r = n[(0, f.Eu)(e.userId, _.RA.USER)];
   if (null != r) return r.permission;
   let i = false;
@@ -279,7 +279,7 @@ function x(e, t, n) {
   return null != a ? a.permission : null
 }
 
-function L(e) {
+function x(e) {
   switch (e) {
     case _.iw.CHAT:
     case _.iw.APPLICATION_LAUNCHER:
@@ -302,14 +302,14 @@ function L(e) {
   }
 }
 
-function j(e) {
+function M(e) {
   if (null != e)
     if (e.id === h.Ik.BUILT_IN) return _.gK.BUILT_IN;
     else if (e.id === h.Ik.FRECENCY) return _.gK.FRECENCY;
   else return _.gK.APP
 }
 
-function M(e, t, n) {
+function j(e, t, n) {
   var r, i;
   return {
     type: _.Hf.APPLICATION,
@@ -339,8 +339,8 @@ function U(e) {
     command: r,
     location: i,
     triggerSection: a,
-    queryLength: s,
-    sectionName: o,
+    queryLength: o,
+    sectionName: s,
     query: l,
     searchResultsPosition: c,
     source: u
@@ -350,9 +350,9 @@ function U(e) {
     application_id: r.applicationId,
     location: i,
     section: a,
-    query_length: s,
+    query_length: o,
     command_text_length: r.displayName.length,
-    section_name: o,
+    section_name: s,
     query: l,
     search_results_position: c,
     source: u
@@ -364,7 +364,7 @@ function G(e) {
   return null == t ? null : "triggering_interaction_metadata" in t ? t.triggering_interaction_metadata : t
 }
 
-function V(e, t) {
+function F(e, t) {
   var n;
   let r = null == (n = t.result) ? true : n.sections;
   return null != r && e in r

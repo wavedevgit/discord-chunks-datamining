@@ -1,23 +1,22 @@
-/** Chunk was on web.js **/
-/** chunk id: 546140, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96430 **/
+/** chunk id: 546140, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  L: () => l
+  L: () => u
 });
 var Chunk311907 = require("./311907.js"),
   Chunk617617 = require("./617617.js"),
   Chunk287809 = require("./287809.js"),
   Chunk840387 = require("./840387.js"),
   Chunk639555 = require("./639555.js");
-let l = () => {
-  let e = a.default.getCurrentUser(),
-    t = (0, r.bG)([i.A], () => {
-      var e, t, n;
-      return null == (e = null == (n = i.A.settings.privacy) || null == (t = n.inappropriateConversationWarnings) ? true : t.value) || e
+let u = () => {
+  let t = a.default.getCurrentUser(),
+    e = (0, r.bG)([i.A], () => {
+      var t, e, n;
+      return null == (t = null == (n = i.A.settings.privacy) || null == (e = n.inappropriateConversationWarnings) ? true : e.value) || t
     }),
-    n = (0, s.Z)(),
-    l = (0, o.Rv)({
+    n = (0, l.Z)(),
+    u = (0, o.Rv)({
       location: "useSafetyAlertsSettingOrDefault"
     });
-  return !!n && !!l || (n || (null == e ? true : e.isStaff()) === true) && t
+  return !!n && !!u || (n || (null == t ? true : t.isStaff()) === true) && e
 }

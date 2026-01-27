@@ -2,7 +2,7 @@
 /** chunk id: 114729, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => s
+  i: () => o
 });
 var Chunk860407 = require("./860407.js"),
   Chunk180944 = require("./180944.js");
@@ -15,12 +15,12 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s {
+class o {
   get prefix() {
     return this.table.prefix
   }
   withoutLogging() {
-    return new s(this.originalPrefix, this.table.tableId, this.table.database, false)
+    return new o(this.originalPrefix, this.table.tableId, this.table.database, false)
   }
   get(e, t) {
     return this.table.get([e, t])
@@ -72,10 +72,10 @@ class s {
     return this.table.deleteGeneration([], e, t)
   }
   transaction(e, t) {
-    return this.table.transaction(t => e(new o(t)), t)
+    return this.table.transaction(t => e(new s(t)), t)
   }
   upgradeTransaction(e) {
-    return new o(this.table.upgradeTransaction(e))
+    return new s(this.table.upgradeTransaction(e))
   }
   getManySyncUnsafe(e, t) {
     return this.table.getManySyncUnsafe([e], t)
@@ -87,9 +87,9 @@ class s {
     a(this, "originalPrefix", true), a(this, "table", true), this.originalPrefix = e, this.table = new i.X([e], t, n, r)
   }
 }
-class o {
+class s {
   static fromDatabaseTransaction(e, t, n) {
-    return new o(new i.l(e, t, n))
+    return new s(new i.l(e, t, n))
   }
   put(e, t, n) {
     let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : r.hh.Replace;

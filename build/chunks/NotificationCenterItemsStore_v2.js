@@ -134,11 +134,11 @@ function N(e) {
       type: r,
       user: i,
       since: a,
-      is_spam_request: s,
-      user_ignored: o,
+      is_spam_request: o,
+      user_ignored: s,
       origin_application_id: l
     } = e;
-    if (null == i || (o && n.add(i.id), r !== h.eA$.PENDING_INCOMING || s || o || null == a)) return null;
+    if (null == i || (s && n.add(i.id), r !== h.eA$.PENDING_INCOMING || o || s || null == a)) return null;
     let c = d.default.getUser(i.id);
     if (null == c) return null;
     t.push((0, _.Qi)(c, a, l))
@@ -147,11 +147,11 @@ function N(e) {
       type: r,
       id: i,
       application_id: a,
-      since: s
+      since: o
     } = e;
     if (r !== h.eA$.PENDING_INCOMING || n.has(i)) return;
-    let o = d.default.getUser(i);
-    null != o && t.push((0, _.KS)(o, s, a))
+    let s = d.default.getUser(i);
+    null != s && t.push((0, _.KS)(s, o, a))
   }), e.guilds.forEach(e => {
     e.guild_scheduled_events.forEach(e => {
       W(e)
@@ -188,28 +188,28 @@ function D(e, t) {
   }) : n).filter(O)
 }
 
-function x(e) {
+function L(e) {
   let {
     ids: t
   } = e;
   D(t, true)
 }
 
-function L(e) {
+function x(e) {
   let {
     ids: t
   } = e;
   D(t, false)
 }
 
-function j(e) {
+function M(e) {
   let {
     active: t
   } = e;
   b.notifCenterActive = t
 }
 
-function M(e) {
+function j(e) {
   let {
     focused: t
   } = e;
@@ -233,30 +233,30 @@ function G(e) {
     type: r,
     isSpamRequest: i,
     userIgnored: a,
-    user: s,
-    since: o,
+    user: o,
+    since: s,
     originApplicationId: l
   } = t;
   if (r === h.eA$.PENDING_INCOMING && !i && !a) {
-    if (null == o) return null;
-    if (null != s) {
-      let e = d.default.getUser(s.id);
-      null != e && (b.notifCenterLocalItems = [...b.notifCenterLocalItems, (0, _.Qi)(e, o, l)])
+    if (null == s) return null;
+    if (null != o) {
+      let e = d.default.getUser(o.id);
+      null != e && (b.notifCenterLocalItems = [...b.notifCenterLocalItems, (0, _.Qi)(e, s, l)])
     }
   }
   r !== h.eA$.FRIEND || null == t.user || a || (b.notifCenterLocalItems = b.notifCenterLocalItems.map(e => k(e, p.Uo.INCOMING_FRIEND_REQUESTS, t.user.id) ? y(g({}, e), {
     acked: true,
     forceUnacked: false,
-    local_id: "incoming_friend_requests_accepted_".concat(s.id, "_").concat(e.id),
+    local_id: "incoming_friend_requests_accepted_".concat(o.id, "_").concat(e.id),
     type: p.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED
   }) : e)), (r === h.eA$.BLOCKED || a) && (b.notifCenterLocalItems = b.notifCenterLocalItems.filter(e => !k(e, p.Uo.INCOMING_FRIEND_REQUESTS, n) && !k(e, p.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !k(e, p.Uo.INCOMING_GAME_FRIEND_REQUESTS, n) && !k(e, p.Uo.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
 }
 
-function V(e) {
+function F(e) {
   b.notifCenterLocalItems = b.notifCenterLocalItems.filter(t => !k(t, p.Uo.INCOMING_FRIEND_REQUESTS, e.relationship.id) && !k(t, p.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id))
 }
 
-function F(e) {
+function V(e) {
   let {
     gameRelationship: t
   } = e, {
@@ -306,7 +306,7 @@ function Y(e) {
 }
 
 function W(e) {
-  (0, o.AZ)(e) && (b.notifCenterItems = b.notifCenterItems.map(t => t.type === p.hW.GUILD_SCHEDULED_EVENT_STARTED && t.guild_scheduled_event_id === e.id ? y(g({}, t), {
+  (0, s.AZ)(e) && (b.notifCenterItems = b.notifCenterItems.map(t => t.type === p.hW.GUILD_SCHEDULED_EVENT_STARTED && t.guild_scheduled_event_id === e.id ? y(g({}, t), {
     disable_action: true
   }) : t))
 }
@@ -322,7 +322,7 @@ function K(e) {
 }
 class z extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(d.default, u.A, s.A), null != e) {
+    if (this.waitFor(d.default, u.A, o.A), null != e) {
       let t = e => y(g({}, e), {
           message: null != e.message ? new c.Ay(e.message) : true
         }),
@@ -376,8 +376,8 @@ m(z, "displayName", "NotificationCenterItemsStore"), m(z, "persistKey", "Notific
 let q = new z(Chunk73153.h, {
   CONNECTION_OPEN: N,
   LOGOUT: () => v(),
-  NOTIFICATION_CENTER_ITEMS_ACK: x,
-  NOTIFICATION_CENTER_ITEMS_ACK_FAILURE: L,
+  NOTIFICATION_CENTER_ITEMS_ACK: L,
+  NOTIFICATION_CENTER_ITEMS_ACK_FAILURE: x,
   GUILD_SCHEDULED_EVENT_UPDATE: Y,
   NOTIFICATION_CENTER_ITEM_CREATE: R,
   NOTIFICATION_CENTER_ITEM_DELETE: P,
@@ -386,12 +386,12 @@ let q = new z(Chunk73153.h, {
   LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: S,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: w,
   RESET_NOTIFICATION_CENTER: () => A(),
-  NOTIFICATION_CENTER_SET_ACTIVE: j,
-  NOTIFICATION_CENTER_TAB_FOCUSED: M,
+  NOTIFICATION_CENTER_SET_ACTIVE: M,
+  NOTIFICATION_CENTER_TAB_FOCUSED: j,
   RELATIONSHIP_ADD: G,
   RELATIONSHIP_UPDATE: G,
-  RELATIONSHIP_REMOVE: V,
-  GAME_RELATIONSHIP_ADD: F,
+  RELATIONSHIP_REMOVE: F,
+  GAME_RELATIONSHIP_ADD: V,
   GAME_RELATIONSHIP_REMOVE: B,
   NOTIFICATION_CENTER_ITEM_COMPLETED: H,
   SET_RECENT_MENTIONS_FILTER: () => A(),

@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 322337, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93140 **/
+/** chunk id: 322337, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O,
-  p: () => y
+  A: () => I,
+  p: () => A
 }), require("./896048.js"), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk371794 = require("./371794.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,94 +23,81 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-
-function _(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      p(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function h(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function g(e, t) {
-  if (null == e) return {};
-  var n, r, i, a = {};
-  if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-  }
-  if (a = E(e, t), Object.getOwnPropertySymbols)
-    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-  return a
-}
-
-function E(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.getOwnPropertyNames(e);
-  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-  return i
-}
-let y = {
+let A = {
   DropdownSizes: Chunk543594.A.DropdownSizes,
   Sizes: Chunk543594.A.Sizes,
   Colors: Chunk543594.A.Colors,
   Looks: Chunk543594.A.Looks
 };
-class b extends Chunk64700.PureComponent {
+class T extends Chunk64700.PureComponent {
   render() {
-    let e = this.props,
+    var e, t;
+    let n = this.props,
       {
-        skus: t,
-        children: n,
-        applicationId: i,
+        skus: i,
+        children: l,
+        applicationId: o,
         primarySKU: a,
-        onSKUSelect: s
-      } = e,
-      o = g(e, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
-    return (0, r.jsx)(l.A, m(_({
+        onSKUSelect: c
+      } = n,
+      u = function(e, t) {
+        if (null == e) return {};
+        var n, r, i, l = {};
+        if ("u" > typeof Reflect && Reflect.ownKeys) {
+          for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+          return l
+        }
+        if (l = function(e, t) {
+            if (null == e) return {};
+            var n, r, i = {},
+              l = Object.getOwnPropertyNames(e);
+            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+            return i
+          }(e, t), Object.getOwnPropertySymbols)
+          for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+        return l
+      }(n, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
+    return (0, r.jsx)(s.A, (e = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          _(e, t, n[t])
+        })
+      }
+      return e
+    }({
       onClick: this.handleClick,
-      onDropdownClick: t.length > 0 ? this.handleContextMenu : null,
-      onContextMenu: t.length > 0 ? this.handleContextMenu : true
-    }, o), {
-      children: n
-    }))
+      onDropdownClick: i.length > 0 ? this.handleContextMenu : null,
+      onContextMenu: i.length > 0 ? this.handleContextMenu : true
+    }, u), t = t = {
+      children: l
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(t)).forEach(function(n) {
+      Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    }), e))
   }
   constructor(...e) {
-    super(...e), p(this, "renderContextMenu", () => {
+    super(...e), _(this, "renderContextMenu", () => {
       let {
         skus: e,
         onSKUSelect: t,
         onMenuSelect: n
       } = this.props;
-      return (0, r.jsx)(s.W1t, {
+      return (0, r.jsx)(o.W1t, {
         onSelect: n,
         navId: "test-skus",
-        "aria-label": f.intl.string(f.t.ogxXGq),
-        onClose: o.Z_,
-        children: e.map(e => (0, r.jsx)(s.Drp, {
+        "aria-label": d.intl.string(d.t.ogxXGq),
+        onClose: a.Z_,
+        children: e.map(e => (0, r.jsx)(o.Drp, {
           id: "".concat(e.id),
           label: e.name,
           action: () => {
@@ -119,9 +105,9 @@ class b extends Chunk64700.PureComponent {
           }
         }, "".concat(e.id)))
       })
-    }), p(this, "handleContextMenu", e => {
-      e.stopPropagation(), o.jA(e, this.renderContextMenu)
-    }), p(this, "handleClick", () => {
+    }), _(this, "handleContextMenu", e => {
+      e.stopPropagation(), a.jA(e, this.renderContextMenu)
+    }), _(this, "handleClick", () => {
       let {
         onSKUSelect: e,
         primarySKU: t
@@ -130,13 +116,13 @@ class b extends Chunk64700.PureComponent {
     })
   }
 }
-let O = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk587895.A], e => {
+let I = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk587895.A], e => {
   var t;
   let {
     applicationId: n
-  } = e, r = (0, d.VH)(n, c.A, u.A);
+  } = e, r = (0, E.VH)(n, c.A, u.A);
   return {
     skus: (null != (t = u.A.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? false : null != r && t.id === r.id ? 1 : e.name >= t.name ? false : 1),
     primarySKU: r
   }
-})(b)
+})(T)

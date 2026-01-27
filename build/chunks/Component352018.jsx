@@ -88,7 +88,7 @@ function w(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsx)(s.Zes, {
+  return (0, r.jsx)(o.Zes, {
     size: "md",
     color: "currentColor",
     className: t
@@ -118,12 +118,12 @@ function P(e) {
   } = e, h = C(e, ["hideBadges", "stream", "location"]), v = i.useRef(null), {
     analyticsLocations: A,
     parentAnalyticsLocation: S
-  } = (0, o.Ay)(), N = (0, a.bG)([_.default], () => m.Ay.isPremium(_.default.getCurrentUser(), b.PremiumTypes.TIER_1)), P = (0, a.bG)([p.A], () => p.A.getChannel(null == n ? true : n.channelId)), D = i.useMemo(() => null != n ? [n] : [], [n]), x = i.useCallback(() => {
+  } = (0, s.Ay)(), N = (0, a.bG)([_.default], () => m.Ay.isPremium(_.default.getCurrentUser(), b.PremiumTypes.TIER_1)), P = (0, a.bG)([p.A], () => p.A.getChannel(null == n ? true : n.channelId)), D = i.useMemo(() => null != n ? [n] : [], [n]), L = i.useCallback(() => {
     null != P && (0, f.A)(P.getGuildId(), P.id, A)
   }, [P, A]);
   if (null == n || null == P) return null;
-  let L = w;
-  return t || N || (L = R), (0, r.jsx)(s.YNO, {
+  let x = w;
+  return t || N || (x = R), (0, r.jsx)(o.YNO, {
     targetElementRef: v,
     position: "top",
     renderPopout: e => {
@@ -137,18 +137,18 @@ function P(e) {
           activeStreams: D,
           onClose: t,
           showReportOption: true,
-          handleGoLive: x,
+          handleGoLive: L,
           onInteraction: (0, c.s)("ManageStreamsButton", null != S ? S : u, {
             entrypoint: y.GK.OTHER_BUTTON
           })
         })
       })
     },
-    animation: s.YNO.Animation.FADE,
+    animation: o.YNO.Animation.FADE,
     children: e => (0, r.jsx)(E.A, I(T(I({}, e), {
       buttonRef: v,
       label: O.intl.string(O.t.tmiYpF),
-      iconComponent: L,
+      iconComponent: x,
       onClick: t => {
         (null != S || null != u) && (0, l.X)(null != S ? S : u, l.O.STREAM_SETTINGS), null == e || e.onClick(t)
       }

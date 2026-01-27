@@ -27,7 +27,7 @@ function h(e, t, n) {
 }
 class m extends Chunk439372.A {
   handleSelectedGuildChange() {
-    let e = o.A.getGuildId();
+    let e = s.A.getGuildId();
     if (null == e || e === _.V || e === p.YYv) return;
     let t = a.A.getGuild(e);
     null == t || (d.Qb.trackExposure({
@@ -36,7 +36,7 @@ class m extends Chunk439372.A {
     }), l.x1.trackExposure({
       guildId: t.id,
       location: "GuildPowerupsManager"
-    }), (0, f.G)(s.A, t) && (u.A.shouldFetchCatalogForGuild(e) && (0, c.AK)(e), u.A.shouldFetchPowerupsForGuild(e) && (0, c.Xd)(e)))
+    }), (0, f.G)(o.A, t) && (u.A.shouldFetchCatalogForGuild(e) && (0, c.AK)(e), u.A.shouldFetchPowerupsForGuild(e) && (0, c.Xd)(e)))
   }
   handleEntitlementUpdate(e) {
     let {
@@ -51,10 +51,10 @@ class m extends Chunk439372.A {
     this.refreshGuildPowerups(t)
   }
   refreshGuildPowerups(e) {
-    true === (0, f.G)(s.A, a.A.getGuild(e)) && ((0, c.Xd)(e), (0, r.VU)(e))
+    true === (0, f.G)(o.A, a.A.getGuild(e)) && ((0, c.Xd)(e), (0, r.VU)(e))
   }
   constructor(...e) {
-    super(...e), h(this, "stores", new Map().set(o.A, this.handleSelectedGuildChange)), h(this, "actions", {
+    super(...e), h(this, "stores", new Map().set(s.A, this.handleSelectedGuildChange)), h(this, "actions", {
       GUILD_POWERUP_ENTITLEMENTS_CREATE: this.handleEntitlementUpdate.bind(this),
       GUILD_POWERUP_ENTITLEMENTS_DELETE: this.handleEntitlementUpdate.bind(this),
       GUILD_APPLIED_BOOSTS_UPDATE: this.handleAppliedBoostUpdate.bind(this)

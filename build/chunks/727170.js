@@ -22,13 +22,13 @@ let d = {
     [Chunk575593.R.EXTERNAL_SKU]: true
   },
   f = e => {
-    let t = (0, a.bG)([o.A], () => o.A.products);
+    let t = (0, a.bG)([s.A], () => s.A.products);
     return (0, r.useCallback)(n => {
       let {
         type: r,
         skuId: i
       } = n, a = t.get(i);
-      s.default.track(c.HAw.PREMIUM_FEATURE_TRY_OUT, {
+      o.default.track(c.HAw.PREMIUM_FEATURE_TRY_OUT, {
         feature_name: d[r],
         feature_tier: (0, l.G0)(a) ? u.tz.FREE : u.tz.PREMIUM_STANDARD,
         feature_selection: null == a ? true : a.name,

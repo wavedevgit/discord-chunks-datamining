@@ -47,7 +47,7 @@ let p = e => {
   },
   _ = e => {
     var t;
-    let n = null == (t = (0, o.Pv)(e, r.K.AGGREGATE_COUNT)) ? true : t.count;
+    let n = null == (t = (0, s.Pv)(e, r.K.AGGREGATE_COUNT)) ? true : t.count;
     return null == n ? [] : [{
       iconPath: c.pc,
       text: u.intl.formatToPlainString(u.t.HtifnG, {
@@ -72,17 +72,17 @@ let p = e => {
       channel: n,
       mediaImageSrc: r,
       artist: i,
-      description: o,
+      description: s,
       colors: c,
       badges: u
     } = e, d = h({
       avatarSrc: t.getAvatarURL(n.guild_id, 128),
       mediaImageSrc: r
     }), f = i.replaceAll(/[^a-zA-Z0-9 ]/g, "").replaceAll(" ", "-");
-    return await (0, s.r)({
+    return await (0, o.r)({
       assetsToLoad: d,
       drawImage: e => {
-        b(e, c), y(e), E(e), g(e, o), (0, l.$)({
+        b(e, c), y(e), E(e), g(e, s), (0, l.$)({
           canvas: e,
           badges: u,
           startPosition: 120,

@@ -68,7 +68,7 @@ let C = (0, Chunk268218.Fe)({
     name: "ComponentPlayground"
   }),
   T = (0, Chunk268218.Fe)({
-    createPromise: () => Promise.all([n.e("68587"), n.e("43600"), n.e("21968"), n.e("78888")]).then(n.bind(n, 667587)),
+    createPromise: () => Promise.all([n.e("43600"), n.e("68587"), n.e("21968"), n.e("78888")]).then(n.bind(n, 667587)),
     webpackId: 667587,
     name: "ChannelSettings"
   }),
@@ -78,7 +78,7 @@ let C = (0, Chunk268218.Fe)({
     name: "CollectiblesShop"
   }),
   x = (0, Chunk268218.Fe)({
-    createPromise: () => Promise.all([n.e("68587"), n.e("43600"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("11810"), n.e("8458"), n.e("39048"), n.e("98700")]).then(n.bind(n, 422559)),
+    createPromise: () => Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("11810"), n.e("8458"), n.e("39048"), n.e("98700")]).then(n.bind(n, 422559)),
     webpackId: 422559,
     name: "GuildSettings"
   }),

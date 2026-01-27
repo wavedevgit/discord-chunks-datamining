@@ -11,13 +11,13 @@ function i(e, t) {
     top: n,
     bottom: i,
     left: a,
-    right: s
+    right: o
   } = e;
   return {
     top: null != n ? Math.floor(r(n) * t.height) : true,
     left: null != a ? Math.floor(r(a) * t.width) : true,
     bottom: null != i ? Math.floor(r(i) * t.height) : true,
-    right: null != s ? Math.floor(r(s) * t.width) : true
+    right: null != o ? Math.floor(r(o) * t.width) : true
   }
 }
 
@@ -38,22 +38,22 @@ function a(e, t) {
   }
 }
 
-function s(e, t) {
+function o(e, t) {
   let {
     top: n,
     bottom: i,
     left: a,
-    right: s
+    right: o
   } = e;
   return {
     top: null != n ? r(n / t.height) : true,
     left: null != a ? r(a / t.width) : true,
     bottom: null != i ? r(i / t.height) : true,
-    right: null != s ? r(s / t.width) : true
+    right: null != o ? r(o / t.width) : true
   }
 }
 
-function o(e, t) {
+function s(e, t) {
   let {
     width: n,
     height: r,
@@ -73,15 +73,15 @@ function o(e, t) {
 function l(e, t, n, r, i) {
   let {
     top: a,
-    bottom: s,
-    left: o,
+    bottom: o,
+    left: s,
     right: l
   } = e;
-  if (null == a && null == s ? (a = 0, s = n - i) : null == a && null != s ? a = n - (s + i) : null != a && (s = n - (a + i)), null == o && null == l ? (o = 0, l = t - r) : null == o && null != l ? o = t - (l + r) : null == l && null != o && (l = t - (o + r)), null == a || null == s || null == o || null == l) throw Error("Logically this can never happen based on our if/else statements");
+  if (null == a && null == o ? (a = 0, o = n - i) : null == a && null != o ? a = n - (o + i) : null != a && (o = n - (a + i)), null == s && null == l ? (s = 0, l = t - r) : null == s && null != l ? s = t - (l + r) : null == l && null != s && (l = t - (s + r)), null == a || null == o || null == s || null == l) throw Error("Logically this can never happen based on our if/else statements");
   return {
     top: a,
-    left: o,
-    bottom: s,
+    left: s,
+    bottom: o,
     right: l
   }
 }
@@ -120,9 +120,9 @@ function d(e, t, n) {
   e = i(e, n);
   let {
     width: r,
-    height: s
+    height: o
   } = a(t, n);
-  return r = "string" == typeof r ? 0 : r, s = "string" == typeof s ? 0 : s, l(e, n.width, n.height, r, s)
+  return r = "string" == typeof r ? 0 : r, o = "string" == typeof o ? 0 : o, l(e, n.width, n.height, r, o)
 }
 
 function f(e, t, n) {
@@ -139,12 +139,12 @@ function f(e, t, n) {
     width: f,
     height: p
   } = t;
-  return [s(c(u(l({
+  return [o(c(u(l({
     top: r + d,
     left: i + a,
     bottom: true,
     right: true
-  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof p ? p : 0))), n), o(t, n)]
+  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof p ? p : 0))), n), s(t, n)]
 }
 
 function p(e, t, n) {
@@ -161,12 +161,12 @@ function p(e, t, n) {
     width: f,
     height: p
   } = t;
-  return [s(c(u(l({
+  return [o(c(u(l({
     top: r + d,
     left: true,
     bottom: true,
     right: i - a
-  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof p ? p : 0))), n), o(t, n)]
+  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof p ? p : 0))), n), s(t, n)]
 }
 
 function _(e, t) {
@@ -181,10 +181,10 @@ function _(e, t) {
 require.d(exports, {
   Ly: () => l,
   M4: () => f,
-  NO: () => s,
+  NO: () => o,
   NR: () => d,
   Nv: () => i,
-  R9: () => o,
+  R9: () => s,
   af: () => _,
   fd: () => a,
   fh: () => u,

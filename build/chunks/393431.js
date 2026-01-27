@@ -4,11 +4,11 @@
 var Chunk739305 = require("./739305.js"),
   Chunk503199 = require("./503199.js"),
   Chunk120394 = require("./120394.js"),
-  s = Chunk739305.aTypedArray;
+  o = Chunk739305.aTypedArray;
 (0, Chunk739305.exportTypedArrayMethod)("at", function(e) {
-  var t = s(this),
+  var t = o(this),
     n = i(t),
     r = a(e),
-    o = r >= 0 ? r : n + r;
-  return o < 0 || o >= n ? true : t[o]
+    s = r >= 0 ? r : n + r;
+  return s < 0 || s >= n ? true : t[s]
 })

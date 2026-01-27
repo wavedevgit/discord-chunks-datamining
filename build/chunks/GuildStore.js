@@ -40,7 +40,7 @@ class f extends Chunk23974.f {
   constructor(...e) {
     super(...e), u(this, "getGuild", e => {
       if (null != e) return e === l.YYv ? c._ : this.get(e)
-    }), u(this, "getGuilds", this.memoized(e => d({}, e))), u(this, "getGuildsArray", this.memoized(e => Object.values(e))), u(this, "getGuildIds", this.memoized(e => s.default.keys(e)))
+    }), u(this, "getGuilds", this.memoized(e => d({}, e))), u(this, "getGuildsArray", this.memoized(e => Object.values(e))), u(this, "getGuildIds", this.memoized(e => o.default.keys(e)))
   }
 }
 u(f, "displayName", "GuildStore");
@@ -117,8 +117,8 @@ let p = new f({
       guildId: n,
       joinedAt: r,
       user: a
-    } = e, s = o.default.getId(), l = t.get(n);
-    if (s !== a.id || null == l) return;
+    } = e, o = s.default.getId(), l = t.get(n);
+    if (o !== a.id || null == l) return;
     let c = "string" == typeof r ? new Date(r) : r;
     c !== l.joinedAt && null != c && t.set(n, (0, i.kn)(l, c))
   }

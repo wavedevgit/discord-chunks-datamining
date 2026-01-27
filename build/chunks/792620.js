@@ -8,7 +8,7 @@ require.d(exports, {
   IO: () => A,
   JC: () => Y,
   TP: () => p,
-  Xi: () => V,
+  Xi: () => F,
   YL: () => w,
   Yh: () => B,
   _3: () => c,
@@ -133,42 +133,42 @@ function P(e) {
   return (null == e ? true : e.type) === i.n.PLAY_ON_DESKTOP
 }
 let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
-  x = e => w(e) || o.A.isProgressingOnDesktop(e.id),
-  L = (e, t) => {
-    var n, i, s, o;
-    let l = null == (o = e.userStatus) || null == (s = o.progress) || null == (i = s[t.type]) || null == (n = i.heartbeat) ? true : n.lastBeatAt;
-    if (null == l || !x(e)) return 0;
+  L = e => w(e) || s.A.isProgressingOnDesktop(e.id),
+  x = (e, t) => {
+    var n, i, o, s;
+    let l = null == (s = e.userStatus) || null == (o = s.progress) || null == (i = o[t.type]) || null == (n = i.heartbeat) ? true : n.lastBeatAt;
+    if (null == l || !L(e)) return 0;
     let c = Date.now() - new Date(l).valueOf();
     return (0, r.floor)(c / a.A.Millis.SECOND, 2)
   },
-  j = (e, t) => {
-    var n, r, i, a, s;
+  M = (e, t) => {
+    var n, r, i, a, o;
     let l = null == (a = e.userStatus) || null == (i = a.progress) ? true : i[t.type],
-      c = null != (n = null != (r = null == l ? true : l.value) ? r : null == (s = e.userStatus) ? true : s.streamProgressSeconds) ? n : 0;
+      c = null != (n = null != (r = null == l ? true : l.value) ? r : null == (o = e.userStatus) ? true : o.streamProgressSeconds) ? n : 0;
     if (S(e)) {
-      let n = o.A.getOptimisticProgress(e.id, t.type);
+      let n = s.A.getOptimisticProgress(e.id, t.type);
       return null == n || n < c ? c : n
     }
-    return c + L(e, t)
+    return c + x(e, t)
   },
-  M = .99,
+  j = .99,
   k = (e, t) => {
     var n;
     let i = t.target;
     if ((null == (n = e.userStatus) ? true : n.completedAt) != null) return i;
-    let a = Math.min(i * M, j(e, t));
+    let a = Math.min(i * j, M(e, t));
     return Math.max((0, r.floor)(a, 2), 0)
   },
   U = e => {
     var t, n, r;
     let {
-      quest: s,
-      taskType: o,
+      quest: o,
+      taskType: s,
       includeTaskTypes: l = i.o.ALL
-    } = e, c = s.config.taskConfigV2, u = null != o ? o : null == (n = Object.values(c.tasks).filter(e => l.has(e.type))[0]) ? true : n.type, d = null != (t = c.tasks[u]) ? t : c.tasks[i.n.STREAM_ON_DESKTOP];
-    if (null == d) throw Error("No task with type ".concat(o, " found for quest ").concat(s.id, "!"));
+    } = e, c = o.config.taskConfigV2, u = null != s ? s : null == (n = Object.values(c.tasks).filter(e => l.has(e.type))[0]) ? true : n.type, d = null != (t = c.tasks[u]) ? t : c.tasks[i.n.STREAM_ON_DESKTOP];
+    if (null == d) throw Error("No task with type ".concat(s, " found for quest ").concat(o.id, "!"));
     let f = d.target,
-      p = k(s, d),
+      p = k(o, d),
       _ = Object.values(c.tasks).find(P),
       h = null == _ || null == (r = _.applications) ? true : r.map(e => e.id);
     return {
@@ -182,13 +182,13 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
   },
   G = e => i.o.ALL.has(e) ? e : null;
 
-function V(e) {
+function F(e) {
   var t;
   let n = e.taskConfigV2.tasks[i.n.WATCH_VIDEO],
     r = e.taskConfigV2.tasks[i.n.WATCH_VIDEO_ON_MOBILE];
   return null != n && null != r ? n : null != (t = null != r ? r : n) ? t : null
 }
-let F = e => {
+let V = e => {
     var t, n;
     let {
       quest: r,
@@ -199,7 +199,7 @@ let F = e => {
         let i = null == e || null == (n = e.heartbeat) ? true : n.lastBeatAt,
           a = null == t || null == (r = t.heartbeat) ? true : r.lastBeatAt;
         return null != i && null != a ? new Date(i).valueOf() > new Date(a).valueOf() ? false : 1 : null == i && null == a && (null == e ? true : e.updatedAt) != null && (null == t ? true : t.updatedAt) != null ? new Date(e.updatedAt).valueOf() > new Date(t.updatedAt).valueOf() ? false : 1 : null != i && null == a ? false : 1
-      }).filter(s.Vq)) {
+      }).filter(o.Vq)) {
       let t = G(e.eventName);
       if (null != t && (null == a ? true : a.has(t))) return U({
         quest: r,
@@ -220,7 +220,7 @@ let F = e => {
       percentComplete: 0,
       taskType: i.n.STREAM_ON_DESKTOP
     };
-    if (v(e)) return F({
+    if (v(e)) return V({
       quest: e,
       includeTaskTypes: null != t ? t : w(e) ? i.o.CONSOLE : i.o.ALL
     });
@@ -228,7 +228,7 @@ let F = e => {
       var n;
       return U({
         quest: e,
-        taskType: null == (n = V(e.config)) ? true : n.type
+        taskType: null == (n = F(e.config)) ? true : n.type
       })
     }
     return y(e) ? U({
@@ -255,14 +255,14 @@ function Y(e) {
   var t, n, r, i;
   let a = H(e.config);
   if (null == a) return null;
-  let s = null != (t = null == (i = e.userStatus) || null == (r = i.progress) || null == (n = r[a.type]) ? true : n.value) ? t : 0,
-    o = D(a.target, s);
+  let o = null != (t = null == (i = e.userStatus) || null == (r = i.progress) || null == (n = r[a.type]) ? true : n.value) ? t : 0,
+    s = D(a.target, o);
   return {
     title: a.messages.taskTitle,
     description: a.messages.taskDescription,
     target: a.target,
-    progress: s,
-    percentComplete: o
+    progress: o,
+    percentComplete: s
   }
 }
 

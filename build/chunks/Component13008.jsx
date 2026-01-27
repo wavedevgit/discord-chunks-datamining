@@ -1,17 +1,16 @@
-/** Chunk was on web.js **/
-/** chunk id: 13008, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86142 **/
+/** chunk id: 13008, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => g
 }), require("./896048.js"), require("./321073.js");
 var r, i, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  l = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk235986 = require("./235986.jsx"),
   Chunk267950 = require("./267950.js");
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,14 +18,14 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class f extends(r = Chunk64700.PureComponent) {
+class h extends(r = Chunk64700.PureComponent) {
   render() {
     let {
       className: e
     } = this.props;
-    return (0, a.jsx)("input", {
+    return (0, s.jsx)("input", {
       ref: this.setCodeBlockRef,
-      className: l()(u.h, e),
+      className: o()(d.h, e),
       maxLength: 1,
       value: null != this.props.code ? this.props.code : true,
       autoFocus: this.props.autoFocus,
@@ -43,9 +42,9 @@ class f extends(r = Chunk64700.PureComponent) {
     null == (e = this._codeBlockRef) || e.blur()
   }
   constructor(...e) {
-    super(...e), d(this, "_codeBlockRef", true), d(this, "setCodeBlockRef", e => {
+    super(...e), u(this, "_codeBlockRef", true), u(this, "setCodeBlockRef", e => {
       this._codeBlockRef = e
-    }), d(this, "handleKeyDown", e => {
+    }), u(this, "handleKeyDown", e => {
       let t = 8 === e.which || 37 === e.which || 39 === e.which,
         n = e.which >= 48 && e.which <= 57 || e.keyCode >= 96 && e.keyCode <= 105;
       t || n || e.preventDefault();
@@ -53,7 +52,7 @@ class f extends(r = Chunk64700.PureComponent) {
         onKeyDown: r
       } = this.props;
       null == r || r(e)
-    }), d(this, "handleChange", e => {
+    }), u(this, "handleChange", e => {
       let {
         onChange: t
       } = this.props;
@@ -61,7 +60,7 @@ class f extends(r = Chunk64700.PureComponent) {
     })
   }
 }
-d(f, "defaultProps", {
+u(h, "defaultProps", {
   autoFocus: false
 });
 class p extends(i = Chunk64700.PureComponent) {
@@ -72,9 +71,9 @@ class p extends(i = Chunk64700.PureComponent) {
     } = this.props, {
       codes: n
     } = this.state, r = [];
-    for (let e = 0; e < n.length; e++) e === n.length / 2 && r.push((0, a.jsx)("div", {
-      className: u.j
-    }, "spacer")), r.push((0, a.jsx)(f, {
+    for (let e = 0; e < n.length; e++) e === n.length / 2 && r.push((0, s.jsx)("div", {
+      className: d.j
+    }, "spacer")), r.push((0, s.jsx)(h, {
       ref: t => this.setCodeBlockRef(e, t),
       code: n[e],
       autoFocus: 0 === e,
@@ -82,7 +81,7 @@ class p extends(i = Chunk64700.PureComponent) {
       onKeyDown: t => this.handleKeyDown(e, t),
       className: t
     }, e));
-    return (0, a.jsx)(c.A, {
+    return (0, s.jsx)(c.A, {
       align: c.A.Align.CENTER,
       justify: c.A.Justify.CENTER,
       className: e,
@@ -129,12 +128,12 @@ class p extends(i = Chunk64700.PureComponent) {
     null == t || t(e)
   }
   constructor(e) {
-    super(e), d(this, "_codeBlockRefs", Array(this.props.count)), this.state = {
+    super(e), u(this, "_codeBlockRefs", Array(this.props.count)), this.state = {
       codes: Array(e.count)
     }
   }
 }
-d(p, "defaultProps", {
+u(p, "defaultProps", {
   count: 6
 });
-let _ = p
+let g = p

@@ -2,7 +2,7 @@
 /** chunk id: 291048, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var r = function(e, t) {
     switch (e) {
@@ -46,10 +46,10 @@ var r = function(e, t) {
   },
   a = function(e, t) {
     var n, a = e.match(/(P+)(p+)?/) || [],
-      s = a[1],
-      o = a[2];
-    if (!o) return r(e, t);
-    switch (s) {
+      o = a[1],
+      s = a[2];
+    if (!s) return r(e, t);
+    switch (o) {
       case "P":
         n = t.dateTime({
           width: "short"
@@ -70,9 +70,9 @@ var r = function(e, t) {
           width: "full"
         })
     }
-    return n.replace("{{date}}", r(s, t)).replace("{{time}}", i(o, t))
+    return n.replace("{{date}}", r(o, t)).replace("{{time}}", i(s, t))
   };
-let s = {
+let o = {
   p: i,
   P: a
 }

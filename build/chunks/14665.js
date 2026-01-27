@@ -17,7 +17,7 @@ module.exports = function(e) {
   for (var t in e)
     if (i(e, t) && !a[t]) returnfalse;
   var n = i(e, "[[Value]]") || i(e, "[[Writable]]"),
-    s = i(e, "[[Get]]") || i(e, "[[Set]]");
-  if (n && s) throw new r("Property Descriptors may not be both accessor and data descriptors");
+    o = i(e, "[[Get]]") || i(e, "[[Set]]");
+  if (n && o) throw new r("Property Descriptors may not be both accessor and data descriptors");
   returntrue
 }

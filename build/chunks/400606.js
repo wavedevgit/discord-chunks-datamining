@@ -3,17 +3,17 @@
 "use strict";
 require.d(exports, {
   R: () => a,
-  o: () => o
+  o: () => s
 });
 var Chunk534278 = require("./534278.js"),
   Chunk408713 = require("./408713.js");
 
 function a(e, t) {
-  let n = s(e, t, "left"),
-    r = s(e, t, "top"),
+  let n = o(e, t, "left"),
+    r = o(e, t, "top"),
     i = t.offsetWidth,
     a = t.offsetHeight,
-    o = e.scrollLeft,
+    s = e.scrollLeft,
     l = e.scrollTop,
     {
       borderTopWidth: c,
@@ -29,7 +29,7 @@ function a(e, t) {
       scrollMarginBottom: g,
       scrollMarginLeft: E
     } = getComputedStyle(t),
-    y = o + parseInt(u, 10),
+    y = s + parseInt(u, 10),
     b = l + parseInt(c, 10),
     O = y + e.clientWidth,
     v = b + e.clientHeight,
@@ -43,18 +43,18 @@ function a(e, t) {
     R = n - (parseInt(E, 10) || 0),
     P = n + i + w,
     D = r - C,
-    x = r + a + N,
-    L = o + parseInt(u, 10) + T,
-    j = O - S,
-    M = l + parseInt(c, 10) + A,
+    L = r + a + N,
+    x = s + parseInt(u, 10) + T,
+    M = O - S,
+    j = l + parseInt(c, 10) + A,
     k = v - I;
-  (R > L || P < j) && (R <= o + T ? o = R - parseInt(u, 10) - T : P > O - S && (o += P - O + S)), (D > M || x < k) && (D <= b + A ? l = D - parseInt(c, 10) - A : x > v - I && (l += x - v + I)), e.scrollTo({
-    left: o,
+  (R > x || P < M) && (R <= s + T ? s = R - parseInt(u, 10) - T : P > O - S && (s += P - O + S)), (D > j || L < k) && (D <= b + A ? l = D - parseInt(c, 10) - A : L > v - I && (l += L - v + I)), e.scrollTo({
+    left: s,
     top: l
   })
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   let r = "left" === n ? "offsetLeft" : "offsetTop",
     i = 0;
   for (; t.offsetParent && (i += t[r], t.offsetParent !== e);) {
@@ -67,13 +67,13 @@ function s(e, t, n) {
   return i
 }
 
-function o(e, t) {
+function s(e, t) {
   if (e && document.contains(e)) {
     let c = document.scrollingElement || document.documentElement;
     if ("hidden" === window.getComputedStyle(c).overflow || (0, i.H8)())
       for (let t of (0, r.R)(e)) a(t, e);
     else {
-      var n, s, o, l;
+      var n, o, s, l;
       let {
         left: r,
         top: i
@@ -85,7 +85,7 @@ function o(e, t) {
         left: a,
         top: c
       } = e.getBoundingClientRect();
-      (Math.abs(r - a) > 1 || Math.abs(i - c) > 1) && (null == t || null == (o = t.containingElement) || null == (s = o.scrollIntoView) || s.call(o, {
+      (Math.abs(r - a) > 1 || Math.abs(i - c) > 1) && (null == t || null == (s = t.containingElement) || null == (o = s.scrollIntoView) || o.call(s, {
         block: "center",
         inline: "center"
       }), null == (l = e.scrollIntoView) || l.call(e, {

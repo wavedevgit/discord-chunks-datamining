@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -53,8 +53,8 @@ let c = e => {
   let {
     open: t,
     className: n
-  } = e, a = o(e, ["open", "className"]), l = t ? i.PGe : i.abt;
-  return (0, r.jsx)(l, s({
+  } = e, a = s(e, ["open", "className"]), l = t ? i.PGe : i.abt;
+  return (0, r.jsx)(l, o({
     className: n,
     size: "sm",
     color: "currentColor"

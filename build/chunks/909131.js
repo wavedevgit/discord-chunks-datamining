@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk473318 = require("./473318.js"),
   i = require.n(Chunk473318),
   Chunk128080 = require("./128080.js"),
-  s = require.n(Chunk128080),
+  o = require.n(Chunk128080),
   Chunk904986 = require("./904986.js"),
   Chunk205693 = require("./205693.js"),
   Chunk405163 = require("./405163.js"),
@@ -116,10 +116,10 @@ class E extends Chunk904986.A {
       a = e.encodingVideoHeight;
     if (null != i && null != a)
       for (let e of r.getTracks()) {
-        var s, o;
+        var o, s;
         let t = e.getConstraints(),
-          n = null == (s = t.width) ? true : s.max,
-          r = null == (o = t.height) ? true : o.max;
+          n = null == (o = t.width) ? true : o.max,
+          r = null == (s = t.height) ? true : s.max;
         (n !== i || r !== a) && (this.logger.info("BaseWebRTCConnection.updateVideoQuality: old: ".concat(n, " x ").concat(r, ", new: ").concat(i, " x ").concat(a)), t.width = {
           max: i
         }, t.height = {
@@ -153,7 +153,7 @@ class E extends Chunk904986.A {
       for (let t of this.videoStreamParameters) {
         let r = e.findIndex(e => e.rid === t.rid);
         if (false === r) return void n(Error("Invalid rid"));
-        s()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = m({}, e[r]))
+        o()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = m({}, e[r]))
       }
       t()
     })
@@ -235,11 +235,11 @@ class E extends Chunk904986.A {
     var t;
     super(e.context, e.userId), t = this, h(this, "input", true), h(this, "silenced", false), h(this, "interacted", false), h(this, "outputVolume", p.Hz), h(this, "sinkId", p.dx), h(this, "lastPingTime", 0), h(this, "outputs", {}), h(this, "webrtcStats", new d.J), h(this, "silenceThreshold", false), h(this, "canHavePriority", new Set), h(this, "prioritySpeakers", new Set), h(this, "audioContext", true), h(this, "setEchoCancellation", e => this.input.setEchoCancellation(e)), h(this, "setNoiseSuppression", e => this.input.setNoiseSuppression(e)), h(this, "setNoiseCancellation", e => this.input.setNoiseCancellation(e)), h(this, "getNoiseCancellation", () => this.input.getNoiseCancellation()), h(this, "setAutomaticGainControl", e => this.input.setAutomaticGainControl(e)), h(this, "setAudioSource", e => this.input.setAudioSource(e)), h(this, "setVideoSource", e => this.input.setVideoSource(e)), h(this, "setDesktopInput", e => {
       if (null != e) {
-        var t, n, r, i, a, s, o;
+        var t, n, r, i, a, o, s;
         let l = e.stream.getVideoTracks()[0].getConstraints(),
           c = {
             width: "number" == typeof l.width ? l.width : null != (t = null == (i = l.width) ? true : i.ideal) ? t : null == (a = l.width) ? true : a.max,
-            height: "number" == typeof l.height ? l.height : null != (n = null == (s = l.height) ? true : s.ideal) ? n : null == (o = l.height) ? true : o.max
+            height: "number" == typeof l.height ? l.height : null != (n = null == (o = l.height) ? true : o.ideal) ? n : null == (s = l.height) ? true : s.max
           },
           u = (null != (r = null == c ? true : c.height) ? r : 0) > 720 ? p.oL : p.lo;
         this.videoQualityManager.setGoliveQuality({

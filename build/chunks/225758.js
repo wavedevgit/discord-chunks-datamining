@@ -1,61 +1,57 @@
-/** Chunk was on web.js **/
-/** chunk id: 225758, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 225758, original params: t,e,r (module,exports,require) **/
 "use strict";
-
-function r(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
-}
-module.exports = function(e) {
-  function t() {
-    return e.apply(this, arguments) || this
+module.exports = function(t) {
+  function e() {
+    return t.apply(this, arguments) || this
   }
-  r(t, e);
-  var n = t.prototype;
-  return n.serialize = function() {
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
+  var r = e.prototype;
+  return r.serialize = function() {
     return "Anchor: " + this.getAnchorKey() + ":" + this.getAnchorOffset() + ", Focus: " + this.getFocusKey() + ":" + this.getFocusOffset() + ", Is Backward: " + String(this.getIsBackward()) + ", Has Focus: " + String(this.getHasFocus())
-  }, n.getAnchorKey = function() {
+  }, r.getAnchorKey = function() {
     return this.get("anchorKey")
-  }, n.getAnchorOffset = function() {
+  }, r.getAnchorOffset = function() {
     return this.get("anchorOffset")
-  }, n.getFocusKey = function() {
+  }, r.getFocusKey = function() {
     return this.get("focusKey")
-  }, n.getFocusOffset = function() {
+  }, r.getFocusOffset = function() {
     return this.get("focusOffset")
-  }, n.getIsBackward = function() {
+  }, r.getIsBackward = function() {
     return this.get("isBackward")
-  }, n.getHasFocus = function() {
+  }, r.getHasFocus = function() {
     return this.get("hasFocus")
-  }, n.hasEdgeWithin = function(e, t, n) {
-    var r = this.getAnchorKey(),
+  }, r.hasEdgeWithin = function(t, e, r) {
+    var n = this.getAnchorKey(),
       i = this.getFocusKey();
-    if (r === i && r === e) {
-      var a = this.getStartOffset(),
-        s = this.getEndOffset();
-      return t <= a && a <= n || t <= s && s <= n
+    if (n === i && n === t) {
+      var o = this.getStartOffset(),
+        a = this.getEndOffset();
+      return e <= o && o <= r || e <= a && a <= r
     }
-    if (e !== r && e !== i) returnfalse;
-    var o = e === r ? this.getAnchorOffset() : this.getFocusOffset();
-    return t <= o && n >= o
-  }, n.isCollapsed = function() {
+    if (t !== n && t !== i) returnfalse;
+    var s = t === n ? this.getAnchorOffset() : this.getFocusOffset();
+    return e <= s && r >= s
+  }, r.isCollapsed = function() {
     return this.getAnchorKey() === this.getFocusKey() && this.getAnchorOffset() === this.getFocusOffset()
-  }, n.getStartKey = function() {
+  }, r.getStartKey = function() {
     return this.getIsBackward() ? this.getFocusKey() : this.getAnchorKey()
-  }, n.getStartOffset = function() {
+  }, r.getStartOffset = function() {
     return this.getIsBackward() ? this.getFocusOffset() : this.getAnchorOffset()
-  }, n.getEndKey = function() {
+  }, r.getEndKey = function() {
     return this.getIsBackward() ? this.getAnchorKey() : this.getFocusKey()
-  }, n.getEndOffset = function() {
+  }, r.getEndOffset = function() {
     return this.getIsBackward() ? this.getAnchorOffset() : this.getFocusOffset()
-  }, t.createEmpty = function(e) {
-    return new t({
-      anchorKey: e,
+  }, e.createEmpty = function(t) {
+    return new e({
+      anchorKey: t,
       anchorOffset: 0,
-      focusKey: e,
+      focusKey: t,
       focusOffset: 0,
       isBackward: false,
       hasFocus: false
     })
-  }, t
+  }, e
 }((0, require("./116740.js").Record)({
   anchorKey: "",
   anchorOffset: 0,

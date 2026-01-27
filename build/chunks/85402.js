@@ -3,27 +3,27 @@
 "use strict";
 require.d(exports, {
   Ec: () => l,
-  Tm: () => s,
-  Zv: () => o,
+  Tm: () => o,
+  Zv: () => s,
   aq: () => c,
   at: () => i,
   oq: () => a
 });
 var r = Symbol.for("FluidValue:config"),
   i = function(e) {
-    return !!s(e)
+    return !!o(e)
   };
 
 function a(e) {
-  var t = s(e);
+  var t = o(e);
   return t ? t.get() : e
 }
 
-function s(e) {
+function o(e) {
   if (e) return e[r]
 }
 
-function o(e, t) {
+function s(e, t) {
   Object.defineProperty(e, r, {
     value: t,
     configurable: true
@@ -31,7 +31,7 @@ function o(e, t) {
 }
 
 function l(e, t) {
-  var n = s(e);
+  var n = o(e);
   if (n) return n.addChild(t),
     function() {
       return n.removeChild(t)
@@ -39,6 +39,6 @@ function l(e, t) {
 }
 var c = function() {
   return function() {
-    o(this, this)
+    s(this, this)
   }
 }()

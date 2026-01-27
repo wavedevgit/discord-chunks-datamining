@@ -7,15 +7,15 @@ require.d(exports, {
 var Chunk355418 = require("./355418.js"),
   Chunk322811 = require("./322811.js"),
   Chunk658809 = require("./658809.js");
-let s = 1,
-  o = 2;
+let o = 1,
+  s = 2;
 class l extends Chunk355418.c {
   innerPattern(e) {
     return /(gisteren|morgen|van)(ochtend|middag|namiddag|avond|nacht)(?=\W|$)/i
   }
   innerExtract(e, t) {
-    let n = t[s].toLowerCase(),
-      r = t[o].toLowerCase(),
+    let n = t[o].toLowerCase(),
+      r = t[s].toLowerCase(),
       l = e.createParsingComponents(),
       c = e.refDate;
     switch (n) {

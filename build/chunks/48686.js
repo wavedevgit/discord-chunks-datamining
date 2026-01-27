@@ -11,15 +11,15 @@ var Chunk311907 = require("./311907.js"),
   Chunk309010 = require("./309010.js"),
   Chunk652215 = require("./652215.js");
 let l = () => {
-    let e = s.A.getVoiceChannelId();
+    let e = o.A.getVoiceChannelId();
     if (null == e) returnfalse;
     let t = i.A.getChannel(e);
     if (null == t) returnfalse;
     let n = a.A.getGuild(t.getGuildId());
-    return null != n && n.features.has(o.GuildFeatures.HUB)
+    return null != n && n.features.has(s.GuildFeatures.HUB)
   },
-  c = e => (0, r.bG)([s.A, i.A, a.A], () => {
-    let t = s.A.getVoiceChannelId();
+  c = e => (0, r.bG)([o.A, i.A, a.A], () => {
+    let t = o.A.getVoiceChannelId();
     if (null == t) returnfalse;
     let n = i.A.getChannel(t);
     if (null == n) returnfalse;

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk765671 = require("./765671.js"),
@@ -78,19 +78,19 @@ function D(e) {
   return t ? i : Math.max(0, Math.round(n / r * i))
 }
 
-function x(e) {
+function L(e) {
   let {
     context: t,
     devicePixelRatio: n,
     canvasHeight: r,
     segmentValue: i,
     segmentIndex: a,
-    constrainMin: s
-  } = e, o = s ? (v - A) * i + A : v * i;
-  0 === o || P(t, a * (2 * y + b) * n, (r / 2 - o / 2) * n, o * n, y * n)
+    constrainMin: o
+  } = e, s = o ? (v - A) * i + A : v * i;
+  0 === s || P(t, a * (2 * y + b) * n, (r / 2 - s / 2) * n, s * n, y * n)
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = i.useMemo(() => C(e), [e]),
     r = i.useMemo(() => R(t), [t]);
   return i.useMemo(() => {
@@ -99,25 +99,25 @@ function L(e, t) {
   }, [n, r])
 }
 
-function j(e, t, n) {
-  let [r, a] = i.useState(e), [s, o] = i.useState(e), l = i.useRef(s);
+function M(e, t, n) {
+  let [r, a] = i.useState(e), [o, s] = i.useState(e), l = i.useRef(o);
   return i.useLayoutEffect(() => {
-    l.current = s
+    l.current = o
   }), i.useLayoutEffect(() => {
-    a(l.current), o(e)
-  }, [e, t, n]), [r, s]
+    a(l.current), s(e)
+  }, [e, t, n]), [r, o]
 }
 
-function M(e, t) {
-  let n = (0, l.rdh)(o.A.colors.BACKGROUND_MOD_MUTED).hex(),
-    r = (0, l.rdh)(o.A.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
-    i = (0, l.rdh)(o.A.colors.INTERACTIVE_TEXT_ACTIVE).hex(),
-    a = (0, l.rdh)(o.A.unsafe_rawColors.BRAND_430).hex(),
-    s = (0, l.rdh)(o.A.unsafe_rawColors.WHITE).hex(),
+function j(e, t) {
+  let n = (0, l.rdh)(s.A.colors.BACKGROUND_MOD_MUTED).hex(),
+    r = (0, l.rdh)(s.A.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
+    i = (0, l.rdh)(s.A.colors.INTERACTIVE_TEXT_ACTIVE).hex(),
+    a = (0, l.rdh)(s.A.unsafe_rawColors.BRAND_430).hex(),
+    o = (0, l.rdh)(s.A.unsafe_rawColors.WHITE).hex(),
     c = t ? a : n,
-    [u, d] = j(c, t, e),
-    [f, p] = j(t ? s : e ? i : r, t, e),
-    [_, h] = j(e ? c : r, t, e);
+    [u, d] = M(c, t, e),
+    [f, p] = M(t ? o : e ? i : r, t, e),
+    [_, h] = M(e ? c : r, t, e);
   return {
     lastBackgroundFillColor: u,
     backgroundFillColor: d,
@@ -139,7 +139,7 @@ function U(e) {
     className: t,
     waveform: n,
     currentTime: a,
-    duration: o,
+    duration: s,
     played: l,
     playing: d,
     onDrag: f,
@@ -148,20 +148,20 @@ function U(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.Ay)(), y = i.useMemo(() => w(o), [o]), b = i.useRef(true), O = L(n, E), A = i.useRef(l), S = i.useRef(d), C = i.useRef(null), N = window.devicePixelRatio, {
+  } = (0, c.Ay)(), y = i.useMemo(() => w(s), [s]), b = i.useRef(true), O = x(n, E), A = i.useRef(l), S = i.useRef(d), C = i.useRef(null), N = window.devicePixelRatio, {
     lastBackgroundFillColor: R,
     backgroundFillColor: P,
-    lastActiveFillColor: j,
+    lastActiveFillColor: M,
     activeFillColor: U,
     lastInactiveFillColor: G,
-    inactiveFillColor: V
-  } = M(l, d), F = {
+    inactiveFillColor: F
+  } = j(l, d), V = {
     currentTime: a,
-    duration: o,
+    duration: s,
     played: l
-  }, B = i.useRef(F);
+  }, B = i.useRef(V);
   i.useEffect(() => {
-    B.current = F
+    B.current = V
   }), i.useEffect(() => {
     let {
       currentTime: e,
@@ -180,7 +180,7 @@ function U(e) {
     let t = D({
       showAll: !l,
       currentTime: a,
-      duration: o,
+      duration: s,
       numSegments: O.length
     });
     for (let n = 0; n < e.length; n++) {
@@ -191,7 +191,7 @@ function U(e) {
       }
       r.reset()
     }
-  }, [O, a, o, l]), i.useEffect(() => {
+  }, [O, a, s, l]), i.useEffect(() => {
     let e = null;
 
     function t(n) {
@@ -199,43 +199,43 @@ function U(e) {
         i = null == r ? true : r.getContext("2d"),
         a = b.current;
       if (null == r || null == i || null == a) return;
-      let s = false;
+      let o = false;
       (A.current !== l || S.current !== d) && (A.current = l, S.current = d, C.current = n), null != C.current && n > C.current + T && (C.current = null);
-      let o = r.height / N;
+      let s = r.height / N;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
       let [c, u] = k(R, P, n, C.current);
-      s = s || u, i.fillStyle = c;
-      for (let e = 0; e < O.length; e++) x({
+      o = o || u, i.fillStyle = c;
+      for (let e = 0; e < O.length; e++) L({
         context: i,
         devicePixelRatio: N,
-        canvasHeight: o,
+        canvasHeight: s,
         segmentValue: O[e],
         segmentIndex: e,
         constrainMin: true
       });
       i.fill();
-      let [f, p] = k(G, V, n, C.current);
-      s = s || p;
-      let [_, h] = k(j, U, n, C.current);
-      s = s || h;
+      let [f, p] = k(G, F, n, C.current);
+      o = o || p;
+      let [_, h] = k(M, U, n, C.current);
+      o = o || h;
       for (let e = 0; e < a.length; e++) {
         let t = a[e],
           n = Math.max(t.getCurrentValue(), O[e] - .1);
-        i.beginPath(), i.fillStyle = t.isReset ? f : _, x({
+        i.beginPath(), i.fillStyle = t.isReset ? f : _, L({
           context: i,
           devicePixelRatio: N,
-          canvasHeight: o,
+          canvasHeight: s,
           segmentValue: n,
           segmentIndex: e,
           constrainMin: !t.isReset
-        }), s = s || t.isAnimating(), i.fill()
+        }), o = o || t.isAnimating(), i.fill()
       }
-      s && (e = requestAnimationFrame(t))
+      o && (e = requestAnimationFrame(t))
     }
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, N, O, E, a, o, l, d, R, P, j, U, G, V]);
+  }, [g, N, O, E, a, s, l, d, R, P, M, U, G, F]);
   let [, H] = (0, u.A)({
     ref: g,
     onDrag: f,
@@ -244,7 +244,7 @@ function U(e) {
   });
   return (0, r.jsx)("canvas", {
     onMouseDown: H,
-    className: s()(_.J, t),
+    className: o()(_.J, t),
     style: {
       width: y
     },

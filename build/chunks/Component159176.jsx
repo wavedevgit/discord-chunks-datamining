@@ -18,11 +18,11 @@ let c = {
     let {
       deepLinkUrl: t
     } = e, n = () => {
-      console.log("Opening deep link... ", t), o.A.launch(t, e => {
+      console.log("Opening deep link... ", t), s.A.launch(t, e => {
         console.log("onDone response: ", e)
       })
     };
-    return (0, r.jsx)(s.PaymentContextProvider, {
+    return (0, r.jsx)(o.PaymentContextProvider, {
       stepConfigs: [],
       skuIDs: [],
       activeSubscription: null,

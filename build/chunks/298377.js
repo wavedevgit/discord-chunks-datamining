@@ -48,11 +48,11 @@ function f(e, t, n) {
       }
     }
   }
-  let N = (0, s.HI)(f.props),
+  let N = (0, o.HI)(f.props),
     w = h.hasAction ? N : {};
   return {
     rowProps: {
-      ...(0, o.v)(_, g, w),
+      ...(0, s.v)(_, g, w),
       "aria-labelledby": (0, r.VJ)(t, f.key)
     },
     ...h

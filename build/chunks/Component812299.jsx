@@ -16,10 +16,10 @@ function l(e) {
   let t, {
     message: n,
     channel: r,
-    user: o,
+    user: s,
     isRepliedMessage: l
   } = e;
-  return (null == n ? true : n.isSystemDM()) ? t = i.A.Types.SYSTEM_DM : null != n && (0, s.A)(n) ? t = (0, a.MZ)(n) ? i.A.Types.OFFICIAL : i.A.Types.SERVER : (null == o ? true : o.bot) ? t = i.A.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == o ? true : o.id) && !l && (t = i.A.Types.ORIGINAL_POSTER), t
+  return (null == n ? true : n.isSystemDM()) ? t = i.A.Types.SYSTEM_DM : null != n && (0, o.A)(n) ? t = (0, a.MZ)(n) ? i.A.Types.OFFICIAL : i.A.Types.SERVER : (null == s ? true : s.bot) ? t = i.A.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == s ? true : s.id) && !l && (t = i.A.Types.ORIGINAL_POSTER), t
 }
 
 function c(e) {
@@ -27,7 +27,7 @@ function c(e) {
     message: t,
     channel: n,
     user: a,
-    compact: s,
+    compact: o,
     isRepliedMessage: c,
     hideIcon: u = false,
     children: d
@@ -35,13 +35,13 @@ function c(e) {
     message: t,
     channel: n,
     user: a,
-    compact: s,
+    compact: o,
     isRepliedMessage: c,
     hideIcon: u,
     children: d
   });
   return null == f ? null : (0, r.jsx)(i.A, {
-    className: s ? o.jW : o.RQ,
+    className: o ? s.jW : s.RQ,
     type: f,
     verified: null == a ? true : a.isVerifiedBot(),
     hideIcon: u,

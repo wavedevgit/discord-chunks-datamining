@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 922281, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 52199 **/
+/** chunk id: 922281, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -12,70 +11,60 @@ var Chunk397927 = require("./397927.js"),
   Chunk44022 = require("./44022.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function c(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function u(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      c(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function d(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function p(e) {
+function c(e) {
   let {
     onOpen: t,
-    onClose: n,
+    onClose: r,
     className: c
   } = e;
-  return (0, r.jsx)(o.$, {
+  return (0, n.jsx)(i.$, {
     onOpen: t,
-    onClose: n,
+    onClose: r,
     popoutPosition: "bottom",
     popoutAlign: "right",
-    children: (e, t, n, o, d) => (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.In, f(u({}, n), {
-        ref: d,
-        className: c,
-        onClick: e,
-        icon: i.cFy,
-        "aria-label": l.intl.string(l.t["2pAkDA"]),
-        tooltip: t ? null : l.intl.string(l.t["2pAkDA"]),
-        selected: t,
-        showBadge: o
-      })), (0, r.jsx)(s.v, {
-        location: "bookmarks-button",
-        targetElementRef: d
-      })]
-    })
+    children: (e, t, r, i, u) => {
+      var d, h;
+      return (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(s.In, (d = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var r = null != arguments[t] ? arguments[t] : {},
+              n = Object.keys(r);
+            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(r, e).enumerable
+            }))), n.forEach(function(t) {
+              var n;
+              n = r[t], t in e ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = n
+            })
+          }
+          return e
+        }({}, r), h = h = {
+          ref: u,
+          className: c,
+          onClick: e,
+          icon: l.cFy,
+          "aria-label": o.intl.string(o.t["2pAkDA"]),
+          tooltip: t ? null : o.intl.string(o.t["2pAkDA"]),
+          selected: t,
+          showBadge: i
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
+          var r = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var n = Object.getOwnPropertySymbols(e);
+            r.push.apply(r, n)
+          }
+          return r
+        })(Object(h)).forEach(function(e) {
+          Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(h, e))
+        }), d)), (0, n.jsx)(a.v, {
+          location: "bookmarks-button",
+          targetElementRef: u
+        })]
+      })
+    }
   })
 }

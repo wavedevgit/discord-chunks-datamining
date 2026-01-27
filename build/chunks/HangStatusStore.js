@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 /** chunk id: 242919, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, s;
+let r, i, a, o;
 require.d(exports, {
   A: () => U,
   x: () => S
 }), require("./896048.js"), require("./321073.js");
-var o, Chunk812729 = require("./812729.js"),
+var s, Chunk812729 = require("./812729.js"),
   c = require.n(Chunk812729),
   Chunk284009 = require("./284009.js"),
   d = require.n(Chunk284009),
@@ -78,17 +78,17 @@ function R(e) {
   let {
     status: t,
     guildId: n,
-    saveAsDefault: o
+    saveAsDefault: s
   } = e;
-  if (d()(t !== y.Kk.CUSTOM, "Hang Status cannot be custom"), r = t, i = null, s = null, null != t) {
+  if (d()(t !== y.Kk.CUSTOM, "Hang Status cannot be custom"), r = t, i = null, o = null, null != t) {
     let e = [...C.recentStatuses],
       n = e.findIndex(e => (0, E.A)(e) && e === t);
     n >= 0 ? e.splice(n, 1) : e.length === T && e.splice(T - 1, 1), C.recentStatuses = [t, ...e]
   }
-  o && (C.currentDefaultStatus = {
+  s && (C.currentDefaultStatus = {
     status: t,
     customHangStatus: i,
-    gameActivityHangStatus: s
+    gameActivityHangStatus: o
   });
   let {
     defaultStatusVariant: l
@@ -107,18 +107,18 @@ function P(e) {
   let {
     status: t,
     emoji: n,
-    saveAsDefault: o
+    saveAsDefault: s
   } = e;
-  r = y.Kk.CUSTOM, s = null, i = {
+  r = y.Kk.CUSTOM, o = null, i = {
     status: t,
     emoji: n
   };
   let l = [...C.recentStatuses],
     c = l.findIndex(e => !(0, E.A)(e) && e.status === t && p().isEqual(e.emoji, n));
-  c >= 0 ? l.splice(c, 1) : l.length === T && l.splice(T - 1, 1), C.recentStatuses = [i, ...l], o && (C.currentDefaultStatus = {
+  c >= 0 ? l.splice(c, 1) : l.length === T && l.splice(T - 1, 1), C.recentStatuses = [i, ...l], s && (C.currentDefaultStatus = {
     status: r,
     customHangStatus: i,
-    gameActivityHangStatus: s
+    gameActivityHangStatus: o
   }), a = {
     type: b.$pd.HANG_STATUS,
     name: "Hang Status",
@@ -133,59 +133,59 @@ function D(e) {
     applicationId: t,
     saveAsDefault: n
   } = e;
-  s = t, r = null, i = null, a = null, n && (C.currentDefaultStatus = {
+  o = t, r = null, i = null, a = null, n && (C.currentDefaultStatus = {
     status: r,
     customHangStatus: i,
-    gameActivityHangStatus: s
+    gameActivityHangStatus: o
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     saveAsDefault: t
   } = e;
-  r = null, i = null, s = null, t && (C.currentDefaultStatus = {
+  r = null, i = null, o = null, t && (C.currentDefaultStatus = {
     status: null,
     customHangStatus: null,
     gameActivityHangStatus: null
   }), a = null
 }
 
-function L(e) {
+function x(e) {
   let {
     status: t,
     emoji: n
-  } = e, r = false, i = [...C.favoritedStatuses], a = i.findIndex(e => (0, E.A)(e) ? e === t : e.status === t && p().isEqual(e.emoji, n)), s = null == n ? t : {
+  } = e, r = false, i = [...C.favoritedStatuses], a = i.findIndex(e => (0, E.A)(e) ? e === t : e.status === t && p().isEqual(e.emoji, n)), o = null == n ? t : {
     status: t,
     emoji: n
   };
-  return false === a && i.length < S ? (i.push(s), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
+  return false === a && i.length < S ? (i.push(o), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
 }
 
-function j() {
-  if (null == s) returnfalse;
-  if (!m.Ay.getRunningVerifiedApplicationIds().includes(s)) {
+function M() {
+  if (null == o) returnfalse;
+  if (!m.Ay.getRunningVerifiedApplicationIds().includes(o)) {
     var e;
-    return s = null, (null == (e = C.currentDefaultStatus) ? true : e.gameActivityHangStatus) != null && (C.currentDefaultStatus.gameActivityHangStatus = null), true
+    return o = null, (null == (e = C.currentDefaultStatus) ? true : e.gameActivityHangStatus) != null && (C.currentDefaultStatus.gameActivityHangStatus = null), true
   }
   returnfalse
 }
 
-function M(e) {
+function j(e) {
   let {
     statuses: t
-  } = e, n = [...C.recentStatuses], o = [...C.favoritedStatuses];
+  } = e, n = [...C.recentStatuses], s = [...C.favoritedStatuses];
   t.forEach(e => {
     let {
       status: t,
       emoji: l
-    } = e, c = n.findIndex(e => (0, E.A)(e) ? e === t : e.status === t && p().isEqual(e.emoji, l)), u = o.findIndex(e => (0, E.A)(e) ? e === t : e.status === t && p().isEqual(e.emoji, l));
-    c >= 0 && n.splice(c, 1), u >= 0 && o.splice(u, 1), t === (null == i ? true : i.status) && p().isEqual(l, null == i ? true : i.emoji) && (r = null, i = null, s = null, C.currentDefaultStatus = null, a = null)
-  }), C.recentStatuses = n, C.favoritedStatuses = o
+    } = e, c = n.findIndex(e => (0, E.A)(e) ? e === t : e.status === t && p().isEqual(e.emoji, l)), u = s.findIndex(e => (0, E.A)(e) ? e === t : e.status === t && p().isEqual(e.emoji, l));
+    c >= 0 && n.splice(c, 1), u >= 0 && s.splice(u, 1), t === (null == i ? true : i.status) && p().isEqual(l, null == i ? true : i.emoji) && (r = null, i = null, o = null, C.currentDefaultStatus = null, a = null)
+  }), C.recentStatuses = n, C.favoritedStatuses = s
 }
-class k extends(o = Chunk311907.Ay.PersistedStore) {
+class k extends(s = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    C = v({}, N(), null != e ? e : {}), this.waitFor(m.Ay), this.syncWith([m.Ay], j)
+    C = v({}, N(), null != e ? e : {}), this.waitFor(m.Ay), this.syncWith([m.Ay], M)
   }
   getState() {
     return C
@@ -197,7 +197,7 @@ class k extends(o = Chunk311907.Ay.PersistedStore) {
     return i
   }
   getGameActivityHangStatus() {
-    return s
+    return o
   }
   getRecentStatuses() {
     return C.recentStatuses
@@ -232,8 +232,8 @@ let U = new k(Chunk73153.h, {
   UPDATE_HANG_STATUS: R,
   UPDATE_HANG_STATUS_CUSTOM: P,
   UPDATE_HANG_STATUS_GAME_ACTIVITY: D,
-  DELETE_INVALID_HANG_STATUSES: M,
-  CLEAR_HANG_STATUS: x,
-  UPDATE_FAVORITE_HANG_STATUS: L,
+  DELETE_INVALID_HANG_STATUSES: j,
+  CLEAR_HANG_STATUS: L,
+  UPDATE_FAVORITE_HANG_STATUS: x,
   RESET_HANG_STATUS_STATE: w
 })

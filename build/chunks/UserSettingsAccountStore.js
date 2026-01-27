@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 752319, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, s, o, l, c, u, d, f, p, _, h, m, g, E, y, b, O;
+let r, i, a, o, s, l, c, u, d, f, p, _, h, m, g, E, y, b, O;
 require.d(exports, {
   A: () => ec
 });
@@ -33,27 +33,27 @@ function D() {
   N = T.XlH.SUBMITTING, w = {}
 }
 
-function x(e) {
+function L(e) {
   var t;
   if (N !== T.XlH.SUBMITTING) returnfalse;
   N = T.XlH.OPEN, w = null != (t = e.errors) ? t : {}
 }
 
-function L(e) {
+function x(e) {
   let {
     section: t
   } = e;
   return t === T.nc_.ACCOUNT && R()
 }
 
-function j(e) {
+function M(e) {
   let {
     avatar: t
   } = e;
   r = t, g = true
 }
 
-function M(e) {
+function j(e) {
   let {
     globalName: t
   } = e;
@@ -71,7 +71,7 @@ function U(e) {
   let {
     item: t
   } = e;
-  t.type === A.R.AVATAR_DECORATION ? a = t.value : t.type === A.R.PROFILE_EFFECT ? s = t.value : t.type === A.R.NAMEPLATE && (o = t.value)
+  t.type === A.R.AVATAR_DECORATION ? a = t.value : t.type === A.R.PROFILE_EFFECT ? o = t.value : t.type === A.R.NAMEPLATE && (s = t.value)
 }
 
 function G(e) {
@@ -81,14 +81,14 @@ function G(e) {
   l = t
 }
 
-function V(e) {
+function F(e) {
   let {
     bio: t
   } = e;
   c = t
 }
 
-function F(e) {
+function V(e) {
   let {
     pronouns: t
   } = e;
@@ -151,14 +151,14 @@ function Z(e) {
   y = t
 }
 
-function X(e) {
+function Q(e) {
   let {
     banner: t
   } = e;
   b = t
 }
 
-function Q(e) {
+function X(e) {
   let {
     displayNameStyles: t
   } = e;
@@ -184,15 +184,15 @@ function ee() {
 }
 
 function et() {
-  en(), er(), ea(), es(), w = {}
+  en(), er(), ea(), eo(), w = {}
 }
 
 function en() {
-  r = true, i = true, a = true, s = true, o = true, h = true
+  r = true, i = true, a = true, o = true, s = true, h = true
 }
 
 function er() {
-  l = true, c = true, u = true, d = true, f = true, s = true
+  l = true, c = true, u = true, d = true, f = true, o = true
 }
 
 function ei() {
@@ -203,11 +203,11 @@ function ea() {
   p = true
 }
 
-function es() {
+function eo() {
   _ = true
 }
 
-function eo() {
+function es() {
   et(), ei(), P()
 }
 class el extends(v = Chunk311907.Ay.Store) {
@@ -218,7 +218,7 @@ class el extends(v = Chunk311907.Ay.Store) {
     return w
   }
   showNotice() {
-    return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== a || true !== s || true !== i || true !== o || true !== p || true !== _ || true !== h
+    return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== a || true !== o || true !== i || true !== s || true !== p || true !== _ || true !== h
   }
   getIsSubmitDisabled() {
     return true !== c && c.length > T.NA2
@@ -248,10 +248,10 @@ class el extends(v = Chunk311907.Ay.Store) {
     return a
   }
   getPendingNameplate() {
-    return o
+    return s
   }
   getPendingProfileEffect() {
-    return s
+    return o
   }
   getPendingDisplayNameStyles() {
     return h
@@ -265,9 +265,9 @@ class el extends(v = Chunk311907.Ay.Store) {
       pendingAccentColor: d,
       pendingThemeColors: f,
       pendingAvatarDecoration: a,
-      pendingProfileEffect: s,
+      pendingProfileEffect: o,
       pendingGlobalName: i,
-      pendingNameplate: o,
+      pendingNameplate: s,
       pendingLegacyUsernameDisabled: p,
       pendingPrimaryGuildId: _,
       pendingDisplayNameStyles: h
@@ -307,26 +307,26 @@ let ec = new el(Chunk73153.h, {
   USER_SETTINGS_ACCOUNT_INIT: R,
   USER_SETTINGS_MODAL_INIT: R,
   USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: R,
-  USER_SETTINGS_MODAL_SET_SECTION: L,
+  USER_SETTINGS_MODAL_SET_SECTION: x,
   USER_SETTINGS_ACCOUNT_CLOSE: P,
-  USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: eo,
+  USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: es,
   USER_SETTINGS_ACCOUNT_SUBMIT: D,
-  USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: x,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: j,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: M,
+  USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: L,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: M,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: j,
   USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED: k,
   USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM: U,
   USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER: G,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_BIO: V,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS: F,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_BIO: F,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS: V,
   USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR: B,
   USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS: H,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR: z,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION: q,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT: Z,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER: X,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER: Q,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS: K,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_DISPLAY_NAME_STYLES: Q,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_DISPLAY_NAME_STYLES: X,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET: J,
   USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID: Y,
   USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES: W,
@@ -336,6 +336,6 @@ let ec = new el(Chunk73153.h, {
   USER_SETTINGS_RESET_ALL_PENDING: et,
   USER_SETTINGS_RESET_ALL_TRY_IT_OUT: ei,
   USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED: ea,
-  USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES: es,
+  USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES: eo,
   LOGOUT: $
 })

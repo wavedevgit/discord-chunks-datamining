@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 769411, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 769411, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => d
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,90 +9,81 @@ var Chunk627968 = require("./627968.js"),
   Chunk736653 = require("./736653.js"),
   Chunk344904 = require("./344904.jsx"),
   Chunk584878 = require("./584878.js");
-let c = "0.3",
-  u = "0.2",
-  d = "var(--premium-tier-2-purple)",
-  f = "var(--background-base-low)",
-  p = "url(#gradient)",
-  _ = "url(#gradient_nitro_logo)",
-  h = (e, t) => {
-    switch (e) {
-      case o.BN.NITRO_LOGO:
-        return t ? c : u;
-      case o.BN.NITRO_GEM:
-      case o.BN.AVATAR_DECO:
-      default:
-        return
-    }
-  },
-  m = e => {
-    switch (e) {
-      case o.BN.NITRO_GEM:
-      case o.BN.AVATAR_DECO:
-        return f;
-      case o.BN.NITRO_LOGO:
-        return d;
-      default:
-        return
-    }
-  },
-  g = (e, t) => {
-    switch (t) {
-      case o.BN.NITRO_GEM:
-      case o.BN.AVATAR_DECO:
-        return p;
-      case o.BN.NITRO_LOGO:
-        return e ? _ : p;
-      default:
-        return
-    }
-  },
-  E = e => {
+let c = "url(#gradient)",
+  d = e => {
     let {
       percentage: t = 0,
       children: n,
-      animationClassName: c,
+      animationClassName: d,
       initialPercentage: u = 0,
-      progressCircleStrokeSize: d = 2,
-      progressCircleVariation: f,
-      progressCircleStroke: p
-    } = e, _ = 43 + d / 2, E = 2 * Math.PI * _, [y, b] = i.useState(u);
+      progressCircleStrokeSize: _ = 2,
+      progressCircleVariation: p,
+      progressCircleStroke: m
+    } = e, g = 43 + _ / 2, A = 2 * Math.PI * g, [f, h] = i.useState(u);
     i.useEffect(() => {
       let e = setTimeout(() => {
-        b(t)
+        h(t)
       }, 200);
       return () => clearTimeout(e)
     }, [t]);
-    let O = (0, s.Ay)(),
-      v = (0, a.qB)(O),
-      A = (1 - y / 100) * E,
-      I = m(f),
-      S = h(f, v),
-      T = null != p ? p : g(v, f);
+    let b = (0, s.Ay)(),
+      E = (0, l.qB)(b),
+      x = (e => {
+        switch (e) {
+          case a.BN.NITRO_GEM:
+          case a.BN.AVATAR_DECO:
+            return "var(--background-base-low)";
+          case a.BN.NITRO_LOGO:
+            return "var(--premium-tier-2-purple)";
+          default:
+            return
+        }
+      })(p),
+      O = ((e, t) => {
+        switch (e) {
+          case a.BN.NITRO_LOGO:
+            return t ? "0.3" : "0.2";
+          case a.BN.NITRO_GEM:
+          case a.BN.AVATAR_DECO:
+          default:
+            return
+        }
+      })(p, E),
+      C = null != m ? m : ((e, t) => {
+        switch (t) {
+          case a.BN.NITRO_GEM:
+          case a.BN.AVATAR_DECO:
+            return c;
+          case a.BN.NITRO_LOGO:
+            return e ? "url(#gradient_nitro_logo)" : c;
+          default:
+            return
+        }
+      })(E, p);
     return (0, r.jsxs)("div", {
-      className: l.Ap,
+      className: o.Ap,
       children: [(0, r.jsxs)("svg", {
         viewBox: "0 0 100 100",
-        className: l.fB,
+        className: o.fB,
         children: [(0, r.jsx)("circle", {
-          className: f === o.BN.NITRO_GEM || f === o.BN.AVATAR_DECO ? l.F3 : true,
+          className: p === a.BN.NITRO_GEM || p === a.BN.AVATAR_DECO ? o.F3 : true,
           fill: "transparent",
-          strokeWidth: d,
-          r: "".concat(_),
+          strokeWidth: _,
+          r: "".concat(g),
           cx: "50%",
           cy: "50%",
-          stroke: I,
-          strokeOpacity: S
+          stroke: x,
+          strokeOpacity: O
         }), (0, r.jsx)("circle", {
-          stroke: T,
-          strokeWidth: d,
+          stroke: C,
+          strokeWidth: _,
           strokeLinecap: "round",
-          strokeDasharray: "".concat(E, " ").concat(E),
-          className: c,
+          strokeDasharray: "".concat(A, " ").concat(A),
+          className: d,
           style: {
-            strokeDashoffset: A
+            strokeDashoffset: (1 - f / 100) * A
           },
-          r: "".concat(_),
+          r: "".concat(g),
           cx: "50%",
           cy: "50%"
         })]
@@ -151,7 +141,7 @@ let c = "0.3",
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: l.Vw,
+        className: o.Vw,
         children: n
       })]
     })

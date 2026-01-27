@@ -1,15 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 945886, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 3911 **/
+/** chunk id: 945886, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => g
 }), require("./896048.js");
-var r, Chunk311907 = require("./311907.js"),
+var i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk661191 = require("./661191.js"),
   Chunk734057 = require("./734057.js");
 
-function l(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,51 +17,47 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
+let d = {},
+  u = d;
 
-function c(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      l(e, t, n[t])
-    })
-  }
-  return e
-}
-let u = {},
-  d = u;
-
-function f(e) {
-  let {
-    channelId: t
-  } = e;
-  d[t] ? delete d[t] : d[t] = true, d = c({}, d)
-}
-
-function p() {
-  s.default.keys(d).forEach(e => {
-    null == o.A.getChannel(e) && delete d[e]
+function c() {
+  l.default.keys(u).forEach(e => {
+    null == o.A.getChannel(e) && delete u[e]
   })
 }
-class _ extends(r = Chunk311907.Ay.PersistedStore) {
+class h extends(i = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(o.A), d = null != e ? e : u
+    this.waitFor(o.A), u = null != e ? e : d
   }
   getState() {
-    return d
+    return u
   }
   getCollapsed() {
-    return d
+    return u
   }
   isCollapsed(e) {
-    return d[e] || false
+    return u[e] || false
   }
 }
-l(_, "displayName", "CollapsedVoiceChannelStore"), l(_, "persistKey", "collapsedChannels");
-let h = new _(Chunk73153.h, {
-  CONNECTION_OPEN: p,
-  OVERLAY_INITIALIZE: p,
-  CHANNEL_COLLAPSE: f
+a(h, "displayName", "CollapsedVoiceChannelStore"), a(h, "persistKey", "collapsedChannels");
+let g = new h(Chunk73153.h, {
+  CONNECTION_OPEN: c,
+  OVERLAY_INITIALIZE: c,
+  CHANNEL_COLLAPSE: function(e) {
+    let {
+      channelId: t
+    } = e;
+    u[t] ? delete u[t] : u[t] = true, u = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), i.forEach(function(t) {
+          a(e, t, n[t])
+        })
+      }
+      return e
+    }({}, u)
+  }
 })

@@ -22,8 +22,8 @@ let p = 5,
       nitroIconType: n,
       nitroIconSize: i = "md",
       className: a,
-      discountOfferAmount: s,
-      discount: o = c.rr,
+      discountOfferAmount: o,
+      discount: s = c.rr,
       variant: l = "text-md/semibold"
     } = e;
     return t.currency === u.Yr.DISCORD_ORB ? (0, r.jsx)(m, {
@@ -35,8 +35,8 @@ let p = 5,
       nitroIconType: n,
       nitroIconSize: i,
       className: a,
-      discountOfferAmount: s,
-      discount: o,
+      discountOfferAmount: o,
+      discount: s,
       variant: l
     })
   },
@@ -53,7 +53,7 @@ let p = 5,
       discount: m = c.rr,
       variant: g = "heading-md/semibold"
     } = e, E = null != h, y = (0, l.RS)(t, n), b = m !== c.rr && m.discountPercentage >= p && !E ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.AC4, {
+      children: [(0, r.jsx)(s.AC4, {
         children: d.intl.format(d.t.niC6DK, {
           price: y,
           discountPercentage: m.discountPercentage
@@ -67,7 +67,7 @@ let p = 5,
         children: " (-".concat(m.discountPercentage, "%)")
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.AC4, {
+      children: [(0, r.jsx)(s.AC4, {
         children: d.intl.format(d.t["6C36MF"], {
           price: y
         })
@@ -83,28 +83,28 @@ let p = 5,
       className: a()({
         [f.nn]: E
       }, f.kL, _),
-      children: ["tooltip" === i ? (0, r.jsx)(s.m, {
+      children: ["tooltip" === i ? (0, r.jsx)(o.m, {
         text: d.intl.string(d.t.MPFyJ5),
         "aria-label": d.intl.string(d.t.X3Ekj8),
-        children: (0, r.jsx)(o.tvc, {
+        children: (0, r.jsx)(s.tvc, {
           size: u,
           color: "currentColor",
           className: f.Kk
         })
-      }) : "default" === i ? (0, r.jsx)(o.tvc, {
+      }) : "default" === i ? (0, r.jsx)(s.tvc, {
         size: u,
         color: "currentColor",
         className: f.Kk
-      }) : null, (0, r.jsx)(o.Text, {
+      }) : null, (0, r.jsx)(s.Text, {
         variant: g,
         color: "currentColor",
         lineClamp: 1,
         children: b
-      }), E && (0, r.jsxs)(o.Text, {
+      }), E && (0, r.jsxs)(s.Text, {
         variant: g,
         className: f.NM,
         lineClamp: 1,
-        children: [(0, r.jsx)(o.AC4, {
+        children: [(0, r.jsx)(s.AC4, {
           children: d.intl.format(d.t.rItDbx, {
             discountOfferAmount: h
           })
@@ -125,15 +125,15 @@ let p = 5,
     } = e;
     return (0, r.jsxs)("div", {
       className: a()(f.kL, n),
-      children: [(0, r.jsx)(o.Cp8, {
+      children: [(0, r.jsx)(s.Cp8, {
         color: "currentColor",
         size: "sm",
         className: f.Kk
-      }), (0, r.jsxs)(o.Text, {
+      }), (0, r.jsxs)(s.Text, {
         variant: i,
         color: "currentColor",
         lineClamp: 1,
-        children: [(0, r.jsx)(o.AC4, {
+        children: [(0, r.jsx)(s.AC4, {
           children: d.intl.format(d.t["a/Y8PK"], {
             orbAmount: t
           })

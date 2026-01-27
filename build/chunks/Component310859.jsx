@@ -10,7 +10,7 @@ var Chunk139482 = require("./139482.js"),
   Chunk786558 = require("./786558.jsx"),
   Chunk799226 = require("./799226.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -102,17 +102,17 @@ function _(e) {
   let {
     artboard: t = "Checkpoint Intro Desktop",
     stateMachine: n
-  } = e, o = d(e, ["artboard", "stateMachine"]), {
+  } = e, s = d(e, ["artboard", "stateMachine"]), {
     status: c,
     buffer: f
-  } = (0, s.CE)(i.A), _ = (0, s.m2)(i.A);
-  return c === s.BW.Loading ? null : (0, r.jsx)(a.w, l(u(l({}, _ ? {
+  } = (0, o.CE)(i.A), _ = (0, o.m2)(i.A);
+  return c === o.BW.Loading ? null : (0, r.jsx)(a.w, l(u(l({}, _ ? {
     key: "override"
   } : {}), {
     buffer: f,
     artboard: t,
     stateMachine: n,
     artboardProperties: p
-  }), o))
+  }), s))
 }
 _.riveSrc = Chunk139482.A

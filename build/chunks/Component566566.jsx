@@ -23,10 +23,10 @@ function p(e) {
     avError: _,
     selected: h = false,
     noArt: m = false
-  } = e, g = null == (t = (0, o.B1)(_)) ? true : t.errorCode;
+  } = e, g = null == (t = (0, s.B1)(_)) ? true : t.errorCode;
 
   function E() {
-    (0, s.W)(i.x.DEFAULT, n), a.A.setDisableLocalVideo(n, u.bb8.DISABLED, i.x.DEFAULT, false), setTimeout(() => {
+    (0, o.W)(i.x.DEFAULT, n), a.A.setDisableLocalVideo(n, u.bb8.DISABLED, i.x.DEFAULT, false), setTimeout(() => {
       a.A.setDisableLocalVideo(n, u.bb8.MANUAL_ENABLED, i.x.DEFAULT, false)
     }, 1e3)
   }

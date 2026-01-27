@@ -34,9 +34,9 @@
     return t[e].split("_")
   }
 
-  function s(e, t, n, s) {
-    var o = e + " ";
-    return 1 === e ? o + r(e, t, n[0], s) : t ? o + (i(e) ? a(n)[1] : a(n)[0]) : s ? o + a(n)[1] : o + (i(e) ? a(n)[1] : a(n)[2])
+  function o(e, t, n, o) {
+    var s = e + " ";
+    return 1 === e ? s + r(e, t, n[0], o) : t ? s + (i(e) ? a(n)[1] : a(n)[0]) : o ? s + a(n)[1] : s + (i(e) ? a(n)[1] : a(n)[2])
   }
   return e.defineLocale("lt", {
     months: {
@@ -77,17 +77,17 @@
       future: "po %s",
       past: "prieš %s",
       s: n,
-      ss: s,
+      ss: o,
       m: r,
-      mm: s,
+      mm: o,
       h: r,
-      hh: s,
+      hh: o,
       d: r,
-      dd: s,
+      dd: o,
       M: r,
-      MM: s,
+      MM: o,
       y: r,
-      yy: s
+      yy: o
     },
     dayOfMonthOrdinalParse: /\d{1,2}-oji/,
     ordinal: function(e) {

@@ -141,8 +141,8 @@ function b(e, t, n) {
           top: _,
           index: b
         } = n;
-        if (null == (r = o.default.getCurrentUser()) ? true : r.isStaff()) {
-          let t = s.A.getWindow(u.f),
+        if (null == (r = s.default.getCurrentUser()) ? true : r.isStaff()) {
+          let t = o.A.getWindow(u.f),
             n = null != t ? l.A.windowSize((0, c.Q2)(t)) : true;
           f.info("Notification layout update", {
             id: e,

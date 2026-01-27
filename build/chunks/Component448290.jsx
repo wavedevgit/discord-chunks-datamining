@@ -27,19 +27,19 @@ function _(e, t) {
   u._.dispatchToLastSubscribed(f.jej.INSERT_TEXT, {
     plainText: r,
     rawText: i
-  }), null != t && s.A.startTyping(t)
+  }), null != t && o.A.startTyping(t)
 }
 
 function h(e, t, n) {
-  let [s, u] = (0, i.yK)([c.A, o.A, l.A], () => {
+  let [o, u] = (0, i.yK)([c.A, s.A, l.A], () => {
     let e = c.A.getChannelId(t),
-      n = o.A.getChannel(e);
+      n = s.A.getChannel(e);
     return [e, null != n && (n.isMultiUserDM() || l.A.can(f.xBc.SEND_MESSAGES, n))]
   }, [t]), d = n === f.BRT.POPOUT;
   if (!u || d) return null;
 
   function h() {
-    _(e, s)
+    _(e, o)
   }
   return (0, r.jsx)(a.Drp, {
     id: "mention",

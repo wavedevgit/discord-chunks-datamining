@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 922848, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 922848, original params: e,t,n (module,exports,require) **/
 module.exports = {
   kL: "container__74477",
   oE: "animatedSlides__74477",

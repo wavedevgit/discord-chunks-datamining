@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 320134, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 320134, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 }), require("./228524.js");
@@ -14,10 +13,10 @@ function s(e) {
     children: t,
     title: n,
     description: s,
-    webSetting: o
+    webSetting: a
   } = e;
-  return (0, r.jsxs)(a.x, {
-    setting: o,
+  return (0, r.jsxs)(l.x, {
+    setting: a,
     children: [(0, r.jsx)(i.nVY, {
       label: n,
       description: s,

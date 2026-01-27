@@ -28,7 +28,7 @@ function a() {
           scrollHeight: r,
           scrollWidth: i,
           offsetHeight: a,
-          offsetWidth: s
+          offsetWidth: o
         } = t;
         return {
           scrollTop: e,
@@ -36,7 +36,7 @@ function a() {
           scrollHeight: r,
           scrollWidth: i,
           offsetHeight: a,
-          offsetWidth: s,
+          offsetWidth: o,
           dirty: 0
         }
       }

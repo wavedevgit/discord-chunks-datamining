@@ -38,27 +38,27 @@ function E(e) {
     onOpenProfile: C,
     onClose: N,
     nicknameVariant: w = "heading-lg/bold"
-  } = e, R = e => null == C ? e : (0, r.jsx)(o.sqX, {
+  } = e, R = e => null == C ? e : (0, r.jsx)(s.sqX, {
     onClick: C,
     className: g.pt,
     "aria-label": m.intl.string(m.t["+Xp3hq"]),
     children: e
-  }), P = null != v && v.length > 0, D = (0, c.r)(t), x = (0, d.A)({
+  }), P = null != v && v.length > 0, D = (0, c.r)(t), L = (0, d.A)({
     userId: t.id,
     guildId: n,
     pendingDisplayNameStyles: O
-  }), L = null != x;
+  }), x = null != L;
   return (0, r.jsxs)("div", {
     className: a()(g.kL, {
       [g.Od]: null != D
     }, I),
     children: [(0, r.jsxs)("div", {
       className: g.Fj,
-      children: [R(L ? (0, r.jsx)(o.Text, {
+      children: [R(x ? (0, r.jsx)(s.Text, {
         variant: w,
         children: (0, r.jsx)(p.A, {
           userName: y,
-          displayNameStyles: x,
+          displayNameStyles: L,
           effectDisplayType: f.G.ANIMATED,
           textClassName: g.iA,
           shouldWrap: true,
@@ -66,7 +66,7 @@ function E(e) {
           inProfile: true,
           shouldUnderlineOnHover: null != C
         })
-      }) : (0, r.jsx)(o.Text, {
+      }) : (0, r.jsx)(s.Text, {
         className: g.$R,
         variant: w,
         children: y
@@ -95,11 +95,11 @@ function E(e) {
         children: [(0, r.jsx)("div", {
           "aria-hidden": "true",
           className: g.SC
-        }), (0, r.jsx)(s.m, {
+        }), (0, r.jsx)(o.m, {
           asContainer: true,
           text: m.intl.string(m.t.GI2A8C),
           delay: h.In,
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(s.Text, {
             className: a()(g.kc, S),
             variant: "text-sm/medium",
             color: "text-strong",

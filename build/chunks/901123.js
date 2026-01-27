@@ -4,8 +4,8 @@
 require.d(exports, {
   BV: () => f,
   Cr: () => u,
-  ME: () => s,
-  YY: () => o,
+  ME: () => o,
+  YY: () => s,
   c$: () => c,
   gN: () => l
 });
@@ -13,11 +13,11 @@ var Chunk323125 = require("./323125.js");
 require("./436317.js");
 var Chunk435220 = require("./435220.js"),
   Chunk162157 = require("./162157.js");
-let s = "@me",
-  o = "@favorites",
+let o = "@me",
+  s = "@favorites",
   l = "@inbox",
   c = "@guilds-empty-nux",
-  u = [s, o, c, l],
+  u = [o, s, c, l],
   d = Object.freeze({
     INDEX: "/",
     APP: "/app",
@@ -49,7 +49,7 @@ let s = "@me",
     ME: "/channels/@me",
     MESSAGE_REQUESTS: "/message-requests",
     CHANNEL: (e, t, n) => {
-      let r = null == t ? "/channels/".concat(e || s) : "/channels/".concat(e || s, "/").concat(t);
+      let r = null == t ? "/channels/".concat(e || o) : "/channels/".concat(e || o, "/").concat(t);
       return null == n ? r : "".concat(r, "/").concat(n)
     },
     CHANNEL_THREAD_VIEW: (e, t, n, r) => {
@@ -73,7 +73,7 @@ let s = "@me",
     GUILD_TEMPLATE_LOGIN: e => "/template/".concat(e, "/login"),
     GIFT_CODE: e => "/gifts/".concat(e),
     GIFT_CODE_LOGIN: e => "/gifts/".concat(e, "/login"),
-    WELCOME: (e, t) => null != t ? "/welcome/".concat(null != e ? e : s, "/").concat(t) : "/welcome/".concat(null != e ? e : s),
+    WELCOME: (e, t) => null != t ? "/welcome/".concat(null != e ? e : o, "/").concat(t) : "/welcome/".concat(null != e ? e : o),
     VERIFY: "/verify",
     VERIFY_REQUEST: "/verify-request",
     RESET: "/reset",

@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 379082, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 379082, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk989349 = require("./989349.js"),
-  a = require.n(Chunk989349),
+  l = require.n(Chunk989349),
   Chunk311907 = require("./311907.js"),
   Chunk71393 = require("./71393.js"),
   Chunk580630 = require("./580630.js"),
@@ -15,44 +14,39 @@ var Chunk64700 = require("./64700.js"),
   Chunk624456 = require("./624456.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let _ = "M/D/YY",
-  h = "M/D/YY";
 
 function m(e) {
-  let {
-    subscription: t
-  } = e, n = a()(t.currentPeriodEnd).format(_), r = null != t.price ? (0, l.$g)(t.price, t.currency) : "", i = a()(t.createdAt).format(h), s = t.status === f.Dmq.CANCELED, o = t.status === f.Dmq.PAST_DUE, c = t.hasActiveTrial;
-  return {
-    memberSince: i,
-    nextRenewalDate: n,
-    nextRenewalLabel: s ? p.intl.string(p.t.UAfot2) : p.intl.string(p.t.CVjLcM),
-    subscriptionPrice: r,
-    isCancelled: s,
-    isPastDue: o,
-    isTrial: c
-  }
-}
-
-function g(e) {
-  let t = (0, d.M)(e),
-    n = (0, s.bG)([u.A], () => u.A.getSubscriptionListingForPlan(t)),
-    i = (0, s.bG)([u.A], () => null != n ? u.A.getSubscriptionGroupListingForSubscriptionListing(n.id) : null),
-    a = (0, s.bG)([o.A], () => o.A.getGuild(null == i ? true : i.guild_id)),
-    [l, f] = r.useState(false),
-    p = () => f(e => !e),
+  let t = (0, u.M)(e),
+    n = (0, s.bG)([d.A], () => d.A.getSubscriptionListingForPlan(t)),
+    i = (0, s.bG)([d.A], () => null != n ? d.A.getSubscriptionGroupListingForSubscriptionListing(n.id) : null),
+    m = (0, s.bG)([a.A], () => a.A.getGuild(null == i ? true : i.guild_id)),
+    [g, A] = r.useState(false),
     {
-      fetchSubscriptionsSettings: _
+      fetchSubscriptionsSettings: f
     } = (0, c.XE)();
   r.useEffect(() => {
-    l && null != a && null == u.A.getSubscriptionSettings(a.id) && _(a.id)
-  }, [l, a, _]);
-  let h = null == n ? true : m({
+    g && null != m && null == d.A.getSubscriptionSettings(m.id) && f(m.id)
+  }, [g, m, f]);
+  let h = null == n ? true : function(e) {
+    let {
+      subscription: t
+    } = e, n = l()(t.currentPeriodEnd).format("M/D/YY"), r = null != t.price ? (0, o.$g)(t.price, t.currency) : "", i = l()(t.createdAt).format("M/D/YY"), s = t.status === _.Dmq.CANCELED, a = t.status === _.Dmq.PAST_DUE, c = t.hasActiveTrial;
+    return {
+      memberSince: i,
+      nextRenewalDate: n,
+      nextRenewalLabel: s ? p.intl.string(p.t.UAfot2) : p.intl.string(p.t.CVjLcM),
+      subscriptionPrice: r,
+      isCancelled: s,
+      isPastDue: a,
+      isTrial: c
+    }
+  }({
     subscription: e
   });
   return {
-    guild: a,
-    expanded: l,
-    handleToggleExpanded: p,
+    guild: m,
+    expanded: g,
+    handleToggleExpanded: () => A(e => !e),
     listing: n,
     groupListing: i,
     subscriptionInfo: h

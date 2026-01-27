@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
 let d = e => {
   let {
     children: t
-  } = e, [n, d] = (0, o.kn)([a.M.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP]), [f, p] = i.useState(false), _ = i.useRef(null);
+  } = e, [n, d] = (0, s.kn)([a.M.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP]), [f, p] = i.useState(false), _ = i.useRef(null);
   i.useEffect(() => {
     let e = setTimeout(() => {
       p(true)
@@ -29,7 +29,7 @@ let d = e => {
     children: [(0, r.jsx)("div", {
       ref: _,
       children: t
-    }), (0, r.jsx)(s.A, {
+    }), (0, r.jsx)(o.A, {
       targetElementRef: _,
       shouldShow: f,
       onRequestClose: h,

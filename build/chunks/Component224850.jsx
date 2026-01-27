@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk854627 = require("./854627.js"),
@@ -46,7 +46,7 @@ function m(e) {
     textColor: a,
     isApplicationHome: c,
     enablePremiumBrandRefresh: _
-  } = e, h = (0, o.bG)([u.A], () => u.A.affinities.slice(0, 3).reverse()), m = h.map((e, t) => (0, r.jsx)(g, {
+  } = e, h = (0, s.bG)([u.A], () => u.A.affinities.slice(0, 3).reverse()), m = h.map((e, t) => (0, r.jsx)(g, {
     affinity: e,
     applyMask: t !== h.length - 1,
     size: _ ? d._3.SIZE_24 : d._3.SIZE_32
@@ -76,7 +76,7 @@ function m(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: s()(_ ? p.bD : p.kL, n, {
+    className: o()(_ ? p.bD : p.kL, n, {
       [p.gr]: !_ && c
     }),
     children: [(0, r.jsx)("div", {
@@ -96,18 +96,18 @@ function g(e) {
     size: i
   } = e, {
     avatarSrc: a,
-    eventHandlers: o
+    eventHandlers: s
   } = (0, c.A)({
     userId: null == t ? true : t.id,
     size: i,
     animateOnHover: true
   });
   return (0, r.jsx)(l.euF, h({
-    className: s()(p.Kk, {
+    className: o()(p.Kk, {
       [p.dK]: n
     }),
     src: a,
     "aria-label": t.username,
     size: i
-  }, o))
+  }, s))
 }

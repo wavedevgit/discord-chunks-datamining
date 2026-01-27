@@ -1,34 +1,29 @@
-/** Chunk was on web.js **/
-/** chunk id: 417159, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 417159, original params: t,e,r (module,exports,require) **/
 "use strict";
-
-function r(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
-}
 var Chunk64700 = require("./64700.js"),
   Chunk550835 = require("./550835.js");
-module.exports = function(e) {
-  function t() {
-    return e.apply(this, arguments) || this
+module.exports = function(t) {
+  function e() {
+    return t.apply(this, arguments) || this
   }
-  r(t, e);
-  var n = t.prototype;
-  return n.shouldComponentUpdate = function(e) {
-    return this.props.text !== e.text || this.props.editorState.getSelection().getHasFocus() !== e.editorState.getSelection().getHasFocus()
-  }, n.render = function() {
-    var e = a({
-        "public/DraftEditorPlaceholder/root": true,
-        "public/DraftEditorPlaceholder/hasFocus": this.props.editorState.getSelection().getHasFocus()
-      }),
-      t = {
-        whiteSpace: "pre-wrap"
-      };
-    return i.createElement("div", {
-      className: e
-    }, i.createElement("div", {
-      className: a("public/DraftEditorPlaceholder/inner"),
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
+  var r = e.prototype;
+  return r.shouldComponentUpdate = function(t) {
+    return this.props.text !== t.text || this.props.editorState.getSelection().getHasFocus() !== t.editorState.getSelection().getHasFocus()
+  }, r.render = function() {
+    var t = i({
+      "public/DraftEditorPlaceholder/root": true,
+      "public/DraftEditorPlaceholder/hasFocus": this.props.editorState.getSelection().getHasFocus()
+    });
+    return n.createElement("div", {
+      className: t
+    }, n.createElement("div", {
+      className: i("public/DraftEditorPlaceholder/inner"),
       id: this.props.accessibilityID,
-      style: t
+      style: {
+        whiteSpace: "pre-wrap"
+      }
     }, this.props.text))
-  }, t
+  }, e
 }(Chunk64700.Component)

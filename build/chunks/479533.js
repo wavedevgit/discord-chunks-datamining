@@ -11,8 +11,8 @@ let i = {
 
 function a(e) {
   return {
-    "GIF Version": s(e),
-    "Image Width": o(e),
+    "GIF Version": o(e),
+    "Image Width": s(e),
     "Image Height": l(e),
     "Global Color Map": c(e),
     "Bits Per Pixel": d(e),
@@ -20,7 +20,7 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   let t = 3,
     n = 3;
   if (6 > e.byteLength) return;
@@ -31,7 +31,7 @@ function s(e) {
   }
 }
 
-function o(e) {
+function s(e) {
   let t = 6;
   if (8 > e.byteLength) return;
   let n = e.getUint16(t, true);

@@ -6,20 +6,20 @@ var Chunk691262 = require("./691262.js"),
   Chunk698982 = require("./698982.js"),
   Chunk415922 = require("./415922.js");
 
-function o(e, t, n) {
-  var r = "string" == typeof e ? o.__parse(e) : e;
+function s(e, t, n) {
+  var r = "string" == typeof e ? s.__parse(e) : e;
   if (!(r && "messageFormatPattern" === r.type)) throw TypeError("A message must be provided as a String or AST.");
-  n = this._mergeFormats(o.formats, n), i.defineProperty(this, "_locale", {
+  n = this._mergeFormats(s.formats, n), i.defineProperty(this, "_locale", {
     value: this._resolveLocale(t)
   });
   var a = this._findPluralRuleFunction(this._locale),
-    s = this._compilePattern(r, t, n, a),
+    o = this._compilePattern(r, t, n, a),
     l = this;
   this.format = function(e) {
-    return l._format(s, e)
+    return l._format(o, e)
   }
 }
-exports.default = o, Chunk264048.defineProperty(o, "formats", {
+exports.default = s, Chunk264048.defineProperty(s, "formats", {
   enumerable: true,
   value: {
     number: {
@@ -77,54 +77,54 @@ exports.default = o, Chunk264048.defineProperty(o, "formats", {
       }
     }
   }
-}), Chunk264048.defineProperty(o, "__localeData__", {
+}), Chunk264048.defineProperty(s, "__localeData__", {
   value: Chunk264048.objCreate(null)
-}), Chunk264048.defineProperty(o, "__addLocaleData", {
+}), Chunk264048.defineProperty(s, "__addLocaleData", {
   value: function(e) {
     if (!(e && e.locale)) throw Error("Locale data provided to IntlMessageFormat is missing a `locale` property");
-    o.__localeData__[e.locale.toLowerCase()] = e
+    s.__localeData__[e.locale.toLowerCase()] = e
   }
-}), Chunk264048.defineProperty(o, "__parse", {
+}), Chunk264048.defineProperty(s, "__parse", {
   value: Chunk415922.default.parse
-}), Chunk264048.defineProperty(o, "defaultLocale", {
+}), Chunk264048.defineProperty(s, "defaultLocale", {
   enumerable: true,
   writable: true,
   value: true
-}), o.prototype.resolvedOptions = function() {
+}), s.prototype.resolvedOptions = function() {
   return {
     locale: this._locale
   }
-}, o.prototype._compilePattern = function(e, t, n, r) {
+}, s.prototype._compilePattern = function(e, t, n, r) {
   return new a.default(t, n, r).compile(e)
-}, o.prototype._findPluralRuleFunction = function(e) {
-  for (var t = o.__localeData__, n = t[e.toLowerCase()]; n;) {
+}, s.prototype._findPluralRuleFunction = function(e) {
+  for (var t = s.__localeData__, n = t[e.toLowerCase()]; n;) {
     if (n.pluralRuleFunction) return n.pluralRuleFunction;
     n = n.parentLocale && t[n.parentLocale.toLowerCase()]
   }
   throw Error("Locale data added to IntlMessageFormat is missing a `pluralRuleFunction` for :" + e)
-}, o.prototype._format = function(e, t) {
-  var n, i, a, s, o, l = "";
+}, s.prototype._format = function(e, t) {
+  var n, i, a, o, s, l = "";
   for (n = 0, i = e.length; n < i; n += 1) {
     if ("string" == typeof(a = e[n])) {
       l += a;
       continue
     }
-    if (s = a.id, !(t && r.hop.call(t, s))) throw Error("A value must be provided for: " + s);
-    o = t[s], a.options ? l += this._format(a.getOption(o), t) : l += a.format(o)
+    if (o = a.id, !(t && r.hop.call(t, o))) throw Error("A value must be provided for: " + o);
+    s = t[o], a.options ? l += this._format(a.getOption(s), t) : l += a.format(s)
   }
   return l
-}, o.prototype._mergeFormats = function(e, t) {
-  var n, a, s = {};
-  for (n in e) r.hop.call(e, n) && (s[n] = a = i.objCreate(e[n]), t && r.hop.call(t, n) && r.extend(a, t[n]));
-  return s
-}, o.prototype._resolveLocale = function(e) {
-  "string" == typeof e && (e = [e]), e = (e || []).concat(o.defaultLocale);
-  var t, n, r, i, a = o.__localeData__;
+}, s.prototype._mergeFormats = function(e, t) {
+  var n, a, o = {};
+  for (n in e) r.hop.call(e, n) && (o[n] = a = i.objCreate(e[n]), t && r.hop.call(t, n) && r.extend(a, t[n]));
+  return o
+}, s.prototype._resolveLocale = function(e) {
+  "string" == typeof e && (e = [e]), e = (e || []).concat(s.defaultLocale);
+  var t, n, r, i, a = s.__localeData__;
   for (t = 0, n = e.length; t < n; t += 1)
     for (r = e[t].toLowerCase().split("-"); r.length;) {
       if (i = a[r.join("-")]) return i.locale;
       r.pop()
     }
-  var s = e.pop();
-  throw Error("No locale data has been added to IntlMessageFormat for: " + e.join(", ") + ", or the default locale: " + s)
+  var o = e.pop();
+  throw Error("No locale data has been added to IntlMessageFormat for: " + e.join(", ") + ", or the default locale: " + o)
 }

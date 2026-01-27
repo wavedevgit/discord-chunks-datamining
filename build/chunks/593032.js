@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 593032, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96126 **/
+/** chunk id: 593032, original params: e,r,a (module,exports,require) **/
 require.d(exports, {
   A: () => i
 });
-let r = (0, require("./945810.js").mj)({
+let t = (0, require("./945810.js").mj)({
   name: "2025-12-katsudon",
   kind: "user",
   defaultConfig: {
@@ -22,11 +21,11 @@ let r = (0, require("./945810.js").mj)({
 
 function i(e) {
   let {
-    location: t
+    location: r
   } = e, {
-    enabled: n
-  } = r.useConfig({
-    location: t
+    enabled: a
+  } = t.useConfig({
+    location: r
   });
-  return n
+  return a
 }

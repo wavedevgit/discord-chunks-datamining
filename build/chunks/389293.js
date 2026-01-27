@@ -25,7 +25,7 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   for (var t = {
       "%FE%FF": "��",
       "%FF%FE": "��"
@@ -39,8 +39,8 @@ function s(e) {
     n = r.exec(e)
   }
   t["%C2"] = "�";
-  for (var s = Object.keys(t), o = 0; o < s.length; o++) {
-    var l = s[o];
+  for (var o = Object.keys(t), s = 0; s < o.length; s++) {
+    var l = o[s];
     e = e.replace(RegExp(l, "g"), t[l])
   }
   return e
@@ -50,6 +50,6 @@ module.exports = function(e) {
   try {
     return e = e.replace(/\+/g, " "), decodeURIComponent(e)
   } catch (t) {
-    return s(e)
+    return o(e)
   }
 }

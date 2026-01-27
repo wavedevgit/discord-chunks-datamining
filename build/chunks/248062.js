@@ -21,7 +21,7 @@ let u = (0, Chunk64700.createContext)(null),
     let {
       dialogProps: f,
       titleProps: p
-    } = (0, s.s)({
+    } = (0, o.s)({
       ...e,
       "aria-labelledby": n
     }, t), _ = (0, c.useContext)(d);
@@ -35,7 +35,7 @@ let u = (0, Chunk64700.createContext)(null),
           close: (null == _ ? true : _.close) || (() => {})
         }
       }),
-      m = (0, o.$)(e, {
+      m = (0, s.$)(e, {
         global: true
       });
     return c.createElement("section", {

@@ -55,11 +55,11 @@ function p(e) {
     onOpened: t
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, {
     applicationId: n
-  } = e, c = (0, i.O)(n), d = r.useMemo(() => null == c ? n : (0, s.bB)(c) ? a.a7 : n, [c, n]), p = (0, l.Ay)(f(u({}, e), {
+  } = e, c = (0, i.O)(n), d = r.useMemo(() => null == c ? n : (0, o.bB)(c) ? a.a7 : n, [c, n]), p = (0, l.Ay)(f(u({}, e), {
     applicationId: d
   }));
   return p.shouldOpenGameProfile && null != d ? n => {
-    n.stopPropagation(), n.preventDefault(), o.A.openGameProfileModal(f(u({}, e), {
+    n.stopPropagation(), n.preventDefault(), s.A.openGameProfileModal(f(u({}, e), {
       applicationId: d,
       gameProfileModalChecks: p
     })), null == t || t()

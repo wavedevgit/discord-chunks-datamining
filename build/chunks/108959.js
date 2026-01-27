@@ -12,8 +12,8 @@ var Chunk478437 = require("./478437.js"),
 
 function l(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a.A,
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.A,
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.A,
     l = t.getChannel(e),
     c = n.getVoiceChannelId();
-  return null != l && (l.type === r.r.GUILD_VOICE || !!l.isPrivate() && (l.id === c || null != o.A.getVoiceStatesForChannel(l.id)[i.default.getId()]))
+  return null != l && (l.type === r.r.GUILD_VOICE || !!l.isPrivate() && (l.id === c || null != s.A.getVoiceStatesForChannel(l.id)[i.default.getId()]))
 }

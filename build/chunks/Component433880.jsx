@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
 let p = [];
 
 function _(e, t) {
-  let n = (0, o.A)(e, t);
+  let n = (0, s.A)(e, t);
   return i.useMemo(() => {
     let e = new Map;
     return n.forEach(t => {
@@ -45,7 +45,7 @@ function m(e) {
   let {
     menuItemId: t,
     user: n,
-    label: o,
+    label: s,
     gameRelationships: f,
     onClick: m,
     color: g
@@ -66,10 +66,10 @@ function m(e) {
     let {
       applicationId: e
     } = O[0], n = C.get(e);
-    return null == n ? null : (0, r.jsx)(s.Drp, {
+    return null == n ? null : (0, r.jsx)(o.Drp, {
       color: g,
       id: t,
-      label: o,
+      label: s,
       subtext: (0, r.jsx)(h, {
         application: n
       }),
@@ -84,7 +84,7 @@ function m(e) {
     } = e, n = C.get(t);
     if (null != n) {
       let e = n.getIconURL(16);
-      N.push((0, r.jsx)(s.Drp, {
+      N.push((0, r.jsx)(o.Drp, {
         id: t,
         label: n.name,
         icon: (0, r.jsx)(l.A, {
@@ -98,10 +98,10 @@ function m(e) {
         action: () => m(n)
       }, t))
     }
-  }), 0 === N.length) ? null : (0, r.jsx)(s.Drp, {
+  }), 0 === N.length) ? null : (0, r.jsx)(o.Drp, {
     color: g,
     id: t,
-    label: o,
+    label: s,
     onFocus: I,
     children: N
   })

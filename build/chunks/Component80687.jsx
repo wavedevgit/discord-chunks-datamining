@@ -10,7 +10,7 @@ var Chunk934551 = require("./934551.js"),
   Chunk460890 = require("./460890.jsx"),
   Chunk657718 = require("./657718.jsx");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -73,10 +73,10 @@ function p(e) {
   let {
     "aria-label": t,
     playing: n
-  } = e, o = d(e, ["aria-label", "playing"]), {
+  } = e, s = d(e, ["aria-label", "playing"]), {
     i18n: c
   } = (0, a.G9)();
-  return (0, r.jsx)(s.S, u(l({}, o), {
+  return (0, r.jsx)(o.S, u(l({}, s), {
     "aria-label": null != t ? t : n ? c.PAUSE_BUTTON_LABEL : c.PLAY_BUTTON_LABEL,
     icon: n ? i.PauseIcon : i.PlayIcon,
     variant: "overlay-secondary",

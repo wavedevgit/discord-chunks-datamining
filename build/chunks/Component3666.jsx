@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk990078 = require("./990078.jsx"),
   Chunk765671 = require("./765671.js"),
   Chunk985018 = require("./985018.jsx"),
@@ -23,16 +23,16 @@ function d(e) {
     itemWidths: r,
     itemGapPx: i,
     containerWidth: a,
-    overflowWidth: s
-  } = e, o = 0, l = 0, c = 0;
+    overflowWidth: o
+  } = e, s = 0, l = 0, c = 0;
   for (let e = 0; e < t.length; e++) {
     let u = r[e];
     if (isNaN(u) || u > a) continue;
-    let d = o === n - 1,
+    let d = s === n - 1,
       f = e === t.length - 1;
-    if (!(Math.round(l + u + (d && !f ? s + i : 0)) < Math.round(a))) {
+    if (!(Math.round(l + u + (d && !f ? o + i : 0)) < Math.round(a))) {
       if (d) break;
-      o++, l = 0
+      s++, l = 0
     }
     c = e, l += u + i
   }
@@ -45,7 +45,7 @@ function f(e) {
     items: n,
     maxLines: r,
     containerWidth: a
-  } = e, [s, o] = i.useState(0), l = i.useRef([]), c = i.useRef(0), u = i.useRef(0), f = i.useRef(null), p = i.useCallback((e, t) => {
+  } = e, [o, s] = i.useState(0), l = i.useRef([]), c = i.useRef(0), u = i.useRef(0), f = i.useRef(null), p = i.useCallback((e, t) => {
     l.current[e] = t
   }, []);
   return i.useLayoutEffect(() => {
@@ -60,14 +60,14 @@ function f(e) {
       itemWidths: l.current,
       overflowWidth: c.current
     });
-    i !== u.current && (u.current = i, o(e => e + 1))
+    i !== u.current && (u.current = i, s(e => e + 1))
   }, [a, t, n, r]), i.useMemo(() => ({
     lastVisibleIndex: u.current,
     onItemLayout: p,
     overflowItemsRef: f,
     itemWidthsRef: l,
-    version: s
-  }), [p, s])
+    version: o
+  }), [p, o])
 }
 
 function p(e) {
@@ -75,7 +75,7 @@ function p(e) {
     items: t,
     renderItem: n
   } = e;
-  return (0, r.jsx)(o.m, {
+  return (0, r.jsx)(s.m, {
     __unsupportedReactNodeAsText: (0, r.jsx)("div", {
       className: u.YL,
       children: t.map(n)
@@ -94,11 +94,11 @@ function _(e) {
     onItemLayout: t,
     index: n,
     children: a
-  } = e, s = i.useRef(null);
+  } = e, o = i.useRef(null);
   return i.useLayoutEffect(() => {
-    null == s.current || t(n, s.current.getBoundingClientRect().width)
+    null == o.current || t(n, o.current.getBoundingClientRect().width)
   }), (0, r.jsx)("div", {
-    ref: s,
+    ref: o,
     children: a
   })
 }
@@ -112,7 +112,7 @@ function m(e) {
     className: t,
     items: n,
     renderItem: a,
-    itemGapPx: o = 0,
+    itemGapPx: s = 0,
     maxLines: d,
     renderOverflow: m
   } = e, {
@@ -124,7 +124,7 @@ function m(e) {
     overflowItemsRef: O
   } = f({
     items: n,
-    itemGapPx: o,
+    itemGapPx: s,
     maxLines: d,
     containerWidth: E
   }), v = i.useCallback(e => (0, r.jsx)(p, {
@@ -132,7 +132,7 @@ function m(e) {
     renderItem: a
   }), [a]), A = null != m ? m : v, I = i.useMemo(() => n.slice(0, y + 1), [n, y]), S = i.useMemo(() => n.slice(y + 1), [n, y]);
   return (0, r.jsxs)("div", {
-    className: s()(t, u.ld),
+    className: o()(t, u.ld),
     ref: g,
     children: [(0, r.jsxs)("div", {
       "aria-hidden": true,

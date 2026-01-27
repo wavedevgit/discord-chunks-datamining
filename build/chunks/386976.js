@@ -15,7 +15,7 @@ var Chunk64700 = require("./64700.js"),
 function u(e, t) {
   let n = {};
   for (let [t, r] of Object.entries(e)) n[t] = {
-    system: s.l5.APEX,
+    system: o.l5.APEX,
     kind: r.unitType === c.ni.User ? "user" : "guild",
     name: r.name,
     title: r.title,
@@ -27,7 +27,7 @@ function u(e, t) {
     }))
   };
   for (let [e, r] of Object.entries(t)) null == n[e] && (n[e] = {
-    system: s.l5.APEX,
+    system: o.l5.APEX,
     kind: r.kind,
     name: r.name,
     title: r.name,
@@ -56,14 +56,14 @@ function d(e) {
 
 function f() {
   (0, r.useEffect)(() => {
-    (0, o.sD)(a.Um.APP)
+    (0, s.sD)(a.Um.APP)
   }, []);
   let e = (0, i.bG)([l.A], () => l.A.getExperimentsMetadata()),
     t = (0, i.bG)([l.A], () => l.A.getRegisteredExperiments()),
     n = (0, r.useMemo)(() => u(e, t), [e, t]),
-    s = (0, i.bG)([l.A], () => l.A.getClientOverrides());
+    o = (0, i.bG)([l.A], () => l.A.getClientOverrides());
   return {
     experiments: n,
-    overridesInfo: (0, r.useMemo)(() => d(s), [s])
+    overridesInfo: (0, r.useMemo)(() => d(o), [o])
   }
 }

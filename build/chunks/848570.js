@@ -83,8 +83,8 @@ function w(e) {
     });
   return r.useEffect(() => {
     let e = () => i.onChange();
-    return o.A.addChangeListener(e), s.Ay.addChangeListener(e), () => {
-      o.A.removeChangeListener(e), s.Ay.removeChangeListener(e)
+    return s.A.addChangeListener(e), o.Ay.addChangeListener(e), () => {
+      s.A.removeChangeListener(e), o.Ay.removeChangeListener(e)
     }
   }, [i]), r.useEffect(() => {
     i.previewMarkdown !== n && (i.previewMarkdown = n, i.onChange())
@@ -95,8 +95,8 @@ function R(e) {
   var t, n, r;
   let {
     editor: a,
-    chatInputType: s,
-    channel: o,
+    chatInputType: o,
+    channel: s,
     canUseCommands: l,
     canOnlyUseTextCommands: c,
     windowContext: u,
@@ -108,9 +108,9 @@ function R(e) {
   } = e, w = a, {
     onChange: R
   } = w;
-  w.chatInputType = s, w.windowContext = u, w.previewMarkdown = I, w.composition = null, w.events = new i.EventEmitter, w.isMac = "MacIntel" === navigator.platform, w.onChange = () => {
+  w.chatInputType = o, w.windowContext = u, w.previewMarkdown = I, w.composition = null, w.events = new i.EventEmitter, w.isMac = "MacIntel" === navigator.platform, w.onChange = () => {
     w.events.emit("onChange"), R()
-  }, w = (0, b.o)(w, true === S), w = (0, y.A)(w), w = (0, E.A)(w), (null == (t = s.commands) ? true : t.enabled) && (w = (0, d.A)(w, o, true === l, true === c)), w = (0, g.Ay)(w, o.guild_id, o.id), (null == (n = s.markdown) ? true : n.disableBlockQuotes) || (w = (0, f.A)(w)), (null == (r = s.markdown) ? true : r.disableCodeBlocks) || (w = (0, p.Ay)(w)), S && (w = (0, v.A)(w)), w = (0, m.A)(w), w = (0, _.A)(w), w = (0, O.A)(w), w = (0, A.A)(w, T, C), w = (0, h.A)(w, e => {
+  }, w = (0, b.o)(w, true === S), w = (0, y.A)(w), w = (0, E.A)(w), (null == (t = o.commands) ? true : t.enabled) && (w = (0, d.A)(w, s, true === l, true === c)), w = (0, g.Ay)(w, s.guild_id, s.id), (null == (n = o.markdown) ? true : n.disableBlockQuotes) || (w = (0, f.A)(w)), (null == (r = o.markdown) ? true : r.disableCodeBlocks) || (w = (0, p.Ay)(w)), S && (w = (0, v.A)(w)), w = (0, m.A)(w), w = (0, _.A)(w), w = (0, O.A)(w), w = (0, A.A)(w, T, C), w = (0, h.A)(w, e => {
     let {
       newValue: t,
       newSelection: n

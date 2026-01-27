@@ -11,7 +11,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk841117 = require("./841117.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,14 +20,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -48,15 +48,15 @@ function c(e) {
   let {
     createPromise: t,
     webpackId: n,
-    renderLoader: s,
+    renderLoader: o,
     name: c,
     memo: u = false
   } = e, d = i.lazy(() => (0, a.sq)({
     createPromise: t,
     webpackId: n
   })), f = e => (0, r.jsx)(i.Suspense, {
-    fallback: null != s ? s() : l()(),
-    children: (0, r.jsx)(d, o({}, e))
+    fallback: null != o ? o() : l()(),
+    children: (0, r.jsx)(d, s({}, e))
   });
   return u && (f = i.memo(f)), f.displayName = "Suspense(".concat(c || "Unknown", ")"), f
 }
@@ -65,8 +65,8 @@ function u(e) {
   let {
     createPromise: t,
     webpackId: n,
-    render: s,
-    renderFallback: o
+    render: o,
+    renderFallback: s
   } = e, [l, c] = i.useState(null);
   return i.useEffect(() => {
     (0, a.sq)({
@@ -79,6 +79,6 @@ function u(e) {
       return c(t)
     })
   }, []), (0, r.jsx)(r.Fragment, {
-    children: null == l ? o() : s(l)
+    children: null == l ? s() : o(l)
   })
 }

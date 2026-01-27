@@ -28,7 +28,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -39,8 +39,8 @@ function s(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function s(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -50,8 +50,8 @@ function l(e) {
     active: t,
     options: n,
     renderOption: i
-  } = e, s = "function" == typeof n, [l, c] = r.useState({
-    options: s ? [] : n,
+  } = e, o = "function" == typeof n, [l, c] = r.useState({
+    options: o ? [] : n,
     query: "",
     debouncedQuery: "",
     loading: false
@@ -60,16 +60,16 @@ function l(e) {
     loading: d,
     query: f,
     debouncedQuery: p
-  } = l, _ = r.useCallback(e => c(t => o(a({}, t), {
-    loading: s,
+  } = l, _ = r.useCallback(e => c(t => s(a({}, t), {
+    loading: o,
     query: e,
     debouncedQuery: e
-  })), [s]);
+  })), [o]);
   return r.useEffect(() => {
     t && _("")
   }, [t, _]), r.useEffect(() => {
     let e;
-    return s ? (c(e => o(a({}, e), {
+    return o ? (c(e => s(a({}, e), {
       loading: true,
       debouncedQuery: null
     })), e = setTimeout(() => {
@@ -77,25 +77,25 @@ function l(e) {
     }, 500)) : _(f), () => {
       clearTimeout(e)
     }
-  }, [s, f, _]), r.useEffect(() => {
+  }, [o, f, _]), r.useEffect(() => {
     let e = false;
 
     function r() {
       return "function" == typeof n ? n(p) : Promise.resolve(n)
     }
-    return (t && null !== p && s || !s) && r().then(t => {
-      e || (null != i && (t = t.map(i)), c(e => o(a({}, e), {
+    return (t && null !== p && o || !o) && r().then(t => {
+      e || (null != i && (t = t.map(i)), c(e => s(a({}, e), {
         options: t,
         loading: false
       })))
     }), () => {
       e = true
     }
-  }, [t, n, p, i, s]), {
+  }, [t, n, p, i, o]), {
     options: u,
     loading: d,
     onQueryChange: r.useCallback(e => {
-      c(t => o(a({}, t), {
+      c(t => s(a({}, t), {
         query: e
       }))
     }, [])

@@ -38,10 +38,10 @@ function E(e, t, n, r) {
     }) => {
       try {
         if (l.A.USE_EXIF && C(e, t)) return {
-          __exif: s.A.read(w(t), g, r).tags
+          __exif: o.A.read(w(t), g, r).tags
         };
         if (l.A.USE_IPTC && N(e, t)) return {
-          __iptc: o.A.read(w(t), 0, r)
+          __iptc: s.A.read(w(t), 0, r)
         };
         if (e && !C(e, t) && !N(e, t)) return {
           [e]: {
@@ -70,8 +70,8 @@ function E(e, t, n, r) {
   }
 }
 
-function y(e, t, n, i, s) {
-  let o, l = [],
+function y(e, t, n, i, o) {
+  let s, l = [],
     c = [],
     m = [],
     g = u,
@@ -86,14 +86,14 @@ function y(e, t, n, i, s) {
       continue
     }
     if (g === _) {
-      o = new DataView(e.buffer.slice(t + r, t + n));
+      s = new DataView(e.buffer.slice(t + r, t + n));
       break
     }
-    let s = e.getUint8(t + r);
-    0 === s ? g = O(i, g) : g === u ? l.push(s) : g === f ? c.push(s) : g === p && m.push(s)
+    let o = e.getUint8(t + r);
+    0 === o ? g = O(i, g) : g === u ? l.push(o) : g === f ? c.push(o) : g === p && m.push(o)
   }
-  if (E !== r.Gl && !s) return {};
-  let y = (0, r.mF)(o, E, v(i));
+  if (E !== r.Gl && !o) return {};
+  let y = (0, r.mF)(s, E, v(i));
   return y instanceof Promise ? y.then(e => A(e, i, c, l)).catch(() => A("<text using unknown compression>".split(""), i, c, l)) : A(y, i, c, l)
 }
 
@@ -128,8 +128,8 @@ function A(e, t, n, r) {
 function I(e, t, n) {
   let i = (0, r.YF)(n);
   if (e === a.HL || 0 === t.length) return i;
-  let s = (0, r.YF)(t);
-  return `${i} (${s})`
+  let o = (0, r.YF)(t);
+  return `${i} (${o})`
 }
 
 function S(e) {

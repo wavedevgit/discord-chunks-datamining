@@ -2,7 +2,7 @@
 /** chunk id: 626457, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./65821.js");
 var Chunk837921 = require("./837921.js");
 
@@ -16,7 +16,7 @@ function i(e, t, n) {
 }
 let a = 256;
 
-function s(e, t) {
+function o(e, t) {
   return r.Ay.ensureModule("discord_spellcheck").then(() => {
     let {
       cld: n
@@ -31,7 +31,7 @@ function s(e, t) {
     })
   })
 }
-class o {
+class s {
   get language() {
     return this._language
   }
@@ -43,7 +43,7 @@ class o {
   }
   process(e) {
     this._processing || (this._processing = true, requestIdleCallback(t => {
-      t.timeRemaining() <= this._minimumTimeRemaining ? this._processEnd() : (e.length > a && (e = e.slice(0, a)), s(e, this._languageHint).then(e => {
+      t.timeRemaining() <= this._minimumTimeRemaining ? this._processEnd() : (e.length > a && (e = e.slice(0, a)), o(e, this._languageHint).then(e => {
         this.language = e, this._processEnd(t.didTimeout)
       }, () => {
         this._processEnd(t.didTimeout)

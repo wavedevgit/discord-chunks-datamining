@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 723588, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 723588, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => _
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk732955 = require("./732955.js"),
   Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
@@ -15,46 +14,46 @@ var Chunk503698 = require("./503698.js"),
   Chunk595654 = require("./595654.js"),
   Chunk713052 = require("./713052.js");
 
-function f(e) {
+function _(e) {
   let {
     onClickManageSubscription: t,
     count: n
   } = e;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(o.Heading, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "heading-md/bold",
-      children: l.intl.string(l.t["KzCF/6"])
-    }), (0, r.jsx)(o.hKd, {
+      children: o.intl.string(o.t["KzCF/6"])
+    }), (0, r.jsx)(a.hKd, {
       size: 4
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       className: c.yV,
-      children: l.intl.string(l.t["3D7qCu"])
-    }), (0, r.jsx)(o.hKd, {
+      children: o.intl.string(o.t["3D7qCu"])
+    }), (0, r.jsx)(a.hKd, {
       size: 24
     }), (0, r.jsxs)("div", {
-      className: a()(u.Qn, c.Nr),
+      className: l()(d.Qn, c.Nr),
       children: [(0, r.jsx)("img", {
-        src: d,
+        src: u,
         alt: "",
         className: c.RI
       }), (0, r.jsxs)("div", {
         className: c.FS,
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-xl/semibold",
           className: c.wx,
-          children: l.intl.string(l.t["KzCF/6"])
-        }), (0, r.jsx)(o.Text, {
+          children: o.intl.string(o.t["KzCF/6"])
+        }), (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           className: c.h_,
-          children: l.intl.format(l.t["m+pcOO"], {
+          children: o.intl.format(o.t["m+pcOO"], {
             numSubscriptions: n
           })
         })]
       }), (0, r.jsx)(s.$nd, {
         size: "sm",
         variant: "overlay-primary",
-        text: l.intl.string(l.t["3a8Xxj"]),
+        text: o.intl.string(o.t["3a8Xxj"]),
         onClick: t
       })]
     })]

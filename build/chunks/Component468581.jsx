@@ -34,14 +34,14 @@ let u = [Chunk506326.iq, Chunk506326.Zc, Chunk506326.Xy, Chunk506326.$X, Chunk50
           guildId: n.guild_id
         }), (0, r.jsx)(l.ZB, {
           children: t.extra.activity_name
-        }), (0, r.jsx)(o.mG, {
-          location: o.N5.CARD,
+        }), (0, r.jsx)(s.mG, {
+          location: s.N5.CARD,
           children: u.map((e, n) => (0, r.jsx)(e, {
             entry: t,
             hovered: d
           }, n))
         })]
-      }), (0, r.jsx)(s.V, {
+      }), (0, r.jsx)(o.V, {
         alt: null == f ? true : f.alt,
         src: null == f ? true : f.src,
         size: 48,

@@ -18,8 +18,8 @@ function d(e, t) {
     r = n.length > 1 ? n.pop() : "",
     i = n.join("."),
     a = "".concat(i, ".").concat(r),
-    s = 1;
-  for (; e.has(a);) a = "".concat(i, "_").concat(s, ".").concat(r), s += 1;
+    o = 1;
+  for (; e.has(a);) a = "".concat(i, "_").concat(o, ".").concat(r), o += 1;
   return e.add(a), a
 }
 async function f(e, t) {
@@ -27,14 +27,14 @@ async function f(e, t) {
   if (null == l.A.fileManager.readLogFiles) throw new i._(i.ct.GENERAL);
   let a = [];
   try {
-    a = (a = await l.A.fileManager.readLogFiles(e)).map(e => (0, o.ww)(e, "application/octet-stream"))
+    a = (a = await l.A.fileManager.readLogFiles(e)).map(e => (0, s.ww)(e, "application/octet-stream"))
   } catch (e) {
     throw u.error("uploadDebugFiles: read error '".concat(e, "'")), new i._(i.ct.READ)
   }
   if (0 === a.length) throw new i._(i.ct.NO_FILE);
   let f = {
       extraInfo: t,
-      mediaEngineState: s.A.getState()
+      mediaEngineState: o.A.getState()
     },
     p = [...a.map(e => ({
       name: e.name,

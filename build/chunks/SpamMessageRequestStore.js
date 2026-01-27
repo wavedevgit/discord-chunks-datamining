@@ -15,8 +15,8 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = new Set,
-  o = new Set,
+let o = new Set,
+  s = new Set,
   l = false;
 
 function c(e) {
@@ -25,11 +25,11 @@ function c(e) {
 
 function u(e) {
   let t = false;
-  return c(e) && !s.has(e.id) && (s.add(e.id), t = true), !c(e) && s.has(e.id) && (s.delete(e.id), t = true), !c(e) && o.has(e.id) && (o.delete(e.id), t = true), t
+  return c(e) && !o.has(e.id) && (o.add(e.id), t = true), !c(e) && o.has(e.id) && (o.delete(e.id), t = true), !c(e) && s.has(e.id) && (s.delete(e.id), t = true), t
 }
 
 function d() {
-  s.clear(), o.clear(), Object.values(r.A.getMutablePrivateChannels()).forEach(e => {
+  o.clear(), s.clear(), Object.values(r.A.getMutablePrivateChannels()).forEach(e => {
     u(e)
   }), l = true
 }
@@ -38,7 +38,7 @@ function f(e) {
   let {
     channelId: t
   } = e;
-  o.add(t)
+  s.add(t)
 }
 
 function p(e) {
@@ -59,7 +59,7 @@ function h(e) {
   let {
     channel: t
   } = e, n = false;
-  return s.has(t.id) && (s.delete(t.id), n = true), n
+  return o.has(t.id) && (o.delete(t.id), n = true), n
 }
 class m extends Chunk536802.A {
   initialize() {
@@ -67,25 +67,25 @@ class m extends Chunk536802.A {
   }
   loadCache() {
     let e = this.readSnapshot(m.LATEST_SNAPSHOT_VERSION);
-    null != e && (s = new Set(e))
+    null != e && (o = new Set(e))
   }
   takeSnapshot() {
     return {
       version: m.LATEST_SNAPSHOT_VERSION,
-      data: Array.from(s)
+      data: Array.from(o)
     }
   }
   getSpamChannelIds() {
-    return s
+    return o
   }
   getSpamChannelsCount() {
-    return s.size
+    return o.size
   }
   isSpam(e) {
-    return s.has(e)
+    return o.has(e)
   }
   isAcceptedOptimistic(e) {
-    return o.has(e)
+    return s.has(e)
   }
   isReady() {
     return l

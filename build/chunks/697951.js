@@ -23,7 +23,7 @@ class c extends Chunk439372.A {
     let {
       channel: t
     } = e;
-    (0, a.TT)(t) && (await (0, a.ml)(s.$), (0, i.A)(o.BVt.CHANNEL(null, t.id)))
+    (0, a.TT)(t) && (await (0, a.ml)(o.$), (0, i.A)(s.BVt.CHANNEL(null, t.id)))
   }
   constructor(...e) {
     super(...e), l(this, "actions", {

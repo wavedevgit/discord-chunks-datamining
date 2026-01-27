@@ -14,15 +14,15 @@ var Chunk465932 = require("./465932.js"),
 function l(e) {
   let t = (0, a.YZ)(null == e ? true : e.id, "channel_list"),
     n = (0, i.Oh)(null == e ? true : e.id),
-    l = (0, s.P)(e, "channel_list"),
+    l = (0, o.P)(e, "channel_list"),
     {
       shouldHideGuildPurchaseEntryPoints: c
     } = (0, r.MH)(null == e ? true : e.id);
-  return null != e && !c && (e.features.has(o.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) || t && n || l)
+  return null != e && !c && (e.features.has(s.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) || t && n || l)
 }
 
 function c(e, t) {
   let n = (0, a.p9)(null == e ? true : e.id, "channel_list"),
     r = (0, i.l8)(null == e ? true : e.id, t);
-  return null != e && (e.features.has(o.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) || n && r)
+  return null != e && (e.features.has(s.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) || n && r)
 }

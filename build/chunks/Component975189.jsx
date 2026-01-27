@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
-  s = require.n(Chunk284009),
+  o = require.n(Chunk284009),
   Chunk417597 = require("./417597.js"),
   Chunk73153 = require("./73153.js"),
   Chunk775602 = require("./775602.js"),
@@ -59,10 +59,10 @@ function S(e) {
     purchaseError: f,
     purchasePreviewError: p,
     appliedUserDiscounts: h
-  } = (0, m.P5)(), g = (0, o.bG)([u.A], () => u.A.getProduct(l)), O = i.useRef(false);
-  s()(null != l, "Expected selectedSkuId"), s()(null != c, "Expected application");
+  } = (0, m.P5)(), g = (0, s.bG)([u.A], () => u.A.getProduct(l)), O = i.useRef(false);
+  o()(null != l, "Expected selectedSkuId"), o()(null != c, "Expected application");
   let A = a[l];
-  s()(null != A, "Expected sku");
+  o()(null != A, "Expected sku");
   let I = null != d || null != f || null != p,
     S = h.length > 0 ? v.intl.formatToPlainString(v.t.VuV3Td, {
       discountOfferAmount: h[0].discount.amount
@@ -85,14 +85,14 @@ function T(e) {
     isGift: t,
     giftCode: n,
     selectedGiftStyle: a,
-    hasSentMessage: s,
+    hasSentMessage: o,
     giftRecipient: _,
     giftMessageError: E,
     isSendingMessage: y,
     giftingOrigin: b
-  } = (0, h.Pv)(), v = (0, o.bG)([c.A], () => c.A.useReducedMotion), A = i.useRef(null), {
+  } = (0, h.Pv)(), v = (0, s.bG)([c.A], () => c.A.useReducedMotion), A = i.useRef(null), {
     selectedSkuId: T
-  } = (0, m.P5)(), C = (0, o.bG)([u.A], () => u.A.getProduct(T)), {
+  } = (0, m.P5)(), C = (0, s.bG)([u.A], () => u.A.getProduct(T)), {
     confettiColors: N
   } = (0, d.A)(null == C ? true : C.styles);
   return i.useEffect(() => {
@@ -107,7 +107,7 @@ function T(e) {
       giftCode: n,
       onClose: e.handleClose,
       selectedGiftStyle: a,
-      hasSentMessage: s,
+      hasSentMessage: o,
       giftRecipient: _,
       giftMessageError: E,
       isSendingMessage: y

@@ -15,8 +15,8 @@ function a(e) {
     n = i(t, new Date),
     a = new Date;
   a.setDate(a.getDate() + 1);
-  let s = i(t, a),
-    o = r.intl.data.formatTime(t, {
+  let o = i(t, a),
+    s = r.intl.data.formatTime(t, {
       format: "short"
     });
   return n ? {
@@ -24,18 +24,18 @@ function a(e) {
     dateString: r.intl.data.formatRelativeTime(0, "day", {
       numeric: "auto"
     }),
-    timeString: o
-  } : s ? {
+    timeString: s
+  } : o ? {
     kind: "tomorrow",
     dateString: r.intl.data.formatRelativeTime(1, "day", {
       numeric: "auto"
     }),
-    timeString: o
+    timeString: s
   } : {
     kind: "date",
     dateString: r.intl.data.formatDate(t, {
       dateStyle: "short"
     }),
-    timeString: o
+    timeString: s
   }
 }

@@ -12,7 +12,7 @@ function a(e) {
     apply: t,
     deleteBackward: n,
     deleteForward: a,
-    deleteFragment: o,
+    deleteFragment: s,
     insertText: l
   } = e;
   return e.apply = n => {
@@ -26,25 +26,25 @@ function a(e) {
   }, e.insertText = t => {
     null != e.selection && null != i.VW.getCurrentInline(e) ? r.b.insertText(e, t) : l(t)
   }, e.deleteBackward = t => {
-    s(e, t, true) || n(t)
+    o(e, t, true) || n(t)
   }, e.deleteForward = t => {
-    s(e, t, false) || a(t)
+    o(e, t, false) || a(t)
   }, e.deleteFragment = t => {
     if (null != e.selection && i.ZF.isExpanded(e.selection)) {
-      var n, a, s, l;
+      var n, a, o, l;
       let c = e.selection.anchor,
         u = e.selection.focus,
         d = i.VW.getParentInline(e, c),
         f = i.VW.getParentInline(e, u);
-      if (null != d && null != f && i.PW.equals(d[1], f[1])) return void o(t);
+      if (null != d && null != f && i.PW.equals(d[1], f[1])) return void s(t);
       let p = i.ZF.isForward(e.selection);
       if (null != d) {
-        let [, t] = d, [r, s] = i.VW.edges(e, t);
-        p && i.Kh.equals(c, r) ? c = null != (n = i.VW.before(e, r)) ? n : i.VW.start(e, []) : !p && i.Kh.equals(c, s) && (c = null != (a = i.VW.after(e, s)) ? a : i.VW.end(e, []))
+        let [, t] = d, [r, o] = i.VW.edges(e, t);
+        p && i.Kh.equals(c, r) ? c = null != (n = i.VW.before(e, r)) ? n : i.VW.start(e, []) : !p && i.Kh.equals(c, o) && (c = null != (a = i.VW.after(e, o)) ? a : i.VW.end(e, []))
       }
       if (null != f) {
         let [, t] = f, [n, r] = i.VW.edges(e, t);
-        !p && i.Kh.equals(u, n) ? u = null != (s = i.VW.before(e, n)) ? s : i.VW.start(e, []) : p && i.Kh.equals(u, r) && (u = null != (l = i.VW.after(e, r)) ? l : i.VW.end(e, []))
+        !p && i.Kh.equals(u, n) ? u = null != (o = i.VW.before(e, n)) ? o : i.VW.start(e, []) : p && i.Kh.equals(u, r) && (u = null != (l = i.VW.after(e, r)) ? l : i.VW.end(e, []))
       }
       return void r.b.delete(e, {
         at: {
@@ -55,16 +55,16 @@ function a(e) {
         select: true
       })
     }
-    o(t)
+    s(t)
   }, e
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   let a = i.VW.getCurrentInline(e);
   if ("block" === t) returntrue;
-  let s = i.VW.getCurrentText(e);
-  if (null == s) returntrue;
-  let [o, l] = s, [c, u] = i.VW.edges(e, l), d = i.ZF.toPoint(e.selection);
+  let o = i.VW.getCurrentText(e);
+  if (null == o) returntrue;
+  let [s, l] = o, [c, u] = i.VW.edges(e, l), d = i.ZF.toPoint(e.selection);
   if (null == d) returntrue;
   if (null != a) {
     let [t, n] = a;
@@ -73,15 +73,15 @@ function s(e, t, n) {
   if ("line" === t)
     if (null == a) returnfalse;
     else {
-      let [s, o] = i.VW.edges(e, a[1]);
+      let [o, s] = i.VW.edges(e, a[1]);
       return r.b.delete(e, {
         at: d,
         unit: t,
         reverse: n,
         select: true,
         bounds: {
-          anchor: s,
-          focus: o
+          anchor: o,
+          focus: s
         }
       }), true
     } let f = i.VW.getParentBlock(e, d);
@@ -102,7 +102,7 @@ function s(e, t, n) {
       }
       let a = i.VW.node(e, t.path);
       if (null == a || !i.l5.isText(a[0])) returntrue;
-      if ([o, l] = a, 0 !== o.text.length) {
+      if ([s, l] = a, 0 !== s.text.length) {
         [c, u] = i.VW.edges(e, l);
         break
       }

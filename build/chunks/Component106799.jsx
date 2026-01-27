@@ -19,7 +19,7 @@ let Chunk243884 = require("./243884.js"),
       shouldUseThemeColor: n = false,
       loading: i,
       className: d
-    } = e, f = (0, o.Ay)(), p = n && (0, s.qB)(f) ? u : c, _ = true !== t ? {
+    } = e, f = (0, s.Ay)(), p = n && (0, o.qB)(f) ? u : c, _ = true !== t ? {
       height: t
     } : true;
     return (0, r.jsx)("img", {

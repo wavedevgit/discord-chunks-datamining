@@ -8,7 +8,7 @@ var Chunk321733 = require("./321733.js"),
   Chunk317374 = require("./317374.js"),
   Chunk988440 = require("./988440.js");
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -19,12 +19,12 @@ function s(e, t) {
   return n
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? s(Object(n), true).forEach(function(t) {
+    t % 2 ? o(Object(n), true).forEach(function(t) {
       l(e, t, n[t])
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : s(Object(n)).forEach(function(t) {
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : o(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
     })
   }
@@ -45,12 +45,12 @@ function c(e) {
     var t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       n = e.getMonitor(),
       r = e.getRegistry();
-    u(n), p(n).forEach(function(a, s) {
-      var l = d(a, s, r, n),
+    u(n), p(n).forEach(function(a, o) {
+      var l = d(a, o, r, n),
         c = {
           type: i.q2,
           payload: {
-            dropResult: o(o({}, t), l)
+            dropResult: s(s({}, t), l)
           }
         };
       e.dispatch(c)

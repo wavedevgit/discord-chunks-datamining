@@ -53,16 +53,16 @@ function _(e, t) {
 }
 require("./23766.js");
 let h = e => {
-    let [t, n] = r.useState(false), a = null != e ? e : t, s = a !== (0, o.A)(a);
+    let [t, n] = r.useState(false), a = null != e ? e : t, o = a !== (0, s.A)(a);
     return {
       visible: a,
-      visibleChanged: s,
+      visibleChanged: o,
       reference: (0, i.K)(e => n(e), .5)
     }
   },
   m = () => {
-    let e = (0, s.bG)([l.A], () => l.A.isFocused()),
-      t = (0, o.A)(e),
+    let e = (0, o.bG)([l.A], () => l.A.isFocused()),
+      t = (0, s.A)(e),
       n = e !== t;
     return {
       focused: e,
@@ -75,8 +75,8 @@ let h = e => {
       focusedChanged: n
     } = m(), {
       visible: i,
-      visibleChanged: s,
-      reference: o
+      visibleChanged: o,
+      reference: s
     } = h(e.overrideVisibility), {
       key: l,
       adContentIds: d
@@ -84,8 +84,8 @@ let h = e => {
       focused: t,
       focusedChanged: n,
       visible: i,
-      visibleChanged: s,
-      reference: o
+      visibleChanged: o,
+      reference: s
     });
     return "questOrQuests" in e ? (0, r.createElement)(c.xs, _(f({}, p), {
       key: l,

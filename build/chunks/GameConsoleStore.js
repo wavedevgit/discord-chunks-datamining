@@ -89,7 +89,7 @@ function O(e) {
 let v = Object.freeze({});
 class A extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
-    null != e && (p = e.lastSelectedDeviceByPlatform), this.waitFor(s.A, o.A)
+    null != e && (p = e.lastSelectedDeviceByPlatform), this.waitFor(o.A, s.A)
   }
   getUserAgnosticState() {
     return {

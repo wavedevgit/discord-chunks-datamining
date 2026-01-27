@@ -1,7 +1,7 @@
-/** Chunk was on 58652 **/
+/** Chunk was on 12236 **/
 /** chunk id: 316862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,11 +17,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk309010 = require("./309010.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let _ = e => {
+let x = e => {
   let {
     application: t,
     reportId: n
-  } = e, [_, h] = r.useState(false), [v, f] = r.useState(false), j = (0, i.bG)([b.A, u.A], () => {
+  } = e, [x, h] = r.useState(false), [v, f] = r.useState(false), j = (0, i.bG)([b.A, u.A], () => {
     var e;
     return null == (e = u.A.getChannel(b.A.getChannelId())) ? true : e.guild_id
   }), [A, y] = r.useState(null);
@@ -46,7 +46,7 @@ let _ = e => {
     }
   }, [j, t.id]);
   let O = r.useCallback(() => {
-      f(false), s.Ay.trackWithMetadata(x.HAw.IAR_REMOVE_APP_BUTTON_CLICKED, {
+      f(false), s.Ay.trackWithMetadata(_.HAw.IAR_REMOVE_APP_BUTTON_CLICKED, {
         guild_id: j,
         application_id: t.id,
         report_id: n
@@ -60,11 +60,11 @@ let _ = e => {
     S = (0, i.bG)([p.A, m.A], () => {
       let e = m.A.getGuild(j);
       if (null == e) returnfalse;
-      let n = p.A.can(x.xBc.MANAGE_GUILD, e),
-        l = null == t.bot || p.A.canManageUser(x.xBc.MANAGE_GUILD, t.bot.id, e);
+      let n = p.A.can(_.xBc.MANAGE_GUILD, e),
+        l = null == t.bot || p.A.canManageUser(_.xBc.MANAGE_GUILD, t.bot.id, e);
       return n && l
     });
-  return null != t && null != j && _ && S ? (0, l.jsx)(c.PQ, {
+  return null != t && null != j && x && S ? (0, l.jsx)(c.PQ, {
     title: g.intl.string(g.t["WV/CsH"]),
     description: g.intl.string(g.t["FlcC+3"]),
     buttonText: v ? g.intl.string(g.t.aCJlq4) : g.intl.string(g.t["6I1F3i"]),

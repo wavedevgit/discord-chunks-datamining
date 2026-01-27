@@ -61,7 +61,7 @@ async function f() {
     challenge: e,
     ticket: t
   } = (await i.Bo.post({
-    url: o.Rsh.WEBAUTHN_CONDITIONAL_UI_CHALLENGE,
+    url: s.Rsh.WEBAUTHN_CONDITIONAL_UI_CHALLENGE,
     headers: {
       authorization: ""
     },
@@ -77,7 +77,7 @@ async function p() {
     challenge: e,
     ticket: t
   } = (await i.Bo.post({
-    url: o.Rsh.WEBAUTHN_PASSWORDLESS_CHALLENGE,
+    url: s.Rsh.WEBAUTHN_PASSWORDLESS_CHALLENGE,
     rejectWithError: false
   })).body;
   return {
@@ -88,7 +88,7 @@ async function p() {
 
 function _() {
   i.Bo.get({
-    url: o.Rsh.MFA_WEBAUTHN_CREDENTIALS,
+    url: s.Rsh.MFA_WEBAUTHN_CREDENTIALS,
     rejectWithError: true
   }).then(e => {
     if (null != e.body) {
@@ -108,7 +108,7 @@ function _() {
 
 function h(e) {
   i.Bo.del({
-    url: o.Rsh.MFA_WEBAUTHN_CREDENTIAL(e.id),
+    url: s.Rsh.MFA_WEBAUTHN_CREDENTIAL(e.id),
     rejectWithError: true
   }).then(() => {
     a.h.dispatch({
@@ -119,7 +119,7 @@ function h(e) {
 }
 async function m(e, t) {
   let n = await i.Bo.patch({
-    url: o.Rsh.MFA_WEBAUTHN_CREDENTIAL(e),
+    url: s.Rsh.MFA_WEBAUTHN_CREDENTIAL(e),
     body: {
       name: t
     },
@@ -144,7 +144,7 @@ async function g() {
       challenge: t
     }
   } = await i.Bo.post({
-    url: o.Rsh.MFA_WEBAUTHN_CREDENTIALS,
+    url: s.Rsh.MFA_WEBAUTHN_CREDENTIALS,
     body: {},
     rejectWithError: false
   });
@@ -154,8 +154,8 @@ async function g() {
   }
 }
 async function E(e, t, n) {
-  let i = await s.A.post({
-    url: o.Rsh.MFA_WEBAUTHN_CREDENTIALS,
+  let i = await o.A.post({
+    url: s.Rsh.MFA_WEBAUTHN_CREDENTIALS,
     body: {
       name: e,
       ticket: t,

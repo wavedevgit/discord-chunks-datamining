@@ -1,35 +1,33 @@
-/** Chunk was on web.js **/
-/** chunk id: 337692, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 337692, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => a
 }), require("./896048.js"), require("./733351.js"), require("./747238.js");
 var Chunk64700 = require("./64700.js"),
   Chunk77509 = require("./77509.js"),
   Chunk128747 = require("./128747.js");
-let s = [],
-  o = "";
+let s = [];
 
-function l(e) {
+function a(e) {
   let {
     visible: t,
     autocompleterResultTypes: n,
-    autocompleterOptions: l,
-    autocompleterBeforeCreateSearchContext: c
-  } = e, [u, d] = r.useState(o), [f, p] = r.useState(s), _ = r.useCallback((e, t) => {
-    "" === (t = t.trim()).trim() ? p(s) : p(e)
+    autocompleterOptions: a,
+    autocompleterBeforeCreateSearchContext: o
+  } = e, [c, d] = r.useState(""), [u, _] = r.useState(s), p = r.useCallback((e, t) => {
+    "" === (t = t.trim()).trim() ? _(s) : _(e)
   }, []);
   r.useEffect(() => i.A.addRouteChangeListener(() => {
-    d(o)
+    d("")
   }), []);
-  let [h] = r.useState(() => new a.A(_, n, true, l));
+  let [m] = r.useState(() => new l.A(p, n, true, a));
   return r.useEffect(() => {
-    t ? (null == c || c(h), h.createSearchContext()) : (h.clean(), d(o))
-  }, [t, h, c]), {
-    queryResults: f,
-    query: u,
+    t ? (null == o || o(m), m.createSearchContext()) : (m.clean(), d(""))
+  }, [t, m, o]), {
+    queryResults: u,
+    query: c,
     updateQuery: r.useCallback(e => {
-      d(e), h.search(e)
-    }, [h])
+      d(e), m.search(e)
+    }, [m])
   }
 }

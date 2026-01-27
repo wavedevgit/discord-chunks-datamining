@@ -56,7 +56,7 @@ let _ = e => {
       case r.R.AVATAR_DECORATION:
         return i.A.fromServer(e);
       case r.R.PROFILE_EFFECT:
-        return s.A.fromServer(e);
+        return o.A.fromServer(e);
       case r.R.NAMEPLATE:
         return a.A.fromServer(e);
       default:
@@ -67,7 +67,7 @@ let _ = e => {
 class m extends Chunk520606.A {
   static fromServer(e) {
     return new m(p(d({}, e), {
-      sku: null != e.sku ? o.A.createFromServer(e.sku) : true
+      sku: null != e.sku ? s.A.createFromServer(e.sku) : true
     }))
   }
   constructor(e) {

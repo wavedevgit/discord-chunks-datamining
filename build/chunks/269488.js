@@ -8,7 +8,7 @@ var Chunk647787 = require("./647787.js"),
   Chunk272750 = require("./272750.js"),
   Chunk225321 = require("./225321.js"),
   Chunk875521 = require("./875521.js"),
-  o = new WeakMap,
+  s = new WeakMap,
   l = function(e, t) {
     for (var n = 0; n < e.length; n += 1)
       if (e[n].target === t) return n;
@@ -18,19 +18,19 @@ var Chunk647787 = require("./647787.js"),
     function e() {}
     return e.connect = function(e, t) {
       var n = new a.M(e, t);
-      o.set(e, n)
+      s.set(e, n)
     }, e.observe = function(e, t, n) {
-      var a = o.get(e),
+      var a = s.get(e),
         c = 0 === a.observationTargets.length;
-      0 > l(a.observationTargets, t) && (c && s.g.push(a), a.observationTargets.push(new i.V(t, n && n.box)), (0, r.L)(1), r.c.schedule())
+      0 > l(a.observationTargets, t) && (c && o.g.push(a), a.observationTargets.push(new i.V(t, n && n.box)), (0, r.L)(1), r.c.schedule())
     }, e.unobserve = function(e, t) {
-      var n = o.get(e),
+      var n = s.get(e),
         i = l(n.observationTargets, t),
         a = 1 === n.observationTargets.length;
-      i >= 0 && (a && s.g.splice(s.g.indexOf(n), 1), n.observationTargets.splice(i, 1), (0, r.L)(false))
+      i >= 0 && (a && o.g.splice(o.g.indexOf(n), 1), n.observationTargets.splice(i, 1), (0, r.L)(false))
     }, e.disconnect = function(e) {
       var t = this,
-        n = o.get(e);
+        n = s.get(e);
       n.observationTargets.slice().forEach(function(n) {
         return t.unobserve(e, n.target)
       }), n.activeTargets.splice(0, n.activeTargets.length)

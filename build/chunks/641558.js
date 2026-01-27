@@ -23,8 +23,8 @@ class l extends Chunk324281.G {
   }
   internalBinaryRead(e, t, n, i) {
     let a = null != i ? i : this.create(),
-      s = e.pos + t;
-    for (; e.pos < s;) {
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
@@ -37,19 +37,19 @@ class l extends Chunk324281.G {
           a.assetUrl = e.string();
           break;
         case 4:
-          a.asset = o.i.internalBinaryRead(e, e.uint32(), n, a.asset);
+          a.asset = s.i.internalBinaryRead(e, e.uint32(), n, a.asset);
           break;
         default:
-          let s = n.readUnknownField;
-          if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let o = n.readUnknownField;
+          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let l = e.skip(i);
-          false !== s && (true === s ? r.f$.onRead : s)(this.typeName, a, t, i, l)
+          false !== o && (true === o ? r.f$.onRead : o)(this.typeName, a, t, i, l)
       }
     }
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "" !== e.header && t.tag(1, r.O0.LengthDelimited).string(e.header), "" !== e.body && t.tag(2, r.O0.LengthDelimited).string(e.body), "" !== e.assetUrl && t.tag(3, r.O0.LengthDelimited).string(e.assetUrl), e.asset && o.i.internalBinaryWrite(e.asset, t.tag(4, r.O0.LengthDelimited).fork(), n).join();
+    "" !== e.header && t.tag(1, r.O0.LengthDelimited).string(e.header), "" !== e.body && t.tag(2, r.O0.LengthDelimited).string(e.body), "" !== e.assetUrl && t.tag(3, r.O0.LengthDelimited).string(e.assetUrl), e.asset && s.i.internalBinaryWrite(e.asset, t.tag(4, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -73,7 +73,7 @@ class l extends Chunk324281.G {
       no: 4,
       name: "asset",
       kind: "message",
-      T: () => o.i
+      T: () => s.i
     }])
   }
 }

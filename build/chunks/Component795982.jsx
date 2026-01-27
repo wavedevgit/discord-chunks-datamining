@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 795982, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 795982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => L
+  A: () => D
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -32,18 +31,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk772004 = require("./772004.js");
 
-function R() {
+function N() {
   return (0, r.jsxs)("div", {
-    className: w.N1,
-    children: [(0, r.jsx)(C.A, {
+    className: T.N1,
+    children: [(0, r.jsx)(I.A, {
       size: "xs",
-      className: w.nr,
-      color: l.A.colors.TEXT_MUTED
-    }), (0, r.jsx)(a.EYj, {
-      className: w.TK,
+      className: T.nr,
+      color: o.A.colors.TEXT_MUTED
+    }), (0, r.jsx)(l.EYj, {
+      className: T.TK,
       variant: "text-sm/semibold",
       color: "text-muted",
-      children: N.intl.string(N.t.ToyvLk)
+      children: S.intl.string(S.t.ToyvLk)
     })]
   })
 }
@@ -53,103 +52,103 @@ function P(e) {
     message: t,
     snapshot: n,
     index: u
-  } = e, f = i.useMemo(() => new I.j(t, n, u), [t, n, u]), p = (0, s.bG)([E.A, A.default, v.A, O.A, b.A, d.A], () => f.getForwardInfo(E.A, A.default, v.A, O.A, b.A, d.A).footerInfo, [f], o.A), _ = (0, s.bG)([E.A], () => {
+  } = e, p = i.useMemo(() => new E.j(t, n, u), [t, n, u]), m = (0, a.bG)([b.A, O.default, x.A, v.A, y.A, d.A], () => p.getForwardInfo(b.A, O.default, x.A, v.A, y.A, d.A).footerInfo, [p], s.A), f = (0, a.bG)([b.A], () => {
     var e;
-    return E.A.getChannel(null == (e = t.messageReference) ? true : e.channel_id)
-  }), h = i.useCallback(() => {
-    (0, S.A)(t)
+    return b.A.getChannel(null == (e = t.messageReference) ? true : e.channel_id)
+  }), g = i.useCallback(() => {
+    (0, j.A)(t)
   }, [t]);
-  return null == p ? null : (0, r.jsxs)(c.DUT, {
-    className: w.xQ,
-    onClick: h,
-    "aria-label": p.accessibilityLabel,
-    children: [null != p.originIconUrl ? (0, r.jsx)("img", {
-      className: w.yl,
-      src: p.originIconUrl,
+  return null == m ? null : (0, r.jsxs)(c.DUT, {
+    className: T.xQ,
+    onClick: g,
+    "aria-label": m.accessibilityLabel,
+    children: [null != m.originIconUrl ? (0, r.jsx)("img", {
+      className: T.yl,
+      src: m.originIconUrl,
       alt: ""
-    }) : null, null == p.originIconUrl && (null == _ ? true : _.isThread()) ? (0, r.jsx)(D, {
-      channel: _
-    }) : null, (0, r.jsx)(a.EYj, {
-      className: w.PJ,
+    }) : null, null == m.originIconUrl && (null == f ? true : f.isThread()) ? (0, r.jsx)(w, {
+      channel: f
+    }) : null, (0, r.jsx)(l.EYj, {
+      className: T.PJ,
       variant: "text-sm/medium",
       color: "none",
-      children: "".concat(p.originLabel, "  •  ").concat(p.timestampLabel)
+      children: "".concat(m.originLabel, "  •  ").concat(m.timestampLabel)
     }), (0, r.jsx)(c._BQ, {
       size: "xxs",
-      color: l.A.colors.TEXT_MUTED
+      color: o.A.colors.TEXT_MUTED
     })]
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     channel: t
-  } = e, n = (0, m.Vp)({
+  } = e, n = (0, h.Vp)({
     location: "ForwardFooter"
-  }), a = i.useMemo(() => (0, u.gU)(t), [t]);
-  return n.enabled && null != a ? (0, r.jsx)(a, {
-    className: w.yl,
+  }), l = i.useMemo(() => (0, u.gU)(t), [t]);
+  return n.enabled && null != l ? (0, r.jsx)(l, {
+    className: T.yl,
     size: "xs",
     color: "currentColor"
   }) : null
 }
 
-function x(e) {
+function R(e) {
   var t;
   let {
     message: n,
-    snapshot: a,
-    index: o
-  } = e, l = i.useMemo(() => (0, T.A)(n, a), [n, a]), c = g.hD.useSetting(), u = g.rs.useSetting(), d = c && u, m = (0, s.bG)([y.A], () => y.A.isDeveloper), b = (0, f.S)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
-    content: O,
+    snapshot: l,
+    index: s
+  } = e, o = i.useMemo(() => (0, C.A)(n, l), [n, l]), c = _.hD.useSetting(), u = _.rs.useSetting(), d = (0, a.bG)([A.A], () => A.A.isDeveloper), h = (0, p.S)((null != (t = o.editedTimestamp) ? t : o.timestamp).valueOf()), {
+    content: y,
     hasSpoilerEmbeds: v,
-    hasBailedAst: A
-  } = (0, _.A)(l, {
-    hideSimpleEmbedContent: d,
+    hasBailedAst: x
+  } = (0, f.A)(o, {
+    hideSimpleEmbedContent: c && u,
     isInteracting: false,
     formatInline: false,
-    allowList: b,
-    allowHeading: b,
+    allowList: h,
+    allowHeading: h,
     allowLinks: true,
-    allowDevLinks: m,
+    allowDevLinks: d,
     previewLinkTarget: true
-  }), I = (0, s.bG)([E.A], () => E.A.getChannel(n.channel_id)), S = g.hH.useSetting();
-  return null == I ? null : (0, r.jsxs)("div", {
-    className: w.kL,
+  }), O = (0, a.bG)([b.A], () => b.A.getChannel(n.channel_id)), E = _.hH.useSetting();
+  return null == O ? null : (0, r.jsxs)("div", {
+    className: T.kL,
     children: [(0, r.jsx)("div", {
-      className: w.hD
+      className: T.hD
     }), (0, r.jsxs)("div", {
-      className: w.Qs,
-      children: [(0, r.jsx)(R, {}), (0, r.jsx)(p.Ay, {
-        message: l,
-        content: O,
-        compact: S
-      }), (0, h.A)({
+      className: T.Qs,
+      children: [(0, r.jsx)(N, {}), (0, r.jsx)(m.Ay, {
+        message: o,
+        content: y,
+        compact: E
+      }), (0, g.A)({
         channelMessageProps: {
-          message: l,
-          channel: I,
-          compact: S
+          message: o,
+          channel: O,
+          compact: E
         },
         hasSpoilerEmbeds: v,
-        hasBailedAst: A,
+        hasBailedAst: x,
         isInteracting: false,
         isMessageSnapshot: true,
         renderThreadAccessory: false
       }), (0, r.jsx)(P, {
         message: n,
-        snapshot: a,
-        index: o
+        snapshot: l,
+        index: s
       })]
     })]
-  }, o)
+  }, s)
 }
 
-function L(e) {
+function D(e) {
   let {
     message: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.messageSnapshots.map((e, n) => (0, r.jsx)(x, {
+    children: t.messageSnapshots.map((e, n) => (0, r.jsx)(R, {
       message: t,
       snapshot: e,
       index: n

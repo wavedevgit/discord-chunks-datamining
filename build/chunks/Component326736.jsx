@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 326736, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 326736, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,137 +20,127 @@ var Chunk627968 = require("./627968.js"),
   Chunk17307 = require("./17307.js"),
   Chunk180022 = require("./180022.jsx"),
   Chunk128906 = require("./128906.js");
-
-function b(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function O(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      b(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function v(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let I = e => {
+let E = e => {
     let {
       showAllPerksButton: t,
       leftAlignHeaders: n,
       title: i,
-      headerClassname: a
-    } = e, s = (0, r.jsx)(l.Heading, {
+      headerClassname: l
+    } = e, s = (0, r.jsx)(o.Heading, {
       variant: "heading-xxl/extrabold",
       color: "text-strong",
-      className: null != a ? a : y.R_,
+      className: null != l ? l : b.R_,
       children: i
     });
     return null == t ? s : n ? (0, r.jsxs)("div", {
-      className: y.bV,
+      className: b.bV,
       children: [s, null != t && (0, r.jsx)("div", {
-        className: y.W0,
+        className: b.W0,
         children: t
       })]
     }) : (0, r.jsx)("div", {
-      className: y.kL,
+      className: b.kL,
       children: (0, r.jsx)("div", {
-        className: y.pr,
+        className: b.pr,
         children: s
       })
     })
   },
-  S = e => {
+  x = e => {
     let {
       className: t,
       variant: n,
-      noBackground: a = false,
-      leftAlignHeaders: b = false,
-      showAllPerksButton: v,
-      headerClassname: S
-    } = e, T = i.useRef(null), C = n === m.cJ.WHATS_NEW, N = (0, o.bG)([u.default], () => u.default.getCurrentUser()), w = (0, _.E)();
+      noBackground: l = false,
+      leftAlignHeaders: x = false,
+      showAllPerksButton: O,
+      headerClassname: C
+    } = e, I = i.useRef(null), T = n === A.cJ.WHATS_NEW, S = (0, a.bG)([d.default], () => d.default.getCurrentUser()), j = (0, m.E)();
     i.useEffect(() => {
-      C && w()
-    }, [w, C]);
-    let R = (0, g.G4)(C),
-      P = (0, h.A)(),
-      D = (0, g.LQ)(),
+      T && j()
+    }, [j, T]);
+    let v = (0, f.G4)(T),
+      N = (0, g.A)(),
+      y = (0, f.LQ)(),
       {
-        fractionalState: x
+        fractionalState: P
       } = (0, c.A)(),
-      L = (0, d.d)(),
-      j = f.A.useExperiment({
+      R = (0, u.d)(),
+      D = _.A.useExperiment({
         location: "PremiumPerks"
       }).enabled,
-      M = (0, p.O9)(),
-      k = (0, g.vx)({
-        perksCards: P,
+      w = (0, p.O9)(),
+      L = (0, f.vx)({
+        perksCards: N,
         variant: n,
         hideCardsOnNarrowScreen: false,
-        isPremiumSubscriber: D,
-        fractionalState: x,
-        isInReverseTrial: L,
-        recurring3PPromotionExperiment: j,
-        showPremiumGroup: M,
-        isPremiumGroupMember: null == N ? true : N.isPremiumGroupMember()
+        isPremiumSubscriber: y,
+        fractionalState: P,
+        isInReverseTrial: R,
+        recurring3PPromotionExperiment: D,
+        showPremiumGroup: w,
+        isPremiumGroupMember: null == S ? true : S.isPremiumGroupMember()
       }),
-      U = k.some(e => null != e.pillText);
+      M = L.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
-      ref: T,
-      className: s()(y.uW, {
-        [y.qO]: !b,
-        [y.Uv]: b
+      ref: I,
+      className: s()(b.uW, {
+        [b.qO]: !x,
+        [b.Uv]: x
       }, t),
-      children: [(0, r.jsx)(I, {
-        showAllPerksButton: v,
-        leftAlignHeaders: b,
-        title: R.title,
-        headerClassname: S
-      }), (0, r.jsx)(l.Text, {
+      children: [(0, r.jsx)(E, {
+        showAllPerksButton: O,
+        leftAlignHeaders: x,
+        title: v.title,
+        headerClassname: C
+      }), (0, r.jsx)(o.Text, {
         variant: "text-lg/normal",
         color: "text-strong",
-        className: s()(y.VA, {
-          [y.VA]: null == v || b,
-          [y.Xx]: null != v && !b,
-          [y.Ij]: C || b,
-          [y.Ob]: U,
-          [y.dO]: b,
-          [y.br]: !b
+        className: s()(b.VA, {
+          [b.VA]: null == O || x,
+          [b.Xx]: null != O && !x,
+          [b.Ij]: T || x,
+          [b.Ob]: M,
+          [b.dO]: x,
+          [b.br]: !x
         }),
-        children: R.subtitle
-      }), !b && null != v && (0, r.jsx)("div", {
-        className: y.xk,
-        children: v
+        children: v.subtitle
+      }), !x && null != O && (0, r.jsx)("div", {
+        className: b.xk,
+        children: O
       }), (0, r.jsx)("div", {
-        className: y.Ui,
-        children: k.map((e, t) => (0, r.jsx)(E.A, A(O({}, e), {
-          forceShadow: a
-        }), "".concat(e.name, "_").concat(t)))
+        className: b.Ui,
+        children: L.map((e, t) => {
+          var n, i;
+          return (0, r.jsx)(h.A, (n = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({}, e), i = i = {
+            forceShadow: l
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(i)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+          }), n), "".concat(e.name, "_").concat(t))
+        })
       })]
     })
   }

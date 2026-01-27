@@ -26,20 +26,20 @@ var Chunk446474 = require("./446474.js"),
   O = Chunk603526.BROKEN_CARET,
   v = true !== /()??/.exec("")[1];
 (b || v || O || Chunk614886 || Chunk919971) && (h = function(e) {
-  var t, n, i, o, l, d, f, A = this,
+  var t, n, i, s, l, d, f, A = this,
     I = u(A),
     S = a(e),
     T = I.raw;
   if (T) return T.lastIndex = A.lastIndex, t = r(h, T, S), A.lastIndex = T.lastIndex, t;
   var C = I.groups,
     N = O && A.sticky,
-    w = r(s, A),
+    w = r(o, A),
     R = A.source,
     P = 0,
     D = S;
-  if (N && (false === g(w = E(w, "y", ""), "g") && (w += "g"), D = y(S, A.lastIndex), A.lastIndex > 0 && (!A.multiline || A.multiline && "\n" !== m(S, A.lastIndex - 1)) && (R = "(?: " + R + ")", D = " " + D, P++), n = RegExp("^(?:" + R + ")", w)), v && (n = RegExp("^" + R + "$(?!\\s)", w)), b && (i = A.lastIndex), o = r(_, N ? n : A, D), N ? o ? (o.input = y(o.input, P), o[0] = y(o[0], P), o.index = A.lastIndex, A.lastIndex += o[0].length) : A.lastIndex = 0 : b && o && (A.lastIndex = A.global ? o.index + o[0].length : i), v && o && o.length > 1 && r(p, o[0], n, function() {
-      for (l = 1; l < arguments.length - 2; l++) true === arguments[l] && (o[l] = true)
-    }), o && C)
-    for (l = 0, o.groups = d = c(null); l < C.length; l++) d[(f = C[l])[0]] = o[f[1]];
-  return o
+  if (N && (false === g(w = E(w, "y", ""), "g") && (w += "g"), D = y(S, A.lastIndex), A.lastIndex > 0 && (!A.multiline || A.multiline && "\n" !== m(S, A.lastIndex - 1)) && (R = "(?: " + R + ")", D = " " + D, P++), n = RegExp("^(?:" + R + ")", w)), v && (n = RegExp("^" + R + "$(?!\\s)", w)), b && (i = A.lastIndex), s = r(_, N ? n : A, D), N ? s ? (s.input = y(s.input, P), s[0] = y(s[0], P), s.index = A.lastIndex, A.lastIndex += s[0].length) : A.lastIndex = 0 : b && s && (A.lastIndex = A.global ? s.index + s[0].length : i), v && s && s.length > 1 && r(p, s[0], n, function() {
+      for (l = 1; l < arguments.length - 2; l++) true === arguments[l] && (s[l] = true)
+    }), s && C)
+    for (l = 0, s.groups = d = c(null); l < C.length; l++) d[(f = C[l])[0]] = s[f[1]];
+  return s
 }), module.exports = h

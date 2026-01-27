@@ -27,7 +27,7 @@ class p extends Chunk439372.A {
     let {
       guild: t
     } = e, n = c.A.getChannelId(d.ME), r = c.A.getVoiceChannelId();
-    t.id === n && (0, o.u)(t.id), t.id === r && false !== t.unavailable && null == r && i.default.selectVoiceChannel((0, c.c)(t.id))
+    t.id === n && (0, s.u)(t.id), t.id === r && false !== t.unavailable && null == r && i.default.selectVoiceChannel((0, c.c)(t.id))
   }
   handleChannelCreate(e) {
     let {
@@ -36,7 +36,7 @@ class p extends Chunk439372.A {
     if (t.type !== d.rbe.GROUP_DM) return;
     let n = t.originChannelId,
       r = c.A.getChannelId(d.eGj);
-    null == u.A.getGuildId() && null != n && n === r && (0, s.pX)(d.BVt.CHANNEL(d.ME, t.id)), null != n && n === c.A.getVoiceChannelId() && i.default.selectVoiceChannel(t.id, l.A.isVideoEnabled())
+    null == u.A.getGuildId() && null != n && n === r && (0, o.pX)(d.BVt.CHANNEL(d.ME, t.id)), null != n && n === c.A.getVoiceChannelId() && i.default.selectVoiceChannel(t.id, l.A.isVideoEnabled())
   }
   handleLogout() {
     r.h.dispatch({

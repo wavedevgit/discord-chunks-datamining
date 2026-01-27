@@ -11,5 +11,5 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function l(e) {
-  return (0, r.bG)([a.A, i.A], () => i.A.getRelationshipType(e) === s.eA$.PENDING_INCOMING ? o.intl.string(o.t.wPI56w) : a.A.getGameRelationshipsForUser(e).length > 0 ? o.intl.string(o.t.LAcY7m) : o.intl.string(o.t.w5uwoI), [e])
+  return (0, r.bG)([a.A, i.A], () => i.A.getRelationshipType(e) === o.eA$.PENDING_INCOMING ? s.intl.string(s.t.wPI56w) : a.A.getGameRelationshipsForUser(e).length > 0 ? s.intl.string(s.t.LAcY7m) : s.intl.string(s.t.w5uwoI), [e])
 }

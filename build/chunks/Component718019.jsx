@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk960076 = require("./960076.js"),
@@ -79,20 +79,20 @@ function R(e) {
     className: P,
     previewStatus: D
   } = e, {
-    theme: x
+    theme: L
   } = (0, y.E)(), {
-    analyticsLocations: L
+    analyticsLocations: x
   } = (0, d.Ay)(u.A.AVATAR), {
-    trackUserProfileAction: j
-  } = (0, m.NJ)(), M = _.Ay.isPremiumAtLeast(null == n ? true : n.premiumType, v.PremiumTypes.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.c)(t, h), [t, h]), {
+    trackUserProfileAction: M
+  } = (0, m.NJ)(), j = _.Ay.isPremiumAtLeast(null == n ? true : n.premiumType, v.PremiumTypes.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.c)(t, h), [t, h]), {
     live: U
   } = (0, g.A)(t.id), [G] = U, {
-    status: V,
-    isMobileOnline: F
-  } = (0, o.cf)([p.A], () => ({
+    status: F,
+    isMobileOnline: V
+  } = (0, s.cf)([p.A], () => ({
     status: (0, c.A)(G) ? O.clD.STREAMING : p.A.getStatus(t.id),
     isMobileOnline: p.A.isMobileOnline(t.id)
-  })), B = true !== D ? D : V, H = [A.d.MODAL, A.d.MODAL_V2].includes(S) ? l._3J.SIZE_120 : l._3J.SIZE_80, Y = s()(I.my, P), {
+  })), B = true !== D ? D : F, H = [A.d.MODAL, A.d.MODAL_V2].includes(S) ? l._3J.SIZE_120 : l._3J.SIZE_80, Y = o()(I.my, P), {
     avatarDecorationSrc: W,
     avatarSrc: K,
     eventHandlers: z
@@ -108,8 +108,8 @@ function R(e) {
     "aria-label": t.username,
     imageClassName: null != R ? I.Lw : true,
     status: k ? O.clD.UNKNOWN : B,
-    statusBackdropColor: M && !k ? (0, l.C$5)(x) : true,
-    isMobile: F,
+    statusBackdropColor: j && !k ? (0, l.C$5)(L) : true,
+    isMobile: V,
     statusTooltip: true,
     statusTooltipDelay: b.In
   });
@@ -117,14 +117,14 @@ function R(e) {
     className: Y,
     children: q
   })) : (0, r.jsx)(l.DUT, N(T({}, z), {
-    className: s()(Y, I.vk),
+    className: o()(Y, I.vk),
     focusProps: {
       ringClassName: I.Rg
     },
     onClick: () => {
-      j({
+      M({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: L
+        analyticsLocations: x
       }), null == R || R()
     },
     children: q

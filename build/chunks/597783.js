@@ -17,10 +17,10 @@ let f = 1e3;
 
 function p(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "product",
-    p = (0, o.uM)(),
+    p = (0, s.uM)(),
     _ = (0, i.bG)([l.A], () => l.A.getProduct(e)),
     h = (0, u.i)(),
-    m = s.Ay.canUseCollectibles(h),
+    m = o.Ay.canUseCollectibles(h),
     g = r.useRef(null),
     E = r.useCallback(() => {
       let r = null != _ ? (0, c.Br)(_, m, false) : null,

@@ -32,8 +32,8 @@ class p extends Chunk439372.A {
       if (null == e.channelId || true !== e.selfStream) continue;
       let t = l.A.getPendingRequestForUser(e.userId);
       if (null == t) continue;
-      let f = s.A.getMessage(e.channelId, t);
-      if ((null == f || null == (n = f.activity) ? true : n.type) !== d.xL.STREAM_REQUEST || (null == (i = f.application) ? true : i.id) == null || o.default.extractTimestamp(t) < Date.now() - u.M || null == (0, c.n)(e.userId, e.guildId).find(e => {
+      let f = o.A.getMessage(e.channelId, t);
+      if ((null == f || null == (n = f.activity) ? true : n.type) !== d.xL.STREAM_REQUEST || (null == (i = f.application) ? true : i.id) == null || s.default.extractTimestamp(t) < Date.now() - u.M || null == (0, c.n)(e.userId, e.guildId).find(e => {
           var t;
           return (null == (t = f.application) ? true : t.id) != null && e.application_id === f.application.id
         })) continue;

@@ -5,22 +5,22 @@ require.d(exports, {
   C9: () => l,
   Sl: () => c,
   Tf: () => _,
-  Ub: () => o,
+  Ub: () => s,
   bl: () => a,
   hc: () => d,
   kO: () => h,
   lv: () => u,
-  xj: () => s
+  xj: () => o
 });
 var Chunk512750 = require("./512750.js"),
   Chunk652215 = require("./652215.js"),
   a = function(e) {
     return e[e.SWORD = 0] = "SWORD", e[e.WATER_DROP = 1] = "WATER_DROP", e[e.SKULL = 2] = "SKULL", e[e.TOADSTOOL = 3] = "TOADSTOOL", e[e.MOON = 4] = "MOON", e[e.LIGHTNING = 5] = "LIGHTNING", e[e.LEAF = 6] = "LEAF", e[e.HEART = 7] = "HEART", e[e.FIRE = 8] = "FIRE", e[e.COMPASS = 9] = "COMPASS", e[e.CROSSHAIRS = 10] = "CROSSHAIRS", e[e.FLOWER = 11] = "FLOWER", e[e.FORCE = 12] = "FORCE", e[e.GEM = 13] = "GEM", e[e.LAVA = 14] = "LAVA", e[e.PSYCHIC = 15] = "PSYCHIC", e[e.SMOKE = 16] = "SMOKE", e[e.SNOW = 17] = "SNOW", e[e.SOUND = 18] = "SOUND", e[e.SUN = 19] = "SUN", e[e.WIND = 20] = "WIND", e[e.BUNNY = 21] = "BUNNY", e[e.DOG = 22] = "DOG", e[e.FROG = 23] = "FROG", e[e.GOAT = 24] = "GOAT", e[e.CAT = 25] = "CAT", e[e.DIAMOND = 26] = "DIAMOND", e[e.CROWN = 27] = "CROWN", e[e.TROPHY = 28] = "TROPHY", e[e.MONEY_BAG = 29] = "MONEY_BAG", e[e.DOLLAR_SIGN = 30] = "DOLLAR_SIGN", e
   }({}),
-  s = function(e) {
+  o = function(e) {
     return e.HOT_PINK = "#ff1c90", e.LIGHT_PINK = "#ff7fc0", e.ORANGE = "#ff8f1c", e.PEACH = "#ffae77", e.GOLD = "#eebe1a", e.LIGHT_YELLOW = "#fffc7f", e.TEAL = "#32a070", e.MINT_GREEN = "#57b59e", e.BLUE_TEAL = "#32839a", e.LIGHT_BLUE = "#71c2d9", e.PURPLE = "#8a43ff", e.LAVENDER = "#bd95ff", e.VIOLET = "#9b3fe5", e.MAUVE = "#cc8dff", e.DEEP_PURPLE = "#942e8f", e.ORCHID = "#d46cb5", e.RED = "#d14242", e.SALMON = "#ff8989", e.BROWN = "#814300", e.TAN = "#a88a6c", e.OLIVE = "#717224", e.GRAY = "#c3c3c3", e.BURGUNDY = "#5d1d47", e.ROSE = "#c58fbb", e.DARK_GRAY = "#222222", e.LIGHT_GRAY = "#cccccc", e
   }({});
-let o = [{
+let s = [{
   primary: "#ff1c90",
   secondary: "#ff7fc0"
 }, {
@@ -60,7 +60,7 @@ let o = [{
   primary: "#222222",
   secondary: "#cccccc"
 }];
-o[0].primary, o[0].secondary;
+s[0].primary, s[0].secondary;
 let l = {
   0: 2,
   1: 1,

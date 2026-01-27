@@ -22,7 +22,7 @@ async function u(e) {
     url: c.Rsh.APPLIED_GUILD_BOOSTS_FOR_GUILD(e),
     oldFormErrors: true,
     rejectWithError: true
-  })).body.map(e => s.A.createFromServer(e));
+  })).body.map(e => o.A.createFromServer(e));
   return i.h.dispatch({
     type: "GUILD_APPLIED_BOOSTS_FETCH_SUCCESS",
     guildId: e,
@@ -38,7 +38,7 @@ async function d() {
         paused: e
       },
       rejectWithError: true
-    })).body.map(e => s.A.createFromServer(e));
+    })).body.map(e => o.A.createFromServer(e));
   return i.h.dispatch({
     type: "USER_APPLIED_BOOSTS_FETCH_SUCCESS",
     appliedGuildBoosts: t
@@ -52,7 +52,7 @@ async function f() {
     url: c.Rsh.USER_GUILD_BOOST_SLOTS,
     oldFormErrors: true,
     rejectWithError: false
-  })).body.map(e => o.A.createFromServer(e, l.A.getSubscriptionById(e.subscription_id)));
+  })).body.map(e => s.A.createFromServer(e, l.A.getSubscriptionById(e.subscription_id)));
   return i.h.dispatch({
     type: "GUILD_BOOST_SLOTS_FETCH_SUCCESS",
     guildBoostSlots: e
@@ -73,11 +73,11 @@ async function p(e, t) {
         oldFormErrors: true,
         rejectWithError: false
       }),
-      o = Array.isArray(a.body) ? a.body.map(s.A.createFromServer) : [s.A.createFromServer(a.body)];
+      s = Array.isArray(a.body) ? a.body.map(o.A.createFromServer) : [o.A.createFromServer(a.body)];
     return i.h.dispatch({
       type: "GUILD_APPLY_BOOST_SUCCESS",
-      appliedGuildBoost: o
-    }), f(), o
+      appliedGuildBoost: s
+    }), f(), s
   } catch (t) {
     let e = new a.ex(t);
     throw i.h.dispatch({
@@ -114,7 +114,7 @@ async function h(e) {
       oldFormErrors: true,
       rejectWithError: true
     }),
-    n = o.A.createFromServer(t.body, l.A.getSubscriptionById(t.body.subscription_id));
+    n = s.A.createFromServer(t.body, l.A.getSubscriptionById(t.body.subscription_id));
   return i.h.dispatch({
     type: "GUILD_BOOST_SLOT_UPDATE_SUCCESS",
     guildBoostSlot: n
@@ -126,7 +126,7 @@ async function m(e) {
       oldFormErrors: true,
       rejectWithError: true
     }),
-    n = o.A.createFromServer(t.body, l.A.getSubscriptionById(t.body.subscription_id));
+    n = s.A.createFromServer(t.body, l.A.getSubscriptionById(t.body.subscription_id));
   return i.h.dispatch({
     type: "GUILD_BOOST_SLOT_UPDATE_SUCCESS",
     guildBoostSlot: n

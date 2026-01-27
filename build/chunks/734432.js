@@ -63,9 +63,9 @@ class b extends Chunk439372.A {
   updateActiveErrors() {
     var e, t;
     if (__OVERLAY__) return;
-    let n = null != (e = o.A.getVoiceChannelId()) ? e : null,
+    let n = null != (e = s.A.getVoiceChannelId()) ? e : null,
       i = null != n && null != (t = l.A.getVoiceStateForChannel(n)) ? t : null,
-      a = s.A.getAllActiveStreams(),
+      a = o.A.getAllActiveStreams(),
       u = new Map;
     for (let e of Object.values(f.J)) {
       let t = e.getActiveErrors({

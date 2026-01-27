@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 200921, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 200921, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   GY: () => s,
-  U0: () => l,
-  ZQ: () => o
+  U0: () => o,
+  ZQ: () => a
 });
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
@@ -12,7 +11,7 @@ var Chunk562465 = require("./562465.js"),
 async function s() {
   var e;
   let t = await r.Bo.get({
-    url: a.Rsh.AUTH_SESSIONS,
+    url: l.Rsh.AUTH_SESSIONS,
     rejectWithError: false
   });
   return (null == t ? true : t.ok) && (null == (e = t.body) ? true : e.user_sessions) != null && i.h.dispatch({
@@ -21,18 +20,18 @@ async function s() {
   }), t
 }
 
-function o() {
+function a() {
   i.h.dispatch({
     type: "FETCH_AUTH_SESSIONS_SUCCESS",
     sessions: []
   })
 }
-async function l(e) {
+async function o(e) {
   if (Array.isArray(e)) {
     if (0 === e.length) return
   } else e = [e];
   let t = await r.Bo.post({
-    url: a.Rsh.AUTH_SESSIONS_LOGOUT,
+    url: l.Rsh.AUTH_SESSIONS_LOGOUT,
     body: {
       session_id_hashes: e
     },

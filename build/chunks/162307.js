@@ -123,7 +123,7 @@ var b = function(e) {
   }, {
     key: "set",
     value: function(e, t, n) {
-      return (0, o.A)((0, s.A)(e, n))
+      return (0, s.A)((0, o.A)(e, n))
     }
   }]), n
 }(Chunk12543.i)

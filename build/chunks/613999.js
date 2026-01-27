@@ -12,7 +12,7 @@ var Chunk543531 = require("./543531.js"),
   Chunk853742 = require("./853742.js"),
   Chunk759735 = require("./759735.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,17 +39,17 @@ function d(e) {
     channelId: n,
     sessionId: r,
     trackedFeedItems: i,
-    isForcedFlush: s
-  } = e, o = [], l = [];
+    isForcedFlush: o
+  } = e, s = [], l = [];
   for (let e of Object.keys(i)) {
-    let t = i[e].computeSeenTimeDestructive(s);
-    t > 0 && (o.push(e), l.push(t))
+    let t = i[e].computeSeenTimeDestructive(o);
+    t > 0 && (s.push(e), l.push(t))
   }
-  0 !== o.length && (0, a.Z_)({
+  0 !== s.length && (0, a.Z_)({
     guildId: t,
     channelId: n,
     sessionId: r,
-    postIds: o,
+    postIds: s,
     additionalTimes: l
   })
 }
@@ -64,7 +64,7 @@ class f extends Chunk407689.id {
       windowId: n,
       isPaused: r,
       id: l(t)
-    }), o(this, "guildId", true), o(this, "channelId", true), o(this, "sessionId", true), o(this, "createFlushSeenItemsFunction", e => {
+    }), s(this, "guildId", true), s(this, "channelId", true), s(this, "sessionId", true), s(this, "createFlushSeenItemsFunction", e => {
       let t = this.trackedFeedItems,
         n = this.channelId,
         r = {
@@ -75,6 +75,6 @@ class f extends Chunk407689.id {
           isForcedFlush: null != e
         };
       return () => d(r)
-    }), this.guildId = e, this.channelId = t, this.sessionId = (0, s.cr)(t)
+    }), this.guildId = e, this.channelId = t, this.sessionId = (0, o.cr)(t)
   }
 }

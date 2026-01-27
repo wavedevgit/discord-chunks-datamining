@@ -5,7 +5,7 @@ let r, i, a;
 require.d(exports, {
   A: () => I
 }), require("./896048.js");
-var s, Chunk311907 = require("./311907.js"),
+var o, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk54827 = require("./54827.js"),
   Chunk15285 = require("./15285.js"),
@@ -68,13 +68,13 @@ function O(e) {
     applicationId: t,
     branchId: n,
     next: a,
-    remote: s
-  } = e, o = (0, f.gW)(t, n);
-  r[o] = {
+    remote: o
+  } = e, s = (0, f.gW)(t, n);
+  r[s] = {
     type: h.VX0.CONFLICT,
     next: a,
-    remote: s
-  }, i.delete(o)
+    remote: o
+  }, i.delete(s)
 }
 
 function v(e) {
@@ -86,7 +86,7 @@ function v(e) {
     type: h.VX0.ERROR
   }, i.delete(a)
 }
-class A extends(s = Chunk311907.Ay.Store) {
+class A extends(o = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(d.A, u.Ay), p.isPlatformEmbedded && _.T(), r = {}, i = new Set, a = []
   }

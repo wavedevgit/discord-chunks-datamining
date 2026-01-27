@@ -67,8 +67,8 @@ function b(e) {
     channelId: r,
     attachments: i,
     reportSubmit: false
-  }, s = null != (t = y[r]) ? t : g;
-  y[r] = [...s, a], E[n] = a
+  }, o = null != (t = y[r]) ? t : g;
+  y[r] = [...o, a], E[n] = a
 }
 
 function O(e) {

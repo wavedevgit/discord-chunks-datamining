@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 397415, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 397415, original params: e,t,n (module,exports,require) **/
 module.exports = {
   rf: "body__968a4",
   S: "invoiceTable__968a4",

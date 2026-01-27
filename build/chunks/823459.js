@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Py: () => a,
-  S8: () => s,
+  S8: () => o,
   bc: () => i
 });
 var Chunk73153 = require("./73153.js");
@@ -19,7 +19,7 @@ let i = e => {
       presetId: null
     })
   },
-  s = () => {
+  o = () => {
     r.h.dispatch({
       type: "RESET_PREVIEW_CLIENT_THEME"
     })

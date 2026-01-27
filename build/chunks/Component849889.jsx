@@ -2,7 +2,7 @@
 /** chunk id: 849889, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => o
+  o: () => s
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js");
@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,14 +29,14 @@ function s(e) {
   return e
 }
 
-function o(e) {
+function s(e) {
   let {
     component: t,
     props: n,
     componentMap: a
-  } = e, o = a[t];
-  return null == o ? (console.warn("No component found for dynamic graphic:", t), null) : (0, r.jsx)(i.Suspense, {
+  } = e, s = a[t];
+  return null == s ? (console.warn("No component found for dynamic graphic:", t), null) : (0, r.jsx)(i.Suspense, {
     fallback: null,
-    children: (0, r.jsx)(o, s({}, n))
+    children: (0, r.jsx)(s, o({}, n))
   })
 }

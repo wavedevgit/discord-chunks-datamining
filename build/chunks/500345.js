@@ -6,17 +6,17 @@ require.d(exports, {
   Gg: () => c,
   b1: () => d,
   cV: () => l,
-  nh: () => s
+  nh: () => o
 });
 var Chunk2242 = require("./2242.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e) {
+function o(e) {
   return "roles" in e ? "emoji-".concat(e.id) : "".concat(e.ref_type, "-").concat(e.emoji_id, "-").concat(e.name, "-").concat(e.ref_id)
 }
 
-function o(e) {
+function s(e) {
   switch (e) {
     case i.WT.DAY:
       return a.t["3rUmPQ"];
@@ -32,7 +32,7 @@ function l(e) {
     interval: t,
     interval_count: n
   } = e;
-  return a.intl.format(o(t), {
+  return a.intl.format(s(t), {
     count: n
   })
 }

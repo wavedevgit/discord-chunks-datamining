@@ -51,10 +51,10 @@ let N = {
   stores: [Chunk679382.A],
   matches: (e, t, n, r, i) => n.length > 1,
   queryResults(e, t, n, r, i) {
-    let s = r.allowSoundmoji && (0, a.AA)({
+    let o = r.allowSoundmoji && (0, a.AA)({
         location: "queryResults"
       }),
-      c = r.allowStickers || s ? 0 : A,
+      c = r.allowStickers || o ? 0 : A,
       u = g.rs7 + c,
       {
         emojis: {
@@ -76,12 +76,12 @@ let N = {
     let f = [];
     if (r.allowStickers) {
       (0, l.YB)();
-      let t = _.Ay.queryStickers([n], true, [e, (e, t) => t === o.Ux.SENDABLE]),
+      let t = _.Ay.queryStickers([n], true, [e, (e, t) => t === s.Ux.SENDABLE]),
         r = Math.max(O, b - d.length);
       f = t.slice(0, r), "-" === n[0] && (f = t.filter(e => e.sticker.name === n))
     }
     let p = [];
-    s && (p = _.Ay.querySoundmoji(n, e).map(e => ({
+    o && (p = _.Ay.querySoundmoji(n, e).map(e => ({
       sound: e
     })).slice(0, v), "-" === n[0] && (p = p.filter(e => e.sound.name === n)));
     let h = d.slice(0, Math.max(I, u - f.length - p.length));
@@ -105,15 +105,15 @@ let N = {
         stickers: n,
         soundmoji: a
       },
-      selectedIndex: s,
-      query: o,
+      selectedIndex: o,
+      query: s,
       onHover: l,
       onClick: c
     } = e, u = t.length > 0, d = n.length > 0;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, h.GM)({
-        query: o,
-        selectedIndex: s,
+        query: s,
+        selectedIndex: o,
         autocompletes: t,
         onHover: l,
         onClick: c,
@@ -131,8 +131,8 @@ let N = {
       }), u && d && (0, r.jsx)(i.Ay.Divider, {
         className: y.y
       }), (0, h.GM)({
-        query: o,
-        selectedIndex: s,
+        query: s,
+        selectedIndex: o,
         autocompletes: n,
         onHover: l,
         onClick: c,
@@ -158,8 +158,8 @@ let N = {
       }), (u || d) && a.length > 0 && (0, r.jsx)(i.Ay.Divider, {
         className: y.y
       }), (0, h.GM)({
-        query: o,
-        selectedIndex: s,
+        query: s,
+        selectedIndex: o,
         autocompletes: a,
         onHover: l,
         onClick: c,
@@ -191,7 +191,7 @@ let N = {
       },
       index: i,
       options: a,
-      channel: o
+      channel: s
     } = e;
     if (i < t.length) {
       let e = t[i];
@@ -220,9 +220,9 @@ let N = {
     }
     if ((i -= r.length) < n.length) {
       let e = n[i];
-      return a.insertText((0, s.A)(e.sound.guildId, e.sound.soundId)), p.default.track(g.HAw.SOUNDMOJI_SELECT, {
-        channel_id: o.id,
-        guild_id: o.guild_id,
+      return a.insertText((0, o.A)(e.sound.guildId, e.sound.soundId)), p.default.track(g.HAw.SOUNDMOJI_SELECT, {
+        channel_id: s.id,
+        guild_id: s.guild_id,
         sound_guild_id: e.sound.guildId,
         sound_id: e.sound.soundId,
         source: "autocomplete"

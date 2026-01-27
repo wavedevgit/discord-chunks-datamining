@@ -26,7 +26,7 @@ var Chunk503698 = require("./503698.js"),
 function E(e) {
   let {
     className: t
-  } = e, n = (0, c.Ay)(), i = (0, o.Mw)(n) ? m : g;
+  } = e, n = (0, c.Ay)(), i = (0, s.Mw)(n) ? m : g;
   return (0, r.jsxs)("div", {
     className: a()(h.kL, t),
     children: [(0, r.jsx)(l.Heading, {
@@ -93,7 +93,7 @@ function O(e) {
       width: 20,
       height: 20,
       className: h.XJ,
-      color: s.A.unsafe_rawColors.YELLOW_300.css
+      color: o.A.unsafe_rawColors.YELLOW_300.css
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: _.intl.format(_.t.NYkcCh, {

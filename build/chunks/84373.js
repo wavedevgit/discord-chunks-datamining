@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 84373, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 84373, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   o: () => c
 });
@@ -13,9 +12,9 @@ var Chunk311907 = require("./311907.js"),
 
 function c() {
   var e;
-  let t = o.he.useSetting(),
-    n = o.cj.useSetting(),
-    c = (0, r.bG)([a.default], () => a.default.getCurrentUser()),
-    u = (0, s.j)("use_derived_dm_spam_filter_setting");
-  return t !== i.he.DEFAULT_UNSET ? t : (null == c ? true : c.nsfwAllowed) === false && u ? i.he.FRIENDS_AND_NON_FRIENDS : null != (e = l.xY.get(n)) ? e : i.he.NON_FRIENDS
+  let t = a.he.useSetting(),
+    n = a.cj.useSetting(),
+    c = (0, r.bG)([l.default], () => l.default.getCurrentUser()),
+    d = (0, s.j)("use_derived_dm_spam_filter_setting");
+  return t !== i.he.DEFAULT_UNSET ? t : (null == c ? true : c.nsfwAllowed) === false && d ? i.he.FRIENDS_AND_NON_FRIENDS : null != (e = o.xY.get(n)) ? e : i.he.NON_FRIENDS
 }

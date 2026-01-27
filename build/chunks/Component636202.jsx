@@ -57,8 +57,8 @@ let k = [...Chunk322789.n, Chunk506326.Yq],
       entry: b,
       disableGameProfileLinks: R,
       onReaction: G,
-      onVoiceChannelPreview: V,
-      onUserPopoutClosed: F,
+      onVoiceChannelPreview: F,
+      onUserPopoutClosed: V,
       trackRankingItemInteraction: B
     } = e, {
       largeImage: H
@@ -70,10 +70,10 @@ let k = [...Chunk322789.n, Chunk506326.Yq],
       appName: K,
       activity: z,
       embeddedActivity: q
-    } = (0, L.u)(b), {
+    } = (0, x.u)(b), {
       primaryColor: Z,
-      secondaryColor: X
-    } = (0, w.A)(null == H ? true : H.src), Q = (0, s.bG)([E.default], () => E.default.locale), {
+      secondaryColor: Q
+    } = (0, w.A)(null == H ? true : H.src), X = (0, o.bG)([E.default], () => E.default.locale), {
       streamPreviewUrl: J,
       stream: $
     } = (0, I.A)(b), {
@@ -81,7 +81,7 @@ let k = [...Chunk322789.n, Chunk506326.Yq],
       participant1: et,
       participant2: en,
       numOtherParticipants: er
-    } = (0, A.A)(b, 3), ei = b.extra.platform, ea = null != ei ? U[ei] : null, es = ei === a.Y.XBOX ? j.fg2.XBOX : ei === a.Y.PLAYSTATION ? j.fg2.PLAYSTATION : true, eo = (0, N.A)(es), {
+    } = (0, A.A)(b, 3), ei = b.extra.platform, ea = null != ei ? U[ei] : null, eo = ei === a.Y.XBOX ? M.fg2.XBOX : ei === a.Y.PLAYSTATION ? M.fg2.PLAYSTATION : true, es = (0, N.A)(eo), {
       data: el
     } = (0, m.YY)(b.extra.application_id), ec = (0, d.J)(el), eu = (0, g.o)(null != (t = null != (n = null == z ? true : z.application_id) ? n : null == q ? true : q.applicationId) ? t : null == el ? true : el.id), ed = i.useCallback(e => {
       if ((null == H ? true : H.src) == null || null == y || null == Y) return;
@@ -96,11 +96,11 @@ let k = [...Chunk322789.n, Chunk506326.Yq],
         applicationImageSrc: null == H ? true : H.src,
         avatarSrcs: ee.map(e => e.getAvatarURL(y.guild_id, 128)),
         description: t,
-        timestamp: (0, S.As)(b, Q),
-        colors: [Z, X],
+        timestamp: (0, S.As)(b, X),
+        colors: [Z, Q],
         channelId: e
       })
-    }, [null == H ? true : H.src, y, ee, b, Q, er, et, en, Z, X, Y]);
+    }, [null == H ? true : H.src, y, ee, b, X, er, et, en, Z, Q, Y]);
     if (null == Y) return null;
     let ef = (0, r.jsx)(P.mG, {
         location: null == J ? P.N5.POPOUT : P.N5.STREAMING_POPOUT,
@@ -110,51 +110,51 @@ let k = [...Chunk322789.n, Chunk506326.Yq],
       }),
       ep = null == $ ? (0, r.jsx)(D.BC, {
         channel: y,
-        headerIcons: null == ea ? null : (0, r.jsx)(x.A, {
-          onClick: eo,
+        headerIcons: null == ea ? null : (0, r.jsx)(L.A, {
+          onClick: es,
           Icon: ea,
-          "aria-label": M.intl.string(M.t.YR4cHH)
+          "aria-label": j.intl.string(j.t.YR4cHH)
         }),
-        userDescription: (0, S.JM)(b) ? M.t.vPg1JT : M.t.rPqqts,
+        userDescription: (0, S.JM)(b) ? j.t.vPg1JT : j.t.rPqqts,
         title: K,
         subtitle: W,
         badges: ef,
         entry: b,
         disableGameProfileLinks: R,
-        onUserPopoutClosed: F,
+        onUserPopoutClosed: V,
         trackRankingItemInteraction: B
       }) : (0, r.jsx)(D.Fl, {
         channel: y,
         title: b.extra.game_name,
         subtitle: W,
         badges: ef,
-        userDescription: M.t["6oWFUN"],
+        userDescription: j.t["6oWFUN"],
         entry: b,
         stream: $,
-        onUserPopoutClosed: F,
+        onUserPopoutClosed: V,
         trackRankingItemInteraction: B
       }),
       e_ = !eu && ec ? (0, r.jsx)(f.A, {
         application: el,
         analyticsLocation: h.A.MEMBER_LIST_GAMING_CONTENT_POPOUT
       }, "cloud-play") : null,
-      eh = [null == e_ && ((0, l.A)(z, j.jUm.JOIN) || (0, c.A)(z)) ? (0, r.jsx)(p.A, {
+      eh = [null == e_ && ((0, l.A)(z, M.jUm.JOIN) || (0, c.A)(z)) ? (0, r.jsx)(p.A, {
         activity: z,
         user: Y,
         variant: "primary",
         size: "md",
-        icon: o._xR
+        icon: s._xR
       }, "join") : null, (0, u.A)(z) ? (0, r.jsx)(_.A, {
         activity: z,
         size: "md",
         variant: "primary",
-        icon: o.bMW
+        icon: s.bMW
       }, "watch") : null, e_].filter(O.Vq);
     return (0, r.jsxs)(D.YN, {
       children: [ep, (0, r.jsx)(D.Eh, {
         children: (0, r.jsx)(D.fD, {
           onReaction: G,
-          onVoiceChannelPreview: V,
+          onVoiceChannelPreview: F,
           user: Y,
           channel: y,
           generateReactionImage: ed,

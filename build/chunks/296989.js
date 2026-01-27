@@ -3,13 +3,13 @@
 var Chunk670269 = require("./670269.js"),
   Chunk533030 = require("./533030.js");
 
-function a(e, t, n, s, o) {
+function a(e, t, n, o, s) {
   var l = false,
     c = e.length;
-  for (n || (n = i), o || (o = []); ++l < c;) {
+  for (n || (n = i), s || (s = []); ++l < c;) {
     var u = e[l];
-    t > 0 && n(u) ? t > 1 ? a(u, t - 1, n, s, o) : r(o, u) : s || (o[o.length] = u)
+    t > 0 && n(u) ? t > 1 ? a(u, t - 1, n, o, s) : r(s, u) : o || (s[s.length] = u)
   }
-  return o
+  return s
 }
 module.exports = a

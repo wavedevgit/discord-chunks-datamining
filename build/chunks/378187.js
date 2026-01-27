@@ -2,7 +2,7 @@
 /** chunk id: 378187, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => M
+  A: () => j
 }), require("./896048.js");
 var Chunk412703 = require("./412703.js"),
   Chunk902173 = require("./902173.js"),
@@ -57,14 +57,14 @@ function D(e) {
     })
 }
 
-function x(e, t) {
+function L(e, t) {
   return null != t && e.some(e => e === c.a7) && (0, u.n1)(t)
 }
 
-function L(e) {
+function x(e) {
   return null != e && e.config.features.includes(i.L.MANUAL_HEARTBEAT_INITIALIZATION)
 }
-class j extends Chunk439372.A {
+class M extends Chunk439372.A {
   syncHeartbeats(e, t, n) {
     for (let r of ("VOICE_STATE_UPDATES" !== t && "PASSIVE_UPDATE_V2" !== t && R.log("~ syncHeartbeats -> syncing heartbeats for taskTypes: ".concat(e.join(", "), " (triggered by: ").concat(t, ")")), e)) {
       let e = this.heartbeats[r],
@@ -87,8 +87,8 @@ class j extends Chunk439372.A {
   }
   getActivelyProgressingPlayOnDesktopQuests() {
     let e = new Map,
-      t = o.Ay.getRunningGames(),
-      n = o.Ay.getRunningNonGames(),
+      t = s.Ay.getRunningGames(),
+      n = s.Ay.getRunningNonGames(),
       r = g.A.quests;
     R.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", t, "Running non-games: ", n);
     let i = {};
@@ -98,7 +98,7 @@ class j extends Chunk439372.A {
         i[e.id] = e;
         continue
       }
-      let t = o.Ay.getOverrideForGame(e);
+      let t = s.Ay.getOverrideForGame(e);
       if (null == e.distributor && null != t) continue;
       let n = f.A.getGameByName(e.name);
       if ((null == n ? true : n.id) != null) {
@@ -115,7 +115,7 @@ class j extends Chunk439372.A {
         let a = r.find(e => e === t);
         null != a ? e.set(i.id, {
           applicationId: a
-        }) : x(r, n) && e.set(i.id, {
+        }) : L(r, n) && e.set(i.id, {
           applicationId: c.a7
         })
       }
@@ -141,7 +141,7 @@ class j extends Chunk439372.A {
   }
   getActivelyProgressingActivityQuests() {
     let e = new Map,
-      t = s.Ay.getSelfEmbeddedActivities(),
+      t = o.Ay.getSelfEmbeddedActivities(),
       n = t.size > 0;
     if (R.log("~ getActivelyProgressingActivityQuestIds -> Embedded activities: ", t), !n) return e;
     let r = g.A.quests;
@@ -174,11 +174,11 @@ class j extends Chunk439372.A {
       let i = this.heartbeats[t];
       if (i.has(e)) return void R.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: ".concat(e));
       let a = () => {
-        let s = this.getActivelyProgressingQuests(t);
-        if (s.has(e)) {
-          var o;
-          let c = s.get(e),
-            u = null != (o = null == c ? true : c.applicationId) ? o : n;
+        let o = this.getActivelyProgressingQuests(t);
+        if (o.has(e)) {
+          var s;
+          let c = o.get(e),
+            u = null != (s = null == c ? true : c.applicationId) ? s : n;
           if (t === r.n.STREAM_ON_DESKTOP) {
             let n = d.A.getCurrentUserActiveStream();
             if (null == n) {
@@ -227,7 +227,7 @@ class j extends Chunk439372.A {
       R.log("~ handleSendHeartbeatFailure -> Heartbeat failed for questId: ".concat(t))
     }), T(this, "actions", {
       QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: () => this.syncHeartbeats([r.n.PLAY_ON_DESKTOP, r.n.STREAM_ON_DESKTOP], "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS"),
-      QUESTS_ENROLL_SUCCESS: () => this.syncHeartbeats([r.n.PLAY_ON_DESKTOP, r.n.STREAM_ON_DESKTOP, r.n.PLAY_ACTIVITY], "QUESTS_ENROLL_SUCCESS", e => !L(e)),
+      QUESTS_ENROLL_SUCCESS: () => this.syncHeartbeats([r.n.PLAY_ON_DESKTOP, r.n.STREAM_ON_DESKTOP, r.n.PLAY_ACTIVITY], "QUESTS_ENROLL_SUCCESS", e => !x(e)),
       QUESTS_SEND_HEARTBEAT_SUCCESS: this.handleSendHeartbeatSuccess,
       QUESTS_SEND_HEARTBEAT_FAILURE: this.handleSendHeartbeatFailure,
       QUESTS_PREVIEW_UPDATE_SUCCESS: () => this.syncHeartbeats([r.n.PLAY_ON_DESKTOP, r.n.STREAM_ON_DESKTOP, r.n.PLAY_ACTIVITY], "QUESTS_PREVIEW_UPDATE_SUCCESS"),
@@ -244,14 +244,14 @@ class j extends Chunk439372.A {
         } = e;
         D(t)
       },
-      EMBEDDED_ACTIVITY_UPDATE_V2: () => this.syncHeartbeats([r.n.PLAY_ACTIVITY], "EMBEDDED_ACTIVITY_UPDATE_V2", e => !L(e)),
+      EMBEDDED_ACTIVITY_UPDATE_V2: () => this.syncHeartbeats([r.n.PLAY_ACTIVITY], "EMBEDDED_ACTIVITY_UPDATE_V2", e => !x(e)),
       QUEST_APPLICATION_START_TIMER: e => {
         let {
           questId: t
         } = e;
-        this.syncHeartbeats([r.n.PLAY_ACTIVITY], "QUEST_APPLICATION_START_TIMER", e => null != e && e.id === t && L(e))
+        this.syncHeartbeats([r.n.PLAY_ACTIVITY], "QUEST_APPLICATION_START_TIMER", e => null != e && e.id === t && x(e))
       }
     })
   }
 }
-let M = new j
+let j = new M

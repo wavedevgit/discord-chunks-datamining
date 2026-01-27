@@ -22,10 +22,10 @@ let c = [],
 
 function d(e) {
   try {
-    let t = o.dP[e.base_theme];
+    let t = s.dP[e.base_theme];
     return e.colors.length > 0 && "number" == typeof e.gradient_angle && "number" == typeof e.base_mix && null != t
   } catch (e) {
-    return s.A.captureMessage("Invalid saved custom theme: " + e, {
+    return o.A.captureMessage("Invalid saved custom theme: " + e, {
       tags: {
         app_context: "SavedCustomThemeStore"
       }
@@ -41,7 +41,7 @@ let p = e => {
       themes: t
     } = e;
     u = 2, c = t.filter(d).map(e => {
-      let t = o.dP;
+      let t = s.dP;
       return {
         colors: e.colors,
         gradient_angle: e.gradient_angle,
@@ -54,7 +54,7 @@ let p = e => {
     let {
       error: t
     } = e;
-    u = 3, s.A.captureException(t, {
+    u = 3, o.A.captureException(t, {
       tags: {
         app_context: "SavedCustomThemeStore"
       }

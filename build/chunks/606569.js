@@ -55,12 +55,12 @@ class u {
         r = true,
         i = n.offset || 0,
         a = (null == n ? true : n.skippedBytes) ? n.sequence.length + n.skippedBytes.length : n.sequence.length;
-      for (let s = 0; s < a; s++) {
-        if (n.skippedBytes && n.skippedBytes.includes(s)) {
+      for (let o = 0; o < a; o++) {
+        if (n.skippedBytes && n.skippedBytes.includes(o)) {
           t++;
           continue
         }
-        if (e[i + s] !== n.sequence[s - t]) {
+        if (e[i + o] !== n.sequence[o - t]) {
           r = false;
           break
         }

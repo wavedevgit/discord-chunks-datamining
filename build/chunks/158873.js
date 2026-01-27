@@ -11,8 +11,8 @@ module.exports = function(e) {
   }
   let i = /[+-]?((\.\d+)|(\d+)(\.\d*)?)/,
     a = /[GM]\s*\d+(\.\d+)?/,
-    s = /T\s*\d+/,
-    o = /O\s*\d+/,
+    o = /T\s*\d+/,
+    s = /O\s*\d+/,
     l = /O<.+>/,
     c = /[ABCUVWXYZ]\s*/,
     u = /[FHIJKPQRS]\s*/;
@@ -34,17 +34,17 @@ module.exports = function(e) {
         begin: a,
         "on:begin": r
       }, {
-        match: t.concat(n, s)
+        match: t.concat(n, o)
       }, {
-        begin: s,
+        begin: o,
         "on:begin": r
       }]
     }, {
       scope: "symbol",
       variants: [{
-        match: t.concat(n, o)
+        match: t.concat(n, s)
       }, {
-        begin: o,
+        begin: s,
         "on:begin": r
       }, {
         match: t.concat(n, l)

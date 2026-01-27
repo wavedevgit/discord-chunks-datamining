@@ -27,7 +27,7 @@ function f() {
 }
 
 function p() {
-  if (!s.y1.getCurrentConfig({
+  if (!o.y1.getCurrentConfig({
       location: "b9eb97_1"
     }, {
       autoTrackExposure: false
@@ -43,7 +43,7 @@ class _ extends Chunk439372.A {
     super(...e), c(this, "actions", {
       POST_CONNECTION_OPEN: () => this.onPostConnectionOpen()
     }), c(this, "onPostConnectionOpen", () => {
-      p() && (0, o.U)(l.gg.APP_START, true, false) && f()
+      p() && (0, s.U)(l.gg.APP_START, true, false) && f()
     })
   }
 }

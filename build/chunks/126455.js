@@ -14,7 +14,7 @@ function a(e, t, n) {
       let r = n(e);
       return r && (e.preventDefault(), e.stopPropagation()), r
     }, [t, n]),
-    s = r.useCallback(t => {
+    o = r.useCallback(t => {
       let {
         event: n
       } = t;
@@ -22,6 +22,6 @@ function a(e, t, n) {
     }, [e, a]);
   return {
     handlePaste: a,
-    handleGlobalPaste: s
+    handleGlobalPaste: o
   }
 }

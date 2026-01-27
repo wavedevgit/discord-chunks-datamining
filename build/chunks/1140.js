@@ -1,67 +1,61 @@
-/** Chunk was on web.js **/
-/** chunk id: 1140, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 1140, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk797686 = require("./797686.js"),
-  i = 55296,
-  a = 56319,
-  s = 56320,
-  o = 57343,
-  l = /[\uD800-\uDFFF]/;
+  i = /[\uD800-\uDFFF]/;
 
-function c(e) {
-  return i <= e && e <= o
+function o(t) {
+  return 55296 <= t && t <= 57343
 }
 
-function u(e) {
-  return l.test(e)
+function a(t) {
+  return i.test(t)
 }
 
-function d(e, t) {
-  return 1 + c(e.charCodeAt(t))
+function s(t, e) {
+  return 1 + o(t.charCodeAt(e))
 }
 
-function f(e) {
-  if (!u(e)) return e.length;
-  for (var t = 0, n = 0; n < e.length; n += d(e, n)) t++;
-  return t
-}
-
-function p(e, t, n) {
-  if (t = t || 0, n = true === n ? 1 / 0 : n || 0, !u(e)) return e.substr(t, n);
-  var r = e.length;
-  if (r <= 0 || t > r || n <= 0) return "";
+function u(t, e, r) {
+  if (e = e || 0, r = true === r ? 1 / 0 : r || 0, !a(t)) return t.substr(e, r);
+  var n = t.length;
+  if (n <= 0 || e > n || r <= 0) return "";
   var i = 0;
-  if (t > 0) {
-    for (; t > 0 && i < r; t--) i += d(e, i);
-    if (i >= r) return ""
-  } else if (t < 0) {
-    for (i = r; t < 0 && 0 < i; t++) i -= d(e, i - 1);
+  if (e > 0) {
+    for (; e > 0 && i < n; e--) i += s(t, i);
+    if (i >= n) return ""
+  } else if (e < 0) {
+    for (i = n; e < 0 && 0 < i; e++) i -= s(t, i - 1);
     i < 0 && (i = 0)
   }
-  var a = r;
-  if (n < r)
-    for (a = i; n > 0 && a < r; n--) a += d(e, a);
-  return e.substring(i, a)
+  var o = n;
+  if (r < n)
+    for (o = i; r > 0 && o < n; r--) o += s(t, o);
+  return t.substring(i, o)
 }
 module.exports = {
-  getCodePoints: function(e) {
-    for (var t = [], n = 0; n < e.length; n += d(e, n)) t.push(e.codePointAt(n));
-    return t
+  getCodePoints: function(t) {
+    for (var e = [], r = 0; r < t.length; r += s(t, r)) e.push(t.codePointAt(r));
+    return e
   },
-  getUTF16Length: d,
-  hasSurrogateUnit: u,
-  isCodeUnitInSurrogateRange: c,
-  isSurrogatePair: function(e, t) {
-    if (0 <= t && t < e.length || r(false), t + 1 === e.length) returnfalse;
-    var n = e.charCodeAt(t),
-      l = e.charCodeAt(t + 1);
-    return i <= n && n <= a && s <= l && l <= o
+  getUTF16Length: s,
+  hasSurrogateUnit: a,
+  isCodeUnitInSurrogateRange: o,
+  isSurrogatePair: function(t, e) {
+    if (0 <= e && e < t.length || n(false), e + 1 === t.length) returnfalse;
+    var r = t.charCodeAt(e),
+      i = t.charCodeAt(e + 1);
+    return 55296 <= r && r <= 56319 && 56320 <= i && i <= 57343
   },
-  strlen: f,
-  substring: function(e, t, n) {
-    (t = t || 0) < 0 && (t = 0), (n = true === n ? 1 / 0 : n || 0) < 0 && (n = 0);
-    var r = Math.abs(n - t);
-    return p(e, t = t < n ? t : n, r)
+  strlen: function(t) {
+    if (!a(t)) return t.length;
+    for (var e = 0, r = 0; r < t.length; r += s(t, r)) e++;
+    return e
   },
-  substr: p
+  substring: function(t, e, r) {
+    (e = e || 0) < 0 && (e = 0), (r = true === r ? 1 / 0 : r || 0) < 0 && (r = 0);
+    var n = Math.abs(r - e);
+    return u(t, e = e < r ? e : r, n)
+  },
+  substr: u
 }

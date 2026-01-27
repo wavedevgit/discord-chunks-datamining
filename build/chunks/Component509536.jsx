@@ -20,17 +20,17 @@ let p = "BoostedGuildPerksModalConnected",
     let {
       guildId: t,
       close: n,
-      location: o,
+      location: s,
       scrollToPowerupCards: p
     } = e, _ = (0, i.bG)([u.default], () => u.default.getCurrentUser()), h = (0, i.bG)([c.A], () => c.A.getGuild(t), [t]), {
       analyticsLocations: m
-    } = (0, s.Ay)(a.A.BOOSTED_GUILD_PERKS_MODAL), g = (0, l.j)("BoostedGuildPerksModal");
+    } = (0, o.Ay)(a.A.BOOSTED_GUILD_PERKS_MODAL), g = (0, l.j)("BoostedGuildPerksModal");
     if (null == _ || null == h) return null;
     let E = g ? f.A : d.A;
-    return (0, r.jsx)(s.f5, {
+    return (0, r.jsx)(o.f5, {
       value: m,
       children: (0, r.jsx)(E, {
-        analyticsLocation: o,
+        analyticsLocation: s,
         onClose: n,
         guild: h,
         scrollToPowerupCards: p
@@ -44,7 +44,7 @@ function h(e) {
     location: n,
     scrollToPowerupCards: i
   } = e;
-  (0, o.B8)(e => {
+  (0, s.B8)(e => {
     let {
       closeLayer: a
     } = e;

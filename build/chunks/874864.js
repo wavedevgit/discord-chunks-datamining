@@ -19,37 +19,37 @@ var Chunk985018 = require("./985018.jsx");
 let l = () => ({
     color: r.A.unsafe_rawColors.PREMIUM_PERK_GREEN.css,
     icon: i.sYc,
-    description: o.intl.string(o.t.iGuEFe)
+    description: s.intl.string(s.t.iGuEFe)
   }),
   c = function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : r.A.unsafe_rawColors.PREMIUM_PERK_ORANGE.css;
     return {
       color: e,
       icon: i.Osp,
-      description: o.intl.string(o.t["94l3Ul"])
+      description: s.intl.string(s.t["94l3Ul"])
     }
   },
   u = () => ({
     color: r.A.unsafe_rawColors.PREMIUM_PERK_GREEN.css,
     icon: i.sYc,
-    description: o.intl.string(o.t["n/HqCh"])
+    description: s.intl.string(s.t["n/HqCh"])
   }),
   d = () => ({
     color: r.A.unsafe_rawColors.PREMIUM_PERK_GREEN.css,
     icon: i.Osp,
-    description: o.intl.string(o.t.AU0zcQ)
+    description: s.intl.string(s.t.AU0zcQ)
   }),
   f = () => ({
     color: r.A.unsafe_rawColors.PREMIUM_PERK_ORANGE.css,
     icon: i.iTF,
-    description: o.intl.string(o.t.zZe94m)
+    description: s.intl.string(s.t.zZe94m)
   }),
   p = function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : r.A.unsafe_rawColors.PREMIUM_PERK_PURPLE.css;
     return {
       color: e,
       icon: i.tEP,
-      description: o.intl.string(o.t.ZwOSdn)
+      description: s.intl.string(s.t.ZwOSdn)
     }
   },
   _ = function(e) {
@@ -57,19 +57,19 @@ let l = () => ({
       n = 0,
       a = 0;
     switch (e) {
-      case s.TVA.TIER_1:
+      case o.TVA.TIER_1:
         n = 15, a = 100;
         break;
-      case s.TVA.TIER_2:
+      case o.TVA.TIER_2:
         n = 30, a = 150;
         break;
-      case s.TVA.TIER_3:
+      case o.TVA.TIER_3:
         n = 60, a = 250
     }
     return {
       color: t,
       icon: i.tEP,
-      description: o.intl.formatToPlainString(o.t["12vFYK"], {
+      description: s.intl.formatToPlainString(s.t["12vFYK"], {
         numStickers: n,
         numEmojis: a
       })
@@ -78,10 +78,10 @@ let l = () => ({
   h = () => ({
     color: r.A.unsafe_rawColors.PREMIUM_PERK_GOLD.css,
     icon: i.Gg5,
-    description: o.intl.string(o.t["ThRK/u"])
+    description: s.intl.string(s.t["ThRK/u"])
   }),
   m = function() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : o.intl.string(o.t.SQV8g6);
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : s.intl.string(s.t.SQV8g6);
     return {
       color: r.A.unsafe_rawColors.PREMIUM_PERK_BLUE.css,
       icon: i.nm2,
@@ -91,14 +91,14 @@ let l = () => ({
   g = () => ({
     color: r.A.unsafe_rawColors.PREMIUM_PERK_PURPLE.css,
     icon: a.A,
-    description: o.intl.string(o.t.Tm40TZ)
+    description: s.intl.string(s.t.Tm40TZ)
   }),
   E = function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : r.A.unsafe_rawColors.PREMIUM_PERK_GREEN.css;
     return {
       color: e,
       icon: i.Fzq,
-      description: o.intl.string(o.t.oIKhwT)
+      description: s.intl.string(s.t.oIKhwT)
     }
   };
 
@@ -107,15 +107,15 @@ function y() {
 }
 
 function b() {
-  return [f(), _(s.TVA.TIER_2), E(), m()]
+  return [f(), _(o.TVA.TIER_2), E(), m()]
 }
 
 function O() {
-  return [_(s.TVA.TIER_3, r.A.unsafe_rawColors.PREMIUM_PERK_GREEN.css), g(), h(), m()]
+  return [_(o.TVA.TIER_3, r.A.unsafe_rawColors.PREMIUM_PERK_GREEN.css), g(), h(), m()]
 }
 
 function v() {
-  return [h(), d(), _(s.TVA.TIER_3), m()]
+  return [h(), d(), _(o.TVA.TIER_3), m()]
 }
 
 function A() {

@@ -8,14 +8,14 @@ var Chunk64700 = require("./64700.js"),
   Chunk75375 = require("./75375.js");
 
 function a(e, t) {
-  return u(e) || c(e, t) || o(e, t) || s()
+  return u(e) || c(e, t) || s(e, t) || o()
 }
 
-function s() {
+function o() {
   throw TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
 }
 
-function o(e, t) {
+function s(e, t) {
   if (e) {
     if ("string" == typeof e) return l(e, t);
     var n = Object.prototype.toString.call(e).slice(8, false);
@@ -37,12 +37,12 @@ function c(e, t) {
       i = false,
       a = true;
     try {
-      for (var s, o = e[Symbol.iterator](); !(r = (s = o.next()).done) && (n.push(s.value), !t || n.length !== t); r = true);
+      for (var o, s = e[Symbol.iterator](); !(r = (o = s.next()).done) && (n.push(o.value), !t || n.length !== t); r = true);
     } catch (e) {
       i = true, a = e
     } finally {
       try {
-        r || null == o.return || o.return()
+        r || null == s.return || s.return()
       } finally {
         if (i) throw a
       }
@@ -58,9 +58,9 @@ var d = function() {
   var e = a((0, r.useState)(false), 2),
     t = e[0],
     n = e[1],
-    s = (0, r.useContext)(i.M);
+    o = (0, r.useContext)(i.M);
   return (0, r.useEffect)(function() {
-    var e, t = null == s || null == (e = s.dragDropManager) ? true : e.getBackend(),
+    var e, t = null == o || null == (e = o.dragDropManager) ? true : e.getBackend(),
       r = {
         backendChanged: function(e) {
           n(e.previewEnabled())
@@ -70,5 +70,5 @@ var d = function() {
       function() {
         t.previewsList().unregister(r)
       }
-  }, [s, s.dragDropManager]), t
+  }, [o, o.dragDropManager]), t
 }

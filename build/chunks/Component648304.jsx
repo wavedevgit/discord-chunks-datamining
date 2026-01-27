@@ -19,13 +19,13 @@ function l(e) {
     children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/semibold",
       color: "text-default",
-      className: o.wx,
-      children: s.intl.string(s.t["Uv/eTx"])
+      className: s.wx,
+      children: o.intl.string(o.t["Uv/eTx"])
     }), (0, r.jsx)("div", {
-      className: o.p_,
+      className: s.p_,
       children: t.map(e => {
         if (null != e) return (0, r.jsxs)("div", {
-          className: o.nM,
+          className: s.nM,
           children: [(0, r.jsx)(a.A, {
             game: e,
             size: a.M.XXSMALL

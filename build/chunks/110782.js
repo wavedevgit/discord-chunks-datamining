@@ -13,8 +13,8 @@ var Chunk562465 = require("./562465.js"),
   Chunk652215 = require("./652215.js");
 async function l() {
   try {
-    let e = await (0, s.aP)({
-      url: o.Rsh.LIBRARY,
+    let e = await (0, o.aP)({
+      url: s.Rsh.LIBRARY,
       oldFormErrors: true,
       rejectWithError: false
     }, false);
@@ -33,7 +33,7 @@ async function c(e) {
   let t = e.primarySkuId;
   if (null == t) return;
   let n = (await r.Bo.get({
-    url: o.Rsh.APPLICATION_BRANCH_LIST(e.id),
+    url: s.Rsh.APPLICATION_BRANCH_LIST(e.id),
     oldFormErrors: true,
     rejectWithError: false
   }).then(e => e.body)).map(n => a.A.createForTestMode({

@@ -1,9 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 331441, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 331441, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => r
+  R: () => i
 });
-var r = function(e) {
-  return e.HOME = "HOME", e.SWITCH_APP_PLANS = "SWITCH_APP_PLANS", e
-}({})
+var r, i = ((r = {}).HOME = "HOME", r.SWITCH_APP_PLANS = "SWITCH_APP_PLANS", r)

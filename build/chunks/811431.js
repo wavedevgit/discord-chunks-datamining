@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 811431, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   WA: "characterBackground_eb4069",
   xX: "artwork_eb4069",

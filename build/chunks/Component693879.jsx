@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk773669 = require("./773669.js"),
@@ -22,7 +22,7 @@ let h = e => {
       entry: t,
       inline: n = false,
       textColor: a,
-      textTabularNumbers: o = true,
+      textTabularNumbers: s = true,
       textFontCode: c = true,
       hovered: u = false,
       bold: h = false,
@@ -39,13 +39,13 @@ let h = e => {
     }), i.useEffect(() => {
       b.current = O.current
     }, [t]), (0, r.jsx)(l.Text, {
-      className: s()({
+      className: o()({
         [_.$N]: !!E || c,
         [_.Cr]: !E && h,
         [_.E1]: n
       }),
       variant: E ? "text-xs/normal" : "text-xs/medium",
-      tabularNumbers: o,
+      tabularNumbers: s,
       color: a,
       scaleFontToUserSetting: m,
       "aria-label": b.current,
@@ -57,22 +57,22 @@ let h = e => {
     let {
       entry: i,
       textColor: a,
-      hovered: s = false,
+      hovered: o = false,
       bold: f = false,
       scaleFontToUserSetting: p = false
-    } = e, _ = (0, d.Hd)(i), m = (0, o.bG)([c.default], () => c.default.locale), g = (0, o.bG)([u.A], () => u.A.getMatchingActivity(i)), E = null != (t = null == g || null == (n = g.timestamps) ? true : n.start) ? t : null == g ? true : g.created_at;
+    } = e, _ = (0, d.Hd)(i), m = (0, s.bG)([c.default], () => c.default.locale), g = (0, s.bG)([u.A], () => u.A.getMatchingActivity(i)), E = null != (t = null == g || null == (n = g.timestamps) ? true : n.start) ? t : null == g ? true : g.created_at;
     return null != E ? (0, r.jsx)(h, {
       entry: {
         start: E
       },
       textColor: a,
-      hovered: s,
+      hovered: o,
       bold: f,
       scaleFontToUserSetting: p
     }) : _ ? (0, r.jsx)(h, {
       entry: i,
       textColor: a,
-      hovered: s,
+      hovered: o,
       bold: f,
       scaleFontToUserSetting: p
     }) : (0, r.jsx)(l.Text, {

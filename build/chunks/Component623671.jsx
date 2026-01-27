@@ -47,7 +47,7 @@ function m(e) {
     children: t,
     onClick: n
   } = e;
-  return null == n ? t : (0, r.jsx)(o.DUT, {
+  return null == n ? t : (0, r.jsx)(s.DUT, {
     onClick: n,
     className: f.vk,
     children: t
@@ -57,7 +57,7 @@ function m(e) {
 function g(e) {
   var t, n, i;
   let {
-    image: o,
+    image: s,
     smallImage: _,
     aspectRatio: g,
     onClick: E,
@@ -68,7 +68,7 @@ function g(e) {
     smallImageSize: v,
     mask: A
   } = h[y];
-  if (null == o) return (0, r.jsx)(c.V, {
+  if (null == s) return (0, r.jsx)(c.V, {
     src: true,
     alt: d.intl.string(d.t["2B/phM"]),
     size: O,
@@ -76,8 +76,8 @@ function g(e) {
     constrain: "width"
   });
   let I = (0, r.jsx)(c.V, {
-    src: o.src,
-    alt: null != (t = null != (n = o.alt) ? n : o.text) ? t : d.intl.string(d.t["2B/phM"]),
+    src: s.src,
+    alt: null != (t = null != (n = s.alt) ? n : s.text) ? t : d.intl.string(d.t["2B/phM"]),
     size: O,
     className: a()(f.fO, p[null != g ? g : "default"]),
     constrain: "width"
@@ -87,9 +87,9 @@ function g(e) {
     children: [(0, r.jsx)(m, {
       onClick: E,
       children: (0, r.jsx)(u.O, {
-        href: o.url,
-        children: null != _ ? (0, r.jsx)(s.m_, {
-          text: o.text,
+        href: s.url,
+        children: null != _ ? (0, r.jsx)(o.m_, {
+          text: s.text,
           asContainer: true,
           children: (0, r.jsx)(l.Ay, {
             className: f.ZS,
@@ -98,8 +98,8 @@ function g(e) {
             height: O,
             children: I
           })
-        }) : (0, r.jsx)(s.m_, {
-          text: o.text,
+        }) : (0, r.jsx)(o.m_, {
+          text: s.text,
           children: (0, r.jsx)("div", {
             className: f.ZS,
             children: I
@@ -108,7 +108,7 @@ function g(e) {
       })
     }), null != _ && (0, r.jsx)(u.O, {
       href: _.url,
-      children: (0, r.jsx)(s.m_, {
+      children: (0, r.jsx)(o.m_, {
         text: _.text,
         children: (0, r.jsx)("div", {
           className: f.gn,

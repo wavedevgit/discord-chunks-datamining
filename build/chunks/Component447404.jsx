@@ -2,14 +2,14 @@
 /** chunk id: 447404, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o,
-  o: () => s
+  A: () => s,
+  o: () => o
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk461782 = require("./461782.jsx");
 
-function s(e) {
+function o(e) {
   let {
     onPreventIdle: t,
     onAllowIdle: n,
@@ -26,23 +26,23 @@ function s(e) {
   }
 }
 
-function o(e) {
+function s(e) {
   let {
     children: t,
     className: n
   } = e, {
-    onForceIdle: o,
+    onForceIdle: s,
     onActive: l
   } = i.useContext(a.k3), {
     preventIdle: c,
     allowIdle: u
-  } = s("interact");
+  } = o("interact");
   i.useEffect(() => () => u(), [u]);
   let d = i.useCallback(e => {
     var t;
     let n = null != (t = e.target.ownerDocument) ? t : document;
-    e.currentTarget.contains(n.activeElement) || o()
-  }, [o]);
+    e.currentTarget.contains(n.activeElement) || s()
+  }, [s]);
   return (0, r.jsx)("div", {
     className: n,
     onMouseEnter: c,

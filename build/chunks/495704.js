@@ -2,7 +2,7 @@
 /** chunk id: 495704, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => s
+  V: () => o
 });
 var Chunk945810 = require("./945810.js");
 
@@ -32,7 +32,7 @@ function a(e) {
     }
   })
 }
-class s {
+class o {
   isEligibleForEditProfileUpsell() {
     return null != this.editProfileLinkedDc && null != this.editProfileUnlinkedDc
   }

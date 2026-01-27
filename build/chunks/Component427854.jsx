@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk158954 = require("./158954.js"),
   Chunk397927 = require("./397927.js"),
@@ -116,8 +116,8 @@ function y(e) {
       perks: e
     })
   }, [_]);
-  return null == _ || 0 === _.length ? null : (0, r.jsxs)(o.animated.div, {
-    className: s()(p.kL, {
+  return null == _ || 0 === _.length ? null : (0, r.jsxs)(s.animated.div, {
+    className: o()(p.kL, {
       [p.Vz]: n
     }),
     style: g(h({}, b), {
@@ -126,7 +126,7 @@ function y(e) {
     children: [(0, r.jsx)(l.EYj, {
       tag: "span",
       variant: "text-md/semibold",
-      className: s()(p.h_, {
+      className: o()(p.h_, {
         [p.Qq]: !n,
         [p.sl]: n
       }),

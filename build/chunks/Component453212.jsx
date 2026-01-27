@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  o = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk615300 = require("./615300.js"),
   Chunk827734 = require("./827734.js"),
   Chunk399374 = require("./399374.js");
@@ -43,7 +43,7 @@ class _ extends Chunk64700.PureComponent {
   }
   constructor(...e) {
     super(...e), d(this, "state", {
-      backgroundColor: o().sample(p)
+      backgroundColor: s().sample(p)
     })
   }
 }
@@ -101,7 +101,7 @@ class h extends(r = Chunk64700.Component) {
         easing: l.A.Easing.linear
       }).start(this.animateSlide)
     });
-    const t = Array(10).fill(null).map(() => o().random(40, 150));
+    const t = Array(10).fill(null).map(() => s().random(40, 150));
     this.state = {
       blocks: t,
       height: 2 * t.reduce((e, t) => e + t + f, f),

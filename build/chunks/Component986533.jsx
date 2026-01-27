@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 986533, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 986533, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk709066 = require("./709066.jsx"),
   Chunk763754 = require("./763754.js"),
@@ -19,18 +18,18 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk234054 = require("./234054.js");
 
-function m(e) {
+function h(e) {
   let {
     message: t,
     compact: n,
     usernameHook: i
-  } = e, m = (0, l.Ay)(t), g = i(m), {
-    avatarSrc: E,
+  } = e, h = (0, o.Ay)(t), _ = i(h), {
+    avatarSrc: b,
     eventHandlers: {
-      onMouseEnter: y,
-      onMouseLeave: b
+      onMouseEnter: A,
+      onMouseLeave: y
     }
-  } = (0, u.a)(true), O = "" !== t.content ? new Date(t.content).toLocaleString(_.intl.currentLocale, {
+  } = (0, u.a)(true), v = "" !== t.content ? new Date(t.content).toLocaleString(f.intl.currentLocale, {
     hour: "numeric",
     minute: "2-digit",
     month: "2-digit",
@@ -38,53 +37,53 @@ function m(e) {
     year: "numeric"
   }) : "";
   return (0, r.jsx)("div", {
-    onMouseEnter: y,
-    onMouseLeave: b,
+    onMouseEnter: A,
+    onMouseLeave: y,
     children: (0, r.jsx)(d.A, {
-      className: a()(h.rs, {
-        [h.oE]: n
+      className: l()(g.rs, {
+        [g.oE]: n
       }),
       iconNode: n ? null : (0, r.jsx)(u.l, {
-        src: E
+        src: b
       }),
-      iconContainerClassName: h.zc,
+      iconContainerClassName: g.zc,
       compact: n,
       children: (0, r.jsxs)("div", {
-        className: a()(h.Qs, {
-          [h.oE]: n
+        className: l()(g.Qs, {
+          [g.oE]: n
         }),
         children: [(0, r.jsx)(c.ix, {
           message: t,
-          messageClassname: h.he,
-          className: a()(h.QV, h.he, {
-            [h.oE]: n
+          messageClassname: g.he,
+          className: l()(g.QV, g.he, {
+            [g.oE]: n
           }),
           username: (0, r.jsxs)("div", {
-            className: h.he,
-            children: [(0, r.jsx)(s.Text, {
+            className: g.he,
+            children: [(0, r.jsx)(a.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
-              className: h.Xh,
-              children: _.intl.string(_.t.hG1StD)
-            }), (0, r.jsx)(o.A, {
-              type: p.nu.SYSTEM_DM,
-              className: h.Al
+              className: g.Xh,
+              children: f.intl.string(f.t.hG1StD)
+            }), (0, r.jsx)(s.A, {
+              type: m.nu.SYSTEM_DM,
+              className: g.Al
             })]
           }),
           compact: n,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: a()(h.__invalid_messageContent, {
-            [h.oE]: n
+          className: l()(g.__invalid_messageContent, {
+            [g.oE]: n
           }),
-          children: t.type === f.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? _.intl.format(_.t["+m8eD7"], {
-            username: m.nick,
-            usernameHook: g,
-            time: O
-          }) : _.intl.format(_.t["BHeke+"], {
-            username: m.nick,
-            usernameHook: g
+          children: t.type === p.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? f.intl.format(f.t["+m8eD7"], {
+            username: h.nick,
+            usernameHook: _,
+            time: v
+          }) : f.intl.format(f.t["BHeke+"], {
+            username: h.nick,
+            usernameHook: _
           })
         })]
       })

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 494090, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 494090, original params: e,t,n (module,exports,require) **/
 module.exports = {
   xQ: "reactionTooltip_b49891",
   JS: "reactionTooltipEmoji_b49891",

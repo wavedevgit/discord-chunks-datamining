@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk155718 = require("./155718.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,7 +45,7 @@ function h(e) {
   let {
     credential: t
   } = e;
-  if (t.type !== s.Wq.WEBAUTHN || true !== c.find(e => e.id === t.id)) returnfalse;
+  if (t.type !== o.Wq.WEBAUTHN || true !== c.find(e => e.id === t.id)) returnfalse;
   c = [...c, t]
 }
 
@@ -53,7 +53,7 @@ function m(e) {
   let {
     credential: t
   } = e;
-  if (t.type !== s.Wq.WEBAUTHN) returnfalse;
+  if (t.type !== o.Wq.WEBAUTHN) returnfalse;
   c = c.map(e => e.id === t.id ? t : e)
 }
 
@@ -61,7 +61,7 @@ function g(e) {
   let {
     credential: t
   } = e;
-  if (t.type !== s.Wq.WEBAUTHN) returnfalse;
+  if (t.type !== o.Wq.WEBAUTHN) returnfalse;
   c = c.filter(e => e.id !== t.id)
 }
 class E extends(r = Chunk311907.Ay.Store) {
@@ -78,7 +78,7 @@ class E extends(r = Chunk311907.Ay.Store) {
     return u
   }
 }
-o(E, "displayName", "WebAuthnStore");
+s(E, "displayName", "WebAuthnStore");
 let y = new E(Chunk73153.h, {
   LOGOUT: d,
   MFA_WEBAUTHN_CREDENTIALS_LOADED: _,

@@ -58,7 +58,7 @@ let h = e => {
       selectedGuildId: i,
       selectedChannelId: l,
       children: u = null
-    } = e, d = (0, s.A)({
+    } = e, d = (0, o.A)({
       id: t.id,
       label: c.intl.string(c.t["+NP/b2"])
     });
@@ -72,7 +72,7 @@ let h = e => {
         id: "report",
         label: c.intl.string(c.t["+78Pfm"]),
         color: "danger",
-        action: () => (0, o.r3)({
+        action: () => (0, s.r3)({
           application: t,
           entrypoint: "authorized_apps_settings",
           contextualGuildId: i,
@@ -87,13 +87,13 @@ let h = e => {
       botUser: n,
       closePopout: i,
       selectedGuildId: a,
-      selectedChannelId: s
+      selectedChannelId: o
     } = e;
     return (0, r.jsx)(h, {
       appRecord: t,
       closePopout: i,
       selectedGuildId: a,
-      selectedChannelId: s,
+      selectedChannelId: o,
       children: (0, l.A)({
         user: n,
         location: "UserSettingsAuthedApps",
@@ -105,10 +105,10 @@ let h = e => {
     let {
       appRecord: t,
       selectedGuildId: n,
-      selectedChannelId: s
-    } = e, o = i.useRef(null);
+      selectedChannelId: o
+    } = e, s = i.useRef(null);
     return (0, r.jsx)(a.YNO, {
-      targetElementRef: o,
+      targetElementRef: s,
       renderPopout: e => {
         let {
           closePopout: i
@@ -117,19 +117,19 @@ let h = e => {
           appRecord: t,
           closePopout: i,
           selectedGuildId: n,
-          selectedChannelId: s
+          selectedChannelId: o
         }) : (0, r.jsx)(m, {
           appRecord: t,
           botUser: t.bot,
           closePopout: i,
           selectedGuildId: n,
-          selectedChannelId: s
+          selectedChannelId: o
         })
       },
       align: "right",
       position: "bottom",
       children: e => (0, r.jsx)(a.DUT, _(f({
-        innerRef: o,
+        innerRef: s,
         className: u.a,
         "aria-label": c.intl.string(c.t["UKOtz+"])
       }, e), {

@@ -15,15 +15,15 @@ var Chunk64700 = require("./64700.js"),
 let d = .1;
 
 function f() {
-  let e = (0, s.yK)([c.A], () => c.A.getFriendIDs()),
-    t = (0, s.yK)([o.A], () => o.A.getUserAffinities().filter(e => {
+  let e = (0, o.yK)([c.A], () => c.A.getFriendIDs()),
+    t = (0, o.yK)([s.A], () => s.A.getUserAffinities().filter(e => {
       let {
         isFriend: t,
         communicationProbability: n,
         vcProbability: r,
         otherUserId: i
-      } = e, a = !t && (n >= d || r >= d), s = (0, l.q)(i);
-      return a && s
+      } = e, a = !t && (n >= d || r >= d), o = (0, l.q)(i);
+      return a && o
     }).map(e => {
       let {
         otherUserId: t
@@ -31,7 +31,7 @@ function f() {
       return t
     })),
     n = r.useMemo(() => a().uniq([...e, ...t]), [e, t]);
-  return (0, s.yK)([u.default], () => n.reduce((e, t) => {
+  return (0, o.yK)([u.default], () => n.reduce((e, t) => {
     let n = u.default.getUser(t);
     return null == n || n.bot || e.push(n), e
   }, []), [n])

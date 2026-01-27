@@ -9,15 +9,15 @@ var Chunk439372 = require("./439372.js"),
   Chunk128391 = require("./128391.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e) {
+function s(e) {
   var t;
-  if ((null == (t = e.message_reference) ? true : t.type) !== s.SH7.FORWARD) return;
+  if ((null == (t = e.message_reference) ? true : t.type) !== o.SH7.FORWARD) return;
   let n = e.message_reference.guild_id;
   null != n && (0, i.y)(n)
 }
 class l extends Chunk439372.A {
   constructor() {
-    super(), (0, a.A)(this, o)
+    super(), (0, a.A)(this, s)
   }
 }
 let c = new l

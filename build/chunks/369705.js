@@ -39,14 +39,14 @@ module.exports = function(e, t, n, r, v, I, S) {
     case E:
       return e == t + "";
     case _:
-      var T = o;
+      var T = s;
     case g:
       var C = r & c;
       if (T || (T = l), e.size != t.size && !C) break;
       var N = S.get(e);
       if (N) return N == t;
       r |= u, S.set(e, t);
-      var w = s(T(e), T(t), r, v, I, S);
+      var w = o(T(e), T(t), r, v, I, S);
       return S.delete(e), w;
     case y:
       if (A) return A.call(e) == A.call(t)

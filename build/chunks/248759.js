@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk99478 = require("./99478.js"),
   Chunk526531 = require("./526531.js");
 let a = 347997,
-  s = 25920,
-  o = 765433;
+  o = 25920,
+  s = 765433;
 
 function l(e) {
   return 7 > (0, i.z)(7 * e + 1, 19)
@@ -55,7 +55,7 @@ function _(e, t) {
 class h {
   fromJulianDay(e) {
     let t = e - a,
-      n = Math.floor((t * s / o * 19 + 234) / 235) + 1,
+      n = Math.floor((t * o / s * 19 + 234) / 235) + 1,
       i = d(n),
       l = Math.floor(t - i);
     for (; l < 1;) l = Math.floor(t - (i = d(--n)));

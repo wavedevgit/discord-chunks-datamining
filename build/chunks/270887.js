@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 270887, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 270887, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => g
 });
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -16,23 +15,18 @@ var Chunk735438 = require("./735438.js"),
   Chunk619921 = require("./619921.js"),
   Chunk265422 = require("./265422.js"),
   Chunk652215 = require("./652215.js");
-let h = false,
-  m = false,
-  g = false;
-
-function E(e) {
-  let t = o.A.getState().guildId;
-  if (null == t) return m;
-  if (t === _.YYv) return g;
-  let n = e.indexOf(t);
-  return false === n ? m : n
-}
-let y = i().throttle(function() {
+let g = i().throttle(function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
-    t = d.Ay.getFlattenedGuildIds(),
-    n = E(t);
-  if ((n += e) !== g || (0, s.J)(a.A, l.A, c.A) || (n += e), n === h && (n = t.length - 1), n >= t.length || n === m) return void(0, p.a)(f.A.getHomeLink());
-  let r = n === g ? _.YYv : t[n],
-    i = u.A.getChannelId(r);
+    t = u.Ay.getFlattenedGuildIds(),
+    n = function(e) {
+      let t = a.A.getState().guildId;
+      if (null == t) return false;
+      if (t === m.YYv) return false;
+      let n = e.indexOf(t);
+      return false === n ? false : n
+    }(t);
+  if (false !== (n += e) || (0, s.J)(l.A, o.A, c.A) || (n += e), false === n && (n = t.length - 1), n >= t.length || false === n) return void(0, p.a)(_.A.getHomeLink());
+  let r = false === n ? m.YYv : t[n],
+    i = d.A.getChannelId(r);
   (0, p.i)(r, i === r ? null : i, false)
 }, Chunk652215.ugG)

@@ -18,8 +18,8 @@ var Chunk627968 = require("./627968.js"),
 let _ = e => {
   let {
     alwaysWhite: t = false
-  } = e, n = (0, c.DP)(), i = (0, o.qB)(n);
-  return (0, r.jsx)(s.m, {
+  } = e, n = (0, c.DP)(), i = (0, s.qB)(n);
+  return (0, r.jsx)(o.m, {
     text: f.intl.formatToPlainString(d.default["5xN/C1"], {
       premiumGroupProductName: (0, u.DP)()
     }),

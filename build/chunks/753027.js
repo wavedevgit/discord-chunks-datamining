@@ -30,7 +30,7 @@ class f extends Chunk311907.Ay.Store {
   }
   async refresh() {
     var e, t;
-    let n = await (null == (t = o.A.database()) || null == (e = t.fsInfo()) ? true : e.catch(e => c.warn("couldn't get fs info", e)));
+    let n = await (null == (t = s.A.database()) || null == (e = t.fsInfo()) ? true : e.catch(e => c.warn("couldn't get fs info", e)));
     if (null != n) {
       let e = n.fs.available < 256 * u || n.fs.available < 3 * n.database.used || n.fs.available < 2 * n.database.total,
         t = n.fs.available > 768 * u && n.fs.available > 4 * n.database.used && n.fs.available > 4 * n.database.total,
@@ -42,7 +42,7 @@ class f extends Chunk311907.Ay.Store {
     super(i.h, {
       APP_STATE_UPDATE: e => this.handleAppStateUpdate(e),
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
-    }), l(this, "isLowDisk", false), this.refresh(), this.waitFor(o.A), setInterval(() => this.refresh(), d)
+    }), l(this, "isLowDisk", false), this.refresh(), this.waitFor(s.A), setInterval(() => this.refresh(), d)
   }
 }
 let p = new f

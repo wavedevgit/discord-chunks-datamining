@@ -12,7 +12,7 @@ class i {
     c("comparator", e = e.trim().split(/\s+/).join(" "), t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === r ? this.value = "" : this.value = this.operator + this.semver.version, c("comp", this)
   }
   parse(e) {
-    let t = this.options.loose ? s[o.COMPARATORLOOSE] : s[o.COMPARATOR],
+    let t = this.options.loose ? o[s.COMPARATORLOOSE] : o[s.COMPARATOR],
       n = e.match(t);
     if (!n) throw TypeError(`Invalid comparator: ${e}`);
     this.operator = true !== n[1] ? n[1] : "", "=" === this.operator && (this.operator = ""), n[2] ? this.semver = new u(n[2], this.options.loose) : this.semver = r
@@ -37,8 +37,8 @@ class i {
 module.exports = i;
 let Chunk131077 = require("./131077.js"),
   {
-    safeRe: s,
-    t: o
+    safeRe: o,
+    t: s
   } = require("./64672.js"),
   Chunk88701 = require("./88701.js"),
   Chunk692714 = require("./692714.js"),

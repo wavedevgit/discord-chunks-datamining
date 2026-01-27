@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 954376, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96758 **/
+/** chunk id: 954376, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => u
 });
@@ -10,45 +9,41 @@ var Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk478063 = require("./478063.jsx"),
   Chunk287809 = require("./287809.js");
-
-function l(e, t) {
-  if (null == e) return {};
-  var n, r, i, a = {};
-  if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-  }
-  if (a = c(e, t), Object.getOwnPropertySymbols)
-    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-  return a
-}
-
-function c(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.getOwnPropertyNames(e);
-  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-  return i
-}
 let u = function(e) {
   let {
     recipients: t,
-    size: n,
-    status: c,
-    isTyping: u,
-    className: d
-  } = e, f = l(e, ["recipients", "size", "status", "isTyping", "className"]), p = a.vCh[n], _ = (0, i.yK)([o.default], () => t.slice(0, 2).map(e => {
-    let t = o.default.getUser(e);
-    if (null != t) return t.getAvatarURL(true, p.size, false)
-  }), [t, p.size]);
-  return (0, r.jsx)(s.A, {
-    "aria-label": f["aria-label"],
-    "aria-hidden": f["aria-hidden"],
-    backSrc: _[0],
-    frontSrc: _[1],
-    size: n,
-    status: c,
-    isTyping: null != u && u,
-    className: d
+    size: r,
+    status: u,
+    isTyping: o,
+    className: c
+  } = e, A = function(e, t) {
+    if (null == e) return {};
+    var r, n, l, s = {};
+    if ("u" > typeof Reflect && Reflect.ownKeys) {
+      for (l = 0, r = Reflect.ownKeys(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
+      return s
+    }
+    if (s = function(e, t) {
+        if (null == e) return {};
+        var r, n, l = {},
+          s = Object.getOwnPropertyNames(e);
+        for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+        return l
+      }(e, t), Object.getOwnPropertySymbols)
+      for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
+    return s
+  }(e, ["recipients", "size", "status", "isTyping", "className"]), f = s.vCh[r], h = (0, l.yK)([a.default], () => t.slice(0, 2).map(e => {
+    let t = a.default.getUser(e);
+    if (null != t) return t.getAvatarURL(true, f.size, false)
+  }), [t, f.size]);
+  return (0, n.jsx)(i.A, {
+    "aria-label": A["aria-label"],
+    "aria-hidden": A["aria-hidden"],
+    backSrc: h[0],
+    frontSrc: h[1],
+    size: r,
+    status: u,
+    isTyping: null != o && o,
+    className: c
   })
 }

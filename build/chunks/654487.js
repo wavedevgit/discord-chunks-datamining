@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   B3: () => N,
-  BQ: () => L,
+  BQ: () => x,
   CI: () => E,
   Fw: () => A,
   GD: () => g,
@@ -12,9 +12,9 @@ require.d(exports, {
   Ko: () => _,
   Li: () => u.L,
   Ls: () => w,
-  Pc: () => x,
+  Pc: () => L,
   TY: () => c.T,
-  WQ: () => M,
+  WQ: () => j,
   ZV: () => p,
   aJ: () => I,
   eA: () => v,
@@ -80,13 +80,13 @@ let A = "1333839522189938740",
 var D = function(e) {
     return e.SUGGESTED = "suggested", e.MOST_RECENT = "most_recent", e.EXPIRING_SOON = "expiring_soon", e.RECENTLY_ENROLLED = "recently_enrolled", e
   }({}),
-  x = function(e) {
+  L = function(e) {
     return e.VIDEO = "task_video", e.PLAY = "task_play", e
   }({}),
-  L = function(e) {
+  x = function(e) {
     return e.VIRTUAL_CURRENCY = "reward_virtual_currency", e.COLLECTIBLE = "reward_collectible", e.IN_GAME = "reward_in_game", e
   }({});
-let j = [{
+let M = [{
   group: "task",
   filter: "task_play"
 }, {
@@ -103,17 +103,17 @@ let j = [{
   filter: "reward_in_game"
 }];
 
-function M(e) {
-  return Object.values(x).includes(e) ? {
+function j(e) {
+  return Object.values(L).includes(e) ? {
     group: "task",
     filter: e
-  } : Object.values(L).includes(e) ? {
+  } : Object.values(x).includes(e) ? {
     group: "reward",
     filter: e
   } : null
 }
 let k = ["reward", "task"],
-  U = Object.entries((0, Chunk735438.groupBy)(j, "group")).sort((e, t) => {
+  U = Object.entries((0, Chunk735438.groupBy)(M, "group")).sort((e, t) => {
     let n = k.indexOf(e[0]),
       r = k.indexOf(t[0]);
     return n < r ? false : +(r < n)

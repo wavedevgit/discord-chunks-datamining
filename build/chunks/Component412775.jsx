@@ -1,4 +1,4 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 412775, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => _
@@ -33,19 +33,19 @@ function _(e) {
     onClose: _
   } = e, {
     trackUserProfileAction: O
-  } = (0, u.NJ)(), N = (0, i.bG)([c.A], () => c.A.getGuildId()), E = (0, s.q)({
+  } = (0, u.NJ)(), N = (0, i.bG)([d.A], () => d.A.getGuildId()), E = (0, s.q)({
     userId: t.id
-  }), T = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), P = (0, i.bG)([a.default], () => a.default.locale), C = (0, m.A)(t.id), S = (0, p.A)(t.id);
+  }), P = (0, i.bG)([c.A], () => c.A.hidePersonalInformation), T = (0, i.bG)([a.default], () => a.default.locale), C = (0, f.A)(t.id), S = (0, p.A)(t.id);
   return (0, l.jsxs)(r.IpV, {
     fade: true,
     className: y.XG,
-    children: [(null == n ? true : n.bio) != null && (null == n ? true : n.bio) !== "" && !T && (0, l.jsx)(f.A, {
+    children: [(null == n ? true : n.bio) != null && (null == n ? true : n.bio) !== "" && !P && (0, l.jsx)(m.A, {
       userBio: n.bio,
       setLineClamp: false
-    }), (null == n ? true : n.guildId) != null && (0, l.jsx)(g.A, {
+    }), (null == n ? true : n.guildId) != null && (0, l.jsx)(h.A, {
       userId: t.id,
       guildId: n.guildId
-    }), t.isProvisional && (0, l.jsx)(h.A, {
+    }), t.isProvisional && (0, l.jsx)(j.A, {
       heading: I.intl.string(I.t.Iyka0U),
       headingIcon: (0, l.jsx)(r.EpV, {
         size: "xxs",
@@ -55,33 +55,33 @@ function _(e) {
       children: (0, l.jsx)(o.T, {
         userId: t.id
       })
-    }), E.length > 0 && (0, l.jsx)(h.A, {
+    }), E.length > 0 && (0, l.jsx)(j.A, {
       heading: I.intl.string(I.t["Uv/eTx"]),
       children: (0, l.jsx)(x.A, {
         applicationIds: E
       })
-    }), (0, l.jsx)(h.A, {
+    }), (0, l.jsx)(j.A, {
       heading: I.intl.string(I.t.a6XYD9),
-      children: (0, l.jsx)(j.A, {
+      children: (0, l.jsx)(g.A, {
         userId: t.id,
         guildId: null == n ? true : n.guildId,
-        tooltipDelay: b.In
+        tooltipDelay: v.In
       })
-    }), C.length > 0 && (0, l.jsx)(h.A, {
+    }), C.length > 0 && (0, l.jsx)(j.A, {
       heading: I.intl.string(I.t["3fe7U5"]),
-      scrollTargetId: b.bk.CONNECTIONS,
+      scrollTargetId: v.bk.CONNECTIONS,
       children: (0, l.jsx)(A.Ay, {
         connectedAccounts: C,
         className: y.oQ,
         userId: t.id,
-        locale: P
+        locale: T
       })
-    }), S.length > 0 && (0, l.jsx)(h.A, {
+    }), S.length > 0 && (0, l.jsx)(j.A, {
       heading: I.intl.string(I.t.PHjkRE),
       children: S.map(e => (0, l.jsx)(A.Wc, {
         className: y.MI,
         applicationRoleConnection: e,
-        locale: P,
+        locale: T,
         onApplicationClicked: () => {
           O({
             action: "PRESS_APP_CONNECTION"
@@ -89,7 +89,7 @@ function _(e) {
         },
         selectedGuildId: null != N ? N : true
       }, e.application.id))
-    }), (0, l.jsx)(v.A, {
+    }), (0, l.jsx)(b.A, {
       userId: t.id
     })]
   })

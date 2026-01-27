@@ -3,17 +3,17 @@
 "use strict";
 require.d(exports, {
   g: () => l,
-  t: () => o
+  t: () => s
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk587895 = require("./587895.js"),
   Chunk223273 = require("./223273.js"),
   Chunk705751 = require("./705751.js");
 
-function o(e) {
+function s(e) {
   var t;
   if (null == e) return null;
-  if (e.type !== s.S7.GAME) return e;
+  if (e.type !== o.S7.GAME) return e;
   for (let n of null != (t = e.linkedGames) ? t : []) {
     let e = i.A.getApplication(n.id);
     if (null != e && n.type === a.Mh.OFFICIAL) return e
@@ -22,5 +22,5 @@ function o(e) {
 }
 
 function l(e) {
-  return r.useMemo(() => o(e), [e])
+  return r.useMemo(() => s(e), [e])
 }

@@ -6,8 +6,8 @@ let Chunk692714 = require("./692714.js"),
     MAX_SAFE_INTEGER: a
   } = require("./376780.js"),
   {
-    safeRe: s,
-    t: o
+    safeRe: o,
+    t: s
   } = require("./64672.js"),
   Chunk131077 = require("./131077.js"),
   {
@@ -21,7 +21,7 @@ class u {
     else if ("string" != typeof e) throw TypeError(`Invalid version. Must be a string. Got type "${typeof e}".`);
     if (e.length > i) throw TypeError(`version is longer than ${i} characters`);
     r("SemVer", e, t), this.options = t, this.loose = !!t.loose, this.includePrerelease = !!t.includePrerelease;
-    const n = e.trim().match(t.loose ? s[o.LOOSE] : s[o.FULL]);
+    const n = e.trim().match(t.loose ? o[s.LOOSE] : o[s.FULL]);
     if (!n) throw TypeError(`Invalid Version: ${e}`);
     if (this.raw = e, this.major = +n[1], this.minor = +n[2], this.patch = +n[3], this.major > a || this.major < 0) throw TypeError("Invalid major version");
     if (this.minor > a || this.minor < 0) throw TypeError("Invalid minor version");

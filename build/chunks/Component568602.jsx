@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  o = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk775602 = require("./775602.js");
 
 function c(e, t, n) {
@@ -56,8 +56,8 @@ class u extends(r = Chunk64700.Component) {
       if (!t) return;
       let n = this.ref.current;
       if (this.shouldRenderFrame && null != n) {
-        let t = o().random(-e, e, true),
-          r = o().random(-e, e, true);
+        let t = s().random(-e, e, true),
+          r = s().random(-e, e, true);
         n.style.transform = l.A.useReducedMotion ? "" : "translate3d(".concat(t, "px,").concat(r, "px,0px)")
       }
       this.shouldRenderFrame = !this.shouldRenderFrame, this.animationFrame = requestAnimationFrame(this.animate)

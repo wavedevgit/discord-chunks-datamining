@@ -55,9 +55,9 @@ function g(e, t, n) {
   if (null == t.options) return {};
   let i = _(e),
     a = Object.fromEntries(t.options.map(e => [e.name, e])),
-    s = null == i ? true : i[0].children;
-  if (null != s) {
-    for (let t of s)
+    o = null == i ? true : i[0].children;
+  if (null != o) {
+    for (let t of o)
       if (d.AS.isType(t, "applicationCommandOption")) {
         let i = a[t.optionName];
         null != i && (r[t.optionName] = E(e, i, t, n))
@@ -69,7 +69,7 @@ function g(e, t, n) {
 function E(e, t, n, i) {
   let a = n.children.map(n => {
     if (t.type === r.n4.ATTACHMENT) {
-      let e = l.A.getUpload(i, t.name, o.C.SlashCommand);
+      let e = l.A.getUpload(i, t.name, s.C.SlashCommand);
       if (null != e) {
         var a;
         return {
@@ -102,9 +102,9 @@ function E(e, t, n, i) {
 
 function y(e, t, n, r, a) {
   if (null == e.options) return {};
-  let o = Object.fromEntries(e.options.map(e => {
+  let s = Object.fromEntries(e.options.map(e => {
     var i;
-    return [e.name, s.J({
+    return [e.name, o.J({
       option: e,
       content: null != (i = r[e.name]) ? i : null,
       guildId: t,
@@ -112,20 +112,20 @@ function y(e, t, n, r, a) {
       allowEmptyValues: a
     })]
   }));
-  return i._y(n, o), o
+  return i._y(n, s), s
 }
 
-function b(e, t, n, r, o) {
+function b(e, t, n, r, s) {
   var l;
   let [c] = r, u = a.A.getActiveCommand(n), d = null == u || null == (l = u.options) ? true : l.find(e => e.name === c.optionName);
   if (null == d) return;
   let f = E(e, d, c, n),
-    p = s.J({
+    p = o.J({
       option: d,
       content: f,
       guildId: t,
       channelId: n,
-      allowEmptyValues: o
+      allowEmptyValues: s
     });
   return i.H2(n, {
     [c.optionName]: {
@@ -140,9 +140,9 @@ function O(e, t) {
     r = [],
     i = new Set(m(e)),
     a = {},
-    s = new Set;
-  for (let e of t.options) a[e.displayName] = e, i.has(e.name) || s.add(e.displayName);
-  let o = null;
+    o = new Set;
+  for (let e of t.options) a[e.displayName] = e, i.has(e.name) || o.add(e.displayName);
+  let s = null;
   for (let t = 0; t < n.length; t++) {
     let i = n[t];
     if ("line" === i.type || "applicationCommand" === i.type)
@@ -150,12 +150,12 @@ function O(e, t) {
         let f, _ = i.children[c],
           h = [t, c];
         if (d.AS.isType(_, "applicationCommandOption")) {
-          if (null != o) {
+          if (null != s) {
             var l;
-            o.valueRange.focus = null != (l = d.VW.before(e, h)) ? l : d.VW.start(e, []), o.text = (0, u.WO)(n, {
+            s.valueRange.focus = null != (l = d.VW.before(e, h)) ? l : d.VW.start(e, []), s.text = (0, u.WO)(n, {
               mode: "raw",
-              range: o.valueRange
-            }).trim(), r.push(o), o = null
+              range: s.valueRange
+            }).trim(), r.push(s), s = null
           }
           continue
         }
@@ -163,8 +163,8 @@ function O(e, t) {
           for (p.lastIndex = 0; null != (f = p.exec(_.text));) {
             if (0 !== f.index && null == _.text.charAt(f.index - 1).match(/(\t|\s)/)) continue;
             let e = f[1];
-            if (!s.has(e)) continue;
-            s.delete(e);
+            if (!o.has(e)) continue;
+            o.delete(e);
             let t = a[e];
             if (null == t) continue;
             let i = {
@@ -193,15 +193,15 @@ function O(e, t) {
                 },
                 text: ""
               };
-            null != o && (o.valueRange.focus = d.keyRange.anchor, o.text = (0, u.WO)(n, {
+            null != s && (s.valueRange.focus = d.keyRange.anchor, s.text = (0, u.WO)(n, {
               mode: "raw",
-              range: o.valueRange
-            }).trim(), r.push(o)), o = d
+              range: s.valueRange
+            }).trim(), r.push(s)), s = d
           }
       }
   }
-  return null != o && (o.valueRange.focus = d.VW.end(e, []), o.text = (0, u.WO)(n, {
+  return null != s && (s.valueRange.focus = d.VW.end(e, []), s.text = (0, u.WO)(n, {
     mode: "raw",
-    range: o.valueRange
-  }).trim(), r.push(o)), r
+    range: s.valueRange
+  }).trim(), r.push(s)), r
 }

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 745299, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93140 **/
+/** chunk id: 745299, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => y
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -25,104 +24,100 @@ var Chunk110259 = require("./110259.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk237082 = require("./237082.js");
 
-function v(e) {
+function P(e) {
   switch (e) {
-    case E.pe.TIER_0:
-      return o.A.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE;
-    case E.pe.TIER_2:
-      return o.A.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE;
+    case N.pe.TIER_0:
+      return R.intl.string(R.t.mCG023);
+    case N.pe.TIER_2:
+      return R.intl.string(R.t.J61px0);
     default:
       throw Error("Unsupported subscription tier: ".concat(e))
   }
 }
-
-function A(e) {
-  switch (e) {
-    case E.pe.TIER_0:
-      return a.Hv$.PREMIUM_TIER_0;
-    case E.pe.TIER_2:
-      return a.Hv$.PREMIUM_TIER_2;
-    default:
-      throw Error("Unsupported subscription tier: ".concat(e))
-  }
-}
-
-function I(e) {
-  switch (e) {
-    case E.pe.TIER_0:
-      return b.intl.string(b.t.mCG023);
-    case E.pe.TIER_2:
-      return b.intl.string(b.t.J61px0);
-    default:
-      throw Error("Unsupported subscription tier: ".concat(e))
-  }
-}
-let S = function(e) {
-  var t, n, o;
+let y = function(e) {
+  var t, n, R;
   let {
-    dismissCurrentNotice: b,
-    subscriptionTier: S
+    dismissCurrentNotice: y,
+    subscriptionTier: f
   } = e, {
-    analyticsLocations: T
-  } = (0, l.Ay)(v(S)), C = (0, h.V)(), N = (0, s.A)(null != C && null != C.expires_at ? Date.parse(C.expires_at) : 0), {
-    variant: w,
-    showNagbar: R
-  } = (0, _.Ay)("PremiumTrialEndingNotice"), P = null == C || (null == (t = C.subscription_trial) ? true : t.sku_id) !== S || null == C.expires_at || Object.values(N).every(e => 0 === e) || C.trial_id !== E.Dw && !R;
+    analyticsLocations: C
+  } = (0, s.Ay)(function(e) {
+    switch (e) {
+      case N.pe.TIER_0:
+        return a.A.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE;
+      case N.pe.TIER_2:
+        return a.A.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE;
+      default:
+        throw Error("Unsupported subscription tier: ".concat(e))
+    }
+  }(f)), m = (0, T.V)(), D = (0, o.A)(null != m && null != m.expires_at ? Date.parse(m.expires_at) : 0), {
+    variant: g,
+    showNagbar: h
+  } = (0, A.Ay)("PremiumTrialEndingNotice"), b = null == m || (null == (t = m.subscription_trial) ? true : t.sku_id) !== f || null == m.expires_at || Object.values(D).every(e => 0 === e) || m.trial_id !== N.Dw && !h;
   if ((0, c.A)({
       type: i.ImpressionTypes.VIEW,
       name: i.ImpressionNames.TRIAL_NOTICE,
       properties: {
-        trial_id: null == C ? true : C.trial_id
+        trial_id: null == m ? true : m.trial_id
       }
     }, {
-      disableTrack: P
-    }), P) return null;
-  let D = S === E.pe.TIER_2 ? y.kqX.PREMIUM_TIER_2_TRIAL_ENDING : y.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
-    x = () => {
+      disableTrack: b
+    }), b) return null;
+  let U = f === N.pe.TIER_2 ? p.kqX.PREMIUM_TIER_2_TRIAL_ENDING : p.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
+    M = () => {
       (0, u.A)({
-        trialId: C.trial_id,
-        subscriptionTier: S,
-        analyticsLocations: T,
+        trialId: m.trial_id,
+        subscriptionTier: f,
+        analyticsLocations: C,
         analyticsObject: {
-          page: y.liQ.IN_APP,
-          section: y.JJy.NOTIFICATION_BAR,
-          object: y.ZSU.BUTTON_CTA
+          page: p.liQ.IN_APP,
+          section: p.JJy.NOTIFICATION_BAR,
+          object: p.ZSU.BUTTON_CTA
         }
-      }), d.default.track(y.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
-        notice_type: D,
-        trial_id: C.trial_id
+      }), E.default.track(p.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+        notice_type: U,
+        trial_id: m.trial_id
       })
     },
-    L = (0, p.re)({
-      intervalType: null == (n = C.subscription_trial) ? true : n.interval,
-      intervalCount: null == (o = C.subscription_trial) ? true : o.interval_count
+    j = (0, _.re)({
+      intervalType: null == (n = m.subscription_trial) ? true : n.interval,
+      intervalCount: null == (R = m.subscription_trial) ? true : R.interval_count
     }),
-    j = f.A.getArticleURL(C.trial_id === E.yo ? y.MVz.NITRO_TRIAL_FOR_ALL : y.MVz.PREMIUM_TRIAL);
-  return w === _.CJ.NAGBAR_REFRESH && (null == C ? true : C.trial_id) !== E.Dw ? (0, r.jsxs)(m.T0, {
+    k = d.A.getArticleURL(m.trial_id === N.yo ? p.MVz.NITRO_TRIAL_FOR_ALL : p.MVz.PREMIUM_TRIAL);
+  return g === A.CJ.NAGBAR_REFRESH && (null == m ? true : m.trial_id) !== N.Dw ? (0, r.jsxs)(I.T0, {
     onClick: () => {
-      b(), d.default.track(y.HAw.APP_NOTICE_CLOSED, {
-        notice_type: D,
-        trial_id: C.trial_id
+      y(), E.default.track(p.HAw.APP_NOTICE_CLOSED, {
+        notice_type: U,
+        trial_id: m.trial_id
       })
     },
-    children: [(0, r.jsx)(m.In, {
-      children: (0, g.GZ)(S, N, L, j)
-    }), (0, r.jsx)(m.fY, {
-      onClick: x,
-      text: I(S)
+    children: [(0, r.jsx)(I.In, {
+      children: (0, O.GZ)(f, D, j, k)
+    }), (0, r.jsx)(I.fY, {
+      onClick: M,
+      text: P(f)
     })]
-  }) : (0, r.jsxs)(a.$Td, {
-    color: A(S),
-    children: [(0, r.jsx)(a.PMB, {
-      noticeType: D,
-      onClick: b
-    }), (0, r.jsx)(a.tvc, {
+  }) : (0, r.jsxs)(l.$Td, {
+    color: function(e) {
+      switch (e) {
+        case N.pe.TIER_0:
+          return l.Hv$.PREMIUM_TIER_0;
+        case N.pe.TIER_2:
+          return l.Hv$.PREMIUM_TIER_2;
+        default:
+          throw Error("Unsupported subscription tier: ".concat(e))
+      }
+    }(f),
+    children: [(0, r.jsx)(l.PMB, {
+      noticeType: U,
+      onClick: y
+    }), (0, r.jsx)(l.tvc, {
       size: "md",
       color: "currentColor",
-      className: O.PC
-    }), (0, g.GZ)(S, N, L, j), (0, r.jsx)(a.zr9, {
-      onClick: x,
-      children: I(S)
+      className: S.PC
+    }), (0, O.GZ)(f, D, j, k), (0, r.jsx)(l.zr9, {
+      onClick: M,
+      children: P(f)
     })]
   })
 }

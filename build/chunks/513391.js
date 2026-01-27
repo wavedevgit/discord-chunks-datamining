@@ -2,7 +2,7 @@
 /** chunk id: 513391, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./321073.js"), require("./142703.js"), require("./667532.js");
 var Chunk677623 = require("./677623.js"),
   i = require.n(Chunk677623);
@@ -15,8 +15,8 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = new(require("./626584.js")).A("Queue");
-class o {
+let o = new(require("./626584.js")).A("Queue");
+class s {
   enqueue(e, t, n) {
     this.queue.push({
       message: e,
@@ -54,7 +54,7 @@ class o {
       };
     this.logger.log("Draining message from queue LogId:".concat(r, " QueueLength: ").concat(this.queue.length)), this.drain(t, i)
   }
-  constructor(e = s, t = 100) {
+  constructor(e = o, t = 100) {
     a(this, "logger", true), a(this, "defaultRetryAfter", true), a(this, "queue", true), a(this, "timeout", true), a(this, "draining", true), this.logger = e, this.defaultRetryAfter = t, this.queue = new(i()), this.timeout = null, this.draining = false
   }
 }

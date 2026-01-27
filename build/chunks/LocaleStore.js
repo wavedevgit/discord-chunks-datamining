@@ -21,8 +21,8 @@ function u(e, t, n) {
 }
 async function d() {
   var e;
-  if ((null === o.A || true === o.A || null == (e = o.A.app) ? true : e.getPreferredSystemLanguages) != null) {
-    let e = await o.A.app.getPreferredSystemLanguages().then(e => e[0]);
+  if ((null === s.A || true === s.A || null == (e = s.A.app) ? true : e.getPreferredSystemLanguages) != null) {
+    let e = await s.A.app.getPreferredSystemLanguages().then(e => e[0]);
     if (null != e && "" !== e) return e
   }
   return c.systemLocale
@@ -33,18 +33,18 @@ let f = Chunk985018.intl.currentLocale,
 function _() {
   var e, t;
   let n = null == (t = l.A.settings.localization) || null == (e = t.locale) ? true : e.value;
-  return null != n && "" !== n && n !== f && (f = n, (0, s.Av)(f), true)
+  return null != n && "" !== n && n !== f && (f = n, (0, o.Av)(f), true)
 }
 
 function h(e) {
-  f = e.locale, (0, s.Av)(f)
+  f = e.locale, (0, o.Av)(f)
 }
 d().then(e => {
   p = e
 });
 class m extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.A), _(), (0, s.Av)(f)
+    this.waitFor(l.A), _(), (0, o.Av)(f)
   }
   get locale() {
     return f

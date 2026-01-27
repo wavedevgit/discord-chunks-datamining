@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 541171, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 541171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,39 +10,38 @@ var Chunk397927 = require("./397927.js"),
   Chunk763754 = require("./763754.js"),
   Chunk888675 = require("./888675.jsx"),
   Chunk985018 = require("./985018.jsx");
-let c = 20;
 
-function u(e) {
+function c(e) {
   var t;
   let {
     message: n,
-    channel: u,
-    playingActivity: d,
-    onJoinStream: f,
+    channel: c,
+    playingActivity: u,
+    onJoinStream: d,
     usernameHook: p,
-    compact: _
-  } = e, h = (0, s.Ay)(n), m = null == (t = n.call) ? true : t.duration, g = p(h), E = l.intl.format(l.t.FKXvaI, {
-    username: h.nick,
-    activityName: null != d ? d.name : "unknown",
-    onJoinStream: f,
-    usernameHook: g
+    compact: m
+  } = e, f = (0, a.Ay)(n), g = null == (t = n.call) ? true : t.duration, h = p(f), _ = o.intl.format(o.t.FKXvaI, {
+    username: f.nick,
+    activityName: null != u ? u.name : "unknown",
+    onJoinStream: d,
+    usernameHook: h
   });
-  return null != m && (E = l.intl.format(l.t.NEFxtd, {
-    username: h.nick,
-    duration: m.humanize(),
-    channelName: u.name,
-    usernameHook: g
-  })), (0, r.jsx)(o.A, {
-    iconNode: null != m ? (0, r.jsx)(i.GT3, {
+  return null != g && (_ = o.intl.format(o.t.NEFxtd, {
+    username: f.nick,
+    duration: g.humanize(),
+    channelName: c.name,
+    usernameHook: h
+  })), (0, r.jsx)(s.A, {
+    iconNode: null != g ? (0, r.jsx)(i.GT3, {
       size: "custom",
       color: "currentColor",
-      width: c,
-      height: c
-    }) : (0, r.jsx)(a.Ay, {
-      size: a.Ay.Sizes.SMALL
+      width: 20,
+      height: 20
+    }) : (0, r.jsx)(l.Ay, {
+      size: l.Ay.Sizes.SMALL
     }),
     timestamp: n.timestamp,
-    compact: _,
-    children: E
+    compact: m,
+    children: _
   })
 }

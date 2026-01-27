@@ -24,8 +24,8 @@ class c extends Chunk439372.A {
       let {
         state: t,
         channelId: n
-      } = e, r = t === o.S7L.RTC_CONNECTED, i = r && !this.prevConnected, l = a.A.getChannel(n), c = null == l ? true : l.getGuildId(), u = this.tempMutedChannel === n;
-      i && null != c && (u ? this.tempMutedChannel = null : (0, s.fh)(c)), this.prevConnected = r
+      } = e, r = t === s.S7L.RTC_CONNECTED, i = r && !this.prevConnected, l = a.A.getChannel(n), c = null == l ? true : l.getGuildId(), u = this.tempMutedChannel === n;
+      i && null != c && (u ? this.tempMutedChannel = null : (0, o.fh)(c)), this.prevConnected = r
     }), l(this, "handleMute", e => {
       let {
         channelId: t

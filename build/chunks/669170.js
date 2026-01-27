@@ -29,7 +29,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -40,8 +40,8 @@ function s(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function s(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -86,11 +86,11 @@ function f(e, t) {
 function p(e, t) {
   let {
     items: n
-  } = t, r = o(a({}, e), {
+  } = t, r = s(a({}, e), {
     items: n,
     focusPath: f(n, e.focusPath)
   });
-  return o(a({}, r), {
+  return s(a({}, r), {
     focusIndex: y(r)
   })
 }
@@ -98,10 +98,10 @@ function p(e, t) {
 function _(e, t) {
   let {
     path: n
-  } = t, r = o(a({}, e), {
+  } = t, r = s(a({}, e), {
     focusPath: f(e.items, n)
   });
-  return o(a({}, r), {
+  return s(a({}, r), {
     focusIndex: y(r)
   })
 }
@@ -112,11 +112,11 @@ function h(e, t) {
   if (null == r) return e;
   let i = (c(r, n) - 1) % r.length;
   if (i < 0 && (i = r.length - 1), null == r[i]) return e;
-  let s = o(a({}, e), {
+  let o = s(a({}, e), {
     focusPath: [...e.focusPath.slice(0, false), r[i].key]
   });
-  return o(a({}, s), {
-    focusIndex: y(s)
+  return s(a({}, o), {
+    focusIndex: y(o)
   })
 }
 
@@ -126,11 +126,11 @@ function m(e, t) {
   if (null == r) return e;
   let i = (c(r, n) + 1) % r.length;
   if (null == r[i]) return e;
-  let s = o(a({}, e), {
+  let o = s(a({}, e), {
     focusPath: [...e.focusPath.slice(0, false), r[i].key]
   });
-  return o(a({}, s), {
-    focusIndex: y(s)
+  return s(a({}, o), {
+    focusIndex: y(o)
   })
 }
 
@@ -139,23 +139,23 @@ function g(e, t) {
   let r = u(e),
     i = d(e);
   if (null == i) return e;
-  let s = i[c(i, r)],
-    l = null == s || null == (n = s.children) ? true : n[0];
+  let o = i[c(i, r)],
+    l = null == o || null == (n = o.children) ? true : n[0];
   if (null == l) return e;
-  let f = o(a({}, e), {
+  let f = s(a({}, e), {
     focusPath: [...e.focusPath, l.key]
   });
-  return o(a({}, f), {
+  return s(a({}, f), {
     focusIndex: y(f)
   })
 }
 
 function E(e, t) {
   if (e.focusPath.length <= 1) return e;
-  let n = o(a({}, e), {
+  let n = s(a({}, e), {
     focusPath: e.focusPath.slice(0, false)
   });
-  return o(a({}, n), {
+  return s(a({}, n), {
     focusIndex: y(n)
   })
 }

@@ -9,15 +9,15 @@ require.d(exports, {
   II: () => w,
   JK: () => _,
   OW: () => y,
-  Pm: () => M,
+  Pm: () => j,
   Qz: () => k,
   RM: () => Y,
   T7: () => S,
-  Uc: () => V,
+  Uc: () => F,
   WQ: () => D,
-  Zc: () => j,
+  Zc: () => M,
   _V: () => C,
-  _w: () => x,
+  _w: () => L,
   aE: () => N,
   cS: () => A,
   gQ: () => p,
@@ -27,7 +27,7 @@ require.d(exports, {
   nh: () => b,
   sj: () => R,
   u6: () => G,
-  x: () => L,
+  x: () => x,
   z0: () => E,
   zL: () => T
 }), require("./457529.js");
@@ -45,7 +45,7 @@ function d(e, t) {
   try {
     let n = c.u0[t.premiumType];
     if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), false;
-    let r = F[n];
+    let r = V[n];
     if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), false;
     return r.skuFeatures.includes(e)
   } catch (e) {
@@ -79,23 +79,23 @@ let p = new f(Chunk83790.w.ANIMATED_EMOJIS),
   R = new f(Chunk83790.w.STREAM_HIGH_QUALITY),
   P = new f(Chunk83790.w.CUSTOM_NOTIFICATION_SOUNDS),
   D = new f("fancyVoiceChannelReactions"),
-  x = new f("installPremiumApplications"),
-  L = new f("redeemPremiumPerks"),
-  j = new f(Chunk83790.w.VIDEO_FILTER_ASSETS);
+  L = new f("installPremiumApplications"),
+  x = new f("redeemPremiumPerks"),
+  M = new f(Chunk83790.w.VIDEO_FILTER_ASSETS);
 new Chunk124856.A(Chunk83790.w.INCREASED_FILE_UPLOAD_SIZE, Chunk125584.f);
-let M = new f(Chunk83790.w.INCREASED_GUILD_LIMIT),
+let j = new f(Chunk83790.w.INCREASED_GUILD_LIMIT),
   k = new f(Chunk83790.w.INCREASED_MESSAGE_LENGTH),
   U = new f("increasedVideoUploadQuality"),
   G = new f("uploadLargeFiles"),
-  V = new f("warpPrivateBrowsing"),
-  F = Object.freeze({
-    [Chunk788868.pe.TIER_0]: new Chunk594579.A(Chunk788868.pe.TIER_0, [p, _, h, v, j, U, G, S]),
+  F = new f("warpPrivateBrowsing"),
+  V = Object.freeze({
+    [Chunk788868.pe.TIER_0]: new Chunk594579.A(Chunk788868.pe.TIER_0, [p, _, h, v, M, U, G, S]),
     [Chunk788868.pe.TIER_1]: new Chunk594579.A(Chunk788868.pe.TIER_1, [p, _, y, b, v, C, w, D, U, G, S]),
-    [Chunk788868.pe.TIER_2]: new Chunk594579.A(Chunk788868.pe.TIER_2, [p, _, h, m, g, y, b, O, v, A, T, C, N, w, R, D, x, L, j, M, k, U, G, S, I, P, E, V])
+    [Chunk788868.pe.TIER_2]: new Chunk594579.A(Chunk788868.pe.TIER_2, [p, _, h, m, g, y, b, O, v, A, T, C, N, w, R, D, L, x, M, j, k, U, G, S, I, P, E, F])
   }),
-  B = [C, N, V],
-  H = [V];
+  B = [C, N, F],
+  H = [F];
 
 function Y(e, t, n) {
-  return !((0, o.Z)("canUserUse", t) || null != t && t.isPremiumWithFractionalPremiumOnly() && B.includes(e) || n && H.includes(e)) && e.getFeatureValue(t)
+  return !((0, s.Z)("canUserUse", t) || null != t && t.isPremiumWithFractionalPremiumOnly() && B.includes(e) || n && H.includes(e)) && e.getFeatureValue(t)
 }

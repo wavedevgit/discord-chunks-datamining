@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   ZR: () => W,
-  gj: () => F
+  gj: () => V
 }), require("./896048.js"), require("./321073.js"), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk313961 = require("./313961.js"),
@@ -51,7 +51,7 @@ function G(e, t, n) {
   }) : e[t] = n, e
 }
 
-function V(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,9 +63,9 @@ function V(e) {
   }
   return e
 }
-let F = {
+let V = {
   key: Chunk166532.pn.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, r.jsx)(K, V({}, e)),
+  renderStep: e => (0, r.jsx)(K, F({}, e)),
   options: {
     isLargeModal: true,
     useBreadcrumbLabel: () => k.intl.string(k.t["W685+b"])
@@ -73,25 +73,25 @@ let F = {
 };
 
 function B(e) {
-  let t = (0, o.bG)([v.A], () => v.A.isConnected() ? v.A.getChannelId() : null),
+  let t = (0, s.bG)([v.A], () => v.A.isConnected() ? v.A.getChannelId() : null),
     [n, r] = i.useState([]);
   return i.useEffect(() => {
     let n = null != t ? c.A.getParticipants(t) : [],
       i = [],
       a = new Set;
-    for (let t of n) !(0, L.Xw)(t) && !(0, L.Ay)(t) || t.user.id === e || a.has(t.user.id) || (a.add(t.user.id), i.push(t));
-    i.sort((e, t) => (0, L.Ay)(e) && !(0, L.Ay)(t) ? false : (0, L.Ay)(t) && !(0, L.Ay)(e) ? 1 : 0), r(i.map(e => e.user))
+    for (let t of n) !(0, x.Xw)(t) && !(0, x.Ay)(t) || t.user.id === e || a.has(t.user.id) || (a.add(t.user.id), i.push(t));
+    i.sort((e, t) => (0, x.Ay)(e) && !(0, x.Ay)(t) ? false : (0, x.Ay)(t) && !(0, x.Ay)(e) ? 1 : 0), r(i.map(e => e.user))
   }, [t, e]), n
 }
 
 function H(e, t, n) {
   let r = (0, d.A)(),
     a = B(e),
-    l = (0, o.yK)([A.default], () => {
+    l = (0, s.yK)([A.default], () => {
       var e;
       return null != (e = null == n ? true : n.map(A.default.getUser).filter(S.Vq)) ? e : []
     }, [n]);
-  return i.useMemo(() => s().uniqWith([...null != t ? [t] : [], ...l, ...a, ...r], (e, t) => e.id === t.id), [t, l, a, r])
+  return i.useMemo(() => o().uniqWith([...null != t ? [t] : [], ...l, ...a, ...r], (e, t) => e.id === t.id), [t, l, a, r])
 }
 
 function Y(e) {
@@ -100,15 +100,15 @@ function Y(e) {
     onBackClick: n,
     showBackButton: i = false,
     disabled: a = false,
-    loading: s = false
+    loading: o = false
   } = e, {
-    hasPaymentSources: o
-  } = (0, _.P5)(), c = o ? h.pn.REVIEW : h.pn.ADD_PAYMENT_STEPS;
+    hasPaymentSources: s
+  } = (0, _.P5)(), c = s ? h.pn.REVIEW : h.pn.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Button, {
       onClick: () => t(c),
       disabled: a,
-      loading: s,
+      loading: o,
       text: k.intl.string(k.t.XiOHRX)
     }), i ? (0, r.jsx)(y.A, {
       onClick: n
@@ -122,7 +122,7 @@ let W = e => {
   } = e, {
     customGiftMessage: i = "",
     setCustomGiftMessage: a,
-    giftRecipient: s,
+    giftRecipient: o,
     emojiConfetti: c,
     soundEffect: d,
     setEmojiConfetti: f,
@@ -132,20 +132,20 @@ let W = e => {
   } = (0, p.Pv)(), {
     selectedSkuId: v,
     application: S
-  } = (0, _.P5)(), N = (0, o.bG)([A.default], () => A.default.getCurrentUser()), w = H(null == N ? true : N.id, s, y), x = (0, o.bG)([I.A], () => null != v ? I.A.get(v) : null, [v]), L = (0, C.fq)(x), G = (0, C.xf)(x), V = (0, P.j)(x, {
+  } = (0, _.P5)(), N = (0, s.bG)([A.default], () => A.default.getCurrentUser()), w = H(null == N ? true : N.id, o, y), L = (0, s.bG)([I.A], () => null != v ? I.A.get(v) : null, [v]), x = (0, C.fq)(L), G = (0, C.xf)(L), F = (0, P.j)(L, {
     shouldFetchIfMissing: true
-  }), F = async (e, t) => {}, B = () => (0, r.jsx)(g.A, {
+  }), V = async (e, t) => {}, B = () => (0, r.jsx)(g.A, {
     onTextChange: e => null == a ? true : a(e),
     pendingText: i,
     currentText: i,
     disableThemedBackground: true,
     className: U.iX,
     innerClassName: U.pt
-  }), Y = () => null != s && (m === j.vQ.USER_PROFILE_WISHLIST || m === j.vQ.DM_CHANNEL_WISHLIST) ? (0, r.jsx)(b.Z, {
-    giftRecipient: s
+  }), Y = () => null != o && (m === M.vQ.USER_PROFILE_WISHLIST || m === M.vQ.DM_CHANNEL_WISHLIST) ? (0, r.jsx)(b.Z, {
+    giftRecipient: o
   }) : (0, r.jsx)(u.A, {
     selectedSkuId: v,
-    validateSelectedGift: F,
+    validateSelectedGift: V,
     recipients: w
   }), W = e => {
     null != h && h(null == e ? true : e)
@@ -153,11 +153,11 @@ let W = e => {
     var e;
     return (0, r.jsxs)("div", {
       className: U.mT,
-      children: [null != L && (0, r.jsx)(D.A, {
+      children: [null != x && (0, r.jsx)(D.A, {
         containerClassName: U.T3,
-        cardImage: L,
+        cardImage: x,
         cardBackgroundImage: G,
-        altText: null != (e = null == x ? true : x.name) ? e : "",
+        altText: null != (e = null == L ? true : L.name) ? e : "",
         shape: "square"
       }), (0, r.jsxs)("div", {
         className: U._T,
@@ -172,8 +172,8 @@ let W = e => {
     })
   }, q = () => {
     var e, t, n, i;
-    if (null == x) return null;
-    let a = (0, T.$g)(null != (e = null == (n = x.price) ? true : n.amount) ? e : 0, null != (t = null == (i = x.price) ? true : i.currency) ? t : M.Yr.USD);
+    if (null == L) return null;
+    let a = (0, T.$g)(null != (e = null == (n = L.price) ? true : n.amount) ? e : 0, null != (t = null == (i = L.price) ? true : i.currency) ? t : j.Yr.USD);
     return (0, r.jsxs)("div", {
       className: U.AN,
       children: [(0, r.jsx)(l.zEo, {
@@ -183,11 +183,11 @@ let W = e => {
         className: U.Wx,
         children: [(0, r.jsx)("div", {
           className: U.Xb,
-          children: null != x && null != L && (0, r.jsx)(D.A, {
+          children: null != L && null != x && (0, r.jsx)(D.A, {
             containerClassName: U.Iy,
-            cardImage: L,
+            cardImage: x,
             cardBackgroundImage: G,
-            altText: x.name,
+            altText: L.name,
             shape: "square"
           })
         }), (0, r.jsxs)("div", {
@@ -196,7 +196,7 @@ let W = e => {
             application: S
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
-            children: x.name
+            children: L.name
           })]
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
@@ -206,10 +206,10 @@ let W = e => {
     })
   }, Z = () => (0, r.jsxs)("div", {
     className: U.Tc,
-    children: [Y(), B(), q(), null != V && null != x && (0, r.jsx)(z, {
+    children: [Y(), B(), q(), null != F && null != L && (0, r.jsx)(z, {
       handleClose: n,
-      sku: x,
-      guild: V
+      sku: L,
+      guild: F
     })]
   });
   return {
@@ -221,7 +221,7 @@ let W = e => {
     getRightColumnComponent: Z,
     onStepChange: t,
     onBackClick: n,
-    disabled: null == s || s.id === (null == N ? true : N.id) || i.length > j.Jo
+    disabled: null == o || o.id === (null == N ? true : N.id) || i.length > M.Jo
   }
 };
 
@@ -232,8 +232,8 @@ function K(e) {
   } = e, {
     renderStepBody: i,
     onStepChange: a,
-    onBackClick: s,
-    disabled: o
+    onBackClick: o,
+    disabled: s
   } = W({
     handleStepChange: t,
     handleClose: n
@@ -249,8 +249,8 @@ function K(e) {
         className: U.qr,
         children: (0, r.jsx)(Y, {
           onStepChange: a,
-          onBackClick: s,
-          disabled: o
+          onBackClick: o,
+          disabled: s
         })
       })
     })]
@@ -262,15 +262,15 @@ function z(e) {
     handleClose: t,
     guild: n,
     sku: a
-  } = e, s = i.useCallback(() => {
+  } = e, o = i.useCallback(() => {
     (0, w.X)({
       guildId: n.id
     })
-  }, [n.id]), o = i.useCallback(() => {
+  }, [n.id]), s = i.useCallback(() => {
     var e;
     t();
     let r = null == (e = N.A.getStorefrontState(n.id)) ? true : e.activePage;
-    window.location.pathname.includes(x.BVt.CHANNELS_GAME_SHOP(n.id, null != r ? r : 0, a.id)) || ((0, l.s7G)(), (0, w.default)({
+    window.location.pathname.includes(L.BVt.CHANNELS_GAME_SHOP(n.id, null != r ? r : 0, a.id)) || ((0, l.s7G)(), (0, w.default)({
       guildId: n.id,
       pageIndex: null != r ? r : 0,
       skuId: a.id,
@@ -281,8 +281,8 @@ function z(e) {
     className: U.$O,
     children: (0, r.jsx)(l.QWc, {
       text: n.id === (0, C.zf)() ? k.intl.string(k.t.nyIcya) : k.intl.string(k.t.ImioFL),
-      onMouseDown: s,
-      onClick: o,
+      onMouseDown: o,
+      onClick: s,
       textVariant: "text-sm/medium",
       lineClamp: true
     })

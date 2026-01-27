@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 5661, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 5661, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   G: () => s
 });
@@ -11,7 +10,7 @@ let s = () => (0, r.jsx)("div", {
   className: i.k,
   children: (0, r.jsx)("div", {
     children: (0, r.jsx)("img", {
-      src: a.A,
+      src: l.A,
       alt: "",
       className: i.S
     })

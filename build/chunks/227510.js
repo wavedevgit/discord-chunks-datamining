@@ -21,7 +21,7 @@ function u(e, t) {
       var n, r, i, a;
       return null != (a = null == (n = (r = t.collection).getTextValue) ? true : n.call(r, e)) ? a : null == (i = t.collection.getItem(e)) ? true : i.textValue
     }
-  } = e, u = (0, o.o)(c(r.A), "@react-aria/grid"), f = t.selectionManager.rawSelection, p = (0, l.useRef)(f), _ = (0, a.J)(() => {
+  } = e, u = (0, s.o)(c(r.A), "@react-aria/grid"), f = t.selectionManager.rawSelection, p = (0, l.useRef)(f), _ = (0, a.J)(() => {
     var e;
     if (!t.selectionManager.isFocused || f === p.current) {
       p.current = f;
@@ -29,13 +29,13 @@ function u(e, t) {
     }
     let r = d(f, p.current),
       a = d(p.current, f),
-      s = "replace" === t.selectionManager.selectionBehavior,
-      o = [];
-    if (1 === t.selectionManager.selectedKeys.size && s) {
+      o = "replace" === t.selectionManager.selectionBehavior,
+      s = [];
+    if (1 === t.selectionManager.selectedKeys.size && o) {
       let e = t.selectionManager.selectedKeys.keys().next().value;
       if (null != e && t.collection.getItem(e)) {
         let t = n(e);
-        t && o.push(u.format("selectedItem", {
+        t && s.push(u.format("selectedItem", {
           item: t
         }))
       }
@@ -43,7 +43,7 @@ function u(e, t) {
       let e = r.keys().next().value;
       if (null != e) {
         let t = n(e);
-        t && o.push(u.format("selectedItem", {
+        t && s.push(u.format("selectedItem", {
           item: t
         }))
       }
@@ -51,16 +51,16 @@ function u(e, t) {
       let e = a.keys().next().value;
       if (null != e && t.collection.getItem(e)) {
         let t = n(e);
-        t && o.push(u.format("deselectedItem", {
+        t && s.push(u.format("deselectedItem", {
           item: t
         }))
       }
     }
-    "multiple" === t.selectionManager.selectionMode && (0 === o.length || "all" === f || f.size > 1 || "all" === p.current || (null == (e = p.current) ? true : e.size) > 1) && o.push("all" === f ? u.format("selectedAll") : u.format("selectedCount", {
+    "multiple" === t.selectionManager.selectionMode && (0 === s.length || "all" === f || f.size > 1 || "all" === p.current || (null == (e = p.current) ? true : e.size) > 1) && s.push("all" === f ? u.format("selectedAll") : u.format("selectedCount", {
       count: f.size
-    })), o.length > 0 && (0, i.iP)(o.join(" ")), p.current = f
+    })), s.length > 0 && (0, i.iP)(s.join(" ")), p.current = f
   });
-  (0, s.w)(() => {
+  (0, o.w)(() => {
     if (t.selectionManager.isFocused) _();
     else {
       let e = requestAnimationFrame(_);

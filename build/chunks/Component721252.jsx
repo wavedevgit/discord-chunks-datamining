@@ -64,7 +64,7 @@ let g = {
   },
   E = {
     key: Chunk166532.pn.ADD_PAYMENT_STEPS,
-    renderStep: e => (0, r.jsx)(s.x, m(_({}, e), {
+    renderStep: e => (0, r.jsx)(o.x, m(_({}, e), {
       breadcrumbSteps: [a.pn.ADD_PAYMENT_STEPS, a.pn.REVIEW, a.pn.CONFIRM],
       onReturn: () => {
         0 === Object.keys(i.A.paymentSources).length ? e.handleClose() : e.handleStepChange(a.pn.REVIEW, {
@@ -82,7 +82,7 @@ let g = {
   },
   b = {
     key: Chunk166532.pn.AWAITING_AUTHENTICATION,
-    renderStep: () => (0, r.jsx)(o.A, {}),
+    renderStep: () => (0, r.jsx)(s.A, {}),
     options: {
       renderHeader: true
     }

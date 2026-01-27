@@ -9,7 +9,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk954571 = require("./954571.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -50,10 +50,10 @@ function u(e, t) {
 let d = e => {
   let {
     analyticsLocations: t,
-    displayProfile: o,
+    displayProfile: s,
     location: c
   } = e;
-  null == c && (c = t[t.length - 1]), a.default.track(s.HAw.OPEN_MODAL, {
+  null == c && (c = t[t.length - 1]), a.default.track(o.HAw.OPEN_MODAL, {
     type: "Tiered Tenure Badge Details",
     location_stack: t,
     location: c,
@@ -63,7 +63,7 @@ let d = e => {
       default: e
     } = await n.e("77641").then(n.bind(n, 384048));
     return t => (0, r.jsx)(e, u(l({}, t), {
-      displayProfile: o
+      displayProfile: s
     }))
   })
 }

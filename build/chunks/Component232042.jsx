@@ -19,7 +19,7 @@ let u = function(e) {
   } = e, i = null;
   switch (t) {
     case "voice":
-      i = (0, r.jsx)(s.HKD, {
+      i = (0, r.jsx)(o.HKD, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -27,7 +27,7 @@ let u = function(e) {
       });
       break;
     case "voice-locked":
-      i = (0, r.jsx)(s.XAi, {
+      i = (0, r.jsx)(o.XAi, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -35,7 +35,7 @@ let u = function(e) {
       });
       break;
     case "stage":
-      i = (0, r.jsx)(s.qux, {
+      i = (0, r.jsx)(o.qux, {
         size: "lg",
         color: "currentColor",
         className: c.Kk,
@@ -43,7 +43,7 @@ let u = function(e) {
       });
       break;
     case "stage-locked":
-      i = (0, r.jsx)(s.XAi, {
+      i = (0, r.jsx)(o.XAi, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -51,7 +51,7 @@ let u = function(e) {
       });
       break;
     case "thread":
-      i = (0, r.jsx)(s.ysw, {
+      i = (0, r.jsx)(o.ysw, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -59,7 +59,7 @@ let u = function(e) {
       });
       break;
     case "text":
-      i = (0, r.jsx)(s.N$i, {
+      i = (0, r.jsx)(o.N$i, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -67,7 +67,7 @@ let u = function(e) {
       });
       break;
     case "forum":
-      i = (0, r.jsx)(s.bSJ, {
+      i = (0, r.jsx)(o.bSJ, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -75,7 +75,7 @@ let u = function(e) {
       });
       break;
     case "post":
-      i = (0, r.jsx)(s.oyn, {
+      i = (0, r.jsx)(o.oyn, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -84,7 +84,7 @@ let u = function(e) {
       break;
     case "home":
     case "guide":
-      i = (0, r.jsx)(s.Zf8, {
+      i = (0, r.jsx)(o.Zf8, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -93,7 +93,7 @@ let u = function(e) {
       break;
     case "browse":
     case "customize":
-      i = (0, r.jsx)(s.kiI, {
+      i = (0, r.jsx)(o.kiI, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -101,7 +101,7 @@ let u = function(e) {
       });
       break;
     case "message":
-      i = (0, r.jsx)(s.oyn, {
+      i = (0, r.jsx)(o.oyn, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -109,7 +109,7 @@ let u = function(e) {
       });
       break;
     case "locked":
-      i = (0, r.jsx)(s.XAi, {
+      i = (0, r.jsx)(o.XAi, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -117,7 +117,7 @@ let u = function(e) {
       });
       break;
     case "media":
-      i = (0, r.jsx)(s.xfq, {
+      i = (0, r.jsx)(o.xfq, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -125,7 +125,7 @@ let u = function(e) {
       });
       break;
     case "linked-roles":
-      i = (0, r.jsx)(s.qYV, {
+      i = (0, r.jsx)(o.qYV, {
         size: "md",
         color: "currentColor",
         className: c.Kk,
@@ -136,7 +136,7 @@ let u = function(e) {
     className: a()("channelWithIcon", {
       [c.bV]: "text" === t
     }),
-    children: [(0, r.jsx)(o.A, {
+    children: [(0, r.jsx)(s.A, {
       children: i
     }), null != n && "" !== n ? (0, r.jsx)("span", {
       className: c.UU,

@@ -2,12 +2,12 @@
 /** chunk id: 746539, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => s
+  M: () => o
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk158954 = require("./158954.js");
-let s = {
+let o = {
   title: "Switch",
   stories: [{
     id: "baseSwitch",
@@ -16,14 +16,14 @@ let s = {
       let {
         disabled: t,
         hasIcon: n,
-        label: s,
-        description: o,
+        label: o,
+        description: s,
         required: l,
         errorMessage: c
       } = e, [u, d] = i.useState(false);
       return (0, r.jsx)(a.Ad5, {
-        label: s,
-        description: o,
+        label: o,
+        description: s,
         required: l,
         errorMessage: c,
         hasIcon: n,

@@ -19,10 +19,10 @@ let c = {
       });
       return i.h.dispatch({
         type: "HAVEN_CONNECT",
-        room: (0, o.xf)(t.body)
+        room: (0, s.xf)(t.body)
       }), t
     } catch (e) {
-      s.A.captureException(e)
+      o.A.captureException(e)
     }
   },
   disconnect: async e => {
@@ -40,7 +40,7 @@ let c = {
           userId: t.id
         })
       }
-      s.A.captureException(t)
+      o.A.captureException(t)
     }
   },
   update: async (e, t) => {
@@ -60,7 +60,7 @@ let c = {
         rejectWithError: true
       })
     } catch (e) {
-      s.A.captureException(e)
+      o.A.captureException(e)
     }
   },
   getAssets: async () => {
@@ -70,7 +70,7 @@ let c = {
         rejectWithError: true
       })
     } catch (e) {
-      return s.A.captureException(e), null
+      return o.A.captureException(e), null
     }
   }
 }

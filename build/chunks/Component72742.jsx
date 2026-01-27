@@ -29,12 +29,12 @@ function m(e) {
   } = (0, f.E)(), E = g === _.d.MODAL_V2, y = (0, l.UW)(t), {
     channelId: b,
     guildId: O
-  } = null != y ? y : {}, v = (0, i.bG)([d.A], () => null != b && d.A.isInChannel(b), [b]), A = (0, i.bG)([c.A], () => null != b ? c.A.getChannel(b) : null, [b]), I = (0, i.bG)([u.A], () => null != A && u.A.can(o.Gk, A), [A]);
+  } = null != y ? y : {}, v = (0, i.bG)([d.A], () => null != b && d.A.isInChannel(b), [b]), A = (0, i.bG)([c.A], () => null != b ? c.A.getChannel(b) : null, [b]), I = (0, i.bG)([u.A], () => null != A && u.A.can(s.Gk, A), [A]);
   if (!(0, l.Cy)(t) || !I || null == O || null == b) return null;
   let S = e => {
     e.stopPropagation(), null == n || n({
       action: "PRESS_STAGE_CHANNEL_LISTEN_BUTTON"
-    }), s.CH(O, b), (0, a.iN)(b), null == m || m()
+    }), o.CH(O, b), (0, a.iN)(b), null == m || m()
   };
   return (0, r.jsx)(p.FD, {
     text: h.intl.string(h.t.ZYO5OK),

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   Chunk607399 = require("./607399.js"),
   Chunk311907 = require("./311907.js"),
@@ -36,7 +36,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk698279 = require("./698279.js"),
   Chunk111314 = require("./111314.js");
 
-function L(e) {
+function x(e) {
   let {
     disabled: t,
     channel: n
@@ -50,21 +50,21 @@ function L(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   var t, n, i, a, g, E, y, b;
   let {
     type: C,
     disabled: N,
-    channel: j,
+    channel: M,
     handleSubmit: k,
     isEmpty: U,
     showAllButtons: G
-  } = e, V = (0, c.bG)([d.A], () => d.A.isSubmitButtonEnabled), F = M(j.id, C, U), {
+  } = e, F = (0, c.bG)([d.A], () => d.A.isSubmitButtonEnabled), V = j(M.id, C, U), {
     activeCommand: B,
     activeCommandOption: H
   } = (0, c.cf)([p.A], () => ({
-    activeCommand: p.A.getActiveCommand(j.id),
-    activeCommandOption: p.A.getActiveOption(j.id)
+    activeCommand: p.A.getActiveCommand(M.id),
+    activeCommandOption: p.A.getActiveOption(M.id)
   })), {
     paymentsBlocked: Y
   } = _.A.useExperiment({
@@ -77,81 +77,81 @@ function j(e) {
     reducedGap: z
   } = A.C.useConfig({
     location: "ChannelTextAreaButtons"
-  }), q = (0, m.RQ)(e => e.lastActiveView), Z = (null == (t = C.gifs) ? true : t.button) != null && (null == (n = C.stickers) ? true : n.button) != null && null != q ? q : D.kx.EMOJI, X = [], Q = !j.isDM() || true === j.recipients || j.recipients.length > 1, J = (0, c.bG)([O.default], () => Q ? null : O.default.getUser(j.recipients[0])), $ = (0, f.H)({
-    channel: j,
+  }), q = (0, m.RQ)(e => e.lastActiveView), Z = (null == (t = C.gifs) ? true : t.button) != null && (null == (n = C.stickers) ? true : n.button) != null && null != q ? q : D.kx.EMOJI, Q = [], X = !M.isDM() || true === M.recipients || M.recipients.length > 1, J = (0, c.bG)([O.default], () => X ? null : O.default.getUser(M.recipients[0])), $ = (0, f.H)({
+    channel: M,
     chatInputType: C
-  }), ee = (null == (i = C.submit) ? true : i.button) != null && ((null == (a = C.submit) ? true : a.ignorePreference) || V);
-  if (!l.Fr && ((null == (E = C.gifts) ? true : E.button) != null && null == B && !Y && (null == J || v.Ay.isPremiumEligible(J)) && X.push({
+  }), ee = (null == (i = C.submit) ? true : i.button) != null && ((null == (a = C.submit) ? true : a.ignorePreference) || F);
+  if (!l.Fr && ((null == (E = C.gifts) ? true : E.button) != null && null == B && !Y && (null == J || v.Ay.isPremiumEligible(J)) && Q.push({
       key: "gift",
-      node: (0, r.jsx)(L, {
+      node: (0, r.jsx)(x, {
         disabled: N,
-        channel: j
+        channel: M
       }, "gift")
-    }), (null == (y = C.gifs) ? true : y.button) != null && null == B && G && X.push({
+    }), (null == (y = C.gifs) ? true : y.button) != null && null == B && G && Q.push({
       key: "gif",
       node: (0, r.jsx)(T.A, {
         disabled: N,
         type: C,
-        channel: j
+        channel: M
       }, "gif")
-    }), (null == (b = C.stickers) ? true : b.button) != null && null == B && G && X.push({
+    }), (null == (b = C.stickers) ? true : b.button) != null && null == B && G && Q.push({
       key: "sticker",
       node: (0, r.jsx)(R.A, {
         disabled: N,
         type: C,
-        channel: j
+        channel: M
       }, "sticker")
-    }), X.push({
+    }), Q.push({
       key: "upload",
       node: (0, r.jsx)(P.n, {
         disabled: N,
         inputType: C,
-        channel: j
+        channel: M
       }, "upload")
-    }), C !== I.oU.NORMAL || ee || X.push({
+    }), C !== I.oU.NORMAL || ee || Q.push({
       key: "spacer",
       node: (0, r.jsx)("div", {
-        className: x.jH
+        className: L.jH
       }, "spacer")
     })), (null == (g = C.emojis) ? true : g.button) != null && (null == B || null != H && H.type !== u.n4.ATTACHMENT)) {
     let e = K ? Z : D.kx.EMOJI;
-    X.push({
+    Q.push({
       key: "emoji",
       node: (0, r.jsx)(S.A, {
         disabled: N,
         type: C,
         pickerView: e,
-        channelId: j.id
+        channelId: M.id
       }, "emoji")
     })
   }
-  $ && X.push({
+  $ && Q.push({
     key: "appLauncher",
     node: (0, r.jsx)(h.A, {
-      channelId: j.id,
+      channelId: M.id,
       type: C
     }, "appLauncher")
-  }), ee && X.push({
+  }), ee && Q.push({
     key: "submit",
     node: (0, r.jsx)(w.A, {
       onClick: k,
-      disabled: N || F
+      disabled: N || V
     }, "submit")
   });
-  let et = (0, o.chain)(X).filter(e => null != W[e.key]).sortBy(e => W[e.key]).map(e => e.node).value();
+  let et = (0, s.chain)(Q).filter(e => null != W[e.key]).sortBy(e => W[e.key]).map(e => e.node).value();
   return 0 === et.length ? null : (0, r.jsx)("div", {
-    className: s()(x.Uo, {
-      [x.d5]: z
+    className: o()(L.Uo, {
+      [L.d5]: z
     }),
     children: et
   })
 }
 
-function M(e, t, n) {
+function j(e, t, n) {
   return (0, c.bG)([y.A, b.A], () => {
     let r = y.A.getStickerPreview(e, t.drafts.type),
       i = null != r && r.length > 0;
     return 0 === b.A.getUploads(e, t.drafts.type).length && n && !i
   })
 }
-let k = Chunk64700.memo(j)
+let k = Chunk64700.memo(M)

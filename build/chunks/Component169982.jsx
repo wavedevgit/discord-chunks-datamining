@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk481613 = require("./481613.js"),
-  s = require.n(Chunk481613),
+  o = require.n(Chunk481613),
   Chunk422998 = require("./422998.js"),
   Chunk311907 = require("./311907.js"),
   Chunk838677 = require("./838677.js"),
@@ -44,7 +44,7 @@ let A = Chunk311907.Ay.connectStores([Chunk531685.A], () => ({
 class I extends Chunk64700.PureComponent {
   getPlatform() {
     var e;
-    let t = null == (e = s().os) ? true : e.family;
+    let t = null == (e = o().os) ? true : e.family;
     return null != t && /^win/i.test(t) ? m.PlatformTypes.WINDOWS : null != t && /darwin|os x/i.test(t) ? m.PlatformTypes.OSX : m.PlatformTypes.LINUX
   }
   componentDidMount() {
@@ -61,7 +61,7 @@ class I extends Chunk64700.PureComponent {
       })
     });
     return (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(o.mg, {
+      children: [(0, r.jsx)(s.mg, {
         children: (0, r.jsx)("html", {
           className: (0, u.mo9)(y.NJ8.DARK)
         })

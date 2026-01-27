@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk900283 = require("./900283.js"),
   Chunk563014 = require("./563014.js"),
   Chunk397927 = require("./397927.js"),
@@ -67,18 +67,18 @@ function m(e) {
     className: b
   } = e, {
     onInteraction: O
-  } = i.useContext(o.x), v = i.useRef(null), A = i.useId();
+  } = i.useContext(s.x), v = i.useRef(null), A = i.useId();
   i.useEffect(() => {
     g && (0, l.Y)(v)
   }, [g]);
   let I = i.useCallback(e => {
     y(e), null == O || O({
-      type: o.Q.SWITCH
+      type: s.Q.SWITCH
     })
   }, [y, O]);
   return (0, r.jsxs)("div", h(p({
     ref: v,
-    className: s()(d.item, d.switchItem, d.hideInteraction, u.jV[t], b, {
+    className: o()(d.item, d.switchItem, d.hideInteraction, u.jV[t], b, {
       [d.disabled]: m
     }),
     "aria-checked": _,
@@ -93,7 +93,7 @@ function m(e) {
           children: n
         }), null != a && (0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
-          className: s()(d.subtext, {
+          className: o()(d.subtext, {
             [d.subtextLineClamp]: null != f
           }),
           lineClamp: f,

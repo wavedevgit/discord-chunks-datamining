@@ -20,21 +20,21 @@ function c(e) {
     onClickViewButton: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.wx,
+    className: s.wx,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "text-strong",
       children: t
     }), null != n && null != i && (0, r.jsx)(a.DUT, {
-      className: o.Vc,
+      className: s.Vc,
       onClick: i,
-      "aria-label": s.intl.formatToPlainString(s.t["bj/2kV"], {
+      "aria-label": o.intl.formatToPlainString(o.t["bj/2kV"], {
         title: t
       }),
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "text-brand",
-        children: 0 === n ? s.intl.format(s.t.gVw57p, {}) : s.intl.string(s.t.nPGLFQ)
+        children: 0 === n ? o.intl.format(o.t.gVw57p, {}) : o.intl.string(o.t.nPGLFQ)
       })
     })]
   })
@@ -44,10 +44,10 @@ c.buttonTypes = l, c.Loading = function() {
     width: "".concat(10 + 20 * Math.random(), "%")
   }), []);
   return (0, r.jsx)("div", {
-    className: o.uH,
+    className: s.uH,
     style: e,
     children: (0, r.jsx)(a.Text, {
-      className: o.R,
+      className: s.R,
       variant: "text-md/medium",
       color: "text-strong",
       children: "_"

@@ -23,9 +23,9 @@ let c = e => {
     }) : null
   },
   u = Chunk311907.Ay.connectStores([Chunk49463.A, Chunk961350.default], () => {
-    let e = o.default.getToken();
+    let e = s.default.getToken();
     return {
       token: e,
-      hasLoadedExperiments: null != e || s.A.hasLoadedExperiments
+      hasLoadedExperiments: null != e || o.A.hasLoadedExperiments
     }
   })(c)

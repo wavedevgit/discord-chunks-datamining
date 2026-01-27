@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk985623 = require("./985623.js"),
-  o = require.n(Chunk985623),
+  s = require.n(Chunk985623),
   Chunk296489 = require("./296489.js"),
   c = require.n(Chunk296489),
   Chunk340287 = require("./340287.js"),
@@ -74,10 +74,10 @@ class C extends(r = Chunk64700.Component) {
     e.shouldShow, this.props.shouldShow;
     let n = this.shouldShowPopout(this.props, this.state);
     if ((this.shouldShowPopout(e, t) !== n || t.isLoading !== this.state.isLoading || e.ignoreModalClicks !== this.props.ignoreModalClicks) && (n ? this.setupShowPopout() : this.unsubscribe()), this.props.scrollBehavior !== e.scrollBehavior) {
-      var r, i, a, s;
+      var r, i, a, o;
       let e = this.getDomElement();
       if (null == e) return;
-      null == (r = e.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true), null == (i = e.ownerDocument) || i.removeEventListener("scroll", this.handleStickyScroll, true), "close" === this.props.scrollBehavior ? null == (a = e.ownerDocument) || a.addEventListener("scroll", this.handleScroll, true) : "sticky" === this.props.scrollBehavior && (null == (s = e.ownerDocument) || s.addEventListener("scroll", this.handleStickyScroll, true))
+      null == (r = e.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true), null == (i = e.ownerDocument) || i.removeEventListener("scroll", this.handleStickyScroll, true), "close" === this.props.scrollBehavior ? null == (a = e.ownerDocument) || a.addEventListener("scroll", this.handleScroll, true) : "sticky" === this.props.scrollBehavior && (null == (o = e.ownerDocument) || o.addEventListener("scroll", this.handleStickyScroll, true))
     }
   }
   getDomElement() {
@@ -137,8 +137,8 @@ class C extends(r = Chunk64700.Component) {
       nudgeAlignIntoViewport: n,
       useRawTargetDimensions: r,
       spacing: a,
-      offset: s,
-      autoInvert: o,
+      offset: o,
+      autoInvert: s,
       fixed: l,
       positionKey: c,
       disablePointerEvents: u,
@@ -162,8 +162,8 @@ class C extends(r = Chunk64700.Component) {
         nudgeAlignIntoViewport: n,
         useRawTargetDimensions: r,
         spacing: a,
-        offset: s,
-        autoInvert: o,
+        offset: o,
+        autoInvert: s,
         fixed: l,
         positionKey: null != c ? c : String(_),
         disablePointerEvents: u,
@@ -281,7 +281,7 @@ class C extends(r = Chunk64700.Component) {
       (null == t ? true : t.contains(this.domElementRef.current)) && this.close(true, "system:scroll")
     }), O(this, "handleEscapeClose", e => {
       this.close(e, "user:escape")
-    }), O(this, "handleStickyScroll", o()(() => {
+    }), O(this, "handleStickyScroll", s()(() => {
       requestAnimationFrame(() => {
         let e = this.popoutRef.current;
         if (null != e && this.shouldShowPopout(this.props, this.state)) {
@@ -300,9 +300,9 @@ O(C, "defaultProps", {
   closeOnClickOutside: true
 }), O(C, "contextType", Chunk267102.Ay);
 let N = e => {
-  var t, n, r, i, a, s;
-  let o = e.getBoundingClientRect(),
+  var t, n, r, i, a, o;
+  let s = e.getBoundingClientRect(),
     l = null != (t = null == (i = e.ownerDocument) || null == (r = i.defaultView) ? true : r.innerHeight) ? t : 0,
-    c = null != (n = null == (s = e.ownerDocument) || null == (a = s.defaultView) ? true : a.innerWidth) ? n : 0;
-  return o.top < l && o.bottom > 0 && o.left < c && o.right > 0
+    c = null != (n = null == (o = e.ownerDocument) || null == (a = o.defaultView) ? true : a.innerWidth) ? n : 0;
+  return s.top < l && s.bottom > 0 && s.left < c && s.right > 0
 }

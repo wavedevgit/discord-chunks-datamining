@@ -19,14 +19,14 @@ function d(e) {
     recurrenceId: n,
     guild: d,
     channel: g
-  } = e, y = null != n, {
+  } = e, E = null != n, {
     canManageGuildEvent: f
-  } = (0, u.nr)(null != g ? g : d), [b, p] = (0, r.yK)([o.Ay], () => [o.Ay.isActive(t), o.Ay.getGuildScheduledEvent(t)]), A = (0, c.A)(n, null == p ? true : p.id), v = null != p && f(p);
-  return y && (null == A ? true : A.is_canceled) && v && (!b || y) ? (0, l.jsx)(i.Drp, {
+  } = (0, o.nr)(null != g ? g : d), [A, y] = (0, r.yK)([u.Ay], () => [u.Ay.isActive(t), u.Ay.getGuildScheduledEvent(t)]), p = (0, c.A)(n, null == y ? true : y.id), b = null != y && f(y);
+  return E && (null == p ? true : p.is_canceled) && b && (!A || E) ? (0, l.jsx)(i.Drp, {
     id: s.intl.string(s.t.b8606G),
     label: s.intl.string(s.t.b8606G),
     action: () => {
-      null != n && null != A && (0, a.A)(A, d.id, t, n)
+      null != n && null != p && (0, a.A)(p, d.id, t, n)
     }
   }) : null
 }

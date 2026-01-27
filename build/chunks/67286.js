@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk643479 = require("./643479.js");
 let i = [6, 7, 99],
   a = {
-    get: s
+    get: o
   };
 
-function s(e, t, n) {
-  if (o(t)) {
+function o(e, t, n) {
+  if (s(t)) {
     t.type = "image/jpeg";
     let i = n + t.JPEGInterchangeFormat.value;
     t.image = e.buffer.slice(i, i + t.JPEGInterchangeFormatLength.value), (0, r.L$)(t, "base64", function() {
@@ -21,6 +21,6 @@ function s(e, t, n) {
   return t
 }
 
-function o(e) {
+function s(e) {
   return e && (true === e.Compression || i.includes(e.Compression.value)) && e.JPEGInterchangeFormat && e.JPEGInterchangeFormat.value && e.JPEGInterchangeFormatLength && e.JPEGInterchangeFormatLength.value
 }

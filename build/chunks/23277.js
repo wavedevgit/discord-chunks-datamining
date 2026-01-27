@@ -13,5 +13,5 @@ module.exports = function(e, t, n, c) {
   var u = t + " Iterator";
   return e.prototype = i(r, {
     next: a(+!c, n)
-  }), s(e, u, false, true), o[u] = l, e
+  }), o(e, u, false, true), s[u] = l, e
 }

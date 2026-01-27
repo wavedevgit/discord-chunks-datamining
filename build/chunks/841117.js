@@ -9,11 +9,11 @@ require.d(exports, {
 let r = e => new Promise(t => setTimeout(t, e)),
   i = 50,
   a = 500,
-  s = 5e3,
-  o = () => Promise.resolve();
+  o = 5e3,
+  s = () => Promise.resolve();
 
 function l(e) {
-  o = e
+  s = e
 }
 async function c(e) {
   let {
@@ -25,6 +25,6 @@ async function c(e) {
   } catch (e) {
     if (console.log(e), l in n.c) throw console.log("Module was found in webpack cache so it has loaded from the network and webpack will not retry"), e;
     if (u >= i) throw e;
-    await r(c), await o(), c = Math.min(s, 2 * c), u++
+    await r(c), await s(), c = Math.min(o, 2 * c), u++
   }
 }

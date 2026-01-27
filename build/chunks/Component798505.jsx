@@ -53,7 +53,7 @@ function d(e, t) {
 function f(e, t, n) {
   var r;
   let {
-    rating: s,
+    rating: o,
     problem: l,
     feedback: c
   } = n;
@@ -64,26 +64,26 @@ function f(e, t, n) {
     guildId: t.guild_id,
     channelId: t.id,
     location: "Summary divider",
-    rating: s
-  }), (0, i.showToast)((0, i.createToast)(o.intl.string(o.t["d9+vQ8"]), i.ToastType.SUCCESS))
+    rating: o
+  }), (0, i.showToast)((0, i.createToast)(s.intl.string(s.t["d9+vQ8"]), i.ToastType.SUCCESS))
 }
 
 function p(e) {
   let {
     summary: t,
     channel: a,
-    rating: o
+    rating: s
   } = e;
-  null != t && (o === s.P0.BAD ? (0, i.mMO)(async () => {
+  null != t && (s === o.P0.BAD ? (0, i.mMO)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("16833"), n.e("26484"), n.e("3489")]).then(n.bind(n, 225315));
     return n => (0, r.jsx)(e, d(c({}, n), {
       onSubmit: e => f(t, a, e),
-      startRating: o
+      startRating: s
     }))
   }) : f(t, a, {
-    rating: o,
+    rating: s,
     problem: null,
     feedback: "",
     dontShowAgain: false

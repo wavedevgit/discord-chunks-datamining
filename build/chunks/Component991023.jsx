@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk573435 = require("./573435.jsx"),
   Chunk696451 = require("./696451.js"),
@@ -99,22 +99,22 @@ function b(e) {
     N(true), null == I || I()
   }, [I]), D = i.useCallback(() => {
     N(false), null == S || S()
-  }, [S]), x = (0, o.bG)([c.Ay], () => {
+  }, [S]), L = (0, s.bG)([c.Ay], () => {
     var e, r, i, a;
     return (null == (r = t.application) || null == (e = r.bot) ? true : e.id) != null ? c.Ay.getMember(n, null == (a = t.application) || null == (i = a.bot) ? true : i.id) : null
-  }), L = i.useMemo(() => {
+  }), x = i.useMemo(() => {
     var e;
     return t.type !== d.Hf.APPLICATION ? p : u.Ay.getApplicationIconURL({
       id: t.id,
       icon: t.icon,
       bot: null == (e = t.application) ? true : e.bot,
       botIconFirst: true,
-      guildMember: x,
+      guildMember: L,
       size: _
     })
-  }, [t, _, x]);
+  }, [t, _, L]);
   return (0, r.jsx)("div", g(h({}, T), {
-    className: s()(f.iE, y, {
+    className: o()(f.iE, y, {
       [f.rb]: b,
       [f.wH]: b && a
     }),
@@ -134,7 +134,7 @@ function b(e) {
           width: _,
           height: m
         },
-        src: L
+        src: x
       })
     })
   }))

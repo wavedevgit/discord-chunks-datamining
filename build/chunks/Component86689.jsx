@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 86689, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 86689, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => s
 }), require("./228524.js");
@@ -14,11 +13,11 @@ function s(e) {
     children: t,
     description: n,
     setting: s,
-    scrollPosition: o
+    scrollPosition: a
   } = e;
-  return (0, r.jsxs)(a.h, {
+  return (0, r.jsxs)(l.h, {
     setting: s,
-    scrollPosition: o,
+    scrollPosition: a,
     children: [(0, r.jsx)(i.BJc, {
       gap: 0,
       children: t

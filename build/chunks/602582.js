@@ -45,7 +45,7 @@ class v extends Chunk439372.A {
       E.verbose("fetching local previews (via: database, guild_id: ".concat(e, ")")), this.localFetching.add(e);
       let n = f.default.getId(),
         r = await (null == (t = l.A.messages()) ? true : t.getMostRecents(e));
-      null != r && n === f.default.getId() && s.h.dispatch({
+      null != r && n === f.default.getId() && o.h.dispatch({
         type: "MESSAGE_PREVIEWS_LOCALLY_LOADED",
         guildId: e,
         messages: r.map(e => {
@@ -74,7 +74,7 @@ class v extends Chunk439372.A {
         },
         rejectWithError: false
       })).body;
-      s.h.dispatch({
+      o.h.dispatch({
         type: "MESSAGE_PREVIEWS_LOADED",
         guildId: null,
         messages: e

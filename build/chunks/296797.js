@@ -23,9 +23,9 @@ function d(e, t, n) {
 }
 class f extends Chunk439372.A {
   handlePostConnectionOpen() {
-    (0, c.isDesktop)() && !o.A.fetched && (0, i.Yq)(), r.A.getDetectableGames(), r.A.getDetectableBlocklist(), this.intervalId = setInterval(() => {
+    (0, c.isDesktop)() && !s.A.fetched && (0, i.Yq)(), r.A.getDetectableGames(), r.A.getDetectableBlocklist(), this.intervalId = setInterval(() => {
       r.A.getDetectableGames(), r.A.getDetectableBlocklist()
-    }, s.A.detectableGamesTtl + Math.random() * l.A.Millis.HOUR), r.A.getDetectableNonGames(), this.nonGameIntervalId = setInterval(r.A.getDetectableNonGames, u.A.ttl + Math.random() * l.A.Millis.HOUR)
+    }, o.A.detectableGamesTtl + Math.random() * l.A.Millis.HOUR), r.A.getDetectableNonGames(), this.nonGameIntervalId = setInterval(r.A.getDetectableNonGames, u.A.ttl + Math.random() * l.A.Millis.HOUR)
   }
   _terminate() {
     null != this.intervalId && (clearInterval(this.intervalId), this.intervalId = true), null != this.nonGameIntervalId && (clearInterval(this.nonGameIntervalId), this.nonGameIntervalId = true)

@@ -10,7 +10,7 @@ var Chunk284009 = require("./284009.js"),
 require("./273946.js");
 var Chunk583954 = require("./583954.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -66,19 +66,19 @@ class _ {
     if (null != a && null != a[i]) return a[i];
     if (this.needsReset && this.reset(), t.width > this.MAX_ROW_WIDTH || t.height > this.MAX_HEIGHT) throw Error("Image: ".concat(e, " is too wide to use with offscreen canvas. (").concat(t.width, " x ").concat(t.height));
     (this.nextX + t.width + f > this.MAX_ROW_WIDTH || this.nextY + t.height + f > this.MAX_HEIGHT) && this.breakToNewRow(true), this.context.save(), null != n && (this.context.filter = n), this.context.drawImage(t, this.nextX, this.nextY, t.width, t.height), this.context.restore();
-    let s = null != (r = this.imageMap.get(e)) ? r : {},
-      o = {
+    let o = null != (r = this.imageMap.get(e)) ? r : {},
+      s = {
         x: this.nextX,
         y: this.nextY,
         w: t.width,
         h: t.height
       };
-    return this.imageMap.set(e, u(l({}, s), {
-      [i]: o
-    })), t.height > this.tallestImageHeight && (this.tallestImageHeight = t.height), this.nextX += t.width + f, this.nextX > this.MAX_ROW_WIDTH && this.breakToNewRow(), o
+    return this.imageMap.set(e, u(l({}, o), {
+      [i]: s
+    })), t.height > this.tallestImageHeight && (this.tallestImageHeight = t.height), this.nextX += t.width + f, this.nextX > this.MAX_ROW_WIDTH && this.breakToNewRow(), s
   }
   constructor() {
-    o(this, "MAX_ROW_WIDTH", p), o(this, "MAX_HEIGHT", p), o(this, "nextX", 0), o(this, "nextY", 0), o(this, "tallestImageHeight", 0), o(this, "needsReset", false), o(this, "canvas", true), o(this, "context", true), o(this, "imageMap", true), this.imageMap = new Map, d ? this.canvas = new OffscreenCanvas(this.MAX_ROW_WIDTH, this.MAX_HEIGHT) : (this.canvas = document.createElement("canvas"), this.canvas.width = this.MAX_ROW_WIDTH, this.canvas.height = this.MAX_HEIGHT);
+    s(this, "MAX_ROW_WIDTH", p), s(this, "MAX_HEIGHT", p), s(this, "nextX", 0), s(this, "nextY", 0), s(this, "tallestImageHeight", 0), s(this, "needsReset", false), s(this, "canvas", true), s(this, "context", true), s(this, "imageMap", true), this.imageMap = new Map, d ? this.canvas = new OffscreenCanvas(this.MAX_ROW_WIDTH, this.MAX_HEIGHT) : (this.canvas = document.createElement("canvas"), this.canvas.width = this.MAX_ROW_WIDTH, this.canvas.height = this.MAX_HEIGHT);
     const e = this.canvas.getContext("2d", {
       alpha: true,
       willReadFrequently: false
@@ -135,9 +135,9 @@ class h extends Chunk851541.A {
       x: r,
       y: i,
       w: a,
-      h: s
+      h: o
     } = e;
-    n && this.setContextProperties(), t ? this.context.fillRect(r, i, a, s) : this.context.strokeRect(r, i, a, s)
+    n && this.setContextProperties(), t ? this.context.fillRect(r, i, a, o) : this.context.strokeRect(r, i, a, o)
   }
   drawRoundedRect(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
@@ -147,16 +147,16 @@ class h extends Chunk851541.A {
     let {
       x: i,
       y: a,
-      w: s,
-      h: o
+      w: o,
+      h: s
     } = e;
-    r && this.setContextProperties(), this.context.beginPath(), this.context.roundRect(i, a, s, o, t), n ? this.context.fill() : this.context.stroke()
+    r && this.setContextProperties(), this.context.beginPath(), this.context.roundRect(i, a, o, s, t), n ? this.context.fill() : this.context.stroke()
   }
   drawText(e, t, n) {
     var r, a;
     if (null == this.context) return;
     this.setContextProperties();
-    let o = null != (r = t.w) ? r : this.canvas.width - t.x,
+    let s = null != (r = t.w) ? r : this.canvas.width - t.x,
       l = this.context.measureText(e),
       c = false,
       u = this.font.size,
@@ -166,26 +166,26 @@ class h extends Chunk851541.A {
       f = e => {
         if (null == this.context || l.width <= 12) return "";
         let t = "".concat(e);
-        for (; l.width + 12 > o;) t = t.slice(0, false), l = this.context.measureText(t), c = true;
+        for (; l.width + 12 > s;) t = t.slice(0, false), l = this.context.measureText(t), c = true;
         return c && (t += "..."), t
       };
-    if (this.font.truncate === s.Kq.None && d(e, t), this.font.truncate === s.Kq.Truncate && d(e = f(e), t), this.font.truncate === s.Kq.Wrap) {
+    if (this.font.truncate === o.Kq.None && d(e, t), this.font.truncate === o.Kq.Truncate && d(e = f(e), t), this.font.truncate === o.Kq.Wrap) {
       let n = e.split(" "),
         r = 1 / 0,
-        s = "",
+        o = "",
         c = 0;
       for (null != t.h && (r = t.h / u, i()(r > 0, "DiscordCavas: boundingBox.h of ".concat(t.h, " results in 0 visible lines with font size of ").concat(u))); n.length > 0;)
-        if ((l = this.context.measureText(s + " " + n[0])).width > o) {
+        if ((l = this.context.measureText(o + " " + n[0])).width > s) {
           let e = false;
-          if (c + 1 >= r && n.length > 0 && (e = true), "" !== s ? (d(e ? f(s + "...") : s, {
+          if (c + 1 >= r && n.length > 0 && (e = true), "" !== o ? (d(e ? f(o + "...") : o, {
               x: t.x,
               y: t.y + u * c
-            }), s = "") : d(f(null != (a = n.shift()) ? a : ""), {
+            }), o = "") : d(f(null != (a = n.shift()) ? a : ""), {
               x: t.x,
               y: t.y + u * c
             }), e) break;
           c += 1
-        } else s += " ".concat(n.shift()), 0 === n.length && d(s, {
+        } else o += " ".concat(n.shift()), 0 === n.length && d(o, {
           x: t.x,
           y: t.y + u * c
         })
@@ -198,7 +198,7 @@ class h extends Chunk851541.A {
     }
   }
   drawFormattedMessage(e, t, n) {
-    this.font.truncate === s.Kq.Wrap && console.warn("DiscordCavas: `drawFormattedMessage` doesn't currently support wrapping formatted text. The results of this draw likely won't match your expectations.");
+    this.font.truncate === o.Kq.Wrap && console.warn("DiscordCavas: `drawFormattedMessage` doesn't currently support wrapping formatted text. The results of this draw likely won't match your expectations.");
     let r = this.font.weight,
       i = (e, t, n) => {
         let i;
@@ -213,12 +213,12 @@ class h extends Chunk851541.A {
         return e.forEach(e => {
           let {
             x: a,
-            y: s,
-            w: o,
+            y: o,
+            w: s,
             h: l
-          } = t, c = null != o ? o - r : true, u = i(e, {
+          } = t, c = null != s ? s - r : true, u = i(e, {
             x: a + r,
-            y: s,
+            y: o,
             w: c,
             h: l
           }, n);
@@ -234,21 +234,21 @@ class h extends Chunk851541.A {
   }
   drawImage(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
-      fillMode: s.VZ.Stretch
+      fillMode: o.VZ.Stretch
     };
     i()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized.");
     let {
       fillMode: a
     } = r;
-    if (null == this.context) return s.uS.Failure;
+    if (null == this.context) return o.uS.Failure;
     this.setContextProperties();
-    let o = this.assetMap.get(e);
-    if (null == o) return s.uS.ImageNotLoaded;
+    let s = this.assetMap.get(e);
+    if (null == s) return o.uS.ImageNotLoaded;
     if (null != n) {
-      if (a === s.VZ.Contain) {
+      if (a === o.VZ.Contain) {
         let r, i = {
-            w: o.width,
-            h: o.height
+            w: s.width,
+            h: s.height
           },
           a = +(i.w / i.h).toFixed(1);
         if (+(n.w / n.h).toFixed(1) > a) {
@@ -278,13 +278,13 @@ class h extends Chunk851541.A {
           y: r.y,
           w: r.w,
           h: r.h
-        }), s.uS.Success
+        }), o.uS.Success
       }
-      if (a === s.VZ.Cover) {
+      if (a === o.VZ.Cover) {
         var c, d, f, p;
         let i, a = {
-            w: o.width,
-            h: o.height
+            w: s.width,
+            h: s.height
           },
           _ = +(a.w / a.h).toFixed(1),
           h = +(n.w / n.h).toFixed(1);
@@ -294,17 +294,17 @@ class h extends Chunk851541.A {
             x: 0,
             y: (a.h - e) * (null != (c = null == r || null == (d = r.focus) ? true : d.y) ? c : .5)
           }), {
-            w: o.width,
+            w: s.width,
             h: e
           })
         } else {
           let e = a.h * h;
           i = u(l({}, {
-            x: (o.width - e) * (null != (f = null == r || null == (p = r.focus) ? true : p.x) ? f : .5),
+            x: (s.width - e) * (null != (f = null == r || null == (p = r.focus) ? true : p.x) ? f : .5),
             y: 0
           }), {
             w: e,
-            h: o.height
+            h: s.height
           })
         }
         return this.drawCroppedImage(e, i, {
@@ -312,69 +312,69 @@ class h extends Chunk851541.A {
           y: t.y,
           w: n.w,
           h: n.h
-        }), s.uS.Success
+        }), o.uS.Success
       }
       if (null != this.offscreenCanvasCache) return this.drawCachedImage(e, t, n);
-      this.context.drawImage(o, t.x, t.y, n.w, n.h)
+      this.context.drawImage(s, t.x, t.y, n.w, n.h)
     } else {
       if (null != this.offscreenCanvasCache) return this.drawCachedImage(e, t);
-      this.context.drawImage(o, t.x, t.y)
+      this.context.drawImage(s, t.x, t.y)
     }
-    return s.uS.Success
+    return o.uS.Success
   }
   drawRoundedImage(e, t, n, r, i) {
-    if (null == this.context) return s.uS.Failure;
+    if (null == this.context) return o.uS.Failure;
     let {
       x: a,
-      y: o
+      y: s
     } = t, {
       w: l,
       h: c
     } = n;
     this.context.save();
     let u = new Path2D;
-    u.roundRect(a, o, l, c, r), this.context.clip(u);
+    u.roundRect(a, s, l, c, r), this.context.clip(u);
     let d = this.drawImage(e, t, n, i);
     return this.restoreContext(), d
   }
   drawCroppedImage(e, t, n) {
     var r;
-    if (null != this.offscreenCanvasCache && this.drawCroppedCachedImage(e, t, n), null == this.context) return s.uS.Failure;
+    if (null != this.offscreenCanvasCache && this.drawCroppedCachedImage(e, t, n), null == this.context) return o.uS.Failure;
     let i = null == (r = this.assetMap) ? true : r.get(e);
-    if (null == i) return s.uS.ImageNotLoaded;
+    if (null == i) return o.uS.ImageNotLoaded;
     if (null != this.offscreenCanvasCache) return this.drawCroppedCachedImage(e, t, n);
     {
       let {
         x: e,
         y: r,
         w: a,
-        h: s
+        h: o
       } = t, {
-        x: o,
+        x: s,
         y: l,
         w: c,
         h: u
       } = n;
-      this.context.drawImage(i, e, r, a, s, o, l, c, u)
+      this.context.drawImage(i, e, r, a, o, s, l, c, u)
     }
-    return s.uS.Success
+    return o.uS.Success
   }
   drawCachedImage(e, t, n) {
     var r, a;
-    if (i()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized."), i()(null != this.offscreenCanvasCache, "DiscordCavas: `drawCachedImage` requires an offscreen canvas being initialized."), null == this.context) return s.uS.Failure;
-    let o = this.assetMap.get(e);
-    if (null == o) return s.uS.ImageNotLoaded;
-    let l = this.offscreenCanvasCache.getImage(e.toString(), o, this.getFilterString());
-    return null == l ? s.uS.Failure : (this.context.drawImage(this.offscreenCanvasCache.canvas, l.x, l.y, l.w, l.h, t.x, t.y, null != (r = null == n ? true : n.w) ? r : l.w, null != (a = null == n ? true : n.h) ? a : l.h), s.uS.Success)
+    if (i()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized."), i()(null != this.offscreenCanvasCache, "DiscordCavas: `drawCachedImage` requires an offscreen canvas being initialized."), null == this.context) return o.uS.Failure;
+    let s = this.assetMap.get(e);
+    if (null == s) return o.uS.ImageNotLoaded;
+    let l = this.offscreenCanvasCache.getImage(e.toString(), s, this.getFilterString());
+    return null == l ? o.uS.Failure : (this.context.drawImage(this.offscreenCanvasCache.canvas, l.x, l.y, l.w, l.h, t.x, t.y, null != (r = null == n ? true : n.w) ? r : l.w, null != (a = null == n ? true : n.h) ? a : l.h), o.uS.Success)
   }
   drawCroppedCachedImage(e, t, n) {
-    if (i()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized."), i()(null != this.offscreenCanvasCache, "DiscordCavas: `drawCachedImage` requires an offscreen canvas being initialized."), null == this.context) return s.uS.Failure;
+    if (i()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized."), i()(null != this.offscreenCanvasCache, "DiscordCavas: `drawCachedImage` requires an offscreen canvas being initialized."), null == this.context) return o.uS.Failure;
     let r = this.assetMap.get(e);
-    if (null == r) return s.uS.ImageNotLoaded;
+    if (null == r) return o.uS.ImageNotLoaded;
     let a = this.offscreenCanvasCache.getImage(e.toString(), r, this.getFilterString());
-    if (null == a) return s.uS.Failure;
+    if (null == a) return o.uS.Failure;
     let {
-      x: o,
+      x: s,
       y: l,
       w: c,
       h: u
@@ -384,15 +384,15 @@ class h extends Chunk851541.A {
       w: p,
       h: _
     } = n;
-    return this.context.drawImage(this.offscreenCanvasCache.canvas, a.x + o, a.y + l, c, u, d, f, p, _), s.uS.Success
+    return this.context.drawImage(this.offscreenCanvasCache.canvas, a.x + s, a.y + l, c, u, d, f, p, _), o.uS.Success
   }
   drawPath(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
       r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 1;
-    if (null == this.context) return s.uS.Failure;
+    if (null == this.context) return o.uS.Failure;
     this.setContextProperties(), this.context.save();
     let i = new Path2D(e);
-    return this.context.translate(t.x, t.y), this.context.scale(r, r), n ? this.context.fill(i, "evenodd") : this.context.stroke(i), this.restoreContext(), s.uS.Success
+    return this.context.translate(t.x, t.y), this.context.scale(r, r), n ? this.context.fill(i, "evenodd") : this.context.stroke(i), this.restoreContext(), o.uS.Success
   }
   setGradientFillStyle(e, t, n) {
     if (null == this.context) return;
@@ -405,10 +405,10 @@ class h extends Chunk851541.A {
     this.context.fillStyle = r
   }
   drawGradientRect(e, t, n, r) {
-    return null == this.context ? s.uS.Failure : (this.setGradientFillStyle(e, t, n), this.drawRect(r, true, false), s.uS.Success)
+    return null == this.context ? o.uS.Failure : (this.setGradientFillStyle(e, t, n), this.drawRect(r, true, false), o.uS.Success)
   }
   drawRoundedGradientRect(e, t, n, r, i) {
-    return null == this.context ? s.uS.Failure : (this.setGradientFillStyle(e, t, n), this.drawRoundedRect(r, i, true, false), s.uS.Success)
+    return null == this.context ? o.uS.Failure : (this.setGradientFillStyle(e, t, n), this.drawRoundedRect(r, i, true, false), o.uS.Success)
   }
   clip(e, t) {
     if (null == this.context) return;
@@ -445,17 +445,17 @@ class h extends Chunk851541.A {
       x: r,
       y: i,
       w: a,
-      h: s
+      h: o
     } = e;
     if (n) {
       let e = new Path2D;
-      e.moveTo(0, 0), e.lineTo(this.canvas.width, 0), e.lineTo(this.canvas.width, this.canvas.height), e.lineTo(0, this.canvas.height), e.lineTo(0, 0), e.closePath(), e.roundRect(r, i, a, s, t), this.context.clip(e, "evenodd")
+      e.moveTo(0, 0), e.lineTo(this.canvas.width, 0), e.lineTo(this.canvas.width, this.canvas.height), e.lineTo(0, this.canvas.height), e.lineTo(0, 0), e.closePath(), e.roundRect(r, i, a, o, t), this.context.clip(e, "evenodd")
     } else {
       let e = new Path2D;
-      e.roundRect(r, i, a, s, t), this.context.clip(e)
+      e.roundRect(r, i, a, o, t), this.context.clip(e)
     }
   }
   constructor(e, t) {
-    super(e, t), o(this, "canvas", true), o(this, "context", true), o(this, "offscreenCanvasCache", true), o(this, "_warnedAboutFilters", false), this.canvas = e, this.context = this.canvas.getContext("2d"), null != this.context && (this.context.imageSmoothingQuality = "high")
+    super(e, t), s(this, "canvas", true), s(this, "context", true), s(this, "offscreenCanvasCache", true), s(this, "_warnedAboutFilters", false), this.canvas = e, this.context = this.canvas.getContext("2d"), null != this.context && (this.context.imageSmoothingQuality = "high")
   }
 }

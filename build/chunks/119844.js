@@ -2,18 +2,18 @@
 /** chunk id: 119844, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  d: () => o
+  d: () => s
 });
 var Chunk82180 = require("./82180.js"),
   Chunk679314 = require("./679314.js"),
   Chunk123789 = require("./123789.js");
-let s = {
+let o = {
   writeUnknownFields: true,
   writerFactory: () => new l
 };
 
-function o(e) {
-  return e ? Object.assign(Object.assign({}, s), e) : s
+function s(e) {
+  return e ? Object.assign(Object.assign({}, o), e) : o
 }
 class l {
   constructor(e) {
@@ -105,8 +105,8 @@ class l {
     let t = r.h.from(e),
       n = t.hi >> 31,
       a = t.lo << 1 ^ n,
-      s = (t.hi << 1 | t.lo >>> 31) ^ n;
-    return (0, i.cV)(a, s, this.buf), this
+      o = (t.hi << 1 | t.lo >>> 31) ^ n;
+    return (0, i.cV)(a, o, this.buf), this
   }
   uint64(e) {
     let t = r.e.from(e);

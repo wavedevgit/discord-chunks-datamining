@@ -1,13 +1,13 @@
-/** Chunk was on 42944 **/
-/** chunk id: 939899, original params: e,a,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 939899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g,
-  R: () => A
+  A: () => A,
+  R: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk793574 = require("./793574.js"),
@@ -19,84 +19,84 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk413611 = require("./413611.js");
 
-function g(e) {
+function A(e) {
   let {
-    applicationId: a,
+    applicationId: t,
     size: n = "default"
-  } = e, l = (0, o.bG)([f.A], () => f.A.getApplicationWidgetConfig(a));
-  return (0, t.jsxs)("div", {
-    className: r()(x.kL, {
-      [x.PG]: "small" === n
+  } = e, i = (0, o.bG)([g.A], () => g.A.getApplicationWidgetConfig(t));
+  return (0, r.jsxs)("div", {
+    className: a()(m.kL, {
+      [m.PG]: "small" === n
     }),
-    children: [(0, t.jsxs)("div", {
-      className: x.Qs,
-      children: [(0, t.jsx)("div", {
-        className: x.wx
-      }), (0, t.jsx)("div", {
-        className: x.yF
-      }), (0, t.jsxs)("div", {
-        className: x.M1,
-        children: [(0, t.jsx)("div", {
-          className: x.dJ
-        }), (0, t.jsx)("div", {
-          className: x.dJ
-        }), (0, t.jsx)("div", {
-          className: x.dJ
-        }), (0, t.jsx)("div", {
-          className: x.dJ
-        }), (0, t.jsx)("div", {
-          className: x.dJ
-        }), (0, t.jsx)("div", {
-          className: x.dJ
+    children: [(0, r.jsxs)("div", {
+      className: m.Qs,
+      children: [(0, r.jsx)("div", {
+        className: m.wx
+      }), (0, r.jsx)("div", {
+        className: m.yF
+      }), (0, r.jsxs)("div", {
+        className: m.M1,
+        children: [(0, r.jsx)("div", {
+          className: m.dJ
+        }), (0, r.jsx)("div", {
+          className: m.dJ
+        }), (0, r.jsx)("div", {
+          className: m.dJ
+        }), (0, r.jsx)("div", {
+          className: m.dJ
+        }), (0, r.jsx)("div", {
+          className: m.dJ
+        }), (0, r.jsx)("div", {
+          className: m.dJ
         })]
       })]
-    }), (0, t.jsx)("div", {
-      className: x.ZS,
-      children: (null == l ? true : l.miniPreviewImage) != null ? (0, t.jsx)("img", {
-        src: l.miniPreviewImage,
+    }), (0, r.jsx)("div", {
+      className: m.ZS,
+      children: (null == i ? true : i.miniPreviewImage) != null ? (0, r.jsx)("img", {
+        src: i.miniPreviewImage,
         alt: "",
-        className: x.oz
-      }) : (0, t.jsx)("div", {
-        className: x.FQ
+        className: m.oz
+      }) : (0, r.jsx)("div", {
+        className: m.FQ
       })
     })]
   })
 }
 
-function A(e) {
+function _(e) {
   let {
-    applicationId: a,
+    applicationId: t,
     size: n = "default"
   } = e, {
-    trackUserProfileAction: i
-  } = (0, p.NJ)(), r = (0, m.h)(a), {
+    trackUserProfileAction: l
+  } = (0, h.NJ)(), a = (0, p.h)(t), {
     hasAlreadyLinked: o,
-    canStartAuthorization: f,
-    startAuthorization: g,
-    fetched: A
-  } = (0, u.RD)(r), {
-    analyticsLocations: j
-  } = (0, d.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET), h = l.useCallback(() => {
-    f && (i({
+    canStartAuthorization: g,
+    startAuthorization: A,
+    fetched: _
+  } = (0, d.RD)(a), {
+    analyticsLocations: b
+  } = (0, u.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET), E = i.useCallback(() => {
+    g && (l({
       action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
-      applicationId: a
-    }), g({
-      analyticsLocations: j
+      applicationId: t
+    }), A({
+      analyticsLocations: b
     }))
-  }, [f, i, a, g, j]);
-  return "default" !== n || null == r ? null : (0, t.jsxs)("div", {
-    className: x.qr,
-    children: [(0, t.jsx)(s.A5T, {
+  }, [g, l, t, A, b]);
+  return "default" !== n || null == a ? null : (0, r.jsxs)("div", {
+    className: m.qr,
+    children: [(0, r.jsx)(s.A5T, {
       size: "xs"
-    }), (0, t.jsx)(s.EYj, {
+    }), (0, r.jsx)(s.EYj, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      children: A ? o ? v.intl.format(v.t.wiyuG9, {
-        applicationName: r.name
-      }) : f ? v.intl.format(v.t.RNWFOQ, {
-        onConnect: h
-      }) : v.intl.string(v.t["9TX4UT"]) : (0, t.jsx)("div", {
-        className: x.bg
+      children: _ ? o ? f.intl.format(f.t.wiyuG9, {
+        applicationName: a.name
+      }) : g ? f.intl.format(f.t.RNWFOQ, {
+        onConnect: E
+      }) : f.intl.string(f.t["9TX4UT"]) : (0, r.jsx)("div", {
+        className: m.bg
       })
     })]
   })

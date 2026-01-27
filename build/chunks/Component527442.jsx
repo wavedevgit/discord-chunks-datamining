@@ -83,12 +83,12 @@ function y(e) {
   } = e, p = g(e, ["guild", "focused", "onSelectItem"]), {
     canCreateExpressions: h
   } = (0, l.nr)(t);
-  return (0, r.jsx)(s.m, {
+  return (0, r.jsx)(o.m, {
     text: u.intl.string(u.t["fHo+z1"]),
     shouldShow: !h,
     children: (0, r.jsx)("li", {
       className: d.H,
-      children: (0, r.jsxs)(o.sqX, m(_({}, p), {
+      children: (0, r.jsxs)(s.sqX, m(_({}, p), {
         "aria-label": u.intl.formatToPlainString(u.t.c1qVYh, {
           guildName: t.name
         }),
@@ -97,10 +97,10 @@ function y(e) {
           [f.r9]: !h
         }),
         onClick: () => null != i ? i() : (0, c.A)(t.id),
-        children: [(0, r.jsx)(o.j96, {
+        children: [(0, r.jsx)(s.j96, {
           size: "sm",
           color: "currentColor"
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: h ? "currentColor" : "text-muted",
           children: u.intl.string(u.t["8Fu/S7"])

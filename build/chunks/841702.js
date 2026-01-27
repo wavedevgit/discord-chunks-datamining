@@ -58,7 +58,7 @@ function _(e, t) {
 function h() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   (0, c.n)("useFetchPurchases");
-  let t = (0, a.bG)([s.A], () => s.A.hasLoadedExperiments),
+  let t = (0, a.bG)([o.A], () => o.A.hasLoadedExperiments),
     n = i.g.VARIANTS_GROUP,
     [u, d, f, p, _, h] = (0, a.yK)([l.A], () => [l.A.isFetching, l.A.isClaiming, l.A.fetchError, l.A.claimError, l.A.purchases, l.A.hasPreviouslyFetched]),
     m = (0, r.useRef)(l.A.hasPreviouslyFetched);
@@ -73,7 +73,7 @@ function h() {
   return (0, r.useEffect)(() => {
     E.current = u
   }, [u]), (0, r.useEffect)(() => {
-    !t || E.current || true === e && m.current && null == g.current || (0, o.gB)({
+    !t || E.current || true === e && m.current && null == g.current || (0, s.gB)({
       variantsReturnStyle: n
     })
   }, [e, n, t]), {
@@ -100,7 +100,7 @@ function g(e, t) {
       isFetching: r,
       categories: i,
       fetchCategoriesError: a,
-      refreshCategories: s
+      refreshCategories: o
     } = (0, u.A)({
       paymentGateway: n,
       noOp: null == e ? true : e.noOp,
@@ -108,7 +108,7 @@ function g(e, t) {
       countryCode: null == e ? true : e.countryCode
     }, t),
     {
-      isClaiming: o,
+      isClaiming: s,
       fetchPurchasesError: l,
       claimError: c,
       isFetching: d,
@@ -119,13 +119,13 @@ function g(e, t) {
     isFetching: r || d,
     isFetchingCategories: r,
     isFetchingPurchases: d,
-    isClaiming: o,
+    isClaiming: s,
     categories: i,
     purchases: f,
     fetchCategoriesError: a,
     fetchPurchasesError: l,
     claimError: c,
-    refreshCategories: s,
+    refreshCategories: o,
     hasPreviouslyFetched: p
   }
 }

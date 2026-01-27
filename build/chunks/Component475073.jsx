@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 475073, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 475073, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => Q
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk989349 = require("./989349.js"),
-  l = require.n(Chunk989349),
+  o = require.n(Chunk989349),
   Chunk311907 = require("./311907.js"),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js"),
@@ -45,7 +44,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk300937 = require("./300937.js");
 
-function H(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,67 +53,63 @@ function H(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Y(e) {
+function z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      H(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
 }
 
 function W(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function K(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function z(e) {
+function K(e) {
   let {
     onClick: t,
     libraryApplication: n
   } = e;
   return (0, r.jsxs)(d.DUT, {
-    className: B.kP,
+    className: H.kP,
     onClick: t,
     children: [(0, r.jsx)(d._z, {
       size: "md",
       color: "currentColor",
-      className: B.dy
+      className: H.dy
     }), (0, r.jsx)("div", {
       children: n.isHidden() ? F.intl.string(F.t.Wi99Ro) : F.intl.string(F.t["+tXad7"])
     })]
   })
 }
-class q extends Chunk64700.PureComponent {
+class Y extends Chunk64700.PureComponent {
   get isHorizontal() {
     let {
       width: e
     } = this.props;
-    return e >= f.Tm
+    return e >= p.Tm
   }
   handleViewInventory() {
-    (0, T.openUserSettings)(S.X.GIFT_PANEL, {
+    (0, C.openUserSettings)(j.X.GIFT_PANEL, {
       section: G.nc_.INVENTORY
     })
   }
   render() {
-    return (0, r.jsx)(f.ug, {
+    return (0, r.jsx)(p.ug, {
       isHorizontal: this.isHorizontal,
       renderTitle: this.renderTitle,
       renderTagline: this.renderTagline,
@@ -123,11 +118,11 @@ class q extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), H(this, "renderMedia", () => (0, r.jsx)("div", {
-      className: s()(B.oK, {
-        [B.ok]: this.isHorizontal
+    super(...e), V(this, "renderMedia", () => (0, r.jsx)("div", {
+      className: a()(H.oK, {
+        [H.ok]: this.isHorizontal
       })
-    })), H(this, "renderTitle", () => this.props.isSelfGift ? F.intl.string(F.t.mT9B49) : F.intl.string(F.t.Vo5yHw)), H(this, "renderActions", () => this.props.isSelfGift ? (0, r.jsx)(d.Button, {
+    })), V(this, "renderTitle", () => this.props.isSelfGift ? F.intl.string(F.t.mT9B49) : F.intl.string(F.t.Vo5yHw)), V(this, "renderActions", () => this.props.isSelfGift ? (0, r.jsx)(d.Button, {
       variant: "primary",
       size: "sm",
       text: F.intl.string(F.t["jcSP+g"]),
@@ -137,17 +132,17 @@ class q extends Chunk64700.PureComponent {
       size: "sm",
       text: F.intl.string(F.t.bUvv1f),
       disabled: true
-    })), H(this, "renderTagline", () => this.props.isSelfGift ? F.intl.string(F.t.eEM3dq) : F.intl.string(F.t.tB8S6u))
+    })), V(this, "renderTagline", () => this.props.isSelfGift ? F.intl.string(F.t.eEM3dq) : F.intl.string(F.t.tB8S6u))
   }
 }
-class Z extends Chunk64700.Component {
+class q extends Chunk64700.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
         location: e
       }
     } = this.props;
-    return K(Y({}, e), {
+    return W(z({}, e), {
       section: G.JJy.GIFT_CODE_EMBED
     })
   }
@@ -155,23 +150,23 @@ class Z extends Chunk64700.Component {
     let {
       libraryApplication: t
     } = this.props;
-    return (0, r.jsxs)(E.A, {
-      justify: E.A.Justify.BETWEEN,
-      children: [(0, r.jsxs)(E.A, {
-        children: [this.renderButton(e), null == t || e.isSubscription ? null : (0, r.jsx)(z, {
+    return (0, r.jsxs)(b.A, {
+      justify: b.A.Justify.BETWEEN,
+      children: [(0, r.jsxs)(b.A, {
+        children: [this.renderButton(e), null == t || e.isSubscription ? null : (0, r.jsx)(K, {
           onClick: this.handleViewLibrary,
           libraryApplication: t
         })]
-      }), (0, r.jsxs)(E.A, {
-        align: E.A.Align.END,
-        justify: E.A.Justify.END,
-        className: B.yu,
-        direction: E.A.Direction.VERTICAL,
+      }), (0, r.jsxs)(b.A, {
+        align: b.A.Align.END,
+        justify: b.A.Justify.END,
+        className: H.yu,
+        direction: b.A.Direction.VERTICAL,
         children: [e.hasMultipleCopies ? (0, r.jsx)("div", {
           children: this.renderGiftCodeCopiesLeft(e)
         }) : null, e.redeemed || e.isClaimed || null != t || null == e.expiresAt ? null : (0, r.jsx)("div", {
           children: F.intl.format(F.t.nZBvUR, {
-            hours: e.expiresAt.diff(l()(), "h")
+            hours: e.expiresAt.diff(o()(), "h")
           })
         })]
       })]
@@ -189,12 +184,12 @@ class Z extends Chunk64700.Component {
       libraryApplication: t,
       currentUser: n,
       isSelfGift: i
-    } = this.props, a = {
+    } = this.props, l = {
       onClick: this.handleAccept,
       color: u.$n.Colors.BRAND
-    }, s = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, j.TW)(n);
-    return (e.redeemed || s || e.isClaimed || !n.verified) && (a.color = u.$n.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.$n, K(Y({}, a), {
-      className: (0, g.hU)(e) ? B.UQ : null,
+    }, a = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, L.TW)(n);
+    return (e.redeemed || a || e.isClaimed || !n.verified) && (l.color = u.$n.Colors.BRAND, l.disabled = true), (0, r.jsx)(u.$n, W(z({}, l), {
+      className: (0, _.hU)(e) ? H.UQ : null,
       size: u.$n.Sizes.SMALL,
       children: e.redeemed ? F.intl.string(F.t.BTihou) : null != e.giftStyle ? F.intl.string(F.t.TiZFqX) : F.intl.string(F.t.bUvv1f)
     }))
@@ -221,59 +216,59 @@ class Z extends Chunk64700.Component {
       isSelfGift: n,
       sku: r,
       gifter: i,
-      subscriptionPlan: a,
-      currentUser: s
+      subscriptionPlan: l,
+      currentUser: a
     } = this.props;
     if (null == r) return F.intl.string(F.t.ZTNur7);
     if (!n && this.isCustomGiftMessage() && !e.redeemed) return;
-    let o = r.isPreorder() ? F.intl.formatToPlainString(F.t.evinTd, {
+    let s = r.isPreorder() ? F.intl.formatToPlainString(F.t.evinTd, {
       name: r.name
     }) : r.name;
-    if (e.redeemed) return e.isSubscription || (0, g.hU)(e) || (0, A.bF)(r) ? F.intl.string(F.t.mVC3Cv) : F.intl.format(F.t["ss/L+/"], {
-      skuName: o,
+    if (e.redeemed) return e.isSubscription || (0, _.hU)(e) || (0, O.bF)(r) ? F.intl.string(F.t.mVC3Cv) : F.intl.format(F.t["ss/L+/"], {
+      skuName: s,
       onViewInLibrary: this.handleViewLibrary
     });
     if (!e.isSubscription && null != t) return F.intl.format(F.t.UdXO8P, {
-      skuName: o,
+      skuName: s,
       onViewInLibrary: this.handleViewLibrary
     });
     if (e.isClaimed) return F.intl.string(F.t.ARWFQX);
-    if (!s.verified) return F.intl.format(F.t.GQxl7v, {
+    if (!a.verified) return F.intl.format(F.t.GQxl7v, {
       onClick: this.handleVerificationClick
     });
     if (n) return e.isSelfRedeemable ? F.intl.string(F.t["lQI+cB"]) : F.intl.formatToPlainString(F.t["A+etHx"], {
-      skuName: o
+      skuName: s
     });
     if (e.isExistingPremiumSubscriptionDisallowed) return F.intl.string(F.t.UCIU9y);
     if (e.hasMultipleCopies) return null != i ? e.isSubscription ? F.intl.format(F.t.l3VxgG, {
       username: k.Ay.getUserTag(i),
       maxUses: e.maxUses,
-      skuName: o
+      skuName: s
     }) : F.intl.format(F.t["9cYrw5"], {
       username: k.Ay.getUserTag(i),
       totalCopies: e.maxUses,
-      skuName: o
+      skuName: s
     }) : e.isSubscription ? F.intl.formatToPlainString(F.t.svrO3W, {
       maxUses: e.maxUses,
-      skuName: o
+      skuName: s
     }) : F.intl.formatToPlainString(F.t["3AgAn3"], {
       totalCopies: e.maxUses,
-      skuName: o
+      skuName: s
     });
     if (e.isSubscription) {
-      if (null == a) return F.intl.string(F.t.ZTNur7);
+      if (null == l) return F.intl.string(F.t.ZTNur7);
       if (null != i) {
-        let e = a.interval === V.WT.MONTH ? F.t["/RDIEA"] : F.t["3CX6Ev"];
+        let e = l.interval === B.WT.MONTH ? F.t["/RDIEA"] : F.t["3CX6Ev"];
         return F.intl.format(e, {
           username: k.Ay.getUserTag(i),
-          skuName: o,
-          intervalCount: a.intervalCount
+          skuName: s,
+          intervalCount: l.intervalCount
         })
       }
-      let e = a.interval === V.WT.MONTH ? F.t["2O4lo5"] : F.t["+XjmsR"];
+      let e = l.interval === B.WT.MONTH ? F.t["2O4lo5"] : F.t["+XjmsR"];
       return F.intl.format(e, {
-        skuName: o,
-        intervalCount: a.intervalCount
+        skuName: s,
+        intervalCount: l.intervalCount
       })
     }
     return null != i ? F.intl.format(F.t["3HsdQ/"], {
@@ -295,7 +290,7 @@ class Z extends Chunk64700.Component {
       sku: n
     } = this.props;
     if (null == e) return null;
-    let i = null != e.giftStyle && !(0, A.bF)(n);
+    let i = null != e.giftStyle && !(0, O.bF)(n);
     return (0, r.jsx)(U.k, {
       skuId: e.skuId,
       onEmbedClick: this.handleEmbedClick,
@@ -324,122 +319,122 @@ class Z extends Chunk64700.Component {
       width: n
     });
     if (null == e || e.revoked)
-      if (t) return (0, r.jsx)(q, {
+      if (t) return (0, r.jsx)(Y, {
         isSelfGift: i,
         width: n
       });
-      else return (0, r.jsx)(f.Wb, {
-        isHorizontal: n >= f.Tm
+      else return (0, r.jsx)(p.Wb, {
+        isHorizontal: n >= p.Tm
       });
-    return (0, g.hU)(e) ? (0, r.jsx)("div", {
-      className: B.mp,
+    return (0, _.hU)(e) ? (0, r.jsx)("div", {
+      className: H.mp,
       children: this.renderEmbed()
     }) : this.renderEmbed()
   }
   constructor(...e) {
-    super(...e), H(this, "handleViewLibrary", e => {
+    super(...e), V(this, "handleViewLibrary", e => {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, v.pX)(G.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, v.pX)(G.BVt.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, x.pX)(G.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, x.pX)(G.BVt.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : true
         }
       })
-    }), H(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), (0, T.openUserSettings)(S.X.ACCOUNT_PANEL, {
+    }), V(this, "handleVerificationClick", e => {
+      e.stopPropagation(), e.preventDefault(), (0, C.openUserSettings)(j.X.ACCOUNT_PANEL, {
         section: G.nc_.ACCOUNT
       })
-    }), H(this, "handleAccept", e => {
+    }), V(this, "handleAccept", e => {
       let {
         channelId: t,
         code: n,
         content: r,
         type: i,
-        giftInfo: a
+        giftInfo: l
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), x.default.track(G.HAw.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), R.default.track(G.HAw.OPEN_MODAL, {
         type: "gift_accept",
-        location: K(Y({}, this.analyticsLocation), {
+        location: W(z({}, this.analyticsLocation), {
           object: G.ZSU.BUTTON_CTA
         })
       });
-      let s = i !== G.lAJ.CUSTOM_GIFT ? true : r;
-      (0, b.h)({
+      let a = i !== G.lAJ.CUSTOM_GIFT ? true : r;
+      (0, y.h)({
         processedCode: n,
         channelContext: t,
-        customGiftMessage: s,
-        giftInfo: a
+        customGiftMessage: a,
+        giftInfo: l
       })
-    }), H(this, "handleEmbedClick", e => {
+    }), V(this, "handleEmbedClick", e => {
       let {
         giftCode: t,
         sku: n,
         skuApplication: r
       } = this.props;
-      null != n && (0, A.bF)(n) && null != r && null != r.guildId ? (e.preventDefault(), (0, I.R)({
+      null != n && (0, O.bF)(n) && null != r && null != r.guildId ? (e.preventDefault(), (0, E.R)({
         skuId: n.id,
         applicationId: r.id,
         guildId: r.guildId,
         isStorefront: false,
-        analyticsLocations: [h.A.GIFT_CODE_EMBED]
-      })) : null != t && t.isSubscription && (e.preventDefault(), (0, T.openUserSettings)(S.X.NITRO_PANEL, {
+        analyticsLocations: [g.A.GIFT_CODE_EMBED]
+      })) : null != t && t.isSubscription && (e.preventDefault(), (0, C.openUserSettings)(j.X.NITRO_PANEL, {
         section: G.nc_.PREMIUM
       }))
-    }), H(this, "handleClaimPromotion", e => {
+    }), V(this, "handleClaimPromotion", e => {
       var t;
       e.stopPropagation(), e.preventDefault();
       let n = null == (t = this.props.giftCode) ? true : t.code;
       null != n && window.open(G.BVt.BILLING_PROMOTION_REDEMPTION(n))
-    }), H(this, "renderCustomGiftBox", e => {
+    }), V(this, "renderCustomGiftBox", e => {
       let {
         width: t
       } = this.props;
       if (null == e || null == e.giftStyle) return null;
-      let n = V.Wx.includes(e.giftStyle),
-        i = s()(B.gB, {
-          [B.El]: n,
-          [B.by]: t >= f.Tm
+      let n = B.Wx.includes(e.giftStyle),
+        i = a()(H.gB, {
+          [H.El]: n,
+          [H.by]: t >= p.Tm
         }),
-        a = s()({
-          [B.gc]: n,
-          [B.Ei]: n && t >= f.Tm,
-          [B.ww]: !n,
-          [B.wy]: !n && t >= f.Tm
+        l = a()({
+          [H.gc]: n,
+          [H.Ei]: n && t >= p.Tm,
+          [H.ww]: !n,
+          [H.wy]: !n && t >= p.Tm
         });
       return (0, r.jsxs)("div", {
         className: i,
-        children: [n && (0, r.jsx)(D.A, {
-          className: B.nr
-        }), null != e.giftStyle && (0, r.jsx)(O.A, {
-          defaultAnimationState: e.redeemed ? y.oA.LOOP : y.oA.IDLE,
+        children: [n && (0, r.jsx)(w.A, {
+          className: H.nr
+        }), null != e.giftStyle && (0, r.jsx)(v.A, {
+          defaultAnimationState: e.redeemed ? A.oA.LOOP : A.oA.IDLE,
           giftStyle: e.giftStyle,
-          className: a
+          className: l
         })]
       })
     })
   }
 }
-let X = (0, Chunk456412.A)((0, Chunk707606.A)(Z)),
+let J = (0, Chunk456412.A)((0, Chunk707606.A)(q)),
   Q = function(e) {
     let {
       code: t,
       author: n
     } = e, {
       giftCode: i,
-      resolved: a
-    } = (0, c.cf)([N.A], () => ({
-      giftCode: N.A.get(t),
-      resolved: N.A.getIsResolved(t)
-    })), s = (0, c.bG)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), o = (0, c.bG)([P.A], () => null != i ? P.A.get(i.skuId) : null), l = (0, c.bG)([w.A], () => null != o && (null == i ? true : i.entitlementBranches) != null ? L.YI(i.entitlementBranches, o, w.A) : null), u = (0, m.h)(null == o ? true : o.applicationId), d = (0, M.zz)(null == i ? true : i.subscriptionPlanId), f = (0, c.bG)([C.default], () => null != i ? C.default.getId() === i.userId : C.default.getId() === n.id);
-    return (0, r.jsx)(X, K(Y({}, e), {
+      resolved: l
+    } = (0, c.cf)([S.A], () => ({
+      giftCode: S.A.get(t),
+      resolved: S.A.getIsResolved(t)
+    })), a = (0, c.bG)([N.default], () => null != i && null != i.userId ? N.default.getUser(i.userId) : null), s = (0, c.bG)([P.A], () => null != i ? P.A.get(i.skuId) : null), o = (0, c.bG)([T.A], () => null != s && (null == i ? true : i.entitlementBranches) != null ? D.YI(i.entitlementBranches, s, T.A) : null), u = (0, h.h)(null == s ? true : s.applicationId), d = (0, M.zz)(null == i ? true : i.subscriptionPlanId), p = (0, c.bG)([I.default], () => null != i ? I.default.getId() === i.userId : I.default.getId() === n.id);
+    return (0, r.jsx)(J, W(z({}, e), {
       skuApplication: u,
       giftCode: i,
-      resolved: a,
-      gifter: s,
-      libraryApplication: l,
+      resolved: l,
+      gifter: a,
+      libraryApplication: o,
       subscriptionPlan: d,
-      sku: o,
-      isSelfGift: f
+      sku: s,
+      isSelfGift: p
     }))
   }

@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 /** chunk id: 334463, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, s;
+let r, i, a, o;
 require.d(exports, {
   A: () => R
 }), require("./896048.js");
-var o, Chunk311907 = require("./311907.js"),
+var s, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js"),
   Chunk806931 = require("./806931.js");
@@ -60,19 +60,19 @@ let m = new Map,
 function b(e) {
   var t, n;
   let {
-    id: o,
+    id: s,
     component: l,
     props: c
   } = e;
-  if (null != m.get(o)) return;
+  if (null != m.get(s)) return;
   let d = {
-    id: o,
+    id: s,
     component: l,
     position: null != (t = c.position) ? t : E,
     props: c,
     docked: null != (n = c.docked) && n
   };
-  m.set(o, d), l === u.o1q.VIDEO ? null == r && (r = o) : l === u.o1q.ACTIVITY ? null == i && (i = o) : l === u.o1q.FRAME ? null == a && (a = o) : l === u.o1q.HAVEN && null == s && (s = o)
+  m.set(s, d), l === u.o1q.VIDEO ? null == r && (r = s) : l === u.o1q.ACTIVITY ? null == i && (i = s) : l === u.o1q.FRAME ? null == a && (a = s) : l === u.o1q.HAVEN && null == o && (o = s)
 }
 
 function O(e) {
@@ -92,7 +92,7 @@ function O(e) {
     }) : a === t ? a = e.find(e => {
       let t = m.get(e);
       return null != t && t.component === u.o1q.FRAME
-    }) : s === t && (s = e.find(e => {
+    }) : o === t && (o = e.find(e => {
       let t = m.get(e);
       return null != t && t.component === u.o1q.HAVEN
     }))
@@ -104,7 +104,7 @@ function v(e) {
     id: t,
     position: n
   } = e;
-  if (null == t || r !== t && i !== t && a !== t && s !== t) returnfalse;
+  if (null == t || r !== t && i !== t && a !== t && o !== t) returnfalse;
   {
     let e = new Map;
     m.forEach((t, r) => {
@@ -135,7 +135,7 @@ function S(e) {
   let {
     id: t
   } = e;
-  if (r !== t && i !== t && a !== t && s !== t) returnfalse;
+  if (r !== t && i !== t && a !== t && o !== t) returnfalse;
   {
     let e = m.get(t);
     if (null == e) returnfalse;
@@ -149,7 +149,7 @@ function T(e) {
   let {
     id: t
   } = e;
-  if (r !== t && i !== t && a !== t && s !== t) returnfalse;
+  if (r !== t && i !== t && a !== t && o !== t) returnfalse;
   {
     let e = m.get(t);
     if (null == e) returnfalse;
@@ -163,13 +163,13 @@ function C(e) {
   let {
     id: t
   } = e, n = m.get(t);
-  null != n && (n.component === u.o1q.VIDEO ? r = t : n.component === u.o1q.ACTIVITY ? i = t : n.component === u.o1q.FRAME ? a = t : n.component === u.o1q.HAVEN && (s = t))
+  null != n && (n.component === u.o1q.VIDEO ? r = t : n.component === u.o1q.ACTIVITY ? i = t : n.component === u.o1q.FRAME ? a = t : n.component === u.o1q.HAVEN && (o = t))
 }
 
 function N() {
-  r = null, i = null, a = null, s = null, m = new Map
+  r = null, i = null, a = null, o = null, m = new Map
 }
-class w extends(o = Chunk311907.Ay.PersistedStore) {
+class w extends(s = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null == e) {
       var t;
@@ -184,7 +184,7 @@ class w extends(o = Chunk311907.Ay.PersistedStore) {
   }
   get pipWindow() {
     var e, t, n;
-    return null == r && null == i && null == a && null == s ? null : m.get(null != (e = null != (t = null != (n = null != r ? r : i) ? n : a) ? t : s) ? e : "")
+    return null == r && null == i && null == a && null == o ? null : m.get(null != (e = null != (t = null != (n = null != r ? r : i) ? n : a) ? t : o) ? e : "")
   }
   get pipVideoWindow() {
     return null == r ? null : m.get(r)
@@ -196,7 +196,7 @@ class w extends(o = Chunk311907.Ay.PersistedStore) {
     return null == a ? null : m.get(a)
   }
   get pipHavenWindow() {
-    return null == s ? null : m.get(s)
+    return null == o ? null : m.get(o)
   }
   get pipWindows() {
     return m

@@ -1,14 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 965304, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 3911 **/
+/** chunk id: 965304, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => v,
-  e: () => O
+  A: () => A,
+  e: () => m
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk554146 = require("./554146.js"),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
@@ -24,48 +24,48 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk738386 = require("./738386.js");
 
-function O() {
+function m() {
   let e, t = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    n = (0, h.V)(),
-    a = (0, _.O)(),
-    s = (0, f.cg)(),
-    l = null != (0, p.A)(),
-    c = s || l,
-    u = (null == n ? true : n.trial_id) === y.Dw,
-    b = [];
-  c && b.push(o.M.BOGO_2025_NITRO_TAB_BADGE);
-  let [O, v] = (0, d.kn)(b, true, true);
-  return i.useEffect(() => {
-    true === t && O === o.M.BOGO_2025_NITRO_TAB_BADGE && v(E.i.AUTO_DISMISS)
-  }, [v, t, O]), c ? e = (0, r.jsx)(m.A, {}) : null != a ? e = (0, r.jsx)(g.fY, {
+    n = (0, f.V)(),
+    r = (0, p.O)(),
+    l = (0, h.cg)(),
+    a = null != (0, g.A)(),
+    d = l || a,
+    u = (null == n ? true : n.trial_id) === b.Dw,
+    S = [];
+  d && S.push(o.M.BOGO_2025_NITRO_TAB_BADGE);
+  let [m, A] = (0, c.kn)(S, true, true);
+  return s.useEffect(() => {
+    true === t && m === o.M.BOGO_2025_NITRO_TAB_BADGE && A(y.i.AUTO_DISMISS)
+  }, [A, t, m]), d ? e = (0, i.jsx)(C.A, {}) : null != r ? e = (0, i.jsx)(v.fY, {
     isTabSelected: t,
-    userDiscount: a,
+    userDiscount: r,
     includesAmountOff: false
-  }) : null == n || u || (e = (0, r.jsx)(g.Ag, {
+  }) : null == n || u || (e = (0, i.jsx)(v.Ag, {
     isTabSelected: t,
     trialOffer: n
   })), e
 }
 
-function v(e) {
+function A(e) {
   var t, n;
   let {
-    decoration: i,
-    label: a,
+    decoration: s,
+    label: r,
     isSelected: o
-  } = e, d = (0, f.cg)(), p = null != (t = null != (n = O(o)) ? n : i) ? t : (0, r.jsx)(c.tvc, {
+  } = e, c = (0, h.cg)(), g = null != (t = null != (n = m(o)) ? n : s) ? t : (0, i.jsx)(d.tvc, {
     size: "sm",
-    color: o ? l.A.unsafe_rawColors.WHITE.css : u.k0.PREMIUM_TIER_2
+    color: o ? a.A.unsafe_rawColors.WHITE.css : u.k0.PREMIUM_TIER_2
   });
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)("div", {
-      className: s()(b.gj, {
-        [b.wH]: o && !d
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)("div", {
+      className: l()(S.gj, {
+        [S.wH]: o && !c
       }),
-      children: [a, p]
-    }), (0, r.jsx)("div", {
-      className: s()(b.Tp, {
-        [b._I]: !d && o
+      children: [r, g]
+    }), (0, i.jsx)("div", {
+      className: l()(S.Tp, {
+        [S._I]: !c && o
       })
     })]
   })

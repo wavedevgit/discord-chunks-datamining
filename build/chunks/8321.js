@@ -41,19 +41,19 @@ class A {
     (0, l._)(this, v, false)
   }
   get shouldStopPropagation() {
-    return (0, s._)(this, v)
+    return (0, o._)(this, v)
   }
   constructor(e, t, n, r) {
     var i;
-    (0, o._)(this, v, {
+    (0, s._)(this, v, {
       writable: true,
       value: true
     }), (0, l._)(this, v, true);
     let a = null != (i = null == r ? true : r.target) ? i : n.currentTarget;
-    const s = null == a ? true : a.getBoundingClientRect();
+    const o = null == a ? true : a.getBoundingClientRect();
     let c, u = 0,
       d, f = null;
-    null != n.clientX && null != n.clientY && (d = n.clientX, f = n.clientY), s && (null != d && null != f ? (c = d - s.left, u = f - s.top) : (c = s.width / 2, u = s.height / 2)), this.type = e, this.pointerType = t, this.target = n.currentTarget, this.shiftKey = n.shiftKey, this.metaKey = n.metaKey, this.ctrlKey = n.ctrlKey, this.altKey = n.altKey, this.x = c, this.y = u
+    null != n.clientX && null != n.clientY && (d = n.clientX, f = n.clientY), o && (null != d && null != f ? (c = d - o.left, u = f - o.top) : (c = o.width / 2, u = o.height / 2)), this.type = e, this.pointerType = t, this.target = n.currentTarget, this.shiftKey = n.shiftKey, this.metaKey = n.metaKey, this.ctrlKey = n.ctrlKey, this.altKey = n.altKey, this.x = c, this.y = u
   }
 }
 let I = Symbol("linkClicked"),
@@ -65,17 +65,17 @@ function C(e) {
     onPress: t,
     onPressChange: n,
     onPressStart: a,
-    onPressEnd: s,
-    onPressUp: o,
+    onPressEnd: o,
+    onPressUp: s,
     onClick: l,
     isDisabled: u,
     isPressed: v,
     preventFocusOnPress: C,
     shouldCancelOnPointerExit: P,
-    allowTextSelectionOnPress: x,
-    ref: L,
-    ...j
-  } = O(e), [M, k] = (0, b.useState)(false), U = (0, b.useRef)({
+    allowTextSelectionOnPress: L,
+    ref: x,
+    ...M
+  } = O(e), [j, k] = (0, b.useState)(false), U = (0, b.useRef)({
     isPressed: false,
     ignoreEmulatedMouseEvents: false,
     didFirePressStart: false,
@@ -87,8 +87,8 @@ function C(e) {
     disposables: []
   }), {
     addGlobalListener: G,
-    removeAllGlobalListeners: V
-  } = (0, d.A)(), F = (0, f.J)((e, t) => {
+    removeAllGlobalListeners: F
+  } = (0, d.A)(), V = (0, f.J)((e, t) => {
     let r = U.current;
     if (u || r.didFirePressStart) returnfalse;
     let i = true;
@@ -101,29 +101,29 @@ function C(e) {
     let a = U.current;
     if (!a.didFirePressStart) returnfalse;
     a.didFirePressStart = false, a.isTriggeringEvent = true;
-    let o = true;
-    if (s) {
+    let s = true;
+    if (o) {
       let t = new A("pressend", r, e);
-      s(t), o = t.shouldStopPropagation
+      o(t), s = t.shouldStopPropagation
     }
     if (n && n(false), k(false), t && i && !u) {
       let n = new A("press", r, e);
-      t(n), o && (o = n.shouldStopPropagation)
+      t(n), s && (s = n.shouldStopPropagation)
     }
-    return a.isTriggeringEvent = false, o
+    return a.isTriggeringEvent = false, s
   }), H = (0, f.J)((e, t) => {
     let n = U.current;
     if (u) returnfalse;
-    if (o) {
+    if (s) {
       n.isTriggeringEvent = true;
       let r = new A("pressup", t, e);
-      return o(r), n.isTriggeringEvent = false, r.shouldStopPropagation
+      return s(r), n.isTriggeringEvent = false, r.shouldStopPropagation
     }
     returntrue
   }), Y = (0, f.J)(e => {
     let t = U.current;
     if (t.isPressed && t.target) {
-      for (let n of (t.didFirePressStart && null != t.pointerType && B(R(t.target, e), t.pointerType, false), t.isPressed = false, t.isOverTarget = false, t.activePointerId = null, t.pointerType = null, V(), x || (0, i.E)(t.target), t.disposables)) n();
+      for (let n of (t.didFirePressStart && null != t.pointerType && B(R(t.target, e), t.pointerType, false), t.isPressed = false, t.isOverTarget = false, t.activePointerId = null, t.pointerType = null, F(), L || (0, i.E)(t.target), t.disposables)) n();
       t.disposables = []
     }
   }), W = (0, f.J)(e => {
@@ -144,7 +144,7 @@ function C(e) {
             D((0, p.wt)(t.nativeEvent), t.key) && t.preventDefault();
             let i = true;
             if (!e.isPressed && !t.repeat) {
-              e.target = t.currentTarget, e.isPressed = true, e.pointerType = "keyboard", i = F(t, "keyboard");
+              e.target = t.currentTarget, e.isPressed = true, e.pointerType = "keyboard", i = V(t, "keyboard");
               let r = t.currentTarget,
                 a = t => {
                   w(t, r) && !t.repeat && (0, p.sD)(r, (0, p.wt)(t)) && e.target && H(R(e.target, t), "keyboard")
@@ -158,7 +158,7 @@ function C(e) {
           if ((!t || (0, p.sD)(t.currentTarget, (0, p.wt)(t.nativeEvent))) && t && 0 === t.button && !e.isTriggeringEvent && !g.Fe.isOpening) {
             let n = true;
             if (u && t.preventDefault(), !e.ignoreEmulatedMouseEvents && !e.isPressed && ("virtual" === e.pointerType || (0, E.Y)(t.nativeEvent))) {
-              let e = F(t, "virtual"),
+              let e = V(t, "virtual"),
                 r = H(t, "virtual"),
                 i = B(t, "virtual");
               K(t), n = e && r && i
@@ -178,7 +178,7 @@ function C(e) {
           D((0, p.wt)(t), t.key) && t.preventDefault();
           let n = (0, p.wt)(t),
             i = (0, p.sD)(e.target, (0, p.wt)(t));
-          B(R(e.target, t), "keyboard", i), i && z(t, e.target), V(), "Enter" !== t.key && N(e.target) && (0, p.sD)(e.target, n) && !t[I] && (t[I] = true, (0, g.Fe)(e.target, t, false)), e.isPressed = false, null == (r = e.metaKeyEvents) || r.delete(t.key)
+          B(R(e.target, t), "keyboard", i), i && z(t, e.target), F(), "Enter" !== t.key && N(e.target) && (0, p.sD)(e.target, n) && !t[I] && (t[I] = true, (0, g.Fe)(e.target, t, false)), e.isPressed = false, null == (r = e.metaKeyEvents) || r.delete(t.key)
         } else if ("Meta" === t.key && (null == (n = e.metaKeyEvents) ? true : n.size)) {
           let t = e.metaKeyEvents;
           for (let n of (e.metaKeyEvents = true, t.values())) null == (i = e.target) || i.dispatchEvent(new KeyboardEvent("keyup", n))
@@ -194,9 +194,9 @@ function C(e) {
         e.pointerType = t.pointerType;
         let r = true;
         if (!e.isPressed) {
-          e.isPressed = true, e.isOverTarget = true, e.activePointerId = t.pointerId, e.target = t.currentTarget, x || (0, i.M)(e.target), r = F(t, e.pointerType);
-          let s = (0, p.wt)(t.nativeEvent);
-          "releasePointerCapture" in s && s.releasePointerCapture(t.pointerId), G((0, _.TW)(t.currentTarget), "pointerup", n, false), G((0, _.TW)(t.currentTarget), "pointercancel", a, false)
+          e.isPressed = true, e.isOverTarget = true, e.activePointerId = t.pointerId, e.target = t.currentTarget, L || (0, i.M)(e.target), r = V(t, e.pointerType);
+          let o = (0, p.wt)(t.nativeEvent);
+          "releasePointerCapture" in o && o.releasePointerCapture(t.pointerId), G((0, _.TW)(t.currentTarget), "pointerup", n, false), G((0, _.TW)(t.currentTarget), "pointercancel", a, false)
         }
         r && t.stopPropagation()
       }, t.onMouseDown = t => {
@@ -210,7 +210,7 @@ function C(e) {
       }, t.onPointerUp = t => {
         (0, p.sD)(t.currentTarget, (0, p.wt)(t.nativeEvent)) && "virtual" !== e.pointerType && (0 !== t.button || e.isPressed || H(t, e.pointerType || t.pointerType))
       }, t.onPointerEnter = t => {
-        t.pointerId === e.activePointerId && e.target && !e.isOverTarget && null != e.pointerType && (e.isOverTarget = true, F(R(e.target, t), e.pointerType))
+        t.pointerId === e.activePointerId && e.target && !e.isOverTarget && null != e.pointerType && (e.isOverTarget = true, V(R(e.target, t), e.pointerType))
       }, t.onPointerLeave = t => {
         t.pointerId === e.activePointerId && e.target && e.isOverTarget && null != e.pointerType && (e.isOverTarget = false, B(R(e.target, t), e.pointerType, false), W(t))
       };
@@ -234,10 +234,10 @@ function C(e) {
       }
     }
     return t
-  }, [G, u, C, V, x, Y, W, B, F, H, K, z]);
+  }, [G, u, C, F, L, Y, W, B, V, H, K, z]);
   return (0, b.useEffect)(() => {
-    if (!L) return;
-    let e = (0, _.TW)(L.current);
+    if (!x) return;
+    let e = (0, _.TW)(x.current);
     if (!e || !e.head || e.getElementById(S)) return;
     let t = e.createElement("style");
     t.id = S, t.textContent = `
@@ -247,16 +247,16 @@ function C(e) {
   }
 }
     `.trim(), e.head.prepend(t)
-  }, [L]), (0, b.useEffect)(() => {
+  }, [x]), (0, b.useEffect)(() => {
     let e = U.current;
     return () => {
       var t;
-      for (let n of (x || (0, i.E)(null != (t = e.target) ? t : true), e.disposables)) n();
+      for (let n of (L || (0, i.E)(null != (t = e.target) ? t : true), e.disposables)) n();
       e.disposables = []
     }
-  }, [x]), {
-    isPressed: v || M,
-    pressProps: (0, c.v)(j, q, {
+  }, [L]), {
+    isPressed: v || j,
+    pressProps: (0, c.v)(M, q, {
       [T]: true
     })
   }
@@ -271,7 +271,7 @@ function w(e, t) {
     key: n,
     code: r
   } = e, i = t, a = i.getAttribute("role");
-  return ("Enter" === n || " " === n || "Spacebar" === n || "Space" === r) && !(i instanceof(0, _.mD)(i).HTMLInputElement && !L(i, n) || i instanceof(0, _.mD)(i).HTMLTextAreaElement || i.isContentEditable) && !(("link" === a || !a && N(i)) && "Enter" !== n)
+  return ("Enter" === n || " " === n || "Spacebar" === n || "Space" === r) && !(i instanceof(0, _.mD)(i).HTMLInputElement && !x(i, n) || i instanceof(0, _.mD)(i).HTMLTextAreaElement || i.isContentEditable) && !(("link" === a || !a && N(i)) && "Enter" !== n)
 }
 
 function R(e, t) {
@@ -293,10 +293,10 @@ function P(e) {
 }
 
 function D(e, t) {
-  return e instanceof HTMLInputElement ? !L(e, t) : P(e)
+  return e instanceof HTMLInputElement ? !x(e, t) : P(e)
 }
-let x = new Set(["checkbox", "radio", "range", "color", "file", "image", "button", "submit", "reset"]);
+let L = new Set(["checkbox", "radio", "range", "color", "file", "image", "button", "submit", "reset"]);
 
-function L(e, t) {
-  return "checkbox" === e.type || "radio" === e.type ? " " === t : x.has(e.type)
+function x(e, t) {
+  return "checkbox" === e.type || "radio" === e.type ? " " === t : L.has(e.type)
 }

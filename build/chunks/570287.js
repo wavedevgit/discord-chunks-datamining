@@ -13,16 +13,16 @@ var Chunk311907 = require("./311907.js"),
   Chunk696451 = require("./696451.js"),
   Chunk994500 = require("./994500.js");
 let u = (e, t) => {
-  let n = o.default.getId() === e,
+  let n = s.default.getId() === e,
     r = null != t && a.A.isLurking(t),
-    u = s.$s.getSetting(),
+    u = o.$s.getSetting(),
     d = c.A.isFriend(e);
-  return !n && !r && (d || null != l.Ay.memberOf(e).find(e => !u.includes(e))) || i.A.getGameFriendsForUser(e).length > 0 && s.Zk.getSetting()
+  return !n && !r && (d || null != l.Ay.memberOf(e).find(e => !u.includes(e))) || i.A.getGameFriendsForUser(e).length > 0 && o.Zk.getSetting()
 };
 
 function d(e, t) {
-  let n = (0, r.bG)([o.default], () => o.default.getId() === e),
+  let n = (0, r.bG)([s.default], () => s.default.getId() === e),
     u = (0, r.bG)([a.A], () => null != t && a.A.isLurking(t)),
-    d = s.$s.useSetting();
-  return (0, r.bG)([c.A, l.Ay, i.A], () => !n && !u && (c.A.isFriend(e) || null != l.Ay.memberOf(e).find(e => !d.includes(e))) || i.A.getGameFriendsForUser(e).length > 0 && s.Zk.getSetting())
+    d = o.$s.useSetting();
+  return (0, r.bG)([c.A, l.Ay, i.A], () => !n && !u && (c.A.isFriend(e) || null != l.Ay.memberOf(e).find(e => !d.includes(e))) || i.A.getGameFriendsForUser(e).length > 0 && o.Zk.getSetting())
 }

@@ -9,7 +9,7 @@ var Chunk668279 = require("./668279.js"),
   Chunk723702 = require("./723702.js"),
   Chunk837921 = require("./837921.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -49,9 +49,9 @@ function u(e, t) {
 }
 
 function d() {
-  var e, t, n, r, i, o;
+  var e, t, n, r, i, s;
   let l = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  a.isPlatformEmbedded && s.Ay.updateCrashReporter({
+  a.isPlatformEmbedded && o.Ay.updateCrashReporter({
     user_id: null != (e = l.id) ? e : "",
     username: null != (t = l.username) ? t : "",
     email: null != (n = l.email) ? n : "",
@@ -59,7 +59,7 @@ function d() {
       user: {
         id: null != (r = l.id) ? r : "",
         username: null != (i = l.username) ? i : "",
-        email: null != (o = l.email) ? o : ""
+        email: null != (s = l.email) ? s : ""
       }
     }
   })

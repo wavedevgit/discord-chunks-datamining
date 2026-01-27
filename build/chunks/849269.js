@@ -39,8 +39,8 @@ function S(e) {
     context: n,
     locationObject: r,
     onActivityItemSelected: i,
-    embeddedActivitiesManager: s,
-    assetNames: o = ["embedded_cover"],
+    embeddedActivitiesManager: o,
+    assetNames: s = ["embedded_cover"],
     backgroundResolution: l = I,
     launchingComponentId: c,
     commandOrigin: d,
@@ -51,7 +51,7 @@ function S(e) {
   } = t, E = h.client_platform_config[(0, m.A)((0, u.getOS)())], y = Date.now(), O = null != E.label_until && y < Date.parse(E.label_until) && null != E.label_from && y > Date.parse(E.label_from), v = (0, b.A)({
     applicationId: p.id,
     size: l,
-    names: o,
+    names: s,
     format: "webp"
   }), A = null != h.activity_preview_video_asset_id ? (0, g.A)(p.id, h.activity_preview_video_asset_id) : null, S = (0, _.Ay)("channel" === n.type ? n.channel : true).find(e => {
     let {
@@ -65,7 +65,7 @@ function S(e) {
     application: t.application,
     context: n,
     locationObject: r,
-    embeddedActivitiesManager: s,
+    embeddedActivitiesManager: o,
     onActivityItemSelectedProp: i,
     launchingComponentId: c,
     commandOrigin: d,
@@ -95,16 +95,16 @@ function C(e) {
     context: t,
     applicationId: n,
     fetchesApplication: r = true
-  } = e, i = 0, a = "channel" === t.type ? t.channel : true, s = (0, E.A)(), l = (0, y.A)({
+  } = e, i = 0, a = "channel" === t.type ? t.channel : true, o = (0, E.A)(), l = (0, y.A)({
     fetchesApplication: r
-  }), c = (0, o.h)(n, r), u = (0, _.Ay)(a).find(e => {
+  }), c = (0, s.h)(n, r), u = (0, _.Ay)(a).find(e => {
     let {
       embeddedActivity: t
     } = e;
     return null != c && c.id === t.applicationId
   });
   if (null == c) return i;
-  let d = (0, h.H)(null == s ? true : s.location);
+  let d = (0, h.H)(null == o ? true : o.location);
   return null != a && d === a.id && (null == l ? true : l.id) === c.id ? i = 2 : null != u && (i = 1), i
 }
 
@@ -114,7 +114,7 @@ function N(e) {
     application: n,
     botUserIdForAppDM: r,
     context: a,
-    locationObject: o,
+    locationObject: s,
     embeddedActivitiesManager: u,
     onActivityItemSelectedProp: _,
     launchingComponentId: h,
@@ -131,7 +131,7 @@ function N(e) {
     fetchesApplication: b
   }), {
     analyticsLocations: T
-  } = (0, s.Ay)(), N = (0, E.A)(), w = (0, c.e)(n);
+  } = (0, o.Ay)(), N = (0, E.A)(), w = (0, c.e)(n);
   if (null == n) return () => {
     null == _ || _({
       applicationId: ""
@@ -161,7 +161,7 @@ function N(e) {
         }
         await (0, p.A)({
           targetApplicationId: I,
-          locationObject: o,
+          locationObject: s,
           channelId: e,
           analyticsLocations: T,
           componentId: h,
@@ -180,7 +180,7 @@ function N(e) {
         d.Ay.isLaunchingActivity() || await (0, f.A)({
           applicationId: I,
           activityChannelId: "channel" === a.type ? a.channel.id : true,
-          locationObject: o,
+          locationObject: s,
           analyticsLocations: T,
           componentId: h,
           sectionName: g,

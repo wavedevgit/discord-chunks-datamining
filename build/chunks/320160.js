@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 320160, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 320160, original params: e,t,n (module,exports,require) **/
 module.exports = {
   rc: "statusCounts_a4b24e",
   h5: "status_a4b24e",

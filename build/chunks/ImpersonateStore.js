@@ -91,12 +91,12 @@ function v(e) {
   if (null == n || null == E[n]) returnfalse;
   let a = E[n];
   if (null == a || a.type !== d._.NEW_MEMBER) returnfalse;
-  let s = null != (t = a.optInChannels) ? t : new Set;
+  let o = null != (t = a.optInChannels) ? t : new Set;
   return u.default.keys(r).forEach(e => {
     var t;
     let n = r[e];
-    i.Lt(null != (t = n.flags) ? t : 0, p.vv.OPT_IN_ENABLED) ? s.add(e) : s.delete(e)
-  }), a.optInChannels = s, true
+    i.Lt(null != (t = n.flags) ? t : 0, p.vv.OPT_IN_ENABLED) ? o.add(e) : o.delete(e)
+  }), a.optInChannels = o, true
 }
 
 function A(e) {
@@ -108,10 +108,10 @@ function A(e) {
     removedOptionIds: a
   } = e;
   if (null == n || null == E[n]) returnfalse;
-  let s = E[n];
-  if (null == s || s.type !== d._.NEW_MEMBER) returnfalse;
-  let o = null != (t = s.onboardingResponses) ? t : new Set;
-  return null != a && a.length > 0 && a.forEach(e => o.delete(e)), i ? o.add(r) : o.delete(r), s.onboardingResponses = o, true
+  let o = E[n];
+  if (null == o || o.type !== d._.NEW_MEMBER) returnfalse;
+  let s = null != (t = o.onboardingResponses) ? t : new Set;
+  return null != a && a.length > 0 && a.forEach(e => s.delete(e)), i ? s.add(r) : s.delete(r), o.onboardingResponses = s, true
 }
 
 function I(e) {
@@ -123,13 +123,13 @@ function I(e) {
   if (null == t) returnfalse;
   let i = E[t];
   return null != i && (null != n && (i.roles = n.reduce((e, n) => {
-    let r = o.A.getRole(t, n);
+    let r = s.A.getRole(t, n);
     return null != r && (e[n] = r), e
   }, {})), null != r && i.type === d._.NEW_MEMBER && (i.memberOptions.flags = r), true)
 }
 class S extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.A, o.A)
+    this.waitFor(l.A, s.A)
   }
   hasViewingRoles() {
     return !(0, c.DJ)(E)

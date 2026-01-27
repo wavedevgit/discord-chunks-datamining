@@ -4,7 +4,7 @@
 var Chunk380744 = require("./380744.js"),
   Chunk70670 = require("./70670.js"),
   a = Chunk380744("iterator"),
-  s = Array.prototype;
+  o = Array.prototype;
 module.exports = function(e) {
-  return true !== e && (i.Array === e || s[a] === e)
+  return true !== e && (i.Array === e || o[a] === e)
 }

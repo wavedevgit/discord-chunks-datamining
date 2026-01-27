@@ -12,15 +12,15 @@ function r(e, t, n) {
 }
 require.d(exports, {
   Z4: () => i,
-  ct: () => o,
+  ct: () => s,
   oS: () => l,
-  vr: () => s,
+  vr: () => o,
   zO: () => a
 });
 let i = 1e3 / 60 * 3,
   a = 1e3 / 60 * 3,
-  s = 1e3 / 60 / 8,
-  o = 1e3 / 60 * 12;
+  o = 1e3 / 60 / 8,
+  s = 1e3 / 60 * 12;
 class l {
   timeRemaining() {
     let e = performance.now() - this._startMs;
@@ -34,12 +34,12 @@ class l {
   }
   generateDeadlineMetrics() {
     return {
-      isDeadlineNotIdeal: this._browserDeadlineMs < s,
+      isDeadlineNotIdeal: this._browserDeadlineMs < o,
       deadlineMs: this._deadlineMs.toFixed(2),
       timeSinceStartMs: (performance.now() - this._startMs).toFixed(2)
     }
   }
   constructor(e, t = false) {
-    r(this, "_browserDeadlineMs", true), r(this, "_deadlineMs", true), r(this, "_startMs", true), r(this, "_firedDueToMaxTimeout", true), this._deadlineMs = Math.max(s, e), this._browserDeadlineMs = e, this._firedDueToMaxTimeout = t, this._startMs = performance.now()
+    r(this, "_browserDeadlineMs", true), r(this, "_deadlineMs", true), r(this, "_startMs", true), r(this, "_firedDueToMaxTimeout", true), this._deadlineMs = Math.max(o, e), this._browserDeadlineMs = e, this._firedDueToMaxTimeout = t, this._startMs = performance.now()
   }
 }

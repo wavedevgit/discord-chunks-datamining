@@ -9,7 +9,7 @@ var Chunk600975 = require("./600975.js"),
   Chunk734057 = require("./734057.js"),
   Chunk309010 = require("./309010.js"),
   Chunk287809 = require("./287809.js");
-let o = (0, Chunk600975.C)({
+let s = (0, Chunk600975.C)({
   kind: "guild",
   id: "2025-08_go_live_guild_notification",
   label: "Go live notification guild experiment",
@@ -36,7 +36,7 @@ function l(e) {
     guildId: t,
     location: n
   } = e;
-  return null != t && o.getCurrentConfig({
+  return null != t && s.getCurrentConfig({
     guildId: t,
     location: n
   }).enabled
@@ -45,7 +45,7 @@ function l(e) {
 function c(e, t) {
   let n = e;
   if (null == n) {
-    if (null == s.default.getCurrentUser()) returnfalse;
+    if (null == o.default.getCurrentUser()) returnfalse;
     n = a.A.getVoiceChannelId()
   }
   if (null == n) returnfalse;

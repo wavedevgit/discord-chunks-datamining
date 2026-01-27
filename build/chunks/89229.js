@@ -34,7 +34,7 @@ var Chunk64700 = require("./64700.js"),
         handleExited: i,
         firstRender: true
       }, r
-    }(0, s.A)(t, e);
+    }(0, o.A)(t, e);
     var n = t.prototype;
     return n.componentDidMount = function() {
       this.mounted = true, this.setState({
@@ -65,12 +65,12 @@ var Chunk64700 = require("./64700.js"),
         n = e.childFactory,
         i = (0, r.A)(e, ["component", "childFactory"]),
         a = this.state.contextValue,
-        s = u(this.state.children).map(n);
-      return (delete i.appear, delete i.enter, delete i.exit, null === t) ? o.createElement(l.A.Provider, {
+        o = u(this.state.children).map(n);
+      return (delete i.appear, delete i.enter, delete i.exit, null === t) ? s.createElement(l.A.Provider, {
         value: a
-      }, s) : o.createElement(l.A.Provider, {
+      }, o) : s.createElement(l.A.Provider, {
         value: a
-      }, o.createElement(t, i, s))
+      }, s.createElement(t, i, o))
     }, t
   }(Chunk64700.Component);
 f.propTypes = {}, f.defaultProps = d;

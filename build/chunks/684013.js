@@ -270,13 +270,13 @@ let v = new Chunk626584.A("OverlayActionCreators"),
         n = d.A.getWidgetsForLayout(t),
         i = d.A.getWidgetConfig(g.uss.GUILDS),
         a = d.A.getWidgetConfig(g.uss.TEXT),
-        s = d.A.getWidgetConfig(g.uss.GUILDS_TEXT),
+        o = d.A.getWidgetConfig(g.uss.GUILDS_TEXT),
         l = d.A.getWidgetDefaultSettings(g.uss.GUILDS_TEXT),
         c = d.A.getWidgetDefaultSettings(g.uss.GUILDS),
         u = d.A.getWidgetDefaultSettings(g.uss.TEXT);
-      if ((0, o.xp)(g.uss.TEXT, {
+      if ((0, s.xp)(g.uss.TEXT, {
           pinned: e
-        }), 0 === n.length || null == i || null == a || null == s || null == l || null == c || null == u) return;
+        }), 0 === n.length || null == i || null == a || null == o || null == l || null == c || null == u) return;
       let f = p.A.windowSize(),
         E = {
           width: 0,
@@ -324,17 +324,17 @@ let v = new Chunk626584.A("OverlayActionCreators"),
         e -= c.minSize.width;
         let [n, i] = (0, _.M4)(A, O(y({}, I), {
           width: c.minSize.width
-        }), f), [a, s] = (0, _.n7)(A, O(y({}, I), {
+        }), f), [a, o] = (0, _.n7)(A, O(y({}, I), {
           width: e
         }), f, {
           x: 10,
           y: 10
-        }), o = d.A.getWidgetDefaultSettings(g.uss.TEXT);
-        if (null == o) throw Error("OverlayActionCreators.setPinChat: No config for TEXT exists");
-        (0, m.jn)(O(y({}, o), {
+        }), s = d.A.getWidgetDefaultSettings(g.uss.TEXT);
+        if (null == s) throw Error("OverlayActionCreators.setPinChat: No config for TEXT exists");
+        (0, m.jn)(O(y({}, s), {
           type: g.uss.TEXT,
           id: (0, r.A)(),
-          size: s,
+          size: o,
           anchor: a,
           layoutId: t
         }));

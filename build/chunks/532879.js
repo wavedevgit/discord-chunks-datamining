@@ -4,11 +4,11 @@ let Chunk4144 = require("./4144.js"),
   Chunk481558 = require("./481558.js");
 module.exports = (e, t, n) => {
   let a = [],
-    s = null,
     o = null,
+    s = null,
     l = e.sort((e, t) => i(e, t, n));
-  for (let e of l) r(e, t, n) ? (o = e, s || (s = e)) : (o && a.push([s, o]), o = null, s = null);
-  s && a.push([s, null]);
+  for (let e of l) r(e, t, n) ? (s = e, o || (o = e)) : (s && a.push([o, s]), s = null, o = null);
+  o && a.push([o, null]);
   let c = [];
   for (let [e, t] of a) e === t ? c.push(e) : t || e !== l[0] ? t ? e === l[0] ? c.push(`<=${t}`) : c.push(`${e} - ${t}`) : c.push(`>=${e}`) : c.push("*");
   let u = c.join(" || "),

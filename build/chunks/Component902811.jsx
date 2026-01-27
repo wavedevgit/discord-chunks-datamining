@@ -27,8 +27,8 @@ function y(e) {
     movLight: n = h,
     mp4Dark: i = f,
     mp4Light: a = m,
-    pngDark: s = p,
-    pngLight: o = g,
+    pngDark: o = p,
+    pngLight: s = g,
     webmDark: c = _,
     webmLight: y = E
   } = e, b = (0, l.Z5)(), O = [(0, r.jsx)("source", {
@@ -36,13 +36,13 @@ function y(e) {
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
     alt: "",
-    src: s
+    src: o
   }, "png")], v = [(0, r.jsx)("source", {
     src: a,
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
     alt: "",
-    src: o
+    src: s
   }, "png")];
   return (b > 52 || false === b) && (O.unshift((0, r.jsx)("source", {
     src: c,
@@ -68,15 +68,15 @@ let b = Chunk552122.A.getAppSpinnerSources(),
     var t;
     let {
       loop: n = true,
-      autoPlay: o = true,
+      autoPlay: s = true,
       setRef: l,
       className: d,
       onReady: f
     } = e, {
       theme: p
-    } = (0, s.wRf)(), {
+    } = (0, o.wRf)(), {
       reducedMotion: _
-    } = i.useContext(s.CZY), h = v;
+    } = i.useContext(o.CZY), h = v;
     null != O && (h = O);
     let m = null != (t = h[(0, a.Mw)(p) ? u.NJ8.DARK : u.NJ8.LIGHT]) ? t : h[u.NJ8.DARK];
     return (0, r.jsx)(c.A, {
@@ -84,7 +84,7 @@ let b = Chunk552122.A.getAppSpinnerSources(),
       onLoadedData: f,
       className: d,
       loop: !_.enabled && n,
-      autoPlay: !_.enabled && o,
+      autoPlay: !_.enabled && s,
       playsInline: true,
       "data-testid": "app-spinner",
       children: m

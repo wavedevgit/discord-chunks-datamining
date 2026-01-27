@@ -38,14 +38,14 @@ function f(e) {
   let {
     confettiSpawnRef: t,
     shouldFire: n
-  } = e, r = (0, a.bG)([s.A], () => s.A.isFocused()), o = (0, c.A)(), u = (0, l.A)(t);
+  } = e, r = (0, a.bG)([o.A], () => o.A.isFocused()), s = (0, c.A)(), u = (0, l.A)(t);
   return i.useEffect(() => {
-    r && n && null != u && o.fire(u.x, u.y)
-  }, [o, r, u, n]), null
+    r && n && null != u && s.fire(u.x, u.y)
+  }, [s, r, u, n]), null
 }
 
 function p(e) {
-  return (0, r.jsx)(o.A, {
+  return (0, r.jsx)(s.A, {
     confettiLocation: e.confettiLocation,
     children: (0, r.jsx)(f, d({}, e))
   })

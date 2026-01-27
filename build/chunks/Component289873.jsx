@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk844222 = require("./844222.js"),
   Chunk460890 = require("./460890.jsx"),
   Chunk423161 = require("./423161.js");
@@ -96,9 +96,9 @@ function E(e) {
     i18n: m
   } = (0, l.G9)(), {
     reducedMotion: E
-  } = i.useContext(o.C), y = E.enabled ? g(n) : n, b = null != (t = h["aria-label"]) ? t : m.SPINNER_LOADING_LABEL;
+  } = i.useContext(s.C), y = E.enabled ? g(n) : n, b = null != (t = h["aria-label"]) ? t : m.SPINNER_LOADING_LABEL;
   if ("spinningCircle" === y || "spinningCircleSimple" === y) return (0, r.jsx)("div", p(d({
-    className: s()(c.spinner, c[y], u, {
+    className: o()(c.spinner, c[y], u, {
       [c.stopAnimation]: !a
     }),
     role: "img"
@@ -111,18 +111,18 @@ function E(e) {
         viewBox: "25 25 50 50",
         children: ["spinningCircle" === y && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("circle", {
-            className: s()(c.path, c.path3, f),
+            className: o()(c.path, c.path3, f),
             cx: "50",
             cy: "50",
             r: "20"
           }), (0, r.jsx)("circle", {
-            className: s()(c.path, c.path2, f),
+            className: o()(c.path, c.path2, f),
             cx: "50",
             cy: "50",
             r: "20"
           })]
         }), (0, r.jsx)("circle", {
-          className: s()(c.path, f),
+          className: o()(c.path, f),
           cx: "50",
           cy: "50",
           r: "20"
@@ -130,16 +130,16 @@ function E(e) {
       })
     })
   }));
-  let O = s()(c.item, f);
+  let O = o()(c.item, f);
   return (0, r.jsx)("span", p(d({
-    className: s()(c.spinner, u, {
+    className: o()(c.spinner, u, {
       [c.stopAnimation]: !a
     }),
     role: "img",
     "aria-label": b
   }, h), {
     children: (0, r.jsxs)("span", {
-      className: s()(c.inner, c[y]),
+      className: o()(c.inner, c[y]),
       children: [(0, r.jsx)("span", {
         className: O
       }), (0, r.jsx)("span", {

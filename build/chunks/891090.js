@@ -24,9 +24,9 @@ let c = e => {
       guildStickers: l,
       stickersTotal: c
     } = e;
-    r.Ay.trackWithMetadata(s.HAw.EXPRESSION_PICKER_OPENED, {
+    r.Ay.trackWithMetadata(o.HAw.EXPRESSION_PICKER_OPENED, {
       width: t,
-      tab: o.kx.STICKER,
+      tab: s.kx.STICKER,
       badged: false,
       num_expressions_favorites: n.length,
       num_animated_expressions_favorites: n.filter(e => (0, a.Tw)(e.format_type)).length,
@@ -45,9 +45,9 @@ let c = e => {
       sticker: n,
       location: i
     } = e;
-    n.type === a.NL.GUILD && (t = n.guild_id), r.Ay.trackWithMetadata(s.HAw.EXPRESSION_FAVORITED, {
+    n.type === a.NL.GUILD && (t = n.guild_id), r.Ay.trackWithMetadata(o.HAw.EXPRESSION_FAVORITED, {
       location: i,
-      expression_type: o.kx.STICKER,
+      expression_type: s.kx.STICKER,
       expression_id: n.id,
       expression_name: n.name,
       expression_guild_id: t,
@@ -56,13 +56,13 @@ let c = e => {
     })
   },
   d = () => {
-    i.default.track(s.HAw.SEARCH_STARTED, {
-      search_type: s.I4_.STICKER
+    i.default.track(o.HAw.SEARCH_STARTED, {
+      search_type: o.I4_.STICKER
     })
   },
   f = (e, t, n) => {
-    r.Ay.trackWithMetadata(s.HAw.SEARCH_RESULT_VIEWED, {
-      search_type: s.I4_.STICKER,
+    r.Ay.trackWithMetadata(o.HAw.SEARCH_RESULT_VIEWED, {
+      search_type: o.I4_.STICKER,
       total_results: t,
       query: e,
       is_suggestion: n
@@ -70,15 +70,15 @@ let c = e => {
   },
   p = (e, t, n) => {
     let i, {
-      sticker: o
+      sticker: s
     } = e;
-    o.type === a.NL.GUILD && (i = o.guild_id), r.Ay.trackWithMetadata(s.HAw.SEARCH_RESULT_SELECTED, {
-      load_id: o.id,
-      search_type: s.I4_.STICKER,
+    s.type === a.NL.GUILD && (i = s.guild_id), r.Ay.trackWithMetadata(o.HAw.SEARCH_RESULT_SELECTED, {
+      load_id: s.id,
+      search_type: o.I4_.STICKER,
       source_object: "Sticker Picker",
       total_results: n,
       expression_guild_id: i,
-      sticker_id: o.id,
+      sticker_id: s.id,
       query: t
     })
   },
@@ -87,7 +87,7 @@ let c = e => {
       sticker: n,
       category: i
     } = e;
-    n.type === a.NL.GUILD && (t = n.guild_id), r.Ay.trackWithMetadata(s.HAw.EXPRESSION_PICKER_EXPRESSION_SELECTED, {
+    n.type === a.NL.GUILD && (t = n.guild_id), r.Ay.trackWithMetadata(o.HAw.EXPRESSION_PICKER_EXPRESSION_SELECTED, {
       type: l.e.EMOJI_PICKER_STICKER_CLICKED,
       expression_id: n.id,
       expression_name: n.name,
@@ -98,9 +98,9 @@ let c = e => {
     })
   },
   h = e => {
-    null != e && "" !== e && r.Ay.trackWithMetadata(s.HAw.SEARCH_RESULT_EMPTY, {
+    null != e && "" !== e && r.Ay.trackWithMetadata(o.HAw.SEARCH_RESULT_EMPTY, {
       query: e,
-      search_type: s.I4_.STICKER,
+      search_type: o.I4_.STICKER,
       source_object: "Sticker Picker"
     })
   }

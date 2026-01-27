@@ -2,7 +2,7 @@
 /** chunk id: 313271, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => s
+  j: () => o
 }), require("./896048.js");
 var Chunk621466 = require("./621466.js");
 
@@ -19,7 +19,7 @@ let a = {
   rootMargin: "0px",
   threshold: .5
 };
-class s {
+class o {
   isVisible(e) {
     return null == this._observer || this._visibleComponents.has(e)
   }

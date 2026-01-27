@@ -34,19 +34,19 @@ function h(e) {
     enablePremiumBrandRefresh: I,
     isDisplayingWowMomentConfirmation: S,
     isPremiumGroupPurchase: T
-  } = e, C = (0, i.bG)([s.A], () => s.A.useReducedMotion), N = () => {
+  } = e, C = (0, i.bG)([o.A], () => o.A.useReducedMotion), N = () => {
     switch (t) {
-      case o.pn.PLAN_SELECT:
+      case s.pn.PLAN_SELECT:
         return m === f.PremiumTypes.TIER_0 ? p.intl.string(p.t.rk4Uu8) : p.intl.string(p.t["7YWj6+"]);
-      case o.pn.ADD_PAYMENT_STEPS:
+      case s.pn.ADD_PAYMENT_STEPS:
         return p.intl.string(p.t.vHqbJE);
-      case o.pn.REVIEW:
+      case s.pn.REVIEW:
         return p.intl.string(p.t.wKaVLC);
       default:
         return p.intl.string(p.t["7YWj6+"])
     }
   };
-  return O && (0, l.Ik)(v) && t !== o.pn.CONFIRM ? (0, r.jsxs)(a.rQ0, {
+  return O && (0, l.Ik)(v) && t !== s.pn.CONFIRM ? (0, r.jsxs)(a.rQ0, {
     className: _.sA,
     separator: false,
     "data-migration-pending": true,

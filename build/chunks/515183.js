@@ -37,7 +37,7 @@ function _(e) {
 function h(e) {
   let [t] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [a.Ay], n = t.getGameOrTransformedSubgameForPID(e);
   try {
-    return null == n ? o.Ay.GetWindowFullscreenTypeByPid(e) : o.Ay.GetWindowFullscreenTypeByPid(n.pid, n.name, n.fullscreenType)
+    return null == n ? s.Ay.GetWindowFullscreenTypeByPid(e) : s.Ay.GetWindowFullscreenTypeByPid(n.pid, n.name, n.fullscreenType)
   } catch (t) {
     var i;
     return d.error("Error getting overlay fullscreen type for pid ".concat(e, ": ").concat(t)), (0, l.pj)(t, c.Ue.OutOfProcess), null != (i = null == n ? true : n.fullscreenType) ? i : r.aI.UNKNOWN
@@ -87,7 +87,7 @@ function E(e) {
 function y(e, t) {
   let {
     quns: n
-  } = o.Ay.GetWindowFullscreenTypeExtraByPid(e, t.name);
+  } = s.Ay.GetWindowFullscreenTypeExtraByPid(e, t.name);
   return d.info("QUNS for ".concat(t.name, ": ").concat(n)), n === r.YL.QUNS_RUNNING_D3D_FULL_SCREEN
 }
 let b = {
@@ -102,15 +102,15 @@ async function I(e) {
     r = await m(e, n),
     i = a.Ay.getGameOrTransformedSubgameForPID(e);
   if (null == i || null == i.name) return r;
-  let o = null == (t = s.A.getGameByName(i.name)) ? true : t.id;
-  if (null == o) return r;
-  let l = b[o];
+  let s = null == (t = o.A.getGameByName(i.name)) ? true : t.id;
+  if (null == s) return r;
+  let l = b[s];
   return null != l ? l(e, i, r) : r
 }
 
 function S(e) {
   var t;
-  let n = null == (t = s.A.getGameByName(e.name)) ? true : t.id;
+  let n = null == (t = o.A.getGameByName(e.name)) ? true : t.id;
   return null != n && O.has(n)
 }
 

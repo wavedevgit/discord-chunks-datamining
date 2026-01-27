@@ -30,8 +30,8 @@ function p(e) {
   } = e;
   if ("string" != typeof r || "" === (r = r.trim())) return;
   let i = f[n] = null != (t = f[n]) ? t : [],
-    s = i.indexOf(r);
-  false !== s ? (i.splice(s, 1), i.unshift(r)) : null != i[0] && "" !== i[0] && r.startsWith(i[0]) ? i[0] = r : s < 0 && i.unshift(r), i.length > 5 && i.splice(5, i.length), a.w.set(o.nC, {
+    o = i.indexOf(r);
+  false !== o ? (i.splice(o, 1), i.unshift(r)) : null != i[0] && "" !== i[0] && r.startsWith(i[0]) ? i[0] = r : o < 0 && i.unshift(r), i.length > 5 && i.splice(5, i.length), a.w.set(s.nC, {
     history: f
   })
 }
@@ -40,7 +40,7 @@ function _(e) {
   let {
     id: t
   } = e;
-  delete f[t], a.w.set(o.nC, {
+  delete f[t], a.w.set(s.nC, {
     history: f
   })
 }
@@ -50,7 +50,7 @@ function h(e) {
     id: t,
     query: n
   } = e;
-  null != f[t] && (f[t] = f[t].filter(e => e !== n), a.w.set(o.nC, {
+  null != f[t] && (f[t] = f[t].filter(e => e !== n), a.w.set(s.nC, {
     history: f
   }))
 }
@@ -62,7 +62,7 @@ function m(e) {
 }
 
 function g() {
-  a.w.remove(o.nC), f = {}
+  a.w.remove(s.nC), f = {}
 }
 class E extends(r = Chunk311907.Ay.Store) {
   initialize() {

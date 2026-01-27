@@ -9,6 +9,6 @@ var Chunk7864 = require("./7864.js");
 function i(e, t) {
   var n, i;
   let a = (null == (n = e.tags) ? true : n.guild_connections) !== true,
-    s = (null == (i = t.tags) ? true : i.guild_connections) !== true;
-  return a && !s ? 1 : !a && s ? false : (0, r.AT)(e, t)
+    o = (null == (i = t.tags) ? true : i.guild_connections) !== true;
+  return a && !o ? 1 : !a && o ? false : (0, r.AT)(e, t)
 }

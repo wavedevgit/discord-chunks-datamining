@@ -5,20 +5,20 @@ require.d(exports, {
   B1: () => d,
   B6: () => c,
   QW: () => u,
-  iy: () => o
+  iy: () => s
 }), require("./896048.js"), require("./65821.js"), require("./457529.js");
 var Chunk73153 = require("./73153.js");
 
 function i(e, t) {
   if (null == e) return {};
-  var n, r, i, s = {};
+  var n, r, i, o = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r]);
-    return s
+    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+    return o
   }
-  if (s = a(e, t), Object.getOwnPropertySymbols)
-    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r]);
-  return s
+  if (o = a(e, t), Object.getOwnPropertySymbols)
+    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+  return o
 }
 
 function a(e, t) {
@@ -28,8 +28,8 @@ function a(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let s = new(require("./626584.js")).A("AVError");
-var o = function(e) {
+let o = new(require("./626584.js")).A("AVError");
+var s = function(e) {
   return e.STREAM_FAILED_TO_START = "stream-failed-to-start", e.NO_INPUT_DEVICES = "no-input-devices", e.NO_AUDIO_INPUT_DETECTED = "no-audio-input-detected", e.DEBUG_LOG_UPLOAD_FAILED = "debug-log-upload-failed", e.STREAM_VIEW_LOW_FPS = "stream-view-low-fps", e.STREAM_VIEW_HIGH_PACKET_LOSS = "stream-view-high-packet-loss", e.STREAM_SEND_LOW_FPS = "stream-send-low-encode-fps", e.STREAM_SEND_HIGH_PACKET_LOSS = "stream-send-high-packet-loss", e.STREAM_BAD_NETWORK_QUALITY = "stream-send-network-quality", e.STREAM_SOUNDSHARE_FAILED = "stream-soundshare-failed", e.NOISE_CANCELLER_ERROR = "noise-canceller-error", e.SCREENSHARE_OS_NOT_SUPPORTED = "screenshare-min-os-requirement", e.STREAM_RECONNECTING = "stream-reconnecting", e.VIDEO_DECODE_ERROR = "video-decode-error", e.VIDEO_ENCODE_ERROR = "video-encode-error", e.STREAM_FULL = "stream-full", e.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH = "audio-capture-sample-rate-mismatch", e.VIDEO_STREAM_SENDER_READY_TIMEOUT = "video-stream-sender-ready-timeout", e.VIDEO_STREAM_RECEIVER_READY_TIMEOUT = "video-stream-receiver-ready-timeout", e.VIDEO_STREAM_SENDER_READY_TIMEOUT_NO_STREAM = "video-stream-sender-ready-timeout-no-stream", e.VIDEO_STREAM_RECEIVER_READY_TIMEOUT_NO_STREAM = "video-stream-receiver-ready-timeout-no-stream", e.CAMERA_SEND_LOW_FPS = "camera-send-low-encode-fps", e.SCREENSHARE_OS_ERROR = "screenshare-os-error", e
 }({});
 let l = {
@@ -180,7 +180,7 @@ function u(e) {
   let {
     type: t
   } = e, n = i(e, ["type"]);
-  s.error("AV error reported: ".concat(t, " ").concat(JSON.stringify(n)));
+  o.error("AV error reported: ".concat(t, " ").concat(JSON.stringify(n)));
   let a = l[t];
   r.h.dispatch({
     type: "REPORT_AV_ERROR",

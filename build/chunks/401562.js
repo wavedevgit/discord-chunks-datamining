@@ -2,7 +2,7 @@
 /** chunk id: 401562, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => o
+  B: () => s
 }), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js"), require("./228524.js"), require("./896048.js");
 var Chunk115943 = require("./115943.js"),
   i = require.n(Chunk115943);
@@ -16,12 +16,12 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 let Chunk39416 = require("./39416.js");
-class o {
+class s {
   static create(e) {
     let t = null;
     try {
       let n = i().decode(e);
-      t = new o(n, e)
+      t = new s(n, e)
     } catch (e) {}
     return t
   }
@@ -39,7 +39,7 @@ class o {
     return 3 === this.img.ctype && this.img.depth <= 8
   }
   async hasSrgbIccProfile() {
-    let e = await s.load(this.originalBuffer, {
+    let e = await o.load(this.originalBuffer, {
       async: true,
       expanded: true,
       includeUnknown: true

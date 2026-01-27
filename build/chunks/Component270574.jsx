@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => c,
-  v: () => o.nu
+  v: () => s.nu
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,7 +17,7 @@ let c = e => {
     name: t,
     discriminator: n,
     invertBotTagColor: i,
-    nameColor: o,
+    nameColor: s,
     className: c,
     botType: u,
     usernameClass: d,
@@ -33,14 +33,14 @@ let c = e => {
     style: h,
     children: [(0, r.jsxs)("span", {
       className: a()(l.Xh, d),
-      style: null != o ? {
-        color: o
+      style: null != s ? {
+        color: s
       } : true,
       children: [g, t]
     }), null != n ? (0, r.jsxs)("span", {
       className: null != f ? f : true,
       children: ["#", n]
-    }) : null, null != u ? (0, r.jsx)(s.A, {
+    }) : null, null != u ? (0, r.jsx)(o.A, {
       type: u,
       invertColor: i,
       className: a()(p, l.Od),

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk532512 = require("./532512.js");
 
 function l(e, t, n) {
@@ -88,9 +88,9 @@ let _ = {
       } = i,
       g = f(i, ["children", "editable", "type", "className", "outline"]),
       [E] = a;
-    return m ? n = o.rj : p === _.PRIMARY && u && (n = o.LL), (0, r.jsx)("div", d(c({
+    return m ? n = s.rj : p === _.PRIMARY && u && (n = s.LL), (0, r.jsx)("div", d(c({
       ref: E,
-      className: s()(h, p, n)
+      className: o()(h, p, n)
     }, g), {
       children: l
     }))

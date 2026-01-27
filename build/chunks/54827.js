@@ -9,7 +9,7 @@ var Chunk73153 = require("./73153.js"),
   Chunk986120 = require("./986120.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,7 +20,7 @@ function o(e, t, n) {
 let l = new Chunk626584.A("CloudSync");
 class c {
   constructor(e) {
-    o(this, "message", true), this.message = e
+    s(this, "message", true), this.message = e
   }
 }
 async function u(e, t) {
@@ -31,14 +31,14 @@ async function u(e, t) {
     branchId: t
   });
   try {
-    if ((n = await a.E(e, t, i)).type === s.R_U.CONFLICT) throw r.h.dispatch({
+    if ((n = await a.E(e, t, i)).type === o.R_U.CONFLICT) throw r.h.dispatch({
       type: "GAME_CLOUD_SYNC_CONFLICT",
       applicationId: e,
       branchId: t,
       next: n.next,
       remote: n.remote
     }), new c("Conflict in cloud sync.");
-    (n.type === s.R_U.PULL || n.type === s.R_U.PUSH) && l.info("Sync complete", n)
+    (n.type === o.R_U.PULL || n.type === o.R_U.PUSH) && l.info("Sync complete", n)
   } catch (n) {
     if (n instanceof c) throw n;
     throw r.h.dispatch({

@@ -28,7 +28,7 @@ class d {
     Math.random() > u || (a.A.distribution({
       name: r.K.QUEST_BAR_RENDER_DELAY,
       tags: ["quest_id:".concat(e), "timeout:".concat(t)]
-    }, n), s.default.track(o.HAw.QUEST_BAR_RENDER_DELAY, {
+    }, n), o.default.track(s.HAw.QUEST_BAR_RENDER_DELAY, {
       quest_id: e,
       timeout: t,
       duration: n

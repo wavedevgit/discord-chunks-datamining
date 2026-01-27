@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = require("./927813.js").A.Millis.HOUR,
+let s = require("./927813.js").A.Millis.HOUR,
   l = {
     lastReportedAtMs: null
   },
@@ -33,13 +33,13 @@ class d extends(r = Chunk311907.Ay.PersistedStore) {
     c = null != e ? e : l
   }
   isCooldownElapsed() {
-    return null == c.lastReportedAtMs || Date.now() - c.lastReportedAtMs >= o
+    return null == c.lastReportedAtMs || Date.now() - c.lastReportedAtMs >= s
   }
   getState() {
     return c
   }
 }
-s(d, "displayName", "FriendOnlineTimerStore"), s(d, "persistKey", "FriendOnlineTimerStore");
+o(d, "displayName", "FriendOnlineTimerStore"), o(d, "persistKey", "FriendOnlineTimerStore");
 let f = new d(Chunk73153.h, {
   FRIEND_ONLINE_TIMER_REPORTED: u
 })

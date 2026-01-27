@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 286237, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 286237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f,
-  b: () => d
+  A: () => _,
+  b: () => u
 }), require("./896048.js");
 var Chunk812729 = require("./812729.js"),
   i = require.n(Chunk812729),
@@ -13,15 +12,15 @@ var Chunk812729 = require("./812729.js"),
   Chunk616356 = require("./616356.js"),
   Chunk15285 = require("./15285.js");
 
-function u(e, t) {
+function d(e, t) {
   return null != e && null != e.id ? e.id : null != t && null != t.id ? t.id : true
 }
 
-function d() {
-  let e = l.A.getStreamerActiveStreamMetadata(),
+function u() {
+  let e = o.A.getStreamerActiveStreamMetadata(),
     t = c.Ay.getVisibleGame(),
     n = null != t ? c.Ay.getGameOrTransformedSubgameForPID(t.pid) : null,
-    r = u(e, n),
+    r = d(e, n),
     i = s.A.getApplication(r);
   return {
     runningGame: null != n ? n : true,
@@ -29,13 +28,13 @@ function d() {
   }
 }
 
-function f() {
-  let e = (0, a.bG)([l.A], () => l.A.getStreamerActiveStreamMetadata()),
-    t = (0, a.bG)([c.Ay], () => {
+function _() {
+  let e = (0, l.bG)([o.A], () => o.A.getStreamerActiveStreamMetadata()),
+    t = (0, l.bG)([c.Ay], () => {
       let e = c.Ay.getVisibleGame();
       return null != e ? c.Ay.getGameOrTransformedSubgameForPID(e.pid) : null
     }, [], i()),
-    [n] = (0, o.A)([u(e, t)]);
+    [n] = (0, a.A)([d(e, t)]);
   return {
     runningGame: null != t ? t : true,
     runningGameApplication: null != n ? n : true

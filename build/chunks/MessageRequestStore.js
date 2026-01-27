@@ -8,7 +8,7 @@ var Chunk518977 = require("./518977.js"),
   Chunk734057 = require("./734057.js"),
   Chunk536802 = require("./536802.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = new Set,
+let s = new Set,
   l = new Set,
   c = false,
   u = null;
@@ -27,7 +27,7 @@ function d(e) {
 
 function f(e) {
   let t = false;
-  return d(e) && !o.has(e.id) && (o.add(e.id), t = true), !d(e) && o.has(e.id) && (o.delete(e.id), t = true), !d(e) && l.has(e.id) && (l.delete(e.id), t = true), t
+  return d(e) && !s.has(e.id) && (s.add(e.id), t = true), !d(e) && s.has(e.id) && (s.delete(e.id), t = true), !d(e) && l.has(e.id) && (l.delete(e.id), t = true), t
 }
 
 function p(e) {
@@ -36,7 +36,7 @@ function p(e) {
 }
 
 function _(e) {
-  "CONNECTION_OPEN" === e.type && p(e.countryCode), o.clear(), l.clear(), Object.values(i.A.getMutablePrivateChannels()).forEach(e => {
+  "CONNECTION_OPEN" === e.type && p(e.countryCode), s.clear(), l.clear(), Object.values(i.A.getMutablePrivateChannels()).forEach(e => {
     f(e)
   }), c = true
 }
@@ -66,14 +66,14 @@ function E(e) {
   let {
     channel: t
   } = e;
-  return !!o.has(t.id) && (o.delete(t.id), true)
+  return !!s.has(t.id) && (s.delete(t.id), true)
 }
 
 function y(e) {
   let {
     messageRequestChannelIds: t
   } = e;
-  t.forEach(e => o.add(e))
+  t.forEach(e => s.add(e))
 }
 
 function b(e) {
@@ -88,22 +88,22 @@ class O extends Chunk536802.A {
   }
   loadCache() {
     let e = this.readSnapshot(O.LATEST_SNAPSHOT_VERSION);
-    null != e && (o = new Set(e))
+    null != e && (s = new Set(e))
   }
   takeSnapshot() {
     return {
       version: O.LATEST_SNAPSHOT_VERSION,
-      data: Array.from(o)
+      data: Array.from(s)
     }
   }
   getMessageRequestChannelIds() {
-    return o
+    return s
   }
   getMessageRequestsCount() {
-    return o.size
+    return s.size
   }
   isMessageRequest(e) {
-    return o.has(e)
+    return s.has(e)
   }
   isAcceptedOptimistic(e) {
     return l.has(e)
@@ -128,5 +128,5 @@ class O extends Chunk536802.A {
     })
   }
 }
-s(O, "displayName", "MessageRequestStore"), s(O, "LATEST_SNAPSHOT_VERSION", 1);
+o(O, "displayName", "MessageRequestStore"), o(O, "LATEST_SNAPSHOT_VERSION", 1);
 let v = new O

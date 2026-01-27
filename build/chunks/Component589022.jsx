@@ -61,9 +61,9 @@ function _(e) {
   return f ? (0, r.jsx)(l.A, p(d({}, e), {
     onHide: _,
     onClickContainer: u
-  })) : t.isNonUserBot() ? (0, r.jsx)(o.A, p(d({}, e), {
+  })) : t.isNonUserBot() ? (0, r.jsx)(s.A, p(d({}, e), {
     onClickContainer: u
-  })) : t.bot ? (0, r.jsx)(s.A, p(d({}, e), {
+  })) : t.bot ? (0, r.jsx)(o.A, p(d({}, e), {
     onClickContainer: u
   })) : (0, r.jsx)(c.A, p(d({}, e), {
     onClickContainer: u

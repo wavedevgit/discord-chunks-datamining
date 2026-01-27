@@ -17,14 +17,14 @@ function r() {
 function i(e) {
   return {
     textValue: e,
-    richValue: s(e)
+    richValue: o(e)
   }
 }
 require.d(exports, {
   N3: () => r,
-  QR: () => o,
+  QR: () => s,
   ur: () => i,
-  x7: () => s
+  x7: () => o
 }), require("./747238.js"), require("./65821.js");
 let a = Object.freeze([Object.freeze({
   type: "line",
@@ -33,7 +33,7 @@ let a = Object.freeze([Object.freeze({
   })])
 })]);
 
-function s(e) {
+function o(e) {
   return "" !== e ? e.split("\n").map(e => ({
     type: "line",
     children: [{
@@ -42,7 +42,7 @@ function s(e) {
   })) : a
 }
 
-function o(e) {
+function s(e) {
   switch (e.type) {
     case "userMention":
       return {

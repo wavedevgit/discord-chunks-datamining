@@ -1,34 +1,34 @@
 /** Chunk was on web.js **/
 /** chunk id: 664294, original params: e,t (module,exports,re quire) **/
-exports.parse = s, exports.serialize = o;
+exports.parse = o, exports.serialize = s;
 var n = decodeURIComponent,
   r = encodeURIComponent,
   i = /; */,
   a = /^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;
 
-function s(e, t) {
+function o(e, t) {
   if ("string" != typeof e) throw TypeError("argument str must be a string");
   var r = {},
     a = t || {},
-    s = e.split(i),
-    o = a.decode || n;
-  return s.forEach(function(e) {
+    o = e.split(i),
+    s = a.decode || n;
+  return o.forEach(function(e) {
     var t = e.indexOf("=");
     if (!(t < 0)) {
       var n = e.substr(0, t).trim(),
         i = e.substr(++t, e.length).trim();
-      '"' == i[0] && (i = i.slice(1, false)), true == r[n] && (r[n] = l(i, o))
+      '"' == i[0] && (i = i.slice(1, false)), true == r[n] && (r[n] = l(i, s))
     }
   }), r
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   var i = n || {},
-    s = i.encode || r;
+    o = i.encode || r;
   if (!a.test(e)) throw TypeError("argument name is invalid");
-  var o = s(t);
-  if (o && !a.test(o)) throw TypeError("argument val is invalid");
-  var l = [e + "=" + o];
+  var s = o(t);
+  if (s && !a.test(s)) throw TypeError("argument val is invalid");
+  var l = [e + "=" + s];
   if (null != i.maxAge) {
     var c = i.maxAge - 0;
     if (isNaN(c)) throw Error("maxAge should be a Number");

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk310784 = require("./310784.js"),
-  s = require.n(Chunk310784),
+  o = require.n(Chunk310784),
   Chunk503698 = require("./503698.js"),
   l = require.n(Chunk503698),
   Chunk156828 = require("./156828.jsx"),
@@ -48,7 +48,7 @@ function C(e) {
     colors: t,
     selectedIndex: n,
     onColorSelect: a
-  } = e, [s, o] = i.useMemo(() => {
+  } = e, [o, s] = i.useMemo(() => {
     let e = t.map((e, n) => T(t, n)),
       n = t.map((t, n) => "".concat(t, " ").concat(e[n], "%")).join(", ");
     return [e, {
@@ -57,9 +57,9 @@ function C(e) {
   }, [t]);
   return (0, r.jsx)("div", {
     className: O.wS,
-    style: o,
+    style: s,
     children: t.map((e, t) => {
-      let o = s[t],
+      let s = o[t],
         c = t === n;
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(_.DUT, {
@@ -67,7 +67,7 @@ function C(e) {
             [O.wH]: c
           }),
           style: {
-            left: "".concat(o, "%"),
+            left: "".concat(s, "%"),
             backgroundColor: e
           },
           onClick: () => a(t),
@@ -77,7 +77,7 @@ function C(e) {
         }), c && (0, r.jsx)("div", {
           className: O.gQ,
           style: {
-            left: "".concat(o, "%")
+            left: "".concat(s, "%")
           }
         })]
       }, t)
@@ -100,7 +100,7 @@ function N(e) {
 
 function w(e) {
   if (!(0, u.qt)(e)) return e;
-  let t = s()(e);
+  let t = o()(e);
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
 }
 
@@ -109,68 +109,68 @@ function R(e) {
     value: t,
     onChange: n,
     className: a,
-    colors: s,
-    setColors: o
+    colors: o,
+    setColors: s
   } = e, c = (0, h.A)(), [v, S] = i.useState(0), [T, R] = i.useState(t);
   i.useEffect(() => {
-    if (s.length > 0 && v < s.length) {
-      let e = s[v];
+    if (o.length > 0 && v < o.length) {
+      let e = o[v];
       (0, u.qt)(e) && (R(e), n(e))
     }
-    v >= s.length && S(0)
-  }, [v, s, n]);
+    v >= o.length && S(0)
+  }, [v, o, n]);
   let P = e => {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
     },
     D = e => {
       let t = P(e);
-      if (R(t), (0, u.qt)(t) && ((0, E.CE)(), n(t), s.length > 0)) {
-        let e = [...s];
-        e[v] = t, o(e)
+      if (R(t), (0, u.qt)(t) && ((0, E.CE)(), n(t), o.length > 0)) {
+        let e = [...o];
+        e[v] = t, s(e)
       }
     },
-    x = i.useCallback(e => {
+    L = i.useCallback(e => {
       R(e.hex)
     }, []),
-    L = e => {
-      if ((0, E.VE)(), n(e.hex), s.length > 0) {
-        let t = [...s];
-        t[v] = e.hex, o(t)
+    x = e => {
+      if ((0, E.VE)(), n(e.hex), o.length > 0) {
+        let t = [...o];
+        t[v] = e.hex, s(t)
       }
     },
-    j = async () => {
+    M = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
         } = await c.open();
         (0, E.AL)(), D(e)
       } catch (e) {}
-    }, M = () => {
-      if (s.length === I) return;
-      0 === s.length && (0, g.eq)(), (0, E.HU)();
-      let e = s.length > 0 ? s[s.length - 1] : T,
-        t = s.length > 0 ? w(e) : e,
-        n = [...s, t];
-      o(n), S(n.length - 1)
+    }, j = () => {
+      if (o.length === I) return;
+      0 === o.length && (0, g.eq)(), (0, E.HU)();
+      let e = o.length > 0 ? o[o.length - 1] : T,
+        t = o.length > 0 ? w(e) : e,
+        n = [...o, t];
+      s(n), S(n.length - 1)
     }, k = e => {
-      if (s.length > 1) {
+      if (o.length > 1) {
         (0, E.f1)();
-        let t = s.filter((t, n) => n !== e);
-        o(t), v >= t.length ? S(t.length - 1) : v > e && S(v - 1)
+        let t = o.filter((t, n) => n !== e);
+        s(t), v >= t.length ? S(t.length - 1) : v > e && S(v - 1)
       }
     }, U = e => {
       S(e), (0, E.mx)()
-    }, G = s.length > 1;
+    }, G = o.length > 1;
   return (0, r.jsxs)("div", {
     className: l()(O.kL, a),
     children: [G && (0, r.jsx)(C, {
-      colors: s,
+      colors: o,
       selectedIndex: v,
       onColorSelect: U
     }), (0, r.jsx)(A, {
-      onChange: x,
-      onChangeComplete: L,
+      onChange: L,
+      onChangeComplete: x,
       color: T
     }), (0, r.jsxs)("div", {
       className: O.Xr,
@@ -190,7 +190,7 @@ function R(e) {
           children: (0, r.jsx)(p.K0, {
             variant: "icon-only",
             size: "sm",
-            onClick: j,
+            onClick: M,
             icon: d.d,
             "aria-label": b.intl.string(y.default["NCFz+N"])
           })
@@ -205,10 +205,10 @@ function R(e) {
           })
         })]
       })]
-    }), s.length < I && (0, r.jsx)(p.$nd, {
+    }), o.length < I && (0, r.jsx)(p.$nd, {
       variant: "secondary",
       size: "md",
-      onClick: M,
+      onClick: j,
       icon: _.TIR,
       text: b.intl.string(y.default.JUQcdT),
       fullWidth: true

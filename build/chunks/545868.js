@@ -14,7 +14,7 @@ var Chunk635377 = require("./635377.js"),
   Chunk652215 = require("./652215.js");
 async function u(e) {
   try {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "GUILD_ROLE_MEMBER_COUNT_FETCH_START",
       guildId: e
     });
@@ -22,13 +22,13 @@ async function u(e) {
       url: c.Rsh.GUILD_ROLE_MEMBER_COUNTS(e),
       rejectWithError: true
     })).body;
-    s.h.dispatch({
+    o.h.dispatch({
       type: "GUILD_ROLE_MEMBER_COUNT_FETCH_SUCCESS",
       guildId: e,
       roleMemberCount: t
     })
   } catch (t) {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "GUILD_ROLE_MEMBER_COUNT_FETCH_FAILURE",
       guildId: e
     })
@@ -45,7 +45,7 @@ function p(e, t) {
   return a.Bo.get({
     url: c.Rsh.GUILD_ROLE_MEMBER_IDS(e, t),
     rejectWithError: false
-  }).then(t => (o.A.requestMembersById(e, t.body, false), t.body.length))
+  }).then(t => (s.A.requestMembersById(e, t.body, false), t.body.length))
 }
 
 function _(e, t) {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
   Chunk214958 = require("./214958.js"),
-  s = require.n(Chunk214958),
+  o = require.n(Chunk214958),
   Chunk972347 = require("./972347.js"),
   Chunk738239 = require("./738239.js"),
   c = require.n(Chunk738239),
@@ -46,7 +46,7 @@ class N extends Chunk972347.A {
     this.interacted || (document.createElement("audio").play(), this.interacted = true), this.eachConnection(e => e.interact())
   }
   static supported() {
-    return !__OVERLAY__ && (S.Hz && null != window.AudioContext && null != window.RTCPeerConnection ? (n(528416), true) : (C.info("WebRTC is not supported on", s().name, s().version), false))
+    return !__OVERLAY__ && (S.Hz && null != window.AudioContext && null != window.RTCPeerConnection ? (n(528416), true) : (C.info("WebRTC is not supported on", o().name, o().version), false))
   }
   supported() {
     returntrue
@@ -63,7 +63,7 @@ class N extends Chunk972347.A {
         var t;
         return (null == (t = navigator.mediaDevices) ? true : t.getDisplayMedia) != null;
       case I.O5.VOICE_PROCESSING:
-        return "Chrome" === s().name;
+        return "Chrome" === o().name;
       case I.O5.NATIVE_PING:
       case I.O5.DIAGNOSTICS:
         return S.fA;
@@ -71,7 +71,7 @@ class N extends Chunk972347.A {
       case I.O5.LOOPBACK:
       case I.O5.NOISE_SUPPRESSION:
       case I.O5.AUTOMATIC_GAIN_CONTROL:
-        return "Safari" !== s().name;
+        return "Safari" !== o().name;
       case I.O5.NOISE_CANCELLATION:
         return c()();
       case I.O5.QOS:
@@ -103,8 +103,8 @@ class N extends Chunk972347.A {
       ssrc: r,
       address: i,
       port: a,
-      modes: s,
-      streamUserId: o,
+      modes: o,
+      streamUserId: s,
       streamParameters: l
     } = n, c = {
       context: e,
@@ -114,7 +114,7 @@ class N extends Chunk972347.A {
       dave: this.dave,
       transientKeys: this.transientKeys
     }, u = (0, m.d)(c);
-    return u.streamUserId = o, u.setOutputVolume(this.outputVolume), u.setSinkId(this.sinkId), u.once(d.y.Destroy, e => this.connections.delete(e)), u.on(d.y.Silence, e => this.emit(f.bg.Silence, e)), u.on(d.y.DesktopSourceEnd, this.handleDesktopSourceEnd), u.on(d.y.AudioPermission, this.handleAudioPermission), u.on(d.y.VideoPermission, this.handleVideoPermission), this.interacted && u.interact(), e === I.x.DEFAULT && (u.setAudioSource(this.sourceId), this.enabled && u.input.enableAudioInput()), this.connections.add(u), this.emit(f.bg.Connection, u), u
+    return u.streamUserId = s, u.setOutputVolume(this.outputVolume), u.setSinkId(this.sinkId), u.once(d.y.Destroy, e => this.connections.delete(e)), u.on(d.y.Silence, e => this.emit(f.bg.Silence, e)), u.on(d.y.DesktopSourceEnd, this.handleDesktopSourceEnd), u.on(d.y.AudioPermission, this.handleAudioPermission), u.on(d.y.VideoPermission, this.handleVideoPermission), this.interacted && u.interact(), e === I.x.DEFAULT && (u.setAudioSource(this.sourceId), this.enabled && u.input.enableAudioInput()), this.connections.add(u), this.emit(f.bg.Connection, u), u
   }
   findConnection(e) {
     return Array.from(this.connections).find(t => null == e || t.context === e)
@@ -136,7 +136,7 @@ class N extends Chunk972347.A {
     e.on("permission", this.handleAudioPermission);
     try {
       var t;
-      await e.enable(), "Firefox" === s().name && await this.handleDeviceChange(), this.enabled = true, this.eachConnection(e => e.input.enableAudioInput(), I.x.DEFAULT), null == (t = this.voiceActivityInput) || t.enable()
+      await e.enable(), "Firefox" === o().name && await this.handleDeviceChange(), this.enabled = true, this.eachConnection(e => e.input.enableAudioInput(), I.x.DEFAULT), null == (t = this.voiceActivityInput) || t.enable()
     } finally {
       e.destroy()
     }

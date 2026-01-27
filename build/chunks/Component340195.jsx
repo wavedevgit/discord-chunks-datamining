@@ -20,7 +20,7 @@ var Chunk311907 = require("./311907.js"),
 function _(e) {
   let {
     className: t
-  } = e, n = (0, i.bG)([o.A], () => o.A.useReducedMotion), _ = (0, s.Ay)(), h = (0, a.qB1)(_);
+  } = e, n = (0, i.bG)([s.A], () => s.A.useReducedMotion), _ = (0, o.Ay)(), h = (0, a.qB1)(_);
   if (n) {
     let e = h ? f.A : u.A;
     return (0, r.jsxs)("div", {

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 164599, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 164599, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => E
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,65 +21,65 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk97671 = require("./97671.js");
 
-function b(e) {
+function E(e) {
   let {
     user: t,
     guild: n,
-    initialSelectedEffect: a,
-    className: b,
-    sectionTitle: O,
-    forcedDivider: v = false,
-    withTutorial: A = false,
+    initialSelectedEffect: l,
+    className: E,
+    sectionTitle: x,
+    forcedDivider: O = false,
+    withTutorial: C = false,
     showBorder: I = false
   } = e, {
-    analyticsLocations: S
-  } = (0, c.Ay)(), T = f.Ay.canUsePremiumProfileCustomization(t), C = (0, p.N2)({
+    analyticsLocations: T
+  } = (0, c.Ay)(), S = _.Ay.canUsePremiumProfileCustomization(t), j = (0, p.N2)({
     user: t,
     guildId: null == n ? true : n.id
   }), {
-    pendingProfileEffect: N,
-    errors: w
-  } = (0, p.nZ)(null == n ? true : n.id), R = true === N ? null != C : null != N, P = () => {
-    (0, u.W)({
-      analyticsLocations: S,
-      guild: n,
-      initialSelectedEffect: a
-    })
-  }, D = () => {
-    (0, p.mZ)(null, null == n ? true : n.id)
-  };
+    pendingProfileEffect: v,
+    errors: N
+  } = (0, p.nZ)(null == n ? true : n.id);
   i.useEffect(() => {
-    T && d.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
-      type: g.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-      location_stack: S
+    S && u.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
+      type: f.e.PROFILE_EFFECTS_INLINE_SETTINGS,
+      location_stack: T
     })
-  }, [T, S]);
-  let x = A ? l.wLn : o.$n;
-  return (0, r.jsx)(_.A, {
-    forcedDivider: v,
-    borderType: h.i.PREMIUM,
+  }, [S, T]);
+  let y = C ? o.wLn : a.$n;
+  return (0, r.jsx)(m.A, {
+    forcedDivider: O,
+    borderType: g.i.PREMIUM,
     hasBackground: true,
-    title: O,
+    title: x,
     showBorder: I,
-    errors: w,
-    className: b,
+    errors: N,
+    className: E,
     children: (0, r.jsxs)("div", {
-      className: y.NC,
-      children: [(0, r.jsx)(x, {
-        size: o.$n.Sizes.SMALL,
-        onClick: P,
+      className: b.NC,
+      children: [(0, r.jsx)(y, {
+        size: a.$n.Sizes.SMALL,
+        onClick: () => {
+          (0, d.W)({
+            analyticsLocations: T,
+            guild: n,
+            initialSelectedEffect: l
+          })
+        },
         className: s()({
-          [y.yj]: A
+          [b.yj]: C
         }),
-        children: E.intl.string(E.t["/dRfCf"])
-      }), R && (0, r.jsx)("div", {
+        children: h.intl.string(h.t["/dRfCf"])
+      }), (true === v ? null != j : null != v) && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: y.DT,
-        children: (0, r.jsx)(l.Button, {
+        className: b.DT,
+        children: (0, r.jsx)(o.Button, {
           variant: "secondary",
           size: "sm",
-          text: null != n ? E.intl.string(E.t.CHf9iJ) : E.intl.string(E.t.uMuafO),
-          onClick: D
+          text: null != n ? h.intl.string(h.t.CHf9iJ) : h.intl.string(h.t.uMuafO),
+          onClick: () => {
+            (0, p.mZ)(null, null == n ? true : n.id)
+          }
         })
       })]
     })

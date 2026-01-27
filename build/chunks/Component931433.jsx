@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk732955 = require("./732955.js"),
   Chunk652165 = require("./652165.jsx"),
   Chunk749226 = require("./749226.js");
-let o = e => {
+let s = e => {
     (0, a.B4)({
       skuId: e,
       onCheckoutSuccess: e => {
@@ -34,10 +34,10 @@ let o = e => {
           skuId: t
         } = e;
         return (0, r.jsx)("div", {
-          className: s.YG,
+          className: o.YG,
           children: (0, r.jsx)(i.$nd, {
             onClick: () => {
-              o(t)
+              s(t)
             },
             text: "Open Orb Checkout for Custom SKU: ".concat(t)
           })

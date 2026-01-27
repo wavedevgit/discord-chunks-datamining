@@ -50,7 +50,7 @@ function O(e) {
 function v(e) {
   let t = e.searchParams.get("ex"),
     n = parseInt(null != t ? t : "", 16);
-  return isNaN(n) ? true : n * o.A.Millis.SECOND
+  return isNaN(n) ? true : n * s.A.Millis.SECOND
 }
 
 function A(e) {
@@ -78,7 +78,7 @@ function C(e) {
   return e.attachments.some(I) || e.embeds.some(T)
 }
 async function N(e) {
-  let t = await s.Bo.post({
+  let t = await o.Bo.post({
     url: c.Rsh.ATTACHMENTS_REFRESH_URLS,
     body: {
       attachment_urls: [e]

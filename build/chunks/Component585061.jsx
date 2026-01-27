@@ -44,12 +44,12 @@ let g = () => {
     {
       avatarSrc: t,
       eventHandlers: n
-    } = (0, o.A)({
+    } = (0, s.A)({
       userId: null == e ? true : e.id,
       size: f._3.SIZE_32,
       animateOnHover: true
     }),
-    h = (0, s.DP)(),
+    h = (0, o.DP)(),
     g = (0, i.qB)(h),
     E = l.Ay.getName(e),
     y = g ? u.A : d.A;

@@ -55,7 +55,7 @@ function p(e) {
 }
 
 function _(e, t) {
-  x(l.t0.GUILD_DIRECTORY_ENTRY, {
+  L(l.t0.GUILD_DIRECTORY_ENTRY, {
     channel_id: e.channelId,
     guild_id: e.guildId
   }), (0, u.T)({
@@ -67,7 +67,7 @@ function _(e, t) {
 }
 
 function h(e, t, n) {
-  x(l.t0.MESSAGE, {
+  L(l.t0.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, u.T)({
@@ -79,7 +79,7 @@ function h(e, t, n) {
 }
 
 function m(e, t, n) {
-  x(l.t0.MESSAGE, {
+  L(l.t0.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, u.T)({
@@ -93,7 +93,7 @@ function m(e, t, n) {
 }
 
 function g(e, t, n) {
-  x(l.t0.GUILD, {
+  L(l.t0.GUILD, {
     guild_id: e.id
   }), (0, u.T)({
     name: l.t0.GUILD,
@@ -107,7 +107,7 @@ function g(e, t, n) {
 
 function E(e, t) {
   let n = i.A.getStageInstanceByChannel(e.id);
-  null != n && (x(l.t0.STAGE_CHANNEL, {
+  null != n && (L(l.t0.STAGE_CHANNEL, {
     stage_instance_id: n.id,
     channel_id: n.channel_id,
     guild_id: n.guild_id
@@ -121,7 +121,7 @@ function E(e, t) {
 
 function y(e, t) {
   var n;
-  x(l.t0.GUILD_SCHEDULED_EVENT, {
+  L(l.t0.GUILD_SCHEDULED_EVENT, {
     guild_scheduled_event_id: e.id,
     guild_id: e.guild_id,
     channel_id: null != (n = e.channel_id) ? n : true
@@ -134,7 +134,7 @@ function y(e, t) {
 }
 
 function b(e, t) {
-  x(l.t0.FIRST_DM, {
+  L(l.t0.FIRST_DM, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, u.T)({
@@ -157,7 +157,7 @@ async function O(e, t) {
 }
 
 function v(e, t, n, r) {
-  x(l.t0.USER, {
+  L(l.t0.USER, {
     reported_user_id: e.id
   }), (0, u.T)({
     name: l.t0.USER,
@@ -170,7 +170,7 @@ function v(e, t, n, r) {
 }
 
 function A(e, t, n, r) {
-  x(l.t0.USER, {
+  L(l.t0.USER, {
     reported_user_id: e.id
   }), (0, u.T)({
     name: l.t0.USER,
@@ -186,8 +186,8 @@ function A(e, t, n, r) {
 }
 
 function I(e, t) {
-  let n = new s.A({});
-  x(l.tY.USER, {
+  let n = new o.A({});
+  L(l.tY.USER, {
     reported_user_id: n.id
   }), (0, u.T)({
     name: l.tY.USER,
@@ -201,8 +201,8 @@ function I(e, t) {
 }
 
 function S(e, t) {
-  let n = (0, o.dangerouslyConstructGuildRecordFromUntypedObject)({});
-  x(l.tY.GUILD, {
+  let n = (0, s.dangerouslyConstructGuildRecordFromUntypedObject)({});
+  L(l.tY.GUILD, {
     guild_id: n.id
   }), (0, u.T)({
     name: l.tY.GUILD,
@@ -216,7 +216,7 @@ function S(e, t) {
 }
 
 function T(e, t) {
-  x(l.tY.MEDIA_TAKEDOWN, {}), (0, u.T)({
+  L(l.tY.MEDIA_TAKEDOWN, {}), (0, u.T)({
     name: l.tY.MEDIA_TAKEDOWN
   }, {}, {
     onClose: t,
@@ -228,7 +228,7 @@ function T(e, t) {
 
 function C(e, t) {
   let n = new a.Ay({});
-  x(l.tY.MESSAGE, {
+  L(l.tY.MESSAGE, {
     message_id: true,
     channel_id: true
   }), (0, u.T)({
@@ -255,7 +255,7 @@ async function N(e, t, n) {
 }
 
 function w(e, t) {
-  x(l.t0.MESSAGE, {
+  L(l.t0.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, u.T)({
@@ -287,13 +287,13 @@ function P(e) {
     entrypoint: n,
     contextualGuildId: i,
     contextualChannelId: a,
-    onSubmit: s,
-    appContext: o
+    onSubmit: o,
+    appContext: s
   } = e;
   r.Ay.trackWithMetadata(d.HAw.REPORT_APPLICATION_CLICKED, {
     application_id: t.id,
     location: n
-  }), x(l.t0.APPLICATION, {
+  }), L(l.t0.APPLICATION, {
     application_id: t.id,
     guild_id: i,
     channel_id: a
@@ -304,8 +304,8 @@ function P(e) {
     contextualChannelId: a,
     entrypoint: n
   }, {}, {
-    onSubmit: s,
-    appContext: o
+    onSubmit: o,
+    appContext: s
   })
 }
 
@@ -319,7 +319,7 @@ function D(e, t) {
   })
 }
 
-function x(e, t) {
+function L(e, t) {
   r.Ay.trackWithMetadata(d.HAw.IAR_MODAL_OPEN, p({
     report_type: e
   }, t))

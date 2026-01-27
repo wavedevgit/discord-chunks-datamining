@@ -23,13 +23,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk825057 = require("./825057.js");
 let b = (0, Chunk689614.R)();
 async function O(e) {
-  return (await s.Bo.post({
+  return (await o.Bo.post({
     url: g.Rsh.ORDER_SIGN(e),
     rejectWithError: true
   })).body
 }
 async function v(e) {
-  return (await s.Bo.get({
+  return (await o.Bo.get({
     url: g.Rsh.ORDER_UPDATE(e),
     rejectWithError: true
   })).body
@@ -40,7 +40,7 @@ async function A(e, t) {
       payment_source_id: t
     }
   };
-  await s.Bo.patch({
+  await o.Bo.patch({
     url: g.Rsh.ORDER_UPDATE(e),
     body: n,
     rejectWithError: true
@@ -50,9 +50,9 @@ async function A(e, t) {
 function I(e, t, n, r) {
   var i;
   let a = e.billing_facet,
-    s = null == a || null == (i = a.order_signing_deferral_context) ? true : i.payment_redirect_context,
-    o = null == s ? true : s.redirect_url;
-  null != o && window.open(o);
+    o = null == a || null == (i = a.order_signing_deferral_context) ? true : i.payment_redirect_context,
+    s = null == o ? true : o.redirect_url;
+  null != s && window.open(s);
   let l = 3e3,
     c = 3e4,
     u = Date.now(),
@@ -108,13 +108,13 @@ function I(e, t, n, r) {
 
 function S(e, t, n, r) {
   (async () => {
-    var i, a, s, o;
+    var i, a, o, s;
     try {
-      let s = e.billing_facet;
-      if (null == s) throw Error("Order does not have billing facet information");
-      let o = s.order_signing_deferral_context;
-      if (null == o) throw Error("Order does not have payment redirect context");
-      let l = o.stripe_3ds_context;
+      let o = e.billing_facet;
+      if (null == o) throw Error("Order does not have billing facet information");
+      let s = o.order_signing_deferral_context;
+      if (null == s) throw Error("Order does not have payment redirect context");
+      let l = s.stripe_3ds_context;
       if (null == l) throw Error("Order does not have 3DS context information");
       let c = await (0, _.Cv)();
       if (null == c) throw Error("Stripe not loaded");
@@ -132,28 +132,28 @@ function S(e, t, n, r) {
       r(null), n("3DS authentication completed successfully!\nOrder ID: ".concat(p))
     } catch (a) {
       let r = a instanceof Error ? a.message : String(a),
-        i = null != (s = null != (o = e.id) ? o : t) ? s : "Unknown";
+        i = null != (o = null != (s = e.id) ? s : t) ? o : "Unknown";
       n("Failed to complete 3DS!\nOrder ID: ".concat(i, "\nError: ").concat(r))
     }
   })()
 }
 
 function T() {
-  let [e, t] = i.useState(false), [n, s] = i.useState(false), [d, _] = i.useState(null), [m, v] = i.useState(null), [T, C] = i.useState(b.defaultValue), [N, w] = i.useState(null), R = (0, a.bG)([p.A], () => p.A.paymentSources), P = (0, a.bG)([p.A], () => p.A.hasFetchedPaymentSources), D = (0, a.bG)([p.A], () => p.A.defaultPaymentSourceId);
+  let [e, t] = i.useState(false), [n, o] = i.useState(false), [d, _] = i.useState(null), [m, v] = i.useState(null), [T, C] = i.useState(b.defaultValue), [N, w] = i.useState(null), R = (0, a.bG)([p.A], () => p.A.paymentSources), P = (0, a.bG)([p.A], () => p.A.hasFetchedPaymentSources), D = (0, a.bG)([p.A], () => p.A.defaultPaymentSourceId);
   i.useEffect(() => {
     P || (0, c.$o)()
   }, [P]), i.useEffect(() => {
     null != D && null == N && w(D)
   }, [D, N]);
-  let x = i.useRef(null);
+  let L = i.useRef(null);
   i.useEffect(() => {
     if (null == m || "" === m) {
-      x.current = N;
+      L.current = N;
       return
     }
-    if (N !== x.current) {
+    if (N !== L.current) {
       if (null == N || "" === N) {
-        x.current = N;
+        L.current = N;
         return
       }
       A(m, N).then(() => {
@@ -161,10 +161,10 @@ function T() {
       }).catch(e => {
         let t = e instanceof Error ? e.message : String(e);
         _("Failed to update order: ".concat(t))
-      }), x.current = N
+      }), L.current = N
     }
   }, [m, N]);
-  let L = i.useMemo(() => Object.values(R).map(e => {
+  let x = i.useMemo(() => Object.values(R).map(e => {
       let t = (e => {
         let t = f.w[e];
         return null != t ? t() : String(e)
@@ -181,7 +181,7 @@ function T() {
         label: t
       }
     }), [R]),
-    j = async () => {
+    M = async () => {
       if (null == N || "" === N) return void _("Please select a payment source first.");
       if (null == T || "" === T || T === g.dJq) return void _("Please select a SKU ID.");
       t(true), _(null), v(null);
@@ -205,9 +205,9 @@ function T() {
       } finally {
         t(false)
       }
-    }, M = async () => {
+    }, j = async () => {
       if (null == m || "" === m) return void _("No order ID available. Please create an order first.");
-      s(true);
+      o(true);
       try {
         let e = await O(m);
         if (null == e.errors) {
@@ -220,7 +220,7 @@ function T() {
         let e = t instanceof Error ? t.message : String(t);
         _("Failed to sign order: ".concat(e))
       } finally {
-        s(false)
+        o(false)
       }
     };
   return (0, r.jsxs)(h.wn, {
@@ -268,7 +268,7 @@ function T() {
             selectionMode: "single",
             value: N,
             onSelectionChange: w,
-            options: L,
+            options: x,
             placeholder: "Select a payment source...",
             disabled: !P,
             label: "Payment Source",
@@ -287,17 +287,17 @@ function T() {
           marginBottom: "8px",
           flexWrap: "wrap"
         },
-        children: [(0, r.jsx)(o.$nd, {
+        children: [(0, r.jsx)(s.$nd, {
           variant: "primary",
           size: "sm",
           text: e ? "Creating Order..." : "Create Order",
-          onClick: j,
+          onClick: M,
           disabled: e || null == N || "" === N || null == T || "" === T || T === g.dJq
-        }), (0, r.jsx)(o.$nd, {
+        }), (0, r.jsx)(s.$nd, {
           variant: "secondary",
           size: "sm",
           text: n ? "Signing Order..." : "Sign Order",
-          onClick: M,
+          onClick: j,
           disabled: n || null == m || "" === m
         })]
       }), null != d && (0, r.jsx)("div", {

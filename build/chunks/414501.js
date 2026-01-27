@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 414501, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 414501, original params: t,e,r (module,exports,require) **/
 "use strict";
-var r = require("./116740.js").OrderedMap;
+var n = require("./116740.js").OrderedMap;
 module.exports = {
-  createFromArray: function(e) {
-    return r(e.map(function(e) {
-      return [e.getKey(), e]
+  createFromArray: function(t) {
+    return n(t.map(function(t) {
+      return [t.getKey(), t]
     }))
   }
 }

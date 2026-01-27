@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   Er: () => p,
-  GL: () => s,
+  GL: () => o,
   IM: () => b,
   Iz: () => f,
-  JJ: () => o,
+  JJ: () => s,
   Oz: () => _,
   RE: () => y,
   V2: () => l,
@@ -22,11 +22,11 @@ require.d(exports, {
 var Chunk562465 = require("./562465.js"),
   Chunk73153 = require("./73153.js"),
   Chunk652215 = require("./652215.js");
-async function s(e, t) {
+async function o(e, t) {
   var n;
   let {
-    nick: s,
-    avatar: o,
+    nick: o,
+    avatar: s,
     avatarDescription: l,
     avatarId: c,
     avatarDecoration: u,
@@ -38,8 +38,8 @@ async function s(e, t) {
     type: "GUILD_IDENTITY_SETTINGS_SUBMIT"
   });
   let p = {
-    nick: s,
-    avatar: o,
+    nick: o,
+    avatar: s,
     avatar_description: l,
     avatar_id: c,
     avatar_decoration_sku_id: true !== u ? null != (n = null == u ? true : u.skuId) ? n : null : true,
@@ -66,7 +66,7 @@ async function s(e, t) {
       type: "GUILD_MEMBER_PROFILE_UPDATE",
       guildMember: n,
       guildId: e
-    }), (null != o || null != c) && i.h.dispatch({
+    }), (null != s || null != c) && i.h.dispatch({
       type: "RECENT_AVATARS_UPDATE"
     }), t
   } catch (t) {
@@ -78,7 +78,7 @@ async function s(e, t) {
   }
 }
 
-function o(e) {
+function s(e) {
   i.h.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_GUILD",
     guild: e

@@ -32,7 +32,7 @@ var Chunk503698 = require("./503698.js"),
 function T(e) {
   let {
     isLoading: t
-  } = e, n = (0, s.bG)([E.A], () => E.A.getConnectedFrame()), i = (0, s.bG)([E.A], () => E.A.getFrameLayoutMode()), u = (0, f.h)(null == n ? true : n.applicationId), d = (0, s.bG)([E.A], () => null != u && E.A.isProxyTicketRefreshing(u.id), [u]), T = (0, s.bG)([p.A], () => p.A.getWindowOpen(O.MLl.ACTIVITY_POPOUT)), C = (0, s.bG)([m.A], () => m.A.isFrameHidden()), N = i === b.y.PIP && !C && !T, w = N && null != m.A.pipVideoWindow && null != m.A.pipFrameWindow;
+  } = e, n = (0, o.bG)([E.A], () => E.A.getConnectedFrame()), i = (0, o.bG)([E.A], () => E.A.getFrameLayoutMode()), u = (0, f.h)(null == n ? true : n.applicationId), d = (0, o.bG)([E.A], () => null != u && E.A.isProxyTicketRefreshing(u.id), [u]), T = (0, o.bG)([p.A], () => p.A.getWindowOpen(O.MLl.ACTIVITY_POPOUT)), C = (0, o.bG)([m.A], () => m.A.isFrameHidden()), N = i === b.y.PIP && !C && !T, w = N && null != m.A.pipVideoWindow && null != m.A.pipFrameWindow;
   if (null == n || null == u || T) return null;
   let R = {
     instance_id: "example-cl-instance",
@@ -71,7 +71,7 @@ function T(e) {
     children: e => {
       let {
         idle: i,
-        onActive: s,
+        onActive: o,
         onForceIdle: f
       } = e;
       return (0, r.jsxs)(_.A, {
@@ -87,11 +87,11 @@ function T(e) {
         children: [(0, r.jsx)("div", {
           className: "theme-dark",
           children: P({
-            onActive: s,
+            onActive: o,
             onForceIdle: f,
             idle: i
           })
-        }), t || d ? (0, r.jsx)(o.y$y, {
+        }), t || d ? (0, r.jsx)(s.y$y, {
           className: a()(A.pU, {
             [A.p0]: N
           })
@@ -113,7 +113,7 @@ function T(e) {
 let C = () => {
   let {
     analyticsLocations: e
-  } = (0, d.Ay)(u.A.FRAME_PIP), t = (0, s.bG)([E.A], () => E.A.isFrameActive());
+  } = (0, d.Ay)(u.A.FRAME_PIP), t = (0, o.bG)([E.A], () => E.A.isFrameActive());
   return (0, r.jsx)(d.f5, {
     value: e,
     children: (0, r.jsx)(T, {

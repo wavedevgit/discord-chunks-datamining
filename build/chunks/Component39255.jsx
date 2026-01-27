@@ -1,8 +1,8 @@
-/** Chunk was on 63641 **/
+/** Chunk was on 84497 **/
 /** chunk id: 39255, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  A: () => R,
-  _: () => _
+  A: () => b,
+  _: () => f
 }), require("./321073.js"), require("./896048.js");
 var n, r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,8 +26,8 @@ let g = Object.freeze({
   MEDIUM: Chunk633175.Y,
   LARGE: Chunk633175.as
 });
-var _ = ((r = {}).MEMBER = "MEMBER", r.ROLE = "ROLE", r.CHANNEL = "CHANNEL", r.USER = "USER", r);
-class f extends(n = Chunk64700.Component) {
+var f = ((r = {}).MEMBER = "MEMBER", r.ROLE = "ROLE", r.CHANNEL = "CHANNEL", r.USER = "USER", r);
+class _ extends(n = Chunk64700.Component) {
   componentDidMount() {
     let e = this.containerRef.current;
     null != e && (this.previousHeight = e.offsetHeight)
@@ -63,26 +63,26 @@ class f extends(n = Chunk64700.Component) {
     } = this.props;
     if (0 !== n.length) {
       switch (e.key) {
-        case h.dh.BACKSPACE:
+        case c.dh.BACKSPACE:
           (null == r || 0 === r.length) && null != a && a.length > 0 && (e.preventDefault(), e.stopPropagation(), null == i || i(a.length - 1));
           break;
-        case h.dh.ARROW_DOWN:
+        case c.dh.ARROW_DOWN:
           e.preventDefault(), e.stopPropagation(), false === t ? (t = 0, l = 0) : ((t += 1) >= n.length && (t = n.length - 1), l >= n[t] && (l = n[t] - 1));
           break;
-        case h.dh.ARROW_UP:
+        case c.dh.ARROW_UP:
           e.preventDefault(), e.stopPropagation(), (t -= 1) < 0 ? (t = 0, l = 0) : l >= n[t] && (l = n[t] - 1);
           break;
-        case h.dh.ARROW_LEFT:
+        case c.dh.ARROW_LEFT:
           e.preventDefault(), e.stopPropagation(), false === t && (t = 0), (l -= 1) < 0 && ((t -= 1) >= 0 ? l = n[t] - 1 : t < 0 && (t = 0, l = 0));
           break;
-        case h.dh.ARROW_RIGHT:
+        case c.dh.ARROW_RIGHT:
           e.preventDefault(), e.stopPropagation(), false === t && (t = 0), (l += 1) >= n[t] && (l = 0, (t += 1) >= n.length && (t = n.length - 1, l = n[t] - 1));
           break;
-        case h.dh.ENTER:
+        case c.dh.ENTER:
           if (e.preventDefault(), e.stopPropagation(), false === t && (t = 0), false === l && (l = 0), t >= n.length || l >= n[t]) return;
           null != o && o(t, l, e);
           return;
-        case h.dh.ESCAPE:
+        case c.dh.ESCAPE:
           e.preventDefault(), u && e.stopPropagation(), null != o && o(null, null, e);
           return;
         default:
@@ -105,22 +105,22 @@ class f extends(n = Chunk64700.Component) {
       current: u
     } = this.ref;
     if (null != u) switch (e.key) {
-      case h.dh.BACKSPACE:
+      case c.dh.BACKSPACE:
         if ((null == s || 0 === s.length) && null != o && o.length > 0) {
-          var c, p;
-          e.preventDefault(), e.stopPropagation(), null == (c = (p = this.props).onRemoveTag) || c.call(p, o.length - 1)
+          var h, p;
+          e.preventDefault(), e.stopPropagation(), null == (h = (p = this.props).onRemoveTag) || h.call(p, o.length - 1)
         }
         break;
-      case h.dh.ARROW_DOWN:
+      case c.dh.ARROW_DOWN:
         e.preventDefault(), e.stopPropagation(), t.length > l && ++n >= t[l] && (++l >= t.length && (l = 0), n = 0), null == a || a(l, n);
         break;
-      case h.dh.ARROW_UP:
+      case c.dh.ARROW_UP:
         e.preventDefault(), e.stopPropagation(), --n < 0 && (--l < 0 && (l = t.length - 1), n = t[l] - 1), null == a || a(l, n);
         break;
-      case h.dh.ENTER:
+      case c.dh.ENTER:
         e.preventDefault(), e.stopPropagation(), t.length > l && t[l] > n && (null == r || r(l, n, e));
         break;
-      case h.dh.ESCAPE:
+      case c.dh.ESCAPE:
         e.preventDefault(), i && e.stopPropagation(), null == r || r(null, null, e), u.blur()
     }
   }
@@ -128,18 +128,18 @@ class f extends(n = Chunk64700.Component) {
     let {
       autoFocus: e,
       query: t,
-      placeholder: l = c.intl.string(c.t.LzcpeZ),
+      placeholder: l = h.intl.string(h.t.LzcpeZ),
       themeOverride: n,
       disabled: r,
       size: s,
       maxHeight: o,
-      tags: h,
+      tags: c,
       onActivate: g,
-      className: _,
-      inputProps: f,
-      focusAfterReady: R
-    } = this.props, b = false, E = [];
-    return null != h && h.length > 0 && ("string" == typeof h[0] ? h.forEach((e, t) => E.push((0, a.jsxs)(u.MzZ, {
+      className: f,
+      inputProps: _,
+      focusAfterReady: b
+    } = this.props, v = false, E = [];
+    return null != c && c.length > 0 && ("string" == typeof c[0] ? c.forEach((e, t) => E.push((0, a.jsxs)(u.MzZ, {
       focusProps: {
         offset: 4
       },
@@ -149,9 +149,9 @@ class f extends(n = Chunk64700.Component) {
         size: "md",
         color: "currentColor",
         className: p.VN,
-        "aria-label": c.intl.string(c.t.N86XcP)
+        "aria-label": h.intl.string(h.t.N86XcP)
       })]
-    }, t))) : (b = true, h.forEach((e, t) => E.push((0, a.jsxs)(u.MzZ, {
+    }, t))) : (v = true, c.forEach((e, t) => E.push((0, a.jsxs)(u.MzZ, {
       className: i()(p.Tc, p.J2),
       onClick: this.handleRemoveTag.bind(this, t),
       children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, a.jsx)(u.euF, {
@@ -170,7 +170,7 @@ class f extends(n = Chunk64700.Component) {
         size: "md",
         color: "currentColor",
         className: p.VN,
-        "aria-label": c.intl.string(c.t.N86XcP)
+        "aria-label": h.intl.string(h.t.N86XcP)
       })]
     }, t))))), (0, a.jsx)(u.vN3, {
       focusTarget: this.ref,
@@ -179,7 +179,7 @@ class f extends(n = Chunk64700.Component) {
         theme: n,
         children: n => (0, a.jsx)("div", {
           ref: this.containerRef,
-          className: i()(_, p.kL, s, n, {
+          className: i()(f, p.kL, s, n, {
             [p.r9]: r
           }),
           children: (0, a.jsxs)(u.IpV, {
@@ -200,7 +200,7 @@ class f extends(n = Chunk64700.Component) {
               return e
             }({
               className: i()(p.hF, {
-                [p.He]: b
+                [p.He]: v
               }),
               type: "text",
               ref: this.ref,
@@ -212,9 +212,9 @@ class f extends(n = Chunk64700.Component) {
               onFocus: this.handleFocus,
               disabled: r,
               "aria-disabled": r,
-              autoFocus: !R && e,
+              autoFocus: !b && e,
               onMouseDown: g
-            }, this.defaultInputProps, f))]
+            }, this.defaultInputProps, _))]
           })
         })
       })
@@ -237,10 +237,10 @@ class f extends(n = Chunk64700.Component) {
         current: a
       } = this.ref;
       if (null == a || null != t) {
-        e.key !== h.dh.TAB && (null == t || t(e));
+        e.key !== c.dh.TAB && (null == t || t(e));
         return
       }
-      if (e.key === h.dh.ESCAPE && null != a.value && "" !== a.value && a.value.length > 0) {
+      if (e.key === c.dh.ESCAPE && null != a.value && "" !== a.value && a.value.length > 0) {
         a.value = "", null != n && n("");
         return
       }
@@ -268,7 +268,7 @@ class f extends(n = Chunk64700.Component) {
     })
   }
 }
-d(f, "Sizes", g), d(f, "defaultProps", {
+d(_, "Sizes", g), d(_, "defaultProps", {
   size: g.SMALL,
   query: "",
   sections: [],
@@ -281,4 +281,4 @@ d(f, "Sizes", g), d(f, "defaultProps", {
   preventEscapePropagation: true,
   useKeyboardNavigation: true
 });
-let R = f
+let b = _

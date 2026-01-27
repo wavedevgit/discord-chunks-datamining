@@ -25,9 +25,9 @@ function f(e) {
     case "coptic":
       return new(0, i.pG);
     case "hebrew":
-      return new(0, s.Y);
+      return new(0, o.Y);
     case "indian":
-      return new(0, o.a);
+      return new(0, s.a);
     case "islamic-civil":
       return new(0, l.Yk);
     case "islamic-tbla":

@@ -2,8 +2,8 @@
 /** chunk id: 175650, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  LD: () => o,
-  ok: () => s,
+  LD: () => s,
+  ok: () => o,
   rh: () => a
 });
 var Chunk600975 = require("./600975.js"),
@@ -55,7 +55,7 @@ let a = (0, Chunk600975.C)({
     }
   }]
 });
-let s = (0, Chunk600975.C)({
+let o = (0, Chunk600975.C)({
     kind: "guild",
     id: "2023-03_server_subscriptions_tier_templates",
     label: "Server Subscriptions Tier Templates",
@@ -86,7 +86,7 @@ let s = (0, Chunk600975.C)({
       }
     }]
   }),
-  o = (0, Chunk600975.C)({
+  s = (0, Chunk600975.C)({
     kind: "user",
     id: "2023-04_server_subscriptions_tier_templates_user",
     label: "Server Subscriptions Tier Templates",

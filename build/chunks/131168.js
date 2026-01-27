@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 131168, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 131168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   p: () => c
 });
@@ -14,10 +13,10 @@ var Chunk311907 = require("./311907.js"),
 function c() {
   var e;
   let t = (0, r.bG)([i.A], () => i.A.getPremiumTypeSubscription()),
-    n = a.A.isFetchingOffer(),
-    c = a.A.hasFetchedOffer(),
-    u = (0, o.A)(l.q),
-    d = (0, o.A)(l.EG),
-    f = null != (e = null != u ? u : d) ? e : null;
-  return (null == t ? true : t.canceledAt) == null ? null : null != f ? f : (n || c || (0, s.Vn)(), null)
+    n = l.A.isFetchingOffer(),
+    c = l.A.hasFetchedOffer(),
+    d = (0, a.A)(o.q),
+    u = (0, a.A)(o.EG),
+    _ = null != (e = null != d ? d : u) ? e : null;
+  return (null == t ? true : t.canceledAt) == null ? null : null != _ ? _ : (n || c || (0, s.Vn)(), null)
 }

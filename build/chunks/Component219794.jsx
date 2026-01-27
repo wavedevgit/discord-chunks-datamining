@@ -15,7 +15,7 @@ let c = e => {
     componentId: t,
     promotionBannerMarketingComponentFields: n
   } = e;
-  return (0, o.A)({
+  return (0, s.A)({
     type: i.ImpressionTypes.VIEW,
     name: i.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
@@ -27,12 +27,12 @@ let c = e => {
     children: (0, r.jsxs)("div", {
       className: l.Q,
       children: [(0, r.jsx)("div", {
-        children: (0, r.jsx)(s._V3, {
+        children: (0, r.jsx)(o._V3, {
           src: n.assetUrl,
           width: 48,
           height: 48
         })
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-strong",
         children: n.body

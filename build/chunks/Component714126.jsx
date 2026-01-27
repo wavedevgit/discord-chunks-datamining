@@ -9,7 +9,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
   Chunk798233 = require("./798233.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,13 +29,13 @@ class l extends Chunk64700.PureComponent {
       children: (0, r.jsx)(a.Text, {
         color: "text-feedback-critical",
         variant: "text-md/normal",
-        className: s.cW,
+        className: o.cW,
         children: "Error rendering component. Check console for more information on the error."
       })
     }) : this.props.children
   }
   constructor(...e) {
-    super(...e), o(this, "state", {
+    super(...e), s(this, "state", {
       error: null,
       info: null
     })

@@ -11,7 +11,7 @@ var Chunk600975 = require("./600975.js"),
   Chunk303622 = require("./303622.js"),
   Chunk735729 = require("./735729.js"),
   Chunk688151 = require("./688151.js");
-let o = "hide_icymi_tab",
+let s = "hide_icymi_tab",
   l = (0, Chunk600975.C)({
     kind: "user",
     id: "2024-07_icymi",
@@ -31,7 +31,7 @@ let o = "hide_icymi_tab",
 
 function c(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = (0, a.A)(o),
+    n = (0, a.A)(s),
     r = l.useExperiment({
       location: e
     }, {
@@ -49,7 +49,7 @@ function c(e) {
 
 function u(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = i.A.get(o),
+    n = i.A.get(s),
     r = l.getCurrentConfig({
       location: e
     }, {

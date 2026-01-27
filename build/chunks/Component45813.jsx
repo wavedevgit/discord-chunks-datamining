@@ -1,12 +1,12 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 72752 **/
 /** chunk id: 45813, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => k
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk989349 = require("./989349.js"),
-  i = require.n(Chunk989349),
+  a = require.n(Chunk989349),
   Chunk158954 = require("./158954.js"),
   Chunk397927 = require("./397927.js"),
   Chunk871751 = require("./871751.jsx"),
@@ -28,54 +28,54 @@ function y(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-let j = Chunk46054.A.reactParserFor(Chunk550997.default.getDefaultRules(Chunk903957)),
-  A = {};
-class w extends Chunk64700.PureComponent {
+let O = Chunk46054.A.reactParserFor(Chunk550997.default.getDefaultRules(Chunk903957)),
+  j = {};
+class x extends Chunk64700.PureComponent {
   track(e, t, r) {
     this.props.track(e, t, r)
   }
   renderFooter() {
     return (0, n.jsxs)("div", {
-      className: m.footer,
-      children: [(0, n.jsx)(a.MzZ, {
-        "aria-label": O.intl.string(O.t["/84uiD"]),
-        className: m.socialLink,
-        href: (0, d.A)(b.Pq7.TWITTER),
+      className: f.footer,
+      children: [(0, n.jsx)(c.MzZ, {
+        "aria-label": g.intl.string(g.t["/84uiD"]),
+        className: f.socialLink,
+        href: (0, _.A)(p.Pq7.TWITTER),
         target: "blank",
-        children: (0, n.jsx)(a.p3p, {
+        children: (0, n.jsx)(c.p3p, {
           size: "xs",
           color: "currentColor"
         })
-      }), (0, n.jsx)(a.MzZ, {
-        "aria-label": O.intl.string(O.t["h0or/l"]),
-        className: m.socialLink,
-        href: b.w7I.FACEBOOK_URL,
+      }), (0, n.jsx)(c.MzZ, {
+        "aria-label": g.intl.string(g.t["h0or/l"]),
+        className: f.socialLink,
+        href: p.w7I.FACEBOOK_URL,
         target: "blank",
-        children: (0, n.jsx)(a.Zc1, {
+        children: (0, n.jsx)(c.Zc1, {
           size: "xs",
           color: "currentColor"
         })
-      }), (0, n.jsx)(a.MzZ, {
-        "aria-label": O.intl.string(O.t["5uVPyf"]),
-        className: m.socialLink,
-        href: b.w7I.INSTAGRAM_URL,
+      }), (0, n.jsx)(c.MzZ, {
+        "aria-label": g.intl.string(g.t["5uVPyf"]),
+        className: f.socialLink,
+        href: p.w7I.INSTAGRAM_URL,
         target: "blank",
-        children: (0, n.jsx)(a.LyU, {
+        children: (0, n.jsx)(c.LyU, {
           size: "xs",
           color: "currentColor"
         })
-      }), (0, n.jsx)(a.Text, {
+      }), (0, n.jsx)(c.Text, {
         variant: "text-xs/normal",
-        children: O.intl.string(O.t.EjVVI7)
+        children: g.intl.string(g.t.EjVVI7)
       })]
     })
   }
   renderVideo() {
     let {
       changeLog: e
-    } = this.props, t = e.youtube_video_id, l = e.video, o = e.image;
-    if (null != t && "" !== t) return (0, n.jsx)(s.rr, {
-      className: m.video,
+    } = this.props, t = e.youtube_video_id, o = e.video, l = e.image;
+    if (null != t && "" !== t) return (0, n.jsx)(d.rr, {
+      className: f.video,
       allowFullScreen: false,
       href: "https://youtu.be/".concat(t),
       thumbnail: {
@@ -88,37 +88,37 @@ class w extends Chunk64700.PureComponent {
         width: 432,
         height: 240
       },
-      provider: u.mt.YOUTUBE,
+      provider: s.mt.YOUTUBE,
       maxWidth: 432,
       maxHeight: 240,
-      renderVideoComponent: p.$o,
-      renderImageComponent: p.LL,
-      renderLinkComponent: p.bU,
+      renderVideoComponent: h.$o,
+      renderImageComponent: h.LL,
+      renderLinkComponent: h.bU,
       onPlay: () => {
-        this.track(b.HAw.CHANGE_LOG_VIDEO_INTERACTED, {}, true)
+        this.track(p.HAw.CHANGE_LOG_VIDEO_INTERACTED, {}, true)
       }
     });
-    if (null != l && "" !== l) {
-      let e = l.startsWith("https://") ? l : r(274516)("./".concat(l));
-      return (0, n.jsx)(h.A, {
+    if (null != o && "" !== o) {
+      let e = o.startsWith("https://") ? o : r(274516)("./".concat(o));
+      return (0, n.jsx)(u.A, {
         src: e,
-        poster: o,
+        poster: l,
         width: 432,
         height: 240,
         loop: true,
         muted: true,
         autoPlay: true,
-        className: m.video,
+        className: f.video,
         onPlay: () => {
-          this.track(b.HAw.CHANGE_LOG_VIDEO_INTERACTED, {}, true)
+          this.track(p.HAw.CHANGE_LOG_VIDEO_INTERACTED, {}, true)
         }
       })
     }
-    if (null == o || "" === o) return null;
+    if (null == l || "" === l) return null;
     {
-      let e = o.startsWith("https://") ? o : r(274516)("./".concat(o));
+      let e = l.startsWith("https://") ? l : r(274516)("./".concat(l));
       return (0, n.jsx)("img", {
-        className: m.image,
+        className: f.image,
         alt: "",
         src: e,
         width: 432,
@@ -130,28 +130,28 @@ class w extends Chunk64700.PureComponent {
     var e, t;
     let r = this.props,
       {
-        changeLog: l,
-        onScroll: o,
-        track: a
+        changeLog: o,
+        onScroll: l,
+        track: c
       } = r,
-      s = function(e, t) {
+      d = function(e, t) {
         if (null == e) return {};
-        var r, n, l, o = {};
+        var r, n, o, l = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
-          for (l = 0, r = Reflect.ownKeys(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-          return o
+          for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+          return l
         }
-        if (o = function(e, t) {
+        if (l = function(e, t) {
             if (null == e) return {};
-            var r, n, l = {},
-              o = Object.getOwnPropertyNames(e);
-            for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-            return l
+            var r, n, o = {},
+              l = Object.getOwnPropertyNames(e);
+            for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+            return o
           }(e, t), Object.getOwnPropertySymbols)
-          for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-        return o
+          for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+        return l
       }(r, ["changeLog", "onScroll", "track"]);
-    return (0, n.jsx)(c.Modal, (e = function(e) {
+    return (0, n.jsx)(i.Modal, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -162,10 +162,10 @@ class w extends Chunk64700.PureComponent {
         })
       }
       return e
-    }({}, s), t = t = {
-      title: O.intl.string(O.t.LRmNAl),
-      subtitle: O.intl.format(O.t.Fb8xx2, {
-        date: null != l.date && "" !== l.date ? i()(l.date).toDate() : new Date
+    }({}, d), t = t = {
+      title: g.intl.string(g.t.LRmNAl),
+      subtitle: g.intl.format(g.t.Fb8xx2, {
+        date: null != o.date && "" !== o.date ? a()(o.date).toDate() : new Date
       }),
       actions: [],
       actionBarInput: this.renderFooter(),
@@ -175,10 +175,10 @@ class w extends Chunk64700.PureComponent {
       children: (0, n.jsxs)("div", {
         tabIndex: 0,
         role: "region",
-        "aria-label": O.intl.string(O.t.HzBchE),
-        children: [this.renderVideo(), j(l.body, false, {
+        "aria-label": g.intl.string(g.t.HzBchE),
+        children: [this.renderVideo(), O(o.body, false, {
           changeLog: this,
-          interpolations: A,
+          interpolations: j,
           onLinkClick: this.trackLinkClick
         })]
       })
@@ -194,7 +194,7 @@ class w extends Chunk64700.PureComponent {
     }), e))
   }
   constructor(...e) {
-    super(...e), y(this, "scrollerRef", l.createRef()), y(this, "handleScroll", () => {
+    super(...e), y(this, "scrollerRef", o.createRef()), y(this, "handleScroll", () => {
       let {
         current: e
       } = this.scrollerRef;
@@ -203,11 +203,11 @@ class w extends Chunk64700.PureComponent {
         null == (t = (r = this.props).onScroll) || t.call(r, e)
       }
     }), y(this, "trackLinkClick", e => {
-      this.props.track(b.HAw.CHANGE_LOG_CTA_CLICKED, {
+      this.props.track(p.HAw.CHANGE_LOG_CTA_CLICKED, {
         cta_type: "inline_link",
         target: e
       }, false)
     })
   }
 }
-let k = w
+let A = x

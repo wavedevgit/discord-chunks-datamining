@@ -1,55 +1,54 @@
-/** Chunk was on web.js **/
-/** chunk id: 696028, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 696028, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk64700 = require("./64700.js"),
   Chunk954571 = require("./954571.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e, t, n, s) {
-  let o = r.useRef(false),
-    l = r.useRef(t),
+function a(e, t, n, a) {
+  let s = r.useRef(false),
+    o = r.useRef(t),
     c = r.useRef({
       positionInSection: n,
-      analyticsLocations: s
+      analyticsLocations: a
     });
   return r.useEffect(() => {
-    l.current = t
+    o.current = t
   }, [t]), {
     handleCardHover: r.useCallback(() => {
-      if (!o.current) {
+      if (!s.current) {
         let {
           sessionId: t,
           guildId: n,
           pageIndex: r,
-          pageTitle: s,
+          pageTitle: a,
           pageSection: u,
           pageSectionTitle: d,
-          isUserGuildMember: f,
-          pageHasLeaderboard: p
-        } = l.current, {
-          positionInSection: _,
-          analyticsLocations: h
+          isUserGuildMember: p,
+          pageHasLeaderboard: m
+        } = o.current, {
+          positionInSection: f,
+          analyticsLocations: g
         } = c.current;
-        i.default.track(a.HAw.SLAYER_STOREFRONT_CARD_HOVERED, {
+        i.default.track(l.HAw.SLAYER_STOREFRONT_CARD_HOVERED, {
           slayer_storefront_session_id: t,
           sku_id: e,
           guild_id: n,
           page_index: r,
-          page_title: s,
+          page_title: a,
           page_section: u,
           page_section_title: d,
-          position_in_section: _,
-          is_user_guild_member: f,
-          page_has_leaderboard: p,
-          location_stack: h
-        }), o.current = true
+          position_in_section: f,
+          is_user_guild_member: p,
+          page_has_leaderboard: m,
+          location_stack: g
+        }), s.current = true
       }
     }, [e]),
     handleCardUnhover: r.useCallback(() => {
-      o.current = false
+      s.current = false
     }, [])
   }
 }

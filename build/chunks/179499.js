@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 179499, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 179499, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => p
 });
 var Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
-  a = require.n(Chunk284009),
+  l = require.n(Chunk284009),
   Chunk417597 = require("./417597.js"),
   Chunk397927 = require("./397927.js"),
   Chunk871109 = require("./871109.js"),
@@ -14,34 +13,34 @@ var Chunk64700 = require("./64700.js"),
   Chunk960427 = require("./960427.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function f(e) {
+function p(e) {
   var t, n;
   let {
     guildId: i,
-    productId: f
-  } = e, p = (0, s.bG)([l.A], () => l.A.getGuildProduct(f)), {
-    isLoading: _,
-    downloadAttachment: h
-  } = (0, c.A)(i, f), m = r.useCallback(() => {
+    productId: p
+  } = e, m = (0, a.bG)([o.A], () => o.A.getGuildProduct(p)), {
+    isLoading: f,
+    downloadAttachment: g
+  } = (0, c.A)(i, p), h = r.useCallback(() => {
     var e, t;
-    let n = null == p || null == (t = p.attachments) || null == (e = t[0]) ? true : e.id;
-    a()(null != n, "No attachment"), h(n)
-  }, [h, null == p ? true : p.attachments]), g = r.useCallback(() => u.A.open({
+    let n = null == m || null == (t = m.attachments) || null == (e = t[0]) ? true : e.id;
+    l()(null != n, "No attachment"), g(n)
+  }, [g, null == m ? true : m.attachments]), _ = r.useCallback(() => u.A.open({
     guildId: i,
-    productId: f
-  }), [i, f]);
-  return (null != (t = null == p || null == (n = p.attachments) ? true : n.length) ? t : 0) > 1 ? {
+    productId: p
+  }), [i, p]);
+  return (null != (t = null == m || null == (n = m.attachments) ? true : n.length) ? t : 0) > 1 ? {
     variant: "primary",
     text: d.intl.string(d.t.UyuiUE),
-    icon: o.KS6,
+    icon: s.KS6,
     iconPosition: "end",
-    onClick: g
+    onClick: _
   } : {
     variant: "primary",
     text: d.intl.string(d.t.t9bE9b),
-    icon: o.s3U,
+    icon: s.s3U,
     iconPosition: "end",
-    loading: _,
-    onClick: m
+    loading: f,
+    onClick: h
   }
 }

@@ -4,12 +4,12 @@ var Chunk99302 = require("./99302.js"),
   Chunk632516 = require("./632516.js"),
   Chunk509185 = require("./509185.js"),
   Chunk429397 = require("./429397.js"),
-  o = /[\\^$.*+?()[\]{}|]/g,
+  s = /[\\^$.*+?()[\]{}|]/g,
   l = /^\[object .+?Constructor\]$/,
   c = Object.prototype,
   u = Function.prototype.toString,
   d = c.hasOwnProperty,
-  f = RegExp("^" + u.call(d).replace(o, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
+  f = RegExp("^" + u.call(d).replace(s, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
 module.exports = function(e) {
-  return !(!a(e) || i(e)) && (r(e) ? f : l).test(s(e))
+  return !(!a(e) || i(e)) && (r(e) ? f : l).test(o(e))
 }

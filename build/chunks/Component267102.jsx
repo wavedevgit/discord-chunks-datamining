@@ -30,7 +30,7 @@ let u = new Chunk203982.H,
   f = new Map;
 
 function p(e, t) {
-  let [n, r] = i.useState((0, o.Q2)(t)), a = i.useMemo(() => new s.H, []), l = i.useMemo(() => ({
+  let [n, r] = i.useState((0, s.Q2)(t)), a = i.useMemo(() => new o.H, []), l = i.useMemo(() => ({
     appContext: e,
     renderWindow: t,
     windowDispatch: a,
@@ -39,7 +39,7 @@ function p(e, t) {
   return i.useEffect(() => {
     if (null != n) return;
     let e = setInterval(() => {
-      let n = (0, o.Q2)(t);
+      let n = (0, s.Q2)(t);
       null != n && (r(n), clearInterval(e))
     }, 10);
     return () => clearInterval(e)
@@ -56,7 +56,7 @@ function _(e) {
   var t;
   let n = e.ownerDocument.defaultView;
   if (null == n) return;
-  let r = (0, o.Q2)(n);
+  let r = (0, s.Q2)(n);
   return null == (t = f.get(r)) ? true : t.windowDispatch
 }
 

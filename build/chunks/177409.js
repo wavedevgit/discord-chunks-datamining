@@ -25,12 +25,12 @@ module.exports = {
       return t + e * (n - t)
     }
 
-    function s(e, t, n) {
+    function o(e, t, n) {
       return e * n + (1 - e) * t
     }
 
-    function o(e, t, n) {
-      return s(2 * e - e * e, t, n)
+    function s(e, t, n) {
+      return o(2 * e - e * e, t, n)
     }
 
     function l(e) {
@@ -51,7 +51,7 @@ module.exports = {
     var f = i(e / 1.7, 0, 20);
     f = a(f, 0, .8);
     var p = a(i(r / 1.7, 0, 20), .5, 200),
-      _ = o(f, d(p), .01);
+      _ = s(f, d(p), .01);
     return {
       tension: t(p),
       friction: n(_)

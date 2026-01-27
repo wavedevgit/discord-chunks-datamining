@@ -40,7 +40,7 @@ async function d(e) {
   let {
     skuId: t,
     loadId: n,
-    onRedeemStart: s,
+    onRedeemStart: o,
     onRedeemSucceed: d,
     onRedeemFail: f,
     shouldRefetchBalance: p = true,
@@ -51,7 +51,7 @@ async function d(e) {
       type: "VIRTUAL_CURRENCY_REDEEM_START",
       skuId: t
     })
-  }), null == s || s();
+  }), null == o || o();
   try {
     let e = {
         checkout_session_id: n,
@@ -65,7 +65,7 @@ async function d(e) {
     if (null == a || !Array.isArray(a)) {
       let e = "Could not read entitlements from Virtual Currency redemption response. Response: ",
         t = Error(e, a);
-      throw c.error(e, a), o.A.captureException(t, {
+      throw c.error(e, a), s.A.captureException(t, {
         tags: {
           app_context: "virtual_currency"
         }

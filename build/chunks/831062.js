@@ -60,7 +60,7 @@ function _() {
 }
 
 function h() {
-  let e = s.y;
+  let e = o.y;
   return null != e && r.f.ALL.has(e) ? e : null
 }
 let m = 12e4,
@@ -73,15 +73,15 @@ class E {
     } = e, i = {
       name: n,
       type: t,
-      tags: (0, o.u)()
+      tags: (0, s.u)()
     };
     null != r && r.forEach(e => {
       i.tags.push(e)
     });
     let a = _();
     null != a && i.tags.push("platform:".concat(a));
-    let s = h();
-    return null != s && i.tags.push("release_channel:".concat(s)), i
+    let o = h();
+    return null != o && i.tags.push("release_channel:".concat(o)), i
   }
   increment(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
@@ -103,8 +103,8 @@ class E {
         body: {
           metrics: e,
           client_info: {
-            built_at: "1769471354810",
-            build_number: "489589"
+            built_at: "1769478769589",
+            build_number: "489697"
           }
         },
         retries: 1,

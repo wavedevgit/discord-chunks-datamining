@@ -17,7 +17,7 @@ function u(e) {
   let {
     name: t,
     onRetry: n
-  } = e, u = (0, o.b2)(), d = (0, o.n6)(u.hex()), f = null != t ? t : l.intl.string(l.t.DmIUGK);
+  } = e, u = (0, s.b2)(), d = (0, s.n6)(u.hex()), f = null != t ? t : l.intl.string(l.t.DmIUGK);
   return (0, r.jsxs)("div", {
     className: c.kL,
     children: [(0, r.jsx)("div", {
@@ -33,7 +33,7 @@ function u(e) {
         height: 70,
         children: (0, r.jsx)("div", {
           className: c.R3,
-          children: (0, r.jsx)(s.B$, {
+          children: (0, r.jsx)(o.B$, {
             guildName: f,
             iconSize: 64
           })

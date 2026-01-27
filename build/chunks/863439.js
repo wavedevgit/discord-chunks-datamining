@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 863439, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92414 **/
+/** chunk id: 863439, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o,
-  z: () => l
+  z: () => a
 });
 var Chunk417597 = require("./417597.js"),
   Chunk253932 = require("./253932.js"),
@@ -22,7 +21,7 @@ function o(e, t) {
   }
 }
 
-function l(e) {
-  let t = (0, r.bG)([a.A], () => a.A.can(s.xBc.MANAGE_MESSAGES, e));
+function a(e) {
+  let t = (0, r.bG)([l.A], () => l.A.can(s.xBc.MANAGE_MESSAGES, e));
   return !o(i.gs.useSetting(), t)
 }

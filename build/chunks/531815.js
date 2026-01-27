@@ -10,8 +10,8 @@ function a(e, t) {
       i = t ? t.apply(this, r) : r[0],
       a = n.cache;
     if (a.has(i)) return a.get(i);
-    var s = e.apply(this, r);
-    return n.cache = a.set(i, s) || a, s
+    var o = e.apply(this, r);
+    return n.cache = a.set(i, o) || a, o
   };
   return n.cache = new(a.Cache || r), n
 }

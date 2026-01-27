@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk607399 = require("./607399.js"),
   Chunk337836 = require("./337836.jsx"),
   Chunk158954 = require("./158954.js"),
@@ -84,19 +84,19 @@ let et = (0, Chunk268218.Fe)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, K.getPlatform)(), f = o.Fr || o.v1, g = (0, u.bG)([E.A], () => E.A.useForcedColors ? "yes" : "no"), Y = i.useRef(document.body), W = "".concat(g);
-    (0, N.M)(), (0, L.i)("AppSkeleton");
+    } = e, a = (0, K.getPlatform)(), f = s.Fr || s.v1, g = (0, u.bG)([E.A], () => E.A.useForcedColors ? "yes" : "no"), Y = i.useRef(document.body), W = "".concat(g);
+    (0, N.M)(), (0, x.i)("AppSkeleton");
     let z = (0, D._D)("AppSkeleton"),
       J = P.wX.useConfig({
         location: "AppSkeleton"
       }).enableFastConnectEarlyIdentify,
-      er = (0, x.sK)("AppSkeleton");
+      er = (0, L.sK)("AppSkeleton");
     return i.useEffect(() => {
       K.isPlatformEmbedded && (z ? d.w.set(D.UR, "json") : d.w.remove(D.UR))
     }, [z]), i.useEffect(() => {
       J ? d.w.set(P.Vz, true) : d.w.remove(P.Vz)
     }, [J]), i.useEffect(() => {
-      er ? d.w.set(x.AL, true) : d.w.remove(x.AL)
+      er ? d.w.set(L.AL, true) : d.w.remove(L.AL)
     }, [er]), (0, r.jsx)(B.e, {
       children: (0, r.jsxs)(y.A, {
         children: [(0, r.jsx)(q.A, {
@@ -105,12 +105,12 @@ let et = (0, Chunk268218.Fe)({
           children: (0, r.jsx)(R.A, {
             children: (0, r.jsxs)(p.xpW, {
               containerRef: Y,
-              children: [(0, r.jsx)(Q.Al, {}), (0, r.jsx)(X.Ay, {}), (0, r.jsx)(c.Utq, {}), (0, r.jsx)(U.Wr, {
+              children: [(0, r.jsx)(X.Al, {}), (0, r.jsx)(Q.Ay, {}), (0, r.jsx)(c.Utq, {}), (0, r.jsx)(U.Wr, {
                 appContext: $.BRT.APP,
                 renderWindow: window,
-                children: (0, r.jsxs)(j.Yf, {
+                children: (0, r.jsxs)(M.Yf, {
                   children: [null != a ? (0, r.jsx)(en, {}) : null, (0, r.jsxs)("div", {
-                    className: s()(ee.XX, f && ee.Xq),
+                    className: o()(ee.XX, f && ee.Xq),
                     children: [(0, r.jsx)(C.C1, {}), (0, r.jsx)("div", {
                       className: ee.x$,
                       "data-app-not-dev-tools": true,
@@ -119,13 +119,13 @@ let et = (0, Chunk268218.Fe)({
                           children: (0, r.jsx)(b.A.Provider, {
                             value: O.A,
                             children: (0, r.jsx)(S.p, {
-                              children: (0, r.jsxs)(V.xq, {
+                              children: (0, r.jsxs)(F.xq, {
                                 children: [(0, r.jsx)("div", {
-                                  className: s()(f ? ee.C$ : ee.yA),
+                                  className: o()(f ? ee.C$ : ee.yA),
                                   children: t
-                                }), (0, r.jsx)(_.A, {}), (0, r.jsx)(A.A, {}), (0, r.jsx)(h.A, {}), (0, r.jsx)(p.bM6, {}), (0, r.jsx)(H.A, {}), (0, r.jsx)(M.up, {}), (0, r.jsx)(l.P, {}), (0, r.jsx)(j.C8, {}), (0, r.jsx)(k.ok, {}), (0, r.jsx)(p.N9M, {
+                                }), (0, r.jsx)(_.A, {}), (0, r.jsx)(A.A, {}), (0, r.jsx)(h.A, {}), (0, r.jsx)(p.bM6, {}), (0, r.jsx)(H.A, {}), (0, r.jsx)(j.up, {}), (0, r.jsx)(l.P, {}), (0, r.jsx)(M.C8, {}), (0, r.jsx)(k.ok, {}), (0, r.jsx)(p.N9M, {
                                   appContext: $.BRT.APP
-                                }), (0, r.jsx)(v.A, {}), (0, r.jsx)(G.A, {}), (0, r.jsx)(et, {}), (0, r.jsx)(F.A, {})]
+                                }), (0, r.jsx)(v.A, {}), (0, r.jsx)(G.A, {}), (0, r.jsx)(et, {}), (0, r.jsx)(V.A, {})]
                               })
                             })
                           })

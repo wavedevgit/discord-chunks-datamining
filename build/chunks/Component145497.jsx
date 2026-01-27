@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk573435 = require("./573435.jsx"),
   Chunk531685 = require("./531685.js"),
@@ -29,7 +29,7 @@ function p(e) {
     height: n,
     className: i,
     children: (0, r.jsx)("div", {
-      className: s()(f.O, f.q),
+      className: o()(f.O, f.q),
       children: a
     })
   })
@@ -44,7 +44,7 @@ function _(e) {
     className: p,
     acronymClassName: _,
     animate: h
-  } = e, m = (0, o.bG)([c.A], () => c.A.isFocused()), g = (0, u.V0)(i) ? i : u.Ay.getGuildIconURL({
+  } = e, m = (0, s.bG)([c.A], () => c.A.isFocused()), g = (0, u.V0)(i) ? i : u.Ay.getGuildIconURL({
     id: t,
     icon: i,
     size: a,
@@ -58,7 +58,7 @@ function _(e) {
       height: a,
       className: p,
       children: (0, r.jsx)("div", {
-        className: s()(f.O, f.q, _),
+        className: o()(f.O, f.q, _),
         children: e
       })
     })

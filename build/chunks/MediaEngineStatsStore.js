@@ -29,7 +29,7 @@ function h(e) {
 }
 
 function m(e, t, n, r, i) {
-  var a, s, o, l, c, u, d, f, p, _, m, g, E, y, b, O, v, A;
+  var a, o, s, l, c, u, d, f, p, _, m, g, E, y, b, O, v, A;
   let I = r.find(e => "video" === e.type);
   if (null == n && (n = {
       packetsSentOrReceived: 0,
@@ -44,8 +44,8 @@ function m(e, t, n, r, i) {
       entropyAggregated: 0,
       minVersion: e
     }), null == I) return n;
-  let S = h(I) ? null != (a = I.packetsSent) ? a : 0 : null != (s = I.packetsReceived) ? s : 0,
-    T = h(I) ? null != (o = I.packetsLost) ? o : 0 : null != (l = I.packetsLost) ? l : 0,
+  let S = h(I) ? null != (a = I.packetsSent) ? a : 0 : null != (o = I.packetsReceived) ? o : 0,
+    T = h(I) ? null != (s = I.packetsLost) ? s : 0 : null != (l = I.packetsLost) ? l : 0,
     C = h(I) ? null != (c = I.frameRateEncode) ? c : 0 : null != (u = I.frameRateDecode) ? u : 0,
     N = null != (d = null == (p = I.resolution) ? true : p.height) ? d : 0,
     w = h(I) && null != (f = I.videoEntropy) ? f : 0;
@@ -66,8 +66,8 @@ function m(e, t, n, r, i) {
 function g(e, t, n, r) {
   var i, a;
   null == e[t] && (e[t] = {});
-  let s = o.default.getId();
-  for (let o of (e[t][s] = m(n.version, null != (i = null == r ? true : r.version) ? i : 0, e[t][s], n.stats.rtp.outbound, null == r ? true : r.stats.rtp.outbound), Object.keys(n.stats.rtp.inbound))) e[t][o] = m(n.version, null != (a = null == r ? true : r.version) ? a : 0, e[t][o], n.stats.rtp.inbound[o], null == r ? true : r.stats.rtp.inbound[o])
+  let o = s.default.getId();
+  for (let s of (e[t][o] = m(n.version, null != (i = null == r ? true : r.version) ? i : 0, e[t][o], n.stats.rtp.outbound, null == r ? true : r.stats.rtp.outbound), Object.keys(n.stats.rtp.inbound))) e[t][s] = m(n.version, null != (a = null == r ? true : r.version) ? a : 0, e[t][s], n.stats.rtp.inbound[s], null == r ? true : r.stats.rtp.inbound[s])
 }
 
 function E(e) {
@@ -113,7 +113,7 @@ function v(e) {
   if (r) returnfalse;
   let i = null == (t = l.A.getRTCConnection(n)) ? true : t.getMediaEngineConnectionId();
   if (null == i) returnfalse;
-  y(i, (0, s.Iy)(n).ownerId)
+  y(i, (0, o.Iy)(n).ownerId)
 }
 
 function A(e, t) {
@@ -123,7 +123,7 @@ function A(e, t) {
 }
 class I extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.default, l.A)
+    this.waitFor(s.default, l.A)
   }
   getConnectionStats(e) {
     return A(e, 0)

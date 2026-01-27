@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 807676, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 807676, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => u
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,27 +12,27 @@ var Chunk421380 = require("./421380.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk70338 = require("./70338.js");
-let d = e => {
+let u = e => {
   let {
     setIsAllPerksVisible: t,
     previousComponent: n
   } = e;
-  return (0, r.jsx)(a.wLn, {
+  return (0, r.jsx)(l.wLn, {
     "data-migration-pending": true,
     color: i.XD.CUSTOM,
     onlyShineOnHover: true,
-    shineSize: a._Jd.SMALL,
-    className: u.Wg,
+    shineSize: l._Jd.SMALL,
+    className: d.Wg,
     onClick: () => {
-      t(true), s.default.track(l.HAw.NITRO_HOME_NAVIGATION, {
+      t(true), s.default.track(o.HAw.NITRO_HOME_NAVIGATION, {
         current_component: n,
-        next_component: o.A2.SEE_ALL,
+        next_component: a.A2.SEE_ALL,
         interaction_component: "See All Button"
       })
     },
     children: (0, r.jsxs)("div", {
-      className: u.zB,
-      children: [c.intl.string(c.t["37C26f"]), (0, r.jsx)(a._BQ, {
+      className: d.zB,
+      children: [c.intl.string(c.t["37C26f"]), (0, r.jsx)(l._BQ, {
         color: "currentColor"
       })]
     })

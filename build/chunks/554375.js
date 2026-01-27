@@ -31,7 +31,7 @@ var Chunk735438 = require("./735438.js"),
 
 function O(e) {
   _.wc.updateAsync("textAndImages", t => {
-    t.diversitySurrogate = s.hU.create(), t.diversitySurrogate.value = e
+    t.diversitySurrogate = o.hU.create(), t.diversitySurrogate.value = e
   }, y.Sb.FREQUENT_USER_ACTION)
 }
 
@@ -59,7 +59,7 @@ function A(e) {
     image: n,
     name: r,
     roles: i,
-    analyticsLocation: s
+    analyticsLocation: o
   } = e;
   return l.h.dispatch({
     type: "EMOJI_UPLOAD_START",
@@ -72,7 +72,7 @@ function A(e) {
       roles: i
     },
     context: {
-      client_event_source: null == s ? true : s.page
+      client_event_source: null == o ? true : o.page
     },
     oldFormErrors: true,
     rejectWithError: false
@@ -98,7 +98,7 @@ function I(e, t, n) {
     oldFormErrors: true,
     rejectWithError: false
   }).then(() => {
-    o.OR.announce(b.intl.string(b.t.L3UUha))
+    s.OR.announce(b.intl.string(b.t.L3UUha))
   })
 }
 async function S(e) {

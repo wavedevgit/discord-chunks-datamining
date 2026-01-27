@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk27867 = require("./27867.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -38,7 +38,7 @@ function g(e) {
     icon: (0, r.jsx)(c.EpV, {
       size: "xs",
       color: "currentColor",
-      className: s()(h.Kk, h.ik)
+      className: o()(h.Kk, h.ik)
     })
   }
 }
@@ -66,7 +66,7 @@ function y(e) {
     color: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(h.iE, t),
+    className: o()(h.iE, t),
     children: [n, (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       color: a,
@@ -81,17 +81,17 @@ function b(e) {
     message: t,
     className: n,
     component: a
-  } = e, s = (0, o.A)(), c = (0, l.bG)([d.Ay], () => d.Ay.getInteraction(t), [t]);
+  } = e, o = (0, s.A)(), c = (0, l.bG)([d.Ay], () => d.Ay.getInteraction(t), [t]);
   i.useEffect(() => {
     let e = null;
     if (t.hasFlag(p.pr7.LOADING) && null != c) {
       let n = (0, f.I5)(t.id) - Date.now();
-      n > 0 && (e = setTimeout(() => s(), 1e3 + n))
+      n > 0 && (e = setTimeout(() => o(), 1e3 + n))
     }
     return () => {
       clearTimeout(e)
     }
-  }, [s, c, t]);
+  }, [o, c, t]);
   let _ = null;
   if (null == a) _ = E(c, t);
   else {

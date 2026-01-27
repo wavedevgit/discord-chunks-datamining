@@ -47,8 +47,8 @@ function _(e) {
   f && (0, a.A)(d.MLl.CHANNEL_CALL_POPOUT);
   let m = f ? i.KX8 : i.SYi;
   (0, l.k)(c.Se.DISMISSED), (0, l.R)(c.s4.VOICE, true, h, "channel" === t.type ? t.channel.id : true);
-  let g = "contextless" !== t.type && (s.Ay.hasUnread(t.channel.id) || s.Ay.getMentionCount(t.channel.id) > 0);
-  return o.default.track(d.HAw.VOICE_PANEL_TAB_OPENED, {
+  let g = "contextless" !== t.type && (o.Ay.hasUnread(t.channel.id) || o.Ay.getMentionCount(t.channel.id) > 0);
+  return s.default.track(d.HAw.VOICE_PANEL_TAB_OPENED, {
     tab: "activities",
     location: _,
     source: c.s4.VOICE,

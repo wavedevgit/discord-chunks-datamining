@@ -15,8 +15,8 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = new Chunk118356.Vy("Flux"),
-  o = 100,
+let o = new Chunk118356.Vy("Flux"),
+  s = 100,
   l = e => e();
 class c {
   destroy() {
@@ -51,11 +51,11 @@ class c {
           t = new Set,
           n = new Set;
         for (; this.changedStores.size > 0;) {
-          if (++e > 100) throw s.error("LastFewActions", i.lK()), Error("change emit loop detected, aborting");
+          if (++e > 100) throw o.error("LastFewActions", i.lK()), Error("change emit loop detected, aborting");
           this.emitNonReactOnce(t, n)
         }
         for (; this.reactChangedStores.size > 0;) {
-          if (++e > 100) throw s.error("LastFewActions", i.lK()), Error("react change emit loop detected, aborting");
+          if (++e > 100) throw o.error("LastFewActions", i.lK()), Error("react change emit loop detected, aborting");
           this.emitReactOnce()
         }
       } finally {
@@ -87,7 +87,7 @@ class c {
       })
     });
     let a = Date.now();
-    a - n > o && s.verbose("Slow batch emitChanges took ".concat(a - n, "ms recentActions:"), i.lK())
+    a - n > s && o.verbose("Slow batch emitChanges took ".concat(a - n, "ms recentActions:"), i.lK())
   }
   emitReactOnce() {
     let e = Date.now(),
@@ -96,7 +96,7 @@ class c {
       e._reactChangeCallbacks.invokeAll(), this.reactChangedStores.delete(e)
     });
     let n = Date.now();
-    n - e > o && s.verbose("Slow batch emitReactChanges took ".concat(n - e, "ms recentActions:"), i.lK())
+    n - e > s && o.verbose("Slow batch emitReactChanges took ".concat(n - e, "ms recentActions:"), i.lK())
   }
   constructor() {
     a(this, "changedStores", new Set), a(this, "reactChangedStores", new Set), a(this, "changeSentinel", 0), a(this, "isBatchEmitting", false), a(this, "isDispatching", false), a(this, "isPaused", false), a(this, "pauseTimer", null)

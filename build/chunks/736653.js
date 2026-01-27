@@ -4,7 +4,7 @@
 require.d(exports, {
   Ay: () => l,
   DP: () => a,
-  xv: () => s
+  xv: () => o
 });
 var Chunk582754 = require("./582754.js"),
   Chunk652215 = require("./652215.js");
@@ -16,11 +16,11 @@ function a() {
   return e
 }
 
-function s() {
-  return o(a())
+function o() {
+  return s(a())
 }
 
-function o(e) {
+function s(e) {
   switch (e) {
     case i.NJ8.DARK:
       return 0;

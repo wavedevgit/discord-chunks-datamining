@@ -21,11 +21,11 @@ function a(e, t) {
   }
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t && a(e.prototype, t), n && a(e, n), e
 }
 
-function o(e, t) {
+function s(e, t) {
   if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function");
   e.prototype = Object.create(t && t.prototype, {
     constructor: {
@@ -87,16 +87,16 @@ require.d(exports, {
   U: () => h
 });
 var h = function(e) {
-  o(n, e);
+  s(n, e);
   var t = c(n);
 
   function n() {
     var e;
     i(this, n);
-    for (var r = arguments.length, a = Array(r), s = 0; s < r; s++) a[s] = arguments[s];
+    for (var r = arguments.length, a = Array(r), o = 0; o < r; o++) a[o] = arguments[o];
     return _(d(e = t.call.apply(t, [this].concat(a))), "priority", 140), _(d(e), "incompatibleTokens", ["R", "u", "t", "T"]), e
   }
-  return s(n, [{
+  return o(n, [{
     key: "parse",
     value: function(e, t, n) {
       switch (t) {

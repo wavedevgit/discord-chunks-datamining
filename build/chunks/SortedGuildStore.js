@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk812729 = require("./812729.js"),
   a = require.n(Chunk812729),
   Chunk284009 = require("./284009.js"),
-  o = require.n(Chunk284009),
+  s = require.n(Chunk284009),
   Chunk212455 = require("./212455.js"),
   Chunk263715 = require("./263715.js"),
   Chunk857071 = require("./857071.js"),
@@ -107,12 +107,12 @@ function R(e) {
     targetId: n,
     moveToBelow: r,
     combine: i
-  } = e, a = I.getNode(t), s = I.getNode(n);
-  if (null == a || null == s) returnfalse;
-  if (o()(!(i && a.type === c.PJ.FOLDER), "[SORTED GUILDS] Can't combine a folder ".concat(a.id, " with another guilds list item")), o()(!(i && null != s.parentId), "[SORTED GUILDS] Can't combine with a guild ".concat(s.id, " that's already inside of a folder")), o()(a.type !== c.PJ.FOLDER || null == s.parentId, "[SORTED GUILDS] Can't move a folder ".concat(a.id, " to inside of another folder ").concat(s.parentId)), i) {
-    let e = s.type !== c.PJ.FOLDER ? I.convertToFolder(s) : s;
+  } = e, a = I.getNode(t), o = I.getNode(n);
+  if (null == a || null == o) returnfalse;
+  if (s()(!(i && a.type === c.PJ.FOLDER), "[SORTED GUILDS] Can't combine a folder ".concat(a.id, " with another guilds list item")), s()(!(i && null != o.parentId), "[SORTED GUILDS] Can't combine with a guild ".concat(o.id, " that's already inside of a folder")), s()(a.type !== c.PJ.FOLDER || null == o.parentId, "[SORTED GUILDS] Can't move a folder ".concat(a.id, " to inside of another folder ").concat(o.parentId)), i) {
+    let e = o.type !== c.PJ.FOLDER ? I.convertToFolder(o) : o;
     I.moveInto(a, e, r)
-  } else I.moveNextTo(a, s, r)
+  } else I.moveNextTo(a, o, r)
 }
 
 function P(e) {
@@ -139,24 +139,24 @@ function D(e) {
   let a = "" === r.name ? true : r.name;
   if (a !== i.name) {
     let e = I.cloneNode(i);
-    o()(e.id === i.id, "[SORTED GUILDS] Replacement folder node must have same id."), e.name = a, I.replaceNode(i, e)
+    s()(e.id === i.id, "[SORTED GUILDS] Replacement folder node must have same id."), e.name = a, I.replaceNode(i, e)
   }
-  let s = I.getNode(t);
-  if (null == s) returnfalse;
-  let l = s.children.map(e => e.id).filter(p.Vq),
+  let o = I.getNode(t);
+  if (null == o) returnfalse;
+  let l = o.children.map(e => e.id).filter(p.Vq),
     u = new Set(l),
     d = new Set(n),
     f = new Set([...l].filter(e => !d.has(e)));
   n.filter(e => !u.has(e)).forEach(e => {
     let t = I.getNode(e);
-    null != t && I.moveInto(t, s, true)
+    null != t && I.moveInto(t, o, true)
   }), f.forEach(e => {
     let t = I.getNode(e);
-    null != t && I.moveNextTo(t, s, true)
+    null != t && I.moveNextTo(t, o, true)
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     targetId: t
   } = e, n = I.getNode(t);
@@ -167,18 +167,18 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     joinedAt: n,
     user: r
   } = e, i = b.default.getCurrentUser(), a = g.A.getGuild(t);
   if ((null == i ? true : i.id) !== r.id || null == a) returnfalse;
-  let s = "string" == typeof n ? new Date(n) : n;
-  return s !== a.joinedAt && null != s && N()
+  let o = "string" == typeof n ? new Date(n) : n;
+  return o !== a.joinedAt && null != o && N()
 }
 
-function j(e) {
+function M(e) {
   let {
     folderId: t
   } = e, n = I.getNode(t), r = _.A.isFolderExpanded(t);
@@ -186,7 +186,7 @@ function j(e) {
   U(n, r)
 }
 
-function M(e) {
+function j(e) {
   let {
     folderId: t,
     expanded: n
@@ -201,11 +201,11 @@ function k() {
 
 function U(e, t) {
   let n = I.cloneNode(e);
-  o()(n.id === e.id, "[SORTED GUILDS] setNodeExpanded: Replacement folder node must have same id."), n.expanded = t, I.replaceNode(e, n)
+  s()(n.id === e.id, "[SORTED GUILDS] setNodeExpanded: Replacement folder node must have same id."), n.expanded = t, I.replaceNode(e, n)
 }
 let G = (0, Chunk583613.L_)((e, t) => e.sortedGuildNodes().map(e => e.id)),
-  V = (0, Chunk583613.L_)((e, t) => e.getRoots().map(T)),
-  F = (0, Chunk583613.L_)((e, t) => {
+  F = (0, Chunk583613.L_)((e, t) => e.getRoots().map(T)),
+  V = (0, Chunk583613.L_)((e, t) => {
     let n = [];
 
     function r(e) {
@@ -227,7 +227,7 @@ class H extends Chunk536802.A {
     return I
   }
   getGuildFolders() {
-    return V(I, I.version)
+    return F(I, I.version)
   }
   getGuildFolderById(e) {
     return this.getGuildFolders().find(t => t.folderId === e)
@@ -236,7 +236,7 @@ class H extends Chunk536802.A {
     return G(I, I.version)
   }
   getFlattenedGuildFolderList() {
-    return F(I, I.version)
+    return V(I, I.version)
   }
   getCompatibleGuildFolders() {
     return B(I, I.version)
@@ -259,14 +259,14 @@ class H extends Chunk536802.A {
       CACHE_LOADED: () => this.loadCache(),
       GUILD_CREATE: N,
       GUILD_DELETE: N,
-      GUILD_MEMBER_ADD: L,
+      GUILD_MEMBER_ADD: x,
       USER_SETTINGS_PROTO_UPDATE: w,
       GUILD_MOVE_BY_ID: R,
       GUILD_FOLDER_CREATE_LOCAL: P,
       GUILD_FOLDER_EDIT_LOCAL: D,
-      GUILD_FOLDER_DELETE_LOCAL: x,
-      TOGGLE_GUILD_FOLDER_EXPAND: j,
-      SET_GUILD_FOLDER_EXPANDED: M,
+      GUILD_FOLDER_DELETE_LOCAL: L,
+      TOGGLE_GUILD_FOLDER_EXPAND: M,
+      SET_GUILD_FOLDER_EXPANDED: j,
       GUILD_FOLDER_COLLAPSE: k
     }), O(this, "loadCache", () => {
       let e = this.readSnapshot(H.LATEST_SNAPSHOT_VERSION),

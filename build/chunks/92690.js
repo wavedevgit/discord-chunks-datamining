@@ -1,76 +1,72 @@
-/** Chunk was on web.js **/
-/** chunk id: 92690, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 92690, original params: t,e,r (module,exports,require) **/
 "use strict";
-
-function r(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
-}
 var Chunk207135 = require("./207135.js"),
   Chunk423758 = require("./423758.js"),
   Chunk595042 = require("./595042.js"),
   Chunk116740 = require("./116740.js"),
   Chunk64700 = require("./64700.js"),
   Chunk550835 = require("./550835.js");
-Chunk116740.List, module.exports = function(e) {
-  function t() {
-    return e.apply(this, arguments) || this
+Chunk116740.List, module.exports = function(t) {
+  function e() {
+    return t.apply(this, arguments) || this
   }
-  return r(t, e), t.prototype.render = function() {
-    var e = this.props,
-      t = e.block,
-      n = e.contentState,
-      r = e.customStyleFn,
-      o = e.customStyleMap,
-      u = e.decorator,
-      d = e.direction,
-      f = e.forceSelection,
-      p = e.hasSelection,
-      _ = e.selection,
-      h = e.tree,
-      m = t.getKey(),
-      g = t.getText(),
-      E = h.size - 1,
-      y = this.props.children || h.map(function(e, c) {
-        var h = e.get("decoratorKey"),
-          y = e.get("leaves"),
-          b = y.size - 1,
-          O = y.map(function(e, n) {
-            var i = s.encode(m, c, n),
-              u = e.get("start"),
-              d = e.get("end");
-            return l.createElement(a, {
-              key: i,
-              offsetKey: i,
-              block: t,
-              start: u,
-              selection: p ? _ : null,
-              forceSelection: f,
-              text: g.slice(u, d),
-              styleSet: t.getInlineStyleAt(u),
-              customStyleMap: o,
-              customStyleFn: r,
-              isLast: h === E && n === b
+  return e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t, e.prototype.render = function() {
+    var t = this.props,
+      e = t.block,
+      r = t.contentState,
+      a = t.customStyleFn,
+      c = t.customStyleMap,
+      l = t.decorator,
+      f = t.direction,
+      p = t.forceSelection,
+      h = t.hasSelection,
+      d = t.selection,
+      g = t.tree,
+      y = e.getKey(),
+      v = e.getText(),
+      m = g.size - 1,
+      _ = this.props.children || g.map(function(t, u) {
+        var g = t.get("decoratorKey"),
+          _ = t.get("leaves"),
+          b = _.size - 1,
+          S = _.map(function(t, r) {
+            var n = o.encode(y, u, r),
+              l = t.get("start"),
+              f = t.get("end");
+            return s.createElement(i, {
+              key: n,
+              offsetKey: n,
+              block: e,
+              start: l,
+              selection: h ? d : null,
+              forceSelection: p,
+              text: v.slice(l, f),
+              styleSet: e.getInlineStyleAt(l),
+              customStyleMap: c,
+              customStyleFn: a,
+              isLast: g === m && r === b
             })
           }).toArray();
-        return h && u ? l.createElement(i, {
-          block: t,
-          children: O,
-          contentState: n,
-          decorator: u,
-          decoratorKey: h,
-          direction: d,
-          leafSet: e,
-          text: g,
-          key: c
-        }) : O
+        return g && l ? s.createElement(n, {
+          block: e,
+          children: S,
+          contentState: r,
+          decorator: l,
+          decoratorKey: g,
+          direction: f,
+          leafSet: t,
+          text: v,
+          key: u
+        }) : S
       }).toArray();
-    return l.createElement("div", {
-      "data-offset-key": s.encode(m, 0, 0),
-      className: c({
+    return s.createElement("div", {
+      "data-offset-key": o.encode(y, 0, 0),
+      className: u({
         "public/DraftStyleDefault/block": true,
-        "public/DraftStyleDefault/ltr": "LTR" === d,
-        "public/DraftStyleDefault/rtl": "RTL" === d
+        "public/DraftStyleDefault/ltr": "LTR" === f,
+        "public/DraftStyleDefault/rtl": "RTL" === f
       })
-    }, y)
-  }, t
+    }, _)
+  }, e
 }(Chunk64700.Component)

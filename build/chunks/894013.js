@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 894013, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 894013, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => u
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk417597 = require("./417597.js"),
@@ -11,16 +10,15 @@ var Chunk64700 = require("./64700.js"),
   Chunk628965 = require("./628965.js"),
   Chunk652215 = require("./652215.js"),
   Chunk355097 = require("./355097.js");
-let u = new Set(Object.values(Chunk355097.Eq)),
-  d = e => null != e && u.has(e),
-  f = () => {
-    let e = (0, i.bG)([o.A], () => {
-        let e = o.A.getSubsection();
-        return d(e) ? e : c.Eq.USER_PROFILE
+let d = new Set(Object.values(Chunk355097.Eq)),
+  u = () => {
+    let e = (0, i.bG)([a.A], () => {
+        let e = a.A.getSubsection();
+        return null != e && d.has(e) ? e : c.Eq.USER_PROFILE
       }),
       t = r.useCallback(t => {
-        e !== t && (0, s.openUserSettings)(a.X.PROFILE_PANEL, {
-          section: l.nc_.PROFILE_CUSTOMIZATION,
+        e !== t && (0, s.openUserSettings)(l.X.PROFILE_PANEL, {
+          section: o.nc_.PROFILE_CUSTOMIZATION,
           subsection: t
         })
       }, [e]);

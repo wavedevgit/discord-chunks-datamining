@@ -36,8 +36,8 @@ let d = {
   getActiveErrors: () => {
     let e = i.A.getCurrentUserActiveStream();
     return null != e && null != a.A.getHookError(l.LU7.SOUND) ? [u({
-      type: s.iy.STREAM_SOUNDSHARE_FAILED
-    }, (0, o.id)((0, r._z)(e)))] : true
+      type: o.iy.STREAM_SOUNDSHARE_FAILED
+    }, (0, s.id)((0, r._z)(e)))] : true
   },
   makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

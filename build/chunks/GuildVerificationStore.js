@@ -40,7 +40,7 @@ function y(e) {
   b(e), g.add(e);
   let n = d.A.getGuild(e),
     r = f.default.getCurrentUser();
-  if (null == n || n.verificationLevel === p.PvD.NONE || null == r || (0, o.bM)(n, r) || r.isPhoneVerified()) return;
+  if (null == n || n.verificationLevel === p.PvD.NONE || null == r || (0, s.bM)(n, r) || r.isPhoneVerified()) return;
   let a = c.Ay.getMember(n.id, r.id);
   if (null != a) {
     var l;
@@ -63,7 +63,7 @@ function y(e) {
     I = false;
   r.isPhoneVerified() || r.isStaff() || (O = n.verificationLevel >= p.PvD.LOW && !r.verified, v = n.verificationLevel >= p.PvD.VERY_HIGH, A = n.verificationLevel >= p.PvD.MEDIUM && h > 0, I = n.verificationLevel >= p.PvD.HIGH && m > 0);
   let S = [];
-  I && S.push(m), A && S.push(h), S.length > 0 && (t = setTimeout(() => s.h.dispatch({
+  I && S.push(m), A && S.push(h), S.length > 0 && (t = setTimeout(() => o.h.dispatch({
     type: "GUILD_VERIFICATION_CHECK",
     guildId: e
   }), Math.max(...S))), E[e] = {

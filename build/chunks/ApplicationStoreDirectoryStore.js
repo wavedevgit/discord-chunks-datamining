@@ -34,7 +34,7 @@ function _(e) {
     applicationId: t,
     layout: n
   } = e;
-  u.set(t, s.A.createFromServer(n)), d.delete(t)
+  u.set(t, o.A.createFromServer(n)), d.delete(t)
 }
 
 function h(e) {
@@ -52,7 +52,7 @@ function m(e) {
 }
 class g extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A, l.A)
+    this.waitFor(s.A, l.A)
   }
   hasStorefront(e) {
     return u.has(e)

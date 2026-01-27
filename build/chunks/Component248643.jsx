@@ -97,20 +97,20 @@ class m extends Chunk64700.Component {
         onPause: R,
         onEnded: P,
         onControlsShow: D,
-        onControlsHide: x,
-        onVolumeChange: L,
-        onMute: j,
-        disableArrowKeySeek: M,
+        onControlsHide: L,
+        onVolumeChange: x,
+        onMute: M,
+        disableArrowKeySeek: j,
         alt: k = c.intl.string(c.t.FlNoSV)
       } = e,
       U = _(e, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "disableArrowKeySeek", "alt"]);
-    return (0, r.jsx)(s.Ay, p(d({
+    return (0, r.jsx)(o.Ay, p(d({
       alt: k,
       className: i,
       src: f
     }, U), {
-      minWidth: o.Ay.minWidth,
-      minHeight: o.Ay.minHeight,
+      minWidth: s.Ay.minWidth,
+      minHeight: s.Ay.minHeight,
       shouldLink: false,
       shouldAnimate: false,
       mediaLayoutType: I,
@@ -119,23 +119,23 @@ class m extends Chunk64700.Component {
         let {
           src: i,
           size: {
-            width: s,
+            width: o,
             height: c
           }
         } = e, d = !(m <= l.AaC && g <= l.oJQ || m <= l.oJQ && g <= l.AaC);
-        return (0, r.jsx)(o.Ay, {
+        return (0, r.jsx)(s.Ay, {
           alt: k,
           className: u,
           forceExternal: d,
           src: t,
           poster: i,
-          width: s,
+          width: o,
           height: c,
           responsive: A,
           volume: b,
           autoPlay: null != O && O,
           autoMute: null != v && v,
-          type: o.Ay.Types.VIDEO,
+          type: s.Ay.Types.VIDEO,
           mediaLayoutType: I,
           fileName: h,
           fileSize: null == n ? true : (0, a.Hb)(n),
@@ -147,13 +147,13 @@ class m extends Chunk64700.Component {
           onPlay: w,
           onPause: R,
           onEnded: P,
-          onVolumeChange: L,
-          onMute: j,
+          onVolumeChange: x,
+          onMute: M,
           onControlsShow: D,
-          onControlsHide: x,
+          onControlsHide: L,
           mimeType: S,
           downloadable: y,
-          disableArrowKeySeek: M
+          disableArrowKeySeek: j
         })
       }
     }))

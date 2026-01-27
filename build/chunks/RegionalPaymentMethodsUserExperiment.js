@@ -2,14 +2,14 @@
 /** chunk id: 887555, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => s,
+  Ay: () => o,
   jK: () => u,
   o0: () => l
 }), require("./896048.js");
 var Chunk600975 = require("./600975.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let s = (0, Chunk600975.C)({
+let o = (0, Chunk600975.C)({
     kind: "user",
     id: "2021-08_regional_payment_methods",
     label: "Regional Payment Methods",
@@ -148,7 +148,7 @@ let s = (0, Chunk600975.C)({
       }
     }]
   }),
-  o = new Map([
+  s = new Map([
     ["abn_amro", "ABN AMRO"],
     ["asn_bank", "ASN Bank"],
     ["bunq", "Bunq"],
@@ -167,7 +167,7 @@ let s = (0, Chunk600975.C)({
   ]);
 
 function l(e) {
-  return true !== e && o.has(e) ? o.get(e) : a.intl.string(a.t.jdPblk)
+  return true !== e && s.has(e) ? s.get(e) : a.intl.string(a.t.jdPblk)
 }
 let c = new Map([
   ["arzte_und_apotheker_bank", "\xc4rzte- und Apothekerbank"],

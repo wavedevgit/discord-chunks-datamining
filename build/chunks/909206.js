@@ -2,8 +2,8 @@
 /** chunk id: 909206, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  MJ: () => s,
-  _9: () => o,
+  MJ: () => o,
+  _9: () => s,
   c2: () => i,
   ri: () => a
 });
@@ -22,7 +22,7 @@ function a(e) {
   })
 }
 
-function s(e) {
+function o(e) {
   r.h.dispatch({
     type: "DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED",
     applicationId: e,
@@ -30,7 +30,7 @@ function s(e) {
   })
 }
 
-function o(e) {
+function s(e) {
   r.h.dispatch({
     type: "DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER",
     filter: e

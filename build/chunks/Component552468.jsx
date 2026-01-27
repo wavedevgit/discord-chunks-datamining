@@ -16,13 +16,13 @@ function l(e) {
     entry: n,
     onAction: l,
     onClose: c
-  } = e, u = (0, a.yl)(n), d = (0, s.A)({
+  } = e, u = (0, a.yl)(n), d = (0, o.A)({
     applicationId: u ? n.extra.application_id : true,
     onClose: c
   });
   return "recent" === t && u ? (0, r.jsx)(i.Drp, {
     id: "view-activity",
-    label: o.intl.string(o.t.GDWYR8),
+    label: s.intl.string(s.t.GDWYR8),
     action: () => {
       null == l || l({
         action: "PRESS_VIEW_ACTIVITY_MENU_ITEM"

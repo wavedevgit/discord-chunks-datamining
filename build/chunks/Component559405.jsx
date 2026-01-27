@@ -26,10 +26,10 @@ let u = new Set([Chunk934551.MagicDoorIcon.name, Chunk934551.GameControllerIcon.
       animate: p = true,
       fallbackVariant: _ = "twemoji",
       userId: h
-    } = e, m = (0, l.e)(h, null == a ? true : a.state), g = (0, o.vt)(h, a, _);
+    } = e, m = (0, l.e)(h, null == a ? true : a.state), g = (0, s.vt)(h, a, _);
     if ((m[0] === c.Kk.CUSTOM || (null == g ? true : g.emoji) != null) && null != a) {
       let e = null != (t = null == g ? true : g.emoji) ? t : a.emoji;
-      return null != e ? (0, r.jsx)(s.A, {
+      return null != e ? (0, r.jsx)(o.A, {
         emoji: e,
         className: i,
         hideTooltip: true,

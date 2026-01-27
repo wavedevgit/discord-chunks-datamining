@@ -17,9 +17,9 @@ let l = Chunk64700.memo(function(e) {
     size: l = "default"
   } = e, c = "small" === l ? 62 : 94, u = "small" === l ? 72 : 110;
   return (0, r.jsx)("div", {
-    className: o.Dz,
+    className: s.Dz,
     children: (0, r.jsxs)("div", {
-      className: o.ur,
+      className: s.ur,
       children: [(0, r.jsx)(a._, {
         showStatus: true,
         width: c,
@@ -30,10 +30,10 @@ let l = Chunk64700.memo(function(e) {
         width: u,
         opacity: .85,
         size: l
-      }), (0, r.jsx)(s.A, {
+      }), (0, r.jsx)(o.A, {
         user: t,
         nameplate: n,
-        className: o.tZ,
+        className: s.tZ,
         isHighlighted: i,
         showPlaceholderUser: !i,
         showStatus: true,

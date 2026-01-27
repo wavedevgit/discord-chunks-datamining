@@ -2,12 +2,12 @@
 /** chunk id: 998218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => L
+  A: () => x
 }), require("./896048.js"), require("./591487.js"), require("./727858.js"), require("./747238.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk477450 = require("./477450.js"),
   i = require.n(Chunk477450),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk567243 = require("./567243.js"),
   Chunk403362 = require("./403362.js"),
   Chunk998218 = require("./998218.js"),
@@ -75,10 +75,10 @@ function D(e) {
   returnfalse
 }
 
-function x(e) {
-  return null != e && C(o.parse(e).protocol)
+function L(e) {
+  return null != e && C(s.parse(e).protocol)
 }
-let L = {
+let x = {
   URL_REGEX: v,
   makeUrl: function(e, t) {
     let n = (null != t ? t : (0, l.m6)()) ? window.GLOBAL_ENV.INVITE_HOST : location.host;
@@ -91,30 +91,30 @@ let L = {
   },
   isDiscordProtocol: C,
   isDiscordUrl: D,
-  isDiscordUri: x,
+  isDiscordUri: L,
   isDiscordCdnUrl: function(e) {
-    return null != e && o.parse(e).hostname === window.GLOBAL_ENV.CDN_HOST
+    return null != e && s.parse(e).hostname === window.GLOBAL_ENV.CDN_HOST
   },
   isDiscordDirectAssetUrl: N,
   isDiscordProxiedAssetUrl: w,
   isAllowedGifProviderUrl: R,
   isDiscordAssetUrl: P,
-  isDiscordUrlOrUri: e => D(e) || x(e),
+  isDiscordUrlOrUri: e => D(e) || L(e),
   isAppRoute: e => {
     let t = e.toLowerCase();
     return t.startsWith("/channels/") || t.startsWith(u.BVt.APPLICATION_STORE) || t.startsWith(u.BVt.APPLICATION_LIBRARY) || t.startsWith(u.BVt.MESSAGE_REQUESTS) || t.startsWith(u.BVt.FAMILY_CENTER) || t.startsWith(u.BVt.ACTIVITIES) || t.startsWith(u.BVt.COLLECTIBLES_SHOP) || t.startsWith("/feature/boost") || t.startsWith(u.BVt.ACTIVITY)
   },
-  format: e => o.format(e),
-  formatPathWithQuery: (e, t) => o.format({
+  format: e => s.format(e),
+  formatPathWithQuery: (e, t) => s.format({
     pathname: e,
-    query: s().pickBy(t)
+    query: o().pickBy(t)
   }),
-  formatSearch: e => o.format({
-    query: s().pickBy(e)
+  formatSearch: e => s.format({
+    query: o().pickBy(e)
   }),
   safeParseWithQuery(e) {
     try {
-      return o.parse(e, true)
+      return s.parse(e, true)
     } catch (e) {
       return null
     }

@@ -35,11 +35,11 @@ function p(e) {
   var g = (0, i.A)(m, {
     days: _ * p.days
   });
-  p.hours = Math.abs((0, s.A)(n, g));
+  p.hours = Math.abs((0, o.A)(n, g));
   var E = (0, i.A)(g, {
     hours: _ * p.hours
   });
-  p.minutes = Math.abs((0, o.A)(n, E));
+  p.minutes = Math.abs((0, s.A)(n, E));
   var y = (0, i.A)(E, {
     minutes: _ * p.minutes
   });

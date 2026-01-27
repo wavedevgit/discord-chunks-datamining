@@ -25,7 +25,7 @@ let h = function(e) {
     title: h,
     guildId: m,
     className: g
-  } = e, E = (0, c.h)(i), y = (0, s.yK)([u.default], () => {
+  } = e, E = (0, c.h)(i), y = (0, o.yK)([u.default], () => {
     var e;
     return null != (e = n.map(e => u.default.getUser(e)).filter(f.Vq)) ? e : []
   }), b = null == E ? true : E.name, O = null != t ? (0, d.Fe)(new Date(t)) : null, v = null == E ? true : E.getIconURL(32);
@@ -64,7 +64,7 @@ let h = function(e) {
       })]
     }), (0, r.jsx)("div", {
       className: _.jW,
-      children: (0, r.jsx)(o.A, {
+      children: (0, r.jsx)(s.A, {
         maxUsers: 4,
         users: y,
         guildId: m,

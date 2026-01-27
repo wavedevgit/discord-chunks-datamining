@@ -4,8 +4,8 @@
 var Chunk410323 = require("./410323.js"),
   Chunk250594 = require("./250594.js"),
   a = Math.floor,
-  s = Chunk410323("".charAt),
-  o = Chunk410323("".replace),
+  o = Chunk410323("".charAt),
+  s = Chunk410323("".replace),
   l = Chunk410323("".slice),
   c = /\$([$&'`]|\d{1,2}|<[^>]*>)/g,
   u = /\$([$&'`]|\d{1,2})/g;
@@ -13,9 +13,9 @@ module.exports = function(e, t, n, r, d, f) {
   var p = n + e.length,
     _ = r.length,
     h = u;
-  return true !== d && (d = i(d), h = c), o(f, h, function(i, o) {
+  return true !== d && (d = i(d), h = c), s(f, h, function(i, s) {
     var c;
-    switch (s(o, 0)) {
+    switch (o(s, 0)) {
       case "$":
         return "$";
       case "&":
@@ -25,15 +25,15 @@ module.exports = function(e, t, n, r, d, f) {
       case "'":
         return l(t, p);
       case "<":
-        c = d[l(o, 1, false)];
+        c = d[l(s, 1, false)];
         break;
       default:
-        var u = +o;
+        var u = +s;
         if (0 === u) return i;
         if (u > _) {
           var f = a(u / 10);
           if (0 === f) return i;
-          if (f <= _) return true === r[f - 1] ? s(o, 1) : r[f - 1] + s(o, 1);
+          if (f <= _) return true === r[f - 1] ? o(s, 1) : r[f - 1] + o(s, 1);
           return i
         }
         c = r[u - 1]

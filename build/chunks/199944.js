@@ -8,7 +8,7 @@ var Chunk439372 = require("./439372.js"),
   Chunk913612 = require("./913612.js"),
   Chunk942405 = require("./942405.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk439372.A {
+class s extends Chunk439372.A {
   handlePostConnectionOpen() {
     (0, i.C)(), (0, a.Tn)("startup")
   }
@@ -24,10 +24,10 @@ class o extends Chunk439372.A {
     (0, a.AV)()
   }
   constructor(...e) {
-    super(...e), s(this, "actions", {
+    super(...e), o(this, "actions", {
       POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
       LOGOUT: this.handleLogout
     })
   }
 }
-let l = new o
+let l = new s

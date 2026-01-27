@@ -9,7 +9,7 @@ var Chunk835245 = require("./835245.js"),
   Chunk927813 = require("./927813.js"),
   Chunk728458 = require("./728458.js"),
   Chunk604594 = require("./604594.js");
-let o = 12 * Chunk927813.A.Millis.HOUR,
+let s = 12 * Chunk927813.A.Millis.HOUR,
   l = null;
 
 function c() {
@@ -19,7 +19,7 @@ function c() {
     uuid: (0, r.A)(),
     createdAtTimestamp: t,
     lastUsedTimestamp: t,
-    version: s.Ir
+    version: o.Ir
   } : (e && (l.lastUsedTimestamp = t), l)
 }
 
@@ -33,7 +33,7 @@ function d(e) {
     category: "ad",
     message: "future facing timestamp Date.now(): ".concat(t, ", initialized timestamp: ").concat(e.createdAtTimestamp)
   }), true;
-  let n = t - e.lastUsedTimestamp > s.jj,
-    r = t - e.createdAtTimestamp > o;
+  let n = t - e.lastUsedTimestamp > o.jj,
+    r = t - e.createdAtTimestamp > s;
   return n || r
 }

@@ -2,24 +2,24 @@
 /** chunk id: 899343, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => s
+  f: () => o
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk166532 = require("./166532.js"),
   Chunk566980 = require("./566980.js");
 
-function s(e) {
+function o(e) {
   let {
     purchaseState: t,
     currentStep: n,
-    initialScene: s,
-    purchaseScene: o,
+    initialScene: o,
+    purchaseScene: s,
     errorScene: l,
     successScene: c
-  } = e, [u, d] = (0, r.useState)(s);
+  } = e, [u, d] = (0, r.useState)(o);
   return (0, r.useEffect)(() => {
-    t === a.h.PURCHASING ? d(o) : t === a.h.FAIL && d(l)
-  }, [t, o, l]), (0, r.useEffect)(() => {
+    t === a.h.PURCHASING ? d(s) : t === a.h.FAIL && d(l)
+  }, [t, s, l]), (0, r.useEffect)(() => {
     n === i.pn.CONFIRM && d(c)
   }, [n, c]), [u, d]
 }

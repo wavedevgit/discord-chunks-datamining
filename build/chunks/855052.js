@@ -78,9 +78,9 @@ class h extends Chunk315069.A {
     } = e, d = p(e, ["user_id", "wishlist_items"]), _ = c.map(e => {
       switch (e.sku_product_line) {
         case l.EZt.COLLECTIBLES:
-          return s.A.fromServer(e);
-        case l.EZt.SOCIAL_LAYER_GAME_ITEM:
           return o.A.fromServer(e);
+        case l.EZt.SOCIAL_LAYER_GAME_ITEM:
+          return s.A.fromServer(e);
         default:
           return a.A.fromServer(e)
       }

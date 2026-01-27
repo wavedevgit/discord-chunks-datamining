@@ -60,7 +60,7 @@ function m(e) {
     location: r,
     confirmStrangerRequest: i = false
   } = e;
-  return null != n ? s.A.acceptGameFriendRequest({
+  return null != n ? o.A.acceptGameFriendRequest({
     userId: t,
     applicationId: n
   }) : a.A.acceptFriendRequest({
@@ -78,8 +78,8 @@ function g(e) {
     applicationId: n,
     location: i,
     onConfirm: a,
-    onCancel: s
-  } = e, d = (0, o.To)(r.p.FRIEND_REQUEST_STRANGER_CONFIRMATION), f = (0, l._)("maybeConfirmFriendRequestAccept"), p = d || f, _ = c.A.isStranger(t);
+    onCancel: o
+  } = e, d = (0, s.To)(r.p.FRIEND_REQUEST_STRANGER_CONFIRMATION), f = (0, l._)("maybeConfirmFriendRequestAccept"), p = d || f, _ = c.A.isStranger(t);
   return null == n && p && false !== _ ? _ && p ? void(0, u.B)({
     onConfirm: () => {
       m({
@@ -90,7 +90,7 @@ function g(e) {
       }), null == a || a()
     },
     onCancel: () => {
-      null == s || s()
+      null == o || o()
     }
   }) : p ? void m({
     userId: t,
@@ -102,7 +102,7 @@ function g(e) {
       applicationId: n,
       location: i,
       onConfirm: a,
-      onCancel: s
+      onCancel: o
     }) || null == a || a()
   }).catch(e => {
     E(e, {
@@ -110,7 +110,7 @@ function g(e) {
       applicationId: n,
       location: i,
       onConfirm: a,
-      onCancel: s
+      onCancel: o
     })
   }) : true : m({
     userId: t,
@@ -152,7 +152,7 @@ let y = {
       applicationId: n,
       location: r
     } = e;
-    null != n ? s.A.removeGameFriend({
+    null != n ? o.A.removeGameFriend({
       userId: t,
       applicationId: n
     }) : a.A.removeFriend(t, {
@@ -165,7 +165,7 @@ let y = {
       applicationId: n,
       location: r
     } = e;
-    return null != n ? s.A.cancelGameFriendRequest({
+    return null != n ? o.A.cancelGameFriendRequest({
       userId: t,
       applicationId: n
     }) : a.A.cancelFriendRequest(t, {

@@ -11,14 +11,14 @@ var Chunk562465 = require("./562465.js"),
   Chunk652215 = require("./652215.js");
 let l = new Set;
 async function c(e) {
-  if (null == a.A.getGuild(e) && null == s.A.getGuildOrStatus(e) && !l.has(e)) {
+  if (null == a.A.getGuild(e) && null == o.A.getGuildOrStatus(e) && !l.has(e)) {
     i.h.dispatch({
       type: "BASIC_GUILD_FETCH",
       guildId: e
     }), l.add(e);
     try {
       let t = (await r.Bo.get({
-        url: o.Rsh.GUILD_BASIC(e),
+        url: s.Rsh.GUILD_BASIC(e),
         rejectWithError: true
       })).body;
       i.h.dispatch({

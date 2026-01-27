@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 449956, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 449956, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -17,25 +16,25 @@ var Chunk627968 = require("./627968.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h() {
+function g() {
   let e = (0, i.bG)([c.A], () => c.A.isVideoAvailable()),
     {
       id: t
-    } = (0, o.x5)(p.oh.VIDEO_INPUT),
+    } = (0, a.x5)(p.oh.VIDEO_INPUT),
     {
       analyticsLocations: n
-    } = (0, a.Ay)();
+    } = (0, l.Ay)();
   return (0, r.jsx)(s.U, {
-    label: _.intl.string(_.t.FsQ3OR),
+    label: m.intl.string(m.t.FsQ3OR),
     deviceType: p.oh.VIDEO_INPUT,
     location: "UserSettingsCameraSelect",
     isDisabled: !e,
     showAllDevices: true,
-    helperText: (0, l.p)() ? _.intl.format(_.t.aJYgRt, {
+    helperText: (0, o.p)() ? m.intl.format(m.t.aJYgRt, {
       onCameraSettingsClick: () => {
-        d.A.setState({
+        u.A.setState({
           previewEnabled: false
-        }), window.open((0, l.i)(t)), u.default.track(f.HAw.SYSTEM_CAMERA_SETTINGS_OPENED, {
+        }), window.open((0, o.i)(t)), d.default.track(_.HAw.SYSTEM_CAMERA_SETTINGS_OPENED, {
           location_stack: n
         })
       }

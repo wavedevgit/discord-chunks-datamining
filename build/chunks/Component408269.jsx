@@ -51,7 +51,7 @@ function d(e, t) {
 }
 
 function f(e, t) {
-  return "type" in e ? "timestamp" !== e.type ? null : s.A.getCurrentConfig({
+  return "type" in e ? "timestamp" !== e.type ? null : o.A.getCurrentConfig({
     location: "renderElement"
   }, {
     autoTrackExposure: false
@@ -64,16 +64,16 @@ function p(e) {
   var t;
   let {
     timestamp: n,
-    replace: s
+    replace: o
   } = e, l = e => {
     let {
       timestamp: t,
       format: r
-    } = e, i = null != t ? Math.floor(t.getTime() / 1e3) : n.timestamp, o = null != r ? r : n.format;
-    s((0, a.tf)(i, o))
+    } = e, i = null != t ? Math.floor(t.getTime() / 1e3) : n.timestamp, s = null != r ? r : n.format;
+    o((0, a.tf)(i, s))
   };
   return (0, r.jsxs)("div", {
-    className: o.k,
+    className: s.k,
     children: [(0, r.jsx)(i.J3s, {
       value: n.parsed,
       onSelect: e => {

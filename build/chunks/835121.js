@@ -1,49 +1,48 @@
-/** Chunk was on web.js **/
-/** chunk id: 835121, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 52199 **/
+/** chunk id: 835121, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => i
+  A: () => l
 }), require("./321073.js"), require("./896048.js");
 var Chunk64700 = require("./64700.js");
 
-function i(e) {
+function l(e) {
   let {
     autocompletes: t,
-    mode: n
+    mode: r
   } = e;
-  return r.useCallback(e => {
+  return n.useCallback(e => {
     let {
-      filterFn: r,
-      getAutocompleteRowItem: i,
-      getAutocompleteGroupItem: a
-    } = e, s = 0, o = [], l = [];
+      filterFn: n,
+      getAutocompleteRowItem: l,
+      getAutocompleteGroupItem: s
+    } = e, a = 0, i = [], o = [];
     for (let e of t) {
       let t = [],
         {
           group: c,
           results: u
         } = e;
-      if (r(e)) {
+      if (n(e)) {
         for (let e of u) {
-          let r = i({
+          let n = l({
             result: e,
-            modeType: n.type,
+            modeType: r.type,
             group: c
           });
-          t.push(r)
+          t.push(n)
         }
-        s += u.length;
-        let e = a({
+        a += u.length;
+        let e = s({
           group: c,
           rows: t
         });
-        o.push(e), l.push(...t)
+        i.push(e), o.push(...t)
       }
     }
     return {
-      autocompleteCount: s,
-      autocompleteGroups: o,
-      allAutocompleteRows: l
+      autocompleteCount: a,
+      autocompleteGroups: i,
+      allAutocompleteRows: o
     }
-  }, [t, n.type])
+  }, [t, r.type])
 }

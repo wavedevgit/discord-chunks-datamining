@@ -18,10 +18,10 @@ var Chunk652215 = require("./652215.js");
 let c = () => {
   r.h.dispatch({
     type: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN"
-  }), s.default.track(l.HAw.MEMBERLIST_CONTENT_FEED_HIDDEN, {
+  }), o.default.track(l.HAw.MEMBERLIST_CONTENT_FEED_HIDDEN, {
     channel_id: i.A.getChannelId(),
     guild_id: a.A.getGuildId(),
-    hidden: o.A.hidden
+    hidden: s.A.hidden
   })
 };
 

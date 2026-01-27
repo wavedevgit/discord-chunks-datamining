@@ -25,20 +25,20 @@ function a(e) {
       });
     case "avatar":
       let {
-        src: s
+        src: o
       } = t;
       return (0, r.jsx)("img", {
         className: i.my,
-        src: s,
+        src: o,
         alt: ""
       });
     case "image":
       let {
-        src: o
+        src: s
       } = t;
       return (0, r.jsx)("img", {
         className: i.Sl,
-        src: o,
+        src: s,
         alt: ""
       });
     default:

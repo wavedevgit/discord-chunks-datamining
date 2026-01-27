@@ -15,23 +15,23 @@ let l = e => {
     markAsDismissed: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.iE,
+    className: s.iE,
     children: [(0, r.jsx)(i.C3E, {
       size: "md",
       color: "currentColor",
-      className: o.Kk
+      className: s.Kk
     }), (0, r.jsx)("div", {
-      className: o.Qs,
+      className: s.Qs,
       children: (0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
-        children: s.intl.string(s.t.xdRf69)
+        children: o.intl.string(o.t.xdRf69)
       })
     }), (0, r.jsx)(i.DUT, {
       onClick: () => t(a.i.UNKNOWN),
       children: (0, r.jsx)(i.PGe, {
         size: "md",
         color: "currentColor",
-        className: o.VN
+        className: s.VN
       })
     })]
   })

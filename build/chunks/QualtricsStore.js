@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,20 +15,20 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = {
+let s = {
   surveys: new Map
 };
 
 function l(e) {
-  o.surveys.set(e.surveyId, e.surveyDetails)
+  s.surveys.set(e.surveyId, e.surveyDetails)
 }
 class c extends(r = Chunk311907.Ay.Store) {
   getSurvey(e) {
     var t;
-    return null != (t = o.surveys.get(e)) ? t : null
+    return null != (t = s.surveys.get(e)) ? t : null
   }
 }
-s(c, "displayName", "QualtricsStore");
+o(c, "displayName", "QualtricsStore");
 let u = new c(Chunk73153.h, {
   QUALTRICS_SURVEY_FETCH_SUCCESS: l
 })

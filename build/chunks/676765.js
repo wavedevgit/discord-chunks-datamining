@@ -24,7 +24,7 @@ function f(e) {
   } = c.cu({
     context: n,
     filters: {
-      commandTypes: [s.kc.CHAT, s.kc.PRIMARY_ENTRY_POINT]
+      commandTypes: [o.kc.CHAT, o.kc.PRIMARY_ENTRY_POINT]
     },
     options: {
       placeholderCount: 0,
@@ -45,7 +45,7 @@ function f(e) {
         descriptor: t
       } = e;
       return t
-    }).filter(e => !(e.id in o.gZ) && h.has(e.id))
+    }).filter(e => !(e.id in s.gZ) && h.has(e.id))
   }, [null == (t = f.result) ? true : t.sections, h]), g = (0, u.I)(m);
   return {
     appsInThisServer: r.useMemo(() => a().compact(g.map(e => {

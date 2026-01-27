@@ -21,12 +21,12 @@ function u(e) {
     className: u,
     intervalCount: d = 1,
     isPrepaidPaymentSource: f = false
-  } = e, p = (0, s.$g)(t, n), _ = null;
-  return i === o.WT.YEAR ? _ = l.intl.format(l.t["3U719t"], {
+  } = e, p = (0, o.$g)(t, n), _ = null;
+  return i === s.WT.YEAR ? _ = l.intl.format(l.t["3U719t"], {
     price: p
-  }) : i === o.WT.MONTH && 1 === d ? _ = l.intl.format(l.t.NkR7BU, {
+  }) : i === s.WT.MONTH && 1 === d ? _ = l.intl.format(l.t.NkR7BU, {
     price: p
-  }) : i === o.WT.MONTH && d > 1 && (_ = l.intl.format(l.t.CNAGg4, {
+  }) : i === s.WT.MONTH && d > 1 && (_ = l.intl.format(l.t.CNAGg4, {
     price: p,
     intervalCount: d
   })), (0, r.jsx)("div", {

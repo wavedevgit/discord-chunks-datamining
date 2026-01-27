@@ -9,7 +9,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk10716 = require("./10716.js"),
   Chunk360469 = require("./360469.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -57,7 +57,7 @@ let d = () => {
   }), []), n = (0, i.yK)([a.A], () => a.A.getDeveloperShelfItems(), []);
   return r.useMemo(() => e ? n.map(e => ({
     application: e,
-    activity: u(l({}, s.Gl, e.embeddedActivityConfig), {
+    activity: u(l({}, o.Gl, e.embeddedActivityConfig), {
       application_id: e.id
     })
   })).sort((e, n) => {

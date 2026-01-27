@@ -43,12 +43,12 @@ module.exports = function(e) {
       begin: "\\b[A-Z][A-Za-z0-9_]*",
       relevance: 0
     },
-    s = {
+    o = {
       className: "title",
       begin: /[^0-9\n\t "'(),.`{}\[\]:;][^\n\t "'(),.`{}\[\]:;]+|[^0-9\n\t "'(),.`{}\[\]:;=]/,
       relevance: 0
     },
-    o = {
+    s = {
       className: "class",
       beginKeywords: "class object trait type",
       end: /[:={\[\n;]/,
@@ -71,13 +71,13 @@ module.exports = function(e) {
         excludeEnd: true,
         relevance: 0,
         contains: [a, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
-      }, s]
+      }, o]
     },
     l = {
       className: "function",
       beginKeywords: "def",
       end: t.lookahead(/[:={\[(\n;]/),
-      contains: [s]
+      contains: [o]
     },
     c = {
       begin: [/^\s*/, "extension", /\s+(?=[[(])/],
@@ -122,6 +122,6 @@ module.exports = function(e) {
         className: "string",
         begin: /\S+/
       }]
-    }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, i, a, l, o, e.C_NUMBER_MODE, c, u, ...d, f, n]
+    }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, i, a, l, s, e.C_NUMBER_MODE, c, u, ...d, f, n]
   }
 }

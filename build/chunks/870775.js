@@ -3,9 +3,9 @@
 var Chunk926226 = require("./926226.js"),
   Chunk305327 = require("./305327.js"),
   a = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
-  s = /^\w*$/;
+  o = /^\w*$/;
 module.exports = function(e, t) {
   if (r(e)) returnfalse;
   var n = typeof e;
-  return !!("number" == n || "symbol" == n || "boolean" == n || null == e || i(e)) || s.test(e) || !a.test(e) || null != t && e in Object(t)
+  return !!("number" == n || "symbol" == n || "boolean" == n || null == e || i(e)) || o.test(e) || !a.test(e) || null != t && e in Object(t)
 }

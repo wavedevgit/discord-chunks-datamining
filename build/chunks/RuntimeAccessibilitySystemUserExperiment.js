@@ -1,9 +1,9 @@
 /** Chunk was on 56795 **/
-/** chunk id: 348639, original params: e,t,i (module,exports,require) **/
+/** chunk id: 348639, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  A: () => n
+  A: () => i
 });
-let n = (0, require("./600975.js").C)({
+let i = (0, require("./600975.js").C)({
   kind: "user",
   id: "2021-10_runtime_accessibility_system",
   label: "Runtime Accessibility System",

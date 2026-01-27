@@ -37,7 +37,7 @@ class m extends Chunk439372.A {
         suppress: a,
         requestToSpeakTimestamp: h
       } = e;
-      if (u.A.getVoiceChannelId() === t && a && null != t && n !== s.default.getId() && c.A.can(f.QY, o.A.getChannel(t)))
+      if (u.A.getVoiceChannelId() === t && a && null != t && n !== o.default.getId() && c.A.can(f.QY, s.A.getChannel(t)))
         if (null != h) {
           let e = d.default.getUser(n);
           null != e && (0, p.p)(t, e, h)

@@ -51,7 +51,7 @@ function D() {
   I = 1
 }
 
-function x(e) {
+function L(e) {
   let {
     updates: t
   } = e;
@@ -64,21 +64,21 @@ function x(e) {
   }), I = 2
 }
 
-function L(e) {
+function x(e) {
   let {
     guild: t
   } = e;
   y.delete(t.id)
 }
 
-function j(e) {
+function M(e) {
   let {
     sound: t
   } = e, n = y.get(t.guildId), r = null == n ? true : n.findIndex(e => e.soundId === t.soundId);
   null != n && null != r && false !== r ? (n[r] = t, y.set(t.guildId, [...n])) : null != n && (null == n || n.push(t), y.set(t.guildId, [...n]))
 }
 
-function M(e) {
+function j(e) {
   let {
     guildId: t,
     soundboardSounds: n
@@ -105,11 +105,11 @@ function G(e) {
   y.set(h.mV, t), A = 2
 }
 
-function V() {
+function F() {
   S = 1
 }
 
-function F(e) {
+function V(e) {
   let {
     topSoundsForGuilds: t
   } = e;
@@ -125,8 +125,8 @@ function H(e) {
   let {
     soundId: i,
     userId: a
-  } = e, s = (null != (t = O.get(i)) ? t : 0) + 1, o = (null != (n = N.get(a)) ? n : 0) + 1;
-  O.set(i, s), N.set(a, o), a !== (null == (r = u.default.getCurrentUser()) ? true : r.id) && (w = true)
+  } = e, o = (null != (t = O.get(i)) ? t : 0) + 1, s = (null != (n = N.get(a)) ? n : 0) + 1;
+  O.set(i, o), N.set(a, s), a !== (null == (r = u.default.getCurrentUser()) ? true : r.id) && (w = true)
 }
 
 function Y(e) {
@@ -134,8 +134,8 @@ function Y(e) {
   let {
     soundId: r,
     userId: i
-  } = e, a = (null != (t = O.get(r)) ? t : 0) - 1, s = (null != (n = N.get(i)) ? n : 0) - 1;
-  a <= 0 ? O.delete(r) : O.set(r, a), s <= 0 ? N.delete(i) : N.set(i, s)
+  } = e, a = (null != (t = O.get(r)) ? t : 0) - 1, o = (null != (n = N.get(i)) ? n : 0) - 1;
+  a <= 0 ? O.delete(r) : O.set(r, a), o <= 0 ? N.delete(i) : N.set(i, o)
 }
 let W = a().debounce((e, t) => {
   d.default.track(m.HAw.UPDATE_SOUNDBOARD_SETTINGS, {
@@ -181,13 +181,13 @@ function Z(e) {
   v.has(t) ? v.delete(t) : v.add(t)
 }
 
-function X(e) {
+function Q(e) {
   let {
     soundboardStoreState: t
   } = e;
   y = new Map(p.default.entries(t.soundboardSounds)), C = new Set(t.favoritedSoundIds), v = new Set(t.localSoundboardMutes)
 }
-class Q extends(r = Chunk311907.Ay.Store) {
+class X extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.A, u.default), z(c.A.settings)
   }
@@ -262,26 +262,26 @@ class Q extends(r = Chunk311907.Ay.Store) {
     return [I, A, S].some(e => 1 === e)
   }
 }
-E(Q, "displayName", "SoundboardStore");
-let J = new Q(Chunk73153.h, {
+E(X, "displayName", "SoundboardStore");
+let J = new X(Chunk73153.h, {
   LOGOUT: R,
   GUILD_SOUNDBOARD_FETCH: D,
-  GUILD_SOUNDBOARD_SOUND_CREATE: j,
-  GUILD_SOUNDBOARD_SOUND_UPDATE: j,
+  GUILD_SOUNDBOARD_SOUND_CREATE: M,
+  GUILD_SOUNDBOARD_SOUND_UPDATE: M,
   GUILD_SOUNDBOARD_SOUND_DELETE: k,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: H,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: Y,
-  GUILD_SOUNDBOARD_SOUNDS_UPDATE: M,
+  GUILD_SOUNDBOARD_SOUNDS_UPDATE: j,
   USER_SOUNDBOARD_SET_VOLUME: K,
   VOICE_CHANNEL_SELECT: P,
   USER_SETTINGS_PROTO_UPDATE: q,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS: U,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: G,
-  SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FETCH: V,
-  SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS: F,
+  SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FETCH: F,
+  SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS: V,
   SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FAILURE: B,
-  SOUNDBOARD_SOUNDS_RECEIVED: x,
-  GUILD_DELETE: L,
+  SOUNDBOARD_SOUNDS_RECEIVED: L,
+  GUILD_DELETE: x,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: Z,
-  OVERLAY_INITIALIZE: X
+  OVERLAY_INITIALIZE: Q
 })

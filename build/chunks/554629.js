@@ -12,7 +12,7 @@ module.exports = function(e) {
     a = e.inherit(e.TITLE_MODE, {
       begin: "[a-zA-Z](\\.?\\w)*"
     }),
-    s = {
+    o = {
       className: "number",
       variants: [{
         begin: "\\b(0b[01']+)"
@@ -23,7 +23,7 @@ module.exports = function(e) {
       }],
       relevance: 0
     },
-    o = {
+    s = {
       className: "string",
       begin: /"""("*)(?!")(.|\n)*?"""\1/,
       relevance: 1
@@ -81,11 +81,11 @@ module.exports = function(e) {
         begin: '""'
       }, d]
     });
-  u.contains = [p, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, s, e.C_BLOCK_COMMENT_MODE], d.contains = [_, f, c, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, s, e.inherit(e.C_BLOCK_COMMENT_MODE, {
+  u.contains = [p, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.C_BLOCK_COMMENT_MODE], d.contains = [_, f, c, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.inherit(e.C_BLOCK_COMMENT_MODE, {
     illegal: /\n/
   })];
   let h = {
-      variants: [o, p, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
+      variants: [s, p, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
     },
     m = {
       begin: "<",
@@ -125,7 +125,7 @@ module.exports = function(e) {
       keywords: {
         keyword: "if else elif endif define undef warning error line region endregion pragma checksum"
       }
-    }, h, s, {
+    }, h, o, {
       beginKeywords: "class interface",
       relevance: 0,
       end: /[{;=]/,
@@ -184,7 +184,7 @@ module.exports = function(e) {
         excludeEnd: true,
         keywords: i,
         relevance: 0,
-        contains: [h, s, e.C_BLOCK_COMMENT_MODE]
+        contains: [h, o, e.C_BLOCK_COMMENT_MODE]
       }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, E]
   }

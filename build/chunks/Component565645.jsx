@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk724442 = require("./724442.js"),
   Chunk692051 = require("./692051.js"),
@@ -79,13 +79,13 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let S = __OVERLAY__ ? () => (0, o.bG)([_.default], () => _.default.isInstanceFocused()) : Chunk218394.j;
+let S = __OVERLAY__ ? () => (0, s.bG)([_.default], () => _.default.isInstanceFocused()) : Chunk218394.j;
 
 function T(e) {
   var t, n;
   let {
     src: a,
-    alt: o,
+    alt: s,
     className: c,
     emojiId: f,
     emojiName: _,
@@ -100,10 +100,10 @@ function T(e) {
     canSelect: R = true,
     autoplay: P,
     registerInnerRef: D,
-    registerAnimatedElementRef: x,
-    surrogate: L
-  } = e, j = A(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef", "surrogate"]), [M, k] = i.useState(false), [U, G] = i.useState(true), V = i.useRef(true), {
-    triggerAnimation: F,
+    registerAnimatedElementRef: L,
+    surrogate: x
+  } = e, M = A(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef", "surrogate"]), [j, k] = i.useState(false), [U, G] = i.useState(true), F = i.useRef(true), {
+    triggerAnimation: V,
     untriggerAnimation: B
   } = i.useContext(u.wE), H = p.Sf.useSetting(), Y = S(), W = null == P ? H : P, K = E.Ec[I], z = i.useRef(null), q = i.useMemo(() => {
     if (null != a) return a;
@@ -111,19 +111,19 @@ function T(e) {
       let e = true === C && W;
       return h.Ay.getEmojiURL({
         id: f,
-        animated: Y && true === O && (e || M || true === T),
+        animated: Y && true === O && (e || j || true === T),
         size: K
       })
     }
     if (null != _) return m.Ay.getURL(_);
     throw Error("Unknown Src for Emoji")
-  }, [O, W, f, _, K, Y, M, T, C, a]), Z = i.useCallback(() => {
-    null != q && (V.current = (0, d.yt)(q, e => {
+  }, [O, W, f, _, K, Y, j, T, C, a]), Z = i.useCallback(() => {
+    null != q && (F.current = (0, d.yt)(q, e => {
       e || G(Date.now())
     }))
-  }, [q]), X = i.useCallback(e => {
-    O && k(true), null == f && F(_), null == N || N(e)
-  }, [O, _, N, F, f]), Q = i.useCallback(e => {
+  }, [q]), Q = i.useCallback(e => {
+    O && k(true), null == f && V(_), null == N || N(e)
+  }, [O, _, N, V, f]), X = i.useCallback(e => {
     O && k(false), null == f && B(_), null == w || w(e)
   }, [O, f, _, w, B]), J = i.useMemo(() => {
     let e = null != f && "" !== f ? {
@@ -131,28 +131,28 @@ function T(e) {
     } : {
       "data-name": _
     };
-    return b(v(b({}, j), {
-      className: s()("emoji", c, {
+    return b(v(b({}, M), {
+      className: o()("emoji", c, {
         jumboable: "jumbo" === I
       }),
       onError: Z,
-      onMouseEnter: X,
-      onMouseLeave: Q,
+      onMouseEnter: Q,
+      onMouseLeave: X,
       "data-type": "emoji"
     }), e)
-  }, [c, f, _, X, Q, Z, j, I]);
+  }, [c, f, _, Q, X, Z, M, I]);
   i.useEffect(() => () => {
     var e;
-    return null == (e = V.current) ? true : e.call(V)
+    return null == (e = F.current) ? true : e.call(F)
   }, []);
   let $ = i.useCallback(e => {
-      z.current = e, null == D || D(e), null == x || x(e)
-    }, [D, x]),
+      z.current = e, null == D || D(e), null == L || L(e)
+    }, [D, L]),
     ee = (0, l.A)(z);
   return null == q || "" === q ? (0, r.jsx)("span", v(b({}, J), {
     ref: $,
-    className: s()("emoji", "emoji-text"),
-    children: null != L ? L : _
+    className: o()("emoji", "emoji-text"),
+    children: null != x ? x : _
   })) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.q6, {
       channelId: g,
@@ -163,12 +163,12 @@ function T(e) {
     }), R ? (0, r.jsx)("img", v(b({}, J), {
       ref: $,
       src: q,
-      alt: null != (t = null != o ? o : _) ? t : true,
+      alt: null != (t = null != s ? s : _) ? t : true,
       draggable: false
     }), U) : (0, r.jsx)("div", v(b({}, J), {
       ref: $,
       role: "img",
-      "aria-label": null != (n = null != o ? o : _) ? n : true,
+      "aria-label": null != (n = null != s ? s : _) ? n : true,
       style: {
         backgroundImage: "url(".concat(q, ")"),
         backgroundSize: "contain",
@@ -186,11 +186,11 @@ function C(e) {
     animate: n,
     registerRef: a
   } = t(), {
-    disableAnimations: s
+    disableAnimations: o
   } = i.useContext(c.Y);
   return (0, r.jsx)(T, v(b({}, e), {
     registerAnimatedElementRef: a,
-    shouldAnimate: n && !s
+    shouldAnimate: n && !o
   }))
 }
 

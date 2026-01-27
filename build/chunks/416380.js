@@ -56,9 +56,9 @@ class I extends Chunk439372.A {
         !u.A.hasPendingUsage() || h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (i().isEmpty(u.A.playedSoundHistory) || (e.playedSoundFrecency = a.kc.create(), e.playedSoundFrecency.playedSounds = (0, m.Mr)(u.A.playedSoundHistory, 100)))
       }
     }), _.bW.beforeSendCallbacks.push({
-      hasChanges: () => o.Ay.hasPendingUsage() && h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS),
+      hasChanges: () => s.Ay.hasPendingUsage() && h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
-        !o.Ay.hasPendingUsage() || h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationCommandFrecency = a.Zc.create(), e.applicationCommandFrecency.applicationCommands = (0, m.Mr)(o.Ay.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500))
+        !s.Ay.hasPendingUsage() || h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationCommandFrecency = a.Zc.create(), e.applicationCommandFrecency.applicationCommands = (0, m.Mr)(s.Ay.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500))
       }
     }), _.bW.beforeSendCallbacks.push({
       hasChanges: () => l.A.hasPendingUsage() && h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS),
@@ -94,7 +94,7 @@ function C() {
   A && (clearTimeout(v), v = null, N(false))
 }
 async function N(e) {
-  w(O, false), !h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (d.A.hasPendingUsage() || c.Ay.hasPendingUsage() || o.Ay.hasPendingUsage() || l.A.hasPendingUsage() || f.A.hasPendingUsage() && !e) && ((0, _.cE)(), await _.bW.loadIfNecessary()), i().forEach(_.Df, e => {
+  w(O, false), !h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (d.A.hasPendingUsage() || c.Ay.hasPendingUsage() || s.Ay.hasPendingUsage() || l.A.hasPendingUsage() || f.A.hasPendingUsage() && !e) && ((0, _.cE)(), await _.bW.loadIfNecessary()), i().forEach(_.Df, e => {
     e.markDirtyIfHasPendingChange()
   })
 }

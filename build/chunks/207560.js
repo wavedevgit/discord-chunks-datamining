@@ -4,8 +4,8 @@
 require.d(exports, {
   SJ: () => f,
   TR: () => d,
-  To: () => o,
-  aX: () => s,
+  To: () => s,
+  aX: () => o,
   d6: () => a,
   fk: () => u,
   u0: () => c,
@@ -18,11 +18,11 @@ function a(e) {
   return i.A.isFeatureAgeGated(e)
 }
 
-function s(e) {
+function o(e) {
   return (0, r.bG)([i.A], () => i.A.isFeatureAgeGated(e))
 }
 
-function o(e) {
+function s(e) {
   return i.A.isSettingTeenByDefault(e)
 }
 

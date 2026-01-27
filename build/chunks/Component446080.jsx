@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk744682 = require("./744682.jsx");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -70,8 +70,8 @@ let u = {
   },
   d = e => {
     let t = i.useRef(null),
-      s = i.useRef(e);
-    s.current = e;
+      o = i.useRef(e);
+    o.current = e;
     let l = i.useMemo(() => () => {
         null != t.current && t.current.play(e)
       }, [e]),
@@ -85,10 +85,10 @@ let u = {
         let n = "enable" === e ? "hover_disabled" : "hover_enabled";
         t.current.stopIfPlaying(n)
       }, [e]),
-      p = i.useCallback(e => (0, r.jsx)(a.P, c(o({}, e), {
+      p = i.useCallback(e => (0, r.jsx)(a.P, c(s({}, e), {
         src: () => n.e("60810").then(n.t.bind(n, 55089, 19)),
         ref: t,
-        initialAnimation: s.current,
+        initialAnimation: o.current,
         markers: u
       })), []);
     return {

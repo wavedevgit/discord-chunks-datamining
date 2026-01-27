@@ -24,7 +24,7 @@ let d = false / 0,
   f = new Chunk626584.A("MessagePreviewStore");
 class p extends Chunk311907.Ay.Store {
   initialize() {
-    this.waitFor(o.A, l.A)
+    this.waitFor(s.A, l.A)
   }
   isLatest(e, t) {
     var n;
@@ -86,12 +86,12 @@ class p extends Chunk311907.Ay.Store {
   }
   handleLoadMessagesSuccess(e) {
     var t, n;
-    let r = o.A.getBasicChannel(e.channelId);
+    let r = s.A.getBasicChannel(e.channelId);
     if (null == r) returnfalse;
     (0, a.D)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(r.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, this.generation) : this.data(r.guild_id).put(e.channelId, null != (t = e.messages[0]) ? t : null, this.generation)
   }
   handleLocalMessagesLoaded(e) {
-    let t = o.A.getBasicChannel(e.channelId);
+    let t = s.A.getBasicChannel(e.channelId);
     if (null != t) {
       var n;
       (0, a.D)(e.messages), this.data(t.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, d)

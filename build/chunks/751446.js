@@ -2,7 +2,7 @@
 /** chunk id: 751446, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./896048.js");
 var Chunk439372 = require("./439372.js"),
   Chunk291823 = require("./291823.js");
@@ -15,7 +15,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends Chunk439372.A {
+class o extends Chunk439372.A {
   constructor(...e) {
     super(...e), a(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
@@ -24,4 +24,4 @@ class s extends Chunk439372.A {
     })
   }
 }
-let o = new s
+let s = new o

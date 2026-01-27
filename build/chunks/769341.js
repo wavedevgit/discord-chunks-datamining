@@ -12,13 +12,13 @@ var Chunk963169 = require("./963169.js"),
   Chunk650583 = require("./650583.js");
 
 function c(e, t) {
-  return !(e === o.TGd.BROWSER && i.Ay.hasKeybind(l.zY.MOUSE_BUTTON, t))
+  return !(e === s.TGd.BROWSER && i.Ay.hasKeybind(l.zY.MOUSE_BUTTON, t))
 }
 class u {
   initialize() {
-    (0, a.isDesktop)() && (s.Ay.on("NAVIGATE_BACK", (e, t) => {
+    (0, a.isDesktop)() && (o.Ay.on("NAVIGATE_BACK", (e, t) => {
       c(t, l.RX.Back) && (0, r.OE)("native")
-    }), s.Ay.on("NAVIGATE_FORWARD", (e, t) => {
+    }), o.Ay.on("NAVIGATE_FORWARD", (e, t) => {
       c(t, l.RX.Forward) && (0, r.Qb)("native")
     }))
   }

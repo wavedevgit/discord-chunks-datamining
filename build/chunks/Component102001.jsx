@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk212245 = require("./212245.js"),
@@ -34,7 +34,7 @@ let v = e => {
     location: I
   } = (0, c.p)(), {
     analyticsLocations: S
-  } = (0, d.Ay)(), T = (0, o.bG)([m.A], () => m.A.getGuild(n)), {
+  } = (0, d.Ay)(), T = (0, s.bG)([m.A], () => m.A.getGuild(n)), {
     canManageAllExpressions: C
   } = (0, h.nr)(T), N = null != T && 0 === (0, g.aG)(T.premiumTier) && !T.features.has(E.GuildFeatures.MORE_STICKERS);
   if (i.useEffect(() => {
@@ -56,7 +56,7 @@ let v = e => {
       })
     };
     return (0, r.jsxs)("div", {
-      className: s()(O.UX, t),
+      className: o()(O.UX, t),
       children: [(0, r.jsx)(l.vRF, {
         size: "md",
         color: "currentColor",
@@ -79,7 +79,7 @@ let v = e => {
       (0, f.v8)(), _.A.open(n, E.BEX.STICKERS, I)
     };
     return (0, r.jsxs)("div", {
-      className: s()(O.UX, t),
+      className: o()(O.UX, t),
       children: [(0, r.jsx)(l.tEP, {
         size: "custom",
         color: "currentColor",

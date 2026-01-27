@@ -1,22 +1,21 @@
-/** Chunk was on web.js **/
-/** chunk id: 806964, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 806964, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => l
+  u: () => o
 });
 var Chunk951001 = require("./951001.js"),
   Chunk265422 = require("./265422.js"),
   Chunk383501 = require("./383501.js"),
   Chunk309010 = require("./309010.js"),
   Chunk652215 = require("./652215.js");
-let l = {
+let o = {
   binds: ["mod+alt+left"],
   comboKeysBindGlobal: true,
   action() {
     var e;
-    if (!a.A.isConnected()) returnfalse;
-    let t = null != (e = a.A.getGuildId()) ? e : o.ME,
+    if (!l.A.isConnected()) returnfalse;
+    let t = null != (e = l.A.getGuildId()) ? e : a.ME,
       n = s.A.getChannelId(t);
-    return (0, i.i)(t, n), r.A.channelListScrollTo(t, a.A.getChannelId()), false
+    return (0, i.i)(t, n), r.A.channelListScrollTo(t, l.A.getChannelId()), false
   }
 }

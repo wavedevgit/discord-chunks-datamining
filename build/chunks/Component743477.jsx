@@ -92,7 +92,7 @@ function A(e) {
         object: m.ZSU.BUTTON_ICON,
         objectType: m.AnalyticsObjectTypes.GIFT
       }
-    }) : T && C && null != O ? (0, o.mMO)(async () => {
+    }) : T && C && null != O ? (0, s.mMO)(async () => {
       let {
         default: e
       } = await n.e("22841").then(n.bind(n, 561376));
@@ -119,7 +119,7 @@ function A(e) {
       }
     })
   };
-  return (0, r.jsx)(s.m, {
+  return (0, r.jsx)(o.m, {
     ariaHidden: N,
     text: g.intl.string(N ? g.t.TW4JV0 : g.t.sWtWDX),
     children: (0, r.jsx)(h.A, v(b({

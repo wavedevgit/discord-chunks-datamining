@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk607399 = require("./607399.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -52,17 +52,17 @@ function y(e) {
     hardwareAccelerationEnabled: R,
     highContrastMode: P,
     isPopoutWindow: D,
-    children: x
-  } = e, L = window.CSS.supports("selector(::-webkit-scrollbar)"), j = (0, l.bG)([d.A], () => d.A.zoom), M = D ? "" : "--custom-zoom: ".concat(j, ";"), k = (0, _.A)("highlight_mana_buttons"), U = (0, _.A)("highlight_mana_components"), G = (0, _.A)("highlight_void_toggleables"), V = (0, _.A)("highlight_void_buttons"), F = (0, l.bG)([h.Ay], () => h.Ay.hdrDynamicRange), B = "font-size: ".concat(b, "%; --saturation-factor: ").concat(I, "; dynamic-range-limit: ").concat(F, "; ").concat(M), H = s()((0, f.A)(), (0, c.mo9)(a), "density-".concat(E), O, {
+    children: L
+  } = e, x = window.CSS.supports("selector(::-webkit-scrollbar)"), M = (0, l.bG)([d.A], () => d.A.zoom), j = D ? "" : "--custom-zoom: ".concat(M, ";"), k = (0, _.A)("highlight_mana_buttons"), U = (0, _.A)("highlight_mana_components"), G = (0, _.A)("highlight_void_toggleables"), F = (0, _.A)("highlight_void_buttons"), V = (0, l.bG)([h.Ay], () => h.Ay.hdrDynamicRange), B = "font-size: ".concat(b, "%; --saturation-factor: ").concat(I, "; dynamic-range-limit: ").concat(V, "; ").concat(j), H = o()((0, f.A)(), (0, c.mo9)(a), "density-".concat(E), O, {
     "low-saturation": I <= c.yvq,
     "keyboard-mode": A,
     "decorate-links": w,
-    "no-webkit-scrollbar": !L,
-    "has-webkit-scrollbar": L,
+    "no-webkit-scrollbar": !x,
+    "has-webkit-scrollbar": x,
     "mouse-mode": v,
     "reduce-motion": N,
     "full-motion": !N,
-    "is-mobile": o.Fr,
+    "is-mobile": s.Fr,
     "app-focused": y,
     "desaturate-user-colors": S,
     "disable-forced-colors": !T && "active" === C,
@@ -74,7 +74,7 @@ function y(e) {
     "highlight-mana-buttons": k,
     "highlight-mana-components": U,
     "highlight-void-toggleables": G,
-    "highlight-void-buttons": V,
+    "highlight-void-buttons": F,
     "high-contrast-mode": P
   }, t), Y = i.useMemo(() => ({
     lang: n,
@@ -89,6 +89,6 @@ function y(e) {
     })
   }), (0, r.jsx)(g.Provider, {
     value: Y,
-    children: x
+    children: L
   })
 }

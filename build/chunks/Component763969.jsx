@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk187322 = require("./187322.jsx"),
   Chunk842867 = require("./842867.js");
 
@@ -94,14 +94,14 @@ function h(e, t) {
       ref: e => {
         "function" == typeof I ? I(e) : null != I && (I.current = e), S.current = e
       },
-      className: s()(m, {
+      className: o()(m, {
         [e]: true,
         [t]: b
       }),
       style: (0, l.Ze)(v, E),
       dir: g
     }, A), {
-      children: (0, r.jsxs)(o.xp, {
+      children: (0, r.jsxs)(s.xp, {
         containerRef: S,
         children: [h, T]
       })

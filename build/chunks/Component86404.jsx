@@ -1,4 +1,4 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 86404, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -23,30 +23,30 @@ function A(e) {
     channelId: A,
     onClose: x
   } = e, {
-    mutualFriends: j
-  } = (0, c.A)(t), {
-    analyticsLocations: h
+    mutualFriends: g
+  } = (0, d.A)(t), {
+    analyticsLocations: j
   } = (0, o.Ay)(), {
-    context: g,
-    trackUserProfileAction: v
-  } = (0, a.NJ)(), b = (0, s.A)();
+    context: h,
+    trackUserProfileAction: b
+  } = (0, a.NJ)(), v = (0, s.A)();
   return i.useEffect(() => {
-    (0, d.A)(t.id, b)
-  }, [t.id, b]), (0, l.jsx)(r.IpV, {
-    className: f.DK,
+    (0, c.A)(t.id, v)
+  }, [t.id, v]), (0, l.jsx)(r.IpV, {
+    className: m.DK,
     fade: true,
-    children: null == j ? (0, l.jsx)("div", {
-      className: f.Ie,
+    children: null == g ? (0, l.jsx)("div", {
+      className: m.Ie,
       children: (0, l.jsx)(r.y$y, {})
-    }) : 0 === j.length ? (0, l.jsxs)("div", {
-      className: f.Ie,
+    }) : 0 === g.length ? (0, l.jsxs)("div", {
+      className: m.Ie,
       children: [(0, l.jsx)("div", {
-        className: f.on
+        className: m.on
       }), (0, l.jsx)("div", {
-        className: f.BI,
-        children: m.intl.string(m.t["/5p4gx"])
+        className: m.BI,
+        children: f.intl.string(f.t["/5p4gx"])
       })]
-    }) : j.map(e => {
+    }) : g.map(e => {
       let {
         key: t,
         user: i,
@@ -59,7 +59,7 @@ function A(e) {
         channelId: A,
         onSelect: () => {
           var e, t, n;
-          null == x || x(), v({
+          null == x || x(), b({
             action: "PRESS_MUTUAL_FRIEND"
           }), e = i.id, (0, u.openUserProfileModal)((t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -78,9 +78,9 @@ function A(e) {
               })
             }
             return e
-          }({}, g), n = n = {
+          }({}, h), n = n = {
             userId: e,
-            sourceAnalyticsLocations: h
+            sourceAnalyticsLocations: j
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

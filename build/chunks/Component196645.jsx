@@ -1,7 +1,7 @@
 /** Chunk was on 18108 **/
 /** chunk id: 196645, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => T
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,63 +20,63 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk286965 = require("./286965.js");
 
-function p(t) {
+function T(t) {
   let {
     senderId: e,
     channelId: n,
-    hasReported: p,
-    onReport: j,
-    trackAnalyticsEvent: b
-  } = t, v = (0, a.bG)([_.A], () => _.A.isBlocked(e)), [E, T] = i.useState(v), f = (0, d.N)(), S = (0, d.z)(), [y, N] = i.useState(false), R = (0, m.W)(n), C = i.useMemo(() => f ? 0 : S ? 2 : 1, [f, S]), k = async () => {
-    null != R && (N(true), await (0, o.LF)(R, () => {
-      u.A.showReportSuccessToast(e, n), j()
+    hasReported: T,
+    onReport: m,
+    trackAnalyticsEvent: f
+  } = t, S = (0, a.bG)([E.A], () => E.A.isBlocked(e)), [b, O] = i.useState(S), j = (0, d.N)(), N = (0, d.z)(), [C, v] = i.useState(false), R = (0, A.W)(n), I = i.useMemo(() => j ? 0 : N ? 2 : 1, [j, N]), y = async () => {
+    null != R && (v(true), await (0, c.LF)(R, () => {
+      u.A.showReportSuccessToast(e, n), m()
     }, () => {
       u.A.showFailedToast()
-    }), N(false), b(x.Wm.USER_TAKEOVER_MODAL_REPORT))
+    }), v(false), f(_.Wm.USER_TAKEOVER_MODAL_REPORT))
   }, w = i.useMemo(() => {
-    switch (C) {
+    switch (I) {
       case 0:
-        return g.intl.string(g.t.sZf6cz);
+        return x.intl.string(x.t.sZf6cz);
       case 2:
-        return g.intl.string(g.t.HQ2nKl);
+        return x.intl.string(x.t.HQ2nKl);
       default:
-        return g.intl.string(g.t["65XQar"])
+        return x.intl.string(x.t["65XQar"])
     }
-  }, [C]);
+  }, [I]);
   return (0, r.jsx)(h.A, {
-    header: g.intl.string(g.t["mWO+ys"]),
-    description: g.intl.string(g.t.S0XtKF),
+    header: x.intl.string(x.t["mWO+ys"]),
+    description: x.intl.string(x.t.S0XtKF),
     children: (0, r.jsxs)("div", {
-      className: O.UD,
+      className: p.UD,
       children: [(0, r.jsx)(s.Button, {
-        text: E ? g.intl.string(g.t.XyHpKH) : g.intl.string(g.t.l4Emac),
+        text: b ? x.intl.string(x.t.XyHpKH) : x.intl.string(x.t.l4Emac),
         variant: "primary",
         fullWidth: true,
         icon: s.aXh,
         onClick: () => {
-          E ? (T(false), l.A.unblockUser(e, {
-            location: A.Ht
-          }), b(x.Wm.USER_TAKEOVER_MODAL_UNBLOCK), u.A.showUnblockSuccessToast(e, n)) : (T(true), b(x.Wm.USER_TAKEOVER_MODAL_BLOCK), l.A.blockUser(e, {
-            location: A.Ht
+          b ? (O(false), l.A.unblockUser(e, {
+            location: g.Ht
+          }), f(_.Wm.USER_TAKEOVER_MODAL_UNBLOCK), u.A.showUnblockSuccessToast(e, n)) : (O(true), f(_.Wm.USER_TAKEOVER_MODAL_BLOCK), l.A.blockUser(e, {
+            location: g.Ht
           }).then(() => {
             u.A.showBlockSuccessToast(e, n)
           }))
         }
       }), (0, r.jsx)(s.Button, {
-        text: p ? g.intl.string(g.t.QvwOJ6) : g.intl.string(g.t["7fHyE6"]),
+        text: T ? x.intl.string(x.t.QvwOJ6) : x.intl.string(x.t["7fHyE6"]),
         variant: "secondary",
         fullWidth: true,
         icon: s.iFK,
-        onClick: k,
-        loading: y,
-        disabled: p
+        onClick: y,
+        loading: C,
+        disabled: T
       }), (0, r.jsx)(s.Button, {
         text: w,
         variant: "secondary",
         fullWidth: true,
         icon: s.oyn,
         onClick: () => {
-          0 === C ? ((0, c.A)(A.x7), b(x.Wm.USER_TAKEOVER_MODAL_CTL)) : 2 === C ? ((0, c.A)(A.CL), b(x.Wm.USER_TAKEOVER_MODAL_THROUGHLINE)) : ((0, c.A)(A.jR), b(x.Wm.USER_TAKEOVER_MODAL_NO_FILTR))
+          0 === I ? ((0, o.A)(g.x7), f(_.Wm.USER_TAKEOVER_MODAL_CTL)) : 2 === I ? ((0, o.A)(g.CL), f(_.Wm.USER_TAKEOVER_MODAL_THROUGHLINE)) : ((0, o.A)(g.jR), f(_.Wm.USER_TAKEOVER_MODAL_NO_FILTR))
         }
       })]
     })

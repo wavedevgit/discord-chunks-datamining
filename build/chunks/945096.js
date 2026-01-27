@@ -2,7 +2,7 @@
 /** chunk id: 945096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $0: () => o,
+  $0: () => s,
   Xr: () => u,
   gN: () => c,
   mT: () => l
@@ -12,7 +12,7 @@ var Chunk310784 = require("./310784.js"),
   Chunk508425 = require("./508425.js"),
   Chunk750656 = require("./750656.js");
 
-function o(e) {
+function s(e) {
   let t = i()(e).alpha(1),
     n = t.get("hsl.l"),
     r = Math.min(1, 1.2 * t.get("hsl.s")),
@@ -37,12 +37,12 @@ function l(e) {
 }
 
 function c() {
-  let e, t = s.re[Math.floor(Math.random() * s.re.length)],
-    n = s.rA[Math.floor(Math.random() * s.rA.length)];
+  let e, t = o.re[Math.floor(Math.random() * o.re.length)],
+    n = o.rA[Math.floor(Math.random() * o.rA.length)];
   if (t === a.z.GRADIENT) {
-    let t = s.Wf[Math.floor(Math.random() * s.Wf.length)];
+    let t = o.Wf[Math.floor(Math.random() * o.Wf.length)];
     e = [t.start, t.end]
-  } else e = [s.Jl[Math.floor(Math.random() * s.Jl.length)]];
+  } else e = [o.Jl[Math.floor(Math.random() * o.Jl.length)]];
   return {
     fontId: n,
     effectId: t,

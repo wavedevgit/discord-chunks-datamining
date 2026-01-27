@@ -26,22 +26,22 @@ async function u(e) {
   try {
     let e = await (0, i.D2)(t),
       n = a.Ay.getCurrentEmbeddedActivity();
-    null != n && (0, o.A)().leaveActivity({
+    null != n && (0, s.A)().leaveActivity({
       location: n.location,
       applicationId: n.applicationId,
       showFeedback: false
     });
-    let s = l.A.getConnectedFrame();
-    null != s && s.applicationId !== t && (0, c.A)().leaveFrame({
-      applicationId: s.applicationId
+    let o = l.A.getConnectedFrame();
+    null != o && o.applicationId !== t && (0, c.A)().leaveFrame({
+      applicationId: o.applicationId
     }), r.h.dispatch({
       type: "FRAME_LAUNCH",
       applicationId: t,
       proxyTicket: e
     })
   } catch (i) {
-    let e = (0, o.A)(),
-      n = await (0, s.f)(i, t);
+    let e = (0, s.A)(),
+      n = await (0, o.f)(i, t);
     throw e.showLaunchErrorModal(n.message), r.h.dispatch({
       type: "FRAME_LAUNCH_FAIL",
       applicationId: t,
@@ -95,8 +95,8 @@ async function _(e) {
       proxyTicket: e
     })
   } catch (r) {
-    let e = (0, o.A)(),
-      n = await (0, s.f)(r, t);
+    let e = (0, s.A)(),
+      n = await (0, o.f)(r, t);
     return e.showLaunchErrorModal(n.message), false
   } finally {
     r.h.dispatch({

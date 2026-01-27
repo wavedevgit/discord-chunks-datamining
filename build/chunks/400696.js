@@ -10,9 +10,9 @@ var Chunk906046 = require("./906046.js"),
       returnfalse
     }
   },
-  s = Chunk906046("Object.prototype.toString"),
-  o = "[object String]",
+  o = Chunk906046("Object.prototype.toString"),
+  s = "[object String]",
   l = require("./581070.js")();
 module.exports = function(e) {
-  return "string" == typeof e || !!e && "object" == typeof e && (l ? a(e) : s(e) === o)
+  return "string" == typeof e || !!e && "object" == typeof e && (l ? a(e) : o(e) === s)
 }

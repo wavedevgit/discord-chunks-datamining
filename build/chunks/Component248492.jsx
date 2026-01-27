@@ -1,7 +1,7 @@
-/** Chunk was on 58652 **/
+/** Chunk was on 12236 **/
 /** chunk id: 248492, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,41 +17,41 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk449154 = require("./449154.js"),
   Chunk532406 = require("./532406.js");
-let _ = e => {
+let x = e => {
   var t, n;
   let {
-    entry: _
+    entry: x
   } = e, {
     name: h
-  } = _, v = (0, i.bG)([m.default], () => m.default.getNewestTokenForApplication(_.id)), f = null != (t = _.getIconURL(40)) ? t : g, j = (0, c.A)({
-    application: _
+  } = x, v = (0, i.bG)([m.default], () => m.default.getNewestTokenForApplication(x.id)), f = null != (t = x.getIconURL(40)) ? t : g, j = (0, c.A)({
+    application: x
   }), A = r.useRef(false);
   r.useEffect(() => {
     A.current || (o.A.fetch(), A.current = true)
   }, []);
   let y = null != v ? p.default.extractTimestamp(v.id) : true;
   return (0, l.jsxs)("div", {
-    className: x.kL,
+    className: _.kL,
     children: [(0, l.jsx)(s.Heading, {
-      className: x.wx,
+      className: _.wx,
       variant: "heading-sm/semibold",
       children: b.intl.string(b.t["aYfK/w"])
     }), (0, l.jsx)("div", {
-      className: x.vU,
+      className: _.vU,
       children: (0, l.jsxs)("div", {
-        className: x.qi,
+        className: _.qi,
         children: [(0, l.jsx)(d.Ay, {
           mask: d.Ay.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
-          className: x.VE,
+          className: _.VE,
           children: (0, l.jsx)("img", {
             src: f,
             alt: "",
-            className: x.Z2
+            className: _.Z2
           })
         }), (0, l.jsxs)("div", {
-          className: x.FS,
+          className: _.FS,
           children: [(0, l.jsx)(s.Text, {
             color: "text-strong",
             variant: "text-md/medium",
@@ -62,7 +62,7 @@ let _ = e => {
               variant: "text-md/normal",
               children: (0, u.A)(j.length)
             }), (0, l.jsx)(a.A, {
-              className: x.uM,
+              className: _.uM,
               guilds: j,
               maxGuilds: 6
             })]
@@ -70,7 +70,7 @@ let _ = e => {
             children: [(0, l.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: null == (n = _.bot) ? true : n.tag
+              children: null == (n = x.bot) ? true : n.tag
             }), null != y && (0, l.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",

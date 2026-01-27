@@ -1,9 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 920814, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93140 **/
+/** chunk id: 920814, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => r
+  B: () => i
 });
-var r = function(e) {
-  return e.GUILD_PRODUCTS = "guild_products", e.GUILD_ROLE_SUBSCRIPTIONS = "guild_role_subscriptions", e.GUILD_PRODUCTS_PREVIEW = "guild_products_preview", e.GUILD_SHOP_FULL_PREVIEW = "guild_shop_full_preview", e
-}({})
+var r, i = ((r = {}).GUILD_PRODUCTS = "guild_products", r.GUILD_ROLE_SUBSCRIPTIONS = "guild_role_subscriptions", r.GUILD_PRODUCTS_PREVIEW = "guild_products_preview", r.GUILD_SHOP_FULL_PREVIEW = "guild_shop_full_preview", r)

@@ -21,8 +21,8 @@ function i() {
     }, []),
     n = (0, r.useCallback)((t, n, r, i) => {
       var a;
-      let s = (null == (a = e.current.get(r)) ? true : a.fn) || r;
-      t.removeEventListener(n, s, i), e.current.delete(r)
+      let o = (null == (a = e.current.get(r)) ? true : a.fn) || r;
+      t.removeEventListener(n, o, i), e.current.delete(r)
     }, []),
     i = (0, r.useCallback)(() => {
       e.current.forEach((e, t) => {

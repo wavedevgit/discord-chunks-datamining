@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk534409 = require("./534409.js"),
   Chunk250402 = require("./250402.js");
@@ -108,8 +108,8 @@ function b(e) {
     },
     highlight: i = false,
     rounded: a = false
-  } = e, s = _(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]), c = !!s.isFolder, u = (0, l.qK)("BlobMask"), f = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE), h = (0, o.rdh)(o.LU0.modules.guildbar.FOLDER_SIZE), g = !u && c ? h : f, E = g / 2;
-  return (0, r.jsx)(O, p(d({}, s), {
+  } = e, o = _(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]), c = !!o.isFolder, u = (0, l.qK)("BlobMask"), f = (0, s.rdh)(s.LU0.modules.guildbar.AVATAR_SIZE), h = (0, s.rdh)(s.LU0.modules.guildbar.FOLDER_SIZE), g = !u && c ? h : f, E = g / 2;
+  return (0, r.jsx)(O, p(d({}, o), {
     selected: t,
     rounded: a,
     baseViewBoxSize: g,
@@ -145,14 +145,14 @@ function O(e) {
     S(true)
   }, C = () => {
     S(false)
-  }, N = null != b, w = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), D = "".concat(R, "-lower_badge_masks"), x = "".concat(R, "-blob_mask"), L = "".concat(R, "-stroke_mask"), j = "".concat(R, "-highlight_mask"), M = (null == f ? true : f.width) != null ? f.width : m, k = (null == f ? true : f.height) != null ? f.height : m, U = {
+  }, N = null != b, w = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), D = "".concat(R, "-lower_badge_masks"), L = "".concat(R, "-blob_mask"), x = "".concat(R, "-stroke_mask"), M = "".concat(R, "-highlight_mask"), j = (null == f ? true : f.width) != null ? f.width : m, k = (null == f ? true : f.height) != null ? f.height : m, U = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : false,
     y: d ? 0 : false
-  }, G = d ? 20 : h, V = v ? y(n) : E(n);
+  }, G = d ? 20 : h, F = v ? y(n) : E(n);
   return (0, r.jsxs)("div", {
-    className: s()(a, c.iE),
+    className: o()(a, c.iE),
     style: l,
     onFocus: T,
     onBlur: C,
@@ -161,7 +161,7 @@ function O(e) {
       width: U.width,
       height: U.height,
       viewBox: "".concat(U.x, " ").concat(U.y, " ").concat(U.width, " ").concat(U.height),
-      className: s()(c.JW, {
+      className: o()(c.JW, {
         [c.Qq]: p,
         [c.Pm]: !d
       }),
@@ -169,11 +169,11 @@ function O(e) {
       role: "none",
       children: [(0, r.jsxs)("defs", {
         children: [p && (0, r.jsx)("path", {
-          d: V,
-          id: j
+          d: F,
+          id: M
         }), (0, r.jsx)("path", {
-          d: V,
-          id: x
+          d: F,
+          id: L
         }), null != b ? (0, r.jsx)("rect", {
           id: P,
           x: n - G + _,
@@ -184,9 +184,9 @@ function O(e) {
           ry: G / 2
         }) : null, null != O ? (0, r.jsx)("rect", {
           id: D,
-          x: n - (M + 2 * _) + _,
+          x: n - (j + 2 * _) + _,
           y: n - (k + 2 * _) + _,
-          width: M + 2 * _,
+          width: j + 2 * _,
           height: k + 2 * _,
           rx: h / 2,
           ry: h / 2
@@ -199,12 +199,12 @@ function O(e) {
         width: n,
         height: n,
         children: [p && (0, r.jsx)("use", {
-          href: "#".concat(j),
+          href: "#".concat(M),
           fill: "black"
         }), (0, r.jsx)("use", {
-          href: "#".concat(x),
+          href: "#".concat(L),
           fill: "white",
-          className: s()({
+          className: o()({
             [c.OV]: p
           })
         }), N ? (0, r.jsx)("use", {
@@ -215,7 +215,7 @@ function O(e) {
           fill: "black"
         }) : null]
       }), N || w ? (0, r.jsxs)("mask", {
-        id: L,
+        id: x,
         children: [(0, r.jsx)("rect", {
           width: "150%",
           height: "150%",
@@ -232,9 +232,9 @@ function O(e) {
       }) : null, I ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("g", {
           className: c.ZD,
-          mask: "url(#".concat(L, ")"),
+          mask: "url(#".concat(x, ")"),
           children: (0, r.jsx)("use", {
-            href: "#".concat(x)
+            href: "#".concat(L)
           })
         }), (0, r.jsxs)("g", {
           className: c.e7,
@@ -245,11 +245,11 @@ function O(e) {
           }) : null]
         })]
       }) : null, p && (0, r.jsx)("path", {
-        d: V,
-        stroke: o.LU0.unsafe_rawColors.BRAND_500.css,
+        d: F,
+        stroke: s.LU0.unsafe_rawColors.BRAND_500.css,
         strokeWidth: g,
         className: c.Zt,
-        mask: "url(#".concat(L, ")")
+        mask: "url(#".concat(x, ")")
       }), (0, r.jsx)("foreignObject", {
         mask: "url(#".concat(R, ")"),
         x: 0,

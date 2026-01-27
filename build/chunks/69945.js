@@ -13,7 +13,7 @@ var Chunk734057 = require("./734057.js"),
 
 function c(e, t, n) {
   let c = r.A.getChannel(n);
-  if ((null == e ? true : e.guildId) === o.mV || (null == e ? true : e.guildId) === (null == c ? true : c.guild_id) || (null == e ? true : e.guildId) === t) returntrue;
-  let u = s.Ay.canUseSoundboardEverywhere(a.default.getCurrentUser());
+  if ((null == e ? true : e.guildId) === s.mV || (null == e ? true : e.guildId) === (null == c ? true : c.guild_id) || (null == e ? true : e.guildId) === t) returntrue;
+  let u = o.Ay.canUseSoundboardEverywhere(a.default.getCurrentUser());
   return (null == c || null == c.guild_id || i.A.can(l.xB.USE_EXTERNAL_SOUNDS, c)) && u
 }

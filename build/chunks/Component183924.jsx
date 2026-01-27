@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 183924, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 183924, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => o
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,21 +10,21 @@ var Chunk397927 = require("./397927.js"),
   Chunk207963 = require("./207963.jsx"),
   Chunk518774 = require("./518774.js");
 
-function l(e) {
+function o(e) {
   let {
     label: t,
     description: n,
-    component: l,
+    component: o,
     renderComponent: c
-  } = e, u = (0, s.bO)(l);
-  return l.type === a.I5.CHECKBOX ? c(l, "label-child") : (0, r.jsxs)(i.eIh, {
+  } = e, u = (0, i.bO)(o);
+  return o.type === a.I5.CHECKBOX ? c(o, "label-child") : (0, r.jsxs)(l.eIh, {
     title: t,
-    required: l.required,
+    required: o.required,
     error: u,
-    children: [null != n && (0, r.jsx)(i.ayl, {
-      type: i.tiu.DESCRIPTION,
-      className: o.h,
+    children: [null != n && (0, r.jsx)(l.ayl, {
+      type: l.tiu.DESCRIPTION,
+      className: s.h,
       children: n
-    }), c(l, "label-child")]
+    }), c(o, "label-child")]
   })
 }

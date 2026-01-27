@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 680020, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 680020, original params: e,t,n (module,exports,require) **/
 module.exports = {
   sn: "boostIconContainer__8dbf5",
   $J: "boostIcon__8dbf5",

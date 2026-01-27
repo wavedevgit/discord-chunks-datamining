@@ -22,7 +22,7 @@ function u(e) {
   } = e, [p, _] = i.useState(null), h = i.useRef(false);
   if (i.useEffect(() => {
       async function e(e) {
-        let t = await (0, s.$Q)(e);
+        let t = await (0, o.$Q)(e);
         n === e && (t.sort((e, t) => e.name.localeCompare(t.name)), _({
           guildId: e,
           channels: t
@@ -40,13 +40,13 @@ function u(e) {
   return (0, r.jsx)("div", {
     className: l.g,
     children: (0, r.jsx)(a.ZiE, {
-      label: o.intl.string(o.t["8qKd+J"]),
-      helperText: o.intl.string(o.t.kQXMfN),
+      label: s.intl.string(s.t["8qKd+J"]),
+      helperText: s.intl.string(s.t.kQXMfN),
       selectionMode: "single",
       maxOptionsVisible: c,
       errorMessage: f,
       onSelectionChange: d,
-      placeholder: o.intl.string(o.t["Re/64R"]),
+      placeholder: s.intl.string(s.t["Re/64R"]),
       options: m,
       value: null != u ? u : true
     })

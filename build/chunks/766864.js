@@ -6,7 +6,7 @@ require.d(exports, {
   YK: () => u,
   aY: () => c,
   vB: () => l,
-  zZ: () => o
+  zZ: () => s
 });
 var Chunk250105 = require("./250105.js"),
   i = function(e) {
@@ -37,26 +37,26 @@ let a = (0, Chunk250105.Ay)({
   }
 });
 
-function s(e) {
+function o(e) {
   return a.getConfig({
     location: e
   })
 }
 
-function o(e) {
+function s(e) {
   return a.useConfig({
     location: e
   })
 }
 
 function l(e) {
-  return "top_sounds" === s(e).sortingStrategy
+  return "top_sounds" === o(e).sortingStrategy
 }
 
 function c(e) {
-  return "metrics_capture" === s(e).sortingStrategy
+  return "metrics_capture" === o(e).sortingStrategy
 }
 
 function u(e) {
-  return "recently_used_by_user" === s(e).sortingStrategy
+  return "recently_used_by_user" === o(e).sortingStrategy
 }

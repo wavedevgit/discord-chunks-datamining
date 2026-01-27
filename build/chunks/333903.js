@@ -50,7 +50,7 @@ function d(e, t, n) {
     keyboardNavigationBehavior: g,
     shouldSelectOnPressUp: y
   });
-  let v = (0, o.m)({
+  let v = (0, s.m)({
       selectionManager: t.selectionManager,
       hasItemActions: !!_
     }),
@@ -60,7 +60,7 @@ function d(e, t, n) {
     I = (0, a.$)(e, {
       labelable: true
     }),
-    S = (0, s.v)(I, {
+    S = (0, o.v)(I, {
       role: "grid",
       id: O,
       "aria-multiselectable": "multiple" === t.selectionManager.selectionMode ? "true" : true

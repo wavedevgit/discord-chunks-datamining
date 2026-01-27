@@ -28,8 +28,8 @@ let u = 0,
 function p(e) {
   let {
     error: t
-  } = e, n = t instanceof s.Ay ? t : new s.Ay(t);
-  o.A.isConnected() && n.code === s.Ay.ErrorCodes.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED && (u = 1)
+  } = e, n = t instanceof o.Ay ? t : new o.Ay(t);
+  s.A.isConnected() && n.code === o.Ay.ErrorCodes.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED && (u = 1)
 }
 
 function _(e) {
@@ -41,7 +41,7 @@ function h() {
 }
 class m extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A)
+    this.waitFor(s.A)
   }
   get purchaseTokenAuthState() {
     return u

@@ -16,8 +16,8 @@ var Chunk655405 = require("./655405.js"),
 module.exports = function(e, t, n, m, g, E) {
   var y = l(e),
     b = l(t),
-    O = y ? p : o(e),
-    v = b ? p : o(t);
+    O = y ? p : s(e),
+    v = b ? p : s(t);
   O = O == f ? _ : O, v = v == f ? _ : v;
   var A = O == _,
     I = v == _,
@@ -36,5 +36,5 @@ module.exports = function(e, t, n, m, g, E) {
       return E || (E = new r), g(N, w, n, m, E)
     }
   }
-  return !!S && (E || (E = new r), s(e, t, n, m, g, E))
+  return !!S && (E || (E = new r), o(e, t, n, m, g, E))
 }

@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 293843, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 20941 **/
+/** chunk id: 293843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => w
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk108531 = require("./108531.js"),
   Chunk299619 = require("./299619.jsx"),
   Chunk311907 = require("./311907.js"),
@@ -31,18 +30,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk822563 = require("./822563.js"),
   Chunk447515 = require("./447515.js"),
   Chunk844636 = require("./844636.js");
-let R = 2.8,
-  P = 2,
-  D = 1e3,
-  x = 500,
-  L = 1e3 + Chunk476648.f;
+let P = 1e3 + Chunk476648.f;
 
-function j(e) {
+function w(e) {
   let {
     onNextStep: t
-  } = e, n = (0, c.bG)([h.A], () => h.A.getFetchState() === h.$.ERROR || null == h.A.getCheckpointData().messages), [a, j] = i.useState(true), M = i.useRef(null), k = i.useContext(_.P), U = (0, u.rdh)(k.primaryColor).hex(), G = (0, c.bG)([f.A], () => f.A.useReducedMotion), V = i.useCallback(e => {
-    e.currentTarget.currentTime >= R && j(false)
-  }, []), F = (0, u.zhh)({
+  } = e, n = (0, c.bG)([h.A], () => h.A.getFetchState() === h.$.ERROR || null == h.A.getCheckpointData().messages), [a, w] = l.useState(true), T = l.useRef(null), R = l.useContext(p.P), L = (0, u.rdh)(R.primaryColor).hex(), D = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = l.useCallback(e => {
+    e.currentTarget.currentTime >= 2.8 && w(false)
+  }, []), M = (0, u.zhh)({
     from: {
       opacity: 0
     },
@@ -50,8 +45,8 @@ function j(e) {
       opacity: 1
     },
     pause: a,
-    delay: L
-  }), B = (0, u.zhh)({
+    delay: P
+  }), H = (0, u.zhh)({
     from: {
       opacity: 0
     },
@@ -60,143 +55,143 @@ function j(e) {
     },
     pause: a
   });
-  i.useEffect(() => {
-    null != M.current && (M.current.playbackRate = P)
-  }, []), i.useEffect(() => {
-    if (G) {
-      null != M.current && (M.current.currentTime = .2);
+  l.useEffect(() => {
+    null != T.current && (T.current.playbackRate = 2)
+  }, []), l.useEffect(() => {
+    if (D) {
+      null != T.current && (T.current.currentTime = .2);
       let e = setTimeout(() => {
-        j(false)
-      }, D);
+        w(false)
+      }, 1e3);
       return () => clearTimeout(e)
     }
-  }, [G]);
-  let H = () => {
-    (0, d.A)(p.A.getArticleURL(I.MVz.CHECKPOINT))
+  }, [D]);
+  let U = () => {
+    (0, d.A)(f.A.getArticleURL(A.MVz.CHECKPOINT))
   };
   return n ? (0, r.jsxs)(y.A, {
-    className: C.Ur,
-    children: [(0, r.jsx)(l.A, {
-      autoPlay: !G,
+    className: S.Ur,
+    children: [(0, r.jsx)(o.A, {
+      autoPlay: !D,
       muted: true,
       playsInline: true,
       loop: true,
-      className: C.CT,
+      className: S.CT,
       children: (0, r.jsx)("source", {
-        src: w.A,
+        src: I.A,
         type: "video/webm"
       })
-    }), (0, r.jsx)(b.A, {
+    }), (0, r.jsx)(v.A, {
       variant: "display-lg",
-      className: C.Vy,
-      children: T.intl.string(S.default.kimsIr)
-    }), (0, r.jsx)(b.A, {
+      className: S.Vy,
+      children: E.intl.string(O.default.kimsIr)
+    }), (0, r.jsx)(v.A, {
       variant: "heading-xl/medium",
-      className: C.VA,
-      children: T.intl.format(S.default.GNHD4i, {
+      className: S.VA,
+      children: E.intl.format(O.default.GNHD4i, {
         learnMoreHook: (e, t) => (0, r.jsx)(u.DUT, {
-          onClick: H,
-          className: C.C2,
-          children: (0, r.jsx)(b.A, {
+          onClick: U,
+          className: S.C2,
+          children: (0, r.jsx)(v.A, {
             variant: "heading-xl/medium",
-            className: C.nf,
+            className: S.nf,
             children: e
           })
         }, t)
       })
-    }), (0, r.jsx)(b.A, {
+    }), (0, r.jsx)(v.A, {
       variant: "text-lg/medium",
-      children: T.intl.string(S.default["xLI+Hj"])
+      children: E.intl.string(O.default["xLI+Hj"])
     }), (0, r.jsx)(g.A, {
-      className: C.Hk,
+      className: S.Hk,
       textSize: 20
     })]
   }) : (0, r.jsxs)(y.A, {
-    className: C.Qs,
+    className: S.Qs,
     noPadding: true,
-    children: [!a && (0, r.jsx)(b.A, {
+    children: [!a && (0, r.jsx)(v.A, {
       variant: "text-lg/medium",
-      className: C.ed,
-      children: T.intl.format(S.default["1jPMeG"], {
+      className: S.ed,
+      children: E.intl.format(O.default["1jPMeG"], {
         learnMoreHook: (e, t) => (0, r.jsx)(u.DUT, {
-          onClick: H,
-          className: C.C2,
-          children: (0, r.jsx)(b.A, {
+          onClick: U,
+          className: S.C2,
+          children: (0, r.jsx)(v.A, {
             variant: "text-lg/medium",
-            className: C.nf,
+            className: S.nf,
             children: e
           })
         }, t)
       })
-    }), !a && (0, r.jsx)(b.A, {
+    }), !a && (0, r.jsx)(v.A, {
       variant: "text-md/medium",
-      className: C.al,
-      children: T.intl.format(S.default.g476ZL, {
+      className: S.al,
+      children: E.intl.format(O.default.g476ZL, {
         name: "Exyl"
       })
-    }), a ? null : (0, r.jsx)(o.animated.div, {
-      style: B,
-      children: (0, r.jsx)(l.A, {
-        autoPlay: !G,
+    }), a ? null : (0, r.jsx)(s.animated.div, {
+      style: H,
+      children: (0, r.jsx)(o.A, {
+        autoPlay: !D,
         muted: true,
         playsInline: true,
         loop: true,
-        className: C.RS,
+        className: S.RS,
         children: (0, r.jsx)("source", {
-          src: w.A,
+          src: I.A,
           type: "video/webm"
         })
       })
-    }), (0, r.jsx)(l.A, {
-      ref: M,
-      autoPlay: !G,
+    }), (0, r.jsx)(o.A, {
+      ref: T,
+      autoPlay: !D,
       muted: true,
       playsInline: true,
-      className: s()(C.GW, {
-        [C.e8]: !a
+      className: i()(S.GW, {
+        [S.e8]: !a
       }),
-      onTimeUpdate: a ? V : true,
+      onTimeUpdate: a ? k : true,
       children: (0, r.jsx)("source", {
         src: N.A,
         type: "video/webm"
       })
     }), a ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(v.A, {
+      children: [(0, r.jsx)(C.A, {
         variant: "display-lg",
-        className: C.DD,
-        textClassName: C.Qq,
-        text: T.intl.string(S.default["CdU/PF"]),
-        delay: x
-      }), (0, r.jsx)(v.A, {
+        className: S.DD,
+        textClassName: S.Qq,
+        text: E.intl.string(O.default["CdU/PF"]),
+        delay: 500
+      }), (0, r.jsx)(C.A, {
         variant: "text-lg/medium",
-        className: C.cz,
-        textClassName: C.Qq,
-        text: T.intl.string(S.default["M/LvW0"]),
-        delay: x + v.f
+        className: S.cz,
+        textClassName: S.Qq,
+        text: E.intl.string(O.default["M/LvW0"]),
+        delay: 500 + C.f
       })]
     }), a ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(o.animated.div, {
-        style: F,
-        children: [(0, r.jsx)(E.A, {
-          className: C.CB,
-          slide: A.P7.WELCOME
-        }), (0, r.jsxs)(m.A, {
-          contentClassName: C.a0,
+      children: [(0, r.jsxs)(s.animated.div, {
+        style: M,
+        children: [(0, r.jsx)(x.A, {
+          className: S.CB,
+          slide: _.P7.WELCOME
+        }), (0, r.jsxs)(b.A, {
+          contentClassName: S.a0,
           onClick: t,
-          "aria-label": T.intl.string(T.t.I0v0Qv),
+          "aria-label": E.intl.string(E.t.I0v0Qv),
           muteSound: true,
           children: [(0, r.jsx)(u.udU, {
-            colorClass: C.d7,
-            color: U,
+            colorClass: S.d7,
+            color: L,
             size: "md"
-          }), T.intl.string(T.t.I0v0Qv)]
+          }), E.intl.string(E.t.I0v0Qv)]
         })]
-      }), (0, r.jsx)(o.animated.div, {
-        style: B,
-        children: (0, r.jsx)(O.A, {
-          className: C.Lv,
+      }), (0, r.jsx)(s.animated.div, {
+        style: H,
+        children: (0, r.jsx)(j.A, {
+          className: S.Lv,
           style: {
-            color: U
+            color: L
           }
         })
       })]

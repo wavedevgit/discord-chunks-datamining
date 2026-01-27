@@ -23,14 +23,14 @@ function l(e, t, n) {
 }
 class c {
   subscribe(e, t) {
-    o._.subscribe(e, t), this.emitter.on(e, t)
+    s._.subscribe(e, t), this.emitter.on(e, t)
   }
   unsubscribe(e, t) {
-    o._.unsubscribe(e, t), this.emitter.off(e, t)
+    s._.unsubscribe(e, t), this.emitter.off(e, t)
   }
   bumpDispatchPriority() {
     for (let e of this.emitter.eventNames())
-      for (let t of this.emitter.listeners(e)) o._.resubscribe(e, t)
+      for (let t of this.emitter.listeners(e)) s._.resubscribe(e, t)
   }
   constructor() {
     l(this, "emitter", new a.EventEmitter)
@@ -38,10 +38,10 @@ class c {
 }
 class u {
   subscribe(e, t) {
-    o._.subscribe(e, t)
+    s._.subscribe(e, t)
   }
   unsubscribe(e, t) {
-    o._.unsubscribe(e, t)
+    s._.unsubscribe(e, t)
   }
   bumpDispatchPriority() {}
 }
@@ -49,7 +49,7 @@ let d = Chunk64700.createContext(new u),
   f = Chunk64700.forwardRef(function(e, t) {
     let {
       children: n
-    } = e, a = (0, s.A)(() => new c);
+    } = e, a = (0, o.A)(() => new c);
     return i.useImperativeHandle(t, () => a, [a]), (0, r.jsx)(d.Provider, {
       value: a,
       children: n
@@ -64,9 +64,9 @@ function p(e) {
   i.useEffect(() => {
     a.current = n
   }, [n]);
-  let s = null == n;
+  let o = null == n;
   return i.useEffect(() => {
-    if (s) return;
+    if (o) return;
     let e = function() {
       for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
       null == (e = a.current) || e.call(a, ...n)
@@ -74,7 +74,7 @@ function p(e) {
     return r.subscribe(t, e), () => {
       r.unsubscribe(t, e)
     }
-  }, [r, t, s]), null
+  }, [r, t, o]), null
 }
 
 function _(e) {

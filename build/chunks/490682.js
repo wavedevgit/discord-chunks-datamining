@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -28,13 +28,13 @@ function s(e) {
   }
   return e
 }
-let o = new Set(["line", "blockQuote"]),
+let s = new Set(["line", "blockQuote"]),
   l = [];
 
 function c(e, t, n) {
   if (i.VW.areStylesDisabled(e)) return [];
   let [a, c] = t;
-  if (1 !== c.length || !i.AS.isInTypes(a, o)) return l;
+  if (1 !== c.length || !i.AS.isInTypes(a, s)) return l;
   let {
     entries: u,
     serializedChildren: d
@@ -43,7 +43,7 @@ function c(e, t, n) {
     let n = u[t];
     if (n.attributes.length > 0 && n.text.length > 0) {
       let a = u[t - 1],
-        o = u[t + 1],
+        s = u[t + 1],
         l = {
           anchor: (0, r.Q)(e, c, d, n.start),
           focus: (0, r.Q)(e, c, d, n.start + n.text.length)
@@ -55,8 +55,8 @@ function c(e, t, n) {
         }),
         _ = {};
       for (let e of n.attributes)
-        if (_[e] = true, "syntaxBefore" === e && null != o)
-          for (let e of o.attributes) _["before_".concat(e)] = true;
+        if (_[e] = true, "syntaxBefore" === e && null != s)
+          for (let e of s.attributes) _["before_".concat(e)] = true;
         else if ("syntaxAfter" === e && null != a)
         for (let e of a.attributes) _["after_".concat(e)] = true;
       for (let [t, n] of p) {
@@ -64,7 +64,7 @@ function c(e, t, n) {
           anchor: i.VW.start(e, n),
           focus: i.VW.end(e, n)
         };
-        i.Kh.isBefore(t.anchor, l.anchor) && (t.anchor = l.anchor), i.Kh.isAfter(t.focus, l.focus) && (t.focus = l.focus), f.push(s({}, _, t))
+        i.Kh.isBefore(t.anchor, l.anchor) && (t.anchor = l.anchor), i.Kh.isAfter(t.focus, l.focus) && (t.focus = l.focus), f.push(o({}, _, t))
       }
     }
   }

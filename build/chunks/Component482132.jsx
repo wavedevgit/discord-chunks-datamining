@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   l = require.n(Chunk284009),
   Chunk340287 = require("./340287.js"),
@@ -52,7 +52,7 @@ function g(e) {
 }
 
 function E(e) {
-  var t, n, a, o, c, h;
+  var t, n, a, s, c, h;
   let m, {
       header: E,
       isLargeModal: y,
@@ -75,10 +75,10 @@ function E(e) {
   i.useEffect(() => {
     S(null)
   }, [O, S]), l()(null != D, "Unknown step for current payment flow.");
-  let x = null != (t = null == D || null == (a = D.options) ? true : a.hideSlider) && t,
-    L = null == D || null == (o = D.options) ? true : o.bodyClassName,
-    j = null == D || null == (c = D.options) ? true : c.sliderBodyClassName;
-  switch (true !== y && y && (j = _.nS), O) {
+  let L = null != (t = null == D || null == (a = D.options) ? true : a.hideSlider) && t,
+    x = null == D || null == (s = D.options) ? true : s.bodyClassName,
+    M = null == D || null == (c = D.options) ? true : c.sliderBodyClassName;
+  switch (true !== y && y && (M = _.nS), O) {
     case f.pn.ADD_PAYMENT_STEPS:
       m = 408;
       break;
@@ -89,10 +89,10 @@ function E(e) {
       P && !R && (m = "100%")
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [null == (n = null == D || null == (h = D.options) ? true : h.renderHeader) || n ? E : null, D.renderStep(b), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
+    children: [null == (n = null == D || null == (h = D.options) ? true : h.renderHeader) || n ? E : null, D.renderStep(b), null == O || L ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.$mQ, {
         "data-migration-pending": true,
-        className: s()(L, _.rf, C, {
+        className: o()(x, _.rf, C, {
           [_.VR]: O === f.pn.REVIEW,
           [_.qO]: O === f.pn.ADD_PAYMENT_STEPS && P
         }),
@@ -106,7 +106,7 @@ function E(e) {
           children: v.filter(e => null != e.key).map(e => (0, r.jsx)(u.q7S, {
             id: e.key,
             children: (0, r.jsx)("form", {
-              className: s()(_.OO, j),
+              className: o()(_.OO, M),
               ref: e => {
                 A(e)
               },

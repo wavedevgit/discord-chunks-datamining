@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 770101, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 34749 **/
+/** chunk id: 770101, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => y
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,105 +20,105 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk197161 = require("./197161.js");
 
-function y(e) {
+function f(e) {
   let {
     setQuery: t,
-    query: n
+    query: l
   } = e;
-  return (0, r.jsx)(c.IWV, {
-    placeholder: g.intl.string(g.t.vf3ZTa),
-    "aria-label": g.intl.string(g.t.vf3ZTa),
-    query: n,
+  return (0, n.jsx)(u.IWV, {
+    placeholder: p.intl.string(p.t.vf3ZTa),
+    "aria-label": p.intl.string(p.t.vf3ZTa),
+    query: l,
     onChange: t,
     onClear: () => t("")
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     isTransfer: t = false,
-    selectedSlotGuilds: n,
-    onClose: i,
-    onSelectGuild: a,
-    query: o
-  } = e, y = (0, l.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), b = (0, l.yK)([p.A], () => y.reduce((e, t) => {
-    let r = p.A.getGuild(t);
-    return null == r || null != n && n.some(e => e.id === t) || (o.length <= 0 || s()(o.toLowerCase(), null == r ? true : r.name.toLowerCase())) && e.push(r), e
+    selectedSlotGuilds: l,
+    onClose: r,
+    onSelectGuild: i,
+    query: a
+  } = e, f = (0, o.bG)([g.Ay], () => g.Ay.getFlattenedGuildIds()), v = (0, o.yK)([x.A], () => f.reduce((e, t) => {
+    let n = x.A.getGuild(t);
+    return null == n || null != l && l.some(e => e.id === t) || (a.length <= 0 || s()(a.toLowerCase(), null == n ? true : n.name.toLowerCase())) && e.push(n), e
   }, []));
 
-  function O() {
-    i(), (0, u.jH)(), (0, f.pX)(m.BVt.GUILD_DISCOVERY)
+  function y() {
+    r(), (0, c.jH)(), (0, m.pX)(j.BVt.GUILD_DISCOVERY)
   }
-  return (0, r.jsxs)(r.Fragment, {
-    children: [0 === b.length && (0, r.jsx)("div", {
-      className: E.Kl,
-      children: (0, r.jsx)(c.Text, {
+  return (0, n.jsxs)(n.Fragment, {
+    children: [0 === v.length && (0, n.jsx)("div", {
+      className: C.Kl,
+      children: (0, n.jsx)(u.Text, {
         variant: "text-md/normal",
-        children: 0 === y.length ? g.intl.format(g.t["E3tB6+"], {
-          publicGuildDirectoryHook: (e, t) => (0, r.jsx)(c.DUT, {
-            onClick: O,
+        children: 0 === f.length ? p.intl.format(p.t["E3tB6+"], {
+          publicGuildDirectoryHook: (e, t) => (0, n.jsx)(u.DUT, {
+            onClick: y,
             tag: "a",
             children: e
           }, t)
-        }) : g.intl.string(g.t.w3GLl9)
+        }) : p.intl.string(p.t.w3GLl9)
       })
-    }), b.map(e => (0, r.jsxs)(c.DUT, {
-      className: E.Ss,
+    }), v.map(e => (0, n.jsxs)(u.DUT, {
+      className: C.Ss,
       onClick: () => {
-        a(e)
+        i(e)
       },
-      children: [(0, r.jsx)(d.A, {
-        className: E.Bq,
+      children: [(0, n.jsx)(d.A, {
+        className: C.Bq,
         guild: e,
         size: d.A.Sizes.SMALL
-      }), (0, r.jsxs)("div", {
-        className: E.Vi,
-        children: [(0, r.jsx)(c.Text, {
-          className: E.tD,
+      }), (0, n.jsxs)("div", {
+        className: C.Vi,
+        children: [(0, n.jsx)(u.Text, {
+          className: C.tD,
           variant: "text-md/normal",
           children: e.name
-        }), (0, r.jsx)(c.Text, {
-          className: E.w2,
+        }), (0, n.jsx)(u.Text, {
+          className: C.w2,
           color: "text-muted",
           variant: "text-xs/normal",
           children: (0, h.gb)(e.premiumTier)
         })]
-      }), (0, r.jsx)(c.Text, {
-        className: E.qW,
+      }), (0, n.jsx)(u.Text, {
+        className: C.qW,
         color: "always-white",
         variant: "text-sm/medium",
-        children: t ? g.intl.string(g.t.dUgaF8) : g.intl.string(g.t.Uj0md3)
+        children: t ? p.intl.string(p.t.dUgaF8) : p.intl.string(p.t.Uj0md3)
       })]
     }, e.id))]
   })
 }
 
-function O(e) {
+function y(e) {
   let {
     onClose: t,
-    onSelectGuild: n,
-    transitionState: a,
+    onSelectGuild: l,
+    transitionState: i,
     isTransfer: s = false,
-    selectedSlotGuilds: l
-  } = e, [c, u] = i.useState(""), d = async () => {
+    selectedSlotGuilds: o
+  } = e, [u, c] = r.useState(""), d = async () => {
     await t()
-  }, f = s ? g.intl.string(g.t.IB13DV) : g.intl.string(g.t.cQYceV);
-  return (0, r.jsx)(o.Modal, {
-    transitionState: a,
+  }, m = s ? p.intl.string(p.t.IB13DV) : p.intl.string(p.t.cQYceV);
+  return (0, n.jsx)(a.Modal, {
+    transitionState: i,
     onClose: d,
     size: "md",
-    title: f,
-    input: (0, r.jsx)(y, {
-      query: c,
-      setQuery: u
+    title: m,
+    input: (0, n.jsx)(f, {
+      query: u,
+      setQuery: c
     }),
     actions: [],
-    children: (0, r.jsx)(b, {
+    children: (0, n.jsx)(v, {
       onClose: t,
-      onSelectGuild: n,
-      query: c,
+      onSelectGuild: l,
+      query: u,
       isTransfer: s,
-      selectedSlotGuilds: l
+      selectedSlotGuilds: o
     })
   })
 }

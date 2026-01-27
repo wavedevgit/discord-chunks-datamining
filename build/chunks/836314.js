@@ -1,5 +1,5 @@
-/** Chunk was on 15050 **/
-/** chunk id: 836314, original params: e,a,_ (module,exports,require) **/
+/** Chunk was on 96126 **/
+/** chunk id: 836314, original params: e,r,a (module,exports,require) **/
 module.exports = {
   _x: "shopCard_bab2bc",
   mr: "highlighted_bab2bc",
@@ -9,8 +9,6 @@ module.exports = {
   Sf: "claimed_bab2bc",
   j0: "claimedIcon_bab2bc",
   VH: "preview_bab2bc",
-  S1: "previewTrick_bab2bc",
-  LX: "previewTreat_bab2bc",
   tZ: "productName_bab2bc",
   _Q: "avatarPreview_bab2bc",
   M4: "nameplatePreview_bab2bc"

@@ -24,7 +24,7 @@ let f = (0, Chunk397927.FT9)(Chunk397927._3J.SIZE_120),
         location: "UserProfileModalActionCreators"
       });
     if (n || t) try {
-      await (0, s.A)(e)
+      await (0, o.A)(e)
     } catch (t) {
       p.log("Failed to fetch content inventory outbox for ".concat(e, ":"), t)
     }
@@ -34,8 +34,8 @@ async function h(e) {
     userId: t,
     guildId: n,
     channelId: r,
-    messageId: s,
-    roleId: o,
+    messageId: o,
+    roleId: s,
     sessionId: l,
     joinRequestId: u,
     tabSection: p,
@@ -66,8 +66,8 @@ async function h(e) {
     userId: t,
     guildId: null != n ? n : true,
     channelId: null != r ? r : true,
-    messageId: null != s ? s : true,
-    roleId: null != o ? o : true,
+    messageId: null != o ? o : true,
+    roleId: null != s ? s : true,
     sessionId: null != l ? l : true,
     openedAt: Date.now(),
     customStatusPrompt: b,

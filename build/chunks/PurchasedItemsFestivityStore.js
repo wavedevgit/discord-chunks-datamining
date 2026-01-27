@@ -1,7 +1,7 @@
 /** Chunk was on 99063 **/
 /** chunk id: 639735, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  A: () => M
+  A: () => _
 });
 var n, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
@@ -29,7 +29,7 @@ class d extends(i = Chunk311907.Ay.Store) {
   configurable: true,
   writable: true
 }) : d[n] = "PurchasedItemsFestivityStore";
-let M = new d(Chunk73153.h, {
+let _ = new d(Chunk73153.h, {
   LOGOUT: function() {
     s = {
       canPlayWowMoment: false,

@@ -16,7 +16,7 @@ var Chunk227309 = require("./227309.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,7 +32,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -85,9 +85,9 @@ function h(e) {
   if (!_(e)) return e;
   let t = r.a.getConfig({
     location: "transformRobloxSubgameNames"
-  }).alternativeTitle ? s.t.HjVwG3 : s.t.G6BGdx;
+  }).alternativeTitle ? o.t.HjVwG3 : o.t.G6BGdx;
   return u(l({}, e), {
-    name: s.intl.formatToPlainString(t, {
+    name: o.intl.formatToPlainString(t, {
       subgameName: e.name
     })
   })

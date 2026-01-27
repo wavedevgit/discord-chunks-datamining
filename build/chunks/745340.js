@@ -15,20 +15,20 @@ var r = function(e) {
     i(n.match(e.reg), a, e.names, e.name), e.push && t[e.push].push(a)
   },
   Chunk150594 = require("./150594.js"),
-  o = RegExp.prototype.test.bind(/^([a-z])=(.*)/);
+  s = RegExp.prototype.test.bind(/^([a-z])=(.*)/);
 exports.parse = function(e) {
   var t = {},
     n = [],
     r = t;
-  return e.split(/(\r\n|\r|\n)/).filter(o).forEach(function(e) {
+  return e.split(/(\r\n|\r|\n)/).filter(s).forEach(function(e) {
     var t = e[0],
       i = e.slice(2);
     "m" === t && (n.push({
       rtp: [],
       fmtp: []
     }), r = n[n.length - 1]);
-    for (var o = 0; o < (s[t] || []).length; o += 1) {
-      var l = s[t][o];
+    for (var s = 0; s < (o[t] || []).length; s += 1) {
+      var l = o[t][s];
       if (l.reg.test(i)) return a(l, r, i)
     }
   }), t.media = n, t

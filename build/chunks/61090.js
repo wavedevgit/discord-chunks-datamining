@@ -15,10 +15,10 @@ require.d(exports, {
   A: () => l
 }), require("./734808.js"), require("./667532.js"), require("./321073.js");
 let a = null != (r = globalThis.__getTotalRequireTime) ? r : () => 0,
-  s = "u" > typeof performance;
-class o {
+  o = "u" > typeof performance;
+class s {
   get isTracing() {
-    return !!s && !!this.isTracing_ && (!(Date.now() > this.endTime_) || (this.isTracing_ = false, false))
+    return !!o && !!this.isTracing_ && (!(Date.now() > this.endTime_) || (this.isTracing_ = false, false))
   }
   get endTime() {
     return this.endTime_
@@ -90,8 +90,8 @@ class o {
     this.mark(e, "Start ".concat(t)), this.prefix += "| ";
     let i = Date.now(),
       a = n(),
-      s = Date.now() - i;
-    return this.prefix = r, this.mark(e, "Finish ".concat(t), s), a
+      o = Date.now() - i;
+    return this.prefix = r, this.mark(e, "Finish ".concat(t), o), a
   }
   async timeAsync(e, t, n) {
     if (!this.isTracing) return n();
@@ -113,4 +113,4 @@ class o {
     }]), i(this, "logs", this.logGroups[0].logs), i(this, "prefix", "")
   }
 }
-let l = new o
+let l = new s

@@ -2,9 +2,9 @@
 /** chunk id: 934337, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Bw: () => o,
+  Bw: () => s,
   mZ: () => l,
-  tq: () => s
+  tq: () => o
 });
 var Chunk353640 = require("./353640.js"),
   Chunk121894 = require("./121894.js");
@@ -13,10 +13,10 @@ let a = (0, Chunk353640.v)(() => ({
     checked: false,
     preChecked: false
   })),
-  s = e => {
+  o = e => {
     (0, i.r)(() => a.setState(e))
   },
-  o = e => {
+  s = e => {
     (0, i.r)(() => a.setState({
       checked: e
     }))

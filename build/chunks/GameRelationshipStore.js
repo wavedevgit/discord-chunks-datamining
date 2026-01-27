@@ -54,7 +54,7 @@ function b() {
     if (i === l.eA$.FRIEND) n += 1;
     else if (i === l.eA$.PENDING_OUTGOING) t += 1;
     else if (i === l.eA$.PENDING_INCOMING) {
-      if (o.A.isSpam(a) || o.A.isIgnored(a)) return;
+      if (s.A.isSpam(a) || s.A.isIgnored(a)) return;
       e += 1
     }
   }), g = e, E = t, y = n
@@ -94,7 +94,7 @@ function T(e) {
 }
 class C extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A)
+    this.waitFor(s.A)
   }
   getPendingIncomingCount() {
     return g

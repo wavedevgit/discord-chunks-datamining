@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk198982 = require("./198982.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function p(e) {
   let {
     message: t
   } = e;
-  l = new s.Ey(t)
+  l = new o.Ey(t)
 }
 
 function _(e) {
   let {
     message: t
   } = e;
-  l = new s.Ey(t)
+  l = new o.Ey(t)
 }
 
 function h() {
@@ -76,7 +76,7 @@ class b extends(r = Chunk311907.Ay.Store) {
     return e === u ? c : null
   }
 }
-o(b, "displayName", "PremiumPaymentModalStore");
+s(b, "displayName", "PremiumPaymentModalStore");
 let O = new b(Chunk73153.h, {
   PREMIUM_PAYMENT_SUBSCRIBE_FAIL: d,
   PREMIUM_PAYMENT_UPDATE_FAIL: d,

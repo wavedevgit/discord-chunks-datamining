@@ -11,7 +11,7 @@ var Chunk789459 = require("./789459.js"),
   Chunk954571 = require("./954571.js");
 class l extends Chunk789459.A {
   initialize(e) {
-    this.waitFor(s.default), this.loadStoredState(e, (0, a.DI)())
+    this.waitFor(o.default), this.loadStoredState(e, (0, a.DI)())
   }
   constructor() {
     super(i.h, {
@@ -30,7 +30,7 @@ class l extends Chunk789459.A {
       LOGOUT: e => this.handleLogout(e.isSwitchingAccount)
     }, i.A.Early), this.track = function() {
       for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-      return o.default.track(...t)
+      return s.default.track(...t)
     }, this.surface = "discord_app"
   }
 }

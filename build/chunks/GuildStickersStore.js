@@ -77,29 +77,29 @@ function _(e, t) {
       tags: r
     } = t,
     a = {
-      type: o.cG.STICKER_NAME,
+      type: s.cG.STICKER_NAME,
       value: t.name.trim().toLocaleLowerCase()
     };
   if (n.push(a), null != r) {
     let t = {
-      type: o.cG.TAG,
+      type: s.cG.TAG,
       value: r.trim().toLocaleLowerCase()
     };
     n.push(t);
-    let a = s.A.getGuild(e);
+    let a = o.A.getGuild(e);
     if (null != a) {
       let e = a.name.trim().toLocaleLowerCase();
       null != e && "" !== e && n.push({
-        type: o.cG.GUILD_NAME,
+        type: s.cG.GUILD_NAME,
         value: e
       })
     }
     let l = i.Ay.getByName(r);
     null != l && (n.push({
-      type: o.cG.CORRELATED_EMOJI,
+      type: s.cG.CORRELATED_EMOJI,
       value: l.surrogates
     }), l.forEachDiversity(e => n.push({
-      type: o.cG.CORRELATED_EMOJI,
+      type: s.cG.CORRELATED_EMOJI,
       value: e.surrogates
     })))
   }

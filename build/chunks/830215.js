@@ -107,8 +107,8 @@ let P = {
       password: n,
       undelete: r,
       source: a,
-      giftCodeSKUId: s,
-      invite: o,
+      giftCodeSKUId: o,
+      invite: s,
       isMultiAccount: u
     } = e;
     return l.h.dispatch({
@@ -121,14 +121,14 @@ let P = {
         password: n,
         undelete: r,
         login_source: a,
-        gift_code_sku_id: s
+        gift_code_sku_id: o
       },
       retries: 2,
       oldFormErrors: true,
       trackedActionData: {
         event: i.NetworkActionNames.USER_LOGIN,
         properties: {
-          invite_code: null == o ? true : o.code,
+          invite_code: null == s ? true : s.code,
           is_multi_account: u
         }
       }
@@ -146,8 +146,8 @@ let P = {
           webauthn: r,
           ticket: i,
           token: a,
-          backup: s,
-          user_id: o,
+          backup: o,
+          user_id: s,
           required_actions: c,
           totp: d,
           login_instance_id: f
@@ -155,7 +155,7 @@ let P = {
       } = e;
       l.h.dispatch({
         type: "LOGIN_ATTEMPTED",
-        user_id: o,
+        user_id: s,
         required_actions: c
       }), t ? l.h.dispatch({
         type: "LOGIN_MFA_STEP",
@@ -163,7 +163,7 @@ let P = {
         sms: n,
         webauthn: r,
         totp: d,
-        backup: s,
+        backup: o,
         loginInstanceId: f
       }) : u ? this.switchAccountToken(a) : l.h.dispatch({
         type: "LOGIN_SUCCESS",
@@ -171,25 +171,25 @@ let P = {
       })
     }, e => {
       var r, i, a;
-      let s = new c.Wl(e);
+      let o = new c.Wl(e);
       if (null != e.body && (null == (r = e.body) ? true : r.suspended_user_token) != null) throw l.h.dispatch({
         type: "LOGIN_SUSPENDED_USER",
         suspendedUserToken: null == (a = e.body) ? true : a.suspended_user_token
-      }), s;
-      let o = null == (i = e.body) ? true : i.code;
-      throw o === y.t02.ACCOUNT_SCHEDULED_FOR_DELETION && null != n && "" !== n ? l.h.dispatch({
+      }), o;
+      let s = null == (i = e.body) ? true : i.code;
+      throw s === y.t02.ACCOUNT_SCHEDULED_FOR_DELETION && null != n && "" !== n ? l.h.dispatch({
         type: "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION",
         credentials: {
           login: t,
           password: n
         }
-      }) : o === y.t02.ACCOUNT_DISABLED && null != n && "" !== n ? l.h.dispatch({
+      }) : s === y.t02.ACCOUNT_DISABLED && null != n && "" !== n ? l.h.dispatch({
         type: "LOGIN_ACCOUNT_DISABLED",
         credentials: {
           login: t,
           password: n
         }
-      }) : o === y.t02.PHONE_VERIFICATION_REQUIRED ? l.h.dispatch({
+      }) : s === y.t02.PHONE_VERIFICATION_REQUIRED ? l.h.dispatch({
         type: "LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED",
         credentials: {
           login: t,
@@ -197,8 +197,8 @@ let P = {
         }
       }) : l.h.dispatch({
         type: "LOGIN_FAILURE",
-        error: s
-      }), s
+        error: o
+      }), o
     })
   },
   loginMFAv2(e) {
@@ -207,12 +207,12 @@ let P = {
       ticket: n,
       source: r,
       giftCodeSKUId: a,
-      isMultiAccount: s,
-      mfaType: o,
+      isMultiAccount: o,
+      mfaType: s,
       loginInstanceId: c
     } = e;
     return g.A.post({
-      url: y.Rsh.LOGIN_MFA(o),
+      url: y.Rsh.LOGIN_MFA(s),
       body: {
         code: t,
         ticket: n,
@@ -227,7 +227,7 @@ let P = {
       },
       rejectWithError: false
     }).then(e => {
-      s ? this.switchAccountToken(e.body.token) : l.h.dispatch({
+      o ? this.switchAccountToken(e.body.token) : l.h.dispatch({
         type: "LOGIN_SUCCESS",
         token: e.body.token
       })
@@ -375,9 +375,9 @@ let P = {
       url: y.Rsh.LOGOUT,
       body: {
         provider: (0, b.oH)(),
-        token: o.w.get(y.Xlh),
+        token: s.w.get(y.Xlh),
         voip_provider: b.vz,
-        voip_token: o.w.get(y.Ahp)
+        voip_token: s.w.get(y.Ahp)
       },
       oldFormErrors: true,
       trackedActionData: {
@@ -414,7 +414,7 @@ let P = {
   },
   verifySSOToken(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : y.BVt.DEFAULT_LOGGED_OUT;
-    return s.Bo.get({
+    return o.Bo.get({
       url: y.Rsh.ME,
       oldFormErrors: true,
       rejectWithError: true
@@ -473,10 +473,10 @@ let P = {
         password: t,
         source: n
       },
-      a = o.w.get(y.Xlh),
-      s = (0, b.oH)();
-    null != s && null != a && (r.push_provider = s, r.push_token = a);
-    let u = o.w.get(y.Ahp);
+      a = s.w.get(y.Xlh),
+      o = (0, b.oH)();
+    null != o && null != a && (r.push_provider = o, r.push_token = a);
+    let u = s.w.get(y.Ahp);
     null != b.vz && null != u && (r.push_voip_provider = b.vz, r.push_voip_token = u);
     try {
       let {
@@ -485,8 +485,8 @@ let P = {
           sms: t,
           webauthn: n,
           ticket: a,
-          token: s,
-          backup: o,
+          token: o,
+          backup: s,
           totp: l
         }
       } = await g.A.post({
@@ -503,8 +503,8 @@ let P = {
         sms: t,
         webauthn: n,
         ticket: a,
-        token: s,
-        backup: o,
+        token: o,
+        backup: s,
         totp: l
       }
     } catch (t) {
@@ -521,8 +521,8 @@ let P = {
       code: n,
       ticket: r,
       password: a,
-      token: s,
-      source: o
+      token: o,
+      source: s
     } = e;
     return l.h.dispatch({
       type: "LOGIN_MFA"
@@ -532,8 +532,8 @@ let P = {
         code: n,
         ticket: r,
         password: a,
-        token: s,
-        source: o,
+        token: o,
+        source: s,
         method: t
       },
       oldFormErrors: true,
@@ -596,15 +596,15 @@ let P = {
       type: "SET_CONSENT_REQUIRED",
       consentRequired: true
     })
-  }, T), C = s.Bo.get({
+  }, T), C = o.Bo.get({
     url: y.Rsh.AUTH_LOCATION_METADATA,
     retries: 2,
     oldFormErrors: true,
     rejectWithError: true
   }).then(e => {
-    var t, n, i, a, s;
+    var t, n, i, a, o;
     if (clearTimeout(r), null == m.A.getAuthenticationConsentRequired()) {
-      let t = null == (a = null == e || null == (s = e.body) ? true : s.consent_required) || a;
+      let t = null == (a = null == e || null == (o = e.body) ? true : o.consent_required) || a;
       l.h.dispatch({
         type: "SET_CONSENT_REQUIRED",
         consentRequired: t

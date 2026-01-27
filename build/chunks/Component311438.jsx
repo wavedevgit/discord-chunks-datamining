@@ -38,7 +38,7 @@ function _(e) {
 }
 
 function h(e) {
-  return (0, r.jsx)(s.aFV, _({
+  return (0, r.jsx)(o.aFV, _({
     size: "md",
     title: f.intl.string(f.t.NYklhr),
     subtitle: f.intl.string(f.t.EJ26Oh),
@@ -63,9 +63,9 @@ function m() {
     t = i.useRef(null);
 
   function n() {
-    null !== t.current && ((0, o.OoC)(t.current), t.current = null)
+    null !== t.current && ((0, s.OoC)(t.current), t.current = null)
   }
-  return i.useEffect(() => (e ? t.current = (0, o.qfG)(e => (0, r.jsx)(h, _({}, e))) : n(), () => {
+  return i.useEffect(() => (e ? t.current = (0, s.qfG)(e => (0, r.jsx)(h, _({}, e))) : n(), () => {
     n()
   }), [e]), null
 }

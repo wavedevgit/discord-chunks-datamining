@@ -6,13 +6,13 @@ module.exports = function(e) {
     r = t + "(\\." + t + ")?(" + n + ")?",
     i = "\\w+",
     a = "\\b(" + (t + "#" + i + "(\\." + i + ")?#(" + n) + ")?|" + r + ")",
-    s = "[A-Za-z](_?[A-Za-z0-9.])*",
-    o = "[]\\{\\}%#'\"",
+    o = "[A-Za-z](_?[A-Za-z0-9.])*",
+    s = "[]\\{\\}%#'\"",
     l = e.COMMENT("--", "$"),
     c = {
       begin: "\\s+:\\s+",
       end: "\\s*(:=|;|\\)|=>|$)",
-      illegal: o,
+      illegal: s,
       contains: [{
         beginKeywords: "loop for declare others",
         endsParent: true
@@ -21,7 +21,7 @@ module.exports = function(e) {
         beginKeywords: "not null constant access function procedure in out aliased exception"
       }, {
         className: "type",
-        begin: s,
+        begin: o,
         endsParent: true,
         relevance: 0
       }]
@@ -50,7 +50,7 @@ module.exports = function(e) {
       relevance: 0
     }, {
       className: "symbol",
-      begin: "'" + s
+      begin: "'" + o
     }, {
       className: "title",
       begin: "(\\bwith\\s+)?(\\bprivate\\s+)?\\bpackage\\s+(\\bbody\\s+)?",
@@ -58,7 +58,7 @@ module.exports = function(e) {
       keywords: "package body",
       excludeBegin: true,
       excludeEnd: true,
-      illegal: o
+      illegal: s
     }, {
       begin: "(\\b(with|overriding)\\s+)?\\b(function|procedure)\\s+",
       end: "(\\bis|\\bwith|\\brenames|\\)\\s*;)",
@@ -70,7 +70,7 @@ module.exports = function(e) {
         end: "(\\(|\\s+|$)",
         excludeBegin: true,
         excludeEnd: true,
-        illegal: o
+        illegal: s
       }, c, {
         className: "type",
         begin: "\\breturn\\s+",
@@ -79,7 +79,7 @@ module.exports = function(e) {
         excludeBegin: true,
         excludeEnd: true,
         endsParent: true,
-        illegal: o
+        illegal: s
       }]
     }, {
       className: "type",
@@ -87,7 +87,7 @@ module.exports = function(e) {
       end: "\\s+",
       keywords: "type",
       excludeBegin: true,
-      illegal: o
+      illegal: s
     }, c]
   }
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk862482 = require("./862482.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk62539 = require("./62539.js"),
@@ -19,12 +19,12 @@ function f(e) {
     page: t,
     totalPageCount: n,
     disabled: a,
-    onPageChange: o
+    onPageChange: s
   } = e, [c, u] = i.useState(false), [f, p] = i.useState(null), _ = null != f && f >= 1 && f <= n, h = e => {
     let t = parseInt(e);
     "" === e || isNaN(t) ? p(null) : p(t)
   }, m = e => {
-    "Enter" === e.key && null != f && _ && (o(f), u(false), p(null))
+    "Enter" === e.key && null != f && _ && (s(f), u(false), p(null))
   };
   return a ? (0, r.jsx)(l.Heading, {
     className: d.rQ,
@@ -47,7 +47,7 @@ function f(e) {
   }) : (0, r.jsx)(l.DUT, {
     onClick: () => u(true),
     children: (0, r.jsx)(l.Heading, {
-      className: s()(d.hJ, d.rQ),
+      className: o()(d.hJ, d.rQ),
       "aria-hidden": true,
       variant: "heading-sm/semibold",
       children: "…"
@@ -78,11 +78,11 @@ function p(e) {
       disabled: n,
       navigateToPage: i
     } = e;
-    return (0, r.jsxs)(o.$n, {
+    return (0, r.jsxs)(s.$n, {
       className: d.Cp,
       innerClassName: d.MO,
-      look: o.$n.Looks.BLANK,
-      color: o.$n.Colors.TRANSPARENT,
+      look: s.$n.Looks.BLANK,
+      color: s.$n.Colors.TRANSPARENT,
       onClick: i,
       disabled: n,
       rel: "prev",
@@ -103,11 +103,11 @@ function p(e) {
       disabled: n,
       navigateToPage: i
     } = e;
-    return (0, r.jsxs)(o.$n, {
+    return (0, r.jsxs)(s.$n, {
       className: d.Cp,
       innerClassName: d.MO,
-      look: o.$n.Looks.BLANK,
-      color: o.$n.Colors.TRANSPARENT,
+      look: s.$n.Looks.BLANK,
+      color: s.$n.Colors.TRANSPARENT,
       onClick: i,
       disabled: n,
       rel: "next",
@@ -124,7 +124,7 @@ function p(e) {
 
   function v(e) {
     return (0, r.jsx)(l.DUT, {
-      className: s()(d.hJ, {
+      className: o()(d.hJ, {
         [d.Xs]: e.selected
       }),
       onClick: e.selected ? true : e.navigateToPage,
@@ -158,7 +158,7 @@ function p(e) {
       hasMultiplePages: n
     } = e;
     return n ? (0, r.jsx)("div", {
-      className: s()(d.Ug, m),
+      className: o()(d.Ug, m),
       children: (0, r.jsx)("nav", {
         className: d.DU,
         children: t.map(e => {

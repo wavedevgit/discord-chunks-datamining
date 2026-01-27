@@ -9,7 +9,7 @@ var Chunk247775 = require("./247775.js"),
   Chunk272355 = require("./272355.js"),
   Chunk723702 = require("./723702.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,8 +25,8 @@ class l extends Chunk272355.A {
     i.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen)
   }
   constructor(...e) {
-    super(...e), o(this, "handleConnectionOpen", e => {
-      ((0, s.isWindows)() || (0, s.isMac)()) && r.encryptAndStoreTokens()
+    super(...e), s(this, "handleConnectionOpen", e => {
+      ((0, o.isWindows)() || (0, o.isMac)()) && r.encryptAndStoreTokens()
     })
   }
 }

@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk143236 = require("./143236.js");
 let i = 160,
   a = 500;
-var s = function(e) {
+var o = function(e) {
   return e.VERTICAL = "vertical", e.HORIZONTAL = "horizontal", e
-}(s || {});
-let o = {
+}(o || {});
+let s = {
   open: false,
   orientation: null
 };
@@ -32,22 +32,22 @@ function c() {
 }
 class u extends Chunk143236.EventEmitter {
   get orientations() {
-    return Object.values(s)
+    return Object.values(o)
   }
   get state() {
-    return o
+    return s
   }
   check() {
     let e = l() > i,
       t = c() > i,
       n = e ? "vertical" : "horizontal";
     if (!(t && e) && (e || t)) {
-      let e = o.open;
-      o = {
+      let e = s.open;
+      s = {
         open: true,
         orientation: n
-      }, e && o.orientation === n || this.emit("changed", o)
-    } else o.open && (o.open = false, this.emit("changed", o))
+      }, e && s.orientation === n || this.emit("changed", s)
+    } else s.open && (s.open = false, this.emit("changed", s))
   }
   constructor() {
     super(), setInterval(() => this.check(), a)

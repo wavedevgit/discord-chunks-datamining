@@ -19,14 +19,14 @@ function u(e) {
 function d(e) {
   let t = {};
   for (let [n, r] of Object.entries(e)) t[n] = {
-    system: o.l5.LEGACY,
+    system: s.l5.LEGACY,
     kind: r.type === c.Vh.USER ? "user" : "guild",
     name: n,
     title: r.title,
     variants: r.buckets.map((e, t) => ({
       id: e.valueOf(),
-      label: "object" == typeof r.description ? r.description[t] : s.A.getExperimentBucketName(e),
-      shortLabel: s.A.getExperimentBucketName(e),
+      label: "object" == typeof r.description ? r.description[t] : o.A.getExperimentBucketName(e),
+      shortLabel: o.A.getExperimentBucketName(e),
       type: u(e)
     }))
   };

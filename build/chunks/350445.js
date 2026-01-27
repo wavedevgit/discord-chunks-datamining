@@ -11,14 +11,14 @@ var Chunk446474 = require("./446474.js"),
   c = Chunk380744("species"),
   u = RegExp.prototype;
 module.exports = function(e, t, n, d) {
-  var f = o(e),
-    p = !s(function() {
+  var f = s(e),
+    p = !o(function() {
       var t = {};
       return t[f] = function() {
         return 7
       }, 7 !== "" [e](t)
     }),
-    _ = p && !s(function() {
+    _ = p && !o(function() {
       var t = false,
         n = /a/;
       return "split" === e && ((n = {}).constructor = {}, n.constructor[c] = function() {
@@ -29,9 +29,9 @@ module.exports = function(e, t, n, d) {
     });
   if (!p || !_ || n) {
     var h = /./ [f],
-      m = t(f, "" [e], function(e, t, n, i, s) {
-        var o = t.exec;
-        return o === a || o === u.exec ? p && !s ? {
+      m = t(f, "" [e], function(e, t, n, i, o) {
+        var s = t.exec;
+        return s === a || s === u.exec ? p && !o ? {
           done: true,
           value: r(h, t, n, i)
         } : {

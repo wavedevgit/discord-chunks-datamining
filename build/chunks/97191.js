@@ -2,7 +2,7 @@
 /** chunk id: 97191, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  c: () => s
+  c: () => o
 }), require("./896048.js"), require("./638769.js"), require("./321073.js");
 var Chunk52724 = require("./52724.js");
 
@@ -34,7 +34,7 @@ function a(e) {
     y: n
   }
 }
-class s {
+class o {
   disconnect() {
     window.removeEventListener("keydown", this.handleDraggedElementKeyDown, {
       capture: true
@@ -77,8 +77,8 @@ class s {
       return this.manager.getMonitor().canDropOnTarget(n) && e.push(r), e
     }, [])
   }
-  constructor(e, t, n, a, s) {
-    i(this, "targetNodes", true), i(this, "manager", true), i(this, "previewer", true), i(this, "announcer", true), i(this, "currentHoveredNode", true), i(this, "focusManager", true), i(this, "actions", true), i(this, "monitor", true), i(this, "handleDraggedElementKeyDown", true), this.targetNodes = t, this.manager = n, this.previewer = a, this.announcer = s, this.handleDraggedElementKeyDown = async e => {
+  constructor(e, t, n, a, o) {
+    i(this, "targetNodes", true), i(this, "manager", true), i(this, "previewer", true), i(this, "announcer", true), i(this, "currentHoveredNode", true), i(this, "focusManager", true), i(this, "actions", true), i(this, "monitor", true), i(this, "handleDraggedElementKeyDown", true), this.targetNodes = t, this.manager = n, this.previewer = a, this.announcer = o, this.handleDraggedElementKeyDown = async e => {
       switch (e.key) {
         case "ArrowUp":
         case "ArrowLeft":

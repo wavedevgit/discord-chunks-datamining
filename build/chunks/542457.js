@@ -1,9 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 542457, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 542457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => r
+  m: () => i
 });
-var r = function(e) {
-  return e.VIEW_SETTINGS_PAGE = "view_settings_page", e.SELECT_GUILD = "select_guild", e.DIRECT_MESSAGES_TOGGLE = "direct_messages_toggle", e.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE = "restrict_guild_activity_status_toggle", e.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE = "restrict_guild_message_request_toggle", e.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE = "restrict_guild_activity_join_toggle", e
-}({})
+var r, i = ((r = {}).VIEW_SETTINGS_PAGE = "view_settings_page", r.SELECT_GUILD = "select_guild", r.DIRECT_MESSAGES_TOGGLE = "direct_messages_toggle", r.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE = "restrict_guild_activity_status_toggle", r.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE = "restrict_guild_message_request_toggle", r.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE = "restrict_guild_activity_join_toggle", r)

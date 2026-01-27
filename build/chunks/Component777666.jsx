@@ -93,7 +93,7 @@ function m(e) {
 let g = e => {
     let {
       count: t,
-      color: n = s.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
+      color: n = o.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
       disableColor: i = false,
       shape: l = _.ROUND,
       className: u,
@@ -101,7 +101,7 @@ let g = e => {
       renderBadgeCount: g = m
     } = e, E = f(e, ["count", "color", "disableColor", "shape", "className", "style", "renderBadgeCount"]);
     return (0, r.jsx)("div", d(c({
-      className: a()(u, o.Do, l),
+      className: a()(u, s.Do, l),
       style: c({
         backgroundColor: i ? true : n,
         width: h(t)
@@ -114,13 +114,13 @@ let g = e => {
     let {
       text: t,
       className: n,
-      color: i = s.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
+      color: i = o.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
       shape: l = _.ROUND,
       disableColor: u = false,
       style: p
     } = e, h = f(e, ["text", "className", "color", "shape", "disableColor", "style"]);
     return (0, r.jsx)("div", d(c({
-      className: a()(n, o.U1, l),
+      className: a()(n, s.U1, l),
       style: c({
         backgroundColor: u ? true : i
       }, p)
@@ -134,7 +134,7 @@ let g = e => {
       className: n
     } = e, i = f(e, ["text", "className"]);
     return (0, r.jsx)(E, c({
-      className: a()(o.BE, n),
+      className: a()(s.BE, n),
       text: t
     }, i))
   },
@@ -142,18 +142,18 @@ let g = e => {
     let {
       icon: t,
       className: n,
-      color: i = s.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
+      color: i = o.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
       shape: l = _.ROUND,
       disableColor: u = false,
       style: d
     } = e;
     return (0, r.jsx)("div", {
-      className: a()(n, o.u3, l),
+      className: a()(n, s.u3, l),
       style: c({
         backgroundColor: u ? true : i
       }, d),
       children: (0, r.jsx)(t, {
-        className: o.Kk,
+        className: s.Kk,
         color: "currentColor"
       })
     })
@@ -161,13 +161,13 @@ let g = e => {
   O = e => {
     let {
       className: t,
-      color: n = s.A.colors.INTERACTIVE_TEXT_ACTIVE.css,
+      color: n = o.A.colors.INTERACTIVE_TEXT_ACTIVE.css,
       shape: i = _.ROUND,
       disableColor: l = false,
       style: u
     } = e, d = f(e, ["className", "color", "shape", "disableColor", "style"]);
     return (0, r.jsx)("div", c({
-      className: a()(t, o.Ky, i),
+      className: a()(t, s.Ky, i),
       style: c({
         backgroundColor: l ? true : n
       }, u)

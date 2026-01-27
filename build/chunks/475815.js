@@ -6,8 +6,8 @@ require.d(exports, {
   _U: () => l,
   a3: () => u,
   qf: () => i,
-  sP: () => o,
-  tl: () => s
+  sP: () => s,
+  tl: () => o
 });
 var Chunk626584 = require("./626584.js");
 
@@ -20,11 +20,11 @@ function a(e) {
   return null != e.requestFullscreen || null != e.webkitRequestFullscreen || e.webkitSupportsFullscreen || null != e.mozRequestFullScreen || null != e.msRequestFullscreen
 }
 
-function s(e) {
+function o(e) {
   "function" == typeof e.requestFullscreen ? e.requestFullscreen() : "function" == typeof e.webkitRequestFullscreen ? e.webkitRequestFullscreen() : "function" == typeof e.webkitEnterFullscreen ? e.webkitEnterFullscreen() : "function" == typeof e.mozRequestFullScreen ? e.mozRequestFullScreen() : "function" == typeof e.msRequestFullscreen ? e.msRequestFullscreen() : new r.A("FullScreenUtils").warn("Fullscreen API is not supported.")
 }
 
-function o(e, t) {
+function s(e, t) {
   let n = null != t ? t : document;
   l(null, n) && ("function" == typeof n.exitFullscreen ? n.exitFullscreen() : "function" == typeof n.webkitExitFullscreen ? n.webkitExitFullscreen() : "function" == typeof e.webkitExitFullscreen ? e.webkitExitFullscreen() : "function" == typeof n.mozCancelFullScreen ? n.mozCancelFullScreen() : "function" == typeof n.msExitFullscreen ? n.msExitFullscreen() : new r.A("FullScreenUtils").warn("Fullscreen API is not supported."))
 }

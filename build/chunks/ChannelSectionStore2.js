@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => J,
-  JU: () => L,
+  JU: () => x,
   fe: () => S
 });
 var r, Chunk607399 = require("./607399.js"),
@@ -71,7 +71,7 @@ let S = "message_requests",
   P = false,
   D = null;
 
-function x(e) {
+function L(e) {
   if (null == e) return null;
   if ((0, y.jq)(e)) {
     let t = m.A.getGuildId();
@@ -80,27 +80,27 @@ function x(e) {
   return e
 }
 
-function L(e) {
+function x(e) {
   return [c.PE.VIEW_CHANNEL, c.PE.VIEW_THREAD, c.PE.VIEW_MESSAGE_REQUEST, c.PE.VIEW_MOD_REPORT].includes(e.type)
 }
 
-function j(e) {
+function M(e) {
   let t = false;
   P && (P = false, t = true);
-  let n = x(h.A.getChannelId());
+  let n = L(h.A.getChannelId());
   return null != n && n in w && (delete w[n], t = true), t && e ? e : !e
 }
 
-function M() {
-  P && u._.dispatch(E.jej.SEARCH_RESULTS_CLOSE), C && (C = j(C)), T = j(T)
+function j() {
+  P && u._.dispatch(E.jej.SEARCH_RESULTS_CLOSE), C && (C = M(C)), T = M(T)
 }
 
 function k() {
-  T && (T = j(T)), C = j(C)
+  T && (T = M(T)), C = M(C)
 }
 
 function U() {
-  N || u._.dispatch(E.jej.SEARCH_RESULTS_CLOSE), N = j(N)
+  N || u._.dispatch(E.jej.SEARCH_RESULTS_CLOSE), N = M(N)
 }
 
 function G(e) {
@@ -111,7 +111,7 @@ function G(e) {
     details: i
   } = e;
   P = false;
-  let a = x(r);
+  let a = L(r);
   return null != a && (R[n] = {
     type: t,
     baseChannelId: a,
@@ -120,14 +120,14 @@ function G(e) {
   }, true)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t
   } = e;
   return null != R[t] && (delete R[t], true)
 }
 
-function F(e) {
+function V(e) {
   let {
     sidebarType: t,
     baseChannelId: n,
@@ -135,16 +135,16 @@ function F(e) {
     details: i
   } = e;
   P = false;
-  let a = x(n);
+  let a = L(n);
   if (null == a) returnfalse;
-  let s = {
+  let o = {
     type: t,
     channelId: r,
     details: i
   };
-  return t === c.PE.VIEW_MOD_REPORT && (s = I(v({}, s), {
+  return t === c.PE.VIEW_MOD_REPORT && (o = I(v({}, o), {
     baseChannelId: n
-  })), w[a] = s, true
+  })), w[a] = o, true
 }
 
 function B(e) {
@@ -154,7 +154,7 @@ function B(e) {
     location: r
   } = e;
   P = false;
-  let i = x(t);
+  let i = L(t);
   null != i && (w[i] = {
     type: c.PE.CREATE_THREAD,
     parentChannelId: t,
@@ -212,7 +212,7 @@ function K() {
 function z(e) {
   let {
     baseChannelId: t
-  } = e, n = x(t);
+  } = e, n = L(t);
   null != n && delete w[n]
 }
 
@@ -226,16 +226,16 @@ function Z() {
   i.Fr && T && (T = false, C = false)
 }
 
-function X(e) {
+function Q(e) {
   return D = e.searchContextId, q()
 }
-class Q extends(r = Chunk311907.Ay.PersistedStore) {
+class X extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r, i, a;
       T = null != (t = e.isMembersOpen) && t, C = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, w = null != (i = e.sidebars) ? i : {}, R = null != (a = e.guildSidebars) ? a : {}
     }
-    this.syncWith([l.A], q), this.syncWith([_.A], K), this.waitFor(f.A, o.A, p.A, _.A, l.A, h.A, m.A, g.default)
+    this.syncWith([l.A], q), this.syncWith([_.A], K), this.waitFor(f.A, s.A, p.A, _.A, l.A, h.A, m.A, g.default)
   }
   getState() {
     return {
@@ -248,25 +248,25 @@ class Q extends(r = Chunk311907.Ay.PersistedStore) {
   }
   getSection(e, t) {
     if (P) return E.YvQ.SEARCH;
-    let n = x(e);
+    let n = L(e);
     return null != n && null != w[n] ? E.YvQ.SIDEBAR_CHAT : t && N ? E.YvQ.PROFILE : C ? E.YvQ.SUMMARIES : T ? E.YvQ.MEMBERS : E.YvQ.NONE
   }
   getSidebarState(e) {
-    let t = x(e);
+    let t = L(e);
     return null == t ? true : w[t]
   }
   getGuildSidebarState(e) {
     return null == e ? true : R[e]
   }
   getCurrentSidebarChannelId(e) {
-    let t = x(e);
+    let t = L(e);
     if (null == t || P) return null;
     let n = w[t];
     return null == n ? null : n.type === c.PE.VIEW_THREAD || n.type === c.PE.VIEW_CHANNEL || n.type === c.PE.VIEW_MOD_REPORT ? n.channelId : null
   }
   getCurrentSidebarMessageId(e) {
     var t;
-    let n = x(e);
+    let n = L(e);
     if (null == n || P) return null;
     let r = w[n];
     return null == r ? null : r.type === c.PE.VIEW_THREAD || r.type === c.PE.VIEW_CHANNEL || r.type === c.PE.VIEW_MOD_REPORT ? null == (t = r.details) ? true : t.initialMessageId : null
@@ -275,17 +275,17 @@ class Q extends(r = Chunk311907.Ay.PersistedStore) {
     return D
   }
 }
-O(Q, "displayName", "ChannelSectionStore"), O(Q, "persistKey", "ChannelSectionStore2");
-let J = new Q(Chunk73153.h, {
-  SIDEBAR_SET_SELECTED_SEARCH_CONTEXT: X,
-  CHANNEL_TOGGLE_MEMBERS_SECTION: M,
+O(X, "displayName", "ChannelSectionStore"), O(X, "persistKey", "ChannelSectionStore2");
+let J = new X(Chunk73153.h, {
+  SIDEBAR_SET_SELECTED_SEARCH_CONTEXT: Q,
+  CHANNEL_TOGGLE_MEMBERS_SECTION: j,
   USER_PROFILE_SIDEBAR_TOGGLE_SECTION: U,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: k,
-  SIDEBAR_VIEW_CHANNEL: F,
+  SIDEBAR_VIEW_CHANNEL: V,
   SIDEBAR_VIEW_GUILD: G,
   SIDEBAR_CREATE_THREAD: B,
   SIDEBAR_CLOSE: z,
-  SIDEBAR_CLOSE_GUILD: V,
+  SIDEBAR_CLOSE_GUILD: F,
   CHANNEL_DELETE: H,
   CHANNEL_SELECT: Z,
   THREAD_CREATE: W,

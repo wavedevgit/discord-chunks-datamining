@@ -20,7 +20,7 @@ function p(e) {
 }
 
 function _(e, t, n) {
-  if ((0, o.I)() || p(e)) return;
+  if ((0, s.I)() || p(e)) return;
   if ("focused" !== a.A.getState()) {
     null != e && (0, l.Fr)(t, e.ttlMillis);
     return
@@ -41,7 +41,7 @@ function h(e) {
       var t;
       return null != (t = c.A.questAdDecisionByPlacement.get(e)) ? t : null
     }),
-    s = (0, i.bG)([c.A], () => {
+    o = (0, i.bG)([c.A], () => {
       var e;
       return (null == a ? true : a.questId) != null && null != (e = c.A.quests.get(a.questId)) ? e : null
     });
@@ -55,5 +55,5 @@ function h(e) {
     return () => {
       null != r && clearInterval(r)
     }
-  }, [a, e, n]), null != n) ? n : null == s || (0, d.Ic)(s) ? null : s
+  }, [a, e, n]), null != n) ? n : null == o || (0, d.Ic)(o) ? null : o
 }

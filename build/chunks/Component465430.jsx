@@ -60,7 +60,7 @@ let h = "right";
 
 function m(e) {
   let t, n, {
-      type: i = s.Z.Types.DANGER,
+      type: i = o.Z.Types.DANGER,
       imageData: d,
       button: _,
       className: m,
@@ -68,31 +68,31 @@ function m(e) {
       title: E,
       body: y,
       style: b,
-      align: O = o.A.Align.START
+      align: O = s.A.Align.START
     } = e,
-    v = o.A.Direction.HORIZONTAL;
+    v = s.A.Direction.HORIZONTAL;
   if (null != d) {
     let {
       position: e
     } = d, n = p(d, ["position"]);
-    t = (0, r.jsx)(o.A.Child, {
+    t = (0, r.jsx)(s.A.Child, {
       grow: 0,
       shrink: 0,
       children: (0, r.jsx)("img", f({
         alt: "",
         className: a()(u.Kk, g)
       }, n))
-    }), e === h && (v = o.A.Direction.HORIZONTAL_REVERSE)
+    }), e === h && (v = s.A.Direction.HORIZONTAL_REVERSE)
   } else null != _ && (n = _);
   let A = true;
-  return i === s.Z.Types.PRIMARY && (A = false), (0, r.jsx)(s.Z, {
+  return i === o.Z.Types.PRIMARY && (A = false), (0, r.jsx)(o.Z, {
     className: a()(u.RJ, m),
     type: i,
     style: b,
-    children: (0, r.jsxs)(o.A, {
+    children: (0, r.jsxs)(s.A, {
       direction: v,
       align: O,
-      children: [t, (0, r.jsxs)(o.A.Child, {
+      children: [t, (0, r.jsxs)(s.A.Child, {
         children: [null != E && "" !== E ? (0, r.jsx)(c.z, {
           className: a()(u.$G, {
             [u.vV]: A

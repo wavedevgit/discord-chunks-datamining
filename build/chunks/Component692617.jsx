@@ -9,7 +9,7 @@ require("./64700.js");
 var Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
-  o = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk990078 = require("./990078.jsx"),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js"),
@@ -46,7 +46,7 @@ function h(e) {
     className: t,
     maxGuilds: n,
     guilds: i,
-    onFocus: s,
+    onFocus: o,
     onClick: h,
     size: m = d.A.Sizes.SMALLER,
     hideOverflowCount: g = false,
@@ -58,12 +58,12 @@ function h(e) {
       t = e + 1,
       p = e > 0 && !g,
       b = Math.min(i.length, n) - 1,
-      O = o()(i).take(n).map((e, t) => {
+      O = s()(i).take(n).map((e, t) => {
         let n = e.name,
           i = t === b && !p,
-          s = a()(f.my, y, i && f.NE);
+          o = a()(f.my, y, i && f.NE);
         return E ? (0, r.jsx)("div", {
-          className: s,
+          className: o,
           children: (0, r.jsx)(d.A, {
             guild: e,
             onClick: h,
@@ -84,7 +84,7 @@ function h(e) {
       let e = _(m);
       O[O.length - 1] = (0, r.jsx)(c.$n, {
         className: a()(f.ju, y),
-        onFocus: s,
+        onFocus: o,
         onClick: e => null == h ? true : h(e),
         look: c.$n.Looks.BLANK,
         size: c.$n.Sizes.NONE,

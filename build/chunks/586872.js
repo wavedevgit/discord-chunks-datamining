@@ -8,7 +8,7 @@ var Chunk73153 = require("./73153.js"),
   Chunk425059 = require("./425059.js"),
   Chunk141468 = require("./141468.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -50,9 +50,9 @@ async function u(e) {
   let {
     channelId: t,
     message: n,
-    items: s,
+    items: o,
     shouldUploadFailureSendNotification: l
-  } = e, u = new i.A, d = (0, a.rh)(c(o({}, n), {
+  } = e, u = new i.A, d = (0, a.rh)(c(s({}, n), {
     id: u._file.id
   }));
   u.on("start", e => {
@@ -85,7 +85,7 @@ async function u(e) {
       aborted: true
     })
   });
-  let f = await u.uploadFiles(s);
+  let f = await u.uploadFiles(o);
   if (!u._aborted) return {
     attachments: f,
     uploader: u

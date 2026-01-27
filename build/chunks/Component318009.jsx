@@ -66,7 +66,7 @@ let A = e => {
   let {
     children: t,
     close: n,
-    onUnmount: o,
+    onUnmount: s,
     target: u,
     rect: _,
     position: h,
@@ -94,9 +94,9 @@ let A = e => {
       null == (e = r.ownerDocument) || e.removeEventListener("click", i, true), null == (t = r.ownerDocument) || t.removeEventListener("contextmenu", i, true)
     }
   }, []);
-  let S = i.useRef(o);
+  let S = i.useRef(s);
   i.useEffect(() => {
-    S.current = o
+    S.current = s
   }), i.useEffect(() => () => {
     var e;
     return null == (e = S.current) ? true : e.call(S)
@@ -117,7 +117,7 @@ let A = e => {
     }, [T]),
     w = (0, l.D)("ContextMenu"),
     R = u.ownerDocument;
-  return w ? (0, r.jsx)(s.Ow, {
+  return w ? (0, r.jsx)(o.Ow, {
     spacing: 0,
     open: true,
     ownerDocument: R,
@@ -125,7 +125,7 @@ let A = e => {
       e ? C() : (N(), v(), I.current())
     },
     overrideTargetRect: _,
-    placement: (0, s.Pv)(null != h ? h : "right", null != m ? m : "top"),
+    placement: (0, o.Pv)(null != h ? h : "right", null != m ? m : "top"),
     blockPointerEvents: !b,
     crossAccessFlip: false,
     renderLayer: e => {
@@ -190,13 +190,13 @@ class I extends Chunk64700.PureComponent {
     let {
       appContext: i,
       target: a,
-      isOpen: s,
-      theme: o,
+      isOpen: o,
+      theme: s,
       config: l,
       rect: c,
       renderWindow: u
     } = this.props, d = null != (e = this.state.render) ? e : this.props.render;
-    return s && null != c && null != l && null != a && null != d && l.context === i && (null == (n = a.ownerDocument) ? true : n.defaultView) === u ? (0, r.jsx)(A, {
+    return o && null != c && null != l && null != a && null != d && l.context === i && (null == (n = a.ownerDocument) ? true : n.defaultView) === u ? (0, r.jsx)(A, {
       target: a,
       rect: c,
       close: this.close,
@@ -212,7 +212,7 @@ class I extends Chunk64700.PureComponent {
         } = e;
         return d({
           position: n,
-          theme: o,
+          theme: s,
           onHeightUpdate: t,
           config: l,
           target: a,
@@ -244,16 +244,16 @@ function S() {
     contextMenu: e,
     version: t,
     isOpen: n
-  } = (0, o.cf)([h.A], () => ({
+  } = (0, s.cf)([h.A], () => ({
     contextMenu: h.A.getContextMenu(),
     version: h.A.version,
     isOpen: h.A.isOpen()
-  })), a = (0, o.bG)([_.A], () => _.A.theme), {
-    appContext: s,
+  })), a = (0, s.bG)([_.A], () => _.A.theme), {
+    appContext: o,
     renderWindow: l
   } = i.useContext(p.Ay);
   return (0, r.jsx)(I, O(y({
-    appContext: s,
+    appContext: o,
     renderWindow: l
   }, e), {
     isOpen: n,

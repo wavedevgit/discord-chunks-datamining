@@ -1,67 +1,63 @@
-/** Chunk was on web.js **/
-/** chunk id: 899894, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 899894, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V: () => f
+  V: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk989349 = require("./989349.js"),
-  a = require.n(Chunk989349),
+  l = require.n(Chunk989349),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk239093 = require("./239093.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk153400 = require("./153400.js");
-let d = e => a()().diff(a().unix(e), "days");
 
-function f(e) {
-  var t, i, a, f, p;
+function d(e) {
+  var t, i, d, p, m;
   if (null == e.message.embeds || null == e.message.embeds[0].fields) return null;
-  let _ = e.message.embeds[0],
-    h = null != (t = null == (f = _.fields) ? true : f.find(e => e.rawName === l.AT.CLASSIFICATION_ID)) ? t : true,
-    m = null != (i = null == h ? true : h.rawValue) ? i : true,
-    g = null != (a = null == (p = _.fields) ? true : p.find(e => e.rawName === l.AT.INCIDENT_TIMESTAMP)) ? a : true,
-    E = null == g || null == g.rawValue ? true : parseFloat(g.rawValue);
-  if (null == m || null == E) return null;
-  let y = () => {
-    (0, o.mMO)(async () => {
-      let {
-        default: e
-      } = await n.e("9407").then(n.bind(n, 956450));
-      return t => (0, r.jsx)(e, {
-        classificationId: m,
-        source: l.XN.SystemDM,
-        transitionState: t.transitionState,
-        onClose: t.onClose
+  let f = e.message.embeds[0],
+    g = null != (t = null == (p = f.fields) ? true : p.find(e => e.rawName === o.AT.CLASSIFICATION_ID)) ? t : true,
+    h = null != (i = null == g ? true : g.rawValue) ? i : true,
+    _ = null != (d = null == (m = f.fields) ? true : m.find(e => e.rawName === o.AT.INCIDENT_TIMESTAMP)) ? d : true,
+    b = null == _ || null == _.rawValue ? true : parseFloat(_.rawValue);
+  return null == h || null == b ? null : (0, r.jsxs)(s.DUT, {
+    onClick: () => {
+      (0, s.mMO)(async () => {
+        let {
+          default: e
+        } = await Promise.all([n.e("22726"), n.e("83518"), n.e("9407"), n.e("1708")]).then(n.bind(n, 956450));
+        return t => (0, r.jsx)(e, {
+          classificationId: h,
+          source: o.XN.SystemDM,
+          transitionState: t.transitionState,
+          onClose: t.onClose
+        })
       })
-    })
-  };
-  return (0, r.jsxs)(o.DUT, {
-    onClick: y,
+    },
     className: u.o3,
     children: [(0, r.jsxs)("div", {
       className: u.qZ,
       children: [(0, r.jsxs)("div", {
         className: u.U1,
-        children: [(0, r.jsx)(o.id, {
+        children: [(0, r.jsx)(s.id, {
           className: u.QW,
-          color: s.A.colors.ICON_FEEDBACK_CRITICAL
-        }), (0, r.jsx)(o.Text, {
+          color: a.A.colors.ICON_FEEDBACK_CRITICAL
+        }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           children: c.intl.string(c.t["4CxGXi"])
         })]
       }), (0, r.jsx)("div", {
         className: u.VU,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           children: c.intl.format(c.t.eevFb6, {
-            daysAgo: d(E)
+            daysAgo: l()().diff(l().unix(b), "days")
           })
         })
       }), (0, r.jsx)("div", {
         className: u.vv,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-muted",
           children: c.intl.string(c.t["5CLb0A"])
@@ -69,7 +65,7 @@ function f(e) {
       })]
     }), (0, r.jsx)("div", {
       className: u.xQ,
-      children: (0, r.jsx)(o.QWc, {
+      children: (0, r.jsx)(s.QWc, {
         text: c.intl.string(c.t.zKnzwm),
         variant: "secondary"
       })

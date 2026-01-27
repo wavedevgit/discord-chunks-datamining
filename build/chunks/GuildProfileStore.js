@@ -177,7 +177,7 @@ function A(e) {
   } = t;
   if (null == n) return;
   let r = p.get(n.id),
-    i = (0, s.wr)(n);
+    i = (0, o.wr)(n);
   null == r ? p.set(n.id, d(c({}, _), {
     profile: i,
     lastSyncTimestamp: Date.now(),
@@ -193,7 +193,7 @@ function I(e) {
   let {
     channel: t
   } = e;
-  t.type === o.rbe.GUILD_ANNOUNCEMENT && null != t.guild_id && p.delete(t.guild_id)
+  t.type === s.rbe.GUILD_ANNOUNCEMENT && null != t.guild_id && p.delete(t.guild_id)
 }
 
 function S(e) {
@@ -210,14 +210,14 @@ function T(e) {
     guild: i
   } = e, a = p.get(i.id);
   if (null == a || null == a.profile) returnfalse;
-  let s = d(c({}, a.profile), {
+  let o = d(c({}, a.profile), {
     name: i.name,
     icon: null != (t = i.icon) ? t : null,
     description: null != (n = i.description) ? n : "",
     customBanner: null != (r = i.discovery_splash) ? r : null
   });
   p.set(i.id, d(c({}, a), {
-    profile: s
+    profile: o
   }))
 }
 class C extends(r = Chunk311907.Ay.Store) {

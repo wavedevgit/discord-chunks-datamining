@@ -12,18 +12,18 @@ function a(e) {
     keyboardDelegate: t,
     selectionManager: n,
     onTypeSelect: a
-  } = e, o = (0, r.useRef)({
+  } = e, s = (0, r.useRef)({
     search: "",
     timeout: true
   }).current, l = e => {
-    let r = s(e.key);
-    if (r && !e.ctrlKey && !e.metaKey && e.currentTarget.contains(e.target) && (0 !== o.search.length || " " !== r)) {
-      if (" " === r && o.search.trim().length > 0 && (e.preventDefault(), "continuePropagation" in e || e.stopPropagation()), o.search += r, null != t.getKeyForSearch) {
-        let e = t.getKeyForSearch(o.search, n.focusedKey);
-        null == e && (e = t.getKeyForSearch(o.search)), null != e && (n.setFocusedKey(e), a && a(e))
+    let r = o(e.key);
+    if (r && !e.ctrlKey && !e.metaKey && e.currentTarget.contains(e.target) && (0 !== s.search.length || " " !== r)) {
+      if (" " === r && s.search.trim().length > 0 && (e.preventDefault(), "continuePropagation" in e || e.stopPropagation()), s.search += r, null != t.getKeyForSearch) {
+        let e = t.getKeyForSearch(s.search, n.focusedKey);
+        null == e && (e = t.getKeyForSearch(s.search)), null != e && (n.setFocusedKey(e), a && a(e))
       }
-      clearTimeout(o.timeout), o.timeout = setTimeout(() => {
-        o.search = ""
+      clearTimeout(s.timeout), s.timeout = setTimeout(() => {
+        s.search = ""
       }, i)
     }
   };
@@ -34,6 +34,6 @@ function a(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   return 1 !== e.length && /^[A-Z]/i.test(e) ? "" : e
 }

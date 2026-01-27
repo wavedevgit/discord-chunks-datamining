@@ -7,8 +7,8 @@ require.d(exports, {
 let r = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\.[a-z]{2})?)$/i,
   i = /^((https:\/\/)?(discord\.gg\/)|(discord\.com\/)(invite\/)?)?[A-Za-z0-9]{8,8}$/,
   a = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/,
-  s = /^(.*)#[0-9]{1,5}$/,
-  o = /^(https:\/\/)?(discord\.com\/discovery\/game\/)([0-9-]+)\/?/,
+  o = /^(.*)#[0-9]{1,5}$/,
+  s = /^(https:\/\/)?(discord\.com\/discovery\/game\/)([0-9-]+)\/?/,
   l = ["@", "#", ":", "```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage"],
   c = ["discordtag", "everyone", "here", "discord nitro", "discord"],
   u = {
@@ -22,7 +22,7 @@ let r = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\
       return a.test(e)
     },
     isUserTagLike: function(e) {
-      let t = s.exec(e);
+      let t = o.exec(e);
       if (null != t && t.length > 1) {
         let e = t[1],
           n = l.some(t => e.includes(t)),
@@ -32,6 +32,6 @@ let r = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\
       returnfalse
     },
     isDiscoveryLink: function(e) {
-      return o.test(e)
+      return s.test(e)
     }
   }

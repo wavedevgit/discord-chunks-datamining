@@ -6,15 +6,15 @@ module.exports = function(e) {
     r = ["as", "break", "class", "construct", "continue", "else", "for", "foreign", "if", "import", "in", "is", "return", "static", "var", "while"],
     i = ["true", "false", "null"],
     a = ["this", "super"],
-    s = ["Bool", "Class", "Fiber", "Fn", "List", "Map", "Null", "Num", "Object", "Range", "Sequence", "String", "System"],
-    o = ["-", "~", /\*/, "%", /\.\.\./, /\.\./, /\+/, "<<", ">>", ">=", "<=", "<", ">", /\^/, /!=/, /!/, /\bis\b/, "==", "&&", "&", /\|\|/, /\|/, /\?:/, "="],
+    o = ["Bool", "Class", "Fiber", "Fn", "List", "Map", "Null", "Num", "Object", "Range", "Sequence", "String", "System"],
+    s = ["-", "~", /\*/, "%", /\.\.\./, /\.\./, /\+/, "<<", ">>", ">=", "<=", "<", ">", /\^/, /!=/, /!/, /\bis\b/, "==", "&&", "&", /\|\|/, /\|/, /\?:/, "="],
     l = {
       relevance: 0,
       match: t.concat(/\b(?!(if|while|for|else|super)\b)/, n, /(?=\s*[({])/),
       className: "title.function"
     },
     c = {
-      match: t.concat(t.either(t.concat(/\b(?!(if|while|for|else|super)\b)/, n), t.either(...o)), /(?=\s*\([^)]+\)\s*\{)/),
+      match: t.concat(t.either(t.concat(/\b(?!(if|while|for|else|super)\b)/, n), t.either(...s)), /(?=\s*\([^)]+\)\s*\{)/),
       className: "title.function",
       starts: {
         contains: [{
@@ -42,7 +42,7 @@ module.exports = function(e) {
     },
     d = {
       relevance: 0,
-      match: t.either(...o),
+      match: t.either(...s),
       className: "operator"
     },
     f = {
@@ -67,7 +67,7 @@ module.exports = function(e) {
       match: /\b[A-Z]+[a-z]+([A-Z]+[a-z]+)*/,
       scope: "title.class",
       keywords: {
-        _: s
+        _: o
       }
     },
     m = e.C_NUMBER_MODE,

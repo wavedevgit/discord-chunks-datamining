@@ -25,16 +25,16 @@ function u(e) {
 }
 let d = [{
   icon: Chunk397927._Jp,
-  getText: () => o.intl.string(o.t.TZigSO)
+  getText: () => s.intl.string(s.t.TZigSO)
 }, {
   icon: u,
-  getText: () => o.intl.string(o.t.hjQuV2)
+  getText: () => s.intl.string(s.t.hjQuV2)
 }, {
   icon: Chunk397927.iTF,
-  getText: () => o.intl.string(o.t["2RUcaM"])
+  getText: () => s.intl.string(s.t["2RUcaM"])
 }, {
   icon: Chunk397927.C3E,
-  getText: () => o.intl.string(o.t.bJoZKV)
+  getText: () => s.intl.string(s.t.bJoZKV)
 }];
 
 function f(e) {
@@ -43,10 +43,10 @@ function f(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(l.iE, t),
-    children: [(0, r.jsx)(s.Heading, {
+    children: [(0, r.jsx)(o.Heading, {
       className: l.R_,
       variant: "heading-xxl/semibold",
-      children: o.intl.string(o.t.IzKs3o)
+      children: s.intl.string(s.t.IzKs3o)
     }), (0, r.jsx)("div", {
       className: l.kR,
       children: d.map((e, t) => {
@@ -55,7 +55,7 @@ function f(e) {
           className: l.Nr,
           children: [(0, r.jsx)(n, {
             className: l.Kk
-          }), (0, r.jsx)(s.Text, {
+          }), (0, r.jsx)(o.Text, {
             className: l.h_,
             color: "text-muted",
             variant: "text-md/medium",

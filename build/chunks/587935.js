@@ -16,7 +16,7 @@ let i = {
   "exif:FNumber": e => a(r.A.FNumber, e),
   "exif:FocalLength": e => a(r.A.FocalLength, e),
   "exif:FocalPlaneResolutionUnit": e => r.A.FocalPlaneResolutionUnit(parseInt(e, 10)),
-  "exif:ColorSpace": e => r.A.ColorSpace(s(e)),
+  "exif:ColorSpace": e => r.A.ColorSpace(o(e)),
   "exif:ComponentsConfiguration"(e, t) {
     if (/^\d, \d, \d, \d$/.test(t)) {
       let e = t.split(", ").map(e => e.charCodeAt(0));
@@ -28,7 +28,7 @@ let i = {
   "exif:CustomRendered": e => r.A.CustomRendered(parseInt(e, 10)),
   "exif:ExposureMode": e => r.A.ExposureMode(parseInt(e, 10)),
   "exif:ExposureProgram": e => r.A.ExposureProgram(parseInt(e, 10)),
-  "exif:ExposureTime": e => o(e) ? r.A.ExposureTime(e.split("/").map(e => parseInt(e, 10))) : e,
+  "exif:ExposureTime": e => s(e) ? r.A.ExposureTime(e.split("/").map(e => parseInt(e, 10))) : e,
   "exif:MeteringMode": e => r.A.MeteringMode(parseInt(e, 10)),
   "exif:Saturation": e => r.A.Saturation(parseInt(e, 10)),
   "exif:SceneCaptureType": e => r.A.SceneCaptureType(parseInt(e, 10)),
@@ -38,14 +38,14 @@ let i = {
 };
 
 function a(e, t) {
-  return o(t) ? e(t.split("/")) : t
-}
-
-function s(e) {
-  return "0x" === e.substring(0, 2) ? parseInt(e.substring(2), 16) : parseInt(e, 10)
+  return s(t) ? e(t.split("/")) : t
 }
 
 function o(e) {
+  return "0x" === e.substring(0, 2) ? parseInt(e.substring(2), 16) : parseInt(e, 10)
+}
+
+function s(e) {
   return /^-?\d+\/-?\d+$/.test(e)
 }
 

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk946356 = require("./946356.jsx"),
   Chunk985018 = require("./985018.jsx"),
@@ -24,19 +24,19 @@ function d(e) {
   return 0 === f.length ? null : (0, r.jsxs)("section", {
     "aria-labelledby": null != n ? d : true,
     className: u.kL,
-    children: [null != n && (0, r.jsx)(o.AC4, {
-      children: (0, r.jsx)(o.H, {
+    children: [null != n && (0, r.jsx)(s.AC4, {
+      children: (0, r.jsx)(s.H, {
         id: d,
         children: n
       })
     }), (0, r.jsxs)("ul", {
-      className: s()(u.ML, f.length > 1 && u.Kr),
+      className: o()(u.ML, f.length > 1 && u.Kr),
       "aria-labelledby": null != n ? d : true,
       tabIndex: false,
       children: [(0, r.jsx)("li", {
         className: u.Us,
         children: p
-      }), f.length > 1 && (0, r.jsx)(o.DUT, {
+      }), f.length > 1 && (0, r.jsx)(s.DUT, {
         tag: "li",
         className: u.Ee,
         onClick: a,

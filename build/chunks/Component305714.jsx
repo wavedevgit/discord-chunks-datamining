@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 305714, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 305714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => E
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,57 +20,56 @@ var Chunk627968 = require("./627968.js"),
   Chunk635736 = require("./635736.js"),
   Chunk917025 = require("./917025.js"),
   Chunk707621 = require("./707621.js");
-let b = (e, t) => {
-    let {
-      className: n,
-      isFooterVisible: a,
-      isDarkMode: b,
-      isReducedMotion: O,
-      subscriptionTier: v
-    } = e, {
-      analyticsLocations: A
-    } = (0, c.Ay)(l.A.PREMIUM_MARKETING_FOOTER_CTA), I = (0, f.ar)(), S = (0, d.TM)(), T = i.useRef(null), [C, N] = i.useState(false);
-    return i.useEffect(() => {
-      !a || O || C || null == T.current || T.current.play()
-    }, [a, O, C]), (0, r.jsx)(c.f5, {
-      value: A,
-      children: (0, r.jsxs)("div", {
-        ref: t,
-        className: s()(m.kL, n),
-        children: [(0, r.jsx)(o.Heading, {
-          className: m.RH,
-          variant: "display-md",
-          color: "text-strong",
-          children: h.intl.string(h.t.lEw32m)
-        }), (0, r.jsx)(p.KN, {
-          subscriptionTier: v,
-          inOfferExperience: I,
-          containerClassName: m.Z5,
-          isApplicationHome: true,
-          isDarkMode: b
-        }), (0, r.jsx)("div", {
-          className: m.av,
-          children: (0, r.jsx)(u.A, {
-            playsInline: true,
-            muted: true,
-            preload: "auto",
-            poster: E.A,
-            className: m.dV,
-            onEnded: () => {
-              N(true)
-            },
-            ref: T,
-            children: (0, r.jsx)("source", {
-              src: S ? g.A : y.A,
-              type: S ? _.a.MP4 : _.a.WEBM
-            })
+let E = Chunk64700.forwardRef((e, t) => {
+  let {
+    className: n,
+    isFooterVisible: l,
+    isDarkMode: E,
+    isReducedMotion: x,
+    subscriptionTier: O
+  } = e, {
+    analyticsLocations: C
+  } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), I = (0, _.ar)(), T = (0, u.TM)(), S = i.useRef(null), [j, v] = i.useState(false);
+  return i.useEffect(() => {
+    !l || x || j || null == S.current || S.current.play()
+  }, [l, x, j]), (0, r.jsx)(c.f5, {
+    value: C,
+    children: (0, r.jsxs)("div", {
+      ref: t,
+      className: s()(A.kL, n),
+      children: [(0, r.jsx)(a.Heading, {
+        className: A.RH,
+        variant: "display-md",
+        color: "text-strong",
+        children: g.intl.string(g.t.lEw32m)
+      }), (0, r.jsx)(p.KN, {
+        subscriptionTier: O,
+        inOfferExperience: I,
+        containerClassName: A.Z5,
+        isApplicationHome: true,
+        isDarkMode: E
+      }), (0, r.jsx)("div", {
+        className: A.av,
+        children: (0, r.jsx)(d.A, {
+          playsInline: true,
+          muted: true,
+          preload: "auto",
+          poster: h.A,
+          className: A.dV,
+          onEnded: () => {
+            v(true)
+          },
+          ref: S,
+          children: (0, r.jsx)("source", {
+            src: T ? f.A : b.A,
+            type: T ? m.a.MP4 : m.a.WEBM
           })
-        }), (0, r.jsx)("div", {
-          className: m.es
-        }), (0, r.jsx)("div", {
-          className: m.fF
-        })]
-      })
+        })
+      }), (0, r.jsx)("div", {
+        className: A.es
+      }), (0, r.jsx)("div", {
+        className: A.fF
+      })]
     })
-  },
-  O = Chunk64700.forwardRef(b)
+  })
+})

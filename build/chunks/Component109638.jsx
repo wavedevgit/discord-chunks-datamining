@@ -33,7 +33,7 @@ let m = Chunk64700.forwardRef(function(e, t) {
   let {
     sound: n,
     containerDimensions: h
-  } = e, m = (0, o.bG)([d.default], () => d.default.getCurrentUser()), g = (0, o.bG)([l.A], () => l.A.useReducedMotion), [E, y] = i.useState([]), b = E.length < _, O = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, v = i.useCallback(() => {
+  } = e, m = (0, s.bG)([d.default], () => d.default.getCurrentUser()), g = (0, s.bG)([l.A], () => l.A.useReducedMotion), [E, y] = i.useState([]), b = E.length < _, O = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, v = i.useCallback(() => {
     if (!g && b && O && null != m) {
       var e;
       let t = (0, c.Br)({
@@ -43,10 +43,10 @@ let m = Chunk64700.forwardRef(function(e, t) {
         }),
         r = null != n.emojiId,
         i = f.B.PREMIUM,
-        o = (0, a.random)(c.Bf[i].length, false),
+        s = (0, a.random)(c.Bf[i].length, false),
         l = {
-          id: (0, s.A)(),
-          animationId: o,
+          id: (0, o.A)(),
+          animationId: s,
           animationType: i,
           shouldResize: r,
           url: t,

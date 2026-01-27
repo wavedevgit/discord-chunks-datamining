@@ -1,4 +1,4 @@
-/** Chunk was on 20725 **/
+/** Chunk was on 52390 **/
 /** chunk id: 190012, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   BC: () => b
@@ -24,20 +24,20 @@ function b(e, t) {
   } = (0, i.cf)([d.A], () => ({
     isBlocked: d.A.isBlocked(e.author.id),
     isIgnored: d.A.isIgnored(e.author.id)
-  }), [e.author.id]), g = (0, s.Ay)(t.id, e.id), A = (0, i.bG)([c.default], () => c.default.getId()), x = (0, u.Ay)(e).nick, v = e.author.id === A ? y.intl.string(y.t.LuZzxn) : x, h = (0, i.bG)([p.default], () => e.mentions.length > 0 ? p.default.getUser(e.mentions[0]) : true), O = (0, u.d8)(h, t).nick;
+  }), [e.author.id]), g = (0, a.Ay)(t.id, e.id), y = (0, i.bG)([c.default], () => c.default.getId()), x = (0, u.Ay)(e).nick, h = e.author.id === y ? _.intl.string(_.t.LuZzxn) : x, A = (0, i.bG)([p.default], () => e.mentions.length > 0 ? p.default.getUser(e.mentions[0]) : true), v = (0, u.d8)(A, t).nick;
   return function(e, t) {
     let {
       isBlocked: n,
       isIgnored: i,
-      authorNick: s
+      authorNick: a
     } = t;
     if (n) return {
       type: "text",
-      text: y.intl.string(y.t.XAkOo2)
+      text: _.intl.string(_.t.XAkOo2)
     };
     if (i) return {
       type: "text",
-      text: y.intl.string(y.t["G7p6v/"])
+      text: _.intl.string(_.t["G7p6v/"])
     };
     if (function(e) {
         switch (e.type) {
@@ -64,59 +64,59 @@ function b(e, t) {
         };
         if (e.hasFlag(f.pr7.IS_VOICE_MESSAGE)) return {
           type: "text",
-          text: y.intl.string(y.t.slFYgi)
+          text: _.intl.string(_.t.slFYgi)
         };
         if (e.attachments.length > 0) {
-          let t = e.attachments.every(e => (0, o.u)(e.filename)),
-            n = !t && e.attachments.every(e => (0, o.AE)(e.filename)),
-            r = !t && !n && e.attachments.every(e => (0, o.L8)(e.filename));
+          let t = e.attachments.every(e => (0, s.u)(e.filename)),
+            n = !t && e.attachments.every(e => (0, s.AE)(e.filename)),
+            r = !t && !n && e.attachments.every(e => (0, s.L8)(e.filename));
           return t ? {
             type: "text",
-            text: y.intl.formatToPlainString(y.t.h4pFfU, {
+            text: _.intl.formatToPlainString(_.t.h4pFfU, {
               count: e.attachments.length
             }),
             trailingIcon: "image"
           } : n ? {
             type: "text",
-            text: y.intl.formatToPlainString(y.t.SJ6pPX, {
+            text: _.intl.formatToPlainString(_.t.SJ6pPX, {
               count: e.attachments.length
             }),
             trailingIcon: "video"
           } : r ? {
             type: "text",
-            text: y.intl.formatToPlainString(y.t.fnO3hK, {
+            text: _.intl.formatToPlainString(_.t.fnO3hK, {
               count: e.attachments.length
             }),
             trailingIcon: "audio"
           } : {
             type: "text",
-            text: y.intl.formatToPlainString(y.t["89ihS8"], {
+            text: _.intl.formatToPlainString(_.t["89ihS8"], {
               count: e.attachments.length
             }),
             trailingIcon: "attachment"
           }
         }
         if (e.embeds.length > 0) {
-          let t = e.embeds.every(e => null != e.url && (0, o.Zj)(e.url)),
-            n = !t && e.embeds.every(e => null != e.url && (0, o.r1)(e.url)),
-            r = !t && !n && e.embeds.every(e => null != e.url && (0, o.L8)(e.url));
+          let t = e.embeds.every(e => null != e.url && (0, s.Zj)(e.url)),
+            n = !t && e.embeds.every(e => null != e.url && (0, s.r1)(e.url)),
+            r = !t && !n && e.embeds.every(e => null != e.url && (0, s.L8)(e.url));
           if (t) return {
             type: "text",
-            text: y.intl.formatToPlainString(y.t.h4pFfU, {
+            text: _.intl.formatToPlainString(_.t.h4pFfU, {
               count: e.embeds.length
             }),
             trailingIcon: "image"
           };
           if (n) return {
             type: "text",
-            text: y.intl.formatToPlainString(y.t.SJ6pPX, {
+            text: _.intl.formatToPlainString(_.t.SJ6pPX, {
               count: e.embeds.length
             }),
             trailingIcon: "video"
           };
           if (r) return {
             type: "text",
-            text: y.intl.formatToPlainString(y.t.fnO3hK, {
+            text: _.intl.formatToPlainString(_.t.fnO3hK, {
               count: e.embeds.length
             }),
             trailingIcon: "audio"
@@ -131,7 +131,7 @@ function b(e, t) {
           };
           else return {
             type: "text",
-            text: y.intl.formatToPlainString(y.t["9XuYjs"], {
+            text: _.intl.formatToPlainString(_.t["9XuYjs"], {
               count: e.embeds.length
             }),
             trailingIcon: "link"
@@ -146,14 +146,14 @@ function b(e, t) {
           var t;
           return {
             type: "text",
-            text: y.intl.formatToPlainString(y.t.ImizdM, {
+            text: _.intl.formatToPlainString(_.t.ImizdM, {
               question: null == (t = e.poll) ? true : t.question.text
             })
           }
         }
-        if ((0, a.A)(e)) return {
+        if ((0, o.A)(e)) return {
           type: "text",
-          text: y.intl.string(y.t["9ddYKt"])
+          text: _.intl.string(_.t["9ddYKt"])
         }
       }(e);
       if (null != t) {
@@ -176,7 +176,7 @@ function b(e, t) {
           }
           return e
         }({}, t), c = c = {
-          authorLabel: s
+          authorLabel: a
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -193,62 +193,62 @@ function b(e, t) {
       let {
         currentUserId: n,
         authorNick: i,
-        otherUser: s,
-        otherUserNick: a,
-        isCallActive: o
+        otherUser: a,
+        otherUserNick: o,
+        isCallActive: s
       } = t;
-      return e.type === l.l.RECIPIENT_ADD && null != a ? {
+      return e.type === l.l.RECIPIENT_ADD && null != o ? {
         type: "text",
-        text: y.intl.formatToPlainString(y.t.MMN2Jq, {
+        text: _.intl.formatToPlainString(_.t.MMN2Jq, {
           username: i,
           usernameHook: r.identity,
-          otherUsername: a,
+          otherUsername: o,
           otherUsernameHook: r.identity
         })
-      } : e.type === l.l.RECIPIENT_REMOVE && null != a ? {
+      } : e.type === l.l.RECIPIENT_REMOVE && null != o ? {
         type: "text",
-        text: e.author.id === (null == s ? true : s.id) ? y.intl.formatToPlainString(y.t["5v2xa8"], {
+        text: e.author.id === (null == a ? true : a.id) ? _.intl.formatToPlainString(_.t["5v2xa8"], {
           username: i,
           usernameHook: r.identity
-        }) : y.intl.formatToPlainString(y.t.L2FyVq, {
+        }) : _.intl.formatToPlainString(_.t.L2FyVq, {
           username: i,
           usernameHook: r.identity,
-          otherUsername: a,
+          otherUsername: o,
           otherUsernameHook: r.identity
         })
       } : e.type === l.l.CALL ? {
         type: "text",
-        text: o ? y.intl.string(y.t["NGg/fm"]) : null == e.call || e.call.participants.includes(n) ? y.intl.string(y.t.v05Xd6) : y.intl.string(y.t["2CnhoI"]),
-        color: o ? "text-feedback-positive" : true,
-        trailingIcon: o ? "call-active" : "call-ended"
+        text: s ? _.intl.string(_.t["NGg/fm"]) : null == e.call || e.call.participants.includes(n) ? _.intl.string(_.t.v05Xd6) : _.intl.string(_.t["2CnhoI"]),
+        color: s ? "text-feedback-positive" : true,
+        trailingIcon: s ? "call-active" : "call-ended"
       } : e.type === l.l.CHANNEL_NAME_CHANGE ? {
         type: "text",
-        text: y.intl.formatToPlainString(y.t.oItgEw, {
+        text: _.intl.formatToPlainString(_.t.oItgEw, {
           username: i,
           usernameHook: r.identity,
           channelName: e.content
         })
       } : e.type === l.l.CHANNEL_ICON_CHANGE ? {
         type: "text",
-        text: y.intl.formatToPlainString(y.t.OEdU6X, {
+        text: _.intl.formatToPlainString(_.t.OEdU6X, {
           username: i,
           usernameHook: r.identity
         })
       } : e.type === l.l.CHANNEL_PINNED_MESSAGE ? {
         type: "text",
-        text: y.intl.formatToPlainString(y.t.vfkjqx, {
+        text: _.intl.formatToPlainString(_.t.vfkjqx, {
           username: i,
           usernameHook: r.identity
         })
       } : e.type === l.l.USER_JOIN ? {
         type: "text",
-        text: y.intl.formatToPlainString(m.A.getSystemMessageUserJoin(e.id), {
+        text: _.intl.formatToPlainString(m.A.getSystemMessageUserJoin(e.id), {
           username: i,
           usernameHook: r.identity
         })
       } : e.type === l.l.THREAD_CREATED ? {
         type: "text",
-        text: y.intl.formatToPlainString(y.t.SGaUAU, {
+        text: _.intl.formatToPlainString(_.t.SGaUAU, {
           actorName: i,
           actorHook: r.identity,
           threadName: e.content,
@@ -256,7 +256,7 @@ function b(e, t) {
         })
       } : e.type === l.l.PREMIUM_REFERRAL ? {
         type: "text",
-        text: y.intl.formatToPlainString(y.t.lieTqU, {
+        text: _.intl.formatToPlainString(_.t.lieTqU, {
           username: i
         })
       } : true
@@ -265,10 +265,10 @@ function b(e, t) {
   }(e, {
     message: e,
     channel: t,
-    currentUserId: A,
-    authorNick: v,
-    otherUser: h,
-    otherUserNick: O,
+    currentUserId: y,
+    authorNick: h,
+    otherUser: A,
+    otherUserNick: v,
     isBlocked: n,
     isIgnored: b,
     isCallActive: g

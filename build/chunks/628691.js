@@ -16,7 +16,7 @@ let l = 50;
 function c(e) {
   if (null == e) returnfalse;
   let t = e.id,
-    n = s.default.getCurrentUser();
+    n = o.default.getCurrentUser();
   return null != n && n.id !== t && true !== e.system
 }
 
@@ -27,8 +27,8 @@ function u(e) {
 function d(e) {
   let t = r.A.getChannel(e);
   if (null == t) returnfalse;
-  if (t.type === o.rbe.DM || t.type === o.rbe.GROUP_DM) returntrue;
-  if (a.A.canWithPartialContext(o.xBc.MANAGE_MESSAGES, {
+  if (t.type === s.rbe.DM || t.type === s.rbe.GROUP_DM) returntrue;
+  if (a.A.canWithPartialContext(s.xBc.MANAGE_MESSAGES, {
       channelId: e
     })) {
     let e = i.A.getMemberCount(t.getGuildId());

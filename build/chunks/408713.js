@@ -22,26 +22,26 @@ require.d(exports, {
   H8: () => f,
   Tc: () => d,
   bh: () => l,
-  cX: () => s,
+  cX: () => o,
   gm: () => _,
   lg: () => u,
   m0: () => p,
   un: () => c
 });
-let s = a(function() {
+let o = a(function() {
     return i(/^Mac/i)
   }),
-  o = a(function() {
+  s = a(function() {
     return i(/^iPhone/i)
   }),
   l = a(function() {
-    return i(/^iPad/i) || s() && navigator.maxTouchPoints > 1
+    return i(/^iPad/i) || o() && navigator.maxTouchPoints > 1
   }),
   c = a(function() {
-    return o() || l()
+    return s() || l()
   }),
   u = a(function() {
-    return s() || c()
+    return o() || c()
   }),
   d = a(function() {
     return r(/AppleWebKit/i) && !f()

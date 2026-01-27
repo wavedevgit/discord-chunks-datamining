@@ -2,12 +2,12 @@
 /** chunk id: 391848, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => F
+  A: () => V
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
   Chunk537652 = require("./537652.jsx"),
@@ -34,29 +34,29 @@ var Chunk627968 = require("./627968.js"),
   Chunk993538 = require("./993538.js"),
   Chunk911385 = require("./911385.js");
 let D = 512,
-  x = 7,
-  L = 56,
-  j = 16,
-  M = 32,
+  L = 7,
+  x = 56,
+  M = 16,
+  j = 32,
   k = 20,
   U = 420,
   G = [8, 8, 0, 8],
-  V = l().debounce(() => {
+  F = l().debounce(() => {
     (0, d.zV)(N.HAw.APPLICATION_COMMAND_BROWSER_SCROLLED)
   }, 300),
-  F = Chunk64700.forwardRef(function(e, t) {
+  V = Chunk64700.forwardRef(function(e, t) {
     let {
       channel: n,
       canOnlyUseTextCommands: a
-    } = e, o = i.useRef(false), l = i.useRef(0), [F, H] = i.useState(0), Y = i.useRef(null), [W, K] = i.useState(false), z = m.LS.useStore(e => e.activeCategoryIndex);
+    } = e, s = i.useRef(false), l = i.useRef(0), [V, H] = i.useState(0), Y = i.useRef(null), [W, K] = i.useState(false), z = m.LS.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.zV)(N.HAw.APPLICATION_COMMAND_BROWSER_OPENED)
     }, []);
     let {
       sectionDescriptors: q,
       activeSections: Z,
-      commandsByActiveSection: X,
-      hasMoreAfter: Q,
+      commandsByActiveSection: Q,
+      hasMoreAfter: X,
       commands: J,
       filteredSectionId: $,
       scrollDown: ee,
@@ -72,14 +72,14 @@ let D = 512,
         applicationCommands: !a
       },
       options: {
-        placeholderCount: x,
+        placeholderCount: L,
         limit: C.Hi,
         includeFrecency: true
       },
       allowFetch: true
     }), en = (0, g.Fk)({
       activeCategoryIndex: z,
-      isScrolling: o,
+      isScrolling: s,
       listRef: Y,
       onActiveCategoryIndexChange: e => {
         let t = Z[e];
@@ -91,25 +91,25 @@ let D = 512,
       scrollOffset: k,
       searchQuery: ""
     }), er = e => {
-      let t = Z.length * (M + j) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? x : 0)) * L - D;
-      Q && e + U > t && ee(), en(e), V(), l.current = e
+      let t = Z.length * (j + M) + (Q.reduce((e, t) => e + t.data.length, 0) - (X ? L : 0)) * x - D;
+      X && e + U > t && ee(), en(e), F(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
       ei.current = er
     }), i.useEffect(() => {
       ei.current(l.current)
     }, [J]);
-    let ea = i.useCallback(e => e !== Z.length - 1 || Q ? j : 0, [Z.length, Q]),
-      es = X.map(e => e.data.length);
+    let ea = i.useCallback(e => e !== Z.length - 1 || X ? M : 0, [Z.length, X]),
+      eo = Q.map(e => e.data.length);
     i.useEffect(() => {
-      null != Y.current && W && null != F && Y.current.scrollRowIntoView(F)
-    }, [W, F]), i.useLayoutEffect(() => {
+      null != Y.current && W && null != V && Y.current.scrollRowIntoView(V)
+    }, [W, V]), i.useLayoutEffect(() => {
       if (null != $) {
         var e;
         null == (e = Y.current) || e.scrollToSectionTop(0)
       }
     }, [J, $]);
-    let eo = i.useCallback(e => {
+    let es = i.useCallback(e => {
         if (e.id === $ || e.id === C.Ik.FRECENCY) {
           var t;
           et(null), null == (t = Y.current) || t.scrollToSectionTop(0)
@@ -126,13 +126,13 @@ let D = 512,
       }, [n.id]);
     i.useImperativeHandle(t, () => ({
       onTabOrEnter: e => {
-        if (null == F) return !e && (H(0), true);
-        if (null == F) returnfalse;
+        if (null == V) return !e && (H(0), true);
+        if (null == V) returnfalse;
         let t = 0,
           n = 0;
-        for (let e of X)
-          if (t = n, F < (n += e.data.length)) {
-            let n = e.data[F - t],
+        for (let e of Q)
+          if (t = n, V < (n += e.data.length)) {
+            let n = e.data[V - t],
               r = q.find(e => e.id === n.applicationId);
             el(n, r, (0, A.$S)(e.section));
             break
@@ -140,12 +140,12 @@ let D = 512,
       },
       onMoveSelection: e => {
         if (0 === J.length) returntrue;
-        let t = Q ? x : 0,
+        let t = X ? L : 0,
           n = J.length + t,
-          r = null == F ? 0 : F + e;
+          r = null == V ? 0 : V + e;
         return r >= n ? r = n - 1 : r < 0 && (r = 0), H(r), K(true), true
       }
-    }), [J.length, X, Q, q, el, F]);
+    }), [J.length, Q, X, q, el, V]);
     let ec = i.useCallback(e => {
         let t = Z[e];
         if (null == t) return null;
@@ -168,11 +168,11 @@ let D = 512,
           i = Z[e],
           {
             data: a
-          } = X[e];
+          } = Q[e];
         return (0, r.jsxs)("ul", {
           role: "group",
           "aria-label": i.name,
-          className: s()(R.Wy, {
+          className: o()(R.Wy, {
             [R.YD]: n
           }),
           children: [t, 0 === a.length && (0, r.jsx)(c.A, {
@@ -183,30 +183,30 @@ let D = 512,
             className: R.qK
           })]
         }, e)
-      }, [Z, X]),
+      }, [Z, Q]),
       ed = i.useCallback((e, t) => {
         var i;
-        let a = X[t.sectionIndex],
-          s = a.data[t.sectionRowIndex],
-          o = "".concat(a.section.id, ":").concat(null != (i = null == s ? true : s.id) ? i : e);
-        if (null == s || a.section.id !== s.applicationId && a.section.id !== C.Ik.FRECENCY || s.inputType === v.y$.PLACEHOLDER) return (0, r.jsx)(S.A, {}, o);
-        let l = q.find(e => e.id === s.applicationId);
+        let a = Q[t.sectionIndex],
+          o = a.data[t.sectionRowIndex],
+          s = "".concat(a.section.id, ":").concat(null != (i = null == o ? true : o.id) ? i : e);
+        if (null == o || a.section.id !== o.applicationId && a.section.id !== C.Ik.FRECENCY || o.inputType === v.y$.PLACEHOLDER) return (0, r.jsx)(S.A, {}, s);
+        let l = q.find(e => e.id === o.applicationId);
         return (0, r.jsx)(f.Ay.NewCommand, {
           index: e,
-          command: s,
+          command: o,
           channel: n,
           className: R.D5,
-          selected: F === e,
-          showImage: a.section.id !== s.applicationId,
+          selected: V === e,
+          showImage: a.section.id !== o.applicationId,
           section: l,
-          onClick: () => el(s, l, (0, A.$S)(a.section)),
+          onClick: () => el(o, l, (0, A.$S)(a.section)),
           onHover: () => {
             H(null), K(false)
           }
-        }, o)
-      }, [n, X, el, q, F]),
+        }, s)
+      }, [n, Q, el, q, V]),
       ef = (0, h.GV)();
-    return (0, p.gf)(ef, true, (0, f.aI)(F)), i.useEffect(() => () => {
+    return (0, p.gf)(ef, true, (0, f.aI)(V)), i.useEffect(() => () => {
       (0, p.nQ)()
     }, []), (0, r.jsxs)(f.Ay, {
       id: ef,
@@ -219,7 +219,7 @@ let D = 512,
         sections: q,
         filteredSectionId: $,
         activeCategoryIndex: z,
-        onSectionClick: eo,
+        onSectionClick: es,
         applicationCommandListRef: Y
       }), (0, r.jsx)(_.A, {
         role: "listbox",
@@ -230,9 +230,9 @@ let D = 512,
         renderSection: eu,
         renderSectionHeader: ec,
         rowCount: Z.length,
-        rowCountBySection: es,
-        rowHeight: L,
-        sectionHeaderHeight: M,
+        rowCountBySection: eo,
+        rowHeight: x,
+        sectionHeaderHeight: j,
         sectionMarginBottom: ea,
         ref: Y,
         stickyHeaders: true

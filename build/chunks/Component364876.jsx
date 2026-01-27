@@ -1,5 +1,5 @@
 /** Chunk was on 2824 **/
-/** chunk id: 364876, original params: e,t,n (module,exports,require) **/
+/** chunk id: 364876, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   _: () => f
 });
@@ -18,39 +18,39 @@ var Chunk627968 = require("./627968.js"),
 
 function f() {
   var e;
-  let t = (0, s.bG)([c.A], () => {
+  let n = (0, s.bG)([c.A], () => {
       let e = c.A.getMarketingComponentByType(i.C.GIFT_CUSTOMIZATION_BANNER);
       return null == e || "giftCustomizationBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftCustomizationBanner
     }),
     {
-      claimableRewards: n
+      claimableRewards: t
     } = (0, o.Pv)(),
-    f = (0, u.T)(null == t ? true : t.asset),
-    y = (0, u.T)(null == t ? true : t.backgroundAsset),
-    j = null == t ? true : t.gradient,
-    b = null != j && null != j.colors && j.colors.length >= 2 ? (0, d.K5)({
-      gradient: j.colors,
-      angle: null != (e = j.angle) ? e : true
+    f = (0, u.T)(null == n ? true : n.asset),
+    j = (0, u.T)(null == n ? true : n.backgroundAsset),
+    E = null == n ? true : n.gradient,
+    x = null != E && null != E.colors && E.colors.length >= 2 ? (0, d.K5)({
+      gradient: E.colors,
+      angle: null != (e = E.angle) ? e : true
     }, {
       colorStops: [0, 12, 100]
     }) : true,
-    h = l.useMemo(() => (0, d.gc)(null != y ? y : true), [y]),
-    v = l.useMemo(() => (0, d.x)(h, b, {
+    h = r.useMemo(() => (0, d.gc)(null != j ? j : true), [j]),
+    T = r.useMemo(() => (0, d.x)(h, x, {
       backgroundSize: "cover, auto",
       backgroundPosition: "right center, 0% 0%"
-    }), [h, b]);
-  return null == t || null == n ? null : (0, r.jsxs)("div", {
+    }), [h, x]);
+  return null == n || null == t ? null : (0, l.jsxs)("div", {
     className: g.qD,
-    style: v,
-    children: [(0, r.jsx)("div", {
+    style: T,
+    children: [(0, l.jsx)("div", {
       className: g.my,
-      children: (0, r.jsx)(p.A, {
-        claimableRewards: n,
+      children: (0, l.jsx)(p.A, {
+        claimableRewards: t,
         maxRewardImageSrc: null != f ? f : "",
         size: a._3J.SIZE_40,
         imageScaling: 1.25
       })
-    }), (0, r.jsx)(a.Text, {
+    }), (0, l.jsx)(a.Text, {
       variant: "text-md/medium",
       className: g._M,
       color: "always-white",

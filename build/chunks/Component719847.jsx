@@ -1,7 +1,7 @@
-/** Chunk was on 80212 **/
-/** chunk id: 719847, original params: t,e,s (module,exports,require) **/
+/** Chunk was on 92201 **/
+/** chunk id: 719847, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => A
+  default: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,80 +23,80 @@ var Chunk627968 = require("./627968.js"),
   Chunk801059 = require("./801059.js"),
   Chunk22789 = require("./22789.js");
 
-function A(t) {
+function j(e) {
   let {
-    onClose: e,
-    transitionState: s,
-    appId: A,
-    guildId: b
-  } = t, v = (0, c.bG)([p.A], () => p.A.getApplication(A), [A]), [y, T] = a.useState(() => p.A.isFetchingApplication(A) ? {
+    onClose: t,
+    transitionState: r,
+    appId: j,
+    guildId: O
+  } = e, w = (0, o.bG)([C.A], () => C.A.getApplication(j), [j]), [m, S] = n.useState(() => C.A.isFetchingApplication(j) ? {
     status: 1
   } : {
     status: 0
   });
-  a.useEffect(() => {
-    0 === y.status && (T({
+  n.useEffect(() => {
+    0 === m.status && (S({
       status: 1
-    }), l.Ay.fetchApplication(A).then(() => {
-      T({
+    }), a.Ay.fetchApplication(j).then(() => {
+      S({
         status: 2
       })
-    }).catch(t => {
-      T({
+    }).catch(e => {
+      S({
         status: 3,
-        error: t.message
+        error: e.message
       })
     }))
-  }, [A, y.status]);
+  }, [j, m.status]);
   let {
-    subscriptions: E,
-    otps: O
-  } = (0, x.C)(A);
-  if (null == v) return null;
-  let P = g.intl.formatToPlainString(g.t.XDRjs5, {
-      appName: v.name
+    subscriptions: v,
+    otps: P
+  } = (0, f.C)(j);
+  if (null == w) return null;
+  let A = y.intl.formatToPlainString(y.t.XDRjs5, {
+      appName: w.name
     }),
-    k = (0, i.jsx)("div", {
-      className: j.K,
-      children: (0, i.jsx)(_.h, {})
+    D = (0, i.jsx)("div", {
+      className: L.K,
+      children: (0, i.jsx)(p.h, {})
     }),
-    w = d.p5 ? (0, i.jsx)(o.K0, {
-      "aria-label": g.intl.string(g.t.WqhZss),
-      icon: () => (0, i.jsx)(o.qYV, {
+    E = d.p5 ? (0, i.jsx)(c.K0, {
+      "aria-label": y.intl.string(y.t.WqhZss),
+      icon: () => (0, i.jsx)(c.qYV, {
         size: "sm"
       }),
       onClick: () => {
-        let t = "".concat(location.protocol, "//").concat(location.host).concat(f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A, m.GlobalDiscoveryAppsSections.STORE));
-        (0, d.C)(t, () => (0, o.showToast)((0, o.createToast)(g.intl.string(g.t["L/PwZf"]), o.ToastType.SUCCESS))), (0, u.K)(A, u.C.STORE_MODAL)
+        let e = "".concat(location.protocol, "//").concat(location.host).concat(_.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(j, g.GlobalDiscoveryAppsSections.STORE));
+        (0, d.C)(e, () => (0, c.showToast)((0, c.createToast)(y.intl.string(y.t["L/PwZf"]), c.ToastType.SUCCESS))), (0, u.K)(j, u.C.STORE_MODAL)
       },
       variant: "icon-only"
     }) : true;
-  return (0, i.jsxs)(n.dWK, {
-    transitionState: s,
-    "aria-label": P,
-    onClose: e,
+  return (0, i.jsxs)(s.dWK, {
+    transitionState: r,
+    "aria-label": A,
+    onClose: t,
     size: "xxl",
-    children: [(0, i.jsx)(n.rQ0, {
-      leading: k,
-      title: P,
-      trailing: w
-    }), (0, i.jsx)(r.A, {
+    children: [(0, i.jsx)(s.rQ0, {
+      leading: D,
+      title: A,
+      trailing: E
+    }), (0, i.jsx)(l.A, {
       children: (0, i.jsx)("main", {
-        className: C.bodyInner,
-        children: (0, i.jsx)(h.Mp, {
-          app: v,
-          guildId: b,
-          subscriptions: E,
-          otps: O
+        className: x.bodyInner,
+        children: (0, i.jsx)(b.Mp, {
+          app: w,
+          guildId: O,
+          subscriptions: v,
+          otps: P
         })
       })
-    }), (0, i.jsx)(n.jlY, {
-      children: (0, i.jsx)(o.Text, {
+    }), (0, i.jsx)(s.jlY, {
+      children: (0, i.jsx)(c.Text, {
         variant: "text-md/normal",
-        children: null != v.termsOfServiceUrl || null != v.privacyPolicyUrl ? (0, i.jsx)(S.A, {
-          termsOfServiceUrl: v.termsOfServiceUrl,
-          privacyPolicyUrl: v.privacyPolicyUrl
-        }) : g.intl.string(g.t["3ZY+0D"])
+        children: null != w.termsOfServiceUrl || null != w.privacyPolicyUrl ? (0, i.jsx)(h.A, {
+          termsOfServiceUrl: w.termsOfServiceUrl,
+          privacyPolicyUrl: w.privacyPolicyUrl
+        }) : y.intl.string(y.t["3ZY+0D"])
       })
     })]
   })

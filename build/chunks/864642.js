@@ -47,7 +47,7 @@ function O() {
 
 function v(e = true) {
   let t = (0, h.i)({
-    parsers: [new r.A, new s.A, new _.A, new o.A, new l.A],
+    parsers: [new r.A, new o.A, new _.A, new s.A, new l.A],
     refiners: [new p.A, new c.A, new i.A]
   }, e);
   return t.refiners = t.refiners.filter(e => !(e instanceof m.A)), t

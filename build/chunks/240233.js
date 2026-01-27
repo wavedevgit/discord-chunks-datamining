@@ -24,21 +24,21 @@ function f(e, t, n) {
 let p = false;
 class _ extends Chunk439372.A {
   _initialize() {
-    s.h.subscribe("CONNECTION_OPEN", () => this.handleConnectionOpen()), this.handleConnectionOpen()
+    o.h.subscribe("CONNECTION_OPEN", () => this.handleConnectionOpen()), this.handleConnectionOpen()
   }
   _terminate() {
-    s.h.unsubscribe("CONNECTION_OPEN", () => this.handleConnectionOpen())
+    o.h.unsubscribe("CONNECTION_OPEN", () => this.handleConnectionOpen())
   }
   constructor({
     onSwitchStart: e,
     onSwitchSuccess: t,
     onSwitchError: n,
-    onTokenSet: s
+    onTokenSet: o
   }) {
     super(), f(this, "onSwitchStart", true), f(this, "onSwitchSuccess", true), f(this, "onSwitchError", true), f(this, "onTokenSet", true), f(this, "actions", {
       LOGOUT: e => this.handleLogout(e)
     }), f(this, "handleConnectionOpen", () => {
-      var e, t, n, s, o, f;
+      var e, t, n, o, s, f;
       let _ = l.default.getCurrentUser();
       if (null == _) return;
       if (null != i) {
@@ -52,8 +52,8 @@ class _ extends Chunk439372.A {
           c.default.track(d.HAw.MULTI_ACCOUNT_SWITCH_SUCCESS, {
             from_user_id: i,
             linked_user_ids: e
-          }), null == (n = (s = this).onSwitchSuccess) || n.call(s, _, p)
-        } else c.default.track(d.HAw.MULTI_ACCOUNT_SWITCH_FAILURE), null == (o = (f = this).onSwitchError) || o.call(f, _);
+          }), null == (n = (o = this).onSwitchSuccess) || n.call(o, _, p)
+        } else c.default.track(d.HAw.MULTI_ACCOUNT_SWITCH_FAILURE), null == (s = (f = this).onSwitchError) || s.call(f, _);
         i = null
       }
       r = _.id;
@@ -65,6 +65,6 @@ class _ extends Chunk439372.A {
         i = r, null == (t = (n = this).onSwitchStart) || t.call(n), p = !!e.goHomeAfterSwitching
       } else p = false, a.removeToken(r);
       r = null
-    }), this.onSwitchStart = e, this.onSwitchSuccess = t, this.onSwitchError = n, this.onTokenSet = s
+    }), this.onSwitchStart = e, this.onSwitchSuccess = t, this.onSwitchError = n, this.onTokenSet = o
   }
 }

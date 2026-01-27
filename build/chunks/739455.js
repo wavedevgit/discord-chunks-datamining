@@ -35,16 +35,16 @@ function g(e) {
 function E(e, t, n) {
   let r = (0, a.bG)([u.A], () => u.A.getSubscriptionListingsForGuild(e)),
     i = (0, d.y)(t => t.editStateIdsForGroup[e]),
-    s = (0, d.y)(e => e.listings);
+    o = (0, d.y)(e => e.listings);
   if (true === n || true === t) return null;
-  let o = r.filter(e => !e.soft_deleted && !e.archived).map(e => e.subscription_plans[0].price),
+  let s = r.filter(e => !e.soft_deleted && !e.archived).map(e => e.subscription_plans[0].price),
     l = [];
   true !== i && i.forEach(e => {
-    let t = s[e],
+    let t = o[e],
       n = null == t ? true : t.priceTier;
     null != n && l.push(n)
   });
-  let c = new Set(l.concat(o));
+  let c = new Set(l.concat(s));
   if (!c.has(n)) return null;
   let f = t.indexOf(n);
   if (false === f) return null;
@@ -79,7 +79,7 @@ function b(e) {
   let t = y(e);
   m[e] = t, t.forEach(e => {
     let t = e.set("flags", h.lx.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
-    s.h.dispatch({
+    o.h.dispatch({
       type: "CHANNEL_CREATE",
       channel: t
     })
@@ -89,7 +89,7 @@ function b(e) {
 function O(e) {
   var t;
   (null != (t = m[e]) ? t : y(e)).forEach(e => {
-    s.h.dispatch({
+    o.h.dispatch({
       type: "CHANNEL_DELETE",
       channel: e
     })
@@ -100,7 +100,7 @@ async function v(e, t) {
     r = [];
   t.forEach(t => {
     let i = p.A.getChannel(t.ref_id);
-    null != i && (n.push(o.A.createRoleSubscriptionTemplateChannel(e, i.name, i.type, i.topic)), r.push(i))
+    null != i && (n.push(s.A.createRoleSubscriptionTemplateChannel(e, i.name, i.type, i.topic)), r.push(i))
   }), 0 === n.length || (await Promise.allSettled(n)).forEach((n, i) => {
     let a = r[i].id;
     if ("fulfilled" === n.status) {
@@ -129,34 +129,34 @@ function A(e, t) {
     templateCategory: null,
     hasChangeFromTemplate: null
   };
-  let s = p.A.getTemplateWithCategory(t, a);
-  if (null == s) return {
+  let o = p.A.getTemplateWithCategory(t, a);
+  if (null == o) return {
     templateCategory: null,
     hasChangeFromTemplate: null
   };
-  let o = s.listings[0];
-  if ((null == i ? true : i.name) !== o.name || (null == i ? true : i.description) !== o.description || (null == i ? true : i.priceTier) !== o.price_tier || (null == i ? true : i.image) !== o.image || (null == i ? true : i.roleColor) !== o.role_color || (null == i || null == (n = i.channelBenefits) ? true : n.length) !== o.channels.length || (null == i || null == (r = i.intangibleBenefits) ? true : r.length) !== o.additional_perks.length) return {
-    templateCategory: s.category,
+  let s = o.listings[0];
+  if ((null == i ? true : i.name) !== s.name || (null == i ? true : i.description) !== s.description || (null == i ? true : i.priceTier) !== s.price_tier || (null == i ? true : i.image) !== s.image || (null == i ? true : i.roleColor) !== s.role_color || (null == i || null == (n = i.channelBenefits) ? true : n.length) !== s.channels.length || (null == i || null == (r = i.intangibleBenefits) ? true : r.length) !== s.additional_perks.length) return {
+    templateCategory: o.category,
     hasChangeFromTemplate: true
   };
-  for (let e = 0; e < o.channels.length; e++) {
+  for (let e = 0; e < s.channels.length; e++) {
     let t = i.channelBenefits[e],
-      n = o.channels[e];
+      n = s.channels[e];
     if (t.name !== n.name || t.description !== n.description || t.emoji_name !== n.emoji_name) return {
-      templateCategory: s.category,
+      templateCategory: o.category,
       hasChangeFromTemplate: true
     }
   }
-  for (let e = 0; e < o.additional_perks.length; e++) {
+  for (let e = 0; e < s.additional_perks.length; e++) {
     let t = i.intangibleBenefits[e],
-      n = o.additional_perks[e];
+      n = s.additional_perks[e];
     if (t.name !== n.name || t.description !== n.description || t.emoji_name !== n.emoji_name) return {
-      templateCategory: s.category,
+      templateCategory: o.category,
       hasChangeFromTemplate: true
     }
   }
   return {
-    templateCategory: s.category,
+    templateCategory: o.category,
     hasChangeFromTemplate: false
   }
 }

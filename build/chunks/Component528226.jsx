@@ -12,7 +12,7 @@ let a = e => {
     bannerSrc: t,
     logoSrc: n,
     backgroundColor: a,
-    children: s
+    children: o
   } = e;
   return (0, r.jsxs)("div", {
     className: i.ZK,
@@ -24,9 +24,9 @@ let a = e => {
       src: n,
       className: i.wm,
       alt: ""
-    }), null != s && (0, r.jsx)("div", {
+    }), null != o && (0, r.jsx)("div", {
       className: i.Y_,
-      children: s
+      children: o
     })]
   })
 }

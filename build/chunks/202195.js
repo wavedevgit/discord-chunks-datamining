@@ -21,14 +21,14 @@ function p(e) {
       if (!t || e.author_type !== i.ContentInventoryAuthorType.USER) return null;
       let n = d.A.getVoiceStateForUser(e.author_id),
         r = l.A.getChannel(null == n ? true : n.channelId),
-        s = "channel_id" in e ? e.channel_id : null;
-      return (null == s || s === (null == n ? true : n.channelId)) && (null == r || (0, a.A)(r, c.A)) ? r : null
+        o = "channel_id" in e ? e.channel_id : null;
+      return (null == o || o === (null == n ? true : n.channelId)) && (null == r || (0, a.A)(r, c.A)) ? r : null
     }, [e, t]),
     p = (0, r.bG)([u.A], () => null != t ? u.A.getPrimaryActivity(e.author_id, null == n ? true : n.guild_id) : null, [n, e.author_id, t]),
-    _ = (0, r.bG)([o.A], () => t ? o.A.getStreamForUser(e.author_id, null == n ? true : n.guild_id) : null, [n, e.author_id, t]),
+    _ = (0, r.bG)([s.A], () => t ? s.A.getStreamForUser(e.author_id, null == n ? true : n.guild_id) : null, [n, e.author_id, t]),
     {
       previewUrl: h
-    } = (0, s.A)(null == _ ? true : _.guildId, null == _ ? true : _.channelId, null == _ ? true : _.ownerId);
+    } = (0, o.A)(null == _ ? true : _.guildId, null == _ ? true : _.channelId, null == _ ? true : _.ownerId);
   return {
     channel: n,
     activity: p,

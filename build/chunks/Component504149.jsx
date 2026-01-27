@@ -18,11 +18,11 @@ function u(e) {
     height: n,
     offset: r,
     delta: i
-  } = e, a = t > window.innerWidth, s = n > window.innerHeight, o = (window.innerWidth - t) / 2 + r.x, l = (window.innerHeight - n) / 2 + r.y, c = (window.innerWidth + t) / 2 + r.x, u = (window.innerHeight + n) / 2 + r.y, {
+  } = e, a = t > window.innerWidth, o = n > window.innerHeight, s = (window.innerWidth - t) / 2 + r.x, l = (window.innerHeight - n) / 2 + r.y, c = (window.innerWidth + t) / 2 + r.x, u = (window.innerHeight + n) / 2 + r.y, {
     x: d,
     y: f
   } = r;
-  return a && (d += i.x, o + i.x > 0 && (d = (t - window.innerWidth) / 2), c + i.x < window.innerWidth && (d = (window.innerWidth - t) / 2)), s && (f += i.y, l + i.y > 0 && (f = (n - window.innerHeight) / 2), u + i.y < window.innerHeight && (f = (window.innerHeight - n) / 2)), {
+  return a && (d += i.x, s + i.x > 0 && (d = (t - window.innerWidth) / 2), c + i.x < window.innerWidth && (d = (window.innerWidth - t) / 2)), o && (f += i.y, l + i.y > 0 && (f = (n - window.innerHeight) / 2), u + i.y < window.innerHeight && (f = (window.innerHeight - n) / 2)), {
     x: d,
     y: f
   }
@@ -42,7 +42,7 @@ function d(e) {
     ref: m,
     width: g,
     height: E
-  } = (0, s.Ay)(), [y, b] = [null != g ? g : 0, null != E ? E : 0], O = i.useRef(false), [v, A] = i.useState({
+  } = (0, o.Ay)(), [y, b] = [null != g ? g : 0, null != E ? E : 0], O = i.useRef(false), [v, A] = i.useState({
     x: 0,
     y: 0
   }), I = (e, t) => {
@@ -69,7 +69,7 @@ function d(e) {
   }, T = e => {
     if (!_) {
       if (0 === e.button) {
-        (0, o.Yq)(o.NJ.ZOOM_IN_IMAGE_PRESSED), h(true);
+        (0, s.Yq)(s.NJ.ZOOM_IN_IMAGE_PRESSED), h(true);
         let t = e.clientX - window.innerWidth / 2,
           r = e.clientY - window.innerHeight / 2,
           i = u({
@@ -87,7 +87,7 @@ function d(e) {
         p(i.x, i.y)
       }
       return
-    }(e.clientX - v.x) ** 2 + (e.clientY - v.y) ** 2 < c && ((0, o.Yq)(o.NJ.ZOOM_OUT_IMAGE_PRESSED), h(false)), O.current = false
+    }(e.clientX - v.x) ** 2 + (e.clientY - v.y) ** 2 < c && ((0, s.Yq)(s.NJ.ZOOM_OUT_IMAGE_PRESSED), h(false)), O.current = false
   };
   return (0, r.jsx)(a.animated.div, {
     ref: m,

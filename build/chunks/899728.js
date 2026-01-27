@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 899728, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 899728, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => p
 });
 var Chunk311907 = require("./311907.js"),
   Chunk988506 = require("./988506.js"),
@@ -14,41 +13,34 @@ var Chunk311907 = require("./311907.js"),
   Chunk88001 = require("./88001.js"),
   Chunk519412 = require("./519412.js"),
   Chunk985018 = require("./985018.jsx");
-let p = e => {
-    if (null == e) return null;
-    let t = e.planIdFromItems;
-    if (null == t) return null;
-    let n = a.A.get(t);
-    if (null == n) return null;
-    let r = o.Ay.getPrice(t),
-      i = (0, l.$g)(r.amount, r.currency),
-      s = n.interval,
-      c = n.intervalCount;
-    return (0, l.CE)(i, s, c)
-  },
-  _ = e => null == e ? null : f.intl.format(d.default.Nu9LNm, {
-    primaryName: e,
-    premiumGroupProductName: (0, u.DP)()
-  }),
-  h = (e, t, n) => {
-    let r = e === i.qT.PRIMARY ? p(n) : _(t);
-    return null == r ? "..." : r
-  },
-  m = (e, t) => e === i.qT.PRIMARY ? f.intl.format(d.default["+R/K74"], {
-    helpCenterLink: u.TE,
-    premiumGroupProductName: (0, u.DP)()
-  }) : f.intl.format(t ? d.default["xF+upx"] : d.default.qqfnOm, {
-    helpCenterLink: u.TE
-  }),
-  g = (e, t) => {
-    let n = e === i.qT.MEMBER,
-      a = (0, c.A)({
-        useCachedData: true,
-        fetch: n
-      }),
-      o = (0, r.bG)([s.A], () => s.A.getPremiumGroupSubscription());
-    return e === i.qT.UNSPECIFIED ? null : {
-      subheaderString: h(e, a, o),
-      bodyString: m(e, t)
-    }
+let p = (e, t) => {
+  let n, p = e === i.qT.MEMBER,
+    m = (0, c.A)({
+      useCachedData: true,
+      fetch: p
+    }),
+    g = (0, r.bG)([s.A], () => s.A.getPremiumGroupSubscription());
+  return e === i.qT.UNSPECIFIED ? null : {
+    subheaderString: null == (n = e === i.qT.PRIMARY ? (e => {
+      if (null == e) return null;
+      let t = e.planIdFromItems;
+      if (null == t) return null;
+      let n = l.A.get(t);
+      if (null == n) return null;
+      let r = a.Ay.getPrice(t),
+        i = (0, o.$g)(r.amount, r.currency),
+        s = n.interval,
+        c = n.intervalCount;
+      return (0, o.CE)(i, s, c)
+    })(g) : null == m ? null : _.intl.format(u.default.Nu9LNm, {
+      primaryName: m,
+      premiumGroupProductName: (0, d.DP)()
+    })) ? "..." : n,
+    bodyString: e === i.qT.PRIMARY ? _.intl.format(u.default["+R/K74"], {
+      helpCenterLink: d.TE,
+      premiumGroupProductName: (0, d.DP)()
+    }) : _.intl.format(t ? u.default["xF+upx"] : u.default.qqfnOm, {
+      helpCenterLink: d.TE
+    })
   }
+}

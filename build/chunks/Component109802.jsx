@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk421380 = require("./421380.js"),
   Chunk397927 = require("./397927.js"),
   Chunk235986 = require("./235986.jsx"),
@@ -40,12 +40,12 @@ class m extends(r = Chunk64700.PureComponent) {
       value: n,
       mode: r,
       autoFocus: a,
-      spellCheck: s,
+      spellCheck: o,
       inputClassName: l,
       placeholder: c
     } = this.props, u = null == (t = this.context) ? true : t.titleId;
     return (0, i.jsx)("input", {
-      className: o()((0, d.t)(p, "input", r), l, {
+      className: s()((0, d.t)(p, "input", r), l, {
         [p.inputHidden]: e
       }),
       ref: this.inputRef,
@@ -55,7 +55,7 @@ class m extends(r = Chunk64700.PureComponent) {
       readOnly: true,
       "aria-labelledby": u,
       autoFocus: a,
-      spellCheck: s,
+      spellCheck: o,
       placeholder: c
     })
   }
@@ -65,7 +65,7 @@ class m extends(r = Chunk64700.PureComponent) {
         mode: n,
         hideMessage: r,
         className: a,
-        buttonLook: s,
+        buttonLook: o,
         supportsCopy: _,
         disabled: m
       } = this.props,
@@ -84,7 +84,7 @@ class m extends(r = Chunk64700.PureComponent) {
       focusTarget: this.inputRef,
       ringTarget: this.containerRef,
       children: (0, i.jsx)("div", {
-        className: o()((0, d.t)(p, "copyInput", n), a),
+        className: s()((0, d.t)(p, "copyInput", n), a),
         ref: this.containerRef,
         children: (0, i.jsxs)(u.A, {
           className: p.layout,
@@ -106,7 +106,7 @@ class m extends(r = Chunk64700.PureComponent) {
               onClick: this.handleButtonClick,
               size: l.lO.MIN,
               color: e,
-              look: s,
+              look: o,
               disabled: m,
               children: t
             })

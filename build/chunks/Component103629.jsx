@@ -1,7 +1,7 @@
 /** Chunk was on 12970 **/
 /** chunk id: 103629, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,21 +16,21 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f(e, t) {
+function b(e, t) {
   let n = (0, l.bG)([d.A], () => null != e && d.A.canWithPartialContext(A.xBc.MANAGE_MESSAGES, {
       channelId: e
     }), [e]),
-    f = (0, l.bG)([c.A], () => c.A.getChannel(e), [e]),
-    O = (0, l.bG)([s.A], () => null != e && null != t ? s.A.getMessage(e, t) : null),
-    g = (0, o.kZ)(null != O ? O : null);
-  if (null == f || null == O) return null;
+    b = (0, l.bG)([c.A], () => c.A.getChannel(e), [e]),
+    E = (0, l.bG)([s.A], () => null != e && null != t ? s.A.getMessage(e, t) : null),
+    g = (0, o.kZ)(null != E ? E : null);
+  if (null == b || null == E) return null;
   let y = null != g && g.actions.hasOwnProperty(a.G.SET_COMPLETED) ? a.G.UNSET_COMPLETED : a.G.SET_COMPLETED,
-    p = y === a.G.SET_COMPLETED ? b.intl.string(b.t.VWNyUu) : b.intl.string(b.t.l9GqxI);
+    f = y === a.G.SET_COMPLETED ? O.intl.string(O.t.VWNyUu) : O.intl.string(O.t.l9GqxI);
   return n && null != t ? (0, r.jsx)(i.Drp, {
     id: "mark-automod-alert-completed",
-    label: p,
+    label: f,
     action: () => {
-      (0, u.E5)(t, f, y)
+      (0, u.E5)(t, b, y)
     }
   }, "mark-automod-alert-completed") : null
 }

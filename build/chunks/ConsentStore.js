@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -37,21 +37,21 @@ function f(e) {
   let {
     consents: t
   } = e;
-  null != t && (u = o({}, u, t), c = true)
+  null != t && (u = s({}, u, t), c = true)
 }
 
 function p(e) {
   let {
     consents: t
   } = e;
-  u = o({}, t), l = true
+  u = s({}, t), l = true
 }
 
 function _(e) {
   let {
     consents: t
   } = e;
-  u = o({}, t), l = true
+  u = s({}, t), l = true
 }
 
 function h(e) {
@@ -78,7 +78,7 @@ class g extends(r = Chunk311907.Ay.Store) {
     return d
   }
 }
-s(g, "displayName", "ConsentStore");
+o(g, "displayName", "ConsentStore");
 let E = new g(Chunk73153.h, {
   CONNECTION_OPEN: f,
   OVERLAY_INITIALIZE: p,

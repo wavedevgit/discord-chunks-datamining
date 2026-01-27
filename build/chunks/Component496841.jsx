@@ -81,8 +81,8 @@ function y(e) {
     onCallJoined: p
   } = e, h = g(e, ["channel", "centerButton", "onCallJoined"]), {
     parentAnalyticsLocation: E
-  } = (0, o.Ay)(), y = n ? u.l : u.A, b = t.isManaged() || !t.isPrivate() ? f.intl.string(f.t.S0W8Z5) : f.intl.string(f.t["0D/6Rz"]), O = i.useCallback(() => {
-    null == p || p(), (0, l.X)(E, l.O.JOIN_CALL), s.default.selectVoiceChannel(t.id)
+  } = (0, s.Ay)(), y = n ? u.l : u.A, b = t.isManaged() || !t.isPrivate() ? f.intl.string(f.t.S0W8Z5) : f.intl.string(f.t["0D/6Rz"]), O = i.useCallback(() => {
+    null == p || p(), (0, l.X)(E, l.O.JOIN_CALL), o.default.selectVoiceChannel(t.id)
   }, [t.id, p, E]);
   return i.useEffect(() => (c._.subscribe(d.jej.CALL_ACCEPT, O), () => {
     c._.unsubscribe(d.jej.CALL_ACCEPT, O)

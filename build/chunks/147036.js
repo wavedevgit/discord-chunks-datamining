@@ -3,18 +3,18 @@
 "use strict";
 require.d(exports, {
   CG: () => T,
-  DJ: () => V,
+  DJ: () => F,
   IP: () => w,
-  Jg: () => L,
+  Jg: () => x,
   Jz: () => P,
   Pd: () => R,
-  QG: () => j,
+  QG: () => M,
   af: () => G,
   an: () => a.A,
-  fK: () => x,
+  fK: () => L,
   n: () => k,
   n3: () => C,
-  vJ: () => M,
+  vJ: () => j,
   we: () => N
 }), require("./65821.js"), require("./321073.js"), require("./896048.js");
 var Chunk136722 = require("./136722.js"),
@@ -93,14 +93,14 @@ function w(e) {
 function R(e, t, n) {
   var r, i;
   let a = e.getGuildId(),
-    o = n.getGuild(a),
-    l = null != (r = null == o ? true : o.maxVideoChannelUsers) ? r : false,
-    c = null != (i = null == o ? true : o.maxStageVideoChannelUsers) ? i : false,
+    s = n.getGuild(a),
+    l = null != (r = null == s ? true : s.maxVideoChannelUsers) ? r : false,
+    c = null != (i = null == s ? true : s.maxStageVideoChannelUsers) ? i : false,
     u = _.Ay.countVoiceStatesForChannel(e.id),
     d = _.Ay.getVoiceStatesForChannel(e),
     p = f.A.can(g.xBc.MOVE_MEMBERS, e) && f.A.can(g.xBc.CONNECT, e),
     h = false;
-  h = e.type === v ? null != a && (t.hasVideo(e.id) || (0, s.t)(d)) && c > 0 && u >= c : null != a && t.hasVideo(e.id) && l > 0 && u >= l + +!!p;
+  h = e.type === v ? null != a && (t.hasVideo(e.id) || (0, o.t)(d)) && c > 0 && u >= c : null != a && t.hasVideo(e.id) && l > 0 && u >= l + +!!p;
   let m = e.userLimit > 0 && u >= e.userLimit;
   return h || m && !p
 }
@@ -125,7 +125,7 @@ function D(e) {
   }), a
 }
 
-function x(e) {
+function L(e) {
   let {
     channels: t,
     selectedChannelId: n,
@@ -140,7 +140,7 @@ function x(e) {
   }).map(e => e.user)
 }
 
-function L(e) {
+function x(e) {
   let {
     type: t
   } = e;
@@ -170,7 +170,7 @@ function L(e) {
   }
 }
 
-function j(e) {
+function M(e) {
   if (null == e) return "text";
   let t = e.isMediaChannel();
   if (e.type === g.rbe.GUILD_VOICE) return f.A.can(g.xBc.CONNECT, e) ? "voice" : "voice-locked";
@@ -181,7 +181,7 @@ function j(e) {
   else if (c.k3.has(e.type)) return "text"
 }
 
-function M(e) {
+function j(e) {
   let t, n = u.A.getChannel(p.A.getLastSelectedChannelId());
   if (null != n && n.getGuildId() === e && n.type === g.rbe.GUILD_TEXT) t = n.id;
   else {
@@ -202,11 +202,11 @@ function U(e, t, n, r) {
 
 function G(e, t, n, r) {
   let i, a = e.getGuildId(),
-    s = (0, o.$m)(a, t);
-  return null != t && s ? U(a, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : k(a, e.id, n)
+    o = (0, s.$m)(a, t);
+  return null != t && o ? U(a, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : k(a, e.id, n)
 }
 
-function V(e) {
+function F(e) {
   if (null == e) return null;
   switch (e.type) {
     case g.rbe.GUILD_ANNOUNCEMENT:

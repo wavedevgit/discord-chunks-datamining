@@ -36,7 +36,7 @@ let u = [],
     g.set(e.tab, u), h.set(e.tab, false), _.set(e.tab, e.error), f.set(e.tab, Date.now()), m.set(e.tab, true)
   },
   O = e => {
-    null != e.appliedUserDiscounts && e.appliedUserDiscounts.some(e => e.discount.id === l.eR || e.discount.id === l.Qz || e.discount.id === l.tU) && m.set(o.G2.HOME, true)
+    null != e.appliedUserDiscounts && e.appliedUserDiscounts.some(e => e.discount.id === l.eR || e.discount.id === l.Qz || e.discount.id === l.tU) && m.set(s.G2.HOME, true)
   },
   v = () => {
     g.clear(), p.clear(), _.clear(), h.clear(), d.clear(), f.clear(), m.clear(), r = true

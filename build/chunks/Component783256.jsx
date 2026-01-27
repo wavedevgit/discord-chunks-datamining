@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk544420 = require("./544420.js"),
@@ -27,7 +27,7 @@ let v = 4;
 
 function A(e) {
   let t = (0, u.A)(e.map(e => e.applicationId));
-  return (0, o.cf)([d.A], () => Object.fromEntries(t.filter(p.Vq).map(e => [e.id, d.A.getGameByApplication(e)]).filter(e => {
+  return (0, s.cf)([d.A], () => Object.fromEntries(t.filter(p.Vq).map(e => [e.id, d.A.getGameByApplication(e)]).filter(e => {
     let [t, n] = e;
     return null != n
   })))
@@ -46,7 +46,7 @@ function I(e) {
       var t;
       return null == (t = I[e.applicationId]) ? true : t.id
     }
-  }).filter(p.Vq).flat())], [t, I]), C = (0, o.bG)([d.A], () => d.A.canFetchDetectableGames()), [N, w] = (0, i.useState)([]), {
+  }).filter(p.Vq).flat())], [t, I]), C = (0, s.bG)([d.A], () => d.A.canFetchDetectableGames()), [N, w] = (0, i.useState)([]), {
     themeType: R
   } = (0, E.E)(), P = R === y.d.SIDEBAR, D = (0, i.useRef)(false);
   return (0, i.useEffect)(() => {
@@ -73,7 +73,7 @@ function I(e) {
     },
     className: O.QF,
     children: (0, r.jsxs)(g.A.Overlay, {
-      className: s()(O.WH, a),
+      className: o()(O.WH, a),
       children: [(0, r.jsx)(l.Text, {
         variant: P ? "text-sm/medium" : "text-xs/medium",
         children: b.intl.string(b.t.JjiwFx)
@@ -100,7 +100,7 @@ function S(e) {
   return (0, r.jsxs)("div", {
     className: O.Kk,
     children: [(0, r.jsx)("img", {
-      className: s()({
+      className: o()({
         [O.um]: i
       }),
       src: t,

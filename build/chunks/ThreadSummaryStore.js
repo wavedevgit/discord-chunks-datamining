@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,31 +15,31 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = false;
+let s = false;
 
 function l() {
-  o = false
+  s = false
 }
 
 function c() {
-  o = true
+  s = true
 }
 
 function u() {
-  o = false
+  s = false
 }
 class d extends(r = Chunk311907.Ay.Store) {
   initialize() {
     l()
   }
   isInProgress() {
-    return o
+    return s
   }
   constructor(...e) {
-    super(...e), s(this, "summaryInProgress", false)
+    super(...e), o(this, "summaryInProgress", false)
   }
 }
-s(d, "displayName", "ThreadSummaryStore");
+o(d, "displayName", "ThreadSummaryStore");
 let f = new d(Chunk73153.h, {
   SUMMARIZE_THREAD_START: c,
   SUMMARIZE_THREAD_SUCCESS: u,

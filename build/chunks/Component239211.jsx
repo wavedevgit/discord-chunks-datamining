@@ -75,9 +75,9 @@ function m(e) {
     color: null != I ? I : "default",
     label: A ? d.intl.string(d.t.XyHpKH) : d.intl.string(d.t.l4Emac),
     action: A ? () => {
-      null == E || E(), s.A.unblockUser(O, {
+      null == E || E(), o.A.unblockUser(O, {
         location: y
-      }), o.A.showUnblockSuccessToast(O, null != _ ? _ : true)
+      }), s.A.showUnblockSuccessToast(O, null != _ ? _ : true)
     } : () => {
       (0, a.mMO)(async () => {
         let {

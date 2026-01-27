@@ -15,7 +15,7 @@ var Chunk976860 = require("./976860.js"),
 function u(e) {
   var t, n, u, d, f;
   let p = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return null != e && s.Le.has(e.type) ? {
+  return null != e && o.Le.has(e.type) ? {
     location: p ? (0, r.PR)() : true,
     thread_approximate_member_count: i.A.getMemberCount(e.id),
     thread_approximate_message_count: a.A.getCount(e.id),
@@ -23,7 +23,7 @@ function u(e) {
     thread_locked: null != (t = null == (d = e.threadMetadata) ? true : d.locked) && t,
     thread_auto_archive_duration_minutes: null != (n = null == (f = e.threadMetadata) ? true : f.autoArchiveDuration) ? n : 0,
     thread_approximate_creation_date: l.default.extractTimestamp(e.id),
-    can_send_message: o.A.can(c.xBc.SEND_MESSAGES, e),
+    can_send_message: s.A.can(c.xBc.SEND_MESSAGES, e),
     parent_channel_type: e.parentChannelThreadType
   } : null
 }

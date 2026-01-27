@@ -71,8 +71,8 @@ class b extends Chunk439372.A {
       CONNECTION_INTERRUPTED: () => this.clear(),
       SELF_PRESENCE_STORE_UPDATE: () => this.start()
     }), p(this, "start", () => {
-      m() && u.A.isCooldownElapsed() && null == this.timerId && y(s.A.getStatus()) && (this.timerId = setTimeout(() => {
-        this.timerId = null, !y(s.A.getStatus()) || u.A.isCooldownElapsed() && E()
+      m() && u.A.isCooldownElapsed() && null == this.timerId && y(o.A.getStatus()) && (this.timerId = setTimeout(() => {
+        this.timerId = null, !y(o.A.getStatus()) || u.A.isCooldownElapsed() && E()
       }, g()))
     }), p(this, "clear", () => {
       null != this.timerId && (clearTimeout(this.timerId), this.timerId = null)

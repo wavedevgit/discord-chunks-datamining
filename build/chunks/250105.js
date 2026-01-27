@@ -12,7 +12,7 @@ var Chunk720757 = require("./720757.js"),
   Chunk217222 = require("./217222.js");
 
 function l(e) {
-  return (0, r.A)(e, o.A, c, u)
+  return (0, r.A)(e, s.A, c, u)
 }
 
 function c(e, t) {
@@ -25,7 +25,7 @@ function c(e, t) {
       var n;
       return null != (n = a.default.getInstallationForTracking()) ? n : "";
     default:
-      (0, s.xb)(e)
+      (0, o.xb)(e)
   }
 }
 
@@ -39,6 +39,6 @@ function u(e, t) {
     case "installation":
       return null != r ? r : "";
     default:
-      (0, s.xb)(e)
+      (0, o.xb)(e)
   }
 }

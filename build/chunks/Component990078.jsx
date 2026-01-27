@@ -83,9 +83,9 @@ function g(e) {
     }, [A, I]),
     {
       tooltipId: D,
-      isVisible: x,
-      targetElementRef: L,
-      trigger: j
+      isVisible: L,
+      targetElementRef: x,
+      trigger: M
     } = (0, d.D)(_({
       children: t,
       targetElementRef: P,
@@ -93,38 +93,38 @@ function g(e) {
       containerTag: E,
       ariaHidden: C
     }, N)),
-    [M, k] = i.useState(false),
+    [j, k] = i.useState(false),
     {
       defaultLayerContext: U
-    } = (0, s.G98)(),
+    } = (0, o.G98)(),
     G = i.useMemo(() => null != m ? m : null == n || "" === n ? null : null != p && "" !== p ? (0, r.jsxs)("div", {
       className: f.Cl,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         children: n
-      }), (0, r.jsx)(o.e7I, {
+      }), (0, r.jsx)(s.e7I, {
         shortcut: p
       })]
     }) : n, [n, p, m]),
-    V = null != G && ("string" != typeof G || "" !== G),
-    F = x || M;
+    F = null != G && ("string" != typeof G || "" !== G),
+    V = L || j;
   i.useEffect(() => {
-    x && V ? k(true) : V || k(false)
-  }, [x, V]);
+    L && F ? k(true) : F || k(false)
+  }, [L, F]);
   let B = i.useCallback(() => {
       k(false)
     }, []),
     H = (0, u.j)({
-      shouldShow: x,
+      shouldShow: L,
       onExitComplete: B
     });
-  if (!V && (x || !M)) return t;
+  if (!F && (L || !j)) return t;
   if (null == t || !g && !i.isValidElement(t)) return null;
   let Y = null != T ? T : (0, c.Xj)(n),
     W = H((e, t) => t ? (0, r.jsx)(l.R, {
-      isVisible: x,
-      isRendered: F,
-      targetElementRef: L,
+      isVisible: L,
+      isRendered: V,
+      targetElementRef: x,
       targetElement: w,
       anchorRef: I,
       id: D,
@@ -138,7 +138,7 @@ function g(e) {
       positionKey: Y
     }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [j, C || null == G || "" === G ? null : (0, r.jsx)(a.A, {
+    children: [M, C || null == G || "" === G ? null : (0, r.jsx)(a.A, {
       id: D,
       children: G
     }), W]

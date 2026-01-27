@@ -20,10 +20,10 @@ var Chunk823598 = require("./823598.js"),
     }
     returnfalse
   },
-  supportsFeature: e => s.Ay.supportsFeature(e),
+  supportsFeature: e => o.Ay.supportsFeature(e),
   setProcessPriority(e) {
-    s.Ay.getDiscordUtils().setProcessPriority(e)
+    o.Ay.getDiscordUtils().setProcessPriority(e)
   },
-  getVoiceEngine: () => s.Ay.getVoiceEngine(),
-  getVoiceFilters: () => s.Ay.getVoiceFilters()
+  getVoiceEngine: () => o.Ay.getVoiceEngine(),
+  getVoiceFilters: () => o.Ay.getVoiceFilters()
 })

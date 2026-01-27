@@ -1,22 +1,21 @@
-/** Chunk was on web.js **/
-/** chunk id: 577806, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 577806, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _: () => o
+  _: () => a
 });
 var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
   Chunk397927 = require("./397927.js"),
   Chunk50900 = require("./50900.js");
 
-function o(e) {
+function a(e) {
   let {
     title: t,
     titleTrailingIcon: n,
-    subtitle: o,
-    type: l = "primary"
+    subtitle: a,
+    type: o = "primary"
   } = e;
-  return "secondary" === l ? (0, r.jsxs)(i.BJc, {
+  return "secondary" === o ? (0, r.jsxs)(i.BJc, {
     gap: 8,
     padding: {
       left: 12,
@@ -29,7 +28,7 @@ function o(e) {
       color: "text-subtle",
       children: t
     }), null != n ? (0, r.jsx)(n, {
-      color: a.LU0.colors.INTERACTIVE_ICON_DEFAULT,
+      color: l.LU0.colors.INTERACTIVE_ICON_DEFAULT,
       size: "md"
     }) : null]
   }) : (0, r.jsxs)(i.BJc, {
@@ -46,13 +45,13 @@ function o(e) {
         color: "text-strong",
         children: t
       }), null != n ? (0, r.jsx)(n, {
-        color: a.LU0.colors.INTERACTIVE_ICON_DEFAULT,
+        color: l.LU0.colors.INTERACTIVE_ICON_DEFAULT,
         size: "md"
       }) : null]
-    }), null != o && (0, r.jsx)(i.EYj, {
+    }), null != a && (0, r.jsx)(i.EYj, {
       variant: "text-md/normal",
       color: "text-subtle",
-      children: o
+      children: a
     })]
   })
 }

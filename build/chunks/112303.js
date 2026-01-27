@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 112303, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 112303, original params: e,t,n (module,exports,require) **/
 module.exports = {
   yG: "flexVertical__2d3fe",
   OZ: "flexHorizontal__2d3fe",

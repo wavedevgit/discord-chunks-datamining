@@ -75,8 +75,8 @@ function p(e, t) {
       textFocused: h = false
     } = n;
   if (null == e) return null;
-  null == t && (t = s.A.getGuild(e.getGuildId()));
-  let m = (0, i.V)(null == t ? true : t.id, [s.A, o.default, a.Ay]);
+  null == t && (t = o.A.getGuild(e.getGuildId()));
+  let m = (0, i.V)(null == t ? true : t.id, [o.A, s.default, a.Ay]);
   if (e.isModeratorReportChannel()) return r.iFK;
   if ((null == e ? true : e.id) === (null == t ? true : t.rulesChannelId)) return r.B8Q;
   let g = e.isNSFW();

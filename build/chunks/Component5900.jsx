@@ -79,7 +79,7 @@ let h = {
       let {
         text: t,
         position: n,
-        align: s,
+        align: o,
         caretAlign: l,
         customOffset: c,
         delay: d,
@@ -93,10 +93,10 @@ let h = {
           align: l
         }
       }, [l, c]);
-      return (0, r.jsx)(o.m, f(u({
+      return (0, r.jsx)(s.m, f(u({
         text: t,
         position: n,
-        align: s,
+        align: o,
         delay: d,
         spacing: _,
         caretConfig: g,
@@ -205,7 +205,7 @@ let h = {
       let {
         title: t,
         body: n,
-        showAsset: o,
+        showAsset: s,
         assetSize: c,
         position: d,
         align: _,
@@ -221,12 +221,12 @@ let h = {
         } : {
           align: h
         }
-      }, [h, m]), v = i.useMemo(() => o ? {
+      }, [h, m]), v = i.useMemo(() => s ? {
         type: "image",
         src: l.A,
         aspectRatio: "1/1"
-      } : true, [o]);
-      return (0, r.jsx)(s.u, f(u({
+      } : true, [s]);
+      return (0, r.jsx)(o.u, f(u({
         title: t,
         body: n,
         position: d,

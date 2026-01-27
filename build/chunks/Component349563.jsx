@@ -81,7 +81,7 @@ let g = "premium_new_tier_2_gradient",
 function y(e) {
   let {
     tier: t = c.PremiumTypes.TIER_2
-  } = e, n = (0, o.Ay)(), i = (0, s.qB)(n);
+  } = e, n = (0, s.Ay)(), i = (0, o.qB)(n);
   return (0, r.jsxs)(r.Fragment, {
     children: [!i && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
@@ -110,8 +110,8 @@ function b(e) {
     height: n = 13,
     color: i = "white",
     foreground: a
-  } = e, s = h(e, ["width", "height", "color", "foreground"]);
-  return (0, r.jsxs)("svg", _(f({}, (0, l.A)(f({}, s))), {
+  } = e, o = h(e, ["width", "height", "color", "foreground"]);
+  return (0, r.jsxs)("svg", _(f({}, (0, l.A)(f({}, o))), {
     preserveAspectRatio: "none",
     width: t,
     height: n,

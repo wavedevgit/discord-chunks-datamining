@@ -38,16 +38,16 @@ function p(e) {
 }
 let _ = new Chunk626584.A("useStripePaymentElementOptions"),
   h = function() {
-    var e, t, n, a, s;
-    let o = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
+    var e, t, n, a, o;
+    let s = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       l = (0, i.rdh)(i.LU0.colors.MODAL_BACKGROUND),
       c = (0, i.rdh)(i.LU0.colors.TEXT_STRONG),
       u = (0, i.rdh)(i.LU0.colors.INPUT_BACKGROUND_DEFAULT),
-      d = null != (e = o.theme) ? e : "flat",
-      f = null != (t = o.colorText) ? t : c.hex(),
-      p = null != (n = o.colorBackground) ? n : l.hex(),
-      _ = null != (a = o.inputBackgroundColor) ? a : u.hex(),
-      h = null != (s = o.tabBackgroundColor) ? s : u.hex();
+      d = null != (e = s.theme) ? e : "flat",
+      f = null != (t = s.colorText) ? t : c.hex(),
+      p = null != (n = s.colorBackground) ? n : l.hex(),
+      _ = null != (a = s.inputBackgroundColor) ? a : u.hex(),
+      h = null != (o = s.tabBackgroundColor) ? o : u.hex();
     return {
       elementsAppearance: r.useMemo(() => ({
         theme: d,
@@ -77,10 +77,10 @@ let _ = new Chunk626584.A("useStripePaymentElementOptions"),
     let {
       onSetupError: t,
       elementsAppearanceOptions: n = {}
-    } = e, [i, s] = r.useState(true), [f, m] = r.useState(null), [g, E] = r.useState(true), [y, b] = r.useState([]), [O, v] = r.useState({}), A = r.useCallback(async () => {
+    } = e, [i, o] = r.useState(true), [f, m] = r.useState(null), [g, E] = r.useState(true), [y, b] = r.useState([]), [O, v] = r.useState({}), A = r.useCallback(async () => {
       var e;
       let n = (0, u.J)({
-        ipCountryCode: null != (e = o.A.ipCountryCode) ? e : "ALL",
+        ipCountryCode: null != (e = s.A.ipCountryCode) ? e : "ALL",
         location: "stripe_payment_element_options"
       }).countryPaymentMethods;
       try {
@@ -88,7 +88,7 @@ let _ = new Chunk626584.A("useStripePaymentElementOptions"),
           client_secret: e,
           custom_payment_methods: t
         } = await (0, c.w)(n), r = (0, d.Dd)(t), i = t.reduce((e, t) => (e[t.custom_payment_method_id] = t.payment_source_type, e), {});
-        b(r), v(i), s(e)
+        b(r), v(i), o(e)
       } catch (e) {
         m(e), null != t && t(e), _.error("there was an error on setup for Payment Elements: ", e), (0, l.pM)(e, {
           tags: {

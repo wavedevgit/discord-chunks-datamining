@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 234485, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 38939 **/
+/** chunk id: 234485, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk954055 = require("./954055.js"),
   Chunk869639 = require("./869639.js");
-module.exports = function(e) {
-  var t = r.splitBlock(e.getCurrentContent(), e.getSelection());
-  return i.push(e, t, "split-block")
+module.exports = function(t) {
+  var e = n.splitBlock(t.getCurrentContent(), t.getSelection());
+  return i.push(t, e, "split-block")
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 55926 **/
-/** chunk id: 232516, original params: i,e,t (module,exports,require) **/
+/** Chunk was on 91075 **/
+/** chunk id: 232516, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -10,33 +10,33 @@ var Chunk937008 = require("./937008.jsx"),
   Chunk802246 = require("./802246.jsx"),
   Chunk788868 = require("./788868.js"),
   Chunk751690 = require("./751690.js");
-let c = function(i) {
+let d = function(e) {
   let {
-    onSelectSku: e,
-    priceOptions: t,
-    giftRecipient: c,
-    onWishlistItemClick: d
-  } = i, {
+    onSelectSku: t,
+    priceOptions: i,
+    giftRecipient: d,
+    onWishlistItemClick: c
+  } = e, {
     claimableRewards: u
-  } = (0, s.Pv)(), m = null != u && u.length > 0;
-  return (0, n.jsxs)("div", {
+  } = (0, n.Pv)(), m = null != u && u.length > 0;
+  return (0, r.jsxs)("div", {
     className: o.H,
-    children: [(0, n.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: o.u,
-      children: [(0, n.jsx)(l.D3, {
-        onClick: () => e(a.pe.TIER_2),
+      children: [(0, r.jsx)(a.D3, {
+        onClick: () => t(s.pe.TIER_2),
         isGift: true,
-        priceOptions: t,
+        priceOptions: i,
         showPromotionalGiftBanner: m
-      }), (0, n.jsx)(l.Ls, {
-        onClick: () => e(a.pe.TIER_0),
+      }), (0, r.jsx)(a.Ls, {
+        onClick: () => t(s.pe.TIER_0),
         isGift: true,
-        priceOptions: t,
+        priceOptions: i,
         removeTopMargin: true
       })]
-    }), (0, n.jsx)(r.A, {
-      giftRecipient: c,
-      onWishlistItemClick: d
+    }), (0, r.jsx)(l.A, {
+      giftRecipient: d,
+      onWishlistItemClick: c
     })]
   })
 }

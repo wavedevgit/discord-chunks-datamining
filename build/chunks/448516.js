@@ -41,7 +41,7 @@ module.exports = function(e) {
       end: "\\s+",
       excludeEnd: true
     },
-    s = {
+    o = {
       begin: /^\[[^\n]+\]:/,
       returnBegin: true,
       contains: [{
@@ -57,7 +57,7 @@ module.exports = function(e) {
         excludeBegin: true
       }]
     },
-    o = /[A-Za-z][A-Za-z0-9+.-]*/,
+    s = /[A-Za-z][A-Za-z0-9+.-]*/,
     l = {
       variants: [{
         begin: /\[.+?\]\[.*?\]/,
@@ -66,7 +66,7 @@ module.exports = function(e) {
         begin: /\[.+?\]\(((data|javascript|mailto):|(?:http|ftp)s?:\/\/).*?\)/,
         relevance: 2
       }, {
-        begin: t.concat(/\[.+?\]\(/, o, /:\/\/.*?\)/),
+        begin: t.concat(/\[.+?\]\(/, s, /:\/\/.*?\)/),
         relevance: 2
       }, {
         begin: /\[.+?\]\([./?&#].*?\)/,
@@ -158,7 +158,7 @@ module.exports = function(e) {
       begin: "^>\\s+",
       contains: p,
       end: "$"
-    }, i, r, l, s, {
+    }, i, r, l, o, {
       scope: "literal",
       match: /&([a-zA-Z0-9]+|#[0-9]{1,7}|#[Xx][0-9a-fA-F]{1,6});/
     }]

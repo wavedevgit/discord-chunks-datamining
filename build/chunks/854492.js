@@ -12,12 +12,12 @@ var Chunk562465 = require("./562465.js"),
   Chunk857071 = require("./857071.js"),
   Chunk652215 = require("./652215.js");
 async function c(e) {
-  let t = o.A.lurkingGuildIds().filter(t => !e.includes(t));
+  let t = s.A.lurkingGuildIds().filter(t => !e.includes(t));
   0 !== t.length && (i.h.dispatch({
     type: "GUILD_STOP_LURKING",
     ignoredGuildIds: e
   }), await Promise.all(t.map(async e => {
-    let t = o.A.getLurkingSource();
+    let t = s.A.getLurkingSource();
     try {
       await r.Bo.del({
         url: l.Rsh.GUILD_LEAVE(e),
@@ -38,8 +38,8 @@ async function c(e) {
 }
 async function u() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
-    t = o.A.lurkingGuildIds();
+    t = s.A.lurkingGuildIds();
   if (0 === t.length || !(null == e || !t.includes(e))) return;
-  let n = [e, a.A.getGuildId()].filter(s.Vq);
+  let n = [e, a.A.getGuildId()].filter(o.Vq);
   await c(n)
 }

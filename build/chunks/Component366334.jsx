@@ -18,22 +18,22 @@ function d(e) {
   let {
     benefit: t,
     guildId: n
-  } = e, i = (0, c.A)(n, t.ref_id), d = (0, r.jsx)(o.A, {
+  } = e, i = (0, c.A)(n, t.ref_id), d = (0, r.jsx)(s.A, {
     guildId: n,
     emojiId: t.emoji_id,
     emojiName: t.emoji_name
-  }), f = null != i ? (0, r.jsx)(s.DUT, {
+  }), f = null != i ? (0, r.jsx)(o.DUT, {
     className: u.__invalid_channelLink,
     onClick: i.navigateToChannel,
     "aria-label": i.ariaLabel,
     role: "link",
-    children: (0, r.jsx)(s.Text, {
+    children: (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "text-strong",
       className: a()(u.UU, u.F$),
       children: (0, l.A)(t)
     })
-  }) : (0, r.jsx)(s.Text, {
+  }) : (0, r.jsx)(o.Text, {
     variant: "text-md/medium",
     color: "text-strong",
     className: u.UU,
@@ -43,7 +43,7 @@ function d(e) {
     className: u.kL,
     children: [(0, r.jsxs)("div", {
       className: u.op,
-      children: [f, (0, r.jsx)(s.Text, {
+      children: [f, (0, r.jsx)(o.Text, {
         color: "interactive-text-default",
         variant: "text-sm/normal",
         children: t.description

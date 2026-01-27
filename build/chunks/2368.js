@@ -29,13 +29,13 @@ function E(e, t, n) {
     onChange: a
   } = e;
   e.isVoid = e => !!_.has(e.type) || i(e), e.isInline = e => !!(_.has(e.type) || h.has(e.type)) || r(e);
-  let s = null,
-    o = true;
+  let o = null,
+    s = true;
   return e.onChange = () => {
     let r = f.VW.richValue(e);
-    (r !== s || e.previewMarkdown !== o) && (l.o.withMergedEntry(e, () => {
+    (r !== o || e.previewMarkdown !== s) && (l.o.withMergedEntry(e, () => {
       f.VW.withoutNormalizing(e, () => y(e, t, n))
-    }), s = r, o = e.previewMarkdown), a()
+    }), o = r, s = e.previewMarkdown), a()
   }, e
 }
 
@@ -44,11 +44,11 @@ function y(e, t, n) {
   for (let i of f.VW.blocks(e))
     if (m.has(i[0].type)) r ? O(e, i, true, null) : b(e, i, t, n);
     else {
-      let [a, s] = i;
+      let [a, o] = i;
       for (let i = a.children.length - 1; i >= 0; i--) {
-        let o = a.children[i];
-        if (!f.l5.isText(o) && g.has(o.type)) {
-          let a = [o, f.PW.child(s, i)];
+        let s = a.children[i];
+        if (!f.l5.isText(s) && g.has(s.type)) {
+          let a = [s, f.PW.child(o, i)];
           r ? O(e, a, true, null) : b(e, a, t, n)
         }
       }
@@ -58,23 +58,23 @@ function y(e, t, n) {
 function b(e, t, n, r) {
   var i;
   let a = "line" === t[0].type && (null == (i = t[0].codeBlockState) ? true : i.isInCodeBlock) === true,
-    s = f.cv.markdown(t[0], n);
-  O(e, t, a, s) && (t = f.cv.updateElement(e, t), s = f.cv.markdown(t[0], n)), a || (v(e, t, r, s) && (t = f.cv.updateElement(e, t), s = f.cv.markdown(t[0], n)), A(e, t, n, r, s))
+    o = f.cv.markdown(t[0], n);
+  O(e, t, a, o) && (t = f.cv.updateElement(e, t), o = f.cv.markdown(t[0], n)), a || (v(e, t, r, o) && (t = f.cv.updateElement(e, t), o = f.cv.markdown(t[0], n)), A(e, t, n, r, o))
 }
 
 function O(e, t, n, r) {
-  let [i, a] = t, s = false;
+  let [i, a] = t, o = false;
   for (let t = i.children.length - 1; t >= 0; t--) {
-    let o = i.children[t];
-    if (f.l5.isText(o) && !n) {
+    let s = i.children[t];
+    if (f.l5.isText(s) && !n) {
       let n = t < i.children.length - 1 ? i.children[t + 1] : null;
       if (null == n || !f.cv.isElement(n) || !e.isVoid(n)) continue;
       let r = false,
         l = 0;
       for (;;) {
-        let e = o.text.indexOf("\\", l);
+        let e = s.text.indexOf("\\", l);
         if (false === e) break;
-        if (e === o.text.length - 1) {
+        if (e === s.text.length - 1) {
           r = true;
           break
         }
@@ -85,30 +85,30 @@ function O(e, t, n, r) {
         d.b.voidToText(e, (0, u.IQ)(n, {
           mode: "plain",
           preventEmojiSurrogates: true
-        }), r), s = true
+        }), r), o = true
       }
-    } else if (f.cv.isElement(o) && e.isVoid(o)) {
+    } else if (f.cv.isElement(s) && e.isVoid(s)) {
       let i = f.PW.child(a, t),
         l = {
           path: f.PW.child(i, 0),
           offset: 0
         };
-      (n || null != r && S(e, a, l, r)) && (d.b.voidToText(e, (0, u.IQ)(o, {
+      (n || null != r && S(e, a, l, r)) && (d.b.voidToText(e, (0, u.IQ)(s, {
         mode: "plain",
         preventEmojiSurrogates: true
-      }), i), s = true)
+      }), i), o = true)
     }
   }
-  return s
+  return o
 }
 
 function v(e, t, n, r) {
   let i = t[1],
     a = false,
-    s = [...r.entries].reverse();
-  for (let o = 0; o < s.length; o++) {
-    let l, u = s[o],
-      f = s[o + 1];
+    o = [...r.entries].reverse();
+  for (let s = 0; s < o.length; s++) {
+    let l, u = o[s],
+      f = o[s + 1];
     if (null != f && f.text.endsWith("\\") && u.start === f.start + f.text.length) continue;
     switch (u.attributes[0]) {
       case "emoji":
@@ -236,42 +236,42 @@ function v(e, t, n, r) {
 }
 
 function A(e, t, n, r, i) {
-  let [a, s] = t, l = false;
+  let [a, o] = t, l = false;
   for (let c = a.children.length - 1; c >= 0; c--) {
     let u, d = a.children[c];
     if (!f.l5.isText(d)) continue;
-    let _ = f.PW.child(s, c),
+    let _ = f.PW.child(o, c),
       h = [];
     for (p.lastIndex = 0; null != (u = p.exec(d.text));) {
       if (0 !== u.index && null == d.text.charAt(u.index - 1).match(/(\t|\s)/)) {
         p.lastIndex = u.index + 1;
         continue
       }
-      if (S(e, s, {
+      if (S(e, o, {
           path: _,
           offset: u.index
         }, i)) continue;
-      let a = (0, o.p)(u[0], n, r);
+      let a = (0, s.p)(u[0], n, r);
       null != a && T(r, t[0], a) ? h.push({
         index: u.index,
         length: u[0].length,
         node: a
       }) : p.lastIndex = u.index + 1
     }
-    for (let t of h.reverse()) I(e, [d, f.PW.child(s, c)], t.index, t.length, t.node), l = true
+    for (let t of h.reverse()) I(e, [d, f.PW.child(o, c)], t.index, t.length, t.node), l = true
   }
   return l
 }
 
 function I(e, t, n, r, a) {
-  let [s, o] = t, l = {
-    path: o,
+  let [o, s] = t, l = {
+    path: s,
     offset: n
   }, c = {
-    path: o,
+    path: s,
     offset: n + r
   };
-  i()(l.offset >= 0 && l.offset <= s.text.length, "Failed to find valid start position for raw mention replace"), i()(c.offset >= 0 && c.offset <= s.text.length, "Failed to find valid end position for raw mention replace"), d.b.textToVoid(e, a, {
+  i()(l.offset >= 0 && l.offset <= o.text.length, "Failed to find valid start position for raw mention replace"), i()(c.offset >= 0 && c.offset <= o.text.length, "Failed to find valid end position for raw mention replace"), d.b.textToVoid(e, a, {
     anchor: l,
     focus: c
   })
@@ -307,7 +307,7 @@ function T(e, t, n) {
     case a.n4.MENTIONABLE:
       return "roleMention" === n.type || "userMention" === n.type || "textMention" === n.type && "@everyone" === n.name;
     case a.n4.STRING: {
-      let n = null != e ? s.A.getOption(e, t.optionName) : null;
+      let n = null != e ? o.A.getOption(e, t.optionName) : null;
       return (null == n ? true : n.choices) == null && (null == n ? true : n.autocomplete) !== true
     }
     default:

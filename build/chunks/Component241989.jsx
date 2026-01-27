@@ -31,7 +31,7 @@ function u(e) {
     strikethroughPrice: h,
     gift: m,
     className: g
-  } = e, E = null != m ? l.intl.format(o.default["2PiTTi"], {
+  } = e, E = null != m ? l.intl.format(s.default["2PiTTi"], {
     username: m.username,
     nickname: null != (t = m.nickname) ? t : m.username,
     avatar: () => (0, r.jsx)("img", {
@@ -47,7 +47,7 @@ function u(e) {
       children: f
     }), (0, r.jsxs)("div", {
       className: c.Qs,
-      children: [null != n && (0, r.jsxs)(s.Text, {
+      children: [null != n && (0, r.jsxs)(o.Text, {
         variant: "text-sm/semibold",
         color: "text-muted",
         lineClamp: 1,
@@ -61,17 +61,17 @@ function u(e) {
         className: c.zH,
         children: [(0, r.jsxs)("div", {
           className: c.Qq,
-          children: [(0, r.jsx)(s.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             color: "text-default",
             lineClamp: 1,
             children: u
-          }), (0, r.jsx)(s.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             lineClamp: 2,
             children: d
-          }), null != E && (0, r.jsx)(s.Text, {
+          }), null != E && (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             lineClamp: 1,
@@ -80,14 +80,14 @@ function u(e) {
           })]
         }), (0, r.jsxs)("div", {
           className: c.p6,
-          children: [(0, r.jsxs)(s.Text, {
+          children: [(0, r.jsxs)(o.Text, {
             variant: "text-md/medium",
             color: "text-default",
             className: c.nw,
             children: [null != _ && (0, r.jsx)(_, {
               size: "xs"
             }), p]
-          }), null != h && (0, r.jsx)(s.Text, {
+          }), null != h && (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
             className: c.Jb,
@@ -104,7 +104,7 @@ function d(e) {
     color: t,
     Icon: n
   } = e;
-  return (0, r.jsx)(s.hLv, {
+  return (0, r.jsx)(o.hLv, {
     color: t,
     className: c.nC,
     children: (0, r.jsx)(n, {
@@ -117,26 +117,26 @@ function d(e) {
 function f() {
   return (0, r.jsx)(d, {
     color: "nitro-pink",
-    Icon: s.tvc
+    Icon: o.tvc
   })
 }
 
 function p() {
   return (0, r.jsx)(d, {
     color: "nitro-green",
-    Icon: s.tvc
+    Icon: o.tvc
   })
 }
 
 function _() {
   return (0, r.jsx)(d, {
     color: "pink",
-    Icon: s._Jp
+    Icon: o._Jp
   })
 }
 
 function h() {
-  return (0, r.jsx)(s.k9F, {
+  return (0, r.jsx)(o.k9F, {
     size: "lg",
     color: "var(--icon-muted)"
   })
@@ -145,7 +145,7 @@ function h() {
 function m() {
   return (0, r.jsx)("div", {
     className: c.CX,
-    children: (0, r.jsx)(s.tvc, {
+    children: (0, r.jsx)(o.tvc, {
       size: "lg",
       color: "var(--neutral-1)"
     })

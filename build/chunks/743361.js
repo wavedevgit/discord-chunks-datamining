@@ -101,9 +101,9 @@ let g = [...i()(Chunk652215.Z86).values().map(e => ({
       _ = null != (n = null == (r = e.find(e => "silent" === e.name)) ? true : r.value) && n;
     async function m() {
       if (null != i) try {
-        await s.A.closePrivateChannel(i.id, true, _)
+        await o.A.closePrivateChannel(i.id, true, _)
       } catch (e) {
-        o.A.sendBotMessage(i.id, h.intl.string(h.t["YOsuT/"]))
+        s.A.sendBotMessage(i.id, h.intl.string(h.t["YOsuT/"]))
       }
     }
     i.isManaged() && (f = h.intl.formatToPlainString(h.t.hVGjEW, {

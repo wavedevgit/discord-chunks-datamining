@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 713031, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 713031, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,32 +18,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
 
-function g() {
-  let e = (0, a.cf)([l.A], () => l.A.hasConsented(_.YAq.PERSONALIZATION)),
+function f() {
+  let e = (0, l.cf)([o.A], () => o.A.hasConsented(m.YAq.PERSONALIZATION)),
     [t, n] = i.useState(e),
-    g = (0, o.uM)(),
-    E = e => {
-      e ? (0, s.U)([_.YAq.PERSONALIZATION], []).catch(f.i).then(() => n(true)) : (0, f.O)({
-        header: h.intl.string(h.t["9SNpzv"]),
-        confirmText: h.intl.string(h.t["9g5UGw"]),
-        cancelText: h.intl.string(h.t["+ZLPw9"]),
-        onConfirm: () => {
-          (0, s.U)([], [_.YAq.PERSONALIZATION]).catch(f.i).then(() => n(false))
-        },
-        body: h.intl.string(h.t.gJvDDh)
-      })
-    };
-  return (0, r.jsx)(u.h, {
+    f = (0, a.uM)();
+  return (0, r.jsx)(d.h, {
     setting: p.H.PRIVACY_DATA_PERSONALIZE_V2,
-    children: (0, r.jsx)(d.Ay, {
-      title: h.intl.string(h.t.MNKzyg),
-      note: h.intl.format(h.t["eQL/Mr"], {
-        helpdeskArticle: c.A.getArticleURL(_.MVz.DATA_USED_FOR_RECOMMENDED)
+    children: (0, r.jsx)(u.Ay, {
+      title: g.intl.string(g.t.MNKzyg),
+      note: g.intl.format(g.t["eQL/Mr"], {
+        helpdeskArticle: c.A.getArticleURL(m.MVz.DATA_USED_FOR_RECOMMENDED)
       }),
       value: t,
-      onChange: E,
-      disabled: g,
-      tooltipText: g ? h.intl.string(m.default["6Af/cw"]) : true
+      onChange: e => {
+        e ? (0, s.U)([m.YAq.PERSONALIZATION], []).catch(_.i).then(() => n(true)) : (0, _.O)({
+          header: g.intl.string(g.t["9SNpzv"]),
+          confirmText: g.intl.string(g.t["9g5UGw"]),
+          cancelText: g.intl.string(g.t["+ZLPw9"]),
+          onConfirm: () => {
+            (0, s.U)([], [m.YAq.PERSONALIZATION]).catch(_.i).then(() => n(false))
+          },
+          body: g.intl.string(g.t.gJvDDh)
+        })
+      },
+      disabled: f,
+      tooltipText: f ? g.intl.string(A.default["6Af/cw"]) : true
     })
   })
 }

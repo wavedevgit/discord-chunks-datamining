@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  s = require.n(Chunk735438),
+  o = require.n(Chunk735438),
   Chunk900283 = require("./900283.js"),
   Chunk106236 = require("./106236.jsx"),
   Chunk134971 = require("./134971.js");
@@ -21,7 +21,7 @@ let u = e => "".concat(e.toFixed(0), "%"),
       onInteraction: p,
       renderValue: _ = u,
       "aria-label": h
-    } = e, m = i.useRef(null), g = i.useMemo(() => s().debounce(() => null == p ? true : p(o.Q.SLIDER), 100), [p]);
+    } = e, m = i.useRef(null), g = i.useMemo(() => o().debounce(() => null == p ? true : p(s.Q.SLIDER), 100), [p]);
     i.useImperativeHandle(t, () => ({
       focus: () => {
         var e;

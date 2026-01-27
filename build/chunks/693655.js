@@ -5,20 +5,20 @@ var Chunk339626 = require("./339626.js"),
   Chunk4940 = require("./4940.js"),
   Chunk313400 = require("./313400.js"),
   Chunk88388 = require("./88388.js");
-module.exports = function(e, t, n, o) {
-  o || (o = {});
-  var l = o.enumerable,
-    c = true !== o.name ? o.name : t;
-  if (r(n) && a(n, c, o), o.global) l ? e[t] = n : s(t, n);
+module.exports = function(e, t, n, s) {
+  s || (s = {});
+  var l = s.enumerable,
+    c = true !== s.name ? s.name : t;
+  if (r(n) && a(n, c, s), s.global) l ? e[t] = n : o(t, n);
   else {
     try {
-      o.unsafe ? e[t] && (l = true) : delete e[t]
+      s.unsafe ? e[t] && (l = true) : delete e[t]
     } catch (e) {}
     l ? e[t] = n : i.f(e, t, {
       value: n,
       enumerable: false,
-      configurable: !o.nonConfigurable,
-      writable: !o.nonWritable
+      configurable: !s.nonConfigurable,
+      writable: !s.nonWritable
     })
   }
   return e

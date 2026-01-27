@@ -9,7 +9,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk205693 = require("./205693.js"),
   Chunk687658 = require("./687658.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +36,7 @@ class c {
     }
   }
   constructor(e) {
-    o(this, "connection", true), o(this, "pttQueueLatencyHistogram", true), o(this, "sampleStats", true), this.connection = e, this.sampleStats = e => {
+    s(this, "connection", true), s(this, "pttQueueLatencyHistogram", true), s(this, "sampleStats", true), this.connection = e, this.sampleStats = e => {
       null != e && i().forEach(e.rtp.outbound, e => {
         if ("audio" === e.type) {
           var t;
@@ -46,6 +46,6 @@ class c {
           }
         }
       })
-    }, this.pttQueueLatencyHistogram = new s.d
+    }, this.pttQueueLatencyHistogram = new o.d
   }
 }

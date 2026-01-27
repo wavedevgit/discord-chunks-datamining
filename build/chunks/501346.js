@@ -8,7 +8,7 @@ var Chunk230606 = require("./230606.js"),
   Chunk101968 = require("./101968.js"),
   l = Chunk410323([].concat);
 module.exports = Chunk230606("Reflect", "ownKeys") || function(e) {
-  var t = a.f(o(e)),
-    n = s.f;
+  var t = a.f(s(e)),
+    n = o.f;
   return n ? l(t, n(e)) : t
 }

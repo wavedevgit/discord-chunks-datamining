@@ -19,10 +19,10 @@ function l(e) {
     isPriority: t,
     isLatched: n
   });
-  let l = a.A.getMode() === s.TBI.PUSH_TO_TALK,
+  let l = a.A.getMode() === o.TBI.PUSH_TO_TALK,
     c = (0, i.H)({
       location: "doPTT",
       autoTrackExposure: false
     }).enableLatching && true === a.A.getModeOptions().pttLatchingEnabled;
-  a.A.getMediaEngine().eachConnection(r => r.setForceAudioInput(e, t, l && c && !n && !e), o.x.DEFAULT)
+  a.A.getMediaEngine().eachConnection(r => r.setForceAudioInput(e, t, l && c && !n && !e), s.x.DEFAULT)
 }

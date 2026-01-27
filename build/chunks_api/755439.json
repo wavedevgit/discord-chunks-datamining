@@ -1,1 +1,1 @@
-{"id":"755439","type":"store","data":{"name":"DispatchApplicationErrorStore","functions":[{"name":"getLastError","args":[]}],"events":["DISPATCH_APPLICATION_LAUNCH_SETUP_START","DISPATCH_APPLICATION_ERROR"]},"fromModule":{"id":"web.js"}}
+{"id":"755439","type":"store","data":{"name":"DispatchApplicationErrorStore","functions":[{"name":"getLastError","args":[]}],"events":["DISPATCH_APPLICATION_LAUNCH_SETUP_START","DISPATCH_APPLICATION_ERROR"]},"fromModule":{"id":"92917"}}

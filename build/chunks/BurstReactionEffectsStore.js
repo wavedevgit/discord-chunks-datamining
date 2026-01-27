@@ -1,124 +1,109 @@
-/** Chunk was on web.js **/
-/** chunk id: 900210, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 7034 **/
+/** chunk id: 900210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b,
-  W: () => o
+  A: () => m,
+  W: () => s
 }), require("./896048.js"), require("./446912.js");
-var r, Chunk311907 = require("./311907.js"),
-  Chunk73153 = require("./73153.js");
-
-function s(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-var o = function(e) {
-  return e.HOVER = "HOVER", e.EXTERNAL = "EXTERNAL", e.RANDOM = "RANDOM", e
-}({});
-let l = 5,
+var i, l, r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  s = ((l = {}).HOVER = "HOVER", l.EXTERNAL = "EXTERNAL", l.RANDOM = "RANDOM", l);
+let u = {},
   c = {},
-  u = {},
   d = {},
-  f = (e, t) => {
+  p = (e, t) => {
     let n = null != t.id ? t.id : t.name;
     return "".concat(e, ":").concat(n)
-  },
-  p = (e, t) => {
-    var n;
-    let r;
-    switch (e) {
-      case "HOVER":
-        r = "HOVER";
-        break;
-      case "RANDOM":
-        r = "RANDOM";
-        break;
-      default:
-        r = "EXTERNAL"
-    }
-    let i = Object.fromEntries(Object.entries(null != (n = u[t]) ? n : {}).filter(e => {
-      let [, t] = e;
-      return t === r
-    }));
-    if (Object.keys(i).length >= l && "EXTERNAL" === e) {
-      for (let e in i)
-        if (null == d[t] || null == d[t][e]) {
-          delete u[t][e], delete i[e];
-          break
-        }
-    }
-    return Object.keys(i).length
-  },
-  _ = e => {
-    var t, n, r;
-    let {
-      channelId: i,
-      messageId: a,
-      emoji: s,
-      key: o
-    } = e, c = f(a, s);
-    if (p(o, i) >= l) return;
-    let _ = null != (t = u[i]) ? t : {},
-      h = (null != (n = d[i]) ? n : {})[c],
-      m = _[c];
-    ("HOVER" !== o || null == m) && ("HOVER" === m && "EXTERNAL" === o && null != h && ("function" == typeof h.destroy && h.destroy(), null == (r = d[i]) || delete r[c], m = true), null == m && (null != u[i] ? u[i][c] = o : u[i] = {
-      [c]: o
-    }))
-  },
-  h = e => {
+  };
+class h extends(i = Chunk311907.Ay.Store) {
+  getReactionPickerAnimation(e, t, n) {
+    return u["".concat(e, ":").concat(t, ":").concat(null != n ? n : "")]
+  }
+  getEffectForEmojiId(e, t, n) {
+    var i;
+    let l = p(t, n);
+    return null == (i = c[e]) ? true : i[l]
+  }
+}(r = "displayName") in h ? Object.defineProperty(h, r, {
+  value: "BurstReactionEffectsStore",
+  enumerable: true,
+  configurable: true,
+  writable: true
+}) : h[r] = "BurstReactionEffectsStore";
+let m = new h(Chunk73153.h, {
+  BURST_REACTION_EFFECT_CLEAR: e => {
     var t;
     let {
       channelId: n,
-      messageId: r,
-      emoji: i
-    } = e, a = f(r, i);
-    null == (t = u[n]) || delete t[a]
+      messageId: i,
+      emoji: l
+    } = e, r = p(i, l);
+    null == (t = c[n]) || delete t[r]
   },
-  m = e => {
+  BURST_REACTION_EFFECT_PLAY: e => {
+    var t, n, i;
+    let {
+      channelId: l,
+      messageId: r,
+      emoji: o,
+      key: a
+    } = e, s = p(r, o);
+    if (((e, t) => {
+        var n;
+        let i;
+        switch (e) {
+          case "HOVER":
+            i = "HOVER";
+            break;
+          case "RANDOM":
+            i = "RANDOM";
+            break;
+          default:
+            i = "EXTERNAL"
+        }
+        let l = Object.fromEntries(Object.entries(null != (n = c[t]) ? n : {}).filter(e => {
+          let [, t] = e;
+          return t === i
+        }));
+        if (Object.keys(l).length >= 5 && "EXTERNAL" === e) {
+          for (let e in l)
+            if (null == d[t] || null == d[t][e]) {
+              delete c[t][e], delete l[e];
+              break
+            }
+        }
+        return Object.keys(l).length
+      })(a, l) >= 5) return;
+    let u = null != (t = c[l]) ? t : {},
+      h = (null != (n = d[l]) ? n : {})[s],
+      m = u[s];
+    ("HOVER" !== a || null == m) && ("HOVER" === m && "EXTERNAL" === a && null != h && ("function" == typeof h.destroy && h.destroy(), null == (i = d[l]) || delete i[s], m = true), null == m && (null != c[l] ? c[l][s] = a : c[l] = {
+      [s]: a
+    }))
+  },
+  BURST_REACTION_ANIMATION_ADD: e => {
     let {
       channelId: t,
       messageId: n,
-      emoji: r,
-      animation: i
-    } = e, a = f(n, r);
-    null == d[t] && (d[t] = {}), d[t][a] = i
+      emoji: i,
+      animation: l
+    } = e, r = p(n, i);
+    null == d[t] && (d[t] = {}), d[t][r] = l
   },
-  g = e => {
+  BURST_REACTION_PICKER_ANIMATION_ADD: e => {
     let {
       messageId: t,
       emojiName: n,
-      emojiId: r,
-      startPosition: i
+      emojiId: i,
+      startPosition: l
     } = e;
-    c["".concat(t, ":").concat(n, ":").concat(null != r ? r : "")] = i
+    u["".concat(t, ":").concat(n, ":").concat(null != i ? i : "")] = l
   },
-  E = e => {
+  BURST_REACTION_PICKER_ANIMATION_CLEAR: e => {
     let {
       messageId: t,
       emojiName: n,
-      emojiId: r
+      emojiId: i
     } = e;
-    delete c["".concat(t, ":").concat(n, ":").concat(null != r ? r : "")]
-  };
-class y extends(r = Chunk311907.Ay.Store) {
-  getReactionPickerAnimation(e, t, n) {
-    return c["".concat(e, ":").concat(t, ":").concat(null != n ? n : "")]
+    delete u["".concat(t, ":").concat(n, ":").concat(null != i ? i : "")]
   }
-  getEffectForEmojiId(e, t, n) {
-    var r;
-    let i = f(t, n);
-    return null == (r = u[e]) ? true : r[i]
-  }
-}
-s(y, "displayName", "BurstReactionEffectsStore");
-let b = new y(Chunk73153.h, {
-  BURST_REACTION_EFFECT_CLEAR: h,
-  BURST_REACTION_EFFECT_PLAY: _,
-  BURST_REACTION_ANIMATION_ADD: m,
-  BURST_REACTION_PICKER_ANIMATION_ADD: g,
-  BURST_REACTION_PICKER_ANIMATION_CLEAR: E
 })

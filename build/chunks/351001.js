@@ -24,7 +24,7 @@ function p(e, t, n) {
   let {
     maxDaysOld: r,
     minDaysOld: i = 0
-  } = t, o = s.A.getGuild(e), l = null == o ? true : o.joinedAt;
+  } = t, s = o.A.getGuild(e), l = null == s ? true : s.joinedAt;
   if (null != n) {
     let t = a.Ay.getMember(e, n);
     l = (null == t ? true : t.joinedAt) == null ? null : new Date(t.joinedAt)
@@ -50,8 +50,8 @@ let m = (e, t) => {
       var n, i;
       return (0, r.Lt)(null != (n = null == (i = a.Ay.getMember(e, t)) ? true : i.flags) ? n : 0, u.D.DID_REJOIN)
     }),
-    o = (0, i.bG)([s.A], () => {
-      let t = s.A.getGuild(e);
+    s = (0, i.bG)([o.A], () => {
+      let t = o.A.getGuild(e);
       return null != t && h(t)
     }),
     c = (0, i.bG)([l.default], () => {
@@ -60,30 +60,30 @@ let m = (e, t) => {
     });
   return _(e, {
     maxDaysOld: 7
-  }, t) && !o && !c && !n
+  }, t) && !s && !c && !n
 };
 
 function g(e, t) {
-  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.A];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.A];
   return null != t && E(e, t, [n]) && !e.isProvisional
 }
 
 function E(e, t) {
-  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.A];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.A];
   return null != t && n.canManageUser(d.xBc.KICK_MEMBERS, e, t) && !e.isNonUserBot()
 }
 
 function y(e, t) {
-  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.A];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.A];
   return null != t && b(e, t, [n]) && !e.isProvisional
 }
 
 function b(e, t) {
-  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.A];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.A];
   return null != t && n.canManageUser(d.xBc.BAN_MEMBERS, e, t) && !e.isNonUserBot() && !e.bot
 }
 
 function O(e, t) {
-  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.A];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [s.A];
   return null != e && null != t && n.canManageUser(d.xBc.MANAGE_MESSAGES, e, t) && !e.isNonUserBot()
 }

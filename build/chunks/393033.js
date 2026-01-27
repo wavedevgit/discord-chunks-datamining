@@ -31,7 +31,7 @@ function p(e) {
 
 function _(e) {
   var t, n;
-  return (0, s.u)(e.filename) || (0, s.AE)(e.filename) ? "".concat(d._W).concat(null != (t = e.filename) ? t : ".png") : null != (n = e.filename) ? n : ""
+  return (0, o.u)(e.filename) || (0, o.AE)(e.filename) ? "".concat(d._W).concat(null != (t = e.filename) ? t : ".png") : null != (n = e.filename) ? n : ""
 }
 
 function h(e) {
@@ -75,8 +75,8 @@ function O(e) {
     return null
   }
 }
-let v = () => null != (0, a.bG)([o.default], () => o.default.getSuspendedUserToken());
+let v = () => null != (0, a.bG)([s.default], () => s.default.getSuspendedUserToken());
 
 function A() {
-  return null != o.default.getSuspendedUserToken()
+  return null != s.default.getSuspendedUserToken()
 }

@@ -23,7 +23,7 @@ let u = new Chunk626584.A("DatabaseManager"),
   d = false;
 class f extends Chunk311907.Ay.Store {
   initialize() {
-    this.waitFor(o.default), this.carefullySpeculativelyOpen(l.F()), this.handleAuthenticationStoreChanged(), o.default.addChangeListener(() => this.handleAuthenticationStoreChanged())
+    this.waitFor(s.default), this.carefullySpeculativelyOpen(l.F()), this.handleAuthenticationStoreChanged(), s.default.addChangeListener(() => this.handleAuthenticationStoreChanged())
   }
   databaseName(e) {
     return _(e)
@@ -58,13 +58,13 @@ class f extends Chunk311907.Ay.Store {
     e.preventWritingCachesAgainThisSession && (this.preventWritingCachesAgainThisSession = true), this.replaceDisableAllDatabases("DatabaseManager (".concat(e.reason, ")"))
   }
   handleConnectionOpen() {
-    let e = o.default.getId(),
+    let e = s.default.getId(),
       t = this.databases.get(e),
       n = null == t ? true : t.state();
     null == t && n !== i.z9.Open && this.remove(e), this.carefullyOpenDatabase(e)
   }
   handleAuthenticationStoreChanged() {
-    let e = o.default.getId(),
+    let e = s.default.getId(),
       t = this.activeUserId;
     if (e !== t) {
       let n = this.databases.get(t);

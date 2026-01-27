@@ -16,7 +16,7 @@ function l(e) {
     commandId: n,
     searchResultsPosition: l,
     query: c
-  } = e, u = (0, i.bG)([s.A], () => s.A.entrypoint()), d = () => {
+  } = e, u = (0, i.bG)([o.A], () => o.A.entrypoint()), d = () => {
     (0, a.x)({
       type: r.ImpressionTypes.VIEW,
       name: r.ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM,
@@ -30,7 +30,7 @@ function l(e) {
     })
   }, f = 1;
   return {
-    trackSearchResultsItemImpressionRef: (0, o.A)({
+    trackSearchResultsItemImpressionRef: (0, s.A)({
       onVisible: d,
       threshold: f
     })

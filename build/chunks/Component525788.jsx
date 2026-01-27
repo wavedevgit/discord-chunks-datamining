@@ -2,12 +2,12 @@
 /** chunk id: 525788, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => L
+  A: () => x
 }), require("./65821.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
@@ -88,7 +88,7 @@ function P(e) {
     disableInteraction: n,
     guildId: i,
     participantType: a,
-    channelId: o,
+    channelId: s,
     handleUserContextMenu: l
   } = e, c = R(a, t.length);
   return (0, r.jsx)(f.lGe, {
@@ -104,9 +104,9 @@ function P(e) {
         children: t.map(e => (0, r.jsx)(m.A, {
           user: e,
           guildId: null != i ? i : true,
-          channelId: o,
-          nick: b.Ay.getNickname(i, o, e),
-          className: s()(I.kp, {
+          channelId: s,
+          nick: b.Ay.getNickname(i, s, e),
+          className: o()(I.kp, {
             [I.YR]: n
           }),
           textClassName: I.vc,
@@ -124,7 +124,7 @@ function D(e) {
     guildId: n,
     channelId: i,
     maxVisibleUsers: a = 3,
-    className: o,
+    className: s,
     participantType: l
   } = e, c = R(l, t.length), u = t.length < a ? A.intl.format(A.t["A+bT9O"], {
     users: t.length,
@@ -136,7 +136,7 @@ function D(e) {
   return (0, r.jsx)(d.m_, {
     text: u,
     children: (0, r.jsxs)("div", {
-      className: s()(I.Mj, o),
+      className: o()(I.Mj, s),
       children: [(0, r.jsx)(f.bMW, {
         size: "xs",
         color: "currentColor",
@@ -148,38 +148,38 @@ function D(e) {
     })
   })
 }
-let x = [];
+let L = [];
 
-function L(e) {
+function x(e) {
   let {
     channelId: t,
     guildId: a,
-    participant: o,
+    participant: s,
     className: d,
     compact: m = false,
     disableInteraction: b = false,
     maxVisibleUsers: A = 3
-  } = e, S = i.useRef(null), C = (0, h.A)(), [R, L] = i.useState(false), j = i.useRef(new u.J_(w, () => L(false))), M = (0, c.yK)([g.A, E.default], () => {
-    if (o.type === O.lp.STREAM) {
-      let e = g.A.getViewerIds(o.id);
-      return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(y.Vq) : x
+  } = e, S = i.useRef(null), C = (0, h.A)(), [R, x] = i.useState(false), M = i.useRef(new u.J_(w, () => x(false))), j = (0, c.yK)([g.A, E.default], () => {
+    if (s.type === O.lp.STREAM) {
+      let e = g.A.getViewerIds(s.id);
+      return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(y.Vq) : L
     }
-    return o.type === O.lp.ACTIVITY && o.participants.length > 0 ? Array.from(o.participants).map(e => E.default.getUser(e.userId)).filter(y.Vq) : x
-  }, [o]);
+    return s.type === O.lp.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => E.default.getUser(e.userId)).filter(y.Vq) : L
+  }, [s]);
   i.useEffect(() => {
-    C && (j.current.cancel(), L(false))
+    C && (M.current.cancel(), x(false))
   }, [C]);
   let k = i.useCallback(() => {
-      j.current.cancel(), L(true)
+      M.current.cancel(), x(true)
     }, []),
     U = i.useCallback(() => {
-      j.current.delay()
+      M.current.delay()
     }, []),
     G = i.useCallback((e, t) => {
       k(), (0, p.L3)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("8893")]).then(n.bind(n, 668569));
+        } = await Promise.all([n.e("97262"), n.e("3795"), n.e("32418"), n.e("16938")]).then(n.bind(n, 668569));
         return n => (0, r.jsx)(e, N(T({}, n), {
           user: t
         }))
@@ -187,24 +187,24 @@ function L(e) {
         onClose: U
       })
     }, [U, k]);
-  if (0 === M.length) return null;
+  if (0 === j.length) return null;
   if (m) return (0, r.jsx)(D, {
     maxVisibleUsers: A,
-    users: M,
+    users: j,
     guildId: a,
     channelId: t,
     className: d,
-    participantType: o.type
+    participantType: s.type
   });
-  let V = l()(M).take(A).map(e => (0, r.jsx)(f.euF, {
+  let F = l()(j).take(A).map(e => (0, r.jsx)(f.euF, {
     src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
     size: f._3J.SIZE_24,
     className: I.lJ
   }, e.id)).value();
-  return M.length > A && (V[V.length - 1] = (0, r.jsxs)("div", {
+  return j.length > A && (F[F.length - 1] = (0, r.jsxs)("div", {
     className: I.ju,
-    children: ["+", M.length - A + 1]
+    children: ["+", j.length - A + 1]
   }, "overflow")), (0, r.jsx)(_.A, {
     section: v.JJy.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
@@ -213,19 +213,19 @@ function L(e) {
       children: (0, r.jsx)(f.YNO, {
         targetElementRef: S,
         renderPopout: () => (0, r.jsx)(P, {
-          participantType: o.type,
+          participantType: s.type,
           handleUserContextMenu: G,
           guildId: a,
           channelId: t,
-          users: M,
+          users: j,
           disableInteraction: b
         }),
         shouldShow: R && !C,
         position: "top",
         children: () => (0, r.jsx)("div", {
           ref: S,
-          className: s()(I.Mj, d),
-          children: V
+          className: o()(I.Mj, d),
+          children: F
         })
       })
     })

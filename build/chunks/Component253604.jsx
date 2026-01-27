@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 253604, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 253604, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,69 +12,64 @@ var Chunk627968 = require("./627968.js"),
   Chunk287070 = require("./287070.jsx"),
   Chunk83118 = require("./83118.js");
 
-function d(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function f(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      d(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function p(e) {
+function u(e) {
   var t;
   let {
-    user: d,
-    disabledInputs: p,
-    containerClassName: _
+    user: u,
+    disabledInputs: _,
+    containerClassName: p
   } = e, {
-    reducedMotion: h
+    reducedMotion: m
   } = i.useContext(s.CZY), {
-    pendingAvatar: m,
-    pendingBanner: g,
-    pendingAvatarDecoration: E,
-    pendingProfileEffect: y,
+    pendingAvatar: g,
+    pendingBanner: A,
+    pendingAvatarDecoration: f,
+    pendingProfileEffect: h,
     pendingDisplayNameStyles: b,
-    pendingThemeColors: O,
-    pendingPronouns: v,
-    pendingBio: A,
-    tryItOutThemeColors: I,
-    tryItOutAvatar: S,
+    pendingThemeColors: E,
+    pendingPronouns: x,
+    pendingBio: O,
+    tryItOutThemeColors: C,
+    tryItOutAvatar: I,
     tryItOutBanner: T,
-    tryItOutAvatarDecoration: C,
-    tryItOutDisplayNameStyles: N
-  } = (0, a.cf)([l.A], () => f({}, l.A.getAllPending(), l.A.getAllTryItOut())), w = (0, o.V7)({
-    userId: d.id,
-    image: null != S ? S : m
+    tryItOutAvatarDecoration: S,
+    tryItOutDisplayNameStyles: j
+  } = (0, l.cf)([o.A], () => (function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      })
+    }
+    return e
+  })({}, o.A.getAllPending(), o.A.getAllTryItOut())), v = (0, a.V7)({
+    userId: u.id,
+    image: null != I ? I : g
   });
   return (0, r.jsx)(c.A, {
-    containerClassName: _,
-    user: d,
-    pendingPronouns: v,
-    pendingBio: A,
-    pendingBanner: null != (t = null != T ? T : g) ? t : n(636763),
-    pendingDisplayNameStyles: null != N ? N : b,
-    pendingAvatar: w,
-    pendingThemeColors: null != I ? I : O,
-    pendingAvatarDecoration: true !== C ? C : E,
-    pendingProfileEffect: y,
-    avatarClassName: null != S || null != m || h.enabled ? true : u.W,
+    containerClassName: p,
+    user: u,
+    pendingPronouns: x,
+    pendingBio: O,
+    pendingBanner: null != (t = null != T ? T : A) ? t : n(636763),
+    pendingDisplayNameStyles: null != j ? j : b,
+    pendingAvatar: v,
+    pendingThemeColors: null != C ? C : E,
+    pendingAvatarDecoration: true !== S ? S : f,
+    pendingProfileEffect: h,
+    avatarClassName: null != I || null != g || m.enabled ? true : d.W,
     canUsePremiumCustomization: true,
     isTryItOut: true,
-    disabledInputs: p,
+    disabledInputs: _,
     hideExampleButton: true
   })
 }

@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 714505, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   A: () => f
 });
@@ -23,7 +22,7 @@ function f(e) {
       var t;
       let n = null == (t = l().os) ? true : t.family;
       if ("Android" === n || "iOS" === n) {
-        let t = d.default.getFingerprint(),
+        let t = u.default.getFingerprint(),
           n = (0, o.I_)();
         return i()(null != e, "generateAppPath: guildId cannot be null"), (0, o.Ay)((0, a.jN)(e), {
           utmSource: "verify_hub_email",
@@ -34,11 +33,11 @@ function f(e) {
       return "discord://"
     }(e),
     n = (0, o.X7)(t);
-  null != n && p.default.track(m.HAw.DEEP_LINK_CLICKED, {
+  null != n && p.default.track(_.HAw.DEEP_LINK_CLICKED, {
     fingerprint: (0, c.v)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), g.A.launch(t, e => {
-    e || (0, u.bG)(h.A.fallbackRoute)
+    e || (0, d.bG)(h.A.fallbackRoute)
   })
 }

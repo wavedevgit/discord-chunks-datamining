@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 178856, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 178856, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 });
@@ -16,20 +15,20 @@ let s = e => {
   } = e;
   return (0, r.jsx)(i.DUT, {
     onClick: s ? true : n,
-    className: a.x6,
+    className: l.x6,
     children: (0, r.jsxs)("div", {
-      className: a.hQ,
+      className: l.hQ,
       children: [s ? (0, r.jsx)(i.y$y, {
         type: i.y$y.Type.PULSING_ELLIPSIS,
-        className: a.__invalid_spinner
+        className: l.__invalid_spinner
       }) : (0, r.jsx)(i.Text, {
         variant: "text-md/medium",
-        className: a.Pf,
+        className: l.Pf,
         children: t
       }), (0, r.jsx)(i.abt, {
         size: "md",
         color: "currentColor",
-        className: a.UE
+        className: l.UE
       })]
     })
   })

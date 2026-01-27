@@ -1,4 +1,4 @@
-/** Chunk was on 67564 **/
+/** Chunk was on 41727 **/
 /** chunk id: 825244, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D,
@@ -137,7 +137,7 @@ function D(e) {
       }), null != k && (0, u.mMO)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("43600"), n.e("28136"), n.e("42821")]).then(n.bind(n, 234355));
+        } = await Promise.all([n.e("43600"), n.e("28136"), n.e("74918")]).then(n.bind(n, 234355));
         return t => (0, r.jsx)(e, w(P({}, t), {
           guild: k,
           source: S.PE1.CHANNEL_WELCOME,

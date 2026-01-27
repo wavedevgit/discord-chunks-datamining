@@ -9,7 +9,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk775602 = require("./775602.js"),
   Chunk531685 = require("./531685.js");
-let o = 0,
+let s = 0,
   l = 2,
   c = 3,
   u = .03,
@@ -39,16 +39,16 @@ function E(e) {
     shouldReduceMotion: O,
     useForcedColors: v,
     isAppFocusedOrOverlayVisible: A
-  } = (0, i.cf)([a.A, s.A, b], () => ({
+  } = (0, i.cf)([a.A, o.A, b], () => ({
     shouldReduceMotion: a.A.useReducedMotion,
     useForcedColors: a.A.useForcedColors,
-    isAppFocusedOrOverlayVisible: s.A.isAppFocused() || null != b.getFocusedPID()
+    isAppFocusedOrOverlayVisible: o.A.isAppFocused() || null != b.getFocusedPID()
   }));
   return r.useMemo(() => {
     let e = {};
     if (d === false / 0 && y) return e;
     if (t) {
-      let t = o,
+      let t = s,
         n = l,
         r = c;
       d !== false / 0 && !O && A && (t = "INSET_ONLY" === _ ? 0 : m(d, g), n = "OUTSET_ONLY" === _ ? 0 : m(d, E), r = "OUTSET_ONLY" === _ ? 0 : n + 1);

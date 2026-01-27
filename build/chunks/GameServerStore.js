@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk532555 = require("./532555.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -118,8 +118,8 @@ function g(e) {
 
 function E(e, t) {
   return Object.values(t).reduce((e, t) => {
-    var n, r, i, a, s;
-    return e + (null != (n = null == (s = t.sku) || null == (a = s.tenant_metadata) || null == (i = a.guild_monetization) || null == (r = i.game_server) ? true : r.boost_price) ? n : 0)
+    var n, r, i, a, o;
+    return e + (null != (n = null == (o = t.sku) || null == (a = o.tenant_metadata) || null == (i = a.guild_monetization) || null == (r = i.game_server) ? true : r.boost_price) ? n : 0)
   }, 0)
 }
 
@@ -144,7 +144,7 @@ function b(e) {
   d = u(l({}, d), {
     [t]: u(l({}, r), {
       instances: u(l({}, r.instances), {
-        [n.id]: (0, s.A)(n)
+        [n.id]: (0, o.A)(n)
       })
     })
   })
@@ -214,7 +214,7 @@ class S extends(r = Chunk311907.Ay.Store) {
     return null != e && (null == (t = d[e]) ? true : t.hasFetchedInstances) === true
   }
 }
-o(S, "displayName", "GameServerStore");
+s(S, "displayName", "GameServerStore");
 let T = new S(Chunk73153.h, {
   LOGOUT: f,
   GAME_SERVER_FETCH_CATALOG_SUCCESS: _,

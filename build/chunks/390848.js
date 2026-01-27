@@ -12,26 +12,26 @@ function a(e) {
     userId: t,
     applicationId: n,
     isGameRelationship: a,
-    location: s,
-    onConfirm: o,
+    location: o,
+    onConfirm: s,
     onCancel: l
   } = e, c = r.useCallback(() => {
     i.A.cancelFriendRequest({
       userId: t,
       applicationId: a ? n : null,
-      location: s
+      location: o
     })
-  }, [n, a, s, t]);
+  }, [n, a, o, t]);
   return {
     acceptFriendRequest: r.useCallback(() => {
       i.A.maybeConfirmFriendRequestAccept({
         userId: t,
         applicationId: a ? n : null,
-        location: s,
-        onConfirm: o,
+        location: o,
+        onConfirm: s,
         onCancel: l
       })
-    }, [n, a, s, l, o, t]),
+    }, [n, a, o, l, s, t]),
     cancelFriendRequest: c
   }
 }

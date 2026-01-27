@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 /** chunk id: 436167, original params: e (module,exports,re quire) **/
 function t(n, r, i, a) {
-  var s = Object.defineProperty;
+  var o = Object.defineProperty;
   try {
-    s({}, "", {})
+    o({}, "", {})
   } catch (e) {
-    s = 0
+    o = 0
   }
   e.exports = t = function(e, n, r, i) {
-    if (n) s ? s(e, n, {
+    if (n) o ? o(e, n, {
       value: r,
       enumerable: !i,
       configurable: !i,

@@ -24,13 +24,13 @@ let u = {},
     var t, n;
     let r = false;
     if (e.type !== a.R.PROFILE_EFFECT && e.type !== a.R.VARIANTS_GROUP) return r;
-    let s = [...e.items, ...null != (t = null == (n = e.variants) ? true : n.flatMap(e => {
+    let o = [...e.items, ...null != (t = null == (n = e.variants) ? true : n.flatMap(e => {
       let {
         items: t
       } = e;
       return t
     })) ? t : []].filter(l.C);
-    for (let e of (0, i.uniqBy)(s, "skuId")) {
+    for (let e of (0, i.uniqBy)(o, "skuId")) {
       let t = {
         skuId: e.skuId,
         config: e

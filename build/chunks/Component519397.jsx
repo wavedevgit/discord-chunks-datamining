@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 519397, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 519397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,55 +14,53 @@ var Chunk627968 = require("./627968.js"),
   Chunk838541 = require("./838541.js"),
   Chunk679740 = require("./679740.js");
 
-function p(e) {
+function m(e) {
   let {
     message: t,
     channel: n
   } = e, {
-    isBlocked: l,
-    isIgnored: d
-  } = (0, a.cf)([u.A], () => ({
+    isBlocked: m,
+    isIgnored: f
+  } = (0, l.cf)([u.A], () => ({
     isBlocked: u.A.isBlockedForMessage(t),
     isIgnored: u.A.isIgnoredForMessage(t)
-  }), [t]), p = i.useMemo(() => ({
+  }), [t]), g = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
-  (0, s.E)(p, "ThreadMessageAccessoryMessage");
-  let h = i.useMemo(() => null != t.content && "" !== t.content ? (0, o.Ay)(t, {
+  (0, a.E)(g, "ThreadMessageAccessoryMessage");
+  let h = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.Ay)(t, {
     formatInline: true
   }).content : null, [t]);
   return (0, r.jsxs)("div", {
-    className: f.up,
+    className: p.up,
     children: [(0, r.jsx)("img", {
       alt: "",
       src: t.author.getAvatarURL(n.guild_id, 16),
-      className: f.FJ
+      className: p.FJ
     }), (0, r.jsx)(c.A, {
       message: t,
       channel: n,
       compact: true
     }), (0, r.jsx)("div", {
-      className: f.Au,
-      children: _(t, h, l, d)
+      className: p.Au,
+      children: function(e, t, n, i) {
+        let {
+          contentPlaceholder: l,
+          renderedContent: a,
+          leadingIcon: s,
+          trailingIcon: c
+        } = (0, o.o)(e, t, n, i, p.tP, {
+          trailingIconClass: p._v,
+          leadingIconClass: p.a5,
+          iconSize: d.eJ
+        });
+        return (0, r.jsxs)(r.Fragment, {
+          children: [s, null != a ? a : (0, r.jsx)("span", {
+            className: p.dp,
+            children: l
+          }), c]
+        })
+      }(t, h, m, f)
     })]
-  })
-}
-
-function _(e, t, n, i) {
-  let {
-    contentPlaceholder: a,
-    renderedContent: s,
-    leadingIcon: o,
-    trailingIcon: c
-  } = (0, l.o)(e, t, n, i, f.tP, {
-    trailingIconClass: f._v,
-    leadingIconClass: f.a5,
-    iconSize: d.eJ
-  });
-  return (0, r.jsxs)(r.Fragment, {
-    children: [o, null != s ? s : (0, r.jsx)("span", {
-      className: f.dp,
-      children: a
-    }), c]
   })
 }

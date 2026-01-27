@@ -14,8 +14,8 @@ function i(e, t) {
 }
 
 function a(e, t, n, i, a) {
-  let s = null != e ? n.fromBinary(n.toBinary(e), r.Su) : n.create();
-  if (false === t(s)) return null;
-  let o = i.create();
-  return o[a] = s, o
+  let o = null != e ? n.fromBinary(n.toBinary(e), r.Su) : n.create();
+  if (false === t(o)) return null;
+  let s = i.create();
+  return s[a] = o, s
 }

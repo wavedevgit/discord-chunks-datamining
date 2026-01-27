@@ -12,15 +12,15 @@ function a(e, t) {
   if (true !== n && null != n.requestIdleCallback && null != n.cancelIdleCallback) {
     var a;
     let i = false,
-      s = null,
-      o = () => {
-        i || (i = true, null != s && (n.clearTimeout(s), s = null), e())
+      o = null,
+      s = () => {
+        i || (i = true, null != o && (n.clearTimeout(o), o = null), e())
       },
-      l = n.requestIdleCallback(o, t);
-    return s = n.setTimeout(() => {
-      i || n.cancelIdleCallback(l), o()
+      l = n.requestIdleCallback(s, t);
+    return o = n.setTimeout(() => {
+      i || n.cancelIdleCallback(l), s()
     }, null != (a = null == t ? true : t.timeout) ? a : r), () => {
-      n.cancelIdleCallback(l), null != s && (n.clearTimeout(s), s = null)
+      n.cancelIdleCallback(l), null != o && (n.clearTimeout(o), o = null)
     }
   } {
     let t = n.setTimeout(e, 0);

@@ -26,18 +26,18 @@ function p(e) {
     g = (0, a.et)(null == h ? true : h.id),
     E = false;
   switch (_) {
-    case o.o6.LEAVE:
+    case s.o6.LEAVE:
       E = false;
       break;
-    case o.o6.START:
+    case s.o6.START:
       null == h ? E = false : (null == h ? true : h.isGuildVoice()) ? g !== a.xy.CAN_LAUNCH && (E = true) : (0, i.pE)(h) || (E = true);
       break;
-    case o.o6.JOIN:
+    case s.o6.JOIN:
       (null == h ? true : h.isGuildVoice()) ? E = !m: (0, i.pE)(h) || (E = true)
   }
-  if (_ !== o.o6.LEAVE) {
+  if (_ !== s.o6.LEAVE) {
     let e = p instanceof l.Ay ? p.embeddedActivityConfig : p.embedded_activity_config,
-      n = (0, s.A)((0, u.getOS)());
+      n = (0, o.A)((0, u.getOS)());
     null == e || e.supported_platforms.includes(n) ? (null == h ? true : h.isThread()) && (E = true, t = f.intl.string(f.t.ddSR3v)) : (E = false, t = f.intl.string(f.t.z2YTgJ))
   }
   return E && null == t && (t = f.intl.string(f.t.f41E1g)), {

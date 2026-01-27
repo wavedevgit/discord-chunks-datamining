@@ -69,7 +69,7 @@ let g = e => (0, r.jsx)(E, _({}, e)),
       onBackClick: y
     } = n, {
       hasPaymentSources: b
-    } = (0, s.P5)(), O = b ? o.pn.REVIEW : o.pn.ADD_PAYMENT_STEPS, v = i.useCallback(() => t(O), [t, O]), A = i.useMemo(() => "custom-step-body" === c ? p() : "two-column" === c ? (0, r.jsxs)("div", {
+    } = (0, o.P5)(), O = b ? s.pn.REVIEW : s.pn.ADD_PAYMENT_STEPS, v = i.useCallback(() => t(O), [t, O]), A = i.useMemo(() => "custom-step-body" === c ? p() : "two-column" === c ? (0, r.jsxs)("div", {
       className: f.D,
       children: [h(), g()]
     }) : null, [c, p, h, g]), I = i.useMemo(() => m(_({}, E), {

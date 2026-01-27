@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk508425 = require("./508425.js"),
   Chunk559949 = require("./559949.js"),
   Chunk311907 = require("./311907.js"),
@@ -41,32 +41,32 @@ let y = [Chunk559949.x.CHERRY_BOMB, Chunk559949.x.CHICLE],
       useReducedMotion: f.A.useReducedMotion
     })), N = (0, _.W)({
       location: "UserNameWithEffects"
-    }), w = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOW).hex(), R = null != (t = null == i ? true : i.effectId) ? t : o.z.SOLID, P = (0, d.Oer)(n), D = (0, u.CR)(P, R === o.z.TOON ? E.Zg : true), x = (0, p.H)({
+    }), w = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOW).hex(), R = null != (t = null == i ? true : i.effectId) ? t : s.z.SOLID, P = (0, d.Oer)(n), D = (0, u.CR)(P, R === s.z.TOON ? E.Zg : true), L = (0, p.H)({
       displayNameStyles: N ? i : null,
       backgroundColor: w
     });
     if (!N || null == i) return n;
-    let L = (0, m.P)(R, x, {
+    let x = (0, m.P)(R, L, {
         shouldWrap: A,
         fontOpacity: y.includes(i.fontId) ? I : 1
       }),
-      j = O(R);
+      M = O(R);
     return (0, r.jsxs)("div", {
-      className: s()(E.kL, T, b, {
+      className: o()(E.kL, T, b, {
         [E.rD]: a !== h.G.PLAIN,
         [E.CS]: a === h.G.ANIMATED && !C,
         [E.HW]: v,
         [E.$E]: l
       }),
-      style: L,
+      style: x,
       children: [(0, r.jsx)("span", {
         "data-username-with-effects": P,
-        className: s()(E.WH, null == j ? true : j.effectClassName, {
+        className: o()(E.WH, null == M ? true : M.effectClassName, {
           [E._W]: S
         }),
         children: D
-      }), (null == j ? true : j.glowClassName) != null && (0, r.jsx)("span", {
-        className: s()(E.l1, E.WH, j.glowClassName),
+      }), (null == M ? true : M.glowClassName) != null && (0, r.jsx)("span", {
+        className: o()(E.l1, E.WH, M.glowClassName),
         "aria-hidden": true,
         children: P
       })]
@@ -75,24 +75,24 @@ let y = [Chunk559949.x.CHERRY_BOMB, Chunk559949.x.CHICLE],
 
 function O(e) {
   switch (e) {
-    case o.z.GRADIENT:
-    case o.z.GLOW:
+    case s.z.GRADIENT:
+    case s.z.GLOW:
       return {
         effectClassName: E.D7
       };
-    case o.z.NEON:
+    case s.z.NEON:
       return {
         effectClassName: E.lw, glowClassName: E._4
       };
-    case o.z.TOON:
+    case s.z.TOON:
       return {
         effectClassName: E.lQ
       };
-    case o.z.POP:
+    case s.z.POP:
       return {
         effectClassName: E.uY
       };
-    case o.z.SOLID:
+    case s.z.SOLID:
     default:
       return {
         effectClassName: E.QJ

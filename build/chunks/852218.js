@@ -4,7 +4,7 @@
 require.d(exports, {
   Cs: () => a,
   KS: () => i,
-  SW: () => s,
+  SW: () => o,
   pt: () => r
 }), require("./896048.js");
 var r = function(e) {
@@ -12,4 +12,4 @@ var r = function(e) {
 }({});
 let i = "steelseries",
   a = "kontrolfreek",
-  s = new Set(["steelseries", "kontrolfreek"])
+  o = new Set(["steelseries", "kontrolfreek"])

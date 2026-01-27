@@ -59,17 +59,17 @@ function m(e) {
     onClick: I,
     onContextMenu: S,
     className: T
-  } = e, C = (0, s.bG)([c.A], () => null != t && c.A.isLocalMute(t)), N = (0, d.A)(t), w = (0, u.v)({
+  } = e, C = (0, o.bG)([c.A], () => null != t && c.A.isLocalMute(t)), N = (0, d.A)(t), w = (0, u.v)({
     isSpeaking: i,
     isLatched: p,
     voiceDb: N
   }), R = () => {
-    let e = C ? o.O1p : m ? o.cQT : o.z0P;
+    let e = C ? s.O1p : m ? s.cQT : s.z0P;
     return h || m || C ? (0, r.jsx)("div", {
       className: f.II,
       children: (0, r.jsx)(e, {
         className: f.h5,
-        color: o.LU0.colors.WHITE.css
+        color: s.LU0.colors.WHITE.css
       }, "status")
     }) : null
   }, P = () => (0, r.jsx)("div", {
@@ -81,8 +81,8 @@ function m(e) {
     children: R()
   }) : (0, r.jsx)(r.Fragment, {
     children: P()
-  }), x = () => {
-    let e = (0, o.FT9)(n),
+  }), L = () => {
+    let e = (0, s.FT9)(n),
       t = (0, r.jsx)("img", {
         src: g,
         alt: " ",
@@ -92,7 +92,7 @@ function m(e) {
       });
     if (E) return t;
     let i = l.hW.AVATAR_DEFAULT;
-    return null != v ? i = n === o._3J.SIZE_32 ? l.hW.AVATAR_CALL_ICON_32 : l.hW.AVATAR_CALL_ICON : (h || m || C) && (i = l.hW.AVATAR_VOICE_CALL_80), (0, r.jsxs)("div", {
+    return null != v ? i = n === s._3J.SIZE_32 ? l.hW.AVATAR_CALL_ICON_32 : l.hW.AVATAR_CALL_ICON : (h || m || C) && (i = l.hW.AVATAR_VOICE_CALL_80), (0, r.jsxs)("div", {
       className: f.lN,
       children: [(0, r.jsxs)(l.Ay, {
         className: f.KQ,
@@ -102,19 +102,19 @@ function m(e) {
         children: [null == v ? true : v(), t]
       }), D()]
     })
-  }, L = a()(f.iE, {
+  }, x = a()(f.iE, {
     [f.vk]: null != I,
     [f.tb]: y && 0 === b,
     [f.hs]: y && 1 === b
-  }, T), j = (0, o.FT9)(n), M = _({
-    height: j,
-    width: j
+  }, T), M = (0, s.FT9)(n), j = _({
+    height: M,
+    width: M
   }, A);
   return (0, r.jsx)("div", {
-    style: M,
+    style: j,
     onContextMenu: S,
-    className: L,
-    children: x()
+    className: x,
+    children: L()
   })
 }
 m.RingingType = h;

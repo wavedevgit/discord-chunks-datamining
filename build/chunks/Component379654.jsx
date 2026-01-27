@@ -48,7 +48,7 @@ function g(e) {
     analyticsLocations: y
   } = (0, a.Ay)(), {
     trackUserProfileAction: b
-  } = (0, o.NJ)(), O = (0, s.A)(t.id, E), v = i.useCallback(() => {
+  } = (0, s.NJ)(), O = (0, o.A)(t.id, E), v = i.useCallback(() => {
     null == h || h({
       tabSection: p.RP.WIDGETS
     })

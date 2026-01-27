@@ -4,7 +4,7 @@
 require.d(exports, {
   L8: () => a,
   Wy: () => i,
-  uM: () => s
+  uM: () => o
 });
 var Chunk64700 = require("./64700.js"),
   i = function(e) {
@@ -21,6 +21,6 @@ let a = Chunk64700.createContext({
   setSlideReady: () => {}
 });
 
-function s() {
+function o() {
   return r.useContext(a)
 }

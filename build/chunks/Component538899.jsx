@@ -1,7 +1,7 @@
-/** Chunk was on 91798 **/
-/** chunk id: 538899, original params: e,t,a (module,exports,require) **/
+/** Chunk was on 39289 **/
+/** chunk id: 538899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => O
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,110 +30,110 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk304439 = require("./304439.js");
-async function M(e) {
-  var t, a, n;
-  let l, {
-      thread: r,
-      attachments: i,
-      setIsUploading: s,
-      guild: f,
-      onClose: p
+async function k(e) {
+  var t, n, a;
+  let o, {
+      thread: i,
+      attachments: r,
+      setIsUploading: l,
+      guild: d,
+      onClose: f
     } = e,
-    g = y.default.castChannelIdAsMessageId(r.id),
-    C = new d.A;
-  C.on("progress", e => {
-    let t = (0, m.o2)(f.id);
-    e.currentSize > t && (C.cancel(), s(false), p(), (0, v.V)(r, (0, j.LJ)(i)))
+    h = x.default.castChannelIdAsMessageId(i.id),
+    v = new b.A;
+  v.on("progress", e => {
+    let t = (0, g.o2)(d.id);
+    e.currentSize > t && (v.cancel(), l(false), f(), (0, j.V)(i, (0, C.LJ)(r)))
   });
-  let w = h.A.getMessage(r.id, g),
-    A = null != w ? w.attachments : [];
-  s(true);
+  let T = m.A.getMessage(i.id, h),
+    w = null != T ? T.attachments : [];
+  l(true);
   try {
-    l = await C.uploadFiles(i)
+    o = await v.uploadFiles(r)
   } catch (e) {
-    s(false);
+    l(false);
     return
   }
-  let O = [...A, ...null != (t = l.map((e, t) => (0, x.OW)(e, t))) ? t : []];
+  let A = [...w, ...null != (t = o.map((e, t) => (0, y.OW)(e, t))) ? t : []];
   try {
-    await o.Bo.patch({
-      url: E.Rsh.MESSAGE(r.id, g),
+    await c.Bo.patch({
+      url: E.Rsh.MESSAGE(i.id, h),
       body: {
-        attachments: O
+        attachments: A
       },
       rejectWithError: false
-    }), p(), u.A.clearAll(r.id, _.C.ChannelMessage)
+    }), f(), _.A.clearAll(i.id, p.C.ChannelMessage)
   } catch (e) {
-    s(false), (null == (a = e.body) ? true : a.code) === E.t02.EXPLICIT_CONTENT && (p(), c.A.sendExplicitMediaClydeError(r.id, null == (n = e.body) ? true : n.attachments, b.SW.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED), u.A.clearAll(r.id, _.C.ChannelMessage))
+    l(false), (null == (n = e.body) ? true : n.code) === E.t02.EXPLICIT_CONTENT && (f(), s.A.sendExplicitMediaClydeError(i.id, null == (a = e.body) ? true : a.attachments, u.SW.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED), _.A.clearAll(i.id, p.C.ChannelMessage))
   }
 }
 
-function S(e) {
+function O(e) {
   var t;
   let {
-    threadId: a,
-    attachments: o,
-    sendMessage: c,
-    transitionState: u,
-    onClose: d
-  } = e, b = (0, i.bG)([p.A], () => p.A.getChannel(a), [a]), _ = (0, i.bG)([g.A], () => g.A.getGuild(null == b ? true : b.getGuildId()), [b]), h = (0, i.bG)([p.A], () => p.A.getChannel(null == b ? true : b.parent_id), [b]), m = null == (t = o[0]) ? true : t.item, [y, x] = l.useState(null);
-  l.useEffect(() => {
-    null != m && (0, f.JF)(m.file, (e, t) => x(e), O.tE)
-  }, [m]);
-  let v = null != m && null != y ? {
-      src: y,
-      width: w.T5,
-      height: w.Co,
-      spoiler: o[0].spoiler,
-      alt: o[0].description
+    threadId: n,
+    attachments: c,
+    sendMessage: s,
+    transitionState: _,
+    onClose: b
+  } = e, u = (0, r.bG)([f.A], () => f.A.getChannel(n), [n]), p = (0, r.bG)([h.A], () => h.A.getGuild(null == u ? true : u.getGuildId()), [u]), m = (0, r.bG)([f.A], () => f.A.getChannel(null == u ? true : u.parent_id), [u]), g = null == (t = c[0]) ? true : t.item, [x, y] = o.useState(null);
+  o.useEffect(() => {
+    null != g && (0, d.JF)(g.file, (e, t) => y(e), A.tE)
+  }, [g]);
+  let j = null != g && null != x ? {
+      src: x,
+      width: T.T5,
+      height: T.Co,
+      spoiler: c[0].spoiler,
+      alt: c[0].description
     } : null,
-    [j, E] = l.useState(false),
-    S = l.useCallback(() => {
-      (0, C.jh)({
+    [C, E] = o.useState(false),
+    O = o.useCallback(() => {
+      (0, v.jh)({
         added: false
-      }), c(), d()
-    }, [c, d]),
-    P = l.useCallback(() => {
-      null != b && null != _ && ((0, C.jh)({
+      }), s(), b()
+    }, [s, b]),
+    M = o.useCallback(() => {
+      null != u && null != p && ((0, v.jh)({
         added: true
-      }), M({
-        thread: b,
-        attachments: o,
+      }), k({
+        thread: u,
+        attachments: c,
         setIsUploading: E,
-        guild: _,
-        onClose: d
+        guild: p,
+        onClose: b
       }))
-    }, [b, o, E, _, d]);
-  return null == h ? null : (0, n.jsx)(r.Modal, {
-    title: T.intl.string(T.t["+SZF6S"]),
-    subtitle: T.intl.string(T.t["0Ycgw5"]),
-    transitionState: u,
-    onClose: d,
-    actionBarInput: (0, n.jsx)(s.QWc, {
+    }, [u, c, E, p, b]);
+  return null == m ? null : (0, a.jsx)(i.Modal, {
+    title: I.intl.string(I.t["+SZF6S"]),
+    subtitle: I.intl.string(I.t["0Ycgw5"]),
+    transitionState: _,
+    onClose: b,
+    actionBarInput: (0, a.jsx)(l.QWc, {
       variant: "secondary",
-      disabled: j,
-      onClick: d,
-      text: T.intl.string(T.t["ETE/oC"])
+      disabled: C,
+      onClick: b,
+      text: I.intl.string(I.t["ETE/oC"])
     }),
     actions: [{
       variant: "secondary",
-      text: T.intl.string(T.t["8rKVHL"]),
-      disabled: j,
-      onClick: S
+      text: I.intl.string(I.t["8rKVHL"]),
+      disabled: C,
+      onClick: O
     }, {
       variant: "primary",
-      text: T.intl.string(T.t.d611xH),
-      loading: j,
-      onClick: P,
+      text: I.intl.string(I.t.d611xH),
+      loading: C,
+      onClick: M,
       autoFocus: true
     }],
-    children: (0, n.jsx)(A.Cp, {
-      channel: h,
-      children: (0, n.jsx)(w.Ay, {
-        threadId: a,
-        goToThread: O.tE,
-        overrideMedia: v,
-        className: I.u
+    children: (0, a.jsx)(w.Cp, {
+      channel: m,
+      children: (0, a.jsx)(T.Ay, {
+        threadId: n,
+        goToThread: A.tE,
+        overrideMedia: j,
+        className: S.u
       })
     })
   })

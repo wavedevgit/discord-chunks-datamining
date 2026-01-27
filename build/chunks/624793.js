@@ -76,7 +76,7 @@ let _ = async e => {
 class h extends Chunk315069.A {
   getIconURL(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return s.Ay.getGuildIconURL({
+    return o.Ay.getGuildIconURL({
       id: this.id,
       size: e,
       icon: this.icon,
@@ -85,7 +85,7 @@ class h extends Chunk315069.A {
   }
   getIconSource(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return s.Ay.getAnimatableSourceWithFallback(t, t => s.Ay.getGuildIconSource({
+    return o.Ay.getAnimatableSourceWithFallback(t, t => o.Ay.getGuildIconSource({
       id: this.id,
       size: e,
       icon: this.icon,
@@ -139,7 +139,7 @@ class h extends Chunk315069.A {
     }))
   }
   static createFromGuildType(e) {
-    return e instanceof h ? e : (0, o.fh)(e) ? h.createFromGuildRecord(e) : h.createFromDiscoverableGuild(e)
+    return e instanceof h ? e : (0, s.fh)(e) ? h.createFromGuildRecord(e) : h.createFromDiscoverableGuild(e)
   }
   constructor(e) {
     super(), c(this, "id", true), c(this, "name", true), c(this, "icon", true), c(this, "description", true), c(this, "features", true), c(this, "premiumTier", true), c(this, "premiumSubscriberCount", true), c(this, "presenceCount", true), c(this, "memberCount", true), c(this, "emojis", true), this.id = e.id, this.name = e.name, this.icon = e.icon, this.description = e.description, this.features = e.features, this.premiumTier = e.premiumTier, this.premiumSubscriberCount = e.premiumSubscriberCount, this.presenceCount = e.presenceCount, this.memberCount = e.memberCount, this.emojis = e.emojis

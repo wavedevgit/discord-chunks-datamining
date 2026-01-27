@@ -22,7 +22,7 @@ function a(e, t) {
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
 
-function s(e, t) {
+function o(e, t) {
   if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
   e.prototype = Object.create(t && t.prototype, {
     constructor: {
@@ -46,9 +46,9 @@ module.exports = function(e) {
         x: 0,
         y: 0
       };
-    return "number" == typeof r.x && "number" == typeof r.y ? (n.x = new o(r.x), n.y = new o(r.y)) : (c(r.x instanceof o && r.y instanceof o, "AnimatedValueXY must be initalized with an object of numbers or AnimatedValues."), n.x = r.x, n.y = r.y), n._listeners = {}, n
+    return "number" == typeof r.x && "number" == typeof r.y ? (n.x = new s(r.x), n.y = new s(r.y)) : (c(r.x instanceof s && r.y instanceof s, "AnimatedValueXY must be initalized with an object of numbers or AnimatedValues."), n.x = r.x, n.y = r.y), n._listeners = {}, n
   }
-  return s(t, e), r(t, [{
+  return o(t, e), r(t, [{
     key: "setValue",
     value: function(e) {
       this.x.setValue(e.x), this.y.setValue(e.y)

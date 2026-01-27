@@ -2,8 +2,8 @@
 /** chunk id: 633965, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ei: () => s,
-  Ld: () => o,
+  Ei: () => o,
+  Ld: () => s,
   pc: () => a,
   u9: () => i
 });
@@ -19,12 +19,12 @@ function a() {
   return r.getState().getVisibleGuildIds
 }
 
-function s(e) {
+function o(e) {
   r.setState({
     getVisibleChannelIds: e
   })
 }
 
-function o() {
+function s() {
   return r.getState().getVisibleChannelIds
 }

@@ -9,7 +9,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk397927 = require("./397927.js"),
   Chunk555115 = require("./555115.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -120,16 +120,16 @@ function h(e) {
   let {
     shouldShow: t,
     caretPosition: n,
-    onExitComplete: o
+    onExitComplete: s
   } = e, {
     reducedMotion: c
   } = r.useContext(i.CZY), f = _(n, c.enabled), {
     config: p
   } = f, h = d(f, ["config"]);
   return (0, a.pnh)(t, u(l({}, h), {
-    config: null != p ? p : (e, n) => t ? s.n : s.t,
+    config: null != p ? p : (e, n) => t ? o.n : o.t,
     onRest: () => {
-      t || null == o || o()
+      t || null == s || s()
     }
   }), "animate-always")
 }

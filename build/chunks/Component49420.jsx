@@ -24,11 +24,11 @@ function l(e) {
     transitionState: t,
     onClose: c,
     size: "sm",
-    title: o.intl.string(o.t["p8+qtU"]),
+    title: s.intl.string(s.t["p8+qtU"]),
     actions: [],
-    children: (0, r.jsx)(s.h, {
+    children: (0, r.jsx)(o.h, {
       onRetry: l,
-      errorOrigin: s.A.GIFT_MODAL
+      errorOrigin: o.A.GIFT_MODAL
     })
   })
 }

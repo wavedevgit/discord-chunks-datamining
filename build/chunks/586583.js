@@ -16,13 +16,13 @@ function u(e, t) {
   let {
     isPlaying: n,
     playSound: u
-  } = (0, s.A)(null != e ? (0, i.A)(e.soundId) : null);
+  } = (0, o.A)(null != e ? (0, i.A)(e.soundId) : null);
   return {
     isPlaying: n,
     playSound: r.useCallback(() => {
       var n;
       return !!u({
-        volume: (0, a.A)(null != (n = null == e ? true : e.volume) ? n : 1, o.HO.getSetting())
+        volume: (0, a.A)(null != (n = null == e ? true : e.volume) ? n : 1, s.HO.getSetting())
       }) && (l.default.track(c.HAw.SOUNDMOJI_PLAY, {
         guild_id: null == t ? true : t.guild_id,
         channel_id: null == t ? true : t.id,

@@ -26,7 +26,7 @@ function p(e) {
       className: f.Tz,
       children: m.map(e => (0, r.jsxs)("div", {
         className: f.dp,
-        children: [(0, r.jsx)(s.DUT, {
+        children: [(0, r.jsx)(o.DUT, {
           onFocus: () => h(e.id),
           onBlur: () => h(null),
           className: f.b,
@@ -36,7 +36,7 @@ function p(e) {
           onClick: () => (0, c.x5)(n, p.drafts.type),
           children: (0, r.jsx)("div", {
             className: f.Nk,
-            children: (0, r.jsx)(s.aXh, {
+            children: (0, r.jsx)(o.aXh, {
               size: "md",
               color: "currentColor",
               className: f.ut
@@ -49,7 +49,7 @@ function p(e) {
           sticker: e
         })]
       }, e.id))
-    }), (0, r.jsx)(o.A, {
+    }), (0, r.jsx)(s.A, {
       className: f.R
     })]
   }) : null

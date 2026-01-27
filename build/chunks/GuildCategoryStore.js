@@ -2,7 +2,7 @@
 /** chunk id: 769765, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => M
+  A: () => j
 }), require("./321073.js"), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -59,7 +59,7 @@ function b(e) {
       channel: t,
       index: false
     }), n[t.id] = []
-  }), t[u.I6].forEach(r), t[u.vM].forEach(r), (0, s.A)(n._categories, n).forEach(y), h[e] = n, n
+  }), t[u.I6].forEach(r), t[u.vM].forEach(r), (0, o.A)(n._categories, n).forEach(y), h[e] = n, n
 }
 
 function O() {
@@ -160,24 +160,24 @@ function D(e) {
   b(t)
 }
 
-function x() {
+function L() {
   b(f.YYv)
 }
 
-function L(e) {
+function x(e) {
   let t = h[e];
   return null != t ? t : b(e)
 }
-class j extends(r = Chunk311907.Ay.Store) {
+class M extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(u.Ay, d.A, l.default, c.A, o.A), this.syncWith([o.A], x)
+    this.waitFor(u.Ay, d.A, l.default, c.A, s.A), this.syncWith([s.A], L)
   }
   getCategories(e) {
-    return null != e ? L(e) : E
+    return null != e ? x(e) : E
   }
 }
-p(j, "displayName", "GuildCategoryStore");
-let M = new j(Chunk73153.h, {
+p(M, "displayName", "GuildCategoryStore");
+let j = new M(Chunk73153.h, {
   CHANNEL_SELECT: D,
   CONNECTION_OPEN: O,
   OVERLAY_INITIALIZE: O,

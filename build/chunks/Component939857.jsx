@@ -4,7 +4,7 @@
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk900729 = require("./900729.js");
 
@@ -108,12 +108,12 @@ class g extends(r = Chunk64700.PureComponent) {
         children: n,
         tag: r,
         size: a,
-        fullscreenOnMobile: s
+        fullscreenOnMobile: o
       } = e,
       l = _(e, ["className", "children", "tag", "size", "fullscreenOnMobile"]);
     return (0, i.jsx)(r, p(d({
-      className: o()(c.yl, t, a, {
-        [c.z]: s
+      className: s()(c.yl, t, a, {
+        [c.z]: o
       })
     }, l), {
       children: this.renderChildren()

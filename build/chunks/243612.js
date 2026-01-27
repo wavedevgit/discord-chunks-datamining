@@ -47,12 +47,12 @@ function h() {
   let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : c.Ay,
     r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : u.A,
     i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : a.Ay,
-    o = arguments.length > 3 && true !== arguments[3] ? arguments[3] : l.A,
+    s = arguments.length > 3 && true !== arguments[3] ? arguments[3] : l.A,
     f = arguments.length > 4 && true !== arguments[4] ? arguments[4] : d.A,
-    p = arguments.length > 5 && true !== arguments[5] ? arguments[5] : (0, s.Y)(),
+    p = arguments.length > 5 && true !== arguments[5] ? arguments[5] : (0, o.Y)(),
     _ = i.getCurrentEmbeddedActivity(),
     h = null == _ ? true : _.applicationId,
-    m = null == h ? true : o.getApplication(h);
+    m = null == h ? true : s.getApplication(h);
   if (null != _ && null != m && p) return {
     id: _.applicationId,
     altId: true,
@@ -69,6 +69,6 @@ function h() {
 }
 
 function m() {
-  let e = (0, o.V)();
+  let e = (0, s.V)();
   return (0, r.bG)([c.Ay, u.A, a.Ay, l.A, d.A], () => h(c.Ay, u.A, a.Ay, l.A, d.A, e), [e], i.A)
 }

@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk953727 = require("./953727.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -68,14 +68,14 @@ function d(e, t) {
 }
 let f = Chunk64700.forwardRef(function(e, t) {
   let [n, ...i] = [e, t], {
-    width: s = 24,
+    width: o = 24,
     height: l = 24,
     color: d = "currentColor",
     foreground: f
   } = n, p = u(n, ["width", "height", "color", "foreground"]), [_] = i;
-  return (0, r.jsx)("svg", c(o({}, (0, a.A)(p)), {
+  return (0, r.jsx)("svg", c(s({}, (0, a.A)(p)), {
     ref: _,
-    width: s,
+    width: o,
     height: l,
     viewBox: "0 0 24 24",
     children: (0, r.jsx)("path", {

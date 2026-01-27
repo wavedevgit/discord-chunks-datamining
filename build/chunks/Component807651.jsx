@@ -1,7 +1,7 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 807651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,107 +16,107 @@ var Chunk630054 = require("./630054.js"),
   Chunk102951 = require("./102951.js"),
   Chunk652215 = require("./652215.js");
 
-function f(e) {
+function m(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: f,
+    guildId: m,
     channelId: A,
     displayProfile: x,
-    relationshipType: j,
-    onClose: h
+    relationshipType: g,
+    onClose: j
   } = e, {
-    newestAnalyticsLocation: g
-  } = (0, r.Ay)(), v = (0, s.A)({
+    newestAnalyticsLocation: h
+  } = (0, r.Ay)(), b = (0, s.A)({
     user: t,
-    guildId: f,
+    guildId: m,
     channelId: A,
     displayProfile: x,
-    onClose: h
+    onClose: j
   }), {
-    gameFriends: b,
+    gameFriends: v,
     hasOutgoingPendingGameFriends: I,
     hasIncomingPendingGameFriends: y
   } = (0, p.J)({
     userId: t.id
-  }), _ = b.length > 0 || I || y;
-  return j === m.eA$.BLOCKED ? null : t.id === n.id ? (0, l.jsxs)(l.Fragment, {
+  }), _ = v.length > 0 || I || y;
+  return g === f.eA$.BLOCKED ? null : t.id === n.id ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(o.A, {
       user: t,
-      guildId: f,
-      onClose: h
-    }), (0, l.jsx)(d.A, {
-      onClose: h
-    }), (0, l.jsx)(c.Zt, {
+      guildId: m,
+      onClose: j
+    }), (0, l.jsx)(c.A, {
+      onClose: j
+    }), (0, l.jsx)(d.Zt, {
       user: t,
-      guildId: f,
-      viewProfileItem: v
+      guildId: m,
+      viewProfileItem: b
     })]
   }) : t.bot ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.e, {
       userId: t.id,
       onClose: i.A.popAll,
       autoFocus: true
-    }), (0, l.jsx)(c.Zt, {
+    }), (0, l.jsx)(d.Zt, {
       user: t,
-      guildId: f,
-      viewProfileItem: v
+      guildId: m,
+      viewProfileItem: b
     })]
-  }) : j === m.eA$.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
+  }) : g === f.eA$.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.e, {
       userId: t.id,
       onClose: i.A.popAll,
       autoFocus: true
-    }), (0, l.jsx)(c.Zt, {
+    }), (0, l.jsx)(d.Zt, {
       user: t,
-      guildId: f
+      guildId: m
     })]
-  }) : j === m.eA$.FRIEND || j === m.eA$.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
+  }) : g === f.eA$.FRIEND || g === f.eA$.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.e, {
       userId: t.id,
       onClose: i.A.popAll,
       autoFocus: true
     }), (0, l.jsx)(u.Ef, {
       user: t,
-      relationshipType: j,
-      analyticsLocation: g
-    }), (0, l.jsx)(c.Zt, {
+      relationshipType: g,
+      analyticsLocation: h
+    }), (0, l.jsx)(d.Zt, {
       user: t,
-      guildId: f,
-      viewProfileItem: v
+      guildId: m,
+      viewProfileItem: b
     })]
-  }) : j === m.eA$.NONE && _ ? (0, l.jsxs)(l.Fragment, {
+  }) : g === f.eA$.NONE && _ ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.e, {
       userId: t.id,
       onClose: i.A.popAll,
       autoFocus: true
     }), (0, l.jsx)(u.ES, {
       user: t,
-      analyticsLocation: g,
-      gameFriends: b,
+      analyticsLocation: h,
+      gameFriends: v,
       tooltipPosition: "top",
       tooltipAlign: "center",
       hasIncomingPendingGameFriends: y,
       hasOutgoingPendingGameFriends: I
-    }), (0, l.jsx)(c.Zt, {
+    }), (0, l.jsx)(d.Zt, {
       user: t,
-      guildId: f,
-      viewProfileItem: v
+      guildId: m,
+      viewProfileItem: b
     })]
   }) : (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(u.cO, {
       variant: "primary",
       userId: t.id,
-      analyticsLocation: g,
+      analyticsLocation: h,
       autoFocus: true
     }), (0, l.jsx)(a.l, {
       userId: t.id,
       onClose: i.A.popAll,
       variant: "secondary"
-    }), (0, l.jsx)(c.Zt, {
+    }), (0, l.jsx)(d.Zt, {
       user: t,
-      guildId: f,
-      viewProfileItem: v
+      guildId: m,
+      viewProfileItem: b
     })]
   })
 }

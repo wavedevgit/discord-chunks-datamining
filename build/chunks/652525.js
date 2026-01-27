@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 652525, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 82575 **/
+/** chunk id: 652525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => i
+  t: () => s
 });
-let r = (0, require("./945810.js").mj)({
+let i = (0, require("./945810.js").mj)({
     name: "2025-10-collectibles-custom-cursors",
     kind: "user",
     defaultConfig: {
@@ -19,6 +18,6 @@ let r = (0, require("./945810.js").mj)({
       }
     }
   }),
-  i = e => r.getConfig({
+  s = e => i.getConfig({
     location: e
   }).enableCustomCursors

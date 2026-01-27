@@ -8,15 +8,15 @@ var Chunk12543 = require("./12543.js"),
   Chunk384623 = require("./384623.js"),
   Chunk54265 = require("./54265.js");
 
-function s(e) {
-  return (s = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+function o(e) {
+  return (o = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
     return typeof e
   } : function(e) {
     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
   })(e)
 }
 
-function o(e, t) {
+function s(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
@@ -57,7 +57,7 @@ function f(e) {
 }
 
 function p(e, t) {
-  return t && ("object" === s(t) || "function" == typeof t) ? t : _(e)
+  return t && ("object" === o(t) || "function" == typeof t) ? t : _(e)
 }
 
 function _(e) {
@@ -95,7 +95,7 @@ var E = function(e) {
 
   function n() {
     var e;
-    o(this, n);
+    s(this, n);
     for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
     return g(_(e = t.call.apply(t, [this].concat(i))), "priority", 90), g(_(e), "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "E", "i", "c", "t", "T"]), e
   }

@@ -1044,7 +1044,7 @@ let _ = {
   PremiumGroupFriendsSelectorModal: async () => {
     let {
       default: e
-    } = await n.e("73987").then(n.bind(n, 773486)), t = m.A.getPremiumGroupSubscription();
+    } = await Promise.all([n.e("73987"), n.e("90216")]).then(n.bind(n, 773486)), t = m.A.getPremiumGroupSubscription();
     return null == t ? () => null : n => (0, a.jsx)(e, j(v({}, n), {
       subscription: t
     }))
@@ -1101,7 +1101,7 @@ let _ = {
   DmSettingsUpsellModal: async () => {
     let {
       default: e
-    } = await n.e("62684").then(n.bind(n, 228855)), t = Object.keys(d.A.getGuilds())[0];
+    } = await n.e("40303").then(n.bind(n, 228855)), t = Object.keys(d.A.getGuilds())[0];
     return n => (0, a.jsx)(e, j(v({}, n), {
       guildId: t
     }))

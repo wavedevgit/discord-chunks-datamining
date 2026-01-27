@@ -22,7 +22,7 @@ var Chunk410323 = require("./410323.js"),
   },
   h = function(e) {
     if (!a(e)) returnfalse;
-    switch (s(e)) {
+    switch (o(e)) {
       case "AsyncFunction":
       case "GeneratorFunction":
       case "AsyncGeneratorFunction":

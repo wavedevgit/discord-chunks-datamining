@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 659203, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92917 **/
+/** chunk id: 659203, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => G
+  A: () => D
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk989349 = require("./989349.js"),
-  s = require.n(Chunk989349),
+  a = require.n(Chunk989349),
   Chunk607399 = require("./607399.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -34,7 +33,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk26875 = require("./26875.js"),
   Chunk954457 = require("./954457.js");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,100 +41,53 @@ function D(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-
-function x(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      D(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function L(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let M = "???",
-  k = e => {
-    let {
-      analyticsLocations: t,
-      startingScreen: i
-    } = e;
-    g.default.track(N.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
-      location_stack: t
-    }), (0, c.mMO)(async () => {
-      let {
-        default: e
-      } = await Promise.resolve().then(n.bind(n, 303682));
-      return t => (0, r.jsx)(e, j(x({}, t), {
-        startingScreen: i
-      }))
-    })
-  };
-class U extends Chunk64700.Component {
+class R extends Chunk64700.Component {
   getSystemMessageHeader() {
-    let e = h.default.getUser(this.trialOffer.user_id);
-    if (this.isSender) return w.intl.format(w.t["4/EMxl"], {
+    let e = g.default.getUser(this.trialOffer.user_id);
+    if (this.isSender) return T.intl.format(T.t["4/EMxl"], {
       receiver: null == e ? true : e.username
     });
-    let t = h.default.getUser(this.trialOffer.referrer_id),
+    let t = g.default.getUser(this.trialOffer.referrer_id),
       n = (null == t ? true : t.username) !== true ? t.username : "";
-    return w.intl.format(w.t.yisueA, {
+    return T.intl.format(T.t.yisueA, {
       sender: n,
-      helpdeskArticle: y.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
+      helpdeskArticle: A.A.getArticleURL(S.MVz.REFERRAL_PROGRAM)
     })
   }
   getTitleText() {
-    let e = h.default.getUser(this.trialOffer.user_id),
-      t = null != e ? e.username : M,
-      n = h.default.getUser(this.trialOffer.referrer_id),
-      r = null != n ? n.username : M;
-    return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? w.intl.formatToPlainString(w.t["Mptau/"], {
+    let e = g.default.getUser(this.trialOffer.user_id),
+      t = null != e ? e.username : "???",
+      n = g.default.getUser(this.trialOffer.referrer_id),
+      r = null != n ? n.username : "???";
+    return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? T.intl.formatToPlainString(T.t["Mptau/"], {
       username: t
-    }) : this.offerExpired ? this.isSender ? w.intl.string(w.t["9SNdf4"]) : w.intl.formatToPlainString(w.t["H0+MxK"], {
+    }) : this.offerExpired ? this.isSender ? T.intl.string(T.t["9SNdf4"]) : T.intl.formatToPlainString(T.t["H0+MxK"], {
       userName: r
-    }) : w.intl.formatToPlainString(w.t.IiWKwg, {
+    }) : T.intl.formatToPlainString(T.t.IiWKwg, {
       senderUserName: r,
       recipientUserName: t
     })
   }
   getBodyText() {
-    return this.recipientHasNitro && !this.isSender && true === this.trialOffer.redeemed_at ? w.intl.format(w.t.LwCwT9, {
-      helpdeskArticle: y.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
-    }) : this.offerExpired ? null : w.intl.string(w.t.lQLlOb)
+    return this.recipientHasNitro && !this.isSender && true === this.trialOffer.redeemed_at ? T.intl.format(T.t.LwCwT9, {
+      helpdeskArticle: A.A.getArticleURL(S.MVz.REFERRAL_PROGRAM)
+    }) : this.offerExpired ? null : T.intl.string(T.t.lQLlOb)
   }
   renderActions() {
-    let e = this.currentUser.id !== this.trialOffer.user_id || (0, b.TW)(this.currentUser) || !this.currentUser.verified || (0, T.P)(this.trialOffer),
+    let e = this.currentUser.id !== this.trialOffer.user_id || (0, y.TW)(this.currentUser) || !this.currentUser.verified || (0, C.P)(this.trialOffer),
       t = this.renderExpirationDate();
     return (0, r.jsxs)("div", {
-      className: R.UD,
+      className: N.UD,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(c.Button, {
           variant: "primary",
           disabled: e,
           size: "sm",
-          text: w.intl.string(w.t.O0etsF),
+          text: T.intl.string(T.t.O0etsF),
           onClick: () => {
-            (0, _.A)({
+            (0, f.A)({
               initialPlanId: null,
-              subscriptionTier: C.pe.TIER_2,
+              subscriptionTier: I.pe.TIER_2,
               analyticsLocations: this.analyticsLocations,
               trialId: this.trialOffer.trial_id,
               referralTrialOfferId: this.trialOffer.id
@@ -143,7 +95,7 @@ class U extends Chunk64700.Component {
           }
         })
       }), (0, r.jsx)("div", {
-        className: R.yu,
+        className: N.yu,
         children: t
       })]
     })
@@ -153,57 +105,57 @@ class U extends Chunk64700.Component {
       trialOffer: e,
       trialEndsAt: t
     } = this.props;
-    if (true !== e.redeemed_at && !this.isSender && null !== t) return w.intl.formatToPlainString(w.t.nP0ivR, {
-      date: (0, E.i$)(s()(t), "LL")
+    if (true !== e.redeemed_at && !this.isSender && null !== t) return T.intl.formatToPlainString(T.t.nP0ivR, {
+      date: (0, b.i$)(a()(t), "LL")
     });
     if (this.recipientHasNitro || true === e.expires_at) return null;
-    let n = s()(e.expires_at);
-    return this.offerExpired ? w.intl.formatToPlainString(w.t.PuSHfU, {
-      date: (0, E.i$)(s()(n), "LL")
-    }) : (0, v.GQ)(n.valueOf())
+    let n = a()(e.expires_at);
+    return this.offerExpired ? T.intl.formatToPlainString(T.t.PuSHfU, {
+      date: (0, b.i$)(a()(n), "LL")
+    }) : (0, x.GQ)(n.valueOf())
   }
   renderMedia() {
     return (0, r.jsx)("div", {
-      className: R.Qj
+      className: N.Qj
     })
   }
   render() {
     let e = () => {
-        let e = h.default.getUser(this.trialOffer.user_id),
-          t = null != e ? e.username : M,
-          n = h.default.getUser(this.trialOffer.referrer_id),
-          r = null != n ? n.username : M;
+        let e = g.default.getUser(this.trialOffer.user_id),
+          t = null != e ? e.username : "???",
+          n = g.default.getUser(this.trialOffer.referrer_id),
+          r = null != n ? n.username : "???";
         if (this.isSender)
           if (this.recipientHasNitro && true === this.trialOffer.redeemed_at) return {
-            headerText: w.intl.formatToPlainString(w.t.qABVhL, {
+            headerText: T.intl.formatToPlainString(T.t.qABVhL, {
               recipient: t
             }),
-            bodyText: w.intl.formatToPlainString(w.t.u7hyDx, {
-              helpdeskArticle: y.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
+            bodyText: T.intl.formatToPlainString(T.t.u7hyDx, {
+              helpdeskArticle: A.A.getArticleURL(S.MVz.REFERRAL_PROGRAM)
             })
           };
           else return {
-            headerText: w.intl.string(w.t.LAGZfq),
-            bodyText: w.intl.formatToPlainString(w.t["0gnFLC"], {
+            headerText: T.intl.string(T.t.LAGZfq),
+            bodyText: T.intl.formatToPlainString(T.t["0gnFLC"], {
               recipient: t
             })
           };
         return this.offerExpired ? {
-          headerText: w.intl.string(w.t.nYvpUl),
-          bodyText: w.intl.formatToPlainString(w.t.wJdBEZ, {
+          headerText: T.intl.string(T.t.nYvpUl),
+          bodyText: T.intl.formatToPlainString(T.t.wJdBEZ, {
             sender: r
           })
         } : {
-          headerText: w.intl.string(w.t.HtTvXA),
-          bodyText: w.intl.formatToPlainString(w.t.wOQByA, {
+          headerText: T.intl.string(T.t.HtTvXA),
+          bodyText: T.intl.formatToPlainString(T.t.wOQByA, {
             sender: r
           })
         }
       },
       t = (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(S.A, {
-          subscriptionTier: C.pe.TIER_2,
-          buttonTextOverride: w.intl.string(w.t.O0etsF),
+        children: [(0, r.jsx)(j.A, {
+          subscriptionTier: I.pe.TIER_2,
+          buttonTextOverride: T.intl.string(T.t.O0etsF),
           size: "md",
           variantOverride: "expressive"
         }), (0, r.jsx)(c.Text, {
@@ -212,45 +164,83 @@ class U extends Chunk64700.Component {
           children: this.renderExpirationDate()
         })]
       }),
-      n = (0, r.jsx)(c.Button, {
+      i = (0, r.jsx)(c.Button, {
         variant: "primary",
         disabled: false,
         size: "md",
-        onClick: () => k({
+        onClick: () => (e => {
+          let {
+            analyticsLocations: t,
+            startingScreen: i
+          } = e;
+          _.default.track(S.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+            location_stack: t
+          }), (0, c.mMO)(async () => {
+            let {
+              default: e
+            } = await Promise.resolve().then(n.bind(n, 303682));
+            return t => {
+              var n, l;
+              return (0, r.jsx)(e, (n = function(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                  var n = null != arguments[t] ? arguments[t] : {},
+                    r = Object.keys(n);
+                  "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(n, e).enumerable
+                  }))), r.forEach(function(t) {
+                    w(e, t, n[t])
+                  })
+                }
+                return e
+              }({}, t), l = l = {
+                startingScreen: i
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                  var r = Object.getOwnPropertySymbols(e);
+                  n.push.apply(n, r)
+                }
+                return n
+              })(Object(l)).forEach(function(e) {
+                Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+              }), n))
+            }
+          })
+        })({
           analyticsLocations: [],
-          startingScreen: this.referralsSent.size === A.Z ? I.SelectFriendsModalScreens.REMINDER : I.SelectFriendsModalScreens.SELECT_FRIENDS
+          startingScreen: this.referralsSent.size === O.Z ? E.SelectFriendsModalScreens.REMINDER : E.SelectFriendsModalScreens.SELECT_FRIENDS
         }),
-        text: w.intl.string(w.t.Lm2nFc)
+        text: T.intl.string(T.t.Lm2nFc)
       }),
-      i = this.isSender ? n : t,
+      l = this.isSender ? i : t,
       a = (0, r.jsx)(c._V3, {
         src: P.A,
         height: 84,
         width: 144,
-        className: R.ms
+        className: N.ms
       }),
       {
         headerText: s,
         bodyText: o
       } = e();
-    return (0, r.jsxs)(p.A, {
-      className: R.SB,
+    return (0, r.jsxs)(m.A, {
+      className: N.SB,
       iconNode: (0, r.jsx)(c.tvc, {
         size: "md",
         color: "currentColor"
       }),
-      iconContainerClassName: R.J5,
+      iconContainerClassName: N.J5,
       compact: this.compact,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-strong",
         children: this.getSystemMessageHeader()
       }), (0, r.jsxs)("div", {
-        className: R.i2,
+        className: N.i2,
         children: [a, (0, r.jsxs)("div", {
-          className: R.KX,
+          className: N.KX,
           children: [(0, r.jsxs)("div", {
-            className: R.xJ,
+            className: N.xJ,
             children: [(0, r.jsx)(c.Heading, {
               variant: "heading-md/semibold",
               color: "text-strong",
@@ -261,51 +251,51 @@ class U extends Chunk64700.Component {
               children: o
             })]
           }), (0, r.jsx)("div", {
-            className: R.ox,
-            children: i
+            className: N.ox,
+            children: l
           })]
         })]
       })]
     })
   }
   constructor(e) {
-    super(e), D(this, "trialOffer", true), D(this, "referralsSent", true), D(this, "currentUser", true), D(this, "recipientHasNitro", true), D(this, "trialEndsAt", true), D(this, "analyticsLocations", true), D(this, "offerExpired", true), D(this, "isSender", true), D(this, "compact", true), this.trialOffer = e.trialOffer, this.referralsSent = e.referralsSent, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.compact = true === e.compact, this.offerExpired = (0, T.P)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
+    super(e), w(this, "trialOffer", true), w(this, "referralsSent", true), w(this, "currentUser", true), w(this, "recipientHasNitro", true), w(this, "trialEndsAt", true), w(this, "analyticsLocations", true), w(this, "offerExpired", true), w(this, "isSender", true), w(this, "compact", true), this.trialOffer = e.trialOffer, this.referralsSent = e.referralsSent, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.compact = true === e.compact, this.offerExpired = (0, C.P)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
   }
 }
 
-function G(e) {
+function D(e) {
   let {
     userTrialOfferId: t,
     canRenderReferralEmbed: n,
     compact: i
   } = e, {
-    trialOffer: a,
-    isResolving: s,
+    trialOffer: l,
+    isResolving: a,
     referralsSent: c
-  } = (0, l.cf)([O.A], () => ({
-    trialOffer: n ? O.A.getRelevantUserTrialOffer(t) : null,
-    isResolving: !!n && O.A.isResolving(t),
-    referralsSent: O.A.getRecipientStatus()
-  }), [n, t]), p = h.default.getCurrentUser(), _ = (0, l.bG)([h.default], () => null != a && (0, b.TW)(true !== p && a.user_id === p.id ? p : h.default.getUser(a.user_id))), g = (0, l.bG)([m.A], () => {
+  } = (0, o.cf)([v.A], () => ({
+    trialOffer: n ? v.A.getRelevantUserTrialOffer(t) : null,
+    isResolving: !!n && v.A.isResolving(t),
+    referralsSent: v.A.getRecipientStatus()
+  }), [n, t]), m = g.default.getCurrentUser(), f = (0, o.bG)([g.default], () => null != l && (0, y.TW)(true !== m && l.user_id === m.id ? m : g.default.getUser(l.user_id))), _ = (0, o.bG)([h.A], () => {
     var e;
-    return _ ? null == (e = m.A.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
+    return f ? null == (e = h.A.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {
-    analyticsLocations: E
-  } = (0, f.Ay)(d.A.SHARE_NITRO_EMBED);
-  return s ? (0, r.jsx)(u.Wb, {
-    isHorizontal: !o.Fr
-  }) : n && null != a && true !== p ? (0, r.jsx)(U, {
-    trialOffer: a,
+    analyticsLocations: b
+  } = (0, p.Ay)(d.A.SHARE_NITRO_EMBED);
+  return a ? (0, r.jsx)(u.Wb, {
+    isHorizontal: !s.Fr
+  }) : n && null != l && true !== m ? (0, r.jsx)(R, {
+    trialOffer: l,
     referralsSent: c,
-    currentUser: p,
-    recipientHasNitro: _,
-    trialEndsAt: g,
-    analyticsLocations: E,
+    currentUser: m,
+    recipientHasNitro: f,
+    trialEndsAt: _,
+    analyticsLocations: b,
     compact: i
   }) : (0, r.jsx)("div", {
-    className: R.TU,
+    className: N.TU,
     children: (0, r.jsx)("div", {
-      className: R.Gq
+      className: N.Gq
     })
   })
 }

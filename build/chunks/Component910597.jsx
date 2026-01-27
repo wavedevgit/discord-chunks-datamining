@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 910597, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 910597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -13,31 +12,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d() {
+function u() {
   let {
     attenuation: e,
     attenuateWhileSpeakingSelf: t,
     attenuateWhileSpeakingOthers: n
-  } = (0, i.cf)([l.A], () => ({
-    attenuation: l.A.getAttenuation(),
-    attenuateWhileSpeakingSelf: l.A.getAttenuateWhileSpeakingSelf(),
-    attenuateWhileSpeakingOthers: l.A.getAttenuateWhileSpeakingOthers()
+  } = (0, i.cf)([o.A], () => ({
+    attenuation: o.A.getAttenuation(),
+    attenuateWhileSpeakingSelf: o.A.getAttenuateWhileSpeakingSelf(),
+    attenuateWhileSpeakingOthers: o.A.getAttenuateWhileSpeakingOthers()
   }));
-  return (0, r.jsxs)(o.x, {
+  return (0, r.jsxs)(a.x, {
     setting: c.H.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
-    children: [(0, r.jsx)(a.Apm, {
-      label: u.intl.string(u.t.oSdBvW),
-      description: u.intl.string(u.t["0A/8Rt"]),
+    children: [(0, r.jsx)(l.Apm, {
+      label: d.intl.string(d.t.oSdBvW),
+      description: d.intl.string(d.t["0A/8Rt"]),
       initialValue: e,
       onValueChange: e => {
         s.A.setAttenuation(e, t, n)
       }
-    }), (0, r.jsx)(a.dOG, {
-      label: u.intl.string(u.t["9dHxRY"]),
+    }), (0, r.jsx)(l.dOG, {
+      label: d.intl.string(d.t["9dHxRY"]),
       checked: t,
       onChange: t => s.A.setAttenuation(e, t, n)
-    }), (0, r.jsx)(a.dOG, {
-      label: u.intl.string(u.t.SMt0Gr),
+    }), (0, r.jsx)(l.dOG, {
+      label: d.intl.string(d.t.SMt0Gr),
       checked: n,
       onChange: n => s.A.setAttenuation(e, t, n)
     })]

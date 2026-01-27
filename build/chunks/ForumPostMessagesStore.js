@@ -81,7 +81,7 @@ function E(e) {
 }
 
 function y(e, t) {
-  let n = null == t ? null : (0, s.rh)(t);
+  let n = null == t ? null : (0, o.rh)(t);
   _[e] = {
     loaded: true,
     firstMessage: n
@@ -93,7 +93,7 @@ function b(e) {
   let t = _[c.default.castMessageIdAsChannelId(e.message.id)];
   if (null == t || null == t.firstMessage) returnfalse;
   _[c.default.castMessageIdAsChannelId(e.message.id)] = p(d({}, t), {
-    firstMessage: (0, s.IU)(t.firstMessage, e.message)
+    firstMessage: (0, o.IU)(t.firstMessage, e.message)
   })
 }
 
@@ -106,7 +106,7 @@ function O(e) {
 }
 
 function v(e) {
-  if (null != _[e.channel.id] || !o.A.isSubscribedToThreads(e.channel.guild_id)) returnfalse;
+  if (null != _[e.channel.id] || !s.A.isSubscribedToThreads(e.channel.guild_id)) returnfalse;
   _[e.channel.id] = {
     loaded: true,
     firstMessage: null
@@ -120,14 +120,14 @@ function A(e) {
     messageId: r,
     userId: i,
     emoji: a,
-    optimistic: s,
-    reactionType: o
+    optimistic: o,
+    reactionType: s
   } = e, c = _[n];
   if (null == c || null == c.firstMessage || r !== c.firstMessage.id) returnfalse;
   let u = l.default.getCurrentUser(),
     f = null != u && u.id === i;
-  if (s && !f) returnfalse;
-  _[n] = d({}, c), "MESSAGE_REACTION_ADD" === t ? _[n].firstMessage = c.firstMessage.addReaction(a, f, e.colors, o) : _[n].firstMessage = c.firstMessage.removeReaction(a, f, o)
+  if (o && !f) returnfalse;
+  _[n] = d({}, c), "MESSAGE_REACTION_ADD" === t ? _[n].firstMessage = c.firstMessage.addReaction(a, f, e.colors, s) : _[n].firstMessage = c.firstMessage.removeReaction(a, f, s)
 }
 
 function I(e) {
@@ -138,9 +138,9 @@ function I(e) {
   } = e, i = _[t];
   if (null == i || null == i.firstMessage || n !== i.firstMessage.id) returnfalse;
   let a = l.default.getCurrentUser(),
-    s = i.firstMessage.addReactionBatch(r, null == a ? true : a.id);
+    o = i.firstMessage.addReactionBatch(r, null == a ? true : a.id);
   _[t] = p(d({}, i), {
-    firstMessage: s
+    firstMessage: o
   })
 }
 
@@ -174,12 +174,12 @@ function C(e) {
   } = e, r = n[n.length - 1];
   null != r && r.id === c.default.castChannelIdAsMessageId(t) && (_[t] = {
     loaded: true,
-    firstMessage: (0, s.rh)(r)
+    firstMessage: (0, o.rh)(r)
   })
 }
 class N extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A, l.default)
+    this.waitFor(s.A, l.default)
   }
   isLoading(e) {
     var t;

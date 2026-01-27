@@ -84,7 +84,7 @@ function y(e) {
     onComplete: O
   } = e, v = m(e, ["steps", "currentStepKey", "numberedSteps", "onStepChange", "onComplete"]), {
     i18n: A
-  } = (0, s.G9)(), I = v.onClose, S = _.find(e => e.stepKey === g);
+  } = (0, o.G9)(), I = v.onClose, S = _.find(e => e.stepKey === g);
   if (null == S) throw Error("Step with key ".concat(g, " not found"));
   let T = _.findIndex(e => e.stepKey === g),
     C = T === _.length - 1,
@@ -99,21 +99,21 @@ function y(e) {
     D = i.useCallback(async () => {
       (null == S.onNext || await S.onNext()) && (C ? await P() : R(_[T + 1].stepKey))
     }, [R, T, _, C, P, S]),
-    x = i.useCallback(() => {
+    L = i.useCallback(() => {
       N || R(_[T - 1].stepKey)
     }, [R, T, _, N]),
-    L = i.useMemo(() => ({
+    x = i.useMemo(() => ({
       currentStepKey: g,
       goToStep: R,
       goToNextStep: D,
-      goToPreviousStep: x,
+      goToPreviousStep: L,
       complete: P
-    }), [g, R, D, x, P]),
-    j = {
+    }), [g, R, D, L, P]),
+    M = {
       variant: "secondary",
       text: A.BACK
     },
-    M = {
+    j = {
       variant: "primary",
       text: A.NEXT,
       disabled: !w,
@@ -126,16 +126,16 @@ function y(e) {
       variant: "secondary",
       onClick: I
     },
-    U = S.hideBackButton || N ? true : (0, r.jsx)(a.Q, h(p({}, j, S.backButtonProps), {
-      onClick: x
+    U = S.hideBackButton || N ? true : (0, r.jsx)(a.Q, h(p({}, M, S.backButtonProps), {
+      onClick: L
     })),
     G = S.modalProps,
-    V = "graphic" in G ? G : null;
+    F = "graphic" in G ? G : null;
   return (0, r.jsx)(E.Provider, {
-    value: L,
-    children: (0, r.jsxs)(o.d, h(p({}, v), {
-      paddingSize: null != V ? "lg" : "sm",
-      children: [null != V ? (0, r.jsx)(u.V6, p({}, V)) : (0, r.jsx)(u.rQ, {
+    value: x,
+    children: (0, r.jsxs)(s.d, h(p({}, v), {
+      paddingSize: null != F ? "lg" : "sm",
+      children: [null != F ? (0, r.jsx)(u.V6, p({}, F)) : (0, r.jsx)(u.rQ, {
         title: G.title,
         subtitle: G.subtitle,
         stepNumber: (null == y ? true : y.includes(g)) ? y.indexOf(g) + 1 : true,
@@ -158,7 +158,7 @@ function y(e) {
       }), (0, r.jsx)(l.H, {
         leading: U,
         actionsFullWidth: N,
-        actions: [...N ? [k] : [], p({}, M, S.nextButtonProps)]
+        actions: [...N ? [k] : [], p({}, j, S.nextButtonProps)]
       })]
     }))
   })

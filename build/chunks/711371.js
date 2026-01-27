@@ -61,16 +61,16 @@ if (require("./654821.js"), !Chunk719442.KE._addedDiscordOverrides) {
   let e = Chunk719442.KE.positions;
   Chunk719442.KE.positions = function*(t) {
     var n, r;
-    let i, s, o = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
+    let i, o, s = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       {
         at: l = t.selection,
         unit: c = "offset",
         reverse: d = false,
         voids: _ = false
-      } = null != o ? o : {};
+      } = null != s ? s : {};
     if (null == l) return;
     if ("block" === c && (c = "line"), "offset" === c) {
-      for (let n of e(t, o)) yield n;
+      for (let n of e(t, s)) yield n;
       return
     }
     i = E.isPoint(l) ? d ? {
@@ -92,14 +92,14 @@ if (require("./654821.js"), !Chunk719442.KE._addedDiscordOverrides) {
           if (!(g.equals(p, e) || g.isAncestor(p, e))) {
             let e = t.isVoid(l);
             if ("line" === c && h.isElement(l) && !e) {
-              null != s && (yield s, s = true), N = true;
+              null != o && (yield o, o = true), N = true;
               return
             }
             if (!_ && e) continue
           }
           for (let e of w([l, p])) yield e
         } else if (m.isText(l))
-          if ("line" === c) s = {
+          if ("line" === c) o = {
             path: p,
             offset: d ? 0 : l.text.length
           };
@@ -109,12 +109,12 @@ if (require("./654821.js"), !Chunk719442.KE._addedDiscordOverrides) {
         };
         else {
           let n = a.KE.range(t, p);
-          for (let r of (g.equals(p, b.path) && (n.anchor = b), g.equals(p, O.path) && (n.focus = O), e(t, f(u({}, o), {
+          for (let r of (g.equals(p, b.path) && (n.anchor = b), g.equals(p, O.path) && (n.focus = O), e(t, f(u({}, s), {
               at: n
             })))) yield r
         }
       }
-      "line" === c && h.isElement(r) && !t.isVoid(r) && (null != s && (yield s, s = true), N = true)
+      "line" === c && h.isElement(r) && !t.isVoid(r) && (null != o && (yield o, o = true), N = true)
     }
     "line" === c && (yield d ? O : b);
     for (let e = T; !N && (!d ? e <= C : e >= C); e += A)
@@ -223,10 +223,10 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
     getSelectedText(e, t) {
       let n = null;
       if (t) {
-        let t = s.rL.findDocumentOrShadowRoot(e).getSelection();
+        let t = o.rL.findDocumentOrShadowRoot(e).getSelection();
         if (null != t && t.rangeCount > 0) {
           let r = t.getRangeAt(0);
-          null != r && (n = s.rL.toSlateRange(e, r, {
+          null != r && (n = o.rL.toSlateRange(e, r, {
             exactMatch: true,
             suppressThrow: true
           }))
@@ -242,8 +242,8 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
       }), a = "";
       for (let [e, t] of i) {
         let i = g.equals(t, n.path) ? n.offset : 0,
-          s = g.equals(t, r.path) ? r.offset : 0;
-        a += e.text.substring(i, s)
+          o = g.equals(t, r.path) ? r.offset : 0;
+        a += e.text.substring(i, o)
       }
       return a
     },
@@ -265,11 +265,11 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
         i = (null == r ? true : r.type) === "line" ? r.children[0] : null;
       if (null == i || !m.isText(i)) returnfalse;
       let a = e.chatInputType,
-        s = i.text;
-      return 1 === n.length && 1 === r.children.length && (true === a.sedReplace && s.startsWith("s/") || (null == (t = a.autocomplete) ? true : t.reactions) === true && s.startsWith("+"))
+        o = i.text;
+      return 1 === n.length && 1 === r.children.length && (true === a.sedReplace && o.startsWith("s/") || (null == (t = a.autocomplete) ? true : t.reactions) === true && o.startsWith("+"))
     },
     focus(e) {
-      s.rL.isFocused(e) || (s.rL.focus(e), s.rL.deselect(e))
+      o.rL.isFocused(e) || (o.rL.focus(e), o.rL.deselect(e))
     },
     getSelectionOverlap(e, t) {
       if (null == e.selection) return {
@@ -308,9 +308,9 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
       var r;
       let i = "line" === e.type && (null == (r = e.codeBlockState) ? true : r.wasInCodeBlock) === true,
         a = e.children.map(e => m.isText(e) ? e.text : "?"),
-        s = a.join("");
+        o = a.join("");
       return {
-        entries: o.q(s, null != t ? t : null, i, n),
+        entries: s.q(o, null != t ? t : null, i, n),
         serializedChildren: a
       }
     },
@@ -408,19 +408,19 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
         focus: t
       },
       a = 0,
-      s = n.length,
-      o = Math.floor((a + s) / 2);
-    for (; o !== a;)
+      o = n.length,
+      s = Math.floor((a + o) / 2);
+    for (; s !== a;)
       if (v(e, {
-          anchor: n[o],
-          focus: n[o]
-        }, i) ? r ? s = o : a = o : r ? a = o : s = o, o = Math.floor((a + s) / 2), !r && o === n.length - 2 && s === n.length - 1) {
+          anchor: n[s],
+          focus: n[s]
+        }, i) ? r ? o = s : a = s : r ? a = s : o = s, s = Math.floor((a + o) / 2), !r && s === n.length - 2 && o === n.length - 1) {
         let t = n[n.length - 1];
         v(e, {
           anchor: t,
           focus: t
-        }, i) && (o = s)
-      } return n[o]
+        }, i) && (s = o)
+      } return n[s]
   },
   I = {
     getLineStart(e, t, n) {
@@ -433,13 +433,13 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
         a = Array.from(p.positions(e, {
           at: i
         })),
-        s = A(e, t, a, true);
-      if (n && E.equals(t, s) && !E.isAtEnd(t, r)) {
+        o = A(e, t, a, true);
+      if (n && E.equals(t, o) && !E.isAtEnd(t, r)) {
         let n = p.after(e, t);
-        if (null == n) return s;
-        s = A(e, n, a, true)
+        if (null == n) return o;
+        o = A(e, n, a, true)
       }
-      return s
+      return o
     },
     getLineEnd(e, t, n) {
       let r = p.getParentElement(e, t);
@@ -451,12 +451,12 @@ let p = f(u({}, Chunk719442.KE, Chunk253018.rL), {
         a = Array.from(p.positions(e, {
           at: i
         })),
-        s = A(e, t, a, false);
-      if (n && E.equals(t, s) && !E.isAtEnd(t, r)) {
+        o = A(e, t, a, false);
+      if (n && E.equals(t, o) && !E.isAtEnd(t, r)) {
         let n = p.after(e, t);
-        if (null == n) return s;
-        s = A(e, n, a, false)
+        if (null == n) return o;
+        o = A(e, n, a, false)
       }
-      return s
+      return o
     }
   }

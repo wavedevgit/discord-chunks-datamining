@@ -37,14 +37,14 @@ class u {
   }
   get gameWidgets() {
     var e;
-    return null == (e = this._userProfile.widgets) ? true : e.filter(s.fu)
+    return null == (e = this._userProfile.widgets) ? true : e.filter(o.fu)
   }
   get primaryColor() {
     var e, t;
     return null != (e = null == (t = this.themeColors) ? true : t[0]) ? e : this.accentColor
   }
   get canUsePremiumProfileCustomization() {
-    return a.Ay.isPremiumAtLeast(this.premiumType, o.PremiumTypes.TIER_2)
+    return a.Ay.isPremiumAtLeast(this.premiumType, s.PremiumTypes.TIER_2)
   }
   get canEditThemes() {
     return this.canUsePremiumProfileCustomization

@@ -31,11 +31,11 @@ function h(e) {
 function m(e) {
   let t = l.eh.getSetting(),
     n = null != t.backgroundGradientPresetId && t.backgroundGradientPresetId in f.ag && f.ag[t.backgroundGradientPresetId].theme !== e;
-  (0, s.GQ)(e), n && (0, u.S8)()
+  (0, o.GQ)(e), n && (0, u.S8)()
 }
 
 function g() {
-  let [e] = r.useState(() => o.A.theme);
+  let [e] = r.useState(() => s.A.theme);
   return r.useCallback(t => {
     let {
       resetColors: n,
@@ -47,15 +47,15 @@ function g() {
       colors: n,
       gradientAngle: r,
       chassisMixAmount: i
-    }), "reset_button" === t ? m(h(null != a ? a : o.A.theme)) : (0, s.XG)();
+    }), "reset_button" === t ? m(h(null != a ? a : s.A.theme)) : (0, o.XG)();
     let d = l.eh.getSetting().backgroundGradientPresetId;
     null != d && (0, u.bc)(d)
   }, [e])
 }
 
 function E() {
-  let e = h(o.A.theme);
-  e !== o.A.theme && m(e)
+  let e = h(s.A.theme);
+  e !== s.A.theme && m(e)
 }
 
 function y(e, t, n) {
@@ -64,13 +64,13 @@ function y(e, t, n) {
 
 function b(e, t) {
   var n, r, i, a;
-  let s = l.eh.getSetting().customUserThemeSettings,
-    o = d.A.getSavedCustomTheme(),
+  let o = l.eh.getSetting().customUserThemeSettings,
+    s = d.A.getSavedCustomTheme(),
     u = "reset_button" === e ? [c.OT] : [],
     f = 0,
     p = c.kJ,
     _ = t;
-  return (null == s ? true : s.colors) != null ? (u = s.colors, f = null != (n = s.gradientAngle) ? n : 0, p = null != (r = s.baseMix) ? r : c.kJ) : "reset_button" === e && null != o && (u = o.colors, f = null != (i = o.gradient_angle) ? i : 0, p = null != (a = o.base_mix) ? a : c.kJ, _ = o.base_theme), {
+  return (null == o ? true : o.colors) != null ? (u = o.colors, f = null != (n = o.gradientAngle) ? n : 0, p = null != (r = o.baseMix) ? r : c.kJ) : "reset_button" === e && null != s && (u = s.colors, f = null != (i = s.gradient_angle) ? i : 0, p = null != (a = s.base_mix) ? a : c.kJ, _ = s.base_theme), {
     resetColors: u,
     resetGradientAngle: f,
     resetChassisMixAmount: p,
@@ -83,11 +83,11 @@ function O() {
     colors: e,
     chassisMixAmount: t,
     gradientAngle: n
-  } = (0, c.ko)(), a = (0, i.bG)([o.A], () => o.A.theme), [s] = r.useState(() => o.A.theme), {
+  } = (0, c.ko)(), a = (0, i.bG)([s.A], () => s.A.theme), [o] = r.useState(() => s.A.theme), {
     resetColors: l,
     resetGradientAngle: u,
     resetChassisMixAmount: d,
     resetBaseTheme: f
-  } = b("reset_button", s);
+  } = b("reset_button", o);
   return JSON.stringify(e) === JSON.stringify(l) && t === d && n === u && a === f
 }

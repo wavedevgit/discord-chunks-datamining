@@ -17,11 +17,11 @@ function c(e) {
     node: t,
     showTooltip: n = true,
     className: i
-  } = e, c = (0, o.A)(t), u = (0, r.jsx)("span", {
+  } = e, c = (0, s.A)(t), u = (0, r.jsx)("span", {
     className: a()(l.vE, i),
     children: c
   });
-  returntrue !== n ? u : (0, r.jsx)(s.m, {
+  returntrue !== n ? u : (0, r.jsx)(o.m, {
     __unsupportedReactNodeAsText: t.full,
     ariaHidden: true,
     children: u

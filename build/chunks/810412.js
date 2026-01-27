@@ -34,14 +34,14 @@ function d(e) {
   }
 }
 async function f(e, t, r) {
-  var s, u, f, p, _, h;
+  var o, u, f, p, _, h;
   let m = null != r ? a.A.getDetectableGame(r) : null,
     {
       default: g
     } = n(833551),
-    E = null != (s = null == g ? true : g.getMostRecentOverlayRenderMethod()) ? s : true,
+    E = null != (o = null == g ? true : g.getMostRecentOverlayRenderMethod()) ? o : true,
     y = null != E ? l.Ue[E] : true;
-  __OVERLAY__ && (y = l.Ue[l.Ue.Hook]), o.default.track(c.HAw.OVERLAY_TOGGLED, {
+  __OVERLAY__ && (y = l.Ue[l.Ue.Hook]), s.default.track(c.HAw.OVERLAY_TOGGLED, {
     enabled: e,
     setting_type: d(t),
     client_setting_type: t,
@@ -77,13 +77,13 @@ function _(e, t) {
     liveUserIds: u,
     contentInventoryIds: d
   } = t;
-  ((null != (n = null == l ? true : l.length) ? n : 0) !== 0 || (null != (r = null == u ? true : u.length) ? r : 0) !== 0 || (null != (i = null == d ? true : d.length) ? i : 0) !== 0) && o.default.track(c.HAw.WIDGET_CONTENT_SHOWN, {
+  ((null != (n = null == l ? true : l.length) ? n : 0) !== 0 || (null != (r = null == u ? true : u.length) ? r : 0) !== 0 || (null != (i = null == d ? true : d.length) ? i : 0) !== 0) && s.default.track(c.HAw.WIDGET_CONTENT_SHOWN, {
     overlay_locked: a,
     widget_type: e,
     shown_user_ids: l,
     live_user_ids: u,
     content_inventory_ids: d,
-    media_session_id: s.A.getMediaSessionId()
+    media_session_id: o.A.getMediaSessionId()
   })
 }
 
@@ -92,7 +92,7 @@ function h(e, t) {
     pinned: n,
     opacity: r
   } = t;
-  o.default.track(c.HAw.WIDGET_SETTING_UPDATED, {
+  s.default.track(c.HAw.WIDGET_SETTING_UPDATED, {
     widget_type: e,
     pinned: n,
     opacity: r
@@ -112,12 +112,12 @@ function E(e, t) {
     userId: i,
     secondaryValue: a
   } = t;
-  o.default.track(c.HAw.WIDGET_INTERACTED, {
+  s.default.track(c.HAw.WIDGET_INTERACTED, {
     widget_type: e,
     interaction_type: n,
     interaction_value: r,
     interaction_secondary_value: a,
     target_user_id: i,
-    media_session_id: s.A.getMediaSessionId()
+    media_session_id: o.A.getMediaSessionId()
   })
 }

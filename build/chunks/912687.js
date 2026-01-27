@@ -28,11 +28,11 @@ let u = (0, Chunk64700.createContext)({}),
         },
         defaultClassName: "react-aria-ToggleButtonGroup"
       }),
-      _ = (0, s.$)(e, {
+      _ = (0, o.$)(e, {
         global: true
       });
     return l.createElement("div", {
-      ...(0, o.v)(_, p, f),
+      ...(0, s.v)(_, p, f),
       ref: t,
       slot: e.slot || true,
       "data-orientation": e.orientation || "horizontal",

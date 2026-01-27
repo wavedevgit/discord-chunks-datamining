@@ -14,7 +14,7 @@ require.d(exports, {
 var Chunk267721 = require("./267721.js"),
   i = require.n(Chunk267721),
   Chunk128080 = require("./128080.js"),
-  s = require.n(Chunk128080),
+  o = require.n(Chunk128080),
   Chunk909203 = require("./909203.js"),
   l = require.n(Chunk909203),
   Chunk214958 = require("./214958.js"),
@@ -121,8 +121,8 @@ function I(e) {
     type: n,
     setup: r,
     direction: a,
-    baseSDP: s,
-    codec: o,
+    baseSDP: o,
+    codec: s,
     payload: l,
     bitrate: c,
     ssrcs: f,
@@ -151,7 +151,7 @@ function I(e) {
   };
   let {
     media: [v]
-  } = d.parse(s);
+  } = d.parse(o);
   if (v.type = n, v.protocol = b, v.payloads = l, v.setup = r, v.mid = t, v.rtcpMux = "rtcp-mux", v.direction = a, v.ssrcs = f, f.length > 0 && (null != E && (v.ssrcGroups = i()(f, g).map(e => {
       let t = e[0].id;
       return {
@@ -180,23 +180,23 @@ function I(e) {
         })
       }
       v.rtp.push({
-        codec: o,
+        codec: s,
         encoding: 2,
         payload: l,
         rate: 48e3
-      }), o === p.UK.OPUS && v.fmtp.push({
+      }), s === p.UK.OPUS && v.fmtp.push({
         config: "minptime=10;useinbandfec=1;usedtx=".concat(y ? "0" : "1"),
         payload: l
       }), v.maxptime = 60;
       break;
     case "video":
       v.ext = h.filter(e => "urn:ietf:params:rtp-hdrext:toffset" === e.uri || "http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time" === e.uri || "urn:3gpp:video-orientation" === e.uri || "http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01" === e.uri || "http://www.webrtc.org/experiments/rtp-hdrext/playout-delay" === e.uri), v.rtp.push({
-        codec: o,
+        codec: s,
         payload: l,
         rate: 9e4
       });
       let I = "x-google-max-bitrate=".concat(c);
-      o === p.UK.H264 ? I += ";level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f" : o === p.UK.H265 && (I += ";level-id=180;profile-id=1;tier-flag=0;tx-mode=SRST"), v.fmtp.push({
+      s === p.UK.H264 ? I += ";level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f" : s === p.UK.H265 && (I += ";level-id=180;profile-id=1;tier-flag=0;tx-mode=SRST"), v.fmtp.push({
         config: I,
         payload: l
       }), v.rtcpFb = [{
@@ -235,8 +235,8 @@ function S(e) {
     direction: r,
     audioCodec: i,
     audioPayloadType: a,
-    audioBitRate: s,
-    videoCodec: o,
+    audioBitRate: o,
+    videoCodec: s,
     videoPayloadType: l,
     videoBitRate: c,
     rtxPayloadType: d,
@@ -248,9 +248,9 @@ function S(e) {
     f.forEach(t => {
       let [r, u, f, h, m] = t;
       if ("video" === f && (0 === l || 0 === d)) return;
-      let g = "audio" === f ? i : o,
+      let g = "audio" === f ? i : s,
         E = "audio" === f ? a : l,
-        y = "audio" === f ? s : c;
+        y = "audio" === f ? o : c;
       _.push(I({
         mid: m,
         type: f,
@@ -281,7 +281,7 @@ function S(e) {
         baseSDP: n,
         codec: i,
         payload: a,
-        bitrate: s,
+        bitrate: o,
         ssrcs: u.flat(),
         extensions: p
       })), l > 0) {
@@ -298,7 +298,7 @@ function S(e) {
         setup: e,
         direction: r,
         baseSDP: n,
-        codec: o,
+        codec: s,
         payload: l,
         bitrate: c,
         ssrcs: t.flat(),
@@ -320,8 +320,8 @@ function T(e) {
     audioCodec: r,
     audioPayloadType: i,
     audioBitRate: a,
-    videoCodec: s,
-    videoPayloadType: o,
+    videoCodec: o,
+    videoPayloadType: s,
     videoBitRate: l,
     sendingVideo: c,
     rtxPayloadType: u,
@@ -338,8 +338,8 @@ function T(e) {
       mid: y
     } = e;
     "" !== m ? t = v(m, d, "audio" === g ? "a" : "v") : (t = [], "sendonly" === E ? E = "inactive" : "sendrecv" === E && (E = "recvonly"));
-    let b = "audio" === g ? r : s,
-      O = "audio" === g ? i : o,
+    let b = "audio" === g ? r : o,
+      O = "audio" === g ? i : s,
       A = "audio" === g ? null : u,
       S = "audio" === g ? a : l;
     _.push(I({
@@ -366,18 +366,18 @@ function T(e) {
 function C(e, t, n, r, i) {
   let a = e.find(e => e.codec === r);
   if (null == a) return null;
-  let s = t.find(e => RegExp("^apt=".concat(a.payload)).test(e.config)),
-    o = null;
-  if (null != s) {
-    let t = e.find(e => e.codec === p.UK.RTX && e.payload === s.payload);
-    null != t && (o = t.payload)
+  let o = t.find(e => RegExp("^apt=".concat(a.payload)).test(e.config)),
+    s = null;
+  if (null != o) {
+    let t = e.find(e => e.codec === p.UK.RTX && e.payload === o.payload);
+    null != t && (s = t.payload)
   }
   return {
     type: n,
     name: r,
     priority: i + 1,
     payloadType: a.payload,
-    rtxPayloadType: o
+    rtxPayloadType: s
   }
 }
 
@@ -386,8 +386,8 @@ function N(e, t) {
     let r, {
       type: i,
       rtp: a,
-      ssrcs: s,
-      fmtp: o,
+      ssrcs: o,
+      fmtp: s,
       direction: l,
       mid: c
     } = n;
@@ -398,15 +398,15 @@ function N(e, t) {
       }), i) {
       case "audio":
         [p.UK.OPUS].forEach((t, n) => {
-          let r = C(a, o, i, t, n);
+          let r = C(a, s, i, t, n);
           null != r && e.codecs.push(r)
-        }), "sendrecv" === l && null != (r = null == s ? true : s.find(e => "cname" === e.attribute)) && (e.audioSSRC = r.id);
+        }), "sendrecv" === l && null != (r = null == o ? true : o.find(e => "cname" === e.attribute)) && (e.audioSSRC = r.id);
         break;
       case "video":
         (t ? [p.UK.H265, p.UK.H264, p.UK.VP8, p.UK.VP9] : [p.UK.H264, p.UK.VP8, p.UK.VP9]).forEach((t, n) => {
-          let r = C(a, o, i, t, n);
+          let r = C(a, s, i, t, n);
           null != r && e.codecs.push(r)
-        }), "sendrecv" === l && (null != (r = null == s ? true : s.find(e => "cname" === e.attribute)) && (e.videoSSRC = r.id), null != (r = null == s ? true : s.findLast(e => "cname" === e.attribute)) && (r.id === e.videoSSRC && E.warn("Unable to find a unique rtx SSRC!"), e.rtxSSRC = r.id))
+        }), "sendrecv" === l && (null != (r = null == o ? true : o.find(e => "cname" === e.attribute)) && (e.videoSSRC = r.id), null != (r = null == o ? true : o.findLast(e => "cname" === e.attribute)) && (r.id === e.videoSSRC && E.warn("Unable to find a unique rtx SSRC!"), e.rtxSSRC = r.id))
     }
     return e
   }, {
@@ -416,7 +416,7 @@ function N(e, t) {
     videoSSRC: 0,
     rtxSSRC: 0
   });
-  return n.codecs = l()(n.codecs, s()), n
+  return n.codecs = l()(n.codecs, o()), n
 }
 
 function w(e, t) {

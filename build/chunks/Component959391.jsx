@@ -55,24 +55,24 @@ let m = e => {
     case d.hes.KAKAOPAY:
     case d.hes.GOPAY_WALLET:
     case d.hes.BANCONTACT:
-      t = "en-US" === y ? o.Ay.Layouts.MODAL_US_WITH_NAME : o.Ay.Layouts.MODAL_INTL_WITH_NAME;
+      t = "en-US" === y ? s.Ay.Layouts.MODAL_US_WITH_NAME : s.Ay.Layouts.MODAL_INTL_WITH_NAME;
       break;
     case d.hes.VENMO:
     case d.hes.CASH_APP:
-      t = o.Ay.Layouts.MODAL_US_WITH_NAME;
+      t = s.Ay.Layouts.MODAL_US_WITH_NAME;
       break;
     default:
-      t = "en-US" === y ? o.Ay.Layouts.MODAL_US : o.Ay.Layouts.MODAL_INTL
+      t = "en-US" === y ? s.Ay.Layouts.MODAL_US : s.Ay.Layouts.MODAL_INTL
   }
   let b = (0, a.bG)([c.A], () => c.A.ipCountryCode);
   return 0 === n.country.length && (n.country = null != b ? b : ""), (0, r.jsxs)(i.Fragment, {
     children: [E ? (0, r.jsx)("div", {
       className: p.QK,
-      children: (0, r.jsx)(s.wx6, {
+      children: (0, r.jsx)(o.wx6, {
         type: "critical",
         children: f.intl.string(f.t.vZ8y7l)
       })
-    }) : null, (0, r.jsx)(o.Ay, h({
+    }) : null, (0, r.jsx)(s.Ay, h({
       className: p.__invalid_formItem,
       onBillingAddressChange: m,
       error: _,

@@ -2,13 +2,13 @@
 /** chunk id: 148355, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => j,
+  A: () => M,
   h: () => w
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   l = require.n(Chunk284009),
   Chunk108531 = require("./108531.js"),
@@ -58,16 +58,16 @@ let R = e => {
       hasError: n,
       isLoading: i,
       maskAsset: a,
-      size: o,
+      size: s,
       withLoadingIndicator: l = true
-    } = e, c = o >= I;
+    } = e, c = s >= I;
     return (0, r.jsxs)("div", {
-      className: s()(O.c6, {
+      className: o()(O.c6, {
         [O.v2]: n || a
       }),
       style: {
-        height: o,
-        width: o
+        height: s,
+        width: s
       },
       children: [n ? (0, r.jsxs)("div", {
         className: O.z3,
@@ -92,8 +92,8 @@ let R = e => {
     let {
       shouldAnimate: t,
       size: a,
-      sticker: s,
-      fileUri: o,
+      sticker: o,
+      fileUri: s,
       assetData: c,
       isFocused: u,
       className: d,
@@ -103,8 +103,8 @@ let R = e => {
       onError: m
     } = e, g = i.useRef(null), E = i.useRef(null), [v, A] = i.useState(true), [I, S] = i.useState(false), T = i.useRef(false);
     T.current = t && u;
-    let C = null == o ? (0, y.zg)(s) : o;
-    return (l()(null != C, "Unable to determine sticker asset URL. Sticker ID: ".concat(s.id)), i.useEffect(() => {
+    let C = null == s ? (0, y.zg)(o) : s;
+    return (l()(null != C, "Unable to determine sticker asset URL. Sticker ID: ".concat(o.id)), i.useEffect(() => {
       if (null == g.current || null == C) return;
       let e = Math.min(2, (0, _.mZ)());
       g.current.width = a * e, g.current.height = a * e;
@@ -115,7 +115,7 @@ let R = e => {
         } = await n.e("9330").then(n.bind(n, 140521));
         null != g.current && (E.current = new e({
           canvas: g.current,
-          animationId: s.id,
+          animationId: o.id,
           assetUrl: C,
           assetData: c,
           onInitialDraw: () => {
@@ -129,14 +129,14 @@ let R = e => {
         var e;
         null == (e = E.current) || e.drop(), E.current = null, t = true
       }
-    }, [C, a, s.id, c, m]), i.useEffect(() => {
+    }, [C, a, o.id, c, m]), i.useEffect(() => {
       var e;
       let n;
       t || (n = 0), null == (e = E.current) || e.setState(t && u, n)
-    }, [s, t, u]), null == C) ? null : (0, r.jsx)("div", {
+    }, [o, t, u]), null == C) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": I ? b.intl.string(b.t.yEvsK9) : w(s),
+      "aria-label": I ? b.intl.string(b.t.yEvsK9) : w(o),
       ref: p,
       children: (0, r.jsx)(R, {
         hasError: I,
@@ -147,7 +147,7 @@ let R = e => {
         children: N((0, r.jsx)("canvas", {
           className: O.ex,
           ref: g
-        }), s)
+        }), o)
       })
     })
   },
@@ -156,7 +156,7 @@ let R = e => {
       shouldAnimate: t,
       sticker: n,
       isFocused: a,
-      size: o,
+      size: s,
       className: l,
       maskAsset: c,
       positionRef: u,
@@ -164,7 +164,7 @@ let R = e => {
       fileUri: p
     } = e, [_, h] = i.useState(false), [m, g] = i.useState(true), [E, b] = i.useState(false), I = i.useRef(null), S = i.useRef(null), T = null != p ? p : (0, y.zg)(n, {
       isPreview: !t || !_ || !a,
-      size: o
+      size: s
     }), C = i.useCallback(() => {
       g(false)
     }, []), P = i.useCallback(() => {
@@ -186,13 +186,13 @@ let R = e => {
       onChange: h,
       threshold: A,
       children: (0, r.jsx)("div", {
-        className: s()(l, O.__invalid_pngImageWrapper),
+        className: o()(l, O.__invalid_pngImageWrapper),
         ref: u,
         children: (0, r.jsx)(R, {
           hasError: E,
           isLoading: m,
           maskAsset: c,
-          size: o,
+          size: s,
           withLoadingIndicator: f,
           children: N((0, r.jsx)("img", {
             className: O.r3,
@@ -208,19 +208,19 @@ let R = e => {
       })
     })
   },
-  x = e => {
+  L = e => {
     let {
       disableAnimation: t,
       enlargeScaleFactor: n,
       enlargeWithName: a,
-      isInteracting: s,
-      positionRef: o,
+      isInteracting: o,
+      positionRef: s,
       size: l,
       sticker: d
     } = e, _ = (0, u.bG)([p.A], () => p.A.useReducedMotion), m = i.useRef(null), g = {
       transform: "scale(".concat(_ ? 1 : 1 / n, ")"),
       opacity: 0
-    }, E = (0, f.pnh)(s, {
+    }, E = (0, f.pnh)(o, {
       ref: m,
       from: g,
       enter: {
@@ -231,26 +231,26 @@ let R = e => {
       config: T
     }), y = i.useRef(null), b = (0, f.zhh)({
       ref: y,
-      transform: s || _ ? "translateY(0)" : "translateY(-25px)",
-      opacity: +!!s,
+      transform: o || _ ? "translateY(0)" : "translateY(-25px)",
+      opacity: +!!o,
       config: C
     }, "animate-always");
-    return (0, c.useChain)(s ? [m, y] : [y, m], s ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.nE, {
+    return (0, c.useChain)(o ? [m, y] : [y, m], o ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.nE, {
       className: O.O2,
       fixed: true,
       align: "center",
       position: "center",
-      targetRef: o,
+      targetRef: s,
       children: () => (0, r.jsxs)("div", {
         className: O._7,
         children: [(0, r.jsx)(c.animated.div, {
           className: O.tm,
           style: e,
-          children: (0, r.jsx)(L, {
+          children: (0, r.jsx)(x, {
             className: O.__invalid_overlaySticker,
             disableAnimation: t,
             enlargeOnInteraction: false,
-            isInteracting: s,
+            isInteracting: o,
             maskAsset: false,
             sticker: d,
             size: Math.round(l * n),
@@ -268,13 +268,13 @@ let R = e => {
       })
     }))
   },
-  L = e => {
+  x = e => {
     let {
       isInteracting: t = false,
       disableAnimation: n = false,
       enlargeOnInteraction: a = false,
-      enlargeWithName: s = true,
-      enlargeScaleFactor: o = S,
+      enlargeWithName: o = true,
+      enlargeScaleFactor: s = S,
       maskAsset: l = false,
       size: c,
       sticker: u,
@@ -299,10 +299,10 @@ let R = e => {
         assetData: p,
         fileUri: _,
         onError: h
-      }), a && (0, r.jsx)(x, {
+      }), a && (0, r.jsx)(L, {
         disableAnimation: n,
-        enlargeScaleFactor: o,
-        enlargeWithName: s,
+        enlargeScaleFactor: s,
+        enlargeWithName: o,
         isInteracting: t,
         positionRef: O,
         size: c,
@@ -310,4 +310,4 @@ let R = e => {
       })]
     }, "".concat(u.id, ",").concat(c))
   },
-  j = L
+  M = x

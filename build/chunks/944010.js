@@ -47,8 +47,8 @@ class a {
       let a = e[r];
       if (!(0, i.Zs)(a)) returnfalse;
       if (true === a.oneofKind) continue;
-      let s = this.fields.find(e => e.localName === a.oneofKind);
-      if (!s || !this.field(a[a.oneofKind], s, n, t)) returnfalse
+      let o = this.fields.find(e => e.localName === a.oneofKind);
+      if (!o || !this.field(a[a.oneofKind], o, n, t)) returnfalse
     }
     for (let r of this.fields)
       if (true === r.oneof && !this.field(e[r.localName], r, n, t)) returnfalse;

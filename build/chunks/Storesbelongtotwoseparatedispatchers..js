@@ -64,7 +64,7 @@ class _ {
       let e = Date.now();
       this.initialize(), this._isInitialized = true;
       let t = Date.now() - e;
-      t > 5 && s.A.mark("\uD83E\uDDA5", this.getName() + ".initialize()", t)
+      t > 5 && o.A.mark("\uD83E\uDDA5", this.getName() + ".initialize()", t)
     }
   }
   initialize() {}
@@ -98,7 +98,7 @@ class _ {
     this._mustEmitChanges = e
   }
   constructor(e, t, n) {
-    c(this, "_changeCallbacks", new o.E), c(this, "_reactChangeCallbacks", new o.E), c(this, "_syncWiths", []), c(this, "_dispatchToken", true), c(this, "_dispatcher", true), c(this, "_mustEmitChanges", true), c(this, "_isInitialized", false), c(this, "doEmitChanges", e => {
+    c(this, "_changeCallbacks", new s.E), c(this, "_reactChangeCallbacks", new s.E), c(this, "_syncWiths", []), c(this, "_dispatchToken", true), c(this, "_dispatcher", true), c(this, "_mustEmitChanges", true), c(this, "_isInitialized", false), c(this, "doEmitChanges", e => {
       (this._changeCallbacks.hasAny() || this._reactChangeCallbacks.hasAny() || this._syncWiths.length > 0) && (l.A.markChanged(this), l.A.getIsPaused() && null != this._mustEmitChanges && this._mustEmitChanges(e) && l.A.resume(false))
     }), c(this, "addChangeListener", this._changeCallbacks.add), c(this, "addConditionalChangeListener", this._changeCallbacks.addConditional), c(this, "removeChangeListener", this._changeCallbacks.remove), c(this, "addReactChangeListener", this._reactChangeCallbacks.add), c(this, "removeReactChangeListener", this._reactChangeCallbacks.remove), this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), this.registerActionHandlers(null != t ? t : {}, n), u.push(this), d && this.initializeIfNeeded()
   }

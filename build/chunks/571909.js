@@ -26,8 +26,8 @@ function p(e) {
 }
 
 function _(e) {
-  let t = (0, s.bG)([l.A], () => l.A.getVoiceChannelId() === e.id),
-    n = (0, s.bG)([o.A], () => o.A.can(c.QY, e), [e]),
+  let t = (0, o.bG)([l.A], () => l.A.getVoiceChannelId() === e.id),
+    n = (0, o.bG)([s.A], () => s.A.can(c.QY, e), [e]),
     i = (0, u.A)(e.id),
     a = n && !i;
   r.useEffect(() => {

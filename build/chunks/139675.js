@@ -66,15 +66,15 @@ async function O(e) {
     oldFormErrors: true,
     rejectWithError: false
   });
-  return s.h.dispatch({
+  return o.h.dispatch({
     type: "APPLICATION_ASSETS_UPDATE",
     applicationId: e,
     assets: t
-  }), o.A.getApplicationAssets(e)
+  }), s.A.getApplicationAssets(e)
 }
 
 function v(e) {
-  let t = o.A.getApplicationAssets(e);
+  let t = s.A.getApplicationAssets(e);
   return null == t || b(t.lastUpdated) ? O(e) : Promise.resolve(t)
 }
 
@@ -91,8 +91,8 @@ function I(e, t, n) {
   }
   if (null == e || null == t) return;
   let i = Array.isArray(n) ? Math.max(...n) : n,
-    s = "number" == typeof i ? "?size=".concat((0, c.kr)(i)) : "";
-  return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/app-assets/").concat(e, "/").concat(t, ".").concat(r).concat(s) : "".concat((0, a.TP)(), "/applications/").concat(e, "/app-assets/").concat(t, ".").concat(r).concat(s)
+    o = "number" == typeof i ? "?size=".concat((0, c.kr)(i)) : "";
+  return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/app-assets/").concat(e, "/").concat(t, ".").concat(r).concat(o) : "".concat((0, a.TP)(), "/applications/").concat(e, "/app-assets/").concat(t, ".").concat(r).concat(o)
 }
 async function S(e) {
   let t = await v(e);
@@ -133,38 +133,38 @@ function C(e, t) {
 function N(e, t, n, r) {
   let i = false;
   for (let a = 0; a < e.length; a++) {
-    let s = e[a];
-    if (null == s || null != t[a]) continue;
-    let o = Object.prototype.hasOwnProperty.call(n, s) && n[s];
-    if (!o) {
+    let o = e[a];
+    if (null == o || null != t[a]) continue;
+    let s = Object.prototype.hasOwnProperty.call(n, o) && n[o];
+    if (!s) {
       if (null == r || r <= 0) {
         t[a] = null;
         continue
       }
       i = true
     }
-    t[a] = o.id
+    t[a] = s.id
   }
   return i
 }
 async function w(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 1;
-  s.h.dispatch({
+  o.h.dispatch({
     type: "APPLICATION_ASSETS_FETCH",
     applicationId: e
   });
   let r = [],
     i = t.filter(e => (null == e ? true : e.startsWith("http:")) || (null == e ? true : e.startsWith("https:")));
-  if (i.length > 0 && await T(e, i), C(t, r)) return s.h.dispatch({
+  if (i.length > 0 && await T(e, i), C(t, r)) return o.h.dispatch({
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r;
   let a = await S(e);
-  return (s.h.dispatch({
+  return (o.h.dispatch({
     type: "APPLICATION_ASSETS_UPDATE",
     applicationId: e,
     assets: a
-  }), N(t, r, a, n)) ? O(e).then(() => w(e, t, n - 1)) : (s.h.dispatch({
+  }), N(t, r, a, n)) ? O(e).then(() => w(e, t, n - 1)) : (o.h.dispatch({
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r)

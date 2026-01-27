@@ -76,11 +76,11 @@ function _(e) {
     pillRef: t
   } = e, n = f(e, ["pillRef"]), {
     balancePillOverlay: l
-  } = (0, i.cf)([s.A], () => ({
-    balancePillOverlay: s.A.balancePillOverlay
-  })), u = (0, r.jsx)(o.Gy, c({
+  } = (0, i.cf)([o.A], () => ({
+    balancePillOverlay: o.A.balancePillOverlay
+  })), u = (0, r.jsx)(s.Gy, c({
     ref: t
-  }, n)), p = (0, r.jsx)(o.Gy, d(c({}, n), {
+  }, n)), p = (0, r.jsx)(s.Gy, d(c({}, n), {
     isInModalOverlay: true,
     disabled: true
   })), _ = null != t.current ? t.current.offsetHeight : 36;

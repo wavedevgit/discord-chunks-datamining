@@ -10,11 +10,11 @@ let i = {
 };
 
 function a(e, t) {
-  let n = s(e, t),
+  let n = o(e, t),
     r = f(e, t, n),
     i = p(e, t, n),
     a = {
-      "JFIF Version": o(e, t, n),
+      "JFIF Version": s(e, t, n),
       "Resolution Unit": l(e, t, n),
       XResolution: u(e, t, n),
       YResolution: d(e, t, n),
@@ -22,25 +22,25 @@ function a(e, t) {
       "JFIF Thumbnail Height": i
     };
   if (true !== r && true !== i) {
-    let s = _(e, t, 3 * r.value * i.value, n);
-    s && (a["JFIF Thumbnail"] = s)
+    let o = _(e, t, 3 * r.value * i.value, n);
+    o && (a["JFIF Thumbnail"] = o)
   }
   for (let e in a) true === a[e] && delete a[e];
   return a
 }
 
-function s(e, t) {
+function o(e, t) {
   return r.A.getShortAt(e, t)
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   let i = 7;
   if (9 > n) return;
   let a = r.A.getByteAt(e, t + i),
-    s = r.A.getByteAt(e, t + i + 1);
+    o = r.A.getByteAt(e, t + i + 1);
   return {
-    value: 256 * a + s,
-    description: a + "." + s
+    value: 256 * a + o,
+    description: a + "." + o
   }
 }
 

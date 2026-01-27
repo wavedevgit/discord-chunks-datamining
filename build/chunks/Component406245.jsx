@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk975571 = require("./975571.js"),
   Chunk652215 = require("./652215.js"),
@@ -48,8 +48,8 @@ let f = [{
       className: t
     } = e, [n, a] = i.useState(null);
     return (0, r.jsxs)("div", {
-      className: s()(d.iE, t),
-      children: [(0, r.jsx)(o.Heading, {
+      className: o()(d.iE, t),
+      children: [(0, r.jsx)(s.Heading, {
         className: d.R_,
         variant: "heading-xxl/bold",
         children: u.intl.string(u.t.HPJ6Nj)
@@ -59,26 +59,26 @@ let f = [{
           let i = n === t;
           return (0, r.jsxs)("div", {
             className: d.Aw,
-            children: [(0, r.jsxs)(o.DUT, {
-              className: s()(d.k7, {
+            children: [(0, r.jsxs)(s.DUT, {
+              className: o()(d.k7, {
                 [d.lo]: i
               }),
               onClick: () => a(e => e === t ? null : t),
               tag: "li",
-              children: [(0, r.jsx)(o.Text, {
+              children: [(0, r.jsx)(s.Text, {
                 className: d.b1,
                 variant: "text-lg/normal",
                 children: e.getQuestion()
-              }), i ? (0, r.jsx)(o.QGg, {
+              }), i ? (0, r.jsx)(s.QGg, {
                 size: "md",
                 color: "currentColor",
                 className: d.q4
-              }) : (0, r.jsx)(o.j96, {
+              }) : (0, r.jsx)(s.j96, {
                 size: "md",
                 color: "currentColor",
                 className: d.q4
               })]
-            }), i && (0, r.jsx)(o.Text, {
+            }), i && (0, r.jsx)(s.Text, {
               className: d.ZF,
               color: "text-default",
               variant: "text-md/normal",

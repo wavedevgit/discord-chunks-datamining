@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk928231 = require("./928231.js"),
   Chunk64700 = require("./64700.js"),
   Chunk126031 = require("./126031.js");
-let s = ["day", "month", "year"],
-  o = {
+let o = ["day", "month", "year"],
+  s = {
     hour: 1,
     minute: 2,
     second: 3
@@ -33,7 +33,7 @@ function l(e, t) {
     f = "day" === t.granularity ? "date" : "datetime-local",
     p = ["hour", "minute", "second"],
     _ = 0;
-  return p.includes(t.granularity) && (_ = o[t.granularity], p = p.slice(0, _)), {
+  return p.includes(t.granularity) && (_ = s[t.granularity], p = p.slice(0, _)), {
     containerProps: {
       ...c,
       "aria-hidden": true,
@@ -54,7 +54,7 @@ function l(e, t) {
         if (n) try {
           let e = (0, r.DP)(n);
           if ("day" === t.granularity && (e = (0, r._U)(n)), "setSegment" in t)
-            for (let n in e) s.includes(n) && t.setSegment(n, e[n]), p.includes(n) && t.setSegment(n, e[n]);
+            for (let n in e) o.includes(n) && t.setSegment(n, e[n]), p.includes(n) && t.setSegment(n, e[n]);
           t.setValue(e)
         } catch {}
       }

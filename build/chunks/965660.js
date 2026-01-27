@@ -160,7 +160,7 @@ function y(e) {
     case l.o.HUBS:
       return l.Us;
     default:
-      (0, s.xb)(e)
+      (0, o.xb)(e)
   }
 }
 
@@ -216,17 +216,17 @@ async function I(e) {
     guildId: n,
     index: r,
     categoryId: i,
-    analyticsLocation: s,
+    analyticsLocation: o,
     options: l
   } = e, u = _(f({}, l), {
     loadId: t
   });
-  await o.Z2(n, s, u), a.default.track(c.HAw.GUILD_DISCOVERY_GUILD_SELECTED, {
+  await s.Z2(n, o, u), a.default.track(c.HAw.GUILD_DISCOVERY_GUILD_SELECTED, {
     guild_id: n,
     load_id: t,
     card_index: r,
     category_id: i,
-    location: s
+    location: o
   })
 }
 

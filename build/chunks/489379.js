@@ -24,11 +24,11 @@ function l(e) {
   return {
     voiceState: l,
     voiceChannel: c,
-    voiceActivity: (0, r.bG)([s.A, o.A], () => {
+    voiceActivity: (0, r.bG)([o.A, s.A], () => {
       if (null == t || null == u) return;
-      let e = s.A.findActivity(t, e => {
+      let e = o.A.findActivity(t, e => {
         if (!(0, i.A)(e)) returnfalse;
-        let n = o.A.getVoiceStateForSession(t, e.session_id);
+        let n = s.A.getVoiceStateForSession(t, e.session_id);
         return (null == n ? true : n.channelId) === u
       });
       return null != e ? e : true

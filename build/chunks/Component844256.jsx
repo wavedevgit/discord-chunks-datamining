@@ -59,7 +59,7 @@ let f = {
         skuId: t
       } = e;
       return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(s.A, {
+        children: [(0, r.jsx)(o.A, {
           skuId: t
         }), (0, r.jsx)("hr", {}), (0, r.jsx)(i.Text, {
           variant: "text-md/bold",
@@ -70,7 +70,7 @@ let f = {
             variant: "text-sm/bold",
             children: "Avatar Decoration"
           }), (0, r.jsx)(a.A, {
-            text: o.intl.string(o.t.OpuAlK),
+            text: s.intl.string(s.t.OpuAlK),
             delay: 0,
             "aria-label": false,
             copyValue: "1458472704192811088",
@@ -90,7 +90,7 @@ let f = {
             variant: "text-sm/bold",
             children: "Profile Effect"
           }), (0, r.jsx)(a.A, {
-            text: o.intl.string(o.t.OpuAlK),
+            text: s.intl.string(s.t.OpuAlK),
             delay: 0,
             "aria-label": false,
             copyValue: "1458479739110166560",
@@ -110,7 +110,7 @@ let f = {
             variant: "text-sm/bold",
             children: "Nameplate"
           }), (0, r.jsx)(a.A, {
-            text: o.intl.string(o.t.OpuAlK),
+            text: s.intl.string(s.t.OpuAlK),
             delay: 0,
             "aria-label": false,
             copyValue: "1458472704524156959",

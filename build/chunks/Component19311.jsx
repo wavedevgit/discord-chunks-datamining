@@ -64,12 +64,12 @@ let E = e => {
       primaryCTA: n,
       primaryType: i,
       primaryText: a,
-      primaryDisabled: o,
+      primaryDisabled: s,
       primarySubmitting: l,
       onPrimary: c
     } = e, u = {
       type: i,
-      disabled: o,
+      disabled: s,
       onClick: c,
       icon: null == t ? true : () => (0, r.jsx)(t, {
         color: "currentColor",
@@ -78,9 +78,9 @@ let E = e => {
       loading: l,
       text: a
     };
-    return 2 === n ? (0, r.jsx)(s.$nd, _({
+    return 2 === n ? (0, r.jsx)(o.$nd, _({
       variant: "expressive"
-    }, u)) : (0, r.jsx)(s.$nd, m(_({}, u), {
+    }, u)) : (0, r.jsx)(o.$nd, m(_({}, u), {
       variant: 0 === n ? "primary" : "active"
     }))
   },
@@ -116,12 +116,12 @@ let E = e => {
       }) : (0, r.jsx)(E, m(_({}, e), {
         onPrimary: v
       }))
-    }, S = () => null == t ? null : (0, r.jsx)(s.QWc, {
+    }, S = () => null == t ? null : (0, r.jsx)(o.QWc, {
       text: null != n ? n : d.intl.string(d.t["13/7kX"]),
       onClick: t,
       variant: "secondary"
     });
-    return (0, r.jsxs)(o.jlY, {
+    return (0, r.jsxs)(s.jlY, {
       "data-migration-pending": true,
       justify: l.A.Justify.BETWEEN,
       align: l.A.Align.CENTER,

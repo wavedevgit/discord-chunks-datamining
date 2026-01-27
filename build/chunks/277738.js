@@ -13,7 +13,7 @@ var Chunk731854 = require("./731854.js");
 let i = null != navigator.mediaDevices && null != navigator.mediaDevices.enumerateDevices,
   a = i && "setSinkId" in HTMLAudioElement.prototype;
 
-function s(e) {
+function o(e) {
   return {
     id: r.dx,
     type: e,
@@ -22,8 +22,8 @@ function s(e) {
   }
 }
 
-function o() {
-  return [s(r.oh.AUDIO_INPUT), s(r.oh.AUDIO_OUTPUT), s(r.oh.VIDEO_INPUT)]
+function s() {
+  return [o(r.oh.AUDIO_INPUT), o(r.oh.AUDIO_OUTPUT), o(r.oh.VIDEO_INPUT)]
 }
 
 function l(e, t) {
@@ -64,8 +64,8 @@ function c() {
         name: null != e.label && "" !== e.label ? e.label : 0 === a ? "Default" : "Device ".concat(a)
       }
     })
-  }).then(e => (a || (e = e.filter(e => e.type !== r.oh.AUDIO_OUTPUT)).push(s(r.oh.AUDIO_OUTPUT)), e)).catch(o) : new Promise(e => {
-    setImmediate(() => e(o()))
+  }).then(e => (a || (e = e.filter(e => e.type !== r.oh.AUDIO_OUTPUT)).push(o(r.oh.AUDIO_OUTPUT)), e)).catch(s) : new Promise(e => {
+    setImmediate(() => e(s()))
   })
 }
 async function u() {

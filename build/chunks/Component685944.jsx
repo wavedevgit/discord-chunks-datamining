@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk607399 = require("./607399.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -57,7 +57,7 @@ function v(e) {
     isOrbCheckout: a
   } = e, l = (0, u.A)(m.T), {
     footerNode: d
-  } = (0, _.P5)(), f = (0, p.nr)() && !o.Fr, y = null != d ? d.offsetWidth : true, b = i.useMemo(() => f && null != y && (t === h.pn.ADD_PAYMENT_STEPS || a) ? y : true, [f, y, t, a]);
+  } = (0, _.P5)(), f = (0, p.nr)() && !s.Fr, y = null != d ? d.offsetWidth : true, b = i.useMemo(() => f && null != y && (t === h.pn.ADD_PAYMENT_STEPS || a) ? y : true, [f, y, t, a]);
   if (t === h.pn.BENEFITS || t === h.pn.CONFIRM) return null;
   let v = null != b ? {
       width: b + 2
@@ -74,7 +74,7 @@ function v(e) {
       "data-accessibility": "desaturate",
       style: A,
       children: a ? (0, r.jsx)(O, {
-        className: s()(g.F0, g.WL)
+        className: o()(g.F0, g.WL)
       }) : (0, r.jsx)("img", {
         src: E,
         alt: "",

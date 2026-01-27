@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk837381 = require("./837381.jsx"),
   Chunk741918 = require("./741918.js"),
   Chunk317097 = require("./317097.js"),
@@ -90,16 +90,16 @@ let T = e => {
     } = e, f = (0, _.Q)(a), h = null != (t = null == (n = a.variants) ? true : n.length) ? t : 0, m = i.useCallback((e, t) => {
       e.stopPropagation(), (0, _.n)(a, t)
     }, [a]), g = (0, p.A)("shop-variants-group-".concat(a.storeListingId), l.Gl.HORIZONTAL);
-    return 0 === h ? null : (0, r.jsx)(o.hD, {
+    return 0 === h ? null : (0, r.jsx)(s.hD, {
       navigator: g,
-      children: (0, r.jsx)(o.PR, {
+      children: (0, r.jsx)(s.PR, {
         children: e => {
           var t;
           let {
             ref: n
           } = e, i = I(e, ["ref"]);
           return (0, r.jsx)("div", A(O({
-            className: s()({
+            className: o()({
               [y.yZ]: d,
               [y.sz]: !d
             }, y.lO),
@@ -126,7 +126,7 @@ let T = e => {
       onVariantEnter: a,
       onVariantExit: l,
       zIndex: c
-    } = e, d = (0, o.rm)("shop-variants-group-".concat(t.storeListingId, "-").concat(t.variantLabel)), {
+    } = e, d = (0, s.rm)("shop-variants-group-".concat(t.storeListingId, "-").concat(t.variantLabel)), {
       onFocus: p
     } = d, _ = I(d, ["onFocus"]), {
       isPurchased: m
@@ -143,7 +143,7 @@ let T = e => {
         onMouseLeave: l,
         onFocus: a,
         onBlur: l,
-        className: s()(y.bP, {
+        className: o()(y.bP, {
           [y.wH]: n
         }),
         style: {
@@ -172,9 +172,9 @@ let T = e => {
       isCollapsed: n = false,
       onVariantEnter: i,
       onVariantExit: a
-    } = e, s = (0, g.Vm)(t);
-    return null != s && (0, m.B1)(s) ? (0, r.jsx)(T, {
-      product: s,
+    } = e, o = (0, g.Vm)(t);
+    return null != o && (0, m.B1)(o) ? (0, r.jsx)(T, {
+      product: o,
       onVariantEnter: i,
       onVariantExit: a,
       isCollapsed: n

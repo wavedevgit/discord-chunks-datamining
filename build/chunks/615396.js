@@ -14,7 +14,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
   a = require.n(Chunk284009),
   Chunk989349 = require("./989349.js"),
-  o = require.n(Chunk989349),
+  s = require.n(Chunk989349),
   Chunk539267 = require("./539267.js"),
   Chunk311907 = require("./311907.js"),
   Chunk73825 = require("./73825.js"),
@@ -77,8 +77,8 @@ function O(e) {
     currentDaysPaused: 0
   };
   {
-    let n = o()(e.currentPeriodStart),
-      r = Math.round(o()(e.pauseEndsAt).diff(n, "days", true)),
+    let n = s()(e.currentPeriodStart),
+      r = Math.round(s()(e.pauseEndsAt).diff(n, "days", true)),
       i = [];
     for (let e of t) l.V[e] > r && i.push(e);
     return {
@@ -89,5 +89,5 @@ function O(e) {
 }
 
 function v(e) {
-  return null != e && o().isMoment(e) && e.isSameOrAfter(o()())
+  return null != e && s().isMoment(e) && e.isSameOrAfter(s()())
 }

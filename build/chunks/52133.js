@@ -14,12 +14,12 @@ function i(e, t, n) {
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : r;
   if (e === t) returntrue;
   if (true === e || true === t) return e === t;
-  let s = Object.keys(e),
-    o = Object.keys(t);
-  if (s.length !== o.length) returnfalse;
+  let o = Object.keys(e),
+    s = Object.keys(t);
+  if (o.length !== s.length) returnfalse;
   let l = [];
-  for (let r = 0; r < s.length; r++) {
-    let i = s[r];
+  for (let r = 0; r < o.length; r++) {
+    let i = o[r];
     if (e[i] !== t[i] && (null == n || !n.includes(i))) returnfalse
   }
   return 0 === l.length

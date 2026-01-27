@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 71995, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 82575 **/
+/** chunk id: 71995, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => j
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,38 +20,38 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function E() {
+function j() {
   let {
     analyticsLocations: e
-  } = (0, s.Ay)([a.A.USER_SETTINGS_VOICE_AND_VIDEO]), t = (0, i.bG)([o.A], () => o.A.getSubsection()), n = [{
-    title: g.intl.string(g.t.K3lovD),
-    component: f.A,
-    setting: h.H.VOICE_AND_VIDEO_VOICE_TAB,
-    subsection: _.V5
+  } = (0, r.Ay)([l.A.USER_SETTINGS_VOICE_AND_VIDEO]), t = (0, s.bG)([a.A], () => a.A.getSubsection()), n = [{
+    title: m.intl.string(m.t.K3lovD),
+    component: g.A,
+    setting: p.H.VOICE_AND_VIDEO_VOICE_TAB,
+    subsection: x.V5
   }, {
-    title: g.intl.string(g.t.FlNoSV),
-    component: d.A,
-    setting: h.H.VOICE_AND_VIDEO_VIDEO_TAB,
-    subsection: _.Ss
-  }, {
-    title: g.intl.string(g.t.ABjMWI),
+    title: m.intl.string(m.t.FlNoSV),
     component: u.A,
-    setting: h.H.VOICE_AND_VIDEO_SOUNDBOARD_TAB,
-    subsection: _.MJ
+    setting: p.H.VOICE_AND_VIDEO_VIDEO_TAB,
+    subsection: x.Ss
   }, {
-    title: g.intl.string(g.t.OFpL3c),
-    component: p.A,
-    setting: h.H.VOICE_AND_VIDEO_DEBUG_TAB
-  }], E = n.findIndex(e => null != e.subsection && e.subsection === t);
-  return (0, r.jsx)(s.f5, {
+    title: m.intl.string(m.t.ABjMWI),
+    component: d.A,
+    setting: p.H.VOICE_AND_VIDEO_SOUNDBOARD_TAB,
+    subsection: x.MJ
+  }, {
+    title: m.intl.string(m.t.OFpL3c),
+    component: h.A,
+    setting: p.H.VOICE_AND_VIDEO_DEBUG_TAB
+  }], j = n.findIndex(e => null != e.subsection && e.subsection === t);
+  return (0, i.jsx)(r.f5, {
     value: e,
-    children: (0, r.jsx)(l.R, {
-      header: g.intl.string(g.t.B1fFpf),
-      children: (0, r.jsx)(c.A, {
-        parentSetting: h.H.VOICE_AND_VIDEO,
-        settingsSection: m.nc_.VOICE,
+    children: (0, i.jsx)(o.R, {
+      header: m.intl.string(m.t.B1fFpf),
+      children: (0, i.jsx)(c.A, {
+        parentSetting: p.H.VOICE_AND_VIDEO,
+        settingsSection: A.nc_.VOICE,
         tabs: n,
-        defaultTabIndex: E > false ? E : true
+        defaultTabIndex: j > false ? j : true
       })
     })
   })

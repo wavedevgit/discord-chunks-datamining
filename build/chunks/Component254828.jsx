@@ -16,9 +16,9 @@ function c(e) {
     userId: t,
     onClick: n
   } = e;
-  if (!(0, i.bG)([o.A], () => o.A.isIgnored(t))) return null;
+  if (!(0, i.bG)([s.A], () => s.A.isIgnored(t))) return null;
   let c = () => {
-    s.j0.updateSetting(true), n()
+    o.j0.updateSetting(true), n()
   };
   return (0, r.jsx)(a.QWc, {
     onClick: c,

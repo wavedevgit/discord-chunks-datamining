@@ -132,14 +132,14 @@ async function T(e) {
       body: {
         threads: i
       }
-    } = await s.Bo.post({
+    } = await o.Bo.post({
       url: f.Rsh.FORUM_POSTS(e),
       body: {
         thread_ids: t
       },
       rejectWithError: true
     });
-    o.h.dispatch({
+    s.h.dispatch({
       type: "LOAD_FORUM_POSTS",
       guildId: r,
       threads: i

@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 823092, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 60667 **/
+/** chunk id: 823092, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L_: () => d,
+  L_: () => u,
   gl: () => c,
-  ms: () => u
+  ms: () => d
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,36 +13,36 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js");
 let c = Chunk64700.createContext(true);
 
-function u(e) {
+function d(e) {
   let {
     children: t
-  } = e, n = i.useRef(a.n3), [u, d] = i.useState(false), f = i.useCallback(e => {
+  } = e, n = i.useRef(l.n3), [d, u] = i.useState(false), _ = i.useCallback(e => {
     var t;
-    d(null != (t = null == e ? true : e.some(e => {
+    u(null != (t = null == e ? true : e.some(e => {
       var t;
       return e.showNotice() && !(null == (t = e.canCloseEarly) ? true : t.call(e))
-    })) && t), n.current = a.n3
+    })) && t), n.current = l.n3
   }, []), p = i.useCallback(e => {
-    if (u) {
-      (0, o.fO)({
+    if (d) {
+      (0, a.fO)({
         duration: 300,
         intensity: n.current
-      }), n.current = Math.min(n.current + a.pe, a.OZ), s._.dispatch(l.jej.EMPHASIZE_NOTICE);
+      }), n.current = Math.min(n.current + l.pe, l.OZ), s._.dispatch(o.jej.EMPHASIZE_NOTICE);
       return
     }
     e()
-  }, [u]), _ = i.useMemo(() => ({
+  }, [d]), m = i.useMemo(() => ({
     navigateWithValidation: p,
-    showNotice: u,
-    handleStoreUpdate: f
-  }), [p, u, f]);
+    showNotice: d,
+    handleStoreUpdate: _
+  }), [p, d, _]);
   return (0, r.jsx)(c.Provider, {
-    value: _,
+    value: m,
     children: t
   })
 }
 
-function d() {
+function u() {
   let e = i.useContext(c);
   if (null == e) throw Error("useNoticeContext must be used within a NoticeProvider");
   return e

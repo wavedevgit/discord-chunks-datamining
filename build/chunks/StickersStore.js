@@ -26,11 +26,11 @@ function _(e, t, n) {
 let h = 2,
   m = async () => {
     if (0 !== h) return;
-    let e = o.A.database();
+    let e = s.A.database();
     if (null == e) return;
     h = 2;
     let t = await (0, l.ES)("StickerStore.loadSavedGuildStickers", () => i.A.timeAsync("\uD83D\uDCBE", "loadSavedGuildStickers", () => c.A.getAsync(e)));
-    null != t && s.h.dispatch({
+    null != t && o.h.dispatch({
       type: "CACHED_STICKERS_LOADED",
       stickers: t
     })

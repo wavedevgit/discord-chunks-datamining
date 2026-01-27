@@ -14,7 +14,7 @@ var Chunk64700 = require("./64700.js"),
 
 function u() {
   let e = (0, l.k)(c.Dw),
-    t = (0, i.bG)([o.A], () => o.A.getReferrer(null == e ? true : e.trial_id)),
-    n = (0, i.bG)([s.A], () => null == t || s.A.isBlockedOrIgnored(t.id));
+    t = (0, i.bG)([s.A], () => s.A.getReferrer(null == e ? true : e.trial_id)),
+    n = (0, i.bG)([o.A], () => null == t || o.A.isBlockedOrIgnored(t.id));
   return r.useMemo(() => n || null == t ? null : new a.A(t), [t, n])
 }

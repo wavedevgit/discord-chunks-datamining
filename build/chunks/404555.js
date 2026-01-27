@@ -409,7 +409,7 @@ var t = {
       return t[e]
     })
   },
-  s = function(e) {
+  o = function(e) {
     return !!e.match(i)
   };
-module.exports = a, module.exports.has = s, module.exports.remove = a
+module.exports = a, module.exports.has = o, module.exports.remove = a

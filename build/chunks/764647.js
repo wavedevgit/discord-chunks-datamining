@@ -16,21 +16,21 @@ var Chunk56027 = require("./56027.js");
 function i(e, t, n) {
   let i, {
       reference: a,
-      floating: s
+      floating: o
     } = e,
-    o = (0, r.TV)(t),
+    s = (0, r.TV)(t),
     l = (0, r.Dz)(t),
     c = (0, r.sq)(l),
     u = (0, r.C0)(t),
-    d = "y" === o,
-    f = a.x + a.width / 2 - s.width / 2,
-    p = a.y + a.height / 2 - s.height / 2,
-    _ = a[c] / 2 - s[c] / 2;
+    d = "y" === s,
+    f = a.x + a.width / 2 - o.width / 2,
+    p = a.y + a.height / 2 - o.height / 2,
+    _ = a[c] / 2 - o[c] / 2;
   switch (u) {
     case "top":
       i = {
         x: f,
-        y: a.y - s.height
+        y: a.y - o.height
       };
       break;
     case "bottom":
@@ -47,7 +47,7 @@ function i(e, t, n) {
       break;
     case "left":
       i = {
-        x: a.x - s.width,
+        x: a.x - o.width,
         y: p
       };
       break;
@@ -70,9 +70,9 @@ let a = async (e, t, n) => {
   let {
     placement: r = "bottom",
     strategy: a = "absolute",
-    middleware: s = [],
-    platform: o
-  } = n, l = s.filter(Boolean), c = await (null == o.isRTL ? true : o.isRTL(t)), u = await o.getElementRects({
+    middleware: o = [],
+    platform: s
+  } = n, l = o.filter(Boolean), c = await (null == s.isRTL ? true : s.isRTL(t)), u = await s.getElementRects({
     reference: e,
     floating: t,
     strategy: a
@@ -82,7 +82,7 @@ let a = async (e, t, n) => {
   } = i(u, r, c), p = r, _ = {}, h = 0;
   for (let n = 0; n < l.length; n++) {
     let {
-      name: s,
+      name: o,
       fn: m
     } = l[n], {
       x: g,
@@ -97,7 +97,7 @@ let a = async (e, t, n) => {
       strategy: a,
       middlewareData: _,
       rects: u,
-      platform: o,
+      platform: s,
       elements: {
         reference: e,
         floating: t
@@ -105,11 +105,11 @@ let a = async (e, t, n) => {
     });
     d = null != g ? g : d, f = null != E ? E : f, _ = {
       ..._,
-      [s]: {
-        ..._[s],
+      [o]: {
+        ..._[o],
         ...y
       }
-    }, b && h <= 50 && (h++, "object" == typeof b && (b.placement && (p = b.placement), b.rects && (u = true === b.rects ? await o.getElementRects({
+    }, b && h <= 50 && (h++, "object" == typeof b && (b.placement && (p = b.placement), b.rects && (u = true === b.rects ? await s.getElementRects({
       reference: e,
       floating: t,
       strategy: a
@@ -126,14 +126,14 @@ let a = async (e, t, n) => {
     middlewareData: _
   }
 };
-async function s(e, t) {
+async function o(e, t) {
   var n;
   true === t && (t = {});
   let {
     x: i,
     y: a,
-    platform: s,
-    rects: o,
+    platform: o,
+    rects: s,
     elements: l,
     strategy: c
   } = e, {
@@ -142,20 +142,20 @@ async function s(e, t) {
     elementContext: f = "floating",
     altBoundary: p = false,
     padding: _ = 0
-  } = (0, r._3)(t, e), h = (0, r.nI)(_), m = "floating" === f ? "reference" : "floating", g = l[p ? m : f], E = (0, r.B1)(await s.getClippingRect({
-    element: null == (n = await (null == s.isElement ? true : s.isElement(g))) || n ? g : g.contextElement || await (null == s.getDocumentElement ? true : s.getDocumentElement(l.floating)),
+  } = (0, r._3)(t, e), h = (0, r.nI)(_), m = "floating" === f ? "reference" : "floating", g = l[p ? m : f], E = (0, r.B1)(await o.getClippingRect({
+    element: null == (n = await (null == o.isElement ? true : o.isElement(g))) || n ? g : g.contextElement || await (null == o.getDocumentElement ? true : o.getDocumentElement(l.floating)),
     boundary: u,
     rootBoundary: d,
     strategy: c
   })), y = "floating" === f ? {
     x: i,
     y: a,
-    width: o.floating.width,
-    height: o.floating.height
-  } : o.reference, b = await (null == s.getOffsetParent ? true : s.getOffsetParent(l.floating)), O = await (null == s.isElement ? true : s.isElement(b)) && await (null == s.getScale ? true : s.getScale(b)) || {
+    width: s.floating.width,
+    height: s.floating.height
+  } : s.reference, b = await (null == o.getOffsetParent ? true : o.getOffsetParent(l.floating)), O = await (null == o.isElement ? true : o.isElement(b)) && await (null == o.getScale ? true : o.getScale(b)) || {
     x: 1,
     y: 1
-  }, v = (0, r.B1)(s.convertOffsetParentRelativeRectToViewportRelativeRect ? await s.convertOffsetParentRelativeRectToViewportRelativeRect({
+  }, v = (0, r.B1)(o.convertOffsetParentRelativeRectToViewportRelativeRect ? await o.convertOffsetParentRelativeRectToViewportRelativeRect({
     elements: l,
     rect: y,
     offsetParent: b,
@@ -169,7 +169,7 @@ async function s(e, t) {
   }
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   return (e ? [...n.filter(t => (0, r.Sg)(t) === e), ...n.filter(t => (0, r.Sg)(t) !== e)] : n.filter(e => (0, r.C0)(e) === e)).filter(n => !e || (0, r.Sg)(n) === e || !!t && (0, r.aD)(n) !== n)
 }
 let l = function(e) {
@@ -190,7 +190,7 @@ let l = function(e) {
           allowedPlacements: h = r.DD,
           autoAlignment: m = true,
           ...g
-        } = (0, r._3)(e, t), E = true !== _ || h === r.DD ? o(_ || null, m, h) : h, y = await s(t, g), b = (null == (n = c.autoPlacement) ? true : n.index) || 0, O = E[b];
+        } = (0, r._3)(e, t), E = true !== _ || h === r.DD ? s(_ || null, m, h) : h, y = await o(t, g), b = (null == (n = c.autoPlacement) ? true : n.index) || 0, O = E[b];
         if (null == O) return {};
         let v = (0, r.w7)(O, l, await (null == d.isRTL ? true : d.isRTL(f.floating)));
         if (u !== O) return {
@@ -235,7 +235,7 @@ let l = function(e) {
       name: "flip",
       options: e,
       async fn(t) {
-        var n, i, a, o, l;
+        var n, i, a, s, l;
         let {
           placement: c,
           middlewareData: u,
@@ -261,7 +261,7 @@ let l = function(e) {
           C = "none" !== y;
         !g && C && T.push(...(0, r.lP)(f, b, y, S));
         let N = [f, ...T],
-          w = await s(t, O),
+          w = await o(t, O),
           R = [],
           P = (null == (i = u.flip) ? true : i.overflows) || [];
         if (h && R.push(w[v]), m) {
@@ -283,7 +283,7 @@ let l = function(e) {
               placement: t
             }
           };
-          let n = null == (o = P.filter(e => e.overflows[0] <= 0).sort((e, t) => e.overflows[1] - t.overflows[1])[0]) ? true : o.placement;
+          let n = null == (s = P.filter(e => e.overflows[0] <= 0).sort((e, t) => e.overflows[1] - t.overflows[1])[0]) ? true : s.placement;
           if (!n) switch (E) {
             case "bestFit": {
               let e = null == (l = P.filter(e => {
@@ -335,7 +335,7 @@ let f = function(e) {
       } = (0, r._3)(e, t);
       switch (i) {
         case "referenceHidden": {
-          let e = u(await s(t, {
+          let e = u(await o(t, {
             ...a,
             elementContext: "reference"
           }), n.reference);
@@ -347,7 +347,7 @@ let f = function(e) {
           }
         }
         case "escaped": {
-          let e = u(await s(t, {
+          let e = u(await o(t, {
             ...a,
             altBoundary: true
           }), n.floating);
@@ -381,7 +381,7 @@ async function h(e, t) {
     placement: n,
     platform: i,
     elements: a
-  } = e, s = await (null == i.isRTL ? true : i.isRTL(a.floating)), o = (0, r.C0)(n), l = (0, r.Sg)(n), c = "y" === (0, r.TV)(n), u = _.has(o) ? false : 1, d = s && c ? false : 1, f = (0, r._3)(t, e), {
+  } = e, o = await (null == i.isRTL ? true : i.isRTL(a.floating)), s = (0, r.C0)(n), l = (0, r.Sg)(n), c = "y" === (0, r.TV)(n), u = _.has(s) ? false : 1, d = o && c ? false : 1, f = (0, r._3)(t, e), {
     mainAxis: p,
     crossAxis: h,
     alignmentAxis: m
@@ -411,15 +411,15 @@ let m = function(e) {
         let {
           x: i,
           y: a,
-          placement: s,
-          middlewareData: o
+          placement: o,
+          middlewareData: s
         } = t, l = await h(t, e);
-        return s === (null == (n = o.offset) ? true : n.placement) && null != (r = o.arrow) && r.alignmentOffset ? {} : {
+        return o === (null == (n = s.offset) ? true : n.placement) && null != (r = s.arrow) && r.alignmentOffset ? {} : {
           x: i + l.x,
           y: a + l.y,
           data: {
             ...l,
-            placement: s
+            placement: o
           }
         }
       }
@@ -435,7 +435,7 @@ let m = function(e) {
           y: i,
           placement: a
         } = t, {
-          mainAxis: o = true,
+          mainAxis: s = true,
           crossAxis: l = false,
           limiter: c = {
             fn: e => {
@@ -453,8 +453,8 @@ let m = function(e) {
         } = (0, r._3)(e, t), d = {
           x: n,
           y: i
-        }, f = await s(t, u), p = (0, r.TV)((0, r.C0)(a)), _ = (0, r.PG)(p), h = d[_], m = d[p];
-        if (o) {
+        }, f = await o(t, u), p = (0, r.TV)((0, r.C0)(a)), _ = (0, r.PG)(p), h = d[_], m = d[p];
+        if (s) {
           let e = "y" === _ ? "top" : "left",
             t = "y" === _ ? "bottom" : "right",
             n = h + f[e],
@@ -479,7 +479,7 @@ let m = function(e) {
             x: g.x - n,
             y: g.y - i,
             enabled: {
-              [_]: o,
+              [_]: s,
               [p]: l
             }
           }
@@ -495,8 +495,8 @@ let m = function(e) {
           x: n,
           y: i,
           placement: a,
-          rects: s,
-          middlewareData: o
+          rects: o,
+          middlewareData: s
         } = t, {
           offset: l = 0,
           mainAxis: c = true,
@@ -514,16 +514,16 @@ let m = function(e) {
         };
         if (c) {
           let e = "y" === p ? "height" : "width",
-            t = s.reference[p] - s.floating[e] + E.mainAxis,
-            n = s.reference[p] + s.reference[e] - E.mainAxis;
+            t = o.reference[p] - o.floating[e] + E.mainAxis,
+            n = o.reference[p] + o.reference[e] - E.mainAxis;
           h < t ? h = t : h > n && (h = n)
         }
         if (u) {
           var y, b;
           let e = "y" === p ? "width" : "height",
             t = _.has((0, r.C0)(a)),
-            n = s.reference[f] - s.floating[e] + (t && (null == (y = o.offset) ? true : y[f]) || 0) + (t ? 0 : E.crossAxis),
-            i = s.reference[f] + s.reference[e] + (t ? 0 : (null == (b = o.offset) ? true : b[f]) || 0) - (t ? E.crossAxis : 0);
+            n = o.reference[f] - o.floating[e] + (t && (null == (y = s.offset) ? true : y[f]) || 0) + (t ? 0 : E.crossAxis),
+            i = o.reference[f] + o.reference[e] + (t ? 0 : (null == (b = s.offset) ? true : b[f]) || 0) - (t ? E.crossAxis : 0);
           m < n ? m = n : m > i && (m = i)
         }
         return {
@@ -539,7 +539,7 @@ let m = function(e) {
       options: e,
       async fn(t) {
         var n, i;
-        let a, o, {
+        let a, s, {
             placement: l,
             rects: c,
             platform: u,
@@ -549,7 +549,7 @@ let m = function(e) {
             apply: f = () => {},
             ...p
           } = (0, r._3)(e, t),
-          _ = await s(t, p),
+          _ = await o(t, p),
           h = (0, r.C0)(l),
           m = (0, r.Sg)(l),
           g = "y" === (0, r.TV)(l),
@@ -557,11 +557,11 @@ let m = function(e) {
             width: E,
             height: y
           } = c.floating;
-        "top" === h || "bottom" === h ? (a = h, o = m === (await (null == u.isRTL ? true : u.isRTL(d.floating)) ? "start" : "end") ? "left" : "right") : (o = h, a = "end" === m ? "top" : "bottom");
+        "top" === h || "bottom" === h ? (a = h, s = m === (await (null == u.isRTL ? true : u.isRTL(d.floating)) ? "start" : "end") ? "left" : "right") : (s = h, a = "end" === m ? "top" : "bottom");
         let b = y - _.top - _.bottom,
           O = E - _.left - _.right,
           v = (0, r.jk)(y - _[a], b),
-          A = (0, r.jk)(E - _[o], O),
+          A = (0, r.jk)(E - _[s], O),
           I = !t.middlewareData.shift,
           S = v,
           T = A;

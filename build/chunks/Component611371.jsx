@@ -10,7 +10,7 @@ var Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -73,9 +73,9 @@ function p(e) {
   let {
     className: t,
     color: n = i.A.unsafe_rawColors.BRAND_500.css
-  } = e, o = d(e, ["className", "color"]);
-  return (0, r.jsx)(a.LpS, u(l({}, o), {
-    text: s.intl.string(s.t.oW0eUd),
+  } = e, s = d(e, ["className", "color"]);
+  return (0, r.jsx)(a.LpS, u(l({}, s), {
+    text: o.intl.string(o.t.oW0eUd),
     color: n,
     className: t
   }))

@@ -40,15 +40,15 @@ function I(e) {
     pendingPronouns: R,
     pendingAvatar: P,
     pendingAvatarDecoration: D,
-    pendingNickname: x,
-    pendingGlobalName: L,
-    pendingThemeColors: j,
-    pendingProfileEffect: M,
+    pendingNickname: L,
+    pendingGlobalName: x,
+    pendingThemeColors: M,
+    pendingProfileEffect: j,
     pendingLegacyUsernameDisabled: k,
     pendingDisplayNameStyles: U,
     pendingPrimaryGuildId: G,
-    avatarClassName: V,
-    containerClassName: F,
+    avatarClassName: F,
+    containerClassName: V,
     isTryItOut: B = false,
     disabledInputs: H = false,
     hideCustomStatus: Y = false,
@@ -57,8 +57,8 @@ function I(e) {
     pendingBadges: z,
     shouldOpenBadgeTooltip: q,
     hideExampleButton: Z = false,
-    interactive: X = true
-  } = e, Q = (0, c.Ay)(i.id, null == I ? true : I.id), J = (0, s.bG)([_.Ay], () => null != I ? _.Ay.getMember(I.id, i.id) : null), $ = (0, h.lw)({
+    interactive: Q = true
+  } = e, X = (0, c.Ay)(i.id, null == I ? true : I.id), J = (0, o.bG)([_.Ay], () => null != I ? _.Ay.getMember(I.id, i.id) : null), $ = (0, h.lw)({
     pendingValue: D,
     userValue: null == i ? true : i.avatarDecoration,
     guildValue: null == J ? true : J.avatarDecoration,
@@ -71,33 +71,33 @@ function I(e) {
     guildId: null == I ? true : I.id,
     avatarDecorationOverride: $,
     avatarOverride: P,
-    size: o._3J.SIZE_80,
+    size: s._3J.SIZE_80,
     showPending: true
   }), en = (0, h.lw)({
-    pendingValue: M,
-    userValue: null == Q || null == (t = Q._userProfile) ? true : t.profileEffect,
-    guildValue: null == Q || null == (n = Q._guildMemberProfile) ? true : n.profileEffect,
+    pendingValue: j,
+    userValue: null == X || null == (t = X._userProfile) ? true : t.profileEffect,
+    guildValue: null == X || null == (n = X._guildMemberProfile) ? true : n.profileEffect,
     guildId: null == I ? true : I.id
   }), {
     theme: er,
     primaryColor: ei
   } = (0, u.A)({
     user: i,
-    displayProfile: Q,
-    pendingThemeColors: j,
+    displayProfile: X,
+    pendingThemeColors: M,
     isPreview: S
   }), ea = (0, r.jsxs)(f.A, {
     user: i,
-    displayProfile: Q,
+    displayProfile: X,
     themeType: O.d.POPOUT,
-    pendingThemeColors: j,
-    className: a()(A.k, F),
+    pendingThemeColors: M,
+    className: a()(A.k, V),
     forceShowPremium: S,
     children: [(0, r.jsxs)("div", {
       className: A.w,
       children: [(0, r.jsx)(g.A, {
         user: i,
-        displayProfile: Q,
+        displayProfile: X,
         guildId: null == I ? true : I.id,
         canUsePremiumCustomization: S,
         pendingBanner: C,
@@ -110,13 +110,13 @@ function I(e) {
       }), (0, r.jsx)(m.A, {
         user: i,
         guild: I,
-        displayProfile: Q,
+        displayProfile: X,
         canUsePremiumCustomization: S,
         previewAvatar: ee,
         previewAvatarDecorationSrc: et,
         previewTheme: er,
         previewPrimaryColor: ei,
-        className: V,
+        className: F,
         disabledInputs: H,
         isTryItOut: B,
         onUpsellClick: () => null == T ? true : T({
@@ -129,11 +129,11 @@ function I(e) {
       })]
     }), (0, r.jsx)(E.A, {
       user: i,
-      displayProfile: Q,
+      displayProfile: X,
       guild: I,
       pendingAvatar: P,
-      pendingNickname: x,
-      pendingGlobalName: L,
+      pendingNickname: L,
+      pendingGlobalName: x,
       pendingBio: w,
       pendingPronouns: R,
       pendingLegacyUsernameDisabled: k,
@@ -151,10 +151,10 @@ function I(e) {
       skuId: en.skuId
     })]
   });
-  return X ? ea : (0, r.jsx)("div", {
+  return Q ? ea : (0, r.jsx)("div", {
     role: "img",
     "aria-label": v.intl.string(v.t.ayozFl),
-    children: (0, r.jsx)(o.M1G, {
+    children: (0, r.jsx)(s.M1G, {
       children: ea
     })
   })

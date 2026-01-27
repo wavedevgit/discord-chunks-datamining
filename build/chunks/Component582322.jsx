@@ -36,20 +36,20 @@ let A = "#ffffff",
       children: t,
       windowKey: n,
       themeOverride: i,
-      hasOpenLayer: s
-    } = e, l = (0, r.jsx)(o.DUT, {
+      hasOpenLayer: o
+    } = e, l = (0, r.jsx)(s.DUT, {
       className: v.d1,
       onClick: () => I(n),
       "aria-label": O.intl.string(O.t.ZdNUj2),
       tabIndex: false,
       children: (0, r.jsx)(p.A, {})
-    }), c = (0, r.jsx)(o.DUT, {
+    }), c = (0, r.jsx)(s.DUT, {
       className: v.T0,
       onClick: e => T(n, e),
       "aria-label": O.intl.string(O.t.G1u0hK),
       tabIndex: false,
       children: (0, r.jsx)(h.A, {})
-    }), u = (0, r.jsx)(o.DUT, {
+    }), u = (0, r.jsx)(s.DUT, {
       className: v.T0,
       onClick: () => S(n),
       "aria-label": O.intl.string(O.t.CxOC4U),
@@ -58,11 +58,11 @@ let A = "#ffffff",
     }), d = (0, r.jsxs)(r.Fragment, {
       children: [l, c, u]
     });
-    return (0, r.jsx)(o.NPJ, {
+    return (0, r.jsx)(s.NPJ, {
       theme: i,
       children: e => (0, r.jsxs)("div", {
         className: a()(v._B, e, {
-          [v.N_]: !s
+          [v.N_]: !o
         }),
         children: [(0, r.jsx)("div", {
           className: v.X1,
@@ -76,13 +76,13 @@ let A = "#ffffff",
       focused: t,
       windowKey: n,
       frame: i,
-      themeOverride: s,
+      themeOverride: o,
       hasOpenLayer: l,
       children: u
     } = e;
-    return (0, r.jsx)(o.NPJ, {
-      theme: s,
-      children: e => (0, r.jsxs)(o.DUT, {
+    return (0, r.jsx)(s.NPJ, {
+      theme: o,
+      children: e => (0, r.jsxs)(s.DUT, {
         className: a()(i ? v.zY : v.kE, t ? v.in : v.Vn, e, {
           [v.N_]: !l
         }),
@@ -90,7 +90,7 @@ let A = "#ffffff",
         tabIndex: false,
         children: [c.A.window.USE_OSX_NATIVE_TRAFFIC_LIGHTS ? u : (0, r.jsxs)("div", {
           className: v.lY,
-          children: [(0, r.jsx)(o.DUT, {
+          children: [(0, r.jsx)(s.DUT, {
             className: v.gV,
             onClick: () => I(n),
             "aria-label": O.intl.string(O.t.ZdNUj2),
@@ -98,7 +98,7 @@ let A = "#ffffff",
             children: (0, r.jsx)(_.A, {
               color: "#4c0000"
             })
-          }), (0, r.jsx)(o.DUT, {
+          }), (0, r.jsx)(s.DUT, {
             className: v.wv,
             onClick: () => S(n),
             "aria-label": O.intl.string(O.t.CxOC4U),
@@ -106,7 +106,7 @@ let A = "#ffffff",
             children: (0, r.jsx)(E.A, {
               color: "#975500"
             })
-          }), (0, r.jsx)(o.DUT, {
+          }), (0, r.jsx)(s.DUT, {
             className: v.KH,
             onClick: e => T(n, e),
             "aria-label": O.intl.string(O.t["2nM3Pk"]),
@@ -131,14 +131,14 @@ function w(e) {
     type: n,
     windowKey: i,
     macOSFrame: a = false,
-    themeOverride: o
-  } = e, c = (0, d.Us)(), f = (0, s.bG)([u.A], () => u.A.isFullscreenInContext(c)), p = (0, l.A)();
+    themeOverride: s
+  } = e, c = (0, d.Us)(), f = (0, o.bG)([u.A], () => u.A.isFullscreenInContext(c)), p = (0, l.A)();
   if (f) return null;
   switch (n) {
     case y.PlatformTypes.WINDOWS:
       return (0, r.jsx)(C, {
         windowKey: i,
-        themeOverride: o,
+        themeOverride: s,
         hasOpenLayer: p
       });
     case y.PlatformTypes.OSX:
@@ -146,7 +146,7 @@ function w(e) {
         focused: t,
         windowKey: i,
         frame: a,
-        themeOverride: o,
+        themeOverride: s,
         hasOpenLayer: p
       });
     default:
