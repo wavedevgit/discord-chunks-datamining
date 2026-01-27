@@ -447,7 +447,7 @@ function ea(e) {
       children: null != d ? null != D ? (0, i.jsx)(m.m, {
         asContainer: true,
         text: en.intl.string(en.t.XiuuV9),
-        children: (0, i.jsx)(x.Ay, {
+        children: (0, i.jsx)(x.A, {
           label: en.intl.string(en.t["mmDvV+"]),
           paymentSources: [D],
           selectedPaymentSourceId: D.id,
@@ -456,7 +456,7 @@ function ea(e) {
         })
       }) : (0, i.jsx)("div", {
         children: (0, i.jsx)(p.y$y, {})
-      }) : (0, i.jsx)(x.Ay, {
+      }) : (0, i.jsx)(x.A, {
         label: en.intl.string(en.t["mmDvV+"]),
         paymentSources: Object.values(a),
         selectedPaymentSourceId: O,

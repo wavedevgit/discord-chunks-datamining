@@ -2,5 +2,6 @@
 /** chunk id: 355767, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  s: "paymentIcon__84bdf"
+  s: "paymentIcon__84bdf",
+  O: "clickableContainer__84bdf"
 }

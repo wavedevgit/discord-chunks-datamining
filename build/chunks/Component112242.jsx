@@ -154,7 +154,7 @@ function G(e) {
         sku: eo,
         value: ""
       })
-    }), (0, r.jsx)(_.Ay, {
+    }), (0, r.jsx)(_.A, {
       label: j.intl.string(j.t["mmDvV+"]),
       paymentSources: Object.values(V),
       selectedPaymentSourceId: B,

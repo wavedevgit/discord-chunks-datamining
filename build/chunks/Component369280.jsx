@@ -204,7 +204,7 @@ function Z(e) {
       children: eb
     }), (0, r.jsx)("div", {
       className: Y.LC,
-      children: (0, r.jsx)(_.Ay, {
+      children: (0, r.jsx)(_.A, {
         label: B.intl.string(B.t["mmDvV+"]),
         paymentSources: Object.values(a),
         selectedPaymentSourceId: eu,

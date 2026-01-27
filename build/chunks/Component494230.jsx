@@ -376,7 +376,7 @@ function Z(e) {
       })]
     }), eR, (0, r.jsxs)("div", {
       className: z.LC,
-      children: [(0, r.jsx)(h.Ay, {
+      children: [(0, r.jsx)(h.A, {
         label: G ? K.intl.string(K.t["YH7B+D"]) : K.intl.string(K.t["mmDvV+"]),
         paymentSources: Object.values(a),
         selectedPaymentSourceId: el,

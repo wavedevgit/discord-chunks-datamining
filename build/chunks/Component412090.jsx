@@ -5,7 +5,7 @@ require.d(exports, {
   _: () => M
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
-  Chunk397927 = require("./397927.js"),
+  Chunk637141 = require("./637141.jsx"),
   Chunk854354 = require("./854354.js"),
   Chunk93159 = require("./93159.js"),
   Chunk270537 = require("./270537.jsx"),
@@ -248,80 +248,97 @@ let C = (e, t, n) => {
     let {
       referralTrialOfferId: t,
       selectedPlanId: n,
-      priceOptions: a
+      priceOptions: a,
+      paymentSources: o,
+      onPaymentSourceChange: s,
+      handlePaymentSourceAdd: f,
+      isTrial: p
     } = e, {
-      error: o,
-      isGift: s,
-      giftRecipient: f,
-      oneTimePurchaseNitroGiftInvoicePreview: p,
-      subscriptionPeriodEnd: m,
-      trialInvoicePreview: g,
-      proratedInvoicePreview: E,
-      renewalInvoicePreview: y,
-      planSwitchLoading: O,
-      plan: A,
-      isPrepaid: S,
-      discountInvoiceItems: C,
-      premiumPlanOptions: N,
-      shouldAllowPlanSelect: w,
-      isCustomGift: R
-    } = (0, _.L)(e), x = (0, h.yf)({
-      error: o,
-      isGift: s,
-      oneTimePurchaseNitroGiftInvoicePreview: p,
-      trialInvoicePreview: g,
-      proratedInvoicePreview: E,
-      renewalInvoicePreview: y,
-      planSwitchLoading: O
-    }), M = (0, u.V)(t), j = (0, d.RO)({
+      error: m,
+      isGift: g,
+      giftRecipient: E,
+      oneTimePurchaseNitroGiftInvoicePreview: y,
+      subscriptionPeriodEnd: O,
+      trialInvoicePreview: A,
+      proratedInvoicePreview: S,
+      renewalInvoicePreview: C,
+      planSwitchLoading: N,
+      plan: w,
+      isPrepaid: R,
+      discountInvoiceItems: x,
+      premiumPlanOptions: M,
+      shouldAllowPlanSelect: j,
+      isCustomGift: k,
+      hidePersonalInformation: U,
+      hasEntitlements: G,
+      paymentSourceId: F,
+      eligiblePaymentGateways: V
+    } = (0, _.L)(e), B = (0, r.jsx)(i.A, {
+      shouldUseUnifiedCheckoutUI: true,
+      paymentSources: Object.values(o),
+      selectedPaymentSourceId: F,
+      newPaymentMethodOptionLabel: G && !p ? b.intl.string(b.t.IGU7El) : null,
+      onChange: s,
+      onPaymentSourceAdd: f,
+      hidePersonalInformation: U,
+      isTrial: p,
+      paymentGatewayRestrictions: V
+    }), H = (0, h.yf)({
+      error: m,
+      isGift: g,
+      oneTimePurchaseNitroGiftInvoicePreview: y,
+      trialInvoicePreview: A,
+      proratedInvoicePreview: S,
+      renewalInvoicePreview: C,
+      planSwitchLoading: N
+    }), Y = (0, u.V)(t), W = (0, d.RO)({
       selectedPlanId: n,
       priceOptions: a,
-      planOptions: N,
+      planOptions: M,
       eligibleForMultiMonthPlans: false,
-      subscriptionPeriodEnd: m,
-      discountInvoiceItems: C
-    }), k = (0, r.jsx)(d.fJ, T(I({
-      planOptions: N
-    }, j), {
+      subscriptionPeriodEnd: O,
+      discountInvoiceItems: x
+    }), K = (0, r.jsx)(d.fJ, T(I({
+      planOptions: M
+    }, W), {
       shouldUseUnifiedCheckoutUI: true
     }));
-    if (null == x || x.type === h.N$.LOADING) return null;
-    let U = (0, r.jsx)(P, {
-        invoiceSummaryTypeWithPreview: x,
-        subscriptionPlan: A,
-        isPrepaidPaymentSource: S,
-        premiumTrialOffer: M,
-        isCustomGift: R
+    if (null == H || H.type === h.N$.LOADING) return null;
+    let z = (0, r.jsx)(P, {
+        invoiceSummaryTypeWithPreview: H,
+        subscriptionPlan: w,
+        isPrepaidPaymentSource: R,
+        premiumTrialOffer: Y,
+        isCustomGift: k
       }),
-      G = null;
-    if (!S && (x.type === h.N$.PREMIUM_DEFAULT || x.type === h.N$.PREMIUM_WITH_TRIAL) && null != x.renewalInvoicePreview) {
-      let e = D(x.invoicePreview, x.renewalInvoicePreview, M);
-      G = (0, r.jsx)(c._, I({}, e))
+      q = null;
+    if (!R && (H.type === h.N$.PREMIUM_DEFAULT || H.type === h.N$.PREMIUM_WITH_TRIAL) && null != H.renewalInvoicePreview) {
+      let e = D(H.invoicePreview, H.renewalInvoicePreview, Y);
+      q = (0, r.jsx)(c._, I({}, e))
     }
-    let F = L(x, A, {
-        isPrepaidPaymentSource: S,
-        giftRecipient: f
+    let Z = L(H, w, {
+        isPrepaidPaymentSource: R,
+        giftRecipient: E
       }),
-      V = w ? k : (0, r.jsx)(l.f7, I({}, F));
+      Q = j ? K : (0, r.jsx)(l.f7, I({}, Z));
     return (0, r.jsxs)("div", {
+      className: v.d,
       children: [(0, r.jsx)("div", {
         style: {
           height: 24
         }
-      }), V, (0, r.jsx)("div", {
+      }), Q, (0, r.jsx)("div", {
         style: {
           height: 12
         }
-      }), G, (0, r.jsx)(i.Text, {
-        variant: "text-md/normal",
-        color: "text-strong",
-        className: v.S,
-        children: b.intl.string(b.t["YH7B+D"])
+      }), q, (0, r.jsx)("div", {
+        className: v.J,
+        children: B
       }), (0, r.jsx)("div", {
         style: {
           height: 24
         }
-      }), U, (0, r.jsx)("div", {
+      }), z, (0, r.jsx)("div", {
         style: {
           height: 12
         }
