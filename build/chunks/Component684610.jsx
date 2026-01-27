@@ -50,7 +50,7 @@ function v(e) {
         onClose: () => {
           (0, l.Z_)(), a()
         },
-        "aria-label": f.intl.string(g.default["yb+ork"]),
+        "aria-label": g.intl.string(f.default["yb+ork"]),
         onSelect: true,
         children: (0, r.jsxs)(i.rXV, {
           children: [null != v && (0, r.jsx)(i.Drp, {
@@ -60,7 +60,7 @@ function v(e) {
               type: "icon",
               icon: i.oyn
             },
-            label: f.intl.string(g.default.bBkeMs),
+            label: g.intl.string(f.default.bBkeMs),
             action: () => {
               (0, o.h)({
                 href: v
@@ -73,7 +73,7 @@ function v(e) {
               type: "icon",
               icon: i.Zes
             },
-            label: f.intl.string(g.default["feUiM/"]),
+            label: g.intl.string(f.default["feUiM/"]),
             action: () => {
               (0, u.A)({
                 guildId: t,
@@ -106,7 +106,7 @@ function v(e) {
         }
         return e
       }({
-        "aria-label": f.intl.string(f.t["UKOtz+"]),
+        "aria-label": g.intl.string(g.t["UKOtz+"]),
         className: _.v
       }, e), n = n = {
         innerRef: m,

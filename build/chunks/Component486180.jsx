@@ -1,12 +1,13 @@
 /** Chunk was on 19750 **/
 /** chunk id: 486180, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => y
 });
 var r, a, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
+  Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk793574 = require("./793574.js"),
   Chunk665171 = require("./665171.js"),
@@ -18,7 +19,7 @@ var r, a, Chunk627968 = require("./627968.js"),
   Chunk294726 = require("./294726.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk979402 = require("./979402.js");
-let b = (r = function(e) {
+let h = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,14 +49,14 @@ let b = (r = function(e) {
   Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
 }), r);
 
-function h(e) {
+function y(e) {
   let {
     guildId: t
   } = e;
   l.useEffect(() => {
-    (0, u.z9)(t)
+    (0, m.z9)(t)
   }, [t]);
-  let n = (0, o.bG)([m.A], () => m.A.getStateForGuild(t)),
+  let n = (0, o.bG)([f.A], () => f.A.getStateForGuild(t)),
     {
       catalog: r,
       instances: a
@@ -66,39 +67,46 @@ function h(e) {
         instances: Object.values(null != (t = null == n ? true : n.instances) ? t : {})
       }
     }, [null == n ? true : n.catalog, null == n ? true : n.instances]),
-    h = a.length >= x.ZI;
+    y = a.length >= v.ZI;
   return 0 === r.length ? (0, i.jsx)("div", {
-    className: p.kL,
-    children: (0, i.jsx)(c.y$y, {
-      type: c.tVU.SPINNING_CIRCLE,
-      className: p.u1
+    className: b.kL,
+    children: (0, i.jsx)(d.y$y, {
+      type: d.tVU.SPINNING_CIRCLE,
+      className: b.u1
     })
   }) : (0, i.jsxs)("div", {
-    className: p.kL,
+    className: b.kL,
     children: [(0, i.jsx)(s.DZT, {
-      className: p.R_,
+      className: b.R_,
       variant: "heading-md/semibold",
-      children: j.intl.string(v.default["3vWDMz"])
-    }), h && (0, i.jsx)("div", {
-      className: p.Bq,
-      children: (0, i.jsx)(f.k, {})
+      children: p.intl.string(j.default["3vWDMz"])
+    }), y && (0, i.jsx)("div", {
+      className: b.Bq,
+      children: (0, i.jsx)(_.k, {})
     }), (0, i.jsx)(s.IpV, {
-      className: p.nd,
+      className: b.nd,
       children: (0, i.jsx)("div", {
-        className: p.Y_,
-        children: r.map((e, n) => (0, i.jsx)(g.A, {
-          guildId: t,
-          game: e,
-          onClick: () => (0, _.A)({
+        className: b.Y_,
+        children: r.map((e, n) => (0, i.jsx)(c.m, {
+          asContainer: true,
+          text: e.disabled ? p.intl.formatToPlainString(j.default.uVpJYf, {
+            gameName: e.name
+          }) : null,
+          position: "top",
+          children: (0, i.jsx)(g.A, {
             guildId: t,
-            stepConfig: b,
-            initialGameServerGame: e,
-            analyticsLocation: d.A.GAME_SERVER_PAGE_SIDEBAR
-          }),
-          imageClassName: p.Sl,
-          titleClassName: p.DD,
-          disabled: h,
-          location: d.A.GAME_SERVER_PAGE_SIDEBAR
+            game: e,
+            onClick: () => (0, x.A)({
+              guildId: t,
+              stepConfig: h,
+              initialGameServerGame: e,
+              analyticsLocation: u.A.GAME_SERVER_PAGE_SIDEBAR
+            }),
+            imageClassName: b.Sl,
+            titleClassName: b.DD,
+            disabled: y || e.disabled,
+            location: u.A.GAME_SERVER_PAGE_SIDEBAR
+          })
         }, "sidebar-game-".concat(n, "-").concat(e.id)))
       })
     })]

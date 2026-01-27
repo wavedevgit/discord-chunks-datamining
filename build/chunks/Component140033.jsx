@@ -120,7 +120,7 @@ function U(e) {
 function B(e) {
   let {
     instance: t
-  } = e, n = (0, I.A)(t.providerType, t.gameServerPanelUrl);
+  } = e, n = (0, C.A)(t.providerType, t.gameServerPanelUrl);
   return (0, r.jsx)(u.Button, {
     fullWidth: true,
     text: w.intl.string(P.default.bBkeMs),
@@ -137,18 +137,18 @@ function W(e) {
   let {
     guildId: t,
     instance: n
-  } = e, i = (0, A.A)(n), [p, M] = (0, g.kn)([c.M.GAME_SERVER_HOSTING_PORTKEY_TOS]), W = p !== c.M.GAME_SERVER_HOSTING_PORTKEY_TOS, V = (0, o.bG)([_.A], () => _.A.getDetectableGame(n.gameId)), F = (0, I.A)(n.providerType, n.gameServerPanelUrl), q = a.useCallback(() => {
+  } = e, i = (0, A.A)(n), [p, M] = (0, f.kn)([c.M.GAME_SERVER_HOSTING_PORTKEY_TOS]), W = p !== c.M.GAME_SERVER_HOSTING_PORTKEY_TOS, V = (0, o.bG)([_.A], () => _.A.getDetectableGame(n.gameId)), F = (0, C.A)(n.providerType, n.gameServerPanelUrl), q = a.useCallback(() => {
     var e;
-    (0, b.Ai)(t, n.gameId, null != (e = null == V ? true : V.name) ? e : "", n.id), W || null == n.providerType ? (0, C.A)(t, n) : (0, E.A)({
+    (0, b.Ai)(t, n.gameId, null != (e = null == V ? true : V.name) ? e : "", n.id), W || null == n.providerType ? (0, I.A)(t, n) : (0, E.A)({
       provider: n.providerType,
       onAccept: () => {
-        M(T.i.TAKE_ACTION), (0, C.A)(t, n)
+        M(T.i.TAKE_ACTION), (0, I.A)(t, n)
       }
     })
   }, [n, W, M, t, null == V ? true : V.name]), {
     handleCopyServerIp: z,
     animateCopyIcon: H
-  } = (0, S.A)(t, n.id, m.A.GAME_SERVER_GAME, null != i ? i : ""), K = (0, N.A)(n.gameId, "cover"), Z = (0, j.A)(t), Y = a.useCallback(() => {
+  } = (0, S.A)(t, n.id, m.A.GAME_SERVER_GAME, null != i ? i : ""), K = (0, N.A)(n.gameId, "cover"), Y = (0, j.A)(t), Z = a.useCallback(() => {
     var e;
     (0, b.f7)(t, n.id), (0, v.h)({
       href: null != (e = n.gameServerPanelUrl) ? e : ""
@@ -160,8 +160,8 @@ function W(e) {
           children: [(0, r.jsx)(k, {
             guildId: t,
             instance: n
-          }), Z && (0, r.jsx)(G, {
-            onClick: Y,
+          }), Y && (0, r.jsx)(G, {
+            onClick: Z,
             disabled: null == n.gameServerPanelUrl
           })]
         });
@@ -171,22 +171,22 @@ function W(e) {
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(D, {
             onClick: q
-          }), Z && (0, r.jsx)(G, {
-            onClick: Y,
+          }), Y && (0, r.jsx)(G, {
+            onClick: Z,
             disabled: null == n.gameServerPanelUrl
           })]
         });
       case s.M.STARTUP_FAILED:
       case s.M.MISSING_STOCK:
-        return Z ? (0, r.jsx)(L, {
-          onClick: Y
+        return Y ? (0, r.jsx)(L, {
+          onClick: Z
         }) : (0, r.jsx)(D, {
           onClick: q,
           disabled: true
         });
       case s.M.DELETED:
-        return Z ? (0, r.jsx)(G, {
-          onClick: Y,
+        return Y ? (0, r.jsx)(G, {
+          onClick: Z,
           disabled: null == n.gameServerPanelUrl
         }) : (0, r.jsx)(D, {
           onClick: q,
@@ -194,7 +194,7 @@ function W(e) {
         });
       case s.M.PROVIDER_ERRORED:
         return (0, r.jsxs)(r.Fragment, {
-          children: [Z && null != F ? (0, r.jsx)(B, {
+          children: [Y && null != F ? (0, r.jsx)(B, {
             guildId: t,
             instance: n
           }) : (0, r.jsx)(D, {
@@ -208,7 +208,7 @@ function W(e) {
       default:
         return null
     }
-  }, [n, q, Z, Y, t, F]), $ = a.useMemo(() => {
+  }, [n, q, Y, Z, t, F]), $ = a.useMemo(() => {
     if (null == n.gameConfig) return null;
     let e = [n.gameConfig.type, n.gameConfig.version].filter(x.Vq).join(" ");
     return "" === e ? null : e
@@ -218,15 +218,15 @@ function W(e) {
         if (null == n.gameServerPanelUrl) return w.intl.string(P.default["1A3US2"]);
         return null;
       case s.M.STARTUP_FAILED:
-        return w.intl.string(Z ? P.default.Mdoc98 : P.default.osZiRl);
+        return w.intl.string(Y ? P.default.Mdoc98 : P.default.osZiRl);
       case s.M.MISSING_STOCK:
-        return w.intl.string(Z ? P.default.YCakvM : P.default.osZiRl);
+        return w.intl.string(Y ? P.default.YCakvM : P.default.osZiRl);
       case s.M.PROVIDER_ERRORED:
-        return w.intl.string(Z ? P.default.NRyCeY : P.default.osZiRl);
+        return w.intl.string(Y ? P.default.NRyCeY : P.default.osZiRl);
       default:
         return null
     }
-  }, [n.status, n.gameServerPanelUrl, Z]);
+  }, [n.status, n.gameServerPanelUrl, Y]);
   return (0, r.jsxs)(y.A, {
     actions: Q,
     children: [(0, r.jsxs)("div", {
@@ -286,7 +286,7 @@ function W(e) {
                     size: "sm"
                   })
                 })]
-              }) : null != n.providerType && (0, r.jsx)(f.A, {
+              }) : null != n.providerType && (0, r.jsx)(g.A, {
                 onClick: () => {
                   (0, E.A)({
                     provider: n.providerType,
@@ -357,7 +357,7 @@ function W(e) {
           })]
         })
       })]
-    }), Z && (0, r.jsx)("div", {
+    }), Y && (0, r.jsx)("div", {
       className: R.overflowMenu,
       children: (0, r.jsx)(O.A, {
         guildId: t,
