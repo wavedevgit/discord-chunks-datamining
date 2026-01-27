@@ -20,7 +20,7 @@ let d = Chunk64700.memo(function(e) {
     useSubtitle: u,
     layout: _,
     initialize: p,
-    useNotice: m
+    useInlineNotice: m
   } = t, g = null == n ? true : n(), A = null == i ? true : i(), f = null == u ? true : u(), h = null == m ? true : m();
   return (0, a.Z)(p), (0, r.jsxs)(r.Fragment, {
     children: [null != g && (0, r.jsx)(o._, {

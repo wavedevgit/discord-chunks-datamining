@@ -21,7 +21,7 @@ function S() {
 }
 let E = (0, Chunk419954.zZ)(Chunk780964.X.VOICE_CATEGORY, {
   useTitle: () => d.intl.string(d.t.K3lovD),
-  useNotice: function() {
+  useInlineNotice: function() {
     let t = (0, u.I)("voice");
     return l.useMemo(() => t.canPrompt ? {
       type: r.W.STRONGLY_DISCOURAGED_CUSTOM,

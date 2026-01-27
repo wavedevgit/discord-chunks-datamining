@@ -13,7 +13,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk985018 = require("./985018.jsx");
 let A = (0, Chunk419954.zZ)(Chunk780964.X.VOICE_SECURITY_CATEGORY, {
   useTitle: () => T.intl.string(T.t.WWaFn5),
-  useNotice: function() {
+  useInlineNotice: function() {
     return n.useMemo(() => ({
       type: r.W.INLINE_NOTICE,
       noticeType: "info",

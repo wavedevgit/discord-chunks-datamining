@@ -62,7 +62,7 @@ function N(t) {
 let C = (0, Chunk419954.zZ)(Chunk780964.X.DEV_OVERRIDES, {
   useTitle: () => "Overrides",
   buildLayout: () => [c.U, I.l, A.B, d.q, E.g, o.Y, g.s, S.t, _.T, T.s],
-  useNotice: () => ({
+  useInlineNotice: () => ({
     type: u.W.INLINE_NOTICE,
     noticeType: "info",
     useText: () => O.intl.format(O.t.UeZJlg, {

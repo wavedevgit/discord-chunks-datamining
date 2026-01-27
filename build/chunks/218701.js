@@ -18,7 +18,7 @@ var Chunk290595 = require("./290595.js"),
   Chunk985018 = require("./985018.jsx");
 let g = (0, Chunk419954.zZ)(Chunk780964.X.DATA_USAGE_CATEGORY, {
   useTitle: () => _.intl.string(_.t.SRZyHg),
-  useNotice: Chunk589641.I,
+  useInlineNotice: Chunk589641.I,
   initialize: () => {
     s.A.fetchedConsents || (0, n.Q)()
   },

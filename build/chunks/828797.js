@@ -20,7 +20,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 let I = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
   useTitle: () => c.intl.string(c.t.pKSjEj),
-  useNotice: function() {
+  useInlineNotice: function() {
     return (0, n.bG)([r.default], () => {
       var t, e;
       return null != (t = null == (e = r.default.getCurrentUser()) ? true : e.mfaEnabled) && t

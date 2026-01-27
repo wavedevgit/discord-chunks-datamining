@@ -73,7 +73,7 @@ let b = (0, Chunk419954.Qx)(Chunk780964.X.VOICE_INPUT_PROFILE_SETTING, {
     }
   }),
   R = (0, Chunk419954.zZ)(Chunk780964.X.VOICE_INPUT_PROFILE_CATEGORY, {
-    useNotice: function() {
+    useInlineNotice: function() {
       let t = (0, l.bG)([o.A, T.A], () => {
         let t = T.A.getInputDeviceId();
         return (o.A.hasEchoCancellation(t) || o.A.hasNoiseSuppression(t) || o.A.hasAutomaticGainControl(t)) && T.A.isInputProfileCustom()

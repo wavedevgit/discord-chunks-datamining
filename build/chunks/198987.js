@@ -16,7 +16,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk985018 = require("./985018.jsx");
 let E = (0, Chunk419954.zZ)(Chunk780964.X.SOUNDS_CATEGORY, {
   useTitle: () => S.intl.string(S.t.MKWyKc),
-  useNotice: function() {
+  useInlineNotice: function() {
     let t = (0, l.bG)([u.A], () => u.A.getDisableAllSounds());
     return n.useMemo(() => {
       if (t) return {

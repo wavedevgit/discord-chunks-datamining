@@ -16,7 +16,7 @@ var Chunk419954 = require("./419954.js"),
   Chunk985018 = require("./985018.jsx");
 let E = (0, Chunk419954.zZ)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGORY, {
   useTitle: () => S.intl.string(S.t["y62Z/d"]),
-  useNotice: function() {
+  useInlineNotice: function() {
     let t = (0, u.I)();
     if ((0, r.Tx)() === s.YG) return t
   },

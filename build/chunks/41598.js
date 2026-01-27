@@ -17,7 +17,7 @@ var Chunk419954 = require("./419954.js"),
   Chunk985018 = require("./985018.jsx");
 let _ = (0, Chunk419954.zZ)(Chunk780964.X.ACCESSIBILITY_OVERVIEW, {
   useSubnavLabel: () => E.intl.string(E.t.fTNxW7),
-  useNotice: () => ({
+  useInlineNotice: () => ({
     type: l.W.STRONGLY_DISCOURAGED_CUSTOM,
     notice: r.YD
   }),
