@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  l = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk404374 = require("./404374.jsx"),
   Chunk468099 = require("./468099.js");
@@ -19,13 +19,13 @@ function c(e) {
     reducedRightPadding: c = false
   } = e;
   return (0, a.jsxs)("div", {
-    className: l()(c ? o.wp : o.Ug, n),
+    className: s()(c ? o.wp : o.Ug, n),
     children: [(0, a.jsxs)("div", {
       className: o.g9,
       children: [(0, a.jsx)(r.tvc, {
         size: "md",
         className: o.Kk,
-        color: s.k0.PREMIUM_TIER_2
+        color: l.k0.PREMIUM_TIER_2
       }), (0, a.jsx)(r.Text, {
         className: o.Qq,
         variant: "text-md/normal",

@@ -1,7 +1,7 @@
 /** Chunk was on 87916 **/
 /** chunk id: 515598, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,46 +17,46 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk234518 = require("./234518.js");
 
-function g(e) {
+function m(e) {
   let {
     analyticsSection: t,
     analyticsPage: n,
-    isGIF: g,
-    banner: m
-  } = e, p = (0, i.bG)([d.A], () => d.A.getGuildId()), x = (0, i.bG)([c.A], () => c.A.getGuild(p)), {
-    analyticsLocations: N
+    isGIF: m,
+    banner: f
+  } = e, g = (0, i.bG)([d.A], () => d.A.getGuildId()), h = (0, i.bG)([c.A], () => c.A.getGuild(g)), {
+    analyticsLocations: x
   } = (0, r.Ay)();
-  return null == x || x.features.has(u.GuildFeatures.ANIMATED_BANNER) || !g && x.features.has(u.GuildFeatures.BANNER) ? null : (0, a.jsxs)("div", {
-    className: f.kL,
-    children: [(0, a.jsx)(l._Jp, {
-      color: l.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: f.qC
-    }), (0, a.jsx)(l.Text, {
+  return null == h || h.features.has(u.GuildFeatures.ANIMATED_BANNER) || !m && h.features.has(u.GuildFeatures.BANNER) ? null : (0, a.jsxs)("div", {
+    className: A.kL,
+    children: [(0, a.jsx)(s._Jp, {
+      color: s.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+      className: A.qC
+    }), (0, a.jsx)(s.Text, {
       color: "text-strong",
       variant: "text-sm/semibold",
-      children: A.intl.string(A.t["56M7xe"])
+      children: _.intl.string(_.t["56M7xe"])
     }), (0, a.jsx)("div", {
-      className: f.xF,
-      children: (0, a.jsx)(l.QWc, {
-        text: A.intl.string(A.t.WUHdZV),
+      className: A.xF,
+      children: (0, a.jsx)(s.QWc, {
+        text: _.intl.string(_.t.WUHdZV),
         onClick: () => {
-          if (null == x) return;
+          if (null == h) return;
           let e = {
             section: t,
             page: n,
             object: u.ZSU.UPSELL_HEADER
           };
-          null != m ? (0, s._)({
-            analyticsLocations: N,
+          null != f ? (0, l._)({
+            analyticsLocations: x,
             analyticsLocation: e,
-            guild: x,
-            isGIF: g,
-            banner: m
+            guild: h,
+            isGIF: m,
+            banner: f
           }) : (0, o.A)({
-            analyticsLocations: N,
+            analyticsLocations: x,
             analyticsSourceLocation: e,
-            guild: x,
-            perks: g ? (0, _.Pf)() : (0, _.QR)()
+            guild: h,
+            perks: m ? (0, p.Pf)() : (0, p.QR)()
           })
         },
         textVariant: "text-sm/semibold"

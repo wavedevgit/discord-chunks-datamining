@@ -1,8 +1,8 @@
 /** Chunk was on 87916 **/
 /** chunk id: 682503, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
-}), require("./896048.js");
+  default: () => N
+}), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
@@ -16,34 +16,51 @@ var Chunk627968 = require("./627968.js"),
   Chunk699576 = require("./699576.jsx"),
   Chunk954571 = require("./954571.js"),
   Chunk504974 = require("./504974.jsx"),
-  Chunk248067 = require("./248067.js"),
+  Chunk439193 = require("./439193.js"),
   Chunk652215 = require("./652215.js"),
   Chunk339984 = require("./339984.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk392491 = require("./392491.js");
 
-function h(e) {
+function N(e) {
   let {
     transitionState: t,
-    onClose: l,
-    onComplete: h,
+    onClose: s,
+    onComplete: N,
     uploadType: y,
-    showUpsellHeader: E,
-    analyticsPage: R
-  } = e, [j, v] = i.useState(false), I = (0, o.k34)(), {
-    analyticsLocations: L,
-    newestAnalyticsLocation: P
+    showUpsellHeader: j,
+    analyticsPage: E
+  } = e, [v, R] = i.useState(false), L = (0, o.k34)(), {
+    analyticsLocations: I,
+    newestAnalyticsLocation: w
   } = (0, d.Ay)(c.A.GIF_PICKER);
-  async function w(e) {
-    let {
-      gifSrc: t
+  async function P(e) {
+    let t, {
+      gifSrc: i
     } = e;
-    if (null == t || j) return;
-    v(true);
-    let i = (0, m.g)(t),
-      r = await fetch(i),
-      s = await r.blob();
-    l(), (0, o.mMO)(async () => {
+    if (null == i || v) return;
+    R(true);
+    let r = (0, f.s)(i),
+      l = await fetch(r),
+      c = await l.blob(),
+      d = "" !== c.type ? c.type : function(e) {
+        var t;
+        switch (null == (t = new URL(e).pathname.split(".").pop()) ? true : t.toLowerCase()) {
+          case "gif":
+          default:
+            return "image/gif";
+          case "webp":
+            return "image/webp";
+          case "png":
+            return "image/png";
+          case "jpg":
+          case "jpeg":
+            return "image/jpeg"
+        }
+      }(r),
+      u = "jpeg" === (t = d.split("/")[1]) ? ".jpg" : null != t && "" !== t ? ".".concat(t) : ".gif",
+      p = "selected".concat(u);
+    s(), (0, o.mMO)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("35929"), n.e("74571"), n.e("67449")]).then(n.bind(n, 142630));
@@ -65,58 +82,58 @@ function h(e) {
         }
         return e
       }({
-        imageUri: i,
-        file: new File([s], "tenor.gif", {
-          type: "image/gif"
+        imageUri: r,
+        file: new File([c], p, {
+          type: d
         }),
-        onCrop: h,
+        onCrop: N,
         uploadType: y,
-        showUpsellHeader: E
+        showUpsellHeader: j
       }, t))
     }, {
-      contextKey: I
+      contextKey: L
     })
   }
   i.useEffect(() => {
-    f.default.track(p.HAw.OPEN_MODAL, {
-      type: p.JJy.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
-      location_stack: L,
+    A.default.track(g.HAw.OPEN_MODAL, {
+      type: g.JJy.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
+      location_stack: I,
       location: {
-        page: R
+        page: E
       }
     })
-  }, [L, R]);
-  let S = y === x.HL.AVATAR || y === x.HL.BANNER,
-    U = (0, _.b)(!S);
+  }, [I, E]);
+  let S = y === h.HL.AVATAR || y === h.HL.BANNER,
+    U = (0, p.b)(!S);
   return (0, a.jsx)(d.f5, {
-    value: L,
-    children: (0, a.jsxs)(s.dWK, {
-      onClose: l,
+    value: I,
+    children: (0, a.jsxs)(l.dWK, {
+      onClose: s,
       transitionState: t,
-      children: [(0, a.jsx)(s.rQ0, {
-        title: N.intl.string(N.t["xsC+/y"])
-      }), E && !U && (0, a.jsx)("div", {
+      children: [(0, a.jsx)(l.rQ0, {
+        title: x.intl.string(x.t["xsC+/y"])
+      }), j && !U && (0, a.jsx)("div", {
         className: b.It,
-        children: (0, a.jsx)(g.A, {
+        children: (0, a.jsx)(m.A, {
           type: y,
-          analyticsPage: R,
-          analyticsSection: p.JJy.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
+          analyticsPage: E,
+          analyticsSection: g.JJy.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
           isGIF: true
         })
       }), (0, a.jsxs)("div", {
         className: b.SD,
         children: [(0, a.jsx)(u.A, {
           className: r()(b.XC, {
-            [b.bX]: j
+            [b.bX]: v
           }),
-          onSelectGIF: w,
+          onSelectGIF: P,
           headingColor: "text-subtle",
           hideFavorites: true
-        }), j && (0, a.jsx)(o.y$y, {
+        }), v && (0, a.jsx)(o.y$y, {
           className: b.u1
-        }), E && U && (0, a.jsx)(A.A, {
+        }), j && U && (0, a.jsx)(_.A, {
           uploadType: y,
-          analyticsSource: P,
+          analyticsSource: w,
           showUpsell: true,
           className: b.Kt
         })]

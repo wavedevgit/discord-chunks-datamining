@@ -147,7 +147,7 @@ class S {
     let e = this.getUnifiedStepDefinition(o.pn.REVIEW);
     return (0, d.B)(e) ? l.r2 : {
       key: o.pn.REVIEW,
-      renderStep: t => (0, r.jsx)(m.P, {
+      renderStep: t => (0, r.jsx)(m.Pw, {
         paymentModalStepProps: t,
         unifiedStepDefinition: e
       }),

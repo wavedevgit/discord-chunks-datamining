@@ -1,7 +1,7 @@
 /** Chunk was on 87916 **/
 /** chunk id: 719335, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => N
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,39 +20,39 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk560207 = require("./560207.js");
 
-function N(e) {
+function x(e) {
   let {
     analyticsSection: t,
     type: n
-  } = e, N = (0, l.bG)([u.default], () => u.default.getCurrentUser()), b = A.Ay.canUseAnimatedAvatar(N), h = A.Ay.canUsePremiumProfileCustomization(N), y = n === g.HL.BANNER && h || n === g.HL.AVATAR && b, {
-    sourceAnalyticsLocations: E
-  } = (0, o.Ay)(s.A.PREMIUM_PREVIEW_UPSELL_HEADER);
+  } = e, x = (0, s.bG)([u.default], () => u.default.getCurrentUser()), b = _.Ay.canUseAnimatedAvatar(x), N = _.Ay.canUsePremiumProfileCustomization(x), y = n === m.HL.BANNER && N || n === m.HL.AVATAR && b, {
+    sourceAnalyticsLocations: j
+  } = (0, o.Ay)(l.A.PREMIUM_PREVIEW_UPSELL_HEADER);
   if (i.useEffect(() => {
-      y || _.default.track(f.HAw.PREMIUM_UPSELL_VIEWED, {
+      y || p.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
         type: t,
-        location_stack: E
+        location_stack: j
       })
-    }, [y, t, E]), y) return null;
-  let R = (0, a.jsx)(c.A, {
-    className: x.__invalid_getNitroLink,
+    }, [y, t, j]), y) return null;
+  let E = (0, a.jsx)(c.A, {
+    className: h.__invalid_getNitroLink,
     size: r.$n.Sizes.SMALL,
     look: r.$n.Looks.LINK,
     color: r.$n.Colors.LINK,
-    subscriptionTier: m.pe.TIER_2,
+    subscriptionTier: f.pe.TIER_2,
     textOptions: {
-      textOverride: p.intl.format(p.t["944tDv"], {})
+      textOverride: g.intl.format(g.t["944tDv"], {})
     },
     showIcon: false,
     premiumModalAnalyticsLocation: {
       section: t,
-      object: f.ZSU.BUTTON_CTA
+      object: A.ZSU.BUTTON_CTA
     },
     disableShine: true
   });
   return (0, a.jsx)(d.A, {
     reducedRightPadding: true,
-    className: x.C,
-    text: p.intl.format(p.t.Og803x, {}),
-    button: R
+    className: h.C,
+    text: g.intl.format(g.t.Og803x, {}),
+    button: E
   })
 }
