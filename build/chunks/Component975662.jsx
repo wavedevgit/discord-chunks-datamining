@@ -404,7 +404,7 @@ let ef = () => {
     recurring3PPromotions: {
       name: "recurring3PPromotions",
       title: U.intl.string(U.t.m7PucM),
-      subtitle: "",
+      subtitle: " ",
       onCtaClick: () => (0, S.uE)({
         analyticsLocations: e
       }),
