@@ -122,7 +122,7 @@ class w extends Chunk272355.A {
       if (!t || r || (0, s.ueM)() || (0, f.TW)(l) || await (0, E.m)(e.userTrialOffer) && (0, N.A)({
           upsellType: j.e.REVERSE_TRIAL_FOLLOWUP_UPSELL
         }), (null == l || l.verified) && !(0, s.ueM)() && !i.Fr && !n) {
-        for (let t of (await (0, I._C)(e)))
+        for (let t of (await (0, I._)(e)))
           if (await this.maybeOpenServerDriveAnnouncementModal("", A.default.fromTimestamp(Date.now()), t, false)) break
       }
     })

@@ -1,15 +1,16 @@
-/** Chunk was on 19846 **/
-/** chunk id: 542113, original params: t,n,e (module,exports,require) **/
-require.d(exports, {
-  A: () => r
-});
+/** Chunk was on web.js **/
+/** chunk id: 542113, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 
 function r() {
-  return (r = Object.assign ? Object.assign.bind() : function(t) {
-    for (var n = 1; n < arguments.length; n++) {
-      var e = arguments[n];
-      for (var r in e)({}).hasOwnProperty.call(e, r) && (t[r] = e[r])
+  return (r = Object.assign ? Object.assign.bind() : function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = arguments[t];
+      for (var r in n)({}).hasOwnProperty.call(n, r) && (e[r] = n[r])
     }
-    return t
+    return e
   }).apply(null, arguments)
 }
+require.d(exports, {
+  A: () => r
+})

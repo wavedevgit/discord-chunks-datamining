@@ -81,7 +81,10 @@ function N(e, t, n, r, o) {
         STEP_INDICATOR: (e, t) => C.intl.formatToPlainString(T.default["v2YSk/"], {
           stepNumber: e,
           stepCount: t
-        })
+        }),
+        SELECT_PLACEHOLDER: C.intl.string(T.default["A+pfVR"]),
+        CLEAR_SELECTION: C.intl.string(T.default.JA5C7L),
+        SELECTED_TAGS_HEADING: C.intl.string(T.default.VMNfsY)
       },
       locale: o,
       theme: e,

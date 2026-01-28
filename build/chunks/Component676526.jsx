@@ -1,7 +1,7 @@
 /** Chunk was on 94682 **/
 /** chunk id: 676526, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => x
+  h: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -57,41 +57,41 @@ function j(e) {
   })
 }
 
-function x(e) {
+function h(e) {
   let {
     game: t,
     userId: n,
     widgetType: l,
     guildId: s,
     channelId: b,
-    disableInteraction: x = false,
-    index: h,
+    disableInteraction: h = false,
+    index: x,
     onRemoveGame: v,
     coverRef: _
   } = e, {
-    coverImageUrl: A,
-    gameName: I,
+    coverImageUrl: I,
+    gameName: A,
     isLoading: w
   } = (0, g.A)(t.applicationId), {
     registerDragHandleRef: P
-  } = (0, u.r)(), E = (0, m.A)(t.applicationId).length > 0, S = o.default.getCurrentUser(), T = (null == S ? true : S.id) === n, N = !x && T, {
+  } = (0, u.r)(), E = (0, m.A)(t.applicationId).length > 0, S = o.default.getCurrentUser(), T = (null == S ? true : S.id) === n, N = !h && T, {
     isDragging: C
   } = (0, a.V)(e => ({
     isDragging: e.isDragging()
-  })), D = () => (0, r.jsxs)(r.Fragment, {
+  })), k = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.A, {
-      imageSrc: A,
-      gameName: I,
+      imageSrc: I,
+      gameName: A,
       applicationId: t.applicationId,
       userId: n,
-      disableInteraction: x,
-      className: i()(E ? O.kO : true, null == A || x ? true : y.iL),
+      disableInteraction: h,
+      className: i()(E ? O.kO : true, null == I || h ? true : y.iL),
       hideTooltip: C,
       coverRef: _
     }), N && (0, r.jsx)(c.jV, {
       buttonRef: P(t.applicationId),
       className: O.BU
-    }), !x && (0, r.jsx)(p.d, {
+    }), !h && (0, r.jsx)(p.d, {
       userId: n,
       applicationId: t.applicationId,
       guildId: s,
@@ -109,13 +109,13 @@ function x(e) {
     className: y.mD
   }) : N ? (0, r.jsx)(j, {
     widgetType: l,
-    index: null != h ? h : 0,
+    index: null != x ? x : 0,
     game: t,
-    coverImageUrl: A,
-    gameName: I,
-    children: D()
+    coverImageUrl: I,
+    gameName: A,
+    children: k()
   }) : (0, r.jsx)("div", {
     className: O.kL,
-    children: D()
+    children: k()
   })
 }

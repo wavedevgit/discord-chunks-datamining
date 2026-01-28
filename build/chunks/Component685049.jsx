@@ -70,7 +70,7 @@ function f(e) {
     } = e,
     O = (0, s.A)(g),
     j = O.length > 0,
-    x = (t = O, n = m, d = b, f = t.slice(0, 3).map(e => a.Ay.getName(n, d, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
+    h = (t = O, n = m, d = b, f = t.slice(0, 3).map(e => a.Ay.getName(n, d, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
       name: f[0]
     }) : 2 === t.length ? c.intl.formatToPlainString(c.t["08Usu/"], {
       name1: f[0],
@@ -85,21 +85,21 @@ function f(e) {
       name3: f[2],
       numPeople: t.length - 3
     })),
-    h = (0, i.A)({
+    x = (0, i.A)({
       location: "SocialProofButton",
       applicationId: g,
       source: l.Ob.UserProfile,
       sourceUserId: p,
       trackEntryPointImpression: true
     });
-  return j && null != h ? (0, r.jsx)(o.H, {
+  return j && null != x ? (0, r.jsx)(o.H, {
     users: O,
-    label: x,
+    label: h,
     className: y,
-    onClick: h,
+    onClick: x,
     guildId: m,
     channelId: b,
-    "aria-label": x,
+    "aria-label": h,
     overflowCountColor: "text-strong",
     overflowCountClassName: u.L
   }) : null

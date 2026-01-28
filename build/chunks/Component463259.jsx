@@ -2,7 +2,7 @@
 /** chunk id: 463259, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => B,
-  u: () => L
+  u: () => G
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -37,7 +37,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk368379 = require("./368379.js");
 
-function k(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function k(e) {
   return e
 }
 
-function G(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, l, i = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -74,13 +74,13 @@ function G(e, t) {
   return i
 }
 
-function L(e) {
+function G(e) {
   let {
     widget: t
-  } = e, n = G(e, ["widget"]);
-  return t instanceof O.R ? (0, r.jsx)(_.A, k({
+  } = e, n = L(e, ["widget"]);
+  return t instanceof O.R ? (0, r.jsx)(_.A, D({
     widget: t
-  }, n)) : t instanceof j.Yy ? (0, r.jsx)(E.A, k({
+  }, n)) : t instanceof j.Yy ? (0, r.jsx)(E.A, D({
     widget: t
   }, n)) : null
 }
@@ -91,10 +91,10 @@ function U() {
     children: [(0, r.jsx)(s.mir, {
       size: "xs"
     }), (0, r.jsx)(s.Text, {
-      "aria-label": D.intl.string(D.t["7blcz6"]),
+      "aria-label": k.intl.string(k.t["7blcz6"]),
       variant: "text-xs/normal",
       color: "text-muted",
-      children: D.intl.string(D.t["7blcz6"])
+      children: k.intl.string(k.t["7blcz6"])
     })]
   })
 }
@@ -115,7 +115,7 @@ function M() {
         visibleContent: l,
         markAsDismissed: i
       } = e, a = t.find(e => e.dismissibleContent === l);
-      return null == a ? null : (0, r.jsx)(A.A, {
+      return null == a ? null : (0, r.jsx)(I.A, {
         user: n,
         application: a.application,
         onDismiss: i
@@ -136,8 +136,8 @@ function F(e) {
     }, [e, t, n]), "GB" === e && n
   })(), p = (0, u.JY)({
     location: "UserProfileModalV2Widgets"
-  }), h = 0 === a.length && s, _ = l.useMemo(() => a.filter(j.fu), [a]), A = l.useMemo(() => a.filter(e => e instanceof O.R), [a]);
-  (0, x.Y)(s, _), ((e, t) => {
+  }), x = 0 === a.length && s, _ = l.useMemo(() => a.filter(j.fu), [a]), I = l.useMemo(() => a.filter(e => e instanceof O.R), [a]);
+  (0, h.Y)(s, _), ((e, t) => {
     let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
     (0, f.A)(n);
     let {
@@ -147,13 +147,13 @@ function F(e) {
     l.useEffect(() => {
       a.current && (a.current = false, i())
     }, [i])
-  })(t.id, A);
+  })(t.id, I);
   let P = () => (0, r.jsxs)(r.Fragment, {
     children: [s && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(I.A, {
+      children: [(0, r.jsx)(A.A, {
         className: R.cG
       }), d && (0, r.jsx)(U, {}), p && (0, r.jsx)(M, {})]
-    }), a.map((e, l) => (0, r.jsx)(L, {
+    }), a.map((e, l) => (0, r.jsx)(G, {
       widget: e,
       user: t,
       guildId: n,
@@ -161,7 +161,7 @@ function F(e) {
       index: l
     }, e.getUniqueKey()))]
   });
-  if (h)
+  if (x)
     if (p) return (0, r.jsx)(S.A, {});
     else return (0, r.jsx)(C.A, {});
   return s ? (0, r.jsx)(w.D, {
@@ -172,8 +172,8 @@ function F(e) {
 function B(e) {
   let {
     user: t
-  } = e, n = G(e, ["user"]), i = l.useRef(null);
-  (0, h.i)({
+  } = e, n = L(e, ["user"]), i = l.useRef(null);
+  (0, x.i)({
     containerRef: i
   });
   let o = (0, T.k)(t.id);
@@ -186,7 +186,7 @@ function B(e) {
     fade: true,
     children: [(0, r.jsx)(P.A, {
       scrollerRef: i
-    }), (0, r.jsx)(F, k({
+    }), (0, r.jsx)(F, D({
       user: t
     }, n))]
   })

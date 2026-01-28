@@ -67,7 +67,7 @@ Object.defineProperty(exports, "ICalCategory", {
     return i(l).default
   }
 });
-var Chunk594597 = require("./594597.js");
+var Chunk816978 = require("./816978.js");
 Object.defineProperty(exports, "ICalEvent", {
   enumerable: true,
   get: function() {

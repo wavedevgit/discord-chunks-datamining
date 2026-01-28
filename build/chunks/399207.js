@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 }), exports.ICalCalendarMethod = true;
 let Chunk778090 = require("./778090.js"),
-  o = n(require("./594597.js")),
+  o = n(require("./816978.js")),
   Chunk362185 = require("./362185.js"),
   Chunk362185 = require("./362185.js");
 (i = r = exports.ICalCalendarMethod || (exports.ICalCalendarMethod = {})).PUBLISH = "PUBLISH", i.REQUEST = "REQUEST", i.REPLY = "REPLY", i.ADD = "ADD", i.CANCEL = "CANCEL", i.REFRESH = "REFRESH", i.COUNTER = "COUNTER", i.DECLINECOUNTER = "DECLINECOUNTER", exports.default = class {

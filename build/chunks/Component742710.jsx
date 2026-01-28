@@ -1,7 +1,7 @@
 /** Chunk was on 94682 **/
 /** chunk id: 742710, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => k
+  A: () => D
 }), require("./733351.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -78,7 +78,7 @@ function S(e) {
       game: l,
       widgetType: n
     },
-    "aria-label": A.intl.formatToPlainString(A.t["0dR3gw"], {
+    "aria-label": I.intl.formatToPlainString(I.t["0dR3gw"], {
       positionNumber: t + 1
     }),
     onReorder: (e, t) => (0, m.Un)(n, e, t),
@@ -139,7 +139,7 @@ function N(e) {
   } = e;
   return (0, r.jsx)(s.AC4, {
     id: i,
-    children: A.intl.format(A.t.TM0XDY, {
+    children: I.intl.format(I.t.TM0XDY, {
       name: p.Ay.getName(n, l, t)
     })
   })
@@ -158,7 +158,7 @@ function C(e) {
   })
 }
 
-function D(e) {
+function k(e) {
   let {
     text: t,
     user: n,
@@ -193,24 +193,24 @@ function R(e) {
     applicationId: f
   } = e, p = (0, c.GV)(), b = (0, c.GV)(), {
     trackUserProfileEditAction: y
-  } = (0, g.NJ)(), [O, j] = l.useState("idle"), [x, h] = l.useState(null != t ? t : ""), v = l.useRef(null), _ = l.useRef(null), I = A.intl.string(A.t.xKSfBT), P = null != t && "" !== t.trim(), E = l.useCallback(() => {
+  } = (0, g.NJ)(), [O, j] = l.useState("idle"), [h, x] = l.useState(null != t ? t : ""), v = l.useRef(null), _ = l.useRef(null), A = I.intl.string(I.t.xKSfBT), P = null != t && "" !== t.trim(), E = l.useCallback(() => {
     y({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
     }), j("editing")
   }, [d, y]), S = l.useCallback(() => {
-    let e = x.trim(),
+    let e = h.trim(),
       n = e !== (null != t ? t : "").trim();
     (0, m.oc)(d, f, "" !== e ? e : true), j("completed"), n && y({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
       gameId: f
     })
-  }, [d, f, x, t, y]), T = l.useCallback(e => {
-    h(e)
+  }, [d, f, h, t, y]), T = l.useCallback(e => {
+    x(e)
   }, []);
   return l.useEffect(() => {
-    "editing" === O && h(null != t ? t : "")
+    "editing" === O && x(null != t ? t : "")
   }, [t, O]), l.useEffect(() => {
     if ("completed" === O) {
       var e;
@@ -221,11 +221,11 @@ function R(e) {
     children: [(0, r.jsx)(s.AC4, {
       tag: "label",
       htmlFor: p,
-      children: A.intl.string(A.t.JxKXeT)
+      children: I.intl.string(I.t.JxKXeT)
     }), (0, r.jsx)(s.fs1, {
       id: p,
-      value: x,
-      placeholder: I,
+      value: h,
+      placeholder: A,
       onChange: T,
       onBlur: S,
       rows: 3,
@@ -251,11 +251,11 @@ function R(e) {
       channelId: u,
       id: b
     }), (0, r.jsx)(C, {
-      text: null != t ? t : I,
+      text: null != t ? t : A,
       className: a()(w.qC, !P && w.qf)
     }), (0, r.jsx)(s.DUT, {
       innerRef: v,
-      "aria-label": A.intl.string(A.t.ppb9MJ),
+      "aria-label": I.intl.string(I.t.ppb9MJ),
       onClick: e => {
         e.stopPropagation(), E()
       },
@@ -266,7 +266,7 @@ function R(e) {
   })
 }
 
-function k(e) {
+function D(e) {
   let {
     user: t,
     guildId: n,
@@ -279,33 +279,33 @@ function k(e) {
     coverRef: p,
     className: g
   } = e, {
-    applicationId: A,
+    applicationId: I,
     comment: N,
     tags: C
   } = i, {
-    coverImageUrl: k,
-    gameName: G,
-    isLoading: L
-  } = (0, _.A)(A), U = {
+    coverImageUrl: D,
+    gameName: L,
+    isLoading: G
+  } = (0, _.A)(I), U = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, B = 1 === (0, m.cv)(o), X = !c && F, W = X && (0, m.y9)(o), H = X && !B, {
+  }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, B = 1 === (0, m.cv)(o), H = !c && F, W = H && (0, m.y9)(o), X = H && !B, {
     registerDragHandleRef: K
   } = (0, y.r)();
-  if (L) return (0, r.jsx)(j.E, {});
+  if (G) return (0, r.jsx)(j.E, {});
   let z = () => (0, r.jsx)(O.A, {
       coverRef: p,
-      className: null == k || c ? true : I.iL,
-      imageSrc: k,
-      gameName: G,
-      applicationId: A,
+      className: null == D || c ? true : A.iL,
+      imageSrc: D,
+      gameName: L,
+      applicationId: I,
       userId: t.id,
       disableInteraction: c,
       hideTooltip: true
     }),
     V = () => (0, r.jsxs)("div", {
       className: a()(w.Nr, g),
-      children: [H ? (0, r.jsxs)("div", {
+      children: [X ? (0, r.jsxs)("div", {
         className: w.An,
         children: [z(), (0, r.jsx)(b.jV, {
           buttonRef: K(i.applicationId),
@@ -314,44 +314,44 @@ function k(e) {
       }) : z(), (0, r.jsxs)("div", {
         className: w.zH,
         children: [c ? (0, r.jsx)(s.Heading, E(P({}, U), {
-          children: G
+          children: L
         })) : (0, r.jsx)(T, P({
-          applicationId: A,
+          applicationId: I,
           userId: t.id,
-          gameName: G
+          gameName: L
         }, U)), W ? (0, r.jsx)(R, {
           text: N,
           user: t,
           guildId: n,
           channelId: l,
           widgetType: o,
-          applicationId: A
-        }) : (0, r.jsx)(D, {
+          applicationId: I
+        }) : (0, r.jsx)(k, {
           text: N,
           user: t,
           guildId: n,
           channelId: l
-        }), (0, r.jsx)(x.A, {
+        }), (0, r.jsx)(h.A, {
           tags: C,
           isCurrentUser: F,
           widgetType: o,
-          applicationId: A,
+          applicationId: I,
           disableInteraction: c,
           className: w._A
         }), !c && (0, r.jsx)(v.o, {
           className: w.Ez,
-          applicationId: A,
+          applicationId: I,
           guildId: n,
           channelId: l
         })]
-      }), !c && F && (0, r.jsx)(h.A, {
+      }), !c && F && (0, r.jsx)(x.A, {
         game: i,
         widgetType: o,
         className: w.vS,
         onRemove: () => null == d ? true : d(i.applicationId)
       })]
     });
-  return H ? (0, r.jsx)(S, {
+  return X ? (0, r.jsx)(S, {
     index: null != u ? u : 0,
     widgetType: o,
     game: i,

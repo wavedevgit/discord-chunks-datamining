@@ -78,9 +78,9 @@ function m(e) {
   } = e, y = (0, l.bG)([i.default], () => i.default.getId() === o), {
     getManageButtonForWidget: O
   } = (0, f.r)(), j = O(d), {
-    expanded: x,
-    setExpanded: h
-  } = (0, c.B)(), v = x ? b : b.slice(0, 8), _ = b.length > 8, A = (0, r.jsxs)(r.Fragment, {
+    expanded: h,
+    setExpanded: x
+  } = (0, c.B)(), v = h ? b : b.slice(0, 8), _ = b.length > 8, I = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g, (t = p({}, e), n = n = {
       games: v
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -93,8 +93,8 @@ function m(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)), _ && (0, r.jsx)(u.A, {
-      expanded: x,
-      onClick: () => h(e => !e)
+      expanded: h,
+      onClick: () => x(e => !e)
     })]
   });
   return y && !m ? (0, r.jsxs)(r.Fragment, {
@@ -103,7 +103,7 @@ function m(e) {
       gameCount: b.length
     }), (0, r.jsx)(a.B, {
       emptyListFallbackRef: j,
-      children: A
+      children: I
     })]
-  }) : A
+  }) : I
 }

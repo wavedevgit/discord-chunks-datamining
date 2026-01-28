@@ -1,7 +1,7 @@
 /** Chunk was on 94682 **/
 /** chunk id: 515054, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x,
+  A: () => h,
   K: () => O
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -112,7 +112,7 @@ function j(e) {
   }) : null
 }
 
-function x(e) {
+function h(e) {
   var t;
   let {
     user: n,
@@ -126,8 +126,8 @@ function x(e) {
   } = e, {
     trackUserProfileAction: O
   } = (0, s.NJ)(), [{
-    section: x,
-    text: h
+    section: h,
+    text: x
   }, v] = l.useState(null != (t = p.find(e => {
     let {
       section: t
@@ -144,9 +144,9 @@ function x(e) {
       children: (0, r.jsx)(o.VQ0, {
         type: "top",
         look: "custom",
-        selectedItem: x,
+        selectedItem: h,
         onItemSelect: e => {
-          u.A.hasUnsavedChanges() && x === b.RP.WIDGETS ? c.A.notifyUnsavedWidgets() : (O({
+          u.A.hasUnsavedChanges() && h === b.RP.WIDGETS ? c.A.notifyUnsavedWidgets() : (O({
             action: "PRESS_SECTION",
             section: e
           }), v(t => {
@@ -162,13 +162,13 @@ function x(e) {
         }, e.section))
       })
     }), (0, r.jsx)(o.VQ0.Panel, {
-      id: x,
-      "aria-label": h,
+      id: h,
+      "aria-label": x,
       className: y.NM,
       children: (0, r.jsx)(o.Fmo, {
         component: (0, r.jsx)(o.AC4, {
           children: (0, r.jsx)(o.H, {
-            children: h
+            children: x
           })
         }),
         children: (0, r.jsx)(j, {
@@ -177,7 +177,7 @@ function x(e) {
           displayProfile: a,
           guildId: d,
           channelId: f,
-          section: x,
+          section: h,
           onClose: m
         })
       })

@@ -22,7 +22,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk10241 = require("./10241.js");
 
-function x(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function x(e) {
   return e
 }
 
-function h(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,12 +61,12 @@ function v(e) {
     buttonRef: l,
     additionalMenuItems: a
   } = e, o = (0, m.L)(t), s = (0, f.GV)();
-  return (0, r.jsx)(A, {
+  return (0, r.jsx)(I, {
     targetRef: l,
     widget: t,
     additionalMenuItems: a,
     children: e => (0, r.jsx)(_, {
-      children: (0, r.jsxs)(c.DUT, h(x({
+      children: (0, r.jsxs)(c.DUT, x(h({
         innerRef: l,
         className: i()(j.x6, n),
         "data-dnd-name": o,
@@ -121,7 +121,7 @@ let _ = e => {
       children: t
     })
   },
-  A = e => {
+  I = e => {
     let {
       children: t,
       widget: l,
@@ -131,7 +131,7 @@ let _ = e => {
       trackUserProfileEditAction: o
     } = (0, g.NJ)(), s = e => {
       if (e.shiftKey) {
-        (0, m.qA)(l), o(x({
+        (0, m.qA)(l), o(h({
           action: "WIDGET_REMOVED"
         }, l.getProfileEditAnalyticsOptions())), (0, b.XA)(y.jM.WIDGET_REMOVED);
         return
@@ -139,7 +139,7 @@ let _ = e => {
         let {
           default: e
         } = await n.e("53600").then(n.bind(n, 380035));
-        return t => (0, r.jsx)(e, h(x({}, t), {
+        return t => (0, r.jsx)(e, x(h({}, t), {
           userId: p.default.getId(),
           widget: l,
           trackUserProfileEditAction: o

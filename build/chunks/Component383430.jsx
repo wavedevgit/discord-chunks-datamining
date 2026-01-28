@@ -26,13 +26,13 @@ function d(e) {
     className: u.I,
     src: O,
     alt: ""
-  }), [O]), x = l.useMemo(() => null == O ? {
+  }), [O]), h = l.useMemo(() => null == O ? {
     type: "icon",
     icon: i.U1X
   } : {
     type: "image",
     src: O
-  }, [O]), h = l.useMemo(() => (0, r.jsxs)(i.rXV, {
+  }, [O]), x = l.useMemo(() => (0, r.jsxs)(i.rXV, {
     children: [(0, r.jsx)(i.Drp, {
       id: "browse-collectibles-shop",
       label: c.intl.string(c.t["5upuqx"]),
@@ -46,10 +46,10 @@ function d(e) {
       id: "browse-social-layer-storefront",
       label: y,
       iconLeft: j,
-      leadingAccessory: x,
+      leadingAccessory: h,
       action: d
     })]
-  }), [n, d, y, j, x]);
+  }), [n, d, y, j, h]);
   return (0, r.jsx)(i.YNO, {
     targetElementRef: p,
     position: "bottom",
@@ -65,7 +65,7 @@ function d(e) {
         onSelect: true,
         onClose: t,
         "aria-label": c.intl.string(c.t.GdNkvG),
-        children: h
+        children: x
       })
     },
     children: e => (0, r.jsx)(i.Button, function(e) {

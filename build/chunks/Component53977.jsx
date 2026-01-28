@@ -78,7 +78,7 @@ function g() {
     children: (0, r.jsx)(i.y$y, {})
   });
   if (null == O) return (0, r.jsx)(d.A, {});
-  let x = (0, r.jsxs)(i.BJc, {
+  let h = (0, r.jsxs)(i.BJc, {
     gap: 4,
     className: p.w,
     children: [(0, r.jsx)(i.Heading, {
@@ -106,7 +106,7 @@ function g() {
         align: "center",
         children: [(0, r.jsx)(i.hKd, {
           size: 32
-        }), x, (0, r.jsx)(c.A, {
+        }), h, (0, r.jsx)(c.A, {
           user: b,
           application: O.application,
           onDismiss: n
@@ -116,7 +116,7 @@ function g() {
         align: "center",
         children: [(0, r.jsx)(i.hKd, {
           size: 128
-        }), x, (0, r.jsx)(i.Button, {
+        }), h, (0, r.jsx)(i.Button, {
           icon: i.j96,
           text: f.intl.string(f.t["lBG2s/"]),
           size: "md",

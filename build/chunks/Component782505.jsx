@@ -4,7 +4,7 @@ require.d(exports, {
   IA: () => v,
   jB: () => _,
   qv: () => w,
-  zf: () => A
+  zf: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,9 +25,9 @@ let y = [() => m.intl.string(m.t.madJdE), () => m.intl.string(m.t.NYmfoP), () =>
   j = [() => m.intl.string(m.t.AyMGXA), () => m.intl.string(m.t.aAFW7V), e => m.intl.formatToPlainString(m.t.h2g0cM, {
     name: e
   }), () => m.intl.string(m.t.rrYh58), () => m.intl.string(m.t["HX3K+F"]), () => m.intl.string(m.t["/yW3aY"]), () => m.intl.string(m.t["PmL/v0"]), () => m.intl.string(m.t.IALa3h), () => m.intl.string(m.t.HRcTFL), () => m.intl.string(m.t.NuCqPt), () => m.intl.string(m.t["M1tw+4"]), () => m.intl.string(m.t.UBm1y2), () => m.intl.string(m.t.Cu95PQ), () => m.intl.string(m.t["R/wFuh"]), () => m.intl.string(m.t.HQPAVT), () => m.intl.string(m.t.YolGh4)],
-  x = [Chunk652215.fg2.STEAM, Chunk652215.fg2.PLAYSTATION, Chunk652215.fg2.XBOX, Chunk652215.fg2.TWITCH, Chunk652215.fg2.BATTLENET, Chunk652215.fg2.LEAGUE_OF_LEGENDS, Chunk652215.fg2.EPIC_GAMES, Chunk652215.fg2.RIOT_GAMES, Chunk652215.fg2.ROBLOX, Chunk652215.fg2.SPOTIFY, Chunk652215.fg2.YOUTUBE, Chunk652215.fg2.CRUNCHYROLL, Chunk652215.fg2.BUNGIE];
+  h = [Chunk652215.fg2.STEAM, Chunk652215.fg2.PLAYSTATION, Chunk652215.fg2.XBOX, Chunk652215.fg2.TWITCH, Chunk652215.fg2.BATTLENET, Chunk652215.fg2.LEAGUE_OF_LEGENDS, Chunk652215.fg2.EPIC_GAMES, Chunk652215.fg2.RIOT_GAMES, Chunk652215.fg2.ROBLOX, Chunk652215.fg2.SPOTIFY, Chunk652215.fg2.YOUTUBE, Chunk652215.fg2.CRUNCHYROLL, Chunk652215.fg2.BUNGIE];
 
-function h(e) {
+function x(e) {
   let {
     heading: t,
     bodyText: n,
@@ -56,7 +56,7 @@ function v() {
       var e;
       return (null != (e = (0, i.sample)(y)) ? e : y[0])()
     });
-  return (0, r.jsx)(h, {
+  return (0, r.jsx)(x, {
     heading: e,
     bodyText: t
   })
@@ -68,13 +68,13 @@ function _() {
       var e;
       return (null != (e = (0, i.sample)(O)) ? e : O[0])()
     });
-  return (0, r.jsx)(h, {
+  return (0, r.jsx)(x, {
     heading: e,
     bodyText: t
   })
 }
 
-function A(e) {
+function I(e) {
   let {
     user: t,
     guildId: n,
@@ -90,7 +90,7 @@ function A(e) {
       recipientIds: t.id
     }), null == c || c()
   }, [t.id, c]);
-  return (0, r.jsx)(h, {
+  return (0, r.jsx)(x, {
     heading: d,
     bodyText: g,
     children: (0, r.jsx)("div", {
@@ -104,11 +104,11 @@ function A(e) {
   })
 }
 
-function I() {
+function A() {
   let e = (0, s.Ay)();
   return (0, r.jsx)("div", {
     className: b.HU,
-    children: x.map((t, n) => {
+    children: h.map((t, n) => {
       let l = c.A.get(t);
       if (null == l) return null;
       let i = (0, a.Mwr)(e) ? l.icon.darkPNG : l.icon.lightPNG;
@@ -134,10 +134,10 @@ function w(e) {
       subsection: "CONNECTED_GAMES"
     })
   }, [t]);
-  return (0, r.jsxs)(h, {
+  return (0, r.jsxs)(x, {
     heading: m.intl.string(m.t.VB6LWY),
     bodyText: m.intl.string(m.t.KpjsU9),
-    children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(A, {}), (0, r.jsxs)("div", {
       className: b.v0,
       children: [(0, r.jsx)(p.FD, {
         text: m.intl.string(m.t["/Hl24U"]),

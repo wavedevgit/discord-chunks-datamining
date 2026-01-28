@@ -74,7 +74,7 @@ function m(e) {
     itemPreviewProps: d
   }), [a, r, u, d]), [{
     isDragging: O
-  }, j, x] = (0, o.i)({
+  }, j, h] = (0, o.i)({
     type: m,
     item: y,
     collect: e => ({
@@ -83,12 +83,12 @@ function m(e) {
     end: p
   });
   l.useEffect(() => {
-    g && x((0, c.n)(), {
+    g && h((0, c.n)(), {
       captureDraggingState: true
     })
-  }, [x, g]);
+  }, [h, g]);
   let [{
-    dragSourcePosition: h
+    dragSourcePosition: x
   }, v] = (0, s.H)({
     accept: m,
     drop: e => {
@@ -109,7 +109,7 @@ function m(e) {
     v(null), j(null)
   }), [j, t, v, n]), {
     isDragging: O,
-    dragSourcePosition: h
+    dragSourcePosition: x
   }
 }
 let b = Chunk64700.memo(function(e) {
@@ -128,10 +128,10 @@ let b = Chunk64700.memo(function(e) {
     dragRef: f,
     dropRef: f,
     index: t
-  }, d)), O = null != y, j = O && t < y, x = O && t > y;
+  }, d)), O = null != y, j = O && t < y, h = O && t > y;
   return (0, r.jsx)("div", {
     ref: f,
-    className: a()(n, b && i, j && o, x && s),
+    className: a()(n, b && i, j && o, h && s),
     "aria-label": c,
     children: u
   })

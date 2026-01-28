@@ -26,10 +26,10 @@ function b(e) {
     onSelect: O
   } = e, {
     theme: j,
-    themeType: x
-  } = (0, d.E)(), h = t.hasAvatarForGuild(b.id);
+    themeType: h
+  } = (0, d.E)(), x = t.hasAvatarForGuild(b.id);
   return (0, r.jsxs)(o.DUT, {
-    focusProps: x === p.d.MODAL_V2 ? {
+    focusProps: h === p.d.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -46,7 +46,7 @@ function b(e) {
       (0, s.L3)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("87093"), n.e("49681"), n.e("3795"), n.e("40215"), n.e("40396"), n.e("43600"), n.e("13088"), n.e("48330"), n.e("92414"), n.e("94857"), n.e("28136"), n.e("68587"), n.e("7034"), n.e("20941"), n.e("37372"), n.e("67923"), n.e("3183"), n.e("92917"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("5152"), n.e("3911"), n.e("8018"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("11810"), n.e("8458"), n.e("39048"), n.e("35195"), n.e("49862"), n.e("60989"), n.e("24202"), n.e("38985"), n.e("36290"), n.e("59541"), n.e("59735"), n.e("98797"), n.e("54469"), n.e("36137")]).then(n.bind(n, 544676));
+        } = await Promise.all([n.e("87093"), n.e("49681"), n.e("3795"), n.e("40215"), n.e("40396"), n.e("43600"), n.e("13088"), n.e("48330"), n.e("92414"), n.e("94857"), n.e("28136"), n.e("68587"), n.e("7034"), n.e("20941"), n.e("37372"), n.e("67923"), n.e("3183"), n.e("92917"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("5152"), n.e("3911"), n.e("8018"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("11810"), n.e("8458"), n.e("39048"), n.e("44011"), n.e("49862"), n.e("60989"), n.e("24202"), n.e("38985"), n.e("36290"), n.e("59541"), n.e("59735"), n.e("98797"), n.e("54469"), n.e("36137")]).then(n.bind(n, 544676));
         return t => {
           var n, l;
           return (0, r.jsx)(e, (n = function(e) {
@@ -96,7 +96,7 @@ function b(e) {
       children: [(0, r.jsx)("div", {
         className: g.UU,
         children: b.name
-      }), h && (0, r.jsxs)("div", {
+      }), x && (0, r.jsxs)("div", {
         className: g.C9,
         children: [(0, r.jsx)(o.euF, {
           src: t.getAvatarURL(b.id, m),
@@ -110,7 +110,7 @@ function b(e) {
             children: null != y ? y : u.Ay.getName(b.id, true, t)
           })
         })]
-      }), !h && null != y && (0, r.jsx)(o.Text, {
+      }), !x && null != y && (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         children: (0, r.jsx)(i.A, {
           delay: f.In,

@@ -59,21 +59,21 @@ function v(e) {
     }),
     v = null != O,
     _ = v && t < O,
-    A = v && t > O;
+    I = v && t > O;
   return (0, r.jsxs)("div", {
     ref: u,
-    className: a()(h.wX, {
-      [h.A]: _,
-      [h.Ze]: A,
-      [h.Id]: b
+    className: a()(x.wX, {
+      [x.A]: _,
+      [x.Ze]: I,
+      [x.Id]: b
     }),
-    "aria-label": x.intl.formatToPlainString(x.t.YLczh4, {
+    "aria-label": h.intl.formatToPlainString(h.t.YLczh4, {
       positionNumber: t + 1
     }),
     children: [(0, r.jsx)(y.A, {
       buttonRef: s,
       widget: n,
-      className: h.vn,
+      className: x.vn,
       additionalMenuItems: i
     }), o]
   })
@@ -89,10 +89,10 @@ function _(e) {
     index: m,
     trailingContent: y,
     headerTitle: j,
-    headerSubtitle: x,
+    headerSubtitle: h,
     headerActionButtons: _,
-    headerClassName: A,
-    additionalManageWidgetMenuItems: I
+    headerClassName: I,
+    additionalManageWidgetMenuItems: A
   } = e, w = (0, c.GV)(), P = (0, s.bG)([u.default], () => u.default.getId() === t), E = (0, b.g)(), {
     trackUserProfileAction: S
   } = (0, d.NJ)(), T = (0, g.A)({
@@ -101,17 +101,17 @@ function _(e) {
   }), N = E === n.type;
   (0, p.A)(T, N);
   let C = P && null != m && !i,
-    D = () => (0, r.jsxs)("div", {
-      className: a()(h.kL, f),
+    k = () => (0, r.jsxs)("div", {
+      className: a()(x.kL, f),
       children: [(0, r.jsx)(O.A, {
         userId: t,
         headingId: w,
         title: j,
-        subtitle: x,
+        subtitle: h,
         actionButtons: _,
         widget: n,
         disableInteraction: i,
-        className: A
+        className: I
       }), (0, r.jsxs)(o.Fmo, {
         children: [l, y]
       })]
@@ -122,8 +122,8 @@ function _(e) {
     children: C ? (0, r.jsx)(v, {
       index: null != m ? m : 0,
       widget: n,
-      additionalManageWidgetMenuItems: I,
-      children: D()
-    }) : D()
+      additionalManageWidgetMenuItems: A,
+      children: k()
+    }) : k()
   })
 }

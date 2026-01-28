@@ -2,10 +2,10 @@
 /** chunk id: 134402, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   B6: () => A,
-  Ix: () => m,
-  W6: () => R,
-  XZ: () => d,
-  y: () => g
+  Ix: () => d,
+  W6: () => g,
+  XZ: () => m,
+  y: () => x
 });
 var Chunk238710 = require("./238710.js"),
   Chunk64700 = require("./64700.js");
@@ -24,8 +24,8 @@ var Chunk725664 = require("./725664.js"),
     return n.displayName = t, n
   },
   h = v("Router-History"),
-  d = v("Router"),
-  m = function(t) {
+  m = v("Router"),
+  d = function(t) {
     function n(n) {
       var e;
       return (e = t.call(this, n) || this).state = {
@@ -54,7 +54,7 @@ var Chunk725664 = require("./725664.js"),
     }, e.componentWillUnmount = function() {
       this.unlisten && (this.unlisten(), this._isMounted = false, this._pendingLocation = null)
     }, e.render = function() {
-      return i.createElement(d.Provider, {
+      return i.createElement(m.Provider, {
         value: {
           history: this.props.history,
           location: this.state.location,
@@ -120,12 +120,12 @@ function A(t, n) {
 }
 Chunk64700.Component;
 
-function g(t) {
+function x(t) {
   var n = "withRouter(" + (t.displayName || t.name) + ")",
     e = function(n) {
       var e = n.wrappedComponentRef,
         r = (0, l.A)(n, ["wrappedComponentRef"]);
-      return i.createElement(d.Consumer, null, function(n) {
+      return i.createElement(m.Consumer, null, function(n) {
         return n || (0, a.A)(false), i.createElement(t, (0, c.A)({}, r, n, {
           ref: e
         }))
@@ -134,8 +134,8 @@ function g(t) {
   return e.displayName = n, e.WrappedComponent = t, f()(e, t)
 }
 Chunk64700.Component, Chunk64700.Component;
-var x = Chunk64700.useContext;
+var R = Chunk64700.useContext;
 
-function R() {
-  return x(h)
+function g() {
+  return R(h)
 }

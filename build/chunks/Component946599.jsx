@@ -27,16 +27,16 @@ function y(e) {
     applicationId: c,
     className: u,
     disableInteraction: y = false
-  } = e, j = null != (t = null == n ? true : n.filter(e => null != (0, g.W3)(e))) ? t : [], x = j.length > 0, _ = o.Y$, A = i && !y && (0, f.mS)(s) && j.length < _, {
-    trackUserProfileAction: I
-  } = (0, d.NJ)(), w = (0, l.useRef)(new Map), P = (0, l.useRef)(null), E = (0, l.useRef)(null), [S, T] = (0, l.useState)(0), [N, C] = (0, l.useState)(false), D = v(P, E, j, w, T);
-  if ((0, l.useEffect)(() => (D(), window.addEventListener("resize", D), () => {
-      window.removeEventListener("resize", D)
-    }), [D, null == j ? true : j.join("")]), !x && !A) return null;
+  } = e, j = null != (t = null == n ? true : n.filter(e => null != (0, g.W3)(e))) ? t : [], h = j.length > 0, _ = o.Y$, I = i && !y && (0, f.mS)(s) && j.length < _, {
+    trackUserProfileAction: A
+  } = (0, d.NJ)(), w = (0, l.useRef)(new Map), P = (0, l.useRef)(null), E = (0, l.useRef)(null), [S, T] = (0, l.useState)(0), [N, C] = (0, l.useState)(false), k = v(P, E, j, w, T);
+  if ((0, l.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
+      window.removeEventListener("resize", k)
+    }), [k, null == j ? true : j.join("")]), !h && !I) return null;
   let R = N ? j : j.slice(0, j.length - S);
   return (0, r.jsxs)("div", {
     className: a()(b.I4, u),
-    children: [x && (0, r.jsxs)(r.Fragment, {
+    children: [h && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("ul", {
         className: b.Tw,
         "aria-label": m.intl.string(m.t.EfjTi4),
@@ -50,23 +50,23 @@ function y(e) {
           },
           disableInteraction: y
         }, e))
-      }), S > 0 && (0, r.jsx)(h, {
+      }), S > 0 && (0, r.jsx)(x, {
         buttonRef: P,
         isExpanded: N,
         numberOfOverflowingTags: S,
         onExpandTags: () => {
-          C(true), I({
+          C(true), A({
             action: "EXPAND_GAME_TAGS"
           })
         },
         onCollapseTags: () => {
-          C(false), I({
+          C(false), A({
             action: "COLLAPSE_GAME_TAGS"
           })
         },
         disableInteraction: y
       })]
-    }), A && (0, r.jsx)(p.A, {
+    }), I && (0, r.jsx)(p.A, {
       tags: n,
       widgetType: s,
       applicationId: c,
@@ -134,7 +134,7 @@ function j(e) {
   })
 }
 
-function x() {
+function h() {
   return (0, r.jsx)(u.A, {
     direction: u.A.Directions.LEFT,
     width: 12,
@@ -143,7 +143,7 @@ function x() {
   })
 }
 
-function h(e) {
+function x(e) {
   let {
     isExpanded: t,
     numberOfOverflowingTags: n,
@@ -168,7 +168,7 @@ function h(e) {
       onClick: t ? i : l,
       "aria-label": d,
       className: t ? b.cS : b.X1,
-      children: t ? (0, r.jsx)(x, {}) : (0, r.jsx)(j, {
+      children: t ? (0, r.jsx)(h, {}) : (0, r.jsx)(j, {
         numberOfOverflowingTags: n
       })
     })

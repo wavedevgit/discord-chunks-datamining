@@ -1,7 +1,7 @@
 /** Chunk was on 94682 **/
 /** chunk id: 503062, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,17 +20,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk996988 = require("./996988.js"),
   Chunk794904 = require("./794904.js");
 let j = Chunk397927._3J.SIZE_40,
-  x = (0, Chunk397927.FT9)(j);
+  h = (0, Chunk397927.FT9)(j);
 
-function h(e) {
+function x(e) {
   let {
     user: t,
-    status: h,
+    status: x,
     guildId: v,
     channelId: _,
-    onSelect: A
+    onSelect: I
   } = e, {
-    theme: I,
+    theme: A,
     themeType: w
   } = (0, m.E)(), P = l.useMemo(() => t.isNonUserBot() || (0, f.c)(t, _), [t, _]), {
     activities: E,
@@ -61,7 +61,7 @@ function h(e) {
       }
     },
     className: O.nM,
-    onClick: A,
+    onClick: I,
     onContextMenu: e => {
       (0, o.L3)(e, async () => {
         let {
@@ -102,11 +102,11 @@ function h(e) {
       })
     },
     children: [(0, r.jsx)(a.euF, {
-      src: t.getAvatarURL(v, x),
+      src: t.getAvatarURL(v, h),
       "aria-label": t.username,
       size: j,
-      status: P ? b.clD.UNKNOWN : h,
-      statusBackdropColor: P ? true : (0, a.C$5)(I),
+      status: P ? b.clD.UNKNOWN : x,
+      statusBackdropColor: P ? true : (0, a.C$5)(A),
       isMobile: S,
       className: O.my
     }), (0, r.jsxs)("div", {

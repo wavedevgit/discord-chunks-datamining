@@ -1,13 +1,12 @@
 /** Chunk was on 94682 **/
 /** chunk id: 34442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  IU: () => O,
-  dE: () => j
+  IU: () => y,
+  dE: () => O
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk896170 = require("./896170.js"),
-  Chunk389723 = require("./389723.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk383329 = require("./383329.js"),
   Chunk183555 = require("./183555.jsx"),
@@ -16,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk810824 = require("./810824.js");
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +34,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,7 +47,7 @@ function m(e, t) {
   }), e
 }
 
-function b(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, l, i = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -66,132 +65,132 @@ function b(e, t) {
   return i
 }
 
-function y(e) {
+function b(e) {
   let {
     widgetType: t,
     widget: n,
-    onAddGame: y,
-    children: O
-  } = e, j = b(e, ["widgetType", "widget", "onAddGame", "children"]), x = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+    onAddGame: b,
+    children: y
+  } = e, O = m(e, ["widgetType", "widget", "onAddGame", "children"]), j = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
     trackUserProfileEditAction: h
-  } = (0, c.NJ)(), [v, _] = l.useState(""), A = l.useRef(""), {
+  } = (0, s.NJ)(), [x, v] = l.useState(""), _ = l.useRef(""), {
     options: I,
-    matchSorterOptions: w
-  } = (0, s.R)(), {
-    applicationIds: P,
-    onAddGame: E
-  } = (0, d.S)(t), S = l.useCallback(e => {
-    (0, u.ew)({
+    matchSorterOptions: A
+  } = (0, o.R)(), {
+    applicationIds: w,
+    onAddGame: P
+  } = (0, u.S)(t), E = l.useCallback(e => {
+    (0, c.ew)({
       widgetType: t,
       game: {
         applicationId: e
       }
-    }), o.ORC.announce(f.intl.string(f.t.q0U3DE)), h({
+    }), a.ORC.announce(d.intl.string(d.t.q0U3DE)), h({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
-    }), P.includes(e) && E(e), null == y || y()
-  }, [t, h, y, P, E]), T = l.useMemo(() => {
+    }), w.includes(e) && P(e), null == b || b()
+  }, [t, h, b, w, P]), S = l.useMemo(() => {
     let e = new Map(I.map(e => [String(e.value), {
         id: String(e.value),
         value: String(e.value),
         label: e.label,
-        disabled: x.has(e.value)
+        disabled: j.has(e.value)
       }])),
-      t = P.map(t => e.get(t)).filter(e => null != e && !e.disabled),
+      t = w.map(t => e.get(t)).filter(e => null != e && !e.disabled),
       n = [...e.values()].filter(e => !t.includes(e));
     return [...t, ...n]
-  }, [I, x, P]), N = l.useMemo(() => m(g({}, w), {
+  }, [I, j, w]), T = l.useMemo(() => g(p({}, A), {
     threshold: i.Ht.rankings.CONTAINS,
     keys: ["label"]
-  }), [w]), C = l.useCallback(e => "" === e.trim() ? T.length : (0, i.Ht)(T, e, N).length, [T, N]), D = l.useCallback(e => {
+  }), [A]), N = l.useCallback(e => "" === e.trim() ? S.length : (0, i.Ht)(S, e, T).length, [S, T]), C = l.useCallback(e => {
     let n = e.target.value;
-    "" === v.trim() && "" !== n.trim() && h({
+    "" === x.trim() && "" !== n.trim() && h({
       action: "GAME_SEARCH_SESSION_STARTED",
       widgetEdited: t,
       numCharacters: n.trim().length,
-      numResults: C(n)
-    }), _(n), A.current = n
-  }, [v, h, t, C]);
-  return (0, r.jsx)(o.YNO, m(g({}, j), {
+      numResults: N(n)
+    }), v(n), _.current = n
+  }, [x, h, t, N]);
+  return (0, r.jsx)(a.YNO, g(p({}, O), {
     onRequestOpen: () => {
       h({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
-      }), _(""), A.current = ""
+      }), v(""), _.current = ""
     },
     onRequestClose: () => {
       h({
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
-        numCharacters: A.current.trim().length,
-        numResults: C(A.current)
+        numCharacters: _.current.trim().length,
+        numResults: N(_.current)
       })
     },
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(o.lGe, {
-        className: p.C,
-        "aria-label": f.intl.string(f.t.uqw8wK),
-        children: (0, r.jsxs)(a.iS, {
+      return (0, r.jsx)(a.lGe, {
+        className: f.C,
+        "aria-label": d.intl.string(d.t.uqw8wK),
+        children: (0, r.jsxs)(a.iS7, {
           selectionMode: "single",
           value: null,
           onSelectionChange: e => {
-            null != e && (S(e), t())
+            null != e && (E(e), t())
           },
-          options: T,
-          matchSorterOptions: N,
-          children: [(0, r.jsx)(a.a3, {
-            label: f.intl.string(f.t["5h0QOP"]),
+          options: S,
+          matchSorterOptions: T,
+          children: [(0, r.jsx)(a.a32, {
+            label: d.intl.string(d.t["5h0QOP"]),
             hideLabel: true,
-            placeholder: f.intl.string(f.t["5h0QOP"]),
+            placeholder: d.intl.string(d.t["5h0QOP"]),
             autoFocus: true,
-            onQueryChange: D
-          }), (0, r.jsx)(a.X2, {
+            onQueryChange: C
+          }), (0, r.jsx)(a.X2W, {
             maxVisibleItems: 7
           })]
         })
       })
     },
-    children: e => O(e)
+    children: e => y(e)
   }))
 }
 
-function O(e) {
+function y(e) {
   let {
     disabled: t
-  } = e, n = b(e, ["disabled"]), i = l.useRef(null);
-  return (0, r.jsx)(y, m(g({
+  } = e, n = m(e, ["disabled"]), i = l.useRef(null);
+  return (0, r.jsx)(b, g(p({
     targetElementRef: i,
     position: "bottom",
     align: "center"
   }, n), {
-    children: e => (0, r.jsx)(o.Button, g({
+    children: e => (0, r.jsx)(a.Button, p({
       buttonRef: i,
       variant: "secondary",
       size: "sm",
-      icon: o.j96,
-      text: f.intl.string(f.t.SgTOtX),
+      icon: a.j96,
+      text: d.intl.string(d.t.SgTOtX),
       disabled: t
     }, e))
   }))
 }
 
-function j(e) {
+function O(e) {
   let t = l.useRef(null);
-  return (0, r.jsx)(y, m(g({
+  return (0, r.jsx)(b, g(p({
     targetElementRef: t,
     position: "right",
     align: "top"
   }, e), {
-    children: e => (0, r.jsx)(o.DUT, m(g({
+    children: e => (0, r.jsx)(a.DUT, g(p({
       innerRef: t,
-      className: p.c,
-      "aria-label": f.intl.string(f.t.SgTOtX)
+      className: f.c,
+      "aria-label": d.intl.string(d.t.SgTOtX)
     }, e), {
-      children: (0, r.jsx)(o.pa$, {
+      children: (0, r.jsx)(a.pa$, {
         color: "currentColor"
       })
     }))

@@ -1,7 +1,7 @@
 /** Chunk was on 94682 **/
 /** chunk id: 633098, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => x
 }), require("./896048.js"), require("./114821.js"), require("./339614.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,15 +22,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk892984 = require("./892984.js");
 
-function h(e) {
+function x(e) {
   let {
     className: t
   } = e, {
     trackUserProfileEditSaved: n
-  } = (0, f.NJ)(), [i, h] = l.useState(false), v = (0, s.yK)([m.A], () => {
+  } = (0, f.NJ)(), [i, x] = l.useState(false), v = (0, s.yK)([m.A], () => {
     var e;
     return null != (e = m.A.getSaveablePendingWidgets()) ? e : []
-  }), _ = (0, s.yK)([m.A], () => m.A.getChangedWidgets()), A = (0, s.yK)([m.A], () => m.A.getRemovedWidgets()), I = (0, s.bG)([m.A], () => m.A.hasUnsavedChanges()), w = (0, s.bG)([m.A], () => m.A.canSaveChanges()), P = (0, s.bG)([m.A], () => m.A.isSubmitting), E = (0, s.bG)([u.A], () => u.A.useReducedMotion), S = (0, c.pnh)(I, {
+  }), _ = (0, s.yK)([m.A], () => m.A.getChangedWidgets()), I = (0, s.yK)([m.A], () => m.A.getRemovedWidgets()), A = (0, s.bG)([m.A], () => m.A.hasUnsavedChanges()), w = (0, s.bG)([m.A], () => m.A.canSaveChanges()), P = (0, s.bG)([m.A], () => m.A.isSubmitting), E = (0, s.bG)([u.A], () => u.A.useReducedMotion), S = (0, c.pnh)(A, {
     from: {
       opacity: 0,
       y: 80 * !E
@@ -48,14 +48,14 @@ function h(e) {
     let e = null;
 
     function t() {
-      h(true), e = setTimeout(() => h(false), 500)
+      x(true), e = setTimeout(() => x(false), 500)
     }
     return d._.subscribe(O.jej.EMPHASIZE_NOTICE, t), () => {
       d._.unsubscribe(O.jej.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), l.useEffect(() => {
-    I && c.ORC.announce(j.intl.string(j.t["0Y/qkL"]))
-  }, [I]);
+    A && c.ORC.announce(j.intl.string(j.t["0Y/qkL"]))
+  }, [A]);
   let T = l.useCallback(async () => {
       if (m.A.canSaveChanges()) {
         try {
@@ -77,12 +77,12 @@ function h(e) {
             return e + (null != (n = null == (r = t.comment) ? true : r.length) ? n : 0)
           }, 0)), n(t)
         }
-        for (let e of A) n({
+        for (let e of I) n({
           widgetEdited: e.type,
           isWidgetRemoved: true
         })
       }
-    }, [v, _, A, n]),
+    }, [v, _, I, n]),
     N = l.useCallback(() => {
       g.A.clearPendingWidgets()
     }, []);
@@ -90,30 +90,30 @@ function h(e) {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: a()(x.Qs, {
-        [x.hO]: i
+      className: a()(h.Qs, {
+        [h.hO]: i
       }),
       "aria-label": j.intl.string(j.t["odDw+z"]),
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-strong",
-        className: x.iU,
+        className: h.iU,
         children: j.intl.string(j.t["/lQiX/"])
       }), (0, r.jsxs)("div", {
-        className: x.o1,
+        className: h.o1,
         children: [(0, r.jsx)(c.Button, {
           size: "sm",
           variant: "secondary",
           text: j.intl.string(j.t.yBZMsQ),
           onClick: N,
-          disabled: !I || P
+          disabled: !A || P
         }), (0, r.jsx)(c.Button, {
           size: "sm",
           variant: "primary",
           text: j.intl.string(j.t["R3BPH+"]),
           onClick: T,
           loading: P,
-          disabled: !w || !I || P
+          disabled: !w || !A || P
         })]
       })]
     })

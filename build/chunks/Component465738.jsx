@@ -2,7 +2,7 @@
 /** chunk id: 465738, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => O
 }), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,9 +12,8 @@ var Chunk627968 = require("./627968.js"),
   l = require.n(Chunk91871),
   Chunk735438 = require("./735438.js"),
   u = require.n(Chunk735438),
+  Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
-  Chunk389723 = require("./389723.jsx"),
-  Chunk332661 = require("./332661.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk676608 = require("./676608.js"),
   Chunk317525 = require("./317525.js"),
@@ -22,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk836836 = require("./836836.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,63 +30,63 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
-let v = function(e) {
+let O = function(e) {
   let {
     className: t,
     guild: n,
     roleStyle: a,
     roleFilter: s,
     onSelect: c,
-    onClose: b
-  } = e, v = (0, d.bG)([m.A], () => m.A.getSortedRoles(n.id)), A = (0, h.Ay)(n.id, null), I = i.useMemo(() => u()(v).filter(s).map(e => {
+    onClose: y
+  } = e, O = (0, f.bG)([h.A], () => h.A.getSortedRoles(n.id)), v = (0, _.Ay)(n.id, null), A = i.useMemo(() => u()(O).filter(s).map(e => {
     var t, n;
     return {
       id: e.id,
       value: e.id,
       label: e.name,
-      leading: "dot" === a ? (0, r.jsx)(_.WYI, {
-        className: y.b8,
-        color: null != (t = e.colorString) ? t : g.TpD,
-        colors: A ? e.colorStrings : null,
+      leading: "dot" === a ? (0, r.jsx)(p.WYI, {
+        className: E.b8,
+        color: null != (t = e.colorString) ? t : m.TpD,
+        colors: v ? e.colorStrings : null,
         background: false,
         tooltip: false
-      }) : (0, r.jsx)(_.RYH, {
-        className: y.kb,
-        color: null != (n = e.colorString) ? n : g.TpD,
-        colors: A ? e.colorStrings : null
+      }) : (0, r.jsx)(p.RYH, {
+        className: E.kb,
+        color: null != (n = e.colorString) ? n : m.TpD,
+        colors: v ? e.colorStrings : null
       })
     }
-  }).value(), [v, s, a, A]), S = i.useCallback((e, t) => "" === t.trim() ? e : e.filter(e => l()(t.toLowerCase(), e.label.toLowerCase())), []);
-  return (0, r.jsx)(_.lGe, {
-    className: o()(y.kL, t),
-    "aria-label": E.intl.string(E.t.ljnBlo),
-    children: (0, r.jsxs)(f.iS, {
+  }).value(), [O, s, a, v]), I = i.useCallback((e, t) => "" === t.trim() ? e : e.filter(e => l()(t.toLowerCase(), e.label.toLowerCase())), []);
+  return (0, r.jsx)(p.lGe, {
+    className: o()(E.kL, t),
+    "aria-label": g.intl.string(g.t.ljnBlo),
+    children: (0, r.jsxs)(p.iS7, {
       selectionMode: "single",
       value: true,
       onSelectionChange: e => {
-        null != e && (c(e), b())
+        null != e && (c(e), y())
       },
-      options: I,
-      customMatchSorter: S,
-      children: [(0, r.jsx)(f.a3, {
-        label: E.intl.string(E.t.ljnBlo),
+      options: A,
+      customMatchSorter: I,
+      children: [(0, r.jsx)(p.a32, {
+        label: g.intl.string(g.t.ljnBlo),
         hideLabel: true,
-        placeholder: E.intl.string(E.t.XPGZXP),
+        placeholder: g.intl.string(g.t.XPGZXP),
         autoFocus: true
-      }), (0, r.jsx)(f.X2, {
-        renderListItem: e => (0, r.jsx)(p.c, O({}, e))
+      }), (0, r.jsx)(p.X2W, {
+        renderListItem: e => (0, r.jsx)(d.c$x, b({}, e))
       })]
     })
   })

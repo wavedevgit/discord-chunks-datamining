@@ -54,7 +54,10 @@ let o = {
       CALENDAR_PREVIOUS_MONTH_LABEL: "Previous month",
       CALENDAR_NEXT_MONTH_LABEL: "Next month",
       INLINE_NOTICE_GENERIC_ERROR: "Something went wrong. Please try again later.",
-      STEP_INDICATOR: (e, t) => "Step ".concat(e, " of ").concat(t)
+      STEP_INDICATOR: (e, t) => "Step ".concat(e, " of ").concat(t),
+      SELECT_PLACEHOLDER: "Select...",
+      CLEAR_SELECTION: "Clear",
+      SELECTED_TAGS_HEADING: "Selected"
     },
     theme: "light",
     locale: "en-US",

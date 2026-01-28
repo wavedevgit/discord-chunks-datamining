@@ -36,7 +36,7 @@ let d = Chunk64700.memo(function(e) {
     showOverlayButton: i = true,
     isDragging: d = false,
     dragHandle: f
-  } = e, p = function(e, t) {
+  } = e, g = function(e, t) {
     if (null == e) return {};
     var r, n, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -59,11 +59,11 @@ let d = Chunk64700.memo(function(e) {
     showOverlayButton: i,
     isDragging: d,
     dragHandle: f
-  }, p)) : (0, s.$)(t) ? (0, n.jsx)(l.A, a({
+  }, g)) : (0, s.$)(t) ? (0, n.jsx)(l.A, a({
     item: t,
     cardSize: r,
     showOverlayButton: i,
     isDragging: d,
     dragHandle: f
-  }, p)) : null
+  }, g)) : null
 })

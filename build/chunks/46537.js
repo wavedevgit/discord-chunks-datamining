@@ -2,7 +2,7 @@
 /** chunk id: 46537, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   b: () => f,
-  u: () => p
+  u: () => g
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -65,17 +65,24 @@ function f(e, t) {
   }, [e, t])
 }
 
-function p(e, t) {
+function g(e, t) {
   let r = (0, i.yK)([o.default], () => e.map(e => o.default.getUser(e.gifterUserId)).filter(s.Vq), [e]),
-    u = n.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
-  return n.useMemo(() => new Set(e.map(e => e.skuProductLine)).size > 1 ? e.map(e => {
-    let r = t && e.isOwned && null != e.gifterUserId && null != u[e.gifterUserId];
-    return {
-      title: e.skuProductLine === a.EZt.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
-      renderIcon: e.skuProductLine === a.EZt.SOCIAL_LAYER_GAME_ITEM ? l.GM : true,
-      shouldShow: !r
-    }
-  }) : e.map(() => ({
-    shouldShow: false
-  })), [e, t, u])
+    c = n.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
+  return n.useMemo(() => {
+    let r = new Set(e.map(e => e.skuProductLine)).size > 1;
+    return e.map(e => {
+      let n = t && e.isOwned && null != e.gifterUserId && null != c[e.gifterUserId],
+        i = null != e.gifterUserId && null != c[e.gifterUserId] ? u.Ay.getName(c[e.gifterUserId]) : null;
+      return r || n ? {
+        title: n ? d.intl.formatToPlainString(d.t.TL4ktE, {
+          username: i
+        }) : e.skuProductLine === a.EZt.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
+        body: n ? e.skuName : true,
+        renderIcon: n ? l.uq : e.skuProductLine === a.EZt.SOCIAL_LAYER_GAME_ITEM ? l.GM : true,
+        shouldShow: true
+      } : {
+        shouldShow: false
+      }
+    })
+  }, [e, t, c])
 }
