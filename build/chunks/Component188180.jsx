@@ -94,35 +94,38 @@ function _(e) {
     node: t,
     visibleContent: n,
     hoisted: a = false
-  } = e, l = o.useMemo(() => t.layout[0], [t]), c = u.A.useField("currentPanelKey"), d = null != c && c === (null == l ? true : l.key), f = null != l ? () => u.A.setState({
-    requestedTargetKey: l.key,
-    showNavigationMobile: false
-  }) : t.onClick, _ = o.useMemo(() => {
-    if (!d || null == l || !(0, s.Iu)(l.layout)) return null;
+  } = e, l = o.useMemo(() => t.layout[0], [t]), c = u.A.useField("currentPanelKey"), d = null != c && c === (null == l ? true : l.key), f = o.useMemo(() => {
+    if (null == l || !(0, s.Iu)(l.layout)) return null;
     let e = l.layout.filter(e => null != e.useTitle || null != e.useSubnavLabel);
-    return e.length > 1 ? (0, r.jsx)(b.A, {
-      categories: e
-    }) : null
-  }, [d, l]), y = a ? "li" : "div";
+    return e.length > 1 ? e : null
+  }, [l]), _ = null != l ? () => {
+    let e = c === l.key && null != f ? f[0].key : l.key;
+    u.A.setState({
+      requestedTargetKey: e,
+      showNavigationMobile: false
+    })
+  } : t.onClick, y = o.useMemo(() => d && null != f ? (0, r.jsx)(b.A, {
+    categories: f
+  }) : null, [d, f]), m = a ? "li" : "div";
   return a ? (0, r.jsx)(p, {
-    tag: y,
+    tag: m,
     panelKey: null == l ? true : l.key,
-    onClick: f,
+    onClick: _,
     active: d,
     node: t,
     visibleContent: n,
-    children: _
+    children: y
   }) : (0, r.jsx)(i.tG, {
     id: t.key,
     children: e => (0, r.jsx)(p, {
-      tag: y,
+      tag: m,
       panelKey: null == l ? true : l.key,
-      onClick: f,
+      onClick: _,
       active: d,
       node: t,
       visibleContent: n,
       listItemProps: e,
-      children: _
+      children: y
     })
   })
 }
