@@ -68,9 +68,9 @@ function J() {
 }
 
 function Q() {
-  let e = (0, a.bG)([R.A], () => R.A.getForApplication(Y.tv));
+  let e = (0, a.bG)([R.A], () => R.A.getForApplication(B.tv));
   return s.useEffect(() => {
-    (0, g.LM)(Y.tv)
+    (0, g.LM)(B.tv)
   }, []), (0, i.jsx)(o.nVY, {
     label: W.intl.string(W.t["2GKrvn"]),
     description: W.intl.string(W.t.kNEjGm),
@@ -103,14 +103,14 @@ let q = function() {
     }),
     M = (0, a.bG)([G.A], () => {
       var e;
-      return Object.values(null != (e = G.A.getSubscriptions()) ? e : {}).filter(e => e.type === B.rzx.GUILD).filter(e => e.status !== B.Dmq.ENDED).length
+      return Object.values(null != (e = G.A.getSubscriptions()) ? e : {}).filter(e => e.type === Y.rzx.GUILD).filter(e => e.status !== Y.Dmq.ENDED).length
     }),
     J = (0, A.A)({
       forceFetch: true
     }),
     q = (0, w.d)(),
     Z = null !== e ? e.currentPeriodEnd : true,
-    $ = !(q && !(J.unactivatedUnits.length > 0)) && (J.fractionalState !== Y.xc.NONE || J.unactivatedUnits.length > 0);
+    $ = !(q && !(J.unactivatedUnits.length > 0)) && (J.fractionalState !== B.xc.NONE || J.unactivatedUnits.length > 0);
   return (s.useEffect(() => (c.h.wait(() => {
     (0, h.zS)(), d.hP(), (0, u.CD)(), d.$o()
   }), function() {
@@ -137,7 +137,7 @@ let q = function() {
           variant: "text-md/normal",
           className: K.JU,
           children: W.intl.format(W.t["7Zi06b"], {
-            helpCenterLink: L.A.getArticleURL(B.MVz.FRACTIONAL_PREMIUM_ABOUT)
+            helpCenterLink: L.A.getArticleURL(Y.MVz.FRACTIONAL_PREMIUM_ABOUT)
           })
         }), (0, i.jsx)(V.A, {
           className: K.fX,
@@ -151,7 +151,7 @@ let q = function() {
         children: [(0, i.jsx)(X, {}), (0, i.jsx)(S.A, {
           count: M,
           onClickManageSubscription: () => (0, y.openUserSettings)(C.X.SUBSCRIPTIONS_PANEL, {
-            section: B.nc_.SUBSCRIPTIONS,
+            section: Y.nc_.SUBSCRIPTIONS,
             subsection: F.nR
           })
         })]
@@ -160,9 +160,9 @@ let q = function() {
           count: k,
           onClickManageSubscription: () => {
             (0, y.openUserSettings)(C.X.SUBSCRIPTIONS_PANEL, {
-              section: B.nc_.SUBSCRIPTIONS,
+              section: Y.nc_.SUBSCRIPTIONS,
               subsection: F.PZ
-            }), D.default.track(B.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
+            }), D.default.track(Y.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
           }
         })]
       }), (0, i.jsx)(X, {}), null != e ? (0, i.jsx)(U.A, {

@@ -105,7 +105,7 @@ function U(e) {
     } = e,
     [I, G] = s.useState(T.friendSync),
     [U, H] = s.useState(T.visibility),
-    [Y, B] = s.useState(T.metadataVisibility),
+    [B, Y] = s.useState(T.metadataVisibility),
     [F, z] = s.useState(T.showActivity),
     [W, K] = s.useState(null),
     [J, Q] = s.useState(null),
@@ -114,7 +114,7 @@ function U(e) {
     ee = (0, j.ML)(T.type),
     et = m.A.get(ee);
   s.useEffect(() => {
-    G(T.friendSync), H(T.visibility), B(T.metadataVisibility), z(T.showActivity)
+    G(T.friendSync), H(T.visibility), Y(T.metadataVisibility), z(T.showActivity)
   }, [T]);
   let en = {
       inProgressVisibility: W,
@@ -129,7 +129,7 @@ function U(e) {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
     } = ei.current;
-    null != e && (H(e), x.A.setVisibility(T.type, T.id, e), K(null)), null != t && (B(t), x.A.setMetadataVisibility(T.type, T.id, t), Q(null))
+    null != e && (H(e), x.A.setVisibility(T.type, T.id, e), K(null)), null != t && (Y(t), x.A.setMetadataVisibility(T.type, T.id, t), Q(null))
   }, [T]), (0, i.jsxs)("div", {
     className: V.FI,
     children: [(l = m.A.get(T.type), r = m.A.get(ee), o = "1" === (null != (t = T.metadata) ? t : {})[k.pK.TWITTER_VERIFIED], h = null, l.type === L.fg2.TWITTER && o && (h = (0, i.jsx)(d.m, {
@@ -322,7 +322,7 @@ function U(e) {
       }
     })), (null == (n = m.A.get(T.type)) ? true : n.hasMetadata) === true && (E = (0, i.jsx)(g.dOG, {
       label: w.intl.string(w.t.FYKGsL),
-      checked: 1 === Y,
+      checked: 1 === B,
       onChange: function(e) {
         let {
           verified: t
@@ -334,7 +334,7 @@ function U(e) {
           });
           return
         }
-        B(n), x.A.setMetadataVisibility(T.type, T.id, n)
+        Y(n), x.A.setMetadataVisibility(T.type, T.id, n)
       },
       disabled: 1 !== U || null == T.metadata
     })), (0, i.jsxs)("div", {
@@ -383,11 +383,11 @@ function H() {
     description: w.intl.format(w.t["oYc+Gz"], {
       privacyPolicyUrl: L.X7G.PRIVACY
     }),
-    children: (0, i.jsx)(B, {})
+    children: (0, i.jsx)(Y, {})
   })
 }
 
-function Y(e) {
+function B(e) {
   let t = m.A.get(e);
   (0, O.A)({
     platformType: t.type
@@ -398,7 +398,7 @@ function Y(e) {
   })
 }
 
-function B() {
+function Y() {
   let e = (0, j.gn)();
   return (0, i.jsxs)("div", {
     className: V.lA,
@@ -417,7 +417,7 @@ function B() {
             onClick: function() {
               h.h.dispatch({
                 type: "CONNECTIONS_GRID_MODAL_SHOW",
-                onComplete: Y
+                onComplete: B
               })
             },
             "aria-label": w.intl.string(w.t.Zhcj9X),

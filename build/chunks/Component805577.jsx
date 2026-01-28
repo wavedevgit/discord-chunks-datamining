@@ -161,7 +161,7 @@ function en(e) {
             children: z.intl.format(z.t.DHpTjT, {
               onAppearanceClick() {
                 (0, M.openUserSettings)(L.X.APPEARANCE_PANEL, {
-                  section: Y.nc_.APPEARANCE
+                  section: B.nc_.APPEARANCE
                 })
               }
             })
@@ -181,7 +181,7 @@ function ei() {
           previewLink: "https://discord.com/accessibility"
         })
       })), {
-        state: Y.cmJ.SENT,
+        state: B.cmJ.SENT,
         id: "".concat(0)
       }));
       return e.colorString = "green", e
@@ -198,7 +198,7 @@ function ei() {
           text: z.intl.string(z.t["2RHHgz"])
         }), (0, i.jsx)("div", {
           className: K.hD,
-          children: [Y.clD.ONLINE, Y.clD.DND, Y.clD.IDLE].map(e => (0, i.jsx)(c.JsQ, {
+          children: [B.clD.ONLINE, B.clD.DND, B.clD.IDLE].map(e => (0, i.jsx)(c.JsQ, {
             "aria-label": z.intl.string(z.t.lqaIxI),
             src: J,
             size: c._3J.SIZE_32,
@@ -268,7 +268,7 @@ function er() {
       description: z.intl.string(z.t["0PbE/H"]),
       "aria-labelledby": q,
       "aria-describedby": Z,
-      markers: Y.hH7.SATURATION_INCREMENTS,
+      markers: B.hH7.SATURATION_INCREMENTS,
       equidistant: true,
       stickToMarkers: true,
       maxValue: 1,
@@ -376,7 +376,7 @@ function eu() {
     }),
     checked: e,
     onChange: function(e) {
-      (0, g.Dm)(e), P.default.track(Y.HAw.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
+      (0, g.Dm)(e), P.default.track(B.HAw.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
         enabled: e
       })
     }
@@ -394,7 +394,7 @@ function eg() {
         description: z.intl.format(z.t.u6UjrL, {
           onThemeClick() {
             (0, M.openUserSettings)(L.X.APPEARANCE_PANEL, {
-              section: Y.nc_.APPEARANCE
+              section: B.nc_.APPEARANCE
             })
           }
         }),
@@ -415,7 +415,7 @@ function eh() {
     null != l.current && (clearTimeout(l.current), l.current = null), t !== e && (l.current = setTimeout(() => (0, g.D3)(t), 150))
   }, [t, e]);
   let r = z.intl.format(z.t.GwEVE2, {
-    learnMoreLink: G.A.getArticleURL(Y.MVz.FORCED_COLORS)
+    learnMoreLink: G.A.getArticleURL(B.MVz.FORCED_COLORS)
   });
   return (0, i.jsxs)(c.nVY, {
     label: z.intl.string(z.t["TYyfO/"]),
@@ -462,7 +462,7 @@ function ex() {
     children: (0, i.jsxs)(c.nVY, {
       label: z.intl.string(z.t.e3TR1b),
       description: z.intl.format(z.t["2l9U2j"], {
-        helpdeskArticle: G.A.getArticleURL(Y.MVz.REDUCED_MOTION)
+        helpdeskArticle: G.A.getArticleURL(B.MVz.REDUCED_MOTION)
       }),
       children: [(0, i.jsx)(c.dOG, {
         label: z.intl.string(z.t["+Dx+HD"]),
@@ -510,14 +510,14 @@ function ep() {
     description: null != t ? (0, y.A)(t) : z.intl.string(z.t.GRa6U7),
     options: [{
       name: z.intl.string(z.t["Xp+X2U"]),
-      value: B.BJ.ALWAYS_ANIMATE
+      value: Y.BJ.ALWAYS_ANIMATE
     }, {
       name: z.intl.string(z.t.IlLT7e),
       desc: z.intl.string(z.t.bIW9Tl),
-      value: B.BJ.ANIMATE_ON_INTERACTION
+      value: Y.BJ.ANIMATE_ON_INTERACTION
     }, {
       name: z.intl.string(z.t.IGu8x3),
-      value: B.BJ.NEVER_ANIMATE
+      value: Y.BJ.NEVER_ANIMATE
     }],
     onChange: e => n(e),
     value: e
@@ -546,10 +546,10 @@ function eA() {
           description: z.intl.string(z.t.Q7wgHc),
           checked: t,
           onChange: e => {
-            P.default.track(Y.HAw.LEGACY_CHAT_INPUT_TOGGLED, {
+            P.default.track(B.HAw.LEGACY_CHAT_INPUT_TOGGLED, {
               enabled: e,
               location: {
-                section: Y.JJy.SETTINGS_ACCESSIBILITY
+                section: B.JJy.SETTINGS_ACCESSIBILITY
               }
             }), D.D_.updateSetting(e)
           }

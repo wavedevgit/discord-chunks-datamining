@@ -736,7 +736,7 @@ function ec() {
     disableAppCollectionsCache: k.default.disableAppCollectionsCache,
     preventPopoutClose: k.default.preventPopoutClose,
     logKeyboardMismatches: k.default.logKeyboardMismatches
-  })), c = (0, u.bG)([N.Ay], () => N.Ay.get("idle_status_indicator")), d = (0, R.A)("go_back_to_regular_input"), g = Y.HZ.useSetting();
+  })), c = (0, u.bG)([N.Ay], () => N.Ay.get("idle_status_indicator")), d = (0, R.A)("go_back_to_regular_input"), g = B.HZ.useSetting();
   return (0, i.jsxs)(p.nVY, {
     label: "Developer Flags",
     children: [(0, i.jsx)(L.x, {
@@ -765,7 +765,7 @@ function ec() {
         label: "Ads auto-targeting",
         description: "Make user targetable for all active ads",
         checked: g,
-        onChange: e => Y.HZ.updateSetting(e)
+        onChange: e => B.HZ.updateSetting(e)
       })
     }), (0, i.jsx)(L.x, {
       setting: K.H.DEVELOPER_OPTIONS_SOURCE_MAPS,
@@ -1110,7 +1110,7 @@ function ex() {
           text: "Reset Changelog",
           onClick: () => {
             let e = new Date("2018-01-01");
-            Y.pK.updateSetting(M.default.fromTimestamp(e.getTime())), h.w.set("lastChangeLogDate", e)
+            B.pK.updateSetting(M.default.fromTimestamp(e.getTime())), h.w.set("lastChangeLogDate", e)
           }
         })
       })]
@@ -1123,7 +1123,7 @@ function ep() {
     setting: K.H.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE,
     children: (0, i.jsx)(p.nVY, {
       label: "Client-Side Overrides",
-      children: (0, i.jsx)(B.M, {})
+      children: (0, i.jsx)(Y.M, {})
     })
   })
 }

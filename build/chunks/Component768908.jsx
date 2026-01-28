@@ -3,8 +3,8 @@
 require.d(exports, {
   Ay: () => z,
   T: () => F,
-  Wx: () => B,
-  cH: () => Y
+  Wx: () => Y,
+  cH: () => B
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -128,7 +128,7 @@ function V(e) {
     isCurrentGameDetectionEnabled: x.Ay.isDetectionEnabled(v)
   })), G = (0, a.bG)([x.Ay], () => x.Ay.getVisibleGame()), [L, w] = s.useState(false), M = s.useMemo(() => (0, j.n1)(v) ? E ? v.gameName : N.intl.formatToPlainString(N.t.G6BGdx, {
     subgameName: v.gameName
-  }) : v.name, [v, E]), [U, H] = s.useState(null != M ? M : "???"), Y = r()(P.tR, {
+  }) : v.name, [v, E]), [U, H] = s.useState(null != M ? M : "???"), B = r()(P.tR, {
     [I.LO]: !l,
     [I.Rw]: l,
     [I.FB]: null != v && l,
@@ -136,7 +136,7 @@ function V(e) {
     [I.fG]: null != m && m.length > 0
   });
 
-  function B() {
+  function Y() {
     null != m && m.length > 0 && _ ? (0, d.mMO)(async () => {
       let {
         Modal: e
@@ -166,7 +166,7 @@ function V(e) {
     z = null != f && f.id === (null == G ? true : G.id) || F || null != m && m.some(e => e.id === (null == G ? true : G.id));
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
-      className: Y,
+      className: B,
       children: [(0, i.jsxs)("div", {
         className: r()(I.$K, P.Vd),
         children: [v.verified && !p ? (0, i.jsxs)("div", {
@@ -274,7 +274,7 @@ function V(e) {
             children: T ? (0, i.jsx)(d.DUT, {
               "aria-label": N.intl.string(N.t.QmitzM),
               className: I.ym,
-              onClick: B,
+              onClick: Y,
               children: t
             }) : t
           })
@@ -373,7 +373,7 @@ let H = (0, Chunk583613.L_)(function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
     return new Set(t.map(e => e.exePath))
   }),
-  Y = () => {
+  B = () => {
     let e = (0, a.yK)([x.Ay], () => x.Ay.getGamesSeen(false)),
       {
         runningGame: t,
@@ -391,7 +391,7 @@ let H = (0, Chunk583613.L_)(function() {
       subgames: t.id === m.a7 ? l : true
     }, (0, x.Es)(t)) : (0, i.jsx)(M, {})
   },
-  B = () => {
+  Y = () => {
     let e = s.useRef(null);
     return (0, i.jsxs)("div", {
       className: r()(I.ax, G.Gf),
@@ -456,7 +456,7 @@ let H = (0, Chunk583613.L_)(function() {
     return (0, i.jsxs)(T.A, {
       title: n ? N.intl.string(N.t.AVDyEj) : null,
       className: t,
-      children: [(0, i.jsx)(Y, {}), (0, i.jsx)(B, {}), (0, i.jsx)(d.cGx, {
+      children: [(0, i.jsx)(B, {}), (0, i.jsx)(Y, {}), (0, i.jsx)(d.cGx, {
         gap: 20
       }), (0, i.jsx)(F, {})]
     })

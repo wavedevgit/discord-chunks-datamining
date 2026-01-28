@@ -9,7 +9,7 @@ require.d(exports, {
   Gj: () => ek,
   Gk: () => eV,
   PP: () => eT,
-  VQ: () => eY,
+  VQ: () => eB,
   fE: () => eL,
   nR: () => eG,
   ze: () => eM
@@ -305,15 +305,15 @@ function eG() {
           break;
         case R.OverlayToggledClientSettingType.OOP:
           O.A.setEnabled(_, e), (0, R.Q3)(e, R.OverlayToggledClientSettingType.OOP, null != (i = l.id) ? i : null)
-      }(r || a) && (0, Y.L)(r ? R.OverlayToggledClientSettingType.LEGACY_GAME : R.OverlayToggledClientSettingType.OOP_GAME, null != (s = l.id) ? s : null)
+      }(r || a) && (0, B.L)(r ? R.OverlayToggledClientSettingType.LEGACY_GAME : R.OverlayToggledClientSettingType.OOP_GAME, null != (s = l.id) ? s : null)
     },
     w = C && y,
     M = !_ && !D,
     U = !x && !_ && b && !C,
     H = !b && !D && x && !y,
-    B = (null == c ? true : c.overlayMethod) === L.Ue.Disabled,
-    F = (null == c ? true : c.state) === L.AR.OVERLAY_RENDERING && !B,
-    z = (null == c ? true : c.state) != null && e_.has(c.state) && !B,
+    Y = (null == c ? true : c.overlayMethod) === L.Ue.Disabled,
+    F = (null == c ? true : c.state) === L.AR.OVERLAY_RENDERING && !Y,
+    z = (null == c ? true : c.state) != null && e_.has(c.state) && !Y,
     W = (null == c ? true : c.overlayMethod) === L.Ue.OutOfProcess,
     K = (null == c ? true : c.overlayMethod) === L.Ue.OutOfProcessLimitedInteraction,
     J = (null == c ? true : c.overlayMethod) === L.Ue.Hook,
@@ -391,7 +391,7 @@ function eG() {
           return [em.intl.string(em.t["2Xhy9k"]), null];
         case null == c:
           return [em.intl.string(em.t.vwHPRi), null];
-        case B: {
+        case Y: {
           let e = (null == c ? true : c.fullscreenType) === E.aI.FULLSCREEN ? em.intl.string(em.t.mJmbeC) : null;
           return [em.intl.string(em.t.VPW4XY), e]
         }
@@ -464,7 +464,7 @@ function eG() {
             let s = null;
             if (n ? s = "game" === t ? R.OverlayToggledClientSettingType.LEGACY_GAME : R.OverlayToggledClientSettingType.LEGACY : i && (s = "game" === t ? R.OverlayToggledClientSettingType.OOP_GAME : R.OverlayToggledClientSettingType.OOP), null != s) {
               var r;
-              (0, Y.L)(s, null != (r = l.id) ? r : null)
+              (0, B.L)(s, null != (r = l.id) ? r : null)
             }
           })(e, ((e, t) => {
             let n = !t && e,
@@ -563,7 +563,7 @@ function eD(e) {
           let n = !e && x;
           if (p(e), a(e, d, u), n) {
             var i, s;
-            (0, Y.L)(o, null != (i = null != (s = d.id) ? s : null == t ? true : t.id) ? i : null)
+            (0, B.L)(o, null != (i = null != (s = d.id) ? s : null == t ? true : t.id) ? i : null)
           }
         })(e)
       }), (0, i.jsx)("div", {
@@ -581,7 +581,7 @@ function eL() {
     var t, i;
     O.A.setEnabled(e, l);
     let s = null != (t = null == (i = N.Ay.getCurrentGameForAnalytics()) ? true : i.id) ? t : null;
-    (0, R.Q3)(e, R.OverlayToggledClientSettingType.LEGACY, s), !e && n && (0, Y.L)(R.OverlayToggledClientSettingType.LEGACY, s)
+    (0, R.Q3)(e, R.OverlayToggledClientSettingType.LEGACY, s), !e && n && (0, B.L)(R.OverlayToggledClientSettingType.LEGACY, s)
   }, d = (e, t, n) => {
     let {
       enabledOOP: i
@@ -654,7 +654,7 @@ function ek() {
     let s = !e && n;
     O.A.setEnabled(l, e);
     let r = null != (t = null == (i = N.Ay.getCurrentGameForAnalytics()) ? true : i.id) ? t : null;
-    (0, R.Q3)(e, R.OverlayToggledClientSettingType.OOP, r), s && (0, Y.L)(R.OverlayToggledClientSettingType.OOP, r)
+    (0, R.Q3)(e, R.OverlayToggledClientSettingType.OOP, r), s && (0, B.L)(R.OverlayToggledClientSettingType.OOP, r)
   }, d = (e, t, n) => {
     let {
       enabledLegacy: i
@@ -894,7 +894,7 @@ function eH(e) {
   }
 }
 
-function eY(e) {
+function eB(e) {
   var t, n;
   let l, {
       isLegacySettings: a = false
@@ -970,7 +970,7 @@ function eY(e) {
   })
 }
 
-function eB() {
+function eY() {
   var e, t;
   let {
     avatarSizeMode: n,
@@ -1022,7 +1022,7 @@ function eB() {
       value: s,
       selectionMode: "single",
       fullWidth: true
-    }), (0, i.jsx)(eY, {
+    }), (0, i.jsx)(eB, {
       isLegacySettings: true
     }), (0, i.jsx)(A.l6P, {
       label: em.intl.string(em.t.swsWWC),
@@ -1151,7 +1151,7 @@ function ez(e) {
         checked: r || a,
         disabled: a,
         onChange: e => {
-          null != n && (0, B.x8)(n.id, e)
+          null != n && (0, Y.x8)(n.id, e)
         }
       })]
     }), (0, i.jsxs)("div", {
@@ -1204,7 +1204,7 @@ function eW() {
       })]
     }), (0, i.jsxs)(A.D0$, {
       label: em.intl.string(em.t.r1TZfh),
-      children: [(0, i.jsx)(eB, {}), (0, i.jsx)("div", {
+      children: [(0, i.jsx)(eY, {}), (0, i.jsx)("div", {
         className: ej.Ri
       })]
     }), (0, i.jsx)(eU, {})]

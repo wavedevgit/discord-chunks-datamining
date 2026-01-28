@@ -289,9 +289,9 @@ function Z() {
 }
 class $ extends Chunk64700.PureComponent {
   handleDesktopChange(e) {
-    let t = e ? Y.nRU.ALL : Y.nRU.NEVER;
-    if (t !== Y.nRU.NEVER) D.A.requestPermission(e => {
-      let t = e ? Y.kCE.ENABLED : Y.kCE.BLOCKED;
+    let t = e ? B.nRU.ALL : B.nRU.NEVER;
+    if (t !== B.nRU.NEVER) D.A.requestPermission(e => {
+      let t = e ? B.kCE.ENABLED : B.kCE.BLOCKED;
       u.default.setPermissionsState(t, "UserSettingsModal")
     });
     else u.default.setDesktopType(t)
@@ -326,7 +326,7 @@ class $ extends Chunk64700.PureComponent {
           setting: H.H.NOTIFICATIONS_ENABLE_DESKTOP,
           children: (0, i.jsx)(d.dOG, {
             label: z.intl.string(z.t["/0WCll"]),
-            checked: e !== Y.nRU.NEVER && !c,
+            checked: e !== B.nRU.NEVER && !c,
             description: c ? z.intl.string(z.t.cIRG0s) : z.intl.string(z.t.wF9ih3),
             onChange: this.handleDesktopChange,
             disabled: c
@@ -379,13 +379,13 @@ class $ extends Chunk64700.PureComponent {
       if (!h.$j) return null;
       let e = [{
         name: z.intl.string(z.t.B1AGeJ),
-        value: Y.aVn.ALL_CHANNELS
+        value: B.aVn.ALL_CHANNELS
       }, {
         name: z.intl.string(z.t.uM2rNr),
-        value: Y.aVn.SELECTED_CHANNEL
+        value: B.aVn.SELECTED_CHANNEL
       }, {
         name: z.intl.string(z.t.DYO5Oi),
-        value: Y.aVn.NEVER
+        value: B.aVn.NEVER
       }];
       return (0, i.jsxs)(C.x, {
         setting: H.H.NOTIFICATIONS_TEXT_TO_SPEECH,
@@ -432,7 +432,7 @@ function et() {
       description: "Increments the mention count when receiving a message in a channel set to 'All Messages'",
       checked: t,
       onChange: e => {
-        g.A.setAccountFlag(B.i.MENTION_ON_ALL_MESSAGES, e)
+        g.A.setAccountFlag(Y.i.MENTION_ON_ALL_MESSAGES, e)
       }
     })
   }) : null
@@ -455,12 +455,12 @@ function en() {
   }) : null
 }
 async function ei(e) {
-  e(true), await g.A.setAccountFlag(B.i.USE_NEW_NOTIFICATIONS, true), e(false)
+  e(true), await g.A.setAccountFlag(Y.i.USE_NEW_NOTIFICATIONS, true), e(false)
 }
 async function es(e) {
-  e(true), c.w.set("turnedOffNewNotifications", true), R.default.track(Y.HAw.NOTIFICATION_MIGRATION_OPTOUT, {
+  e(true), c.w.set("turnedOffNewNotifications", true), R.default.track(B.HAw.NOTIFICATION_MIGRATION_OPTOUT, {
     num_guilds_with_new_setting: I.A.getGuildsArray().filter(e => P.Ay.resolveGuildUnreadSetting(e) === F.e.ONLY_MENTIONS).length
-  }), await g.A.setAccountFlag(B.i.USE_NEW_NOTIFICATIONS, false), e(false)
+  }), await g.A.setAccountFlag(Y.i.USE_NEW_NOTIFICATIONS, false), e(false)
 }
 
 function el(e) {

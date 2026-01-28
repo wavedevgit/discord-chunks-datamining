@@ -48,7 +48,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk944255 = require("./944255.js"),
   Chunk473169 = require("./473169.js");
 
-function Y(e, t, n) {
+function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -57,14 +57,14 @@ function Y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function B(e) {
+function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      Y(e, t, n[t])
+      B(e, t, n[t])
     })
   }
   return e
@@ -91,31 +91,31 @@ let z = {
   J = "1337",
   Q = e => {
     let t = 0;
-    return [(0, O.rh)(F(B({}, (0, S.Ay)({
+    return [(0, O.rh)(F(Y({}, (0, S.Ay)({
       channelId: J,
       content: M.intl.string(M.t.oZxkEq)
     })), {
       state: w.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, O.rh)(F(B({}, (0, S.Ay)({
+    })), (0, O.rh)(F(Y({}, (0, S.Ay)({
       channelId: J,
       content: (0, c.Mw)(e) ? M.intl.string(M.t["WGb/v7"]) : M.intl.string(M.t["62m4mz"])
     })), {
       state: w.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, O.rh)(F(B({}, (0, S.Ay)({
+    })), (0, O.rh)(F(Y({}, (0, S.Ay)({
       channelId: J,
       content: M.intl.string(M.t.a0Byo5)
     })), {
       state: w.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, O.rh)(F(B({}, (0, S.Ay)({
+    })), (0, O.rh)(F(Y({}, (0, S.Ay)({
       channelId: J,
       content: M.intl.string(M.t.bmwEWJ)
     })), {
       state: w.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, O.rh)(F(B({}, (0, S.Ay)({
+    })), (0, O.rh)(F(Y({}, (0, S.Ay)({
       channelId: J,
       content: M.intl.string(M.t["hK9QW/"])
     })), {
@@ -356,20 +356,20 @@ class ee extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), Y(this, "darkMessages", Q(w.NJ8.DARK)), Y(this, "lightMessages", Q(w.NJ8.LIGHT)), Y(this, "handleDisplayCompactAvatarsChanged", e => {
+    super(...e), B(this, "darkMessages", Q(w.NJ8.DARK)), B(this, "lightMessages", Q(w.NJ8.LIGHT)), B(this, "handleDisplayCompactAvatarsChanged", e => {
       u.Ay.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
-    }), Y(this, "handleDesktopRefreshEnabledChanged", e => {
+    }), B(this, "handleDesktopRefreshEnabledChanged", e => {
       u.Ay.updatedUnsyncedSettings({
         disableVisualRefresh: !e
       })
-    }), Y(this, "handleMessageDisplayModeChange", e => {
+    }), B(this, "handleMessageDisplayModeChange", e => {
       let {
         value: t
       } = e;
       _.hH.updateSetting(t === z.COMPACT), (0, x.AC)()
-    }), Y(this, "handleUIDensityChange", e => {
+    }), B(this, "handleUIDensityChange", e => {
       let {
         value: t
       } = e;
@@ -402,7 +402,7 @@ function et() {
         gradientPreset: m.A.gradientPreset
       }
     });
-  return (0, i.jsx)(ee, B({
+  return (0, i.jsx)(ee, Y({
     messageDisplayCompact: e,
     hideSimpleEmbedContent: t && n,
     clientTheme: s,

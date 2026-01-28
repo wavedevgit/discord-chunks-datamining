@@ -366,7 +366,8 @@ class M extends Chunk64700.PureComponent {
               }), (0, i.jsx)("div", {
                 className: G.DM,
                 children: (0, i.jsx)(d.e7I, {
-                  shortcut: h.z.binds["0"]
+                  shortcut: h.z.binds["0"],
+                  className: G.LE
                 })
               })]
             })
@@ -391,7 +392,8 @@ class M extends Chunk64700.PureComponent {
                       }), (0, i.jsx)("div", {
                         className: G.DM,
                         children: e.binds.map(e => (0, i.jsx)(d.e7I, {
-                          shortcut: e
+                          shortcut: e,
+                          className: G.LE
                         }, e))
                       })]
                     })]
