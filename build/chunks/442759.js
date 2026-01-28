@@ -43,18 +43,14 @@ class s {
     o(this, "itemsByTypes", true), this.itemsByTypes = this.sortByTypes(e)
   }
 }
-let l = e => {
-    let {
-      firstProfileEffect: t,
-      firstAvatarDecoration: n,
-      firstNameplate: i
-    } = r.useMemo(() => new s(e.items), [e]);
+let l = e => r.useMemo(() => {
+    let t = new s(e.items);
     return {
-      firstProfileEffect: t,
-      firstAvatarDecoration: n,
-      firstNameplate: i
+      firstProfileEffect: t.firstProfileEffect,
+      firstAvatarDecoration: t.firstAvatarDecoration,
+      firstNameplate: t.firstNameplate
     }
-  },
+  }, [e]),
   c = e => {
     let t = a.intl.string(a.t["7v0T9P"]),
       n = a.intl.string(a.t.wR5wOo),

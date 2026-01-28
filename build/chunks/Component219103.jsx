@@ -18,34 +18,34 @@ var Chunk503698 = require("./503698.js"),
 let p = 5,
   _ = e => {
     let {
-      price: t,
-      nitroIconType: n,
-      nitroIconSize: i = "md",
-      className: a,
-      discountOfferAmount: o,
-      discount: s = c.rr,
-      variant: l = "text-md/semibold"
+      priceAmount: t,
+      priceCurrency: n,
+      nitroIconType: i,
+      nitroIconSize: a = "md",
+      className: o,
+      discountOfferAmount: s,
+      discount: l = c.rr,
+      variant: d = "text-md/semibold"
     } = e;
-    return t.currency === u.Yr.DISCORD_ORB ? (0, r.jsx)(m, {
-      orbAmount: t.amount,
-      className: a,
-      variant: l
+    return n === u.Yr.DISCORD_ORB ? (0, r.jsx)(m, {
+      orbAmount: t,
+      className: o,
+      variant: d
     }) : (0, r.jsx)(h, {
-      price: t,
-      nitroIconType: n,
-      nitroIconSize: i,
-      className: a,
-      discountOfferAmount: o,
-      discount: s,
-      variant: l
+      priceAmount: t,
+      priceCurrency: n,
+      nitroIconType: i,
+      nitroIconSize: a,
+      className: o,
+      discountOfferAmount: s,
+      discount: l,
+      variant: d
     })
   },
   h = e => {
     let {
-      price: {
-        amount: t,
-        currency: n
-      },
+      priceAmount: t,
+      priceCurrency: n,
       nitroIconType: i,
       nitroIconSize: u = "md",
       className: _,

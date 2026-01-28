@@ -1,8 +1,8 @@
 /** Chunk was on 37372 **/
 /** chunk id: 897288, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => h
-}), require("./638769.js");
+  A: () => O
+}), require("./896048.js"), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
@@ -12,31 +12,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk837381 = require("./837381.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk417454 = require("./417454.jsx"),
-  Chunk1659 = require("./1659.js"),
-  Chunk9865 = require("./9865.js"),
+  Chunk7864 = require("./7864.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk420206 = require("./420206.js");
 
-function h(e) {
+function O(e) {
   let {
     guild: t,
     roles: r,
     className: i
-  } = e, h = l.useMemo(() => "invite-roles-".concat((0, s.A)()), []), S = (0, a.Ay)({
-    id: h,
+  } = e, O = l.useMemo(() => "invite-roles-".concat((0, s.A)()), []), h = (0, a.Ay)({
+    id: O,
     isEnabled: true,
-    scrollToStart: p.js$,
-    scrollToEnd: p.js$,
+    scrollToStart: f.js$,
+    scrollToEnd: f.js$,
     wrap: true
-  }), g = l.useMemo(() => null == t || null == r || 0 === r.length ? [] : r.map(e => (0, f.Wj)(t.id, e)).sort(E.m), [t, r]);
-  if (null == t || 0 === g.length) return null;
-  let y = g.length,
-    C = _.intl.formatToPlainString(_.t.PCs0oo, {
-      numRoles: y
+  }), S = l.useMemo(() => null == t || null == r || 0 === r.length ? [] : [...r].sort(E.d6).map(e => (0, E.ZW)(t.id, e)), [t, r]);
+  if (null == t || 0 === S.length) return null;
+  let g = S.length,
+    y = p.intl.formatToPlainString(p.t.PCs0oo, {
+      numRoles: g
     });
   return (0, n.jsx)(c.hD, {
-    navigator: S,
+    navigator: h,
     children: (0, n.jsx)(c.PR, {
       children: e => {
         var r, l;
@@ -60,12 +59,12 @@ function h(e) {
           return i
         }(e, ["ref"]);
         return (0, n.jsxs)("div", {
-          className: o()(O.zr, i),
+          className: o()(_.zr, i),
           children: [(0, n.jsx)(u.Text, {
             variant: "text-sm/semibold",
             color: "text-default",
-            className: O.Ed,
-            children: _.intl.string(_.t.stcSfI)
+            className: _.Ed,
+            children: p.intl.string(p.t.stcSfI)
           }), (0, n.jsx)("div", (r = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
@@ -84,12 +83,12 @@ function h(e) {
             }
             return e
           }({
-            className: O.Ei,
-            "aria-label": C,
+            className: _.Ei,
+            "aria-label": y,
             ref: s
           }, a), l = l = {
-            children: g.map(e => (0, n.jsx)(d.b_, {
-              className: O.Yq,
+            children: S.map(e => (0, n.jsx)(d.b_, {
+              className: _.Yq,
               role: e,
               canRemove: false,
               onRemove: () => {},

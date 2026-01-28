@@ -83,7 +83,8 @@ let O = e => {
       lineClamp: 1,
       children: y.intl.string(y.t.rt69oo)
     }) : 0 === D.length ? null : (0, r.jsx)(h.x, {
-      price: D[0],
+      priceAmount: D[0].amount,
+      priceCurrency: D[0].currency,
       discount: w,
       nitroIconType: O ? "default" : true,
       nitroIconSize: "sm",

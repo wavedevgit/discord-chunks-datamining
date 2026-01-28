@@ -152,7 +152,7 @@ let H = Chunk64700.forwardRef(function(e, t) {
       guild: D
     }),
     w = (0, f.bG)([g.A], () => g.A.roleStyle),
-    F = (0, R.X_)(b, S, S.colorStrings),
+    F = (0, R.X_)(b, true, S.colorStrings),
     N = (null == (a = S.tags) ? true : a.guild_connections) === null,
     K = l.useCallback(e => {
       (0, O.L3)(e, async () => {

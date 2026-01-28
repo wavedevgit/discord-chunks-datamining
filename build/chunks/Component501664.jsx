@@ -29,7 +29,8 @@ function d(e) {
   if (g.amount <= 0) return (0, r.jsx)("div", {
     className: i()(u.kG, p),
     children: (0, r.jsx)(o.x, {
-      price: g
+      priceAmount: g.amount,
+      priceCurrency: g.currency
     })
   });
   let b = (0, a.yt)(l, c.lid.PREMIUM_TIER_2),
@@ -62,14 +63,16 @@ function d(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t) : g,
-    A = d && null != b;
+    A = d && null != b,
+    _ = A ? b : j;
   return (0, r.jsxs)("div", {
     className: i()(u.kG, p),
     children: [x ? null : (0, r.jsx)(s.a, {
       price: j,
       className: u.q9
     }), (0, r.jsx)(o.x, {
-      price: A ? b : j,
+      priceAmount: _.amount,
+      priceCurrency: _.currency,
       discount: m,
       className: i()({
         [u.q9]: null == f

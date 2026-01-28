@@ -7,7 +7,6 @@ require.d(exports, {
   Br: () => v,
   Bs: () => es,
   CE: () => el,
-  Ee: () => ee,
   G0: () => b,
   H1: () => en,
   HF: () => Q,
@@ -26,6 +25,7 @@ require.d(exports, {
   hU: () => W,
   l8: () => I,
   oj: () => $,
+  pA: () => ee,
   ps: () => k,
   rr: () => C,
   sz: () => V,
@@ -219,14 +219,19 @@ let b = e => (null == e ? true : e.premiumType) != null,
       paymentSourceId: o,
       selectedSkuId: s,
       skuPricePreviewsById: l,
-      skusById: c,
-      formatPrice: u
-    } = e, d = null != i ? i : null != o && null != s ? null == (t = l[s]) ? true : t[a.B] : null, f = null == d || null == (r = d.invoice_items) || null == (n = r[0]) ? true : n.unit_price, p = null != f ? u(f.amount, f.currency) : true;
-    if (null == p && null != s) {
+      skusById: c
+    } = e, u = null != i ? i : null != o && null != s ? null == (t = l[s]) ? true : t[a.B] : null, d = null == u || null == (r = u.invoice_items) || null == (n = r[0]) ? true : n.unit_price, f = null != d ? {
+      amount: d.amount,
+      currency: d.currency
+    } : true;
+    if (null == f && null != s) {
       let e = c[s];
-      (null == e ? true : e.price) != null && (p = u(e.price.amount, e.price.currency))
+      (null == e ? true : e.price) != null && (f = {
+        amount: e.price.amount,
+        currency: e.price.currency
+      })
     }
-    return p
+    return f
   },
   et = (Chunk818348.Yr.KZT, Chunk818348.Yr.NGN, Chunk818348.Yr.EGP, (e, t, n) => {
     if (J(e)) return S(e);

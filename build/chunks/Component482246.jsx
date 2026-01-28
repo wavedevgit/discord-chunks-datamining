@@ -68,29 +68,28 @@ function R(e, t) {
   }), e
 }
 let P = e => {
-  var t, n;
   let {
-    skuId: a,
-    isSelected: s,
-    pricePreview: C,
-    onSelect: w,
-    shouldDisplayHeader: P = false,
-    className: D,
-    previewHeaderClassName: L,
-    hideProfilePreview: x = false,
-    fallbackPrice: M
+    skuId: t,
+    isSelected: n,
+    priceAmount: a,
+    priceCurrency: s,
+    onSelect: C,
+    shouldDisplayHeader: w = false,
+    className: P,
+    previewHeaderClassName: D,
+    hideProfilePreview: L = false
   } = e, {
-    product: j
-  } = (0, E.q)(a, true), {
-    giftRecipient: k,
-    giftRecipientError: U
-  } = (0, f.Pv)(), G = (0, u.bG)([h.default], () => h.default.getCurrentUser()), F = (0, y.o7)(j), V = i.useRef(null), B = m.Ay.canUseCollectibles(G), H = i.useMemo(() => (0, g.fT)(j, B), [j, B]), Y = (0, I.V_)(j);
-  if (null == j) return null;
-  let [W] = j.items;
-  l()(null != W, "Product item should not be empty");
-  let K = () => {
-      if ((null == j ? true : j.type) === c.R.BUNDLE) return null;
-      switch (W.type) {
+    product: x
+  } = (0, E.q)(t, true), {
+    giftRecipient: M,
+    giftRecipientError: j
+  } = (0, f.Pv)(), k = (0, u.bG)([h.default], () => h.default.getCurrentUser()), U = (0, y.o7)(x), G = i.useRef(null), F = m.Ay.canUseCollectibles(k), V = i.useMemo(() => (0, g.fT)(x, F), [x, F]), B = (0, I.V_)(x);
+  if (null == x) return null;
+  let [H] = x.items;
+  l()(null != H, "Product item should not be empty");
+  let Y = () => {
+      if ((null == x ? true : x.type) === c.R.BUNDLE) return null;
+      switch (H.type) {
         case c.R.AVATAR_DECORATION:
           return S.intl.string(S.t["7v0T9P"]);
         case c.R.PROFILE_EFFECT:
@@ -101,25 +100,24 @@ let P = e => {
           return null
       }
     },
-    z = null != k && k.id !== (null == G ? true : G.id) && j.type !== c.R.BUNDLE && W.type !== c.R.NAMEPLATE && !x,
-    q = () => {
-      null != a && null != w && w(a)
-    },
-    Z = null == C || null == (n = C.invoice_items) || null == (t = n[0]) ? true : t.unit_price;
+    W = null != M && M.id !== (null == k ? true : k.id) && x.type !== c.R.BUNDLE && H.type !== c.R.NAMEPLATE && !L,
+    K = () => {
+      null != t && null != C && C(t)
+    };
   return (0, r.jsxs)("div", {
-    className: D,
-    children: [P && (0, r.jsx)("div", {
-      className: o()(T.QU, L),
+    className: P,
+    children: [w && (0, r.jsx)("div", {
+      className: o()(T.QU, D),
       children: (0, r.jsx)(d.D0$, {
         label: S.intl.string(S.t.PpoJzt),
-        children: z && (0, r.jsx)(d.YNO, {
-          targetElementRef: V,
-          preload: () => (0, _.A)(k.id, k.getAvatarURL(null, 80)),
+        children: W && (0, r.jsx)(d.YNO, {
+          targetElementRef: G,
+          preload: () => (0, _.A)(M.id, M.getAvatarURL(null, 80)),
           renderPopout: e => (0, r.jsx)(p.A, R(N({}, e), {
-            user: k,
-            pendingAvatar: k.getAvatarURL(null, (0, d.FT9)(d._3J.SIZE_80)),
-            pendingAvatarDecoration: (0, b.T)(W) ? W : null,
-            pendingProfileEffect: (0, O.C)(W) ? W : null,
+            user: M,
+            pendingAvatar: M.getAvatarURL(null, (0, d.FT9)(d._3J.SIZE_80)),
+            pendingAvatarDecoration: (0, b.T)(H) ? H : null,
+            pendingProfileEffect: (0, O.C)(H) ? H : null,
             canUsePremiumCustomization: true,
             disabledInputs: true,
             hideExampleButton: true
@@ -128,58 +126,50 @@ let P = e => {
           position: "right",
           children: e => (0, r.jsx)(d.DUT, R(N({}, e), {
             className: T.Nx,
-            innerRef: V,
+            innerRef: G,
             children: (0, r.jsx)(d.Text, {
               variant: "text-xs/medium",
               color: "text-link",
               children: S.intl.string(S.t["2GnJQL"])
             })
           }))
-        }, k.id)
+        }, M.id)
       })
     }), (0, r.jsxs)(d.DUT, {
       tag: "div",
-      onClick: q,
+      onClick: K,
       className: o()(T.i1, {
-        [T.no]: s && null == U,
-        [T.cN]: s && null != U
+        [T.no]: n && null == j,
+        [T.cN]: n && null != j
       }),
       children: [(0, r.jsxs)("div", {
         className: T.Ug,
         children: [(0, r.jsx)(v.O, {
-          product: j,
+          product: x,
           fallbackLabel: null
         }), (0, r.jsxs)("div", {
           className: T.JZ,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-md/semibold",
-            children: F
+            children: U
           }), (0, r.jsx)(d.Heading, {
             variant: "heading-sm/medium",
             color: "text-default",
-            children: K()
+            children: Y()
           })]
-        }), null != C && null != Z ? (0, r.jsx)(A.x, {
-          price: {
-            amount: Z.amount,
-            currency: Z.currency,
-            taxInclusive: C.tax_inclusive,
-            tax: C.tax,
-            exponent: Z.exponent
-          },
-          discount: H,
-          discountOfferAmount: Y,
+        }), (0, r.jsx)(A.x, {
+          priceAmount: a,
+          priceCurrency: s,
+          discount: V,
+          discountOfferAmount: B,
           variant: "text-md/bold"
-        }) : (0, r.jsx)(d.Text, {
-          variant: "text-md/semibold",
-          children: M
         })]
-      }), s && null != U && (0, r.jsx)("div", {
+      }), n && null != j && (0, r.jsx)("div", {
         className: T.Wh,
         children: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-feedback-critical",
-          children: U
+          children: j
         })
       })]
     })]

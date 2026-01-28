@@ -28,7 +28,8 @@ function d(e) {
         children: a
       })
     }), (0, r.jsx)(s.x, {
-      price: t,
+      priceAmount: t.amount,
+      priceCurrency: t.currency,
       className: o ? u.r9 : true
     })]
   })
@@ -64,7 +65,8 @@ function m(e) {
         product: c
       })]
     }), t.length > 1 && t[1].currency === o.Yr.DISCORD_ORB && (0, r.jsx)(s.x, {
-      price: t[1],
+      priceAmount: t[1].amount,
+      priceCurrency: t[1].currency,
       className: p || !m ? u.r9 : true
     })]
   })
