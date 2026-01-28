@@ -258,7 +258,7 @@ let N = {
       children: [t > 0 && t < 100 && (0, r.jsx)(() => (0, r.jsx)("div", {
         className: I.ML,
         style: {
-          left: "".concat(t - 1.8, "%")
+          left: "calc(".concat(t, "% - ").concat(5, "px)")
         },
         children: (0, r.jsx)(x.z, {})
       }), {}), (0, r.jsx)("div", {

@@ -25,6 +25,9 @@ let u = e => {
       })
     }), false === p && (0, r.jsx)(o.PR, {
       percentage: t
-    }), (0, r.jsx)(a.G, {})]
+    }), (0, r.jsx)("div", {
+      className: d.Z,
+      children: (0, r.jsx)(a.G, {})
+    })]
   })
 }

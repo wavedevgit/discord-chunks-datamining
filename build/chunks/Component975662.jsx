@@ -402,7 +402,7 @@ let eA = () => {
     recurring3PPromotions: {
       name: "recurring3PPromotions",
       title: G.intl.string(G.t.m7PucM),
-      subtitle: " ",
+      subtitle: "",
       onCtaClick: () => (0, v.uE)({
         analyticsLocations: e
       }),
