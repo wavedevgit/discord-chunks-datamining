@@ -48,7 +48,7 @@ function f() {
         claimableRewards: t,
         maxRewardImageSrc: null != f ? f : "",
         size: a._3J.SIZE_40,
-        imageScaling: 1.25
+        imageScaling: 1.9
       })
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/medium",

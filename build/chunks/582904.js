@@ -1,13 +1,14 @@
 /** Chunk was on 78528 **/
 /** chunk id: 582904, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L7: () => g,
-  Z0: () => f,
-  kt: () => h
+  L7: () => m,
+  Z0: () => g,
+  kt: () => f
 }), require("./896048.js"), require("./638769.js"), require("./839272.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk775602 = require("./775602.js"),
+  Chunk394577 = require("./394577.js"),
   Chunk21119 = require("./21119.js"),
   Chunk696451 = require("./696451.js"),
   Chunk287809 = require("./287809.js"),
@@ -16,36 +17,40 @@ var Chunk64700 = require("./64700.js"),
   Chunk605431 = require("./605431.js"),
   Chunk366251 = require("./366251.js");
 
-function h(e) {
+function f(e) {
   let {
     channel: t
-  } = e, n = (0, l.bG)([s.A], () => s.A.getUserAffinitiesMap(), []), i = null == t ? true : t.guild_id, d = new Set((0, l.bG)([c.Ay], () => null == t ? [] : c.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), p = (0, l.yK)([a.Ay, o.default], () => a.Ay.getMembers(i).map(e => o.default.getUser(e.userId)).filter(u.Vq).filter(e => !d.has(e.id)), [i, d]);
-  return r.useMemo(() => p.toSorted((e, t) => {
-    var r, l, i, s;
+  } = e, {
+    totalSuggestions: n
+  } = s.A.useConfig({
+    location: "useVoiceInviteSuggestions"
+  }), i = (0, l.bG)([a.A], () => a.A.getUserAffinitiesMap(), []), p = null == t ? true : t.guild_id, h = new Set((0, l.bG)([u.Ay], () => null == t ? [] : u.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), f = (0, l.yK)([o.Ay, c.default], () => o.Ay.getMembers(p).map(e => c.default.getUser(e.userId)).filter(d.Vq).filter(e => !h.has(e.id)), [p, h]);
+  return r.useMemo(() => f.toSorted((e, t) => {
+    var n, r, l, s;
     let {
       id: a
     } = e, {
       id: o
     } = t;
-    return (null != (r = null == (i = n.get(o)) ? true : i.vcProbability) ? r : 0) - (null != (l = null == (s = n.get(a)) ? true : s.vcProbability) ? l : 0)
-  }), [p, n]).slice(0, 5)
+    return (null != (n = null == (l = i.get(o)) ? true : l.vcProbability) ? n : 0) - (null != (r = null == (s = i.get(a)) ? true : s.vcProbability) ? r : 0)
+  }), [f, i]).slice(0, n)
 }
 
-function f(e) {
+function g(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
       collapsed: n = false
     } = t,
-    i = (0, l.bG)([p.A], () => p.A.getShouldShowPopover(e.id), [e.id]);
+    i = (0, l.bG)([h.A], () => h.A.getShouldShowPopover(e.id), [e.id]);
   return {
     shouldShow: i && !n,
     dismiss: r.useCallback(() => {
-      (0, d.w)(e.id)
+      (0, p.w)(e.id)
     }, [e])
   }
 }
 
-function g(e) {
+function m(e) {
   let [t, n] = r.useState(false), [s, a] = r.useState(false), o = (0, l.bG)([i.A], () => i.A.keyboardModeEnabled);
   r.useEffect(() => {
     let t = e.current;
