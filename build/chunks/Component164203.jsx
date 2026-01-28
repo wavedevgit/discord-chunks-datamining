@@ -120,7 +120,7 @@ function X(e) {
       questContent: h.uF.QUEST_LIVE_STREAM,
       questContentCTA: C.Cy.TRACK_PROGRESS,
       sourceQuestContent: h.uF.QUEST_LIVE_STREAM
-    }), (0, H.navigateToQuestHome)({
+    }), (0, F.navigateToQuestHome)({
       fromContent: h.uF.QUEST_LIVE_STREAM,
       questId: X.id
     })
@@ -130,7 +130,7 @@ function X(e) {
       questContent: h.uF.QUEST_LIVE_STREAM,
       questContentCTA: C.Cy.LEARN_MORE,
       sourceQuestContent: h.uF.QUEST_LIVE_STREAM
-    }), (0, H.navigateToQuestHome)({
+    }), (0, F.navigateToQuestHome)({
       fromContent: h.uF.QUEST_LIVE_STREAM,
       questId: X.id
     })
@@ -223,7 +223,7 @@ function X(e) {
             })
           })]
         })]
-      }), eT && !eC && !em && (0, r.jsx)(F.A, {
+      }), eT && !eC && !em && (0, r.jsx)(H.A, {
         autoplay: ee,
         quest: X,
         questContent: h.uF.QUEST_LIVE_STREAM,
@@ -310,7 +310,7 @@ function J(e) {
       return a && null != (e = null == f ? true : f.id) ? e : null
     }, [f, a]);
   l.useEffect(() => {
-    null == e.previewQuest && null != g && (0, y.yO)([g], h.uF.QUEST_LIVE_STREAM, "quest_channel_call_header")
+    null == e.previewQuest && null != g && (0, y.yO)([g], h.uF.QUEST_LIVE_STREAM, "QuestChannelCallHeader")
   }, [g, e.previewQuest]);
   let A = (0, o.bG)([x.A], () => {
       var e;
