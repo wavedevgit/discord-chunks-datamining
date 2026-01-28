@@ -2,11 +2,11 @@
 /** chunk id: 915967, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => Z,
-  Bx: () => K,
+  Bx: () => z,
   Gm: () => F,
   Q_: () => V,
   zF: () => Y,
-  zR: () => z
+  zR: () => K
 }), require("./65821.js"), require("./321073.js");
 var r, Chunk966597 = require("./966597.js"),
   Chunk774603 = require("./774603.js"),
@@ -79,12 +79,12 @@ function Y(e) {
 function W() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   return t.map(e => {
-    let t = z[e];
+    let t = K[e];
     if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
     return t.binds[0]
   })
 }
-let z = {
+let K = {
   [Chunk652215.IWg.SERVER_NEXT]: Chunk904828.yx,
   [Chunk652215.IWg.SERVER_PREV]: Chunk904828.yv,
   [Chunk652215.IWg.CHANNEL_NEXT]: Chunk430086.kF,
@@ -136,7 +136,7 @@ let z = {
   [Chunk652215.IWg.OPEN_CONTEXT_MENU]: Chunk799592.b
 };
 
-function K() {
+function z() {
   let e = [{
       description: B.intl.string(B.t.bx4Uyz),
       binds: W(H.IWg.SERVER_PREV, H.IWg.SERVER_NEXT),
@@ -350,4 +350,4 @@ function K() {
     group: "CHAT"
   }), e
 }
-let Z = 21552 == require.j ? z : null
+let Z = 21552 == require.j ? K : null

@@ -205,7 +205,7 @@ let ef = () => {
       description: U.intl.string(U.t.kWcDK8),
       descriptionCta: U.intl.string(U.t.jVcuVY),
       onCtaClick: ey,
-      perkImage: z
+      perkImage: K
     },
     serverBoosts: {
       name: "serverBoosts",
@@ -219,7 +219,7 @@ let ef = () => {
           analyticsLocations: e
         })
       },
-      perkImage: K,
+      perkImage: z,
       hideOnNarrowScreen: !ex,
       imageOverlayText: ex ? U.intl.string(U.t["/VzCKE"]).toLocaleUpperCase() : true
     },

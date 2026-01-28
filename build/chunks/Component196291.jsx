@@ -83,8 +83,8 @@ function M(e) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
   }), {
-    preset: z,
-    onShuffle: K
+    preset: K,
+    onShuffle: z
   } = (0, p.A)(), Z = i.useRef(null);
   (0, E.A)(Z, D._F.TRY_IT_OUT);
   let {
@@ -93,7 +93,7 @@ function M(e) {
     sourceAnalyticsLocations: J
   } = (0, c.Ay)(o.A.USER_SETTINGS_TRY_OUT_PREMIUM), Q = e => {
     e && ((0, a.zq)(Y), (0, A.Zz)(F), (0, A.Dv)(W), O.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
-      preset: z
+      preset: K
     }))
   };
   i.useEffect(() => {
@@ -127,8 +127,8 @@ function M(e) {
         }),
         profilePreview: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(_.A, {
-            preset: z,
-            onShuffle: K
+            preset: K,
+            onShuffle: z
           }), (0, r.jsx)(N.A, {
             user: M
           })]

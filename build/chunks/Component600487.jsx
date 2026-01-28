@@ -105,7 +105,7 @@ let X = () => {
       plans: ev,
       compare: eS
     } = eO,
-    eI = eA ? K : Z,
+    eI = eA ? z : Z,
     {
       variant: eN
     } = (0, C.Ay)("PremiumBrandRefreshMarketingHeroHeading"),
@@ -118,13 +118,13 @@ let X = () => {
     eG = (0, r.jsxs)("div", {
       className: s()(eI.container, eI.responsiveContainer, {
         [eI.containerBackground]: eA || et,
-        [K.fadeInFromTop]: !$ && eA
+        [z.fadeInFromTop]: !$ && eA
       }),
       "data-cy": "tier-0-marketing-page",
       children: [eA && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(P.A, {
-          className: s()(K.topOfPageGradient, {
-            [K.topOfPageGradientWithCountdown]: eM
+          className: s()(z.topOfPageGradient, {
+            [z.topOfPageGradientWithCountdown]: eM
           })
         }), (0, r.jsx)(F.A, {
           navBarSections: eO,
@@ -238,12 +238,12 @@ let X = () => {
           subscriptionTier: eg,
           isEligibleForBogoPromotion: ef
         }), (0, r.jsx)(P.A, {
-          className: K.bottomOfPageGradient
+          className: z.bottomOfPageGradient
         })]
       })]
     });
   return (0, r.jsx)(u.NPJ, {
-    theme: eA ? z.NJ.DARKER : ee,
+    theme: eA ? K.NJ.DARKER : ee,
     children: e => (0, r.jsx)(u.GtU, {
       className: s()(eI.scroller, e),
       ref: t,

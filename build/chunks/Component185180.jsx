@@ -63,9 +63,9 @@ let B = e => {
       isReady: b.A.isReady(),
       programReward: b.A.getRewardForProgram(h.W.NITRO)
     })),
-    z = i.useMemo(() => !!Y && "orbs" === new URLSearchParams(n.search).get("section"), [n.search, Y]);
-  (0, x.A)(l, z);
-  let [K, Z] = i.useState(false), q = (0, T.p)(), X = i.useRef(null), [J, Q] = i.useState(false), [$, ee] = i.useState(false), et = null != q && null != F && F.status === G.Dmq.CANCELED, en = (0, v.iU)(M.gD.PREMIUM_MONTH_TIER_2, q, F), er = !$ && et, {
+    K = i.useMemo(() => !!Y && "orbs" === new URLSearchParams(n.search).get("section"), [n.search, Y]);
+  (0, x.A)(l, K);
+  let [z, Z] = i.useState(false), q = (0, T.p)(), X = i.useRef(null), [J, Q] = i.useState(false), [$, ee] = i.useState(false), et = null != q && null != F && F.status === G.Dmq.CANCELED, en = (0, v.iU)(M.gD.PREMIUM_MONTH_TIER_2, q, F), er = !$ && et, {
     analyticsLocations: ei
   } = (0, _.Ay)(p.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [el, es] = i.useState(false), ea = (0, o.bG)([E.A], () => null != t ? E.A.getUserProfile(t) : null), eo = (0, j.A)({
     location: "SubscriberNitroHome"
@@ -139,7 +139,7 @@ let B = e => {
           })]
         })
       }), et && null != en && (0, r.jsx)(S.A, {
-        isVisible: er && K,
+        isVisible: er && z,
         premiumSubscription: F,
         churnDiscountOffer: q,
         discountedPrice: en

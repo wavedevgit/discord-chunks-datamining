@@ -604,8 +604,7 @@ class e6 extends Chunk64700.PureComponent {
       draftType: ex.C.ChannelMessage,
       editorTextContent: this.state.textValue,
       setValue: this.handleSetValue,
-      canOnlyUseTextCommands: e,
-      chatInputType: this.props.chatInputType
+      canOnlyUseTextCommands: e
     })), eZ(this, "renderApplicationCommandIcon", (e, t, n) => (0, r.jsx)(k.A, {
       className: n,
       command: e,

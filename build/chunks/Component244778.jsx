@@ -173,9 +173,9 @@ let k = () => {
         analyticsLocations: Y
       } = (0, _.Ay)(p.A.PREMIUM_MARKETING_PLAN_COMPARISON),
       W = (0, a.bG)([b.A], () => b.A.hasFetchedSubscriptions()),
-      z = (0, g.Y)(P.T7),
-      K = (0, u.Ay)(),
-      Z = (0, o.qB)(K),
+      K = (0, g.Y)(P.T7),
+      z = (0, u.Ay)(),
+      Z = (0, o.qB)(z),
       q = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
       X = null != q && q.isPremiumWithPremiumGroup(),
       J = (0, h.YE)(q, P.PremiumTypes.TIER_2),
@@ -196,7 +196,7 @@ let k = () => {
       } = x.K.useExperiment({
         location: "PlanComparisonTable"
       });
-    if (!W || !z) return null;
+    if (!W || !K) return null;
     let eu = ed ? R.intl.string(R.t.XXENra) : R.intl.string(R.t.ED4UVD),
       ep = {
         label: (0, r.jsx)(d.Heading, {

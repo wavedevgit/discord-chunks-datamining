@@ -50,8 +50,8 @@ function D() {
       pendingPronouns: F,
       pendingAccentColor: Y,
       pendingThemeColors: W,
-      pendingLegacyUsernameDisabled: z,
-      pendingPrimaryGuildId: K,
+      pendingLegacyUsernameDisabled: K,
+      pendingPrimaryGuildId: z,
       errors: Z
     } = (0, s.cf)([S.A], () => {
       var e, t;
@@ -155,11 +155,11 @@ function D() {
       currentBio: null != (w = null == U ? true : U.bio) ? w : ""
     }, "bio"), ei.length > 0 && (0, r.jsx)(c.A, {
       availablePrimaryGuilds: ei,
-      pendingPrimaryGuildId: K,
+      pendingPrimaryGuildId: z,
       onChange: e => (0, a.Ch)(e)
     }), null != et && (0, r.jsx)(f.A, {
       legacyUsername: et,
-      pendingLegacyUsernameDisabled: z
+      pendingLegacyUsernameDisabled: K
     }, "legacy_username")]
   })
 }

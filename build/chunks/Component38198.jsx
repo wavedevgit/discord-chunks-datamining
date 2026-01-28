@@ -1,7 +1,7 @@
 /** Chunk was on 78528 **/
 /** chunk id: 38198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => P
+  A: () => N
 }), require("./591487.js"), require("./727858.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,8 +11,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk308368 = require("./308368.js"),
   Chunk795816 = require("./795816.js"),
   Chunk688810 = require("./688810.jsx"),
-  Chunk211401 = require("./211401.js"),
-  Chunk500049 = require("./500049.js"),
   Chunk975412 = require("./975412.jsx"),
   Chunk826673 = require("./826673.js"),
   Chunk970244 = require("./970244.jsx"),
@@ -30,42 +28,41 @@ var Chunk627968 = require("./627968.js"),
   Chunk412136 = require("./412136.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk545156 = require("./545156.js");
-let T = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
+let I = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
-function P(e) {
+function N(e) {
   let {
     channel: t,
-    chatInputType: P,
-    options: w,
-    onFileUpload: R,
-    onClose: D,
-    onSelect: M,
-    draftType: L,
-    editorTextContent: k,
-    setValue: G,
-    openClips: U
+    options: N,
+    onFileUpload: T,
+    onClose: P,
+    onSelect: w,
+    draftType: R,
+    editorTextContent: D,
+    setValue: M,
+    openClips: L
   } = e, {
-    analyticsLocations: B,
-    newestAnalyticsLocation: V
-  } = (0, u.Ay)(), F = (0, g.s)({
+    analyticsLocations: k,
+    newestAnalyticsLocation: G
+  } = (0, u.Ay)(), U = (0, h.s)({
     channel: t
-  }), H = (0, i.bG)([b.A], () => b.A.isInProgress());
+  }), B = (0, i.bG)([g.A], () => g.A.isInProgress());
+
+  function V() {
+    (0, m.Tv)(t, true, "Plus Button")
+  }
+
+  function F() {
+    b.default.track(v.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), M("/", (0, O.x7)("/"))
+  }
+
+  function H() {
+    L()
+  }
 
   function K() {
-    (0, A.Tv)(t, true, "Plus Button")
-  }
-
-  function W() {
-    y.default.track(E.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), G("/", (0, v.x7)("/"))
-  }
-
-  function z() {
-    U()
-  }
-
-  function Y() {
-    (0, f.Dr)(s.M.POLLS_CHAT_INPUT_COACHMARK, {
-      dismissAction: C.i.TAKE_ACTION
+    (0, p.Dr)(s.M.POLLS_CHAT_INPUT_COACHMARK, {
+      dismissAction: x.i.TAKE_ACTION
     }), (0, a.mMO)(async () => {
       let {
         default: e
@@ -103,16 +100,16 @@ function P(e) {
         }), l))
       }
     }, {
-      modalKey: S.sm
+      modalKey: E.sm
     })
   }
 
-  function q() {
-    y.default.track(E.HAw.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+  function W() {
+    b.default.track(v.HAw.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
-    }), (0, h.A)({
+    }), (0, d.A)({
       context: null != t ? {
         type: "channel",
         channel: t
@@ -120,39 +117,39 @@ function P(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: V
+      analyticsLocation: G
     }), (0, c.LV)({
       guildId: t.guild_id
     })
   }
 
-  function X() {
-    let e = k,
+  function z() {
+    let e = D,
       n = "txt",
       r = "",
-      l = k.match(T);
-    null != l && (r = l[1], n = l[2], e = l[3], r += l[4]), (0, j.R)([(0, O.VE)(new Blob([e], {
+      l = D.match(I);
+    null != l && (r = l[1], n = l[2], e = l[3], r += l[4]), (0, _.R)([(0, y.VE)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, L), _._.dispatchToLastSubscribed(E.jej.CLEAR_TEXT), "" !== r && _._.dispatchToLastSubscribed(E.jej.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, R), A._.dispatchToLastSubscribed(v.jej.CLEAR_TEXT), "" !== r && A._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
       plainText: r
     })
   }
   return l.useEffect(() => {
-    y.default.track(E.HAw.OPEN_POPOUT, {
+    b.default.track(v.HAw.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, r.jsx)(a.W1t, {
     "data-menu-needs-migration": true,
-    onSelect: M,
+    onSelect: w,
     navId: "channel-attach",
-    onClose: D,
-    "aria-label": I.intl.string(I.t.Xm41aV),
-    className: N.MK,
-    children: w.map(function(e) {
+    onClose: P,
+    "aria-label": C.intl.string(C.t.Xm41aV),
+    className: S.MK,
+    children: N.map(function(e) {
       switch (e.type) {
-        case x.v.UPLOAD_A_FILE:
+        case j.v.UPLOAD_A_FILE:
           return (0, r.jsx)(a.Drp, {
             id: "upload-file",
             label: e.display,
@@ -161,10 +158,10 @@ function P(e) {
               type: "icon",
               icon: e.icon
             },
-            action: R
+            action: T
           }, "upload-file");
-        case x.v.UPLOAD_TEXT_AS_FILE:
-          if ("" === k) return null;
+        case j.v.UPLOAD_TEXT_AS_FILE:
+          if ("" === D) return null;
           return (0, r.jsx)(a.Drp, {
             id: "upload-text-as-file",
             label: e.display,
@@ -173,9 +170,9 @@ function P(e) {
               type: "icon",
               icon: e.icon
             },
-            action: X
+            action: z
           }, "upload-text-as-file");
-        case x.v.CLIPS:
+        case j.v.CLIPS:
           return (0, r.jsx)(a.Drp, {
             id: "clips",
             label: e.display,
@@ -187,9 +184,9 @@ function P(e) {
             badge: null != e.badgeVal && e.badgeVal > 0 ? {
               text: e.badgeVal.toString()
             } : true,
-            action: z
+            action: H
           }, "clips");
-        case x.v.POLL:
+        case j.v.POLL:
           return (0, r.jsx)(a.Drp, {
             id: "poll",
             label: e.display,
@@ -198,9 +195,9 @@ function P(e) {
               type: "icon",
               icon: e.icon
             },
-            action: Y
+            action: K
           }, "poll");
-        case x.v.INVITE_TO_PLAY_GAME:
+        case j.v.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(a.Drp, {
             id: "play",
             label: e.display,
@@ -213,13 +210,13 @@ function P(e) {
               var n;
               return n = e.activity, void o.A.sendActivityInvite({
                 channelId: t.id,
-                type: E.xL.JOIN,
+                type: v.xL.JOIN,
                 activity: n,
-                location: B[B.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "play");
-        case x.v.INVITE_TO_LISTEN:
+        case j.v.INVITE_TO_LISTEN:
           return (0, r.jsx)(a.Drp, {
             id: "listen",
             label: e.display,
@@ -232,13 +229,13 @@ function P(e) {
               var n;
               return n = e.activity, void o.A.sendActivityInvite({
                 channelId: t.id,
-                type: E.xL.LISTEN,
+                type: v.xL.LISTEN,
                 activity: n,
-                location: B[B.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "listen");
-        case x.v.INVITE_TO_WATCH:
+        case j.v.INVITE_TO_WATCH:
           return (0, r.jsx)(a.Drp, {
             id: "watch",
             label: e.display,
@@ -251,13 +248,13 @@ function P(e) {
               var n;
               return n = e.activity, void o.A.sendActivityInvite({
                 channelId: t.id,
-                type: E.xL.WATCH,
+                type: v.xL.WATCH,
                 activity: n,
-                location: B[B.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "watch");
-        case x.v.CREATE_THREAD:
+        case j.v.CREATE_THREAD:
           return (0, r.jsx)(a.Drp, {
             id: "THREAD",
             label: e.display,
@@ -266,9 +263,9 @@ function P(e) {
               type: "icon",
               icon: e.icon
             },
-            action: K
+            action: V
           }, "THREAD");
-        case x.v.SLASH_COMMAND:
+        case j.v.SLASH_COMMAND:
           return (0, r.jsx)(a.Drp, {
             id: "SLASH_COMMAND",
             label: e.display,
@@ -277,20 +274,9 @@ function P(e) {
               type: "icon",
               icon: e.icon
             },
-            action: W
+            action: F
           }, "SLASH_COMMAND");
-        case x.v.APP_LAUNCHER:
-          return (0, r.jsx)(a.Drp, {
-            id: "APP_LAUNCHER",
-            label: e.display,
-            iconLeft: e.icon,
-            leadingAccessory: {
-              type: "icon",
-              icon: e.icon
-            },
-            action: () => (0, d.R)(p.s4.TEXT, P, true, t.id)
-          }, "APP_LAUNCHER");
-        case x.v.ACTIVITY:
+        case j.v.ACTIVITY:
           return (0, r.jsx)(a.Drp, {
             id: "activity",
             label: e.display,
@@ -299,9 +285,9 @@ function P(e) {
               type: "icon",
               icon: e.icon
             },
-            action: q
+            action: W
           }, "activity");
-        case x.v.SCHEDULED_MESSAGE:
+        case j.v.SCHEDULED_MESSAGE:
           return (0, r.jsx)(a.Drp, {
             id: "scheduled_message",
             label: e.display,
@@ -310,12 +296,12 @@ function P(e) {
               type: "icon",
               icon: e.icon
             },
-            action: () => (0, g.e0)({
+            action: () => (0, h.e0)({
               channel: t
             }),
-            children: F
+            children: U
           }, "scheduled_message");
-        case x.v.SUMMARIZE_THREAD:
+        case j.v.SUMMARIZE_THREAD:
           return (0, r.jsx)(a.Drp, {
             id: "summarize_thread",
             label: e.display,
@@ -324,28 +310,28 @@ function P(e) {
               type: "icon",
               icon: e.icon
             },
-            action: () => m.A.summarizeThread(t),
-            loading: H,
-            disabled: H,
-            children: H ? null : (0, r.jsxs)(r.Fragment, {
+            action: () => f.A.summarizeThread(t),
+            loading: B,
+            disabled: B,
+            children: B ? null : (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(a.Drp, {
                 id: "summarize_thread_for_everyone",
-                label: I.intl.string(I.t.eCzSdd),
+                label: C.intl.string(C.t.eCzSdd),
                 iconLeft: a.nFg,
                 leadingAccessory: {
                   type: "icon",
                   icon: a.nFg
                 },
-                action: () => m.A.summarizeThread(t, false)
+                action: () => f.A.summarizeThread(t, false)
               }, "summarize_thread_for_everyone"), (0, r.jsx)(a.Drp, {
                 id: "summarize_thread_for_me",
-                label: I.intl.string(I.t["HOe+Hq"]),
+                label: C.intl.string(C.t["HOe+Hq"]),
                 iconLeft: a.nys,
                 leadingAccessory: {
                   type: "icon",
                   icon: a.nys
                 },
-                action: () => m.A.summarizeThread(t)
+                action: () => f.A.summarizeThread(t)
               }, "summarize_thread_for_me")]
             })
           }, "summarize_thread");

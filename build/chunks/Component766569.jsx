@@ -110,10 +110,10 @@ function M(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(B, ["source", "pendingAvatar", "pendingNameplate"]), z = (0, h.V7)({
+  }(B, ["source", "pendingAvatar", "pendingNameplate"]), K = (0, h.V7)({
     userId: G.id,
     image: F
-  }), K = (0, g.lw)({
+  }), z = (0, g.lw)({
     pendingValue: Y,
     userValue: null == G || null == (t = G.collectibles) ? true : t.nameplate,
     guildValue: null == U || null == (n = U.collectibles) ? true : n.nameplate,
@@ -149,7 +149,7 @@ function M(e) {
           })
         }),
         profilePreview: (0, r.jsx)(b.A, w(D({}, W), {
-          pendingAvatar: z,
+          pendingAvatar: K,
           pendingDisplayNameStyles: Z,
           user: G,
           guild: l,
@@ -160,8 +160,8 @@ function M(e) {
           pendingDisplayNameStyles: Z,
           user: G,
           guildId: null == l ? true : l.id,
-          nameplate: K,
-          className: null == K ? R.t : true,
+          nameplate: z,
+          className: null == z ? R.t : true,
           isHighlighted: true
         })),
         children: (0, r.jsx)(S.A, {})

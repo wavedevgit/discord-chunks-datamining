@@ -52,7 +52,7 @@ function L(e) {
     pendingPronouns: F,
     pendingThemeColors: Y,
     errors: W,
-    guild: z
+    guild: K
   } = (0, s.cf)([S.A], () => {
     let {
       pendingAvatar: e,
@@ -72,10 +72,10 @@ function L(e) {
       errors: S.A.getErrors(),
       guild: S.A.getGuild()
     }
-  }), K = (0, x.V7)({
+  }), z = (0, x.V7)({
     userId: G.id,
     image: k
-  }), Z = null != M ? M : z;
+  }), Z = null != M ? M : K;
   l()(null != Z, "guild should not be null");
   let q = (0, c.EC)(Z.id),
     X = (0, s.bG)([C.Ay], () => null == Z.id ? null : C.Ay.getMember(Z.id, G.id)),
@@ -173,7 +173,7 @@ function L(e) {
         disabled: !Q
       }, "banner"), (0, r.jsx)(A.A, {
         user: G,
-        pendingAvatarSrc: K,
+        pendingAvatarSrc: z,
         pendingColors: Y,
         onThemeColorsChange: e => {
           (0, I.wx)(e, null == J ? true : J.themeColors)

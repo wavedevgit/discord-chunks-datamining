@@ -109,8 +109,8 @@ function H() {
       pendingValue: V,
       userValue: null == t || null == (e = t.collectibles) ? true : e.nameplate
     }),
-    z = (0, a.bG)([S.A], () => S.A.showNotice()),
-    K = (0, T.A)() && null != H ? f.Ay.parse(true, H).content : H,
+    K = (0, a.bG)([S.A], () => S.A.showNotice()),
+    z = (0, T.A)() && null != H ? f.Ay.parse(true, H).content : H,
     Z = P.Ay.canUsePremiumProfileCustomization(t),
     {
       analyticsLocations: q,
@@ -129,7 +129,7 @@ function H() {
         user: t,
         canUsePremiumCustomization: Z,
         onUpsellClick: D.A,
-        pendingBio: K
+        pendingBio: z
       }, F), {
         pendingAvatar: Y
       })),
@@ -154,7 +154,7 @@ function H() {
           isVisible: J
         })
       })
-    }), ee && !z && (0, r.jsx)(h.d, {
+    }), ee && !K && (0, r.jsx)(h.d, {
       className: G.E,
       showUpsell: ee && !J,
       text: M.intl.format(M.t.TmfgI2, {

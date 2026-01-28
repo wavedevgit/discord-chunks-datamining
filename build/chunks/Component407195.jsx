@@ -261,8 +261,7 @@ class eo extends Chunk64700.Component {
       draftType: k.C.ChannelMessage,
       editorTextContent: this.state.textValue,
       setValue: e => this.handleTextareaChange(null, e, (0, E.x7)(e)),
-      canOnlyUseTextCommands: e,
-      chatInputType: v.oU.OVERLAY
+      canOnlyUseTextCommands: e
     })), k.A.addChangeListener(this.draftDidChange);
     const n = k.A.getDraft(e.channel.id, k.C.ChannelMessage);
     this.state = er(ei({}, (0, E.ur)(n)), {

@@ -1,7 +1,7 @@
 /** Chunk was on 5606 **/
 /** chunk id: 538511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => z,
+  A: () => K,
   i: () => W
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js");
@@ -194,7 +194,7 @@ function W() {
     }
   })
 }
-let z = function(e) {
+let K = function(e) {
   var t;
   let {
     subscription: i,
@@ -202,8 +202,8 @@ let z = function(e) {
     renewalInvoicePreview: m,
     paymentSource: I,
     busy: W,
-    analyticsLocation: z
-  } = e, K = "subscription_header", {
+    analyticsLocation: K
+  } = e, z = "subscription_header", {
     analyticsLocations: Z
   } = (0, p.Ay)(u.A.SUBSCRIPTION_HEADER), q = (0, _.A)({
     forceFetch: false
@@ -212,8 +212,8 @@ let z = function(e) {
   } = q, J = X === R.xc.FP_SUB_PAUSED, {
     enabled: Q
   } = (0, T.Ay)({
-    location: K
-  }), $ = (0, v.g)(K);
+    location: z
+  }), $ = (0, v.g)(z);
   R.QV.has(i.planId) && D.Uyk.ALL_PAUSEABLE.has(i.status) && !J || (Q = false);
   let ee = (0, S.O)(),
     et = null == ee || null == (t = ee.discount) ? true : t.amount,
@@ -236,7 +236,7 @@ let z = function(e) {
         } = await n.e("72820").then(n.bind(n, 281439));
         return n => (0, r.jsx)(t, U(G({}, n), {
           premiumSubscription: i,
-          analyticsLocation: z,
+          analyticsLocation: K,
           analyticsLocations: Z,
           initialStep: e
         }))
@@ -252,7 +252,7 @@ let z = function(e) {
         1 === t.length && (null == I ? true : I.id) === i.paymentSourceId && (0, O.jJ)(e.id, l, null == I ? true : I.id) && (o = false), o ? (0, g.A)({
           initialPlanId: i.premiumPlanIdFromItems,
           analyticsLocations: Z,
-          analyticsLocation: z,
+          analyticsLocation: K,
           analyticsObject: H,
           subscription: i
         }) : $ ? (a()(null != m, "Expected renewalInvoicePreview"), a()(null != s, "Expected currentInvoicePreview"), (0, c.mMO)(async () => {
@@ -273,7 +273,7 @@ let z = function(e) {
       B.includes(i.status) && null != i.pauseEndsAt ? i.status === D.Dmq.PAUSED && i.pauseReason !== w.qf.USER_TEMPORARY_BAN ? (0, g.A)({
         initialPlanId: i.premiumPlanIdFromItems,
         analyticsLocations: Z,
-        analyticsLocation: z,
+        analyticsLocation: K,
         analyticsObject: H,
         subscription: i,
         skipConfirm: true
@@ -392,7 +392,7 @@ let z = function(e) {
               onClick: () => {
                 (0, g.A)({
                   analyticsLocations: Z,
-                  analyticsLocation: z,
+                  analyticsLocation: K,
                   analyticsObject: H,
                   subscription: i
                 })

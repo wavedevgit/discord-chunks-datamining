@@ -104,8 +104,8 @@ function G() {
     F = (0, i.bG)([A.default], () => A.default.hasTOTPEnabled()),
     Y = I.Q_.useSetting(),
     W = (0, c.A)(),
-    z = null == (t = (0, d.A)()) || t,
-    K = (null == (l = (0, f.G)()) ? true : l.length) > 0,
+    K = null == (t = (0, d.A)()) || t,
+    z = (null == (l = (0, f.G)()) ? true : l.length) > 0,
     {
       hasBlockedUsers: Z,
       hasIgnoredUsers: q
@@ -147,8 +147,8 @@ function G() {
     hasLibraryApplication: V,
     hasTOTPEnabled: F,
     developerMode: Y,
-    isAdultUser: z,
-    hasSecureFramesVerifiedUserIds: K,
+    isAdultUser: K,
+    hasSecureFramesVerifiedUserIds: z,
     hasIgnoredUsers: q,
     hasBlockedUsers: Z,
     hasAgeGatedFeature: Q,
@@ -157,7 +157,7 @@ function G() {
     isInputProfileCustom: et,
     isChatMentionSuggestionsSettingEnabled: en,
     isHDRAccessibilitySettingExperimentEnabled: er
-  }), [Y, Z, q, V, K, F, R, z, B, k, U, L, G, W, D, H, M, S, E, Q, $, ee, et, en, er])
+  }), [Y, Z, q, V, z, F, R, K, B, k, U, L, G, W, D, H, M, S, E, Q, $, ee, et, en, er])
 }
 
 function U(e) {

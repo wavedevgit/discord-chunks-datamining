@@ -180,7 +180,7 @@ let D = function(e) {
     F = U > B,
     Y = B === c.length,
     W = Y ? V : 1,
-    z = i.useMemo(() => {
+    K = i.useMemo(() => {
       let e = [];
       for (let t = 0; t < W; t++) e.push((0, r.jsx)(x.A, {
         className: v.YA,
@@ -188,7 +188,7 @@ let D = function(e) {
       }, t));
       return e
     }, [W, C]),
-    K = i.useMemo(() => G.find(e => e.isAvailable()), [G]);
+    z = i.useMemo(() => G.find(e => e.isAvailable()), [G]);
   if (0 === G.length) return null;
   let Z = G.length;
   if (t = Y ? T.intl.formatToPlainString(H ? T.t["3DW6Dc"] : T.t["/u15Qc"], {
@@ -223,7 +223,7 @@ let D = function(e) {
           className: v.RW,
           children: [(0, r.jsx)("div", {
             className: v.PS,
-            children: z
+            children: K
           }), (0, r.jsxs)("div", {
             className: v.__invalid_headerCopy,
             children: [(0, r.jsx)(d.Heading, {
@@ -240,17 +240,17 @@ let D = function(e) {
         }), (0, r.jsx)("div", {
           className: v.di,
           children: (0, r.jsx)(o.A, {
-            shouldShow: null == K || L,
+            shouldShow: null == z || L,
             text: l,
             "aria-label": l.toString(),
             children: e => (0, r.jsx)(d.Button, I(S({
               variant: "primary",
               text: T.intl.string(T.t.BMx1iy)
             }, e), {
-              disabled: null == K || L,
-              onClick: null != K ? () => {
+              disabled: null == z || L,
+              onClick: null != z ? () => {
                 (0, d.mMO)(async () => e => (0, r.jsx)(_.default, I(S({}, e), {
-                  guildBoostSlots: [K],
+                  guildBoostSlots: [z],
                   locationSection: y.JJy.SETTINGS_PREMIUM
                 })))
               } : true

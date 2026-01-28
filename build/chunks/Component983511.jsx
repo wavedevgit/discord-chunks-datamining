@@ -158,8 +158,8 @@ function w(e) {
     }),
     W = F || Y ? V.total - H.total : -H.total,
     {
-      interval: z,
-      intervalCount: K
+      interval: K,
+      intervalCount: z
     } = G,
     Z = N.intl.format(N.t["0W23cu"], {
       endDate: V.subscriptionPeriodStart
@@ -189,7 +189,7 @@ function w(e) {
           label: N.intl.format(N.t["Vg+LRr"], {
             subscriptionCount: 1
           }),
-          value: (0, T.CE)((0, T.$g)(W, s.currency), z, K),
+          value: (0, T.CE)((0, T.$g)(W, s.currency), K, z),
           className: P.Au
         }), null != B && B.length > 0 ? (0, r.jsxs)("div", {
           children: [(0, r.jsx)(h.pK, {}), (0, r.jsx)(E.m0, {

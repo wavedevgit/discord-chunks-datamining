@@ -2,7 +2,7 @@
 /** chunk id: 336618, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => W
+  A: () => H
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,7 +12,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
   Chunk554146 = require("./554146.js"),
   Chunk533781 = require("./533781.jsx"),
-  Chunk435371 = require("./435371.js"),
   Chunk397927 = require("./397927.js"),
   Chunk793574 = require("./793574.js"),
   Chunk688810 = require("./688810.jsx"),
@@ -30,7 +29,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk661191 = require("./661191.js"),
   Chunk240248 = require("./240248.js"),
   Chunk427262 = require("./427262.js"),
-  Chunk184761 = require("./184761.js"),
   Chunk743477 = require("./743477.jsx"),
   Chunk545428 = require("./545428.jsx"),
   Chunk652215 = require("./652215.js"),
@@ -39,7 +37,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk455424 = require("./455424.js"),
   Chunk111314 = require("./111314.js");
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,20 +46,20 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function U(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
 }
 
-function G(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,167 +70,151 @@ function G(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : G(Object(t)).forEach(function(n) {
+function U(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function V(e) {
-  let {
-    tooltipsWithKeybinds: t
-  } = w.C.useConfig({
-    location: "GiftBoxAnimationButton"
-  }), n = i.useCallback(() => Promise.resolve({
+function G(e) {
+  let t = i.useCallback(() => Promise.resolve({
     default: e.boxAnimationUrl
   }), [e.boxAnimationUrl]);
-  return (0, r.jsx)(d.m_, {
-    shouldShow: t,
-    text: x.intl.string(x.t.Ve9Ge6),
-    children: (0, r.jsx)(P.A, {
-      className: j.x6,
-      "aria-label": x.intl.string(x.t.Z1RnTk),
-      isActive: false,
-      noHover: true,
-      onClick: e.onClick,
-      children: (0, r.jsx)("div", {
-        className: M.zc,
-        children: e.hovered ? (0, r.jsx)(f.akl, {
-          className: M.Hl,
-          importData: n
-        }) : (0, r.jsx)(f.okO, {})
-      })
+  return (0, r.jsx)(w.A, {
+    className: x.x6,
+    "aria-label": D.intl.string(D.t.Z1RnTk),
+    isActive: false,
+    noHover: true,
+    onClick: e.onClick,
+    children: (0, r.jsx)("div", {
+      className: L.zc,
+      children: e.hovered ? (0, r.jsx)(d.akl, {
+        className: L.Hl,
+        importData: t
+      }) : (0, r.jsx)(d.okO, {})
     })
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     Component: t,
     events: n,
     play: a
-  } = (0, u.T)(), {
-    tooltipsWithKeybinds: o
-  } = w.C.useConfig({
-    location: "TrinketsAnimationButton"
-  }), s = i.useCallback(() => Promise.resolve({
+  } = (0, u.T)(), o = i.useCallback(() => Promise.resolve({
     default: e.trinketAnimationUrl
-  }), [e.trinketAnimationUrl]), l = i.useCallback(() => Promise.resolve({
+  }), [e.trinketAnimationUrl]), s = i.useCallback(() => Promise.resolve({
     default: e.trinketGlowAnimationUrl
-  }), [e.trinketGlowAnimationUrl]), c = () => {
+  }), [e.trinketGlowAnimationUrl]), l = () => {
     var t;
     a(), null == (t = e.onClick) || t.call(e)
   };
-  return (0, r.jsx)(d.m_, {
-    shouldShow: o,
-    text: x.intl.string(x.t.Ve9Ge6),
-    children: (0, r.jsx)(P.A, F(U({
-      className: j.x6,
-      "aria-label": x.intl.string(x.t.Z1RnTk),
-      isActive: false,
-      noHover: true,
-      onClick: c
-    }, n), {
-      children: (0, r.jsxs)("div", {
-        className: M.zc,
-        children: [(0, r.jsx)(t, {
-          className: M.is,
-          color: "currentColor"
-        }), e.hovered && (0, r.jsxs)(r.Fragment, {
-          children: [null != e.trinketAnimationUrl && (0, r.jsx)(f.akl, {
-            className: M.rY,
-            importData: s
-          }), null != e.trinketGlowAnimationUrl && (0, r.jsx)(f.akl, {
-            className: M.c5,
-            importData: l
-          })]
+  return (0, r.jsx)(w.A, U(j({
+    className: x.x6,
+    "aria-label": D.intl.string(D.t.Z1RnTk),
+    isActive: false,
+    noHover: true,
+    onClick: l
+  }, n), {
+    children: (0, r.jsxs)("div", {
+      className: L.zc,
+      children: [(0, r.jsx)(t, {
+        className: L.is,
+        color: "currentColor"
+      }), e.hovered && (0, r.jsxs)(r.Fragment, {
+        children: [null != e.trinketAnimationUrl && (0, r.jsx)(d.akl, {
+          className: L.rY,
+          importData: o
+        }), null != e.trinketGlowAnimationUrl && (0, r.jsx)(d.akl, {
+          className: L.c5,
+          importData: s
         })]
-      })
-    }))
-  })
+      })]
+    })
+  }))
 }
-let H = Chunk927813.A.Millis.DAYS_30;
+let V = Chunk927813.A.Millis.DAYS_30;
 
-function Y(e) {
+function B(e) {
   var t, n, a;
   let {
     disabled: u,
     channel: d
   } = e, {
-    analyticsLocations: f
-  } = (0, _.Ay)(p.A.GIFT_BUTTON), [S, w] = i.useState(false), P = (0, l.bG)([A.A], () => !(null === A.A || true === A.A ? true : A.A.hasLayers())), x = (0, l.bG)([I.default], () => I.default.getCurrentUser()), j = null != x ? T.default.age(x.id) : 0, k = (0, l.bG)([b.A], () => {
-    let e = b.A.getMarketingComponentByType(s.C.GIFT_ICON);
+    analyticsLocations: I
+  } = (0, p.Ay)(f.A.GIFT_BUTTON), [w, D] = i.useState(false), x = (0, l.bG)([v.A], () => !(null === v.A || true === v.A ? true : v.A.hasLayers())), M = (0, l.bG)([A.default], () => A.default.getCurrentUser()), j = null != M ? S.default.age(M.id) : 0, k = (0, l.bG)([y.A], () => {
+    let e = y.A.getMarketingComponentByType(s.C.GIFT_ICON);
     return null == e || "giftIcon" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftIcon
-  }), U = (0, l.bG)([b.A], () => {
-    let e = b.A.getMarketingComponentByType(s.C.GIFT_ICON_COACHMARK);
+  }), U = (0, l.bG)([y.A], () => {
+    let e = y.A.getMarketingComponentByType(s.C.GIFT_ICON_COACHMARK);
     return null == e || "giftIconCoachmark" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftIconCoachmark
-  }), G = null == k ? true : k.gradient, F = null != G && null != G.colors && G.colors.length >= 2 ? (0, E.K5)({
-    gradient: G.colors,
-    angle: null != (t = G.angle) ? t : true
+  }), B = null == k ? true : k.gradient, H = null != B && null != B.colors && B.colors.length >= 2 ? (0, g.K5)({
+    gradient: B.colors,
+    angle: null != (t = B.angle) ? t : true
   }, {
     defaultAngle: 180
   }) : true, Y = i.useMemo(() => {
-    if ((null == F ? true : F.background) != null) return {
-      "--custom-promotion-gradient": F.background
+    if ((null == H ? true : H.background) != null) return {
+      "--custom-promotion-gradient": H.background
     }
-  }, [F]), W = !(0, C.uJ)(null == k ? true : k.boxAnimationUrl), K = (!(0, C.uJ)(null == k ? true : k.trinketAnimationUrl) || !(0, C.uJ)(null == k ? true : k.trinketGlowAnimationUrl)) && !W, z = null != U && !u && P && j >= H, [q, Z] = (0, m.RF)(z ? c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, h.c)(c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), Q = null != q, X = S || Q, J = (0, N.R1)(d), $ = d.type === D.rbe.DM, ee = (0, v.tA)({
+  }, [H]), W = !(0, T.uJ)(null == k ? true : k.boxAnimationUrl), K = (!(0, T.uJ)(null == k ? true : k.trinketAnimationUrl) || !(0, T.uJ)(null == k ? true : k.trinketGlowAnimationUrl)) && !W, z = null != U && !u && x && j >= V, [q, Z] = (0, h.RF)(z ? c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, _.c)(c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), Q = null != q, X = w || Q, J = (0, C.R1)(d), $ = d.type === R.rbe.DM, ee = (0, O.tA)({
     location: "gift-promotion-button",
     isGift: true,
     giftRecipient: J
   });
   if (u) return null;
   let et = () => {
-      ee && $ && null != J ? (0, O.A)({
+      ee && $ && null != J ? (0, b.A)({
         giftRecipient: J,
-        analyticsLocations: f,
+        analyticsLocations: I,
         analyticsObject: {
-          page: d.isPrivate() ? D.liQ.DM_CHANNEL : D.liQ.GUILD_CHANNEL,
-          section: D.JJy.CHANNEL_TEXT_AREA,
-          object: D.ZSU.BUTTON_ICON,
-          objectType: D.AnalyticsObjectTypes.GIFT
+          page: d.isPrivate() ? R.liQ.DM_CHANNEL : R.liQ.GUILD_CHANNEL,
+          section: R.JJy.CHANNEL_TEXT_AREA,
+          object: R.ZSU.BUTTON_ICON,
+          objectType: R.AnalyticsObjectTypes.GIFT
         }
-      }) : (0, g.A)({
+      }) : (0, m.A)({
         isGift: true,
         giftRecipient: null == J ? true : J,
         initialPlanId: null,
-        analyticsLocations: f,
+        analyticsLocations: I,
         analyticsObject: {
-          page: d.isPrivate() ? D.liQ.DM_CHANNEL : D.liQ.GUILD_CHANNEL,
-          section: D.JJy.CHANNEL_TEXT_AREA,
-          object: D.ZSU.GIFTING_PROMOTION_BUTTON,
-          objectType: D.AnalyticsObjectTypes.GIFT
+          page: d.isPrivate() ? R.liQ.DM_CHANNEL : R.liQ.GUILD_CHANNEL,
+          section: R.JJy.CHANNEL_TEXT_AREA,
+          object: R.ZSU.GIFTING_PROMOTION_BUTTON,
+          objectType: R.AnalyticsObjectTypes.GIFT
         }
       })
     },
     en = () => {
-      w(false), Z(L.i.TAKE_ACTION), et()
+      D(false), Z(P.i.TAKE_ACTION), et()
     },
-    er = W && (null == k ? true : k.boxAnimationUrl) != null ? (0, r.jsx)(V, {
+    er = W && (null == k ? true : k.boxAnimationUrl) != null ? (0, r.jsx)(G, {
       boxAnimationUrl: k.boxAnimationUrl,
       hovered: X,
       onClick: en
-    }) : K ? (0, r.jsx)(B, {
+    }) : K ? (0, r.jsx)(F, {
       trinketAnimationUrl: null != (n = null == k ? true : k.trinketAnimationUrl) ? n : null,
       trinketGlowAnimationUrl: null != (a = null == k ? true : k.trinketGlowAnimationUrl) ? a : null,
       hovered: X,
       onClick: en
-    }) : (0, r.jsx)(R.A, {
+    }) : (0, r.jsx)(N.A, {
       disabled: u,
       channel: d
     });
   return (0, r.jsx)("div", {
-    className: o()(M.kL, {
-      [M.DM]: X
+    className: o()(L.kL, {
+      [L.DM]: X
     }),
     style: Y,
     onMouseEnter: () => {
-      S || w(true)
+      w || D(true)
     },
     onMouseLeave: () => {
-      w(false)
+      D(false)
     },
-    children: Q ? (0, r.jsx)(y.A, {
-      onComplete: () => w(false),
+    children: Q ? (0, r.jsx)(E.A, {
+      onComplete: () => D(false),
       onCheckItOutClick: et,
       markAsDismissed: Z,
       coachmarkConfig: U,
@@ -240,4 +222,4 @@ function Y(e) {
     }) : er
   })
 }
-let W = Chunk64700.memo(Y)
+let H = Chunk64700.memo(B)

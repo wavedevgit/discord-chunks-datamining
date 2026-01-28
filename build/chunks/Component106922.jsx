@@ -308,7 +308,7 @@ function eg() {
         className: el.Oi,
         variant: "text-sm/normal",
         children: ei.intl.string(ei.t.yQ06u1)
-      }), (0, r.jsx)(K.A, {
+      }), (0, r.jsx)(z.A, {
         className: s()(el.Tp, el._c),
         textOptions: {
           textOverride: ei.intl.string(ei.t.Ve9Ge6),
@@ -344,7 +344,7 @@ let ef = function() {
     }),
     E = (0, d.bG)([R.A], () => R.A.enabled),
     S = i.useRef(null);
-  (0, z.i)();
+  (0, K.i)();
   let I = (0, W.m)();
   i.useEffect(() => {
     f.h.wait(async () => {

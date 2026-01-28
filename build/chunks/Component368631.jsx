@@ -134,8 +134,8 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
       isEligibleForQuests: eF,
       isStricterMessageRequestsEnabled: eY,
       hasLibraryApplication: eW,
-      hasTOTPEnabled: ez,
-      developerMode: eK,
+      hasTOTPEnabled: eK,
+      developerMode: ez,
       isAdultUser: eZ,
       hasSecureFramesVerifiedUserIds: eq,
       hasIgnoredUsers: eX,
@@ -220,13 +220,13 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eC.intl.string(eC.t.cDgKte)],
         section: ex.nc_.ACCOUNT,
         parent: eA.H.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => !ez
+        predicate: () => !eK
       },
       [eA.H.ACCOUNT_REMOVE_2FA]: {
         searchableTitles: [eC.intl.string(eC.t["D+aE7g"])],
         section: ex.nc_.ACCOUNT,
         parent: eA.H.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => ez
+        predicate: () => eK
       },
       [eA.H.ACCOUNT_VIEW_BACKUP_CODES]: {
         searchableTitles: [eC.intl.string(eC.t.fZSi1D)],
@@ -1285,7 +1285,7 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eC.intl.string(eC.t["8/udY0"])],
         label: eC.intl.string(eC.t["8/udY0"]),
         ariaLabel: eC.intl.string(eC.t["8/udY0"]),
-        element: K.A
+        element: z.A
       },
       [eA.H.SETTINGS_ADVANCED_DEVELOPER_MODE]: {
         section: ex.nc_.ADVANCED,
@@ -1309,7 +1309,7 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ex.nc_.ADVANCED,
         searchableTitles: [eC.intl.string(eC.t.erOqlh)],
         parent: eA.H.SETTINGS_ADVANCED,
-        predicate: () => eK
+        predicate: () => ez
       },
       [eA.H.PRIVATE_BROWSING_PERK]: {
         section: ex.nc_.PRIVATE_BROWSING,
@@ -1325,7 +1325,7 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eC.intl.string(eC.t.Cq98yL)],
         label: eC.intl.string(eC.t.Cq98yL),
         ariaLabel: eC.intl.string(eC.t.Cq98yL),
-        element: z.Ay,
+        element: K.Ay,
         predicate: () => !eU,
         url: ex.BVt.SETTINGS("activity-privacy")
       },
