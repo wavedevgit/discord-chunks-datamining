@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 823092, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L_: () => u,
@@ -16,13 +16,13 @@ let c = Chunk64700.createContext(true);
 function d(e) {
   let {
     children: t
-  } = e, n = i.useRef(l.n3), [d, u] = i.useState(false), _ = i.useCallback(e => {
+  } = e, n = i.useRef(l.n3), [d, u] = i.useState(false), p = i.useCallback(e => {
     var t;
     u(null != (t = null == e ? true : e.some(e => {
       var t;
       return e.showNotice() && !(null == (t = e.canCloseEarly) ? true : t.call(e))
     })) && t), n.current = l.n3
-  }, []), p = i.useCallback(e => {
+  }, []), _ = i.useCallback(e => {
     if (d) {
       (0, a.fO)({
         duration: 300,
@@ -32,10 +32,10 @@ function d(e) {
     }
     e()
   }, [d]), m = i.useMemo(() => ({
-    navigateWithValidation: p,
+    navigateWithValidation: _,
     showNotice: d,
-    handleStoreUpdate: _
-  }), [p, d, _]);
+    handleStoreUpdate: p
+  }), [_, d, p]);
   return (0, r.jsx)(c.Provider, {
     value: m,
     children: t

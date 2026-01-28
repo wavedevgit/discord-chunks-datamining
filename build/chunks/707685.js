@@ -1,7 +1,7 @@
 /** Chunk was on 48654 **/
 /** chunk id: 707685, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => o,
+  b: () => a,
   w: () => l
 });
 var Chunk803842 = require("./803842.js"),
@@ -11,6 +11,6 @@ let l = {
     [Chunk652215.IWg.MODAL_CAROUSEL_PREV]: Chunk803842.$4,
     [Chunk652215.IWg.CLOSE_MODAL]: Chunk803842.cu
   },
-  o = {
+  a = {
     [Chunk652215.IWg.CLOSE_MODAL]: Chunk803842.cu
   }

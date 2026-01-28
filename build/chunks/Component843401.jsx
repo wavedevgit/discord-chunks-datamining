@@ -1,8 +1,8 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 843401, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h,
-  I: () => f
+  A: () => j,
+  I: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
@@ -18,26 +18,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk726097 = require("./726097.js");
 
-function A(e) {
+function p(e) {
   let {
     game: t,
     application: n
   } = e;
-  return null == t || null == n ? (0, r.jsx)("div", {
-    className: g.zc,
-    children: (0, r.jsx)(a.EpV, {
+  return null == t || null == n ? (0, i.jsx)("div", {
+    className: A.zc,
+    children: (0, i.jsx)(a.EpV, {
       size: "sm",
       color: a.LU0.colors.TEXT_FEEDBACK_WARNING
     })
-  }) : (0, r.jsxs)("div", {
-    className: g.nt,
-    children: [(0, r.jsx)(c.A, {
+  }) : (0, i.jsxs)("div", {
+    className: A.nt,
+    children: [(0, i.jsx)(c.A, {
       game: n,
       pid: t.pid,
       size: c.M.MEDIUM
-    }), (0, r.jsx)("div", {
-      className: g.Am,
-      children: (0, r.jsx)(a.EpV, {
+    }), (0, i.jsx)("div", {
+      className: A.Am,
+      children: (0, i.jsx)(a.EpV, {
         size: "sm",
         color: a.LU0.colors.TEXT_FEEDBACK_WARNING
       })
@@ -45,55 +45,55 @@ function A(e) {
   })
 }
 
-function f(e) {
-  let t = (0, s.bG)([d.A], () => d.A.getMode()),
+function m(e) {
+  let t = (0, r.bG)([d.A], () => d.A.getMode()),
     {
       runningGame: n,
-      runningGameApplication: r
+      runningGameApplication: i
     } = (0, o.A)();
-  null == n || n.elevated || (n = true, r = true);
-  let i = (0, _.NP)(),
-    l = i && null != n && t === p.TBI.PUSH_TO_TALK;
+  null == n || n.elevated || (n = true, i = true);
+  let s = (0, g.NP)(),
+    l = s && null != n && t === h.TBI.PUSH_TO_TALK;
   return {
-    canPrompt: "voice" === e ? l : i,
+    canPrompt: "voice" === e ? l : s,
     runningGame: n,
-    runningGameApplication: r
+    runningGameApplication: i
   }
 }
 
-function h(e) {
+function j(e) {
   let {
     className: t,
     sourcePage: n
   } = e, {
-    canPrompt: i,
-    runningGame: s,
+    canPrompt: s,
+    runningGame: r,
     runningGameApplication: o
-  } = f(n);
-  return i ? (0, r.jsxs)("div", {
-    className: l()(g.kL, t),
-    children: [(0, r.jsx)(A, {
-      game: s,
+  } = m(n);
+  return s ? (0, i.jsxs)("div", {
+    className: l()(A.kL, t),
+    children: [(0, i.jsx)(p, {
+      game: r,
       application: o
-    }), (0, r.jsxs)("div", {
-      className: g.FS,
-      children: [(0, r.jsx)(a.Text, {
+    }), (0, i.jsxs)("div", {
+      className: A.FS,
+      children: [(0, i.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-strong",
-        children: "voice" === n ? m.intl.string(m.t.vxfv7v) : null != s ? m.intl.string(m.t.fAYU2G) : m.intl.string(m.t["9V4X/c"])
-      }), (0, r.jsx)(a.Text, {
+        children: "voice" === n ? x.intl.string(x.t.vxfv7v) : null != r ? x.intl.string(x.t.fAYU2G) : x.intl.string(x.t["9V4X/c"])
+      }), (0, i.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        children: m.intl.format(m.t["/y6htt"], {
-          helpCenterLink: u.A.getArticleURL(p.MVz.SYSTEM_SERVICE)
+        children: x.intl.format(x.t["/y6htt"], {
+          helpCenterLink: u.A.getArticleURL(h.MVz.SYSTEM_SERVICE)
         })
       })]
-    }), (0, r.jsx)(a.Button, {
+    }), (0, i.jsx)(a.Button, {
       variant: "secondary",
       size: "sm",
-      text: m.intl.string(m.t["1iI46O"]),
+      text: x.intl.string(x.t["1iI46O"]),
       onClick: function() {
-        (0, _.sL)(n + (null != s ? "-with-game" : "-no-game"))
+        (0, g.sL)(n + (null != r ? "-with-game" : "-no-game"))
       }
     })]
   }) : null

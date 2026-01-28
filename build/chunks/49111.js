@@ -1,10 +1,9 @@
-/** Chunk was on 82575 **/
-/** chunk id: 49111, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 28979 **/
+/** chunk id: 49111, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  LK: () => l,
-  _9: () => s
+  _9: () => l
 });
-let i = (0, require("./945810.js").mj)({
+let n = (0, require("./945810.js").mj)({
   name: "2025-12-server-trending-notification",
   kind: "user",
   defaultConfig: {
@@ -20,14 +19,8 @@ let i = (0, require("./945810.js").mj)({
   }
 });
 
-function s(e) {
-  return i.useConfig({
-    location: e
+function l(t) {
+  return n.useConfig({
+    location: t
   })
-}
-
-function l(e) {
-  return i.getConfig({
-    location: e
-  }).showSettingsToggle
 }

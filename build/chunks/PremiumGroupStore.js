@@ -1,9 +1,9 @@
-/** Chunk was on 60667 **/
-/** chunk id: 233317, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 6593 **/
+/** chunk id: 233317, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => d
 });
-var r, i, Chunk311907 = require("./311907.js"),
+var a, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk166403 = require("./166403.js"),
   Chunk677185 = require("./677185.js"),
@@ -22,23 +22,23 @@ let u = {
   }
 };
 
-function _() {
+function h() {
   u.membersData.isUpdating = true
 }
 
-function p(e) {
+function R(e) {
   let {
     subscriptionId: t
   } = e;
-  s.h.wait(() => (0, o.mm)(t).catch(d.FXj)), u.membersData.isUpdating = false
+  n.h.wait(() => (0, c.mm)(t).catch(l.FXj)), u.membersData.isUpdating = false
 }
 
 function m() {
   u.membersData.isUpdating = false
 }
-class g extends(i = Chunk311907.Ay.Store) {
+class M extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(a.A)
+    this.waitFor(_.A)
   }
   getMembers() {
     return u.membersData.data
@@ -65,25 +65,25 @@ class g extends(i = Chunk311907.Ay.Store) {
     return null == u.membersData.data ? 0 : u.membersData.data.members.length
   }
   getNumAvailableInvites() {
-    if (null == u.membersData.data) return c.LM;
+    if (null == u.membersData.data) return E.LM;
     let e = u.membersData.data.members.length + u.membersData.data.invitedUsers.length;
-    return Math.max(0, c.LM - e)
+    return Math.max(0, E.LM - e)
   }
   getNumTotalSeats() {
-    return c.LM
+    return E.LM
   }
-}(r = "displayName") in g ? Object.defineProperty(g, r, {
+}(a = "displayName") in M ? Object.defineProperty(M, a, {
   value: "PremiumGroupStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : g[r] = "PremiumGroupStore";
-let A = new g(Chunk73153.h, {
+}) : M[a] = "PremiumGroupStore";
+let d = new M(Chunk73153.h, {
   PREMIUM_GROUP_MEMBERS_REQUEST: function(e) {
     let {
       subscriptionId: t
     } = e;
-    return !u.membersData.isFetching && (s.h.wait(() => (0, o.mm)(t).catch(d.FXj)), true)
+    return !u.membersData.isFetching && (n.h.wait(() => (0, c.mm)(t).catch(l.FXj)), true)
   },
   PREMIUM_GROUP_MEMBERS_FETCH_START: function() {
     u.membersData.isFetching = true
@@ -98,7 +98,7 @@ let A = new g(Chunk73153.h, {
     u.membersData.isFetching = false
   },
   PREMIUM_GROUP_MEMBERSHIP_REQUEST: function() {
-    return !u.membershipData.isFetching && (s.h.wait(() => (0, o.JV)().catch(d.FXj)), true)
+    return !u.membershipData.isFetching && (n.h.wait(() => (0, c.JV)().catch(l.FXj)), true)
   },
   PREMIUM_GROUP_MEMBERSHIP_FETCH_START: function() {
     u.membershipData.isFetching = true
@@ -115,20 +115,20 @@ let A = new g(Chunk73153.h, {
   PREMIUM_GROUP_MEMBERSHIP_FETCH_FAILURE: function() {
     u.membershipData.isFetching = false, u.membershipData.hasFetched = true
   },
-  PREMIUM_GROUP_INVITE_USERS_START: _,
-  PREMIUM_GROUP_INVITE_USERS_SUCCESS: p,
+  PREMIUM_GROUP_INVITE_USERS_START: h,
+  PREMIUM_GROUP_INVITE_USERS_SUCCESS: R,
   PREMIUM_GROUP_INVITE_USERS_FAILURE: m,
-  PREMIUM_GROUP_REMOVE_MEMBER_START: _,
-  PREMIUM_GROUP_REMOVE_MEMBER_SUCCESS: p,
+  PREMIUM_GROUP_REMOVE_MEMBER_START: h,
+  PREMIUM_GROUP_REMOVE_MEMBER_SUCCESS: R,
   PREMIUM_GROUP_REMOVE_MEMBER_FAILURE: m,
-  PREMIUM_GROUP_REMOVE_INVITE_START: _,
-  PREMIUM_GROUP_REMOVE_INVITE_SUCCESS: p,
+  PREMIUM_GROUP_REMOVE_INVITE_START: h,
+  PREMIUM_GROUP_REMOVE_INVITE_SUCCESS: R,
   PREMIUM_GROUP_REMOVE_INVITE_FAILURE: function(e) {
     let {
       errorCode: t,
-      subscriptionId: n
+      subscriptionId: r
     } = e;
-    if (t === c.Hy.BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED) return s.h.wait(() => (0, o.mm)(n).catch(d.FXj)), u.membersData.isUpdating = false, true;
+    if (t === E.Hy.BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED) return n.h.wait(() => (0, c.mm)(r).catch(l.FXj)), u.membersData.isUpdating = false, true;
     m()
   },
   LOGOUT: function() {

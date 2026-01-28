@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 227273, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -19,7 +19,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk657989 = require("./657989.js");
-let b = e => {
+let A = e => {
     let {
       isShowingAll: t,
       onClick: n
@@ -27,7 +27,7 @@ let b = e => {
     return (0, r.jsxs)(o.DUT, {
       onClick: n,
       className: h.customButton,
-      children: [t ? f.intl.string(f.t.maZaN3) : f.intl.string(f.t["37C26f"]), t ? (0, r.jsx)(o.tN5, {
+      children: [t ? b.intl.string(b.t.maZaN3) : b.intl.string(b.t["37C26f"]), t ? (0, r.jsx)(o.tN5, {
         size: "md",
         color: "currentColor",
         className: h.arrow
@@ -49,17 +49,17 @@ let b = e => {
       isNew: m = false,
       isEarlyAccess: g = false
     } = e, {
-      analyticsLocations: A
+      analyticsLocations: f
     } = (0, u.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD);
     return (0, r.jsx)(u.f5, {
-      value: A,
+      value: f,
       children: (0, r.jsxs)("div", {
         className: s()(h.perkCard, i),
-        children: [m ? (0, r.jsx)(p.A, {
+        children: [m ? (0, r.jsx)(_.A, {
           className: h.perkCardNewBadge,
           shouldInheritBackgroundColor: true,
           shouldInheritTextColor: true
-        }) : null, g ? (0, r.jsx)(_.A, {
+        }) : null, g ? (0, r.jsx)(p.A, {
           className: h.perkCardEarlyAccessBadge
         }) : null, (0, r.jsx)("img", {
           src: l,
@@ -73,7 +73,7 @@ let b = e => {
           }), (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             className: h.perkCardDescription,
-            children: "function" == typeof n ? n(A) : n
+            children: "function" == typeof n ? n(f) : n
           })]
         })]
       })
@@ -83,21 +83,21 @@ let b = e => {
     let {
       className: t,
       isSubscriberNitroHome: n = false
-    } = e, [l, d] = i.useState(false), _ = (0, g.d)({
+    } = e, [l, d] = i.useState(false), p = (0, g.d)({
       styles: h
-    }), p = (0, a.bG)([c.A], () => c.A.useReducedMotion), {
+    }), _ = (0, a.bG)([c.A], () => c.A.useReducedMotion), {
       analyticsLocations: x
-    } = (0, u.Ay)(), O = [_.emoji, _.streaming, _.upload, _.customAppIcons, _.soundboard, _.videoBackground, _.superReactions, _.stickersPremiumPerk, _.badgeAlt];
+    } = (0, u.Ay)(), O = [p.emoji, p.streaming, p.upload, p.customAppIcons, p.soundboard, p.videoBackground, p.superReactions, p.stickersPremiumPerk, p.badgeAlt];
     return (0, r.jsxs)("div", {
       className: s()(h.perksContainer, t, {
         [h.partiallyHidden]: n && !l,
         [h.subscriberNitroHome]: n,
-        [h.reducedMotion]: p
+        [h.reducedMotion]: _
       }),
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-xxl/extrabold",
         className: h.perksTitle,
-        children: n ? f.intl.string(f.t.QX14gI) : f.intl.string(f.t.RGadQR)
+        children: n ? b.intl.string(b.t.QX14gI) : b.intl.string(b.t.RGadQR)
       }), (0, r.jsx)("div", {
         className: s()(h.perkCardContainer, {
           [h.perkCardContainerExpanded]: l
@@ -126,9 +126,9 @@ let b = e => {
             [h.sizeGizmo]: !l,
             [h.sizeGizmoExpanded]: l
           }),
-          children: (0, r.jsx)(b, {
+          children: (0, r.jsx)(A, {
             onClick: () => {
-              m.default.track(A.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
+              m.default.track(f.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
                 location_stack: x,
                 was_expanded: l
               }), d(!l)

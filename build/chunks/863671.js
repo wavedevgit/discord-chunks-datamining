@@ -16,33 +16,33 @@ var Chunk64700 = require("./64700.js"),
   Chunk766761 = require("./766761.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let g = (0, Chunk419954.zZ)(Chunk780964.X.SESSIONS_CATEGORY, {
-    buildLayout: () => [d.I, S.A],
+let _ = (0, Chunk419954.zZ)(Chunk780964.X.SESSIONS_CATEGORY, {
+    buildLayout: () => [A.I, S.A],
     initialize: () => ((0, r.GY)(), () => {
       (0, r.ZQ)()
     }),
     useInlineNotice: function() {
       return n.useMemo(() => ({
         type: a.W.STRONGLY_DISCOURAGED_CUSTOM,
-        notice: A.jH
+        notice: d.jH
       }), [])
     }
   }),
   c = (0, Chunk419954.t_)(Chunk780964.X.SESSIONS_PANEL, {
     usePredicate: () => !(0, T.dk)("LegacySessionsPanel"),
-    useTitle: () => _.intl.string(_.t["+1h0k/"]),
+    useTitle: () => g.intl.string(g.t["+1h0k/"]),
     hideInStreamerMode: true,
     StronglyDiscouragedCustomComponent: Chunk119762.Ay,
     buildLayout: () => []
   }),
   I = (0, Chunk419954.t_)(Chunk780964.X.SESSIONS_PANEL, {
     usePredicate: () => (0, T.dk)("SessionsPanel"),
-    useTitle: () => _.intl.string(_.t["+1h0k/"]),
+    useTitle: () => g.intl.string(g.t["+1h0k/"]),
     hideInStreamerMode: true,
-    buildLayout: () => [g]
+    buildLayout: () => [_]
   }),
   O = (0, Chunk419954.i4)(Chunk780964.X.SESSIONS_SIDEBAR_ITEM, {
-    useTitle: () => _.intl.string(_.t["+1h0k/"]),
+    useTitle: () => g.intl.string(g.t["+1h0k/"]),
     getLegacySearchKey: () => (0, T.WJ)("SessionsPanel") ? true : E.H.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
     icon: Chunk934551.LaptopPhoneIcon,
     trailing: {

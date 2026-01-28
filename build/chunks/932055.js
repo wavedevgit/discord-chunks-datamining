@@ -3,7 +3,7 @@
 require.d(exports, {
   Jz: () => S,
   i: () => E,
-  vd: () => d
+  vd: () => A
 }), require("./321073.js");
 var Chunk311907 = require("./311907.js"),
   Chunk264686 = require("./264686.js"),
@@ -13,22 +13,22 @@ var Chunk311907 = require("./311907.js"),
   Chunk803224 = require("./803224.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
-let A = (0, Chunk839214.D)(() => ({
+let d = (0, Chunk839214.D)(() => ({
   currentPlayingSound: null
 }));
 
-function d() {
-  let t = A.getField("currentPlayingSound");
-  null == t || t.stop(), A.setState({
+function A() {
+  let t = d.getField("currentPlayingSound");
+  null == t || t.stop(), d.setState({
     currentPlayingSound: null
   })
 }
 
 function S(t) {
-  let e = A.getField("currentPlayingSound");
+  let e = d.getField("currentPlayingSound");
   null == e || e.stop();
   let i = (0, u.Ak)(t);
-  A.setState({
+  d.setState({
     currentPlayingSound: i
   })
 }

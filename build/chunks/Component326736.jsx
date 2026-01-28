@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 326736, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -29,19 +29,19 @@ let E = e => {
     } = e, s = (0, r.jsx)(o.Heading, {
       variant: "heading-xxl/extrabold",
       color: "text-strong",
-      className: null != l ? l : b.R_,
+      className: null != l ? l : A.R_,
       children: i
     });
     return null == t ? s : n ? (0, r.jsxs)("div", {
-      className: b.bV,
+      className: A.bV,
       children: [s, null != t && (0, r.jsx)("div", {
-        className: b.W0,
+        className: A.W0,
         children: t
       })]
     }) : (0, r.jsx)("div", {
-      className: b.kL,
+      className: A.kL,
       children: (0, r.jsx)("div", {
-        className: b.pr,
+        className: A.pr,
         children: s
       })
     })
@@ -54,61 +54,61 @@ let E = e => {
       leftAlignHeaders: x = false,
       showAllPerksButton: O,
       headerClassname: C
-    } = e, T = i.useRef(null), I = n === A.cJ.WHATS_NEW, S = (0, a.bG)([d.default], () => d.default.getCurrentUser()), j = (0, m.E)();
+    } = e, y = i.useRef(null), j = n === f.cJ.WHATS_NEW, T = (0, a.bG)([d.default], () => d.default.getCurrentUser()), v = (0, m.E)();
     i.useEffect(() => {
-      I && j()
-    }, [j, I]);
-    let v = (0, f.G4)(I),
-      N = (0, g.A)(),
-      y = (0, f.LQ)(),
+      j && v()
+    }, [v, j]);
+    let S = (0, b.G4)(j),
+      I = (0, g.A)(),
+      N = (0, b.LQ)(),
       {
         fractionalState: P
       } = (0, c.A)(),
       R = (0, u.d)(),
-      D = _.A.useExperiment({
+      D = p.A.useExperiment({
         location: "PremiumPerks"
       }).enabled,
-      w = (0, p.O9)(),
-      L = (0, f.vx)({
-        perksCards: N,
+      w = (0, _.O9)(),
+      L = (0, b.vx)({
+        perksCards: I,
         variant: n,
         hideCardsOnNarrowScreen: false,
-        isPremiumSubscriber: y,
+        isPremiumSubscriber: N,
         fractionalState: P,
         isInReverseTrial: R,
         recurring3PPromotionExperiment: D,
         showPremiumGroup: w,
-        isPremiumGroupMember: null == S ? true : S.isPremiumGroupMember()
+        isPremiumGroupMember: null == T ? true : T.isPremiumGroupMember()
       }),
       M = L.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
-      ref: T,
-      className: s()(b.uW, {
-        [b.qO]: !x,
-        [b.Uv]: x
+      ref: y,
+      className: s()(A.uW, {
+        [A.qO]: !x,
+        [A.Uv]: x
       }, t),
       children: [(0, r.jsx)(E, {
         showAllPerksButton: O,
         leftAlignHeaders: x,
-        title: v.title,
+        title: S.title,
         headerClassname: C
       }), (0, r.jsx)(o.Text, {
         variant: "text-lg/normal",
         color: "text-strong",
-        className: s()(b.VA, {
-          [b.VA]: null == O || x,
-          [b.Xx]: null != O && !x,
-          [b.Ij]: I || x,
-          [b.Ob]: M,
-          [b.dO]: x,
-          [b.br]: !x
+        className: s()(A.VA, {
+          [A.VA]: null == O || x,
+          [A.Xx]: null != O && !x,
+          [A.Ij]: j || x,
+          [A.Ob]: M,
+          [A.dO]: x,
+          [A.br]: !x
         }),
-        children: v.subtitle
+        children: S.subtitle
       }), !x && null != O && (0, r.jsx)("div", {
-        className: b.xk,
+        className: A.xk,
         children: O
       }), (0, r.jsx)("div", {
-        className: b.Ui,
+        className: A.Ui,
         children: L.map((e, t) => {
           var n, i;
           return (0, r.jsx)(h.A, (n = function(e) {

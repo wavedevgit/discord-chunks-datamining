@@ -16,22 +16,22 @@ var Chunk934551 = require("./934551.js"),
   Chunk709747 = require("./709747.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let g = (0, Chunk419954.zZ)(Chunk780964.X.GIFT_INVENTORY_CATEGORY, {
-    buildLayout: () => [T.V, d.E, A.R, S.Y]
+let _ = (0, Chunk419954.zZ)(Chunk780964.X.GIFT_INVENTORY_CATEGORY, {
+    buildLayout: () => [T.V, A.E, d.R, S.Y]
   }),
   c = (0, Chunk419954.t_)(Chunk780964.X.GIFT_PANEL, {
     usePredicate: () => !(0, a.dk)("LegacyGiftPanel"),
-    useTitle: () => _.intl.string(_.t["jcSP+g"]),
+    useTitle: () => g.intl.string(g.t["jcSP+g"]),
     StronglyDiscouragedCustomComponent: Chunk586685.Ay,
     buildLayout: () => []
   }),
   I = (0, Chunk419954.t_)(Chunk780964.X.GIFT_PANEL, {
     usePredicate: () => (0, a.dk)("GiftPanel"),
-    useTitle: () => _.intl.string(_.t["jcSP+g"]),
-    buildLayout: () => [g]
+    useTitle: () => g.intl.string(g.t["jcSP+g"]),
+    buildLayout: () => [_]
   }),
   O = (0, Chunk419954.i4)(Chunk780964.X.GIFT_SIDEBAR_ITEM, {
-    useTitle: () => _.intl.string(_.t["jcSP+g"]),
+    useTitle: () => g.intl.string(g.t["jcSP+g"]),
     getLegacySearchKey: () => (0, a.WJ)("GiftPanel") ? true : E.H.GIFT_INVENTORY,
     icon: Chunk934551.GiftIcon,
     trailing: {

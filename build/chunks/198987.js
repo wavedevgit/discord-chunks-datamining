@@ -28,5 +28,5 @@ let E = (0, Chunk419954.zZ)(Chunk780964.X.SOUNDS_CATEGORY, {
       }
     }, [t])
   },
-  buildLayout: () => [d.Y, T.F, A.D]
+  buildLayout: () => [A.Y, T.F, d.D]
 })

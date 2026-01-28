@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 638324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,12 +28,12 @@ var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
 
-function S(e) {
+function T(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, S = (0, A.q9)(), j = (0, m.K)(), v = g.$s.useSetting().includes(n), N = (0, o.uM)(), y = g.YX.useSetting(), P = g.Zr.useSetting().includes(n), R = i.useCallback(e => {
-    let r = (0, _.xo)();
+  } = e, T = (0, f.q9)(), v = (0, m.K)(), S = g.$s.useSetting().includes(n), I = (0, o.uM)(), N = g.YX.useSetting(), P = g.Zr.useSetting().includes(n), R = i.useCallback(e => {
+    let r = (0, p.xo)();
     e ? r.delete(n) : r.add(n), g.Zr.updateSetting(Array.from(r)), d.default.track(C.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: E.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
       ingress: t,
@@ -50,13 +50,13 @@ function S(e) {
 
   function w(e, t) {
     var n;
-    !e && (0, p.w)() ? s.A.showAgeVerificationGetStartedModal({
+    !e && (0, _.w)() ? s.A.showAgeVerificationGetStartedModal({
       entryPoint: a.q1.MESSAGE_REQUESTS_SETTINGS
-    }) : t ? R(e) : (n = !e, (0, b.O)({
-      header: T.intl.string(T.t.yAfu1p),
-      body: T.intl.string(T.t.Ry2z74),
-      confirmText: T.intl.string(T.t.gm1Vej),
-      cancelText: T.intl.string(T.t.p89ACt),
+    }) : t ? R(e) : (n = !e, (0, A.O)({
+      header: y.intl.string(y.t.yAfu1p),
+      body: y.intl.string(y.t.Ry2z74),
+      confirmText: y.intl.string(y.t.gm1Vej),
+      cancelText: y.intl.string(y.t.p89ACt),
       confirmButtonColor: l.$n.Colors.BRAND,
       onConfirm: () => {
         g.YX.updateSetting(n), D(n, false)
@@ -66,38 +66,38 @@ function S(e) {
       }
     }))
   }
-  return (0, r.jsx)(f.h, {
+  return (0, r.jsx)(b.h, {
     setting: O.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: x.d1.MESSAGE_REQUESTS_V2,
     children: "0" === n ? (0, r.jsx)(h.Ay, {
-      title: T.intl.string(T.t["3o2ojh"]),
-      value: !j && !y,
+      title: y.intl.string(y.t["3o2ojh"]),
+      value: !v && !N,
       onChange: e => w(e, false),
-      disabled: j || N,
-      tooltipText: N ? T.intl.string(I.default["6Af/cw"]) : true,
-      note: T.intl.format(T.t.wkm9a3, {
+      disabled: v || I,
+      tooltipText: I ? y.intl.string(j.default["6Af/cw"]) : true,
+      note: y.intl.format(y.t.wkm9a3, {
         helpdeskArticle: u.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
       })
     }) : (0, r.jsx)(h.Ay, {
-      title: T.intl.string(T.t["3o2ojh"]),
-      value: !v && !P,
+      title: y.intl.string(y.t["3o2ojh"]),
+      value: !S && !P,
       onChange: e => w(e, true),
-      disabled: v,
-      note: S ? T.intl.format(T.t.WpnWLc, {
+      disabled: S,
+      note: T ? y.intl.format(y.t.WpnWLc, {
         helpdeskArticle: u.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
-      }) : T.intl.format(T.t.wkm9a3, {
+      }) : y.intl.format(y.t.wkm9a3, {
         helpdeskArticle: u.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
       })
     })
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     ingress: t = x.bf.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
-  } = e, i = (0, A.Tx)();
-  return (0, r.jsx)(S, {
+  } = e, i = (0, f.Tx)();
+  return (0, r.jsx)(T, {
     ingress: t,
     guildId: null != n ? n : i
   })

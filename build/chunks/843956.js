@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 843956, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  K: () => g
+  K: () => _
 });
 var Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
@@ -16,7 +16,7 @@ var Chunk419954 = require("./419954.js"),
   Chunk814870 = require("./814870.jsx"),
   Chunk863671 = require("./863671.js"),
   Chunk985018 = require("./985018.jsx");
-let g = (0, Chunk419954.WI)(Chunk780964.X.USER_SECTION, {
-  useTitle: () => _.intl.string(_.t.cduTBL),
-  buildLayout: () => [s.J, o.TC, T.v, A.T, r.J, E.$, a.z, d.e, u.r, S.u]
+let _ = (0, Chunk419954.WI)(Chunk780964.X.USER_SECTION, {
+  useTitle: () => g.intl.string(g.t.cduTBL),
+  buildLayout: () => [s.J, o.TC, T.v, d.T, r.J, E.$, a.z, A.e, u.r, S.u]
 })

@@ -1,13 +1,13 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 12618 **/
 /** chunk id: 451802, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x,
-  E: () => h
+  A: () => v,
+  E: () => _
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk507392 = require("./507392.js"),
   c = require.n(Chunk507392),
   Chunk735438 = require("./735438.js"),
@@ -26,12 +26,12 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var h = ((r = {}).DEFAULT = "DEFAULT", r.RECORDING = "RECORDING", r);
-let b = {
+var _ = ((r = {}).DEFAULT = "DEFAULT", r.RECORDING = "RECORDING", r);
+let O = {
   DEFAULT: Chunk181204.__invalid_default,
   RECORDING: Chunk181204.oz
 };
-class E extends Chunk64700.PureComponent {
+class C extends Chunk64700.PureComponent {
   componentWillUnmount() {
     null != this._unregisterNativeRecorder && this._unregisterNativeRecorder()
   }
@@ -57,33 +57,33 @@ class E extends Chunk64700.PureComponent {
         value: n,
         disabled: r
       } = this.props,
-      l = (0, m.dI)(n, true);
-    return e = "RECORDING" === t ? g.intl.string(g.t.bmOri0) : 0 === n.length ? g.intl.string(g.t.co3wt9) : g.intl.string(g.t.idFMvH), (0, i.jsx)(_.vN3, {
+      s = (0, b.dI)(n, true);
+    return e = "RECORDING" === t ? m.intl.string(m.t.bmOri0) : 0 === n.length ? m.intl.string(m.t.co3wt9) : m.intl.string(m.t.idFMvH), (0, i.jsx)(h.vN3, {
       focusTarget: this._inputRef,
       ringTarget: this._containerRef,
       children: (0, i.jsx)("div", {
         onClick: this.handleClick,
         onMouseDown: this.handleMouseDown,
         ref: this._containerRef,
-        className: a()(A.Qm, b[t], {
-          [A.Qz]: r
+        className: l()(g.Qm, O[t], {
+          [g.Qz]: r
         }),
         children: (0, i.jsxs)(p.A, {
-          className: A.Pp,
+          className: g.Pp,
           children: [(0, i.jsx)(p.A.Child, {
-            className: A.bZ,
+            className: g.bZ,
             children: (0, i.jsx)("input", {
               id: this._inputId,
-              placeholder: g.intl.string(g.t.nWRdnl),
+              placeholder: m.intl.string(m.t.nWRdnl),
               type: "text",
               ref: this.setInputRef,
               readOnly: true,
-              value: l,
+              value: s,
               disabled: "RECORDING" !== this.props.mode || r
             })
           }), (0, i.jsx)("div", {
-            className: A.UD,
-            children: (0, i.jsx)(_.Button, {
+            className: g.UD,
+            children: (0, i.jsx)(h.Button, {
               size: "sm",
               variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",
               text: e,
@@ -98,7 +98,7 @@ class E extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_inputId", u().uniqueId("key-recorder-")), f(this, "_unregisterNativeRecorder", null), f(this, "_mousedownMode", null), f(this, "_inputRef", l.createRef()), f(this, "_containerRef", l.createRef()), f(this, "setInputRef", e => {
+    super(...e), f(this, "_inputId", u().uniqueId("key-recorder-")), f(this, "_unregisterNativeRecorder", null), f(this, "_mousedownMode", null), f(this, "_inputRef", s.createRef()), f(this, "_containerRef", s.createRef()), f(this, "setInputRef", e => {
       var t;
       let {
         registerNativeRecorder: n,
@@ -122,4 +122,4 @@ class E extends Chunk64700.PureComponent {
     })
   }
 }
-let x = E
+let v = C

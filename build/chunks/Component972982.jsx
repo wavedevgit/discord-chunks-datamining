@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 972982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => C
@@ -37,7 +37,7 @@ class O extends Chunk64700.PureComponent {
         hasTOTPEnabled: t
       }), e.length > 0 && (0, r.jsxs)(o.BJc, {
         gap: 16,
-        children: [(0, r.jsx)(A.A, {
+        children: [(0, r.jsx)(f.A, {
           backupCodes: e
         }), (0, r.jsx)(o.cGx, {})]
       }), t && (0, r.jsx)(c.x, {
@@ -54,22 +54,22 @@ class O extends Chunk64700.PureComponent {
   }
   renderDisabled() {
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.A, {}), (0, r.jsx)(d.A, {})]
+      children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(d.A, {})]
     })
   }
   render() {
     let {
       currentUser: e
     } = this.props;
-    return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(E.A, {}) : (0, r.jsx)(b.A, {})
+    return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(E.A, {}) : (0, r.jsx)(A.A, {})
   }
 }
 
 function C(e) {
-  let t = (0, a.bG)([p.default], () => p.default.getCurrentUser());
+  let t = (0, a.bG)([_.default], () => _.default.getCurrentUser());
   s()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-  let n = (0, a.cf)([_.A, u.default], () => ({
-    togglingSMS: _.A.togglingSMS,
+  let n = (0, a.cf)([p.A, u.default], () => ({
+    togglingSMS: p.A.togglingSMS,
     hasTOTPEnabled: u.default.hasTOTPEnabled()
   }));
   return (0, r.jsx)(O, function(e) {

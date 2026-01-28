@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 388773, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,28 +13,28 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk115686 = require("./115686.js");
 
-function _(e) {
+function p(e) {
   var t;
   let n, {
-      node: _
+      node: p
     } = e,
-    [p, m] = i.useState(false),
+    [_, m] = i.useState(false),
     {
       layout: g,
-      collapseAfter: A,
-      useCollapsibleTitle: f,
+      collapseAfter: f,
+      useCollapsibleTitle: b,
       useCollapsedSubtitle: h,
-      initialize: b
-    } = _,
-    E = null != A ? g.slice(0, A) : g,
-    x = null != A ? g.slice(A) : [],
-    O = null != (t = null == f ? true : f(p, x.length)) ? t : (n = x.length, p ? d.intl.formatToPlainString(d.t["3SHL+d"], {
+      initialize: A
+    } = p,
+    E = null != f ? g.slice(0, f) : g,
+    x = null != f ? g.slice(f) : [],
+    O = null != (t = null == b ? true : b(_, x.length)) ? t : (n = x.length, _ ? d.intl.formatToPlainString(d.t["3SHL+d"], {
       count: n
     }) : d.intl.formatToPlainString(d.t["8JRFyZ"], {
       count: n
     })),
     C = null == h ? true : h();
-  return (0, o.Z)(b), (0, r.jsxs)(l.BJc, {
+  return (0, o.Z)(A), (0, r.jsxs)(l.BJc, {
     gap: 8,
     children: [E.map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(s.A, {
@@ -47,7 +47,7 @@ function _(e) {
       }), (0, r.jsx)(c.f, {
         title: O,
         collapsedSubtitle: C,
-        isExpanded: p,
+        isExpanded: _,
         onExpandedChange: m,
         children: (0, r.jsx)(l.BJc, {
           gap: 8,

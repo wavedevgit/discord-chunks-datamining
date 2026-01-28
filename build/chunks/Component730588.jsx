@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 730588, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -23,26 +23,26 @@ function m(e) {
     onBannerChange: i,
     guildId: m,
     className: g,
-    disabled: A = false,
-    showPremiumIcon: f = true,
+    disabled: f = false,
+    showPremiumIcon: b = true,
     isTryItOut: h = false,
-    forcedDivider: b,
+    forcedDivider: A,
     withHighlight: E = false
   } = e, {
     newestAnalyticsLocation: x
   } = (0, o.Ay)(), O = E ? a.wLn : s.$n;
   return (0, r.jsx)(d.A, {
     className: g,
-    title: _.intl.string(_.t.Vgdusv),
-    showPremiumIcon: f,
+    title: p.intl.string(p.t.Vgdusv),
+    showPremiumIcon: b,
     errors: n,
-    disabled: A,
-    forcedDivider: b,
+    disabled: f,
+    forcedDivider: A,
     children: (0, r.jsxs)("div", {
-      className: p.NC,
+      className: _.NC,
       children: [(0, r.jsx)(O, {
         className: l()({
-          [p.yj]: E
+          [_.yj]: E
         }),
         size: s.$n.Sizes.SMALL,
         onClick: () => (0, c.XD)({
@@ -51,14 +51,14 @@ function m(e) {
           guildId: m,
           isTryItOut: h
         }),
-        children: _.intl.string(_.t.N0bC3P)
+        children: p.intl.string(p.t.N0bC3P)
       }), t && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: p.DT,
+        className: _.DT,
         children: (0, r.jsx)(a.Button, {
           variant: "secondary",
           size: "sm",
-          text: null != m ? _.intl.string(_.t.jHlJNS) : _.intl.string(_.t.tT9n7D),
+          text: null != m ? p.intl.string(p.t.jHlJNS) : p.intl.string(p.t.tT9n7D),
           onClick: () => i(null)
         })
       })]

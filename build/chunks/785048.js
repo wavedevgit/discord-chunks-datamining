@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 785048, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  U: () => _
+  U: () => g
 }), require("./896048.js");
 var Chunk419954 = require("./419954.js"),
   Chunk954571 = require("./954571.js"),
@@ -15,7 +15,7 @@ var Chunk419954 = require("./419954.js"),
   Chunk355097 = require("./355097.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let _ = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
+let g = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
   useTitle: () => E.intl.string(E.t["T+nevN"]),
   useSubtitle: () => E.intl.format(E.t.jXKQCu, {
     helpdeskArticle: s.A.getArticleURL(S.MVz.ACTIVITY_STATUS_SETTINGS)
@@ -28,8 +28,8 @@ let _ = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVIT
     let e = o.xk.getState().selectedGuildId,
       i = (0, r.CN)();
     t ? i.delete(e) : i.add(e), u.pE.updateSetting([...i]), l.default.track(S.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: A.m.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
-      ingress: d.bf.USER_SETTINGS_PRIVACY_SAFETY,
+      action: d.m.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
+      ingress: A.bf.USER_SETTINGS_PRIVACY_SAFETY,
       guild_id: e
     })
   },

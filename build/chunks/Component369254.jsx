@@ -20,7 +20,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk644447 = require("./644447.js"),
   Chunk203982 = require("./203982.js"),
   Chunk515718 = require("./515718.js"),
-  Chunk793367 = require("./793367.js"),
+  Chunk700331 = require("./700331.js"),
   Chunk454290 = require("./454290.js"),
   Chunk976247 = require("./976247.jsx"),
   Chunk358731 = require("./358731.js"),
@@ -129,7 +129,7 @@ function P(e) {
     }, c),
     L = d ? e => {
       e.stopPropagation(), e.preventDefault()
-    } : () => (0, g.Yq)(g.NJ.CONTEXT_MENU_OPENED),
+    } : () => g.l.markActionPerformed(g.N.CONTEXT_MENU_OPENED),
     x = t.length > 1;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.Ay, {

@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 305714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -29,46 +29,46 @@ let E = Chunk64700.forwardRef((e, t) => {
     subscriptionTier: O
   } = e, {
     analyticsLocations: C
-  } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), T = (0, _.ar)(), I = (0, u.TM)(), S = i.useRef(null), [j, v] = i.useState(false);
+  } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), y = (0, p.ar)(), j = (0, u.TM)(), T = i.useRef(null), [v, S] = i.useState(false);
   return i.useEffect(() => {
-    !l || x || j || null == S.current || S.current.play()
-  }, [l, x, j]), (0, r.jsx)(c.f5, {
+    !l || x || v || null == T.current || T.current.play()
+  }, [l, x, v]), (0, r.jsx)(c.f5, {
     value: C,
     children: (0, r.jsxs)("div", {
       ref: t,
-      className: s()(A.kL, n),
+      className: s()(f.kL, n),
       children: [(0, r.jsx)(a.Heading, {
-        className: A.RH,
+        className: f.RH,
         variant: "display-md",
         color: "text-strong",
         children: g.intl.string(g.t.lEw32m)
-      }), (0, r.jsx)(p.KN, {
+      }), (0, r.jsx)(_.KN, {
         subscriptionTier: O,
-        inOfferExperience: T,
-        containerClassName: A.Z5,
+        inOfferExperience: y,
+        containerClassName: f.Z5,
         isApplicationHome: true,
         isDarkMode: E
       }), (0, r.jsx)("div", {
-        className: A.av,
+        className: f.av,
         children: (0, r.jsx)(d.A, {
           playsInline: true,
           muted: true,
           preload: "auto",
           poster: h.A,
-          className: A.dV,
+          className: f.dV,
           onEnded: () => {
-            v(true)
+            S(true)
           },
-          ref: S,
+          ref: T,
           children: (0, r.jsx)("source", {
-            src: I ? f.A : b.A,
-            type: I ? m.a.MP4 : m.a.WEBM
+            src: j ? b.A : A.A,
+            type: j ? m.a.MP4 : m.a.WEBM
           })
         })
       }), (0, r.jsx)("div", {
-        className: A.es
+        className: f.es
       }), (0, r.jsx)("div", {
-        className: A.fF
+        className: f.fF
       })]
     })
   })

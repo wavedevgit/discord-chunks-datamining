@@ -1,4 +1,4 @@
-/** Chunk was on 82575 **/
+/** Chunk was on 60449 **/
 /** chunk id: 524738, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g,
@@ -24,7 +24,7 @@ let u = e => {
     s.useEffect(() => {
       x(g)
     }, [g]);
-    let p = s.useMemo(() => {
+    let A = s.useMemo(() => {
       let e = h.component;
       return (0, i.jsx)(e, {})
     }, [h]);
@@ -59,7 +59,7 @@ let u = e => {
         className: r()(d.NM, n, {
           [d.Vd]: "vertical" === u
         }),
-        children: p
+        children: A
       })]
     })
   },
@@ -76,11 +76,11 @@ let u = e => {
     } = e, {
       viewableTabs: h,
       filteredTab: x
-    } = (0, c.A)(n, l), p = null != a ? n[a] : null, A = null != (t = null != p ? p : x) ? t : h[0];
+    } = (0, c.A)(n, l), A = null != a ? n[a] : null, p = null != (t = null != A ? A : x) ? t : h[0];
     return (0, i.jsx)(u, {
       tabs: h,
       orientation: g,
-      defaultTab: A,
+      defaultTab: p,
       onTabChange: e => {
         o.A.setSection(s, e), null == d || d(e)
       },

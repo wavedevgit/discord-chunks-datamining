@@ -19,11 +19,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk280973 = require("./280973.js");
 let I = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_SCREENSHOT_KEYBIND, {
-  useSearchTerms: () => [g.intl.string(g.t["0U/hj7"]), g.intl.string(g.t["5zxkdo"])],
+  useSearchTerms: () => [_.intl.string(_.t["0U/hj7"]), _.intl.string(_.t["5zxkdo"])],
   usePredicate: Chunk734066.BW,
   Component: () => {
-    let t = (0, u.bG)([S.Ay], () => S.Ay.getKeybindForAction(_.hCu.SAVE_CLIP, true)),
-      e = (0, u.bG)([S.Ay], () => S.Ay.getKeybindForAction(_.hCu.SAVE_SCREENSHOT, true));
+    let t = (0, u.bG)([S.Ay], () => S.Ay.getKeybindForAction(g.hCu.SAVE_CLIP, true)),
+      e = (0, u.bG)([S.Ay], () => S.Ay.getKeybindForAction(g.hCu.SAVE_SCREENSHOT, true));
     r()(null != t, "Save clip keybind unset"), r()(null != e, "Save screenshot keybind unset");
     let i = l.useCallback(t => {
       var i, n;
@@ -58,8 +58,8 @@ let I = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_SCREENSHOT_KEYBIND, {
       }), i))
     }, [e]);
     return (0, n.jsx)(a.D0$, {
-      label: g.intl.string(g.t["0U/hj7"]),
-      description: g.intl.string(g.t["5zxkdo"]),
+      label: _.intl.string(_.t["0U/hj7"]),
+      description: _.intl.string(_.t["5zxkdo"]),
       layout: "horizontal",
       children: (0, n.jsx)("div", {
         className: c.g,

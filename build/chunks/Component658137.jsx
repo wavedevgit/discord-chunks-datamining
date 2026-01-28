@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 658137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => N
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,58 +30,58 @@ var Chunk627968 = require("./627968.js"),
   Chunk182514 = require("./182514.js"),
   Chunk619947 = require("./619947.js"),
   Chunk733907 = require("./733907.js");
-let y = Chunk64700.forwardRef((e, t) => {
+let N = Chunk64700.forwardRef((e, t) => {
   let {
     className: n,
     buttonClassName: i,
     subscriptionTier: l,
-    isDarkMode: y,
+    isDarkMode: N,
     isEligibleForBogoPromotion: P,
     videoRef: R
   } = e, {
     analyticsLocations: D
-  } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), w = (0, f.QQ)(), L = (0, A.ar)(), M = (0, a.bG)([g.A], () => g.A.affinities), U = (0, h.A)(), G = null != U, k = y ? o.XD.WHITE : o.XD.BRAND, V = M.length > 0, H = I.intl.string(I.t.YCZldK), B = (0, m.TM)(), F = (0, a.bG)([d.A], () => d.A.useReducedMotion);
-  return (0, r.jsx)(_.f5, {
+  } = (0, p.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), w = (0, b.QQ)(), L = (0, f.ar)(), M = (0, a.bG)([g.A], () => g.A.affinities), G = (0, h.A)(), U = null != G, k = N ? o.XD.WHITE : o.XD.BRAND, H = M.length > 0, B = j.intl.string(j.t.YCZldK), V = (0, m.TM)(), F = (0, a.bG)([d.A], () => d.A.useReducedMotion);
+  return (0, r.jsx)(p.f5, {
     value: D,
     children: (0, r.jsxs)("div", {
-      className: s()(S.kL, S.qY, n),
+      className: s()(T.kL, T.qY, n),
       ref: t,
       "data-testid": "marketing-page-hero-header",
       children: [(0, r.jsx)("div", {
-        className: S.kL,
+        className: T.kL,
         children: (0, r.jsxs)("div", {
-          className: S.s8,
+          className: T.s8,
           children: [L && (0, r.jsx)(C.A, {}), (0, r.jsx)(c.Heading, {
-            className: S.WT,
+            className: T.WT,
             variant: "display-sm",
             color: "text-strong",
-            children: H
-          }), G ? (0, r.jsx)(x.A, {
-            referrer: U
-          }) : V && (0, r.jsx)("div", {
-            className: S.kb,
+            children: B
+          }), U ? (0, r.jsx)(x.A, {
+            referrer: G
+          }) : H && (0, r.jsx)("div", {
+            className: T.kb,
             children: (0, r.jsx)(E.A, {
               textColor: "text-default",
               smallerText: false,
               isApplicationHome: true
             })
           }), w ? (0, r.jsx)("div", {
-            className: s()(S.UD, S.$F, {
-              [S.In]: !(V || G)
+            className: s()(T.UD, T.$F, {
+              [T.In]: !(H || U)
             }),
-            children: (0, r.jsx)(b.A, {
-              className: s()(S.x6, i),
+            children: (0, r.jsx)(A.A, {
+              className: s()(T.x6, i),
               color: k
             })
           }) : (0, r.jsx)(O.KN, {
             subscriptionTier: l,
             inOfferExperience: L,
-            containerClassName: s()(S.$F, {
-              [S.In]: !(V || G)
+            containerClassName: s()(T.$F, {
+              [T.In]: !(H || U)
             }),
             buttonClassName: i,
             isApplicationHome: true,
-            isDarkMode: y,
+            isDarkMode: N,
             isEligibleForBogoPromotion: P
           }), (0, r.jsx)(O.U9, {
             variant: "text-sm/normal",
@@ -90,18 +90,18 @@ let y = Chunk64700.forwardRef((e, t) => {
           })]
         })
       }), (0, r.jsx)("div", {
-        className: S.TT,
-        children: (0, r.jsx)(p.A, {
+        className: T.TT,
+        children: (0, r.jsx)(_.A, {
           autoPlay: !F,
           playsInline: true,
           preload: F ? "none" : "auto",
-          poster: v.A,
+          poster: S.A,
           loop: true,
-          className: S.gm,
+          className: T.gm,
           ref: R,
           children: (0, r.jsx)("source", {
-            src: B ? j.A : N.A,
-            type: B ? T.a.MP4 : T.a.WEBM
+            src: V ? v.A : I.A,
+            type: V ? y.a.MP4 : y.a.WEBM
           })
         })
       })]

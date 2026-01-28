@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 39190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -13,8 +13,8 @@ let o = Chunk64700.forwardRef(function(e, t) {
   let [o, ...c] = [e, t], {
     currentPageIndex: d,
     numPages: u,
-    onChangePage: _,
-    children: p,
+    onChangePage: p,
+    children: _,
     showPageCount: m = true
   } = o, g = function(e, t) {
     if (null == e) return {};
@@ -32,7 +32,7 @@ let o = Chunk64700.forwardRef(function(e, t) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(o, ["currentPageIndex", "numPages", "onChangePage", "children", "showPageCount"]), [A] = c, f = m ? s.intl.format(s.t.MtpIwg, {
+  }(o, ["currentPageIndex", "numPages", "onChangePage", "children", "showPageCount"]), [f] = c, b = m ? s.intl.format(s.t.MtpIwg, {
     currentPage: d + 1,
     numPages: u
   }) : s.intl.format(s.t.bKI77c, {
@@ -56,9 +56,9 @@ let o = Chunk64700.forwardRef(function(e, t) {
     }
     return e
   }({
-    ref: A
+    ref: f
   }, g), i = i = {
-    children: [p, (0, r.jsx)("div", {
+    children: [_, (0, r.jsx)("div", {
       className: a.v,
       children: (0, r.jsxs)("div", {
         className: a.U,
@@ -66,16 +66,16 @@ let o = Chunk64700.forwardRef(function(e, t) {
           variant: "icon-only",
           icon: l.n2b,
           disabled: d <= 0,
-          onClick: () => _(d - 1),
+          onClick: () => p(d - 1),
           "aria-label": s.intl.string(s.t.vgfxaA)
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
-          children: f
+          children: b
         }), (0, r.jsx)(l.K0, {
           variant: "icon-only",
           icon: l._BQ,
           disabled: d >= u - 1,
-          onClick: () => _(d + 1),
+          onClick: () => p(d + 1),
           "aria-label": s.intl.string(s.t.XiOHRX)
         })]
       })

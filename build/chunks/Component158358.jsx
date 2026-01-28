@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 158358, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => C
@@ -28,7 +28,7 @@ function x(e) {
     account: n,
     refreshed: s,
     handleRefresh: o
-  } = e, [c, d] = i.useState(false), _ = null != (t = n.metadata) ? t : {}, g = (0, l.bG)([m.default], () => m.default.locale), x = i.useCallback(async () => {
+  } = e, [c, d] = i.useState(false), p = null != (t = n.metadata) ? t : {}, g = (0, l.bG)([m.default], () => m.default.locale), x = i.useCallback(async () => {
     d(true);
     try {
       await o(n)
@@ -37,36 +37,36 @@ function x(e) {
     }
   }, [n, o]), O = null;
   switch (n.type) {
-    case f.fg2.REDDIT:
-      O = (0, p.xE)(_, E.Nz);
+    case b.fg2.REDDIT:
+      O = (0, _.xE)(p, E.Nz);
       break;
-    case f.fg2.STEAM:
-      O = (0, p.dy)(_, E.Nz);
+    case b.fg2.STEAM:
+      O = (0, _.dy)(p, E.Nz);
       break;
-    case f.fg2.TWITTER:
-      O = (0, p.ED)(_, E.Nz);
+    case b.fg2.TWITTER:
+      O = (0, _.ED)(p, E.Nz);
       break;
-    case f.fg2.EBAY:
-      O = (0, p.ub)(_, E.Nz);
+    case b.fg2.EBAY:
+      O = (0, _.ub)(p, E.Nz);
       break;
-    case f.fg2.PAYPAL:
-      O = (0, p.gZ)(_, E.Nz);
+    case b.fg2.PAYPAL:
+      O = (0, _.gZ)(p, E.Nz);
       break;
-    case f.fg2.TIKTOK:
-      O = (0, p.HU)(_, E.Nz)
+    case b.fg2.TIKTOK:
+      O = (0, _.HU)(p, E.Nz)
   }
-  let C = (0, u.An)(_[h.pK.CREATED_AT], g),
-    T = null,
-    I = b.intl.string(b.t.wzzjk9);
-  return (null == O || 0 === O.length) && null == C && (T = (0, r.jsx)(a.Text, {
+  let C = (0, u.An)(p[h.pK.CREATED_AT], g),
+    y = null,
+    j = A.intl.string(A.t.wzzjk9);
+  return (null == O || 0 === O.length) && null == C && (y = (0, r.jsx)(a.Text, {
     variant: "text-xs/normal",
     color: "text-default",
-    children: b.intl.format(b.t.Up2ni7, {
-      helpdeskUrl: A.A.getArticleURL(f.MVz.CONNECTION_DETAILS)
+    children: A.intl.format(A.t.Up2ni7, {
+      helpdeskUrl: f.A.getArticleURL(b.MVz.CONNECTION_DETAILS)
     })
-  }, "label"), I = b.intl.string(b.t["LVh3/5"])), s && (I = b.intl.string(b.t.i4jeWR)), (0, r.jsxs)("div", {
+  }, "label"), j = A.intl.string(A.t["LVh3/5"])), s && (j = A.intl.string(A.t.i4jeWR)), (0, r.jsxs)("div", {
     className: E.tJ,
-    children: [T, null == O ? true : O.map((e, t) => (0, r.jsxs)(r.Fragment, {
+    children: [y, null == O ? true : O.map((e, t) => (0, r.jsxs)(r.Fragment, {
       children: [e, t < O.length - 1 ? (0, r.jsx)("span", {
         className: E.Om
       }) : null]
@@ -75,7 +75,7 @@ function x(e) {
     }) : null, null != C ? (0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-default",
-      children: b.intl.format(b.t["9rfonh"], {
+      children: A.intl.format(A.t["9rfonh"], {
         date: C
       })
     }, "member-since") : null, (0, r.jsx)("div", {
@@ -85,9 +85,9 @@ function x(e) {
         variant: s ? "active" : "secondary",
         loading: c,
         disabled: s,
-        "aria-label": b.intl.string(b.t.sCkLYH),
+        "aria-label": A.intl.string(A.t.sCkLYH),
         onClick: x,
-        text: I
+        text: j
       }, "refresh-button")
     })]
   })
@@ -98,19 +98,19 @@ function O(e) {
     account: t,
     handleRefresh: n,
     refreshedAccountIds: l
-  } = e, [u, p] = i.useState(t.visibility), [m, g] = i.useState(t.metadataVisibility), A = (0, c.Ay)();
+  } = e, [u, _] = i.useState(t.visibility), [m, g] = i.useState(t.metadataVisibility), f = (0, c.Ay)();
   i.useEffect(() => {
-    p(t.visibility), g(t.metadataVisibility)
+    _(t.visibility), g(t.metadataVisibility)
   }, [t]);
-  let f = d.A.get(t.type),
-    h = true === f.hasMetadata;
+  let b = d.A.get(t.type),
+    h = true === b.hasMetadata;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: E.gd,
       children: [(0, r.jsx)("img", {
-        alt: f.name,
+        alt: b.name,
         className: E.gj,
-        src: (0, s.Mw)(A) ? f.icon.darkSVG : f.icon.lightSVG
+        src: (0, s.Mw)(f) ? b.icon.darkSVG : b.icon.lightSVG
       }), (0, r.jsxs)("div", {
         className: E.$n,
         children: [(0, r.jsxs)("div", {
@@ -121,15 +121,15 @@ function O(e) {
                 verified: n
               } = t, r = +!!e;
               if (e && !n) {
-                p(r), (0, _.A)({
+                _(r), (0, p.A)({
                   platformType: t.type,
                   location: "User Settings"
                 });
                 return
               }
-              p(r), o.A.setVisibility(t.type, t.id, r)
+              _(r), o.A.setVisibility(t.type, t.id, r)
             },
-            label: f.name
+            label: b.name
           }), h && (0, r.jsx)(x, {
             account: t,
             refreshed: l.includes(t.id),
@@ -143,7 +143,7 @@ function O(e) {
               verified: n
             } = t, r = +!!e;
             if (e && !n) {
-              g(r), (0, _.A)({
+              g(r), (0, p.A)({
                 platformType: t.type,
                 location: "User Settings"
               });
@@ -151,7 +151,7 @@ function O(e) {
             }
             g(r), o.A.setMetadataVisibility(t.type, t.id, r)
           },
-          label: b.intl.string(b.t["3l78wo"])
+          label: A.intl.string(A.t["3l78wo"])
         })]
       })]
     }), (0, r.jsx)(a.cGx, {})]
@@ -167,7 +167,7 @@ function C() {
     }), []);
   return 0 === t.length ? null : (0, r.jsx)(a.nVY, {
     className: E.kL,
-    label: b.intl.string(b.t.aw0GVS),
+    label: A.intl.string(A.t.aw0GVS),
     children: t.map(e => (0, r.jsx)(O, {
       account: e,
       handleRefresh: c,

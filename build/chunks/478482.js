@@ -1,5 +1,5 @@
-/** Chunk was on 60667 **/
-/** chunk id: 478482, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 40543 **/
+/** chunk id: 478482, original params: e,t,_ (module,exports,require) **/
 module.exports = {
   dt: "upsellFooter__5e07c",
   YW: "upsellFooterIcon__5e07c",

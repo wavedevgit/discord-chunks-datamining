@@ -12,14 +12,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk467758 = require("./467758.js"),
   Chunk269420 = require("./269420.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.t_)(Chunk780964.X.CLIPS_PANEL, {
-    useTitle: () => A.intl.string(A.t.z2jK6X),
+let A = (0, Chunk419954.t_)(Chunk780964.X.CLIPS_PANEL, {
+    useTitle: () => d.intl.string(d.t.z2jK6X),
     useBadge: () => (0, n.jsx)(r.A, {}),
     usePredicate: Chunk734066.sw,
     buildLayout: () => [T.K, o.W]
   }),
   S = (0, Chunk419954.i4)(Chunk780964.X.CLIPS_SIDEBAR_ITEM, {
-    useTitle: () => A.intl.string(A.t.z2jK6X),
+    useTitle: () => d.intl.string(d.t.z2jK6X),
     icon: Chunk934551.ClipsIcon,
-    buildLayout: () => [d]
+    buildLayout: () => [A]
   })

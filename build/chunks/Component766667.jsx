@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 766667, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  p: () => d
+  p: () => A
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,8 +12,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_PHRASES, {
-  useSearchTerms: () => [A.intl.string(A.t.JIze0o)],
+let A = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_PHRASES, {
+  useSearchTerms: () => [d.intl.string(d.t.JIze0o)],
   usePredicate: () => (0, s.bG)([u.A], () => u.A.getSettings().clipSignals).enablePhraseSignals,
   Component: function() {
     let t = (0, s.bG)([u.A], () => u.A.getSettings().autoClipPhrases),
@@ -25,7 +25,7 @@ let d = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_PHRASES, {
       T = l.useCallback(t => {
         i(t)
       }, []),
-      d = l.useCallback(n => {
+      A = l.useCallback(n => {
         if ("Enter" === n.key || "," === n.key) {
           n.preventDefault();
           let l = e.trim().toLowerCase();
@@ -43,8 +43,8 @@ let d = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_PHRASES, {
     return (0, n.jsx)(r.ksK, {
       value: e,
       onChange: T,
-      onKeyDown: d,
-      placeholder: A.intl.string(A.t.zYUZpt),
+      onKeyDown: A,
+      placeholder: d.intl.string(d.t.zYUZpt),
       leading: o.length > 0 ? {
         type: "tags",
         items: o,

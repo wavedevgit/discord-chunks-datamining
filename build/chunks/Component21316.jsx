@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 21316, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => _
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,26 +13,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk358172 = require("./358172.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk853762 = require("./853762.js");
-let p = function(e) {
+let _ = function(e) {
   let {
     canAddBoosts: t,
     canApplyBoosts: n
-  } = e, p = (0, l.bG)([a.A], () => a.A.affinities), m = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), g = i.useMemo(() => {
-    let e = p.slice(0, 3).map(e => e.guildId);
+  } = e, _ = (0, l.bG)([a.A], () => a.A.affinities), m = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), g = i.useMemo(() => {
+    let e = _.slice(0, 3).map(e => e.guildId);
     for (let t = 0; t < m.length && !(e.length >= 3); t++) {
       let n = m[t];
       e.includes(n) || e.push(n)
     }
     return e
-  }, [p, m]);
+  }, [_, m]);
   return 0 === g.length ? null : (0, r.jsxs)("div", {
-    className: _.iE,
+    className: p.iE,
     children: [t && (0, r.jsx)(s.Heading, {
       variant: "heading-lg/semibold",
-      className: _.wx,
+      className: p.wx,
       children: u.intl.string(u.t.r90Wgo)
     }), g.map(e => (0, r.jsx)(d.A, {
-      className: _.ZS,
+      className: p.ZS,
       guildId: e,
       boostingVariant: true
     }, e)), m.length > 3 && n && (0, r.jsx)(c.A, {})]

@@ -61,7 +61,7 @@ function Q(e) {
     return null != a && null != (e = v.Ay.getGameForPID(a)) ? e : true
   }), Y = i.useRef(performance.now()), X = (0, u.bG)([y.A], () => (y.A.getUseSystemScreensharePicker() || y.A.getUseGamescopeCapture()) && ((0, w.isLinux)() || (0, w.isMac)() && o().satisfies(null === m.A || true === m.A ? true : m.A.os.release, W.WZ))), {
     analyticsLocations: J
-  } = (0, _.Ay)(Q, g.A.GO_LIVE_MODAL_V2), $ = (0, u.bG)([O.default], () => O.default.getCurrentUser()), ee = (0, H.A)(), {
+  } = (0, _.Ay)(Q, g.A.GO_LIVE_MODAL_V2), $ = (0, u.bG)([A.default], () => A.default.getCurrentUser()), ee = (0, H.A)(), {
     state: et,
     dispatch: er
   } = (0, M.yB)(K, $, ee), en = (0, x.A)((0, w.isWindows)() && null != K && q ? "confirm" : "source_select");
@@ -134,7 +134,7 @@ function Q(e) {
           impressionName: c.ImpressionNames.GO_LIVE_MODAL,
           impressionProperties: {
             location_stack: J,
-            application_id: (0, w.isWindows)() ? null == (t = (0, N.A)(v.Ay, A.A)) ? true : t.id : true,
+            application_id: (0, w.isWindows)() ? null == (t = (0, N.A)(v.Ay, O.A)) ? true : t.id : true,
             parent_media_session_id: S.A.getMediaSessionId()
           }
         }

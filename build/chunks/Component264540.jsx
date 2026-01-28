@@ -35,7 +35,7 @@ function N(e) {
   let {
     result: t,
     onSelectChannel: r
-  } = e, i = (0, a.bG)([_.A], () => _.A.getGuild(t.record.guild_id)), l = (0, a.yK)([S.Ay, y.default], () => S.Ay.getVoiceStatesForChannel(t.record).map(e => y.default.getUser(e.user.id)).filter(O.Vq));
+  } = e, i = (0, a.bG)([_.A], () => _.A.getGuild(t.record.guild_id)), l = (0, a.yK)([S.Ay, y.default], () => S.Ay.getVoiceStatesForChannel(t.record).map(e => y.default.getUser(e.user.id)).filter(A.Vq));
   return (0, n.jsxs)(c.DUT, {
     className: I.p8,
     onClick: () => r(t.record.id),
@@ -86,7 +86,7 @@ function T(e) {
     if (null == t) return e;
     for (let r of g.Ay.getVocalChannelIds(t)) {
       let t = m.A.getChannel(r);
-      null != t && (0, A.vz)(t, _.A, v.A) && e.push(t)
+      null != t && (0, O.vz)(t, _.A, v.A) && e.push(t)
     }
     return e
   }), S = (0, a.yK)([f.A, m.A, j.A, _.A, v.A], () => {
@@ -94,14 +94,14 @@ function T(e) {
       t = new Set;
     for (let r of f.A.getChannelHistory()) {
       let n = m.A.getChannel(r);
-      (null == n ? true : n.type) === w.rbe.GUILD_VOICE && (0, A.vz)(n, _.A, v.A) && (t.add(n.id), e.push(n))
+      (null == n ? true : n.type) === w.rbe.GUILD_VOICE && (0, O.vz)(n, _.A, v.A) && (t.add(n.id), e.push(n))
     }
-    for (let r of j.A.getFrequentlyWithoutFetchingLatest()) r instanceof p.YB && r.type === w.rbe.GUILD_VOICE && !t.has(r.id) && (0, A.vz)(r, _.A, v.A) && (t.add(r.id), e.push(r));
+    for (let r of j.A.getFrequentlyWithoutFetchingLatest()) r instanceof p.YB && r.type === w.rbe.GUILD_VOICE && !t.has(r.id) && (0, O.vz)(r, _.A, v.A) && (t.add(r.id), e.push(r));
     return e
   }), T = i.useMemo(() => {
     let e = new Set(S.map(e => e.id)),
       t = new Set(y.map(e => e.id));
-    return [...y.toSorted((t, r) => e.has(t.id) && !e.has(r.id) ? false : e.has(r.id) && !e.has(t.id) ? 1 : 0).map(e => (0, u.A)(e.id)).filter(O.Vq), ...S.filter(e => !t.has(e.id)).map(e => (0, u.A)(e.id)).filter(O.Vq)]
+    return [...y.toSorted((t, r) => e.has(t.id) && !e.has(r.id) ? false : e.has(r.id) && !e.has(t.id) ? 1 : 0).map(e => (0, u.A)(e.id)).filter(A.Vq), ...S.filter(e => !t.has(e.id)).map(e => (0, u.A)(e.id)).filter(A.Vq)]
   }, [S, y]), P = "" !== o ? x : T;
   return (0, n.jsxs)("div", {
     className: s()(I.zr, r),

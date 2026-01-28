@@ -1,8 +1,8 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 204318, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m,
-  g: () => p
+  A: () => x,
+  g: () => h
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -15,47 +15,47 @@ var Chunk627968 = require("./627968.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e, t, n) {
-  let r = [{
+function h(e, t, n) {
+  let i = [{
     id: u.rB.STANDARD,
     value: u.rB.STANDARD,
-    label: _.intl.string(_.t.dqb2JZ)
+    label: g.intl.string(g.t.dqb2JZ)
   }];
-  return e && r.push({
+  return e && i.push({
     id: u.rB.LEGACY,
     value: u.rB.LEGACY,
-    label: _.intl.string(_.t["TYfH+5"])
-  }), t && r.push({
+    label: g.intl.string(g.t["TYfH+5"])
+  }), t && i.push({
     id: u.rB.EXPERIMENTAL,
     value: u.rB.EXPERIMENTAL,
-    label: _.intl.string(_.t.liQmtr)
-  }), n && r.push({
+    label: g.intl.string(g.t.liQmtr)
+  }), n && i.push({
     id: u.rB.AUTOMATIC,
     value: u.rB.AUTOMATIC,
-    label: _.intl.string(_.t.qNgtO1)
-  }), r
+    label: g.intl.string(g.t.qNgtO1)
+  }), i
 }
 
-function m() {
+function x() {
   let {
     audioSubsystem: e,
     legacyAudioSubsystemSupported: t,
     experimentalAudioSubsystemSupported: n,
-    automaticAudioSubsystemSupported: m
-  } = (0, i.cf)([o.A], () => ({
+    automaticAudioSubsystemSupported: x
+  } = (0, s.cf)([o.A], () => ({
     audioSubsystem: o.A.getAudioSubsystem(),
     legacyAudioSubsystemSupported: o.A.supports(u.O5.LEGACY_AUDIO_SUBSYSTEM),
     experimentalAudioSubsystemSupported: o.A.supports(u.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM),
     automaticAudioSubsystemSupported: o.A.supports(u.O5.AUTOMATIC_AUDIO_SUBSYSTEM)
   }));
-  return (0, r.jsx)(a.x, {
+  return (0, i.jsx)(a.x, {
     setting: d.H.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
-    children: (0, r.jsx)(l.l6P, {
-      label: _.intl.string(_.t.wVBHr0),
+    children: (0, i.jsx)(l.l6P, {
+      label: g.intl.string(g.t.wVBHr0),
       value: e,
-      options: p(t, n, m),
+      options: h(t, n, x),
       onSelectionChange: e => {
-        (0, c.A)(_.intl.string(_.t.uY7AcQ), _.intl.string(_.t.gBqik6), () => s.A.setAudioSubsystem(e))
+        (0, c.A)(g.intl.string(g.t.uY7AcQ), g.intl.string(g.t.gBqik6), () => r.A.setAudioSubsystem(e))
       },
       selectionMode: "single",
       fullWidth: true

@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 310953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p,
+  A: () => _,
   W: () => m
 }), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
@@ -15,12 +15,12 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js"),
   Chunk349828 = require("./349828.js");
 
-function p(e) {
+function _(e) {
   let {
     withVoiceChannels: t = false,
     withCurrentVoiceChannel: n = false
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, r = arguments.length > 2 ? arguments[2] : true;
-  return g(e === _.V || e === u.YYv ? (0, s.g)() : l.A.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
+  return g(e === p.V || e === u.YYv ? (0, s.g)() : l.A.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
     currentVoiceChannelId: d.A.getVoiceChannelId(),
     selectedChannelId: d.A.getChannelId()
   }, {
@@ -33,20 +33,20 @@ function m(e, t, n) {
   let {
     withVoiceChannels: l = false,
     withCurrentVoiceChannel: s = false
-  } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, a = arguments.length > 4 ? arguments[4] : true, u = (0, i.bG)([c.default], () => c.default.getGuildChangeSentinel(e)), _ = (0, i.bG)([o.A], () => o.A.version), {
-    currentVoiceChannelId: p,
+  } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, a = arguments.length > 4 ? arguments[4] : true, u = (0, i.bG)([c.default], () => c.default.getGuildChangeSentinel(e)), p = (0, i.bG)([o.A], () => o.A.version), {
+    currentVoiceChannelId: _,
     selectedChannelId: m
   } = (0, i.cf)([d.A], () => ({
     currentVoiceChannelId: d.A.getVoiceChannelId(),
     selectedChannelId: d.A.getChannelId()
   }));
   return (0, r.useMemo)(() => g(t, {
-    currentVoiceChannelId: p,
+    currentVoiceChannelId: _,
     selectedChannelId: m
   }, {
     withVoiceChannels: l,
     withCurrentVoiceChannel: s
-  }, a).map(e => e.id), [t, n, u, _])
+  }, a).map(e => e.id), [t, n, u, p])
 }
 
 function g(e, t) {

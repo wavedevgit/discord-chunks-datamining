@@ -1,8 +1,8 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 70040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => L,
-  Q: () => U
+  Q: () => G
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -36,23 +36,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk21082 = require("./21082.js");
 let w = () => {
-    (0, f.Dr)(s.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
-      dismissAction: y.i.PRIMARY,
+    (0, b.Dr)(s.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
+      dismissAction: N.i.PRIMARY,
       forceTrack: true
-    }), (0, A.nf)(A.HP.CLIENT_THEMES), (0, v.default)()
+    }), (0, f.nf)(f.HP.CLIENT_THEMES), (0, S.default)()
   },
   L = () => {
     var e, t;
     let n, {
         analyticsLocations: s
-      } = (0, _.Ay)(u.A.USER_SETTINGS),
-      a = (0, l.bG)([p.A], () => p.A.isPreview),
-      c = (null == (t = (0, b.V)()) || null == (e = t.subscription_trial) ? true : e.sku_id) === P.pe.TIER_2,
+      } = (0, p.Ay)(u.A.USER_SETTINGS),
+      a = (0, l.bG)([_.A], () => _.A.isPreview),
+      c = (null == (t = (0, A.V)()) || null == (e = t.subscription_trial) ? true : e.sku_id) === P.pe.TIER_2,
       d = (0, h.O)(),
-      A = (0, x.U9)(d, P.pe.TIER_2),
-      f = (0, j.dk)("UserSettingsAppearanceClientThemes");
+      f = (0, x.U9)(d, P.pe.TIER_2),
+      b = (0, v.dk)("UserSettingsAppearanceClientThemes");
     i.useEffect(() => {
-      a && T.default.track(N.HAw.PREMIUM_UPSELL_VIEWED, {
+      a && y.default.track(I.HAw.PREMIUM_UPSELL_VIEWED, {
         type: P.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: s
       })
@@ -73,12 +73,12 @@ let w = () => {
           subscriptionTier: P.pe.TIER_2
         })]
       }),
-      I = (n = (0, r.jsxs)(r.Fragment, {
+      j = (n = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.Ay.Gradient, {
           disabled: false,
           renderCTAButtons: () => {
             if (!a || c) return null;
-            let e = A ? R.intl.formatToPlainString(R.t.bkQ4bH, {
+            let e = f ? R.intl.formatToPlainString(R.t.bkQ4bH, {
               percent: null == d ? true : d.discount.amount
             }) : R.intl.string(R.t.mr4K7D);
             return (0, r.jsxs)("div", {
@@ -91,8 +91,8 @@ let w = () => {
                 subscriptionTier: P.pe.TIER_2,
                 defaultTextOverride: e,
                 premiumModalAnalyticsLocation: {
-                  object: N.ZSU.BUTTON_CTA,
-                  objectType: N.AnalyticsObjectTypes.BUY
+                  object: I.ZSU.BUTTON_CTA,
+                  objectType: I.AnalyticsObjectTypes.BUY
                 },
                 fullWidth: true
               })]
@@ -108,8 +108,8 @@ let w = () => {
         type: g.v0.SETTINGS,
         children: [(0, r.jsx)(g.Ay.Basic, {
           className: D.a6
-        }), (0, r.jsx)(M, {}), (0, r.jsx)(m.A, {}), I]
-      }), !f && (0, r.jsx)(o.cGx, {
+        }), (0, r.jsx)(M, {}), (0, r.jsx)(m.A, {}), j]
+      }), !b && (0, r.jsx)(o.cGx, {
         className: D.yF
       })]
     })
@@ -121,26 +121,26 @@ function M() {
       theme: t,
       useForcedColors: n,
       gradientPreset: i
-    } = (0, l.cf)([I.A, d.A, p.A], () => ({
-      theme: I.A.theme,
+    } = (0, l.cf)([j.A, d.A, _.A], () => ({
+      theme: j.A.theme,
       useForcedColors: d.A.useForcedColors,
-      gradientPreset: p.A.gradientPreset
+      gradientPreset: _.A.gradientPreset
     })),
-    s = null != S.eh.useSetting().customUserThemeSettings;
-  return t !== N.NJ8.LIGHT ? null : (0, r.jsxs)(r.Fragment, {
+    s = null != T.eh.useSetting().customUserThemeSettings;
+  return t !== I.NJ8.LIGHT ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.cGx, {
       gap: 24
     }), (0, r.jsx)(o.dOG, {
       label: R.intl.string(R.t.yF54Ks),
       checked: e && (0, a.qB)(t) && !n,
-      disabled: t !== N.NJ8.LIGHT || n || null != i || s,
+      disabled: t !== I.NJ8.LIGHT || n || null != i || s,
       onChange: c.LO
     }), (0, r.jsx)(o.cGx, {
       gap: 24
     })]
   })
 }
-let U = () => (0, l.bG)([p.A], () => p.A.isPreview) ? null : (0, r.jsx)(o.Button, {
+let G = () => (0, l.bG)([_.A], () => _.A.isPreview) ? null : (0, r.jsx)(o.Button, {
   variant: "primary",
   text: R.intl.string(R.t.qYXrkX),
   onClick: w

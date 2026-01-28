@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 960755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => W
@@ -27,14 +27,14 @@ var r, i, Chunk735438 = require("./735438.js"),
   Chunk661191 = require("./661191.js"),
   Chunk32603 = require("./32603.js"),
   Chunk355097 = require("./355097.js");
-let N = null,
-  y = null,
+let I = null,
+  N = null,
   P = new Chunk32603.Ay;
 
 function R() {
   let e = C.A.getChannelId(),
     t = C.A.getVoiceChannelId();
-  return N = e, y = t, P.clear()
+  return I = e, N = t, P.clear()
 }
 
 function D(e) {
@@ -69,14 +69,14 @@ function M(e) {
   return P.nonPositionalChannelIdUpdate(t)
 }
 
-function U(e) {
+function G(e) {
   let {
     channel: t
   } = e;
   return P.nonPositionalChannelIdUpdate(t.id)
 }
 
-function G(e) {
+function U(e) {
   let {
     id: t
   } = e;
@@ -86,27 +86,27 @@ function G(e) {
 function k() {
   let e = C.A.getChannelId(),
     t = C.A.getVoiceChannelId(),
-    n = N !== e || y !== t;
-  return !!n && (s()([N, y, e, t]).uniq().forEach(e => {
+    n = I !== e || N !== t;
+  return !!n && (s()([I, N, e, t]).uniq().forEach(e => {
     null != e && P.nonPositionalChannelIdUpdate(e) && (n = true)
-  }), N = e, y = t, true)
+  }), I = e, N = t, true)
 }
 
-function V(e) {
+function H(e) {
   let {
     id: t
   } = e, n = h.A.getChannel(t);
   return null == n ? P.clearGuildId(t) : P.clearGuildId(n.guild_id)
 }
 
-function H(e) {
+function B(e) {
   let {
     guildId: t
   } = e;
   return P.clearGuildId(t)
 }
 
-function B() {
+function V() {
   return P.updateSubtitles()
 }
 
@@ -118,7 +118,7 @@ function F(e) {
 }
 class Y extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.A, A.default, f.A, h.A, b.A, c.Ay, E.A, u.A, _.Ay, m.A, x.A, O.Ay, C.A, T.Ay, g.A)
+    this.waitFor(_.A, f.default, b.A, h.A, A.A, c.Ay, E.A, u.A, p.Ay, m.A, x.A, O.Ay, C.A, y.Ay, g.A)
   }
   getGuild(e, t) {
     var n, r;
@@ -147,12 +147,12 @@ class Y extends(r = Chunk311907.Ay.Store) {
   writable: true
 }) : Y[i] = "ChannelListStore";
 let W = new Y(Chunk73153.h, {
-  APPLICATION_FETCH_FAIL: B,
-  APPLICATION_FETCH_SUCCESS: B,
-  APPLICATION_FETCH: B,
-  APPLICATIONS_FETCH_FAIL: B,
-  APPLICATIONS_FETCH_SUCCESS: B,
-  APPLICATIONS_FETCH: B,
+  APPLICATION_FETCH_FAIL: V,
+  APPLICATION_FETCH_SUCCESS: V,
+  APPLICATION_FETCH: V,
+  APPLICATIONS_FETCH_FAIL: V,
+  APPLICATIONS_FETCH_SUCCESS: V,
+  APPLICATIONS_FETCH: V,
   BACKGROUND_SYNC: R,
   BULK_ACK: function(e) {
     let {
@@ -161,16 +161,16 @@ let W = new Y(Chunk73153.h, {
     return s()(t).map(e => {
       var t;
       return null == (t = h.A.getChannel(e.channelId)) ? true : t.guild_id
-    }).filter(I.Vq).uniq().forEach(e => {
+    }).filter(j.Vq).uniq().forEach(e => {
       P.clearGuildId(e) && (n = true)
     }), n
   },
   BULK_CLEAR_RECENTS: L,
   CACHE_LOADED_LAZY: R,
   CATEGORY_COLLAPSE_ALL: L,
-  CATEGORY_COLLAPSE: V,
+  CATEGORY_COLLAPSE: H,
   CATEGORY_EXPAND_ALL: L,
-  CATEGORY_EXPAND: V,
+  CATEGORY_EXPAND: H,
   CHANNEL_ACK: M,
   CHANNEL_COLLAPSE: function(e) {
     var t;
@@ -196,7 +196,7 @@ let W = new Y(Chunk73153.h, {
       P.clearGuildId(e) && (n = true)
     }), n
   },
-  CONNECTION_OPEN_SUPPLEMENTAL: B,
+  CONNECTION_OPEN_SUPPLEMENTAL: V,
   CONNECTION_OPEN: R,
   CURRENT_USER_UPDATE: R,
   DECAY_READ_STATES: R,
@@ -215,9 +215,9 @@ let W = new Y(Chunk73153.h, {
     return P.updateSubtitles((0, d.D)(t), (0, d.H)(t))
   },
   EMBEDDED_ACTIVITY_LAUNCH_START: function(e) {
-    B()
+    V()
   },
-  EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: B,
+  EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: V,
   ENABLE_AUTOMATIC_ACK: M,
   FETCH_GUILD_EVENTS_FOR_GUILD: function(e) {
     let {
@@ -225,10 +225,10 @@ let W = new Y(Chunk73153.h, {
     } = e;
     return P.updateSubtitles(t)
   },
-  GAMES_DATABASE_FETCH_FAIL: B,
-  GAMES_DATABASE_FETCH: B,
-  GAMES_DATABASE_UPDATE: B,
-  GUILD_APPLICATIONS_FETCH_SUCCESS: B,
+  GAMES_DATABASE_FETCH_FAIL: V,
+  GAMES_DATABASE_FETCH: V,
+  GAMES_DATABASE_UPDATE: V,
+  GUILD_APPLICATIONS_FETCH_SUCCESS: V,
   GUILD_CREATE: D,
   GUILD_DELETE: D,
   GUILD_MEMBER_UPDATE: function(e) {
@@ -236,7 +236,7 @@ let W = new Y(Chunk73153.h, {
       guildId: t,
       user: n
     } = e;
-    return A.default.getId() === n.id && P.clearGuildId(t)
+    return f.default.getId() === n.id && P.clearGuildId(t)
   },
   GUILD_MUTE_EXPIRED: L,
   GUILD_ROLE_CREATE: L,
@@ -277,7 +277,7 @@ let W = new Y(Chunk73153.h, {
   RECOMPUTE_READ_STATES: R,
   RESORT_THREADS: M,
   SET_RECENTLY_ACTIVE_COLLAPSED: R,
-  THREAD_CREATE: U,
+  THREAD_CREATE: G,
   THREAD_DELETE: function(e) {
     let {
       channel: t
@@ -285,9 +285,9 @@ let W = new Y(Chunk73153.h, {
     return P.nonPositionalChannelUpdate(t)
   },
   THREAD_LIST_SYNC: L,
-  THREAD_MEMBER_UPDATE: G,
-  THREAD_MEMBERS_UPDATE: G,
-  THREAD_UPDATE: U,
+  THREAD_MEMBER_UPDATE: U,
+  THREAD_MEMBERS_UPDATE: U,
+  THREAD_UPDATE: G,
   TRY_ACK: M,
   UPDATE_CHANNEL_DIMENSIONS: M,
   UPDATE_CHANNEL_LIST_SUBTITLES: function(e) {
@@ -316,15 +316,15 @@ let W = new Y(Chunk73153.h, {
     let {
       settings: n
     } = e;
-    if (n.type !== v.oD.PRELOADED_USER_SETTINGS) returnfalse;
+    if (n.type !== S.oD.PRELOADED_USER_SETTINGS) returnfalse;
     let r = null == (t = n.proto.guilds) ? true : t.guilds,
       i = false;
-    return null != r && S.default.keys(r).forEach(e => {
+    return null != r && T.default.keys(r).forEach(e => {
       null != r[e].guildRecentsDismissedAt && (i = P.updateRecentsCategory(e) || i)
     }), i
   },
-  VOICE_CATEGORY_COLLAPSE: H,
-  VOICE_CATEGORY_EXPAND: H,
+  VOICE_CATEGORY_COLLAPSE: B,
+  VOICE_CATEGORY_EXPAND: B,
   VOICE_CHANNEL_SELECT: k,
   VOICE_CHANNEL_STATUS_UPDATE: function(e) {
     return P.nonPositionalChannelIdUpdate(e.id)
@@ -341,6 +341,6 @@ let W = new Y(Chunk73153.h, {
     return n
   },
   WINDOW_FOCUS: function() {
-    return null != N && P.nonPositionalChannelIdUpdate(N)
+    return null != I && P.nonPositionalChannelIdUpdate(I)
   }
 })

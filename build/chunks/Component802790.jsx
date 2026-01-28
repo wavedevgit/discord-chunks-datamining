@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
-/** chunk id: 802790, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 24665 **/
+/** chunk id: 802790, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,36 +13,36 @@ var Chunk311907 = require("./311907.js"),
   Chunk796012 = require("./796012.jsx"),
   Chunk752472 = require("./752472.js");
 
-function u(e) {
+function p(e) {
   let {
-    purchaseState: t,
-    currentStep: n,
-    onClose: u
-  } = e, [_, p] = (0, o.f)({
-    purchaseState: t,
-    currentStep: n,
+    purchaseState: n,
+    currentStep: t,
+    onClose: p
+  } = e, [d, _] = (0, o.f)({
+    purchaseState: n,
+    currentStep: t,
     initialScene: c.V1.Scenes.ENTRY,
     purchaseScene: c.V1.Scenes.STARS,
     errorScene: c.V1.Scenes.ERROR,
     successScene: c.V1.Scenes.SUCCESS
-  }), m = (0, i.bG)([s.A], () => s.A.useReducedMotion);
-  return (0, r.jsxs)(l.rQ0, {
+  }), m = (0, i.bG)([a.A], () => a.A.useReducedMotion);
+  return (0, l.jsxs)(r.rQ0, {
     "data-migration-pending": true,
-    align: a.A.Align.START,
-    className: d.wx,
+    align: s.A.Align.START,
+    className: u.wx,
     separator: false,
-    children: [(0, r.jsx)(c.V1, {
-      className: d.lY,
-      nextScene: _,
-      onScenePlay: e => p(c.V1.getNextScene(e)),
+    children: [(0, l.jsx)(c.V1, {
+      className: u.lY,
+      nextScene: d,
+      onScenePlay: e => _(c.V1.getNextScene(e)),
       pauseWhileUnfocused: false,
       pause: m
-    }), (0, r.jsx)("div", {
-      className: d.qd
-    }), (0, r.jsx)(l.s_y, {
+    }), (0, l.jsx)("div", {
+      className: u.qd
+    }), (0, l.jsx)(r.s_y, {
       "data-migration-pending": true,
-      onClick: u,
-      className: d.b
+      onClick: p,
+      className: u.b
     })]
   })
 }

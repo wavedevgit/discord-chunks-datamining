@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 273867, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => A
 }), require("./896048.js"), require("./321073.js");
 var Chunk136722 = require("./136722.js"),
   Chunk937724 = require("./937724.js"),
@@ -17,7 +17,7 @@ var Chunk136722 = require("./136722.js"),
   Chunk723176 = require("./723176.js"),
   Chunk453001 = require("./453001.js");
 
-function A(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,12 +25,12 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = new Chunk626584.A("GuildBasicChannels");
+let b = new Chunk626584.A("GuildBasicChannels");
 
 function h(e, t) {
-  return null == e || e.type !== t.type || e.parent_id !== t.parent_id || _.A.computeBasicPermissions(e) !== _.A.computeBasicPermissions(t)
+  return null == e || e.type !== t.type || e.parent_id !== t.parent_id || p.A.computeBasicPermissions(e) !== p.A.computeBasicPermissions(t)
 }
-let b = new class {
+let A = new class {
   async getAsync(e) {
     let t = performance.now(),
       [n, r] = await Promise.all([m.A.basicChannels(e).getKvEntries(), m.A.syncedBasicChannels(e).getKvEntries()]),
@@ -42,7 +42,7 @@ let b = new class {
         return [t, n]
       }(r),
       a = new Set(l);
-    return this.synced = a, f.verbose("loaded in ".concat(i, "ms (guilds: ").concat(n.length, ", synced: ").concat(a.size, " unsynced: ").concat(s.length, ")")), {
+    return this.synced = a, b.verbose("loaded in ".concat(i, "ms (guilds: ").concat(n.length, ", synced: ").concat(a.size, " unsynced: ").concat(s.length, ")")), {
       all: n,
       stale: s,
       channels: n.filter(e => {
@@ -82,14 +82,14 @@ let b = new class {
     if (null == this.synced || null == t || !(0, i.O)()) return;
     let n = u.A.getGuildIds(),
       r = n.filter(e => !this.synced.has(e));
-    for (let i of (f.verbose("scheduling basic_channel optimstic writes (guilds: ".concat(r.length, ")")), n)) {
+    for (let i of (b.verbose("scheduling basic_channel optimstic writes (guilds: ".concat(r.length, ")")), n)) {
       if (null == this.synced || t !== m.A.database() || e !== s.A.lastTimeConnectedChanged()) break;
       if (!this.synced.has(i)) {
-        f.verbose("optimstically writing basic_channels (guild: ".concat(i, ")"));
+        b.verbose("optimstically writing basic_channels (guild: ".concat(i, ")"));
         try {
           await c.D.loadGuildIds([i]), await t.transaction(e => this.syncOne(i, e), "handlePostConnectionOpen")
         } catch (e) {
-          f.warn("couldn't optimstically write basic_channel:", e);
+          b.warn("couldn't optimstically write basic_channel:", e);
           return
         }
         await new Promise(e => setTimeout(e, 1e3))
@@ -146,7 +146,7 @@ let b = new class {
     null == (n = this.synced) || n.delete(e), m.A.basicChannelsTransaction(t).delete(e), m.A.syncedBasicChannelsTransaction(t).put(e, false), g.A.invalidate(e)
   }
   sync(e) {
-    f.verbose("Starting to write all basic channels");
+    b.verbose("Starting to write all basic channels");
     let t = performance.now(),
       n = {
         written: 0,
@@ -154,7 +154,7 @@ let b = new class {
       };
     for (let t of u.A.getGuildIds()) this.syncOne(t, e) ? n.written++ : n.skipped++;
     let r = performance.now() - t;
-    f.verbose("".concat(n.written, " basic_channel guilds submitted (took: ").concat(r, "ms, skipped: ").concat(n.skipped, " guilds)"))
+    b.verbose("".concat(n.written, " basic_channel guilds submitted (took: ").concat(r, "ms, skipped: ").concat(n.skipped, " guilds)"))
   }
   syncOne(e, t) {
     var n, r, i;
@@ -163,11 +163,11 @@ let b = new class {
       type: e.type,
       guild_id: e.guild_id,
       parent_id: e.parent_id,
-      basicPermissions: p.A.asBasicFlag(_.A.computePermissions(e))
+      basicPermissions: _.A.asBasicFlag(p.A.computePermissions(e))
     })))), m.A.syncedBasicChannelsTransaction(t).put(e, true), true)
   }
   constructor() {
-    A(this, "synced", null), A(this, "actions", {
+    f(this, "synced", null), f(this, "actions", {
       BACKGROUND_SYNC: (e, t) => this.handleBackgroundSync(e, t),
       CHANNEL_CREATE: (e, t) => this.handleChannelCreate(e, t),
       CHANNEL_DELETE: (e, t) => this.handleChannelDelete(e, t),

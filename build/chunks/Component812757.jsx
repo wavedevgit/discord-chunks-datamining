@@ -18,9 +18,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk280973 = require("./280973.js");
 let c = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_KEYBIND, {
-  useSearchTerms: () => [_.intl.string(_.t.pf54EU), _.intl.string(_.t["QyB/jK"])],
+  useSearchTerms: () => [g.intl.string(g.t.pf54EU), g.intl.string(g.t["QyB/jK"])],
   Component: () => {
-    let t = (0, u.bG)([d.Ay], () => d.Ay.getKeybindForAction(E.hCu.SAVE_CLIP, true));
+    let t = (0, u.bG)([A.Ay], () => A.Ay.getKeybindForAction(E.hCu.SAVE_CLIP, true));
     r()(null != t, "Save clip keybind unset");
     let e = l.useCallback(e => {
       var i, n;
@@ -55,11 +55,11 @@ let c = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_KEYBIND, {
       }), i))
     }, [t]);
     return (0, n.jsx)(a.D0$, {
-      label: _.intl.string(_.t.pf54EU),
-      description: _.intl.string(_.t["QyB/jK"]),
+      label: g.intl.string(g.t.pf54EU),
+      description: g.intl.string(g.t["QyB/jK"]),
       layout: "horizontal",
       children: (0, n.jsx)("div", {
-        className: g.g,
+        className: _.g,
         children: (0, n.jsx)(T.A, {
           defaultValue: t.shortcut,
           onChange: e

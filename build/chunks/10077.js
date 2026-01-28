@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 10077, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => u,
@@ -26,20 +26,20 @@ let d = {
 };
 
 function u() {
-  let [e, t] = (0, i.useState)(""), [n, r] = (0, i.useState)("server-order"), c = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), u = (0, l.bG)([a.A], () => a.A.getGuilds()), _ = c.map(e => u[e]), p = s.Pw.useSetting(), [m, g] = (0, i.useState)(p), A = async e => {
+  let [e, t] = (0, i.useState)(""), [n, r] = (0, i.useState)("server-order"), c = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), u = (0, l.bG)([a.A], () => a.A.getGuilds()), p = c.map(e => u[e]), _ = s.Pw.useSetting(), [m, g] = (0, i.useState)(_), f = async e => {
     g(e);
     try {
       await s.Pw.updateSetting(e)
     } catch (e) {
-      g(p)
+      g(_)
     }
-  }, f = 0 !== m.length, [h, b] = (0, i.useState)(() => d[n](_, p)), E = h.map(e => u[e.id]).filter(Boolean);
+  }, b = 0 !== m.length, [h, A] = (0, i.useState)(() => d[n](p, _)), E = h.map(e => u[e.id]).filter(Boolean);
   return {
     guilds: "" === e ? E : E.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
     sortOrder: n,
     searchQuery: e,
     setSortOrder: e => {
-      b(d[e](_, p)), r(e)
+      A(d[e](p, _)), r(e)
     },
     setSearchQuery: t,
     onToggleActivityRestrictedGuild: e => {
@@ -47,12 +47,12 @@ function u() {
         checked: t,
         guildId: n
       } = e, r = new Set(m);
-      t ? r.delete(n) : r.add(n), A([...r])
+      t ? r.delete(n) : r.add(n), f([...r])
     },
     isActivityRestricted: e => m.includes(e),
-    hasActivityRestrictedGuilds: f,
+    hasActivityRestrictedGuilds: b,
     onToggleAllActivityRestrictedGuilds: () => {
-      f ? A([]) : A(c)
+      b ? f([]) : f(c)
     },
     numTotalGuilds: c.length,
     numActivityRestrictedGuilds: m.length

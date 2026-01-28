@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 909081, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  T: () => _
+  T: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -15,12 +15,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk32096 = require("./32096.js"),
   Chunk545214 = require("./545214.js"),
   Chunk985018 = require("./985018.jsx");
-let _ = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
+let g = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
   useSearchTerms: () => [E.intl.string(E.t.uHAJ5v)],
   usePredicate: function() {
-    let t = (0, d.b)(),
+    let t = (0, A.b)(),
       e = (0, S.A)(),
-      i = (0, A.f)(),
+      i = (0, d.f)(),
       n = (0, l.bG)([r.default], () => r.default.hasTOTPEnabled());
     return !t && !e && i && n
   },

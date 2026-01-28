@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 901125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,22 +17,22 @@ var Chunk503698 = require("./503698.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk158793 = require("./158793.js");
-let A = e => {
+let f = e => {
   let t, n, {
       premiumSubscription: i,
-      className: A,
-      textColor: f
+      className: f,
+      textColor: b
     } = e,
     h = (0, u.ar)();
   if (null == i) return null;
-  let b = null != i ? d.Ay.getPremiumPlanItem(i) : null;
-  if (d.Ay.isBoostOnlySubscription(i) ? t = m.intl.string(m.t.Uj0md3) : null != b && (t = d.Ay.getTierDisplayNameByPlanId(b.planId)), null == t) return null;
+  let A = null != i ? d.Ay.getPremiumPlanItem(i) : null;
+  if (d.Ay.isBoostOnlySubscription(i) ? t = m.intl.string(m.t.Uj0md3) : null != A && (t = d.Ay.getTierDisplayNameByPlanId(A.planId)), null == t) return null;
   let E = () => (0, o.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL, {
-      section: p.nc_.SUBSCRIPTIONS
+      section: _.nc_.SUBSCRIPTIONS
     }),
-    x = (null != b ? d.Ay.getSkuIdForPlan(b.planId) : null) === _.pe.TIER_1;
-  return n = null != f ? f : h ? "always-white" : "text-default", (0, r.jsxs)(s.ZpM, {
-    className: l()(g.kL, A, {
+    x = (null != A ? d.Ay.getSkuIdForPlan(A.planId) : null) === p.pe.TIER_1;
+  return n = null != b ? b : h ? "always-white" : "text-default", (0, r.jsxs)(s.ZpM, {
+    className: l()(g.kL, f, {
       [g.He]: h
     }),
     type: s.ZpM.Types.CUSTOM,
@@ -48,7 +48,7 @@ let A = e => {
       variant: "text-sm/medium",
       color: n,
       children: x ? m.intl.format(m.t["tYuv+T"], {
-        helpdeskArticle: c.A.getArticleURL(p.MVz.PREMIUM_DETAILS),
+        helpdeskArticle: c.A.getArticleURL(_.MVz.PREMIUM_DETAILS),
         onSubscriptionsClick: E
       }) : m.intl.format(m.t.xHRgU2, {
         subscriptionName: t,

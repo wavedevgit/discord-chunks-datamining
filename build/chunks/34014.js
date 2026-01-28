@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 34014, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  r: () => _
+  r: () => g
 });
 var Chunk311907 = require("./311907.js"),
   Chunk964486 = require("./964486.js"),
@@ -18,10 +18,10 @@ let E = (0, Chunk839214.D)(() => ({
     syncEnabled: null,
     updateTimeout: null
   })),
-  _ = (0, Chunk419954.zD)(Chunk780964.X.SYNC_FORCED_COLORS, {
+  g = (0, Chunk419954.zD)(Chunk780964.X.SYNC_FORCED_COLORS, {
     useTitle: () => S.intl.string(S.t.cguiec),
     useSubtitle: () => S.intl.format(S.t.GwEVE2, {
-      learnMoreLink: T.A.getArticleURL(d.MVz.FORCED_COLORS)
+      learnMoreLink: T.A.getArticleURL(A.MVz.FORCED_COLORS)
     }),
     useValue: () => {
       var t;

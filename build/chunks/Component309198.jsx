@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 309198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -35,38 +35,38 @@ function g(e) {
   return e
 }
 
-function A(e) {
+function f(e) {
   let t, n, {
-      currentUser: A,
-      togglingSMS: f
+      currentUser: f,
+      togglingSMS: b
     } = e,
-    [h, b] = i.useState(false),
+    [h, A] = i.useState(false),
     E = i.useCallback(e => {
-      e.preventDefault(), b(!h)
+      e.preventDefault(), A(!h)
     }, [h]),
     x = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
       (0, l.qfG)(t => (0, r.jsx)(c.default, g({
         reason: a.d.USER_SETTINGS_UPDATE
       }, t, e)), {
-        modalKey: _.V
+        modalKey: p.V
       })
     }, []),
     O = i.useCallback(() => {
       x()
     }, [x]),
     C = i.useCallback(() => {
-      null == A.phone ? x({
+      null == f.phone ? x({
         onAddedPhone: s.A.enableSMS
       }) : s.A.enableSMS()
-    }, [A, x]),
-    T = i.useCallback(() => {
+    }, [f, x]),
+    y = i.useCallback(() => {
       (0, l.qfG)(e => {
         var t, n;
         return (0, r.jsx)(o.default, (t = g({}, e), n = n = {
           handleSubmit: s.A.disableSMS,
-          title: p.intl.string(p.t.KLWnit),
-          children: p.intl.string(p.t["W0/Duf"])
+          title: _.intl.string(_.t.KLWnit),
+          children: _.intl.string(_.t["W0/Duf"])
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -79,51 +79,51 @@ function A(e) {
         }), t))
       })
     }, []),
-    I = i.useCallback(e => null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false)), []),
-    S = null != A.phone,
-    j = A.hasFlag(u.nhx.MFA_SMS);
-  if (S || j) {
-    let e = h ? A.phone : I(A.phone);
+    j = i.useCallback(e => null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false)), []),
+    T = null != f.phone,
+    v = f.hasFlag(u.nhx.MFA_SMS);
+  if (T || v) {
+    let e = h ? f.phone : j(f.phone);
     n = (0, r.jsxs)(l.Text, {
       variant: "text-sm/normal",
-      children: [p.intl.format(p.t.PXVoEO, {
+      children: [_.intl.format(_.t.PXVoEO, {
         phoneNumber: e
       }), (0, r.jsx)(l.MzZ, {
         onClick: E,
         className: m.vN,
-        children: h ? p.intl.string(p.t.FfltIN) : p.intl.string(p.t.llArAg)
+        children: h ? _.intl.string(_.t.FfltIN) : _.intl.string(_.t.llArAg)
       })]
     })
   }
-  if (j) t = (0, r.jsx)(l.Button, {
+  if (v) t = (0, r.jsx)(l.Button, {
     variant: "critical-secondary",
     size: "sm",
-    text: p.intl.string(p.t.KLWnit),
-    loading: f,
-    onClick: T
+    text: _.intl.string(_.t.KLWnit),
+    loading: b,
+    onClick: y
   });
   else {
-    let e = (0, d.B)(A);
+    let e = (0, d.B)(f);
     t = (0, r.jsxs)(l.ButtonGroup, {
       size: "sm",
       children: [(0, r.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
-        text: null != e ? e : p.intl.string(p.t.DZQe23),
+        text: null != e ? e : _.intl.string(_.t.DZQe23),
         onClick: C,
-        loading: f,
+        loading: b,
         disabled: null != e
-      }), S ? (0, r.jsx)(l.Button, {
+      }), T ? (0, r.jsx)(l.Button, {
         variant: "secondary",
         size: "sm",
-        text: p.intl.string(p.t.Ulqq6K),
+        text: _.intl.string(_.t.Ulqq6K),
         onClick: O
       }) : null]
     })
   }
   return (0, r.jsxs)(l.D0$, {
-    label: p.intl.string(p.t.uHAJ5v),
-    description: p.intl.string(p.t.fspJ4H),
+    label: _.intl.string(_.t.uHAJ5v),
+    description: _.intl.string(_.t.fspJ4H),
     children: [n, t]
   })
 }

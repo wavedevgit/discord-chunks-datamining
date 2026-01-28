@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 88690, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,37 +15,37 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk613844 = require("./613844.js");
 
-function p() {
+function h() {
   let e = c.A.getCameraComponent(),
-    t = (0, i.bG)([c.A], () => c.A.getVideoDeviceId()),
+    t = (0, s.bG)([c.A], () => c.A.getVideoDeviceId()),
     n = d.A.useField("previewEnabled"),
-    p = (0, i.bG)([c.A], () => c.A.isVideoAvailable());
+    h = (0, s.bG)([c.A], () => c.A.isVideoAvailable());
   return ((0, a.l0)(() => {
     d.A.setState({
       previewEnabled: false
     })
-  }), n) ? (0, r.jsx)("div", {
-    className: _.T,
-    children: (0, r.jsxs)("div", {
-      className: _.U,
-      children: [(0, r.jsx)(e, {
+  }), n) ? (0, i.jsx)("div", {
+    className: g.T,
+    children: (0, i.jsxs)("div", {
+      className: g.U,
+      children: [(0, i.jsx)(e, {
         deviceId: t,
         width: 387,
         height: 218,
         disabled: !n
-      }), (0, r.jsx)(o.k, {})]
+      }), (0, i.jsx)(o.k, {})]
     })
-  }) : (0, r.jsx)("div", {
-    className: _.T,
-    children: (0, r.jsx)(l.m, {
-      text: p ? null : u.intl.string(u.t["8jSzSe"]),
-      children: (0, r.jsx)(s.Button, {
+  }) : (0, i.jsx)("div", {
+    className: g.T,
+    children: (0, i.jsx)(l.m, {
+      text: h ? null : u.intl.string(u.t["8jSzSe"]),
+      children: (0, i.jsx)(r.Button, {
         variant: "primary",
         text: u.intl.string(u.t.JIf4v7),
         onClick: () => d.A.setState({
           previewEnabled: true
         }),
-        disabled: !p
+        disabled: !h
       })
     })
   })

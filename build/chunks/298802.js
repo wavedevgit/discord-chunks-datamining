@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 298802, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  G: () => A
+  G: () => d
 });
 var Chunk775121 = require("./775121.js"),
   Chunk955572 = require("./955572.js"),
@@ -11,7 +11,7 @@ var Chunk775121 = require("./775121.js"),
   Chunk780964 = require("./780964.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let A = (0, Chunk419954.sN)(Chunk780964.X.APPEARANCE_ZOOM, {
+let d = (0, Chunk419954.sN)(Chunk780964.X.APPEARANCE_ZOOM, {
   usePredicate: () => u.isPlatformEmbedded,
   useTitle: () => T.intl.string(T.t.i19n5L),
   useSubtitle: () => T.intl.string(T.t.ip0uSf),

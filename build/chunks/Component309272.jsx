@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 309272, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -19,20 +19,20 @@ var Chunk632553 = require("./632553.js"),
 function m() {
   let e = a.H1.useSetting(),
     t = (0, l.uM)(),
-    n = _.t.sJYh5t,
-    m = _.t.cf9mvV,
+    n = p.t.sJYh5t,
+    m = p.t.cf9mvV,
     g = (0, i.g)();
   return (0, r.jsx)(o.h, {
     setting: d.H.PRIVACY_DATA_QUESTS_V2,
     children: (0, r.jsx)(c.Ay, {
-      title: _.intl.string(n),
-      note: _.intl.format(m, {
+      title: p.intl.string(n),
+      note: p.intl.format(m, {
         helpdeskArticle: s.A.getArticleURL(u.MVz.QUESTS_PRIVACY_CONTROLS)
       }),
       value: !e,
       onChange: e => a.H1.updateSetting(!e),
       disabled: g || t,
-      tooltipText: t ? _.intl.string(p.default["6Af/cw"]) : true
+      tooltipText: t ? p.intl.string(_.default["6Af/cw"]) : true
     })
   })
 }

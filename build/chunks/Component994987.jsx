@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 994987, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -16,15 +16,15 @@ let u = e => {
     userId: t,
     dmsSent: n,
     callCount: u
-  } = e, _ = (0, i.bG)([a.default], () => a.default.getUser(t));
-  return true === _ ? null : (0, r.jsx)(l.un, {
-    title: _.username,
+  } = e, p = (0, i.bG)([a.default], () => a.default.getUser(t));
+  return true === p ? null : (0, r.jsx)(l.un, {
+    title: p.username,
     body: (0, o.fq)(n, u),
     asContainer: true,
     children: (0, r.jsx)("div", {
       className: d.k,
       children: (0, r.jsx)(c.H, {
-        user: _,
+        user: p,
         avatarSize: s._3J.SIZE_40
       })
     })

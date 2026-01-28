@@ -20,7 +20,7 @@ function S() {
   })
 }
 let E = (0, Chunk419954.zZ)(Chunk780964.X.VOICE_CATEGORY, {
-  useTitle: () => d.intl.string(d.t.K3lovD),
+  useTitle: () => A.intl.string(A.t.K3lovD),
   useInlineNotice: function() {
     let t = (0, u.I)("voice");
     return l.useMemo(() => t.canPrompt ? {
@@ -28,5 +28,5 @@ let E = (0, Chunk419954.zZ)(Chunk780964.X.VOICE_CATEGORY, {
       notice: S
     } : null, [t.canPrompt])
   },
-  buildLayout: () => [o.a, T.d, A.L]
+  buildLayout: () => [o.a, T.d, d.L]
 })

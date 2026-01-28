@@ -1,4 +1,4 @@
-/** Chunk was on 82575 **/
+/** Chunk was on 38660 **/
 /** chunk id: 217356, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -12,7 +12,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk685073 = require("./685073.js"),
   Chunk534400 = require("./534400.jsx"),
   Chunk277150 = require("./277150.js");
-let g = /^(14256|21552)$/.test(require.j) ? Chunk64700.memo(function(e) {
+let g = Chunk64700.memo(function(e) {
   var t, n;
   let {
     children: l,
@@ -34,35 +34,35 @@ let g = /^(14256|21552)$/.test(require.j) ? Chunk64700.memo(function(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (s = 0, n = Object.getOwnPropertySymbols(e); s < n.length; s++) i = n[s], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
     return l
-  }(e, ["children", "isOverlay", "contextGuildId"]), [p, A] = s.useState({
+  }(e, ["children", "isOverlay", "contextGuildId"]), [A, p] = s.useState({
     maskImage: "none"
   }), m = s.useRef(null), j = (0, o.A)(() => {
     var e, t, n, i;
-    let s = null != (e = null == (n = b.current) ? true : n.getBoundingClientRect()) ? e : null,
+    let s = null != (e = null == (n = O.current) ? true : n.getBoundingClientRect()) ? e : null,
       l = null != (t = null == (i = m.current) ? true : i.getBoundingClientRect()) ? t : null;
-    if (g || null == s || null == l) return void A({
+    if (g || null == s || null == l) return void p({
       maskImage: "none"
     });
     let r = l.right - s.right,
       a = l.width - r;
-    a > l.width ? A({
+    a > l.width ? p({
       maskImage: "none"
-    }) : A({
+    }) : p({
       maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(a, "px)")
     })
-  }), b = (0, a.w)(j), O = (0, c.Wb)(x.userId, h);
+  }), O = (0, a.w)(j), b = (0, c.Wb)(x.userId, h);
   return (0, i.jsxs)("div", {
     className: r()(u.kL, g && u.ur),
-    ref: b,
+    ref: O,
     children: [(0, i.jsx)("div", {
       className: u.QV,
       children: l
     }), (0, i.jsx)("div", {
       className: u.Qz,
       children: (0, i.jsx)("span", {
-        className: r()(u.Tm, !O && g && u.pN),
+        className: r()(u.Tm, !b && g && u.pN),
         ref: m,
-        style: p,
+        style: A,
         children: (0, i.jsx)(d.Ay, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -97,4 +97,4 @@ let g = /^(14256|21552)$/.test(require.j) ? Chunk64700.memo(function(e) {
       })
     })]
   })
-}) : null
+})

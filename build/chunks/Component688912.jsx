@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 688912, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -28,21 +28,21 @@ function u() {
       (0, a.Jz)(e, t)
     },
     {
-      explicitContentFriendDm: _,
-      explicitContentNonFriendDm: p
+      explicitContentFriendDm: p,
+      explicitContentNonFriendDm: _
     } = t;
   return (0, r.jsxs)(l.E, {
     description: d.intl.string(d.t.Wnojv1),
     children: [(0, r.jsx)(s.A, {
       title: d.intl.string(d.t["+uI23H"]),
-      value: _,
+      value: p,
       onChange: e => u({
         explicitContentFriendDm: e
       }),
       options: n
     }), (0, r.jsx)(s.A, {
       title: d.intl.string(d.t["Yh+HX1"]),
-      value: p,
+      value: _,
       onChange: e => u({
         explicitContentNonFriendDm: e
       }),

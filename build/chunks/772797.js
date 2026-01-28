@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 772797, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => A
 });
 var Chunk311907 = require("./311907.js"),
   Chunk827343 = require("./827343.js"),
@@ -12,10 +12,10 @@ var Chunk311907 = require("./311907.js"),
   Chunk903427 = require("./903427.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.zD)(Chunk780964.X.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
-  useTitle: () => A.intl.string(A.t.EGn1eN),
-  useSubtitle: () => A.intl.string(A.t.iT257i),
-  useSearchTerms: () => [A.intl.string(A.t["pS+K2L"]), A.intl.string(A.t.nuFtHH)],
+let A = (0, Chunk419954.zD)(Chunk780964.X.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
+  useTitle: () => d.intl.string(d.t.EGn1eN),
+  useSubtitle: () => d.intl.string(d.t.iT257i),
+  useSearchTerms: () => [d.intl.string(d.t["pS+K2L"]), d.intl.string(d.t.nuFtHH)],
   useValue: function() {
     return (0, n.bG)([r.A], () => {
       let {

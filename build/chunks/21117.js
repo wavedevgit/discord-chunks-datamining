@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 21117, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  b: () => A
+  b: () => d
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -11,7 +11,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk964404 = require("./964404.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
-let A = (0, Chunk419954.Qx)(Chunk780964.X.HIGH_DYNAMIC_RANGE, {
+let d = (0, Chunk419954.Qx)(Chunk780964.X.HIGH_DYNAMIC_RANGE, {
   useTitle: () => T.intl.string(T.t.nemtgW),
   useSubtitle: () => T.intl.string(T.t["O/Gjvn"]),
   useBadge: () => "beta",

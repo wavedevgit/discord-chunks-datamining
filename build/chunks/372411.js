@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 372411, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  E: () => _
+  E: () => g
 });
 var Chunk311907 = require("./311907.js"),
   Chunk264686 = require("./264686.js"),
@@ -11,13 +11,13 @@ var Chunk311907 = require("./311907.js"),
   Chunk780964 = require("./780964.js"),
   Chunk932055 = require("./932055.js"),
   Chunk985018 = require("./985018.jsx");
-let A = {
+let d = {
     useTitle: () => T.intl.string(T.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk970931.kB,
     useDisabledMessage: () => (0, s.kB)() ? T.intl.string(T.t.cIRG0s) : true
   },
-  d = {
+  A = {
     useTitle: () => T.intl.string(T.t.XBrJT6),
     sound: "call_ringing"
   },
@@ -36,11 +36,11 @@ let A = {
     useValue: () => (0, n.bG)([u.A], () => u.A.getDisableAllSounds()),
     setValue: t => l.default.toggleDisableAllSounds(t)
   }),
-  _ = (0, Chunk419954.D1)(Chunk780964.X.NOTIFICATION_SOUNDS_LIST, {
+  g = (0, Chunk419954.D1)(Chunk780964.X.NOTIFICATION_SOUNDS_LIST, {
     initialize: function() {
       return () => {
         (0, o.vd)()
       }
     },
-    buildLayout: () => [(0, o.i)(A), S, (0, o.i)(d), E]
+    buildLayout: () => [(0, o.i)(d), S, (0, o.i)(A), E]
   })

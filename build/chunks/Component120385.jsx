@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 120385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,7 +12,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk124953 = require("./124953.js");
-async function _(e) {
+async function p(e) {
   try {
     return (await l.Bo.get({
       url: o.Rsh.BILLING_INVOICE_BREAKDOWN,
@@ -27,20 +27,20 @@ async function _(e) {
   }
 }
 
-function p(e) {
+function _(e) {
   let {
     payment: t
-  } = e, [n, l] = i.useState(null), [o, p] = i.useState(null), m = async e => {
+  } = e, [n, l] = i.useState(null), [o, _] = i.useState(null), m = async e => {
     try {
-      let n = await _(t.id);
+      let n = await p(t.id);
       l(n);
       let r = e ? n.refundInvoiceLinks[0] : n.invoiceLink;
-      window.open(r, "_blank"), p(null)
+      window.open(r, "_blank"), _(null)
     } catch (e) {
       var n;
-      p(null == (n = e.body) ? true : n.message)
+      _(null == (n = e.body) ? true : n.message)
     }
-  }, g = null != t.paymentSource && t.status === c.__.COMPLETED, A = null == n ? true : n.invoiceLink, f = null == n ? true : n.refundInvoiceLinks;
+  }, g = null != t.paymentSource && t.status === c.__.COMPLETED, f = null == n ? true : n.invoiceLink, b = null == n ? true : n.refundInvoiceLinks;
   return t.hasInvoiceURL && null == n ? (0, r.jsxs)("div", {
     className: u.It,
     children: [(0, r.jsx)(s.MzZ, {
@@ -57,9 +57,9 @@ function p(e) {
   }) : t.hasInvoiceURL && null != n ? (0, r.jsxs)("div", {
     className: u.It,
     children: [(0, r.jsx)(s.MzZ, {
-      href: A,
+      href: f,
       children: d.intl.formatToPlainString(d.t.R0xzCN, {})
-    }), null != f ? f.map((e, t) => (0, r.jsx)(s.MzZ, {
+    }), null != b ? b.map((e, t) => (0, r.jsx)(s.MzZ, {
       className: u.oe,
       href: e,
       children: d.intl.formatToPlainString(d.t["3x6NGw"], {})

@@ -1,8 +1,8 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 344904, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => h,
-  BN: () => A
+  BN: () => f
 });
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,8 +16,8 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk468052 = require("./468052.jsx"),
   Chunk769411 = require("./769411.jsx"),
   Chunk242142 = require("./242142.js"),
-  A = ((r = {})[r.NITRO_GEM = 0] = "NITRO_GEM", r[r.NITRO_LOGO = 1] = "NITRO_LOGO", r[r.AVATAR_DECO = 2] = "AVATAR_DECO", r);
-let f = e => {
+  f = ((r = {})[r.NITRO_GEM = 0] = "NITRO_GEM", r[r.NITRO_LOGO = 1] = "NITRO_LOGO", r[r.AVATAR_DECO = 2] = "AVATAR_DECO", r);
+let b = e => {
     let {
       avatarDecoAssetId: t,
       avatarDecoAssetDescription: n
@@ -43,43 +43,43 @@ let f = e => {
       progressCircleStrokeSize: s,
       backgroundCircleSize: c,
       percentage: u,
-      initialPercentage: A,
+      initialPercentage: f,
       progressCircleVariation: h = 0,
-      avatarDecoAssetId: b,
+      avatarDecoAssetId: A,
       avatarDecoAssetDescription: E,
       ellipseOpacity: x,
       customAnimationClassName: O,
       circleColor: C,
-      circleStroke: T
-    } = e, I = (0, o.bG)([d.A], () => d.A.useReducedMotion), S = t && !I;
+      circleStroke: y
+    } = e, j = (0, o.bG)([d.A], () => d.A.useReducedMotion), T = t && !j;
     return (0, i.jsx)("div", {
       className: a()(g.G3, n),
       children: (0, i.jsx)(m.A, {
         animationClassName: a()(g._0, {
-          [g.uJ]: S,
-          [null != O ? O : ""]: S
+          [g.uJ]: T,
+          [null != O ? O : ""]: T
         }),
-        progressCircleStroke: T,
+        progressCircleStroke: y,
         progressCircleStrokeSize: s,
         percentage: null != r ? r : u,
-        initialPercentage: null != r ? r : A,
+        initialPercentage: null != r ? r : f,
         progressCircleVariation: h,
         children: (() => {
           switch (h) {
             case 0:
-              return (0, i.jsx)(_.A, {
-                className: S ? g.Ow : true,
+              return (0, i.jsx)(p.A, {
+                className: T ? g.Ow : true,
                 backgroundColor: a()(g.vH, l),
                 backgroundCircleSize: c
               });
             case 1:
-              return (0, i.jsx)(p.A, {
+              return (0, i.jsx)(_.A, {
                 circleColor: C,
                 ellipseOpacity: x
               });
             case 2:
-              if (null != b) return (0, i.jsx)(f, {
-                avatarDecoAssetId: b,
+              if (null != A) return (0, i.jsx)(b, {
+                avatarDecoAssetId: A,
                 avatarDecoAssetDescription: E
               });
               return null;

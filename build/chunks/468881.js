@@ -25,11 +25,11 @@ let I = (0, Chunk419954.t_)(Chunk780964.X.ACCESSIBILITY_PANEL, {
   }),
   O = (0, Chunk419954.t_)(Chunk780964.X.ACCESSIBILITY_PANEL, {
     useTitle: () => c.intl.string(c.t.G0neg7),
-    buildLayout: () => [a.s, _._, d.b, E.T, A.V, S.G, o.v, T.T]
+    buildLayout: () => [a.s, g._, A.b, E.T, d.V, S.G, o.v, T.T]
   }),
   N = (0, Chunk419954.i4)(Chunk780964.X.ACCESSIBILITY_SIDEBAR_ITEM, {
     useTitle: () => c.intl.string(c.t.G0neg7),
-    getLegacySearchKey: () => (0, r.WJ)("AccessibilityPanel") ? true : g.H.ACCESSIBILITY,
+    getLegacySearchKey: () => (0, r.WJ)("AccessibilityPanel") ? true : _.H.ACCESSIBILITY,
     icon: Chunk934551.AccessibilityIcon,
     buildLayout: () => (0, r.WJ)("AccessibilityPanel") ? [O] : [I]
   })

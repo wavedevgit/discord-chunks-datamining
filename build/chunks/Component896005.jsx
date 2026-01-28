@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 896005, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -18,19 +18,19 @@ let u = Chunk64700.memo(function(e) {
     useTitle: n,
     useSubtitle: l,
     layout: u,
-    initialize: _
-  } = t, p = null == n ? true : n(), m = null == l ? true : l(), g = i.useId(), A = null != p && "" !== p, f = null != m && "" !== m;
-  return (0, c.Z)(_), (0, r.jsxs)("fieldset", {
-    "aria-describedby": f ? g : true,
-    children: [A ? (0, r.jsx)(a.Text, {
+    initialize: p
+  } = t, _ = null == n ? true : n(), m = null == l ? true : l(), g = i.useId(), f = null != _ && "" !== _, b = null != m && "" !== m;
+  return (0, c.Z)(p), (0, r.jsxs)("fieldset", {
+    "aria-describedby": b ? g : true,
+    children: [f ? (0, r.jsx)(a.Text, {
       tag: "legend",
       variant: "text-md/semibold",
       color: "text-strong",
       className: s()(d.DD, {
-        [d.h0]: f
+        [d.h0]: b
       }),
-      children: p
-    }) : null, f ? (0, r.jsx)(a.Text, {
+      children: _
+    }) : null, b ? (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "text-default",
       id: g,

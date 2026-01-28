@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 193660, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  w: () => d
+  w: () => A
 });
 var Chunk311907 = require("./311907.js"),
   Chunk955572 = require("./955572.js"),
@@ -12,13 +12,13 @@ var Chunk311907 = require("./311907.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk927961 = require("./927961.js");
-let d = (0, Chunk419954.zD)(Chunk780964.X.DISPLAY_NAME_STYLES, {
-  useTitle: () => T.intl.string(A.default["2gFUEw"]),
+let A = (0, Chunk419954.zD)(Chunk780964.X.DISPLAY_NAME_STYLES, {
+  useTitle: () => T.intl.string(d.default["2gFUEw"]),
   useSubtitle: () => {
     let {
       analyticsLocations: t
     } = (0, r.Ay)();
-    return T.intl.format(A.default.L8U56h, {
+    return T.intl.format(d.default.L8U56h, {
       onClickOpenModal() {
         (0, u.L)({
           analyticsLocations: t

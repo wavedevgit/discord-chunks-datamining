@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 520999, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => O
@@ -58,18 +58,18 @@ function O(e) {
     onLearnMore: t,
     selectedBackgroundOption: O,
     onSelectBackgroundOption: C,
-    currentDeviceId: T,
-    responsiveBackgroundOptions: I,
-    className: S
-  } = e, j = (0, l.bG)([o.default], () => o.default.getCurrentUser()), [v, N] = i.useState(null), y = (0, m.A)(), P = c.Ay.canUseCustomBackgrounds(j);
+    currentDeviceId: y,
+    responsiveBackgroundOptions: j,
+    className: T
+  } = e, v = (0, l.bG)([o.default], () => o.default.getCurrentUser()), [S, I] = i.useState(null), N = (0, m.A)(), P = c.Ay.canUseCustomBackgrounds(v);
   i.useEffect(() => {
     (0, d.HR)()
   }, []);
   let R = (0, l.cf)([u.A], () => P ? u.A.videoFilterAssets : {}),
-    D = i.useMemo(() => Object.values(R).filter(e => e.type === A.yZ.BACKGROUND), [R]),
+    D = i.useMemo(() => Object.values(R).filter(e => e.type === f.yZ.BACKGROUND), [R]),
     w = (0, a.p)(),
     L = {
-      isVideoBackgroundSupported: y,
+      isVideoBackgroundSupported: N,
       onSelectBackgroundOption: C,
       selectedBackgroundOption: O
     },
@@ -82,29 +82,29 @@ function O(e) {
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
     } = M.current;
-    e ? (0, p.S1)(n, T, {
+    e ? (0, _.S1)(n, y, {
       track: false
     }).catch(() => t(null)) : null != n && t(null)
-  }, [T]);
-  let U = e => {
-    C(e), (0, p.S1)(e, T, {
+  }, [y]);
+  let G = e => {
+    C(e), (0, _.S1)(e, y, {
       location: w.location
-    }).then(() => N(null)).catch(() => {
-      N(b.intl.string(b.t.ejrSLe)), (0, p.S1)(null, T, {
+    }).then(() => I(null)).catch(() => {
+      I(A.intl.string(A.t.ejrSLe)), (0, _.S1)(null, y, {
         location: w.location
       })
     })
   };
-  return y ? (0, r.jsx)("div", {
-    className: S,
+  return N ? (0, r.jsx)("div", {
+    className: T,
     children: (0, r.jsx)(s.D0$, {
-      label: b.intl.string(b.t.lZTUPs),
-      errorMessage: v,
+      label: A.intl.string(A.t.lZTUPs),
+      errorMessage: S,
       children: (0, r.jsx)(g.A, {
         canUseCustomBackgrounds: P,
         customBackgroundOptions: D,
         selectedOption: O,
-        onSelectOption: U,
+        onSelectOption: G,
         onUpsellClick: () => {
           (0, s.mMO)(async () => {
             let {
@@ -113,7 +113,7 @@ function O(e) {
             return n => (0, r.jsx)(e, x(E({}, n), {
               onLearnMore: t,
               analyticsSource: x(E({}, w.location), {
-                object: f.ZSU.BUTTON_CTA
+                object: b.ZSU.BUTTON_CTA
               })
             }))
           })
@@ -122,15 +122,15 @@ function O(e) {
           let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
           return new Promise(async r => {
             try {
-              let r = await (0, d.F9)(e, A.yZ.BACKGROUND);
-              U(r), (0, _.D1)(r, t.type === h.a.MP4, n), N(null)
+              let r = await (0, d.F9)(e, f.yZ.BACKGROUND);
+              G(r), (0, p.D1)(r, t.type === h.a.MP4, n), I(null)
             } catch (e) {
-              N(e.message)
+              I(e.message)
             }
             r()
           })
         },
-        responsive: I
+        responsive: j
       })
     })
   }) : null

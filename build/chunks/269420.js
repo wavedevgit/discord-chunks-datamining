@@ -18,6 +18,6 @@ var Chunk419954 = require("./419954.js"),
   Chunk509725 = require("./509725.js"),
   Chunk985018 = require("./985018.jsx");
 let c = (0, Chunk419954.zZ)(Chunk780964.X.CLIPS_RECORDING_CATEGORY, {
-  useTitle: () => g.intl.string(g.t.iIwmV5),
-  buildLayout: () => [o.e, r.X, S.T, E.B, _.Z, a.R, T.j, s.k, u.t, A.N, d.$]
+  useTitle: () => _.intl.string(_.t.iIwmV5),
+  buildLayout: () => [o.e, r.X, S.T, E.B, g.Z, a.R, T.j, s.k, u.t, d.N, A.$]
 })

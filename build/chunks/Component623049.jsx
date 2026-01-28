@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 623049, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  T: () => A
+  T: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -23,6 +23,6 @@ let T = (0, Chunk419954.E2)(Chunk780964.X.APPEARANCE_REDIRECT, {
       })
     })
   }),
-  A = (0, Chunk419954.zZ)(Chunk780964.X.APPEARANCE_REDIRECT_CATEGORY, {
+  d = (0, Chunk419954.zZ)(Chunk780964.X.APPEARANCE_REDIRECT_CATEGORY, {
     buildLayout: () => [T]
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 230084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,52 +20,52 @@ let g = [{
   extensions: ["gif"]
 }];
 
-function A(e) {
+function f(e) {
   let {
     showRemoveAvatarButton: t,
     errors: n,
     onAvatarChange: l,
-    sectionTitle: A,
-    changeAvatarButtonText: f,
+    sectionTitle: f,
+    changeAvatarButtonText: b,
     guildId: h,
-    className: b,
+    className: A,
     disabled: E = false,
     isTryItOut: x = false,
     forcedDivider: O,
     withHighlight: C = false
   } = e, {
-    newestAnalyticsLocation: T
-  } = (0, c.Ay)(), I = C ? o.wLn : a.$n, S = i.useCallback(() => {
+    newestAnalyticsLocation: y
+  } = (0, c.Ay)(), j = C ? o.wLn : a.$n, T = i.useCallback(() => {
     (0, d.XD)({
-      uploadType: _.HL.AVATAR,
-      analyticsSource: T,
+      uploadType: p.HL.AVATAR,
+      analyticsSource: y,
       filters: x ? g : true,
       guildId: h,
       isTryItOut: x
     })
-  }, [h, T, x]);
+  }, [h, y, x]);
   return (0, r.jsx)(u.A, {
-    className: b,
-    title: A,
+    className: A,
+    title: f,
     errors: n,
     disabled: E,
     forcedDivider: O,
     children: (0, r.jsxs)("div", {
       className: m.NC,
-      children: [(0, r.jsx)(I, {
+      children: [(0, r.jsx)(j, {
         className: s()({
           [m.yj]: C
         }),
         size: a.$n.Sizes.SMALL,
-        onClick: S,
-        children: null != f ? f : p.intl.string(p.t["4OynCD"])
+        onClick: T,
+        children: null != b ? b : _.intl.string(_.t["4OynCD"])
       }), t && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: m.DT,
         children: (0, r.jsx)(o.Button, {
           variant: "secondary",
           size: "sm",
-          text: null != h ? p.intl.string(p.t.TDjKDm) : p.intl.string(p.t.twB3fz),
+          text: null != h ? _.intl.string(_.t.TDjKDm) : _.intl.string(_.t.twB3fz),
           onClick: () => l(null)
         })
       })]

@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 283900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _,
+  A: () => p,
   H: () => u
 });
 var Chunk627968 = require("./627968.js");
@@ -20,8 +20,8 @@ let d = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk
       avatarSize: c = i._3J.SIZE_48
     } = e, {
       avatarSrc: u,
-      avatarDecorationSrc: _,
-      eventHandlers: p
+      avatarDecorationSrc: p,
+      eventHandlers: _
     } = (0, l.A)({
       userId: null == s ? true : s.id,
       size: c
@@ -43,10 +43,10 @@ let d = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk
         })
       }
       return e
-    }({}, p), n = n = {
+    }({}, _), n = n = {
       children: (0, r.jsx)(d, {
         src: u,
-        avatarDecoration: _,
+        avatarDecoration: p,
         size: c,
         "aria-label": o.intl.formatToPlainString(a.default.kFj4h1, {
           name: s.username
@@ -63,7 +63,7 @@ let d = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  _ = e => {
+  p = e => {
     let {
       currentUser: t,
       otherUser: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 147441, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -34,7 +34,7 @@ u.Toggle = function(e) {
   } = e, {
     isOpen: l,
     toggleOpen: u
-  } = i.useContext(d), _ = l ? a.tN5 : a.abt, p = null != n ? n : l ? o.intl.string(o.t.fgq1gs) : o.intl.string(o.t.XJuakA);
+  } = i.useContext(d), p = l ? a.tN5 : a.abt, _ = null != n ? n : l ? o.intl.string(o.t.fgq1gs) : o.intl.string(o.t.XJuakA);
   return (0, r.jsxs)(a.DUT, {
     className: s()(c.L, t),
     onClick: u,
@@ -42,8 +42,8 @@ u.Toggle = function(e) {
       variant: "heading-sm/semibold",
       tag: "div",
       color: "currentColor",
-      children: p
-    }), (0, r.jsx)(_, {
+      children: _
+    }), (0, r.jsx)(p, {
       size: "sm",
       color: "currentColor"
     })]

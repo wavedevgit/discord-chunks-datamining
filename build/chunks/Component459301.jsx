@@ -39,13 +39,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk684399 = require("./684399.js"),
   Chunk446115 = require("./446115.js");
 let Y = () => {
-    let t = (0, o.q)((0, A.Ay)()),
+    let t = (0, o.q)((0, d.Ay)()),
       {
         analyticsLocations: e
-      } = (0, S.Ay)(d.A.CF_WARP_SETTINGS);
+      } = (0, S.Ay)(A.A.CF_WARP_SETTINGS);
     return (0, l.useEffect)(() => {
-      D.default.track(G.HAw.PREMIUM_UPSELL_VIEWED, {
-        type: V.e.PRIVACY_PERK_SETTINGS,
+      D.default.track(f.HAw.PREMIUM_UPSELL_VIEWED, {
+        type: G.e.PRIVACY_PERK_SETTINGS,
         location_stack: e
       })
     }, [e]), (0, n.jsxs)("div", {
@@ -58,12 +58,12 @@ let Y = () => {
             className: h.wx,
             children: [(0, n.jsxs)("div", {
               className: h.QF,
-              children: [(0, n.jsx)(b.A, {
+              children: [(0, n.jsx)(L.A, {
                 color: t ? "black" : "white"
               }), (0, n.jsx)("div", {
                 className: h.zN
               }), (0, n.jsx)("img", {
-                src: t ? X : M,
+                src: t ? M : U,
                 alt: "Cloudflare",
                 width: 103,
                 height: 15
@@ -73,12 +73,12 @@ let Y = () => {
         }), (0, n.jsxs)("div", {
           className: h.hQ,
           children: [(0, n.jsx)("img", {
-            src: U,
+            src: X,
             width: "100",
             alt: "Private browsing perk logo"
           }), (0, n.jsxs)("div", {
             className: h.Qs,
-            children: [(0, n.jsx)(P.F, {}), (0, n.jsx)(p.q, {})]
+            children: [(0, n.jsx)(P.F, {}), (0, n.jsx)(R.q, {})]
           }), (0, n.jsx)("div", {
             className: h.yP
           }), (0, n.jsx)("div", {
@@ -86,7 +86,7 @@ let Y = () => {
             children: (0, n.jsx)(k, {})
           })]
         })]
-      }), (0, n.jsx)(v.u, {})]
+      }), (0, n.jsx)(m.u, {})]
     })
   },
   k = () => {
@@ -94,60 +94,60 @@ let Y = () => {
       installationStatus: t,
       isWeb: e,
       setInstallationStatus: i
-    } = (0, O.lV)(), o = (0, _.L)(), A = (0, l.useRef)(false);
+    } = (0, O.lV)(), o = (0, g.L)(), d = (0, l.useRef)(false);
     if ((0, l.useEffect)(() => () => {
-        A.current || C.Ay.fireSurveyAction(o ? s.w.WARP_VPN_SETTINGS_BOUNCE_NITRO : s.w.WARP_VPN_SETTINGS_BOUNCE_NON_NITRO)
-      }, [A, o]), e) return (0, n.jsx)(I.X, {
+        d.current || C.Ay.fireSurveyAction(o ? s.w.WARP_VPN_SETTINGS_BOUNCE_NITRO : s.w.WARP_VPN_SETTINGS_BOUNCE_NON_NITRO)
+      }, [d, o]), e) return (0, n.jsx)(I.X, {
       onClick: () => {
-        A.current = true
+        d.current = true
       }
     });
     if (!o) return (0, n.jsxs)("div", {
       className: h._u,
       children: [(0, n.jsx)(E.A, {
         buttonTextOverride: y.intl.string(y.t["8x0jKT"]),
-        subscriptionTier: V.pe.TIER_2,
+        subscriptionTier: G.pe.TIER_2,
         fullWidth: true,
         size: "sm",
         premiumModalAnalyticsLocation: {
-          page: d.A.CF_WARP_SETTINGS
+          page: A.A.CF_WARP_SETTINGS
         },
         onClick: () => {
-          A.current = true
+          d.current = true
         }
       }), (0, n.jsx)(a.$nd, {
         variant: "secondary",
         text: y.intl.string(y.t.ZnqyZ2),
         size: "sm",
         onClick: () => {
-          (0, u.closeModal)(R.USER_SETTINGS_MODAL_KEY), (0, L.pX)(G.BVt.APPLICATION_STORE), A.current = true
+          (0, u.closeModal)(p.USER_SETTINGS_MODAL_KEY), (0, b.pX)(f.BVt.APPLICATION_STORE), d.current = true
         }
       })]
     });
     switch (t) {
-      case g.Lk.ERROR:
-      case g.Lk.NOT_INSTALLED:
-        return (0, n.jsx)(m.y, {
-          onClick: () => A.current = true
+      case _.Lk.ERROR:
+      case _.Lk.NOT_INSTALLED:
+        return (0, n.jsx)(v.y, {
+          onClick: () => d.current = true
         });
-      case g.Lk.INSTALLED:
+      case _.Lk.INSTALLED:
         return (0, n.jsx)(N.X, {});
-      case g.Lk.ZERO_TRUST:
+      case _.Lk.ZERO_TRUST:
         break;
-      case g.Lk.EXISTING_INSTALLATION:
+      case _.Lk.EXISTING_INSTALLATION:
         return (0, n.jsx)(a.$nd, {
           variant: "primary",
           onClick: () => {
-            (0, T.u)(G.HAw.NITRO_WARP_CTA_CLICKED, {
+            (0, T.u)(f.HAw.NITRO_WARP_CTA_CLICKED, {
               is_enable_warp: true
-            }), i(g.Lk.READY_FOR_LICENSE), A.current = true
+            }), i(_.Lk.READY_FOR_LICENSE), d.current = true
           },
-          text: y.intl.string(f.default.J09UWz)
+          text: y.intl.string(V.default.J09UWz)
         });
-      case g.Lk.INSTALLING:
-      case g.Lk.READY_FOR_LICENSE:
-      case g.Lk.WAITING_FOR_TERMS:
-      case g.Lk.INSTALLING_TIMEOUT:
+      case _.Lk.INSTALLING:
+      case _.Lk.READY_FOR_LICENSE:
+      case _.Lk.WAITING_FOR_TERMS:
+      case _.Lk.INSTALLING_TIMEOUT:
         return (0, n.jsx)("div", {
           className: h.u1,
           children: (0, n.jsx)(r.y$y, {

@@ -12,21 +12,21 @@ var Chunk934551 = require("./934551.js"),
   Chunk994421 = require("./994421.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.t_)(Chunk780964.X.BILLING_PANEL, {
+let A = (0, Chunk419954.t_)(Chunk780964.X.BILLING_PANEL, {
     usePredicate: () => (0, r.dk)("BillingPanel"),
-    useTitle: () => A.intl.string(A.t.oeUm2s),
+    useTitle: () => d.intl.string(d.t.oeUm2s),
     buildLayout: () => [a.B, o.Z],
     hideInStreamerMode: true
   }),
   S = (0, Chunk419954.t_)(Chunk780964.X.BILLING_PANEL, {
     usePredicate: () => !(0, r.dk)("LegacyBillingPanel"),
-    useTitle: () => A.intl.string(A.t.oeUm2s),
+    useTitle: () => d.intl.string(d.t.oeUm2s),
     StronglyDiscouragedCustomComponent: Chunk115980.Ay,
     buildLayout: () => []
   }),
   E = (0, Chunk419954.i4)(Chunk780964.X.BILLING_SIDEBAR_ITEM, {
-    useTitle: () => A.intl.string(A.t.oeUm2s),
+    useTitle: () => d.intl.string(d.t.oeUm2s),
     icon: Chunk934551.CreditCardIcon,
     getLegacySearchKey: () => (0, r.WJ)("BillingPanel") ? true : T.H.BILLING,
-    buildLayout: () => (0, r.WJ)("BillingPanel") ? [d] : [S]
+    buildLayout: () => (0, r.WJ)("BillingPanel") ? [A] : [S]
   })

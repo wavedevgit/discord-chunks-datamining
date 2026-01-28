@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 585052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -21,9 +21,9 @@ function m() {
   return (0, r.jsxs)(d.h, {
     setting: u.H.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
     children: [(0, r.jsx)(d._, {
-      header: p.intl.string(p.t.tiCXaH),
-      description: p.intl.format(p.t.RvjRRI, {
-        appealLink: s.A.getArticleURL(_.MVz.SAFE_DIRECT_MESSAGING)
+      header: _.intl.string(_.t.tiCXaH),
+      description: _.intl.format(_.t.RvjRRI, {
+        appealLink: s.A.getArticleURL(p.MVz.SAFE_DIRECT_MESSAGING)
       })
     }), (0, r.jsx)(l.z6M, {
       value: e,

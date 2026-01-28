@@ -1,8 +1,8 @@
-/** Chunk was on 82575 **/
+/** Chunk was on 60449 **/
 /** chunk id: 69435, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O,
-  D: () => b
+  A: () => E,
+  D: () => O
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b() {
+function O() {
   let [e] = s.useState(() => u.Ay.getEnableHardwareAcceleration()), t = s.useCallback(e => {
     let t = e ? j.intl.format(j.t.LYXRxL, {}) : j.intl.format(j.t.uDP3Kz, {});
     (0, r.A)({
@@ -44,7 +44,7 @@ function b() {
   })
 }
 
-function O() {
+function E() {
   let e = g.l_.useSetting(),
     t = g.Q_.useSetting(),
     n = (0, l.bG)([d.A], () => d.A.testModeApplicationId),
@@ -71,12 +71,12 @@ function O() {
         return e
       }({}, e))) : o.cL()
     }, []);
-  return (0, i.jsx)(p.A, {
+  return (0, i.jsx)(A.A, {
     title: j.intl.string(j.t["8/udY0"]),
     children: (0, i.jsxs)(a.BJc, {
       gap: 16,
       children: [(0, i.jsxs)(c.x, {
-        setting: A.H.SETTINGS_ADVANCED_DEVELOPER_MODE,
+        setting: p.H.SETTINGS_ADVANCED_DEVELOPER_MODE,
         children: [(0, i.jsx)(a.dOG, {
           label: j.intl.string(j.t.ObIb1Q),
           description: j.intl.format(j.t["CY6q/Q"], {
@@ -86,13 +86,13 @@ function O() {
           onChange: g.Q_.updateSetting
         }), (0, i.jsx)(a.cGx, {})]
       }), (0, i.jsx)(c.x, {
-        setting: A.H.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
+        setting: p.H.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
         children: (0, i.jsxs)(a.BJc, {
           gap: 16,
-          children: [(0, i.jsx)(b, {}), (0, i.jsx)(a.cGx, {})]
+          children: [(0, i.jsx)(O, {}), (0, i.jsx)(a.cGx, {})]
         })
       }), (0, i.jsxs)(c.x, {
-        setting: A.H.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
+        setting: p.H.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
         children: [(0, i.jsx)(a.dOG, {
           label: j.intl.string(j.t.fi3UQN),
           description: j.intl.string(j.t["8mYp37"]),
@@ -100,7 +100,7 @@ function O() {
           onChange: r
         }), (0, i.jsx)(a.cGx, {})]
       }), (0, i.jsxs)(c.x, {
-        setting: A.H.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
+        setting: p.H.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
         children: [(0, i.jsx)(a.dOG, {
           label: j.intl.string(j.t.erOqlh),
           description: j.intl.string(j.t["52hMnD"]),

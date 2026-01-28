@@ -2,13 +2,13 @@
 /** chunk id: 394953, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  EJ: () => y,
-  U4: () => A,
-  i3: () => I,
-  i7: () => b,
-  lI: () => O,
-  tZ: () => v,
-  zo: () => S
+  EJ: () => E,
+  U4: () => v,
+  i3: () => A,
+  i7: () => y,
+  lI: () => b,
+  tZ: () => O,
+  zo: () => I
 });
 var Chunk892227 = require("./892227.js"),
   Chunk960488 = require("./960488.js"),
@@ -18,7 +18,6 @@ var Chunk892227 = require("./892227.js"),
   Chunk85109 = require("./85109.js"),
   Chunk226017 = require("./226017.js"),
   Chunk780964 = require("./780964.js"),
-  Chunk358776 = require("./358776.js"),
   Chunk734057 = require("./734057.js"),
   Chunk71393 = require("./71393.js");
 require("./320501.js");
@@ -29,13 +28,13 @@ var Chunk661191 = require("./661191.js"),
   Chunk849077 = require("./849077.js"),
   Chunk652215 = require("./652215.js");
 
-function y(e) {
+function E(e) {
   let {
     messageId: t,
     channelId: n,
     guildId: r,
-    ReadStateStore_: i = _.Ay,
-    GuildStore_: a = p.A
+    ReadStateStore_: i = p.Ay,
+    GuildStore_: a = f.A
   } = e;
   if (!i.hasUnread(n)) returnfalse;
   let o = a.getGuild(r);
@@ -43,58 +42,58 @@ function y(e) {
   let s = i.ackMessageId(n);
   if (null == s) {
     let e = a.getGuild(r);
-    null != e && null != e.joinedAt && (s = h.default.fromTimestamp(e.joinedAt.getTime()))
+    null != e && null != e.joinedAt && (s = _.default.fromTimestamp(e.joinedAt.getTime()))
   }
-  return h.default.compare(t, s) > 0
+  return _.default.compare(t, s) > 0
 }
 
-function b(e) {
+function y(e) {
   let {
     id: t
-  } = e, n = (0, r.default)(new Date, h.default.extractTimestamp(t));
-  return 0 === n ? g.Ur.TODAY : 1 === n ? g.Ur.YESTERDAY : g.Ur.OLDER
+  } = e, n = (0, r.default)(new Date, _.default.extractTimestamp(t));
+  return 0 === n ? m.Ur.TODAY : 1 === n ? m.Ur.YESTERDAY : m.Ur.OLDER
 }
 
-function O() {
+function b() {
   let {
     pathname: e
   } = (0, i.zy)();
-  return e.startsWith(E.BVt.CHANNEL(E.gNP))
+  return e.startsWith(g.BVt.CHANNEL(g.gNP))
 }
 
-function v(e) {
+function O(e) {
   {
     let {
       openUserSettings: t
     } = n(840065);
-    t((0, d.E7)("openNotificationSettings") ? u.X.NOTIFICATIONS_PANEL : u.X.LEGACY_NOTIFICATIONS_SETTINGS_PANEL, {
-      section: E.nc_.NOTIFICATIONS,
+    t(u.X.NOTIFICATIONS_PANEL, {
+      section: g.nc_.NOTIFICATIONS,
       analyticsLocations: e
     })
   }
 }
 
-function A() {
-  let e = (0, a.yK)([m.A], () => {
+function v() {
+  let e = (0, a.yK)([h.A], () => {
       var e;
-      return null != (e = m.A.getNotifyingChannelIds()) ? e : []
+      return null != (e = h.A.getNotifyingChannelIds()) ? e : []
     }),
-    t = (0, a.yK)([_.Ay], () => e.filter(e => _.Ay.hasUnread(e)), [e]),
+    t = (0, a.yK)([p.Ay], () => e.filter(e => p.Ay.hasUnread(e)), [e]),
     n = (0, a.yK)([o.Ay], () => {
       var e;
       return null != (e = o.Ay.getSettingsFilteredMentions()) ? e : []
     });
   return {
-    unreadRecentMentionsCount: (0, a.bG)([_.Ay, f.A, p.A], () => {
+    unreadRecentMentionsCount: (0, a.bG)([p.Ay, d.A, f.A], () => {
       var e, t;
       return null != (e = null == n || null == (t = n.filter(e => {
-        let t = f.A.getBasicChannel(e.channel_id);
-        return null != t && y({
+        let t = d.A.getBasicChannel(e.channel_id);
+        return null != t && E({
           messageId: e.id,
           channelId: e.channel_id,
           guildId: t.guild_id,
-          ReadStateStore_: _.Ay,
-          GuildStore_: p.A
+          ReadStateStore_: p.Ay,
+          GuildStore_: f.A
         })
       })) ? true : t.length) ? e : 0
     }, [n]),
@@ -102,7 +101,7 @@ function A() {
   }
 }
 
-function I() {
+function A() {
   let {
     enabled: e,
     inInbox: t
@@ -112,6 +111,6 @@ function I() {
   return e && t && (n > 0 || (0, c.A)())
 }
 
-function S(e, t) {
-  return null != t && e.channelId === t.channelId && h.default.compare(e.id, t.messageId) >= 0
+function I(e, t) {
+  return null != t && e.channelId === t.channelId && _.default.compare(e.id, t.messageId) >= 0
 }

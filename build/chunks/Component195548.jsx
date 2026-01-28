@@ -1,7 +1,7 @@
-/** Chunk was on 82575 **/
+/** Chunk was on 60449 **/
 /** chunk id: 195548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => N
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -25,46 +25,46 @@ var Chunk627968 = require("./627968.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
 
-function v() {
-  return (0, i.jsxs)(b.A, {
-    title: f.intl.string(f.t.WWaFn5),
-    description: f.intl.format(f.t["/6sFWa"], {
+function C() {
+  return (0, i.jsxs)(O.A, {
+    title: v.intl.string(v.t.WWaFn5),
+    description: v.intl.format(v.t["/6sFWa"], {
       helpArticle: (0, o.aW)()
     }),
-    webSetting: E.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-    children: [(0, i.jsx)(m.A, {}), (0, i.jsx)(S.A, {})]
+    webSetting: S.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
+    children: [(0, i.jsx)(m.A, {}), (0, i.jsx)(b.A, {})]
   })
 }
 
-function T() {
-  return (0, i.jsx)(b.A, {
-    title: f.intl.string(f.t.BG7QsQ),
-    webSetting: E.H.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
+function f() {
+  return (0, i.jsx)(O.A, {
+    title: v.intl.string(v.t.BG7QsQ),
+    webSetting: S.H.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
     children: (0, i.jsx)(u.A, {})
   })
 }
 
-function C() {
-  return (0, i.jsxs)(b.A, {
-    title: f.intl.string(f.t.SRZyHg),
-    webSetting: E.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
-    children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(p.A, {}), (0, i.jsx)(x.A, {}), (0, i.jsx)(h.A, {}), (0, i.jsx)(j.h, {
-      setting: E.H.PRIVACY_DATA_CLIPS,
+function T() {
+  return (0, i.jsxs)(O.A, {
+    title: v.intl.string(v.t.SRZyHg),
+    webSetting: S.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
+    children: [(0, i.jsx)(p.A, {}), (0, i.jsx)(A.A, {}), (0, i.jsx)(x.A, {}), (0, i.jsx)(h.A, {}), (0, i.jsx)(j.h, {
+      setting: S.H.PRIVACY_DATA_CLIPS,
       children: (0, i.jsx)(a.A, {})
     }), (0, i.jsx)(g.z, {})]
   })
 }
 
-function y() {
+function N() {
   return (0, r.Ay)(() => {
     (0, l.Q)(), (0, c.s)()
   }), (0, i.jsx)(d.R, {
-    header: f.intl.string(f.t.OAuOHD),
-    notice: (0, i.jsx)(O.A, {
-      page: O.R.DATA_AND_PRIVACY
+    header: v.intl.string(v.t.OAuOHD),
+    notice: (0, i.jsx)(E.A, {
+      page: E.R.DATA_AND_PRIVACY
     }),
     children: (0, i.jsxs)(s.lVW, {
-      children: [(0, i.jsx)(C, {}), (0, i.jsx)(T, {}), (0, i.jsx)(v, {})]
+      children: [(0, i.jsx)(T, {}), (0, i.jsx)(f, {}), (0, i.jsx)(C, {})]
     })
   })
 }

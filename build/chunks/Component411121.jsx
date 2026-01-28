@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 411121, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => M
@@ -48,16 +48,16 @@ class w extends Chunk64700.PureComponent {
   }
   get copyButtonText() {
     switch (this.state.copyMode) {
-      case _.qCr.SUCCESS:
+      case p.qCr.SUCCESS:
         return P.intl.string(P.t.XVvPjU);
-      case _.qCr.ERROR:
+      case p.qCr.ERROR:
         return P.intl.string(P.t.i4GM3L);
       default:
         return P.intl.string(P.t.OpuAlK)
     }
   }
   handleRevoke(e) {
-    p.A.revokeGiftCode(e)
+    _.A.revokeGiftCode(e)
   }
   render() {
     let {
@@ -66,15 +66,15 @@ class w extends Chunk64700.PureComponent {
     } = this.props, {
       copyMode: n
     } = this.state;
-    return (0, r.jsxs)(A.A, {
-      direction: A.A.Direction.VERTICAL,
+    return (0, r.jsxs)(f.A, {
+      direction: f.A.Direction.VERTICAL,
       className: R.Gj,
-      children: [(0, r.jsx)(_.e2O, {
+      children: [(0, r.jsx)(p.e2O, {
         className: R.ph,
-        value: (0, v.Zq)(t.code),
+        value: (0, S.Zq)(t.code),
         text: this.copyButtonText,
         mode: n,
-        supportsCopy: j.p5,
+        supportsCopy: v.p5,
         hideMessage: e ? P.intl.string(P.t["0RLn47"]) : null,
         onCopy: this.handleCopy,
         buttonColor: u.XD.BRAND,
@@ -85,7 +85,7 @@ class w extends Chunk64700.PureComponent {
           children: [P.intl.format(P.t.ltVZcJ, {
             hours: t.expiresAt.diff(o()(), "h")
           }), " —\xa0"]
-        }) : null, (0, r.jsx)(_.DUT, {
+        }) : null, (0, r.jsx)(p.DUT, {
           tag: "a",
           onClick: () => this.handleRevoke(t.code),
           children: P.intl.string(P.t.v6Yazx)
@@ -95,19 +95,19 @@ class w extends Chunk64700.PureComponent {
   }
   constructor(...e) {
     super(...e), D(this, "_copyModeTimeout", new d.Ep), D(this, "state", {
-      copyMode: _.qCr.DEFAULT
+      copyMode: p.qCr.DEFAULT
     }), D(this, "handleCopy", e => {
       let {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, v.AK)(t, n), (0, j.C)(e, () => this.setState({
-        copyMode: _.qCr.SUCCESS
+      (0, S.AK)(t, n), (0, v.C)(e, () => this.setState({
+        copyMode: p.qCr.SUCCESS
       }), () => this.setState({
-        copyMode: _.qCr.ERROR
+        copyMode: p.qCr.ERROR
       })), this._copyModeTimeout.start(1e3, () => {
         this.setState({
-          copyMode: _.qCr.DEFAULT
+          copyMode: p.qCr.DEFAULT
         })
       })
     })
@@ -123,7 +123,7 @@ class L extends Chunk64700.PureComponent {
       giftStyle: t,
       application: n
     } = this.props;
-    return (0, b.bF)(e) ? (0, r.jsx)(E.e, {
+    return (0, A.bF)(e) ? (0, r.jsx)(E.e, {
       shape: "square",
       sku: e,
       containerClassName: R.ez
@@ -131,9 +131,9 @@ class L extends Chunk64700.PureComponent {
       giftStyle: t,
       className: R.ez,
       shouldAnimate: this.state.isHovered
-    }) : (0, r.jsx)(f.A, {
+    }) : (0, r.jsx)(b.A, {
       game: n,
-      size: f.M.MEDIUM,
+      size: b.M.MEDIUM,
       skuId: e.id
     })
   }
@@ -143,11 +143,11 @@ class L extends Chunk64700.PureComponent {
       entitlements: t,
       application: n
     } = this.props;
-    return (0, b.bF)(e) ? (0, r.jsxs)("div", {
+    return (0, A.bF)(e) ? (0, r.jsxs)("div", {
       className: s()(R.Oc, R.ic),
-      children: [(0, r.jsx)(f.A, {
+      children: [(0, r.jsx)(b.A, {
         game: n,
-        size: f.M.XSMALL,
+        size: b.M.XSMALL,
         skuId: e.id,
         className: R._u
       }), P.intl.format(P.t["6plpZi"], {
@@ -167,10 +167,10 @@ class L extends Chunk64700.PureComponent {
       subscriptionPlan: n,
       giftCodeBatchId: i
     } = this.props;
-    return e = i === y.FB ? P.intl.string(P.t.odsU6W) : i === y.Bu && null != n ? P.intl.formatToPlainString(n.interval === y.WT.MONTH ? P.t.uZjpiJ : P.t.bJW1EA, {
+    return e = i === N.FB ? P.intl.string(P.t.odsU6W) : i === N.Bu && null != n ? P.intl.formatToPlainString(n.interval === N.WT.MONTH ? P.t.uZjpiJ : P.t.bJW1EA, {
       skuName: t.name,
       intervalCount: n.intervalCount
-    }) : null == n ? t.name : P.intl.formatToPlainString(n.interval === y.WT.MONTH ? P.t.rCJvqo : P.t.Vd3Iu8, {
+    }) : null == n ? t.name : P.intl.formatToPlainString(n.interval === N.WT.MONTH ? P.t.rCJvqo : P.t.Vd3Iu8, {
       skuName: t.name,
       intervalCount: n.intervalCount
     }), (0, r.jsx)("div", {
@@ -179,14 +179,14 @@ class L extends Chunk64700.PureComponent {
     })
   }
   renderGenerateGiftCodeRow() {
-    return (0, r.jsxs)(A.A, {
-      justify: A.A.Justify.BETWEEN,
-      align: A.A.Align.CENTER,
+    return (0, r.jsxs)(f.A, {
+      justify: f.A.Justify.BETWEEN,
+      align: f.A.Align.CENTER,
       className: R.pe,
-      children: [(0, r.jsx)(_.Text, {
+      children: [(0, r.jsx)(p.Text, {
         variant: "text-md/normal",
         children: P.intl.string(P.t.lELyPj)
-      }), (0, r.jsx)(_.Button, {
+      }), (0, r.jsx)(p.Button, {
         variant: "primary",
         size: "sm",
         text: P.intl.string(P.t.Q3Qguo),
@@ -214,7 +214,7 @@ class L extends Chunk64700.PureComponent {
     } = this.state;
     return (0, r.jsxs)(m.A, {
       className: l,
-      children: [(0, r.jsx)(_.DUT, {
+      children: [(0, r.jsx)(p.DUT, {
         onClick: this.handleToggleOpen,
         className: R.Nr,
         onMouseEnter: () => this.setIsHovered(true),
@@ -223,20 +223,20 @@ class L extends Chunk64700.PureComponent {
           splashArtURL: t.getSplashURL(512),
           children: (0, r.jsxs)("div", {
             className: R.MY,
-            children: [(0, r.jsxs)(A.A, {
-              align: A.A.Align.CENTER,
+            children: [(0, r.jsxs)(f.A, {
+              align: f.A.Align.CENTER,
               children: [this.renderGiftIcon(), (0, r.jsxs)("div", {
                 className: R.TK,
                 children: [this.renderTitle(), this.renderSubtitle()]
               })]
-            }), (0, r.jsx)(S.A, {
-              direction: c ? S.A.Directions.UP : S.A.Directions.DOWN,
+            }), (0, r.jsx)(T.A, {
+              direction: c ? T.A.Directions.UP : T.A.Directions.DOWN,
               className: R.eO
             })]
           })
         })
       }), c ? (0, r.jsx)(m.A.Body, {
-        children: a ? (0, r.jsx)(_.y$y, {
+        children: a ? (0, r.jsx)(p.y$y, {
           className: R.u1
         }) : (0, r.jsxs)(i.Fragment, {
           children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, r.jsx)(w, {
@@ -262,7 +262,7 @@ class L extends Chunk64700.PureComponent {
       } = this.props;
       this.setState({
         isCreating: true
-      }), await p.A.createGiftCode(t, n, r), this.setState({
+      }), await _.A.createGiftCode(t, n, r), this.setState({
         isCreating: false,
         isOpen: true
       })
@@ -272,7 +272,7 @@ class L extends Chunk64700.PureComponent {
         subscriptionPlanId: t,
         loadedAt: n
       } = this.props, r = !this.state.isOpen;
-      (null == n || null == this._loadedAt || n < this._loadedAt) && r && p.A.fetchUserGiftCodesForSKU(e, t), this.setState({
+      (null == n || null == this._loadedAt || n < this._loadedAt) && r && _.A.fetchUserGiftCodesForSKU(e, t), this.setState({
         isOpen: !this.state.isOpen
       })
     })
@@ -283,7 +283,7 @@ let M = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk351906.A, Chunk30793.A,
     skuId: t,
     subscriptionPlanId: n,
     giftStyle: r
-  } = e, i = I.A.get(t);
+  } = e, i = j.A.get(t);
   if (null == i) throw Error("SKU was unavailable while rendering gift.");
   let l = O.A.getForGifterSKUAndPlan(x.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
   return {
@@ -292,7 +292,7 @@ let M = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk351906.A, Chunk30793.A,
     isFetching: O.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
     loadedAt: O.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: g.A.getApplication(i.applicationId),
-    subscriptionPlan: null != n ? (0, N.c9)(n) : null,
+    subscriptionPlan: null != n ? (0, I.c9)(n) : null,
     giftCodes: l
   }
 })(L)

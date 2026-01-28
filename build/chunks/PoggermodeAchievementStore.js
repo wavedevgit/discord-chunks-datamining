@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 874486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -31,25 +31,25 @@ function u(e) {
   }
   return e
 }
-let _ = {
+let p = {
     unlockedAchievements: {}
   },
-  p = u({}, _);
+  _ = u({}, p);
 class m extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     this.waitFor(s.default, o.A, c.Ay);
-    let t = null != e ? e : u({}, _);
-    for (let e in t) p[e] = t[e]
+    let t = null != e ? e : u({}, p);
+    for (let e in t) _[e] = t[e]
   }
   getState() {
-    return p
+    return _
   }
   getAllUnlockedAchievements() {
-    return p.unlockedAchievements
+    return _.unlockedAchievements
   }
   getUnlocked(e) {
     var t;
-    return null != (t = p.unlockedAchievements[e]) ? t : null
+    return null != (t = _.unlockedAchievements[e]) ? t : null
   }
 }
 d(m, "displayName", "PoggermodeAchievementStore"), d(m, "persistKey", "PoggermodeAchievementStore");
@@ -60,7 +60,7 @@ let g = new m(Chunk73153.h, {
       achievementId: i
     } = e;
     if (!o.A.isEnabled()) returnfalse;
-    t = i, null != p.unlockedAchievements[t] || (n = u({}, p.unlockedAchievements), r = r = {
+    t = i, null != _.unlockedAchievements[t] || (n = u({}, _.unlockedAchievements), r = r = {
       [t]: {
         achievementId: t,
         dateUnlocked: Date.now()
@@ -74,7 +74,7 @@ let g = new m(Chunk73153.h, {
       return n
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-    }), p.unlockedAchievements = n, setTimeout(() => {
+    }), _.unlockedAchievements = n, setTimeout(() => {
       (0, a.U)(t, true)
     }, 2e3))
   }

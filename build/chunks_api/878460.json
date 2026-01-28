@@ -1,1 +1,1 @@
-{"id":"878460","type":"store","data":{"name":"EmailSettingsStore","functions":[{"name":"getEmailSettings","args":[]}],"events":["CONNECTION_OPEN","LOGOUT","EMAIL_SETTINGS_FETCH_SUCCESS","EMAIL_SETTINGS_UPDATE_SUCCESS","EMAIL_SETTINGS_UPDATE"]},"fromModule":{"id":"60667"}}
+{"id":"878460","type":"store","data":{"name":"EmailSettingsStore","functions":[{"name":"getEmailSettings","args":[]}],"events":["CONNECTION_OPEN","LOGOUT","EMAIL_SETTINGS_FETCH_SUCCESS","EMAIL_SETTINGS_UPDATE_SUCCESS","EMAIL_SETTINGS_UPDATE"]},"fromModule":{"id":"5606"}}

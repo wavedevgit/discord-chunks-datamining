@@ -20,7 +20,7 @@ let E = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_AGE_RESTRICTED_IOS_
   useValue: Chunk264249.tI,
   useDisabled: () => {
     var t;
-    let e = null == (t = (0, d.A)()) || t,
+    let e = null == (t = (0, A.A)()) || t,
       i = (0, u.sP)(),
       l = (0, r.yM)();
     return n.useMemo(() => (!i || !!l) && !e, [i, e, l])

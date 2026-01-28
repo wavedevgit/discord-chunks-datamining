@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk353709 = require("./353709.js"),
   Chunk765671 = require("./765671.js"),
-  Chunk793367 = require("./793367.js"),
+  Chunk700331 = require("./700331.js"),
   Chunk454290 = require("./454290.js");
 let c = 400;
 
@@ -69,7 +69,7 @@ function d(e) {
   }, T = e => {
     if (!_) {
       if (0 === e.button) {
-        (0, s.Yq)(s.NJ.ZOOM_IN_IMAGE_PRESSED), h(true);
+        s.l.markActionPerformed(s.N.ZOOM_IN_IMAGE_PRESSED), h(true);
         let t = e.clientX - window.innerWidth / 2,
           r = e.clientY - window.innerHeight / 2,
           i = u({
@@ -87,7 +87,7 @@ function d(e) {
         p(i.x, i.y)
       }
       return
-    }(e.clientX - v.x) ** 2 + (e.clientY - v.y) ** 2 < c && ((0, s.Yq)(s.NJ.ZOOM_OUT_IMAGE_PRESSED), h(false)), O.current = false
+    }(e.clientX - v.x) ** 2 + (e.clientY - v.y) ** 2 < c && (s.l.markActionPerformed(s.N.ZOOM_OUT_IMAGE_PRESSED), h(false)), O.current = false
   };
   return (0, r.jsx)(a.animated.div, {
     ref: m,

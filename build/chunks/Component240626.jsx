@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 240626, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -29,7 +29,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk652804 = require("./652804.js");
 
-function v(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function v(e) {
   return e
 }
 
-function N(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +61,7 @@ function N(e, t) {
   }), e
 }
 
-function y(e) {
+function N(e) {
   let {
     guildBoostSlot: t,
     isCancellable: n,
@@ -69,42 +69,42 @@ function y(e) {
     onUncancel: s,
     premiumSubscription: a,
     useReducedMotion: u,
-    fractionalState: _
-  } = e, p = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), m = (0, b.I5)(t), g = (null == a ? true : a.isPaused) === true && _ === I.xc.NONE, A = S.intl.string(S.t.mOWsF1);
+    fractionalState: p
+  } = e, _ = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), m = (0, A.I5)(t), g = (null == a ? true : a.isPaused) === true && p === j.xc.NONE, f = T.intl.string(T.t.mOWsF1);
   return (0, r.jsxs)("li", {
-    className: j.Hp,
+    className: v.Hp,
     children: [(0, r.jsxs)("div", {
-      className: j.YL,
+      className: v.YL,
       children: [(0, r.jsx)(C.A, {
-        className: j.W6,
+        className: v.W6,
         hasCooldown: t.isOnCooldown(),
         isCanceled: m,
         useReducedMotion: u
       }), m && null != a ? (0, r.jsx)(d.Text, {
         color: "text-muted",
         variant: "text-sm/medium",
-        children: S.intl.format(S.t.Z4ULRD, {
+        children: T.intl.format(T.t.Z4ULRD, {
           date: a.currentPeriodEnd
         })
-      }) : t.isOnCooldown() && null != p ? (0, r.jsx)(O.A, {
-        cooldown: p.getTime()
+      }) : t.isOnCooldown() && null != _ ? (0, r.jsx)(O.A, {
+        cooldown: _.getTime()
       }) : (0, r.jsx)(d.Text, {
-        className: j.__invalid_unappliedGuildBoostSlotDescription,
+        className: v.__invalid_unappliedGuildBoostSlotDescription,
         color: "text-muted",
         variant: "text-sm/medium",
-        children: S.intl.string(S.t["2mcafz"])
+        children: T.intl.string(T.t["2mcafz"])
       })]
     }), (0, r.jsxs)("div", {
-      className: j.E7,
+      className: v.E7,
       children: [n && !m && (0, r.jsx)(o.A, {
         shouldShow: g,
-        text: A,
-        "aria-label": A.toString(),
+        text: f,
+        "aria-label": f.toString(),
         children: e => (0, r.jsx)("div", {
-          className: j.LB,
-          children: (0, r.jsx)(c.QWc, N(v({}, e), {
+          className: v.LB,
+          children: (0, r.jsx)(c.QWc, I(S({}, e), {
             variant: "primary",
-            text: S.intl.string(S.t.twFU3R),
+            text: T.intl.string(T.t.twFU3R),
             onClick: () => l(t),
             disabled: g,
             size: "sm"
@@ -112,13 +112,13 @@ function y(e) {
         })
       }), m && (0, r.jsx)(o.A, {
         shouldShow: g,
-        text: A,
-        "aria-label": A.toString(),
+        text: f,
+        "aria-label": f.toString(),
         children: e => (0, r.jsx)("div", {
-          className: j.LB,
-          children: (0, r.jsx)(c.QWc, N(v({}, e), {
+          className: v.LB,
+          children: (0, r.jsx)(c.QWc, I(S({}, e), {
             variant: "primary",
-            text: S.intl.string(S.t["2glQNp"]),
+            text: T.intl.string(T.t["2glQNp"]),
             onClick: () => s(t),
             disabled: g,
             size: "sm"
@@ -130,13 +130,13 @@ function y(e) {
 }
 
 function P(e) {
-  (0, d.mMO)(async () => t => (0, r.jsx)(m.default, N(v({}, t), {
+  (0, d.mMO)(async () => t => (0, r.jsx)(m.default, I(S({}, t), {
     guildBoostSlot: e
   })))
 }
 
 function R(e) {
-  (0, d.mMO)(async () => t => (0, r.jsx)(g.default, N(v({}, t), {
+  (0, d.mMO)(async () => t => (0, r.jsx)(g.default, I(S({}, t), {
     guildBoostSlotId: e.id
   })))
 }
@@ -148,17 +148,17 @@ let D = function(e) {
     g = (null == m ? true : m.isPausedOrPausePending) === true,
     {
       fractionalState: O
-    } = (0, _.A)(),
+    } = (0, p.A)(),
     C = (0, a.bG)([u.A], () => u.A.useReducedMotion),
-    D = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
-    w = O === I.xc.FP_SUB_PAUSED,
+    D = (0, a.bG)([b.default], () => b.default.getCurrentUser()),
+    w = O === j.xc.FP_SUB_PAUSED,
     L = g && !w,
     {
       appliedGuildBoostSlots: M,
-      unappliedGuildBoostSlots: U,
-      numActiveGuildBoostSlots: G,
+      unappliedGuildBoostSlots: G,
+      numActiveGuildBoostSlots: U,
       hasCooldownBoosts: k,
-      allGuildBoostsAreOnCooldown: V
+      allGuildBoostsAreOnCooldown: H
     } = i.useMemo(() => {
       let e = [],
         t = [],
@@ -166,7 +166,7 @@ let D = function(e) {
         r = false,
         i = true;
       return c.forEach(l => {
-        !(0, b.I5)(l) && n++, l.isOnCooldown() ? r = true : i = false, null != l.premiumGuildSubscription ? e.push(l) : t.push(l)
+        !(0, A.I5)(l) && n++, l.isOnCooldown() ? r = true : i = false, null != l.premiumGuildSubscription ? e.push(l) : t.push(l)
       }), {
         appliedGuildBoostSlots: e,
         unappliedGuildBoostSlots: t,
@@ -175,91 +175,91 @@ let D = function(e) {
         allGuildBoostsAreOnCooldown: i
       }
     }, [c]),
-    H = null != m ? E.Ay.getNumIncludedPremiumGuildSubscriptionSlots(m.planId) : 0,
-    B = Math.max(0, H - M.length),
-    F = G > H,
-    Y = H === c.length,
-    W = Y ? B : 1,
+    B = null != m ? E.Ay.getNumIncludedPremiumGuildSubscriptionSlots(m.planId) : 0,
+    V = Math.max(0, B - M.length),
+    F = U > B,
+    Y = B === c.length,
+    W = Y ? V : 1,
     z = i.useMemo(() => {
       let e = [];
       for (let t = 0; t < W; t++) e.push((0, r.jsx)(x.A, {
-        className: j.YA,
+        className: v.YA,
         useReducedMotion: C
       }, t));
       return e
     }, [W, C]),
-    K = i.useMemo(() => U.find(e => e.isAvailable()), [U]);
-  if (0 === U.length) return null;
-  let Z = U.length;
-  if (t = Y ? S.intl.formatToPlainString(V ? S.t["3DW6Dc"] : S.t["/u15Qc"], {
+    K = i.useMemo(() => G.find(e => e.isAvailable()), [G]);
+  if (0 === G.length) return null;
+  let Z = G.length;
+  if (t = Y ? T.intl.formatToPlainString(H ? T.t["3DW6Dc"] : T.t["/u15Qc"], {
       numUnappliedGuildBoostSlots: Z
-    }) : S.intl.formatToPlainString(V ? S.t["3DW6Dc"] : S.t.BPadnO, {
+    }) : T.intl.formatToPlainString(H ? T.t["3DW6Dc"] : T.t.BPadnO, {
       numUnappliedGuildBoostSlots: Z
     }), E.Ay.isPremium(D)) {
     let e = (e, t) => (0, r.jsx)(d.DUT, {
-      className: j.nw,
+      className: v.nw,
       tag: "span",
       onClick: () => {
-        (0, A.Z)()
+        (0, f.Z)()
       },
       children: e
     }, t);
-    n = V ? S.intl.format(S.t.omcpSE, {
+    n = H ? T.intl.format(T.t.omcpSE, {
       learnMoreHook: e
-    }) : S.intl.format(S.t["5mAkVi"], {
+    }) : T.intl.format(T.t["5mAkVi"], {
       numUnappliedGuildBoostSlots: Z,
       learnMoreHook: e
     })
-  } else n = V ? S.intl.string(S.t["8pcUZi"]) : S.intl.formatToPlainString(S.t.Kaw82o, {
+  } else n = H ? T.intl.string(T.t["8pcUZi"]) : T.intl.formatToPlainString(T.t.Kaw82o, {
     numUnappliedGuildBoostSlots: Z
   });
-  return l = g && O === I.xc.NONE ? S.intl.string(S.t.mOWsF1) : S.intl.string(S.t.xr4m5B), (0, r.jsx)("div", {
-    className: j.iE,
+  return l = g && O === j.xc.NONE ? T.intl.string(T.t.mOWsF1) : T.intl.string(T.t.xr4m5B), (0, r.jsx)("div", {
+    className: v.iE,
     children: (0, r.jsxs)("div", {
-      className: s()(j.Qs, [j.Yq]),
+      className: s()(v.Qs, [v.Yq]),
       children: [(0, r.jsxs)("div", {
-        className: j.wx,
+        className: v.wx,
         children: [(0, r.jsxs)("div", {
-          className: j.RW,
+          className: v.RW,
           children: [(0, r.jsx)("div", {
-            className: j.PS,
+            className: v.PS,
             children: z
           }), (0, r.jsxs)("div", {
-            className: j.__invalid_headerCopy,
+            className: v.__invalid_headerCopy,
             children: [(0, r.jsx)(d.Heading, {
-              className: j.gg,
+              className: v.gg,
               variant: "heading-lg/bold",
               children: t
             }), (0, r.jsx)(d.Text, {
-              className: j.__invalid_headerSubheading,
+              className: v.__invalid_headerSubheading,
               color: "text-strong",
               variant: "text-sm/normal",
               children: n
             })]
           })]
         }), (0, r.jsx)("div", {
-          className: j.di,
+          className: v.di,
           children: (0, r.jsx)(o.A, {
             shouldShow: null == K || L,
             text: l,
             "aria-label": l.toString(),
-            children: e => (0, r.jsx)(d.Button, N(v({
+            children: e => (0, r.jsx)(d.Button, I(S({
               variant: "primary",
-              text: S.intl.string(S.t.BMx1iy)
+              text: T.intl.string(T.t.BMx1iy)
             }, e), {
               disabled: null == K || L,
               onClick: null != K ? () => {
-                (0, d.mMO)(async () => e => (0, r.jsx)(p.default, N(v({}, e), {
+                (0, d.mMO)(async () => e => (0, r.jsx)(_.default, I(S({}, e), {
                   guildBoostSlots: [K],
-                  locationSection: T.JJy.SETTINGS_PREMIUM
+                  locationSection: y.JJy.SETTINGS_PREMIUM
                 })))
               } : true
             }))
           })
         })]
       }), (!Y || k) && (0, r.jsx)("ul", {
-        className: j.LU,
-        children: U.map(e => (0, r.jsx)(y, {
+        className: v.LU,
+        children: G.map(e => (0, r.jsx)(N, {
           guildBoostSlot: e,
           isCancellable: F,
           onCancel: P,

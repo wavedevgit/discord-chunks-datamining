@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 380098, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => _
 }), require("./228524.js"), require("./938796.js");
 var Chunk122817 = require("./122817.js"),
   Chunk665260 = require("./665260.js"),
@@ -13,7 +13,7 @@ var Chunk122817 = require("./122817.js"),
   Chunk652215 = require("./652215.js"),
   Chunk788868 = require("./788868.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,12 +21,12 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class p extends Chunk315069.A {
+class _ extends Chunk315069.A {
   static createFromServer(e) {
     let t = null != e.payment_source ? a.Ay.createFromServer(e.payment_source) : null,
       n = null != e.sku ? o.A.createFromServer(e.sku) : null,
       r = null != e.subscription ? c.A.createFromServer(e.subscription) : null;
-    return new p({
+    return new _({
       id: e.id,
       createdAt: new Date(e.created_at),
       currency: e.currency,
@@ -92,6 +92,6 @@ class p extends Chunk315069.A {
     return null != this.sku && this.sku.productLine === d.EZt.COLLECTIBLES
   }
   constructor(e) {
-    super(), _(this, "id", true), _(this, "createdAt", true), _(this, "currency", true), _(this, "tax", true), _(this, "taxInclusive", true), _(this, "amount", true), _(this, "amountRefunded", true), _(this, "status", true), _(this, "description", true), _(this, "hasInvoiceURL", true), _(this, "hasRefundInvoiceURLs", true), _(this, "downloadableInvoice", true), _(this, "downloadableRefundInvoices", true), _(this, "flags", true), _(this, "paymentSource", true), _(this, "paymentGateway", true), _(this, "subscription", true), _(this, "skuId", true), _(this, "skuPrice", true), _(this, "sku", true), _(this, "premiumRefundDisqualificationReasons", true), _(this, "entitlements", true), this.id = e.id, this.amount = e.amount, this.amountRefunded = e.amountRefunded, this.createdAt = e.createdAt, this.currency = e.currency, this.description = e.description, this.paymentSource = e.paymentSource, this.paymentGateway = e.paymentGateway, this.status = e.status, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscription = e.subscription, this.skuId = e.skuId, this.skuPrice = e.skuPrice, this.sku = e.sku, this.flags = e.flags, this.downloadableInvoice = e.downloadableInvoice, this.downloadableRefundInvoices = e.downloadableRefundInvoices, this.hasInvoiceURL = e.hasInvoiceURL, this.hasRefundInvoiceURLs = e.hasRefundInvoiceURLs, this.premiumRefundDisqualificationReasons = e.premiumRefundDisqualificationReasons, this.entitlements = e.entitlements
+    super(), p(this, "id", true), p(this, "createdAt", true), p(this, "currency", true), p(this, "tax", true), p(this, "taxInclusive", true), p(this, "amount", true), p(this, "amountRefunded", true), p(this, "status", true), p(this, "description", true), p(this, "hasInvoiceURL", true), p(this, "hasRefundInvoiceURLs", true), p(this, "downloadableInvoice", true), p(this, "downloadableRefundInvoices", true), p(this, "flags", true), p(this, "paymentSource", true), p(this, "paymentGateway", true), p(this, "subscription", true), p(this, "skuId", true), p(this, "skuPrice", true), p(this, "sku", true), p(this, "premiumRefundDisqualificationReasons", true), p(this, "entitlements", true), this.id = e.id, this.amount = e.amount, this.amountRefunded = e.amountRefunded, this.createdAt = e.createdAt, this.currency = e.currency, this.description = e.description, this.paymentSource = e.paymentSource, this.paymentGateway = e.paymentGateway, this.status = e.status, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscription = e.subscription, this.skuId = e.skuId, this.skuPrice = e.skuPrice, this.sku = e.sku, this.flags = e.flags, this.downloadableInvoice = e.downloadableInvoice, this.downloadableRefundInvoices = e.downloadableRefundInvoices, this.hasInvoiceURL = e.hasInvoiceURL, this.hasRefundInvoiceURLs = e.hasRefundInvoiceURLs, this.premiumRefundDisqualificationReasons = e.premiumRefundDisqualificationReasons, this.entitlements = e.entitlements
   }
 }

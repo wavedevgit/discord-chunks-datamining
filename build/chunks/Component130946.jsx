@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 130946, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => T,
+  A: () => y,
   c: () => C
 });
 var r, Chunk627968 = require("./627968.js");
@@ -25,10 +25,10 @@ var Chunk503698 = require("./503698.js"),
   Chunk767032 = require("./767032.js"),
   Chunk990521 = require("./990521.js"),
   C = ((r = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", r.NITRO_SETTINGS = "SETTINGS", r.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", r);
-let T = function(e) {
+let y = function(e) {
   let {
     variant: t
-  } = e, n = (0, p.cg)(), r = (0, c.Ay)(), l = (0, o.Mwr)(r) ? a.XD.BRAND_INVERTED : a.XD.BRAND;
+  } = e, n = (0, _.cg)(), r = (0, c.Ay)(), l = (0, o.Mwr)(r) ? a.XD.BRAND_INVERTED : a.XD.BRAND;
   return n ? "APPLICATION_NITRO_HOME" === t ? (0, i.jsx)(() => (0, i.jsx)(u.Y, {
     newLocations: [d.A.PREMIUM_MARKETING_PAGE_BANNER],
     children: (0, i.jsxs)("div", {
@@ -43,7 +43,7 @@ let T = function(e) {
         children: (0, i.jsx)(o.Text, {
           variant: "eyebrow",
           color: "always-white",
-          children: f.intl.string(f.t.OS9KPu)
+          children: b.intl.string(b.t.OS9KPu)
         })
       }), (0, i.jsxs)("div", {
         className: h.IH,
@@ -51,17 +51,17 @@ let T = function(e) {
           className: h.U_,
           variant: "heading-xxl/extrabold",
           color: "text-strong",
-          children: f.intl.string(f.t["+5UxML"])
+          children: b.intl.string(b.t["+5UxML"])
         }), (0, i.jsx)(o.Text, {
           className: h._M,
           variant: "text-md/medium",
           color: "text-subtle",
-          children: f.intl.format(f.t["lVOH/p"], {
-            helpCenterLink: _.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
+          children: b.intl.format(b.t["lVOH/p"], {
+            helpCenterLink: p.A.getArticleURL(f.MVz.SUMMER_BOGO_2025)
           })
         }), (0, i.jsx)(m.A, {
           textOptions: {
-            textOverride: f.intl.string(f.t.J61px0),
+            textOverride: b.intl.string(b.t.J61px0),
             textClassName: h.cZ
           },
           subscriptionTier: g.pe.TIER_2,
@@ -95,17 +95,17 @@ let T = function(e) {
           className: h.U_,
           variant: "heading-lg/extrabold",
           color: "text-strong",
-          children: f.intl.string(f.t["+5UxML"])
+          children: b.intl.string(b.t["+5UxML"])
         }), (0, i.jsx)(o.Text, {
           className: h._M,
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: f.intl.format(f.t["lVOH/p"], {
-            helpCenterLink: _.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
+          children: b.intl.format(b.t["lVOH/p"], {
+            helpCenterLink: p.A.getArticleURL(f.MVz.SUMMER_BOGO_2025)
           })
         }), (0, i.jsx)(m.A, {
           textOptions: {
-            textOverride: f.intl.string(f.t.J61px0),
+            textOverride: b.intl.string(b.t.J61px0),
             textClassName: h.cZ
           },
           subscriptionTier: g.pe.TIER_2,
@@ -128,7 +128,7 @@ let T = function(e) {
       className: h.yk,
       children: (0, i.jsx)("img", {
         alt: "",
-        src: b.A,
+        src: A.A,
         className: h.$V
       })
     }), (0, i.jsxs)("div", {
@@ -137,13 +137,13 @@ let T = function(e) {
         className: h.U_,
         variant: "heading-md/extrabold",
         color: "text-strong",
-        children: f.intl.string(f.t["+5UxML"])
+        children: b.intl.string(b.t["+5UxML"])
       }), (0, i.jsx)(o.Text, {
         className: h._M,
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: f.intl.format(f.t["lVOH/p"], {
-          helpCenterLink: _.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
+        children: b.intl.format(b.t["lVOH/p"], {
+          helpCenterLink: p.A.getArticleURL(f.MVz.SUMMER_BOGO_2025)
         })
       })]
     }), (0, i.jsx)(m.A, {

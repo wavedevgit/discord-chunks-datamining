@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 891858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => T
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,124 +26,124 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk70338 = require("./70338.js"),
   Chunk288894 = require("./288894.js");
-let S = e => {
+let T = e => {
   let t, n, {
       isAllPerksVisible: l,
-      setIsAllPerksVisible: S,
-      previousComponent: j,
-      enablePremiumBrandRefresh: v
+      setIsAllPerksVisible: T,
+      previousComponent: v,
+      enablePremiumBrandRefresh: S
     } = e,
+    I = i.useRef(null),
     N = i.useRef(null),
-    y = i.useRef(null),
-    P = Object.entries((0, b.A)()).reduce((e, t) => {
+    P = Object.entries((0, A.A)()).reduce((e, t) => {
       let [n, r] = t;
       returnfalse !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
     }, {}),
     {
       analyticsLocations: R
-    } = (0, _.Ay)(u.A.PREMIUM_SUBSCRIBER_NITRO_HOME),
+    } = (0, p.Ay)(u.A.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [D, w] = i.useState(false),
     L = (0, a.bG)([d.A], () => d.A.useReducedMotion),
     M = (0, x.LQ)(),
     {
-      fractionalState: U
-    } = (0, p.A)(),
-    G = (0, g.d)();
+      fractionalState: G
+    } = (0, _.A)(),
+    U = (0, g.d)();
   M ? (t = C.intl.string(C.t["+vt7w9"]), n = C.intl.string(C.t.LgHbnL)) : (t = C.intl.string(C.t.LgHbnL), n = C.intl.string(C.t["+vt7w9"]));
   let k = () => {
-    S(false), m.default.track(O.HAw.NITRO_HOME_NAVIGATION, {
+    T(false), m.default.track(O.HAw.NITRO_HOME_NAVIGATION, {
       current_component: E.A2.SEE_ALL,
-      next_component: j,
+      next_component: v,
       interaction_component: "Back Button"
     })
   };
   return (0, r.jsx)(c.GtU, {
-    className: s()(T.NX, {
-      [T.ho]: l,
-      [T.LM]: L
+    className: s()(y.NX, {
+      [y.ho]: l,
+      [y.LM]: L
     }),
-    ref: N,
+    ref: I,
     children: (0, r.jsx)(c.hLv, {
       color: "nitro-pink",
-      className: s()(T.kL, T.Gd, {
-        [T.fv]: !v
+      className: s()(y.kL, y.Gd, {
+        [y.fv]: !S
       }),
-      children: (0, r.jsxs)(_.f5, {
+      children: (0, r.jsxs)(p.f5, {
         value: R,
-        children: [v ? (0, r.jsx)(f.A, {
+        children: [S ? (0, r.jsx)(b.A, {
           onBackClick: k
-        }) : (0, r.jsx)(A.A, {
-          className: T.v1,
+        }) : (0, r.jsx)(f.A, {
+          className: y.v1,
           onBackClick: k
         }), (0, r.jsxs)("div", {
-          className: s()(T.fi, {
-            [T._9]: v
+          className: s()(y.fi, {
+            [y._9]: S
           }),
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-xxl/extrabold",
             color: "text-strong",
-            className: T.R_,
+            className: y.R_,
             children: t
           }), (0, r.jsx)(h.A, {
-            className: T.Nm,
+            className: y.Nm,
             cards: (0, x.vx)({
               perksCards: P,
               variant: E.cJ.CARD_CAROUSEL_FIRST_ROW,
               isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
-              fractionalState: U,
-              isInReverseTrial: G
+              fractionalState: G,
+              isInReverseTrial: U
             }),
             cardType: E.cJ.CARD_CAROUSEL_FIRST_ROW
           }), (0, r.jsx)(c.Heading, {
             variant: "heading-xxl/extrabold",
             color: "text-strong",
-            className: T.R_,
+            className: y.R_,
             children: n
           }), (0, r.jsx)(h.A, {
-            className: T.Nm,
+            className: y.Nm,
             cards: (0, x.vx)({
               perksCards: P,
               variant: E.cJ.CARD_CAROUSEL_SECOND_ROW,
               isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
-              fractionalState: U,
-              isInReverseTrial: G
+              fractionalState: G,
+              isInReverseTrial: U
             }),
             cardType: E.cJ.CARD_CAROUSEL_SECOND_ROW
           }), (0, r.jsx)(c.Heading, {
             variant: "heading-xxl/extrabold",
             color: "text-strong",
-            className: T.R_,
+            className: y.R_,
             children: C.intl.string(C.t.LTaxu9)
           }), (0, r.jsx)(h.A, {
-            className: T.Nm,
+            className: y.Nm,
             cards: (0, x.vx)({
               perksCards: P,
               variant: E.cJ.CARD_CAROUSEL_THIRD_ROW,
               isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
-              fractionalState: U,
-              isInReverseTrial: G
+              fractionalState: G,
+              isInReverseTrial: U
             }),
             cardType: E.cJ.CARD_CAROUSEL_THIRD_ROW
           })]
         }), (0, r.jsx)("div", {
-          className: T.hz
+          className: y.hz
         }), (0, r.jsx)(o.L, {
-          innerRef: y,
+          innerRef: N,
           onChange: e => {
             e && !D && (m.default.track(O.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: R
             }), w(true))
           },
           children: (0, r.jsx)("div", {
-            ref: y,
-            className: T._Z
+            ref: N,
+            className: y._Z
           })
         }), (0, r.jsx)("img", {
-          src: I,
-          className: T.Kw,
+          src: j,
+          className: y.Kw,
           width: 112,
           height: 85,
           alt: C.intl.string(C.t.X4IxWL)

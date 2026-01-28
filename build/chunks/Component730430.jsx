@@ -1,4 +1,4 @@
-/** Chunk was on 21425 **/
+/** Chunk was on 78572 **/
 /** chunk id: 730430, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -41,7 +41,7 @@ function m(e) {
     hangStatusChannel: m,
     onAction: g,
     userId: y
-  } = e, _ = function(e, t) {
+  } = e, b = function(e, t) {
     if (null == e) return {};
     var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -57,16 +57,16 @@ function m(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["variant", "size", "hangStatusChannel", "onAction", "userId"]), b = (0, i.bG)([c.A], () => c.A.getChannelId() === m.id);
+  }(e, ["variant", "size", "hangStatusChannel", "onAction", "userId"]), _ = (0, i.bG)([c.A], () => c.A.getChannelId() === m.id);
   return (0, r.jsx)(l.Button, f({
-    text: b ? p.intl.string(p.t.BXxdl7) : p.intl.string(p.t["9C444m"]),
+    text: _ ? p.intl.string(p.t.BXxdl7) : p.intl.string(p.t["9C444m"]),
     onClick: () => {
       var e, t;
       null == g || g(), a.default.selectVoiceChannel(m.id), (0, o.iN)(m.id), u.default.track(d.HAw.HANG_STATUS_CTA_CLICKED, (e = f({
         source: "UserProfilePopout"
       }, (0, s.A)(m.id)), t = t = {
         other_user_id: y,
-        cta_type: b ? "open" : "join"
+        cta_type: _ ? "open" : "join"
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -81,5 +81,5 @@ function m(e) {
     variant: t,
     size: n,
     fullWidth: true
-  }, _))
+  }, b))
 }

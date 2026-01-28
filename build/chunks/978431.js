@@ -14,7 +14,7 @@ var Chunk419954 = require("./419954.js"),
   Chunk39218 = require("./39218.js"),
   Chunk985018 = require("./985018.jsx");
 let S = (0, Chunk419954.zZ)(Chunk780964.X.CONTENT_AND_SOCIAL_CONTENT_CATEGORY, {
-  useTitle: () => d.intl.string(d.t.xVRG4P),
+  useTitle: () => A.intl.string(A.t.xVRG4P),
   useInlineNotice: function() {
     var t;
     let e = (0, r.I)(),
@@ -22,5 +22,5 @@ let S = (0, Chunk419954.zZ)(Chunk780964.X.CONTENT_AND_SOCIAL_CONTENT_CATEGORY, {
       n = (0, s.m3)();
     return null != (t = null != e ? e : i) ? t : n
   },
-  buildLayout: () => [o.v, A.x, T.t, u.u, a.a]
+  buildLayout: () => [o.v, d.x, T.t, u.u, a.a]
 })

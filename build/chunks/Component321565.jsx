@@ -6,14 +6,14 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk935462 = require("./935462.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk707685 = require("./707685.js"),
   Chunk775121 = require("./775121.js"),
   Chunk775602 = require("./775602.js"),
   Chunk203982 = require("./203982.js"),
-  Chunk793367 = require("./793367.js"),
+  Chunk700331 = require("./700331.js"),
   Chunk454290 = require("./454290.js"),
   Chunk369254 = require("./369254.jsx"),
   Chunk847816 = require("./847816.jsx"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk285953 = require("./285953.js");
 
-function E(e, t) {
+function _(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   true === n || d.A.useReducedMotion ? e.set(t) : e.start(t)
 }
@@ -33,8 +33,8 @@ function h(e) {
     startingIndex: l,
     enabledContentHarmTypeFlags: h,
     shouldHideMediaOptions: S = false,
-    transitionState: j
-  } = e, A = function(e, t) {
+    transitionState: A
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -50,7 +50,7 @@ function h(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [v, T] = i.useState(null != l ? l : 0), [w, C] = i.useState(false), [D, P] = (0, s.zhh)(() => ({
+  }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [v, T] = i.useState(null != l ? l : 0), [w, C] = i.useState(false), [P, D] = (0, s.zhh)(() => ({
     scale: d.A.useReducedMotion ? 1 : .9,
     x: 0,
     y: 0,
@@ -65,9 +65,9 @@ function h(e) {
     }
   }, [t]), i.useEffect(() => {
     var e, t;
-    j === s.ip4.ENTERING && E(D.scale, 1), j === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), j === s.ip4.HIDDEN && (E(D.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), j === s.ip4.EXITING && E(D.scale, .9);
+    A === s.ip4.ENTERING && _(P.scale, 1), A === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), A === s.ip4.HIDDEN && (_(P.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), A === s.ip4.EXITING && _(P.scale, .9);
     let n = () => {
-        u.A.disable(), j === s.ip4.ENTERED ? u.A.enableTemp(c.w) : u.A.enableTemp(c.b)
+        u.A.disable(), A === s.ip4.ENTERED ? u.A.enableTemp(c.w) : u.A.enableTemp(c.b)
       },
       r = () => {
         u.A.disableTemp()
@@ -76,25 +76,25 @@ function h(e) {
     return null == i || i.addEventListener("focus", n), null == i || i.addEventListener("blur", r), () => {
       null == i || i.removeEventListener("focus", n), null == i || i.removeEventListener("blur", r), u.A.disableTemp()
     }
-  }, [j, D]);
+  }, [A, P]);
   let R = i.useCallback(e => {
-      T(e), (0, f.Yq)(f.NJ.SELECTED_ITEM_CHANGE)
+      T(e), f.l.markActionPerformed(f.N.SELECTED_ITEM_CHANGE)
     }, []),
     N = i.useMemo(() => ({
-      scale: D.scale,
-      x: D.x,
-      y: D.y,
+      scale: P.scale,
+      x: P.x,
+      y: P.y,
       setScale(e, t) {
-        E(D.scale, e, null == t ? true : t.immediate)
+        _(P.scale, e, null == t ? true : t.immediate)
       },
       setOffset(e, t, n) {
-        E(D.x, e, null == n ? true : n.immediate), E(D.y, t, null == n ? true : n.immediate)
+        _(P.x, e, null == n ? true : n.immediate), _(P.y, t, null == n ? true : n.immediate)
       },
       zoomed: w,
       setZoomed(e) {
-        C(e), E(D.scale, e ? 2.5 : 1), e || (E(D.x, 0), E(D.y, 0))
+        C(e), _(P.scale, e ? 2.5 : 1), e || (_(P.x, 0), _(P.y, 0))
       }
-    }), [w, D]);
+    }), [w, P]);
   return (0, r.jsx)(s.NPJ, {
     theme: y.NJ8.MIDNIGHT,
     children: e => {
@@ -119,16 +119,16 @@ function h(e) {
       }({
         "data-migration-pending": true,
         hideShadow: true,
-        className: o()(_.O, e),
-        transitionState: j
-      }, A), l = l = {
+        className: a()(E.O, e),
+        transitionState: A
+      }, j), l = l = {
         size: s.rIJ.DYNAMIC,
-        animation: a.WM.SUBTLE,
+        animation: o.WM.SUBTLE,
         fullscreenOnMobile: false,
         onClick: t,
         "aria-label": g.intl.string(g.t.AMTX3j),
         parentComponent: "MediaViewerModal",
-        children: (0, r.jsxs)(O.f.Provider, {
+        children: (0, r.jsxs)(m.f.Provider, {
           value: N,
           children: [(0, r.jsx)(b.A, {
             item: n[v],
@@ -139,7 +139,7 @@ function h(e) {
               display: "none"
             },
             ref: I
-          }), (0, r.jsx)(m.Ay, {
+          }), (0, r.jsx)(O.Ay, {
             items: n,
             startIndex: v,
             onIndexChange: R,

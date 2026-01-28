@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 345007, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  o: () => A
+  o: () => d
 });
 var Chunk955572 = require("./955572.js"),
   Chunk775602 = require("./775602.js"),
@@ -11,7 +11,7 @@ var Chunk955572 = require("./955572.js"),
   Chunk381941 = require("./381941.js"),
   Chunk985018 = require("./985018.jsx");
 let T = t => "".concat(t.toFixed(0), "px"),
-  A = (0, Chunk419954.sN)(Chunk780964.X.APPEARANCE_MESSAGE_GROUP_SPACING, {
+  d = (0, Chunk419954.sN)(Chunk780964.X.APPEARANCE_MESSAGE_GROUP_SPACING, {
     useTitle: () => o.intl.string(o.t.Q6lKkg),
     useSubtitle: () => o.intl.string(o.t.p7eUrb),
     markers: Chunk381941.qh,

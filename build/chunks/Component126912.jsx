@@ -90,7 +90,7 @@ class E extends(r = Chunk64700.PureComponent) {
         children: (0, i.jsx)(c.QWc, {
           text: m.intl.string(m.t.YYTirT),
           textVariant: "text-sm/normal",
-          onClick: () => r(f.BVt.SETTINGS("notifications", _.oh))
+          onClick: () => r(f.BVt.SETTINGS("notifications", "emails"))
         })
       })]
     })

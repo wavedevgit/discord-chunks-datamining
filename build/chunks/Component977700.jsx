@@ -1,7 +1,7 @@
 /** Chunk was on 65298 **/
 /** chunk id: 977700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => v
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,7 +11,6 @@ var Chunk397927 = require("./397927.js"),
   Chunk826673 = require("./826673.js"),
   Chunk750506 = require("./750506.jsx"),
   Chunk780964 = require("./780964.js"),
-  Chunk358776 = require("./358776.js"),
   Chunk840065 = require("./840065.jsx"),
   Chunk223567 = require("./223567.js"),
   Chunk552122 = require("./552122.js"),
@@ -21,66 +20,65 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk653246 = require("./653246.js");
 
-function v(e) {
+function b(e) {
   let {
     dismissibleContent: t,
     backgroundColor: n,
-    specialTextColor: m
-  } = e, v = p.A.useIsEligible(), j = (0, s.JZ)(t), _ = null != n, y = null != m ? {
-    color: m
+    specialTextColor: u
+  } = e, b = m.A.useIsEligible(), v = (0, s.JZ)(t), j = null != n, _ = null != u ? {
+    color: u
   } : true, {
-    analyticsLocations: A
-  } = (0, i.Ay)(r.A.HOLIDAY_COACHMARK), C = e => {
+    analyticsLocations: y
+  } = (0, i.Ay)(r.A.HOLIDAY_COACHMARK), A = e => {
     (0, s.Dr)(t, {
       dismissAction: e
     })
-  }, S = () => {
-    let e = (0, d.E7)("HolidayCoachmark");
-    (0, u.openUserSettings)(e ? c.X.NOTIFICATIONS_PANEL : c.X.LEGACY_NOTIFICATIONS_SETTINGS_PANEL, {
-      section: x.nc_.NOTIFICATIONS,
-      analyticsLocations: A
-    }), C(g.i.TAKE_ACTION)
+  }, C = () => {
+    (0, d.openUserSettings)(c.X.NOTIFICATIONS_PANEL, {
+      section: h.nc_.NOTIFICATIONS,
+      analyticsLocations: y
+    }), A(x.i.TAKE_ACTION)
   };
-  return v && !j ? (0, a.jsx)(o.Ay, {
+  return b && !v ? (0, a.jsx)(o.Ay, {
     children: (0, a.jsxs)("div", {
-      className: b.iE,
+      className: f.iE,
       style: {
-        backgroundColor: _ ? n : true
+        backgroundColor: j ? n : true
       },
-      children: [!_ && (0, a.jsxs)("div", {
-        className: b.o5,
-        children: [(0, a.jsx)(h.A, {
-          className: b.iL,
+      children: [!j && (0, a.jsxs)("div", {
+        className: f.o5,
+        children: [(0, a.jsx)(p.A, {
+          className: f.iL,
           pageMultiplier: 5
         }), (0, a.jsx)("div", {
-          className: b.Np
+          className: f.Np
         })]
       }), (0, a.jsx)("div", {
-        className: b.c8
+        className: f.c8
       }), (0, a.jsxs)("div", {
-        className: b.Qs,
+        className: f.Qs,
         children: [(0, a.jsxs)("div", {
           children: [(0, a.jsx)(l.Heading, {
             variant: "heading-md/bold",
-            color: null != y ? true : "always-white",
-            style: y,
-            children: f.intl.string(f.t["6CxPoB"])
+            color: null != _ ? true : "always-white",
+            style: _,
+            children: g.intl.string(g.t["6CxPoB"])
           }), (0, a.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: f.intl.format(f.t.IVzJ8G, {
+            children: g.intl.format(g.t.IVzJ8G, {
               settingsHook: (e, t) => (0, a.jsx)(l.DUT, {
                 tag: "span",
-                className: b.nf,
-                style: y,
-                onClick: S,
+                className: f.nf,
+                style: _,
+                onClick: C,
                 children: e
               }, t)
             })
           })]
         }), (0, a.jsx)(l.DUT, {
-          className: b.l2,
-          onClick: () => C(g.i.USER_DISMISS),
+          className: f.l2,
+          onClick: () => A(x.i.USER_DISMISS),
           children: (0, a.jsx)(l.PGe, {
             color: "currentColor",
             size: "xs"
@@ -91,10 +89,10 @@ function v(e) {
   }) : null
 }
 
-function j() {
-  return null == m.A.coachmarkDismissibleContent ? null : (0, a.jsx)(v, {
-    dismissibleContent: m.A.coachmarkDismissibleContent,
-    backgroundColor: m.A.coachmarkBackgroundColor,
-    specialTextColor: m.A.coachmarkSpecialTextColor
+function v() {
+  return null == u.A.coachmarkDismissibleContent ? null : (0, a.jsx)(b, {
+    dismissibleContent: u.A.coachmarkDismissibleContent,
+    backgroundColor: u.A.coachmarkBackgroundColor,
+    specialTextColor: u.A.coachmarkSpecialTextColor
   })
 }

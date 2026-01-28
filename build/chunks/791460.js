@@ -19,7 +19,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 let c = (0, Chunk419954.bd)(Chunk780964.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
   useTitle: function(t) {
-    return t ? g.intl.string(g.t.KHsSWK) : g.intl.string(g.t.PPDo5V)
+    return t ? _.intl.string(_.t.KHsSWK) : _.intl.string(_.t.PPDo5V)
   },
   useCollapsedSubtitle: () => {
     var t;
@@ -28,5 +28,5 @@ let c = (0, Chunk419954.bd)(Chunk780964.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION
       limit: e ? 3 : 2
     })
   },
-  buildLayout: () => [a.C, d.$, T.l, _.A, A.Q, o.e, S.W, E.i]
+  buildLayout: () => [a.C, A.$, T.l, g.A, d.Q, o.e, S.W, E.i]
 })

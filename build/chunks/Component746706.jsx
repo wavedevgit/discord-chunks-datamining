@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 746706, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,42 +20,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk896237 = require("./896237.js"),
   Chunk448085 = require("./448085.js");
 
-function b(e) {
+function A(e) {
   let {
     user: t,
     showOverlay: n,
-    children: b
+    children: A
   } = e, E = (0, a.Ay)(), {
     analyticsLocations: x
   } = (0, c.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
   return (i.useEffect(() => {
-    n && u.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
+    n && u.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
       location_stack: x,
       type: m.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
     })
   }, [n, x]), n) ? (0, r.jsxs)("div", {
-    className: A.ry,
+    className: f.ry,
     children: [(0, r.jsx)("div", {
-      children: b
+      children: A
     }), (0, r.jsxs)("div", {
-      className: A.Wc,
+      className: f.Wc,
       children: [(0, r.jsx)("img", {
-        className: A.Tn,
+        className: f.Tn,
         alt: g.intl.string(g.t.LHFZQy),
         src: function(e) {
           switch (e) {
-            case p.NJ8.DARK:
-            case p.NJ8.DARKER:
-            case p.NJ8.MIDNIGHT:
-              return f;
-            case p.NJ8.LIGHT:
+            case _.NJ8.DARK:
+            case _.NJ8.DARKER:
+            case _.NJ8.MIDNIGHT:
+              return b;
+            case _.NJ8.LIGHT:
               return h;
             default:
-              return f
+              return b
           }
         }(E)
       }), (0, r.jsxs)("div", {
-        className: A._9,
+        className: f._9,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-lg/semibold",
           color: "always-white",
@@ -69,10 +69,10 @@ function b(e) {
         size: l.$n.Sizes.LARGE,
         color: l.$n.Colors.GREEN,
         textOptions: {
-          textOverride: _.Ay.isPremium(t) ? g.intl.string(g.t.AfRWI8) : g.intl.string(g.t.nkdUym)
+          textOverride: p.Ay.isPremium(t) ? g.intl.string(g.t.AfRWI8) : g.intl.string(g.t.nkdUym)
         },
         subscriptionTier: m.pe.TIER_2
       })]
     })]
-  }) : b
+  }) : A
 }

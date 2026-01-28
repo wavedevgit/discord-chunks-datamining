@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 54009, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,15 +17,15 @@ var Chunk417597 = require("./417597.js"),
   Chunk723473 = require("./723473.js"),
   Chunk728654 = require("./728654.js"),
   Chunk903671 = require("./903671.js");
-let A = e => {
+let f = e => {
   let t, {
       className: n
     } = e,
-    A = (0, i.bG)([a.A], () => a.A.useReducedMotion),
-    f = (0, c.TM)(),
+    f = (0, i.bG)([a.A], () => a.A.useReducedMotion),
+    b = (0, c.TM)(),
     h = (0, l.qB1)((0, s.Ay)());
-  if (A) {
-    let e = h ? g.A : _.A;
+  if (f) {
+    let e = h ? g.A : p.A;
     return (0, r.jsx)("div", {
       className: n,
       children: (0, r.jsx)("img", {
@@ -34,7 +34,7 @@ let A = e => {
       })
     })
   }
-  return t = f ? h ? p.A : d.A : h ? m.A : u.A, (0, r.jsx)("div", {
+  return t = b ? h ? _.A : d.A : h ? m.A : u.A, (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)(o.A, {
       muted: true,

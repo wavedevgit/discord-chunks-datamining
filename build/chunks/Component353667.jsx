@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 353667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => S
+  j: () => T
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -39,20 +39,20 @@ function E(e) {
       }
     }
   }, [d, c]);
-  let _ = i.useMemo(() => {
+  let p = i.useMemo(() => {
     if (null == t || !o) return null;
     let {
       element: e
     } = t;
     return (0, r.jsx)(a.FQk, {
-      className: b.lm,
+      className: A.lm,
       children: (0, r.jsx)(e, {})
     })
   }, [t, o]);
   return (0, r.jsxs)(r.Fragment, {
     children: [n, (0, r.jsx)(s.F, {
       component: "div",
-      children: _
+      children: p
     })]
   })
 }
@@ -68,10 +68,10 @@ function x(e) {
     notice: l,
     children: (0, r.jsx)(a.ArX, {
       "data-settings-panel-scroller": true,
-      className: b.XG,
+      className: A.XG,
       ref: t,
       children: (0, r.jsx)("div", {
-        className: b.nd,
+        className: A.nd,
         ref: o,
         children: (0, r.jsx)(a.xpW, {
           containerRef: o,
@@ -87,12 +87,12 @@ function O(e) {
     layout: t
   } = e;
   return (0, r.jsx)("div", {
-    className: b.LZ,
+    className: A.LZ,
     children: t.map((e, n) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(m.A, {
         node: e
       }), n !== t.length - 1 && (0, r.jsx)(g.A, {
-        className: b.yF
+        className: A.yF
       })]
     }, e.key))
   })
@@ -104,7 +104,7 @@ function C(e) {
     panelKey: l,
     layout: s,
     notice: o
-  } = e, c = null != (t = p.A.useState(e => {
+  } = e, c = null != (t = _.A.useState(e => {
     let {
       currentTabKeys: t
     } = e;
@@ -113,26 +113,26 @@ function C(e) {
     navigateWithValidation: d
   } = (0, u.L_)();
   i.useEffect(() => {
-    let e = p.A.getField("currentTabKeys");
+    let e = _.A.getField("currentTabKeys");
     if (s.some(t => t.key === e.get(l))) return;
     let t = new Map(e);
-    t.set(l, s[0].key), p.A.setState({
+    t.set(l, s[0].key), _.A.setState({
       currentTabKeys: t
     })
   }, [s, l]);
-  let _ = null != (n = s.find(e => e.key === c)) ? n : s[0];
+  let p = null != (n = s.find(e => e.key === c)) ? n : s[0];
   return (0, r.jsxs)(x, {
     panelKey: l,
     notice: o,
     children: [(0, r.jsx)(a.VQ0, {
-      className: b.$H,
+      className: A.$H,
       selectedItem: c,
       onItemSelect: e => {
         d(() => {
           var t;
           if (e === c) return;
-          let n = new Map(p.A.getField("currentTabKeys"));
-          n.set(l, e), p.A.setState({
+          let n = new Map(_.A.getField("currentTabKeys"));
+          n.set(l, e), _.A.setState({
             currentTabKeys: n
           });
           let r = s.find(t => t.key === e);
@@ -154,20 +154,20 @@ function C(e) {
       })
     }), (0, r.jsx)(a.VQ0.Panel, {
       id: c,
-      children: null != _.StronglyDiscouragedCustomComponent ? (0, r.jsx)(_.StronglyDiscouragedCustomComponent, {}) : (0, r.jsx)(O, {
-        layout: _.layout
+      children: null != p.StronglyDiscouragedCustomComponent ? (0, r.jsx)(p.StronglyDiscouragedCustomComponent, {}) : (0, r.jsx)(O, {
+        layout: p.layout
       })
     })]
   })
 }
 
-function T(e) {
+function y(e) {
   let {
     panelKey: t,
     notice: n,
     layout: l
   } = e, s = i.useRef(null);
-  return (0, A.u)(t, l, s), (0, r.jsx)(x, {
+  return (0, f.u)(t, l, s), (0, r.jsx)(x, {
     scrollerRef: s,
     panelKey: t,
     notice: n,
@@ -177,7 +177,7 @@ function T(e) {
   })
 }
 
-function I(e) {
+function j(e) {
   let {
     component: t,
     panelKey: n,
@@ -190,18 +190,18 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     node: t
   } = e, {
     layout: n,
     initialize: s
   } = t;
-  (0, f.Z)(s);
+  (0, b.Z)(s);
   let a = (0, l.bG)([d.A], () => d.A.hidePersonalInformation);
   if (i.useEffect(() => {
       var e, n;
-      if ((null == (e = t.parent) ? true : e.type) !== _.Z6.SIDEBAR_ITEM || null == t.parent.trailing) return;
+      if ((null == (e = t.parent) ? true : e.type) !== p.Z6.SIDEBAR_ITEM || null == t.parent.trailing) return;
       let {
         trailing: r
       } = t.parent, i = "getDismissibleContentTypes" in r ? null == (n = r.getDismissibleContentTypes) ? true : n.call(r) : null;
@@ -212,17 +212,17 @@ function S(e) {
         })
       })
     }, [t]), a && t.hideInStreamerMode) return (0, r.jsx)(o.A, {});
-  if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(I, {
+  if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(j, {
     component: t.StronglyDiscouragedCustomComponent,
     panelKey: t.key,
     notice: t.notice
   });
-  if ((0, _.zY)(n)) return (0, r.jsx)(C, {
+  if ((0, p.zY)(n)) return (0, r.jsx)(C, {
     panelKey: t.key,
     notice: t.notice,
     layout: n
   });
-  if ((0, _.Iu)(n)) return (0, r.jsx)(T, {
+  if ((0, p.Iu)(n)) return (0, r.jsx)(y, {
     panelKey: t.key,
     notice: t.notice,
     layout: n

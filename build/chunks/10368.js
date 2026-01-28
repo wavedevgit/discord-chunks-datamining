@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 10368, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -12,20 +12,20 @@ var Chunk64700 = require("./64700.js"),
   Chunk954571 = require("./954571.js"),
   Chunk461797 = require("./461797.js"),
   Chunk652215 = require("./652215.js");
-let _ = Object.keys(Chunk461797.jB),
-  p = e => {
-    let t = null == e ? _ : _.filter(t => t !== e);
+let p = Object.keys(Chunk461797.jB),
+  _ = e => {
+    let t = null == e ? p : p.filter(t => t !== e);
     return t[Math.floor(Math.random() * t.length)]
   };
 
 function m() {
   let e = (0, i.bG)([l.A], () => l.A.useReducedMotion),
-    [t, n] = (0, r.useState)(p()),
+    [t, n] = (0, r.useState)(_()),
     {
-      banner: _,
+      banner: p,
       themeColors: m,
       avatarDecorationSkuId: g,
-      displayNameStyles: A
+      displayNameStyles: f
     } = (0, r.useMemo)(() => {
       let n = (0, d.Wt)(t);
       return {
@@ -35,20 +35,20 @@ function m() {
         displayNameStyles: n.displayNameStyles
       }
     }, [t, e]),
-    f = (0, i.bG)([s.A], () => {
+    b = (0, i.bG)([s.A], () => {
       let e = s.A.getProduct(g);
       return (0, a.T)(null == e ? true : e.items[0]) ? e.items[0] : null
     });
   (0, r.useEffect)(() => {
     (0, o.w5)({
-      banner: _,
+      banner: p,
       themeColors: m,
-      avatarDecoration: f,
-      displayNameStyles: A
+      avatarDecoration: b,
+      displayNameStyles: f
     })
-  }, [_, m, f, A]);
+  }, [p, m, b, f]);
   let h = (0, r.useCallback)(() => {
-    let e = p(t);
+    let e = _(t);
     n(e), c.default.track(u.HAw.TRY_IT_OUT_PRESET_SHUFFLED, {
       preset: e
     })

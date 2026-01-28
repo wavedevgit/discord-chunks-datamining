@@ -17,12 +17,12 @@ let T = (0, Chunk419954.sN)(Chunk780964.X.VOICE_GLOBAL_ATTENUATION_SLIDER, {
     maxValue: 100,
     getInitialValue: () => r.A.getAttenuation()
   }),
-  A = (0, Chunk419954.zD)(Chunk780964.X.VOICE_GLOBAL_ATTENUATION_FOR_SELF_SETTING, {
+  d = (0, Chunk419954.zD)(Chunk780964.X.VOICE_GLOBAL_ATTENUATION_FOR_SELF_SETTING, {
     useTitle: () => o.intl.string(o.t["9dHxRY"]),
     useValue: () => (0, n.bG)([r.A], () => r.A.getAttenuateWhileSpeakingSelf()),
     setValue: t => l.A.setAttenuation(r.A.getAttenuation(), t, r.A.getAttenuateWhileSpeakingOthers())
   }),
-  d = (0, Chunk419954.zD)(Chunk780964.X.VOICE_GLOBAL_ATTENUATION_FOR_OTHERS_SETTING, {
+  A = (0, Chunk419954.zD)(Chunk780964.X.VOICE_GLOBAL_ATTENUATION_FOR_OTHERS_SETTING, {
     useTitle: () => o.intl.string(o.t.SMt0Gr),
     useValue: () => (0, n.bG)([r.A], () => r.A.getAttenuateWhileSpeakingOthers()),
     setValue: t => l.A.setAttenuation(r.A.getAttenuation(), r.A.getAttenuateWhileSpeakingSelf(), t)
@@ -31,5 +31,5 @@ let T = (0, Chunk419954.sN)(Chunk780964.X.VOICE_GLOBAL_ATTENUATION_SLIDER, {
     useTitle: () => o.intl.string(o.t.oSdBvW),
     useSubtitle: () => o.intl.string(o.t["0A/8Rt"]),
     usePredicate: () => (0, n.bG)([r.A], () => r.A.supports(a.O5.ATTENUATION)),
-    buildLayout: () => [T, A, d]
+    buildLayout: () => [T, d, A]
   })

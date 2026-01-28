@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 545202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,46 +15,46 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk473169 = require("./473169.js");
 
-function m() {
+function x() {
   let {
     analyticsLocations: e
   } = (0, o.Ay)(), t = (0, l.bG)([c.A], () => c.A.getActiveInputProfile()), {
     enabledInputProfiles: n
   } = (0, d.d)({
     location: "UserSettingsInputProfile"
-  }), m = i.useCallback(t => {
+  }), x = s.useCallback(t => {
     let {
       value: n
     } = t;
     a.A.setActiveInputProfile(n, {
       analyticsLocations: e
     })
-  }, [e]), g = [{
+  }, [e]), A = [{
     value: u.my.VOICE_ISOLATION,
-    name: _.intl.string(_.t.cjPbpT),
-    desc: _.intl.string(_.t.CzhvnE)
+    name: g.intl.string(g.t.cjPbpT),
+    desc: g.intl.string(g.t.CzhvnE)
   }, {
     value: u.my.STUDIO,
-    name: _.intl.string(_.t.VZPR0R),
-    desc: _.intl.string(_.t.ZaJksS)
+    name: g.intl.string(g.t.VZPR0R),
+    desc: g.intl.string(g.t.ZaJksS)
   }, {
     value: u.my.CUSTOM,
-    name: _.intl.string(_.t["N/PQjv"]),
-    desc: _.intl.string(_.t.SnBmuY)
+    name: g.intl.string(g.t["N/PQjv"]),
+    desc: g.intl.string(g.t.SnBmuY)
   }].filter(e => {
     let {
       value: t
     } = e;
     return n.includes(t)
   });
-  return (0, r.jsx)("div", {
-    className: p.SX,
-    children: (0, r.jsx)(s.z6M, {
-      label: _.intl.string(_.t.LM3U3k),
-      onChange: e => m({
+  return (0, i.jsx)("div", {
+    className: h.SX,
+    children: (0, i.jsx)(r.z6M, {
+      label: g.intl.string(g.t.LM3U3k),
+      onChange: e => x({
         value: e
       }),
-      options: g,
+      options: A,
       value: null != t ? t : u.my.CUSTOM
     })
   })

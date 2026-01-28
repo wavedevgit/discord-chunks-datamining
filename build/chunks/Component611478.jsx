@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 611478, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  P: () => g
+  P: () => _
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk998252 = require("./998252.jsx"),
   Chunk980172 = require("./980172.jsx"),
   Chunk985018 = require("./985018.jsx");
-let _ = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_PROFILE_SETTING, {
+let g = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_PROFILE_SETTING, {
     useSearchTerms: function() {
       let t = [E.intl.string(E.t.LYju5J), E.intl.string(E.t["9AjdkD"]), E.intl.string(E.t["+JkHPw"]), E.intl.string(E.t.oP5zGA), E.intl.string(E.t.Ulqq6K)],
         e = (0, r.fk)(),
@@ -26,12 +26,12 @@ let _ = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_PROFILE_SETTING, {
       let t = (0, s.g)(),
         e = (0, l.bG)([a.default], () => a.default.getCurrentUser());
       return (0, n.jsxs)(n.Fragment, {
-        children: [t && (0, n.jsx)(A.A, {}), null != e && (0, n.jsx)(d.A, {
+        children: [t && (0, n.jsx)(d.A, {}), null != e && (0, n.jsx)(A.A, {
           currentUser: e
         }), (0, n.jsx)(S.A, {})]
       })
     }
   }),
-  g = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_PROFILE_CATEGORY, {
-    buildLayout: () => [_]
+  _ = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_PROFILE_CATEGORY, {
+    buildLayout: () => [g]
   })

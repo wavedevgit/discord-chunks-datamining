@@ -16,5 +16,5 @@ var Chunk419954 = require("./419954.js"),
   Chunk985018 = require("./985018.jsx");
 let E = (0, Chunk419954.FW)(Chunk780964.X.NOTIFICATION_SELECTION_FIELD_SET, {
   useTitle: () => S.intl.string(S.t.FEVRDV),
-  buildLayout: () => [a.L, d.q, s.Z, r.E, A.N, u.M, o.q, T.q]
+  buildLayout: () => [a.L, A.q, s.Z, r.E, d.N, u.M, o.q, T.q]
 })

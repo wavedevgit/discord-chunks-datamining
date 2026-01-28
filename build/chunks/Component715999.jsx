@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 715999, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  q: () => A
+  q: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,13 +11,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk557571 = require("./557571.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk895431 = require("./895431.js");
-let A = () => {
+let d = () => {
   let {
     isWeb: t,
     installationStatus: e,
     connectionStatus: i,
-    perkAvailableToUser: A
-  } = (0, a.lV)(), d = (0, l.useMemo)(() => {
+    perkAvailableToUser: d
+  } = (0, a.lV)(), A = (0, l.useMemo)(() => {
     switch (i) {
       case u.l7.CONNECTED:
         return o.intl.format(T.default.EVQZqy, {
@@ -40,7 +40,7 @@ let A = () => {
     if (t) return o.intl.format(T.default.z6v0w5, {
       helpdeskArticle: r.V
     });
-    if (!A) return o.intl.format(T.default.yL6mvx, {
+    if (!d) return o.intl.format(T.default.yL6mvx, {
       helpdeskArticle: r.V
     });
     switch (e) {
@@ -68,7 +68,7 @@ let A = () => {
       case u.Lk.ZERO_TRUST:
         return o.intl.string(T.default.KVSUDs);
       case u.Lk.INSTALLED:
-        return d;
+        return A;
       case u.Lk.NOT_INSTALLED:
       case u.Lk.UNKNOWN:
       default:
@@ -76,7 +76,7 @@ let A = () => {
           helpdeskArticle: r.V
         })
     }
-  }, [t, e, d, A]);
+  }, [t, e, A, d]);
   return (0, n.jsx)(s.EYj, {
     variant: "text-sm/normal",
     color: "text-subtle",

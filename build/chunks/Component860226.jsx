@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 860226, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -14,14 +14,14 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function u() {
-  let e = (0, i.bG)([o.A], () => o.A.getQoS());
-  return (0, r.jsx)(a.x, {
+  let e = (0, s.bG)([o.A], () => o.A.getQoS());
+  return (0, i.jsx)(a.x, {
     setting: c.H.VOICE_AND_VIDEO_ADVANCED_QOS,
-    children: (0, r.jsx)(l.dOG, {
+    children: (0, i.jsx)(l.dOG, {
       label: d.intl.string(d.t["3CqDxp"]),
       description: d.intl.string(d.t.I1Eoqq),
       checked: e,
-      onChange: e => s.A.setQoS(e)
+      onChange: e => r.A.setQoS(e)
     })
   })
 }

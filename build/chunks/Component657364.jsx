@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 657364, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -32,41 +32,41 @@ function E() {
     })),
     [E, x] = i.useState(false);
   if (null == e) return null;
-  let O = (0, _.Oj)(t, e) || l,
-    C = null != t && s()().diff(s()(t.created_at), "days") < f.n83,
-    T = O && C,
-    I = e.isStaff(),
-    S = !e.verified;
+  let O = (0, p.Oj)(t, e) || l,
+    C = null != t && s()().diff(s()(t.created_at), "days") < b.n83,
+    y = O && C,
+    j = e.isStaff(),
+    T = !e.verified;
   return (0, r.jsxs)(g.h, {
-    setting: A.H.PRIVACY_DATA_REQUEST_V2,
+    setting: f.H.PRIVACY_DATA_REQUEST_V2,
     children: [(0, r.jsx)(g._, {
       header: h.intl.string(h.t.XAHCgJ),
       description: h.intl.format(h.t.P3kNfr, {
-        helpdeskArticle: u.A.getArticleURL(f.MVz.GDPR_REQUEST_DATA)
+        helpdeskArticle: u.A.getArticleURL(b.MVz.GDPR_REQUEST_DATA)
       })
-    }), T ? (0, r.jsx)(o.ZpM, {
-      className: b.N,
+    }), y ? (0, r.jsx)(o.ZpM, {
+      className: A.N,
       children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         children: h.intl.format(h.t.RNDlV9, {
-          date: s()(t.created_at).add(f.n83, "days").format("MMMM Do YYYY")
+          date: s()(t.created_at).add(b.n83, "days").format("MMMM Do YYYY")
         })
       })
-    }) : I ? (0, r.jsx)(o.ZpM, {
-      className: b.N,
+    }) : j ? (0, r.jsx)(o.ZpM, {
+      className: A.N,
       children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         children: h.intl.string(h.t.ZPQLH2)
       })
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [S ? (0, r.jsx)(o.ZpM, {
-        className: b.N,
+      children: [T ? (0, r.jsx)(o.ZpM, {
+        className: A.N,
         children: (0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           children: h.intl.string(h.t.c1f88z)
         })
       }) : null, (0, r.jsx)("div", {
-        className: b.x,
+        className: A.x,
         children: (0, r.jsx)(o.Button, {
           variant: "primary",
           text: h.intl.string(h.t.dmBSKo),
@@ -87,7 +87,7 @@ function E() {
               })
             })({
               onConfirm: e => {
-                x(true), (0, p.$)(e).then(e => {
+                x(true), (0, _.$)(e).then(e => {
                   null != e && null != e.body ? c.A.show({
                     title: h.intl.string(h.t.i2iul5),
                     body: h.intl.string(h.t["6Nmv4i"])

@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 535646, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,12 +13,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk428208 = require("./428208.js");
 
-function _(e) {
+function p(e) {
   let {
     preset: t,
     onShuffle: n
-  } = e, _ = (0, l.bG)([a.A], () => a.A.useReducedMotion), p = (0, o.Xf)({
-    useReducedMotion: _
+  } = e, p = (0, l.bG)([a.A], () => a.A.useReducedMotion), _ = (0, o.Xf)({
+    useReducedMotion: p
   }), {
     name: m,
     header: g
@@ -33,14 +33,14 @@ function _(e) {
     className: u.kL,
     children: [(0, r.jsx)(s.DUT, {
       onClick: () => {
-        n(), p.startAnimation(false)
+        n(), _.startAnimation(false)
       },
       className: u.x6,
       "aria-label": d.intl.string(d.t["44yJxh"]),
-      children: p.render()
+      children: _.render()
     }), (0, r.jsxs)(s.DUT, {
       onClick: () => {
-        n(), p.startAnimation(false)
+        n(), _.startAnimation(false)
       },
       "aria-label": "".concat(m, ": ").concat(d.intl.string(d.t["44yJxh"])),
       className: u.Lt,

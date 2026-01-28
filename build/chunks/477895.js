@@ -1,10 +1,9 @@
-/** Chunk was on 82575 **/
-/** chunk id: 477895, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 28979 **/
+/** chunk id: 477895, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  Bf: () => s,
-  Oi: () => l
+  Bf: () => l
 });
-let i = (0, require("./945810.js").mj)({
+let n = (0, require("./945810.js").mj)({
   kind: "user",
   name: "2026-01-friend-is-online-notif-rate-limits",
   defaultConfig: {
@@ -23,14 +22,8 @@ let i = (0, require("./945810.js").mj)({
   }
 });
 
-function s(e) {
-  return i.useConfig({
-    location: e
+function l(t) {
+  return n.useConfig({
+    location: t
   })
-}
-
-function l(e) {
-  return i.getConfig({
-    location: e
-  }).showSettingsToggle
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 593942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => l
@@ -7,10 +7,10 @@ var Chunk314116 = require("./314116.jsx"),
   Chunk985018 = require("./985018.jsx");
 
 function l(e, t, n) {
-  (0, r.A)({
+  (0, i.A)({
     title: e,
     subtitle: t,
-    confirmText: i.intl.string(i.t.BddRzS),
+    confirmText: s.intl.string(s.t.BddRzS),
     onConfirm: n
   })
 }

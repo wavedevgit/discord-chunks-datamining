@@ -1,16 +1,16 @@
-/** Chunk was on 60667 **/
-/** chunk id: 474774, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 28979 **/
+/** chunk id: 474774, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  l: () => a
+  l: () => u
 });
 var Chunk253932 = require("./253932.js"),
   Chunk954571 = require("./954571.js"),
   Chunk652215 = require("./652215.js"),
   Chunk406535 = require("./406535.js");
 
-function a(e) {
-  r.JV.updateSetting(e), i.default.track(l.HAw.NOTIFICATION_SETTINGS_UPDATED, {
-    update_type: s.Y.ACCOUNT,
-    game_update_notifications: e
+function u(t) {
+  n.JV.updateSetting(t), l.default.track(s.HAw.NOTIFICATION_SETTINGS_UPDATED, {
+    update_type: r.Y.ACCOUNT,
+    game_update_notifications: t
   })
 }

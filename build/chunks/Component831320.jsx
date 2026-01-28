@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 831320, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -24,29 +24,29 @@ function g() {
     children: [(0, r.jsx)(c.h, {
       setting: u.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
       children: (0, r.jsx)(d.Ay, {
-        title: p.intl.string(p.t["7x9dyE"]),
+        title: _.intl.string(_.t["7x9dyE"]),
         value: t.all,
-        onChange: e => o.FA.updateSetting(e ? _.yKI : _.yKI & ~_.dzt.NO_RELATION),
+        onChange: e => o.FA.updateSetting(e ? p.yKI : p.yKI & ~p.dzt.NO_RELATION),
         disabled: n,
-        tooltipText: n ? p.intl.string(m.default["6Af/cw"]) : true
+        tooltipText: n ? _.intl.string(m.default["6Af/cw"]) : true
       })
     }), (0, r.jsx)(c.h, {
       setting: u.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
       children: (0, r.jsx)(d.Ay, {
-        title: p.intl.string(p.t.NfeuZ3),
+        title: _.intl.string(_.t.NfeuZ3),
         value: t.all || t.mutualFriends,
-        onChange: t => o.FA.updateSetting(t ? l.UI(e, _.dzt.MUTUAL_FRIENDS) : l.iE(e, _.dzt.MUTUAL_FRIENDS, _.dzt.NO_RELATION)),
+        onChange: t => o.FA.updateSetting(t ? l.UI(e, p.dzt.MUTUAL_FRIENDS) : l.iE(e, p.dzt.MUTUAL_FRIENDS, p.dzt.NO_RELATION)),
         disabled: n,
-        tooltipText: n ? p.intl.string(m.default["6Af/cw"]) : true
+        tooltipText: n ? _.intl.string(m.default["6Af/cw"]) : true
       })
     }), (0, r.jsx)(c.h, {
       setting: u.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
       children: (0, r.jsx)(d.Ay, {
-        title: p.intl.string(p.t.qsMfsH),
+        title: _.intl.string(_.t.qsMfsH),
         value: t.all || t.mutualGuilds,
-        onChange: t => o.FA.updateSetting(t ? l.UI(e, _.dzt.MUTUAL_GUILDS) : l.iE(e, _.dzt.MUTUAL_GUILDS, _.dzt.NO_RELATION)),
+        onChange: t => o.FA.updateSetting(t ? l.UI(e, p.dzt.MUTUAL_GUILDS) : l.iE(e, p.dzt.MUTUAL_GUILDS, p.dzt.NO_RELATION)),
         disabled: n,
-        tooltipText: n ? p.intl.string(m.default["6Af/cw"]) : true
+        tooltipText: n ? _.intl.string(m.default["6Af/cw"]) : true
       })
     })]
   })

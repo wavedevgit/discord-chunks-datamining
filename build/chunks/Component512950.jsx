@@ -26,7 +26,7 @@ function d(e, t) {
     case "danger":
       return s.CircleErrorIcon;
     case "positive":
-      return s.CheckmarkLargeIcon;
+      return s.CircleCheckIcon;
     case "preview":
       return s.ScienceIcon
   }

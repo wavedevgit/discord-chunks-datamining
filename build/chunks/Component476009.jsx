@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 476009, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk546140 = require("./546140.js"),
@@ -14,7 +14,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p() {
+function _() {
   let e = (0, i.L)();
   return (0, r.jsx)(a.h, {
     setting: d.H.PRIVACY_SAFETY_ALERTS_V2,
@@ -22,8 +22,8 @@ function p() {
     children: (0, r.jsx)(o.Ay, {
       value: e,
       onChange: l.a,
-      title: _.intl.string(_.t.qFsx5q),
-      note: _.intl.format(_.t.lunaRv, {
+      title: p.intl.string(p.t.qFsx5q),
+      note: p.intl.format(p.t.lunaRv, {
         learnMoreLink: s.A.getArticleURL(u.MVz.SAFETY_ALERTS)
       })
     })

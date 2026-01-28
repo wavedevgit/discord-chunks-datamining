@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 340186, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  g: () => L
+  g: () => b
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -22,14 +22,14 @@ var Chunk934551 = require("./934551.js"),
   Chunk985018 = require("./985018.jsx");
 let N = (0, Chunk419954.t_)(Chunk780964.X.CHAT_PANEL, {
     useTitle: () => O.intl.string(O.t["/VQax8"]),
-    buildLayout: () => [T.M, a.f, o.z, _.J, S.n, g.p, c.U, d.W, E.o, A.B]
+    buildLayout: () => [T.M, a.f, o.z, g.J, S.n, _.p, c.U, A.W, E.o, d.B]
   }),
   C = (0, Chunk419954.t_)(Chunk780964.X.CHAT_PANEL, {
     useTitle: () => O.intl.string(O.t["/VQax8"]),
     StronglyDiscouragedCustomComponent: Chunk16986.A,
     buildLayout: () => []
   }),
-  L = (0, Chunk419954.i4)(Chunk780964.X.CHAT_SIDEBAR_ITEM, {
+  b = (0, Chunk419954.i4)(Chunk780964.X.CHAT_SIDEBAR_ITEM, {
     useTitle: () => O.intl.string(O.t["/VQax8"]),
     getLegacySearchKey: () => (0, r.WJ)("ChatPanel") ? true : I.H.CHAT,
     icon: Chunk934551.ChatIcon,

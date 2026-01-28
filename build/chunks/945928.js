@@ -23,17 +23,17 @@ var Chunk64700 = require("./64700.js"),
   Chunk903427 = require("./903427.js"),
   Chunk509381 = require("./509381.js"),
   Chunk985018 = require("./985018.jsx");
-let b = (0, Chunk419954.Qx)(Chunk780964.X.VOICE_INPUT_PROFILE_SETTING, {
-    useTitle: () => L.intl.string(L.t.LM3U3k),
+let L = (0, Chunk419954.Qx)(Chunk780964.X.VOICE_INPUT_PROFILE_SETTING, {
+    useTitle: () => b.intl.string(b.t.LM3U3k),
     usePredicate: function() {
       let {
         enabledInputProfiles: t
-      } = (0, d._)({
+      } = (0, A._)({
         location: "SettingsRendererConfig"
       });
       return t.length > 0
     },
-    useSearchTerms: () => [L.intl.string(L.t.nuFtHH), L.intl.string(L.t.VZPR0R), L.intl.string(L.t.cjPbpT)],
+    useSearchTerms: () => [b.intl.string(b.t.nuFtHH), b.intl.string(b.t.VZPR0R), b.intl.string(b.t.cjPbpT)],
     useValue: function() {
       return (0, l.bG)([T.A], () => {
         var t;
@@ -49,21 +49,21 @@ let b = (0, Chunk419954.Qx)(Chunk780964.X.VOICE_INPUT_PROFILE_SETTING, {
     useOptions: function() {
       let {
         enabledInputProfiles: t
-      } = (0, d.d)({
+      } = (0, A.d)({
         location: "InputProfileCategory"
       });
       return [{
         value: C.my.VOICE_ISOLATION,
-        name: L.intl.string(L.t.cjPbpT),
-        desc: L.intl.string(L.t.CzhvnE)
+        name: b.intl.string(b.t.cjPbpT),
+        desc: b.intl.string(b.t.CzhvnE)
       }, {
         value: C.my.STUDIO,
-        name: L.intl.string(L.t.VZPR0R),
-        desc: L.intl.string(L.t.ZaJksS)
+        name: b.intl.string(b.t.VZPR0R),
+        desc: b.intl.string(b.t.ZaJksS)
       }, {
         value: C.my.CUSTOM,
-        name: L.intl.string(L.t["N/PQjv"]),
-        desc: L.intl.string(L.t.SnBmuY)
+        name: b.intl.string(b.t["N/PQjv"]),
+        desc: b.intl.string(b.t.SnBmuY)
       }].filter(e => {
         let {
           value: i
@@ -82,9 +82,9 @@ let b = (0, Chunk419954.Qx)(Chunk780964.X.VOICE_INPUT_PROFILE_SETTING, {
         if (t) return {
           type: a.W.INLINE_NOTICE,
           noticeType: "info",
-          useText: () => L.intl.string(L.t["/Whuzi"])
+          useText: () => b.intl.string(b.t["/Whuzi"])
         }
       }, [t])
     },
-    buildLayout: () => [b, _.O, g.w, E.h, N.K, c.C, O.m, I.A, S.U]
+    buildLayout: () => [L, g.O, _.w, E.h, N.K, c.C, O.m, I.A, S.U]
   })

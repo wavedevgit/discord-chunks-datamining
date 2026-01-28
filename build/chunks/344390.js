@@ -33,8 +33,8 @@ function n(e) {
           for (let s = +!l; s * r < t * (r - l); s++) i.push(((e[b + (y >> 1)] >> ((1 & y++) << 2) & 15) / 7.5 - 1) * n);
         return i
       },
-      O = S(j, g, (d >> 18 & 31) / 31),
-      A = S(3, 3, (u >> 3 & 63) / 63 * 1.25),
+      A = S(j, g, (d >> 18 & 31) / 31),
+      O = S(3, 3, (u >> 3 & 63) / 63 * 1.25),
       w = S(3, 3, (u >> 9 & 63) / 63 * 1.25),
       C = x && S(5, 5, v),
       E = (r = (t = e)[3], n = 128 & t[2], ((i = 128 & t[4]) ? n ? 5 : 7 : 7 & r) / (i ? 7 & r : n ? 5 : 7)),
@@ -52,11 +52,11 @@ function n(e) {
         for (let e = 0, t = a(j, x ? 5 : 3); e < t; e++) R[e] = o(l / I * (r + .5) * e);
         for (let t = 0, r = a(g, x ? 5 : 3); t < r; t++) P[t] = o(l / N * (e + .5) * t);
         for (let e = 0, t = 0; e < g; e++)
-          for (let r = +!e, i = 2 * P[e]; r * g < j * (g - e); r++, t++) n += O[t] * R[r] * i;
+          for (let r = +!e, i = 2 * P[e]; r * g < j * (g - e); r++, t++) n += A[t] * R[r] * i;
         for (let e = 0, t = 0; e < 3; e++)
           for (let r = +!e, n = 2 * P[e]; r < 3 - e; r++, t++) {
             let e = R[r] * n;
-            i += A[t] * e, c += w[t] * e
+            i += O[t] * e, c += w[t] * e
           }
         if (x)
           for (let e = 0, t = 0; e < 5; e++)

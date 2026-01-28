@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 784959, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => A
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -18,13 +18,13 @@ let o = (0, Chunk419954.zZ)(Chunk780964.X.EXPERIMENTS_CATEGORY, {
     StronglyDiscouragedCustomComponent: Chunk640068.A,
     buildLayout: () => []
   }),
-  A = (0, Chunk419954.t_)(Chunk780964.X.EXPERIMENTS_PANEL, {
+  d = (0, Chunk419954.t_)(Chunk780964.X.EXPERIMENTS_PANEL, {
     usePredicate: () => (0, r.dk)("ExperimentsPanel"),
     useTitle: () => "Experiments",
     buildLayout: () => [o]
   }),
-  d = (0, Chunk419954.i4)(Chunk780964.X.EXPERIMENTS_SIDEBAR_ITEM, {
+  A = (0, Chunk419954.i4)(Chunk780964.X.EXPERIMENTS_SIDEBAR_ITEM, {
     useTitle: () => "Experiments",
     icon: Chunk934551.BeakerIcon,
-    buildLayout: () => (0, r.WJ)("ExperimentsPanel") ? [A] : [T]
+    buildLayout: () => (0, r.WJ)("ExperimentsPanel") ? [d] : [T]
   })

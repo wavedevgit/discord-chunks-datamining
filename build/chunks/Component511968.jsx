@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 511968, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => b
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,30 +18,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk689296 = require("./689296.jsx"),
   Chunk542858 = require("./542858.js");
 
-function f(e) {
+function b(e) {
   let {
     cta: t,
     storeListing: n,
     className: l
   } = e, {
-    applicationId: f,
+    applicationId: b,
     benefits: h,
-    description: b
-  } = n, E = i.useMemo(() => null == n.thumbnail ? null : (0, m.t)(f, n.thumbnail, 256), [f, n.thumbnail]), {
+    description: A
+  } = n, E = i.useMemo(() => null == n.thumbnail ? null : (0, m.t)(b, n.thumbnail, 256), [b, n.thumbnail]), {
     data: x
   } = (0, d.j)(n.skuId), O = i.useMemo(() => {
     if (null == x || 0 === x.length) return null;
     let e = x[0];
-    return (0, _._J)(e)
+    return (0, p._J)(e)
   }, [x]);
   return null == O ? null : (0, r.jsxs)(a.q, {
-    className: s()(A.iE, l),
+    className: s()(f.iE, l),
     header: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: A.qd,
+        className: f.qd,
         children: [null != E && (0, r.jsx)(c._V3, {
           src: E.href,
-          imageClassName: A.rW,
+          imageClassName: f.rW,
           width: 48,
           height: 48
         }), (0, r.jsxs)("div", {
@@ -55,14 +55,14 @@ function f(e) {
         })]
       }), t]
     }),
-    children: [!(0, p.uJ)(b) && (0, r.jsx)("div", {
-      className: A.h_,
+    children: [!(0, _.uJ)(A) && (0, r.jsx)("div", {
+      className: f.h_,
       children: (0, r.jsx)(g.A, {
         variant: "text-sm/medium",
-        children: b
+        children: A
       })
     }), null != h && h.length > 0 && (0, r.jsx)("div", {
-      className: A.PX,
+      className: f.PX,
       children: h.map(e => {
         let {
           id: t,
@@ -72,7 +72,7 @@ function f(e) {
         } = e;
         return (0, r.jsx)(o.FY, {
           header: n,
-          icon: (0, u.N)(f, l),
+          icon: (0, u.N)(b, l),
           description: i
         }, t)
       })

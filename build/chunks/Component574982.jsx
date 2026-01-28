@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 574982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -14,13 +14,13 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function u() {
-  let e = (0, i.bG)([o.A], () => o.A.getEnableSilenceWarning());
-  return (0, r.jsx)(a.x, {
+  let e = (0, s.bG)([o.A], () => o.A.getEnableSilenceWarning());
+  return (0, i.jsx)(a.x, {
     setting: c.H.VOICE_AND_VIDEO_ADVANCED_SILENCE_WARNING,
-    children: (0, r.jsx)(l.dOG, {
+    children: (0, i.jsx)(l.dOG, {
       label: d.intl.string(d.t.jtiiCw),
       checked: e,
-      onChange: e => s.A.setSilenceWarning(e)
+      onChange: e => r.A.setSilenceWarning(e)
     })
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 998126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => a
@@ -10,8 +10,8 @@ var Chunk502060 = require("./502060.jsx"),
   Chunk531525 = require("./531525.js");
 
 function a() {
-  return (0, r.jsx)(i.A, {
-    webSetting: s.H.VOICE_AND_VIDEO_SOUNDS,
-    children: (0, r.jsx)(l.A, {})
+  return (0, i.jsx)(s.A, {
+    webSetting: r.H.VOICE_AND_VIDEO_SOUNDS,
+    children: (0, i.jsx)(l.A, {})
   })
 }

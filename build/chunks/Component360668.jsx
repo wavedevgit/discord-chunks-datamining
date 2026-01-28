@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 360668, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => O
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,23 +21,23 @@ var Chunk793574 = require("./793574.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b() {
-  let e = s.A.supports(f.O5.SIDECHAIN_COMPRESSION),
+function O() {
+  let e = r.A.supports(m.O5.SIDECHAIN_COMPRESSION),
     {
       analyticsLocations: t
-    } = (0, l.Ay)([i.A.USER_SETTINGS_VIDEO_TAB]);
-  return (0, r.jsxs)(l.f5, {
+    } = (0, l.Ay)([s.A.USER_SETTINGS_VIDEO_TAB]);
+  return (0, i.jsxs)(l.f5, {
     value: t,
-    children: [(0, r.jsxs)(a.A, {
-      webSetting: A.H.VOICE_AND_VIDEO_VIDEO,
-      children: [(0, r.jsxs)(o.A, {
-        children: [(0, r.jsx)(c.A, {}), (0, r.jsx)(d.A, {}), (0, r.jsx)(u.A, {})]
-      }), (0, r.jsx)(g.A, {})]
-    }), (0, r.jsx)(a.A, {
-      title: h.intl.string(h.t.KDdjou),
-      webSetting: A.H.VOICE_AND_VIDEO_VIDEO_STREAMING,
-      children: (0, r.jsxs)(o.A, {
-        children: [(0, r.jsx)(m.A, {}), e && (0, r.jsx)(p.A, {}), (0, r.jsx)(_.A, {})]
+    children: [(0, i.jsxs)(a.A, {
+      webSetting: p.H.VOICE_AND_VIDEO_VIDEO,
+      children: [(0, i.jsxs)(o.A, {
+        children: [(0, i.jsx)(c.A, {}), (0, i.jsx)(d.A, {}), (0, i.jsx)(u.A, {})]
+      }), (0, i.jsx)(A.A, {})]
+    }), (0, i.jsx)(a.A, {
+      title: j.intl.string(j.t.KDdjou),
+      webSetting: p.H.VOICE_AND_VIDEO_VIDEO_STREAMING,
+      children: (0, i.jsxs)(o.A, {
+        children: [(0, i.jsx)(x.A, {}), e && (0, i.jsx)(h.A, {}), (0, i.jsx)(g.A, {})]
       })
     })]
   })

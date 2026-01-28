@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 124064, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,58 +16,58 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk973746 = require("./973746.js");
-let A = (0, Chunk915089.Ld)(),
-  f = (0, Chunk95701.createChannelRecord)({
+let f = (0, Chunk915089.Ld)(),
+  b = (0, Chunk95701.createChannelRecord)({
     id: "1",
     type: Chunk652215.rbe.DM
   }),
   h = (0, Chunk915089.Ld)();
 
-function b(e) {
+function A(e) {
   let {
     sectionTitle: t,
     errors: n,
     onBioChange: c,
     pendingBio: u,
-    placeholder: b,
+    placeholder: A,
     currentBio: E,
     disabled: x = false
-  } = e, [O, C] = i.useState(null != u ? u : E), [T, I] = i.useState((0, a.x7)(O)), S = i.useRef(E), j = i.useRef(false);
+  } = e, [O, C] = i.useState(null != u ? u : E), [y, j] = i.useState((0, a.x7)(O)), T = i.useRef(E), v = i.useRef(false);
   return i.useEffect(() => {
-    if (S.current !== E) {
+    if (T.current !== E) {
       let e = (0, a.x7)(E);
-      C(E), I(e)
+      C(E), j(e)
     }
-    S.current = E
-  }, [E]), (0, r.jsxs)(_.A, {
+    T.current = E
+  }, [E]), (0, r.jsxs)(p.A, {
     title: t,
-    titleId: A,
+    titleId: f,
     description: m.intl.string(m.t.Bbw6Ac),
     errors: n,
     disabled: x,
     children: [(0, r.jsx)(o.Ay, {
       "aria-describedby": h,
-      "aria-labelledby": A,
+      "aria-labelledby": f,
       className: g.i,
       innerClassName: g.Z,
-      maxCharacterCount: p.NA2,
+      maxCharacterCount: _.NA2,
       onChange: function(e, t, n) {
-        t !== O && (C(t), I(n), c(t))
+        t !== O && (C(t), j(n), c(t))
       },
-      placeholder: b,
-      channel: f,
+      placeholder: A,
+      channel: b,
       textValue: O,
-      richValue: T,
+      richValue: y,
       emojiPickerCloseOnModalOuterClick: true,
       parentModalKey: d.USER_SETTINGS_MODAL_KEY,
       type: s.oU.PROFILE_BIO_INPUT,
       onBlur: () => {
-        j.current = false
+        v.current = false
       },
       onFocus: () => {
-        j.current = true
+        v.current = true
       },
-      focused: j.current,
+      focused: v.current,
       onSubmit: function() {
         return new Promise(e => {
           e({
@@ -79,7 +79,7 @@ function b(e) {
     }), (0, r.jsx)(l.AC4, {
       id: h,
       children: m.intl.format(m.t["+DFxLc"], {
-        maxLength: p.NA2
+        maxLength: _.NA2
       })
     })]
   })

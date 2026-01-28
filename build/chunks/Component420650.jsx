@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 78528 **/
 /** chunk id: 420650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
@@ -14,10 +14,10 @@ function s(e) {
     label: s,
     onVolumeChange: a
   } = e;
-  return (0, r.jsx)(i.Apm, {
+  return (0, r.jsx)(l.Apm, {
     label: s,
     description: n,
-    initialValue: (0, l.M)(t),
+    initialValue: (0, i.M)(t),
     maxValue: 100,
     onValueRender: e => "".concat(e.toFixed(0), "%"),
     onValueChange: a

@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 180020, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -27,48 +27,48 @@ function x(e) {
     user: t,
     guildId: n,
     className: x
-  } = e, O = p.Ay.canUsePremiumProfileCustomization(t), {
+  } = e, O = _.Ay.canUsePremiumProfileCustomization(t), {
     analyticsLocations: C
   } = (0, o.Ay)(), {
-    userDisplayNameStyles: T,
-    guildDisplayNameStyles: I,
-    pendingDisplayNameStyles: S,
-    pendingErrors: j
-  } = (0, m.B0)(t, n), [v, N] = (0, c.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = v === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, P = (0, i.useCallback)(() => {
-    N(f.i.TAKE_ACTION), _.default.track(A.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
+    userDisplayNameStyles: y,
+    guildDisplayNameStyles: j,
+    pendingDisplayNameStyles: T,
+    pendingErrors: v
+  } = (0, m.B0)(t, n), [S, I] = (0, c.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), N = S === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, P = (0, i.useCallback)(() => {
+    I(b.i.TAKE_ACTION), p.default.track(f.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
       analyticsLocations: C,
       guildId: n
     })
-  }, [C, N, n]), R = (0, i.useCallback)(() => {
-    (0, a.dM)(null), _.default.track(A.HAw.DISPLAY_NAME_STYLES_REMOVED)
+  }, [C, I, n]), R = (0, i.useCallback)(() => {
+    (0, a.dM)(null), p.default.track(f.HAw.DISPLAY_NAME_STYLES_REMOVED)
   }, []), D = (0, i.useCallback)(() => {
     (0, u.mZ)(null)
-  }, []), w = true !== S || (null != n ? null != I : null != T);
+  }, []), w = true !== T || (null != n ? null != j : null != y);
   return (0, r.jsx)(g.A, {
-    title: h.intl.string(b.default["86GtGH"]),
-    titleIcon: y ? (0, r.jsx)(s.LpS, {
+    title: h.intl.string(A.default["86GtGH"]),
+    titleIcon: N ? (0, r.jsx)(s.LpS, {
       text: h.intl.string(h.t.y2b7CA),
       className: E.A
     }) : true,
     className: x,
     showPremiumIcon: O,
-    errors: j,
+    errors: v,
     children: (0, r.jsxs)("div", {
       className: E.N,
       children: [(0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
-        text: h.intl.string(b.default.vJqrIg),
+        text: h.intl.string(A.default.vJqrIg),
         onClick: P
       }), null == n && w && (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
-        text: h.intl.string(b.default.ymq8WQ),
+        text: h.intl.string(A.default.ymq8WQ),
         onClick: R
-      }), null != n && null != (true !== S ? S : I) && (0, r.jsx)(s.Button, {
+      }), null != n && null != (true !== T ? T : j) && (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
-        text: h.intl.string(b.default["j/KRxc"]),
+        text: h.intl.string(A.default["j/KRxc"]),
         onClick: D
       })]
     })

@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 400553, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,7 +17,7 @@ var Chunk417597 = require("./417597.js"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk721757 = require("./721757.js");
-let A = () => {
+let f = () => {
   let e = (0, i.bG)([a.A], () => a.A.getTopUserActivities()),
     t = (0, i.bG)([a.A], () => a.A.getTopGuildActivities());
   return 0 === e.length && 0 === t.length ? null : (0, r.jsxs)("div", {
@@ -27,14 +27,14 @@ let A = () => {
       children: [(0, r.jsx)(s.Heading, {
         variant: "text-md/medium",
         className: g.bV,
-        children: m.intl.string(p.default.BxbvS7)
+        children: m.intl.string(_.default.BxbvS7)
       }), (0, r.jsx)("div", {
         className: g.Ce,
         children: 1 === e.length ? (0, r.jsx)(u.A, {
           userId: e[0].user_id,
           subText: (0, o.fq)(e[0].dms_sent, e[0].call_count),
           className: g.q3
-        }) : e.map(e => (0, r.jsx)(_.A, {
+        }) : e.map(e => (0, r.jsx)(p.A, {
           userId: e.user_id,
           dmsSent: e.dms_sent,
           callCount: e.call_count
@@ -45,7 +45,7 @@ let A = () => {
       children: [(0, r.jsx)(s.Heading, {
         variant: "text-md/medium",
         className: g.bV,
-        children: m.intl.string(p.default.Lq9Set)
+        children: m.intl.string(_.default.Lq9Set)
       }), 1 === t.length ? (0, r.jsx)(d.A, {
         guildId: t[0].guild_id,
         customSubtext: (0, o.fq)(t[0].messages_sent, t[0].call_count),

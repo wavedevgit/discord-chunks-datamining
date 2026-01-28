@@ -1,5 +1,5 @@
-/** Chunk was on 60667 **/
-/** chunk id: 449838, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 40543 **/
+/** chunk id: 449838, original params: e,t,_ (module,exports,require) **/
 module.exports = {
   MP: "confirmImage__0f8ce",
   LA: "transferConfirmImage__0f8ce",

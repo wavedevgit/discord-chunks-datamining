@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 38720, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => f
+  R: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -38,7 +38,7 @@ let m = e => {
       children: t
     })
   },
-  A = e => {
+  f = e => {
     let {
       includes: t
     } = e;
@@ -46,7 +46,7 @@ let m = e => {
       children: [(0, r.jsx)(i.A9s, {
         size: "md",
         color: "currentColor",
-        className: p.$8,
+        className: _.$8,
         "aria-hidden": true
       }), (0, r.jsx)(i.AC4, {
         children: u.intl.string(u.t["tq+6t/"])
@@ -55,15 +55,15 @@ let m = e => {
       children: [(0, r.jsx)(i.PGe, {
         size: "md",
         color: "currentColor",
-        className: p.ut,
+        className: _.ut,
         "aria-hidden": true
       }), (0, r.jsx)(i.AC4, {
         children: u.intl.string(u.t.l4qZrp)
       })]
     })
   },
-  f = (e, t, n, f, h) => {
-    let b = {
+  b = (e, t, n, b, h) => {
+    let A = {
         0: {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t["09yRK3"])
@@ -72,7 +72,7 @@ let m = e => {
             text: s.Ay.formatPriceString(e, c.WT.MONTH)
           }),
           column2: (0, r.jsx)(g, {
-            text: n ? f : s.Ay.formatPriceString(t, c.WT.MONTH)
+            text: n ? b : s.Ay.formatPriceString(t, c.WT.MONTH)
           }),
           withBottomBorder: true
         },
@@ -80,10 +80,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t.vaDeDV)
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: true
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -91,10 +91,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t.DmfiwT)
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: true
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -102,10 +102,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t.OuItFi)
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: true
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -113,10 +113,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t["9kRJS8"])
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: true
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -135,7 +135,7 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t.VwxlMw)
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
           column2: (0, r.jsx)(g, {
@@ -149,10 +149,10 @@ let m = e => {
               percentageOff: (0, a.l9)(l.default.locale, c.oX / 100)
             })
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -160,21 +160,21 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t.tFbcuM)
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
         9: {
           label: (0, r.jsx)(m, {
-            text: u.intl.string(_.default["86GtGH"])
+            text: u.intl.string(p.default["86GtGH"])
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -182,10 +182,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t["aR/zTk"])
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -193,10 +193,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t.IzrZHz)
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -204,10 +204,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t["HwNg/Z"])
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -215,10 +215,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t["y+HHL9"])
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: true
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -226,10 +226,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t.qQxxVc)
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: true
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -237,10 +237,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t.xi0NBE)
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           }),
           withBottomBorder: true
@@ -249,10 +249,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t.MfsUHm)
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -260,10 +260,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t["A+0H1f"])
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -271,10 +271,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t["il8+nC"])
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           })
         },
@@ -284,17 +284,17 @@ let m = e => {
               maxChars: d.CS1
             })
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           }),
           withBottomBorder: true
         },
         19: {
           label: (0, r.jsx)(i.Heading, {
-            className: p.__invalid_textColor,
+            className: _.__invalid_textColor,
             variant: "display-sm",
             children: "Make Discord Yours"
           }),
@@ -304,7 +304,7 @@ let m = e => {
         },
         20: {
           label: (0, r.jsx)(i.Heading, {
-            className: p.__invalid_textColor,
+            className: _.__invalid_textColor,
             variant: "display-sm",
             children: "Enjoy an Upgraded Discord"
           }),
@@ -314,7 +314,7 @@ let m = e => {
         },
         21: {
           label: (0, r.jsx)(i.Heading, {
-            className: p.__invalid_textColor,
+            className: _.__invalid_textColor,
             variant: "display-sm",
             children: "Show Up the Way You Want"
           }),
@@ -326,10 +326,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t["93xPy3"])
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           }),
           withBottomBorder: true
@@ -338,10 +338,10 @@ let m = e => {
           label: (0, r.jsx)(m, {
             text: u.intl.string(u.t["5BJqNF"])
           }),
-          column1: (0, r.jsx)(A, {
+          column1: (0, r.jsx)(f, {
             includes: false
           }),
-          column2: (0, r.jsx)(A, {
+          column2: (0, r.jsx)(f, {
             includes: true
           }),
           withBottomBorder: false
@@ -353,5 +353,5 @@ let m = e => {
         location: "useGetPlanComparisonTableRows"
       }),
       x = h === c.xc.FP_ONLY;
-    return [...E ? [] : [b[0]], b[1], b[2], b[3], b[4], b[5], b[6], ...x ? [] : [b[7]], b[8], b[9], b[10], b[11], b[12], ...x ? [] : [b[13]], b[14], b[15], b[16], b[17], b[18], b[23], b[24]]
+    return [...E ? [] : [A[0]], A[1], A[2], A[3], A[4], A[5], A[6], ...x ? [] : [A[7]], A[8], A[9], A[10], A[11], A[12], ...x ? [] : [A[13]], A[14], A[15], A[16], A[17], A[18], A[23], A[24]]
   }

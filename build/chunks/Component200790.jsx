@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 200790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,32 +19,32 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk223772 = require("./223772.js");
 
-function f(e) {
+function b(e) {
   let {
     user: t,
     guild: n,
     className: i,
-    sectionTitle: _,
-    forcedDivider: f = false,
-    withTutorial: b = false
+    sectionTitle: p,
+    forcedDivider: b = false,
+    withTutorial: A = false
   } = e, {
     analyticsLocations: E
-  } = (0, o.Ay)(), x = (0, u.A)("enable_avatar_decoration_uploads"), O = (0, p.a4)({
+  } = (0, o.Ay)(), x = (0, u.A)("enable_avatar_decoration_uploads"), O = (0, _.a4)({
     user: t,
     guildId: null == n ? true : n.id
   }), {
     pendingAvatarDecoration: C,
-    errors: T
-  } = (0, p.CP)(null == n ? true : n.id), I = b ? a.wLn : s.$n;
+    errors: y
+  } = (0, _.CP)(null == n ? true : n.id), j = A ? a.wLn : s.$n;
   return (0, r.jsxs)(m.A, {
     className: i,
-    forcedDivider: f,
+    forcedDivider: b,
     hasBackground: true,
-    title: _,
-    errors: T,
+    title: p,
+    errors: y,
     children: [(0, r.jsxs)("div", {
-      className: A.NC,
-      children: [(0, r.jsx)(I, {
+      className: f.NC,
+      children: [(0, r.jsx)(j, {
         size: s.$n.Sizes.SMALL,
         onClick: () => {
           (0, d.L)({
@@ -53,18 +53,18 @@ function f(e) {
           })
         },
         className: l()({
-          [A.yj]: b
+          [f.yj]: A
         }),
         children: g.intl.string(g.t.BVcYCx)
       }), (true === C ? null != O : null != C) && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: A.DT,
+        className: f.DT,
         children: (0, r.jsx)(a.Button, {
           variant: "secondary",
           size: "sm",
           text: (0, c.uZ)(t, n) ? g.intl.string(g.t.CHf9iJ) : g.intl.string(g.t.OrokWm),
           onClick: () => {
-            (0, p.Dx)(null, null == n ? true : n.id)
+            (0, _.Dx)(null, null == n ? true : n.id)
           }
         })
       })]
@@ -78,11 +78,11 @@ let h = e => {
     user: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: A.J_,
+    className: f.J_,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-xs/bold",
       children: "STAFF ONLY and Experimental. Upload a decoration to view throughout the app."
-    }), (0, r.jsx)(_.A, {
+    }), (0, r.jsx)(p.A, {
       onChange: e => {
         null != e && (t.avatarDecoration = {
           asset: e,

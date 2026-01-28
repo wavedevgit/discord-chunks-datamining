@@ -61,7 +61,7 @@ function x() {
         maxRewardImageSrc: f,
         claimableRewards: r,
         size: a._3J.SIZE_48,
-        imageScaling: t ? 1.9 : 2.4
+        imageScaling: t ? 1.7 : 2.4
       }) : null
     })]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 96811 **/
 /** chunk id: 688465, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  KL: () => A,
+  KL: () => O,
   tS: () => C,
   yB: () => w
 }), require("./65821.js"), require("./896048.js");
@@ -77,7 +77,7 @@ let b = {
     throw Error("Using uninitialized GoLiveModalContextDispatch")
   });
 
-function O(e, t) {
+function A(e, t) {
   var r, n, i;
   switch (t.type) {
     case "set_mute_audio":
@@ -154,7 +154,7 @@ function O(e, t) {
   }
 }
 
-function A(e) {
+function O(e) {
   let {
     dispatch: t,
     state: r,
@@ -180,15 +180,15 @@ function w(e, t, r) {
     preset: o,
     resolution: y,
     fps: S,
-    soundshareEnabled: A
+    soundshareEnabled: O
   } = (0, c.cf)([h.A], () => h.A.getState());
   s && (o = j.jQ.PRESET_AUTO);
   let w = (0, c.bG)([p.A], () => p.A.getInputDeviceId()),
     C = null != (n = f.uh.useSetting()) && n,
     E = null != (l = f.wv.useSetting()) && l;
   o in j.jQ && (o !== j.jQ.PRESET_AUTO || a) || (o = j.jQ.PRESET_VIDEO), (0, m.A)(j.jQ.PRESET_CUSTOM, y, S, t, r) || (y = j.on.RESOLUTION_720, S = j.kn.FPS_30);
-  let [I, N] = i.useReducer(O, v(_({}, b), {
-    muteStreamAudio: !A,
+  let [I, N] = i.useReducer(A, v(_({}, b), {
+    muteStreamAudio: !O,
     preset: o,
     resolution: y,
     fps: S,

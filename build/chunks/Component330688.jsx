@@ -1,9 +1,9 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 330688, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => O,
-  TU: () => x,
-  hH: () => b
+  Ay: () => S,
+  TU: () => b,
+  hH: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,9 +20,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk825468 = require("./825468.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let h = !Chunk723702.isPlatformEmbedded;
+let j = !Chunk723702.isPlatformEmbedded;
 
-function b(e) {
+function O(e) {
   return e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), "\xa0ms")
 }
 
@@ -31,53 +31,53 @@ function E(e) {
       inputMode: n
     } = e,
     {
-      shortcut: i,
+      shortcut: s,
       delay: c,
-      pttLatchingEnabled: h
+      pttLatchingEnabled: j
     } = (0, l.cf)([d.A], () => d.A.getModeOptions()),
     {
       enableLatching: E
-    } = (0, _.y)({
+    } = (0, g.y)({
       location: "PTTTools"
     });
-  return t = u.isPlatformEmbedded || n !== A.TBI.PUSH_TO_TALK ? (0, r.jsx)(s.po8, {
-    messageType: s.YCn.INFO,
-    children: f.intl.format(f.t.HVvn5T, {
-      onClick: () => (0, m.openUserSettings)(p.X.KEYBINDS_PANEL, {
-        section: A.nc_.KEYBINDS
+  return t = u.isPlatformEmbedded || n !== p.TBI.PUSH_TO_TALK ? (0, i.jsx)(r.po8, {
+    messageType: r.YCn.INFO,
+    children: m.intl.format(m.t.HVvn5T, {
+      onClick: () => (0, x.openUserSettings)(h.X.KEYBINDS_PANEL, {
+        section: p.nc_.KEYBINDS
       })
     })
-  }) : (0, r.jsx)(s.po8, {
-    messageType: s.YCn.WARNING,
-    children: f.intl.format(f.t.zvMPOc, {
-      onDownloadClick: () => (0, g._)("Help Text PTT")
+  }) : (0, i.jsx)(r.po8, {
+    messageType: r.YCn.WARNING,
+    children: m.intl.format(m.t.zvMPOc, {
+      onDownloadClick: () => (0, A._)("Help Text PTT")
     })
-  }), (0, r.jsxs)(s.BJc, {
+  }), (0, i.jsxs)(r.BJc, {
     gap: 20,
-    children: [(0, r.jsxs)(s.BJc, {
+    children: [(0, i.jsxs)(r.BJc, {
       gap: 16,
       direction: "horizontal",
-      children: [(0, r.jsx)(s.D0$, {
-        label: f.intl.string(f.t.YkDjVM),
-        children: (0, r.jsx)(o.A, {
-          defaultValue: i,
+      children: [(0, i.jsx)(r.D0$, {
+        label: m.intl.string(m.t.YkDjVM),
+        children: (0, i.jsx)(o.A, {
+          defaultValue: s,
           onChange: e => a.A.setMode(n, {
             shortcut: e
           })
         })
-      }), (0, r.jsx)(s.Apm, {
-        label: f.intl.string(f.t.y0ShVt),
+      }), (0, i.jsx)(r.Apm, {
+        label: m.intl.string(m.t.y0ShVt),
         initialValue: c,
         onValueChange: e => a.A.setMode(n, {
           delay: e
         }),
-        onValueRender: b,
-        maxValue: A.IjB
+        onValueRender: O,
+        maxValue: p.IjB
       })]
-    }), E && (0, r.jsx)(s.dOG, {
-      label: f.intl.string(f.t.EGn1eN),
-      description: f.intl.string(f.t.iT257i),
-      checked: null != h && h,
+    }), E && (0, i.jsx)(r.dOG, {
+      label: m.intl.string(m.t.EGn1eN),
+      description: m.intl.string(m.t.iT257i),
+      checked: null != j && j,
       onChange: e => a.A.setMode(n, {
         pttLatchingEnabled: e
       })
@@ -85,65 +85,65 @@ function E(e) {
   })
 }
 
-function x(e, t) {
-  e === A.TBI.PUSH_TO_TALK && h && (0, s.mMO)(async () => {
+function b(e, t) {
+  e === p.TBI.PUSH_TO_TALK && j && (0, r.mMO)(async () => {
     let {
       default: e
     } = await n.e("10919").then(n.bind(n, 556506));
-    return t => (0, r.jsx)(e, function(e) {
+    return t => (0, i.jsx)(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), i.forEach(function(t) {
+          var i;
+          i = n[t], t in e ? Object.defineProperty(e, t, {
+            value: i,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = i
         })
       }
       return e
     }({
-      title: f.intl.string(f.t.Kdt0Gb),
-      confirmText: f.intl.string(f.t["1WjMbC"]),
-      cancelText: f.intl.string(f.t.BddRzS),
-      onConfirm: () => (0, g._)("PTT Limited Modal"),
-      body: f.intl.string(f.t.NIozvt)
+      title: m.intl.string(m.t.Kdt0Gb),
+      confirmText: m.intl.string(m.t["1WjMbC"]),
+      cancelText: m.intl.string(m.t.BddRzS),
+      onConfirm: () => (0, A._)("PTT Limited Modal"),
+      body: m.intl.string(m.t.NIozvt)
     }, t))
   }), a.A.setMode(e, true, true, {
     analyticsLocations: t
   })
 }
 
-function O() {
+function S() {
   let {
     analyticsLocations: e
   } = (0, c.Ay)(), t = (0, l.bG)([d.A], () => d.A.getMode()), n = [{
-    value: A.TBI.VOICE_ACTIVITY,
-    name: f.intl.string(f.t.cHCEOJ)
+    value: p.TBI.VOICE_ACTIVITY,
+    name: m.intl.string(m.t.cHCEOJ)
   }, {
-    value: A.TBI.PUSH_TO_TALK,
-    name: h ? f.intl.string(f.t["1AINrB"]) : f.intl.string(f.t.Q8gkVL)
-  }], a = i.useCallback(t => {
+    value: p.TBI.PUSH_TO_TALK,
+    name: j ? m.intl.string(m.t["1AINrB"]) : m.intl.string(m.t.Q8gkVL)
+  }], a = s.useCallback(t => {
     let {
       value: n
     } = t;
-    x(n, e)
+    b(n, e)
   }, [e]);
-  return (0, r.jsxs)(s.BJc, {
+  return (0, i.jsxs)(r.BJc, {
     gap: 20,
-    children: [(0, r.jsx)(s.z6M, {
-      label: f.intl.string(f.t["pS+K2L"]),
+    children: [(0, i.jsx)(r.z6M, {
+      label: m.intl.string(m.t["pS+K2L"]),
       onChange: e => a({
         value: e
       }),
       options: n,
       value: t
-    }), t === A.TBI.PUSH_TO_TALK && (0, r.jsx)(E, {
+    }), t === p.TBI.PUSH_TO_TALK && (0, i.jsx)(E, {
       inputMode: t
     })]
   })

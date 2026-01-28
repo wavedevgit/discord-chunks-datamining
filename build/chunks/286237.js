@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 286237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _,
+  A: () => p,
   b: () => u
 }), require("./896048.js");
 var Chunk812729 = require("./812729.js"),
@@ -28,7 +28,7 @@ function u() {
   }
 }
 
-function _() {
+function p() {
   let e = (0, l.bG)([o.A], () => o.A.getStreamerActiveStreamMetadata()),
     t = (0, l.bG)([c.Ay], () => {
       let e = c.Ay.getVisibleGame();

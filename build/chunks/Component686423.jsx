@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 686423, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -35,7 +35,7 @@ function g(e) {
   return e
 }
 
-function A(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,33 +47,33 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = function() {
+let b = function() {
   let e = i.useRef(null),
     {
       analyticsLocations: t
     } = (0, o.Ay)(),
     {
-      fractionalState: f
+      fractionalState: b
     } = (0, c.A)();
 
   function h(n) {
     null != e.current && (0, a.OoC)(e.current), (0, d.g)({
       analyticsLocation: {
-        page: _.liQ.GUILD_BOOSTING_USER_SETTINGS,
-        section: _.JJy.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
-        object: _.ZSU.BUTTON_CTA,
-        objectType: _.AnalyticsObjectTypes.BUY
+        page: p.liQ.GUILD_BOOSTING_USER_SETTINGS,
+        section: p.JJy.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
+        object: p.ZSU.BUTTON_CTA,
+        objectType: p.AnalyticsObjectTypes.BUY
       },
       analyticsLocations: t,
       guild: n
     })
   }
-  async function b() {
+  async function A() {
     e.current = await (0, a.mMO)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 770101));
-      return t => (0, r.jsx)(e, A(g({}, t), {
+      return t => (0, r.jsx)(e, f(g({}, t), {
         onSelectGuild: h
       }))
     }, {
@@ -83,7 +83,7 @@ let f = function() {
     })
   }
   let E = (0, u.Nc)({
-    fractionalState: f
+    fractionalState: b
   });
   return (0, r.jsxs)("div", {
     className: m.iE,
@@ -94,7 +94,7 @@ let f = function() {
       className: m.C,
       color: "text-default",
       variant: "text-sm/medium",
-      children: p.intl.format(p.t.kqC5vq, {
+      children: _.intl.format(_.t.kqC5vq, {
         boostAnyGuildHook: (e, t) => {
           let n = null != E,
             i = (0, a.Oer)(e),
@@ -102,7 +102,7 @@ let f = function() {
               className: m.lO,
               children: (0, r.jsx)(s.QWc, {
                 variant: "primary",
-                onClick: n ? true : b,
+                onClick: n ? true : A,
                 text: i,
                 disabled: n
               }, t)
@@ -110,7 +110,7 @@ let f = function() {
           return n ? (0, r.jsx)(l.A, {
             text: E,
             "aria-label": E.toString(),
-            children: e => (0, r.jsx)("span", A(g({}, e), {
+            children: e => (0, r.jsx)("span", f(g({}, e), {
               children: o
             }))
           }, t) : o

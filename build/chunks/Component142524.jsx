@@ -1,7 +1,7 @@
-/** Chunk was on 21425 **/
+/** Chunk was on 78572 **/
 /** chunk id: 142524, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,13 +24,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk727353 = require("./727353.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk945354 = require("./945354.js");
-class S extends Chunk64700.PureComponent {
+class j extends Chunk64700.PureComponent {
   componentDidMount() {
     let {
       user: e,
       streamApplication: t
     } = this.props;
-    b.default.track(O.HAw.OPEN_POPOUT, {
+    _.default.track(O.HAw.OPEN_POPOUT, {
       type: "Stream Preview",
       other_user_id: e.id,
       application_id: null != t ? t.id : null,
@@ -57,14 +57,14 @@ class S extends Chunk64700.PureComponent {
     } = this.props;
     if (null == n) return null;
     let {
-      enableUserHoverActivities: _
+      enableUserHoverActivities: b
     } = (0, u.Uw)({
       guildId: null == o ? true : o.guild_id,
       location: "StreamPreviewPopout"
     });
     return (0, r.jsxs)("div", {
-      className: a()(j.yt, {
-        [j.P0]: i
+      className: a()(S.yt, {
+        [S.P0]: i
       }),
       children: [(0, r.jsx)(v.Z, {
         stream: n,
@@ -78,9 +78,9 @@ class S extends Chunk64700.PureComponent {
         onWatchStream: c,
         onAction: l,
         hideTip: s,
-        className: j.Rh,
+        className: S.Rh,
         wrapperClassName: true
-      }), _ && null != o && (0, r.jsx)(d.A, {
+      }), b && null != o && (0, r.jsx)(d.A, {
         channel: o,
         user: t,
         onAction: l
@@ -89,7 +89,7 @@ class S extends Chunk64700.PureComponent {
   }
 }
 
-function I(e) {
+function x(e) {
   var t, n;
   let {
     user: l,
@@ -110,10 +110,10 @@ function I(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["user", "channel"]), [d, b] = (0, s.yK)([_.A, m.A, g.A, c.default], () => (0, A.eo)(a, _.A, m.A, g.A, c.default)), v = (0, s.bG)([p.A], () => p.A.getStreamForUser(l.id, a.getGuildId())), O = (0, s.bG)([p.A], () => p.A.getActiveStreamForApplicationStream(v)), j = (0, s.bG)([f.default], () => f.default.getId()), I = (0, h.AO)(v), x = (0, s.bG)([y.A], () => (0, h.nr)(v, y.A)), E = i.useMemo(() => ({
+  }(e, ["user", "channel"]), [d, _] = (0, s.yK)([b.A, m.A, g.A, c.default], () => (0, h.eo)(a, b.A, m.A, g.A, c.default)), v = (0, s.bG)([p.A], () => p.A.getStreamForUser(l.id, a.getGuildId())), O = (0, s.bG)([p.A], () => p.A.getActiveStreamForApplicationStream(v)), S = (0, s.bG)([f.default], () => f.default.getId()), x = (0, A.AO)(v), I = (0, s.bG)([y.A], () => (0, A.nr)(v, y.A)), T = i.useMemo(() => ({
     [a.guild_id]: [l.id]
   }), [a.guild_id, l.id]);
-  return (0, o.E)(E, "StreamPreviewPopout"), (0, r.jsx)(S, (t = function(e) {
+  return (0, o.E)(T, "StreamPreviewPopout"), (0, r.jsx)(j, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -132,13 +132,13 @@ function I(e) {
     return e
   }({}, u), n = n = {
     canWatch: d,
-    unavailableReason: b,
+    unavailableReason: _,
     user: l,
-    streamApplication: I,
+    streamApplication: x,
     stream: v,
     activeStream: O,
-    currentUserId: j,
-    activity: x,
+    currentUserId: S,
+    activity: I,
     channel: a
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

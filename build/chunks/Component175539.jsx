@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 175539, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => T
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -26,53 +26,53 @@ var Chunk397927 = require("./397927.js"),
   Chunk531525 = require("./531525.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let I = "".concat(Chunk975571.A.getArticleURL(Chunk652215.MVz.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
+let f = "".concat(Chunk975571.A.getArticleURL(Chunk652215.MVz.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
-function S() {
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(o.A, {
-      webSetting: O.H.VOICE_AND_VIDEO_VOICE,
-      children: [(0, r.jsx)(s.A, {
+function T() {
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)(o.A, {
+      webSetting: S.H.VOICE_AND_VIDEO_VOICE,
+      children: [(0, i.jsx)(r.A, {
         sourcePage: "voice"
-      }), (0, r.jsxs)(c.A, {
-        children: [(0, r.jsx)(l.x, {
-          setting: O.H.VOICE_AND_VIDEO_DEVICES,
-          children: (0, r.jsx)(_.A, {})
-        }), (0, r.jsx)(l.x, {
-          setting: O.H.VOICE_AND_VIDEO_VOLUME_CONTROLS,
-          children: (0, r.jsx)(x.A, {})
-        }), (0, r.jsxs)(l.x, {
-          setting: O.H.VOICE_AND_VIDEO_MIC_TEST,
-          children: [(0, r.jsx)(g.A, {}), (0, r.jsx)(i.Text, {
+      }), (0, i.jsxs)(c.A, {
+        children: [(0, i.jsx)(l.x, {
+          setting: S.H.VOICE_AND_VIDEO_DEVICES,
+          children: (0, i.jsx)(g.A, {})
+        }), (0, i.jsx)(l.x, {
+          setting: S.H.VOICE_AND_VIDEO_VOLUME_CONTROLS,
+          children: (0, i.jsx)(b.A, {})
+        }), (0, i.jsxs)(l.x, {
+          setting: S.H.VOICE_AND_VIDEO_MIC_TEST,
+          children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
-            children: T.intl.format(T.t["V+B3FH"], {
-              guideURL: I
+            children: C.intl.format(C.t["V+B3FH"], {
+              guideURL: f
             })
           })]
         })]
-      }), (0, r.jsx)(c.A, {
-        children: (0, r.jsx)(l.x, {
-          setting: O.H.VOICE_AND_VIDEO_INPUT_PROFILE,
-          children: (0, r.jsx)(m.A, {})
+      }), (0, i.jsx)(c.A, {
+        children: (0, i.jsx)(l.x, {
+          setting: S.H.VOICE_AND_VIDEO_INPUT_PROFILE,
+          children: (0, i.jsx)(x.A, {})
         })
-      }), (0, r.jsxs)(c.A, {
-        children: [(0, r.jsx)(l.x, {
-          setting: O.H.VOICE_AND_VIDEO_INPUT_MODE,
-          children: (0, r.jsx)(p.Ay, {})
-        }), (0, r.jsx)(l.x, {
-          setting: O.H.VOICE_AND_VIDEO_SENSITIVITY,
-          children: (0, r.jsx)(E.Ay, {})
+      }), (0, i.jsxs)(c.A, {
+        children: [(0, i.jsx)(l.x, {
+          setting: S.H.VOICE_AND_VIDEO_INPUT_MODE,
+          children: (0, i.jsx)(h.Ay, {})
+        }), (0, i.jsx)(l.x, {
+          setting: S.H.VOICE_AND_VIDEO_SENSITIVITY,
+          children: (0, i.jsx)(E.Ay, {})
         })]
       })]
-    }), (0, r.jsx)(o.A, {
-      webSetting: O.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-      title: T.intl.string(T.t["6I6GUv"]),
-      children: (0, r.jsx)(b.Ay, {})
-    }), (0, r.jsx)(o.A, {
-      title: T.intl.string(T.t["8/udY0"]),
-      webSetting: O.H.VOICE_AND_VIDEO_VOICE_ADVANCED,
-      children: (0, r.jsxs)(c.A, {
-        children: [(0, r.jsx)(f.A, {}), (0, r.jsx)(h.A, {}), (0, r.jsx)(d.A, {}), (0, r.jsx)(u.A, {}), (0, r.jsx)(A.A, {})]
+    }), (0, i.jsx)(o.A, {
+      webSetting: S.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
+      title: C.intl.string(C.t["6I6GUv"]),
+      children: (0, i.jsx)(O.Ay, {})
+    }), (0, i.jsx)(o.A, {
+      title: C.intl.string(C.t["8/udY0"]),
+      webSetting: S.H.VOICE_AND_VIDEO_VOICE_ADVANCED,
+      children: (0, i.jsxs)(c.A, {
+        children: [(0, i.jsx)(m.A, {}), (0, i.jsx)(j.A, {}), (0, i.jsx)(d.A, {}), (0, i.jsx)(u.A, {}), (0, i.jsx)(p.A, {})]
       })
     })]
   })

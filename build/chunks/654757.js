@@ -14,9 +14,9 @@ var Chunk419954 = require("./419954.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 let S = (0, Chunk419954.zZ)(Chunk780964.X.MOTION_CATEGORY, {
-  useTitle: () => d.intl.string(d.t.e3TR1b),
-  useSubtitle: () => d.intl.format(d.t["2l9U2j"], {
-    helpdeskArticle: l.A.getArticleURL(A.MVz.REDUCED_MOTION)
+  useTitle: () => A.intl.string(A.t.e3TR1b),
+  useSubtitle: () => A.intl.format(A.t["2l9U2j"], {
+    helpdeskArticle: l.A.getArticleURL(d.MVz.REDUCED_MOTION)
   }),
   buildLayout: () => [T.W, o.z, u.R, r.b, a.S]
 })

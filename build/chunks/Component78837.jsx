@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 78837, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => A
+  f: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,41 +17,41 @@ var Chunk627968 = require("./627968.js"),
   Chunk590089 = require("./590089.jsx"),
   Chunk747625 = require("./747625.js");
 
-function A(e) {
+function f(e) {
   let {
     title: t,
     collapsedSubtitle: n,
     isExpanded: l,
-    onExpandedChange: A,
-    onExpandedChangeComplete: f,
+    onExpandedChange: f,
+    onExpandedChangeComplete: b,
     children: h,
-    animate: b = true
-  } = e, E = i.useRef(null), [x, O] = i.useState(null), C = i.useRef(l), T = i.useRef(false);
+    animate: A = true
+  } = e, E = i.useRef(null), [x, O] = i.useState(null), C = i.useRef(l), y = i.useRef(false);
   i.useEffect(() => {
-    C.current !== l && (T.current = true, C.current = l)
+    C.current !== l && (y.current = true, C.current = l)
   }, [l]);
-  let I = i.useCallback(e => {
-      null != e.target && T.current && (T.current = false, null == f || f(l))
-    }, [l, f]),
-    S = i.useMemo(() => (0, a.debounce)(I, 50), [I]),
-    j = (0, p.w)(S, [], {
-      enabled: null != f
+  let j = i.useCallback(e => {
+      null != e.target && y.current && (y.current = false, null == b || b(l))
+    }, [l, b]),
+    T = i.useMemo(() => (0, a.debounce)(j, 50), [j]),
+    v = (0, _.w)(T, [], {
+      enabled: null != b
     }),
-    v = l && null != x;
+    S = l && null != x;
   return i.useLayoutEffect(() => {
     null != E.current && null == x && O(E.current.clientHeight)
   }, [x]), (0, r.jsxs)(o.EN, {
-    ref: j,
+    ref: v,
     isExpanded: l,
-    onExpandedChange: A,
+    onExpandedChange: f,
     children: [(0, r.jsx)(m.U, {
       ref: E,
       style: null != x ? {
         minHeight: x
       } : true,
       title: t,
-      description: v ? true : n,
-      secondaryTrailingElement: (0, r.jsx)(_.vN3, {
+      description: S ? true : n,
+      secondaryTrailingElement: (0, r.jsx)(p.vN3, {
         children: (0, r.jsx)(c.$, {
           slot: "trigger",
           className: g.bW,
@@ -63,12 +63,12 @@ function A(e) {
           })
         })
       }),
-      onClick: () => A(!l)
+      onClick: () => f(!l)
     }), (0, r.jsx)(o.kS, {
       className: s()(g.nd, {
-        [g.t5]: !b
+        [g.t5]: !A
       }),
-      children: (0, r.jsx)(_.BJc, {
+      children: (0, r.jsx)(p.BJc, {
         gap: 16,
         padding: {
           top: 16

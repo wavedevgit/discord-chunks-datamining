@@ -24,21 +24,21 @@ let N = (0, Chunk419954.dT)(Chunk780964.X.ACCOUNT_STANDING_TAB, {
     getTitle: () => O.intl.string(O.t["Vov/9o"]),
     onItemSelect: () => {
       o.default.track(I.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-        target_tab_name: d.D.STANDING
+        target_tab_name: A.D.STANDING
       })
     },
-    buildLayout: () => [g.Q]
+    buildLayout: () => [_.Q]
   }),
   C = (0, Chunk419954.dT)(Chunk780964.X.ACCOUNT_SECURITY_TAB, {
     getTitle: () => O.intl.string(O.t.Am9YHi),
     onItemSelect: () => {
       o.default.track(I.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-        target_tab_name: d.D.SECURITY
+        target_tab_name: A.D.SECURITY
       })
     },
-    buildLayout: () => [E.P, S.o, _.s]
+    buildLayout: () => [E.P, S.o, g.s]
   }),
-  L = (0, Chunk419954.t_)(Chunk780964.X.ACCOUNT_PANEL, {
+  b = (0, Chunk419954.t_)(Chunk780964.X.ACCOUNT_PANEL, {
     useTitle: () => O.intl.string(O.t["JAIM/m"]),
     initialize: function() {
       let t = a.default.getCurrentUser();
@@ -49,14 +49,14 @@ let N = (0, Chunk419954.dT)(Chunk780964.X.ACCOUNT_STANDING_TAB, {
     hideInStreamerMode: true,
     buildLayout: () => [C, N]
   }),
-  b = (0, Chunk419954.t_)(Chunk780964.X.ACCOUNT_PANEL, {
+  L = (0, Chunk419954.t_)(Chunk780964.X.ACCOUNT_PANEL, {
     useTitle: () => O.intl.string(O.t["JAIM/m"]),
     StronglyDiscouragedCustomComponent: Chunk782844.A,
     buildLayout: () => []
   }),
   D = (0, Chunk419954.i4)(Chunk780964.X.ACCOUNT_SIDEBAR_ITEM, {
     useTitle: () => O.intl.string(O.t["JAIM/m"]),
-    getLegacySearchKey: () => (0, A.WJ)("AccountPanel") ? true : c.H.ACCOUNT,
+    getLegacySearchKey: () => (0, d.WJ)("AccountPanel") ? true : c.H.ACCOUNT,
     icon: Chunk934551.UserIcon,
-    buildLayout: () => (0, A.WJ)("AccountPanel") ? [L] : [b]
+    buildLayout: () => (0, d.WJ)("AccountPanel") ? [b] : [L]
   })

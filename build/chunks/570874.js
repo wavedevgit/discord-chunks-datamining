@@ -20,5 +20,5 @@ let E = (0, Chunk419954.zZ)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGOR
     let t = (0, u.I)();
     if ((0, r.Tx)() === s.YG) return t
   },
-  buildLayout: () => [a.a, A.V, d.w, T.H, o.U]
+  buildLayout: () => [a.a, d.V, A.w, T.H, o.U]
 })

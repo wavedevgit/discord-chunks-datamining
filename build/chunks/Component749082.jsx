@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 749082, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk799226 = require("./799226.js"),
   Chunk397927 = require("./397927.js"),
   Chunk289440 = require("./289440.js");
-let p = {
+let _ = {
     HoverLightmode: {
       posy: "number",
       posx: "number"
@@ -34,35 +34,35 @@ let p = {
       cardClassName: l,
       cardType: m,
       artboard: g = "BaseGlowRemapped",
-      fit: A = "layout",
-      glowAmount: f = 8,
+      fit: f = "layout",
+      glowAmount: b = 8,
       blurAmount: h = 30,
-      hueRotate: b = 0,
+      hueRotate: A = 0,
       isReducedMotion: E
     } = e, x = i.useRef(null), O = i.useRef(null), {
       status: C,
-      buffer: T
-    } = (0, d.CE)(a.A), I = i.useContext(o.C), S = null != E ? E : I.reducedMotion.enabled;
+      buffer: y
+    } = (0, d.CE)(a.A), j = i.useContext(o.C), T = null != E ? E : j.reducedMotion.enabled;
     return (0, r.jsxs)("div", {
       ref: x,
-      className: s()(_.kL, n),
+      className: s()(p.kL, n),
       style: {
-        "--custom-glow-amount": "".concat(f, "px"),
+        "--custom-glow-amount": "".concat(b, "px"),
         "--custom-blur-amount": "".concat(h, "px"),
-        "--custom-hue-rotate": "".concat(b, "deg")
+        "--custom-hue-rotate": "".concat(A, "deg")
       },
       children: [C !== d.BW.Loading && (0, r.jsx)(c.w, {
-        buffer: T,
+        buffer: y,
         artboard: g,
-        artboardProperties: p,
+        artboardProperties: _,
         eventTargetRef: x,
-        className: _.Q_,
+        className: p.Q_,
         ref: O,
-        fit: A,
-        withReducedMotion: S ? "halt" : "play"
+        fit: f,
+        withReducedMotion: T ? "halt" : "play"
       }), (0, r.jsx)(u.ZpM, {
         type: null != m ? m : u.sl2.CUSTOM,
-        className: s()(_.Nr, l),
+        className: s()(p.Nr, l),
         children: t
       })]
     })

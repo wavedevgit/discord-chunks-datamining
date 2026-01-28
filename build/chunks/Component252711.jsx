@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 252711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -28,30 +28,30 @@ let m = function(e) {
       tension: 120,
       friction: 12
     }
-  }), A = {
-    section: _.JJy.MARKETING_FLOATING_CTA
-  }, f = (0, c.Ay)(), h = (0, o.Mwr)(f);
+  }), f = {
+    section: p.JJy.MARKETING_FLOATING_CTA
+  }, b = (0, c.Ay)(), h = (0, o.Mwr)(b);
   return (0, r.jsx)(s.animated.div, {
-    className: l()(p.iE, {
-      [p.H8]: i,
-      [p.q4]: !t
+    className: l()(_.iE, {
+      [_.H8]: i,
+      [_.q4]: !t
     }),
     style: g,
     children: (0, r.jsxs)("div", {
-      className: i ? p.zW : p.iJ,
+      className: i ? _.zW : _.iJ,
       children: [(0, r.jsx)(u.A, {
         color: h ? a.XD.BRAND_INVERTED : true,
-        className: l()(p.x6, {
-          [p.Ph]: h
+        className: l()(_.x6, {
+          [_.Ph]: h
         }),
         subscriptionTier: n,
-        premiumModalAnalyticsLocation: A,
+        premiumModalAnalyticsLocation: f,
         isPersistentCTA: true,
         hasActivePromotion: m,
-        shinyButtonClassName: h ? true : p.PJ
+        shinyButtonClassName: h ? true : _.PJ
       }), (0, r.jsx)(d.A, {
-        className: p.x6,
-        premiumModalAnalyticsLocation: A
+        className: _.x6,
+        premiumModalAnalyticsLocation: f
       })]
     })
   })

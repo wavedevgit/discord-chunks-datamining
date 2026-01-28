@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 757942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => h
@@ -19,36 +19,36 @@ var Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk790782 = require("./790782.js");
 
-function f(e, t) {
+function b(e, t) {
   return [{
     resourceId: e,
-    type: A.P.GUILD_EVENT
-  }, ...e === g.ME ? _.A.getPrivateChannelIds() : (0, a.A)(e, {
+    type: f.P.GUILD_EVENT
+  }, ...e === g.ME ? p.A.getPrivateChannelIds() : (0, a.A)(e, {
     withVoiceChannels: t,
     withCurrentVoiceChannel: true
   }).map(e => e.id)]
 }
 let h = l().throttle(function(e, t) {
   var i, l, a;
-  let _, A, h, {
-      channelPredicate: b = () => true,
+  let p, f, h, {
+      channelPredicate: A = () => true,
       guildPredicate: E = () => true,
       guildFeaturePredicate: x = () => false,
       ensureChatIsVisible: O = () => false,
       withVoiceChannels: C = false
     } = t,
-    T = null != (i = o.A.getState().guildId) ? i : g.ME,
-    I = o.A.getState().channelId,
-    S = (a = T, A = (_ = [g.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(a), e > 0 ? _.slice(A).concat(_.slice(0, A), a) : (_.splice(A, 0, a), _.slice(A + 1).concat(_.slice(0, A + 1)))),
-    j = e > 0 ? 0 : S.length - 1,
-    v = f(T, C),
-    N = v.indexOf(I) + e;
-  for (; null != T && "" !== T;) {
-    if (h = v[N], E(T))
+    y = null != (i = o.A.getState().guildId) ? i : g.ME,
+    j = o.A.getState().channelId,
+    T = (a = y, f = (p = [g.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(a), e > 0 ? p.slice(f).concat(p.slice(0, f), a) : (p.splice(f, 0, a), p.slice(f + 1).concat(p.slice(0, f + 1)))),
+    v = e > 0 ? 0 : T.length - 1,
+    S = b(y, C),
+    I = S.indexOf(j) + e;
+  for (; null != y && "" !== y;) {
+    if (h = S[I], E(y))
       for (; null != h && "" !== h;) {
         if ("string" == typeof h) {
-          if (b(T, h)) return (0, m.i)(T, h, false, O(T, h))
-        } else if ("object" == typeof h && x(h.resourceId, h.type)) return T !== d.A.getGuildId() && (0, m.i)(T, null == (l = c.Ay.getDefaultChannel(T)) ? true : l.id), (0, s.mMO)(async () => {
+          if (A(y, h)) return (0, m.i)(y, h, false, O(y, h))
+        } else if ("object" == typeof h && x(h.resourceId, h.type)) return y !== d.A.getGuildId() && (0, m.i)(y, null == (l = c.Ay.getDefaultChannel(y)) ? true : l.id), (0, s.mMO)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("51354"), n.e("7453"), n.e("27728")]).then(n.bind(n, 926956));
@@ -81,15 +81,15 @@ let h = l().throttle(function(e, t) {
             }
             return e
           }({}, t), {
-            guildId: T
+            guildId: y
           }))
         });
-        N += e, h = v[N]
+        I += e, h = S[I]
       }
-    if (j += e, null == (T = S[j]) || "" === T) break;
-    v = f(T, C), N = e < 0 ? v.length - 1 : 0
+    if (v += e, null == (y = T[v]) || "" === y) break;
+    S = b(y, C), I = e < 0 ? S.length - 1 : 0
   }
-  p._.dispatch(g.jej.SHAKE_APP, {
+  _._.dispatch(g.jej.SHAKE_APP, {
     duration: 200,
     intensity: 2
   })

@@ -27,11 +27,11 @@ function _(e) {
     onClose: v
   } = e, {
     analyticsLocations: b
-  } = (0, a.Ay)(s.A.GO_LIVE_MODAL_V2), y = (0, d.V)(), S = (0, c.O)(), O = (null == y || null == (t = y.subscription_trial) ? true : t.sku_id) === x.pe.TIER_2 || (0, f.U9)(S, x.pe.TIER_2), A = j.intl.string(m.default["+f+cqk"]);
-  return O && (null != y ? A = (0, h.FY)({
+  } = (0, a.Ay)(s.A.GO_LIVE_MODAL_V2), y = (0, d.V)(), S = (0, c.O)(), A = (null == y || null == (t = y.subscription_trial) ? true : t.sku_id) === x.pe.TIER_2 || (0, f.U9)(S, x.pe.TIER_2), O = j.intl.string(m.default["+f+cqk"]);
+  return A && (null != y ? O = (0, h.FY)({
     intervalType: null == y || null == (r = y.subscription_trial) ? true : r.interval,
     intervalCount: null == y || null == (_ = y.subscription_trial) ? true : _.interval_count
-  }) : null != S && (A = j.intl.formatToPlainString(j.t.bkQ4bH, {
+  }) : null != S && (O = j.intl.formatToPlainString(j.t.bkQ4bH, {
     percent: S.discount.amount
   }))), (0, n.jsxs)("div", {
     className: g.zr,
@@ -62,7 +62,7 @@ function _(e) {
         v()
       },
       textOptions: {
-        subscribeText: A,
+        subscribeText: O,
         textClassName: g.U_
       }
     })]

@@ -14,12 +14,12 @@ var Chunk935649 = require("./935649.jsx"),
   Chunk406274 = require("./406274.js"),
   Chunk985018 = require("./985018.jsx");
 let S = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_AGE_RESTRICTED_DM_SETTING, {
-  useTitle: () => d.intl.string(d.t.XahVjj),
-  useSubtitle: () => d.intl.string(d.t.R9fXyS),
+  useTitle: () => A.intl.string(A.t.XahVjj),
+  useSubtitle: () => A.intl.string(A.t.R9fXyS),
   useValue: Chunk264249.hT,
   useDisabled: () => {
     var t;
-    let e = null == (t = (0, A.A)()) || t,
+    let e = null == (t = (0, d.A)()) || t,
       i = (0, r.sP)(),
       n = (0, s.yM)();
     return (!i || !!n) && !e

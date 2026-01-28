@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 416092, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => m
@@ -18,14 +18,14 @@ let m = {
   binds: ["mod+u"],
   comboKeysBindGlobal: true,
   action() {
-    let e = _.A.getGuildId(),
+    let e = p.A.getGuildId(),
       t = u.A.getChannelId(e),
       n = d.A.getChannel(t);
     if (null != t && null != n && n.type === r.r.GUILD_VOICE) return i.A.updateChatOpen(t, !s.A.getChatOpen(t), "toggle users keybind"), false;
     if (null != t && null != n && n.type === r.r.DM) {
       let e = c.Ay.getSection(t, null == n ? true : n.isDM()),
         r = (0, o.AP)(n.getRecipientId()),
-        i = e === p.YvQ.PROFILE;
+        i = e === _.YvQ.PROFILE;
       return (0, a.am)({
         displayProfile: r,
         isProfileOpen: !i

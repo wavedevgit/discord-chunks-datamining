@@ -1,8 +1,8 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 871930, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _: () => p,
-  h: () => f
+  _: () => _,
+  h: () => b
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,7 +15,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk480357 = require("./480357.js"),
   Chunk606360 = require("./606360.js");
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function _(e) {
   return e
 }
 
-function p(e) {
+function _(e) {
   let {
     header: t,
     description: n,
@@ -90,29 +90,29 @@ function g(e) {
   })
 }
 
-function A(e) {
+function f(e) {
   let {
     setting: t,
     className: n,
     children: i,
     scrollPosition: s,
-    scrollHighlightDelay: _
-  } = e, p = (0, o.s)(s);
+    scrollHighlightDelay: p
+  } = e, _ = (0, o.s)(s);
   return (0, r.jsx)(a.x, {
     setting: t,
     children: (0, r.jsxs)("div", {
       className: l()(u.kL, n, {
         [d.m]: null != s
       }),
-      ref: p,
+      ref: _,
       children: [i, null != s ? (0, r.jsx)(c.A, {
-        animationDelay: _,
+        animationDelay: p,
         scrollPosition: s
       }) : null]
     })
   })
 }
 
-function f(e) {
-  return null != e.scrollPosition ? (0, r.jsx)(A, _({}, e)) : null != e.setting ? (0, r.jsx)(g, _({}, e)) : (0, r.jsx)(m, _({}, e))
+function b(e) {
+  return null != e.scrollPosition ? (0, r.jsx)(f, p({}, e)) : null != e.setting ? (0, r.jsx)(g, p({}, e)) : (0, r.jsx)(m, p({}, e))
 }

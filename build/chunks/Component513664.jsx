@@ -1,9 +1,9 @@
-/** Chunk was on 82575 **/
+/** Chunk was on 60449 **/
 /** chunk id: 513664, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => m,
-  dd: () => A,
-  lD: () => S
+  dd: () => p,
+  lD: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,19 +20,19 @@ var Chunk873298 = require("./873298.js"),
   Chunk536482 = require("./536482.js"),
   Chunk208746 = require("./208746.js");
 
-function A() {
+function p() {
   let e = c.tz.useSetting();
   return (0, i.jsxs)("div", {
-    className: p.QF,
+    className: A.QF,
     children: [(0, i.jsxs)("div", {
-      className: p.v_,
+      className: A.v_,
       children: [(0, i.jsx)(l.Heading, {
-        className: p.n7,
+        className: A.n7,
         variant: "heading-md/medium",
         color: "text-strong",
         children: h.intl.string(h.t.TqdOvC)
       }), !e && (0, i.jsx)("div", {
-        className: p.ZT,
+        className: A.ZT,
         children: (0, i.jsx)(l.wx6, {
           type: "warning",
           children: h.intl.string(x.default["xxI0/W"])
@@ -49,13 +49,13 @@ function m(e) {
   return (0, i.jsxs)(d.A, {
     className: t,
     title: h.intl.string(h.t.Cq98yL),
-    children: [(0, i.jsx)(O, {}), (0, i.jsx)(l.cGx, {
+    children: [(0, i.jsx)(E, {}), (0, i.jsx)(l.cGx, {
       gap: 32
     }), (0, i.jsx)(j, {}), (0, i.jsx)(l.cGx, {
       gap: 32
-    }), (0, i.jsx)(b, {}), (0, i.jsx)(l.cGx, {
+    }), (0, i.jsx)(O, {}), (0, i.jsx)(l.cGx, {
       gap: 32
-    }), (0, i.jsx)(S, {})]
+    }), (0, i.jsx)(b, {})]
   })
 }
 
@@ -81,11 +81,11 @@ function j() {
       onChange: e => {
         c._Z.updateSetting(e)
       }
-    }), (0, i.jsx)(A, {})]
+    }), (0, i.jsx)(p, {})]
   })
 }
 
-function b() {
+function O() {
   let e = c.e.useSetting(),
     t = c.UM.useSetting();
   return (0, i.jsx)(a.x, {
@@ -109,7 +109,7 @@ function b() {
   })
 }
 
-function O() {
+function E() {
   let e = c.tz.useSetting(),
     t = o.isPlatformEmbedded ? h.intl.string(x.default.UQ9RHJ) : h.intl.string(h.t.oKqC4t);
   return (0, i.jsx)(a.x, {
@@ -129,12 +129,12 @@ function O() {
   })
 }
 
-function S() {
+function b() {
   return (0, i.jsx)(a.x, {
     setting: u.H.ACTIVITY_PRIVACY_TOS,
     children: (0, i.jsx)(l.ZpM, {
       type: l.ZpM.Types.PRIMARY,
-      className: p.AX,
+      className: A.AX,
       children: (0, i.jsx)(l.Text, {
         variant: "text-sm/normal",
         children: h.intl.format(h.t.xvCsx4, {

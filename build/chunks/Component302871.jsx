@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk402699 = require("./402699.js");
 let E = (0, Chunk419954.E2)(Chunk780964.X.APPEARANCE_CLIENT_THEMES, {
-  useSearchTerms: () => [d.intl.string(d.t.Ksh3ik), d.intl.string(d.t["0EzVst"]), d.intl.string(d.t.OCOOiI)],
+  useSearchTerms: () => [A.intl.string(A.t.Ksh3ik), A.intl.string(A.t["0EzVst"]), A.intl.string(A.t.OCOOiI)],
   Component: () => {
     let t = (0, l.bG)([r.A], () => r.A.useForcedColors);
     return (0, n.jsxs)("fieldset", {
@@ -24,12 +24,12 @@ let E = (0, Chunk419954.E2)(Chunk780964.X.APPEARANCE_CLIENT_THEMES, {
         variant: "heading-xl/normal",
         color: "text-strong",
         className: S.D,
-        children: d.intl.string(d.t.Ksh3ik)
+        children: A.intl.string(A.t.Ksh3ik)
       }), t ? (0, n.jsx)(s.wx6, {
         type: "info",
-        children: (0, u.D)() ? (0, n.jsx)(T.Ys, {}) : d.intl.string(d.t.AUMSZP)
+        children: (0, u.D)() ? (0, n.jsx)(T.Ys, {}) : A.intl.string(A.t.AUMSZP)
       }) : (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(T.ac, {}), (0, n.jsx)(A.I, {})]
+        children: [(0, n.jsx)(T.ac, {}), (0, n.jsx)(d.I, {})]
       })]
     })
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 478407, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -22,7 +22,7 @@ function u(e) {
       return (null != (n = null == (i = e.createdAt) ? true : i.getTime()) ? n : e.currentPeriodStart.getTime()) - (null != (r = null == (l = t.createdAt) ? true : l.getTime()) ? r : t.currentPeriodStart.getTime())
     })) ? e : []
   }), [s, u] = i.useState();
-  return null == s && (s = (0, r.jsx)(_, {
+  return null == s && (s = (0, r.jsx)(p, {
     onBack: t,
     title: c.intl.string(c.t["DB/m9a"])
   })), (0, r.jsxs)("div", {
@@ -31,7 +31,7 @@ function u(e) {
       children: (0, r.jsx)(o.A, {
         subscriptions: n,
         updateHeader: (e, t) => {
-          u((0, r.jsx)(_, {
+          u((0, r.jsx)(p, {
             title: e,
             onBack: () => {
               t(), u(true)
@@ -43,7 +43,7 @@ function u(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     onBack: t,
     title: n

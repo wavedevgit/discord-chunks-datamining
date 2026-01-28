@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 946015, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   s: () => x
@@ -19,7 +19,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +32,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,14 +67,14 @@ let g = {
     HORIZONTAL: Chunk112303.OZ,
     HORIZONTAL_REVERSE: Chunk112303.y0
   },
-  A = {
+  f = {
     START: Chunk112303.KF,
     END: Chunk112303.HA,
     CENTER: Chunk112303.pb,
     BETWEEN: Chunk112303.G1,
     AROUND: Chunk112303.nm
   },
-  f = {
+  b = {
     NO_WRAP: Chunk112303.B,
     WRAP: Chunk112303.aR,
     WRAP_REVERSE: Chunk112303.KM
@@ -85,7 +85,7 @@ let g = {
     CENTER: Chunk112303.YO,
     STRETCH: Chunk112303.ai
   },
-  b = {
+  A = {
     SMALL: Chunk50567.sf,
     LARGE: Chunk50567.S6
   };
@@ -102,8 +102,8 @@ class E extends(r = Chunk64700.PureComponent) {
         wrap: u
       } = e,
       g = m(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]),
-      A = _({
-        style: _({
+      f = p({
+        style: p({
           flexGrow: i,
           flexShrink: r,
           flexBasis: a
@@ -112,9 +112,9 @@ class E extends(r = Chunk64700.PureComponent) {
       }, g);
     if (!u && "string" != typeof t && 1 === s.Children.count(t)) {
       let e = s.Children.only(t);
-      return A.style = _({}, A.style, e.props.style), A.className = o()(e.props.className, n), s.cloneElement(e, A)
+      return f.style = p({}, f.style, e.props.style), f.className = o()(e.props.className, n), s.cloneElement(e, f)
     }
-    return (0, l.jsx)("div", p(_({}, A), {
+    return (0, l.jsx)("div", _(p({}, f), {
       children: t
     }))
   }
@@ -137,28 +137,28 @@ class x extends(i = Chunk64700.PureComponent) {
         shrink: c,
         grow: u,
         basis: g,
-        style: A,
-        gutter: f
+        style: f,
+        gutter: b
       } = e,
       h = m(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
-      b = _({
+      A = p({
         flexShrink: c,
         flexGrow: u,
         flexBasis: g
-      }, A);
-    return (0, l.jsx)("div", p(_({
-      style: b,
-      className: o()(d.Uu, r, i, s, a, f, n)
+      }, f);
+    return (0, l.jsx)("div", _(p({
+      style: A,
+      className: o()(d.Uu, r, i, s, a, b, n)
     }, h), {
       children: t
     }))
   }
 }
-u(x, "Child", E), u(x, "Direction", g), u(x, "Align", h), u(x, "Justify", A), u(x, "Wrap", f), u(x, "Gutter", b), u(x, "defaultProps", {
+u(x, "Child", E), u(x, "Direction", g), u(x, "Align", h), u(x, "Justify", f), u(x, "Wrap", b), u(x, "Gutter", A), u(x, "defaultProps", {
   direction: g.HORIZONTAL,
-  justify: A.START,
+  justify: f.START,
   align: h.STRETCH,
-  wrap: f.WRAP,
+  wrap: b.WRAP,
   shrink: 1,
   grow: 1,
   basis: "auto",

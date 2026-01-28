@@ -17,10 +17,10 @@ var Chunk934551 = require("./934551.js"),
 let E = (0, Chunk419954.zZ)(Chunk780964.X.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, {
     buildLayout: () => [T.l]
   }),
-  _ = (0, Chunk419954.zZ)(Chunk780964.X.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
-    buildLayout: () => [A.W]
+  g = (0, Chunk419954.zZ)(Chunk780964.X.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
+    buildLayout: () => [d.W]
   }),
-  g = (0, Chunk419954.t_)(Chunk780964.X.CONNECTIONS_PANEL, {
+  _ = (0, Chunk419954.t_)(Chunk780964.X.CONNECTIONS_PANEL, {
     usePredicate: () => !(0, a.dk)("LegacyConnectionsPanel"),
     useTitle: () => S.intl.string(S.t["3fe7U5"]),
     hideInStreamerMode: true,
@@ -31,15 +31,15 @@ let E = (0, Chunk419954.zZ)(Chunk780964.X.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, 
     usePredicate: () => (0, a.dk)("ConnectionsPanel"),
     useTitle: () => S.intl.string(S.t["3fe7U5"]),
     hideInStreamerMode: true,
-    buildLayout: () => [E, _]
+    buildLayout: () => [E, g]
   }),
   I = (0, Chunk419954.i4)(Chunk780964.X.CONNECTIONS_SIDEBAR_ITEM, {
     useTitle: () => S.intl.string(S.t["3fe7U5"]),
-    getLegacySearchKey: () => (0, a.WJ)("ConnectionsPanel") ? true : d.H.CONNECTIONS,
+    getLegacySearchKey: () => (0, a.WJ)("ConnectionsPanel") ? true : A.H.CONNECTIONS,
     icon: Chunk934551.LinkIcon,
     trailing: {
       type: Chunk933297.S.BADGE_NEW,
       getDismissibleContentTypes: () => [l.M.NEW_CRUNCHYROLL_CONNECTION]
     },
-    buildLayout: () => (0, a.WJ)("ConnectionsPanel") ? [c] : [g]
+    buildLayout: () => (0, a.WJ)("ConnectionsPanel") ? [c] : [_]
   })

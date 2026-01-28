@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 253604, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -16,24 +16,24 @@ function u(e) {
   var t;
   let {
     user: u,
-    disabledInputs: _,
-    containerClassName: p
+    disabledInputs: p,
+    containerClassName: _
   } = e, {
     reducedMotion: m
   } = i.useContext(s.CZY), {
     pendingAvatar: g,
-    pendingBanner: A,
-    pendingAvatarDecoration: f,
+    pendingBanner: f,
+    pendingAvatarDecoration: b,
     pendingProfileEffect: h,
-    pendingDisplayNameStyles: b,
+    pendingDisplayNameStyles: A,
     pendingThemeColors: E,
     pendingPronouns: x,
     pendingBio: O,
     tryItOutThemeColors: C,
-    tryItOutAvatar: T,
-    tryItOutBanner: I,
-    tryItOutAvatarDecoration: S,
-    tryItOutDisplayNameStyles: j
+    tryItOutAvatar: y,
+    tryItOutBanner: j,
+    tryItOutAvatarDecoration: T,
+    tryItOutDisplayNameStyles: v
   } = (0, l.cf)([o.A], () => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -51,25 +51,25 @@ function u(e) {
       })
     }
     return e
-  })({}, o.A.getAllPending(), o.A.getAllTryItOut())), v = (0, a.V7)({
+  })({}, o.A.getAllPending(), o.A.getAllTryItOut())), S = (0, a.V7)({
     userId: u.id,
-    image: null != T ? T : g
+    image: null != y ? y : g
   });
   return (0, r.jsx)(c.A, {
-    containerClassName: p,
+    containerClassName: _,
     user: u,
     pendingPronouns: x,
     pendingBio: O,
-    pendingBanner: null != (t = null != I ? I : A) ? t : n(636763),
-    pendingDisplayNameStyles: null != j ? j : b,
-    pendingAvatar: v,
+    pendingBanner: null != (t = null != j ? j : f) ? t : n(636763),
+    pendingDisplayNameStyles: null != v ? v : A,
+    pendingAvatar: S,
     pendingThemeColors: null != C ? C : E,
-    pendingAvatarDecoration: true !== S ? S : f,
+    pendingAvatarDecoration: true !== T ? T : b,
     pendingProfileEffect: h,
-    avatarClassName: null != T || null != g || m.enabled ? true : d.W,
+    avatarClassName: null != y || null != g || m.enabled ? true : d.W,
     canUsePremiumCustomization: true,
     isTryItOut: true,
-    disabledInputs: _,
+    disabledInputs: p,
     hideExampleButton: true
   })
 }

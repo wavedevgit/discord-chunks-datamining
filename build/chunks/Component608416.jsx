@@ -1,12 +1,12 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 608416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $G: () => d,
   Ay: () => g,
   MN: () => m,
   Mp: () => u,
-  XN: () => _,
-  aV: () => p
+  XN: () => p,
+  aV: () => _
 }), require("./896048.js");
 var r, i, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,8 +15,8 @@ var r, i, Chunk627968 = require("./627968.js"),
   Chunk396583 = require("./396583.js");
 let d = 3e3,
   u = 4e3,
-  _ = 6e3;
-var p = ((r = {}).SINE = "sine", r.COSINE = "cosine", r),
+  p = 6e3;
+var _ = ((r = {}).SINE = "sine", r.COSINE = "cosine", r),
   m = ((i = {}).UP = "up", i.DOWN = "down", i);
 let g = e => {
   var t, n;
@@ -25,11 +25,11 @@ let g = e => {
     scaleAnimationData: i,
     yAxisAnimationData: d,
     parallaxAnimationData: u,
-    animateXAxisWiggle: _ = false,
-    isMotionReduced: p = false,
+    animateXAxisWiggle: p = false,
+    isMotionReduced: _ = false,
     animationSpeedScale: m = 1,
     children: g
-  } = e, A = (0, o.zhh)(null != d ? {
+  } = e, f = (0, o.zhh)(null != d ? {
     from: {
       y: 0
     },
@@ -42,7 +42,7 @@ let g = e => {
     loop: true
   } : {
     y: 0
-  }), f = (null == d ? true : d.path) === "sine" ? Math.sin : Math.cos, [h, b] = (0, s.useState)(1), E = (0, o.zhh)(null != i ? {
+  }), b = (null == d ? true : d.path) === "sine" ? Math.sin : Math.cos, [h, A] = (0, s.useState)(1), E = (0, o.zhh)(null != i ? {
     from: {
       scale: h > 0 ? i.startScale : i.endScale
     },
@@ -52,7 +52,7 @@ let g = e => {
     config: {
       duration: i.duration * m
     },
-    onRest: () => b(e => false * e)
+    onRest: () => A(e => false * e)
   } : {
     scale: 1
   }), [x, O] = (0, s.useState)(1), C = (0, o.zhh)(null != r ? {
@@ -68,21 +68,21 @@ let g = e => {
     onRest: () => O(e => false * e)
   } : {
     blur: 0
-  }), T = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * m), [m]), [I, S] = (0, s.useState)(0), [j, v] = (0, s.useState)(1), N = (0, o.zhh)({
-    xOffset: I,
+  }), y = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * m), [m]), [j, T] = (0, s.useState)(0), [v, S] = (0, s.useState)(1), I = (0, o.zhh)({
+    xOffset: j,
     config: {
       tension: 10,
       friction: 10,
-      duration: T
+      duration: y
     }
   });
   return ((0, c.A)(() => {
-    S(j * (.5 * Math.random() * 5 + 2.5)), v(e => false * e)
-  }, T), p) ? g : (0, l.jsx)(a.animated.div, {
+    T(v * (.5 * Math.random() * 5 + 2.5)), S(e => false * e)
+  }, y), _) ? g : (0, l.jsx)(a.animated.div, {
     style: {
-      transform: null == (t = A.y) ? true : t.to(e => {
+      transform: null == (t = f.y) ? true : t.to(e => {
         if (null == d) return "translateY(0px)";
-        let t = f(e * Math.PI * 2) * d.range,
+        let t = b(e * Math.PI * 2) * d.range,
           n = 0;
         if (null != u) {
           let e = u.range * (1 - u.containerVisibilityPercentage);
@@ -90,7 +90,7 @@ let g = e => {
         }
         return "translateY(".concat(t + n, "px)")
       }),
-      translateX: _ ? N.xOffset.to(e => "".concat(e, "px")) : 0,
+      translateX: p ? I.xOffset.to(e => "".concat(e, "px")) : 0,
       scale: E.scale,
       filter: null == (n = C.blur) ? true : n.to(e => "blur(".concat(e, "px)")),
       opacity: null != u && u.changeOpacity ? u.containerVisibilityPercentage : 1

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 544727, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  $: () => d
+  $: () => A
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,8 +13,8 @@ var Chunk311907 = require("./311907.js"),
   Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_STORAGE_LOCATION, {
-  useSearchTerms: () => [A.intl.string(A.t.s4773E), A.intl.string(A.t.svjwGh)],
+let A = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_STORAGE_LOCATION, {
+  useSearchTerms: () => [d.intl.string(d.t.s4773E), d.intl.string(d.t.svjwGh)],
   Component: () => {
     let t = (0, l.bG)([u.A], () => u.A.getSettings().storageLocation),
       e = async () => {
@@ -24,11 +24,11 @@ let d = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_STORAGE_LOCATION, {
         t.length > 0 && a.HU(t[0])
       };
     return (0, n.jsx)(s.D0$, {
-      label: A.intl.string(A.t.s4773E),
-      description: A.intl.string(A.t.svjwGh),
+      label: d.intl.string(d.t.s4773E),
+      description: d.intl.string(d.t.svjwGh),
       layout: "horizontal",
       children: (0, n.jsx)(s.DUT, {
-        "aria-label": A.intl.formatToPlainString(A.t.iMONTj, {
+        "aria-label": d.intl.formatToPlainString(d.t.iMONTj, {
           storageLocation: t
         }),
         onClick: e,

@@ -14,9 +14,9 @@ var Chunk945276 = require("./945276.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 let S = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_DM_SAFETY_ALERTS_SETTING, {
-  useTitle: () => d.intl.string(d.t.qFsx5q),
-  useSubtitle: () => d.intl.format(d.t.lunaRv, {
-    learnMoreLink: o.A.getArticleURL(A.MVz.SAFETY_ALERTS)
+  useTitle: () => A.intl.string(A.t.qFsx5q),
+  useSubtitle: () => A.intl.format(A.t.lunaRv, {
+    learnMoreLink: o.A.getArticleURL(d.MVz.SAFETY_ALERTS)
   }),
   useValue: Chunk546140.L,
   setValue: Chunk776038.a,

@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 148131, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  w: () => A
+  w: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,10 +17,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk487693 = require("./487693.js");
 
-function A(e) {
+function f(e) {
   let {
     user: t
-  } = e, l = (0, a.bG)([c.default], () => c.default.getCurrentUser()), A = i.useCallback(() => {
+  } = e, l = (0, a.bG)([c.default], () => c.default.getCurrentUser()), f = i.useCallback(() => {
     s()(true !== l, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
       let {
         default: e
@@ -66,14 +66,14 @@ function A(e) {
       className: g.zH,
       children: (0, r.jsx)(u.A, {
         otherUser: t,
-        status: _.Ef.ACTIVE
+        status: p.Ef.ACTIVE
       })
     }), (0, r.jsx)("div", {
       className: g.o1,
       children: (0, r.jsx)(d.A, {
         icon: o.PGe,
-        tooltip: m.intl.string(p.default.l20ZZp),
-        onClick: A
+        tooltip: m.intl.string(_.default.l20ZZp),
+        onClick: f
       })
     })]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 21425 **/
+/** Chunk was on 78572 **/
 /** chunk id: 556445, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -39,8 +39,8 @@ function o(e) {
   }(e, ["activity", "user", "channelId", "guildId", "source", "size", "variant", "onAction"]), {
     tooltip: g,
     loading: y,
-    disabled: _,
-    onClick: b
+    disabled: b,
+    onClick: _
   } = (0, s.J$)(t, n, u, a.Ay.getNickname(c, o, n));
   return (0, r.jsx)(i.m, {
     text: g,
@@ -66,9 +66,9 @@ function o(e) {
       size: d,
       variant: p,
       onClick: () => {
-        null == f || f(), b()
+        null == f || f(), _()
       },
-      disabled: _,
+      disabled: b,
       loading: y,
       "aria-label": null != g ? g : t.name
     }, m))

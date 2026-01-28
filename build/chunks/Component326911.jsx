@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 326911, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => h
@@ -37,7 +37,7 @@ function g(e) {
   return e
 }
 
-function A(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,15 +49,15 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class f extends Chunk64700.Component {
+class b extends Chunk64700.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
         location: e
       }
     } = this.props;
-    return A(g({}, e), {
-      object: _.ZSU.BUTTON_CTA
+    return f(g({}, e), {
+      object: p.ZSU.BUTTON_CTA
     })
   }
   render() {
@@ -70,18 +70,18 @@ class f extends Chunk64700.Component {
       isPromoCode: l
     } = this.state;
     return (0, r.jsx)(s.nVY, {
-      label: p.intl.string(p.t["il+VCo"]),
+      label: _.intl.string(_.t["il+VCo"]),
       children: (0, r.jsx)("form", {
         onSubmit: this.handleSubmit,
         children: (0, r.jsxs)(s.M_l, {
           children: [(0, r.jsx)(s.ksK, {
-            label: p.intl.string(p.t.SeKIoS),
+            label: _.intl.string(_.t.SeKIoS),
             type: e ? "password" : "text",
             value: t,
             onChange: this.handleChange,
             placeholder: "WUMP-AAAAA-BBBBB-CCCCC",
-            error: !l && i ? p.intl.string(p.t.Y11a2u) : null,
-            helperText: l ? p.intl.format(p.t.gPt3PE, {
+            error: !l && i ? _.intl.string(_.t.Y11a2u) : null,
+            helperText: l ? _.intl.format(_.t.gPt3PE, {
               promoLink: () => {
                 window.open("https://discord.com/billing/promotions/".concat(t))
               }
@@ -89,7 +89,7 @@ class f extends Chunk64700.Component {
             fullWidth: true
           }), (0, r.jsx)(s.Button, {
             variant: "primary",
-            text: p.intl.string(p.t.KIpp7M),
+            text: _.intl.string(_.t.KIpp7M),
             type: "submit",
             loading: n
           })]
@@ -126,10 +126,10 @@ class f extends Chunk64700.Component {
         if (null != e && null != e.giftCode.promotion) throw this.setState({
           isPromoCode: true
         }), Error("Cannnot redeem promotion code as gift");
-        d.default.track(_.HAw.OPEN_MODAL, {
+        d.default.track(p.HAw.OPEN_MODAL, {
           type: "gift_accept",
-          location: A(g({}, this.analyticsLocation), {
-            object: _.ZSU.BUTTON_CTA
+          location: f(g({}, this.analyticsLocation), {
+            object: p.ZSU.BUTTON_CTA
           })
         }), (0, o.h)({
           processedCode: n
@@ -152,7 +152,7 @@ class f extends Chunk64700.Component {
 function h() {
   let e = i.useContext(d.AnalyticsContext),
     t = (0, l.bG)([c.A], () => c.A.enabled);
-  return (0, r.jsx)(f, {
+  return (0, r.jsx)(b, {
     analyticsContext: e,
     obscureInput: t
   })

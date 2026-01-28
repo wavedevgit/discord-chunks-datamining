@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 78528 **/
 /** chunk id: 117178, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk837921 = require("./837921.js"),
   Chunk650583 = require("./650583.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,8 +21,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = Chunk723702.isPlatformEmbedded && null != Chunk837921.Ay.getDiscordUtils().inputCaptureRegisterElement;
-class m extends Chunk64700.PureComponent {
+let h = Chunk723702.isPlatformEmbedded && null != Chunk837921.Ay.getDiscordUtils().inputCaptureRegisterElement;
+class f extends Chunk64700.PureComponent {
   componentDidMount() {
     this._mounted = true
   }
@@ -50,48 +50,48 @@ class m extends Chunk64700.PureComponent {
   render() {
     let e, t, {
         codes: n,
-        mode: i
+        mode: l
       } = this.state,
       {
-        disabled: l
+        disabled: i
       } = this.props;
-    return p ? (t = d.Ay.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : c.isPlatformEmbedded || (e = this.handleComboKeys), (0, r.jsx)(o.A, {
-      disabled: l,
+    return h ? (t = u.Ay.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : c.isPlatformEmbedded || (e = this.handleComboKeys), (0, r.jsx)(o.A, {
+      disabled: i,
       value: n,
-      mode: i,
+      mode: l,
       onClick: this.toggleRecordMode,
       onChange: e,
       registerNativeRecorder: t,
-      disableOnClickWhileRecording: p
+      disableOnClickWhileRecording: h
     })
   }
   constructor(e) {
-    super(e), _(this, "_input", true), _(this, "gs", true), _(this, "_mounted", false), _(this, "recordStart", () => {
-      c.isPlatformEmbedded && !p && (this.gs = new a.A, this.gs.on("change", this.handleGSChange)), this.setState({
+    super(e), p(this, "_input", true), p(this, "gs", true), p(this, "_mounted", false), p(this, "recordStart", () => {
+      c.isPlatformEmbedded && !h && (this.gs = new a.A, this.gs.on("change", this.handleGSChange)), this.setState({
         mode: o.E.RECORDING
       })
-    }), _(this, "recordEnd", () => {
+    }), p(this, "recordEnd", () => {
       this.cleanUp(), this.setState({
         mode: o.E.DEFAULT
       })
-    }), _(this, "toggleRecordMode", () => {
+    }), p(this, "toggleRecordMode", () => {
       this.state.mode === o.E.DEFAULT ? this.recordStart() : this.recordEnd()
-    }), _(this, "handleComboKeys", (e, t, n) => {
+    }), p(this, "handleComboKeys", (e, t, n) => {
       if (n.preventDefault(), "keydown" === n.type) {
-        let e = t.map(e => [u.zY.KEYBOARD_KEY, s()(e), u.g$.BROWSER]),
+        let e = t.map(e => [d.zY.KEYBOARD_KEY, s()(e), d.g$.BROWSER]),
           {
             keyCode: r
           } = n;
         null == e.find(e => {
           let [, t] = e;
           return r === t
-        }) && e.push([u.zY.KEYBOARD_KEY, r, u.g$.BROWSER]), this.handleComboChange(e)
+        }) && e.push([d.zY.KEYBOARD_KEY, r, d.g$.BROWSER]), this.handleComboChange(e)
       }
-    }), _(this, "handleGSChange", e => {
+    }), p(this, "handleGSChange", e => {
       if (false === this._mounted) return;
       let t = [...e.combo];
       this.handleComboChange(t)
-    }), _(this, "handleNativeChange", e => {
+    }), p(this, "handleNativeChange", e => {
       e.length > 0 && this.handleComboChange(e), this.recordEnd()
     });
     const {
@@ -103,4 +103,4 @@ class m extends Chunk64700.PureComponent {
     }
   }
 }
-let g = m
+let g = f

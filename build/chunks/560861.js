@@ -16,8 +16,8 @@ var Chunk284009 = require("./284009.js"),
 let S = (0, Chunk419954.zD)(Chunk780964.X.NOTIFICATION_HOLIDAY_SOUNDPACK, {
   useTitle: () => {
     let t = r.A.useHolidaySoundpack();
-    return null == t ? "" : d.intl.format(d.t["E/OyBr"], {
-      soundpack: d.intl.string(t.soundpackLabel)
+    return null == t ? "" : A.intl.format(A.t["E/OyBr"], {
+      soundpack: A.intl.string(t.soundpackLabel)
     })
   },
   useValue: function() {
@@ -27,7 +27,7 @@ let S = (0, Chunk419954.zD)(Chunk780964.X.NOTIFICATION_HOLIDAY_SOUNDPACK, {
   },
   setValue: function(t) {
     let e = r.A.getHolidaySoundpack();
-    l()(null != e, "predicate should fail if no soundpack is available"), (0, a.p)(t ? e : A.i.CLASSIC)
+    l()(null != e, "predicate should fail if no soundpack is available"), (0, a.p)(t ? e : d.i.CLASSIC)
   },
   usePredicate: Chunk552122.A.useIsEligible
 })

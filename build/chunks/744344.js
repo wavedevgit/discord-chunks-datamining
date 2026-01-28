@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 744344, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  r: () => d
+  r: () => A
 }), require("./228524.js");
 var Chunk311907 = require("./311907.js"),
   Chunk684013 = require("./684013.js"),
@@ -12,7 +12,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 let T = (0, Chunk790076.ze)(true);
 
-function A(t) {
+function d(t) {
   return (0, r.zD)(t.key, {
     useTitle: () => o.intl.string(t.title),
     useSubtitle: () => o.intl.string(t.description),
@@ -23,6 +23,6 @@ function A(t) {
     usePredicate: t.usePredicate
   })
 }
-let d = (0, Chunk419954.FW)(Chunk780964.X.OVERLAY_NOTIFICATIONS_LIST, {
-  buildLayout: () => T.map(A)
+let A = (0, Chunk419954.FW)(Chunk780964.X.OVERLAY_NOTIFICATIONS_LIST, {
+  buildLayout: () => T.map(d)
 })

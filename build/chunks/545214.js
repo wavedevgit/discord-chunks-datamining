@@ -2,7 +2,7 @@
 /** chunk id: 545214, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   A: () => T,
-  k: () => A
+  k: () => d
 });
 var Chunk311907 = require("./311907.js"),
   Chunk419954 = require("./419954.js"),
@@ -20,7 +20,7 @@ function T() {
     });
   return !t && e
 }
-let A = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_UNVERIFIED_USER_NOTICE, {
+let d = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_UNVERIFIED_USER_NOTICE, {
   useSearchTerms: () => [o.intl.string(o.t.m0FidJ)],
   usePredicate: T,
   Component: Chunk100817.A

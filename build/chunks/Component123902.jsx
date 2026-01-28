@@ -1,7 +1,7 @@
-/** Chunk was on 21425 **/
+/** Chunk was on 78572 **/
 /** chunk id: 123902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b,
+  A: () => _,
   V: () => g
 });
 var r, Chunk627968 = require("./627968.js"),
@@ -21,11 +21,11 @@ let y = {
   GRAY: Chunk477412.wm
 };
 
-function _(e) {
+function b(e) {
   return Math.round(e / m) * m
 }
 
-function b(e) {
+function _(e) {
   let {
     notchBackground: t,
     progress: n,
@@ -36,16 +36,16 @@ function b(e) {
     children: m
   } = e, {
     ref: g,
-    width: b
-  } = (0, u.Ay)(), A = l.useMemo(() => null != b ? _(b) : 0, [b]), h = l.useMemo(() => {
-    let e = Math.abs(_(A * (100 - Math.max(0, Math.min(100, n))) / 100) - A);
+    width: _
+  } = (0, u.Ay)(), h = l.useMemo(() => null != _ ? b(_) : 0, [_]), A = l.useMemo(() => {
+    let e = Math.abs(b(h * (100 - Math.max(0, Math.min(100, n))) / 100) - h);
     return {
       transform: "translateX(".concat(e, "px)")
     }
-  }, [n, A]), v = l.useMemo(() => ({
-    width: "".concat(A, "px"),
+  }, [n, h]), v = l.useMemo(() => ({
+    width: "".concat(h, "px"),
     background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(r, ", ").concat(a, ")")
-  }), [a, r, n, A]);
+  }), [a, r, n, h]);
   return (0, i.jsxs)("div", {
     className: f.iE,
     ref: g,
@@ -54,9 +54,9 @@ function b(e) {
       style: v,
       children: [(0, i.jsx)("div", {
         className: f.qB,
-        style: h
-      }), 0 !== A && (0, i.jsx)(d.A, {
-        width: A,
+        style: A
+      }), 0 !== h && (0, i.jsx)(d.A, {
+        width: h,
         className: s()(f.DR, y[t], p)
       })]
     }), m]

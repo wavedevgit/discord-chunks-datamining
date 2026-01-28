@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 362111, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,18 +14,18 @@ var Chunk284009 = require("./284009.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk893659 = require("./893659.js");
 
-function _(e) {
+function p(e) {
   let {
     transitionState: t,
     analyticsLocation: n,
     onClose: i,
     onAddPaymentSource: a,
-    toastContent: _,
-    initialStep: p = o.pn.PAYMENT_TYPE,
+    toastContent: p,
+    initialStep: _ = o.pn.PAYMENT_TYPE,
     overwriteSubscriptionPaymentSource: m = false
-  } = e, g = (0, c.KP)(), A = (0, c.Y)({
+  } = e, g = (0, c.KP)(), f = (0, c.Y)({
     paymentModalArgs: g,
-    initialStep: p,
+    initialStep: _,
     prependSteps: [],
     appendSteps: [],
     onReturn: () => {
@@ -40,7 +40,7 @@ function _(e) {
     }),
     analyticsLocation: n,
     hideBreadcrumbs: true,
-    toastContent: _,
+    toastContent: p,
     overwriteSubscriptionPaymentSource: m
   });
   return (0, r.jsx)(s.dWK, {
@@ -53,17 +53,17 @@ function _(e) {
       onSubmit: function(e) {
         e.preventDefault()
       },
-      children: A
+      children: f
     })
   })
 }
 
-function p(e) {
+function _(e) {
   return (0, r.jsx)(a.PaymentContextProvider, {
     activeSubscription: null,
     stepConfigs: [],
     skuIDs: [],
-    children: (0, r.jsx)(_, function(e) {
+    children: (0, r.jsx)(p, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

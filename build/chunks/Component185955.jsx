@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 185955, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -29,13 +29,13 @@ let E = (0, Chunk915089.Ld)(),
     } = e, x = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), O = (0, l.bG)([m.default], () => {
       var e;
       return (0, d.Zo)(null == (e = m.default.getCurrentUser()) ? true : e.primaryGuild).guildId
-    }), C = true !== n ? n : O, T = i.useMemo(() => t.reduce((e, t) => {
+    }), C = true !== n ? n : O, y = i.useMemo(() => t.reduce((e, t) => {
       var n;
       return (null == (n = t.profile) ? true : n.tag) != null && e.push({
         label: t.name,
         value: t.id
       }), e
-    }, []), [t]), I = i.useCallback(e => {
+    }, []), [t]), j = i.useCallback(e => {
       var t, n, i;
       if (null == e) return null;
       let l = x.get(e.value);
@@ -49,7 +49,7 @@ let E = (0, Chunk915089.Ld)(),
         guildIcon: l.icon,
         guildIconSize: 32
       })
-    }, [x]), S = i.useCallback(e => {
+    }, [x]), T = i.useCallback(e => {
       var t;
       if (null == e) return null;
       let n = x.get(e.value);
@@ -60,7 +60,7 @@ let E = (0, Chunk915089.Ld)(),
         iconSize: 32,
         animate: false
       })
-    }, [x]), j = i.useCallback(e => {
+    }, [x]), v = i.useCallback(e => {
       var t, n, i;
       if (null == e) return null;
       let l = x.get(e.value);
@@ -70,37 +70,37 @@ let E = (0, Chunk915089.Ld)(),
         guildId: l.id,
         guildTag: s,
         guildBadge: null != (t = null == (i = l.profile) ? true : i.badge) ? t : true,
-        badgeSize: A.Sl.SIZE_16,
+        badgeSize: f.Sl.SIZE_16,
         textColor: "interactive-text-default",
         textVariant: "text-sm/semibold"
       })
-    }, [x]), v = i.useCallback(e => {
+    }, [x]), S = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
-        children: I(t)
+        children: j(t)
       })
-    }, [I]), N = i.useCallback(e => {
+    }, [j]), I = i.useCallback(e => {
       null == o || o(e)
-    }, [o]), y = i.useCallback(e => e === C, [C]), P = i.useCallback(e => e, []), R = i.useCallback(() => {
+    }, [o]), N = i.useCallback(e => e === C, [C]), P = i.useCallback(e => e, []), R = i.useCallback(() => {
       null == o || o(null)
     }, [o]), D = i.useRef(null);
-    return (0, p.A)(D, f._F.GUILD_TAG), (0, r.jsxs)(_.A, {
+    return (0, _.A)(D, b._F.GUILD_TAG), (0, r.jsxs)(p.A, {
       title: h.intl.string(h.t.Pdd1nd),
       titleId: E,
       ref: D,
       children: [(0, r.jsx)(a.Text, {
-        className: b.VA,
+        className: A.VA,
         variant: "text-sm/normal",
         children: h.intl.string(h.t.mlZ6Jx)
       }), (0, r.jsx)(s.Pw, {
-        className: b.Lt,
-        optionClassName: b.S0,
-        isSelected: y,
-        options: T,
-        select: N,
-        renderLeading: S,
-        renderTrailing: j,
-        renderOptionValue: v,
+        className: A.Lt,
+        optionClassName: A.S0,
+        isSelected: N,
+        options: y,
+        select: I,
+        renderLeading: T,
+        renderTrailing: v,
+        renderOptionValue: S,
         serialize: P,
         clear: R,
         clearable: null != C,

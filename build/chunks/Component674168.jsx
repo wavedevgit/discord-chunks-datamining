@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 674168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => x
+  m: () => E
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -12,7 +12,6 @@ var Chunk311907 = require("./311907.js"),
   Chunk465794 = require("./465794.jsx"),
   Chunk212168 = require("./212168.jsx"),
   Chunk780964 = require("./780964.js"),
-  Chunk358776 = require("./358776.js"),
   Chunk840065 = require("./840065.jsx"),
   Chunk287809 = require("./287809.js"),
   Chunk927578 = require("./927578.js"),
@@ -23,60 +22,59 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk956790 = require("./956790.js");
 
-function x(e) {
+function E(e) {
   var t;
   let {
     onClose: n,
-    markAsDismissed: x
-  } = e, O = (0, i.bG)([p.default], () => p.default.getCurrentUser()), C = (t = null == O ? true : O.premiumType) === f.PremiumTypes.TIER_2 ? b.intl.string(b.t.jqO5Qn) : null == t ? b.intl.string(b.t.f2qjw5) : b.intl.string(b.t.SblICW), T = m.Ay.canUseCustomCallSounds(O);
+    markAsDismissed: E
+  } = e, x = (0, i.bG)([p.default], () => p.default.getCurrentUser()), O = (t = null == x ? true : x.premiumType) === f.PremiumTypes.TIER_2 ? h.intl.string(h.t.jqO5Qn) : null == t ? h.intl.string(h.t.f2qjw5) : h.intl.string(h.t.SblICW), C = _.Ay.canUseCustomCallSounds(x);
   return (0, r.jsxs)(c.A, {
     isShown: true,
     type: c.i.PREMIUM,
-    className: E.ne,
-    backgroundClassName: E.u4,
-    children: [null != x ? (0, r.jsx)(a.DUT, {
-      className: E.VN,
-      onClick: () => null == x ? true : x(A.i.DISMISS),
-      "aria-label": b.intl.string(b.t.cpT0Cq),
+    className: A.ne,
+    backgroundClassName: A.u4,
+    children: [null != E ? (0, r.jsx)(a.DUT, {
+      className: A.VN,
+      onClick: () => null == E ? true : E(g.i.DISMISS),
+      "aria-label": h.intl.string(h.t.cpT0Cq),
       children: (0, r.jsx)(a.PGe, {
         size: "xs",
         color: "currentColor",
-        className: E.ut
+        className: A.ut
       })
     }) : null, (0, r.jsxs)("div", {
-      className: E.ex,
+      className: A.ex,
       children: [(0, r.jsx)(a.tvc, {
         size: "sm",
         color: "currentColor",
-        className: E.ax
+        className: A.ax
       }), (0, r.jsx)(a.Heading, {
         variant: "heading-sm/bold",
-        children: b.intl.string(b.t.dTbAxx)
+        children: h.intl.string(h.t.dTbAxx)
       })]
     }), (0, r.jsx)(l.E, {
       variant: "text-sm/normal",
-      children: C
-    }), T ? (0, r.jsx)(a.Button, {
+      children: O
+    }), C ? (0, r.jsx)(a.Button, {
       onClick: function() {
-        let e = (0, u.qz)("CustomCallSoundUpsell") ? d.X.SOUNDBOARD_CATEGORY : d.X.VOICE_AND_VIDEO_PANEL;
-        (0, _.openUserSettings)(e, {
-          section: g.nc_.VOICE,
-          subsection: h.MJ
-        }), null == n || n(), null == x || x(A.i.PRIMARY)
+        (0, u.openUserSettings)(d.X.SOUNDBOARD_CATEGORY, {
+          section: m.nc_.VOICE,
+          subsection: b.MJ
+        }), null == n || n(), null == E || E(g.i.PRIMARY)
       },
-      text: b.intl.string(b.t.RzWDqY),
+      text: h.intl.string(h.t.RzWDqY),
       fullWidth: true
     }) : (0, r.jsx)(o.A, {
       textOptions: {
-        textOverride: b.intl.string(b.t.pj0XBN)
+        textOverride: h.intl.string(h.t.pj0XBN)
       },
       subscriptionTier: f.pe.TIER_2,
       premiumModalAnalyticsLocation: {
-        section: g.JJy.SOUNDBOARD_SOUND_PICKER,
-        object: g.ZSU.BUTTON_CTA
+        section: m.JJy.SOUNDBOARD_SOUND_PICKER,
+        object: m.ZSU.BUTTON_CTA
       },
       color: s.$n.Colors.GREEN,
-      onSubscribeModalClose: () => null == x ? true : x(A.i.PRIMARY)
+      onSubscribeModalClose: () => null == E ? true : E(g.i.PRIMARY)
     })]
   })
 }

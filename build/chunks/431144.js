@@ -2,16 +2,14 @@
 /** chunk id: 431144, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  HO: () => l,
-  Zk: () => a,
-  oh: () => s,
-  px: () => o
+  HO: () => s,
+  Zk: () => l,
+  px: () => a
 });
-var r, Chunk985018 = require("./985018.jsx");
-let s = "emails";
-var l = ((r = {}).COMMUNICATION = "communication", r.SOCIAL = "social", r.TIPS = "tips", r.RECOMMENDATIONS_AND_EVENTS = "recommendations_and_events", r.UPDATES_AND_ANNOUNCEMENTS = "updates_and_announcements", r.FAMILY_CENTER_DIGEST = "family_center_digest", r);
-let a = ["tips", "recommendations_and_events", "updates_and_announcements"],
-  o = [{
+var r, Chunk985018 = require("./985018.jsx"),
+  s = ((r = {}).COMMUNICATION = "communication", r.SOCIAL = "social", r.TIPS = "tips", r.RECOMMENDATIONS_AND_EVENTS = "recommendations_and_events", r.UPDATES_AND_ANNOUNCEMENTS = "updates_and_announcements", r.FAMILY_CENTER_DIGEST = "family_center_digest", r);
+let l = ["tips", "recommendations_and_events", "updates_and_announcements"],
+  a = [{
     category: "communication",
     label: () => i.intl.string(i.t["B75+xe"]),
     subLabel: () => i.intl.string(i.t.ZHg9Tc)

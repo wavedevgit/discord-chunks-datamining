@@ -29,5 +29,5 @@ let I = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
       notice: a.A
     } : null
   },
-  buildLayout: () => [d.L, _.A, g.k, A.v, o.c, T.g, S.T, E.C]
+  buildLayout: () => [A.L, g.A, _.k, d.v, o.c, T.g, S.T, E.C]
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 337692, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => a
@@ -14,13 +14,13 @@ function a(e) {
     autocompleterResultTypes: n,
     autocompleterOptions: a,
     autocompleterBeforeCreateSearchContext: o
-  } = e, [c, d] = r.useState(""), [u, _] = r.useState(s), p = r.useCallback((e, t) => {
-    "" === (t = t.trim()).trim() ? _(s) : _(e)
+  } = e, [c, d] = r.useState(""), [u, p] = r.useState(s), _ = r.useCallback((e, t) => {
+    "" === (t = t.trim()).trim() ? p(s) : p(e)
   }, []);
   r.useEffect(() => i.A.addRouteChangeListener(() => {
     d("")
   }), []);
-  let [m] = r.useState(() => new l.A(p, n, true, a));
+  let [m] = r.useState(() => new l.A(_, n, true, a));
   return r.useEffect(() => {
     t ? (null == o || o(m), m.createSearchContext()) : (m.clean(), d(""))
   }, [t, m, o]), {

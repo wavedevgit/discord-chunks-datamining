@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 55691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => u
@@ -14,16 +14,16 @@ var Chunk627968 = require("./627968.js"),
 let u = e => {
   let {
     percentage: t
-  } = e, n = new Date, u = new Date(n.getFullYear(), n.getMonth() + 1, 0).getDate(), _ = (0, l.bG)([s.default], () => s.default.getCurrentUser()), p = null == _ ? true : _.isFractionalPremiumWithNoStandardSub();
+  } = e, n = new Date, u = new Date(n.getFullYear(), n.getMonth() + 1, 0).getDate(), p = (0, l.bG)([s.default], () => s.default.getCurrentUser()), _ = null == p ? true : p.isFractionalPremiumWithNoStandardSub();
   return (0, r.jsxs)("div", {
     className: d.k,
     children: [(0, r.jsx)(i.EYj, {
       variant: "text-sm/normal",
       color: "text-strong",
-      children: p ? c.intl.string(c.t.E1ONHQ) : c.intl.format(c.t["43kZKL"], {
+      children: _ ? c.intl.string(c.t.E1ONHQ) : c.intl.format(c.t["43kZKL"], {
         days: u - n.getDate()
       })
-    }), false === p && (0, r.jsx)(o.PR, {
+    }), false === _ && (0, r.jsx)(o.PR, {
       percentage: t
     }), (0, r.jsx)("div", {
       className: d.Z,

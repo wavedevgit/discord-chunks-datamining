@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 508971, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => _
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,7 +15,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk906688 = require("./906688.jsx"),
   Chunk869295 = require("./869295.js");
 
-function p(e) {
+function _(e) {
   let {
     achievementId: t,
     dateUnlocked: n
@@ -23,44 +23,44 @@ function p(e) {
   if (null == i) return null;
   let s = null != n,
     {
-      name: p,
+      name: _,
       description: m,
       hideDescriptionUntilUnlock: g,
-      onAction: A
+      onAction: f
     } = i,
-    f = g && !s,
+    b = g && !s,
     h = s ? "text-strong" : "text-muted",
-    b = s ? "text-default" : "text-muted",
+    A = s ? "text-default" : "text-muted",
     E = a()(n),
-    x = null != A && s,
+    x = null != f && s,
     O = x ? o.DUT : "div";
   return (0, r.jsxs)(O, {
-    className: l()(_.kL, x && _.b),
+    className: l()(p.kL, x && p.b),
     onClick: () => {
-      x && A()
+      x && f()
     },
     children: [(0, r.jsx)("div", {
-      className: _.zc,
+      className: p.zc,
       children: (0, r.jsx)(u.A, {
         achievementId: t,
         size: u.A.Sizes.SIZE_40,
         unlocked: s
       })
     }), (0, r.jsxs)("div", {
-      className: _.VW,
+      className: p.VW,
       children: [null != n && (0, r.jsx)(o.Text, {
         variant: "text-xxs/semibold",
         color: "text-muted",
-        className: _.YR,
+        className: p.YR,
         children: (0, c.mk)(E)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: h,
-        children: p()
+        children: _()
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
-        color: b,
-        children: f ? "?????" : m()
+        color: A,
+        children: b ? "?????" : m()
       })]
     })]
   })

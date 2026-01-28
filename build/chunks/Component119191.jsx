@@ -1,7 +1,7 @@
-/** Chunk was on 21425 **/
+/** Chunk was on 78572 **/
 /** chunk id: 119191, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  bi: () => _,
+  bi: () => b,
   sI: () => y
 });
 var Chunk627968 = require("./627968.js");
@@ -25,7 +25,7 @@ function y(e, t, n) {
     useFlexboxLayout: l,
     keybindClassName: a
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
-  return (0, r.jsx)(b, {
+  return (0, r.jsx)(_, {
     keybind: e,
     message: t,
     messageWithoutKeybind: n,
@@ -34,7 +34,7 @@ function y(e, t, n) {
     keybindClassName: a
   })
 }
-let _ = (e, t) => (0, r.jsx)(r.Fragment, {
+let b = (e, t) => (0, r.jsx)(r.Fragment, {
   children: m.intl.format(t, {
     keybind: e,
     keybindHook: (t, n) => (0, r.jsx)(l.e7I, {
@@ -45,21 +45,21 @@ let _ = (e, t) => (0, r.jsx)(r.Fragment, {
   })
 });
 
-function b(e) {
+function _(e) {
   let {
     keybind: t,
     message: n,
     messageWithoutKeybind: y,
-    highlightAdminWarningIfElevated: _ = false,
-    useFlexboxLayout: b = false,
-    keybindClassName: A
-  } = e, h = (0, d.F)(), v = (0, i.bG)([a.Ay], () => {
+    highlightAdminWarningIfElevated: b = false,
+    useFlexboxLayout: _ = false,
+    keybindClassName: h
+  } = e, A = (0, d.F)(), v = (0, i.bG)([a.Ay], () => {
     let e = a.Ay.getVisibleGame();
     return null != e && e.elevated && a.Ay.canShowAdminWarning
   }), O = (0, o.NP)();
   return v ? (0, r.jsx)(l.Text, {
     variant: "text-xxs/semibold",
-    color: _ ? "text-feedback-warning" : "text-muted",
+    color: b ? "text-feedback-warning" : "text-muted",
     children: O ? m.intl.format(m.t.MVS9pV, {
       onSettingsClick: e => {
         e.stopPropagation(), (0, s.A)(true, true), (0, u.openUserSettings)(c.X.OVERLAY_PANEL, {
@@ -67,13 +67,13 @@ function b(e) {
         })
       }
     }) : m.intl.string(m.t.PIeSHF)
-  }) : h ? b ? (0, r.jsx)("div", {
+  }) : A ? _ ? (0, r.jsx)("div", {
     className: g.FH,
     children: m.intl.format(n, {
       keybind: t,
       keybindHook: e => (0, r.jsx)(p.G, {
         keybind: t,
-        className: A
+        className: h
       }, t.join("+"))
     })
   }) : (0, r.jsx)(r.Fragment, {

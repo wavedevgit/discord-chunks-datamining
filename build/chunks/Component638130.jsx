@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 638130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => g
@@ -20,12 +20,12 @@ var Chunk444802 = require("./444802.js"),
 function g() {
   let e = (0, i.WX)(),
     t = [{
-      title: p.intl.string(p.t.GYpoAq),
+      title: _.intl.string(_.t.GYpoAq),
       component: a.Z,
       orientation: "vertical",
       setting: u.H.SEXUALLY_EXPLICIT_MEDIA_REDACTION
     }, {
-      title: p.intl.string(p.t["16/3Bi"]),
+      title: _.intl.string(_.t["16/3Bi"]),
       component: o.q,
       orientation: "vertical",
       setting: u.H.GORE_MEDIA_REDACTION
@@ -34,13 +34,13 @@ function g() {
     setting: u.H.SENSITIVE_CONTENT_FILTERS,
     scrollPosition: d.d1.EXPLICIT_MEDIA_REDACTION_V2,
     children: [(0, r.jsx)(c._, {
-      header: p.intl.string(p.t["Hj/But"]),
-      description: p.intl.format(p.t.dliU4j, {
+      header: _.intl.string(_.t["Hj/But"]),
+      description: _.intl.format(_.t.dliU4j, {
         learnMoreLink: l.A.getArticleURL(e)
       })
     }), (0, r.jsx)(s.A, {
       parentSetting: u.H.CONTENT_SOCIAL,
-      settingsSection: _.nc_.CONTENT_AND_SOCIAL,
+      settingsSection: p.nc_.CONTENT_AND_SOCIAL,
       tabs: t,
       orientation: "vertical",
       tabsClassName: m.v

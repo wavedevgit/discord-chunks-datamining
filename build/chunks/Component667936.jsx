@@ -1,7 +1,7 @@
-/** Chunk was on 21425 **/
+/** Chunk was on 78572 **/
 /** chunk id: 667936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => S
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -29,15 +29,15 @@ function v(e) {
     guildId: n,
     member: i,
     className: a
-  } = e, c = null != i.member ? (0, _.xT)(i.member) : null;
+  } = e, c = null != i.member ? (0, b.xT)(i.member) : null;
   return (0, r.jsx)(s.m, {
     __unsupportedReactNodeAsText: i.nick,
     position: "bottom",
     children: (0, r.jsx)(o.euF, {
       src: null != c ? c : i.user.getAvatarURL(n, 16),
       size: o._3J.SIZE_16,
-      className: l()(a, h.wE),
-      "aria-label": null != (t = i.nick) ? t : b.Ay.getName(i.user)
+      className: l()(a, A.wE),
+      "aria-label": null != (t = i.nick) ? t : _.Ay.getName(i.user)
     })
   })
 }
@@ -48,7 +48,7 @@ function O(e) {
     guildId: n
   } = e;
   return (0, r.jsx)(f.A, {
-    className: h.S3,
+    className: A.S3,
     guildId: n,
     users: t,
     max: 6,
@@ -58,36 +58,36 @@ function O(e) {
       className: t
     }, i),
     renderMoreUsers: (e, t, n) => (0, r.jsx)("div", {
-      className: l()(h.TO, t),
+      className: l()(A.TO, t),
       children: e
     }, n)
   })
 }
-let j = e => {
+let S = e => {
   let {
     channel: t,
     presenceActivity: n,
     members: i,
     embeddedApp: l,
     onAction: s
-  } = e, o = null != l, f = o ? Array.from(l.embeddedActivity.userIds) : [], _ = (0, a.bG)([y.default, g.default], () => {
+  } = e, o = null != l, f = o ? Array.from(l.embeddedActivity.userIds) : [], b = (0, a.bG)([y.default, g.default], () => {
     if (o) return y.default.getUser(f[0]);
     if (null != i) {
       var e, t;
       return i.length <= 0 ? null : null != (e = null == (t = i.find(e => e.user.id !== g.default.getId())) ? true : t.user) ? e : i[0].user
     }
   });
-  if (null == _) return null;
-  let b = o || (0, u.A)(n),
+  if (null == b) return null;
+  let _ = o || (0, u.A)(n),
     v = (0, m.gV)(t.type);
   return (0, r.jsxs)("div", {
-    className: h.Eb,
+    className: A.Eb,
     children: [(0, r.jsx)("div", {
-      className: h.Il,
-      children: b ? (0, r.jsx)(A.A, {
+      className: A.Il,
+      children: _ ? (0, r.jsx)(h.A, {
         activity: n,
         embeddedApp: l,
-        user: _,
+        user: b,
         channel: t,
         sortedVoiceStates: i,
         onOpenSpotifyTrack: v ? p.Mp : true,
@@ -96,7 +96,7 @@ let j = e => {
       }) : (0, r.jsx)(c.A, {
         type: c.M.VOICE_CHANNEL,
         activity: n,
-        user: _,
+        user: b,
         guildId: t.getGuildId(),
         channelId: t.id,
         renderHeaderAccessory: null != i ? () => (0, r.jsx)(O, {
@@ -105,12 +105,12 @@ let j = e => {
         }) : true
       })
     }), (0, r.jsx)("div", {
-      className: h.M4,
+      className: A.M4,
       children: (0, r.jsx)(d.A, {
         type: c.M.VOICE_CHANNEL,
         activity: n,
         embeddedActivity: null == l ? true : l.embeddedActivity,
-        user: _,
+        user: b,
         guildId: t.getGuildId(),
         channelId: t.id,
         buttonVariant: "primary",

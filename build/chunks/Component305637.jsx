@@ -1,7 +1,7 @@
-/** Chunk was on 21425 **/
+/** Chunk was on 78572 **/
 /** chunk id: 305637, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,17 +20,17 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function _(e) {
   let {
     isCurrentUser: t,
     applicationStream: n,
-    onAction: b
+    onAction: _
   } = e, {
-    defaultWatchMultipleStreams: A
+    defaultWatchMultipleStreams: h
   } = (0, u.W)({
     location: "WatchStreamButton"
   }), {
-    activeStream: h,
+    activeStream: A,
     watchingOtherStream: v
   } = (0, i.cf)([f.A], () => ({
     activeStream: f.A.getActiveStreamForApplicationStream(n),
@@ -40,31 +40,31 @@ function b(e) {
       } = e;
       return t !== n.ownerId
     }).length > 0
-  })), O = (0, i.bG)([m.A], () => m.A.getChannel(null == n ? true : n.channelId)), [j, S] = (0, d.zP)(O), I = (0, p.aL)(), x = null != h && null != n && h.state !== y.XYD.ENDED && h.ownerId === n.ownerId, E = e => {
-    null != n && (null == b || b(), o.default.selectVoiceChannel(n.channelId), x || (0, c.Nl)(n, {
+  })), O = (0, i.bG)([m.A], () => m.A.getChannel(null == n ? true : n.channelId)), [S, j] = (0, d.zP)(O), x = (0, p.aL)(), I = null != A && null != n && A.state !== y.XYD.ENDED && A.ownerId === n.ownerId, T = e => {
+    null != n && (null == _ || _(), o.default.selectVoiceChannel(n.channelId), I || (0, c.Nl)(n, {
       forceMultiple: e
-    }), I.dispatch(y.jej.POPOUT_CLOSE), g._.dispatch(y.jej.MODAL_CLOSE), s.A.popAll())
+    }), x.dispatch(y.jej.POPOUT_CLOSE), g._.dispatch(y.jej.MODAL_CLOSE), s.A.popAll())
   };
   if (null == n) return null;
-  let P = (0, d.CT)(S);
-  return t ? P = _.intl.string(_.t.XvBdeT) : x && (P = _.intl.string(_.t["JH1SJ+"])), (0, r.jsxs)(r.Fragment, {
+  let P = (0, d.CT)(j);
+  return t ? P = b.intl.string(b.t.XvBdeT) : I && (P = b.intl.string(b.t["JH1SJ+"])), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Button, {
       size: "sm",
-      variant: x ? "secondary" : "active",
+      variant: I ? "secondary" : "active",
       icon: a.Fzq,
       text: P,
-      disabled: t || x || !j,
-      onClick: () => E(false),
+      disabled: t || I || !S,
+      onClick: () => T(false),
       fullWidth: true
-    }), !v || x || A ? null : (0, r.jsx)(l.m, {
-      text: _.intl.string(_.t.wCrzut),
+    }), !v || I || h ? null : (0, r.jsx)(l.m, {
+      text: b.intl.string(b.t.wCrzut),
       children: (0, r.jsx)(a.K0, {
         variant: "secondary",
         size: "sm",
         icon: a.vAm,
-        "aria-label": _.intl.string(_.t.wCrzut),
+        "aria-label": b.intl.string(b.t.wCrzut),
         onClick: () => {
-          E(true)
+          T(true)
         }
       })
     })]

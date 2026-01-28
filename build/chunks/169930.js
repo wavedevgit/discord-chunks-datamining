@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 169930, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  _: () => d
+  _: () => A
 });
 var Chunk793574 = require("./793574.js"),
   Chunk419954 = require("./419954.js"),
@@ -12,9 +12,9 @@ var Chunk793574 = require("./793574.js"),
   Chunk780964 = require("./780964.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.sN)(Chunk780964.X.SOUNDBOARD_VOLUME_SETTING, {
-  useTitle: () => A.intl.string(A.t.kbFsAD),
-  useSubtitle: () => A.intl.format(A.t.BPbGq7, {
+let A = (0, Chunk419954.sN)(Chunk780964.X.SOUNDBOARD_VOLUME_SETTING, {
+  useTitle: () => d.intl.string(d.t.kbFsAD),
+  useSubtitle: () => d.intl.format(d.t.BPbGq7, {
     helpCenterArticle: u.A.getArticleURL(T.MVz.SOUNDBOARD)
   }),
   setValue: function(t) {

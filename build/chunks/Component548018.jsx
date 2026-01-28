@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 548018, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  c: () => _,
+  c: () => g,
   f: () => E
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
@@ -22,15 +22,15 @@ function E() {
     return null != t && t.mfaEnabled
   })
 }
-let _ = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
+let g = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
   useSearchTerms: function() {
     let t = (0, l.bG)([r.default], () => r.default.hasTOTPEnabled()),
       e = [S.intl.string(S.t.m0FidJ), S.intl.string(S.t.xZEzbu)];
     return t ? e.push(S.intl.string(S.t["D+aE7g"])) : e.push(S.intl.string(S.t.cDgKte)), e
   },
   usePredicate: function() {
-    let t = (0, A.b)(),
-      e = (0, d.A)(),
+    let t = (0, d.b)(),
+      e = (0, A.A)(),
       i = E();
     return !t && !e && i
   },

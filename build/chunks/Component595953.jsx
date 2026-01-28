@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 595953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -22,13 +22,13 @@ var Chunk627968 = require("./627968.js"),
 function h(e) {
   let {
     onSelect: t
-  } = e, [n, s] = i.useState(false), o = (0, l.bG)([c.default], () => c.default.getCurrentUser()), u = d.Ay.canUseCustomCallSounds(o), _ = i.useRef(null);
+  } = e, [n, s] = i.useState(false), o = (0, l.bG)([c.default], () => c.default.getCurrentUser()), u = d.Ay.canUseCustomCallSounds(o), p = i.useRef(null);
 
   function h(e) {
     u && (s(false), null == t || t(e))
   }
   return (0, r.jsx)(a.YNO, {
-    targetElementRef: _,
+    targetElementRef: p,
     shouldShow: n,
     position: "left",
     onRequestClose: () => s(false),
@@ -44,7 +44,7 @@ function h(e) {
           channel: null,
           onClose: t,
           onSelect: h,
-          gridNotice: u ? null : (0, r.jsx)(p.m, {}),
+          gridNotice: u ? null : (0, r.jsx)(_.m, {}),
           analyticsSource: "call sounds edit setting"
         })
       })
@@ -69,15 +69,15 @@ function h(e) {
         }
         return e
       }({}, e), i = i = {
-        ref: _,
+        ref: p,
         onClick: () => {
           s(!n)
         },
-        text: A.intl.string(A.t.uOe0Az),
+        text: f.intl.string(f.t.uOe0Az),
         children: (0, r.jsx)(a.R2l, {
           size: "md",
           color: "currentColor",
-          className: f.Wo
+          className: b.Wo
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -93,12 +93,12 @@ function h(e) {
   })
 }
 
-function b(e) {
+function A(e) {
   let {
     sound: t
   } = e, {
     previewSound: n
-  } = (0, _.A)(t, null), i = 0 === (0, u.wH)() ? A.intl.string(A.t.OASXjt) : A.intl.formatToPlainString(A.t["/8fYO5"], {
+  } = (0, p.A)(t, null), i = 0 === (0, u.wH)() ? f.intl.string(f.t.OASXjt) : f.intl.formatToPlainString(f.t["/8fYO5"], {
     emojiName: t.emojiName,
     soundName: t.name
   });
@@ -108,7 +108,7 @@ function b(e) {
     children: (0, r.jsx)(a.HKD, {
       size: "md",
       color: "currentColor",
-      className: f.wg
+      className: b.wg
     })
   })
 }
@@ -120,18 +120,18 @@ function E(e) {
     onSelect: i
   } = e, l = null != t, c = null == t ? true : t.emojiId, d = null == t ? true : t.emojiName, u = l && (null != d || null != c);
   return (0, r.jsxs)("div", {
-    className: f.D6,
+    className: b.D6,
     children: [(0, r.jsxs)("div", {
-      className: f.kL,
+      className: b.kL,
       children: [u && (0, r.jsx)(o.A, {
         emojiId: c,
         emojiName: d,
-        className: f.Zg
+        className: b.Zg
       }), (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-strong",
-        className: f.dj,
-        children: null == t ? A.intl.string(A.t.PoWNfe) : n ? A.intl.format(A.t.B6HU6O, {
+        className: b.dj,
+        children: null == t ? f.intl.string(f.t.PoWNfe) : n ? f.intl.format(f.t.B6HU6O, {
           soundName: t.name,
           subtextHook: e => (0, r.jsx)(a.Text, {
             variant: "text-xs/medium",
@@ -140,24 +140,24 @@ function E(e) {
             children: e
           })
         }) : t.name
-      }), l ? (0, r.jsx)(b, {
+      }), l ? (0, r.jsx)(A, {
         sound: t
       }) : (0, r.jsx)(a.HKD, {
         size: "md",
         color: "currentColor",
-        className: f.Gk
+        className: b.Gk
       })]
     }), (0, r.jsxs)("div", {
-      className: f.kL,
+      className: b.kL,
       children: [(0, r.jsx)(h, {
         onSelect: i
       }), l && !n && (0, r.jsx)(g.dT, {
         onClick: () => i(null),
-        text: A.intl.string(A.t.jmtcGA),
+        text: f.intl.string(f.t.jmtcGA),
         children: (0, r.jsx)(a.ucK, {
           size: "md",
           color: s.A.unsafe_rawColors.RED_400.css,
-          className: f.Wo
+          className: b.Wo
         })
       })]
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 530060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -35,11 +35,11 @@ let g = e => {
         style: {
           textAlign: "start"
         },
-        children: p.intl.string(_.default.EdGvBM)
+        children: _.intl.string(p.default.EdGvBM)
       }), (0, r.jsx)(a.EYj, {
         variant: "text-lg/normal",
         className: l()(m.VA, m.dO),
-        children: p.intl.string(_.default["2KoHRF"])
+        children: _.intl.string(p.default["2KoHRF"])
       }), (0, r.jsx)(u.A, {})]
     })
   }) : null

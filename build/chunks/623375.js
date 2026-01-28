@@ -15,10 +15,10 @@ let T = () => {
     e = (0, r.lV)(t => t.install),
     i = (0, r.lV)(t => t.installationStatus),
     T = (0, r.lV)(t => t.setDoInstall),
-    A = (0, r.lV)(t => t.setInstallationStatus);
+    d = (0, r.lV)(t => t.setInstallationStatus);
   return (0, n.useEffect)(() => {
-    t && i === s.Lk.NOT_INSTALLED && (T(false), A(s.Lk.INSTALLING), e().catch(t => {
-      A(s.Lk.ERROR), a.A.captureException(t, {
+    t && i === s.Lk.NOT_INSTALLED && (T(false), d(s.Lk.INSTALLING), e().catch(t => {
+      d(s.Lk.ERROR), a.A.captureException(t, {
         tags: {
           source: l.q.WARP_INSTALL_HELPER
         }
@@ -27,5 +27,5 @@ let T = () => {
         error_source: l.q.WARP_INSTALL_HELPER
       })
     }))
-  }, [t, T, e, i, A]), null
+  }, [t, T, e, i, d]), null
 }

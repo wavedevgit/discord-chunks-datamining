@@ -16,31 +16,31 @@ var Chunk934551 = require("./934551.js"),
   Chunk570874 = require("./570874.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let g = (0, Chunk419954.t_)(Chunk780964.X.CONTENT_AND_SOCIAL_PANEL, {
-    useTitle: () => _.intl.string(_.t["+o1pDZ"]),
+let _ = (0, Chunk419954.t_)(Chunk780964.X.CONTENT_AND_SOCIAL_PANEL, {
+    useTitle: () => g.intl.string(g.t["+o1pDZ"]),
     StronglyDiscouragedCustomComponent: Chunk130066.A,
     usePredicate: () => !(0, u.dk)("ContentAndSocialPanel"),
     buildLayout: () => []
   }),
   c = (0, Chunk419954.dT)(Chunk780964.X.CONTENT_AND_SOCIAL_MAIN_TAB, {
-    getTitle: () => _.intl.string(_.t["/7xJCF"]),
-    buildLayout: () => [T.e, S.q, A.N, d.Y]
+    getTitle: () => g.intl.string(g.t["/7xJCF"]),
+    buildLayout: () => [T.e, S.q, d.N, A.Y]
   }),
   I = (0, Chunk419954.dT)(Chunk780964.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB, {
     initialize: () => {
       l.A.fetch()
     },
-    getTitle: () => _.intl.string(_.t.YpCiMt),
+    getTitle: () => g.intl.string(g.t.YpCiMt),
     buildLayout: () => [o.j]
   }),
   O = (0, Chunk419954.t_)(Chunk780964.X.CONTENT_AND_SOCIAL_PANEL, {
-    useTitle: () => _.intl.string(_.t["+o1pDZ"]),
+    useTitle: () => g.intl.string(g.t["+o1pDZ"]),
     usePredicate: () => (0, u.dk)("ContentAndSocialPanel"),
     buildLayout: () => [c, I]
   }),
   N = (0, Chunk419954.i4)(Chunk780964.X.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
-    useTitle: () => _.intl.string(_.t["+o1pDZ"]),
+    useTitle: () => g.intl.string(g.t["+o1pDZ"]),
     getLegacySearchKey: () => (0, u.WJ)("ContentAndSocialPanel") ? true : E.H.CONTENT_SOCIAL,
     icon: Chunk934551.ShieldUserIcon,
-    buildLayout: () => (0, u.WJ)("ContentAndSocialPanel") ? [O] : [g]
+    buildLayout: () => (0, u.WJ)("ContentAndSocialPanel") ? [O] : [_]
   })
