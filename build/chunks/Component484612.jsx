@@ -47,8 +47,8 @@ function D(e) {
   let D = (0, f.C$)(t, "GuildPowerupsOverview");
   (0, _.c2)(t);
   let U = (0, s.bG)([A.A], () => A.A.getStateForGuild(t)),
-    V = (0, x.A)(t),
-    M = l.useRef(false),
+    M = (0, x.A)(t),
+    V = l.useRef(false),
     {
       shouldShow: B,
       modalConfig: W
@@ -58,15 +58,15 @@ function D(e) {
   B && F && K.push(a.M.VANITY_URL_POWERUP_ROLLBACK_MODAL);
   let [J, Y] = (0, c.kn)(K), z = (0, b.MO)(t, D), X = z.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), H = (0, C.g)(X, t);
   return (l.useEffect(() => {
-    if (null != i && !M.current)
+    if (null != i && !V.current)
       for (let e of z)
         for (let n of e.listings) {
           if (("singleLevel" === n.type || "singlePerk" === n.type) && n.powerup.skuId === i) {
-            (0, O.A)(t, n.powerup), M.current = true;
+            (0, O.A)(t, n.powerup), V.current = true;
             return
           }
           if ("multiPerk" === n.type && (n.group === i || n.powerups.some(e => e.skuId === i))) {
-            M.current = true;
+            V.current = true;
             let e = H[n.group];
             if (null == e) return;
             e.openModal(n.powerups, {
@@ -74,7 +74,7 @@ function D(e) {
                 let e = new URL(window.location.href);
                 e.searchParams.delete(P.G0);
                 let t = e.pathname + e.search + e.hash;
-                (0, m.bG)(t), M.current = false
+                (0, m.bG)(t), V.current = false
               }
             });
             return
@@ -83,7 +83,7 @@ function D(e) {
             (0, g.A)({
               guildId: t,
               analyticsLocation: d.A.GUILD_POWERUPS_OVERVIEW
-            }), M.current = true;
+            }), V.current = true;
             return
           }
         }
@@ -205,7 +205,7 @@ function D(e) {
         })
       }), (0, r.jsxs)("div", {
         className: R.so,
-        children: [V ? (0, r.jsx)(y.A, {
+        children: [M ? (0, r.jsx)(y.A, {
           guildId: t
         }) : (0, r.jsx)(I.A, {
           guildId: t

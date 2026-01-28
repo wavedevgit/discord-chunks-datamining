@@ -81,12 +81,12 @@ function x(e) {
     costDecorator: g,
     staticImageUrl: E,
     animatedImageUrl: O,
-    powerup: I,
-    isNew: N,
-    onClose: R
+    powerup: N,
+    isNew: R,
+    onClose: D
   } = e, {
-    analyticsLocations: D
-  } = (0, p.Ay)(), x = n !== S.b_.INACTIVE, M = (0, m.A)(t), j = (0, c.bG)([d.A], () => d.A.useReducedMotion), [k, U] = i.useState(false), [G, F] = i.useState(false), V = G, B = G && null != O && "" !== O && !j ? O : E, H = i.useCallback(() => {
+    analyticsLocations: x
+  } = (0, p.Ay)(), M = n !== S.b_.INACTIVE, j = (0, m.A)(t), k = (0, c.bG)([d.A], () => d.A.useReducedMotion), U = i.useRef(null), [G, F] = i.useState(false), [V, B] = i.useState(false), H = V, Y = V && null != O && "" !== O && !k ? O : E, W = i.useCallback(() => {
     let e = b.A.getGuild(t);
     null != e && (0, v.g)({
       analyticsLocation: {
@@ -94,50 +94,66 @@ function x(e) {
         section: A.JJy.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
-      analyticsLocations: D,
+      analyticsLocations: x,
       guild: e
     })
-  }, [t, D]), Y = i.useCallback(() => {
-    R(), (0, y.A)(t, f.A.GUILD_POWERUPS_MARKETING, I.skuId)
-  }, [t, I.skuId, R]), W = {
+  }, [t, x]), K = i.useCallback(() => {
+    D(), (0, y.A)(t, f.A.GUILD_POWERUPS_MARKETING, N.skuId)
+  }, [t, N.skuId, D]), z = {
     tension: 400,
     friction: 30
-  }, K = (0, u.zhh)({
-    scale: V ? .85 : 1,
-    y: V ? false : 0,
-    config: W
-  }), z = (0, u.zhh)({
-    y: V ? false : 0,
-    config: W
-  }), q = (0, u.zhh)({
-    opacity: +!!V,
-    transform: V ? "translateY(0)" : "translateY(16px)",
-    config: W
-  }), Z = i.useCallback(e => {
-    e && U(true)
-  }, []), Q = (0, l.K)(Z);
+  }, q = (0, u.zhh)({
+    scale: H ? .85 : 1,
+    y: H ? false : 0,
+    config: z
+  }), Z = (0, u.zhh)({
+    scale: H ? .7 : 1,
+    y: H ? false : 0,
+    config: z
+  }), Q = (0, u.zhh)({
+    y: H ? false : 0,
+    config: z
+  }), X = (0, u.zhh)({
+    opacity: +!!H,
+    transform: H ? "translateY(0)" : "translateY(16px)",
+    config: z
+  }), J = i.useCallback(e => {
+    e && F(true)
+  }, []), $ = (0, l.K)(J), ee = N.skuId === I.W5;
   return (0, r.jsxs)("div", {
     className: o()(w.Nr, {
-      [w.fM]: k
+      [w.fM]: G
     }),
-    onMouseEnter: () => F(true),
-    onMouseLeave: () => F(false),
+    onMouseEnter: () => B(true),
+    onMouseLeave: () => B(false),
     children: [(0, r.jsx)("div", {
       className: w.sL,
-      ref: Q
+      ref: $
     }), (0, r.jsx)("div", {
       className: w.kQ,
-      children: (0, r.jsx)(s.animated.img, {
+      children: ee ? (0, r.jsx)(s.animated.div, {
         className: w.bm,
-        src: B,
+        style: {
+          transform: (0, s.to)([Z.scale, Z.y], (e, t) => "scale(".concat(e, ") translateY(").concat(t, "px)"))
+        },
+        children: (0, r.jsx)(u.E_w, {
+          withReducedMotion: "halt",
+          eventTargetRef: U,
+          fit: "contain",
+          className: w.Sq,
+          stateMachine: "SM_Main_Int"
+        })
+      }) : (0, r.jsx)(s.animated.img, {
+        className: w.bm,
+        src: Y,
         alt: "",
         style: {
-          transform: (0, s.to)([K.scale, K.y], (e, t) => "scale(".concat(e, ") translateY(").concat(t, "px)"))
+          transform: (0, s.to)([q.scale, q.y], (e, t) => "scale(".concat(e, ") translateY(").concat(t, "px)"))
         }
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: L(P({}, z), {
-        transform: z.y.to(e => "translateY(".concat(e, "px)"))
+      style: L(P({}, Q), {
+        transform: Q.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: w.Qs,
       children: [(0, r.jsxs)("div", {
@@ -165,7 +181,7 @@ function x(e) {
               boostCount: h
             })
           })]
-        }), x && (0, r.jsxs)("div", {
+        }), M && (0, r.jsxs)("div", {
           className: o()(w.qS, w.nt),
           children: [(0, r.jsx)(u.yr3, {
             size: "xs",
@@ -178,26 +194,26 @@ function x(e) {
         })]
       })]
     }), (0, r.jsxs)(s.animated.div, {
-      style: q,
+      style: X,
       className: w.NC,
       children: [(0, r.jsx)("div", {
         className: w.x6,
         children: (0, r.jsx)(u.Button, {
           variant: "primary",
           text: T.intl.string(T.t.oPAx73),
-          onClick: H,
+          onClick: W,
           fullWidth: true
         })
-      }), M && (0, r.jsx)("div", {
+      }), j && (0, r.jsx)("div", {
         className: w.x6,
         children: (0, r.jsx)(u.Button, {
           variant: "secondary",
           text: T.intl.string(T.t.GoCQxU),
-          onClick: Y,
+          onClick: K,
           fullWidth: true
         })
       })]
-    }), N && (0, r.jsx)(u.LpS, {
+    }), R && (0, r.jsx)(u.LpS, {
       className: w.Ad,
       text: T.intl.string(T.t.y2b7CA)
     })]

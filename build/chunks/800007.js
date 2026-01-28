@@ -2,18 +2,19 @@
 /** chunk id: 800007, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Ge: () => _,
   HS: () => a,
   PH: () => f,
   ST: () => l,
   U$: () => c,
-  W5: () => m,
+  W5: () => g,
   XF: () => d,
   ZI: () => u,
   ZN: () => o,
   by: () => s,
-  eh: () => _,
+  eh: () => h,
   q4: () => p,
-  yC: () => h
+  yC: () => m
 });
 var Chunk281445 = require("./281445.js"),
   Chunk115093 = require("./115093.js"),
@@ -48,10 +49,11 @@ let o = {
   u = 10,
   d = 32,
   f = 1e3,
-  p = "production" === window.GLOBAL_ENV.PROJECT_ENV ? "1425215263548117002" : "staging" === window.GLOBAL_ENV.PROJECT_ENV ? "1415044199572832256" : "1415025086791942144";
+  p = "production" === window.GLOBAL_ENV.PROJECT_ENV ? "1425215263548117002" : "staging" === window.GLOBAL_ENV.PROJECT_ENV ? "1415044199572832256" : "1415025086791942144",
+  _ = "production" === window.GLOBAL_ENV.PROJECT_ENV ? ["1402418491272986635", "1458530944955973852"] : "staging" === window.GLOBAL_ENV.PROJECT_ENV ? ["356875570916753438", "1458563423670501376"] : ["1", "2"];
 Chunk281445.X.SHOCKBYTE, window.GLOBAL_ENV.RELEASE_CHANNEL, Chunk115093.B.STAGING;
-let _ = {
+let h = {
     [Chunk281445.X.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy"
   },
-  h = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t),
-  m = "0"
+  m = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t),
+  g = "0"

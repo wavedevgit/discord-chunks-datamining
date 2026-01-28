@@ -82,17 +82,17 @@ function F(e) {
     guildId: t,
     activeStatus: n,
     title: a,
-    description: c,
-    cost: y,
-    costDecorator: b,
-    imageUrl: O,
-    skuId: v,
-    isNew: I,
-    onClose: S,
-    onHover: C
+    description: y,
+    cost: b,
+    costDecorator: O,
+    imageUrl: v,
+    skuId: I,
+    isNew: S,
+    onClose: j,
+    onHover: U
   } = e, {
-    analyticsLocations: j
-  } = (0, _.Ay)(), U = n !== w.b_.INACTIVE, F = (0, A.A)(t), V = (0, u.bG)([E.default], () => E.default.getCurrentUser()), [B, H] = i.useState(false), [Y, W] = i.useState(false), K = Y, z = i.useCallback(() => {
+    analyticsLocations: F
+  } = (0, _.Ay)(), V = n !== w.b_.INACTIVE, B = (0, A.A)(t), H = (0, u.bG)([E.default], () => E.default.getCurrentUser()), Y = i.useRef(null), [W, K] = i.useState(false), [z, q] = i.useState(false), Z = z, Q = i.useCallback(() => {
     let e = g.A.getGuild(t);
     null != e && (0, h.g)({
       analyticsLocation: {
@@ -100,95 +100,110 @@ function F(e) {
         section: R.JJy.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
-      analyticsLocations: j,
+      analyticsLocations: F,
       guild: e
     })
-  }, [t, j]), q = i.useCallback(() => {
-    S(), (0, T.A)(t, p.A.GUILD_POWERUPS_MARKETING, v)
-  }, [t, v, S]), Z = {
+  }, [t, F]), X = i.useCallback(() => {
+    j(), (0, T.A)(t, p.A.GUILD_POWERUPS_MARKETING, I)
+  }, [t, I, j]), J = {
     tension: 400,
     friction: 30
-  }, Q = (0, f.zhh)({
-    transform: K ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
+  }, $ = (0, f.zhh)({
+    transform: Z ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
     borderRadius: "0px",
     transformOrigin: "center 0%",
-    config: Z
-  }), X = (0, f.zhh)({
-    y: K ? false : 0,
-    config: Z
-  }), J = (0, f.zhh)({
-    opacity: +!!K,
-    transform: K ? "translateY(0)" : "translateY(20px)",
-    config: Z
-  }), $ = i.useCallback(e => {
-    e && H(true)
-  }, []), ee = (0, l.K)($);
+    config: J
+  }), ee = (0, f.zhh)({
+    transform: Z ? "translateX(0%) translateY(16px) scale(0.9)" : "translateX(0%) translateY(24px) scale(1.2)",
+    borderRadius: "0px",
+    transformOrigin: "center 0%",
+    config: J
+  }), et = (0, f.zhh)({
+    y: Z ? false : 0,
+    config: J
+  }), en = (0, f.zhh)({
+    opacity: +!!Z,
+    transform: Z ? "translateY(-10px)" : "translateY(20px)",
+    config: J
+  }), er = i.useCallback(e => {
+    e && K(true)
+  }, []), ei = (0, l.K)(er), ea = I === C.W5;
   return (0, r.jsxs)("div", {
+    ref: Y,
     className: o()(M.p3, M.sc, x.zL, {
-      [M.i0]: B
+      [M.i0]: W
     }),
     onMouseEnter: () => {
-      W(true), null == C || C(true)
+      q(true), null == U || U(true)
     },
     onMouseLeave: () => {
-      W(false), null == C || C(false)
+      q(false), null == U || U(false)
     },
     children: [(0, r.jsx)("div", {
       className: M.sL,
-      ref: ee
+      ref: ei
     }), (0, r.jsx)("div", {
       className: M.BL,
-      children: (0, r.jsx)(s.animated.img, {
+      children: ea ? (0, r.jsx)(s.animated.div, {
+        className: o()(M.e_, x.Sl, x.$b),
+        style: ee,
+        children: (0, r.jsx)(c.E_w, {
+          withReducedMotion: "halt",
+          eventTargetRef: Y,
+          fit: "contain",
+          stateMachine: "SM_Main_Int"
+        })
+      }) : (0, r.jsx)(s.animated.img, {
         className: o()(M.e_, x.Sl),
-        src: O,
+        src: v,
         alt: "",
-        style: Q
+        style: $
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: G(k({}, X), {
-        transform: X.y.to(e => "translateY(".concat(e, "px)"))
+      style: G(k({}, et), {
+        transform: et.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: o()(M.hQ, x.hQ),
       children: [(0, r.jsx)(m.xp, {
         heading: a,
-        description: c,
+        description: y,
         label: L.intl.formatToPlainString(D.default.QOacIS, {
-          quantity: y,
-          decorator: null != b ? b : ""
+          quantity: b,
+          decorator: null != O ? O : ""
         }),
-        isEnabled: U
+        isEnabled: V
       }), (0, r.jsxs)(s.animated.div, {
-        style: J,
+        style: en,
         className: M.NC,
         children: [(0, r.jsx)(d.m, {
           text: L.intl.formatToPlainString(P.default["5xN/C1"], {
             premiumGroupProductName: (0, N.DP)()
           }),
-          shouldShow: (null == V ? true : V.isPremiumGroupMember()) === true,
+          shouldShow: (null == H ? true : H.isPremiumGroupMember()) === true,
           children: (0, r.jsx)("div", {
             className: M.x6,
             children: (0, r.jsx)(f.Button, {
               variant: "primary",
               text: L.intl.string(L.t.oPAx73),
-              onClick: z,
-              disabled: null == V ? true : V.isPremiumGroupMember(),
+              onClick: Q,
+              disabled: null == H ? true : H.isPremiumGroupMember(),
               fullWidth: true
             })
           })
-        }), F && (0, r.jsx)("div", {
+        }), B && (0, r.jsx)("div", {
           className: M.x6,
           children: (0, r.jsx)(f.Button, {
             variant: "secondary",
             text: L.intl.string(L.t.GoCQxU),
-            onClick: q,
+            onClick: X,
             fullWidth: true
           })
         })]
       })]
-    }), I && (0, r.jsx)(f.LpS, {
+    }), S && (0, r.jsx)(f.LpS, {
       className: M.zG,
       text: L.intl.string(L.t.y2b7CA)
-    }), B && (0, r.jsx)("div", {
+    }), W && (0, r.jsx)("div", {
       className: M.Q4
     })]
   })

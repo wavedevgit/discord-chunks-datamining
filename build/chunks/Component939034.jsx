@@ -10,8 +10,8 @@ function t(e) {
   let {
     asset: a
   } = e;
-  return (0, r.jsx)("div", {
-    className: s.ZS,
+  return (0, s.jsx)("div", {
+    className: r.ZS,
     children: a
   })
 }
