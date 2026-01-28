@@ -36,10 +36,10 @@ var b = function(e) {
     return e.WISHLIST = "wishlist", e.POPULAR = "popular", e
   }({}),
   O = function(e) {
-    return e.USER_PROFILE = "user_profile", e.POPOUT = "popout", e
+    return e.USER_PROFILE = "user_profile", e
   }({}),
   v = function(e) {
-    return e.DM_SIDE_PANEL = "dm_side_panel", e.POPOUT = "popout", e.WISHLIST_BANNER = "wishlist_banner", e
+    return e.DM_SIDE_PANEL = "dm_side_panel", e.WISHLIST_BANNER = "wishlist_banner", e
   }({});
 
 function A(e) {

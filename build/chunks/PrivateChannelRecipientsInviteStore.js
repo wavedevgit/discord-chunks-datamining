@@ -2,7 +2,7 @@
 /** chunk id: 584777, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  A: () => U
+  A: () => G
 }), require("./896048.js"), require("./733351.js"), require("./321073.js"), require("./638769.js");
 var l, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -110,7 +110,7 @@ function w(e) {
       comparator: r
     })
   }
-  v = n, G.emitChange()
+  v = n, U.emitChange()
 }
 
 function R() {
@@ -161,7 +161,7 @@ class k extends(l = Chunk311907.Ay.Store) {
   configurable: true,
   writable: true
 }) : k[i] = "PrivateChannelRecipientsInviteStore";
-let G = new k(Chunk73153.h, {
+let U = new k(Chunk73153.h, {
     CONNECTION_OPEN: function() {
       S()
     },
@@ -201,4 +201,4 @@ let G = new k(Chunk73153.h, {
       E.delete(t), E = new Set(E)
     }
   }),
-  U = G
+  G = U

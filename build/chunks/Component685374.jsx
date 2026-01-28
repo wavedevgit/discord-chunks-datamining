@@ -89,7 +89,7 @@ function x(e) {
     roles: R,
     members: D
   }), k = h && 0 === Object.keys(C).length;
-  async function G() {
+  async function U() {
     if (null == d || 0 === Object.keys(C).length) return void p();
     N(true);
     try {
@@ -106,7 +106,7 @@ function x(e) {
       N(false), P(e)
     }
   }
-  let U = (0, u.ke)(d.type) ? a.I$d : a.trU;
+  let G = (0, u.ke)(d.type) ? a.I$d : a.trU;
   return (0, r.jsx)(g.A.Provider, {
     listRef: w,
     query: x,
@@ -124,7 +124,7 @@ function x(e) {
           className: _.HA,
           variant: "text-lg/normal",
           color: "text-default",
-          children: [(0, r.jsx)(U, {
+          children: [(0, r.jsx)(G, {
             className: _.p,
             size: "sm",
             color: "currentColor"
@@ -166,7 +166,7 @@ function x(e) {
       }, {
         variant: "primary",
         text: y.intl.string(y.t.i4jeWR),
-        onClick: G,
+        onClick: U,
         loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

@@ -40,8 +40,8 @@ function C(e) {
     loadState: L,
     channels: k
   } = D, {
-    maybeLoadMore: G
-  } = M, U = (0, u.bG)([f.A], () => f.A.messageGroupSpacing);
+    maybeLoadMore: U
+  } = M, G = (0, u.bG)([f.A], () => f.A.messageGroupSpacing);
   t = R, n = D, i = M, l.useLayoutEffect(() => {
     var e;
     let {
@@ -142,8 +142,8 @@ function C(e) {
             R.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, i), n = n = {
-          onScroll: L === j.mJ.Done ? true : G,
-          className: s()(E.XG, "group-spacing-".concat(U)),
+          onScroll: L === j.mJ.Done ? true : U,
+          className: s()(E.XG, "group-spacing-".concat(G)),
           children: [T ? (0, r.jsx)(S, {
             setSeenTutorial: P
           }) : null, (0, O.A)(k, M, N), L === j.mJ.Done ? null : (0, r.jsx)(d.y$y, {

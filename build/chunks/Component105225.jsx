@@ -138,10 +138,10 @@ function eC(e) {
   } = e, {
     parentAnalyticsLocation: c,
     analyticsLocations: h
-  } = (0, O.Ay)(), f = (0, G.Us)(), g = (0, u.yK)([et.A], () => et.A.getAllActiveStreams()), m = g.find(e => e.ownerId === n.id), b = l.useRef(null), A = l.useRef(null), y = t.getGuildId(), _ = l.useCallback(() => {
+  } = (0, O.Ay)(), f = (0, U.Us)(), g = (0, u.yK)([et.A], () => et.A.getAllActiveStreams()), m = g.find(e => e.ownerId === n.id), b = l.useRef(null), A = l.useRef(null), y = t.getGuildId(), _ = l.useCallback(() => {
     if (null == i || i(), !s) return (0, eg.A)();
     (0, em.A)(y, t.id, h)
-  }, [y, t.id, s, i, h]), j = (0, U.k0)(), [v, x] = l.useState(false), E = () => {
+  }, [y, t.id, s, i, h]), j = (0, G.k0)(), [v, x] = l.useState(false), E = () => {
     ((0, S.X)(c, S.O.STREAM, true), s) ? _(): (0, eg.A)()
   }, C = () => {
     (0, S.X)(c, S.O.STREAM, false), (0, D.A)(m)
@@ -379,7 +379,7 @@ function eN(e) {
     cameraUnavailable: n,
     hasCameraPermission: i,
     currentUser: s
-  } = e, a = (0, G.Us)(), {
+  } = e, a = (0, U.Us)(), {
     parentAnalyticsLocation: o
   } = (0, O.Ay)(), {
     reachedLimit: c,
@@ -448,7 +448,7 @@ let eP = function(e) {
     canGoLive: M
   } = (0, u.cf)([er.A], () => ({
     canGoLive: (0, R.A)(er.A)
-  })), L = (0, P.A)(), U = (0, u.bG)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), B = null != L, H = (0, u.bG)([el.A], () => {
+  })), L = (0, P.A)(), G = (0, u.bG)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), B = null != L, H = (0, u.bG)([el.A], () => {
     var e;
     return (null != (e = null == L ? true : L.channelId) ? e : el.A.getVoiceChannelId()) === n.id
   }), W = (0, V.A)({
@@ -462,7 +462,7 @@ let eP = function(e) {
   } = (0, O.Ay)(_.A.VOICE_CONTROL_TRAY), et = (0, $.Cg)({
     location: _.A.VOICE_CONTROL_TRAY,
     autoTrackExposure: true
-  }), en = (0, F.A)(n), eu = l.useRef(null), eh = l.useRef(null), eg = (0, G.Us)(), em = et ? e => {
+  }), en = (0, F.A)(n), eu = l.useRef(null), eh = l.useRef(null), eg = (0, U.Us)(), em = et ? e => {
     (0, f.L3)(e, () => Promise.resolve(() => (0, r.jsx)(v.default, {
       onClose: f.Z_,
       renderInputDevices: true,
@@ -535,7 +535,7 @@ let eP = function(e) {
                 serverMute: D,
                 suppress: N,
                 popoutOpen: l,
-                awaitingRemote: U,
+                awaitingRemote: G,
                 onClick: () => (0, C.A)(D, N, eA.JJy.VOICE_CONTROL_TRAY),
                 onContextMenu: em
               })

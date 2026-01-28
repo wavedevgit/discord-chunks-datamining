@@ -83,9 +83,9 @@ function E(e) {
     R("user:explicit" === e ? _.i.USER_DISMISS : _.i.AUTO_DISMISS)
   }, [R]), k = l.useCallback(() => {
     M(null), g.A.openSearchFiltersModal(t)
-  }, [M, t]), G = l.useMemo(() => x > 0 ? O.intl.format(O.t.uaR4sI, {
+  }, [M, t]), U = l.useMemo(() => x > 0 ? O.intl.format(O.t.uaR4sI, {
     filterCount: x
-  }) : O.intl.string(O.t.UdhTtk), [x]), U = t.type === y.I4_.DMS || t.type === y.I4_.CHANNEL;
+  }) : O.intl.string(O.t.UdhTtk), [x]), G = t.type === y.I4_.DMS || t.type === y.I4_.CHANNEL;
   return (0, r.jsxs)("header", {
     className: s()(j.wL, {
       [j.g$]: null != E
@@ -105,7 +105,7 @@ function E(e) {
       children: [(0, r.jsx)(u.Button, {
         variant: "secondary",
         onClick: k,
-        text: G,
+        text: U,
         icon: u.RgP,
         size: "sm"
       }), (0, r.jsx)(w, {
@@ -113,7 +113,7 @@ function E(e) {
         onSearchModeChange: i,
         isPopoutOpen: "sort" === S,
         setOpenPopout: M
-      }), U && (0, r.jsx)(P, {
+      }), G && (0, r.jsx)(P, {
         searchContext: t,
         selectedChannelId: b,
         isPopoutOpen: "settings" === S,

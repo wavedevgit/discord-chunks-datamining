@@ -1,9 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 524380, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 78528 **/
+/** chunk id: 524380, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => r
+  Y: () => l
 });
-var r = function(e) {
-  return e.SMALL = "small", e.MEDIUM = "medium", e
-}({})
+var r, l = ((r = {}).SMALL = "small", r.MEDIUM = "medium", r)

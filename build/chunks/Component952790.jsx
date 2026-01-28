@@ -245,14 +245,14 @@ let w = Chunk64700.memo(function(e) {
     headerClassName: T,
     communityInfoVisible: w,
     hasSubheader: D
-  } = e, M = v.features.has(O.GuildFeatures.ANIMATED_BANNER), L = (0, p.A)(v), k = !L && (0, y.A)(v), G = !L && w, U = (0, A.VI)(E) && M && !b, [B, V] = l.useState(false), F = l.useRef(false), H = l.useRef(null), K = null != t ? t : H, W = l.useRef(true), z = m.kt.getSetting(), Y = (0, c.bG)([g.A], () => g.A.theme);
+  } = e, M = v.features.has(O.GuildFeatures.ANIMATED_BANNER), L = (0, p.A)(v), k = !L && (0, y.A)(v), U = !L && w, G = (0, A.VI)(E) && M && !b, [B, V] = l.useState(false), F = l.useRef(false), H = l.useRef(null), K = null != t ? t : H, W = l.useRef(true), z = m.kt.getSetting(), Y = (0, c.bG)([g.A], () => g.A.theme);
   l.useEffect(() => {
-    if (U && n && !F.current && z) return V(true), W.current = setTimeout(() => {
+    if (G && n && !F.current && z) return V(true), W.current = setTimeout(() => {
       V(false)
     }, 5e3), () => {
       clearTimeout(W.current)
     }
-  }, [U, n, z]), l.useEffect(() => {
+  }, [G, n, z]), l.useEffect(() => {
     F.current = n
   }, [n]);
   let q = () => {
@@ -274,7 +274,7 @@ let w = Chunk64700.memo(function(e) {
           [x.r9]: q(),
           [x.Pi]: n,
           [e]: false,
-          [x.Iv]: G || D && k
+          [x.Iv]: U || D && k
         }),
         onMouseDown: f,
         onContextMenu: h,
@@ -307,7 +307,7 @@ let w = Chunk64700.memo(function(e) {
         }) : null, (0, r.jsx)(R, {
           controller: i
         })]
-      }), U && q() ? (0, r.jsx)("div", {
+      }), G && q() ? (0, r.jsx)("div", {
         className: x.rt,
         onMouseEnter: () => {
           V(true), clearTimeout(W.current)

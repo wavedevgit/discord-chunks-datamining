@@ -1,7 +1,7 @@
 /** Chunk was on 78528 **/
 /** chunk id: 353428, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  EP: () => U,
+  EP: () => G,
   i$: () => V,
   zF: () => k
 }), require("./896048.js");
@@ -255,7 +255,7 @@ function k(e) {
       return null
   }
 }
-let G = e => {
+let U = e => {
   var t, n, i;
   let {
     channel: s
@@ -273,11 +273,11 @@ let G = e => {
   }) : null : null
 };
 
-function U(e, t) {
+function G(e, t) {
   switch (e.type) {
     case w.rbe.DM:
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(G, {
+        children: [(0, r.jsx)(U, {
           channel: e
         }), (0, r.jsx)(S.A, {
           channel: e

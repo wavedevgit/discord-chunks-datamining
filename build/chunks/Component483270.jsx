@@ -75,7 +75,7 @@ let z = Chunk837921.Ay.getEnableHardwareAcceleration(),
     } = e, o = l.useRef(null), u = (0, p.bG)([w.A], () => w.A.isTyping(t.id, s)), h = (0, p.bG)([I.Ay], () => I.Ay.getMember(t.guild_id, s)), m = (0, p.bG)([N.A], () => {
       var e;
       return (null == h ? true : h.colorRoleId) != null ? null == (e = N.A.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, h]), b = (0, p.bG)([R.default], () => R.default.getUser(s)), A = (0, p.bG)([R.default], () => R.default.getCurrentUser()), y = (null == b ? true : b.id) === (null == A ? true : A.id), O = (0, p.bG)([T.A, P.A], () => y ? P.A.getStatus() : T.A.getStatus(s, t.guild_id)), v = (0, p.bG)([T.A], () => T.A.isMobileOnline(s)), x = (0, p.bG)([T.A, P.A], () => y ? P.A.getActivities() : T.A.getActivities(s, t.guild_id)), D = (0, p.bG)([S.A], () => S.A.getAnyStreamForUser(s)), M = (0, c.rm)(s), k = (0, p.bG)([E.A], () => E.A.canUserViewChannel(t.id, i, s)), U = (null == b ? true : b.id) != null && b.id === a, H = l.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.bG)([R.default], () => R.default.getUser(s)), A = (0, p.bG)([R.default], () => R.default.getCurrentUser()), y = (null == b ? true : b.id) === (null == A ? true : A.id), O = (0, p.bG)([T.A, P.A], () => y ? P.A.getStatus() : T.A.getStatus(s, t.guild_id)), v = (0, p.bG)([T.A], () => T.A.isMobileOnline(s)), x = (0, p.bG)([T.A, P.A], () => y ? P.A.getActivities() : T.A.getActivities(s, t.guild_id)), D = (0, p.bG)([S.A], () => S.A.getAnyStreamForUser(s)), M = (0, c.rm)(s), k = (0, p.bG)([E.A], () => E.A.canUserViewChannel(t.id, i, s)), G = (null == b ? true : b.id) != null && b.id === a, H = l.useCallback(e => {
       null != b && (0, f.L3)(e, async () => {
         let {
           default: e
@@ -100,7 +100,7 @@ let z = Chunk837921.Ay.getEnableHardwareAcceleration(),
       })
     }, [b, t]), K = l.useCallback(() => {
       if (null == b) return;
-      let e = "@".concat(G.Ay.getUserTag(b, {
+      let e = "@".concat(U.Ay.getUserTag(b, {
           decoration: "never"
         })),
         n = "<@".concat(b.id, ">");
@@ -177,7 +177,7 @@ let z = Chunk837921.Ay.getEnableHardwareAcceleration(),
           onClickPremiumGuildIcon: Y,
           itemProps: M,
           lostPermissionTooltipText: k ? true : F.intl.string(F.t["/QcoTz"]),
-          isOwner: U,
+          isOwner: G,
           nameplate: q,
           onClick: e => {
             e.shiftKey ? null == K || K() : J(e => !e)

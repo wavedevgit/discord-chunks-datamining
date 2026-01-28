@@ -49,7 +49,7 @@ function R(e) {
       context: t
     });
     return c.X8(n, c.kg(N.xBc.ADMINISTRATOR, N.xBc.VIEW_CHANNEL))
-  }).value(), [t, R, L]), G = (0, u.yK)([x.default], () => {
+  }).value(), [t, R, L]), U = (0, u.yK)([x.default], () => {
     let e = {};
     for (let n of (null != M && (e[M.id] = M), Object.values(t.permissionOverwrites))) {
       if (n.type !== f.r2.MEMBER || null != e[n.id]) continue;
@@ -67,7 +67,7 @@ function R(e) {
         i = c.zy(l.allow, N.xBc.VIEW_CHANNEL);
       return r || i
     }).value()
-  }, [t, M]), U = v.A.can(N.xBc.MANAGE_CHANNELS, t) || v.A.can(N.xBc.MANAGE_ROLES, t), B = l.useCallback(() => i(false), []);
+  }, [t, M]), G = v.A.can(N.xBc.MANAGE_CHANNELS, t) || v.A.can(N.xBc.MANAGE_ROLES, t), B = l.useCallback(() => i(false), []);
   return (0, r.jsxs)(S.Ay, {
     channelId: t.id,
     children: [(0, r.jsx)(S.WK, {
@@ -85,7 +85,7 @@ function R(e) {
           channelId: t.id
         })
       })
-    }), U ? (0, r.jsxs)("div", {
+    }), G ? (0, r.jsxs)("div", {
       className: P.$x,
       children: [(0, r.jsx)(p.Button, {
         size: "sm",
@@ -105,13 +105,13 @@ function R(e) {
     }) : null, (0, r.jsxs)("div", {
       className: P.ol,
       children: [function() {
-        if (1 !== G.length || k.length > 0) return (0, r.jsx)(d.A, {
+        if (1 !== U.length || k.length > 0) return (0, r.jsx)(d.A, {
           guildId: t.guild_id,
           className: P.HD,
           maxUsers: 5,
-          users: G
+          users: U
         });
-        let e = G[0],
+        let e = U[0],
           n = C.Ay.getName(e);
         return (0, r.jsxs)("div", {
           className: P.HD,
@@ -135,13 +135,13 @@ function R(e) {
         var l, i;
         let a = null != (l = e.colorString) ? l : N.TpD,
           o = (null == (i = e.tags) ? true : i.guild_connections) !== true;
-        return U ? (0, r.jsx)(I.A, {
+        return G ? (0, r.jsx)(I.A, {
           className: s()(P.JC, {
             [P.HV]: n === k.length - 1
           }),
           roleName: e.name,
           roleColor: a,
-          disabled: !U,
+          disabled: !G,
           verified: o,
           onClick: () => {
             A.A.open(t.guild_id, N.BEX.MEMBERS), A.A.selectRole(e.id)

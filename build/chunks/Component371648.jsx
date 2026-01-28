@@ -134,7 +134,7 @@ let Y = (0, Chunk353709.animated)(Chunk397927.fKU),
         fontSize: w,
         groupSpacing: b
       }), [C, w, b]),
-      ee = (0, U.Ay)({
+      ee = (0, G.Ay)({
         messages: O,
         channel: _,
         compact: C,
@@ -146,7 +146,7 @@ let Y = (0, Chunk353709.animated)(Chunk397927.fKU),
         handleScrollFromBottom: l.useCallback(() => Z(false), [Z]),
         additionalMessagePadding: 48
       }),
-      et = (0, G.A)({
+      et = (0, U.A)({
         scrollerRef: ee.ref,
         isEditing: null != P,
         keyboardModeEnabled: D,
@@ -298,7 +298,7 @@ let Y = (0, Chunk353709.animated)(Chunk397927.fKU),
       fontSize: E,
       messageDisplayCompact: R,
       renderSpoilers: L,
-      keyboardModeEnabled: G
+      keyboardModeEnabled: U
     } = function() {
       let e = j.hH.useSetting(),
         t = j.gs.useSetting(),
@@ -326,7 +326,7 @@ let Y = (0, Chunk353709.animated)(Chunk397927.fKU),
         keyboardModeEnabled: l
       }
     }(), {
-      messages: U,
+      messages: G,
       channelStream: B,
       oldestUnreadMessageId: F,
       editingMessageId: H
@@ -385,7 +385,7 @@ let Y = (0, Chunk353709.animated)(Chunk397927.fKU),
           showNewMessagesBar: true,
           channel: t,
           messageDisplayCompact: !a && (s || R),
-          messages: U,
+          messages: G,
           channelStream: B,
           permissionVersion: h,
           uploads: (0, c.bG)([P.A], () => P.A.getFiles(t.id), [t]),
@@ -394,7 +394,7 @@ let Y = (0, Chunk353709.animated)(Chunk397927.fKU),
           canChat: y,
           editingMessageId: H,
           fontSize: E,
-          keyboardModeEnabled: G,
+          keyboardModeEnabled: U,
           showingQuarantineBanner: n,
           hideSummaries: i,
           typingGradient: o

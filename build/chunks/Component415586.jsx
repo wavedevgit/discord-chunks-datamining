@@ -91,7 +91,7 @@ function P(e) {
         channelId: D.id
       })
     }, [D, R]), null == D || null == M) return null;
-  let G = (0, r.jsx)(x.A, {
+  let U = (0, r.jsx)(x.A, {
     channel: D,
     baseChannelId: w
   });
@@ -100,7 +100,7 @@ function P(e) {
       channel: D,
       draftType: O.C.ChannelMessage
     }), (0, r.jsx)(b.Ay, {
-      toolbar: G,
+      toolbar: U,
       "aria-label": S.intl.string(S.t.Pwe8tN),
       children: (0, A.zF)({
         channel: D,

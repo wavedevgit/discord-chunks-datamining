@@ -58,8 +58,8 @@ function R(e) {
     user: n,
     channel: R
   } = e, D = __OVERLAY__ || !(0, u.A)(n.id), M = (0, m.Ay)(n.id), L = (0, a.Ay)(), k = l.useRef(Date.now()), {
-    analyticsLocations: G
-  } = (0, c.Ay)(o.A.USER_PROFILE_SIDEBAR), U = (0, f.pb)({
+    analyticsLocations: U
+  } = (0, c.Ay)(o.A.USER_PROFILE_SIDEBAR), G = (0, f.pb)({
     layout: "SIDEBAR",
     userId: n.id,
     channelId: R.id
@@ -68,14 +68,14 @@ function R(e) {
     isHovering: F
   } = (0, d.A)(B), H = () => {
     (0, b.openUserProfileModal)(w({
-      sourceAnalyticsLocations: G,
+      sourceAnalyticsLocations: U,
       hideRestrictedProfile: true
-    }, U))
+    }, G))
   };
   return (0, r.jsx)(c.f5, {
-    value: G,
+    value: U,
     children: (0, r.jsx)(f.of, {
-      value: U,
+      value: G,
       openedAt: k.current,
       fetchStartedAt: null == M ? true : M.fetchStartedAt,
       fetchEndedAt: null == M ? true : M.fetchEndedAt,
@@ -143,8 +143,8 @@ function R(e) {
             onClick: () => {
               H(), (0, g.Wn)(w({
                 action: "PRESS_VIEW_PROFILE",
-                analyticsLocations: G
-              }, U))
+                analyticsLocations: U
+              }, G))
             },
             className: T.wC,
             children: N.intl.string(N.t["+Xp3hq"])

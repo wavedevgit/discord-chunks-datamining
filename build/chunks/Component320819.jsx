@@ -2,7 +2,7 @@
 /** chunk id: 320819, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => L
+  A: () => P
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -13,7 +13,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk351906 = require("./351906.js"),
   Chunk562153 = require("./562153.js"),
   Chunk927578 = require("./927578.js"),
-  Chunk970354 = require("./970354.js"),
   Chunk31432 = require("./31432.jsx"),
   Chunk223330 = require("./223330.jsx"),
   Chunk559506 = require("./559506.jsx"),
@@ -29,84 +28,79 @@ var Chunk627968 = require("./627968.js"),
   Chunk192867 = require("./192867.jsx"),
   Chunk403369 = require("./403369.jsx"),
   Chunk360563 = require("./360563.jsx"),
-  Chunk989461 = require("./989461.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk996988 = require("./996988.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk183959 = require("./183959.js");
 
-function L(e) {
+function P(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: L,
-    guild: x,
-    isHoveringOrFocusing: M,
-    onOpenProfile: j,
-    channelId: k,
-    onClose: U
-  } = e, G = u.Ay.useName(null == x ? true : x.id, k, t), {
-    relationshipType: F,
-    originApplicationId: V
+    displayProfile: P,
+    guild: D,
+    isHoveringOrFocusing: L,
+    onOpenProfile: x,
+    channelId: M,
+    onClose: j
+  } = e, k = u.Ay.useName(null == D ? true : D.id, M, t), {
+    relationshipType: U,
+    originApplicationId: G
   } = (0, i.cf)([l.A], () => ({
     relationshipType: l.A.getRelationshipType(t.id),
     originApplicationId: l.A.getOriginApplicationId(t.id)
-  })), B = (0, o.fi)(t.id), H = (0, i.bG)([c.A], () => c.A.hidePersonalInformation), {
-    enabled: Y
-  } = (0, f.u)({
-    location: "UserProfilePopoutBody"
-  }), W = t.id === n.id, K = (null == L ? true : L.widgets) != null && L.widgets.length > 0, z = (0, d.TW)(n);
+  })), F = (0, o.fi)(t.id), V = (0, i.bG)([c.A], () => c.A.hidePersonalInformation), B = t.id === n.id, H = (null == P ? true : P.widgets) != null && P.widgets.length > 0, Y = (0, d.TW)(n);
   return (0, r.jsxs)(a.HOs, {
     fade: true,
-    className: D.rf,
-    children: [(0, r.jsx)(h.A, {
+    className: R.rf,
+    children: [(0, r.jsx)(_.A, {
       userId: t.id
-    }), (0, r.jsx)(v.A, {
+    }), (0, r.jsx)(O.A, {
       user: t,
-      guildId: null == x ? true : x.id,
-      onOpenProfile: j,
-      onClose: U,
-      usernameIcon: t.hasAvatarForGuild(null == x ? true : x.id) && (0, r.jsx)(S.A, {
+      guildId: null == D ? true : D.id,
+      onOpenProfile: x,
+      onClose: j,
+      usernameIcon: t.hasAvatarForGuild(null == D ? true : D.id) && (0, r.jsx)(I.A, {
         user: t,
-        nickname: G
+        nickname: k
       }),
-      nickname: G,
-      pronouns: null == L ? true : L.pronouns,
-      tags: (0, r.jsx)(p.A, {
-        displayProfile: L,
-        themeType: R.d.POPOUT,
-        onClose: U
+      nickname: k,
+      pronouns: null == P ? true : P.pronouns,
+      tags: (0, r.jsx)(f.A, {
+        displayProfile: P,
+        themeType: N.d.POPOUT,
+        onClose: j
       }),
-      nicknameIcons: H ? null : (0, r.jsx)(A.A, {
+      nicknameIcons: V ? null : (0, r.jsx)(v.A, {
         userId: t.id,
-        isVisible: M,
-        onOpenProfile: j
+        isVisible: L,
+        onOpenProfile: x
       })
-    }), F === w.eA$.PENDING_INCOMING && (0, r.jsx)(O.A.Overlay, {
-      children: (0, r.jsx)(m.A, {
+    }), U === C.eA$.PENDING_INCOMING && (0, r.jsx)(b.A.Overlay, {
+      children: (0, r.jsx)(h.A, {
         user: t,
-        guildId: null == x ? true : x.id,
-        channelId: k,
-        applicationId: V
+        guildId: null == D ? true : D.id,
+        channelId: M,
+        applicationId: G
       })
-    }), B.map(e => (0, r.jsx)(O.A.Overlay, {
-      children: (0, r.jsx)(m.A, {
+    }), F.map(e => (0, r.jsx)(b.A.Overlay, {
+      children: (0, r.jsx)(h.A, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
-        channelId: k
+        channelId: M
       })
-    }, e.applicationId)), (0, r.jsx)(g.A, {
+    }, e.applicationId)), (0, r.jsx)(m.A, {
       user: t
-    }), !W && (0, r.jsx)(C.A, {
+    }), !B && (0, r.jsx)(T.A, {
       user: t,
-      onOpenProfile: e => null == j ? true : j({
+      onOpenProfile: e => null == x ? true : x({
         tabSection: e
       })
-    }), t.isProvisional ? (0, r.jsx)(O.A.Overlay, {
-      className: D.Nr,
-      children: (0, r.jsx)(E.A, {
-        heading: P.intl.string(P.t.Iyka0U),
+    }), t.isProvisional ? (0, r.jsx)(b.A.Overlay, {
+      className: R.Nr,
+      children: (0, r.jsx)(g.A, {
+        heading: w.intl.string(w.t.Iyka0U),
         headingIcon: (0, r.jsx)(a.EpV, {
           size: "xxs",
           color: a.LU0.colors.TEXT_STRONG
@@ -116,30 +110,27 @@ function L(e) {
           userId: t.id
         })
       })
-    }) : (0, r.jsx)(I.A, {
+    }) : (0, r.jsx)(A.A, {
       user: t,
-      bio: null == L ? true : L.bio,
-      hidePersonalInformation: H,
-      onClose: U
-    }), K && (0, r.jsx)(b.A, {
+      bio: null == P ? true : P.bio,
+      hidePersonalInformation: V,
+      onClose: j
+    }), H && (0, r.jsx)(y.A, {
       user: t,
-      widgets: null == L ? true : L.widgets,
-      onOpenUserProfileModal: j
-    }), W && (0, r.jsx)(_.A, {
-      isPremiumUser: z,
-      onInteraction: U
-    }), (0, r.jsx)(y.A, {
+      widgets: null == P ? true : P.widgets,
+      onOpenUserProfileModal: x
+    }), B && (0, r.jsx)(p.A, {
+      isPremiumUser: Y,
+      onInteraction: j
+    }), (0, r.jsx)(E.A, {
       user: t,
       currentUser: n,
-      guildId: null == x ? true : x.id,
-      onOpenUserProfileModal: j,
-      onClose: U
-    }), Y && !W && (0, r.jsx)(N.A, {
-      user: t,
-      onOpenProfile: j
-    }), null != x && (0, r.jsx)(T.A, {
+      guildId: null == D ? true : D.id,
+      onOpenUserProfileModal: x,
+      onClose: j
+    }), null != D && (0, r.jsx)(S.A, {
       userId: t.id,
-      guild: x
+      guild: D
     })]
   })
 }

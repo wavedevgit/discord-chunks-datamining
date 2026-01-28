@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 173678, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 78528 **/
+/** chunk id: 173678, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => y,
-  z: () => b
+  M: () => A,
+  z: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk575593 = require("./575593.js"),
@@ -20,113 +19,111 @@ var Chunk627968 = require("./627968.js"),
   Chunk733557 = require("./733557.js"),
   Chunk101616 = require("./101616.js");
 
-function g(e, t, n) {
+function b(e, t, n) {
   (0, c.A)({
     skuId: e.skuId,
     isGift: true,
-    giftingOrigin: p.vQ.USER_PROFILE_WISHLIST,
+    giftingOrigin: h.vQ.USER_PROFILE_WISHLIST,
     analyticsLocations: n,
     giftRecipient: t,
-    variantsReturnStyle: a.g.VARIANTS_GROUP
+    variantsReturnStyle: i.g.VARIANTS_GROUP
   })
 }
 
-function E(e) {
-  switch (e.collectiblesItem.type) {
-    case i.R.AVATAR_DECORATION:
-      return _.intl.string(_.t["7v0T9P"]);
-    case i.R.PROFILE_EFFECT:
-      return _.intl.string(_.t.wR5wOo);
-    case i.R.NAMEPLATE:
-      return _.intl.string(_.t.x5CoXR);
-    default:
-      return ""
-  }
+function A(e, t) {
+  let {
+    moreCount: n,
+    profileOwner: i,
+    analyticsLocations: s,
+    onViewWishlist: c,
+    isSingleCard: h = false,
+    wishlistId: m,
+    showTypeTooltip: A = false,
+    cardSize: y,
+    itemSource: _
+  } = t, O = null != e.bundleItems && e.bundleItems.length > 0, j = null != n && n > 0, v = A && !j, x = j ? f.intl.string(f.t.TxBQzD) : f.intl.string(f.t.pLPjsb), E = _ === u.uS.POPULAR ? f.intl.string(f.t.Ig6VDH) : f.intl.string(f.t.ilhtIa), C = {
+    title: v ? f.intl.string(f.t.HFhcqh) : x,
+    body: v ? E : true,
+    renderIcon: v ? a.GM : true,
+    shouldShow: true
+  }, S = !O && e.collectiblesItem.type === l.R.PROFILE_EFFECT;
+  return (0, r.jsx)(p.A, {
+    onCardClick: () => {
+      j ? c() : b(e, i, s)
+    },
+    tooltipConfig: C,
+    shouldScalePreview: O || !S,
+    renderPreview: () => {
+      if (O) {
+        let t = {
+          items: e.bundleItems
+        };
+        return (0, r.jsx)("div", {
+          className: g.hT,
+          children: (0, r.jsx)(o.X, {
+            product: t,
+            isHighlighted: false,
+            user: i
+          })
+        })
+      }
+      return (0, r.jsx)(d.A, {
+        item: e,
+        profileOwner: i,
+        isHighlighted: false
+      })
+    },
+    moreCount: n,
+    isSingleCard: h,
+    wishlistItem: e,
+    wishlistId: m,
+    cardSize: y,
+    itemSource: _
+  }, e.skuId)
 }
 
 function y(e, t) {
   let {
-    moreCount: n,
-    profileOwner: a,
-    analyticsLocations: o,
-    onViewWishlist: c,
-    isSingleCard: p = false,
-    wishlistId: m,
-    showTypeTooltip: E = false,
-    cardSize: y,
-    itemSource: b
-  } = t, O = null != e.bundleItems && e.bundleItems.length > 0, v = null != n && n > 0, A = E && !v, I = v ? _.intl.string(_.t.TxBQzD) : _.intl.string(_.t.pLPjsb), S = b === u.uS.POPULAR ? _.intl.string(_.t.Ig6VDH) : _.intl.string(_.t.ilhtIa), T = {
-    title: A ? _.intl.string(_.t.HFhcqh) : I,
-    body: A ? S : true,
-    renderIcon: A ? s.GM : true,
-    shouldShow: true
-  }, C = () => {
-    v ? c() : g(e, a, o)
-  }, N = () => {
-    if (O) {
-      let t = {
-        items: e.bundleItems
-      };
-      return (0, r.jsx)("div", {
-        className: h.hT,
-        children: (0, r.jsx)(l.X, {
-          product: t,
-          isHighlighted: false,
-          user: a
-        })
-      })
-    }
-    return (0, r.jsx)(d.A, {
-      item: e,
-      profileOwner: a,
-      isHighlighted: false
-    })
-  }, w = !O && e.collectiblesItem.type === i.R.PROFILE_EFFECT, R = O || !w;
-  return (0, r.jsx)(f.A, {
-    onCardClick: C,
-    tooltipConfig: T,
-    shouldScalePreview: R,
-    renderPreview: N,
-    moreCount: n,
-    isSingleCard: p,
-    wishlistItem: e,
-    wishlistId: m,
-    cardSize: y,
-    itemSource: b
-  }, e.skuId)
-}
-
-function b(e, t) {
-  let {
     profileOwner: n,
     analyticsLocations: i,
     wishlistId: a,
-    onViewWishlist: s
-  } = t, l = null != e.bundleItems && e.bundleItems.length > 0, c = () => {
-    g(e, n, i)
-  }, u = y(e, {
+    onViewWishlist: o
+  } = t, c = null != e.bundleItems && e.bundleItems.length > 0, u = A(e, {
     profileOwner: n,
     analyticsLocations: i,
-    onViewWishlist: s,
+    onViewWishlist: o,
     isSingleCard: true,
     wishlistId: a,
     index: 0
-  }), d = l ? _.intl.string(_.t.Zr5tjn) : E(e);
+  }), d = c ? f.intl.string(f.t.Zr5tjn) : function(e) {
+    switch (e.collectiblesItem.type) {
+      case l.R.AVATAR_DECORATION:
+        return f.intl.string(f.t["7v0T9P"]);
+      case l.R.PROFILE_EFFECT:
+        return f.intl.string(f.t.wR5wOo);
+      case l.R.NAMEPLATE:
+        return f.intl.string(f.t.x5CoXR);
+      default:
+        return ""
+    }
+  }(e);
   return (0, r.jsxs)("div", {
     className: m.D5,
     children: [u, (0, r.jsxs)("div", {
       className: m.S7,
-      children: [(0, r.jsx)(o.DUT, {
-        onClick: c,
+      children: [(0, r.jsx)(s.DUT, {
+        onClick: () => {
+          b(e, n, i)
+        },
         className: m.Hh,
-        "aria-label": _.intl.string(_.t.pLPjsb),
-        children: (0, r.jsx)(o.Text, {
+        "aria-label": f.intl.string(f.t.pLPjsb),
+        children: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
           lineClamp: 2,
           children: e.skuName
         })
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: d

@@ -260,7 +260,7 @@ function F(e) {
   let {
     component: t
   } = e;
-  if (Array.isArray(t)) return H(t);
+  if (Array.isArray(t)) return B(t);
   switch (t.type) {
     case "HERO":
       let {
@@ -283,16 +283,16 @@ function F(e) {
         return i
       }(t, ["body"]);
       return (0, r.jsx)(W, G(L({}, l), {
-        body: H(n)
+        body: B(n)
       }));
     case "GRID":
       return (0, r.jsx)(X, {
-        children: H(t.children)
+        children: B(t.children)
       });
     case "FIELD":
       return (0, r.jsx)(K, {
-        value: B(t.value),
-        name: B(t.name)
+        value: H(t.value),
+        name: H(t.name)
       });
     case "TEXT":
       return (0, r.jsx)(z, L({}, t));
@@ -303,14 +303,14 @@ function F(e) {
   }
 }
 
-function B(e, t) {
+function H(e, t) {
   return (0, r.jsx)(F, {
     component: e
   }, t)
 }
 
-function H(e) {
-  return e.map((e, t) => B(e, t))
+function B(e) {
+  return e.map((e, t) => H(e, t))
 }
 
 function W(e) {
@@ -526,9 +526,9 @@ let $ = Object.assign(function(e) {
       subtle: w = false
     } = e,
     U = (0, c.bG)([E.default], () => E.default.getId()) === v.id,
-    B = (0, y.h)(_.applicationId),
-    H = null == B ? true : B.getIconURL(16),
-    W = (0, c.bG)([S.A], () => null != B ? S.A.getGameByApplication(B) : null),
+    H = (0, y.h)(_.applicationId),
+    B = null == H ? true : H.getIconURL(16),
+    W = (0, c.bG)([S.A], () => null != H ? S.A.getGameByApplication(H) : null),
     X = (0, j.A)({
       location: "UserProfileApplicationWidget",
       applicationId: null == W ? true : W.id,
@@ -541,7 +541,7 @@ let $ = Object.assign(function(e) {
       hasAlreadyLinked: z,
       canStartAuthorization: V,
       startAuthorization: Y
-    } = (0, g.RD)(B),
+    } = (0, g.RD)(H),
     {
       analyticsLocations: $
     } = (0, p.Ay)(f.A.USER_PROFILE_APPLICATION_WIDGET),
@@ -555,9 +555,9 @@ let $ = Object.assign(function(e) {
     }, [V, Y, x, _.applicationId, $]),
     et = null == I && K && !z && V,
     en = (0, r.jsxs)(r.Fragment, {
-      children: [null != H ? (0, r.jsx)("img", {
+      children: [null != B ? (0, r.jsx)("img", {
         className: D.Z2,
-        src: H,
+        src: B,
         width: 16,
         height: 16,
         alt: ""
@@ -565,7 +565,7 @@ let $ = Object.assign(function(e) {
         className: D.qP
       }), (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
-        children: (null == B ? true : B.name) != null ? B.name : (0, r.jsx)("div", {
+        children: (null == H ? true : H.name) != null ? H.name : (0, r.jsx)("div", {
           className: D.jC
         })
       })]

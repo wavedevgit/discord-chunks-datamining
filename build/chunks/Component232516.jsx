@@ -15,28 +15,28 @@ let d = function(e) {
     onSelectSku: t,
     priceOptions: i,
     giftRecipient: d,
-    onWishlistItemClick: c
+    onWishlistItemClick: u
   } = e, {
-    claimableRewards: u
-  } = (0, n.Pv)(), m = null != u && u.length > 0;
-  return (0, r.jsxs)("div", {
+    claimableRewards: c
+  } = (0, r.Pv)(), m = null != c && c.length > 0;
+  return (0, n.jsxs)("div", {
     className: o.H,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: o.u,
-      children: [(0, r.jsx)(a.D3, {
+      children: [(0, n.jsx)(a.D3, {
         onClick: () => t(s.pe.TIER_2),
         isGift: true,
         priceOptions: i,
         showPromotionalGiftBanner: m
-      }), (0, r.jsx)(a.Ls, {
+      }), (0, n.jsx)(a.Ls, {
         onClick: () => t(s.pe.TIER_0),
         isGift: true,
         priceOptions: i,
         removeTopMargin: true
       })]
-    }), (0, r.jsx)(l.A, {
+    }), (0, n.jsx)(l.A, {
       giftRecipient: d,
-      onWishlistItemClick: c
+      onWishlistItemClick: u
     })]
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 78528 **/
 /** chunk id: 958140, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => U
+  h: () => G
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -58,7 +58,7 @@ function k(e) {
   return e
 }
 
-function G(e, t) {
+function U(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -71,10 +71,10 @@ function G(e, t) {
   }), e
 }
 
-function U(e) {
+function G(e) {
   var t, n, i, a;
   let {
-    channel: U,
+    channel: G,
     setIsHangStatusInputFocused: B,
     setIsEmojiPickerOpen: V,
     setPopoutRef: F
@@ -82,11 +82,11 @@ function U(e) {
     defaultStatusVariant: Y,
     allowPermanentClear: q
   } = (0, y.$j)({
-    guildId: U.guild_id,
+    guildId: G.guild_id,
     location: "HangStatusPicker"
-  }), X = (0, O.hy)(Y), J = l.useRef(null), [Q, Z] = l.useState(null != (t = null == K ? true : K.status) ? t : ""), [$, ee] = l.useState(null != (n = null == K ? true : K.emoji) ? n : null), [et, en] = l.useState(false), er = (0, u.bG)([_.A], () => _.A.getCurrentHangStatus()), el = X[er], ei = z.length > 0, es = null == Q || "" === Q.trim(), ea = (0, x.A)(U), eo = Q.trim().length > 0 && Q.trim() !== (null == K || null == (a = K.status) ? true : a.trim()) || null != $ && !o()($, null == K ? true : K.emoji), [ec, eu] = l.useState(false), ed = (0, u.bG)([_.A], () => _.A.getFavoritedStatuses().length >= _.x), ep = Q.length > 0 || null != $, [eh, ef] = (0, g.kn)([d.M.HANG_STATUS_POPOVER_NUX]);
+  }), X = (0, O.hy)(Y), J = l.useRef(null), [Q, Z] = l.useState(null != (t = null == K ? true : K.status) ? t : ""), [$, ee] = l.useState(null != (n = null == K ? true : K.emoji) ? n : null), [et, en] = l.useState(false), er = (0, u.bG)([_.A], () => _.A.getCurrentHangStatus()), el = X[er], ei = z.length > 0, es = null == Q || "" === Q.trim(), ea = (0, x.A)(G), eo = Q.trim().length > 0 && Q.trim() !== (null == K || null == (a = K.status) ? true : a.trim()) || null != $ && !o()($, null == K ? true : K.emoji), [ec, eu] = l.useState(false), ed = (0, u.bG)([_.A], () => _.A.getFavoritedStatuses().length >= _.x), ep = Q.length > 0 || null != $, [eh, ef] = (0, g.kn)([d.M.HANG_STATUS_POPOVER_NUX]);
   l.useEffect(() => {
-    b.default.track(P.HAw.HANG_STATUS_PICKER_OPENED, G(k({}, (0, j.A)(U.id)), {
+    b.default.track(P.HAw.HANG_STATUS_PICKER_OPENED, U(k({}, (0, j.A)(G.id)), {
       num_favorites: z.length,
       num_recents: W.length
     }))
@@ -136,14 +136,14 @@ function U(e) {
             name: null != (t = null == n ? true : n.optionallyDiverseSequence) ? t : "",
             animated: false
           }, 1 === ea.length)) break; while (null == n || (null == n ? true : n.name) == null || o()($, r));
-      null != r && (null == n ? true : n.name) != null && (ee(r), Z(n.name), en(true), null == (e = H.current) || e.focus(), b.default.track(P.HAw.HANG_STATUS_RANDOMIZER_CLICKED, (0, j.A)(U.id)))
-    }, [ea, $, U.id]),
+      null != r && (null == n ? true : n.name) != null && (ee(r), Z(n.name), en(true), null == (e = H.current) || e.focus(), b.default.track(P.HAw.HANG_STATUS_RANDOMIZER_CLICKED, (0, j.A)(G.id)))
+    }, [ea, $, G.id]),
     e_ = l.useCallback((e, t) => {
       let n = (0, v.A)(t);
-      (!ed || e) && ((0, A.My)(n ? t : t.status, n ? null : t.emoji), b.default.track(P.HAw.HANG_STATUS_FAVORITE_CLICKED, G(k({}, (0, j.A)(U.id)), {
+      (!ed || e) && ((0, A.My)(n ? t : t.status, n ? null : t.emoji), b.default.track(P.HAw.HANG_STATUS_FAVORITE_CLICKED, U(k({}, (0, j.A)(G.id)), {
         favorited: !e
       })))
-    }, [U.id, ed]),
+    }, [G.id, ed]),
     eO = l.useCallback(() => {
       B(false)
     }, [B]),
@@ -255,7 +255,7 @@ function U(e) {
       role: "group",
       className: s()(M.groupLabel, D.Os, D.XG),
       children: [(0, r.jsx)(N.k, {
-        guildId: U.guild_id,
+        guildId: G.guild_id,
         onSetActivityStatus: em
       }), ei && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {

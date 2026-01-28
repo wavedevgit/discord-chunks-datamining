@@ -309,7 +309,7 @@ function eo(e) {
       animate: false
     })
   }, [ep]);
-  (0, G.A)(ep.scrollToGuild);
+  (0, U.A)(ep.scrollToGuild);
   let em = l.useCallback(function e(t, n, l) {
       switch (t.type) {
         case k.PJ.FOLDER:
@@ -355,7 +355,7 @@ function eo(e) {
             [ee.R]: b
           }),
           "aria-label": $.intl.string($.t.PjnF2t),
-          children: [(0, r.jsx)(U.A, {
+          children: [(0, r.jsx)(G.A, {
             ref: R,
             isVisible: ep.isItemVisible,
             onJumpTo: ep.handleJumpToGuild,
@@ -405,7 +405,7 @@ function eo(e) {
             return n
           })(Object(a)).forEach(function(e) {
             Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-          }), l)), (0, r.jsx)(U.A, {
+          }), l)), (0, r.jsx)(G.A, {
             reverse: true,
             ref: B,
             isVisible: ep.isItemVisible,

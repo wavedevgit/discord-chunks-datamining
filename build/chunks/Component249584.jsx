@@ -4,9 +4,9 @@ require.d(exports, {
   HW: () => L,
   K8: () => F,
   UB: () => k,
-  bo: () => U,
+  bo: () => G,
   jz: () => B,
-  lw: () => G,
+  lw: () => U,
   mn: () => V
 });
 var Chunk627968 = require("./627968.js");
@@ -101,7 +101,7 @@ function k(e) {
   })
 }
 
-function G(e) {
+function U(e) {
   let {
     guildId: t,
     powerups: n,
@@ -152,7 +152,7 @@ function G(e) {
   })
 }
 
-function U(e) {
+function G(e) {
   let {
     guildId: t,
     powerups: n,

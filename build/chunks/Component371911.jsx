@@ -44,8 +44,8 @@ function I(e) {
     {
       analyticsLocations: L
     } = (0, p.Ay)(d.A.NOTIFICATION_CENTER),
-    [k, G] = l.useState(false),
-    [U, B] = [(0, o.bG)([A.A], () => {
+    [k, U] = l.useState(false),
+    [G, B] = [(0, o.bG)([A.A], () => {
       var e, t;
       return null != (e = null == (t = A.A.settings.inbox) ? true : t.currentTab) ? e : c.Y2.UNREADS
     }), l.useCallback(e => {
@@ -65,14 +65,14 @@ function I(e) {
         e.viewedTutorial = true
       }, b.Sb.INFREQUENT_USER_ACTION)
     }, []), {
-      showTutorial: !t && U === c.Y2.UNREADS,
+      showTutorial: !t && G === c.Y2.UNREADS,
       setSeenTutorial: n
     }),
     H = l.useCallback(() => {
-      G(false), k && (null == I || I())
+      U(false), k && (null == I || I())
     }, [I, k]),
     K = l.useCallback(() => {
-      G(!k), k ? null == I || I() : null == i || i()
+      U(!k), k ? null == I || I() : null == i || i()
     }, [I, i, k]);
   l.useEffect(() => (y._.subscribe(E.jej.TOGGLE_INBOX, K), () => void y._.unsubscribe(E.jej.TOGGLE_INBOX, K)), [K]);
   let {
@@ -82,7 +82,7 @@ function I(e) {
     location: "RecentsPopout"
   }), Y = (0, o.bG)([f.A], () => f.A.hasOverdueReminder(), []) && W && z;
   l.useEffect(() => {
-    U !== c.Y2.BOOKMARKS || W || z || B(c.Y2.MENTIONS), U === c.Y2.GAME_INVITES && B(c.Y2.MENTIONS)
+    G !== c.Y2.BOOKMARKS || W || z || B(c.Y2.MENTIONS), G === c.Y2.GAME_INVITES && B(c.Y2.MENTIONS)
   });
   let q = l.useCallback(e => {
       e.shiftKey || H()
@@ -110,16 +110,16 @@ function I(e) {
             }),
             children: (0, r.jsx)(u.Fmo, {
               component: (0, r.jsx)(j.A, {
-                tab: U,
+                tab: G,
                 setTab: B,
                 badgeState: T,
                 closePopout: H
               }),
-              children: U === c.Y2.FOR_YOU ? (0, r.jsx)(_.Ay, {}) : U === c.Y2.MENTIONS ? (0, r.jsx)(O.A, {
+              children: G === c.Y2.FOR_YOU ? (0, r.jsx)(_.Ay, {}) : G === c.Y2.MENTIONS ? (0, r.jsx)(O.A, {
                 onJump: q
-              }) : W && z && U === c.Y2.BOOKMARKS ? (0, r.jsx)(g.J, {
+              }) : W && z && G === c.Y2.BOOKMARKS ? (0, r.jsx)(g.J, {
                 closePopout: H
-              }) : U === c.Y2.SCHEDULED ? (0, r.jsx)(v.w, {}) : (0, r.jsx)(a.tH, {
+              }) : G === c.Y2.SCHEDULED ? (0, r.jsx)(v.w, {}) : (0, r.jsx)(a.tH, {
                 fallback: (0, r.jsx)(x.T, {}),
                 children: (0, r.jsx)(x.Ay, {
                   onJump: q,

@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 166492, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 91075 **/
+/** chunk id: 166492, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  a: () => i
+  a: () => r
 });
-let r = (0, require("./945810.js").mj)({
+let n = (0, require("./945810.js").mj)({
   name: "2025-12-dm-side-panel-show-recommendations-in-breadcrumbs",
   kind: "user",
   defaultConfig: {
@@ -20,11 +19,11 @@ let r = (0, require("./945810.js").mj)({
   }
 });
 
-function i(e) {
+function r(e) {
   let {
     location: t
   } = e;
-  return r.useConfig({
+  return n.useConfig({
     location: t
   }).enabled
 }

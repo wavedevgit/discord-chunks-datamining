@@ -435,18 +435,18 @@ function ei(e) {
     selected: s,
     collapsed: o,
     voiceStates: c
-  } = e, u = (0, a.cf)([U.Ay], () => ({
-    unread: U.Ay.hasUnread(n.id),
-    mentionCount: U.Ay.getMentionCount(n.id)
-  })), d = (0, a.bG)([B.Ay], () => B.Ay.resolveUnreadSetting(n)), p = (0, a.cf)([M.A, k.A, G.A], () => {
+  } = e, u = (0, a.cf)([G.Ay], () => ({
+    unread: G.Ay.hasUnread(n.id),
+    mentionCount: G.Ay.getMentionCount(n.id)
+  })), d = (0, a.bG)([B.Ay], () => B.Ay.resolveUnreadSetting(n)), p = (0, a.cf)([M.A, k.A, U.A], () => {
     let e = M.A.getChannel(n.parent_id),
       r = k.A.getCheck(n.guild_id);
     return {
-      canManageChannel: G.A.can(J.xBc.MANAGE_CHANNELS, n),
-      canReorderChannel: true !== l && (t.id === Q.V || (null != e ? G.A.can(J.xBc.MANAGE_CHANNELS, e) : G.A.can(J.xBc.MANAGE_CHANNELS, t))),
-      canMoveMembers: G.A.can(J.xBc.MOVE_MEMBERS, n),
-      locked: !G.A.can(J.xBc.CONNECT, n),
-      bypassLimit: G.A.can(J.xBc.MOVE_MEMBERS, n),
+      canManageChannel: U.A.can(J.xBc.MANAGE_CHANNELS, n),
+      canReorderChannel: true !== l && (t.id === Q.V || (null != e ? U.A.can(J.xBc.MANAGE_CHANNELS, e) : U.A.can(J.xBc.MANAGE_CHANNELS, t))),
+      canMoveMembers: U.A.can(J.xBc.MOVE_MEMBERS, n),
+      locked: !U.A.can(J.xBc.CONNECT, n),
+      bypassLimit: U.A.can(J.xBc.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
   }), h = (0, a.bG)([V.A], () => V.A.hasVideo(n.id)), f = (0, g.Ay)(n), m = (0, O.Ay)(n), y = (0, I.Qs)(n.id), _ = (0, a.bG)([A.A], () => null != A.A.getStartTime(n), [n]), {

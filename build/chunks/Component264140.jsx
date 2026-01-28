@@ -486,7 +486,7 @@ class tl extends Chunk64700.PureComponent {
           },
           className: e4.x4,
           channel: e,
-          draftType: eG.C.ChannelMessage
+          draftType: eU.C.ChannelMessage
         }) : null, h || u ? null : this.renderHeaderBar(), this.renderCall(), this.renderEmbeddedActivityPanel(), (0, r.jsxs)("div", {
           className: s()(e4.Qs, {
             [e4.Oo]: i === e1.DUB.NO_CHAT
@@ -639,7 +639,7 @@ class tl extends Chunk64700.PureComponent {
           break;
         case e1.rbe.GUILD_ANNOUNCEMENT:
         case e1.rbe.GUILD_TEXT:
-          a.push((0, r.jsx)(U.A, {
+          a.push((0, r.jsx)(G.A, {
             channel: e
           }, "favorites")), a.push((0, r.jsx)(eE.A, {
             channel: e
@@ -816,9 +816,9 @@ let ti = (0, Chunk456412.A)(tl),
     }, [M, c, P, w]);
     let L = (0, p.bG)([v.Ay], () => v.Ay.getCurrentEmbeddedActivity()),
       k = (0, p.bG)([v.Ay], () => v.Ay.getActivityPanelMode()),
-      U = null != L && !(0, E.A)(null == c ? true : c.id) && k === e9.Gd.PANEL,
+      G = null != L && !(0, E.A)(null == c ? true : c.id) && k === e9.Gd.PANEL,
       B = (0, p.bG)([ez.A], () => null != c && c.isVocalThread() && !u().isEmpty(ez.A.getVoiceStatesForChannel(c.id)), [c]),
-      H = null != c && c.isPrivate() && !U && x,
+      H = null != c && c.isPrivate() && !G && x,
       K = (null == c ? true : c.isGuildVocal()) || H || B,
       W = (0, p.bG)([V.A], () => V.A.getFrameLayoutMode() === e6.y.FOCUSED),
       {
@@ -879,7 +879,7 @@ let ti = (0, Chunk456412.A)(tl),
     l.useEffect(() => {
       let e = e_ && !ey,
         t = e_ && ey && (null == c ? true : c.id) !== ej;
-      (e || t) && (0, G.Dr)(h.M.ACTIVITY_GDM_CALL_TOOLTIP, {
+      (e || t) && (0, U.Dr)(h.M.ACTIVITY_GDM_CALL_TOOLTIP, {
         dismissAction: e2.i.AUTO
       })
     }, [null == c ? true : c.id, ej, ey, e_]);
@@ -901,11 +901,11 @@ let ti = (0, Chunk456412.A)(tl),
       guildSidebarState: el,
       guild: y,
       showCall: !_ && K,
-      showActivityPanel: U,
+      showActivityPanel: G,
       showFramePanel: W,
       channelIsContentGated: Z,
       isMobile: (0, p.bG)([eV.A], () => (null == c ? true : c.type) === e1.rbe.DM && eV.A.isMobileOnline(c.getRecipientId()), [c]),
-      isUnavailable: (0, p.bG)([eU.A], () => (null == c ? true : c.guild_id) != null && eU.A.isUnavailable(c.guild_id), [c]),
+      isUnavailable: (0, p.bG)([eG.A], () => (null == c ? true : c.guild_id) != null && eG.A.isUnavailable(c.guild_id), [c]),
       showRealNameModal: $,
       showWelcomeModal: !X && ee,
       showFollowButton: (null == c ? true : c.type) === e1.rbe.GUILD_ANNOUNCEMENT && (null == y ? true : y.features.has(e1.GuildFeatures.NEWS)) || false
@@ -918,7 +918,7 @@ let ti = (0, Chunk456412.A)(tl),
       isFavorites: ei,
       showHeaderGuildBreadcrumb: ei || es,
       premiumIndicatorEnabled: false,
-      hasTextActivityInPanelMode: U,
+      hasTextActivityInPanelMode: G,
       embeddedActivity: L
     }))
   })

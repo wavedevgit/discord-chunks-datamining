@@ -114,7 +114,7 @@ class q extends Chunk557534.Ay {
       speakerVoiceStates: l,
       numAudience: i
     } = this.props;
-    return (0, r.jsx)(U.A, {
+    return (0, r.jsx)(G.A, {
       channel: e,
       voiceStates: l,
       collapsed: t,
@@ -160,7 +160,7 @@ class q extends Chunk557534.Ay {
         shouldShow: j,
         children: () => (0, r.jsx)(c.m, {
           text: this.getTooltipText(),
-          children: (0, r.jsxs)(G.Ay, {
+          children: (0, r.jsxs)(U.Ay, {
             ref: this.channelItemRef,
             className: H.Ki,
             iconClassName: s()({

@@ -135,12 +135,12 @@ let w = Chunk64700.memo(function(e) {
   } = e, D = (0, o.bG)([A.Ay], () => A.Ay.getVoiceStatesForChannel(t), [t]), M = (0, o.bG)([b.A], () => b.A.hasVideo(t.id)), {
     unread: L,
     mentionCount: k,
-    isMentionLowImportance: G
+    isMentionLowImportance: U
   } = (0, o.cf)([m.Ay], () => ({
     unread: m.Ay.hasUnread(t.id),
     mentionCount: m.Ay.getMentionCount(t.id),
     isMentionLowImportance: m.Ay.getIsMentionLowImportance(t.id)
-  })), U = (0, o.bG)([h.A], () => h.A.isMuted(t.id)), B = l.useCallback(e => {
+  })), G = (0, o.bG)([h.A], () => h.A.isMuted(t.id)), B = l.useCallback(e => {
     (0, f.JA)(t, !e.shiftKey, x.H9.CHANNEL_LIST)
   }, [t]), V = l.useCallback(() => {
     d.A.preload(t.guild_id, t.id)
@@ -204,13 +204,13 @@ let w = Chunk64700.memo(function(e) {
       children: (0, r.jsxs)("div", {
         className: s()(C.Ki, S.iE, S.ZS, {
           [S.J1]: i,
-          [S.F4]: !i && U,
-          [S.V2]: !U && !i && L,
+          [S.F4]: !i && G,
+          [S.V2]: !G && !i && L,
           [S.lY]: R
         }),
         onMouseDown: V,
         onContextMenu: F,
-        children: [!L || U || i ? null : (0, r.jsx)("div", {
+        children: [!L || G || i ? null : (0, r.jsx)("div", {
           className: s()(S.gy, S.WS)
         }), (0, r.jsx)(u.DUT, T(N({}, z), {
           innerRef: Y,
@@ -234,7 +234,7 @@ let w = Chunk64700.memo(function(e) {
                 channel: t
               }) : null, (0, y.A)(k) ? (0, r.jsx)(O.A, {
                 mentionsCount: k,
-                isMentionLowImportance: G
+                isMentionLowImportance: U
               }) : null]
             })]
           })

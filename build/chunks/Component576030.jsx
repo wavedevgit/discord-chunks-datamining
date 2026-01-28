@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 576030, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 83759 **/
+/** chunk id: 576030, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  GM: () => f,
-  mW: () => p,
+  GM: () => p,
+  mW: () => m,
   uq: () => d
 });
 var Chunk627968 = require("./627968.js");
@@ -17,38 +16,38 @@ var Chunk158954 = require("./158954.js"),
   Chunk360469 = require("./360469.js");
 
 function d(e) {
-  let t = null != e.gifterUserId ? c.default.getUser(e.gifterUserId) : null;
-  return null == t ? null : (0, r.jsx)(o.euF, {
+  let t = null != e.gifterUserId ? u.default.getUser(e.gifterUserId) : null;
+  return null == t ? null : (0, r.jsx)(a.euF, {
     src: t.getAvatarURL(true, 48),
-    size: o._3J.SIZE_48,
+    size: a._3J.SIZE_48,
     "aria-label": t.username
   })
 }
 
-function f(e) {
-  return (0, r.jsx)(_, {
+function p(e) {
+  return (0, r.jsx)(f, {
     wishlistItem: e
   })
 }
 
-function p(e) {
+function m(e) {
   let {
     application: t
-  } = e, n = null != t ? t.getIconURL(u.iu.SMALL) : true;
+  } = e, n = null != t ? t.getIconURL(c.iu.SMALL) : true;
   return null != n ? (0, r.jsx)("img", {
     src: n,
     alt: null == t ? true : t.name
-  }) : (0, r.jsx)(i.U1X, {
+  }) : (0, r.jsx)(l.U1X, {
     color: "currentColor",
     size: "xs"
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     wishlistItem: t
-  } = e, n = (0, a.bG)([s.A], () => (0, l.$)(t) ? s.A.getApplication(t.sku.applicationId) : true);
-  return (0, r.jsx)(p, {
+  } = e, n = (0, i.bG)([o.A], () => (0, s.$)(t) ? o.A.getApplication(t.sku.applicationId) : true);
+  return (0, r.jsx)(m, {
     application: n
   })
 }

@@ -110,9 +110,9 @@ function X(e) {
       confirmVariant: "critical-primary",
       cancelText: H.intl.string(H.t["olcKd/"]),
       onConfirm: () => {
-        (0, U.bA)(t)
+        (0, G.bA)(t)
       }
-    }) : (0, U.bA)(t)
+    }) : (0, G.bA)(t)
   }, [t]);
   return (0, r.jsxs)(v.Ay, {
     toolbar: (0, r.jsx)(v.Ay.Icon, {
@@ -222,7 +222,7 @@ function J(e) {
         threadSettings: r,
         privateThreadMode: i,
         location: a,
-        onThreadCreated: U.JA,
+        onThreadCreated: G.JA,
         useDefaultThreadName: true
       });
       return {
@@ -279,7 +279,7 @@ function J(e) {
       location: u,
       enableAIFeatures: x
     }),
-    G = (0, k.Iy)(g, O) ? o.tn0 : o.ysw;
+    U = (0, k.Iy)(g, O) ? o.tn0 : o.ysw;
   return (0, r.jsx)("div", {
     className: K.TE,
     onMouseDown: h,
@@ -300,7 +300,7 @@ function J(e) {
               channelId: "create-thread-null",
               children: [(0, r.jsx)("div", {
                 className: s()(W.P0, K.P0),
-                children: (0, r.jsx)(G, {
+                children: (0, r.jsx)(U, {
                   className: W.Kk
                 })
               }), (0, r.jsxs)(o.nVY, {
@@ -391,11 +391,11 @@ function Z(e) {
     maxLength: F.Ign,
     onChange: e => {
       s({
-        name: (0, G.A)(e, false)
+        name: (0, U.A)(e, false)
       }), "" !== e ? u.A.startTyping(n.id) : u.A.stopTyping(n.id)
     },
     onBlur: () => {
-      let e = (0, G.A)(f, true);
+      let e = (0, U.A)(f, true);
       e !== f && s({
         name: e
       })

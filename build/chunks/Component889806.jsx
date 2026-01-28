@@ -59,7 +59,7 @@ function k(e) {
   return e
 }
 
-function G(e, t) {
+function U(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -71,7 +71,7 @@ function G(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class U extends Chunk557534.Ay {
+class G extends Chunk557534.Ay {
   componentWillUnmount() {
     this.resetTextChannelPopoutTimers()
   }
@@ -206,7 +206,7 @@ class U extends Chunk557534.Ay {
       return t.isModeratorReportChannel() || i ? null : null != l && l.length > 0 && s && !n ? (0, r.jsx)(w.A, {
         onAction: this.handleActivitiesPopoutClose,
         channel: t
-      }) : (0, r.jsx)(I.A, G(k({}, e), {
+      }) : (0, r.jsx)(I.A, U(k({}, e), {
         channel: this.props.channel
       }))
     }), L(this, "handleContextMenu", e => {
@@ -217,7 +217,7 @@ class U extends Chunk557534.Ay {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("60200")]).then(n.bind(n, 4027));
-        return n => (0, r.jsx)(e, G(k({}, n), {
+        return n => (0, r.jsx)(e, U(k({}, n), {
           channel: t,
           selected: true
         }))
@@ -228,7 +228,7 @@ class U extends Chunk557534.Ay {
           let {
             default: e
           } = await Promise.all([n.e("97262"), n.e("29534"), n.e("39778"), n.e("54266")]).then(n.bind(n, 385913));
-          return n => (0, r.jsx)(e, G(k({}, n), {
+          return n => (0, r.jsx)(e, U(k({}, n), {
             user: l,
             channel: t,
             showModalItems: false
@@ -240,7 +240,7 @@ class U extends Chunk557534.Ay {
         let {
           default: e
         } = await n.e("78580").then(n.bind(n, 907647));
-        return n => (0, r.jsx)(e, G(k({}, n), {
+        return n => (0, r.jsx)(e, U(k({}, n), {
           channel: t
         }))
       });
@@ -249,7 +249,7 @@ class U extends Chunk557534.Ay {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("57287"), n.e("77666")]).then(n.bind(n, 370372));
-        return n => (0, r.jsx)(e, G(k({}, n), {
+        return n => (0, r.jsx)(e, U(k({}, n), {
           channel: t,
           guild: l
         }))
@@ -257,7 +257,7 @@ class U extends Chunk557534.Ay {
     })
   }
 }
-let B = (0, Chunk676002.a)(U);
+let B = (0, Chunk676002.a)(G);
 
 function V(e) {
   let {
@@ -294,7 +294,7 @@ function V(e) {
     enableActivities: w,
     resolvedUnreadSetting: g
   }), L = (0, h.Ay)(t);
-  return (0, a.bG)([x.A, O.Ay], () => x.A.getChannelId() !== t.id && O.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, r.jsx)(B, G(k({}, d, m, e), {
+  return (0, a.bG)([x.A, O.Ay], () => x.A.getChannelId() !== t.id && O.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, r.jsx)(B, U(k({}, d, m, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: I,

@@ -54,8 +54,8 @@ let _ = (0, Chunk456412.A)(e => {
       [u.ip.SELECTED]: 1
     },
     k = (0, d.Uo)(O.id),
-    [G, U] = (0, d.RG)(O.id, L, k),
-    B = [Math.max(null != (t = G[0]) ? t : 1, 1), Math.max(null != (n = G[1]) ? n : 1, 1), G[2]],
+    [U, G] = (0, d.RG)(O.id, L, k),
+    B = [Math.max(null != (t = U[0]) ? t : 1, 1), Math.max(null != (n = U[1]) ? n : 1, 1), U[2]],
     {
       speakerTileWidth: V,
       speakerTileHeight: F
@@ -64,7 +64,7 @@ let _ = (0, Chunk456412.A)(e => {
       speakerTileHeight: _
     }),
     H = C ? j - 32 : Math.min(j - 64, 3 * V + 8),
-    K = e => e === G.length - 1 || 0 === N && 1 === e,
+    K = e => e === U.length - 1 || 0 === N && 1 === e,
     [W, z] = l.useState(false),
     [Y, q] = l.useState(false);
   return (0, r.jsx)(h.A, {
@@ -96,7 +96,7 @@ let _ = (0, Chunk456412.A)(e => {
       let {
         section: t,
         row: n
-      } = e, i = U[t][n];
+      } = e, i = G[t][n];
       if ((null == i ? true : i.length) == null) return null;
       switch (t) {
         case 0:
@@ -132,7 +132,7 @@ let _ = (0, Chunk456412.A)(e => {
           return null
       }
     },
-    rowHeight: e => null == U[e][0] ? 0 : 0 === e ? H / m.i + 8 : 1 === e ? W ? 0 : F : 98 * !Y,
+    rowHeight: e => null == G[e][0] ? 0 : 0 === e ? H / m.i + 8 : 1 === e ? W ? 0 : F : 98 * !Y,
     renderFooter: e => {
       let {
         section: t

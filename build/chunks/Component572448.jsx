@@ -188,7 +188,7 @@ function k(e) {
     mentionCount: l
   } = e, s = (0, a.bG)([v.A], () => v.A.getGuild(t.guild_id)), c = (0, a.bG)([j.A], () => j.A.getChannel(t.parent_id)), d = (0, a.bG)([E.Ay], () => E.Ay.getIsMentionLowImportance(t.id)), p = (0, A.gU)(t, s), h = (0, b.Ay)(t, false), f = null == c ? null == s ? true : s.name : "".concat(null == s ? true : s.name, " › ").concat(c.name), g = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
     members: t.recipients.length + 1
-  }) : t.isPrivate() ? (0, r.jsx)(G, {
+  }) : t.isPrivate() ? (0, r.jsx)(U, {
     channel: t
   }) : (0, r.jsx)(u.DUT, {
     className: i()(T.W$, T.J5),
@@ -229,7 +229,7 @@ function k(e) {
   })
 }
 
-function G(e) {
+function U(e) {
   let {
     channel: t
   } = e, {

@@ -52,8 +52,8 @@ function A(e) {
   }), D = (0, l.bG)([o.A], () => o.A.isFetchingUserOutbox(t.id)), L = t.id === n.id, G = (0, l.bG)([u.A, c.A], () => {
     let e = L ? u.A.getStatus() : c.A.getStatus(t.id);
     return e === i.clD.OFFLINE || e === i.clD.INVISIBLE
-  }), U = T.length > 0 || null != C, M = S && null == C && null == R && null != k, F = !G && (U || M), B = N.length > 0;
-  if (!F && !B && D) return (0, r.jsx)("div", {
+  }), U = T.length > 0 || null != C, M = S && null == C && null == R && null != k, F = !G && (U || M), H = N.length > 0;
+  if (!F && !H && D) return (0, r.jsx)("div", {
     className: I.kR,
     children: Array.from({
       length: 8
@@ -68,13 +68,13 @@ function A(e) {
       })]
     }, t))
   });
-  if (!F && !B && !D) {
-    var H;
+  if (!F && !H && !D) {
+    var B;
     return L ? (0, r.jsx)(O.qv, {
       onClose: E
     }) : (0, r.jsx)(O.zf, {
       user: t,
-      guildId: null != (H = null == A ? true : A.guildId) ? H : w,
+      guildId: null != (B = null == A ? true : A.guildId) ? B : w,
       channelId: P,
       onClose: E
     })
@@ -109,7 +109,7 @@ function A(e) {
           })
         })]
       })
-    }) : null, B ? (0, r.jsx)(j.A, {
+    }) : null, H ? (0, r.jsx)(j.A, {
       heading: _.intl.string(_.t.jzgEoL),
       introText: L ? _.intl.format(_.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(i.MzZ, {

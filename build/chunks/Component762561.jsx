@@ -1,7 +1,7 @@
 /** Chunk was on 78528 **/
 /** chunk id: 762561, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => G
+  A: () => U
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -57,13 +57,13 @@ function k(e) {
   return e
 }
 
-function G(e) {
+function U(e) {
   var t;
   let {
     user: n,
     currentUser: m,
     channel: M
-  } = e, G = __OVERLAY__, B = (0, b.Ay)(n.id), V = (0, o.Ay)(), F = l.useRef(Date.now()), {
+  } = e, U = __OVERLAY__, B = (0, b.Ay)(n.id), V = (0, o.Ay)(), F = l.useRef(Date.now()), {
     analyticsLocations: H
   } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), K = (0, g.pb)({
     layout: "SIDEBAR",
@@ -137,7 +137,7 @@ function G(e) {
                 displayProfile: B,
                 channelId: M.id,
                 themeType: D.d.SIDEBAR,
-                onOpenProfile: G ? true : J
+                onOpenProfile: U ? true : J
               }), (0, r.jsx)(N.A, {
                 user: n,
                 channelId: M.id,
@@ -150,7 +150,7 @@ function G(e) {
               displayProfile: B,
               channel: M,
               isHoveringOrFocusing: null == q.interactionType && z,
-              onOpenProfile: G ? true : J
+              onOpenProfile: U ? true : J
             }), Q && (0, r.jsx)("div", {
               className: L.sJ,
               children: (0, r.jsx)(v.A, {
@@ -175,7 +175,7 @@ function G(e) {
               user: n,
               channelId: M.id
             })]
-          }), !G && (0, r.jsx)(U, {
+          }), !U && (0, r.jsx)(G, {
             handleOpenProfile: J,
             analyticsLocations: H,
             context: K
@@ -188,7 +188,7 @@ function G(e) {
     })
   })
 }
-let U = e => {
+let G = e => {
   let {
     handleOpenProfile: t,
     analyticsLocations: n,

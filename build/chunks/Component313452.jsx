@@ -113,9 +113,9 @@ function D(e) {
     } = e,
     L = (0, y.op)(),
     k = l.useRef(null),
-    G = (0, p.A)(D, k),
+    U = (0, p.A)(D, k),
     {
-      entrypoint: U,
+      entrypoint: G,
       notificationCenterVariant: B
     } = (0, A.X8)({
       location: "NotificationsInboxSidebarList"
@@ -259,7 +259,7 @@ function D(e) {
   }, [er]);
   return (0, y.Hi)({
     notificationCenterVariant: B,
-    entrypoint: U,
+    entrypoint: G,
     messages: n,
     unreadMessages: i,
     messagesByCategory: X,
@@ -270,7 +270,7 @@ function D(e) {
     onDoubleClick: T,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.hD, {
-      navigator: G,
+      navigator: U,
       children: (0, r.jsx)(c.PR, {
         children: e => {
           var t, n;

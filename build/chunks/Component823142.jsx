@@ -112,11 +112,11 @@ let N = Chunk64700.memo(function(e) {
           }))
         })
       }, [i]),
-      G = (0, a.rm)(i.id),
+      U = (0, a.rm)(i.id),
       {
-        role: U,
+        role: G,
         tabIndex: B
-      } = G,
+      } = U,
       V = function(e, t) {
         if (null == e) return {};
         var n, r, l, i = {};
@@ -133,7 +133,7 @@ let N = Chunk64700.memo(function(e) {
           }(e, t), Object.getOwnPropertySymbols)
           for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
         return i
-      }(G, ["role", "tabIndex"]),
+      }(U, ["role", "tabIndex"]),
       F = l.useRef(null),
       H = l.useRef(null),
       K = (0, r.jsxs)("li", {

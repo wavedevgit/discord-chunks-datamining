@@ -91,19 +91,19 @@ function C(e) {
       icon: c.Fzq,
       users: D
     }),
-    G = (0, r.jsx)(x, {
+    U = (0, r.jsx)(x, {
       icon: c.k9F,
       users: R
     }),
     {
-      isMuted: U,
+      isMuted: G,
       muteConfig: B
     } = (0, a.cf)([y.Ay], () => ({
       isMuted: y.Ay.isChannelMuted(null, w),
       muteConfig: y.Ay.getChannelMuteConfig(null, w)
     }), [w]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [L, k, G, U ? (0, r.jsx)(E, {
+    children: [L, k, U, G ? (0, r.jsx)(E, {
       muteConfig: B,
       className: s()(v.LM, {
         [v.Sx]: null != L || null != k

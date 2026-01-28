@@ -64,12 +64,12 @@ function C(e) {
   let R = (0, c.bG)([m.A], () => m.A.can(_.xBc.CREATE_INSTANT_INVITE, t), [t]),
     [D, M] = l.useState(false),
     [L, k] = l.useState("unknown"),
-    G = l.useRef(null),
+    U = l.useRef(null),
     {
-      isHoveringOrFocusing: U
-    } = (0, y.L7)(R ? i : G),
+      isHoveringOrFocusing: G
+    } = (0, y.L7)(R ? i : U),
     [B, V] = l.useState(false),
-    F = U || B,
+    F = G || B,
     H = l.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
       b.default.track(_.HAw.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
@@ -183,7 +183,7 @@ function C(e) {
                 lineClamp: 1,
                 children: O.intl.string(O.t["EE+P0H"])
               })
-            }), U ? (0, r.jsx)(d.DUT, {
+            }), G ? (0, r.jsx)(d.DUT, {
               className: j.VN,
               onClick: () => W("user_explicit"),
               "aria-label": O.intl.string(O.t.cpT0Cq),

@@ -146,9 +146,9 @@ class Y extends Chunk64700.PureComponent {
         default:
           E.message = F.intl.string(F.t.rEBKvg), E.buttonText = F.intl.string(F.t["r8/DT+"]), E.buttonVariant = "primary", E.onButtonClick = this.handleShowMemberVerification
       } else if (O || null == j) l && !A ? (E.message = F.intl.string(F.t["2dThMM"]), E.buttonText = F.intl.string(F.t["50gfOv"]), E.onButtonClick = this.handleVerifyPhone) : i ? (E.message = F.intl.string(F.t.FkGPS5), E.buttonText = F.intl.string(F.t.lm1UKt), E.onButtonClick = this.handleResendVerification) : s ? (E.message = F.intl.formatToPlainString(F.t.IH7RMF, {
-        min: U.$8o.MEMBER_AGE
+        min: G.$8o.MEMBER_AGE
       }), E.countdown = a) : o && (E.message = F.intl.formatToPlainString(F.t["2JA2GH"], {
-        min: U.$8o.ACCOUNT_AGE
+        min: G.$8o.ACCOUNT_AGE
       }), E.countdown = c);
       else {
         var C;
@@ -166,7 +166,7 @@ class Y extends Chunk64700.PureComponent {
         shouldShowLurkerModeSuccessPopout: false
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, r.jsx)(G.A, z(W({}, E), {
+      children: e => (0, r.jsx)(U.A, z(W({}, E), {
         children: (0, r.jsxs)("div", {
           ref: this.textAreaContainerRef,
           children: [this.renderMemberVerificationSuccessModal(), g ? (0, r.jsx)(u.YNO, {
@@ -266,7 +266,7 @@ class Y extends Chunk64700.PureComponent {
       let e = this.props.channel.getGuildId();
       try {
         await h.A.joinGuild(e, {
-          source: U.Q4z.CHAT_INPUT_BLOCKER
+          source: G.Q4z.CHAT_INPUT_BLOCKER
         })
       } catch (e) {
         this.setState({
@@ -327,10 +327,10 @@ function q(e) {
   let {
     channel: l,
     children: i
-  } = e, s = l.getGuildId(), o = (0, a.bG)([w.A], () => w.A.getGuild(s)), c = (0, a.bG)([R.A], () => R.A.getCheck(s)), u = l.type === U.rbe.GUILD_ANNOUNCEMENT && null != o && o.features.has(U.GuildFeatures.NEWS), d = (0, a.bG)([T.A], () => u ? T.A.getFollowerStatsForChannel(l.id) : null), p = (0, a.bG)([x.A], () => x.A.isLurking(s)), h = (0, a.bG)([M.default], () => M.default.getCurrentUser()), g = null != (t = null == h ? true : h.isStaff()) && t, m = (0, a.bG)([P.Ay], () => {
+  } = e, s = l.getGuildId(), o = (0, a.bG)([w.A], () => w.A.getGuild(s)), c = (0, a.bG)([R.A], () => R.A.getCheck(s)), u = l.type === G.rbe.GUILD_ANNOUNCEMENT && null != o && o.features.has(G.GuildFeatures.NEWS), d = (0, a.bG)([T.A], () => u ? T.A.getFollowerStatsForChannel(l.id) : null), p = (0, a.bG)([x.A], () => x.A.isLurking(s)), h = (0, a.bG)([M.default], () => M.default.getCurrentUser()), g = null != (t = null == h ? true : h.isStaff()) && t, m = (0, a.bG)([P.Ay], () => {
     var e, t;
     return null != h && null != (e = null == (t = P.Ay.getMember(s, h.id)) ? true : t.isPending) && e
-  }), b = !!(0, _.Qd)(o), A = (0, a.bG)([v.A], () => v.A.shouldShowPopout(s)), j = (0, a.bG)([D.A], () => D.A.can(U.xBc.SEND_MESSAGES, l)), E = (0, a.bG)([O.A], () => O.A.getRequest(s)), {
+  }), b = !!(0, _.Qd)(o), A = (0, a.bG)([v.A], () => v.A.shouldShowPopout(s)), j = (0, a.bG)([D.A], () => D.A.can(G.xBc.SEND_MESSAGES, l)), E = (0, a.bG)([O.A], () => O.A.getRequest(s)), {
     showLinkedLobbyApplicationLoadingIndicator: C,
     requiredLinkedLobbyApplication: S
   } = (0, k.A)(l.linkedLobby), I = z(W({}, c), {
@@ -338,7 +338,7 @@ function q(e) {
     isLurking: p,
     isFollowable: u,
     shouldShowLurkerModeSuccessPopout: A,
-    showLurkerModeUpsellPopout: p && null != o && L.MJ(U.xBc.SEND_MESSAGES, l),
+    showLurkerModeUpsellPopout: p && null != o && L.MJ(G.xBc.SEND_MESSAGES, l),
     theme: N.A.theme,
     canSendMessages: j,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,

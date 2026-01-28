@@ -111,7 +111,7 @@ class eh extends(r = Chunk64700.PureComponent) {
   componentDidMount() {
     this.setState({
       initialized: true
-    }), (0, G.Ei)(this.getVisibleChannels)
+    }), (0, U.Ei)(this.getVisibleChannels)
   }
   componentWillUnmount() {
     this.updateChannelListScroll.cancel()
@@ -853,7 +853,7 @@ function eg(e) {
 }
 
 function em(e) {
-  let t = (0, U.A)(e.guild),
+  let t = (0, G.A)(e.guild),
     n = (0, u.cf)([L.A], () => L.A.getGuild(e.guildId, {
       guildActionRows: t
     })),

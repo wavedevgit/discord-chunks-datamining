@@ -43,8 +43,8 @@ function N(e) {
     openClips: L
   } = e, {
     analyticsLocations: k,
-    newestAnalyticsLocation: G
-  } = (0, u.Ay)(), U = (0, h.s)({
+    newestAnalyticsLocation: U
+  } = (0, u.Ay)(), G = (0, h.s)({
     channel: t
   }), B = (0, i.bG)([g.A], () => g.A.isInProgress());
 
@@ -117,7 +117,7 @@ function N(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: G
+      analyticsLocation: U
     }), (0, c.LV)({
       guildId: t.guild_id
     })
@@ -299,7 +299,7 @@ function N(e) {
             action: () => (0, h.e0)({
               channel: t
             }),
-            children: U
+            children: G
           }, "scheduled_message");
         case j.v.SUMMARIZE_THREAD:
           return (0, r.jsx)(a.Drp, {

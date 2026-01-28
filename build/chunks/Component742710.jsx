@@ -289,7 +289,7 @@ function D(e) {
   } = (0, _.A)(I), U = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, B = 1 === (0, m.cv)(o), H = !c && F, W = H && (0, m.y9)(o), X = H && !B, {
+  }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, H = 1 === (0, m.cv)(o), B = !c && F, W = B && (0, m.y9)(o), X = B && !H, {
     registerDragHandleRef: K
   } = (0, y.r)();
   if (G) return (0, r.jsx)(j.E, {});

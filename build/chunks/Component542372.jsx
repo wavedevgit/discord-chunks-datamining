@@ -84,14 +84,14 @@ function _(e) {
       channel: t,
       maybeLeaveFullScreen: M
     },
-    G = l.useRef(k);
+    U = l.useRef(k);
   return (l.useEffect(() => {
-    G.current = k
+    U.current = k
   }), l.useEffect(() => {
     let {
       channel: e,
       maybeLeaveFullScreen: t
-    } = G.current;
+    } = U.current;
     return g.default.track(y.HAw.VIDEO_LAYOUT_TOGGLED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

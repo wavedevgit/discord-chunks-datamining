@@ -43,8 +43,8 @@ let I = (0, Chunk240248.xI)(Chunk319060.A.FOLDER_ITEM_ANIMATION_DURATION),
         unread: M = false,
         defaultFolderName: L,
         draggable: k = false,
-        sorting: G = false,
-        onDragStart: U,
+        sorting: U = false,
+        onDragStart: G,
         onDragEnd: B,
         onExpandCollapse: V,
         onContextMenu: F,
@@ -64,13 +64,13 @@ let I = (0, Chunk240248.xI)(Chunk319060.A.FOLDER_ITEM_ANIMATION_DURATION),
       et = Q || $,
       en = (0, f.qK)("FolderItem");
     l.useEffect(() => {
-      G && Z(false)
-    }, [G]);
+      U && Z(false)
+    }, [U]);
     let [{
       dragging: er
     }, el] = (0, a.i)({
       type: b.PJ.FOLDER,
-      item: () => (null == U || U(), {
+      item: () => (null == G || G(), {
         type: b.PJ.FOLDER,
         nodeId: d.id
       }),
@@ -106,7 +106,7 @@ let I = (0, Chunk240248.xI)(Chunk319060.A.FOLDER_ITEM_ANIMATION_DURATION),
         className: S.Io
       }), (0, r.jsx)(v.A, {
         text: ea,
-        disabled: G,
+        disabled: U,
         selected: T,
         disableWrapper: true,
         children: (0, r.jsx)("div", {
@@ -123,7 +123,7 @@ let I = (0, Chunk240248.xI)(Chunk319060.A.FOLDER_ITEM_ANIMATION_DURATION),
           }) : (0, r.jsx)(y.A, {
             folderNode: d,
             expanded: P,
-            sorting: G,
+            sorting: U,
             mediaState: w,
             mentionCount: R,
             isMentionLowImportance: D,

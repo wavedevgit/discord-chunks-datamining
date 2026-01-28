@@ -42,7 +42,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk861379 = require("./861379.js");
 
-function U(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -79,7 +79,7 @@ function V(e) {
     numUsers: t
   } = e;
   return (0, r.jsx)("div", {
-    className: G.BN,
+    className: U.BN,
     children: (0, r.jsxs)(o.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
@@ -96,15 +96,15 @@ function F(e) {
     count: t
   });
   return (0, r.jsxs)("div", {
-    className: s()(G.yJ, {
-      [G.Nr]: n
+    className: s()(U.yJ, {
+      [U.Nr]: n
     }),
     children: [(0, r.jsx)("div", {
-      className: G.$L,
+      className: U.$L,
       children: (0, r.jsx)(o.LoC, {
         size: "md",
         color: "currentColor",
-        className: G.wG
+        className: U.wG
       })
     }), (0, r.jsx)(o.Text, {
       color: "text-muted",
@@ -159,10 +159,10 @@ let H = (0, Chunk296216.J)(function(e) {
     location: "VoiceUser"
   }), ej = l.useRef(null), [ev, ex] = l.useState(false), eE = l.useRef(null), [eC, eS] = l.useState(false), [eI, eN] = l.useState(false), [eT, eP] = l.useState(false), [ew, eR] = l.useState(false), eD = eI || ew || eT, eM = eC || eD, eL = (null == ey ? true : ey.session_id) != null, ek = () => {
     ex(!ev)
-  }, eG = (e, t) => {
+  }, eU = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
-    null != t && n.has(t) && (eT && eP(false), eI && eN(false)), eU()
-  }, eU = () => {
+    null != t && n.has(t) && (eT && eP(false), eI && eN(false)), eG()
+  }, eG = () => {
     null == eo || eo(h.id)
   }, eB = e => {
     (!eO || em) && (e ? eE.current = setTimeout(() => {
@@ -188,7 +188,7 @@ let H = (0, Chunk296216.J)(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("52458")]).then(n.bind(n, 107632));
-        return t => (0, r.jsx)(e, B(U({}, t), {
+        return t => (0, r.jsx)(e, B(G({}, t), {
           user: h,
           guildId: V.guild_id,
           channel: V,
@@ -200,11 +200,11 @@ let H = (0, Chunk296216.J)(function(e) {
         }))
       })
     },
-    eK = e => em ? (0, r.jsx)(v.h, B(U({}, e), {
+    eK = e => em ? (0, r.jsx)(v.h, B(G({}, e), {
       channel: V,
       setIsHangStatusInputFocused: eN,
       setIsEmojiPickerOpen: eR
-    })) : null != eA ? (0, r.jsx)(x.E, B(U({}, e), {
+    })) : null != eA ? (0, r.jsx)(x.E, B(G({}, e), {
       hangStatusActivity: eA,
       channel: V,
       userId: h.id
@@ -221,12 +221,12 @@ let H = (0, Chunk296216.J)(function(e) {
       location: eg
     }),
     eY = (0, r.jsx)("div", {
-      className: G.kZ,
+      className: U.kZ,
       "data-dnd-name": V.name,
       onMouseEnter: eh ? true : () => {
         eO ? (em && e_ && !ev && !eM && eS(true), ev || null == ea || ea(h.id)) : (er || e_ || eL) && !ev && (null == ea || ea(h.id))
       },
-      onMouseLeave: eh ? true : eU,
+      onMouseLeave: eh ? true : eG,
       children: (0, r.jsx)(C.A, {
         clickTrap: (null == h ? true : h.id) === (null == (t = P.default.getCurrentUser()) ? true : t.id) && ev,
         targetElementRef: ej,
@@ -262,7 +262,7 @@ let H = (0, Chunk296216.J)(function(e) {
               voicePlatform: ep,
               embeddedApplication: Y,
               avatarContainerClass: s()({
-                [G.dj]: true
+                [U.dj]: true
               }),
               disabled: eh && !t,
               selected: ev,
@@ -280,7 +280,7 @@ let H = (0, Chunk296216.J)(function(e) {
             var l;
             return (0, r.jsx)(a.m, {
               text: null != (l = (0, A.A)(ed)) ? l : k.intl.string(k.t.IyYqqY),
-              children: (0, r.jsx)(S.Ay, U({
+              children: (0, r.jsx)(S.Ay, G({
                 ref: ej
               }, n))
             })
@@ -289,7 +289,7 @@ let H = (0, Chunk296216.J)(function(e) {
           return e_ && eM && (!eO || em) ? c = eK : eO ? c = em && e_ ? eK : () => (0, r.jsx)(D.A, {
             channel: V,
             user: h,
-            onAction: eU,
+            onAction: eG,
             onWatchStream: er ? eF : true,
             previewIsOpen: eu,
             hangStatusActivity: eA
@@ -298,10 +298,10 @@ let H = (0, Chunk296216.J)(function(e) {
             position: "right",
             renderPopout: c,
             shouldShow: (ec || e_ && eD && (!eO || em)) && !ev,
-            onRequestClose: eG,
+            onRequestClose: eU,
             align: e_ && eM && !em && !eO ? "center" : true,
             spacing: e_ && eM && (!eO || em) ? 8 : 0,
-            children: () => (0, r.jsx)(S.Ay, B(U({}, n), {
+            children: () => (0, r.jsx)(S.Ay, B(G({}, n), {
               ref: ej,
               onMouseDown: e.onMouseDown,
               onKeyDown: e.onKeyDown,

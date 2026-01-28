@@ -58,7 +58,7 @@ function k(e) {
   return e
 }
 
-function G(e, t) {
+function U(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,7 +70,7 @@ function G(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let U = Chunk64700.memo(function() {
+let G = Chunk64700.memo(function() {
   return (0, l.jsxs)("svg", {
     width: "184",
     height: "428",
@@ -328,7 +328,7 @@ class B extends(r = Chunk64700.Component) {
           num_users_visible: a.length,
           num_users_visible_with_mobile_indicator: o.filter(e => null != e && T.A.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = true, m.Ay.trackWithMetadata(R.HAw.DM_LIST_VIEWED, G(k({}, u, (0, A.F)()), {
+      this.hasReportedAnalytics = true, m.Ay.trackWithMetadata(R.HAw.DM_LIST_VIEWED, U(k({}, u, (0, A.F)()), {
         visible_user_ids: o.filter(e => null != e),
         changelog_dm_visible: c
       }))
@@ -369,7 +369,7 @@ class B extends(r = Chunk64700.Component) {
       } = e, {
         privateChannelIds: r
       } = this.props;
-      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, l.jsx)(U, {}, "no-private-channels") : this.renderDM(t, n)
+      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, l.jsx)(G, {}, "no-private-channels") : this.renderDM(t, n)
     }), L(this, "renderSection", e => {
       let {
         section: t
@@ -458,8 +458,8 @@ let V = e => {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [R]), U = (0, O.GV)(), V = (0, c.Ay)({
-    id: "private-channels-".concat(U),
+  }), [R]), G = (0, O.GV)(), V = (0, c.Ay)({
+    id: "private-channels-".concat(G),
     isEnabled: x,
     scrollToStart: M,
     scrollToEnd: L,
@@ -470,7 +470,7 @@ let V = e => {
     value: y,
     children: (0, l.jsx)(o.hD, {
       navigator: V,
-      children: (0, l.jsx)(B, G(k({}, e), {
+      children: (0, l.jsx)(B, U(k({}, e), {
         density: t,
         channels: m,
         privateChannelIds: A,

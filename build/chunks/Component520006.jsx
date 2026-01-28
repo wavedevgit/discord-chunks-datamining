@@ -73,13 +73,13 @@ function y(e) {
     return i
   }(e, ["applicationId", "stream", "channel", "exitFullScreen", "appContext", "analyticsLocation", "guildScheduledEvent", "shouldPrioritizeGroupPlusIcon", "isRichPresenceInvite", "iconClassName", "look", "size", "buttonText", "color"]), w = (0, d.Us)(), {
     parentAnalyticsLocation: R
-  } = (0, c.Ay)(), D = null == y ? true : y.getGuildId(), M = (0, s.bG)([p.A], () => null != D ? p.A.getGuild(D) : null, [D]), L = (0, s.bG)([h.A], () => null != t ? h.A.getApplicationActivity(t) : true), k = null == t || x ? a.DpX : a.dCJ, G = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
+  } = (0, c.Ay)(), D = null == y ? true : y.getGuildId(), M = (0, s.bG)([p.A], () => null != D ? p.A.getGuild(D) : null, [D]), L = (0, s.bG)([h.A], () => null != t ? h.A.getApplicationActivity(t) : true), k = null == t || x ? a.DpX : a.dCJ, U = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
   return null != L && E ? (0, r.jsx)(g.A, {
     onClick: () => {
       null != R && (0, u.X)(R, u.O.INVITE), o.qf(L, false, w)
     },
     iconComponent: k,
-    label: G,
+    label: U,
     iconClassName: C,
     look: S,
     size: I,
@@ -140,7 +140,7 @@ function y(e) {
         })
     },
     iconComponent: k,
-    label: G,
+    label: U,
     iconClassName: C,
     look: S,
     size: I,

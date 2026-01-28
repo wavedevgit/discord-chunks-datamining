@@ -12,7 +12,7 @@ function l(e) {
   let {
     cardSize: t = a.Y.MEDIUM
   } = e;
-  return (0, r.jsx)(n.Zu, {
+  return (0, n.jsx)(r.Zu, {
     cardSize: t
   })
 }

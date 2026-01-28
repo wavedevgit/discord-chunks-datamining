@@ -1,7 +1,7 @@
 /** Chunk was on 78528 **/
 /** chunk id: 707251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => G
+  A: () => U
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -91,13 +91,13 @@ function k(e) {
   })
 }
 
-function G(e) {
+function U(e) {
   var t;
   let {
     channel: n,
     toggleRequestToSpeakSidebar: i,
     showRequestToSpeakSidebar: d
-  } = e, p = (0, m.Ay)(n), h = (0, a.bG)([T.A], () => T.A.getStageInstanceByChannel(n.id)), f = (0, C.uy)(n.id), g = (0, C.zy)(n.id, S.ip.AUDIENCE), b = (0, a.bG)([v.A], () => v.A.getGuild(n.guild_id), [n.guild_id]), O = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, j = null != b && b.features.has(R.GuildFeatures.COMMUNITY) ? O < R.p2C : (null == b ? true : b.premiumTier) !== R.TVA.TIER_3 && O <= R.nyz, I = (0, w.A)(n), P = (0, a.bG)([x.A], () => x.A.can(N.QY, n)), G = () => {
+  } = e, p = (0, m.Ay)(n), h = (0, a.bG)([T.A], () => T.A.getStageInstanceByChannel(n.id)), f = (0, C.uy)(n.id), g = (0, C.zy)(n.id, S.ip.AUDIENCE), b = (0, a.bG)([v.A], () => v.A.getGuild(n.guild_id), [n.guild_id]), O = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, j = null != b && b.features.has(R.GuildFeatures.COMMUNITY) ? O < R.p2C : (null == b ? true : b.premiumTier) !== R.TVA.TIER_3 && O <= R.nyz, I = (0, w.A)(n), P = (0, a.bG)([x.A], () => x.A.can(N.QY, n)), U = () => {
     u.A.updateStageVideoLimitBoostUpsellDismissed(n.id, true), E.default.track(R.HAw.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: D.e.VIDEO_STAGE_LIMIT,
@@ -181,7 +181,7 @@ function G(e) {
   return I ? (0, r.jsxs)("div", {
     children: [F, (0, r.jsxs)("div", {
       className: L.bp,
-      children: [(0, r.jsx)(U, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(G, {}), (0, r.jsxs)("div", {
         className: L.Qq,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
@@ -196,7 +196,7 @@ function G(e) {
         className: L.Uo,
         children: j ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.Button, {
-            onClick: G,
+            onClick: U,
             size: "sm",
             variant: "secondary",
             text: M.intl.string(M.t.L5eIZ2)
@@ -220,7 +220,7 @@ function G(e) {
           })]
         }) : (0, r.jsx)(c.Button, {
           variant: "primary",
-          onClick: G,
+          onClick: U,
           size: "sm",
           text: M.intl.string(M.t.WAI6xu)
         })
@@ -229,7 +229,7 @@ function G(e) {
   }) : F
 }
 
-function U() {
+function G() {
   return (0, r.jsxs)("svg", {
     width: "36",
     height: "36",

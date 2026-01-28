@@ -107,7 +107,7 @@ function k(e) {
   })
 }
 
-function G(e) {
+function U(e) {
   let {
     searchContext: t,
     isFeedbackVisible: n,
@@ -119,7 +119,7 @@ function G(e) {
   }) : null
 }
 
-function U(e) {
+function G(e) {
   let {
     messages: t,
     blockCount: n,
@@ -344,7 +344,7 @@ let B = [],
           children: D.intl.format(D.t["gQeg/R"], {
             handleClick: er
           })
-        }), (0, r.jsx)(U, {
+        }), (0, r.jsx)(G, {
           messages: d,
           blockCount: h,
           ignoreCount: f,
@@ -361,7 +361,7 @@ let B = [],
           searchResultsQuery: T,
           isFavoritesSearch: P
         })]
-      }), (0, r.jsx)(G, {
+      }), (0, r.jsx)(U, {
         searchContext: t,
         isFeedbackVisible: b,
         dismissFeedbackEntrypoint: y
