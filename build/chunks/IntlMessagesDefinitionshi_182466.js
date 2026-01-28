@@ -1,3 +1,3 @@
 /** Chunk was on 43967 **/
-/** chunk id: 182466, original params: p (module,exports,require) **/
-module.exports = JSON.parse('{"Tt3O81":["अगली रिन्यूअल"],"eoXh7B":["ऑर्डर की समरी"]}')
+/** chunk id: 182466, original params: t (module,exports,require) **/
+module.exports = JSON.parse('{"Zxav97":["कुल बचे"],"pDVleg":["कुल सेविंग ",[1,"amount"]],"WmjxYl":["दिन"],"ZnoRKt":["महीना"],"Tt3O81":["अगली रिन्यूअल"],"8Jt4Dw":["1 ",[1,"timeInterval"]," का Nitro"],"eoXh7B":["ऑर्डर की समरी"],"2zUa6I":["सब्सक्रिप्शन"],"Xrg8aC":["साल"]}')

@@ -60,11 +60,11 @@ function h(e) {
     colorPickerMiddle: x,
     colorPickerFooter: O,
     showEyeDropper: C
-  } = e, I = i.useRef(null), T = (0, d.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), S = c.A.colors.BACKGROUND_MOD_MUTED.css, j = (0, _.sN)(l), v = (0, o.Hl)(l), N = v === T ? S : v, y = j ? c.A.unsafe_rawColors.WHITE.css : c.A.unsafe_rawColors.PRIMARY_530.css, P = (0, u.A)(x), R = (0, u.A)(O), [D, w] = i.useState((0, a.A)());
+  } = e, T = i.useRef(null), I = (0, d.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), S = c.A.colors.BACKGROUND_MOD_MUTED.css, j = (0, _.sN)(l), v = (0, o.Hl)(l), N = v === I ? S : v, y = j ? c.A.unsafe_rawColors.WHITE.css : c.A.unsafe_rawColors.PRIMARY_530.css, P = (0, u.A)(x), R = (0, u.A)(O), [D, w] = i.useState((0, a.A)());
   return i.useEffect(() => {
     (P !== x || R !== O) && w((0, a.A)())
   }, [O, x, R, P]), (0, r.jsx)(d.YNO, {
-    targetElementRef: I,
+    targetElementRef: T,
     positionKey: D,
     renderPopout: e => (0, r.jsx)(d.VNw, f(A({}, e), {
       value: l,
@@ -96,7 +96,7 @@ function h(e) {
         return l
       }(e, ["onClick"]);
       return (0, r.jsxs)("div", {
-        ref: I,
+        ref: T,
         className: s()(g.oP, {
           [g.r9]: b
         }),
@@ -110,7 +110,7 @@ function h(e) {
           className: g.nf,
           "aria-label": m.intl.string(m.t.Qp04hK),
           focusProps: {
-            ringTarget: I
+            ringTarget: T
           },
           children: (0, r.jsx)(d.R2l, {
             size: "custom",

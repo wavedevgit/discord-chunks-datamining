@@ -28,7 +28,7 @@ function x(e) {
   let {
     onClose: n,
     markAsDismissed: x
-  } = e, O = (0, i.bG)([p.default], () => p.default.getCurrentUser()), C = (t = null == O ? true : O.premiumType) === f.PremiumTypes.TIER_2 ? b.intl.string(b.t.jqO5Qn) : null == t ? b.intl.string(b.t.f2qjw5) : b.intl.string(b.t.SblICW), I = m.Ay.canUseCustomCallSounds(O);
+  } = e, O = (0, i.bG)([p.default], () => p.default.getCurrentUser()), C = (t = null == O ? true : O.premiumType) === f.PremiumTypes.TIER_2 ? b.intl.string(b.t.jqO5Qn) : null == t ? b.intl.string(b.t.f2qjw5) : b.intl.string(b.t.SblICW), T = m.Ay.canUseCustomCallSounds(O);
   return (0, r.jsxs)(c.A, {
     isShown: true,
     type: c.i.PREMIUM,
@@ -56,7 +56,7 @@ function x(e) {
     }), (0, r.jsx)(l.E, {
       variant: "text-sm/normal",
       children: C
-    }), I ? (0, r.jsx)(a.Button, {
+    }), T ? (0, r.jsx)(a.Button, {
       onClick: function() {
         let e = (0, u.qz)("CustomCallSoundUpsell") ? d.X.SOUNDBOARD_CATEGORY : d.X.VOICE_AND_VIDEO_PANEL;
         (0, _.openUserSettings)(e, {

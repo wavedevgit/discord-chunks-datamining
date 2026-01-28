@@ -154,7 +154,7 @@ let U = (e, t, n) => (0, i.Mw)(e) ? t : n,
       superReactions: {
         title: p.intl.string(p.t["uZt5q/"]),
         description: p.intl.string(p.t.ZK3ZoX),
-        imageSource: U(i, I, T),
+        imageSource: U(i, T, I),
         imageClassName: t.superReactionsImage
       },
       upload: {

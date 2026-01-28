@@ -128,7 +128,7 @@ function C() {
   })
 }
 
-function I() {
+function T() {
   let e = u.TA.useSetting(),
     t = e === l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
     n = [{
@@ -154,7 +154,7 @@ function I() {
   })
 }
 
-function T() {
+function I() {
   return (0, r.jsxs)("div", {
     className: x.do,
     children: [(0, r.jsx)(a.Text, {
@@ -178,7 +178,7 @@ function S(e) {
   } = e;
   return t.length > 0 ? (0, r.jsx)(O, {
     applications: t
-  }) : (0, r.jsx)(T, {})
+  }) : (0, r.jsx)(I, {})
 }
 
 function j() {
@@ -203,7 +203,7 @@ function v() {
       }), t.length > 0 && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(C, {}), (0, r.jsx)("div", {
           className: x.yF
-        }), (0, r.jsx)(I, {})]
+        }), (0, r.jsx)(T, {})]
       })]
     })
   })

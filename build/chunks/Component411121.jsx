@@ -283,7 +283,7 @@ let M = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk351906.A, Chunk30793.A,
     skuId: t,
     subscriptionPlanId: n,
     giftStyle: r
-  } = e, i = T.A.get(t);
+  } = e, i = I.A.get(t);
   if (null == i) throw Error("SKU was unavailable while rendering gift.");
   let l = O.A.getForGifterSKUAndPlan(x.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
   return {

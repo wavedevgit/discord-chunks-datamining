@@ -46,7 +46,7 @@ function N(e) {
     null == e ? await _.r6(t, n, r, U, N) : await _.uK(t, e, n, r, U, N), V(false), B(n)
   }, Y = async (e, n, r) => {
     V(true);
-    let i = await (0, I.OQ)({
+    let i = await (0, T.OQ)({
         subscriptionId: t.id,
         paymentSourceId: null == e ? true : e.id,
         renewal: true,
@@ -67,7 +67,7 @@ function N(e) {
     let n = E.A.get(t.planIdForCurrencies);
     o()(null != e, "paymentSource not specified for change"), o()(null != n, "Unable to fetch plan");
     let r = (0, O._w)(n.id, e.id, false);
-    return r.length > 0 ? r[0] : T.Yri.USD
+    return r.length > 0 ? r[0] : I.Yri.USD
   }, z = e => {
     (0, O.c_)(e.id, (0, C.MP)(t)).then(() => {
       Y(e, W(e), F)
@@ -109,7 +109,7 @@ function N(e) {
       onCloseCallback: () => {
         (0, u.ET)()
       },
-      onCloseRequest: T.tEg
+      onCloseRequest: I.tEg
     })
   };
   if (t.isPurchasedExternally) {

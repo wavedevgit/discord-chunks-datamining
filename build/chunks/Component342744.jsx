@@ -1,7 +1,7 @@
 /** Chunk was on 60667 **/
 /** chunk id: 342744, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => I
+  default: () => T
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -60,7 +60,7 @@ function C() {
   })
 }
 
-function I(e) {
+function T(e) {
   let {
     guildBoostSlotId: t,
     transitionState: n,
@@ -72,14 +72,14 @@ function I(e) {
     f.A.hasFetchedSubscriptions() || (0, d.hP)()
   }, []);
   let E = (0, o.bG)([f.A], () => f.A.getPremiumTypeSubscription()),
-    [I, T] = i.useState(1),
+    [T, I] = i.useState(1),
     [S, j] = i.useState(false),
     [v, N] = i.useState(null),
     y = i.useCallback(async () => {
       if (null != E) try {
         j(true), N(null);
         let e = (0, A.v)(E, 1);
-        s()((0, h.bx)(e) <= (0, h.bx)(E.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await x(E, e, t, u), T(2)
+        s()((0, h.bx)(e) <= (0, h.bx)(E.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await x(E, e, t, u), I(2)
       } catch (t) {
         let e = t instanceof _.Ey ? t : new _.Ey(t, t.code);
         N(b.intl.string(e.code === p.tG.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq7 : b.t["5mlOCW"])), j(false)
@@ -92,7 +92,7 @@ function I(e) {
       onClose: async () => await l(),
       size: "sm",
       title: (() => {
-        switch (I) {
+        switch (T) {
           case 1:
             return b.intl.string(b.t.l52ih2);
           case 2:
@@ -102,7 +102,7 @@ function I(e) {
         }
       })(),
       actions: (() => {
-        switch (I) {
+        switch (T) {
           case 1:
             return [{
               variant: "secondary",
@@ -127,7 +127,7 @@ function I(e) {
       })(),
       children: (() => {
         if (null == E) return (0, r.jsx)(c.y$y, {});
-        switch (I) {
+        switch (T) {
           case 1:
             return (0, r.jsx)(O, {
               errorMsg: v
@@ -135,7 +135,7 @@ function I(e) {
           case 2:
             return (0, r.jsx)(C, {});
           default:
-            throw Error("Unexpected step: ".concat(I))
+            throw Error("Unexpected step: ".concat(T))
         }
       })()
     })

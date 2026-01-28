@@ -76,7 +76,7 @@ let q = () => {
     {
       analyticsLocations: eh
     } = (0, g.Ay)(m.A.PREMIUM_MARKETING),
-    eb = (0, I.A)({
+    eb = (0, T.A)({
       location: "PremiumMarketing"
     }),
     eE = !en && !es && (eb || !ei);
@@ -99,8 +99,8 @@ let q = () => {
       activeSectionId: eC
     } = (0, H.o)(ex),
     {
-      home: eI,
-      whatsNew: eT,
+      home: eT,
+      whatsNew: eI,
       bestOfNitro: eS,
       plans: ej,
       compare: ev
@@ -110,7 +110,7 @@ let q = () => {
       variant: ey
     } = (0, C.Ay)("PremiumBrandRefreshMarketingHeroHeading"),
     eP = (0, S.V)(),
-    eR = (0, T.O)(),
+    eR = (0, I.O)(),
     eD = b.A.getAlmostExpiringTrialOffers([Y.pe.TIER_2]).length > 0 && null != eP && null != eP.expires_at && eP.trial_id !== Y.Dw,
     ew = b.A.getAlmostExpiringDiscountOffers([Y.pe.TIER_2]).length > 0 && null != eR && null != eR.expires_at,
     eL = eD ? eP.expires_at : ew ? eR.expires_at : null,
@@ -142,7 +142,7 @@ let q = () => {
         className: eN.sectionsContainer,
         children: [(0, r.jsx)("div", {
           className: eN.heroHeadingContainer,
-          ref: eI.ref,
+          ref: eT.ref,
           children: (0, r.jsx)(c.L, {
             innerRef: q,
             onChange: e => er(e),
@@ -168,7 +168,7 @@ let q = () => {
           })
         }), (0, r.jsx)("div", {
           className: eN.whatsNewSectionContainer,
-          ref: eT.ref,
+          ref: eI.ref,
           children: (0, r.jsx)(y.Ct, {
             shouldLoadVideo: ed,
             isReducedMotion: $,

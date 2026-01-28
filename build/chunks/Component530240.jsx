@@ -96,7 +96,7 @@ function C(e) {
   }))
 }
 
-function I(e) {
+function T(e) {
   let {
     guildTier: t,
     guildBoostSlot: n,
@@ -104,7 +104,7 @@ function I(e) {
     hasCancelableGuildBoostSlot: u,
     showAltText: _,
     isLastGuildBoostSlot: m
-  } = e, g = (0, s.bG)([o.A], () => o.A.useReducedMotion), h = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), b = i.useMemo(() => null != h && h > new Date, [h]), E = (0, p.I5)(n), I = (0, c.A)(), T = i.useRef(null);
+  } = e, g = (0, s.bG)([o.A], () => o.A.useReducedMotion), h = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), b = i.useMemo(() => null != h && h > new Date, [h]), E = (0, p.I5)(n), T = (0, c.A)(), I = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: O.PW,
     children: [(0, r.jsxs)("div", {
@@ -124,10 +124,10 @@ function I(e) {
           showAltText: _,
           isCanceled: E,
           premiumSubscription: l,
-          fractionalPremiumInfo: I
+          fractionalPremiumInfo: T
         })
       }), (0, r.jsx)(a.YNO, {
-        targetElementRef: T,
+        targetElementRef: I,
         renderPopout: function(e) {
           let {
             closePopout: t
@@ -137,7 +137,7 @@ function I(e) {
             guildBoostSlot: n,
             premiumSubscription: l,
             hasCancelableGuildBoostSlot: u,
-            fractionalState: I.fractionalState
+            fractionalState: T.fractionalState
           })
         },
         position: "right",
@@ -162,7 +162,7 @@ function I(e) {
             }
             return e
           }({}, e), n = n = {
-            innerRef: T,
+            innerRef: I,
             "aria-label": x.intl.string(x.t.PdRCRg),
             className: O.oU,
             children: (0, r.jsx)(a.FHP, {
@@ -187,7 +187,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     guildId: t,
     guildBoostSlotRecords: n,
@@ -200,7 +200,7 @@ function T(e) {
     children: [(0, r.jsx)(h.A, {
       guildId: t,
       boostingVariant: false
-    }), n.map((e, t) => (0, r.jsx)(I, {
+    }), n.map((e, t) => (0, r.jsx)(T, {
       guildTier: null == o ? true : o.premiumTier,
       guildBoostSlot: e,
       premiumSubscription: i,
@@ -235,7 +235,7 @@ function S(e) {
     children: [(0, r.jsx)(h.A, {
       guildId: t,
       boostingVariant: false
-    }), n.map((e, t) => (0, r.jsx)(I, {
+    }), n.map((e, t) => (0, r.jsx)(T, {
       guildTier: null == l ? true : l.premiumTier,
       guildBoostSlot: o,
       premiumSubscription: i,
@@ -308,7 +308,7 @@ function v(e) {
     className: O.iE,
     children: [(0, r.jsx)("div", {
       className: O.kL,
-      children: g.default.keys(a).map(e => (0, r.jsx)(T, {
+      children: g.default.keys(a).map(e => (0, r.jsx)(I, {
         guildId: e,
         guildBoostSlotRecords: a[e],
         premiumSubscription: n,

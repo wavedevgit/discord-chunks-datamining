@@ -1,7 +1,7 @@
 /** Chunk was on 60667 **/
 /** chunk id: 534217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => T
+  S: () => I
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -89,7 +89,7 @@ let x = e => {
       })()
     })
   },
-  I = e => {
+  T = e => {
     let {
       nReferralsSent: t
     } = e;
@@ -108,7 +108,7 @@ let x = e => {
       })
     })
   },
-  T = e => {
+  I = e => {
     let {
       className: t
     } = e, {
@@ -118,7 +118,7 @@ let x = e => {
       className: l()(h.kL, t),
       children: [(0, r.jsx)("div", {
         className: h.G3,
-        children: (0, r.jsx)(I, {
+        children: (0, r.jsx)(T, {
           nReferralsSent: o.size
         })
       }), (0, r.jsxs)("div", {

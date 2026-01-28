@@ -62,14 +62,14 @@ let j = e => {
       size: d._3J.SIZE_32
     }, l)) : (0, r.jsx)(d.Heading, {
       variant: "heading-md/semibold",
-      className: I.n5,
+      className: T.n5,
       children: n
     });
     return (0, r.jsx)(o.m_, {
       text: C.intl.string(C.t.UnKHdo),
       shouldShow: !s,
       children: (0, r.jsx)("div", {
-        className: I.Lg,
+        className: T.Lg,
         children: a
       })
     })
@@ -80,13 +80,13 @@ let j = e => {
       placement: n
     } = e;
     return (0, r.jsxs)("div", {
-      className: I.Ip,
+      className: T.Ip,
       children: [(0, r.jsx)("div", {
-        className: I.Ej
+        className: T.Ej
       }), (0, r.jsx)("div", {
         className: s()({
-          [I.ch]: t > n,
-          [I.q_]: t === n
+          [T.ch]: t > n,
+          [T.q_]: t === n
         })
       })]
     })
@@ -96,7 +96,7 @@ let j = e => {
       userRecords: t
     } = e, n = t.length, i = n < 1 ? null : t[0], l = n < 2 ? null : t[1], s = n < 3 ? null : t[2];
     return (0, r.jsxs)("div", {
-      className: I.ZM,
+      className: T.ZM,
       children: [(0, r.jsx)(j, {
         userRecord: i,
         placement: 1
@@ -136,19 +136,19 @@ let j = e => {
       R = i.useRef(null),
       D = j.sent / b.Z * 100,
       w = (0, r.jsxs)("div", {
-        className: I.hE,
+        className: T.hE,
         children: [(0, r.jsx)(E.Ay, {
           percentage: D,
           progressCircleVariation: E.BN.NITRO_LOGO,
           iconClassName: s()({
-            [I.VC]: !t,
-            [I.ER]: t
+            [T.VC]: !t,
+            [T.ER]: t
           })
         }), (0, r.jsxs)("div", {
-          className: I.Ns,
+          className: T.Ns,
           children: [(0, r.jsx)(d.Heading, {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
-            className: I.R0,
+            className: T.R0,
             children: (0, x.X8)({
               hasSentAll: v
             })
@@ -161,12 +161,12 @@ let j = e => {
               referralsStatuses: j
             })
           }), (0, r.jsx)("div", {
-            className: s()(I.Fb, {
-              [I.jv]: !t
+            className: s()(T.Fb, {
+              [T.jv]: !t
             }),
             children: (0, r.jsx)(d.wLn, {
               "data-migration-pending": true,
-              className: I.r$,
+              className: T.r$,
               color: c.XD.CUSTOM,
               onClick: () => (e => {
                 let {
@@ -199,11 +199,11 @@ let j = e => {
               }),
               onlyShineOnHover: true,
               children: (0, r.jsxs)("div", {
-                className: I.Zn,
+                className: T.Zn,
                 children: [(0, r.jsx)("img", {
-                  src: T,
+                  src: I,
                   alt: "",
-                  className: I.QH
+                  className: T.QH
                 }), v ? C.intl.string(C.t.SY9tyI) : C.intl.string(C.t.Lm2nFc)]
               })
             })
@@ -215,17 +215,17 @@ let j = e => {
       value: P,
       children: (0, r.jsx)("div", {
         className: s()({
-          [I.f5]: L,
-          [I.JY]: !L,
-          [I.VX]: !t,
-          [I.m$]: L && t
+          [T.f5]: L,
+          [T.JY]: !L,
+          [T.VX]: !t,
+          [T.m$]: L && t
         }),
         children: (0, r.jsx)("div", {
           ref: R,
           className: s()({
-            [I.dn]: !t,
-            [I.d_]: t,
-            [I.kS]: L
+            [T.dn]: !t,
+            [T.d_]: t,
+            [T.kS]: L
           }),
           children: w
         })

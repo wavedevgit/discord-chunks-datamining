@@ -63,8 +63,8 @@ function L(e) {
     endDate: C,
     onClickDetails: h
   }));
-  let I = O ? D.intl.string(D.t["2cHUti"]) : D.intl.string(D.t.O13yhz),
-    T = i.useCallback(() => g(false), []),
+  let T = O ? D.intl.string(D.t["2cHUti"]) : D.intl.string(D.t.O13yhz),
+    I = i.useCallback(() => g(false), []),
     {
       outboundTitle: S,
       outboundTermsAndConditions: j
@@ -95,7 +95,7 @@ function L(e) {
             })]
           })]
         }), !o && (0, r.jsx)(d.Button, {
-          text: I,
+          text: T,
           onClick: () => g(true),
           disabled: o,
           size: "sm"
@@ -129,7 +129,7 @@ function L(e) {
           }
           return e
         }({}, e), i = i = {
-          onClose: T,
+          onClose: I,
           onClaim: a,
           code: l,
           outboundPromotion: n
@@ -144,19 +144,19 @@ function L(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
         }), t))
       },
-      onCloseRequest: T
+      onCloseRequest: I
     })]
   })
 }
 let M = function(e) {
   let {
     inOldSettings: t = false
-  } = e, n = (0, c.yK)([I.A], () => I.A.getGiftable()), [l, a] = o().partition(n, e => {
+  } = e, n = (0, c.yK)([T.A], () => T.A.getGiftable()), [l, a] = o().partition(n, e => {
     let {
       giftCodeBatchId: t
     } = e;
     return null == t
-  }), p = (0, c.bG)([C.default], () => S.Ay.isPremiumExactly(C.default.getCurrentUser(), R.PremiumTypes.TIER_2)), m = o().groupBy(l, e => (0, T.Kx)(e.skuId, e.subscriptionPlanId, e.giftStyle)), [A, f] = i.useState(false);
+  }), p = (0, c.bG)([C.default], () => S.Ay.isPremiumExactly(C.default.getCurrentUser(), R.PremiumTypes.TIER_2)), m = o().groupBy(l, e => (0, I.Kx)(e.skuId, e.subscriptionPlanId, e.giftStyle)), [A, f] = i.useState(false);
   i.useEffect(() => {
     u.h.wait(() => {
       (0, _.XJ)().then(() => f(true))
@@ -247,19 +247,19 @@ let M = function(e) {
               subscriptionPlanId: n.subscriptionPlanId,
               entitlements: [n],
               giftCodeBatchId: R.FB
-            }, (0, T.Kx)(n.skuId, n.subscriptionPlanId)) : null, l.length > 0 ? (0, r.jsx)(v.A, {
+            }, (0, I.Kx)(n.skuId, n.subscriptionPlanId)) : null, l.length > 0 ? (0, r.jsx)(v.A, {
               className: w.uI,
               skuId: l[0].skuId,
               subscriptionPlanId: l[0].subscriptionPlanId,
               entitlements: l,
               giftCodeBatchId: R.Bu
-            }, (0, T.Kx)(l[0].skuId, l[0].subscriptionPlanId)) : null, c.length > 0 ? (0, r.jsx)(v.A, {
+            }, (0, I.Kx)(l[0].skuId, l[0].subscriptionPlanId)) : null, c.length > 0 ? (0, r.jsx)(v.A, {
               className: w.uI,
               skuId: c[0].skuId,
               subscriptionPlanId: c[0].subscriptionPlanId,
               entitlements: c,
               giftCodeBatchId: R.Bu
-            }, (0, T.Kx)(c[0].skuId, c[0].subscriptionPlanId)) : null]
+            }, (0, I.Kx)(c[0].skuId, c[0].subscriptionPlanId)) : null]
           })
         })]
       })
@@ -294,7 +294,7 @@ let M = function(e) {
             skuId: t,
             subscriptionPlanId: n,
             giftStyle: i
-          } = (0, T.X6)(e);
+          } = (0, I.X6)(e);
           return (0, r.jsx)(v.A, {
             className: w.uI,
             skuId: t,

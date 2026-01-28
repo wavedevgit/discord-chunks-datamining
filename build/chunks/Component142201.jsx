@@ -47,7 +47,7 @@ let U = function(e) {
       sourceAnalyticsLocations: l,
       analyticsLocations: U
     } = (0, g.Ay)(m.A.PREMIUM_MARKETING),
-    G = (0, a.bG)([I.A], () => I.A.hasFetchedSubscriptions()),
+    G = (0, a.bG)([T.A], () => T.A.hasFetchedSubscriptions()),
     k = (0, a.bG)([C.A], () => C.A.hasFetchedPaymentSources),
     V = (0, a.bG)([O.default], () => O.default.getCurrentUser()),
     H = null == V ? true : V.id,
@@ -69,7 +69,7 @@ let U = function(e) {
       await Promise.all([d.hP(), d.$o(), (0, u.zS)(null, null, L.tF5.DISCOVERY)]), K.current = Date.now() - e, z(false)
     })
   }, []), i.useEffect(() => {
-    W || T.default.track(L.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+    W || I.default.track(L.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
       location_stack: l,
       load_duration_ms: K.current
     })

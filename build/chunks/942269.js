@@ -363,6 +363,9 @@ class g extends Chunk311907.il {
   clearAllDatabases() {
     for (let e in this.state.databases) this.state.databases[e].clear()
   }
+  markDirty() {
+    this._nextVersion++
+  }
   executeDatabaseChange(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       {
@@ -408,7 +411,9 @@ class g extends Chunk311907.il {
         const r = e[t],
           i = e => {
             var t;
-            return null != (t = this.wrappedState) || (this.wrappedState = this.stateWrapper()), r(e, this.wrappedState)
+            null != (t = this.wrappedState) || (this.wrappedState = this.stateWrapper());
+            let n = this._nextVersion;
+            if (r(e, this.wrappedState), this._nextVersion === n) returnfalse
           };
         n[t] = i
       }

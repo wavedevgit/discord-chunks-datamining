@@ -55,14 +55,14 @@ function b() {
         entryPoint: s.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
       }) : (0, o.qY)(e)
     },
-    I = [{
+    T = [{
       value: i.TO.BLUR,
       label: A.intl.string(A.t.S49Uad)
     }, {
       value: i.TO.BLOCK,
       label: A.intl.string(A.t["D/157Y"])
     }],
-    T = [{
+    I = [{
       value: i.TO.BLUR,
       label: A.intl.string(A.t.S49Uad)
     }],
@@ -70,7 +70,7 @@ function b() {
       value: i.TO.SHOW,
       label: A.intl.string(A.t["5k5OFp"])
     };
-  t && (I.unshift(S), T.unshift(S));
+  t && (T.unshift(S), I.unshift(S));
   let j = {
     isDisabled: b,
     tooltipText: n ? A.intl.string(f.default["6Af/cw"]) : true
@@ -84,14 +84,14 @@ function b() {
       onChange: e => C({
         goreContentFriendDm: e
       }),
-      options: I
+      options: T
     }, j)), (0, r.jsx)(m.A, h({
       title: A.intl.string(A.t["Yh+HX1"]),
       value: O,
       onChange: e => C({
         goreContentNonFriendDm: e
       }),
-      options: I
+      options: T
     }, j)), (0, r.jsx)(m.A, {
       title: A.intl.string(A.t["FP+a42"]),
       value: E,
@@ -99,7 +99,7 @@ function b() {
         goreContentGuilds: e
       }),
       isDisabled: !t || b,
-      options: T,
+      options: I,
       tooltipText: n ? A.intl.string(f.default["6Af/cw"]) : true
     })]
   })

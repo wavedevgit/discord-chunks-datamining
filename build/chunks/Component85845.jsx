@@ -36,7 +36,7 @@ function j(e) {
       guildId: t,
       soundId: n
     } = e;
-    return p.A.getSound(t === I.XH ? I.mV : t, n)
+    return p.A.getSound(t === T.XH ? T.mV : t, n)
   })
 }
 
@@ -55,7 +55,7 @@ function v() {
 function N() {
   let {
     analyticsLocations: e
-  } = (0, o.Ay)(), [t, n] = i.useState(I.XH), a = (0, g.mz)(t), u = j(a), h = (null == a ? true : a.type) === g.PP.GLOBAL, E = (0, l.bG)([p.A], () => p.A.hasFetchedAllSounds()) && null != a && null == u;
+  } = (0, o.Ay)(), [t, n] = i.useState(T.XH), a = (0, g.mz)(t), u = j(a), h = (null == a ? true : a.type) === g.PP.GLOBAL, E = (0, l.bG)([p.A], () => p.A.hasFetchedAllSounds()) && null != a && null == u;
   i.useEffect(() => {
     E && (0, m.ND)({
       location: e
@@ -73,24 +73,24 @@ function N() {
   }, []);
   return (0, r.jsx)(b.A, {
     children: (0, r.jsxs)(s.nVY, {
-      label: T.intl.string(T.t.nzUc3B),
-      description: T.intl.format(T.t.u9RWmv, {
+      label: I.intl.string(I.t.nzUc3B),
+      description: I.intl.format(I.t.u9RWmv, {
         helpdeskArticle: f.A.getArticleURL(C.MVz.SOUNDBOARD)
       }),
       children: [(0, r.jsx)(c.A, {
         guildId: t,
         className: S.Dt,
         globalOption: {
-          label: T.intl.string(T.t["CpEUP/"]),
-          value: I.XH
+          label: I.intl.string(I.t["CpEUP/"]),
+          value: T.XH
         },
         onChange: e => {
-          n(null == e ? I.XH : e.id)
+          n(null == e ? T.XH : e.id)
         },
         renderOptionSuffix: x,
         hideDivider: true
       }), (0, r.jsxs)(d.A, {
-        title: T.intl.format(T.t.I2TsYN, {
+        title: I.intl.format(I.t.I2TsYN, {
           nitroWheelHook: () => (0, r.jsx)(s.tvc, {
             size: "md",
             color: "currentColor",
@@ -106,7 +106,7 @@ function N() {
         }), E && (0, r.jsx)(s.po8, {
           className: S.lm,
           messageType: s.YCn.WARNING,
-          children: T.intl.string(T.t.WkPsFR)
+          children: I.intl.string(I.t.WkPsFR)
         })]
       })]
     })

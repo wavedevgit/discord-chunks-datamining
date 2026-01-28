@@ -46,7 +46,6 @@ let o = {
       "data-migration-pending": true,
       children: (0, r.jsxs)(l.ButtonGroup, {
         fullWidth: true,
-        direction: "vertical",
         children: [c && (0, r.jsx)(l.Button, {
           variant: "secondary",
           text: s.intl.string(s.t.Tot4EC),

@@ -39,7 +39,7 @@ function j() {
 
 function v() {
   let e = o.A.getFavoriteChannels(),
-    t = x.Ay.isGuildCollapsed(I.V),
+    t = x.Ay.isGuildCollapsed(T.V),
     n = E.A.getChannelId(),
     r = g.A.getChannel(n),
     i = E.A.getVoiceChannelId(),
@@ -64,7 +64,7 @@ function v() {
     } = s;
     return l()(n).map(n => {
       var c;
-      if (!n.isPrivate() && !h.A.can(T.xB.VIEW_CHANNEL, n)) return null;
+      if (!n.isPrivate() && !h.A.can(I.xB.VIEW_CHANNEL, n)) return null;
       let d = null != r && (r.id === n.id || i === n.id),
         _ = null != r && r.isThread() && r.parent_id === n.id,
         m = null != (c = d || _ || !a ? u.A.getActiveJoinedRelevantThreadsForParent(n.guild_id, n.id) : u.A.getActiveJoinedUnreadThreadsForParent(n.guild_id, n.id)) ? c : {},
@@ -109,7 +109,7 @@ function v() {
       let {
         id: n,
         order: r
-      } = e, i = o.A.getCategoryRecord(n), l = null != (t = d[n]) ? t : [], s = x.Ay.isChannelMuted(I.V, n), a = m.A.isCollapsed(n), c = null;
+      } = e, i = o.A.getCategoryRecord(n), l = null != (t = d[n]) ? t : [], s = x.Ay.isChannelMuted(T.V, n), a = m.A.isCollapsed(n), c = null;
       return {
         isMuted: s,
         isCollapsed: a,
@@ -136,7 +136,7 @@ function v() {
       getRow: () => null
     };
   return {
-    id: I.V,
+    id: T.V,
     hideMutedChannels: t,
     favoritesSectionNumber: 1,
     recentsSectionNumber: 2,

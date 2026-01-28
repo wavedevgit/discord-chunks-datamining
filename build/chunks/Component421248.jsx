@@ -50,13 +50,13 @@ function E() {
       explicitContentFriendDm: O,
       explicitContentNonFriendDm: C
     } = (0, c.R)(),
-    I = e => {
+    T = e => {
       let t = Object.values(e);
       (0, a.hK)() && t.includes(i.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
       }) : (0, o.Jz)(e)
     },
-    T = [{
+    I = [{
       value: i.TO.BLUR,
       label: f.intl.string(f.t.S49Uad)
     }, {
@@ -71,7 +71,7 @@ function E() {
       value: i.TO.SHOW,
       label: f.intl.string(f.t["5k5OFp"])
     };
-  t && (T.unshift(j), S.unshift(j));
+  t && (I.unshift(j), S.unshift(j));
   let v = {
     isDisabled: E,
     tooltipText: n ? f.intl.string(h.default["6Af/cw"]) : true
@@ -83,21 +83,21 @@ function E() {
     children: [(0, r.jsx)(m.A, b({
       title: f.intl.string(f.t["+uI23H"]),
       value: O,
-      onChange: e => I({
+      onChange: e => T({
         explicitContentFriendDm: e
       }),
-      options: T
+      options: I
     }, v)), (0, r.jsx)(m.A, b({
       title: f.intl.string(f.t["Yh+HX1"]),
       value: C,
-      onChange: e => I({
+      onChange: e => T({
         explicitContentNonFriendDm: e
       }),
-      options: T
+      options: I
     }, v)), (0, r.jsx)(m.A, {
       title: f.intl.string(f.t["FP+a42"]),
       value: x,
-      onChange: e => I({
+      onChange: e => T({
         explicitContentGuilds: e
       }),
       isDisabled: !t || E,

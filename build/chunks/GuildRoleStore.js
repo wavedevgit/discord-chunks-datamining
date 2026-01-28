@@ -2,14 +2,17 @@
 /** chunk id: 317525, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => u
+  A: () => m
 }), require("./65821.js"), require("./896048.js");
-var Chunk952526 = require("./952526.js"),
+var Chunk136722 = require("./136722.js"),
+  Chunk867051 = require("./867051.js"),
+  Chunk942269 = require("./942269.js"),
   Chunk260509 = require("./260509.js"),
+  Chunk34457 = require("./34457.js"),
   Chunk9865 = require("./9865.js"),
   Chunk7864 = require("./7864.js");
 
-function s(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,96 +21,119 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
-class c extends Chunk952526.U {
+
+function f(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function _(e) {
+  let t = e;
+  return (0, i.yE)(s.xh, p(d({}, t), {
+    permissions: r.iu(t.permissions)
+  }))
+}
+class h extends Chunk942269.yW {
+  stateWrapper() {
+    return this.database
+  }
   serializeAllGuildRoles() {
-    return this.mapPartitions(a.cH)
+    return this.database.mapPartitions(l.cH)
   }
   getUnsafeMutableRoles(e) {
-    return this.getPartition(e)
+    return this.database.getPartition(e)
   }
   getManyRoles(e, t) {
-    return this.getManyRecords(e, t)
+    return this.database.getManyRecords(e, t)
   }
   getRole(e, t) {
-    return this.getRecord(e, t)
+    return this.database.getRecord(e, t)
   }
   getNumRoles(e) {
-    return this.partitionLength(e)
+    return this.database.partitionLength(e)
   }
   getEveryoneRole(e) {
-    let t = (0, i.af)(e),
-      n = this.getRecord(e.id, t);
+    let t = (0, o.af)(e),
+      n = this.database.getRecord(e.id, t);
     if (null == n) throw Error("Guild ".concat(e.id, " does not have an @everyone role"));
     return n
   }
+  partitionVersion(e) {
+    return this.database.partitionVersion(e)
+  }
   constructor(...e) {
-    super(...e), s(this, "getSortedRoles", this.memoizedPartition((e, t) => o.gE(Object.values(t)))), s(this, "getRolesSnapshot", this.memoizedPartition((e, t) => l({}, t)))
+    super(...e), u(this, "database", this.addKKVDatabase("guild_roles", _)), u(this, "getSortedRoles", this.database.memoizedPartition((e, t) => c.gE(Object.values(t)))), u(this, "getRolesSnapshot", this.database.memoizedPartition((e, t) => d({}, t)))
   }
 }
-s(c, "displayName", "GuildRoleStore");
-let u = new c({
+u(h, "displayName", "GuildRoleStore");
+let m = new h({
   BACKGROUND_SYNC: (e, t) => {
     let {
       guilds: n
     } = e;
     for (let e of n) {
-      let n = t.getPartition(e.id);
-      null != n && "unavailable" !== e.data_mode && t.setPartition(e.id, "partial" === e.data_mode ? o.ly(e.id, n, e.partial_updates.roles, e.partial_updates.deleted_role_ids) : a.hd(e.id, e.roles))
+      let n = t.getNullablePartition(e.id);
+      null != n && "unavailable" !== e.data_mode && t.setPartition(e.id, "partial" === e.data_mode ? c.ly(e.id, n, e.partial_updates.roles, e.partial_updates.deleted_role_ids) : l.hd(e.id, e.roles))
     }
   },
   OVERLAY_INITIALIZE: (e, t) => {
-    t.reset(t => {
-      for (let {
-          partitionKey: n,
-          values: r
-        }
-        of e.serializedGuildRoles) t[n] = a.lj(n, r)
-    })
+    for (let {
+        partitionKey: n,
+        values: r
+      }
+      of(t.clear(), e.serializedGuildRoles)) t.setPartition(n, l.lj(n, r))
   },
   CONNECTION_OPEN: (e, t) => {
     let {
       guilds: n
     } = e;
-    return t.reset(e => {
-      for (let {
-          id: t,
-          roles: r
-        }
-        of n) e[t] = Array.isArray(r) ? a.hd(t, r) : r
-    })
+    for (let {
+        id: e,
+        roles: r
+      }
+      of(t.clear(), n)) t.setPartition(e, Array.isArray(r) ? l.hd(e, r) : r)
   },
   CACHE_LOADED: (e, t) => {
     let {
       guilds: n
     } = e;
-    t.reset(e => {
-      for (let {
-          id: t,
-          roles: r
-        }
-        of n) e[t] = a.lj(t, r)
-    })
+    for (let {
+        id: e,
+        roles: r
+      }
+      of(t.clear(), n)) t.setPartition(e, l.lj(e, r))
   },
   CACHE_LOADED_LAZY: (e, t) => {
-    0 !== e.guilds.length && t.reset(t => {
+    if (0 !== e.guilds.length)
       for (let {
           id: n,
           roles: r
         }
-        of e.guilds) t[n] = a.lj(n, r)
-    })
+        of(t.clear(), e.guilds)) t.setPartition(n, l.lj(n, r))
   },
   GUILD_CREATE: (e, t) => {
     let {
@@ -116,7 +142,7 @@ let u = new c({
         roles: r
       }
     } = e;
-    t.setPartition(n, Array.isArray(r) ? a.hd(n, r) : r)
+    t.setPartition(n, Array.isArray(r) ? l.hd(n, r) : r)
   },
   GUILD_UPDATE: (e, t) => {
     let {
@@ -125,7 +151,7 @@ let u = new c({
         roles: r
       }
     } = e;
-    t.setPartition(n, a.hd(n, r))
+    t.setPartition(n, l.hd(n, r))
   },
   GUILD_DELETE: (e, t) => {
     let {
@@ -137,16 +163,16 @@ let u = new c({
     r || t.removePartition(n)
   },
   GUILD_ROLE_CREATE: (e, t) => {
-    t.set(e.guildId, e.role.id, a.Wj(e.guildId, e.role))
+    t.setRecord(e.guildId, e.role.id, l.Wj(e.guildId, e.role))
   },
   GUILD_ROLE_UPDATE: (e, t) => {
-    t.set(e.guildId, e.role.id, a.Wj(e.guildId, e.role))
+    t.setRecord(e.guildId, e.role.id, l.Wj(e.guildId, e.role))
   },
   GUILD_ROLE_DELETE: (e, t) => {
     let {
       guildId: n,
       roleId: r
     } = e;
-    t.remove(n, r)
+    t.removeRecord(n, r)
   }
 })

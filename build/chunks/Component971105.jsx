@@ -120,7 +120,7 @@ function w(e) {
             className: N.Bd,
             ref: o,
             overflow: "auto",
-            children: A.map((e, t) => (0, i.jsx)(I.A, {
+            children: A.map((e, t) => (0, i.jsx)(T.A, {
               className: a()(N.Nj, N.Bd),
               payment: e,
               locale: n,
@@ -222,7 +222,7 @@ function U(e) {
     })), [t]),
     a = (0, u.yK)([x.A], () => x.A.getPlanIdsForSkus(Array.from(s))),
     o = l.useCallback(() => a.length === r.size, [a, r]),
-    c = l.useMemo(() => t.filter(e => e.currency !== T.Yri.DISCORD_ORB), [t]);
+    c = l.useMemo(() => t.filter(e => e.currency !== I.Yri.DISCORD_ORB), [t]);
   return l.useEffect(() => {
     o() || p.h.wait(() => {
       s.forEach(e => (0, A.ur)(e, true, true, true, true))

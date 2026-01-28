@@ -32,18 +32,18 @@ function h(e) {
     showPremiumIcon: x = true,
     showResetThemeButton: O = false,
     forcedDivider: C
-  } = e, I = (0, u.Ay)(t.id, b), {
-    primaryColor: T,
+  } = e, T = (0, u.Ay)(t.id, b), {
+    primaryColor: I,
     secondaryColor: S
   } = (0, _.A)({
     user: t,
-    displayProfile: I,
+    displayProfile: T,
     pendingThemeColors: i,
     isPreview: true
   }), j = p.Ay.canUsePremiumProfileCustomization(t), v = null != n ? n : t.getAvatarURL(b, 80), N = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), y = (0, d.rh)(v, N, false);
-  if (null == T || null == S) return null;
+  if (null == I || null == S) return null;
   let P = e => {
-    s(a()(e, null == I ? true : I.themeColors) ? true : e)
+    s(a()(e, null == T ? true : T.themeColors) ? true : e)
   };
   return (0, r.jsx)(g.A, {
     title: A.intl.string(A.t.DMeO2X),
@@ -57,7 +57,7 @@ function h(e) {
         className: f.YX,
         children: (0, r.jsx)(m.A, {
           onChange: e => P([e, S]),
-          color: T,
+          color: I,
           suggestedColors: y,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
@@ -71,7 +71,7 @@ function h(e) {
       }), (0, r.jsx)("div", {
         className: f.YX,
         children: (0, r.jsx)(m.A, {
-          onChange: e => P([T, e]),
+          onChange: e => P([I, e]),
           color: S,
           suggestedColors: y,
           showEyeDropper: true,

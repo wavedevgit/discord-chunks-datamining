@@ -56,6 +56,7 @@ class _ extends Chunk942269.yW {
       packsDatabase: this.packsDatabase,
       packStickersDatabase: this.packStickersDatabase,
       premiumPacksDatabase: this.premiumPacksDatabase,
+      markDirty: () => this.markDirty(),
       clearAllDBs: () => this.clearAllDatabases()
     }
   }
@@ -115,7 +116,10 @@ let m = new _({
     h(n, r, i, a, false)
   },
   STICKER_PACKS_FETCH_START: (e, t) => {
-    l = true
+    let {
+      markDirty: n
+    } = t;
+    l = true, n()
   },
   STICKER_PACKS_FETCH_SUCCESS: (e, t) => {
     let {
@@ -123,9 +127,10 @@ let m = new _({
     } = e, {
       packStickersDatabase: r,
       packsDatabase: i,
-      premiumPacksDatabase: a
+      premiumPacksDatabase: a,
+      markDirty: o
     } = t;
-    for (let e of (l = false, c = performance.now(), n)) h(e, r, i, a, true)
+    for (let e of (l = false, o(), c = performance.now(), n)) h(e, r, i, a, true)
   },
   PACK_STICKER_FETCH_SUCCESS: (e, t) => {
     let {

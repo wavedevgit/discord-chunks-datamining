@@ -1,7 +1,7 @@
 /** Chunk was on 60667 **/
 /** chunk id: 687944, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => T
+  A: () => I
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -74,7 +74,7 @@ function C(e) {
   })
 }
 
-function I(e) {
+function T(e) {
   let {
     discountOffer: t,
     premiumSubscription: n
@@ -97,12 +97,12 @@ function I(e) {
     })]
   })
 }
-let T = function(e) {
+let I = function(e) {
   let t, d, {
       subscription: p,
       invoicePreview: m,
       isLoading: f,
-      analyticsLocation: T,
+      analyticsLocation: I,
       discountInfo: S,
       renewalChurnDiscountInfo: j,
       discountOffer: v
@@ -136,7 +136,7 @@ let T = function(e) {
             return e
           }({}, n), l = l = {
             premiumSubscription: p,
-            analyticsLocation: T,
+            analyticsLocation: I,
             analyticsLocations: N,
             initialStep: e
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -179,7 +179,7 @@ let T = function(e) {
           className: E.ly,
           children: [(0, r.jsxs)("div", {
             className: E.Yc,
-            children: [null != v ? (0, r.jsx)(I, {
+            children: [null != v ? (0, r.jsx)(T, {
               discountOffer: v,
               premiumSubscription: p
             }) : (0, r.jsx)(C, {
@@ -210,7 +210,7 @@ let T = function(e) {
                     onClick: () => {
                       (0, o.A)({
                         analyticsLocations: N,
-                        analyticsLocation: T,
+                        analyticsLocation: I,
                         analyticsObject: O,
                         subscription: p
                       })

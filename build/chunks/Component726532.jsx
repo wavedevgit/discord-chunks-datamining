@@ -55,7 +55,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = () => (0, r.jsxs)(s.BJc, {
+let T = () => (0, r.jsxs)(s.BJc, {
     direction: "horizontal",
     gap: 10,
     padding: {
@@ -72,7 +72,7 @@ let I = () => (0, r.jsxs)(s.BJc, {
       variant: "expressive"
     })]
   }),
-  T = e => {
+  I = e => {
     let {
       title: t,
       description: n,
@@ -158,9 +158,9 @@ let I = () => (0, r.jsxs)(s.BJc, {
     return (0, r.jsxs)(s.hLv, {
       className: x.kL,
       color: "nitro-pink",
-      children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(T, {}), (0, r.jsxs)("div", {
         className: x.wS,
-        children: [(0, r.jsx)(T, {
+        children: [(0, r.jsx)(I, {
           title: j,
           description: v,
           button: (0, r.jsx)(s.Button, {
@@ -344,9 +344,9 @@ let I = () => (0, r.jsxs)(s.BJc, {
     return (0, r.jsxs)(s.hLv, {
       className: x.kL,
       color: "nitro-pink",
-      children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(T, {}), (0, r.jsxs)("div", {
         className: x.wS,
-        children: [(0, r.jsx)(T, {
+        children: [(0, r.jsx)(I, {
           title: L,
           description: M,
           button: c.ki(t) ? (0, r.jsx)(s.Button, {

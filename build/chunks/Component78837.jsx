@@ -26,14 +26,14 @@ function A(e) {
     onExpandedChangeComplete: f,
     children: h,
     animate: b = true
-  } = e, E = i.useRef(null), [x, O] = i.useState(null), C = i.useRef(l), I = i.useRef(false);
+  } = e, E = i.useRef(null), [x, O] = i.useState(null), C = i.useRef(l), T = i.useRef(false);
   i.useEffect(() => {
-    C.current !== l && (I.current = true, C.current = l)
+    C.current !== l && (T.current = true, C.current = l)
   }, [l]);
-  let T = i.useCallback(e => {
-      null != e.target && I.current && (I.current = false, null == f || f(l))
+  let I = i.useCallback(e => {
+      null != e.target && T.current && (T.current = false, null == f || f(l))
     }, [l, f]),
-    S = i.useMemo(() => (0, a.debounce)(T, 50), [T]),
+    S = i.useMemo(() => (0, a.debounce)(I, 50), [I]),
     j = (0, p.w)(S, [], {
       enabled: null != f
     }),
@@ -59,12 +59,11 @@ function A(e) {
             className: s()(g.Kk, {
               [g.kX]: !l
             }),
-            color: u.A.colors.ICON_LINK
+            color: u.A.colors.ICON_STRONG
           })
         })
       }),
-      onClick: () => A(!l),
-      headingColor: "text-link"
+      onClick: () => A(!l)
     }), (0, r.jsx)(o.kS, {
       className: s()(g.nd, {
         [g.t5]: !b

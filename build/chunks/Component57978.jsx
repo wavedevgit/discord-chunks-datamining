@@ -114,25 +114,25 @@ let ei = () => {
     }
   }, er = {
     name: "serverProfiles",
-    title: T.intl.string(T.t.I9TYMg),
-    description: T.intl.string(T.t.HMSHeH),
-    descriptionCta: T.intl.string(T.t.jVcuVY),
+    title: I.intl.string(I.t.I9TYMg),
+    description: I.intl.string(I.t.HMSHeH),
+    descriptionCta: I.intl.string(I.t.jVcuVY),
     onClick: t,
     previewImage: en.serverProfiles.thumbnail,
     videoUrl: en.serverProfiles.assetUrl
   }, ei = {
     name: "referralProgram",
-    title: T.intl.string(T.t.tPY4o9),
-    description: T.intl.format(T.t.jRPQUH, {
+    title: I.intl.string(I.t.tPY4o9),
+    description: I.intl.format(I.t.jRPQUH, {
       learnMoreLink: et
     }),
     previewImage: en.referralProgram.thumbnail,
     videoUrl: en.referralProgram.assetUrl
   }, el = {
     name: "customThemes",
-    title: T.intl.string(S.default.XokIHM),
-    description: T.intl.string(S.default["7esQMC"]),
-    descriptionCta: T.intl.string(T.t.jVcuVY),
+    title: I.intl.string(S.default.XokIHM),
+    description: I.intl.string(S.default["7esQMC"]),
+    descriptionCta: I.intl.string(I.t.jVcuVY),
     previewImage: en.customThemes.thumbnail,
     onClick: () => {
       (0, u.nf)(u.HP.CUSTOM_THEME)
@@ -140,23 +140,23 @@ let ei = () => {
     videoUrl: en.customThemes.assetUrl
   }, es = {
     name: "displayNameStyles",
-    title: T.intl.string(j.default.ABtBDQ),
-    description: T.intl.string(j.default.MFNXZh),
-    descriptionCta: T.intl.string(T.t.jVcuVY),
+    title: I.intl.string(j.default.ABtBDQ),
+    description: I.intl.string(j.default.MFNXZh),
+    descriptionCta: I.intl.string(I.t.jVcuVY),
     previewImage: en.displayNameStyles.thumbnail,
     onClick: i,
-    badgeText: T.intl.string(T.t.y2b7CA).toLocaleUpperCase(),
+    badgeText: I.intl.string(I.t.y2b7CA).toLocaleUpperCase(),
     videoUrl: en.displayNameStyles.assetUrl
   }, ea = {
     name: "premiumGroup",
-    title: T.intl.formatToPlainString(C.default.VFEDDB, {
+    title: I.intl.formatToPlainString(C.default.VFEDDB, {
       premiumGroupProductName: (0, E.DP)()
     }),
-    description: T.intl.formatToPlainString(C.default.WudmR3, {
+    description: I.intl.formatToPlainString(C.default.WudmR3, {
       totalSeats: E.aw,
       premiumGroupProductName: (0, E.DP)()
     }),
-    descriptionCta: T.intl.string(T.t.hvVgAZ),
+    descriptionCta: I.intl.string(I.t.hvVgAZ),
     previewImage: en.premiumGroup.thumbnail,
     videoUrl: en.premiumGroup.assetUrl,
     onClick: () => {
@@ -184,21 +184,21 @@ let ei = () => {
         }({}, t))
       })
     },
-    badgeText: T.intl.string(T.t.oW0eUd).toLocaleUpperCase(),
+    badgeText: I.intl.string(I.t.oW0eUd).toLocaleUpperCase(),
     badgeVariant: "expressive"
   }, eo = {
     name: "showYourStyle",
-    title: T.intl.string(T.t.Ij3Zmv),
-    description: T.intl.string(T.t.UsOUxY),
-    descriptionCta: T.intl.string(T.t.jVcuVY),
+    title: I.intl.string(I.t.Ij3Zmv),
+    description: I.intl.string(I.t.UsOUxY),
+    descriptionCta: I.intl.string(I.t.jVcuVY),
     previewImage: en.showYourStyle.thumbnail,
     onClick: t,
     videoUrl: en.showYourStyle.assetUrl
   }, ec = {
     name: "yourSpace",
-    title: T.intl.string(T.t.Wme3nX),
-    description: T.intl.string(T.t["/aAIqV"]),
-    descriptionCta: T.intl.string(T.t.jVcuVY),
+    title: I.intl.string(I.t.Wme3nX),
+    description: I.intl.string(I.t["/aAIqV"]),
+    descriptionCta: I.intl.string(I.t.jVcuVY),
     previewImage: en.yourSpace.thumbnail,
     onClick: () => {
       {
@@ -214,30 +214,30 @@ let ei = () => {
     videoUrl: en.yourSpace.assetUrl
   }, ed = {
     name: "emojis",
-    title: T.intl.string(T.t.zY5PPb),
-    description: T.intl.string(T.t.R5Xag2),
+    title: I.intl.string(I.t.zY5PPb),
+    description: I.intl.string(I.t.R5Xag2),
     previewImage: en.emojis.thumbnail,
     videoUrl: en.emojis.assetUrl
   }, eu = {
     name: "noLimits",
-    title: T.intl.string(T.t["6b3ydG"]),
-    description: T.intl.string(T.t["Y+IJyg"]),
+    title: I.intl.string(I.t["6b3ydG"]),
+    description: I.intl.string(I.t["Y+IJyg"]),
     previewImage: en.noLimits.thumbnail,
     videoUrl: en.noLimits.assetUrl
   }, {
     isInTreatment: e_
   } = (0, b.uX)("useBentoBoxes"), ep = {
     name: "orbRewards",
-    title: T.intl.string(I.default["ZFJ/NU"]),
-    description: T.intl.string(I.default.wMi514),
-    descriptionCta: T.intl.string(T.t.hvVgAZ),
+    title: I.intl.string(T.default["ZFJ/NU"]),
+    description: I.intl.string(T.default.wMi514),
+    descriptionCta: I.intl.string(I.t.hvVgAZ),
     onClick: () => {
       window.open(f.A.getArticleURL(x.MVz.ORBS_REWARDS_FAQ), "_blank")
     },
     previewImage: en.orbRewards.thumbnail,
     previewImageStyle: "overlay",
     backgroundVideoUrl: en.orbRewards.assetUrl,
-    badgeText: T.intl.string(T.t.oW0eUd).toLocaleUpperCase(),
+    badgeText: I.intl.string(I.t.oW0eUd).toLocaleUpperCase(),
     badgeVariant: "expressive"
   };
   return {

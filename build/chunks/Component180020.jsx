@@ -30,8 +30,8 @@ function x(e) {
   } = e, O = p.Ay.canUsePremiumProfileCustomization(t), {
     analyticsLocations: C
   } = (0, o.Ay)(), {
-    userDisplayNameStyles: I,
-    guildDisplayNameStyles: T,
+    userDisplayNameStyles: T,
+    guildDisplayNameStyles: I,
     pendingDisplayNameStyles: S,
     pendingErrors: j
   } = (0, m.B0)(t, n), [v, N] = (0, c.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = v === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, P = (0, i.useCallback)(() => {
@@ -43,7 +43,7 @@ function x(e) {
     (0, a.dM)(null), _.default.track(A.HAw.DISPLAY_NAME_STYLES_REMOVED)
   }, []), D = (0, i.useCallback)(() => {
     (0, u.mZ)(null)
-  }, []), w = true !== S || (null != n ? null != T : null != I);
+  }, []), w = true !== S || (null != n ? null != I : null != T);
   return (0, r.jsx)(g.A, {
     title: h.intl.string(b.default["86GtGH"]),
     titleIcon: y ? (0, r.jsx)(s.LpS, {
@@ -65,7 +65,7 @@ function x(e) {
         size: "sm",
         text: h.intl.string(b.default.ymq8WQ),
         onClick: R
-      }), null != n && null != (true !== S ? S : T) && (0, r.jsx)(s.Button, {
+      }), null != n && null != (true !== S ? S : I) && (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
         text: h.intl.string(b.default["j/KRxc"]),

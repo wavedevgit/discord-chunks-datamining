@@ -19,10 +19,10 @@ function p(e) {
     currentUser: t,
     userTeamsLoading: n,
     userTeams: p
-  } = e, [m, g] = i.useState(false), [A, f] = i.useState(false), [h, b] = i.useState(false), [E, x] = i.useState(false), [O, C] = i.useState(null), I = i.useCallback(e => {
+  } = e, [m, g] = i.useState(false), [A, f] = i.useState(false), [h, b] = i.useState(false), [E, x] = i.useState(false), [O, C] = i.useState(null), T = i.useCallback(e => {
     if (e.body.code === u.t02.INVALID_PASSWORD) throw e;
     x(true), C(e.body.message)
-  }, []), T = i.useCallback((e, t) => (0, s.U_)(e, t).then(u.tEg, I), [I]), S = i.useCallback(function() {
+  }, []), I = i.useCallback((e, t) => (0, s.U_)(e, t).then(u.tEg, T), [T]), S = i.useCallback(function() {
     var e;
     let n = arguments.length > 0 && true !== arguments[0] && arguments[0],
       i = o.A.getGuildsArray().filter(e => e.ownerId === t.id);
@@ -46,7 +46,7 @@ function p(e) {
         }
         return e
       }({}, e), i = i = {
-        handleSubmit: e => T(e, n),
+        handleSubmit: e => I(e, n),
         title: n ? _.intl.string(_.t["8lQ2rR"]) : _.intl.string(_.t.jf5GGb),
         actionText: n ? _.intl.string(_.t["8lQ2rR"]) : _.intl.string(_.t.jf5GGb),
         children: n ? _.intl.string(_.t.FB4H1D) : _.intl.string(_.t.gk7h32)
@@ -61,7 +61,7 @@ function p(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
       }), t))
     }) : b(true)
-  }, [t, T, p]);
+  }, [t, I, p]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.A, {
       currentUser: t,

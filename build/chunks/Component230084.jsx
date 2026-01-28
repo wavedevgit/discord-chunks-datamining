@@ -34,16 +34,16 @@ function A(e) {
     forcedDivider: O,
     withHighlight: C = false
   } = e, {
-    newestAnalyticsLocation: I
-  } = (0, c.Ay)(), T = C ? o.wLn : a.$n, S = i.useCallback(() => {
+    newestAnalyticsLocation: T
+  } = (0, c.Ay)(), I = C ? o.wLn : a.$n, S = i.useCallback(() => {
     (0, d.XD)({
       uploadType: _.HL.AVATAR,
-      analyticsSource: I,
+      analyticsSource: T,
       filters: x ? g : true,
       guildId: h,
       isTryItOut: x
     })
-  }, [h, I, x]);
+  }, [h, T, x]);
   return (0, r.jsx)(u.A, {
     className: b,
     title: A,
@@ -52,7 +52,7 @@ function A(e) {
     forcedDivider: O,
     children: (0, r.jsxs)("div", {
       className: m.NC,
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(I, {
         className: s()({
           [m.yj]: C
         }),

@@ -87,7 +87,7 @@ let k = e => {
         active: true,
         children: (0, r.jsx)(S.NB, {
           innerRef: t,
-          tier0CTAButton: (0, r.jsx)(I.A, {
+          tier0CTAButton: (0, r.jsx)(T.A, {
             showIcon: false,
             subscriptionTier: D.pe.TIER_0,
             className: M.Ph,
@@ -95,14 +95,14 @@ let k = e => {
             color: u.XD.WHITE,
             buttonShineClassName: M.Qr
           }),
-          tier2CTAButton: ee === D.pe.TIER_0 ? (0, r.jsx)(I.A, {
+          tier2CTAButton: ee === D.pe.TIER_0 ? (0, r.jsx)(T.A, {
             showIcon: false,
             subscriptionTier: D.pe.TIER_2,
             className: M.Ph,
             look: u.pR.OUTLINED,
             color: u.XD.WHITE,
             buttonShineClassName: M.Qr
-          }) : (0, r.jsx)(I.A, {
+          }) : (0, r.jsx)(T.A, {
             color: u.XD.BRAND_INVERTED,
             showIcon: false,
             subscriptionTier: D.pe.TIER_2,
@@ -130,7 +130,7 @@ let k = e => {
         className: s()({
           [U.V1]: !et
         }),
-        children: [null != ei && (0, r.jsx)(T.c, {
+        children: [null != ei && (0, r.jsx)(I.c, {
           className: U.w$,
           config: ei
         }), (0, r.jsx)(c.L, {

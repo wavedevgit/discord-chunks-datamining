@@ -3,7 +3,7 @@
 require.d(exports, {
   Ay: () => S,
   KN: () => C,
-  U9: () => T
+  U9: () => I
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -59,7 +59,7 @@ let C = e => {
       children: [u, " ", _]
     })
   },
-  I = () => (0, r.jsxs)(r.Fragment, {
+  T = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_.p, {
       className: O.zd
     }), (0, r.jsx)(_.p, {
@@ -71,7 +71,7 @@ let C = e => {
     })]
   });
 
-function T(e) {
+function I(e) {
   let {
     variant: t = "text-lg/normal",
     withBottomMargin: n = true,
@@ -119,7 +119,7 @@ let S = Chunk64700.forwardRef((e, t) => {
             textColor: "always-white",
             smallerText: !S
           })
-        }) : (0, r.jsx)(T, {}), j || E ? (0, r.jsx)("div", {
+        }) : (0, r.jsx)(I, {}), j || E ? (0, r.jsx)("div", {
           className: O.UD,
           children: (0, r.jsx)(f.A, {
             className: s()(O.x6, i),
@@ -130,11 +130,11 @@ let S = Chunk64700.forwardRef((e, t) => {
           inOfferExperience: S,
           buttonClassName: i,
           isDarkMode: _
-        }), v && (0, r.jsx)(T, {
+        }), v && (0, r.jsx)(I, {
           variant: "text-md/normal",
           withBottomMargin: false
         })]
-      }), !S && (0, r.jsx)(I, {})]
+      }), !S && (0, r.jsx)(T, {})]
     })
   })
 })

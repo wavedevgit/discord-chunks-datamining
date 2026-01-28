@@ -52,7 +52,7 @@ let w = () => {
       A = (0, x.U9)(d, P.pe.TIER_2),
       f = (0, j.dk)("UserSettingsAppearanceClientThemes");
     i.useEffect(() => {
-      a && I.default.track(N.HAw.PREMIUM_UPSELL_VIEWED, {
+      a && T.default.track(N.HAw.PREMIUM_UPSELL_VIEWED, {
         type: P.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: s
       })
@@ -73,7 +73,7 @@ let w = () => {
           subscriptionTier: P.pe.TIER_2
         })]
       }),
-      T = (n = (0, r.jsxs)(r.Fragment, {
+      I = (n = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.Ay.Gradient, {
           disabled: false,
           renderCTAButtons: () => {
@@ -108,7 +108,7 @@ let w = () => {
         type: g.v0.SETTINGS,
         children: [(0, r.jsx)(g.Ay.Basic, {
           className: D.a6
-        }), (0, r.jsx)(M, {}), (0, r.jsx)(m.A, {}), T]
+        }), (0, r.jsx)(M, {}), (0, r.jsx)(m.A, {}), I]
       }), !f && (0, r.jsx)(o.cGx, {
         className: D.yF
       })]
@@ -121,8 +121,8 @@ function M() {
       theme: t,
       useForcedColors: n,
       gradientPreset: i
-    } = (0, l.cf)([T.A, d.A, p.A], () => ({
-      theme: T.A.theme,
+    } = (0, l.cf)([I.A, d.A, p.A], () => ({
+      theme: I.A.theme,
       useForcedColors: d.A.useForcedColors,
       gradientPreset: p.A.gradientPreset
     })),

@@ -45,10 +45,10 @@ let f = e => {
         error: r,
         submitting: t
       }
-    })(E), I = async () => {
+    })(E), T = async () => {
       await x(f.id) && h()
-    }, T = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), S = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), j = s()(f.currentPeriodEnd).format("MMMM Do, YYYY"), v = g.intl.formatToPlainString(g.t.KsMRP5, {
-      numChannels: T.length,
+    }, I = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), S = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), j = s()(f.currentPeriodEnd).format("MMMM Do, YYYY"), v = g.intl.formatToPlainString(g.t.KsMRP5, {
+      numChannels: I.length,
       numAdditionalBenefits: S.length,
       subscriptionEndDate: j
     });
@@ -62,7 +62,7 @@ let f = e => {
       }, {
         variant: "critical-primary",
         text: g.intl.string(g.t.F6lUDF),
-        onClick: I,
+        onClick: T,
         loading: C
       }],
       title: g.intl.string(g.t.O6l5tM),

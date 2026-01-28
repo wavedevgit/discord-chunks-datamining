@@ -40,7 +40,7 @@ let y = Chunk64700.forwardRef((e, t) => {
     videoRef: R
   } = e, {
     analyticsLocations: D
-  } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), w = (0, f.QQ)(), L = (0, A.ar)(), M = (0, a.bG)([g.A], () => g.A.affinities), U = (0, h.A)(), G = null != U, k = y ? o.XD.WHITE : o.XD.BRAND, V = M.length > 0, H = T.intl.string(T.t.YCZldK), B = (0, m.TM)(), F = (0, a.bG)([d.A], () => d.A.useReducedMotion);
+  } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), w = (0, f.QQ)(), L = (0, A.ar)(), M = (0, a.bG)([g.A], () => g.A.affinities), U = (0, h.A)(), G = null != U, k = y ? o.XD.WHITE : o.XD.BRAND, V = M.length > 0, H = I.intl.string(I.t.YCZldK), B = (0, m.TM)(), F = (0, a.bG)([d.A], () => d.A.useReducedMotion);
   return (0, r.jsx)(_.f5, {
     value: D,
     children: (0, r.jsxs)("div", {
@@ -101,7 +101,7 @@ let y = Chunk64700.forwardRef((e, t) => {
           ref: R,
           children: (0, r.jsx)("source", {
             src: B ? j.A : N.A,
-            type: B ? I.a.MP4 : I.a.WEBM
+            type: B ? T.a.MP4 : T.a.WEBM
           })
         })
       })]

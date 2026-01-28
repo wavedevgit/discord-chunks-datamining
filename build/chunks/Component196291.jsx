@@ -116,7 +116,7 @@ function M(e) {
       type: j.i.PREMIUM,
       isShown: true,
       hasBackground: true,
-      children: [(0, r.jsx)(I.A, {
+      children: [(0, r.jsx)(T.A, {
         layoutClassName: L.th,
         profilePreviewTitle: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.tvc, {
@@ -161,7 +161,7 @@ function M(e) {
             showRemoveBannerButton: null != W,
             onBannerChange: b.xe,
             showPremiumIcon: false
-          }), !V && (0, r.jsx)(T.A, {
+          }), !V && (0, r.jsx)(I.A, {
             className: L.fz,
             isTryItOut: true,
             onAvatarChange: b.e$,

@@ -34,17 +34,17 @@ function f(e) {
     guildId: null == n ? true : n.id
   }), {
     pendingAvatarDecoration: C,
-    errors: I
-  } = (0, p.CP)(null == n ? true : n.id), T = b ? a.wLn : s.$n;
+    errors: T
+  } = (0, p.CP)(null == n ? true : n.id), I = b ? a.wLn : s.$n;
   return (0, r.jsxs)(m.A, {
     className: i,
     forcedDivider: f,
     hasBackground: true,
     title: _,
-    errors: I,
+    errors: T,
     children: [(0, r.jsxs)("div", {
       className: A.NC,
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(I, {
         size: s.$n.Sizes.SMALL,
         onClick: () => {
           (0, d.L)({

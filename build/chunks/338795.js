@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 338795, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  J: () => R
+  J: () => D
 });
 var Chunk934551 = require("./934551.js"),
   Chunk98207 = require("./98207.js"),
@@ -54,7 +54,7 @@ let N = (0, Chunk419954.dT)(Chunk780964.X.ACCOUNT_STANDING_TAB, {
     StronglyDiscouragedCustomComponent: Chunk782844.A,
     buildLayout: () => []
   }),
-  R = (0, Chunk419954.i4)(Chunk780964.X.ACCOUNT_SIDEBAR_ITEM, {
+  D = (0, Chunk419954.i4)(Chunk780964.X.ACCOUNT_SIDEBAR_ITEM, {
     useTitle: () => O.intl.string(O.t["JAIM/m"]),
     getLegacySearchKey: () => (0, A.WJ)("AccountPanel") ? true : c.H.ACCOUNT,
     icon: Chunk934551.UserIcon,

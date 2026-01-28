@@ -26,7 +26,7 @@ var Chunk397927 = require("./397927.js"),
   Chunk531525 = require("./531525.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let T = "".concat(Chunk975571.A.getArticleURL(Chunk652215.MVz.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
+let I = "".concat(Chunk975571.A.getArticleURL(Chunk652215.MVz.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
 function S() {
   return (0, r.jsxs)(r.Fragment, {
@@ -45,8 +45,8 @@ function S() {
           setting: O.H.VOICE_AND_VIDEO_MIC_TEST,
           children: [(0, r.jsx)(g.A, {}), (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: I.intl.format(I.t["V+B3FH"], {
-              guideURL: T
+            children: T.intl.format(T.t["V+B3FH"], {
+              guideURL: I
             })
           })]
         })]
@@ -66,10 +66,10 @@ function S() {
       })]
     }), (0, r.jsx)(o.A, {
       webSetting: O.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-      title: I.intl.string(I.t["6I6GUv"]),
+      title: T.intl.string(T.t["6I6GUv"]),
       children: (0, r.jsx)(b.Ay, {})
     }), (0, r.jsx)(o.A, {
-      title: I.intl.string(I.t["8/udY0"]),
+      title: T.intl.string(T.t["8/udY0"]),
       webSetting: O.H.VOICE_AND_VIDEO_VOICE_ADVANCED,
       children: (0, r.jsxs)(c.A, {
         children: [(0, r.jsx)(f.A, {}), (0, r.jsx)(h.A, {}), (0, r.jsx)(d.A, {}), (0, r.jsx)(u.A, {}), (0, r.jsx)(A.A, {})]

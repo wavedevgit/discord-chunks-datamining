@@ -56,17 +56,17 @@ function x(e) {
       O = (0, p.HU)(_, E.Nz)
   }
   let C = (0, u.An)(_[h.pK.CREATED_AT], g),
-    I = null,
-    T = b.intl.string(b.t.wzzjk9);
-  return (null == O || 0 === O.length) && null == C && (I = (0, r.jsx)(a.Text, {
+    T = null,
+    I = b.intl.string(b.t.wzzjk9);
+  return (null == O || 0 === O.length) && null == C && (T = (0, r.jsx)(a.Text, {
     variant: "text-xs/normal",
     color: "text-default",
     children: b.intl.format(b.t.Up2ni7, {
       helpdeskUrl: A.A.getArticleURL(f.MVz.CONNECTION_DETAILS)
     })
-  }, "label"), T = b.intl.string(b.t["LVh3/5"])), s && (T = b.intl.string(b.t.i4jeWR)), (0, r.jsxs)("div", {
+  }, "label"), I = b.intl.string(b.t["LVh3/5"])), s && (I = b.intl.string(b.t.i4jeWR)), (0, r.jsxs)("div", {
     className: E.tJ,
-    children: [I, null == O ? true : O.map((e, t) => (0, r.jsxs)(r.Fragment, {
+    children: [T, null == O ? true : O.map((e, t) => (0, r.jsxs)(r.Fragment, {
       children: [e, t < O.length - 1 ? (0, r.jsx)("span", {
         className: E.Om
       }) : null]
@@ -87,7 +87,7 @@ function x(e) {
         disabled: s,
         "aria-label": b.intl.string(b.t.sCkLYH),
         onClick: x,
-        text: T
+        text: I
       }, "refresh-button")
     })]
   })

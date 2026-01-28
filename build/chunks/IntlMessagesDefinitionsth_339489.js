@@ -1,3 +1,3 @@
 /** Chunk was on 79930 **/
-/** chunk id: 339489, original params: p (module,exports,require) **/
-module.exports = JSON.parse('{"Zxav97":["ยอดรวมที่ต้องชำระ"],"pDVleg":["ยอดประหยัดรวม ",[1,"amount"]],"Tt3O81":["การต่ออายุครั้งถัดไป"],"eoXh7B":["สรุปคำสั่งซื้อ"]}')
+/** chunk id: 339489, original params: t (module,exports,require) **/
+module.exports = JSON.parse('{"Zxav97":["ยอดรวมที่ต้องชำระ"],"pDVleg":["ยอดประหยัดรวม ",[1,"amount"]],"WmjxYl":["วัน"],"ZnoRKt":["เดือน"],"Tt3O81":["การต่ออายุครั้งถัดไป"],"8Jt4Dw":["Nitro ซึ่งใช้ได้ 1 ",[1,"timeInterval"]],"eoXh7B":["สรุปคำสั่งซื้อ"],"2zUa6I":["การสมัครสมาชิก"],"Xrg8aC":["ปี"]}')

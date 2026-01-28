@@ -58,8 +58,8 @@ function O(e) {
     onLearnMore: t,
     selectedBackgroundOption: O,
     onSelectBackgroundOption: C,
-    currentDeviceId: I,
-    responsiveBackgroundOptions: T,
+    currentDeviceId: T,
+    responsiveBackgroundOptions: I,
     className: S
   } = e, j = (0, l.bG)([o.default], () => o.default.getCurrentUser()), [v, N] = i.useState(null), y = (0, m.A)(), P = c.Ay.canUseCustomBackgrounds(j);
   i.useEffect(() => {
@@ -82,15 +82,15 @@ function O(e) {
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
     } = M.current;
-    e ? (0, p.S1)(n, I, {
+    e ? (0, p.S1)(n, T, {
       track: false
     }).catch(() => t(null)) : null != n && t(null)
-  }, [I]);
+  }, [T]);
   let U = e => {
-    C(e), (0, p.S1)(e, I, {
+    C(e), (0, p.S1)(e, T, {
       location: w.location
     }).then(() => N(null)).catch(() => {
-      N(b.intl.string(b.t.ejrSLe)), (0, p.S1)(null, I, {
+      N(b.intl.string(b.t.ejrSLe)), (0, p.S1)(null, T, {
         location: w.location
       })
     })
@@ -130,7 +130,7 @@ function O(e) {
             r()
           })
         },
-        responsive: T
+        responsive: I
       })
     })
   }) : null

@@ -1,7 +1,7 @@
 /** Chunk was on 60667 **/
 /** chunk id: 751461, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => T
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,7 +29,7 @@ function C(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, h = (0, p.q9)(), C = u.$s.useSetting().includes(n), I = (0, d.K)(), T = (0, _.e)(), S = (0, s.uM)(), j = i.useCallback(e => {
+  } = e, h = (0, p.q9)(), C = u.$s.useSetting().includes(n), T = (0, d.K)(), I = (0, _.e)(), S = (0, s.uM)(), j = i.useCallback(e => {
     let r = (0, c.Tb)();
     e ? r.delete(n) : r.add(n), u.$s.updateSetting(Array.from(r)), o.default.track(E.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: f.m.DIRECT_MESSAGES_TOGGLE,
@@ -44,13 +44,13 @@ function C(e) {
       applied_to_existing_guilds: t
     })
   }
-  let N = T ? x.intl.string(x.t.PMsfcH) : x.intl.string(x.t.RAQUSN);
+  let N = I ? x.intl.string(x.t.PMsfcH) : x.intl.string(x.t.RAQUSN);
   return (0, r.jsx)(m.h, {
     setting: b.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
     children: "0" === n ? (0, r.jsx)(g.Ay, {
       title: N,
-      note: T ? x.intl.string(x.t.XXGmuB) : x.intl.string(x.t.wbYDfT),
-      value: !I,
+      note: I ? x.intl.string(x.t.XXGmuB) : x.intl.string(x.t.wbYDfT),
+      value: !T,
       onChange: e => {
         var t;
         t = !e, (0, A.O)({
@@ -71,14 +71,14 @@ function C(e) {
       tooltipText: S ? x.intl.string(O.default["6Af/cw"]) : true
     }) : (0, r.jsx)(g.Ay, {
       title: N,
-      note: h ? x.intl.string(x.t.V0ka0Q) : T ? x.intl.string(x.t.F9WY3f) : x.intl.string(x.t.G7c3Xo),
+      note: h ? x.intl.string(x.t.V0ka0Q) : I ? x.intl.string(x.t.F9WY3f) : x.intl.string(x.t.G7c3Xo),
       value: !C,
       onChange: j
     })
   })
 }
 
-function I(e) {
+function T(e) {
   let {
     ingress: t = h.bf.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n

@@ -30,7 +30,7 @@ let C = {
   section: Chunk652215.JJy.SETTINGS_VOICE_AND_VIDEO
 };
 
-function I(e) {
+function T(e) {
   let t = e.currentTarget;
   _.default.track(f.HAw.NOISE_CANCELLATION_LINK_CLICKED, {
     text: t.text,
@@ -42,7 +42,7 @@ function I(e) {
   })
 }
 
-function T() {
+function I() {
   let e = (0, l.bG)([m.A], () => m.A.theme),
     {
       noiseCancellation: t,
@@ -87,7 +87,7 @@ function T() {
           alt: ""
         }), (0, i.jsx)(a.MzZ, {
           href: p.A.getArticleURL(f.MVz.NOISE_SUPPRESSION),
-          onClick: I,
+          onClick: T,
           children: h.intl.string(h.t.hvVgAZ)
         })]
       })
@@ -138,7 +138,7 @@ function S() {
       })
     }), (0, i.jsx)(c.x, {
       setting: A.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
-      children: (0, i.jsx)(T, {})
+      children: (0, i.jsx)(I, {})
     }), (0, i.jsx)(c.x, {
       setting: A.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY,
       children: (0, i.jsx)(a.dOG, {

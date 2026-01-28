@@ -1,7 +1,7 @@
 /** Chunk was on 2824 **/
 /** chunk id: 877156, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,87 +18,86 @@ var Chunk627968 = require("./627968.js"),
   Chunk235986 = require("./235986.jsx"),
   Chunk369496 = require("./369496.js"),
   Chunk550111 = require("./550111.jsx"),
-  Chunk552736 = require("./552736.js"),
   Chunk287809 = require("./287809.js"),
   Chunk482132 = require("./482132.jsx"),
   Chunk758836 = require("./758836.js"),
+  Chunk985018 = require("./985018.jsx"),
   Chunk401506 = require("./401506.js");
 
-function b(e) {
+function A(e) {
   let {
     rewardSkuId: n,
-    purchase: t,
-    onClose: b
-  } = e, A = (0, i.bG)([h.default], () => h.default.getCurrentUser()), y = (0, i.bG)([o.A], () => o.A.useReducedMotion), {
-    analyticsLocations: v
-  } = (0, u.Ay)(), I = a._3J.SIZE_32, O = (0, x.A)(), _ = null == O ? true : O.giftPurchaseConfirmation, {
-    product: N,
-    isFetching: C
-  } = (0, d.q)(n), [M, w] = r.useState(false), R = t.items[0], {
-    isNameplateReward: k,
-    nameplateData: D,
-    rewardDeco: L
-  } = r.useMemo(() => {
-    if (null == R) return {
+    onClose: t
+  } = e, A = (0, i.bG)([x.default], () => x.default.getCurrentUser()), b = (0, i.bG)([o.A], () => o.A.useReducedMotion), {
+    analyticsLocations: y
+  } = (0, u.Ay)(), I = a._3J.SIZE_32, {
+    product: O,
+    isFetching: v
+  } = (0, d.q)(n), [_, N] = l.useState(false), C = null == O ? true : O.items[0], {
+    isNameplateReward: M,
+    nameplateData: R,
+    rewardDeco: k
+  } = l.useMemo(() => {
+    if (null == C) return {
       isNameplateReward: false,
       nameplateData: null,
       rewardDeco: true
     };
-    if ((0, m.F)(R)) {
+    if ((0, m.F)(C)) {
       var e;
       return {
         isNameplateReward: true,
         nameplateData: {
-          src: R.asset,
-          palette: (0, j.H6)(null != (e = R.palette) ? e : "sky"),
-          imgAlt: R.label
+          src: C.asset,
+          palette: (0, E.H6)(null != (e = C.palette) ? e : "sky"),
+          imgAlt: C.label
         },
         rewardDeco: true
       }
     }
-    return (0, p.T)(R) ? {
+    return (0, p.T)(C) ? {
       isNameplateReward: false,
       nameplateData: null,
-      rewardDeco: (0, c.A)(R.asset, I, !y)
+      rewardDeco: (0, c.A)(C.asset, I, !b)
     } : {
       isNameplateReward: false,
       nameplateData: null,
       rewardDeco: true
     }
-  }, [R, I, y]);
-  return null == _ ? null : (0, l.jsx)(T.UX, {
-    children: (0, l.jsx)(a.jlY, {
+  }, [C, I, b]);
+  return (0, r.jsx)(h.UX, {
+    children: (0, r.jsx)(a.jlY, {
       align: f.A.Align.CENTER,
       "data-migration-pending": true,
-      children: (0, l.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: S.W,
-        children: [k && null != D ? (0, l.jsx)("div", {
+        children: [M && null != R ? (0, r.jsx)("div", {
           className: S.D,
-          onMouseEnter: () => w(true),
-          onMouseLeave: () => w(false),
-          children: (0, l.jsx)(E.a, {
+          onMouseEnter: () => N(true),
+          onMouseLeave: () => N(false),
+          children: (0, r.jsx)(j.a, {
             user: A,
             nameplate: null,
-            nameplateData: D,
+            nameplateData: R,
             showPlaceholderUser: true,
             nameplatePreviewSize: "xsmall",
-            isHighlighted: M
+            isHighlighted: _
           })
-        }) : (0, l.jsx)(a.JsQ, {
+        }) : (0, r.jsx)(a.JsQ, {
           "aria-label": null == A ? true : A.username,
           size: I,
-          src: null == A ? true : A.getAvatarURL(true, (0, a.FT9)(I), !y),
-          avatarDecoration: L
-        }), (0, l.jsx)(s.$nd, {
+          src: null == A ? true : A.getAvatarURL(true, (0, a.FT9)(I), !b),
+          avatarDecoration: k
+        }), (0, r.jsx)(s.$nd, {
           variant: "primary",
-          text: _.collectRewardButtonText(),
-          loading: C,
+          text: P.intl.string(P.t.kMYVwv),
+          loading: v,
           onClick: () => {
-            null != N && (b(), (0, g.A)({
-              product: N,
+            null != O && (t(), (0, g.A)({
+              product: O,
               shouldShowPromotionalExperience: true,
-              analyticsLocations: v,
-              purchaseType: P.gs.PROMOTIONAL
+              analyticsLocations: y,
+              purchaseType: T.gs.PROMOTIONAL
             }))
           }
         })]

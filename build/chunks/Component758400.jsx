@@ -107,7 +107,7 @@ function J(e) {
           })
         })]
       }), a && (0, r.jsx)(V.A, {
-        onClick: () => (0, S.openUserSettings)(T.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+        onClick: () => (0, S.openUserSettings)(I.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
           section: z.nc_.GUILD_BOOSTING
         }),
         text: X.intl.string(X.t["NQ5g/U"])
@@ -190,7 +190,7 @@ function ee(e) {
       children: X.intl.format(X.t["0nbf/G"], {
         daysPastDue: t,
         paymentModalRedirect: () => {
-          (0, I.A)({
+          (0, T.A)({
             initialPlanId: n.planIdFromItems,
             openInvoiceId: l,
             analyticsLocations: s
@@ -284,20 +284,20 @@ function er(e) {
     [O] = (0, D.Kq)(x);
   O = null != u ? u : O;
   let C = (0, E.A)(),
-    I = (0, M.p)(),
-    T = (0, w.nf)(),
+    T = (0, M.p)(),
+    I = (0, w.nf)(),
     S = P.Ay.isBaseSubscriptionCanceled(t),
     j = (0, G.v)(t, i);
   if (null == b || null == O) return (0, r.jsx)(g.y$y, {});
   let v = j ? (0, w.Bv)(O) : null,
-    N = null != v || null != T && (T.discountId === W.q || T.discountId === W.EG),
-    y = j && (S && null != I || !S && N) ? (0, r.jsx)(k.A, {
+    N = null != v || null != I && (I.discountId === W.q || I.discountId === W.EG),
+    y = j && (S && null != T || !S && N) ? (0, r.jsx)(k.A, {
       subscription: t,
       invoicePreview: O,
       paymentSource: i,
-      discountOffer: I,
+      discountOffer: T,
       renewalChurnDiscountInfo: v,
-      discountInfo: T,
+      discountInfo: I,
       isLoading: l,
       analyticsLocation: n
     }) : (0, r.jsx)(H.A, {
@@ -393,8 +393,8 @@ function es(e) {
       analyticsLocations: x
     } = (0, h.Ay)(f.A.SUBSCRIPTION_DETAILS),
     C = (0, M.p)(),
-    I = null != s ? s.slice(1) : [],
-    [T, S] = i.useState(0);
+    T = null != s ? s.slice(1) : [],
+    [I, S] = i.useState(0);
   i.useEffect(() => {
     if (!b) return;
     let e = e => {
@@ -409,7 +409,7 @@ function es(e) {
     renewal: true,
     analyticsLocations: x,
     analyticsLocation: u,
-    fetchKey: T
+    fetchKey: I
   }), [P] = (0, D.Kq)({
     subscriptionId: l.id,
     renewal: true,
@@ -417,7 +417,7 @@ function es(e) {
     analyticsLocations: x,
     analyticsLocation: u,
     userDiscountOfferId: null == C ? true : C.id,
-    fetchKey: T
+    fetchKey: I
   }), R = (0, Y.V)(), w = null == a ? true : a.invalid, G = (0, _.bG)([v.default], () => {
     var e;
     return null == (e = v.default.getCurrentUser()) ? true : e.hasFreePremium()
@@ -459,7 +459,7 @@ function es(e) {
       })
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
-        className: I.length > 0 ? q.HZ : q.__invalid_singleSubscription,
+        className: T.length > 0 ? q.HZ : q.__invalid_singleSubscription,
         children: (0, r.jsx)(er, {
           subscription: l,
           analyticsLocation: u,
@@ -473,7 +473,7 @@ function es(e) {
           fetchedOpenInvoice: es,
           isPremiumGroup: ei
         })
-      }), I.map((e, t) => (0, r.jsxs)("div", {
+      }), T.map((e, t) => (0, r.jsxs)("div", {
         className: q.HZ,
         children: [(0, r.jsx)(g.Heading, {
           variant: "heading-md/semibold",

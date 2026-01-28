@@ -70,7 +70,7 @@ function y(e) {
     premiumSubscription: a,
     useReducedMotion: u,
     fractionalState: _
-  } = e, p = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), m = (0, b.I5)(t), g = (null == a ? true : a.isPaused) === true && _ === T.xc.NONE, A = S.intl.string(S.t.mOWsF1);
+  } = e, p = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), m = (0, b.I5)(t), g = (null == a ? true : a.isPaused) === true && _ === I.xc.NONE, A = S.intl.string(S.t.mOWsF1);
   return (0, r.jsxs)("li", {
     className: j.Hp,
     children: [(0, r.jsxs)("div", {
@@ -151,7 +151,7 @@ let D = function(e) {
     } = (0, _.A)(),
     C = (0, a.bG)([u.A], () => u.A.useReducedMotion),
     D = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
-    w = O === T.xc.FP_SUB_PAUSED,
+    w = O === I.xc.FP_SUB_PAUSED,
     L = g && !w,
     {
       appliedGuildBoostSlots: M,
@@ -213,7 +213,7 @@ let D = function(e) {
   } else n = V ? S.intl.string(S.t["8pcUZi"]) : S.intl.formatToPlainString(S.t.Kaw82o, {
     numUnappliedGuildBoostSlots: Z
   });
-  return l = g && O === T.xc.NONE ? S.intl.string(S.t.mOWsF1) : S.intl.string(S.t.xr4m5B), (0, r.jsx)("div", {
+  return l = g && O === I.xc.NONE ? S.intl.string(S.t.mOWsF1) : S.intl.string(S.t.xr4m5B), (0, r.jsx)("div", {
     className: j.iE,
     children: (0, r.jsxs)("div", {
       className: s()(j.Qs, [j.Yq]),
@@ -251,7 +251,7 @@ let D = function(e) {
               onClick: null != K ? () => {
                 (0, d.mMO)(async () => e => (0, r.jsx)(p.default, N(v({}, e), {
                   guildBoostSlots: [K],
-                  locationSection: I.JJy.SETTINGS_PREMIUM
+                  locationSection: T.JJy.SETTINGS_PREMIUM
                 })))
               } : true
             }))

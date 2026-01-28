@@ -101,7 +101,7 @@ function V() {
         for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
       return l
     }(l, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
-    Y = (0, T.V7)({
+    Y = (0, I.V7)({
       userId: t.id,
       image: H
     }),
@@ -148,7 +148,7 @@ function V() {
       active: ee,
       children: (0, r.jsx)("div", {
         ref: et,
-        children: (0, r.jsx)(I.A, {
+        children: (0, r.jsx)(T.A, {
           user: t,
           shouldShow: ee,
           isVisible: J

@@ -87,7 +87,7 @@ function D() {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e
     }),
-    X = (0, I.V7)({
+    X = (0, T.V7)({
       userId: U.id,
       image: k
     }),
@@ -112,7 +112,7 @@ function D() {
     }), (0, r.jsx)(C.A, {
       sectionTitle: P.intl.string(P.t["+T3RI/"]),
       errors: Z.pronouns,
-      onPronounsChange: T.Oz,
+      onPronounsChange: I.Oz,
       pendingPronouns: F,
       currentPronouns: null != (D = null == G ? true : G.pronouns) ? D : ""
     }, "pronouns"), (0, r.jsx)(O.A, {}), (0, r.jsx)(m.A, {
@@ -133,20 +133,20 @@ function D() {
       children: [(0, r.jsx)(h.A, {
         showRemoveBannerButton: $,
         errors: Z.banner,
-        onBannerChange: T.Iz,
+        onBannerChange: I.Iz,
         forcedDivider: true
       }, "banner"), (0, r.jsx)(x.A, {
         user: U,
         pendingAvatarSrc: X,
         pendingColors: W,
-        onThemeColorsChange: T.Zz,
+        onThemeColorsChange: I.Zz,
         forcedDivider: true
       })]
     }) : (0, r.jsx)(b.A, {
       user: U,
       savedUserColor: null == G ? true : G.accentColor,
       pendingColor: Y,
-      setPendingAccentColor: T.XW
+      setPendingAccentColor: I.XW
     }, "color"), (0, r.jsx)(_.A, {
       sectionTitle: P.intl.string(P.t.NepzEw),
       errors: er,

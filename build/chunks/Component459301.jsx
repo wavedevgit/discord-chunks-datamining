@@ -44,8 +44,8 @@ let Y = () => {
         analyticsLocations: e
       } = (0, S.Ay)(d.A.CF_WARP_SETTINGS);
     return (0, l.useEffect)(() => {
-      R.default.track(G.HAw.PREMIUM_UPSELL_VIEWED, {
-        type: y.e.PRIVACY_PERK_SETTINGS,
+      D.default.track(G.HAw.PREMIUM_UPSELL_VIEWED, {
+        type: V.e.PRIVACY_PERK_SETTINGS,
         location_stack: e
       })
     }, [e]), (0, n.jsxs)("div", {
@@ -105,8 +105,8 @@ let Y = () => {
     if (!o) return (0, n.jsxs)("div", {
       className: h._u,
       children: [(0, n.jsx)(E.A, {
-        buttonTextOverride: V.intl.string(V.t["8x0jKT"]),
-        subscriptionTier: y.pe.TIER_2,
+        buttonTextOverride: y.intl.string(y.t["8x0jKT"]),
+        subscriptionTier: V.pe.TIER_2,
         fullWidth: true,
         size: "sm",
         premiumModalAnalyticsLocation: {
@@ -117,10 +117,10 @@ let Y = () => {
         }
       }), (0, n.jsx)(a.$nd, {
         variant: "secondary",
-        text: V.intl.string(V.t.ZnqyZ2),
+        text: y.intl.string(y.t.ZnqyZ2),
         size: "sm",
         onClick: () => {
-          (0, u.closeModal)(D.USER_SETTINGS_MODAL_KEY), (0, L.pX)(G.BVt.APPLICATION_STORE), A.current = true
+          (0, u.closeModal)(R.USER_SETTINGS_MODAL_KEY), (0, L.pX)(G.BVt.APPLICATION_STORE), A.current = true
         }
       })]
     });
@@ -142,7 +142,7 @@ let Y = () => {
               is_enable_warp: true
             }), i(g.Lk.READY_FOR_LICENSE), A.current = true
           },
-          text: V.intl.string(f.default.J09UWz)
+          text: y.intl.string(f.default.J09UWz)
         });
       case g.Lk.INSTALLING:
       case g.Lk.READY_FOR_LICENSE:

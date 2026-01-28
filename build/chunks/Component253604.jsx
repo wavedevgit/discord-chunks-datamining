@@ -30,8 +30,8 @@ function u(e) {
     pendingPronouns: x,
     pendingBio: O,
     tryItOutThemeColors: C,
-    tryItOutAvatar: I,
-    tryItOutBanner: T,
+    tryItOutAvatar: T,
+    tryItOutBanner: I,
     tryItOutAvatarDecoration: S,
     tryItOutDisplayNameStyles: j
   } = (0, l.cf)([o.A], () => (function(e) {
@@ -53,20 +53,20 @@ function u(e) {
     return e
   })({}, o.A.getAllPending(), o.A.getAllTryItOut())), v = (0, a.V7)({
     userId: u.id,
-    image: null != I ? I : g
+    image: null != T ? T : g
   });
   return (0, r.jsx)(c.A, {
     containerClassName: p,
     user: u,
     pendingPronouns: x,
     pendingBio: O,
-    pendingBanner: null != (t = null != T ? T : A) ? t : n(636763),
+    pendingBanner: null != (t = null != I ? I : A) ? t : n(636763),
     pendingDisplayNameStyles: null != j ? j : b,
     pendingAvatar: v,
     pendingThemeColors: null != C ? C : E,
     pendingAvatarDecoration: true !== S ? S : f,
     pendingProfileEffect: h,
-    avatarClassName: null != I || null != g || m.enabled ? true : d.W,
+    avatarClassName: null != T || null != g || m.enabled ? true : d.W,
     canUsePremiumCustomization: true,
     isTryItOut: true,
     disabledInputs: _,

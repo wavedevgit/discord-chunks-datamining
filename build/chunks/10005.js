@@ -13,8 +13,8 @@ function o(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [o, c] = r.useState(false), [d, u] = r.useState(false), [_, p] = r.useState(false), [m, g] = r.useState(false), [A, f] = r.useState(false), [h, b] = r.useState(false), [E, x] = r.useState(false), [O, C] = r.useState(false), I = o || d || _ || m || h || O, T = r.useCallback(async e => {
-    if (!I) {
+  } = null != e ? e : {}, [o, c] = r.useState(false), [d, u] = r.useState(false), [_, p] = r.useState(false), [m, g] = r.useState(false), [A, f] = r.useState(false), [h, b] = r.useState(false), [E, x] = r.useState(false), [O, C] = r.useState(false), T = o || d || _ || m || h || O, I = r.useCallback(async e => {
+    if (!T) {
       c(true);
       try {
         await (0, l.nt)(e, a.Ef.ACTIVE), null == n || n()
@@ -25,8 +25,8 @@ function o(e) {
         c(false)
       }
     }
-  }, [I, t, n]), S = r.useCallback(async e => {
-    if (!I) {
+  }, [T, t, n]), S = r.useCallback(async e => {
+    if (!T) {
       u(true);
       try {
         await (0, l.nt)(e, a.Ef.DECLINED), null == n || n()
@@ -37,8 +37,8 @@ function o(e) {
         u(false)
       }
     }
-  }, [I, t, n]), j = r.useCallback(async e => {
-    if (!I) {
+  }, [T, t, n]), j = r.useCallback(async e => {
+    if (!T) {
       p(true);
       try {
         await (0, l.nt)(e, a.Ef.INACTIVE), null == n || n()
@@ -49,8 +49,8 @@ function o(e) {
         p(false)
       }
     }
-  }, [I, t, n]), v = r.useCallback(async e => {
-    if (!I) {
+  }, [T, t, n]), v = r.useCallback(async e => {
+    if (!T) {
       g(true);
       try {
         await (0, l.e$)(e), null == n || n()
@@ -61,7 +61,7 @@ function o(e) {
         g(false)
       }
     }
-  }, [I, t, n]), N = r.useCallback(async () => {
+  }, [T, t, n]), N = r.useCallback(async () => {
     if (!A) {
       f(true);
       try {
@@ -87,7 +87,7 @@ function o(e) {
     }
   }, [E, t, n]);
   return {
-    acceptLinkRequest: T,
+    acceptLinkRequest: I,
     declineLinkRequest: S,
     disconnectLinkRequest: j,
     cancelLinkRequest: v,

@@ -54,11 +54,11 @@ let E = e => {
       leftAlignHeaders: x = false,
       showAllPerksButton: O,
       headerClassname: C
-    } = e, I = i.useRef(null), T = n === A.cJ.WHATS_NEW, S = (0, a.bG)([d.default], () => d.default.getCurrentUser()), j = (0, m.E)();
+    } = e, T = i.useRef(null), I = n === A.cJ.WHATS_NEW, S = (0, a.bG)([d.default], () => d.default.getCurrentUser()), j = (0, m.E)();
     i.useEffect(() => {
-      T && j()
-    }, [j, T]);
-    let v = (0, f.G4)(T),
+      I && j()
+    }, [j, I]);
+    let v = (0, f.G4)(I),
       N = (0, g.A)(),
       y = (0, f.LQ)(),
       {
@@ -82,7 +82,7 @@ let E = e => {
       }),
       M = L.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
-      ref: I,
+      ref: T,
       className: s()(b.uW, {
         [b.qO]: !x,
         [b.Uv]: x
@@ -98,7 +98,7 @@ let E = e => {
         className: s()(b.VA, {
           [b.VA]: null == O || x,
           [b.Xx]: null != O && !x,
-          [b.Ij]: T || x,
+          [b.Ij]: I || x,
           [b.Ob]: M,
           [b.dO]: x,
           [b.br]: !x

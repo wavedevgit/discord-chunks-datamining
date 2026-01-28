@@ -141,7 +141,7 @@ var b = function(e) {
     return e.GOOGLE_PAY = "google_pay", e.APPLE_PAY = "apple_pay", e
   }({}),
   O = function(e) {
-    return e[e.UNKNOWN = 0] = "UNKNOWN", e[e.CARD = 1] = "CARD", e[e.PAYPAL = 2] = "PAYPAL", e[e.GIROPAY = 3] = "GIROPAY", e[e.SOFORT = 4] = "SOFORT", e[e.PRZELEWY24 = 5] = "PRZELEWY24", e[e.SEPA_DEBIT = 6] = "SEPA_DEBIT", e[e.PAYSAFE_CARD = 7] = "PAYSAFE_CARD", e[e.GCASH = 8] = "GCASH", e[e.GRABPAY_MY = 9] = "GRABPAY_MY", e[e.MOMO_WALLET = 10] = "MOMO_WALLET", e[e.VENMO = 11] = "VENMO", e[e.GOPAY_WALLET = 12] = "GOPAY_WALLET", e[e.KAKAOPAY = 13] = "KAKAOPAY", e[e.BANCONTACT = 14] = "BANCONTACT", e[e.EPS = 15] = "EPS", e[e.IDEAL = 16] = "IDEAL", e[e.CASH_APP = 17] = "CASH_APP", e[e.APPLE = 18] = "APPLE", e[e.PAYMENT_REQUEST = 99] = "PAYMENT_REQUEST", e
+    return e[e.UNKNOWN = 0] = "UNKNOWN", e[e.CARD = 1] = "CARD", e[e.PAYPAL = 2] = "PAYPAL", e[e.GIROPAY = 3] = "GIROPAY", e[e.SOFORT = 4] = "SOFORT", e[e.PRZELEWY24 = 5] = "PRZELEWY24", e[e.SEPA_DEBIT = 6] = "SEPA_DEBIT", e[e.PAYSAFE_CARD = 7] = "PAYSAFE_CARD", e[e.GCASH = 8] = "GCASH", e[e.GRABPAY_MY = 9] = "GRABPAY_MY", e[e.MOMO_WALLET = 10] = "MOMO_WALLET", e[e.VENMO = 11] = "VENMO", e[e.GOPAY_WALLET = 12] = "GOPAY_WALLET", e[e.KAKAOPAY = 13] = "KAKAOPAY", e[e.BANCONTACT = 14] = "BANCONTACT", e[e.EPS = 15] = "EPS", e[e.IDEAL = 16] = "IDEAL", e[e.CASH_APP = 17] = "CASH_APP", e[e.APPLE = 18] = "APPLE", e[e.TDS_WALLET = 19] = "TDS_WALLET", e[e.PAYMENT_REQUEST = 99] = "PAYMENT_REQUEST", e
   }({});
 let v = new Map([
     [7, "paysafecard"],

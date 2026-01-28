@@ -29,7 +29,7 @@ let E = Chunk64700.forwardRef((e, t) => {
     subscriptionTier: O
   } = e, {
     analyticsLocations: C
-  } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), I = (0, _.ar)(), T = (0, u.TM)(), S = i.useRef(null), [j, v] = i.useState(false);
+  } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), T = (0, _.ar)(), I = (0, u.TM)(), S = i.useRef(null), [j, v] = i.useState(false);
   return i.useEffect(() => {
     !l || x || j || null == S.current || S.current.play()
   }, [l, x, j]), (0, r.jsx)(c.f5, {
@@ -44,7 +44,7 @@ let E = Chunk64700.forwardRef((e, t) => {
         children: g.intl.string(g.t.lEw32m)
       }), (0, r.jsx)(p.KN, {
         subscriptionTier: O,
-        inOfferExperience: I,
+        inOfferExperience: T,
         containerClassName: A.Z5,
         isApplicationHome: true,
         isDarkMode: E
@@ -61,8 +61,8 @@ let E = Chunk64700.forwardRef((e, t) => {
           },
           ref: S,
           children: (0, r.jsx)("source", {
-            src: T ? f.A : b.A,
-            type: T ? m.a.MP4 : m.a.WEBM
+            src: I ? f.A : b.A,
+            type: I ? m.a.MP4 : m.a.WEBM
           })
         })
       }), (0, r.jsx)("div", {

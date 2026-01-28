@@ -5,9 +5,9 @@ require.d(exports, {
   D1: () => A,
   E2: () => j,
   FW: () => h,
-  Hn: () => I,
+  Hn: () => T,
   Hr: () => o,
-  Qx: () => T,
+  Qx: () => I,
   Tf: () => x,
   WI: () => c,
   bd: () => g,
@@ -162,11 +162,11 @@ function C(e, t) {
   return b(e, r.Z6.SLIDER, t)
 }
 
-function I(e, t) {
+function T(e, t) {
   return b(e, r.Z6.SELECT, t)
 }
 
-function T(e, t) {
+function I(e, t) {
   return b(e, r.Z6.RADIO, t)
 }
 

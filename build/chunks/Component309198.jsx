@@ -60,7 +60,7 @@ function A(e) {
         onAddedPhone: s.A.enableSMS
       }) : s.A.enableSMS()
     }, [A, x]),
-    I = i.useCallback(() => {
+    T = i.useCallback(() => {
       (0, l.qfG)(e => {
         var t, n;
         return (0, r.jsx)(o.default, (t = g({}, e), n = n = {
@@ -79,11 +79,11 @@ function A(e) {
         }), t))
       })
     }, []),
-    T = i.useCallback(e => null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false)), []),
+    I = i.useCallback(e => null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false)), []),
     S = null != A.phone,
     j = A.hasFlag(u.nhx.MFA_SMS);
   if (S || j) {
-    let e = h ? A.phone : T(A.phone);
+    let e = h ? A.phone : I(A.phone);
     n = (0, r.jsxs)(l.Text, {
       variant: "text-sm/normal",
       children: [p.intl.format(p.t.PXVoEO, {
@@ -100,7 +100,7 @@ function A(e) {
     size: "sm",
     text: p.intl.string(p.t.KLWnit),
     loading: f,
-    onClick: I
+    onClick: T
   });
   else {
     let e = (0, d.B)(A);

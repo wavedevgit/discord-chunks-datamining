@@ -1,3 +1,3 @@
 /** Chunk was on 71439 **/
-/** chunk id: 254386, original params: p (module,exports,require) **/
-module.exports = JSON.parse('{"Tt3O81":["Следващо подновяване"],"eoXh7B":["Резюме на поръчката"]}')
+/** chunk id: 254386, original params: t (module,exports,require) **/
+module.exports = JSON.parse('{"Zxav97":["Общо дължими"],"pDVleg":["Общо спестени ",[1,"amount"]],"WmjxYl":["Ден"],"ZnoRKt":["Месец"],"Tt3O81":["Следващо подновяване"],"8Jt4Dw":["1 ",[1,"timeInterval"]," Nitro"],"eoXh7B":["Резюме на поръчката"],"2zUa6I":["Абонамент"],"Xrg8aC":["Година"]}')

@@ -155,6 +155,7 @@ function I(e) {
   }) : Y ? ev = ee ? (0, a.jsxs)(s.e2v, {
     direction: "horizontal",
     fullWidth: true,
+    wrap: false,
     children: [(0, a.jsx)(s.$nd, {
       variant: "secondary",
       icon: c.mqY,
@@ -176,6 +177,7 @@ function I(e) {
   }) : (0, _.vA)(P) ? (0, a.jsxs)(s.e2v, {
     direction: "horizontal",
     fullWidth: true,
+    wrap: false,
     children: [(0, a.jsx)(s.$nd, {
       variant: "secondary",
       icon: P.config.features.includes(S.Li.CLOUD_GAMING_ACTIVITY) ? c.hpF : c._xR,
@@ -288,6 +290,7 @@ function I(e) {
   }) : $ && !Q && (ev = q ? (0, a.jsxs)(s.e2v, {
     direction: "horizontal",
     fullWidth: true,
+    wrap: false,
     children: [(0, a.jsx)(s.$nd, {
       variant: "secondary",
       disabled: true,

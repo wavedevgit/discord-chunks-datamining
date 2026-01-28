@@ -41,7 +41,7 @@ let y = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
   } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), R = (0, O.N)(), D = (0, g.A)(), w = null != D, L = (0, o.bG)([d.A], () => d.A.useReducedMotion), {
     visibilityPercentageRef: M,
     visibilityPercentage: U
-  } = (0, I.U)(!L), G = (0, o.bG)([p.A], () => p.A.affinities), k = !w && G.length > 0, V = (0, A.c)(a.C.MARKETING_PAGE_BANNER), H = null != V && "marketingPageBanner" === V.properties.properties.oneofKind, B = (0, m.ar)() && !H;
+  } = (0, T.U)(!L), G = (0, o.bG)([p.A], () => p.A.affinities), k = !w && G.length > 0, V = (0, A.c)(a.C.MARKETING_PAGE_BANNER), H = null != V && "marketingPageBanner" === V.properties.properties.oneofKind, B = (0, m.ar)() && !H;
   return (0, r.jsx)(_.f5, {
     value: P,
     children: (0, r.jsx)("div", {
@@ -59,7 +59,7 @@ let y = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
             className: N.IZ
           }) : (0, r.jsx)("div", {
             className: N.XN,
-            children: (0, r.jsx)(T.A, {
+            children: (0, r.jsx)(I.A, {
               enablePremiumBrandRefresh: true
             })
           })), (0, r.jsx)("div", {

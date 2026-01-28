@@ -37,18 +37,18 @@ let h = l().throttle(function(e, t) {
       ensureChatIsVisible: O = () => false,
       withVoiceChannels: C = false
     } = t,
-    I = null != (i = o.A.getState().guildId) ? i : g.ME,
-    T = o.A.getState().channelId,
-    S = (a = I, A = (_ = [g.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(a), e > 0 ? _.slice(A).concat(_.slice(0, A), a) : (_.splice(A, 0, a), _.slice(A + 1).concat(_.slice(0, A + 1)))),
+    T = null != (i = o.A.getState().guildId) ? i : g.ME,
+    I = o.A.getState().channelId,
+    S = (a = T, A = (_ = [g.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(a), e > 0 ? _.slice(A).concat(_.slice(0, A), a) : (_.splice(A, 0, a), _.slice(A + 1).concat(_.slice(0, A + 1)))),
     j = e > 0 ? 0 : S.length - 1,
-    v = f(I, C),
-    N = v.indexOf(T) + e;
-  for (; null != I && "" !== I;) {
-    if (h = v[N], E(I))
+    v = f(T, C),
+    N = v.indexOf(I) + e;
+  for (; null != T && "" !== T;) {
+    if (h = v[N], E(T))
       for (; null != h && "" !== h;) {
         if ("string" == typeof h) {
-          if (b(I, h)) return (0, m.i)(I, h, false, O(I, h))
-        } else if ("object" == typeof h && x(h.resourceId, h.type)) return I !== d.A.getGuildId() && (0, m.i)(I, null == (l = c.Ay.getDefaultChannel(I)) ? true : l.id), (0, s.mMO)(async () => {
+          if (b(T, h)) return (0, m.i)(T, h, false, O(T, h))
+        } else if ("object" == typeof h && x(h.resourceId, h.type)) return T !== d.A.getGuildId() && (0, m.i)(T, null == (l = c.Ay.getDefaultChannel(T)) ? true : l.id), (0, s.mMO)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("51354"), n.e("7453"), n.e("27728")]).then(n.bind(n, 926956));
@@ -81,13 +81,13 @@ let h = l().throttle(function(e, t) {
             }
             return e
           }({}, t), {
-            guildId: I
+            guildId: T
           }))
         });
         N += e, h = v[N]
       }
-    if (j += e, null == (I = S[j]) || "" === I) break;
-    v = f(I, C), N = e < 0 ? v.length - 1 : 0
+    if (j += e, null == (T = S[j]) || "" === T) break;
+    v = f(T, C), N = e < 0 ? v.length - 1 : 0
   }
   p._.dispatch(g.jej.SHAKE_APP, {
     duration: 200,

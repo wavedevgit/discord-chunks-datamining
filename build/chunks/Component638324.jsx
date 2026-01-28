@@ -53,10 +53,10 @@ function S(e) {
     !e && (0, p.w)() ? s.A.showAgeVerificationGetStartedModal({
       entryPoint: a.q1.MESSAGE_REQUESTS_SETTINGS
     }) : t ? R(e) : (n = !e, (0, b.O)({
-      header: I.intl.string(I.t.yAfu1p),
-      body: I.intl.string(I.t.Ry2z74),
-      confirmText: I.intl.string(I.t.gm1Vej),
-      cancelText: I.intl.string(I.t.p89ACt),
+      header: T.intl.string(T.t.yAfu1p),
+      body: T.intl.string(T.t.Ry2z74),
+      confirmText: T.intl.string(T.t.gm1Vej),
+      cancelText: T.intl.string(T.t.p89ACt),
       confirmButtonColor: l.$n.Colors.BRAND,
       onConfirm: () => {
         g.YX.updateSetting(n), D(n, false)
@@ -70,22 +70,22 @@ function S(e) {
     setting: O.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: x.d1.MESSAGE_REQUESTS_V2,
     children: "0" === n ? (0, r.jsx)(h.Ay, {
-      title: I.intl.string(I.t["3o2ojh"]),
+      title: T.intl.string(T.t["3o2ojh"]),
       value: !j && !y,
       onChange: e => w(e, false),
       disabled: j || N,
-      tooltipText: N ? I.intl.string(T.default["6Af/cw"]) : true,
-      note: I.intl.format(I.t.wkm9a3, {
+      tooltipText: N ? T.intl.string(I.default["6Af/cw"]) : true,
+      note: T.intl.format(T.t.wkm9a3, {
         helpdeskArticle: u.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
       })
     }) : (0, r.jsx)(h.Ay, {
-      title: I.intl.string(I.t["3o2ojh"]),
+      title: T.intl.string(T.t["3o2ojh"]),
       value: !v && !P,
       onChange: e => w(e, true),
       disabled: v,
-      note: S ? I.intl.format(I.t.WpnWLc, {
+      note: S ? T.intl.format(T.t.WpnWLc, {
         helpdeskArticle: u.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
-      }) : I.intl.format(I.t.wkm9a3, {
+      }) : T.intl.format(T.t.wkm9a3, {
         helpdeskArticle: u.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
       })
     })

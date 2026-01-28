@@ -30,7 +30,7 @@ function f(e) {
     authorizedApplicationId: _.A.testModeApplicationId,
     authorizationError: _.A.error,
     authorizing: _.A.isFetchingAuthorization
-  })), [E, x] = i.useState(null != f ? f : ""), [O, C] = i.useState("8080"), [I, T] = i.useState("localhost"), S = A.test(E);
+  })), [E, x] = i.useState(null != f ? f : ""), [O, C] = i.useState("8080"), [T, I] = i.useState("localhost"), S = A.test(E);
   async function j() {
     c.SH();
     let e = function(e, t, n) {
@@ -41,21 +41,21 @@ function f(e) {
         case "proxy":
           return (0, d.Ay)(n)
       }
-    }(I, O, E);
+    }(T, O, E);
     null != await c.q1(E, e) && t()
   }
   i.useEffect(() => () => o.h.wait(() => c.SH()), []);
   let v = null != f && f === E,
     N = v ? function() {
-      c.cL(), x(""), T(null)
+      c.cL(), x(""), I(null)
     } : j,
     y = i.useMemo(() => [{
       loading: b,
-      disabled: !S || 0 === E.length || "localhost" === I && 0 === O.length,
+      disabled: !S || 0 === E.length || "localhost" === T && 0 === O.length,
       variant: v ? "critical-primary" : "active",
       text: v ? p.intl.string(p.t.d6TR3I) : p.intl.string(p.t.qwuK5I),
       onClick: N
-    }], [E.length, b, v, S, O.length, N, I]);
+    }], [E.length, b, v, S, O.length, N, T]);
   return (0, r.jsxs)(l.Modal, {
     title: p.intl.string(p.t.f8fzky),
     subtitle: p.intl.string(p.t.a6Vill),
@@ -90,7 +90,7 @@ function f(e) {
           selectionMode: "single",
           label: p.intl.string(p.t["/GTqXG"]),
           disabled: !S || "" === E,
-          value: I,
+          value: T,
           options: [{
             value: "localhost",
             label: p.intl.string(p.t["+Y9Y6r"]),
@@ -101,11 +101,11 @@ function f(e) {
             id: "proxy"
           }],
           onSelectionChange: function(e) {
-            T(e)
+            I(e)
           },
           placeholder: "URL Origin Type"
         })
-      }), "localhost" !== I ? null : (0, r.jsx)("div", {
+      }), "localhost" !== T ? null : (0, r.jsx)("div", {
         className: m.I,
         children: (0, r.jsx)(a.ksK, {
           required: true,

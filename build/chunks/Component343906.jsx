@@ -105,12 +105,12 @@ function G(e) {
           subText: t
         }, n.event_id)
       }
-      if ((0, g.Is)(n)) return (0, r.jsx)(I.A, {
+      if ((0, g.Is)(n)) return (0, r.jsx)(T.A, {
         guildId: n.entity_id
       }, n.event_id);
       if ((0, g.u7)(n)) {
         let e = m.A.getPurchaseInfo(n.entity_id);
-        return null == e ? null : (0, r.jsx)(T.A, {
+        return null == e ? null : (0, r.jsx)(I.A, {
           skuId: e.sku_id,
           subscriptionPlanId: e.subscription_plan_id,
           total: e.total,

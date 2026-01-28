@@ -9,7 +9,7 @@ var Chunk419954 = require("./419954.js"),
   Chunk103435 = require("./103435.js"),
   Chunk985018 = require("./985018.jsx");
 let a = (0, Chunk419954.zZ)(Chunk780964.X.DATA_REQUEST_CATEGORY, {
-  useTitle: () => u.intl.string(u.t.BG7QsQ),
+  useTitle: () => u.intl.string(u.t.VjDjpb),
   initialize: () => {
     (0, l.s)()
   },

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   e: () => s
-});
+}), require("./747238.js"), require("./812715.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk331322 = require("./331322.jsx"),
@@ -14,29 +14,51 @@ function s(e) {
     size: t = "md",
     direction: n = "horizontal",
     justify: s,
-    align: l,
-    padding: c,
-    className: u,
-    children: d,
-    wrap: f = true,
-    fullWidth: p = false,
-    fullWidthContainer: _ = false
-  } = e, h = i.useMemo(() => ({
+    align: c,
+    padding: u,
+    className: d,
+    children: f,
+    wrap: p = true,
+    fullWidth: _ = false,
+    fullWidthContainer: h = false
+  } = e, m = i.useMemo(() => ({
     size: t,
-    fullWidth: p
-  }), [t, p]);
-  return (0, r.jsx)(a.B, {
-    direction: n,
+    fullWidth: _
+  }), [t, _]), g = i.useRef(null), E = l(g, n, p), y = n;
+  return E && (y = n.replace("horizontal", "vertical")), (0, r.jsx)(a.B, {
+    direction: y,
     gap: 8,
     justify: s,
-    align: l,
-    wrap: f,
-    padding: c,
-    className: u,
-    fullWidth: !!_ || p,
+    align: c,
+    wrap: p,
+    padding: u,
+    className: d,
+    fullWidth: !!h || _,
+    ref: g,
     children: (0, r.jsx)(o.Z.Provider, {
-      value: h,
-      children: d
+      value: m,
+      children: f
     })
   })
+}
+
+function l(e, t, n) {
+  let [r, a] = i.useState(null);
+  return i.useLayoutEffect(() => {
+    if (null == e.current || !n || t.includes("vertical")) return;
+
+    function r() {
+      var t, n;
+      let r = Array.from(null != (t = null == (n = e.current) ? true : n.querySelectorAll('[data-mana-component="button"] [data-text-variant]')) ? t : []).some(e => e.scrollWidth > e.clientWidth);
+      a(e => e || r)
+    }
+    let i = new MutationObserver(r);
+    return r(), i.observe(e.current, {
+      childList: true,
+      subtree: true,
+      characterData: true
+    }), () => {
+      i.disconnect()
+    }
+  }, [e, t, n]), r
 }

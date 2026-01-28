@@ -1,7 +1,7 @@
 /** Chunk was on 60667 **/
 /** chunk id: 326433, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => I,
+  Ay: () => T,
   Uz: () => O,
   lm: () => x,
   xu: () => C
@@ -119,7 +119,7 @@ function C(e) {
   })
 }
 
-function I() {
+function T() {
   let {
     threshold: e,
     autoThreshold: t

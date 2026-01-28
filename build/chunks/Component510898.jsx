@@ -128,8 +128,8 @@ function f(e) {
       });
     case d.R.SWITCH_APP_PLANS:
       let {
-        route: I
-      } = l, T = function(e, t) {
+        route: T
+      } = l, I = function(e, t) {
         if (null == e) return {};
         var n, r, i, l = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -146,7 +146,7 @@ function f(e) {
           for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
         return l
       }(l, ["route"]);
-      return (0, r.jsx)(u.A, g(m({}, T), {
+      return (0, r.jsx)(u.A, g(m({}, I), {
         navigateToHome: h
       }));
     default:

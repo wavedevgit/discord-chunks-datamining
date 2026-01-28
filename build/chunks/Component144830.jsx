@@ -133,7 +133,7 @@ function w(e) {
     isAnimatedImage: E,
     isVideo: x,
     hotspotLocation: C
-  } = e, I = (0, u.p)(), {
+  } = e, T = (0, u.p)(), {
     analyticsLocations: S
   } = (0, m.Ay)(p.A.VIDEO_BACKGROUND_IMAGE_OPTION), j = (0, a.bG)([f.A], () => null != C && f.A.hasHotspot(C)), R = i.useCallback(e => {
     if (!(0, h.u)(e)) throw e
@@ -151,9 +151,9 @@ function w(e) {
   });
 
   function L() {
-    null != C && j && (A.sF(C), b.default.track(T.HAw.PREMIUM_UPSELL_VIEWED, {
+    null != C && j && (A.sF(C), b.default.track(I.HAw.PREMIUM_UPSELL_VIEWED, {
       type: v.e.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
-      location: I.location,
+      location: T.location,
       location_stack: S
     }))
   }
@@ -270,7 +270,7 @@ function U(e) {
     analyticsLocations: i
   } = (0, m.Ay)(p.A.VIDEO_BACKGROUND_CUSTOM_UPSELL);
   return (0, _.Ay)(() => {
-    b.default.track(T.HAw.PREMIUM_UPSELL_VIEWED, {
+    b.default.track(I.HAw.PREMIUM_UPSELL_VIEWED, {
       type: v.e.VIDEO_BACKGROUNDS_INLINE,
       location: n.location,
       location_stack: i
@@ -299,7 +299,7 @@ function G(e) {
           default: e
         } = await Promise.all([n.e("79149"), n.e("53653"), n.e("92812")]).then(n.bind(n, 551028));
         return n => (0, r.jsx)(e, P({
-          maxFileSizeBytes: I.G9,
+          maxFileSizeBytes: T.G9,
           onComplete: e => {
             let {
               imageUri: n,
@@ -334,7 +334,7 @@ function k(e) {
     responsive: _ = true
   } = e, g = i.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? x.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), A = g.length >= 25, {
     analyticsLocations: f
-  } = (0, m.Ay)(p.A.VIDEO_BACKGROUND_OPTIONS), h = Object.values((0, C.A)()).sort((e, t) => I.sl[e.id] - I.sl[t.id]);
+  } = (0, m.Ay)(p.A.VIDEO_BACKGROUND_OPTIONS), h = Object.values((0, C.A)()).sort((e, t) => T.sl[e.id] - T.sl[t.id]);
   return (0, r.jsx)(m.f5, {
     value: f,
     children: (0, r.jsxs)("div", {

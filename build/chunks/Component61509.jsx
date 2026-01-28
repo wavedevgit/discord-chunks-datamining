@@ -153,7 +153,7 @@ function eg(e) {
   let {
     guildId: t,
     guildProductListingId: n
-  } = e, r = (0, T.Qi)(t, n, {
+  } = e, r = (0, I.Qi)(t, n, {
     requireCurrentGuild: false
   }), s = (0, j.z)(r), a = (0, p.bG)([B.A], () => B.A.getGuild(t)), o = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? ei.intl.string(ei.t.H11qcT) : s, c = l.useCallback(async () => {
     (null == a ? true : a.features.has(et.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, y.A)(et.BVt.GUILD_PRODUCT(t, n)) : await (0, y.A)(et.BVt.CHANNEL(t)), (0, G.default)()
@@ -177,7 +177,7 @@ function eA(e) {
   let {
     guildId: r,
     guildProductListingId: l
-  } = e, s = (0, T.Qi)(r, l, {
+  } = e, s = (0, I.Qi)(r, l, {
     requireCurrentGuild: false
   }), a = (0, p.bG)([S.A], () => S.A.getGuildProductFetchState(l) === S.e.FETCHING), o = null == s ? true : s.role_id, c = (0, p.bG)([H.A], () => null != o ? H.A.getRole(r, o) : true, [r, o]), d = (0, N.A)({
     guildId: r,
@@ -584,12 +584,12 @@ class ef extends(r = Chunk64700.PureComponent) {
       } else p.type === et.rzx.APPLICATION && (null != d && (l = d.skuId), null != s ? n.push(ei.intl.formatToPlainString(ei.t["0wL/VI"], {
         tier: null == _ ? true : _.name
       })) : n.push(ei.intl.string(ei.t["9czSYu"])));
-      t = 0 !== n.length ? n.join(", ") : r.description, e = (0, i.jsx)(I.A, {
+      t = 0 !== n.length ? n.join(", ") : r.description, e = (0, i.jsx)(T.A, {
         className: el.Sy,
         guildClassName: el.zA,
         game: s,
         guild: a,
-        size: I.M.XSMALL,
+        size: T.M.XSMALL,
         skuId: null != l ? l : null == _ ? true : _.id
       })
     } else if (null != _) {
@@ -609,12 +609,12 @@ class ef extends(r = Chunk64700.PureComponent) {
         height: 23,
         color: "currentColor",
         className: el.sV
-      }) : (0, i.jsx)(I.A, {
+      }) : (0, i.jsx)(T.A, {
         className: el.Sy,
         guildClassName: el.zA,
         game: s,
         guild: a,
-        size: I.M.XSMALL,
+        size: T.M.XSMALL,
         skuId: _.id
       })
     } else e = (0, i.jsx)(A.tvc, {
@@ -840,9 +840,9 @@ function eh(e) {
     _ && null != u && (0, R.TA)(u)
   }, [u, _]);
   let C = (0, p.bG)([B.A], () => B.A.getGuild(null == g ? true : g.guildId)),
-    I = c ? g : true,
-    T = r.subscription,
-    S = (0, p.bG)([W.A], () => null != T && T.type !== et.rzx.PREMIUM ? W.A.get(T.items[0].planId) : null),
+    T = c ? g : true,
+    I = r.subscription,
+    S = (0, p.bG)([W.A], () => null != I && I.type !== et.rzx.PREMIUM ? W.A.get(I.items[0].planId) : null),
     j = (0, p.bG)([F.default], () => {
       var e, t, n, i;
       let l = r.isGift ? null == (n = r.entitlements) ? true : n.find(e => {
@@ -856,7 +856,7 @@ function eh(e) {
     } = (0, b.Ay)(h.A.BILLING_SETTINGS_BILLING);
   return (0, i.jsx)(ef, {
     applicationStatistics: m,
-    application: _ ? O : I,
+    application: _ ? O : T,
     analyticsLocations: v,
     guild: C,
     stickerPack: null,

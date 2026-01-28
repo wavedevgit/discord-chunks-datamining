@@ -56,7 +56,7 @@ async function y(e) {
       message: {
         message: "User Live Dump"
       }
-    }), await (0, g.a)(I.Umv.RTC), e = S.intl.string(S.t["fKBB8+"]), t = S.intl.string(S.t.BvyxE7), (0, s.A)({
+    }), await (0, g.a)(T.Umv.RTC), e = S.intl.string(S.t["fKBB8+"]), t = S.intl.string(S.t.BvyxE7), (0, s.A)({
       title: e,
       subtitle: t
     })
@@ -131,7 +131,7 @@ function P() {
     aecDumpSupported: b.A.isAecDumpSupported(),
     debugLogging: b.A.getDebugLogging(),
     aecDumpEnabled: b.A.getAecDump(),
-    supportsConnectionReplay: b.A.supports(T.O5.CONNECTION_REPLAY)
+    supportsConnectionReplay: b.A.supports(I.O5.CONNECTION_REPLAY)
   })), a = (0, l.bG)([h.default], () => h.default.isStreamInfoOverlayEnabled), o = (0, l.bG)([E.Ay], () => E.Ay.shouldRecordNextConnection()), p = i.useCallback(async () => {
     await y({
       onUploadStart: () => t(true)

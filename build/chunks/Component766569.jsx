@@ -121,7 +121,7 @@ function M(e) {
   }), {
     pendingDisplayNameStyles: Z
   } = (0, g.B0)(U, null == l ? true : l.id);
-  return (i.useEffect(() => () => c.h.wait(T.IM), []), i.useEffect(() => {
+  return (i.useEffect(() => () => c.h.wait(I.IM), []), i.useEffect(() => {
     null != B && _.Ay.trackWithMetadata(y.HAw.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
       destination_pane: y.JJy.SETTINGS_CUSTOMIZE_PROFILE,
@@ -138,7 +138,7 @@ function M(e) {
       children: [(0, r.jsx)(N.A, {
         guildId: l.id,
         onChange: e => {
-          null != e && (0, T.JJ)(e)
+          null != e && (0, I.JJ)(e)
         }
       }), (0, r.jsx)(A.A, {
         profilePreviewTitle: (0, r.jsx)(o.Heading, {
@@ -153,7 +153,7 @@ function M(e) {
           pendingDisplayNameStyles: Z,
           user: U,
           guild: l,
-          canUsePremiumCustomization: I.Ay.canUsePremiumProfileCustomization(U),
+          canUsePremiumCustomization: T.Ay.canUsePremiumProfileCustomization(U),
           onUpsellClick: L
         })),
         nameplatePreview: (0, r.jsx)(m.A, w(D({}, W), {

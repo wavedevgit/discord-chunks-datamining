@@ -161,7 +161,7 @@ function C(e) {
   })
 }
 
-function I(e) {
+function T(e) {
   let {
     panelKey: t,
     notice: n,
@@ -177,7 +177,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     component: t,
     panelKey: n,
@@ -212,7 +212,7 @@ function S(e) {
         })
       })
     }, [t]), a && t.hideInStreamerMode) return (0, r.jsx)(o.A, {});
-  if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(T, {
+  if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(I, {
     component: t.StronglyDiscouragedCustomComponent,
     panelKey: t.key,
     notice: t.notice
@@ -222,7 +222,7 @@ function S(e) {
     notice: t.notice,
     layout: n
   });
-  if ((0, _.Iu)(n)) return (0, r.jsx)(I, {
+  if ((0, _.Iu)(n)) return (0, r.jsx)(T, {
     panelKey: t.key,
     notice: t.notice,
     layout: n

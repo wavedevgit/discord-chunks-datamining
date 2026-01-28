@@ -34,8 +34,8 @@ function E() {
   if (null == e) return null;
   let O = (0, _.Oj)(t, e) || l,
     C = null != t && s()().diff(s()(t.created_at), "days") < f.n83,
-    I = O && C,
-    T = e.isStaff(),
+    T = O && C,
+    I = e.isStaff(),
     S = !e.verified;
   return (0, r.jsxs)(g.h, {
     setting: A.H.PRIVACY_DATA_REQUEST_V2,
@@ -44,7 +44,7 @@ function E() {
       description: h.intl.format(h.t.P3kNfr, {
         helpdeskArticle: u.A.getArticleURL(f.MVz.GDPR_REQUEST_DATA)
       })
-    }), I ? (0, r.jsx)(o.ZpM, {
+    }), T ? (0, r.jsx)(o.ZpM, {
       className: b.N,
       children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
@@ -52,7 +52,7 @@ function E() {
           date: s()(t.created_at).add(f.n83, "days").format("MMMM Do YYYY")
         })
       })
-    }) : T ? (0, r.jsx)(o.ZpM, {
+    }) : I ? (0, r.jsx)(o.ZpM, {
       className: b.N,
       children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",

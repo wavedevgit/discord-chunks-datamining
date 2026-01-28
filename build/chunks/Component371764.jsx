@@ -37,9 +37,9 @@ let E = e => {
       component_id: E
     }
   });
-  let I = (0, f.Xn)("marketing_page_banner"),
-    T = (0, g.h)({
-      buttonAction: I.treatment === f.tz.PLAN_SELECTION ? o.dz.OPEN_PLAN_SELECTION_MODAL : null != (t = null == (n = x.button) ? true : n.buttonAction) ? t : o.dz.OPEN_TIER_2_PAYMENT_MODAL,
+  let T = (0, f.Xn)("marketing_page_banner"),
+    I = (0, g.h)({
+      buttonAction: T.treatment === f.tz.PLAN_SELECTION ? o.dz.OPEN_PLAN_SELECTION_MODAL : null != (t = null == (n = x.button) ? true : n.buttonAction) ? t : o.dz.OPEN_TIER_2_PAYMENT_MODAL,
       analyticsLocations: O,
       analyticsLocation: C.location
     }),
@@ -77,7 +77,7 @@ let E = e => {
       children: (0, r.jsx)(c.$nd, {
         variant: "expressive",
         size: "md",
-        onClick: T,
+        onClick: I,
         text: x.button.copy,
         icon: s.NitroWheelIcon
       })

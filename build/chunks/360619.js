@@ -82,7 +82,7 @@ function G() {
   var e, t, n, l;
   let E = (0, p.IO)().length,
     v = (0, _.l)(),
-    D = (0, i.bG)([I.A], () => I.A.getSearchParams()),
+    D = (0, i.bG)([T.A], () => T.A.getSearchParams()),
     w = (0, u.VT)(),
     M = (0, R.b_)(),
     {
@@ -90,7 +90,7 @@ function G() {
     } = S.X.useExperiment({
       location: "settings"
     }),
-    G = null != (e = null == (n = T.default.getCurrentUser()) ? true : n.isStaff()) && e,
+    G = null != (e = null == (n = I.default.getCurrentUser()) ? true : n.isStaff()) && e,
     k = (0, h.Lc)({
       location: "settings"
     }),

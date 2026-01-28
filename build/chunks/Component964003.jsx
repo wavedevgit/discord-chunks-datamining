@@ -45,8 +45,8 @@ let h = e => {
       videoUrl: x,
       shouldLoadVideo: O,
       index: C,
-      customVideoStyle: I,
-      isReducedMotion: T,
+      customVideoStyle: T,
+      isReducedMotion: I,
       onClick: S,
       badgeText: j,
       badgeVariant: v = "gradient",
@@ -58,9 +58,9 @@ let h = e => {
         box_type: (0, a.snakeCase)(t)
       })
     }, 800), [t]), V = () => {
-      null == D.current || T || (D.current.currentTime = w.current, D.current.play())
+      null == D.current || I || (D.current.currentTime = w.current, D.current.play())
     }, H = () => {
-      null == D.current || T || (w.current = D.current.currentTime, D.current.pause())
+      null == D.current || I || (w.current = D.current.currentTime, D.current.pause())
     }, B = N === m.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", F = () => (0, r.jsxs)("div", {
       className: s()(f.textBox, f["".concat(N)], U && f.overlayTextBox),
       children: [(0, r.jsxs)("div", {
@@ -107,7 +107,7 @@ let h = e => {
         poster: E,
         loop: true,
         className: s()(U ? f.overlayImage : f.boxVideo, {
-          [I]: null != I
+          [T]: null != T
         }),
         ref: D,
         children: (0, r.jsx)("source", {
@@ -128,7 +128,7 @@ let h = e => {
         className: f.backgroundVideoContainer,
         children: (0, r.jsx)(u.A, {
           muted: true,
-          autoPlay: !T,
+          autoPlay: !I,
           playsInline: true,
           loop: true,
           preload: O ? "auto" : "none",

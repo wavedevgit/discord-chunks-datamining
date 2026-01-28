@@ -118,7 +118,7 @@ function F(e) {
 }
 class Y extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.A, A.default, f.A, h.A, b.A, c.Ay, E.A, u.A, _.Ay, m.A, x.A, O.Ay, C.A, I.Ay, g.A)
+    this.waitFor(p.A, A.default, f.A, h.A, b.A, c.Ay, E.A, u.A, _.Ay, m.A, x.A, O.Ay, C.A, T.Ay, g.A)
   }
   getGuild(e, t) {
     var n, r;
@@ -161,7 +161,7 @@ let W = new Y(Chunk73153.h, {
     return s()(t).map(e => {
       var t;
       return null == (t = h.A.getChannel(e.channelId)) ? true : t.guild_id
-    }).filter(T.Vq).uniq().forEach(e => {
+    }).filter(I.Vq).uniq().forEach(e => {
       P.clearGuildId(e) && (n = true)
     }), n
   },

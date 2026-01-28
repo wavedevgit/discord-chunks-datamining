@@ -31,8 +31,8 @@ function E(e) {
   } = (0, l.cf)([_.A], () => ({
     familyCenterInitialized: _.A.getIsInitialized(),
     isLoading: _.A.isLoading()
-  })), I = (0, m.k)(), {
-    selectedTab: T,
+  })), T = (0, m.k)(), {
+    selectedTab: I,
     handleTabChange: S
   } = (0, p.A)(), j = d.default.getCurrentUser(), v = null != E, N = O && null != j && !v;
   (0, s.Ay)(() => {
@@ -41,8 +41,8 @@ function E(e) {
   let y = {
       isConsideredAdult: "adult" === E,
       numOfAcceptedRequests: x,
-      selectedTab: T,
-      selectedTeenId: I
+      selectedTab: I,
+      selectedTeenId: T
     },
     P = r.useRef(y);
   return r.useEffect(() => {
@@ -69,7 +69,7 @@ function E(e) {
     N && (0, a.yO)(b.w_.FAMILY_CENTER)
   }, [N]), {
     isLoading: C,
-    selectedTab: T,
+    selectedTab: I,
     handleTabChange: S,
     showAgeGateModal: N
   }

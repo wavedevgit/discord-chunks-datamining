@@ -29,13 +29,13 @@ let E = (0, Chunk915089.Ld)(),
     } = e, x = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), O = (0, l.bG)([m.default], () => {
       var e;
       return (0, d.Zo)(null == (e = m.default.getCurrentUser()) ? true : e.primaryGuild).guildId
-    }), C = true !== n ? n : O, I = i.useMemo(() => t.reduce((e, t) => {
+    }), C = true !== n ? n : O, T = i.useMemo(() => t.reduce((e, t) => {
       var n;
       return (null == (n = t.profile) ? true : n.tag) != null && e.push({
         label: t.name,
         value: t.id
       }), e
-    }, []), [t]), T = i.useCallback(e => {
+    }, []), [t]), I = i.useCallback(e => {
       var t, n, i;
       if (null == e) return null;
       let l = x.get(e.value);
@@ -77,9 +77,9 @@ let E = (0, Chunk915089.Ld)(),
     }, [x]), v = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
-        children: T(t)
+        children: I(t)
       })
-    }, [T]), N = i.useCallback(e => {
+    }, [I]), N = i.useCallback(e => {
       null == o || o(e)
     }, [o]), y = i.useCallback(e => e === C, [C]), P = i.useCallback(e => e, []), R = i.useCallback(() => {
       null == o || o(null)
@@ -96,7 +96,7 @@ let E = (0, Chunk915089.Ld)(),
         className: b.Lt,
         optionClassName: b.S0,
         isSelected: y,
-        options: I,
+        options: T,
         select: N,
         renderLeading: S,
         renderTrailing: j,

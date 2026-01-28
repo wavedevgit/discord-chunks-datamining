@@ -41,8 +41,8 @@ function L(e) {
   var t, n, i, L;
   let {
     guild: M
-  } = e, U = (0, s.bG)([I.default], () => {
-    let e = I.default.getCurrentUser();
+  } = e, U = (0, s.bG)([T.default], () => {
+    let e = T.default.getCurrentUser();
     return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), G = (0, d.L)(R.PremiumTypes.TIER_2), {
     pendingAvatar: k,
@@ -80,7 +80,7 @@ function L(e) {
   let X = (0, c.EC)(Z.id),
     q = (0, s.bG)([C.Ay], () => null == Z.id ? null : C.Ay.getMember(Z.id, U.id)),
     J = (0, s.bG)([O.A], () => O.A.getGuildMemberProfile(U.id, Z.id)),
-    Q = T.Ay.canUsePremiumProfileCustomization(U),
+    Q = I.Ay.canUsePremiumProfileCustomization(U),
     $ = (0, u.z5)(k, null == q ? true : q.avatar),
     ee = (0, u.Ac)(H, null == J ? true : J.banner),
     et = (0, N.lS)(Y, null == J ? true : J.themeColors),

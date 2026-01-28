@@ -29,10 +29,10 @@ let f = e => {
       descriptionCta: x = "",
       isPremiumGetCta: O,
       onCtaClick: C,
-      cardVariant: I
+      cardVariant: T
     } = e,
-    T = (0, d.V)(),
-    S = null == T ? true : T.subscription_trial,
+    I = (0, d.V)(),
+    S = null == I ? true : I.subscription_trial,
     j = (0, c.O)(),
     v = (0, a.FY)({
       intervalType: null == S ? true : S.interval,
@@ -47,7 +47,7 @@ let f = e => {
         percent: null == j ? true : j.discount.amount
       })
     }),
-    y = (0, _.Q)(I);
+    y = (0, _.Q)(T);
   return (0, r.jsxs)("div", {
     className: l()(A.L_, null == y || null == (t = y.description) ? true : t.className),
     children: [(0, r.jsx)(p.A, {

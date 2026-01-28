@@ -1,7 +1,7 @@
 /** Chunk was on 60667 **/
 /** chunk id: 130946, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I,
+  A: () => T,
   c: () => C
 });
 var r, Chunk627968 = require("./627968.js");
@@ -25,7 +25,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk767032 = require("./767032.js"),
   Chunk990521 = require("./990521.js"),
   C = ((r = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", r.NITRO_SETTINGS = "SETTINGS", r.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", r);
-let I = function(e) {
+let T = function(e) {
   let {
     variant: t
   } = e, n = (0, p.cg)(), r = (0, c.Ay)(), l = (0, o.Mwr)(r) ? a.XD.BRAND_INVERTED : a.XD.BRAND;
