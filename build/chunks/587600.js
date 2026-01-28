@@ -6,14 +6,14 @@ require.d(exports, {
   Sk: () => a,
   yX: () => i,
   yg: () => s
-}), require("./228524.js");
+}), require("./321073.js"), require("./228524.js");
 var Chunk392107 = require("./392107.js");
 
 function i(e) {
   let t = {};
   if (true !== e.pendingBanner && (t.banner = e.pendingBanner), null != e.pendingBio && (t.bio = e.pendingBio), null != e.pendingPronouns && (t.pronouns = e.pendingPronouns), true !== e.pendingAccentColor && (t.accent_color = e.pendingAccentColor), true !== e.pendingThemeColors && (t.theme_colors = e.pendingThemeColors), true !== e.pendingProfileEffect) {
     var n, r;
-    t.profile_effect_sku_id = null != (n = null == (r = e.pendingProfileEffect) ? true : r.skuId) ? n : null
+    t.collectibles_sku_ids = null != (n = t.collectibles_sku_ids) ? n : [], (null == (r = e.pendingProfileEffect) ? true : r.skuId) != null && t.collectibles_sku_ids.push(e.pendingProfileEffect.skuId)
   }
   return t
 }

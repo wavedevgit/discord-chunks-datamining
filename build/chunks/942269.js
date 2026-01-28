@@ -252,11 +252,12 @@ class m {
     return null == i.root[t] && (i.derived.length++, this.state.derived.length++), i.root[t] = n, this.updateSecondaryIndexes([n], true, r), true
   }
   setPartition(e, t, n) {
-    null != n || (n = this.nextVersion()), this.removePartition(e, n), this.updateSecondaryIndexes(Object.values(t), true, n);
-    let r = this.touchPartition(e, n);
-    r.root = t;
-    let i = Object.keys(t).length;
-    return r.derived.length = i, this.state.derived.length += i, true
+    null != n || (n = this.nextVersion()), this.removePartition(e, n);
+    let r = Object.keys(t).length;
+    if (0 === r) returntrue;
+    this.updateSecondaryIndexes(Object.values(t), true, n);
+    let i = this.touchPartition(e, n);
+    return i.root = t, i.derived.length = r, this.state.derived.length += r, true
   }
   updateSecondaryIndexes(e, t, n) {
     for (let r of this.secondaryIndexes) {

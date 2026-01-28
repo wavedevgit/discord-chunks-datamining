@@ -2,14 +2,15 @@
 /** chunk id: 219678, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => f
+  A: () => p
 }), require("./896048.js");
 var Chunk439372 = require("./439372.js"),
   Chunk217222 = require("./217222.js"),
+  Chunk353835 = require("./353835.js"),
   Chunk723702 = require("./723702.js"),
   Chunk751496 = require("./751496.js");
 
-function s(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,39 +18,42 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let l = false,
-  c = null;
-async function u() {
+let c = false,
+  u = null;
+async function d() {
   var e, t;
-  if ((0, a.isWindows)() && (null == (t = window.DiscordNative) || null == (e = t.settings) ? true : e.set) != null) {
-    let {
-      enabled: e
-    } = (0, o.b)({
-      location: "updateSwitch"
-    });
-    await window.DiscordNative.settings.set("enableH264MFElectron", e), c = e
+  if ((0, o.isWindows)() && (null == (t = window.DiscordNative) || null == (e = t.settings) ? true : e.set) != null) {
+    let e = a.A.getAppHardwareAccelerationEnabled(),
+      {
+        enabled: t
+      } = (0, s.b)({
+        location: "updateSwitch"
+      }),
+      n = t && !e;
+    await window.DiscordNative.settings.set("enableH264MFElectron", n), u = n
   }
 }
-class d extends Chunk439372.A {
+class f extends Chunk439372.A {
   constructor(...e) {
-    super(...e), s(this, "stores", new Map().set(i.A, () => {
-      if (l) {
-        let {
-          enabled: e
-        } = (0, o.b)({
-          location: "experimentStoreUpdate"
-        });
-        c !== e && u()
+    super(...e), l(this, "stores", new Map().set(i.A, () => {
+      if (c) {
+        let e = a.A.getAppHardwareAccelerationEnabled(),
+          {
+            enabled: t
+          } = (0, s.b)({
+            location: "experimentStoreUpdate"
+          });
+        u !== (t && !e) && d()
       }
-    })), s(this, "actions", {
+    })), l(this, "actions", {
       POST_CONNECTION_OPEN: async () => {
         var e, t;
-        l || (null == (t = window.DiscordNative) || null == (e = t.settings) ? true : e.set) == null || (0, a.isWindows)() && (l = true, await u())
+        c || (null == (t = window.DiscordNative) || null == (e = t.settings) ? true : e.set) == null || (0, o.isWindows)() && (c = true, await d())
       },
       LOGOUT: () => {
-        l = false, c = null
+        c = false, u = null
       }
     })
   }
 }
-let f = new d
+let p = new f
