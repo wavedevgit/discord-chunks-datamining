@@ -102,11 +102,8 @@ function S(e) {
         }, [n, e, t, a, f])),
         [N, T] = (0, _.FC)(null != t && !y, I),
         P = N === s.M.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK,
-        w = (0, p.TS)(e, "useGuildPowerupsChannelListPopout"),
-        [R, D] = (0, _.rd)(null != t && !y && !P && w),
-        M = R === s.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V1_COACHMARK,
-        L = r.useMemo(() => {
-          if (null == t || y || P || M) return;
+        w = r.useMemo(() => {
+          if (null == t || y || P) return;
           let n = function(e, t) {
             let n = d.fi.find(e => {
               let n = x.a8[e],
@@ -165,8 +162,8 @@ function S(e) {
             }
           }(e, C, v, S);
           if (null != l) return l
-        }, [e, t, y, P, M, v, C, S]),
-        [k, G] = (0, _.ru)(null != L);
+        }, [e, t, y, P, v, C, S]),
+        [R, D] = (0, _.ru)(null != w);
       return r.useMemo(() => {
         if (null != t) {
           if (y) return {
@@ -187,11 +184,7 @@ function S(e) {
               markAsDismissed: T
             }
           }
-          if (M) return {
-            type: b.o.GAME_SERVER_NEW_GAMES,
-            markAsDismissed: D
-          };
-          if (k === s.M.GUILD_POWERUP_NOTIFICATION && null != L) {
+          if (R === s.M.GUILD_POWERUP_NOTIFICATION && null != w) {
             var e, n;
             return e = function(e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -210,9 +203,9 @@ function S(e) {
                 })
               }
               return e
-            }({}, L), n = n = {
+            }({}, w), n = n = {
               markAsDismissed: e => {
-                G(e), L.markAsDismissed(e)
+                D(e), w.markAsDismissed(e)
               }
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
@@ -226,7 +219,7 @@ function S(e) {
             }), e
           }
         }
-      }, [t, y, m, L, k, G, P, T, I, M, D])
+      }, [t, y, m, w, R, D, P, T, I])
     }(e, null != n ? n : true);
   if (null !== n && (null != f || C || null != S)) return {
     indicator: f,

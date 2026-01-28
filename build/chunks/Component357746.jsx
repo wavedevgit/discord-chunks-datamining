@@ -108,11 +108,6 @@ let v = {
             guildId: t,
             channelRowRef: C
           }, x.popout));
-        case h.o.GAME_SERVER_NEW_GAMES:
-          return (0, r.jsx)(m.YX, O({
-            guildId: t,
-            channelRowRef: C
-          }, x.popout));
         default:
           return (0, r.jsx)("div", {})
       }

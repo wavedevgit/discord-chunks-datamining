@@ -64,15 +64,6 @@ let m = Chunk64700.memo(function(e) {
             }),
             renderGuildHeaderDropdownButton: i
           });
-        case l.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V1_COACHMARK:
-          return (0, r.jsx)(f, {
-            renderPopout: e => (0, r.jsx)(p.YX, {
-              guildId: n.id,
-              markAsDismissed: m,
-              channelRowRef: e
-            }),
-            renderGuildHeaderDropdownButton: i
-          });
         case l.M.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL:
           return (0, r.jsx)(f, {
             renderPopout: e => (0, r.jsx)(o.A, {
