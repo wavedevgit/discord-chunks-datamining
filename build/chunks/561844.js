@@ -2,11 +2,12 @@
 /** chunk id: 561844, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DZ: () => j,
-  Mm: () => M,
+  DZ: () => G,
+  Mm: () => U,
   Qg: () => L,
-  Y5: () => x,
-  av: () => D
+  Y5: () => j,
+  av: () => D,
+  vK: () => k
 }), require("./896048.js");
 var Chunk835245 = require("./835245.js"),
   Chunk345353 = require("./345353.js"),
@@ -140,38 +141,95 @@ function L(e) {
   P(r, A({}, R(t, n, s, o), i), a, false)
 }
 async function x(e) {
+  let t = await (0, i.N)((0, y.jO)(e));
+  return {
+    adUser: t,
+    adMetadataRaw: (0, m.Li)(e),
+    adMetadataSealed: (0, m.L4)(e)
+  }
+}
+async function M(e) {
+  let {
+    questContent: t,
+    questContentPosition: n,
+    questContentRowIndex: i,
+    questContentCTA: a,
+    impressionId: o
+  } = e, {
+    adUser: s,
+    adMetadataRaw: c,
+    adMetadataSealed: u
+  } = await x(t);
+  return S(A({}, (0, y.fF)(t, n, i), (0, l.A)()), {
+    cta_name: a,
+    impression_id: o,
+    apple_advertising_id: null != s && (0, f.isIOS)() ? s.advertisingId : null,
+    android_advertising_id: null != s && (0, f.isAndroid)() ? s.advertisingId : null,
+    click_id: (0, r.A)(),
+    metadata_raw: null != c ? c : null,
+    metadata_sealed: null != u ? u : null
+  })
+}
+async function j(e) {
   let {
     questId: t,
     questContent: n,
-    questContentCTA: a,
-    questContentPosition: o,
-    questContentRowIndex: s,
-    impressionId: c,
-    trackGuildAndChannelMetadata: u,
-    sourceQuestContent: d
-  } = e, _ = p.A.getQuest(t), h = await (0, i.N)((0, y.jO)(n)), g = (0, m.Li)(n), E = (0, m.L4)(n), b = (0, m.yI)(n, t), v = (0, m.Gp)(n, t);
+    questContentCTA: r,
+    questContentPosition: i,
+    questContentRowIndex: a,
+    impressionId: o,
+    trackGuildAndChannelMetadata: s,
+    sourceQuestContent: l
+  } = e, c = p.A.getQuest(t), u = (0, m.yI)(n, t), d = (0, m.Gp)(n, t);
   D({
     questId: t,
     event: O.HAw.QUEST_CONTENT_CLICKED,
-    properties: S(A({}, (0, y.fF)(n, o, s), (0, l.A)()), {
-      cta_name: a,
-      quest_status: null != _ ? (0, y.NI)(_) : null,
-      impression_id: c,
-      apple_advertising_id: null != h && (0, f.isIOS)() ? h.advertisingId : null,
-      android_advertising_id: null != h && (0, f.isAndroid)() ? h.advertisingId : null,
-      click_id: (0, r.A)(),
-      metadata_raw: null != g ? g : null,
-      metadata_sealed: null != E ? E : null,
-      traffic_metadata_raw: null != b ? b : null,
-      traffic_metadata_sealed: null != v ? v : null
+    properties: S(A({}, await M({
+      questContent: n,
+      questContentPosition: i,
+      questContentRowIndex: a,
+      questContentCTA: r,
+      impressionId: o
+    })), {
+      quest_status: null != c ? (0, y.NI)(c) : null,
+      traffic_metadata_raw: null != u ? u : null,
+      traffic_metadata_sealed: null != d ? d : null
     }),
-    trackGuildAndChannelMetadata: u,
+    trackGuildAndChannelMetadata: s,
     shouldExtendSession: (0, m.xn)(n),
-    sourceQuestContent: d
+    sourceQuestContent: l
+  })
+}
+async function k(e) {
+  let {
+    adContentId: t,
+    adCreativeType: n,
+    questContent: r,
+    questContentCTA: i,
+    questContentPosition: a,
+    questContentRowIndex: o,
+    impressionId: s,
+    trackGuildAndChannelMetadata: l,
+    sourceQuestContent: c
+  } = e;
+  L({
+    adContentId: t,
+    adCreativeType: n,
+    event: O.HAw.QUEST_CONTENT_CLICKED,
+    properties: await M({
+      questContent: r,
+      questContentPosition: a,
+      questContentRowIndex: o,
+      questContentCTA: i,
+      impressionId: s
+    }),
+    trackGuildAndChannelMetadata: l,
+    shouldExtendSession: (0, m.xn)(r),
+    sourceQuestContent: c
   })
 }
 
-function M(e) {
+function U(e) {
   let {
     questContent: t,
     sourceQuestContent: n,
@@ -192,7 +250,7 @@ function M(e) {
   })
 }
 
-function j(e, t) {
+function G(e, t) {
   s.Ay.trackWithMetadata(O.HAw.QUEST_EMBED_FALLBACK_VIEWED, {
     quest_id: e,
     reason: t

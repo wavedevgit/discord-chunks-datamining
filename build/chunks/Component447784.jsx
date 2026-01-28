@@ -2,7 +2,7 @@
 /** chunk id: 447784, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   k: () => j
-});
+}), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
@@ -26,36 +26,42 @@ let j = e => {
       onSelect: T,
       selectedSkuId: P
     } = e,
-    S = l.useRef(null),
+    [S, A] = l.useState(null),
+    b = l.useCallback(e => {
+      A(e)
+    }, []),
+    y = l.useMemo(() => ({
+      current: S
+    }), [S]),
     {
-      isHoveringOrFocusing: A
-    } = (0, u.A)(S),
-    b = !h && A,
+      isHoveringOrFocusing: I
+    } = (0, u.A)(y),
+    O = !h && I,
     {
-      product: y
+      product: v
     } = (0, c.q)(j);
-  if (null == y) return null;
-  let I = y.items[0];
-  return null == I ? null : ((0, d.T)(I) ? (i = a.R.AVATAR_DECORATION, t = (0, r.jsx)(m.i, {
-    item: I,
+  if (null == v) return null;
+  let _ = v.items[0];
+  return null == _ ? null : ((0, d.T)(_) ? (i = a.R.AVATAR_DECORATION, t = (0, r.jsx)(m.i, {
+    item: _,
     user: x,
-    isHighlighted: b,
+    isHighlighted: O,
     avatarSize: o._3J.SIZE_96
-  })) : (0, p.F)(I) && (i = a.R.NAMEPLATE, t = (0, r.jsx)(g.A, {
-    nameplate: I,
+  })) : (0, p.F)(_) && (i = a.R.NAMEPLATE, t = (0, r.jsx)(g.A, {
+    nameplate: _,
     user: x,
-    isHighlighted: b,
+    isHighlighted: O,
     size: "small"
   })), (0, r.jsx)(o.vN3, {
     children: (0, r.jsxs)(o.sqX, {
-      ref: S,
-      "aria-label": null != (n = y.name) ? n : "",
+      ref: b,
+      "aria-label": null != (n = v.name) ? n : "",
       onClick: () => {
         null == j || null == T || h || T(j)
       },
       className: s()(E._x, {
         [E.Vp]: !h,
-        [E.mr]: b,
+        [E.mr]: O,
         [E.md]: P === j
       }),
       children: [(0, r.jsx)("div", {
@@ -81,7 +87,7 @@ let j = e => {
         className: E.tZ,
         children: [(0, r.jsx)(o.Heading, {
           variant: "heading-md/extrabold",
-          children: y.name
+          children: v.name
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           children: h ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
