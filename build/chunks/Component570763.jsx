@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 570763, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => eb
+  A: () => eE
 }), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./747238.js"), require("./812715.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -31,6 +31,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk737823 = require("./737823.jsx"),
   Chunk153527 = require("./153527.jsx"),
   Chunk783531 = require("./783531.jsx"),
+  Chunk545746 = require("./545746.js"),
   Chunk318346 = require("./318346.js"),
   Chunk151252 = require("./151252.js"),
   Chunk142270 = require("./142270.jsx"),
@@ -69,7 +70,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk595411 = require("./595411.js"),
   Chunk602557 = require("./602557.js");
 
-function eg(e) {
+function ef(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -87,23 +88,23 @@ function eg(e) {
   }
   return e
 }
-let ef = Chunk64700.createContext({});
+let em = Chunk64700.createContext({});
 
-function em(e) {
+function eA(e) {
   let {
     onLoadComplete: t
   } = e, {
     enabled: n
-  } = (0, w.Z)({
-    location: en.rE.QUEST_HOME_DESKTOP
-  }), l = (0, u.bG)([g.A], () => g.A.useReducedMotion), s = (0, u.bG)([R.A], () => R.A.isFocused()), {
+  } = (0, L.Z)({
+    location: er.rE.QUEST_HOME_DESKTOP
+  }), l = (0, u.bG)([g.A], () => g.A.useReducedMotion), s = (0, u.bG)([D.A], () => D.A.isFocused()), {
     ref: o,
     inViewport: c
-  } = (0, z.p)(), d = i.useRef(null);
+  } = (0, Q.p)(), d = i.useRef(null);
   if (i.useEffect(() => {
       (null == d ? true : d.current) != null && (d.current.paused || s && c && !l ? d.current.paused && !l && c && s && d.current.play() : d.current.pause())
     }, [l, c, s]), n) {
-    let e = (0, M.TM)();
+    let e = (0, k.TM)();
     return (0, r.jsx)(O.A, {
       ref: e => {
         d.current = e, o.current = e
@@ -111,47 +112,47 @@ function em(e) {
       loop: true,
       muted: true,
       playsInline: true,
-      className: a()(es.BW, es.Lk),
+      className: a()(eo.BW, eo.Lk),
       onProgress: t,
       "data-mtctest-ignore": "true",
       controls: false,
       children: (0, r.jsx)("source", {
-        src: e ? ec.A : eu.A,
+        src: e ? eu.A : ed.A,
         type: e ? "video/mp4" : "video/webm"
       })
     })
   }
   return (0, r.jsx)("img", {
-    src: eo.Ay,
-    className: a()(es.BW, es.J6),
+    src: ec.Ay,
+    className: a()(eo.BW, eo.J6),
     alt: "",
     onLoad: t
   })
 }
 
-function eA(e) {
+function e_(e) {
   let {
     onLoadComplete: t
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
-      src: ed.Ay,
-      className: a()(es.BW, es.rZ),
+      src: ep.Ay,
+      className: a()(eo.BW, eo.rZ),
       alt: ""
     }), (0, r.jsx)("img", {
-      src: eh.Ay,
-      className: a()(es.BW, es.rZ),
+      src: eg.Ay,
+      className: a()(eo.BW, eo.rZ),
       alt: "",
       onLoad: t
     }), (0, r.jsx)("img", {
-      src: ep.Ay,
-      className: a()(es.BW, es.rZ),
+      src: eh.Ay,
+      className: a()(eo.BW, eo.rZ),
       alt: ""
     })]
   })
 }
 
-function e_(e) {
+function eb(e) {
   let {
     renderBanner: t,
     children: n,
@@ -163,31 +164,31 @@ function e_(e) {
     onSelectTab: u,
     scrollerRef: d,
     selectedTab: p
-  } = i.useContext(ef), {
+  } = i.useContext(em), {
     takeover: h,
     isLoading: g
-  } = (0, F._b)(), {
+  } = (0, Y._b)(), {
     enabled: f
-  } = (0, w.Z)({
-    location: en.rE.QUEST_HOME_DESKTOP
+  } = (0, L.Z)({
+    location: er.rE.QUEST_HOME_DESKTOP
   }), {
     enabled: m
-  } = B.XM.useConfig({
-    location: en.rE.QUEST_HOME_DESKTOP
+  } = H.XM.useConfig({
+    location: er.rE.QUEST_HOME_DESKTOP
   }), A = i.useRef(null), _ = i.useCallback(() => {
     var e;
     null == (e = A.current) || e.resetSortingFiltering()
   }, []);
-  return (0, r.jsxs)($.X.Provider, {
+  return (0, r.jsxs)(ee.X.Provider, {
     value: d,
     children: [l, (0, r.jsxs)(x.A, {
       onScroll: c,
       ref: d,
       children: [function() {
         if (!o && m) {
-          if (p !== F.NC.ALL) return null;
-          if (g) return (0, r.jsx)(ee.s, {});
-          if (null != h) return (0, r.jsx)(ee.A, {
+          if (p !== Y.NC.ALL) return null;
+          if (g) return (0, r.jsx)(et.s, {});
+          if (null != h) return (0, r.jsx)(et.A, {
             config: h,
             onQuestCtaClick: _
           })
@@ -195,12 +196,12 @@ function e_(e) {
         return t()
       }(), (0, r.jsx)(C.A, {
         children: (0, r.jsxs)("div", {
-          className: a()(es.Qs, {
-            [es.HR]: m && !f && p !== F.NC.ALL
+          className: a()(eo.Qs, {
+            [eo.HR]: m && !f && p !== Y.NC.ALL
           }),
-          children: [n, s ? p === F.NC.CLAIMED ? (0, r.jsx)(X.A, {
+          children: [n, s ? p === Y.NC.CLAIMED ? (0, r.jsx)(Z.A, {
             onSelectTab: u
-          }) : p === F.NC.PREVIEW_TOOL ? (0, r.jsx)(K.A, {}) : (0, r.jsx)(Q.A, {
+          }) : p === Y.NC.PREVIEW_TOOL ? (0, r.jsx)(W.A, {}) : (0, r.jsx)(X.A, {
             ref: A
           }) : null]
         })
@@ -208,34 +209,34 @@ function e_(e) {
     })]
   })
 }
-let eb = function(e) {
+let eE = function(e) {
   let {
     topLevelRoute: t
   } = e, n = (0, s.zy)(), l = (0, s.W6)(), g = i.useMemo(() => {
     var e;
-    return (null == (e = (0, s.B6)(n.pathname, er.BVt.QUEST_HOME)) ? true : e.isExact) === true
+    return (null == (e = (0, s.B6)(n.pathname, ei.BVt.QUEST_HOME)) ? true : e.isExact) === true
   }, [n.pathname]), O = (0, u.bG)([_.A], () => _.A.getState("quests")), {
     selectedTab: C,
     onSelectTab: x,
-    tabs: R
-  } = (0, et.J)({
+    tabs: D
+  } = (0, en.J)({
     withClaimedQuestsTab: !g
   });
   i.useLayoutEffect(() => {
-    g && C === F.NC.CLAIMED && V.A.setState({
-      tab: F.NC.ALL
+    g && C === Y.NC.CLAIMED && B.A.setState({
+      tab: Y.NC.ALL
     })
   }, [g, C]);
   let {
-    onScroll: M,
-    scrollPosition: B
-  } = (0, v.G)(), K = q.A.getState().getUtmCurrentContext(), z = (0, Z.W)(e => e.registerAssetLoad), Q = i.useRef(K);
+    onScroll: k,
+    scrollPosition: H
+  } = (0, v.G)(), W = z.A.getState().getUtmCurrentContext(), Q = (0, J.W)(e => e.registerAssetLoad), X = i.useRef(W);
   i.useEffect(() => {
-    Q.current = K
+    X.current = W
   }), i.useEffect(() => {
     let {
       current: e
-    } = Q;
+    } = X;
     (0, m.x)({
       name: c.ImpressionNames.QUEST_HOME,
       type: c.ImpressionTypes.VIEW,
@@ -249,45 +250,47 @@ let eb = function(e) {
     })
   }, [C]);
   let {
-    enabled: X
-  } = (0, w.Z)({
-    location: en.rE.QUEST_HOME_DESKTOP
-  }), $ = i.useCallback(() => {
-    X ? window.open(er.X7G.PAID_TERMS_ORBS) : window.open(k.A.getArticleURL(er.MVz.QUESTS_LEARN_MORE))
-  }, [X]);
+    enabled: Z
+  } = (0, L.Z)({
+    location: er.rE.QUEST_HOME_DESKTOP
+  }), ee = i.useCallback(() => {
+    Z ? window.open(ei.X7G.PAID_TERMS_ORBS) : window.open(U.A.getArticleURL(ei.MVz.QUESTS_LEARN_MORE))
+  }, [Z]);
   (0, E.HU)({
-    location: ea.intl.string(ea.t.JALI2K)
+    location: es.intl.string(es.t.JALI2K)
   });
-  let ee = X ? ea.intl.format(ea.t.BCBIlp, {}) : ea.intl.format(ea.t.lmMBfy, {}),
-    eo = X ? ea.intl.format(ea.t.U9FY0J, {}) : ea.intl.string(ea.t.oWCrBq),
-    ec = i.useRef(null),
-    eu = i.useCallback(() => {
-      (0, P.Y)({
-        pageType: er.liQ.GLOBAL_DISCOVERY_QUESTS,
-        sectionType: er.JJy.ORBS_BALANCE_MENU,
-        ctaObject: er.ZSU.CTA_TO_ORBS_SHOP
+  let et = Z ? es.intl.format(es.t.BCBIlp, {}) : es.intl.format(es.t.lmMBfy, {}),
+    ec = Z ? es.intl.format(es.t.U9FY0J, {}) : es.intl.string(es.t.oWCrBq),
+    eu = i.useRef(null),
+    ed = i.useCallback(() => {
+      (0, w.Y)({
+        pageType: ei.liQ.GLOBAL_DISCOVERY_QUESTS,
+        sectionType: ei.JJy.ORBS_BALANCE_MENU,
+        ctaObject: ei.ZSU.CTA_TO_ORBS_SHOP
       }), (0, b.Cz)({
-        tab: ei.G2.ORBS,
+        tab: el.G2.ORBS,
         analyticsLocations: [],
         analyticsSource: f.A.ORBS_BALANCE_MENU
       })
     }, []);
   i.useEffect(() => {
-    (0, h.I)(er.BVt.QUEST_HOME_V2)
+    (0, h.I)(ei.BVt.QUEST_HOME_V2)
   }, []), i.useEffect(() => {
     I.g.trigger()
-  }, []);
-  let ed = (0, H.U)({
-    location: en.rE.QUEST_PREVIEW_TOOL_2
+  }, []), (0, P.A)({
+    ignoreCacheTTL: true
+  });
+  let ep = (0, F.U)({
+    location: er.rE.QUEST_PREVIEW_TOOL_2
   });
   i.useEffect(() => {
     if (null != O) return;
     let e = new URLSearchParams(n.search),
-      r = e.get(F.L1.TAB);
-    if (ed && r === F.NC.PREVIEW_TOOL) {
-      let t = e.get(F.L1.QUEST_ID);
-      A.A.openNativeAppModal("quests", er.e$_.DEEP_LINK, {
-        type: el.XK.QUEST_PREVIEW_TOOL,
+      r = e.get(Y.L1.TAB);
+    if (ep && r === Y.NC.PREVIEW_TOOL) {
+      let t = e.get(Y.L1.QUEST_ID);
+      A.A.openNativeAppModal("quests", ei.e$_.DEEP_LINK, {
+        type: ea.XK.QUEST_PREVIEW_TOOL,
         params: {
           questId: t,
           tab: r
@@ -296,35 +299,35 @@ let eb = function(e) {
       return
     }
     let i = performance.getEntriesByType("navigation")[0];
-    if ("POP" === l.action && (null == i ? true : i.type) === "navigate" && t && r !== F.NC.PREVIEW_TOOL) {
-      let t = (0, U.uJ)(n.hash) ? null : n.hash.substring(1),
-        i = e.get(F.L1.SORT),
-        l = e.get(F.L1.FILTER);
-      A.A.openNativeAppModal("quests", er.e$_.DEEP_LINK, {
-        type: el.XK.QUEST_HOME,
+    if ("POP" === l.action && (null == i ? true : i.type) === "navigate" && t && r !== Y.NC.PREVIEW_TOOL) {
+      let t = (0, G.uJ)(n.hash) ? null : n.hash.substring(1),
+        i = e.get(Y.L1.SORT),
+        l = e.get(Y.L1.FILTER);
+      A.A.openNativeAppModal("quests", ei.e$_.DEEP_LINK, {
+        type: ea.XK.QUEST_HOME,
         params: {
-          questId: (0, U.uJ)(t) ? true : t,
+          questId: (0, G.uJ)(t) ? true : t,
           sort: i,
           filter: l,
           tab: r
         }
       })
     }
-  }, [n.search, O, ed, l.action, n.hash, t]), i.useEffect(() => {
+  }, [n.search, O, ep, l.action, n.hash, t]), i.useEffect(() => {
     t && (0, y.Dr)(d.M.QUEST_HOME_ENTRYPOINT_ONBOARDING)
   }, [t]);
-  let ep = i.useCallback(() => {
-      (0, W.navigateToQuestHome)({
-        fromContent: G.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER
-      }), D.default.track(er.HAw.QUEST_CONTENT_CLICKED, eg({
-        cta_name: Y.Cy.VIEW_QUESTS,
+  let eh = i.useCallback(() => {
+      (0, q.navigateToQuestHome)({
+        fromContent: V.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER
+      }), M.default.track(ei.HAw.QUEST_CONTENT_CLICKED, ef({
+        cta_name: K.Cy.VIEW_QUESTS,
         click_id: (0, o.A)(),
         is_targeted: false
-      }, (0, Y.fF)(G.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
+      }, (0, K.fF)(V.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
     }, []),
-    eh = i.useCallback(e => {
+    eg = i.useCallback(e => {
       var t, n, r;
-      l.replace((n = eg({}, l.location), r = r = {
+      l.replace((n = ef({}, l.location), r = r = {
         hash: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
@@ -335,135 +338,135 @@ let eb = function(e) {
         return n
       })(Object(r)).forEach(function(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-      }), n)), null == (t = ec.current) || t.scrollToTop({
+      }), n)), null == (t = eu.current) || t.scrollToTop({
         animate: false
       }), x(e)
     }, [l, x]);
-  return (0, r.jsx)(J.M.Provider, {
+  return (0, r.jsx)($.M.Provider, {
     value: {
-      onAssetLoadComplete: z
+      onAssetLoadComplete: Q
     },
-    children: (0, r.jsx)(ef.Provider, {
+    children: (0, r.jsx)(em.Provider, {
       value: i.useMemo(() => ({
         isInDiscoverQuestHomeTab: g,
-        onScroll: M,
-        onSelectTab: eh,
-        scrollerRef: ec,
+        onScroll: k,
+        onSelectTab: eg,
+        scrollerRef: eu,
         selectedTab: C
-      }), [g, M, eh, ec, C]),
+      }), [g, k, eg, eu, C]),
       children: (0, r.jsx)("div", {
-        className: a()(es.kL, {
-          [es.KY]: !t
+        className: a()(eo.kL, {
+          [eo.KY]: !t
         }),
-        children: g ? (0, r.jsx)(e_, {
+        children: g ? (0, r.jsx)(eb, {
           renderBanner: () => (0, r.jsx)(S.A, {
-            title: ea.intl.string(ea.t.z8YP2A),
+            title: es.intl.string(es.t.z8YP2A),
             titleColor: "always-white",
             button: (0, r.jsx)(p.Button, {
               variant: "overlay-primary",
-              text: ea.intl.string(ea.t.GURBQl),
-              onClick: ep
+              text: es.intl.string(es.t.GURBQl),
+              onClick: eh
             }),
-            className: es.Gj,
-            children: (0, r.jsx)(eA, {
-              onLoadComplete: z
+            className: eo.Gj,
+            children: (0, r.jsx)(e_, {
+              onLoadComplete: Q
             })
           }),
           header: (0, r.jsx)(j.S, {
             selectedTabId: C,
-            handleTransition: eh,
-            tabs: R,
+            handleTransition: eg,
+            tabs: D,
             icon: p.r2v
           }),
           withQuestsGrid: false,
           children: (0, r.jsxs)("div", {
-            className: es.kj,
+            className: eo.kj,
             children: [(0, r.jsx)(p.Heading, {
               variant: "heading-xl/semibold",
-              children: ea.intl.string(ea.t.z8YP2A)
+              children: es.intl.string(es.t.z8YP2A)
             }), (0, r.jsx)(p.Text, {
               color: "text-subtle",
               variant: "text-md/normal",
-              children: ea.intl.string(ea.t.HdKh65)
+              children: es.intl.string(es.t.HdKh65)
             }), (0, r.jsx)(p.QWc, {
-              text: ea.intl.string(ea.t["1CdL8d"]),
-              onClick: ep,
+              text: es.intl.string(es.t["1CdL8d"]),
+              onClick: eh,
               textVariant: "text-md/normal",
               variant: "primary"
             })]
           })
-        }) : X ? (0, r.jsx)(e_, {
-          renderBanner: () => C !== F.NC.PREVIEW_TOOL && (0, r.jsxs)(S.A, {
-            title: ee,
-            description: eo,
+        }) : Z ? (0, r.jsx)(eb, {
+          renderBanner: () => C !== Y.NC.PREVIEW_TOOL && (0, r.jsxs)(S.A, {
+            title: et,
+            description: ec,
             button: (0, r.jsxs)(p.ButtonGroup, {
               children: [(0, r.jsx)(p.Button, {
                 variant: "overlay-primary",
-                text: ea.intl.string(ea.t["1Wm127"]),
+                text: es.intl.string(es.t["1Wm127"]),
                 onClick: () => (0, b.Cz)({
-                  tab: ei.G2.ORBS,
+                  tab: el.G2.ORBS,
                   analyticsLocations: [],
                   analyticsSource: f.A.INTRO_TO_ORBS_QUEST_BANNER
                 })
               }), (0, r.jsx)(p.Button, {
                 variant: "overlay-secondary",
-                text: ea.intl.string(ea.t["7kTAgJ"]),
-                onClick: $
+                text: es.intl.string(es.t["7kTAgJ"]),
+                onClick: ee
               })]
             }),
-            className: a()(es.cI, es.GF),
+            className: a()(eo.cI, eo.GF),
             children: [(0, r.jsx)("div", {
-              className: a()(es.nY, es.vu)
-            }), (0, r.jsx)(em, {
-              onLoadComplete: z
+              className: a()(eo.nY, eo.vu)
+            }), (0, r.jsx)(eA, {
+              onLoadComplete: Q
             })]
           }),
           header: (0, r.jsx)(j.S, {
             selectedTabId: C,
-            handleTransition: eh,
-            tabs: R,
+            handleTransition: eg,
+            tabs: D,
             icon: p.r2v,
-            children: (0, r.jsx)(L.SS, {
-              analyticsPage: er.liQ.GLOBAL_DISCOVERY_QUESTS,
-              cardAlignment: L.cP.END,
-              ctaText: ea.intl.string(ea.t["J+vlIR"]),
-              ctaOnClick: eu
+            children: (0, r.jsx)(R.SS, {
+              analyticsPage: ei.liQ.GLOBAL_DISCOVERY_QUESTS,
+              cardAlignment: R.cP.END,
+              ctaText: es.intl.string(es.t["J+vlIR"]),
+              ctaOnClick: ed
             })
           })
-        }) : (0, r.jsx)(e_, {
+        }) : (0, r.jsx)(eb, {
           renderBanner: () => (0, r.jsxs)(S.A, {
-            title: ee,
-            description: eo,
+            title: et,
+            description: ec,
             button: (0, r.jsx)(p.Button, {
               variant: "overlay-primary",
-              text: ea.intl.string(ea.t.hvVgAZ),
-              onClick: $,
+              text: es.intl.string(es.t.hvVgAZ),
+              onClick: ee,
               icon: p.I9m,
               iconPosition: "end"
             }),
-            className: es.cI,
+            className: eo.cI,
             children: [(0, r.jsx)("div", {
-              className: es.nY
-            }), (0, r.jsx)(em, {
-              onLoadComplete: z
+              className: eo.nY
+            }), (0, r.jsx)(eA, {
+              onLoadComplete: Q
             })]
           }),
           header: (0, r.jsxs)(T.Ay, {
             variant: T.Z5.OVERLAY,
             children: [(0, r.jsx)("div", {
-              className: es.T_
+              className: eo.T_
             }), (0, r.jsx)(T.ns, {
-              scrollPosition: B
+              scrollPosition: H
             }), (0, r.jsx)(T.T4, {
               icon: p.r2v
             })]
           }),
           children: (0, r.jsx)("div", {
-            className: es.vR,
+            className: eo.vR,
             children: (0, r.jsx)(N.A, {
-              tabs: R,
+              tabs: D,
               selectedTab: C,
-              onTabSelect: eh
+              onTabSelect: eg
             })
           })
         })

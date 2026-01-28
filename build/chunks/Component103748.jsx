@@ -374,7 +374,7 @@ let C = {
             }), (0, a.jsxs)("div", {
               className: f.nM,
               children: [(0, a.jsx)(d.A, {
-                fileContents: () => (0, x.rs)(t.name, k),
+                fileContents: () => (0, x.rs)(k),
                 contentType: "text/plain",
                 fileName: "".concat(B, "_timing_config.txt"),
                 children: (0, a.jsx)(c.Button, {

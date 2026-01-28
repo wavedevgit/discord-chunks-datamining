@@ -2,23 +2,20 @@
 /** chunk id: 895944, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => S
 }), require("./896048.js");
 var r, Chunk410530 = require("./410530.js"),
   Chunk892227 = require("./892227.js"),
-  Chunk571136 = require("./571136.js"),
+  Chunk582972 = require("./582972.js"),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk431560 = require("./431560.js"),
-  Chunk84483 = require("./84483.js"),
-  Chunk572009 = require("./572009.js"),
   Chunk287809 = require("./287809.js"),
   Chunk927813 = require("./927813.js"),
-  Chunk474090 = require("./474090.js"),
   Chunk649032 = require("./649032.js"),
-  Chunk788868 = require("./788868.js");
+  Chunk26508 = require("./26508.js");
 
-function g(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,68 +23,82 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let E = 864e5,
-  y = 3e4,
-  b = 36e5,
-  O = new Chunk431560.Z({
-    ttlMs: E
+let h = 864e5,
+  m = new Chunk431560.Z({
+    ttlMs: h
   });
 
-function v() {
-  let e = O.getValue();
-  if (null == e) returnfalse;
+function g() {
+  let e = m.getValue();
+  if (null == e) return {
+    state: "MORE_THAN_24H_BEFORE_REWARD"
+  };
   let t = new Date;
   for (let n of e.values()) {
-    let e = new Date(n.next_reward_date),
-      r = (0, i.default)(e, 1);
-    if ((0, o.default)(t, {
-        start: e,
-        end: r
-      })) returntrue
+    let e = new Date(n.next_reward_date);
+    if (!isNaN(e.getTime())) {
+      if (t >= e) return {
+        state: "PAST_REWARD_DATE"
+      };
+      if (t >= (0, i.default)(e, false)) return {
+        state: "LESS_THAN_24H_BEFORE_REWARD",
+        msUntilReward: (0, o.A)(e, t)
+      }
+    }
   }
-  returnfalse
+  return {
+    state: "MORE_THAN_24H_BEFORE_REWARD"
+  }
 }
 
-function A() {
-  (0, d.I9)(f.default.getCurrentUser()) ? O.setTtl(y): v() ? O.setTtl(b) : O.setTtl(E)
+function E(e, t) {
+  return "LESS_THAN_24H_BEFORE_REWARD" === e && null != t ? t : h
 }
 
-function I() {
-  O.setLoading()
+function y() {
+  let {
+    state: e,
+    msUntilReward: t
+  } = g();
+  m.setTtl(E(e, t))
 }
 
-function S(e) {
+function b() {
+  m.setLoading()
+}
+
+function O(e) {
   let {
     programRewards: t
   } = e;
-  if (!O.isLoading()) returnfalse;
+  if (!m.isLoading()) returnfalse;
   let n = new Map;
   t.forEach(e => {
     n.set(e.reward_program, e)
-  }), O.setValue(n), A()
+  }), m.setValue(n), y()
 }
 
-function T() {
-  if (!O.isLoading()) returnfalse;
-  O.setError()
+function v() {
+  if (!m.isLoading()) returnfalse;
+  m.setError()
 }
 
-function C() {
-  O.clear()
+function A() {
+  m.clear()
 }
-class N extends(r = Chunk311907.Ay.PersistedStore) {
+class I extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(f.default), (null == e ? true : e.cache) != null) {
+    if (this.waitFor(u.default), (null == e ? true : e.cache) != null) {
       let t = new Map(e.cache.value);
-      O.restore({
+      m.restore({
         value: t,
         fetchedAt: e.cache.fetchedAt
       })
     }
-    A()
+    y()
   }
   getState() {
-    let e = O.serialize();
+    let e = m.serialize();
     return {
       cache: null != e ? {
         value: Array.from(e.value.entries()),
@@ -96,15 +107,15 @@ class N extends(r = Chunk311907.Ay.PersistedStore) {
     }
   }
   passesGeneralUIInvariant(e) {
-    if (!this.isInProperTreatments()) returnfalse;
-    if (e === h.W.NITRO) {
+    if (!(0, p.T0)("ProgramRewardsStore")) returnfalse;
+    if (e === f.W.NITRO) {
       let t = this.getRewardForProgram(e);
       if (null == t) returnfalse;
       let n = t.next_reward_date,
         r = t.program_current_state;
       if (null == r) returnfalse;
       if (null == n || "" === n) {
-        if (![h.L.PAYMENT_PROCESSING, h.L.PAYMENT_ERROR].includes(r)) returnfalse
+        if (![f.L.PAYMENT_PROCESSING, f.L.PAYMENT_ERROR].includes(r)) returnfalse
       } else {
         let e = new Date(n).getTime();
         if (Number.isNaN(e) || e < Date.now()) returnfalse
@@ -113,8 +124,8 @@ class N extends(r = Chunk311907.Ay.PersistedStore) {
     returntrue
   }
   passesProgressBarInvariant(e) {
-    if (!this.isInProperTreatments()) returnfalse;
-    if (e === h.W.NITRO) {
+    if (!(0, p.T0)("ProgramRewardsStore")) returnfalse;
+    if (e === f.W.NITRO) {
       let t = this.getRewardForProgram(e);
       if (null == t) returnfalse;
       let n = t.total_countdown_duration_ms;
@@ -122,54 +133,45 @@ class N extends(r = Chunk311907.Ay.PersistedStore) {
       let r = t.next_reward_date;
       if (null == r || "" === r) returnfalse;
       let i = new Date(r).getTime();
-      if (Number.isNaN(i) || i <= Date.now() || (0, a.default)(new Date(r), new Date) > n / p.A.Millis.DAY) returnfalse
+      if (Number.isNaN(i) || i <= Date.now() || (0, a.default)(new Date(r), new Date) > n / d.A.Millis.DAY) returnfalse
     }
     returntrue
   }
-  hasNecessaryPremiumSubscriptionStatus() {
-    return (0, _.YE)(f.default.getCurrentUser(), m.PremiumTypes.TIER_2)
-  }
-  isInProperTreatments() {
-    let {
-      isInTreatment: e
-    } = (0, u.v9)("ProgramRewardsStore");
-    return e
-  }
   isFetching() {
-    return O.isLoading()
+    return m.isLoading()
   }
   isFetched() {
-    return O.isValid()
+    return m.isValid()
   }
   hasCachedValue() {
-    return null != O.getValue()
+    return null != m.getValue()
   }
   isReady() {
-    return !this.isFetching() && (this.hasCachedValue() || !this.isInProperTreatments() || this.isError() || !this.hasNecessaryPremiumSubscriptionStatus())
+    return !this.isFetching() && (this.hasCachedValue() || !(0, p.T0)("ProgramRewardsStore") || this.isError() || !(0, p.mY)())
   }
   shouldFetch() {
-    return !!this.isInProperTreatments() && !!this.hasNecessaryPremiumSubscriptionStatus() && O.shouldFetch()
+    return !!(0, p.T0)("ProgramRewardsStore.shouldFetch") && !!(0, p.mY)() && m.shouldFetch()
   }
   isError() {
-    return O.isError()
+    return m.isError()
   }
   getStatus() {
-    return O.getStatus()
+    return m.getStatus()
   }
   getRewardForProgram(e) {
     var t;
-    return null == (t = O.getValue()) ? true : t.get(e)
+    return null == (t = m.getValue()) ? true : t.get(e)
   }
   forceExpire() {
-    O.forceExpire()
+    m.forceExpire()
   }
 }
-g(N, "displayName", "ProgramRewardsStore"), g(N, "persistKey", "ProgramRewardsStore");
-let w = new N(Chunk73153.h, {
-  LOGOUT: C,
-  PROGRAM_REWARDS_FETCH: I,
-  PROGRAM_REWARDS_FETCH_SUCCESS: S,
-  PROGRAM_REWARDS_FETCH_FAILURE: T,
-  CURRENT_USER_UPDATE: A,
-  CONNECTION_OPEN: A
+_(I, "displayName", "ProgramRewardsStore"), _(I, "persistKey", "ProgramRewardsStore");
+let S = new I(Chunk73153.h, {
+  LOGOUT: A,
+  PROGRAM_REWARDS_FETCH: b,
+  PROGRAM_REWARDS_FETCH_SUCCESS: O,
+  PROGRAM_REWARDS_FETCH_FAILURE: v,
+  CURRENT_USER_UPDATE: y,
+  CONNECTION_OPEN: y
 })
