@@ -129,14 +129,14 @@ function el(e) {
       eI(false)
     }, 500)
   }, []);
-  let ek = e => {
+  let eP = e => {
       null == n || n(), (0, C.openUserProfileModal)(ea({
         customStatusPrompt: eN,
         sourceAnalyticsLocations: ec
       }, ed, e))
     },
-    eP = (null == eo ? true : eo.widgets) != null && eo.widgets.length > 0,
-    eR = eP ? [] : [o.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+    ek = (null == eo ? true : eo.widgets) != null && eo.widgets.length > 0,
+    eR = ek ? [] : [o.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
     [eD, eM] = (0, f.kn)(eR),
     eL = eD === o.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eU = l.useCallback(() => {
@@ -166,9 +166,9 @@ function el(e) {
         "data-layer": "base",
         children: [(0, a.jsx)(Q.A, {
           displayProfile: eo,
-          handleOpenUserProfileModal: ek,
+          handleOpenUserProfileModal: eP,
           height: em
-        }), (0, a.jsxs)(k.A, {
+        }), (0, a.jsxs)(P.A, {
           className: et.BK,
           user: t,
           displayProfile: eo,
@@ -183,7 +183,7 @@ function el(e) {
               user: t,
               displayProfile: eo,
               themeType: Z.d.POPOUT,
-              onOpenProfile: es ? true : ek
+              onOpenProfile: es ? true : eP
             }), (0, a.jsx)(D.A, {
               ref: eO,
               user: t,
@@ -198,11 +198,11 @@ function el(e) {
             },
             children: [(0, a.jsx)(N.A, {
               userId: t.id
-            }), (0, a.jsx)(P.A, {
+            }), (0, a.jsx)(k.A, {
               user: t,
               className: et.Xh,
               nickname: F.Ay.getName(true, null, t),
-              onOpenProfile: es ? true : ek,
+              onOpenProfile: es ? true : eP,
               pronouns: null == eo ? true : eo.pronouns,
               tags: (0, a.jsx)(O.A, {
                 displayProfile: eo,
@@ -220,21 +220,21 @@ function el(e) {
               bio: null == eo ? true : eo.bio,
               hidePersonalInformation: eb,
               onClose: n
-            }), eP && (0, a.jsx)(I.A, {
+            }), ek && (0, a.jsx)(I.A, {
               user: t,
               widgets: null == eo ? true : eo.widgets,
-              onOpenUserProfileModal: ek
+              onOpenUserProfileModal: eP
             }), (0, a.jsx)(E.A, {
               isPremiumUser: eC,
               onInteraction: n
             }), (0, a.jsx)(w.A, {
               user: t,
               currentUser: t,
-              onOpenUserProfileModal: ek,
+              onOpenUserProfileModal: eP,
               onClose: n
             }), (0, a.jsxs)("div", {
               className: et.T_,
-              children: [(0, a.jsx)(k.A.Overlay, {
+              children: [(0, a.jsx)(P.A.Overlay, {
                 className: et.g0,
                 children: (0, a.jsxs)(z.Gs, {
                   children: [(0, a.jsx)(z.N3, {
@@ -320,7 +320,7 @@ function el(e) {
                     } : true
                   })]
                 })
-              }), (0, a.jsx)(k.A.Overlay, {
+              }), (0, a.jsx)(P.A.Overlay, {
                 className: et.g0,
                 children: (0, a.jsxs)(z.Gs, {
                   children: [(0, a.jsx)(z.N3, {

@@ -238,7 +238,7 @@ function ec() {
       name: "Layers",
       group: ei.fu.UI,
       tags: ["verification", "safety flow"],
-      render: () => (0, a.jsx)(P.A, {})
+      render: () => (0, a.jsx)(k.A, {})
     }), e.push({
       id: "affinity",
       name: "Affinity",
@@ -340,7 +340,7 @@ function ec() {
       name: "Language",
       group: ei.fu.UI,
       tags: ["locale"],
-      render: () => (0, a.jsx)(k.A, {})
+      render: () => (0, a.jsx)(P.A, {})
     }), e.push({
       id: "word_frequency",
       name: "Word Frequency",

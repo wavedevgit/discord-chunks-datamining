@@ -21,76 +21,76 @@ let j = e => {
   var n;
   let t, i, {
       skuId: j,
-      user: x,
-      claimed: h,
-      onSelect: T,
-      selectedSkuId: P
+      user: h,
+      claimed: x,
+      onSelect: P,
+      selectedSkuId: T
     } = e,
-    [S, A] = l.useState(null),
-    b = l.useCallback(e => {
+    [S, A] = r.useState(null),
+    O = r.useCallback(e => {
       A(e)
     }, []),
-    y = l.useMemo(() => ({
+    b = r.useMemo(() => ({
       current: S
     }), [S]),
     {
-      isHoveringOrFocusing: I
-    } = (0, u.A)(y),
-    O = !h && I,
+      isHoveringOrFocusing: y
+    } = (0, u.A)(b),
+    I = !x && y,
     {
-      product: v
+      product: _
     } = (0, c.q)(j);
-  if (null == v) return null;
-  let _ = v.items[0];
-  return null == _ ? null : ((0, d.T)(_) ? (i = a.R.AVATAR_DECORATION, t = (0, r.jsx)(m.i, {
-    item: _,
-    user: x,
-    isHighlighted: O,
+  if (null == _) return null;
+  let v = _.items[0];
+  return null == v ? null : ((0, d.T)(v) ? (i = a.R.AVATAR_DECORATION, t = (0, l.jsx)(m.i, {
+    item: v,
+    user: h,
+    isHighlighted: I,
     avatarSize: o._3J.SIZE_96
-  })) : (0, p.F)(_) && (i = a.R.NAMEPLATE, t = (0, r.jsx)(g.A, {
-    nameplate: _,
-    user: x,
-    isHighlighted: O,
+  })) : (0, p.F)(v) && (i = a.R.NAMEPLATE, t = (0, l.jsx)(g.A, {
+    nameplate: v,
+    user: h,
+    isHighlighted: I,
     size: "small"
-  })), (0, r.jsx)(o.vN3, {
-    children: (0, r.jsxs)(o.sqX, {
-      ref: b,
-      "aria-label": null != (n = v.name) ? n : "",
+  })), (0, l.jsx)(o.vN3, {
+    children: (0, l.jsxs)(o.sqX, {
+      ref: O,
+      "aria-label": null != (n = _.name) ? n : "",
       onClick: () => {
-        null == j || null == T || h || T(j)
+        null == j || null == P || x || P(j)
       },
-      className: s()(E._x, {
-        [E.Vp]: !h,
-        [E.mr]: O,
-        [E.md]: P === j
+      className: s()(f._x, {
+        [f.Vp]: !x,
+        [f.mr]: I,
+        [f.md]: T === j
       }),
-      children: [(0, r.jsx)("div", {
-        className: s()(E.VH, {
-          [E._Q]: i === a.R.AVATAR_DECORATION,
-          [E.M4]: i === a.R.NAMEPLATE
+      children: [(0, l.jsx)("div", {
+        className: s()(f.VH, {
+          [f._Q]: i === a.R.AVATAR_DECORATION,
+          [f.M4]: i === a.R.NAMEPLATE
         }),
-        children: null != t ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("div", {
-            className: s()(E.i1, {
-              [E.Sf]: h
+        children: null != t ? (0, l.jsxs)(l.Fragment, {
+          children: [(0, l.jsx)("div", {
+            className: s()(f.i1, {
+              [f.Sf]: x
             }),
             children: t
-          }), h && (0, r.jsx)(o.rOg, {
+          }), x && (0, l.jsx)(o.rOg, {
             size: "custom",
             width: 48,
             height: 48,
             color: o.LU0.colors.INTERACTIVE_TEXT_ACTIVE,
-            className: E.j0
+            className: f.j0
           })]
         }) : null
-      }), (0, r.jsxs)("div", {
-        className: E.tZ,
-        children: [(0, r.jsx)(o.Heading, {
+      }), (0, l.jsxs)("div", {
+        className: f.tZ,
+        children: [(0, l.jsx)(o.Heading, {
           variant: "heading-md/extrabold",
-          children: v.name
-        }), (0, r.jsx)(o.Text, {
+          children: _.name
+        }), (0, l.jsx)(o.Text, {
           variant: "text-sm/normal",
-          children: h ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
+          children: x ? E.intl.string(E.t["6cfuDj"]) : E.intl.string(E.t.QQsaCc)
         })]
       })]
     })

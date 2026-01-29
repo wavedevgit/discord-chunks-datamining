@@ -93,7 +93,7 @@ function w(e) {
   })
 }
 let I = new Set(["client_performance_cpu", "client_performance_memory"]),
-  k = [{
+  P = [{
     id: "details",
     name: "Details",
     group: Chunk231643.fu.NONE,
@@ -228,10 +228,10 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
       })
     }
   }],
-  P = {
+  k = {
     events: {
       label: "Events",
-      filter: e => Object.entries(P).filter(e => {
+      filter: e => Object.entries(k).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -270,7 +270,7 @@ function D() {
   let e = l.useRef(null),
     [t, n] = l.useState(""),
     r = (0, c.bG)([v.A], () => v.A.loggedEventsVersion),
-    [s, o] = l.useState(() => Object.keys(P)),
+    [s, o] = l.useState(() => Object.keys(k)),
     [m, p] = l.useState(v.A.loggedEvents),
     h = l.useCallback(e => {
       p(e)
@@ -278,7 +278,7 @@ function D() {
   (0, x.RT)(t, v.A.loggedEvents, h, R, [r]);
   let g = m.filter(e => {
       for (let t of s)
-        if (P[t].filter(e)) returntrue;
+        if (k[t].filter(e)) returntrue;
       returnfalse
     }),
     [f, b] = l.useState(true),
@@ -287,7 +287,7 @@ function D() {
       TabBar: N,
       renderSelectedTab: w
     } = (0, C.Ay)({
-      tabs: k
+      tabs: P
     }, []);
   return (0, a.jsxs)("div", {
     ref: e,
@@ -311,7 +311,7 @@ function D() {
         className: O.Bi
       }), (0, a.jsx)("div", {
         className: O.uW,
-        children: Object.entries(P).map(e => {
+        children: Object.entries(k).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.DUT, {
             className: i()(O.pb, s.includes(t) && O.bx),

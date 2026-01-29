@@ -21,34 +21,34 @@ function g(e) {
     handleStepChange: n,
     handleClose: t
   } = e, {
-    activeSubscription: l,
+    activeSubscription: r,
     selectedSkuId: g,
-    setSelectedPlanId: f,
-    startedPaymentFlowWithPaymentSourcesRef: E
+    setSelectedPlanId: E,
+    startedPaymentFlowWithPaymentSourcesRef: f
   } = (0, c.P5)(), {
     isGift: j
-  } = (0, u.Pv)(), x = null != l ? (0, o.EL)(l) : null, h = null != x ? (0, o.RH)(x.planId) : null, T = null != x ? (0, o.m6)(x.planId) : null, P = (0, p.vT)({
+  } = (0, u.Pv)(), h = null != r ? (0, o.EL)(r) : null, x = null != h ? (0, o.RH)(h.planId) : null, P = null != h ? (0, o.m6)(h.planId) : null, T = (0, p.vT)({
     isTrial: false,
     isGift: j,
     selectedSkuId: g,
-    startedPaymentFlowWithPaymentSources: E.current
+    startedPaymentFlowWithPaymentSources: f.current
   });
-  return i()(null != T, "Expected premium type"), (0, r.jsx)(a.A, {
-    premiumType: T,
+  return i()(null != P, "Expected premium type"), (0, l.jsx)(a.A, {
+    premiumType: P,
     titleText: m.intl.string(m.t["7VcWW0"]),
     subtitleText: m.intl.format(m.t.Qk34Ik, {
-      subscriptionName: h
+      subscriptionName: x
     }),
-    footer: (0, r.jsxs)(s.ButtonGroup, {
+    footer: (0, l.jsxs)(s.ButtonGroup, {
       direction: "horizontal-reverse",
       align: "center",
-      children: [(0, r.jsx)(s.Button, {
+      children: [(0, l.jsx)(s.Button, {
         variant: "primary",
         text: m.intl.string(m.t["3PatSz"]),
         onClick: () => {
-          P ? (f((0, p.xT)(g, l)), n(d.pn.REVIEW)) : n(d.pn.PLAN_SELECT)
+          T ? (E((0, p.xT)(g, r)), n(d.pn.REVIEW)) : n(d.pn.PLAN_SELECT)
         }
-      }), (0, r.jsx)(s.Button, {
+      }), (0, l.jsx)(s.Button, {
         variant: "secondary",
         onClick: t,
         text: m.intl.string(m.t.h9tkAK)

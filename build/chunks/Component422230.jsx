@@ -35,9 +35,9 @@ let O = e => {
     isSupportedPrivateBrowsingPerkPlatform: E,
     isWeb: N,
     connectionStatus: w
-  } = (0, v.lV)(), I = (0, f.lM)("private_browsing_perk_settings_page"), k = (0, l.useCallback)(() => {
+  } = (0, v.lV)(), I = (0, f.lM)("private_browsing_perk_settings_page"), P = (0, l.useCallback)(() => {
     (0, c.A)(j.BVt.NITRO_HOME), t()
-  }, [t]), P = (0, l.useCallback)(() => {
+  }, [t]), k = (0, l.useCallback)(() => {
     (0, p.openUserSettings)(m.X.PRIVATE_BROWSING_PANEL, {
       section: j.nc_.PRIVATE_BROWSING
     })
@@ -75,11 +75,11 @@ let O = e => {
           color: "text-subtle",
           children: R ? A.intl.format(y.default.zwW10o, {
             onClick: () => {
-              (0, i.u)(j.HAw.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), k()
+              (0, i.u)(j.HAw.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), P()
             }
           }) : A.intl.format(y.default.D4hu0v, {
             onClick: () => {
-              (0, i.u)(j.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), P()
+              (0, i.u)(j.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), k()
             }
           })
         });
@@ -89,12 +89,12 @@ let O = e => {
           color: "text-subtle",
           children: A.intl.format(y.default.D4hu0v, {
             onClick: () => {
-              (0, i.u)(j.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), P()
+              (0, i.u)(j.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), k()
             }
           })
         })
     }
-  }, [O, T, R, P, k]), {
+  }, [O, T, R, k, P]), {
     analyticsLocations: B
   } = (0, o.Ay)(s.A.MASKED_LINK);
   return ((0, l.useEffect)(() => {

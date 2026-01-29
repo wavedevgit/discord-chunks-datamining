@@ -33,8 +33,8 @@ function T(e) {
   let {
     quest: w,
     questContent: I,
-    isHovering: k,
-    contentPosition: P,
+    isHovering: P,
+    contentPosition: k,
     rowIndex: R,
     isVisibleInViewport: D,
     onReceiveErrorHints: M,
@@ -47,7 +47,7 @@ function T(e) {
   } = l.useContext(j.M), {
     expansionSpring: z
   } = (0, c.zhh)({
-    expansionSpring: +!!k,
+    expansionSpring: +!!P,
     config: (T = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -142,14 +142,14 @@ function T(e) {
               quest: w,
               size: 76,
               percentComplete: X,
-              percentCompleteText: k && !(0, g.Ic)(w) ? $ : true,
+              percentCompleteText: P && !(0, g.Ic)(w) ? $ : true,
               children: (0, a.jsx)("div", {
                 className: S.yv,
                 children: (0, a.jsx)(v.A, {
                   quest: w,
                   questContent: I,
                   className: S.ve,
-                  autoplay: k,
+                  autoplay: P,
                   onLoadComplete: K,
                   lazyLoad: true,
                   sourceQuestContent: L
@@ -158,7 +158,7 @@ function T(e) {
             })]
           }) : (0, a.jsx)(v.A, {
             quest: w,
-            autoplay: k,
+            autoplay: P,
             questContent: I,
             className: S.eB,
             onLoadComplete: K,
@@ -193,7 +193,7 @@ function T(e) {
     }), (0, a.jsx)(y.A, {
       quest: w,
       questContent: I,
-      contentPosition: P,
+      contentPosition: k,
       rowIndex: R,
       onReceiveErrorHints: M,
       sourceQuestContent: L

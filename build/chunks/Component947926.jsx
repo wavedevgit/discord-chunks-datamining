@@ -98,7 +98,7 @@ function U(e) {
     handleBlur: ed,
     handleMouseEnter: eu,
     handleMouseLeave: em
-  } = (0, k.m)({
+  } = (0, P.m)({
     quest: r,
     isExpanded: J,
     setIsExpanded: X,
@@ -108,7 +108,7 @@ function U(e) {
     prevIsQuestAccepted: K,
     impressionRef: V
   });
-  (0, P.S)({
+  (0, k.S)({
     quest: r,
     hasAssetsError: q,
     isEligibleForQuests: h,

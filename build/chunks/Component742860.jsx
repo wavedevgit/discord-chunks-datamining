@@ -152,7 +152,7 @@ function J(e) {
     taskDetails: x
   } = l.useContext(U.T), {
     expansionSpring: f
-  } = l.useContext(P.PW), j = l.useRef(null), A = (0, c.bG)([b.A], () => b.A.isEnrolling(o.id), [o]), S = l.useMemo(() => (0, C.tW)(o, C.fY.QUEST_BAR_HERO), [o]), O = (0, y.NA)({
+  } = l.useContext(k.PW), j = l.useRef(null), A = (0, c.bG)([b.A], () => b.A.isEnrolling(o.id), [o]), S = l.useMemo(() => (0, C.tW)(o, C.fY.QUEST_BAR_HERO), [o]), O = (0, y.NA)({
     quest: o
   }), T = l.useMemo(() => (0, C.tW)(o, C.fY.HERO_IMAGE), [o]), E = l.useMemo(() => null == T ? {} : {
     backgroundImage: "url(".concat(T.url, ")")
@@ -204,7 +204,7 @@ function J(e) {
             loading: A,
             text: O,
             size: "sm",
-            icon: (0, k.Oz)(o),
+            icon: (0, P.Oz)(o),
             fullWidth: true
           })
         })]
@@ -259,10 +259,10 @@ function X(e) {
     taskDetails: d
   } = l.useContext(U.T), {
     expansionSpring: u
-  } = l.useContext(P.PW), m = (null == (t = c.userStatus) ? true : t.completedAt) != null, p = d.percentComplete > 0, h = (0, A.Vn)(c), [x, g, f] = (0, A.Qo)(c, d), b = l.useRef(null), j = l.useRef(null), _ = (0, A.RR)({
+  } = l.useContext(k.PW), m = (null == (t = c.userStatus) ? true : t.completedAt) != null, p = d.percentComplete > 0, h = (0, A.Vn)(c), [x, g, f] = (0, A.Qo)(c, d), b = l.useRef(null), j = l.useRef(null), _ = (0, A.RR)({
     quest: c
   }), y = (0, T.vv)(c), C = (0, A.I3)(c), E = l.useCallback(() => {
-    (0, k.d5)({
+    (0, P.d5)({
       quest: c,
       questContent: v.uF.QUEST_BAR_V2,
       sourceQuestContent: v.uF.QUEST_BAR_V2,
@@ -329,7 +329,7 @@ function X(e) {
   })
 }
 async function $(e, t, n, a) {
-  (0, T.vv)(e) ? await (0, k.e0)(e, {
+  (0, T.vv)(e) ? await (0, P.e0)(e, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: a,
@@ -357,7 +357,7 @@ let Z = Chunk64700.forwardRef(function(e, t) {
     quest: p
   } = l.useContext(U.T), {
     expansionSpring: h
-  } = l.useContext(P.PW), {
+  } = l.useContext(k.PW), {
     launchInGameActivity: x
   } = (0, A.zW)(p), g = (0, E.vA)(p), f = l.useCallback(async () => {
     let e = g ? S.Cy.START_QUEST : S.Cy.ACCEPT_QUEST;

@@ -59,10 +59,10 @@ function S() {
     I = (0, h.RD)(N, {
       allowedFlows: [h._M.RPC]
     }),
-    k = (0, h.RD)(N, {
+    P = (0, h.RD)(N, {
       allowedFlows: [h._M.WEB]
     }),
-    P = (0, h.RD)(N),
+    k = (0, h.RD)(N),
     {
       canDeauthorize: R,
       deauthorize: D
@@ -117,8 +117,8 @@ function S() {
         variant: "heading-lg/normal",
         children: "Authorization"
       }), (0, a.jsx)(c.Button, {
-        disabled: !P.canStartAuthorization,
-        onClick: () => P.startAuthorization({
+        disabled: !k.canStartAuthorization,
+        onClick: () => k.startAuthorization({
           analyticsLocations: o
         }),
         variant: "primary",
@@ -135,8 +135,8 @@ function S() {
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, a.jsx)(c.Button, {
-        disabled: !k.canStartAuthorization,
-        onClick: () => k.startAuthorization({
+        disabled: !P.canStartAuthorization,
+        onClick: () => P.startAuthorization({
           analyticsLocations: o
         }),
         variant: "secondary",

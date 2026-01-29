@@ -31,46 +31,46 @@ function A(e) {
   } = e, {
     selectedPlan: i,
     selectedSkuId: A,
-    step: b
+    step: O
   } = (0, j.P5)(), {
-    setSelectedGiftingPromotionReward: y,
-    selectedGiftingPromotionReward: I,
-    claimableRewards: O
-  } = (0, E.Pv)(), v = (0, a.bG)([g.default], () => g.default.getCurrentUser()), _ = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), N = (0, d.UY)(O, I), [C, M] = l.useState(N), [R, k] = l.useState(false);
-  l.useEffect(() => {
-    R || null != I || null == N || (y(N), M(N))
-  }, [N, R, I, y]), s()(null != i, "Expected plan to selected"), s()(null != A, "Expected selectedSkuId"), s()(null != b, "Step should be set");
-  let w = l.useMemo(() => null != C && (null != O ? O : []).includes(C), [C, O]),
-    D = l.useMemo(() => 0 === _.length || null == C || !w, [_, C, w]);
-  l.useEffect(() => {
-    if (0 === _.length) {
-      M(true), y(true);
+    setSelectedGiftingPromotionReward: b,
+    selectedGiftingPromotionReward: y,
+    claimableRewards: I
+  } = (0, f.Pv)(), _ = (0, a.bG)([g.default], () => g.default.getCurrentUser()), v = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), C = (0, d.UY)(I, y), [N, M] = r.useState(C), [R, k] = r.useState(false);
+  r.useEffect(() => {
+    R || null != y || null == C || (b(C), M(C))
+  }, [C, R, y, b]), s()(null != i, "Expected plan to selected"), s()(null != A, "Expected selectedSkuId"), s()(null != O, "Step should be set");
+  let w = r.useMemo(() => null != N && (null != I ? I : []).includes(N), [N, I]),
+    D = r.useMemo(() => 0 === v.length || null == N || !w, [v, N, w]);
+  r.useEffect(() => {
+    if (0 === v.length) {
+      M(true), b(true);
       return
     }
-    null != C && w && _.includes(C) || null == C || (M(true), y(true))
-  }, [_, w, C, y]);
+    null != N && w && v.includes(N) || null == N || (M(true), b(true))
+  }, [v, w, N, b]);
   let L = e => {
-      y(e), M(e), k(true)
+      b(e), M(e), k(true)
     },
-    G = _.map(e => (0, r.jsx)(u.k, {
+    G = v.map(e => (0, l.jsx)(u.k, {
       skuId: e,
-      claimed: null != O && !O.includes(e),
-      user: v,
+      claimed: null != I && !I.includes(e),
+      user: _,
       onSelect: L,
-      selectedSkuId: C
+      selectedSkuId: N
     }, e)),
-    U = (0, r.jsx)(h.UX, {
-      children: (0, r.jsx)(o.jlY, {
+    U = (0, l.jsx)(x.UX, {
+      children: (0, l.jsx)(o.jlY, {
         "data-migration-pending": true,
         className: S.Hx,
-        children: (0, r.jsx)(m.Z3, {
+        children: (0, l.jsx)(m.Z3, {
           onStepChange: e => {
-            null != v && null != I && f.default.track(T.HAw.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: v.id,
-              reward_sku_id: I
+            null != _ && null != y && E.default.track(P.HAw.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: _.id,
+              reward_sku_id: y
             }), n(e)
           },
-          onBackClick: () => n(x.pn.PLAN_SELECT),
+          onBackClick: () => n(h.pn.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
           planOptions: [i.id],
@@ -79,34 +79,34 @@ function A(e) {
         })
       })
     });
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(o.rQ0, {
+  return (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsxs)(o.rQ0, {
       "data-migration-pending": true,
       className: S.Hc,
       direction: c.A.Direction.VERTICAL,
       align: c.A.Align.START,
       separator: false,
-      children: [(0, r.jsx)(o.Heading, {
+      children: [(0, l.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
-        children: P.intl.string(P.t.OEtqpm)
-      }), (0, r.jsx)(o.Text, {
+        children: T.intl.string(T.t.OEtqpm)
+      }), (0, l.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-subtle",
         className: S.GQ,
-        children: P.intl.string(P.t.h2nMp0)
-      }), (0, r.jsx)(o.s_y, {
+        children: T.intl.string(T.t.h2nMp0)
+      }), (0, l.jsx)(o.s_y, {
         "data-migration-pending": true,
         className: S.b,
         onClick: t
       })]
-    }), (0, r.jsx)(o.$mQ, {
+    }), (0, l.jsx)(o.$mQ, {
       "data-migration-pending": true,
-      children: (0, r.jsx)(o.BJc, {
+      children: (0, l.jsx)(o.BJc, {
         direction: "vertical",
         justify: "center",
         align: "center",
-        children: (0, r.jsx)("div", {
+        children: (0, l.jsx)("div", {
           className: S.Dq,
           children: G
         })

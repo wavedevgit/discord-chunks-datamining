@@ -34,7 +34,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk734399 = require("./734399.js");
 
-function P(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -100,7 +100,7 @@ let M = function() {
   return (0, a.jsx)(g.f5, {
     value: q,
     children: (0, a.jsx)(u.IpV, {
-      className: k.XG,
+      className: P.XG,
       children: (0, a.jsxs)(u.BJc, {
         direction: "vertical",
         gap: 24,
@@ -235,7 +235,7 @@ let M = function() {
               label: "Nitro Basic"
             }],
             onSelectionChange: e => {
-              W(t => R(P({}, t), {
+              W(t => R(k({}, t), {
                 plan_id: e
               }))
             },
@@ -254,7 +254,7 @@ let M = function() {
               label: "Not Gift"
             }],
             onSelectionChange: e => {
-              W(t => R(P({}, t), {
+              W(t => R(k({}, t), {
                 gift: e
               }))
             },
@@ -269,7 +269,7 @@ let M = function() {
             text: "Open Link",
             disabled: H,
             onClick: () => {
-              window.open(w.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify(P({}, V)))
+              window.open(w.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify(k({}, V)))
             }
           })
         }), (0, a.jsx)(u.cGx, {}), (0, a.jsxs)(u.nVY, {
@@ -282,12 +282,12 @@ let M = function() {
               variant: "text-sm/normal",
               children: "Virtual Currency Balance:"
             }), Z ? (0, a.jsx)("div", {
-              className: k.wG,
+              className: P.wG,
               children: (0, a.jsx)(u.y$y, {
                 type: u.tVU.SPINNING_CIRCLE
               })
             }) : (0, a.jsxs)("div", {
-              className: k.dB,
+              className: P.dB,
               children: [null !== ee && (0, a.jsxs)(u.Text, {
                 variant: "text-sm/normal",
                 children: ["Error fetching Virtual Currency Balance: ", ee.message]

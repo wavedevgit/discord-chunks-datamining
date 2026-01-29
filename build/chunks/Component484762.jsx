@@ -97,7 +97,7 @@ let ee = {
         width: 100,
         height: 100
       }
-    }, P.A.getWidgetDefaultSettings(q.uss.CLICK_ZONE_DEBUG)), {
+    }, k.A.getWidgetDefaultSettings(q.uss.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
     [Chunk652215.uss.PERFORMANCE_DEBUG]: e => Z($({
@@ -113,7 +113,7 @@ let ee = {
         width: "auto",
         height: "auto"
       }
-    }, P.A.getWidgetDefaultSettings(q.uss.PERFORMANCE_DEBUG)), {
+    }, k.A.getWidgetDefaultSettings(q.uss.PERFORMANCE_DEBUG)), {
       pinned: true
     })
   },
@@ -307,7 +307,7 @@ let ea = Chunk64700.memo(function(e) {
   });
 
 function er(e) {
-  let t, n = (t = Object.values((0, d.yK)([P.A], () => P.A.getWidgetsForLayout(Q.G))), t.find(t => t.type === e));
+  let t, n = (t = Object.values((0, d.yK)([k.A], () => k.A.getWidgetsForLayout(Q.G))), t.find(t => t.type === e));
   return [n, () => {
     if (null != n)(0, x.uv)(n.id);
     else {
@@ -480,7 +480,7 @@ let ec = Chunk64700.memo(function(e) {
     let n = (0, d.cf)([S.default], () => S.default.getTrackedGames()),
       l = (0, V.getPID)(),
       r = (0, d.bG)([S.default], () => S.default.isOverlayOOPEnabledForPid(l), [l]),
-      [i, s] = (0, d.yK)([k.A], () => [k.A.enabled, k.A.keepOpen]),
+      [i, s] = (0, d.yK)([P.A], () => [P.A.enabled, P.A.keepOpen]),
       o = (0, d.bG)([M.default], () => M.default.getFocusedPID()),
       c = (0, d.bG)([M.default], () => M.default.isFocusedPidOutOfProcess());
     return (0, a.jsxs)("div", {
@@ -981,7 +981,7 @@ function eO() {
       if (n(e)) returntrue
     }
     returnfalse
-  }), [y, h, u, o, A]), [T, N] = l.useState(O), [w, k] = l.useState(null), P = l.useMemo(() => y.find(e => e.key === w), [y, w]), R = l.useCallback(e => {
+  }), [y, h, u, o, A]), [T, N] = l.useState(O), [w, P] = l.useState(null), k = l.useMemo(() => y.find(e => e.key === w), [y, w]), R = l.useCallback(e => {
     N(e)
   }, []), {
     renderSelectedTab: D
@@ -1095,15 +1095,15 @@ function eO() {
         columns: ev,
         data: T,
         selectedRowKey: null != w ? w : true,
-        onClickRow: e => k(e.key)
+        onClickRow: e => P(e.key)
       })
-    }), null != P && (0, a.jsx)(H.A, {
+    }), null != k && (0, a.jsx)(H.A, {
       className: i()(J.st, J.rf),
       minHeight: 100,
       initialHeight: null != t ? t / 3 : 300,
       children: D({
-        breadcrumb: P,
-        onClose: () => k(null)
+        breadcrumb: k,
+        onClose: () => P(null)
       })
     })]
   })
@@ -1171,7 +1171,7 @@ let ew = e => {
     }
   },
   eI = e => null == e ? "Disabled" : e ? "True" : "False",
-  ek = Chunk64700.memo(function() {
+  eP = Chunk64700.memo(function() {
     let e = (0, C.wW)(),
       t = (0, d.bG)([D.Ay], () => D.Ay.getOverlayKeybind());
     return (0, a.jsxs)("div", {
@@ -1252,11 +1252,11 @@ let ew = e => {
     })
   });
 
-function eP() {
+function ek() {
   return (0, a.jsx)(p.ArX, {
     children: (0, a.jsx)("div", {
       className: i()(X.nd, J.rf),
-      children: (0, a.jsx)(ek, {})
+      children: (0, a.jsx)(eP, {})
     })
   })
 }
@@ -1300,6 +1300,6 @@ function eR() {
           children: "Experiments"
         })
       })]
-    }), "state" === e && (0, a.jsx)(eN, {}), "logging" === e && (0, a.jsx)(eO, {}), "experiments" === e && (0, a.jsx)(eP, {})]
+    }), "state" === e && (0, a.jsx)(eN, {}), "logging" === e && (0, a.jsx)(eO, {}), "experiments" === e && (0, a.jsx)(ek, {})]
   })
 }

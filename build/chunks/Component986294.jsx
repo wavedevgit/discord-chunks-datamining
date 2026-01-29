@@ -1,7 +1,7 @@
 /** Chunk was on 65298 **/
 /** chunk id: 986294, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => P
+  A: () => k
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -64,13 +64,13 @@ let I = [{
     let {
       type: t
     } = e;
-    return (0, a.jsx)(k, {
+    return (0, a.jsx)(P, {
       type: t
     })
   }
 }];
 
-function k(e) {
+function P(e) {
   var t, n;
   let {
     type: l
@@ -91,12 +91,12 @@ function k(e) {
   })
 }
 
-function P() {
+function k() {
   var e, t, n;
   let r, i = (0, u.bG)([C.A], () => C.A.getFeed(E.X1.GLOBAL_FEED)),
     s = (0, u.bG)([C.A], () => C.A.getDebugImpressionCappingDisabled()),
     c = (0, u.bG)([A.A], () => A.A.getDebugFastImpressionCappingEnabled()),
-    k = (n = null == i || null == (t = i.entries) ? true : t.map(e => e.content), Object.keys(r = o().groupBy(n, e => e.content_type)).map(e => {
+    P = (n = null == i || null == (t = i.entries) ? true : t.map(e => e.content), Object.keys(r = o().groupBy(n, e => e.content_type)).map(e => {
       let t = r[e];
       return {
         key: "".concat(e),
@@ -104,7 +104,7 @@ function P() {
         entries: t
       }
     })),
-    P = (0, u.bG)([C.A], () => {
+    k = (0, u.bG)([C.A], () => {
       var e;
       return (null == (e = C.A.getFeedState(E.X1.GLOBAL_FEED)) ? true : e.loading) === true
     }),
@@ -136,9 +136,9 @@ function P() {
         children: [(0, a.jsx)(p.Text, {
           variant: "text-md/semibold",
           children: "Inventory"
-        }), k.length > 0 && (0, a.jsx)(f.A, {
+        }), P.length > 0 && (0, a.jsx)(f.A, {
           columns: I,
-          data: k
+          data: P
         }), (0, a.jsx)(T.A, {}), (0, a.jsx)(p.Button, {
           variant: "primary",
           text: "Refresh Now",
@@ -150,7 +150,7 @@ function P() {
               feature: d.M.INBOX
             })
           },
-          loading: P
+          loading: k
         })]
       }), (0, a.jsxs)(p.BJc, {
         gap: 8,
