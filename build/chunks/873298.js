@@ -1917,6 +1917,9 @@ class ep extends Chunk324281.G {
         case 17:
           a.enableServerTrendingNotifications = s._t.internalBinaryRead(e, e.uint32(), n, a.enableServerTrendingNotifications);
           break;
+        case 18:
+          a.enableDmReplyNudgeReminders = s._t.internalBinaryRead(e, e.uint32(), n, a.enableDmReplyNudgeReminders);
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -1927,7 +1930,7 @@ class ep extends Chunk324281.G {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.showInAppNotifications && s._t.internalBinaryWrite(e.showInAppNotifications, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.notifyFriendsOnGoLive && s._t.internalBinaryWrite(e.notifyFriendsOnGoLive, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), "0" !== e.notificationCenterAckedBeforeId && t.tag(3, r.O0.Bit64).fixed64(e.notificationCenterAckedBeforeId), e.enableBurstReactionNotifications && s._t.internalBinaryWrite(e.enableBurstReactionNotifications, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), e.quietMode && s._t.internalBinaryWrite(e.quietMode, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), "0" !== e.focusModeExpiresAtMs && t.tag(6, r.O0.Bit64).fixed64(e.focusModeExpiresAtMs), 0 !== e.reactionNotifications && t.tag(7, r.O0.Varint).int32(e.reactionNotifications), 0 !== e.gameActivityNotifications && t.tag(8, r.O0.Varint).int32(e.gameActivityNotifications), 0 !== e.customStatusPushNotifications && t.tag(9, r.O0.Varint).int32(e.customStatusPushNotifications), e.gameActivityExcludeSteamNotifications && s._t.internalBinaryWrite(e.gameActivityExcludeSteamNotifications, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.enableVoiceActivityNotifications && s._t.internalBinaryWrite(e.enableVoiceActivityNotifications, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), e.enableFriendOnlineNotifications && s._t.internalBinaryWrite(e.enableFriendOnlineNotifications, t.tag(12, r.O0.LengthDelimited).fork(), n).join(), e.enableUserResurrectionNotifications && s._t.internalBinaryWrite(e.enableUserResurrectionNotifications, t.tag(13, r.O0.LengthDelimited).fork(), n).join(), e.enableFriendAnniversaryNotifications && s._t.internalBinaryWrite(e.enableFriendAnniversaryNotifications, t.tag(14, r.O0.LengthDelimited).fork(), n).join(), e.enableGameUpdateNotifications && s._t.internalBinaryWrite(e.enableGameUpdateNotifications, t.tag(15, r.O0.LengthDelimited).fork(), n).join(), e.enableProfileUpdatesNotifications && s._t.internalBinaryWrite(e.enableProfileUpdatesNotifications, t.tag(16, r.O0.LengthDelimited).fork(), n).join(), e.enableServerTrendingNotifications && s._t.internalBinaryWrite(e.enableServerTrendingNotifications, t.tag(17, r.O0.LengthDelimited).fork(), n).join();
+    e.showInAppNotifications && s._t.internalBinaryWrite(e.showInAppNotifications, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.notifyFriendsOnGoLive && s._t.internalBinaryWrite(e.notifyFriendsOnGoLive, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), "0" !== e.notificationCenterAckedBeforeId && t.tag(3, r.O0.Bit64).fixed64(e.notificationCenterAckedBeforeId), e.enableBurstReactionNotifications && s._t.internalBinaryWrite(e.enableBurstReactionNotifications, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), e.quietMode && s._t.internalBinaryWrite(e.quietMode, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), "0" !== e.focusModeExpiresAtMs && t.tag(6, r.O0.Bit64).fixed64(e.focusModeExpiresAtMs), 0 !== e.reactionNotifications && t.tag(7, r.O0.Varint).int32(e.reactionNotifications), 0 !== e.gameActivityNotifications && t.tag(8, r.O0.Varint).int32(e.gameActivityNotifications), 0 !== e.customStatusPushNotifications && t.tag(9, r.O0.Varint).int32(e.customStatusPushNotifications), e.gameActivityExcludeSteamNotifications && s._t.internalBinaryWrite(e.gameActivityExcludeSteamNotifications, t.tag(10, r.O0.LengthDelimited).fork(), n).join(), e.enableVoiceActivityNotifications && s._t.internalBinaryWrite(e.enableVoiceActivityNotifications, t.tag(11, r.O0.LengthDelimited).fork(), n).join(), e.enableFriendOnlineNotifications && s._t.internalBinaryWrite(e.enableFriendOnlineNotifications, t.tag(12, r.O0.LengthDelimited).fork(), n).join(), e.enableUserResurrectionNotifications && s._t.internalBinaryWrite(e.enableUserResurrectionNotifications, t.tag(13, r.O0.LengthDelimited).fork(), n).join(), e.enableFriendAnniversaryNotifications && s._t.internalBinaryWrite(e.enableFriendAnniversaryNotifications, t.tag(14, r.O0.LengthDelimited).fork(), n).join(), e.enableGameUpdateNotifications && s._t.internalBinaryWrite(e.enableGameUpdateNotifications, t.tag(15, r.O0.LengthDelimited).fork(), n).join(), e.enableProfileUpdatesNotifications && s._t.internalBinaryWrite(e.enableProfileUpdatesNotifications, t.tag(16, r.O0.LengthDelimited).fork(), n).join(), e.enableServerTrendingNotifications && s._t.internalBinaryWrite(e.enableServerTrendingNotifications, t.tag(17, r.O0.LengthDelimited).fork(), n).join(), e.enableDmReplyNudgeReminders && s._t.internalBinaryWrite(e.enableDmReplyNudgeReminders, t.tag(18, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -2015,6 +2018,11 @@ class ep extends Chunk324281.G {
     }, {
       no: 17,
       name: "enable_server_trending_notifications",
+      kind: "message",
+      T: () => s._t
+    }, {
+      no: 18,
+      name: "enable_dm_reply_nudge_reminders",
       kind: "message",
       T: () => s._t
     }])

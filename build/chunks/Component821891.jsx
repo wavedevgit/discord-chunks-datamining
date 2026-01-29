@@ -58,7 +58,7 @@ let g = (e, t, n, r) => {
       let e = c.Ay.getIntervalForInvoice(S);
       t = e.intervalType, n = e.intervalCount, s = (0, u.CE)((0, u.$g)(S.total, S.currency), t, n), E = (0, u.CE)((0, u.$g)(S.subtotal, S.currency), t, n)
     } else null != y && (t = y.interval, n = y.intervalCount);
-    let U = (0, a.R)({
+    let U = (0, a.Ro)({
         purchaseType: N || f.VVm.SUBSCRIPTION,
         plan: y,
         premiumSubscription: null == D ? null : D,
@@ -143,7 +143,7 @@ let g = (e, t, n, r) => {
         default:
           throw Error("Unexpected interval: ".concat(t))
       } else {
-        let e, r = (0, a.R)({
+        let e, r = (0, a.Ro)({
           productLine: w,
           purchaseType: f.VVm.SUBSCRIPTION,
           plan: y,

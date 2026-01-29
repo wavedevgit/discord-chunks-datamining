@@ -2,7 +2,10 @@
 /** chunk id: 169797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  oH: () => E
+  Jg: () => E,
+  cy: () => g,
+  oH: () => y,
+  s3: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -131,6 +134,17 @@ function g(e) {
 }
 
 function E(e) {
+  let {
+    children: t
+  } = e, n = _(e, ["children"]);
+  return (0, r.jsx)(a.dWK, p(d({
+    size: "md"
+  }, n), {
+    children: t
+  }))
+}
+
+function y(e) {
   let {
     title: t,
     gradientColor: n = "purple",

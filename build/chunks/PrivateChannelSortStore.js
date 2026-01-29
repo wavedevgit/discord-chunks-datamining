@@ -50,8 +50,8 @@ function y(e) {
     channelId: e.id,
     lastMessageId: t,
     isFavorite: false,
-    isRequest: p.A.isMessageRequest(e.id) || E.A.isSpam(e.id),
-    nudgeTimestamp: h.A.getNudgeTimestamp(e.id)
+    isRequest: h.A.isMessageRequest(e.id) || p.A.isSpam(e.id),
+    nudgeTimestamp: E.A.getNudgeTimestamp(e.id)
   }
 }
 
@@ -82,7 +82,7 @@ let N = (i = [], r = [], s = [], () => {
 });
 class T extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(_.A, O.A, p.A, b.Ay, E.A, M.Ay, m.default, h.A), this.syncWith([M.Ay, p.A], S)
+    this.waitFor(_.A, O.A, h.A, b.Ay, p.A, M.Ay, m.default, E.A), this.syncWith([M.Ay, h.A, E.A], S)
   }
   getPrivateChannelIds() {
     return N()

@@ -1,7 +1,7 @@
 /** Chunk was on 5152 **/
 /** chunk id: 405810, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => a
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -9,10 +9,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk946274 = require("./946274.jsx"),
   Chunk872752 = require("./872752.js");
 
-function o(e) {
+function a(e) {
   var t, n;
   let {
-    onChange: o,
+    onChange: a,
     onFileSizeError: u,
     multiple: c = false,
     disabled: d = false,
@@ -37,10 +37,10 @@ function o(e) {
   }(e, ["onChange", "onFileSizeError", "multiple", "disabled", "maxFileSizeBytes", "filters"]), y = i.useRef(null);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)("div", {
-      className: a.l,
+      className: o.l,
       children: (0, r.jsx)(s.Ay, {
         ref: y,
-        onChange: o,
+        onChange: a,
         onFileSizeError: u,
         multiple: c,
         maxFileSizeBytes: f,

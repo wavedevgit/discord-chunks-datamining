@@ -19,6 +19,7 @@ require.d(exports, {
   JV: () => C,
   Jr: () => P,
   Kg: () => eu,
+  LJ: () => e5,
   ML: () => y,
   NF: () => eQ,
   NO: () => R,
@@ -657,6 +658,12 @@ let e0 = (0, Chunk646769.c$)("userContent", "lastReceivedChangelogId", e => null
   e4 = (0, Chunk646769.c$)("textAndImages", "isCrossDmSearchEnabled", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
+  }, e => o._t.create({
+    value: e
+  })),
+  e5 = (0, Chunk646769.c$)("notifications", "enableDmReplyNudgeReminders", e => {
+    var t;
+    return null == (t = null == e ? true : e.value) || t
   }, e => o._t.create({
     value: e
   }))

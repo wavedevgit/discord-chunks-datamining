@@ -84,7 +84,7 @@ function U() {
       if ((0, m.z4)(o.id)) return P.DA
     }
     return []
-  }, [o]), O = i.useMemo(() => c === D.VV.ONE_TIME ? null == s && null != n || null != l : null == u || !h && null != y && c === D.VV.SUBSCRIPTION && p && !y.canRedeemTrial(), [c, s, n, l, u, h, y, p]), v = (0, m.J$)(a.paymentSourceId), A = c === D.VV.SUBSCRIPTION && null == o ? L.intl.string(L.t.YScQSF) : (0, f.R)({
+  }, [o]), O = i.useMemo(() => c === D.VV.ONE_TIME ? null == s && null != n || null != l : null == u || !h && null != y && c === D.VV.SUBSCRIPTION && p && !y.canRedeemTrial(), [c, s, n, l, u, h, y, p]), v = (0, m.J$)(a.paymentSourceId), A = c === D.VV.SUBSCRIPTION && null == o ? L.intl.string(L.t.YScQSF) : (0, f.Ro)({
     purchaseType: c,
     plan: o,
     premiumSubscription: e,
@@ -263,13 +263,14 @@ function G(e) {
     purchaseState: ec,
     handleClose: K
   });
+  let e0 = eg && eK && !ey && !z;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.Z, {
       giftMessage: eA
     }), !eY && (0, r.jsx)(N.A, {
       isEligibleForTrial: eR
     }), (0, r.jsxs)(R.dZ, {
-      children: [eg && eK && !ey && (0, r.jsx)("div", {
+      children: [e0 && (0, r.jsx)("div", {
         className: x.AC
       }), (0, r.jsxs)(s.BJc, {
         direction: "vertical",
